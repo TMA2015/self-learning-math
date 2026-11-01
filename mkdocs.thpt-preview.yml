@@ -173,6 +173,7 @@ extra_javascript:
   - assets/javascripts/thpt-chiv-b07-b08-reviewed-formative-v1.js
   - assets/javascripts/thpt-chiv-b09-b11-reviewed-formative-v1.js
   - assets/javascripts/thpt-g11-chi-reviewed-formative-v1.js
+  - assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js
   - assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js
   - assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js
   - assets/javascripts/thpt-chvi-reviewed-formative-v1.js

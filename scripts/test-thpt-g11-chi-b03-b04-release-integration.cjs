@@ -45,6 +45,7 @@ assert(runtime.includes("THPT_G11_CHI_B03_B04_REVIEWED_FORMATIVE"));
 const config=read("mkdocs.yml"),preview=read("mkdocs.thpt-preview.yml");
 assert(config.includes("assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js"));
 assert(preview.includes("chuong-i/bai-3.md")&&preview.includes("chuong-i/bai-4.md"));
+assert(preview.includes("assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js"),"Preview must load reviewed G11 bank before R4 modal runtime");
 const readiness=read("docs/thpt-preview/sgk/lop-11/chuong-i/tu-kiem-tra-chuong.md");
 assert(readiness.includes("CHƯA KÍCH HOẠT"),"Do not claim readiness released without independent approved engine");
 assert(!runtime.includes("g11-b3-scores")&&!runtime.includes("g11-b4-scores"));
