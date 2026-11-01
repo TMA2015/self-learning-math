@@ -1,10 +1,12 @@
 # Self-Learning Math THPT — Hợp đồng biên soạn "Hiểu từ đầu, rồi mới dùng công thức" v1
 
 **Ngày:** 2026-11-01 · **Scope:** tác giả học liệu SGK lớp 10–12 và sau này Chuyên đề · **Owner finding:** Issue #691.  
-**Trạng thái:** Authoring-standard candidate trong Draft PR #690; chưa có bất kỳ sửa đổi website hoặc giấy phép release nào.  
+**Trạng thái:** nguyên tắc cốt lõi Self-Learning Math từ khi khởi lập, nay được chuẩn hóa kiểm soát chất lượng trên Draft PR #690; đã ghi quyết định chủ dự án tại GitHub Issue #691 (có hiệu lực ngay với nhánh biên soạn, không phải quyền merge/deploy).  
 **Tương thích:** Project Source 08 (hai hành trình học đầy đủ); S1 SGK/SBT làm chuẩn giới hạn Core; 04 D1–D6; 06/07 NotebookLM review/delta; Issue #655 và AP1–AP5 "gọn nhưng không nén"; Issue #675 thứ tự chương và bảo vệ nội dung đã xuất bản.
 
-## 1. Mục đích: Knowledge ≠ Teaching
+## 1. Mục đích gốc từ khi bắt đầu dự án: Knowledge ≠ Teaching
+
+**Đây không phải yêu cầu hay mục tiêu mới.** Self-Learning Math từ đầu đã nhằm dẫn dắt học sinh tự học, qua kiến thức, ví dụ, Core, luyện tập nhiều mức, vận dụng, khắc phục lỗi và tự đánh giá. Vấn đề là tác giả chưa biến mục tiêu ấy thành cổng QA sư phạm đủ cụ thể. Hợp đồng này là bước **thực thi nhất quán mục đích đã có**, không thay thế hay phủ nhận các công việc thiết kế/review trước đây.
 
 Một bài có thể đúng định nghĩa, đủ công thức, đủ item nhưng **chưa tự học được** nếu người đọc phải tự đoán:
 - *Tại sao* đang học khái niệm này, nó giải quyết vấn đề gì?
@@ -18,9 +20,9 @@ Một bài có thể đúng định nghĩa, đủ công thức, đủ item nhưn
 
 ## 2. Trình tự dạy học mỗi mảng kiến thức (tùy độ phức tạp, không ép khung rỗng)
 
-1. **Tình huống/động cơ (WHY).** Một câu hỏi cụ thể gần năng lực học sinh; nêu cái chưa giải quyết được bằng kiến thức cũ. Không cần giả lập thực tế vô lý cho mọi định lý thuần toán.
+1. **Tình huống/động cơ (WHY).** Một câu hỏi cụ thể: tại sao cần đưa ra khái niệm này, tri thức hiện có chưa giúp giải quyết điều gì? Không cần giả lập thực tế vô lý cho mọi định lý thuần toán.
 2. **Cầu nối tiền đề (BRIDGE).** Nói rõ học sinh cần biết gì đã học ở bài/lớp nào. Nếu thuộc bài trước: nhắc lại 1–2 câu cùng con trỏ thật; không viết lại toàn chương. Nếu chưa xác minh tiền đề, giải thích trực tiếp hoặc đánh dấu cần kiểm S1.
-3. **Hình dung và thao tác (INTUITION).** Số cụ thể, hình/đồ thị SVG hoặc bảng giá trị **có thuyết minh** giúp học sinh tự quan sát và suy đoán quy luật trước phát biểu tổng quát.
+3. **Bản chất khái niệm rồi mới hình dung (WHAT/INTUITION).** Giải thích bằng lời thường nó *là gì*, vì sao được hình thành (đặc biệt: tỉ số, quan hệ, phép toán nào), để làm gì. Dùng số cụ thể, hình/đồ thị SVG hoặc bảng giá trị **có thuyết minh** giúp người học quan sát và suy đoán trước phát biểu tổng quát. Không nhảy thẳng tới dấu, công thức hay ứng dụng của một thuật ngữ mà học sinh còn chưa biết.
 4. **Định nghĩa/định lý chuẩn (FORMAL).** Đặt tên sau khi đã có ý niệm, nêu chính xác đối tượng, kí hiệu, phạm vi và điều kiện. Giải thích **ngay tại chỗ** thuật ngữ mới hoặc điều kiện không hiển nhiên.
 5. **Giải thích ý nghĩa (WHAT/WHEN/NOT-WHEN).** Tách ý: là gì, hiểu bằng lời thường, dùng để làm gì, vì sao điều kiện cần, một phản ví dụ hoặc tình huống sai phù hợp.
 6. **Ví dụ dẫn dắt (MODEL).** Có lý do chọn phương pháp, từng bước tính/chứng minh, cách kiểm tra kết quả và ít nhất một bẫy có khả năng gặp; ví dụ có **cấu trúc khác nhau**, không chỉ đổi số.
@@ -41,19 +43,23 @@ Không cần giải thích mọi phép toán cấp dưới. Nhưng một thuật
 
 ## 4. Ba mẫu sửa lỗi sư phạm do owner chỉ ra (draft gợi ý, KHÔNG ghi trực tiếp vào trang đã phát hành)
 
-### Mẫu A — Toán 10 Chương III, Bài 5: sin, cos của góc 0°–180°
+### Mẫu A — Toán 10 Chương III, Bài 5: **sin/cos là gì, tại sao cần chúng?** (chỉ minh họa tiêu chuẩn, không sửa website)
 
-**Mở bài:** Ở các lớp trước, chúng ta dùng tam giác vuông để đo liên hệ giữa góc nhọn và tỉ số độ dài cạnh. Nhưng góc 120° không nằm trong một tam giác vuông dưới dạng *góc nhọn*. Vậy phải hiểu sin và cos của 120° thế nào?
+**KHÔNG bắt đầu từ:** dấu của sin/cos, bảng giá trị góc 30°/45°/60°, tọa độ M(x,y) trên đường tròn đơn vị, hoặc công thức tan=sin/cos. Những kết quả đó cần được học **sau khi** học sinh biết sin/cos là gì và vì sao chúng có ích.
 
-**Cầu nối:** Đối với góc nhọn, sin và cos có thể hiểu qua tỉ số các cạnh tam giác vuông. Bài này **mở rộng** chúng sang góc từ 0° đến 180°.
+**1. Câu hỏi nảy sinh nhu cầu.** Nếu muốn biết chiều cao một cây hoặc chiều rộng một con sông nhưng không thể đo trực tiếp, em có thể đo khoảng cách dễ tiếp cận và một góc rồi suy ra độ dài còn lại không? Muốn vậy cần một công cụ nối **góc** với **tỉ lệ độ dài**. Đây là lý do ta học các tỉ số lượng giác.
 
-**Hình và diễn giải:** Vẽ nửa đường tròn tâm O bán kính 1, trục Ox ngang, M chạy trên cung theo góc α đo từ Ox ngược chiều kim đồng hồ. Hạ hình chiếu từ M xuống trục Ox: nếu M có tọa độ (x,y), **cos α là tọa độ ngang x**, **sin α là tọa độ cao y**. Vì bán kính bằng 1, ta có x²+y²=1. Trên nửa đường tròn phía trên trục Ox, y≥0; khi M đi sang trái O, x<0. Vì vậy sin không âm, còn cos có thể âm; đây là ý nghĩa dấu trước khi học bảng giá trị.
+**2. Bắt đầu từ định nghĩa đã học ở góc nhọn.** Trong một tam giác vuông và một góc nhọn α, xác định rõ đâu là **cạnh huyền** (đối diện góc vuông), **cạnh đối** (đối diện α), **cạnh kề** (nằm cạnh α nhưng không phải cạnh huyền). **sin α** là *tỉ số độ dài cạnh đối chia cạnh huyền*, **cos α** là *tỉ số cạnh kề chia cạnh huyền*; không phải "độ dài" của riêng một cạnh. Vì hai tam giác vuông có cùng góc nhọn đồng dạng, các tỉ số này **không đổi khi phóng to hoặc thu nhỏ tam giác**. Vì vậy chúng gắn với góc và giúp tìm độ dài cạnh chưa biết.
 
-**Sau đó mới định nghĩa:** tan α=sin α/cos α khi cos α≠0; cot α=cos α/sin α khi sin α≠0. Đặt câu hỏi: vì sao tan 90° không xác định? → cos 90°=0, không được chia cho 0.
+**3. Minh họa vì sao công cụ hữu ích.** Hai tam giác vuông khác kích thước nhưng cùng α có các cặp cạnh tương ứng tỉ lệ với nhau. Nếu biết góc và một cạnh, dùng tỉ số ấy để xác định cạnh chưa biết. Hình cần chỉ bằng mũi tên góc α, cạnh đối/kề/huyền và nêu rõ điều gì giữ nguyên, không chỉ vẽ để trang trí.
 
-**Thử ngay:** Nếu M ở bên trái trục Oy và nằm trên nửa đường tròn phía trên Ox, không cần tính, em xác định dấu sin/cos/tan như thế nào? Giải thích bằng tọa độ thay vì nhớ máy móc.
+**4. Mục đích của bài mới.** Cách hiểu bằng tam giác vuông nói trên giải quyết **góc nhọn**. Nhưng cần làm việc cả với góc 0°, 90° hay 120°. Làm cách nào giữ nguyên ý nghĩa lượng giác và mở rộng định nghĩa đến góc từ 0° đến 180°? **Lúc này** mới chuyển sang nửa đường tròn đơn vị, điểm M, tọa độ ngang/dọc làm sin/cos (đối chiếu rằng với góc nhọn, tọa độ ấy khớp các tỉ số cạnh vừa hiểu).
 
-Lưu ý: đây là **mẫu giảng dạy mới**, chưa đối chiếu đủ phạm vi/tên bài từ PDF S1 để coi là thay thế source đã nghiệm thu.
+**5. Sau cùng mới suy ra tính chất.** Khi α lớn hơn 90°, điểm M nằm bên trái trục Oy nên cos α âm, trong khi sin α vẫn không âm trên nửa đường tròn phía trên; rồi học bảng giá trị, tan/cot và trường hợp mẫu bằng 0. Đến đây học sinh đã biết **đó là gì → vì sao cần → định nghĩa hình thành thế nào → dùng ra sao**, nên dấu âm/dương trở thành kết quả có lý do, không phải điều phải thuộc lòng.
+
+**Thử ngay:** Em giải thích bằng lời vì sao sin/cos với góc nhọn không thay đổi nếu phóng to tam giác vuông, trước khi tính bất kỳ giá trị nào.
+
+**Tiền đề:** nếu lớp đã học tỉ số lượng giác góc nhọn, nhắc ngắn và dẫn liên kết tiền đề; nếu tài liệu triển khai thực tế chưa bảo đảm, phải giải thích đủ để không buộc học sinh tự tra cứu bên ngoài.
 
 ### Mẫu B — Toán 10 ChIII Bài 6: "tam giác không suy biến"
 
@@ -82,22 +88,22 @@ Lưu ý: đây là **mẫu giảng dạy mới**, chưa đối chiếu đủ ph�
 
 **B17 Hàm số liên tục:** minh họa một đồ thị không đứt đoạn so với có lỗ/nhảy; trước khi đọc điều kiện lim f(x)=f(a), học sinh phải nhận ra vì sao giá trị ở a phải "khớp" với xu hướng khi x tiến gần a. Nhắc rõ đồ thị chỉ là trực giác; điều kiện và miền xác định quyết định tính đúng.
 
-Mẫu này đặt yêu cầu triển khai cho source ChV; **bản R00 trước đó đang là tóm tắt chưa đủ tự học**, cần tái biên soạn D1 trước khi hoàn tất chương và gửi review.
+Mẫu này đặt yêu cầu triển khai cho source ChV; D1 của bản R00 đã được viết lại trên Draft PR #690 theo hướng khái niệm-trước-công thức, nhưng vẫn cần PED1–PED6 thực chất, hoàn thiện D3–D6/RD1 và review toàn chương trước khi công nhận hoàn tất.
 
 ## 6. Checklist theo outcome: TEACHABILITY — sử dụng trong A5 và review học thuật
 
 | Check | Hỏi khi đọc như học sinh lần đầu | Fail nếu |
 |---|---|---|
-| PED1 Motivation | Có biết vì sao học/điều cần giải quyết? | Mở bài bằng công thức không giải thích trong một chủ đề mới |
+| PED1 Motivation | Có biết **vì sao cần khái niệm này và nó xuất hiện để giải quyết điều gì**? | Chưa có lời giải thích mục đích đã đi thẳng vào công thức/bảng dấu |
 | PED2 Prior knowledge | Điều kiện và thuật ngữ nào phải biết trước? | Yêu cầu "đã biết" nhưng không có kiểm chứng/nhắc lại |
-| PED3 Concept meaning | Có thể giải thích thuật ngữ bằng lời và ví dụ? | Mọi khái niệm chỉ còn kí hiệu và định nghĩa trừu tượng |
+| PED3 Concept meaning | Học sinh trả lời được **nó là gì, vì sao tạo ra nó, dùng để làm gì** trước khi tính dấu/giá trị? | Chỉ có kí hiệu, hình hoặc định nghĩa trừu tượng nhưng chưa có bản chất |
 | PED4 Visual reasoning | Hình/bảng giúp hiểu bước nào và đọc thế nào? | Hình chỉ có tiêu đề, không có diễn giải hoặc sai giả thiết |
 | PED5 Worked thinking | Ví dụ giải thích vì sao dùng quy tắc, khi nào không? | Chỉ đưa phép tính và đáp số |
 | PED6 First independent step | Có câu thử ngắn/đường về tiền đề trước Practice? | Học sinh phải chuyển trực tiếp sang đề luyện phức tạp |
 
 **Tại cổng A5:** đánh giá PED1–PED6 theo bài và outcome; chưa đủ thì **AUTHORING_HOLD_FOR_PEDAGOGY**, dù D1–D6 đã đủ về số lượng và toán chính xác. QA không được tự nâng Academic PASS cũ thành "self-learning ready". Sau sửa toán/đáp án/rubric/coverage phải áp Delta_C; sửa UI không ảnh hưởng toán là Delta_A; thêm/đổi cách giải thích có ý nghĩa toán học mới phải phân tích đúng mức ảnh hưởng. NotebookLM cần nhận toàn bộ snapshot và trả verdict **PEDAGOGICAL_SELF_LEARNING_READY** riêng, ngoài correctness/coverage.
 
-**Ngoại lệ nguồn đã phát hành (Issue #675):** kiểm toán và lưu đề xuất sửa, không tự chạm main/runtime. Ưu tiên batch bằng chứng thay vì thay từng bài ngẫu nhiên; phát hành chỉ do release lane và owner cho phép.
+**Quyết định điều phối mới nhất:** KHÔNG quay lại rà soát hay sửa ngay ba bài lớp 10 được nêu làm ví dụ. Trước hết hoàn thành phát triển chương trình theo kế hoạch SGK 10→11→12, từng chương và các giai đoạn tiếp theo đã duyệt. **Chỉ sau khi toàn bộ việc phát triển chương trình theo kế hoạch đã hoàn tất**, mới kiểm toán hồi tố toàn bộ nội dung lớp 10 và một số chương/bài lớp 11 đã đưa lên website trước thời điểm này. Tài liệu đã phát hành vẫn đóng băng theo Issue #675; không tự sửa main/runtime, lập đề xuất batch, phân loại delta, release lane và owner kiểm soát. Ba ví dụ G10 ở mục 4 chỉ là mẫu giải thích nguyên tắc.
 
 ## 7. Thao tác hợp lệ của tác giả
 
