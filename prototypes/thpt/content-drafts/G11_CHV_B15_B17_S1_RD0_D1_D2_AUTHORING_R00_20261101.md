@@ -151,6 +151,8 @@ Khi nói x→+∞, ta cho x tăng mãi; x→−∞ là cho x giảm mãi về ph
 
 **EX-G11-B16-04 — Dấu của căn khi x âm lớn.** lim_{x→−∞}√(x²+1)/x=lim_{x→−∞}(|x|√(1+1/x²))/x=−1. **Bẫy:** viết √(x²)=x cho x<0 là sai.
 
+**EX-G11-B16-05 — Vì sao giới hạn một phía quan trọng trong tình huống thực tế?** Một bãi xe thu **10 nghìn đồng** nếu thời gian gửi t thỏa 0<t≤1 giờ, và thu **20 nghìn đồng** nếu t>1 giờ. Gọi C(t) là chi phí (nghìn đồng), ta có C(t)=10 khi 0<t≤1, C(t)=20 khi t>1. Khi t tiến gần 1 **từ phía nhỏ hơn**, C(t) luôn là 10 nên giới hạn trái là 10; khi t tiến gần 1 **từ phía lớn hơn**, C(t) là 20 nên giới hạn phải là 20. Do hai phía khác nhau nên **không có giới hạn hai phía** tại t=1. Giá đúng tại t=1 là C(1)=10 nhưng điều này **không làm giới hạn hai phía xuất hiện**. **Ý nghĩa:** tại một ngưỡng tính phí, hai quá trình tiến gần từ hai phía có thể dẫn đến kết quả khác nhau. **Bẫy:** không được lấy trung bình (10+20)/2=15 hay lấy C(1) làm giới hạn.
+
 ## B17 — D1. Hàm số liên tục (vì sao cần giá trị khớp với xu hướng?)
 
 ### 1. Từ giới hạn sang liên tục
