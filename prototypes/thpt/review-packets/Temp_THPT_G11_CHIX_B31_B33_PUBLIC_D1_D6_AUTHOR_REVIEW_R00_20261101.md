@@ -146,9 +146,9 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 #### EX-G11-CHIX-B31-01: Định nghĩa tại một điểm
 
-**Bài toán:** $f(x)=x^2+3x$, tìm $f\'(1)$ từ $h$.
+**Bài toán:** $f(x)=x^2+3x$, tìm $f'(1)$ từ $h$.
 
-**Phân tích, đáp án:** $[f(1+h)-f(1)]/h=5+h\to5$, do đó $f\'(1)=5$.
+**Phân tích, đáp án:** $[f(1+h)-f(1)]/h=5+h\to5$, do đó $f'(1)=5$.
 
 **Vì sao:** Rút gọn h rồi mới cho h→0; không thay h=0 ngay.
 
@@ -164,7 +164,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 **Bài toán:** $f(x)=x^2-4x+1$ tại $x=3$.
 
-**Phân tích, đáp án:** $f(3)=-2$, $f\'(3)=2$, tiếp tuyến $y+2=2(x-3)$ tức $y=2x-8$.
+**Phân tích, đáp án:** $f(3)=-2$, $f'(3)=2$, tiếp tuyến $y+2=2(x-3)$ tức $y=2x-8$.
 
 **Vì sao:** Cần cả điểm (3,-2) và hệ số góc 2.
 
@@ -180,15 +180,15 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 **Bài toán:** $s(t)=10-3t^2$ m, t giây. Tính $v(1)$.
 
-**Phân tích, đáp án:** $v=s\'=-6t$ m/s, $v(1)=-6$ m/s; tốc độ 6 m/s.
+**Phân tích, đáp án:** $v=s'=-6t$ m/s, $v(1)=-6$ m/s; tốc độ 6 m/s.
 
 **Vì sao:** Âm là chiều ngược trục chọn, không phải tốc độ âm.
 
 #### EX-G11-CHIX-B31-06: Nhiệt độ biến thiên
 
-**Bài toán:** $T(t)=22+4t-t^2$ °C, t phút. Tính $T\'(2)$.
+**Bài toán:** $T(t)=22+4t-t^2$ °C, t phút. Tính $T'(2)$.
 
-**Phân tích, đáp án:** $T\'=4-2t$, $T\'(2)=0$ °C/phút, nghĩa nhiệt độ tại thời điểm đó đang không tăng/giảm bậc nhất.
+**Phân tích, đáp án:** $T'=4-2t$, $T'(2)=0$ °C/phút, nghĩa nhiệt độ tại thời điểm đó đang không tăng/giảm bậc nhất.
 
 **Vì sao:** Đơn vị đạo hàm = °C/phút, không phải °C.
 
@@ -196,7 +196,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 **Bài toán:** Tính đạo hàm $f(x)=1/x$ và phát biểu khoảng khả vi.
 
-**Phân tích, đáp án:** $f\'(x)=-1/x^2$ trên $(-\infty,0)$ và $(0,+\infty)$; không tại x=0.
+**Phân tích, đáp án:** $f'(x)=-1/x^2$ trên $(-\infty,0)$ và $(0,+\infty)$; không tại x=0.
 
 **Vì sao:** Tuy đạo hàm công thức có ở x≠0 nhưng không khẳng định trên ℝ.
 
@@ -212,9 +212,9 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 #### EX-G11-CHIX-B32-01: Quy tắc lũy thừa
 
-**Bài toán:** $f(x)=4x^5-3x^2+7$; tìm $f\'$.
+**Bài toán:** $f(x)=4x^5-3x^2+7$; tìm $f'$.
 
-**Phân tích, đáp án:** $f\'=20x^4-6x$; số hằng 7 có đạo hàm 0.
+**Phân tích, đáp án:** $f'=20x^4-6x$; số hằng 7 có đạo hàm 0.
 
 **Vì sao:** Dùng hệ số n; không chuyển thành 4x^4.
 
@@ -222,7 +222,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 **Bài toán:** $f(x)=2\sqrt{x}+x$; đạo hàm ở x>0.
 
-**Phân tích, đáp án:** $f\'(x)=1/\sqrt{x}+1$ với x>0; f xác định ở 0 nhưng công thức đạo hàm không có ở đó.
+**Phân tích, đáp án:** $f'(x)=1/\sqrt{x}+1$ với x>0; f xác định ở 0 nhưng công thức đạo hàm không có ở đó.
 
 **Vì sao:** Áp dụng $(\sqrt{x})'=1/(2\sqrt{x})$ và nhân 2.
 
@@ -230,39 +230,39 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 **Bài toán:** $f(x)=(x^2+2)(x-3)$; đạo hàm chưa khai triển.
 
-**Phân tích, đáp án:** $f\'=2x(x-3)+(x^2+2)$, hay $3x^2-6x+2$.
+**Phân tích, đáp án:** $f'=2x(x-3)+(x^2+2)$, hay $3x^2-6x+2$.
 
 **Vì sao:** Hai cạnh cùng thay đổi; không chỉ lấy hai đạo hàm nhân nhau.
 
 #### EX-G11-CHIX-B32-04: Thương
 
-**Bài toán:** $f(x)=(2x-1)/(x+2)$; tính f\' và TXĐ.
+**Bài toán:** $f(x)=(2x-1)/(x+2)$; tính f' và TXĐ.
 
-**Phân tích, đáp án:** $f\'=5/(x+2)^2$, x≠-2.
+**Phân tích, đáp án:** $f'=5/(x+2)^2$, x≠-2.
 
 **Vì sao:** Tử số 2(x+2)-(2x-1)=5; mẫu bình phương.
 
 #### EX-G11-CHIX-B32-05: Hàm hợp lũy thừa
 
-**Bài toán:** $f(x)=(x^2+3x)^4$; tính f\'.
+**Bài toán:** $f(x)=(x^2+3x)^4$; tính f'.
 
-**Phân tích, đáp án:** $f\'=4(x^2+3x)^3(2x+3)$.
+**Phân tích, đáp án:** $f'=4(x^2+3x)^3(2x+3)$.
 
 **Vì sao:** Đạo hàm ngoài 4u³, nhân u'=2x+3.
 
 #### EX-G11-CHIX-B32-06: Tích và hợp
 
-**Bài toán:** $f(x)=x\sin(2x)$; tính f\'.
+**Bài toán:** $f(x)=x\sin(2x)$; tính f'.
 
-**Phân tích, đáp án:** $f\'=\sin(2x)+2x\cos(2x)$.
+**Phân tích, đáp án:** $f'=\sin(2x)+2x\cos(2x)$.
 
 **Vì sao:** Áp tích; sin(2x) cần chain nhân 2.
 
 #### EX-G11-CHIX-B32-07: Cos hợp
 
-**Bài toán:** $f(x)=3\cos(4x)$; tính f\'.
+**Bài toán:** $f(x)=3\cos(4x)$; tính f'.
 
-**Phân tích, đáp án:** $f\'=-12\sin(4x)$.
+**Phân tích, đáp án:** $f'=-12\sin(4x)$.
 
 **Vì sao:** Đạo hàm cos có dấu âm và hàm trong 4x có đạo hàm 4.
 
@@ -270,7 +270,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 **Bài toán:** $f(x)=\tan(2x)$; đạo hàm và điều kiện.
 
-**Phân tích, đáp án:** $f\'=2/\cos^2(2x)$ tại cos(2x)≠0 (x≠π/4+kπ/2).
+**Phân tích, đáp án:** $f'=2/\cos^2(2x)$ tại cos(2x)≠0 (x≠π/4+kπ/2).
 
 **Vì sao:** Không áp dụng ở tiệm cận tan.
 
@@ -278,71 +278,71 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 **Bài toán:** $f(x)=\cot(3x)$; đạo hàm.
 
-**Phân tích, đáp án:** $f\'=-3/\sin^2(3x)$ với sin(3x)≠0.
+**Phân tích, đáp án:** $f'=-3/\sin^2(3x)$ với sin(3x)≠0.
 
 **Vì sao:** Cot âm và chain nhân 3.
 
 #### EX-G11-CHIX-B32-10: Mũ e hợp
 
-**Bài toán:** $f(x)=e^{x^2+1}$; tính f\'.
+**Bài toán:** $f(x)=e^{x^2+1}$; tính f'.
 
-**Phân tích, đáp án:** $f\'=2xe^{x^2+1}$.
+**Phân tích, đáp án:** $f'=2xe^{x^2+1}$.
 
 **Vì sao:** e^u đạo hàm bằng chính e^u nhân u'.
 
 #### EX-G11-CHIX-B32-11: Mũ cơ số 3
 
-**Bài toán:** $f(x)=3^{2x}$; tính f\'.
+**Bài toán:** $f(x)=3^{2x}$; tính f'.
 
-**Phân tích, đáp án:** $f\'=2\ln(3)\,3^{2x}$ với x∈ℝ.
+**Phân tích, đáp án:** $f'=2\ln(3)\,3^{2x}$ với x∈ℝ.
 
 **Vì sao:** Cơ số 3 đưa ln 3; chain nhân 2.
 
 #### EX-G11-CHIX-B32-12: Log tự nhiên
 
-**Bài toán:** $f(x)=\ln(4-x)$; f\' trên miền.
+**Bài toán:** $f(x)=\ln(4-x)$; f' trên miền.
 
-**Phân tích, đáp án:** $f\'=-1/(4-x)$ trên x<4.
+**Phân tích, đáp án:** $f'=-1/(4-x)$ trên x<4.
 
 **Vì sao:** Miền đối số 4-x>0; không bỏ dấu âm.
 
 #### EX-G11-CHIX-B32-13: Log cơ số 2
 
-**Bài toán:** $f(x)=\log_2(3x+1)$; f\' trên miền.
+**Bài toán:** $f(x)=\log_2(3x+1)$; f' trên miền.
 
-**Phân tích, đáp án:** $f\'=3/[(3x+1)\ln2]$ với x>-1/3.
+**Phân tích, đáp án:** $f'=3/[(3x+1)\ln2]$ với x>-1/3.
 
 **Vì sao:** Nhân đạo hàm đối số 3 và giữ ln2.
 
 #### EX-G11-CHIX-B32-14: Quy tắc tích lẫn mũ
 
-**Bài toán:** $f(x)=(x+1)e^{-x}$; tính f\'.
+**Bài toán:** $f(x)=(x+1)e^{-x}$; tính f'.
 
-**Phân tích, đáp án:** $f\'=e^{-x}-(x+1)e^{-x}=-xe^{-x}$.
+**Phân tích, đáp án:** $f'=e^{-x}-(x+1)e^{-x}=-xe^{-x}$.
 
 **Vì sao:** Đạo hàm của e^{-x} mang dấu âm; rồi áp tích.
 
 #### EX-G11-CHIX-B32-15: Thương của hai hàm
 
-**Bài toán:** $f(x)=\sin x/(x^2+1)$; tính f\'.
+**Bài toán:** $f(x)=\sin x/(x^2+1)$; tính f'.
 
-**Phân tích, đáp án:** $f\'=[(x^2+1)\cos x-2x\sin x]/(x^2+1)^2$ với mọi x.
+**Phân tích, đáp án:** $f'=[(x^2+1)\cos x-2x\sin x]/(x^2+1)^2$ với mọi x.
 
 **Vì sao:** Mẫu luôn >0, trừ tử hai tích đúng thứ tự.
 
 #### EX-G11-CHIX-B32-16: Điều kiện log hợp
 
-**Bài toán:** $f(x)=\ln(x^2-4)$, tìm miền và f\'.
+**Bài toán:** $f(x)=\ln(x^2-4)$, tìm miền và f'.
 
-**Phân tích, đáp án:** Miền x<-2 hoặc x>2; f\'=2x/(x^2-4) chỉ trên miền đó.
+**Phân tích, đáp án:** Miền x<-2 hoặc x>2; f'=2x/(x^2-4) chỉ trên miền đó.
 
 **Vì sao:** x²−4 dương ngoài [-2,2], không dùng ở -2<x<2.
 
 #### EX-G11-CHIX-B32-17: Hàm hợp căn
 
-**Bài toán:** $f(x)=\sqrt{5x+1}$; f\' trên miền thích hợp.
+**Bài toán:** $f(x)=\sqrt{5x+1}$; f' trên miền thích hợp.
 
-**Phân tích, đáp án:** $f\'=5/[2\sqrt{5x+1}]$ tại x>-1/5.
+**Phân tích, đáp án:** $f'=5/[2\sqrt{5x+1}]$ tại x>-1/5.
 
 **Vì sao:** f có giá trị ở x=-1/5 nhưng không có đạo hàm hữu hạn hai phía.
 
@@ -350,7 +350,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 **Bài toán:** $f(x)=\tan x-\cot x$; tính đạo hàm và miền.
 
-**Phân tích, đáp án:** $f\'=1/\cos^2x+1/\sin^2x$ tại sin x≠0 và cos x≠0.
+**Phân tích, đáp án:** $f'=1/\cos^2x+1/\sin^2x$ tại sin x≠0 và cos x≠0.
 
 **Vì sao:** Trừ cot làm hai dấu âm thành dấu cộng.
 
@@ -358,25 +358,25 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 #### EX-G11-CHIX-B33-01: Hai lần đa thức
 
-**Bài toán:** $f(x)=2x^4-3x^2+6$; tìm f\'\'.
+**Bài toán:** $f(x)=2x^4-3x^2+6$; tìm f''.
 
-**Phân tích, đáp án:** $f\'=8x^3-6x$, $f\'\'=24x^2-6$.
+**Phân tích, đáp án:** $f'=8x^3-6x$, $f''=24x^2-6$.
 
 **Vì sao:** Lấy đạo hàm hai lần, không bình phương f'.
 
 #### EX-G11-CHIX-B33-02: Hàm sin bậc hai
 
-**Bài toán:** $f(x)=\sin(2x)$; tìm f\'\'.
+**Bài toán:** $f(x)=\sin(2x)$; tìm f''.
 
-**Phân tích, đáp án:** $f\'=2\cos(2x)$, $f\'\'=-4\sin(2x)$.
+**Phân tích, đáp án:** $f'=2\cos(2x)$, $f''=-4\sin(2x)$.
 
 **Vì sao:** Chain được nhân cả hai lượt; dấu cos'=-sin.
 
 #### EX-G11-CHIX-B33-03: Mũ bậc hai
 
-**Bài toán:** $f(x)=e^{3x}$; tìm f\'\'.
+**Bài toán:** $f(x)=e^{3x}$; tìm f''.
 
-**Phân tích, đáp án:** $f\'=3e^{3x}$, $f\'\'=9e^{3x}$.
+**Phân tích, đáp án:** $f'=3e^{3x}$, $f''=9e^{3x}$.
 
 **Vì sao:** Nhân 3 ở mỗi lần lấy đạo hàm.
 
@@ -398,7 +398,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 #### EX-G11-CHIX-B33-06: Mô hình bóng bay
 
-**Bài toán:** $h(t)=8t-2t^2$ m trong 0≤t≤4; tìm h\'\' và đơn vị.
+**Bài toán:** $h(t)=8t-2t^2$ m trong 0≤t≤4; tìm h'' và đơn vị.
 
 **Phân tích, đáp án:** $v=8-4t$ m/s, $a=-4$ m/s²; chỉ diễn giải trong khoảng thời gian mô hình đang áp dụng.
 
@@ -429,7 +429,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 #### THPT-G11-CHIX-B31-C02 · skill_id=`G11-B31-LIMIT_QUOTIENT` · placement=`SGK_CORE`
 
-**Đề:** Để định nghĩa $f\'(a)$, cần lấy giới hạn nào?
+**Đề:** Để định nghĩa $f'(a)$, cần lấy giới hạn nào?
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $\lim_{h\to0}[f(a+h)-f(a)]/h$, $h\ne0$.
 
@@ -445,7 +445,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 #### THPT-G11-CHIX-B31-C03 · skill_id=`G11-B31-DERIVATIVE_AT_POINT` · placement=`SGK_CORE`
 
-**Đề:** Tính $f\'(0)$ bằng định nghĩa nếu $f(x)=3x^2+2x$.
+**Đề:** Tính $f'(0)$ bằng định nghĩa nếu $f(x)=3x^2+2x$.
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $2$.
 
@@ -453,7 +453,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 #### THPT-G11-CHIX-B31-P03 · skill_id=`G11-B31-DERIVATIVE_AT_POINT` · placement=`SGK_PRACTICE`
 
-**Đề:** Với $f(x)=x^2-x$, tính $f\'(3)$ từ thương sai phân tại 3.
+**Đề:** Với $f(x)=x^2-x$, tính $f'(3)$ từ thương sai phân tại 3.
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $5$.
 
@@ -509,7 +509,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 #### THPT-G11-CHIX-B31-C07 · skill_id=`G11-B31-TANGENT_SLOPE` · placement=`SGK_CORE`
 
-**Đề:** Điểm P(2,7) thuộc đồ thị, $f\'(2)=-3$. Hệ số góc tiếp tuyến là gì?
+**Đề:** Điểm P(2,7) thuộc đồ thị, $f'(2)=-3$. Hệ số góc tiếp tuyến là gì?
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $-3$.
 
@@ -521,11 +521,11 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $3$.
 
-**Giải thích bản chất và cách chọn phương pháp:** $f\'(x)=3x^2$, nên f\'(-1)=3, dù f(-1)=-1.
+**Giải thích bản chất và cách chọn phương pháp:** $f'(x)=3x^2$, nên f'(-1)=3, dù f(-1)=-1.
 
 #### THPT-G11-CHIX-B31-C08 · skill_id=`G11-B31-TANGENT_EQUATION` · placement=`SGK_CORE`
 
-**Đề:** $f(1)=4$ và $f\'(1)=2$. Viết tiếp tuyến.
+**Đề:** $f(1)=4$ và $f'(1)=2$. Viết tiếp tuyến.
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $y-4=2(x-1)$.
 
@@ -545,7 +545,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $20$ m/s.
 
-**Giải thích bản chất và cách chọn phương pháp:** $v=s\'=10t$, thay 2 được 20 (không phải quãng đường 20 m).
+**Giải thích bản chất và cách chọn phương pháp:** $v=s'=10t$, thay 2 được 20 (không phải quãng đường 20 m).
 
 #### THPT-G11-CHIX-B31-P09 · skill_id=`G11-B31-INSTANT_VELOCITY` · placement=`SGK_PRACTICE`
 
@@ -557,7 +557,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 #### THPT-G11-CHIX-B31-C10 · skill_id=`G11-B31-RATE_UNITS` · placement=`SGK_CORE`
 
-**Đề:** $V(t)$ lít và t phút. Đơn vị của $V\'(t)$ là gì?
+**Đề:** $V(t)$ lít và t phút. Đơn vị của $V'(t)$ là gì?
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** Lít/phút.
 
@@ -565,9 +565,9 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 #### THPT-G11-CHIX-B31-P10 · skill_id=`G11-B31-RATE_UNITS` · placement=`SGK_PRACTICE`
 
-**Đề:** $C(q)=100+7q+0,1q^2$ nghìn đồng (q sản phẩm). $C\'(10)$ và đơn vị?
+**Đề:** $C(q)=100+7q+0,1q^2$ nghìn đồng (q sản phẩm). $C'(10)$ và đơn vị?
 
-**Đáp án (chỉ sau khi nộp bài luyện tập formative):** $C\'(q)=7+0,2q$, $C\'(10)=9$ nghìn đồng/sản phẩm.
+**Đáp án (chỉ sau khi nộp bài luyện tập formative):** $C'(q)=7+0,2q$, $C'(10)=9$ nghìn đồng/sản phẩm.
 
 **Giải thích bản chất và cách chọn phương pháp:** Chi phí cận biên gần đúng, không phải tổng chi phí 180.
 
@@ -583,15 +583,15 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 #### THPT-G11-CHIX-B32-P01 · skill_id=`G11-B32-POWER_INTEGER` · placement=`SGK_PRACTICE`
 
-**Đề:** Với $f(x)=2x^5-5x^3+1$, tính $f\'(1)$.
+**Đề:** Với $f(x)=2x^5-5x^3+1$, tính $f'(1)$.
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $10-15=-5$.
 
-**Giải thích bản chất và cách chọn phương pháp:** $f\'=10x^4-15x^2$, thay 1.
+**Giải thích bản chất và cách chọn phương pháp:** $f'=10x^4-15x^2$, thay 1.
 
 #### THPT-G11-CHIX-B32-C02 · skill_id=`G11-B32-SQRT_DOMAIN` · placement=`SGK_CORE`
 
-**Đề:** $(\sqrt{x})\'$ trên x>0 bằng bao nhiêu?
+**Đề:** $(\sqrt{x})'$ trên x>0 bằng bao nhiêu?
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $1/(2\sqrt{x})$.
 
@@ -599,7 +599,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 #### THPT-G11-CHIX-B32-P02 · skill_id=`G11-B32-SQRT_DOMAIN` · placement=`SGK_PRACTICE`
 
-**Đề:** $f(x)=5\sqrt{x}$, $f\'(4)$?
+**Đề:** $f(x)=5\sqrt{x}$, $f'(4)$?
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $5/(2\sqrt4)=5/4$.
 
@@ -615,7 +615,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 #### THPT-G11-CHIX-B32-P03 · skill_id=`G11-B32-CONSTANT_SUM` · placement=`SGK_PRACTICE`
 
-**Đề:** Cho $u\'=3x^2$, $v\'=2x$, tính $(5u-2v+7)\'$.
+**Đề:** Cho $u'=3x^2$, $v'=2x$, tính $(5u-2v+7)'$.
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $15x^2-4x$.
 
@@ -623,9 +623,9 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 #### THPT-G11-CHIX-B32-C04 · skill_id=`G11-B32-PRODUCT` · placement=`SGK_CORE`
 
-**Đề:** Đúng/sai: $(uv)\'=u\'v\'$?
+**Đề:** Đúng/sai: $(uv)'=u'v'$?
 
-**Đáp án (chỉ sau khi nộp bài luyện tập formative):** Sai; công thức là $u\'v+uv\'$.
+**Đáp án (chỉ sau khi nộp bài luyện tập formative):** Sai; công thức là $u'v+uv'$.
 
 **Giải thích bản chất và cách chọn phương pháp:** Khi cả hai nhân tử biến đổi, có hai độ biến thiên chính.
 
@@ -633,7 +633,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 **Đề:** Tính đạo hàm $f(x)=x(x^2+4)$.
 
-**Đáp án (chỉ sau khi nộp bài luyện tập formative):** $f\'=x^2+4+2x^2=3x^2+4$.
+**Đáp án (chỉ sau khi nộp bài luyện tập formative):** $f'=x^2+4+2x^2=3x^2+4$.
 
 **Giải thích bản chất và cách chọn phương pháp:** Một nhân tử là x, nhân tử kia x²+4; lấy đạo hàm tích.
 
@@ -641,7 +641,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 **Đề:** Quy tắc thương $u/v$ khi v≠0 có tử là?
 
-**Đáp án (chỉ sau khi nộp bài luyện tập formative):** $u\'v-uv\'$.
+**Đáp án (chỉ sau khi nộp bài luyện tập formative):** $u'v-uv'$.
 
 **Giải thích bản chất và cách chọn phương pháp:** Thứ tự phép trừ quan trọng; mẫu là v².
 
@@ -659,11 +659,11 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $6(2x-1)^2$.
 
-**Giải thích bản chất và cách chọn phương pháp:** 3u² nhân u\'=2.
+**Giải thích bản chất và cách chọn phương pháp:** 3u² nhân u'=2.
 
 #### THPT-G11-CHIX-B32-P06 · skill_id=`G11-B32-COMPOSITION_CHAIN` · placement=`SGK_PRACTICE`
 
-**Đề:** Cho $f(x)=\sqrt{x^2+1}$. Tính f\'.
+**Đề:** Cho $f(x)=\sqrt{x^2+1}$. Tính f'.
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $x/\sqrt{x^2+1}$ với mọi x thực.
 
@@ -671,7 +671,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 #### THPT-G11-CHIX-B32-C07 · skill_id=`G11-B32-TRIG_SIN_COS` · placement=`SGK_CORE`
 
-**Đề:** $(\sin x)\'$, $(\cos x)\'$ bằng gì khi x đo radian?
+**Đề:** $(\sin x)'$, $(\cos x)'$ bằng gì khi x đo radian?
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $\cos x$ và $-\sin x$.
 
@@ -679,7 +679,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 #### THPT-G11-CHIX-B32-P07 · skill_id=`G11-B32-TRIG_SIN_COS` · placement=`SGK_PRACTICE`
 
-**Đề:** $f(x)=2\sin x-3\cos x$. Tìm f\'.
+**Đề:** $f(x)=2\sin x-3\cos x$. Tìm f'.
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $2\cos x+3\sin x$.
 
@@ -687,7 +687,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 #### THPT-G11-CHIX-B32-C08 · skill_id=`G11-B32-TRIG_TAN_COT` · placement=`SGK_CORE`
 
-**Đề:** $(\tan x)\'$ cần điều kiện nào?
+**Đề:** $(\tan x)'$ cần điều kiện nào?
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $1/\cos^2x$, chỉ nơi cos x≠0.
 
@@ -703,7 +703,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 #### THPT-G11-CHIX-B32-C09 · skill_id=`G11-B32-TRIG_CHAIN` · placement=`SGK_CORE`
 
-**Đề:** $(\cos(5x))\'$?
+**Đề:** $(\cos(5x))'$?
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $-5\sin(5x)$.
 
@@ -711,7 +711,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 #### THPT-G11-CHIX-B32-P09 · skill_id=`G11-B32-TRIG_CHAIN` · placement=`SGK_PRACTICE`
 
-**Đề:** $f(x)=\tan(x^2)$, tính f\' và miền.
+**Đề:** $f(x)=\tan(x^2)$, tính f' và miền.
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $2x/\cos^2(x^2)$ khi $\cos(x^2)\ne0$.
 
@@ -719,7 +719,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 #### THPT-G11-CHIX-B32-C10 · skill_id=`G11-B32-EXP_DERIV` · placement=`SGK_CORE`
 
-**Đề:** $(e^x)\'$ là gì?
+**Đề:** $(e^x)'$ là gì?
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $e^x$.
 
@@ -735,7 +735,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 #### THPT-G11-CHIX-B32-C11 · skill_id=`G11-B32-LOG_DERIV` · placement=`SGK_CORE`
 
-**Đề:** $(\ln x)\'$ có miền nào?
+**Đề:** $(\ln x)'$ có miền nào?
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $1/x$ trên x>0.
 
@@ -751,7 +751,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 #### THPT-G11-CHIX-B32-C12 · skill_id=`G11-B32-EXP_LOG_CHAIN` · placement=`SGK_CORE`
 
-**Đề:** $f(x)=e^{3x-2}$ có f\'?
+**Đề:** $f(x)=e^{3x-2}$ có f'?
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $3e^{3x-2}$.
 
@@ -771,7 +771,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** Vì đối số x-2 phải >0.
 
-**Giải thích bản chất và cách chọn phương pháp:** Có công thức $f\'=(1/(x-2))$ trên x>2, không tại x≤2.
+**Giải thích bản chất và cách chọn phương pháp:** Có công thức $f'=(1/(x-2))$ trên x>2, không tại x≤2.
 
 #### THPT-G11-CHIX-B32-P13 · skill_id=`G11-B32-DOMAIN_VALIDATION` · placement=`SGK_PRACTICE`
 
@@ -801,7 +801,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 **Đề:** $h(t)=18t-3t^2$ m, vận tốc tức thời sau 1 s?
 
-**Đáp án (chỉ sau khi nộp bài luyện tập formative):** $h\'(1)=18-6=12$ m/s.
+**Đáp án (chỉ sau khi nộp bài luyện tập formative):** $h'(1)=18-6=12$ m/s.
 
 **Giải thích bản chất và cách chọn phương pháp:** Vận tốc mang đơn vị m/s; không phải độ cao 15 m.
 
@@ -817,39 +817,39 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 #### THPT-G11-CHIX-B33-C01 · skill_id=`G11-B33-SECOND_DEF` · placement=`SGK_CORE`
 
-**Đề:** $f\'\'$ ký hiệu là gì?
+**Đề:** $f''$ ký hiệu là gì?
 
-**Đáp án (chỉ sau khi nộp bài luyện tập formative):** Đạo hàm của hàm đạo hàm: $f\'\'=(f\')\'$.
+**Đáp án (chỉ sau khi nộp bài luyện tập formative):** Đạo hàm của hàm đạo hàm: $f''=(f')'$.
 
-**Giải thích bản chất và cách chọn phương pháp:** Không phải bình phương $(f\')^2$.
+**Giải thích bản chất và cách chọn phương pháp:** Không phải bình phương $(f')^2$.
 
 #### THPT-G11-CHIX-B33-P01 · skill_id=`G11-B33-SECOND_DEF` · placement=`SGK_PRACTICE`
 
-**Đề:** $f(x)=x^3$, tìm f\' và f\'\'.
+**Đề:** $f(x)=x^3$, tìm f' và f''.
 
-**Đáp án (chỉ sau khi nộp bài luyện tập formative):** $f\'=3x^2$, $f\'\'=6x$.
+**Đáp án (chỉ sau khi nộp bài luyện tập formative):** $f'=3x^2$, $f''=6x$.
 
 **Giải thích bản chất và cách chọn phương pháp:** Lần lượt lấy đạo hàm 2 lần.
 
 #### THPT-G11-CHIX-B33-C02 · skill_id=`G11-B33-POLYNOMIAL` · placement=`SGK_CORE`
 
-**Đề:** $f(x)=4x^3-6x$, tính f\'\'(1).
+**Đề:** $f(x)=4x^3-6x$, tính f''(1).
 
-**Đáp án (chỉ sau khi nộp bài luyện tập formative):** $f\'=12x^2-6$, $f\'\'=24x$, tại 1 được 24.
+**Đáp án (chỉ sau khi nộp bài luyện tập formative):** $f'=12x^2-6$, $f''=24x$, tại 1 được 24.
 
 **Giải thích bản chất và cách chọn phương pháp:** Đạo hàm cấp hai có thể là một hàm mới của x.
 
 #### THPT-G11-CHIX-B33-P02 · skill_id=`G11-B33-POLYNOMIAL` · placement=`SGK_PRACTICE`
 
-**Đề:** $f(x)=x^5+2x^2$, tính f\'\'(0).
+**Đề:** $f(x)=x^5+2x^2$, tính f''(0).
 
-**Đáp án (chỉ sau khi nộp bài luyện tập formative):** $f\'\'=20x^3+4$, tại 0 được 4.
+**Đáp án (chỉ sau khi nộp bài luyện tập formative):** $f''=20x^3+4$, tại 0 được 4.
 
-**Giải thích bản chất và cách chọn phương pháp:** Không thay x=0 vào f\' trước khi lấy đạo hàm lần hai.
+**Giải thích bản chất và cách chọn phương pháp:** Không thay x=0 vào f' trước khi lấy đạo hàm lần hai.
 
 #### THPT-G11-CHIX-B33-C03 · skill_id=`G11-B33-TRIG_EXP` · placement=`SGK_CORE`
 
-**Đề:** $f(x)=\cos(2x)$, f\'\' bằng?
+**Đề:** $f(x)=\cos(2x)$, f'' bằng?
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $-4\cos(2x)$.
 
@@ -857,7 +857,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 #### THPT-G11-CHIX-B33-P03 · skill_id=`G11-B33-TRIG_EXP` · placement=`SGK_PRACTICE`
 
-**Đề:** $f(x)=e^{-x}$, f\'\' bằng?
+**Đề:** $f(x)=e^{-x}$, f'' bằng?
 
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $e^{-x}$.
 
@@ -867,9 +867,9 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 **Đề:** $s(t)=5t^2$ m, gia tốc là?
 
-**Đáp án (chỉ sau khi nộp bài luyện tập formative):** $s\'\'=10$ m/s².
+**Đáp án (chỉ sau khi nộp bài luyện tập formative):** $s''=10$ m/s².
 
-**Giải thích bản chất và cách chọn phương pháp:** $v=s\'=10t$ m/s, gia tốc là đạo hàm của v.
+**Giải thích bản chất và cách chọn phương pháp:** $v=s'=10t$ m/s, gia tốc là đạo hàm của v.
 
 #### THPT-G11-CHIX-B33-P04 · skill_id=`G11-B33-ACCELERATION` · placement=`SGK_PRACTICE`
 
@@ -901,7 +901,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 **Đề:** Một vật $s(t)=t^3-3t^2$ m. Cần đại lượng nào để biết vận tốc và gia tốc?
 
-**Đáp án (chỉ sau khi nộp bài luyện tập formative):** $v=s\'=3t^2-6t$ m/s; $a=s\'\'=6t-6$ m/s².
+**Đáp án (chỉ sau khi nộp bài luyện tập formative):** $v=s'=3t^2-6t$ m/s; $a=s''=6t-6$ m/s².
 
 **Giải thích bản chất và cách chọn phương pháp:** Thứ tự: vị trí → đạo hàm một → đạo hàm hai.
 
@@ -909,7 +909,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 **Đề:** Cho $f(x)=x^2+2x$. Tại x=1, viết tiếp tuyến và đạo hàm cấp hai.
 
-**Đáp án (chỉ sau khi nộp bài luyện tập formative):** $f(1)=3$, $f\'(1)=4$, tiếp tuyến $y-3=4(x-1)$; $f\'\'=2$.
+**Đáp án (chỉ sau khi nộp bài luyện tập formative):** $f(1)=3$, $f'(1)=4$, tiếp tuyến $y-3=4(x-1)$; $f''=2$.
 
 **Giải thích bản chất và cách chọn phương pháp:** Kết hợp ý nghĩa hình học của đạo hàm với đạo hàm lần hai.
 
@@ -920,9 +920,9 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 #### THPT-G11-CHIX-B31-W01 · role=`ANCHOR_TAG` · placement=`SGK_WRITTEN` · rubric `/4`
 
-**Đề tự luận:** $f(x)=x^2-2x+3$: (a) lập thương sai phân tại x=2; (b) tính f\'(2) theo định nghĩa; (c) lập tiếp tuyến; (d) giải thích hình học.
+**Đề tự luận:** $f(x)=x^2-2x+3$: (a) lập thương sai phân tại x=2; (b) tính f'(2) theo định nghĩa; (c) lập tiếp tuyến; (d) giải thích hình học.
 
-**Lời giải chuẩn để học sinh tự đối chiếu sau khi hoàn thành:** Thương $[f(2+h)-f(2)]/h=2+h$, $f\'(2)=2$, $f(2)=3$, tiếp tuyến $y-3=2(x-2)$, độ dốc 2.
+**Lời giải chuẩn để học sinh tự đối chiếu sau khi hoàn thành:** Thương $[f(2+h)-f(2)]/h=2+h$, $f'(2)=2$, $f(2)=3$, tiếp tuyến $y-3=2(x-2)$, độ dốc 2.
 
 **Rubric 4 điểm — chấm theo chứng cứ lập luận, không chỉ đáp số:**
 1. Viết f(2+h) và f(2) đúng — **1 điểm**.
@@ -958,7 +958,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 **Đề tự luận:** Tính đạo hàm $F(x)=(x^2+3)\sin(2x)$. (a) nêu quy tắc ngoài; (b) đạo hàm hàm trong; (c) kết quả; (d) phát hiện lời giải sai chỉ lấy tích hai đạo hàm.
 
-**Lời giải chuẩn để học sinh tự đối chiếu sau khi hoàn thành:** $F\'=2x\sin(2x)+2(x²+3)\cos(2x)$. Nếu chỉ nhân đạo hàm từng thừa số thì thiếu hai thành phần biến thiên của hình chữ nhật.
+**Lời giải chuẩn để học sinh tự đối chiếu sau khi hoàn thành:** $F'=2x\sin(2x)+2(x²+3)\cos(2x)$. Nếu chỉ nhân đạo hàm từng thừa số thì thiếu hai thành phần biến thiên của hình chữ nhật.
 
 **Rubric 4 điểm — chấm theo chứng cứ lập luận, không chỉ đáp số:**
 1. Chọn quy tắc tích ngoài — **1 điểm**.
@@ -968,9 +968,9 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 #### THPT-G11-CHIX-B32-W02 · role=`WRITTEN` · placement=`SGK_WRITTEN` · rubric `/4`
 
-**Đề tự luận:** Với $F(x)=\ln(9-x^2)$: (a) tìm miền; (b) tính đạo hàm; (c) tính F\'(0); (d) giải thích tại sao không thể dùng công thức tại x=4.
+**Đề tự luận:** Với $F(x)=\ln(9-x^2)$: (a) tìm miền; (b) tính đạo hàm; (c) tính F'(0); (d) giải thích tại sao không thể dùng công thức tại x=4.
 
-**Lời giải chuẩn để học sinh tự đối chiếu sau khi hoàn thành:** Miền (-3,3); $F\'=-2x/(9-x²)$; F\'(0)=0; tại x=4 log đối số âm nên hàm gốc vô nghĩa.
+**Lời giải chuẩn để học sinh tự đối chiếu sau khi hoàn thành:** Miền (-3,3); $F'=-2x/(9-x²)$; F'(0)=0; tại x=4 log đối số âm nên hàm gốc vô nghĩa.
 
 **Rubric 4 điểm — chấm theo chứng cứ lập luận, không chỉ đáp số:**
 1. Giải 9-x²>0 đúng — **1 điểm**.
@@ -980,9 +980,9 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 #### THPT-G11-CHIX-B32-W03 · role=`WRITTEN` · placement=`SGK_WRITTEN` · rubric `/4`
 
-**Đề tự luận:** Hàm $y=(3x+1)/(x^2+1)$: (a) miền; (b) đạo hàm; (c) tính y\'(0); (d) giải thích tử của thương.
+**Đề tự luận:** Hàm $y=(3x+1)/(x^2+1)$: (a) miền; (b) đạo hàm; (c) tính y'(0); (d) giải thích tử của thương.
 
-**Lời giải chuẩn để học sinh tự đối chiếu sau khi hoàn thành:** Miền ℝ; $y\'=[3(x²+1)-(3x+1)2x]/(x²+1)^2=(-3x²-2x+3)/(x²+1)^2$; y\'(0)=3.
+**Lời giải chuẩn để học sinh tự đối chiếu sau khi hoàn thành:** Miền ℝ; $y'=[3(x²+1)-(3x+1)2x]/(x²+1)^2=(-3x²-2x+3)/(x²+1)^2$; y'(0)=3.
 
 **Rubric 4 điểm — chấm theo chứng cứ lập luận, không chỉ đáp số:**
 1. Miền ℝ do x²+1>0 — **1 điểm**.
@@ -1004,9 +1004,9 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 #### THPT-G11-CHIX-B33-W02 · role=`WRITTEN` · placement=`SGK_WRITTEN` · rubric `/4`
 
-**Đề tự luận:** $f(x)=2\sin(3x)+e^x$: (a) f\'; (b) f\'\'; (c) f\'\'(0); (d) lưu ý công thức chain.
+**Đề tự luận:** $f(x)=2\sin(3x)+e^x$: (a) f'; (b) f''; (c) f''(0); (d) lưu ý công thức chain.
 
-**Lời giải chuẩn để học sinh tự đối chiếu sau khi hoàn thành:** $f\'=6\cos(3x)+e^x$, $f\'\'=-18\sin(3x)+e^x$, f\'\'(0)=1. Hàm trong 3x góp hệ số 3 mỗi lần.
+**Lời giải chuẩn để học sinh tự đối chiếu sau khi hoàn thành:** $f'=6\cos(3x)+e^x$, $f''=-18\sin(3x)+e^x$, f''(0)=1. Hàm trong 3x góp hệ số 3 mỗi lần.
 
 **Rubric 4 điểm — chấm theo chứng cứ lập luận, không chỉ đáp số:**
 1. Đạo hàm lần 1 gồm 6cos 3x — **1 điểm**.
