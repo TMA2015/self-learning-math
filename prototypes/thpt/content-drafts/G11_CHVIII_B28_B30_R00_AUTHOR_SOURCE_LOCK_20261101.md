@@ -1,3 +1,5 @@
+> **STATUS UPDATE 2026-11-01:** Author source-lock and QA below remain historical evidence. Independent NotebookLM full report reported Academic/Ped PASS; targeted addendum `G11_CHVIII_B28_B30_R00_NOTEBOOKLM_SOURCE_FIDELITY_PASS_ADDENDUM_20261101.md` confirms `SOURCE_FIDELITY_R00=PASS`, report-only PED corrections, no content change. `ready/G11-SGK-CHVIII-B28-B30-R00.md` is now `CONTENT_READY` for *academic authoring handoff only*. Release R1–R5/AP1–AP5/P1–P2, Final Submit and Mastery are not authorized or validated.
+
 # G11 KNTT Chương VIII — Author review snapshot R00
 
 PACKET_ID: THPT-G11-CHVIII-B28-B30-WHOLE-CHAPTER-AUTHORING-R00-20261101
