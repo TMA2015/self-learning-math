@@ -4,19 +4,18 @@
 **STATUS:** `AUTHOR_DRAFT_NOT_REVIEW_READY`. **NOT ACADEMIC PASS / NOT PED PASS**. The exact owner source SGK/SBT and page references require independent NotebookLM verification before formal review, with source original scanned PDF receipt.  
 **LEARNING_PATH:** SGK_CHAPTER · candidate protected SGK_CHAPTER_READINESS is separate in the PRIVATE Temp file, **not** embedded here.  
 **Scope:** SGK KNTT Toán 11 Tập 2 ChVI, B18 p4–9, B19 p10–15, B20 p16–19, B21 p20–24, end ChVI p25–26 (public TOC); SBT T2 preliminary B18 p4–7, B19 p8–10, B20 p11–15, B21 p16–19, end p20–23; **verify original owner S1 and physical printed pagination**, do not silently claim source PASS.  
-**Coverage:** 22 RD0 outcomes, **17** guided D2 examples, **37** public D3 unique questions, **8** shared D4 Written (4 Anchor tags), **4** D5 source SVG, **8** D6 remediation cards. **Private RD1** is a separate 22-item draft in owner personal Library with independent IDs, keys and /4 rubrics; cannot be leaked into website.  
+**Coverage:** 22 RD0 outcomes, **17** guided D2 examples, **39** public D3 unique questions, **8** shared D4 Written (4 Anchor tags), **4** D5 source SVG, **8** D6 remediation cards. **Private RD1** is a separate 22-item draft in owner personal Library with independent IDs, keys and /4 rubrics; cannot be leaked into website.  
 **Teaching requirement, Issue #691:** first explain **WHY** the idea exists, **WHAT** it means, **HOW** formed; then formal meaning and domain, explained examples and independently attempted Core/Practice/Application. NotebookLM must return **two separate reviewer verdicts** `ACADEMIC_CHAPTER_VI` and `PEDAGOGICAL_SELF_LEARNING_READY`; never infer pedagogy PASS from formula correctness.  
 **Permanent sources:** five THPT v2.0 sources selected in NotebookLM (not v1.0), project governance 08/06/07. Academic PASS does not imply scoring, Mastery, merge or deploy.  
 **Source ledger (these exact Git blob SHAs):**
 - `prototypes/thpt/content-drafts/G11_CHVI_B18_B21_S1_RD0_AUTHORING_R00_20261101.md` · blob `26ba1a9617a1cca966578090b426fa96952327f2`.
 - `prototypes/thpt/content-drafts/G11_CHVI_B18_B21_D1_D2_CONCEPT_FIRST_R00_20261101.md` · blob `78c6a8a9f29117e3c78dba191963574e006c4830`.
-- `prototypes/thpt/content-drafts/G11_CHVI_B18_B21_D3_PUBLIC_CORE_PRACTICE_R00_20261101.md` · blob `34e01b90c0a6abe3bbda5a7a0dc612f041c10ce5`.
+- `prototypes/thpt/content-drafts/G11_CHVI_B18_B21_D3_PUBLIC_CORE_PRACTICE_R00_20261101.md` · blob `bd58fc86a3aa6dab21153e939fdbcd8050a5929d`.
 - `prototypes/thpt/content-drafts/G11_CHVI_B18_B21_D4_WRITTEN_D6_HELP_R00_20261101.md` · blob `15a137147a6264e23e829a05334bbc132892fe53`.
 - `prototypes/thpt/content-drafts/svg/FIG-G11-CHVI-B18-01_R00.svg` · blob `493b3b651d9832ed8dd98a9f42a61a704dd3e0df`.
 - `prototypes/thpt/content-drafts/svg/FIG-G11-CHVI-B19-01_R00.svg` · blob `11b0e04e0c3c66642795ee9a74d0242791882030`.
 - `prototypes/thpt/content-drafts/svg/FIG-G11-CHVI-B20-01_R00.svg` · blob `f4e4642695d75aa5663e6c925881ebc1c6b1e1ce`.
 - `prototypes/thpt/content-drafts/svg/FIG-G11-CHVI-B21-01_R00.svg` · blob `6d43f842d096b974eb70af21e6751f1ec70eea00`.
-
 ---
 ## PART A · S1 scope + RD0 matrix
 
@@ -305,7 +304,7 @@ D1–D2 above are *author text*, not verbatim SGK quotations. Independently veri
 
 **One canonical `item_id` per stem.** Placement marks role only; no cloning when reusing later in Topic. Original material, not copied from SBT. Reviewer must verify not only answer but instructional depth, assumptions and structural variety.
 
-## Canonical item register (37 candidates)
+## Canonical item register (39 candidates)
 
 ### B18 — Lũy thừa số mũ thực
 
@@ -332,6 +331,14 @@ D1–D2 above are *author text*, not verbatim SGK quotations. Independently veri
 **Đáp án:** Không.
 
 **Giải thích:** Nếu dùng quy tắc số mũ âm sẽ là 1/0², phép chia cho 0 không xác định.
+
+#### THPT-G11-CHVI-B18-C04 · placement=SGK_CORE · skill_id=G11-B18-POWER_REAL
+
+**Đề:** Một bạn nói: “2^(√2) không có nghĩa, vì √2 không thể đếm số lần nhân 2”. Em giải thích bạn đang hiểu sai điều gì và mô tả cách số này được hình thành.
+
+**Đáp án:** 2^(√2) có nghĩa vì cơ số 2>0; số mũ thực không còn được hiểu là số lần nhân nguyên. Nó được định nghĩa bằng giới hạn của dãy giá trị 2^r khi các số hữu tỉ r tiến đến √2.
+
+**Giải thích:** Các số mũ hữu tỉ gần √2 như 1,4;1,41;1,414,… đã có định nghĩa bằng căn/lũy thừa. Khi các giá trị 2^r tiến đến một số xác định không phụ thuộc dãy xấp xỉ, ta gọi đó là 2^(√2). Đây là mở rộng nhất quán của khái niệm, không phải “nhân số 2 √2 lần”.
 
 #### THPT-G11-CHVI-B18-P01 · placement=SGK_PRACTICE · skill_id=G11-B18-POWER_LAWS
 
@@ -611,11 +618,19 @@ D1–D2 above are *author text*, not verbatim SGK quotations. Independently veri
 
 **Giải thích:** 2^x>0 với mọi x thực; không thể bằng −1.
 
+#### THPT-G11-CHVI-B21-P08 · placement=SGK_PRACTICE · skill_id=G11-CHVI-INTEGRATED
+
+**Đề:** Một bạn phát biểu: “log₂(2^x)=2x và y=log₂x xác định với mọi x thực vì hàm y=2^x có TXĐ ℝ”. Hãy tìm và sửa **hai lỗi khái niệm**, sau đó giải thích hàm nào thực hiện phép ngược của hàm nào.
+
+**Đáp án:** log₂(2^x)=x với mọi x thực, không phải 2x. Hàm y=log₂x chỉ xác định với x>0. Hai hàm y=2^x và y=log₂x là hai hàm ngược: đầu ra của hàm mũ là đầu vào hợp lệ của hàm logarit.
+
+**Giải thích:** Logarit trả lại **số mũ** đã tạo ra kết quả, không nhân cơ số với số mũ. Hàm 2^x nhận mọi x thực nhưng **cho ra số dương**; chính tập giá trị (0,+∞) đó trở thành TXĐ của hàm ngược log₂x. Nhầm TXĐ của hàm gốc với TXĐ của hàm ngược là lỗi bản chất.
+
 ## QA/ledger (AUTHOR ONLY)
 
-- B18: 9; B19: 9; B20: 8; B21: 11. Total **37 unique canonical stems** in this public formative draft.
+- B18: 10; B19: 9; B20: 8; B21: 12. Total **39 unique canonical stems** in this public formative draft.
 - D3 outcome coverage: `G11-B18-POWER_INTEGER`, `G11-B18-POWER_RATIONAL`, `G11-B18-POWER_LAWS`, `G11-B18-GROWTH_MODEL`, `G11-B19-LOG_DEFINITION`, `G11-B19-LOG_DOMAIN`, `G11-B19-LOG_LAWS`, `G11-B19-LOG_BASE_CHANGE`, `G11-B19-LOG_APPLICATION`, `G11-B20-EXP_FUNCTION`, `G11-B20-EXP_MONOTONIC`, `G11-B20-LOG_FUNCTION`, `G11-B20-INVERSE_GRAPH`, `G11-B20-LOG_MONOTONIC`, `G11-B21-EXP_EQUATION`, `G11-B21-LOG_EQUATION`, `G11-B21-EXP_INEQUALITY`, `G11-B21-LOG_INEQUALITY`, `G11-B21-DOMAIN_CHECK`, `G11-B21-REAL_CONTEXT`.
-- Integrated `G11-CHVI-INTEGRATED` requires chapter-level D1 microcheck, cross-skill Written and **different private RD1**. Do not claim total 22/22 unique outcomes covered merely because there are 37 items.
+- Integrated `G11-CHVI-INTEGRATED` requires chapter-level D1 microcheck, cross-skill Written and **different private RD1**. Do not claim total 22/22 unique outcomes covered merely because there are 39 items.
 - **Reviewer focus:** real exponents a>0; log of product vs log of each negative factor; a in (0,1) reverses inequality; LOG arguments >0; discrete strict > threshold. PED1–PED6 reviewer to check teaching ability, not mere result.
 - **Never** use these public stems as private RD1 evidence without preventing learner exposure; private stems and solution rubrics stay in protected Library only.
 
