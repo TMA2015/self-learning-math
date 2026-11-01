@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 800 450" width="800" height="450">
+<title id="title">FIG-G11-CHVI-B19-01: Lôgarit trả lời: cần số mũ nào?</title><desc id="desc">Sơ đồ luồng hai chiều: từ cơ số 2, mũ 3 tạo ra 8; quay ngược từ kết quả 8, logarit cơ số 2 trả về số mũ 3. Cơ số phải dương, khác 1; đối số phải dương.</desc>
+<rect width="800" height="450" fill="#f8fafc" rx="20"/>
+<text x="400" y="38" font-size="22" font-weight="700" text-anchor="middle" fill="#172554" font-family="Arial">Lôgarit trả lời: cần số mũ nào?</text>
+<rect x="85" y="125" width="240" height="125" rx="20" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<rect x="470" y="125" width="240" height="125" rx="20" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
+<text x="205" y="162" text-anchor="middle" font-size="20" font-weight="700" fill="#1e40af">2^3 = 8</text>
+<text x="205" y="195" text-anchor="middle" font-size="16" fill="#1e40af">Biết cơ số và số mũ</text><text x="205" y="221" text-anchor="middle" font-size="16" fill="#1e40af">→ tính kết quả</text>
+<text x="590" y="162" text-anchor="middle" font-size="20" font-weight="700" fill="#065f46">log₂8 = 3</text>
+<text x="590" y="195" text-anchor="middle" font-size="16" fill="#065f46">Biết cơ số và kết quả</text><text x="590" y="221" text-anchor="middle" font-size="16" fill="#065f46">→ tìm số mũ</text>
+<path d="M325 174 H470 M460 167 L470 174 L460 181" fill="none" stroke="#334155" stroke-width="3"/>
+<path d="M470 218 H325 M335 211 L325 218 L335 225" fill="none" stroke="#334155" stroke-width="3"/>
+<text x="400" y="160" text-anchor="middle" font-size="14" fill="#334155">Làm</text><text x="400" y="242" text-anchor="middle" font-size="14" fill="#334155">Đảo lại</text>
+<text x="400" y="309" text-anchor="middle" font-size="17" fill="#334155">log_a(b) = x ↔ a^x = b</text>
+<text x="400" y="346" text-anchor="middle" font-size="16" fill="#be123c">Điều kiện: a &gt; 0; a ≠ 1; b &gt; 0</text><text x="400" y="429" font-size="13" text-anchor="middle" fill="#475569" font-family="Arial">Đọc nhãn, điều kiện và phần hướng dẫn cạnh hình trước khi kết luận.</text></svg>
