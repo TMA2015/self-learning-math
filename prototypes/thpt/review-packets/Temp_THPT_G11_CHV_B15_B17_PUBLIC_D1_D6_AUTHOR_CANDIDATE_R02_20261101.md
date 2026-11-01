@@ -14,7 +14,7 @@
 - `prototypes/thpt/content-drafts/G11_CHV_B15_B17_D4_WRITTEN_D6_HELP_R01_20261101.md` · blob `6b370781e3bab2951d8a11fd8d97030ffbb528d5`.
 - `prototypes/thpt/content-drafts/svg/FIG-G11-B15-01_R01.svg` · blob `632bef51196757f9c71f54c53bb3c7639ce158e0`.
 - `prototypes/thpt/content-drafts/svg/FIG-G11-B16-01_R01.svg` · blob `d623e8a96c6d5f9723aafb9c62bffe57bdc9aa73`.
-- `prototypes/thpt/content-drafts/svg/FIG-G11-B17-01_R01.svg` · blob `acf2b484d992e5cbe5443d6dc016a2d12d5baf58`.
+- `prototypes/thpt/content-drafts/svg/FIG-G11-B17-01_R01.svg` · blob `0cc06960b371bca72ee78da414a04aa56f5e5fbe`.
 
 ---
 
@@ -723,7 +723,7 @@ Ví dụ f(x)=x³+x−1: f(0)=−1, f(1)=1, và f là đa thức liên tục tr�
 <path d="M690 350 l-12 -6 v12 z" fill="#0f172a"/>
 <line x1="220" y1="370" x2="220" y2="70" stroke="#0f172a" stroke-width="2.5"/>
 <path d="M220 70 l-6 12 h12 z" fill="#0f172a"/>
-<text x="702" y="357" font-size="17" fill="#0f172a">x</text><text x="202" y="63" font-size="17" fill="#0f172a">y</text><text x="205" y="370" font-size="15">0</text><line x1="120" y1="350" x2="650" y2="85" stroke="#2563eb" stroke-width="4"/>
+<text x="702" y="357" font-size="17" fill="#0f172a">x</text><text x="202" y="63" font-size="17" fill="#0f172a">y</text><text x="205" y="370" font-size="15">0</text><line x1="120" y1="340.83" x2="650" y2="97.92" stroke="#2563eb" stroke-width="4"/>
 <line x1="340" y1="350" x2="340" y2="240" stroke="#64748b" stroke-width="1.5" stroke-dasharray="6 7"/>
 <circle cx="340" cy="240" r="10" fill="#f8fafc" stroke="#2563eb" stroke-width="4"/>
 <circle cx="340" cy="350" r="7" fill="#dc2626" stroke="#fff" stroke-width="2"/>
