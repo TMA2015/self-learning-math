@@ -13,9 +13,9 @@
 - `prototypes/thpt/content-drafts/G11_CHVI_B18_B21_D3_PUBLIC_CORE_PRACTICE_R00_20261101.md` · blob `901807bd38a2472fc551e70a499c94569e9b0d03`.
 - `prototypes/thpt/content-drafts/G11_CHVI_B18_B21_D4_WRITTEN_D6_HELP_R00_20261101.md` · blob `15a137147a6264e23e829a05334bbc132892fe53`.
 - `prototypes/thpt/content-drafts/G11_CHVI_B18_B21_PED22_OUTCOME_EVIDENCE_LEDGER_R01_20261101.md` · blob `b49b9232c81a8beffaeea08ed951ef089946596d`.
-- `prototypes/thpt/content-drafts/svg/FIG-G11-CHVI-B18-01_R00.svg` · blob `493b3b651d9832ed8dd98a9f42a61a704dd3e0df`.
-- `prototypes/thpt/content-drafts/svg/FIG-G11-CHVI-B19-01_R00.svg` · blob `11b0e04e0c3c66642795ee9a74d0242791882030`.
-- `prototypes/thpt/content-drafts/svg/FIG-G11-CHVI-B20-01_R00.svg` · blob `f4e4642695d75aa5663e6c925881ebc1c6b1e1ce`.
+- `prototypes/thpt/content-drafts/svg/FIG-G11-CHVI-B18-01_R00.svg` · blob `79528bcd2c87eb40b1b54f18c697b0ae3458e642`.
+- `prototypes/thpt/content-drafts/svg/FIG-G11-CHVI-B19-01_R00.svg` · blob `fe2895ac101dcc4cf4046d57428181ad0f448dc8`.
+- `prototypes/thpt/content-drafts/svg/FIG-G11-CHVI-B20-01_R00.svg` · blob `64bcb465bd6d809095a4ca2b910555e314badb69`.
 - `prototypes/thpt/content-drafts/svg/FIG-G11-CHVI-B21-01_R00.svg` · blob `6d43f842d096b974eb70af21e6751f1ec70eea00`.
 
 ---
@@ -883,14 +883,19 @@ The table is a **locator for independent critical review**, not a claim PED1–P
 
 ```xml
 <svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 800 450" width="800" height="450">
-<title id="title">FIG-G11-CHVI-B18-01: Số mũ thay đổi liên tục, 2^x thay đổi thế nào?</title><desc id="desc">Các điểm đúng tọa độ (−2,1/4), (−1,1/2), (0,1), (1,2), (2,4) trên trục x và trục 2^x, minh họa vì sao số mũ âm cho phân số, 0 cho 1 và x tăng thì 2^x tăng. Dấu căn cho điểm x=1/2 có y=√2.</desc>
+<title id="title">FIG-G11-CHVI-B18-01: Số mũ thay đổi liên tục, 2^x thay đổi thế nào?</title><desc id="desc">Các điểm đúng tọa độ (-2,1/4), (-1,1/2), (0,1), (1,2), (2,4) trên trục x và trục 2^x, minh họa vì sao số mũ âm cho phân số, 0 cho 1 và x tăng thì 2^x tăng. Dấu căn cho điểm x=1/2 có y=√2.</desc>
 <rect width="800" height="450" fill="#f8fafc" rx="20"/>
 <text x="400" y="38" font-size="22" font-weight="700" text-anchor="middle" fill="#172554" font-family="Arial">Số mũ thay đổi liên tục, 2^x thay đổi thế nào?</text>
 <line x1="82" y1="360" x2="720" y2="360" stroke="#1e293b" stroke-width="2"/><path d="M720 360 l-10 -5 v10 z" fill="#1e293b"/>
 <line x1="360" y1="374" x2="360" y2="58" stroke="#1e293b" stroke-width="2"/><path d="M360 58 l-5 10 h10 z" fill="#1e293b"/>
-<text x="731" y="367" font-size="17">x</text><text x="335" y="63" font-size="17">2^x</text><polyline points="129.00,343.67 134.78,343.07 140.55,342.44 146.32,341.79 152.10,341.11 157.87,340.41 163.65,339.69 169.43,338.93 175.20,338.15 180.97,337.34 186.75,336.50 192.53,335.63 198.30,334.73 204.07,333.79 209.85,332.82 215.63,331.82 221.40,330.77 227.18,329.69 232.95,328.57 238.72,327.40 244.50,326.19 250.27,324.94 256.05,323.64 261.82,322.29 267.60,320.89 273.38,319.45 279.15,317.94 284.92,316.38 290.70,314.77 296.48,313.09 302.25,311.35 308.02,309.55 313.80,307.68 319.57,305.74 325.35,303.73 331.13,301.65 336.90,299.48 342.68,297.24 348.45,294.91 354.23,292.50 360.00,290.00 365.78,287.41 371.55,284.72 377.32,281.93 383.10,279.03 388.88,276.03 394.65,272.92 400.43,269.69 406.20,266.35 411.98,262.87 417.75,259.27 423.53,255.54 429.30,251.67 435.08,247.66 440.85,243.49 446.63,239.17 452.40,234.70 458.18,230.05 463.95,225.24 469.73,220.24 475.50,215.06 481.27,209.69 487.05,204.12 492.82,198.34 498.60,192.35 504.38,186.14 510.15,179.70 515.93,173.01 521.70,166.08 527.48,158.90 533.25,151.45 539.02,143.72 544.80,135.70 550.58,127.39 556.35,118.77 562.13,109.83 567.90,100.56 573.68,90.94 579.45,80.97 585.23,70.63 591.00,59.90" fill="none" stroke="#2563eb" stroke-width="3.5"/><circle cx="140" cy="342.5" r="5" fill="#1d4ed8"/><text x="140" y="384" font-size="14" text-anchor="middle" fill="#334155">−2</text><circle cx="250" cy="325" r="5" fill="#1d4ed8"/><text x="250" y="384" font-size="14" text-anchor="middle" fill="#334155">−1</text><circle cx="360" cy="290" r="5" fill="#1d4ed8"/><text x="360" y="384" font-size="14" text-anchor="middle" fill="#334155">0</text><circle cx="470" cy="220" r="5" fill="#1d4ed8"/><text x="470" y="384" font-size="14" text-anchor="middle" fill="#334155">1</text><circle cx="580" cy="80" r="5" fill="#1d4ed8"/><text x="580" y="384" font-size="14" text-anchor="middle" fill="#334155">2</text><circle cx="415" cy="261.0" r="7" fill="#d97706"/><text x="448" y="248" font-size="15" fill="#92400e">x=1/2 → √2</text>
+<text x="731" y="367" font-size="17">x</text><text x="335" y="63" font-size="17">2^x</text><polyline points="129.00,343.67 134.78,343.07 140.55,342.44 146.32,341.79 152.10,341.11 157.87,340.41 163.65,339.69 169.43,338.93 175.20,338.15 180.97,337.34 186.75,336.50 192.53,335.63 198.30,334.73 204.07,333.79 209.85,332.82 215.63,331.82 221.40,330.77 227.18,329.69 232.95,328.57 238.72,327.40 244.50,326.19 250.27,324.94 256.05,323.64 261.82,322.29 267.60,320.89 273.38,319.45 279.15,317.94 284.92,316.38 290.70,314.77 296.48,313.09 302.25,311.35 308.02,309.55 313.80,307.68 319.57,305.74 325.35,303.73 331.13,301.65 336.90,299.48 342.68,297.24 348.45,294.91 354.23,292.50 360.00,290.00 365.78,287.41 371.55,284.72 377.32,281.93 383.10,279.03 388.88,276.03 394.65,272.92 400.43,269.69 406.20,266.35 411.98,262.87 417.75,259.27 423.53,255.54 429.30,251.67 435.08,247.66 440.85,243.49 446.63,239.17 452.40,234.70 458.18,230.05 463.95,225.24 469.73,220.24 475.50,215.06 481.27,209.69 487.05,204.12 492.82,198.34 498.60,192.35 504.38,186.14 510.15,179.70 515.93,173.01 521.70,166.08 527.48,158.90 533.25,151.45 539.02,143.72 544.80,135.70 550.58,127.39 556.35,118.77 562.13,109.83 567.90,100.56 573.68,90.94 579.45,80.97 585.23,70.63 591.00,59.90" fill="none" stroke="#2563eb" stroke-width="3.5"/><circle cx="140" cy="342.5" r="5" fill="#1d4ed8"/><text x="140" y="384" font-size="14" text-anchor="middle" fill="#334155">-2</text><circle cx="250" cy="325" r="5" fill="#1d4ed8"/><text x="250" y="384" font-size="14" text-anchor="middle" fill="#334155">-1</text><circle cx="360" cy="290" r="5" fill="#1d4ed8"/><text x="360" y="384" font-size="14" text-anchor="middle" fill="#334155">0</text><circle cx="470" cy="220" r="5" fill="#1d4ed8"/><text x="470" y="384" font-size="14" text-anchor="middle" fill="#334155">1</text><circle cx="580" cy="80" r="5" fill="#1d4ed8"/><text x="580" y="384" font-size="14" text-anchor="middle" fill="#334155">2</text><circle cx="415" cy="261.0" r="7" fill="#d97706"/><text x="448" y="248" font-size="15" fill="#92400e">x=1/2: sqrt(2)</text>
+<text x="150" y="327" font-size="13" fill="#1d4ed8">1/4</text>
+<text x="262" y="317" font-size="13" fill="#1d4ed8">1/2</text>
+<text x="372" y="283" font-size="13" fill="#1d4ed8">1</text>
+<text x="482" y="212" font-size="13" fill="#1d4ed8">2</text>
+<text x="595" y="75" font-size="13" fill="#1d4ed8">4</text>
 <text x="135" y="106" font-size="16" fill="#1d4ed8">Cơ số 2 &gt; 1: hàm tăng</text>
-<text x="95" y="403" font-size="14" fill="#334155">Số mũ âm → phân số dương; x=0 → 1</text><text x="400" y="429" font-size="13" text-anchor="middle" fill="#475569" font-family="Arial">Đọc nhãn, điều kiện và phần hướng dẫn cạnh hình trước khi kết luận.</text></svg>
+<text x="95" y="403" font-size="14" fill="#334155">Số mũ âm cho phân số dương; x=0 cho 1</text><text x="400" y="429" font-size="13" text-anchor="middle" fill="#475569" font-family="Arial">Đọc nhãn, điều kiện và phần hướng dẫn cạnh hình trước khi kết luận.</text></svg>
 
 ```
 
@@ -904,14 +909,14 @@ The table is a **locator for independent critical review**, not a claim PED1–P
 <rect x="85" y="125" width="240" height="125" rx="20" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
 <rect x="470" y="125" width="240" height="125" rx="20" fill="#dcfce7" stroke="#059669" stroke-width="2"/>
 <text x="205" y="162" text-anchor="middle" font-size="20" font-weight="700" fill="#1e40af">2^3 = 8</text>
-<text x="205" y="195" text-anchor="middle" font-size="16" fill="#1e40af">Biết cơ số và số mũ</text><text x="205" y="221" text-anchor="middle" font-size="16" fill="#1e40af">→ tính kết quả</text>
+<text x="205" y="195" text-anchor="middle" font-size="16" fill="#1e40af">Biết cơ số và số mũ</text><text x="205" y="221" text-anchor="middle" font-size="16" fill="#1e40af">để tính kết quả</text>
 <text x="590" y="162" text-anchor="middle" font-size="20" font-weight="700" fill="#065f46">log₂8 = 3</text>
-<text x="590" y="195" text-anchor="middle" font-size="16" fill="#065f46">Biết cơ số và kết quả</text><text x="590" y="221" text-anchor="middle" font-size="16" fill="#065f46">→ tìm số mũ</text>
+<text x="590" y="195" text-anchor="middle" font-size="16" fill="#065f46">Biết cơ số và kết quả</text><text x="590" y="221" text-anchor="middle" font-size="16" fill="#065f46">để tìm số mũ</text>
 <path d="M325 174 H470 M460 167 L470 174 L460 181" fill="none" stroke="#334155" stroke-width="3"/>
 <path d="M470 218 H325 M335 211 L325 218 L335 225" fill="none" stroke="#334155" stroke-width="3"/>
 <text x="400" y="160" text-anchor="middle" font-size="14" fill="#334155">Làm</text><text x="400" y="242" text-anchor="middle" font-size="14" fill="#334155">Đảo lại</text>
-<text x="400" y="309" text-anchor="middle" font-size="17" fill="#334155">log_a(b) = x ↔ a^x = b</text>
-<text x="400" y="346" text-anchor="middle" font-size="16" fill="#be123c">Điều kiện: a &gt; 0; a ≠ 1; b &gt; 0</text><text x="400" y="429" font-size="13" text-anchor="middle" fill="#475569" font-family="Arial">Đọc nhãn, điều kiện và phần hướng dẫn cạnh hình trước khi kết luận.</text></svg>
+<text x="400" y="309" text-anchor="middle" font-size="17" fill="#334155">log_a(b) = x &lt;=&gt; a^x = b</text>
+<text x="400" y="346" text-anchor="middle" font-size="16" fill="#be123c">Điều kiện: a &gt; 0; a != 1; b &gt; 0</text><text x="400" y="429" font-size="13" text-anchor="middle" fill="#475569" font-family="Arial">Đọc nhãn, điều kiện và phần hướng dẫn cạnh hình trước khi kết luận.</text></svg>
 
 ```
 
@@ -930,8 +935,8 @@ The table is a **locator for independent critical review**, not a claim PED1–P
 <polyline points="341.5,400.7 343.4,387.2 345.3,375.4 347.1,365.1 349.0,355.8 350.9,347.4 352.8,339.7 354.6,332.6 356.5,326.0 358.4,319.9 360.3,314.2 362.1,308.8 364.0,303.7 365.9,298.9 367.8,294.4 369.6,290.0 371.5,285.9 373.4,281.9 375.3,278.1 377.1,274.5 379.0,271.0 380.9,267.7 382.8,264.4 384.6,261.3 386.5,258.3 388.4,255.4 390.3,252.5 392.1,249.8 394.0,247.1 395.9,244.6 397.8,242.0 399.6,239.6 401.5,237.2 403.4,234.9 405.3,232.7 407.1,230.5 409.0,228.3 410.9,226.2 412.8,224.2 414.6,222.2 416.5,220.2 418.4,218.3 420.3,216.4 422.1,214.6 424.0,212.8 425.9,211.0 427.8,209.3 429.6,207.6 431.5,205.9 433.4,204.3 435.3,202.6 437.2,201.1 439.0,199.5 440.9,198.0 442.8,196.5 444.7,195.0 446.5,193.6 448.4,192.1 450.3,190.7 452.2,189.3 454.0,188.0 455.9,186.6 457.8,185.3 459.7,184.0 461.5,182.7 463.4,181.5 465.3,180.2 467.2,179.0 469.0,177.8 470.9,176.6 472.8,175.4 474.7,174.2 476.5,173.1 478.4,171.9 480.3,170.8 482.2,169.7 484.0,168.6 485.9,167.5 487.8,166.4 489.7,165.4 491.5,164.3 493.4,163.3 495.3,162.3 497.2,161.3 499.0,160.3 500.9,159.3 502.8,158.3 504.7,157.4 506.5,156.4 508.4,155.5 510.3,154.5 512.2,153.6 514.0,152.7 515.9,151.8 517.8,150.9 519.7,150.0 521.5,149.1 523.4,148.2 525.3,147.4" fill="none" stroke="#059669" stroke-width="3.5"/>
 <circle cx="330" cy="188" r="5.5" fill="#2563eb"/>
 <circle cx="392" cy="250" r="5.5" fill="#059669"/>
-<text x="86" y="94" font-size="16" fill="#2563eb">y=2^x · TXĐ ℝ</text>
-<text x="86" y="118" font-size="16" fill="#059669">y=log₂x · TXĐ x&gt;0</text>
+<text x="86" y="94" font-size="16" fill="#2563eb">y=2^x ; TXD R</text>
+<text x="86" y="118" font-size="16" fill="#059669">y=log₂x ; TXD x&gt;0</text>
 <text x="340" y="270" font-size="14" fill="#334155">0</text><text x="400" y="429" font-size="13" text-anchor="middle" fill="#475569" font-family="Arial">Đọc nhãn, điều kiện và phần hướng dẫn cạnh hình trước khi kết luận.</text></svg>
 
 ```
@@ -954,6 +959,8 @@ The table is a **locator for independent critical review**, not a claim PED1–P
 <text x="205" y="399" font-size="14" fill="#334155">Cơ số a&lt;1: so sánh số mũ phải đảo chiều.</text><text x="400" y="429" font-size="13" text-anchor="middle" fill="#475569" font-family="Arial">Đọc nhãn, điều kiện và phần hướng dẫn cạnh hình trước khi kết luận.</text></svg>
 
 ```
+
+---
 
 ## PART G · Whole-chapter NotebookLM critical verdict checklist
 
