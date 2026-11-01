@@ -1,3 +1,5 @@
+> **REVIEW COMPLETED 2026-11-01:** The R00 source-lock details below remain unchanged. Full-chapter NotebookLM Academic/Pedagogical PASS and subsequent targeted `SOURCE_FIDELITY_R00=PASS` documented in `G11_CHIX_B31_B33_R00_NOTEBOOKLM_SOURCE_FIDELITY_PASS_ADDENDUM_20261101.md`; manifest `ready/G11-SGK-CHIX-B31-B33-R00.md` now `CONTENT_READY` **for academic handoff only**. Publishing R1–R5/AP1–AP5/P1–P2, protected RD1 Final Submit and Mastery remain separately blocked until owner authorizes and runtime QA passes.
+
 # G11 SGK KNTT Chương IX: Đạo hàm — source lock and author QA checkpoint R00
 
 **PACKET_ID:** `THPT-G11-CHIX-B31-B33-WHOLE-CHAPTER-AUTHORING-R00-20261101`; **LEARNING_PATH:** `SGK_CHAPTER`; **READINESS_SCOPE:** `SGK_CHAPTER_READINESS:G11:CHIX`; **STATUS:** `AUTHOR_QA_COMPLETE__NOTEBOOKLM_REVIEW_PENDING` — **NOT CONTENT_READY**.
