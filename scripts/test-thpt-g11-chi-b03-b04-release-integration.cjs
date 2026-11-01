@@ -21,8 +21,8 @@ const bank=window.THPT_G11_CHI_B03_B04_REVIEWED_FORMATIVE;
 assert(bank?.validate().valid,"New G11 public bank invalid");
 assert.equal(JSON.stringify(bank.records),JSON.stringify(expected),"New 26 records must match reviewed source");
 const legacy={};vm.runInNewContext(read("docs/assets/javascripts/thpt-g11-chi-reviewed-formative-v1.js"),{window:legacy});
-assert.equal(legacy.window.THPT_G11_CHI_REVIEWED_FORMATIVE.records.length,16);
-const ids=[...legacy.window.THPT_G11_CHI_REVIEWED_FORMATIVE.records,...bank.records].map(x=>x.item_id);
+assert.equal(legacy.THPT_G11_CHI_REVIEWED_FORMATIVE.records.length,16);
+const ids=[...legacy.THPT_G11_CHI_REVIEWED_FORMATIVE.records,...bank.records].map(x=>x.item_id);
 assert.equal(new Set(ids).size,42,"Canonical Core/Practice collision");
 for(const [n,c,p] of [[3,4,8],[4,4,10]]) {
  assert.equal(bank.forLesson(n,"core").length,c);
