@@ -4,13 +4,11 @@
 **STATUS:** `D1_D2_AUTHOR_DRAFT_NOT_REVIEWED`. **PED rule #691:** A first-time learner must know **why the idea is needed**, **what it means**, **how formed**, **when the formula applies**, then see a reasoned example and self-try. Not a formula sheet.  
 **Study prerequisites:** Exponents with positive integer powers, square/cube roots, real numbers, function notation/graphs, inequalities and preceding G11 Chapter V sequence limits. Assume only these prerequisites; explain new terminology at first use.
 
-## Lesson B18 —
+## Bài 18 — Lũy thừa với số mũ thực
 
 **Hình D5 — quan sát trước khi tính:** ![B18 — trực quan hình thành khái niệm](svg/FIG-G11-CHVI-B18-01_R00.svg)
 
 **Cách đọc và phát hiện:** Hình B18 giúp em nhìn thấy cùng một quy tắc 2^x từ số mũ âm qua 0 đến số mũ phân số: đọc các điểm trên trục và so sánh chấm màu cam tại x=1/2 (√2). Đừng chỉ chép hình: hãy nêu vì sao 2^(−2)=1/4 vẫn là một số **dương**.
-
- Lũy thừa với số mũ thực
 
 ### 1. Tại sao phải mở rộng số mũ? (WHY)
 
@@ -23,6 +21,12 @@ Lãi kép hay biến đổi liên tục cũng nảy sinh số mũ không nguyên
 Với n nguyên dương, `a^n` là tích n thừa số a. Nhìn `2³=8, 2²=4, 2¹=2`: giảm số mũ một đơn vị thì chia 2; để giữ quy luật đó, `2⁰=1` và `2^{-1}=1/2`. Tổng quát, **khi a≠0**: `a⁰=1`, `a^{-n}=1/a^n`.
 
 **Vì sao cấm a=0 khi số mũ âm/0?** `0^{-1}=1/0` không xác định. `0⁰` không được định nghĩa trong khuôn khổ này. Với n nguyên dương, `0^n=0` vẫn có nghĩa. **Sai thường gặp:** `a^{-2}` là `1/a²`, không phải `−a²`.
+
+### 2A. Căn bậc n: vì sao phải phân biệt n chẵn và n lẻ?
+
+**Căn bậc n của số a** là số b thỏa `b^n=a`. Khi `n` lẻ, mỗi số thực a có đúng một căn bậc n thực (ví dụ `∛(−8)=−2` vì `(−2)^3=−8`). Khi `n` chẵn, số dương a có hai căn bậc n thực đối nhau, nhưng ký hiệu `ⁿ√a` **chỉ căn không âm**; `√9=3`, còn phương trình `x²=9` có **hai nghiệm** `x=±3`. Số âm không có căn bậc chẵn thực. Với a=0, căn bậc n là 0.
+
+**Tự thử trước khi chuyển sang số mũ phân số:** `∛(−27)` bằng bao nhiêu? `√(−9)` có là số thực không? `√(x²)` có luôn bằng `x` không? **Đối chiếu:** −3; không; `√(x²)=|x|` (bằng `x` khi x≥0). Đừng suy từ việc `∛(−27)` có nghĩa sang `(−27)^t` có nghĩa cho mọi t thực.
 
 ### 3. Số mũ phân số và số mũ vô tỉ
 
@@ -57,15 +61,19 @@ Với `a,b>0`, `x,y∈ℝ`:
 
 **EX-G11-B18-04 (tăng trưởng).** Vốn `100` triệu đồng tăng 5% mỗi năm, lãi gộp cuối năm: `P(n)=100·1,05^n` triệu. Sau 2 năm `P(2)=110,25` triệu. **Vì sao nhân thay vì cộng?** Năm thứ hai lấy 5% của **số tiền sau năm đầu**, không phải 5% của vốn ban đầu. Mô hình giả sử lãi suất cố định, không có phí/thuế.
 
+
+**EX-G11-B18-05 (căn lẻ của cơ số âm, không suy rộng tùy tiện).** Giải phương trình `x³=−125` trong tập thực. Do hàm `x³` tăng trên ℝ và `(−5)^3=−125`, nghiệm duy nhất là `x=−5`, viết `∛(−125)=−5`. **Giới hạn của kết luận:** điều này không cho phép định nghĩa `(−125)^{√2}` như lũy thừa số mũ thực với cơ số âm.
+
+**EX-G11-B18-06 (kí hiệu khoa học và ý nghĩa số mũ âm).** Một độ dài `0,000,0042` mét được viết `4,2×10^{-6}` mét. **Tại sao?** Đưa dấu phẩy sang phải 6 vị trí để được `4,2` thì phải nhân ngược `10^{-6}` để giá trị không đổi. **Điều kiện của kí hiệu khoa học:** phần hệ số có trị tuyệt đối thuộc `[1,10)`, số mũ nguyên. Khi dùng máy tính cầm tay để tính `2^{1,3}`, cần nhập đủ dấu ngoặc/số mũ và đánh dấu kết quả là **gần đúng**, không tráo với giá trị chính xác.
+
+
 ---
 
-## Lesson B19 —
+## Bài 19 — Lôgarit
 
 **Hình D5 — quan sát trước khi tính:** ![B19 — trực quan hình thành khái niệm](svg/FIG-G11-CHVI-B19-01_R00.svg)
 
 **Cách đọc và phát hiện:** Hình B19 không phải bảng công thức: hãy đọc từ trái qua phải để tính 2³=8, rồi đọc ngược để thấy log₂8=3 trả lời câu hỏi “số mũ nào?”. Kiểm điều kiện cơ số, đối số ngay dưới sơ đồ.
-
- Lôgarit
 
 ### 1. Vấn đề dẫn đến lôgarit: ta muốn tìm **số mũ** (WHY)
 
@@ -103,13 +111,11 @@ Nếu `log₅125=3`, em phát biểu lại một đẳng thức lũy thừa. Gi�
 
 ---
 
-## Lesson B20 —
+## Bài 20 — Hàm số mũ và hàm số lôgarit
 
 **Hình D5 — quan sát trước khi tính:** ![B20 — trực quan hình thành khái niệm](svg/FIG-G11-CHVI-B20-01_R00.svg)
 
 **Cách đọc và phát hiện:** Hình B20 đặt hai hàm trên **cùng hệ trục và cùng tỉ lệ**, để thấy điểm (0,1) của y=2^x tương ứng (1,0) của y=log₂x. Hãy tìm thêm cặp (1,2) ↔ (2,1); đường nét đứt y=x biểu diễn trục đối xứng, không phải một hàm cần giải.
-
- Hàm số mũ và hàm số lôgarit
 
 ### 1. Tại sao phải học đồ thị và hàm chứ không chỉ một giá trị?
 
@@ -145,13 +151,11 @@ Vì sao `y=3^x` không thể bằng −5? Nếu `log₂8=3`, hãy tìm hai đi�
 
 ---
 
-## Lesson B21 —
+## Bài 21 — Phương trình, bất phương trình mũ và lôgarit
 
 **Hình D5 — quan sát trước khi tính:** ![B21 — trực quan hình thành khái niệm](svg/FIG-G11-CHVI-B21-01_R00.svg)
 
 **Cách đọc và phát hiện:** Hình B21 giải thích bản chất “đảo chiều”: cùng tăng x, đường y=2^x đi lên nhưng y=(1/2)^x đi xuống. Hãy dùng điều này để tự nói vì sao (1/2)^u>(1/2)^v thì u<v, trước khi học quy trình giải bất phương trình.
-
- Phương trình, bất phương trình mũ và lôgarit
 
 ### 1. Vì sao phải giải loại phương trình này? (WHY)
 
