@@ -41,7 +41,7 @@ Không cần giải thích mọi phép toán cấp dưới. Nhưng một thuật
 
 ## 4. Ba mẫu sửa lỗi sư phạm do owner chỉ ra (draft gợi ý, KHÔNG ghi trực tiếp vào trang đã phát hành)
 
-### Mẫu A — Toán 10 ChII? / ChIII Bài 5: sin, cos của góc 0°–180°
+### Mẫu A — Toán 10 Chương III, Bài 5: sin, cos của góc 0°–180°
 
 **Mở bài:** Ở các lớp trước, chúng ta dùng tam giác vuông để đo liên hệ giữa góc nhọn và tỉ số độ dài cạnh. Nhưng góc 120° không nằm trong một tam giác vuông dưới dạng *góc nhọn*. Vậy phải hiểu sin và cos của 120° thế nào?
 
