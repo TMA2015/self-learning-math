@@ -4,7 +4,7 @@
 
 **One canonical `item_id` per stem.** Placement marks role only; no cloning when reusing later in Topic. Original material, not copied from SBT. Reviewer must verify not only answer but instructional depth, assumptions and structural variety.
 
-## Canonical item register (37 candidates)
+## Canonical item register (39 candidates)
 
 ### B18 — Lũy thừa số mũ thực
 
@@ -31,6 +31,14 @@
 **Đáp án:** Không.
 
 **Giải thích:** Nếu dùng quy tắc số mũ âm sẽ là 1/0², phép chia cho 0 không xác định.
+
+#### THPT-G11-CHVI-B18-C04 · placement=SGK_CORE · skill_id=G11-B18-POWER_REAL
+
+**Đề:** Một bạn nói: “2^(√2) không có nghĩa, vì √2 không thể đếm số lần nhân 2”. Em giải thích bạn đang hiểu sai điều gì và mô tả cách số này được hình thành.
+
+**Đáp án:** 2^(√2) có nghĩa vì cơ số 2>0; số mũ thực không còn được hiểu là số lần nhân nguyên. Nó được định nghĩa bằng giới hạn của dãy giá trị 2^r khi các số hữu tỉ r tiến đến √2.
+
+**Giải thích:** Các số mũ hữu tỉ gần √2 như 1,4;1,41;1,414,… đã có định nghĩa bằng căn/lũy thừa. Khi các giá trị 2^r tiến đến một số xác định không phụ thuộc dãy xấp xỉ, ta gọi đó là 2^(√2). Đây là mở rộng nhất quán của khái niệm, không phải “nhân số 2 √2 lần”.
 
 #### THPT-G11-CHVI-B18-P01 · placement=SGK_PRACTICE · skill_id=G11-B18-POWER_LAWS
 
@@ -310,10 +318,18 @@
 
 **Giải thích:** 2^x>0 với mọi x thực; không thể bằng −1.
 
+#### THPT-G11-CHVI-B21-P08 · placement=SGK_PRACTICE · skill_id=G11-CHVI-INTEGRATED
+
+**Đề:** Một bạn phát biểu: “log₂(2^x)=2x và y=log₂x xác định với mọi x thực vì hàm y=2^x có TXĐ ℝ”. Hãy tìm và sửa **hai lỗi khái niệm**, sau đó giải thích hàm nào thực hiện phép ngược của hàm nào.
+
+**Đáp án:** log₂(2^x)=x với mọi x thực, không phải 2x. Hàm y=log₂x chỉ xác định với x>0. Hai hàm y=2^x và y=log₂x là hai hàm ngược: đầu ra của hàm mũ là đầu vào hợp lệ của hàm logarit.
+
+**Giải thích:** Logarit trả lại **số mũ** đã tạo ra kết quả, không nhân cơ số với số mũ. Hàm 2^x nhận mọi x thực nhưng **cho ra số dương**; chính tập giá trị (0,+∞) đó trở thành TXĐ của hàm ngược log₂x. Nhầm TXĐ của hàm gốc với TXĐ của hàm ngược là lỗi bản chất.
+
 ## QA/ledger (AUTHOR ONLY)
 
-- B18: 9; B19: 9; B20: 8; B21: 11. Total **37 unique canonical stems** in this public formative draft.
+- B18: 10; B19: 9; B20: 8; B21: 12. Total **39 unique canonical stems** in this public formative draft.
 - D3 outcome coverage: `G11-B18-POWER_INTEGER`, `G11-B18-POWER_RATIONAL`, `G11-B18-POWER_LAWS`, `G11-B18-GROWTH_MODEL`, `G11-B19-LOG_DEFINITION`, `G11-B19-LOG_DOMAIN`, `G11-B19-LOG_LAWS`, `G11-B19-LOG_BASE_CHANGE`, `G11-B19-LOG_APPLICATION`, `G11-B20-EXP_FUNCTION`, `G11-B20-EXP_MONOTONIC`, `G11-B20-LOG_FUNCTION`, `G11-B20-INVERSE_GRAPH`, `G11-B20-LOG_MONOTONIC`, `G11-B21-EXP_EQUATION`, `G11-B21-LOG_EQUATION`, `G11-B21-EXP_INEQUALITY`, `G11-B21-LOG_INEQUALITY`, `G11-B21-DOMAIN_CHECK`, `G11-B21-REAL_CONTEXT`.
-- Integrated `G11-CHVI-INTEGRATED` requires chapter-level D1 microcheck, cross-skill Written and **different private RD1**. Do not claim total 22/22 unique outcomes covered merely because there are 37 items.
+- Integrated `G11-CHVI-INTEGRATED` requires chapter-level D1 microcheck, cross-skill Written and **different private RD1**. Do not claim total 22/22 unique outcomes covered merely because there are 39 items.
 - **Reviewer focus:** real exponents a>0; log of product vs log of each negative factor; a in (0,1) reverses inequality; LOG arguments >0; discrete strict > threshold. PED1–PED6 reviewer to check teaching ability, not mere result.
 - **Never** use these public stems as private RD1 evidence without preventing learner exposure; private stems and solution rubrics stay in protected Library only.
