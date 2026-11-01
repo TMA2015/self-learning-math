@@ -9,7 +9,7 @@
 - **D3:** `G11_CHV_B15_B17_D3_PUBLIC_CANONICAL_CANDIDATES_R01_20261101.md`: 30 Core/Practice/Application candidates, 10 bài B15 + 10 bài B16 + 10 bài B17; 30 ID duy nhất.
 - **D4 và D6:** `G11_CHV_B15_B17_D4_WRITTEN_D6_HELP_R01_20261101.md`: 6 Written độc lập với 3 Anchor *tags* (không ngân hàng riêng), mỗi bài rubric 4 tiêu chí × 1 điểm; 6 HELP_ID với 5 bước, return về câu public canonical.
 - **D5:** `svg/FIG-G11-B15-01_R01.svg`, `B16-01_R01.svg`, `B17-01_R01.svg` (đường dãy số tiệm về 0; lỗ giới hạn tại điểm; gián đoạn do giá trị không khớp xu hướng). Cả 3 có `title`, `desc`, đường trục/điểm, giải thích ý nghĩa ngay tại D1.
-- **PRIVATE RD1:** 17 câu cho đúng 17 outcomes, mỗi câu có lời giải và rubric /4, trong `Math App/THPT_Academic_Review_Archive/Temp_THPT_G11_CHV_B15_B17_PRIVATE_RD0_RD1_AUTHOR_CANDIDATE_R00_20261101.md`. SHA256 **`c8fd2ad5e082be0e0346f095d4e9a3d4cedce152e459dcb683fe1b20a77dac09`**, **15.608 bytes**. Bản trước đó đã mang nhãn `_SUPERSEDED_`. Giữ câu, đáp án, rubric kín ngoài GitHub.
+- **PRIVATE RD1:** 17 câu cho đúng 17 outcomes, mỗi câu có lời giải và rubric /4, trong `Math App/THPT_Academic_Review_Archive/Temp_THPT_G11_CHV_B15_B17_PRIVATE_RD0_RD1_17_AUTHOR_CANDIDATE_R01_20261101.md`. SHA256 **`e2bb815c79ebc8b00b80563ffb2d8ac0086fdf03b16a9c0963464650161b0e4e`**, **15.608 bytes**. Bản trước đó đã mang nhãn `_SUPERSEDED_`. Giữ câu, đáp án, rubric kín ngoài GitHub.
 - **Tổng:** 30 formative + 6 Written = 36 public; 17 RD1 private = **53 canonical candidate items**, ngoài 12 ví dụ D2. **SGK_CHAPTER_READINESS** không trùng **TOPIC_READINESS**.
 
 ## 2. Tình trạng kiểm thử tác giả
