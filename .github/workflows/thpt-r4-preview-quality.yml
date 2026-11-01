@@ -95,6 +95,12 @@ on:
 permissions:
   contents: read
 
+# New commits supersede obsolete preview runs on the SAME pull request only.
+# Never cancel checks belonging to another PR or to a published main commit.
+concurrency:
+  group: math-thpt-r4-preview-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
 jobs:
   preview-only:
     name: Build R4 preview without deployment
