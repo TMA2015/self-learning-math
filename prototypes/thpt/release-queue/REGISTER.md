@@ -4,6 +4,7 @@
 
 | Gói | Hành trình | Trạng thái | Phạm vi | PR / nguồn |
 |---|---|---|---|---|
+| [G12-SGK-CHI-B01-B05-R00](ready/G12-SGK-CHI-B01-B05-R00.md) | SGK_CHAPTER | CONTENT_READY | FULL_LEARNING_PATH | Draft authoring #696, independent NotebookLM Academic/PED + SOURCE_FIDELITY_R00 PASS; A1–A7 complete, R1–R5/AP1–AP5 pending, no merge/deploy |
 | [G11-SGK-CHI-B01-B02](ready/G11-SGK-CHI-B01-B02.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | source #627 merged; release #650 R1–R5 evidence, exact-final-head CI before merge/deploy; B01–B02 only |
 | [G10-SGK-CHIV-B09-B11](ready/G10-SGK-CHIV-B09-B11.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY B09–B11 | source #637 merged; release #648 R1–R5 candidate QA PASS, final metadata-head dual CI required |
 | [G10-SGK-CHIV](ready/G10-SGK-CHIV.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | source #634 merged; release #645 R1–R5 evidence completed, exact-final-head CI recheck before merge/deploy |
@@ -38,3 +39,7 @@
 **30/10/2026 ChIII R1–R5:** Source #633 merged main `1643c60e3638cbc180c6580b54111a64e07cf663`; exact source blob `6320aeaa89bd51c514b07461e01fad5e3aca833f`. Release #644 integrates 16 canonical formative (7 A–D MCQ, 9 short-response), 2 Written incl Anchor, 2 original SVG, 4 D6 HELP_ID. Owner permission covers PUBLIC_FORMATIVE_ONLY **after** both exact final-head CI PASS; P1/P2 postdeploy separate, no Readiness/Mastery.
 
 **30/10/2026 — ChIV B07/B08 academic handoff:** 18/18 NotebookLM R01 PASS, D1–D6 10/10 outcomes, snapshot Git blob `42b206e31421b33860a1bf697d2d04b7aba992cf`. Authoring #634 source-only, no website/Readiness/Mastery. R1–R5 requires separate release PR and exact-head CI.
+
+**01/11/2026 — G12 ChI B01–B05 academic authoring candidate:** actual Public D1–D6 file source Git blob `9ee1f60ccef43ede22fa75d1e0901fcf0bd96970`; 28 RD0, 20 D2, 56 Core/Practice, 10 Written/Anchor, 5 SVG, 12 HELP and 28 PRIVATE RD1; 27 SymPy assertion QA PASS, all 5 SVG rendered. Original S1 SGK/SBT PDF verification and independent Academic/PED NotebookLM verdict not yet available. **Academic manifest is HOLD** at `inventory/G12-SGK-CHI-B01-B05-R00.md`; Private RD1 answers not in GitHub; no merge/deploy/Mastery.
+
+**01/11/2026 — G12 SGK ChI B01–B05 academic CONTENT_READY:** Reviewer supplied independent Academic/Pedagogical whole-chapter PASS and targeted `SOURCE_FIDELITY_R00=PASS`, `SOURCE_RECEIPT_SGK/SBT=PASS`, PED locations corrected B01–B05 D1 self-tries, SVG descriptions and closed-interval nondifferentiable critical candidate rule. `P0=P1=P2=0`, `MINIMAL_DELTA=0`, `DELTA_B_SOURCE_EQUIVALENT`, 28 outcomes/20 examples/66 public/28 PRIVATE RD1/5 SVG/12 HELP. Original PUBLIC Git blob `9ee1f60ccef43ede22fa75d1e0901fcf0bd96970` unchanged. Note reviewer-selected 156,103/35,564 bytes versus author actual 156,237/35,758 bytes; semantic source equivalence independently attested, **not** byte/hash identity. Original PRIVATE RD1 outside GitHub. A1–A7 check in `ready/G12-SGK-CHI-B01-B05-R00.md`; no release, merge/deploy, scoring/Mastery or exposed confidential questions.
