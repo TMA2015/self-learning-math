@@ -13,6 +13,10 @@
 5. The three checked public chapter JSON files explicitly set `mastery_credit:false`, `persist_results:false`; #680 describes `Final Submit` as **browser self-assessment**, not authenticated scoring, not official `SGK_CHAPTER_READINESS` evidence and not a Topic test. Four PR #680 workflow checks finished `success` at its exact head; this is technical CI evidence, not owner device acceptance or production Academic PASS.
 6. **Policy chronology is essential:** the earlier 28/10 ChVI contract required 18 held-out items never enter public GitHub/client; on **31/10**, owner [#662](https://github.com/TMA2015/self-learning-math/issues/662) explicitly accepted public browser keys for **voluntary self-study only**, no anti-DevTools/backend, no Skill Mastery. The current repeated automation brief still demands strict private held-out delivery. These are materially different contracts; **do not silently claim both are satisfied**.
 
+## Exact current-main public data QA (metadata only)
+
+Directly parsed all nine current-main `docs/assets/data/thpt-g10-readiness/*.json` files without emitting stems or keys: chapter item counts **14 / 14 / 14 / 21 / 18 / 18 / 22 / 14 / 6**, total **141/141 globally distinct canonical IDs**, duplicate IDs **0**. Every item contains `answer` and `solution` fields; all nine JSON roots specify `mastery_credit:false` and `persist_results:false`. This validates public data shape and count only, **not** independent academic fidelity, no-pre-submit DOM isolation, student history or deployed-site parity.
+
 ## Consequence and non-destructive hold
 
 - Existing ChVI `ACADEMIC_OVERALL=PASS / ACADEMIC_CLEARANCE=YES` for exact five-Temp 54-ID/19-outcome snapshot remains historically valid. Public publication of the old18 does **not** grant independent assessment/exposure clearance.
