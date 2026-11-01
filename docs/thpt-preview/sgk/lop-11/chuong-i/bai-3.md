@@ -56,4 +56,4 @@
 
 ## 5. Tiếp tục
 
-[Core và Luyện tập](../luyen-tap.md) · [Tự luận chung Chương I](../../../../thu-vien/tu-luan-g11-chuong-i-b01-b02.md)
+[Core và Luyện tập](luyen-tap.md) · [Tự luận chung Chương I](../../../thu-vien/tu-luan-g11-chuong-i-b01-b02.md)

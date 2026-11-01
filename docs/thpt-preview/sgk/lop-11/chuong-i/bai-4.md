@@ -28,7 +28,7 @@
 
 ## 3. Kết nối đồ thị
 
-Kết hợp đường tròn lượng giác và đồ thị sin/cos/tan/cot tại [Bài 3](../bai-3.md) để tự kiểm tra số họ nghiệm. Kiểm tra miền xác định và nghiệm ngoại lai trước khi kết luận.
+Kết hợp đường tròn lượng giác và đồ thị sin/cos/tan/cot tại [Bài 3](bai-3.md) để tự kiểm tra số họ nghiệm. Kiểm tra miền xác định và nghiệm ngoại lai trước khi kết luận.
 
 ## 4. Tự khắc phục lỗi thường gặp
 
@@ -50,4 +50,4 @@ Kết hợp đường tròn lượng giác và đồ thị sin/cos/tan/cot tại
 
 ## 5. Tiếp tục
 
-[Core và Luyện tập](../luyen-tap.md) · [Tự luận chung Chương I](../../../../thu-vien/tu-luan-g11-chuong-i-b01-b02.md)
+[Core và Luyện tập](luyen-tap.md) · [Tự luận chung Chương I](../../../thu-vien/tu-luan-g11-chuong-i-b01-b02.md)
