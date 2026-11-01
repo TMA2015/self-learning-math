@@ -48,7 +48,7 @@ SOURCE_FIDELITY_HOLD: Reviewer full Studio report truncates the two selected act
 
 ## P — post-release (NOT STARTED)
 
-- [ ] P1_DEPLOY_RECEIPT
-- [ ] P2_DEVICE_UAT
+- [ ] P1_DEPLOY_RECEIPT — No deployment receipt exists for this authoring-only academic packet; published HTML and release commit are absent.
+- [ ] P2_DEVICE_UAT — Post-release real-device desktop, iPhone and iPad acceptance has not been executed or approved for this chapter.
 
 **System:** `EXPOSURE_SYSTEM_VERDICT=SYSTEM_HOLD`, `RELEASE_AUTHORIZATION=NO`, `MASTERY_ACTIVATION=NO`. No THCS/Gemini/Firebase/browser progress changes.
