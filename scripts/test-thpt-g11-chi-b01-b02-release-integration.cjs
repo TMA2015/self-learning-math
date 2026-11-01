@@ -33,6 +33,10 @@ const svg=[
 for(const [name,sha] of svg){const bytes=fs.readFileSync("docs/assets/images/thpt/"+name);assert.equal(blobHash(bytes),sha);assert(!/<script/i.test(bytes.toString()));}
 for(const [n,numExamples,nPractice] of [[1,3,5],[2,4,7]]){
  const page=read("docs/thpt-preview/sgk/lop-11/chuong-i/bai-"+n+".md");
+ assert(page.includes("Chương I gồm Bài 1–4; Tự kiểm tra cuối chương chưa kích hoạt."),
+  "B01/B02 lead must describe the staged four-lesson chapter, not stale B01–B02-only scope");
+ assert(!page.includes("Phạm vi đang công bố chỉ gồm Bài 1–2."),
+  "Stale two-lesson learner-facing scope after B03/B04 integration");
  assert(page.includes("## 1. Kiến thức SGK")&&page.includes("## 2. Ví dụ"));
  assert.equal((page.match(/^### Ví dụ \d+\./gm)||[]).length,numExamples);
  assert.equal((page.match(/data-thpt-help-id=/g)||[]).length,2);
