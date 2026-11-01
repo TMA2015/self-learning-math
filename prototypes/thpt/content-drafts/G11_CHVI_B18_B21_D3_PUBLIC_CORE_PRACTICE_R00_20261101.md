@@ -4,7 +4,7 @@
 
 **One canonical `item_id` per stem.** Placement marks role only; no cloning when reusing later in Topic. Original material, not copied from SBT. Reviewer must verify not only answer but instructional depth, assumptions and structural variety.
 
-## Canonical item register (39 candidates)
+## Canonical item register (41 candidates)
 
 ### B18 — Lũy thừa số mũ thực
 
@@ -39,6 +39,14 @@
 **Đáp án:** 2^(√2) có nghĩa vì cơ số 2>0; số mũ thực không còn được hiểu là số lần nhân nguyên. Nó được định nghĩa bằng giới hạn của dãy giá trị 2^r khi các số hữu tỉ r tiến đến √2.
 
 **Giải thích:** Các số mũ hữu tỉ gần √2 như 1,4;1,41;1,414,… đã có định nghĩa bằng căn/lũy thừa. Khi các giá trị 2^r tiến đến một số xác định không phụ thuộc dãy xấp xỉ, ta gọi đó là 2^(√2). Đây là mở rộng nhất quán của khái niệm, không phải “nhân số 2 √2 lần”.
+
+#### THPT-G11-CHVI-B18-C05 · placement=SGK_CORE · skill_id=G11-B18-POWER_RATIONAL
+
+**Đề:** Phân biệt hai yêu cầu: tìm `√25` và giải `x²=25`. Nếu chuyển sang `∛(−27)`, kết quả ra sao? Giải thích vai trò của căn bậc chẵn/lẻ.
+
+**Đáp án:** `√25=5` là căn không âm; phương trình `x²=25` có hai nghiệm `x=5` và `x=−5`; `∛(−27)=−3`.
+
+**Giải thích:** Ký hiệu căn bậc chẵn lấy giá trị không âm, còn phương trình `x²=25` yêu cầu tìm **mọi** số bình phương bằng 25. Căn bậc lẻ của số âm tồn tại trong ℝ vì `(−3)³=−27`. Không suy rộng cơ số âm sang mọi số mũ thực.
 
 #### THPT-G11-CHVI-B18-P01 · placement=SGK_PRACTICE · skill_id=G11-B18-POWER_LAWS
 
@@ -87,6 +95,14 @@
 **Đáp án:** 12; quy tắc cộng số mũ không áp dụng cho tổng hai lũy thừa.
 
 **Giải thích:** 2²+2³=4+8=12; 2⁵=32 chỉ bằng 2²·2³.
+
+#### THPT-G11-CHVI-B18-P07 · placement=SGK_PRACTICE · skill_id=G11-B18-POWER_INTEGER
+
+**Đề:** Viết `0,000,0075` dưới dạng kí hiệu khoa học, rồi giải thích dấu của số mũ và vì sao không được viết `75×10^{-7}` làm **dạng chuẩn** dù giá trị bằng nhau.
+
+**Đáp án:** `7,5×10^{-6}`. Biểu thức `75×10^{-7}` cũng bằng cùng giá trị nhưng hệ số 75 không thuộc đoạn `[1,10)` nên không phải dạng chuẩn.
+
+**Giải thích:** Số rất nhỏ hơn 1 nên số mũ của 10 âm; chuyển dấu phẩy sáu chữ số để có phần hệ số 7,5, nhân `10^{-6}` để giữ đúng giá trị. Kí hiệu khoa học chuẩn có phần trị tuyệt đối hệ số từ 1 đến dưới 10.
 
 ### B19 — Lôgarit
 
@@ -328,8 +344,8 @@
 
 ## QA/ledger (AUTHOR ONLY)
 
-- B18: 10; B19: 9; B20: 8; B21: 12. Total **39 unique canonical stems** in this public formative draft.
+- B18: 12; B19: 9; B20: 8; B21: 12. Total **41 unique canonical stems** in this public formative draft.
 - D3 outcome coverage: `G11-B18-POWER_INTEGER`, `G11-B18-POWER_RATIONAL`, `G11-B18-POWER_LAWS`, `G11-B18-GROWTH_MODEL`, `G11-B19-LOG_DEFINITION`, `G11-B19-LOG_DOMAIN`, `G11-B19-LOG_LAWS`, `G11-B19-LOG_BASE_CHANGE`, `G11-B19-LOG_APPLICATION`, `G11-B20-EXP_FUNCTION`, `G11-B20-EXP_MONOTONIC`, `G11-B20-LOG_FUNCTION`, `G11-B20-INVERSE_GRAPH`, `G11-B20-LOG_MONOTONIC`, `G11-B21-EXP_EQUATION`, `G11-B21-LOG_EQUATION`, `G11-B21-EXP_INEQUALITY`, `G11-B21-LOG_INEQUALITY`, `G11-B21-DOMAIN_CHECK`, `G11-B21-REAL_CONTEXT`.
-- Integrated `G11-CHVI-INTEGRATED` requires chapter-level D1 microcheck, cross-skill Written and **different private RD1**. Do not claim total 22/22 unique outcomes covered merely because there are 39 items.
+- Integrated `G11-CHVI-INTEGRATED` requires chapter-level D1 microcheck, cross-skill Written and **different private RD1**. Do not claim total 22/22 unique outcomes covered merely because there are 41 items.
 - **Reviewer focus:** real exponents a>0; log of product vs log of each negative factor; a in (0,1) reverses inequality; LOG arguments >0; discrete strict > threshold. PED1–PED6 reviewer to check teaching ability, not mere result.
 - **Never** use these public stems as private RD1 evidence without preventing learner exposure; private stems and solution rubrics stay in protected Library only.
