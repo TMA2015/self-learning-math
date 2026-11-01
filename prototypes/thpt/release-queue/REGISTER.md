@@ -4,6 +4,7 @@
 
 | Gói | Hành trình | Trạng thái | Phạm vi | PR / nguồn |
 |---|---|---|---|---|
+| [G11-SGK-CHVII-B22-B27-R01](inventory/G11-SGK-CHVII-B22-B27-R01.md) | SGK_CHAPTER | HOLD | FULL_LEARNING_PATH | Draft academic #693; NotebookLM Academic/PED PASS reported; A2 S1 source pagination + A3 exact-source/PED evidence reconciliation pending; no merge/deploy |
 | [G11-SGK-CHI-B01-B02](ready/G11-SGK-CHI-B01-B02.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | source #627 merged; release #650 R1–R5 evidence, exact-final-head CI before merge/deploy; B01–B02 only |
 | [G10-SGK-CHIV-B09-B11](ready/G10-SGK-CHIV-B09-B11.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY B09–B11 | source #637 merged; release #648 R1–R5 candidate QA PASS, final metadata-head dual CI required |
 | [G10-SGK-CHIV](ready/G10-SGK-CHIV.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | source #634 merged; release #645 R1–R5 evidence completed, exact-final-head CI recheck before merge/deploy |
@@ -38,3 +39,5 @@
 **30/10/2026 ChIII R1–R5:** Source #633 merged main `1643c60e3638cbc180c6580b54111a64e07cf663`; exact source blob `6320aeaa89bd51c514b07461e01fad5e3aca833f`. Release #644 integrates 16 canonical formative (7 A–D MCQ, 9 short-response), 2 Written incl Anchor, 2 original SVG, 4 D6 HELP_ID. Owner permission covers PUBLIC_FORMATIVE_ONLY **after** both exact final-head CI PASS; P1/P2 postdeploy separate, no Readiness/Mastery.
 
 **30/10/2026 — ChIV B07/B08 academic handoff:** 18/18 NotebookLM R01 PASS, D1–D6 10/10 outcomes, snapshot Git blob `42b206e31421b33860a1bf697d2d04b7aba992cf`. Authoring #634 source-only, no website/Readiness/Mastery. R1–R5 requires separate release PR and exact-head CI.
+
+**01/11/2026 — G11 ChVII B22–B27 audit intake:** independent NotebookLM executive report gives `ACADEMIC_CHAPTER_VII=PASS`, `PEDAGOGICAL_SELF_LEARNING_READY=PASS`, 33 RD0/27 D2/63 public/33 private RD1/6 SVG/10 HELP, P0/P1/P2=0. However Studio full Markdown loses selected source names and verdict block, and reported SGK/SBT pagination conflicts with original KNTT Tập 2 TOCs (SGK ChVIII begins p66 and SBT ChVIII has exercises p45). PED examples also include illustrations absent in Public R01. **A2+A3=HOLD; source unchanged, no CONTENT_READY until targeted NotebookLM S1/source fidelity correction**, packet at `inventory/G11-SGK-CHVII-B22-B27-R01.md`. No merge/deploy or Mastery.
