@@ -2,9 +2,9 @@
 
 PACKET_ID: G11-SGK-CHIV-B10-B14-R01  
 LEARNING_PATH: SGK_CHAPTER  
-RELEASE_SCOPE: WHOLE_CHAPTER_CONTENT_CANDIDATE_D1_D6_RD0_RD1  
-STATE: ACADEMIC_PASS_REPORTED_SOURCE_RECEIPT_HOLD  
-SOURCE_COMMIT: 4d7e01e9433626bb4e724d02c48ecb487abc5c37 (unchanged math candidate); PR #688 documentary follow-ups excluded  
+RELEASE_SCOPE: FULL_LEARNING_PATH  
+STATE: HOLD  
+SOURCE_COMMIT: 4d7e01e9433626bb4e724d02c48ecb487abc5c37  
 REVIEW_RECEIPT: prototypes/thpt/content-drafts/G11_CHIV_B10_B14_R01_OWNER_NOTEBOOKLM_RECEIPT_20261101.md  
 CURRENT_PR: #688 (DRAFT, authoring-only)  
 ACADEMIC_REVIEW: Owner-reported independent NotebookLM PASS on exact PACKET_ID; 22/22 outcomes, 40/40 public IDs, 22/22 private RD1, 5 SVG, 10 HELP, 0/0/0 P0/P1/P2, zero academic delta  
@@ -23,7 +23,7 @@ SOURCE_IDENTITY_PENDING: Executive summary calls private input file suffix R0.md
 
 - [x] A1_SOURCE_SNAPSHOT — public Git blob and private Library SHA256 locked, 2026-11-01 readback.
 - [x] A2_SGK_SBT_SCOPE — reviewer reports verified original S1 printed-page intervals; see owner summary receipt.
-- [ ] A3_NOTEBOOKLM_VERDICT_EXACT_RECEIPT — academic PASS reported, but private source alias R0 vs R01 is unresolved and full Studio report is unavailable to this agent. Do not silently mark source-exact PASS.
+- [ ] A3_NOTEBOOKLM_VERDICT — academic PASS reported, but private source alias R0 vs R01 is unresolved and full Studio report is unavailable to this agent. Do not silently mark source-exact PASS.
 - [x] A4_ITEM_OUTCOME_IDS — 22 outcomes, 40 unique public IDs, 22 unique private IDs, no reported missing/unexpected IDs.
 - [x] A5_D1_D6_SCOPE — reviewer PASS D1–D6, SVG and HELPs for the full declared chapter; this does not activate runtime Readiness.
 - [x] A6_DELTA_RESOLVED — MINIMAL_DELTA=0; no math or answer/rubric changes after reviewed snapshot.
@@ -33,11 +33,11 @@ SOURCE_IDENTITY_PENDING: Executive summary calls private input file suffix R0.md
 
 ## R — release lane (NOT STARTED)
 
-- [ ] R1_INTEGRATED_CURRENT_MAIN
-- [ ] R2_EXACT_HEAD_CI
-- [ ] R3_CLEAN_STUDENT_UI
-- [ ] R4_ASSESSMENT_SAFETY
-- [ ] R5_OWNER_APPROVAL
+- [ ] R1_INTEGRATED_CURRENT_MAIN — Release lane has not integrated or tested this source on current main; independent owner approval required.
+- [ ] R2_EXACT_HEAD_CI — Release lane has not integrated or tested this source on current main; independent owner approval required.
+- [ ] R3_CLEAN_STUDENT_UI — Release lane has not integrated or tested this source on current main; independent owner approval required.
+- [ ] R4_ASSESSMENT_SAFETY — Release lane has not integrated or tested this source on current main; independent owner approval required.
+- [ ] R5_OWNER_APPROVAL — Release lane has not integrated or tested this source on current main; independent owner approval required.
 
 ## AP — presentation QA on actual integrated HTML (NOT STARTED)
 
@@ -49,7 +49,7 @@ SOURCE_IDENTITY_PENDING: Executive summary calls private input file suffix R0.md
 
 ## P — post-release (NOT STARTED)
 
-- [ ] P1_DEPLOY_RECEIPT
-- [ ] P2_DEVICE_UAT
+- [ ] P1_DEPLOY_RECEIPT — No deployment or physical-device acceptance has occurred for this packet.
+- [ ] P2_DEVICE_UAT — No deployment or physical-device acceptance has occurred for this packet.
 
 **System:** RELEASE_AUTHORIZATION=NO; SYSTEM_HOLD=YES; MASTERY_ACTIVATION=NO. Topic path separately gated. No historical student records or local-storage keys changed.
