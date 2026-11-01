@@ -14,7 +14,34 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  scope:
+    name: Classify PR and validate authoring/manifest integrity
+    runs-on: ubuntu-latest
+    outputs:
+      authoring_only: ${{ steps.scope.outputs.authoring_only }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Validate canonical release manifests (no academic PASS issued)
+        run: node scripts/test-thpt-release-queue.cjs
+      - name: Guard safe PR path classifier
+        run: node scripts/test-thpt-pr-scope.cjs --self-test
+      - name: Classify actual changed paths (three-dot merge base)
+        id: scope
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        shell: bash
+        run: |
+          git diff --name-only "$BASE_SHA...$HEAD_SHA" > "$RUNNER_TEMP/math-pr-changed-paths.txt"
+          node scripts/test-thpt-pr-scope.cjs "$RUNNER_TEMP/math-pr-changed-paths.txt" >> "$GITHUB_OUTPUT"
+
   verify:
+    needs: scope
+    # Only source Markdown/SVG in approved authoring/review/handoff directories
+    # bypasses the expensive website suite. Any mixed change runs full QA.
+    if: ${{ needs.scope.outputs.authoring_only != 'true' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
