@@ -64,7 +64,7 @@ Public cross-check: SGK Toán 11 T1 online TOC at https://media.metaisach.com/20
 
 **Self-learning pedagogy:** D1 for B15–B17 was re-authored concept-first under Issue #691, with motivation, prerequisite bridge, intuition, precise definition, symbol conditions, first-step check. This remains an unreviewed WIP and does NOT mean D3–D6/RD1/complete chapter is ready.
 
-**Outcome status:** RD0 AUTHORING DRAFT. A completed chapter needs a canonical public Core/Practice bank, multiple applications, shared Written/Anchor rubrics, original SVG/graphs, D6 HELP cards, protected RD1 distinct items, author QA, source custody, and ONE independent full-chapter review. Do not infer completeness from this matrix alone.
+**Outcome status at source draft time:** RD0 AUTHORING DRAFT. The consolidated candidate below contains D3/D4/D5/D6 and held-out RD1 is separately preserved; independent academic/pedagogical review and original S1 source verification remain pending. Do not infer PASS from volume of material.
 
 ---
 
@@ -221,14 +221,9 @@ Ví dụ f(x)=x³+x−1: f(0)=−1, f(1)=1, và f là đa thức liên tục tr�
 
 **EX-G11-B17-04 — Chứng minh tồn tại nghiệm.** Đặt g(x)=x³+x−1. Đa thức liên tục trên [0,1], g(0)=−1<0, g(1)=1>0. Vậy tồn tại c∈(0,1) sao cho g(c)=0. Kết luận mới là **ít nhất một nghiệm**; chưa dùng phép đổi dấu để suy duy nhất.
 
-## Whole-chapter dependencies and author gates
+## PART A source-to-next-part bridge
 
-1. S1 full-page and SBT printed-page verification from originals before any claim of complete Core coverage; identify where Chapter V ends at **p123**; p124–129 is not silently included in chapter Readiness.
-2. Fill D3 original Core + Practice + Application on **all 17 outcomes**, written solution and unique item IDs; reuse skill and canonical Written/Anchor, never clone.
-3. Complete D4 multi-step proof/modeling Written/Anchor and four-criterion rubrics, D5 original SVG convergence/asymptote/continuity graphs, D6 actionable stepwise HELP.
-4. Create a **separate PRIVATE** RD1 chapter bank with one held-out original for every required outcome, unique item IDs, independent of public exposure. No private stem/key/rubric/public JS.
-5. QA condition checks (nonzero denominator, q range, one-sided limits, x→−∞ sign), source-to-ID reconciliation, AP presentation plan and source custody. Then **ONE whole-chapter NotebookLM review** with both real Temp Markdown files plus short prompt as specified in source 06.
-6. No Academic PASS or A6 handoff from this R00; no merge/deploy until owner explicit release authorization. Continue SGK-first sequence; Topic remains held.
+D3 (Core/Practice/Application), D4 Written, D5 SVG source and D6 HELP are included **below in this consolidated R01 packet**. The separate private RD1 is never in this public Markdown. The original Part A R00 authoring dependency list has been superseded by the whole-chapter R01 inventory; required source-S1/QA gates remain in the dedicated author QA manifest.
 
 ---
 
