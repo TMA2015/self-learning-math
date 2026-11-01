@@ -4,12 +4,12 @@
 **STATUS:** `AUTHOR_CANDIDATE_R02_NOT_NOTEBOOKLM_REVIEWED` — **KHÔNG CÓ ACADEMIC_PASS / PED_PASS**, không Content Ready, không release/score/Mastery. Bản gốc S1 SGK/SBT của chủ dự án và SOURCE_RECEIPT trong NotebookLM vẫn cần kiểm chứng.
 **Phạm vi:** Toán 11 SGK KNTT Tập 1 ChV, B15–17 + bài tập cuối ChV (SGK tham khảo B15 104–110, B16 111–118, B17 119–122, cuối ChV 123). **SBT trang in đang HOLD** do chỉ mục nguồn thứ cấp không khớp receipt ChIV cũ; không suy đoán.
 **Sư phạm:** theo mục tiêu vốn có của Self-Learning Math và Issue #691: **Tại sao cần → Khái niệm là gì → hình thành trực quan → định nghĩa/điều kiện → khi nào dùng → ví dụ giải thích lựa chọn → tự thử → Core/Practice/Application**. Reviewer cần xét PED1–PED6 và trả verdict `PEDAGOGICAL_SELF_LEARNING_READY` **riêng** với `ACADEMIC_CHAPTER_V`.
-**Nội dung:** RD0 17 outcome; D1 concept-first B15–17 + integrated bridge; D2 12 ví dụ; D3 30 public; D4 6 Written/Anchor (3 Anchor tags); D5 3 SVG XML gốc; D6 6 HELP 5 bước. **Private RD1 17 câu được bảo quản ở file Temp riêng, không có trong nguồn công khai.**
+**Nội dung:** RD0 17 outcome; D1 concept-first B15–17 + integrated bridge; D2 13 ví dụ; D3 30 public; D4 6 Written/Anchor (3 Anchor tags); D5 3 SVG XML gốc; D6 6 HELP 5 bước. **Private RD1 17 câu được bảo quản ở file Temp riêng, không có trong nguồn công khai.**
 **Nguyên tắc review:** Giữ nguyên 5 Permanent Sources THPT v2.0; reviewer đối chiếu SGK/SBT S1 gốc và xác nhận mức độ độc lập của RD1, đặc biệt không tái dùng biến thể SBT. Bản trước R01 và RD1 R01 chưa được review, không mang PASS sang phiên bản R02.
 
 ## Exact public source ledger (Git blobs của các phần)
 
-- `prototypes/thpt/content-drafts/G11_CHV_B15_B17_S1_RD0_D1_D2_AUTHORING_R00_20261101.md` · blob `3fe076ce91c063f3d31ad06cf3abaebceabc42de`.
+- `prototypes/thpt/content-drafts/G11_CHV_B15_B17_S1_RD0_D1_D2_AUTHORING_R00_20261101.md` · blob `a3814cfc58b1392140da5afd37e660d96dc6299f`.
 - `prototypes/thpt/content-drafts/G11_CHV_B15_B17_D3_PUBLIC_CANONICAL_CANDIDATES_R01_20261101.md` · blob `aae88016555eff2553bfb1016692e310d25a84dc`.
 - `prototypes/thpt/content-drafts/G11_CHV_B15_B17_D4_WRITTEN_D6_HELP_R01_20261101.md` · blob `6b370781e3bab2951d8a11fd8d97030ffbb528d5`.
 - `prototypes/thpt/content-drafts/svg/FIG-G11-B15-01_R01.svg` · blob `632bef51196757f9c71f54c53bb3c7639ce158e0`.
@@ -172,6 +172,8 @@ Khi nói x→+∞, ta cho x tăng mãi; x→−∞ là cho x giảm mãi về ph
 **EX-G11-B16-03 — Liên hợp tại +∞.** Tính lim_{x→+∞}(√(x²+x)−x). Nhân liên hợp được x/(√(x²+x)+x)=1/(√(1+1/x)+1)→1/2, vì x>0 khi x→+∞. **Bẫy:** rút x khỏi căn phải dùng dấu x.
 
 **EX-G11-B16-04 — Dấu của căn khi x âm lớn.** lim_{x→−∞}√(x²+1)/x=lim_{x→−∞}(|x|√(1+1/x²))/x=−1. **Bẫy:** viết √(x²)=x cho x<0 là sai.
+
+**EX-G11-B16-05 — Vì sao giới hạn một phía quan trọng trong tình huống thực tế?** Một bãi xe thu **10 nghìn đồng** nếu thời gian gửi t thỏa 0<t≤1 giờ, và thu **20 nghìn đồng** nếu t>1 giờ. Gọi C(t) là chi phí (nghìn đồng), ta có C(t)=10 khi 0<t≤1, C(t)=20 khi t>1. Khi t tiến gần 1 **từ phía nhỏ hơn**, C(t) luôn là 10 nên giới hạn trái là 10; khi t tiến gần 1 **từ phía lớn hơn**, C(t) là 20 nên giới hạn phải là 20. Do hai phía khác nhau nên **không có giới hạn hai phía** tại t=1. Giá đúng tại t=1 là C(1)=10 nhưng điều này **không làm giới hạn hai phía xuất hiện**. **Ý nghĩa:** tại một ngưỡng tính phí, hai quá trình tiến gần từ hai phía có thể dẫn đến kết quả khác nhau. **Bẫy:** không được lấy trung bình (10+20)/2=15 hay lấy C(1) làm giới hạn.
 
 ## B17 — D1. Hàm số liên tục (vì sao cần giá trị khớp với xu hướng?)
 
