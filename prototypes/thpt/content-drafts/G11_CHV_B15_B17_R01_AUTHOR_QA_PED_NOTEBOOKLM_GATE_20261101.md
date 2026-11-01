@@ -9,7 +9,7 @@
 - **D3:** `G11_CHV_B15_B17_D3_PUBLIC_CANONICAL_CANDIDATES_R01_20261101.md`: 30 Core/Practice/Application candidates, 10 bài B15 + 10 bài B16 + 10 bài B17; 30 ID duy nhất.
 - **D4 và D6:** `G11_CHV_B15_B17_D4_WRITTEN_D6_HELP_R01_20261101.md`: 6 Written độc lập với 3 Anchor *tags* (không ngân hàng riêng), mỗi bài rubric 4 tiêu chí × 1 điểm; 6 HELP_ID với 5 bước, return về câu public canonical.
 - **D5:** `svg/FIG-G11-B15-01_R01.svg`, `B16-01_R01.svg`, `B17-01_R01.svg` (đường dãy số tiệm về 0; lỗ giới hạn tại điểm; gián đoạn do giá trị không khớp xu hướng). Cả 3 có `title`, `desc`, đường trục/điểm, giải thích ý nghĩa ngay tại D1.
-- **PRIVATE RD1:** 17 câu cho đúng 17 outcomes, mỗi câu có lời giải và rubric /4, trong `Math App/THPT_Academic_Review_Archive/Temp_THPT_G11_CHV_B15_B17_PRIVATE_RD0_RD1_17_AUTHOR_CANDIDATE_R01_20261101.md`. SHA256 **`e2bb815c79ebc8b00b80563ffb2d8ac0086fdf03b16a9c0963464650161b0e4e`**, **15.608 bytes**. Bản trước đó đã mang nhãn `_SUPERSEDED_`. Giữ câu, đáp án, rubric kín ngoài GitHub.
+- **PRIVATE RD1:** 17 câu cho đúng 17 outcomes, mỗi câu có lời giải và rubric /4, trong `Math App/THPT_Academic_Review_Archive/Temp_THPT_G11_CHV_B15_B17_PRIVATE_RD0_RD1_17_AUTHOR_CANDIDATE_R02_20261101.md`. SHA256 **`e9985e56cc17decd688a5fd3b068a8c75c5a709025a87afea68491ced18d2f98`**, **16.302 bytes**. Bản trước đó đã mang nhãn `_SUPERSEDED_`. Giữ câu, đáp án, rubric kín ngoài GitHub.
 - **Tổng:** 30 formative + 6 Written = 36 public; 17 RD1 private = **53 canonical candidate items**, ngoài 12 ví dụ D2. **SGK_CHAPTER_READINESS** không trùng **TOPIC_READINESS**.
 
 ## 2. Tình trạng kiểm thử tác giả
@@ -41,3 +41,11 @@
 ## 4. Trật tự làm việc chủ dự án
 
 Tiếp tục toàn chương SGK 10→11→12 theo thứ tự, ChV hiện là việc active. **Không quay lại sửa Toán 10 hoặc những trang Toán 11 đã phát hành** cho đến khi phát triển chương trình theo kế hoạch hoàn tất; kiểm toán hồi tố sau, theo Issue #691. Không thay đổi Golden UI, THCS, learner progress, Firebase/Gemini, browser keys, scoring hay Mastery.
+
+## 5. QA bổ sung 01/11 — RD1 R02 trước review
+
+- **DELTA_C_ACADEMIC_MATERIAL (pre-review, isolated):** `THPT-G11-CHV-RD1-03` trong phiên bản kín R01 có cấu trúc tổng n số lẻ đầu tiên gần với SBT Toán 11 KNTT bài 5.4 trang 78. Để bảo toàn độ độc lập hình thức và khái niệm, đã thay nội dung/đáp án/rubric của **chính item_id này**, KHÔNG tạo câu ID mới, thành bài tính giới hạn tổ hợp hai dãy `a_n/b_n−2a_n`. Điều kiện lim b_n=1/3≠0, kết quả 2. Các item RD1 khác giữ nguyên. Vì thay đổi trước NotebookLM review, chưa có Academic PASS nào bị suy rộng; gói RD1 R01 cũ phải coi là **SUPERSEDED**.
+- **PRIVATE canonical candidate R02:** `Temp_THPT_G11_CHV_B15_B17_PRIVATE_RD0_RD1_17_AUTHOR_CANDIDATE_R02_20261101.md`, trong Library `Math App/THPT_Academic_Review_Archive`; byte-size **16,302**, SHA256 **`e9985e56cc17decd688a5fd3b068a8c75c5a709025a87afea68491ced18d2f98`**. Đã xác nhận 17/17 distinct RD1, 17/17 rubric /4. Không đưa stems/keys lên GitHub.
+- **SymPy automated spot-check:** **53/53 mathematical assertions PASS** trên nhóm tính giới hạn, tổng cấp số nhân, dấu và một số câu Written/RD1. Lưu ý **53 assertions không tương đương 53/53 candidate items được kiểm chứng độc lập**, ví dụ tính liên tục, các phát biểu phạm vi và visual cần author/reviewer kiểm riêng. Trường hợp dãy `n+(−1)^n` dùng cận dưới `n−1` chứng minh tiến +∞ thay vì dựa vào SymPy trực tiếp.
+- **SBT source discrepancy remains OPEN**; các kết quả thứ cấp liên quan B15 p77–78 (<https://vietjack.com/sbt-toan-11-kn/bai-15-gioi-han-cua-day-so.jsp>) không thay cho đối chiếu trang PDF S1. Reviewer phải lập SOURCE_RECEIPT chính xác cả ChIV/ChV. Đây là vấn đề trích dẫn nguồn, không được tự diễn giải thành lỗi toán học nếu chưa có chứng cứ.
+- **PED integrated correction:** D1 đã có cầu nối toàn chương cho outcome `G11-CHV-INTEGRATED`: phân biệt giới hạn dãy, giới hạn hàm và tính liên tục, kèm micro-check, không sao chép câu RD1-17.
