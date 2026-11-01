@@ -25,7 +25,7 @@ Public cross-check: SGK Toán 11 T1 online TOC at https://media.metaisach.com/20
 | G11-B15-FINITE_SEQUENCE | Definition of finite sequence limit, approaching 0 or finite a | D1 + D2 + future Core |
 | G11-B15-INFINITE_SEQUENCE | Recognize plus/minus infinity and no-limit divergent oscillation | D1 + comparison + future Practice |
 | G11-B15-LIMIT_ARITHMETIC | Compute elementary limits with safe nonzero denominator, powers/signs | D1 + D2 + future Practice |
-| G11-B15-GEOMETRIC | Infinite decreasing geometric progression: |q|<1 condition | D1 + D2 + future Anchor |
+| G11-B15-GEOMETRIC | Infinite decreasing geometric progression: absolute value of q less than 1 | D1 + D2 + future Anchor |
 | G11-B15-GEOMETRIC_APPLICATION | Sum a geometric series and interpret a modeled situation | D2 + future Application |
 | G11-B16-LIMIT_AT_POINT | Finite limit at x0, independent of value f(x0) | D1 + D2 + future Core |
 | G11-B16-ONE_SIDED | Left/right limits, equality criterion for two-sided limit | D1 + D2 + future Core/Practice |
