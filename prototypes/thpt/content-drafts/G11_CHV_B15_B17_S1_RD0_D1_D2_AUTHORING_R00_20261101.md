@@ -199,6 +199,14 @@ Ví dụ f(x)=x³+x−1: f(0)=−1, f(1)=1, và f là đa thức liên tục tr�
 
 **EX-G11-B17-04 — Chứng minh tồn tại nghiệm.** Đặt g(x)=x³+x−1. Đa thức liên tục trên [0,1], g(0)=−1<0, g(1)=1>0. Vậy tồn tại c∈(0,1) sao cho g(c)=0. Kết luận mới là **ít nhất một nghiệm**; chưa dùng phép đổi dấu để suy duy nhất.
 
+## Kết nối toàn chương — một hành trình từ dãy số đến hàm số liên tục
+
+**Vì sao ba bài liên quan đến nhau?** Khi đếm các bước rời rạc, ta dùng **dãy số**: chẳng hạn phần công việc đã hoàn thành sau n đợt được mô hình hóa bởi uₙ=1−(1/2)ⁿ. Khi n tăng, phần còn thiếu (1/2)ⁿ tiến về 0 nên uₙ tiến về 1. Nếu đại lượng thay đổi theo **biến liên tục** x thay vì từng đợt n, ta quan sát một **hàm số** gần một giá trị x=a; ví dụ h(x)=(x²−1)/(x−1) với x≠1 có giới hạn 2 khi x tiến gần 1. Để mô hình không có lỗ ngay tại x=1, cần định nghĩa h(1)=2: đó là **tính liên tục**.
+
+**Bản chất của sự kết nối:** Dãy số nói về một danh sách giá trị có thứ tự, giới hạn hàm số nói về xu hướng giá trị khi đầu vào đến gần một mốc, còn liên tục hỏi giá trị **tại mốc** có khớp với xu hướng không. Cả ba cùng hỏi về hành vi khi tiến gần, nhưng **không** được đánh đồng biến n nguyên dương với biến x thực, hoặc đánh đồng giới hạn với giá trị hàm tại điểm.
+
+**Tự thử tích hợp:** Em hãy phát biểu bằng lời hai khác biệt: (1) uₙ tiến đến 1 có nhất thiết đòi một số hạng uₙ bằng 1 không? (2) h(x) có giới hạn 2 tại x=1 có nhất thiết liên tục tại 1 không? **Đối chiếu:** Không; n hữu hạn thì uₙ<1. Không; phải bổ sung h(1)=2 thì mới liên tục. Đây là hoạt động formative, không ghi Mastery.
+
 ## Whole-chapter dependencies and author gates
 
 1. S1 full-page and SBT printed-page verification from originals before any claim of complete Core coverage; identify where Chapter V ends at **p123**; p124–129 is not silently included in chapter Readiness.
