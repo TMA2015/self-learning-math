@@ -4,6 +4,7 @@
 
 | Gói | Hành trình | Trạng thái | Phạm vi | PR / nguồn |
 |---|---|---|---|---|
+| [G11-SGK-CHIX-B31-B33-R00](inventory/G11-SGK-CHIX-B31-B33-R00.md) | SGK_CHAPTER | HOLD | FULL_LEARNING_PATH | Draft authoring PR #695; NotebookLM Academic/PED PASS reported; A2 SBT answer TOC and A3 exact source/PED narrative correction pending; no release |
 | [G11-SGK-CHI-B01-B02](ready/G11-SGK-CHI-B01-B02.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | source #627 merged; release #650 R1–R5 evidence, exact-final-head CI before merge/deploy; B01–B02 only |
 | [G10-SGK-CHIV-B09-B11](ready/G10-SGK-CHIV-B09-B11.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY B09–B11 | source #637 merged; release #648 R1–R5 candidate QA PASS, final metadata-head dual CI required |
 | [G10-SGK-CHIV](ready/G10-SGK-CHIV.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | source #634 merged; release #645 R1–R5 evidence completed, exact-final-head CI recheck before merge/deploy |
@@ -38,3 +39,5 @@
 **30/10/2026 ChIII R1–R5:** Source #633 merged main `1643c60e3638cbc180c6580b54111a64e07cf663`; exact source blob `6320aeaa89bd51c514b07461e01fad5e3aca833f`. Release #644 integrates 16 canonical formative (7 A–D MCQ, 9 short-response), 2 Written incl Anchor, 2 original SVG, 4 D6 HELP_ID. Owner permission covers PUBLIC_FORMATIVE_ONLY **after** both exact final-head CI PASS; P1/P2 postdeploy separate, no Readiness/Mastery.
 
 **30/10/2026 — ChIV B07/B08 academic handoff:** 18/18 NotebookLM R01 PASS, D1–D6 10/10 outcomes, snapshot Git blob `42b206e31421b33860a1bf697d2d04b7aba992cf`. Authoring #634 source-only, no website/Readiness/Mastery. R1–R5 requires separate release PR and exact-head CI.
+
+**01/11/2026 — G11 ChIX B31–B33 NotebookLM intake:** Owner-supplied executive summary reports `ACADEMIC_CHAPTER_IX=PASS`, `PEDAGOGICAL_SELF_LEARNING_READY=PASS`, 31 RD0 / 32 D2 /71 public /31 protected RD1 /5 SVG/11 HELP, P0/P1/P2=0. Full Studio export loses source filenames and machine verdict block. Reviewer SBT solution pp173–195 contradict publisher-labelled original KNTT SBT Tập 2 TOC showing ChIX answer section starts p111; reviewer misattributes B31/B32/B33 Public self-tries and B31-02 SVG and incorrectly states speed is determined by acceleration sign alone. **Original Public R00 teaching actually correctly handles v·a signs; no student source edit.** Targeted Temp reconciliation archived and delivered. Manifest at `inventory/G11-SGK-CHIX-B31-B33-R00.md` remains **A2/A3 HOLD**, owner independent PASS preserved as reported; no automatic merge/deploy or Mastery.
