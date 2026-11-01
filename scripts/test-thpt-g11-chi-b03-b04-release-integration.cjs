@@ -2,19 +2,19 @@
 "use strict";
 const assert=require("node:assert/strict"),fs=require("node:fs"),crypto=require("node:crypto"),vm=require("node:vm");
 const read=p=>fs.readFileSync(p,"utf8");
-const blob=b=>crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+b.length+"\\0"),b])).digest("hex");
+const blob=b=>crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+b.length+"\0"),b])).digest("hex");
 const sourcePath="prototypes/thpt/content-drafts/THPT_G11_CHI_B01_B04_FULL_CHAPTER_D1_D6_REVIEW_SOURCE_R01_20261031.md";
 const bytes=fs.readFileSync(sourcePath);
 assert.equal(blob(bytes),"599d12ac7c2252001f881833c39978f94112cee4","Reviewed source byte lock");
 const source=bytes.toString("utf8");
 const start=source.indexOf("## D3 — SGK Core, Practice, Application"),end=source.indexOf("## D4 — 4 Written",start);
 assert(start>=0&&end>start,"Missing original D3 section");const section=source.slice(start,end);
-const heads=[...section.matchAll(/^### (THPT-G11-B(03|04)-([CP])\\d{2}) — (SGK_CORE|SGK_PRACTICE) · ([A-Z0-9_-]+) · ([A-Z_]+)\\s*$/gm)];
+const heads=[...section.matchAll(/^### (THPT-G11-B(03|04)-([CP])\d{2}) — (SGK_CORE|SGK_PRACTICE) · ([A-Z0-9_-]+) · ([A-Z_]+)\s*$/gm)];
 assert.equal(heads.length,26,"26 source public canonical Core/Practice");
 const field=(txt,name)=>{const x=txt.match(new RegExp("^\\*\\*"+name+":\\*\\* (.+)$","m"));assert(x,"Missing "+name);return x[1].trim()};
 const expected=heads.map((m,i)=>{const t=section.slice(m.index+m[0].length,heads[i+1]?.index??section.length);return {
  item_id:m[1],lesson:String(Number(m[2])),grade:"11",role:m[4]==="SGK_CORE"?"CORE":"PRACTICE",skill:m[5],stem:field(t,"Đề"),hint:"Xem lại kiến thức và ví dụ ở Bài "+Number(m[2])+" trước khi đối chiếu lời giải.",
- solution:"Đáp án: "+field(t,"Đáp án")+"\\nLời giải: "+field(t,"Lời giải"),difficulty:m[6],exposure:"FORMATIVE_ONLY"
+ solution:"Đáp án: "+field(t,"Đáp án")+"\nLời giải: "+field(t,"Lời giải"),difficulty:m[6],exposure:"FORMATIVE_ONLY"
 }});
 const window={};vm.runInNewContext(read("docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js"),{window});
 const bank=window.THPT_G11_CHI_B03_B04_REVIEWED_FORMATIVE;
