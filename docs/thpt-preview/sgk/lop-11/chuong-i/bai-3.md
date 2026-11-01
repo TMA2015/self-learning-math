@@ -36,23 +36,9 @@
 
 ## 4. Tự khắc phục lỗi thường gặp
 
-### HELP-G11-B03-01 · G11-B03-DOMAIN_RANGE · trở về B03-C01/P01
-1. Nhận diện lỗi: cố tính tan ở nơi cos=0 hoặc cot nơi sin=0.
-2. Kiểm tra đầu vào: xác định đối số u(x) của tan/cot.
-3. Sửa nguyên tắc: tan u cần cosu≠0; cot u cần sinu≠0.
-4. Tự giải ví dụ nhỏ: tan(2x) loại x=π/4+kπ/2; cot(2x) loại x=kπ/2.
-5. Học lại: làm lại câu Core xác định miền, rồi Practice với hệ số trong đối số.
+<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-B03-01"><summary>G11-B03-DOMAIN_RANGE</summary><ol><li>Nhận diện lỗi: cố tính tan ở nơi cos=0 hoặc cot nơi sin=0.</li><li>Kiểm tra đầu vào: xác định đối số u(x) của tan/cot.</li><li>Sửa nguyên tắc: tan u cần cosu≠0; cot u cần sinu≠0.</li><li>Tự giải ví dụ nhỏ: tan(2x) loại x=π/4+kπ/2; cot(2x) loại x=kπ/2.</li><li>Học lại: làm lại câu Core xác định miền, rồi Practice với hệ số trong đối số.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-B03-C01">Quay lại câu luyện tập phù hợp</a></p></details>
 
-
-
-### HELP-G11-B03-02 · G11-B03-PERIOD · trở về B03-C03/P03
-1. Nhận diện lỗi: nhân chu kỳ với hệ số của x.
-2. Gợi nhớ: sin/cos có chu kỳ 2π theo đối số, tan/cot có chu kỳ π.
-3. Sửa: đặt ωT bằng chu kỳ đối số, T=2π/|ω| hoặc π/|ω|, ω≠0.
-4. Thử ngay: cos(4x-π/3) có T=π/2.
-5. Trở về luyện tập: B03-P03, phân biệt chu kỳ cơ bản và chu kỳ bất kỳ.
-
-
+<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-B03-02"><summary>G11-B03-PERIOD</summary><ol><li>Nhận diện lỗi: nhân chu kỳ với hệ số của x.</li><li>Gợi nhớ: sin/cos có chu kỳ 2π theo đối số, tan/cot có chu kỳ π.</li><li>Sửa: đặt ωT bằng chu kỳ đối số, T=2π/|ω| hoặc π/|ω|, ω≠0.</li><li>Thử ngay: cos(4x-π/3) có T=π/2.</li><li>Trở về luyện tập: B03-P03, phân biệt chu kỳ cơ bản và chu kỳ bất kỳ.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-B03-P01">Quay lại câu luyện tập phù hợp</a></p></details>
 
 ## 5. Tiếp tục
 
