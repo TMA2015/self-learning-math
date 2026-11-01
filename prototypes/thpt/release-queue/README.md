@@ -8,6 +8,12 @@
 
 Danh mục là **con trỏ** đến học liệu và biên bản, không phải nơi copy nội dung câu hỏi. Không dùng trạng thái ghi trong tài liệu này thay cho kết quả live CI hoặc sự cho phép của chủ dự án.
 
+## Phân tách thư mục và kiểm tra CI (governance 01/11/2026)
+
+**Không đặt biên bản academic/A6 handoff trong `release-queue/ready/`.** Thư mục `ready/` và `inventory/` chỉ chứa **manifest canonical** đúng tên `PACKET_ID.md`, đủ trường/cổng theo `PACKET_TEMPLATE.md` và có một hàng đúng trong `REGISTER.md`. Handoff mới đặt tại [`../release-handoffs/`](../release-handoffs/README.md), nguồn tác giả ở `../content-drafts/`, gói NotebookLM ở `../review-packets/`. Reviewer PASS là chứng cứ nguồn, không biến biên bản thành manifest phát hành.
+
+**Phân tầng CI theo nội dung thay đổi, không theo tên nhánh:** Pull Request chỉ thay Markdown/TXT/SVG trong ba thư mục nguồn học thuật chạy scope preflight + kiểm tra integrity manifest; PR có thay đổi docs website, mã, cấu hình, `ready/`, `inventory/` hoặc `REGISTER.md` luôn chạy Roadmap full QA. Preview R4 chạy khi phạm vi website/manifest THPT liên quan thay đổi; các run preview cũ trên cùng PR bị hủy khi có commit mới. **CI nhanh không phải R1–R5, không được dùng làm bằng chứng phát hành.** Trước merge/deploy gói học liệu bắt buộc kiểm chứng cả cổng QA trên đúng final HEAD.
+
 ## Quy trình
 
 1. **Nhánh biên soạn/review** khóa SGK/SBT S1, snapshot và danh mục LESSON/OUTCOME/ITEM; bàn giao Temp_ Markdown/TXT + prompt 3–6 câu theo file 06; nhận NotebookLM verdict độc lập; sửa delta theo file 07 v1.1. Điền các ô **A1–A7** và bằng chứng chính xác.
