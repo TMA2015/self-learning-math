@@ -4,7 +4,7 @@
 
 | Gói | Hành trình | Trạng thái | Phạm vi | PR / nguồn |
 |---|---|---|---|---|
-| [G11-SGK-CHIV-B10-B14-R01](inventory/G11-SGK-CHIV-B10-B14-R01.md) | SGK_CHAPTER | HOLD | FULL_LEARNING_PATH | #688 authoring owner NotebookLM PASS reported 22/22 + 40/40 + 22/22; R0 vs R01 private filename source receipt pending; no release |
+| [G11-SGK-CHIV-B10-B14-R01](ready/G11-SGK-CHIV-B10-B14-R01.md) | SGK_CHAPTER | CONTENT_READY | FULL_LEARNING_PATH | Draft authoring #688; A1–A7 PASS after canonical R01/Private alias semantic source equivalence; release QA and owner approval pending |
 | [G11-SGK-CHI-B01-B02](ready/G11-SGK-CHI-B01-B02.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | source #627 merged; release #650 R1–R5 evidence, exact-final-head CI before merge/deploy; B01–B02 only |
 | [G10-SGK-CHIV-B09-B11](ready/G10-SGK-CHIV-B09-B11.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY B09–B11 | source #637 merged; release #648 R1–R5 candidate QA PASS, final metadata-head dual CI required |
 | [G10-SGK-CHIV](ready/G10-SGK-CHIV.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | source #634 merged; release #645 R1–R5 evidence completed, exact-final-head CI recheck before merge/deploy |
@@ -41,3 +41,5 @@
 **30/10/2026 — ChIV B07/B08 academic handoff:** 18/18 NotebookLM R01 PASS, D1–D6 10/10 outcomes, snapshot Git blob `42b206e31421b33860a1bf697d2d04b7aba992cf`. Authoring #634 source-only, no website/Readiness/Mastery. R1–R5 requires separate release PR and exact-head CI.
 
 **01/11/2026 — ChIV Toán 11 (authoring #688):** Owner supplied NotebookLM full-chapter PASS 22 outcomes / 40 public / 22 held-out, 5 SVG, 10 HELP, P0/P1/P2=0 and no academic delta. Source custody receipt is archived in PR #688. Because the pasted executive summary abbreviates private input as R0.md whereas immutable Library source is R01_20261031.md, exact A3 source identity must be reconciled using the full Studio report; manifest remains inventory/HOLD, not CONTENT_READY. Academic source unchanged; no R1–R5, release, or Mastery. Proceed G11 ChV authoring only.
+
+**01/11/2026 G11 ChIV B10–B14 academic closure:** Independent NotebookLM selected canonical public R01 + private R0 display alias internal R01; CHIV_SOURCE_FIDELITY=PASS, CHIV_ACADEMIC_ON_CANONICAL_SNAPSHOT=PASS, CHIV_PED_ON_CANONICAL_SNAPSHOT=PASS, DELTA_B_SOURCE_EQUIVALENT, 22 outcomes/40 public/22 private, P0/P1/P2=0 and MINIMAL_DELTA=0. Separate raw alias bytes were not independently checked by author; acceptance is external content equivalence, not byte identity. A1–A7 are checked in `ready/G11-SGK-CHIV-B10-B14-R01.md`; R1–R5/AP1–AP5/P1–P2 remain pending, no merge/deploy/Mastery.
