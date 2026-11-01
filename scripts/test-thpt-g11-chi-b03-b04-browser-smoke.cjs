@@ -13,6 +13,11 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
      assert(await page.locator("h1").innerText(),"G11 lesson header missing");
      const helps=page.locator("[data-thpt-help-id]");
      assert.equal(await helps.count(),2,"Exactly two D6 aids for B0"+lesson);
+     for(let i=0;i<2;i++){
+      const label=await helps.nth(i).locator("summary").innerText();
+      assert(label.length>=20&&!/^G11-B0[34]-/.test(label),
+       "D6 must show learner-readable Vietnamese summary, not internal skill code");
+     }
      const returnHref=await helps.first().locator("a[href*='luyen-tap/']").getAttribute("href");
      assert(returnHref.includes("THPT-G11-B0"+lesson+"-"),"D6 must link back to G11 canonical item");
      const imgs=page.locator(".thpt-r4-probability-figure img");
@@ -46,7 +51,10 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
     }
     const t=await page.goto(base+"tu-kiem-tra-chuong/",{waitUntil:"networkidle"});
     assert(t?.ok(),"G11 ChI selfcheck route missing");
-    assert((await page.locator("body").innerText()).includes("CHƯA KÍCH HOẠT"),"Never claim official Readiness before R3");
+    const readinessText=await page.locator("body").innerText();
+    assert(readinessText.includes("CHƯA KÍCH HOẠT"),"Never claim official Readiness before R3");
+    assert(readinessText.includes("Bài 1–4"),"Chapter-end page must describe all four integrated lessons");
+    assert(!readinessText.includes("Core/Luyện tập Bài 1–2"),"No stale two-lesson release scope");
     assert.equal(await page.locator("[data-thpt-readiness]").count(),0,"No early official scoring");
    }finally{await page.close()}
   }

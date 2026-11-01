@@ -16,7 +16,7 @@
 | AP1 — Idea hierarchy | OPEN | B03/B04 present 7/8 dense numbered knowledge propositions in one section. Require independent hierarchy check on learner page, not only heading presence. |
 | AP2 — Formula visibility | OPEN | Several displayed mathematical relationships are literal inline code rather than MathJax; inspect 390/820/1440 rendered page before approval. |
 | AP3 — Figure readability | OPEN | SVG existence/byte lock verified; captions and interpretation still require learner-facing verification. |
-| AP4 — Self-study clarity | OPEN | D6 summary labels use internal outcome names such as `G11-B03-DOMAIN_RANGE`; need check understandable learner wording. |
+| AP4 — Self-study clarity | PARTIAL / NOT PASS | B03/B04 D6 `<summary>` now uses learner-facing Vietnamese labels (UI-only; no math/item/source changes), and browser smoke checks this. Full self-learning clarity and PED6 first-try still need independent learner/reviewer evidence. |
 | AP5 — Responsive visual | PARTIAL / NOT PASS | PR #697 THPT browser smoke on 390/820/1440 has CI evidence; no real iPhone/iPad Safari P2 claim. Require final-head AP screenshot/readability acceptance. |
 
 **Source custody:** SGK/SBT printed-page receipt for B03/B04 verified in Issue #682 (SBT pp11–18 / pp19–24 / end pp25–30). Current integration 42 Core/Practice + 4 Written/Anchor = 46 public IDs, six total SVG and eight D6. The private 20 RD1 original remains outside GitHub (author-recorded SHA256 `b34b5f232b41e03eaddd1c3566ce2f73881ec09f8b3449432814b763d754f107`); no original protected question stem/key is in this PR.
