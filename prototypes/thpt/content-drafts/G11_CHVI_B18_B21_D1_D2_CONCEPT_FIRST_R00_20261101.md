@@ -4,7 +4,13 @@
 **STATUS:** `D1_D2_AUTHOR_DRAFT_NOT_REVIEWED`. **PED rule #691:** A first-time learner must know **why the idea is needed**, **what it means**, **how formed**, **when the formula applies**, then see a reasoned example and self-try. Not a formula sheet.  
 **Study prerequisites:** Exponents with positive integer powers, square/cube roots, real numbers, function notation/graphs, inequalities and preceding G11 Chapter V sequence limits. Assume only these prerequisites; explain new terminology at first use.
 
-## Lesson B18 — Lũy thừa với số mũ thực
+## Lesson B18 —
+
+**Hình D5 — quan sát trước khi tính:** ![B18 — trực quan hình thành khái niệm](svg/FIG-G11-CHVI-B18-01_R00.svg)
+
+**Cách đọc và phát hiện:** Hình B18 giúp em nhìn thấy cùng một quy tắc 2^x từ số mũ âm qua 0 đến số mũ phân số: đọc các điểm trên trục và so sánh chấm màu cam tại x=1/2 (√2). Đừng chỉ chép hình: hãy nêu vì sao 2^(−2)=1/4 vẫn là một số **dương**.
+
+ Lũy thừa với số mũ thực
 
 ### 1. Tại sao phải mở rộng số mũ? (WHY)
 
@@ -53,7 +59,13 @@ Với `a,b>0`, `x,y∈ℝ`:
 
 ---
 
-## Lesson B19 — Lôgarit
+## Lesson B19 —
+
+**Hình D5 — quan sát trước khi tính:** ![B19 — trực quan hình thành khái niệm](svg/FIG-G11-CHVI-B19-01_R00.svg)
+
+**Cách đọc và phát hiện:** Hình B19 không phải bảng công thức: hãy đọc từ trái qua phải để tính 2³=8, rồi đọc ngược để thấy log₂8=3 trả lời câu hỏi “số mũ nào?”. Kiểm điều kiện cơ số, đối số ngay dưới sơ đồ.
+
+ Lôgarit
 
 ### 1. Vấn đề dẫn đến lôgarit: ta muốn tìm **số mũ** (WHY)
 
@@ -91,7 +103,13 @@ Nếu `log₅125=3`, em phát biểu lại một đẳng thức lũy thừa. Gi�
 
 ---
 
-## Lesson B20 — Hàm số mũ và hàm số lôgarit
+## Lesson B20 —
+
+**Hình D5 — quan sát trước khi tính:** ![B20 — trực quan hình thành khái niệm](svg/FIG-G11-CHVI-B20-01_R00.svg)
+
+**Cách đọc và phát hiện:** Hình B20 đặt hai hàm trên **cùng hệ trục và cùng tỉ lệ**, để thấy điểm (0,1) của y=2^x tương ứng (1,0) của y=log₂x. Hãy tìm thêm cặp (1,2) ↔ (2,1); đường nét đứt y=x biểu diễn trục đối xứng, không phải một hàm cần giải.
+
+ Hàm số mũ và hàm số lôgarit
 
 ### 1. Tại sao phải học đồ thị và hàm chứ không chỉ một giá trị?
 
@@ -127,7 +145,13 @@ Vì sao `y=3^x` không thể bằng −5? Nếu `log₂8=3`, hãy tìm hai đi�
 
 ---
 
-## Lesson B21 — Phương trình, bất phương trình mũ và lôgarit
+## Lesson B21 —
+
+**Hình D5 — quan sát trước khi tính:** ![B21 — trực quan hình thành khái niệm](svg/FIG-G11-CHVI-B21-01_R00.svg)
+
+**Cách đọc và phát hiện:** Hình B21 giải thích bản chất “đảo chiều”: cùng tăng x, đường y=2^x đi lên nhưng y=(1/2)^x đi xuống. Hãy dùng điều này để tự nói vì sao (1/2)^u>(1/2)^v thì u<v, trước khi học quy trình giải bất phương trình.
+
+ Phương trình, bất phương trình mũ và lôgarit
 
 ### 1. Vì sao phải giải loại phương trình này? (WHY)
 
