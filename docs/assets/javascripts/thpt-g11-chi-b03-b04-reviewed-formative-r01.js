@@ -1,0 +1,322 @@
+"use strict";
+/* B03-B04 G11 ChI 26 PUBLIC FORMATIVE canonical records. Immutable source blob 599d12ac7c2252001f881833c39978f94112cee4; ACADEMIC PASS receipt PR #681 / Issue #682. No confidential RD1 or Mastery. */
+(function(root){
+ const contentVersion="THPT-G11-CHI-B03-B04-R01";
+ const records=[
+  {
+    "item_id": "THPT-G11-B03-C01",
+    "lesson": "3",
+    "grade": "11",
+    "role": "CORE",
+    "skill": "G11-B03-DOMAIN_RANGE",
+    "stem": "TXĐ của y=tan x là gì?",
+    "hint": "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải.",
+    "solution": "Đáp án: ℝ \\ {π/2+kπ:k∈ℤ}.\nLời giải: tan x chỉ xác định khi cos x≠0; cos x=0 tại π/2+kπ.",
+    "difficulty": "BASIC",
+    "exposure": "FORMATIVE_ONLY"
+  },
+  {
+    "item_id": "THPT-G11-B03-C02",
+    "lesson": "3",
+    "grade": "11",
+    "role": "CORE",
+    "skill": "G11-B03-PARITY",
+    "stem": "Cho bốn hàm sin x, cos x, tan x, cot x. Hàm nào chẵn, hàm nào lẻ trên TXĐ?",
+    "hint": "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải.",
+    "solution": "Đáp án: cos x chẵn; sin x, tan x, cot x lẻ.\nLời giải: Dùng sin(-x)=-sinx, cos(-x)=cosx, tan(-x)=-tanx, cot(-x)=-cotx; các TXĐ đối xứng qua 0.",
+    "difficulty": "BASIC",
+    "exposure": "FORMATIVE_ONLY"
+  },
+  {
+    "item_id": "THPT-G11-B03-C03",
+    "lesson": "3",
+    "grade": "11",
+    "role": "CORE",
+    "skill": "G11-B03-PERIOD",
+    "stem": "Chu kỳ cơ bản của y=sin x và y=tan x là bao nhiêu?",
+    "hint": "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải.",
+    "solution": "Đáp án: sin: 2π; tan: π.\nLời giải: sin(x+2π)=sinx; tan(x+π)=tanx và hai số lần lượt là chu kỳ dương nhỏ nhất.",
+    "difficulty": "BASIC",
+    "exposure": "FORMATIVE_ONLY"
+  },
+  {
+    "item_id": "THPT-G11-B03-C04",
+    "lesson": "3",
+    "grade": "11",
+    "role": "CORE",
+    "skill": "G11-B03-SIN_GRAPH",
+    "stem": "Tìm tập giá trị và các điểm cực đại của y=sin x.",
+    "hint": "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải.",
+    "solution": "Đáp án: TGT [-1,1]; max 1 tại x=π/2+2kπ, k∈ℤ.\nLời giải: Đọc đồ thị sin và tính tuần hoàn: sin x≤1, bằng 1 tại π/2+2kπ.",
+    "difficulty": "BASIC",
+    "exposure": "FORMATIVE_ONLY"
+  },
+  {
+    "item_id": "THPT-G11-B03-P01",
+    "lesson": "3",
+    "grade": "11",
+    "role": "PRACTICE",
+    "skill": "G11-B03-DOMAIN_RANGE",
+    "stem": "Tìm TXĐ của y=cot(2x).",
+    "hint": "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải.",
+    "solution": "Đáp án: ℝ \\ {kπ/2:k∈ℤ}.\nLời giải: cot(2x) chỉ xác định nếu sin(2x)≠0, nên 2x≠kπ.",
+    "difficulty": "CORE_APPLY",
+    "exposure": "FORMATIVE_ONLY"
+  },
+  {
+    "item_id": "THPT-G11-B03-P02",
+    "lesson": "3",
+    "grade": "11",
+    "role": "PRACTICE",
+    "skill": "G11-B03-SIN_GRAPH",
+    "stem": "Tìm tập giá trị của f(x)=1+2sin x.",
+    "hint": "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải.",
+    "solution": "Đáp án: [-1,3].\nLời giải: -1≤sinx≤1; nhân 2 cộng 1 cho -1≤f≤3. Hai cận đều đạt.",
+    "difficulty": "CORE_APPLY",
+    "exposure": "FORMATIVE_ONLY"
+  },
+  {
+    "item_id": "THPT-G11-B03-P03",
+    "lesson": "3",
+    "grade": "11",
+    "role": "PRACTICE",
+    "skill": "G11-B03-PERIOD",
+    "stem": "Tìm chu kỳ cơ bản của f(x)=3cos(4x-π/3).",
+    "hint": "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải.",
+    "solution": "Đáp án: π/2.\nLời giải: Hàm cos theo đối số có chu kỳ 2π; 4T=2π nên T=π/2.",
+    "difficulty": "CORE_APPLY",
+    "exposure": "FORMATIVE_ONLY"
+  },
+  {
+    "item_id": "THPT-G11-B03-P04",
+    "lesson": "3",
+    "grade": "11",
+    "role": "PRACTICE",
+    "skill": "G11-B03-SIN_GRAPH",
+    "stem": "y=sinx đồng biến trên đoạn nào: [-π/2,π/2] hay [0,π]?",
+    "hint": "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải.",
+    "solution": "Đáp án: [-π/2,π/2].\nLời giải: sin tăng trên [-π/2,π/2]; trên [0,π] tăng rồi giảm.",
+    "difficulty": "CORE_APPLY",
+    "exposure": "FORMATIVE_ONLY"
+  },
+  {
+    "item_id": "THPT-G11-B03-P05",
+    "lesson": "3",
+    "grade": "11",
+    "role": "PRACTICE",
+    "skill": "G11-B03-COS_GRAPH",
+    "stem": "Trên [0,2π], nghiệm cos x=0 gồm những hoành độ nào?",
+    "hint": "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải.",
+    "solution": "Đáp án: π/2 và 3π/2.\nLời giải: Đồ thị cos cắt trục Ox tại π/2+kπ; chỉ giữ k=0,1.",
+    "difficulty": "CORE_APPLY",
+    "exposure": "FORMATIVE_ONLY"
+  },
+  {
+    "item_id": "THPT-G11-B03-P06",
+    "lesson": "3",
+    "grade": "11",
+    "role": "PRACTICE",
+    "skill": "G11-B03-TAN_GRAPH",
+    "stem": "Nêu hai tiệm cận đứng của y=tanx kề trục tung.",
+    "hint": "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải.",
+    "solution": "Đáp án: x=-π/2 và x=π/2.\nLời giải: Tại cosx=0, tan không xác định và giá trị một phía không bị chặn.",
+    "difficulty": "CORE_APPLY",
+    "exposure": "FORMATIVE_ONLY"
+  },
+  {
+    "item_id": "THPT-G11-B03-P07",
+    "lesson": "3",
+    "grade": "11",
+    "role": "PRACTICE",
+    "skill": "G11-B03-COT_GRAPH",
+    "stem": "Trên (0,π), y=cot x đồng biến hay nghịch biến?",
+    "hint": "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải.",
+    "solution": "Đáp án: Nghịch biến.\nLời giải: Trên (0,π), đồ thị cot đi liên tục từ +∞ xuống -∞; tương tự trên (kπ,(k+1)π). Không cần dùng đạo hàm (học ở chương sau).",
+    "difficulty": "CORE_APPLY",
+    "exposure": "FORMATIVE_ONLY"
+  },
+  {
+    "item_id": "THPT-G11-B03-P08",
+    "lesson": "3",
+    "grade": "11",
+    "role": "PRACTICE",
+    "skill": "G11-B03-MODELING",
+    "stem": "T(t)=24+3cos(πt/6) (°C, t giờ). Chu kỳ, cao nhất và thấp nhất?",
+    "hint": "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải.",
+    "solution": "Đáp án: T=12 giờ; max 27°C; min 21°C.\nLời giải: ω=π/6 nên T=2π/(π/6)=12; vì cos∈[-1,1], T(t)∈[21,27].",
+    "difficulty": "APPLICATION",
+    "exposure": "FORMATIVE_ONLY"
+  },
+  {
+    "item_id": "THPT-G11-B04-C01",
+    "lesson": "4",
+    "grade": "11",
+    "role": "CORE",
+    "skill": "G11-B04-SIN_EQ",
+    "stem": "Giải sin x=-1/2 trên ℝ.",
+    "hint": "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải.",
+    "solution": "Đáp án: x=-π/6+2kπ hoặc x=7π/6+2kπ, k∈ℤ.\nLời giải: sin(-π/6)=-1/2, sin(7π/6)=-1/2; đó là hai nhánh trong một vòng.",
+    "difficulty": "BASIC",
+    "exposure": "FORMATIVE_ONLY"
+  },
+  {
+    "item_id": "THPT-G11-B04-C02",
+    "lesson": "4",
+    "grade": "11",
+    "role": "CORE",
+    "skill": "G11-B04-COS_EQ",
+    "stem": "Giải cos x=1/2 trên ℝ.",
+    "hint": "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải.",
+    "solution": "Đáp án: x=±π/3+2kπ, k∈ℤ.\nLời giải: cos(±π/3)=1/2, chu kỳ 2π.",
+    "difficulty": "BASIC",
+    "exposure": "FORMATIVE_ONLY"
+  },
+  {
+    "item_id": "THPT-G11-B04-C03",
+    "lesson": "4",
+    "grade": "11",
+    "role": "CORE",
+    "skill": "G11-B04-TAN_EQ",
+    "stem": "Giải tan x=-1 trên ℝ.",
+    "hint": "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải.",
+    "solution": "Đáp án: x=-π/4+kπ, k∈ℤ.\nLời giải: tan(-π/4)=-1; tan có chu kỳ π, mọi nghiệm hợp lệ.",
+    "difficulty": "BASIC",
+    "exposure": "FORMATIVE_ONLY"
+  },
+  {
+    "item_id": "THPT-G11-B04-C04",
+    "lesson": "4",
+    "grade": "11",
+    "role": "CORE",
+    "skill": "G11-B04-COT_EQ",
+    "stem": "Giải cot x=1 trên ℝ.",
+    "hint": "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải.",
+    "solution": "Đáp án: x=π/4+kπ, k∈ℤ.\nLời giải: cot(π/4)=1; chu kỳ π và sin khác 0 tại các nghiệm.",
+    "difficulty": "BASIC",
+    "exposure": "FORMATIVE_ONLY"
+  },
+  {
+    "item_id": "THPT-G11-B04-P01",
+    "lesson": "4",
+    "grade": "11",
+    "role": "PRACTICE",
+    "skill": "G11-B04-TRANSFORM",
+    "stem": "Giải sin(2x)=1/2 trên ℝ.",
+    "hint": "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải.",
+    "solution": "Đáp án: x=π/12+kπ hoặc x=5π/12+kπ, k∈ℤ.\nLời giải: Đặt t=2x: t=π/6+2kπ hoặc 5π/6+2kπ. Chia cả hai họ cho 2.",
+    "difficulty": "CORE_APPLY",
+    "exposure": "FORMATIVE_ONLY"
+  },
+  {
+    "item_id": "THPT-G11-B04-P02",
+    "lesson": "4",
+    "grade": "11",
+    "role": "PRACTICE",
+    "skill": "G11-B04-TRANSFORM",
+    "stem": "Giải 2cos(x-π/6)=√3 trên ℝ.",
+    "hint": "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải.",
+    "solution": "Đáp án: x=2kπ hoặc x=π/3+2kπ, k∈ℤ.\nLời giải: cos(x-π/6)=√3/2 nên x-π/6=±π/6+2kπ.",
+    "difficulty": "CORE_APPLY",
+    "exposure": "FORMATIVE_ONLY"
+  },
+  {
+    "item_id": "THPT-G11-B04-P03",
+    "lesson": "4",
+    "grade": "11",
+    "role": "PRACTICE",
+    "skill": "G11-B04-TRANSFORM",
+    "stem": "Giải tan(3x)=√3 trên ℝ.",
+    "hint": "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải.",
+    "solution": "Đáp án: x=π/9+kπ/3, k∈ℤ.\nLời giải: 3x=π/3+kπ, sau đó chia 3.",
+    "difficulty": "CORE_APPLY",
+    "exposure": "FORMATIVE_ONLY"
+  },
+  {
+    "item_id": "THPT-G11-B04-P04",
+    "lesson": "4",
+    "grade": "11",
+    "role": "PRACTICE",
+    "skill": "G11-B04-TRANSFORM",
+    "stem": "Giải cos(2x)=cosx trên ℝ.",
+    "hint": "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải.",
+    "solution": "Đáp án: x=2kπ/3, k∈ℤ.\nLời giải: 2cos²x-cosx-1=(2cosx+1)(cosx-1)=0; x=2kπ hoặc ±2π/3+2kπ; hợp hai tập bằng 2kπ/3.",
+    "difficulty": "APPLICATION",
+    "exposure": "FORMATIVE_ONLY"
+  },
+  {
+    "item_id": "THPT-G11-B04-P05",
+    "lesson": "4",
+    "grade": "11",
+    "role": "PRACTICE",
+    "skill": "G11-B04-TRANSFORM",
+    "stem": "Giải sinx=sin(3x) trên ℝ.",
+    "hint": "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải.",
+    "solution": "Đáp án: x=kπ hoặc x=π/4+kπ/2, k∈ℤ.\nLời giải: sin A=sin B khi A=B+2kπ hoặc A=π-B+2kπ. Nhánh x=3x+2kπ cho x=-kπ, tức mọi kπ. Nhánh x=π-3x+2kπ cho 4x=π+2kπ, tức x=π/4+kπ/2. Không chia hai vế cho sinx.",
+    "difficulty": "APPLICATION",
+    "exposure": "FORMATIVE_ONLY"
+  },
+  {
+    "item_id": "THPT-G11-B04-P06",
+    "lesson": "4",
+    "grade": "11",
+    "role": "PRACTICE",
+    "skill": "G11-B04-INTERVAL",
+    "stem": "Giải sinx=1/2 trên [0,2π).",
+    "hint": "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải.",
+    "solution": "Đáp án: {π/6,5π/6}.\nLời giải: Nghiệm tổng quát π/6+2kπ hoặc 5π/6+2kπ; chỉ k=0 cho nghiệm thuộc khoảng yêu cầu, 2π bị loại.",
+    "difficulty": "CORE_APPLY",
+    "exposure": "FORMATIVE_ONLY"
+  },
+  {
+    "item_id": "THPT-G11-B04-P07",
+    "lesson": "4",
+    "grade": "11",
+    "role": "PRACTICE",
+    "skill": "G11-B04-INTERVAL",
+    "stem": "Giải cos(2x)=0 trên [0,π].",
+    "hint": "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải.",
+    "solution": "Đáp án: {π/4,3π/4}.\nLời giải: 2x=π/2+kπ, nên x=π/4+kπ/2; k=0,1 thỏa đoạn đóng [0,π].",
+    "difficulty": "CORE_APPLY",
+    "exposure": "FORMATIVE_ONLY"
+  },
+  {
+    "item_id": "THPT-G11-B04-P08",
+    "lesson": "4",
+    "grade": "11",
+    "role": "PRACTICE",
+    "skill": "G11-B04-EXTRANEOUS",
+    "stem": "Giải tanx=tan(2x) trên ℝ, ghi rõ TXĐ.",
+    "hint": "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải.",
+    "solution": "Đáp án: x=kπ, k∈ℤ.\nLời giải: Phải có cosx≠0 và cos2x≠0. Khi đó tanA=tanB ⇔ A=B+kπ; x=2x+kπ ⇔ x=-kπ. Các x=kπ đều thuộc TXĐ và thế lại hai vế cùng bằng 0.",
+    "difficulty": "APPLICATION",
+    "exposure": "FORMATIVE_ONLY"
+  },
+  {
+    "item_id": "THPT-G11-B04-P09",
+    "lesson": "4",
+    "grade": "11",
+    "role": "PRACTICE",
+    "skill": "G11-B04-APPLICATION",
+    "stem": "Mực nước H(t)=10+2sin(πt/6), với 0≤t<12 (giờ), bằng 11 lúc mấy giờ?",
+    "hint": "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải.",
+    "solution": "Đáp án: t=1 và t=5 (giờ).\nLời giải: sin(πt/6)=1/2; đối số trong [0,2π). Hai nghiệm πt/6=π/6 hoặc 5π/6, nên t=1 hoặc 5.",
+    "difficulty": "APPLICATION",
+    "exposure": "FORMATIVE_ONLY"
+  },
+  {
+    "item_id": "THPT-G11-B04-P10",
+    "lesson": "4",
+    "grade": "11",
+    "role": "PRACTICE",
+    "skill": "G11-B04-SIN_EQ",
+    "stem": "Với m∈ℝ, điều kiện nào để sinx=m có nghiệm thực?",
+    "hint": "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải.",
+    "solution": "Đáp án: -1≤m≤1.\nLời giải: Giá trị sinx thuộc [-1,1] nên điều kiện cần |m|≤1; ngược lại mọi m trong đoạn đều đạt được trên đường tròn lượng giác.",
+    "difficulty": "CORE_APPLY",
+    "exposure": "FORMATIVE_ONLY"
+  }
+];
+ const validate=()=>({valid:records.length===26&&new Set(records.map(x=>x.item_id)).size===26&&records.every(x=>/^THPT-G11-B(03|04)-[CP]\d{2}$/.test(x.item_id)&&x.grade==="11"&&x.exposure==="FORMATIVE_ONLY")});
+ const forLesson=(lesson,role)=>records.filter(x=>x.lesson===String(Number(lesson))&&(role==="core"?x.role==="CORE":x.role==="PRACTICE"));
+ root.THPT_G11_CHI_B03_B04_REVIEWED_FORMATIVE=Object.freeze({contentVersion,records:Object.freeze(records.map(x=>Object.freeze(x))),validate,forLesson});
+})(window);

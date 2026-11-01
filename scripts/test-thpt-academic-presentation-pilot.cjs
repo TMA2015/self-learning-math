@@ -39,7 +39,15 @@ for(const check of checks){
   assert.equal(formulas.length,check.mathCount,check.file+": math expression count changed");
   assert.equal(fnv(JSON.stringify(formulas)),check.mathHash,
     check.file+": source-locked math sequence changed, classify delta before proceeding");
-  assert.equal(fnv(src.slice(0,start)),check.prefixHash,check.file+": lesson header changed");
+  // Normalize only the approved B02 lead-copy correction; D1 math, examples and figures stay pinned.
+  let prefix=src.slice(0,start);
+  if(check.file==="docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md"){
+    const current="Chương I gồm Bài 1–4; Tự kiểm tra cuối chương chưa kích hoạt.";
+    const frozen="Phạm vi đang công bố chỉ gồm Bài 1–2.";
+    assert(prefix.includes(current),"G11 B02 must show accurate four-lesson chapter scope");
+    prefix=prefix.replace(current,frozen);
+  }
+  assert.equal(fnv(prefix),check.prefixHash,check.file+": lesson header changed beyond approved UI-only scope");
   assert.equal(fnv(src.slice(end)),check.suffixHash,
     check.file+": examples, SVG, HELP, links or solutions changed");
   for(const h of check.groups)assert(middle.includes(h),check.file+": missing "+h);

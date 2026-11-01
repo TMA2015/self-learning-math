@@ -2,7 +2,7 @@
 
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG I · SGK KẾT NỐI TRI THỨC</p>
-<p class="thpt-r4-lead">Học theo SGK từng bước: kiến thức, ví dụ, luyện tập và tự khắc phục lỗi. Phạm vi đang công bố chỉ gồm Bài 1–2.</p>
+<p class="thpt-r4-lead">Học theo SGK từng bước: kiến thức, ví dụ, luyện tập và tự khắc phục lỗi. Chương I gồm Bài 1–4; Tự kiểm tra cuối chương chưa kích hoạt.</p>
 <nav class="thpt-r4-lesson-tabs"><a href="../">Chương I</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra · chưa kích hoạt</a></nav>
 </div>
 
