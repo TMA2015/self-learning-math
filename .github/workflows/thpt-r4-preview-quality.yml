@@ -81,6 +81,7 @@ on:
       - 'docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js'
       - 'scripts/test-thpt-g11-chi-b03-b04-release-integration.cjs'
       - 'scripts/test-thpt-g11-chi-b01-b02-browser-smoke.cjs'
+      - 'scripts/test-thpt-g11-chi-b03-b04-browser-smoke.cjs'
       - 'scripts/test-thpt-formative-actions-ui-browser.cjs'
       - 'scripts/test-thpt-interactive-compact-browser.cjs'
       - 'scripts/test-thpt-r4-public-formative-interaction.cjs'
@@ -310,6 +311,8 @@ jobs:
         run: node scripts/test-thpt-g10-chv-b13-b14-browser-smoke.cjs
       - name: G11 ChI B01/B02 browser QA mobile / tablet / desktop
         run: node scripts/test-thpt-g11-chi-b01-b02-browser-smoke.cjs
+      - name: G11 ChI B03/B04 reviewed browser QA · mobile tablet desktop
+        run: node scripts/test-thpt-g11-chi-b03-b04-browser-smoke.cjs
       - name: Academic Presentation QA pilot · MathJax overflow / 390 820 1440
         run: node scripts/test-thpt-academic-presentation-browser.cjs
       - name: Academic Presentation QA G10 B03 · 390 820 1440
