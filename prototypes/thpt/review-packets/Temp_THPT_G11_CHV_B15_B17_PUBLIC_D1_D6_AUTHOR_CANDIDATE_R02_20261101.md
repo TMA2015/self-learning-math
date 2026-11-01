@@ -154,6 +154,8 @@ Với g(x)=1/(x−1), khi x→1⁺ thì mẫu là số dương rất nhỏ, g(x)
 
 Khi nói x→+∞, ta cho x tăng mãi; x→−∞ là cho x giảm mãi về phía âm. **Phải kiểm tra dấu trước khi đưa x ra ngoài căn:** √(x²)=|x|, bằng −x nếu x<0.
 
+**Thuật ngữ mới — “nhân liên hợp” nghĩa là gì?** Khi gặp biểu thức có dạng `√A−b`, ta thường nhân cả tử và mẫu với `√A+b` (giữ nguyên giá trị phân thức ở nơi mẫu khác 0). Hai biểu thức `√A−b` và `√A+b` được gọi là **liên hợp** của nhau; tích của chúng là `A−b²`, nhờ hằng đẳng thức hiệu hai bình phương. Ví dụ `(√(x+4)−2)(√(x+4)+2)=x`, giúp khử căn khi tính giới hạn ở x=0. **Vì sao làm bước này?** Để biến dạng `0/0` chưa thể kết luận thành một biểu thức có giới hạn tính được. Trước khi rút gọn, phải kiểm tra đang xét `x≠0` và căn có nghĩa.
+
 ### 4. Cách lựa chọn phương pháp
 
 - Thay trực tiếp cho kết quả hữu hạn hợp lệ → có thể dùng tính liên tục/phép toán giới hạn thích hợp.
