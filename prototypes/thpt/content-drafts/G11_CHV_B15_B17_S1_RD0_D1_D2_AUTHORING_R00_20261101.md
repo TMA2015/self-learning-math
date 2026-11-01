@@ -1,5 +1,5 @@
 # Toán 11 SGK KNTT Tập 1 — Chương V: Giới hạn. Hàm số liên tục
-## R00 authoring foundation: S1 scope, RD0, D1 theory, D2 worked examples
+## R00 pedagogical rewrite (Issue #691): S1 scope, RD0, D1 concept-first, D2 worked examples
 
 **STATUS:** AUTHORING_WIP_ONLY; **NOT** a NotebookLM review source, NOT Academic PASS, NOT A1–A7, NOT a learner website.  
 **Scope:** B15, B16, B17 and final SGK Chapter V exercise; independent SGK_CHAPTER_READINESS will be designed as separate protected RD1, NOT published here.  
@@ -40,17 +40,51 @@ Public cross-check: SGK Toán 11 T1 online TOC at https://media.metaisach.com/20
 | G11-B17-ZERO_EXISTENCE | Existence of a zero on a closed interval under continuity and opposite endpoint signs | D1 + D2 + future Written |
 | G11-CHV-INTEGRATED | Chain: sequences → limits → continuity, compare candidate claims and conditions | Whole chapter Written + protected RD1 |
 
+**Self-learning pedagogy:** D1 for B15–B17 was re-authored concept-first under Issue #691, with motivation, prerequisite bridge, intuition, precise definition, symbol conditions, first-step check. This remains an unreviewed WIP and does NOT mean D3–D6/RD1/complete chapter is ready.
+
 **Outcome status:** RD0 AUTHORING DRAFT. A completed chapter needs a canonical public Core/Practice bank, multiple applications, shared Written/Anchor rubrics, original SVG/graphs, D6 HELP cards, protected RD1 distinct items, author QA, source custody, and ONE independent full-chapter review. Do not infer completeness from this matrix alone.
 
 ---
 
-## B15 — D1. Giới hạn của dãy số
+## B15 — D1. Giới hạn của dãy số (giảng từ trực giác đến định nghĩa)
 
-**Bản chất.** Dãy (u_n) có giới hạn a nếu từ một chỉ số đủ lớn trở đi, |u_n−a| nhỏ tùy ý; hữu hạn nghĩa là dãy tiến đến một số thực cố định. Ký hiệu lim_{n→∞} u_n=a. Khi a=0, dùng |u_n|<ε với mọi ε>0 và n đủ lớn; tổng quát quy về u_n−a→0. Dãy có giới hạn +∞ nếu u_n lớn hơn mọi mốc dương cho trước từ một chỉ số đủ lớn; định nghĩa −∞ tương tự. Dãy dao động như (−1)^n không có giới hạn, KHÔNG coi là ±∞.
+### 1. Vì sao cần khái niệm "giới hạn"?
 
-**Giới hạn cơ bản và các phép toán.** lim 1/n^p=0 cho p>0 trong phạm vi đã học; lim q^n=0 nếu |q|<1. Nếu lim u_n=a và lim v_n=b hữu hạn, tổng/hiệu/tích lần lượt có giới hạn a±b, ab; thương có giới hạn a/b **chỉ khi b≠0**, đồng thời v_n≠0 khi n đủ lớn. Không được chia riêng cho hai giới hạn bằng 0; phải biến đổi hoặc dùng lập luận khác. Khi có vô cực, xét dấu và dạng vô định thay vì thao tác đại số máy móc.
+Em hãy nhìn dãy số: **1; 1/2; 1/3; 1/4; 1/5; ...**. Mỗi số hạng đều lớn hơn 0, nhưng càng về sau giá trị càng nhỏ. Nếu tiếp tục mãi, các số hạng **tiến gần đến 0**, dù không bắt buộc có số hạng nào bằng 0. Ta muốn mô tả chính xác chuyện "ngày càng gần" này, vì nó giúp hiểu những quá trình có thể tiếp tục vô hạn (ví dụ các phần tiết kiệm ngày càng nhỏ).
 
-**Cấp số nhân lùi vô hạn.** Với số hạng đầu a và công bội q, |q|<1, tổng n số hạng đầu S_n=a(1−q^n)/(1−q), nên tổng vô hạn S=a/(1−q). Việc thay số lớn vào không phải chứng minh sự hội tụ. Điều kiện |q|<1 là thiết yếu cho công thức tổng vô hạn dạng này.
+**Cầu nối kiến thức:** dãy số là các số xếp theo thứ tự u₁,u₂,u₃,...; chỉ số n là số thứ tự. Không phải giới hạn là một "số hạng cuối": dãy có thể không có số hạng cuối.
+
+### 2. Quan sát trước khi định nghĩa
+
+Với u_n=1/n: u₁=1, u₂=0,5, u₁₀=0,1, u₁₀₀=0,01. Nếu chọn một vùng rất gần 0, chẳng hạn khoảng cách nhỏ hơn 0,01, từ khi n>100 trở đi **mọi** u_n đều nằm trong vùng ấy. Nếu em muốn gần hơn nữa, vẫn có thể chọn n đủ lớn. Đó là ý cốt lõi của "giới hạn bằng 0".
+
+Không phải dãy nào cũng tiến gần một số. Với v_n=(−1)^n, các số hạng thay đổi liên tục −1,1,−1,1,..., không thể ngày càng ở sát một số cố định. Dãy này **không có giới hạn**, không phải "có giới hạn vô cực".
+
+### 3. Phát biểu toán học và giải thích ký hiệu
+
+Ta viết **lim_{n→∞}u_n=a** khi các số hạng từ một lúc đủ muộn trở đi có thể gần a tùy ý. Nói chặt chẽ: với mọi sai số ε>0 mà ta chọn, tồn tại một chỉ số N sao cho **mọi n≥N** đều thỏa **|u_n−a|<ε**.
+
+- ε (đọc là *ép-si-lon*) chỉ một mức sai số dương tùy nhỏ, **không** phải số cố định do giáo viên chọn sẵn.
+- N là mốc có thể phụ thuộc mức sai số ε; sau mốc đó **tất cả** số hạng đều gần a, không chỉ một vài số hạng.
+- |u_n−a| là khoảng cách trên trục số từ số hạng u_n đến a.
+- n→∞ nghĩa là xét các chỉ số n tăng mãi, **không** thay n bằng một số gọi là "vô cực".
+- Khi a=0, điều kiện trở thành |u_n|<ε từ một lúc đủ muộn; muốn chứng minh lim u_n=a thường đưa về lim(u_n−a)=0.
+
+**Ví dụ áp dụng định nghĩa:** Cho u_n=1/n và sai số ε>0. Chọn một số tự nhiên N lớn hơn 1/ε. Khi n≥N, 1/n≤1/N<ε, nên lim_{n→∞}1/n=0.
+
+### 4. Giới hạn vô cực khác giới hạn hữu hạn thế nào?
+
+Nếu u_n cuối cùng vượt **mọi mốc lớn** M>0, ta viết lim u_n=+∞; nếu u_n cuối cùng nhỏ hơn −M với mọi M>0, viết lim u_n=−∞. Đây là mô tả cách dãy lớn/nhỏ không bị chặn về một phía, **không phải cộng/trừ một số thực có tên "∞"**. Ví dụ u_n=n→+∞; còn (−1)^n n đổi dấu và có độ lớn tăng nên không có giới hạn theo hai nghĩa ±∞ vừa nêu.
+
+### 5. Quy tắc tính được dùng khi nào?
+
+Những giới hạn cơ bản: lim 1/n^p=0 với p>0; lim q^n=0 khi **|q|<1**. Nếu u_n→a, v_n→b **đều hữu hạn**, tổng/hiệu/tích có giới hạn lần lượt a±b, ab. Thương có giới hạn a/b **chỉ khi b≠0**, và mẫu v_n phải khác 0 từ một chỉ số đủ lớn. Nếu cả tử và mẫu tiến đến 0, không được lấy 0/0; hãy biến đổi biểu thức hoặc chọn phương pháp khác.
+
+### 6. Vì sao có tổng của vô hạn số hạng?
+
+Xét 5+5/4+5/16+... . Mỗi số hạng sau bằng **1/4** số hạng trước. Cộng lần lượt các số hạng đầu ta được những tổng riêng tăng dần, nhưng các phần tăng thêm nhỏ dần. Với cấp số nhân có số hạng đầu a và công bội q, khi **|q|<1** thì q^n→0; từ S_n=a(1−q^n)/(1−q) suy ra tổng vô hạn S=a/(1−q). Điều kiện |q|<1 không chỉ là chú thích: nó giải thích vì sao phần còn lại nhỏ dần.
+
+**Tự thử trước bài tập:** Dãy 2+1/n tiến gần số nào? Tại sao không cần có số hạng nào đúng bằng số đó? Sau khi tự nghĩ, kiểm tra: tiến gần 2 vì 1/n→0. Đây là formative tự học, không ghi Skill Mastery.
 
 ### B15 — D2. Bốn ví dụ độc lập
 
@@ -62,13 +96,42 @@ Public cross-check: SGK Toán 11 T1 online TOC at https://media.metaisach.com/20
 
 **EX-G11-B15-04 — Tình huống vận dụng.** Một thiết bị lần đầu tiết kiệm 120 đơn vị năng lượng, mỗi đợt sau chỉ tiết kiệm bằng 2/5 đợt liền trước. Tổng tiết kiệm lý thuyết sau vô hạn đợt: 120/(1−2/5)=200 đơn vị. Mô hình giả định công bội không đổi; số đợt thực tế hữu hạn thì tổng nhỏ hơn 200. **Bẫy:** phân biệt giới hạn mô hình và quá trình hữu hạn.
 
-## B16 — D1. Giới hạn của hàm số
+## B16 — D1. Giới hạn của hàm số (nhìn hành vi gần điểm trước khi tính)
 
-**Tại một điểm.** lim_{x→a} f(x)=L nếu f(x) tiến gần L khi x tiến đến a qua các điểm trong tập xác định, x≠a. Không bắt buộc f(a) có nghĩa; khi so sánh với f(a) mới xét tính liên tục. Giới hạn hai phía tồn tại và bằng L khi giới hạn bên trái và bên phải đều bằng L, với miền xác định có điểm tiếp cận ở hai phía.
+### 1. Câu hỏi mở đầu: tại một điểm chưa tính được thì sao?
 
-**Giới hạn một phía, tại vô cực và giới hạn vô cực.** lim_{x→a^+} và lim_{x→a^-} dùng x lớn/nhỏ hơn a. lim_{x→+∞} là hành vi khi x tăng không bị chặn; x→−∞ cần xử lý riêng. Nếu mẫu→0 mà tử→c≠0, kết luận có dấu vô cực phải xét **dấu mẫu** ở phía tiếp cận. Dạng 0/0 và ∞/∞ chưa đủ kết luận nếu chưa biến đổi.
+Xét f(x)=(x²−4)/(x−2). Em thử thế x=2: mẫu bằng 0, phép chia không xác định. Nhưng nếu xét **gần 2**, ta có bảng:
 
-**Kỹ thuật cơ bản.** Rút nhân tử chung, phân tích thành nhân tử, nhân liên hợp, chia lũy thừa trội; khi căn thức và x→−∞, nhớ √(x²)=|x|=−x. Kiểm tra tập xác định và mẫu khác 0 trước và sau biến đổi tương đương trên vùng tiếp cận.
+| x | 1,9 | 1,99 | 2,01 | 2,1 |
+|---|---:|---:|---:|---:|
+| f(x) | 3,9 | 3,99 | 4,01 | 4,1 |
+
+Vì x≠2, ta có thể rút gọn f(x)=x+2. Khi x tiến về 2, các giá trị f(x) tiến về **4**, mặc dù chính f(2) **không tồn tại**. Khái niệm **giới hạn của hàm số** giúp mô tả xu hướng ở gần một điểm, không đòi biết giá trị ngay tại điểm ấy.
+
+**Cầu nối:** Em đã biết đọc đồ thị và tính giá trị f(x) tại x có nghĩa. Bài này khác ở chỗ quan sát x **tiến gần** a, không chỉ thay đúng x=a vào công thức.
+
+### 2. Định nghĩa và kí hiệu
+
+Viết **lim_{x→a}f(x)=L** nghĩa là: khi x thuộc miền xác định, khác a và tiến gần a, giá trị f(x) tiến gần L. **Giới hạn không nhất thiết bằng f(a)**, và f(a) có thể chưa được định nghĩa. Một hàm có giới hạn khi x tiến về a qua các giá trị thuộc miền xác định đủ gần a, dù nó có thể bị "thủng" ngay tại a.
+
+- "Giới hạn trái" **x→a⁻** là xét các x<a tiến gần a; "giới hạn phải" **x→a⁺** là xét x>a.
+- Nếu miền xác định cho phép tiến gần từ hai phía, một giới hạn hữu hạn hai phía bằng L **chỉ khi cả hai giới hạn một phía đều tồn tại và bằng L**.
+- Không được suy giới hạn hai phía từ một phía duy nhất.
+
+### 3. Nhìn đường đi của giá trị
+
+Với g(x)=1/(x−1), khi x→1⁺ thì mẫu là số dương rất nhỏ, g(x)→+∞; khi x→1⁻ thì mẫu âm rất nhỏ, g(x)→−∞. Hai phía **không cùng tiến đến một giá trị hữu hạn**, nên không có giới hạn hữu hạn hai phía tại 1. Dấu của mẫu là thông tin thiết yếu, không phải chi tiết phụ.
+
+Khi nói x→+∞, ta cho x tăng mãi; x→−∞ là cho x giảm mãi về phía âm. **Phải kiểm tra dấu trước khi đưa x ra ngoài căn:** √(x²)=|x|, bằng −x nếu x<0.
+
+### 4. Cách lựa chọn phương pháp
+
+- Thay trực tiếp cho kết quả hữu hạn hợp lệ → có thể dùng tính liên tục/phép toán giới hạn thích hợp.
+- Nếu thay trực tiếp ra **0/0** → đây chưa phải đáp số; tìm nhân tử chung, phân tích hoặc nhân liên hợp.
+- Nếu tử tiến đến giá trị khác 0, mẫu tiến đến 0 → xét dấu ở từng phía trước khi kết luận ±∞.
+- Khi x→±∞ → chia lũy thừa trội hoặc nhân liên hợp; với căn phải nhớ dấu của |x|.
+
+**Tự thử:** Nếu k(x)=(x²−9)/(x−3) với x≠3, em đoán lim_{x→3}k(x) bằng bao nhiêu? Hãy giải thích tại sao phép "rút gọn" chỉ dùng cho x≠3, không phải xác định k(3). (Đối chiếu sau khi nghĩ: 6.)
 
 ### B16 — D2. Bốn ví dụ độc lập
 
@@ -80,13 +143,39 @@ Public cross-check: SGK Toán 11 T1 online TOC at https://media.metaisach.com/20
 
 **EX-G11-B16-04 — Dấu của căn khi x âm lớn.** lim_{x→−∞}√(x²+1)/x=lim_{x→−∞}(|x|√(1+1/x²))/x=−1. **Bẫy:** viết √(x²)=x cho x<0 là sai.
 
-## B17 — D1. Hàm số liên tục
+## B17 — D1. Hàm số liên tục (vì sao cần giá trị khớp với xu hướng?)
 
-**Tại một điểm.** f liên tục tại a khi a thuộc tập xác định, tồn tại giới hạn hữu hạn lim_{x→a} f(x) và giới hạn đó bằng f(a). Với hàm từng đoạn, kiểm tra cả hai giới hạn một phía và giá trị f(a); không được chỉ nhìn hai nhánh có cùng biểu thức ở một phía.
+### 1. Từ giới hạn sang liên tục
 
-**Trên khoảng và đoạn.** Liên tục trên (a,b) nghĩa là liên tục tại mọi điểm trong khoảng; trên [a,b] còn cần lim_{x→a^+}f(x)=f(a), lim_{x→b^-}f(x)=f(b). Đa thức liên tục trên R; phân thức liên tục nơi mẫu≠0, căn bậc hai trên miền xác định với điều kiện biên một phía. Tổng/hiệu/tích các hàm liên tục cũng liên tục; thương cần mẫu không bằng 0 tại điểm đang xét.
+Ở Bài 16, em thấy một hàm vẫn có thể tiến tới 4 khi x→2 nhưng không được định nghĩa tại x=2. Điều gì xảy ra nếu ta **bổ sung giá trị tại điểm ấy**?
 
-**Nghiệm do đổi dấu.** Nếu f liên tục trên [a,b] và f(a)f(b)<0, tồn tại ít nhất một c∈(a,b) sao cho f(c)=0. Không tự kết luận nghiệm duy nhất; muốn chứng minh duy nhất cần lập luận khác. Nếu chưa biết liên tục trên cả đoạn thì kiểm tra điều kiện trước.
+Xét h(x)=x+2 khi x≠2. Nếu đặt h(2)=4, đồ thị không bị "lỗ" ở điểm tương ứng và giá trị tại 2 khớp với những giá trị xung quanh. Nếu cố tình đặt h(2)=0, x ở gần 2 vẫn làm h(x) gần 4, **nhưng h(2) lại bằng 0**: điểm riêng lẻ bị lệch khỏi xu hướng. Ta gọi hiện tượng "khớp" đó là **liên tục tại một điểm**.
+
+**Cầu nối:** Cần biết ở Bài 16 rằng **lim_{x→a}f(x)** mô tả xu hướng ở gần a, còn **f(a)** là giá trị đúng tại a; hai thứ không tự động giống nhau.
+
+### 2. Định nghĩa và điều kiện
+
+Hàm f **liên tục tại a** khi (1) a thuộc tập xác định để f(a) có nghĩa; (2) giới hạn hữu hạn lim_{x→a}f(x) tồn tại; (3) **lim_{x→a}f(x)=f(a)**. Cả ba ý đều phải kiểm tra. "Đồ thị vẽ một nét không nhấc bút" là trực giác giúp hình dung, **không thay thế** điều kiện toán học.
+
+Với hàm cho bởi các công thức khác nhau ở các khoảng, hãy so sánh giới hạn trái, giới hạn phải và **giá trị thật tại điểm nối**. Ví dụ f(x)=x+1 khi x<1 và f(x)=m khi x≥1: phía trái tiến đến 2, phía phải tiến đến m, đồng thời f(1)=m. Liên tục tại 1 khi và chỉ khi m=2.
+
+### 3. Từ điểm sang khoảng, đoạn
+
+Liên tục trên khoảng (a,b) nghĩa là liên tục tại mọi điểm bên trong. Liên tục trên đoạn [a,b] còn cần:
+- ở a: **lim_{x→a⁺}f(x)=f(a)**;
+- ở b: **lim_{x→b⁻}f(x)=f(b)**.
+
+Tại đầu mút không đòi hỏi phía nằm **ngoài** đoạn xác định. Ví dụ √x liên tục trên [0,9], kiểm tra tại 0 từ bên phải và tại 9 từ bên trái.
+
+Các hàm đa thức liên tục trên R; hàm phân thức liên tục ở nơi mẫu khác 0. Tổng/hiệu/tích của các hàm liên tục là liên tục; thương chỉ khi **mẫu tại điểm xét khác 0**. Không được nói phân thức liên tục trên toàn R nếu mẫu có nghiệm thực.
+
+### 4. Ứng dụng: biết có nghiệm dù chưa giải ra
+
+Nếu f **liên tục trên cả đoạn [a,b]** và f(a), f(b) trái dấu, đồ thị phải đi qua trục hoành ở **ít nhất một điểm** nằm giữa a và b. Ta viết điều kiện f(a)f(b)<0 và kết luận tồn tại c∈(a,b) sao cho f(c)=0. Không thể kết luận chỉ có đúng một nghiệm; muốn chứng minh duy nhất phải có lập luận bổ sung.
+
+Ví dụ f(x)=x³+x−1: f(0)=−1, f(1)=1, và f là đa thức liên tục trên [0,1]. Vậy tồn tại một nghiệm trong (0,1).
+
+**Tự thử:** Giả sử f có giới hạn tại a bằng 3 nhưng f(a)=5. Hàm có liên tục tại a không? Vì sao? (Đối chiếu: không, vì giá trị tại a khác giới hạn.) Sau đó chuyển sang Core/Practice để luyện độc lập, không tính điểm mastery từ câu tự thử.
 
 ### B17 — D2. Bốn ví dụ độc lập
 
