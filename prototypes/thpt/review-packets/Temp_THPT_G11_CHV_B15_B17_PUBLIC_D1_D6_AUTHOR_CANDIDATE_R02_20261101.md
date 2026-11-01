@@ -9,7 +9,7 @@
 
 ## Exact public source ledger (Git blobs của các phần)
 
-- `prototypes/thpt/content-drafts/G11_CHV_B15_B17_S1_RD0_D1_D2_AUTHORING_R00_20261101.md` · blob `9a17c1e90acc3329a8ad13a9003631896e3386ed`.
+- `prototypes/thpt/content-drafts/G11_CHV_B15_B17_S1_RD0_D1_D2_AUTHORING_R00_20261101.md` · blob `3fe076ce91c063f3d31ad06cf3abaebceabc42de`.
 - `prototypes/thpt/content-drafts/G11_CHV_B15_B17_D3_PUBLIC_CANONICAL_CANDIDATES_R01_20261101.md` · blob `aae88016555eff2553bfb1016692e310d25a84dc`.
 - `prototypes/thpt/content-drafts/G11_CHV_B15_B17_D4_WRITTEN_D6_HELP_R01_20261101.md` · blob `6b370781e3bab2951d8a11fd8d97030ffbb528d5`.
 - `prototypes/thpt/content-drafts/svg/FIG-G11-B15-01_R01.svg` · blob `632bef51196757f9c71f54c53bb3c7639ce158e0`.
@@ -54,7 +54,7 @@ Public cross-check: SGK Toán 11 T1 online TOC at https://media.metaisach.com/20
 | G11-B16-ALGEBRAIC_TECHNIQUES | Factorization, rationalization, denominator control | D1 + D2 + future Practice |
 | G11-B16-LIMIT_AT_INFINITY | Limits x→±∞, leading terms and sign of radicals | D1 + D2 + future Practice |
 | G11-B16-INFINITE_LIMIT | Signed infinite limits and conditions for quotients | D1 + D2 + future Core/Practice |
-| G11-B16_REAL_CONTEXT | Interpret domain and limit of a modeled quantity | D2 + future Application |
+| G11-B16-REAL_CONTEXT | Interpret domain and limit of a modeled quantity | D2 + future Application |
 | G11-B17-CONTINUITY_POINT | f(a) exists, finite limit equals f(a); classify removable/jump cases without overloading Core terms | D1 + D2 + future Core |
 | G11-B17-CONTINUITY_INTERVAL | Continuity on open interval and endpoints of closed interval | D1 + D2 + future Practice |
 | G11-B17-ELEMENTARY_CONTINUITY | Domain-sensitive continuity of elementary functions | D1 + D2 + future Core |
