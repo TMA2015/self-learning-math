@@ -1,5 +1,7 @@
 # Toán 10 · KNTT SGK Tự kiểm tra cuối chương — 9-chapter coverage index R00
 
+> **Post-merge status correction (2026-11-01):** This document is a **historical private/independent Readiness blueprint** and its `NOT_ACTIVE` labels refer to that independent assessment architecture, **not** to the newer browser self-check. [Merged A6 #680](https://github.com/TMA2015/self-learning-math/pull/680) now publishes 141 voluntary self-check items with client-visible answer data, including the original 18 ChVI IDs; `mastery_credit:false` and `persist_results:false`. Read [post-merge source/policy audit](G10_A6_POST_MERGE_PUBLIC_SELFCHECK_VS_HELDOUT_POLICY_RECONCILIATION_20261101.md). Never count those public items as still held-out or as authenticated Mastery evidence. The 15-item ChVIII author-only candidate remains separate and not academically reviewed.
+
 **DATE:** 2026-10-30 · **SCOPE:** `SGK_CHAPTER_READINESS` **blueprint metadata only**; no held-out stems, keys, solutions or rubrics.
 **RELEASE:** `NOT_ACTIVE`, `ACADEMIC_READINESS_PASS=NO`, `NO_SCORE/NO_MASTERY`. Do not infer source-item Academic PASS means independent Readiness has been reviewed.
 **DECISION:** Owner SGK-first (G10 → G11 → G12 → Topic reuse later). A chapter is not COMPLETE without safe assessment and technical QA.
