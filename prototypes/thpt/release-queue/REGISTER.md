@@ -4,6 +4,7 @@
 
 | Gói | Hành trình | Trạng thái | Phạm vi | PR / nguồn |
 |---|---|---|---|---|
+| [G11-SGK-CHVI-B18-B21-R01](inventory/G11-SGK-CHVI-B18-B21-R01.md) | SGK_CHAPTER | HOLD | FULL_LEARNING_PATH | Draft authoring PR #692; Academic PASS/PED PASS owner NotebookLM reported; A3 exact PUBLIC/PRIVATE source & six PED citation corrections pending, no release |
 | [G11-SGK-CHI-B01-B02](ready/G11-SGK-CHI-B01-B02.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | source #627 merged; release #650 R1–R5 evidence, exact-final-head CI before merge/deploy; B01–B02 only |
 | [G10-SGK-CHIV-B09-B11](ready/G10-SGK-CHIV-B09-B11.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY B09–B11 | source #637 merged; release #648 R1–R5 candidate QA PASS, final metadata-head dual CI required |
 | [G10-SGK-CHIV](ready/G10-SGK-CHIV.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | source #634 merged; release #645 R1–R5 evidence completed, exact-final-head CI recheck before merge/deploy |
@@ -38,3 +39,5 @@
 **30/10/2026 ChIII R1–R5:** Source #633 merged main `1643c60e3638cbc180c6580b54111a64e07cf663`; exact source blob `6320aeaa89bd51c514b07461e01fad5e3aca833f`. Release #644 integrates 16 canonical formative (7 A–D MCQ, 9 short-response), 2 Written incl Anchor, 2 original SVG, 4 D6 HELP_ID. Owner permission covers PUBLIC_FORMATIVE_ONLY **after** both exact final-head CI PASS; P1/P2 postdeploy separate, no Readiness/Mastery.
 
 **30/10/2026 — ChIV B07/B08 academic handoff:** 18/18 NotebookLM R01 PASS, D1–D6 10/10 outcomes, snapshot Git blob `42b206e31421b33860a1bf697d2d04b7aba992cf`. Authoring #634 source-only, no website/Readiness/Mastery. R1–R5 requires separate release PR and exact-head CI.
+
+**01/11/2026 — G11 ChVI B18–B21 reviewer intake:** Owner provided NotebookLM Studio report `Bao_Cao_Kiem_Toan_Toan_11_Chuong_VI_Batch_R01.md`, 22 outcomes/19 worked/49 public/22 RD1/4 SVG/8 HELP, `ACADEMIC_CHAPTER_VI=PASS`, `PEDAGOGICAL_SELF_LEARNING_READY=PASS`, P0/P1/P2=0. Six narrative PED references mix protected RD1 with public self-study or cite absent examples; source titles truncated. Author corrected two malformed public scientific-notation decimal separators *only* (`DELTA_B_SOURCE_EQUIVALENT`), preserved immutable reviewed R01 and added separate postpass artifact. **A3 source-fidelity HOLD; manifest remains inventory, NOT CONTENT_READY.** No runtime/Mastery/merge/deploy.
