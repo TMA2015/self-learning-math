@@ -32,7 +32,7 @@ Public cross-check: SGK Toán 11 T1 online TOC at https://media.metaisach.com/20
 | G11-B16-ALGEBRAIC_TECHNIQUES | Factorization, rationalization, denominator control | D1 + D2 + future Practice |
 | G11-B16-LIMIT_AT_INFINITY | Limits x→±∞, leading terms and sign of radicals | D1 + D2 + future Practice |
 | G11-B16-INFINITE_LIMIT | Signed infinite limits and conditions for quotients | D1 + D2 + future Core/Practice |
-| G11-B16_REAL_CONTEXT | Interpret domain and limit of a modeled quantity | D2 + future Application |
+| G11-B16-REAL_CONTEXT | Interpret domain and limit of a modeled quantity | D2 + future Application |
 | G11-B17-CONTINUITY_POINT | f(a) exists, finite limit equals f(a); classify removable/jump cases without overloading Core terms | D1 + D2 + future Core |
 | G11-B17-CONTINUITY_INTERVAL | Continuity on open interval and endpoints of closed interval | D1 + D2 + future Practice |
 | G11-B17-ELEMENTARY_CONTINUITY | Domain-sensitive continuity of elementary functions | D1 + D2 + future Core |
