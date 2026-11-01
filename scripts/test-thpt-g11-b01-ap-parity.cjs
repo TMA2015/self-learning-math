@@ -11,7 +11,13 @@ const math=s=>[...s.matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]/g)].map(x=>(
 const knowledge=page.slice(start,end),formulas=math(knowledge);
 assert.equal(formulas.length,27,"G11 B01 knowledge expression count");
 assert.equal(fnv(JSON.stringify(formulas)),"2682a78b","Source-order math changed: classify academic delta");
-assert.equal(fnv(page.slice(0,start)),"2e140b61","Lesson header changed");
+// The only allowed header delta is the approved B01 learner-facing scope correction.
+const newLead="Chương I gồm Bài 1–4; Tự kiểm tra cuối chương chưa kích hoạt.";
+const frozenLead="Phạm vi đang công bố chỉ gồm Bài 1–2.";
+const prefix=page.slice(0,start);
+assert(prefix.includes(newLead),"G11 B01 must identify all four lessons and inactive chapter self-check");
+assert.equal(fnv(prefix.replace(newLead,frozenLead)),"2e140b61",
+ "Lesson header changed beyond approved UI-only scope");
 assert.equal(fnv(page.slice(end)),"987319a3","Examples, SVG, HELP, links, Written or other content changed");
 for(const name of [
 "### 1. Góc lượng giác và số đo",
