@@ -1,3 +1,5 @@
+> **SUPERSEDED AUTHOR CHECKPOINT:** This 01/11/2026 R00 mid-authoring report (17 D2 / 39 D3 / pending rendered SVG) is **not the final NotebookLM handoff**. Final complete R01 author-locked snapshot is documented in `G11_CHVI_B18_B21_R01_AUTHOR_QA_SOURCE_LOCK_AND_NOTEBOOKLM_HANDOFF_20261101.md`: 22 RD0, 19 D2, 41 D3, 8 D4, 4 D5, 8 D6, 22 PRIVATE RD1, math 44/44 assertions, 4 SVG rendered. Two actual delivery Temp Markdown files retained separately; do not use the old R00 public compiled source. No NotebookLM academic or pedagogy verdict yet.
+
 # G11 KNTT Chương VI B18–B21 — Author checkpoint, QA/PED gates and NotebookLM review preparation R00
 
 **PACKET_ID:** `THPT-G11-CHVI-B18-B21-WHOLE-CHAPTER-AUTHORING-R00-20261101`  
