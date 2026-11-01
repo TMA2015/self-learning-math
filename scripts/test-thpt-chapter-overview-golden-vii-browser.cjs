@@ -9,7 +9,7 @@ const {chromium}=require("playwright");
    try{
     for(const [route,qty] of [
      ["chuong-i/",2],["chuong-ii/",2],["chuong-vi/",4],["chuong-vii/",4],
-     ["lop-11/chuong-i/",2]
+     ["lop-11/chuong-i/",4]
     ]){
      const res=await page.goto("http://127.0.0.1:8765/thpt-preview/sgk/"+route,{waitUntil:"domcontentloaded"});
      assert(res?.ok(),route+" returns 200");
