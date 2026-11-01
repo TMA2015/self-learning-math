@@ -78,7 +78,7 @@ Em hãy nhìn dãy số: **1; 1/2; 1/3; 1/4; 1/5; ...**. Mỗi số hạng đề
 
 ### 2. Quan sát trước khi định nghĩa
 
-**Hình trực quan D5:** ![Dãy 1/n giảm dần, tiến về trục 0, không có số hạng cuối](svg/FIG-G11-B15-01_R01.svg)
+**Hình trực quan D5:** ![Dãy 1/n giảm dần, tiến về trục 0, không có số hạng cuối](../content-drafts/svg/FIG-G11-B15-01_R01.svg)
 
 **Cách đọc hình:** Mỗi chấm ứng với một chỉ số n và giá trị uₙ=1/n. Các chấm càng về bên phải càng sát trục ngang uₙ=0 nhưng luôn ở phía trên. Vì vậy “tiến đến 0” KHÔNG có nghĩa “đến một số hạng cuối bằng 0”. Hãy quan sát điều này trước khi đọc ε và N trong định nghĩa.
 
@@ -136,7 +136,7 @@ Vì x≠2, ta có thể rút gọn f(x)=x+2. Khi x tiến về 2, các giá tr�
 
 **Cầu nối:** Em đã biết đọc đồ thị và tính giá trị f(x) tại x có nghĩa. Bài này khác ở chỗ quan sát x **tiến gần** a, không chỉ thay đúng x=a vào công thức.
 
-**Hình trực quan D5:** ![Đồ thị y=x+2 có lỗ rỗng tại (2,4)](svg/FIG-G11-B16-01_R01.svg)
+**Hình trực quan D5:** ![Đồ thị y=x+2 có lỗ rỗng tại (2,4)](../content-drafts/svg/FIG-G11-B16-01_R01.svg)
 
 **Cách đọc hình:** Đường màu xanh đi tới độ cao 4 khi x tiến từ trái hoặc phải về 2; vòng tròn rỗng tại (2,4) cho biết hàm gốc **không có giá trị ở x=2**. Đừng nhầm lỗ trống với việc giới hạn không tồn tại.
 
@@ -183,7 +183,7 @@ Xét h(x)=x+2 khi x≠2. Nếu đặt h(2)=4, đồ thị không bị "lỗ" ở
 
 **Cầu nối:** Cần biết ở Bài 16 rằng **lim_{x→a}f(x)** mô tả xu hướng ở gần a, còn **f(a)** là giá trị đúng tại a; hai thứ không tự động giống nhau.
 
-**Hình trực quan D5:** ![Đồ thị có lỗ tại (1,2) và chấm đặc tại (1,0)](svg/FIG-G11-B17-01_R01.svg)
+**Hình trực quan D5:** ![Đồ thị có lỗ tại (1,2) và chấm đặc tại (1,0)](../content-drafts/svg/FIG-G11-B17-01_R01.svg)
 
 **Cách đọc hình:** Vòng tròn rỗng ở (1,2) thể hiện xu hướng giá trị hàm khi x gần 1; chấm đỏ đặc ở (1,0) là giá trị f(1) thực sự. Hai độ cao không khớp nên hàm gián đoạn tại 1. Hình cho trực giác; định nghĩa dưới đây mới là tiêu chuẩn kiểm tra chính thức.
 
