@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" role="img" aria-labelledby="title desc" width="900" height="500">
+<title id="title">FIG-G11-CHVII-B22-01: Góc hai đường chéo nhau: dời song song</title><desc id="desc">Hai đường a và b không cắt nhau được biểu diễn cùng phương trên các cặp song song; tại O hai phương vuông góc, dù đường thật chéo nhau.</desc>
+<rect width="900" height="500" fill="#f8fafc" rx="18"/>
+<text x="450" y="42" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#0f172a">Góc hai đường chéo nhau: dời song song</text>
+<path d="M155 325 L465 325" stroke="#1d4ed8" stroke-width="7" stroke-linecap="round"/><text x="170" y="305" font-size="22" fill="#1d4ed8">a</text><path d="M590 145 L590 390" stroke="#ea580c" stroke-width="7" stroke-linecap="round"/><text x="612" y="181" font-size="22" fill="#9a3412">b</text><path d="M375 150 L375 335 L705 335" stroke="#059669" stroke-width="4" fill="none" stroke-dasharray="10 6"/><text x="338" y="139" font-size="19">b′</text><text x="703" y="356" font-size="19">a′</text><rect x="375" y="312" width="22" height="23" fill="none" stroke="#059669" stroke-width="3"/><circle cx="375" cy="335" r="5" fill="#059669"/><text x="330" y="352" font-size="19">O</text><text x="450" y="414" font-size="19">a′ // a; b′ // b; góc(a,b) = 90°</text>
+<text x="450" y="476" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#475569">Sơ đồ phương và quan hệ; không suy độ dài/góc từ phối cảnh.</text>
+</svg>
