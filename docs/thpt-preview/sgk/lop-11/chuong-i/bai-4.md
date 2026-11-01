@@ -32,21 +32,9 @@ Kết hợp đường tròn lượng giác và đồ thị sin/cos/tan/cot tại
 
 ## 4. Tự khắc phục lỗi thường gặp
 
-### HELP-G11-B04-01 · G11-B04-SIN_EQ · trở về B04-C01/P01
-1. Nhận diện lỗi: bỏ họ nghiệm thứ hai của sin hoặc bỏ k.
-2. Kiểm tra |m|≤1 và lấy α=arcsin m.
-3. Viết đủ hai họ x=α+2kπ và x=π-α+2kπ.
-4. Với sin(2x)=1/2, chia đúng cả hai họ cho 2.
-5. Trở về B04-C01 và P01; đối chiếu một vòng trên đường tròn.
+<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-B04-01"><summary>G11-B04-SIN_EQ</summary><ol><li>Nhận diện lỗi: bỏ họ nghiệm thứ hai của sin hoặc bỏ k.</li><li>Kiểm tra |m|≤1 và lấy α=arcsin m.</li><li>Viết đủ hai họ x=α+2kπ và x=π-α+2kπ.</li><li>Với sin(2x)=1/2, chia đúng cả hai họ cho 2.</li><li>Trở về B04-C01 và P01; đối chiếu một vòng trên đường tròn.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-B04-C01">Quay lại câu luyện tập phù hợp</a></p></details>
 
-
-
-### HELP-G11-B04-02 · G11-B04-INTERVAL · trở về B04-C02/W04
-1. Nhận diện lỗi: đếm hai lần điểm biên hoặc quên loại nghiệm ngoài miền.
-2. Viết họ nghiệm tổng quát, ghi k∈ℤ.
-3. Giải bất đẳng thức trên k theo cận [a,b] hoặc [a,b).
-4. Với cosx=-1/2 trên [0,2π), chỉ có 2π/3 và 4π/3.
-5. Trở về bài tự luận kiểm tra nghiệm bằng thế vào phương trình ban đầu.
+<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-B04-02"><summary>G11-B04-INTERVAL</summary><ol><li>Nhận diện lỗi: đếm hai lần điểm biên hoặc quên loại nghiệm ngoài miền.</li><li>Viết họ nghiệm tổng quát, ghi k∈ℤ.</li><li>Giải bất đẳng thức trên k theo cận [a,b] hoặc [a,b).</li><li>Với cosx=-1/2 trên [0,2π), chỉ có 2π/3 và 4π/3.</li><li>Trở về bài tự luận kiểm tra nghiệm bằng thế vào phương trình ban đầu.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-B04-P01">Quay lại câu luyện tập phù hợp</a></p></details>
 
 ## 5. Tiếp tục
 
