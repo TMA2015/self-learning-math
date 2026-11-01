@@ -98,7 +98,7 @@
 
 #### THPT-G11-CHVI-B18-P07 · placement=SGK_PRACTICE · skill_id=G11-B18-POWER_INTEGER
 
-**Đề:** Viết `0,000,0075` dưới dạng kí hiệu khoa học, rồi giải thích dấu của số mũ và vì sao không được viết `75×10^{-7}` làm **dạng chuẩn** dù giá trị bằng nhau.
+**Đề:** Viết `0,0000075` dưới dạng kí hiệu khoa học, rồi giải thích dấu của số mũ và vì sao không được viết `75×10^{-7}` làm **dạng chuẩn** dù giá trị bằng nhau.
 
 **Đáp án:** `7,5×10^{-6}`. Biểu thức `75×10^{-7}` cũng bằng cùng giá trị nhưng hệ số 75 không thuộc đoạn `[1,10)` nên không phải dạng chuẩn.
 
