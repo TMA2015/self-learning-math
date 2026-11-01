@@ -4,6 +4,7 @@
 
 | Gói | Hành trình | Trạng thái | Phạm vi | PR / nguồn |
 |---|---|---|---|---|
+| [G11-SGK-CHI-B01-B04-R01](inventory/G11-SGK-CHI-B01-B04-R01.md) | SGK_CHAPTER | HOLD | FULL_LEARNING_PATH | Academic PASS #682, integration Draft #697; PED1–6/AP1–5 and Final Submit pending; no merge/deploy |
 | [G11-SGK-CHI-B01-B02](ready/G11-SGK-CHI-B01-B02.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | source #627 merged; release #650 R1–R5 evidence, exact-final-head CI before merge/deploy; B01–B02 only |
 | [G10-SGK-CHIV-B09-B11](ready/G10-SGK-CHIV-B09-B11.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY B09–B11 | source #637 merged; release #648 R1–R5 candidate QA PASS, final metadata-head dual CI required |
 | [G10-SGK-CHIV](ready/G10-SGK-CHIV.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | source #634 merged; release #645 R1–R5 evidence completed, exact-final-head CI recheck before merge/deploy |
