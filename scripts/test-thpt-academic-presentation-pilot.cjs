@@ -57,8 +57,8 @@ for(const check of checks){
     assert(originalSuffix.includes("## Hướng suy luận trong các ví dụ"),"Reviewed B02 PED5 note absent");
     assert(originalSuffix.includes("### Hướng dẫn đọc hình, đồ thị"),"Reviewed B02 PED4 note absent");
     // Strip ONLY the added reviewed PED notes to prove original examples/SVG/D6/link bytes remain unchanged.
-    originalSuffix=originalSuffix.replace(/^## Hướng suy luận trong các ví dụ\\n\\n[\\s\\S]*?(?=^## 3\\. )/m,"")
-      .replace(/^### Hướng dẫn đọc hình, đồ thị\\n\\n[\\s\\S]*?(?=^## 4\\. )/m,"");
+    originalSuffix=originalSuffix.replace(/^## Hướng suy luận trong các ví dụ\n\n[\s\S]*?(?=^## 3\. )/m,"")
+      .replace(/^### Hướng dẫn đọc hình, đồ thị\n\n[\s\S]*?(?=^## 4\. )/m,"");
   }
   assert.equal(fnv(originalSuffix),check.suffixHash,
     check.file+": original examples, SVG, HELP, links or solutions changed");
