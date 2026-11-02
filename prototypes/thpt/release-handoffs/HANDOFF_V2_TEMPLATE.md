@@ -35,7 +35,7 @@ Actual source locations per lesson/outcome for concepts, distinct worked example
 Exact evidence for motivation, prerequisite terms, mathematical meaning before formula/algorithm, informative SVG/table, why-based solution, independent first attempt and remediation. Provide separate independent pedagogical verdict on this snapshot.
 
 ## REVIEW_SOURCE_RECEIPT
-Reviewer packet IDs, exact selected Permanent Sources v2.0, SGK/SBT S1, expected/reviewed lesson/outcome/item reconciliation, P0/P1/P2, Academic + PED verdicts, proof that aliases map to canonical source.
+Reviewer packet IDs, exact selected Permanent Sources v2.0, SGK/SBT S1, expected/reviewed lesson/outcome/item reconciliation, P0/P1/P2, Academic + PED verdicts, proof that aliases map to canonical source. **The separate immutable REVIEW_RECEIPT_PATH file must explicitly contain the exact ACADEMIC_SOURCE_BLOB string**; all IDs listed above must actually appear in the frozen academic source file.
 
 ## DELTA_LEDGER
 Class A/B/C/D, affected IDs, corrections, reviewer re-review when C/D, source equivalence proof when B; `NONE` only if no changes.
