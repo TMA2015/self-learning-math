@@ -4,7 +4,7 @@
 
 | Gói | Hành trình | Trạng thái | Phạm vi | PR / nguồn |
 |---|---|---|---|---|
-| [G11-SGK-CHIV-B10-B14-R01](ready/G11-SGK-CHIV-B10-B14-R01.md) | SGK_CHAPTER | CONTENT_READY | FULL_LEARNING_PATH | Draft authoring #688; A1–A7 PASS after canonical R01/Private alias semantic source equivalence; release QA and owner approval pending |
+| [G11-SGK-CHIV-B10-B14-R01](ready/G11-SGK-CHIV-B10-B14-R01.md) | SGK_CHAPTER | CONTENT_READY | FULL_LEARNING_PATH | AUTHOR #688: stable one-packet historical ID, effective R02 source blob `abc89621cc2b8a00950b178b65162c0d4ea34f54`, R01 Academic/PED PASS + owner R02 targeted PED PASS, V2 A1–A7/Q01–Q18 source handoff; R1–R5/AP/Final Submit NOT YET RELEASE PASS |
 | [G11-SGK-CHI-B01-B02](ready/G11-SGK-CHI-B01-B02.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | source #627 merged; release #650 R1–R5 evidence, exact-final-head CI before merge/deploy; B01–B02 only |
 | [G10-SGK-CHIV-B09-B11](ready/G10-SGK-CHIV-B09-B11.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY B09–B11 | source #637 merged; release #648 R1–R5 candidate QA PASS, final metadata-head dual CI required |
 | [G10-SGK-CHIV](ready/G10-SGK-CHIV.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | source #634 merged; release #645 R1–R5 evidence completed, exact-final-head CI recheck before merge/deploy |
