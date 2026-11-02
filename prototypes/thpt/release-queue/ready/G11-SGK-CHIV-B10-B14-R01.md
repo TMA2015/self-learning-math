@@ -20,6 +20,7 @@ PEDAGOGICAL_VERDICT: PASS_ON_LOCKED_SNAPSHOT
 BLOCKERS: NONE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 AUTHOR_PR: 688
+CURRENT_PR: #688 — DRAFT AUTHORING-ONLY (NOT RELEASE)
 EFFECTIVE_SOURCE_REVISION: R03_DELTA_B_S1_PAGINATION_CORRECTED
 PACKET_NAMESPACE_NOTE: Historical R01 packet ID kept to avoid invalidating original V2 and RELEASE references; reviewed public academic source revision promoted to R02, with exact SHA and distinct current V2 handoff. This is not a second READY packet for same chapter.
 
