@@ -234,6 +234,13 @@ Original owner SGK Toán 12 KNTT Tập Một printed pages 5–44 (PDF1 7–46),
 Five lesson segments and end-chapter self-check; 24 reasoned examples, 78 original canonical questions including 12 Written, 6 original SVG, 36 five-step HELP links. Exact SOURCE_SHA and item/outcome/role validated on GitHub.
 ## PED1_PED6_EVIDENCE
 Independent reviewer 5 Permanent Sources v2.1 reports PED PASS: motivation, prerequisites, concept before formula, guided figure reading, reasoned method choice, self-try before Core and remediation.
+## QUALITY_Q01_Q18_EVIDENCE
+
+Normative source: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`.
+
+| Q_ID | LESSON | SOURCE_EVIDENCE | REVIEW_EVIDENCE | RELEASE_RECHECK |
+|---|---|---|---|---|
+
 ## REVIEW_SOURCE_RECEIPT
 Original reviewer report preserved verbatim in Git blob fc0088f592f9b71f581b767925f0458f86bb96b4; original report Academic PASS, PED PASS, P0=P1=P2=0, MINIMAL_DELTA=0. Git source f0862dcdab21dec136e43969f45c42638e7c7574, receipt 8fef1c7dbd9b404881ff40cec8147c9ae89ef473. Reviewer source-size prose and Q labels are not canonical metadata.
 ## DELTA_LEDGER
