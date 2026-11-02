@@ -236,13 +236,13 @@ Original human-readable solutions below are for learner-controlled self-compare 
 **Đáp án tự mở sau tự làm:** Đáy tam giác bằng nhau ở hai mặt song song; nối đỉnh tương ứng; nét khuất đứt; cạnh bên vuông góc hai đáy mới là lăng trụ đứng.
 **Rubric /4:** 1 điểm lập mô hình/điều kiện; 1 điểm thao tác toán đúng; 1 điểm kết quả/đơn vị; 1 điểm giải thích tại sao và giới hạn phương pháp.
 
-## D5 — instructional figure/diagram source specification (not yet SVG QA-pass)
+## D5 — five original authored SVG sources; independent mathematical and visual QA pending
 FIG-G11-SUPP-E01-01: time-versus-quantity axes, discrete dot model and continuous model with k=ln(1+r) if synchronized at integer years. Avoid pretending k=r gives identical graphs.
 FIG-G11-SUPP-E01-02: three independent logarithmic scales pH/Richter/dB, each showing base and unit/coefficients and one ×10 comparison; no false cross-scale equivalence.
 FIG-G11-SUPP-E02-01: rod–shadow–light triangle with right angle, projected beam and tanθ=h/l as SGK H.T1 concept re-authored diagram.
 FIG-G11-SUPP-E02-02: two planes sharing intersection d, correct normal section with two rays perpendicular to d at common H; mark relevant flat dihedral angle.
 FIG-G11-SUPP-E02-03: four steps prism ABC.A'B'C' (base, parallel copy, matching edges, dashed hidden edges) and note skew vs right prism.
-No claim of generated/readable SVG, as D5 remains P1 authoring blocker before independent NotebookLM review and release AP3.
+Five actual source SVGs have been authored and linked below; their rendering and educational correctness await independent NotebookLM Q07/PED4 and later RELEASE AP3.
 
 ## D6 — 7 five-step HELP/return-item remediation
 ### HELP-G11-SUPP-E01-01 | skill_id=G11-E01-EXPONENTIAL_MODEL | return_item=THPT-G11-SUPP-E01-P01
@@ -296,8 +296,8 @@ No claim of generated/readable SVG, as D5 remains P1 authoring blocker before in
 
 
 ## SOURCE-LOCKED NOTEBOOKLM REVIEW GATE — AUTHOR CANDIDATE ONLY
-Exactly 11 RD0 outcomes, 12 D2 guided examples, 21 D3 unique Core/Practice/Application, 6 D4 Written with 3 Anchor tags, 5 D5 figures SPECIFIED (not yet rendered), 7 D6 HELP. One item ID per question, primary outcome in heading, protected RD1 absent from this public source. All items are original, not copies of source S1 text.
-Academic/PED independent PASS has **not been obtained** for this new SGK experiential supplement; must review using the five permanent THPT v2.1 sources and owner SGK/SBT originals. Q07/PED4 `P1_SVG_UNRENDERED`, Q18 `NOTEBOOKLM_VERDICT_PENDING` prevent CONTENT_READY. SGK cross-chapter supplement scope does not create Chapter X nor replace independently tested SGK/Topic readiness. Release authorization NO.
+Exactly 11 RD0 outcomes, 12 D2 guided examples, 21 D3 unique Core/Practice/Application, 6 D4 Written with 3 Anchor tags, 5 D5 original SVG files authored (independent reviewer verdict pending), 7 D6 HELP. One item ID per question, primary outcome in heading, protected RD1 absent from this public source. All items are original, not copies of source S1 text.
+Academic/PED independent PASS has **not been obtained** for this new SGK experiential supplement; must review using the five permanent THPT v2.1 sources and owner SGK/SBT originals. Q07/PED4 `ORIGINAL_SVG_CREATED_REVIEW_PENDING`, Q18 `NOTEBOOKLM_VERDICT_PENDING` prevent CONTENT_READY. SGK cross-chapter supplement scope does not create Chapter X nor replace independently tested SGK/Topic readiness. Release authorization NO.
 
 
 ## D5 SOURCE FILE COMPLETION — 5 actual original SVG files committed, structural QA still pending
