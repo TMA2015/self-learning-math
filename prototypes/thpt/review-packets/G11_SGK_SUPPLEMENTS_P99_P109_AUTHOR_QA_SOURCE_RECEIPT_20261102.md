@@ -19,8 +19,8 @@ ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 | Original review/source file | Git blob SHA | Scope |
 |---|---|---|
 | `Temp_G11_SGK_EXPERIENCE_P99_P104_PUBLIC_D1_D6_AUTHOR_R00_20261102.md` | `7d369b8e6c3aa25fcfcbe5e10418d87f59d4b8e5` | E01 + E02 SGK printed p99–104 |
-| `Temp_G11_SGK_YEAR_END_P105_P109_PUBLIC_D1_D6_AUTHOR_R00_20261102.md` | `71bc2d8107321c88f4ce7fe8de4f21d9f7593535` | SGK all-year review p105–109 |
-| `Temp_G11_SGK_SUPPLEMENTS_P99_P109_FULL_NOTEBOOKLM_REVIEW_R00_20261102.md` | `4e64b3de6639f8833b90aaf9e774f334b143182c` | Exact source1/source2 + all 8 SVG inline, effective review candidate |
+| `Temp_G11_SGK_YEAR_END_P105_P109_PUBLIC_D1_D6_AUTHOR_R00_20261102.md` | `f78e1f4bcb477c995ffdb1281d366bf3b0e88a59` | SGK all-year review p105–109 |
+| `Temp_G11_SGK_SUPPLEMENTS_P99_P109_FULL_NOTEBOOKLM_REVIEW_R00_20261102.md` | `b848436621c17c89919e3d3f93519d12612fe039` | Exact source1/source2 + all 8 SVG inline, effective review candidate |
 | `Temp_G11_SGK_SUPPLEMENTS_P99_P109_NOTEBOOKLM_REVIEW_PROMPT_20261102.txt` | see GitHub branch source | 5-sentence independent reviewer prompt |
 
 The two academic source files are included in the full-review candidate **exactly** (substring and original Git SHA cross-checked); each original SVG XML source is likewise included exactly and its SHA listed. All source/file SHA checks were performed against actual original GitHub content on the review branch, not copied from historical prose.
@@ -60,6 +60,10 @@ No item_id duplicate within/between these two source candidates. Each public ite
 | `Temp_FIG-G11-YR-03_R00.svg` | `69862b21745e192f5eac200fbd9ab6502e8fa244` |
 
 Author pre-review correction on new R00 (not a post-PASS revision): E01-01 exponential data points n=0..4 now computed exactly for A(n)=100(1.2)^n with matching continuous interpolation k=ln(1.2), and YR-01 y=x² plotted with exact coordinate scale and tangent through (1,1), slope 2. These are **material mathematical D5 presentation repairs before first NotebookLM review**. Do not preserve or claim any prior independent review PASS for the superseded original incorrect SVG representations. The effective R00 canonical candidate is now the new full-review blob above; further SVG corrections are `DELTA_C_ACADEMIC_MATERIAL` affecting Q07/PED4 and must undergo affected-scope review.
+
+## 4A. Q02/PED targeted pre-review repair — grouped quartiles
+
+Direct inspection of the owner SGK original printed **p109 exercise 36** explicitly requires the **lowest-income 25% threshold**, a Q1 grouped-data outcome. In R00 annual author text, an earlier `STAT-P02` mean-only task did not test quartile reasoning despite the outcome mentioning tứ phân vị. **BEFORE any NotebookLM independent verdict**, author updated original YEAR_END source (now exact Git blob `f78e1f4bcb477c995ffdb1281d366bf3b0e88a59`) to teach and apply Q1/Q2/Q3 grouped interpolation, with n/4 and 3n/4 cumulative positions, plus a Q1/Q3 practice using class counts 4,8,8 (Q1≈11.25, Q3≈23.75), and adjusted D6 STAT remediation. No canonical `item_id` was created, deleted or duplicated; 11 outcomes / 41 items, source1 27 items and eight original SVGs stay in scope. The combined full-review R00 snapshot was rebuilt to Git blob `b848436621c17c89919e3d3f93519d12612fe039`, with new source2 exact bytes/hash. This is a **substantive pedagogic adjustment before initial independent review**; it must be examined by NotebookLM as part of this exact candidate. Do not label prior candidate reviewed or old Academic PASS transferable.
 
 ## 5. Q01–Q18 evidence readiness boundary
 
