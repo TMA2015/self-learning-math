@@ -63,10 +63,15 @@ function verifyReadyManifest(rel, initialHandoff) {
 
   const sourceRel = field(data, "ACADEMIC_SOURCE_PATH");
   const sourceBlob = field(data, "ACADEMIC_SOURCE_BLOB");
-  verifyBlob(sourceBlob, safeRepoFile(sourceRel, ["prototypes/thpt/content-drafts/"]));
+  const sourceFile = safeRepoFile(sourceRel, ["prototypes/thpt/content-drafts/"]);
+  verifyBlob(sourceBlob, sourceFile);
+  const sourceText = fs.readFileSync(sourceFile, "utf8");
   const reviewRel = field(data, "REVIEW_RECEIPT_PATH");
   const reviewBlob = field(data, "REVIEW_RECEIPT_BLOB");
-  verifyBlob(reviewBlob, safeRepoFile(reviewRel, ["prototypes/thpt/review-packets/", "prototypes/thpt/release-handoffs/"]));
+  const reviewFile = safeRepoFile(reviewRel, ["prototypes/thpt/review-packets/", "prototypes/thpt/release-handoffs/"]);
+  verifyBlob(reviewBlob, reviewFile);
+  const reviewText = fs.readFileSync(reviewFile, "utf8");
+  assert(reviewText.includes(sourceBlob), "Review receipt must identify the exact canonical source blob");
   const handoffRel = field(data, "AUTHOR_HANDOFF");
   const handoff = fs.readFileSync(safeRepoFile(handoffRel, ["prototypes/thpt/release-handoffs/"]), "utf8");
   for (const [k,v] of [
@@ -79,6 +84,9 @@ function verifyReadyManifest(rel, initialHandoff) {
   const lessons = ids(handoff, "LESSON_IDS");
   const outcomes = ids(handoff, "OUTCOME_IDS");
   const items = ids(handoff, "PUBLIC_ITEM_IDS");
+  for (const canonicalId of [...lessons, ...outcomes, ...items]) assert(sourceText.includes(canonicalId), "Registered ID absent from canonical academic source: " + canonicalId);
+  const pedKeys = ["PED1_MOTIVATION", "PED2_PREREQUISITES", "PED3_MEANING_FIRST", "PED4_EXPLAINED_VISUAL", "PED5_REASONED_EXAMPLES", "PED6_FIRST_TRY_REMEDIATION"];
+  for (const key of pedKeys) assert(data.split("\n").some(line => line.startsWith("- [x] " + key + " — ") && line.length > key.length + 35), "PED evidence not signed off: " + key);
   const matrix = section(handoff, "ITEM_OUTCOME_MATRIX");
   const rows = matrix.split("\n").filter(s => /^\|/.test(s)).map(s => s.split("|").slice(1).map(x => x.trim()));
   for (const id of items) assert(rows.some(row => row[0] === id && outcomes.includes(row[1])), "Unmapped item " + id);
