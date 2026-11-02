@@ -20,3 +20,12 @@ BLOCKERS: NONE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 RELEASE_AUTHORIZATION: NO
 MASTERY_ACTIVATION: NO
+
+## Academic AUTHORING A1–A7
+- [x] A1_SOURCE_SNAPSHOT — Original frozen source SHA f0862dcd and verbatim reviewer Git blob fc0088f5 identified.
+- [x] A2_SGK_SBT_SCOPE — Original publisher KNTT SGK pp5–44 and SBT pp4–37, exact PDF SHA and offsets verified.
+- [x] A3_INDEPENDENT_REVIEW — Five Permanent THPT v2.1 sources, owner independent Academic and PED both PASS.
+- [x] A4_ITEM_OUTCOME — Six lesson segments, 36 outcomes, 78 canonical unique items and exact item mapping.
+- [x] A5_D1_D6 — Twenty-four D2, 12 Written rubrics, six original SVG and 36 D6 return HELP.
+- [x] A6_DELTA_CLOSED — Original reviewed source unchanged; no P0/P1/P2 and MINIMAL_DELTA=0.
+- [x] A7_CUSTODY — Public RD0 only, no independent protected RD1 test bank or Mastery writes.
