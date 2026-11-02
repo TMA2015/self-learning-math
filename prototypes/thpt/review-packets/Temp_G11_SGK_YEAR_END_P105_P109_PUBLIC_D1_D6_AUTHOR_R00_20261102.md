@@ -310,3 +310,56 @@ Each answer is an author solution to be shown only AFTER individual formative Su
 ### THPT-G11-YR-INT-P01 | skill_id=G11-YR_CROSS_CHAPTER_REMEDIATION | placement=SGK_APPLICATION | role=SGK_APPLICATION
 **Câu hỏi:** Một bạn tìm giới hạn 0/0 bằng 0, bạn khác giải log mà bỏ x>0. Hai bạn cần quay lại kết quả học nào?
 **Đáp án/lí do chỉ sau khi làm:** Giới hạn cần xử lí dạng vô định thuộc G11-YR-LIMIT_CONTINUITY; kiểm miền của log thuộc G11-YR-EXP_LOG_DOMAIN. Không đánh giá bằng một tổng điểm duy nhất.
+
+
+## D4 — ten canonical year-end Written/Anchor /4 rubric library
+Anchor is a label of the same Written question, never a duplicate; self-assessed manuscript is not independent final Readiness or Mastery evidence.
+### THPT-G11-YR-TRIG-W01 | skill_id=G11-YR-TRIG_IDENTITY | placement=SGK_WRITTEN | role=ANCHOR_TAG
+**Đề tự luận mới:** (a) Giải sinx=1/2 trong [0,2π]. (b) Giải thích hai vị trí trên vòng tròn. (c) Viết chu kì sin. (d) Kiểm đủ đầu mút.
+**Lời giải chuẩn để mở sau tự thử:** x=π/6 hoặc 5π/6; sin dương ở hai góc đối xứng trong nửa trên; chu kì 2π; 0 và 2π không thỏa sin=1/2.
+**Rubric /4 cụ thể:** Hai nghiệm/2 điểm 1đ; dấu và giải thích 1đ; chu kì 1đ; kiểm miền và kết luận 1đ.
+
+### THPT-G11-YR-SEQ-W01 | skill_id=G11-YR-SEQUENCE_MODEL | placement=SGK_WRITTEN | role=WRITTEN
+**Đề tự luận mới:** Hợp đồng A trả 120 triệu năm 1 và tăng 8 triệu/năm. Hợp đồng B trả 120 triệu năm 1 và tăng 5%/năm. (a) Viết u_n, v_n. (b) Tính năm 4. (c) Tổng 4 năm. (d) So sánh.
+**Lời giải chuẩn để mở sau tự thử:** A u_n=120+8(n−1): năm4 144, tổng4 528. B v_n=120·1,05^(n−1): năm4 138,915, tổng4 517,215. A lớn hơn sau 4 năm theo giả định đã nêu.
+**Rubric /4 cụ thể:** Mô hình dãy đúng 1đ; số hạng năm4 đúng 1đ; hai tổng đúng 1đ; so sánh kèm giả định và đơn vị 1đ.
+
+### THPT-G11-YR-LIMIT-W01 | skill_id=G11-YR-LIMIT_CONTINUITY | placement=SGK_WRITTEN | role=ANCHOR_TAG
+**Đề tự luận mới:** Cho f(x)=(x²−9)/(x−3) khi x≠3 và f(3)=c. (a) Tính giới hạn tại 3. (b) Tìm c để liên tục. (c) Giải thích vì sao thay trực tiếp không hợp lệ. (d) Nêu kiểm trái/phải.
+**Lời giải chuẩn để mở sau tự thử:** Vì x≠3 được rút (x−3)(x+3)/(x−3)=x+3, giới hạn 6, c=6. Biểu thức 0/0 tại x=3 không được tính trực tiếp; hai nhánh cùng về 6.
+**Rubric /4 cụ thể:** Rút đúng 1đ; giới hạn 6 1đ; c=6 1đ; giải thích khuyết, trái/phải 1đ.
+
+### THPT-G11-YR-EXPL-W01 | skill_id=G11-YR-EXP_LOG_DOMAIN | placement=SGK_WRITTEN | role=WRITTEN
+**Đề tự luận mới:** Giải log3(x−1)+log3(x+1)=1. (a) Điều kiện. (b) Quy tắc log. (c) Giải. (d) Thử nghiệm và bác nghiệm sai.
+**Lời giải chuẩn để mở sau tự thử:** Điều kiện x>1. Gộp log3((x−1)(x+1))=1 → x²−1=3 → x=±2; nhận x=2, loại x=−2 vì ngoài miền. Thế lại log3(1)+log3(3)=1.
+**Rubric /4 cụ thể:** Điều kiện 1đ; quy tắc log 1đ; nghiệm đại số 1đ; loại nghiệm sai/thử lại 1đ.
+
+### THPT-G11-YR-DERIV-W01 | skill_id=G11-YR-DERIVATIVE_RATE | placement=SGK_WRITTEN | role=ANCHOR_TAG
+**Đề tự luận mới:** Cho f(x)=x³−3x. (a) Tính f'(x). (b) f(2),f'(2). (c) Tiếp tuyến tại x=2. (d) Nếu s(t)=f(t) m, tìm gia tốc ở t=2 và nêu đơn vị.
+**Lời giải chuẩn để mở sau tự thử:** f'=3x²−3, f(2)=2, f'(2)=9; y−2=9(x−2); s''(t)=6t, a(2)=12 m/s². Hệ số góc 9 không phải tung độ 2.
+**Rubric /4 cụ thể:** Đạo hàm 1đ; điểm và hệ số góc 1đ; phương trình tiếp tuyến 1đ; gia tốc và đơn vị 1đ.
+
+### THPT-G11-YR-SPACE-W01 | skill_id=G11-YR-SPACE_PERP_DISTANCE | placement=SGK_WRITTEN | role=WRITTEN
+**Đề tự luận mới:** Trong lập phương ABCD.A'B'C'D' cạnh a, (a) vẽ/ghi đúng AB và CC'. (b) Chứng minh BC vuông góc cả hai đường. (c) Suy khoảng cách. (d) Nêu vì sao không dùng cạnh xiên bất kì.
+**Lời giải chuẩn để mở sau tự thử:** BC⊥AB do đáy vuông, BC⊥CC' vì CC'⊥(ABCD); B∈AB, C∈CC', BC là vuông góc chung, d(AB,CC')=a.
+**Rubric /4 cụ thể:** Nêu phương và vị trí 1đ; hai vuông góc 1đ; BC là đoạn chung và khoảng cách a 1đ; điều kiện không dùng đoạn xiên 1đ.
+
+### THPT-G11-YR-VOLUME-W01 | skill_id=G11-YR-SPACE_VOLUME | placement=SGK_WRITTEN | role=ANCHOR_TAG
+**Đề tự luận mới:** Một lăng trụ đứng đáy tam giác vuông cạnh góc vuông 3cm và 4cm, cao 10cm. (a) Sđáy. (b) Vlăng trụ. (c) Vchóp cùng đáy/cao. (d) Tỉ số và đơn vị.
+**Lời giải chuẩn để mở sau tự thử:** S=6cm², Vlăng trụ=60cm³, Vchóp=20cm³, tỉ lệ chóp/lăng trụ=1/3; chiều cao phải vuông góc đáy.
+**Rubric /4 cụ thể:** Diện tích đáy 1đ; lăng trụ 1đ; chóp 1đ; tỉ lệ/đơn vị/chiều cao 1đ.
+
+### THPT-G11-YR-STAT-W01 | skill_id=G11-YR-GROUPED_STATS | placement=SGK_WRITTEN | role=WRITTEN
+**Đề tự luận mới:** Bảng nhóm [0,10):4; [10,20):8; [20,30):8. (a) n. (b) Nhóm chứa trung vị. (c) Ước lượng trung vị theo nội suy đều. (d) Nêu vì sao không thể nói mốt là số cụ thể chắc chắn.
+**Lời giải chuẩn để mở sau tự thử:** n=20; vị trí n/2=10 nằm ở [10,20); median≈10+(10−4)/8·10=17,5. Hai nhóm sau cùng có cùng tần số 8, không có một nhóm mốt duy nhất; số liệu gốc đã mất thông tin cá nhân.
+**Rubric /4 cụ thể:** n/tích lũy 1đ; nhóm trung vị 1đ; ước lượng 17,5 1đ; giải thích mốt và giới hạn grouped data 1đ.
+
+### THPT-G11-YR-PROB-W01 | skill_id=G11-YR-PROBABILITY_COMBINE | placement=SGK_WRITTEN | role=ANCHOR_TAG
+**Đề tự luận mới:** Hai biến cố có P(A)=0,5, P(B)=0,4, P(A∩B)=0,2. (a) Tính hợp. (b) Tính bù của hợp. (c) Kiểm độc lập. (d) Giải thích khác biệt với xung khắc.
+**Lời giải chuẩn để mở sau tự thử:** Hợp=0,5+0,4−0,2=0,7; bù=0,3; tích P(A)P(B)=0,2 nên độc lập; không xung khắc vì giao có xác suất 0,2.
+**Rubric /4 cụ thể:** Hợp 1đ; bù 1đ; tích và kết luận độc lập 1đ; phân biệt xung khắc 1đ.
+
+### THPT-G11-YR-IND-W01 | skill_id=G11-YR-PROBABILITY_INDEP | placement=SGK_WRITTEN | role=WRITTEN
+**Đề tự luận mới:** Ba phép thử độc lập, mỗi lần thành công p=0,2. (a) Không lần nào thành công. (b) Ít nhất một. (c) Chính xác một. (d) Chỉ ra chỗ cần giả định độc lập.
+**Lời giải chuẩn để mở sau tự thử:** Không thành công=0,8³=0,512; ít nhất một=1−0,512=0,488; đúng một=3·0,2·0,8²=0,384; tích xác suất chỉ được dùng vì phép thử độc lập.
+**Rubric /4 cụ thể:** Không lần nào 1đ; ít nhất một 1đ; chính xác một 1đ; điều kiện độc lập 1đ.
