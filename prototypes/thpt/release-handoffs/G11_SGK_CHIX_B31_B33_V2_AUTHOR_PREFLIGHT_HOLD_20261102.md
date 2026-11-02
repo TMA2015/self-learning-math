@@ -271,3 +271,13 @@ No change of mathematical PUBLIC/PRIVATE source, IDs, answers, solution or rubri
 
 ## RELEASE_ACCEPTANCE
 R1–R5 / AP1–AP5 / P1–P2 and full G11 all-chapters gate are NOT DONE. The owner explicitly requested no website release before the entire G11 SGK scope is complete; no publishing, Mastery activation, Firebase/Gemini/THCS changes.
+
+## Q01 CLOSED — OWNER'S ORIGINAL S1 SCANNED PDF DIRECT VISUAL AUDIT 02/11/2026
+
+This new Q01 supersession uses *the owner's actual Drive SGK/SBT Tập Hai PDF bytes*, not the previously inaccessible public web PDF screenshot. Source and full original rendered-page audit: `prototypes/thpt/review-packets/G11_T2_OWNER_DRIVE_S1_PDF_VISUAL_SHA_RECEIPT_20261102.md`. SGK exact SHA256 `14ec0da7fa3d7c7365ed7f64599fc1e26484eccf1557301c57012ae64338e491`, 18,642,213 bytes / 114 pages; SBT exact SHA256 `a7c3d5ee9770377e16d7df97c531a2bc081fa47c8266fd4ad3438cba0d04e189`, 20,297,100 bytes / 126 pages. Actual scan page images show **PDF one-based index = original book-printed p + 1**.
+
+- SGK ChIX: B31 p81/PDF82; B32 p88/PDF89; B33 p95/PDF96; final p97/PDF98.
+- SBT ChIX: B31 p54/PDF55; B32 p58/PDF59; B33 p61/PDF62; final p63/PDF64. **Original SBT solution section: p111–116/PDF112–117** (bounded by visible next-section header, not merely a guessed TOC end).
+- `Q01_DIRECT_ORIGINAL_S1_PDF_IMAGE_INDEX=PASS_AUTHOR_VERIFIED`; `SOURCE_PAGINATION_DELTA_B=PASS_AUTHOR_VERIFIED`; reviewer historical 5 Permanent v2.0 Academic/PED PASS remains original-source scoped; no claim of a new independent v2.1 verdict or fingerprint of original uploaded NotebookLM PDF. Reviewer source-page-only erroneous citations are corrected by this author S1 receipt **without altering original canonical academic source blob**.
+
+**Effective state:** No longer blocked on Q01 page-image/index/edition. This is still a **V2 PREFLIGHT DOC, not CONTENT_READY**, pending a *single final source-locked composite independent receipt* explicitly referring to source blob and the book SHA256, author signature, one `ready/` manifest, one REGISTER row, and exact-head QA before the packet may be promoted. G11 whole-grade owner release HOLD continues until ChI–IX and SGK pp99–109 are complete and accepted.
