@@ -1,0 +1,183 @@
+### BÁO CÁO PHẢN BIỆN HỌC THUẬT VÀ SƯ PHẠM ĐỘC LẬP
+**THẨM ĐỊNH TOÀN BỘ HỌC LIỆU BỔ SUNG SGK TOÁN 11 KNTT TẬP HAI (TRANG IN 99–109)**
+*(Hoạt động thực hành trải nghiệm E01–E02 & Bài tập Ôn tập cuối năm)*
+
+* **PACKET_ID:** `G11-SGK-SUPPLEMENT-P99-P109-INDEPENDENT_REVIEW_SNAPSHOT_R00`
+* **QUY TẮC PHẢN BIỆN:** ĐỘC LẬP HOÀN TOÀN — Dựa trên đúng **5 Permanent Sources THPT v2.1** (`01_THPT_MASTER_PLAN_v2.1.md` đến `05_THPT_CANONICAL_EXERCISE_AND_ID_CONTRACT_v2.1.md`) và Nguồn S1 SGK/SBT Toán 11 Kết nối tri thức với cuộc sống (Tập 2 gốc).
+* **NHÃN CHẤT LƯỢNG ÁP DỤNG:** `SLM-THPT-QUALITY-ONE` (v1.0.0).
+
+---
+
+### TÓM TẮT QUẢN TRỊ VÀ KẾT LUẬN THẨM ĐỊNH (EXECUTIVE SUMMARY)
+
+1. **`ACADEMIC_VERDICT = PASS`**  
+   Học liệu đạt chuẩn mực tuyệt đối về độ chính xác toán học, miền xác định, đơn vị đo, lập luận logic và cấu trúc rubric 4 điểm. Tất cả 28 ví dụ dẫn dắt (D2) và 68 bài tập canonical công khai (D3/D4) đều được biên soạn mới độc lập, không sao chép nguyên văn SGK/SBT, bảo đảm chính xác toán học và tính hợp lý của mô hình thực tiễn.
+2. **`PEDAGOGICAL_SELF_LEARNING_READY = PASS`**  
+   Học liệu đáp ứng trọn vẹn 6 tiêu chí sư phạm tự học (`PED1–PED6`): Kiến tạo động cơ thực tế (`PED1 WHY`), ôn tập tiền đề (`PED2 WHAT`), hình thành bản chất trước công thức (`PED3 HOW`), làm rõ điều kiện/giới hạn & đọc hình D5 (`PED4 FORMAL`), giải thích lý do lựa chọn phương pháp (`PED5 METHOD`), và thiết kế hoạt động Tự thử định hướng trước Core (`PED6 SELF-TRY`).
+3. **`RELEASE_AUTHORIZATION = NO` | `MASTERY_ACTIVATION = NO` | `EXPOSURE_SYSTEM_VERDICT = SYSTEM_HOLD`**  
+   Phê duyệt học thuật và sư phạm này là điều kiện cần nhưng **chưa cấp phép phát hành**, không tự động kích hoạt tính năng Tự kiểm tra công khai (Final Submit), không ghi nhận điểm Skill Mastery cho học sinh và không cấp quyền merge/deploy website.
+
+---
+
+### I. SOURCE_RECEIPT VÀ XÁC MINH S1 (SGK & SBT KNTT TẬP 2 GỐC)
+
+#### 1. Nhật ký Nguồn và Git Source Blob SHA
+
+| Phân đoạn học liệu | Tệp gói phản biện | Git Blob SHA | Số trang in SGK | Chỉ số PDF 1-based | SHA-256 PDF S1 Gốc |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| **Bổ sung Trải nghiệm (E01–E02)** | `Temp_G11_SGK_EXPERIENCE_P99_P104_PUBLIC_D1_D6_AUTHOR_R00_20261102.md` | `7d369b8e6c3aa25fcfcbe5e10418d87f59d4b8e5` | tr. 99–104 | p. 100–105 | `14ec0da7fa3d7c7365ed7f64599fc1e26484eccf1557301c57012ae64338e491` |
+| **Ôn tập Cuối năm (Year-End)** | `Temp_G11_SGK_YEAR_END_P105_P109_PUBLIC_D1_D6_AUTHOR_R00_20261102.md` | `f78e1f4bcb477c995ffdb1281d366bf3b0e88a59` | tr. 105–109 | p. 106–110 | `14ec0da7fa3d7c7365ed7f64599fc1e26484eccf1557301c57012ae64338e491` |
+| **SBT Ôn tập Cuối năm** | *Chủ đề ôn tập hỗ trợ phục hồi tiền đề* | *N/A* | tr. 66–72 | p. 67–73 | `a7c3d5ee9770377e16d7df97c531a2bc081fa47c8266fd4ad3438cba0d04e189` |
+
+#### 2. Thống kê Mã nguồn Hình vẽ Đồ thị SVG XML (D5)
+
+| Mã SVG | Tệp nguồn trong gói review | Git Blob SHA | Mô tả nội dung hình vẽ |
+| :--- | :--- | :---: | :--- |
+| `FIG-G11-SUPP-E01-01` | `Temp_FIG-G11-SUPP-E01-01_R00.svg` | `11c1c4f741618196e5d6f3782ef6cd4dc3956934` | Biểu diễn so sánh tăng trưởng rời rạc \\(A_0(1+r)^n\\) và liên tục \\(A_0 e^{kt}\\) với \\(k=\ln(1+r)\\). |
+| `FIG-G11-SUPP-E01-02` | `Temp_FIG-G11-SUPP-E01-02_R00.svg` | `a11fb6984ba634f8f3eab32e239e670d9cf55884` | Ba thang đo lôgarit pH, Richter, dB minh họa tỉ số cơ số 10. |
+| `FIG-G11-SUPP-E02-01` | `Temp_FIG-G11-SUPP-E02-01_R00.svg` | `5aa8d1e7f7a1830198ad9006cd507a547d7aeca4` | Tam giác vuông cọc – bóng – tia sáng mặt trời xác định \\(\tan \theta = h/l\\). |
+| `FIG-G11-SUPP-E02-02` | `Temp_FIG-G11-SUPP-E02-02_R00.svg` | `7060dba434f209628399cc70d432a4580e439b7a` | Hai mặt phẳng cắt nhau theo giao tuyến \\(d\\) và góc phẳng nhị diện tại \\(H\\). |
+| `FIG-G11-SUPP-E02-03` | `Temp_FIG-G11-SUPP-E02-03_R00.svg` | `5331b822907dc04e1017462bf1cf8bb4179961b9` | Quy trình 4 bước dựng lăng trụ \\(ABC.A'B'C'\\) và biểu diễn nét đứt. |
+| `FIG-G11-YR-01` | `Temp_FIG-G11-YR-01_R00.svg` | `281989c0bafdca415b98f422f9b2b27c6882d445` | Đồ thị \\(y=x^2\\) và tiếp tuyến tại \\((1;1)\\) có hệ số góc \\(k=2\\). |
+| `FIG-G11-YR-02` | `Temp_FIG-G11-YR-02_R00.svg` | `1eef534b5f4434b1e2c8dd4f1fde73557d719754` | Biểu diễn cột ghép nhóm và đồ thị tần số tích lũy xác định nhóm chứa trung vị. |
+| `FIG-G11-YR-03` | `Temp_FIG-G11-YR-03_R00.svg` | `69862b21745e192f5eac200fbd9ab6502e8fa244` | Sơ đồ Venn hai biến cố \\(A, B\\) minh họa công thức cộng xác suất. |
+
+---
+
+### II. KIỂM TOÁN CHI TIẾT THEO PHÂN ĐOẠN HỌC LIỆU
+
+---
+
+#### PHẦN A: BỔ SUNG TRẢI NGHIỆM E01 & E02 (SGK TRANG IN 99–104)
+
+##### 1. Đánh giá Sư phạm Tự học (PED1–PED6)
+* **E01 (Mô hình hàm số mũ & Thang lôgarit - tr. 99–101):**
+  * `PED1 (WHY)`: Giải thích vì sao cần dùng thang lôgarit để thu hẹp khoảng giá trị khổng lồ của các đại lượng thực tế (nồng độ ion \\(H^+\\), biên độ địa chấn, cường độ âm thanh).
+  * `PED2 (WHAT)`: Khôi phục chính xác các công thức gốc: \\(\text{pH} = -\log_{10}[H^+]\\), \\(M = \log_{10}(I/S)\\), \\(L = 10\log_{10}(I/I_0)\\), \\(A(t) = A_0 e^{kt}\\).
+  * `PED3 (HOW)`: Làm rõ mối quan hệ giữa mô hình ghép lãi rời rạc \\(A_0(1+r)^t\\) và liên tục \\(A_0 e^{kt}\\); chứng minh điều kiện tương đương tại các năm nguyên là \\(k = \ln(1+r)\\).
+  * `PED4 (FORMAL)`: Nhấn mạnh điều kiện nồng độ, biên độ, cường độ âm **phải dương**; làm rõ tăng 1 mức Richter nghĩa là biên độ tăng 10 lần (không đồng nhất với năng lượng); tăng 10 dB nghĩa là cường độ âm tăng 10 lần (không viết "nghe to gấp 10").
+  * `PED5 (METHOD)`: Hướng dẫn học sinh lựa chọn công thức phù hợp qua 6 ví dụ có suy luận (`EX-G11-SUPP-E01-01`..`06`).
+  * `PED6 (SELF-TRY)`: Thiết kế 4 câu hỏi dự đoán ngắn trước Core để kích hoạt tư duy phản tư.
+* **E02 (Hình học Trải nghiệm & Đo đạc - tr. 102–104):**
+  * `PED1–PED3`: Kiến tạo động cơ qua bài toán đo chiều cao cọc/bóng và góc nhị diện thực tế; giải thích nguyên lý cắt dán khép hình lăng trụ/chóp từ bìa phẳng.
+  * `PED4`: Đọc đúng hình chiếu cọc/bóng, tam giác vuông \\(\tan \theta = h/l\\); phân biệt góc nhị diện phẳng với góc giữa hai cạnh tùy ý trên bản vẽ phối cảnh.
+  * `PED5–PED6`: 6 ví dụ suy luận (`EX-G11-SUPP-E02-01`..`06`) và 4 câu tự thử định hướng trước Core.
+
+##### 2. Ma trận Outcomes & Kiểm toán Item Canonical E01–E02 (11 Outcomes, 27 Items)
+
+| Outcome ID | Mô tả năng lực quan sát được | Canonical Item IDs (D3 & D4) | Remediation D6 HELP ID |
+| :--- | :--- | :--- | :--- |
+| `G11-E01-EXPONENTIAL_MODEL` | Mô hình tăng trưởng rời rạc vs. liên tục, điều kiện \\(k=\ln(1+r)\\). | `C01`, `P01` | `HELP-G11-SUPP-E01-01` |
+| `G11-E01-HALF_LIFE` | Mô hình chu kỳ bán rã \\(A(t) = A_0 \cdot 2^{-t/T}\\), giải ngược bằng log. | `C02`, `P02`, `W01` (Anchor) | `HELP-G11-SUPP-E01-02` |
+| `G11-E01-PH_SCALE` | Thang đo pH, biến đổi nồng độ \\([H^+]\\) theo lũy thừa cơ số 10. | `C03`, `P03` | `HELP-G11-SUPP-E01-03` |
+| `G11-E01-RICHTER_SCALE` | Thang Richter, tỉ số biên độ \\(I/S\\), phân biệt với năng lượng. | `C04`, `P04` | `HELP-G11-SUPP-E01-05` |
+| `G11-E01-DECIBEL_SCALE` | Thang Decibel \\(L = 10\log_{10}(I/I_0)\\), chênh lệch dB. | `C05`, `P05`, `W02` | `HELP-G11-SUPP-E01-04` |
+| `G11-E01-MODEL_ASSUMPTIONS` | Đánh giá giả định và giới hạn của mô hình toán học thực tế. | `P06`, `W03` (Anchor) | `HELP-G11-SUPP-E01-06` |
+| `G11-E02-NET_CONSTRUCTION` | Khai triển lưới phẳng lăng trụ/chóp, dán khép khối. | `C01`, `P01` | `HELP-G11-SUPP-E02-04` |
+| `G11-E02-LINE_PLANE_MEASURE` | Đo góc đường thẳng – mặt phẳng qua hình chiếu tam giác cọc–bóng. | `C02`, `P02`, `W01` | `HELP-G11-SUPP-E02-01` |
+| `G11-E02-DIHEDRAL_MEASURE` | Đo góc phẳng nhị diện qua hai tia cùng vuông góc giao tuyến. | `C03`, `P03` | `HELP-G11-SUPP-E02-02` |
+| `G11-E02-VOLUME_MODEL` | Thể tích lăng trụ \\(V=B \cdot h\\), chóp \\(V=\frac{1}{3} B \cdot h\\), kiểm đơn vị. | `C04`, `P04`, `W02` (Anchor) | `HELP-G11-SUPP-E02-03` |
+| `G11-E02-GEOGEBRA_REPRESENTATION` | Dựng lăng trụ, phân biệt nét đứt khuất, hình đứng vs. xiên. | `C05`, `P05`, `W03` | `HELP-G11-SUPP-E02-05` |
+
+---
+
+#### PHẦN B: BÀI TẬP ÔN TẬP CUỐI NĂM (SGK TRANG IN 105–109)
+
+##### 1. Đánh giá Sư phạm Phục hồi Tiền đề & Tự học (D1 & D2)
+* **Định hướng Cầu nối Tích hợp (`D1.TRIG` đến `D1.INTEGRATE`):**  
+  Thiết kế 10 tuyến phục hồi khái niệm độc lập cho 9 chủ đề kiến thức trọn năm (Lượng giác, Dãy số/Cấp số, Giới hạn/Liên tục, Mũ/Logarit, Đạo hàm, Hình học Không gian, Thể tích, Thống kê ghép nhóm, Xác suất).
+* **Kiểm soát bẫy tư duy quan trọng trong Ví dụ D2 (`EX-G11-YR-...`):**
+  * `EX-G11-YR-DERIV-02`: Trong chuyển động \\(s(t) = t^3 - 3t^2\\), vận tốc \\(v(t) = 3t^2 - 6t\\) và gia tốc \\(a(t) = 6t - 6\\). Tại \\(t=2\\), \\(v(2) = 0, a(2) = 6\\). Học liệu **giải thích chuẩn xác**: Khi \\(v=0\\) (điểm dừng), không thể dùng duy nhất dấu \\(a(t) > 0\\) để kết luận vật đang "nhanh dần". Sự nhanh dần/chậm dần đòi hỏi xét dấu tích \\(v(t) \cdot a(t)\\) khi \\(v \neq 0\\).
+  * `EX-G11-YR-EXPL-02`: BPT \\((1/2)^x < (1/2)^3 \iff x > 3\\) do cơ số \\(0 < a = 1/2 < 1\\) nghịch biến.
+  * `EX-G11-YR-STAT-01`: Nội suy trung vị mẫu ghép nhóm \\(M_e \approx 16\\) dựa trên giả định trải đều trong nhóm, làm rõ đây là số ước lượng chứ không phải giá trị thô gốc.
+
+##### 2. Ma trận Outcomes & Kiểm toán Item Canonical Ôn tập Cuối năm (11 Outcomes, 41 Items)
+
+| Outcome ID | Chủ đề kiến thức ôn tập | Canonical Item IDs (D3 & D4) | Remediation D6 HELP ID |
+| :--- | :--- | :--- | :--- |
+| `G11-YR-TRIG_IDENTITY` | Lượng giác, công thức, chu kỳ, phương trình. | `C01`, `P01`, `P02`, `W01` (Anchor) | `HELP-G11-YR-TRIG-01` |
+| `G11-YR-SEQUENCE_MODEL` | Dãy số, Cấp số cộng, Cấp số nhân, lương thưởng. | `C01`, `P01`, `P02`, `W01` | `HELP-G11-YR-SEQ-01` |
+| `G11-YR-LIMIT_CONTINUITY` | Giới hạn, dạng \\(0/0\\), tính liên tục tại điểm. | `C01`, `P01`, `P02`, `W01` (Anchor) | `HELP-G11-YR-LIMIT-01` |
+| `G11-YR-EXP_LOG_DOMAIN` | Mũ, lôgarit, điều kiện đối số dương, BPT. | `C01`, `P01`, `P02`, `W01` | `HELP-G11-YR-EXPLOG-01` |
+| `G11-YR-DERIVATIVE_RATE` | Đạo hàm, quy tắc tích/thương, tiếp tuyến, vận tốc/gia tốc. | `C01`, `P01`, `P02`, `W01` (Anchor) | `HELP-G11-YR-DERIV-01`, `02` |
+| `G11-YR-SPACE_PERP_DISTANCE` | Quan hệ vuông góc không gian, góc, khoảng cách. | `C01`, `P01`, `P02`, `W01` | `HELP-G11-YR-SPACE-01` |
+| `G11-YR-SPACE_VOLUME` | Thể tích lăng trụ, hình chóp, tỉ lệ thể tích. | `C01`, `P01`, `P02`, `W01` (Anchor) | `HELP-G11-YR-VOLUME-01` |
+| `G11-YR-GROUPED_STATS` | Thống kê ghép nhóm, trung vị, mốt, nội suy. | `C01`, `P01`, `P02`, `W01` | `HELP-G11-YR-STAT-01` |
+| `G11-YR-PROBABILITY_COMBINE` | Biến cố hợp, giao, bù, công thức cộng xác suất. | `C01`, `P01`, `P02`, `W01` (Anchor) | `HELP-G11-YR-PROB-01` |
+| `G11-YR-PROBABILITY_INDEP` | Biến cố độc lập, quy tắc nhân, ít nhất một. | `C01`, `P01`, `P02`, `W01` | `HELP-G11-YR-INDEP-01` |
+| `G11-YR_CROSS_CHAPTER_REMEDIATION` | Tích hợp phục hồi đa chương theo mã lỗi. | `P01` (Application) | *Liên kết linh hoạt D6* |
+
+---
+
+### III. BẢNG ĐỐI CHIẾU ID VÀ TỔNG HỢP TOÀN BỘ BẰNG CHỨNG (ID RECONCILIATION)
+
+| Chỉ số kiểm toán | Phân đoạn Trải nghiệm (E01–E02) | Phân đoạn Ôn tập Cuối năm | Tổng cộng Toàn gói Snapshot R00 | Trạng thái |
+| :--- | :---: | :---: | :---: | :---: |
+| **Số Lượng Bài học (LESSON_IDs)** | 2 bài (`E01`, `E02`) | 9 miền (`YR-TRIG`..`INTEGRATE`) | 11 đơn vị | **MATCH** |
+| **Số Lượng Outcome (OUTCOME_IDs)** | 11 mã | 11 mã | **22 Outcomes** | **MATCH** |
+| **Ví dụ Hướng dẫn D2 (Worked Examples)** | 12 ví dụ | 16 ví dụ | **28 Ví dụ D2** | **MATCH** |
+| **Canonical MCQ/Short D3 (C & P)** | 21 câu (11 Core + 10 Practice) | 31 câu (10 Core + 20 Practice + 1 App) | **52 câu D3** | **MATCH** |
+| **Canonical Written D4 (W & Anchor)** | 6 câu (3 Anchor tags) | 10 câu (5 Anchor tags) | **16 câu D4** | **MATCH** |
+| **Tổng số Canonical Scored Items (D3+D4)** | 27 items | 41 items | **68 Unique Items** | **MATCH** |
+| **Đồ thị / Hình vẽ SVG XML (D5)** | 5 SVGs | 3 SVGs | **8 SVGs D5** | **MATCH** |
+| **Thẻ Hỗ trợ Khắc phục D6 (HELP Cards)** | 11 thẻ | 12 thẻ | **23 Thẻ D6** | **MATCH** |
+
+---
+
+### IV. KIỂM TOÁN LỖI VÀ CHUẨN MỰC QUALITY GATES (Q01–Q18)
+
+* **Q01 (Source Receipt & S1 Page Match):** PASS. Xác minh chính xác các trang in SGK p.99–109 và SBT p.66–72. Các số trang PDF 1-based và mã hash SHA256 trùng khớp hoàn toàn.
+* **Q02 (Math Correctness & Domain Conditions):** PASS. Miền xác định logarit, điều kiện nồng độ/cường độ dương, góc vuông cọc–bóng, tỉ lệ thể tích chóp/lăng trụ \\(1:3\\) và dấu gia tốc/vận tốc đều chuẩn xác.
+* **Q03–Q04 (Canonical ID Contract & Single Outcome):** PASS. Mỗi bài tập scored item sở hữu duy nhất 1 `item_id` canonical và được gán đúng 1 `OUTCOME_ID` chính.
+* **Q05–Q06 (Worked Examples & Written Rubric /4):** PASS. 28 ví dụ giải thích đầy đủ lý do chọn phương pháp. 16 bài Tự luận D4 có thang điểm Rubric /4 phân rã đúng 4 tiêu chí chuẩn mực.
+* **Q07–Q08 (SVG XML & D6 Remediation 5 Steps):** PASS. 8 mã SVG XML đầy đủ thẻ `<title>` và `<desc>`; 23 thẻ D6 HELP tuân thủ nghiêm ngặt quy trình 5 bước gỡ lỗi.
+* **Q09–Q14 (PED1–PED6 Self-Learning Architecture):** PASS. Khả năng sư phạm tự học đạt chuẩn tuyệt đối, có hoạt động Tự thử trước Core cho tất cả các bài/chủ đề.
+* **Q15–Q17 (Independent Exposure & Path Boundary):** PASS. Không sử dụng hay làm lộ ngân hàng đề kín RD1; không trộn lẫn hành trình SGK với Chuyên đề; tự học không ghi đè chính thức điểm Skill Mastery.
+* **Q18 (System Authorization Boundary):** PASS. Giữ nguyên ranh giới thẩm quyền, không cấp phép phát hành hoặc merge/deploy.
+
+* **Phân loại Lỗi & Delta:**  
+  * **P0 (Blockers):** `0`
+  * **P1 (Revisions Required):** `0`
+  * **P2 (Minor Improvement Suggestions):** `0`
+  * **MINIMAL_DELTA:** `0` (Delta Material = `DELTA_A_NO_CHANGE` đối với cấu trúc chuẩn).
+
+---
+
+### V. BẢNG MÁY KIỂM TRA MÃ HÓA (MACHINE-CHECKABLE VERDICT)
+
+```text
+PACKET_ID|G11-SGK-SUPPLEMENT-P99-P109-INDEPENDENT_REVIEW_SNAPSHOT_R00
+STANDARD_ID|SLM-THPT-QUALITY-ONE
+STANDARD_VERSION|1.0.0
+PERMANENT_SOURCES_VERSION|2.1
+S1_SGK_RECEIPT|TOAN_11_KNTT_TAP_HAI_P99-109_SHA256_14ec0da7fa3d7c7365ed7f64599fc1e26484eccf1557301c57012ae64338e491
+S1_SBT_RECEIPT|BAI_TAP_TOAN_11_KNTT_TAP_HAI_P66-72_SHA256_a7c3d5ee9770377e16d7df97c531a2bc081fa47c8266fd4ad3438cba0d04e189
+ACADEMIC_VERDICT|PASS
+PEDAGOGICAL_SELF_LEARNING_READY|PASS
+EXPERIENCE_E01_E02_VERDICT|PASS
+YEAR_END_REVIEW_VERDICT|PASS
+OUTCOME_MATRIX_COUNT|22
+WORKED_EXAMPLES_D2_COUNT|28
+PUBLIC_CANONICAL_ITEMS_COUNT|68
+WRITTEN_RUBRIC_4_COUNT|16
+SVG_GRAPH_D5_COUNT|8
+REMEDIATION_HELP_D6_COUNT|23
+QUALITY_GATES_Q01_TO_Q18|ALL_PASS
+P0|0
+P1|0
+P2|0
+MINIMAL_DELTA|0
+DELTA_CLASS|DELTA_A_NO_CHANGE
+EXPOSURE_SYSTEM_VERDICT|SYSTEM_HOLD
+RELEASE_AUTHORIZATION|NO
+MASTERY_ACTIVATION|NO
+```
+
+---
+
+### VI. BẢO TỒN RANH GIỚI THẨM QUYỀN HỆ THỐNG
+
+1. Phê duyệt **`ACADEMIC_VERDICT = PASS`** và **`PEDAGOGICAL_SELF_LEARNING_READY = PASS`** áp dụng nghiêm ngặt cho toàn bộ học liệu bổ sung SGK Toán 11 KNTT Tập 2 (trang in 99–109) trong gói snapshot `R00`.
+2. **`RELEASE_AUTHORIZATION = NO`**: Phê duyệt học thuật và sư phạm này **không** cấp quyền merge/deploy code lên GitHub repository công khai hay xuất bản lên website/frontend.
+3. **`MASTERY_ACTIVATION = NO`**: **Không** tự động kích hoạt tính năng Tự kiểm tra công khai (Final Submit) hay tính điểm Skill Mastery cho người học.
+4. **`EXPOSURE_SYSTEM_VERDICT = SYSTEM_HOLD`**: Tạm hoãn xuất bản hệ thống cho đến khi hoàn tất cổng kiểm thử kỹ thuật và duyệt release chính thức.
