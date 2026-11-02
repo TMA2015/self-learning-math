@@ -477,7 +477,7 @@
     const matchPath=location.pathname.match(/^(.*?\/)(?:thpt-preview|thpt)\//);
     const chapter=Number(item.lesson)<=2?"i":Number(item.lesson)<=4?"ii":Number(item.lesson)<=6?"iii":Number(item.lesson)<=8?"iv":Number(item.lesson)<=18?"vi":Number(item.lesson)<=22?"vii":Number(item.lesson)<=25?"viii":"ix";
     reviewLesson.href=matchPath?
-      matchPath[0]+(item.item_id.startsWith("THPT-G11-")?"sgk/lop-11/chuong-i/bai-":"sgk/chuong-"+chapter+"/bai-")+item.lesson+"/":
+      matchPath[0]+(item.item_id.startsWith("THPT-G11-")?"sgk/lop-11/chuong-"+(Number(item.lesson)>=5&&Number(item.lesson)<=7?"ii":"i")+"/bai-":"sgk/chuong-"+chapter+"/bai-")+item.lesson+"/":
       "../bai-"+item.lesson+"/";
     // Question and answer form lead the interface; auxiliary controls follow.
     const actions=document.createElement("div");
