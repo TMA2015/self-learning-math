@@ -4,7 +4,7 @@
 
 | Gói | Hành trình | Trạng thái | Phạm vi | PR / nguồn |
 |---|---|---|---|---|
-| [G11-SGK-CHV-B15-B17-R02](ready/G11-SGK-CHV-B15-B17-R02.md) | SGK_CHAPTER | CONTENT_READY | FULL_LEARNING_PATH | Academic Draft #690; A1–A7 PASS, NotebookLM Academic/PED/Source Fidelity R02 PASS; awaiting release-lane R1–R5, AP1–AP5, owner authorization |
+| [G11-SGK-CHV-B15-B17-R02](ready/G11-SGK-CHV-B15-B17-R02.md) | SGK_CHAPTER | CONTENT_READY | FULL_LEARNING_PATH | AUTHOR #690: existing ONE canonical packet upgraded to V2 with source-equivalent SBT-corrected R03 blob `7934757ed06de4ae4b63dbc351ef524fc054e0d0`; independent R02 Academic/PED/source-fidelity PASS, direct original SBT printed ChV p75–90 and solutions145–153, 17 outcomes/36 canonical/Q01–Q18, original private 17 RD1 protected; RELEASE AP/R/Final Submit/owner authorization NOT YET PASS |
 | [G11-SGK-CHI-B01-B02](ready/G11-SGK-CHI-B01-B02.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | source #627 merged; release #650 R1–R5 evidence, exact-final-head CI before merge/deploy; B01–B02 only |
 | [G10-SGK-CHIV-B09-B11](ready/G10-SGK-CHIV-B09-B11.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY B09–B11 | source #637 merged; release #648 R1–R5 candidate QA PASS, final metadata-head dual CI required |
 | [G10-SGK-CHIV](ready/G10-SGK-CHIV.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | source #634 merged; release #645 R1–R5 evidence completed, exact-final-head CI recheck before merge/deploy |
