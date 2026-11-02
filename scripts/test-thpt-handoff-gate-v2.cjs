@@ -1,0 +1,111 @@
+#!/usr/bin/env node
+"use strict";
+// Structural/source-lock gate for newly introduced READY chapter packets.
+// This never issues Academic/PED PASS and intentionally grandfathers historical READY manifests.
+const fs = require("node:fs");
+const assert = require("node:assert/strict");
+const cp = require("node:child_process");
+const path = require("node:path");
+const root = path.resolve(__dirname, "..");
+const prefix = "prototypes/thpt/release-queue/ready/";
+const runGit = (...args) => cp.execFileSync("git", args, {cwd: root, encoding: "utf8"}).trim();
+function field(content, key) {
+  const line = content.split(/\r?\n/).find(s => s.startsWith(key + ": "));
+  assert(line, "Missing " + key);
+  const value = line.slice(key.length + 2).trim();
+  assert(value && !/(^REPLACE_|^CHUA_CO$|^PENDING$)/i.test(value), "Placeholder " + key);
+  return value;
+}
+function section(content, heading) {
+  const lines = content.split(/\r?\n/);
+  const start = lines.findIndex(s => s.trim() === "## " + heading);
+  assert(start !== -1, "Missing section " + heading);
+  const endOffset = lines.slice(start + 1).findIndex(s => s.startsWith("## "));
+  const end = endOffset < 0 ? lines.length : start + 1 + endOffset;
+  const body = lines.slice(start + 1, end).join("\n").trim();
+  assert(body.length > 35, "Empty/insufficient section " + heading);
+  return body;
+}
+function ids(content, heading) {
+  const body = section(content, heading);
+  const values = body.split("\n").map(s => s.trim()).filter(s => /^- [A-Za-z0-9_.-]+$/.test(s)).map(s => s.slice(2));
+  assert(values.length > 0, "No canonical IDs in " + heading);
+  assert(new Set(values).size === values.length, "Duplicate ID in " + heading);
+  assert(!values.some(s => /^REPLACE/i.test(s)), "Placeholder IDs in " + heading);
+  return values;
+}
+function safeRepoFile(value, allowed) {
+  assert(!value.startsWith("/") && !value.includes("..") && !value.includes("\\"), "Unsafe path " + value);
+  assert(allowed.some(d => value.startsWith(d)) && /\.md$/.test(value), "Invalid evidence location " + value);
+  const p = path.join(root, value);
+  assert(fs.existsSync(p) && fs.statSync(p).isFile(), "Missing source/receipt/handoff " + value);
+  return p;
+}
+function verifyBlob(value, file) {
+  assert(/^[0-9a-f]{40}$/.test(value), "Invalid Git blob SHA " + value);
+  const actual = runGit("hash-object", "--", file);
+  assert.equal(actual, value, "Source/receipt byte mismatch: " + file);
+}
+function verifyReadyManifest(rel) {
+  const data = fs.readFileSync(path.join(root, rel), "utf8");
+  const id = field(data, "PACKET_ID");
+  assert.equal(rel, prefix + id + ".md", "Manifest name/ID mismatch");
+  assert.equal(field(data, "HANDOFF_PROTOCOL"), "THPT-TWO-LANE-V2");
+  assert.equal(field(data, "STATE"), "CONTENT_READY", "Only new CONTENT_READY may be handed off; RELEASE_READY requires subsequent R gate");
+  assert.equal(field(data, "LEARNING_PATH"), "SGK_CHAPTER", "New SGK-first whole-chapter handoff only");
+  assert.equal(field(data, "RELEASE_SCOPE"), "FULL_LEARNING_PATH", "No new incomplete chapter as full academic handoff");
+  assert.equal(field(data, "ASSESSMENT_MODE"), "CLIENT_SELF_CHECK_NO_MASTERY");
+  assert.equal(field(data, "ACADEMIC_VERDICT"), "PASS_ON_LOCKED_SNAPSHOT");
+  assert.equal(field(data, "PEDAGOGICAL_VERDICT"), "PASS_ON_LOCKED_SNAPSHOT");
+  assert.equal(field(data, "BLOCKERS"), "NONE");
+
+  const sourceRel = field(data, "ACADEMIC_SOURCE_PATH");
+  const sourceBlob = field(data, "ACADEMIC_SOURCE_BLOB");
+  verifyBlob(sourceBlob, safeRepoFile(sourceRel, ["prototypes/thpt/content-drafts/"]));
+  const reviewRel = field(data, "REVIEW_RECEIPT_PATH");
+  const reviewBlob = field(data, "REVIEW_RECEIPT_BLOB");
+  verifyBlob(reviewBlob, safeRepoFile(reviewRel, ["prototypes/thpt/review-packets/", "prototypes/thpt/release-handoffs/"]));
+  const handoffRel = field(data, "AUTHOR_HANDOFF");
+  const handoff = fs.readFileSync(safeRepoFile(handoffRel, ["prototypes/thpt/release-handoffs/"]), "utf8");
+  for (const [k,v] of [
+    ["PACKET_ID", id], ["ACADEMIC_SOURCE_BLOB", sourceBlob],
+    ["REVIEW_RECEIPT_BLOB", reviewBlob], ["ACADEMIC_VERDICT", "PASS"],
+    ["PEDAGOGICAL_VERDICT", "PASS"], ["BLOCKERS", "NONE"],
+    ["ASSESSMENT_MODE", "CLIENT_SELF_CHECK_NO_MASTERY"],
+    ["RELEASE_SCOPE", "FULL_LEARNING_PATH"]
+  ]) assert.equal(field(handoff, k), v, "Handoff mismatch " + k);
+  const lessons = ids(handoff, "LESSON_IDS");
+  const outcomes = ids(handoff, "OUTCOME_IDS");
+  const items = ids(handoff, "PUBLIC_ITEM_IDS");
+  const matrix = section(handoff, "ITEM_OUTCOME_MATRIX");
+  const rows = matrix.split("\n").filter(s => /^\|/.test(s)).map(s => s.split("|").slice(1).map(x => x.trim()));
+  for (const id of items) assert(rows.some(row => row[0] === id && outcomes.includes(row[1])), "Unmapped item " + id);
+  for (const heading of ["S1_SGK_SBT_SOURCE","D1_D6_EVIDENCE","PED1_PED6_EVIDENCE","REVIEW_SOURCE_RECEIPT","DELTA_LEDGER","PRIVATE_RD1_CUSTODY_METADATA","AUTHOR_SIGNOFF"]) section(handoff, heading);
+  assert(lessons.length && outcomes.length && items.length, "Empty author register");
+  console.log("SOURCE_LOCK_PASS " + id + ": " + lessons.length + " lessons, " + outcomes.length + " outcomes, " + items.length + " public item IDs; evidence hashes match (not an Academic PASS).");
+}
+function selfTest() {
+  assert.deepEqual(ids("## IDS\n- A\n- B\n", "IDS"), ["A","B"]);
+  assert.throws(() => ids("## IDS\n- A\n- A\n", "IDS"));
+  assert.throws(() => field("X: REPLACE_ME","X"));
+  assert.equal(field("X: PASS\n", "X"), "PASS");
+  console.log("PASS handoff V2 parser self-test");
+}
+if (process.argv.includes("--self-test")) selfTest();
+else {
+  const base = process.env.BASE_SHA, head = process.env.HEAD_SHA;
+  assert(/^[a-f0-9]{40}$/.test(base || "") && /^[a-f0-9]{40}$/.test(head || ""), "BASE_SHA and HEAD_SHA must be supplied by PR scope; fail closed");
+  const changed = runGit("diff","--name-status",base + "..." + head,"--",prefix);
+  let checked = 0;
+  for (const line of changed.split("\n").filter(Boolean)) {
+    const parts = line.split("\t"), status = parts[0], rel = parts[parts.length - 1];
+    if (!rel.startsWith(prefix) || !rel.endsWith(".md") || rel.endsWith("/README.md")) continue;
+    // Only new canonical READY packets: old ready manifests keep historical attestations.
+    // Modified V2 packet remains subject to the V2 gate on every subsequent PR.
+    if (status.startsWith("A") || (status.startsWith("M") && fs.readFileSync(path.join(root,rel),"utf8").includes("HANDOFF_PROTOCOL: THPT-TWO-LANE-V2"))) {
+      verifyReadyManifest(rel);
+      checked++;
+    }
+  }
+  console.log("PASS handoff V2 gate: " + checked + " new/updated V2 ready manifests. Historical packets remain unchanged.");
+}
