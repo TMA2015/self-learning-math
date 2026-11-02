@@ -12,13 +12,21 @@ const knowledge=page.slice(start,end),formulas=math(knowledge);
 assert.equal(formulas.length,27,"G11 B01 knowledge expression count");
 assert.equal(fnv(JSON.stringify(formulas)),"2682a78b","Source-order math changed: classify academic delta");
 // The only allowed header delta is the approved B01 learner-facing scope correction.
-const newLead="Chương I gồm Bài 1–4; Tự kiểm tra cuối chương chưa kích hoạt.";
+const newLead="Chương I gồm Bài 1–4; Bài tự kiểm tra cuối chương chỉ hỗ trợ tự đối chiếu sau Final Submit, không ghi điểm thành thạo.";
 const frozenLead="Phạm vi đang công bố chỉ gồm Bài 1–2.";
 const prefix=page.slice(0,start);
-assert(prefix.includes(newLead),"G11 B01 must identify all four lessons and inactive chapter self-check");
-assert.equal(fnv(prefix.replace(newLead,frozenLead)),"2e140b61",
- "Lesson header changed beyond approved UI-only scope");
-assert.equal(fnv(page.slice(end)),"987319a3","Examples, SVG, HELP, links, Written or other content changed");
+assert(prefix.includes(newLead),"G11 B01 must identify four lessons and selfcheck-only Final Submit");
+assert(prefix.includes("## Trước khi học: Vì sao cần kiến thức này?"),"Missing reviewed B01 concept-first introduction");
+assert(prefix.includes('data-ped-first-try="1"'),"Missing reviewed low-stakes first try");
+const originalPrefix=prefix.slice(0,prefix.indexOf("## Trước khi học:"))
+ .replace(newLead,frozenLead).replace("Tự kiểm tra · tự đối chiếu","Tự kiểm tra · chưa kích hoạt");
+assert.equal(fnv(originalPrefix),"2e140b61","Frozen original B01 header changed beyond approved reviewed PED & UX scope");
+const suffix=page.slice(end);
+assert(suffix.includes("## Hướng suy luận trong các ví dụ"),"B01 PED5 evidence not displayed");
+assert(suffix.includes("### Hướng dẫn đọc hình, đồ thị"),"B01 PED4 evidence not displayed");
+const origSuffix=suffix.replace(/^## Hướng suy luận trong các ví dụ\n\n[\s\S]*?(?=^## 3\. )/m,"")
+ .replace(/^### Hướng dẫn đọc hình, đồ thị\n\n[\s\S]*?(?=^## 4\. )/m,"");
+assert.equal(fnv(origSuffix),"987319a3","Original B01 examples, SVG, HELP and written routes changed");
 for(const name of [
 "### 1. Góc lượng giác và số đo",
 "### 2. Radian và độ dài cung",
