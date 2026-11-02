@@ -11,7 +11,7 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
    try{
     let response=await page.goto(root,{waitUntil:"networkidle"});
     assert(response?.ok(),"SGK overview must load");
-    assert.equal(await page.locator('a[href="lop-11/chuong-ii/"]').count(),1,"One G11 ChII entry tile");
+    assert.equal(await page.locator('.library-topic-tile[data-thpt-filter-item][href="lop-11/chuong-ii/"]').count(),1,"One G11 ChII entry tile");
     response=await page.goto(base,{waitUntil:"networkidle"});
     assert(response?.ok(),"G11 ChII overview must load");
     const overview=await page.locator("body").innerText();
