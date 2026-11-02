@@ -45,11 +45,23 @@ for(const check of checks){
     const current="Chương I gồm Bài 1–4; Tự kiểm tra cuối chương chưa kích hoạt.";
     const frozen="Phạm vi đang công bố chỉ gồm Bài 1–2.";
     assert(prefix.includes(current),"G11 B02 must show accurate four-lesson chapter scope");
+    assert(prefix.includes("## Trước khi học: Vì sao cần kiến thức này?"),"Reviewed B02 concept-first intro must precede D1");
+    assert(prefix.includes('data-ped-first-try="2"'),"B02 first try must remain independently openable");
+    // Only the new independently reviewed PED intro may precede the original source-locked D1.
+    prefix=prefix.slice(0,prefix.indexOf("## Trước khi học:"));
     prefix=prefix.replace(current,frozen);
   }
   assert.equal(fnv(prefix),check.prefixHash,check.file+": lesson header changed beyond approved UI-only scope");
-  assert.equal(fnv(src.slice(end)),check.suffixHash,
-    check.file+": examples, SVG, HELP, links or solutions changed");
+  let originalSuffix=src.slice(end);
+  if(check.file==="docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md"){
+    assert(originalSuffix.includes("## Hướng suy luận trong các ví dụ"),"Reviewed B02 PED5 note absent");
+    assert(originalSuffix.includes("### Hướng dẫn đọc hình, đồ thị"),"Reviewed B02 PED4 note absent");
+    // Strip ONLY the added reviewed PED notes to prove original examples/SVG/D6/link bytes remain unchanged.
+    originalSuffix=originalSuffix.replace(/^## Hướng suy luận trong các ví dụ\\n\\n[\\s\\S]*?(?=^## 3\\. )/m,"")
+      .replace(/^### Hướng dẫn đọc hình, đồ thị\\n\\n[\\s\\S]*?(?=^## 4\\. )/m,"");
+  }
+  assert.equal(fnv(originalSuffix),check.suffixHash,
+    check.file+": original examples, SVG, HELP, links or solutions changed");
   for(const h of check.groups)assert(middle.includes(h),check.file+": missing "+h);
   for(const h of check.required)assert(middle.includes(h),check.file+": missing "+h);
   if(check.file.includes("chuong-iv/bai-9.md")){
