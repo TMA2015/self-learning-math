@@ -23,7 +23,7 @@ function section(content, heading) {
   const endOffset = lines.slice(start + 1).findIndex(s => s.startsWith("## "));
   const end = endOffset < 0 ? lines.length : start + 1 + endOffset;
   const body = lines.slice(start + 1, end).join("\n").trim();
-  assert(body.length > 35, "Empty/insufficient section " + heading);
+  assert(body.length > 0, "Empty section " + heading);
   return body;
 }
 function ids(content, heading) {
@@ -80,7 +80,7 @@ function verifyReadyManifest(rel) {
   const matrix = section(handoff, "ITEM_OUTCOME_MATRIX");
   const rows = matrix.split("\n").filter(s => /^\|/.test(s)).map(s => s.split("|").slice(1).map(x => x.trim()));
   for (const id of items) assert(rows.some(row => row[0] === id && outcomes.includes(row[1])), "Unmapped item " + id);
-  for (const heading of ["S1_SGK_SBT_SOURCE","D1_D6_EVIDENCE","PED1_PED6_EVIDENCE","REVIEW_SOURCE_RECEIPT","DELTA_LEDGER","PRIVATE_RD1_CUSTODY_METADATA","AUTHOR_SIGNOFF"]) section(handoff, heading);
+  for (const heading of ["S1_SGK_SBT_SOURCE","D1_D6_EVIDENCE","PED1_PED6_EVIDENCE","REVIEW_SOURCE_RECEIPT","DELTA_LEDGER","PRIVATE_RD1_CUSTODY_METADATA","AUTHOR_SIGNOFF"]) assert(section(handoff, heading).length > 35, "Insufficient evidence in " + heading);
   assert(lessons.length && outcomes.length && items.length, "Empty author register");
   console.log("SOURCE_LOCK_PASS " + id + ": " + lessons.length + " lessons, " + outcomes.length + " outcomes, " + items.length + " public item IDs; evidence hashes match (not an Academic PASS).");
 }
@@ -102,7 +102,7 @@ else {
     if (!rel.startsWith(prefix) || !rel.endsWith(".md") || rel.endsWith("/README.md")) continue;
     // Only new canonical READY packets: old ready manifests keep historical attestations.
     // Modified V2 packet remains subject to the V2 gate on every subsequent PR.
-    if (status.startsWith("A") || (status.startsWith("M") && fs.readFileSync(path.join(root,rel),"utf8").includes("HANDOFF_PROTOCOL: THPT-TWO-LANE-V2"))) {
+    if (status.startsWith("A") || status.startsWith("R") || (status.startsWith("M") && fs.readFileSync(path.join(root,rel),"utf8").includes("HANDOFF_PROTOCOL: THPT-TWO-LANE-V2"))) {
       verifyReadyManifest(rel);
       checked++;
     }
