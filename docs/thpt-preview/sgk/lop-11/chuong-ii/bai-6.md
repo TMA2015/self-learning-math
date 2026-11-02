@@ -64,22 +64,26 @@ CSC 2,5,8,... có d=3, u_{20}=59. S_{20}=20(2+59)/2=610. Thử bằng n[2u1+(n�
 
 ## 4. Tự khắc phục lỗi thường gặp
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-B06-01"><summary>Tự khắc phục lỗi 1</summary>
+<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-B06-01"><summary>Số hạng tổng quát: n−1 bước</summary>
 
 1. Nhận lỗi: dùng n thay n−1 trong công thức CSC.
 2. Viết lại u_n=u_1+(n−1)d.
 3. Từ hai chỉ số p,q tính d=(u_q−u_p)/(q−p).
 4. Thử u1=6,d=3 được u9=30.
 5. Trở về C02/P01, kiểm tra n nguyên dương.
+
+<p><a href="../luyen-tap/?item=THPT-G11-B06-C02">Quay lại câu C02 trong Core/Luyện tập</a></p>
 </details>
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-B06-02"><summary>Tự khắc phục lỗi 2</summary>
+<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-B06-02"><summary>Tổng cấp số cộng: n/2 và điều kiện</summary>
 
 1. Nhận lỗi: thiếu hệ số n/2 hoặc nhầm tổng CSC với CSN.
 2. Xác định u1,u_n và số hạng n của đoạn.
 3. Dùng S_n=n(u1+u_n)/2, kể cả d âm.
 4. Kiểm tra trực tiếp tổng 2+4+6+8+10=30.
 5. Làm C03/P03 và đối chiếu hai cách tính.
+
+<p><a href="../luyen-tap/?item=THPT-G11-B06-C03">Quay lại câu C03 trong Core/Luyện tập</a></p>
 </details>
 
 ## 5. Tiếp tục
