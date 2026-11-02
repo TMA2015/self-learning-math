@@ -56,7 +56,7 @@ Một sản phẩm bán theo lượng q liên tục trong mô hình 0≤q≤300;
 
 ## PED4: Đọc đồ thị/hình ứng dụng
 
-**FIG-G12-B05-01** (sẽ dựng SVG gốc trước review): V(x)=x(30−2x)(20−2x), miền **chỉ 0<x<10**; trục ngang x cm, dọc V cm³; đỉnh tại x*≈3.9237, hai biên không được tô chấm đặc vì hộp suy biến. Dạy đọc hình: xác định miền hợp lệ trước, xem dấu V' rồi mới đọc đỉnh; đồ thị ngoài (0,10) chỉ là đa thức toán, không là hộp vật lý.
+**FIG-G12-B05-01** (G12_B05_FIG01_BOX_VOLUME_R00.svg, original SVG source ready): V(x)=x(30−2x)(20−2x), miền **chỉ 0<x<10**; trục ngang x cm, dọc V cm³; đỉnh tại x*≈3.9237, hai biên không được tô chấm đặc vì hộp suy biến. Dạy đọc hình: xác định miền hợp lệ trước, xem dấu V' rồi mới đọc đỉnh; đồ thị ngoài (0,10) chỉ là đa thức toán, không là hộp vật lý.
 
 ## PED6: TỰ THỬ trước Core
 
@@ -156,4 +156,4 @@ D. Khi x cắt vuông ở góc hộp 30×20, tại sao x=12 cm không hợp lệ
 1. Lỗi: mọi đạo hàm gọi vận tốc. 2. Bản chất: đơn vị y chia đơn vị x. 3. Gợi lại diện tích m², chiều dài m. 4. Tự thử thể tích m³ theo thời gian s. 5. Quay lại P06.
 
 ## AUTHOR_CHECKPOINT
-B05 R00: 7 outcomes; five D2 examples; 4 Core+6 Practice+3 Application+2 Written=15 canonical public IDs, 7 same-outcome HELP and planned exact SVG. No external Academic/PED review; owner S1 scope p33–41 and SBT p27–32; no RD1/official mastery, do not integrate release.
+B05 R00: 7 outcomes; five D2 examples; 4 Core+6 Practice+3 Application+2 Written=15 canonical public IDs, 7 same-outcome HELP and one original mathematically calibrated SVG D5. No external Academic/PED review; owner S1 scope p33–41 and SBT p27–32; no RD1/official mastery, do not integrate release.
