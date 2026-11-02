@@ -133,3 +133,53 @@ Public tasks are formative and transparent after own Submit only. The original S
 **PED5 Example with choice rationale:** Ví dụ bài pH sai do log cơ số/điều kiện thuộc EXPLOG; bài góc nhị diện sai vì hình chiếu thuộc SPACE, dù cả hai có biểu thức lượng giác.
 **PED4 Figure reading:** Đọc bảng ma trận năm học: mỗi hàng là một năng lực có bài/phiên tự học tương ứng, không đếm nhiều placement thành nhiều câu.
 **PED6 Self-try BEFORE Core:** Tự thử: bạn sai ở bước định nghĩa/điều kiện hay ở bước số học? Chọn đường D6 tương ứng.
+
+
+## D2 — SIXTEEN independently authored, reasoned guided examples
+### EX-G11-YR-TRIG-01 | skill_id=G11-YR-TRIG_IDENTITY
+**Method choice, conditions and solution:** Với sinx=3/5, cosx=4/5 trong góc phần tư I, tính sin2x=2·3/5·4/5=24/25. Không dùng sin²x+cos²x làm sin2x. Giả thiết góc phần tư giúp chọn dấu cos đúng.
+
+### EX-G11-YR-TRIG-02 | skill_id=G11-YR-TRIG_IDENTITY
+**Method choice, conditions and solution:** Chu kì y=cos(2x) là π vì khi tăng x thêm π, 2x tăng 2π. Không lấy 2π là chu kì nhỏ nhất theo thói quen của cosx.
+
+### EX-G11-YR-SEQ-01 | skill_id=G11-YR-SEQUENCE_MODEL
+**Method choice, conditions and solution:** Hợp đồng A 100 triệu năm đầu, tăng thêm 10 triệu/năm: u5=100+4·10=140; tổng năm 1..5=(100+140)·5/2=600. Vì d là cộng cố định nên phải dùng cấp số cộng.
+
+### EX-G11-YR-SEQ-02 | skill_id=G11-YR-SEQUENCE_MODEL
+**Method choice, conditions and solution:** Cùng đầu 100 triệu, tăng 10% mỗi năm: v5=100·1,1^4≈146,41, tổng năm 1..5=100(1,1^5−1)/0,1≈610,51. Dùng cấp số nhân vì tỉ số 1,1, không cộng 10 hàng năm.
+
+### EX-G11-YR-LIMIT-01 | skill_id=G11-YR-LIMIT_CONTINUITY
+**Method choice, conditions and solution:** lim x→3 của (x²−9)/(x−3) không thể thế trực tiếp 0/0; phân tích (x−3)(x+3), rút gọn khi x≠3 rồi lấy giới hạn 6. Điểm bị khuyết vẫn có giới hạn 6.
+
+### EX-G11-YR-LIMIT-02 | skill_id=G11-YR-LIMIT_CONTINUITY
+**Method choice, conditions and solution:** Hàm piecewise f(x)=(x²−1)/(x−1) khi x≠1, f(1)=c. Giới hạn hai phía khi x→1 là 2, nên liên tục nếu c=2. Không cần f(1) theo biểu thức nhánh x≠1.
+
+### EX-G11-YR-EXPL-01 | skill_id=G11-YR-EXP_LOG_DOMAIN
+**Method choice, conditions and solution:** log2(x−1)=3: điều kiện x>1 rồi x−1=8 ⇒ x=9. Phương trình log không thể dùng nghiệm làm đối số âm; thử ngược log2(8)=3.
+
+### EX-G11-YR-EXPL-02 | skill_id=G11-YR-EXP_LOG_DOMAIN
+**Method choice, conditions and solution:** (1/2)^x < (1/2)^3 ⇒ x>3 vì cơ số 0<a<1 cho hàm nghịch biến, nên chiều bất đẳng thức đảo. Không áp quy tắc của cơ số lớn hơn 1.
+
+### EX-G11-YR-DERIV-01 | skill_id=G11-YR-DERIVATIVE_RATE
+**Method choice, conditions and solution:** f(x)=(x²+1)sin x ⇒ f'(x)=2x sin x+(x²+1)cos x. Quy tắc tích sinh hai hạng; chỉ nhân 2x·cos x là sai.
+
+### EX-G11-YR-DERIV-02 | skill_id=G11-YR-DERIVATIVE_RATE
+**Method choice, conditions and solution:** Vị trí s(t)=t³−3t²: v=3t²−6t, a=6t−6; tại t=1 v=−3, a=0; tại t=2 v=0, a=6. Dấu a một mình không nói nhanh/chậm: phải xét v·a khi v≠0.
+
+### EX-G11-YR-SPACE-01 | skill_id=G11-YR-SPACE_PERP_DISTANCE
+**Method choice, conditions and solution:** Một đường d vuông góc hai đường a,b **cắt nhau** trong (P) ⇒ d vuông góc cả mặt phẳng (P). Nếu a,b song song, hai phương ấy chỉ đưa một điều kiện, không đủ.
+
+### EX-G11-YR-SPACE-02 | skill_id=G11-YR-SPACE_VOLUME
+**Method choice, conditions and solution:** Chóp có đáy tam giác vuông hai cạnh góc vuông 6cm,8cm, chiều cao 5cm ⇒ Sđáy=24cm², V=24·5/3=40cm³; không dùng cạnh bên xiên thay chiều cao.
+
+### EX-G11-YR-STAT-01 | skill_id=G11-YR-GROUPED_STATS
+**Method choice, conditions and solution:** Ba lớp [0,10),[10,20),[20,30) với tần số 2,5,3: n=10, nhóm chứa vị trí n/2=5 là lớp thứ 2. Với giả định nội suy đều, M≈10+(5−2)/5·10=16. Không nói tất cả mẫu thật có trung vị đúng 16.
+
+### EX-G11-YR-PROB-01 | skill_id=G11-YR-PROBABILITY_COMBINE
+**Method choice, conditions and solution:** P(A)=0,6, P(B)=0,5, P(A∩B)=0,3 thì P(A∪B)=0,6+0,5−0,3=0,8. Nếu A và B độc lập tích riêng=0,3 phù hợp; vẫn cần điều kiện xét mô hình độc lập.
+
+### EX-G11-YR-PROB-02 | skill_id=G11-YR-PROBABILITY_INDEP
+**Method choice, conditions and solution:** Hai phép thử độc lập với xác suất thành công 0,2 và 0,3. Xác suất có ít nhất một thành công=1−(0,8)(0,7)=0,44. Dùng bù để tránh cộng trùng cả hai thành công.
+
+### EX-G11-YR-INT-01 | skill_id=G11-YR_CROSS_CHAPTER_REMEDIATION
+**Method choice, conditions and solution:** Một câu chuyển động sai vì chỉ xét dấu a(t) → về đạo hàm cấp hai và tốc độ |v| trước khi tự thử câu mới. Một câu góc nhị diện sai vì chỉ đọc hình → dựng góc phẳng vuông góc giao tuyến. Phân loại nguyên nhân lỗi theo outcome, không chấm học sinh chỉ bằng số bài đúng.
