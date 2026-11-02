@@ -165,7 +165,7 @@ Three B05–B07 motivations and pre-requisite bridges; D2 9 method WHY notes; D5
 | Q10 | B05–B07 | Prerequisites/sign conventions and previously learned conditions made explicit in R02 concept-first sections | Owner R02 PED2 PASS | AP4 prerequisite clarity |
 | Q11 | B05–B07 | Intuitive meaning explained before formula and application limits | Owner R02 PED3 PASS | AP1/AP4 concept first |
 | Q12 | 3 SVG | 3 source FIG IDs interpreted in R02 in addition to mathematical drawings | Owner R02 PED4 PASS | AP3/AP4 visual |
-| Q13 | 9 D2 | 9 reasoned worked examples explaining chosen method and invalid cases | Owner R02 PED5 PASS | AP4 examples |
+| Q13 | 9 D2 worked examples | 9 reasoned worked examples explaining chosen method and invalid cases | Owner R02 PED5 PASS | AP4 examples |
 | Q14 | 3 pre-Core first tries | 3 self-reveal voluntary nonmastery tries with 6 existing D6 fallback links | Owner R02 PED6 PASS | AP4/R4 reveal safety |
 | Q15 | 42 public IDs | Canonical unique source item headings and exact 42 item-outcome-role rows; D4 Anchor role only | R01 Academic and R03 source parity | R1/R4 ID consistency |
 | Q16 | 19 private RD1 | Private 19 item custody SHA256 96d39c5b4a40…, no stems or keys on GitHub, CLIENT_SELF_CHECK_NO_MASTERY | R01 protected RD1 source receipt | R3/R4 Final Submit |
