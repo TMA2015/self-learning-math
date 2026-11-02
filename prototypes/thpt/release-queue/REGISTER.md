@@ -4,6 +4,7 @@
 
 | Gói | Hành trình | Trạng thái | Phạm vi | PR / nguồn |
 |---|---|---|---|---|
+| [G11-SGK-SUPPLEMENT-P99-P109-R00](ready/G11-SGK-SUPPLEMENT-P99-P109-R00.md) | SGK_CHAPTER | CONTENT_READY | FULL_LEARNING_PATH | SGK original T2 p99–109 (E01/E02 + annual), not Chương X/Chuyên đề; one source Git blob `b848436621c17c89919e3d3f93519d12612fe039`, independent owner NotebookLM v2.1 Academic+PED PASS original report blob `78e020288e009d38a836cb909d37c1b89728fc8c`, 22 RD0/68 canonical/8 SVG/23 HELP; AP/R and owner release approval pending (no Mastery) |
 | [G11-SGK-CHI-B01-B04](ready/G11-SGK-CHI-B01-B04.md) | SGK_CHAPTER | CONTENT_READY | FULL_LEARNING_PATH | Source R03 Academic/PED PASS; integrated PR #697 46 public + voluntary 20 Written Final Submit, AP1–AP5/R1–R5 QA receipts from head 3a02b1d PASS; initial V2 manifest stays CONTENT_READY until final-head CI/release and P1 (no independent Readiness/Mastery) |
 | [G11-SGK-CHI-B01-B02](ready/G11-SGK-CHI-B01-B02.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | source #627 merged; release #650 R1–R5 evidence, exact-final-head CI before merge/deploy; B01–B02 only |
 | [G10-SGK-CHIV-B09-B11](ready/G10-SGK-CHIV-B09-B11.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY B09–B11 | source #637 merged; release #648 R1–R5 candidate QA PASS, final metadata-head dual CI required |
@@ -39,3 +40,5 @@
 **30/10/2026 ChIII R1–R5:** Source #633 merged main `1643c60e3638cbc180c6580b54111a64e07cf663`; exact source blob `6320aeaa89bd51c514b07461e01fad5e3aca833f`. Release #644 integrates 16 canonical formative (7 A–D MCQ, 9 short-response), 2 Written incl Anchor, 2 original SVG, 4 D6 HELP_ID. Owner permission covers PUBLIC_FORMATIVE_ONLY **after** both exact final-head CI PASS; P1/P2 postdeploy separate, no Readiness/Mastery.
 
 **30/10/2026 — ChIV B07/B08 academic handoff:** 18/18 NotebookLM R01 PASS, D1–D6 10/10 outcomes, snapshot Git blob `42b206e31421b33860a1bf697d2d04b7aba992cf`. Authoring #634 source-only, no website/Readiness/Mastery. R1–R5 requires separate release PR and exact-head CI.
+
+**02/11/2026 G11 SGK Tập Hai final supplement:** one source-locked and independent NotebookLM Academic/PED PASS v2.1 supplemental packet `G11-SGK-SUPPLEMENT-P99-P109-R00` added as **SGK_CROSS_CHAPTER_SUPPLEMENT**, not new Chapter X and not TOPIC. Student-source and verbatim reviewer Git SHA exact, Q01–Q18 review P0/P1/P2=0. Whole Grade 11 can now proceed to **RELEASE INTAKE/QA** only after assembling the nine chapter packets; THIS REGISTER entry never authorizes website release, official RD1 scoring or Mastery.
