@@ -307,3 +307,33 @@ Academic/PED independent PASS has **not been obtained** for this new SGK experie
 - `prototypes/thpt/review-packets/Temp_FIG-G11-SUPP-E02-02_R00.svg` — original authored figure, review against lesson teaching claims and visual labels required.
 - `prototypes/thpt/review-packets/Temp_FIG-G11-SUPP-E02-03_R00.svg` — original authored figure, review against lesson teaching claims and visual labels required.
 These are real SVG sources, **not merely specifications**, but authoring structural render validation and independent NotebookLM Q07/PED4 are still required before Academic/PED CONTENT_READY. RELEASE AP3 later checks the exact HTML/rasterized figure on devices.
+
+
+## D6 OUTCOME-COVERAGE ADDENDUM — actual recovery support for previously uncovered RD0 outcomes
+### HELP-G11-SUPP-E01-05 | skill_id=G11-E01-RICHTER_SCALE | return_item=THPT-G11-SUPP-E01-P04
+1. Chẩn đoán: Nhầm mức M với năng lượng động đất.
+2. Bản chất: M=log10(I/S) ở đây chỉ mô tả **biên độ** theo tỉ số.
+3. Gỡ lỗi và giới hạn: ΔM=log10(I1/I2), kiểm I1,I2>0.
+4. Tự thử khác câu gốc: I1/I2=100 ⇒ ΔM=2.
+5. Quay lại câu canonical: Quay lại P04, không suy năng lượng từ hệ số biên độ.
+
+### HELP-G11-SUPP-E01-06 | skill_id=G11-E01-MODEL_ASSUMPTIONS | return_item=THPT-G11-SUPP-E01-P06
+1. Chẩn đoán: Ngoại suy mà không ghi tốc độ không đổi.
+2. Bản chất: Lũy thừa là dự báo có giả định dữ liệu và tốc độ thay đổi theo một quy tắc.
+3. Gỡ lỗi và giới hạn: Viết mốc A0, đơn vị t, miền dự báo và điều kiện môi trường.
+4. Tự thử khác câu gốc: Nếu r năm sau khác năm trước, A0(1+r)^n không còn đúng với r cố định.
+5. Quay lại câu canonical: Quay lại P06 và nêu ít nhất hai giới hạn.
+
+### HELP-G11-SUPP-E02-04 | skill_id=G11-E02-NET_CONSTRUCTION | return_item=THPT-G11-SUPP-E02-P01
+1. Chẩn đoán: Không kiểm cặp mép trước khi gấp giấy.
+2. Bản chất: Đáy/mặt bên phải cùng kích thước tại mép dán; hộp không nắp thiếu một mặt.
+3. Gỡ lỗi và giới hạn: Đánh số cặp cạnh cùng chiều dài và đánh dấu mặt cần bỏ.
+4. Tự thử khác câu gốc: Hộp vuông không nắp có 5 mặt, không phải 6.
+5. Quay lại câu canonical: Quay lại P01, giải thích điều kiện có thể khép.
+
+### HELP-G11-SUPP-E02-05 | skill_id=G11-E02-GEOGEBRA_REPRESENTATION | return_item=THPT-G11-SUPP-E02-P05
+1. Chẩn đoán: Vẽ cạnh khuất nét liền và nối nhầm đỉnh.
+2. Bản chất: Hai đáy song song, các đỉnh tương ứng tạo cạnh bên song song; cạnh khuất dùng nét đứt.
+3. Gỡ lỗi và giới hạn: Đánh nhãn A↔A', B↔B', C↔C', kiểm sự song song.
+4. Tự thử khác câu gốc: Vẽ hai tam giác bằng nhau rồi nối đúng ba cặp đỉnh.
+5. Quay lại câu canonical: Quay lại P05, tách điều đã chứng minh với điều chỉ nhìn thấy trên hình.
