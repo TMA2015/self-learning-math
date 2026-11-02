@@ -13,7 +13,7 @@ RELEASE_AUTHORIZATION: NO
 
 ## A. SOURCE_RECEIPT — exact canonical original files included below UNCHANGED
 - 1) `prototypes/thpt/review-packets/Temp_G11_SGK_EXPERIENCE_P99_P104_PUBLIC_D1_D6_AUTHOR_R00_20261102.md`, **original Git blob SHA `7d369b8e6c3aa25fcfcbe5e10418d87f59d4b8e5`**, UTF-16 content length 26418; all original author exercise questions, explanations, worked examples, rubric and HELP reproduced below without modification.
-- 2) `prototypes/thpt/review-packets/Temp_G11_SGK_YEAR_END_P105_P109_PUBLIC_D1_D6_AUTHOR_R00_20261102.md`, **original Git blob SHA `71bc2d8107321c88f4ce7fe8de4f21d9f7593535`**, UTF-16 content length 36932; all original author exercise questions, explanations, worked examples, rubric and HELP reproduced below without modification.
+- 2) `prototypes/thpt/review-packets/Temp_G11_SGK_YEAR_END_P105_P109_PUBLIC_D1_D6_AUTHOR_R00_20261102.md`, **original Git blob SHA `f78e1f4bcb477c995ffdb1281d366bf3b0e88a59`**, UTF-16 content length 36932; all original author exercise questions, explanations, worked examples, rubric and HELP reproduced below without modification.
 - SVG 1) `prototypes/thpt/review-packets/Temp_FIG-G11-SUPP-E01-01_R00.svg`, Git blob SHA `11c1c4f741618196e5d6f3782ef6cd4dc3956934`; XML source included in Part D below (not a substitute for raster visual QA).
 - SVG 2) `prototypes/thpt/review-packets/Temp_FIG-G11-SUPP-E01-02_R00.svg`, Git blob SHA `a11fb6984ba634f8f3eab32e239e670d9cf55884`; XML source included in Part D below (not a substitute for raster visual QA).
 - SVG 3) `prototypes/thpt/review-packets/Temp_FIG-G11-SUPP-E02-01_R00.svg`, Git blob SHA `5aa8d1e7f7a1830198ad9006cd507a547d7aeca4`; XML source included in Part D below (not a substitute for raster visual QA).
@@ -488,11 +488,11 @@ Public tasks are formative and transparent after own Submit only. The original S
 
 ### D1.STAT — G11-YR-GROUPED_STATS
 **PED1 WHY:** Tại sao dữ liệu chia nhóm chỉ cho phép ước lượng vị trí, không cho biết từng giá trị thật?
-**PED2 Prerequisites:** Bảng tần số, lớp chứa trung vị và mốt, chiều rộng khoảng lớp, tần số tích lũy.
-**PED3 Essence → conditions → method:** Với n quan sát, xác định nhóm có vị trí n/2 trong tần số tích lũy rồi nội suy nếu SGK yêu cầu ước lượng trung vị. Mốt từ nhóm có tần số lớn nhất và công thức nội suy phù hợp; không nhầm trung điểm lớp với trung vị chắc chắn.
-**PED5 Example with choice rationale:** Ví dụ ba nhóm [0,10),[10,20),[20,30) có số 2,5,3 (n=10): vị trí thứ 5 thuộc nhóm [10,20), nên trung vị nằm trong nhóm đó, ước lượng theo giả định phân bố đều trong nhóm là 10+(5−2)/5·10=16.
+**PED2 Prerequisites:** Bảng tần số, chiều rộng khoảng lớp và tần số tích lũy; vị trí trung vị n/2, tứ phân vị thứ nhất n/4, tứ phân vị thứ ba 3n/4 (n là tổng tần số) và lớp mốt.
+**PED3 Essence → conditions → method:** Với bảng ghép nhóm, các giá trị gốc không quan sát được nên trung vị Q2 và Q1/Q3 chỉ là ước lượng theo giả định trải đều trong lớp. Tính tích lũy; tìm lớp chứa vị trí n/4 cho Q1, n/2 cho Q2, 3n/4 cho Q3. Nội suy trong lớp: Q≈L+((vị trí−F_trước)/f_lớp)·h với L là cận dưới, F_trước tần số tích lũy trước lớp, f_lớp tần số lớp và h độ rộng lớp; không chia cho 0 khi lớp rỗng. Nhóm tần số lớn nhất là nhóm mốt (có thể hòa), không được coi trung điểm lớp là giá trị mốt chắc chắn.
+**PED5 Example with choice rationale:** Ví dụ ba nhóm [0,10),[10,20),[20,30) có tần số 2,5,3 (n=10), tích lũy 2,7,10. Trung vị nằm nhóm [10,20) vì n/2=5, nội suy Q2≈10+(5−2)/5·10=16. Q1 ở vị trí n/4=2,5 cũng thuộc lớp [10,20), nội suy Q1≈10+(2,5−2)/5·10=11; Q3 ở vị trí 7,5 thuộc [20,30), Q3≈20+(7,5−7)/3·10≈21,67. Cần chọn nhóm dựa trên tích lũy trước khi thay số; vì dữ liệu ghép nhóm, các số chỉ là ước lượng.
 **PED4 Figure reading:** Đọc biểu đồ tần số: bề ngang nhóm có thể bằng nhau, chiều cao nhóm là tần số, không đọc dữ liệu cá nhân từ một cột.
-**PED6 Self-try BEFORE Core:** Tự thử: nhóm chứa trung vị khi tần số tích lũy 3,9,15 và n=15?
+**PED6 Self-try BEFORE Core:** Tự thử: với tích lũy 3,9,15 và n=15, nhóm nào chứa trung vị (vị trí 7,5), nhóm nào chứa Q1 (vị trí 3,75), nhóm nào chứa Q3 (vị trí 11,25)? Hãy xác định lớp TRƯỚC khi dùng công thức nội suy.
 
 ### D1.PROB — G11-YR-PROBABILITY_COMBINE
 **PED1 WHY:** Vì sao cộng hai cơ hội có thể đếm trùng?
@@ -656,8 +656,8 @@ Each answer is an author solution to be shown only AFTER individual formative Su
 **Đáp án/lí do chỉ sau khi làm:** [10,20) với tần số 5; đây là lớp mốt, không phải khẳng định mốt đúng bằng 15.
 
 ### THPT-G11-YR-STAT-P02 | skill_id=G11-YR-GROUPED_STATS | placement=SGK_PRACTICE | role=SGK_PRACTICE
-**Câu hỏi:** Với nhóm như trên, tính trung bình ước lượng bằng trung điểm lớp.
-**Đáp án/lí do chỉ sau khi làm:** (2·5+5·15+3·25)/10=16; giá trị ước lượng vì biết số theo lớp.
+**Câu hỏi:** Bảng ghép nhóm [0,10):4, [10,20):8, [20,30):8 (n=20). Ước lượng Q1 và Q3 bằng nội suy trong lớp; nói rõ giả định.
+**Đáp án/lí do chỉ sau khi làm:** Tích lũy 4,12,20; Q1 vị trí 5 thuộc [10,20) ⇒ Q1≈10+(5−4)/8·10=11,25. Q3 vị trí 15 thuộc [20,30) ⇒ Q3≈20+(15−12)/8·10=23,75. Các số là ước lượng do giả định dữ liệu phân bố đều trong mỗi lớp.
 
 ### THPT-G11-YR-PROB-C01 | skill_id=G11-YR-PROBABILITY_COMBINE | placement=SGK_CORE | role=SGK_CORE
 **Câu hỏi:** P(A)=0,6, P(B)=0,5, P(A∩B)=0,3. Tính P(A∪B).
@@ -807,8 +807,8 @@ Three original source SVGs have been committed, but independent diagram mathemat
 ### HELP-G11-YR-STAT-01 | skill_id=G11-YR-GROUPED_STATS | return_item=THPT-G11-YR-STAT-C01
 1. Chẩn đoán lỗ hổng: Chọn nhóm trung vị theo tần số lớn nhất.
 2. Bản chất: Trung vị dựa vị trí n/2 trong tần số tích lũy, không phải tần số đơn.
-3. Hướng dẫn gỡ lỗi: Cộng tích lũy 2,7,10 cho n=10.
-4. Tự thử chưa lộ đáp án câu gốc: 2,5,3 nhóm, vị trí thứ 5 ở nhóm 2.
+3. Hướng dẫn gỡ lỗi: Cộng tích lũy 2,7,10 cho n=10; đánh dấu riêng vị trí Q1=2,5, Q2=5, Q3=7,5 và đọc lớp tương ứng trước khi nội suy.
+4. Tự thử chưa lộ đáp án câu gốc: bảng 2,5,3 nhóm, nhóm nào chứa vị trí 2,5 (Q1) và vị trí 7,5 (Q3)?
 5. Quay lại canonical: Quay lại STAT-C01, không coi trung điểm là đáp án chắc chắn.
 
 ### HELP-G11-YR-PROB-01 | skill_id=G11-YR-PROBABILITY_COMBINE | return_item=THPT-G11-YR-PROB-C01
