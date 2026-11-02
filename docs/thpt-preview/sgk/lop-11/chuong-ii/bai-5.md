@@ -66,22 +66,26 @@ u_n=1/n (n≥1) có u_{n+1}−u_n=−1/[n(n+1)]<0, nên giảm nghiêm ngặt, �
 
 ## 4. Tự khắc phục lỗi thường gặp
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-B05-01"><summary>Tự khắc phục lỗi 1</summary>
+<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-B05-01"><summary>Truy hồi: số hạng đầu và quy tắc</summary>
 
 1. Nhận lỗi: nhầm hệ thức u_(n+1) với công thức u_n.
 2. Đọc đúng số hạng đầu u_1 và quy tắc truy hồi.
 3. Tính từng n, không thay cả n và u_n vào cùng vị trí.
 4. Thử u_1=1, u_(n+1)=2u_n+1 cho u_2=3,u_3=7.
 5. Trở về C03 rồi luyện P02; không dùng xem lời giải làm bằng chứng Mastery.
+
+<p><a href="../luyen-tap/?item=THPT-G11-B05-C03">Quay lại câu C03 trong Core/Luyện tập</a></p>
 </details>
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-B05-02"><summary>Tự khắc phục lỗi 2</summary>
+<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-B05-02"><summary>Bị chặn: chứng minh cho mọi số hạng</summary>
 
 1. Nhận lỗi: thấy vài số hạng rồi kết luận bị chặn.
 2. Chọn bất đẳng thức đúng với mọi n≥1.
 3. Đổi u_n=1−1/(n+1) để nhận ra 1/2≤u_n<1.
 4. Nhớ cận trên không nhất thiết là số hạng đạt được.
 5. Trở về P04/P08, tự chứng minh với mọi n.
+
+<p><a href="../luyen-tap/?item=THPT-G11-B05-P04">Quay lại câu P04 trong Core/Luyện tập</a></p>
 </details>
 
 ## 5. Tiếp tục
