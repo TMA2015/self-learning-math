@@ -12,8 +12,8 @@ TEST_EXPOSURE: PUBLIC_FORMATIVE_ONLY / CLIENT_SELF_CHECK_NO_MASTERY; NO PRIVATE 
 RELEASE_AUTHORIZATION: NO
 
 ## A. SOURCE_RECEIPT — exact canonical original files included below UNCHANGED
-- 1) `prototypes/thpt/review-packets/Temp_G11_SGK_EXPERIENCE_P99_P104_PUBLIC_D1_D6_AUTHOR_R00_20261102.md`, **original Git blob SHA `4ebee7e195bbb3272dff343860d41d0137bed0f8`**, UTF-16 content length 26418; all original author exercise questions, explanations, worked examples, rubric and HELP reproduced below without modification.
-- 2) `prototypes/thpt/review-packets/Temp_G11_SGK_YEAR_END_P105_P109_PUBLIC_D1_D6_AUTHOR_R00_20261102.md`, **original Git blob SHA `00a6b92cc870141297a0978d0fa0a8c6ba682ab2`**, UTF-16 content length 36932; all original author exercise questions, explanations, worked examples, rubric and HELP reproduced below without modification.
+- 1) `prototypes/thpt/review-packets/Temp_G11_SGK_EXPERIENCE_P99_P104_PUBLIC_D1_D6_AUTHOR_R00_20261102.md`, **original Git blob SHA `7d369b8e6c3aa25fcfcbe5e10418d87f59d4b8e5`**, UTF-16 content length 26418; all original author exercise questions, explanations, worked examples, rubric and HELP reproduced below without modification.
+- 2) `prototypes/thpt/review-packets/Temp_G11_SGK_YEAR_END_P105_P109_PUBLIC_D1_D6_AUTHOR_R00_20261102.md`, **original Git blob SHA `71bc2d8107321c88f4ce7fe8de4f21d9f7593535`**, UTF-16 content length 36932; all original author exercise questions, explanations, worked examples, rubric and HELP reproduced below without modification.
 - SVG 1) `prototypes/thpt/review-packets/Temp_FIG-G11-SUPP-E01-01_R00.svg`, Git blob SHA `c5c85a8f2bddc305515f2a46692ca7a0943f709c`; XML source included in Part D below (not a substitute for raster visual QA).
 - SVG 2) `prototypes/thpt/review-packets/Temp_FIG-G11-SUPP-E01-02_R00.svg`, Git blob SHA `a11fb6984ba634f8f3eab32e239e670d9cf55884`; XML source included in Part D below (not a substitute for raster visual QA).
 - SVG 3) `prototypes/thpt/review-packets/Temp_FIG-G11-SUPP-E02-01_R00.svg`, Git blob SHA `5aa8d1e7f7a1830198ad9006cd507a547d7aeca4`; XML source included in Part D below (not a substitute for raster visual QA).
@@ -25,7 +25,7 @@ RELEASE_AUTHORIZATION: NO
 
 **One normative standard Q01–Q18** applies; new source requires independent Academic and PED judgments separately BY LESSON/OUTCOME/ITEM, using exactly 5 current Permanent v2.1 sources plus original S1. Comparing only item counts or prior ChI–IX PASS does not qualify.
 
-**Expected author inventory:** E01/E02 experience 11 outcomes, 12 worked examples, 21 D3 +6 Written =27 public canonical, 5 D5 original SVG, 7 HELP; Year-End annual revision 11 outcomes, 16 guided examples, 31 D3+10 Written =41 public canonical, 3 D5 original SVG, 11 HELP. Total 22 outcomes, 68 unique public canonical, 8 original SVG, 18 D6 HELP. SGK end-year original pp105–109 has 38 book exercises, SBT annual pp66–72 has 43; candidate exercises are ORIGINAL and must not be mistakenly matched verbatim to publisher texts.
+**Expected author inventory:** E01/E02 experience 11 outcomes, 12 worked examples, 21 D3 +6 Written =27 public canonical, 5 D5 original SVG, 11 HELP; Year-End annual revision 11 outcomes, 16 guided examples, 31 D3+10 Written =41 public canonical, 3 D5 original SVG, 12 HELP. Total 22 outcomes, 68 unique public canonical, 8 original SVG, 23 D6 HELP. SGK end-year original pp105–109 has 38 book exercises, SBT annual pp66–72 has 43; candidate exercises are ORIGINAL and must not be mistakenly matched verbatim to publisher texts.
 
 ## B. EXACT ORIGINAL PUBLIC SOURCE 1 — SGK pp99–104 EXPERIENCE (BEGIN, no paraphrasing)
 
@@ -275,7 +275,7 @@ FIG-G11-SUPP-E02-02: two planes sharing intersection d, correct normal section w
 FIG-G11-SUPP-E02-03: four steps prism ABC.A'B'C' (base, parallel copy, matching edges, dashed hidden edges) and note skew vs right prism.
 Five actual source SVGs have been authored and linked below; their rendering and educational correctness await independent NotebookLM Q07/PED4 and later RELEASE AP3.
 
-## D6 — 7 five-step HELP/return-item remediation
+## D6 — 11 five-step HELP/return-item remediation
 ### HELP-G11-SUPP-E01-01 | skill_id=G11-E01-EXPONENTIAL_MODEL | return_item=THPT-G11-SUPP-E01-P01
 1. Chẩn đoán: Cộng số tăng cố định thay vì nhân 1+r?
 2. Bản chất: Mỗi năm nhân trên tổng năm trước.
@@ -327,7 +327,7 @@ Five actual source SVGs have been authored and linked below; their rendering and
 
 
 ## SOURCE-LOCKED NOTEBOOKLM REVIEW GATE — AUTHOR CANDIDATE ONLY
-Exactly 11 RD0 outcomes, 12 D2 guided examples, 21 D3 unique Core/Practice/Application, 6 D4 Written with 3 Anchor tags, 5 D5 original SVG files authored (independent reviewer verdict pending), 7 D6 HELP. One item ID per question, primary outcome in heading, protected RD1 absent from this public source. All items are original, not copies of source S1 text.
+Exactly 11 RD0 outcomes, 12 D2 guided examples, 21 D3 unique Core/Practice/Application, 6 D4 Written with 3 Anchor tags, 5 D5 original SVG files authored (independent reviewer verdict pending), 11 D6 HELP. One item ID per question, primary outcome in heading, protected RD1 absent from this public source. All items are original, not copies of source S1 text.
 Academic/PED independent PASS has **not been obtained** for this new SGK experiential supplement; must review using the five permanent THPT v2.1 sources and owner SGK/SBT originals. Q07/PED4 `ORIGINAL_SVG_CREATED_REVIEW_PENDING`, Q18 `NOTEBOOKLM_VERDICT_PENDING` prevent CONTENT_READY. SGK cross-chapter supplement scope does not create Chapter X nor replace independently tested SGK/Topic readiness. Release authorization NO.
 
 
@@ -338,6 +338,36 @@ Academic/PED independent PASS has **not been obtained** for this new SGK experie
 - `prototypes/thpt/review-packets/Temp_FIG-G11-SUPP-E02-02_R00.svg` — original authored figure, review against lesson teaching claims and visual labels required.
 - `prototypes/thpt/review-packets/Temp_FIG-G11-SUPP-E02-03_R00.svg` — original authored figure, review against lesson teaching claims and visual labels required.
 These are real SVG sources, **not merely specifications**, but authoring structural render validation and independent NotebookLM Q07/PED4 are still required before Academic/PED CONTENT_READY. RELEASE AP3 later checks the exact HTML/rasterized figure on devices.
+
+
+## D6 OUTCOME-COVERAGE ADDENDUM — actual recovery support for previously uncovered RD0 outcomes
+### HELP-G11-SUPP-E01-05 | skill_id=G11-E01-RICHTER_SCALE | return_item=THPT-G11-SUPP-E01-P04
+1. Chẩn đoán: Nhầm mức M với năng lượng động đất.
+2. Bản chất: M=log10(I/S) ở đây chỉ mô tả **biên độ** theo tỉ số.
+3. Gỡ lỗi và giới hạn: ΔM=log10(I1/I2), kiểm I1,I2>0.
+4. Tự thử khác câu gốc: I1/I2=100 ⇒ ΔM=2.
+5. Quay lại câu canonical: Quay lại P04, không suy năng lượng từ hệ số biên độ.
+
+### HELP-G11-SUPP-E01-06 | skill_id=G11-E01-MODEL_ASSUMPTIONS | return_item=THPT-G11-SUPP-E01-P06
+1. Chẩn đoán: Ngoại suy mà không ghi tốc độ không đổi.
+2. Bản chất: Lũy thừa là dự báo có giả định dữ liệu và tốc độ thay đổi theo một quy tắc.
+3. Gỡ lỗi và giới hạn: Viết mốc A0, đơn vị t, miền dự báo và điều kiện môi trường.
+4. Tự thử khác câu gốc: Nếu r năm sau khác năm trước, A0(1+r)^n không còn đúng với r cố định.
+5. Quay lại câu canonical: Quay lại P06 và nêu ít nhất hai giới hạn.
+
+### HELP-G11-SUPP-E02-04 | skill_id=G11-E02-NET_CONSTRUCTION | return_item=THPT-G11-SUPP-E02-P01
+1. Chẩn đoán: Không kiểm cặp mép trước khi gấp giấy.
+2. Bản chất: Đáy/mặt bên phải cùng kích thước tại mép dán; hộp không nắp thiếu một mặt.
+3. Gỡ lỗi và giới hạn: Đánh số cặp cạnh cùng chiều dài và đánh dấu mặt cần bỏ.
+4. Tự thử khác câu gốc: Hộp vuông không nắp có 5 mặt, không phải 6.
+5. Quay lại câu canonical: Quay lại P01, giải thích điều kiện có thể khép.
+
+### HELP-G11-SUPP-E02-05 | skill_id=G11-E02-GEOGEBRA_REPRESENTATION | return_item=THPT-G11-SUPP-E02-P05
+1. Chẩn đoán: Vẽ cạnh khuất nét liền và nối nhầm đỉnh.
+2. Bản chất: Hai đáy song song, các đỉnh tương ứng tạo cạnh bên song song; cạnh khuất dùng nét đứt.
+3. Gỡ lỗi và giới hạn: Đánh nhãn A↔A', B↔B', C↔C', kiểm sự song song.
+4. Tự thử khác câu gốc: Vẽ hai tam giác bằng nhau rồi nối đúng ba cặp đỉnh.
+5. Quay lại câu canonical: Quay lại P05, tách điều đã chứng minh với điều chỉ nhìn thấy trên hình.
 
 
 ## END OF ORIGINAL PUBLIC SOURCE 1 — DO NOT READ AS SOURCE 2
@@ -717,7 +747,7 @@ Anchor is a label of the same Written question, never a duplicate; self-assessed
 - FIG-G11-YR-03: hai vòng Venn A,B: chỉ A=0,3, giao=0,2, chỉ B=0,2, ngoài=0,3, cho P(A)=0,5,P(B)=0,4 và hợp=0,7. Không đặt sai số vùng.
 Three original source SVGs have been committed, but independent diagram mathematical correctness/visual rendering and NotebookLM Q07/PED4 PASS remain pending.
 
-## D6 — 11 five-step HELP / return to canonical exercise
+## D6 — 12 five-step HELP / return to canonical exercise
 ### HELP-G11-YR-TRIG-01 | skill_id=G11-YR-TRIG_IDENTITY | return_item=THPT-G11-YR-TRIG-P01
 1. Chẩn đoán lỗ hổng: Sai chu kì vì quên hệ số của x.
 2. Bản chất: Hàm sin có chu kì 2π theo biến ở trong ngoặc.
@@ -797,8 +827,8 @@ Three original source SVGs have been committed, but independent diagram mathemat
 
 
 ## INDEPENDENT REVIEW GATE — NOT YET PASS
-Author original source cross-references owner SGK 38/38 published year-end problems and SBT 43/43 annual items by domain, without duplicating publisher exercise text. 11 distinct RD0 outcomes including cross-remediation, 16 reasoned worked examples, 31 canonical public Core/Practice/Application, 10 Written/Anchor with real /4 rubrics, and 11 D6 return paths. Three original D5 SVG source files have been authored but not yet independently reviewed.
-Q01 original S1 printed/PDF-index with SHA verified; Q02–Q06 and Q09–Q15 author QA to audit per outcome; Q07 actual original SVG sources exist; independent visual/math QA is pending; Q08 11 D6; Q16 public self-check not independent RD1/Mastery; Q17 SGK cross-chapter path separate Topic; Q18 exact Git blob and independent NotebookLM Academic+PED verdict **PENDING** using exactly five current v2.1 Permanent Sources plus original S1. This is new academic content, cannot inherit PASS from ChI–IX or from legacy annual source.
+Author original source cross-references owner SGK 38/38 published year-end problems and SBT 43/43 annual items by domain, without duplicating publisher exercise text. 11 distinct RD0 outcomes including cross-remediation, 16 reasoned worked examples, 31 canonical public Core/Practice/Application, 10 Written/Anchor with real /4 rubrics, and 12 D6 return paths. Three original D5 SVG source files have been authored but not yet independently reviewed.
+Q01 original S1 printed/PDF-index with SHA verified; Q02–Q06 and Q09–Q15 author QA to audit per outcome; Q07 actual original SVG sources exist; independent visual/math QA is pending; Q08 12 D6; Q16 public self-check not independent RD1/Mastery; Q17 SGK cross-chapter path separate Topic; Q18 exact Git blob and independent NotebookLM Academic+PED verdict **PENDING** using exactly five current v2.1 Permanent Sources plus original S1. This is new academic content, cannot inherit PASS from ChI–IX or from legacy annual source.
 
 
 ## D5 SOURCE FILE COMPLETION — 3 actual original SVG files committed, structural QA still pending
@@ -806,6 +836,15 @@ Q01 original S1 printed/PDF-index with SHA verified; Q02–Q06 and Q09–Q15 aut
 - `prototypes/thpt/review-packets/Temp_FIG-G11-YR-02_R00.svg` — original authored figure, review against lesson teaching claims and visual labels required.
 - `prototypes/thpt/review-packets/Temp_FIG-G11-YR-03_R00.svg` — original authored figure, review against lesson teaching claims and visual labels required.
 These are real SVG sources, **not merely specifications**, but authoring structural render validation and independent NotebookLM Q07/PED4 are still required before Academic/PED CONTENT_READY. RELEASE AP3 later checks the exact HTML/rasterized figure on devices.
+
+
+## D6 OUTCOME-COVERAGE ADDENDUM — actual recovery support for previously uncovered RD0 outcomes
+### HELP-G11-YR-INTEGRATE-01 | skill_id=G11-YR_CROSS_CHAPTER_REMEDIATION | return_item=THPT-G11-YR-INT-P01
+1. Chẩn đoán: Đếm tổng số câu sai mà không biết chỗ sai gốc.
+2. Bản chất: Mỗi câu có một outcome chính; quay lại phần nền tảng đúng chương rồi tự thử mới.
+3. Gỡ lỗi và giới hạn: Phân loại lỗi: điều kiện/định nghĩa, phương pháp, tính toán, biểu diễn/đơn vị, sau đó định tuyến.
+4. Tự thử khác câu gốc: Bài log sai do đối số âm ⇒ ôn log domain; bài hình sai do hình chiếu ⇒ ôn vuông góc.
+5. Quay lại câu canonical: Quay lại INT-P01 và chỉ hai đường khắc phục khác nhau.
 
 
 ## END OF ORIGINAL PUBLIC SOURCE 2
