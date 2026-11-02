@@ -18,7 +18,7 @@ const images=[
  "Temp_FIG-G11-YR-01_R00.svg","Temp_FIG-G11-YR-02_R00.svg","Temp_FIG-G11-YR-03_R00.svg"
 ];
 const read=f=>fs.readFileSync(path.join(root,f),"utf8");
-const sha=s=>crypto.createHash("sha1").update(Buffer.from("blob "+Buffer.byteLength(s)+"\\0")).update(s,"utf8").digest("hex");
+const sha=s=>crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+Buffer.byteLength(s),"utf8"),Buffer.from([0]),Buffer.from(s,"utf8")])).digest("hex");
 const text=read(review), globalItems=new Set(), globalOutcomes=new Set(), stats=[];
 const expected=[{outcomes:11,items:27,worked:12,written:6,help:11},{outcomes:11,items:41,worked:16,written:10,help:12}];
 const getMatches=(s,re,project)=>([...s.matchAll(re)]).map(project);
