@@ -37,6 +37,10 @@ Hàm **liên tục trên đoạn đóng, hữu hạn** [a,b] luôn đạt cả G
 
 Đọc hàng x và đánh dấu *các biên được lấy* bằng ngoặc vuông hoặc chấm đặc, dấu tròn rỗng nếu bị loại; đọc hàng f' để xác định đỉnh/đáy; đọc hàng f và đối chiếu **giá trị tại điểm biên**. Chỉ có bảng dấu và cực trị cục bộ chưa đủ nếu không so các biên. Hình tự vẽ khi cần: đường parabol y=−(x−3)²+8 trên [0,4] đạt GTLN ở 3; GTNN là f(0)=−1 chứ không ở một cực tiểu nội.
 
+## D5 / PED4: Hình gốc và cách đọc đoạn đóng
+
+FIG-G12-B02-01 (G12_B02_FIG01_GLOBAL_MIN_MAX_CLOSED_INTERVAL_R00.svg): đồ thị chính xác của f=x²−4x+1 chỉ trên [0,5], đánh dấu cả ba ứng viên x=0,2,5 bằng chấm đặc. Bước đọc: (1) nhận diện 0,5 là biên được lấy; (2) xác định đỉnh x=2, f=−3; (3) so f(0)=1, f(2)=−3, f(5)=6 để thấy GTLN ở biên x=5; (4) thay đoạn mở (0,5) thì không thể kết luận vẫn có max6 ở biên. Nét đồ thị ngoài đoạn không phải phần miền đang xét.
+
 ## D2 / PED5: Ví dụ dẫn dắt, có lý do chọn phương pháp
 
 ### EX-G12-B02-01
