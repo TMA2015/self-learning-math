@@ -47,6 +47,7 @@ assert(config.includes("assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formati
 assert(preview.includes("chuong-i/bai-3.md")&&preview.includes("chuong-i/bai-4.md"));
 assert(preview.includes("assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js"),"Preview must load reviewed G11 bank before R4 modal runtime");
 const readiness=read("docs/thpt-preview/sgk/lop-11/chuong-i/tu-kiem-tra-chuong.md");
-assert(readiness.includes("CHƯA KÍCH HOẠT"),"Do not claim readiness released without independent approved engine");
+assert(readiness.includes('data-g11-chapter-selfcheck="CHI"'),"Client-only voluntary selfcheck route must be active");
+assert(readiness.includes("không thay thế đánh giá độc lập"),"Do not claim independent readiness");
 assert(!runtime.includes("g11-b3-scores")&&!runtime.includes("g11-b4-scores"));
-console.log("PASS G11 ChI B03/B04 staged 26 source-locked Core/Practice, 2 new shared Written, 4 SVG, 4 D6; 42 formative IDs total and independent RD1 still HOLD");
+console.log("PASS G11 ChI B03/B04 staged 26 source-locked Core/Practice, 2 new shared Written, 4 SVG, 4 D6; 42 formative IDs total and independent Readiness and Mastery remain OFF");
