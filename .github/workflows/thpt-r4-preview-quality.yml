@@ -203,6 +203,8 @@ jobs:
         run: node scripts/test-thpt-g11-chi-b01-b02-release-integration.cjs
       - name: Guard G11 ChI B03/B04 additional 26 canonical and D1-D6 source lock
         run: node scripts/test-thpt-g11-chi-b03-b04-release-integration.cjs
+      - name: Guard G11 B03/B04 AP1 section layout preserves source mathematics
+        run: node scripts/test-thpt-g11-chi-ap1-layout-parity.cjs
       - name: Guard G11 ChI PED/AP HOLD and chapter self-check release boundary
         run: node scripts/test-thpt-g11-chi-ped-release-gates.cjs
       - name: Guard G10 ChIX source-locked public formative and reviewed D5/D6
