@@ -4,6 +4,7 @@
 
 | Gói | Hành trình | Trạng thái | Phạm vi | PR / nguồn |
 |---|---|---|---|---|
+| [G12-SGK-CHI-B01-B05-R00](ready/G12-SGK-CHI-B01-B05-R00.md) | SGK_CHAPTER | CONTENT_READY | FULL_LEARNING_PATH | Owner independent NotebookLM v2.1 Academic/PED PASS; 5 SGK lessons + public end self-check, 36 RD0 outcomes/78 canonical/6 SVG/36 HELP, original source Git f0862dcdab21dec136e43969f45c42638e7c7574, reviewer Git fc0088f592f9b71f581b767925f0458f86bb96b4, receipt Git 8fef1c7dbd9b404881ff40cec8147c9ae89ef473. No official RD1/Mastery; RELEASE AP/R/P and owner authority HOLD. |
 | [G11-SGK-CHI-B01-B04](ready/G11-SGK-CHI-B01-B04.md) | SGK_CHAPTER | CONTENT_READY | FULL_LEARNING_PATH | Source R03 Academic/PED PASS; integrated PR #697 46 public + voluntary 20 Written Final Submit, AP1–AP5/R1–R5 QA receipts from head 3a02b1d PASS; initial V2 manifest stays CONTENT_READY until final-head CI/release and P1 (no independent Readiness/Mastery) |
 | [G11-SGK-CHI-B01-B02](ready/G11-SGK-CHI-B01-B02.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | source #627 merged; release #650 R1–R5 evidence, exact-final-head CI before merge/deploy; B01–B02 only |
 | [G10-SGK-CHIV-B09-B11](ready/G10-SGK-CHIV-B09-B11.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY B09–B11 | source #637 merged; release #648 R1–R5 candidate QA PASS, final metadata-head dual CI required |
