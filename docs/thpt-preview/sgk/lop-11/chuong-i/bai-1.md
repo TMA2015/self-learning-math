@@ -22,11 +22,9 @@ Một bánh xe bán kính 2 cm quay trọn một vòng ngược chiều kim đ�
 
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Đã thử xong? Mở hướng dẫn đối chiếu</summary>
 
-Góc +2π rad, độ dài 4π cm. Hai tia cuối trùng nhau không có nghĩa bánh xe không quay. Nếu chưa chắc, đọc lại phần giải thích radian và Ví dụ 3, rồi làm Core `THPT-G11-B01-C01`.
+Góc +2π rad, độ dài 4π cm. Hai tia cuối trùng nhau không có nghĩa bánh xe không quay. Nếu chưa chắc, đọc lại phần giải thích radian và Ví dụ 3, rồi làm câu Core đầu tiên của bài.
 
 </details>
-
-<span data-reviewed-ped-source="G11-CHI-R03" hidden aria-hidden="true"></span>
 
 ## 1. Kiến thức SGK
 
@@ -58,13 +56,7 @@ s=R|α|
 
 Không dùng trực tiếp độ cho công thức này; góc 180° chắn cung nửa đường tròn dài \(πR\).
 
-### Hướng suy luận trong các ví dụ
-
-- `EX-G11-B01-01`: dùng đổi độ–radian theo tỷ lệ 180°=π rad; chỉ **sau** đó mới quy góc về tia cuối nếu bài toán yêu cầu, không làm mất chiều quay khi tính quãng đường.
-- `EX-G11-B01-02`: định góc phần tư và điểm trên đường tròn trước khi lấy dấu; góc tham chiếu π/6 cho **độ lớn**, vị trí ở góc phần tư II quyết định dấu.
-- `EX-G11-B01-03`: cung dài không âm; lấy độ lớn của góc quay thực tế và nhân bán kính, không lấy số đo góc đã quy về một vòng.
-
-## 3. Đường tròn lượng giác
+### 3. Đường tròn lượng giác
 
 **Điểm cuối.** Gắn O với gốc tọa độ, bán kính đơn vị. Khi quay từ trục Ox dương, điểm cuối trên đường tròn là:
 
@@ -151,13 +143,19 @@ Tại \(α=5π/6\), sin dương, cos âm vì góc phần tư II; \(sin(5π/6)=si
 
 Bánh xe bán kính \(30 cm\) quay góc \(−2π/3 rad\); độ dài cung quét trên vành là \(30×|−2π/3|=20π cm\). Dấu trừ chỉ chiều quay, không làm độ dài âm. Nếu xe quay qua hơn một vòng, tổng quãng đường phải dùng độ lớn góc quay **thực tế**, không chỉ góc quy về \([0,2π)\).
 
+## Hướng suy luận trong các ví dụ
+
+- **Ví dụ 01:** dùng đổi độ–radian theo tỷ lệ 180°=π rad; chỉ **sau** đó mới quy góc về tia cuối nếu bài toán yêu cầu, không làm mất chiều quay khi tính quãng đường.
+- **Ví dụ 02:** định góc phần tư và điểm trên đường tròn trước khi lấy dấu; góc tham chiếu π/6 cho **độ lớn**, vị trí ở góc phần tư II quyết định dấu.
+- **Ví dụ 03:** cung dài không âm; lấy độ lớn của góc quay thực tế và nhân bán kính, không lấy số đo góc đã quy về một vòng.
+
 ## 3. Hình minh họa
 
 <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../../assets/images/thpt/THPT_G11_B01_UNIT_CIRCLE_5PI6_D5_R01.svg" loading="lazy" alt="Điểm M tại góc 5π/6 trên đường tròn lượng giác"><figcaption>Điểm M tại góc 5π/6 trên đường tròn lượng giác.</figcaption></figure>
 
 ### Hướng dẫn đọc hình, đồ thị
 
-- **B01/FIG-G11-B01-01:** tìm tâm O, tia đầu Ox dương và tia cuối OM, xác định góc quay cùng/ ngược chiều và góc phần tư của M. Đọc hoành độ M → cos α, tung độ M → sin α; hai góc cùng tia cuối có thể khác **số vòng**. Trước khi dùng hình để suy dấu tan/cot, kiểm mẫu khác 0.
+- **Hình minh họa:** tìm tâm O, tia đầu Ox dương và tia cuối OM, xác định góc quay cùng/ ngược chiều và góc phần tư của M. Đọc hoành độ M → cos α, tung độ M → sin α; hai góc cùng tia cuối có thể khác **số vòng**. Trước khi dùng hình để suy dấu tan/cot, kiểm mẫu khác 0.
 
 ## 4. Tự khắc phục lỗi thường gặp
 
