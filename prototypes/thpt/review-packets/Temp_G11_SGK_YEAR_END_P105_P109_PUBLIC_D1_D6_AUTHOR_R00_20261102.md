@@ -51,3 +51,85 @@ Actual owner original SGK 11 KNTT Tập Hai p105–109 / PDF1 p106–110, SHA256
 
 ## ASSESSMENT SCOPE BOUNDARY
 Public tasks are formative and transparent after own Submit only. The original SGK end-year review is **practice/revision** within the independent SGK journey, never public held-out `SGK_CHAPTER_READINESS`, and not TOPIC_READINESS. No official Mastery writes, no hidden RD1 answer/key exposure, no automatic grading of self-compared written work. Each new canonical item below has exactly one primary existing outcome; optional cross-chapter placement is non-duplicating.
+
+
+## D1 — TEN cross-chapter concept-first recovery tracks (all original academic explanations)
+### D1.TRIG — G11-YR-TRIG_IDENTITY
+**PED1 WHY:** Tại sao ôn lượng giác trước khi giải phương trình tuần hoàn?
+**PED2 Prerequisites:** Góc đo radian, đơn vị vòng, dấu sin/cos từng góc, chu kì cơ bản và miền tan/cot.
+**PED3 Essence → conditions → method:** Bản chất cộng góc là phép quay, không phải nhân hai giá trị; cos(a+b)=cos a cos b−sin a sin b. Chu kì của sin/cos là 2π, tan/cot là π trên miền xác định. Với phương trình phải liệt kê họ nghiệm rồi lọc miền.
+**PED5 Example with choice rationale:** Ví dụ sin(x)=sin(π/6) cho x=π/6+2kπ hoặc x=5π/6+2kπ, không lấy một nghiệm duy nhất.
+**PED4 Figure reading:** Đọc đồ thị y=sin x: hai điểm liên tiếp cùng trạng thái cách nhau 2π, đường bị ngắt ở tan không được coi liên tục toàn R.
+**PED6 Self-try BEFORE Core:** Tự thử: cos(π/2+x) bằng gì? Dấu và chu kì hàm cos?
+
+### D1.SEQUENCE — G11-YR-SEQUENCE_MODEL
+**PED1 WHY:** Vì sao hai hợp đồng lương cần hai kiểu dãy số khác nhau?
+**PED2 Prerequisites:** Số hạng đầu, công sai/công bội và cách tính tổng hữu hạn, phép lấy chênh/tỉ số.
+**PED3 Essence → conditions → method:** Tăng thêm khoản cố định là cấp số cộng u_n=u1+(n−1)d; tăng theo tỉ lệ là cấp số nhân v_n=v1 q^(n−1). Tổng phải cộng các số hạng theo từng năm; không nhầm năm thứ n với tổng n năm.
+**PED5 Example with choice rationale:** Ví dụ hợp đồng A u1=100, mỗi năm +10 ⇒ năm 4 là130, tổng 4 năm=460. Hợp đồng B v1=100, mỗi năm +10% ⇒ năm4=133,1, tổng4≈464,1.
+**PED4 Figure reading:** Đọc bảng năm và tiền: quan sát chênh cố định ở A, tỉ số cố định ở B; đường biểu diễn không tuyến tính như nhau.
+**PED6 Self-try BEFORE Core:** Tự thử: 4,7,10,... có công sai? 4,8,16,... có công bội?
+
+### D1.LIMIT — G11-YR-LIMIT_CONTINUITY
+**PED1 WHY:** Vì sao chỉ thế x=a vào biểu thức đôi khi dẫn đến 0/0 vô nghĩa?
+**PED2 Prerequisites:** Điều kiện biểu thức, nhân tử, liên tục tại điểm và giới hạn trái/phải.
+**PED3 Essence → conditions → method:** Giới hạn đo giá trị khi tiến gần a, không phụ thuộc riêng f(a); 0/0 báo cần biến đổi chứ không có nghĩa giới hạn bằng 0. Để liên tục tại a cần f(a) xác định và bằng giới hạn hai phía hữu hạn.
+**PED5 Example with choice rationale:** Ví dụ lim(x→3)(x²−9)/(x−3)=lim(x→3)(x+3)=6 vì x≠3 khi xét giới hạn; muốn liên tục tại x=3 gán f(3)=6.
+**PED4 Figure reading:** Đọc hai nhánh trên đồ thị: nếu đến điểm từ trái/phải lệch nhau thì không thể kết luận giới hạn chung dù có chấm đặc.
+**PED6 Self-try BEFORE Core:** Tự thử: lim(x→2)(x²−4)/(x−2) bằng? Vì sao không thay trực tiếp 0/0?
+
+### D1.EXPLOG — G11-YR-EXP_LOG_DOMAIN
+**PED1 WHY:** Vì sao phải xét miền log trước khi dùng tính đơn điệu?
+**PED2 Prerequisites:** Hàm mũ cơ số a>0 và a≠1; log_a(x) chỉ cho x>0, chiều bất đẳng thức phụ thuộc a.
+**PED3 Essence → conditions → method:** Lũy thừa/mũ là hàm đơn ánh, log là hàm ngược với miền dương. Giải log_a(f(x))=k đòi f(x)>0 và đưa về f(x)=a^k; nếu 0<a<1, log giảm nên chiều bất đẳng thức đổi khi lấy log của hai số dương.
+**PED5 Example with choice rationale:** Ví dụ log_2(x−1)=3 ⇒ x>1 và x−1=8 ⇒ x=9. Câu x=−7 từ bỏ qua miền là sai.
+**PED4 Figure reading:** Đọc đồ thị y=a^x: cắt trục tung (0,1), tăng nếu a>1 và giảm nếu 0<a<1; không có giá trị âm.
+**PED6 Self-try BEFORE Core:** Tự thử: 2^(x−1)=8; log_3(x+2)=2 có miền nào?
+
+### D1.DERIV — G11-YR-DERIVATIVE_RATE
+**PED1 WHY:** Đạo hàm khác tốc độ trung bình và gia tốc thế nào?
+**PED2 Prerequisites:** Giới hạn thương sai phân, đạo hàm hàm hợp, tiếp tuyến, điều kiện khả vi.
+**PED3 Essence → conditions → method:** f'(a) là độ dốc tiếp tuyến tức thời; đạo hàm tích uv là u'v+uv', không phải u'v'. Với chuyển động có vị trí s(t), v=s' (có hướng), a=s'', tốc độ là |v|. Vật nhanh dần khi v·a>0, chậm dần khi v·a<0 tại v≠0, không chỉ nhìn dấu a.
+**PED5 Example with choice rationale:** Ví dụ s(t)=t³−3t² có v=3t²−6t, a=6t−6; tại t=2 v=0, a=6 nên không được dựa dấu gia tốc để nói đang nhanh dần ngay tại điểm dừng.
+**PED4 Figure reading:** Đọc đồ thị và tiếp tuyến: dấu độ dốc không phải tung độ, góc nhọn hàm |x| tại 0 không có đạo hàm hai phía.
+**PED6 Self-try BEFORE Core:** Tự thử: đạo hàm (x²+1)sin x gồm mấy hạng?
+
+### D1.SPACE — G11-YR-SPACE_PERP_DISTANCE
+**PED1 WHY:** Vì sao hình hộp trên giấy dễ khiến ta tưởng hai đoạn vuông góc?
+**PED2 Prerequisites:** Điều kiện hai phương cắt nhau khi chứng minh vuông góc mặt phẳng, pháp tuyến, hình chiếu, góc nhị diện và đoạn vuông góc chung.
+**PED3 Essence → conditions → method:** Khoảng cách điểm đến mặt phẳng là độ dài đường vuông góc; góc giữa đường và mặt phẳng đo với hình chiếu lên mặt; hai đường chéo nhau chỉ có thể xét khoảng cách khi xác định đoạn vuông góc chung hoặc dựng mặt song song hợp lệ. Không dùng trực giác trên phối cảnh.
+**PED5 Example with choice rationale:** Ví dụ một cột vuông góc hai đường cắt nhau trong nền ⇒ cột vuông góc cả nền; chỉ vuông góc hai đường song song chưa đủ.
+**PED4 Figure reading:** Đọc hình 3D: phân biệt đoạn nét đứt khuất, đường cao, cạnh xiên, góc giữa mặt (qua cắt vuông góc giao tuyến).
+**PED6 Self-try BEFORE Core:** Tự thử: hai đường cắt nhau trong mặt đáy là điều kiện vì sao quan trọng?
+
+### D1.VOLUME — G11-YR-SPACE_VOLUME
+**PED1 WHY:** Vì sao cùng đáy và cao mà thể tích chóp khác lăng trụ?
+**PED2 Prerequisites:** Diện tích đáy, chiều cao vuông góc và đơn vị cm²/cm³, xác định loại khối.
+**PED3 Essence → conditions → method:** Lăng trụ/hộp có V=Sđáy·h; chóp có V=(1/3)Sđáy·h. Điều kiện 'cùng đáy, cùng chiều cao' cho phép so tỉ lệ 1:3; cạnh bên xiên không mặc định là chiều cao.
+**PED5 Example with choice rationale:** Ví dụ Sđáy=24cm² và h=6cm: lăng trụ V=144cm³, chóp V=48cm³.
+**PED4 Figure reading:** Đọc hình khối: đáy là mặt nào, h có dấu vuông góc ở chân nào, công thức cần chiều cao chứ không dùng đường chéo.
+**PED6 Self-try BEFORE Core:** Tự thử: hình chóp có Sđáy=18cm², h=3cm, V=?
+
+### D1.STAT — G11-YR-GROUPED_STATS
+**PED1 WHY:** Tại sao dữ liệu chia nhóm chỉ cho phép ước lượng vị trí, không cho biết từng giá trị thật?
+**PED2 Prerequisites:** Bảng tần số, lớp chứa trung vị và mốt, chiều rộng khoảng lớp, tần số tích lũy.
+**PED3 Essence → conditions → method:** Với n quan sát, xác định nhóm có vị trí n/2 trong tần số tích lũy rồi nội suy nếu SGK yêu cầu ước lượng trung vị. Mốt từ nhóm có tần số lớn nhất và công thức nội suy phù hợp; không nhầm trung điểm lớp với trung vị chắc chắn.
+**PED5 Example with choice rationale:** Ví dụ ba nhóm [0,10),[10,20),[20,30) có số 2,5,3 (n=10): vị trí thứ 5 thuộc nhóm [10,20), nên trung vị nằm trong nhóm đó, ước lượng theo giả định phân bố đều trong nhóm là 10+(5−2)/5·10=16.
+**PED4 Figure reading:** Đọc biểu đồ tần số: bề ngang nhóm có thể bằng nhau, chiều cao nhóm là tần số, không đọc dữ liệu cá nhân từ một cột.
+**PED6 Self-try BEFORE Core:** Tự thử: nhóm chứa trung vị khi tần số tích lũy 3,9,15 và n=15?
+
+### D1.PROB — G11-YR-PROBABILITY_COMBINE
+**PED1 WHY:** Vì sao cộng hai cơ hội có thể đếm trùng?
+**PED2 Prerequisites:** Biến cố là tập kết quả, hợp/giao, xác suất từ 0 tới 1, biến cố độc lập khác xung khắc.
+**PED3 Essence → conditions → method:** P(A∪B)=P(A)+P(B)−P(A∩B) vì phần giao bị cộng hai lần. Nếu A,B độc lập thì P(A∩B)=P(A)P(B); 'ít nhất một' thường tính qua bổ sung 1−P(không cái nào). Độc lập không có nghĩa không thể xảy ra cùng.
+**PED5 Example with choice rationale:** Ví dụ P(A)=0,6, P(B)=0,5, giao=0,3 ⇒ hợp=0,8; tích=0,3 nên dữ liệu phù hợp độc lập (chưa đủ từ chỉ riêng hợp).
+**PED4 Figure reading:** Đọc Venn: miền giao tô hai biến cố, miền hợp tô cả ba vùng; bù tô phần còn lại trong Ω.
+**PED6 Self-try BEFORE Core:** Tự thử: độc lập với P(A)=0,2 và P(B)=0,3, giao bao nhiêu?
+
+### D1.INTEGRATE — G11-YR_CROSS_CHAPTER_REMEDIATION
+**PED1 WHY:** Vì sao cần biết sai do thiếu tiền đề nào chứ không chỉ kiểm đáp số đúng?
+**PED2 Prerequisites:** Kiểm cấu trúc điều kiện, công thức, phép tính, đơn vị, kết luận; đọc rubric tự luận 4 điểm theo chứng cứ.
+**PED3 Essence → conditions → method:** Gắn mỗi lỗi vào đúng một outcome chính, quay lại D1/D2 của chương liên quan, làm câu song song D6 rồi quay lại câu ban đầu; không dùng câu đã xem đáp án làm chứng cứ kiểm tra độc lập.
+**PED5 Example with choice rationale:** Ví dụ bài pH sai do log cơ số/điều kiện thuộc EXPLOG; bài góc nhị diện sai vì hình chiếu thuộc SPACE, dù cả hai có biểu thức lượng giác.
+**PED4 Figure reading:** Đọc bảng ma trận năm học: mỗi hàng là một năng lực có bài/phiên tự học tương ứng, không đếm nhiều placement thành nhiều câu.
+**PED6 Self-try BEFORE Core:** Tự thử: bạn sai ở bước định nghĩa/điều kiện hay ở bước số học? Chọn đường D6 tương ứng.
