@@ -47,6 +47,8 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
       await dlg.waitFor({state:"visible",timeout:15000});
       assert.equal(await dlg.locator("[data-thpt-canonical-item]").first().getAttribute("data-thpt-canonical-item"),id,"Canonical deep link");
       assert((await dlg.locator(".thpt-r4-modal-meta").innerText()).includes("LỚP 11"),"Correct grade");
+      const reviewHref=await dlg.locator(".thpt-r4-remediation-link").getAttribute("href");
+      assert(reviewHref.includes("/sgk/lop-11/chuong-ii/bai-"+lesson+"/"),"Practice remediation must return to G11 ChII B0"+lesson);
       assert.equal(await dlg.locator("details[open]").count(),0,"No pre-attempt solution reveal");
       assert.equal(await dlg.locator(".thpt-r4-formative-feedback").innerText(),"","No premature grading");
       const typed=dlg.locator(".thpt-r4-formative-answer textarea");
