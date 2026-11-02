@@ -84,4 +84,4 @@ CSC 2,5,8,... có d=3, u_{20}=59. S_{20}=20(2+59)/2=610. Thử bằng n[2u1+(n�
 
 ## 5. Tiếp tục
 
-[Core và Luyện tập Bài 6](../luyen-tap/) · [Tự luận Chương II](../../../../thu-vien/tu-luan-g11-chuong-ii/)
+[Core và Luyện tập Bài 6](luyen-tap.md) · [Tự luận Chương II](../../../thu-vien/tu-luan-g11-chuong-ii.md)

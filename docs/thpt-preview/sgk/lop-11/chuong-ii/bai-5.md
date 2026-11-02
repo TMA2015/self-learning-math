@@ -86,4 +86,4 @@ u_n=1/n (n≥1) có u_{n+1}−u_n=−1/[n(n+1)]<0, nên giảm nghiêm ngặt, �
 
 ## 5. Tiếp tục
 
-[Core và Luyện tập Bài 5](../luyen-tap/) · [Tự luận Chương II](../../../../thu-vien/tu-luan-g11-chuong-ii/)
+[Core và Luyện tập Bài 5](luyen-tap.md) · [Tự luận Chương II](../../../thu-vien/tu-luan-g11-chuong-ii.md)

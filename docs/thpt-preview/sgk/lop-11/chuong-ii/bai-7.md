@@ -86,4 +86,4 @@ Vốn V_0=100 triệu đồng, lãi kép 2% mỗi kỳ và không nạp/rút: sa
 
 ## 5. Tiếp tục
 
-[Core và Luyện tập Bài 7](../luyen-tap/) · [Tự luận Chương II](../../../../thu-vien/tu-luan-g11-chuong-ii/)
+[Core và Luyện tập Bài 7](luyen-tap.md) · [Tự luận Chương II](../../../thu-vien/tu-luan-g11-chuong-ii.md)
