@@ -57,6 +57,7 @@ const preview=read("mkdocs.thpt-preview.yml"),main=read("mkdocs.yml"),index=read
 assert(preview.includes("lop-11/chuong-ii/bai-7.md")&&preview.includes("lop-11/chuong-ii/luyen-tap.md"),"THPT preview navigation must include ChII");
 assert(index.includes('href="lop-11/chuong-ii/"')&&index.includes('href="lop-11/chuong-ii/bai-5/"'),"Search entry for ChII/B05");
 assert(main.indexOf("thpt-g11-chii-b05-b07-source-locked-formative-r03.js")>=0&&main.indexOf("thpt-g11-chii-b05-b07-source-locked-formative-r03.js")<main.indexOf("thpt-r4-preview.js"),"Load public bank before Golden router");
+assert(preview.indexOf("thpt-g11-chii-b05-b07-source-locked-formative-r03.js")>=0&&preview.indexOf("thpt-g11-chii-b05-b07-source-locked-formative-r03.js")<preview.indexOf("thpt-r4-preview.js"),"Load G11 ChII public bank before Golden router in R4 preview build as well");
 assert(read("docs/assets/javascripts/thpt-r4-preview.js").includes("THPT_G11_CHII_REVIEWED_FORMATIVE"),"Router must use original bank");
 assert(!fs.existsSync("docs/assets/data/thpt-g11-selfcheck/CHII.json"),"No owner-authorized public ChII selfcheck source");
 assert(!fs.existsSync("docs/thpt-preview/sgk/lop-11/chuong-ii/tu-kiem-tra-chuong.md"),"Do not silently publish ChII Final Submit");
