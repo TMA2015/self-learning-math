@@ -39,9 +39,29 @@ for(const check of checks){
   assert.equal(formulas.length,check.mathCount,check.file+": math expression count changed");
   assert.equal(fnv(JSON.stringify(formulas)),check.mathHash,
     check.file+": source-locked math sequence changed, classify delta before proceeding");
-  assert.equal(fnv(src.slice(0,start)),check.prefixHash,check.file+": lesson header changed");
-  assert.equal(fnv(src.slice(end)),check.suffixHash,
-    check.file+": examples, SVG, HELP, links or solutions changed");
+  // Normalize only the approved B02 lead-copy correction; D1 math, examples and figures stay pinned.
+  let prefix=src.slice(0,start);
+  if(check.file==="docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md"){
+    const current="Chương I gồm Bài 1–4; Bài tự kiểm tra cuối chương chỉ hỗ trợ tự đối chiếu sau Final Submit, không ghi điểm thành thạo.";
+    const frozen="Phạm vi đang công bố chỉ gồm Bài 1–2.";
+    assert(prefix.includes(current),"G11 B02 must show accurate four-lesson chapter scope");
+    assert(prefix.includes("## Trước khi học: Vì sao cần kiến thức này?"),"Reviewed B02 concept-first intro must precede D1");
+    assert(prefix.includes('data-ped-first-try="2"'),"B02 first try must remain independently openable");
+    // Only the new independently reviewed PED intro may precede the original source-locked D1.
+    prefix=prefix.slice(0,prefix.indexOf("## Trước khi học:"));
+    prefix=prefix.replace(current,frozen).replace("Tự kiểm tra · tự đối chiếu","Tự kiểm tra · chưa kích hoạt");
+  }
+  assert.equal(fnv(prefix),check.prefixHash,check.file+": lesson header changed beyond approved UI-only scope");
+  let originalSuffix=src.slice(end);
+  if(check.file==="docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md"){
+    assert(originalSuffix.includes("## Hướng suy luận trong các ví dụ"),"Reviewed B02 PED5 note absent");
+    assert(originalSuffix.includes("### Hướng dẫn đọc hình, đồ thị"),"Reviewed B02 PED4 note absent");
+    // Strip ONLY the added reviewed PED notes to prove original examples/SVG/D6/link bytes remain unchanged.
+    originalSuffix=originalSuffix.replace(/^## Hướng suy luận trong các ví dụ\n\n[\s\S]*?(?=^## 3\. )/m,"")
+      .replace(/^### Hướng dẫn đọc hình, đồ thị\n\n[\s\S]*?(?=^## 4\. )/m,"");
+  }
+  assert.equal(fnv(originalSuffix),check.suffixHash,
+    check.file+": original examples, SVG, HELP, links or solutions changed");
   for(const h of check.groups)assert(middle.includes(h),check.file+": missing "+h);
   for(const h of check.required)assert(middle.includes(h),check.file+": missing "+h);
   if(check.file.includes("chuong-iv/bai-9.md")){

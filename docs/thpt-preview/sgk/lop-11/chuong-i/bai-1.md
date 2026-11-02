@@ -2,9 +2,29 @@
 
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG I · SGK KẾT NỐI TRI THỨC</p>
-<p class="thpt-r4-lead">Học theo SGK từng bước: kiến thức, ví dụ, luyện tập và tự khắc phục lỗi. Phạm vi đang công bố chỉ gồm Bài 1–2.</p>
-<nav class="thpt-r4-lesson-tabs"><a href="../">Chương I</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra · chưa kích hoạt</a></nav>
+<p class="thpt-r4-lead">Học theo SGK từng bước: kiến thức, ví dụ, luyện tập và tự khắc phục lỗi. Chương I gồm Bài 1–4; Bài tự kiểm tra cuối chương chỉ hỗ trợ tự đối chiếu sau Final Submit, không ghi điểm thành thạo.</p>
+<nav class="thpt-r4-lesson-tabs"><a href="../">Chương I</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra · tự đối chiếu</a></nav>
 </div>
+
+## Trước khi học: Vì sao cần kiến thức này?
+
+**Vấn đề:** Khi một bánh xe quay nửa vòng, rồi tiếp tục thêm hai vòng, tia cuối có thể giống nhau nhưng tổng góc quay và quãng đường đi được khác nhau. Góc hình học thông thường chỉ mô tả độ mở, chưa ghi được **chiều quay** và **số vòng quay**. Vì vậy Bài 1 dùng **góc lượng giác có hướng** và số đo radian: góc dương khi quay ngược chiều kim đồng hồ, âm khi quay cùng chiều.
+
+**Kiến thức đã biết → kiến thức mới:** Ở tam giác vuông, với góc nhọn, sin/cos là **tỉ số cạnh đối/huyền, kề/huyền**; tam giác đồng dạng khiến các tỉ số không phụ thuộc kích thước. Nhưng cách này không trực tiếp mô tả góc quay âm hay hơn 180°. Ta đặt điểm M chạy trên **đường tròn bán kính 1**, lấy trục Ox dương làm tia đầu. Khi góc quay là α, **hoành độ** của M chính là cos α và **tung độ** là sin α. Hai tọa độ vừa giải thích ý nghĩa đại lượng vừa tự làm rõ vì sao sin²α+cos²α=1 và mọi sin/cos nằm trong [-1,1]. Chỉ sau cầu nối ấy hãy học cách tính và các điều kiện tan/cot.
+
+**Radian xuất hiện từ đâu?** Với một góc ở tâm có độ lớn α, tỉ số **độ dài cung / bán kính** không phụ thuộc kích thước đường tròn: số đo radian của góc lấy theo tỉ số này, kèm dấu chiều quay. Vì cả vòng có độ dài 2πR nên cả vòng là 2π rad; nửa vòng là π rad. Nếu bánh xe quay ngược chiều 2π rồi quay tiếp 2π, điểm cuối trùng ban đầu nhưng **tổng đường đi** là 4πR, không phải 0.
+
+**Khi nào dùng và điều kiện:** Dùng radian để tính độ dài cung, dùng tọa độ M để tính sin/cos cho góc bất kỳ; tan α chỉ xác định nếu cos α ≠ 0, cot α chỉ xác định nếu sin α ≠ 0. Không coi sin/cos là độ dài có đơn vị.
+
+## Tự thử trước khi luyện tập
+
+Một bánh xe bán kính 2 cm quay trọn một vòng ngược chiều kim đồng hồ. Góc có hướng bao nhiêu radian, và quãng đường cung là bao nhiêu cm? Hãy giải thích vì sao một vòng quay khác “không quay” dù tia cuối giống nhau.
+
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Đã thử xong? Mở hướng dẫn đối chiếu</summary>
+
+Góc +2π rad, độ dài 4π cm. Hai tia cuối trùng nhau không có nghĩa bánh xe không quay. Nếu chưa chắc, đọc lại phần giải thích radian và Ví dụ 3, rồi làm câu Core đầu tiên của bài.
+
+</details>
 
 ## 1. Kiến thức SGK
 
@@ -123,9 +143,19 @@ Tại \(α=5π/6\), sin dương, cos âm vì góc phần tư II; \(sin(5π/6)=si
 
 Bánh xe bán kính \(30 cm\) quay góc \(−2π/3 rad\); độ dài cung quét trên vành là \(30×|−2π/3|=20π cm\). Dấu trừ chỉ chiều quay, không làm độ dài âm. Nếu xe quay qua hơn một vòng, tổng quãng đường phải dùng độ lớn góc quay **thực tế**, không chỉ góc quy về \([0,2π)\).
 
+## Hướng suy luận trong các ví dụ
+
+- **Ví dụ 01:** dùng đổi độ–radian theo tỷ lệ 180°=π rad; chỉ **sau** đó mới quy góc về tia cuối nếu bài toán yêu cầu, không làm mất chiều quay khi tính quãng đường.
+- **Ví dụ 02:** định góc phần tư và điểm trên đường tròn trước khi lấy dấu; góc tham chiếu π/6 cho **độ lớn**, vị trí ở góc phần tư II quyết định dấu.
+- **Ví dụ 03:** cung dài không âm; lấy độ lớn của góc quay thực tế và nhân bán kính, không lấy số đo góc đã quy về một vòng.
+
 ## 3. Hình minh họa
 
 <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../../assets/images/thpt/THPT_G11_B01_UNIT_CIRCLE_5PI6_D5_R01.svg" loading="lazy" alt="Điểm M tại góc 5π/6 trên đường tròn lượng giác"><figcaption>Điểm M tại góc 5π/6 trên đường tròn lượng giác.</figcaption></figure>
+
+### Hướng dẫn đọc hình, đồ thị
+
+- **Hình minh họa:** tìm tâm O, tia đầu Ox dương và tia cuối OM, xác định góc quay cùng/ ngược chiều và góc phần tư của M. Đọc hoành độ M → cos α, tung độ M → sin α; hai góc cùng tia cuối có thể khác **số vòng**. Trước khi dùng hình để suy dấu tan/cot, kiểm mẫu khác 0.
 
 ## 4. Tự khắc phục lỗi thường gặp
 

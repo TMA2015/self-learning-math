@@ -10,7 +10,7 @@ const paths={
  "chuong-vii.md":[19,20,21,22],
  "chuong-viii.md":[23,24,25],
  "chuong-ix.md":[26,27],
- "lop-11/chuong-i.md":[1,2]
+ "lop-11/chuong-i.md":[1,2,3,4]
 };
 let checked=0;
 for(const [name,lessons] of Object.entries(paths)){

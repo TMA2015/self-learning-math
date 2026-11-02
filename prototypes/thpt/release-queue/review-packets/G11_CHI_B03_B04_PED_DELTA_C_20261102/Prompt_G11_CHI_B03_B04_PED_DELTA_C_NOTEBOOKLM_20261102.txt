@@ -1,0 +1,7 @@
+G11 Chương I B03–B04 · NotebookLM targeted PED Delta_C · 2026-11-02
+
+1. Dựa trên SGK/SBT Toán 11 KNTT gốc và source-locked B03/B04 hiện tại, các đoạn động cơ/cầu nối trước định nghĩa trong Temp_01 và Temp_02 có đúng toán, đúng phạm vi, đúng thứ tự tiền đề B01–B03 không? Chỉ rõ lỗi theo đoạn và trang SGK/SBT in.
+2. Đánh giá PED1–PED3 cho từng B03 và B04: học sinh lần đầu có hiểu vì sao cần hàm số/phương trình lượng giác và bản chất trước công thức không? Nêu chỗ còn thiếu hoặc quá tải.
+3. Đối chiếu 4 SVG FIG-G11-B03-01..04_R01 với thuyết minh mới: có chỉ dẫn cách đọc đúng trục/chu kỳ/miền xác định/tiệm cận không? Có suy diễn nào sai hoặc thiếu không (PED4/AP3)?
+4. Đánh giá 11 ví dụ B03/B04 hiện hữu theo PED5 và hai câu Tự thử mới theo PED6: có giải thích lí do, điều kiện, lỗi sai và đường ôn lại phù hợp không? Đề xuất thay đổi tối thiểu nếu cần.
+5. Trả verdict riêng PED1..PED6, AP1..AP5 và DELTA_C_TARGETED cho đúng B03/B04 (PASS/HOLD, P0/P1/P2 và vị trí lỗi). Không đánh giá lại B01/B02 không đổi, không tự cấp Academic PASS toàn chương, không yêu cầu hoặc xuất nội dung RD1 private, không kết luận production READY.

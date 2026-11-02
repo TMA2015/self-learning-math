@@ -33,6 +33,10 @@ const svg=[
 for(const [name,sha] of svg){const bytes=fs.readFileSync("docs/assets/images/thpt/"+name);assert.equal(blobHash(bytes),sha);assert(!/<script/i.test(bytes.toString()));}
 for(const [n,numExamples,nPractice] of [[1,3,5],[2,4,7]]){
  const page=read("docs/thpt-preview/sgk/lop-11/chuong-i/bai-"+n+".md");
+ assert(page.includes("Chương I gồm Bài 1–4; Bài tự kiểm tra cuối chương chỉ hỗ trợ tự đối chiếu sau Final Submit, không ghi điểm thành thạo."),
+  "B01/B02 lead must describe the staged four-lesson chapter, not stale B01–B02-only scope");
+ assert(!page.includes("Phạm vi đang công bố chỉ gồm Bài 1–2."),
+  "Stale two-lesson learner-facing scope after B03/B04 integration");
  assert(page.includes("## 1. Kiến thức SGK")&&page.includes("## 2. Ví dụ"));
  assert.equal((page.match(/^### Ví dụ \d+\./gm)||[]).length,numExamples);
  assert.equal((page.match(/data-thpt-help-id=/g)||[]).length,2);
@@ -44,9 +48,10 @@ for(const [n,numExamples,nPractice] of [[1,3,5],[2,4,7]]){
 const modal=read("docs/assets/javascripts/thpt-r4-preview.js");
 assert(modal.includes("THPT_G11_CHI_REVIEWED_FORMATIVE"));
 assert(modal.includes('const parsedG11='));
-const blocked=read("docs/thpt-preview/sgk/lop-11/chuong-i/tu-kiem-tra-chuong.md");
-assert(blocked.includes("CHƯA KÍCH HOẠT"));
-assert(!/data-thpt-readiness|data-mastery-credit|data-scoring-engine/i.test(blocked));
+const selfcheck=read("docs/thpt-preview/sgk/lop-11/chuong-i/tu-kiem-tra-chuong.md");
+assert(selfcheck.includes('data-g11-chapter-selfcheck="CHI"'),"Owner #662 voluntary Final Submit route absent");
+assert(selfcheck.includes("không thay thế đánh giá độc lập"));
+assert(!/data-thpt-readiness|data-mastery-credit|data-scoring-engine/i.test(selfcheck));
 if(process.argv.includes("--built")){
  for(const n of [1,2])assert(fs.existsSync("site/thpt-preview/sgk/lop-11/chuong-i/bai-"+n+"/index.html"));
  assert(fs.existsSync("site/thpt-preview/thu-vien/tu-luan-g11-chuong-i-b01-b02/index.html"));
