@@ -52,8 +52,9 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
     const t=await page.goto(base+"tu-kiem-tra-chuong/",{waitUntil:"networkidle"});
     assert(t?.ok(),"G11 ChI selfcheck route missing");
     const readinessText=await page.locator("body").innerText();
-    assert(readinessText.includes("CHƯA KÍCH HOẠT"),"Never claim official Readiness before R3");
-    assert(readinessText.includes("Bài 1–4"),"Chapter-end page must describe all four integrated lessons");
+    assert(readinessText.includes("Tự kiểm tra cuối Chương I"),"Client-only selfcheck route must show chapter");
+    assert(readinessText.includes("không thay thế đánh giá độc lập"),"No independent Readiness claim");
+    assert(readinessText.includes("20 câu"),"Chapter-end page must state 20 reviewed items");
     assert(!readinessText.includes("Core/Luyện tập Bài 1–2"),"No stale two-lesson release scope");
     assert.equal(await page.locator("[data-thpt-readiness]").count(),0,"No early official scoring");
    }finally{await page.close()}
