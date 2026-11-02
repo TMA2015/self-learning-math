@@ -217,6 +217,30 @@ SGK Toán 11 Kết nối tri thức Tập 1, Chương I: B01 (Giá trị lượn
 
 **PED6_FIRST_TRY_REMEDIATION:** four optional pre-Core Tự thử (B01/B02 R03, B03/B04 R02) with **voluntary reveal** and back-link to existing concepts, Core ID and D6; never official assessment, never Skill Mastery.
 
+## QUALITY_Q01_Q18_EVIDENCE
+Single normative `SLM-THPT-QUALITY-ONE v1.0.0` author handoff crosswalk, **metadata evidence only** on immutable existing academic R03 source. The independent reviewer did not retroactively apply a new v2.1 review; R01+R02+R03 original academically/pedagogically scoped external PASS preserved. This crosswalk is not a new PASS, test bank or rewritten rubric.
+
+| Q_ID | AFFECTED_LESSON_OUTCOME_IDS | AUTHORING_EVIDENCE | ORIGINAL_INDEPENDENT_SCOPE_SOURCE_RECEIPT | RELEASE_RECHECK |
+|---|---|---|---|---|
+| Q01 | B01–B04 SGK p5–41 SBT p4–30 | SGK/SBT KNTT Tập 1 original lesson/source bound in S1_SGK_SBT_SOURCE | Historic independent R01 Academic source receipt on original chapter; original lesson source SHA preserved | R1 provenance exact book |
+| Q02 | 26 RD0 outcomes | 26 distinct skills and public item alignment in frozen R03 source | Independent R01 Academic PASS on all 26; scoped PED R02 B03/B04 and R03 B01/B02 | AP4 per-outcome screen |
+| Q03 | B01–B04 D1 | Radian/arc/domain/trig equations and assumptions explained before formal method | Original independent R01 Academic and R02/R03 PED PASS | AP2 math notation |
+| Q04 | B01–B04 D2 | 18 original reasoned examples B01 3/B02 4/B03 5/B04 6 | Original source reviewed + R02/R03 separate PED verdicts | AP4 explanatory steps |
+| Q05 | B01–B04 D3 | 42 public source Core/Practice mathematical questions under canonical IDs | R01 full authoring Academic PASS; R02/R03 scoped self-learning PASS | R4 answer gating |
+| Q06 | B01–B04 D4 | Four original canonical Written/Anchor questions; original /7 rubric preserved exactly, no cloned item | R01 original source academic PASS, one shared Written library; do NOT pretend /4 | R4 Written/manual grading privacy |
+| Q07 | B01–B04 D5 | Six original unchanged SVG for angle/trig graph, with reading explanations | Independent R02/R03 source-scoped SVG/PED PASS | AP3 actual rendered figure |
+| Q08 | B01–B04 D6 | Eight original five-step HELP, each returns to source canonical item | R01 source inventory plus independent R02/R03 PED PASS | AP4 D6 real links |
+| Q09 | B01–B04 WHY | R03 B01/B02 WHY real wheel-angle and R02 B03/B04 function motivation | External independently scoped PED R02/R03 PASS | AP1 motivation visual |
+| Q10 | B01–B04 prior knowledge | Radian, circle and identities explained as prerequisites for equation families | Independent R02/R03 PED PASS | AP4 prerequisites |
+| Q11 | B01–B04 concept before formula | R01 source student concept plus reviewed R02/R03 concept-first extensions | R02/R03 scoped independent PED PASS, original math untouched | AP4 concept sequence |
+| Q12 | B01–B04 read diagrams | R02/R03 six source SVG and guided trig interpretation | External R02 B03/B04 and R03 B01/B02 PED PASS | AP3 mobile SVG |
+| Q13 | B01–B04 method reasons | Worked example method choice, tan/cot denominators and complete trig solution families | Independent scoped PED R02/R03 PASS | AP4 method restriction |
+| Q14 | B01–B04 self-try | Each of four lessons has independent pre-Core prediction/first attempt plus D6 route | Independent PED R02/R03 PASS | R4 reveal only after Submit |
+| Q15 | 46 public canonical | 46 distinct item IDs, each one primary skill; four Written/Anchor tags nonduplicate | Author 46/46 matrix source Git readback and R01 complete Academic PASS | R1 item deduplication |
+| Q16 | Assessment and RD1 | 20 private RD1 originals outside public GitHub, client demo not official Mastery | Original R01 private custody; strict system Final Submit RELEASE HOLD | R4 official assessment no-leak |
+| Q17 | SGK and Topic independent | This source is SGK ChI B01–B04 only; no invented Topic PASS | Reviewers assessed SGK scope only | R3 route and Topic independence |
+| Q18 | Snapshot provenance | R01/R02/R03 independently reviewed scoped immutable source receipts and Git blob 256ceb5edc5e02aec320e83e99c8e08e035654f3 | Original R01 Academic PASS, R02 B03/B04 PED PASS, R03 B01/B02 PED PASS; source equivalent handoff metadata only | R1/R2 exact HEAD source parity |
+
 ## REVIEW_SOURCE_RECEIPT
 
 **Source locks and independent independent review stages:**
