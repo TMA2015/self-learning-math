@@ -805,4 +805,4 @@ Người phản biện đối chiếu nội dung thật của 5 SVG hiện hành
 
 ## R02 review boundary
 
-B05?/Không: đúng **B10–B14** của ChIV; 5 mô-đun khởi động PED1–3, 5 Tự thử PED6, 20 ghi chú ví dụ PED5 và 5 chú giải hình PED4. 40 public items và 22 private RD1 không đổi. R01 PASS chỉ cho snapshot gốc, R02 cần verdict độc lập theo từng B10–B14/PED1–6, nguồn SGK/SBT S1, MINIMAL_DELTA/P0/P1/P2. A6 chịu AP1–AP5 và Final Submit. **NOT_RELEASE_READY** trước khi có verdict R02.
+**Phạm vi chính xác:** B10–B14 của Chương IV; 5 mô-đun khởi động PED1–3, 5 Tự thử PED6, 20 ghi chú ví dụ PED5 và 5 chú giải hình PED4. 40 public items và 22 private RD1 không đổi. R01 PASS chỉ cho snapshot gốc, R02 cần verdict độc lập theo từng B10–B14/PED1–6, nguồn SGK/SBT S1, MINIMAL_DELTA/P0/P1/P2. A6 chịu AP1–AP5 và Final Submit. **NOT_RELEASE_READY** trước khi có verdict R02.
