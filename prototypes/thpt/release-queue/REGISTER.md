@@ -4,6 +4,9 @@
 
 | Gói | Hành trình | Trạng thái | Phạm vi | PR / nguồn |
 |---|---|---|---|---|
+| [G11-SGK-CHII-B05-B07](ready/G11-SGK-CHII-B05-B07.md) | SGK_CHAPTER | CONTENT_READY | FULL_LEARNING_PATH | AUTHORING V2 R03 clean handoff: 3 lessons · 16 outcomes · 42 canonical · 19 protected RD1 · source R03 2101e2a2; original R01 Academic / independent R02 PED PASS and PDF SBT SHA256 fb529210; AP/R/Final Submit PENDING (no release consent) |
+| [G11-SGK-CHIII-B08-B09](ready/G11-SGK-CHIII-B08-B09.md) | SGK_CHAPTER | CONTENT_READY | FULL_LEARNING_PATH | AUTHORING V2 R03 clean handoff: 2 lessons · 14 outcomes · 32 canonical · 21 protected RD1 · source R03 4ea8df2c; original R01 Academic / independent R02 PED PASS and PDF SBT SHA256 fb529210; AP/R/Final Submit PENDING (no release consent) |
+| [G11-SGK-CHIV-B10-B14-R01](ready/G11-SGK-CHIV-B10-B14-R01.md) | SGK_CHAPTER | CONTENT_READY | FULL_LEARNING_PATH | AUTHORING V2 R03 clean handoff: 5 lessons · 22 outcomes · 40 canonical · 22 protected RD1 · source R03 e945ccdd; original R01 Academic / independent R02 PED PASS and PDF SBT SHA256 fb529210; AP/R/Final Submit PENDING (no release consent) |
 | [G11-SGK-CHI-B01-B04](ready/G11-SGK-CHI-B01-B04.md) | SGK_CHAPTER | CONTENT_READY | FULL_LEARNING_PATH | Source R03 Academic/PED PASS; integrated PR #697 46 public + voluntary 20 Written Final Submit, AP1–AP5/R1–R5 QA receipts from head 3a02b1d PASS; initial V2 manifest stays CONTENT_READY until final-head CI/release and P1 (no independent Readiness/Mastery) |
 | [G11-SGK-CHI-B01-B02](ready/G11-SGK-CHI-B01-B02.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | source #627 merged; release #650 R1–R5 evidence, exact-final-head CI before merge/deploy; B01–B02 only |
 | [G10-SGK-CHIV-B09-B11](ready/G10-SGK-CHIV-B09-B11.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY B09–B11 | source #637 merged; release #648 R1–R5 candidate QA PASS, final metadata-head dual CI required |
