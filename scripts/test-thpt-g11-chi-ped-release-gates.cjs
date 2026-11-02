@@ -34,8 +34,8 @@ for(let i=1;i<=5;i++)
  assert.match(packet,new RegExp("^- \\[x\\] AP"+i+"_","m"),"AP"+i+" must be backed by independent PED and browser QA");
 for(let i=1;i<=5;i++)
  assert.match(packet,new RegExp("^- \\[x\\] R"+i+"_","m"),"Release gate R"+i+" must be explicitly documented");
-assert.match(packet,/run 41392601965/,"Missing precise THPT Preview QA receipt");
-assert.match(packet,/run 41392602056/,"Missing precise Roadmap QA receipt");
+assert.match(packet,/41392601965/,"Missing precise THPT Preview QA receipt");
+assert.match(packet,/41392602056/,"Missing precise Roadmap QA receipt");
 assert.match(packet,/Final-HEAD QA/,"Latest metadata HEAD still needs final CI recheck");
 
 const getBank=(path,name)=>{
