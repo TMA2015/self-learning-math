@@ -241,6 +241,16 @@ Normative source: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_2
 | Q_ID | LESSON | SOURCE_EVIDENCE | REVIEW_EVIDENCE | RELEASE_RECHECK |
 |---|---|---|---|---|
 
+| Q01 | B01–B05 and end | Owner original SGK pages5–44 and SBT pages4–37, exact SHA and PDF offset | Independent reviewer Source Receipt verifies pages and two book hashes | R1 source match |
+| Q02 | All 36 outcomes | All outcomes in exact original source mapped to items and HELP | Independent reviewer reports 36 outcomes PASS | AP4 per-outcome content |
+| Q03 | D1 all lessons | Domain, differentiability, limits, extrema and units explained | Independent Academic correctness PASS | AP2 formulas |
+| Q04 | 24 original D2 | Worked examples with reasoning, choice and limitations | Independent reviewer confirms 24 D2 PASS | AP4 worked explanation |
+| Q05 | 78 original D3 and self-check | Varied Core, Practice, Application and chapter-end formative IDs | Original reviewer all canonical items PASS | R4 answer reveal |
+| Q06 | 12 written and anchor | Twelve one-source Written rubrics /4, no cloned anchor | Independent rubric PASS 12 items | R4 written controls |
+| Q07 | Six original SVG | Figure sources exact Git SHA and readable descriptions | Independent D5 graphical PASS | AP3 responsive graphics |
+| Q08 | 36 D6 links | All 36 five-step HELP return to item of same primary outcome | Independent D6 PASS; direct QA 36 links | AP4 HELP navigation |
+| Q09 | Five lesson WHY sections | Motivation before formal presentation in each SGK lesson | Independent PED1 PASS | AP1 actual hierarchy |
+
 ## REVIEW_SOURCE_RECEIPT
 Original reviewer report preserved verbatim in Git blob fc0088f592f9b71f581b767925f0458f86bb96b4; original report Academic PASS, PED PASS, P0=P1=P2=0, MINIMAL_DELTA=0. Git source f0862dcdab21dec136e43969f45c42638e7c7574, receipt 8fef1c7dbd9b404881ff40cec8147c9ae89ef473. Reviewer source-size prose and Q labels are not canonical metadata.
 ## DELTA_LEDGER
