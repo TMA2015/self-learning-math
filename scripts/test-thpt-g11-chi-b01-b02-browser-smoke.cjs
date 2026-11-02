@@ -45,13 +45,13 @@ const {chromium}=require("playwright"),assert=require("node:assert/strict");
     await modal.waitFor({state:"visible",timeout:16000});
     assert.equal(await modal.locator("[data-thpt-canonical-item]").first().getAttribute("data-thpt-canonical-item"),"THPT-G11-B02-P07");
     const r=await page.goto(base+"tu-kiem-tra-chuong/",{waitUntil:"networkidle"});
-    assert(r?.ok(),"G11 inactive readiness route missing");
-    assert(await page.getByText("CHƯA KÍCH HOẠT",{exact:false}).count()>0);
+    assert(r?.ok(),"G11 client-only selfcheck route missing");
+    assert(await page.getByText("không thay thế đánh giá độc lập",{exact:false}).count()>0);
     assert(await page.locator("[data-thpt-readiness]").count()===0,"No active G11 readiness engine");
     const over=await page.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth);
     assert(over<=20,"G11 overflow at "+viewport.width);
    }finally{await page.close()}
   }
-  console.log("PASS G11 B01/B02 Golden R4: grade-isolated canonical Core/Practice modal, original SVG, D6, blocked Readiness, responsive 390/820/1440");
+  console.log("PASS G11 B01/B02 Golden R4: grade-isolated canonical Core/Practice modal, original SVG, D6, voluntary Final Submit without independent Readiness credit, responsive 390/820/1440");
  }finally{await browser.close()}
 })().catch(error=>{console.error(error.stack||error);process.exit(1)});
