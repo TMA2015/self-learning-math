@@ -3,7 +3,7 @@
 // RELEASE-only source/route guard. Does not certify academic or independent Readiness.
 const assert=require("node:assert/strict"),fs=require("node:fs"),crypto=require("node:crypto"),vm=require("node:vm");
 const read=p=>fs.readFileSync(p,"utf8");
-const blob=b=>crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+b.length+"\\0"),b])).digest("hex");
+const blob=b=>crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+b.length+"\0"),b])).digest("hex");
 const sourcePath="prototypes/thpt/content-drafts/G11_CHII_B05_B07_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md";
 const sourceBytes=fs.readFileSync(sourcePath);
 assert.equal(blob(sourceBytes),"2101e2a248e0cf53ee11847b913b937cebcd0806","Frozen R03 source Git blob");
@@ -15,13 +15,13 @@ const source=sourceBytes.toString("utf8");
 const start=source.indexOf("## D3 · SGK Core"),end=source.indexOf("## D4 ·",start);
 assert(start>=0&&end>start,"Original R03 D3/D4 boundaries");
 const section=source.slice(start,end);
-const heads=[...section.matchAll(/^### (THPT-G11-B(05|06|07)-([CP])\\d{2}) · (SGK_CORE|SGK_PRACTICE) · ([A-Z0-9_-]+) · ([A-Z_]+)\\s*$/gm)];
+const heads=[...section.matchAll(/^### (THPT-G11-B(05|06|07)-([CP])\d{2}) · (SGK_CORE|SGK_PRACTICE) · ([A-Z0-9_-]+) · ([A-Z_]+)\s*$/gm)];
 assert.equal(heads.length,36,"36 exact source canonical D3 records");
 const field=(text,name)=>{const m=text.match(new RegExp("^\\*\\*"+name+":\\*\\* (.+)$","m"));assert(m,"Missing source field "+name);return m[1].trim()};
 const expected=heads.map((h,i)=>{const t=section.slice(h.index+h[0].length,heads[i+1]?.index??section.length);return {
  item_id:h[1],lesson:String(Number(h[2])),grade:"11",role:h[4]==="SGK_CORE"?"CORE":"PRACTICE",skill:h[5],
  stem:field(t,"Đề"),hint:"Đọc lại kiến thức và ví dụ của Bài "+Number(h[2])+" trước khi mở đối chiếu lời giải.",
- solution:"Đáp án: "+field(t,"Đáp án")+"\\nLời giải: "+field(t,"Lời giải"),difficulty:h[6],exposure:"FORMATIVE_ONLY"
+ solution:"Đáp án: "+field(t,"Đáp án")+"\nLời giải: "+field(t,"Lời giải"),difficulty:h[6],exposure:"FORMATIVE_ONLY"
 }});
 const window={};
 vm.runInNewContext(read("docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js"),{window});
