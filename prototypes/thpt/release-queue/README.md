@@ -40,7 +40,7 @@ AP1 cấu trúc ý; AP2 công thức/MathJax; AP3 hình, biểu đồ, SVG; AP4 
 
 **Hai hành trình độc lập:** SGK_CHAPTER (Tự kiểm tra cuối chương); TOPIC (chỉ Kiến thức/Luyện tập/Tự kiểm tra). SGK PASS không suy rộng TOPIC PASS. Dùng chung một canonical item_id/Written/Anchor/skill/ảnh theo placement; tách bằng chứng SGK_CHAPTER_READINESS và TOPIC_READINESS.
 
-**Nguồn và riêng tư:** 5 Permanent NotebookLM THPT v2.0; SGK/SBT KNTT S1; giao NotebookLM bằng file Temp_ thật và prompt, không JSON. Không đưa câu, key hoặc rubric held-out vào public GitHub. Không bật mastery trước QA engine. Ghi chú NotebookLM/QA chỉ nằm trong hồ sơ, không có trong UI học sinh.
+**Nguồn và riêng tư:** 5 Permanent NotebookLM THPT v2.1 sẽ thay trọn bộ v2.0 khi chủ dự án cài đặt (manifest SHA256 tại `../notebooklm-permanent-sources/THPT_5_PERMANENT_SOURCES_v2.1_REPLACEMENT_MANIFEST_20261102.md`); SGK/SBT KNTT S1; giao NotebookLM bằng file Temp_ thật và prompt, không JSON. Không đưa câu, key hoặc rubric held-out vào public GitHub. Không bật mastery trước QA engine. Ghi chú NotebookLM/QA chỉ nằm trong hồ sơ, không có trong UI học sinh.
 
 **Ưu tiên phát hành:** lọc CONTENT_READY trước; trong tập đó xếp theo tiền đề kiến thức, phụ thuộc PR, mức ảnh hưởng và ngày review; **không random và không FIFO tuyệt đối**. Phát hành đúng những phần được duyệt, không gắn nhãn 'chương hoàn chỉnh' nếu thiếu D1–D6 hoặc đánh giá.
 
