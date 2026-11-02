@@ -166,13 +166,13 @@ Source S1 authority is preserved from previously independently approved R01 ChIV
 | Q04 | B10–B14 original examples | 20 D2 examples with R02 method-choice reasoning; no answers changed | R01 academic and R02 20 D2 reviewer PASS | AP1 / AP4 |
 | Q05 | B10–B14 D3 | 30 original Core/Practice canonical; source exact headings with skill tags | R01 all public IDs unchanged; R02 source parity | R1 / AP4 |
 | Q06 | B10–B14 D4 | 10 canonical Written/Anchor with primary skill mapping in metadata file, original /4 rubric unchanged | R01 canonical source-fidelity PASS | R1 / R4 |
-| Q07 | B10–B14 D5 | Five original figure IDs with R02 five interpretive annotations | R01 original SVG and R02 PED4 reviewer PASS | AP3 |
-| Q08 | B10–B14 D6 | Ten original HELP links and remediation cues remain unedited | R01 Academic full D1–D6 PASS | AP4 |
+| Q07 | B10–B14 D5 | Five original figure IDs with R02 five interpretive annotations | R01 original SVG and R02 PED4 reviewer PASS | AP3 figure/graph rendering QA |
+| Q08 | B10–B14 D6 | Ten original HELP links and remediation cues remain unedited | R01 Academic full D1–D6 PASS | AP4 self-learning flow QA |
 | Q09 | B10–B14 PED1 | Five concept-first motivations inserted before formal D1 | R02 B10–B14 independent targeted PED PASS | AP1 / AP4 |
-| Q10 | B10–B14 PED2 | Prerequisite planar geometry and 3D incidence terms explained in R02 notes | R02 independent targeted PED PASS | AP4 |
+| Q10 | B10–B14 PED2 | Prerequisite planar geometry and 3D incidence terms explained in R02 notes | R02 independent targeted PED PASS | AP4 self-learning flow QA |
 | Q11 | B10–B14 PED3 | Spatial coplanarity and parallel projection meaning precedes formal rules | R02 independent targeted PED PASS | AP1 / AP4 |
 | Q12 | B10–B14 PED4 | Five original SVG explained; hidden vs shown edges and projection degeneration | R02 independent targeted PED4 PASS | AP3 / AP4 |
-| Q13 | B10–B14 PED5 | 20 original examples have WHY/when-to-use, avoiding invalid parallelism deductions | R02 independent targeted PED5 ALL_PASS | AP4 |
+| Q13 | B10–B14 PED5 | 20 original examples have WHY/when-to-use, avoiding invalid parallelism deductions | R02 independent targeted PED5 ALL_PASS | AP4 self-learning flow QA |
 | Q14 | B10–B14 PED6 | Five optional first tries before Core and D6 fallback; never scored | R02 independent targeted PED6 ALL_PASS | AP4 / R4 |
 | Q15 | 40 public canonical IDs | 30 Core/Practice plus 10 Written/Anchor, 40 unique identifiers and one role each | R01 independent item PASS plus author SHA parity | R1 / R4 |
 | Q16 | 22 private RD1 / scope | SHA256 private custody 41bdb197...; not published; CLIENT_SELF_CHECK_NO_MASTERY | R01 RD1 A7 source-fidelity approval; release system HOLD | R3 / R4 |
