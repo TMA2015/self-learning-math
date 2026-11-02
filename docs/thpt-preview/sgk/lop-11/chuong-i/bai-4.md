@@ -6,6 +6,24 @@
 <nav class="thpt-r4-lesson-tabs"><a href="../">Chương I</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav>
 </div>
 
+## Trước khi học: Vì sao cần kiến thức này?
+
+Bài 3 cho biết **từ góc x tìm sin x**. Bài 4 hỏi ngược lại: nếu `sin x=1/2`, phải tìm **tất cả các góc x** như thế nào? Trên một vòng `[0,2π)`, đường ngang có tung độ `1/2` ứng với **hai vị trí** trên đường tròn đơn vị: `π/6` và `5π/6`. Quay thêm bất kỳ `2kπ` (`k∈ℤ`) thì điểm cuối không đổi, nên nghiệm là `x=π/6+2kπ` hoặc `x=5π/6+2kπ`. Một giá trị góc đại diện không thể thay cho toàn bộ tập nghiệm.
+
+**Nối kiến thức cũ:** Bài 1 giải thích các góc cùng tia cuối, Bài 2 cung cấp công thức biến đổi, Bài 3 giải thích đồ thị và chu kỳ. Giải phương trình lượng giác nghĩa là tìm **mọi x thỏa hai vế đều xác định và bằng nhau**. Với sin/cos, nếu `|m|>1` thì không có tung độ/hoành độ nào như vậy; với tan/cot, không được chia cho 0. Khi đối số là `ax+b`, tìm **đủ họ nghiệm của đối số** rồi mới suy ra x; khi đề giới hạn một khoảng, phải lọc k nguyên theo cả hai đầu mút.
+
+## Tự thử trước khi luyện tập
+
+Tìm mọi x thuộc [0,2π) sao cho sin x=0. Vì sao trên ℝ nghiệm phải có số nguyên k?
+
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="4"><summary>Đã thử xong? Mở hướng dẫn đối chiếu</summary>
+
+Trong [0,2π): x=0 hoặc x=π. Trên ℝ: x=kπ, k∈ℤ. Xem lại đường tròn Bài 1 và đồ thị sin Bài 3, rồi làm Core `THPT-G11-B04-C01`.
+
+</details>
+
+<span data-reviewed-ped-source="G11-CHI-R03" hidden aria-hidden="true"></span>
+
 ## 1. Kiến thức SGK
 
 ### 1. Nguyên tắc
@@ -14,7 +32,16 @@ phương trình là tìm toàn bộ `x` sao cho hai vế xác định và bằng
 ### 2. `sin x=m`
 
 nếu `|m|>1` vô nghiệm; khi `|m|≤1`, đặt `α=arcsin m` (giá trị chính trong `[-π/2,π/2]`), hai họ `x=α+2kπ` hoặc `x=π-α+2kπ`, `k∈ℤ`. Hai họ có thể trùng khi `m=±1`; khi đó đếm nghiệm theo *tập hợp*, không cộng trùng.
-### 3. `cos x=m`
+### Hướng suy luận trong các ví dụ
+
+- `EX-G11-B04-01`: đường ngang cắt đường tròn đơn vị tại hai vị trí; viết đủ hai họ sin trước khi kết luận.
+- `EX-G11-B04-02`: tan/cot có chu kỳ `π`, nhưng `cot x=0` không được chuyển sang `tan x=1/0`; dùng định nghĩa và điều kiện để tìm nghiệm.
+- `EX-G11-B04-03`: giải phương trình cho **đối số** `2x` trước; chia cả hai họ cho 2, không lấy nghiệm của `2x` làm nghiệm x.
+- `EX-G11-B04-04`: dấu ngoặc `[0,2π)` cho phép 0 và loại `2π`; phải lọc nghiệm cụ thể, không chỉ viết tổng quát.
+- `EX-G11-B04-05`: trước khi chia cho `cos x`, xét riêng khả năng `cos x=0` để không làm mất nghiệm của phương trình ban đầu.
+- `EX-G11-B04-06`: từ `H(t)=11` quy về `sin(πt/6)=1/2`, tìm đủ hai họ rồi giữ những t trong `0≤t<12`; đơn vị của t là giờ.
+
+## 3. `cos x=m`
 
 nếu `|m|>1` vô nghiệm; nếu `|m|≤1`, đặt `α=arccos m∈[0,π]`, `x=±α+2kπ`. Với `m=±1`, hai họ có thể trùng.
 ### 4. `tan x=m`
@@ -45,6 +72,10 @@ tìm các k nguyên phù hợp cận và xét dấu `[a,b]` so với `(a,b)`. Đ
 ## 3. Kết nối đồ thị
 
 Kết hợp đường tròn lượng giác và đồ thị sin/cos/tan/cot tại [Bài 3](bai-3.md) để tự kiểm tra số họ nghiệm. Kiểm tra miền xác định và nghiệm ngoại lai trước khi kết luận.
+
+### Hướng dẫn đọc hình, đồ thị
+
+- Với B04, tưởng tượng đường thẳng ngang `y=1/2` cắt **đồ thị sin** hai lần trong `[0,2π)`, các giao điểm lặp lại sau một chu kỳ. Đây chỉ là diễn giải bằng lời, **không** khẳng định đường ngang đã được vẽ trên SVG và **không** coi tiệm cận tan/cot là nghiệm. Reviewer phải kiểm nội dung hình gốc; AP3 hiển thị trên thiết bị thuộc release QA.
 
 ## 4. Tự khắc phục lỗi thường gặp
 
