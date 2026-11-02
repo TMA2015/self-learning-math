@@ -453,3 +453,10 @@ Until exact original SVG files and independent diagram correctness review are de
 ## INDEPENDENT REVIEW GATE — NOT YET PASS
 Author original source cross-references owner SGK 38/38 published year-end problems and SBT 43/43 annual items by domain, without duplicating publisher exercise text. 11 distinct RD0 outcomes including cross-remediation, 16 reasoned worked examples, 31 canonical public Core/Practice/Application, 10 Written/Anchor with real /4 rubrics, and 11 D6 return paths. Fig specifications not yet externally reviewed.
 Q01 original S1 printed/PDF-index with SHA verified; Q02–Q06 and Q09–Q15 author QA to audit per outcome; Q07 requires actual SVG source/QA; Q08 11 D6; Q16 public self-check not independent RD1/Mastery; Q17 SGK cross-chapter path separate Topic; Q18 exact Git blob and independent NotebookLM Academic+PED verdict **PENDING** using exactly five current v2.1 Permanent Sources plus original S1. This is new academic content, cannot inherit PASS from ChI–IX or from legacy annual source.
+
+
+## D5 SOURCE FILE COMPLETION — 3 actual original SVG files committed, structural QA still pending
+- `prototypes/thpt/review-packets/Temp_FIG-G11-YR-01_R00.svg` — original authored figure, review against lesson teaching claims and visual labels required.
+- `prototypes/thpt/review-packets/Temp_FIG-G11-YR-02_R00.svg` — original authored figure, review against lesson teaching claims and visual labels required.
+- `prototypes/thpt/review-packets/Temp_FIG-G11-YR-03_R00.svg` — original authored figure, review against lesson teaching claims and visual labels required.
+These are real SVG sources, **not merely specifications**, but authoring structural render validation and independent NotebookLM Q07/PED4 are still required before Academic/PED CONTENT_READY. RELEASE AP3 later checks the exact HTML/rasterized figure on devices.
