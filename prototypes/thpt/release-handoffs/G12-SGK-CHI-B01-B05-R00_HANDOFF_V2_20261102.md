@@ -251,6 +251,16 @@ Normative source: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_2
 | Q08 | 36 D6 links | All 36 five-step HELP return to item of same primary outcome | Independent D6 PASS; direct QA 36 links | AP4 HELP navigation |
 | Q09 | Five lesson WHY sections | Motivation before formal presentation in each SGK lesson | Independent PED1 PASS | AP1 actual hierarchy |
 
+| Q10 | Five lesson prerequisites | Domain, signs, continuity and derivative prerequisites explicitly recalled | Independent PED2 PASS | AP4 prerequisite path |
+| Q11 | Five lesson meaning | Intuition and mathematical concepts precede formulas | Independent PED3 PASS | AP1 learner order |
+| Q12 | Six guided figures | Axes, extrema, asymptotes and excluded points explained | Independent PED4 and D5 PASS | AP3 figure rendering |
+| Q13 | 24 D2 guided solutions | Reason for method and applicability conditions explained | Independent PED5 PASS | AP4 worked sequence |
+| Q14 | Five pre-Core self-tries | Self-try before Core and 36 D6 remedial routes in source | Independent PED6 PASS | R4 staged reveal |
+| Q15 | 78 unique original IDs | Each original question has one primary outcome and one role | Independent canonical count PASS; author 78 exact mapped | R1 ID de-dup |
+| Q16 | Official exam boundary | Public RD0 self-check without official mastery or private RD1 | Reviewer SYSTEM_HOLD and MASTERY NO | R4 Final Submit test |
+| Q17 | SGK ChI path | Five textbook lessons and end self-check self-contained, no Topic inference | External independent SGK Academic and PED PASS | R3 paths |
+| Q18 | Immutable source provenance | Single source blob f0862dcd with original reviewer report blob fc0088f5 | Reviewer quotes exact source SHA, author byte verification | R1/R2 HEAD |
+
 ## REVIEW_SOURCE_RECEIPT
 Original reviewer report preserved verbatim in Git blob fc0088f592f9b71f581b767925f0458f86bb96b4; original report Academic PASS, PED PASS, P0=P1=P2=0, MINIMAL_DELTA=0. Git source f0862dcdab21dec136e43969f45c42638e7c7574, receipt 8fef1c7dbd9b404881ff40cec8147c9ae89ef473. Reviewer source-size prose and Q labels are not canonical metadata.
 ## DELTA_LEDGER
