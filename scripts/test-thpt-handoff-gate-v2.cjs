@@ -46,6 +46,30 @@ function verifyBlob(value, file) {
   const actual = runGit("hash-object", "--", file);
   assert.equal(actual, value, "Source/receipt byte mismatch: " + file);
 }
+// One normative rubric for both branches. Historical V2 packets are grandfathered;
+// enforce on NEW handoffs (and all packets already declaring STANDARD_ID).
+function verifyOneStandardEvidence(data, handoff, initialHandoff) {
+  if (!initialHandoff && !data.includes("STANDARD_ID: ")) return;
+  for (const text of [data, handoff]) {
+    assert.equal(field(text,"STANDARD_ID"),"SLM-THPT-QUALITY-ONE","Two competing quality standards are forbidden");
+    assert.equal(field(text,"STANDARD_VERSION"),"1.0.0","Unrecognized standard version");
+  }
+  assert.equal(field(data,"QUALITY_EVIDENCE_SECTION"),"QUALITY_Q01_Q18_EVIDENCE");
+  const evidence=section(handoff,"QUALITY_Q01_Q18_EVIDENCE");
+  assert(evidence.includes("THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md"),
+    "Evidence must reference THE ONE normative source");
+  const rows=evidence.split("\n").filter(line=>/^\|\s*Q\d{2}\s*\|/.test(line));
+  const codes=rows.map(line=>line.split("|")[1].trim());
+  const expected=Array.from({length:18},(_,i)=>"Q"+String(i+1).padStart(2,"0"));
+  assert.deepEqual(codes,expected,"Q01..Q18 must be complete and unique in author handoff");
+  rows.forEach((line,i)=>{
+    const cells=line.split("|").slice(1,-1).map(s=>s.trim());
+    assert(cells.length>=5,"Not enough source/review/release evidence in "+expected[i]);
+    for (const cell of cells.slice(1)) assert(cell.length>4&&!/(REPLACE_|PENDING|CHUA_CO|TBD)/i.test(cell),
+      "Placeholder/empty evidence in "+expected[i]);
+  });
+}
+
 function verifyReadyManifest(rel, initialHandoff) {
   const data = fs.readFileSync(path.join(root, rel), "utf8");
   const id = field(data, "PACKET_ID");
@@ -72,8 +96,15 @@ function verifyReadyManifest(rel, initialHandoff) {
   verifyBlob(reviewBlob, reviewFile);
   const reviewText = fs.readFileSync(reviewFile, "utf8");
   assert(reviewText.includes(sourceBlob), "Review receipt must identify the exact canonical source blob");
+  if (initialHandoff || data.includes("STANDARD_ID: ")) {
+    assert(reviewText.includes("SLM-THPT-QUALITY-ONE"),
+      "New reviewer receipt must identify the same ONE normative standard as both lanes");
+    assert(reviewText.includes("1.0.0"),
+      "New reviewer receipt must identify the effective standard version");
+  }
   const handoffRel = field(data, "AUTHOR_HANDOFF");
   const handoff = fs.readFileSync(safeRepoFile(handoffRel, ["prototypes/thpt/release-handoffs/"]), "utf8");
+  verifyOneStandardEvidence(data, handoff, initialHandoff);
   for (const [k,v] of [
     ["PACKET_ID", id], ["ACADEMIC_SOURCE_BLOB", sourceBlob],
     ["REVIEW_RECEIPT_BLOB", reviewBlob], ["ACADEMIC_VERDICT", "PASS"],
@@ -99,6 +130,9 @@ function selfTest() {
   assert.throws(() => ids("## IDS\n- A\n- A\n", "IDS"));
   assert.throws(() => field("X: REPLACE_ME","X"));
   assert.equal(field("X: PASS\n", "X"), "PASS");
+  const bad="## QUALITY_Q01_Q18_EVIDENCE\n| Q01 | sample | source | reviewer | AP |\n";
+  assert.throws(()=>verifyOneStandardEvidence("STANDARD_ID: SLM-THPT-QUALITY-ONE\nSTANDARD_VERSION: 1.0.0\nQUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE",
+    "STANDARD_ID: SLM-THPT-QUALITY-ONE\nSTANDARD_VERSION: 1.0.0\n"+bad,true));
   console.log("PASS handoff V2 parser self-test");
 }
 if (process.argv.includes("--self-test")) selfTest();

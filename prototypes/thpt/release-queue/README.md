@@ -1,5 +1,8 @@
 # THPT — Quy trình hai nhánh, một checklist
 
+> **Single-standard governance proposal (owner review pending, 02/11/2026):** Canonical path `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`.  [`SLM-THPT-QUALITY-ONE`](../THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md) is the ONE planned normative THPT content-quality rubric Q01–Q18 for both lanes; D1–D6 and PED1–PED6 are authoring evidence, AP1–AP5 and R1–R5 are rendered/technical evidence of the **same** quality standard. Until owner approval/merge this is DRAFT, not a new content release gate. Existing V2 handoff, S1, Sources 08/06/07 and private RD1 protections remain binding. Don’t call green source CI Academic PASS or resume Math release automation.
+
+
 **Repository duy nhất:** TMA2015/self-learning-math. Đây là kho MANIFEST và bằng chứng; không phải kho nhân bản câu hỏi, không có backend, không có held-out Readiness keys.
 
 ## Handoff V2 sau quyết định chủ dự án 02/11/2026
@@ -37,7 +40,7 @@ AP1 cấu trúc ý; AP2 công thức/MathJax; AP3 hình, biểu đồ, SVG; AP4 
 
 **Hai hành trình độc lập:** SGK_CHAPTER (Tự kiểm tra cuối chương); TOPIC (chỉ Kiến thức/Luyện tập/Tự kiểm tra). SGK PASS không suy rộng TOPIC PASS. Dùng chung một canonical item_id/Written/Anchor/skill/ảnh theo placement; tách bằng chứng SGK_CHAPTER_READINESS và TOPIC_READINESS.
 
-**Nguồn và riêng tư:** 5 Permanent NotebookLM THPT v2.0; SGK/SBT KNTT S1; giao NotebookLM bằng file Temp_ thật và prompt, không JSON. Không đưa câu, key hoặc rubric held-out vào public GitHub. Không bật mastery trước QA engine. Ghi chú NotebookLM/QA chỉ nằm trong hồ sơ, không có trong UI học sinh.
+**Nguồn và riêng tư:** 5 Permanent NotebookLM THPT v2.1 sẽ thay trọn bộ v2.0 khi chủ dự án cài đặt (manifest SHA256 tại `../notebooklm-permanent-sources/THPT_5_PERMANENT_SOURCES_v2.1_REPLACEMENT_MANIFEST_20261102.md`); SGK/SBT KNTT S1; giao NotebookLM bằng file Temp_ thật và prompt, không JSON. Không đưa câu, key hoặc rubric held-out vào public GitHub. Không bật mastery trước QA engine. Ghi chú NotebookLM/QA chỉ nằm trong hồ sơ, không có trong UI học sinh.
 
 **Ưu tiên phát hành:** lọc CONTENT_READY trước; trong tập đó xếp theo tiền đề kiến thức, phụ thuộc PR, mức ảnh hưởng và ngày review; **không random và không FIFO tuyệt đối**. Phát hành đúng những phần được duyệt, không gắn nhãn 'chương hoàn chỉnh' nếu thiếu D1–D6 hoặc đánh giá.
 
