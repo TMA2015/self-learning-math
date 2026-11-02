@@ -202,3 +202,99 @@ These are original author tasks derived from SGK learning goals, NOT the publish
 ### THPT-G11-SUPP-E02-P05 | skill_id=G11-E02-GEOGEBRA_REPRESENTATION | placement=SGK_PRACTICE | role=SGK_PRACTICE
 **Câu hỏi:** Khi vẽ lăng trụ trên giấy, cạnh bị che khuất thường nên dùng nét nào?
 **Đáp án và lí do (chỉ tự mở sau khi làm):** Nét đứt, kết hợp nhãn rõ. Đừng kết luận vuông góc chỉ từ phối cảnh.
+
+
+## D4 — one shared public Written and Anchor library; no duplicate IDs
+Original human-readable solutions below are for learner-controlled self-compare after completing formative task; **not** independent RD1 scoring and never counted as Mastery.
+### THPT-G11-SUPP-E01-W01 | skill_id=G11-E01-HALF_LIFE | placement=SGK_WRITTEN | role=ANCHOR_TAG
+**Đề tự luận:** Một mẫu A0=120g với chu kì bán rã 8 năm. (a) Lập A(t). (b) Tính A(16). (c) Tìm t để A(t)=15g. (d) Nêu giả định mô hình.
+**Đáp án tự mở sau tự làm:** A(t)=120·2^(-t/8); A(16)=30g; A(t)=15g ⇒ 2^(-t/8)=1/8 ⇒ t=24 năm; chu kì bán rã 8 năm giả định ổn định.
+**Rubric /4:** 1 điểm lập mô hình/điều kiện; 1 điểm thao tác toán đúng; 1 điểm kết quả/đơn vị; 1 điểm giải thích tại sao và giới hạn phương pháp.
+
+### THPT-G11-SUPP-E01-W02 | skill_id=G11-E01-DECIBEL_SCALE | placement=SGK_WRITTEN | role=WRITTEN
+**Đề tự luận:** Cường độ nguồn âm đo được L=50dB với I0=10^-12 W/m². (a) Tìm I/I0. (b) Tìm I. (c) I tăng 10 lần thì mức mới? (d) Không suy cảm giác âm từ tỉ số nào?
+**Đáp án tự mở sau tự làm:** I/I0=10^5; I=10^-7 W/m²; mức mới 60dB. Không được suy độ to cảm giác người nghe gấp 10 từ cường độ vật lý gấp 10.
+**Rubric /4:** 1 điểm lập mô hình/điều kiện; 1 điểm thao tác toán đúng; 1 điểm kết quả/đơn vị; 1 điểm giải thích tại sao và giới hạn phương pháp.
+
+### THPT-G11-SUPP-E01-W03 | skill_id=G11-E01-MODEL_ASSUMPTIONS | placement=SGK_WRITTEN | role=ANCHOR_TAG
+**Đề tự luận:** Ban đầu 800 cá thể tăng 4%/năm. (a) Lập mô hình năm rời rạc. (b) Tìm k liên tục tương đương tại năm nguyên. (c) Tính N(3). (d) Nêu giới hạn.
+**Đáp án tự mở sau tự làm:** N(n)=800·1,04^n; k=ln(1,04)≈0,0392207; N(3)≈899,89; tỉ lệ và môi trường không chắc bất biến.
+**Rubric /4:** 1 điểm lập mô hình/điều kiện; 1 điểm thao tác toán đúng; 1 điểm kết quả/đơn vị; 1 điểm giải thích tại sao và giới hạn phương pháp.
+
+### THPT-G11-SUPP-E02-W01 | skill_id=G11-E02-LINE_PLANE_MEASURE | placement=SGK_WRITTEN | role=WRITTEN
+**Đề tự luận:** Cọc 1,8m thẳng đứng, bóng 2,4m. (a) Vẽ tam giác vuông, gắn nhãn. (b) Nêu hình chiếu tia sáng. (c) Tính góc tia–đất. (d) Nêu điều kiện đo.
+**Đáp án tự mở sau tự làm:** Cạnh đối 1,8m/cạnh kề 2,4m; tanθ=0,75; θ≈36,87°. Nền phẳng, cọc vuông góc, bóng đo cùng thời điểm.
+**Rubric /4:** 1 điểm lập mô hình/điều kiện; 1 điểm thao tác toán đúng; 1 điểm kết quả/đơn vị; 1 điểm giải thích tại sao và giới hạn phương pháp.
+
+### THPT-G11-SUPP-E02-W02 | skill_id=G11-E02-VOLUME_MODEL | placement=SGK_WRITTEN | role=ANCHOR_TAG
+**Đề tự luận:** Một lăng trụ đứng có đáy tam giác vuông hai cạnh góc vuông 6cm,8cm, cao 5cm. (a) Tìm Sđáy. (b) Tìm V lăng trụ. (c) V chóp cùng đáy và cao? (d) Lý do hệ số 1/3?
+**Đáp án tự mở sau tự làm:** Sđáy=24cm²; Vlăng trụ=120cm³; Vchóp=40cm³; chóp một phần ba lăng trụ cùng diện tích đáy/chiều cao.
+**Rubric /4:** 1 điểm lập mô hình/điều kiện; 1 điểm thao tác toán đúng; 1 điểm kết quả/đơn vị; 1 điểm giải thích tại sao và giới hạn phương pháp.
+
+### THPT-G11-SUPP-E02-W03 | skill_id=G11-E02-GEOGEBRA_REPRESENTATION | placement=SGK_WRITTEN | role=WRITTEN
+**Đề tự luận:** Thiết kế giấy/GeoGebra một lăng trụ ABC.A'B'C': (a) hai đáy; (b) nối cạnh bên; (c) đánh dấu cạnh khuất; (d) điều kiện để lăng trụ đứng.
+**Đáp án tự mở sau tự làm:** Đáy tam giác bằng nhau ở hai mặt song song; nối đỉnh tương ứng; nét khuất đứt; cạnh bên vuông góc hai đáy mới là lăng trụ đứng.
+**Rubric /4:** 1 điểm lập mô hình/điều kiện; 1 điểm thao tác toán đúng; 1 điểm kết quả/đơn vị; 1 điểm giải thích tại sao và giới hạn phương pháp.
+
+## D5 — instructional figure/diagram source specification (not yet SVG QA-pass)
+FIG-G11-SUPP-E01-01: time-versus-quantity axes, discrete dot model and continuous model with k=ln(1+r) if synchronized at integer years. Avoid pretending k=r gives identical graphs.
+FIG-G11-SUPP-E01-02: three independent logarithmic scales pH/Richter/dB, each showing base and unit/coefficients and one ×10 comparison; no false cross-scale equivalence.
+FIG-G11-SUPP-E02-01: rod–shadow–light triangle with right angle, projected beam and tanθ=h/l as SGK H.T1 concept re-authored diagram.
+FIG-G11-SUPP-E02-02: two planes sharing intersection d, correct normal section with two rays perpendicular to d at common H; mark relevant flat dihedral angle.
+FIG-G11-SUPP-E02-03: four steps prism ABC.A'B'C' (base, parallel copy, matching edges, dashed hidden edges) and note skew vs right prism.
+No claim of generated/readable SVG, as D5 remains P1 authoring blocker before independent NotebookLM review and release AP3.
+
+## D6 — 7 five-step HELP/return-item remediation
+### HELP-G11-SUPP-E01-01 | skill_id=G11-E01-EXPONENTIAL_MODEL | return_item=THPT-G11-SUPP-E01-P01
+1. Chẩn đoán: Cộng số tăng cố định thay vì nhân 1+r?
+2. Bản chất: Mỗi năm nhân trên tổng năm trước.
+3. Gỡ lỗi: Liệt kê N0,N1,N2 rồi rút ra (1+r)^n.
+4. Tự thử độc lập: 100 tăng 10% hai năm cho 121.
+5. Quay lại: Quay lại P01 và giải thích k=ln(1+r).
+
+### HELP-G11-SUPP-E01-02 | skill_id=G11-E01-HALF_LIFE | return_item=THPT-G11-SUPP-E01-P02
+1. Chẩn đoán: Chỉ đếm chu kì bán rã nguyên?
+2. Bản chất: A/A0=2^(-t/T), t/T có thể là số thực.
+3. Gỡ lỗi: Kiểm đơn vị năm của t và T rồi chia.
+4. Tự thử độc lập: Sau T/2 còn 1/√2.
+5. Quay lại: Quay lại P02, giữ 15/10=1,5 chu kì.
+
+### HELP-G11-SUPP-E01-03 | skill_id=G11-E01-PH_SCALE | return_item=THPT-G11-SUPP-E01-P03
+1. Chẩn đoán: Quên dấu trừ trước log?
+2. Bản chất: pH=-log10[H+], giảm nồng độ làm tăng pH.
+3. Gỡ lỗi: Viết hai nồng độ ở dạng 10^(-pH).
+4. Tự thử độc lập: 10^-2 xuống 10^-3 làm pH 2→3.
+5. Quay lại: Quay lại P03 và so 10^-4/10^-6.
+
+### HELP-G11-SUPP-E01-04 | skill_id=G11-E01-DECIBEL_SCALE | return_item=THPT-G11-SUPP-E01-P05
+1. Chẩn đoán: Quên hệ số 10 bên ngoài log?
+2. Bản chất: Chênh L=10log10(I2/I1).
+3. Gỡ lỗi: Cô lập log10(k)=ΔL/10 trước khi lấy 10 mũ.
+4. Tự thử độc lập: Tăng 20dB nghĩa là I gấp 100.
+5. Quay lại: Quay lại P05, không đồng nhất dB và cảm giác.
+
+### HELP-G11-SUPP-E02-01 | skill_id=G11-E02-LINE_PLANE_MEASURE | return_item=THPT-G11-SUPP-E02-P02
+1. Chẩn đoán: Dùng sin khi mẫu số là cạnh kề?
+2. Bản chất: Dựng tam giác vuông có cao đối, bóng kề.
+3. Gỡ lỗi: Tan=h/bóng, cạnh huyền phải tính riêng.
+4. Tự thử độc lập: h=bóng ⇒ góc 45°.
+5. Quay lại: Quay lại P02, kiểm sin bằng cạnh huyền.
+
+### HELP-G11-SUPP-E02-02 | skill_id=G11-E02-DIHEDRAL_MEASURE | return_item=THPT-G11-SUPP-E02-P03
+1. Chẩn đoán: Đọc góc trên phối cảnh thay góc phẳng?
+2. Bản chất: Hai tia đo trong hai mặt cùng vuông góc d tại H.
+3. Gỡ lỗi: Dựng mặt phẳng cắt vuông góc giao tuyến d.
+4. Tự thử độc lập: Hai mặt vuông góc thì góc phẳng 90°.
+5. Quay lại: Quay lại P03 và bỏ đường chéo tùy tiện.
+
+### HELP-G11-SUPP-E02-03 | skill_id=G11-E02-VOLUME_MODEL | return_item=THPT-G11-SUPP-E02-P04
+1. Chẩn đoán: Áp dụng 1/3 cho lăng trụ?
+2. Bản chất: V lăng trụ=Sđáy·h; V chóp=Sđáy·h/3.
+3. Gỡ lỗi: Kiểm đơn vị cm²×cm=cm³.
+4. Tự thử độc lập: S=10,h=2 thì lăng trụ V=20.
+5. Quay lại: Quay lại P04, h=V/Sđáy.
+
+
+## SOURCE-LOCKED NOTEBOOKLM REVIEW GATE — AUTHOR CANDIDATE ONLY
+Exactly 11 RD0 outcomes, 12 D2 guided examples, 21 D3 unique Core/Practice/Application, 6 D4 Written with 3 Anchor tags, 5 D5 figures SPECIFIED (not yet rendered), 7 D6 HELP. One item ID per question, primary outcome in heading, protected RD1 absent from this public source. All items are original, not copies of source S1 text.
+Academic/PED independent PASS has **not been obtained** for this new SGK experiential supplement; must review using the five permanent THPT v2.1 sources and owner SGK/SBT originals. Q07/PED4 `P1_SVG_UNRENDERED`, Q18 `NOTEBOOKLM_VERDICT_PENDING` prevent CONTENT_READY. SGK cross-chapter supplement scope does not create Chapter X nor replace independently tested SGK/Topic readiness. Release authorization NO.
