@@ -47,19 +47,19 @@ MASTERY_ACTIVATION: NO
 
 ## R — RELEASE responsibility, NOT YET IMPLEMENTED/QA
 
-- [ ] R1_INTEGRATED_CURRENT_MAIN — RELEASE must integrate exact canonical R03 source/receipt SHA without mathematics change.
+- [x] R1_INTEGRATED_CURRENT_MAIN — RELEASE PR #713 has exact source/receipt R03 Git blobs (`2101e2a2` / `09d77f92`) plus 3 lessons, 36 public Core/Practice, 6 shared Written, 3 SVG, 6 D6 and 15-item voluntary Final Submit; original canonical public records parity 36/36 in `scripts/test-thpt-g11-chii-release-integration.cjs`; awaiting merge before claiming live main.
 - [ ] R2_EXACT_HEAD_CI — RELEASE must independently check site CI on exact current integration commit.
-- [ ] R3_CLEAN_STUDENT_UI — RELEASE must check math/metadata/render and private RD1 no-answers leakage.
-- [ ] R4_ASSESSMENT_SAFETY — No hints/keys/correctness before Final Submit, no illegitimate Skill Mastery from practice/self check.
-- [ ] R5_OWNER_APPROVAL — Only owner can authorize merging/deploying after release gate PASS.
+- [x] R3_CLEAN_STUDENT_UI — Chromium source-locked smoke 390/820/1440 in R4 run #41545357499 verifies G11 ChII menus, B05–B07 teaching flow/figures, 6 canonical item deep links, D6 remediation and client self-check. Page explicitly distinguishes voluntary assessment from independent readiness; raw RD1 archive absent.
+- [x] R4_ASSESSMENT_SAFETY — Owner Issue #662 permits client-only selfcheck from original reviewed public canonical Practice IDs. 15 references / 15 distinct skills / no cloned stems, no protected RD1, manual Written rubric only, no keys/feedback before Final Submit, answers only after, one submit, no Mastery/independent Readiness/persistence; R4 browser #41545357499 and exact source-integration assertion pass. Private 19 RD1 remain outside public repo.
+- [x] R5_OWNER_APPROVAL — Owner 03/11/2026 expressly authorized RELEASE to finish verified G11 chapter QA and autonomously merge/deploy chapters meeting all conditions. `RELEASE_AUTHORIZATION: NO` above is *historical authoring-lane* status and cannot override later owner conditional permission; NO deploy until R2 final-HEAD CI SUCCESS.
 
 ## AP — RELEASE visual and learning QA, NOT YET IMPLEMENTED/QA
 
-- [ ] AP1_IDEA_HIERARCHY — Check one meaningful concept per readable block in real learner UI.
-- [ ] AP2_FORMULA_VISIBILITY — Check MathJax, hypotheses, symbols and overflow on real integration.
-- [ ] AP3_FIGURE_READABILITY — Check all 3 actual figures and captions on learner screens.
-- [ ] AP4_SELF_STUDY_CLARITY — Check WHY→WHAT→method→self-try→Core/D6 progression.
-- [ ] AP5_RESPONSIVE_VISUAL — Check desktop/iPhone/iPad viewports, real devices when owner requires.
+- [x] AP1_IDEA_HIERARCHY — All three B05–B07 have reviewed concept-first introductions, D1/2 examples and an optional pre-Core try before practice; browser smoke #41545357499 confirms layout/navigation at 390/820/1440.
+- [x] AP2_FORMULA_VISIBILITY — Original mathematics/formula text and answers retained byte-for-byte in source-locked R03 and 36/36 D3 records; MkDocs preview build + Chromium smoke #41545357499 show no horizontal overflow on 390/820/1440. Physical-device typesetting UAT remains P2 OPEN.
+- [x] AP3_FIGURE_READABILITY — Three SVG blobs B05/B06/B07 exactly match author R03 and are loaded with nonzero naturalWidth inside their figure containers in 390/820/1440 browser smoke #41545357499; original captions/alt kept.
+- [x] AP4_SELF_STUDY_CLARITY — Three reviewed PED first-tries initially collapsed; D1–D6 and six specific remediation links return to existing canonical items; no automatic open-answer grade, browser smoke #41545357499.
+- [x] AP5_RESPONSIVE_VISUAL — Preview browser R4 #41545357499 validated all B05–B07 SVG sizing, deep links, learner self-check navigation and final submit on 390/820/1440 without horizontal overflow. Real iPhone/iPad Safari P2 stays explicitly OPEN.
 
 ## P — ACTUAL RELEASE only (not authoring)
 
@@ -69,3 +69,11 @@ MASTERY_ACTIVATION: NO
 ## ONE quality-standard and custody boundary
 
 The canonical `AUTHOR_HANDOFF` `G11-SGK-CHII-B05-B07_HANDOFF_V2_R03_20261102.md` contains **Q01–Q18 evidence with exact source pointers** and a complete item/outcome/role matrix. This manifest is the only effective author READY record for `G11-SGK-CHII-B05-B07`; historical R01 and R02 artifacts and draft V2 documents are preserved as audit history, not duplicate active handoffs. Reviewer R01/R02 PASS remains only for the reviewed mathematical/pedagogic scope; `S1` citation changes were author-direct proven and have not been deceptively labeled independently re-reviewed under NotebookLM v2.1. `CONTENT_READY` is only source-authoring, no permission for public RD1 release, client mastery scoring, workflow activation or website production deployment.
+
+## RELEASE gate checkpoint · 03/11/2026 (without altering authoring evidence)
+
+- **Current candidate:** PR #713, R03 original source SHA `2101e2a248e0cf53ee11847b913b937cebcd0806`; immutable review SHA `09d77f92e6efb266ac15e0d972256319d92a3e1e`. These academic hashes are NOT changed by R/AP checkbox updates.
+- **Q16 owned by RELEASE (owner Issue #662):** the approved 15-item client self-check is a `placement` referencing original *already public reviewed* canonical Practice IDs, NOT a new RD1 bank or an independently scored Readiness. No requirement to ask AUTHORING for new questions; 19 private RD1 held-out remain outside public source.
+- **R2 pending:** after these metadata/operations changes, required Roadmap/THPT Preview/Branding/Skill CI must all re-run `SUCCESS` on **exact final PR HEAD** and current main, then only merge. Earlier #41545357499 R4 SUCCESS on unchanged learner code supports scoped R3/R4/AP checks but is not final-head R2.
+- **P1 still unchecked:** only merge+SUCCESS Deploy MkDocs on exact main merge commit + verified `gh-pages` chapter and self-check assets qualifies as published. Real-device P2 must stay OPEN unless independently tested.
+- **Runbook:** `prototypes/thpt/release-queue/G11_RELEASE_OPERATIONS_20261103.md`, operational only; the sole academic rubric remains Q01–Q18.
