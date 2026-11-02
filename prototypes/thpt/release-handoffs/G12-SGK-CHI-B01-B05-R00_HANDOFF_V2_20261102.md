@@ -19,6 +19,14 @@ MASTERY_ACTIVATION: NO
 ## S1_SGK_SBT_SOURCE
 Original owner SGK Toán 12 KNTT Tập Một printed pages 5–44 (PDF1 7–46), SHA256 faeb554bea9cf81189c5e790b1b1edb42f50b3648694acc80dc99682ada3f1fd. SBT Tập Một printed pages 4–37 (PDF1 2–35), SHA256 db9d07a2fbe55cda3b4b50fb13d1767e45a7552f668b726241c59febac69c0ca. External reviewer source receipt confirms exact S1 ranges. B01–B05 and end-chapter.
 
+## LESSON_IDS
+- G12-B01
+- G12-B02
+- G12-B03
+- G12-B04
+- G12-B05
+- G12-CHI-END
+
 ## D1_D6_EVIDENCE
 Five lesson segments and end-chapter self-check; 24 reasoned examples, 78 original canonical questions including 12 Written, 6 original SVG, 36 five-step HELP links. Exact SOURCE_SHA and item/outcome/role validated on GitHub.
 ## PED1_PED6_EVIDENCE
