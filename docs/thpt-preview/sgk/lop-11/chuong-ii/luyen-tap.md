@@ -17,5 +17,5 @@
 <section class="thpt-r4-practice-card"><div><p class="thpt-r4-practice-card-kind">Luyện tập</p><strong>Bài 7 · Vận dụng</strong><p>8 câu</p></div><button type="button" class="thpt-r4-practice-open" data-thpt-open-quiz="g11-b7-practice">✎ Luyện tập</button></section>
 </div></section>
 </div>
-<nav class="thpt-r4-lesson-tabs"><a href="../">Chương II</a><a href="../../../../thu-vien/tu-luan-g11-chuong-ii/">Tự luận gốc</a><span aria-disabled="true">Tự kiểm tra · chưa phát hành</span></nav>
+<nav class="thpt-r4-lesson-tabs"><a href="../">Chương II</a><a href="../../../../thu-vien/tu-luan-g11-chuong-ii/">Tự luận gốc</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra · tự đối chiếu</a></nav>
 </div>
