@@ -22,11 +22,9 @@ Em dự đoán sin(30°+60°) có bằng sin30°+sin60° không? Vì sao?
 
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="2"><summary>Đã thử xong? Mở hướng dẫn đối chiếu</summary>
 
-Không. sin90°=1, còn sin30°+sin60°=(1+√3)/2 > 1. Hãy trở lại phần lý do cần công thức cộng và Ví dụ 1, rồi làm Core `THPT-G11-B02-C01`.
+Không. sin90°=1, còn sin30°+sin60°=(1+√3)/2 > 1. Hãy trở lại phần lý do cần công thức cộng và Ví dụ 1, rồi làm câu Core đầu tiên của bài.
 
 </details>
-
-<span data-reviewed-ped-source="G11-CHI-R03" hidden aria-hidden="true"></span>
 
 ## 1. Kiến thức SGK
 
@@ -80,14 +78,7 @@ tan2u=2tan u/(1−tan²u)
 
 **Điều kiện áp dụng:** Chỉ khi mọi giá trị tan trong biểu thức xác định và \(1−tan²u≠0\).
 
-### Hướng suy luận trong các ví dụ
-
-- `EX-G11-B02-01`: kiểm bằng góc cộng 60°+30° trước, sau đó dùng công thức sin(u+v), so với **sai lầm** sin u+sin v.
-- `EX-G11-B02-02`: chọn công thức nhân đôi vì đối số là 2u; kiểm lại sin²2u+cos²2u=1 để phát hiện lỗi dấu.
-- `EX-G11-B02-03`: nhìn thấy tích 2cos75°cos15° nên chọn **tích thành tổng** cos(u−v)+cos(u+v), không thay nhầm công thức sin·sin.
-- `EX-G11-B02-04`: muốn đổi tổng cos75°+cos15° thì dùng **nửa tổng và nửa hiệu**; kiểm các góc ban đầu đang dùng độ, không trộn độ với radian.
-
-## 3. Tích thành tổng
+### 3. Tích thành tổng
 
 **Tích sin · sin**
 
@@ -151,13 +142,20 @@ Nếu \(cos u=3/5\), \(sin u=4/5\), thì \(cos2u=9/25−16/25=−7/25\), \(sin2u
 
 \(cos75°+cos15°=2cos45°cos30°=√6/2\). Với các góc cho bằng độ, toàn bộ biểu thức phải dùng độ; tránh lẫn \(π\) rad với số đo độ trong cùng phép tính không đổi đơn vị.
 
+## Hướng suy luận trong các ví dụ
+
+- **Ví dụ 01:** kiểm bằng góc cộng 60°+30° trước, sau đó dùng công thức sin(u+v), so với **sai lầm** sin u+sin v.
+- **Ví dụ 02:** chọn công thức nhân đôi vì đối số là 2u; kiểm lại sin²2u+cos²2u=1 để phát hiện lỗi dấu.
+- **Ví dụ 03:** nhìn thấy tích 2cos75°cos15° nên chọn **tích thành tổng** cos(u−v)+cos(u+v), không thay nhầm công thức sin·sin.
+- **Ví dụ 04:** muốn đổi tổng cos75°+cos15° thì dùng **nửa tổng và nửa hiệu**; kiểm các góc ban đầu đang dùng độ, không trộn độ với radian.
+
 ## 3. Hình minh họa
 
 <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../../assets/images/thpt/THPT_G11_B02_ANGLE_SUM_60_30_D5_R01.svg" loading="lazy" alt="Các tia tạo góc 30°, 60° và 90° minh họa công thức cộng"><figcaption>Các tia tạo góc 30°, 60° và 90° minh họa công thức cộng.</figcaption></figure>
 
 ### Hướng dẫn đọc hình, đồ thị
 
-- **B02/FIG-G11-B02-01:** đọc lần lượt các tia biểu diễn góc 30°, 60°, 90° trên cùng đường tròn; phép ghép góc 30°+60° cho góc 90° nhưng không phải phép cộng trực tiếp **tọa độ tung sin**. Hình giúp nhận ra điều cần giải thích bằng công thức cộng; không khẳng định hình tự biểu diễn đầy đủ chứng minh tích vô hướng.
+- **Hình minh họa:** đọc lần lượt các tia biểu diễn góc 30°, 60°, 90° trên cùng đường tròn; phép ghép góc 30°+60° cho góc 90° nhưng không phải phép cộng trực tiếp **tọa độ tung sin**. Hình giúp nhận ra điều cần giải thích bằng công thức cộng; không khẳng định hình tự biểu diễn đầy đủ chứng minh tích vô hướng.
 
 ## 4. Tự khắc phục lỗi thường gặp
 
