@@ -16,7 +16,7 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
     assert(response?.ok(),"G11 ChII overview must load");
     const overview=await page.locator("body").innerText();
     assert(overview.includes("Chương II")&&overview.includes("Bài 5"),"Chapter learning path visible");
-    assert(overview.includes("Tự kiểm tra cuối chương · chưa phát hành"),"No false independent readiness claim");
+    assert(overview.includes("Tự kiểm tra cuối chương · tự đối chiếu"),"Voluntary self-check link must be live");
     assert.equal(await page.locator("[data-thpt-readiness]").count(),0,"No active official Readiness");
     for(const lesson of [5,6,7]){
      response=await page.goto(base+"bai-"+lesson+"/",{waitUntil:"networkidle"});
@@ -62,8 +62,33 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
      const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);
      assert(overflow<=20,"G11 ChII horizontal overflow at "+viewport.width);
     }
+    response=await page.goto(base+"tu-kiem-tra-chuong/",{waitUntil:"networkidle"});
+    assert(response?.ok(),"G11 ChII voluntary end-chapter route must load");
+    const rootSelf=page.locator('[data-g11-chapter-selfcheck="CHII"]');
+    await rootSelf.locator(".g10sc-progress").waitFor({timeout:20000});
+    assert((await rootSelf.innerText()).includes("Câu 1 / 15"),"Exactly 15 unique source-locked public skill items");
+    assert.equal(await rootSelf.locator(".g10sc-jump-button").count(),15);
+    assert.equal(await rootSelf.locator(".g10sc-review").count(),0,"No early answer/review before Final Submit");
+    assert(!(await rootSelf.innerText()).includes("Đáp án:"),"No key before Final Submit");
+    assert(!(await rootSelf.innerText()).includes("Lời giải:"),"No solution before Final Submit");
+    assert.equal(await rootSelf.locator("textarea").count(),1,"Written manual answer, not automatic grade");
+    await rootSelf.locator("textarea").fill("Thử giải rồi tự kiểm tra");
+    await rootSelf.locator("[data-g10sc-next]").click();
+    assert((await rootSelf.innerText()).includes("Câu 2 / 15"),"Navigate before submission");
+    assert(!(await rootSelf.innerText()).includes("Đáp án:"),"Navigation must not reveal key");
+    await rootSelf.locator("[data-g10sc-prev]").click();
+    assert.equal(await rootSelf.locator("textarea").inputValue(),"Thử giải rồi tự kiểm tra","Answer retained across navigation");
+    await rootSelf.locator("[data-g10sc-final]").click();
+    const after=await rootSelf.innerText();
+    assert(after.includes("Đáp án:")&&after.includes("Lời giải:"),"Key appears only after Final Submit");
+    assert(after.includes("Cần tự đối chiếu lời giải/rubric: 15 câu."),"15 open-answer records must not be machine scored");
+    assert(after.includes("không phải điểm khảo thí")&&after.includes("Không ghi Skill Mastery"),"No independent Readiness/Mastery");
+    assert.equal(await rootSelf.locator("textarea").isDisabled(),true,"Post-final answer locked");
+    assert.equal(await rootSelf.locator("[data-g10sc-final]").isVisible(),false,"Only one Final Submit");
+    const scOverflow=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);
+    assert(scOverflow<=20,"G11 ChII self-check responsive horizontal overflow at "+viewport.width);
    }finally{await page.close()}
   }
-  console.log("PASS G11 ChII B05-B07 browser 390/820/1440: D1-D6, 3 SVG, 6 D6 links, 6 canonical deep links, no early correctness, no machine scoring, Q16 selfcheck HOLD");
+  console.log("PASS G11 ChII B05–B07 browser 390/820/1440: D1–D6, 3 SVG, 6 D6, 6 canonical deep links, 15 public-placement selfcheck refs, answer keys only after Final Submit, manual-only and no independent Mastery");
  }finally{await browser.close()}
 })().catch(e=>{console.error(e.stack||e);process.exit(1)});
