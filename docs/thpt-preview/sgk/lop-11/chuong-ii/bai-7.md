@@ -2,8 +2,8 @@
 
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG II · SGK KẾT NỐI TRI THỨC</p>
-<p class="thpt-r4-lead">Học kiến thức, tự thử, đọc ví dụ và hình minh họa rồi luyện Core/Practice. Tự kiểm tra cuối chương chưa được phát hành; không có đánh giá độc lập hay Skill Mastery.</p>
-<nav class="thpt-r4-lesson-tabs"><a href="../">Chương II</a><a href="../luyen-tap/">Core và Luyện tập</a><span aria-disabled="true">Tự kiểm tra · chưa phát hành</span></nav>
+<p class="thpt-r4-lead">Học kiến thức, tự thử, đọc ví dụ và hình minh họa rồi luyện Core/Practice. Tự kiểm tra cuối chương có chế độ tự đối chiếu, không cấp Readiness độc lập hay Skill Mastery.</p>
+<nav class="thpt-r4-lesson-tabs"><a href="../">Chương II</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra · tự đối chiếu</a></nav>
 </div>
 
 ## Trước khi học: Vì sao cần kiến thức này?
