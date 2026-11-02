@@ -6,6 +6,28 @@
 <nav class="thpt-r4-lesson-tabs"><a href="../">Chương I</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra · chưa kích hoạt</a></nav>
 </div>
 
+## Trước khi học: Vì sao cần kiến thức này?
+
+**Vấn đề:** Em biết sin 30° và sin 45°, nhưng muốn tìm **sin 75°** mà không có bảng thì làm sao? Biểu thức sin(30°+45°) là một giá trị ứng với **một góc 75°**, không phải tổng hai độ cao sin 30° + sin 45°. Ta cần quy tắc liên hệ giá trị của góc tổng với các giá trị đã biết.
+
+**Gợi nhớ Bài 1:** Với điểm trên đường tròn đơn vị M(u)=(cos u,sin u), N(v)=(cos v,sin v), **tích vô hướng** hai vectơ đơn vị OM,ON tính theo tọa độ là cos u cos v + sin u sin v; tính theo góc lệch là cos(u−v). Từ đó nhìn thấy nguồn gốc **cos(u−v)=cos u cos v + sin u sin v**. Đổi v thành −v cho công thức cos(u+v), rồi dùng liên hệ sin x=cos(π/2−x) để thu được công thức sin của tổng/hiệu. Đây là lý do các **tích chéo** xuất hiện thay cho cộng trực tiếp sin/cos.
+
+**Từ nguyên lý đến công cụ:** Đặt v=u sẽ dẫn đến công thức góc nhân đôi. Cộng/trừ cặp công thức cos(u−v), cos(u+v) sẽ xuất hiện tích thành tổng; đảo hướng với nửa tổng/nửa hiệu suy ra tổng thành tích. Trong bài toán phải kiểm **đơn vị góc** thống nhất; với công thức tan cần từng tan xác định và mẫu cuối khác 0. Nhờ vậy học sinh phân biệt đúng lúc dùng dạng sin/cos thay vì chia cho biểu thức có thể bằng 0.
+
+**Tự kiểm trực giác:** sin(30°+60°)=sin90°=1, còn sin30°+sin60°>1; hai cách cho kết quả khác nhau. Hãy giải thích bằng quan hệ “giá trị của góc tổng” chứ không học thuộc quy tắc dấu một cách tách rời.
+
+## Tự thử trước khi luyện tập
+
+Em dự đoán sin(30°+60°) có bằng sin30°+sin60° không? Vì sao?
+
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="2"><summary>Đã thử xong? Mở hướng dẫn đối chiếu</summary>
+
+Không. sin90°=1, còn sin30°+sin60°=(1+√3)/2 > 1. Hãy trở lại phần lý do cần công thức cộng và Ví dụ 1, rồi làm Core `THPT-G11-B02-C01`.
+
+</details>
+
+<span data-reviewed-ped-source="G11-CHI-R03" hidden aria-hidden="true"></span>
+
 ## 1. Kiến thức SGK
 
 <span class="thpt-ap-knowledge-pilot" hidden aria-hidden="true"></span>
@@ -58,7 +80,14 @@ tan2u=2tan u/(1−tan²u)
 
 **Điều kiện áp dụng:** Chỉ khi mọi giá trị tan trong biểu thức xác định và \(1−tan²u≠0\).
 
-### 3. Tích thành tổng
+### Hướng suy luận trong các ví dụ
+
+- `EX-G11-B02-01`: kiểm bằng góc cộng 60°+30° trước, sau đó dùng công thức sin(u+v), so với **sai lầm** sin u+sin v.
+- `EX-G11-B02-02`: chọn công thức nhân đôi vì đối số là 2u; kiểm lại sin²2u+cos²2u=1 để phát hiện lỗi dấu.
+- `EX-G11-B02-03`: nhìn thấy tích 2cos75°cos15° nên chọn **tích thành tổng** cos(u−v)+cos(u+v), không thay nhầm công thức sin·sin.
+- `EX-G11-B02-04`: muốn đổi tổng cos75°+cos15° thì dùng **nửa tổng và nửa hiệu**; kiểm các góc ban đầu đang dùng độ, không trộn độ với radian.
+
+## 3. Tích thành tổng
 
 **Tích sin · sin**
 
@@ -125,6 +154,10 @@ Nếu \(cos u=3/5\), \(sin u=4/5\), thì \(cos2u=9/25−16/25=−7/25\), \(sin2u
 ## 3. Hình minh họa
 
 <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../../assets/images/thpt/THPT_G11_B02_ANGLE_SUM_60_30_D5_R01.svg" loading="lazy" alt="Các tia tạo góc 30°, 60° và 90° minh họa công thức cộng"><figcaption>Các tia tạo góc 30°, 60° và 90° minh họa công thức cộng.</figcaption></figure>
+
+### Hướng dẫn đọc hình, đồ thị
+
+- **B02/FIG-G11-B02-01:** đọc lần lượt các tia biểu diễn góc 30°, 60°, 90° trên cùng đường tròn; phép ghép góc 30°+60° cho góc 90° nhưng không phải phép cộng trực tiếp **tọa độ tung sin**. Hình giúp nhận ra điều cần giải thích bằng công thức cộng; không khẳng định hình tự biểu diễn đầy đủ chứng minh tích vô hướng.
 
 ## 4. Tự khắc phục lỗi thường gặp
 
