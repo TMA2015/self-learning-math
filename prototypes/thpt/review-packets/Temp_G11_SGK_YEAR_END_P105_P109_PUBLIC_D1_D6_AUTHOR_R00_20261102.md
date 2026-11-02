@@ -363,3 +363,93 @@ Anchor is a label of the same Written question, never a duplicate; self-assessed
 **Đề tự luận mới:** Ba phép thử độc lập, mỗi lần thành công p=0,2. (a) Không lần nào thành công. (b) Ít nhất một. (c) Chính xác một. (d) Chỉ ra chỗ cần giả định độc lập.
 **Lời giải chuẩn để mở sau tự thử:** Không thành công=0,8³=0,512; ít nhất một=1−0,512=0,488; đúng một=3·0,2·0,8²=0,384; tích xác suất chỉ được dùng vì phép thử độc lập.
 **Rubric /4 cụ thể:** Không lần nào 1đ; ít nhất một 1đ; chính xác một 1đ; điều kiện độc lập 1đ.
+
+
+## D5 — required original figures and figure-reading guidance
+- FIG-G11-YR-01: trục và tiếp tuyến hàm f(x)=x² tại x=1; điểm (1,1), hệ số góc 2, phân biệt tiếp tuyến và giá trị hàm.
+- FIG-G11-YR-02: biểu đồ ghép nhóm tần số [0,10)=2,[10,20)=5,[20,30)=3, tích lũy 2,7,10; xác định đúng nhóm trung vị (not precise individual median).
+- FIG-G11-YR-03: hai vòng Venn A,B: chỉ A=0,3, giao=0,2, chỉ B=0,2, ngoài=0,3, cho P(A)=0,5,P(B)=0,4 và hợp=0,7. Không đặt sai số vùng.
+Until exact original SVG files and independent diagram correctness review are delivered, D5 is only a source specification, **not passed SVG evidence**.
+
+## D6 — 11 five-step HELP / return to canonical exercise
+### HELP-G11-YR-TRIG-01 | skill_id=G11-YR-TRIG_IDENTITY | return_item=THPT-G11-YR-TRIG-P01
+1. Chẩn đoán lỗ hổng: Sai chu kì vì quên hệ số của x.
+2. Bản chất: Hàm sin có chu kì 2π theo biến ở trong ngoặc.
+3. Hướng dẫn gỡ lỗi: Đặt 3(x+T)=3x+2π rồi tìm T.
+4. Tự thử chưa lộ đáp án câu gốc: cos(4x) có chu kì π/2.
+5. Quay lại canonical: Quay lại TRIG-P01 và kiểm sin(3(x+T))=sin3x.
+
+### HELP-G11-YR-SEQ-01 | skill_id=G11-YR-SEQUENCE_MODEL | return_item=THPT-G11-YR-SEQ-P01
+1. Chẩn đoán lỗ hổng: Nhầm cộng cố định với nhân công bội.
+2. Bản chất: Cấp số cộng dùng chênh u(n+1)−u(n), cấp số nhân dùng tỉ số.
+3. Hướng dẫn gỡ lỗi: Viết 4 số hạng đầu trước khi dùng tổng.
+4. Tự thử chưa lộ đáp án câu gốc: u1=2, q=3 ⇒ 2,6,18,54.
+5. Quay lại canonical: Quay lại SEQ-P01 và tính lại tổng.
+
+### HELP-G11-YR-LIMIT-01 | skill_id=G11-YR-LIMIT_CONTINUITY | return_item=THPT-G11-YR-LIMIT-C01
+1. Chẩn đoán lỗ hổng: Thay trực tiếp ra 0/0 rồi kết luận bằng 0.
+2. Bản chất: Giới hạn không yêu cầu biểu thức xác định ngay tại điểm đó.
+3. Hướng dẫn gỡ lỗi: Phân tích tử thành nhân tử, rút gọn trên x≠a.
+4. Tự thử chưa lộ đáp án câu gốc: lim(x→1)(x²−1)/(x−1)=2.
+5. Quay lại canonical: Quay lại LIMIT-C01, kiểm kết quả bằng điểm gần 2.
+
+### HELP-G11-YR-EXPLOG-01 | skill_id=G11-YR-EXP_LOG_DOMAIN | return_item=THPT-G11-YR-EXPL-C01
+1. Chẩn đoán lỗ hổng: Bỏ miền của log hoặc không xét cơ số.
+2. Bản chất: log_a(f(x)) chỉ tồn tại f(x)>0, a>0 và a≠1.
+3. Hướng dẫn gỡ lỗi: Ghi điều kiện trước khi giải ẩn.
+4. Tự thử chưa lộ đáp án câu gốc: log2(x−2)=0 ⇒ x=3, điều kiện x>2.
+5. Quay lại canonical: Quay lại EXPL-C01 và thế thử nghiệm.
+
+### HELP-G11-YR-DERIV-01 | skill_id=G11-YR-DERIVATIVE_RATE | return_item=THPT-G11-YR-DERIV-P01
+1. Chẩn đoán lỗ hổng: Sai quy tắc tích bằng tích hai đạo hàm.
+2. Bản chất: (uv)'=u'v+uv' có hai hạng biến đổi.
+3. Hướng dẫn gỡ lỗi: Đặt u=x²+1, v=sinx và tính từng đạo hàm.
+4. Tự thử chưa lộ đáp án câu gốc: (x+1)cosx có đạo hàm cosx−(x+1)sinx.
+5. Quay lại canonical: Quay lại DERIV-P01, kiểm đủ hai hạng.
+
+### HELP-G11-YR-DERIV-02 | skill_id=G11-YR-DERIVATIVE_RATE | return_item=THPT-G11-YR-DERIV-P02
+1. Chẩn đoán lỗ hổng: Đọc dấu gia tốc để kết luận chiều chuyển động.
+2. Bản chất: Vận tốc v=s'(t) có dấu phương, tốc độ |v| không âm.
+3. Hướng dẫn gỡ lỗi: Tính v trước, rồi dùng v·a nếu cần nhanh/chậm.
+4. Tự thử chưa lộ đáp án câu gốc: s(t)=t²: tại t=-1 v=-2 dù a=2.
+5. Quay lại canonical: Quay lại DERIV-P02 và diễn giải đơn vị.
+
+### HELP-G11-YR-SPACE-01 | skill_id=G11-YR-SPACE_PERP_DISTANCE | return_item=THPT-G11-YR-SPACE-P02
+1. Chẩn đoán lỗ hổng: Nhìn phối cảnh rồi kết luận đoạn xiên là khoảng cách.
+2. Bản chất: Khoảng cách chéo nhau đo bằng đoạn vuông góc cả hai đường.
+3. Hướng dẫn gỡ lỗi: Dựng BC nối B∈AB, C∈CC' rồi chứng minh hai vuông góc.
+4. Tự thử chưa lộ đáp án câu gốc: Trong lập phương, BC vuông góc AB và CC'.
+5. Quay lại canonical: Quay lại SPACE-P02, chỉ rõ chân vuông góc.
+
+### HELP-G11-YR-VOLUME-01 | skill_id=G11-YR-SPACE_VOLUME | return_item=THPT-G11-YR-VOL-C01
+1. Chẩn đoán lỗ hổng: Quên 1/3 hoặc dùng cạnh bên làm chiều cao.
+2. Bản chất: V_chóp=(1/3)Sđáy·h, h vuông góc đáy.
+3. Hướng dẫn gỡ lỗi: Ghi loại hình, đáy, h, đơn vị trước khi thế số.
+4. Tự thử chưa lộ đáp án câu gốc: S=9cm²,h=3cm ⇒ Vchóp=9cm³.
+5. Quay lại canonical: Quay lại VOL-C01, phân biệt lăng trụ.
+
+### HELP-G11-YR-STAT-01 | skill_id=G11-YR-GROUPED_STATS | return_item=THPT-G11-YR-STAT-C01
+1. Chẩn đoán lỗ hổng: Chọn nhóm trung vị theo tần số lớn nhất.
+2. Bản chất: Trung vị dựa vị trí n/2 trong tần số tích lũy, không phải tần số đơn.
+3. Hướng dẫn gỡ lỗi: Cộng tích lũy 2,7,10 cho n=10.
+4. Tự thử chưa lộ đáp án câu gốc: 2,5,3 nhóm, vị trí thứ 5 ở nhóm 2.
+5. Quay lại canonical: Quay lại STAT-C01, không coi trung điểm là đáp án chắc chắn.
+
+### HELP-G11-YR-PROB-01 | skill_id=G11-YR-PROBABILITY_COMBINE | return_item=THPT-G11-YR-PROB-C01
+1. Chẩn đoán lỗ hổng: Cộng P(A)+P(B) nhưng quên trừ giao.
+2. Bản chất: Vùng A∩B đã bị đếm hai lần.
+3. Hướng dẫn gỡ lỗi: Vẽ Venn với ba vùng chỉ A, giao, chỉ B.
+4. Tự thử chưa lộ đáp án câu gốc: P(A)=.3,P(B)=.5, giao=.1 ⇒ hợp=.7.
+5. Quay lại canonical: Quay lại PROB-C01, kiểm kết quả không vượt 1.
+
+### HELP-G11-YR-INDEP-01 | skill_id=G11-YR-PROBABILITY_INDEP | return_item=THPT-G11-YR-IND-P01
+1. Chẩn đoán lỗ hổng: Cộng hai khả năng độc lập không trừ trường hợp cả hai.
+2. Bản chất: Ít nhất một=1−(không cái nào); cần độc lập để nhân.
+3. Hướng dẫn gỡ lỗi: P(cả hai thất bại)=(1−p)².
+4. Tự thử chưa lộ đáp án câu gốc: p=.5 hai lần ⇒ ít nhất một=.75.
+5. Quay lại canonical: Quay lại IND-P01, giải thích giả định độc lập.
+
+
+## INDEPENDENT REVIEW GATE — NOT YET PASS
+Author original source cross-references owner SGK 38/38 published year-end problems and SBT 43/43 annual items by domain, without duplicating publisher exercise text. 11 distinct RD0 outcomes including cross-remediation, 16 reasoned worked examples, 31 canonical public Core/Practice/Application, 10 Written/Anchor with real /4 rubrics, and 11 D6 return paths. Fig specifications not yet externally reviewed.
+Q01 original S1 printed/PDF-index with SHA verified; Q02–Q06 and Q09–Q15 author QA to audit per outcome; Q07 requires actual SVG source/QA; Q08 11 D6; Q16 public self-check not independent RD1/Mastery; Q17 SGK cross-chapter path separate Topic; Q18 exact Git blob and independent NotebookLM Academic+PED verdict **PENDING** using exactly five current v2.1 Permanent Sources plus original S1. This is new academic content, cannot inherit PASS from ChI–IX or from legacy annual source.
