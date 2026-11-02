@@ -96,6 +96,12 @@ function verifyReadyManifest(rel, initialHandoff) {
   verifyBlob(reviewBlob, reviewFile);
   const reviewText = fs.readFileSync(reviewFile, "utf8");
   assert(reviewText.includes(sourceBlob), "Review receipt must identify the exact canonical source blob");
+  if (initialHandoff || data.includes("STANDARD_ID: ")) {
+    assert(reviewText.includes("SLM-THPT-QUALITY-ONE"),
+      "New reviewer receipt must identify the same ONE normative standard as both lanes");
+    assert(reviewText.includes("1.0.0"),
+      "New reviewer receipt must identify the effective standard version");
+  }
   const handoffRel = field(data, "AUTHOR_HANDOFF");
   const handoff = fs.readFileSync(safeRepoFile(handoffRel, ["prototypes/thpt/release-handoffs/"]), "utf8");
   verifyOneStandardEvidence(data, handoff, initialHandoff);
