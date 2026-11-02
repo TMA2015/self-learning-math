@@ -6,6 +6,31 @@
 <nav class="thpt-r4-lesson-tabs"><a href="../">Chương I</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav>
 </div>
 
+## Trước khi học: Vì sao cần kiến thức này?
+
+**Tình huống:** Ở Bài 1, điểm M quay quanh đường tròn đơn vị theo một góc x (radian); tọa độ của M là `(cos x, sin x)`. Bài 2 đã cho công cụ biến đổi các giá trị lượng giác khi cộng hoặc trừ góc. Khi M tiếp tục quay, làm thế nào mô tả sự thay đổi của **tung độ và hoành độ** theo x thay vì chỉ tính một vị trí? Ta xem x như đầu vào biến thiên, nhận `sin x` và `cos x` làm đầu ra — đó chính là các hàm số lượng giác.
+
+**Hãy quan sát một vòng quay** trước khi học quy tắc:
+
+| Góc x (radian) | 0 | π/2 | π | 3π/2 | 2π |
+|---|---:|---:|---:|---:|---:|
+| Tung độ M = sin x | 0 | 1 | 0 | −1 | 0 |
+| Hoành độ M = cos x | 1 | 0 | −1 | 0 | 1 |
+
+Sau đúng một vòng `2π`, M trở lại vị trí cũ nên cả sin và cos lặp giá trị: vì thế mới cần khái niệm **chu kỳ** (chu kỳ dương nhỏ nhất của sin/cos là `2π`). Góc x có thể âm hoặc lớn hơn một vòng; sin/cos vẫn nhận được mọi x thực, còn tọa độ của điểm trên đường tròn đơn vị luôn thuộc `[-1,1]`. `tan x = sin x/cos x` đòi `cos x ≠ 0`, `cot x = cos x/sin x` đòi `sin x ≠ 0`: phải hiểu vì sao có các chỗ không xác định trước khi học thuộc tiệm cận. Chu kỳ là sự **lặp lại giá trị hàm**, không phải biên độ; trong bài toán thực tế phải kiểm tra đơn vị của biến và miền áp dụng.
+
+## Tự thử trước khi luyện tập
+
+Khi M quay thêm 2π quanh đường tròn đơn vị, sin(x+2π) thay đổi hay giữ nguyên? Hãy giải thích bằng tung độ của M.
+
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="3"><summary>Đã thử xong? Mở hướng dẫn đối chiếu</summary>
+
+Cùng điểm cuối ⇒ cùng tung độ ⇒ sin(x+2π)=sin x. Nếu chưa giải thích được, quay lại bảng mốc góc và đồ thị sin, rồi làm Core `THPT-G11-B03-C01`.
+
+</details>
+
+<span data-reviewed-ped-source="G11-CHI-R03" hidden aria-hidden="true"></span>
+
 ## 1. Kiến thức SGK
 
 ### 1. Hàm sin và cos
@@ -14,7 +39,15 @@
 ### 2. Đồ thị sin
 
 qua `(0,0)`, `(π/2,1)`, `(π,0)`, `(3π/2,-1)`, `(2π,0)`; tăng trên `[-π/2+2kπ,π/2+2kπ]`, giảm trên `[π/2+2kπ,3π/2+2kπ]`. Không nói sin tăng trên toàn ℝ.
-### 3. Đồ thị cos
+### Hướng suy luận trong các ví dụ
+
+- `EX-G11-B03-01`: **Vì sao phải kiểm miền xác định trước?** `tan(2x)` là thương có mẫu `cos(2x)`; giải `cos(2x)=0` để loại x, rồi mới kết luận về tập giá trị.
+- `EX-G11-B03-02`: **Vì sao thay −x?** Trên miền đối xứng, so `f(-x)` với cả `f(x)` và `-f(x)`; tổng một phần chẵn và một phần lẻ không tự động là chẵn hay lẻ.
+- `EX-G11-B03-03`: **Vì sao chu kỳ bị chia 3?** Đối số `3x−π/4` cần tăng `2π`, do đó x chỉ tăng `2π/3`; biên độ 2 không làm đổi chu kỳ.
+- `EX-G11-B03-04`: **Vì sao đọc mốc đồ thị thay vì đoán?** `cos x=0` tại hai mốc `π/2`, `3π/2` trong một vòng; chú ý miền được yêu cầu trước khi liệt kê điểm cắt.
+- `EX-G11-B03-05`: **Vì sao đọc đường giữa trước?** Với `24+3cos(πt/6)`, 24 là mức trung bình, 3 là độ lệch cực đại, chu kỳ theo giờ là 12; mọi kết luận thời gian chỉ xét trên miền mô hình đang sử dụng.
+
+## 3. Đồ thị cos
 
 qua `(0,1)`, `(π/2,0)`, `(π,-1)`, `(3π/2,0)`, `(2π,1)`; giảm trên `[2kπ,(2k+1)π]`, tăng trên `[(2k-1)π,2kπ]` với `k∈ℤ`.
 ### 4. Hàm tan
@@ -47,6 +80,13 @@ Hoành độ là radian; xét miền xác định trước, đọc điểm, cự
 <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../../assets/images/thpt/FIG-G11-B03-03_R01.svg" loading="lazy" alt="Đồ thị lượng giác hình 3, đọc cùng mô tả trong kiến thức"><figcaption>Hình 3. Đọc trục, miền xác định, điểm mốc và nhánh đồ thị theo phần kiến thức.</figcaption></figure>
 
 <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../../assets/images/thpt/FIG-G11-B03-04_R01.svg" loading="lazy" alt="Đồ thị lượng giác hình 4, đọc cùng mô tả trong kiến thức"><figcaption>Hình 4. Đọc trục, miền xác định, điểm mốc và nhánh đồ thị theo phần kiến thức.</figcaption></figure>
+
+### Hướng dẫn đọc hình, đồ thị
+
+- `FIG-G11-B03-01` (sin): đọc dãy `(0,0)`, `(π/2,1)`, `(π,0)`, `(3π/2,−1)`, `(2π,0)`; đồ thị đi lên rồi xuống, không phải sin luôn tăng.
+- `FIG-G11-B03-02` (cos): bắt đầu ở 1 tại x=0, đạt −1 tại x=π, trở lại 1 tại `2π`; cùng chu kỳ với sin nhưng điểm xuất phát trên trục tung khác.
+- `FIG-G11-B03-03` (tan): nét đứt tại `x=±π/2` là các vị trí `cos x=0` không thuộc miền xác định; các nhánh không thể nối qua đường nét đứt.
+- `FIG-G11-B03-04` (cot): đường nét đứt tại các bội nguyên của π là nơi `sin x=0`; trên từng khoảng xác định, đồ thị giảm, không đánh dấu `cot 0=0`.
 
 ## 4. Tự khắc phục lỗi thường gặp
 
