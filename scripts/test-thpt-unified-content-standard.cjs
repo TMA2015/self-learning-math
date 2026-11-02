@@ -28,8 +28,8 @@ function validate(source, agents, queue) {
  const failures=[],warnings=[];
  const fail=x=>failures.push(x);
  if(!source.includes("STANDARD_ID:** `SLM-THPT-QUALITY-ONE`"))fail("STANDARD_ID_NOT_EXPLICIT");
- if(!/VERSION:\*\* `1\.0\.0-draft-20261102`/.test(source))fail("VERSION_NOT_LOCKED");
- if(!source.includes("GOVERNANCE_DRAFT_PENDING_OWNER_APPROVAL"))fail("OWNER_APPROVAL_BOUNDARY_MISSING");
+ if(!/VERSION:\*\* `1\.0\.0`/.test(source))fail("VERSION_NOT_LOCKED");
+ if(!source.includes("OFFICIAL_OWNER_APPROVED_MAIN"))fail("OFFICIAL_OWNER_APPROVAL_RECEIPT_MISSING");
  for(const heading of REQUIRED_SECTIONS)if(!source.includes(heading))fail("MISSING_SECTION:"+heading);
  const tableStart=source.indexOf("## II. Ma trận chuẩn chất lượng duy nhất Q01–Q18");
  const tableEnd=source.indexOf("## III.",tableStart);
@@ -58,7 +58,7 @@ function validate(source, agents, queue) {
  return {status,failures,warnings,sourceFile:FILE,qualityCriteria:18};
 }
 function selfTest(){
- const make=()=>"STANDARD_ID:** `SLM-THPT-QUALITY-ONE` VERSION:** `1.0.0-draft-20261102` GOVERNANCE_DRAFT_PENDING_OWNER_APPROVAL";
+ const make=()=>"STANDARD_ID:** `SLM-THPT-QUALITY-ONE` VERSION:** `1.0.0` OFFICIAL_OWNER_APPROVED_MAIN";
  assert(validate(make(),"","").status==="FAIL");
  let full=fs.readFileSync(path.join(ROOT,FILE),"utf8");
  let a=validate(full,"","");

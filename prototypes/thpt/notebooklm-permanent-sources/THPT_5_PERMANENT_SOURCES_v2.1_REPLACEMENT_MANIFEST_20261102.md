@@ -27,6 +27,6 @@
 ## Authority and version safety
 
 - `STANDARD_ID` là **một chuẩn**. Năm file Permanent được chia theo vai trò, không phải năm chuẩn độc lập. Tài liệu gốc 08 (hai hành trình), 06 (bàn giao review) và 07 (delta) vẫn có hiệu lực riêng cho ChatGPT Project; chúng không làm tăng số lượng Permanent NotebookLM.
-- Không tuyên bố đã đối chiếu byte-to-byte các file v2.0 cũ: chủ dự án đã **bỏ yêu cầu so sánh**, thay toàn bộ bằng bộ v2.1 mới. Việc thay thế là hành động thủ công của chủ dự án; cho đến khi người dùng hoàn tất, ghi `NOTEBOOKLM_V21_SOURCE_INSTALLATION=PENDING_OWNER_ACTION`.
+- Không tuyên bố đã đối chiếu byte-to-byte các file v2.0 cũ: chủ dự án đã **bỏ yêu cầu so sánh**, thay toàn bộ bằng bộ v2.1 mới. Việc thay thế là hành động thủ công của chủ dự án; người dùng đã xác nhận thay toàn bộ năm file v2.1 vào NotebookLM ngày 02/11/2026: `NOTEBOOKLM_V21_SOURCE_INSTALLATION=OWNER_CONFIRMED_20261102` (không phải xác minh truy cập trực tiếp vào NotebookLM).
 - Review đã PASS hợp lệ trên snapshot v2.0 được bảo toàn với đúng phạm vi cũ; chỉ các đợt review **mới** dùng đủ v2.1. Không tự áp chuẩn 1.0 hồi tố mọi bài đã phát hành hoặc gọi PASS cũ thành PASS v2.1.
-- Gói thay thế này **không** cho phép phát hành học liệu. PR #703 là governance-only; chủ dự án đã cho phép merge **sau khi final QA PASS**. Release hiện tại có thể kết thúc tác vụ đang được phép, không tự mở tác vụ mới hoặc restart automation.
+- Gói thay thế này **không** cho phép phát hành học liệu. PR #703 governance-only đã merge trên main tại `10cac5ffed2217a3e3d08f33149d2a8fea11b6f8` sau 3/3 exact-head QA PASS; không khởi động lại phát hành. Release hiện tại có thể kết thúc tác vụ đang được phép, không tự mở tác vụ mới hoặc restart automation.
