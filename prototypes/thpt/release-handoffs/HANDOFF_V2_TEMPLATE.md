@@ -60,7 +60,7 @@ Single normative source: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD
 <!-- Complete Q03 through Q18 with real evidence before CONTENT_READY. Template cannot be passed as a ready packet. -->
 
 ## REVIEW_SOURCE_RECEIPT
-Reviewer packet IDs, exact selected Permanent Sources v2.0, SGK/SBT S1, expected/reviewed lesson/outcome/item reconciliation, P0/P1/P2, Academic + PED verdicts, proof that aliases map to canonical source. **The separate immutable REVIEW_RECEIPT_PATH file must explicitly contain the exact ACADEMIC_SOURCE_BLOB string**; all IDs listed above must actually appear in the frozen academic source file.
+For all newly standardized packets, independent NotebookLM receipt must explicitly cite `SLM-THPT-QUALITY-ONE`, effective `STANDARD_VERSION: 1.0.0`, and exact academic source SHA. Reviewer packet IDs, exact selected Permanent Sources v2.0, SGK/SBT S1, expected/reviewed lesson/outcome/item reconciliation, P0/P1/P2, Academic + PED verdicts, proof that aliases map to canonical source. **The separate immutable REVIEW_RECEIPT_PATH file must explicitly contain the exact ACADEMIC_SOURCE_BLOB string**; all IDs listed above must actually appear in the frozen academic source file.
 
 ## DELTA_LEDGER
 Class A/B/C/D, affected IDs, corrections, reviewer re-review when C/D, source equivalence proof when B; `NONE` only if no changes.
