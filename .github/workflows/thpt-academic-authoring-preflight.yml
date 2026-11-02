@@ -1,0 +1,34 @@
+name: THPT Academic Authoring Preflight (source-only, no deploy)
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'scripts/audit-thpt-authoring-preflight.cjs'
+      - 'prototypes/thpt/content-drafts/**'
+      - 'prototypes/thpt/THPT_AUTHORING_PED_D1_D6_AND_V2_PREFLIGHT_CONTRACT_v1_20261102.md'
+      - '.github/workflows/thpt-academic-authoring-preflight.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  source-preflight:
+    name: Validate author structure before NotebookLM (never grants PASS)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check and self-test the preflight
+        run: |
+          node --check scripts/audit-thpt-authoring-preflight.cjs
+          node scripts/audit-thpt-authoring-preflight.cjs --self-test
+      - name: Check G11 ChII reviewed-base-preserving R02 candidate if present
+        run: |
+          f=prototypes/thpt/content-drafts/G11_CHII_B05_B07_PED_R02_FULL_SOURCE_DELTA_C_REVIEW_20261102.md
+          if test -f "$f"; then
+            node scripts/audit-thpt-authoring-preflight.cjs "$f" \
+              --lesson-nums=5,6,7 --items=42 --outcomes=16 \
+              --sha=9737e7b0ba33fc875bc1d78d1104e8ebb427b6f3 --require-ped
+          else
+            echo "No G11 ChII candidate in PR: self-test only; do not infer Academic PASS."
+          fi
