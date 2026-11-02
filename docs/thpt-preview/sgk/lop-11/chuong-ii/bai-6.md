@@ -3,7 +3,7 @@
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG II · SGK KẾT NỐI TRI THỨC</p>
 <p class="thpt-r4-lead">Học kiến thức, tự thử, đọc ví dụ và hình minh họa rồi luyện Core/Practice. Tự kiểm tra cuối chương chưa được phát hành; không có đánh giá độc lập hay Skill Mastery.</p>
-<nav class="thpt-r4-lesson-tabs"><a href="../">Chương II</a><span aria-disabled="true">Core và Luyện tập · đang tích hợp</span><span aria-disabled="true">Tự kiểm tra · chưa phát hành</span></nav>
+<nav class="thpt-r4-lesson-tabs"><a href="../">Chương II</a><a href="../luyen-tap/">Core và Luyện tập</a><span aria-disabled="true">Tự kiểm tra · chưa phát hành</span></nav>
 </div>
 
 ## Trước khi học: Vì sao cần kiến thức này?
@@ -84,4 +84,4 @@ CSC 2,5,8,... có d=3, u_{20}=59. S_{20}=20(2+59)/2=610. Thử bằng n[2u1+(n�
 
 ## 5. Tiếp tục
 
-Đọc lại ví dụ và tự thử, sau đó làm Core/Practice khi nhánh phát hành hoàn tất tích hợp.
+[Core và Luyện tập Bài 6](../luyen-tap/) · [Tự luận Chương II](../../../../thu-vien/tu-luan-g11-chuong-ii/)
