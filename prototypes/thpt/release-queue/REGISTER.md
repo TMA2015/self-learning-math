@@ -4,6 +4,7 @@
 
 | Gói | Hành trình | Trạng thái | Phạm vi | PR / nguồn |
 |---|---|---|---|---|
+| [G11-SGK-CHVI-B18-B21-R01](ready/G11-SGK-CHVI-B18-B21-R01.md) | SGK_CHAPTER | CONTENT_READY | FULL_LEARNING_PATH | DRAFT AUTHORING #707; independent historic dual Academic/PED PASS on 22 outcomes/49 canonical source, owner original SGK/SBT T2 PDF visual/sha validated, numeral Delta_B equivalent; no website release until ALL G11 and release gates |
 | [G11-SGK-CHI-B01-B04](ready/G11-SGK-CHI-B01-B04.md) | SGK_CHAPTER | CONTENT_READY | FULL_LEARNING_PATH | Source R03 Academic/PED PASS; integrated PR #697 46 public + voluntary 20 Written Final Submit, AP1–AP5/R1–R5 QA receipts from head 3a02b1d PASS; initial V2 manifest stays CONTENT_READY until final-head CI/release and P1 (no independent Readiness/Mastery) |
 | [G11-SGK-CHI-B01-B02](ready/G11-SGK-CHI-B01-B02.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | source #627 merged; release #650 R1–R5 evidence, exact-final-head CI before merge/deploy; B01–B02 only |
 | [G10-SGK-CHIV-B09-B11](ready/G10-SGK-CHIV-B09-B11.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY B09–B11 | source #637 merged; release #648 R1–R5 candidate QA PASS, final metadata-head dual CI required |
@@ -39,3 +40,5 @@
 **30/10/2026 ChIII R1–R5:** Source #633 merged main `1643c60e3638cbc180c6580b54111a64e07cf663`; exact source blob `6320aeaa89bd51c514b07461e01fad5e3aca833f`. Release #644 integrates 16 canonical formative (7 A–D MCQ, 9 short-response), 2 Written incl Anchor, 2 original SVG, 4 D6 HELP_ID. Owner permission covers PUBLIC_FORMATIVE_ONLY **after** both exact final-head CI PASS; P1/P2 postdeploy separate, no Readiness/Mastery.
 
 **30/10/2026 — ChIV B07/B08 academic handoff:** 18/18 NotebookLM R01 PASS, D1–D6 10/10 outcomes, snapshot Git blob `42b206e31421b33860a1bf697d2d04b7aba992cf`. Authoring #634 source-only, no website/Readiness/Mastery. R1–R5 requires separate release PR and exact-head CI.
+
+**02/11/2026 G11 CHVI academic correction:** one canonical V2 `G11-SGK-CHVI-B18-B21-R01` complete academic handoff staged in Draft #707 only; original source Git SHA, direct owner SGK/SBT T2 PDF original SHA/page proof, historical dual independent Academic/PED PASS and literal-number Delta_B receipt. Still **NO website release** before all G11 ChI–IX and SGK pp99–109 completed with AP/R owner permission. No private RD1 or Mastery.
