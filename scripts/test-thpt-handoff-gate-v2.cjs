@@ -105,17 +105,24 @@ if (process.argv.includes("--self-test")) selfTest();
 else {
   const base = process.env.BASE_SHA, head = process.env.HEAD_SHA;
   assert(/^[a-f0-9]{40}$/.test(base || "") && /^[a-f0-9]{40}$/.test(head || ""), "BASE_SHA and HEAD_SHA must be supplied by PR scope; fail closed");
+  // Recheck ALL V2 packets on every PR, even when only their source/receipt changed.
+  // New manifest additions must use V2; old historical manifests remain grandfathered.
   const changed = runGit("diff","--name-status",base + "..." + head,"--",prefix);
-  let checked = 0;
+  const added = new Set();
   for (const line of changed.split("\n").filter(Boolean)) {
-    const parts = line.split("\t"), status = parts[0], rel = parts[parts.length - 1];
-    if (!rel.startsWith(prefix) || !rel.endsWith(".md") || rel.endsWith("/README.md")) continue;
-    // Only new canonical READY packets: old ready manifests keep historical attestations.
-    // Modified V2 packet remains subject to the V2 gate on every subsequent PR.
-    if (status.startsWith("A") || status.startsWith("R") || (status.startsWith("M") && fs.readFileSync(path.join(root,rel),"utf8").includes("HANDOFF_PROTOCOL: THPT-TWO-LANE-V2"))) {
-      verifyReadyManifest(rel, status.startsWith("A") || status.startsWith("R"));
-      checked++;
-    }
+    const parts = line.split("\t"), status = parts[0], rel = parts[parts.length-1];
+    if ((status.startsWith("A") || status.startsWith("R")) && rel.startsWith(prefix) && rel.endsWith(".md") && !rel.endsWith("/README.md")) added.add(rel);
   }
-  console.log("PASS handoff V2 gate: " + checked + " new/updated V2 ready manifests. Historical packets remain unchanged.");
+  let checked = 0;
+  for (const name of fs.readdirSync(path.join(root,prefix)).filter(x => x.endsWith(".md") && x !== "README.md")) {
+    const rel = prefix + name;
+    const data = fs.readFileSync(path.join(root,rel), "utf8");
+    if (!data.includes("HANDOFF_PROTOCOL: THPT-TWO-LANE-V2")) {
+      assert(!added.has(rel), "New READY manifest must use source-locked V2: " + rel);
+      continue;
+    }
+    verifyReadyManifest(rel, added.has(rel));
+    checked++;
+  }
+  console.log("PASS handoff V2 gate: " + checked + " current V2 ready manifests revalidated; older manifests grandfathered. No academic PASS or deploy.");
 }
