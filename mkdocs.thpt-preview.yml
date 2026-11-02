@@ -183,3 +183,4 @@ extra_javascript:
   - assets/javascripts/thpt-chix-reviewed-formative-v1.js
   - assets/javascripts/thpt-r4-preview.js
   - assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js
+  - assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js
