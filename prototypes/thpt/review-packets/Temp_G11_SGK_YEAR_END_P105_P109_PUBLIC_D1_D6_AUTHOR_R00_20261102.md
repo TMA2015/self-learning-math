@@ -183,3 +183,130 @@ Public tasks are formative and transparent after own Submit only. The original S
 
 ### EX-G11-YR-INT-01 | skill_id=G11-YR_CROSS_CHAPTER_REMEDIATION
 **Method choice, conditions and solution:** Một câu chuyển động sai vì chỉ xét dấu a(t) → về đạo hàm cấp hai và tốc độ |v| trước khi tự thử câu mới. Một câu góc nhị diện sai vì chỉ đọc hình → dựng góc phẳng vuông góc giao tuyến. Phân loại nguyên nhân lỗi theo outcome, không chấm học sinh chỉ bằng số bài đúng.
+
+
+## D3 — 31 unique year-end public formative canonical items (concept check + transfer + application)
+Each answer is an author solution to be shown only AFTER individual formative Submit or a learner-controlled self-compare. Never reuse these public seen items as independent held-out Readiness.
+### THPT-G11-YR-TRIG-C01 | skill_id=G11-YR-TRIG_IDENTITY | placement=SGK_CORE | role=SGK_CORE
+**Câu hỏi:** Viết đúng công thức cos(a+b).
+**Đáp án/lí do chỉ sau khi làm:** cos a cos b−sin a sin b; dấu trừ không phải cộng.
+
+### THPT-G11-YR-TRIG-P01 | skill_id=G11-YR-TRIG_IDENTITY | placement=SGK_PRACTICE | role=SGK_PRACTICE
+**Câu hỏi:** Chu kì cơ bản của hàm y=sin(3x) là?
+**Đáp án/lí do chỉ sau khi làm:** 2π/3, bởi 3(x+T)=3x+2π.
+
+### THPT-G11-YR-TRIG-P02 | skill_id=G11-YR-TRIG_IDENTITY | placement=SGK_PRACTICE | role=SGK_PRACTICE
+**Câu hỏi:** Giải sin x=0 với x thuộc [0,2π].
+**Đáp án/lí do chỉ sau khi làm:** x=0,π,2π. Nếu khoảng có cả hai đầu mút thì tính cả 0 và 2π.
+
+### THPT-G11-YR-SEQ-C01 | skill_id=G11-YR-SEQUENCE_MODEL | placement=SGK_CORE | role=SGK_CORE
+**Câu hỏi:** u1=5 và d=2 cấp số cộng, tìm u6.
+**Đáp án/lí do chỉ sau khi làm:** u6=5+5·2=15.
+
+### THPT-G11-YR-SEQ-P01 | skill_id=G11-YR-SEQUENCE_MODEL | placement=SGK_PRACTICE | role=SGK_PRACTICE
+**Câu hỏi:** Cấp số nhân v1=3, q=2, tìm tổng 4 số hạng đầu.
+**Đáp án/lí do chỉ sau khi làm:** S4=3(1+2+4+8)=45.
+
+### THPT-G11-YR-SEQ-P02 | skill_id=G11-YR-SEQUENCE_MODEL | placement=SGK_APPLICATION | role=SGK_APPLICATION
+**Câu hỏi:** Tiền công năm đầu 50 triệu, thêm 5 triệu mỗi năm. Tổng 3 năm?
+**Đáp án/lí do chỉ sau khi làm:** 50+55+60=165 triệu; cấp số cộng, không nhân 1,05.
+
+### THPT-G11-YR-LIMIT-C01 | skill_id=G11-YR-LIMIT_CONTINUITY | placement=SGK_CORE | role=SGK_CORE
+**Câu hỏi:** Tính lim(x→2)(x²−4)/(x−2).
+**Đáp án/lí do chỉ sau khi làm:** 4, do x²−4=(x−2)(x+2) khi x≠2.
+
+### THPT-G11-YR-LIMIT-P01 | skill_id=G11-YR-LIMIT_CONTINUITY | placement=SGK_PRACTICE | role=SGK_PRACTICE
+**Câu hỏi:** Với f(x)=x+2 khi x≠1, f(1)=a, tìm a để liên tục tại1.
+**Đáp án/lí do chỉ sau khi làm:** a=3, bằng giới hạn hai phía 3.
+
+### THPT-G11-YR-LIMIT-P02 | skill_id=G11-YR-LIMIT_CONTINUITY | placement=SGK_PRACTICE | role=SGK_PRACTICE
+**Câu hỏi:** lim(x→+∞)(3x²+2)/(x²−1) bằng?
+**Đáp án/lí do chỉ sau khi làm:** 3, chia cả tử và mẫu cho x².
+
+### THPT-G11-YR-EXPL-C01 | skill_id=G11-YR-EXP_LOG_DOMAIN | placement=SGK_CORE | role=SGK_CORE
+**Câu hỏi:** Giải log2(x−1)=3 và ghi miền.
+**Đáp án/lí do chỉ sau khi làm:** x>1, x−1=8 ⇒ x=9.
+
+### THPT-G11-YR-EXPL-P01 | skill_id=G11-YR-EXP_LOG_DOMAIN | placement=SGK_PRACTICE | role=SGK_PRACTICE
+**Câu hỏi:** Giải 3^(x−2)=27.
+**Đáp án/lí do chỉ sau khi làm:** x−2=3 ⇒ x=5.
+
+### THPT-G11-YR-EXPL-P02 | skill_id=G11-YR-EXP_LOG_DOMAIN | placement=SGK_PRACTICE | role=SGK_PRACTICE
+**Câu hỏi:** Giải bất phương trình (1/2)^x ≥ (1/2)^3.
+**Đáp án/lí do chỉ sau khi làm:** x≤3 vì hàm cơ số 1/2 nghịch biến.
+
+### THPT-G11-YR-DERIV-C01 | skill_id=G11-YR-DERIVATIVE_RATE | placement=SGK_CORE | role=SGK_CORE
+**Câu hỏi:** Hàm f(x)=x³−2x có đạo hàm tại x=1 bằng?
+**Đáp án/lí do chỉ sau khi làm:** f'=3x²−2 nên f'(1)=1.
+
+### THPT-G11-YR-DERIV-P01 | skill_id=G11-YR-DERIVATIVE_RATE | placement=SGK_PRACTICE | role=SGK_PRACTICE
+**Câu hỏi:** Tính đạo hàm (x²+1)sin x.
+**Đáp án/lí do chỉ sau khi làm:** 2x sin x+(x²+1)cos x; chọn quy tắc tích.
+
+### THPT-G11-YR-DERIV-P02 | skill_id=G11-YR-DERIVATIVE_RATE | placement=SGK_APPLICATION | role=SGK_APPLICATION
+**Câu hỏi:** s(t)=t²−4t, tại t=1 vật đang đi chiều dương hay âm?
+**Đáp án/lí do chỉ sau khi làm:** v=2t−4 nên v(1)=−2, đi chiều âm; tốc độ=2.
+
+### THPT-G11-YR-SPACE-C01 | skill_id=G11-YR-SPACE_PERP_DISTANCE | placement=SGK_CORE | role=SGK_CORE
+**Câu hỏi:** d vuông góc hai đường a,b cắt nhau và cùng thuộc (P). Kết luận?
+**Đáp án/lí do chỉ sau khi làm:** d vuông góc mặt phẳng (P); điều kiện a,b cắt nhau là quan trọng.
+
+### THPT-G11-YR-SPACE-P01 | skill_id=G11-YR-SPACE_PERP_DISTANCE | placement=SGK_PRACTICE | role=SGK_PRACTICE
+**Câu hỏi:** Cọc thẳng 1m bóng 2m trên nền phẳng, góc tia sáng với nền có tanθ=?
+**Đáp án/lí do chỉ sau khi làm:** 1/2, vì góc đo với hình chiếu bóng, cạnh đối là độ cao cọc.
+
+### THPT-G11-YR-SPACE-P02 | skill_id=G11-YR-SPACE_PERP_DISTANCE | placement=SGK_PRACTICE | role=SGK_PRACTICE
+**Câu hỏi:** Trong hình lập phương cạnh a, khoảng cách giữa AB và CC' bằng?
+**Đáp án/lí do chỉ sau khi làm:** a, vì BC nối B∈AB tới C∈CC', vuông góc với cả AB và CC'.
+
+### THPT-G11-YR-VOL-C01 | skill_id=G11-YR-SPACE_VOLUME | placement=SGK_CORE | role=SGK_CORE
+**Câu hỏi:** Chóp có diện tích đáy 12cm², cao 6cm, thể tích?
+**Đáp án/lí do chỉ sau khi làm:** 24cm³ vì V=12·6/3.
+
+### THPT-G11-YR-VOL-P01 | skill_id=G11-YR-SPACE_VOLUME | placement=SGK_PRACTICE | role=SGK_PRACTICE
+**Câu hỏi:** Lăng trụ đáy tam giác vuông cạnh 6cm và 8cm, cao 3cm, thể tích?
+**Đáp án/lí do chỉ sau khi làm:** Sđáy=24cm², V=72cm³.
+
+### THPT-G11-YR-VOL-P02 | skill_id=G11-YR-SPACE_VOLUME | placement=SGK_PRACTICE | role=SGK_PRACTICE
+**Câu hỏi:** Chóp và lăng trụ cùng diện tích đáy và cao; nếu Vchóp=15cm³ thì Vlăng trụ?
+**Đáp án/lí do chỉ sau khi làm:** 45cm³, tỉ số 1:3.
+
+### THPT-G11-YR-STAT-C01 | skill_id=G11-YR-GROUPED_STATS | placement=SGK_CORE | role=SGK_CORE
+**Câu hỏi:** Dữ liệu nhóm [0,10):2, [10,20):5, [20,30):3, nhóm chứa trung vị?
+**Đáp án/lí do chỉ sau khi làm:** [10,20), vì n=10 và tích lũy nhóm đầu2, nhóm thứ hai7.
+
+### THPT-G11-YR-STAT-P01 | skill_id=G11-YR-GROUPED_STATS | placement=SGK_PRACTICE | role=SGK_PRACTICE
+**Câu hỏi:** Với bảng nhóm trên, nhóm có tần số lớn nhất là?
+**Đáp án/lí do chỉ sau khi làm:** [10,20) với tần số 5; đây là lớp mốt, không phải khẳng định mốt đúng bằng 15.
+
+### THPT-G11-YR-STAT-P02 | skill_id=G11-YR-GROUPED_STATS | placement=SGK_PRACTICE | role=SGK_PRACTICE
+**Câu hỏi:** Với nhóm như trên, tính trung bình ước lượng bằng trung điểm lớp.
+**Đáp án/lí do chỉ sau khi làm:** (2·5+5·15+3·25)/10=16; giá trị ước lượng vì biết số theo lớp.
+
+### THPT-G11-YR-PROB-C01 | skill_id=G11-YR-PROBABILITY_COMBINE | placement=SGK_CORE | role=SGK_CORE
+**Câu hỏi:** P(A)=0,6, P(B)=0,5, P(A∩B)=0,3. Tính P(A∪B).
+**Đáp án/lí do chỉ sau khi làm:** 0,6+0,5−0,3=0,8.
+
+### THPT-G11-YR-PROB-P01 | skill_id=G11-YR-PROBABILITY_COMBINE | placement=SGK_PRACTICE | role=SGK_PRACTICE
+**Câu hỏi:** A,B xung khắc với xác suất 0,2 và 0,4. P(A∪B)?
+**Đáp án/lí do chỉ sau khi làm:** 0,6 vì giao rỗng.
+
+### THPT-G11-YR-PROB-P02 | skill_id=G11-YR-PROBABILITY_COMBINE | placement=SGK_PRACTICE | role=SGK_PRACTICE
+**Câu hỏi:** P(A)=0,7. Xác suất biến cố đối Ā?
+**Đáp án/lí do chỉ sau khi làm:** 0,3, vì P(A)+P(Ā)=1.
+
+### THPT-G11-YR-IND-C01 | skill_id=G11-YR-PROBABILITY_INDEP | placement=SGK_CORE | role=SGK_CORE
+**Câu hỏi:** A,B độc lập với P(A)=0,2, P(B)=0,3. Tìm P(A∩B).
+**Đáp án/lí do chỉ sau khi làm:** 0,06 do tích 0,2·0,3.
+
+### THPT-G11-YR-IND-P01 | skill_id=G11-YR-PROBABILITY_INDEP | placement=SGK_PRACTICE | role=SGK_PRACTICE
+**Câu hỏi:** Hai phép thử độc lập, xác suất thành công mỗi lần là 0,2. Xác suất ít nhất một thành công?
+**Đáp án/lí do chỉ sau khi làm:** 1−0,8²=0,36.
+
+### THPT-G11-YR-IND-P02 | skill_id=G11-YR-PROBABILITY_INDEP | placement=SGK_PRACTICE | role=SGK_PRACTICE
+**Câu hỏi:** Hai biến cố có P(A)=1/2, P(B)=1/3, P(A∩B)=1/5. Có độc lập?
+**Đáp án/lí do chỉ sau khi làm:** Không vì tích riêng=1/6 khác 1/5.
+
+### THPT-G11-YR-INT-P01 | skill_id=G11-YR_CROSS_CHAPTER_REMEDIATION | placement=SGK_APPLICATION | role=SGK_APPLICATION
+**Câu hỏi:** Một bạn tìm giới hạn 0/0 bằng 0, bạn khác giải log mà bỏ x>0. Hai bạn cần quay lại kết quả học nào?
+**Đáp án/lí do chỉ sau khi làm:** Giới hạn cần xử lí dạng vô định thuộc G11-YR-LIMIT_CONTINUITY; kiểm miền của log thuộc G11-YR-EXP_LOG_DOMAIN. Không đánh giá bằng một tổng điểm duy nhất.
