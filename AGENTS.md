@@ -2,6 +2,10 @@
 
 **Repository:** `TMA2015/self-learning-math`. Apply this file whenever a new development session, branch or conversation works on the repository.
 
+## Binding two-lane handoff for new THPT chapter packets (owner 02/11/2026)
+**Read FIRST**: [THPT_TWO_LANE_SOURCE_LOCKED_HANDOFF_CONTRACT_v2_20261102.md](prototypes/thpt/THPT_TWO_LANE_SOURCE_LOCKED_HANDOFF_CONTRACT_v2_20261102.md). AUTHORING owns complete S1 + RD0 + D1–D6 + PED1–PED6 + independent NotebookLM academic AND pedagogical review, source-locked Git blobs, ID mapping and delta resolution. Do not call an author PR `CONTENT_READY` unless a matching canonical manifest has passed source-lock V2 and been placed in `release-queue/ready/` with REGISTER updated. RELEASE must reject unaudited author notes and own AP1–AP5 rendered QA, Final Submit, R1–R5 and P1/P2; no math changes without authoring delta review. New READY packets are structurally gated in CI by `scripts/test-thpt-handoff-gate-v2.cjs`. Source-identity CI is **not** an academic verdict. Existing historical manifests remain scoped.
+**PAUSE:** Owner 02/11/2026 disabled Math THPT hourly release automation. No autonomous merge/deploy/restart until owner explicitly rescinds pause. This chat/agent in RELEASE role must not assume another ChatGPT conversation received a message; coordinate only via canonical GitHub handoffs/issues and an explicit owner-transferred prompt.
+
 ## Start every THPT work session
 1. Verify live `main`, open PR heads, commit SHA, CI and deploy state. Do not accept old chat/checkpoint status as live status.
 2. Read `prototypes/thpt/release-queue/README.md` and `REGISTER.md` and the relevant inventory/ready packet manifest.
