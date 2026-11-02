@@ -59,3 +59,9 @@ After (a)–(d), AUTHORING can present **G11_AUTHORING_COMPLETE** for owner acce
 ## 6. New direct S1 receipt for VII–IX
 
 `prototypes/thpt/review-packets/G11_CHVII_CHIX_PRIMARY_S1_PRINTED_TOC_ANSWER_BOUNDARY_RECEIPT_INDEX_HOLD_20261102.md`: primary-book printed-TOC checking with exact VII/VIII/IX SBT answer starts p86/p103/p111 and unresolved PDF-index/edition source-parity HOLD. This receipt supersedes incorrect **source-page citations** in historical review manifests, not their academic mathematics/PED verdicts. 
+
+## 7. Q01 owner-original PDF inspection update 02/11/2026 — AUTHENTICATED SOURCE FOUND
+
+The owner-connected Drive folder `KNTT TOAN 11` contains all four original G11 KNTT SGK/SBT volumes. Exact original SGK/SBT **Tập Hai** PDF scans were downloaded and page images checked in authoring, with source SHA256 and precise section boundaries recorded in `review-packets/G11_T2_OWNER_DRIVE_S1_PDF_VISUAL_SHA_RECEIPT_20261102.md`. This **CLOSES** the earlier Q01 printed-page/PDF-index hold for ChVI–IX. SGK T2 SHA256 `14ec0da7fa3d7c7365ed7f64599fc1e26484eccf1557301c57012ae64338e491`; SBT T2 SHA256 `a7c3d5ee9770377e16d7df97c531a2bc081fa47c8266fd4ad3438cba0d04e189`; for actual content both scanned editions have PDF index (1-based)=printed page+1. Precise SBT answers VI 73–85, VII 86–102, VIII 103–110, IX 111–116 and year-end 117–124 are visually confirmed. Existing earlier preflight page-image HOLD text in the historical section above is superseded by this new receipt, **not** evidence for new independent NotebookLM review.
+
+**Remaining:** finalize composite/source-locked V2 handoffs and one `ready/` manifest/REGISTER per Chapter VI–IX; the full G11 p99–109 independent SGK supplement work and grade-wide release gates stay HOLD. No owner merge/deploy authorization.
