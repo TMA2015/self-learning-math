@@ -1,3 +1,8 @@
+# ARCHIVAL NOTE — academic HOLD gate superseded after owner independent NotebookLM v2.1 dual PASS (02/11/2026)
+
+> **Current authoritative full-grade SOURCE-LOCKED authoring status:** `prototypes/thpt/release-handoffs/G11_SGK_FULL_GRADE_AUTHORING_COMPLETE_V2_RELEASE_INTAKE_20261102.md` — nine chapters plus p99–109 now academically `CONTENT_READY` on ten canonical packets. Source+receipt SHA locks and 494 unique public item IDs confirmed. The previous **AUTHORING academic** p99–109 HOLD below is historical and now closed by original independent NotebookLM report Git blob `78e020288e009d38a836cb909d37c1b89728fc8c`. **Website RELEASE remains HOLD** until independent AP1–AP5/R1–R5/P1/P2 and explicit owner permission; no merge/deploy authorized. This note does not change reviewed mathematical content or reinterpret any historical v2.0 PASS as v2.1.
+
+---
 # Toán 11 — cổng hoàn thành toàn bộ SGK trước mọi đợt phát hành (owner 02/11/2026)
 
 **Owner decision:** Tiếp tục AUTHORING cho các chương còn lại của Toán 11; **KHÔNG phát hành chương lẻ**, chỉ xem xét website sau khi đủ toàn bộ SGK lớp 11 và cổng RELEASE được kiểm chứng riêng. Không tự merge/deploy, không tái kích hoạt automation, không bật Mastery.
