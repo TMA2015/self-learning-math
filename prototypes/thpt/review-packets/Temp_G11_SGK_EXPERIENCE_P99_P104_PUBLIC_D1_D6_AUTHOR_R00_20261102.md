@@ -298,3 +298,12 @@ No claim of generated/readable SVG, as D5 remains P1 authoring blocker before in
 ## SOURCE-LOCKED NOTEBOOKLM REVIEW GATE — AUTHOR CANDIDATE ONLY
 Exactly 11 RD0 outcomes, 12 D2 guided examples, 21 D3 unique Core/Practice/Application, 6 D4 Written with 3 Anchor tags, 5 D5 figures SPECIFIED (not yet rendered), 7 D6 HELP. One item ID per question, primary outcome in heading, protected RD1 absent from this public source. All items are original, not copies of source S1 text.
 Academic/PED independent PASS has **not been obtained** for this new SGK experiential supplement; must review using the five permanent THPT v2.1 sources and owner SGK/SBT originals. Q07/PED4 `P1_SVG_UNRENDERED`, Q18 `NOTEBOOKLM_VERDICT_PENDING` prevent CONTENT_READY. SGK cross-chapter supplement scope does not create Chapter X nor replace independently tested SGK/Topic readiness. Release authorization NO.
+
+
+## D5 SOURCE FILE COMPLETION — 5 actual original SVG files committed, structural QA still pending
+- `prototypes/thpt/review-packets/Temp_FIG-G11-SUPP-E01-01_R00.svg` — original authored figure, review against lesson teaching claims and visual labels required.
+- `prototypes/thpt/review-packets/Temp_FIG-G11-SUPP-E01-02_R00.svg` — original authored figure, review against lesson teaching claims and visual labels required.
+- `prototypes/thpt/review-packets/Temp_FIG-G11-SUPP-E02-01_R00.svg` — original authored figure, review against lesson teaching claims and visual labels required.
+- `prototypes/thpt/review-packets/Temp_FIG-G11-SUPP-E02-02_R00.svg` — original authored figure, review against lesson teaching claims and visual labels required.
+- `prototypes/thpt/review-packets/Temp_FIG-G11-SUPP-E02-03_R00.svg` — original authored figure, review against lesson teaching claims and visual labels required.
+These are real SVG sources, **not merely specifications**, but authoring structural render validation and independent NotebookLM Q07/PED4 are still required before Academic/PED CONTENT_READY. RELEASE AP3 later checks the exact HTML/rasterized figure on devices.
