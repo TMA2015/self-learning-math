@@ -1,5 +1,9 @@
 # Project Handoff — Self-Learning Math
 
+> **2026-11-02 — THPT ONE-STANDARD GOVERNANCE HOLD (DRAFT PR #703; not yet official).** Chủ dự án đồng ý hợp nhất tiêu chí chất lượng học liệu THPT trước khi tiếp tục phát triển chương/lớp/Chuyên đề hoặc mở thêm tác vụ phát hành, **sau khi nhánh phát hành hoàn thành đúng tác vụ hiện tại**. Một nguồn chuẩn dự thảo duy nhất: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`, `STANDARD_ID=SLM-THPT-QUALITY-ONE`, Q01–Q18. AUTHORING A1–A7/PED và RELEASE AP1–AP5/R1–R5 đo **cùng tiêu chí**, khác loại bằng chứng. V2 packet/handoff template và CI kiểm tra Q đều nằm trên Draft PR #703, không có merge/deploy hoặc sửa học liệu; chỉ áp dụng cho gói mới sau owner governance approval. Còn phụ thuộc đối chiếu nguyên bản năm NotebookLM Permanent Sources v2.0 (không tự tạo nguồn thứ sáu) và xác nhận chủ dự án; không xem PR Draft là chuẩn đã chính thức hóa. Math release automation vẫn PAUSED; không thay đổi phạm vi của PR #697 hiện tại.
+
+
+
 > **2026-10-29 — THPT PROCESS HANDOFF (quy tắc áp dụng sau PR #622 được merge):** Mọi cuộc trò chuyện biên soạn/NotebookLM/tích hợp/phát hành phải kiểm tra GitHub `main`, đọc `prototypes/thpt/release-queue/README.md`, `REGISTER.md` và manifest mới nhất. Nhánh học liệu làm A1–A7 và chỉ chuyển `inventory/` → `ready/` khi đủ; nhánh phát hành làm R1–R5, lấy gói từ `ready/`, cần owner approval và QA đúng commit trước merge/deploy. P1/P2 xác nhận sau phát hành. Gói ChVI đã phát hành một phần, VII/VIII Draft, IX còn thiếu D5/D6; không biến PASS một phần thành hoàn thiện cả chương hoặc kích hoạt Mastery. Hướng dẫn chi tiết tại `prototypes/thpt/release-queue/README.md`; đây là nguồn vận hành mới nhất, không xóa lịch sử bên dưới.
 
 
