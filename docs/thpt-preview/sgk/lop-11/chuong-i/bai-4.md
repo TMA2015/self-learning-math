@@ -18,11 +18,9 @@ Tìm mọi x thuộc [0,2π) sao cho sin x=0. Vì sao trên ℝ nghiệm phải 
 
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="4"><summary>Đã thử xong? Mở hướng dẫn đối chiếu</summary>
 
-Trong [0,2π): x=0 hoặc x=π. Trên ℝ: x=kπ, k∈ℤ. Xem lại đường tròn Bài 1 và đồ thị sin Bài 3, rồi làm Core `THPT-G11-B04-C01`.
+Trong [0,2π): x=0 hoặc x=π. Trên ℝ: x=kπ, k∈ℤ. Xem lại đường tròn Bài 1 và đồ thị sin Bài 3, rồi làm câu Core đầu tiên của bài.
 
 </details>
-
-<span data-reviewed-ped-source="G11-CHI-R03" hidden aria-hidden="true"></span>
 
 ## 1. Kiến thức SGK
 
@@ -32,16 +30,7 @@ phương trình là tìm toàn bộ `x` sao cho hai vế xác định và bằng
 ### 2. `sin x=m`
 
 nếu `|m|>1` vô nghiệm; khi `|m|≤1`, đặt `α=arcsin m` (giá trị chính trong `[-π/2,π/2]`), hai họ `x=α+2kπ` hoặc `x=π-α+2kπ`, `k∈ℤ`. Hai họ có thể trùng khi `m=±1`; khi đó đếm nghiệm theo *tập hợp*, không cộng trùng.
-### Hướng suy luận trong các ví dụ
-
-- `EX-G11-B04-01`: đường ngang cắt đường tròn đơn vị tại hai vị trí; viết đủ hai họ sin trước khi kết luận.
-- `EX-G11-B04-02`: tan/cot có chu kỳ `π`, nhưng `cot x=0` không được chuyển sang `tan x=1/0`; dùng định nghĩa và điều kiện để tìm nghiệm.
-- `EX-G11-B04-03`: giải phương trình cho **đối số** `2x` trước; chia cả hai họ cho 2, không lấy nghiệm của `2x` làm nghiệm x.
-- `EX-G11-B04-04`: dấu ngoặc `[0,2π)` cho phép 0 và loại `2π`; phải lọc nghiệm cụ thể, không chỉ viết tổng quát.
-- `EX-G11-B04-05`: trước khi chia cho `cos x`, xét riêng khả năng `cos x=0` để không làm mất nghiệm của phương trình ban đầu.
-- `EX-G11-B04-06`: từ `H(t)=11` quy về `sin(πt/6)=1/2`, tìm đủ hai họ rồi giữ những t trong `0≤t<12`; đơn vị của t là giờ.
-
-## 3. `cos x=m`
+### 3. `cos x=m`
 
 nếu `|m|>1` vô nghiệm; nếu `|m|≤1`, đặt `α=arccos m∈[0,π]`, `x=±α+2kπ`. Với `m=±1`, hai họ có thể trùng.
 ### 4. `tan x=m`
@@ -68,6 +57,15 @@ tìm các k nguyên phù hợp cận và xét dấu `[a,b]` so với `(a,b)`. Đ
 - **EX-G11-B04-04 (đoạn).** `cos x=-1/2` trên `[0,2π)` chỉ có `2π/3,4π/3`. Hai biên 0 và 2π không đều thuộc đoạn.
 - **EX-G11-B04-05 (ngoại lai).** `sin x=cos x` cho `tan x=1` **chỉ sau khi kiểm `cos x≠0`**; tại `cos x=0`, `sin x=±1` nên không là nghiệm. Do đó `x=π/4+kπ`, không mất nghiệm.
 - **EX-G11-B04-06 (ứng dụng).** `H(t)=10+2sin(πt/6)` (t giờ) bằng 11 khi `sin(πt/6)=1/2`. Trên `0≤t<12`, có `t=1` và `t=5` giờ, nhờ chọn đúng hai họ và lọc miền thời gian.
+
+## Hướng suy luận trong các ví dụ
+
+- **Ví dụ 01:** đường ngang cắt đường tròn đơn vị tại hai vị trí; viết đủ hai họ sin trước khi kết luận.
+- **Ví dụ 02:** tan/cot có chu kỳ `π`, nhưng `cot x=0` không được chuyển sang `tan x=1/0`; dùng định nghĩa và điều kiện để tìm nghiệm.
+- **Ví dụ 03:** giải phương trình cho **đối số** `2x` trước; chia cả hai họ cho 2, không lấy nghiệm của `2x` làm nghiệm x.
+- **Ví dụ 04:** dấu ngoặc `[0,2π)` cho phép 0 và loại `2π`; phải lọc nghiệm cụ thể, không chỉ viết tổng quát.
+- **Ví dụ 05:** trước khi chia cho `cos x`, xét riêng khả năng `cos x=0` để không làm mất nghiệm của phương trình ban đầu.
+- **Ví dụ 06:** từ `H(t)=11` quy về `sin(πt/6)=1/2`, tìm đủ hai họ rồi giữ những t trong `0≤t<12`; đơn vị của t là giờ.
 
 ## 3. Kết nối đồ thị
 
