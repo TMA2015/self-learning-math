@@ -14,7 +14,20 @@ assert.match(handoff,/^ACADEMIC_VERDICT: PASS$/m);
 assert.match(handoff,/^PEDAGOGICAL_VERDICT: PASS$/m);
 assert.match(handoff,/^BLOCKERS: NONE$/m);
 assert(review.includes("256ceb5edc5e02aec320e83e99c8e08e035654f3"),"Independent R03 receipt missing exact source");
-assert.match(readiness,/CHƯA KÍCH HOẠT/,"No independent chapter readiness is live");
+assert.match(readiness,/data-g11-chapter-selfcheck="CHI"/,"Client-side Final Submit is staged");
+assert.match(readiness,/không thay thế đánh giá độc lập/,"Selfcheck must not claim independent evidence");
+const selfcheck=JSON.parse(read("docs/assets/data/thpt-g11-selfcheck/CHI.json"));
+assert.equal(selfcheck.scope,"SGK_CHAPTER_SELF_CHECK");
+assert.equal(selfcheck.items.length,20);
+assert.equal(new Set(selfcheck.items.map(x=>x.item_id)).size,20);
+assert.equal(selfcheck.mastery_credit,false);
+assert.equal(selfcheck.independent_readiness_credit,false);
+assert.equal(selfcheck.persist_results,false);
+assert.equal(selfcheck.public_client_answer_keys,true);
+assert(selfcheck.items.every(x=>x.type==="WRITTEN_RUBRIC"&&x.rubric),"Human rubric review only; never auto-grade open Written");
+const selfcheckJS=read("docs/assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js");
+assert(selfcheckJS.includes("independent_readiness_credit!==false")&&!/localStorage\.setItem|sessionStorage\.setItem/.test(selfcheckJS),
+ "Selfcheck must not write progress or claim official Readiness");
 for(let i=1;i<=6;i++)
  assert.match(packet,new RegExp("^- \\[x\\] PED"+i+"_","m"),"PED"+i+" must have an independent academic-scope receipt");
 for(let i=1;i<=5;i++)
@@ -52,4 +65,4 @@ const publicFiles=[read("docs/assets/javascripts/thpt-g11-chi-reviewed-formative
  read("docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js")].join("\n");
 assert(!/THPT-G11-CHI-RD1-|SGK_CHAPTER_READINESS.*mastery_credit\s*:\s*true/i.test(publicFiles),
  "Protected RD1/mastery marker unexpectedly in public bank");
-console.log("PASS G11 ChI A6 guard: 46 unique PUBLIC IDs; independent PED1–6 academic PASS; AP1–5 and self-check runtime still HOLD; no release claim.");
+console.log("PASS G11 ChI A6 guard: 46 unique PUBLIC IDs; independent PED1–6 academic PASS; AP1–5 and final exact-head browser QA still HOLD; staged 20-item voluntary selfcheck has no Mastery/Readiness credit.");
