@@ -12,8 +12,8 @@ TEST_EXPOSURE: PUBLIC_FORMATIVE_ONLY / CLIENT_SELF_CHECK_NO_MASTERY; NO PRIVATE 
 RELEASE_AUTHORIZATION: NO
 
 ## A. SOURCE_RECEIPT — exact canonical original files included below UNCHANGED
-- 1) `prototypes/thpt/review-packets/Temp_G11_SGK_EXPERIENCE_P99_P104_PUBLIC_D1_D6_AUTHOR_R00_20261102.md`, **original Git blob SHA `f7999002dd7449b99684f82cde38d60c0daaa885`**, UTF-16 content length 26418; all original author exercise questions, explanations, worked examples, rubric and HELP reproduced below without modification.
-- 2) `prototypes/thpt/review-packets/Temp_G11_SGK_YEAR_END_P105_P109_PUBLIC_D1_D6_AUTHOR_R00_20261102.md`, **original Git blob SHA `33a37895525930b9095c84f3397ffe7b86695659`**, UTF-16 content length 36932; all original author exercise questions, explanations, worked examples, rubric and HELP reproduced below without modification.
+- 1) `prototypes/thpt/review-packets/Temp_G11_SGK_EXPERIENCE_P99_P104_PUBLIC_D1_D6_AUTHOR_R00_20261102.md`, **original Git blob SHA `4ebee7e195bbb3272dff343860d41d0137bed0f8`**, UTF-16 content length 26418; all original author exercise questions, explanations, worked examples, rubric and HELP reproduced below without modification.
+- 2) `prototypes/thpt/review-packets/Temp_G11_SGK_YEAR_END_P105_P109_PUBLIC_D1_D6_AUTHOR_R00_20261102.md`, **original Git blob SHA `00a6b92cc870141297a0978d0fa0a8c6ba682ab2`**, UTF-16 content length 36932; all original author exercise questions, explanations, worked examples, rubric and HELP reproduced below without modification.
 - SVG 1) `prototypes/thpt/review-packets/Temp_FIG-G11-SUPP-E01-01_R00.svg`, Git blob SHA `c5c85a8f2bddc305515f2a46692ca7a0943f709c`; XML source included in Part D below (not a substitute for raster visual QA).
 - SVG 2) `prototypes/thpt/review-packets/Temp_FIG-G11-SUPP-E01-02_R00.svg`, Git blob SHA `a11fb6984ba634f8f3eab32e239e670d9cf55884`; XML source included in Part D below (not a substitute for raster visual QA).
 - SVG 3) `prototypes/thpt/review-packets/Temp_FIG-G11-SUPP-E02-01_R00.svg`, Git blob SHA `5aa8d1e7f7a1830198ad9006cd507a547d7aeca4`; XML source included in Part D below (not a substitute for raster visual QA).
@@ -267,13 +267,13 @@ Original human-readable solutions below are for learner-controlled self-compare 
 **Đáp án tự mở sau tự làm:** Đáy tam giác bằng nhau ở hai mặt song song; nối đỉnh tương ứng; nét khuất đứt; cạnh bên vuông góc hai đáy mới là lăng trụ đứng.
 **Rubric /4:** 1 điểm lập mô hình/điều kiện; 1 điểm thao tác toán đúng; 1 điểm kết quả/đơn vị; 1 điểm giải thích tại sao và giới hạn phương pháp.
 
-## D5 — instructional figure/diagram source specification (not yet SVG QA-pass)
+## D5 — five original authored SVG sources; independent mathematical and visual QA pending
 FIG-G11-SUPP-E01-01: time-versus-quantity axes, discrete dot model and continuous model with k=ln(1+r) if synchronized at integer years. Avoid pretending k=r gives identical graphs.
 FIG-G11-SUPP-E01-02: three independent logarithmic scales pH/Richter/dB, each showing base and unit/coefficients and one ×10 comparison; no false cross-scale equivalence.
 FIG-G11-SUPP-E02-01: rod–shadow–light triangle with right angle, projected beam and tanθ=h/l as SGK H.T1 concept re-authored diagram.
 FIG-G11-SUPP-E02-02: two planes sharing intersection d, correct normal section with two rays perpendicular to d at common H; mark relevant flat dihedral angle.
 FIG-G11-SUPP-E02-03: four steps prism ABC.A'B'C' (base, parallel copy, matching edges, dashed hidden edges) and note skew vs right prism.
-No claim of generated/readable SVG, as D5 remains P1 authoring blocker before independent NotebookLM review and release AP3.
+Five actual source SVGs have been authored and linked below; their rendering and educational correctness await independent NotebookLM Q07/PED4 and later RELEASE AP3.
 
 ## D6 — 7 five-step HELP/return-item remediation
 ### HELP-G11-SUPP-E01-01 | skill_id=G11-E01-EXPONENTIAL_MODEL | return_item=THPT-G11-SUPP-E01-P01
@@ -327,8 +327,8 @@ No claim of generated/readable SVG, as D5 remains P1 authoring blocker before in
 
 
 ## SOURCE-LOCKED NOTEBOOKLM REVIEW GATE — AUTHOR CANDIDATE ONLY
-Exactly 11 RD0 outcomes, 12 D2 guided examples, 21 D3 unique Core/Practice/Application, 6 D4 Written with 3 Anchor tags, 5 D5 figures SPECIFIED (not yet rendered), 7 D6 HELP. One item ID per question, primary outcome in heading, protected RD1 absent from this public source. All items are original, not copies of source S1 text.
-Academic/PED independent PASS has **not been obtained** for this new SGK experiential supplement; must review using the five permanent THPT v2.1 sources and owner SGK/SBT originals. Q07/PED4 `P1_SVG_UNRENDERED`, Q18 `NOTEBOOKLM_VERDICT_PENDING` prevent CONTENT_READY. SGK cross-chapter supplement scope does not create Chapter X nor replace independently tested SGK/Topic readiness. Release authorization NO.
+Exactly 11 RD0 outcomes, 12 D2 guided examples, 21 D3 unique Core/Practice/Application, 6 D4 Written with 3 Anchor tags, 5 D5 original SVG files authored (independent reviewer verdict pending), 7 D6 HELP. One item ID per question, primary outcome in heading, protected RD1 absent from this public source. All items are original, not copies of source S1 text.
+Academic/PED independent PASS has **not been obtained** for this new SGK experiential supplement; must review using the five permanent THPT v2.1 sources and owner SGK/SBT originals. Q07/PED4 `ORIGINAL_SVG_CREATED_REVIEW_PENDING`, Q18 `NOTEBOOKLM_VERDICT_PENDING` prevent CONTENT_READY. SGK cross-chapter supplement scope does not create Chapter X nor replace independently tested SGK/Topic readiness. Release authorization NO.
 
 
 ## D5 SOURCE FILE COMPLETION — 5 actual original SVG files committed, structural QA still pending
@@ -715,7 +715,7 @@ Anchor is a label of the same Written question, never a duplicate; self-assessed
 - FIG-G11-YR-01: trục và tiếp tuyến hàm f(x)=x² tại x=1; điểm (1,1), hệ số góc 2, phân biệt tiếp tuyến và giá trị hàm.
 - FIG-G11-YR-02: biểu đồ ghép nhóm tần số [0,10)=2,[10,20)=5,[20,30)=3, tích lũy 2,7,10; xác định đúng nhóm trung vị (not precise individual median).
 - FIG-G11-YR-03: hai vòng Venn A,B: chỉ A=0,3, giao=0,2, chỉ B=0,2, ngoài=0,3, cho P(A)=0,5,P(B)=0,4 và hợp=0,7. Không đặt sai số vùng.
-Until exact original SVG files and independent diagram correctness review are delivered, D5 is only a source specification, **not passed SVG evidence**.
+Three original source SVGs have been committed, but independent diagram mathematical correctness/visual rendering and NotebookLM Q07/PED4 PASS remain pending.
 
 ## D6 — 11 five-step HELP / return to canonical exercise
 ### HELP-G11-YR-TRIG-01 | skill_id=G11-YR-TRIG_IDENTITY | return_item=THPT-G11-YR-TRIG-P01
@@ -797,8 +797,8 @@ Until exact original SVG files and independent diagram correctness review are de
 
 
 ## INDEPENDENT REVIEW GATE — NOT YET PASS
-Author original source cross-references owner SGK 38/38 published year-end problems and SBT 43/43 annual items by domain, without duplicating publisher exercise text. 11 distinct RD0 outcomes including cross-remediation, 16 reasoned worked examples, 31 canonical public Core/Practice/Application, 10 Written/Anchor with real /4 rubrics, and 11 D6 return paths. Fig specifications not yet externally reviewed.
-Q01 original S1 printed/PDF-index with SHA verified; Q02–Q06 and Q09–Q15 author QA to audit per outcome; Q07 requires actual SVG source/QA; Q08 11 D6; Q16 public self-check not independent RD1/Mastery; Q17 SGK cross-chapter path separate Topic; Q18 exact Git blob and independent NotebookLM Academic+PED verdict **PENDING** using exactly five current v2.1 Permanent Sources plus original S1. This is new academic content, cannot inherit PASS from ChI–IX or from legacy annual source.
+Author original source cross-references owner SGK 38/38 published year-end problems and SBT 43/43 annual items by domain, without duplicating publisher exercise text. 11 distinct RD0 outcomes including cross-remediation, 16 reasoned worked examples, 31 canonical public Core/Practice/Application, 10 Written/Anchor with real /4 rubrics, and 11 D6 return paths. Three original D5 SVG source files have been authored but not yet independently reviewed.
+Q01 original S1 printed/PDF-index with SHA verified; Q02–Q06 and Q09–Q15 author QA to audit per outcome; Q07 actual original SVG sources exist; independent visual/math QA is pending; Q08 11 D6; Q16 public self-check not independent RD1/Mastery; Q17 SGK cross-chapter path separate Topic; Q18 exact Git blob and independent NotebookLM Academic+PED verdict **PENDING** using exactly five current v2.1 Permanent Sources plus original S1. This is new academic content, cannot inherit PASS from ChI–IX or from legacy annual source.
 
 
 ## D5 SOURCE FILE COMPLETION — 3 actual original SVG files committed, structural QA still pending
