@@ -369,7 +369,7 @@ Anchor is a label of the same Written question, never a duplicate; self-assessed
 - FIG-G11-YR-01: trục và tiếp tuyến hàm f(x)=x² tại x=1; điểm (1,1), hệ số góc 2, phân biệt tiếp tuyến và giá trị hàm.
 - FIG-G11-YR-02: biểu đồ ghép nhóm tần số [0,10)=2,[10,20)=5,[20,30)=3, tích lũy 2,7,10; xác định đúng nhóm trung vị (not precise individual median).
 - FIG-G11-YR-03: hai vòng Venn A,B: chỉ A=0,3, giao=0,2, chỉ B=0,2, ngoài=0,3, cho P(A)=0,5,P(B)=0,4 và hợp=0,7. Không đặt sai số vùng.
-Until exact original SVG files and independent diagram correctness review are delivered, D5 is only a source specification, **not passed SVG evidence**.
+Three original source SVGs have been committed, but independent diagram mathematical correctness/visual rendering and NotebookLM Q07/PED4 PASS remain pending.
 
 ## D6 — 11 five-step HELP / return to canonical exercise
 ### HELP-G11-YR-TRIG-01 | skill_id=G11-YR-TRIG_IDENTITY | return_item=THPT-G11-YR-TRIG-P01
@@ -451,8 +451,8 @@ Until exact original SVG files and independent diagram correctness review are de
 
 
 ## INDEPENDENT REVIEW GATE — NOT YET PASS
-Author original source cross-references owner SGK 38/38 published year-end problems and SBT 43/43 annual items by domain, without duplicating publisher exercise text. 11 distinct RD0 outcomes including cross-remediation, 16 reasoned worked examples, 31 canonical public Core/Practice/Application, 10 Written/Anchor with real /4 rubrics, and 11 D6 return paths. Fig specifications not yet externally reviewed.
-Q01 original S1 printed/PDF-index with SHA verified; Q02–Q06 and Q09–Q15 author QA to audit per outcome; Q07 requires actual SVG source/QA; Q08 11 D6; Q16 public self-check not independent RD1/Mastery; Q17 SGK cross-chapter path separate Topic; Q18 exact Git blob and independent NotebookLM Academic+PED verdict **PENDING** using exactly five current v2.1 Permanent Sources plus original S1. This is new academic content, cannot inherit PASS from ChI–IX or from legacy annual source.
+Author original source cross-references owner SGK 38/38 published year-end problems and SBT 43/43 annual items by domain, without duplicating publisher exercise text. 11 distinct RD0 outcomes including cross-remediation, 16 reasoned worked examples, 31 canonical public Core/Practice/Application, 10 Written/Anchor with real /4 rubrics, and 11 D6 return paths. Three original D5 SVG source files have been authored but not yet independently reviewed.
+Q01 original S1 printed/PDF-index with SHA verified; Q02–Q06 and Q09–Q15 author QA to audit per outcome; Q07 actual original SVG sources exist; independent visual/math QA is pending; Q08 11 D6; Q16 public self-check not independent RD1/Mastery; Q17 SGK cross-chapter path separate Topic; Q18 exact Git blob and independent NotebookLM Academic+PED verdict **PENDING** using exactly five current v2.1 Permanent Sources plus original S1. This is new academic content, cannot inherit PASS from ChI–IX or from legacy annual source.
 
 
 ## D5 SOURCE FILE COMPLETION — 3 actual original SVG files committed, structural QA still pending
