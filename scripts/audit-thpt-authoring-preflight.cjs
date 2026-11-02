@@ -14,7 +14,7 @@ const ROOT=path.resolve(__dirname,"..");
 function audit(text, options) {
   const issues=[],warnings=[],evidence={};
   const matches=[...text.matchAll(/^#{3,5}\s+`?(THPT-G(?:10|11|12)-[A-Z0-9-]+)`?/gm)];
-  const canonical=matches.map(m=>m[1]).filter(id=>/-(?:C|P|W)\d{2}(?:-ANCHOR)?$/.test(id));
+  const canonical=matches.map(m=>m[1]).filter(id=>/-(?:(?:C|P)\d{2}|W\d{2}(?:-\d{2})?)(?:-ANCHOR)?$/.test(id));
   const unique=new Set(canonical);
   const outcomeMatches=[...text.matchAll(/^\|\s*`?(G(?:10|11|12)-(?:B\d{2}|CH[A-Z]+)-[A-Z0-9_-]+)`?\s*\|/gm)];
   const outcomes=[...new Set(outcomeMatches.map(m=>m[1]))];
@@ -30,11 +30,11 @@ function audit(text, options) {
   if(/^#{2,5}\s+`?THPT-G(?:10|11|12)-[^\n]*-RD1-\d+/m.test(text))issues.push("PRIVATE_RD1_HEADING_EXPOSED");
   for(const m of matches) {
     const id=m[1];
-    if(!/-(?:C|P|W)\d{2}(?:-ANCHOR)?$/.test(id))continue;
+    if(!/-(?:(?:C|P)\d{2}|W\d{2}(?:-\d{2})?)(?:-ANCHOR)?$/.test(id))continue;
     const line=text.slice(m.index,text.indexOf("\n",m.index)>=0?text.indexOf("\n",m.index):undefined);
     if(/-C\d{2}$/.test(id)&&!/CORE/.test(line))issues.push("CORE_ROLE_MISSING:"+id);
     if(/-P\d{2}$/.test(id)&&!/PRACTICE|APPLICATION/.test(line))issues.push("PRACTICE_ROLE_MISSING:"+id);
-    if(/-W\d{2}(?:-ANCHOR)?$/.test(id)&&!/WRITTEN/.test(line))issues.push("WRITTEN_ROLE_MISSING:"+id);
+    if(/-W\d{2}(?:-\d{2})?(?:-ANCHOR)?$/.test(id)&&!/WRITTEN/.test(line))issues.push("WRITTEN_ROLE_MISSING:"+id);
   }
   for(const n of options.lessons||[]) {
     const key="B"+String(n).padStart(2,"0");
