@@ -1,14 +1,16 @@
 # Toán 11 SGK Chương II B05–B07 — V2 authoring HANDOFF DRAFT / REVIEW HOLD
 
+STANDARD_ID: SLM-THPT-QUALITY-ONE
+STANDARD_VERSION: 1.0.0
 PACKET_ID: G11-SGK-CHII-B05-B07
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2-DRAFT
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHII_B05_B07_PED_R02_FULL_SOURCE_DELTA_C_REVIEW_20261102.md
 ACADEMIC_SOURCE_BLOB: 9737e7b0ba33fc875bc1d78d1104e8ebb427b6f3
-REVIEW_RECEIPT_PATH: NOT_YET_AVAILABLE_FOR_PED_R02
-REVIEW_RECEIPT_BLOB: NOT_YET_AVAILABLE_FOR_PED_R02
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/G11_CHII_CHIII_CHIV_R02_SCOPED_REVIEW_CHAIN_AND_SOURCE_LIMITATIONS_20261102.md
+REVIEW_RECEIPT_BLOB: a25e984e2eb870b5df01aeb0796f395ad0c6e226
 ACADEMIC_VERDICT: R01_ONLY_PASS
-PEDAGOGICAL_VERDICT: R02_PENDING_INDEPENDENT_REVIEW
-BLOCKERS: CHII_B05_B06_B07_PED_R02_VERDICT_AND_SBT_CHII_CHIII_S1_PAGE_RECONCILIATION
+PEDAGOGICAL_VERDICT: R02_PED_PASS_OWNER_INDEPENDENT_VERDICT
+BLOCKERS: SBT_PRINTED_PAGE_CONFLICT_CHII_END_P46_49_VS_CHIII_B08_P44_46_B09_P47_49;PRIVATE_RD1_CUSTODY_SHA_UNVERIFIED
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 RELEASE_SCOPE: FULL_LEARNING_PATH
 LEARNING_PATH: SGK_CHAPTER
@@ -144,16 +146,22 @@ SGK Toán 11 KNTT Tập 1, B05 p42–47, B06 p48–51, B07 p52–55, cuối chư
 
 ## PED1_PED6_EVIDENCE
 
+**02/11 scoped independent NotebookLM result received:** `CHII_PED_VERDICT|PASS`, 0 P0, 0 P1, 0 P2, `MINIMAL_DELTA|0`, `TARGETED_PED_CLEARANCE|YES`. Original report Git blob `0e5d61aa99ffc30c8275d66116563f44779ea3f8` and AUTHORING source+scope match blob `a25e984e2eb870b5df01aeb0796f395ad0c6e226`; `3 B05–B07 concept-first, 9 D2 method explanations, 3 SVG explanations and 3 first tries` on the frozen R02 source, unchanged original R01 source. The historic reviewer used five THPT Permanent Sources v2.0; current v2.1 installed later and no false v2.1 rescore is asserted. Reviewer verdict by chapter/lesson, not an individually enumerated PASS for each outcome ID; outcome-by-outcome mapping below remains AUTHORING evidence and must not be presented as a new reviewer verdict.
+
+
 | Bài / outcome group | R02 pedagogy added | Review |
 |---|---|---|
-| B05 5 outcomes | `B05-PED1-3` motive, conditions; `B05-B07-PED4` figure; 3 VD in `B05-B07-PED5`; `B05-B07-PED6` self-try/remediation | TARGETED R02 PED1–6 PENDING |
-| B06 5 outcomes | `B06-PED1-3`, original CSC graph D5 caption, three VD reasoning, one self try | TARGETED R02 PED1–6 PENDING |
-| B07 5 outcomes | `B07-PED1-3`, original CSN graph D5 caption, three VD reasoning, one self try | TARGETED R02 PED1–6 PENDING |
+| B05 5 outcomes | `B05-PED1-3` motive, conditions; `B05-B07-PED4` figure; 3 VD in `B05-B07-PED5`; `B05-B07-PED6` self-try/remediation | TARGETED R02 PED1–6 PASS |
+| B06 5 outcomes | `B06-PED1-3`, original CSC graph D5 caption, three VD reasoning, one self try | TARGETED R02 PED1–6 PASS |
+| B07 5 outcomes | `B07-PED1-3`, original CSN graph D5 caption, three VD reasoning, one self try | TARGETED R02 PED1–6 PASS |
 | ChII integrated | Cross-lesson compare *constant difference* vs *constant ratio*, links to B06–B07 examples and private RD1 evidence (no private stem) | Reviewer check per integrated outcome REQUIRED |
 
 ## REVIEW_SOURCE_RECEIPT
 
-R01 Academic PASS owner Issue #684 for exact Git blob `a0975caaf39ead93c5faef149132f5ff6a828359` preserved. New R02 Git blob `9737e7b0ba33fc875bc1d78d1104e8ebb427b6f3` and 3 concept intros, 9 VD reasons, three SVG notes and three pre-Core first tries are **DELTA_C**, not independently reviewed. Reviewer batch `prototypes/thpt/review-packets/Temp_G11_CHII_CHIII_CHIV_PED_DELTA_C_R02_BATCH_REVIEW_20261102.md` on author PR #683 includes exactly added lines and 5 Permanent Sources THPT v2.0/S1 check. **Independent targeted verdict and SBT source reconciliation not yet supplied.** No receipt can claim PASS or `CONTENT_READY` yet.
+**Owner report received and archived:** exact reviewer `CHII_PED_VERDICT|PASS` with zero blockers in its PED scope. The original report `G11_CHII_CHIII_CHIV_PED_R02_OWNER_NOTEBOOKLM_VERDICT_20261102.md` is unmodified; the source parity `G11_CHII_CHIII_CHIV_R02_SCOPED_REVIEW_CHAIN_AND_SOURCE_LIMITATIONS_20261102.md` names all three Git blobs, distinguishes historical review Permanent v2.0 from official standard v1.0 and identifies `SOURCE_RECEIPT_CONFLICT_HOLD` for SBT ChII/ChIII. This chapter remains **BLOCKED_BY_AUTHORING only for the S1 page contradiction and private RD1 custody SHA**, not for R02 PED review.
+
+
+R01 Academic PASS owner Issue #684 for exact Git blob `a0975caaf39ead93c5faef149132f5ff6a828359` preserved. New R02 Git blob `9737e7b0ba33fc875bc1d78d1104e8ebb427b6f3` and 3 concept intros, 9 VD reasons, three SVG notes and three pre-Core first tries are **DELTA_C**, now independently PED reviewed by owner report. Reviewer batch `prototypes/thpt/review-packets/Temp_G11_CHII_CHIII_CHIV_PED_DELTA_C_R02_BATCH_REVIEW_20261102.md` on author PR #683 includes exactly added lines and 5 Permanent Sources THPT v2.0/S1 check. **Independent targeted PED verdict supplied and PASS; SBT source conflict still unresolved.** No receipt can claim PASS or `CONTENT_READY` yet.
 
 ## DELTA_LEDGER
 
@@ -167,4 +175,12 @@ Nineteen held-out independent ChII Written RD1 candidates, protected **outside p
 
 ## AUTHOR_SIGNOFF
 
-**STRUCTURAL preflight completed**: 3 lesson IDs, 16 RD0 outcome IDs, 42 unique public canonical item headings; all mapped to a primary source skill. 15/16 outcomes have direct D3/D4 primary evidence, `G11-CHII-STRUCTURAL-COMPARISON` requires explicitly evidenced integrated pedagogy/RD1 source. No ID duplication or new items. **`BLOCKED_BY_AUTHORING`** until independent per lesson/outcome R02 PED PASS, SBT source pagination and private custody identity resolution, then author may sign canonical V2 ready/REGISTER. This packet MUST NOT be added to `ready/` while blocked.
+**STRUCTURAL preflight completed**: 3 lesson IDs, 16 RD0 outcome IDs, 42 unique public canonical item headings; all mapped to a primary source skill. 15/16 outcomes have direct D3/D4 primary evidence, `G11-CHII-STRUCTURAL-COMPARISON` requires explicitly evidenced integrated pedagogy/RD1 source. No ID duplication or new items. **`BLOCKED_BY_AUTHORING`** until SBT source pagination and private custody identity resolution, then author may sign canonical V2 ready/REGISTER. This packet MUST NOT be added to `ready/` while blocked.
+
+
+## R02_PED_REVIEW_CLOSURE_AND_RESIDUAL_A2_HOLD
+
+- `ACADEMIC_R01=PASS` preserved at original source; `PED_R02=PASS` independently returned for the changed lesson-level descriptions (3 B05–B07 concept-first, 9 D2 method explanations, 3 SVG explanations and 3 first tries), `P0=P1=P2=0`, `MINIMAL_DELTA=0`.
+- `SBT_PAGE_SOURCE_RECEIPT=CONFLICT_HOLD`: owner report places ChII final exercises p46–49 **after** a claimed ChIII B08 start p44, and overlaps ChIII B09 p47–49. Shared-page transition does not explain this. Do not call `SBT_SOURCE_RECEIPT VERIFIED_EXACT` without actual PDF printed-page inspection.
+- `PRIVATE_RD1_CUSTODY_HASH=NOT_REVERIFIED`: preserve R01 owner reviewer counts and private bank outside GitHub, verify original SHA/custody separately before new ready packet.
+- **Not `CONTENT_READY`** yet, not RELEASE, no Final Submit or Skill Mastery; no duplicate source or duplicate canonical items generated.
