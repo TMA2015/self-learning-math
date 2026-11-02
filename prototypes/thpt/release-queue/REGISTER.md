@@ -4,6 +4,7 @@
 
 | Gói | Hành trình | Trạng thái | Phạm vi | PR / nguồn |
 |---|---|---|---|---|
+| [G11-SGK-CHIII-B08-B09](ready/G11-SGK-CHIII-B08-B09.md) | SGK_CHAPTER | CONTENT_READY | FULL_LEARNING_PATH | Author PR #685: R01 independent Academic PASS + R02 targeted PED PASS; original SBT KNTT T1 direct verified pages and Delta_B corrected canonical R03 blob `4ea8df2ca2682d9fac8b1556852334af336930a5`; ONE Q01–Q18 source-locked V2 handoff, original 5 Permanent v2.0 historical; RELEASE AP/R/Final Submit not yet QA/authorized |
 | [G11-SGK-CHI-B01-B02](ready/G11-SGK-CHI-B01-B02.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | source #627 merged; release #650 R1–R5 evidence, exact-final-head CI before merge/deploy; B01–B02 only |
 | [G10-SGK-CHIV-B09-B11](ready/G10-SGK-CHIV-B09-B11.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY B09–B11 | source #637 merged; release #648 R1–R5 candidate QA PASS, final metadata-head dual CI required |
 | [G10-SGK-CHIV](ready/G10-SGK-CHIV.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | source #634 merged; release #645 R1–R5 evidence completed, exact-final-head CI recheck before merge/deploy |
