@@ -46,12 +46,14 @@ function verifyBlob(value, file) {
   const actual = runGit("hash-object", "--", file);
   assert.equal(actual, value, "Source/receipt byte mismatch: " + file);
 }
-function verifyReadyManifest(rel) {
+function verifyReadyManifest(rel, initialHandoff) {
   const data = fs.readFileSync(path.join(root, rel), "utf8");
   const id = field(data, "PACKET_ID");
   assert.equal(rel, prefix + id + ".md", "Manifest name/ID mismatch");
   assert.equal(field(data, "HANDOFF_PROTOCOL"), "THPT-TWO-LANE-V2");
-  assert.equal(field(data, "STATE"), "CONTENT_READY", "Only new CONTENT_READY may be handed off; RELEASE_READY requires subsequent R gate");
+  const state = field(data, "STATE");
+  assert(["CONTENT_READY","RELEASE_READY"].includes(state), "Invalid V2 ready state");
+  if (initialHandoff) assert.equal(state, "CONTENT_READY", "New handoff cannot skip R gates");
   assert.equal(field(data, "LEARNING_PATH"), "SGK_CHAPTER", "New SGK-first whole-chapter handoff only");
   assert.equal(field(data, "RELEASE_SCOPE"), "FULL_LEARNING_PATH", "No new incomplete chapter as full academic handoff");
   assert.equal(field(data, "ASSESSMENT_MODE"), "CLIENT_SELF_CHECK_NO_MASTERY");
@@ -103,7 +105,7 @@ else {
     // Only new canonical READY packets: old ready manifests keep historical attestations.
     // Modified V2 packet remains subject to the V2 gate on every subsequent PR.
     if (status.startsWith("A") || status.startsWith("R") || (status.startsWith("M") && fs.readFileSync(path.join(root,rel),"utf8").includes("HANDOFF_PROTOCOL: THPT-TWO-LANE-V2"))) {
-      verifyReadyManifest(rel);
+      verifyReadyManifest(rel, status.startsWith("A") || status.startsWith("R"));
       checked++;
     }
   }
