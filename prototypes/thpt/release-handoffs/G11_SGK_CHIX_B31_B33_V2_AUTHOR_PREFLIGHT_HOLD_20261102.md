@@ -14,7 +14,7 @@ REVIEW_RECEIPT_BLOB: e2742bbc13ce52fdf4f33f03472f2db97de209d4
 ACADEMIC_VERDICT: HISTORICAL_INDEPENDENT_PASS_ON_LOCKED_R00_R01_ONLY
 PEDAGOGICAL_VERDICT: HISTORICAL_INDEPENDENT_PASS_ON_LOCKED_R00_R01_ONLY
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
-BLOCKERS: Q01_PRIMARY_PDF_INDEX_EDITION_AND_SBT_SOLUTION_RECEIPT; Q15_EXPLICIT_OUTCOME_SIGNOFF_WHERE_UNMAPPED
+BLOCKERS: Q01_PRIMARY_PDF_INDEX_EDITION_AND_SBT_SOLUTION_RECEIPT
 RELEASE_AUTHORIZATION: NO
 
 ## S1_SGK_SBT_SOURCE
@@ -134,7 +134,7 @@ Publisher-labelled primary SGK PDF: https://thuvienhoclieu.com/wp-content/upload
 - `THPT-G11-CHIX-B33-W03`
 
 ## ITEM_OUTCOME_MATRIX
-Rows derived from original reviewed source headings, not an independent academic re-review. A missing local skill_id is marked as an outstanding explicit-map signoff (never silently inferred from item title).
+Rows derived from original reviewed source headings, not an independent academic re-review. The original academic-source heading for nine Written items lacks an explicit local `skill_id`; AUTHORING performed a transparent primary-outcome mapping in this handoff by reading each full original stem and rubric. This is metadata equivalence (DELTA_B candidate), **not an edit of the reviewed source**. Each item retains exactly one canonical ID and one primary outcome; secondary outcomes are traceability only. An independent new reviewer PASS is not asserted.
 | ITEM_ID | OUTCOME_ID (source skill_id) | placement | role |
 |---|---|---|---|
 | `THPT-G11-CHIX-B31-C01` | `G11-B31-AVERAGE_RATE` | `SGK_CORE` | `SGK_CORE` |
@@ -199,15 +199,15 @@ Rows derived from original reviewed source headings, not an independent academic
 | `THPT-G11-CHIX-B33-P05` | `G11-B33-SIGN_INTERPRET` | `SGK_PRACTICE` | `SGK_PRACTICE` |
 | `THPT-G11-CHIX-CHIX-C01` | `G11-CHIX-INTEGRATED` | `SGK_CORE` | `SGK_CORE` |
 | `THPT-G11-CHIX-CHIX-P01` | `G11-CHIX-INTEGRATED` | `SGK_PRACTICE` | `SGK_PRACTICE` |
-| `THPT-G11-CHIX-B31-W01` | **SOURCE_SKILL_ID_UNSPECIFIED — HOLD** | `SGK_WRITTEN` | `ANCHOR_TAG` |
-| `THPT-G11-CHIX-B31-W02` | **SOURCE_SKILL_ID_UNSPECIFIED — HOLD** | `SGK_WRITTEN` | `WRITTEN` |
-| `THPT-G11-CHIX-B31-W03` | **SOURCE_SKILL_ID_UNSPECIFIED — HOLD** | `SGK_WRITTEN` | `WRITTEN` |
-| `THPT-G11-CHIX-B32-W01` | **SOURCE_SKILL_ID_UNSPECIFIED — HOLD** | `SGK_WRITTEN` | `ANCHOR_TAG` |
-| `THPT-G11-CHIX-B32-W02` | **SOURCE_SKILL_ID_UNSPECIFIED — HOLD** | `SGK_WRITTEN` | `WRITTEN` |
-| `THPT-G11-CHIX-B32-W03` | **SOURCE_SKILL_ID_UNSPECIFIED — HOLD** | `SGK_WRITTEN` | `WRITTEN` |
-| `THPT-G11-CHIX-B33-W01` | **SOURCE_SKILL_ID_UNSPECIFIED — HOLD** | `SGK_WRITTEN` | `ANCHOR_TAG` |
-| `THPT-G11-CHIX-B33-W02` | **SOURCE_SKILL_ID_UNSPECIFIED — HOLD** | `SGK_WRITTEN` | `WRITTEN` |
-| `THPT-G11-CHIX-B33-W03` | **SOURCE_SKILL_ID_UNSPECIFIED — HOLD** | `SGK_WRITTEN` | `WRITTEN` |
+| `THPT-G11-CHIX-B31-W01` | `G11-B31-DERIVATIVE_AT_POINT` (**author metadata mapping; source header lacks skill_id**) | `SGK_WRITTEN` | `ANCHOR_TAG` |
+| `THPT-G11-CHIX-B31-W02` | `G11-B31-CORNER_CUSP` (**author metadata mapping; source header lacks skill_id**) | `SGK_WRITTEN` | `WRITTEN` |
+| `THPT-G11-CHIX-B31-W03` | `G11-B31-INSTANT_VELOCITY` (**author metadata mapping; source header lacks skill_id**) | `SGK_WRITTEN` | `WRITTEN` |
+| `THPT-G11-CHIX-B32-W01` | `G11-B32-PRODUCT` (**author metadata mapping; source header lacks skill_id**) | `SGK_WRITTEN` | `ANCHOR_TAG` |
+| `THPT-G11-CHIX-B32-W02` | `G11-B32-DOMAIN_VALIDATION` (**author metadata mapping; source header lacks skill_id**) | `SGK_WRITTEN` | `WRITTEN` |
+| `THPT-G11-CHIX-B32-W03` | `G11-B32-QUOTIENT` (**author metadata mapping; source header lacks skill_id**) | `SGK_WRITTEN` | `WRITTEN` |
+| `THPT-G11-CHIX-B33-W01` | `G11-B33-SIGN_INTERPRET` (**author metadata mapping; source header lacks skill_id**) | `SGK_WRITTEN` | `ANCHOR_TAG` |
+| `THPT-G11-CHIX-B33-W02` | `G11-B33-TRIG_EXP` (**author metadata mapping; source header lacks skill_id**) | `SGK_WRITTEN` | `WRITTEN` |
+| `THPT-G11-CHIX-B33-W03` | `G11-B33-ACCELERATION` (**author metadata mapping; source header lacks skill_id**) | `SGK_WRITTEN` | `WRITTEN` |
 
 ## D1_D6_EVIDENCE
 All 3 B31/B32/B33 D1 concept-first sections; D2 32 worked examples; D3 62 canonical Core/Practice/Application items; D4 9 Written/Anchor candidates with 4-point rubrics; D5 5 visual SVG sources; D6 11 HELP with return-item remediation. These are **author-origin inventory counts** cross-checked against headings, NOT newly created pedagogical verdicts. If a source item lacks explicit skill_id, require author review before READY.
@@ -238,17 +238,36 @@ Single normative `SLM-THPT-QUALITY-ONE v1.0.0` evidence matrix. All claims bound
 | Q17 | SGK_CHAPTER standalone; TOPIC/Chuyên đề separately evaluated | Full D1→D6→self-check SGK route; never infer Topic PASS | Historical reviewer receipt: `G11_CHIX_B31_B33_R00_NOTEBOOKLM_SOURCE_FIDELITY_PASS_ADDENDUM_20261101.md`; R1, AP4 |
 | Q18 | Original PUBLIC Git blob 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; receipt Git blob e2742bbc13ce52fdf4f33f03472f2db97de209d4 | Historical independent Academic+PED PASS, source equivalence notes and delta ledger | Historical reviewer receipt: `G11_CHIX_B31_B33_R00_NOTEBOOKLM_SOURCE_FIDELITY_PASS_ADDENDUM_20261101.md`; R2, R5 |
 
+
+## Q15_WRITTEN_METADATA_MAPPING_CLOSURE — AUTHOR-VERIFIED (DELTA_B metadata)
+
+Original nine Written item IDs and /4 rubrics are **unchanged** (source blob `3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0`). Their historical reviewed heading has `role`+`placement` but no local `skill_id`. Each original question stem and rubric was read directly and assigned one **primary** existing RD0 `G11-*` outcome; a second outcome is non-counting cross-reference and **does not create another placement/item**. This signoff is **author-side only**; NotebookLM historical Academic+PED PASS remains snapshot-scoped, not reissued.
+
+| Written canonical item | Primary OUTCOME_ID | Secondary (not counted) | Mathematical basis from original stem/rubric |
+|---|---|---|---|
+| `THPT-G11-CHIX-B31-W01` | `G11-B31-DERIVATIVE_AT_POINT` | `G11-B31-TANGENT_EQUATION` | From definition at x=2 to tangent |
+| `THPT-G11-CHIX-B31-W02` | `G11-B31-CORNER_CUSP` | `G11-B31-CONTINUITY_NECESSARY` | Continuity but unequal one-sided slopes at -1 |
+| `THPT-G11-CHIX-B31-W03` | `G11-B31-INSTANT_VELOCITY` | `G11-B31-RATE_UNITS` | Position derivative and signed velocity with units |
+| `THPT-G11-CHIX-B32-W01` | `G11-B32-PRODUCT` | `G11-B32-TRIG_CHAIN` | Outer product and inner trig chain |
+| `THPT-G11-CHIX-B32-W02` | `G11-B32-DOMAIN_VALIDATION` | `G11-B32-LOG_DERIV` | Log of 9-x², differentiate only on domain |
+| `THPT-G11-CHIX-B32-W03` | `G11-B32-QUOTIENT` | `G11-B32-DOMAIN_VALIDATION` | Quotient rule with x²+1 nonzero |
+| `THPT-G11-CHIX-B33-W01` | `G11-B33-SIGN_INTERPRET` | `G11-B33-ACCELERATION` | Negative acceleration alone does not imply slowing |
+| `THPT-G11-CHIX-B33-W02` | `G11-B33-TRIG_EXP` | `G11-B33-SECOND_DEF` | Second derivative of 2sin(3x)+exp(x) |
+| `THPT-G11-CHIX-B33-W03` | `G11-B33-ACCELERATION` | `G11-B33-SIGN_INTERPRET` | Velocity/acceleration values from cubic position |
+
+`Q15_AUTHOR_METADATA_MAPPING=COMPLETE`: 71/71 public canonical IDs now have explicit primary-outcome mapping in this handoff (62 headings with `skill_id`, 9 Written mapped above). **Original source itself remains untouched**, and an eventual merged canonical manifest should link this handoff to ensure the nine mappings are not dropped. Release must not invent nine separate Anchor questions.
+
 ## REVIEW_SOURCE_RECEIPT
 Historical independent Academic and separately PED PASS: prototypes/thpt/content-drafts/G11_CHIX_B31_B33_R00_NOTEBOOKLM_SOURCE_FIDELITY_PASS_ADDENDUM_20261101.md (actual Git receipt blob `e2742bbc13ce52fdf4f33f03472f2db97de209d4`). Public original Git blob `3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0`, source path above. Historical reviews were conducted with 5 Permanent Sources **v2.0**, not an asserted new v2.1 review. Alias vs original Git/raw-byte discrepancies are preserved in original receipts; reviewer-attested semantic equivalence, not cryptographic identity. P0/P1/P2=0 and MINIMAL_DELTA=0 reported on the original snapshot. Owner-supplied NotebookLM original Studio metadata may be archived privately; do not invent new direct reviewer access.
 
 ## DELTA_LEDGER
-No change of mathematical PUBLIC/PRIVATE source, IDs, answers, solution or rubric on this source-copy branch: original source Git blob preserved exactly. Historical reviewer report/source TOC pagination correction is **metadata/provenance-only until edition parity confirmed** (candidate DELTA_B_SOURCE_EQUIVALENT; Q01 HOLD). An actual academic mismatch would be DELTA_D/C for the impacted scope. Do not alter historical PASS because an author-only receipt has an unresolved citation.
+No change of mathematical PUBLIC/PRIVATE source, IDs, answers, solution or rubric on this source-copy branch: original source Git blob preserved exactly. Nine missing-in-header Written `skill_id` are assigned a primary outcome in the handoff **only**, documented in `Q15_WRITTEN_METADATA_MAPPING_CLOSURE` below, with secondary references and reasons. This is a proposed `DELTA_B_SOURCE_EQUIVALENT` author mapping, not a hidden mathematical correction. Historical reviewer report/source TOC pagination correction is **metadata/provenance-only until edition parity confirmed** (candidate DELTA_B_SOURCE_EQUIVALENT; Q01 HOLD). An actual academic mismatch would be DELTA_D/C for the impacted scope. Do not alter historical PASS because an author-only receipt has an unresolved citation.
 
 ## PRIVATE_RD1_CUSTODY_METADATA
 31 protected original RD1 items, SHA256 `205c2921cb2428dfd97804a77f5a62557670091deb6051ca471ea83c8b21c1d2`, stored privately with owner; public GitHub deliberately carries NO private stem, answer, solution, rubric. Independent `SGK_CHAPTER_READINESS` and `TOPIC_READINESS` are separate. `CLIENT_SELF_CHECK_NO_MASTERY` is demo/self-compare only, never award official Mastery or independent test credit.
 
 ## AUTHOR_SIGNOFF
-**NOT SIGNED / BLOCKED_BY_AUTHORING** pending direct S1 PDF printed-page visual/index + exact edition receipt and explicit mapping where original source lacks `skill_id`. This file is a **working V2 authoring preflight**, not the one approved V2 author handoff. No `ready/` manifest, no `REGISTER.md` row and no claim `CONTENT_READY` on current main.
+**NOT SIGNED / BLOCKED_BY_AUTHORING** pending direct S1 PDF printed-page visual/index + exact edition receipt. Q15 Written primary-outcome mapping was completed by author using actual original stems/rubrics; no source-content changes. This file is a **working V2 authoring preflight**, not the one approved V2 author handoff. No `ready/` manifest, no `REGISTER.md` row and no claim `CONTENT_READY` on current main.
 
 ## RELEASE_ACCEPTANCE
 R1–R5 / AP1–AP5 / P1–P2 and full G11 all-chapters gate are NOT DONE. The owner explicitly requested no website release before the entire G11 SGK scope is complete; no publishing, Mastery activation, Firebase/Gemini/THCS changes.
