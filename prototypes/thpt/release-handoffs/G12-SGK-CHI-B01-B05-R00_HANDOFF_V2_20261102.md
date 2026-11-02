@@ -145,6 +145,10 @@ Original owner SGK Toán 12 KNTT Tập Một printed pages 5–44 (PDF1 7–46),
 - THPT-G12-CHI-END-W01
 - THPT-G12-CHI-END-W02
 
+## ITEM_OUTCOME_MATRIX
+| ITEM_ID | OUTCOME_ID | PLACEMENT | ROLE |
+|---|---|---|---|
+
 ## D1_D6_EVIDENCE
 Five lesson segments and end-chapter self-check; 24 reasoned examples, 78 original canonical questions including 12 Written, 6 original SVG, 36 five-step HELP links. Exact SOURCE_SHA and item/outcome/role validated on GitHub.
 ## PED1_PED6_EVIDENCE
