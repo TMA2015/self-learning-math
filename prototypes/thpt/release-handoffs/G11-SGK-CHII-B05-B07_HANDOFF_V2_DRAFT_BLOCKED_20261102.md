@@ -10,7 +10,7 @@ REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/G11_CHII_CHIII_CHIV_R02_SCOP
 REVIEW_RECEIPT_BLOB: a25e984e2eb870b5df01aeb0796f395ad0c6e226
 ACADEMIC_VERDICT: R01_ONLY_PASS
 PEDAGOGICAL_VERDICT: R02_PED_PASS_OWNER_INDEPENDENT_VERDICT
-BLOCKERS: SBT_PRINTED_PAGE_CONFLICT_CHII_END_P46_49_VS_CHIII_B08_P44_46_B09_P47_49;PRIVATE_RD1_CUSTODY_SHA_UNVERIFIED
+BLOCKERS: SBT_PRINTED_PAGE_CONFLICT_CHII_END_P46_49_VS_CHIII_B08_P44_46_B09_P47_49
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 RELEASE_SCOPE: FULL_LEARNING_PATH
 LEARNING_PATH: SGK_CHAPTER
@@ -171,11 +171,13 @@ R01 Academic PASS owner Issue #684 for exact Git blob `a0975caaf39ead93c5faef149
 
 ## PRIVATE_RD1_CUSTODY_METADATA
 
+**CUSTODY SHA-256 retrieved from existing owner-accepted R01 source receipt Issue #684:** `96d39c5b4a40dff0665fab33765f9266135dd9f607d1ccef9b3d0125c184180d`, exact **19** independently held-out Written RD1 candidates, original author private Library archive / original NotebookLM review transport. R01 independent academic scope and restore metadata PASS already recorded. This file only records SHA/count and trusted provenance; no private stem/key/rubric/solution uploaded and **no claim of freshly rehashing the private bytes** in this turn. `A7_PRIVATE_RD1_METADATA=SOURCE_LOCK_RESTORED_FROM_R01`, with `CLIENT_SELF_CHECK_NO_MASTERY` unchanged.
+
 Nineteen held-out independent ChII Written RD1 candidates, protected **outside public GitHub** per R01 owner receipt #684. Private canonical SHA-256 and exact custody must be re-confirmed against existing original author archive before ready promotion; this draft does not guess or disclose a private SHA. Assessment option `CLIENT_SELF_CHECK_NO_MASTERY` is not official independent `SGK_CHAPTER_READINESS` and no learner scoring/keys are published here.
 
 ## AUTHOR_SIGNOFF
 
-**STRUCTURAL preflight completed**: 3 lesson IDs, 16 RD0 outcome IDs, 42 unique public canonical item headings; all mapped to a primary source skill. 15/16 outcomes have direct D3/D4 primary evidence, `G11-CHII-STRUCTURAL-COMPARISON` requires explicitly evidenced integrated pedagogy/RD1 source. No ID duplication or new items. **`BLOCKED_BY_AUTHORING`** until SBT source pagination and private custody identity resolution, then author may sign canonical V2 ready/REGISTER. This packet MUST NOT be added to `ready/` while blocked.
+**STRUCTURAL preflight completed**: 3 lesson IDs, 16 RD0 outcome IDs, 42 unique public canonical item headings; all mapped to a primary source skill. 15/16 outcomes have direct D3/D4 primary evidence, `G11-CHII-STRUCTURAL-COMPARISON` requires explicitly evidenced integrated pedagogy/RD1 source. No ID duplication or new items. **`BLOCKED_BY_AUTHORING`** until SBT source pagination (private custody identity resolved via original reviewer receipt), then author may sign canonical V2 ready/REGISTER. This packet MUST NOT be added to `ready/` while blocked.
 
 
 ## R02_PED_REVIEW_CLOSURE_AND_RESIDUAL_A2_HOLD
@@ -184,3 +186,8 @@ Nineteen held-out independent ChII Written RD1 candidates, protected **outside p
 - `SBT_PAGE_SOURCE_RECEIPT=CONFLICT_HOLD`: owner report places ChII final exercises p46–49 **after** a claimed ChIII B08 start p44, and overlaps ChIII B09 p47–49. Shared-page transition does not explain this. Do not call `SBT_SOURCE_RECEIPT VERIFIED_EXACT` without actual PDF printed-page inspection.
 - `PRIVATE_RD1_CUSTODY_HASH=NOT_REVERIFIED`: preserve R01 owner reviewer counts and private bank outside GitHub, verify original SHA/custody separately before new ready packet.
 - **Not `CONTENT_READY`** yet, not RELEASE, no Final Submit or Skill Mastery; no duplicate source or duplicate canonical items generated.
+
+
+## A7_PRIVATE_BANK_METADATA_CLOSURE_20261102
+
+A7 verified against historical **owner-supplied source receipt #684**: protected RD1 19/19, canonical SHA256 `96d39c5b4a40dff0665fab33765f9266135dd9f607d1ccef9b3d0125c184180d`, private originals in author Library, no public answers/keys/rubrics. Author GitHub issue readback independently confirms the **metadata record** (not the protected bytes rehashed today). `PRIVATE_RD1_CUSTODY_SHA_UNVERIFIED` is closed as a historical-metadata lookup, without touching RD1. Sole remaining AUTHORING blocker: `SBT_PRINTED_PAGE_CONFLICT_CHII_END_P46_49_VS_CHIII_B08_P44_46_B09_P47_49` (Q01/A2).
