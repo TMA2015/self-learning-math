@@ -4,6 +4,7 @@
 
 | Gói | Hành trình | Trạng thái | Phạm vi | PR / nguồn |
 |---|---|---|---|---|
+| [G11-SGK-CHI-B01-B04](ready/G11-SGK-CHI-B01-B04.md) | SGK_CHAPTER | CONTENT_READY | FULL_LEARNING_PATH | authoring #681 source R03 blob `256ceb5edc5e02aec320e83e99c8e08e035654f3`; combined independent academic/PED receipt `4a7831cea1738a0d57f3e60bf6791f995aa693d8`, V2 A1–A7/PED1–6 source passed; release #697 DRAFT, PAUSED, R1–R5/AP/Final Submit NOT PASS |
 | [G11-SGK-CHI-B01-B02](ready/G11-SGK-CHI-B01-B02.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | source #627 merged; release #650 R1–R5 evidence, exact-final-head CI before merge/deploy; B01–B02 only |
 | [G10-SGK-CHIV-B09-B11](ready/G10-SGK-CHIV-B09-B11.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY B09–B11 | source #637 merged; release #648 R1–R5 candidate QA PASS, final metadata-head dual CI required |
 | [G10-SGK-CHIV](ready/G10-SGK-CHIV.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | source #634 merged; release #645 R1–R5 evidence completed, exact-final-head CI recheck before merge/deploy |
