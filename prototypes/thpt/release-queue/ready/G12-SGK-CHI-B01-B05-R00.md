@@ -29,3 +29,11 @@ MASTERY_ACTIVATION: NO
 - [x] A5_D1_D6 — Twenty-four D2, 12 Written rubrics, six original SVG and 36 D6 return HELP.
 - [x] A6_DELTA_CLOSED — Original reviewed source unchanged; no P0/P1/P2 and MINIMAL_DELTA=0.
 - [x] A7_CUSTODY — Public RD0 only, no independent protected RD1 test bank or Mastery writes.
+
+## PED1–PED6 external self-learning review evidence
+- [x] PED1_MOTIVATION — Five original SGK lessons each introduce authentic real-world WHY ahead of formal rules.
+- [x] PED2_PREREQUISITES — Relevant domain, derivatives and limits recalled before the worked methods.
+- [x] PED3_MEANING_FIRST — Intuitive significance of rate, extrema, limits and graphs precedes memorized formulas.
+- [x] PED4_EXPLAINED_VISUAL — Six original precise SVG figure sources with labels and guided interpretation.
+- [x] PED5_REASONED_EXAMPLES — Twenty-four original worked solutions justify the method and conditions.
+- [x] PED6_FIRST_TRY_REMEDIATION — Self-try before Core plus 36 original five-step same-skill HELP cards.
