@@ -42,14 +42,14 @@ for(const check of checks){
   // Normalize only the approved B02 lead-copy correction; D1 math, examples and figures stay pinned.
   let prefix=src.slice(0,start);
   if(check.file==="docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md"){
-    const current="Chương I gồm Bài 1–4; Tự kiểm tra cuối chương chưa kích hoạt.";
+    const current="Chương I gồm Bài 1–4; Bài tự kiểm tra cuối chương chỉ hỗ trợ tự đối chiếu sau Final Submit, không ghi điểm thành thạo.";
     const frozen="Phạm vi đang công bố chỉ gồm Bài 1–2.";
     assert(prefix.includes(current),"G11 B02 must show accurate four-lesson chapter scope");
     assert(prefix.includes("## Trước khi học: Vì sao cần kiến thức này?"),"Reviewed B02 concept-first intro must precede D1");
     assert(prefix.includes('data-ped-first-try="2"'),"B02 first try must remain independently openable");
     // Only the new independently reviewed PED intro may precede the original source-locked D1.
     prefix=prefix.slice(0,prefix.indexOf("## Trước khi học:"));
-    prefix=prefix.replace(current,frozen);
+    prefix=prefix.replace(current,frozen).replace("Tự kiểm tra · tự đối chiếu","Tự kiểm tra · chưa kích hoạt");
   }
   assert.equal(fnv(prefix),check.prefixHash,check.file+": lesson header changed beyond approved UI-only scope");
   let originalSuffix=src.slice(end);
