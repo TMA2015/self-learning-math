@@ -37,3 +37,19 @@ MASTERY_ACTIVATION: NO
 - [x] PED4_EXPLAINED_VISUAL — Six original precise SVG figure sources with labels and guided interpretation.
 - [x] PED5_REASONED_EXAMPLES — Twenty-four original worked solutions justify the method and conditions.
 - [x] PED6_FIRST_TRY_REMEDIATION — Self-try before Core plus 36 original five-step same-skill HELP cards.
+
+## RELEASE R1–R5, AP1–AP5 and P1–P2 gates not yet completed
+- [ ] R1_INTEGRATE — Verify exact source and receipt Git blobs when integrating learner-only content.
+- [ ] R2_CI — Run final exact merged-HEAD CI on the real website build.
+- [ ] R3_GOLDEN — Preserve THCS/THPT Golden, independent SGK/Topic navigation and deep links.
+- [ ] R4_ASSESSMENT — Validate final submit, no answer/hint before submit and no public self-check Mastery.
+- [ ] R5_OWNER_AUTH — Obtain explicit user permission before merging or deploying.
+- [ ] AP1_LEARNING_LAYOUT — Verify hierarchy with student actual screens.
+- [ ] AP2_FORMULAS — Verify MathJax formatting and mathematical notation.
+- [ ] AP3_SVG — Verify six SVG readability and scaling on target devices.
+- [ ] AP4_PED_FLOW — Verify self-try, Core, Written and D6 remedial return sequence.
+- [ ] AP5_RESPONSIVE — Verify desktop and mobile actual viewport.
+- [ ] P1_DEPLOY_RECEIPT — No release production SHA or approved deployment.
+- [ ] P2_OWNER_DEVICE_UAT — No real-device owner signoff for G12 Chapter I.
+
+Reviewed source is content ready for RELEASE intake only; the 12 original end-of-chapter items are public RD0 self-comparison and never independent SGK_CHAPTER_READINESS. No website merge/deploy, no inferred topic readiness or Mastery.
