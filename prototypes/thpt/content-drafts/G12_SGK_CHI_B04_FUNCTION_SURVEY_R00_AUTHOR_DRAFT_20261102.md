@@ -55,9 +55,9 @@ r(x)=2+1/(x+1) có x=−1 tiệm cận đứng và y=2 ngang; r'=−1/(x+1)²<0.
 
 ## PED4 / D5: Đọc hình và bảng dấu
 
-**FIG-G12-B04-01:** sẽ dựng đồ thị g=(x+2)/(x−1) có đường x=1, y=1 và hai điểm giao trục, phân biệt nét đứt tiệm cận với nhánh thật. D5 học sinh đọc từng nhánh theo dấu g'<0 trên từng khoảng, kiểm tra g(−2)=0 và g(0)=−2 trước khi xác định nhánh trái.
+**FIG-G12-B04-01** (G12_B04_FIG01_RATIONAL_SURVEY_R00.svg): đồ thị g=(x+2)/(x−1) có đường x=1, y=1 và hai điểm giao trục, phân biệt nét đứt tiệm cận với nhánh thật. D5 học sinh đọc từng nhánh theo dấu g'<0 trên từng khoảng, kiểm tra g(−2)=0 và g(0)=−2 trước khi xác định nhánh trái.
 
-**FIG-G12-B04-02:** đồ thị cubic y=x³−3x². Học sinh nhìn cực đại tại (0,0) tiếp xúc Ox, cực tiểu tại (2,−4) và điểm uốn (1,−2), kiểm tra đối xứng tâm chứ không nhầm trục đối xứng. Khi chưa có SVG thì dùng bảng dữ liệu chính xác của EX01, không coi hình vẽ chưa kiểm chứng là chứng cứ toán học.
+**FIG-G12-B04-02** (G12_B04_FIG02_CUBIC_SURVEY_R00.svg): đồ thị cubic y=x³−3x². Học sinh nhìn cực đại tại (0,0) tiếp xúc Ox, cực tiểu tại (2,−4) và điểm uốn (1,−2), kiểm tra đối xứng tâm chứ không nhầm trục đối xứng. Khi chưa có SVG thì dùng bảng dữ liệu chính xác của EX01, không coi hình vẽ chưa kiểm chứng là chứng cứ toán học.
 
 ## PED6: TỰ THỬ trước Core
 
@@ -152,4 +152,4 @@ Tự ghi dự đoán rồi kiểm tra lại bằng tính toán, không mở đá
 1. Lỗi: nối nét qua điểm cấm. 2. Bản chất: giới hạn đứng tạo nhánh vô hạn. 3. Gợi lại 1/(x+1). 4. Tự thử giá trị khi x→−1±. 5. Trở lại P03.
 
 ## AUTHOR_CHECKPOINT
-B04 R00: 7 outcomes, 5 worked D2, 4 Core +6 Practice+2 Application +2 Written=14 canonical original IDs, 7 D6 HELP linked same outcome. Figures planned as original precise SVG and must be frozen before NotebookLM review. Academic/PED **not yet reviewed**, no official testing or Mastery.
+B04 R00: 7 outcomes, 5 worked D2, 4 Core +6 Practice+2 Application +2 Written=14 canonical original IDs, 7 D6 HELP linked same outcome. Two original mathematically scaled SVG files completed; freeze their Git blob SHA in the reviewer source. Academic/PED **not yet reviewed**, no official testing or Mastery.
