@@ -114,3 +114,91 @@ Vẽ tam giác ABC, sao chép cùng dạng thành A'B'C' trên một mặt phẳ
 
 ### EX-G11-SUPP-E02-06 | skill_id=G11-E02-LINE_PLANE_MEASURE
 Để xác định góc nhị diện tạo bởi vạch a trên đất và một tấm dựng qua cọc AB, hạ H là hình chiếu vuông góc của chân A trên a. Tam giác ABH vuông tại A nên tan∠BHA=AB/AH. Chỉ lấy AB/độ dài vạch a là nhầm đoạn không thuộc tam giác đo.
+
+
+## D3 — 21 public canonical Core/Practice/Application; answer revealed only after learner's formative Submit
+These are original author tasks derived from SGK learning goals, NOT the publisher's verbatim exercises. Practice viewing solutions never grants chapter Readiness/Mastery.
+
+### THPT-G11-SUPP-E01-C01 | skill_id=G11-E01-EXPONENTIAL_MODEL | placement=SGK_CORE | role=SGK_CORE
+**Câu hỏi:** Số lượng ban đầu 200, tăng 5% mỗi năm, sau hai năm theo ghép lãi là bao nhiêu?
+**Đáp án và lí do (chỉ tự mở sau khi làm):** 200·1,05²=220,5; nếu là số cá thể thật cần quy ước làm tròn.
+
+### THPT-G11-SUPP-E01-P01 | skill_id=G11-E01-EXPONENTIAL_MODEL | placement=SGK_PRACTICE | role=SGK_PRACTICE
+**Câu hỏi:** Hai công thức A0(1+r)^t và A0e^(rt) có luôn bằng nhau khi cùng r? Giải thích.
+**Đáp án và lí do (chỉ tự mở sau khi làm):** Không. Công thức đầu ghép theo bước, thứ hai liên tục. Để khớp năm nguyên cần k=ln(1+r), không đặt k=r tùy tiện.
+
+### THPT-G11-SUPP-E01-C02 | skill_id=G11-E01-HALF_LIFE | placement=SGK_CORE | role=SGK_CORE
+**Câu hỏi:** Sau mấy chu kì bán rã vật còn 1/8 khối lượng đầu?
+**Đáp án và lí do (chỉ tự mở sau khi làm):** 3 chu kì do (1/2)^3=1/8.
+
+### THPT-G11-SUPP-E01-P02 | skill_id=G11-E01-HALF_LIFE | placement=SGK_PRACTICE | role=SGK_PRACTICE
+**Câu hỏi:** Chu kì bán rã 10 năm; sau 15 năm còn tỉ lệ khối lượng nào?
+**Đáp án và lí do (chỉ tự mở sau khi làm):** 2^(-1,5)=1/(2√2)≈0,3536; chu kì có thể là 1,5, không chỉ số nguyên.
+
+### THPT-G11-SUPP-E01-C03 | skill_id=G11-E01-PH_SCALE | placement=SGK_CORE | role=SGK_CORE
+**Câu hỏi:** [H+]=10^(-6) mol/L, theo công thức pH=-log10[H+] có pH bao nhiêu?
+**Đáp án và lí do (chỉ tự mở sau khi làm):** 6, giả thiết nồng độ dương.
+
+### THPT-G11-SUPP-E01-P03 | skill_id=G11-E01-PH_SCALE | placement=SGK_PRACTICE | role=SGK_PRACTICE
+**Câu hỏi:** pH tăng từ 4 lên 6 thì nồng độ ion H+ giảm bao nhiêu lần?
+**Đáp án và lí do (chỉ tự mở sau khi làm):** 100 lần; 10^-4 / 10^-6=10².
+
+### THPT-G11-SUPP-E01-C04 | skill_id=G11-E01-RICHTER_SCALE | placement=SGK_CORE | role=SGK_CORE
+**Câu hỏi:** Mô hình M=log10(I/S), tỉ số I/S=10^5. Tìm M.
+**Đáp án và lí do (chỉ tự mở sau khi làm):** 5.
+
+### THPT-G11-SUPP-E01-P04 | skill_id=G11-E01-RICHTER_SCALE | placement=SGK_PRACTICE | role=SGK_PRACTICE
+**Câu hỏi:** Hai biên độ chênh nhau hệ số 10^0,7 thì chênh số đo M?
+**Đáp án và lí do (chỉ tự mở sau khi làm):** 0,7. Không suy kết luận về tỉ số năng lượng từ công thức biên độ.
+
+### THPT-G11-SUPP-E01-C05 | skill_id=G11-E01-DECIBEL_SCALE | placement=SGK_CORE | role=SGK_CORE
+**Câu hỏi:** I/I0=100, mức L=10log10(I/I0) bằng bao nhiêu?
+**Đáp án và lí do (chỉ tự mở sau khi làm):** 20 dB vì 10·2=20.
+
+### THPT-G11-SUPP-E01-P05 | skill_id=G11-E01-DECIBEL_SCALE | placement=SGK_PRACTICE | role=SGK_PRACTICE
+**Câu hỏi:** Mức âm tăng 30 dB; tỉ số cường độ mới/cũ bằng bao nhiêu?
+**Đáp án và lí do (chỉ tự mở sau khi làm):** 1000, vì log10(k)=30/10=3.
+
+### THPT-G11-SUPP-E01-P06 | skill_id=G11-E01-MODEL_ASSUMPTIONS | placement=SGK_APPLICATION | role=SGK_APPLICATION
+**Câu hỏi:** Ngoại suy quần thể tăng 2% mỗi năm suốt 100 năm: nêu 2 giả định cần kiểm.
+**Đáp án và lí do (chỉ tự mở sau khi làm):** Tốc độ tăng bất biến và môi trường/nguồn lực không ràng buộc; thời gian, di cư, dịch bệnh và sai số có thể làm kết quả thực tế khác mô hình.
+
+### THPT-G11-SUPP-E02-C01 | skill_id=G11-E02-NET_CONSTRUCTION | placement=SGK_CORE | role=SGK_CORE
+**Câu hỏi:** Lăng trụ tam giác có bao nhiêu mặt đáy và bao nhiêu mặt bên?
+**Đáp án và lí do (chỉ tự mở sau khi làm):** 2 đáy tam giác bằng nhau và 3 mặt bên hình bình hành.
+
+### THPT-G11-SUPP-E02-P01 | skill_id=G11-E02-NET_CONSTRUCTION | placement=SGK_PRACTICE | role=SGK_PRACTICE
+**Câu hỏi:** Làm thùng không nắp từ bìa, điều kiện nào cần kiểm trước khi cắt/dán?
+**Đáp án và lí do (chỉ tự mở sau khi làm):** Không tạo nắp, cặp cạnh ghép đúng chiều dài/vị trí, các mặt có thể khép mà không chồng sai.
+
+### THPT-G11-SUPP-E02-C02 | skill_id=G11-E02-LINE_PLANE_MEASURE | placement=SGK_CORE | role=SGK_CORE
+**Câu hỏi:** Cọc thẳng cao 2m, bóng dài 2m trên nền phẳng, góc tia với mặt đất?
+**Đáp án và lí do (chỉ tự mở sau khi làm):** 45° vì tanθ=2/2=1; điều kiện cọc vuông góc đất.
+
+### THPT-G11-SUPP-E02-P02 | skill_id=G11-E02-LINE_PLANE_MEASURE | placement=SGK_PRACTICE | role=SGK_PRACTICE
+**Câu hỏi:** Cọc cao 1m bóng 3m, học sinh ghi sinθ=1/3. Sửa và giải thích.
+**Đáp án và lí do (chỉ tự mở sau khi làm):** Sai vì 3m là cạnh kề chứ không phải huyền: tanθ=1/3, sinθ=1/√10.
+
+### THPT-G11-SUPP-E02-C03 | skill_id=G11-E02-DIHEDRAL_MEASURE | placement=SGK_CORE | role=SGK_CORE
+**Câu hỏi:** Hai tia đo góc phẳng nhị diện phải quan hệ với giao tuyến d thế nào?
+**Đáp án và lí do (chỉ tự mở sau khi làm):** Mỗi tia nằm trong một mặt, cùng vuông góc với d tại điểm H trên d.
+
+### THPT-G11-SUPP-E02-P03 | skill_id=G11-E02-DIHEDRAL_MEASURE | placement=SGK_PRACTICE | role=SGK_PRACTICE
+**Câu hỏi:** Có thể lấy góc giữa hai đường chéo nhìn thấy trên hình phối cảnh để gọi là góc nhị diện?
+**Đáp án và lí do (chỉ tự mở sau khi làm):** Không. Chúng có thể không vuông góc giao tuyến, góc phối cảnh cũng không bảo toàn.
+
+### THPT-G11-SUPP-E02-C04 | skill_id=G11-E02-VOLUME_MODEL | placement=SGK_CORE | role=SGK_CORE
+**Câu hỏi:** Chóp có diện tích đáy 18cm², chiều cao 4cm; thể tích?
+**Đáp án và lí do (chỉ tự mở sau khi làm):** (1/3)·18·4=24cm³.
+
+### THPT-G11-SUPP-E02-P04 | skill_id=G11-E02-VOLUME_MODEL | placement=SGK_PRACTICE | role=SGK_PRACTICE
+**Câu hỏi:** Lăng trụ có Sđáy=12cm², V=60cm³ thì chiều cao?
+**Đáp án và lí do (chỉ tự mở sau khi làm):** h=V/Sđáy=5cm; không lấy 1/3.
+
+### THPT-G11-SUPP-E02-C05 | skill_id=G11-E02-GEOGEBRA_REPRESENTATION | placement=SGK_CORE | role=SGK_CORE
+**Câu hỏi:** Vì sao nối A với A', B với B', C với C' khi dựng lăng trụ ABC.A'B'C'?
+**Đáp án và lí do (chỉ tự mở sau khi làm):** Đó là các đỉnh tương ứng của hai đáy và tạo các cạnh bên song song.
+
+### THPT-G11-SUPP-E02-P05 | skill_id=G11-E02-GEOGEBRA_REPRESENTATION | placement=SGK_PRACTICE | role=SGK_PRACTICE
+**Câu hỏi:** Khi vẽ lăng trụ trên giấy, cạnh bị che khuất thường nên dùng nét nào?
+**Đáp án và lí do (chỉ tự mở sau khi làm):** Nét đứt, kết hợp nhãn rõ. Đừng kết luận vuông góc chỉ từ phối cảnh.
