@@ -19,7 +19,7 @@ PEDAGOGICAL_VERDICT: PASS_ON_LOCKED_SNAPSHOT
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 BLOCKERS: NONE
 
-**Scope of READY:** Only AUTHORING gates A1–A7 + PED, not an assertion the integrated website, chapter self-check, AP1–AP5 or release QA is finished. The exact public source R03, combined independent reviewer receipt, and authoring V2 handoff are present on this candidate branch with Git blob SHA parity. Source R03 metadata still includes original pre-review 'candidate' labels; later dated independent R01/R02/R03 receipts supersede those historical source headings without rewriting source bytes. Private RD1 content/keys/rubrics never committed.
+**Scope of READY:** Only AUTHORING gates A1–A7 + PED, not an assertion the integrated website, chapter self-check, AP1–AP5 or release QA is finished. The exact public source R03, combined independent reviewer receipt, and authoring V2 handoff are present on this candidate branch with Git blob SHA parity. Source R03 metadata still includes original pre-review 'candidate' labels; later dated independent R01/R02/R03 receipts supersede those historical source headings without rewriting source bytes. The exact PRIVATE canonical archive was not committed. Under owner Issue #662, a distinct PUBLIC 20-item client self-check JSON derived from reviewed RD1 is staged for voluntary review after Final Submit; its stems/keys/rubrics are client-exposed by choice, so the 20 items must NEVER be represented as independently held-out, proctored or Mastery-bearing evidence.
 
 ## A — biên soạn/review
 - [x] A1_SOURCE_SNAPSHOT — R03 public canonical source locked to Git blob 256ceb5edc5e02aec320e83e99c8e08e035654f3; immutable author receipt and original R01/R02 retained in signed handoff.
@@ -28,7 +28,7 @@ BLOCKERS: NONE
 - [x] A4_ITEM_OUTCOME_IDS — One public source with 46 unique canonical records (42 Core/Practice plus four Written/Anchor), 26 RD0 outcomes, full item-to-outcome mapping verified in V2 handoff.
 - [x] A5_D1_D6_SCOPE — Each of four lessons includes concept-first theory, 18 worked examples, 42 Core/Practice items, four Written, six educational SVG and eight D6 remediation supports.
 - [x] A6_DELTA_RESOLVED — R01 original math unchanged; targeted pedagogical additions R02 B03/B04 and R03 B01/B02 independently reviewed PASS, P0/P1/P2 zero, no unreviewed academic delta.
-- [x] A7_PUBLIC_PRIVATE_BOUNDARY — Twenty held-out private RD1 items with source custody SHA256 remain outside public repo; client-only Final Submit must not store Mastery or claim independent evaluation.
+- [x] A7_PUBLIC_PRIVATE_BOUNDARY — The 20-item canonical private archive remains outside GitHub; the owner-approved separate PUBLIC reviewed self-check JSON exposes stems/answers/rubrics client-side under #662, so these 20 cannot count as independent held-out Readiness evidence. No Mastery or storage writes.
 
 ## PED — independent concept-first learning review
 - [x] PED1_MOTIVATION — B01/B02 targeted R03 and B03/B04 targeted R02 introduce real mathematical problems and reasons the concepts exist before symbols, independently PASS.
@@ -41,8 +41,8 @@ BLOCKERS: NONE
 ## R — phát hành
 - [ ] R1_INTEGRATED_CURRENT_MAIN — Source R03 PED texts staged to learner pages B01–B04 on PR #697; AP, chapter Final Submit, branch rebasing and final R1 acceptance remain open.
 - [ ] R2_EXACT_HEAD_CI — All mandatory checks must complete SUCCESS at final PR head SHA after finishing manifest and rendered learner changes; old green runs do not count.
-- [ ] R3_CLEAN_STUDENT_UI — QA concept-first chapters and internal-label masking on exact integrated rendered pages; learner chapter self-check is not yet active.
-- [ ] R4_ASSESSMENT_SAFETY — Chapter Final Submit client-only selfcheck, pre-submit no-leak, no Mastery/storage writes, RD1 source custody and independent evidence boundary need release QA.
+- [ ] R3_CLEAN_STUDENT_UI — G11 chapter page mounts a 20-item voluntary Final Submit self-check; rendered UI and academic label cleanup still require browser QA on exact integrated HEAD.
+- [ ] R4_ASSESSMENT_SAFETY — Client-only 20 Written manual-rubric Final Submit staged; 390/820/1440 browser no-leak, no score/Mastery/storage, and raw private archive exclusion checks still require exact-head SUCCESS. The exposed items are NOT independent held-out Readiness evidence.
 - [ ] R5_OWNER_APPROVAL — Owner 02/11/2026 authorizes publishing genuinely eligible packages after full gates; no skip of Final Submit, AP, CI, or production P1 verification.
 
 ## AP — academic presentation quality on rendered learner pages
@@ -56,4 +56,4 @@ BLOCKERS: NONE
 - [ ] P1_DEPLOY_RECEIPT — Only after merge and Deploy MkDocs SUCCESS on exact main SHA and verifying gh-pages chapter pages, JS, SVG and Final Submit.
 - [ ] P2_DEVICE_UAT — Human physical iPhone/iPad Safari test not yet provided; never infer it from headless browser.
 
-**Final release status:** CONTENT_READY is Academic+PED custody only. SYSTEM_HOLD remains for AP and assessment/readiness/runtime until Release lane R1–R5 verified. No deploy or Mastery activation from this manifest alone.
+**Final release status:** CONTENT_READY is Academic+PED custody only. SYSTEM_HOLD remains for AP and Final Submit runtime/assessment QA until Release lane R1–R5 verified. No deploy or Mastery activation from this manifest alone.
