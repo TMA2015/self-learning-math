@@ -85,4 +85,4 @@ const selfcheckEngine=read("docs/assets/javascripts/thpt-g11-reviewed-selfcheck-
 assert(selfcheckEngine.includes("PUBLIC_CANONICAL_REFERENCE_ONLY")&&selfcheckEngine.includes("THPT_G11_CHII_REVIEWED_FORMATIVE"));
 assert(preview.includes("lop-11/chuong-ii/tu-kiem-tra-chuong.md"));
 console.log("PASS G11 ChII source parity: 36 original PUBLIC canonical + 6 shared Written + 3 SVG + 6 HELP, and 15 unique voluntary self-check refs; private 19 RD1 untouched, no Mastery/independent score");
-console.log("PASS G11 ChII RELEASE source parity: 36/36 exact R03 formative, 6 shared Written, 3 immutable SVG, 6 D6 deep links, preview navigation and Q16 hold");
+console.log("PASS G11 ChII RELEASE source parity: 36/36 exact R03 formative, 6 shared Written, 3 immutable SVG, 6 D6 deep links, preview navigation and Q16 voluntary self-check scope (no independent Readiness)");
