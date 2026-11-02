@@ -1,0 +1,31 @@
+name: THPT One Standard Governance QA (no release)
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md'
+      - 'scripts/test-thpt-unified-content-standard.cjs'
+      - 'AGENTS.md'
+      - 'prototypes/thpt/release-queue/README.md'
+      - '.github/workflows/thpt-unified-content-standard-governance-qa.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  one-standard-consistency:
+    name: ONE standard Q01-Q18 is traceable by both lanes
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate syntax and negative fixtures
+        run: |
+          node --check scripts/test-thpt-unified-content-standard.cjs
+          node scripts/test-thpt-unified-content-standard.cjs --self-test
+      - name: Validate one normative Q matrix and shared pointers
+        run: node scripts/test-thpt-unified-content-standard.cjs
+      - name: Guard - governance QA is not academic PASS or website release
+        run: |
+          echo "STANDARD_SCHEMA_PASS != ACADEMIC_PASS != PED_PASS != CONTENT_READY != RELEASE_READY"
+          echo "No merge/deploy in this governance workflow."
