@@ -31,7 +31,13 @@ assert(selfcheckJS.includes("independent_readiness_credit!==false")&&!/localStor
 for(let i=1;i<=6;i++)
  assert.match(packet,new RegExp("^- \\[x\\] PED"+i+"_","m"),"PED"+i+" must have an independent academic-scope receipt");
 for(let i=1;i<=5;i++)
- assert.match(packet,new RegExp("^- \\[ \\] AP"+i+"_","m"),"AP"+i+" needs rendered release QA");
+ assert.match(packet,new RegExp("^- \\[x\\] AP"+i+"_","m"),"AP"+i+" must be backed by independent PED and browser QA");
+for(let i=1;i<=5;i++)
+ assert.match(packet,new RegExp("^- \\[x\\] R"+i+"_","m"),"Release gate R"+i+" must be explicitly documented");
+assert.match(packet,/run 41392601965/,"Missing precise THPT Preview QA receipt");
+assert.match(packet,/run 41392602056/,"Missing precise Roadmap QA receipt");
+assert.match(packet,/Final-HEAD QA/,"Latest metadata HEAD still needs final CI recheck");
+
 const getBank=(path,name)=>{
  const w={};vm.runInNewContext(read(path),{window:w});
  const bank=w[name];assert(bank?.validate().valid,"Public bank schema invalid");
@@ -65,4 +71,4 @@ const publicFiles=[read("docs/assets/javascripts/thpt-g11-chi-reviewed-formative
  read("docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js")].join("\n");
 assert(!/THPT-G11-CHI-RD1-|SGK_CHAPTER_READINESS.*mastery_credit\s*:\s*true/i.test(publicFiles),
  "Protected RD1/mastery marker unexpectedly in public bank");
-console.log("PASS G11 ChI A6 guard: 46 unique PUBLIC IDs; independent PED1–6 academic PASS; AP1–5 and final exact-head browser QA still HOLD; staged 20-item voluntary selfcheck has no Mastery/Readiness credit.");
+console.log("PASS G11 ChI A6 guard: 46 unique PUBLIC IDs; independent PED1–6 academic PASS; AP1–5 and R1–R5 evidences archived; final exact-head QA must be SUCCESS on this metadata commit before merge; 20 voluntary items have no Mastery/Readiness credit.");
