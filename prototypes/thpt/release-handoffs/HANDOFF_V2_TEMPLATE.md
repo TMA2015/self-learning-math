@@ -5,6 +5,8 @@
 PACKET_ID: REPLACE_WITH_G11_SGK_CHI
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 1.0.0
+STANDARD_ID: SLM-THPT-QUALITY-ONE
+STANDARD_VERSION: 1.0.0
 ACADEMIC_SOURCE_BLOB: REPLACE_WITH_40_HEX
 REVIEW_RECEIPT_BLOB: REPLACE_WITH_40_HEX
 ACADEMIC_VERDICT: PENDING
@@ -45,6 +47,17 @@ Exact evidence for motivation, prerequisite terms, mathematical meaning before f
 | Q01 | REPLACE_WITH_EXACT_SCOPE | REPLACE_WITH_S1_SOURCE | REPLACE_WITH_REVIEW | REPLACE_WITH_R_AP_STEP |
 | Q02 | REPLACE_WITH_EXACT_SCOPE | REPLACE_WITH_OUTCOME_MATRIX | REPLACE_WITH_REVIEW | REPLACE_WITH_R_AP_STEP |
 <!-- Fill one non-placeholder row each for Q03 through Q18 before CONTENT_READY. New V2 CI requires exactly Q01..Q18, no duplicates. Never claim self-authored PASS from this map. -->
+
+## QUALITY_Q01_Q18_EVIDENCE
+
+Single normative source: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`. This is a traceability register, not a second quality standard. Provide a concrete lesson/outcome/source evidence pointer and independent reviewer receipt for **each** of Q01..Q18; RELEASE checks the same criterion in the rendered product, not mathematics again.
+
+| Q_ID | LESSON_OUTCOME_IDS | AUTHORING_EVIDENCE | INDEPENDENT_REVIEW_RECEIPT | RELEASE_RECHECK |
+| --- | --- | --- | --- | --- |
+| Q01 | REPLACE_SCOPE | REPLACE_S1 | REPLACE_RECEIPT | REPLACE_R_AP |
+| Q02 | REPLACE_SCOPE | REPLACE_MATRIX | REPLACE_RECEIPT | REPLACE_R_AP |
+
+<!-- Complete Q03 through Q18 with real evidence before CONTENT_READY. Template cannot be passed as a ready packet. -->
 
 ## REVIEW_SOURCE_RECEIPT
 Reviewer packet IDs, exact selected Permanent Sources v2.0, SGK/SBT S1, expected/reviewed lesson/outcome/item reconciliation, P0/P1/P2, Academic + PED verdicts, proof that aliases map to canonical source. **The separate immutable REVIEW_RECEIPT_PATH file must explicitly contain the exact ACADEMIC_SOURCE_BLOB string**; all IDs listed above must actually appear in the frozen academic source file.
