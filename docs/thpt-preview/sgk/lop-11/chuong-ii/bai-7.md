@@ -66,22 +66,26 @@ Vốn V_0=100 triệu đồng, lãi kép 2% mỗi kỳ và không nạp/rút: sa
 
 ## 4. Tự khắc phục lỗi thường gặp
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-B07-01"><summary>Tự khắc phục lỗi 1</summary>
+<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-B07-01"><summary>Công bội: chỉ số và dấu số hạng</summary>
 
 1. Nhận lỗi: dùng q^n thay q^(n−1).
 2. Viết u_n=u_1 q^(n−1) với n≥1.
 3. Nếu q âm, xác định dấu theo chẵn/lẻ của n−1.
 4. Thử u1=4,q=2 cho u6=128.
 5. Làm C02/P01, không suy công bội bằng cách chia cho 0.
+
+<p><a href="../luyen-tap/?item=THPT-G11-B07-C02">Quay lại câu C02 trong Core/Luyện tập</a></p>
 </details>
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-B07-02"><summary>Tự khắc phục lỗi 2</summary>
+<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-B07-02"><summary>Tổng cấp số nhân: trường hợp q=1</summary>
 
 1. Nhận lỗi: áp S_n=u1(1−q^n)/(1−q) khi q=1.
 2. Phân nhánh: q≠1 dùng công thức hữu hạn; q=1 dùng n·u1.
 3. Chú ý dấu nếu q<0 và số mũ n.
 4. Thử dãy 8,8,... có S9=72.
 5. Trở về C03/P04; tự cộng ba số hạng để kiểm tra.
+
+<p><a href="../luyen-tap/?item=THPT-G11-B07-C03">Quay lại câu C03 trong Core/Luyện tập</a></p>
 </details>
 
 ## 5. Tiếp tục
