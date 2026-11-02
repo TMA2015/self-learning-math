@@ -244,7 +244,7 @@ FIG-G11-SUPP-E02-02: two planes sharing intersection d, correct normal section w
 FIG-G11-SUPP-E02-03: four steps prism ABC.A'B'C' (base, parallel copy, matching edges, dashed hidden edges) and note skew vs right prism.
 Five actual source SVGs have been authored and linked below; their rendering and educational correctness await independent NotebookLM Q07/PED4 and later RELEASE AP3.
 
-## D6 — 7 five-step HELP/return-item remediation
+## D6 — 11 five-step HELP/return-item remediation
 ### HELP-G11-SUPP-E01-01 | skill_id=G11-E01-EXPONENTIAL_MODEL | return_item=THPT-G11-SUPP-E01-P01
 1. Chẩn đoán: Cộng số tăng cố định thay vì nhân 1+r?
 2. Bản chất: Mỗi năm nhân trên tổng năm trước.
@@ -296,7 +296,7 @@ Five actual source SVGs have been authored and linked below; their rendering and
 
 
 ## SOURCE-LOCKED NOTEBOOKLM REVIEW GATE — AUTHOR CANDIDATE ONLY
-Exactly 11 RD0 outcomes, 12 D2 guided examples, 21 D3 unique Core/Practice/Application, 6 D4 Written with 3 Anchor tags, 5 D5 original SVG files authored (independent reviewer verdict pending), 7 D6 HELP. One item ID per question, primary outcome in heading, protected RD1 absent from this public source. All items are original, not copies of source S1 text.
+Exactly 11 RD0 outcomes, 12 D2 guided examples, 21 D3 unique Core/Practice/Application, 6 D4 Written with 3 Anchor tags, 5 D5 original SVG files authored (independent reviewer verdict pending), 11 D6 HELP. One item ID per question, primary outcome in heading, protected RD1 absent from this public source. All items are original, not copies of source S1 text.
 Academic/PED independent PASS has **not been obtained** for this new SGK experiential supplement; must review using the five permanent THPT v2.1 sources and owner SGK/SBT originals. Q07/PED4 `ORIGINAL_SVG_CREATED_REVIEW_PENDING`, Q18 `NOTEBOOKLM_VERDICT_PENDING` prevent CONTENT_READY. SGK cross-chapter supplement scope does not create Chapter X nor replace independently tested SGK/Topic readiness. Release authorization NO.
 
 
