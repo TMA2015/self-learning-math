@@ -460,3 +460,12 @@ Q01 original S1 printed/PDF-index with SHA verified; Q02–Q06 and Q09–Q15 aut
 - `prototypes/thpt/review-packets/Temp_FIG-G11-YR-02_R00.svg` — original authored figure, review against lesson teaching claims and visual labels required.
 - `prototypes/thpt/review-packets/Temp_FIG-G11-YR-03_R00.svg` — original authored figure, review against lesson teaching claims and visual labels required.
 These are real SVG sources, **not merely specifications**, but authoring structural render validation and independent NotebookLM Q07/PED4 are still required before Academic/PED CONTENT_READY. RELEASE AP3 later checks the exact HTML/rasterized figure on devices.
+
+
+## D6 OUTCOME-COVERAGE ADDENDUM — actual recovery support for previously uncovered RD0 outcomes
+### HELP-G11-YR-INTEGRATE-01 | skill_id=G11-YR_CROSS_CHAPTER_REMEDIATION | return_item=THPT-G11-YR-INT-P01
+1. Chẩn đoán: Đếm tổng số câu sai mà không biết chỗ sai gốc.
+2. Bản chất: Mỗi câu có một outcome chính; quay lại phần nền tảng đúng chương rồi tự thử mới.
+3. Gỡ lỗi và giới hạn: Phân loại lỗi: điều kiện/định nghĩa, phương pháp, tính toán, biểu diễn/đơn vị, sau đó định tuyến.
+4. Tự thử khác câu gốc: Bài log sai do đối số âm ⇒ ôn log domain; bài hình sai do hình chiếu ⇒ ôn vuông góc.
+5. Quay lại câu canonical: Quay lại INT-P01 và chỉ hai đường khắc phục khác nhau.
