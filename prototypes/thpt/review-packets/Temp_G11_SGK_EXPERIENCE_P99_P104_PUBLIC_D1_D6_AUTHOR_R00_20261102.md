@@ -76,3 +76,41 @@ H.T1: tìm chân cọc, đỉnh cọc, đầu bóng; đánh dấu đối h và k
 Cọc phải vuông góc mặt đất và đo bóng cùng thời điểm, nền đủ phẳng; đo góc nhị diện phải theo góc phẳng chứ không đo đường chéo trong ảnh phối cảnh; khi tính thể tích phải dùng chiều cao vuông góc đáy, không tùy ý lấy cạnh bên. Nếu thiết kế bìa, tránh tự ý thêm nắp vào thùng không nắp.
 ### PED6 Tự thử trước Core
 1) Cọc cao 1m và bóng dài 1m: góc tia–mặt đất? 2) Có thể đo nhị diện bằng hai cạnh chéo bất kỳ trên bản vẽ không? 3) Một chóp và lăng trụ có chung đáy/cùng chiều cao, thể tích tỉ lệ thế nào? 4) Vì sao AA' phải nối với A' tương ứng mà không nối nhầm B'? Sau tự thử dùng D6 để sửa chỗ sai.
+
+
+## D2 — REASONED WORKED EXAMPLES (rationale, assumptions, checked results)
+### EX-G11-SUPP-E01-01 | skill_id=G11-E01-EXPONENTIAL_MODEL
+Một quần thể 500 cá thể tăng 2% hằng năm. Sau 3 năm mô hình rời rạc N=500·(1,02)^3≈530,60. Mỗi năm phải nhân trên số năm trước, không cộng 10 cố định. Nếu mô hình liên tục với k=0,02 thì N=500 exp(0,02t), số gần nhau nhưng không bằng đúng khi t=3; muốn trùng tại năm nguyên phải dùng k=ln(1,02).
+
+### EX-G11-SUPP-E01-02 | skill_id=G11-E01-HALF_LIFE
+Chu kì bán rã T=6 năm, lượng đầu A0=80g: sau 18 năm A=80·2^(-18/6)=10g. Nếu còn 20g thì 2^(-t/6)=1/4=2^(-2), t=12. Vì sao dùng log hoặc so sánh lũy thừa: thời gian nằm ở số mũ, không cộng trừ khối lượng mỗi năm.
+
+### EX-G11-SUPP-E01-03 | skill_id=G11-E01-PH_SCALE
+Nồng độ [H+]=10^(-5) mol/L → pH=5. Nếu giảm [H+] 100 lần → 10^(-7), pH=7. Giải thích dấu: pH=-log10[H+], khi [H+] nhỏ đi thì -log tăng. Không tính pH của [H+]=0 bằng công thức này.
+
+### EX-G11-SUPP-E01-04 | skill_id=G11-E01-RICHTER_SCALE
+Đại lượng có tỉ số biên độ I/S=1000 thì M=log10(1000)=3. Hai biên độ hơn kém 100 lần sẽ có chênh 2 đơn vị M; đây là so biên độ theo định nghĩa mô hình, không khẳng định năng lượng lớn hơn đúng 100 lần.
+
+### EX-G11-SUPP-E01-05 | skill_id=G11-E01-DECIBEL_SCALE
+I0=10^(-12) W/m², I=10^(-8) W/m² ⇒ L=10·log10(10^4)=40 dB. Nếu cường độ tăng 100 lần thì mức tăng thêm 20 dB, không viết 40×100 dB hay 'nghe to gấp 100'.
+
+### EX-G11-SUPP-E01-06 | skill_id=G11-E01-MODEL_ASSUMPTIONS
+Dự báo dân số với r=2% cố định trong 15 năm chỉ là mô hình có giả định điều kiện tăng không đổi. Nếu tỉ lệ sinh/di cư thay đổi, kết quả có thể sai đáng kể. Bài giải phải kèm đơn vị, mốc gốc, phép thay số, độ làm tròn và một giới hạn mô hình.
+
+### EX-G11-SUPP-E02-01 | skill_id=G11-E02-NET_CONSTRUCTION
+Lăng trụ tam giác có hai đáy là hai tam giác bằng nhau và ba mặt bên hình bình hành; lăng trụ đứng có mặt bên chữ nhật. Trước khi dán, ghép cặp cạnh cùng chiều dài và không chồng lên nhau. Nếu quên đáy thứ hai hoặc ghép nhầm cạnh không thể khép khối.
+
+### EX-G11-SUPP-E02-02 | skill_id=G11-E02-LINE_PLANE_MEASURE
+Cọc 1,5m thẳng đứng, bóng trên đất phẳng dài 2m: tanθ=1,5/2=0,75, θ≈36,87°. Tại sao tan chứ không sin: dữ liệu cho cạnh đối và kề, chưa cho cạnh huyền; góc là giữa tia và hình chiếu xuống đất.
+
+### EX-G11-SUPP-E02-03 | skill_id=G11-E02-DIHEDRAL_MEASURE
+Hai mặt (P),(Q) giao đường d. Chọn H∈d, trong mỗi mặt dựng một tia vuông góc d tại H. Góc giữa hai tia là góc phẳng nhị diện. Không lấy góc giữa hai cạnh tùy ý trên hình phối cảnh vì chúng có thể không vuông góc d.
+
+### EX-G11-SUPP-E02-04 | skill_id=G11-E02-VOLUME_MODEL
+Lăng trụ đứng đáy tam giác vuông cạnh 3cm,4cm, cao 5cm: Sđáy=6cm², V=30cm³. Chóp có cùng đáy/cao: V=10cm³. Hệ số 1/3 là quan hệ thể tích chóp, không dùng khi tính lăng trụ.
+
+### EX-G11-SUPP-E02-05 | skill_id=G11-E02-GEOGEBRA_REPRESENTATION
+Vẽ tam giác ABC, sao chép cùng dạng thành A'B'C' trên một mặt phẳng song song, nối AA',BB',CC'. Kiểm ba cạnh tương ứng song song; nếu tùy ý dịch bản sao làm cạnh bên xiên, không được gọi lăng trụ đứng. Cạnh khuất trong biểu diễn 2D dùng nét đứt và gắn nhãn.
+
+### EX-G11-SUPP-E02-06 | skill_id=G11-E02-LINE_PLANE_MEASURE
+Để xác định góc nhị diện tạo bởi vạch a trên đất và một tấm dựng qua cọc AB, hạ H là hình chiếu vuông góc của chân A trên a. Tam giác ABH vuông tại A nên tan∠BHA=AB/AH. Chỉ lấy AB/độ dài vạch a là nhầm đoạn không thuộc tam giác đo.
