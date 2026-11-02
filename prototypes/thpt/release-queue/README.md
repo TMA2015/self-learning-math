@@ -1,6 +1,6 @@
 # THPT — Quy trình hai nhánh, một checklist
 
-> **Single-standard governance proposal (owner review pending, 02/11/2026):** [`SLM-THPT-QUALITY-ONE`](../THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md) is the ONE planned normative THPT content-quality rubric Q01–Q18 for both lanes; D1–D6 and PED1–PED6 are authoring evidence, AP1–AP5 and R1–R5 are rendered/technical evidence of the **same** quality standard. Until owner approval/merge this is DRAFT, not a new content release gate. Existing V2 handoff, S1, Sources 08/06/07 and private RD1 protections remain binding. Don’t call green source CI Academic PASS or resume Math release automation.
+> **Single-standard governance proposal (owner review pending, 02/11/2026):** Canonical path `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`.  [`SLM-THPT-QUALITY-ONE`](../THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md) is the ONE planned normative THPT content-quality rubric Q01–Q18 for both lanes; D1–D6 and PED1–PED6 are authoring evidence, AP1–AP5 and R1–R5 are rendered/technical evidence of the **same** quality standard. Until owner approval/merge this is DRAFT, not a new content release gate. Existing V2 handoff, S1, Sources 08/06/07 and private RD1 protections remain binding. Don’t call green source CI Academic PASS or resume Math release automation.
 
 
 **Repository duy nhất:** TMA2015/self-learning-math. Đây là kho MANIFEST và bằng chứng; không phải kho nhân bản câu hỏi, không có backend, không có held-out Readiness keys.
