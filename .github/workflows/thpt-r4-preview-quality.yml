@@ -288,6 +288,11 @@ jobs:
         run: node scripts/test-thpt-g10-reviewed-selfcheck-data.cjs
       - name: G10 9-chapter source-locked Final Submit · phone/tablet/desktop
         run: node scripts/test-thpt-g10-reviewed-selfcheck-browser.cjs
+      - name: G11 ChI R03 source-locked Final Submit · 20 Written / three viewports
+        run: |
+          node --check docs/assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js
+          node --check scripts/test-thpt-g11-chi-selfcheck-browser.cjs
+          node scripts/test-thpt-g11-chi-selfcheck-browser.cjs
       - name: Browser smoke test · desktop / iPhone / iPad simulation
         run: |
           python -m http.server 8765 --directory site > /tmp/thpt-r4-combined-http.log 2>&1 &
