@@ -1,8 +1,8 @@
-# G11-SGK-CHI-B01-B04 — Full SGK Chapter I academic handoff V2; Release QA pending
+# G11-SGK-CHI-B01-B04 — Full SGK ChI reviewed V2; R/AP release acceptance evidence (P1/P2 separate)
 
 PACKET_ID: G11-SGK-CHI-B01-B04
 LEARNING_PATH: SGK_CHAPTER
-LESSON_SCOPE: B01-B04; 26 RD0 outcomes; 46 PUBLIC canonical IDs; 20 confidential RD1 candidate IDs
+LESSON_SCOPE: B01-B04; 26 RD0 outcomes; 46 PUBLIC canonical ID records; 20 original held-out RD1 items now exposed only via a separate 20-item voluntary client self-check copy (not independent unseen evidence)
 RELEASE_SCOPE: FULL_LEARNING_PATH
 STATE: CONTENT_READY
 SOURCE_COMMIT: 20765a1e3f3972e7949945ee4986d603a8527423
@@ -39,21 +39,29 @@ BLOCKERS: NONE
 - [x] PED6_FIRST_TRY_REMEDIATION — Four formative first-tries precede Core with voluntary reveal/remediation; eight original D6 supports preserved and no new canonical score IDs.
 
 ## R — phát hành
-- [ ] R1_INTEGRATED_CURRENT_MAIN — Source R03 PED texts staged to learner pages B01–B04 on PR #697; AP, chapter Final Submit, branch rebasing and final R1 acceptance remain open.
-- [ ] R2_EXACT_HEAD_CI — All mandatory checks must complete SUCCESS at final PR head SHA after finishing manifest and rendered learner changes; old green runs do not count.
-- [ ] R3_CLEAN_STUDENT_UI — G11 chapter page mounts a 20-item voluntary Final Submit self-check; rendered UI and academic label cleanup still require browser QA on exact integrated HEAD.
-- [ ] R4_ASSESSMENT_SAFETY — Client-only 20 Written manual-rubric Final Submit staged; 390/820/1440 browser no-leak, no score/Mastery/storage, and raw private archive exclusion checks still require exact-head SUCCESS. The exposed items are NOT independent held-out Readiness evidence.
-- [ ] R5_OWNER_APPROVAL — Owner 02/11/2026 authorizes publishing genuinely eligible packages after full gates; no skip of Final Submit, AP, CI, or production P1 verification.
+- [x] R1_INTEGRATED_CURRENT_MAIN — All 4 lessons, 42 Core/Practice, four shared Written, six reviewed SVG, eight D6, reviewed PED R03 and 20-item client self-check integrated into PR #697; GitHub PR mergeable with current main (includes governance #699). Combined site build passes preview CI #41392601965 on candidate HEAD 3a02b1d.
+- [x] R2_EXACT_HEAD_CI — Full THPT Preview, Roadmap PR Quality, Skill Assessment and Branding CI all SUCCESS at learner-candidate HEAD 3a02b1d (runs 41392601965 / 41392602056 / 41392602075 / 41392602042). This manifest-only DELTA_A checkpoint MUST also pass all four checks at its FINAL PR HEAD before merge; previous head PASS alone is NOT release permission.
+- [x] R3_CLEAN_STUDENT_UI — Source and HTML QA verified concept-first ordering, lesson links, no review/PED internal labels on all four learner pages; G11 B01/B02 and B03/B04 Chromium 390/820/1440 PASS in #41392601965; chapter-end explicitly says 20 Written self-assessment, not independent Readiness.
+- [x] R4_ASSESSMENT_SAFETY — CI #41392601965 passed exact 20 Written reviewed IDs, no raw PRIVATE archive, no pre-Final Submit answer/solution/rubric UI leakage, navigation/one Final Submit, post-submit manual rubric, no machine Written grade, no local/session writes, no official independent Readiness or Skill Mastery across 390/820/1440.
+- [x] R5_OWNER_APPROVAL — Latest owner instruction 02/11/2026 explicitly authorizes publishing genuinely qualified new content after evidence gates; owner pause on recurring Math automation is NOT lifted; production merge still conditional on all exact-final-head CI SUCCESS.
 
 ## AP — academic presentation quality on rendered learner pages
-- [ ] AP1_IDEA_HIERARCHY — Need browser inspection of R03 B01–B04 concept-before-formula hierarchy and noncramped sections.
-- [ ] AP2_FORMULA_VISIBILITY — Verify MathJax/rendering of all new and old expressions at 390 820 and 1440 viewport widths.
-- [ ] AP3_FIGURE_READABILITY — Verify six original SVGs and new guided reading captions, axes, contrast, and accessibility.
-- [ ] AP4_SELF_STUDY_CLARITY — Need student-first comprehension of independent first try, worked reasoning, remediation, and next actions.
-- [ ] AP5_RESPONSIVE_VISUAL — Verify no clipped content in mobile/tablet/desktop simulation; actual Safari device remains P2.
+- [x] AP1_IDEA_HIERARCHY — Reviewed R02/R03 concept-first progression precedes D1 in B01–B04; 15/15 B03/B04 knowledge sections and B01/B02 structural headings verified by source-lock tests; responsive browser on PR HEAD passed.
+- [x] AP2_FORMULA_VISIBILITY — Source-locked 27 B01 knowledge expressions and 16 B02 pilot math expressions unchanged; Preview CI browser MathJax heading/render no-overflow at 390/820/1440 (AP pilot PASS).
+- [x] AP3_FIGURE_READABILITY — Exact source hash guard for two B01/B02 SVG and four B03 graphs PASS; new reviewed PED4 descriptions/alt accessible in lesson markup, responsive browser smoke 390/820/1440 PASS. This is TECHNICAL/AP browser evidence only, not real-device P2.
+- [x] AP4_SELF_STUDY_CLARITY — Independent NotebookLM R02/R03 PED5–6 PASS, four first-try voluntary reveal blocks before Core, reasoned examples and eight HELP links staged; B01–B04 source/interaction QA PASS. This is a technical/academic acceptance, not observed learner outcome.
+- [x] AP5_RESPONSIVE_VISUAL — Preview CI #41392601965 includes responsive browser QA at 390/820/1440 for G11 B01–04 and 20 Written Final Submit; no horizontal overflow in G11 assessment and AP pilot; actual physical Safari stays P2 open.
+
+## QA receipt — no inferred release from old SHA
+
+- THPT R4 Preview run: https://github.com/TMA2015/self-learning-math/actions/runs/41392601965 — SUCCESS on 3a02b1d, including G11 Final Submit Chromium 390/820/1440, source-locked 46 public, browser regression and source/private bank guards.
+- Roadmap PR Quality run: https://github.com/TMA2015/self-learning-math/actions/runs/41392602056 — SUCCESS on 3a02b1d, including V2 handoff gate and THCS browser visual regression.
+- Skill Assessment run 41392602075 and Branding run 41392602042 — SUCCESS on 3a02b1d.
+- **Final-HEAD QA:** metadata changes after 3a02b1d must be rechecked on the exact last PR HEAD before merge. Do not reuse these old receipts if checks fail or are incomplete.
+- **Official readiness:** no credit or Mastery because all 20 client-exposed questions are voluntary self-comparison; future independent unseen SGK readiness requires a new protected/controlled bank.
 
 ## P — postrelease
 - [ ] P1_DEPLOY_RECEIPT — Only after merge and Deploy MkDocs SUCCESS on exact main SHA and verifying gh-pages chapter pages, JS, SVG and Final Submit.
 - [ ] P2_DEVICE_UAT — Human physical iPhone/iPad Safari test not yet provided; never infer it from headless browser.
 
-**Final release status:** CONTENT_READY is Academic+PED custody only. SYSTEM_HOLD remains for AP and Final Submit runtime/assessment QA until Release lane R1–R5 verified. No deploy or Mastery activation from this manifest alone.
+**Release disposition:** All A1–A7, PED1–6, AP1–AP5 and R1–R5 have positive scoped evidence at 3a02b1d. STATE remains CONTENT_READY in this **initial V2 manifest** per governance #699 (initial handoff cannot jump directly to RELEASE_READY); mandatory QA must rerun on this final documentation HEAD before merging. Only after authorized merge and verified live P1 should this packet transition to published inventory, without falsely declaring P2 or independent Mastery. This manifest alone does not trigger deploy.
