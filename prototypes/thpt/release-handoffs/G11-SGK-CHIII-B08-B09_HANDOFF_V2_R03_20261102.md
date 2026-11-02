@@ -130,24 +130,24 @@ Two B08–B09 WHY/meaning-first/condition bridges; D2 10 reasoned worked example
 
 | Q_ID | AFFECTED_LESSON_OUTCOME_IDS | AUTHORING_EVIDENCE | INDEPENDENT_REVIEW_RECEIPT | RELEASE_RECHECK |
 | --- | --- | --- | --- | --- |
-| Q01 / B08–B09 / SGK B08 58–61/B09 62–68/cuối ChIII 69; SBT Tập 1 printed B08 44–46 (PDF45–47), B09 47–49 (PDF48–50), cuối ChIII 50–52 (PDF51–53), hướng dẫn giải 128–129; original S1 PDF SHA256 fb529210… / AUTHOR direct S1 PDF + R01 scope receipt / R1 source fidelity |
-| Q02 / 14 locked outcome IDs / 14/14 original R01 full outcome coverage; integrated outcome documented in D1/D2 and held-out RD1 / Owner independent R01 Academic PASS / R1/AP4 lesson/outcome |
-| Q03 / B08–B09 / B08 grouping, [a,b) class boundaries, width, frequencies and information loss; B09 midpoint representative mean, cumulative frequencies, median/quartiles interpolation, mode and equal-width conditions; original R01 unchanged, R02 concept-first WHY / R01 Academic + R02 concept-first PED PASS / AP1/AP2 MathJax |
-| Q04 / 10 D2 examples / R01 original 10 D2 worked examples with R02 choice/limits commentary / R01 Academic + R02 PED5 PASS / AP1/AP4 why-method |
-| Q05 / 28 public formative / R01 D3 full Core/Practice coverage and source primary skill IDs / R01 whole chapter Academic PASS / R1/AP4 practice |
-| Q06 / 4 Written items / Original canonical Written/Anchor including one shared item ID per placement and /4 rubric / R01 Academic source fidelity / R1/R4 Written |
-| Q07 / 3 original figures / D5 3 SVG and R02 3 described-visual explanations / R01 graphics plus R02 PED4 PASS / AP3 graphics QA |
-| Q08 / 6 original D6 help / 6 original source HELP targets, error-to-remediation links, no new duplications / R01 full D1–D6 PASS / AP4 help links |
-| Q09 / B08–B09 / 2 lesson WHY motivations before formal D1 / Owner R02 PED1 PASS / AP1/AP4 flow |
-| Q10 / B08–B09 / Prerequisites/sign conventions and previously learned conditions made explicit in R02 concept-first sections / Owner R02 PED2 PASS / AP4 prerequisite clarity |
-| Q11 / B08–B09 / Intuitive meaning explained before formula and application limits / Owner R02 PED3 PASS / AP1/AP4 concept first |
-| Q12 / 3 SVG / 3 source FIG IDs interpreted in R02 in addition to mathematical drawings / Owner R02 PED4 PASS / AP3/AP4 visual |
-| Q13 / 10 D2 / 10 reasoned worked examples explaining chosen method and invalid cases / Owner R02 PED5 PASS / AP4 examples |
-| Q14 / 2 pre-Core first tries / 2 self-reveal voluntary nonmastery tries with 6 existing D6 fallback links / Owner R02 PED6 PASS / AP4/R4 reveal safety |
-| Q15 / 32 public IDs / Canonical unique source item headings and exact 32 item-outcome-role rows; D4 Anchor role only / R01 Academic and R03 source parity / R1/R4 ID consistency |
-| Q16 / 21 private RD1 / Private 21 item custody SHA256 d9319c826cd0…, no stems or keys on GitHub, CLIENT_SELF_CHECK_NO_MASTERY / R01 protected RD1 source receipt / R3/R4 Final Submit |
-| Q17 / 2 lesson SGK path / 2 lessons complete D1–D6, Core, Practice, Written and protected separate SGK_CHAPTER_READINESS / R01 Academic all lesson coverage / AP4/R1 chapter |
-| Q18 / R01/R02/R03 exact sources / Original R01 ef7dbfbd, reviewed R02 0b0fe33d, S1-only equivalent R03 4ea8df2c; primary PDF+delta B receipt / Owner independent R01/R02 and author source parity / R1/R2 immutable SHA |
+| Q01 | B08–B09 | SGK B08 58–61/B09 62–68/cuối ChIII 69; SBT Tập 1 printed B08 44–46 (PDF45–47), B09 47–49 (PDF48–50), cuối ChIII 50–52 (PDF51–53), hướng dẫn giải 128–129; original S1 PDF SHA256 fb529210… | AUTHOR direct S1 PDF + R01 scope receipt | R1 source fidelity |
+| Q02 | 14 locked outcome IDs | 14/14 original R01 full outcome coverage; integrated outcome documented in D1/D2 and held-out RD1 | Owner independent R01 Academic PASS | R1/AP4 lesson/outcome |
+| Q03 | B08–B09 | B08 grouping, [a,b) class boundaries, width, frequencies and information loss; B09 midpoint representative mean, cumulative frequencies, median/quartiles interpolation, mode and equal-width conditions; original R01 unchanged, R02 concept-first WHY | R01 Academic + R02 concept-first PED PASS | AP1/AP2 MathJax |
+| Q04 | 10 D2 examples | R01 original 10 D2 worked examples with R02 choice/limits commentary | R01 Academic + R02 PED5 PASS | AP1/AP4 why-method |
+| Q05 | 28 public formative | R01 D3 full Core/Practice coverage and source primary skill IDs | R01 whole chapter Academic PASS | R1/AP4 practice |
+| Q06 | 4 Written items | Original canonical Written/Anchor including one shared item ID per placement and /4 rubric | R01 Academic source fidelity | R1/R4 Written |
+| Q07 | 3 original figures | D5 3 SVG and R02 3 described-visual explanations | R01 graphics plus R02 PED4 PASS | AP3 graphics QA |
+| Q08 | 6 original D6 help | 6 original source HELP targets, error-to-remediation links, no new duplications | R01 full D1–D6 PASS | AP4 help links |
+| Q09 | B08–B09 | 2 lesson WHY motivations before formal D1 | Owner R02 PED1 PASS | AP1/AP4 flow |
+| Q10 | B08–B09 | Prerequisites/sign conventions and previously learned conditions made explicit in R02 concept-first sections | Owner R02 PED2 PASS | AP4 prerequisite clarity |
+| Q11 | B08–B09 | Intuitive meaning explained before formula and application limits | Owner R02 PED3 PASS | AP1/AP4 concept first |
+| Q12 | 3 SVG | 3 source FIG IDs interpreted in R02 in addition to mathematical drawings | Owner R02 PED4 PASS | AP3/AP4 visual |
+| Q13 | 10 D2 | 10 reasoned worked examples explaining chosen method and invalid cases | Owner R02 PED5 PASS | AP4 examples |
+| Q14 | 2 pre-Core first tries | 2 self-reveal voluntary nonmastery tries with 6 existing D6 fallback links | Owner R02 PED6 PASS | AP4/R4 reveal safety |
+| Q15 | 32 public IDs | Canonical unique source item headings and exact 32 item-outcome-role rows; D4 Anchor role only | R01 Academic and R03 source parity | R1/R4 ID consistency |
+| Q16 | 21 private RD1 | Private 21 item custody SHA256 d9319c826cd0…, no stems or keys on GitHub, CLIENT_SELF_CHECK_NO_MASTERY | R01 protected RD1 source receipt | R3/R4 Final Submit |
+| Q17 | 2 lesson SGK path | 2 lessons complete D1–D6, Core, Practice, Written and protected separate SGK_CHAPTER_READINESS | R01 Academic all lesson coverage | AP4/R1 chapter |
+| Q18 | R01/R02/R03 exact sources | Original R01 ef7dbfbd, reviewed R02 0b0fe33d, S1-only equivalent R03 4ea8df2c; primary PDF+delta B receipt | Owner independent R01/R02 and author source parity | R1/R2 immutable SHA |
 
 ## REVIEW_SOURCE_RECEIPT
 
