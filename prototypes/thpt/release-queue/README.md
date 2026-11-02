@@ -2,6 +2,12 @@
 
 **Repository duy nhất:** TMA2015/self-learning-math. Đây là kho MANIFEST và bằng chứng; không phải kho nhân bản câu hỏi, không có backend, không có held-out Readiness keys.
 
+## Handoff V2 sau quyết định chủ dự án 02/11/2026
+
+Trước khi nhận gói học liệu mới, cả hai nhánh **bắt buộc** đọc [THPT two-lane source-locked contract v2](../THPT_TWO_LANE_SOURCE_LOCKED_HANDOFF_CONTRACT_v2_20261102.md) và `AGENTS.md`. Nhánh A = học thuật (đầy đủ SGK/SBT, D1–D6, PED1–PED6, NotebookLM Academic + Pedagogical PASS đúng snapshot, danh sách ID, delta); nhánh B = tích hợp, AP1–AP5 trên UI, Final Submit, R1–R5, P1/P2. Hai nhánh trao đổi bằng một handoff canonical trong `release-handoffs/`, một manifest `ready/PACKET_ID.md` và REGISTER một dòng; biên bản NotebookLM không tự biến thành manifest.
+Các manifest ready **tạo mới** phải khai báo `HANDOFF_PROTOCOL: THPT-TWO-LANE-V2` và đường dẫn/blob SHA của nguồn và review; CI `scripts/test-thpt-handoff-gate-v2.cjs` so khớp byte nguồn/receipt/manifest, xác nhận source blob được receipt nêu đích danh, ID thực sự xuất hiện trong nguồn, mapping và PED1–PED6 được ký đủ; không cấp PASS học thuật. CI không thay independent review. Manifest lịch sử không bị gán PASS hồi tố.
+**Math release automation đang PAUSED theo chủ dự án ngày 02/11; không tự merge/deploy/tái kích hoạt.** Những gói G11 tác giả đã báo PASS nhưng chưa có `ready/` manifest thực thì trả `BLOCKED_BY_AUTHORING`, không tự phát hành từ PR tác giả.
+
 ## Hiệu lực và tự tiếp nối cuộc trò chuyện
 
 **Nguồn vận hành chính thức sau khi merge PR #622:** Có hiệu lực cho mọi lần mở chat/nhánh mới của dự án THPT. Trước khi thực hiện, kiểm tra trạng thái GitHub thực tế, đọc `REGISTER.md`, manifest liên quan, checkpoint hiện hành, sau đó chọn đúng vai trò biên soạn hoặc phát hành. Các nguồn 08 (kiến trúc), 06 (file/prompt NotebookLM), 07 (delta) và SGK/SBT S1 giữ nguyên thẩm quyền, không bị quy trình này thay thế.

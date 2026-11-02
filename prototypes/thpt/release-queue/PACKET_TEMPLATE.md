@@ -7,6 +7,17 @@ STATE: INVENTORY
 SOURCE_COMMIT: 0000000000000000000000000000000000000000
 REVIEW_RECEIPT: CHUA_CO
 CURRENT_PR: CHUA_CO
+# BẮT BUỘC với gói READY tạo mới từ 02/11/2026; chưa áp dụng ngược packet lịch sử
+HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
+AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/REPLACE_PACKET_HANDOFF.md
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/REPLACE_SOURCE.md
+ACADEMIC_SOURCE_BLOB: REPLACE_WITH_REAL_GIT_BLOB_SHA
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/REPLACE_NOTEBOOKLM_RECEIPT.md
+REVIEW_RECEIPT_BLOB: REPLACE_WITH_REAL_GIT_BLOB_SHA
+ACADEMIC_VERDICT: PASS_ON_LOCKED_SNAPSHOT
+PEDAGOGICAL_VERDICT: PASS_ON_LOCKED_SNAPSHOT
+ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
+BLOCKERS: OPEN_UNTIL_SOURCE_VERIFIED
 
 ## A — biên soạn/review
 - [ ] A1_SOURCE_SNAPSHOT — chứng cứ snapshot/SGK/NotebookLM/ID/delta tương ứng
@@ -16,6 +27,15 @@ CURRENT_PR: CHUA_CO
 - [ ] A5_D1_D6_SCOPE — chứng cứ snapshot/SGK/NotebookLM/ID/delta tương ứng
 - [ ] A6_DELTA_RESOLVED — chứng cứ snapshot/SGK/NotebookLM/ID/delta tương ứng
 - [ ] A7_PUBLIC_PRIVATE_BOUNDARY — chứng cứ snapshot/SGK/NotebookLM/ID/delta tương ứng
+
+## PED — Self-learning pedagogy evidence (authoring before CONTENT_READY)
+- [ ] PED1_MOTIVATION — Đưa ra vấn đề, động cơ xuất hiện khái niệm
+- [ ] PED2_PREREQUISITES — Dẫn nhập thuật ngữ/điều kiện nền, không dùng từ mới chưa giải thích
+- [ ] PED3_MEANING_FIRST — Bản chất trước thuật toán/kí hiệu/công thức
+- [ ] PED4_EXPLAINED_VISUAL — SVG/bảng/đồ thị có hướng dẫn đọc và lý do sử dụng
+- [ ] PED5_REASONED_EXAMPLES — Ví dụ giải thích lựa chọn cách làm, ràng buộc và lỗi thường gặp
+- [ ] PED6_FIRST_TRY_REMEDIATION — Tự thử có đích, D6 khắc phục theo tiền đề
+**Lưu ý:** PED reviewer độc lập PASS đúng source khóa và receipt đối chiếu trong AUTHOR_HANDOFF; checklist tick không tự chứng minh. Bằng chứng PED lưu cùng source; các manifest lịch sử giữ scope cũ.
 
 ## R — phát hành
 - [ ] R1_INTEGRATED_CURRENT_MAIN — chứng cứ QA exact commit, UI, assessment và quyền owner

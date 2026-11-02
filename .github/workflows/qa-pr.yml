@@ -25,6 +25,13 @@ jobs:
           fetch-depth: 0
       - name: Validate canonical release manifests (no academic PASS issued)
         run: node scripts/test-thpt-release-queue.cjs
+      - name: Enforce V2 source-locked handoff for newly added READY manifests
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          node scripts/test-thpt-handoff-gate-v2.cjs --self-test
+          node scripts/test-thpt-handoff-gate-v2.cjs
       - name: Guard safe PR path classifier
         run: node scripts/test-thpt-pr-scope.cjs --self-test
       - name: Classify actual changed paths (three-dot merge base)
