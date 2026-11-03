@@ -1,6 +1,6 @@
 # Bài 26. Khoảng cách
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG VII · SGK KNTT TẬP 2</p><p class="thpt-r4-lead">Hiểu WHY → khái niệm và lý do → hình minh họa có hướng dẫn đọc → Tự thử trước Core → ví dụ suy luận → tự thực hành và khắc phục. Không ghi Skill Mastery.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương VII</a><a href="../luyen-tap/">Core/Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra tự đối chiếu</a></nav></div>
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG VII · SGK KNTT TẬP 2</p><p class="thpt-r4-lead">Hiểu lý do cần học → khái niệm và lý do → hình minh họa có hướng dẫn đọc → Tự thử trước Core → ví dụ suy luận → tự thực hành và khắc phục. Không ghi Skill Mastery.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương VII</a><a href="../luyen-tap/">Core/Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra tự đối chiếu</a></nav></div>
 
 ## 1. Kiến thức SGK và ví dụ có suy luận
 
@@ -75,7 +75,7 @@ Chóp có SA=5, hình chiếu S trên đáy là H, AH=4: SH=3. Tại sao chiều
 
 ## 2. Tự khắc phục lỗi
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVII-B26-01"><summary><strong>Nhận diện lỗ hổng:</strong> Nhầm độ dài cạnh xiên với chiều cao ngắn nhất.</summary><ol><li><strong>Nhận diện lỗ hổng:</strong> Nhầm độ dài cạnh xiên với chiều cao ngắn nhất.</li><li><strong>Nhắc đúng bản chất:</strong> Chiều cao chóp là đoạn từ đỉnh vuông góc mặt đáy.</li><li><strong>Nhìn lại kiến thức và hình:</strong> Đọc lại phần WHY/WHAT/HOW của B26, tự phát biểu điều kiện bằng lời và kiểm tra đúng hình SVG của bài, không suy luận từ phối cảnh.</li><li><strong>Tự luyện có hướng dẫn:</strong> Cạnh bên 5, hình chiếu dài 4, chiều cao? <strong>Sau khi tự làm mới đối chiếu:</strong> 3.</li><li><strong>Quay về câu gốc:</strong> <code>THPT-G11-CHVII-B26-C06</code>; giải lại và giải thích mỗi bước. HELP chỉ hiện sau nộp câu *luyện tập*, tuyệt đối không hiện trong RD1 trước Final Submit.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVII-B26-C06">Quay lại câu canonical THPT-G11-CHVII-B26-C06</a></p></details>
+<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVII-B26-01"><summary><strong>Nhận diện lỗ hổng:</strong> Nhầm độ dài cạnh xiên với chiều cao ngắn nhất.</summary><ol><li><strong>Nhận diện lỗ hổng:</strong> Nhầm độ dài cạnh xiên với chiều cao ngắn nhất.</li><li><strong>Nhắc đúng bản chất:</strong> Chiều cao chóp là đoạn từ đỉnh vuông góc mặt đáy.</li><li><strong>Nhìn lại kiến thức và hình:</strong> Đọc lại phần vì sao cần học, khái niệm và cách lập luận của B26, tự phát biểu điều kiện bằng lời và kiểm tra đúng hình SVG của bài, không suy luận từ phối cảnh.</li><li><strong>Tự luyện có hướng dẫn:</strong> Cạnh bên 5, hình chiếu dài 4, chiều cao? <strong>Sau khi tự làm mới đối chiếu:</strong> 3.</li><li><strong>Quay về câu gốc:</strong> <code>THPT-G11-CHVII-B26-C06</code>; giải lại và giải thích mỗi bước. HELP chỉ hiện sau nộp câu *luyện tập*, tuyệt đối không hiện trong RD1 trước Final Submit.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVII-B26-C06">Quay lại câu canonical THPT-G11-CHVII-B26-C06</a></p></details>
 
 ## 3. Tiếp tục
 
