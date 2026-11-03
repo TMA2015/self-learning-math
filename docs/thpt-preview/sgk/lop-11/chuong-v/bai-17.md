@@ -48,7 +48,7 @@ Ví dụ f(x)=x³+x−1: f(0)=−1, f(1)=1, và f là đa thức liên tục tr�
 
 ## 2. Ví dụ có suy luận và điều kiện
 
-### B17 — D2. Bốn ví dụ độc lập
+### Bốn ví dụ độc lập
 
 **EX-G11-B17-01 — Tham số ghép nhánh.** Cho f(x)=x+1 nếu x<1; f(x)=m nếu x≥1. Hai phía tại 1 lần lượt tiến tới 2 và m, f(1)=m. Để liên tục tại 1 cần và đủ m=2.
 
