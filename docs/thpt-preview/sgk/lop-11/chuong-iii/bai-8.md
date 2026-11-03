@@ -35,19 +35,19 @@ Với các nhóm [0;10), [10;20), [20;30), số 10 thuộc nhóm nào? Em hãy g
 
 ## 2. Ví dụ
 
-### VD-G11-B08-01 — Đếm biên
+### Ví dụ 1 — Đếm biên
 
 Dữ liệu 9,10,10,19,20 với nhóm [0;10),[10;20),[20;30) cho tần số [1,3,1]; số 10 ở nhóm 2, số 20 ở nhóm 3.
 
-### VD-G11-B08-02 — Bảng nhóm
+### Ví dụ 2 — Bảng nhóm
 
 Mẫu 2,4,5,7,9,11,14,15 ghép [0;5),[5;10),[10;15),[15;20) cho [2,3,2,1], n=8.
 
-### VD-G11-B08-03 — Đọc tỉ lệ
+### Ví dụ 3 — Đọc tỉ lệ
 
 Bảng có tần số [6,9,5], n=20: nhóm thứ hai chiếm 45%, không thể kết luận mỗi cá thể có giá trị bằng trung điểm nhóm.
 
-### VD-G11-B08-04 — Nhóm rộng không đều
+### Ví dụ 4 — Nhóm rộng không đều
 
 [0;5),[5;20),[20;30) đều là các nhóm hợp lệ khi đề bài quy định, với các độ rộng 5,15,10; không tự áp công thức mốt nhóm cùng độ rộng.
 
