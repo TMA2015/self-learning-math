@@ -8,11 +8,11 @@
 
 **Cách đọc và phát hiện:** Hình B19 không phải bảng công thức: hãy đọc từ trái qua phải để tính 2³=8, rồi đọc ngược để thấy log₂8=3 trả lời câu hỏi “số mũ nào?”. Kiểm điều kiện cơ số, đối số ngay dưới sơ đồ.
 
-### 1.1. Vấn đề dẫn đến lôgarit: ta muốn tìm **số mũ** (WHY)
+### 1.1. Vấn đề dẫn đến lôgarit: ta muốn tìm **số mũ**
 
 Nhân 2 liên tiếp: `2¹=2, 2²=4, 2³=8`. Nếu đã biết kết quả 8, hỏi **cần bao nhiêu lần nhân đôi để được 8?**, câu trả lời là 3. Với 10 hoặc 7, câu hỏi khó hơn: `2^x=10` thì x bằng bao nhiêu? Không thể chỉ thử số nguyên. Để trả lời loại câu hỏi “số mũ nào tạo ra số này?”, ta đặt ra **lôgarit**.
 
-### 1.2. Lôgarit là gì (WHAT), trước khi học quy tắc
+### 1.2. Lôgarit là gì, trước khi học quy tắc
 
 Với `a>0, a≠1, b>0`, **`log_a b` là số thực x duy nhất sao cho `a^x=b`**. Viết tương đương `log_a b=x ⇔ a^x=b`. `a` là **cơ số**, `b` là **đối số**; chúng giữ vai trò khác nhau. Ví dụ `log₂8=3` vì `2³=8`; `log₃(1/9)=−2` vì `3^{-2}=1/9`. Logarit **không phải** phép chia b/a.
 
@@ -38,7 +38,7 @@ Nếu `log₅125=3`, em phát biểu lại một đẳng thức lũy thừa. Gi�
 
 ## 2. Ví dụ có suy luận
 
-### D2 — Giáo viên làm mẫu B19
+### Ví dụ mẫu có giải thích
 
 **EX-G11-B19-01 (đọc đúng ý nghĩa).** `log₄(1/16)=−2` vì `4^{-2}=1/16`. **Không lấy** `1/16÷4`.
 
