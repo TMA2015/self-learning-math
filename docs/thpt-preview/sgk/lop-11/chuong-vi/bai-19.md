@@ -4,7 +4,7 @@
 
 ## 1. Kiến thức SGK — hiểu bản chất trước công thức
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVI-B19-01_R00.svg" alt="B19 — trực quan hình thành khái niệm"/><figcaption>Hình D5 — quan sát trước khi tính: B19 — trực quan hình thành khái niệm</figcaption></figure>
+<figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVI-B19-01_R00.svg" alt="B19 — trực quan hình thành khái niệm"/><figcaption>Hình minh họa — quan sát trước khi tính: B19 — trực quan hình thành khái niệm</figcaption></figure>
 
 **Cách đọc và phát hiện:** Hình B19 không phải bảng công thức: hãy đọc từ trái qua phải để tính 2³=8, rồi đọc ngược để thấy log₂8=3 trả lời câu hỏi “số mũ nào?”. Kiểm điều kiện cơ số, đối số ngay dưới sơ đồ.
 
