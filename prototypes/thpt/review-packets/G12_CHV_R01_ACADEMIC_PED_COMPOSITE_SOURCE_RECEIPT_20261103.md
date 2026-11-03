@@ -4,7 +4,7 @@ STANDARD_VERSION: 1.1.0
 PACKET_ID: G12-SGK-CHV-B14-B17-R01
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 CANONICAL_R01_SOURCE_PATH: prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md
-CANONICAL_R01_SOURCE_GIT_BLOB: 1a16eb5d7f82b5571628dfe22d35b0a3b0ac7664
+CANONICAL_R01_SOURCE_GIT_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a
 FROZEN_R00_SOURCE_GIT_BLOB: 9e73f50efdf237ebdae8e64572e45b9b22e8dbbd
 ORIGINAL_INDEPENDENT_REVIEW_GIT_BLOB: 0f0ef597a258ce6372453d2028d239d1067649ec
 ORIGINAL_REVIEW_VARIANT_GIT_BLOB: 55636e86dbb4c326a08c4a79be465d9c169ddeca
@@ -29,7 +29,7 @@ AUTHORING_SOURCE_GATE: SUBJECT_TO_ONE_V2_MANIFEST_REGISTER_AND_EXACT_HEAD_CI
 ## Independent review receipts: what was actually evaluated
 - **Original NotebookLM R00 reviewer:** one independent round supplied in **two presentation formats**, not two independent reviews. Raw complete reviewer text Git blob `0f0ef597a258ce6372453d2028d239d1067649ec`, alternate Markdown blob `55636e86dbb4c326a08c4a79be465d9c169ddeca`. Original conclusions: B15/B16/B17 Academic PASS, entire Chapter V PED PASS; Chapter V Academic HOLD under historic Q01 v1.0.0 only because original SBT lacked printed p25 for B14. Original reviewer P0=0 P1=1 P2=0.
 - **New owner-provided independent targeted NotebookLM reviewer:** raw verbatim (11,738 bytes) Git blob `c06fd2e187afd6ad7e848d208f218bb044a7d690` reviewed exactly Q01 B14 across seven outcomes and Q06/R01 Written rubric W01 under **official Q01 v1.1.0 on main**, governance PR #726 merged at `049fa190b05c3562816670d51defc62965986c31`. Results: `TARGETED_B14_Q01_ACADEMIC_VERDICT=PASS`, `W01_Q06_DELTA_C_VERDICT=PASS`, `P0=P1=P2=0`, `MINIMAL_DELTA=1`. It explicitly preserves B15–B17 Academic PASS and original Chapter V PED PASS. Reviewer text explicitly says `CONTENT_READY=NO`, meaning it does **not** sign source packaging, Final Submit, site runtime or deploy; AUTHORING must complete that separately.
-- The R01 source Git wrapper `1a16eb5d7f82b5571628dfe22d35b0a3b0ac7664` is **assembled AFTER** the original and targeted reviews by AUTHORING. Neither reviewer claimed to hash this Git blob. It inherits the exact R00 student content except one reviewer-approved W01 rubric substitution and explicit B14-O07 scope labeling. Thus `ACADEMIC_COMPOSITE_STATUS` is an auditable **AUTHORING recombination of independently scoped PASS receipts**, not a fictional NotebookLM fresh chapter-wide PASS report or a changed historical verdict.
+- The R01 source Git wrapper `11eb2834cfdb4a24685157f84666c2bb0767970a` is **assembled AFTER** the original and targeted reviews by AUTHORING. Neither reviewer claimed to hash this Git blob. It inherits the exact R00 student content except one reviewer-approved W01 rubric substitution and explicit B14-O07 scope labeling. Thus `ACADEMIC_COMPOSITE_STATUS` is an auditable **AUTHORING recombination of independently scoped PASS receipts**, not a fictional NotebookLM fresh chapter-wide PASS report or a changed historical verdict.
 
 ## S1 original receipts and Q01 v1.1.0 source-role reconciliation
 - SGK KNTT Toán 12 Tập Hai original PDF SHA256 `3c642f2e80d86d699ea62bbcabd0c3074fd5118def96e4b3b8ce1f9ead7f97bb`, B14 printed29–40/PDF1 31–42; whole ChV B14–17 & END printed29–63/PDF1 31–65. SGK/chương trình are authoritative for six mandatory B14 Core outcomes and the other lessons' Core/outcomes.

@@ -8,9 +8,9 @@ LEARNING_PATH: SGK_CHAPTER
 RELEASE_SCOPE: FULL_LEARNING_PATH
 CONTENT_READY: YES_SOURCE_CANDIDATE_EXACT_HEAD_CI_REQUIRED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md
-ACADEMIC_SOURCE_BLOB: 1a16eb5d7f82b5571628dfe22d35b0a3b0ac7664
+ACADEMIC_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/G12_CHV_R01_ACADEMIC_PED_COMPOSITE_SOURCE_RECEIPT_20261103.md
-REVIEW_RECEIPT_BLOB: 7166a4070d3bf6840d20f5d00e2da5d1d04f80fb
+REVIEW_RECEIPT_BLOB: a07070119259bd0133535fc3250d008cd78d8195
 ACADEMIC_VERDICT: PASS
 PEDAGOGICAL_VERDICT: PASS
 P0: 0
@@ -288,7 +288,7 @@ One canonical standard only: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STAN
 | Q18 | R00 original blob immutable; targeted raw reviewer verbatim SHA, R01 derived with one W01 rubric; source/receipt Git SHAs and media receipt exact | Original independent R00 + one independent targeted Q01/Q06, composite scope carefully documented, no new full reviewer | R1 checks exact source SHA/receipt, release PR and live asset integrity | Two reviewer rounds, one scoped Delta C |
 
 ## REVIEW_SOURCE_RECEIPT
-Original full R00 independent NotebookLM review raw Git `0f0ef597a258ce6372453d2028d239d1067649ec` (alternate presentation variant `55636e86dbb4c326a08c4a79be465d9c169ddeca` is not a second reviewer); original composite source-gap receipt Git `d917ae352f7d3ba3818a8dad689e43fe119b9950`. New **independently scoped B14 Q01 v1.1 PASS and W01 Q06 R01 PASS** raw verbatim reviewer Git `c06fd2e187afd6ad7e848d208f218bb044a7d690`, originally uploaded user file SHA256 `04f96708c5b9b12ffe95a7dbd6b0e6b97b3b7b4cf9ff16c5f84cacc825f18ad7`. R01 wrapper academic source Git `1a16eb5d7f82b5571628dfe22d35b0a3b0ac7664` is author-derived and was **NOT** independently reviewer-hashed; it has precisely the reviewed single W01 rubric change and B14 O07 curricular classification. A separate composite author receipt `7166a4070d3bf6840d20f5d00e2da5d1d04f80fb` reconciles independent scope-based verdicts without lying that the original full R00 chapter HOLD was overwritten.
+Original full R00 independent NotebookLM review raw Git `0f0ef597a258ce6372453d2028d239d1067649ec` (alternate presentation variant `55636e86dbb4c326a08c4a79be465d9c169ddeca` is not a second reviewer); original composite source-gap receipt Git `d917ae352f7d3ba3818a8dad689e43fe119b9950`. New **independently scoped B14 Q01 v1.1 PASS and W01 Q06 R01 PASS** raw verbatim reviewer Git `c06fd2e187afd6ad7e848d208f218bb044a7d690`, originally uploaded user file SHA256 `04f96708c5b9b12ffe95a7dbd6b0e6b97b3b7b4cf9ff16c5f84cacc825f18ad7`. R01 wrapper academic source Git `11eb2834cfdb4a24685157f84666c2bb0767970a` is author-derived and was **NOT** independently reviewer-hashed; it has precisely the reviewed single W01 rubric change and B14 O07 curricular classification. A separate composite author receipt `a07070119259bd0133535fc3250d008cd78d8195` reconciles independent scope-based verdicts without lying that the original full R00 chapter HOLD was overwritten.
 
 ## DELTA_LEDGER
 `DELTA_C_ACADEMIC_MATERIAL`: only `THPT-G12-B14-W01` / `G12-CHV-B14-O01` Written /5 rubric revised according to approved independent targeted R01; exact reviewed breakdown is 2 + 1 + 1 + 1 points for dependent directions (`v=2u`), zero cross product, zero not normal, choose noncollinear second direction. `DELTA_B_SOURCE_EQUIVALENT`: curriculum scope classification `G12-CHV-B14-O07=SGK_APPLICATION_INTEGRATED_AFTER_B17` derived directly from independent targeted Q01 reviewer; no question stem/solution/rubric other than W01 is changed. Historical `DELTA_D Q01 SBT printed p25` closed under v1.1 with `SBT_REFERENCE_GAP_DOCUMENTED`, not a fake SBT source. R00 original public Git blob `9e73f50efdf237ebdae8e64572e45b9b22e8dbbd` and both independent reports remain immutable; no entire chapter re-review required.
