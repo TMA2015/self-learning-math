@@ -68,7 +68,7 @@ const base="http://127.0.0.1:8765/thpt-preview/";
    assert((await result.first().getAttribute("href")).endsWith("chuong-v/bai-13/"));
    result=await query("bài 14",2); // Both G10 and newly released G11 B14
    assert((await result.first().getAttribute("href")).endsWith("chuong-v/bai-14/"));
-   result=await query("lớp 11",4); // G11 ChI–ChIV
+   result=await query("lớp 11",5); // G11 ChI–ChV
    assert((await result.first().getAttribute("href")).endsWith("lop-11/chuong-i/"));
    result=await query("lớp 11, chương I, bài 1",1);
    assert((await result.first().getAttribute("href")).endsWith("lop-11/chuong-i/bai-1/"));
@@ -95,6 +95,12 @@ const base="http://127.0.0.1:8765/thpt-preview/";
    for(const lesson of [10,11,12,13,14]){
     result=await query("lớp 11, bài "+lesson,1);
     assert((await result.first().getAttribute("href")).endsWith("lop-11/chuong-iv/bai-"+lesson+"/"),"G11 B"+lesson+" direct search");
+   }
+   result=await query("lớp 11, chương V",1);
+   assert((await result.first().getAttribute("href")).endsWith("lop-11/chuong-v/"),"G11 ChV chapter search");
+   for(const n of [15,16,17]){
+    result=await query("lớp 11, bài "+n,1);
+    assert((await result.first().getAttribute("href")).endsWith("lop-11/chuong-v/bai-"+n+"/"),"G11 B"+n+" search");
    }
    await query("lớp 12, bài 1",0);
    await query("xyz-khong-co",0);
