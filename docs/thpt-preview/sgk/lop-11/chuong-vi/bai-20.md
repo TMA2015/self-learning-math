@@ -36,7 +36,7 @@ Vì sao `y=3^x` không thể bằng −5? Nếu `log₂8=3`, hãy tìm hai đi�
 
 ## 2. Ví dụ có suy luận
 
-### D2 — Giáo viên làm mẫu B20
+### Ví dụ mẫu có giải thích
 
 **EX-G11-B20-01 (phân biệt hai loại hàm).** `f(x)=3^x` có TXĐ ℝ, tập giá trị (0,+∞), qua (0,1),(1,3) và tăng. `h(x)=x³` **không** là hàm mũ vì biến ở cơ số; không áp dụng máy móc tập giá trị (0,+∞) cho `x³`.
 
