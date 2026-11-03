@@ -49,7 +49,13 @@ const hasMath=text=>/\$[^$\n]+\$/.test(text);
          await prompt.locator("mjx-container").first().waitFor({state:"attached",timeout:12000});
          const shown=await prompt.innerText();
          assert(!shown.includes("$"),"Unrendered dollar in "+q.item_id+": "+shown);
+         assert(await prompt.locator(".thpt-r4-formative-math-inline").count()>0,"ChIX paired dollar math must remain INLINE "+q.item_id);
+         assert.equal(await prompt.locator(".thpt-r4-formative-math-display").count(),0,"ChIX inline dollar math must not become display math "+q.item_id);
          mathPrompts++;
+        }
+        if(q.stem.includes("\x60")||q.stem.includes("**")){
+         const visible=await prompt.innerText();
+         assert(!visible.includes("\x60")&&!visible.includes("**"),"Unrendered original math markup "+q.item_id);
         }
         if(lesson===5&&q.stem.includes("u_")){
          assert(await prompt.locator("sub[data-thpt-reviewed-script]").count()>0,"Raw G11 B05 subscript: "+q.item_id);
