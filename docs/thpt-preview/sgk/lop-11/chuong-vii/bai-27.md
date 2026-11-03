@@ -4,19 +4,19 @@
 
 ## 1. Kiến thức SGK và ví dụ có suy luận
 
-### 1. Vì sao cần học (WHY)
+### 1.1. Vì sao cần học (WHY)
 Hai thùng có cùng diện tích đáy và cùng độ cao nhưng hình dạng khác nhau có thể chứa lượng khác nhau. Thể tích cần phân biệt lăng trụ và chóp, và dùng đúng chiều cao vuông góc.
 
-### 2. Khái niệm thực chất (WHAT)
+### 1.2. Khái niệm thực chất (WHAT)
 V lăng trụ = S_đáy·h; V hộp chữ nhật = dài·rộng·cao; V chóp = S_đáy·h/3. Chóp cụt đều với diện tích hai đáy S, S′ và chiều cao h: V=h(S+S′+√(SS′))/3.
 
-### 3. Hình thành và lập luận (HOW)
+### 1.3. Hình thành và lập luận (HOW)
 Lăng trụ có các thiết diện song song đáy cùng diện tích nên thể tích là diện tích đáy nhân chiều cao. Chóp cùng S,h chỉ chiếm 1/3 thể tích lăng trụ tương ứng (ghép/cắt); chóp cụt là hiệu hai chóp đồng dạng, từ đó xuất hiện căn √(SS′). Nếu S′=0, công thức về chóp; nếu S′=S, về lăng trụ.
 
-### 4. Điều kiện, giới hạn, lỗi thường gặp (FORMAL)
+### 1.4. Điều kiện, giới hạn, lỗi thường gặp (FORMAL)
 Chiều cao **vuông góc** hai đáy, không tự dùng cạnh xiên. Đơn vị thể tích m³, cm³; 1m³=1000L. Chóp cụt đều đòi hai mặt đáy đồng dạng song song trong một hình chóp đều, không áp cho hai hình tùy ý.
 
-### 4B. Làm rõ các định lí, điều kiện và cấu trúc SGK (DEEPENING)
+### 1.5. Làm rõ các định lí, điều kiện và cấu trúc SGK (DEEPENING)
 **Chiều cao và đơn vị:** Khi nói S_đáy và h, h phải là **khoảng cách vuông góc giữa các mặt đáy** của lăng trụ hoặc từ đỉnh chóp tới mặt đáy. Không thay bằng cạnh bên xiên hay chu vi. Nếu tính S theo cm² và h theo cm thì V theo cm³; đổi sang lít phải thông qua 1m³=1000L hoặc 1000cm³=1L.
 
 **Vì sao có hệ số một phần ba:** Một chóp và lăng trụ có cùng diện tích đáy S và cùng chiều cao h không có cùng thể tích. Có thể ghép các chóp tam giác phù hợp để suy thể tích chóp bằng 1/3 lăng trụ có cùng S,h; vì thế V_chóp=S h/3. Đây là đặc trưng của chóp, không phải chiết khấu hay quy tắc chọn tùy ý.
@@ -25,18 +25,18 @@ Chiều cao **vuông góc** hai đáy, không tự dùng cạnh xiên. Đơn v�
 
 **Cách tự kiểm:** Với diện tích đáy 36cm² và 9cm², cao 4cm, V=4(36+9+18)/3=84cm³. Nếu em tính (36+9)/2×4=90cm³, em đã dùng công thức hình thang phẳng cho thể tích không gian — sai bản chất.
 
-### 5. Hình dẫn giải D5
+### 1.6. Hình dẫn giải D5
 
 <figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVII-B27-01_R00.svg" alt="Hình B27: Ba khối có cùng diện tích đáy và chiều cao; phân biệt hình chóp, lăng trụ và chóp cụt đều."/><figcaption>Hình B27: Ba khối có cùng diện tích đáy và chiều cao; phân biệt hình chóp, lăng trụ và chóp cụt đều.</figcaption></figure>
 
 **Hướng dẫn đọc hình:** Ba khối có cùng diện tích đáy và chiều cao; phân biệt hình chóp, lăng trụ và chóp cụt đều. Hình là sơ đồ giải thích phương pháp, **không được suy góc hay độ dài từ nét vẽ phối cảnh**. Điều kiện vuông góc phải có chứng minh.
 
-### 6. Tự thử trước bài luyện tập
+### 1.7. Tự thử trước bài luyện tập
 Đáy 18cm², cao 5cm: lăng trụ V=90cm³, chóp V=30cm³. Chóp cụt đáy 16cm² và 4cm², cao 3cm: V=28cm³.
 
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Đã tự thử? Mở hướng dẫn tự đối chiếu</summary><p>Đối chiếu lập luận của em với phần ví dụ được giải thích dưới đây. Đây là hoạt động luyện tập, không ghi Skill Mastery.</p></details>
 
-### 7. Ví dụ có hướng dẫn D2 (giải thích vì sao chọn phương pháp)
+### 1.8. Ví dụ có hướng dẫn D2 (giải thích vì sao chọn phương pháp)
 
 
 #### EX-G11-CHVII-B27-01 — Cùng đáy cùng cao khác thể tích
