@@ -4,7 +4,7 @@
 
 ## 1. Kiến thức SGK — hiểu bản chất trước công thức
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVI-B20-01_R00.svg" alt="B20 — trực quan hình thành khái niệm"/><figcaption>Hình D5 — quan sát trước khi tính: B20 — trực quan hình thành khái niệm</figcaption></figure>
+<figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVI-B20-01_R00.svg" alt="B20 — trực quan hình thành khái niệm"/><figcaption>Hình minh họa — quan sát trước khi tính: B20 — trực quan hình thành khái niệm</figcaption></figure>
 
 **Cách đọc và phát hiện:** Hình B20 đặt hai hàm trên **cùng hệ trục và cùng tỉ lệ**, để thấy điểm (0,1) của y=2^x tương ứng (1,0) của y=log₂x. Hãy tìm thêm cặp (1,2) ↔ (2,1); đường nét đứt y=x biểu diễn trục đối xứng, không phải một hàm cần giải.
 
