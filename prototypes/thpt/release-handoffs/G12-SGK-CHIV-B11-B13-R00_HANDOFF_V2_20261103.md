@@ -248,24 +248,24 @@ Original independent NotebookLM Academic and PED PASS under five Permanent Sourc
 Single normative reference: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`. Reviewer old Q02–Q05/Q18 label names do not define competing standards.
 | Q_ID | SOURCE_EVIDENCE | INDEPENDENT_REVIEW_EVIDENCE | RELEASE_RECHECK | SCOPE |
 |---|---|---|---|---|
-| Q01 | SGK T2 in4–28/PDF1 6–30 and SBT in3–21/PDF1 2–20; original PDF SHA256 verified | Original independent NotebookLM Academic/PED PASS on S1 | R1 source SHA match |
-| Q02 | 22 outcome IDs B11=7 B12=7 B13=8, each mapped to Core+Practice+Application+Written | Independent review 22 outcomes PASS | AP4 lessons |
-| Q03 | D1: derivative inverse and domain; Newton–Leibniz signed accumulation; geometry area and volume conditions | Academic correctness PASS for original R00 math | AP2 formula/condition |
-| Q04 | 22 worked examples EX-G12-B11/B12/B13 with reasons and checks | Independent D2 examples PASS | AP4 example flow |
-| Q05 | 88 public canonical question IDs 22 each C,P,A,W, no duplication | Independent 88 public items PASS | R4 pre-submit secrecy |
-| Q06 | 22 Written with original rubric/5; six ANCHOR tags not cloned | Independent Written rubric/5 PASS | R4 manual compare |
-| Q07 | Six original PNG illustrations SHA256-verified in immutable R00 ZIP; zero SVG source files found | Independent PNG semantic review PASS; six exact Git blobs SHA256-matched and durably stored on authoring branch | AP3 figure availability/visual QA |
-| Q08 | 22 D6 five-step same-outcome remediation HELP cards | Independent PED and D6 review PASS | AP4 remediation links |
-| Q09 | WHY precedes formulas in B11–B13 e.g. motion/areas/volumes | Independent PED1 PASS | AP1 flow |
-| Q10 | Derivatives, continuous functions, sign and geometry prerequisites explained | Independent PED2 PASS | AP4 pre-req |
-| Q11 | Antiderivative inversion, accumulation and slices explained before formulas | Independent PED3 PASS | AP4 concept sequence |
-| Q12 | Six figure captions/read-guides, units/axes/regions, not decorative | Independent PED4 PASS on PNG representation | AP3 after asset upload |
-| Q13 | 22 D2 reasoned solution paths include why/limitations | Independent PED5 PASS | AP4 method |
-| Q14 | Six self-try prompts B11-T01/T02 B12-T01/T02 B13-T01/T02 before Core, with remediation | Independent PED6 PASS | AP4 reveal timing |
-| Q15 | 88 canonical item IDs and one placement/role matrix; 22 end references to same application items | Independent canonical bank PASS; author unique ID QA PASS | R1 no clones |
-| Q16 | 26 private RD1 held-out raw off GitHub; 22 public end references no mastery | Independent assessment boundary on source PASS | R4 Final Submit |
-| Q17 | Self-contained SGK B11/B12/B13 and end; Topic readiness not inferred | Independent SGK scope PASS | R3 preserve two independent paths |
-| Q18 | Five original byte-exact Markdown components and two variants of SAME reviewer report; QA source receipt; reviewed PNG SHA ledger | Original reviewer source PASS; author Git media custody CLOSED in commit 41222555, no altered content | R1 exact source/receipt/asset |
+| Q01 | SGK T2 in4–28/PDF1 6–30 and SBT in3–21/PDF1 2–20; original PDF SHA256 verified | Original independent NotebookLM Academic/PED PASS on S1 | R1 source SHA match | SGK/SBT Tập Hai B11–B13 and END |
+| Q02 | 22 outcome IDs B11=7 B12=7 B13=8, each mapped to Core+Practice+Application+Written | Independent review 22 outcomes PASS | AP4 lessons | All 22 original outcome IDs |
+| Q03 | D1: derivative inverse and domain; Newton–Leibniz signed accumulation; geometry area and volume conditions | Academic correctness PASS for original R00 math | AP2 formula/condition | D1 mathematical theory/domain constraints |
+| Q04 | 22 worked examples EX-G12-B11/B12/B13 with reasons and checks | Independent D2 examples PASS | AP4 example flow | D2 22 worked reasoning examples |
+| Q05 | 88 public canonical question IDs 22 each C,P,A,W, no duplication | Independent 88 public items PASS | R4 pre-submit secrecy | D3 66 objective/practice/application items |
+| Q06 | 22 Written with original rubric/5; six ANCHOR tags not cloned | Independent Written rubric/5 PASS | R4 manual compare | D4 22 written rubrics out of five |
+| Q07 | Six original PNG illustrations SHA256-verified in immutable R00 ZIP; zero SVG source files found | Independent PNG semantic review PASS; six exact Git blobs SHA256-matched and durably stored on authoring branch | AP3 figure availability/visual QA | D5 six original PNG reviewed bytes |
+| Q08 | 22 D6 five-step same-outcome remediation HELP cards | Independent PED and D6 review PASS | AP4 remediation links | D6 22 five-step remediation cards |
+| Q09 | WHY precedes formulas in B11–B13 e.g. motion/areas/volumes | Independent PED1 PASS | AP1 flow | PED1 contextual WHY |
+| Q10 | Derivatives, continuous functions, sign and geometry prerequisites explained | Independent PED2 PASS | AP4 pre-req | PED2 prerequisites |
+| Q11 | Antiderivative inversion, accumulation and slices explained before formulas | Independent PED3 PASS | AP4 concept sequence | PED3 concepts before formula |
+| Q12 | Six figure captions/read-guides, units/axes/regions, not decorative | Independent PED4 PASS on PNG representation | AP3 after asset upload | PED4 six guided diagrams |
+| Q13 | 22 D2 reasoned solution paths include why/limitations | Independent PED5 PASS | AP4 method | PED5 method choice and limits |
+| Q14 | Six self-try prompts B11-T01/T02 B12-T01/T02 B13-T01/T02 before Core, with remediation | Independent PED6 PASS | AP4 reveal timing | PED6 six pre-Core first tries |
+| Q15 | 88 canonical item IDs and one placement/role matrix; 22 end references to same application items | Independent canonical bank PASS; author unique ID QA PASS | R1 no clones | 88 canonical IDs plus 22 placement refs |
+| Q16 | 26 private RD1 held-out raw off GitHub; 22 public end references no mastery | Independent assessment boundary on source PASS | R4 Final Submit | No pre-submit answer and no Mastery |
+| Q17 | Self-contained SGK B11/B12/B13 and end; Topic readiness not inferred | Independent SGK scope PASS | R3 preserve two independent paths | SGK complete; Topic independent |
+| Q18 | Five original byte-exact Markdown components and two variants of SAME reviewer report; QA source receipt; reviewed PNG SHA ledger | Original reviewer source PASS; author Git media custody CLOSED in commit 41222555, no altered content | R1 exact source/receipt/asset | Immutable original SHA plus media Git custody |
 
 ## ORIGINAL_REVIEWED_PNG_ASSET_LOCK
 Six actual NotebookLM-reviewed PNG files (no original SVG binary is represented):
