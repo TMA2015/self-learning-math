@@ -1,0 +1,32 @@
+{
+  "schema": "thpt-g11-reviewed-selfcheck-v1",
+  "scope": "SGK_CHAPTER_SELF_CHECK",
+  "chapter": "CHII",
+  "chapter_label": "II",
+  "original_public_source_blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+  "original_public_bank_version": "THPT-G11-CHII-B05-B07-R03",
+  "review_chain": "R01 academic PASS; R02 PED PASS; R03 SBT citation-only Delta B",
+  "mode": "PUBLIC_CANONICAL_REFERENCE_ONLY",
+  "assessment_note": "Voluntary post-Final-Submit manual comparison using existing PUBLIC practice item IDs; seen/assisted formative items are NOT independent Readiness evidence; no new or duplicated canonical question content.",
+  "mastery_credit": false,
+  "independent_readiness_credit": false,
+  "persist_results": false,
+  "public_client_answer_keys": true,
+  "item_refs": [
+    "THPT-G11-B05-P01",
+    "THPT-G11-B05-P02",
+    "THPT-G11-B05-P03",
+    "THPT-G11-B05-P04",
+    "THPT-G11-B05-P05",
+    "THPT-G11-B06-P01",
+    "THPT-G11-B06-P02",
+    "THPT-G11-B06-P03",
+    "THPT-G11-B06-P05",
+    "THPT-G11-B06-P06",
+    "THPT-G11-B07-P01",
+    "THPT-G11-B07-P02",
+    "THPT-G11-B07-P03",
+    "THPT-G11-B07-P05",
+    "THPT-G11-B07-P06"
+  ]
+}

@@ -39,7 +39,7 @@ const base="http://127.0.0.1:8765/thpt-preview/";
    await query("lớp 10",9); // 8 available chapter cards + one clearly marked unpublished ChV
    let result=await query("chương I",2); // published G10 and G11 chapter I
    assert((await result.first().getAttribute("href")).endsWith("chuong-i/"));
-   result=await query("chương II",1);
+   result=await query("chương II",2); // G10 and G11 ChII
    assert((await result.first().getAttribute("href")).endsWith("chuong-ii/"));
    result=await query("lớp 10, chương I",1);
    assert((await result.first().getAttribute("href")).endsWith("chuong-i/"));
@@ -47,7 +47,7 @@ const base="http://127.0.0.1:8765/thpt-preview/";
    assert((await result.first().getAttribute("href")).endsWith("chuong-i/bai-1/"));
    result=await query("lớp 10, chương I, bài 2",1);
    assert((await result.first().getAttribute("href")).endsWith("chuong-i/bai-2/"));
-   result=await query("bài 7",1);
+   result=await query("bài 7",2); // G10 and G11 B07
    assert((await result.first().getAttribute("href")).endsWith("chuong-iv/bai-7/"));
    result=await query("tọa độ",2);
    const paths=await result.evaluateAll(nodes=>nodes.map(node=>node.getAttribute("href")));
@@ -66,7 +66,7 @@ const base="http://127.0.0.1:8765/thpt-preview/";
    assert((await result.first().getAttribute("href")).endsWith("chuong-v/bai-13/"));
    result=await query("bài 14",1);
    assert((await result.first().getAttribute("href")).endsWith("chuong-v/bai-14/"));
-   result=await query("lớp 11",1);
+   result=await query("lớp 11",2); // G11 ChI and ChII
    assert((await result.first().getAttribute("href")).endsWith("lop-11/chuong-i/"));
    result=await query("lớp 11, chương I, bài 1",1);
    assert((await result.first().getAttribute("href")).endsWith("lop-11/chuong-i/bai-1/"));
@@ -76,6 +76,12 @@ const base="http://127.0.0.1:8765/thpt-preview/";
    assert((await result.first().getAttribute("href")).endsWith("lop-11/chuong-i/bai-3/"),"Released G11 B03 should resolve correctly");
    result=await query("lớp 11, bài 4",1);
    assert((await result.first().getAttribute("href")).endsWith("lop-11/chuong-i/bai-4/"),"Released G11 B04 should resolve correctly");
+   result=await query("lớp 11, chương II",1);
+   assert((await result.first().getAttribute("href")).endsWith("lop-11/chuong-ii/"),"G11 ChII chapter search");
+   for(const lesson of [5,6,7]){
+    result=await query("lớp 11, bài "+lesson,1);
+    assert((await result.first().getAttribute("href")).endsWith("lop-11/chuong-ii/bai-"+lesson+"/"),"G11 ChII B0"+lesson+" search");
+   }
    await query("lớp 12, bài 1",0);
    await query("xyz-khong-co",0);
    await field.fill("");
