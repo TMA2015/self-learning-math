@@ -12,7 +12,7 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
     await open(root);
     assert.equal(await page.locator('.library-topic-tile[data-thpt-filter-item][href="lop-11/chuong-ix/"]').count(),1,"G11 ChIX tile");
     await open(base);
-    assert((await page.locator("body").innerText()).includes("Bài 28"),"ChIX chapter overview");
+    assert((await page.locator("body").innerText()).includes("Bài 31"),"ChIX chapter overview");
     for(const n of [31,32,33]){
      await open(base+"bai-"+n+"/");
      const first=page.locator('[data-ped-first-try="1"]');
