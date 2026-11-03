@@ -46,7 +46,7 @@ for(const [n,C,P,E] of [[18,5,7,6],[19,3,6,4],[20,4,4,4],[21,4,8,5]]){
  assert.equal(bank.forLesson(n,"practice").length,P);
  assert(page.includes('data-ped-first-try="1"')&&page.includes("## 1. Kiến thức SGK"),"Meaning-first and opt-in self-try B"+n);
  assert.equal((page.match(/data-thpt-help-id=/g)||[]).length,2,"Original D6 count B"+n);
- for(const m of hs.filter(x=>Number(x[2])===n))assert(page.includes(m[1])&&page.includes("?item="+m[3]),"Original D6 and return item "+m[1]);
+ for(const m of hs.filter(x=>Number(x[2])===n))assert(page.includes(m[1])&&page.includes("?item="+m[4]),"Original D6 and return item "+m[1]);
  const svg="FIG-G11-CHVI-B"+n+"-01_R00.svg";
  assert.equal(blob(fs.readFileSync("docs/assets/images/thpt/"+svg)),blob(fs.readFileSync("prototypes/thpt/content-drafts/svg/"+svg)),"Original SVG exact identity B"+n);
  assert(page.includes(svg)&&page.includes("Cách đọc và phát hiện"),"SVG teaching explanation B"+n);
