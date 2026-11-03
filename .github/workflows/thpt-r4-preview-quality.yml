@@ -120,6 +120,9 @@ jobs:
         run: python -m pip install 'mkdocs-material>=9,<10'
       - name: Validate scoped THPT JavaScript syntax
         run: |
+          node --check docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js
+          node --check scripts/test-thpt-g11-chv-release-integration.cjs
+          node --check scripts/test-thpt-g11-chv-browser-smoke.cjs
           node --check docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js
           node --check scripts/test-thpt-g11-chiv-release-integration.cjs
           node --check scripts/test-thpt-g11-chiv-browser-smoke.cjs
@@ -220,6 +223,8 @@ jobs:
         run: node scripts/test-thpt-g11-chiii-release-integration.cjs
       - name: Guard G11 ChIV R03 exact source, original SVG and public-only Q16
         run: node scripts/test-thpt-g11-chiv-release-integration.cjs
+      - name: Guard G11 ChV R03 exact original source, SVG and Q16 public-only refs
+        run: node scripts/test-thpt-g11-chv-release-integration.cjs
       - name: Guard G10 ChIX source-locked public formative and reviewed D5/D6
         run: |
           node scripts/test-thpt-g10-chix-reviewed-stage3.cjs
@@ -345,6 +350,8 @@ jobs:
         run: node scripts/test-thpt-g11-chiii-browser-smoke.cjs
       - name: G11 ChIV B10–B14 browser learner AP QA · 390 820 1440
         run: node scripts/test-thpt-g11-chiv-browser-smoke.cjs
+      - name: G11 ChV B15–B17 browser learner AP QA · 390 820 1440
+        run: node scripts/test-thpt-g11-chv-browser-smoke.cjs
       - name: Academic Presentation QA pilot · MathJax overflow / 390 820 1440
         run: node scripts/test-thpt-academic-presentation-browser.cjs
       - name: Academic Presentation QA G10 B03 · 390 820 1440
