@@ -126,6 +126,9 @@ jobs:
           node --check docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js
           node --check scripts/test-thpt-g11-chvi-release-integration.cjs
           node --check scripts/test-thpt-g11-chvi-browser-smoke.cjs
+          node --check docs/assets/javascripts/thpt-g11-chvii-b22-b27-source-locked-formative-r01.js
+          node --check scripts/test-thpt-g11-chvii-release-integration.cjs
+          node --check scripts/test-thpt-g11-chvii-browser-smoke.cjs
           node --check docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js
           node --check scripts/test-thpt-g11-chiv-release-integration.cjs
           node --check scripts/test-thpt-g11-chiv-browser-smoke.cjs
@@ -230,6 +233,8 @@ jobs:
         run: node scripts/test-thpt-g11-chv-release-integration.cjs
       - name: Guard G11 ChVI R01 exact original source, SVG and public Q16 refs
         run: node scripts/test-thpt-g11-chvi-release-integration.cjs
+      - name: Guard G11 ChVII R01 exact original source, SVG and Q16 public refs
+        run: node scripts/test-thpt-g11-chvii-release-integration.cjs
       - name: Guard G10 ChIX source-locked public formative and reviewed D5/D6
         run: |
           node scripts/test-thpt-g10-chix-reviewed-stage3.cjs
@@ -359,6 +364,8 @@ jobs:
         run: node scripts/test-thpt-g11-chv-browser-smoke.cjs
       - name: G11 ChVI B18–B21 browser learner AP QA · 390 820 1440
         run: node scripts/test-thpt-g11-chvi-browser-smoke.cjs
+      - name: G11 ChVII B22–B27 browser learner AP QA · 390 820 1440
+        run: node scripts/test-thpt-g11-chvii-browser-smoke.cjs
       - name: Academic Presentation QA pilot · MathJax overflow / 390 820 1440
         run: node scripts/test-thpt-academic-presentation-browser.cjs
       - name: Academic Presentation QA G10 B03 · 390 820 1440
