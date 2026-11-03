@@ -53,7 +53,7 @@ Khi nói x→+∞, ta cho x tăng mãi; x→−∞ là cho x giảm mãi về ph
 
 ## 2. Ví dụ có suy luận và điều kiện
 
-### B16 — D2. Bốn ví dụ độc lập
+### Bốn ví dụ độc lập
 
 **EX-G11-B16-01 — Khử 0/0.** lim_{x→2}(x²−4)/(x−2) = lim_{x→2}(x+2)=4 vì x²−4=(x−2)(x+2) khi x≠2. Hàm gốc không xác định tại 2 nhưng giới hạn vẫn bằng 4.
 
