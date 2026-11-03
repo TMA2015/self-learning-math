@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
 """Owner 03/11 G11 visual presentation QA; not independent academic/P2 real-Safari approval."""
+import shutil
 from playwright.sync_api import sync_playwright
+CHROME=shutil.which("google-chrome") or shutil.which("chromium")
+assert CHROME, "Runner Chrome/Chromium executable missing"
 ROOT="http://127.0.0.1:8765"
 P=ROOT+"/thpt-preview/sgk/lop-11/"
 def visit(page,p):
     response=page.goto(P+p,wait_until="networkidle",timeout=35000)
     assert response and response.ok, f"HTTP failed: {p}"
 with sync_playwright() as p:
-    browser=p.chromium.launch(headless=True,args=["--no-sandbox"])
+    browser=p.chromium.launch(executable_path=CHROME,headless=True,args=["--no-sandbox"])
     try:
         for width,height in [(390,844),(820,1180),(1440,900)]:
             page=browser.new_page(viewport={"width":width,"height":height})
