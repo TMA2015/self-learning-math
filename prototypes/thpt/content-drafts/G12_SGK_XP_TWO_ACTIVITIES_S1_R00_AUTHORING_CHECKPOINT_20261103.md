@@ -4,10 +4,10 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 1.1.0
 LEARNING_PATH: SGK_EXPERIENCE
 AUTHORING_STATUS: REVIEW_CANDIDATE_LOCAL_ONLY
-ACADEMIC_VERDICT: NOTEBOOKLM_REPORTED_PASS_PENDING_ORIGINAL_SOURCE_PARITY
-PEDAGOGICAL_VERDICT: NOTEBOOKLM_REPORTED_PASS_PENDING_ORIGINAL_SOURCE_PARITY
+ACADEMIC_VERDICT: NOTEBOOKLM_REPORTED_PASS_R00_SOURCE_LOCKED_REVIEW_PARITY_PENDING
+PEDAGOGICAL_VERDICT: NOTEBOOKLM_REPORTED_PASS_R00_SOURCE_LOCKED_REVIEW_PARITY_PENDING
 CONTENT_READY: NO
-SOURCE_CUSTODY_HOLD: LOCAL_ZIP_AND_PNG_NOT_YET_GITHUB_BLOB_LOCKED
+SOURCE_CUSTODY: EXACT_9_FILE_R00_GIT_BLOB_LOCKED_AT_78bc23671981934e1b27742ff8a322ee9d7d766d
 RD1: NOT_CREATED_IN_SGK_EXPERIENCE
 RELEASE_AUTHORIZATION: NO
 MASTERY_ACTIVATION: NO
@@ -22,7 +22,7 @@ SGK Toán 12 Kết nối tri thức **Tập Hai**, original PDF SHA256 `3c642f2e
 - **10 outcome**: 5 mỗi hoạt động; **40 item công khai canonical** (10 Core dạng luyện tập trong trải nghiệm, 10 Practice, 10 Application, 10 Written /5); **10 ví dụ có giải thích D2**, 10 đường sửa lỗ hổng D6 với 5 bước **đặc thù từng outcome**, 4 Tự thử trước Core (2/hoạt động), 5 hình PNG tự tạo kèm bản thiết kế SVG lưu ở máy biên soạn.
 - **10 secondary END placements** dùng lại 10 `-Axx` đã có, không nhân bản item; `CLIENT_SELF_CHECK_NO_MASTERY`. Không tạo bộ RD1 official mới cho hoạt động trải nghiệm. `SGK_CHAPTER_READINESS` thuộc từng chương trước, không lấy hoạt động bổ trợ để cấp Mastery.
 - Bản học liệu học sinh chứa đáp án/rubric để tác giả và reviewer đối chiếu, **không** là quyền tiết lộ trước nút đối chiếu/Final Submit trong website.
-- Numeric spot QA: `∫₀²x²dx=8/3`; hình thang `T4=11/4` sai lệch `+1/12`; bound `1/(6n²)<0.001` có n nhỏ nhất 13, n=12 không đủ; vận tốc bảng cho `21 m` **theo các nút (0,2,4,6) và vận tốc (2,5,4,1) từ reviewer — bản R00 học sinh đang chờ đối chiếu**, bảng diện tích không đều cho `12 cm³`; mô hình Möbius `M(0,v)=M(2π,−v)`; lăng trụ đáy diện tích 2, cao 3 → thể tích 6.
+- Numeric spot QA từ **bản R00 thực tế**: `∫₀²x²dx=8/3`; `T4=11/4` sai lệch `+1/12`; bound `1/(6n²)<0.001` n nguyên nhỏ nhất 13; ví dụ vận tốc `t=(0,2,4,6)` và `v=(2,3,5,4)` cho **22 m đúng toán**, Written W05/rubric khớp 22 m; dữ liệu reviewer chép nhầm thành `v=(2,5,4,1)` dẫn ra 21 m khác bài gốc; bảng diện tích không đều `12 cm³`; Möbius `M(0,v)=M(2π,−v)`; lăng trụ đáy S=2/h=3 → V=6.
 
 ## 3. Ma trận outcome dự thảo (không phải academic PASS)
 | OUTCOME_ID | WHAT TO LEARN | CANONICAL ITEM ROLE |
@@ -55,11 +55,11 @@ Nguồn Markdown original SHA256:
 | `Temp_FIG_G12_XP02_PROJECTION_R00.png` | `71a83480cbaee41c2d3664d369bbba7ab6d4a2437401f08325e9007df5f665ff` |
 | `Temp_FIG_G12_XP02_MOBIUS_R00.png` | `458f859d3dcfab7d200ff61954adcb0bd3cf8d78695f5fb2c7cd682622bafa87` |
 
-**GATE:** S1 source audit + original authored R00 + ZIP CRC/byte-equality PASS. **NotebookLM Academic/PED: ĐÃ NHẬN VERDICT PASS DO CHỦ DỰ ÁN GỬI (03/11/2026), CHƯA KHÓA SNAPSHOT BẢN HỌC LIỆU**; code/source/PNG chưa được đưa lên nhánh GitHub để khóa Git SHA vì gói review vừa được tạo trong máy biên soạn. Không tự gắn `CONTENT_READY`, không có manifest `ready/`, REGISTER row hay release handoff V2; đây chỉ là checkpoint để truy vết scope và checksum. Sau phản biện độc lập, AUTHORING đưa tệp bất biến lên GitHub, đối chiếu SHA256 và xử lý Delta (nếu có), rồi mới ký source receipt theo Q18.
+**GATE CẬP NHẬT (03/11/2026):** Zip CRC + SHA256 9/9 PASS; 9 file Markdown/PNG byte-exact đã được đưa lên GitHub tại `prototypes/thpt/content-drafts/G12_SGK_XP_R00_ORIGINAL_SOURCE/` (commit `78bc23671981934e1b27742ff8a322ee9d7d766d`). NotebookLM Academic/PED đã báo PASS; vẫn có mismatch trên reviewer EXP01-O05 (21 m khác 22 m đúng trong nguồn), Q-map labels và D4 Written W01/W05 chiều sâu lời giải cần đánh giá targeted. `CONTENT_READY=NO`; A1–A7/V2 chưa ký, RELEASE không thực hiện.
 
 
 ## 5. Tiếp nhận NotebookLM R00 ngày 03/11/2026 (chỉ lưu biên bản, không tự nâng trạng thái)
 
 - Báo cáo NotebookLM nguyên văn chủ dự án gửi đã được bảo toàn trong `prototypes/thpt/review-packets/G12_XP_R00_NOTEBOOKLM_OWNER_VERDICT_SUBMITTED_20261103.txt`, Git blob `84f41a2e6e53619772d385cec3ae69483d8ae081`. Reviewer ghi `ACADEMIC=PASS`, `PED=PASS`, `P0/P1/P2=0`, `MINIMAL_DELTA=0` trên PACKET_ID `G12-SGK-EXP01-EXP02-R00-REVIEW_CANDIDATE`.
-- Biên bản kiểm toán tác giả tại `prototypes/thpt/content-drafts/G12_SGK_XP_R00_NOTEBOOKLM_REVIEW_RECONCILIATION_20261103.md` ghi rõ lỗi chép số liệu checkpoint 22 m so với 21 m đúng cho dữ liệu reviewer, bảng đánh số tên Q không khớp v1.1.0 và thiếu 9 file R00 nguyên bản để chứng minh Git blob parity.
-- Không sửa nội dung học sinh vì file gốc chưa phục hồi; giữ `SOURCE_CUSTODY_HOLD` và `CONTENT_READY=NO`. Bước tiếp theo là khôi phục ZIP 9 file R00 theo checksum đã khai báo, kiểm từng file trước khi lập A1–A7 + V2/ready/REGISTER.
+- Biên bản kiểm toán tác giả tại `prototypes/thpt/content-drafts/G12_SGK_XP_R00_NOTEBOOKLM_REVIEW_RECONCILIATION_20261103.md` ghi rõ kết luận mới sau khi nhận đủ ZIP: **22 m là đúng trong học liệu R00**, reviewer đổi bộ số liệu khi tóm tắt để ra 21 m; Q labels mismatch; D4 Written cần kiểm chỗ lời giải quá tóm tắt. 9/9 file gốc đã Git-custodied và đối chiếu blob.
+- Giữ 9/9 nguồn học sinh R00 **bất biến**, không sửa đáp án 22 m đang đúng. Nguồn review target R01 (nếu cần) phải là file riêng và chỉ review phần bị ảnh hưởng theo Source 07. Chưa được đặt `CONTENT_READY` cho tới khi reviewer/cổng A1–A7/V2 đủ; không thay lịch sử PASS.
