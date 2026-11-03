@@ -304,6 +304,7 @@ extra_javascript:
   - assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js
   - assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js
   - assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js
+  - assets/javascripts/thpt-g11-chvii-b22-b27-source-locked-formative-r01.js
   - assets/javascripts/thpt-r4-preview.js
   - assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js
   - assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js
