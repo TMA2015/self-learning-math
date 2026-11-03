@@ -1,4 +1,4 @@
-# G12 SGK ChIV B11–B13 R00 — SOURCE_RECEIPT (independent NotebookLM PASS; visual asset custody HOLD)
+# G12 SGK ChIV B11–B13 R00 — SOURCE_RECEIPT (independent NotebookLM PASS; six exact PNG media assets Git-custodied)
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 1.0.0
 PACKET_ID: G12-SGK-CHIV-B11-B13-R00
@@ -14,7 +14,9 @@ P0: 0
 P1: 0
 P2: 0
 MINIMAL_DELTA: 0
-AUTHORING_ASSET_CUSTODY_HOLD: 6_REVIEWED_PNG_NOT_YET_UPLOADED_TO_GITHUB
+AUTHORING_ASSET_CUSTODY: SIX_EXACT_REVIEWED_PNG_SHA_VERIFIED_ON_GITHUB
+AUTHORING_ASSET_SOURCE_COMMIT: 4122255569847ae772935898c6de03cf011cd336
+AUTHORING_MEDIA_BLOCKER: CLOSED
 EXPOSURE_SYSTEM_VERDICT: SYSTEM_HOLD
 RELEASE_AUTHORIZATION: NO
 MASTERY_ACTIVATION: NO
@@ -39,6 +41,20 @@ Owner uploaded `Bao_Cao_Kiem_Toan_Toan_12_Chuong_IV_Batch_R00.md` and `Văn bả
 
 The author-created wrapper source is Git blob `45722cd386a498f3e0e96a09928c85565af56d1b`. It concatenates five exact original reviewed source components; reviewer reviewed the components, NOT that newly-assembled wrapper SHA. Original candidate `ACADEMIC_VERDICT=NOT_REVIEWED` text is historical R00 metadata; the independent review verdict appears in this separately signed receipt and is **not patched into frozen math source**.
 
+## Final media custody — Q07/Q18 AUTHORING delta B, no academic change
+The original media custody HOLD was a **prior authoring packaging state** recorded in composite receipt blob `df7906ac4612f0496895fe48aa411b5ddf3d17b8`. On Git commit `4122255569847ae772935898c6de03cf011cd336` AUTHORING stored **all six exact binary PNGs** from the original R00 ZIP, with zero visual modification. Their SHA256 matched the reviewed media ledger; Git blob SHA-1 also matches the original local binary file, and all six binary blobs are now in an immutable Git tree. The reviewer verified PNG content, not SVG originals (none existed in the reviewed ZIP). No original academic source component, explanation, item, answer, rubric, figure rendering or independent verdict was changed. The historical source wrapper's `MEDIA_ASSET_LOCATION: ORIGINAL_TEMP_ZIP_NOT_IN_THIS_GIT_COMMIT` describes the earlier author source-lock commit; this signed custody update supersedes that **transport-only** state.
+
+| REVIEWED_IMAGE | CANONICAL_GITHUB_PATH | GIT_BLOB_SHA1 | EXACT_REVIEWED_SHA256 |
+|---|---|---|---|
+| Temp_FIG-G12-CHIV-B11-PRIMITIVES-R00.png | `prototypes/thpt/content-drafts/png/Temp_FIG-G12-CHIV-B11-PRIMITIVES-R00.png` | `4e96237316480ba45d70311fd19ca58a61cb47a2` | `9d0115bb7c7a27a502f89b004a9e0b9bb7d0f95147936098de166b866aad2602` |
+| Temp_FIG-G12-CHIV-B12-NEWTON-LEIBNIZ-R00.png | `prototypes/thpt/content-drafts/png/Temp_FIG-G12-CHIV-B12-NEWTON-LEIBNIZ-R00.png` | `e021d323e5cd6b78239f71c5aa831736a68adeb3` | `323ae918430689048cc0b6829bd1692070d53a5dd963ca1a39e1af1c2211f8c8` |
+| Temp_FIG-G12-CHIV-B12-SIGNED-AREA-R00.png | `prototypes/thpt/content-drafts/png/Temp_FIG-G12-CHIV-B12-SIGNED-AREA-R00.png` | `3145a6b8d4742f23824ca5c9f9d0b57413ef42a3` | `858cd834ef7f37f96a0c9c30f4ea689c42769f1712088c30dd8b074232fdbd94` |
+| Temp_FIG-G12-CHIV-B13-REVOLUTION-R00.png | `prototypes/thpt/content-drafts/png/Temp_FIG-G12-CHIV-B13-REVOLUTION-R00.png` | `aa208f18683764a81346eeaec1a1c53aa16831a4` | `3ab1cfe0491ae36120ba39f7b5fe2a7e1456b98efad62921a2c28f3e01516108` |
+| Temp_FIG-G12-CHIV-B13-TWO-CURVES-R00.png | `prototypes/thpt/content-drafts/png/Temp_FIG-G12-CHIV-B13-TWO-CURVES-R00.png` | `a67d5f1589eef420c23236b9447bbff35bac19bb` | `28ca3aec16c0beedef37bcffc88f239886ae19fe4c6d2a7182ea37e1a00f5901` |
+| Temp_FIG-G12-CHIV-B13-VOLUME-SLICES-R00.png | `prototypes/thpt/content-drafts/png/Temp_FIG-G12-CHIV-B13-VOLUME-SLICES-R00.png` | `052f0ee20952f21d881b034af301d0880c9455ba` | `361453d5764de8985d85dc4ddfd540cc92c239cd606ba0396e0aa8d5323159da` |
+
+**Closed author blocker:** `AUTHORING_MEDIA_Q07_Q18_PNG_NOT_PERSISTENT`. This is `DELTA_B_SOURCE_EQUIVALENT` evidence/transport only, **not a claim of new NotebookLM review**, not independent final website visual QA and not R1–R5/AP1–AP5/P1–P2 release PASS. Original reviewer texts remain verbatim as two alternate presentations of ONE review.
+
 ## Figure asset ledger — exactly reviewed PNG, NOT verified original SVG
 | Reviewed PNG file (ZIP) | SHA256 (author-computed, exact bytes in R00 ZIP) |
 |---|---|
@@ -61,4 +77,4 @@ Original complete R00 ZIP: `Temp_G12_CHIV_FULL_CHAPTER_NOTEBOOKLM_R00_20261103.z
 Use the normative `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md` exactly: Q01 S1 scope, Q02 outcomes, Q03–Q08 D1–D6, Q09–Q14 PED1–6, Q15 canonical IDs, Q16 assessment exposure, Q17 dual journeys, Q18 source/review provenance. Original reviewer table incorrectly labels Q02 mathematical correctness, Q03 canonical ID, Q04 assessment, Q05 D2 and Q18 authorization boundary; the underlying evidence appears elsewhere in independent narrative, and author crosswalk must not falsify the reviewer-authored wording. The 2 uploaded review files are alternate format versions, **not separate independent PASSes**.
 
 ## Delta and authoring gate
-`DELTA_B_SOURCE_EQUIVALENT_METADATA_ONLY` for source/Q-name/asset format descriptions; no original mathematical item or rubric is modified. `DELTA_D_ASSET_CUSTODY_HOLD` for six reviewed PNG binaries not placed into persistent Git source/archive (and corresponding SVG companions not present) — close by delivering the exact six PNG bytes with SHA256 matching this ledger into a persistent source location, or source an authorized mathematically equivalent visual asset and review only impacted graphics. This is an AUTHORING handoff packaging blocker, **not a new NotebookLM Academic/PED failure**. Until resolved, mark `CONTENT_READY=NO`, do not create a `ready/` manifest or REGISTER CONTENT_READY row. No requirement to re-review entire chapter for a metadata-only fix.
+`DELTA_B_SOURCE_EQUIVALENT_METADATA_ONLY` applies to author receipt wording, single-standard Q label crosswalk and exact PNG transport. **The six reviewed PNG binary files are now Git-custodied in commit `4122255569847ae772935898c6de03cf011cd336`,** with SHA256 and Git blob exact parity. Historical `DELTA_D_ASSET_CUSTODY_HOLD` in original receipt blob `df7906ac4612f0496895fe48aa411b5ddf3d17b8` has been **CLOSED** with zero academic-material change. AUTHORING may now complete a **single V2 handoff, one ready/ manifest and one REGISTER row**, subject to current-HEAD source-lock/PR CI; Academic/PED independent PASS pertains only to unchanged reviewed R00 component files. Do not infer RELEASE PASS or Mastery authorization. No new visual rewrite or NotebookLM review needed for these exact PNGs.

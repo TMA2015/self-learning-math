@@ -1,4 +1,4 @@
-# G12 SGK ChIV B11–B13 R00 — AUTHORING V2 source-locked handoff, ASSET CUSTODY HOLD
+# G12 SGK ChIV B11–B13 R00 — AUTHORING V2 source-locked CONTENT_READY handoff
 PACKET_ID: G12-SGK-CHIV-B11-B13-R00
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 1.0.0
@@ -6,18 +6,18 @@ QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: SGK_CHAPTER
 RELEASE_SCOPE: FULL_LEARNING_PATH
-CONTENT_READY: NO
+CONTENT_READY: YES
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/G12_SGK_CHIV_B11_B13_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md
 ACADEMIC_SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/G12_CHIV_R00_INDEPENDENT_ACADEMIC_PED_SOURCE_RECEIPT_20261103.md
-REVIEW_RECEIPT_BLOB: df7906ac4612f0496895fe48aa411b5ddf3d17b8
+REVIEW_RECEIPT_BLOB: feabeeeef262e7f6b28c898cdf77e6aa4194da24
 ACADEMIC_VERDICT: PASS
 PEDAGOGICAL_VERDICT: PASS
 P0: 0
 P1: 0
 P2: 0
 MINIMAL_DELTA: 0
-BLOCKERS: AUTHORING_MEDIA_Q07_Q18_PNG_NOT_PERSISTENT
+BLOCKERS: NONE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_SHA256: c503b79dfd49e7b50cd3eebbe6d03a0f6f0025fe348b0e744642eec7c3fe9c74
 RELEASE_AUTHORIZATION: NO
@@ -242,7 +242,7 @@ Original SGK Toán 12 KNTT Tập Hai SHA256 `3c642f2e80d86d699ea62bbcabd0c3074fd
 B11 7 outcomes, B12 7 and B13 8. One canonical source bank: 22 Core, 22 Practice, 22 Application and 22 Written rubric/5 = 88 unique public IDs; 22 reasoned D2 examples, 22 five-step D6 HELP and six first-try activities before Core. Chapter-end 22 references to existing Application items, zero new items. Six D5 PNG image contents reviewed by NotebookLM with exact SHA256 listed in receipt; text mentions SVG companions but **no SVG files exist** in delivered source archive.
 
 ## PED1_PED6_EVIDENCE
-Original independent NotebookLM Academic and PED PASS under five Permanent Sources v2.1 and KNTT S1. WHY and prerequisites precede theory, meaning before formula, reasoned worked examples and six Tự thử with self-open answer, D6 retry path. Six reviewed PNGs guide reading antiderivative families, signed integral, two curves, slices and rotation; visual asset source custody on GitHub remains unresolved.
+Original independent NotebookLM Academic and PED PASS under five Permanent Sources v2.1 and KNTT S1. WHY and prerequisites precede theory, meaning before formula, reasoned worked examples and six Tự thử with self-open answer, D6 retry path. Six reviewed PNGs guide reading antiderivative families, signed integral, two curves, slices and rotation; six exact SHA-verified reviewed PNGs now have durable immutable Git asset paths, as signed in source receipt.
 
 ## QUALITY_Q01_Q18_EVIDENCE
 Single normative reference: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`. Reviewer old Q02–Q05/Q18 label names do not define competing standards.
@@ -254,7 +254,7 @@ Single normative reference: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STAND
 | Q04 | 22 worked examples EX-G12-B11/B12/B13 with reasons and checks | Independent D2 examples PASS | AP4 example flow |
 | Q05 | 88 public canonical question IDs 22 each C,P,A,W, no duplication | Independent 88 public items PASS | R4 pre-submit secrecy |
 | Q06 | 22 Written with original rubric/5; six ANCHOR tags not cloned | Independent Written rubric/5 PASS | R4 manual compare |
-| Q07 | Six original PNG illustrations SHA256-verified in immutable R00 ZIP; zero SVG source files found | Independent review evaluated six PNG semantics PASS, but Git asset transport OPEN | AP3 figure availability/visual QA |
+| Q07 | Six original PNG illustrations SHA256-verified in immutable R00 ZIP; zero SVG source files found | Independent PNG semantic review PASS; six exact Git blobs SHA256-matched and durably stored on authoring branch | AP3 figure availability/visual QA |
 | Q08 | 22 D6 five-step same-outcome remediation HELP cards | Independent PED and D6 review PASS | AP4 remediation links |
 | Q09 | WHY precedes formulas in B11–B13 e.g. motion/areas/volumes | Independent PED1 PASS | AP1 flow |
 | Q10 | Derivatives, continuous functions, sign and geometry prerequisites explained | Independent PED2 PASS | AP4 pre-req |
@@ -265,22 +265,32 @@ Single normative reference: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STAND
 | Q15 | 88 canonical item IDs and one placement/role matrix; 22 end references to same application items | Independent canonical bank PASS; author unique ID QA PASS | R1 no clones |
 | Q16 | 26 private RD1 held-out raw off GitHub; 22 public end references no mastery | Independent assessment boundary on source PASS | R4 Final Submit |
 | Q17 | Self-contained SGK B11/B12/B13 and end; Topic readiness not inferred | Independent SGK scope PASS | R3 preserve two independent paths |
-| Q18 | Five original byte-exact Markdown components and two variants of SAME reviewer report; QA source receipt; reviewed PNG SHA ledger | Original reviewer source-scope PASS; author Git custody holds until six PNG are durably delivered | R1 exact source/receipt/asset |
+| Q18 | Five original byte-exact Markdown components and two variants of SAME reviewer report; QA source receipt; reviewed PNG SHA ledger | Original reviewer source PASS; author Git media custody CLOSED in commit 41222555, no altered content | R1 exact source/receipt/asset |
+
+## ORIGINAL_REVIEWED_PNG_ASSET_LOCK
+Six actual NotebookLM-reviewed PNG files (no original SVG binary is represented):
+- `prototypes/thpt/content-drafts/png/Temp_FIG-G12-CHIV-B11-PRIMITIVES-R00.png` Git blob `4e96237316480ba45d70311fd19ca58a61cb47a2`
+- `prototypes/thpt/content-drafts/png/Temp_FIG-G12-CHIV-B12-NEWTON-LEIBNIZ-R00.png` Git blob `e021d323e5cd6b78239f71c5aa831736a68adeb3`
+- `prototypes/thpt/content-drafts/png/Temp_FIG-G12-CHIV-B12-SIGNED-AREA-R00.png` Git blob `3145a6b8d4742f23824ca5c9f9d0b57413ef42a3`
+- `prototypes/thpt/content-drafts/png/Temp_FIG-G12-CHIV-B13-REVOLUTION-R00.png` Git blob `aa208f18683764a81346eeaec1a1c53aa16831a4`
+- `prototypes/thpt/content-drafts/png/Temp_FIG-G12-CHIV-B13-TWO-CURVES-R00.png` Git blob `a67d5f1589eef420c23236b9447bbff35bac19bb`
+- `prototypes/thpt/content-drafts/png/Temp_FIG-G12-CHIV-B13-VOLUME-SLICES-R00.png` Git blob `052f0ee20952f21d881b034af301d0880c9455ba`
+Every corresponding SHA256 is listed and checked in review receipt `feabeeeef262e7f6b28c898cdf77e6aa4194da24`. The original screenshot and lesson descriptions are unchanged; reviewer independent Academic/PED PASS remains scoped to R00.
 
 ## REVIEW_SOURCE_RECEIPT
-Owner supplied two files that are two **format variants of one NotebookLM verdict**, not independent full and targeted reviews. Canonical original report Git blob `99b8ff55ea948cc20d2c4fc5dd28b522273020ef`; pasted transcript variant blob `8bfce29262e1d4205f2e06537f652cce583e2d49`. Source wrapper `45722cd386a498f3e0e96a09928c85565af56d1b` is author-created after independent review, and its five R00 component source blobs are byte-exact; reviewer did not compute this wrapper SHA. Receipt blob `df7906ac4612f0496895fe48aa411b5ddf3d17b8` identifies source and all original media hashes.
+Owner supplied two files that are two **format variants of one NotebookLM verdict**, not independent full and targeted reviews. Canonical original report Git blob `99b8ff55ea948cc20d2c4fc5dd28b522273020ef`; pasted transcript variant blob `8bfce29262e1d4205f2e06537f652cce583e2d49`. Source wrapper `45722cd386a498f3e0e96a09928c85565af56d1b` is author-created after independent review, and its five R00 component source blobs are byte-exact; reviewer did not compute this wrapper SHA. Receipt blob `feabeeeef262e7f6b28c898cdf77e6aa4194da24` identifies exact five original source components, all six reviewed binary PNG SHA256 + Git blobs, and prior receipt custody history.
 
 ## DELTA_LEDGER
-`DELTA_B_SOURCE_EQUIVALENT_METADATA_ONLY`: clarification of official Q labels, two reviewer transcript format versions and PNG-versus-claimed-SVG label; source math, answers, rubrics and learner teaching unchanged. `DELTA_D_BLOCKER`: six reviewed PNG bytes must be durably supplied to release source Git custody and SHA-verified; without this, Q07/Q18 technical source provenance is incomplete though NotebookLM Academic/PED on original candidate remains PASS. No full chapter re-review needed merely for asset custody; if assets materially change, targeted review only affected visuals.
+`DELTA_B_SOURCE_EQUIVALENT_METADATA_ONLY`: clarification of official Q labels, two reviewer transcript format versions and PNG-versus-claimed-SVG label; source math, answers, rubrics and learner teaching unchanged. `DELTA_D_BLOCKER` closed: six original reviewed PNG binaries were uploaded to immutable Git paths at commit `4122255569847ae772935898c6de03cf011cd336`, each SHA256 and Git blob independently confirmed. The previous ASSET_CUSTODY_HOLD was packaging-only, not a new academic review failure. No full chapter re-review needed merely for asset custody; if assets materially change, targeted review only affected visuals.
 
 ## PRIVATE_RD1_CUSTODY_METADATA
 26 original private RD1 items reviewed under owner NotebookLM candidate; original SHA256 `c503b79dfd49e7b50cd3eebbe6d03a0f6f0025fe348b0e744642eec7c3fe9c74`. Raw stems, answers, rubrics and keys OFF PUBLIC GITHUB. `CLIENT_SELF_CHECK_NO_MASTERY` public end is NOT independent chapter readiness; Final Submit/answer exposure must be independently enforced by RELEASE at actual runtime.
 
 ## AUTHOR_SIGNOFF
-On frozen original R00 public content AUTHORING verified exact S1 PDFs, five source component Git blobs and 88/88 unique canonical IDs mapped to 22/22 outcomes; 22 end references clone no item, 22 written rubrics, 22 examples, 22 D6 and six first tries. ZIP original CRC OK and six reviewed PNG SHA256 exact. Source and reviewer receipts now Git-locked in this Draft authoring PR. **Not yet eligible for CONTENT_READY manifest/REGISTER** because external media binaries remain only in the original user-conversation ZIP. Closing action: place exactly six reviewed PNGs at immutable repository paths and verify the six SHA256 against receipt, then one V2 manifest in ready/ + REGISTER row + exact-head CI. No website integration, merge or deploy in authoring.
+On frozen original R00 public content AUTHORING verified exact S1 PDFs, five source component Git blobs and 88/88 unique canonical IDs mapped to 22/22 outcomes; 22 end references clone no item, 22 written rubrics, 22 examples, 22 D6 and six first tries. ZIP original CRC OK and six reviewed PNG SHA256 exact. Source and reviewer receipts now Git-locked in this Draft authoring PR. **Eligible for one CONTENT_READY manifest + one REGISTER row** because all six original reviewed PNGs are now immutable in Git with byte-exact SHA evidence; final approval subject to exact-HEAD source-lock/CI gate. No independent NotebookLM re-review is required for source-equivalent asset transport. No website integration, merge or deploy in authoring.
 
 ## RELEASE_R1_R5_AP1_AP5_P1_P2_UNCHECKED
-- [ ] R1 — Import exact academic/source receipt/PNG assets only after ASSET_CUSTODY_HOLD closed; preserve Q15 canonical IDs and source role.
+- [ ] R1 — Import exact academic/source receipt and six Git-locked PNG assets; ASSET_CUSTODY_HOLD is closed; preserve Q15 canonical IDs and source role.
 - [ ] R2 — Exact release HEAD CI and build/security Golden THCS/THPT.
 - [ ] R3 — Full SGK B11–B13 and end plus independent Topic pathway, MathJax/nav/deep links.
 - [ ] R4 — Final Submit no feedback/keys/Tutor/hint before submit; public self-check never official Readiness or Mastery; private RD1 not exposed.
