@@ -50,11 +50,11 @@ const seen=new Set();
 for(const q of [...bank.items,...bank.written]){
  const s=byId.get(q.item_id);assert(s,"Missing original item "+q.item_id);
  const fields=get(s.body);
- const stem=Object.entries(fields).find(([k])=>q.role==="SGK_WRITTEN"||q.role==="ANCHOR_TAG"?k.startsWith("Đề tự luận"):k==="Câu hỏi")?.[1];
- const answer=Object.entries(fields).find(([k])=>q.role==="SGK_WRITTEN"||q.role==="ANCHOR_TAG"?k.startsWith("Đáp án tự mở")||k.startsWith("Lời giải chuẩn"):k.startsWith("Đáp án"))?.[1];
+ const stem=Object.entries(fields).find(([k])=>q.placement==="SGK_WRITTEN"?k.startsWith("Đề tự luận"):k==="Câu hỏi")?.[1];
+ const answer=Object.entries(fields).find(([k])=>q.placement==="SGK_WRITTEN"?k.startsWith("Đáp án tự mở")||k.startsWith("Lời giải chuẩn"):k.startsWith("Đáp án"))?.[1];
  assert.equal(q.stem,stem,q.item_id+" stem changed");
  assert.equal(q.answer,answer,q.item_id+" answer changed");
- if(q.role==="SGK_WRITTEN"||q.role==="ANCHOR_TAG"){
+ if(q.placement==="SGK_WRITTEN"){
   const rubric=Object.entries(fields).find(([k])=>k.startsWith("Rubric /4"))?.[1];
   assert.equal(q.rubric,rubric,q.item_id+" rubric changed");
  }
