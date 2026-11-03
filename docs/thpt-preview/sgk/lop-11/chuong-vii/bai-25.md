@@ -4,19 +4,19 @@
 
 ## 1. Kiến thức SGK và ví dụ có suy luận
 
-### 1.1. Vì sao cần học (WHY)
+### 1.1. Vì sao cần học
 Cánh cửa với tường, hai mái nhà và mặt đáy của chóp tạo ra góc giữa **hai mặt**, không thể đo bằng cách lấy tùy tiện hai cạnh trên mặt.
 
-### 1.2. Khái niệm thực chất (WHAT)
+### 1.2. Khái niệm thực chất
 Góc giữa hai mặt phẳng là góc nhọn/vuông giữa hai đường pháp tuyến, thuộc [0°,90°]. Hai mặt phẳng vuông góc nếu góc bằng 90°. Góc nhị diện đo theo hai nửa mặt phẳng, có thể là góc tù; góc phẳng nhị diện tạo bởi hai tia cùng vuông góc giao tuyến tại một điểm.
 
-### 1.3. Hình thành và lập luận (HOW)
+### 1.3. Hình thành và lập luận
 Để đo góc phẳng nhị diện, cắt bởi một mặt phẳng vuông góc với giao tuyến, thu được hai tia thuộc hai nửa mặt. Nếu (P) chứa đường a vuông góc (Q), thì (P)⊥(Q). Nếu (P)⊥(Q) theo giao tuyến Δ và a∈(P) vuông góc Δ, thì a⊥(Q).
 
-### 1.4. Điều kiện, giới hạn, lỗi thường gặp (FORMAL)
+### 1.4. Điều kiện, giới hạn, lỗi thường gặp
 Không suy hai mặt phẳng vuông góc chỉ từ hai đường bất kì vuông góc, mỗi đường thuộc một mặt. Với hình chóp đều: đáy là đa giác đều, chân đường cao ở tâm đáy; lăng trụ đứng: cạnh bên vuông góc đáy; lăng trụ đều = lăng trụ đứng có đáy đa giác đều; chóp cụt đều có hai đáy đa giác đều song song, đồng dạng và mặt bên là hình thang cân.
 
-### 1.5. Làm rõ các định lí, điều kiện và cấu trúc SGK (DEEPENING)
+### 1.5. Làm rõ các định lí, điều kiện và cấu trúc SGK
 **Hai đối tượng góc cần tách bạch:** Hai *mặt phẳng* không có phía được chọn nên góc giữa chúng nằm trong [0°,90°], xác định bằng góc không tù giữa hai đường vuông góc tương ứng với hai mặt. Một *góc nhị diện* là hình tạo bởi **hai nửa mặt phẳng** cùng bờ Δ; chúng xác định một phần không gian nên **góc phẳng** đo được có thể lớn hơn 90°. Để dựng góc phẳng, chọn O∈Δ, trong mỗi nửa mặt lấy tia Ox, Oy cùng vuông góc Δ và đi ra phía đã chọn; ∠xOy chính là góc phẳng nhị diện. Nếu góc này tù 115°, thì góc giữa hai mặt phẳng chứa chúng là 65°.
 
 **Điều kiện chứng minh mặt vuông góc:** Nếu đường a nằm trong (P) và a⊥(Q), suy (P)⊥(Q). Khi (P)⊥(Q) cắt nhau theo Δ, nếu a⊂(P) và a⊥Δ thì a⊥(Q). Đừng thay a bởi đường bất kì thuộc (P) chưa chứng minh vuông góc giao tuyến; không phải *mọi* đường của một mặt đều vuông góc mặt kia.
@@ -25,7 +25,7 @@ Không suy hai mặt phẳng vuông góc chỉ từ hai đường bất kì vuô
 
 **Đường suy luận khi giải bài:** Nhận diện hình nào, xác định tâm đáy/đường cao, dùng tam giác vuông để tìm cạnh hoặc góc; không gắn nhãn “đều” chỉ vì hình vẽ trông cân đối. Với lăng trụ đứng có đáy không đều, nó **không phải** lăng trụ đều.
 
-### 1.6. Hình dẫn giải D5
+### 1.6. Hình minh họa và cách đọc
 
 <figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVII-B25-01_R00.svg" alt="Hình B25: Góc giữa hai mặt phải đo trong một tiết diện vuông góc giao tuyến; đánh dấu 90° của hai mặt bằng điều kiện vuông góc đường–mặt."/><figcaption>Hình B25: Góc giữa hai mặt phải đo trong một tiết diện vuông góc giao tuyến; đánh dấu 90° của hai mặt bằng điều kiện vuông góc đường–mặt.</figcaption></figure>
 
@@ -36,7 +36,7 @@ Hình chóp S.ABCD có SA⊥(ABCD). Vì SA⊂(SAB), hai mặt (SAB) và (ABCD) v
 
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Đã tự thử? Mở hướng dẫn tự đối chiếu</summary><p>Đối chiếu lập luận của em với phần ví dụ được giải thích dưới đây. Đây là hoạt động luyện tập, không ghi Skill Mastery.</p></details>
 
-### 1.8. Ví dụ có hướng dẫn D2 (giải thích vì sao chọn phương pháp)
+### 1.8. Ví dụ có hướng dẫn (vì sao chọn phương pháp)
 
 
 #### EX-G11-CHVII-B25-01 — Tiết diện đo góc hai mặt
@@ -75,7 +75,7 @@ Hình chóp S.ABCD có SA⊥(ABCD). Vì SA⊂(SAB), hai mặt (SAB) và (ABCD) v
 
 
 
-## 2. Tự khắc phục — D6
+## 2. Tự khắc phục lỗi
 
 <details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVII-B25-01"><summary><strong>Nhận diện lỗ hổng:</strong> Nhầm góc nhị diện với góc hai mặt.</summary><ol><li><strong>Nhận diện lỗ hổng:</strong> Nhầm góc nhị diện với góc hai mặt.</li><li><strong>Nhắc đúng bản chất:</strong> Góc nhị diện có thể tù, góc không định hướng giữa hai mặt ≤90°.</li><li><strong>Nhìn lại kiến thức và hình:</strong> Đọc lại phần WHY/WHAT/HOW của B25, tự phát biểu điều kiện bằng lời và kiểm tra đúng hình SVG của bài, không suy luận từ phối cảnh.</li><li><strong>Tự luyện có hướng dẫn:</strong> Góc phẳng nhị diện 116°, góc giữa hai mặt? <strong>Sau khi tự làm mới đối chiếu:</strong> 64°.</li><li><strong>Quay về câu gốc:</strong> <code>THPT-G11-CHVII-B25-C02</code>; giải lại và giải thích mỗi bước. HELP chỉ hiện sau nộp câu *luyện tập*, tuyệt đối không hiện trong RD1 trước Final Submit.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVII-B25-C02">Quay lại câu canonical THPT-G11-CHVII-B25-C02</a></p></details>
 
