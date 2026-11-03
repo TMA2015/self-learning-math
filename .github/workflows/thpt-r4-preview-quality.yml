@@ -209,6 +209,8 @@ jobs:
         run: node scripts/test-thpt-g11-chi-ped-release-gates.cjs
       - name: Guard G11 ChII R03 exact source, canonical D6 and client-only Q16 self-check
         run: node scripts/test-thpt-g11-chii-release-integration.cjs
+      - name: Guard G11 ChIII R03 exact source, original SVG and Q16 public-only selfcheck
+        run: node scripts/test-thpt-g11-chiii-release-integration.cjs
       - name: Guard G10 ChIX source-locked public formative and reviewed D5/D6
         run: |
           node scripts/test-thpt-g10-chix-reviewed-stage3.cjs
@@ -330,6 +332,8 @@ jobs:
         run: node scripts/test-thpt-g11-chi-b03-b04-browser-smoke.cjs
       - name: G11 ChII B05–B07 learner AP browser QA · 390 820 1440
         run: node scripts/test-thpt-g11-chii-browser-smoke.cjs
+      - name: G11 ChIII B08–B09 learner browser AP QA · 390 820 1440
+        run: node scripts/test-thpt-g11-chiii-browser-smoke.cjs
       - name: Academic Presentation QA pilot · MathJax overflow / 390 820 1440
         run: node scripts/test-thpt-academic-presentation-browser.cjs
       - name: Academic Presentation QA G10 B03 · 390 820 1440
