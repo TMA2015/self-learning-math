@@ -44,13 +44,13 @@ MASTERY_ACTIVATION: NO
 See the single `QUALITY_Q01_Q18_EVIDENCE` table under the canonical `AUTHOR_HANDOFF` and reviewer source receipt. Corrected normative Q labels and exact single `SLM-THPT-QUALITY-ONE v1.0.0` standard (not second rubric). Snapshot R00 is locked; release must not silently revise source.
 
 ## RELEASE R1–R5/AP1–AP5/P1/P2 — NOT YET PASSED
-- [ ] R1 — Independently match SHA `856a37bd` and receipt `92c07bc9`, import only student source/SVG, no duplicate bank.
-- [ ] R2 — Exact HEAD CI of rendered site/THCS/THPT/Golden.
-- [ ] R3 — Real SGK student path + formulas/navigation/MathJax/3 SVG and true Written library.
-- [ ] R4 — Final Submit gating no key/hints before final; public reused 16 placements are `CLIENT_SELF_CHECK_NO_MASTERY` ONLY, free-text manual review; private RD1 held out.
-- [ ] R5 — Owner explicit authorization for G12 website release when all real release gates pass.
+- [ ] R1_INTEGRATED_CURRENT_MAIN — Independently match SHA `856a37bd` and receipt `92c07bc9`, import only student source/SVG, no duplicate bank.
+- [ ] R2_EXACT_HEAD_CI — Exact HEAD CI of rendered site/THCS/THPT/Golden.
+- [ ] R3_CLEAN_STUDENT_UI — Real SGK student path + formulas/navigation/MathJax/3 SVG and true Written library.
+- [ ] R4_ASSESSMENT_SAFETY — Final Submit gating no key/hints before final; public reused 16 placements are `CLIENT_SELF_CHECK_NO_MASTERY` ONLY, free-text manual review; private RD1 held out.
+- [ ] R5_OWNER_APPROVAL — Owner explicit authorization for G12 website release when all real release gates pass.
 - [ ] AP1–AP5 — Real student learning hierarchy, MathJax, 3 SVG, first-try/D6 and responsive desktop/mobile/iPad.
-- [ ] P1 — Deployed main/gh-pages content and asset parity not verified.
-- [ ] P2 — Actual iPhone/iPad Safari acceptance not verified.
+- [ ] P1_DEPLOY_RECEIPT — Deployed main/gh-pages content and asset parity not verified.
+- [ ] P2_DEVICE_UAT — Actual iPhone/iPad Safari acceptance not verified.
 
 **SOURCE_LOCK_PASS does not mean RELEASE_READY.** AUTHORING signs content only; no website edits, merge, deploy, Firebase/Gemini or Mastery. SOURCE_COMMIT/PR-number will be recorded against final author PR HEAD in the PR description/checkpoint; these TBA labels are explicit non-claims and not a new source version.
