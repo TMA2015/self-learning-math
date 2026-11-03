@@ -4,10 +4,10 @@
 
 ## 1. Kiến thức SGK — hình thành bản chất trước công thức
 
-### 1.1. WHY — Vận tốc thay đổi nhanh hay chậm?
+### 1.1. Vận tốc thay đổi nhanh hay chậm?
 Đạo hàm thứ nhất của quãng đường/tọa độ theo thời gian cho **vận tốc tức thời**. Nhưng khi đang lái xe, vận tốc cũng có thể tăng hoặc giảm: cần tốc độ biến đổi của **vận tốc**, tức **gia tốc**. Đó là động cơ của đạo hàm cấp hai, không phải kí hiệu bí hiểm có hai dấu phẩy.
 
-### 1.2. WHAT & HOW — Lấy đạo hàm của chính hàm đạo hàm
+### 1.2. Lấy đạo hàm của chính hàm đạo hàm
 Nếu $f$ có đạo hàm $f'$ trên một khoảng và $f'$ lại có đạo hàm thì $f''=(f')'$ là **đạo hàm cấp hai**. Không nhầm $f''$ với $(f')^2$. Chẳng hạn $f(x)=x^3-2x^2+5$: $f'=3x^2-4x$, $f''=6x-4$; còn $(f')^2=(3x^2-4x)^2$ rất khác. Đạo hàm cấp hai không tự tồn tại ở mọi điểm chỉ vì f có đạo hàm lần một.
 
 ### 1.3. Dùng quy tắc đã học để tính lần hai
@@ -26,11 +26,11 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 **Liên kết D6:** `HELP-G11-CHIX-B33-01` (nhầm lần hai), `...-02` (vận tốc/gia tốc và dấu), `...-03` (suy đơn vị và phạm vi thời gian).
 
-### 1.7. Đọc hình để hiểu lập luận (D5)
+### 1.7. Đọc hình để hiểu lập luận
 
 <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHIX-B33-01_R00.svg" alt="Hình FIG-G11-CHIX-B33-01 minh họa lập luận trong Bài 33" /><figcaption>Hình D5 — FIG-G11-CHIX-B33-01. Đọc hình theo lời giải thích trong phần Kiến thức ở trên.</figcaption></figure>
 
-## 2. Ví dụ có suy luận D2
+## 2. Ví dụ có suy luận
 
 #### EX-G11-CHIX-B33-01: Hai lần đa thức
 
@@ -83,7 +83,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 ---
 
-## 3. Tự khắc phục lỗi D6
+## 3. Tự khắc phục lỗi
 
 <details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHIX-B33-01"><summary><strong>Chẩn đoán lỗi:</strong> Nhầm f'' với (f')².</summary><ol><li><strong>Phát hiện lỗi:</strong> Nhầm f'' với (f')².</li><li><strong>Truy lại bản chất + điều kiện:</strong> Đạo hàm cấp hai là đạo hàm tiếp của hàm f', không phải bình phương.</li><li><strong>Xem lại vì sao (WHY/HOW):</strong> Mở D1 B33, so sánh mệnh đề định nghĩa với ví dụ D2; giải thích bằng lời trước khi biến đổi ký hiệu.</li><li><strong>Tự luyện câu khác có dẫn dắt:</strong> Với f=x², tính f'' và (f')². <strong>Tự kiểm sau khi thử:</strong> f''=2; (f')²=4x².</li><li><strong>Trở về câu canonical:</strong> <code>THPT-G11-CHIX-B33-C01</code> và giải lại, tự giải thích lí do từng bước; không lấy xem lời giải làm chứng cứ độc lập cho Mastery.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHIX-B33-C01">Quay lại câu canonical THPT-G11-CHIX-B33-C01</a></p></details>
 
