@@ -1,6 +1,6 @@
 # Bài 27. Thể tích
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG VII · SGK KNTT TẬP 2</p><p class="thpt-r4-lead">Hiểu WHY → khái niệm và lý do → hình minh họa có hướng dẫn đọc → Tự thử trước Core → ví dụ suy luận → tự thực hành và khắc phục. Không ghi Skill Mastery.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương VII</a><a href="../luyen-tap/">Core/Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra tự đối chiếu</a></nav></div>
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG VII · SGK KNTT TẬP 2</p><p class="thpt-r4-lead">Hiểu lý do cần học → khái niệm và lý do → hình minh họa có hướng dẫn đọc → Tự thử trước Core → ví dụ suy luận → tự thực hành và khắc phục. Không ghi Skill Mastery.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương VII</a><a href="../luyen-tap/">Core/Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra tự đối chiếu</a></nav></div>
 
 ## 1. Kiến thức SGK và ví dụ có suy luận
 
@@ -75,7 +75,7 @@ Chiều cao **vuông góc** hai đáy, không tự dùng cạnh xiên. Đơn v�
 
 ## 2. Tự khắc phục lỗi
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVII-B27-01"><summary><strong>Nhận diện lỗ hổng:</strong> Lấy trung bình cộng diện tích đáy rồi nhân h cho chóp cụt.</summary><ol><li><strong>Nhận diện lỗ hổng:</strong> Lấy trung bình cộng diện tích đáy rồi nhân h cho chóp cụt.</li><li><strong>Nhắc đúng bản chất:</strong> Phải có thêm √SS′ trong công thức chóp cụt đều.</li><li><strong>Nhìn lại kiến thức và hình:</strong> Đọc lại phần WHY/WHAT/HOW của B27, tự phát biểu điều kiện bằng lời và kiểm tra đúng hình SVG của bài, không suy luận từ phối cảnh.</li><li><strong>Tự luyện có hướng dẫn:</strong> S=16,S′=4,h=3, V? <strong>Sau khi tự làm mới đối chiếu:</strong> 28.</li><li><strong>Quay về câu gốc:</strong> <code>THPT-G11-CHVII-B27-C04</code>; giải lại và giải thích mỗi bước. HELP chỉ hiện sau nộp câu *luyện tập*, tuyệt đối không hiện trong RD1 trước Final Submit.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVII-B27-C04">Quay lại câu canonical THPT-G11-CHVII-B27-C04</a></p></details>
+<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVII-B27-01"><summary><strong>Nhận diện lỗ hổng:</strong> Lấy trung bình cộng diện tích đáy rồi nhân h cho chóp cụt.</summary><ol><li><strong>Nhận diện lỗ hổng:</strong> Lấy trung bình cộng diện tích đáy rồi nhân h cho chóp cụt.</li><li><strong>Nhắc đúng bản chất:</strong> Phải có thêm √SS′ trong công thức chóp cụt đều.</li><li><strong>Nhìn lại kiến thức và hình:</strong> Đọc lại phần vì sao cần học, khái niệm và cách lập luận của B27, tự phát biểu điều kiện bằng lời và kiểm tra đúng hình SVG của bài, không suy luận từ phối cảnh.</li><li><strong>Tự luyện có hướng dẫn:</strong> S=16,S′=4,h=3, V? <strong>Sau khi tự làm mới đối chiếu:</strong> 28.</li><li><strong>Quay về câu gốc:</strong> <code>THPT-G11-CHVII-B27-C04</code>; giải lại và giải thích mỗi bước. HELP chỉ hiện sau nộp câu *luyện tập*, tuyệt đối không hiện trong RD1 trước Final Submit.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVII-B27-C04">Quay lại câu canonical THPT-G11-CHVII-B27-C04</a></p></details>
 
 ## 3. Tiếp tục
 
