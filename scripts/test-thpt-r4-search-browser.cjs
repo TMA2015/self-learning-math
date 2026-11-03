@@ -68,7 +68,7 @@ const base="http://127.0.0.1:8765/thpt-preview/";
    assert((await result.first().getAttribute("href")).endsWith("chuong-v/bai-13/"));
    result=await query("bài 14",2); // Both G10 and newly released G11 B14
    assert((await result.first().getAttribute("href")).endsWith("chuong-v/bai-14/"));
-   result=await query("lớp 11",8); // G11 ChI–ChVIII, current release candidate
+   result=await query("lớp 11",9); // G11 ChI–ChVIII, current release candidate
    assert((await result.first().getAttribute("href")).endsWith("lop-11/chuong-i/"));
    result=await query("lớp 11, chương I, bài 1",1);
    assert((await result.first().getAttribute("href")).endsWith("lop-11/chuong-i/bai-1/"));
@@ -138,6 +138,12 @@ const base="http://127.0.0.1:8765/thpt-preview/";
    assert(overflow<=20,"Search UI overflow at "+viewport.width);
    await page.close();
   }
+     result=await query("lớp 11, chương IX",1);
+   assert((await result.first().getAttribute("href")).endsWith("lop-11/chuong-ix/"),"G11 ChIX chapter search");
+   for(const n of [31,32,33]){
+    result=await query("lớp 11, bài "+n,1);
+    assert((await result.first().getAttribute("href")).endsWith("lop-11/chuong-ix/bai-"+n+"/"),"G11 B"+n+" search");
+   }
   const thcs=await browser.newPage({viewport:{width:390,height:844}});
   await thcs.goto("http://127.0.0.1:8765/kien-thuc/",{waitUntil:"networkidle"});
   assert.equal(await thcs.locator(".library-search").count(),1,
