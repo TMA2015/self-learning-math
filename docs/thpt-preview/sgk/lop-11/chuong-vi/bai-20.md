@@ -8,25 +8,25 @@
 
 **Cách đọc và phát hiện:** Hình B20 đặt hai hàm trên **cùng hệ trục và cùng tỉ lệ**, để thấy điểm (0,1) của y=2^x tương ứng (1,0) của y=log₂x. Hãy tìm thêm cặp (1,2) ↔ (2,1); đường nét đứt y=x biểu diễn trục đối xứng, không phải một hàm cần giải.
 
-### 1. Tại sao phải học đồ thị và hàm chứ không chỉ một giá trị?
+### 1.1. Tại sao phải học đồ thị và hàm chứ không chỉ một giá trị?
 
 Lũy thừa `2³` trả lời cho một mốc; nhưng lượng vi khuẩn sau **mọi** khoảng thời gian t cần một quy tắc `N(t)=N₀·2^t`. Khi t thay đổi, kết quả thay đổi ra sao? Ta xét **hàm số mũ**. Nếu biết số lượng vi khuẩn và muốn suy thời gian, ta cần đi ngược lại bằng lôgarit — **hàm số lôgarit**.
 
-### 2. Hàm số mũ là gì, đồ thị nói điều gì
+### 1.2. Hàm số mũ là gì, đồ thị nói điều gì
 
 Với `a>0, a≠1`, hàm `f(x)=a^x` là hàm số mũ: **biến x nằm ở số mũ**, không giống `x²` với biến ở cơ số. Mọi x thực đều được nhận (**TXĐ `ℝ`**), `f(x)>0` (**tập giá trị `(0,+∞)`**), đồ thị qua `(0,1)` và `(1,a)`.
 
 Quan sát `2^{-2}=1/4;2^{-1}=1/2;2⁰=1;2¹=2;2²=4`. Đi sang phải một đơn vị thì gấp đôi; hàm tăng **khi a>1**. Với `a=1/2`, mỗi bước sang phải chia đôi → **giảm**. Cả hai đường không cắt trục hoành vì `a^x>0`, và tiến sát trục `y=0` ở phía x→−∞ nếu a>1 (hoặc x→+∞ nếu 0<a<1). Đó là **tiệm cận ngang y=0** — một đường đồ thị tiến sát, không nhất thiết chạm.
 
-### 3. Hàm logarit là gì, vì sao điều kiện x>0?
+### 1.3. Hàm logarit là gì, vì sao điều kiện x>0?
 
 `g(x)=log_a x`, với a>0,a≠1. Vì `a^y=x>0`, **TXĐ g: (0,+∞)**; mọi số thực y có thể là logarit của một x dương, nên **tập giá trị ℝ**. Đồ thị qua `(1,0)` và `(a,1)`. Nếu a>1 nó tăng; nếu 0<a<1 nó giảm. Khi x→0⁺, đồ thị tiến sát đường thẳng `x=0` (**tiệm cận đứng**), nhưng không chạm do x>0.
 
-### 4. Hai hàm là “làm” và “làm ngược”
+### 1.4. Hai hàm là “làm” và “làm ngược”
 
 Nếu `y=2^x` thì `x=log₂y`. Trên đồ thị, mỗi điểm `(x,y)` của hàm mũ ứng với `(y,x)` của logarit; hai đồ thị đối xứng qua đường `y=x`. **Vì sao quan trọng?** Khi bài toán cho thời gian, dùng hàm mũ; khi cho mức đã đạt và cần tìm thời gian, dùng logarit.
 
-### 5. Tự thử
+### 1.5. Tự thử
 
 Vì sao `y=3^x` không thể bằng −5? Nếu `log₂8=3`, hãy tìm hai điểm tương ứng trên hai đồ thị. Vì sao `log_{1/2}x` nghịch biến?
 
