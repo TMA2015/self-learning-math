@@ -56,7 +56,7 @@ Hai cảm biến **hoạt động độc lập**, có xác suất phát hiện l
 
 **Nhiệm vụ:** Hai lần kiểm độc lập, mỗi lần tỉ lệ đạt 3/5. Tính xác suất ít nhất một lần đạt.
 
-**Đáp án và lời giải:** 1−(2/5)^2=21/25.
+**Đáp án và lời giải:** 1−(2/5)<sup>2</sup>=21/25.
 
 **Tại sao cách làm đúng:** Tính bù là hai lần đều trượt: 2/5·2/5.
 
