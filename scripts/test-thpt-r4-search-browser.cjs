@@ -56,15 +56,17 @@ const base="http://127.0.0.1:8765/thpt-preview/";
    await query("toa do",2);
    result=await query("chương IV, bài 9",1);
    assert((await result.first().getAttribute("href")).endsWith("chuong-iv/bai-9/"));
-   result=await query("bài 10",1);
+   result=await query("bài 10",2); // Both G10 and newly released G11 B10
    assert((await result.first().getAttribute("href")).endsWith("chuong-iv/bai-10/"));
-   result=await query("bài 11",1);
+   result=await query("bài 11",2); // Both G10 and newly released G11 B11
    assert((await result.first().getAttribute("href")).endsWith("chuong-iv/bai-11/"));
+   result=await query("bài 12",2); // Both G10 and newly released G11 B12
+   assert((await result.first().getAttribute("href")).endsWith("chuong-v/bai-12/"));
    result=await query("chương V, bài 12",1);
    assert((await result.first().getAttribute("href")).endsWith("chuong-v/bai-12/"),"Released B12 should be found");
-   result=await query("bài 13",1);
+   result=await query("bài 13",2); // Both G10 and newly released G11 B13
    assert((await result.first().getAttribute("href")).endsWith("chuong-v/bai-13/"));
-   result=await query("bài 14",1);
+   result=await query("bài 14",2); // Both G10 and newly released G11 B14
    assert((await result.first().getAttribute("href")).endsWith("chuong-v/bai-14/"));
    result=await query("lớp 11",4); // G11 ChI–ChIV
    assert((await result.first().getAttribute("href")).endsWith("lop-11/chuong-i/"));
