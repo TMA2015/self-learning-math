@@ -9,10 +9,10 @@ for(const [lesson,expectedHash,expectedSections] of [[3,"ceeb82fb",7],[4,"520176
  const a=text.indexOf("## 1. Kiến thức SGK"),b=text.indexOf("## 2. Ví dụ",a);
  assert(a>=0&&b>a,"Missing B0"+lesson+" D1/D2 boundaries");
  const portion=text.slice(a,b);
- const headings=[...portion.matchAll(/^### (\d+)\. (.+)$/gm)];
+ const headings=[...portion.matchAll(/^### 1\.(\d+)\. (.+)$/gm)];
  assert.equal(headings.length,expectedSections,"Expected discrete learner-facing concept sections");
  for(let i=0;i<headings.length;i++)assert.equal(Number(headings[i][1]),i+1,"Original concept order preserved");
- const restored=portion.replace(/^### (\d+)\. (.+)\n\n/gm,(_,n,label)=>n+". **"+label+":** ");
+ const restored=portion.replace(/^### 1\.(\d+)\. (.+)\n\n/gm,(_,n,label)=>n+". **"+label+":** ");
  assert.equal(fnv(restored),expectedHash,"D1 academic source changed beyond reversible heading layout: classify and review delta");
  assert(!/^(\d+)\. \*\*/m.test(portion),"All dense numbered knowledge lines should become readable sections");
 }
