@@ -42,6 +42,7 @@ on:
       # Run this existing regression on every G11 learner-page integration, too.
       - 'docs/thpt-preview/sgk/lop-11/**'
       - 'docs/assets/javascripts/math-details-v1.js'
+      - 'docs/assets/javascripts/thpt-r4-preview.js'
       - 'docs/assets/stylesheets/thpt-r4-preview.css'
       - 'mkdocs.yml'
       - '.github/workflows/skill-assessment-pilot-qa.yml'
