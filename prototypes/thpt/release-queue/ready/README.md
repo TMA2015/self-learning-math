@@ -1,5 +1,10 @@
 # Học liệu THPT — đã phát hành và sẵn sàng bàn giao
 
+## CONTENT_READY — G12 hoạt động trải nghiệm SGK (AUTHORING only)
+
+- [G12-SGK-EXP01-EXP02-R01](G12-SGK-EXP01-EXP02-R01.md): owner approved V2 `SGK_EXPERIENCE_SUPPLEMENT` scope (not chapter/Topic). SGK Toán 12 KNTT Tập Hai printed pp81–89, two original activities, 10 outcomes, 40 unique public Core/Practice/Application/Written items, 5 original PNG, 10 HELP; Academic+PED Q01–Q18 independent PASS, source blob `8a34d1cf4009b9b6511a34c08c5d8e31525a6a46` + corrected Q18 receipt `b765e732fa8049482936dbededfafd7b9eb99341`. Exact-head CI still required before external intake; no independent RD1, no Readiness/Mastery, no integration/merge/deploy approval.
+
+
 ## PUBLISHED_SCOPED · PUBLIC_FORMATIVE_ONLY
 
 - [Chương VII](G10-SGK-CHVII.md): B19–B22; 32 formative + 4 Written, 3 reviewed SVG D5, 8 reviewed D6 cards.
