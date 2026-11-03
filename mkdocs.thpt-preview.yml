@@ -128,6 +128,13 @@ nav:
               - Bài 27 · Thể tích: thpt-preview/sgk/lop-11/chuong-vii/bai-27.md
               - Core và Luyện tập Bài 22–27: thpt-preview/sgk/lop-11/chuong-vii/luyen-tap.md
               - Tự kiểm tra tự đối chiếu Bài 22–27: thpt-preview/sgk/lop-11/chuong-vii/tu-kiem-tra-chuong.md
+          - Chương VIII · Các quy tắc tính xác suất (Bài 28–30):
+              - Tổng quan Chương VIII: thpt-preview/sgk/lop-11/chuong-viii.md
+              - Bài 28 · Biến cố hợp, biến cố giao, biến cố độc lập: thpt-preview/sgk/lop-11/chuong-viii/bai-28.md
+              - Bài 29 · Công thức cộng xác suất: thpt-preview/sgk/lop-11/chuong-viii/bai-29.md
+              - Bài 30 · Công thức nhân xác suất cho hai biến cố độc lập: thpt-preview/sgk/lop-11/chuong-viii/bai-30.md
+              - Core và Luyện tập Bài 28–30: thpt-preview/sgk/lop-11/chuong-viii/luyen-tap.md
+              - Tự kiểm tra tự đối chiếu Bài 28–30: thpt-preview/sgk/lop-11/chuong-viii/tu-kiem-tra-chuong.md
   - Học theo chuyên đề:
       - Tổng quan chuyên đề: thpt-preview/chuyen-de/index.md
       - Hàm số và đồ thị:
@@ -152,6 +159,7 @@ nav:
       - Tự luận Toán 11 · Chương V B15–B17: thpt-preview/thu-vien/tu-luan-g11-chuong-v.md
       - Tự luận Toán 11 · Chương VI B18–B21: thpt-preview/thu-vien/tu-luan-g11-chuong-vi.md
       - Tự luận Toán 11 · Chương VII B22–B27: thpt-preview/thu-vien/tu-luan-g11-chuong-vii.md
+      - Tự luận Toán 11 · Chương VIII B28–B30: thpt-preview/thu-vien/tu-luan-g11-chuong-viii.md
       - Bài mẫu tiêu biểu: thpt-preview/thu-vien/bai-mau-tieu-bieu.md
       - Bản đồ kỹ năng: thpt-preview/thu-vien/ban-do-ky-nang.md
   - Tiến độ học tập: thpt-preview/tien-do.md
@@ -239,6 +247,7 @@ extra_javascript:
   - assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js
   - assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js
   - assets/javascripts/thpt-g11-chvii-b22-b27-source-locked-formative-r01.js
+  - assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js
   - assets/javascripts/thpt-r4-preview.js
   - assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js
   - assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js
