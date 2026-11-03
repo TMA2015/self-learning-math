@@ -764,7 +764,7 @@
      const find=(pattern)=>{const match=text.match(pattern);if(match)text=fold(text.replace(match[0]," "));return match?.[1]||null};
      const grade=find(/\blop\s*(10|11|12)\b/);
      const chapterRaw=find(/\bchuong\s*(viii|vii|iii|vii|vi|iv|ix|ii|v|i|[1-9])\b/);
-     const lessonRaw=find(/\b(?:bai|b)\s*0?([1-9]|1[0-9]|2[0-7])\b/);
+     const lessonRaw=find(/\b(?:bai|b)\s*0?([1-9]|1[0-9]|2[0-9]|30)\b/);
      const topicRaw=find(/\bchuyen de\s*0?([1-9][0-9]?)\b/);
      return {grade,chapter:chapterRaw?(roman[chapterRaw]||Number(chapterRaw)):null,
        lesson:lessonRaw?Number(lessonRaw):null,topic:topicRaw?Number(topicRaw):null,
