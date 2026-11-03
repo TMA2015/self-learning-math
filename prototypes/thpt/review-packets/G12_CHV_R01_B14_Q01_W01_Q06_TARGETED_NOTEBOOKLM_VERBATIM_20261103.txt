@@ -1,0 +1,130 @@
+### BÁO CÁO PHẢN BIỆN HỌC THUẬT ĐỘC LẬP
+**ĐỐI CHIẾU MỤC TIÊU BÀI 14 (TOÁN 12 CHƯƠNG V) THEO CHUẨN SLM-THPT-QUALITY-ONE v1.1.0**
+*(Thẩm định hẹp Cổng Q01 Bài 14 và Cổng Q06 Item `THPT-G12-B14-W01` theo Delta C)*
+
+---
+
+### TÓM TẮT QUẢN TRỊ (EXECUTIVE SUMMARY)
+
+1. **`TARGETED_B14_Q01_ACADEMIC_VERDICT = PASS`**  
+   Thực hiện thẩm định lại Cổng Q01 đối với SGK Toán 12 KNTT Bài 14 (*Phương trình mặt phẳng*) theo đúng định nghĩa đã được cập nhật chính thức tại **`SLM-THPT-QUALITY-ONE v1.1.0`** (Governance merge SHA: `049fa190b05c3562816670d51defc62965986c31`):
+   * Ghi nhận chính thức khoảng khuyết tệp scan S1 SBT: **`SBT_REFERENCE_GAP_DOCUMENTED = YES`** đối với trang in **25** (chứa bài tập 5.6–5.7) bị thiếu trong bản scan PDF S1 gốc (`sach-bai-tap-toan-12 - TẬP 2 - KNTT.pdf`).
+   * Chiếu theo Điều Q01 v1.1.0, SBT là nguồn tham khảo dạng bài/phương pháp/độ sâu, không phải bộ câu bắt buộc phải chép lại. Do 7 Outcomes (`O01`–`O07`) cùng các dạng bài, phương pháp, giả thiết và điều kiện toán học Core Bài 14 trong SGK đã được thẩm định độc lập đầy đủ và chính xác 100%, việc khuyết 1 trang SBT tham khảo không còn là điều kiện giữ trạng thái HOLD.
+   * Xác định vị trí học thuật của `G12-CHV-B14-O07` (*Giao mặt cầu – mặt phẳng*): Do mặt cầu được giảng dạy chính thức ở Bài 17, `O07` tại Bài 14 đóng vai trò **vận dụng tích hợp liên bài (`SGK_APPLICATION`)**, mở rộng năng lực cho học sinh mà không làm ảnh hưởng đến tính trọn vẹn của 6 Outcomes Core (`O01`–`O06`) thuộc Bài 14.
+
+2. **`W01_Q06_DELTA_C_VERDICT = PASS`**  
+   Thẩm định đề xuất điều chỉnh Rubric tự luận theo **`DELTA_C_ACADEMIC_MATERIAL`** cho câu `THPT-G12-B14-W01` (`G12-CHV-B14-O01`):
+   * **Khắc phục lỗi Q06 ở R00:** Rubric R00 cũ chấm việc "tìm một pháp tuyến khác 0 và kiểm vuông góc", mâu thuẫn với đề bài cho hai vectơ cùng phương \\(\vec{u}=(1,1,0), \vec{v}=(2,2,0) \implies \vec{u} \times \vec{v} = \vec{0}\\).
+   * **Phê duyệt Rubric R01 mới (Thang điểm 5):** Phân rã 5 điểm chuẩn xác theo đúng yêu cầu đề: 
+     * **2 điểm:** Chỉ ra \\(\vec{v} = 2\vec{u}\\); hai vectơ cùng phương nên không xác định cặp hướng độc lập của mặt phẳng.
+     * **1 điểm:** Tính/chứng minh \\(\vec{u} \times \vec{v} = (0,0,0)\\).
+     * **1 điểm:** Giải thích \\(\vec{0}\\) không thể làm vectơ pháp tuyến.
+     * **1 điểm:** Nêu cách khắc phục (chọn hướng thứ hai không cùng phương với \\(\vec{u}\\)).
+
+3. **BẢO TỒN RANH GIỚI HỆ THỐNG VÀ HIỆU LỰC ĐÃ CÓ:**  
+   * **Giữ nguyên Academic PASS cho Bài 15–17** và **PEDAGOGICAL_SELF_LEARNING_READY = PASS** cho toàn bộ Chương V đã được kết luận ở các phiên thẩm định trước.
+   * **`CONTENT_READY = NO` | `EXPOSURE_SYSTEM_VERDICT = SYSTEM_HOLD` | `RELEASE_AUTHORIZATION = NO` | `MASTERY_ACTIVATION = NO`**. Báo cáo này không tự cấp phép phát hành, không merge/deploy code và không kích hoạt ghi nhận Mastery.
+
+---
+
+### I. SOURCE_RECEIPT & PROVENANCE KIỂM TOÁN
+
+| Hạng mục / Tệp nguồn | Thông số Kỹ thuật & Mã Băm | Phạm vi / Trang in S1 | Ghi chú Trạng thái |
+| :--- | :--- | :--- | :--- |
+| **Tiêu chuẩn áp dụng** | `SLM-THPT-QUALITY-ONE v1.1.0` | Governance SHA: `049fa190...` | Merge chính thức PR #726 |
+| **5 Permanent Sources** | THPT Version 2.1 | `01_MASTER_PLAN_v2.1` đến `05_CONTRACT_v2.1` | Chuẩn quy tắc kiểm toán độc lập |
+| **SGK Toán 12 KNTT Tập 2** | SHA256: `3c642f2e80d86d699ea62bbcabd0c3074fd5118def96e4b3b8ce1f9ead7f97bb` | Bài 14 trang in **29–40** (PDF 1-based **31–42**) | Xem trực tiếp bản scan S1 |
+| **SBT Toán 12 KNTT Tập 2** | SHA256: `823b013adeb487639e55493b4a7c09edb9a21daabc058ea53e6fe92f7a0352f1` | Bài 14 trang in **22–24** (PDF 1-based **21–23**) | **Khuyết trang in 25** (Bài 5.6–5.7) |
+| **Ghi nhận Lỗ hổng S1** | **`SBT_REFERENCE_GAP_DOCUMENTED = YES`** | Trang in 25 không có trong bản scan | Đã ghi nhận theo chuẩn v1.1.0 |
+| **Tệp Snapshot Q01** | `Temp_G12_CHV_B14_Q01_v1_1_TARGETED_20261103.md` | PR #725 / Snapshot Candidate | Phản biện Q01 v1.1.0 |
+| **Tệp Snapshot W01** | `Temp_G12_CHV_B14_W01_Q06_DELTA_C_20261103.md` | Delta C / `THPT-G12-B14-W01` | Phản biện Rubric /5 R01 |
+
+---
+
+### II. PHẦN I: PHẢN BIỆN CỔNG Q01 BÀI 14 (SLM-THPT-QUALITY-ONE v1.1.0)
+
+#### 1. Đánh giá Ma trận 7 Outcomes và Độ phủ Học thuật Bài 14
+
+| Outcome ID | Nội dung Năng lực Core | Tình trạng Kiểm toán Học thuật | Mã Item Canonical R00 |
+| :--- | :--- | :--- | :---: |
+| `G12-CHV-B14-O01` | Cặp VTCP không cùng phương, tích có hướng tìm VTPT \\(\vec{n} = \vec{u} \times \vec{v} \neq \vec{0}\\). | **Đạt chuẩn** (Chính xác ĐKXĐ và phép nhân tích có hướng). | `C01`, `P01`, `A01`, `W01` |
+| `G12-CHV-B14-O02` | Phương trình tổng quát mặt phẳng qua \\(M_0(x_0,y_0,z_0)\\) nhận \\(\vec{n}=(A,B,C) \neq \vec{0}\\). | **Đạt chuẩn** (Viết dạng \\(A(x-x_0)+B(y-y_0)+C(z-z_0)=0\\)). | `C02`, `P02`, `A02`, `W02` |
+| `G12-CHV-B14-O03` | Lập mặt phẳng đi qua 3 điểm không thẳng hàng \\(A, B, C\\). | **Đạt chuẩn** (Kiểm tra \\([\vec{AB}, \vec{AC}] \neq \vec{0}\\)). | `C03`, `P03`, `A03`, `W03` |
+| `G12-CHV-B14-O04` | Mặt phẳng chứa trục tọa độ / song song hai hướng / phương trình theo đoạn chắn. | **Đạt chuẩn** (Phân biệt chứa trục vs. song song trục). | `C04`, `P04`, `A04`, `W04` |
+| `G12-CHV-B14-O05` | Vị trí tương đối 2 mặt phẳng: song song, trùng, vuông góc. | **Đạt chuẩn** (So sánh VTPT và hệ số tự do \\(D\\)). | `C05`, `P05`, `A05`, `W05` |
+| `G12-CHV-B14-O06` | Khoảng cách từ điểm \\(M_0\\) đến mặt phẳng \\((P)\\). | **Đạt chuẩn** (Công thức trị tuyệt đối / độ dài VTPT). | `C06`, `P06`, `A06`, `W06` |
+| `G12-CHV-B14-O07` | Giao mặt cầu và mặt phẳng, bán kính đường tròn giao tuyến. | **Đạt chuẩn** (Đóng vai trò `SGK_APPLICATION`). | `C07`, `P07`, `A07`, `W07` |
+
+#### 2. Phân tích Vị trí Học thuật của `G12-CHV-B14-O07`
+* **Vấn đề thứ tự học tập:** Phương trình mặt cầu được giảng dạy chính thức tại **Bài 17**. Việc đưa bài toán "Mặt phẳng cắt mặt cầu tìm bán kính đường tròn giao tuyến \\(r = \sqrt{R^2 - d^2}\\)" vào Bài 14 có thể gây vướng mắc nếu coi là Core bắt buộc của Bài 14.
+* **Kết luận định danh:** Xác định `G12-CHV-B14-O07` đóng vai trò **Vận dụng tích hợp / Mở rộng năng lực (`SGK_APPLICATION`)**. Khung 6 Outcomes Core (`O01`–`O06`) hoàn toàn bảo đảm 100% yêu cầu nội dung Bài 14 theo Chương trình GDPT 2018 và SGK KNTT gốc.
+
+#### 3. Kết luận Cổng Q01 Bài 14
+* **Áp dụng v1.1.0:** Việc khuyết trang in 25 SBT (chứa 2 bài tập tham khảo 5.6–5.7) đã được ghi nhận bằng nhãn `SBT_REFERENCE_GAP_DOCUMENTED`. Do toàn bộ lý thuyết, ví dụ D2, bài tập Core/Practice/Application/Written D3–D4 và thẻ D6 HELP của 7 Outcomes Bài 14 trong SGK đã được kiểm toán đạt chuẩn 100%, cổng Q01 chính thức đạt **`PASS`**.
+* **Kết luận:** **`TARGETED_B14_Q01_ACADEMIC_VERDICT = PASS`**.
+
+---
+
+### III. PHẦN II: PHẢN BIỆN CỔNG Q06 CHO ITEM `THPT-G12-B14-W01` (DELTA C)
+
+#### 1. Bán kính Lỗi Q06 tại Rubric R00
+* **Đề bài gốc:** *"Giải thích vì sao \\(\vec{u}=(1,1,0)\\), \\(\vec{v}=(2,2,0)\\) không đủ để xác định pháp tuyến duy nhất bằng tích có hướng."*
+* **Bản chất Toán học:** Do \\(\vec{v} = 2\vec{u}\\) (hai vectơ cùng phương) \\(\implies \vec{u} \times \vec{v} = (0,0,0) = \vec{0}\\). Vectơ-không không thể làm vectơ pháp tuyến.
+* **Sai lệch ở Rubric R00:** Rubric R00 cũ phân bổ điểm cho việc "tìm một pháp tuyến khác 0 và kiểm tính vuông góc". Đây là yêu cầu mâu thuẫn với đề bài (vì không thể tìm được VTPT khác 0 từ cặp vectơ cùng phương này), gây bất công cho học sinh giải đúng.
+
+#### 2. Thẩm định và Phê duyệt Rubric R01 Proposed (Thang điểm 5)
+
+```markdown
+##### THPT-G12-B14-W01 · OUTCOME_ID: G12-CHV-B14-O01 · DELTA_C
+- Đề bài, Đáp án, Lời giải từng bước: GIỮ NGUYÊN R00.
+- Rubric R01 mới (Thang điểm 5):
+  + 2 điểm: Chỉ ra v = 2u; hai vectơ cùng phương / phụ thuộc tuyến tính nên không xác định cặp hướng độc lập của mặt phẳng.
+  + 1 điểm: Tính hoặc chứng minh u x v = (0,0,0).
+  + 1 điểm: Giải thích vectơ-không không được dùng làm vectơ pháp tuyến (VTPT phải khác 0).
+  + 1 điểm: Nêu cách khắc phục (cần chọn một hướng thứ hai không cùng phương với u rồi mới tính tích có hướng).
+```
+
+* **Đánh giá Rubric R01:** 
+  * Phân rã 5 điểm chuẩn xác, bám sát 100% lập luận toán học của đề bài và đáp án.
+  * Đạt chuẩn Cổng Q06 (D4 Written Rubric /5).
+  * Không làm thay đổi `ITEM_ID`, `OUTCOME_ID`, đề bài hay lời giải; không ảnh hưởng đến các items khác trong ngân hàng.
+* **Kết luận:** **`W01_Q06_DELTA_C_VERDICT = PASS`**.
+
+---
+
+### IV. BẢNG MÁY KIỂM TRA MÃ HÓA (MACHINE-CHECKABLE VERDICT)
+
+```text
+PACKET_ID|G12-SGK-CHV-B14-B17-R00-REVIEW_CANDIDATE
+STANDARD_ID|SLM-THPT-QUALITY-ONE
+STANDARD_VERSION|1.1.0
+PERMANENT_SOURCES_VERSION|THPT-v2.1
+S1_SGK_RECEIPT|TOAN_12_KNTT_TAP_HAI_P29-40_SHA256_3c642f2e80d86d699ea62bbcabd0c3074fd5118def96e4b3b8ce1f9ead7f97bb
+S1_SBT_RECEIPT|BAI_TAP_TOAN_12_KNTT_TAP_HAI_P22-24_EXCEPT_P25_SHA256_823b013adeb487639e55493b4a7c09edb9a21daabc058ea53e6fe92f7a0352f1
+SBT_REFERENCE_GAP_DOCUMENTED|YES
+TARGETED_B14_Q01_ACADEMIC_VERDICT|PASS
+W01_Q06_DELTA_C_VERDICT|PASS
+AFFECTED_OUTCOME_ID|G12-CHV-B14-O01
+AFFECTED_ITEM_ID|THPT-G12-B14-W01
+ACADEMIC_B15_TO_B17_VERDICT|PASS
+PEDAGOGICAL_SELF_LEARNING_READY|PASS
+P0|0
+P1|0
+P2|0
+MINIMAL_DELTA|1
+DELTA_CLASS|DELTA_C_ACADEMIC_MATERIAL
+EXPOSURE_SYSTEM_VERDICT|SYSTEM_HOLD
+RELEASE_AUTHORIZATION|NO
+MASTERY_ACTIVATION|NO
+CONTENT_READY|NO
+```
+
+---
+
+### V. BẢO TỒN RANH GIỚI THẨM QUYỀN HỆ THỐNG
+
+1. Phê duyệt **`TARGETED_B14_Q01_ACADEMIC_VERDICT = PASS`** (cho Cổng Q01 Bài 14 theo v1.1.0) và **`W01_Q06_DELTA_C_VERDICT = PASS`** (cho Rubric /5 câu `THPT-G12-B14-W01`).
+2. 保留 **`ACADEMIC_B15_TO_B17_VERDICT = PASS`** và **`PEDAGOGICAL_SELF_LEARNING_READY = PASS`** cho toàn bộ Chương V đã được kết luận trước đó.
+3. **`RELEASE_AUTHORIZATION = NO`**: Phê duyệt học thuật này **không** cấp quyền merge/deploy code lên GitHub repository công khai hay xuất bản lên website/frontend.
+4. **`MASTERY_ACTIVATION = NO`**: **Không** tự động kích hoạt tính năng Tự kiểm tra công khai (Final Submit) hay tính điểm Skill Mastery cho người học.
+5. **`EXPOSURE_SYSTEM_VERDICT = SYSTEM_HOLD`** & **`CONTENT_READY = NO`**: Tạm hoãn xuất bản hệ thống cho đến khi hoàn tất các thủ tục đóng gói phát hành kỹ thuật chính thức.

@@ -50,9 +50,11 @@ function verifyBlob(value, file) {
 // enforce on NEW handoffs (and all packets already declaring STANDARD_ID).
 function verifyOneStandardEvidence(data, handoff, initialHandoff) {
   if (!initialHandoff && !data.includes("STANDARD_ID: ")) return;
+  const normVersion=field(data,"STANDARD_VERSION");
+  assert(["1.0.0","1.1.0"].includes(normVersion),"Unrecognized standard version");
   for (const text of [data, handoff]) {
     assert.equal(field(text,"STANDARD_ID"),"SLM-THPT-QUALITY-ONE","Two competing quality standards are forbidden");
-    assert.equal(field(text,"STANDARD_VERSION"),"1.0.0","Unrecognized standard version");
+    assert.equal(field(text,"STANDARD_VERSION"),normVersion,"Version mismatch across a source-locked V2 handoff");
   }
   assert.equal(field(data,"QUALITY_EVIDENCE_SECTION"),"QUALITY_Q01_Q18_EVIDENCE");
   const evidence=section(handoff,"QUALITY_Q01_Q18_EVIDENCE");
@@ -99,8 +101,8 @@ function verifyReadyManifest(rel, initialHandoff) {
   if (initialHandoff || data.includes("STANDARD_ID: ")) {
     assert(reviewText.includes("SLM-THPT-QUALITY-ONE"),
       "New reviewer receipt must identify the same ONE normative standard as both lanes");
-    assert(reviewText.includes("1.0.0"),
-      "New reviewer receipt must identify the effective standard version");
+    assert(reviewText.includes(field(data,"STANDARD_VERSION")),
+      "New reviewer receipt must identify its own effective standard version (historical 1.0.0 or approved 1.1.0)");
   }
   const handoffRel = field(data, "AUTHOR_HANDOFF");
   const handoff = fs.readFileSync(safeRepoFile(handoffRel, ["prototypes/thpt/release-handoffs/"]), "utf8");
@@ -133,7 +135,13 @@ function selfTest() {
   const bad="## QUALITY_Q01_Q18_EVIDENCE\n| Q01 | sample | source | reviewer | AP |\n";
   assert.throws(()=>verifyOneStandardEvidence("STANDARD_ID: SLM-THPT-QUALITY-ONE\nSTANDARD_VERSION: 1.0.0\nQUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE",
     "STANDARD_ID: SLM-THPT-QUALITY-ONE\nSTANDARD_VERSION: 1.0.0\n"+bad,true));
-  console.log("PASS handoff V2 parser self-test");
+  assert.throws(()=>verifyOneStandardEvidence(
+    "STANDARD_ID: SLM-THPT-QUALITY-ONE\nSTANDARD_VERSION: 9.9.9\nQUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE",
+    "STANDARD_ID: SLM-THPT-QUALITY-ONE\nSTANDARD_VERSION: 9.9.9\n"+bad,true));
+  assert.throws(()=>verifyOneStandardEvidence(
+    "STANDARD_ID: SLM-THPT-QUALITY-ONE\nSTANDARD_VERSION: 1.1.0\nQUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE",
+    "STANDARD_ID: SLM-THPT-QUALITY-ONE\nSTANDARD_VERSION: 1.0.0\n"+bad,true));
+  console.log("PASS handoff V2 parser: historical v1.0.0 retained; v1.1.0 accepted with exact version agreement; negative invalid/mismatched versions");
 }
 if (process.argv.includes("--self-test")) selfTest();
 else {
