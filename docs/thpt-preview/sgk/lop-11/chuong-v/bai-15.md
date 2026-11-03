@@ -54,7 +54,7 @@ Xét 5+5/4+5/16+... . Mỗi số hạng sau bằng **1/4** số hạng trước.
 
 ## 2. Ví dụ có suy luận và điều kiện
 
-### B15 — D2. Bốn ví dụ độc lập
+### Bốn ví dụ độc lập
 
 **EX-G11-B15-01 — Giới hạn hữu hạn bằng chia bậc cao nhất.** Tính lim_{n→∞}(3n+1)/(n+4). Chia cả tử và mẫu cho n: (3+1/n)/(1+4/n)→3. Mẫu giới hạn 1 khác 0, do đó phép chia giới hạn hợp lệ. **Bẫy:** không được thay n=∞ như một số.
 
