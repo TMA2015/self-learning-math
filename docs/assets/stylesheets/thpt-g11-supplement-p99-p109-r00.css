@@ -1,0 +1,23 @@
+/* G11 SGK supplement, scoped. Keeps Golden R4, THCS untouched. */
+[data-g11-supp-view]{min-width:0;max-width:100%;overflow-wrap:anywhere}
+.g11-supp-topic{margin:24px 0 32px;padding:20px;border:1px solid var(--md-default-fg-color--lightest);border-radius:14px;background:var(--md-default-bg-color);min-width:0;scroll-margin-top:6rem}
+.g11-supp-topic h2,.g11-supp-topic h3{overflow-wrap:anywhere}
+.g11-supp-first-try{padding:14px 16px;border-left:3px solid var(--md-accent-fg-color);background:var(--md-code-bg-color)}
+.g11-supp-example{padding:12px 16px;margin:10px 0;border:1px solid var(--md-default-fg-color--lightest);border-radius:9px}
+.g11-supp-help{margin:10px 0;padding:10px 14px;border:1px solid var(--md-default-fg-color--lightest);border-radius:9px}
+.g11-supp-help summary{cursor:pointer;font-weight:650}
+.g11-supp-help li{margin:7px 0}
+.g11-supp-figure{max-width:100%;overflow:auto}
+.g11-supp-figure img{max-width:100%;height:auto;display:block;margin:auto}
+.g11-supp-exercise{padding:16px;margin:18px 0;border:1px solid var(--md-default-fg-color--lightest);border-radius:12px;scroll-margin-top:6rem}
+.g11-supp-answer{width:100%;min-height:92px;max-width:100%;resize:vertical;display:block;margin:12px 0;padding:12px;border:1px solid var(--md-default-fg-color--lighter);border-radius:8px;background:var(--md-default-bg-color);color:var(--md-default-fg-color);font:inherit;font-size:16px}
+.g11-supp-submit,.g11-supp-link{display:inline-flex;align-items:center;min-height:44px;padding:10px 15px;margin:8px 0;border:1px solid var(--md-accent-fg-color);border-radius:9px;background:var(--md-accent-fg-color);color:var(--md-default-bg-color)!important;font-weight:700;cursor:pointer;text-decoration:none!important}
+.g11-supp-submit:disabled{opacity:.55;cursor:default}
+.g11-supp-solution{margin:10px 0;padding:14px;background:var(--md-code-bg-color);border:1px solid var(--md-default-fg-color--lightest);border-radius:9px}
+.g11-supp-solution[hidden]{display:none!important}
+.g11-supp-feedback{font-size:.88rem}
+.g11-supp-math-inline{white-space:normal}
+.g11-supp-math-display{overflow:auto}
+@media (max-width:640px){.g11-supp-topic{padding:12px}.g11-supp-exercise{padding:12px}.g11-supp-submit,.g11-supp-link{width:100%;justify-content:center}}
+
+.g11-supp-paragraph,.g11-supp-first-try,.g11-supp-solution p{white-space:pre-line}

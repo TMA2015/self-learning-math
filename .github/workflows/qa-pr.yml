@@ -67,6 +67,8 @@ jobs:
         run: node scripts/test-thpt-g11-learner-presentation-source.cjs
       - name: Audit G11 B01–B33 reviewed PUBLIC Core/Practice math source and modal formatting
         run: node scripts/test-thpt-g11-core-practice-math-source.cjs
+      - name: Guard G11 SGK pp99–109 immutable handoff and 68 PUBLIC canonical items
+        run: node scripts/test-thpt-g11-supplement-release-source.cjs
       - name: Validate KNTT Coverage Matrix 6-9
         run: node scripts/test-kntt-coverage-matrix-6-9-v1.js
       - name: Audit live KNTT lesson D1-D6 source evidence (78 rows, no content changes)

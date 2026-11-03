@@ -142,6 +142,14 @@ nav:
               - Bài 33 · Đạo hàm cấp hai: thpt-preview/sgk/lop-11/chuong-ix/bai-33.md
               - Core và Luyện tập Bài 31–33: thpt-preview/sgk/lop-11/chuong-ix/luyen-tap.md
               - Tự kiểm tra tự đối chiếu Bài 31–33: thpt-preview/sgk/lop-11/chuong-ix/tu-kiem-tra-chuong.md
+          - Bổ sung SGK Tập Hai · Hoạt động trải nghiệm và Ôn tập cuối năm (trang 99–109):
+              - Tổng quan SGK bổ sung: thpt-preview/sgk/lop-11/bo-sung/index.md
+              - Hoạt động trải nghiệm E01 · Mô hình mũ và log: thpt-preview/sgk/lop-11/bo-sung/trai-nghiem-e01.md
+              - Hoạt động trải nghiệm E02 · Hình học đo đạc: thpt-preview/sgk/lop-11/bo-sung/trai-nghiem-e02.md
+              - Ôn tập cuối năm (10 tuyến): thpt-preview/sgk/lop-11/bo-sung/on-tap-cuoi-nam.md
+              - Core và Luyện tập bổ sung: thpt-preview/sgk/lop-11/bo-sung/luyen-tap.md
+              - Thư viện tự luận/Anchor bổ sung: thpt-preview/sgk/lop-11/bo-sung/tu-luan.md
+              - Tự kiểm tra tự đối chiếu bổ sung: thpt-preview/sgk/lop-11/bo-sung/tu-kiem-tra.md
   - Học theo chuyên đề:
       - Tổng quan chuyên đề: thpt-preview/chuyen-de/index.md
       - Hàm số và đồ thị:
@@ -196,6 +204,7 @@ extra_css:
   - assets/stylesheets/math-knowledge-r21-final-polish.css
   - assets/stylesheets/math-knowledge-r30-consistency.css
   - assets/stylesheets/thpt-r4-preview.css
+  - assets/stylesheets/thpt-g11-supplement-p99-p109-r00.css
   - assets/stylesheets/thpt-chvi-d6-reviewed-r01.css
   - assets/stylesheets/thpt-g10-reviewed-selfcheck-v1.css
 extra_javascript:
@@ -260,3 +269,4 @@ extra_javascript:
   - assets/javascripts/thpt-r4-preview.js
   - assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js
   - assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js
+  - assets/javascripts/thpt-g11-supplement-p99-p109-r00.js
