@@ -28,22 +28,22 @@ Có 20 quan sát; tích lũy [4,12,18,20], vị trí thứ 10 thuộc [10;20). N
 
 <span class="thpt-ap-knowledge-pilot" hidden aria-hidden="true"></span>
 
-### 1. Giá trị đại diện và trung bình
+### 1.1. Giá trị đại diện và trung bình
 
 Nhóm có hai đầu mút hữu hạn `a_i,a_{i+1}` có giá trị đại diện `x_i=(a_i+a_{i+1})/2`. Số trung bình ghép nhóm `x̄ = (Σ m_i x_i)/n`. Nếu chỉ biết nhóm mở một phía thì không tự động tính trung điểm. Các số trên là **ước lượng**, không nhất thiết bằng giá trị gốc.
-### 2. Tần số tích lũy
+### 1.2. Tần số tích lũy
 
 Đặt `C_0=0`, `C_i=Σ_{j≤i}m_j`. Nhóm chứa vị trí `t` được xác định bởi tích lũy trước `<t` và tích lũy đến nhóm `≥t`. Khi vị trí đúng ở biên hai nhóm, nội suy cho cùng một đầu mút nếu áp dụng nhất quán.
-### 3. Trung vị (nội suy)
+### 1.3. Trung vị (nội suy)
 
 Nhóm `[L;U)` có tần số `m>0`, độ rộng `h=U-L`, tích lũy trước nhóm `C`. Chọn nhóm chứa vị trí `n/2`; `Me = L + ((n/2-C)/m)h`. Đừng thay bằng giá trị đại diện của nhóm nếu chưa có căn cứ.
-### 4. Tứ phân vị
+### 1.4. Tứ phân vị
 
 Tương tự, vị trí `n/4, n/2, 3n/4`; `Q_r=L+((rn/4-C)/m)h`, `r∈{1,2,3}`, trên đúng nhóm. `Q_2=Me`; các phân vị là xấp xỉ cho mẫu gốc. Không áp máy móc quy tắc chia đôi mẫu thô lớp 10 vào bảng nhóm.
-### 5. Mốt (nội suy, điều kiện SGK)
+### 1.5. Mốt (nội suy, điều kiện SGK)
 
 Chỉ áp dụng trực tiếp công thức SGK khi các nhóm có độ rộng chung `h` và xác định được nhóm có tần số lớn nhất `m_j` với hai tần số kề `m_{j-1},m_{j+1}` (đầu biên quy ước tần số ngoài bằng 0). `Mo = L + [(m_j-m_{j-1})/((m_j-m_{j-1})+(m_j-m_{j+1}))]h`. Nếu mọi tần số bằng nhau, SGK quy ước **không có mốt**. Với nhóm rộng khác nhau, không dùng công thức này bừa bãi.
-### 6. Kiểm tra ngữ cảnh
+### 1.6. Kiểm tra ngữ cảnh
 
 Ghi đơn vị, nêu gần đúng và mức độ hợp lý của kết quả. Cùng bảng ghép nhóm có thể ứng với nhiều bộ số liệu gốc, nên không khẳng định các đặc trưng vừa tính bằng đặc trưng gốc chính xác.
 
