@@ -55,4 +55,4 @@ Vì sao `y=3^x` không thể bằng −5? Nếu `log₂8=3`, hãy tìm hai đi�
 
 ## 4. Tiếp tục
 
-[Core và Luyện tập Bài 20](../luyen-tap/) · [Tự luận Chương VI](../../../../thu-vien/tu-luan-g11-chuong-vi/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
+[Core và Luyện tập Bài 20](luyen-tap.md) · [Tự luận Chương VI](../../../thu-vien/tu-luan-g11-chuong-vi.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
