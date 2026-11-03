@@ -4,29 +4,29 @@
 
 ## 1. Kiến thức SGK — hình thành bản chất trước công thức
 
-### §1. WHY — Vận tốc thay đổi nhanh hay chậm?
+### 1.1. WHY — Vận tốc thay đổi nhanh hay chậm?
 Đạo hàm thứ nhất của quãng đường/tọa độ theo thời gian cho **vận tốc tức thời**. Nhưng khi đang lái xe, vận tốc cũng có thể tăng hoặc giảm: cần tốc độ biến đổi của **vận tốc**, tức **gia tốc**. Đó là động cơ của đạo hàm cấp hai, không phải kí hiệu bí hiểm có hai dấu phẩy.
 
-### §2. WHAT & HOW — Lấy đạo hàm của chính hàm đạo hàm
+### 1.2. WHAT & HOW — Lấy đạo hàm của chính hàm đạo hàm
 Nếu $f$ có đạo hàm $f'$ trên một khoảng và $f'$ lại có đạo hàm thì $f''=(f')'$ là **đạo hàm cấp hai**. Không nhầm $f''$ với $(f')^2$. Chẳng hạn $f(x)=x^3-2x^2+5$: $f'=3x^2-4x$, $f''=6x-4$; còn $(f')^2=(3x^2-4x)^2$ rất khác. Đạo hàm cấp hai không tự tồn tại ở mọi điểm chỉ vì f có đạo hàm lần một.
 
-### §3. Dùng quy tắc đã học để tính lần hai
+### 1.3. Dùng quy tắc đã học để tính lần hai
 Với $y=e^{2x+1}$, $y'=2e^{2x+1}$, $y''=4e^{2x+1}$: mỗi lần lấy đạo hàm hàm hợp phải nhân đạo hàm hàm trong. Với $y=\sin(3x)$, $y'=3\cos(3x)$, $y''=-9\sin(3x)$, không được quên dấu âm hoặc hệ số 3 lần thứ hai.
 
-### §4. Ý nghĩa cơ học: hướng chuyển động và gia tốc
+### 1.4. Ý nghĩa cơ học: hướng chuyển động và gia tốc
 Nếu $s(t)$ tính bằng **mét**, $t$ bằng **giây**, thì $v(t)=s'(t)$ có đơn vị m/s, $a(t)=v'(t)=s''(t)$ có đơn vị m/s². Gia tốc âm không nhất thiết có nghĩa “chậm dần”: nếu vật đang đi về chiều âm ($v<0$) và gia tốc cũng âm ($a<0$), **độ lớn vận tốc tăng**, vật nhanh dần theo chiều âm. Khi $v$ và $a$ trái dấu, độ lớn vận tốc giảm (trong một khoảng không qua điểm đổi chiều); khi cùng dấu, tăng. Hình FIG-G11-CHIX-B33-01 cho thấy $s(t)=t^3-3t^2+2t$ có $v=3t^2-6t+2$ và $a=6t-6$; học sinh đọc ba độ biến đổi khác nhau, không lấy chiều cao đường cong làm đạo hàm.
 
-### §5. Lưu ý về tính thực tế
+### 1.5. Lưu ý về tính thực tế
 Mô hình chuyển động phải chỉ xét thời gian vật còn ở trạng thái mô tả, ví dụ không dùng công thức rơi tự do sau khi đã chạm đất. Với hàm chiều cao $h(t)=12t-3t^2$ (m) đến lúc trở về mặt đất, $h(0)=0$, $h(4)=0$, do đó thời gian thực tế là $0\le t\le4$; $v(t)=12-6t$ (m/s), gia tốc $a(t)=-6$ m/s² trên khoảng mô hình. Tại $t=2$, v=0 không đồng nghĩa a=0.
 
-### §6. Tự thử *trước* Core
+### 1.6. Tự thử *trước* Core
 Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn vị. Tại $t=1$, vật đang đi theo chiều nào và gia tốc theo chiều nào?
 
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Em đã tự thử? Mở lời giải đối chiếu</summary><p><strong>Đối chiếu sau khi thử:</strong> $v=3t^2-6$ cm/s, $a=6t$ cm/s²; tại t=1, $v=-3$ cm/s (chiều âm), $a=+6$ cm/s² (chiều dương), hai dấu trái nhau nên tốc độ tức thời đang giảm. Không suy một gia tốc dương là vật luôn nhanh dần.</p></details>
 
 **Liên kết D6:** `HELP-G11-CHIX-B33-01` (nhầm lần hai), `...-02` (vận tốc/gia tốc và dấu), `...-03` (suy đơn vị và phạm vi thời gian).
 
-### D5. Đọc hình để hiểu lập luận
+### 1.7. Đọc hình để hiểu lập luận (D5)
 
 <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHIX-B33-01_R00.svg" alt="Hình FIG-G11-CHIX-B33-01 minh họa lập luận trong Bài 33" /><figcaption>Hình D5 — FIG-G11-CHIX-B33-01. Đọc hình theo lời giải thích trong phần Kiến thức ở trên.</figcaption></figure>
 

@@ -4,38 +4,38 @@
 
 ## 1. Kiến thức SGK — hình thành bản chất trước công thức
 
-### §1. WHY — Không thể giải mọi bài bằng giới hạn từ đầu
+### 1.1. WHY — Không thể giải mọi bài bằng giới hạn từ đầu
 Định nghĩa giới hạn giúp ta **hiểu** đạo hàm, nhưng với $f(x)=(x^2+1)\sin(3x)$, khai triển $f(x+h)$ rất dài. Cần các quy tắc bảo toàn ý nghĩa **tốc độ biến đổi** khi cộng, nhân, chia và lồng các hàm. Quy tắc là hệ quả của định nghĩa, không phải mẹo đại số.
 
-### §2. Đạo hàm hàm sơ cấp và kiểm điều kiện
+### 1.2. Đạo hàm hàm sơ cấp và kiểm điều kiện
 - $(c)'=0$, $(x)'=1$; với $n$ nguyên dương $(x^n)'=nx^{n-1}$. Ví dụ $(x^3)'=3x^2$. Không nhầm $(x^n)'$ với $x^{n-1}$ (thiếu hệ số n).
 - Với $x>0$, $(\sqrt{x})'=1/(2\sqrt{x})$, vì $[\sqrt{x+h}-\sqrt{x}]/h=1/[\sqrt{x+h}+\sqrt{x}]$. **Tại x=0** có giá trị căn nhưng công thức đạo hàm không xác định; không dùng nó tại 0.
 - Đạo hàm $\sin x$ là $\cos x$, đạo hàm $\cos x$ là $-\sin x$ khi góc $x$ đo **radian**. $(\tan x)'=1/\cos^2x$ với $\cos x\ne0$; $(\cot x)'=-1/\sin^2x$ với $\sin x\ne0$. Giải thích: tan=sin/cos nên dấu và mẫu của quy tắc thương quyết định kết quả.
 - $(e^x)'=e^x$, $(a^x)'=a^x\ln a$ với $a>0,a\ne1$; $(\ln x)'=1/x$ khi $x>0$; $(\log_a x)'=1/(x\ln a)$ khi $a>0,a\ne1$, $x>0$. Cơ số $a$ ở đây là **hằng số**, không phải biến.
 
-### §3. HOW — Vì sao đạo hàm của tích không chỉ là tích đạo hàm?
+### 1.3. HOW — Vì sao đạo hàm của tích không chỉ là tích đạo hàm?
 Khi cả $u$ lẫn $v$ thay đổi, $(u+\Delta u)(v+\Delta v)-uv=v\Delta u+u\Delta v+\Delta u\Delta v$. Chia $\Delta x$ rồi lấy giới hạn, số hạng tích hai độ tăng nhỏ không đóng góp vào đạo hàm: **$(uv)'=u'v+uv'$**. Hình FIG-G11-CHIX-B32-01 cho thấy hình chữ nhật rộng $u$, cao $v$ xuất hiện hai dải diện tích chính khi cả hai cạnh tăng, giải thích vì sao phải cộng **hai** tích. Ví dụ $(x(x^2+1))'=(x^2+1)+x(2x)=3x^2+1$, không phải $1\cdot2x$.
 
-### §4. Tổng, hiệu, thương — và điều kiện mẫu
+### 1.4. Tổng, hiệu, thương — và điều kiện mẫu
 $(u\pm v)'=u'\pm v'$, $(cu)'=cu'$. Với $v(x)\ne0$ và u,v khả vi, $(u/v)'=[u'v-uv']/v^2$. Dấu trừ và mẫu bình phương là bắt buộc; tại nghiệm của v, hàm ban đầu không có nghĩa, dù một biểu thức đạo hàm sau rút gọn có vẻ hữu hạn. Ví dụ $f(x)=(x+2)/(x-1)$ với $x\ne1$: $f'(x)=[(x-1)-(x+2)]/(x-1)^2=-3/(x-1)^2$.
 
-### §5. HOW — Hàm số hợp và quy tắc dây chuyền
+### 1.5. HOW — Hàm số hợp và quy tắc dây chuyền
 Trong $y=f(g(x))$, x thay đổi làm $u=g(x)$ thay đổi, sau đó y=f(u) thay đổi. Vì $\Delta y/\Delta x=(\Delta y/\Delta u)(\Delta u/\Delta x)$ khi các thương có nghĩa, sau lấy giới hạn nhận được **$(f\circ g)'(x)=f'(g(x))\,g'(x)$**. Với $y=(3x-2)^5$, bước trong $u=3x-2$ có $u'=3$, bước ngoài $u^5$ có đạo hàm $5u^4$, kết quả $15(3x-2)^4$. **Không** được bỏ nhân 3. Hình FIG-G11-CHIX-B32-02 vẽ hai tầng đầu vào và nhân các tốc độ biến đổi.
 
-### §6. Hàm lượng giác hợp, mũ hợp, logarit hợp
+### 1.6. Hàm lượng giác hợp, mũ hợp, logarit hợp
 Với $u=u(x)$ khả vi và biểu thức xác định: $(\sin u)'=u'\cos u$, $(\cos u)'=-u'\sin u$, $(\tan u)'=u'/\cos^2 u$ (cos u≠0), $(\cot u)'=-u'/\sin^2 u$ (sin u≠0); $(e^u)'=u'e^u$, $(a^u)'=u'a^u\ln a$ (a>0,a≠1); $(\ln u)'=u'/u$ **khi $u>0$**; $(\log_a u)'=u'/(u\ln a)$ khi u>0. Ví dụ $\ln(4-x^2)$ chỉ có nghĩa khi $-2<x<2$, đạo hàm $-2x/(4-x^2)$ trên **chính** miền đó.
 
-### §7. Quy trình lựa chọn phương pháp, không học bảng thuộc lòng
+### 1.7. Quy trình lựa chọn phương pháp, không học bảng thuộc lòng
 **(i)** Xác định miền xác định trước; **(ii)** tách các lớp ngoài–trong: tổng, tích, thương, hàm hợp; **(iii)** dùng quy tắc; **(iv)** rút gọn vừa đủ; **(v)** kiểm đơn vị, dấu và miền. Với $f(x)=x^2 e^{3x}$: dùng tích ở ngoài, chain ở thành phần mũ → $f'=2xe^{3x}+3x^2e^{3x}=e^{3x}(2x+3x^2)$. Chỉ $(x^2)'(e^{3x})'$ cho kết quả sai.
 
-### §8. Tự thử *trước* Core
+### 1.8. Tự thử *trước* Core
 Tự giải $y=(x+1)\cos(2x)$; $z=\ln(5-x)$; $w=e^{x^2}$. Hãy nêu **mỗi biểu thức dùng quy tắc ngoài nào và vì sao**.
 
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Em đã tự thử? Mở lời giải đối chiếu</summary><p><strong>Đối chiếu sau khi thử:</strong> $y'=\cos2x-2(x+1)\sin2x$ (tích+dây chuyền); $z'=-1/(5-x)$, chỉ $x&lt;5$ (log+dây chuyền); $w'=2xe^{x^2}$ (hàm mũ hợp). Cần biết mũ, log, lượng giác trong cùng một chương, không chỉ đa thức.</p></details>
 
 **Liên kết D6:** `HELP-G11-CHIX-B32-01` (quy tắc tích), `...-02` (chain), `...-03` (miền log/căn), `...-04` (sin/cos/tan/cot), `...-05` (thương).
 
-### D5. Đọc hình để hiểu lập luận
+### 1.9. Đọc hình để hiểu lập luận (D5)
 
 <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHIX-B32-01_R00.svg" alt="Hình FIG-G11-CHIX-B32-01 minh họa lập luận trong Bài 32" /><figcaption>Hình D5 — FIG-G11-CHIX-B32-01. Đọc hình theo lời giải thích trong phần Kiến thức ở trên.</figcaption></figure>
 

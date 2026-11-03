@@ -4,31 +4,31 @@
 
 ## 1. Kiến thức SGK — hình thành bản chất trước công thức
 
-### §1. WHY — Một tốc độ trung bình có thể che giấu sự thay đổi ngay tại một thời điểm
+### 1.1. WHY — Một tốc độ trung bình có thể che giấu sự thay đổi ngay tại một thời điểm
 Giả sử quãng đường chuyển động $s(t)=t^2$ mét, thời gian $t$ giây. Trong khoảng từ $t=2$ đến $t=3$, vật đi từ 4 m đến 9 m, nên vận tốc trung bình bằng $(9-4)/(3-2)=5$ m/s. Nhưng vật có giữ vận tốc 5 m/s **đúng lúc** $t=2$ không? Không: khoảng đo 1 giây quá dài. Ta cần thu hẹp khoảng đo. Đó chính là nhu cầu hình thành đạo hàm, chứ không phải yêu cầu học thuộc ký hiệu $f'(x)$.
 
-### §2. WHAT → HOW — Từ vận tốc trung bình đến thương sai phân
+### 1.2. WHAT → HOW — Từ vận tốc trung bình đến thương sai phân
 Với $y=f(x)$, tại $x=a$ và $x=a+h$ (đều thuộc miền xác định, $h\ne0$), độ tăng đầu vào là $h$, độ tăng đầu ra $\Delta y=f(a+h)-f(a)$. **Tốc độ biến đổi trung bình** là $\Delta y/h$. Nếu khi $h$ tiến về $0$ **từ cả hai phía** biểu thức này tiến đến một số hữu hạn $L$, ta định nghĩa đạo hàm tại $a$ là $f'(a)=L$. Viết đúng $f'(a)=\lim_{h\to0}[f(a+h)-f(a)]/h$. Không được lấy trực tiếp $h=0$ vì biểu thức ban đầu là $0/0$; phải rút gọn hay biến đổi rồi mới lấy giới hạn.
 
 **Thực hành trước khi xem công thức:** Với $f(x)=x^2$, hãy viết $f(2+h)-f(2)$; kết quả là $4h+h^2$, nên thương bằng $4+h$, giới hạn $4$. Đạo hàm tại 2 là 4 đơn vị đầu ra trên một đơn vị đầu vào. Nếu $f$ xác định và có đạo hàm tại mỗi điểm trên khoảng, ta nói $f$ có đạo hàm trên khoảng ấy và $f'(x)$ là một **hàm mới**.
 
-### §3. Điều kiện toán học và các bẫy
+### 1.3. Điều kiện toán học và các bẫy
 Đạo hàm thông thường tại điểm trong khoảng cần giới hạn sai phân **hai phía**, hữu hạn và nhất quán. Nếu chỉ có một phía hoặc thương sai phân vô hạn thì chưa có đạo hàm hữu hạn hai phía. **Có đạo hàm ⇒ liên tục** tại điểm ấy, nhưng chiều ngược lại sai: $f(x)=|x|$ liên tục tại 0 mà $[|h|-0]/h=1$ khi $h>0$, bằng $-1$ khi $h<0$ nên **không có đạo hàm ở 0**. Đừng nói mọi đồ thị nối liền đều có tiếp tuyến dốc hữu hạn. Đối với $f(x)=\sqrt{x}$, định nghĩa chỉ nhận $x\ge0$; trên $x>0$ có đạo hàm, còn tại biên 0 không có đạo hàm hai phía theo nghĩa thông thường trên khoảng.
 
-### §4. Ý nghĩa hình học — Cát tuyến tiến tới tiếp tuyến
+### 1.4. Ý nghĩa hình học — Cát tuyến tiến tới tiếp tuyến
 Hai điểm $P(a,f(a))$, $Q(a+h,f(a+h))$ xác định đường **cát tuyến** với hệ số góc $[f(a+h)-f(a)]/h$. Khi $Q\to P$, nếu giới hạn hữu hạn, hệ số góc tiến tới $f'(a)$: đó là hệ số góc **tiếp tuyến** tại $P$. Phương trình tiếp tuyến là $y-f(a)=f'(a)(x-a)$. **Lưu ý** $f(a)$ là tung độ điểm tiếp xúc; $f'(a)$ là độ dốc; chúng không hoán đổi. **Hình FIG-G11-CHIX-B31-01:** cát tuyến trên $y=x^2$ qua $P(1,1)$ và $Q(1+h,(1+h)^2)$ tiến tới đường tiếp tuyến $y=2x-1$ khi $h\to0$; học sinh so sánh hệ số góc $2+h$ và 2.
 
-### §5. Ý nghĩa vật lý và thực tế — dấu/đơn vị
+### 1.5. Ý nghĩa vật lý và thực tế — dấu/đơn vị
 Với tọa độ $s(t)$ mét và $t$ giây, $v(t)=s'(t)$ có đơn vị m/s, **có dấu** (dương theo chiều quy ước, âm ngược chiều). **Tốc độ** là $|v(t)|$, không phải luôn $v(t)$. Trong mô hình nhiệt độ $T(t)$ đo bằng °C, $T'(t)$ có đơn vị °C/phút nếu $t$ là phút, diễn đạt tốc độ nhiệt độ đang thay đổi; không phải nhiệt độ $T$.
 
-### §6. Tự thử *trước* Core
+### 1.6. Tự thử *trước* Core
 Tính vận tốc tức thời của $s(t)=3t^2+2t$ tại $t=1$ **bằng định nghĩa**. Vì sao phải rút gọn $h$ trước khi lấy giới hạn? Nếu $f(1)=5$ và $f'(1)=8$, phương trình tiếp tuyến là gì?
 
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Em đã tự thử? Mở lời giải đối chiếu</summary><p><strong>Đối chiếu sau khi thử:</strong> thương $[s(1+h)-s(1)]/h=8+3h$, cho $v(1)=8$ m/s; chưa được đặt $h=0$ trong thương gốc; tiếp tuyến $y-5=8(x-1)$.</p></details>
 
 **Liên kết D6:** nếu lấy $f(a)$ làm độ dốc, quay lại `HELP-G11-CHIX-B31-03`; nếu lấy $h=0$ sớm, xem `HELP-G11-CHIX-B31-01`; nếu quên trái/phải của $|x|$, xem `HELP-G11-CHIX-B31-02`.
 
-### D5. Đọc hình để hiểu lập luận
+### 1.7. Đọc hình để hiểu lập luận (D5)
 
 <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHIX-B31-01_R00.svg" alt="Hình FIG-G11-CHIX-B31-01 minh họa lập luận trong Bài 31" /><figcaption>Hình D5 — FIG-G11-CHIX-B31-01. Đọc hình theo lời giải thích trong phần Kiến thức ở trên.</figcaption></figure>
 
