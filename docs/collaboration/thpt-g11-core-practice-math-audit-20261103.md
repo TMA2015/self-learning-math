@@ -24,6 +24,8 @@ Read **all 10 original JS banks** used by \`thpt-r4-preview.js\` for B01–B33; 
 
 These are **display-evidence counts**, not academic completeness thresholds or novel Academic PASS. Audit targets each item's stem, four-choice labels if present, hint, solution, modal navigation, and responsive layout; independent Readiness is out of scope.
 
+**Supplementary markup finding:** Four original B18 Core/Practice stem/solution fields contain backtick math markers and six G11 fields contain raw Markdown emphasis markers. The renderer removes these display-only markers using safe semantic elements, without changing the reviewed strings. A pre-release QA check also identified an inline-versus-display distinction: each original single paired dollar expression must remain INLINE math, not display math; the browser QA now checks this explicitly for every applicable stem.
+
 ## Root cause and minimal delta
 
 The dynamic \`showReviewed()\` function writes the original string directly via \`textContent\` for prompts, choices, hints, and solutions, then calls \`MathJax.typesetPromise([card])\`. The stock MathJax inline delimiter recognizes \`\\(...\\)\`, **not** \`$...$\`. A previously merged SGK typography fixer applies inside \`.md-content__inner\` only, not the injected modal, so it cannot repair this.
