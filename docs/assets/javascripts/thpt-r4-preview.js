@@ -623,8 +623,9 @@
  }
 
 
- // THPT route-only navigation behavior, preserving MkDocs Material's native
- // drawer and link semantics. All nested sidebar sections start collapsed.
+ // THPT route-scoped navigation preserves Material's native drawer.
+ // Desktop expands the current lesson's chapter/Topic or overview groups;
+ // compact iPad/iPhone drawer behavior remains unchanged.
  let sidebarBreakpointObserverSet=false;
  function initTHPTPrimarySidebar(){
   const path=location.pathname;
@@ -637,6 +638,29 @@
   const primary=sidebar?.querySelector("nav.md-nav--primary");
   if(!primary)return;
   const groups=[...primary.querySelectorAll("li.md-nav__item--nested")];
+  // Read the actual MkDocs hierarchy instead of assuming a fixed number of chapters.
+  // Never add an unpublished chapter/topic or show a link that is not in MkDocs nav.
+  const rootList=primary.querySelector(":scope > ul.md-nav__list");
+  const topSections=[...(rootList?.children||[])].filter(el=>el.matches("li.md-nav__item--nested"));
+  const topSection=name=>topSections.find(li=>
+   li.querySelector(":scope > label.md-nav__link .md-ellipsis")?.textContent?.trim()===name);
+  const sgkRoot=topSection("Học theo SGK KNTT");
+  const topicRoot=topSection("Học theo chuyên đề");
+  const route=path.endsWith("/index.html")?path.slice(0,-"index.html".length):path;
+  const isSgk=route.includes("/thpt-preview/sgk/")||route.includes("/thpt/sgk/");
+  const isTopic=route.includes("/thpt-preview/chuyen-de/")||route.includes("/thpt/chuyen-de/");
+  const sgkOverview=route.endsWith("/thpt-preview/sgk/")||route.endsWith("/thpt/sgk/");
+  const topicOverview=route.endsWith("/thpt-preview/chuyen-de/")||route.endsWith("/thpt/chuyen-de/");
+  const defaultDesktopOpen=(li,nested)=>{
+   if(sgkOverview){
+    // Show SGK plus the grade groups, and their CHAPTERS only.
+    return li===sgkRoot||Boolean(sgkRoot?.contains(li)&&nested.dataset.mdLevel==="2");
+   }
+   if(topicOverview)return li===topicRoot; // Show topic titles, not lesson interiors.
+   if(isSgk)return Boolean(sgkRoot?.contains(li)&&li.classList.contains("md-nav__item--active"));
+   if(isTopic)return Boolean(topicRoot?.contains(li)&&li.classList.contains("md-nav__item--active"));
+   return false;
+  };
   // Material uses a stacked mobile drawer below this breakpoint. Nested
   // input/label elements are native navigation controls on iPad/iPhone,
   // not accordion rows. Resetting them hides the three top-level names.
@@ -683,6 +707,7 @@
    let button=li.querySelector(":scope > button.thpt-r4-sidebar-toggle");
    const update=open=>{
     nested.hidden=!open;
+    nested.setAttribute("aria-expanded",String(open));
     if(native)native.checked=open;
     button?.setAttribute("aria-expanded",String(open));
     if(button)button.textContent=open?"▾":"▸";
@@ -702,11 +727,11 @@
      label.addEventListener("click",event=>{event.preventDefault();update(nested.hidden)});
     }
    }
-   // On each actual navigation, start collapsed regardless of current/active link.
-   // Re-entering the same page does not discard a reader's manual expansion.
+   // On a new route default to contextual navigation; on the same page
+   // keep the learner's manual expansion/collapse choice.
    if(li.dataset.thptR4SidebarPath!==path){
     li.dataset.thptR4SidebarPath=path;
-    update(false);
+    update(defaultDesktopOpen(li,nested));
    }
   });
  }
