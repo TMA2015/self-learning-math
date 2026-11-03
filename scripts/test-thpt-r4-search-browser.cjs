@@ -120,6 +120,12 @@ const base="http://127.0.0.1:8765/thpt-preview/";
     result=await query("lớp 11, bài "+n,1);
     assert((await result.first().getAttribute("href")).endsWith("lop-11/chuong-viii/bai-"+n+"/"),"G11 ChVIII B"+n+" direct search");
    }
+      result=await query("lớp 11, chương IX",1);
+   assert((await result.first().getAttribute("href")).endsWith("lop-11/chuong-ix/"),"G11 ChIX chapter search");
+   for(const n of [31,32,33]){
+   result=await query("lớp 11, bài "+n,1);
+   assert((await result.first().getAttribute("href")).endsWith("lop-11/chuong-ix/bai-"+n+"/"),"G11 B"+n+" search");
+   }
    await query("lớp 12, bài 1",0);
    await query("xyz-khong-co",0);
    await field.fill("");
@@ -138,13 +144,7 @@ const base="http://127.0.0.1:8765/thpt-preview/";
    assert(overflow<=20,"Search UI overflow at "+viewport.width);
    await page.close();
   }
-     result=await query("lớp 11, chương IX",1);
-   assert((await result.first().getAttribute("href")).endsWith("lop-11/chuong-ix/"),"G11 ChIX chapter search");
-   for(const n of [31,32,33]){
-    result=await query("lớp 11, bài "+n,1);
-    assert((await result.first().getAttribute("href")).endsWith("lop-11/chuong-ix/bai-"+n+"/"),"G11 B"+n+" search");
-   }
-  const thcs=await browser.newPage({viewport:{width:390,height:844}});
+     const thcs=await browser.newPage({viewport:{width:390,height:844}});
   await thcs.goto("http://127.0.0.1:8765/kien-thuc/",{waitUntil:"networkidle"});
   assert.equal(await thcs.locator(".library-search").count(),1,
    "THCS Golden search must remain unchanged");
