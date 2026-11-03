@@ -48,7 +48,7 @@ for(const required of [
  "reviewedText(formattedChoice,choice,item)",
  "reviewedText(hintContent,item.hint,item)",
  "reviewedText(solutionContent,item.solution,item)",
- "window.MathJax?.typesetPromise([card])"
+ "window.MathJax.typesetPromise([card])"
  ])assert(code.includes(required),"Missing G11 formula renderer path "+required);
 assert(!/\.innerHTML\s*=\s*(?:item\.(?:stem|solution|hint)|choice)/.test(code),"No unsafe HTML injection");
 console.log("PASS G11 33 lessons / 359 canonical PUBLIC items, review fields stem/hint/solution and AP2 scoped renderer. Source buckets: TeX="+dollarFields+", subscripts="+underscoreFields+", powers="+caretFields);
