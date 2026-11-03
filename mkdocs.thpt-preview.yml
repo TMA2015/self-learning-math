@@ -110,6 +110,14 @@ nav:
               - Bài 17 · Hàm số liên tục: thpt-preview/sgk/lop-11/chuong-v/bai-17.md
               - Core và Luyện tập Bài 15–17: thpt-preview/sgk/lop-11/chuong-v/luyen-tap.md
               - Tự kiểm tra tự đối chiếu Bài 15–17: thpt-preview/sgk/lop-11/chuong-v/tu-kiem-tra-chuong.md
+          - Chương VI · Hàm số mũ và lôgarit (Bài 18–21):
+              - Tổng quan Chương VI: thpt-preview/sgk/lop-11/chuong-vi.md
+              - Bài 18 · Lũy thừa với số mũ thực: thpt-preview/sgk/lop-11/chuong-vi/bai-18.md
+              - Bài 19 · Lôgarit: thpt-preview/sgk/lop-11/chuong-vi/bai-19.md
+              - Bài 20 · Hàm số mũ và hàm số lôgarit: thpt-preview/sgk/lop-11/chuong-vi/bai-20.md
+              - Bài 21 · Phương trình, bất phương trình mũ và lôgarit: thpt-preview/sgk/lop-11/chuong-vi/bai-21.md
+              - Core và Luyện tập Bài 18–21: thpt-preview/sgk/lop-11/chuong-vi/luyen-tap.md
+              - Tự kiểm tra tự đối chiếu Bài 18–21: thpt-preview/sgk/lop-11/chuong-vi/tu-kiem-tra-chuong.md
   - Học theo chuyên đề:
       - Tổng quan chuyên đề: thpt-preview/chuyen-de/index.md
       - Hàm số và đồ thị:
@@ -132,6 +140,7 @@ nav:
       - Tự luận Toán 11 · Chương III B08–B09: thpt-preview/thu-vien/tu-luan-g11-chuong-iii.md
       - Tự luận Toán 11 · Chương IV B10–B14: thpt-preview/thu-vien/tu-luan-g11-chuong-iv.md
       - Tự luận Toán 11 · Chương V B15–B17: thpt-preview/thu-vien/tu-luan-g11-chuong-v.md
+      - Tự luận Toán 11 · Chương VI B18–B21: thpt-preview/thu-vien/tu-luan-g11-chuong-vi.md
       - Bài mẫu tiêu biểu: thpt-preview/thu-vien/bai-mau-tieu-bieu.md
       - Bản đồ kỹ năng: thpt-preview/thu-vien/ban-do-ky-nang.md
   - Tiến độ học tập: thpt-preview/tien-do.md
@@ -217,6 +226,7 @@ extra_javascript:
   - assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js
   - assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js
   - assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js
+  - assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js
   - assets/javascripts/thpt-r4-preview.js
   - assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js
   - assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js
