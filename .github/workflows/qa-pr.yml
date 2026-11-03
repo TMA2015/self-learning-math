@@ -63,6 +63,8 @@ jobs:
         run: node scripts/test-math-actions-isolation-r1.js
       - name: Validate curriculum dependencies
         run: python check_roadmap_dependencies.py
+      - name: Guard G11 student-facing numbering and THPT math presentation (owner 03/11)
+        run: node scripts/test-thpt-g11-learner-presentation-source.cjs
       - name: Validate KNTT Coverage Matrix 6-9
         run: node scripts/test-kntt-coverage-matrix-6-9-v1.js
       - name: Audit live KNTT lesson D1-D6 source evidence (78 rows, no content changes)
@@ -483,6 +485,7 @@ jobs:
           mkdir -p previews
           python -m http.server 8765 --directory site >/tmp/roadmap-preview.log 2>&1 &
           for i in {1..25}; do curl --fail --silent http://127.0.0.1:8765/ >/dev/null && break; sleep 0.2; done
+          python scripts/test-thpt-g11-learner-presentation-browser.py
           python scripts/test-math-knowledge-r30-ux-browser.py
           python scripts/test-w9-reviewed-written-grade-browser-r1.py
           python scripts/test-math-w4-five-written-candidate-browser.py

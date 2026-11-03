@@ -4,7 +4,7 @@
 
 ## 1. Vì sao học và kiến thức nền tảng
 
-### 1. Câu hỏi mở đầu: tại một điểm chưa tính được thì sao?
+### 1.1. Câu hỏi mở đầu: tại một điểm chưa tính được thì sao?
 
 Xét f(x)=(x²−4)/(x−2). Em thử thế x=2: mẫu bằng 0, phép chia không xác định. Nhưng nếu xét **gần 2**, ta có bảng:
 
@@ -20,7 +20,7 @@ Vì x≠2, ta có thể rút gọn f(x)=x+2. Khi x tiến về 2, các giá tr�
 
 **Cách đọc hình:** Đường màu xanh đi tới độ cao 4 khi x tiến từ trái hoặc phải về 2; vòng tròn rỗng tại (2,4) cho biết hàm gốc **không có giá trị ở x=2**. Đừng nhầm lỗ trống với việc giới hạn không tồn tại.
 
-### 2. Định nghĩa và kí hiệu
+### 1.2. Định nghĩa và kí hiệu
 
 Viết **lim_{x→a}f(x)=L** nghĩa là: khi x thuộc miền xác định, khác a và tiến gần a, giá trị f(x) tiến gần L. **Giới hạn không nhất thiết bằng f(a)**, và f(a) có thể chưa được định nghĩa. Một hàm có giới hạn khi x tiến về a qua các giá trị thuộc miền xác định đủ gần a, dù nó có thể bị "thủng" ngay tại a.
 
@@ -28,7 +28,7 @@ Viết **lim_{x→a}f(x)=L** nghĩa là: khi x thuộc miền xác định, khá
 - Nếu miền xác định cho phép tiến gần từ hai phía, một giới hạn hữu hạn hai phía bằng L **chỉ khi cả hai giới hạn một phía đều tồn tại và bằng L**.
 - Không được suy giới hạn hai phía từ một phía duy nhất.
 
-### 3. Nhìn đường đi của giá trị
+### 1.3. Nhìn đường đi của giá trị
 
 Với g(x)=1/(x−1), khi x→1⁺ thì mẫu là số dương rất nhỏ, g(x)→+∞; khi x→1⁻ thì mẫu âm rất nhỏ, g(x)→−∞. Hai phía **không cùng tiến đến một giá trị hữu hạn**, nên không có giới hạn hữu hạn hai phía tại 1. Dấu của mẫu là thông tin thiết yếu, không phải chi tiết phụ.
 
@@ -36,7 +36,7 @@ Khi nói x→+∞, ta cho x tăng mãi; x→−∞ là cho x giảm mãi về ph
 
 **Thuật ngữ mới — “nhân liên hợp” nghĩa là gì?** Khi gặp biểu thức có dạng `√A−b`, ta thường nhân cả tử và mẫu với `√A+b` (giữ nguyên giá trị phân thức ở nơi mẫu khác 0). Hai biểu thức `√A−b` và `√A+b` được gọi là **liên hợp** của nhau; tích của chúng là `A−b²`, nhờ hằng đẳng thức hiệu hai bình phương. Ví dụ `(√(x+4)−2)(√(x+4)+2)=x`, giúp khử căn khi tính giới hạn ở x=0. **Vì sao làm bước này?** Để biến dạng `0/0` chưa thể kết luận thành một biểu thức có giới hạn tính được. Trước khi rút gọn, phải kiểm tra đang xét `x≠0` và căn có nghĩa.
 
-### 4. Cách lựa chọn phương pháp
+### 1.4. Cách lựa chọn phương pháp
 
 - Thay trực tiếp cho kết quả hữu hạn hợp lệ → có thể dùng tính liên tục/phép toán giới hạn thích hợp.
 - Nếu thay trực tiếp ra **0/0** → đây chưa phải đáp số; tìm nhân tử chung, phân tích hoặc nhân liên hợp.
@@ -53,7 +53,7 @@ Khi nói x→+∞, ta cho x tăng mãi; x→−∞ là cho x giảm mãi về ph
 
 ## 2. Ví dụ có suy luận và điều kiện
 
-### B16 — D2. Bốn ví dụ độc lập
+### Bốn ví dụ độc lập
 
 **EX-G11-B16-01 — Khử 0/0.** lim_{x→2}(x²−4)/(x−2) = lim_{x→2}(x+2)=4 vì x²−4=(x−2)(x+2) khi x≠2. Hàm gốc không xác định tại 2 nhưng giới hạn vẫn bằng 4.
 

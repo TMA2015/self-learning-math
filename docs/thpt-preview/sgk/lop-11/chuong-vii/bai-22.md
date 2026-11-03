@@ -1,40 +1,40 @@
 # Bài 22. Hai đường thẳng vuông góc
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG VII · SGK KNTT TẬP 2</p><p class="thpt-r4-lead">Hiểu WHY → khái niệm và lý do → hình minh họa có hướng dẫn đọc → Tự thử trước Core → ví dụ suy luận → tự thực hành và khắc phục. Không ghi Skill Mastery.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương VII</a><a href="../luyen-tap/">Core/Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra tự đối chiếu</a></nav></div>
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG VII · SGK KNTT TẬP 2</p><p class="thpt-r4-lead">Hiểu lý do cần học → khái niệm và lý do → hình minh họa có hướng dẫn đọc → Tự thử trước Core → ví dụ suy luận → tự thực hành và khắc phục. Không ghi Skill Mastery.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương VII</a><a href="../luyen-tap/">Core/Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra tự đối chiếu</a></nav></div>
 
 ## 1. Kiến thức SGK và ví dụ có suy luận
 
-### 1. Vì sao cần học (WHY)
+### 1.1. Vì sao cần học
 Trong căn nhà có nhiều thanh không giao nhau. Muốn biết phương của hai thanh có vuông góc không, không thể đo một góc ngay tại giao điểm không tồn tại. Ta cần cách chuyển phương song song về chung một điểm.
 
-### 2. Khái niệm thực chất (WHAT)
+### 1.2. Khái niệm thực chất
 Qua O bất kì dựng a′//a và b′//b; góc giữa a,b là góc nhỏ giữa hai đường a′,b′, thuộc [0°,90°]. Nếu bằng 90°, gọi a⊥b; hai đường có thể chéo nhau.
 
-### 3. Hình thành và lập luận (HOW)
+### 1.3. Hình thành và lập luận
 Phép tịnh tiến giữ phương; góc không đổi khi chọn O khác. Hai đường giao nhau là trường hợp đặc biệt. Nếu a//a₁ thì (a,b)=(a₁,b), nên có thể thay bằng cạnh song song trong hình hộp.
 
-### 4. Điều kiện, giới hạn, lỗi thường gặp (FORMAL)
+### 1.4. Điều kiện, giới hạn, lỗi thường gặp
 Không lấy góc tù 120° làm góc giữa **đường thẳng**: lấy 60°. Hai đường song song có góc 0°, chéo nhau có thể vuông góc. Hai đường cùng vuông góc với đường thứ ba không nhất thiết song song trong không gian.
 
-### 4B. Làm rõ các định lí, điều kiện và cấu trúc SGK (DEEPENING)
+### 1.5. Làm rõ các định lí, điều kiện và cấu trúc SGK
 **Cách dựng thực sự:** Nếu a và b chéo nhau, lấy O bất kì, vẽ đường a₀ đi qua O song song với a và b₀ đi qua O song song với b. Trong bốn góc do hai đường a₀,b₀ tạo nên, hai góc nhọn bằng nhau và hai góc tù bù với chúng. Góc giữa a,b được chọn là góc nhọn hoặc vuông, không phụ thuộc O. **Trường hợp hai đường trùng phương hoặc song song:** góc 0°. **Trường hợp hai đường cắt nhau:** dùng trực tiếp góc nhỏ tại giao điểm.
 
 **Một chứng minh mẫu về phương:** Trong hình hộp chữ nhật, các cạnh đứng AA′,BB′,CC′,DD′ cùng vuông góc mặt đáy và song song nhau. Nếu AB nằm trong đáy, AB⊥AA′, từ CC′//AA′ suy AB⊥CC′ dù chúng không cắt. Phép suy luận này là tính chất *góc giữa hai đường thẳng* chứ không phải một tuyên bố sai rằng chúng giao nhau.
 
 **Điểm tự chẩn đoán:** Nếu không dựng được đường song song qua O hoặc đang lấy góc >90°, hãy quay lại định nghĩa trước khi giải. **Sai lầm ngược:** a⊥c, b⊥c **không suy a//b** trong không gian; có vô số hướng nằm trong mặt phẳng vuông góc một phương c.
 
-### 5. Hình dẫn giải D5
+### 1.6. Hình minh họa và cách đọc
 
 <figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVII-B22-01_R00.svg" alt="Hình B22: Hai đường chéo nhau vẫn có thể vuông góc theo phương; tịnh tiến một đường tới chung điểm O."/><figcaption>Hình B22: Hai đường chéo nhau vẫn có thể vuông góc theo phương; tịnh tiến một đường tới chung điểm O.</figcaption></figure>
 
 **Hướng dẫn đọc hình:** Hai đường chéo nhau vẫn có thể vuông góc theo phương; tịnh tiến một đường tới chung điểm O. Hình là sơ đồ giải thích phương pháp, **không được suy góc hay độ dài từ nét vẽ phối cảnh**. Điều kiện vuông góc phải có chứng minh.
 
-### 6. Tự thử trước bài luyện tập
+### 1.7. Tự thử trước bài luyện tập
 Hình hộp chữ nhật có cạnh AB theo phương ngang và CC′ theo phương thẳng đứng. Chúng không cắt nhau; vì CC′//AA′ và AB⊥AA′, suy ra (AB,CC′)=90°. Vì sao không cần AB gặp CC′?
 
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Đã tự thử? Mở hướng dẫn tự đối chiếu</summary><p>Đối chiếu lập luận của em với phần ví dụ được giải thích dưới đây. Đây là hoạt động luyện tập, không ghi Skill Mastery.</p></details>
 
-### 7. Ví dụ có hướng dẫn D2 (giải thích vì sao chọn phương pháp)
+### 1.8. Ví dụ có hướng dẫn (vì sao chọn phương pháp)
 
 
 #### EX-G11-CHVII-B22-01 — Góc hai đường trong hình hộp
@@ -66,11 +66,11 @@ Hình hộp chữ nhật có cạnh AB theo phương ngang và CC′ theo phươ
 
 
 
-## 2. Tự khắc phục — D6
+## 2. Tự khắc phục lỗi
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVII-B22-01"><summary><strong>Nhận diện lỗ hổng:</strong> Tưởng hai đường vuông góc phải cắt nhau.</summary><ol><li><strong>Nhận diện lỗ hổng:</strong> Tưởng hai đường vuông góc phải cắt nhau.</li><li><strong>Nhắc đúng bản chất:</strong> Hãy dựng hai đường qua một điểm song song hai phương ban đầu.</li><li><strong>Nhìn lại kiến thức và hình:</strong> Đọc lại phần WHY/WHAT/HOW của B22, tự phát biểu điều kiện bằng lời và kiểm tra đúng hình SVG của bài, không suy luận từ phối cảnh.</li><li><strong>Tự luyện có hướng dẫn:</strong> Hộp chữ nhật: một đường nằm ngang và cạnh bên đứng ở đỉnh khác có góc bao nhiêu? <strong>Sau khi tự làm mới đối chiếu:</strong> 90°, dù chúng không cắt nhau.</li><li><strong>Quay về câu gốc:</strong> <code>THPT-G11-CHVII-B22-C02</code>; giải lại và giải thích mỗi bước. HELP chỉ hiện sau nộp câu *luyện tập*, tuyệt đối không hiện trong RD1 trước Final Submit.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVII-B22-C02">Quay lại câu canonical THPT-G11-CHVII-B22-C02</a></p></details>
+<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVII-B22-01"><summary><strong>Nhận diện lỗ hổng:</strong> Tưởng hai đường vuông góc phải cắt nhau.</summary><ol><li><strong>Nhận diện lỗ hổng:</strong> Tưởng hai đường vuông góc phải cắt nhau.</li><li><strong>Nhắc đúng bản chất:</strong> Hãy dựng hai đường qua một điểm song song hai phương ban đầu.</li><li><strong>Nhìn lại kiến thức và hình:</strong> Đọc lại phần vì sao cần học, khái niệm và cách lập luận của B22, tự phát biểu điều kiện bằng lời và kiểm tra đúng hình SVG của bài, không suy luận từ phối cảnh.</li><li><strong>Tự luyện có hướng dẫn:</strong> Hộp chữ nhật: một đường nằm ngang và cạnh bên đứng ở đỉnh khác có góc bao nhiêu? <strong>Sau khi tự làm mới đối chiếu:</strong> 90°, dù chúng không cắt nhau.</li><li><strong>Quay về câu gốc:</strong> <code>THPT-G11-CHVII-B22-C02</code>; giải lại và giải thích mỗi bước. HELP chỉ hiện sau nộp câu *luyện tập*, tuyệt đối không hiện trong RD1 trước Final Submit.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVII-B22-C02">Quay lại câu canonical THPT-G11-CHVII-B22-C02</a></p></details>
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVII-B22-02"><summary><strong>Nhận diện lỗ hổng:</strong> Lấy góc tù giữa hai tia thay cho góc giữa hai đường.</summary><ol><li><strong>Nhận diện lỗ hổng:</strong> Lấy góc tù giữa hai tia thay cho góc giữa hai đường.</li><li><strong>Nhắc đúng bản chất:</strong> Góc hai đường trong [0°,90°], góc bù có thể là cách đọc khác của tia.</li><li><strong>Nhìn lại kiến thức và hình:</strong> Đọc lại phần WHY/WHAT/HOW của B22, tự phát biểu điều kiện bằng lời và kiểm tra đúng hình SVG của bài, không suy luận từ phối cảnh.</li><li><strong>Tự luyện có hướng dẫn:</strong> Góc tia 154° thì góc đường là? <strong>Sau khi tự làm mới đối chiếu:</strong> 26°.</li><li><strong>Quay về câu gốc:</strong> <code>THPT-G11-CHVII-B22-C01</code>; giải lại và giải thích mỗi bước. HELP chỉ hiện sau nộp câu *luyện tập*, tuyệt đối không hiện trong RD1 trước Final Submit.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVII-B22-C01">Quay lại câu canonical THPT-G11-CHVII-B22-C01</a></p></details>
+<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVII-B22-02"><summary><strong>Nhận diện lỗ hổng:</strong> Lấy góc tù giữa hai tia thay cho góc giữa hai đường.</summary><ol><li><strong>Nhận diện lỗ hổng:</strong> Lấy góc tù giữa hai tia thay cho góc giữa hai đường.</li><li><strong>Nhắc đúng bản chất:</strong> Góc hai đường trong [0°,90°], góc bù có thể là cách đọc khác của tia.</li><li><strong>Nhìn lại kiến thức và hình:</strong> Đọc lại phần vì sao cần học, khái niệm và cách lập luận của B22, tự phát biểu điều kiện bằng lời và kiểm tra đúng hình SVG của bài, không suy luận từ phối cảnh.</li><li><strong>Tự luyện có hướng dẫn:</strong> Góc tia 154° thì góc đường là? <strong>Sau khi tự làm mới đối chiếu:</strong> 26°.</li><li><strong>Quay về câu gốc:</strong> <code>THPT-G11-CHVII-B22-C01</code>; giải lại và giải thích mỗi bước. HELP chỉ hiện sau nộp câu *luyện tập*, tuyệt đối không hiện trong RD1 trước Final Submit.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVII-B22-C01">Quay lại câu canonical THPT-G11-CHVII-B22-C01</a></p></details>
 
 ## 3. Tiếp tục
 

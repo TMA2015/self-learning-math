@@ -1,22 +1,22 @@
 # Bài 27. Thể tích
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG VII · SGK KNTT TẬP 2</p><p class="thpt-r4-lead">Hiểu WHY → khái niệm và lý do → hình minh họa có hướng dẫn đọc → Tự thử trước Core → ví dụ suy luận → tự thực hành và khắc phục. Không ghi Skill Mastery.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương VII</a><a href="../luyen-tap/">Core/Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra tự đối chiếu</a></nav></div>
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG VII · SGK KNTT TẬP 2</p><p class="thpt-r4-lead">Hiểu lý do cần học → khái niệm và lý do → hình minh họa có hướng dẫn đọc → Tự thử trước Core → ví dụ suy luận → tự thực hành và khắc phục. Không ghi Skill Mastery.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương VII</a><a href="../luyen-tap/">Core/Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra tự đối chiếu</a></nav></div>
 
 ## 1. Kiến thức SGK và ví dụ có suy luận
 
-### 1. Vì sao cần học (WHY)
+### 1.1. Vì sao cần học
 Hai thùng có cùng diện tích đáy và cùng độ cao nhưng hình dạng khác nhau có thể chứa lượng khác nhau. Thể tích cần phân biệt lăng trụ và chóp, và dùng đúng chiều cao vuông góc.
 
-### 2. Khái niệm thực chất (WHAT)
+### 1.2. Khái niệm thực chất
 V lăng trụ = S_đáy·h; V hộp chữ nhật = dài·rộng·cao; V chóp = S_đáy·h/3. Chóp cụt đều với diện tích hai đáy S, S′ và chiều cao h: V=h(S+S′+√(SS′))/3.
 
-### 3. Hình thành và lập luận (HOW)
+### 1.3. Hình thành và lập luận
 Lăng trụ có các thiết diện song song đáy cùng diện tích nên thể tích là diện tích đáy nhân chiều cao. Chóp cùng S,h chỉ chiếm 1/3 thể tích lăng trụ tương ứng (ghép/cắt); chóp cụt là hiệu hai chóp đồng dạng, từ đó xuất hiện căn √(SS′). Nếu S′=0, công thức về chóp; nếu S′=S, về lăng trụ.
 
-### 4. Điều kiện, giới hạn, lỗi thường gặp (FORMAL)
+### 1.4. Điều kiện, giới hạn, lỗi thường gặp
 Chiều cao **vuông góc** hai đáy, không tự dùng cạnh xiên. Đơn vị thể tích m³, cm³; 1m³=1000L. Chóp cụt đều đòi hai mặt đáy đồng dạng song song trong một hình chóp đều, không áp cho hai hình tùy ý.
 
-### 4B. Làm rõ các định lí, điều kiện và cấu trúc SGK (DEEPENING)
+### 1.5. Làm rõ các định lí, điều kiện và cấu trúc SGK
 **Chiều cao và đơn vị:** Khi nói S_đáy và h, h phải là **khoảng cách vuông góc giữa các mặt đáy** của lăng trụ hoặc từ đỉnh chóp tới mặt đáy. Không thay bằng cạnh bên xiên hay chu vi. Nếu tính S theo cm² và h theo cm thì V theo cm³; đổi sang lít phải thông qua 1m³=1000L hoặc 1000cm³=1L.
 
 **Vì sao có hệ số một phần ba:** Một chóp và lăng trụ có cùng diện tích đáy S và cùng chiều cao h không có cùng thể tích. Có thể ghép các chóp tam giác phù hợp để suy thể tích chóp bằng 1/3 lăng trụ có cùng S,h; vì thế V_chóp=S h/3. Đây là đặc trưng của chóp, không phải chiết khấu hay quy tắc chọn tùy ý.
@@ -25,18 +25,18 @@ Chiều cao **vuông góc** hai đáy, không tự dùng cạnh xiên. Đơn v�
 
 **Cách tự kiểm:** Với diện tích đáy 36cm² và 9cm², cao 4cm, V=4(36+9+18)/3=84cm³. Nếu em tính (36+9)/2×4=90cm³, em đã dùng công thức hình thang phẳng cho thể tích không gian — sai bản chất.
 
-### 5. Hình dẫn giải D5
+### 1.6. Hình minh họa và cách đọc
 
 <figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVII-B27-01_R00.svg" alt="Hình B27: Ba khối có cùng diện tích đáy và chiều cao; phân biệt hình chóp, lăng trụ và chóp cụt đều."/><figcaption>Hình B27: Ba khối có cùng diện tích đáy và chiều cao; phân biệt hình chóp, lăng trụ và chóp cụt đều.</figcaption></figure>
 
 **Hướng dẫn đọc hình:** Ba khối có cùng diện tích đáy và chiều cao; phân biệt hình chóp, lăng trụ và chóp cụt đều. Hình là sơ đồ giải thích phương pháp, **không được suy góc hay độ dài từ nét vẽ phối cảnh**. Điều kiện vuông góc phải có chứng minh.
 
-### 6. Tự thử trước bài luyện tập
+### 1.7. Tự thử trước bài luyện tập
 Đáy 18cm², cao 5cm: lăng trụ V=90cm³, chóp V=30cm³. Chóp cụt đáy 16cm² và 4cm², cao 3cm: V=28cm³.
 
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Đã tự thử? Mở hướng dẫn tự đối chiếu</summary><p>Đối chiếu lập luận của em với phần ví dụ được giải thích dưới đây. Đây là hoạt động luyện tập, không ghi Skill Mastery.</p></details>
 
-### 7. Ví dụ có hướng dẫn D2 (giải thích vì sao chọn phương pháp)
+### 1.8. Ví dụ có hướng dẫn (vì sao chọn phương pháp)
 
 
 #### EX-G11-CHVII-B27-01 — Cùng đáy cùng cao khác thể tích
@@ -73,9 +73,9 @@ Chiều cao **vuông góc** hai đáy, không tự dùng cạnh xiên. Đơn v�
 
 **Lập luận để tự đối chiếu sau khi thử:** V_hộp=25·8=200cm³; V_chóp=200/3cm³, không phải 200cm³.
 
-## 2. Tự khắc phục — D6
+## 2. Tự khắc phục lỗi
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVII-B27-01"><summary><strong>Nhận diện lỗ hổng:</strong> Lấy trung bình cộng diện tích đáy rồi nhân h cho chóp cụt.</summary><ol><li><strong>Nhận diện lỗ hổng:</strong> Lấy trung bình cộng diện tích đáy rồi nhân h cho chóp cụt.</li><li><strong>Nhắc đúng bản chất:</strong> Phải có thêm √SS′ trong công thức chóp cụt đều.</li><li><strong>Nhìn lại kiến thức và hình:</strong> Đọc lại phần WHY/WHAT/HOW của B27, tự phát biểu điều kiện bằng lời và kiểm tra đúng hình SVG của bài, không suy luận từ phối cảnh.</li><li><strong>Tự luyện có hướng dẫn:</strong> S=16,S′=4,h=3, V? <strong>Sau khi tự làm mới đối chiếu:</strong> 28.</li><li><strong>Quay về câu gốc:</strong> <code>THPT-G11-CHVII-B27-C04</code>; giải lại và giải thích mỗi bước. HELP chỉ hiện sau nộp câu *luyện tập*, tuyệt đối không hiện trong RD1 trước Final Submit.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVII-B27-C04">Quay lại câu canonical THPT-G11-CHVII-B27-C04</a></p></details>
+<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVII-B27-01"><summary><strong>Nhận diện lỗ hổng:</strong> Lấy trung bình cộng diện tích đáy rồi nhân h cho chóp cụt.</summary><ol><li><strong>Nhận diện lỗ hổng:</strong> Lấy trung bình cộng diện tích đáy rồi nhân h cho chóp cụt.</li><li><strong>Nhắc đúng bản chất:</strong> Phải có thêm √SS′ trong công thức chóp cụt đều.</li><li><strong>Nhìn lại kiến thức và hình:</strong> Đọc lại phần vì sao cần học, khái niệm và cách lập luận của B27, tự phát biểu điều kiện bằng lời và kiểm tra đúng hình SVG của bài, không suy luận từ phối cảnh.</li><li><strong>Tự luyện có hướng dẫn:</strong> S=16,S′=4,h=3, V? <strong>Sau khi tự làm mới đối chiếu:</strong> 28.</li><li><strong>Quay về câu gốc:</strong> <code>THPT-G11-CHVII-B27-C04</code>; giải lại và giải thích mỗi bước. HELP chỉ hiện sau nộp câu *luyện tập*, tuyệt đối không hiện trong RD1 trước Final Submit.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVII-B27-C04">Quay lại câu canonical THPT-G11-CHVII-B27-C04</a></p></details>
 
 ## 3. Tiếp tục
 

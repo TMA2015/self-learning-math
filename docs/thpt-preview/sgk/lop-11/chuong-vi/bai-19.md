@@ -4,31 +4,31 @@
 
 ## 1. Kiến thức SGK — hiểu bản chất trước công thức
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVI-B19-01_R00.svg" alt="B19 — trực quan hình thành khái niệm"/><figcaption>Hình D5 — quan sát trước khi tính: B19 — trực quan hình thành khái niệm</figcaption></figure>
+<figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVI-B19-01_R00.svg" alt="B19 — trực quan hình thành khái niệm"/><figcaption>Hình minh họa — quan sát trước khi tính: B19 — trực quan hình thành khái niệm</figcaption></figure>
 
 **Cách đọc và phát hiện:** Hình B19 không phải bảng công thức: hãy đọc từ trái qua phải để tính 2³=8, rồi đọc ngược để thấy log₂8=3 trả lời câu hỏi “số mũ nào?”. Kiểm điều kiện cơ số, đối số ngay dưới sơ đồ.
 
-### 1. Vấn đề dẫn đến lôgarit: ta muốn tìm **số mũ** (WHY)
+### 1.1. Vấn đề dẫn đến lôgarit: ta muốn tìm **số mũ**
 
 Nhân 2 liên tiếp: `2¹=2, 2²=4, 2³=8`. Nếu đã biết kết quả 8, hỏi **cần bao nhiêu lần nhân đôi để được 8?**, câu trả lời là 3. Với 10 hoặc 7, câu hỏi khó hơn: `2^x=10` thì x bằng bao nhiêu? Không thể chỉ thử số nguyên. Để trả lời loại câu hỏi “số mũ nào tạo ra số này?”, ta đặt ra **lôgarit**.
 
-### 2. Lôgarit là gì (WHAT), trước khi học quy tắc
+### 1.2. Lôgarit là gì, trước khi học quy tắc
 
 Với `a>0, a≠1, b>0`, **`log_a b` là số thực x duy nhất sao cho `a^x=b`**. Viết tương đương `log_a b=x ⇔ a^x=b`. `a` là **cơ số**, `b` là **đối số**; chúng giữ vai trò khác nhau. Ví dụ `log₂8=3` vì `2³=8`; `log₃(1/9)=−2` vì `3^{-2}=1/9`. Logarit **không phải** phép chia b/a.
 
 **Vì sao những điều kiện?** `a=1` cho `1^x=1` với mọi x nên không thể tìm số mũ duy nhất; `a≤0` không tạo ra một hàm lũy thừa thực xác định tốt với mọi x; `a^x` với a>0 luôn dương, nên không thể có `b≤0`.
 
-### 3. Hình thành quy tắc từ ý nghĩa “số mũ”
+### 1.3. Hình thành quy tắc từ ý nghĩa “số mũ”
 
 `log_a 1=0` do `a⁰=1`; `log_a a=1`; `a^{log_a b}=b` (b>0); `log_a(a^x)=x`.
 
 Đặt `u=log_a M`, `v=log_a N` với M,N>0. Vì `a^u=M` và `a^v=N`, `MN=a^{u+v}`, suy ra **`log_a(MN)=log_a M+log_a N`**. Tương tự `log_a(M/N)=log_a M−log_a N` (N>0), `log_a(M^r)=r·log_a M` (M>0, r thực). **Không** có quy tắc `log_a(M+N)=log_a M+log_a N` (phản ví dụ M=N=1: trái `log_a2`, phải 0).
 
-### 4. Đổi cơ số và máy tính
+### 1.4. Đổi cơ số và máy tính
 
 Đặt `x=log_a b` nên `a^x=b`. Lấy `log_c` hai vế với `c>0,c≠1`: `x log_c a=log_c b`, suy ra `log_a b=log_c b/log_c a`. Điều kiện `a≠1` làm mẫu khác 0. `lg x=log₁₀x`, `ln x=log_e x` (e là hằng số dương đặc biệt, xấp xỉ 2,71828). Máy tính có thể cho giá trị gần đúng, **không thay thế điều kiện đối số dương**.
 
-### 5. Tự thử
+### 1.5. Tự thử
 
 Nếu `log₅125=3`, em phát biểu lại một đẳng thức lũy thừa. Giải thích vì sao `log₄0` vô nghĩa và vì sao `log₂(4+4)` không bằng `log₂4+log₂4` (kiểm `log₂8=3`, vế sau 4).
 
@@ -38,7 +38,7 @@ Nếu `log₅125=3`, em phát biểu lại một đẳng thức lũy thừa. Gi�
 
 ## 2. Ví dụ có suy luận
 
-### D2 — Giáo viên làm mẫu B19
+### Ví dụ mẫu có giải thích
 
 **EX-G11-B19-01 (đọc đúng ý nghĩa).** `log₄(1/16)=−2` vì `4^{-2}=1/16`. **Không lấy** `1/16÷4`.
 
