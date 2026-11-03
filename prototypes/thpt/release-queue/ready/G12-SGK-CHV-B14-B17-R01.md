@@ -7,13 +7,13 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: SGK_CHAPTER
 RELEASE_SCOPE: FULL_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: abd84f3aa390d8a33c128d82ed2e716bb8be6959
+SOURCE_COMMIT: a4a3055000ac6d657b42fbe396ed3aae3d04cdbb
 AUTHOR_PR: 725
 CURRENT_PR: #725 Draft AUTHORING, source-locked no website release
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md
-ACADEMIC_SOURCE_BLOB: 1a16eb5d7f82b5571628dfe22d35b0a3b0ac7664
+ACADEMIC_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/G12_CHV_R01_ACADEMIC_PED_COMPOSITE_SOURCE_RECEIPT_20261103.md
-REVIEW_RECEIPT_BLOB: 7166a4070d3bf6840d20f5d00e2da5d1d04f80fb
+REVIEW_RECEIPT_BLOB: a07070119259bd0133535fc3250d008cd78d8195
 REVIEW_RECEIPT: prototypes/thpt/review-packets/G12_CHV_R01_ACADEMIC_PED_COMPOSITE_SOURCE_RECEIPT_20261103.md
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/G12-SGK-CHV-B14-B17-R01_HANDOFF_V2_20261103.md
 ACADEMIC_VERDICT: PASS_ON_LOCKED_SNAPSHOT
@@ -25,7 +25,7 @@ RELEASE_AUTHORIZATION: NO
 MASTERY_ACTIVATION: NO
 
 ## AUTHORING A1–A7 — signed source evidence
-- [x] A1_SOURCE_SNAPSHOT — Single R01 public Git blob `1a16eb5d7f82b5571628dfe22d35b0a3b0ac7664`, immutable original R00 Git blob `9e73f50efdf237ebdae8e64572e45b9b22e8dbbd`, R01 rubric one-item Delta C approved by independent targeted reviewer.
+- [x] A1_SOURCE_SNAPSHOT — Single R01 public Git blob `11eb2834cfdb4a24685157f84666c2bb0767970a`, immutable original R00 Git blob `9e73f50efdf237ebdae8e64572e45b9b22e8dbbd`, R01 rubric one-item Delta C approved by independent targeted reviewer.
 - [x] A2_SGK_SBT_SCOPE — Original KNTT SGK 12 Tập Hai printed29–63/PDF1 31–65 and SBT actual scan source SHA verified; SBT B14 printed p25 reference missing explicitly `SBT_REFERENCE_GAP_DOCUMENTED`, independent B14 Q01 v1.1 PASS.
 - [x] A3_NOTEBOOKLM_VERDICT — Original B15–B17 independent Academic PASS and whole chapter PED PASS + independent targeted B14 Q01 PASS/W01 Q06 rubric R01 PASS; original raw reports retained, author composite receipt never falsely described as full reviewer PASS.
 - [x] A4_ITEM_OUTCOME_IDS — Exactly 24 outcome IDs and 96 unique canonical public item IDs, 24 public END references only to original `SGK_APPLICATION` IDs; B14 O01–O06 mandatory, O07 cross-lesson optional after B17; no duplicated items.
