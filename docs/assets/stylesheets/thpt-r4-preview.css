@@ -566,3 +566,48 @@ body[data-md-color-scheme="slate"] .thpt-r4-home-orbit-caption{color:#243e68}
   cursor:default;
   pointer-events:none;
 }
+
+
+/* Owner 03/11 SGK presentation QA: mathematical notation is never code syntax.
+   The JS typography normalizer is THPT-only and creates real sup/sub elements.
+   Preserve MathJax and THCS Golden layouts; avoid an inline code-box appearance
+   for these mathematical shorthand expressions only. */
+body.thpt-r4-route .md-content__inner code.thpt-math-notation {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+body.thpt-r4-route .md-content__inner code.thpt-math-notation sup,
+body.thpt-r4-route .md-content__inner code.thpt-math-notation sub {
+  font-size: .72em;
+  line-height: 0;
+}
+body.thpt-r4-route .md-content__inner :is(h1,h2,h3,p,li) {
+  overflow-wrap: break-word;
+}
+
+
+/* SGK 11 readable lesson rhythm (RELEASE Delta_A_UI, 2026-11-03).
+ * Prevent long 950px lines on desktop without touching Maths, learner markup,
+ * THCS Golden, G10, Topic views, cards, SVG, tables or dialogs. */
+body.thpt-g11-sgk-readable .md-content__inner > p,
+body.thpt-g11-sgk-readable .md-content__inner > ul,
+body.thpt-g11-sgk-readable .md-content__inner > ol {
+  max-width: min(100%, 82ch);
+  line-height: 1.78;
+  margin-bottom: 1.35em;
+}
+body.thpt-g11-sgk-readable .md-content__inner > :is(h2,h3) {
+  scroll-margin-top: 5.25rem;
+  line-height: 1.42;
+}
+@media (max-width: 600px) {
+  body.thpt-g11-sgk-readable .md-content__inner > p {
+    line-height: 1.72;
+    margin-block: .8em 1.2em;
+  }
+}

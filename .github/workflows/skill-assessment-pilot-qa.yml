@@ -38,6 +38,11 @@ on:
       - 'scripts/test-complete-factorization-preview-browser.py'
       - 'docs/assets/stylesheets/skill-assessment-pilot-v2.css'
       - 'docs/huong-dan/thu-nghiem-danh-gia-ky-nang-v2.md'
+      # G11 RELEASE AP1/AP2/AP5 source/display may affect the shared site shell.
+      # Run this existing regression on every G11 learner-page integration, too.
+      - 'docs/thpt-preview/sgk/lop-11/**'
+      - 'docs/assets/javascripts/math-details-v1.js'
+      - 'docs/assets/stylesheets/thpt-r4-preview.css'
       - 'mkdocs.yml'
       - '.github/workflows/skill-assessment-pilot-qa.yml'
   push:

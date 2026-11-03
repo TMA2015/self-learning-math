@@ -30,7 +30,7 @@ Góc +2π rad, độ dài 4π cm. Hai tia cuối trùng nhau không có nghĩa b
 
 <span class="thpt-ap-knowledge-pilot" hidden aria-hidden="true"></span>
 
-### 1. Góc lượng giác và số đo
+### 1.1. Góc lượng giác và số đo
 
 **Chiều quay.** Một góc lượng giác ghi lại cả tia đầu, tia cuối và chiều quay: ngược chiều kim đồng hồ lấy dương, cùng chiều lấy âm.
 
@@ -44,7 +44,7 @@ Góc +2π rad, độ dài 4π cm. Hai tia cuối trùng nhau không có nghĩa b
 
 **Chú ý:** Khi chỉ xét vị trí cuối trên đường tròn lượng giác có thể quy về một đại diện trong \([0,2π)\), nhưng **không được xóa ý nghĩa số vòng quay** nếu bài toán hỏi quãng đường chuyển động.
 
-### 2. Radian và độ dài cung
+### 1.2. Radian và độ dài cung
 
 **Công thức độ dài cung.** Với bán kính \(R>0\), góc ở tâm có độ lớn \(|α|\) rad chắn cung có độ dài:
 
@@ -56,7 +56,7 @@ s=R|α|
 
 Không dùng trực tiếp độ cho công thức này; góc 180° chắn cung nửa đường tròn dài \(πR\).
 
-### 3. Đường tròn lượng giác
+### 1.3. Đường tròn lượng giác
 
 **Điểm cuối.** Gắn O với gốc tọa độ, bán kính đơn vị. Khi quay từ trục Ox dương, điểm cuối trên đường tròn là:
 
@@ -72,7 +72,7 @@ sin²α+cos²α=1
 
 **Quy tắc dấu.** Dấu của sin/cos phụ thuộc góc phần tư, không phụ thuộc việc chỉ nhớ số dương của góc tham chiếu.
 
-### 4. Tang, côtang và điều kiện xác định
+### 1.4. Tang, côtang và điều kiện xác định
 
 **Tang:**
 
@@ -106,7 +106,7 @@ trên miền \(sin α ≠ 0\).
 
 **Chu kì.** Sin/cos chu kì 2π; tan/cot chu kì π khi xác định.
 
-### 5. Các góc liên quan đặc biệt
+### 1.5. Các góc liên quan đặc biệt
 
 **Góc đối:**
 
