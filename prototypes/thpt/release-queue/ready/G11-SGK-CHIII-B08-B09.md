@@ -69,3 +69,11 @@ MASTERY_ACTIVATION: NO
 ## ONE quality-standard and custody boundary
 
 The canonical `AUTHOR_HANDOFF` `G11-SGK-CHIII-B08-B09_HANDOFF_V2_R03_20261102.md` contains **Q01–Q18 evidence with exact source pointers** and a complete item/outcome/role matrix. This manifest is the only effective author READY record for `G11-SGK-CHIII-B08-B09`; historical R01 and R02 artifacts and draft V2 documents are preserved as audit history, not duplicate active handoffs. Reviewer R01/R02 PASS remains only for the reviewed mathematical/pedagogic scope; `S1` citation changes were author-direct proven and have not been deceptively labeled independently re-reviewed under NotebookLM v2.1. `CONTENT_READY` is only source-authoring, no permission for public RD1 release, client mastery scoring, workflow activation or website production deployment.
+
+
+## RELEASE integration checkpoint — 03/11/2026 · Draft #714 · QA OPEN
+
+- `RELEASE_STATE: INTEGRATION_CANDIDATE` (not RELEASE_READY or PUBLISHED), source/receipt and three original SVG byte-identical to AUTHORING Draft #710.
+- Candidate: ChIII B08–B09 full learner D1–D6 + 28 source-locked PUBLIC formative IDs + 4 shared Written/Anchor + 12 public Practice item references for `CLIENT_SELF_CHECK_NO_MASTERY` under owner Issue #662. 21 private RD1 items remain outside GitHub; public questions are not unseen independent assessment.
+- `AP1–AP5: PENDING CI/BROWSER`; `R1–R5: PENDING EXACT-FINAL-HEAD QA`; `P1: NOT_PUBLISHED`; `P2: PHYSICAL_SAFARI_OPEN`.
+- If errors appear in rendering or navigation, RELEASE owns UI/source-equivalent Delta_A corrections and reruns exact-head CI. Mathematical/answer/rubric changes would return to AUTHORING.
