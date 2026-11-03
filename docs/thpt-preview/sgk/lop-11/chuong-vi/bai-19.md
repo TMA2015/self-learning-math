@@ -57,4 +57,4 @@ Nếu `log₅125=3`, em phát biểu lại một đẳng thức lũy thừa. Gi�
 
 ## 4. Tiếp tục
 
-[Core và Luyện tập Bài 19](../luyen-tap/) · [Tự luận Chương VI](../../../../thu-vien/tu-luan-g11-chuong-vi/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
+[Core và Luyện tập Bài 19](luyen-tap.md) · [Tự luận Chương VI](../../../thu-vien/tu-luan-g11-chuong-vi.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
