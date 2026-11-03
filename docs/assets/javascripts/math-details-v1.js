@@ -119,6 +119,8 @@
   }
 
   function bindTypography() {
+    // Only G11 SGK gets the narrower long-form reading measure; never THCS/G10/Topics.
+    document.body?.classList.toggle("thpt-g11-sgk-readable", /\/thpt-preview\/sgk\/lop-11\/chuong-[ivx]+\/bai-\d+\/?/.test(location.pathname));
     const area = document.querySelector(".md-content__inner");
     if (!routeAllowed() || !area?.querySelector("[data-thpt-r4]")) {
       liveObserver?.disconnect();
