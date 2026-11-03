@@ -8,13 +8,13 @@
 
 **Cách đọc và phát hiện:** Hình B18 giúp em nhìn thấy cùng một quy tắc 2^x từ số mũ âm qua 0 đến số mũ phân số: đọc các điểm trên trục và so sánh chấm màu cam tại x=1/2 (√2). Đừng chỉ chép hình: hãy nêu vì sao 2^(−2)=1/4 vẫn là một số **dương**.
 
-### 1.1. Tại sao phải mở rộng số mũ? (WHY)
+### 1.1. Tại sao phải mở rộng số mũ?
 
 Em đã biết `2³=2·2·2=8`: số mũ 3 đếm ba thừa số 2. Nhưng nếu hỏi **cạnh hình vuông** có diện tích 2 thì cạnh phải dài bao nhiêu? Ta cần một số dương mà **bình phương bằng 2**, tức `√2`. Có thể viết nó là `2^(1/2)` để bảo toàn cách tính `(2^(1/2))²=2`. Không thể giải thích số mũ `1/2` là “nhân số 2 với nhau nửa lần”; đó là một **định nghĩa mở rộng phù hợp các quy tắc đã có**.
 
 Lãi kép hay biến đổi liên tục cũng nảy sinh số mũ không nguyên: `P(t)=P₀(1+r)^t` (khi mô hình cho phép thời gian t là số thực). Vì thế toán học cần định nghĩa có nghĩa cho `a^{1/2}, a^{-2}` và `a^{√2}`. Bài này xây dựng các bước mở rộng ấy.
 
-### 1.2. Từ số mũ nguyên dương đến 0 và âm (WHAT/HOW)
+### 1.2. Từ số mũ nguyên dương đến 0 và âm
 
 Với n nguyên dương, `a^n` là tích n thừa số a. Nhìn `2³=8, 2²=4, 2¹=2`: giảm số mũ một đơn vị thì chia 2; để giữ quy luật đó, `2⁰=1` và `2^{-1}=1/2`. Tổng quát, **khi a≠0**: `a⁰=1`, `a^{-n}=1/a^n`.
 
@@ -34,7 +34,7 @@ Với `a>0`, `n≥2` nguyên dương và `m` nguyên, định nghĩa `a^{m/n}=�
 
 Muốn tính `2^{√2}`, trước hết xấp xỉ `√2` bằng các số hữu tỉ `1,4; 1,41; 1,414;...`. Các giá trị `2^{1,4};2^{1,41};...` tiến tới một số dương xác định; ta gọi đó là `2^{√2}`. Định nghĩa chính xác dựa vào giới hạn của dãy số hữu tỉ tiến tới số mũ vô tỉ; giới hạn **không phụ thuộc** cách xấp xỉ. Đây là chỗ liên hệ thật với giới hạn Chương V, nhưng học sinh không cần chứng minh giải tích ngoài phạm vi SGK.
 
-### 1.5. Các quy tắc và điều kiện (FORMAL / WHY RULE)
+### 1.5. Các quy tắc và điều kiện
 
 Với `a,b>0`, `x,y∈ℝ`:
 - `a^x a^y = a^{x+y}`: cùng cơ số, phép nhân gộp số mũ.
@@ -55,7 +55,7 @@ Với `a,b>0`, `x,y∈ℝ`:
 
 ## 2. Ví dụ có suy luận
 
-### D2 — Giáo viên làm mẫu B18
+### Ví dụ mẫu có giải thích
 
 **EX-G11-B18-01 (ý nghĩa số mũ âm).** Tính `(3/2)^{-2}`. **Chọn quy tắc nào?** Số mũ âm nghĩa là lấy nghịch đảo: `(2/3)²=4/9`; dấu trừ không được giữ thành hệ số `−`.
 
