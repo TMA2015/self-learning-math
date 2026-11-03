@@ -18,6 +18,10 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
     for(const lesson of [8,9]){
      response=await page.goto(base+"bai-"+lesson+"/",{waitUntil:"networkidle"});
      assert(response?.ok(),"B0"+lesson+" lesson");
+     if(lesson===9){
+      const localHeads=(await page.locator("h3").allTextContents()).slice(0,6).map(x=>x.trim());
+      assert.deepEqual(localHeads,["1. Giá trị đại diện và trung bình","2. Tần số tích lũy","3. Trung vị (nội suy)","4. Tứ phân vị","5. Mốt (nội suy, điều kiện SGK)","6. Kiểm tra ngữ cảnh"],"B09 six learner-visible headings start at 1 and appear separately");
+     }
      const first=page.locator('[data-ped-first-try="1"]');
      assert.equal(await first.count(),1);
      assert.equal(await first.getAttribute("open"),null,"First try hidden by default");
