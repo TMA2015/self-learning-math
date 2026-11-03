@@ -5,6 +5,10 @@
 
 **Repository duy nhất:** TMA2015/self-learning-math. Đây là kho MANIFEST và bằng chứng; không phải kho nhân bản câu hỏi, không có backend, không có held-out Readiness keys.
 
+## Quyết định chủ dự án 03/11 — Mở rộng V2 cho Hoạt động trải nghiệm SGK
+
+Cho phép đúng loại `LEARNING_PATH=SGK_EXPERIENCE_SUPPLEMENT` và `RELEASE_SCOPE=SGK_EXPERIENCE_SUPPLEMENT` làm gói học liệu bổ sung trên đường SGK, với cùng chuẩn `SLM-THPT-QUALITY-ONE v1.1.0` và A1–A7/Q01–Q18/NotebookLM/exact source & receipt Git blobs/PED. Gói này **không** thay thế `SGK_CHAPTER`, không có held-out RD1 độc lập và chỉ có `CLIENT_SELF_CHECK_NO_MASTERY`; không được nhận Mastery hoặc Chapter/Topic Readiness. Cả hai gate `test-thpt-handoff-gate-v2.cjs` và `test-thpt-release-queue.cjs` phải PASS trên đúng HEAD; RELEASE/AP/R vẫn là trách nhiệm nhánh phát hành với quyền chủ dự án riêng. Mọi câu chữ cũ chỉ cho phép chương SGK được hiểu theo bổ sung chính thức này, không tự nới cho các gói khác.
+
 ## Cập nhật điều phối RELEASE G11 ngày 03/11/2026
 
 Quyền phát hành SGK Toán 11 đã được chủ dự án **mở lại có điều kiện** sau lệnh PAUSE 02/11. Đọc [G11 release operations 03/11](G11_RELEASE_OPERATIONS_20261103.md) trước mọi lượt; đây là hướng dẫn vận hành, **không phải chuẩn học thuật mới**. Nó phân rõ `BLOCKED_BY_AUTHORING` khi nguồn S1/toán/receipt/delta lỗi và `BLOCKED_BY_RELEASE` khi Final Submit, MkDocs, JS, AP/QA/CI chưa đạt; **Q16 tự đối chiếu client thuộc RELEASE theo Issue #662**, không lấy thiếu RD1 mới làm lý do trì hoãn. Manifest V2 trên AUTHORING Draft #710 được tiếp nhận theo Git blob SHA không đòi merge Draft vào `main`; Release giữ một candidate PR riêng và hoàn tất exact-final-head QA. Lượt automation phải xét và báo từng packet độc lập, bỏ qua blocker cục bộ để đi tiếp, gồm gói SGK bổ sung trang 99–109 ngoài chín chương.
