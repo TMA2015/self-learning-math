@@ -515,8 +515,11 @@ async function ready(page,path){
   assert(sidebarStructure.includes("Tự kiểm tra cuối Chương VI"),"Missing separate SGK chapter Readiness in sidebar");
   const disclosureButtons=page.locator(".md-sidebar--primary .thpt-r4-sidebar-toggle");
   assert((await disclosureButtons.count())>=1,"THPT sidebar must have collapsible navigation groups");
+  // Active SGK→grade→chapter ancestors must open, unrelated sections close.
   for(const toggle of await disclosureButtons.all()){
-    assert.equal(await toggle.getAttribute("aria-expanded"),"false","Nested THPT sidebar sections must default to collapsed");
+    const active=await toggle.evaluate(el=>el.parentElement.classList.contains("md-nav__item--active"));
+    assert.equal(await toggle.getAttribute("aria-expanded"),String(active),
+      "Contextual sidebar must open active ancestors and collapse unrelated branches");
   }
   // Exercise the actual on-screen sidebar, not the hidden mobile drawer copy.
   await page.setViewportSize({width:1440,height:900});
@@ -533,11 +536,15 @@ async function ready(page,path){
   }
   assert(firstVisibleDisclosure,"No on-screen sidebar disclosure button found at desktop width");
   const controlledId=await firstVisibleDisclosure.getAttribute("aria-controls");
+  const initialOpen=(await firstVisibleDisclosure.getAttribute("aria-expanded"))==="true";
   await firstVisibleDisclosure.click();
-  assert.equal(await firstVisibleDisclosure.getAttribute("aria-expanded"),"true","Sidebar section could not expand");
-  assert(await page.locator("#"+controlledId).isVisible(),"Expanded section children not visible");
+  assert.equal(await firstVisibleDisclosure.getAttribute("aria-expanded"),String(!initialOpen),
+    "Sidebar section could not toggle manually");
+  assert.equal(await page.locator("#"+controlledId).evaluate(el=>el.hidden),initialOpen,
+    "Sidebar child visibility must follow manual toggle");
   await firstVisibleDisclosure.click();
-  assert.equal(await firstVisibleDisclosure.getAttribute("aria-expanded"),"false","Sidebar section could not collapse");
+  assert.equal(await firstVisibleDisclosure.getAttribute("aria-expanded"),String(initialOpen),
+    "Sidebar section could not restore its prior disclosure state");
   await ready(page,"sgk/core/");
   assert((await page.locator("article").textContent()).includes("liên kết tương thích"),"Old Core library URL must remain usable");
   await ready(page,"sgk/chuong-vi/bai-tap-cuoi-chuong/");
