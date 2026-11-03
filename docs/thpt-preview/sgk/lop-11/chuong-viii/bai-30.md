@@ -4,10 +4,10 @@
 
 ## 1. Kiến thức SGK — hình thành bản chất trước quy tắc
 
-### 1.1. WHY: Cần biết cơ hội "cả hai" thay vì "ít nhất một"
+### 1.1. Cần biết cơ hội "cả hai" thay vì "ít nhất một"
 Hai khâu sản xuất được kiểm tra riêng: nếu xác suất sản phẩm qua khâu 1 là 3/4 và qua khâu 2 là 2/3, em muốn biết **qua cả hai khâu**. Đây là **giao** chứ không phải **hợp**. Trong mô hình hai khâu độc lập, cơ hội thành công cả hai bằng 3/4 × 2/3=1/2. Không thể cộng 3/4+2/3 (>1): con số đó không thể là xác suất.
 
-### 1.2. HOW: Vì sao được nhân **khi độc lập**?
+### 1.2. Vì sao được nhân **khi độc lập**?
 Nếu A và B độc lập, phần B xảy ra trong các trường hợp A xảy ra có **cùng tỉ lệ** P(B) như tổng thể (ý nghĩa không thay đổi khả năng). Vì vậy phần giao có tỉ lệ P(A)×P(B): **P(A∩B)=P(A)P(B)**. Đây chính là công thức nhân cho hai biến cố độc lập. **Không được nhân hai xác suất khi chưa có giả thiết độc lập**. Chẳng hạn nếu rút hai thẻ liên tiếp **không hoàn lại**, xác suất màu của lần hai thay đổi theo lần một; quy tắc đơn giản không áp dụng một cách tự động. Công thức này khác với quy tắc cộng, vốn áp dụng cho mọi cặp biến cố.
 
 ### 1.3. Kiểm tra độc lập và phân biệt xung khắc
@@ -26,7 +26,7 @@ Hai cảm biến **hoạt động độc lập**, có xác suất phát hiện l
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Em đã tự thử? Mở lời giải đối chiếu</summary><p><strong>Đối chiếu sau thử:</strong> (i) 3/5, (ii) 1−(1/5)(1/4)=19/20. Hãy giải thích vì sao phải dùng tích ở (i), bù ở (ii).</p></details>
 
 
-## 2. Ví dụ có suy luận D2
+## 2. Ví dụ có suy luận
 
 #### EX-G11-CHVIII-B30-01: Nhân hai xác suất độc lập
 
@@ -79,7 +79,7 @@ Hai cảm biến **hoạt động độc lập**, có xác suất phát hiện l
 
 ---
 
-## 3. Tự khắc phục lỗi D6
+## 3. Tự khắc phục lỗi
 
 <details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVIII-B30-01"><summary><strong>Chẩn đoán lỗi:</strong> Nhân dù không có giả thiết độc lập.</summary><ol><li><strong>Chẩn đoán lỗi:</strong> Nhân dù không có giả thiết độc lập.</li><li><strong>Nhắc khái niệm/điều kiện:</strong> Tích P(A)P(B) chỉ khi đã biết độc lập.</li><li><strong>Giải thích vì sao:</strong> Đọc lại phần D1 của B30, vẽ tập hợp/nhánh xác suất tương ứng, rồi nói lại bằng lời trước khi thay số.</li><li><strong>Tự thử có dẫn:</strong> P(A)=1/2,P(B)=1/3 nhưng giao=1/9; độc lập? <strong>Đối chiếu sau thử:</strong> Không, tích đúng phải là 1/6.</li><li><strong>Quay về câu nguồn:</strong> Tự làm lại <code>THPT-G11-CHVIII-B30-C01</code> từ đầu, ghi lý do chọn công thức. Không tính lời giải đã xem là bằng chứng Mastery.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVIII-B30-C01">Quay lại câu gốc THPT-G11-CHVIII-B30-C01</a></p></details>
 
