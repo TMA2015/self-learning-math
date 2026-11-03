@@ -45,15 +45,15 @@ MASTERY_ACTIVATION: NO
 - [x] PED5_REASONED_EXAMPLES — 9 original worked examples now accompanied by R02 reason-for-method and condition notes, targeted PASS.
 - [x] PED6_FIRST_TRY_REMEDIATION — 3 optional pre-Core small self-tries, 6 original D6 remediation links, R02 independent targeted PASS, no Mastery.
 
-## R — RELEASE responsibility, NOT YET IMPLEMENTED/QA
+## R — RELEASE integration and scoped QA evidence (P1 separate)
 
 - [x] R1_INTEGRATED_CURRENT_MAIN — RELEASE PR #713 has exact source/receipt R03 Git blobs (`2101e2a2` / `09d77f92`) plus 3 lessons, 36 public Core/Practice, 6 shared Written, 3 SVG, 6 D6 and 15-item voluntary Final Submit; original canonical public records parity 36/36 in `scripts/test-thpt-g11-chii-release-integration.cjs`; awaiting merge before claiming live main.
-- [ ] R2_EXACT_HEAD_CI — RELEASE must independently check site CI on exact current integration commit.
+- [x] R2_EXACT_HEAD_CI — Initial RELEASE HEAD `8f7ca282402520667d8ad51d922403954ca86289` verified 5/5 required workflows SUCCESS: THPT R4 Preview #41547624162, Roadmap #41547624211, Branding #41547624302, Skill #41547624282, One Standard #41547624293, against main `d3e624d256f97c3c713f71bfcf71c51626c57dc7`. **This metadata commit must itself receive all exact-final-HEAD CI SUCCESS before merge; if any fails, R2 reopens and no deploy.**
 - [x] R3_CLEAN_STUDENT_UI — Chromium source-locked smoke 390/820/1440 in R4 run #41545357499 verifies G11 ChII menus, B05–B07 teaching flow/figures, 6 canonical item deep links, D6 remediation and client self-check. Page explicitly distinguishes voluntary assessment from independent readiness; raw RD1 archive absent.
 - [x] R4_ASSESSMENT_SAFETY — Owner Issue #662 permits client-only selfcheck from original reviewed public canonical Practice IDs. 15 references / 15 distinct skills / no cloned stems, no protected RD1, manual Written rubric only, no keys/feedback before Final Submit, answers only after, one submit, no Mastery/independent Readiness/persistence; R4 browser #41545357499 and exact source-integration assertion pass. Private 19 RD1 remain outside public repo.
 - [x] R5_OWNER_APPROVAL — Owner 03/11/2026 expressly authorized RELEASE to finish verified G11 chapter QA and autonomously merge/deploy chapters meeting all conditions. `RELEASE_AUTHORIZATION: NO` above is *historical authoring-lane* status and cannot override later owner conditional permission; NO deploy until R2 final-HEAD CI SUCCESS.
 
-## AP — RELEASE visual and learning QA, NOT YET IMPLEMENTED/QA
+## AP — RELEASE rendered visual and learning QA evidence
 
 - [x] AP1_IDEA_HIERARCHY — All three B05–B07 have reviewed concept-first introductions, D1/2 examples and an optional pre-Core try before practice; browser smoke #41545357499 confirms layout/navigation at 390/820/1440.
 - [x] AP2_FORMULA_VISIBILITY — Original mathematics/formula text and answers retained byte-for-byte in source-locked R03 and 36/36 D3 records; MkDocs preview build + Chromium smoke #41545357499 show no horizontal overflow on 390/820/1440. Physical-device typesetting UAT remains P2 OPEN.
@@ -77,3 +77,9 @@ The canonical `AUTHOR_HANDOFF` `G11-SGK-CHII-B05-B07_HANDOFF_V2_R03_20261102.md`
 - **R2 pending:** after these metadata/operations changes, required Roadmap/THPT Preview/Branding/Skill CI must all re-run `SUCCESS` on **exact final PR HEAD** and current main, then only merge. Earlier #41545357499 R4 SUCCESS on unchanged learner code supports scoped R3/R4/AP checks but is not final-head R2.
 - **P1 still unchecked:** only merge+SUCCESS Deploy MkDocs on exact main merge commit + verified `gh-pages` chapter and self-check assets qualifies as published. Real-device P2 must stay OPEN unless independently tested.
 - **Runbook:** `prototypes/thpt/release-queue/G11_RELEASE_OPERATIONS_20261103.md`, operational only; the sole academic rubric remains Q01–Q18.
+
+## RELEASE final-head verification handoff · 03/11/2026
+
+- All five CI workflows completed SUCCESS on pre-metadata HEAD `8f7ca282402520667d8ad51d922403954ca86289` with unchanged `main=d3e624d256f97c3c713f71bfcf71c51626c57dc7`.
+- The only post-check changes planned are RELEASE gate bookkeeping in this manifest/REGISTER; **verify the new final commit's five workflows again**. No student content, canonical source/receipt, Final Submit engine, Firebase/Gemini, progress or Mastery change.
+- Only after final CI SUCCESS may RELEASE mark PR ready, merge and verify exact-main MkDocs deploy plus gh-pages P1. P2 real Safari remains OPEN. This is not a claim of publication.
