@@ -72,7 +72,7 @@ function selfTest(){
  let bad=full.replace("| **Q18 Review/fidelity**","| **Q17 Review/fidelity**");
  assert(validate(bad,"","").failures.some(e=>e.startsWith("Q01_Q18_MATRIX")));
  if(/\*\*VERSION:\*\* `1\.1\.0`/.test(full)){
-   assert(validate(full.replace("SBT_REFERENCE_GAP_DOCUMENTED","SBT_REF_GAP_DELETED"),"","").failures.some(e=>e.startsWith("Q01_V1_1_MISSING_CONTROL")));
+   assert(validate(full.replaceAll("SBT_REFERENCE_GAP_DOCUMENTED","SBT_REF_GAP_DELETED"),"","").failures.some(e=>e.startsWith("Q01_V1_1_MISSING_CONTROL")));
    assert(validate(full.replace("**VERSION:** `1.1.0`","**VERSION:** `9.9.9`"),"","").failures.includes("VERSION_NOT_LOCKED"));
  }
  console.log("PASS governance-only preflight: one standard version, owner decision, Q01 source roles, missing evidence, duplicate Q and negative invalid version (NOT Academic/PED PASS)");
