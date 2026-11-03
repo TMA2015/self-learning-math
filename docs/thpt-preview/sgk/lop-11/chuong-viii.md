@@ -1,0 +1,6 @@
+# Toán 11 · Chương VIII. Các quy tắc tính xác suất
+
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG VIII · SGK KNTT TẬP HAI</p><p class="thpt-r4-lead">Ba bài B28–B30 từ nguồn đã review: 20 outcomes, 16 ví dụ có suy luận, 39 câu Core/Practice công khai, 8 câu Written/Anchor, 3 SVG giải thích trực quan và 8 D6. Tự kiểm tra cuối chương chỉ dùng 20 câu Practice công khai để tự đối chiếu; không phải Readiness độc lập hoặc Mastery.</p><div class="thpt-r4-grid">
+<a class="thpt-r4-tile" href="bai-28/"><span aria-hidden="true">28</span><strong>Bài 28 · Biến cố hợp, biến cố giao, biến cố độc lập</strong><small>Hiểu bản chất → đọc hình → Tự thử → luyện tập</small><em>Học bài →</em></a>
+<a class="thpt-r4-tile" href="bai-29/"><span aria-hidden="true">29</span><strong>Bài 29 · Công thức cộng xác suất</strong><small>Hiểu bản chất → đọc hình → Tự thử → luyện tập</small><em>Học bài →</em></a>
+<a class="thpt-r4-tile" href="bai-30/"><span aria-hidden="true">30</span><strong>Bài 30 · Công thức nhân xác suất cho hai biến cố độc lập</strong><small>Hiểu bản chất → đọc hình → Tự thử → luyện tập</small><em>Học bài →</em></a></div><nav class="thpt-r4-lesson-tabs"><a href="luyen-tap/">Core và Luyện tập</a><a href="../../../thu-vien/tu-luan-g11-chuong-viii/">Tự luận</a><a href="tu-kiem-tra-chuong/">Tự kiểm tra tự đối chiếu</a></nav></div>
