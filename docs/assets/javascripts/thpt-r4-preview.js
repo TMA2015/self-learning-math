@@ -322,9 +322,9 @@
   // parsing, canonical source mutation, private RD1 or learner data writes.
   const renderG11Math=(parent,value)=>{
     const source=String(value??"");
-    const plain=(text)=>{
+    const plain=(text,container=parent)=>{
       let buffer="";
-      const flush=()=>{if(buffer){parent.append(document.createTextNode(buffer));buffer=""}};
+      const flush=()=>{if(buffer){container.append(document.createTextNode(buffer));buffer=""}};
       for(let i=0;i<text.length;i++){
         const op=text[i];
         if((op!=="^"&&op!=="_")||!/[A-Za-z0-9)\]]/.test(buffer.slice(-1))
@@ -350,10 +350,26 @@
         }
         if(!parsed){buffer+=op;continue}
         flush();const el=document.createElement(op==="^"?"sup":"sub");
-        el.dataset.thptReviewedScript="1";el.textContent=parsed.value;parent.append(el);
+        el.dataset.thptReviewedScript="1";el.textContent=parsed.value;container.append(el);
         i=parsed.end-1;
       }
       flush();
+    };
+    // RELEASE display-only: original public math code and emphasis markers
+    // become semantic spans/strong; never use question strings as innerHTML.
+    const appendMarkdownPlain=(text)=>{
+      const rx=/(?:\x60[^\x60\n]+\x60|\*\*[^*\n]+\*\*)/g;
+      let from=0;
+      for(const match of text.matchAll(rx)){
+        if(match.index>from)plain(text.slice(from,match.index));
+        const raw=match[0],code=raw[0]==="\x60";
+        const wrapper=document.createElement(code?"span":"strong");
+        if(code)wrapper.className="thpt-r4-formative-inline-notation";
+        plain(raw.slice(code?1:2,code?-1:-2),wrapper);
+        parent.append(wrapper);
+        from=match.index+raw.length;
+      }
+      if(from<text.length)plain(text.slice(from));
     };
     const math=(body,display)=>{
       const el=document.createElement(display?"div":"span");
@@ -363,10 +379,10 @@
       parent.append(el);
     };
     let buffer="";
-    const flush=()=>{if(buffer){plain(buffer);buffer=""}};
+    const flush=()=>{if(buffer){appendMarkdownPlain(buffer);buffer=""}};
     for(let i=0;i<source.length;){
       let opener=null,closer=null,display=false;
-      if(source.startsWith("$",i)){opener="$";closer="$";display=true}
+      if(source[i]==="$"&&source[i+1]==="$"){opener=source.slice(i,i+2);closer=opener;display=true}
       else if(source.startsWith("\\[",i)){opener="\\[";closer="\\]";display=true}
       else if(source.startsWith("\\(",i)){opener="\\(";closer="\\)"}
       else if(source[i]==="$"&&(i===0||source[i-1]!=="\\")){opener="$";closer="$"}
