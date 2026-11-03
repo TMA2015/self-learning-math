@@ -4,7 +4,7 @@
 
 ## 1. Kiến thức SGK — hiểu bản chất trước công thức
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVI-B18-01_R00.svg" alt="B18 — trực quan hình thành khái niệm"/><figcaption>Hình D5 — quan sát trước khi tính: B18 — trực quan hình thành khái niệm</figcaption></figure>
+<figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVI-B18-01_R00.svg" alt="B18 — trực quan hình thành khái niệm"/><figcaption>Hình minh họa — quan sát trước khi tính: B18 — trực quan hình thành khái niệm</figcaption></figure>
 
 **Cách đọc và phát hiện:** Hình B18 giúp em nhìn thấy cùng một quy tắc 2^x từ số mũ âm qua 0 đến số mũ phân số: đọc các điểm trên trục và so sánh chấm màu cam tại x=1/2 (√2). Đừng chỉ chép hình: hãy nêu vì sao 2^(−2)=1/4 vẫn là một số **dương**.
 
