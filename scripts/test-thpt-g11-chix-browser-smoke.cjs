@@ -3,14 +3,14 @@
 const assert=require("node:assert/strict"),{chromium}=require("playwright");
 (async()=>{
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
- const root="http://127.0.0.1:8765/thpt-preview/sgk/",base=root+"lop-11/chuong-viii/";
+ const root="http://127.0.0.1:8765/thpt-preview/sgk/",base=root+"lop-11/chuong-ix/";
  try{
   for(const viewport of [{width:390,height:844},{width:820,height:1180},{width:1440,height:900}]){
    const page=await browser.newPage({viewport});
    try{
     const open=async path=>{const response=await page.goto(path,{waitUntil:"networkidle"});assert(response?.ok(),"HTTP fail "+path)};
     await open(root);
-    assert.equal(await page.locator('.library-topic-tile[data-thpt-filter-item][href="lop-11/chuong-viii/"]').count(),1,"G11 ChIX tile");
+    assert.equal(await page.locator('.library-topic-tile[data-thpt-filter-item][href="lop-11/chuong-ix/"]').count(),1,"G11 ChIX tile");
     await open(base);
     assert((await page.locator("body").innerText()).includes("Bài 28"),"ChIX chapter overview");
     for(const n of [31,32,33]){
@@ -21,10 +21,13 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
      assert.equal(await page.locator("[data-thpt-help-id]").count(),n===32?5:3,"Original D6 B"+n);
      const fig=page.locator(".thpt-r4-calculus-figure img");
      assert.equal(await fig.count(),n===33?1:2,"Original source SVG figures B"+n);
-     await fig.scrollIntoViewIfNeeded();
-     await page.waitForFunction(el=>el.complete&&el.naturalWidth>0,await fig.elementHandle(),{timeout:20000});
-     const widths=await fig.evaluate(el=>[el.getBoundingClientRect().width,el.parentElement.getBoundingClientRect().width]);
-     assert(widths[0]<=widths[1]+2,"Figure overflow B"+n+" "+viewport.width);
+     for(let i=0;i<await fig.count();i++){
+      const image=fig.nth(i);
+      await image.scrollIntoViewIfNeeded();
+      await page.waitForFunction(el=>el.complete&&el.naturalWidth>0,await image.elementHandle(),{timeout:20000});
+      const widths=await image.evaluate(el=>[el.getBoundingClientRect().width,el.parentElement.getBoundingClientRect().width]);
+      assert(widths[0]<=widths[1]+2,"Figure "+i+" overflow B"+n+" "+viewport.width);
+     }
      for(const placement of ["C01","P01"]){
       const id="THPT-G11-CHIX-B"+n+"-"+placement;
       await open(base+"luyen-tap/?item="+id);
@@ -32,7 +35,7 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
       await dialog.waitFor({state:"visible",timeout:15000});
       assert.equal(await dialog.locator("[data-thpt-canonical-item]").first().getAttribute("data-thpt-canonical-item"),id,"Canonical ID "+id);
       const href=await dialog.locator(".thpt-r4-remediation-link").getAttribute("href");
-      assert(href.includes("/sgk/lop-11/chuong-viii/bai-"+n+"/"),"D6 return path");
+      assert(href.includes("/sgk/lop-11/chuong-ix/bai-"+n+"/"),"D6 return path");
       assert.equal(await dialog.locator("details[open]").count(),0,"No pre-answer details");
       assert.equal(await dialog.locator(".thpt-r4-formative-feedback").innerText(),"","No premature feedback");
       const answer=dialog.locator(".thpt-r4-formative-answer textarea");
@@ -65,7 +68,7 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
     assert(post.includes("Không ghi Skill Mastery"),"No Mastery");
     assert.equal(await check.locator("textarea").isDisabled(),true,"Answer locked after Final");
     assert((await page.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth))<=20,"Selfcheck responsive");
-    await open("http://127.0.0.1:8765/thpt-preview/thu-vien/tu-luan-g11-chuong-viii/");
+    await open("http://127.0.0.1:8765/thpt-preview/thu-vien/tu-luan-g11-chuong-ix/");
     const written=page.locator("[data-thpt-written-canonical]");
     assert.equal(await written.count(),9,"9 original Written/Anchor");
     assert.equal(await page.locator("[data-thpt-written-canonical] details[open]").count(),0,"Written solutions opt-in");
