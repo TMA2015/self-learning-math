@@ -32,7 +32,8 @@ const reviewedB09=[...source.matchAll(/^\*\*(?:5|6|7|8|9|10)\. ([^*]+)\*\* (.+)$
 assert.equal(reviewedB09.length,6,"Six original B09 D1 ideas on the immutable source");
 // Source R03 stays SHA-locked. Check all six original ideas including exact prose,
  // math expression order/count, and equivalent MathJax notation (not just headings).
-const canonicalMath=s=>s.replace(/\\overline\{([a-zA-Z])\}/g,"$1\u0304")
+const sourceMo="Mo = L + [(m_j-m_{j-1})/((m_j-m_{j-1})+(m_j-m_{j+1}))]h",displayedMo="Mo = L + \\frac{m_j-m_{j-1}}{(m_j-m_{j-1})+(m_j-m_{j+1})}h";
+const canonicalMath=s=>s.replace(displayedMo,sourceMo).replace(/\\overline\{([a-zA-Z])\}/g,"$1\u0304")
  .replace(/\\sum\s*/g,"Σ").replace(/\\le\s*/g,"≤").replace(/\\ge\s*/g,"≥")
  .replace(/\\in\s*/g,"∈").replace(/\\ne\s*/g,"≠").replace(/\\pi\s*/g,"π")
  .replace(/\\mathbb\{R\}/g,"ℝ").replace(/\s+/g,"");
