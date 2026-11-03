@@ -68,7 +68,7 @@ const inspect=page=>page.evaluate(()=>{
      if(kind==="topic-summary")assert(s.topicChildren.every(x=>!x.open),name+" topic titles only");
      if(kind==="topic-lesson")assert(s.topicChildren.filter(x=>x.open).length===1&&s.topicChildren.filter(x=>x.open).every(x=>x.active),name+" exactly current topic open");
      if(name==="sgk-g11-b9"){
-      const chapter=page.locator('.md-sidebar--primary li.md-nav__item--nested.md-nav__item--active').filter({has:page.locator('nav.md-nav[data-md-level="3"]')}).first();
+      const chapter=page.locator('.md-sidebar--primary li.md-nav__item--active > nav.md-nav[data-md-level="3"]').first().locator('xpath=..');
       const button=chapter.locator(":scope > button.thpt-r4-sidebar-toggle");
       await button.click();
       assert.equal(await button.getAttribute("aria-expanded"),"false",name+" manual collapse works");
