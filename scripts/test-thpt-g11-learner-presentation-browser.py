@@ -12,7 +12,7 @@ def visit(page,p):
     assert response and response.ok, f"HTTP failed: {p}"
 def audit_learner_headings(page,lesson):
     heads=page.locator(".md-content__inner h2, .md-content__inner h3").all_inner_texts()
-    problems=[x for x in heads if re.search(r"\\b(?:WHY|WHAT|HOW|FORMAL|DEEPENING|PED[1-6]|D[1-6])\\b|VD-G11|§[0-9]",x)]
+    problems=[x for x in heads if re.search(r"\b(?:WHY|WHAT|HOW|FORMAL|DEEPENING|PED[1-6]|D[1-6])\b|VD-G11|§[0-9]",x)]
     assert not problems,f"Internal reviewer labels displayed in B{lesson}: {problems}"
 with sync_playwright() as p:
     browser=p.chromium.launch(executable_path=CHROME,headless=True,args=["--no-sandbox"])
