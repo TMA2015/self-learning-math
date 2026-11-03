@@ -5,12 +5,12 @@ REVIEW_PACKET_ID: G12-SGK-EXP01-EXP02-R00-REVIEW_CANDIDATE
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 1.1.0
 LEARNING_PATH: SGK_EXPERIENCE
-AUTHORING_STATE: REVIEW_RECEIVED_SOURCE_LOCK_HOLD
+AUTHORING_STATE: EXACT_R00_SOURCE_LOCKED_REVIEW_RECONCILIATION_PENDING
 CONTENT_READY: NO
 RELEASE_AUTHORIZATION: NO
 MASTERY_ACTIVATION: NO
 PUBLIC_RD1: NOT_CREATED
-SOURCE_CUSTODY: PENDING_EXACT_9_FILE_R00_RECOVERY
+SOURCE_CUSTODY: GIT_BLOB_9_OF_9_VERIFIED_PR733
 
 ## 1. Chứng cứ nhận được (bảo toàn nguyên văn)
 
@@ -22,11 +22,12 @@ SOURCE_CUSTODY: PENDING_EXACT_9_FILE_R00_RECOVERY
 
 ## 2. Sai khác bắt buộc đối chiếu (không sửa R00 đoán chừng)
 
-### R1 — bảng vận tốc EXP01-O05 / số liệu 21 m hay 22 m
+### R1 — EXP01-O05: dữ liệu reviewer không khớp bản học sinh R00 — **lỗi ở report, không phải ở 22 m**
 
-- Checkpoint trước review ghi kết quả spot-QA `22 m`. Reviewer báo `T_3=21\,\mathrm m` với các nút `t=(0,2,4,6)\,\mathrm s`, `v=(2,5,4,1)\,\mathrm{m/s}`.
-- Với **chính dữ liệu reviewer công bố**, quy tắc hình thang cho `h=2` tính: `T_3=2[(2+1)/2+5+4]=2(1.5+9)=21\,\mathrm m`; 22 m **không khớp**. Đây là kiểm toán độc lập về phép tính, không chứng minh bản Markdown R00 thực tế viết 21 hay 22.
-- **QUYẾT ĐỊNH TẠM:** sửa mô tả checkpoint thành 21 m, ghi rõ đang chờ đối chiếu file học sinh. Nếu learner-source/đáp án/rubric ghi 22 m, phân loại `DELTA_C_ACADEMIC_MATERIAL` và review đúng EXP01-O05 cùng item liên quan theo Policy 07; nếu learner-source đã là 21 m, chỉ là lỗi chép metadata, không review lại snapshot không đổi.
+- **Bản học liệu R00 gốc đã khóa Git SHA:** ví dụ D2 `EX-G12-EXP01-O05`, Written `THPT-G12-EXP01-W05` và rubric /5 dùng các mốc `t=(0,2,4,6)\,\mathrm s` với `v=(2,3,5,4)\,\mathrm{m/s}`.
+- Với dữ liệu **trong R00**, `h=2\,\mathrm s`, `T_3=2[(2+4)/2+3+5]=22\,\mathrm m`, đúng số trong đáp án và checkpoint R00.
+- Reviewer đã mô tả **một bộ dữ liệu khác** `v=(2,5,4,1)` và tính `T_3=21\,\mathrm m`; 21 là đúng cho bộ **khác**, không phải bộ R00. Không sửa số liệu, đáp án hoặc rubric học sinh để chạy theo tóm tắt reviewer.
+- **Kết luận:** `STUDENT_SOURCE_MATH=22_M_CORRECT`; `REVIEWER_SOURCE_PARITY_MISMATCH=EXP01-O05`. Giữ nguyên PASS được reviewer báo cáo trong archive, nhưng yêu cầu một lần đối chiếu **targeted** EXP01-O05 theo `EX-G12-EXP01-O05` và `THPT-G12-EXP01-W05` để xác minh source exact; không review lại các phần đúng đã bất biến.
 
 ### R2 — Bảng tên cổng Q01–Q18 của reviewer khác ma trận chuẩn chính thức
 
@@ -36,8 +37,8 @@ SOURCE_CUSTODY: PENDING_EXACT_9_FILE_R00_RECOVERY
 
 ### R3 — Khoảng/định dạng trong bản báo cáo chép lại
 
-- Một số chỗ đầu vào bản report chứa LaTeX khoảng trống `\(\)` (ví dụ phát biểu hàm `x^2` trên miền chưa hiển thị). Không tự điền miền khi chưa xem source.
-- Khi lấy lại 4 Markdown, đối chiếu mọi điều kiện miền, cả cận sai số `|I-T_n|\le M(b-a)^3/(12n^2)`, đáp án, rubric và FIG-READ-THROUGH trước khi gắn Q02–Q14 PASS tác giả.
+- Một số chỗ trong report được dán có LaTeX rỗng `\(\)`; **learner-source R00 hiện đã được khôi phục chính xác** và ghi rõ `[0,1]` cho bound `|I-T_n|≤M(b-a)^3/(12n²)`. Không tự gán ô trống report là lỗi trong nguồn học sinh.
+- QA sơ bộ phát hiện **D4 model solution quá ngắn** so với tác vụ yêu cầu trong `THPT-G12-EXP01-W01` (đề hỏi hai cách kiểm chứng, lời giải chỉ là biểu thức nguyên hàm) và `THPT-G12-EXP02-W05` (đề yêu cầu báo cáo sáu mục nhưng lời giải chỉ liệt kê tiêu đề). Đây là điểm cần review/sửa có kiểm soát theo Q06/PED5, không tự tuyên bố P1 của NotebookLM vì reviewer từng kết luận P1=0.
 
 ### R4 — Boundary đánh giá
 
@@ -47,8 +48,8 @@ SOURCE_CUSTODY: PENDING_EXACT_9_FILE_R00_RECOVERY
 
 ## 3. Đường đóng AUTHORING chưa được phép bỏ qua
 
-1. Phục hồi **đúng nguyên bản** ZIP R00 và tách 9 file; verify ZIP SHA256 và 9 file SHA256 từ checkpoint; kiểm bản nháp thực tế, không dựng lại từ thống kê trong verdict.
-2. Đưa 4 Markdown/5 PNG gốc vào đúng khu vực source authoring trên nhánh PR #733, lưu Git blob SHA và xác minh byte parity; không đặt mã nguồn RD1 kín lên GitHub.
+1. **DONE 03/11:** Phục hồi ZIP R00 SHA256 `9e1e9f6f328a40de99a0a5485f5eee1d1af466256cc44df3bcc5e2653337184f`, CRC OK; kiểm 9/9 SHA256 nguyên file khớp checkpoint.
+2. **DONE 03/11:** Đã đưa byte-exact 4 Markdown/5 PNG gốc vào `prototypes/thpt/content-drafts/G12_SGK_XP_R00_ORIGINAL_SOURCE/` trên Draft PR #733 tại Git commit `78bc23671981934e1b27742ff8a322ee9d7d766d`; chín Git blob SHA khớp phép tính SHA1(blob headers + original bytes); không có RD1 kín.
 3. Đối chiếu 10 `OUTCOME_ID`/40 `ITEM_ID`/D1–D6/PED1–PED6, đáp án, rubric, PNG và câu được reuse; xử lý R1/R2/R3 theo phạm vi ảnh hưởng; log Delta.
 4. Khi Academic + PED verdict đúng snapshot, Q01–Q18 và A1–A7 có bằng chứng, tạo **một** handoff V2 trong `release-handoffs/`, **một** manifest `release-queue/ready/G12-SGK-EXP01-EXP02-R00.md` và **một** dòng REGISTER; chạy source-lock gate trên chính HEAD PR.
 5. Chỉ khi hoàn tất mọi điều kiện mới chuyển `CONTENT_READY`. Không tự tích hợp website, merge/deploy, chấm RD1 hay sửa Firebase.
@@ -60,4 +61,4 @@ SOURCE_CUSTODY: PENDING_EXACT_9_FILE_R00_RECOVERY
   - https://geogebra.github.io/docs/manual/en/commands/Integral/
 - Đây là kiểm chứng riêng về cú pháp, không phải thử nghiệm vận hành phần mềm trên thiết bị học sinh hay xác minh byte snapshot R00.
 
-**CHECKPOINT:** Review nhận và lưu bất biến; số học discrepancy đã khoanh; **source custody còn thiếu → BLOCKED_BY_AUTHORING(Q18, EXP01/EXP02, original R00 input files)**. Không có claim release.
+**CHECKPOINT:** Reviewer report bảo toàn, 9/9 R00 source bytes đã khóa GitHub, phép tính học sinh 22 m đúng. **Còn `BLOCKED_BY_AUTHORING(Q18_SOURCE_PARITY_EXP01_O05, Q06_WRITTEN_DEPTH)`** đến khi targeted review/đối chiếu đầy đủ Q01–Q18, A1–A7 và V2; không tạo ready/ hay cho phép release.
