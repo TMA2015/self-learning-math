@@ -4,7 +4,7 @@
 
 ## 1. Kiến thức SGK — hình thành bản chất trước công thức
 
-### 1.1. WHY — Không thể giải mọi bài bằng giới hạn từ đầu
+### 1.1. Không thể giải mọi bài bằng giới hạn từ đầu
 Định nghĩa giới hạn giúp ta **hiểu** đạo hàm, nhưng với $f(x)=(x^2+1)\sin(3x)$, khai triển $f(x+h)$ rất dài. Cần các quy tắc bảo toàn ý nghĩa **tốc độ biến đổi** khi cộng, nhân, chia và lồng các hàm. Quy tắc là hệ quả của định nghĩa, không phải mẹo đại số.
 
 ### 1.2. Đạo hàm hàm sơ cấp và kiểm điều kiện
@@ -13,13 +13,13 @@
 - Đạo hàm $\sin x$ là $\cos x$, đạo hàm $\cos x$ là $-\sin x$ khi góc $x$ đo **radian**. $(\tan x)'=1/\cos^2x$ với $\cos x\ne0$; $(\cot x)'=-1/\sin^2x$ với $\sin x\ne0$. Giải thích: tan=sin/cos nên dấu và mẫu của quy tắc thương quyết định kết quả.
 - $(e^x)'=e^x$, $(a^x)'=a^x\ln a$ với $a>0,a\ne1$; $(\ln x)'=1/x$ khi $x>0$; $(\log_a x)'=1/(x\ln a)$ khi $a>0,a\ne1$, $x>0$. Cơ số $a$ ở đây là **hằng số**, không phải biến.
 
-### 1.3. HOW — Vì sao đạo hàm của tích không chỉ là tích đạo hàm?
+### 1.3. Vì sao đạo hàm của tích không chỉ là tích đạo hàm?
 Khi cả $u$ lẫn $v$ thay đổi, $(u+\Delta u)(v+\Delta v)-uv=v\Delta u+u\Delta v+\Delta u\Delta v$. Chia $\Delta x$ rồi lấy giới hạn, số hạng tích hai độ tăng nhỏ không đóng góp vào đạo hàm: **$(uv)'=u'v+uv'$**. Hình FIG-G11-CHIX-B32-01 cho thấy hình chữ nhật rộng $u$, cao $v$ xuất hiện hai dải diện tích chính khi cả hai cạnh tăng, giải thích vì sao phải cộng **hai** tích. Ví dụ $(x(x^2+1))'=(x^2+1)+x(2x)=3x^2+1$, không phải $1\cdot2x$.
 
 ### 1.4. Tổng, hiệu, thương — và điều kiện mẫu
 $(u\pm v)'=u'\pm v'$, $(cu)'=cu'$. Với $v(x)\ne0$ và u,v khả vi, $(u/v)'=[u'v-uv']/v^2$. Dấu trừ và mẫu bình phương là bắt buộc; tại nghiệm của v, hàm ban đầu không có nghĩa, dù một biểu thức đạo hàm sau rút gọn có vẻ hữu hạn. Ví dụ $f(x)=(x+2)/(x-1)$ với $x\ne1$: $f'(x)=[(x-1)-(x+2)]/(x-1)^2=-3/(x-1)^2$.
 
-### 1.5. HOW — Hàm số hợp và quy tắc dây chuyền
+### 1.5. Hàm số hợp và quy tắc dây chuyền
 Trong $y=f(g(x))$, x thay đổi làm $u=g(x)$ thay đổi, sau đó y=f(u) thay đổi. Vì $\Delta y/\Delta x=(\Delta y/\Delta u)(\Delta u/\Delta x)$ khi các thương có nghĩa, sau lấy giới hạn nhận được **$(f\circ g)'(x)=f'(g(x))\,g'(x)$**. Với $y=(3x-2)^5$, bước trong $u=3x-2$ có $u'=3$, bước ngoài $u^5$ có đạo hàm $5u^4$, kết quả $15(3x-2)^4$. **Không** được bỏ nhân 3. Hình FIG-G11-CHIX-B32-02 vẽ hai tầng đầu vào và nhân các tốc độ biến đổi.
 
 ### 1.6. Hàm lượng giác hợp, mũ hợp, logarit hợp
@@ -35,13 +35,13 @@ Tự giải $y=(x+1)\cos(2x)$; $z=\ln(5-x)$; $w=e^{x^2}$. Hãy nêu **mỗi bi�
 
 **Liên kết D6:** `HELP-G11-CHIX-B32-01` (quy tắc tích), `...-02` (chain), `...-03` (miền log/căn), `...-04` (sin/cos/tan/cot), `...-05` (thương).
 
-### 1.9. Đọc hình để hiểu lập luận (D5)
+### 1.9. Đọc hình để hiểu lập luận
 
 <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHIX-B32-01_R00.svg" alt="Hình FIG-G11-CHIX-B32-01 minh họa lập luận trong Bài 32" /><figcaption>Hình D5 — FIG-G11-CHIX-B32-01. Đọc hình theo lời giải thích trong phần Kiến thức ở trên.</figcaption></figure>
 
 <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHIX-B32-02_R00.svg" alt="Hình FIG-G11-CHIX-B32-02 minh họa lập luận trong Bài 32" /><figcaption>Hình D5 — FIG-G11-CHIX-B32-02. Đọc hình theo lời giải thích trong phần Kiến thức ở trên.</figcaption></figure>
 
-## 2. Ví dụ có suy luận D2
+## 2. Ví dụ có suy luận
 
 #### EX-G11-CHIX-B32-01: Quy tắc lũy thừa
 
@@ -187,7 +187,7 @@ Tự giải $y=(x+1)\cos(2x)$; $z=\ln(5-x)$; $w=e^{x^2}$. Hãy nêu **mỗi bi�
 
 **Vì sao:** Trừ cot làm hai dấu âm thành dấu cộng.
 
-## 3. Tự khắc phục lỗi D6
+## 3. Tự khắc phục lỗi
 
 <details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHIX-B32-01"><summary><strong>Chẩn đoán lỗi:</strong> Lấy u'v' thay cho u'v+uv'.</summary><ol><li><strong>Phát hiện lỗi:</strong> Lấy u'v' thay cho u'v+uv'.</li><li><strong>Truy lại bản chất + điều kiện:</strong> Tích hai hàm tăng/giảm tạo hai phần biến thiên tương ứng.</li><li><strong>Xem lại vì sao (WHY/HOW):</strong> Mở D1 B32, so sánh mệnh đề định nghĩa với ví dụ D2; giải thích bằng lời trước khi biến đổi ký hiệu.</li><li><strong>Tự luyện câu khác có dẫn dắt:</strong> Tính (x·x³)' theo hai cách. <strong>Tự kiểm sau khi thử:</strong> x³+3x³=4x³.</li><li><strong>Trở về câu canonical:</strong> <code>THPT-G11-CHIX-B32-P04</code> và giải lại, tự giải thích lí do từng bước; không lấy xem lời giải làm chứng cứ độc lập cho Mastery.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHIX-B32-P04">Quay lại câu canonical THPT-G11-CHIX-B32-P04</a></p></details>
 
