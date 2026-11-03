@@ -12,7 +12,7 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
     await open(root);
     assert.equal(await page.locator('.library-topic-tile[data-thpt-filter-item][href="lop-11/chuong-v/"]').count(),1,"G11 ChV tile");
     await open(base);
-    assert((await page.locator("body").innerText()).includes("Bài 14"),"ChV chapter overview");
+    assert((await page.locator("body").innerText()).includes("Bài 15"),"ChV chapter overview");
     for(const n of [15,16,17]){
      await open(base+"bai-"+n+"/");
      const first=page.locator('[data-ped-first-try="1"]');
@@ -65,6 +65,6 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
     assert.equal(await page.locator("[data-thpt-written-canonical] details[open]").count(),0,"Written solutions opt-in");
    }finally{await page.close()}
   }
-  console.log("PASS G11 ChV browser 390/820/1440: 5 lessons, 5 SVG, 10 D6, exact canonical modal, 10 Written, 13 public Final Submit, no Mastery");
+  console.log("PASS G11 ChV browser 390/820/1440: 3 lessons, 3 SVG, 6 D6, exact canonical modal, 6 Written, 13 public Final Submit, no Mastery");
  }finally{await browser.close()}
 })().catch(err=>{console.error(err.stack||err);process.exit(1)});
