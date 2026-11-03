@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="440" viewBox="0 0 800 440" role="img" aria-labelledby="title desc">
+<title id="title">FIG-G11-B16-01: Giới hạn có thể tồn tại tại một lỗ trống</title>
+<desc id="desc">Đồ thị y=x+2 trên miền x khác 2, có một vòng tròn rỗng tại (2,4), không có điểm đặc trên x=2. Khi x tiến đến 2 từ cả hai phía, y tiến đến 4 dù f(2) không xác định.</desc>
+<rect width="800" height="440" rx="20" fill="#f8fafc"/>
+<text x="400" y="42" fill="#172554" text-anchor="middle" font-size="23" font-family="Arial" font-weight="700">Giới hạn có thể tồn tại tại một lỗ trống</text>
+<line x1="80" y1="350" x2="690" y2="350" stroke="#0f172a" stroke-width="2.5"/>
+<path d="M690 350 l-12 -6 v12 z" fill="#0f172a"/>
+<line x1="220" y1="370" x2="220" y2="70" stroke="#0f172a" stroke-width="2.5"/>
+<path d="M220 70 l-6 12 h12 z" fill="#0f172a"/>
+<text x="702" y="357" font-size="17" fill="#0f172a">x</text><text x="202" y="63" font-size="17" fill="#0f172a">y</text><text x="205" y="370" font-size="15">0</text><line x1="120" y1="310" x2="620" y2="110" stroke="#2563eb" stroke-width="4"/>
+<line x1="420" y1="350" x2="420" y2="190" stroke="#64748b" stroke-dasharray="6 7" stroke-width="1.5"/>
+<line x1="220" y1="190" x2="420" y2="190" stroke="#64748b" stroke-dasharray="6 7" stroke-width="1.5"/>
+<circle cx="420" cy="190" r="10" fill="#f8fafc" stroke="#2563eb" stroke-width="4"/>
+<text x="416" y="372" font-size="15" fill="#0f172a">2</text>
+<text x="197" y="194" font-size="15" fill="#0f172a">4</text>
+<text x="440" y="166" font-size="16" fill="#1d4ed8">Lỗ tại (2,4)</text>
+<text x="445" y="104" font-size="15" fill="#1d4ed8">y=x+2 (x khác 2)</text>
+<text x="400" y="420" text-anchor="middle" font-family="Arial" font-size="13" fill="#334155">Minh họa theo tọa độ và điều kiện đã ghi; không đo độ dài trực tiếp từ ảnh.</text>
+</svg>
