@@ -9,6 +9,7 @@ RELEASE_SCOPE: FULL_LEARNING_PATH
 STATE: CONTENT_READY
 SOURCE_COMMIT: c1c702233893520a0bf2092c8a7d6fabbdfdda00
 AUTHOR_PR: 731
+CURRENT_PR: https://github.com/TMA2015/self-learning-math/pull/731
 AUTHORING_HEAD_QA: PENDING_EXACT_HEAD_WORKFLOWS
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/G12_SGK_CHVI_B18_B19_END_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md
 ACADEMIC_SOURCE_BLOB: 1578efd4d2d46deb9bae064d12752d88fc3747b8
@@ -51,10 +52,10 @@ Five original reviewer PNG binaries immutable in Git at `prototypes/thpt/content
 ## RELEASE R1–R5 / AP1–AP5 / P1–P2 — NOT AUTHORING PASS
 - [ ] R1_INTEGRATED_CURRENT_MAIN — RELEASE imports exact academic source + reviewer receipt + five PNGs preserving 56 canonical IDs and 14 end references.
 - [ ] R2_EXACT_HEAD_CI — RELEASE validates actual integration HEAD, correct branch protection and Golden UI regressions.
-- [ ] R3_LEARNER_PATH_AND_UI — Complete SGK B18/B19/END and separate independent Topic path with MathJax, mobile responsive and 5 guided PNG.
+- [ ] R3_CLEAN_STUDENT_UI — Complete SGK B18/B19/END and separate independent Topic path with MathJax, mobile responsive and 5 guided PNG.
 - [ ] R4_ASSESSMENT_SAFETY — No answer, key, hints, correctness or Tutor feedback before Final Submit; public CLIENT_SELF_CHECK_NO_MASTERY and Written self-check never write Skill Mastery; private RD1 never leaked.
 - [ ] R5_OWNER_APPROVAL — RELEASE must obtain owner-specific permission for actual website merge/deploy; source handoff and reviewer PASS do not grant this.
 - [ ] P1_DEPLOY_RECEIPT — Production SHA, first load, source fidelity and assets after any authorized deployment independently verified.
-- [ ] P2_REAL_DEVICE_UAT — Device-based student experience acceptance only when required, not inferred from browser emulation.
+- [ ] P2_DEVICE_UAT — Device-based student experience acceptance only when required, not inferred from browser emulation.
 
 **No website integration, merge, deploy, Firebase, Gemini, protected RD1 disclosure or student Mastery write by AUTHORING.**
