@@ -30,10 +30,27 @@ assert.equal(new Set(bank.records.map(q=>q.item_id)).size,28,"No duplicated publ
 const b09Knowledge=read("docs/thpt-preview/sgk/lop-11/chuong-iii/bai-9.md");
 const reviewedB09=[...source.matchAll(/^\*\*(?:5|6|7|8|9|10)\. ([^*]+)\*\* (.+)$/gm)];
 assert.equal(reviewedB09.length,6,"Six original B09 D1 ideas on the immutable source");
+// A presentation-only MathJax rendering must preserve every original word,
+// math token/order/value and condition of the *immutable* reviewed R03 D1 source.
+const canonicalMath=s=>s.replace(/\\overline\\{([a-zA-Z])\\}/g,"$1\\u0304")
+ .replace(/\\sum\\s*/g,"Σ").replace(/\\le\\s*/g,"≤").replace(/\\ge\\s*/g,"≥")
+ .replace(/\\in\\s*/g,"∈").replace(/\\ne\\s*/g,"≠").replace(/\\pi\\s*/g,"π")
+ .replace(/\\mathbb\\{R\\}/g,"ℝ").replace(/\\s+/g,"");
+const shape=s=>s.replace(/`[^`\\n]+`/g,"{{FORMULA}}")
+ .replace(/\\\\\\(([\\s\\S]*?)\\\\\\)/g,"{{FORMULA}}").trim();
 for(const [i,entry] of reviewedB09.entries()){
- const localHeading=entry[1].replace(/\.$/,"");
- const expected="### "+(i+1)+". "+localHeading+"\n\n"+entry[2];
- assert(b09Knowledge.includes(expected),"B09 rendered local idea "+(i+1)+" retains exact R03 reviewed mathematical paragraph");
+ const localHeading=entry[1].replace(/\\.$/,"");
+ const heading="### 1."+(i+1)+". "+localHeading+"\\n\\n";
+ const start=b09Knowledge.indexOf(heading);
+ assert(start>=0,"B09 missing exact source-reviewed idea "+(i+1)+" with correct hierarchy");
+ const nextHeading=b09Knowledge.indexOf("### 1."+(i+2)+". ",start+heading.length);
+ const end=nextHeading>=0?nextHeading:b09Knowledge.indexOf("## 2. Ví dụ",start);
+ const rendered=b09Knowledge.slice(start+heading.length,end);
+ assert(shape(rendered).startsWith(shape(entry[2])),"B09 non-mathematical R03 source wording altered in idea "+(i+1));
+ const raw=[...entry[2].matchAll(/`([^`\\n]+)`/g)].map(m=>m[1]);
+ const tex=[...rendered.matchAll(/\\\\\\(([\\s\\S]*?)\\\\\\)/g)].map(m=>m[1]);
+ assert.equal(tex.length,raw.length,"B09 original mathematical expression cardinality changed in idea "+(i+1));
+ for(let k=0;k<raw.length;k++)assert.equal(canonicalMath(tex[k]),canonicalMath(raw[k]),"B09 source math token/condition changed in idea "+(i+1)+" formula "+(k+1));
 }
 assert(!/\*\*(?:5|6|7|8|9|10)\. /.test(b09Knowledge),"No misleading chapter-global ordinal on B09 knowledge page");
 const hub=read("docs/thpt-preview/sgk/lop-11/chuong-iii/luyen-tap.md");
