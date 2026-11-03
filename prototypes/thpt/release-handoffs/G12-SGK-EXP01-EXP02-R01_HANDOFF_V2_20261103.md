@@ -148,12 +148,12 @@ Normative standard **only**: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STAN
 | Q05 | 10 outcomes in both EXP lessons | 30 distinct C/P/A IDs across 10 outcomes, role and source cues; formatively scoped | R00 original reviewed scope; R01 unchanged | R1/R4 |
 | Q06 | 10 outcomes in both EXP lessons | 10 Written IDs (W01..W05 per EXP), model solutions D4 and rubric /5; targeted R01 independent PASS | R00 Academic/PED PASS + R01 10/10 targeted Written PASS + Q18 corrected PASS | AP4/R3 no premature reveals |
 | Q07 | G12-SGK-EXP01, G12-SGK-EXP02 | 5 unchanged original PNG figures (CAS, trapezoid, error bound, projection, Möbius) and reading guidance | R00 original reviewed scope; R01 unchanged | AP3/AP5 |
-| Q08 | 10 outcomes in both EXP lessons | 10 HELP-G12-EXP01/02-O01..O05 each 5-step remediation with targeted prerequisites | R00 original reviewed scope; R01 unchanged | AP4 |
-| Q09 | G12-SGK-EXP01, G12-SGK-EXP02 | Each EXP starts at Vì sao cần học? and each outcome explains motive | R00 original reviewed scope; R01 unchanged | AP4 |
-| Q10 | G12-SGK-EXP01, G12-SGK-EXP02 | Each EXP introduces Tiền đề, each outcome documents prerequisites | R00 original reviewed scope; R01 unchanged | AP4 |
-| Q11 | G12-SGK-EXP01, G12-SGK-EXP02 | Pedagogical progression Bản chất trước công thức, per outcome explanatory concept | R00 original reviewed scope; R01 unchanged | AP1 |
-| Q12 | G12-SGK-EXP01, G12-SGK-EXP02 | Section Đọc hình PED4 in both lessons and 5 original PNG pointers | R00 original reviewed scope; R01 unchanged | AP3 |
-| Q13 | 10 outcomes in both EXP lessons | Method choice and limits per outcome; 10 approved R01 Written model solutions | R00 Academic/PED PASS + R01 targeted W01–W05 + Q18 corrected PASS | AP4 |
+| Q08 | 10 outcomes in both EXP lessons | 10 HELP-G12-EXP01/02-O01..O05 each 5-step remediation with targeted prerequisites | R00 original reviewed scope; R01 unchanged | AP4 learner HELP navigation |
+| Q09 | G12-SGK-EXP01, G12-SGK-EXP02 | Each EXP starts at Vì sao cần học? and each outcome explains motive | R00 original reviewed scope; R01 unchanged | AP4 WHY learner motivation |
+| Q10 | G12-SGK-EXP01, G12-SGK-EXP02 | Each EXP introduces Tiền đề, each outcome documents prerequisites | R00 original reviewed scope; R01 unchanged | AP4 prerequisite recall |
+| Q11 | G12-SGK-EXP01, G12-SGK-EXP02 | Pedagogical progression Bản chất trước công thức, per outcome explanatory concept | R00 original reviewed scope; R01 unchanged | AP1 idea-first hierarchy |
+| Q12 | G12-SGK-EXP01, G12-SGK-EXP02 | Section Đọc hình PED4 in both lessons and 5 original PNG pointers | R00 original reviewed scope; R01 unchanged | AP3 labeled figure-reading |
+| Q13 | 10 outcomes in both EXP lessons | Method choice and limits per outcome; 10 approved R01 Written model solutions | R00 Academic/PED PASS + R01 targeted W01–W05 + Q18 corrected PASS | AP4 method explanation |
 | Q14 | G12-SGK-EXP01, G12-SGK-EXP02 | Two Tự thử per EXP prior to Core and self reveal; D6 HELP fallback | R00 original reviewed scope; R01 unchanged | AP4/R4 |
 | Q15 | 10 outcomes in both EXP lessons | 40 unique source item IDs, 10 secondary END placements reuse the A IDs; no duplicate body | R00 original reviewed scope; R01 unchanged | R1/R4 |
 | Q16 | G12-SGK-EXP01, G12-SGK-EXP02 | No RD1 for experiences; client self-check/no mastery, release responsible for UI Final Submit | R00 original reviewed scope; R01 unchanged | R3/R4 |
