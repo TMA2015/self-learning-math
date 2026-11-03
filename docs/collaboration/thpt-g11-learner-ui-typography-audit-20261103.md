@@ -23,3 +23,17 @@
 - SGK Toán 11 có 9 chương cùng gói bổ sung Tập Hai pp99–109; kiểm toán này không cấp PASS cho ChIX, phần bổ sung, hay Chuyên đề.
 
 **Checkpoint:** `RELEASE_UI_AUDIT_CANDIDATE`; blockers `AP1_AP2_BROWSER_VISUAL_QA`, `AP2_MATH_RENDER`, `CHIX_SOURCE_LOCK_REBASE`; tiếp theo chạy QA trên exact HEAD, kiểm tra mọi bài có công thức, đóng các lỗi còn lại hoặc HOLD đúng phần.
+
+## Mở rộng phạm vi sau kiểm toán ban đầu (03/11/2026)
+
+- Ngoài 30 trang B01–B30, đã kiểm tra 32 trang khu vực chương: **8 tổng quan, 8 Core/Luyện tập, 8 Tự kiểm tra cuối chương và 8 thư viện tự luận Written/Anchor**. Mỗi trang Tự kiểm tra có hook client theo chương.
+- **Thư viện Written ChII:** 7 số mũ đang hiển thị dấu ^, đã chuyển sang HTML sup trong phần chữ/câu trả lời; không thay toán, ID hay rubric.
+- **Thư viện Written ChVI:** 14 số mũ dạng ^ đã chuyển tương đương; nguyên tắc giấu lời giải trong details vẫn giữ.
+- **Tổng quan ChVI:** công thức mũ/log và ví dụ nhỏ đang bị đóng trong Markdown inline code, đã chuyển 4 biểu thức sang MathJax; không đổi giá trị/điều kiện.
+- **Đối chiếu nội dung D2:** ChV 13 ví dụ và ChVI 19 ví dụ đều kiểm lại bằng phép dựng biểu diễn từ nguồn Git blob gốc (các con số, số mũ và chữ không đổi), thay vì so sánh kiểu chữ cũ; nguồn/receipt vẫn SHA-locked.
+- **G11 30 bài x 3 khổ xem = 90 lượt mở trang Chromium:** cổng browser bắt buộc (390/820/1440 px), kiểm tra hierarchy, MathJax thực, viewport overflow, h1 và các mục lồng; chưa cấp PASS tới khi workflow hoàn tất. Giả lập Chromium không thay Safari thiết bị thực P2.
+- **B22–B30:** các biểu thức hình học/xác suất dạng chữ trong D1 còn cần quan sát HTML thực tế để xác nhận dễ đọc; ảnh chụp cắt khung không đủ khẳng định trang tràn ngang. Không tự viết lại toán khi chưa chứng minh Delta A.
+- **ChIX B31–B33 trên Draft #727:** nhiều dấu ^ đang nằm trong nguồn trang chờ phát hành; BLOCKED_BY_RELEASE_AP1_AP2 tới khi áp dụng cùng audit, reconciling main mới và 4/4 CI.
+- Mọi sửa trong SGK RELEASE không tạo chuẩn khác, không đụng AUTHORING source/receipt, item canonical, ngân hàng đáp án, Written rubric, protected RD1 hay Mastery.
+
+**Checkpoint:** RELEASE_UI_AUDIT_CANDIDATE, PR #729 Draft; AP1_AP2_BROWSER_90_ROUTE_QA, R1–R5, deploy P1 và owner visual UAT vẫn OPEN.
