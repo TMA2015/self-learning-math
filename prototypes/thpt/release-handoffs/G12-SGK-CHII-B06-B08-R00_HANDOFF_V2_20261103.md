@@ -10,14 +10,14 @@ ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC
 ACADEMIC_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/G12_CHII_R00_INDEPENDENT_ACADEMIC_PED_COMPOSITE_SOURCE_RECEIPT_20261103.md
 REVIEW_RECEIPT_BLOB: 92c07bc943a3e5f1789b8c9e5e7a3acc1bea7532
-ACADEMIC_VERDICT: PASS_ON_FROZEN_R00_SOURCE
-PEDAGOGICAL_VERDICT: PASS_ON_FROZEN_R00_SOURCE
+ACADEMIC_VERDICT: PASS
+PEDAGOGICAL_VERDICT: PASS
 NOTEBOOKLM_PERMANENT_VERSION: 2.1
 P0: 0
 P1: 0
 P2: 0
 MINIMAL_DELTA: 0
-BLOCKERS: NONE_ON_AUTHORING_SNAPSHOT
+BLOCKERS: NONE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_SHA256: 2b25189f74db37a8c79106efc6ebae5e8943a38707d9962eb6f64edffe239dc1
 RELEASE_AUTHORIZATION: NO
@@ -118,7 +118,7 @@ Original owner SGK Toán 12 KNTT Tập Một in45–74/pdf1 47–76, SHA256 faeb
 
 ## ITEM_OUTCOME_MATRIX
 | ITEM_ID | OUTCOME_ID | PLACEMENT | ROLE | SHARED_PLACEMENT |
-|---|---|---|---|---|
+|---|---|---|---|---|---|
 | THPT-G12-B06-C01 | G12-CHII-B06-O01 | Core | CORE | — |
 | THPT-G12-B06-P01 | G12-CHII-B06-O01 | Luyen_tap | PRACTICE | — |
 | THPT-G12-B06-P02 | G12-CHII-B06-O01 | Luyen_tap | PRACTICE | END_CLIENT_SELF_CHECK_REFERENCE |
@@ -194,26 +194,37 @@ NotebookLM independent Academic/PED reviewer approves the original R00 source (t
 
 ## QUALITY_Q01_Q18_EVIDENCE
 Normative source: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`.
-| Q_ID | SOURCE_EVIDENCE | INDEPENDENT_REVIEW_EVIDENCE | RELEASE_RECHECK |
+| Q_ID | SOURCE_EVIDENCE | INDEPENDENT_REVIEW_EVIDENCE | RELEASE_RECHECK | AUTHORING_SCOPE |
 |---|---|---|---|
-| Q01 | S1 original KNTT SGK pp45–74/SBT pp38–58; PDF1 scoped offsets and SHA256 in R00 S1 audit | Full independent Q01 reviewer + targeted SOURCE_RECEIPT_SGK/SBT PASS | R1 verify provenance |
-| Q02 | 16 outcome IDs, each 1 CORE + 2 PRACTICE + 1 WRITTEN and D6; original S1 audit, ITEM_OUTCOME_MATRIX | Independent full chapter outcome scope PASS; targeted unchanged | AP4 coverage |
-| Q03 | R00 B06–B08 source D1 mathematical definitions, assumptions and zero-vector exceptions | Independent Academic/D1 PASS | AP2 MathJax and meaning |
-| Q04 | 16 reasoned worked EX across 3 lessons with domain/why rationale | Independent Academic/D2 PASS | AP4 examples |
-| Q05 | 16 Core + 32 Practice/Application (64 public incl 16 Written), exact item IDs/answers/solutions | Independent Academic PASS on original R00 items | R4 answer reveal |
-| Q06 | 16 original Written in shared canonical bank, rubric/5 and explanations | Targeted Q06 Written rubric /5 PASS | Written manual compare, no fake auto-grade |
-| Q07 | 3 original SVG source Git blobs + caption/reading guide, PNG review renders | Targeted Q07 visual fidelity PASS; hashes separated | AP3 SVG rendering |
-| Q08 | 16 same-outcome 5-step HELP D6; source proof and local QA | Independent D6 PASS unchanged | AP4 D6 links |
-| Q09 | B06/B07/B08 each begins with WHY context before formal | Independent PED1 PASS | AP1 hierarchy |
-| Q10 | Explicit prerequisites plane vectors, 3D geometry, coordinate/Pythagoras | Independent PED2 PASS | AP4 prerequisite links |
-| Q11 | Intuitive meaning-before-formula for vectors, axes and coordinates | Independent PED3 PASS | AP1 reading order |
-| Q12 | 3 SVG have guided warnings against measuring projection and algebra misreading | Independent PED4 / targeted Q07 PASS | AP3 image/alt |
-| Q13 | 16 EX explain why method chosen, constraints, when not to use | Independent PED5 PASS | AP4 example flow |
-| Q14 | Three first tries B06-T01/B07-T01/B08-T01 with self-open answers | Targeted Q14 FIRST_TRY PASS | AP4 UI closed-by-default |
-| Q15 | 64 distinct canonical IDs; 16 END references reuse public Practice IDs; Written/Anchor single library | Source matrix 64/64; reviewer mapping reconciled | R1/R4 identity |
-| Q16 | 20 private RD1 raw off-GitHub SHA only; END public CLIENT_SELF_CHECK_NO_MASTERY | Independent Q16 scope PASS, targeted source unchanged | R4 Final Submit/privacy; no Mastery |
-| Q17 | SGK three lessons+chapter end self-sufficient; Topic NOT claimed passed | Independent SGK scope Academic/PED PASS | R3 preserve two journeys |
-| Q18 | Frozen original five files inside exact wrapper Git SHA + two verbatim independent reviewer blobs + targeted corrections | Targeted Q18 PASS / normative mapping reconciled; author byte-parity | R1 source/receipt exact-head |
+| Q01 | S1 original KNTT SGK pp45–74/SBT pp38–58; PDF1 scoped offsets and SHA256 in R00 S1 audit | Full independent Q01 reviewer + targeted SOURCE_RECEIPT_SGK/SBT PASS | R1 verify provenance | Original B06–B08 and Chapter-END R00 locked evidence |
+| Q02 | 16 outcome IDs, each 1 CORE + 2 PRACTICE + 1 WRITTEN and D6; original S1 audit, ITEM_OUTCOME_MATRIX | Independent full chapter outcome scope PASS; targeted unchanged | AP4 coverage | Original B06–B08 and Chapter-END R00 locked evidence |
+| Q03 | R00 B06–B08 source D1 mathematical definitions, assumptions and zero-vector exceptions | Independent Academic/D1 PASS | AP2 MathJax and meaning | Original B06–B08 and Chapter-END R00 locked evidence |
+| Q04 | 16 reasoned worked EX across 3 lessons with domain/why rationale | Independent Academic/D2 PASS | AP4 examples | Original B06–B08 and Chapter-END R00 locked evidence |
+| Q05 | 16 Core + 32 Practice/Application (64 public incl 16 Written), exact item IDs/answers/solutions | Independent Academic PASS on original R00 items | R4 answer reveal | Original B06–B08 and Chapter-END R00 locked evidence |
+| Q06 | 16 original Written in shared canonical bank, rubric/5 and explanations | Targeted Q06 Written rubric /5 PASS | Written manual compare, no fake auto-grade | Original B06–B08 and Chapter-END R00 locked evidence |
+| Q07 | 3 original SVG source Git blobs + caption/reading guide, PNG review renders | Targeted Q07 visual fidelity PASS; hashes separated | AP3 SVG rendering | Original B06–B08 and Chapter-END R00 locked evidence |
+| Q08 | 16 same-outcome 5-step HELP D6; source proof and local QA | Independent D6 PASS unchanged | AP4 D6 links | Original B06–B08 and Chapter-END R00 locked evidence |
+| Q09 | B06/B07/B08 each begins with WHY context before formal | Independent PED1 PASS | AP1 hierarchy | Original B06–B08 and Chapter-END R00 locked evidence |
+| Q10 | Explicit prerequisites plane vectors, 3D geometry, coordinate/Pythagoras | Independent PED2 PASS | AP4 prerequisite links | Original B06–B08 and Chapter-END R00 locked evidence |
+| Q11 | Intuitive meaning-before-formula for vectors, axes and coordinates | Independent PED3 PASS | AP1 reading order | Original B06–B08 and Chapter-END R00 locked evidence |
+| Q12 | 3 SVG have guided warnings against measuring projection and algebra misreading | Independent PED4 / targeted Q07 PASS | AP3 image/alt | Original B06–B08 and Chapter-END R00 locked evidence |
+| Q13 | 16 EX explain why method chosen, constraints, when not to use | Independent PED5 PASS | AP4 example flow | Original B06–B08 and Chapter-END R00 locked evidence |
+| Q14 | Three first tries B06-T01/B07-T01/B08-T01 with self-open answers | Targeted Q14 FIRST_TRY PASS | AP4 UI closed-by-default | Original B06–B08 and Chapter-END R00 locked evidence |
+| Q15 | 64 distinct canonical IDs; 16 END references reuse public Practice IDs; Written/Anchor single library | Source matrix 64/64; reviewer mapping reconciled | R1/R4 identity | Original B06–B08 and Chapter-END R00 locked evidence |
+| Q16 | 20 private RD1 raw off-GitHub SHA only; END public CLIENT_SELF_CHECK_NO_MASTERY | Independent Q16 scope PASS, targeted source unchanged | R4 Final Submit/privacy; no Mastery | Original B06–B08 and Chapter-END R00 locked evidence |
+| Q17 | SGK three lessons+chapter end self-sufficient; Topic NOT claimed passed | Independent SGK scope Academic/PED PASS | R3 preserve two journeys | Original B06–B08 and Chapter-END R00 locked evidence |
+| Q18 | Frozen original five files inside exact wrapper Git SHA + two verbatim independent reviewer blobs + targeted corrections | Targeted Q18 PASS / normative mapping reconciled; author byte-parity | R1 source/receipt exact-head | Original B06–B08 and Chapter-END R00 locked evidence |
+## REVIEW_SOURCE_RECEIPT
+Exact original independent full-chapter NotebookLM verbatim Git blob `97ee98ee3acfdeb9c77e7df2107b93b8b9c22ca6` and targeted Q06/Q07/Q14/Q18 verbatim blob `521c76b8c9b1ca6cf1ed397fbcb2fe598716da2c` are preserved independently. One author composite receipt `92c07bc943a3e5f1789b8c9e5e7a3acc1bea7532` identifies source wrapper `856a37bd16d2746ffc2e12906de18d1f4338a3b6`, five original exact reviewed components, three original SVG assets and author-computed PNG binary SHAs. Reviewer did not assert hashing Git wrapper binaries themselves.
+
+## DELTA_LEDGER
+Frozen R00 academic content, answers, rubric/5 and outcome mapping were **not modified** after independent reviewer PASS. The targeted reviewer issued source-equivalent `DELTA_B_SOURCE_EQUIVALENT` for evidence wording and provenance clarification: old /4 and 16-first-try claims, mislabeled SVG hash as PNG, wrong QA manifest hash and stale 12/16 placement metadata. Reviewer explicitly closes Q06/Q07/Q14/Q18; `P0=P1=P2=0, MINIMAL_DELTA=0`. No `DELTA_C_ACADEMIC_MATERIAL` and no blanket second review.
+
+## PRIVATE_RD1_CUSTODY_METADATA
+Twenty distinct protected RD1 candidates were independently reported reviewed in the original owner NotebookLM R00 batch; full raw file SHA-256 is `2b25189f74db37a8c79106efc6ebae5e8943a38707d9962eb6f64edffe239dc1`. Only count, custody boundary and checksum metadata are stored in public handoff. No original private stems, correct answer keys, solutions or rubrics committed to GitHub. Public 16 end placements reuse existing seen Practice only and may never become independently certified Readiness/Mastery from this handoff.
+
+## AUTHOR_SIGNOFF
+AUTHORING confirms direct SGK/SBT KNTT S1 printed pages vs PDF index, five original reviewed public R00 components exact (byte-equivalent inside wrapper), 64/64 unique canonical item→outcome rows, 16 outcomes, 16 Written rubric/5, 16 D2, 16 D6, 3 first-tries and 3 original valid SVG. Owner supplied independent full Academic and PED PASS plus targeted Q18 source reconciliation. One handoff V2, one ready manifest, one REGISTER row; RELEASE R1–R5/AP1–AP5/P1/P2 not checked by AUTHORING and owner permission for website publication not implied.
 
 ## AUTHORING_A1_A7
 - A1 — Frozen canonical public source `856a37bd16d2746ffc2e12906de18d1f4338a3b6`; five unchanged reviewed R00 components, three original SVG Git blobs; receipt source and SHA rechecked.
