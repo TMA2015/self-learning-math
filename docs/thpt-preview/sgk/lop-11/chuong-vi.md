@@ -9,7 +9,7 @@
 ## Kết nối toàn chương — học sinh giải thích mạch nguyên nhân
 
 - Sự nhân lặp dẫn đến số mũ nguyên; nhu cầu căn và giá trị giữa các kỳ dẫn đến số mũ phân số/thực.
-- Hỏi “kết quả của số mũ là bao nhiêu?” dùng `a^x`; hỏi “muốn ra kết quả b cần số mũ nào?” dùng `log_a b`.
+- Hỏi “kết quả của số mũ là bao nhiêu?” dùng \(a^x\); hỏi “muốn ra kết quả b cần số mũ nào?” dùng \(\log_a b\).
 - Xem mối quan hệ cho **mọi** x là học **hàm số mũ/logarit**; hỏi khi nào đạt/ngưỡng vượt b là **giải phương trình/bất phương trình**.
-- **Micro-check tích hợp:** Nếu số lượng ban đầu là 10 và sau t kỳ tăng gấp 3 mỗi kỳ, hãy (i) viết hàm N(t), (ii) tìm t để N=270, (iii) giải N(t)>270 khi t là nguyên không âm. **Đối chiếu sau tự thử:** `N(t)=10·3^t`, t=3 cho 270; “vượt” đòi `t>3`, kỳ nguyên đầu tiên t=4.
+- **Micro-check tích hợp:** Nếu số lượng ban đầu là 10 và sau t kỳ tăng gấp 3 mỗi kỳ, hãy (i) viết hàm N(t), (ii) tìm t để N=270, (iii) giải N(t)>270 khi t là nguyên không âm. **Đối chiếu sau tự thử:** \(N(t)=10\cdot 3^t\), t=3 cho 270; “vượt” đòi \(t>3\), kỳ nguyên đầu tiên t=4.
 - **Không dùng câu này làm RD1 kín**; đây chỉ là hoạt động hướng dẫn công khai, không tạo Skill Mastery.
