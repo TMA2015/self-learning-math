@@ -5,17 +5,18 @@ BASE_VERSION: 1.0.0
 PROPOSED_VERSION: 1.1.0
 CHANGE_CLASS: MINOR
 OWNER_DECISION: APPROVED_IN_AUTHORING_CONVERSATION_2026-11-03
-IMPLEMENTATION_BRANCH: GOVERNANCE_PR_PENDING_MAIN_MERGE
+IMPLEMENTATION_BRANCH: GOVERNANCE_PR_726_MERGED_MAIN_049fa190b05c3562816670d51defc62965986c31
 APPLIES_TO: THPT_G10_G11_G12_SGK_CHAPTER_AND_TOPIC
 OWNER_OF_CHANGE: AUTHORING_GOVERNANCE
 RELEASE_EDITS_NORMATIVE_MATH: NO
 INDEPENDENT_NOTEBOOKLM_AUTHORITY: PRESERVED
 PRIVATE_RD1_AND_MASTERY_BOUNDARY: UNCHANGED
-CURRENT_PRODUCTION: UNCHANGED
+CURRENT_PRODUCTION: UNCHANGED_NO_WEBSITE_RELEASE
+NORMATIVE_MAIN_STATUS: OFFICIAL_OWNER_APPROVED_MAIN
 
 ## 1. Quyết định chủ dự án (03/11/2026)
 Chủ dự án xác nhận Self-Learning Math là **chương trình học liệu độc lập, tự biên soạn** nhằm phủ rộng kiến thức Toán THPT và họ dạng bài từ lý thuyết, nhận biết, thông hiểu, vận dụng đến nâng cao, tổng hợp và các bài **tự luận quan trọng trong kỳ thi**. **SGK KNTT/chương trình chính thức** là nguồn xác định phạm vi Core và outcome bắt buộc; SBT KNTT, đề thi và tài liệu uy tín khác chỉ tham khảo để kiểm thử độ đa dạng và chiều sâu. Khi không tìm được một đề SBT gốc, được tham khảo **nhiều bài tương đương khác đầu bài nhưng cùng cấu trúc, phương pháp và điều kiện**, rồi tự đặt bài, giải/kiểm nghiệm đáp số/rubric, bảo đảm năng lực phải học. Không yêu cầu đầy đủ từng trang SBT như tiên quyết nghiệm thu.
-Đây là **phê duyệt về chính sách**. AUTHORING soạn PR governance và theo chuẩn được merge mới xin NotebookLM đánh giá bổ sung phần bị ảnh hưởng; không tự đổi kết quả review, quyền merge/deploy, website hay Mastery.
+Đây là **phê duyệt về chính sách**; AUTHORING đã merge governance PR #726 sau exact-head QA PASS tại `049fa190b05c3562816670d51defc62965986c31`. Kể từ đó, chỉ xin NotebookLM đánh giá bổ sung phần chịu ảnh hưởng; không tự đổi kết quả review, quyền RELEASE merge/deploy website hay Mastery.
 
 ## 2. Vấn đề cụ thể và căn cứ thay đổi
 - Q01 v1.0.0 trước đây đặt `SGK/SBT` cùng trong PASS source scope và `A2 HOLD nếu sách/ấn bản/trang không xác nhận`. Điều này vô tình đòi đủ từng trang SBT, mặc dù Core toàn chương và lời giải của học liệu do tác giả sáng tạo đã có thể được xác minh độc lập.
