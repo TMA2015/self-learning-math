@@ -2,7 +2,7 @@
 
 **STANDARD_ID:** `SLM-THPT-QUALITY-ONE`  
 **VERSION:** `1.1.0` · **OWNER:** Chủ dự án Self-Learning Math / G Learning  
-**STATUS:** `OWNER_APPROVED_Q01_REVISION_PENDING_GOVERNANCE_QA_MERGE` — chuẩn v1.0.0 đã chính thức merge tại PR #703 ngày 02/11/2026; ngày 03/11/2026 chủ dự án **phê duyệt rõ** điều chỉnh vai trò SGK/SBT/nguồn bài tập và Q01. Bản v1.1.0 trong PR quản trị chỉ có hiệu lực trên `main` **sau exact-head QA và merge quản trị được chủ dự án cho phép**. Không tự cấp Academic PASS/CONTENT_READY, không merge/deploy website, kích hoạt Mastery hoặc đổi nhánh RELEASE.  
+**STATUS:** `OFFICIAL_OWNER_APPROVED_MAIN` — chủ dự án phê duyệt Q01 v1.1.0 ngày 03/11/2026, PR quản trị #726 đã vượt Governance QA và Roadmap QA trên HEAD `878ffd9607d2f17df96243d22cebd2b589c82144` và **MERGED vào `main`** tại `049fa190b05c3562816670d51defc62965986c31`. Bản v1.0.0 trước đây được bảo toàn cho snapshot đã PASS. Không tự cấp Academic/PED PASS hay CONTENT_READY mới, không deploy website, kích hoạt Mastery hoặc đổi nhánh RELEASE.  
 **SCOPE:** mọi học liệu Toán THPT 10–12 KNTT theo **SGK_CHAPTER** và **TOPIC**; áp dụng cho cả tác giả, NotebookLM và nhánh phát hành. **Một tiêu chuẩn chất lượng; các cổng kiểm tra phân theo trách nhiệm, không phải hai bộ tiêu chuẩn cạnh tranh.**
 
 ## 0. Luật thống nhất và thứ tự hiệu lực
@@ -148,7 +148,7 @@ Một chương mới **không gửi NotebookLM** nếu chưa tự kiểm:
 ## X-A. Quyết định thay đổi Q01 — Change Log 03/11/2026
 - `STANDARD_CHANGE_REQUEST`: `prototypes/thpt/standard-changes/STANDARD_CHANGE_REQUEST_Q01_SOURCE_ROLES_20261103.md`; **quyết định chủ dự án đã phê duyệt trong chat 03/11/2026**, chỉ định AUTHORING thực hiện; RELEASE không đặt hoặc chỉnh chuẩn toán riêng.
 - `CHANGE_CLASS=MINOR`, từ `v1.0.0 → v1.1.0`: làm rõ vai trò SGK Core vs SBT/nguồn bài tập làm tham khảo, thêm cơ chế ngoại lệ có bằng chứng cho thiếu trang SBT; **không đổi 18 Q, SGK S1 Core, chuẩn toán, Q16/private RD1, hai hành trình hoặc thẩm quyền deploy**.
-- **Hiệu lực:** bản quản trị trên PR chỉ là `PENDING_GOVERNANCE_MERGE`; sau owner-authorized governance merge/QA mới được ghi `OFFICIAL_OWNER_APPROVED_MAIN`. Không thay thế/dùng song song Permanent Sources v2.1 hoặc mở Permanent thứ sáu. Thay đổi Q01 được trích trong **batch-source tạm thời có nguồn** khi review có tác động; đối chiếu những câu có xung đột trong Permanent v2.1 với **quyết định mới nhất của chủ dự án**, không âm thầm sửa 5 file đó.
+- **Hiệu lực:** v1.1.0 chính thức được merge tại governance PR #726, `049fa190b05c3562816670d51defc62965986c31`, sau exact-head QA PASS và phê duyệt chủ dự án; mã hiệu lực `OFFICIAL_OWNER_APPROVED_MAIN`. Không thay thế/dùng song song Permanent Sources v2.1 hoặc mở Permanent thứ sáu. Thay đổi Q01 được trích trong **batch-source tạm thời có nguồn** khi review có tác động; đối chiếu những câu có xung đột trong Permanent v2.1 với **quyết định mới nhất của chủ dự án**, không âm thầm sửa 5 file đó.
 - **Bảo toàn PASS và phạm vi delta:** những snapshot trước đây Academic/PED PASS vẫn giữ theo phiên bản cũ. ChV G12 R00 B14 Q01 HOLD cần targeted independent check theo v1.1.0, không tự upgrade/redo full review; không phát hành nếu targeted verdict chưa được chủ dự án chuyển giao.
 
 ## XI. Truy vết nguồn → điều khoản và phân công
