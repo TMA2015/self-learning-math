@@ -4,13 +4,13 @@
 
 ## 1. Kiến thức SGK — hình thành bản chất trước quy tắc
 
-### 1.1. WHY: Tại sao một biến cố đơn lẻ chưa đủ?
+### 1.1. Tại sao một biến cố đơn lẻ chưa đủ?
 Ở lớp trước em biết xác suất để lấy được thẻ màu đỏ. Nhưng một câu hỏi như “rút được thẻ đỏ **hoặc** thẻ mang số chẵn”, hay “vừa đỏ **vừa** chẵn” đòi phối hợp **hai biến cố**. Nếu chỉ cộng số trường hợp ta có thể đếm trùng một thẻ vừa đỏ vừa chẵn. Chương này học ngôn ngữ biến cố trước, sau đó mới tính xác suất; học sinh không phải học thuộc công thức khi chưa hiểu vùng kết quả.
 
-### 1.2. WHAT: Phép thử, không gian mẫu, biến cố (nhắc nền tảng)
+### 1.2. Phép thử, không gian mẫu, biến cố (nhắc nền tảng)
 **Phép thử ngẫu nhiên** là thao tác với kết quả chưa biết trước (chẳng hạn lấy ngẫu nhiên một thẻ). **Không gian mẫu** Ω là tập *mọi kết quả có thể xảy ra* của phép thử; **biến cố** A là tập con Ω. Với Ω={1,2,3,4,5,6} khi chọn số từ sáu thẻ đánh số, A="số chẵn"={2,4,6}; B="số lớn hơn 3"={4,5,6}. Trong mô hình sáu kết quả **đồng khả năng**, P(A)=3/6. Nếu cách chọn khiến các kết quả không đồng khả năng, tuyệt đối không dùng số phần tử/6 mà phải có xác suất của từng kết quả.
 
-### 1.3. HOW: "Hoặc" và "đồng thời" là hai tập khác nhau
+### 1.3. "Hoặc" và "đồng thời" là hai tập khác nhau
 **Hợp** A∪B có kết quả thuộc A **hoặc** B, kể cả khi cả hai xảy ra. Ví dụ A∪B={2,4,5,6}. **Giao** A∩B có kết quả thuộc **cả A lẫn B**, ở ví dụ là {4,6}. **Phần bù** Ā=Ω\\A={1,3,5}, nghĩa là A không xảy ra. **Xung khắc** nếu A∩B=∅, không thể xảy ra đồng thời. Hai biến cố có phần giao không rỗng là **không xung khắc**. Xem FIG-G11-CHVIII-B28-01; vùng giao ở giữa được tính **một lần** trong hợp.
 
 ### 1.4. Độc lập không phải xung khắc
@@ -26,7 +26,7 @@ Với Ω={1,2,3,4,5,6}, A={2,4,6}, B={4,5,6}, em hãy viết A∪B, A∩B và A�
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Em đã tự thử? Mở lời giải đối chiếu</summary><p><strong>Tự đối chiếu sau khi làm:</strong> {2,4,5,6}; {4,6}; {1,3,5}; không xung khắc vì giao khác rỗng.</p></details>
 
 
-## 2. Ví dụ có suy luận D2
+## 2. Ví dụ có suy luận
 
 #### EX-G11-CHVIII-B28-01: Đọc biến cố từ tập số
 
@@ -68,7 +68,7 @@ Với Ω={1,2,3,4,5,6}, A={2,4,6}, B={4,5,6}, em hãy viết A∪B, A∩B và A�
 
 **Tại sao cách làm đúng:** Kết quả đơn lẻ số 3 nằm cả hai biến cố; không được chỉ dùng chữ "hoặc" như loại trừ.
 
-## 3. Tự khắc phục lỗi D6
+## 3. Tự khắc phục lỗi
 
 <details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVIII-B28-01"><summary><strong>Chẩn đoán lỗi:</strong> Nhầm hoặc với loại trừ.</summary><ol><li><strong>Chẩn đoán lỗi:</strong> Nhầm hoặc với loại trừ.</li><li><strong>Nhắc khái niệm/điều kiện:</strong> A∪B bao gồm cả giao, một kết quả viết một lần.</li><li><strong>Giải thích vì sao:</strong> Đọc lại phần D1 của B28, vẽ tập hợp/nhánh xác suất tương ứng, rồi nói lại bằng lời trước khi thay số.</li><li><strong>Tự thử có dẫn:</strong> A={a,c},B={b,c}; hợp chứa c không? <strong>Đối chiếu sau thử:</strong> Có; {a,b,c}.</li><li><strong>Quay về câu nguồn:</strong> Tự làm lại <code>THPT-G11-CHVIII-B28-C03</code> từ đầu, ghi lý do chọn công thức. Không tính lời giải đã xem là bằng chứng Mastery.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVIII-B28-C03">Quay lại câu gốc THPT-G11-CHVIII-B28-C03</a></p></details>
 
