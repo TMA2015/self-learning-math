@@ -49,3 +49,18 @@ Chỉ ghi checkpoint lên GitHub Issue #698 và PR chương tương ứng khi c�
 ## 5. Chốt trách nhiệm, không thêm tiêu chuẩn
 
 Toàn bộ bước trên là **quy trình vận hành của cùng một Q01–Q18**. Không tạo checklist học thuật đối thủ, không sửa Golden THCS/G11 kiến trúc, không thay Firebase/Gemini/tiến độ, không công khai raw private RD1 và không dùng NotebookLM chỉ vì chỉnh metadata. Mọi yêu cầu thay đổi **nội dung chuẩn gốc** phải được chủ dự án duyệt dưới dạng `STANDARD_CHANGE_REQUEST`; runbook này không được quyền cập nhật chuẩn toán học.
+
+
+## 6. Bảo vệ AP1/AP2/AP5 trước lỗi hiển thị SGK (owner-report 03/11/2026)
+
+**Đây là cổng thực thi RELEASE của Q01–Q18, không phải tiêu chuẩn học thuật thứ hai.** Lý do: các bài B18, B22–B30 trước đây vượt qua một số QA kỹ thuật nhưng vẫn lộ nhãn tác giả (\`2A\`, \`4B\`, \`§1\`, \`WHY/WHAT/HOW/D5\`) và biểu thức thô (\`a^x\`, \`u_n\`, \`log_a\`). Các lỗi này làm học liệu khó tự học dù item/SVG/nguồn được khóa đúng.
+
+**Mỗi PR phát hành SGK G11, bao gồm chương/supplement nhập từ handoff V2:**
+1. **Quét toàn bộ bài đã tích hợp và bài mới** bằng \`node scripts/test-thpt-g11-learner-presentation-source.cjs\`. Tự phát hiện tệp Bài mới, kiểm tra H2/H3 phân cấp tuần tự, chặn \`2A/4B/§\`, chặn nhãn kỹ thuật \`D1–D6/PED/WHY/WHAT/HOW/FORMAL/DEEPENING\` ở tiêu đề hiển thị. Tự mở rộng phạm vi khi thêm Bài 31–33; không chỉ kiểm 30 bài cũ.
+2. **Chạy kiểm thử trình duyệt ở 390/820/1440 px** qua \`scripts/test-thpt-g11-learner-presentation-browser.py\` trên bản \`site/\` mới build: B18 số mũ và chỉ số dưới; B21 \`log_a\`; B22–B27 tiêu đề và chiều dài dòng đọc; B28–B30 tràn ngang; không lan ảnh hưởng sang THCS. Cùng lúc bảo vệ R4 Golden, MathJax, SVG, deep links và Final Submit bằng các bài hồi quy cũ.
+3. **Lệnh này là bắt buộc ở cả hai workflow** \`THPT R4 MkDocs Preview QA (no deploy)\` (kiểm tra source) và \`Roadmap PR Quality\` (source + browser). Nếu bất kỳ cổng nào FAIL, **\`AP_DISPLAY_DEFECT_HOLD\`** gắn LESSON_ID, route, HEAD, viewport và ảnh/chứng cứ; không merge, không triển khai.
+4. **Không che đậy biểu thức mơ hồ.** Chỉ render các chuỗi chắc chắn \`a^{m/n}\`/\`u_n\`/\`log_a\` bằng \`sup/sub\` trong DOM, tách khỏi source; biểu thức nhập không rõ như \`a^u(x)\` hoặc \`a^1/2\` phải được ghi nhận để người rà soát xác định ý nghĩa, không tự chuyển thành công thức khác. MathJax, đáp án, rubric và private RD1 phải giữ nguyên.
+5. **Giữ người học là chuẩn UI:** tiêu đề tiếng Việt tự nhiên, không phô nhãn review; các đoạn giải thích dài có chiều dài dòng đọc giới hạn riêng trên SGK G11; nêu rõ WHY bằng **câu tiếng Việt có nghĩa**, không bắt học sinh đọc mã PED/D1–D6. Nếu cần viết lại giải thích hoặc bổ sung điều kiện toán, tạo defect \`Qxx + LESSON/OUTCOME/ITEM + source blob + minimal delta\` cho AUTHORING \`DELTA_C\`, không sửa trong RELEASE.
+6. **Bằng chứng trước khi đóng:** diff chứng minh non-heading học thuật không đổi; source/receipt SHA khớp; cả bốn workflow bắt buộc trên HEAD cuối/merge-base hiện tại thành \`COMPLETED SUCCESS\` khi áp dụng; preview desktop/tablet/phone có kết quả, P1 deploy parity sau merge. **P2 thiết bị Safari thật luôn OPEN** nếu chưa có ảnh/biên bản từ thiết bị thật.
+
+Không biến \`PASS\` của snapshot cũ thành FAIL học thuật toàn chương: ghi đây là lỗi hiển thị mới được phát hiện, giữ nguyên receipts Q18 và sửa theo \`DELTA_A_UI\`. Tương tự, không tự cho rằng CI PASS chứng minh chất lượng sư phạm hoặc đúng toàn bộ toán.

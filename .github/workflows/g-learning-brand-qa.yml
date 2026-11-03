@@ -4,6 +4,11 @@ on:
   pull_request:
     paths:
       - 'docs/assets/branding/**'
+      # G11 RELEASE AP1/AP2/AP5 source/display may affect the shared site shell.
+      # Run this existing regression on every G11 learner-page integration, too.
+      - 'docs/thpt-preview/sgk/lop-11/**'
+      - 'docs/assets/javascripts/math-details-v1.js'
+      - 'docs/assets/stylesheets/thpt-r4-preview.css'
       - 'mkdocs.yml'
       - 'scripts/test-g-learning-brand.js'
       - '.github/workflows/g-learning-brand-qa.yml'

@@ -32,7 +32,7 @@ const reviewedB09=[...source.matchAll(/^\*\*(?:5|6|7|8|9|10)\. ([^*]+)\*\* (.+)$
 assert.equal(reviewedB09.length,6,"Six original B09 D1 ideas on the immutable source");
 for(const [i,entry] of reviewedB09.entries()){
  const localHeading=entry[1].replace(/\.$/,"");
- const expected="### "+(i+1)+". "+localHeading+"\n\n"+entry[2];
+ const expected="### 1."+(i+1)+". "+localHeading+"\n\n"+entry[2];
  assert(b09Knowledge.includes(expected),"B09 rendered local idea "+(i+1)+" retains exact R03 reviewed mathematical paragraph");
 }
 assert(!/\*\*(?:5|6|7|8|9|10)\. /.test(b09Knowledge),"No misleading chapter-global ordinal on B09 knowledge page");
