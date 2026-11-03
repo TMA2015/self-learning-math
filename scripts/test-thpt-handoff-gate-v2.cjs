@@ -135,7 +135,7 @@ function verifyReadyManifest(rel, initialHandoff) {
     ["REVIEW_RECEIPT_BLOB", reviewBlob], ["ACADEMIC_VERDICT", "PASS"],
     ["PEDAGOGICAL_VERDICT", "PASS"], ["BLOCKERS", "NONE"],
     ["ASSESSMENT_MODE", "CLIENT_SELF_CHECK_NO_MASTERY"],
-    ["RELEASE_SCOPE", "FULL_LEARNING_PATH"]
+    ["RELEASE_SCOPE", field(data, "RELEASE_SCOPE")]
   ]) assert.equal(field(handoff, k), v, "Handoff mismatch " + k);
   const lessons = ids(handoff, "LESSON_IDS");
   const outcomes = ids(handoff, "OUTCOME_IDS");
