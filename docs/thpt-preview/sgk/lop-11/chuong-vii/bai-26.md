@@ -4,26 +4,26 @@
 
 ## 1. Kiến thức SGK và ví dụ có suy luận
 
-### 1.1. Vì sao cần học (WHY)
+### 1.1. Vì sao cần học
 Đo khoảng cách từ đèn treo tới sàn phải đo theo phương ngắn nhất, không đo theo dây xiên. Giữa hai thanh chéo nhau, phải tìm đoạn nối vừa chạm hai đường vừa vuông góc cả hai.
 
-### 1.2. Khái niệm thực chất (WHAT)
+### 1.2. Khái niệm thực chất
 d(M,a)=MH với H là hình chiếu M lên a; d(M,(P))=MH với MH⊥(P). Nếu a//(P) thì d(a,(P))=d(M,(P)) với M∈a. Nếu hai mặt song song, dùng khoảng cách từ một điểm mặt này đến mặt kia. Với hai đường chéo nhau, khoảng cách là độ dài đoạn vuông góc chung.
 
-### 1.3. Hình thành và lập luận (HOW)
+### 1.3. Hình thành và lập luận
 Trong tam giác vuông MHK với H là chân đường vuông góc và K nằm trên đường/mặt: MK²=MH²+HK²≥MH². Đó là lý do “ngắn nhất”. Muốn tìm đoạn vuông góc chung phải kiểm cả hai đầu thuộc đúng hai đường và vuông góc **cả hai**, không phải chỉ một.
 
-### 1.4. Điều kiện, giới hạn, lỗi thường gặp (FORMAL)
+### 1.4. Điều kiện, giới hạn, lỗi thường gặp
 Nếu điểm đã thuộc mặt thì khoảng cách bằng 0. Nếu hai đường song song, dùng đoạn nối vuông góc giữa chúng; khái niệm chéo nhau yêu cầu không đồng phẳng và không cắt nhau. Chiều cao hình chóp là khoảng cách đỉnh–mặt đáy, không phải cạnh bên.
 
-### 1.5. Làm rõ các định lí, điều kiện và cấu trúc SGK (DEEPENING)
+### 1.5. Làm rõ các định lí, điều kiện và cấu trúc SGK
 **Vì sao khoảng cách là ngắn nhất:** Với M ngoài mặt (P), H là chân MH⊥(P), mọi K∈(P) tạo tam giác MHK vuông tại H. Do đó MK²=MH²+HK²≥MH², suy MK≥MH, đẳng thức chỉ khi K=H. Với đường a, lập luận tương tự với K∈a và chân H trên a. Khoảng cách là **độ dài**, không thể âm; bằng 0 khi M nằm trên đường hoặc mặt.
 
 **Các cặp đối tượng — xác định đúng:** Nếu a//(P), d(a,(P)) lấy từ **bất kì** điểm A∈a xuống (P). Nếu (P)//(Q), d((P),(Q)) là khoảng cách từ một điểm A∈(P) tới (Q); nó không đổi theo A. Nếu hai đường a,b *chéo nhau*, một đoạn AB có A∈a, B∈b và AB⊥a, AB⊥b được gọi là đoạn **vuông góc chung**; d(a,b)=AB. Chỉ tìm đoạn vuông góc một đường chưa đủ. Nếu hai đường cắt nhau, khoảng cách bằng 0; không nhầm trường hợp này với chéo nhau.
 
 **Quy trình xây dựng:** (1) Gọi đối tượng cần đo và xác định điểm/cặp đường. (2) Nêu điều kiện vuông góc của đoạn cần tìm. (3) Dựng chân bằng quan hệ vuông góc đã học B23–B25. (4) Dùng tam giác vuông, hình chiếu hoặc quan hệ song song tính độ dài. (5) Đối chiếu đơn vị. Độ dài SA của một cạnh bên hình chóp **không phải** chiều cao nếu S chiếu lên H khác A.
 
-### 1.6. Hình dẫn giải D5
+### 1.6. Hình minh họa và cách đọc
 
 <figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVII-B26-01_R00.svg" alt="Hình B26: Dựng MH⊥(P) và đoạn MK xiên: so sánh chiều dài; đoạn vuông góc chung giữa hai đường chéo nhau."/><figcaption>Hình B26: Dựng MH⊥(P) và đoạn MK xiên: so sánh chiều dài; đoạn vuông góc chung giữa hai đường chéo nhau.</figcaption></figure>
 
@@ -34,7 +34,7 @@ Chóp có SA=5, hình chiếu S trên đáy là H, AH=4: SH=3. Tại sao chiều
 
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Đã tự thử? Mở hướng dẫn tự đối chiếu</summary><p>Đối chiếu lập luận của em với phần ví dụ được giải thích dưới đây. Đây là hoạt động luyện tập, không ghi Skill Mastery.</p></details>
 
-### 1.8. Ví dụ có hướng dẫn D2 (giải thích vì sao chọn phương pháp)
+### 1.8. Ví dụ có hướng dẫn (vì sao chọn phương pháp)
 
 
 #### EX-G11-CHVII-B26-01 — Đường vuông góc là đường ngắn nhất
@@ -73,7 +73,7 @@ Chóp có SA=5, hình chiếu S trên đáy là H, AH=4: SH=3. Tại sao chiều
 
 
 
-## 2. Tự khắc phục — D6
+## 2. Tự khắc phục lỗi
 
 <details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVII-B26-01"><summary><strong>Nhận diện lỗ hổng:</strong> Nhầm độ dài cạnh xiên với chiều cao ngắn nhất.</summary><ol><li><strong>Nhận diện lỗ hổng:</strong> Nhầm độ dài cạnh xiên với chiều cao ngắn nhất.</li><li><strong>Nhắc đúng bản chất:</strong> Chiều cao chóp là đoạn từ đỉnh vuông góc mặt đáy.</li><li><strong>Nhìn lại kiến thức và hình:</strong> Đọc lại phần WHY/WHAT/HOW của B26, tự phát biểu điều kiện bằng lời và kiểm tra đúng hình SVG của bài, không suy luận từ phối cảnh.</li><li><strong>Tự luyện có hướng dẫn:</strong> Cạnh bên 5, hình chiếu dài 4, chiều cao? <strong>Sau khi tự làm mới đối chiếu:</strong> 3.</li><li><strong>Quay về câu gốc:</strong> <code>THPT-G11-CHVII-B26-C06</code>; giải lại và giải thích mỗi bước. HELP chỉ hiện sau nộp câu *luyện tập*, tuyệt đối không hiện trong RD1 trước Final Submit.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVII-B26-C06">Quay lại câu canonical THPT-G11-CHVII-B26-C06</a></p></details>
 
