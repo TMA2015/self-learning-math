@@ -80,4 +80,4 @@ Với `a,b>0`, `x,y∈ℝ`:
 
 ## 4. Tiếp tục
 
-[Core và Luyện tập Bài 18](../luyen-tap/) · [Tự luận Chương VI](../../../../thu-vien/tu-luan-g11-chuong-vi/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
+[Core và Luyện tập Bài 18](luyen-tap.md) · [Tự luận Chương VI](../../../thu-vien/tu-luan-g11-chuong-vi.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
