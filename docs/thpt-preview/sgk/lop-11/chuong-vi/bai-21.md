@@ -6,33 +6,33 @@
 
 <figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVI-B21-01_R00.svg" alt="B21 — trực quan hình thành khái niệm"/><figcaption>Hình D5 — quan sát trước khi tính: B21 — trực quan hình thành khái niệm</figcaption></figure>
 
-**Cách đọc và phát hiện:** Hình B21 giải thích bản chất “đảo chiều”: cùng tăng x, đường y=2^x đi lên nhưng y=(1/2)^x đi xuống. Hãy dùng điều này để tự nói vì sao (1/2)^u>(1/2)^v thì u<v, trước khi học quy trình giải bất phương trình.
+**Cách đọc và phát hiện:** Hình B21 giải thích bản chất “đảo chiều”: cùng tăng x, đường y=2<sup>x</sup> đi lên nhưng y=(1/2)<sup>x</sup> đi xuống. Hãy dùng điều này để tự nói vì sao (1/2)<sup>u</sup>>(1/2)<sup>v</sup> thì u<v, trước khi học quy trình giải bất phương trình.
 
-### 1. Vì sao phải giải loại phương trình này? (WHY)
+### 1.1. Vì sao phải giải loại phương trình này? (WHY)
 
-Các phương trình `x²=9` tìm **cơ số** x. Nhưng `2^x=16` lại tìm **số mũ** x; đây là dạng khác, cần hiểu hàm mũ đơn ánh và logarit là phép ngược. Bất phương trình như `2^x>10` hỏi phải tăng qua bao nhiêu kỳ để vượt một ngưỡng. Trước khi viết công thức, ta cần biết hàm **tăng hay giảm**, vì đó là lý do dấu bất đẳng thức được giữ hay đảo.
+Các phương trình \(x^{2}=9\) tìm **cơ số** x. Nhưng \(2^x=16\) lại tìm **số mũ** x; đây là dạng khác, cần hiểu hàm mũ đơn ánh và logarit là phép ngược. Bất phương trình như \(2^x>10\) hỏi phải tăng qua bao nhiêu kỳ để vượt một ngưỡng. Trước khi viết công thức, ta cần biết hàm **tăng hay giảm**, vì đó là lý do dấu bất đẳng thức được giữ hay đảo.
 
-### 2. Phương trình mũ cơ bản
+### 1.2. Phương trình mũ cơ bản
 
-Với `a>0,a≠1`: `a^{u(x)}=a^{v(x)} ⇔ u(x)=v(x)` vì hàm mũ đơn ánh (hai số mũ khác nhau không thể cho cùng một giá trị). `a^{u(x)}=b`: nếu b>0 thì `u(x)=log_a b`; nếu b≤0 thì vô nghiệm thực vì `a^{u(x)}>0`. Đừng “lấy log” của số âm.
+Với \(a>0,a\ne 1\): \(a^{u(x)}=a^{v(x)} ⇔ u(x)=v(x)\) vì hàm mũ đơn ánh (hai số mũ khác nhau không thể cho cùng một giá trị). \(a^{u(x)}=b\): nếu b>0 thì \(u(x)=\log_a b\); nếu b≤0 thì vô nghiệm thực vì \(a^{u(x)}>0\). Đừng “lấy log” của số âm.
 
-### 3. Phương trình logarit cơ bản và điều kiện
+### 1.3. Phương trình logarit cơ bản và điều kiện
 
-`log_a f(x)=c` tương đương `f(x)=a^c`, **với** `f(x)>0`. `log_a f(x)=log_a g(x)` ⇔ `f(x)=g(x)` **và** `f(x)>0,g(x)>0`. **Lý do:** logarit chỉ nhận đối số dương; bỏ điều kiện có thể tạo nghiệm ngoại lai.
+\(\log_a f(x)=c\) tương đương \(f(x)=a^c\), **với** \(f(x)>0\). \(\log_a f(x)=\log_a g(x)\) ⇔ \(f(x)=g(x)\) **và** \(f(x)>0,g(x)>0\). **Lý do:** logarit chỉ nhận đối số dương; bỏ điều kiện có thể tạo nghiệm ngoại lai.
 
-### 4. Bất phương trình: quan sát chiều biến thiên trước
+### 1.4. Bất phương trình: quan sát chiều biến thiên trước
 
-- Nếu `a>1`: `a^{u(x)}>a^{v(x)} ⇔ u(x)>v(x)`; `log_a f(x)>log_a g(x) ⇔ f(x)>g(x)>0`.
-- Nếu `0<a<1`: `a^{u(x)}>a^{v(x)} ⇔ u(x)<v(x)`; `log_a f(x)>log_a g(x) ⇔ 0<f(x)<g(x)`.
-- Với dấu `≥,≤`, áp dụng tương tự nhưng luôn đảm bảo điều kiện logarit. **Không đổi chiều vì “có log”**; đổi chiều vì **hàm theo cơ số 0<a<1 nghịch biến**.
+- Nếu \(a>1\): \(a^{u(x)}>a^{v(x)} ⇔ u(x)>v(x)\); \(\log_a f(x)>\log_a g(x) ⇔ f(x)>g(x)>0\).
+- Nếu \(0<a<1\): \(a^{u(x)}>a^{v(x)} ⇔ u(x)<v(x)\); \(\log_a f(x)>\log_a g(x) ⇔ 0<f(x)<g(x)\).
+- Với dấu \(\ge ,\le \), áp dụng tương tự nhưng luôn đảm bảo điều kiện logarit. **Không đổi chiều vì “có log”**; đổi chiều vì **hàm theo cơ số 0<a<1 nghịch biến**.
 
-### 5. Quy trình và giới hạn phương pháp
+### 1.5. Quy trình và giới hạn phương pháp
 
 Bước 1: xác định cơ số, miền đầu vào và điều kiện xác định của mọi logarit. Bước 2: nhận biết hàm tăng/giảm. Bước 3: biến đổi tương đương sang phương trình/bất phương trình quen thuộc. Bước 4: đối chiếu nghiệm với điều kiện và bài toán thực tế. **Chỉ dùng các dạng cơ bản theo SGK**; bài nâng cao đa thức lôgarit/mẹo đặt ẩn phụ tùy S1 phạm vi, không tự đẩy Core.
 
-### 6. Tự thử
+### 1.6. Tự thử
 
-Giải thích vì sao `(1/2)^x> (1/2)^3` cho `x<3`, không phải x>3. Nếu `log₂(x−1)=3`, vì sao trước tiên cần x>1?
+Giải thích vì sao \((1/2)^x> (1/2)^3\) cho \(x<3\), không phải x>3. Nếu \(\log_{2}(x-1)=3\), vì sao trước tiên cần x>1?
 
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Đã tự thử? Mở cách tự kiểm tra</summary><p>Đối chiếu lập luận của em với kiến thức và ví dụ D2 dưới đây. Hoạt động này không ghi Skill Mastery.</p></details>
 
@@ -42,15 +42,15 @@ Giải thích vì sao `(1/2)^x> (1/2)^3` cho `x<3`, không phải x>3. Nếu `lo
 
 ### D2 — Giáo viên làm mẫu B21
 
-**EX-G11-B21-01 (mũ, dùng đơn ánh).** `3^{2x−1}=27=3³` ⇒ `2x−1=3` ⇒ x=2. Lý do: hàm `3^t` tăng và mỗi đầu ra dương chỉ có một số mũ.
+**EX-G11-B21-01 (mũ, dùng đơn ánh).** \(3^{2x-1}=27=3^{3}\) ⇒ \(2x-1=3\) ⇒ x=2. Lý do: hàm \(3^t\) tăng và mỗi đầu ra dương chỉ có một số mũ.
 
-**EX-G11-B21-02 (log, điều kiện bắt buộc).** `log₂(x−1)=3`. Trước hết `x−1>0` tức x>1. Đổi sang `x−1=2³=8`, x=9 thỏa. Không ghi nghiệm chưa kiểm điều kiện.
+**EX-G11-B21-02 (log, điều kiện bắt buộc).** \(\log_{2}(x-1)=3\). Trước hết \(x-1>0\) tức x>1. Đổi sang \(x-1=2^{3}=8\), x=9 thỏa. Không ghi nghiệm chưa kiểm điều kiện.
 
-**EX-G11-B21-03 (cơ số 1/2 làm đổi chiều).** `(1/2)^{x+1}≥(1/2)^3`. Hàm giảm vì cơ số 0,5<1, nên `x+1≤3`, tức x≤2. **Sai thường gặp:** x≥2.
+**EX-G11-B21-03 (cơ số 1/2 làm đổi chiều).** \((1/2)^{x+1}\ge (1/2)^3\). Hàm giảm vì cơ số 0,5<1, nên \(x+1\le 3\), tức x≤2. **Sai thường gặp:** x≥2.
 
-**EX-G11-B21-04 (log giảm và miền).** `log_{1/3}(x−1)<log_{1/3}4`. Điều kiện x>1. Vì log cơ số 1/3 giảm, bất phương trình tương đương `x−1>4` ⇒ x>5; kiểm tự động thỏa x>1.
+**EX-G11-B21-04 (log giảm và miền).** \(\log_{1/3}(x-1)<\log_{1/3}4\). Điều kiện x>1. Vì log cơ số 1/3 giảm, bất phương trình tương đương \(x-1>4\) ⇒ x>5; kiểm tự động thỏa x>1.
 
-**EX-G11-B21-05 (mô hình ngưỡng).** `P(n)=100(1,1)^n` triệu, n nguyên không âm, khi nào **vượt** 133,1 triệu? `(1,1)^n>1,331=(1,1)^3` ⇒ n>3 ⇒ kỳ đầu vượt là **n=4**. **Bẫy:** tại n=3 chỉ **bằng** 133,1; điều kiện “vượt” là dấu >, và n phải nguyên trong cập nhật cuối kỳ.
+**EX-G11-B21-05 (mô hình ngưỡng).** \(P(n)=100(1,1)^n\) triệu, n nguyên không âm, khi nào **vượt** 133,1 triệu? \((1,1)^n>1,331=(1,1)^3\) ⇒ n>3 ⇒ kỳ đầu vượt là **n=4**. **Bẫy:** tại n=3 chỉ **bằng** 133,1; điều kiện “vượt” là dấu >, và n phải nguyên trong cập nhật cuối kỳ.
 
 
 ## 3. Tự khắc phục và quay lại câu gốc

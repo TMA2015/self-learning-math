@@ -4,37 +4,37 @@
 
 ## 1. Kiến thức SGK và ví dụ có suy luận
 
-### 1. Vì sao cần học (WHY)
+### 1.1. Vì sao cần học (WHY)
 Trong căn nhà có nhiều thanh không giao nhau. Muốn biết phương của hai thanh có vuông góc không, không thể đo một góc ngay tại giao điểm không tồn tại. Ta cần cách chuyển phương song song về chung một điểm.
 
-### 2. Khái niệm thực chất (WHAT)
+### 1.2. Khái niệm thực chất (WHAT)
 Qua O bất kì dựng a′//a và b′//b; góc giữa a,b là góc nhỏ giữa hai đường a′,b′, thuộc [0°,90°]. Nếu bằng 90°, gọi a⊥b; hai đường có thể chéo nhau.
 
-### 3. Hình thành và lập luận (HOW)
+### 1.3. Hình thành và lập luận (HOW)
 Phép tịnh tiến giữ phương; góc không đổi khi chọn O khác. Hai đường giao nhau là trường hợp đặc biệt. Nếu a//a₁ thì (a,b)=(a₁,b), nên có thể thay bằng cạnh song song trong hình hộp.
 
-### 4. Điều kiện, giới hạn, lỗi thường gặp (FORMAL)
+### 1.4. Điều kiện, giới hạn, lỗi thường gặp (FORMAL)
 Không lấy góc tù 120° làm góc giữa **đường thẳng**: lấy 60°. Hai đường song song có góc 0°, chéo nhau có thể vuông góc. Hai đường cùng vuông góc với đường thứ ba không nhất thiết song song trong không gian.
 
-### 4B. Làm rõ các định lí, điều kiện và cấu trúc SGK (DEEPENING)
+#### 1.4.1. Làm rõ các định lí, điều kiện và cấu trúc SGK (DEEPENING)
 **Cách dựng thực sự:** Nếu a và b chéo nhau, lấy O bất kì, vẽ đường a₀ đi qua O song song với a và b₀ đi qua O song song với b. Trong bốn góc do hai đường a₀,b₀ tạo nên, hai góc nhọn bằng nhau và hai góc tù bù với chúng. Góc giữa a,b được chọn là góc nhọn hoặc vuông, không phụ thuộc O. **Trường hợp hai đường trùng phương hoặc song song:** góc 0°. **Trường hợp hai đường cắt nhau:** dùng trực tiếp góc nhỏ tại giao điểm.
 
 **Một chứng minh mẫu về phương:** Trong hình hộp chữ nhật, các cạnh đứng AA′,BB′,CC′,DD′ cùng vuông góc mặt đáy và song song nhau. Nếu AB nằm trong đáy, AB⊥AA′, từ CC′//AA′ suy AB⊥CC′ dù chúng không cắt. Phép suy luận này là tính chất *góc giữa hai đường thẳng* chứ không phải một tuyên bố sai rằng chúng giao nhau.
 
 **Điểm tự chẩn đoán:** Nếu không dựng được đường song song qua O hoặc đang lấy góc >90°, hãy quay lại định nghĩa trước khi giải. **Sai lầm ngược:** a⊥c, b⊥c **không suy a//b** trong không gian; có vô số hướng nằm trong mặt phẳng vuông góc một phương c.
 
-### 5. Hình dẫn giải D5
+### 1.5. Hình dẫn giải D5
 
 <figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVII-B22-01_R00.svg" alt="Hình B22: Hai đường chéo nhau vẫn có thể vuông góc theo phương; tịnh tiến một đường tới chung điểm O."/><figcaption>Hình B22: Hai đường chéo nhau vẫn có thể vuông góc theo phương; tịnh tiến một đường tới chung điểm O.</figcaption></figure>
 
 **Hướng dẫn đọc hình:** Hai đường chéo nhau vẫn có thể vuông góc theo phương; tịnh tiến một đường tới chung điểm O. Hình là sơ đồ giải thích phương pháp, **không được suy góc hay độ dài từ nét vẽ phối cảnh**. Điều kiện vuông góc phải có chứng minh.
 
-### 6. Tự thử trước bài luyện tập
+### 1.6. Tự thử trước bài luyện tập
 Hình hộp chữ nhật có cạnh AB theo phương ngang và CC′ theo phương thẳng đứng. Chúng không cắt nhau; vì CC′//AA′ và AB⊥AA′, suy ra (AB,CC′)=90°. Vì sao không cần AB gặp CC′?
 
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Đã tự thử? Mở hướng dẫn tự đối chiếu</summary><p>Đối chiếu lập luận của em với phần ví dụ được giải thích dưới đây. Đây là hoạt động luyện tập, không ghi Skill Mastery.</p></details>
 
-### 7. Ví dụ có hướng dẫn D2 (giải thích vì sao chọn phương pháp)
+### 1.7. Ví dụ có hướng dẫn D2 (giải thích vì sao chọn phương pháp)
 
 
 #### EX-G11-CHVII-B22-01 — Góc hai đường trong hình hộp

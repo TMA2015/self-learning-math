@@ -8,9 +8,9 @@
 
 ## Trước khi học: Vì sao cần kiến thức này?
 
-Bài 3 cho biết **từ góc x tìm sin x**. Bài 4 hỏi ngược lại: nếu `sin x=1/2`, phải tìm **tất cả các góc x** như thế nào? Trên một vòng `[0,2π)`, đường ngang có tung độ `1/2` ứng với **hai vị trí** trên đường tròn đơn vị: `π/6` và `5π/6`. Quay thêm bất kỳ `2kπ` (`k∈ℤ`) thì điểm cuối không đổi, nên nghiệm là `x=π/6+2kπ` hoặc `x=5π/6+2kπ`. Một giá trị góc đại diện không thể thay cho toàn bộ tập nghiệm.
+Bài 3 cho biết **từ góc x tìm sin x**. Bài 4 hỏi ngược lại: nếu \(\sin x=1/2\), phải tìm **tất cả các góc x** như thế nào? Trên một vòng \([0,2\pi )\), đường ngang có tung độ \(1/2\) ứng với **hai vị trí** trên đường tròn đơn vị: \(\pi /6\) và \(5\pi /6\). Quay thêm bất kỳ \(2k\pi \) (\(k\in \mathbb{Z}\)) thì điểm cuối không đổi, nên nghiệm là \(x=\pi /6+2k\pi \) hoặc \(x=5\pi /6+2k\pi \). Một giá trị góc đại diện không thể thay cho toàn bộ tập nghiệm.
 
-**Nối kiến thức cũ:** Bài 1 giải thích các góc cùng tia cuối, Bài 2 cung cấp công thức biến đổi, Bài 3 giải thích đồ thị và chu kỳ. Giải phương trình lượng giác nghĩa là tìm **mọi x thỏa hai vế đều xác định và bằng nhau**. Với sin/cos, nếu `|m|>1` thì không có tung độ/hoành độ nào như vậy; với tan/cot, không được chia cho 0. Khi đối số là `ax+b`, tìm **đủ họ nghiệm của đối số** rồi mới suy ra x; khi đề giới hạn một khoảng, phải lọc k nguyên theo cả hai đầu mút.
+**Nối kiến thức cũ:** Bài 1 giải thích các góc cùng tia cuối, Bài 2 cung cấp công thức biến đổi, Bài 3 giải thích đồ thị và chu kỳ. Giải phương trình lượng giác nghĩa là tìm **mọi x thỏa hai vế đều xác định và bằng nhau**. Với sin/cos, nếu \(|m|>1\) thì không có tung độ/hoành độ nào như vậy; với tan/cot, không được chia cho 0. Khi đối số là \(ax+b\), tìm **đủ họ nghiệm của đối số** rồi mới suy ra x; khi đề giới hạn một khoảng, phải lọc k nguyên theo cả hai đầu mút.
 
 ## Tự thử trước khi luyện tập
 
@@ -24,48 +24,48 @@ Trong [0,2π): x=0 hoặc x=π. Trên ℝ: x=kπ, k∈ℤ. Xem lại đường t
 
 ## 1. Kiến thức SGK
 
-### 1. Nguyên tắc
+### 1.1. Nguyên tắc
 
-phương trình là tìm toàn bộ `x` sao cho hai vế xác định và bằng nhau. Mỗi nhánh nghiệm phải có `k∈ℤ`; nghiệm tổng quát và nghiệm trên đoạn là hai yêu cầu khác nhau.
-### 2. `sin x=m`
+phương trình là tìm toàn bộ \(x\) sao cho hai vế xác định và bằng nhau. Mỗi nhánh nghiệm phải có \(k\in \mathbb{Z}\); nghiệm tổng quát và nghiệm trên đoạn là hai yêu cầu khác nhau.
+### 1.2. \(\sin x=m\)
 
-nếu `|m|>1` vô nghiệm; khi `|m|≤1`, đặt `α=arcsin m` (giá trị chính trong `[-π/2,π/2]`), hai họ `x=α+2kπ` hoặc `x=π-α+2kπ`, `k∈ℤ`. Hai họ có thể trùng khi `m=±1`; khi đó đếm nghiệm theo *tập hợp*, không cộng trùng.
-### 3. `cos x=m`
+nếu \(|m|>1\) vô nghiệm; khi \(|m|\le 1\), đặt \(α=\arcsin m\) (giá trị chính trong \([-\pi /2,\pi /2]\)), hai họ \(x=α+2k\pi \) hoặc \(x=\pi -α+2k\pi \), \(k\in \mathbb{Z}\). Hai họ có thể trùng khi \(m=±1\); khi đó đếm nghiệm theo *tập hợp*, không cộng trùng.
+### 1.3. \(\cos x=m\)
 
-nếu `|m|>1` vô nghiệm; nếu `|m|≤1`, đặt `α=arccos m∈[0,π]`, `x=±α+2kπ`. Với `m=±1`, hai họ có thể trùng.
-### 4. `tan x=m`
+nếu \(|m|>1\) vô nghiệm; nếu \(|m|\le 1\), đặt \(α=\arccos m\in [0,\pi ]\), \(x=±α+2k\pi \). Với \(m=±1\), hai họ có thể trùng.
+### 1.4. \(\tan x=m\)
 
-với mọi `m∈ℝ`, `x=arctan m+kπ`; chỉ nhận các x thuộc miền `cos x≠0`, tự động được thỏa khi theo họ nghiệm đúng.
-### 5. `cot x=m`
+với mọi \(m\in \mathbb{R}\), \(x=\arctan m+k\pi \); chỉ nhận các x thuộc miền \(\cos x\ne 0\), tự động được thỏa khi theo họ nghiệm đúng.
+### 1.5. \(\cot x=m\)
 
-với mọi `m∈ℝ`, chọn `α∈(0,π)` sao cho `cot α=m`, `x=α+kπ`. Có thể chuyển về `tan x=1/m` **chỉ khi `m≠0` và còn điều kiện TXĐ**; với `cot x=0`, nghiệm `x=π/2+kπ`, không chia cho 0.
-### 6. Đặt đối số
+với mọi \(m\in \mathbb{R}\), chọn \(α\in (0,\pi )\) sao cho \(\cot α=m\), \(x=α+k\pi \). Có thể chuyển về \(\tan x=1/m\) **chỉ khi \(m\ne 0\) và còn điều kiện TXĐ**; với \(\cot x=0\), nghiệm \(x=\pi /2+k\pi \), không chia cho 0.
+### 1.6. Đặt đối số
 
-với `sin(ax+b)=m`, giải cho `t=ax+b` rồi biến đổi *cả* hai họ nghiệm; cùng cách cho cos/tan/cot. Không quên chia `a` và ghi `k∈ℤ` (nếu `a≠0`); khi hệ số bằng 0 phải xét phương trình hằng riêng.
-### 7. Phương trình quy về cơ bản
+với \(\sin(ax+b)=m\), giải cho \(t=ax+b\) rồi biến đổi *cả* hai họ nghiệm; cùng cách cho cos/tan/cot. Không quên chia \(a\) và ghi \(k\in \mathbb{Z}\) (nếu \(a\ne 0\)); khi hệ số bằng 0 phải xét phương trình hằng riêng.
+### 1.7. Phương trình quy về cơ bản
 
-biến đổi bằng công thức lượng giác hoặc đặt `u=sin x`... trong đúng miền. Khi chia cho `sin x`, `cos x` có thể mất nghiệm; tốt hơn phân tích nhân tử và xét các trường hợp. Bình phương có thể sinh nghiệm ngoại lai: luôn thử lại phương trình ban đầu.
-### 8. Nghiệm trên đoạn
+biến đổi bằng công thức lượng giác hoặc đặt \(u=\sin x\)... trong đúng miền. Khi chia cho \(\sin x\), \(\cos x\) có thể mất nghiệm; tốt hơn phân tích nhân tử và xét các trường hợp. Bình phương có thể sinh nghiệm ngoại lai: luôn thử lại phương trình ban đầu.
+### 1.8. Nghiệm trên đoạn
 
-tìm các k nguyên phù hợp cận và xét dấu `[a,b]` so với `(a,b)`. Đối chiếu đồ thị để tự kiểm nghiệm nhưng không thay thế phép thế nghiệm vào đề.
+tìm các k nguyên phù hợp cận và xét dấu \([a,b]\) so với \((a,b)\). Đối chiếu đồ thị để tự kiểm nghiệm nhưng không thay thế phép thế nghiệm vào đề.
 
 ## 2. Ví dụ giải thích bản chất
 
-- **EX-G11-B04-01 (sin).** `sin x=√2/2` cho `x=π/4+2kπ` hoặc `3π/4+2kπ`, k∈ℤ. Không ghi duy nhất π/4 vì bỏ nghiệm góc phần tư II.
-- **EX-G11-B04-02 (tan/cot).** `tan x=-√3` cho `x=-π/3+kπ`. `cot x=0` cho `x=π/2+kπ`. Không biến cot=0 thành tan x vô hạn rồi kết luận vô nghiệm.
-- **EX-G11-B04-03 (đối số).** `sin(2x)=1/2` cho `x=π/12+kπ` hoặc `5π/12+kπ`. Mọi nghiệm phải có `k∈ℤ`; không dùng π/6,5π/6 trực tiếp làm nghiệm x.
-- **EX-G11-B04-04 (đoạn).** `cos x=-1/2` trên `[0,2π)` chỉ có `2π/3,4π/3`. Hai biên 0 và 2π không đều thuộc đoạn.
-- **EX-G11-B04-05 (ngoại lai).** `sin x=cos x` cho `tan x=1` **chỉ sau khi kiểm `cos x≠0`**; tại `cos x=0`, `sin x=±1` nên không là nghiệm. Do đó `x=π/4+kπ`, không mất nghiệm.
-- **EX-G11-B04-06 (ứng dụng).** `H(t)=10+2sin(πt/6)` (t giờ) bằng 11 khi `sin(πt/6)=1/2`. Trên `0≤t<12`, có `t=1` và `t=5` giờ, nhờ chọn đúng hai họ và lọc miền thời gian.
+- **EX-G11-B04-01 (sin).** \(\sin x=\sqrt{2}/2\) cho \(x=\pi /4+2k\pi \) hoặc \(3\pi /4+2k\pi \), k∈ℤ. Không ghi duy nhất π/4 vì bỏ nghiệm góc phần tư II.
+- **EX-G11-B04-02 (tan/cot).** \(\tan x=-\sqrt{3}\) cho \(x=-\pi /3+k\pi \). \(\cot x=0\) cho \(x=\pi /2+k\pi \). Không biến cot=0 thành tan x vô hạn rồi kết luận vô nghiệm.
+- **EX-G11-B04-03 (đối số).** \(\sin(2x)=1/2\) cho \(x=\pi /12+k\pi \) hoặc \(5\pi /12+k\pi \). Mọi nghiệm phải có \(k\in \mathbb{Z}\); không dùng π/6,5π/6 trực tiếp làm nghiệm x.
+- **EX-G11-B04-04 (đoạn).** \(\cos x=-1/2\) trên \([0,2\pi )\) chỉ có \(2\pi /3,4\pi /3\). Hai biên 0 và 2π không đều thuộc đoạn.
+- **EX-G11-B04-05 (ngoại lai).** \(\sin x=\cos x\) cho \(\tan x=1\) **chỉ sau khi kiểm \(\cos x\ne 0\)**; tại \(\cos x=0\), \(\sin x=±1\) nên không là nghiệm. Do đó \(x=\pi /4+k\pi \), không mất nghiệm.
+- **EX-G11-B04-06 (ứng dụng).** \(H(t)=10+2\sin(\pi t/6)\) (t giờ) bằng 11 khi \(\sin(\pi t/6)=1/2\). Trên \(0\le t<12\), có \(t=1\) và \(t=5\) giờ, nhờ chọn đúng hai họ và lọc miền thời gian.
 
 ## Hướng suy luận trong các ví dụ
 
 - **Ví dụ 01:** đường ngang cắt đường tròn đơn vị tại hai vị trí; viết đủ hai họ sin trước khi kết luận.
-- **Ví dụ 02:** tan/cot có chu kỳ `π`, nhưng `cot x=0` không được chuyển sang `tan x=1/0`; dùng định nghĩa và điều kiện để tìm nghiệm.
-- **Ví dụ 03:** giải phương trình cho **đối số** `2x` trước; chia cả hai họ cho 2, không lấy nghiệm của `2x` làm nghiệm x.
-- **Ví dụ 04:** dấu ngoặc `[0,2π)` cho phép 0 và loại `2π`; phải lọc nghiệm cụ thể, không chỉ viết tổng quát.
-- **Ví dụ 05:** trước khi chia cho `cos x`, xét riêng khả năng `cos x=0` để không làm mất nghiệm của phương trình ban đầu.
-- **Ví dụ 06:** từ `H(t)=11` quy về `sin(πt/6)=1/2`, tìm đủ hai họ rồi giữ những t trong `0≤t<12`; đơn vị của t là giờ.
+- **Ví dụ 02:** tan/cot có chu kỳ \(\pi \), nhưng \(\cot x=0\) không được chuyển sang \(\tan x=1/0\); dùng định nghĩa và điều kiện để tìm nghiệm.
+- **Ví dụ 03:** giải phương trình cho **đối số** \(2x\) trước; chia cả hai họ cho 2, không lấy nghiệm của \(2x\) làm nghiệm x.
+- **Ví dụ 04:** dấu ngoặc \([0,2\pi )\) cho phép 0 và loại \(2\pi \); phải lọc nghiệm cụ thể, không chỉ viết tổng quát.
+- **Ví dụ 05:** trước khi chia cho \(\cos x\), xét riêng khả năng \(\cos x=0\) để không làm mất nghiệm của phương trình ban đầu.
+- **Ví dụ 06:** từ \(H(t)=11\) quy về \(\sin(\pi t/6)=1/2\), tìm đủ hai họ rồi giữ những t trong \(0\le t<12\); đơn vị của t là giờ.
 
 ## 3. Kết nối đồ thị
 
@@ -73,7 +73,7 @@ Kết hợp đường tròn lượng giác và đồ thị sin/cos/tan/cot tại
 
 ### Hướng dẫn đọc hình, đồ thị
 
-- Với B04, tưởng tượng đường thẳng ngang `y=1/2` cắt **đồ thị sin** hai lần trong `[0,2π)`, các giao điểm lặp lại sau một chu kỳ. Đây chỉ là diễn giải bằng lời, **không** khẳng định đường ngang đã được vẽ trên SVG và **không** coi tiệm cận tan/cot là nghiệm. Reviewer phải kiểm nội dung hình gốc; AP3 hiển thị trên thiết bị thuộc release QA.
+- Với B04, tưởng tượng đường thẳng ngang \(y=1/2\) cắt **đồ thị sin** hai lần trong \([0,2\pi )\), các giao điểm lặp lại sau một chu kỳ. Đây chỉ là diễn giải bằng lời, **không** khẳng định đường ngang đã được vẽ trên SVG và **không** coi tiệm cận tan/cot là nghiệm. Reviewer phải kiểm nội dung hình gốc; AP3 hiển thị trên thiết bị thuộc release QA.
 
 ## 4. Tự khắc phục lỗi thường gặp
 

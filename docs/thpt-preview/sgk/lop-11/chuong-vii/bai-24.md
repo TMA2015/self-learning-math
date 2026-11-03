@@ -4,19 +4,19 @@
 
 ## 1. Kiến thức SGK và ví dụ có suy luận
 
-### 1. Vì sao cần học (WHY)
+### 1.1. Vì sao cần học (WHY)
 Khi đi trên đoạn dốc, chiều dài đường đi lớn hơn chiều dài nhìn từ trên mặt đất. Để tách đoạn dốc thành phần nằm ngang và độ cao, ta cần hình chiếu vuông góc.
 
-### 2. Khái niệm thực chất (WHAT)
+### 1.2. Khái niệm thực chất (WHAT)
 H là hình chiếu vuông góc của A lên (P) khi AH⊥(P). Hình chiếu của một đường không vuông góc (P) là đường qua hình chiếu của hai điểm phân biệt; đường ⊥(P) có hình chiếu chỉ là một điểm.
 
-### 3. Hình thành và lập luận (HOW)
+### 1.3. Hình thành và lập luận (HOW)
 Nếu đường a cắt (P) tại M và A∈a, H là hình chiếu A thì góc giữa a và (P) là góc nhọn giữa MA và MH: ∠AMH∈[0°,90°]; đường ⊥(P) tạo góc 90° theo quy ước. Trong tam giác vuông AMH: sinθ=AH/AM; tanθ=AH/MH (MH>0). Định lí ba đường vuông góc: nếu a nằm trong (P), b không vuông góc (P), b′ là hình chiếu của b thì a⊥b ⇔ a⊥b′, khi a và b′ cắt nhau đúng tại điểm đang xét / xét theo phương.
 
-### 4. Điều kiện, giới hạn, lỗi thường gặp (FORMAL)
+### 1.4. Điều kiện, giới hạn, lỗi thường gặp (FORMAL)
 Không lấy góc giữa đường xiên và đường vuông góc làm góc với mặt phẳng; đó là góc phụ. Không đánh đồng độ dài đoạn dốc với chiều cao vuông góc. Muốn dùng ba đường vuông góc phải xác định đúng hình chiếu.
 
-### 4B. Làm rõ các định lí, điều kiện và cấu trúc SGK (DEEPENING)
+#### 1.4.1. Làm rõ các định lí, điều kiện và cấu trúc SGK (DEEPENING)
 **Hình chiếu của điểm và hình chiếu của đường khác nhau:** Để chiếu điểm A, kẻ đường AH⊥(P) rồi lấy giao H. Để chiếu đường a, chiếu hai điểm A,B thuộc a. Nếu H_A và H_B phân biệt thì đường H_A H_B là hình chiếu của a; nếu a⊥(P) thì mọi hình chiếu điểm trên a trùng tại một chân, hình chiếu là **một điểm**, không phải đường thẳng.
 
 **Định lí ba đường vuông góc — dùng đúng vai:** Gọi b đường xiên, b′ hình chiếu của b lên (P), a một đường nằm trong (P). Ta có a⊥b khi và chỉ khi a⊥b′ (góc giữa các phương). Lý do: thành phần của b theo hướng vuông góc (P) đã tự vuông góc với mọi đường trong mặt; phần duy nhất có thể tạo góc với a là b′. Không nhầm a với đường cao hay b′ với b.
@@ -25,18 +25,18 @@ Không lấy góc giữa đường xiên và đường vuông góc làm góc v�
 
 **Ví dụ thực tiễn:** Độ dốc của đường hay cầu thang là tanθ = độ tăng cao / khoảng dịch chuyển ngang. Giá trị “độ dốc 1/12” không phải là góc 1/12 độ; muốn tìm góc phải dùng arctan(1/12) (≈4,76°).
 
-### 5. Hình dẫn giải D5
+### 1.5. Hình dẫn giải D5
 
 <figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVII-B24-01_R00.svg" alt="Hình B24: Tam giác AMH vuông tại H: AM là đoạn dốc, MH hình chiếu, AH độ cao."/><figcaption>Hình B24: Tam giác AMH vuông tại H: AM là đoạn dốc, MH hình chiếu, AH độ cao.</figcaption></figure>
 
 **Hướng dẫn đọc hình:** Tam giác AMH vuông tại H: AM là đoạn dốc, MH hình chiếu, AH độ cao. Hình là sơ đồ giải thích phương pháp, **không được suy góc hay độ dài từ nét vẽ phối cảnh**. Điều kiện vuông góc phải có chứng minh.
 
-### 6. Tự thử trước bài luyện tập
+### 1.6. Tự thử trước bài luyện tập
 Đường dốc dài 10m, hình chiếu trên nền dài 8m, chênh cao =√(10²−8²)=6m; sin góc dốc bằng 6/10, không phải 8/10.
 
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Đã tự thử? Mở hướng dẫn tự đối chiếu</summary><p>Đối chiếu lập luận của em với phần ví dụ được giải thích dưới đây. Đây là hoạt động luyện tập, không ghi Skill Mastery.</p></details>
 
-### 7. Ví dụ có hướng dẫn D2 (giải thích vì sao chọn phương pháp)
+### 1.7. Ví dụ có hướng dẫn D2 (giải thích vì sao chọn phương pháp)
 
 
 #### EX-G11-CHVII-B24-01 — Hình chiếu đoạn dốc

@@ -8,9 +8,9 @@
 
 ## Trước khi học: Vì sao cần kiến thức này?
 
-Một lượng ban đầu 100 được nhân 1,1 ở mỗi kỳ: 100; 110; 121; … . Nếu mỗi kỳ cộng 10 thì dãy thành 100;110;120; khác 121. Khi **tỉ số tăng trưởng** ổn định, ta cần cấp số nhân với công bội q, nghĩa là u_{n+1}=q u_n. Lý do u_n=u_1 q^{n−1}: từ số hạng đầu đến thứ n ta đã nhân q đúng n−1 lần.
+Một lượng ban đầu 100 được nhân 1,1 ở mỗi kỳ: 100; 110; 121; … . Nếu mỗi kỳ cộng 10 thì dãy thành 100;110;120; khác 121. Khi **tỉ số tăng trưởng** ổn định, ta cần cấp số nhân với công bội q, nghĩa là u_{n+1}=q u_n. Lý do u_n=u_1 q<sup>n−1</sup>: từ số hạng đầu đến thứ n ta đã nhân q đúng n−1 lần.
 
-Không chia u_{n+1}/u_n khi u_n=0; dùng định nghĩa nhân để kể cả q=0. Khi q âm, dấu có thể luân phiên; không đánh đồng giá trị tuyệt đối lớn dần với dãy đồng biến. Tổng hữu hạn xuất hiện khi muốn cộng mọi kỳ: S_n=u_1+...+u_n. Lấy qS_n rồi trừ hai tổng giúp suy ra (1−q)S_n=u_1(1−q^n); chỉ chia cho 1−q khi q≠1. Trường hợp q=1 phải dùng S_n=nu_1. Lãi kép cần thống nhất “vốn trước kỳ” và chỉ số kỳ.
+Không chia u_{n+1}/u_n khi u_n=0; dùng định nghĩa nhân để kể cả q=0. Khi q âm, dấu có thể luân phiên; không đánh đồng giá trị tuyệt đối lớn dần với dãy đồng biến. Tổng hữu hạn xuất hiện khi muốn cộng mọi kỳ: S_n=u_1+...+u_n. Lấy qS_n rồi trừ hai tổng giúp suy ra (1−q)S_n=u_1(1−q<sup>n</sup>); chỉ chia cho 1−q khi q≠1. Trường hợp q=1 phải dùng S_n=nu_1. Lãi kép cần thống nhất “vốn trước kỳ” và chỉ số kỳ.
 
 ## Tự thử trước khi luyện tập
 
@@ -28,11 +28,11 @@ Từ vốn 100, nhân 1,1 mỗi kỳ. Sau 2 kỳ là 120 hay 121?
 
 **Định nghĩa:** (u_n) là cấp số nhân (CSN) nếu tồn tại công bội q cố định để u_{n+1}=q u_n. Công bội có thể âm hoặc bằng 0; khi q<0 và u1≠0 dấu các số hạng luân phiên, không mặc định dãy tăng. Nếu u_n=0, không dùng phép chia u_{n+1}/u_n để xác định q.
 
-**Số hạng tổng quát:** u_n=u_1 q^{n−1}, n≥1. Trường hợp q=0 được hiểu u_1 riêng và u_n=0 với n≥2; tránh gán 0^0 nếu cách biểu diễn không quy ước rõ.
+**Số hạng tổng quát:** u_n=u_1 q<sup>n−1</sup>, n≥1. Trường hợp q=0 được hiểu u_1 riêng và u_n=0 với n≥2; tránh gán 0<sup>0</sup> nếu cách biểu diễn không quy ước rõ.
 
 **Tính chất ba số hạng:** u_n²=u_{n−1}u_{n+1} với n≥2. Riêng chiều suy từ phương trình ba số hạng sang một CSN toàn dãy cần xét dấu và giả thiết, không suy bừa chỉ từ một bộ ba.
 
-**Tổng:** Nếu q≠1, S_n=u_1(1−q^n)/(1−q) = u_1(q^n−1)/(q−1). Nếu q=1, S_n=n u_1. Nếu q=0 và n≥1 thì S_n=u_1; cách này tương thích với công thức q≠1.
+**Tổng:** Nếu q≠1, S_n=u_1(1−q<sup>n</sup>)/(1−q) = u_1(q<sup>n</sup>−1)/(q−1). Nếu q=1, S_n=n u_1. Nếu q=0 và n≥1 thì S_n=u_1; cách này tương thích với công thức q≠1.
 
 **Ứng dụng:** Khi tăng r% mỗi kỳ, q=1+r/100; khi giảm r% mỗi kỳ, q=1−r/100 (0≤r≤100 theo bài toán thông thường). Phân biệt vốn đầu kỳ V_0 với u_1, và số kỳ n. Lãi kép không suy ra từ dãy cộng số tiền lãi cố định.
 
@@ -40,7 +40,7 @@ Từ vốn 100, nhân 1,1 mỗi kỳ. Sau 2 kỳ là 120 hay 121?
 
 ### Ví dụ 01 — Công bội âm
 
-Dãy 5,−10,20,−40,... có q=−2, u_n=5(−2)^{n−1}; dấu luân phiên và |u_n| tăng, nhưng dãy không đơn điệu theo nghĩa thông thường.
+Dãy 5,−10,20,−40,... có q=−2, u_n=5(−2)<sup>n−1</sup>; dấu luân phiên và |u_n| tăng, nhưng dãy không đơn điệu theo nghĩa thông thường.
 
 ### Ví dụ 02 — Số hạng và tổng
 
@@ -48,7 +48,7 @@ Cho u_1=3,q=2. Khi đó u_7=3·2⁶=192, S_7=3(2⁷−1)/(2−1)=381.
 
 ### Ví dụ 03 — Mô hình lãi kép
 
-Vốn V_0=100 triệu đồng, lãi kép 2% mỗi kỳ và không nạp/rút: sau 5 kỳ V_5=100·(1,02)^5 triệu đồng. Nếu đánh số theo u1 là vốn ban đầu thì u_6=V_5; không nhầm chỉ số kỳ.
+Vốn V_0=100 triệu đồng, lãi kép 2% mỗi kỳ và không nạp/rút: sau 5 kỳ V_5=100·(1,02)<sup>5</sup> triệu đồng. Nếu đánh số theo u1 là vốn ban đầu thì u_6=V_5; không nhầm chỉ số kỳ.
 
 ### Vì sao chọn cách giải?
 
@@ -68,8 +68,8 @@ Vốn V_0=100 triệu đồng, lãi kép 2% mỗi kỳ và không nạp/rút: sa
 
 <details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-B07-01"><summary>Công bội: chỉ số và dấu số hạng</summary>
 
-1. Nhận lỗi: dùng q^n thay q^(n−1).
-2. Viết u_n=u_1 q^(n−1) với n≥1.
+1. Nhận lỗi: dùng q<sup>n</sup> thay q<sup>n−1</sup>.
+2. Viết u_n=u_1 q<sup>n−1</sup> với n≥1.
 3. Nếu q âm, xác định dấu theo chẵn/lẻ của n−1.
 4. Thử u1=4,q=2 cho u6=128.
 5. Làm C02/P01, không suy công bội bằng cách chia cho 0.
@@ -79,7 +79,7 @@ Vốn V_0=100 triệu đồng, lãi kép 2% mỗi kỳ và không nạp/rút: sa
 
 <details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-B07-02"><summary>Tổng cấp số nhân: trường hợp q=1</summary>
 
-1. Nhận lỗi: áp S_n=u1(1−q^n)/(1−q) khi q=1.
+1. Nhận lỗi: áp S_n=u1(1−q<sup>n</sup>)/(1−q) khi q=1.
 2. Phân nhánh: q≠1 dùng công thức hữu hạn; q=1 dùng n·u1.
 3. Chú ý dấu nếu q<0 và số mũ n.
 4. Thử dãy 8,8,... có S9=72.

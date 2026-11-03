@@ -8,7 +8,7 @@
 
 ## Trước khi học: Vì sao cần kiến thức này?
 
-**Tình huống:** Ở Bài 1, điểm M quay quanh đường tròn đơn vị theo một góc x (radian); tọa độ của M là `(cos x, sin x)`. Bài 2 đã cho công cụ biến đổi các giá trị lượng giác khi cộng hoặc trừ góc. Khi M tiếp tục quay, làm thế nào mô tả sự thay đổi của **tung độ và hoành độ** theo x thay vì chỉ tính một vị trí? Ta xem x như đầu vào biến thiên, nhận `sin x` và `cos x` làm đầu ra — đó chính là các hàm số lượng giác.
+**Tình huống:** Ở Bài 1, điểm M quay quanh đường tròn đơn vị theo một góc x (radian); tọa độ của M là \((\cos x, \sin x)\). Bài 2 đã cho công cụ biến đổi các giá trị lượng giác khi cộng hoặc trừ góc. Khi M tiếp tục quay, làm thế nào mô tả sự thay đổi của **tung độ và hoành độ** theo x thay vì chỉ tính một vị trí? Ta xem x như đầu vào biến thiên, nhận \(\sin x\) và \(\cos x\) làm đầu ra — đó chính là các hàm số lượng giác.
 
 **Hãy quan sát một vòng quay** trước khi học quy tắc:
 
@@ -17,7 +17,7 @@
 | Tung độ M = sin x | 0 | 1 | 0 | −1 | 0 |
 | Hoành độ M = cos x | 1 | 0 | −1 | 0 | 1 |
 
-Sau đúng một vòng `2π`, M trở lại vị trí cũ nên cả sin và cos lặp giá trị: vì thế mới cần khái niệm **chu kỳ** (chu kỳ dương nhỏ nhất của sin/cos là `2π`). Góc x có thể âm hoặc lớn hơn một vòng; sin/cos vẫn nhận được mọi x thực, còn tọa độ của điểm trên đường tròn đơn vị luôn thuộc `[-1,1]`. `tan x = sin x/cos x` đòi `cos x ≠ 0`, `cot x = cos x/sin x` đòi `sin x ≠ 0`: phải hiểu vì sao có các chỗ không xác định trước khi học thuộc tiệm cận. Chu kỳ là sự **lặp lại giá trị hàm**, không phải biên độ; trong bài toán thực tế phải kiểm tra đơn vị của biến và miền áp dụng.
+Sau đúng một vòng \(2\pi \), M trở lại vị trí cũ nên cả sin và cos lặp giá trị: vì thế mới cần khái niệm **chu kỳ** (chu kỳ dương nhỏ nhất của sin/cos là \(2\pi \)). Góc x có thể âm hoặc lớn hơn một vòng; sin/cos vẫn nhận được mọi x thực, còn tọa độ của điểm trên đường tròn đơn vị luôn thuộc \([-1,1]\). \(\tan x = \sin x/\cos x\) đòi \(\cos x \ne  0\), \(\cot x = \cos x/\sin x\) đòi \(\sin x \ne  0\): phải hiểu vì sao có các chỗ không xác định trước khi học thuộc tiệm cận. Chu kỳ là sự **lặp lại giá trị hàm**, không phải biên độ; trong bài toán thực tế phải kiểm tra đơn vị của biến và miền áp dụng.
 
 ## Tự thử trước khi luyện tập
 
@@ -31,43 +31,43 @@ Cùng điểm cuối ⇒ cùng tung độ ⇒ sin(x+2π)=sin x. Nếu chưa gi�
 
 ## 1. Kiến thức SGK
 
-### 1. Hàm sin và cos
+### 1.1. Hàm sin và cos
 
-`y=sin x`, `y=cos x` xác định với mọi `x∈ℝ`, giá trị trong `[-1,1]`. `sin(-x)=-sin x` (lẻ), `cos(-x)=cos x` (chẵn). Chu kỳ dương nhỏ nhất `2π`.
-### 2. Đồ thị sin
+\(y=\sin x\), \(y=\cos x\) xác định với mọi \(x\in \mathbb{R}\), giá trị trong \([-1,1]\). \(\sin(-x)=-\sin x\) (lẻ), \(\cos(-x)=\cos x\) (chẵn). Chu kỳ dương nhỏ nhất \(2\pi \).
+### 1.2. Đồ thị sin
 
-qua `(0,0)`, `(π/2,1)`, `(π,0)`, `(3π/2,-1)`, `(2π,0)`; tăng trên `[-π/2+2kπ,π/2+2kπ]`, giảm trên `[π/2+2kπ,3π/2+2kπ]`. Không nói sin tăng trên toàn ℝ.
-### 3. Đồ thị cos
+qua \((0,0)\), \((\pi /2,1)\), \((\pi ,0)\), \((3\pi /2,-1)\), \((2\pi ,0)\); tăng trên \([-\pi /2+2k\pi ,\pi /2+2k\pi ]\), giảm trên \([\pi /2+2k\pi ,3\pi /2+2k\pi ]\). Không nói sin tăng trên toàn ℝ.
+### 1.3. Đồ thị cos
 
-qua `(0,1)`, `(π/2,0)`, `(π,-1)`, `(3π/2,0)`, `(2π,1)`; giảm trên `[2kπ,(2k+1)π]`, tăng trên `[(2k-1)π,2kπ]` với `k∈ℤ`.
-### 4. Hàm tan
+qua \((0,1)\), \((\pi /2,0)\), \((\pi ,-1)\), \((3\pi /2,0)\), \((2\pi ,1)\); giảm trên \([2k\pi ,(2k+1)\pi ]\), tăng trên \([(2k-1)\pi ,2k\pi ]\) với \(k\in \mathbb{Z}\).
+### 1.4. Hàm tan
 
-`tan x=sin x/cos x`; TXĐ `ℝ\{π/2+kπ:k∈ℤ}`, TGT ℝ, hàm lẻ, chu kỳ cơ bản π, đồng biến trên mỗi khoảng `(-π/2+kπ,π/2+kπ)`. Tiệm cận đứng tại `x=π/2+kπ`. Không nối đồ thị qua tiệm cận.
-### 5. Hàm cot
+\(\tan x=\sin x/\cos x\); TXĐ \(\mathbb{R}\{\pi /2+k\pi :k\in \mathbb{Z\}}\), TGT ℝ, hàm lẻ, chu kỳ cơ bản π, đồng biến trên mỗi khoảng \((-\pi /2+k\pi ,\pi /2+k\pi )\). Tiệm cận đứng tại \(x=\pi /2+k\pi \). Không nối đồ thị qua tiệm cận.
+### 1.5. Hàm cot
 
-`cot x=cos x/sin x`; TXĐ `ℝ\{kπ:k∈ℤ}`, TGT ℝ, hàm lẻ, chu kỳ π, nghịch biến trên mỗi `(kπ,(k+1)π)`, tiệm cận đứng tại `x=kπ`. Không tính `cot 0`.
-### 6. Hàm biến đổi và mô hình
+\(\cot x=\cos x/\sin x\); TXĐ \(\mathbb{R}\{k\pi :k\in \mathbb{Z\}}\), TGT ℝ, hàm lẻ, chu kỳ π, nghịch biến trên mỗi \((k\pi ,(k+1)\pi )\), tiệm cận đứng tại \(x=k\pi \). Không tính \(\cot 0\).
+### 1.6. Hàm biến đổi và mô hình
 
-`f(x)=A sin(ωx+φ)+c` (`Aω≠0`) có biên độ `|A|`, TGT `[c-|A|,c+|A|]`, chu kỳ `2π/|ω|` (nếu miền thời gian đủ để thể hiện chu kỳ); với tan/cot `tan(ωx+φ)` có chu kỳ `π/|ω|`. `y=A sin(ωx+φ)+c` khi `A=0` là hằng, không được tuyên bố có chu kỳ *cơ bản*.
-### 7. Sử dụng đồ thị
+\(f(x)=A \sin(ωx+φ)+c\) (\(Aω\ne 0\)) có biên độ \(|A|\), TGT \([c-|A|,c+|A|]\), chu kỳ \(2\pi /|ω|\) (nếu miền thời gian đủ để thể hiện chu kỳ); với tan/cot \(\tan(ωx+φ)\) có chu kỳ \(\pi /|ω|\). \(y=A \sin(ωx+φ)+c\) khi \(A=0\) là hằng, không được tuyên bố có chu kỳ *cơ bản*.
+### 1.7. Sử dụng đồ thị
 
 Hoành độ là radian; xét miền xác định trước, đọc điểm, cực trị và tiệm cận từ hình. Cần phân biệt tập giá trị và tập xác định, chu kỳ biểu thức và thời gian thực tế; trả lời số chu kỳ trong một phút phải đổi đơn vị nhất quán.
 
 ## 2. Ví dụ giải thích bản chất
 
-- **EX-G11-B03-01 (TXĐ/TGT).** `f(x)=tan(2x)` yêu cầu `cos(2x)≠0`, nên `x≠π/4+kπ/2` với `k∈ℤ`; giá trị vẫn là ℝ. Không viết x≠π/2+kπ vì quên hệ số 2.
-- **EX-G11-B03-02 (chẵn/lẻ).** `f(x)=sin x+cos x` không chẵn, không lẻ vì `f(-x)=-sin x+cos x` khác cả `f(x)` lẫn `-f(x)`; trái lại `sin x` lẻ và `cos x` chẵn.
-- **EX-G11-B03-03 (chu kỳ).** `y=2 sin(3x-π/4)` có chu kỳ cơ bản `T=2π/3`, TGT `[-2,2]`; `3x` khiến chu kỳ *ngắn hơn*, không dài hơn 3 lần.
-- **EX-G11-B03-04 (đọc đồ thị).** `y=cos x` trên `[0,2π]` cắt Ox tại `π/2` và `3π/2`; vì vậy không kết luận đồ thị luôn dương.
-- **EX-G11-B03-05 (ứng dụng).** Nhiệt độ `T(t)=24+3cos(πt/6)` (t tính giờ) có đường trung bình 24°C, biên độ 3°C, chu kỳ 12 giờ; T lớn nhất 27°C tại `t=12k`, nhỏ nhất 21°C tại `t=6+12k`.
+- **EX-G11-B03-01 (TXĐ/TGT).** \(f(x)=\tan(2x)\) yêu cầu \(\cos(2x)\ne 0\), nên \(x\ne \pi /4+k\pi /2\) với \(k\in \mathbb{Z}\); giá trị vẫn là ℝ. Không viết x≠π/2+kπ vì quên hệ số 2.
+- **EX-G11-B03-02 (chẵn/lẻ).** \(f(x)=\sin x+\cos x\) không chẵn, không lẻ vì \(f(-x)=-\sin x+\cos x\) khác cả \(f(x)\) lẫn \(-f(x)\); trái lại \(\sin x\) lẻ và \(\cos x\) chẵn.
+- **EX-G11-B03-03 (chu kỳ).** \(y=2 \sin(3x-\pi /4)\) có chu kỳ cơ bản \(T=2\pi /3\), TGT \([-2,2]\); \(3x\) khiến chu kỳ *ngắn hơn*, không dài hơn 3 lần.
+- **EX-G11-B03-04 (đọc đồ thị).** \(y=\cos x\) trên \([0,2\pi ]\) cắt Ox tại \(\pi /2\) và \(3\pi /2\); vì vậy không kết luận đồ thị luôn dương.
+- **EX-G11-B03-05 (ứng dụng).** Nhiệt độ \(T(t)=24+3\cos(\pi t/6)\) (t tính giờ) có đường trung bình 24°C, biên độ 3°C, chu kỳ 12 giờ; T lớn nhất 27°C tại \(t=12k\), nhỏ nhất 21°C tại \(t=6+12k\).
 
 ## Hướng suy luận trong các ví dụ
 
-- **Ví dụ 01:** **Vì sao phải kiểm miền xác định trước?** `tan(2x)` là thương có mẫu `cos(2x)`; giải `cos(2x)=0` để loại x, rồi mới kết luận về tập giá trị.
-- **Ví dụ 02:** **Vì sao thay −x?** Trên miền đối xứng, so `f(-x)` với cả `f(x)` và `-f(x)`; tổng một phần chẵn và một phần lẻ không tự động là chẵn hay lẻ.
-- **Ví dụ 03:** **Vì sao chu kỳ bị chia 3?** Đối số `3x−π/4` cần tăng `2π`, do đó x chỉ tăng `2π/3`; biên độ 2 không làm đổi chu kỳ.
-- **Ví dụ 04:** **Vì sao đọc mốc đồ thị thay vì đoán?** `cos x=0` tại hai mốc `π/2`, `3π/2` trong một vòng; chú ý miền được yêu cầu trước khi liệt kê điểm cắt.
-- **Ví dụ 05:** **Vì sao đọc đường giữa trước?** Với `24+3cos(πt/6)`, 24 là mức trung bình, 3 là độ lệch cực đại, chu kỳ theo giờ là 12; mọi kết luận thời gian chỉ xét trên miền mô hình đang sử dụng.
+- **Ví dụ 01:** **Vì sao phải kiểm miền xác định trước?** \(\tan(2x)\) là thương có mẫu \(\cos(2x)\); giải \(\cos(2x)=0\) để loại x, rồi mới kết luận về tập giá trị.
+- **Ví dụ 02:** **Vì sao thay −x?** Trên miền đối xứng, so \(f(-x)\) với cả \(f(x)\) và \(-f(x)\); tổng một phần chẵn và một phần lẻ không tự động là chẵn hay lẻ.
+- **Ví dụ 03:** **Vì sao chu kỳ bị chia 3?** Đối số \(3x-\pi /4\) cần tăng \(2\pi \), do đó x chỉ tăng \(2\pi /3\); biên độ 2 không làm đổi chu kỳ.
+- **Ví dụ 04:** **Vì sao đọc mốc đồ thị thay vì đoán?** \(\cos x=0\) tại hai mốc \(\pi /2\), \(3\pi /2\) trong một vòng; chú ý miền được yêu cầu trước khi liệt kê điểm cắt.
+- **Ví dụ 05:** **Vì sao đọc đường giữa trước?** Với \(24+3\cos(\pi t/6)\), 24 là mức trung bình, 3 là độ lệch cực đại, chu kỳ theo giờ là 12; mọi kết luận thời gian chỉ xét trên miền mô hình đang sử dụng.
 
 ## 3. Hình minh họa
 
@@ -81,10 +81,10 @@ Hoành độ là radian; xét miền xác định trước, đọc điểm, cự
 
 ### Hướng dẫn đọc hình, đồ thị
 
-- **Hình 1** (sin): đọc dãy `(0,0)`, `(π/2,1)`, `(π,0)`, `(3π/2,−1)`, `(2π,0)`; đồ thị đi lên rồi xuống, không phải sin luôn tăng.
-- **Hình 2** (cos): bắt đầu ở 1 tại x=0, đạt −1 tại x=π, trở lại 1 tại `2π`; cùng chu kỳ với sin nhưng điểm xuất phát trên trục tung khác.
-- **Hình 3** (tan): nét đứt tại `x=±π/2` là các vị trí `cos x=0` không thuộc miền xác định; các nhánh không thể nối qua đường nét đứt.
-- **Hình 4** (cot): đường nét đứt tại các bội nguyên của π là nơi `sin x=0`; trên từng khoảng xác định, đồ thị giảm, không đánh dấu `cot 0=0`.
+- **Hình 1** (sin): đọc dãy \((0,0)\), \((\pi /2,1)\), \((\pi ,0)\), \((3\pi /2,-1)\), \((2\pi ,0)\); đồ thị đi lên rồi xuống, không phải sin luôn tăng.
+- **Hình 2** (cos): bắt đầu ở 1 tại x=0, đạt −1 tại x=π, trở lại 1 tại \(2\pi \); cùng chu kỳ với sin nhưng điểm xuất phát trên trục tung khác.
+- **Hình 3** (tan): nét đứt tại \(x=±\pi /2\) là các vị trí \(\cos x=0\) không thuộc miền xác định; các nhánh không thể nối qua đường nét đứt.
+- **Hình 4** (cot): đường nét đứt tại các bội nguyên của π là nơi \(\sin x=0\); trên từng khoảng xác định, đồ thị giảm, không đánh dấu \(\cot 0=0\).
 
 ## 4. Tự khắc phục lỗi thường gặp
 

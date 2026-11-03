@@ -28,10 +28,10 @@ Với các nhóm [0;10), [10;20), [20;30), số 10 thuộc nhóm nào? Em hãy g
 
 <span class="thpt-ap-knowledge-pilot" hidden aria-hidden="true"></span>
 
-**1. Định nghĩa và cách đọc.** Mẫu số liệu ghép nhóm là bảng phân phối tần số theo các nhóm; mỗi nhóm thường là khoảng nửa kín `[a_i;a_{i+1})` (đôi khi nhóm cuối đóng đầu mút phải nếu bài toán quy định rõ). Tần số `m_i` là số quan sát rơi vào nhóm; cỡ mẫu `n=Σm_i`. Không suy ra các giá trị đơn lẻ hoặc số trung bình chính xác chỉ từ bảng nhóm.
-**2. Ghép số liệu thô.** Xác định phạm vi, chia thành các nhóm thích hợp, quy định cách xử lý điểm ở biên, đếm đúng từng số và đối chiếu tổng tần số bằng số quan sát. Khoảng `[10;20)` nhận 10 nhưng không nhận 20. Không đếm hai lần điểm thuộc biên chung.
-**3. Độ rộng.** Nhóm `[a;b)` có độ rộng `h=b-a>0`; các khoảng có thể có độ rộng khác nhau trong dữ liệu thực tế, nhưng khi sử dụng công thức mốt nội suy của Bài 9 phải xét điều kiện độ rộng **bằng nhau**. Không buộc mọi bảng ghép nhóm đều có độ rộng bằng nhau.
-**4. Tỉ lệ và ý nghĩa.** Tỉ lệ nhóm `m_i/n`; nhóm có tần số nhiều nhất chỉ là nhóm tập trung nhiều quan sát nhất. Số ở giữa nhóm được dùng làm đại diện trong một số phép ước lượng, không phải khẳng định mọi cá thể có cùng số đo.
+**1. Định nghĩa và cách đọc.** Mẫu số liệu ghép nhóm là bảng phân phối tần số theo các nhóm; mỗi nhóm thường là khoảng nửa kín \([a_i;a_{i+1})\) (đôi khi nhóm cuối đóng đầu mút phải nếu bài toán quy định rõ). Tần số \(m_i\) là số quan sát rơi vào nhóm; cỡ mẫu \(n=\sum m_i\). Không suy ra các giá trị đơn lẻ hoặc số trung bình chính xác chỉ từ bảng nhóm.
+**2. Ghép số liệu thô.** Xác định phạm vi, chia thành các nhóm thích hợp, quy định cách xử lý điểm ở biên, đếm đúng từng số và đối chiếu tổng tần số bằng số quan sát. Khoảng \([10;20)\) nhận 10 nhưng không nhận 20. Không đếm hai lần điểm thuộc biên chung.
+**3. Độ rộng.** Nhóm \([a;b)\) có độ rộng \(h=b-a>0\); các khoảng có thể có độ rộng khác nhau trong dữ liệu thực tế, nhưng khi sử dụng công thức mốt nội suy của Bài 9 phải xét điều kiện độ rộng **bằng nhau**. Không buộc mọi bảng ghép nhóm đều có độ rộng bằng nhau.
+**4. Tỉ lệ và ý nghĩa.** Tỉ lệ nhóm \(m_i/n\); nhóm có tần số nhiều nhất chỉ là nhóm tập trung nhiều quan sát nhất. Số ở giữa nhóm được dùng làm đại diện trong một số phép ước lượng, không phải khẳng định mọi cá thể có cùng số đo.
 
 ## 2. Ví dụ
 
