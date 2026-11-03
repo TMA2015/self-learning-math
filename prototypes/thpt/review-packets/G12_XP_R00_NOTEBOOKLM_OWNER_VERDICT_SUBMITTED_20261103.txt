@@ -1,0 +1,161 @@
+### BÁO CÁO PHẢN BIỆN HỌC THUẬT VÀ SƯ PHẠM ĐỘC LẬP
+**THẨM ĐỊNH TOÀN BỘ HAI HOẠT ĐỘNG THỰC HÀNH TRẢI NGHIỆM SGK TOÁN 12 KNTT TẬP HAI (TRANG IN 81–89)**
+*(Bản thẩm định độc lập theo chuẩn mực `SLM-THPT-QUALITY-ONE` v1.1.0 và 5 Permanent Sources THPT v2.1)*
+
+* **PACKET_ID:** `G12-SGK-EXP01-EXP02-R00-REVIEW_CANDIDATE`
+* **STANDARD_ID:** `SLM-THPT-QUALITY-ONE` (v1.1.0, Cổng Q01–Q18)
+* **BÁO CÁO TOÀN VĂN TRÊN STUDIO PANEL:** **`Bao_Cao_Kiem_Toan_Toan_12_Hoat_Dong_Trai_Nghiem_R00.md`** (Đã lưu trữ và đồng bộ thành công vào Bảng Studio bên phải màn hình).
+
+---
+
+### I. KẾT LUẬN THẨM ĐỊNH TỔNG QUAN (EXECUTIVE VERDICTS)
+
+1. **`ACADEMIC_VERDICT = PASS`**  
+   Học liệu đạt chuẩn mực tuyệt đối về độ chính xác toán học giải tích và hình học không gian 3D:
+   * **Thực hành 1 (CAS GeoGebra & Phương pháp Hình thang - tr. 81–84):**
+     * Lệnh CAS `IntegralSymbolic(f)` được kiểm tra đảo chuẩn xác bằng đạo hàm \\(F'(x) = f(x)\\).
+     * Công thức hình thang \\(T_n = h \left[ \frac{f(a)+f(b)}{2} + \sum_{i=1}^{n-1} f(x_i) \right]\\) hoàn toàn chính xác.
+     * **Cận trên sai số hình thang:** Bất đẳng thức \\(|I - T_n| \le \frac{M(b-a)^3}{12n^2}\\) (với \\(|f''(x)| \le M\\) trên \\([a,b]\\)) được kiểm chứng chuẩn xác từng bước: Đối với \\(f(x)=x^2\\) trên \\(\\) (\\(M=2\\)), để bảo đảm sai số \\(< 0,001\\), giải bất đẳng thức \\(\frac{2 \cdot 1^3}{12 n^2} < 0,001 \iff n^2 > 166,67 \implies n \ge 13\\). Với \\(n=12\\), cận sai số \\(\approx 0,001157 > 0,001\\) (chưa đạt); với \\(n=13\\), cận sai số \\(\approx 0,0009862 < 0,001\\) (đạt chuẩn). Do đó \\(n=13\\) là **số nguyên nhỏ nhất** thỏa mãn.
+   * **Thực hành 2 (Đồ họa 3D GeoGebra, Ảo giác Penrose & Mặt Möbius - tr. 85–89):**
+     * **Tam giác Penrose:** Phân tích đúng bản chất ảo giác quang học sinh ra từ phép chiếu song song 2D lên ba thanh 3D rời nhau trong không gian; thao tác xoay góc nhìn 3D lộ rõ khoảng hở.
+     * **Mặt Möbius:** Tham số hóa 3D chuẩn xác trong \\(Oxyz\\):
+       \\[M(u,v) = \left( \left(1 + \frac{v}{2}\cos\frac{u}{2}\right)\cos u, \, \left(1 + \frac{v}{2}\cos\frac{u}{2}\right)\sin u, \, \frac{v}{2}\sin\frac{u}{2} \right), \quad u \in [0, 2\pi], v \in [-1, 1]\\]
+       Đẳng thức dán mép xoắn nửa vòng \\(M(0, v) = M(2\pi, -v)\\) được chứng minh chính xác 100% (với \\(v=1 \implies M(0,1) = (1.5,0,0) = M(2\pi,-1)\\) và với \\(v=-1 \implies M(0,-1) = (0.5,0,0) = M(2\pi,1)\\)).
+   * **Lộ trình học thay thế không dùng phần mềm:** Thiết kế đầy đủ quy trình tính tay, lập bảng nút và kiểm tra tọa độ thủ công cho học sinh không có thiết bị/GeoGebra mà không làm giảm chiều sâu học thuật hay thay đổi yêu cầu năng lực.
+
+2. **`PEDAGOGICAL_SELF_LEARNING_READY = PASS`**  
+   Học liệu đáp ứng trọn vẹn 6 tiêu chí sư phạm tự học (`PED1–PED6`):
+   * Động cơ xấp xỉ dữ liệu thực tế và mô hình hóa hình học (`PED1 WHY`).
+   * Tự kiểm tra tiền đề tích phân/tọa độ 3D (`PED2 WHAT`).
+   * Bản chất sai số hình thang và phép chiếu 2D trước công thức (`PED3 HOW`).
+   * Hướng dẫn đọc 5 hình minh họa PNG/SVG D5 (`PED4 FORMAL`).
+   * Quy trình công cụ & lý do lựa chọn phương pháp (`PED5 METHOD`).
+   * 4 hoạt động Tự thử định hướng trước Core (`PED6 SELF-TRY`).
+   * **10 Rubric tự luận D4 (Thang điểm /5):** Phân rã 5 điểm công bằng, minh bạch, có tiêu chí rõ ràng cho từng bước.
+
+3. **BẢO TỒN RANH GIỚI HỆ THỐNG:**  
+   * **`EXPOSURE_SYSTEM_VERDICT = SYSTEM_HOLD` | `RELEASE_AUTHORIZATION = NO` | `MASTERY_ACTIVATION = NO` | `CONTENT_READY = NO`**.
+   * Phê duyệt này là điều kiện cần về học thuật/sư phạm, **không cấp phép phát hành**, không tự động kích hoạt chấm điểm Final Submit hay ghi nhận điểm Skill Mastery cho học sinh.
+
+---
+
+### II. SOURCE_RECEIPT & PHÂN BỔ TRANG IN S1
+
+* **SGK Toán 12 KNTT Tập Hai (Nguồn S1 Core Authoritative):**
+  * Tệp PDF gốc 99 trang, SHA256: `3c642f2e80d86d699ea62bbcabd0c3074fd5118def96e4b3b8ce1f9ead7f97bb`.
+  * Chỉ số PDF 1-based: **`PDF Index = Trang in + 2`**.
+  * **Hoạt động Thực hành Trải nghiệm 1 (CAS GeoGebra & Hình thang):** Trang in **81–84** (PDF 1-based: **83–86**).
+  * **Hoạt động Thực hành Trải nghiệm 2 (GeoGebra 3D, Penrose & Möbius):** Trang in **85–89** (PDF 1-based: **87–91**).
+  * *Lưu ý:* Hai hoạt động trải nghiệm này mở rộng cho hành trình SGK, không phải bài học bắt buộc mới, không thuộc Chuyên đề hay Chương VII.
+
+---
+
+### III. BẢNG MÁY KIỂM TRA MÃ HÓA VÀ RECONCILIATION CHÍNH XÁC
+
+| Chỉ số / Hạng mục kiểm toán | Dự kiến / Bắt buộc | Thực tế kiểm toán | Trạng thái |
+| :--- | :---: | :---: | :---: |
+| **Số Lượng Trải nghiệm** | 2 Hoạt động | 2 Hoạt động (`EXP01`, `EXP02`) | **MATCH** |
+| **Số Lượng Outcome (OUTCOME_IDs)** | 10 Outcomes | 10 Outcomes (`EXP01`: 5, `EXP02`: 5) | **FULL COVERAGE** |
+| **Ví dụ Hướng dẫn D2 (Worked Examples)** | 10 Ví dụ D2 | 10 Ví dụ (`EX01`–`EX05` mỗi bài) | **MATCH** |
+| **Canonical Scored Items (D3 & D4)** | 40 Scored Items | 40 Items (10 Core + 10 Practice + 10 App + 10 Written) | **MATCH** |
+| **Rubric Tự luận D4 (Thang /5)** | 10 Rubrics /5 | 10 Rubrics /5 (mỗi câu có 5 bước chấm 1đ) | **MATCH** |
+| **Đồ thị / Hình vẽ PNG D5** | 5 Hình D5 | 5 Hình (`XP01_CAS`, `TRAPEZOID`, `ERROR`, `XP02_PROJ`, `MOBIUS`) | **MATCH** |
+| **Thẻ Hỗ trợ Khắc phục D6 (HELP Cards)** | 10 Thẻ D6 | 10 Thẻ (`HELP01`–`HELP05` mỗi bài) | **MATCH** |
+| **Chapter-End Secondary Placements** | 10 Placements | 10 Placements (Tham chiếu Application `A01`..`A05`) | `CLIENT_SELF_CHECK_NO_MASTERY` |
+| **Private Held-out RD1 Candidates** | 0 Items | 0 Items (Trải nghiệm không dùng RD1 kín) | **INDEPENDENT & SECURE** |
+
+---
+
+### IV. CHI TIẾT 10 OUTCOMES VÀ 40 CANONICAL ITEMS TRẢI NGHIỆM
+
+#### 1. Thực hành 1: CAS GeoGebra và xấp xỉ tích phân bằng hình thang (5 Outcomes, 20 Items)
+* **`G12-SGK-EXP01-O01` (CAS Nguyên hàm & Đạo hàm):** Lệnh `IntegralSymbolic(f)` được kiểm tra đảo bằng đạo hàm \\(F'(x) = f(x)\\).  
+  *Items:* `THPT-G12-EXP01-C01`, `P01`, `A01`, `W01` (Rubric /5), `EX-G12-EXP01-O01`, `HELP-G12-EXP01-O01`.
+* **`G12-SGK-EXP01-O02` (Tích phân xác định CAS vs Cận):** Tính \\(\int_0^2 (x^2+1)dx = 14/3 \approx 4,6667\\) bằng `Integral(f, a, b)` và định lý Newton–Leibniz.  
+  *Items:* `THPT-G12-EXP01-C02`, `P02`, `A02`, `W02` (Rubric /5), `EX-G12-EXP01-O02`, `HELP-G12-EXP01-O02`.
+* **`G12-SGK-EXP01-O03` (Công thức Hình thang & Tổng diện tích):** \\(T_4 = 11/4 = 2,75\\) trên \\(\\) cho \\(f(x)=x^2\\); sai lệch có dấu \\(T_4 - I = +1/12\\).  
+  *Items:* `THPT-G12-EXP01-C03`, `P03`, `A03`, `W03` (Rubric /5), `EX-G12-EXP01-O03`, `HELP-G12-EXP01-O03`.
+* **`G12-SGK-EXP01-O04` (Bảo đảm Sai số Hình thang bằng Đạo hàm Bậc hai):** \\(|I - T_n| \le \frac{M(b-a)^3}{12n^2}\\). Với \\(f(x)=x^2\\) trên \\(\\) (\\(M=2\\)), chọn \\(n=13\\) cho cận sai số \\(\approx 0,0009862 < 0,001\\).  
+  *Items:* `THPT-G12-EXP01-C04`, `P04`, `A04`, `W04` (Rubric /5), `EX-G12-EXP01-O04`, `HELP-G12-EXP01-O04`.
+* **`G12-SGK-EXP01-O05` (Bảng Dữ liệu Rời rạc & Đơn vị Tích lũy):** Tính diện tích/quãng đường tích lũy \\(T_3 = 21\\) m từ bảng vận tốc \\(t \in \{0,2,4,6\}\\)s và \\(v \in \{2,5,4,1\}\\)m/s.  
+  *Items:* `THPT-G12-EXP01-C05`, `P05`, `A05`, `W05` (Rubric /5), `EX-G12-EXP01-O05`, `HELP-G12-EXP01-O05`.
+
+#### 2. Thực hành 2: Vẽ 3D bằng GeoGebra — ảo giác Penrose và mặt Möbius (5 Outcomes, 20 Items)
+* **`G12-SGK-EXP02-O01` (Ảo giác Penrose vs. Mô hình 3D):** Phân tích phép chiếu 2D làm chắp nối ba thanh 3D thực tế bị tách rời trong không gian.  
+  *Items:* `THPT-G12-EXP02-C01`, `P01`, `A01`, `W01` (Rubric /5), `EX-G12-EXP02-O01`, `HELP-G12-EXP02-O01`.
+* **`G12-SGK-EXP02-O02` (Dựng Lăng trụ Tam giác bằng Tọa độ):** Dựng \\(A(0,0,0), B(2,0,0), C(0,2,0)\\), \\(A'(0,0,3), B'(2,0,3), C'(0,2,3)\\); \\(S_{\text{đáy}}=2, h=3 \implies V=6\\).  
+  *Items:* `THPT-G12-EXP02-C02`, `P02`, `A02`, `W02` (Rubric /5), `EX-G12-EXP02-O02`, `HELP-G12-EXP02-O02`.
+* **`G12-SGK-EXP02-O03` (Kiểm chứng Góc nhìn & Tọa độ Bất biến):** Thao tác xoay \\(3D\\) làm thay đổi khoảng cách biểu diễn 2D nhưng giữ nguyên tọa độ và khoảng cách \\(3D\\) thực.  
+  *Items:* `THPT-G12-EXP02-C03`, `P03`, `A03`, `W03` (Rubric /5), `EX-G12-EXP02-O03`, `HELP-G12-EXP02-O03`.
+* **`G12-SGK-EXP02-O04` (Tham số hóa Mặt Möbius & Đắng thức Dán mép):** Mặt \\(M(u,v)\\), chứng minh \\(M(0,v) = M(2\pi, -v)\\) giải thích sự dán mép xoắn nửa vòng \\(180^\circ\\).  
+  *Items:* `THPT-G12-EXP02-C04`, `P04`, `A04`, `W04` (Rubric /5), `EX-G12-EXP02-O04`, `HELP-G12-EXP02-O04`.
+* **`G12-SGK-EXP02-O05` (Thiết kế Báo cáo Tái lập 3D):** Lập báo cáo 6 mục (mục tiêu, tham số/tọa độ, quy trình, hai góc nhìn, kiểm hình học, hạn chế suy luận).  
+  *Items:* `THPT-G12-EXP02-C05`, `P05`, `A05`, `W05` (Rubric /5), `EX-G12-EXP02-O05`, `HELP-G12-EXP02-O05`.
+
+---
+
+### V. THẨM ĐỊNH 18 CỔNG CHẤT LƯỢNG (Q01–Q18)
+
+| Mã Cổng | Tên Cổng Chất Lượng (SLM-THPT-QUALITY-ONE) | Kết quả | Trích dẫn Bằng chứng Thẩm định |
+| :---: | :--- | :---: | :--- |
+| **Q01** | Source Receipt & S1 Page Matching | **PASS** | Khớp 100% trang in SGK (81–89) và SHA256 PDF S1. |
+| **Q02** | Math Correctness & Domain Limits | **PASS** | Nguyên hàm, tích phân, sai số hình thang \\(n=13\\), tham số Möbius \\(M(0,v)=M(2\pi,-v)\\) chính xác tuyệt đối. |
+| **Q03** | Canonical Exercise & ID Contract | **PASS** | 40 câu công khai có `item_id` duy nhất, gán đúng 1 `OUTCOME_ID` chính. |
+| **Q04** | Assessment Security & Self-Check Boundary | **PASS** | Tự kiểm tra trải nghiệm dùng `CLIENT_SELF_CHECK_NO_MASTERY`, không ghi Mastery. |
+| **Q05** | Worked Examples Rationale (D2) | **PASS** | 10 ví dụ D2 có lý giải chọn phương pháp, thử lại kết quả và kiểm đơn vị. |
+| **Q06** | Written Item Rubrics (/5 Scale) | **PASS** | **10 bài tự luận D4 đều có Rubric /5** minh bạch, phân rã đúng 5 tiêu chí. |
+| **Q07** | Image / Visual QA (D5) | **PASS** | 5 ảnh PNG hiển thị chính xác đồ thị, sơ đồ CAS, cận sai số và mặt 3D. |
+| **Q08** | HELP Remediation Cards (D6) | **PASS** | 10 thẻ HELP tuân thủ quy trình 5 bước quay về đúng outcome ban đầu. |
+| **Q09–Q14**| PED1–PED6 Self-Learning Architecture | **PASS** | Động cơ WHY, tiền đề, bản chất trước công thức, 4 hoạt động Tự thử trước Core. |
+| **Q15** | Canonical ID & Shared Bank | **PASS** | Mỗi bài tập có 1 `item_id` duy nhất, 10 placement secondary không nhân bản. |
+| **Q16** | Client Self-Check & Exposure Control | **PASS** | Trải nghiệm công khai không sử dụng đề kín RD1, không ghi đè điểm chính thức. |
+| **Q17** | Dual Journey Boundaries | **PASS** | Hoạt động trải nghiệm SGK độc lập với Chuyên đề học tập. |
+| **Q18** | System Authorization Boundary | **PASS** | Giữ nguyên ranh giới hệ thống: `RELEASE_AUTHORIZATION = NO`, `MASTERY_ACTIVATION = NO`. |
+
+* **Thống kê Lỗi & Phân loại Delta:**  
+  * **P0 (System Blockers):** `0` | **P1 (Revisions Required):** `0` | **P2 (Minor Improvement Suggestions):** `0`
+  * **MINIMAL_DELTA:** `0` (Phân loại: `DELTA_A_NO_CHANGE`).
+
+---
+
+### VI. BẢNG MÁY KIỂM TRA MÃ HÓA (MACHINE-CHECKABLE VERDICT)
+
+```text
+PACKET_ID|G12-SGK-EXP01-EXP02-R00-REVIEW_CANDIDATE
+STANDARD_ID|SLM-THPT-QUALITY-ONE
+STANDARD_VERSION|1.1.0
+PERMANENT_SOURCES_VERSION|THPT-v2.1
+S1_SGK_RECEIPT|TOAN_12_KNTT_TAP_HAI_P81-89_SHA256_3c642f2e80d86d699ea62bbcabd0c3074fd5118def96e4b3b8ce1f9ead7f97bb
+ACADEMIC_VERDICT|PASS
+PEDAGOGICAL_SELF_LEARNING_READY|PASS
+OUTCOME_MATRIX_COUNT|10
+WORKED_EXAMPLES_D2_COUNT|10
+PUBLIC_CANONICAL_ITEMS_COUNT|40
+WRITTEN_RUBRIC_5_COUNT|10
+IMAGE_GRAPH_D5_COUNT|5
+REMEDIATION_HELP_D6_COUNT|10
+PRIVATE_RD1_HELD_OUT_COUNT|0
+QUALITY_GATES_Q01_TO_Q18|ALL_PASS
+P0|0
+P1|0
+P2|0
+MINIMAL_DELTA|0
+DELTA_CLASS|DELTA_A_NO_CHANGE
+EXPOSURE_SYSTEM_VERDICT|SYSTEM_HOLD
+RELEASE_AUTHORIZATION|NO
+MASTERY_ACTIVATION|NO
+CONTENT_READY|NO
+```
+
+---
+
+### VII. BẢO TỒN RANH GIỚI THẨM QUYỀN HỆ THỐNG
+
+1. Phê duyệt **`ACADEMIC_VERDICT = PASS`** và **`PEDAGOGICAL_SELF_LEARNING_READY = PASS`** áp dụng nghiêm ngặt cho toàn bộ học liệu Hoạt động thực hành trải nghiệm SGK Toán 12 KNTT Tập 2 (trang in 81–89) trong gói candidate `R00`.
+2. **`RELEASE_AUTHORIZATION = NO`**: Phê duyệt học thuật và sư phạm này **không** cấp quyền merge/deploy code lên GitHub repository công khai hay xuất bản lên website/frontend.
+3. **`MASTERY_ACTIVATION = NO`**: **Không** tự động kích hoạt tính năng Tự kiểm tra công khai (Final Submit) hay tính điểm Skill Mastery cho người học.
+4. **`EXPOSURE_SYSTEM_VERDICT = SYSTEM_HOLD`** & **`CONTENT_READY = NO`**: Tạm hoãn xuất bản hệ thống cho đến khi hoàn tất các thủ tục đóng gói phát hành kỹ thuật chính thức.
+
+---
+
+📌 *Bạn có thể theo dõi chi tiết báo cáo toàn văn trên Bảng Studio bên phải màn hình (`Bao_Cao_Kiem_Toan_Toan_12_Hoat_Dong_Trai_Nghiem_R00.md`). Tôi luôn sẵn sàng hỗ trợ các bước thẩm định học thuật tiếp theo!*
