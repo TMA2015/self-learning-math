@@ -2,7 +2,7 @@
 
 **OWNER_DECISION:** Chủ dự án chấp thuận tạo bộ nguồn mới và thay thế toàn bộ 5 v2.0 thay vì kiểm tra đối chiếu nguyên văn từng nguồn cũ. **Không** chọn v2.0 cùng lúc với v2.1. **Không** tạo nguồn quy tắc Permanent thứ sáu.
 
-**STANDARD_ID:** `SLM-THPT-QUALITY-ONE` · **STANDARD_VERSION:** `1.0.0` · **NORMATIVE_GITHUB_FILE:** `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md` trên main sau owner-approved governance merge (#703).
+**STANDARD_ID:** `SLM-THPT-QUALITY-ONE` · **PERMANENT_CONTENT_BASELINE_STANDARD_VERSION:** `1.0.0` (5 tệp v2.1 nguyên gốc) · **OWNER_APPROVED_Q01_VERSION:** `1.1.0` (chỉ hiệu lực sau governance QA/merge) · **NORMATIVE_GITHUB_FILE:** `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md` (đường dẫn canonical bất biến dù metadata version được nâng).
 
 ## Năm file người dùng tải ZIP và thêm vào NotebookLM sau khi giải nén
 
@@ -21,8 +21,14 @@
 1. Giải nén file ZIP trên máy. Giữ nguyên **5 file v2.1**, không đổi tên và không tải lại bản v2.0.
 2. Trong notebook Toán THPT, bỏ chọn/xóa **đúng năm Permanent Sources v2.0** hiện hành; không động tới nguồn **SGK/SBT** hoặc review `Temp_` đang cần giữ lịch sử.
 3. Thêm đủ năm file Markdown mới v2.1; xác minh NotebookLM nhận đúng danh sách năm tên và không còn tên v2.0 được chọn.
-4. Khi yêu cầu phản biện mới: dùng **5 Permanent Sources v2.1** + SGK/SBT KNTT S1 + Temp review đúng snapshot, yêu cầu `STANDARD_ID|SLM-THPT-QUALITY-ONE`, `STANDARD_VERSION|1.0.0`, `PERMANENT_SOURCES_VERSION|THPT-v2.1`.
+4. Khi phản biện snapshot đã dùng chuẩn v1.0.0: tiếp tục ghi `STANDARD_VERSION|1.0.0` để bảo toàn provenance. **Sau khi PR quản trị Q01 v1.1.0 được cho phép merge và QA đạt**, phản biện mới/targeted B14 Q01 dùng **chính STANDARD_ID**, `STANDARD_VERSION|1.1.0`, `PERMANENT_SOURCES_VERSION|THPT-v2.1`, đúng 5 Permanent Sources không đổi + SGK/SBT liên quan + một **Temp batch-source** chứa chính Q01 v1.1.0 được owner duyệt. Temp đó không phải nguồn Permanent thứ sáu. Reviewer áp dụng Q01 v1.1.0 theo quyết định owner mới nhất và giữ Q02–Q18 cùng chuẩn gốc.
 5. NotebookLM **chỉ** phản biện toán, PED, nguồn, outcome và item; không phê duyệt website/merge/deploy, không ghi Skill Mastery.
+
+## Addendum 03/11/2026 — vai trò SBT theo Q01 mới
+- Chủ dự án đã phê duyệt Q01 theo hướng SGK/chương trình là nguồn thẩm quyền Core, **SBT và các bộ bài tập/đề thi khác là nguồn tham khảo họ dạng bài, điều kiện/phương pháp và độ sâu**; thiếu một trang SBT tham khảo không tự chặn nếu SGK/outcome/cách làm được kiểm chứng thực chất.
+- Đây là cập nhật **quy tắc tiêu chuẩn normative v1.1.0**, không phải thay đổi **năm tệp Permanent v2.1** đã cài. Giữ nguyên 5 SHA256 trong bảng bên trên. Không thêm Permanent thứ sáu; không yêu cầu chủ dự án tải lại năm file v2.1 ngay bây giờ.
+- Nếu có Q01 cũ trong Permanent v2.1 mâu thuẫn với quyết định owner mới, chọn **Temp batch-source Q01 v1.1.0** (ngoài năm Permanent) cho lượt targeted review và nêu `SOURCE_RULE_SUPERSEDED_OWNER_Q01_V1_1`. **Không** trộn nguyên tắc Q01 v1.0.0 với v1.1.0 để phán đoán PASS.
+- Trước khi governance merge, phiên bản v1.0.0 trên main vẫn là chuẩn chính thức; không tự hủy HOLD của các reviewer đã đánh giá theo v1.0.0. Những snapshot đã PASS giữ lịch sử theo phiên bản cũ.
 
 ## Authority and version safety
 
