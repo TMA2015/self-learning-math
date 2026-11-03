@@ -95,4 +95,4 @@ Mẫu C tích lũy [2,7,15,20], Q3 tại vị trí 15 bằng 70 là biên chung;
 
 ## 5. Tiếp tục
 
-[Core và Luyện tập Bài 9](../luyen-tap/) · [Tự luận Chương III](../../../../thu-vien/tu-luan-g11-chuong-iii/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
+[Core và Luyện tập Bài 9](luyen-tap.md) · [Tự luận Chương III](../../../thu-vien/tu-luan-g11-chuong-iii.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)

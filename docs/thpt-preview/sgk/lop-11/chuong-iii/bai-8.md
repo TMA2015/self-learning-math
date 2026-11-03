@@ -81,4 +81,4 @@ Bảng có tần số [6,9,5], n=20: nhóm thứ hai chiếm 45%, không thể k
 
 ## 5. Tiếp tục
 
-[Core và Luyện tập Bài 8](../luyen-tap/) · [Tự luận Chương III](../../../../thu-vien/tu-luan-g11-chuong-iii/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
+[Core và Luyện tập Bài 8](luyen-tap.md) · [Tự luận Chương III](../../../thu-vien/tu-luan-g11-chuong-iii.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
