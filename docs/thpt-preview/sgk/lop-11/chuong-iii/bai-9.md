@@ -49,27 +49,27 @@ Ghi đơn vị, nêu gần đúng và mức độ hợp lý của kết quả. C
 
 ## 2. Ví dụ
 
-### VD-G11-B09-01 — Trung bình
+### Ví dụ 1 — Trung bình
 
 Mẫu A: [0;10)→4 | [10;20)→8 | [20;30)→6 | [30;40)→2. Trung điểm 5,15,25,35, n=20; x̄=18.
 
-### VD-G11-B09-02 — Trung vị
+### Ví dụ 2 — Trung vị
 
 Mẫu A tích lũy [4,12,18,20], n/2=10 thuộc [10;20), Me=10+(10−4)×10/8=17,5.
 
-### VD-G11-B09-03 — Tứ phân vị
+### Ví dụ 3 — Tứ phân vị
 
 Mẫu A, Q1=11,25 tại [10;20), Q3=25 tại [20;30); phân vị nhóm là ước lượng.
 
-### VD-G11-B09-04 — Mốt
+### Ví dụ 4 — Mốt
 
 Mẫu A: nhóm tần số 8 là [10;20), m trước 4, sau 6; Mo=10+4/(4+2)×10≈16,67.
 
-### VD-G11-B09-05 — Giới hạn
+### Ví dụ 5 — Giới hạn
 
 Hai mẫu gốc có thể có cùng bảng nhóm nhưng trung bình gốc khác nhau; giá trị đại diện không phải phép đo chính xác.
 
-### VD-G11-B09-06 — Biên phân vị
+### Ví dụ 6 — Biên phân vị
 
 Mẫu C tích lũy [2,7,15,20], Q3 tại vị trí 15 bằng 70 là biên chung; không thêm bớt tùy tiện một đơn vị.
 
