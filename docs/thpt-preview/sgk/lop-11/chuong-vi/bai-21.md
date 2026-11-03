@@ -4,7 +4,7 @@
 
 ## 1. Kiến thức SGK — hiểu bản chất trước công thức
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVI-B21-01_R00.svg" alt="B21 — trực quan hình thành khái niệm"/><figcaption>Hình D5 — quan sát trước khi tính: B21 — trực quan hình thành khái niệm</figcaption></figure>
+<figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVI-B21-01_R00.svg" alt="B21 — trực quan hình thành khái niệm"/><figcaption>Hình minh họa — quan sát trước khi tính: B21 — trực quan hình thành khái niệm</figcaption></figure>
 
 **Cách đọc và phát hiện:** Hình B21 giải thích bản chất “đảo chiều”: cùng tăng x, đường y=2^x đi lên nhưng y=(1/2)^x đi xuống. Hãy dùng điều này để tự nói vì sao (1/2)^u>(1/2)^v thì u<v, trước khi học quy trình giải bất phương trình.
 
