@@ -4,10 +4,10 @@
 
 ## 1. Kiến thức SGK — hình thành bản chất trước công thức
 
-### 1.1. WHY — Một tốc độ trung bình có thể che giấu sự thay đổi ngay tại một thời điểm
+### 1.1. Một tốc độ trung bình có thể che giấu sự thay đổi ngay tại một thời điểm
 Giả sử quãng đường chuyển động $s(t)=t^2$ mét, thời gian $t$ giây. Trong khoảng từ $t=2$ đến $t=3$, vật đi từ 4 m đến 9 m, nên vận tốc trung bình bằng $(9-4)/(3-2)=5$ m/s. Nhưng vật có giữ vận tốc 5 m/s **đúng lúc** $t=2$ không? Không: khoảng đo 1 giây quá dài. Ta cần thu hẹp khoảng đo. Đó chính là nhu cầu hình thành đạo hàm, chứ không phải yêu cầu học thuộc ký hiệu $f'(x)$.
 
-### 1.2. WHAT → HOW — Từ vận tốc trung bình đến thương sai phân
+### 1.2. Từ vận tốc trung bình đến thương sai phân
 Với $y=f(x)$, tại $x=a$ và $x=a+h$ (đều thuộc miền xác định, $h\ne0$), độ tăng đầu vào là $h$, độ tăng đầu ra $\Delta y=f(a+h)-f(a)$. **Tốc độ biến đổi trung bình** là $\Delta y/h$. Nếu khi $h$ tiến về $0$ **từ cả hai phía** biểu thức này tiến đến một số hữu hạn $L$, ta định nghĩa đạo hàm tại $a$ là $f'(a)=L$. Viết đúng $f'(a)=\lim_{h\to0}[f(a+h)-f(a)]/h$. Không được lấy trực tiếp $h=0$ vì biểu thức ban đầu là $0/0$; phải rút gọn hay biến đổi rồi mới lấy giới hạn.
 
 **Thực hành trước khi xem công thức:** Với $f(x)=x^2$, hãy viết $f(2+h)-f(2)$; kết quả là $4h+h^2$, nên thương bằng $4+h$, giới hạn $4$. Đạo hàm tại 2 là 4 đơn vị đầu ra trên một đơn vị đầu vào. Nếu $f$ xác định và có đạo hàm tại mỗi điểm trên khoảng, ta nói $f$ có đạo hàm trên khoảng ấy và $f'(x)$ là một **hàm mới**.
@@ -28,13 +28,13 @@ Tính vận tốc tức thời của $s(t)=3t^2+2t$ tại $t=1$ **bằng định
 
 **Liên kết D6:** nếu lấy $f(a)$ làm độ dốc, quay lại `HELP-G11-CHIX-B31-03`; nếu lấy $h=0$ sớm, xem `HELP-G11-CHIX-B31-01`; nếu quên trái/phải của $|x|$, xem `HELP-G11-CHIX-B31-02`.
 
-### 1.7. Đọc hình để hiểu lập luận (D5)
+### 1.7. Đọc hình để hiểu lập luận
 
 <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHIX-B31-01_R00.svg" alt="Hình FIG-G11-CHIX-B31-01 minh họa lập luận trong Bài 31" /><figcaption>Hình D5 — FIG-G11-CHIX-B31-01. Đọc hình theo lời giải thích trong phần Kiến thức ở trên.</figcaption></figure>
 
 <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHIX-B31-02_R00.svg" alt="Hình FIG-G11-CHIX-B31-02 minh họa lập luận trong Bài 31" /><figcaption>Hình D5 — FIG-G11-CHIX-B31-02. Đọc hình theo lời giải thích trong phần Kiến thức ở trên.</figcaption></figure>
 
-## 2. Ví dụ có suy luận D2
+## 2. Ví dụ có suy luận
 
 #### EX-G11-CHIX-B31-01: Định nghĩa tại một điểm
 
@@ -100,7 +100,7 @@ Tính vận tốc tức thời của $s(t)=3t^2+2t$ tại $t=1$ **bằng định
 
 **Vì sao:** Cát tuyến khác tiếp tuyến khi h≠0; lấy giới hạn.
 
-## 3. Tự khắc phục lỗi D6
+## 3. Tự khắc phục lỗi
 
 <details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHIX-B31-01"><summary><strong>Chẩn đoán lỗi:</strong> Thế h=0 trước khi khử 0/0.</summary><ol><li><strong>Phát hiện lỗi:</strong> Thế h=0 trước khi khử 0/0.</li><li><strong>Truy lại bản chất + điều kiện:</strong> Tử f(a+h)-f(a) thường có nhân tử h; rút gọn chỉ với h≠0, sau đó mới lấy giới hạn.</li><li><strong>Xem lại vì sao (WHY/HOW):</strong> Mở D1 B31, so sánh mệnh đề định nghĩa với ví dụ D2; giải thích bằng lời trước khi biến đổi ký hiệu.</li><li><strong>Tự luyện câu khác có dẫn dắt:</strong> Với f(x)=4x², tại a=2 thương bao nhiêu?. <strong>Tự kiểm sau khi thử:</strong> 16+4h, giới hạn 16.</li><li><strong>Trở về câu canonical:</strong> <code>THPT-G11-CHIX-B31-C02</code> và giải lại, tự giải thích lí do từng bước; không lấy xem lời giải làm chứng cứ độc lập cho Mastery.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHIX-B31-C02">Quay lại câu canonical THPT-G11-CHIX-B31-C02</a></p></details>
 
