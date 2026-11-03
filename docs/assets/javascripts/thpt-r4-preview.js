@@ -317,6 +317,76 @@
   // In-memory only: retain Core/Practice question positions and unsubmitted
   // answer text when a reviewed D6 return link changes roles in this modal.
   const lastViewedReviewed=new Map(),reviewedResponses=new Map();
+
+  // DELTA_A_UI: G11 PUBLIC formative math only; text-node based, no HTML
+  // parsing, canonical source mutation, private RD1 or learner data writes.
+  const renderG11Math=(parent,value)=>{
+    const source=String(value??"");
+    const plain=(text)=>{
+      let buffer="";
+      const flush=()=>{if(buffer){parent.append(document.createTextNode(buffer));buffer=""}};
+      for(let i=0;i<text.length;i++){
+        const op=text[i];
+        if((op!=="^"&&op!=="_")||!/[A-Za-z0-9)\]]/.test(buffer.slice(-1))
+            ||(op==="_"&&!/[A-Za-z]{1,4}$/.test(buffer))){buffer+=op;continue}
+        const start=text[i+1];
+        let parsed=null;
+        if(start==="{"||start==="("){
+          const closing=start==="{"?"}":")";let depth=0;
+          for(let j=i+1;j<text.length;j++){
+            if(text[j]===start)depth++;
+            else if(text[j]===closing&&--depth===0){
+              parsed={value:start==="{"?text.slice(i+2,j):text.slice(i+1,j+1),end:j+1};break;
+            }
+          }
+        }else{
+          const match=/^[−-]?(?:[A-Za-z][A-Za-z0-9]*|\d+)/.exec(text.slice(i+1));
+          if(match){
+            const end=i+1+match[0].length;
+            if(!( /^[A-Za-z]+$/.test(match[0])&&text[end]==="(" )
+              &&!( /^\d+$/.test(match[0])&&text[end]==="/" ))
+                parsed={value:match[0],end};
+          }
+        }
+        if(!parsed){buffer+=op;continue}
+        flush();const el=document.createElement(op==="^"?"sup":"sub");
+        el.dataset.thptReviewedScript="1";el.textContent=parsed.value;parent.append(el);
+        i=parsed.end-1;
+      }
+      flush();
+    };
+    const math=(body,display)=>{
+      const el=document.createElement(display?"div":"span");
+      el.dataset.thptReviewedMath="1";
+      el.className=display?"thpt-r4-formative-math-display":"thpt-r4-formative-math-inline";
+      el.textContent=(display?"\\[":"\\(")+body+(display?"\\]":"\\)");
+      parent.append(el);
+    };
+    let buffer="";
+    const flush=()=>{if(buffer){plain(buffer);buffer=""}};
+    for(let i=0;i<source.length;){
+      let opener=null,closer=null,display=false;
+      if(source.startsWith("$",i)){opener="$";closer="$";display=true}
+      else if(source.startsWith("\\[",i)){opener="\\[";closer="\\]";display=true}
+      else if(source.startsWith("\\(",i)){opener="\\(";closer="\\)"}
+      else if(source[i]==="$"&&(i===0||source[i-1]!=="\\")){opener="$";closer="$"}
+      if(opener){
+        let end=source.indexOf(closer,i+opener.length);
+        while(end>=0&&source[end-1]==="\\")end=source.indexOf(closer,end+closer.length);
+        if(end>i+opener.length){
+          const body=source.slice(i+opener.length,end);
+          if(body.trim()){flush();math(body,display);i=end+closer.length;continue}
+        }
+      }
+      buffer+=source[i++];
+    }
+    flush();
+  };
+  const reviewedText=(el,value,item)=>{
+    if(String(item.grade)==="11")renderG11Math(el,value);
+    else el.textContent=String(value??""); // G10 historical display untouched
+  };
+
   let pendingD6Item=null;
   const showReviewed=(items,requestedItem)=>{
    // Ephemeral answers only: no localStorage, backend writes or Skill Mastery.
@@ -339,7 +409,8 @@
    prev.type=next.type="button";prev.textContent="← Câu trước";next.textContent="Câu tiếp →";
    const render=()=>{
     const item=items[index];lastViewedReviewed.set(viewedKey,item.item_id);
-    card.replaceChildren();tabs.replaceChildren();
+    if(String(item.grade)==="11")window.MathJax?.typesetClear?.([card]);
+     card.replaceChildren();tabs.replaceChildren();
     card.dataset.thptCanonicalItem=item.item_id;
     const exposureRole=item.role==="CORE"?"SGK_CORE":
       item.role==="APPLICATION"?"SGK_CHAPTER_APPLICATION":"SGK_PRACTICE";
@@ -355,7 +426,7 @@
      button.setAttribute("aria-current",String(i===index));
      button.addEventListener("click",()=>{index=i;render()});tabs.append(button);
     }
-    const prompt=document.createElement("h3");prompt.textContent=item.stem;
+    const prompt=document.createElement("h3");reviewedText(prompt,item.stem,item);
     // Core/Practice is interactive FORMATIVE learning, not a Readiness test.
     // Only source-reviewed options + answerKey may be checked automatically.
     // Never guess a mathematical answer key from human-readable solutions.
@@ -393,7 +464,8 @@
       radio.addEventListener("change",()=>{
        response.value=value;response.submitted=false;updateFeedback();
       });
-      label.append(radio,document.createTextNode(choice));group.append(label);
+      const formattedChoice=document.createElement("span");reviewedText(formattedChoice,choice,item);
+       label.append(radio,formattedChoice);group.append(label);
      });
      answerForm.append(group);
     }else{
@@ -418,13 +490,13 @@
     hintSummary.textContent="💡 Gợi ý";
     const hintContent=document.createElement("div");
     hintContent.className="thpt-r4-formative-reveal";
-    hintContent.textContent=item.hint;
+    reviewedText(hintContent,item.hint,item);
     hint.append(hintSummary,hintContent);
     const solution=document.createElement("details"),solutionSummary=document.createElement("summary");
     solutionSummary.textContent="📖 Đáp án / Lời giải";
     const solutionContent=document.createElement("div");
     solutionContent.className="thpt-r4-formative-reveal";
-    solutionContent.textContent=item.solution;
+    reviewedText(solutionContent,item.solution,item);
     solution.append(solutionSummary,solutionContent);
     answerForm.addEventListener("submit",event=>{
      event.preventDefault();
