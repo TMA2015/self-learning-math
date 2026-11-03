@@ -94,6 +94,15 @@ nav:
               - Bài 9 · Các số đặc trưng: thpt-preview/sgk/lop-11/chuong-iii/bai-9.md
               - Core và Luyện tập Bài 8–9: thpt-preview/sgk/lop-11/chuong-iii/luyen-tap.md
               - Tự kiểm tra tự đối chiếu Bài 8–9: thpt-preview/sgk/lop-11/chuong-iii/tu-kiem-tra-chuong.md
+          - Chương IV · Quan hệ song song trong không gian (Bài 10–14):
+              - Tổng quan Chương IV: thpt-preview/sgk/lop-11/chuong-iv.md
+              - Bài 10 · Đường thẳng và mặt phẳng trong không gian: thpt-preview/sgk/lop-11/chuong-iv/bai-10.md
+              - Bài 11 · Hai đường thẳng song song: thpt-preview/sgk/lop-11/chuong-iv/bai-11.md
+              - Bài 12 · Đường thẳng và mặt phẳng song song: thpt-preview/sgk/lop-11/chuong-iv/bai-12.md
+              - Bài 13 · Hai mặt phẳng song song: thpt-preview/sgk/lop-11/chuong-iv/bai-13.md
+              - Bài 14 · Phép chiếu song song: thpt-preview/sgk/lop-11/chuong-iv/bai-14.md
+              - Core và Luyện tập Bài 10–14: thpt-preview/sgk/lop-11/chuong-iv/luyen-tap.md
+              - Tự kiểm tra tự đối chiếu Bài 10–14: thpt-preview/sgk/lop-11/chuong-iv/tu-kiem-tra-chuong.md
   - Học theo chuyên đề:
       - Tổng quan chuyên đề: thpt-preview/chuyen-de/index.md
       - Hàm số và đồ thị:
@@ -114,6 +123,7 @@ nav:
       - Tự luận Toán 10 · Chương IX: thpt-preview/thu-vien/tu-luan-chuong-ix.md
       - Tự luận Toán 11 · Chương I B01–B04: thpt-preview/thu-vien/tu-luan-g11-chuong-i-b01-b02.md
       - Tự luận Toán 11 · Chương III B08–B09: thpt-preview/thu-vien/tu-luan-g11-chuong-iii.md
+      - Tự luận Toán 11 · Chương IV B10–B14: thpt-preview/thu-vien/tu-luan-g11-chuong-iv.md
       - Bài mẫu tiêu biểu: thpt-preview/thu-vien/bai-mau-tieu-bieu.md
       - Bản đồ kỹ năng: thpt-preview/thu-vien/ban-do-ky-nang.md
   - Tiến độ học tập: thpt-preview/tien-do.md
@@ -197,6 +207,7 @@ extra_javascript:
   - assets/javascripts/thpt-chix-reviewed-formative-v1.js
   - assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js
   - assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js
+  - assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js
   - assets/javascripts/thpt-r4-preview.js
   - assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js
   - assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js
