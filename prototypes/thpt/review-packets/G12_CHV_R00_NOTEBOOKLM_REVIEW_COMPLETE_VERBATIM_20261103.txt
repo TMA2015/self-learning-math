@@ -1,0 +1,135 @@
+### TÓM TẮT QUẢN TRỊ (EXECUTIVE SUMMARY)
+**BÁO CÁO PHẢN BIỆN HỌC THUẬT VÀ SƯ PHẠM ĐỘC LẬP TOÀN BỘ CHƯƠNG V — TOÁN 12 KNTT (BÀI 14–17 VÀ TỰ KIỂM TRA CUỐI CHƯƠNG)**
+
+* **PACKET_ID:** `G12-SGK-CHV-B14-B17-R00-REVIEW_CANDIDATE`
+* **STANDARD_ID:** `SLM-THPT-QUALITY-ONE` (v1.0.0, Q01–Q18)
+* **CƠ SỞ PHÁP LÝ & QUY TẮC:** Đúng **5 Permanent Sources THPT v2.1** (`01_THPT_MASTER_PLAN_v2.1` đến `05_THPT_CANONICAL_EXERCISE_AND_ID_CONTRACT_v2.1`), Nguồn S1 SGK/SBT Toán 12 KNTT Tập Hai gốc.
+* **FILE BÁO CÁO TOÀN VĂN TRÊN STUDIO PANEL:** **`Bao_Cao_Kiem_Toan_Toan_12_Chuong_V_Batch_R00.md`** (Đã xuất bản thành công vào Bảng Studio bên phải màn hình).
+
+---
+
+### I. HAI KẾT LUẬN ĐỘC LẬP VÀ XÁC MINH SOURCE GAP (SBT TRANG IN 25)
+
+1. **`ACADEMIC_VERDICT = HOLD` (Do lỗ hổng tệp scan SBT p25 Bài 14) / `ACADEMIC_B15_TO_B17_VERDICT = PASS`**  
+   * **Xác minh Nguồn S1 SBT Trang in 25:** Tệp PDF scan SBT Toán 12 KNTT Tập Hai gốc (`sach-bai-tap-toan-12 - TẬP 2 - KNTT.pdf`, SHA256: `823b013a...`) bị khuyết trang in **25** (chứa các bài tập 5.6–5.7 của Bài 14) khi chuyển từ PDF p23 (trang in 24) sang PDF p24 (trang in 26).
+   * **Ghi nhận Cổng Q01:** Theo chuẩn mực Q01, chính thức thiết lập trạng thái **`Q01_B14_SOURCE_GAP_HOLD`** riêng cho Bài 14 / SBT p25 cho đến khi bổ sung bản scan S1 nguyên bản. Không tự phỏng đoán hay bỏ qua nguồn gap này.
+   * **Đánh giá Học thuật Nội dung:** Toàn bộ nội dung toán học tự biên soạn đạt độ chính xác tuyệt đối:
+     * *Bài 14:* Vectơ pháp tuyến \\(\vec{n} \neq \vec{0}\\), phương trình tổng quát mặt phẳng \\(Ax+By+Cz+D=0\\) (\\(A^2+B^2+C^2>0\\)), khoảng cách từ điểm đến mặt phẳng.
+     * *Bài 15:* Vectơ chỉ phương \\(\vec{u} \neq \vec{0}\\), phương trình tham số/chính tắc (cấm viết dạng tỷ số chia cho \\(0\\) khi có hệ số \\(0\\)), điều kiện hai đường thẳng chéo nhau (không đồng phẳng).
+     * *Bài 16:* Công thức góc hai đường thẳng dùng **`cos`** trị tuyệt đối, góc đường–mặt dùng **`sin`** (do phụ thuộc góc với pháp tuyến), góc hai mặt dùng **`cos`** trị tuyệt đối.
+     * *Bài 17:* Phương trình mặt cầu \\((x-a)^2+(y-b)^2+(z-c)^2=R^2\\) (\\(R>0\\)), dạng khai triển \\(x^2+y^2+z^2-2ax-2by-2cz+d=0\\) với điều kiện bắt buộc \\(a^2+b^2+c^2-d > 0\\) (loại bỏ trường hợp suy biến \\(\le 0\\)).
+
+2. **`PEDAGOGICAL_SELF_LEARNING_READY = PASS`**  
+   Học liệu đáp ứng trọn vẹn 6 tiêu chí sư phạm tự học (`PED1–PED6`): Động cơ định vị không gian 3D và mô hình hóa đường đi (`PED1 WHY`), kiến thức tiền đề vectơ/tích vô hướng/tích có hướng (`PED2 WHAT`), hình thành bản chất pháp tuyến/chỉ phương/bán kính trước công thức (`PED3 HOW`), làm rõ điều kiện xác định, đọc 6 hình minh họa D5 (`PED4 FORMAL`), giải thích lý do lựa chọn phương pháp (`PED5 METHOD`), và thiết kế 8 hoạt động Tự thử định hướng trước Core (`PED6 SELF-TRY`).
+
+3. **`EXPOSURE_SYSTEM_VERDICT = SYSTEM_HOLD` | `RELEASE_AUTHORIZATION = NO` | `MASTERY_ACTIVATION = NO`**  
+   Phê duyệt học thuật và sư phạm này là điều kiện cần nhưng **chưa cấp phép phát hành**, không tự động kích hoạt tính năng Tự kiểm tra công khai (Final Submit), không ghi nhận điểm Skill Mastery cho học sinh và không cấp quyền merge/deploy website.
+
+---
+
+### II. SOURCE_RECEIPT VÀ PHÂN BỔ TRANG IN S1 (SGK & SBT KNTT TẬP 2 GỐC)
+
+* **SGK Toán 12 KNTT Tập Hai (Nguồn S1):**
+  * Tệp PDF gốc 99 trang, SHA256: `3c642f2e80d86d699ea62bbcabd0c3074fd5118def96e4b3b8ce1f9ead7f97bb`.
+  * Quy tắc chỉ số PDF 1-based: **`PDF Index = Trang in + 2`**.
+  * *Bài 14 (Phương trình mặt phẳng):* Trang in **29–40** (PDF 1-based: **31–42**)
+  * *Bài 15 (Phương trình đường thẳng trong không gian):* Trang in **41–49** (PDF 1-based: **43–51**)
+  * *Bài 16 (Công thức tính góc trong không gian):* Trang in **50–53** (PDF 1-based: **52–55**)
+  * *Bài 17 (Phương trình mặt cầu):* Trang in **54–60** (PDF 1-based: **56–62**)
+  * *Bài tập cuối Chương V:* Trang in **61–63** (PDF 1-based: **63–65**)
+* **SBT Toán 12 KNTT Tập Hai (Nguồn S1):**
+  * Tệp PDF gốc 117 trang, SHA256: `823b013adeb487639e55493b4a7c09edb9a21daabc058ea53e6fe92f7a0352f1`.
+  * Quy tắc chỉ số PDF 1-based: **`PDF Index = Trang in - 1`** (trừ trang in 25 bị khuyết).
+  * *Bài 14:* Trang in **22–25** (PDF p21–23 tương ứng in 22–24; **KHÔNG CÓ TRANG IN 25** trong bản scan) \\(\implies\\) **`Q01_B14_SOURCE_GAP_HOLD`**.
+  * *Bài 15:* Trang in **26–29** (PDF 1-based: **24–27**)
+  * *Bài 16:* Trang in **30–31** (PDF 1-based: **28–29**)
+  * *Bài 17:* Trang in **32–34** (PDF 1-based: **30–32**)
+  * *Bài tập cuối Chương V:* Trang in **35–39** (PDF 1-based: **33–37**)
+
+---
+
+### III. BẢNG MÁY KIỂM TRA MÃ HÓA VÀ RECONCILIATION CHÍNH XÁC
+
+| Chỉ số / Hạng mục kiểm toán | Dự kiến / Bắt buộc | Thực tế kiểm toán | Sai lệch / Trạng thái |
+| :--- | :---: | :---: | :---: |
+| **Số Lượng Bài học (LESSON_IDs)** | 4 Bài (`B14`–`B17`) | 4 Bài + Cuối chương | **MATCH** |
+| **Số Lượng Outcome (OUTCOME_IDs)** | 24 Outcomes | 24 Outcomes (`B14`:7, `B15`:7, `B16`:5, `B17`:5) | **FULL COVERAGE** |
+| **Ví dụ Hướng dẫn D2 (Worked Examples)** | 24 Ví dụ D2 | 24 Ví dụ (`EX01`–`EX07`/`EX05`) | **MATCH** |
+| **Canonical Scored Items (D3 & D4)** | 96 Scored Items | 96 Items (24 Core + 24 Practice + 24 App + 24 Written) | **MATCH** |
+| **Rubric Tự luận D4 (Thang /5)** | 24 Rubrics /5 | 24 Rubrics /5 (mỗi câu có 4 bước chấm) | **MATCH** |
+| **Đồ thị / Hình vẽ PNG/SVG (D5)** | 6 Hình D5 | 6 Hình (`B14`, `B15`, `B151`, `B16`, `B161`, `B17`) | **MATCH** |
+| **Thẻ Hỗ trợ Khắc phục D6 (HELP Cards)** | 24 Thẻ D6 | 24 Thẻ (`HELP01`–`HELP07`/`HELP05`) | **MATCH** |
+| **Chapter-End Public Placements** | 24 Placements | 24 Placements (Tham chiếu Application) | `CLIENT_SELF_CHECK_NO_MASTERY` |
+| **Private Held-out RD1 Candidates** | 28 Items RD1 | 28 Items (`THPT-G12-CHV-RD1-001` đến `028`) | **INDEPENDENT & SECURE** |
+
+---
+
+### IV. THẨM ĐỊNH 18 CỔNG CHẤT LƯỢNG (Q01–Q18)
+
+| Mã Cổng | Tên Cổng Chất Lượng (SLM-THPT-QUALITY-ONE) | Kết quả | Trích dẫn Bằng chứng Thẩm định |
+| :---: | :--- | :---: | :--- |
+| **Q01** | Source Receipt & S1 Page Matching | **HOLD** | Khuyết trang in SBT 25 (B14) \\(\implies\\) **`Q01_B14_SOURCE_GAP_HOLD`**. |
+| **Q02** | Math Correctness & Domain Limits | **PASS** | VTPT, VTCP, góc sin/cos, điều kiện mặt cầu \\(a^2+b^2+c^2-d > 0\\) chính xác. |
+| **Q03** | Canonical Exercise & ID Contract | **PASS** | 96 câu công khai có `item_id` duy nhất, gán đúng 1 `OUTCOME_ID` chính. |
+| **Q04** | Assessment Security & Self-Check Boundary | **PASS** | Tự kiểm tra cuối chương dùng `CLIENT_SELF_CHECK_NO_MASTERY`, khóa đáp án pre-Submit. |
+| **Q05** | Worked Examples Rationale (D2) | **PASS** | 24 ví dụ D2 có lý giải chọn phương pháp, thử lại kết quả và kiểm miền. |
+| **Q06** | Written Item Rubrics (/5 Scale) | **PASS** | 24 bài tự luận D4 có rubric /5 phân rã đúng các bước lập phương trình. |
+| **Q07** | Image / Visual QA (D5) | **PASS** | 6 ảnh PNG/SVG có chú thích, trục tọa độ và biểu diễn trực quan không gian 3D. |
+| **Q08** | HELP Remediation Cards (D6) | **PASS** | 24 thẻ HELP tuân thủ quy trình 5 bước quay về đúng outcome ban đầu. |
+| **Q09–Q14**| PED1–PED6 Self-Learning Architecture | **PASS** | Kiến tạo động cơ WHY, tiền đề, bản chất trước công thức, 8 hoạt động Tự thử trước Core. |
+| **Q15** | Canonical ID & Shared Bank | **PASS** | Mỗi bài tập có 1 `item_id` duy nhất, không nhân bản ID. |
+| **Q16** | Client Self-Check & Exposure Control | **PASS** | Tự kiểm tra cuối chương dùng `CLIENT_SELF_CHECK_NO_MASTERY`, bảo mật 28 câu RD1 kín. |
+| **Q17** | Dual Journey Boundaries | **PASS** | Giữ nguyên ranh giới SGK vs. Chuyên đề. |
+| **Q18** | System Authorization Boundary | **PASS** | Giữ nguyên ranh giới hệ thống: `RELEASE_AUTHORIZATION = NO`, `MASTERY_ACTIVATION = NO`. |
+
+* **Thống kê Lỗi & Phân loại Delta:**  
+  * **P0 (System Blockers):** `0`
+  * **P1 (Revisions Required / Gap Hold):** `1` (Khuyết bản scan SBT p25 Bài 14 \\(\implies\\) `Q01_B14_SOURCE_GAP_HOLD`)
+  * **P2 (Minor Improvement Suggestions):** `0`
+  * **MINIMAL_DELTA:** `1` (Delta Class: `DELTA_D_BLOCKER` cho nguồn SBT p25; các phần học liệu tự biên soạn đạt `DELTA_A_NO_CHANGE`).
+
+---
+
+### V. BẢNG MÁY KIỂM TRA MÃ HÓA (MACHINE-CHECKABLE VERDICT)
+
+```text
+PACKET_ID|G12-SGK-CHV-B14-B17-R00-REVIEW_CANDIDATE
+STANDARD_ID|SLM-THPT-QUALITY-ONE
+STANDARD_VERSION|1.0.0
+PERMANENT_SOURCES_VERSION|2.1
+S1_SGK_RECEIPT|TOAN_12_KNTT_TAP_HAI_P29-63_SHA256_3c642f2e80d86d699ea62bbcabd0c3074fd5118def96e4b3b8ce1f9ead7f97bb
+S1_SBT_RECEIPT|BAI_TAP_TOAN_12_KNTT_TAP_HAI_P22-39_EXCEPT_P25_SHA256_823b013adeb487639e55493b4a7c09edb9a21daabc058ea53e6fe92f7a0352f1
+SOURCE_GAP_STATUS|Q01_B14_SOURCE_GAP_HOLD
+ACADEMIC_VERDICT|HOLD
+ACADEMIC_B15_TO_B17_VERDICT|PASS
+PEDAGOGICAL_SELF_LEARNING_READY|PASS
+OUTCOME_MATRIX_COUNT|24
+WORKED_EXAMPLES_D2_COUNT|24
+PUBLIC_CANONICAL_ITEMS_COUNT|96
+WRITTEN_RUBRIC_5_COUNT|24
+IMAGE_GRAPH_D5_COUNT|6
+REMEDIATION_HELP_D6_COUNT|24
+PRIVATE_RD1_HELD_OUT_COUNT|28
+QUALITY_GATES_STATUS|Q01_HOLD_OTHER_17_PASS
+P0|0
+P1|1
+P2|0
+MINIMAL_DELTA|1
+DELTA_CLASS|DELTA_D_BLOCKER
+EXPOSURE_SYSTEM_VERDICT|SYSTEM_HOLD
+RELEASE_AUTHORIZATION|NO
+MASTERY_ACTIVATION|NO
+```
+
+---
+
+### VI. BẢO TỒN RANH GIỚI THẨM QUYỀN HỆ THỐNG
+
+1. Phê duyệt **`PEDAGOGICAL_SELF_LEARNING_READY = PASS`** và **`ACADEMIC_B15_TO_B17_VERDICT = PASS`** áp dụng cho học liệu SGK Toán 12 KNTT Tập 2 Chương V. Ghi nhận **`ACADEMIC_VERDICT = HOLD`** chung do lỗ hổng nguồn scan SBT trang in 25 (`Q01_B14_SOURCE_GAP_HOLD`).
+2. **`RELEASE_AUTHORIZATION = NO`**: Phê duyệt học thuật và sư phạm này **không** cấp quyền merge/deploy code lên GitHub repository công khai hay xuất bản lên website/frontend.
+3. **`MASTERY_ACTIVATION = NO`**: **Không** tự động kích hoạt tính năng Tự kiểm tra công khai (Final Submit) hay tính điểm Skill Mastery cho người học.
+4. **`EXPOSURE_SYSTEM_VERDICT = SYSTEM_HOLD`**: Tạm hoãn xuất bản hệ thống cho đến khi bổ sung nguồn scan S1 SBT p25 và hoàn tất cổng kiểm thử kỹ thuật.
+
+---
+
+📌 *Toàn bộ báo cáo phản biện độc lập chi tiết đã được tự động đóng gói và xuất bản vào tệp **`Bao_Cao_Kiem_Toan_Toan_12_Chuong_V_Batch_R00.md`** trên Bảng Studio bên phải màn hình. Bạn có thể xem trực tiếp hoặc xuất file.*
