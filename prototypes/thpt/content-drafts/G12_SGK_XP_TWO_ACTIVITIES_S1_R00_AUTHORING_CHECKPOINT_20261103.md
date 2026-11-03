@@ -60,6 +60,6 @@ Nguồn Markdown original SHA256:
 
 ## 5. Tiếp nhận NotebookLM R00 ngày 03/11/2026 (chỉ lưu biên bản, không tự nâng trạng thái)
 
-- Báo cáo NotebookLM nguyên văn chủ dự án gửi đã được bảo toàn trong `prototypes/thpt/review-packets/G12_XP_R00_NOTEBOOKLM_OWNER_VERDICT_SUBMITTED_20261103.txt`, Git blob `9a9654d068c897db123da0ab25bd9febb7a5a785`. Reviewer ghi `ACADEMIC=PASS`, `PED=PASS`, `P0/P1/P2=0`, `MINIMAL_DELTA=0` trên PACKET_ID `G12-SGK-EXP01-EXP02-R00-REVIEW_CANDIDATE`.
+- Báo cáo NotebookLM nguyên văn chủ dự án gửi đã được bảo toàn trong `prototypes/thpt/review-packets/G12_XP_R00_NOTEBOOKLM_OWNER_VERDICT_SUBMITTED_20261103.txt`, Git blob `84f41a2e6e53619772d385cec3ae69483d8ae081`. Reviewer ghi `ACADEMIC=PASS`, `PED=PASS`, `P0/P1/P2=0`, `MINIMAL_DELTA=0` trên PACKET_ID `G12-SGK-EXP01-EXP02-R00-REVIEW_CANDIDATE`.
 - Biên bản kiểm toán tác giả tại `prototypes/thpt/content-drafts/G12_SGK_XP_R00_NOTEBOOKLM_REVIEW_RECONCILIATION_20261103.md` ghi rõ lỗi chép số liệu checkpoint 22 m so với 21 m đúng cho dữ liệu reviewer, bảng đánh số tên Q không khớp v1.1.0 và thiếu 9 file R00 nguyên bản để chứng minh Git blob parity.
 - Không sửa nội dung học sinh vì file gốc chưa phục hồi; giữ `SOURCE_CUSTODY_HOLD` và `CONTENT_READY=NO`. Bước tiếp theo là khôi phục ZIP 9 file R00 theo checksum đã khai báo, kiểm từng file trước khi lập A1–A7 + V2/ready/REGISTER.
