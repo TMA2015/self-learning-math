@@ -1,6 +1,6 @@
 # Toán 11 · Bài 33. Đạo hàm cấp hai
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG IX · BÀI 33 · SGK KNTT TẬP HAI</p><p class="thpt-r4-lead">Hiểu nhu cầu → điều kiện → bản chất trước công thức → xem hình D5 → Tự thử trước Core → ví dụ có suy luận → Core, Luyện tập, D6. Không ghi Mastery từ hoạt động tự học.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương IX</a><a href="../luyen-tap/">Core/Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra tự đối chiếu</a></nav></div>
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG IX · BÀI 33 · SGK KNTT TẬP HAI</p><p class="thpt-r4-lead">Hiểu nhu cầu → điều kiện → bản chất trước công thức → xem hình minh họa → Tự thử trước Core → ví dụ có suy luận → Core, Luyện tập và tự khắc phục. Không ghi Mastery từ hoạt động tự học.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương IX</a><a href="../luyen-tap/">Core/Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra tự đối chiếu</a></nav></div>
 
 ## 1. Kiến thức SGK — hình thành bản chất trước công thức
 
@@ -28,7 +28,7 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 ### 1.7. Đọc hình để hiểu lập luận
 
-<figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHIX-B33-01_R00.svg" alt="Hình FIG-G11-CHIX-B33-01 minh họa lập luận trong Bài 33" /><figcaption>Hình D5 — FIG-G11-CHIX-B33-01. Đọc hình theo lời giải thích trong phần Kiến thức ở trên.</figcaption></figure>
+<figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHIX-B33-01_R00.svg" alt="Hình minh họa 1 về lập luận trong Bài 33" /><figcaption>Hình minh họa 1 — đọc hình theo lời giải thích trong phần Kiến thức ở trên.</figcaption></figure>
 
 ## 2. Ví dụ có suy luận
 
