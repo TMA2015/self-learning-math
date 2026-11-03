@@ -4,7 +4,7 @@
  */
 (() => {
   "use strict";
-  const expected = Object.freeze({CHI:20,CHII:15,CHIII:12,CHIV:17,CHV:13,CHVI:20});
+  const expected = Object.freeze({CHI:20,CHII:15,CHIII:12,CHIV:17,CHV:13,CHVI:20,CHVII:18});
   const scriptUrl = document.currentScript && document.currentScript.src;
   const create = (tag,cls,txt) => {
     const x=document.createElement(tag);
@@ -163,7 +163,26 @@
         const response=await fetch(url);
         if(!response.ok)throw Error("HTTP "+response.status);
         const book=await response.json();
-        if(chapter==="CHVI"){
+        if(chapter==="CHVII"){
+           // Exact reviewed PUBLIC Practice/Application bank. 33 protected RD1 items stay outside site.
+           const bank=window.THPT_G11_CHVII_REVIEWED_FORMATIVE;
+           if(!bank||!bank.validate().valid||bank.contentVersion!==book.original_public_bank_version||
+              book.mode!=="PUBLIC_CANONICAL_REFERENCE_ONLY"||
+              book.original_public_source_blob!=="afc8ec039213b87b4930f2d34d48c28d1fc6277f"||
+              !Array.isArray(book.item_refs)||book.item_refs.length!==18||
+              new Set(book.item_refs).size!==18)throw Error("CHVII original public bank/reference mismatch");
+           const byId=new Map(bank.records.map(q=>[q.item_id,q]));
+           const chosen=book.item_refs.map(id=>{
+             const q=byId.get(id);
+             if(!q||q.exposure!=="FORMATIVE_ONLY"||!(q.role==="PRACTICE"||q.role==="APPLICATION"))throw Error("Unreviewed/private ChVII ID: "+id);
+             const parts=q.solution.split("\nLời giải: ");
+             if(parts.length!==2||!parts[0].startsWith("Đáp án: ")||!parts[1])throw Error("ChVII original solution missing");
+             return {item_id:q.item_id,type:"FREE_TEXT",stem:q.stem,answer:parts[0].slice("Đáp án: ".length),solution:parts[1],outcome_id:q.skill};
+           });
+           if(new Set(chosen.map(q=>q.outcome_id)).size!==18)throw Error("ChVII Practice skill coverage duplicated");
+           book.items=chosen;
+         }
+         if(chapter==="CHVI"){
            // Exact reviewed PUBLIC Practice/Application bank. 22 protected RD1 items stay outside site.
            const bank=window.THPT_G11_CHVI_REVIEWED_FORMATIVE;
            if(!bank||!bank.validate().valid||bank.contentVersion!==book.original_public_bank_version||
