@@ -26,6 +26,16 @@ const bank=window.THPT_G11_CHIII_REVIEWED_FORMATIVE;
 assert(bank?.validate().valid,"ChIII bank valid");
 assert.equal(JSON.stringify(bank.records),JSON.stringify(expected),"Exact original question, answer, solution, skill, role and ID parity");
 assert.equal(new Set(bank.records.map(q=>q.item_id)).size,28,"No duplicated public canonical IDs");
+// B09 local learner-facing numbering (1–6) is UI-only; exact reviewed math bodies stay unchanged.
+const b09Knowledge=read("docs/thpt-preview/sgk/lop-11/chuong-iii/bai-9.md");
+const reviewedB09=[...source.matchAll(/^\\*\\*(?:5|6|7|8|9|10)\\. ([^*]+)\\*\\* (.+)$/gm)];
+assert.equal(reviewedB09.length,6,"Six original B09 D1 ideas on the immutable source");
+for(const [i,entry] of reviewedB09.entries()){
+ const localHeading=entry[1].replace(/\\.$/,"");
+ const expected="### "+(i+1)+". "+localHeading+"\\n\\n"+entry[2];
+ assert(b09Knowledge.includes(expected),"B09 rendered local idea "+(i+1)+" retains exact R03 reviewed mathematical paragraph");
+}
+assert(!/\\*\\*(?:5|6|7|8|9|10)\\. /.test(b09Knowledge),"No misleading chapter-global ordinal on B09 knowledge page");
 const hub=read("docs/thpt-preview/sgk/lop-11/chuong-iii/luyen-tap.md");
 for(const [lesson,cores,practices,figs] of [[8,5,8,1],[9,5,10,2]]){
  assert.equal(bank.forLesson(lesson,"core").length,cores);
