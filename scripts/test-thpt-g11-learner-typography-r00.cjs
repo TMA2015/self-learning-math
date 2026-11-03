@@ -26,4 +26,35 @@ for(let n=1;n<=30;n++){
  count++;
 }
 assert.equal(count,30);
+// Extend AP1/AP2 presentation checks beyond Knowledge into eight SGK chapter shells.
+const chapters=["i","ii","iii","iv","v","vi","vii","viii"];
+let chapterPages=0,originalWritten=0;
+for(const roman of chapters){
+ const base="docs/thpt-preview/sgk/lop-11/chuong-"+roman;
+ const paths=[
+  {file:base+".md",kind:"overview"},
+  {file:base+"/luyen-tap.md",kind:"practice"},
+  {file:base+"/tu-kiem-tra-chuong.md",kind:"selfcheck"},
+  {file:"docs/thpt-preview/thu-vien/tu-luan-g11-chuong-"+roman+
+   (roman==="i"?"-b01-b02":"")+".md",kind:"written"}
+ ];
+ for(const {file,kind} of paths){
+  const content=fs.readFileSync(file,"utf8");
+  assert(content.startsWith("# "),file+" missing canonical learner heading");
+  const outside=content.replace(/\\\([\s\S]*?\\\)/g,"");
+  const raw=outside.match(/[\w)\]]\^(?:\{|[A-Za-z0-9(])/g)||[];
+  assert.equal(raw.length,0,file+" raw visible exponent ^");
+  if(kind==="selfcheck")assert(content.includes("data-g11-chapter-selfcheck"),file+" missing Final Submit hook");
+  if(kind==="practice")assert(content.includes("data-thpt-open-quiz"),file+" missing public Core/Practice links");
+  if(kind==="written"){
+   const n=(content.match(/data-thpt-written-canonical=/g)||[]).length;
+   assert(n>0,file+" missing public original Written canonical IDs");
+   originalWritten+=n;
+  }
+  chapterPages++;
+ }
+}
+assert.equal(chapterPages,32);
+console.log("PASS G11 ancillary 32 SGK chapter pages: eight overviews, eight Core/Practice hubs, eight Final Submit shells, eight original Written libraries ("+originalWritten+" items), no raw caret ^.");
+
 console.log(`PASS G11 SGK B01–B30 AP1/AP2 static display: ${count} pages, ${math} MathJax spans, ${marked} HTML superscripts; no 2A/4B, raw ^ or maths backticks. No Academic/PED/Mastery or physical Safari verdict.`);
