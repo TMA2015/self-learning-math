@@ -28,8 +28,14 @@ function validate(source, agents, queue) {
  const failures=[],warnings=[];
  const fail=x=>failures.push(x);
  if(!source.includes("STANDARD_ID:** `SLM-THPT-QUALITY-ONE`"))fail("STANDARD_ID_NOT_EXPLICIT");
- if(!/VERSION:\*\* `1\.0\.0`/.test(source))fail("VERSION_NOT_LOCKED");
- if(!source.includes("OFFICIAL_OWNER_APPROVED_MAIN"))fail("OFFICIAL_OWNER_APPROVAL_RECEIPT_MISSING");
+ const version=(source.match(/\*\*VERSION:\*\* `(\d+\.\d+\.\d+)`/)||[])[1];
+ if(!["1.0.0","1.1.0"].includes(version))fail("VERSION_NOT_LOCKED");
+ if(version==="1.1.0"){
+   for(const token of ["SBT_REFERENCE_GAP_DOCUMENTED","SGK_CORE_AUTHORITY","REFERENCE_EXERCISE","ORIGINAL_AUTHORED","STANDARD_CHANGE_REQUEST_Q01_SOURCE_ROLES_20261103"]){
+     if(!source.includes(token))fail("Q01_V1_1_MISSING_CONTROL:"+token);
+   }
+ }
+ if(!source.includes("OFFICIAL_OWNER_APPROVED_MAIN") && !source.includes("OWNER_APPROVED_Q01_REVISION_PENDING_GOVERNANCE_QA_MERGE"))fail("OWNER_APPROVAL_RECEIPT_MISSING");
  for(const heading of REQUIRED_SECTIONS)if(!source.includes(heading))fail("MISSING_SECTION:"+heading);
  const tableStart=source.indexOf("## II. Ma trận chuẩn chất lượng duy nhất Q01–Q18");
  const tableEnd=source.indexOf("## III.",tableStart);
@@ -65,7 +71,11 @@ function selfTest(){
  assert.equal(a.status,"STANDARD_SCHEMA_PASS_NOT_ACADEMIC_PASS",a.failures.join(";"));
  let bad=full.replace("| **Q18 Review/fidelity**","| **Q17 Review/fidelity**");
  assert(validate(bad,"","").failures.some(e=>e.startsWith("Q01_Q18_MATRIX")));
- console.log("PASS 3 governance-only preflight fixtures: schema, missing evidence, duplicate Q");
+ if(/\*\*VERSION:\*\* `1\.1\.0`/.test(full)){
+   assert(validate(full.replace("SBT_REFERENCE_GAP_DOCUMENTED","SBT_REF_GAP_DELETED"),"","").failures.some(e=>e.startsWith("Q01_V1_1_MISSING_CONTROL")));
+   assert(validate(full.replace("**VERSION:** `1.1.0`","**VERSION:** `9.9.9`"),"","").failures.includes("VERSION_NOT_LOCKED"));
+ }
+ console.log("PASS governance-only preflight: one standard version, owner decision, Q01 source roles, missing evidence, duplicate Q and negative invalid version (NOT Academic/PED PASS)");
 }
 if(process.argv.includes("--self-test"))selfTest();
 const source=fs.readFileSync(path.join(ROOT,FILE),"utf8");
