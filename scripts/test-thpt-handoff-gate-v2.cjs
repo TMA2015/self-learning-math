@@ -91,7 +91,7 @@ function verifySupplementSafety(data, handoff) {
   assert.equal(field(handoff, "LEARNING_PATH"), "SGK_EXPERIENCE_SUPPLEMENT");
   assert.equal(field(handoff, "RELEASE_SCOPE"), "SGK_EXPERIENCE_SUPPLEMENT");
   const custody = section(handoff, "PRIVATE_RD1_CUSTODY_METADATA");
-  assert(/RD1_PRIVATE_COUNT\\s*=\\s*0/.test(custody), "Supplement must document zero private RD1");
+  assert(/RD1_PRIVATE_COUNT\s*=\s*0/.test(custody), "Supplement must document zero private RD1");
   assert(/no independent SGK_CHAPTER_READINESS/i.test(custody), "Supplement must disclaim independent chapter Readiness");
 }
 
@@ -155,7 +155,11 @@ function selfTest() {
   assert.equal(verifyLaneScope("LEARNING_PATH: SGK_CHAPTER\nRELEASE_SCOPE: FULL_LEARNING_PATH"), "SGK_CHAPTER");
   assert.equal(verifyLaneScope("LEARNING_PATH: SGK_EXPERIENCE_SUPPLEMENT\nRELEASE_SCOPE: SGK_EXPERIENCE_SUPPLEMENT"), "SGK_EXPERIENCE_SUPPLEMENT");
   assert.throws(() => verifyLaneScope("LEARNING_PATH: SGK_EXPERIENCE_SUPPLEMENT\nRELEASE_SCOPE: FULL_LEARNING_PATH"));
-  assert.throws(() => verifyLaneScope("LEARNING_PATH: SGK_CHAPTER\nRELEASE_SCOPE: SGK_EXPERIENCE_SUPPLEMENT"));
+  assert.throws(() => verifyLaneScope("LEARNING_PATH: SGK_CHAPTER\\nRELEASE_SCOPE: SGK_EXPERIENCE_SUPPLEMENT"));
+  const safeSupplement="PRIVATE_RD1_COUNT: 0\\nOFFICIAL_READINESS: NOT_CLAIMED\\nMASTERY_ACTIVATION: NO\\nRELEASE_AUTHORIZATION: NO";
+  const safeHandoff="LEARNING_PATH: SGK_EXPERIENCE_SUPPLEMENT\\nRELEASE_SCOPE: SGK_EXPERIENCE_SUPPLEMENT\\n## PRIVATE_RD1_CUSTODY_METADATA\\nRD1_PRIVATE_COUNT = 0, no independent SGK_CHAPTER_READINESS.";
+  assert.doesNotThrow(() => verifySupplementSafety(safeSupplement, safeHandoff));
+  assert.throws(() => verifySupplementSafety(safeSupplement.replace("PRIVATE_RD1_COUNT: 0","PRIVATE_RD1_COUNT: 1"),safeHandoff));
   assert.throws(() => ids("## IDS\n- A\n- A\n", "IDS"));
   assert.throws(() => field("X: REPLACE_ME","X"));
   assert.equal(field("X: PASS\n", "X"), "PASS");

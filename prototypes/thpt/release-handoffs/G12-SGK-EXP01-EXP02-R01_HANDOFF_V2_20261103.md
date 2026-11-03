@@ -1,10 +1,10 @@
-# G12 SGK Toán 12 — EXP01/EXP02 R01 V2 evidence draft (NOT CONTENT_READY)
+# G12 SGK Toán 12 — EXP01/EXP02 R01 | AUTHORING CONTENT_READY · V2 source-locked
 
 PACKET_ID: G12-SGK-EXP01-EXP02-R01
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 1.1.0
-LEARNING_PATH: SGK_EXPERIENCE_EXTENSION_OF_COMPLETE_SGK_PATH
+LEARNING_PATH: SGK_EXPERIENCE_SUPPLEMENT
 RELEASE_SCOPE: SGK_EXPERIENCE_SUPPLEMENT
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/G12_SGK_XP_TWO_EXPERIENCES_R01_CANONICAL_20261103.md
@@ -13,12 +13,12 @@ REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/G12_XP_R01_Q18_OWNER_PASTED_
 REVIEW_RECEIPT_BLOB: b765e732fa8049482936dbededfafd7b9eb99341
 ACADEMIC_VERDICT: PASS
 PEDAGOGICAL_VERDICT: PASS
-CONTENT_READY: NO
-BLOCKERS: V2_PACKET_TYPE_GATE_OWNER_DECISION_REQUIRED
+CONTENT_READY: YES
+BLOCKERS: NONE
 RELEASE_AUTHORIZATION: NO
 MASTERY_ACTIVATION: NO
 
-This draft is a source-linked evidence register only. It is **not** a ready manifest or an approved handoff. Keep it outside `release-queue/ready/` and do not add a fabricated ready REGISTER row.
+This is the **one canonical SOURCE-LOCKED V2 AUTHORING handoff** for the owner-approved SGK experiential supplement under the existing single quality standard Q01–Q18. Owner approved the V2 packet-type extension in chat on 03/11/2026; source+receipt immutable Git blobs and A1–A7/PED were independently reconciled. A matching canonical manifest is located at `prototypes/thpt/release-queue/ready/G12-SGK-EXP01-EXP02-R01.md`; THIS FILE IS NOT a manifest or website release approval.
 
 ## S1_SGK_SBT_SOURCE
 SGK Toán 12 Kết nối tri thức Tập Hai, PDF SHA256 `3c642f2e80d86d699ea62bbcabd0c3074fd5118def96e4b3b8ce1f9ead7f97bb`; experiential activity #1 printed 81–84/PDF1 83–86, #2 printed 85–89/PDF1 87–91, independently of end-of-year revision pp90–93 and independent of TOPIC. The SBT is supplementary problem-family reference and no copied exercises are asserted.
@@ -137,7 +137,7 @@ Each of 10 outcomes `G12-SGK-EXP0[12]-O01..O05` in canonical R01 source includes
 - PED6_FIRST_TRY_REMEDIATION: two self-revealed first tries per activity before Core and HELP-XP per outcome; no Mastery credit.
 
 ## QUALITY_Q01_Q18_EVIDENCE
-Normative standard **only**: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md` (official Q01–Q18, version 1.1.0). Rows trace evidence, they do not independently grant PASS and cannot bypass a remaining hold.
+Normative standard **only**: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md` (official Q01–Q18, version 1.1.0). Rows trace reviewer and source evidence; the owner-approved V2 supplement route closes the former operational type hold. This table does not independently create a reviewer verdict or authorize release.
 
 | Q_ID | LESSON_OUTCOME_IDS | AUTHORING_EVIDENCE | INDEPENDENT_REVIEW_RECEIPT | RELEASE_RECHECK |
 | --- | --- | --- | --- | --- |
@@ -172,9 +172,12 @@ DELTA_C_ACADEMIC_MATERIAL. Affect all ten Written `-W01..W05` by inserting exact
 This is experiential public supplemental instruction: RD1_PRIVATE_COUNT = 0 for both activities. There is no protected held-out question set in source, and no independent SGK_CHAPTER_READINESS/Mastery result. Ten END placements reference existing public Application canonical IDs and are `CLIENT_SELF_CHECK_NO_MASTERY`, with answers to appear only after voluntary self-reveal/Final Submit when RELEASE safely implements it. No website/client runtime authored here.
 
 ## AUTHOR_SIGNOFF
-As of 03/11/2026, AUTHORING source is immutable and explicitly versioned: FINAL canonical source Git blob `8a34d1cf4009b9b6511a34c08c5d8e31525a6a46`; R00 original 9/9 assets SHA-locked; R00 original, R01 targeted and Q18 corrected reviewer records preserved as separate immutable Git blobs. All A1–A7 academic/PED/source-custody evidence gates **PASS within the two SGK experiential activities**, and Q01–Q18 are evidenced on the corrected source per received independent verdict. Exact source SHA validated locally and through GitHub Contents API.
 
-**NOT CONTENT_READY; blocker is `V2_PACKET_TYPE_GATE_OWNER_DECISION_REQUIRED` (operational V2 contract support, not an academic defect).** Existing `scripts/test-thpt-handoff-gate-v2.cjs` requires *new READY* manifest `LEARNING_PATH=SGK_CHAPTER` / `RELEASE_SCOPE=FULL_LEARNING_PATH`; this reviewed standalone SGK experiential supplement must not lie about those values. Owner permission/contract clarification is required to establish a safe non-chapter V2 packet route; no new manifest at `ready/`, no REGISTER row, and no code changes in AUTHORING.
+**Signed AUTHORING academic handoff, 03/11/2026:** owner explicitly approved the truthful V2 `SGK_EXPERIENCE_SUPPLEMENT` packet type; this packet has 2 SGK experiential lessons/10 outcomes/40 unique canonical public IDs, 5 original PNG, 10 D4 Written /5, 10 D6 HELP, source scope pp81–89, no independent held-out RD1. Authoring source at `prototypes/thpt/content-drafts/G12_SGK_XP_TWO_EXPERIENCES_R01_CANONICAL_20261103.md`, Git blob `8a34d1cf4009b9b6511a34c08c5d8e31525a6a46`, SHA256 `f71ad85676357005318b07068102415cb663549cdea87c677ed74382fea7d4de`; first source commit `f965cbafd1415de45f24da2e3cbad0b9f91a663a`. Original Q18 independent reviewer verdict receipt at `prototypes/thpt/review-packets/G12_XP_R01_Q18_OWNER_PASTED_REVIEW_RECEIPT_20261103.md` blob `b765e732fa8049482936dbededfafd7b9eb99341`; historical R00 and R01 full NotebookLM reports remain immutable. A1–A7, Q01–Q18 scoped evidence and Academic+PED verdict **PASS**, P0/P1/P2=0; academic/source blockers **NONE**, DELTA_C Written and DELTA_B receipt closed.
+
+`LEARNING_PATH=SGK_EXPERIENCE_SUPPLEMENT`, `RELEASE_SCOPE=SGK_EXPERIENCE_SUPPLEMENT`, `ASSESSMENT_MODE=CLIENT_SELF_CHECK_NO_MASTERY`, `RD1_PRIVATE_COUNT=0`, `OFFICIAL_READINESS=NOT_CLAIMED`, `MASTERY_ACTIVATION=NO`. The **CONTENT_READY** handoff does not mean `SGK_CHAPTER_READINESS`/Topic mastery, code integration or deployed website, and does not count as a new SGK chapter. Owner-approved V2 supplement route is documented in `prototypes/thpt/THPT_TWO_LANE_SOURCE_LOCKED_HANDOFF_CONTRACT_v2_20261102.md` without modifying the unique academic standard.
+
+AUTHORING PR: [#733](https://github.com/TMA2015/self-learning-math/pull/733) (Draft, not merged). `BLOCKERS: NONE` for AUTHORING academic/source scope; separate RELEASE AP/R gates remain PENDING. Verify `prototypes/thpt/release-queue/ready/G12-SGK-EXP01-EXP02-R01.md` exact-HEAD CI before consuming this as ready.
 
 ## RELEASE_ACCEPTANCE
-**NOT RECEIVABLE AS READY UNTIL OWNER DECIDES V2 SUPPLEMENT ROUTE.** All R1–R5, AP1–AP5, exact-final-head CI, Final Submit technical controls, P1/P2 and owner release authorization belong to the separate RELEASE lane after CONTENT_READY; nothing here grants release.
+**RECEIVABLE AS AUTHORING CONTENT_READY only after exact-final-HEAD CI confirms the owner-approved supplement V2 gate.** RELEASE must stage unchanged source Git blob `8a34d1cf4009b9b6511a34c08c5d8e31525a6a46` in a separate explicitly authorized integration PR and verify AP1–AP5, R1–R5, Final Submit exposure/no pre-submit feedback, privacy, P1/P2 after any deployment. Current owner permission extends V2 AUTHORING handoff **only**: `RELEASE_AUTHORIZATION=NO` and `MASTERY_ACTIVATION=NO`; do not merge/deploy this Draft.
