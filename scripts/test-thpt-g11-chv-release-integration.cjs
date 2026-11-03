@@ -32,7 +32,10 @@ for(const n of [15,16,17]){
  const d2=[...s.matchAll(new RegExp("^\\*\\*(EX-G11-B"+n+"-\\d{2})[^\\n]+$","gm"))];
  const expectedD2=n===16?5:4;
  assert.equal(d2.length,expectedD2,"Reviewed original D2 examples B"+n);d2Total+=d2.length;
- for(const m of d2)assert(page.includes(m[0]),"Original full D2 explanation "+m[1]);
+ for(const m of d2){
+   const sourceEquivalent=m[0].replace(/\^(\{([^{}]+)\}|\(([^()]*)\)|([A-Za-z0-9]))/g,(_,whole,curly,paren,unit)=>"<sup>"+(curly??paren??unit)+"</sup>");
+   assert(page.includes(sourceEquivalent),"Exact original full D2 explanation after typography-only superscript rendering "+m[1]);
+  }
  assert(page.includes("Cầu nối"),"Concept/prequisite learning bridge B"+n);
  assert.equal((page.match(/data-ped-first-try="1"/g)||[]).length,1,"One voluntary hidden pre-Core try");
  assert.equal((page.match(/data-thpt-help-id=/g)||[]).length,2,"Two original HELP D6 B"+n);

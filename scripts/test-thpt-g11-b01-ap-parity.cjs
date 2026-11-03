@@ -28,11 +28,11 @@ const origSuffix=suffix.replace(/^## Hướng suy luận trong các ví dụ\n\n
  .replace(/^### Hướng dẫn đọc hình, đồ thị\n\n[\s\S]*?(?=^## 4\. )/m,"");
 assert.equal(fnv(origSuffix),"987319a3","Original B01 examples, SVG, HELP and written routes changed");
 for(const name of [
-"### 1. Góc lượng giác và số đo",
-"### 2. Radian và độ dài cung",
-"### 3. Đường tròn lượng giác",
-"### 4. Tang, côtang và điều kiện xác định",
-"### 5. Các góc liên quan đặc biệt",
+"### 1.1. Góc lượng giác và số đo",
+"### 1.2. Radian và độ dài cung",
+"### 1.3. Đường tròn lượng giác",
+"### 1.4. Tang, côtang và điều kiện xác định",
+"### 1.5. Các góc liên quan đặc biệt",
 "**Các góc cùng tia cuối.**",
 "**Đổi giữa độ và radian:**",
 "**Hệ thức cơ bản (đúng với mọi α):**",

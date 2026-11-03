@@ -62,7 +62,7 @@ u_n=1/n (n≥1) có u_{n+1}−u_n=−1/[n(n+1)]<0, nên giảm nghiêm ngặt, �
 
 ### Hướng dẫn đọc hình
 
-- chỉ số n=1..6 là các **giá trị rời rạc**; u_n=(-1)^n cho dãy −1,1,−1,1,−1,1; không nối chúng thành đồ thị một hàm liên tục theo n thực. Từ hình, dãy **không tăng/giảm nghiêm ngặt** nhưng bị chặn giữa −1 và 1.
+- chỉ số n=1..6 là các **giá trị rời rạc**; u_n=(-1)<sup>n</sup> cho dãy −1,1,−1,1,−1,1; không nối chúng thành đồ thị một hàm liên tục theo n thực. Từ hình, dãy **không tăng/giảm nghiêm ngặt** nhưng bị chặn giữa −1 và 1.
 
 ## 4. Tự khắc phục lỗi thường gặp
 

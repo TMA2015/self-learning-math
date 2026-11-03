@@ -4,19 +4,19 @@
 
 ## 1. Kiến thức SGK và ví dụ có suy luận
 
-### 1. Vì sao cần học (WHY)
+### 1.1. Vì sao cần học (WHY)
 Một cột dựng đứng phải vuông góc cả nền nhà chứ không chỉ vuông góc với một vạch sơn trên nền. Một phương duy nhất chưa xác định được tư thế của cả mặt phẳng.
 
-### 2. Khái niệm thực chất (WHAT)
+### 1.2. Khái niệm thực chất (WHAT)
 d⊥(P) khi d vuông góc **mọi đường thẳng** trong (P). Đường d cắt (P) tại chân H.
 
-### 3. Hình thành và lập luận (HOW)
+### 1.3. Hình thành và lập luận (HOW)
 Nếu d⊥a và d⊥b với a,b cắt nhau thuộc (P), thì d⊥(P). Vì hai phương cắt nhau sinh mọi phương trong mặt phẳng, phép kiểm hai phương đủ. Từ d⊥(P), mọi đường d′//d cũng ⊥(P); qua một điểm có đúng một đường vuông góc (P).
 
-### 4. Điều kiện, giới hạn, lỗi thường gặp (FORMAL)
+### 1.4. Điều kiện, giới hạn, lỗi thường gặp (FORMAL)
 Hai đường a,b phải **cắt nhau** trong (P); hai đường song song không đủ. Một đường thuộc (P) không thể đồng thời là đường vuông góc (P). Nếu (Q)//(P), d⊥(P) ⇒ d⊥(Q).
 
-### 4B. Làm rõ các định lí, điều kiện và cấu trúc SGK (DEEPENING)
+#### 1.4.1. Làm rõ các định lí, điều kiện và cấu trúc SGK (DEEPENING)
 **Định nghĩa so với dấu hiệu kiểm tra:** Việc d⊥mọi đường trong (P) là *định nghĩa*, nhưng rất khó kiểm vô số đường. Dấu hiệu **đủ** chỉ cần d vuông góc hai đường a,b *cắt nhau* của (P). Vì a và b cung cấp hai phương khác nhau trong mặt phẳng, một phương vuông góc với cả hai là pháp tuyến của mặt. Đừng bỏ chữ “cắt nhau”: nếu a//b, hai phép kiểm thực chất chỉ kiểm một phương.
 
 **Chứng minh có trình tự:** Bước 1 gọi mặt phẳng cần chứng minh và chỉ ra chính xác hai đường a,b nằm trong đó. Bước 2 chứng minh a∩b là một điểm. Bước 3 chứng minh d⊥a và d⊥b từ dữ kiện, ví dụ các tam giác vuông. Bước 4 kết luận d⊥(P). Bước 5, chỉ *sau* khi có d⊥(P), mới được kết luận d vuông góc mọi đường khác trong (P).
@@ -25,18 +25,18 @@ Hai đường a,b phải **cắt nhau** trong (P); hai đường song song khôn
 
 **Quan sát vật thật:** Chân cột gắn hai thanh chéo nhau nhưng không nằm trên cùng nền cũng không đủ để kiểm hai đường cắt nhau trong một mặt phẳng. Chọn hai vạch thật sự cùng thuộc nền và giao nhau.
 
-### 5. Hình dẫn giải D5
+### 1.5. Hình dẫn giải D5
 
 <figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVII-B23-01_R00.svg" alt="Hình B23: Cột AH được xác nhận vuông góc mặt nền bởi AH⊥AB và AH⊥AD, AB,AD cắt nhau tại A."/><figcaption>Hình B23: Cột AH được xác nhận vuông góc mặt nền bởi AH⊥AB và AH⊥AD, AB,AD cắt nhau tại A.</figcaption></figure>
 
 **Hướng dẫn đọc hình:** Cột AH được xác nhận vuông góc mặt nền bởi AH⊥AB và AH⊥AD, AB,AD cắt nhau tại A. Hình là sơ đồ giải thích phương pháp, **không được suy góc hay độ dài từ nét vẽ phối cảnh**. Điều kiện vuông góc phải có chứng minh.
 
-### 6. Tự thử trước bài luyện tập
+### 1.6. Tự thử trước bài luyện tập
 Biết cột k vuông góc hai vạch sàn song song: đã đủ nói k⊥sàn chưa? Chưa; cần hai vạch có phương không song song và cắt nhau.
 
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Đã tự thử? Mở hướng dẫn tự đối chiếu</summary><p>Đối chiếu lập luận của em với phần ví dụ được giải thích dưới đây. Đây là hoạt động luyện tập, không ghi Skill Mastery.</p></details>
 
-### 7. Ví dụ có hướng dẫn D2 (giải thích vì sao chọn phương pháp)
+### 1.7. Ví dụ có hướng dẫn D2 (giải thích vì sao chọn phương pháp)
 
 
 #### EX-G11-CHVII-B23-01 — Hai phương sàn đủ để dựng cột

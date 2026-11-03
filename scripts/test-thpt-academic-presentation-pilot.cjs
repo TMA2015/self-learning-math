@@ -9,8 +9,8 @@ const checks=[
   {
     file:"docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md",
     mathCount:16,mathHash:"418a504f",prefixHash:"c7ded31c",suffixHash:"e3c3e02a",
-    groups:["### 1. Công thức cộng và trừ","### 2. Công thức nhân đôi",
-      "### 3. Tích thành tổng","### 4. Tổng thành tích"],
+    groups:["### 1.1. Công thức cộng và trừ","### 1.2. Công thức nhân đôi",
+      "### 1.3. Tích thành tổng","### 1.4. Tổng thành tích"],
     required:["**Điều kiện áp dụng:**","**Lỗi cần tránh:**","**Điểm cần nhớ:**"]
   },
   {

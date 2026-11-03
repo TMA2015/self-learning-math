@@ -30,7 +30,7 @@ Không. sin90°=1, còn sin30°+sin60°=(1+√3)/2 > 1. Hãy trở lại phần 
 
 <span class="thpt-ap-knowledge-pilot" hidden aria-hidden="true"></span>
 
-### 1. Công thức cộng và trừ
+### 1.1. Công thức cộng và trừ
 
 **Công thức cos**
 
@@ -56,7 +56,7 @@ tan(u±v)=(tan u±tan v)/(1∓tan u tan v)
 
 **Điều kiện áp dụng:** Cần **tan u, tan v đều xác định** và mẫu số khác 0; nếu không, nên dùng sin/cos trực tiếp.
 
-### 2. Công thức nhân đôi
+### 1.2. Công thức nhân đôi
 
 **Sin của góc nhân đôi**
 
@@ -78,7 +78,7 @@ tan2u=2tan u/(1−tan²u)
 
 **Điều kiện áp dụng:** Chỉ khi mọi giá trị tan trong biểu thức xác định và \(1−tan²u≠0\).
 
-### 3. Tích thành tổng
+### 1.3. Tích thành tổng
 
 **Tích sin · sin**
 
@@ -100,7 +100,7 @@ tan2u=2tan u/(1−tan²u)
 
 **Lưu ý về dấu:** Quy tắc dấu không tự hoán đổi giữa sin·sin và cos·cos.
 
-### 4. Tổng thành tích
+### 1.4. Tổng thành tích
 
 **Tổng và hiệu hai sin**
 

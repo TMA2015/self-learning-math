@@ -272,6 +272,10 @@ jobs:
           }
           Write-Host "PASS: PowerShell LAN preview runner parses"
 
+      - name: G11 SGK B01–B30 AP1/AP2 heading and math display static gate
+        run: |
+          node --check scripts/test-thpt-g11-learner-typography-r00.cjs
+          node scripts/test-thpt-g11-learner-typography-r00.cjs
       - name: Build alternate THPT preview config (never main config)
         run: mkdocs build -f mkdocs.thpt-preview.yml --clean
       - name: Verify R4 preview pages and assets exist
@@ -340,6 +344,8 @@ jobs:
           node scripts/test-thpt-r4-preview-browser.js
       - name: Chapter overview Golden VII cards · phone tablet desktop browser QA
         run: node scripts/test-thpt-chapter-overview-golden-vii-browser.cjs
+      - name: G11 full 30-lesson AP1/AP2/MathJax responsive browser verification · 390 820 1440
+        run: node scripts/test-thpt-g11-learner-typography-browser-r00.cjs
       - name: SGK and Chuyên đề search QA · class/chapter/lesson · mobile / iPad / desktop
         run: node scripts/test-thpt-r4-search-browser.cjs
       - name: THPT desktop contextual sidebar · SGK and Topic lesson / summary · phone untouched

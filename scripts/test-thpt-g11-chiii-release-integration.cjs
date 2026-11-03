@@ -30,10 +30,30 @@ assert.equal(new Set(bank.records.map(q=>q.item_id)).size,28,"No duplicated publ
 const b09Knowledge=read("docs/thpt-preview/sgk/lop-11/chuong-iii/bai-9.md");
 const reviewedB09=[...source.matchAll(/^\*\*(?:5|6|7|8|9|10)\. ([^*]+)\*\* (.+)$/gm)];
 assert.equal(reviewedB09.length,6,"Six original B09 D1 ideas on the immutable source");
+// Source R03 stays SHA-locked. Check all six original ideas including exact prose,
+ // math expression order/count, and equivalent MathJax notation (not just headings).
+const sourceMo="Mo = L + [(m_j-m_{j-1})/((m_j-m_{j-1})+(m_j-m_{j+1}))]h",displayedMo="Mo = L + \\frac{m_j-m_{j-1}}{(m_j-m_{j-1})+(m_j-m_{j+1})}h";
+const canonicalMath=s=>s.replace(displayedMo,sourceMo).replace(/\\overline\{([a-zA-Z])\}/g,"$1\u0304")
+ .replace(/\\sum\s*/g,"Σ").replace(/\\le\s*/g,"≤").replace(/\\ge\s*/g,"≥")
+ .replace(/\\in\s*/g,"∈").replace(/\\ne\s*/g,"≠").replace(/\\pi\s*/g,"π")
+ .replace(/\\mathbb\{R\}/g,"ℝ").replace(/\s+/g,"");
+const shape=t=>t.replace(/\x60[^\x60\n]+\x60/g,"@")
+ .replace(/\\\(([\s\S]*?)\\\)/g,"@").trim();
 for(const [i,entry] of reviewedB09.entries()){
  const localHeading=entry[1].replace(/\.$/,"");
- const expected="### "+(i+1)+". "+localHeading+"\n\n"+entry[2];
- assert(b09Knowledge.includes(expected),"B09 rendered local idea "+(i+1)+" retains exact R03 reviewed mathematical paragraph");
+ const heading="### 1."+(i+1)+". "+localHeading+"\n\n";
+ const start=b09Knowledge.indexOf(heading);
+ assert(start>=0,"B09 missing exact reviewed idea "+(i+1)+" with hierarchical title");
+ const nextHeading=b09Knowledge.indexOf("### 1."+(i+2)+". ",start+heading.length);
+ const end=nextHeading>=0?nextHeading:b09Knowledge.indexOf("## 2. Ví dụ",start);
+ const rendered=b09Knowledge.slice(start+heading.length,end);
+ assert(shape(rendered).startsWith(shape(entry[2])),"B09 R03 original prose altered in idea "+(i+1));
+ const raw=[...entry[2].matchAll(/\x60([^\x60\n]+)\x60/g)].map(m=>m[1]);
+ const math=[...rendered.matchAll(/\\\(([\s\S]*?)\\\)/g)].map(m=>m[1]);
+ assert.equal(math.length,raw.length,"B09 original math expression count changed in idea "+(i+1));
+ for(let k=0;k<raw.length;k++){
+  assert.equal(canonicalMath(math[k]),canonicalMath(raw[k]),"B09 source formula/condition changed idea "+(i+1)+" #"+(k+1));
+ }
 }
 assert(!/\*\*(?:5|6|7|8|9|10)\. /.test(b09Knowledge),"No misleading chapter-global ordinal on B09 knowledge page");
 const hub=read("docs/thpt-preview/sgk/lop-11/chuong-iii/luyen-tap.md");

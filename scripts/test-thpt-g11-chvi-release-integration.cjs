@@ -41,7 +41,7 @@ for(const [n,C,P,E] of [[18,5,7,6],[19,3,6,4],[20,4,4,4],[21,4,8,5]]){
  const originalD1=D1.slice(start,end>0?end:D1.indexOf("## Kết nối toàn chương",start));
  const ex=originalD1.split("\n").filter(l=>l.startsWith("**EX-G11-B"+n+"-"));
  assert.equal(ex.length,E,"Full original D2 count B"+n);
- for(const line of ex)assert(page.includes(line),"Original D2 source explanation B"+n);
+ for(const line of ex)assert(page.includes(require("./g11-ui-math-source-equivalence.cjs").render(line)),"Source-identical D2 meaning/conditions and MathJax display B"+n);
  assert.equal(bank.forLesson(n,"core").length,C);
  assert.equal(bank.forLesson(n,"practice").length,P);
  assert(page.includes('data-ped-first-try="1"')&&page.includes("## 1. Kiến thức SGK"),"Meaning-first and opt-in self-try B"+n);
