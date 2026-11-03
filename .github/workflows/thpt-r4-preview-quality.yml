@@ -110,7 +110,9 @@ jobs:
   preview-only:
     name: Build R4 preview without deployment
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    # Full THPT+THCS cross-grade browser regression now exceeds 10 minutes;
+    # retain ALL mandatory QA steps and allow source-locked preview completion.
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
