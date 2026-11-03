@@ -110,4 +110,4 @@ Tính vận tốc tức thời của $s(t)=3t^2+2t$ tại $t=1$ **bằng định
 
 ## 4. Tiếp tục
 
-[Core/Luyện tập Bài 31](../luyen-tap/) · [Tự luận Chương IX](../../../../thu-vien/tu-luan-g11-chuong-ix/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
+[Core/Luyện tập Bài 31](luyen-tap.md) · [Tự luận Chương IX](../../../thu-vien/tu-luan-g11-chuong-ix.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)

@@ -201,4 +201,4 @@ Tự giải $y=(x+1)\cos(2x)$; $z=\ln(5-x)$; $w=e^{x^2}$. Hãy nêu **mỗi bi�
 
 ## 4. Tiếp tục
 
-[Core/Luyện tập Bài 32](../luyen-tap/) · [Tự luận Chương IX](../../../../thu-vien/tu-luan-g11-chuong-ix/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
+[Core/Luyện tập Bài 32](luyen-tap.md) · [Tự luận Chương IX](../../../thu-vien/tu-luan-g11-chuong-ix.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)

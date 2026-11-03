@@ -93,4 +93,4 @@ Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn v�
 
 ## 4. Tiếp tục
 
-[Core/Luyện tập Bài 33](../luyen-tap/) · [Tự luận Chương IX](../../../../thu-vien/tu-luan-g11-chuong-ix/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
+[Core/Luyện tập Bài 33](luyen-tap.md) · [Tự luận Chương IX](../../../thu-vien/tu-luan-g11-chuong-ix.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
