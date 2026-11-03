@@ -344,6 +344,8 @@ jobs:
           node scripts/test-thpt-r4-preview-browser.js
       - name: Chapter overview Golden VII cards · phone tablet desktop browser QA
         run: node scripts/test-thpt-chapter-overview-golden-vii-browser.cjs
+      - name: G11 full 30-lesson AP1/AP2/MathJax responsive browser verification · 390 820 1440
+        run: node scripts/test-thpt-g11-learner-typography-browser-r00.cjs
       - name: SGK and Chuyên đề search QA · class/chapter/lesson · mobile / iPad / desktop
         run: node scripts/test-thpt-r4-search-browser.cjs
       - name: THPT desktop contextual sidebar · SGK and Topic lesson / summary · phone untouched
