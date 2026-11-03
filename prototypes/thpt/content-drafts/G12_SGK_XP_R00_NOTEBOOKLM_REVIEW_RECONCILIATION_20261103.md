@@ -14,7 +14,7 @@ SOURCE_CUSTODY: PENDING_EXACT_9_FILE_R00_RECOVERY
 
 ## 1. Chứng cứ nhận được (bảo toàn nguyên văn)
 
-- Original owner-pasted NotebookLM report: `prototypes/thpt/review-packets/G12_XP_R00_NOTEBOOKLM_OWNER_VERDICT_SUBMITTED_20261103.txt`; Git blob SHA `9a9654d068c897db123da0ab25bd9febb7a5a785`. File nguyên văn, không chỉnh sửa cách đặt tên cổng Q, công thức hoặc verdict.
+- Original owner-pasted NotebookLM report: `prototypes/thpt/review-packets/G12_XP_R00_NOTEBOOKLM_OWNER_VERDICT_SUBMITTED_20261103.txt`; Git blob SHA `84f41a2e6e53619772d385cec3ae69483d8ae081`. File nguyên văn, không chỉnh sửa cách đặt tên cổng Q, công thức hoặc verdict.
 - Reviewer declares `ACADEMIC_VERDICT=PASS`, `PEDAGOGICAL_SELF_LEARNING_READY=PASS`, `P0=0`, `P1=0`, `P2=0`, `MINIMAL_DELTA=0`, `PERMANENT_SOURCES_VERSION=THPT-v2.1`, `STANDARD_VERSION=1.1.0`. Đây là **verdict được báo cáo**, không phải bằng chứng đã source-lock hay được phép phát hành.
 - Phạm vi reviewer: EXP01 trang in SGK 81–84 (PDF 83–86), EXP02 trang in 85–89 (PDF 87–91); 10 outcomes, 40 public canonical items (C/P/A/W), 10 worked examples, 10 written rubrics /5, 10 D6 HELP, 5 PNG, 4 first-tries, 10 secondary placements tham chiếu Application ID đã có; không có private RD1.
 - SGK PDF S1 SHA256 trong source-audit checkpoint: `3c642f2e80d86d699ea62bbcabd0c3074fd5118def96e4b3b8ce1f9ead7f97bb`.
