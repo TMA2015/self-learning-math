@@ -38,7 +38,7 @@ function validate(source, agents, queue) {
  if(version==="1.2.0"){
    const required=["## II-B. Diễn giải áp dụng Q03/Q04/Q07/Q08/Q09–Q14/Q17 qua cùng AP1–AP5 — bổ sung v1.2.0",
      "## X-B. Quyết định hợp nhất trải nghiệm tự học — Change Log 04/11/2026",
-     "OWNER_APPROVED_UX_PED_GOVERNANCE_PENDING_MERGE",
+     "OWNER_APPROVED_EFFECTIVE_UPON_GOVERNANCE_MERGE",
      "1.1.0 → 1.2.0","LEARNER_EVIDENCE_PENDING",
      "Issue #742", "DELTA_C_ACADEMIC_MATERIAL",
      "Q09", "Q10", "Q11", "Q12", "Q13", "Q14",
@@ -48,7 +48,7 @@ function validate(source, agents, queue) {
  }
  if(!source.includes("OFFICIAL_OWNER_APPROVED_MAIN") &&
     !source.includes("OWNER_APPROVED_Q01_REVISION_PENDING_GOVERNANCE_QA_MERGE") &&
-    !source.includes("OWNER_APPROVED_UX_PED_GOVERNANCE_PENDING_MERGE"))fail("OWNER_APPROVAL_RECEIPT_MISSING");
+    !source.includes("OWNER_APPROVED_EFFECTIVE_UPON_GOVERNANCE_MERGE"))fail("OWNER_APPROVAL_RECEIPT_MISSING");
  for(const heading of REQUIRED_SECTIONS)if(!source.includes(heading))fail("MISSING_SECTION:"+heading);
  const tableStart=source.indexOf("## II. Ma trận chuẩn chất lượng duy nhất Q01–Q18");
  const tableEnd=source.indexOf("## III.",tableStart);
@@ -89,7 +89,7 @@ function selfTest(){
  }
  if(/\*\*VERSION:\*\* `1\.2\.0`/.test(full)){
    assert(validate(full.replace("## II-B. Diễn giải áp dụng", "## II-B. [REMOVED]"),"","").failures.some(e=>e.startsWith("UX_PED_V1_2_MISSING_CONTROL")));
-   assert(validate(full.replace("OWNER_APPROVED_UX_PED_GOVERNANCE_PENDING_MERGE","NO_OWNER_APPROVAL"),"","").failures.some(e=>e.startsWith("UX_PED_V1_2_MISSING_CONTROL")));
+   assert(validate(full.replace("OWNER_APPROVED_EFFECTIVE_UPON_GOVERNANCE_MERGE","NO_OWNER_APPROVAL"),"","").failures.some(e=>e.startsWith("UX_PED_V1_2_MISSING_CONTROL")));
  }
  {
    assert(validate(full.replace(/\*\*VERSION:\*\* `\d+\.\d+\.\d+`/,"**VERSION:** `9.9.9`"),"","").failures.includes("VERSION_NOT_LOCKED"));

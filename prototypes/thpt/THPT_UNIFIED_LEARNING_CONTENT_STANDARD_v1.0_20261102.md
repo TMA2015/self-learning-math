@@ -2,7 +2,7 @@
 
 **STANDARD_ID:** `SLM-THPT-QUALITY-ONE`  
 **VERSION:** `1.2.0` · **OWNER:** Chủ dự án Self-Learning Math / G Learning  
-**STATUS:** `OWNER_APPROVED_UX_PED_GOVERNANCE_PENDING_MERGE` — chủ dự án xác nhận ngày 04/11/2026 việc hợp nhất cách diễn giải và trình bày dưới **cùng Q01–Q18**, đồng ý tiến hành ban hành sau exact-head Governance/Roadmap QA. **v1.2.0 chỉ có hiệu lực khi PR quản trị được merge vào `main`**; trước thời điểm đó v1.1.0 là chuẩn chính thức (PR #726 merge `049fa190b05c3562816670d51defc62965986c31` ngày 03/11/2026). Các snapshot trước vẫn bảo toàn PASS theo đúng nguồn/receipt/phiên bản. Đây là điều chỉnh chuẩn và hướng dẫn kiểm, **không phải quyền sửa/merge/deploy học liệu hay mở Mastery**.  
+**STATUS:** `OWNER_APPROVED_EFFECTIVE_UPON_GOVERNANCE_MERGE` — chủ dự án xác nhận ngày 04/11/2026 việc hợp nhất cách diễn giải và trình bày dưới **cùng Q01–Q18**, đồng ý tiến hành ban hành sau exact-head Governance/Roadmap QA. **v1.2.0 chỉ có hiệu lực khi PR quản trị được merge vào `main`**; trước thời điểm đó v1.1.0 là chuẩn chính thức (PR #726 merge `049fa190b05c3562816670d51defc62965986c31` ngày 03/11/2026). Các snapshot trước vẫn bảo toàn PASS theo đúng nguồn/receipt/phiên bản. Đây là điều chỉnh chuẩn và hướng dẫn kiểm, **không phải quyền sửa/merge/deploy học liệu hay mở Mastery**.  
 **SCOPE:** mọi học liệu Toán THPT 10–12 KNTT theo **SGK_CHAPTER** và **TOPIC**; áp dụng cho cả tác giả, NotebookLM và nhánh phát hành. **Một tiêu chuẩn chất lượng; các cổng kiểm tra phân theo trách nhiệm, không phải hai bộ tiêu chuẩn cạnh tranh.**
 
 ## 0. Luật thống nhất và thứ tự hiệu lực
