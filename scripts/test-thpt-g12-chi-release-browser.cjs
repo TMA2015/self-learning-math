@@ -72,6 +72,7 @@ const counts=[11,12,14,14,15],helpc=[6,6,6,7,7],figurec=[1,1,1,2,1];
     const help=hub.locator("#b01-help");
     await help.locator(":scope > summary").click();
     assert.notEqual(await help.getAttribute("open"),null);
+    await help.locator("details.g12-chi-help > summary").first().click();
     const d6=help.locator("a.g12-chi-return").first();
     const anchor=await d6.getAttribute("href");
     assert(anchor.startsWith("#"),"Original D6 return-to-item link");
