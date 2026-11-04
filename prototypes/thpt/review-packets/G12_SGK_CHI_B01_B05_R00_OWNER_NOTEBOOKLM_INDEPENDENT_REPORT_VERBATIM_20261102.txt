@@ -1,0 +1,181 @@
+### BÁO CÁO PHẢN BIỆN HỌC THUẬT VÀ SƯ PHẠM ĐỘC LẬP
+**THẨM ĐỊNH TOÀN BỘ HỌC LIỆU SGK TOÁN 12 KNTT TẬP MỘT — CHƯƠNG I (BÀI 1–5 VÀ TỰ KIỂM TRA CUỐI CHƯƠNG)**
+*(Bản thẩm định độc lập theo chuẩn chuẩn mực `SLM-THPT-QUALITY-ONE` v1.0.0)*
+
+* **PACKET_ID:** `G12-SGK-CHI-B01-B05-R00-REVIEW_CANDIDATE`
+* **CƠ SỞ THẨM ĐỊNH:** Đúng **5 Permanent Sources THPT v2.1** (`01_THPT_MASTER_PLAN_v2.1` đến `05_THPT_CANONICAL_EXERCISE_AND_ID_CONTRACT_v2.1`), Nguồn S1 SGK/SBT Toán 12 KNTT Tập Một gốc và tệp nguồn snapshot `Temp_G12_SGK_CHI_B01_B05_FULL_INDEPENDENT_NOTEBOOKLM_REVIEW_R00_20261102.md` (Git blob SHA: `f0862dcdab21dec136e43969f45c42638e7c7574`).
+* **BÁO CÁO TẠO MỚI (STUDIO PANEL):** **`Bao_Cao_Kiem_Toan_Toan_12_Chuong_I_Batch_R00-v2.md`** (Đã xuất bản thành công vào Bảng Studio bên phải màn hình).
+
+---
+
+### TÓM TẮT QUẢN TRỊ VÀ KẾT LUẬN THẨM ĐỊNH (EXECUTIVE SUMMARY)
+
+1. **`ACADEMIC_VERDICT = PASS`**  
+   Học liệu đạt chuẩn mực tuyệt đối về độ chính xác toán học giải tích khảo sát hàm số, tập xác định, giới hạn hai phía/một phía, điều kiện đạo hàm, tính đơn điệu, cực trị local vs. global, GTLN/GTNN trên đoạn đóng vs. khoảng mở, tiệm cận đứng vs. lỗ trống, tiệm cận xiên, mô hình vận tốc/gia tốc, chi phí cận biên và các bài toán tối ưu có ràng buộc thực tế.
+2. **`PEDAGOGICAL_SELF_LEARNING_READY = PASS`**  
+   Học liệu đáp ứng trọn vẹn 6 tiêu chí sư phạm tự học (`PED1–PED6`): Động cơ thực tế (`PED1 WHY`), kiến thức tiền đề (`PED2 WHAT`), hình thành bản chất trước công thức (`PED3 HOW`), hướng dẫn đọc hình D5 & giới hạn điều kiện (`PED4 FORMAL`), giải thích lý do lựa chọn phương pháp (`PED5 METHOD`), và thiết kế hoạt động Tự thử định hướng trước Core (`PED6 SELF-TRY`).
+3. **`EXPOSURE_SYSTEM_VERDICT = SYSTEM_HOLD` | `RELEASE_AUTHORIZATION = NO` | `MASTERY_ACTIVATION = NO`**  
+   Phê duyệt học thuật và sư phạm này là điều kiện cần nhưng **chưa cấp phép phát hành**, không tự động kích hoạt tính năng Tự kiểm tra công khai (Final Submit), không ghi nhận điểm Skill Mastery cho học sinh và không cấp quyền merge/deploy website.
+
+---
+
+### I. SOURCE_RECEIPT VÀ XÁC MINH S1 (SGK & SBT KNTT TẬP 1 GỐC)
+
+#### 1. Nhật ký Nguồn và Git Source Blob SHA
+
+* **Tệp Snapshot Tổng hợp R00:** `Temp_G12_SGK_CHI_B01_B05_FULL_INDEPENDENT_NOTEBOOKLM_REVIEW_R00_20261102.md` (Git blob SHA: `f0862dcdab21dec136e43969f45c42638e7c7574`, dung lượng 129.772 bytes / 115.522 UTF-8 bytes).
+* **Mã Git Blob Component:**
+  * Bài 1 (*Tính đơn điệu & cực trị*): `adf4f161ff4db1d203465b22b88da8827bf8a699`
+  * Bài 2 (*Giá trị lớn nhất & nhỏ nhất*): `ae768307157fbfc38cb4c61443dee599197aa0f4`
+  * Bài 3 (*Đường tiệm cận*): `0143707da223a2dd476ab9cbc40d48c15b87b916`
+  * Bài 4 (*Khảo sát & vẽ đồ thị*): `01242eea1c26fb142b3a285bb8e122c7d6ebfa18`
+  * Bài 5 (*Ứng dụng thực tiễn*): `a5abc67eb67aaf33c7954c200d836779c2da5e5b`
+  * CHI-END (*Tự kiểm tra cuối chương*): `b9dc8aa0ae1e4f36fb365df4f01b2d4d259e5d85`
+* **Mã Git Blob SVG XML (D5):**
+  * `G12_B01_FIG01_DERIVATIVE_SIGN_R00.svg`: `e2696224533994826104e6c505d9dab26fc0a2e2`
+  * `G12_B02_FIG01_GLOBAL_MIN_MAX_CLOSED_INTERVAL_R00.svg`: `057991020c0f9349f160047cd87ae35ce03a87ef`
+  * `G12_B03_FIG01_ASYMPTOTES_R00.svg`: `802f01f5b8dce392e3a064a54efe33ae1aea44fc`
+  * `G12_B04_FIG01_RATIONAL_SURVEY_R00.svg`: `529b05d33fb0347dab70587c84c8ec08789c5c98`
+  * `G12_B04_FIG02_CUBIC_SURVEY_R00.svg`: `8e4cf830e5aa1cac3fe37b9b3c3d93d9b34c006b`
+  * `G12_B05_FIG01_BOX_VOLUME_R00.svg`: `eacd5ba60f25d87c102917a55d314fb16d6f8341`
+
+#### 2. Đối chiếu Khung trang in S1 SGK & SBT (PDF 1-based)
+
+| Bài học / Phân đoạn | SGK Trang in S1 | SGK PDF1 Page | SBT Trang in S1 | SBT PDF1 Page |
+| :--- | :---: | :---: | :---: | :---: |
+| **B01: Tính đơn điệu & cực trị** | tr. 5–14 | p. 7–16 | tr. 4–9 | p. 2–7 |
+| **B02: Giá trị lớn nhất & nhỏ nhất** | tr. 15–19 | p. 17–21 | tr. 10–16 | p. 8–14 |
+| **B03: Đường tiệm cận** | tr. 20–25 | p. 22–27 | tr. 17–20 | p. 15–18 |
+| **B04: Khảo sát & vẽ đồ thị** | tr. 26–32 | p. 28–34 | tr. 21–26 | p. 19–24 |
+| **B05: Ứng dụng thực tiễn** | tr. 33–41 | p. 35–43 | tr. 27–32 | p. 25–30 |
+| **Tự kiểm tra cuối Chương I** | tr. 42–44 | p. 44–46 | tr. 33–37 | p. 31–35 |
+| **Nguồn S1 PDF SHA-256** | `faeb554bea9cf81189c5e790b1b1edb42f50b3648694acc80dc99682ada3f1fd` | | `db9d07a2fbe55cda3b4b50fb13d1767e45a7552f668b726241c59febac69c0ca` | |
+
+---
+
+### II. BẢNG MÃ TRẬN ĐỐI CHIẾU HỌC LIỆU VÀ TỔNG HỢP ID RECONCILIATION
+
+| Bài học / Phân đoạn | Outcomes | Scored Items (D3 & D4) | Worked Examples (D2) | SVG Graphs (D5) | HELP Cards (D6) |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Bài 1: Tính đơn điệu & cực trị** | 6 | 11 (4C + 4P + 1A + 2W) | 4 | 1 | 6 |
+| **Bài 2: Giá trị lớn nhất & nhỏ nhất** | 6 | 12 (4C + 5P + 1A + 2W) | 5 | 1 | 6 |
+| **Bài 3: Đường tiệm cận** | 6 | 14 (4C + 7P + 1A + 2W) | 5 | 1 | 6 |
+| **Bài 4: Khảo sát & vẽ đồ thị** | 7 | 14 (4C + 6P + 2A + 2W) | 5 | 2 | 7 |
+| **Bài 5: Ứng dụng thực tiễn** | 7 | 15 (4C + 6P + 3A + 2W) | 5 | 1 | 7 |
+| **CHI-END: Tự kiểm tra cuối chương** | 4 | 12 (4C + 4P + 2A + 2W) | 0 | 0 | 4 |
+| **TỔNG CỘNG TOÀN CHƯƠNG I** | **36 Outcomes** | **78 Scored Items** | **24 Ví dụ** | **6 SVGs** | **36 HELP Cards** |
+
+---
+
+### III. PHẢN BIỆN CHUYÊN SÂU PED1–PED6 VÀ PHÂN TÍCH TOÁN HỌC THEO BÀI
+
+#### 1. Bài 1: Tính đơn điệu và cực trị của hàm số (6 Outcomes, 11 Items) — `PASS`
+* **PED1–PED3 (Động cơ & Bản chất):** Kiến tạo từ bài toán chuyển động \\(s(t)\\), dẫn dắt vận tốc \\(v(t) = s'(t)\\). Khi \\(f'(x) > 0\\) trên \\((a,b)\\), đồ thị đi lên (đồng biến); \\(f'(x) < 0\\), đồ thị đi xuống (nghịch biến).
+* **PED4 (Giới hạn & Điều kiện nghiêm ngặt):**
+  1. *Phản ví dụ điểm dừng không phải cực trị:* Tại \\(x_0\\) có \\(f'(x_0)=0\\) nhưng \\(f'(x)\\) không đổi dấu khi qua \\(x_0\\) (ví dụ \\(y=x^3\\) tại \\(x=0\\), \\(f'(x) = 3x^2 \ge 0\\)) \\(\implies x=0\\) **không phải điểm cực trị**.
+  2. *Ký hiệu khoảng đơn điệu:* Bắt buộc viết "đồng biến (nghịch biến) trên từng khoảng \\((-\infty; 1)\\) và \\((1; +\infty)\\)", **tuyệt đối không viết bằng dấu hợp \\(\cup\\)** như \\((-\infty; 1) \cup (1; +\infty)\\).
+* **PED5–PED6 (Phương pháp & Tự thử):** 4 ví dụ suy luận (`EX-G12-B01-01..04`) phân tích dấu đạo hàm; câu Tự thử giúp học sinh tự nhận biết điểm dừng \\(x^3\\) trước khi làm Core.
+* **Hình ảnh D5:** `FIG01_DERIVATIVE_SIGN` vẽ chuẩn đồ thị \\(y=x^3-3x\\), cực đại \\((-1; 2)\\), cực tiểu \\((1; -2)\\), đổi dấu \\(+,-,+\\).
+
+#### 2. Bài 2: Giá trị lớn nhất và giá trị nhỏ nhất của hàm số (6 Outcomes, 12 Items) — `PASS`
+* **PED1–PED3 (Local vs. Global):** Phân biệt cực trị địa phương (local) và GTLN/GTNN toàn cục (global) trên tập \\(D\\).
+* **PED4 (Thuật toán đoạn kín vs Khoảng mở):**
+  1. *Đoạn kín \\([a,b]\\):* Định lý EVT đảm bảo tồn tại GTLN/GTNN. Thuật toán chỉ cần so sánh giá trị \\(f(x)\\) tại các điểm dừng \\(f'(x_i)=0\\), các điểm \\(x_i\\) **đạo hàm không tồn tại nhưng hàm liên tục**, và 2 đầu mút \\(f(a), f(b)\\).
+  2. *Khoảng mở / Miền mở:* Nếu \\(\lim_{x \to a^+} f(x) = +\infty\\) hoặc \\(\lim_{x \to b^-} f(x) = -\infty\\), hoặc hàm tiến sát biên mà không đạt được, thì GTLN/GTNN **không tồn tại**.
+* **PED5–PED6 (Ví dụ & Tự thử):** 5 ví dụ (`EX-G12-B02-01..05`) phân tích bài toán đoạn kín, khoảng mở và bài toán tối ưu. Câu Tự thử ngăn bẫy quên tính \\(f(a), f(b)\\).
+* **Hình ảnh D5:** `FIG01_GLOBAL_MIN_MAX_CLOSED_INTERVAL` đồ thị \\(y=x^2-4x+1\\) trên \\(\\), min \\(=-3\\) tại \\(x=2\\), max \\(=6\\) tại biên \\(x=5\\).
+
+#### 3. Bài 3: Đường tiệm cận của đồ thị hàm số (6 Outcomes, 14 Items) — `PASS`
+* **PED1–PED3 (Xu hướng tiệm cận):** Đặt vấn đề khi \\(x \to x_0^\pm\\) làm mẫu số tiến về \\(0 \implies y \to \pm \infty\\) (tiệm cận đứng); khi \\(x \to \pm \infty \implies y \to y_0\\) (tiệm cận ngang).
+* **PED4 (Lỗ trống vs. Tiệm cận đứng):**
+  1. *Khóa bẫy Lỗ trống (Removable Discontinuity):* Với \\(f(x) = \frac{x^2-1}{x-1}\\), khi \\(x \to 1\\), cả tử và mẫu cùng tiến tới \\(0\\), khử nhân tử \\((x-1)\\) thu được \\(\lim_{x \to 1} f(x) = 2\\) (hữu hạn) \\(\implies x=1\\) **không phải tiệm cận đứng**, mà là điểm bị khuyết (lỗ trống).
+  2. *Tiệm cận xiên:* Phân tích \\(f(x) = ax+b + \frac{r(x)}{g(x)}\\) với \\(\lim_{x \to \pm \infty} \frac{r(x)}{g(x)} = 0 \implies y = ax+b\\).
+* **PED5–PED6:** 5 ví dụ (`EX-G12-B03-01..05`) hướng dẫn tìm TCĐ, TCN, TCX. Câu Tự thử rèn luyện phản xạ khử dạng \\(0/0\\) trước khi gọi tiệm cận đứng.
+* **Hình ảnh D5:** `FIG01_ASYMPTOTES` biểu diễn \\(f(x) = \frac{3x+1}{x-2}\\) có TCĐ \\(x=2\\) và TCN \\(y=3\\).
+
+#### 4. Bài 4: Khảo sát sự biến thiên và vẽ đồ thị của hàm số (7 Outcomes, 14 Items) — `PASS`
+* **PED1–PED3 (Sơ đồ tổng quát):** Quy trình khảo sát 3 bước (TXĐ, sự biến thiên, vẽ đồ thị).
+* **PED4 (Tâm đối xứng & Đặc trưng hình học):**
+  * Hàm bậc ba \\(y=ax^3+bx^2+cx+d\\) có tâm đối xứng là điểm uốn \\(I(x_I, y_I)\\) với \\(x_I = -\frac{b}{3a}\\) (nghiệm \\(f''(x)=0\\)).
+  * Hàm nhất biến \\(y=\frac{ax+b}{cx+d}\\) có tâm đối xứng là giao điểm hai đường tiệm cận \\(I(-\frac{d}{c}; \frac{a}{c})\\).
+* **PED5–PED6:** 5 ví dụ (`EX-G12-B04-01..05`) khảo sát hàm bậc ba, hàm nhất biến, hàm bậc hai trên bậc nhất.
+* **Hình ảnh D5:**
+  * `FIG01_RATIONAL_SURVEY`: Đồ thị \\(g(x) = \frac{x+2}{x-1}\\) có TCĐ \\(x=1\\), TCN \\(y=1\\), tâm đối xứng \\((1,1)\\).
+  * `FIG02_CUBIC_SURVEY`: Đồ thị \\(f(x) = x^3-3x^2\\) có cực đại \\((0,0)\\), cực tiểu \\((2,-4)\\), điểm uốn \\((1,-2)\\).
+
+#### 5. Bài 5: Ứng dụng đạo hàm để giải quyết bài toán thực tiễn (7 Outcomes, 15 Items) — `PASS`
+* **PED1–PED3 (Ứng dụng thực tế):** Xây dựng mô hình toán học cho các bài toán tối ưu hóa hình học, kinh tế và vật lý.
+* **PED4 (Miền biến thực tế & Khảo sát ngành):**
+  * *Ràng buộc thực tế:* Chiều dài \\(x > 0\\), bán kính \\(r > 0\\), số lượng sản phẩm \\(x \in \mathbb{N}^*\\).
+  * *Phân tích kinh tế:* Chi phí cận biên \\(C'(x)\\) là chi phí xấp xỉ khi sản xuất thêm đơn vị sản phẩm thứ \\((x+1)\\). Doanh thu \\(R(x)\\), lợi nhuận \\(P(x) = R(x) - C(x)\\).
+  * *Phân tích vật lý:* Vận tốc \\(v(t) = s'(t)\\), gia tốc \\(a(t) = v'(t) = s''(t)\\). Chuyển động **nhanh dần** khi \\(v(t) \cdot a(t) > 0\\), **chậm dần** khi \\(v(t) \cdot a(t) < 0\\). Dấu gia tốc \\(a(t)\\) một mình không quyết định nhanh hay chậm.
+* **PED5–PED6:** 5 ví dụ (`EX-G12-B05-01..05`) giải bài toán gấp hộp \\(30 \times 20\\) cm, chi phí cận biên, vận tốc/gia tốc.
+* **Hình ảnh D5:** `FIG01_BOX_VOLUME` mô hình thể tích \\(V(x) = x(30-2x)(20-2x)\\) trên \\(0 < x < 10\\), max tại \\(x = \frac{25-5\sqrt{7}}{3} \approx 3.924\\) cm.
+
+#### 6. Phần Tự kiểm tra Cuối chương (4 Outcomes, 12 Items) — `NO MASTERY`
+* **An toàn & Kiểm soát An ninh:**
+  * 12 câu (`THPT-G12-CHI-END-C01..C04`, `P01..P04`, `A01..A02`, `W01..W02`) đều mang nhãn `CLIENT_SELF_CHECK_NO_MASTERY`.
+  * Đáp án, lời giải và rubric /4 được khóa kín, chỉ hiển thị sau khi học sinh nhấn `Final Submit`.
+  * Đây là hoạt động tự so sánh kết quả của người học, **không phải bài kiểm tra độc lập RD1**, không ghi nhận điểm Skill Mastery chính thức.
+
+---
+
+### IV. THẨM ĐỊNH 18 CỔNG CHẤT LƯỢNG (Q01–Q18)
+
+| Mã Cổng | Tên Cổng Chất Lượng (SLM-THPT-QUALITY-ONE) | Kết quả | Trích dẫn Bằng chứng Thẩm định |
+| :---: | :--- | :---: | :--- |
+| **Q01** | Source Receipt & S1 Page Matching | **PASS** | Khớp 100% trang in SGK (5–44) và SBT (4–37) cùng SHA256 PDF S1. |
+| **Q02** | Math Correctness & Domain Limits | **PASS** | Dấu đạo hàm, cực trị, GTLN/GTNN, tiệm cận, gia tốc \\(\cdot\\) vận tốc chính xác tuyệt đối. |
+| **Q03** | Canonical Exercise & ID Contract | **PASS** | 78 câu hỏi có `item_id` duy nhất, gán đúng 1 `OUTCOME_ID` chính. |
+| **Q04** | Assessment Security & Self-Check Boundary | **PASS** | Tự kiểm tra cuối chương mang nhãn `CLIENT_SELF_CHECK_NO_MASTERY`, khóa đáp án pre-Submit. |
+| **Q05** | Worked Examples Rationale (D2) | **PASS** | 24 ví dụ D2 có lý giải chọn phương pháp, thử lại kết quả và kiểm miền. |
+| **Q06** | Written Item Rubrics (/4 Scale) | **PASS** | 12 bài tự luận D4 có rubric /4 phân rã đúng 4 tiêu chí 1 điểm. |
+| **Q07** | SVG XML Visual QA | **PASS** | 6 tệp SVG XML có `<title>`, `<desc>`, tọa độ và nhãn hiển thị chính xác. |
+| **Q08** | HELP Remediation Cards (D6) | **PASS** | 36 thẻ HELP tuân thủ quy trình 5 bước quay về đúng outcome ban đầu. |
+| **Q09–Q14**| PED1–PED6 Self-Learning Architecture | **PASS** | Kiến tạo động cơ WHY, tiền đề, bản chất trước công thức, Tự thử trước Core. |
+| **Q15–Q17**| Exposure System Control & Journey Boundary | **PASS** | Bảo vệ ngân hàng đề kín RD1; giữ nguyên ranh giới SGK vs. Chuyên đề. |
+| **Q18** | System Authorization Boundary | **PASS** | Giữ nguyên ranh giới hệ thống: `RELEASE_AUTHORIZATION = NO`, `MASTERY_ACTIVATION = NO`. |
+
+* **Thống kê Lỗi & Phân loại Delta:**  
+  * **P0 (System Blockers):** `0` | **P1 (Revisions Required):** `0` | **P2 (Minor Improvement Suggestions):** `0`
+  * **MINIMAL_DELTA:** `0` (Phân loại: `DELTA_A_NO_CHANGE`).
+
+---
+
+### V. BẢNG MÁY KIỂM TRA MÃ HÓA (MACHINE-CHECKABLE VERDICT)
+
+```text
+PACKET_ID|G12-SGK-CHI-B01-B05-R00-REVIEW_CANDIDATE
+STANDARD_ID|SLM-THPT-QUALITY-ONE
+STANDARD_VERSION|1.0.0
+PERMANENT_SOURCES_VERSION|2.1
+S1_SGK_RECEIPT|TOAN_12_KNTT_TAP_MOT_P5-44_SHA256_faeb554bea9cf81189c5e790b1b1edb42f50b3648694acc80dc99682ada3f1fd
+S1_SBT_RECEIPT|BAI_TAP_TOAN_12_KNTT_TAP_MOT_P4-37_SHA256_db9d07a2fbe55cda3b4b50fb13d1767e45a7552f668b726241c59febac69c0ca
+PUBLIC_SOURCE_GIT_BLOB|f0862dcdab21dec136e43969f45c42638e7c7574
+ACADEMIC_VERDICT|PASS
+PEDAGOGICAL_SELF_LEARNING_READY|PASS
+OUTCOME_MATRIX_COUNT|36
+WORKED_EXAMPLES_D2_COUNT|24
+PUBLIC_CANONICAL_ITEMS_COUNT|78
+WRITTEN_RUBRIC_4_COUNT|12
+SVG_GRAPH_D5_COUNT|6
+REMEDIATION_HELP_D6_COUNT|36
+QUALITY_GATES_Q01_TO_Q18|ALL_PASS
+P0|0
+P1|0
+P2|0
+MINIMAL_DELTA|0
+DELTA_CLASS|DELTA_A_NO_CHANGE
+EXPOSURE_SYSTEM_VERDICT|SYSTEM_HOLD
+RELEASE_AUTHORIZATION|NO
+MASTERY_ACTIVATION|NO
+```
+
+---
+
+### VI. BẢO TỒN RANH GIỚI THẨM QUYỀN HỆ THỐNG
+
+1. Phê duyệt **`ACADEMIC_VERDICT = PASS`** và **`PEDAGOGICAL_SELF_LEARNING_READY = PASS`** áp dụng nghiêm ngặt cho toàn bộ học liệu SGK Toán 12 KNTT Tập 1 (Bài 1–5 và Tự kiểm tra cuối chương) trong gói candidate `R00`.
+2. **`RELEASE_AUTHORIZATION = NO`**: Phê duyệt học thuật và sư phạm này **không** cấp quyền merge/deploy code lên GitHub repository công khai hay xuất bản lên website/frontend.
+3. **`MASTERY_ACTIVATION = NO`**: **Không** tự động kích hoạt tính năng Tự kiểm tra công khai (Final Submit) hay tính điểm Skill Mastery cho người học.
+4. **`EXPOSURE_SYSTEM_VERDICT = SYSTEM_HOLD`**: Tạm hoãn xuất bản hệ thống cho đến khi hoàn tất cổng kiểm thử kỹ thuật và duyệt release chính thức.
