@@ -1,5 +1,10 @@
 # THPT — Quy trình hai nhánh, một checklist
 
+## 04/11/2026 owner V2 scope — two SGK supplementary packet types
+
+New source-locked V2 packets now support `SGK_EXPERIENCE_SUPPLEMENT` and `SGK_YEAR_END_REVIEW_SUPPLEMENT` as two distinct **SGK public learning supplements** (owner approvals 03–04/11; PR #733 and #735 separately Draft). Neither is `SGK_CHAPTER`, `TOPIC` nor held-out official Readiness. The same Q01–Q18, A1–A7, PED, SHA source/review receipts, exact item–outcome mappings, one handoff + one manifest/REGISTER and mechanical QA remain mandatory. Additional supplemental safeguards: `PRIVATE_RD1_COUNT=0`, `OFFICIAL_READINESS=NOT_CLAIMED`, `MASTERY_ACTIVATION=NO`, `RELEASE_AUTHORIZATION=NO`, `ASSESSMENT_MODE=CLIENT_SELF_CHECK_NO_MASTERY`; year-end must include `SUPPLEMENT_UNIT=PUBLIC_YEAR_END_REVIEW`. A `CONTENT_READY` manifest permits only AUTHORING handoff: RELEASE AP/R/CI and owner merge/deploy are separate.
+
+
 > **Official one-standard governance after owner-approved PR #703 merge (02/11/2026):** Canonical path `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`.  [`SLM-THPT-QUALITY-ONE`](../THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md) is the ONE OFFICIAL normative THPT content-quality rubric Q01–Q18 for both lanes; D1–D6 and PED1–PED6 are authoring evidence, AP1–AP5 and R1–R5 are rendered/technical evidence of the **same** quality standard. The standard is now effective for NEW authoring packets after the owner-approved governance merge, not retroactive clearance of existing content or approval to publish. Existing V2 handoff, S1, Sources 08/06/07 and private RD1 protections remain binding. Don’t call green source CI Academic PASS; owner restarted only G11 RELEASE conditionally on 03/11/2026 as documented above.
 
 
