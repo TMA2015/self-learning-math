@@ -26,3 +26,23 @@
 /* Keep same-page remediation readable on small physical screens. */
 .g12-chii-return{margin-right:1rem;min-height:44px;display:inline-flex;align-items:center}
 .g12-chii-selfcheck-item .g12-chii-answer[hidden]{display:none!important}
+
+
+/* G12 ChII: one chapter-wide Core and Practice hub, preserve Golden R4 grade palette. */
+.g12-chii-hub{min-width:0;overflow-wrap:anywhere}
+.g12-chii-hub-lesson{scroll-margin-top:6rem}
+.g12-chii-hub-group{display:block;gap:0;align-self:start;scroll-margin-top:6rem}
+.g12-chii-hub-group[open]{grid-column:1/-1}
+.g12-chii-hub-summary{display:flex;flex-direction:column;gap:10px;list-style:none;cursor:pointer}
+.g12-chii-hub-summary::-webkit-details-marker{display:none}
+.g12-chii-hub-summary::marker{content:""}
+.g12-chii-hub-kind{color:var(--thpt-grade-accent,#8554c1);font-weight:850;font-size:.87rem}
+.g12-chii-hub-count{font-size:.82rem;color:var(--md-default-fg-color--light)}
+.g12-chii-hub-action{display:block;text-align:center;min-height:44px;border-radius:8px;border:1px solid #d8c2f4;padding:10px 12px;color:var(--thpt-grade-accent,#8554c1);font-weight:750}
+.g12-chii-hub-summary:hover .g12-chii-hub-action,.g12-chii-hub-group[open] .g12-chii-hub-action{background:var(--md-code-bg-color)}
+.g12-chii-hub-body{border-top:1px solid var(--md-default-fg-color--lightest);margin-top:15px;padding:0 2px;min-width:0}
+.g12-chii-hub-help{margin:0 16px 18px;border:1px solid var(--md-default-fg-color--lightest);border-radius:10px;scroll-margin-top:6rem}
+.g12-chii-hub-help>summary{padding:12px 16px;cursor:pointer;font-weight:700}
+.g12-chii-hub-help-body{padding:0 16px 12px}
+.g12-chii-hub-lesson>.g12-chii-return{margin:0 18px 16px}
+@media(max-width:720px){.g12-chii-hub .thpt-r4-practice-card-grid{grid-template-columns:1fr}.g12-chii-hub-group[open]{grid-column:1}}
