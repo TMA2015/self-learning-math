@@ -158,6 +158,7 @@ const groupCard=(bank,lesson,mode)=>{
  const records=bank.items.filter(q=>q.lesson_id===lesson&&
     (practice?q.placement!=="SGK_CORE":q.placement==="SGK_CORE"));
  const d=mk("details","g12-chi-hub-group thpt-r4-practice-card");
+ d.dataset.thptGrade="12";
  d.id=lesson.toLowerCase()+"-"+(practice?"practice":"core");
  const sum=mk("summary","g12-chi-hub-summary");
  const top=mk("span","g12-chi-hub-kind",practice?"Luyện tập · Vận dụng · Tự luận":"Core");
