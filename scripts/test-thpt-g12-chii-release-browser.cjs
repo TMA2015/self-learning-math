@@ -61,7 +61,7 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/lop-12/";
     assert.equal(await hub.locator(".g12-chii-answer:not([hidden])").count(),1,"Only submitted answer is shown");
     assert.equal(await first.locator("textarea:disabled").count(),1);
     const help=hub.locator("#b06-help");
-    await help.locator("summary").click();
+    await help.locator(":scope > summary").click();
     const link=help.locator("a.g12-chii-return[href^='#']").first();
     const dest=await link.getAttribute("href");
     assert(dest&&dest.length>1,"D6 original canonical return link");
