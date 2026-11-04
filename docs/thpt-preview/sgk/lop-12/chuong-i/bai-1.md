@@ -2,7 +2,7 @@
 
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">TOÁN 12 · CHƯƠNG I · SGK KẾT NỐI TRI THỨC · TẬP MỘT · TRANG 5–14</p>
-<p class="thpt-r4-lead">Học trọn bài tại đây: hiểu bản chất, xem hình, ví dụ có suy luận, tự thử, Core, Luyện tập, Vận dụng, Tự luận và các hướng dẫn tự khắc phục.</p>
+<p class="thpt-r4-lead">Học Kiến thức trọn vẹn tại đây: hiểu bản chất, xem hình, ví dụ có suy luận và tự thử; sau đó mở Core, Luyện tập, Vận dụng, Tự luận trên trang riêng của Chương I.</p>
 <nav class="thpt-r4-lesson-tabs"><a href="../">Chương I</a><a href="../">Tổng quan chương</a><a href="../bai-2/">Bài tiếp theo</a></nav></div>
 
 ## 1. Vì sao cần học?
@@ -75,8 +75,10 @@ Tự thử B: Nếu đạo hàm bằng 0 tại x0, có chắc chắn x0 là cự
 
 Tự thử C: Một hàm phân thức không xác định tại x=1 có thể được kết luận nghịch biến trên cả hai miền hợp lại chỉ từ f′<0 hay không? Hãy thử x=0 và x=2.
 
-## 7. Core, Luyện tập, Vận dụng, Tự luận và hỗ trợ
+## 7. Chuyển sang Core và Luyện tập
 
-<div class="thpt-r4-screen g12-chi-lesson" data-g12-chi-lesson="B01" aria-live="polite"><p>Đang mở bài tập đã kiểm duyệt...</p></div>
+Sau khi đọc Kiến thức, Ví dụ và hoàn thành các câu **Tự thử** phía trên, em có thể thực hành tại **trang Core và Luyện tập của Chương I**. Câu hỏi vẫn được chia theo từng bài, không cần tìm trong các bài học khác.
+
+<div class="thpt-r4-screen" data-thpt-r4><nav class="thpt-r4-lesson-tabs"><a href="../luyen-tap/#b01-core">✎ Core · Bài 1</a><a href="../luyen-tap/#b01-practice">✎ Luyện tập · Vận dụng · Tự luận · Bài 1</a><a href="../luyen-tap/#b01-help">Hướng dẫn khi gặp khó khăn · Bài 1</a></nav></div>
 
 <div class="thpt-r4-screen" data-thpt-r4><nav class="thpt-r4-lesson-tabs"><a href="../">Chương I</a><a href="../bai-2/">Bài tiếp theo</a></nav></div>
