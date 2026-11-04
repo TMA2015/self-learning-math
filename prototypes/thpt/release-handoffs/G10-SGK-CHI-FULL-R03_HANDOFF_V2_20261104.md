@@ -158,20 +158,20 @@ Only one normative source: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDA
 | Q02 | G10-SGK-B01/B02, 11 outcomes | 11 unique outcomes B01/B02; matrix links knowledge/try/practice/selfcheck | R01 11 outcomes + R02 11 | R1/R3 |
 | Q03 | B01/B02 11 outcomes | R01 D1 theories, conditions and R02 meaning-before-formula | R01 historical Academic PASS + R02 PED PASS | AP1/AP2 |
 | Q04 | B01/B02 11 outcomes | Seven original worked examples EX-G10-B01-01..04, EX-G10-B02-01..03 | R01 Academic PASS | AP2/AP4 |
-| Q05 | B01/B02 11 outcomes | Four Core + twelve Practice/Application canonical questions | R01 Academic PASS | R3 |
+| Q05 | B01/B02 11 outcomes | Four Core + twelve Practice/Application canonical questions | R01 Academic PASS | R3 public practice question correctness |
 | Q06 | G10-B01-IMPLICATION, G10-B02-VENN_MODEL | W01 and W02-ANCHOR; exact one canonical each + rubric | R01 Academic PASS | R3/R4 |
-| Q07 | G10-B01-IMPLICATION, G10-B02-VENN_MODEL | Original two SVG figures from R01 (not altered) | R01 Academic/PED historical scope | AP3 |
-| Q08 | B01/B02 11 outcomes | Four R01 HELP + one R02 HELP-G10-B02-03 for interval endpoints | R01 historic + R02 PED reviewer | AP4 |
+| Q07 | G10-B01-IMPLICATION, G10-B02-VENN_MODEL | Original two SVG figures from R01 (not altered) | R01 Academic/PED historical scope | AP3 labelled SVG and legible diagrams |
+| Q08 | B01/B02 11 outcomes | Four R01 HELP + one R02 HELP-G10-B02-03 for interval endpoints | R01 historic + R02 PED reviewer | AP4 D6 hint and remediation paths |
 | Q09 | B01/B02 11 outcomes | 11 R02 WHY before formal technique | R02 NotebookLM Academic/PED PASS reported | AP1/AP4 |
-| Q10 | B01/B02 11 outcomes | 11 R02 prerequisite sections | R02 NotebookLM Academic/PED PASS reported | AP4 |
+| Q10 | B01/B02 11 outcomes | 11 R02 prerequisite sections | R02 NotebookLM Academic/PED PASS reported | AP4 prerequisites before formal content |
 | Q11 | B01/B02 11 outcomes | 11 R02 meaning-first explanations before rules | R02 NotebookLM Academic/PED PASS reported | AP1/AP4 |
-| Q12 | G10-B01-IMPLICATION, G10-B02-VENN_MODEL, G10-B02-INTERVALS | Explain R01 SVG Venn/divisibility plus B02 number line in concept-first links | R01 historic + R02 PED reviewer | AP3 |
-| Q13 | B01/B02 11 outcomes | 11 R02 method-choice and application-limits sections | R02 NotebookLM Academic/PED PASS reported | AP4 |
+| Q12 | G10-B01-IMPLICATION, G10-B02-VENN_MODEL, G10-B02-INTERVALS | Explain R01 SVG Venn/divisibility plus B02 number line in concept-first links | R01 historic + R02 PED reviewer | AP3 source visual and diagram explanation |
+| Q13 | B01/B02 11 outcomes | 11 R02 method-choice and application-limits sections | R02 NotebookLM Academic/PED PASS reported | AP4 method-selection and limits |
 | Q14 | B01/B02 11 outcomes | 11 new FIRST_TRY before Core, voluntary solution reveal and D6 | R02 NotebookLM Academic/PED PASS reported | AP4/R4 |
-| Q15 | B01/B02 11 outcomes, 43 canonical items | 43 unique IDs (18 R01, 11 R02, 14 client), 1 primary per row | R01 ID register + R02 matrix + owner #680 | R1 |
+| Q15 | B01/B02 11 outcomes, 43 canonical items | 43 unique IDs (18 R01, 11 R02, 14 client), 1 primary per row | R01 ID register + R02 matrix + owner #680 | R1 single canonical item ID integrity |
 | Q16 | G10-SGK-B01/B02, 14 exposed end items | Public Final Submit client check; held-out RD1 and Mastery NOT claimed | Owner PR #680, Q16 client mode | R4/P1 |
-| Q17 | SGK_CHAPTER ChI only, TOPIC not inherited | SGK-only, TOPIC not inferred | Project Source 08 | R1 |
-| Q18 | G10-SGK-B01/B02, 43 reviewed public item texts | R01+R02+historical selfcheck reviewed by source scopes; Delta B composite verified; final V2 review-chain signoff pending | Original R01 / R02 reviewer blobs + PR #680 + Delta B receipt | R1/R2 |
+| Q17 | SGK_CHAPTER ChI only, TOPIC not inherited | SGK-only, TOPIC not inferred | Project Source 08 | R1 SGK and Topic journey separation |
+| Q18 | G10-SGK-B01/B02, 43 reviewed public item texts | R01/R02 and ChI 14 original reviewer receipts locked by authoring composite receipt 797fe74bb10596937a012b17fd3c86dc5ba0aa84; R03 Delta B exact content verified and A1–A7 signed | Original R01 / R02 reviewer blobs + PR #680 + Delta B receipt | R1 source Git SHA plus R2 final CI |
 
 Original independent R01 receipt Git `fece80dcb4b0e17d369e2ecbe12e8d13b672281a`, R02 direct independent receipt `cd95ed9db6815369a57f973c5b4dcf920555a701`, and private 14/14 ChI original academic reviewer raw SHA256 `3eb65106a83bd8b83419968bc2323e2c3c1ef21d0dbd705cb91de66cb4092c53` are bound in the public metadata-only composite receipt Git blob `797fe74bb10596937a012b17fd3c86dc5ba0aa84`. No original private reviewer text is published. Source equivalent author QA and outcome depth audit are signed under A1–A7 evidence.
 ## REVIEW_SOURCE_RECEIPT
