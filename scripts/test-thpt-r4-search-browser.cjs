@@ -37,13 +37,13 @@ const base="http://127.0.0.1:8765/thpt-preview/";
    assert(!/khung đối chiếu|phạm vi được duyệt|Core\/Luyện tập|B01–B02/.test(grade10Text),
      "Grade 10 summary must not expose old release-process notes");
    await query("lớp 10",9); // 8 available chapter cards + one clearly marked unpublished ChV
-   let result=await query("chương I",2); // published G10 and G11 chapter I
+   let result=await query("chương I",3); // G10, G11, and newly integrated G12 chapter I
    assert((await result.first().getAttribute("href")).endsWith("chuong-i/"));
    result=await query("chương II",2); // G10 and G11 ChII
    assert((await result.first().getAttribute("href")).endsWith("chuong-ii/"));
    result=await query("lớp 10, chương I",1);
    assert((await result.first().getAttribute("href")).endsWith("chuong-i/"));
-   result=await query("bài 1",2); // grade is required to disambiguate B01
+   result=await query("bài 1",3); // three grade B01 routes; specify grade to disambiguate
    assert((await result.first().getAttribute("href")).endsWith("chuong-i/bai-1/"));
    result=await query("lớp 10, chương I, bài 2",1);
    assert((await result.first().getAttribute("href")).endsWith("chuong-i/bai-2/"));
@@ -126,7 +126,16 @@ const base="http://127.0.0.1:8765/thpt-preview/";
    result=await query("lớp 11, bài "+n,1);
    assert((await result.first().getAttribute("href")).endsWith("lop-11/chuong-ix/bai-"+n+"/"),"G11 B"+n+" search");
    }
-   await query("lớp 12, bài 1",0);
+   result=await query("lớp 12",1);
+   assert((await result.first().getAttribute("href")).endsWith("lop-12/chuong-i/"),"G12 ChI unique chapter");
+   result=await query("lớp 12, chương I",1);
+   assert((await result.first().getAttribute("href")).endsWith("lop-12/chuong-i/"),"G12 chapter I");
+   for(const n of [1,2,3,4,5]){
+    result=await query("lớp 12, bài "+n,1);
+    assert((await result.first().getAttribute("href")).endsWith("lop-12/chuong-i/bai-"+n+"/"),"G12 B0"+n+" discoverable");
+   }
+   result=await query("lớp 12, chương I, bài 3",1);
+   assert((await result.first().getAttribute("href")).endsWith("lop-12/chuong-i/bai-3/"));
    await query("xyz-khong-co",0);
    await field.fill("");
    assert.equal(await page.locator("[data-thpt-search-only]:visible").count(),0);

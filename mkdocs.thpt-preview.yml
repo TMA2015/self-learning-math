@@ -149,6 +149,16 @@ nav:
           - Bài tập ôn tập cuối năm · Trang 105–109:
               - Ôn tập theo mười chủ điểm: thpt-preview/sgk/lop-11/bo-sung/on-tap-cuoi-nam.md
               - Tự kiểm tra cuối năm · Tự đối chiếu: thpt-preview/sgk/lop-11/bo-sung/tu-kiem-tra.md
+      - Lớp 12:
+          - Tổng quan Toán 12: thpt-preview/sgk/lop-12/index.md
+          - Chương I · Ứng dụng đạo hàm để khảo sát và vẽ đồ thị:
+              - Tổng quan Chương I: thpt-preview/sgk/lop-12/chuong-i.md
+              - Bài 1 · Tính đơn điệu và cực trị: thpt-preview/sgk/lop-12/chuong-i/bai-1.md
+              - Bài 2 · Giá trị lớn nhất và nhỏ nhất: thpt-preview/sgk/lop-12/chuong-i/bai-2.md
+              - Bài 3 · Đường tiệm cận: thpt-preview/sgk/lop-12/chuong-i/bai-3.md
+              - Bài 4 · Khảo sát và vẽ đồ thị: thpt-preview/sgk/lop-12/chuong-i/bai-4.md
+              - Bài 5 · Ứng dụng đạo hàm: thpt-preview/sgk/lop-12/chuong-i/bai-5.md
+              - Tự kiểm tra cuối chương · Tự đối chiếu: thpt-preview/sgk/lop-12/chuong-i/tu-kiem-tra-chuong.md
   - Học theo chuyên đề:
       - Tổng quan chuyên đề: thpt-preview/chuyen-de/index.md
       - Hàm số và đồ thị:
@@ -204,6 +214,7 @@ extra_css:
   - assets/stylesheets/math-knowledge-r30-consistency.css
   - assets/stylesheets/thpt-r4-preview.css
   - assets/stylesheets/thpt-g11-supplement-p99-p109-r00.css
+  - assets/stylesheets/thpt-g12-chi-b01-b05-r00.css
   - assets/stylesheets/thpt-chvi-d6-reviewed-r01.css
   - assets/stylesheets/thpt-g10-reviewed-selfcheck-v1.css
 extra_javascript:
@@ -269,3 +280,4 @@ extra_javascript:
   - assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js
   - assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js
   - assets/javascripts/thpt-g11-supplement-p99-p109-r00.js
+  - assets/javascripts/thpt-g12-chi-b01-b05-r00.js

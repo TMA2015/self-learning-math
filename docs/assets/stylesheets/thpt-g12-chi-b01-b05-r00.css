@@ -1,0 +1,24 @@
+/* G12 SGK Chapter I R00 · scoped, learner-first, no golden overrides. */
+.g12-chi-lesson,.g12-chi-self-check{min-width:0;overflow-wrap:anywhere}
+.g12-chi-stage{margin:24px 0 30px;padding-top:12px;border-top:1px solid var(--md-default-fg-color--lightest)}
+.g12-chi-stage-title{font-size:1.11rem;line-height:1.35;margin:12px 0 16px}
+.g12-chi-item{margin:16px 0;padding:16px;border:1px solid var(--md-default-fg-color--lightest);border-radius:12px;scroll-margin-top:6rem;min-width:0}
+.g12-chi-item h4{margin:5px 0 11px;font-size:1rem}
+.g12-chi-item h5{margin:10px 0 6px;font-size:.91rem}
+.g12-chi-input{display:block;width:100%;max-width:100%;min-height:96px;margin:12px 0;padding:12px;background:var(--md-default-bg-color);color:var(--md-default-fg-color);border:1px solid var(--md-default-fg-color--lighter);border-radius:8px;resize:vertical;font:inherit;font-size:16px}
+.g12-chi-input:disabled{opacity:.78}
+.g12-chi-submit{display:inline-flex;min-height:44px;align-items:center;justify-content:center;padding:10px 15px;margin:7px 0;background:var(--md-accent-fg-color);color:var(--md-default-bg-color);font:inherit;font-weight:700;border:1px solid var(--md-accent-fg-color);border-radius:9px;cursor:pointer}
+.g12-chi-submit:disabled{opacity:.62;cursor:default}
+.g12-chi-feedback{font-size:.87rem;margin:7px 0}
+.g12-chi-answer{margin:10px 0;padding:12px 16px;background:var(--md-code-bg-color);border-radius:10px;border:1px solid var(--md-default-fg-color--lightest);white-space:pre-line}
+.g12-chi-answer[hidden]{display:none!important}
+.g12-chi-help{margin:10px 0;padding:12px 15px;border:1px solid var(--md-default-fg-color--lightest);border-radius:9px}
+.g12-chi-help summary{font-weight:650;cursor:pointer}
+.g12-chi-help p{white-space:pre-line}
+.g12-chi-return{display:inline-block;margin:10px 0;font-weight:700}
+.g12-chi-figure{overflow:auto;max-width:100%;margin:12px 0}
+.g12-chi-figure img{max-width:100%;height:auto;display:block;margin:auto}
+.g12-chi-paragraph{white-space:pre-line}
+.g12-chi-math-display{overflow-x:auto}
+.g12-chi-error{padding:12px;border-left:3px solid var(--md-accent-fg-color)}
+@media(max-width:640px){.g12-chi-item{padding:12px;margin:12px 0}.g12-chi-stage{margin:18px 0 24px}.g12-chi-submit{width:100%}.g12-chi-answer{padding:12px}}

@@ -69,6 +69,8 @@ jobs:
         run: node scripts/test-thpt-g11-core-practice-math-source.cjs
       - name: Guard G11 SGK pp99–109 immutable handoff and 68 PUBLIC canonical items
         run: node scripts/test-thpt-g11-supplement-release-source.cjs
+      - name: Guard G12 SGK ChI source/receipt/78 PUBLIC canonical and original SVG provenance
+        run: node scripts/test-thpt-g12-chi-release-source.cjs
       - name: Validate KNTT Coverage Matrix 6-9
         run: node scripts/test-kntt-coverage-matrix-6-9-v1.js
       - name: Audit live KNTT lesson D1-D6 source evidence (78 rows, no content changes)
