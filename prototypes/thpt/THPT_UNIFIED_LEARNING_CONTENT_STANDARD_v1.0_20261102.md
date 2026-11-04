@@ -1,8 +1,8 @@
-# SELF-LEARNING MATH — TIÊU CHUẨN CHẤT LƯỢNG HỌC LIỆU THPT THỐNG NHẤT v1.1
+# SELF-LEARNING MATH — TIÊU CHUẨN CHẤT LƯỢNG HỌC LIỆU THPT THỐNG NHẤT v1.2
 
 **STANDARD_ID:** `SLM-THPT-QUALITY-ONE`  
-**VERSION:** `1.1.0` · **OWNER:** Chủ dự án Self-Learning Math / G Learning  
-**STATUS:** `OFFICIAL_OWNER_APPROVED_MAIN` — chủ dự án phê duyệt Q01 v1.1.0 ngày 03/11/2026, PR quản trị #726 đã vượt Governance QA và Roadmap QA trên HEAD `878ffd9607d2f17df96243d22cebd2b589c82144` và **MERGED vào `main`** tại `049fa190b05c3562816670d51defc62965986c31`. Bản v1.0.0 trước đây được bảo toàn cho snapshot đã PASS. Không tự cấp Academic/PED PASS hay CONTENT_READY mới, không deploy website, kích hoạt Mastery hoặc đổi nhánh RELEASE.  
+**VERSION:** `1.2.0` · **OWNER:** Chủ dự án Self-Learning Math / G Learning  
+**STATUS:** `OWNER_APPROVED_UX_PED_GOVERNANCE_PENDING_MERGE` — chủ dự án xác nhận ngày 04/11/2026 việc hợp nhất cách diễn giải và trình bày dưới **cùng Q01–Q18**, đồng ý tiến hành ban hành sau exact-head Governance/Roadmap QA. **v1.2.0 chỉ có hiệu lực khi PR quản trị được merge vào `main`**; trước thời điểm đó v1.1.0 là chuẩn chính thức (PR #726 merge `049fa190b05c3562816670d51defc62965986c31` ngày 03/11/2026). Các snapshot trước vẫn bảo toàn PASS theo đúng nguồn/receipt/phiên bản. Đây là điều chỉnh chuẩn và hướng dẫn kiểm, **không phải quyền sửa/merge/deploy học liệu hay mở Mastery**.  
 **SCOPE:** mọi học liệu Toán THPT 10–12 KNTT theo **SGK_CHAPTER** và **TOPIC**; áp dụng cho cả tác giả, NotebookLM và nhánh phát hành. **Một tiêu chuẩn chất lượng; các cổng kiểm tra phân theo trách nhiệm, không phải hai bộ tiêu chuẩn cạnh tranh.**
 
 ## 0. Luật thống nhất và thứ tự hiệu lực
@@ -57,6 +57,28 @@
 6. **Phản biện và di trú:** Q01 mới áp dụng sau governance merge. Reviewer xem đúng **nội dung tự biên soạn**, không cố gắng tái dựng nguyên văn SBT. Với ChV G12 R00 trước đó Q01/B14 HOLD, chỉ review **targeted B14 Q01 + các dạng tương đương và nguy cơ outcome-gap** theo `STANDARD_VERSION=1.1.0`; bảo toàn PASS của B15–B17/PED và blob học liệu gốc, không tự sửa các verdict lịch sử. Chỉ khi độc lập xác nhận không có lỗ hổng, đóng HOLD và hoàn thành V2/READY. Không thêm nguồn NotebookLM Permanent thứ sáu, không sửa website, không cấp Mastery.
 
 **Lưu ý:** ma trận Q01–Q18 là **chuẩn học liệu** dùng chung; các nhãn `PED1–6` và `D1–D6` là trục chi tiết của **cùng chuẩn**, không phải tiêu chuẩn bổ sung độc lập sau khi Q đã PASS.
+
+
+## II-B. Diễn giải áp dụng Q03/Q04/Q07/Q08/Q09–Q14/Q17 qua cùng AP1–AP5 — bổ sung v1.2.0
+
+**Mục tiêu của cùng một chuẩn:** học sinh lần đầu gặp kiến thức có thể **hiểu vì sao cần học → nhận ra bản chất → nắm điều kiện và cách suy luận → tự thử → tự luyện/vận dụng** ngay trên bài học, không phải gọi AI Tutor để đọc hộ tài liệu. Lấy bằng chứng theo **bài + OUTCOME_ID + bản hiển thị thực tế**; không thay Q01–Q18, không mở bộ tiêu chí độc lập, không đặt chỉ tiêu cứng về số từ, số card, hay yêu cầu mọi bài kể chuyện.
+
+| Vấn đề quan sát và cách vận dụng | Điều Q đang có | Bằng chứng kiểm của đúng cổng hiện có |
+|---|---|---|
+| **Bắt đầu từ câu hỏi cần giải trước ký hiệu mới:** người học nhận ra hiện tượng/vấn đề, mục đích và bối cảnh; có thể dùng trực giác toán hoặc ví dụ quen thuộc, không áp dụng phép tương tự thiếu chính xác. | Q03, Q09 (PED1), Q11 (PED3) | Trên màn hình mở đầu học sinh có thể nói được “vì sao cần” bằng lời; nếu ví dụ chuyển động phải phân biệt vị trí có dấu/quãng đường và vận tốc có hướng/tốc độ; AP1/AP4. |
+| **Cầu nối tiền đề, thuật ngữ đúng lúc:** không dùng một ký hiệu/định nghĩa mới để giải thích ngay một ký hiệu chưa biết khác; liên kết bài cũ chỉ hỗ trợ, không thay lý thuyết bắt buộc trong hành trình độc lập. | Q10 (PED2), Q17 | Đoạn giới thiệu thuật ngữ/ý nghĩa ở sát chỗ dùng; AP1/AP4. |
+| **Giải thích bản chất trước quy tắc:** mỗi luận điểm nêu được quan sát → điều thay đổi/quan hệ → khái niệm/công cụ → điều kiện, phạm vi và ngoại lệ. Tên mục “Hiểu bản chất” không tự chứng minh học sinh hiểu. | Q03, Q11 (PED3) | Một lời dẫn/hoạt động tự học ở đúng outcome trước công thức tính; AP1/AP4. |
+| **Gọn nhưng không nén:** một nhóm thị giác trình bày một ý tương đối hoàn chỉnh; ý mới phải tách hợp lý, nhưng điều kiện/ngoại lệ/giải thích cùng vấn đề phải đặt gần nhau, không chia card chỉ để đủ quota. | Q03, Q09–Q11 | So sánh bố cục nguyên nguồn và giao diện ở cùng LESSON_ID; AP1/AP4. |
+| **Toán và hình có thứ bậc dễ đọc:** công thức/điều kiện quan trọng dùng MathJax rõ ràng; hình được hướng dẫn “nhìn gì → nhận ra gì → suy luận gì”, chú giải sát hình; giữ nguyên giả thiết và nguồn SVG. | Q03, Q07, Q12 (PED4) | AP2 MathJax, AP3 hình/đồ thị, AP5 responsive; FIG_ID/file/SHA lưu trong metadata kiểm toán, **không coi là lời dạy hướng tới học sinh**. |
+| **Ví dụ có “vì sao” và giới hạn phương pháp:** học sinh nhận ra chọn công cụ nào, do điều kiện gì, các bước suy luận và cách đối chiếu, không chỉ thấy đáp số. | Q04, Q13 (PED5) | Ví dụ/điều kiện/lỗi thường gặp tách rõ trong AP1/AP4, không bớt D2 hoặc phản ví dụ. |
+| **Tự thử có điểm dừng trước Core, sửa lỗ hổng đúng chỗ:** nội dung phải nổi bật đủ để người học thực sự suy nghĩ; chỉ tự mở đáp án khi thiết kế cho phép và không chấm Mastery từ thực hành. | Q08, Q14 (PED6), Q15, Q16 | AP4 và Q16 Final Submit; không hint/key/AI trên RD1 trước Final Submit. |
+| **Tự học độc lập, dễ theo dõi trên điện thoại:** thứ tự ý, kích cỡ chữ/công thức/SVG và bố cục ở các màn hình không gây mất nghĩa hoặc cuộn ngang không cần thiết; AI chỉ hỗ trợ, không là tiền đề học kiến thức bắt buộc. | Q09–Q14, Q17 | AP4/AP5, test 390/820/1440; P2 nghiệm thu iPhone/iPad **thực** khi cần. |
+
+**Kiểm chứng mức độ hiểu:** phân biệt **dễ đọc/dễ thích** với **thực sự hiểu và chuyển giao**. Khi nghiên cứu một mẫu UI, có thể so sánh A/B cùng source và cùng outcome bằng nhiệm vụ diễn đạt ý nghĩa/điều kiện, một tình huống mới chưa xem và ý kiến học sinh; ghi cỡ mẫu, hạn chế và kết quả thật. **Chưa có người học thử thì ghi `LEARNER_EVIDENCE_PENDING`, không tự cấp PED PASS hay kết luận hiệu quả A/B**. Phương pháp này là *gợi ý bằng chứng thử nghiệm*, không phải cổng yêu cầu điểm số/cỡ mẫu cố định cho tất cả bài học.
+
+**Ranh giới phiên bản/delta:** `DELTA_A_UI` chỉ đổi bố cục/nhãn/DOM giữ nguyên ngữ nghĩa, cần AP/QA nguồn parity; `DELTA_B_SOURCE_EQUIVALENT` chỉ thay source tương đương có chứng cứ; **viết lại lời dẫn, thay trình tự suy luận học thuật, thêm ví dụ/phép tương tự có ý nghĩa sư phạm** là `DELTA_C_ACADEMIC_MATERIAL` và cần AUTHORING + NotebookLM review phần chịu ảnh hưởng; `DELTA_D_BLOCKER` khi sai điều kiện/toán hay thiếu nguồn. RELEASE phát hiện lỗi sư phạm không thể sửa bằng UI thì trả `AUTHORING_DEFECT` có Qxx/Bài/Outcome/ảnh và minimal delta. **Không mở lại toàn bộ học liệu đã PASS chỉ vì thêm hướng dẫn v1.2.0**: bảo toàn snapshot, Q18, ưu tiên hoàn thành chương trình và chỉ audit hồi tố theo owner #675/#691.
+
+**Liên kết bằng chứng:** [Issue #655](https://github.com/TMA2015/self-learning-math/issues/655) “gọn nhưng không nén”; [Issue #691](https://github.com/TMA2015/self-learning-math/issues/691) concept-first; [Issue #742](https://github.com/TMA2015/self-learning-math/issues/742) Toán 12 Bài 1 A/B. Các Issue chỉ lưu quyết định/chứng cứ, **không có thẩm quyền trở thành chuẩn thứ hai**. S1 SGK/SBT, 5 Permanent Sources v2.1, Golden THCS/THPT và các gói V2 giữ nguyên quy định.
 
 ## III. Cách đánh giá PASS theo đơn vị và chứng cứ
 
@@ -142,7 +164,7 @@ Một chương mới **không gửi NotebookLM** nếu chưa tự kiểm:
 1. **Chủ dự án sở hữu quyết định thay đổi chuẩn**. Mọi yêu cầu mới phải được mở trong một `STANDARD_CHANGE_REQUEST` duy nhất: mô tả tiêu chí Q hiện tại bị ảnh hưởng, lý do, ví dụ PASS/FAIL, tính tương thích với S1/08/06/07/5 Permanent, tác động G10/G11/G12/Topic, kế hoạch migration, có/không review lại. Không thêm nguyên tắc học thuật độc lập trong PR release.
 2. **Một thay đổi = nâng phiên bản tài liệu chuẩn gốc**, ghi quyết định, diff, affected Qxx và đơn vị cần áp dụng. Phân loại `PATCH` (sửa cách diễn đạt không đổi nghĩa), `MINOR` (thêm bằng chứng/tiêu chí), `MAJOR` (thay phạm vi/triết lý/hợp đồng). Owner approval và QA áp dụng trước khi merge governance.
 3. **Các nguồn chuyên biệt vẫn tồn tại làm phụ lục thẩm quyền, không thành bộ chuẩn chất lượng cạnh tranh:** Project 08 chỉ định kiến trúc, 06 định cách gửi, 07 định delta, V2 định handoff, Golden/AP định cách render; 5 NotebookLM v2.1 mới là nguồn nền sau khi thay thế để reviewer trích dẫn. Tất cả checklists/automation mới phải trỏ **chính xác STANDARD_ID + VERSION + Qxx**. Khi 5 Permanent Sources cần đồng bộ, thay đúng **cả năm nguồn cùng phiên bản v2.1** theo manifest SHA256, không thêm nguồn Permanent thứ sáu, không chọn v2.0 và v2.1 cùng lúc.
-4. **Migration không phá PASS cũ:** chủ dự án chốt ngày cắt phiên bản. Chương cũ PASS on old snapshot giữ hiệu lực đúng phạm vi, theo issue #675 chỉ kiểm toán hồi tố sau khi xong chương trình trừ P0. Chương mới sau khi governance v1.1.0 được merge dùng v1.1.0; các bản nháp G12 cũ giữ snapshot/receipt và chỉ review affected scope khi có blocker Q01 được giải quyết bằng quyết định mới. Chuyên đề dùng cùng Q01–Q18, nhưng profile `TOPIC` tự đủ và ba trang; không tạo chuẩn thứ hai.
+4. **Migration không phá PASS cũ:** chủ dự án chốt ngày cắt phiên bản. Chương cũ PASS on old snapshot giữ hiệu lực đúng phạm vi, theo issue #675 chỉ kiểm toán hồi tố sau khi xong chương trình trừ P0. Chương mới sau khi governance v1.2.0 được merge dùng v1.2.0; chương trước đó giữ chuẩn theo snapshot/receipt của mình; các bản nháp G12 cũ giữ snapshot/receipt và chỉ review affected scope khi có blocker Q01 được giải quyết bằng quyết định mới. Chuyên đề dùng cùng Q01–Q18, nhưng profile `TOPIC` tự đủ và ba trang; không tạo chuẩn thứ hai.
 5. **Freeze quản trị:** trong giai đoạn chủ dự án quyết định tạm ngừng cả authoring/release, chỉ cho phép thay đổi **governance docs/QA** trên nhánh riêng để nghiệm thu tiêu chuẩn. Không sửa câu hỏi, PDF, RD1, learner pages, assessment runtime hoặc activate workflow; không merge/deploy khi chưa được chủ dự án chấp thuận phạm vi quản trị.
 
 ## X-A. Quyết định thay đổi Q01 — Change Log 03/11/2026
@@ -150,6 +172,15 @@ Một chương mới **không gửi NotebookLM** nếu chưa tự kiểm:
 - `CHANGE_CLASS=MINOR`, từ `v1.0.0 → v1.1.0`: làm rõ vai trò SGK Core vs SBT/nguồn bài tập làm tham khảo, thêm cơ chế ngoại lệ có bằng chứng cho thiếu trang SBT; **không đổi 18 Q, SGK S1 Core, chuẩn toán, Q16/private RD1, hai hành trình hoặc thẩm quyền deploy**.
 - **Hiệu lực:** v1.1.0 chính thức được merge tại governance PR #726, `049fa190b05c3562816670d51defc62965986c31`, sau exact-head QA PASS và phê duyệt chủ dự án; mã hiệu lực `OFFICIAL_OWNER_APPROVED_MAIN`. Không thay thế/dùng song song Permanent Sources v2.1 hoặc mở Permanent thứ sáu. Thay đổi Q01 được trích trong **batch-source tạm thời có nguồn** khi review có tác động; đối chiếu những câu có xung đột trong Permanent v2.1 với **quyết định mới nhất của chủ dự án**, không âm thầm sửa 5 file đó.
 - **Bảo toàn PASS và phạm vi delta:** những snapshot trước đây Academic/PED PASS vẫn giữ theo phiên bản cũ. ChV G12 R00 B14 Q01 HOLD cần targeted independent check theo v1.1.0, không tự upgrade/redo full review; không phát hành nếu targeted verdict chưa được chủ dự án chuyển giao.
+
+
+## X-B. Quyết định hợp nhất trải nghiệm tự học — Change Log 04/11/2026
+
+- `STANDARD_CHANGE_REQUEST`: [#742](https://github.com/TMA2015/self-learning-math/issues/742), bản đề xuất và thí điểm ở `prototypes/thpt/ux-ped/STANDARD_CHANGE_REQUEST_20261104.md` trên Draft nghiên cứu #743. **Chủ dự án phê duyệt triển khai nâng cấp tiêu chuẩn trong chat ngày 04/11/2026** sau khi chủ động yêu cầu hợp nhất thay vì rải rác và chấp thuận áp dụng.
+- `CHANGE_CLASS=MINOR`, `1.1.0 → 1.2.0`: chuẩn hóa **cách chứng minh** chất lượng diễn giải/nhịp dẫn dắt và trình bày cho Q03/Q07/Q09–Q14/Q17 qua **AP1–AP5 hiện hữu**; Q01–Q18 giữ nguyên số điều, Q15/16 bảo mật không thay, không mở chuẩn mới. Không thay phạm vi chương trình, không nén/mất D1–D6.
+- `OWNER_APPROVED_SCOPE=GOVERNANCE_ONLY`: cập nhật chuẩn gốc + chỉ dẫn/QA, **không cấp quyền rewrite học liệu SGK, PR RELEASE website, Firebase, Gemini, Mastery hoặc deploy học liệu**.
+- `PILOT_EVIDENCE`: G12 B01 nghiên cứu từ source Git blob `7fc40081bb3f1e104e38e2c86a5bc1e8217e77cc`, 6 OUTCOME_ID chính thức, thử nghiệm A/B cô lập ở #743; **browser QA là bằng chứng kỹ thuật**, chưa chứng minh hiệu quả học tập thực tế (`LEARNER_EVIDENCE_PENDING`).
+- `EFFECTIVE_VERSION_GATE`: bản này chỉ có hiệu lực sau chủ dự án cho phép, governance và Roadmap CI exact HEAD PASS, **merge**; phiên bản trước và verdict của snapshot cũ bất biến. Nếu nội dung mới cho AUTHORING phải thay sư phạm đáng kể thì `DELTA_C` review affected scope, không hồi tố đại trà.
 
 ## XI. Truy vết nguồn → điều khoản và phân công
 
@@ -163,6 +194,7 @@ Một chương mới **không gửi NotebookLM** nếu chưa tự kiểm:
 | Source 08 two-path design | Q15,Q16,Q17 | A4,A7 | R3,R4, AP4 |
 | Source-locked handoff V2 PR #699 | Q01,Q02,Q15,Q18 | A1–A7+READY | R1–R5 |
 | Issue #655 AP1–AP5; Golden R4 | Q03,Q07,Q09–Q14,Q16,Q17 (in rendered view) | Evidence before handoff | AP1–AP5, P2 |
+| Issue #742 nâng cấp diễn giải, #691 concept-first, #655 trình bày (v1.2.0) | Q03,Q04,Q07,Q08,Q09–Q14,Q17, Q18 | PED1–PED6 evidence theo outcome, giữ nguyên source/review | AP1–AP5 trên bản hiển thị, không phát sinh tiêu chí toán mới |
 | Issue #662 Final Submit and #675 program sequencing | Q16–Q18 | RD1 custody, source honesty | R3,R4,R5,P1/P2 |
 
 **NO_UNRESOLVED_DUPLICATE_STANDARD:** This file is the proposed single normative definition of THPT learning-content quality; any older academic/pedagogic contract/checklist is **source history or implementation guidance only** unless a higher-authority owner/S1/08/06/07 decision remains binding. This does **not** auto-amend the five existing NotebookLM Permanent Sources or create PASS for old lessons.
