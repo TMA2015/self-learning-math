@@ -96,8 +96,8 @@ const pedNames={
  PED6:"Tự thử trước khi vào Core"
 };
 const topicName={
- E01:"E01 · Mô hình hàm mũ và thang lôgarit",
- E02:"E02 · Hình học trải nghiệm và đo đạc",
+ E01:"Hoạt động 1 · Mô hình hàm mũ và thang lôgarit",
+ E02:"Hoạt động 2 · Hình học trải nghiệm và đo đạc",
  TRIG:"Lượng giác",SEQUENCE:"Dãy số",LIMIT:"Giới hạn và liên tục",
  EXPLOG:"Hàm mũ và lôgarit",DERIV:"Đạo hàm",SPACE:"Quan hệ vuông góc và khoảng cách",
  VOLUME:"Thể tích",STAT:"Dữ liệu ghép nhóm",PROB:"Xác suất",INTEGRATE:"Khắc phục lỗ hổng liên chương"
@@ -114,15 +114,29 @@ const header=(root,label,title)=>{
  root.append(mk("p","thpt-r4-eyebrow",label),mk("h2","g11-supp-section-title",title));
 };
 const miniNav=root=>{
- const nav=mk("nav","thpt-r4-lesson-tabs");
+ const nav=mk("nav","g11-supp-local-nav");
+ nav.setAttribute("aria-label","Điều hướng phần cuối sách giáo khoa");
  [
-  ["Tổng quan","../"],["Trải nghiệm E01","../trai-nghiem-e01/"],
-  ["Trải nghiệm E02","../trai-nghiem-e02/"],
+  ["Giới thiệu","../"],["Hoạt động 1","../trai-nghiem-e01/"],
+  ["Hoạt động 2","../trai-nghiem-e02/"],
   ["Ôn tập cuối năm","../on-tap-cuoi-nam/"],
-  ["Core/Luyện tập","../luyen-tap/"],["Tự luận","../tu-luan/"],
-  ["Tự kiểm tra tự đối chiếu","../tu-kiem-tra/"]
- ].forEach(([t,url])=>{const a=mk("a","",t);a.href=url;nav.append(a)});
+  ["Tự kiểm tra cuối năm","../tu-kiem-tra/"]
+ ].forEach(([label,url])=>{
+  const a=mk("a","",label);a.href=url;nav.append(a);
+ });
  root.append(nav);
+};
+const learningPath=root=>{
+ const guide=mk("aside","g11-supp-learning-guide");
+ guide.append(mk("h3","","Cách tự học ở phần này"));
+ const steps=mk("ol");
+ [
+  "Hiểu bản chất, điều kiện và đọc các hình minh họa.",
+  "Xem ví dụ, tự thử rồi giải ngay các câu Core và Luyện tập bên dưới.",
+  "Viết bài tự luận, nộp để tự đối chiếu lời giải; nếu vướng, mở hỗ trợ ở cuối phần.",
+  "Sau khi học xong, sử dụng mục Tự kiểm tra cuối năm."
+ ].forEach(t=>steps.append(mk("li","",t)));
+ guide.append(steps);root.append(guide);
 };
 const figures=(root,bank,topic)=>{
  for(const f of bank.figures.filter(x=>x.group===(topic==="E01"||topic==="E02"?topic:"YEAR"))){
@@ -149,25 +163,26 @@ const helpBlocks=(root,bank,topic)=>{
  const helps=bank.help.filter(h=>ids.has(h.return_item));
  if(!helps.length)return;
  root.append(mk("h3","","Khi gặp khó khăn: gợi ý khắc phục"));
- for(const h of helps){
-  const details=mk("details","g11-supp-help"),summary=mk("summary","",h.help_id);
+ for(const [i,h] of helps.entries()){
+  const details=mk("details","g11-supp-help"),summary=mk("summary","","Gợi ý "+(i+1)+" · Kiểm tra cách làm");
   const steps=mk("ol");
   for(const step of h.steps){const li=mk("li");addText(li,step);steps.append(li)}
   const a=mk("a","","Quay lại bài luyện tập đã liên kết");
-  a.href="../luyen-tap/#"+idAnchor(h.return_item);
+  a.href="#"+idAnchor(h.return_item);
   details.append(summary,steps,a);root.append(details);
  }
 };
 const course=(root,bank,view)=>{
  miniNav(root);
+ learningPath(root);
  const tracks=view==="YEAR"?bank.year:[bank.experience.find(x=>x.id===view)];
  for(const track of tracks){
   if(!track)continue;
   const topic=view==="YEAR"?track.id:view;
   const section=mk("section","g11-supp-topic");
   section.id="g11-supp-"+topic.toLowerCase();
-  header(section,"KIẾN THỨC SGK · "+(view==="YEAR"?"ÔN TẬP CUỐI NĂM":"TRẢI NGHIỆM"),topicName[topic]||track.title);
-  for(const n of [1,2,3,4,5,6]){
+  header(section,view==="YEAR"?"BÀI TẬP ÔN TẬP CUỐI NĂM":"HOẠT ĐỘNG THỰC HÀNH TRẢI NGHIỆM",topicName[topic]||track.title);
+  for(const n of [1,2,3,4,5]){
    const body=track.ped["PED"+n];if(!body)continue;
    section.append(mk("h3","",pedNames["PED"+n]));
    section.append(paragraph(body,n===6?"g11-supp-first-try":"g11-supp-paragraph"));
@@ -178,17 +193,45 @@ const course=(root,bank,view)=>{
    if(figure){const f=mk("figure","thpt-r4-plot g11-supp-figure"),im=mk("img");im.src=new URL(figure.src,imagesUrl).href;im.alt=figure.description;im.loading="lazy";f.append(im,mk("figcaption","",figure.description));section.append(f)}
   }
   examples(section,bank,topic);
-  const link=mk("a","g11-supp-link","✎ Làm Core/Luyện tập của "+(topicName[topic]||topic));
-  link.href="../luyen-tap/#g11-supp-group-"+topic.toLowerCase();
-  section.append(link);
+  // Keep approved PED6 text unchanged, but place self-try after the
+  // worked examples and before Core in the learner's reading order.
+  if(track.ped.PED6){
+   section.append(mk("h3","",pedNames.PED6));
+   section.append(paragraph(track.ped.PED6,"g11-supp-first-try"));
+  }
+  // One canonical JSON bank, multiple learner placements. This topic
+  // owns its full Core → Practice/Application → Written → D6 journey.
+  const core=bank.items.filter(q=>groupOf(q)===topic&&q.role==="SGK_CORE");
+  const practiceItems=bank.items.filter(q=>groupOf(q)===topic&&q.role!=="SGK_CORE");
+  const written=bank.written.filter(q=>groupOf(q)===topic);
+  const coreSection=mk("div","g11-supp-learning-stage");
+  coreSection.append(mk("h3","","1. Core · Tự thử kiến thức"));
+  core.forEach((q,i)=>coreSection.append(exerciseCard(q,"formative",i+1)));
+  if(!core.length)coreSection.append(paragraph("Ôn tập và hệ thống lại phương pháp trước khi thực hành."));
+  section.append(coreSection);
+  const practiceSection=mk("div","g11-supp-learning-stage");
+  practiceSection.append(mk("h3","","2. Luyện tập và vận dụng"));
+  practiceItems.forEach((q,i)=>practiceSection.append(exerciseCard(q,"formative",i+1)));
+  section.append(practiceSection);
+  if(written.length){
+   const writtenSection=mk("div","g11-supp-learning-stage");
+   writtenSection.append(mk("h3","","3. Tự luận · Trình bày lời giải"));
+   writtenSection.append(paragraph("Viết cách làm của em trước khi nhấn Nộp. Bài tự luận được tự đối chiếu, không tự chấm điểm."));
+   written.forEach((q,i)=>writtenSection.append(exerciseCard(q,"written",i+1)));
+   section.append(writtenSection);
+  }
   helpBlocks(section,bank,topic);
+  const next=mk("a","g11-supp-next","Học tiếp hoặc chuyển sang tự kiểm tra");
+  next.href=view==="YEAR"?"#g11-supp-"+(bank.year[bank.year.findIndex(t=>t.id===topic)+1]?.id||"end").toLowerCase():topic==="E01"?"../trai-nghiem-e02/":"../on-tap-cuoi-nam/";
+  if(view==="YEAR"&&topic===bank.year[bank.year.length-1]?.id)next.href="../tu-kiem-tra/";
+  section.append(next);
   root.append(section);
  }
  typeset(root);
 };
 const submitFormative=(card,q,kind)=>{
  const input=mk("textarea","g11-supp-answer");input.rows=3;
- input.setAttribute("aria-label","Câu trả lời của "+q.item_id);
+ input.setAttribute("aria-label",kind==="written"?"Viết lời giải tự luận của em":"Nhập câu trả lời hoặc các bước giải của em");
  const button=mk("button","g11-supp-submit","Nộp câu trả lời");
  button.type="button";const status=mk("p","g11-supp-feedback");
  const result=mk("section","g11-supp-solution");result.hidden=true;
@@ -202,28 +245,28 @@ const submitFormative=(card,q,kind)=>{
  });
  card.append(input,button,status,result);
 };
-const exerciseCard=(q,kind)=>{
+const exerciseCard=(q,kind,number=1)=>{
  const card=mk("section","g11-supp-exercise");
  card.id=idAnchor(q.item_id);
  card.dataset.canonicalItem=q.item_id;
  card.dataset.exposureRole=q.role;
- card.append(mk("p","thpt-r4-eyebrow",q.role==="ANCHOR_TAG"?"TỰ LUẬN · ANCHOR (NHÃN)":
-  kind==="written"?"TỰ LUẬN":q.role==="SGK_CORE"?"CORE":q.role==="SGK_APPLICATION"?"VẬN DỤNG":"LUYỆN TẬP"));
- card.append(mk("h3","",q.item_id),paragraph(q.stem));
+ card.append(mk("p","thpt-r4-eyebrow",kind==="written"?"BÀI TẬP TỰ LUẬN":
+  q.role==="SGK_CORE"?"CORE":q.role==="SGK_APPLICATION"?"VẬN DỤNG":"LUYỆN TẬP"));
+ card.append(mk("h4","",kind==="written"?"Bài tự luận "+number:"Câu "+number),paragraph(q.stem));
  submitFormative(card,q,kind);
  return card;
 };
 const practice=(root,bank,kind)=>{
  miniNav(root);
  const items=kind==="written"?bank.written:bank.items;
- header(root,"TOÁN 11 · HỌC LIỆU CÔNG KHAI",kind==="written"?"Thư viện 16 bài tự luận/Anchor":"Core và Luyện tập · 52 câu");
- root.append(paragraph("Tự làm trước khi nộp từng câu. Lời giải chỉ hiện sau nút Nộp câu trả lời. Không ghi Mastery, không chấm tự luận tự động; Anchor chỉ là nhãn của một câu Written."));
+ header(root,"TOÁN 11 · SGK TẬP HAI",kind==="written"?"Tổng hợp bài tập tự luận":"Tổng hợp Core và luyện tập");
+ root.append(paragraph("Đây là trang tổng hợp để tra cứu bài tập. Khi tự học, em nên vào từng Hoạt động hoặc chủ điểm Ôn tập để học kiến thức, ví dụ và làm bài ngay tại đó. Lời giải chỉ hiện sau khi nộp."));
  const groups=[...new Set(items.map(groupOf))];
  for(const group of groups){
   const section=mk("section","g11-supp-topic");
   section.id="g11-supp-group-"+group.toLowerCase();
   section.append(mk("h2","",topicName[group]||group));
-  items.filter(x=>groupOf(x)===group).forEach(q=>section.append(exerciseCard(q,kind)));
+  items.filter(x=>groupOf(x)===group).forEach((q,i)=>section.append(exerciseCard(q,kind,i+1)));
   root.append(section);
  }
  typeset(root);
@@ -236,8 +279,8 @@ const selfCheck=(root,bank)=>{
   seen.add(q.outcome_id);picked.push(q);
  }
  if(picked.length!==22){root.append(paragraph("Chưa đủ ma trận 22 outcomes để mở tự đối chiếu."));return}
- header(root,"TỰ KIỂM TRA SGK · KHÔNG PHẢI RD1","Tự đối chiếu cuối năm · 22 câu PUBLIC");
- root.append(paragraph("Đây là 22 câu Practice/Vận dụng đã có trên hành trình học, không phải bài kiểm tra độc lập. Không xem gợi ý, đáp án hay lời giải trước Final Submit. Không tự chấm đúng/sai, không ghi điểm, tiến độ hay Skill Mastery."));
+ header(root,"TOÁN 11 · BÀI TẬP ÔN TẬP CUỐI NĂM","Tự kiểm tra và đối chiếu cuối năm");
+ root.append(paragraph("Em đã gặp 22 câu hỏi này trong phần học và luyện tập. Hãy tự làm, sau đó nhấn Final Submit để xem lời giải và tự đối chiếu. Đây là hoạt động tự ôn, không tính điểm và không phải bài đánh giá năng lực độc lập."));
  const form=mk("div","g11-supp-selfcheck");
  const answers=[];
  for(const [i,q]of picked.entries()){
@@ -256,9 +299,9 @@ const selfCheck=(root,bank)=>{
   if(button.disabled)return;
   button.disabled=true;answers.forEach(({textarea,answer,q})=>{
    textarea.disabled=true;answer.hidden=false;
-   answer.append(mk("h4","","Đáp án / lời giải từ ngân hàng PUBLIC"),paragraph(q.answer));
+   answer.append(mk("h4","","Lời giải để tự đối chiếu"),paragraph(q.answer));
   });
-  status.textContent="Đã Final Submit. Tự đọc lời giải và so sánh, không có chấm điểm độc lập hoặc lưu dữ liệu.";
+  status.textContent="Đã nộp. Hãy đối chiếu từng bước giải; kết quả không được chấm điểm hoặc lưu lại.";
   typeset(form);
  });
  root.append(form,button,status);typeset(root);

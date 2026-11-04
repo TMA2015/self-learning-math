@@ -1,7 +1,7 @@
-# Toán 11 · Thư viện 16 bài tự luận/Anchor — SGK bổ sung
+# Toán 11 · Tổng hợp bài tập tự luận cuối SGK
 
 <div class="thpt-r4-screen" data-thpt-r4>
-<p class="thpt-r4-eyebrow">SGK KNTT TẬP HAI · MỘT THƯ VIỆN CANONICAL</p>
-<p class="thpt-r4-lead">Có 16 bài tự luận theo cùng ngân hàng đã duyệt; Anchor chỉ là nhãn, không tạo bản sao. Em viết lời giải, nộp rồi mới tự đối chiếu lời giải và rubric /4. Không chấm máy hay ghi Mastery.</p>
-<div data-g11-supp-view="WRITTEN" aria-live="polite"><p>Đang tải thư viện tự luận đã khóa nguồn...</p></div>
+<p class="thpt-r4-eyebrow">SGK KẾT NỐI TRI THỨC · TẬP HAI · TRANG 99–109</p>
+<p class="thpt-r4-lead">Đây là trang tổng hợp để tra cứu bài tự luận. Trong hành trình tự học chính, <a href="../">mỗi bài đã nằm ngay dưới hoạt động hoặc chủ điểm liên quan</a>. Viết lời giải rồi nhấn <strong>Nộp câu trả lời</strong> để mở lời giải và tiêu chí tự đối chiếu. Không tự chấm điểm.</p>
+<div data-g11-supp-view="WRITTEN" aria-live="polite"><p>Đang mở bài tự luận...</p></div>
 </div>

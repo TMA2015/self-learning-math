@@ -1,25 +1,29 @@
-# Toán 11 · Bổ sung SGK Tập Hai — Hoạt động trải nghiệm và Ôn tập cuối năm
+# Toán 11 · Hoạt động thực hành trải nghiệm & Bài tập ôn tập cuối năm
 
-<div class="thpt-r4-screen" data-thpt-r4>
-<p class="thpt-r4-eyebrow">TOÁN 11 · SGK KNTT TẬP HAI · TRANG IN 99–109</p>
-<p class="thpt-r4-lead">Hai hoạt động thực hành trải nghiệm và mười tuyến ôn tập kết nối Chương I–IX. Học đủ bản chất, điều kiện, ví dụ suy luận, Tự thử trước Core, 52 câu Core/Luyện tập/Vận dụng, 16 câu tự luận dùng chung, 8 hình minh họa và 23 hỗ trợ sửa lỗi. Đây không phải Chương X hay Chuyên đề.</p>
+<div class="thpt-r4-screen g11-supp-overview" data-thpt-r4>
+<p class="thpt-r4-eyebrow">TOÁN 11 · SGK KẾT NỐI TRI THỨC · TẬP HAI · TRANG 99–109</p>
+<p class="thpt-r4-lead">Đây là <strong>hai phần chính thức ở cuối SGK Toán 11</strong>, sau Chương IX, không phải bài học thêm hay một chương mới. Mỗi hoạt động và mỗi chủ điểm ôn tập đều có kiến thức, ví dụ và bài tập ngay tại chỗ để em tự học liên tục, không phải chuyển qua nhiều trang.</p>
+<h2>Hoạt động thực hành trải nghiệm · Trang 99–104</h2>
+<p>Vận dụng toán học vào tình huống thực tế: mô hình tăng trưởng, các thang đo và hình học đo đạc. Chọn một hoạt động rồi học từ đầu đến cuối ngay trên trang đó.</p>
 <div class="thpt-r4-grid">
-<a class="thpt-r4-tile" href="trai-nghiem-e01/"><span>01</span><strong>Hoạt động trải nghiệm E01 · Mô hình mũ và thang lôgarit</strong><small>Trang 99–101 · Tăng trưởng, bán rã, pH, Richter, decibel và điều kiện mô hình</small><em>Học từ bản chất →</em></a>
-<a class="thpt-r4-tile" href="trai-nghiem-e02/"><span>02</span><strong>Hoạt động trải nghiệm E02 · Hình học và đo đạc</strong><small>Trang 102–104 · Mô hình giấy, bóng cọc, góc nhị diện, thể tích, GeoGebra</small><em>Thực hành →</em></a>
-<a class="thpt-r4-tile" href="on-tap-cuoi-nam/"><span>03</span><strong>Ôn tập cuối năm</strong><small>Trang 105–109 · Mười tuyến khắc phục lỗ hổng theo outcome, có ví dụ và Tự thử</small><em>Ôn tập →</em></a>
-<a class="thpt-r4-tile" href="luyen-tap/"><span>04</span><strong>Core và Luyện tập</strong><small>52 câu PUBLIC canonical, có phản hồi tự đối chiếu sau khi nộp từng câu</small><em>Làm bài →</em></a>
+<a class="thpt-r4-tile" href="trai-nghiem-e01/"><span>01</span><strong>Hoạt động 1 · Mô hình mũ và lôgarit</strong><small>Trang 99–101 · Lý thuyết → Ví dụ → Tự thử → Core/Luyện tập → Tự luận → Hỗ trợ</small><em>Bắt đầu hoạt động 1 →</em></a>
+<a class="thpt-r4-tile" href="trai-nghiem-e02/"><span>02</span><strong>Hoạt động 2 · Hình học và đo đạc</strong><small>Trang 102–104 · Mô hình giấy, góc và thể tích; luyện tập và tự luận ngay trong hoạt động</small><em>Bắt đầu hoạt động 2 →</em></a>
 </div>
-<nav class="thpt-r4-lesson-tabs"><a href="tu-luan/">16 bài tự luận / Anchor</a><a href="tu-kiem-tra/">Final Submit tự đối chiếu</a><a href="../chuong-ix/">Trở lại Chương IX</a><a href="../../">Tổng quan SGK</a></nav>
+<h2>Bài tập ôn tập cuối năm · Trang 105–109</h2>
+<p>Hệ thống lại kiến thức Chương I–IX qua mười chủ điểm. Trong mỗi chủ điểm có phần nhắc kiến thức, ví dụ, Core, Luyện tập, Tự luận và đường hỗ trợ khi gặp khó khăn.</p>
+<div class="thpt-r4-grid">
+<a class="thpt-r4-tile" href="on-tap-cuoi-nam/"><span>03</span><strong>Ôn tập theo chủ điểm</strong><small>Mười chủ điểm, bài tập đặt ngay sau phần kiến thức tương ứng</small><em>Ôn tập →</em></a>
+<a class="thpt-r4-tile" href="tu-kiem-tra/"><span>04</span><strong>Tự kiểm tra cuối năm</strong><small>22 câu đã học; làm xong rồi chọn Final Submit để tự đối chiếu, không tính điểm</small><em>Tự kiểm tra →</em></a>
+</div>
+<nav class="thpt-r4-lesson-tabs" aria-label="Điều hướng SGK"><a href="../chuong-ix/">Về Chương IX</a><a href="../../">Các chương SGK</a></nav>
 </div>
 
-## Hành trình tự học
+## Cách sử dụng để tự học
 
-1. Đọc lý do phải học và kiến thức tiền đề, hình thành bản chất trước công thức.
-2. Tự thử trước Core và tự kiểm điều kiện/giới hạn của phương pháp.
-3. Học ví dụ có giải thích lựa chọn phương pháp, đọc hình và kiểm tra đơn vị.
-4. Tự giải Core/Luyện tập/Vận dụng; chỉ mở đáp án sau khi chủ động nộp từng câu. Nếu sai, dùng HELP cùng outcome rồi quay lại.
-5. Viết bài tự luận và đối chiếu rubric; cuối cùng có thể làm bộ **22 câu PUBLIC đã học** trước khi nhấn **Final Submit**.
+1. **Bắt đầu từ hoạt động hoặc chủ điểm:** hiểu vì sao cần học, kiến thức tiền đề, bản chất và các điều kiện áp dụng.
+2. **Đọc ví dụ rồi tự thử:** giải thích từng bước và quan sát hình; chưa vội xem đáp án.
+3. **Làm Core, Luyện tập, Vận dụng và Tự luận ngay bên dưới.** Viết cách giải trước khi nhấn **Nộp câu trả lời**; chỉ sau đó mới hiện lời giải để đối chiếu.
+4. **Nếu gặp khó khăn:** mở mục hỗ trợ ở cuối chính chủ điểm và quay lại câu đang làm. Không cần chuyển sang một thư viện riêng.
+5. **Cuối năm:** vào **Tự kiểm tra cuối năm**, hoàn thành bài rồi nhấn **Final Submit** để tự xem lời giải.
 
-**Giới hạn đánh giá:** Final Submit ở đây là bài **tự đối chiếu học tập** với câu đã công khai, không phải đánh giá độc lập RD1, không tự chấm tự luận, không ghi Skill Mastery hoặc SGK_CHAPTER_READINESS. Nội dung học liệu được kiểm duyệt trên snapshot nguồn và lời giải riêng; kết quả tự luyện không được dùng làm bằng chứng độc lập.
-
-[Trở về chọn chương SGK Toán 11](../../)
+*Lưu ý:* Tự kiểm tra dùng lại các câu đã học để tự đối chiếu, không phải kỳ kiểm tra đánh giá độc lập, không chấm điểm hay lưu kết quả. Các trang tổng hợp bài tập cũ vẫn giữ đường dẫn để không làm hỏng dấu trang, nhưng không phải hành trình tự học chính.

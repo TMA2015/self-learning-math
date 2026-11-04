@@ -21,3 +21,17 @@
 @media (max-width:640px){.g11-supp-topic{padding:12px}.g11-supp-exercise{padding:12px}.g11-supp-submit,.g11-supp-link{width:100%;justify-content:center}}
 
 .g11-supp-paragraph,.g11-supp-first-try,.g11-supp-solution p{white-space:pre-line}
+
+/* Learner-first 2026-11-04 UI delta: in-topic activities, one PUBLIC bank. */
+.g11-supp-local-nav{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 24px}
+.g11-supp-local-nav a{display:inline-flex;align-items:center;min-height:42px;padding:8px 11px;border:1px solid var(--md-default-fg-color--lightest);border-radius:8px;text-decoration:none!important;font-weight:650;font-size:.85rem}
+.g11-supp-learning-guide{padding:14px 18px;margin-bottom:20px;background:var(--md-code-bg-color);border-radius:12px;border-left:3px solid var(--md-primary-fg-color)}
+.g11-supp-learning-guide h3{margin-top:0}
+.g11-supp-learning-guide ol{padding-left:22px;margin-bottom:0}
+.g11-supp-learning-guide li{margin:5px 0}
+.g11-supp-learning-stage{margin-top:22px;padding-top:8px;border-top:1px solid var(--md-default-fg-color--lightest)}
+.g11-supp-learning-stage>h3{font-size:1.12rem;margin-bottom:8px}
+.g11-supp-learning-stage .g11-supp-exercise{margin:12px 0}
+.g11-supp-next{display:inline-flex;min-height:44px;align-items:center;margin:12px 0;padding:10px 14px;border:1px solid var(--md-accent-fg-color);border-radius:8px;font-weight:700;text-decoration:none!important}
+.g11-supp-overview>h2{margin-top:34px}
+@media(max-width:640px){.g11-supp-local-nav a{flex:1 1 140px;justify-content:center}.g11-supp-learning-guide{padding:12px}.g11-supp-topic{margin:18px 0 24px}.g11-supp-learning-stage .g11-supp-exercise{padding:12px}}
