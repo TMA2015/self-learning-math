@@ -5,16 +5,16 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 1.1.0
 LEARNING_PATH: SGK_YEAR_END_REVIEW_CANDIDATE
 RELEASE_SCOPE: SGK_YEAR_END_REVIEW_SUPPLEMENT_CANDIDATE
-AUTHORING_STATUS: NOTEBOOKLM_REVIEW_CANDIDATE
-ACADEMIC_VERDICT: NOTEBOOKLM_PENDING
-PEDAGOGICAL_VERDICT: NOTEBOOKLM_PENDING
+AUTHORING_STATUS: NOTEBOOKLM_PASS_REPORTED_Q18_SOURCE_PARITY_HOLD
+ACADEMIC_VERDICT: NOTEBOOKLM_REPORTED_PASS_Q18_HOLD
+PEDAGOGICAL_VERDICT: NOTEBOOKLM_REPORTED_PASS_Q18_HOLD
 CONTENT_READY: NO
 RELEASE_AUTHORIZATION: NO
 MASTERY_ACTIVATION: NO
 OFFICIAL_READINESS: NOT_CLAIMED
 RD1_PRIVATE_COUNT: 0
 ASSESSMENT_MODE: PUBLIC_REVIEW_CLIENT_SELF_CHECK_NO_MASTERY_CANDIDATE
-BLOCKED_BY_AUTHORING: NOTEBOOKLM_ACADEMIC_PED_PENDING; V2_YEAR_END_PACKET_TYPE_UNAPPROVED
+BLOCKED_BY_AUTHORING: Q18_FOUR_MARKDOWN_SHA_MISMATCH; OFFICIAL_Q_GATE_NAME_CROSSWALK; V2_YEAR_END_PACKET_TYPE_UNAPPROVED
 
 ## 1. S1 evidence: original book actually inspected (not inferred)
 - Original scanned **SGK Toán 12 KNTT Tập Hai**, 99 PDF pages; SHA256 `3c642f2e80d86d699ea62bbcabd0c3074fd5118def96e4b3b8ce1f9ead7f97bb`. Identical to prior G12 S1 receipt; obtained from existing Math Grade 12 Drive source folder.
@@ -42,3 +42,10 @@ BLOCKED_BY_AUTHORING: NOTEBOOKLM_ACADEMIC_PED_PENDING; V2_YEAR_END_PACKET_TYPE_U
 4. No handoff V2, no ready manifest, no REGISTER, no website PR, no merge/deploy until appropriate source/receipt and packet-type gates hold. Both RELEASE and Chapter/Topic official Readiness remain separate.
 
 CHECKPOINT: S1_DIRECT_VERIFIED; 6 OUTCOME / 31 CANONICAL R00 SOURCE_CANDIDATE; NOTEBOOKLM_PENDING; CONTENT_READY=NO.
+
+## 04/11/2026 — independent NotebookLM R00 owner reports received (immutable provenance reconciliation)
+
+- Two owner-provided reports BOTH **report** Academic PASS, PED PASS, six outcomes, 31 items, 16/16 Written /5, four PNG, P0/P1/P2=0, MINIMAL_DELTA=0. Original paste TXT Git blob `8f480828da72ca02002c981077da52bb8940c5ea` (raw SHA256 `a9b72f23862f2ecd0d4166a5df3bf71e6f5819e8766fe5e183b16b88fd1f1e6b`), independent Studio Markdown Git blob `f164ff92266952be010e2511126b5919710cf731` (raw SHA256 `4e857585bf6dea2eb2a1344308ef064ea4c88ef29c176f5be5960d9234130b09`). Reports are preserved byte-exact; report claim is not independently re-issued by author.
+- Direct verification of unchanged R00 ZIP `e2c08924a3c781fa160482a8b387288876a272dd46fe9eab96e2419c69d12beb` **found all four reviewer Markdown SHA256 values inconsistent** with original exact bytes and initial Git blob custody; four PNG SHA256 matched. The reviewer Q02/Q03/Q18 names also do not match the official v1.1.0 standard. See `prototypes/thpt/content-drafts/G12_SGK_YEAREND_R00_NOTEBOOKLM_REVIEW_RECONCILIATION_20261104.md` for byte values and impact.
+- A **targeted metadata/source-fidelity** NotebookLM correction packet is staged at `prototypes/thpt/review-packets/Temp_G12_SGK_YEAREND_R00_Q18_RECEIPT_CORRECTION_20261104.md`. No student source, answer, rubric, figures, item IDs or original reviewer files were modified. This is not DELTA_C; no material academic redraft claimed.
+- `Q18_SOURCE_PARITY=HOLD` until independent reviewer identifies original source Git blob `7274cb3a6c35627f0e23574709cf5cdc355ab46a` and correct R00 file SHA256, maps Q codes to the official standard, and resolves source fidelity. `CONTENT_READY=NO`; V2 `SGK_YEAR_END_REVIEW_SUPPLEMENT` owner permission is a distinct later operational decision; EXP owner approval does not carry over.
