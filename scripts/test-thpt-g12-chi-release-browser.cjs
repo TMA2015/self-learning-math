@@ -70,7 +70,7 @@ const counts=[11,12,14,14,15],helpc=[6,6,6,7,7],figurec=[1,1,1,2,1];
     assert.equal(await first.locator(".g12-chi-answer:not([hidden])").count(),1,"Reveal only submitted Core key");
     assert.equal(await hub.locator(".g12-chi-answer:not([hidden])").count(),1,"Other keys stay hidden");
     const help=hub.locator("#b01-help");
-    await help.locator("summary").click();
+    await help.locator(":scope > summary").click();
     assert.notEqual(await help.getAttribute("open"),null);
     const d6=help.locator("a.g12-chi-return").first();
     const anchor=await d6.getAttribute("href");
