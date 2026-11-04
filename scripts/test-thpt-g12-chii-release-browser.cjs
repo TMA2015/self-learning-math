@@ -28,7 +28,15 @@ try{
     assert.equal(await root.locator(".g12-chii-help").count(),helpers[n],"Original D6 B0"+n);
     assert.equal(await root.locator(".g12-chii-item[data-canonical-item]").count(),counts[n]);
     assert.equal(await page.locator(".g12-chi-figure img").count(),1);
-    assert(await page.locator(".g12-chi-figure img").first().evaluate(img=>img.complete&&img.naturalWidth>0),"Original SVG B0"+n+" must load");
+    // Original full-length SGK theory places the SVG below the fold.
+    // With loading="lazy", scroll first and wait for image decode; do not assume immediate readiness.
+    const svg=page.locator(".g12-chi-figure img").first();
+    await svg.scrollIntoViewIfNeeded();
+    await page.waitForFunction(()=>{
+      const img=document.querySelector(".g12-chi-figure img");
+      return !!img&&img.complete&&img.naturalWidth>0;
+    },null,{timeout:15000});
+    assert(await svg.evaluate(img=>img.naturalWidth>0),"Original SVG B0"+n+" must load after lazy scroll");
     assert.equal(await root.locator(".g12-chii-answer:not([hidden])").count(),0,"Answer leaked before individual Submit");
     const prose=await page.locator(".md-content").innerText();
     for(const key of ["1. Vì sao cần học","3. Bản chất","4. Đọc hình","5. Ví dụ","6. Tự thử","7. Core"])
