@@ -32,12 +32,6 @@ jobs:
         run: |
           python -m pip install playwright==1.56.0
           python -m playwright install chromium --with-deps
+      # Browser snapshots stay inside the CI runner; repository policy forbids shared artifact uploads.
       - name: Test offline A/B presentation at 390 / 820 / 1440
         run: python scripts/test-thpt-g12-b01-ux-pilot-browser.py
-      - name: Upload QA screenshots (research only)
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: g12-b01-ux-ped-pilot-a-b-390-820-1440
-          path: artifacts/thpt-ux-ped-pilot/*.png
-          if-no-files-found: ignore
