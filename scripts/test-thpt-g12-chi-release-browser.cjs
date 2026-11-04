@@ -81,7 +81,7 @@ const counts=[11,12,14,14,15],helpc=[6,6,6,7,7],figurec=[1,1,1,2,1];
     assert(await target.isVisible(),"D6 return opens the proper Core/Practice group");
     const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);
     assert(overflow<=20,"Expanded practice does not overflow @"+viewport.width);
-    await check("chuong-i/luyen-tap/#b02-practice");
+    await check("chuong-i/luyen-tap/?qa=deep-link#b02-practice");
     await page.waitForFunction(()=>document.querySelector("[data-g12-chi-hub]")?.dataset.g12ChiReady==="true",null,{timeout:30000});
     assert.notEqual(await page.locator("#b02-practice").getAttribute("open"),null,"Deep link opens Practice B02");
     assert.equal(await page.locator(".g12-chi-answer:not([hidden])").count(),0,"New view never preloads key");
