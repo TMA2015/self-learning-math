@@ -163,8 +163,8 @@ const helpBlocks=(root,bank,topic)=>{
  const helps=bank.help.filter(h=>ids.has(h.return_item));
  if(!helps.length)return;
  root.append(mk("h3","","Khi gặp khó khăn: gợi ý khắc phục"));
- for(const h of helps){
-  const details=mk("details","g11-supp-help"),summary=mk("summary","","Khi cần gợi ý: tự kiểm tra cách làm");
+ for(const [i,h] of helps.entries()){
+  const details=mk("details","g11-supp-help"),summary=mk("summary","","Gợi ý "+(i+1)+" · Kiểm tra cách làm");
   const steps=mk("ol");
   for(const step of h.steps){const li=mk("li");addText(li,step);steps.append(li)}
   const a=mk("a","","Quay lại bài luyện tập đã liên kết");
@@ -182,7 +182,7 @@ const course=(root,bank,view)=>{
   const section=mk("section","g11-supp-topic");
   section.id="g11-supp-"+topic.toLowerCase();
   header(section,view==="YEAR"?"BÀI TẬP ÔN TẬP CUỐI NĂM":"HOẠT ĐỘNG THỰC HÀNH TRẢI NGHIỆM",topicName[topic]||track.title);
-  for(const n of [1,2,3,4,5,6]){
+  for(const n of [1,2,3,4,5]){
    const body=track.ped["PED"+n];if(!body)continue;
    section.append(mk("h3","",pedNames["PED"+n]));
    section.append(paragraph(body,n===6?"g11-supp-first-try":"g11-supp-paragraph"));
@@ -193,6 +193,12 @@ const course=(root,bank,view)=>{
    if(figure){const f=mk("figure","thpt-r4-plot g11-supp-figure"),im=mk("img");im.src=new URL(figure.src,imagesUrl).href;im.alt=figure.description;im.loading="lazy";f.append(im,mk("figcaption","",figure.description));section.append(f)}
   }
   examples(section,bank,topic);
+  // Keep approved PED6 text unchanged, but place self-try after the
+  // worked examples and before Core in the learner's reading order.
+  if(track.ped.PED6){
+   section.append(mk("h3","",pedNames.PED6));
+   section.append(paragraph(track.ped.PED6,"g11-supp-first-try"));
+  }
   // One canonical JSON bank, multiple learner placements. This topic
   // owns its full Core → Practice/Application → Written → D6 journey.
   const core=bank.items.filter(q=>groupOf(q)===topic&&q.role==="SGK_CORE");

@@ -40,6 +40,9 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/lop-11/bo-sung/";
     assert.equal(await root.locator(".g11-supp-solution:not([hidden])").count(),1,"Other topic answers stay hidden");
     assert((await root.locator(".g11-supp-help").first().locator("a").getAttribute("href")).startsWith("#"),"D6 returns to the exact exercise on this page");
     assert((await root.innerText()).includes("Tự thử trước khi vào Core"),"Self-try before Core E01");
+    const stageOrder=await root.locator(".g11-supp-topic > h3, .g11-supp-learning-stage > h3").allInnerTexts();
+    assert(stageOrder.indexOf("Ví dụ có suy luận")<stageOrder.indexOf("Tự thử trước khi vào Core"),"Example before self-try");
+    assert(stageOrder.indexOf("Tự thử trước khi vào Core")<stageOrder.indexOf("1. Core · Tự thử kiến thức"),"Self-try before Core");
     for(const image of await root.locator("figure.g11-supp-figure img").all()){
      assert(await image.evaluate(img=>img.complete&&img.naturalWidth>0),"E01 SVG loaded");
     }
