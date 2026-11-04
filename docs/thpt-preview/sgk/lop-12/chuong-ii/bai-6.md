@@ -2,7 +2,7 @@
 
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">TOÁN 12 · CHƯƠNG II · SGK KẾT NỐI TRI THỨC · TẬP MỘT · TRANG 45–59</p>
-<p class="thpt-r4-lead">Học theo mạch: hiểu bản chất, đọc hình, xem ví dụ có suy luận, tự thử, Core, Luyện tập, Tự luận và tự khắc phục ngay trong bài.</p>
+<p class="thpt-r4-lead">Học theo mạch: hiểu bản chất, đọc hình, xem ví dụ có suy luận và Tự thử trước Core; sau đó mở Core, Luyện tập và Tự luận trên trang riêng của Chương II.</p>
 <nav class="thpt-r4-lesson-tabs"><a href="../">Chương II</a><a href="../bai-7/">Bài tiếp theo</a></nav>
 </div>
 
@@ -99,7 +99,10 @@ Lần lượt theo ba cạnh của hình hộp, điểm kết thúc là $C'$, n�
 
 </details>
 
-## 7. Core · Luyện tập · Tự luận · Hỗ trợ khắc phục
+## 7. Core, Luyện tập, Tự luận và hỗ trợ
 
-<div class="thpt-r4-screen g12-chii-lesson" data-g12-chii-lesson="B06" aria-live="polite"><p>Đang mở bài tập gốc đã kiểm duyệt...</p></div>
+Sau phần Kiến thức, ví dụ và **Tự thử trước Core**, em sang **trang Core và Luyện tập của Chương II**. Tại đây, em chọn Bài 6, tự làm rồi mới đối chiếu, và có hướng dẫn theo đúng câu nếu gặp khó khăn.
+
+<div class="thpt-r4-screen" data-thpt-r4><nav class="thpt-r4-lesson-tabs"><a href="../luyen-tap/#b06-core">✎ Core · Bài 6</a><a href="../luyen-tap/#b06-practice">✎ Luyện tập và Tự luận · Bài 6</a><a href="../luyen-tap/#b06-help">Hỗ trợ khi gặp khó khăn · Bài 6</a></nav></div>
+
 <div class="thpt-r4-screen" data-thpt-r4><nav class="thpt-r4-lesson-tabs"><a href="../">Chương II</a><a href="../bai-7/">Bài tiếp theo</a></nav></div>
