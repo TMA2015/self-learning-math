@@ -187,6 +187,7 @@ const startHub=(root,bank)=>{
  chapterLessons.forEach(([lesson,name],i)=>{
   const panel=mk("section","thpt-r4-practice-lesson g12-chi-hub-lesson");
   panel.dataset.g12ChiHubLesson=lesson;
+  panel.dataset.thptGrade="12";
   const header=mk("div","thpt-r4-practice-lesson-header");
   const num=mk("span","thpt-r4-lesson-number",i+1);
   const head=mk("div","");
@@ -212,8 +213,9 @@ const startHub=(root,bank)=>{
   const target=decodeURIComponent(link.hash.slice(1));
   openTarget(root,target);
  });
- const hash=decodeURIComponent(location.hash.slice(1));
- if(hash)openTarget(root,hash);
+ const followHash=()=>{const hash=decodeURIComponent(location.hash.slice(1));if(hash)openTarget(root,hash)};
+ window.addEventListener("hashchange",followHash);
+ followHash();
  root.dataset.g12ChiHubReady="true";
 };
 const startSelfCheck=(root,bank)=>{
