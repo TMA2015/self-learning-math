@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 "use strict";
-// Structural/source-lock gate for newly introduced READY chapter packets.
+// Source-lock V2: SGK_CHAPTER and owner-approved SGK_EXPERIENCE_SUPPLEMENT / SGK_YEAR_END_REVIEW_SUPPLEMENT only.
 // This never issues Academic/PED PASS and intentionally grandfathers historical READY manifests.
 const fs = require("node:fs");
 const assert = require("node:assert/strict");
@@ -72,6 +72,38 @@ function verifyOneStandardEvidence(data, handoff, initialHandoff) {
   });
 }
 
+// Owner-approved 03/11/2026: one SGK supplement packet type; never mislabel it as a chapter.
+function verifyLaneScope(data) {
+  const lane = field(data, "LEARNING_PATH");
+  const scope = field(data, "RELEASE_SCOPE");
+  assert(
+    (lane === "SGK_CHAPTER" && scope === "FULL_LEARNING_PATH") ||
+    (lane === "SGK_EXPERIENCE_SUPPLEMENT" && scope === "SGK_EXPERIENCE_SUPPLEMENT") ||
+    (lane === "SGK_YEAR_END_REVIEW_SUPPLEMENT" && scope === "SGK_YEAR_END_REVIEW_SUPPLEMENT"),
+    "V2 ready lane/scope mismatch or unapproved type: " + lane + " / " + scope
+  );
+  return lane;
+}
+function verifySupplementSafety(data, handoff, lane) {
+  assert(["SGK_EXPERIENCE_SUPPLEMENT","SGK_YEAR_END_REVIEW_SUPPLEMENT"].includes(lane), "Unapproved supplemental lane");
+  assert.equal(field(data, "PRIVATE_RD1_COUNT"), "0", "SGK supplement has no held-out RD1");
+  assert.equal(field(data, "OFFICIAL_READINESS"), "NOT_CLAIMED", "SGK experience cannot claim chapter/topic Readiness");
+  assert.equal(field(data, "MASTERY_ACTIVATION"), "NO", "Supplement cannot activate Mastery");
+  assert.equal(field(data, "RELEASE_AUTHORIZATION"), "NO", "CONTENT_READY is not deploy authority");
+  assert.equal(field(handoff, "LEARNING_PATH"), lane);
+  assert.equal(field(handoff, "RELEASE_SCOPE"), lane);
+  if (lane === "SGK_YEAR_END_REVIEW_SUPPLEMENT") {
+    assert.equal(field(data, "SUPPLEMENT_UNIT"), "PUBLIC_YEAR_END_REVIEW", "Year-end is not a chapter or official exam");
+    assert.equal(field(handoff, "SUPPLEMENT_UNIT"), "PUBLIC_YEAR_END_REVIEW");
+  }
+  const custody = section(handoff, "PRIVATE_RD1_CUSTODY_METADATA");
+  assert(/RD1_PRIVATE_COUNT\s*=\s*0/.test(custody), "Supplement must document zero private RD1");
+  assert(/no independent/i.test(custody) && /SGK_CHAPTER_READINESS/i.test(custody), "Supplement must disclaim independent chapter Readiness");
+  if (lane === "SGK_YEAR_END_REVIEW_SUPPLEMENT") {
+    assert(/TOPIC_READINESS/i.test(custody) && /year.end/i.test(custody), "Year-end must disclaim Topic Readiness and official exam");
+  }
+}
+
 function verifyReadyManifest(rel, initialHandoff) {
   const data = fs.readFileSync(path.join(root, rel), "utf8");
   const id = field(data, "PACKET_ID");
@@ -80,8 +112,7 @@ function verifyReadyManifest(rel, initialHandoff) {
   const state = field(data, "STATE");
   assert(["CONTENT_READY","RELEASE_READY"].includes(state), "Invalid V2 ready state");
   if (initialHandoff) assert.equal(state, "CONTENT_READY", "New handoff cannot skip R gates");
-  assert.equal(field(data, "LEARNING_PATH"), "SGK_CHAPTER", "New SGK-first whole-chapter handoff only");
-  assert.equal(field(data, "RELEASE_SCOPE"), "FULL_LEARNING_PATH", "No new incomplete chapter as full academic handoff");
+  const lane = verifyLaneScope(data);
   assert.equal(field(data, "ASSESSMENT_MODE"), "CLIENT_SELF_CHECK_NO_MASTERY");
   assert.equal(field(data, "ACADEMIC_VERDICT"), "PASS_ON_LOCKED_SNAPSHOT");
   assert.equal(field(data, "PEDAGOGICAL_VERDICT"), "PASS_ON_LOCKED_SNAPSHOT");
@@ -107,12 +138,13 @@ function verifyReadyManifest(rel, initialHandoff) {
   const handoffRel = field(data, "AUTHOR_HANDOFF");
   const handoff = fs.readFileSync(safeRepoFile(handoffRel, ["prototypes/thpt/release-handoffs/"]), "utf8");
   verifyOneStandardEvidence(data, handoff, initialHandoff);
+  if (lane !== "SGK_CHAPTER") verifySupplementSafety(data, handoff, lane);
   for (const [k,v] of [
     ["PACKET_ID", id], ["ACADEMIC_SOURCE_BLOB", sourceBlob],
     ["REVIEW_RECEIPT_BLOB", reviewBlob], ["ACADEMIC_VERDICT", "PASS"],
     ["PEDAGOGICAL_VERDICT", "PASS"], ["BLOCKERS", "NONE"],
     ["ASSESSMENT_MODE", "CLIENT_SELF_CHECK_NO_MASTERY"],
-    ["RELEASE_SCOPE", "FULL_LEARNING_PATH"]
+    ["RELEASE_SCOPE", field(data, "RELEASE_SCOPE")]
   ]) assert.equal(field(handoff, k), v, "Handoff mismatch " + k);
   const lessons = ids(handoff, "LESSON_IDS");
   const outcomes = ids(handoff, "OUTCOME_IDS");
@@ -123,12 +155,33 @@ function verifyReadyManifest(rel, initialHandoff) {
   const matrix = section(handoff, "ITEM_OUTCOME_MATRIX");
   const rows = matrix.split("\n").filter(s => /^\|/.test(s)).map(s => s.split("|").slice(1).map(x => x.trim()));
   for (const id of items) assert(rows.some(row => row[0] === id && outcomes.includes(row[1])), "Unmapped item " + id);
+  if (lane !== "SGK_CHAPTER") {
+    const canonicalRows=rows.filter(row=>items.includes(row[0]));
+    assert.equal(canonicalRows.length, items.length, "Supplement requires exactly one canonical item–outcome row per item");
+    for (const id of items) assert.equal(canonicalRows.filter(row=>row[0]===id).length,1,"Duplicate supplement item mapping "+id);
+  }
   for (const heading of ["S1_SGK_SBT_SOURCE","D1_D6_EVIDENCE","PED1_PED6_EVIDENCE","REVIEW_SOURCE_RECEIPT","DELTA_LEDGER","PRIVATE_RD1_CUSTODY_METADATA","AUTHOR_SIGNOFF"]) assert(section(handoff, heading).length > 35, "Insufficient evidence in " + heading);
   assert(lessons.length && outcomes.length && items.length, "Empty author register");
   console.log("SOURCE_LOCK_PASS " + id + ": " + lessons.length + " lessons, " + outcomes.length + " outcomes, " + items.length + " public item IDs; evidence hashes match (not an Academic PASS).");
 }
 function selfTest() {
   assert.deepEqual(ids("## IDS\n- A\n- B\n", "IDS"), ["A","B"]);
+  assert.equal(verifyLaneScope("LEARNING_PATH: SGK_CHAPTER\nRELEASE_SCOPE: FULL_LEARNING_PATH"), "SGK_CHAPTER");
+  assert.equal(verifyLaneScope("LEARNING_PATH: SGK_EXPERIENCE_SUPPLEMENT\nRELEASE_SCOPE: SGK_EXPERIENCE_SUPPLEMENT"), "SGK_EXPERIENCE_SUPPLEMENT");
+  assert.equal(verifyLaneScope("LEARNING_PATH: SGK_YEAR_END_REVIEW_SUPPLEMENT\nRELEASE_SCOPE: SGK_YEAR_END_REVIEW_SUPPLEMENT"), "SGK_YEAR_END_REVIEW_SUPPLEMENT");
+  assert.throws(() => verifyLaneScope("LEARNING_PATH: SGK_YEAR_END_REVIEW_SUPPLEMENT\nRELEASE_SCOPE: FULL_LEARNING_PATH"));
+  assert.throws(() => verifyLaneScope("LEARNING_PATH: SGK_YEAR_END_REVIEW_SUPPLEMENT\nRELEASE_SCOPE: SGK_EXPERIENCE_SUPPLEMENT"));
+  assert.throws(() => verifyLaneScope("LEARNING_PATH: SGK_EXPERIENCE_SUPPLEMENT\nRELEASE_SCOPE: FULL_LEARNING_PATH"));
+  assert.throws(() => verifyLaneScope("LEARNING_PATH: SGK_CHAPTER\nRELEASE_SCOPE: SGK_EXPERIENCE_SUPPLEMENT"));
+  const safeSupplement="PRIVATE_RD1_COUNT: 0\nOFFICIAL_READINESS: NOT_CLAIMED\nMASTERY_ACTIVATION: NO\nRELEASE_AUTHORIZATION: NO";
+  const safeHandoff="LEARNING_PATH: SGK_EXPERIENCE_SUPPLEMENT\nRELEASE_SCOPE: SGK_EXPERIENCE_SUPPLEMENT\n## PRIVATE_RD1_CUSTODY_METADATA\nRD1_PRIVATE_COUNT = 0, no independent SGK_CHAPTER_READINESS.";
+  assert.doesNotThrow(() => verifySupplementSafety(safeSupplement, safeHandoff, "SGK_EXPERIENCE_SUPPLEMENT"));
+  assert.throws(() => verifySupplementSafety(safeSupplement.replace("PRIVATE_RD1_COUNT: 0","PRIVATE_RD1_COUNT: 1"),safeHandoff, "SGK_EXPERIENCE_SUPPLEMENT"));
+  const yearManifest=safeSupplement+"\nSUPPLEMENT_UNIT: PUBLIC_YEAR_END_REVIEW";
+  const yearHandoff=safeHandoff.replaceAll("SGK_EXPERIENCE_SUPPLEMENT","SGK_YEAR_END_REVIEW_SUPPLEMENT")+"\nSUPPLEMENT_UNIT: PUBLIC_YEAR_END_REVIEW\nNo independent SGK_CHAPTER_READINESS or TOPIC_READINESS and not a year-end official exam.";
+  assert.doesNotThrow(() => verifySupplementSafety(yearManifest,yearHandoff,"SGK_YEAR_END_REVIEW_SUPPLEMENT"));
+  assert.throws(() => verifySupplementSafety(yearManifest.replace("MASTERY_ACTIVATION: NO","MASTERY_ACTIVATION: YES"),yearHandoff,"SGK_YEAR_END_REVIEW_SUPPLEMENT"));
+  assert.throws(() => verifySupplementSafety(yearManifest.replace("SUPPLEMENT_UNIT: PUBLIC_YEAR_END_REVIEW","SUPPLEMENT_UNIT: OFFICIAL_EXAM"),yearHandoff,"SGK_YEAR_END_REVIEW_SUPPLEMENT"));
   assert.throws(() => ids("## IDS\n- A\n- A\n", "IDS"));
   assert.throws(() => field("X: REPLACE_ME","X"));
   assert.equal(field("X: PASS\n", "X"), "PASS");
@@ -141,7 +194,7 @@ function selfTest() {
   assert.throws(()=>verifyOneStandardEvidence(
     "STANDARD_ID: SLM-THPT-QUALITY-ONE\nSTANDARD_VERSION: 1.1.0\nQUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE",
     "STANDARD_ID: SLM-THPT-QUALITY-ONE\nSTANDARD_VERSION: 1.0.0\n"+bad,true));
-  console.log("PASS handoff V2 parser: historical v1.0.0 retained; v1.1.0 accepted with exact version agreement; negative invalid/mismatched versions");
+  console.log("PASS handoff V2 parser: chapters, experiential and year-end supplements scoped; negative pairing/assessment tests and historical version checks");
 }
 if (process.argv.includes("--self-test")) selfTest();
 else {

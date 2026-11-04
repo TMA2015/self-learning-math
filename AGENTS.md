@@ -2,6 +2,10 @@
 
 **Repository:** `TMA2015/self-learning-math`. Apply this file whenever a new development session, branch or conversation works on the repository.
 
+## Owner-approved SGK supplementary AUTHORING V2 types — 03–04/11/2026
+
+For source-locked V2 handoffs, owner has approved separate, truthful supplemental packet types: `SGK_EXPERIENCE_SUPPLEMENT` (G12 EXP01/02, Draft #733) and `SGK_YEAR_END_REVIEW_SUPPLEMENT` (G12 public year-end review, Draft #735). Both remain within the same `SLM-THPT-QUALITY-ONE v1.1.0`, are **not** whole chapters or Topics, and must meet the same independent Academic/PED/Q18, source+receipt blob, A1–A7, one handoff/manifest/REGISTER and exact-final-HEAD QA. Require no held-out RD1, no official independent Readiness or Mastery, and no RELEASE authorization. Do not copy a different packet's READY file or falsely select `SGK_CHAPTER / FULL_LEARNING_PATH`. No automatic merge/deploy.
+
 ## ONE OFFICIAL quality standard for both authoring and release (PR #703 merged 02/11/2026)
 The single OFFICIAL normative quality rubric is [`SLM-THPT-QUALITY-ONE`](prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md) v1.0.0; owner authorized governance merge after 3/3 exact-head QA PASS and PR #703 merged on 02/11/2026. Apply criteria Q01–Q18 on every new SGK/TOPIC academic source, with AUTHORING responsible for D1–D6/PED/NotebookLM source evidence and RELEASE responsible for rendered AP/R/assessment/QA of the **same** Q criteria. Do not invent a second release-side mathematics standard. Owner/latest decisions, S1, Sources 08/06/07 and five NotebookLM Permanent Sources v2.1 replace v2.0 only after owner installs the five new files (see v2.1 replacement manifest); historical v2.0 reviews remain scoped to their original source snapshots. No retroactive mass re-review or release automation restart during owner pause.
 

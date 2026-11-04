@@ -4,6 +4,22 @@
 
 This contract is operational; it supplements rather than replaces current Project Sources 08 (dual paths, canonical bank), 06 (NotebookLM Temp_ delivery), 07 v1.1 (delta), S1 KNTT SGK/SBT, Issues #675 (whole chapter), #691 (concept-first), #662 (Final Submit), and `AGENTS.md`. In conflict, owner latest decision and those governing sources prevail.
 
+## 04/11/2026 — OWNER-APPROVED V2 SGK supplementary packet types (AUTHORING only)
+
+**Owner decisions:** On 03/11 the owner approved the **operational** V2 packet type `SGK_EXPERIENCE_SUPPLEMENT` for G12 SGK EXP01/EXP02 (Draft PR #733, not yet merged into `main`); on **04/11/2026 the owner additionally approved** `SGK_YEAR_END_REVIEW_SUPPLEMENT` for G12 SGK year-end review (Draft PR #735). These are TWO different public SGK supplementary units, **neither** a new chapter, a Topic, or an independent official Chapter/Year-end Readiness examination. This addendum changes **V2 operational packet acceptance only**; the sole normative `SLM-THPT-QUALITY-ONE v1.1.0` Q01–Q18 continues unchanged, as do A1–A7/D1–D6/PED1–PED6 and SOURCE_RECEIPT SHA requirements. The year-end review authorization does NOT authorize website merge/deploy.
+
+**Allowed NEW READY pairs:**
+- `SGK_CHAPTER / FULL_LEARNING_PATH`: unchanged original whole-chapter route.
+- `SGK_EXPERIENCE_SUPPLEMENT / SGK_EXPERIENCE_SUPPLEMENT`: owner-approved practical experiential activities, retained as an approved V2 type (PR #733).
+- `SGK_YEAR_END_REVIEW_SUPPLEMENT / SGK_YEAR_END_REVIEW_SUPPLEMENT`: owner-approved **public year-end revision supplement** with `SUPPLEMENT_UNIT: PUBLIC_YEAR_END_REVIEW` (PR #735).
+Historical inventory/TOPIC packets continue under their existing rules; no new TOPIC or incomplete-chapter READY shortcut is authorized. Wrong/mixed lane-scope pairs must FAIL CLOSED.
+
+All supplementary READY packets: one `PACKET_ID`, exact immutable S1 source file, `ACADEMIC_SOURCE_BLOB`, one *independent* NotebookLM Academic+PED+Q18 `REVIEW_RECEIPT_BLOB`, actual outcome/role/item mapping, 18 distinct Q rows, six PED checks, A1–A7, one canonical handoff, one `ready/PACKET_ID.md` and one synchronized REGISTER row. Require `ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY`, `PRIVATE_RD1_COUNT: 0`, `OFFICIAL_READINESS: NOT_CLAIMED`, `MASTERY_ACTIVATION: NO`, `RELEASE_AUTHORIZATION: NO`, and in year-end additionally `SUPPLEMENT_UNIT: PUBLIC_YEAR_END_REVIEW`. Do not score exposed public questions as independent Readiness; do not auto-grade self-compared Written or expose answers/hints before Final Submit in eventual RELEASE UI. SOURCE_LOCK_PASS and CI are structural checks, NOT independent academic verdicts.
+
+**AUTHORING boundary:** `CONTENT_READY` means only the reviewed source is handed off after **exact-final-HEAD** V2/REGISTER/CI gates. RELEASE retains AP1–AP5/R1–R5/P1–P2, no pre-submit exposure, Golden UI/device QA, GitHub/Firebase privacy and separate owner release authorization. The two types are currently prepared on separate Draft PRs; no dependency merge, RELEASE integration or deploy is authorized by this addendum.
+
+**Historical text below** restricting V2 new handoffs to complete chapters remains valid for chapter packets, and is superseded **only** for these two narrowly owner-approved supplementary types.
+
 ## 03/11/2026 owner operational supersession — G11 RELEASE only
 
 The 02/11 PAUSED snapshot and older wording below are **historical**, not an active ban on SGK G11 release after the explicit 03/11 owner restart. No independent standard is created: follow `SLM-THPT-QUALITY-ONE` Q01–Q18 and the dated [G11 RELEASE operating rules](release-queue/G11_RELEASE_OPERATIONS_20261103.md). Authoring handoffs remain source-locked and academic-only. RELEASE has conditional permission to merge/deploy G11 after full AP/R/CI, not permission to skip any gate. Source-locked V2 manifests may remain on an AUTHORING Draft while RELEASE stages immutable bytes on its own branch; the absence from `main` does not by itself invalidate a qualified handoff.
