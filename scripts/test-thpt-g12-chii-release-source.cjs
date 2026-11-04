@@ -43,9 +43,11 @@ const figs=[["B06","26e388d873521aa5b0bae945343e69357490ec16"],["B07","979ca912e
 for(const [id,sha]of figs){const p="FIG-G12-CHII-"+id+"-R00.svg";assert.equal(git("prototypes/thpt/content-drafts/svg/"+p),sha);assert.equal(git("docs/assets/images/thpt/"+p),sha)}
 for(const n of [6,7,8]){
  const page=read("docs/thpt-preview/sgk/lop-12/chuong-ii/bai-"+n+".md");
- assert(page.includes('data-g12-chii-lesson="B0'+n+'"'),"Missing lesson route");
+ assert(!page.includes('data-g12-chii-lesson'),"No canonical bank items inside Knowledge B0"+n);
+ assert(page.includes('href="../luyen-tap/#b0'+n+'-core"'),"Missing Core chapter hub link");
+ assert(page.includes('href="../luyen-tap/#b0'+n+'-practice"'),"Missing Practice chapter hub link");
  assert(page.includes("Tự thử trước Core"),"First-try must be in exact lesson");
- assert(page.includes("Core · Luyện tập · Tự luận"),"Inline practice placement");
+ assert(page.includes("## 7. Core, Luyện tập"),"Student links to separate chapter practice page");
  assert(page.includes("FIG-G12-CHII-B0"+n+"-R00.svg"),"Original SVG missing");
  const id="B0"+n;
  const a=src.indexOf("# G12-SGK-CHII-"+id+" —");
@@ -58,8 +60,16 @@ for(const n of [6,7,8]){
  }
 }
 const root="docs/thpt-preview/sgk/lop-12/";
-for(const p of ["index.md","chuong-i.md","chuong-ii.md",..."678".split("").map(n=>"chuong-ii/bai-"+n+".md"),"chuong-ii/tu-kiem-tra-chuong.md"])assert(fs.existsSync(root+p));
+for(const p of ["index.md","chuong-i.md","chuong-ii.md","chuong-ii/luyen-tap.md",..."678".split("").map(n=>"chuong-ii/bai-"+n+".md"),"chuong-ii/tu-kiem-tra-chuong.md"])assert(fs.existsSync(root+p));
+const hub=read(root+"chuong-ii/luyen-tap.md");
+assert(hub.includes('data-g12-chii-hub'),"Dedicated chapter-level hub");
+assert(read(root+"chuong-ii.md").includes('href="luyen-tap/"'),"Chapter overview hub tile");
+assert(read("mkdocs.thpt-preview.yml").includes("thpt-preview/sgk/lop-12/chuong-ii/luyen-tap.md"),"Chapter nav hub route");
 const script=read("docs/assets/javascripts/thpt-g12-chii-b06-b08-r00.js");
+assert(script.includes("const startHub=")&&script.includes('data-g12-chii-hub'),"Chapter practice hub runtime");
+assert(!script.includes("const startLesson="),"No inline lesson item rendering");
+assert(script.includes('link.href="../luyen-tap/#"'),"End Final Submit remediation must return chapter hub");
+
 assert(script.includes("bank.end_references.length!==16"));
 assert(script.includes("entries.filter(x=>!x.input.value.trim()).length"));
 assert(script.includes("if(missing){status.textContent="));
@@ -70,4 +80,4 @@ for(const forbidden of ["innerHTML","localStorage.setItem","sessionStorage.setIt
 for(const cf of ["mkdocs.yml","mkdocs.thpt-preview.yml"]){
  const cfg=read(cf);assert(cfg.includes("thpt-g12-chii-b06-b08-r00.js"));assert(cfg.includes("thpt-g12-chii-b06-b08-r00.css"));assert(cfg.includes("lop-12/chuong-ii.md"));
 }
-console.log("PASS G12 SGK ChII source-lock: 64/64 original PUBLIC item+answer+solution+rubric, 16 outcome/D6/END references; 3 source SVG; 3 pedagogical lessons; Q15/16/18 no Mastery.");
+console.log("PASS G12 SGK ChII source-lock: 64/64 canonical items separated into chapter hub; 16 outcomes/D6/END references; 3 SVG, 3 Knowledge lessons, Q15/Q16/Q18 protected.");
