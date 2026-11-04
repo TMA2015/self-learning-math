@@ -5,6 +5,7 @@
 | Gói | Hành trình | Trạng thái | Phạm vi | PR / nguồn |
 |---|---|---|---|---|
 | [G10-SGK-CHI-FULL-R03-CANDIDATE-20261104](ready/G10-SGK-CHI-FULL-R03-CANDIDATE-20261104.md) | SGK_CHAPTER | CONTENT_READY | FULL_LEARNING_PATH / CLIENT_SELF_CHECK_NO_MASTERY | AUTHORING R03 frozen source 177d9328d243ece4449cfe7956c2957874597fd3; R01/R02 independently reviewed + ChI 14/14 original private source review verified 56/56 public fields, author Delta B exact text; V2 handoff prototypes/thpt/release-handoffs/G10-SGK-CHI-FULL-R03_HANDOFF_V2_20261104.md; no RELEASE/official Readiness/Mastery |
+| [G10-SGK-CHII-FULL-R03-CANDIDATE-20261104](ready/G10-SGK-CHII-FULL-R03-CANDIDATE-20261104.md) | SGK_CHAPTER | CONTENT_READY | FULL_LEARNING_PATH / CLIENT_SELF_CHECK_NO_MASTERY | AUTHORING R03 source 25f4eaf91483cb310ed13ebc5080f98cd247dd70, R01 Academic + R02 Academic/PED independently reviewed, 14/14 old public client items verified by historic private receipt; 42 canonical public IDs, Delta B exact source assembly; V2 handoff prototypes/thpt/release-handoffs/G10-SGK-CHII-FULL-R03_HANDOFF_V2_20261104.md; no RELEASE/protected RD1/Mastery |
 | [G10-SGK-CHI](ready/G10-SGK-CHI.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | authoring #628 merged, release #635 exact-head CI pending |
 | [G10-SGK-CHVI](inventory/G10-SGK-CHVI.md) | SGK_CHAPTER | PUBLISHED_SCOPED | PUBLIC_FORMATIVE_ONLY | merged #612; UI #617–619 |
 | [G10-SGK-CHVII](ready/G10-SGK-CHVII.md) | SGK_CHAPTER | RELEASE_READY | PUBLIC_FORMATIVE_ONLY | merged/deployed #625, source #624 |
