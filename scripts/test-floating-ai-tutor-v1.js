@@ -21,7 +21,12 @@ for(const pathname of [
   "/self-learning-math/kien-thuc/04-bieu-thuc-dai-so/",
   "/self-learning-math/kien-thuc/25-tong-hop-on-thi-10/anchor-25-004/",
   "/self-learning-math/thpt-preview/sgk/chuong-vi/bai-16/",
-  "/self-learning-math/thpt-preview/chuyen-de/ham-so/kien-thuc/"
+  "/self-learning-math/thpt-preview/chuyen-de/ham-so/kien-thuc/",
+  "/thpt-preview/sgk/lop-10/chuong-i/bai-1/",
+  "/self-learning-math/thpt-preview/sgk/lop-11/chuong-i/bai-1/",
+  "/self-learning-math/thpt-preview/sgk/lop-12/chuong-i/bai-1/",
+  "/thpt-preview/sgk/lop-11/chuong-ix/bai-33/index.html",
+  "/roadmap-toan-thcs/thpt/sgk/lop-12/chuong-i/bai-5/"
 ])ok(mayMount(pathname),"reading route needs contextual Tutor: "+pathname);
 for(const pathname of [
   "/roadmap-toan-thcs/kien-thuc/04-bieu-thuc-dai-so/bai-tap/",
@@ -37,8 +42,31 @@ for(const pathname of [
   "/roadmap-toan-thcs/thpt-preview/chuyen-de/ham-so/luyen-tap/",
   "/self-learning-math/kien-thuc/04-bieu-thuc-dai-so/tu-kiem-tra/",
   "/self-learning-math/thpt-preview/sgk/chuong-vi/tu-kiem-tra-chuong/",
-  "/self-learning-math/thpt-preview/chuyen-de/ham-so/tu-kiem-tra/"
+  "/self-learning-math/thpt-preview/chuyen-de/ham-so/tu-kiem-tra/",
+  "/self-learning-math/thpt-preview/sgk/lop-11/chuong-i/tu-kiem-tra-chuong/",
+  "/self-learning-math/thpt-preview/sgk/lop-11/chuong-i/luyen-tap/",
+  "/self-learning-math/thpt-preview/sgk/lop-12/chuong-i/tu-kiem-tra-chuong/",
+  "/thpt-preview/sgk/lop-12/chuong-i/bai-1/luyen-tap/",
+  "/self-learning-math/thpt-preview/sgk/lop-11/chuong-i/bai-1/bai-tap/"
 ])ok(!mayMount(pathname),"assessed/nonreading route must not mount Tutor: "+pathname);
+const thptRouteSource=ui.match(/const currentPath = \(\) =>[\s\S]*?(?=\n  const isReadingPage =)/)?.[0];
+ok(thptRouteSource,"THPT reading predicate remains testable");
+const thptReading = pathname => require("vm").runInNewContext(thptRouteSource+"\nisTHPTReadingPage();",{location:{pathname}});
+const gradeExpression=ui.match(/gradeOverlay:\s*([\s\S]*?),\n\s*skill:/)?.[1];
+ok(gradeExpression,"Tutor lesson grade overlay remains testable");
+const gradeOverlay = pathname => require("vm").runInNewContext(thptRouteSource+"\n("+gradeExpression+");",{location:{pathname}});
+for(const [pathname,expectedGrade,reading] of [
+  ["/self-learning-math/thpt-preview/sgk/chuong-vi/bai-16/",10,true],
+  ["/self-learning-math/thpt-preview/sgk/lop-11/chuong-i/bai-1/",11,true],
+  ["/thpt-preview/sgk/lop-12/chuong-i/bai-5/index.html",12,true],
+  ["/self-learning-math/thpt-preview/chuyen-de/ham-so/kien-thuc/",null,true],
+  ["/self-learning-math/thpt-preview/sgk/lop-11/chuong-i/tu-kiem-tra-chuong/",null,false],
+  ["/thpt-preview/sgk/lop-12/chuong-i/luyen-tap/",null,false]
+]) {
+  ok(thptReading(pathname)===reading,"THPT classification mismatch: "+pathname);
+  ok(gradeOverlay(pathname)===expectedGrade,"Tutor grade mismatch: "+pathname);
+}
+
 ok(ui.includes('activity: "learning"')&&ui.includes('helpMode: "TEACH_FROM_START"'),"learning context, not assessment/practice");
 ok(ui.includes("selectedText(root)")&&ui.includes("sectionText(root, heading)"),"selection or active section context");
 ok(ui.includes("tutor-girl-awake.webp")&&ui.includes("floating-ai-head-face"),"approved avatar in launcher and panel");
