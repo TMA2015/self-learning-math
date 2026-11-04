@@ -2,7 +2,7 @@
 
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">TOÁN 12 · CHƯƠNG I · SGK KẾT NỐI TRI THỨC · TẬP MỘT · TRANG 33–41</p>
-<p class="thpt-r4-lead">Học trọn bài tại đây: hiểu bản chất, xem hình, ví dụ có suy luận, tự thử, Core, Luyện tập, Vận dụng, Tự luận và các hướng dẫn tự khắc phục.</p>
+<p class="thpt-r4-lead">Học Kiến thức trọn vẹn tại đây: hiểu bản chất, xem hình, ví dụ có suy luận và tự thử; sau đó mở Core, Luyện tập, Vận dụng, Tự luận trên trang riêng của Chương I.</p>
 <nav class="thpt-r4-lesson-tabs"><a href="../">Chương I</a><a href="../bai-4/">Bài trước</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra</a></nav></div>
 
 ## 1. Vì sao cần học?
@@ -54,8 +54,10 @@ C. Bốn cạnh hay ba cạnh hàng rào sẽ làm thay đổi điều kiện x+
 D. Khi x cắt vuông ở góc hộp 30×20, tại sao x=12 cm không hợp lệ?
 Đoán trước rồi mới xem Core, sai thì chọn HELP theo outcome, tự thử khác và quay lại.
 
-## 7. Core, Luyện tập, Vận dụng, Tự luận và hỗ trợ
+## 7. Chuyển sang Core và Luyện tập
 
-<div class="thpt-r4-screen g12-chi-lesson" data-g12-chi-lesson="B05" aria-live="polite"><p>Đang mở bài tập đã kiểm duyệt...</p></div>
+Sau khi đọc Kiến thức, Ví dụ và hoàn thành các câu **Tự thử** phía trên, em có thể thực hành tại **trang Core và Luyện tập của Chương I**. Câu hỏi vẫn được chia theo từng bài, không cần tìm trong các bài học khác.
+
+<div class="thpt-r4-screen" data-thpt-r4><nav class="thpt-r4-lesson-tabs"><a href="../luyen-tap/#b05-core">✎ Core · Bài 5</a><a href="../luyen-tap/#b05-practice">✎ Luyện tập · Vận dụng · Tự luận · Bài 5</a><a href="../luyen-tap/#b05-help">Hướng dẫn khi gặp khó khăn · Bài 5</a></nav></div>
 
 <div class="thpt-r4-screen" data-thpt-r4><nav class="thpt-r4-lesson-tabs"><a href="../">Chương I</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav></div>

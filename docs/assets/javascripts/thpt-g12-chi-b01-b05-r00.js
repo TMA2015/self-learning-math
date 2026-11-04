@@ -96,7 +96,6 @@ const showLines=(el,text)=>{
  }
 };
 const h=(root,title)=>root.append(mk("h3","g12-chi-stage-title",title));
-const lessonNames={B01:"Bài 1",B02:"Bài 2",B03:"Bài 3",B04:"Bài 4",B05:"Bài 5"};
 const itemCard=(q,num)=>{
  const c=mk("section","g12-chi-item");
  c.id=anchor(q.item_id);
@@ -136,23 +135,89 @@ const helpers=(root,bank,lesson)=>{
   d.append(link);root.append(d);
  });
 };
-const startLesson=(root,bank,lesson)=>{
- const items=bank.items.filter(x=>x.lesson_id===lesson), groups=[
-  ["SGK_CORE","Core · Kiểm tra nền tảng"],
+/* Student navigation is chapter-first: one practice hub, lesson bodies are knowledge-only.
+ * PUBLIC canonical bank, D6, submit guards and Q16 remain exactly source-locked.
+ */
+const chapterLessons=[
+ ["B01","Tính đơn điệu và cực trị của hàm số"],
+ ["B02","Giá trị lớn nhất và giá trị nhỏ nhất của hàm số"],
+ ["B03","Đường tiệm cận của đồ thị hàm số"],
+ ["B04","Khảo sát sự biến thiên và vẽ đồ thị của hàm số"],
+ ["B05","Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn"]
+];
+const openTarget=(root,id)=>{
+ const target=document.getElementById(id);
+ if(!target||!root.contains(target))return false;
+ let p=target;
+ while(p&&p!==root){if(p.tagName==="DETAILS")p.open=true;p=p.parentElement;}
+ requestAnimationFrame(()=>target.scrollIntoView({block:"start"}));
+ return true;
+};
+const groupCard=(bank,lesson,mode)=>{
+ const practice=mode==="practice";
+ const records=bank.items.filter(q=>q.lesson_id===lesson&&
+    (practice?q.placement!=="SGK_CORE":q.placement==="SGK_CORE"));
+ const d=mk("details","g12-chi-hub-group thpt-r4-practice-card");
+ d.dataset.thptGrade="12";
+ d.id=lesson.toLowerCase()+"-"+(practice?"practice":"core");
+ const sum=mk("summary","g12-chi-hub-summary");
+ const top=mk("span","g12-chi-hub-kind",practice?"Luyện tập · Vận dụng · Tự luận":"Core");
+ const title=mk("strong","",practice?"Làm bài và trình bày suy luận":"Kiểm tra kiến thức cơ bản");
+ const count=mk("span","g12-chi-hub-count",records.length+" câu gốc");
+ const action=mk("span","g12-chi-hub-action",practice?"✎ Mở Luyện tập":"✎ Mở Core");
+ sum.append(top,title,count,action);d.append(sum);
+ const content=mk("div","g12-chi-hub-content");
+ const groups=practice?[
   ["SGK_PRACTICE","Luyện tập · Tự giải"],
   ["SGK_APPLICATION","Vận dụng · Lựa chọn phương pháp"],
   ["SGK_WRITTEN","Tự luận · Trình bày suy luận"]
- ];
- if(items.length<11||items.length>15)throw Error("Unexpected course item count");
- groups.forEach(([role,title])=>{
-  const selected=items.filter(q=>q.placement===role);
+ ]:[["SGK_CORE","Core · Kiểm tra nền tảng"]];
+ groups.forEach(([role,label])=>{
+  const selected=records.filter(q=>q.placement===role);
   if(!selected.length)return;
-  const part=mk("section","g12-chi-stage");
-  h(part,title);
-  selected.forEach((q,i)=>part.append(itemCard(q,i+1)));
-  root.append(part);
+  const section=mk("section","g12-chi-stage");h(section,label);
+  selected.forEach((q,i)=>section.append(itemCard(q,i+1)));
+  content.append(section);
  });
- helpers(root,bank,lesson);typeset(root);
+ d.append(content);
+ d.addEventListener("toggle",()=>{if(d.open)typeset(d)});
+ return d;
+};
+const startHub=(root,bank)=>{
+ root.classList.add("thpt-r4-practice-sections");
+ chapterLessons.forEach(([lesson,name],i)=>{
+  const panel=mk("section","thpt-r4-practice-lesson g12-chi-hub-lesson");
+  panel.dataset.g12ChiHubLesson=lesson;
+  panel.dataset.thptGrade="12";
+  const header=mk("div","thpt-r4-practice-lesson-header");
+  const num=mk("span","thpt-r4-lesson-number",i+1);
+  const head=mk("div","");
+  head.append(mk("p","thpt-r4-practice-class","Lớp 12 · Chương I"),mk("h2","",name));
+  header.append(num,head);panel.append(header);
+  const grid=mk("div","thpt-r4-practice-card-grid");
+  grid.append(groupCard(bank,lesson,"core"),groupCard(bank,lesson,"practice"));
+  panel.append(grid);
+  const aid=mk("details","g12-chi-hub-help");
+  aid.id=lesson.toLowerCase()+"-help";
+  const n=bank.help.filter(x=>x.lesson_id===lesson).length;
+  aid.append(mk("summary","","Khi gặp khó khăn · "+n+" hướng dẫn theo câu"));
+  const helpContent=mk("div","g12-chi-hub-help-content");
+  helpers(helpContent,bank,lesson);aid.append(helpContent);panel.append(aid);
+  panel.append(paragraph("Học lại kiến thức Bài "+(i+1)+": "));
+  const back=mk("a","g12-chi-return","Quay về bài học");
+  back.href="../bai-"+(i+1)+"/";panel.append(back);
+  root.append(panel);
+ });
+ root.addEventListener("click",event=>{
+  const link=event.target.closest("a.g12-chi-return");
+  if(!link||!link.getAttribute("href")?.startsWith("#"))return;
+  const target=decodeURIComponent(link.hash.slice(1));
+  openTarget(root,target);
+ });
+ const followHash=()=>{const hash=decodeURIComponent(location.hash.slice(1));if(hash)openTarget(root,hash)};
+ window.addEventListener("hashchange",followHash);
+ followHash();
+ root.dataset.g12ChiHubReady="true";
 };
 const startSelfCheck=(root,bank)=>{
  const items=bank.items.filter(x=>x.lesson_id==="END");
@@ -192,7 +257,7 @@ const startSelfCheck=(root,bank)=>{
  typeset(root);
 };
 const start=async()=>{
- const root=document.querySelector("[data-g12-chi-lesson], [data-g12-chi-selfcheck]");
+ const root=document.querySelector("[data-g12-chi-hub], [data-g12-chi-selfcheck]");
  if(!root)return;
  try{
   const res=await fetch(url,{cache:"no-cache"});
@@ -204,8 +269,7 @@ const start=async()=>{
    ||bank.items.length!==78||bank.help.length!==36
    ||new Set(bank.items.map(x=>x.item_id)).size!==78)throw Error("Source snapshot mismatch");
   root.replaceChildren();
-  const lesson=root.getAttribute("data-g12-chi-lesson");
-  if(lesson){if(!lessonNames[lesson])throw Error("Unknown lesson");startLesson(root,bank,lesson)}
+  if(root.hasAttribute("data-g12-chi-hub"))startHub(root,bank);
   else if(root.hasAttribute("data-g12-chi-selfcheck"))startSelfCheck(root,bank);
   root.dataset.g12ChiReady="true";
   const hash=decodeURIComponent(location.hash.slice(1));
