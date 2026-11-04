@@ -1,6 +1,6 @@
 # THPT — Quy trình hai nhánh, một checklist
 
-> **Official one-standard governance after owner-approved PR #703 merge (02/11/2026):** Canonical path `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`.  [`SLM-THPT-QUALITY-ONE`](../THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md) is the ONE OFFICIAL normative THPT content-quality rubric Q01–Q18 for both lanes; D1–D6 and PED1–PED6 are authoring evidence, AP1–AP5 and R1–R5 are rendered/technical evidence of the **same** quality standard. The standard is now effective for NEW authoring packets after the owner-approved governance merge, not retroactive clearance of existing content or approval to publish. Existing V2 handoff, S1, Sources 08/06/07 and private RD1 protections remain binding. Don’t call green source CI Academic PASS; owner restarted only G11 RELEASE conditionally on 03/11/2026 as documented above.
+> **Official one-standard governance after owner-approved PR #703 merge (02/11/2026):** Canonical path `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`.  [`SLM-THPT-QUALITY-ONE`](../THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md) remains the ONE normative THPT quality standard Q01–Q18 for both lanes (**v1.2.0 only after governance merge; existing snapshots retain original versions**); D1–D6 and PED1–PED6 are authoring evidence, AP1–AP5 and R1–R5 are rendered/technical evidence of the **same** quality standard. The standard is now effective for NEW authoring packets after the owner-approved governance merge, not retroactive clearance of existing content or approval to publish. Existing V2 handoff, S1, Sources 08/06/07 and private RD1 protections remain binding. Don’t call green source CI Academic PASS; owner restarted only G11 RELEASE conditionally on 03/11/2026 as documented above.
 
 
 **Repository duy nhất:** TMA2015/self-learning-math. Đây là kho MANIFEST và bằng chứng; không phải kho nhân bản câu hỏi, không có backend, không có held-out Readiness keys.
@@ -8,6 +8,15 @@
 ## Cập nhật điều phối RELEASE G11 ngày 03/11/2026
 
 Quyền phát hành SGK Toán 11 đã được chủ dự án **mở lại có điều kiện** sau lệnh PAUSE 02/11. Đọc [G11 release operations 03/11](G11_RELEASE_OPERATIONS_20261103.md) trước mọi lượt; đây là hướng dẫn vận hành, **không phải chuẩn học thuật mới**. Nó phân rõ `BLOCKED_BY_AUTHORING` khi nguồn S1/toán/receipt/delta lỗi và `BLOCKED_BY_RELEASE` khi Final Submit, MkDocs, JS, AP/QA/CI chưa đạt; **Q16 tự đối chiếu client thuộc RELEASE theo Issue #662**, không lấy thiếu RD1 mới làm lý do trì hoãn. Manifest V2 trên AUTHORING Draft #710 được tiếp nhận theo Git blob SHA không đòi merge Draft vào `main`; Release giữ một candidate PR riêng và hoàn tất exact-final-head QA. Lượt automation phải xét và báo từng packet độc lập, bỏ qua blocker cục bộ để đi tiếp, gồm gói SGK bổ sung trang 99–109 ngoài chín chương.
+
+
+### Cập nhật diễn giải và dẫn dắt tự học — 04/11/2026
+
+Chủ dự án phê duyệt hợp nhất cách diễn giải, nhịp dẫn dắt và trình bày vào **chính tiêu chuẩn `SLM-THPT-QUALITY-ONE v1.2.0`**, mục `II-B` và lịch sử `X-B`, **không có Q19 hoặc chuẩn AP/PED cạnh tranh**. Bằng chứng thực tế tham chiếu [Issue #742](https://github.com/TMA2015/self-learning-math/issues/742), #655 và #691. Chỉ có hiệu lực khi governance PR đã qua exact-head QA và merge main; mọi PASS/PUBLISHED trước đó vẫn gắn theo source/receipt chuẩn gốc, không kích hoạt kiểm toán hồi tố.
+
+**AUTHORING** tiếp tục PED1–PED6 theo outcome khi biên soạn mới; **RELEASE** tiếp tục AP1–AP5 trên bản học sinh nhìn thấy: từ câu hỏi gần gũi đến bản chất, điều kiện toán và ví dụ, hình sát lời hướng dẫn, “gọn nhưng không nén”, đọc tốt trên thiết bị thật. Diễn giải khó hiểu mà cần đổi ý học gửi `AUTHORING_DEFECT` theo `DELTA_C`; không âm thầm viết lại source, không thêm hint trước Final Submit. AI Tutor chỉ hỗ trợ, không thay việc học độc lập.
+
+**Báo cáo cho chủ dự án:** ngắn gọn theo **lớp/chương đã phát hành – đang QA – blocker cần quyết định – kết quả cần kiểm tra**. PR/CI/SHA chi tiết lưu trong GitHub, chỉ đưa vào tin nhắn khi thật sự cần đối chiếu. Không vì rút gọn báo cáo mà rút gọn QA.
 
 ## Handoff V2 sau quyết định chủ dự án 02/11/2026
 
