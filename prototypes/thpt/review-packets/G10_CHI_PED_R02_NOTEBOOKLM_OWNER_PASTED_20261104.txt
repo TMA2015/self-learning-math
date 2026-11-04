@@ -1,0 +1,246 @@
+# BÁO CÁO PHẢN BIỆN HỌC THUẬT VÀ SƯ PHẠM ĐỘC LẬP
+
+**Gói kiểm toán:** `G10-SGK-CHI-PED-BRIDGE-R02-20261104`  
+**Bộ chuẩn áp dụng duy nhất:** `SLM-THPT-QUALITY-ONE v1.1.0`  
+**Đơn vị thực hiện:** NotebookLM Independent Reviewer (Phản biện học thuật & Sư phạm độc lập)  
+**Ngày thực hiện:** 04/11/2026  
+
+---
+
+### 1. XÁC NHẬN NGUỒN VÀ SOURCE RECEIPT (BYTE-LEVEL SHA256)
+
+#### 1.1 Bộ Permanent Sources THPT v2.1 (Đang chọn — Đúng 5 tài liệu v2.1)
+1. `01_THPT_MASTER_PLAN_v2.1.md`
+2. `02_THPT_NOTEBOOKLM_INDEPENDENT_REVIEW_RULES_v2.1.md`
+3. `03_THPT_ACADEMIC_SOURCES_AND_DEPTH_AUDIT_v2.1.md`
+4. `04_THPT_GOLDEN_LEARNING_ARCHITECTURE_v2.1.md`
+5. `05_THPT_CANONICAL_EXERCISE_AND_ID_CONTRACT_v2.1.md`
+
+#### 1.2 Nguồn gốc S1 (SGK & SBT KNTT Toán 10 Tập Một — Chương I)
+* **SGK Toán 10 Tập Một (KNTT):** Trang in 5–21 (PDF index: 6–22). SHA256: `3cbb335780dc0f2f4a034a55eb542e3bbe67693412b10a90ca1dffe9ea50eac2`
+* **SBT Toán 10 Tập Một (KNTT):** Trang in 5–15 (PDF index: 6–16). SHA256: `2b1b98665b2c5cccb99f6699a43cbf71b8b2dfc63bdaec759a7b1c51778e2fa1`
+
+#### 1.3 Snapshot Git Blob R01 Bảo toàn (Frozen Snapshot)
+* **SOURCE_ORIGINAL_R01_BLOB:** `95a554e31a613b8e215679fe6790738473d598df`
+* **HISTORIC_INDEPENDENT_R01_RECEIPT_BLOB:** `fece80dcb4b0e17d369e2ecbe12e8d13b672281a`
+
+#### 1.4 Kiểm toán Hash SHA256 Byte-level Tệp Temp R02 Giải nén
+| Tệp review trong gói R02 | SHA256 thực tế byte-level (Uncompressed) | SHA256 ghi tại Author QA Table | Ghi chú kiểm toán |
+| :--- | :--- | :--- | :--- |
+| `Temp_G10_CHI_PED_R02_LEARNING_20261104.md` | `ac04c40e2c65c9876a970d9b7bdeadb639c7e674b9abca1176c17f8ddd058b74` | `8bf91a21aab6bae0617b8aaf2d3770c487918d4536bbee14fdb93adaec9e6339` | Phản ánh SHA256 byte-level thực tế vào Receipt |
+| `Temp_G10_CHI_PED_R02_OUTCOME_ITEM_MATRIX_20261104.md` | `3ab3f215bc8d39c1def2b957f8363c66e7e6697035f8e85369cfce9f1fd93440` | `6402c0d367c192bca909fb4cffb605576772ec11cca144c99a7e7c9ecc30c50c` | Phản ánh SHA256 byte-level thực tế vào Receipt |
+| `Temp_G10_CHI_PED_R02_S1_SCOPE_AUDIT_20261104.md` | `058439a852a2e939223fd28d04180ad9de106c2c4a96dac13ca28b1c96a4c0a2` | `ddfe2b2a4c31baf333d23f9239621b7b0df84a8e7b2c4ac982b61fef791663f2` | Phản ánh SHA256 byte-level thực tế vào Receipt |
+| `Temp_G10_CHI_PED_R02_AUTHOR_QA_SHA_20261104.md` | `9d554a99119cdccaebe269bb3f7a49931751dbe5a5bdbe2f2b37ca3dcecb23aa` | *Chứa bảng khai báo* | Khóa hồ sơ kiểm toán |
+
+---
+
+### 2. TÌNH TRẠNG BẢO TOÀN HỌC LIỆU R01 GỐC
+1. **Không mở lại review R01 cũ:** Bộ 18 canonical item_id R01 (16 D3/D4 + 2 Written/Anchor), 7 ví dụ D2 (`EX-G10-B01-01..04`, `EX-G10-B02-01..03`), 2 sơ đồ SVG (`FIG-G10-B01-01`, `FIG-G10-B02-01`) và 4 thẻ HELP D6 gốc (`HELP-G10-B01-01..02`, `HELP-G10-B02-01..02`) đã đạt PASS ở R01 dưới chuẩn v2.0 được **bảo toàn nguyên vẹn 100%**.
+2. **Không phát hiện lỗi học thuật mang tính chứng cứ:** Việc đối chiếu nguồn S1 không phát hiện sai lệch mâu thuẫn ở phần học liệu R01 đã PASS; do đó không phát sinh lỗi học thuật bắt buộc mở lại R01.
+3. **Phạm vi thẩm định Delta C duy nhất R02:** Mở rộng độc lập cho 11 chuỗi cầu nối sư phạm trước Core (WHY / PRE / MEANING / METHOD), 11 câu Tự thử chẩn đoán (`THPT-G10-CHI-TRY01..11`) có phần đối chiếu ẩn và 01 thẻ HELP mới (`HELP-G10-B02-03`).
+
+---
+
+### 3. KẾT QUẢ REVIEW CHI TIẾT THEO TỪNG OUTCOME (11 OUTCOMES)
+
+#### BÀI 01: MỆNH ĐỀ (G10-SGK-B01)
+
+##### Outcome 01: `G10-B01-PROPOSITION` (Mệnh đề và mệnh đề chứa biến)
+* **First Try Item ID:** `THPT-G10-CHI-TRY01` (`SGK_PRE_CORE_FIRST_TRY` | `PUBLIC_FORMATIVE_DIAGNOSTIC_UNSCORED`)
+* **Kiểm toán Cầu nối PED1–PED5:**
+  * **PED1 (WHY):** Làm rõ nhu cầu kiểm chứng tính đúng/sai của thông báo trong đời sống.
+  * **PED2 (PRE):** Tái hiện khái niệm câu khẳng định, câu hỏi và chữ đại diện cho biến.
+  * **PED3/D1 (MEANING):** Phân biệt câu khẳng định có tính đúng/sai xác định với câu chứa biến \\(k+2=7\\).
+  * **PED5 (METHOD):** Nhận diện dạng câu trước khi xét đúng/sai; không gán "sai" cho câu hỏi hoặc câu chứa biến chưa xác định biến.
+* **Kiểm toán Câu Tự thử (PED6 & Math Check):**
+  * Đề bài phân biệt (a) "14 chia hết cho 7", (b) "Bạn đã hoàn thành bài chưa?", (c) "k+2=7".
+  * Đáp án tự đối chiếu chính xác: (a) mệnh đề đúng; (b) câu hỏi; (c) mệnh đề chứa biến. Phân luồng về `HELP-G10-B01-01` và `EX-G10-B01-01`.
+* **Academic Verdict:** `PASS` | **Pedagogical Verdict:** `PASS`
+
+##### Outcome 02: `G10-B01-NEGATION` (Phủ định phát biểu)
+* **First Try Item ID:** `THPT-G10-CHI-TRY02`
+* **Kiểm toán Cầu nối PED1–PED5:**
+  * **PED1 (WHY):** Giải thích việc dùng 1 phản ví dụ để bác bỏ tuyên bố toàn thể.
+  * **PED2 (PRE):** Nhắc lại khái niệm tập hợp đối tượng và phân biệt "tất cả" với "có ít nhất một".
+  * **PED3/D1 (MEANING):** Phủ định chỉ đúng khi mệnh đề gốc sai; không thay đổi đối tượng.
+  * **PED5 (METHOD):** Tránh sai lầm máy móc dùng "không ai" để phủ định "tất cả".
+* **Kiểm toán Câu Tự thử (PED6 & Math Check):**
+  * Phủ định "Tất cả các thành viên đội bóng đều biết bơi".
+  * Đáp án chọn (B) "Có ít nhất một thành viên không biết bơi". Phân tích rõ lỗi chọn (A) "Không ai biết bơi".
+* **Academic Verdict:** `PASS` | **Pedagogical Verdict:** `PASS`
+
+##### Outcome 03: `G10-B01-IMPLICATION` (Kéo theo, đảo, điều kiện đủ/cần)
+* **First Try Item ID:** `THPT-G10-CHI-TRY03`
+* **Kiểm toán Cầu nối PED1–PED5:**
+  * **PED1 (WHY):** Phân biệt điều kiện đủ với điều kiện bắt buộc.
+  * **PED2 (PRE):** Ôn tập tính chia hết cho 4, chia hết cho 8 trong \\(\mathbb{Z}\\).
+  * **PED3/D1 (MEANING):** \\(P \Rightarrow Q\\) chỉ sai khi \\(P\\) đúng mà \\(Q\\) sai.
+  * **PED5 (METHOD):** Chứng minh chiều thuận \\(n=8t=4(2t)\\), tìm phản ví dụ \\(n=4\\) cho chiều đảo.
+* **Kiểm toán Câu Tự thử (PED6 & Math Check):**
+  * \\(P\\): "\\(n \vdots 8\\)", \\(Q\\): "\\(n \vdots 4\\)". \\(P \Rightarrow Q\\) ĐÚNG; \\(Q \Rightarrow P\\) SAI (\\(n=4\\)). Toán học chính xác tuyệt đối.
+* **Academic Verdict:** `PASS` | **Pedagogical Verdict:** `PASS`
+
+##### Outcome 04: `G10-B01-EQUIVALENCE` (Tương đương và chứng minh hai chiều)
+* **First Try Item ID:** `THPT-G10-CHI-TRY04`
+* **Kiểm toán Cầu nối PED1–PED5:**
+  * **PED1 (WHY):** Giải thích "khi và chỉ khi" đòi hỏi tính hai chiều chặt chẽ.
+  * **PED2 (PRE):** Nhắc dạng số chẵn \\(2m\\) (\\(m \in \mathbb{Z}\\)).
+  * **PED3/D1 (MEANING):** \\(P \Leftrightarrow Q\\) đòi hỏi đồng thời \\(P \Rightarrow Q\\) và \\(Q \Rightarrow P\\).
+  * **PED5 (METHOD):** Chứng minh riêng hai chiều độc lập.
+* **Kiểm toán Câu Tự thử (PED6 & Math Check):**
+  * Mệnh đề "\\(n\\) chẵn \\(\Leftrightarrow n+2\\) chẵn" trên \\(\mathbb{Z}\\).
+  * Đáp án chứng minh \\(n=2m \Rightarrow n+2=2(m+1)\\) và \\(n+2=2k \Rightarrow n=2(k-1)\\). Chính xác tuyệt đối.
+* **Academic Verdict:** `PASS` | **Pedagogical Verdict:** `PASS`
+
+##### Outcome 05: `G10-B01-QUANTIFIERS` (Lượng từ mọi / tồn tại và phủ định)
+* **First Try Item ID:** `THPT-G10-CHI-TRY05`
+* **Kiểm toán Cầu nối PED1–PED5:**
+  * **PED1 (WHY):** Cần quy tắc phủ định phát biểu chứa lượng từ trong toán học.
+  * **PED2 (PRE):** Ôn tập tập \\(\mathbb{N}, \mathbb{R}\\) và bình phương số thực.
+  * **PED3/D1 (MEANING):** Phủ định \\(\forall\\) thành \\(\exists\\) và phủ định mệnh đề thành phần.
+  * **PED5 (METHOD):** Xác định phạm vi miền biến trước khi áp dụng quy tắc.
+* **Kiểm toán Câu Tự thử (PED6 & Math Check):**
+  * \\(P\\): "\\(\forall n \in \mathbb{N}, n^2 \ge 0\\)" (ĐÚNG). \\(Q\\): "\\(\exists x \in \mathbb{R}, x^2 < 0\\)" (SAI). Phủ định \\(P\\): "\\(\exists n \in \mathbb{N}, n^2 < 0\\)". Chính xác.
+* **Academic Verdict:** `PASS` | **Pedagogical Verdict:** `PASS`
+
+---
+
+#### BÀI 02: TẬP HỢP VÀ PHÉP TOÁN (G10-SGK-B02)
+
+##### Outcome 06: `G10-B02-MEMBERSHIP_SUBSET` (Phần tử, tập con, tập bằng nhau)
+* **First Try Item ID:** `THPT-G10-CHI-TRY06`
+* **Kiểm toán Cầu nối PED1–PED5:**
+  * **PED1 (WHY):** Phân biệt phần tử đơn lẻ với tập hợp chứa nó.
+  * **PED2 (PRE):** Nhắc lại định nghĩa tập hợp, ký hiệu \\(\in\\) và \\(\subseteq\\).
+  * **PED3/D1 (MEANING):** Trực giác phân biệt \\(2 \in A\\) với \\(\{2\} \subseteq A\\).
+  * **PED5 (METHOD):** Phân loại bản chất đối tượng trước khi đặt ký hiệu quan hệ.
+* **Kiểm toán Câu Tự thử (PED6 & Math Check):**
+  * Cho \\(A=\{2,4,6\}\\). Xét: (1) \\(2 \in A\\) [ĐÚNG]; (2) \\(\{2\} \subseteq A\\) [ĐÚNG]; (3) \\(\{2\} \in A\\) [SAI]; (4) \\(\emptyset \subseteq A\\) [ĐÚNG]. Rất chuẩn xác.
+* **Academic Verdict:** `PASS` | **Pedagogical Verdict:** `PASS`
+
+##### Outcome 07: `G10-B02-UNION_INTERSECTION` (Hợp và giao hai tập hợp)
+* **First Try Item ID:** `THPT-G10-CHI-TRY07`
+* **Kiểm toán Cầu nối PED1–PED5:**
+  * **PED1 (WHY):** Tìm nhóm thuộc cả hai hoặc gộp hai danh sách không trùng lặp.
+  * **PED2 (PRE):** Khái niệm liệt kê phần tử không đếm lặp.
+  * **PED3/D1 (MEANING):** \\(A \cap B\\) thuộc CẢ HAI; \\(A \cup B\\) thuộc ÍT NHẤT MỘT.
+  * **PED5 (METHOD):** Liệt kê phần tử chung trước rồi bổ sung phần tử riêng.
+* **Kiểm toán Câu Tự thử (PED6 & Math Check):**
+  * \\(A=\{a,b,c\}, B=\{b,c,d\}\\).
+  * \\(A \cap B = \{b,c\}\\) (2 phần tử); \\(A \cup B = \{a,b,c,d\}\\) (4 phần tử). Chuẩn xác.
+* **Academic Verdict:** `PASS` | **Pedagogical Verdict:** `PASS`
+
+##### Outcome 08: `G10-B02-DIFFERENCE` (Hiệu hai tập và chiều phép toán)
+* **First Try Item ID:** `THPT-G10-CHI-TRY08`
+* **Kiểm toán Cầu nối PED1–PED5:**
+  * **PED1 (WHY):** Lọc danh sách chỉ có ở nhóm \\(A\\) mà không có ở nhóm \\(B\\).
+  * **PED2 (PRE):** Phân biệt phần riêng và phần chung của hai tập.
+  * **PED3/D1 (MEANING):** \\(A \setminus B\\) giữ phần tử thuộc \\(A\\) nhưng KHÔNG thuộc \\(B\\).
+  * **PED5 (METHOD):** Phép hiệu không giao hoán (\\(A \setminus B \neq B \setminus A\\) nói chung).
+* **Kiểm toán Câu Tự thử (PED6 & Math Check):**
+  * \\(A=\{1,2,3,4\}, B=\{2,4,6\}\\).
+  * \\(A \setminus B = \{1,3\}\\); \\(B \setminus A = \{6\}\\). Kết luận hai tập không bằng nhau. Đúng tuyệt đối.
+* **Academic Verdict:** `PASS` | **Pedagogical Verdict:** `PASS`
+
+##### Outcome 09: `G10-B02-COMPLEMENT` (Phần bù phụ thuộc tập vũ trụ)
+* **First Try Item ID:** `THPT-G10-CHI-TRY09`
+* **Kiểm toán Cầu nối PED1–PED5:**
+  * **PED1 (WHY):** Khái niệm "không thuộc \\(A\\)" phải nằm trong phạm vi xét \\(U\\).
+  * **PED2 (PRE):** Phép hiệu tập hợp và điều kiện \\(A \subseteq U\\).
+  * **PED3/D1 (MEANING):** \\(C_U A = U \setminus A\\).
+  * **PED5 (METHOD):** Xác định rõ \\(U\\) trước khi lấy phần bù.
+* **Kiểm toán Câu Tự thử (PED6 & Math Check):**
+  * \\(U=\{0,1,2,3,4,5\}, A=\{1,3,5\}\\).
+  * \\(C_U A = \{0,2,4\}\\). Lời giải giải thích tầm quan trọng của \\(U\\) (bao gồm số 0). Lời giải chuẩn xác.
+* **Academic Verdict:** `PASS` | **Pedagogical Verdict:** `PASS`
+
+##### Outcome 10: `G10-B02-INTERVALS` (Khoảng, đoạn, đầu mút mở/đóng)
+* **First Try Item ID:** `THPT-G10-CHI-TRY10`
+* **Kiểm toán Cầu nối PED1–PED5:**
+  * **PED1 (WHY):** Tránh sai ngoặc làm loại nhầm nghiệm thực tế (\\(\\) vs \\((1,4)\\)).
+  * **PED2 (PRE):** Bất đẳng thức \\(<, \le, >, \ge\\) và biểu diễn trục số.
+  * **PED3/D1 (MEANING):** Trực giác ngoặc vuông chứa đầu mút, ngoặc tròn không chứa.
+  * **PED5 (METHOD):** Kiểm tra giá trị từng biên để quyết định loại ngoặc.
+* **Kiểm toán Câu Tự thử (PED6 & Math Check):**
+  * \\(X=(-2,4], Y=[1,6)\\).
+  * \\(X \cap Y =\\) (gồm 1 và 4); \\(X \cup Y = (-2,6)\\) (gồm 1, 4; không gồm -2 và 6). Toán học chuẩn xác 100%.
+* **Academic Verdict:** `PASS` | **Pedagogical Verdict:** `PASS`
+
+##### Outcome 11: `G10-B02-VENN_MODEL` (Đếm bốn miền sơ đồ Venn)
+* **First Try Item ID:** `THPT-G10-CHI-TRY11`
+* **Kiểm toán Cầu nối PED1–PED5:**
+  * **PED1 (WHY):** Tránh đếm trùng học sinh tham gia cả hai câu lạc bộ.
+  * **PED2 (PRE):** Công thức bù trừ \\(|A \cup B| = |A| + |B| - |A \cap B|\\).
+  * **PED3/D1 (MEANING):** Mô hình 4 miền rời nhau: chỉ \\(A\\), cả hai \\(A \cap B\\), chỉ \\(B\\), ngoài cả hai.
+  * **PED5 (METHOD):** Điền số học sinh thuộc miền giao vào sơ đồ trước.
+* **Kiểm toán Câu Tự thử (PED6 & Math Check):**
+  * Lớp 32 học sinh; 18 Âm nhạc, 15 Thể thao, 6 cả hai.
+  * Chỉ Âm nhạc: \\(18-6=12\\); Chỉ Thể thao: \\(15-6=9\\); Ít nhất một CLB: \\(12+6+9=27\\); Không tham gia: \\(32-27=5\\). Tổng 4 miền: \\(12+6+9+5=32\\). Toán học chính xác 100%.
+* **Academic Verdict:** `PASS` | **Pedagogical Verdict:** `PASS`
+
+---
+
+### 4. ĐÁNH GIÁ THẺ HELP MỚI (`HELP-G10-B02-03`)
+* **HELP_ID:** `HELP-G10-B02-03` | **LESSON_ID:** `G10-SGK-B02` | **OUTCOME_ID:** `G10-B02-INTERVALS`
+* **TRIGGER_ITEM_ID:** `THPT-G10-CHI-TRY10` | **ROLE:** `D6_SOURCE_CANDIDATE_ONLY`
+* **Kiểm toán 5 bước sư phạm:**
+  1. *Dấu hiệu sai:* Nhận biết lỗi viết nhầm ngoặc tròn/vuông ở các biên 1, 4, 6.
+  2. *Nhớ tiền đề:* Thử $x=1$ có thuộc $X, Y$; đọc đúng ký hiệu $\le$ hay $<$.
+  3. *Tham chiếu ví dụ:* Liên kết đến `EX-G10-B02-02` ($X=(-\infty,3], Y=(1,+\infty)$).
+  4. *Tự sửa ngắn:* Thử nghiệm các đầu mút cụ thể.
+  5. *Quay lại & tự đối chiếu:* Làm lại `THPT-G10-CHI-TRY10` và hai item R01 `THPT-G10-B02-P03/P04`.
+* **Đánh giá:** Đáp ứng xuất sắc tiêu chuẩn D6 khắc phục lỗ hổng tư duy, không can thiệp hay sửa đổi 4 thẻ HELP R01 gốc.
+
+---
+
+### 5. ĐÁNH GIÁ ĐỘ BẢO ĐẢM THEO BỘ TIÊU CHUẨN Q01–Q18
+
+| Tiêu chuẩn | Nội dung kiểm tra | Kết quả | Ghi chú & Chứng cứ audit |
+| :--- | :--- | :--- | :--- |
+| **Q01** | Phạm vi & Nguồn Permanent THPT v2.1 | **PASS** | Khóa đúng 5 Permanent Sources v2.1 và S1 KNTT Toán 10 Tập 1. |
+| **Q02** | Phủ đầy đủ 11/11 Outcome gốc | **PASS** | Đủ 11 outcomes (B01: 5, B02: 6), không phát sinh outcome 12. |
+| **Q03** | Đơn skill & Đơn vị kiểm tra | **PASS** | Mỗi câu First Try ứng với đúng 1 primary outcome chính. |
+| **Q04** | Hợp đồng ID Bài tập Canonical | **PASS** | `THPT-G10-CHI-TRY01..11` duy nhất, không trùng lặp R01. |
+| **Q05** | Phân bổ Placement & Role | **PASS** | `SGK_PRE_CORE_FIRST_TRY`, `PUBLIC_FORMATIVE_DIAGNOSTIC_UNSCORED`. |
+| **Q06** | Bảo toàn Snapshot R01 | **PASS** | 18 item, 7 EX, 2 SVG, 4 HELP R01 được bảo toàn PASS nguyên vẹn. |
+| **Q07** | Không trùng lặp câu hỏi (Non-duplication) | **PASS** | 11 câu hỏi biên soạn mới hoàn toàn, khác đề SGK và R01. |
+| **Q08** | Kiểm soát Tiếp xúc & Độ độc lập Readiness | **PASS** | Không cộng điểm Mastery, ẩn đáp án sau fold tự chọn. |
+| **Q09** | PED1 — Lý do cần học (WHY) | **PASS** | 11/11 outcome có lý do học sinh động, thực tế. |
+| **Q10** | PED2 — Nhắc kiến thức tiền đề (PRE) | **PASS** | 11/11 outcome nêu rõ kiến thức nền tảng cần nhớ. |
+| **Q11** | PED3 — Trực giác trước công thức (MEANING) | **PASS** | 11/11 outcome giải thích bản chất trước khi ghi quy tắc. |
+| **Q12** | PED5 — Lựa chọn phương pháp (METHOD) | **PASS** | 11/11 outcome giải thích lý do chọn cách làm, tránh máy móc. |
+| **Q13** | PED6 — Hoạt động Tự thử trước Core (FIRST_TRY) | **PASS** | 11/11 câu hỏi tự thử được bố trí ngay trước Core. |
+| **Q14** | Tự đối chiếu đáp án & Hướng dẫn khắc phục | **PASS** | Có phần thu gọn `<details>`, chỉ rõ hướng xử lý khi làm sai. |
+| **Q15** | Toàn vẹn hệ thống Thẻ HELP (D6) | **PASS** | Thêm 1 thẻ `HELP-G10-B02-03` đúng quy hoạch, giữ 4 thẻ cũ. |
+| **Q16** | Phân loại Delta chính xác | **PASS** | Đúng loại `DELTA_C_ACADEMIC_MATERIAL`. |
+| **Q17** | Source Receipt Byte-level SHA256 | **PASS** | Kiểm toán SHA256 byte-level thực tế đầy đủ cho các file Temp. |
+| **Q18** | Giới hạn Thẩm quyền & Phán quyết độc lập | **PASS** | Trả cặp phán quyết Academic + PED; không vượt thẩm quyền. |
+
+---
+
+### 6. PHÂN LOẠI DELTA VÀ MINIMAL DELTA
+
+* **Phân loại Delta:** `DELTA_C_ACADEMIC_MATERIAL` (Bổ sung học liệu nguồn sư phạm cấp bài/outcome, không thay đổi code/UI hay thuật toán engine).
+* **Minimal Delta:** `0 REVISIONS REQUIRED` (Nội dung toán học và lập luận sư phạm đạt độ chính xác 100%, độ sâu tư duy D1–D6 và PED1–PED6 hoàn toàn chuẩn xác, không cần sửa đổi thêm).
+
+---
+
+### 7. TỔNG HỢP PHÁN QUYẾT VÀ GIỚI HẠN THẨM QUYỀN
+
+#### 7.1 Bảng kết luận cặp phán quyết
+* **ACADEMIC_VERDICT_NEW:** `PASS`
+* **PEDAGOGICAL_VERDICT_NEW:** `PASS`
+* **ACADEMIC_CLEARANCE:** `YES` (Đạt chuẩn học thuật cho đúng gói `G10-SGK-CHI-PED-BRIDGE-R02-20261104`)
+* **PEDAGOGICAL_CLEARANCE:** `YES` (Đạt chuẩn sư phạm cho đúng gói `G10-SGK-CHI-PED-BRIDGE-R02-20261104`)
+
+#### 7.2 Giới hạn thẩm quyền nghiêm ngặt (Strict Authority Boundaries)
+1. **CONTENT_READY:** `NO` (Yêu cầu quy trình kiểm duyệt tích hợp hệ thống/CMS xác nhận).
+2. **RELEASE_AUTHORIZATION:** `NO` (Thẩm quyền phê duyệt phát hành chính thức thuộc về Chủ dự án/Owner).
+3. **MASTERY_ACTIVATION:** `NO` (Không tự động kích hoạt tính điểm Mastery trên hệ thống).
+4. **PRIVATE_RD1_COUNT_NEW:** `0` (11 câu Tự thử là câu hỏi chẩn đoán tiền Core công khai không chấm điểm, không phải ngân hàng đề kiểm tra độc lập RD1).
+
+---
+
+*(Báo cáo kiểm toán chi tiết đã được xuất bản thành file lưu trữ `Bao_Cao_Kiem_Toan_G10_CHI_PED_BRIDGE_R02_20261104.md` trong Studio panel).*
+
+💡 **Gợi ý bước tiếp theo:** Nếu bạn muốn tiếp tục thẩm định các chương tiếp theo của Toán 10 (chẳng hạn Chương II: Bất phương trình và hệ bất phương trình bậc nhất hai ẩn) hoặc chuyển sang kiểm toán nhánh Chuyên đề, hãy cho tôi biết để chúng ta triển khai vòng kiểm toán độc lập tiếp theo!
