@@ -367,13 +367,13 @@ jobs:
           node --check docs/assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js
           node --check scripts/test-thpt-g11-chi-selfcheck-browser.cjs
           node scripts/test-thpt-g11-chi-selfcheck-browser.cjs
-      - name: Shared AI Tutor launcher G10/G11/G12 · 390 / 820 / 1440 · no Q16 leak
-        run: node scripts/test-floating-ai-thpt-route-browser.cjs
       - name: Browser smoke test · desktop / iPhone / iPad simulation
         run: |
           python -m http.server 8765 --directory site > /tmp/thpt-r4-combined-http.log 2>&1 &
           sleep 2
           node scripts/test-thpt-r4-preview-browser.js
+      - name: Shared AI Tutor launcher G10/G11/G12 · 390 / 820 / 1440 · no Q16 leak
+        run: node scripts/test-floating-ai-thpt-route-browser.cjs
       - name: Chapter overview Golden VII cards · phone tablet desktop browser QA
         run: node scripts/test-thpt-chapter-overview-golden-vii-browser.cjs
       - name: SGK and Chuyên đề search QA · class/chapter/lesson · mobile / iPad / desktop
