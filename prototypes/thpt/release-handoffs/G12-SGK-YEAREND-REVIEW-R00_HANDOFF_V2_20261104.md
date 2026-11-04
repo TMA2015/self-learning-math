@@ -1,19 +1,20 @@
-# G12 SGK Bài tập ôn tập cuối năm — V2 handoff **DRAFT, owner packet-type decision required** (04/11/2026)
+# SGK Toán 12 KNTT Tập Hai — Year-end public review R00 · canonical V2 AUTHORING handoff
 
 PACKET_ID: G12-SGK-YEAREND-REVIEW-R00
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 1.1.0
-HANDOFF_PROTOCOL: THPT-TWO-LANE-V2-DRAFT_UNAPPROVED_PACKET_TYPE
-LEARNING_PATH: SGK_YEAR_END_REVIEW_SUPPLEMENT_CANDIDATE
-RELEASE_SCOPE: SGK_YEAR_END_REVIEW_SUPPLEMENT_CANDIDATE
-AUTHORING_STATE: A1_A7_PASS_PENDING_V2_PACKET_TYPE_OWNER_DECISION
-CONTENT_READY: NO
-ACADEMIC_VERDICT: PASS_ON_LOCKED_SNAPSHOT_BY_INDEPENDENT_NOTEBOOKLM
-PEDAGOGICAL_VERDICT: PASS_ON_LOCKED_SNAPSHOT_BY_INDEPENDENT_NOTEBOOKLM
+HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
+LEARNING_PATH: SGK_YEAR_END_REVIEW_SUPPLEMENT
+RELEASE_SCOPE: SGK_YEAR_END_REVIEW_SUPPLEMENT
+SUPPLEMENT_UNIT: PUBLIC_YEAR_END_REVIEW
+AUTHORING_STATE: CONTENT_READY
+CONTENT_READY: YES
+ACADEMIC_VERDICT: PASS
+PEDAGOGICAL_VERDICT: PASS
 SOURCE_PARITY: PASS
 Q18_VERDICT: PASS
-BLOCKERS: V2_YEAR_END_PACKET_TYPE_OWNER_DECISION_REQUIRED
-ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY_CANDIDATE
+BLOCKERS: NONE
+ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_COUNT: 0
 OFFICIAL_READINESS: NOT_CLAIMED
 MASTERY_ACTIVATION: NO
@@ -23,8 +24,9 @@ ACADEMIC_SOURCE_BLOB: 7274cb3a6c35627f0e23574709cf5cdc355ab46a
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/G12_YE_R00_NOTEBOOKLM_Q18_CORRECTED_OWNER_REPORT_20261104.md
 REVIEW_RECEIPT_BLOB: 3b5b7f70e3b68895fd976a265ae6f454f774e1cc
 SOURCE_COMMIT: 82c5b78ac8a1fda4eca2da6541edce65286553a8
+OWNER_V2_TYPE_APPROVAL: 2026-11-04_SGK_YEAR_END_REVIEW_SUPPLEMENT
 
-**This is a DRAFT only and is deliberately NOT placed in `release-queue/ready/`. No `REGISTER` row is added.** It is preparatory evidence for a **separate owner-approved V2 operational packet type**. The owner approved `SGK_EXPERIENCE_SUPPLEMENT` for EXP01/02 only, not `SGK_YEAR_END_REVIEW_SUPPLEMENT`. Do not lie with `SGK_CHAPTER`, `FULL_LEARNING_PATH`, or EXPERIENCE labels to obtain ready.
+One owner-approved **AUTHORING-only** V2 handoff: immutable 8 original R00 source files with independent Academic/PED and corrected Q18/SOURCE_PARITY PASS. A year-end public SGK revision packet is not a new Chapter VII, Topic, experiential activity or protected official examination. Matching manifest: `prototypes/thpt/release-queue/ready/G12-SGK-YEAREND-REVIEW-R00.md`. No RELEASE approval, website integration, Mastery or deployment.
 
 ## S1_SGK_SBT_SOURCE
 - Original official 99-page **SGK Toán 12 KNTT Tập Hai**, SHA256 `3c642f2e80d86d699ea62bbcabd0c3074fd5118def96e4b3b8ce1f9ead7f97bb`; visually audited original printed pp90–93/PDF1 pp92–95; source has 15 A MCQ #1–15 and 16 B Written #16–31, six cross-chapter problem families; original question stems are not copied.
@@ -138,24 +140,24 @@ SOURCE_COMMIT: 82c5b78ac8a1fda4eca2da6541edce65286553a8
 
 | Q_ID | LESSON/OUTCOME_IDs | AUTHORING evidence (one standard only) | Independent reviewer receipt | RELEASE recheck (not yet done) |
 | --- | --- | --- | --- | --- |
-| Q01 | TR01–TR06 / O01–O06 as applicable | S1/Scope: S1 pages 90–93 / PDF1 92–95, SGK PDF SHA; SBT reference gap documented | Q18 corrected independent PASS + original full R00 report | R1 source proof pending |
-| Q02 | TR01–TR06 / O01–O06 as applicable | Outcomes: 6 TR station headings and 6 outcomes, 31 item-outcome row mapping | Q18 corrected independent PASS + original full R00 report | R1 outcome fidelity pending |
-| Q03 | TR01–TR06 / O01–O06 as applicable | D1: Six station WHY/PRE/MEANING/FORMAL paragraphs, method conditions | Q18 corrected independent PASS + original full R00 report | AP1 concept hierarchy pending |
-| Q04 | TR01–TR06 / O01–O06 as applicable | D2: Six EX-G12-SGK-YE-O01..O06 stepwise worked examples and why/when | Q18 corrected independent PASS + original full R00 report | AP4 worked solutions pending |
-| Q05 | TR01–TR06 / O01–O06 as applicable | D3: 15 original MCQ M01..M15 with keys/explanations and role levels | Q18 corrected independent PASS + original full R00 report | R3 learner practice pending |
-| Q06 | TR01–TR06 / O01–O06 as applicable | D4: 16 original W01..W16 Written /5 full model solutions, shared ID registry | Q18 corrected independent PASS + original full R00 report | R4 Written exposure pending |
-| Q07 | TR01–TR06 / O01–O06 as applicable | D5: 4 exact original figures and figure-reading guides with SVG/PNG source hashes | Q18 corrected independent PASS + original full R00 report | AP3 image asset checks pending |
-| Q08 | TR01–TR06 / O01–O06 as applicable | D6: 6 HELP-G12-SGK-YE-O01..O06 remediation routes | Q18 corrected independent PASS + original full R00 report | AP4 D6 navigation pending |
-| Q09 | TR01–TR06 / O01–O06 as applicable | PED1: Six WHY learning motivation sections before formulas | Q18 corrected independent PASS + original full R00 report | AP4 self-study story pending |
-| Q10 | TR01–TR06 / O01–O06 as applicable | PED2: Six PRE prerequisite recall sections; SGK Chapter I–VI link | Q18 corrected independent PASS + original full R00 report | AP4 prerequisites pending |
-| Q11 | TR01–TR06 / O01–O06 as applicable | PED3: Six MEANING pre-formal reasoned explanations | Q18 corrected independent PASS + original full R00 report | AP1 concept first pending |
-| Q12 | TR01–TR06 / O01–O06 as applicable | PED4: Four FIG captions + guided axes/units/visual limits | Q18 corrected independent PASS + original full R00 report | AP3 figure guidance pending |
-| Q13 | TR01–TR06 / O01–O06 as applicable | PED5: Six D2 examples WHY/WHEN, method limitations, checks | Q18 corrected independent PASS + original full R00 report | AP4 method rationale pending |
-| Q14 | TR01–TR06 / O01–O06 as applicable | PED6: Six TRY-G12-SGK-YE-O01..O06 first tries before core | Q18 corrected independent PASS + original full R00 report | AP4 first try reveal pending |
-| Q15 | TR01–TR06 / O01–O06 as applicable | Shared IDs: 31 distinct ID→outcome rows, one canonical answer/rubric per item | Q18 corrected independent PASS + original full R00 report | R1 canonical bank pending |
-| Q16 | TR01–TR06 / O01–O06 as applicable | Assessment: RD1 private count 0, public review self-check not readiness/mastery | Q18 corrected independent PASS + original full R00 report | R4 submit/visibility pending |
-| Q17 | TR01–TR06 / O01–O06 as applicable | Dual journeys: SGK year-end supplement only; TOPIC independent | Q18 corrected independent PASS + original full R00 report | R3 SGK/Topic paths pending |
-| Q18 | TR01–TR06 / O01–O06 as applicable | Source fidelity: Original reviewer 2 reports + independent corrected receipt, all 8 SHA256s and Git blobs | Q18 corrected independent PASS + original full R00 report | R1 exact source SHA pending |
+| Q01 | TR01–TR06 / O01–O06 as applicable | S1/Scope: S1 pages 90–93 / PDF1 92–95, SGK PDF SHA; SBT reference gap documented | Q18 corrected independent PASS + original full R00 report | R1 source proof requires independent RELEASE verification |
+| Q02 | TR01–TR06 / O01–O06 as applicable | Outcomes: 6 TR station headings and 6 outcomes, 31 item-outcome row mapping | Q18 corrected independent PASS + original full R00 report | R1 outcome fidelity requires independent RELEASE verification |
+| Q03 | TR01–TR06 / O01–O06 as applicable | D1: Six station WHY/PRE/MEANING/FORMAL paragraphs, method conditions | Q18 corrected independent PASS + original full R00 report | AP1 concept hierarchy requires independent RELEASE verification |
+| Q04 | TR01–TR06 / O01–O06 as applicable | D2: Six EX-G12-SGK-YE-O01..O06 stepwise worked examples and why/when | Q18 corrected independent PASS + original full R00 report | AP4 worked solutions requires independent RELEASE verification |
+| Q05 | TR01–TR06 / O01–O06 as applicable | D3: 15 original MCQ M01..M15 with keys/explanations and role levels | Q18 corrected independent PASS + original full R00 report | R3 learner practice requires independent RELEASE verification |
+| Q06 | TR01–TR06 / O01–O06 as applicable | D4: 16 original W01..W16 Written /5 full model solutions, shared ID registry | Q18 corrected independent PASS + original full R00 report | R4 Written exposure requires independent RELEASE verification |
+| Q07 | TR01–TR06 / O01–O06 as applicable | D5: 4 exact original figures and figure-reading guides with SVG/PNG source hashes | Q18 corrected independent PASS + original full R00 report | AP3 image asset checks requires independent RELEASE verification |
+| Q08 | TR01–TR06 / O01–O06 as applicable | D6: 6 HELP-G12-SGK-YE-O01..O06 remediation routes | Q18 corrected independent PASS + original full R00 report | AP4 D6 navigation requires independent RELEASE verification |
+| Q09 | TR01–TR06 / O01–O06 as applicable | PED1: Six WHY learning motivation sections before formulas | Q18 corrected independent PASS + original full R00 report | AP4 self-study story requires independent RELEASE verification |
+| Q10 | TR01–TR06 / O01–O06 as applicable | PED2: Six PRE prerequisite recall sections; SGK Chapter I–VI link | Q18 corrected independent PASS + original full R00 report | AP4 prerequisites requires independent RELEASE verification |
+| Q11 | TR01–TR06 / O01–O06 as applicable | PED3: Six MEANING pre-formal reasoned explanations | Q18 corrected independent PASS + original full R00 report | AP1 concept first requires independent RELEASE verification |
+| Q12 | TR01–TR06 / O01–O06 as applicable | PED4: Four FIG captions + guided axes/units/visual limits | Q18 corrected independent PASS + original full R00 report | AP3 figure guidance requires independent RELEASE verification |
+| Q13 | TR01–TR06 / O01–O06 as applicable | PED5: Six D2 examples WHY/WHEN, method limitations, checks | Q18 corrected independent PASS + original full R00 report | AP4 method rationale requires independent RELEASE verification |
+| Q14 | TR01–TR06 / O01–O06 as applicable | PED6: Six TRY-G12-SGK-YE-O01..O06 first tries before core | Q18 corrected independent PASS + original full R00 report | AP4 first try reveal requires independent RELEASE verification |
+| Q15 | TR01–TR06 / O01–O06 as applicable | Shared IDs: 31 distinct ID→outcome rows, one canonical answer/rubric per item | Q18 corrected independent PASS + original full R00 report | R1 canonical bank requires independent RELEASE verification |
+| Q16 | TR01–TR06 / O01–O06 as applicable | Assessment: RD1 private count 0, public review self-check not readiness/mastery | Q18 corrected independent PASS + original full R00 report | R4 submit/visibility requires independent RELEASE verification |
+| Q17 | TR01–TR06 / O01–O06 as applicable | Dual journeys: SGK year-end supplement only; TOPIC independent | Q18 corrected independent PASS + original full R00 report | R3 SGK/Topic paths requires independent RELEASE verification |
+| Q18 | TR01–TR06 / O01–O06 as applicable | Source fidelity: Original reviewer 2 reports + independent corrected receipt, all 8 SHA256s and Git blobs | Q18 corrected independent PASS + original full R00 report | R1 exact source SHA requires independent RELEASE verification |
 
 
 ## REVIEW_SOURCE_RECEIPT
@@ -172,9 +174,9 @@ SOURCE_COMMIT: 82c5b78ac8a1fda4eca2da6541edce65286553a8
 - `RD1_PRIVATE_COUNT = 0`. Source is public cross-chapter revision material, not held-out RD1 or independent official end-year examination; all 31 candidate items are PUBLIC. Keys/model solutions must be gated appropriately by RELEASE if shown in a self-check; AUTHORING cannot prove browser-level pre-submit protection. `CLIENT_SELF_CHECK_NO_MASTERY` is the only permitted review mode candidate; **no independent `SGK_CHAPTER_READINESS` or `TOPIC_READINESS` claimed** and no Skill Mastery credit from practice or self-compared Written.
 
 ## AUTHOR_SIGNOFF
-- 04/11/2026 AUTHORING A1–A7 academic and PED/source-custody checks **evidence-complete within review scope**: A1 original 8/8 Git source blobs; A2 S1 print/PDF verified; A3 original independent R00 Academic/PED PASS + corrected Q18 Git blob; A4 six outcome/31 item canonical mapping uniqueness; A5 D1–D6/PED and original 16 rubric /5 crosscheck; A6 receipt-only DELTA_B closed with no changed student text; A7 no private RD1/official mastery, no public assessment scoring.
-- **Handoff deliberately UNSIGNED FOR READY** while `V2_YEAR_END_PACKET_TYPE_OWNER_DECISION_REQUIRED`. Existing V2 gate on main accepts new SGK Chapter full path only; owner-approved EXP V2 extension remains scoped to experiences and a Draft PR, not this review packet. Do not create `ready/` or REGISTER until approved governance/gate extension and exact-final-head CI.
-- AUTHORING source: PR #735 (Draft) `https://github.com/TMA2015/self-learning-math/pull/735`; source commit `82c5b78ac8a1fda4eca2da6541edce65286553a8`. `CONTENT_READY=NO`, `RELEASE_AUTHORIZATION=NO`.
+**AUTHORING signed 04/11/2026, owner-approved V2 year-end supplement scope, academic/source blockers NONE.** A1: all original 8/8 R00 blob+SHA custody PASS; A2: SGK 12 KNTT Tập Hai original printed pp90–93, PDF1 pp92–95 verified, SBT_REFERENCE_GAP_DOCUMENTED; A3: original independent full R00 Academic/PED PASS and independent corrected Q18 SOURCE_PARITY PASS; A4: six station IDs / six outcome IDs / 31 distinct public canonical IDs with one mapping per ID; A5: D1–D6/PED1–PED6, six D2 examples, six first tries, six D6 HELP, four PNG, 16 Written solutions and rubric /5; A6: reviewer-only `DELTA_B_SOURCE_EQUIVALENT` Q18 metadata correction independently closed without any learner source change; A7: private RD1 count zero, voluntary public client self-check only, no Chapter/Topic/year-end official exam Readiness or Mastery. One V2 handoff `prototypes/thpt/release-handoffs/G12-SGK-YEAREND-REVIEW-R00_HANDOFF_V2_20261104.md`, one manifest `prototypes/thpt/release-queue/ready/G12-SGK-YEAREND-REVIEW-R00.md`, one REGISTER entry.
+
+**Exact source custody:** original immutable student R00 Git blob `7274cb3a6c35627f0e23574709cf5cdc355ab46a`, SHA256 `0916e56206570127de02adc6a0016e412536486889d6b7bdeb593f42621e2293`, original source commit `82c5b78ac8a1fda4eca2da6541edce65286553a8`. Original full independent review reports remain unchanged Git blobs `f164ff92266952be010e2511126b5919710cf731` and `8f480828da72ca02002c981077da52bb8940c5ea`. Corrected independent reviewer original `prototypes/thpt/review-packets/G12_YE_R00_NOTEBOOKLM_Q18_CORRECTED_OWNER_REPORT_20261104.md` Git blob `3b5b7f70e3b68895fd976a265ae6f454f774e1cc`, raw SHA256 `03a0af235f238b67e1dcfd05bf185e61ec01720096afd811dbe37f2a4ad4587d`. A1–A7 evidence and 18 official Q01–Q18 mapping rows above reflect the same single quality standard. AUTHORING Draft PR #735, not merged. **Exact-final-head CI still required for acceptance.**
 
 ## RELEASE_ACCEPTANCE
-**NOT RELEASE RECEIVABLE until owner approves accurate year-end V2 operational packet type, and exact source SHA & reviewer receipt are gated on HEAD.** Future independent RELEASE would need R1–R5/AP1–AP5/P1–P2, Final Submit exposure/no pre-answer disclosure, Golden UI/THCS and owner permit. No website integration, PR merge, GitHub public deployment, Firebase/Gemini or learner data changes.
+RECEIVABLE AS **AUTHORING CONTENT_READY only after exact-HEAD source-lock/REGISTER/CI PASS**. Separate RELEASE must integrate unchanged original sources with AP1–AP5/R1–R5, no pre-submit hints/keys/correctness or AI Tutor, mobile/Golden UI regression and Final Submit safeguards, P1/P2 and specific owner approval. `RELEASE_AUTHORIZATION=NO`, `MASTERY_ACTIVATION=NO`; 31 public revision questions and self-compared Written are not independent assessment evidence. No RELEASE work is performed in this PR.

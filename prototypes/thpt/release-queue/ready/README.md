@@ -1,5 +1,10 @@
 # Học liệu THPT — đã phát hành và sẵn sàng bàn giao
 
+## CONTENT_READY · SGK Toán 12 ôn tập cuối năm (AUTHORING only)
+
+- [G12-SGK-YEAREND-REVIEW-R00](G12-SGK-YEAREND-REVIEW-R00.md): owner-approved V2 `SGK_YEAR_END_REVIEW_SUPPLEMENT` packet (not Chapter VII, Topic or EXP), original S1 SGK Toán 12 KNTT Tập Hai printed pp90–93/PDF1 pp92–95. Six stations/outcomes, 31 unique public items (15 MC, 16 Written /5), four original PNG; source blob `7274cb3a6c35627f0e23574709cf5cdc355ab46a`, independent corrected Q18 reviewer blob `3b5b7f70e3b68895fd976a265ae6f454f774e1cc`, Academic/PED/Q18/SOURCE_PARITY PASS. Source-lock/REGISTER/CI must PASS on exact HEAD before downstream handoff. Private RD1=0, `CLIENT_SELF_CHECK_NO_MASTERY`, no official independent assessment, RELEASE, merge or deploy authority.
+
+
 ## PUBLISHED_SCOPED · PUBLIC_FORMATIVE_ONLY
 
 - [Chương VII](G10-SGK-CHVII.md): B19–B22; 32 formative + 4 Written, 3 reviewed SVG D5, 8 reviewed D6 cards.

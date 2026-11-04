@@ -3,18 +3,18 @@
 PACKET_ID: G12-SGK-YEAREND-REVIEW-R00
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 1.1.0
-LEARNING_PATH: SGK_YEAR_END_REVIEW_CANDIDATE
-RELEASE_SCOPE: SGK_YEAR_END_REVIEW_SUPPLEMENT_CANDIDATE
-AUTHORING_STATUS: ACADEMIC_PED_Q18_PASS_REVIEWED_V2_YEAR_END_ROUTE_HOLD
+LEARNING_PATH: SGK_YEAR_END_REVIEW_SUPPLEMENT
+RELEASE_SCOPE: SGK_YEAR_END_REVIEW_SUPPLEMENT
+AUTHORING_STATUS: CONTENT_READY_OWNER_APPROVED_V2_YEAR_END
 ACADEMIC_VERDICT: PASS_ON_LOCKED_SNAPSHOT_BY_INDEPENDENT_NOTEBOOKLM
 PEDAGOGICAL_VERDICT: PASS_ON_LOCKED_SNAPSHOT_BY_INDEPENDENT_NOTEBOOKLM
-CONTENT_READY: NO
+CONTENT_READY: YES
 RELEASE_AUTHORIZATION: NO
 MASTERY_ACTIVATION: NO
 OFFICIAL_READINESS: NOT_CLAIMED
 RD1_PRIVATE_COUNT: 0
-ASSESSMENT_MODE: PUBLIC_REVIEW_CLIENT_SELF_CHECK_NO_MASTERY_CANDIDATE
-BLOCKED_BY_AUTHORING: V2_YEAR_END_PACKET_TYPE_OWNER_DECISION_REQUIRED
+ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
+BLOCKED_BY_AUTHORING: NONE
 
 ## 1. S1 evidence: original book actually inspected (not inferred)
 - Original scanned **SGK Toán 12 KNTT Tập Hai**, 99 PDF pages; SHA256 `3c642f2e80d86d699ea62bbcabd0c3074fd5118def96e4b3b8ce1f9ead7f97bb`. Identical to prior G12 S1 receipt; obtained from existing Math Grade 12 Drive source folder.
@@ -57,3 +57,10 @@ HISTORICAL_CHECKPOINT_BEFORE_REVIEW: S1_DIRECT_VERIFIED; 6 OUTCOME / 31 CANONICA
 - **Source fidelity closure QA:** `prototypes/thpt/content-drafts/G12_SGK_YEAREND_R00_Q18_SOURCE_PARITY_CLOSED_20261104.md`, 8/8 provenance table, one official Q01–Q18 map and explicit operational blocker.
 - **One V2 draft handoff, not promoted:** `prototypes/thpt/release-handoffs/G12-SGK-YEAREND-REVIEW-R00_HANDOFF_V2_DRAFT_20261104.md` records 6 lesson IDs, 6 outcomes, 31 public canonical items, their outcome/role mapping and Q01–Q18/PED/A1–A7 evidence, source+review SHA and no RD1/Mastery. No `ready/` manifest and no REGISTER row until the owner separately approves truthful `SGK_YEAR_END_REVIEW_SUPPLEMENT` operational V2 packet type and mechanical QA passes. Prior owner V2 experience authorization does NOT cover year-end review.
 - **Snapshot state:** `ACADEMIC_VERDICT=PASS`, `PEDAGOGICAL_VERDICT=PASS`, `Q18=PASS`, `A1–A7_EVIDENCE_COMPLETE_WITHIN_SCOPE`, `BLOCKED_BY_AUTHORING(V2_YEAR_END_PACKET_TYPE_OWNER_DECISION_REQUIRED)`; `CONTENT_READY=NO`, `RELEASE_AUTHORIZATION=NO`, `MASTERY_ACTIVATION=NO`. No merge/deploy or independent year-end Readiness.
+
+## 04/11/2026 final OWNER operational V2 scope — AUTHORING packet promotion
+
+- Owner explicitly approved `SGK_YEAR_END_REVIEW_SUPPLEMENT` as a truthful SGK public year-end revision V2 type separate from the earlier `SGK_EXPERIENCE_SUPPLEMENT` approval. One unchanged `SLM-THPT-QUALITY-ONE v1.1.0` governs both. No additional authoring mathematics or independent review required.
+- The canonical R00 student source SHA remains `7274cb3a6c35627f0e23574709cf5cdc355ab46a`, original source commit `82c5b78ac8a1fda4eca2da6541edce65286553a8`; independently corrected reviewer original Git blob `3b5b7f70e3b68895fd976a265ae6f454f774e1cc`, Academic/PED/Q18/SOURCE_PARITY PASS; original full reviewer files unchanged. 8/8 file SHA and Git blob checks; 6 TR/6 outcomes/31 items, 16 Written /5, four PNG.
+- One signed V2 canonical handoff `prototypes/thpt/release-handoffs/G12-SGK-YEAREND-REVIEW-R00_HANDOFF_V2_20261104.md`, one `ready/G12-SGK-YEAREND-REVIEW-R00.md` manifest and one synchronized REGISTER row. `PRIVATE_RD1_COUNT=0`, `ASSESSMENT_MODE=CLIENT_SELF_CHECK_NO_MASTERY`, `OFFICIAL_READINESS=NOT_CLAIMED`, `RELEASE_AUTHORIZATION=NO`, `MASTERY_ACTIVATION=NO`. Historical preapproval and Q18 HOLD notes remain traceable above but have been superseded for this reviewed R00 snapshot.
+- **AUTHORING CONTENT_READY is conditional upon green exact-final-HEAD CI** for V2 source lock, REGISTER and applicable QA. The separate RELEASE lane has not been authorized; no website, Final Submit, Firebase, Gemini, merge, deployment or learner-scoring changes.
