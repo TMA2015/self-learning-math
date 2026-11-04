@@ -22,3 +22,29 @@
 .g12-chi-math-display{overflow-x:auto}
 .g12-chi-error{padding:12px;border-left:3px solid var(--md-accent-fg-color)}
 @media(max-width:640px){.g12-chi-item{padding:12px;margin:12px 0}.g12-chi-stage{margin:18px 0 24px}.g12-chi-submit{width:100%}.g12-chi-answer{padding:12px}}
+
+
+/* One chapter-level G12 Core & Practice hub; same Golden R4 section/card family as G11. */
+.g12-chi-hub{min-width:0;overflow-wrap:anywhere}
+.g12-chi-hub-lesson[data-thpt-grade="12"]{--thpt-grade-accent:#8554c1}
+.g12-chi-hub-group{display:block;gap:0;align-self:start;scroll-margin-top:6rem}
+.g12-chi-hub-group[open]{grid-column:1/-1}
+.g12-chi-hub-summary{display:flex;flex-direction:column;gap:10px;list-style:none;cursor:pointer}
+.g12-chi-hub-summary::-webkit-details-marker{display:none}
+.g12-chi-hub-summary::marker{content:""}
+.g12-chi-hub-kind{color:var(--thpt-grade-accent,#8554c1);font-size:.86rem;font-weight:850}
+.g12-chi-hub-summary strong{font-size:1rem;line-height:1.45}
+.g12-chi-hub-count{color:var(--md-default-fg-color--light);font-size:.82rem}
+.g12-chi-hub-action{display:block;text-align:center;padding:10px 12px;min-height:44px;border-radius:9px;border:1px solid #d8c2f4;color:var(--thpt-grade-accent,#8554c1);font-weight:750}
+.g12-chi-hub-group[open] .g12-chi-hub-action,.g12-chi-hub-summary:hover .g12-chi-hub-action{background:var(--md-code-bg-color)}
+.g12-chi-hub-content{border-top:1px solid var(--md-default-fg-color--lightest);margin-top:16px;padding:0 2px;min-width:0}
+.g12-chi-hub-help{margin:0 16px 18px;border:1px solid var(--md-default-fg-color--lightest);border-radius:10px;scroll-margin-top:6rem}
+.g12-chi-hub-help>summary{padding:12px 16px;cursor:pointer;font-weight:700}
+.g12-chi-hub-help-content{padding:0 16px 12px}
+.g12-chi-hub-lesson>.g12-chi-return{display:inline-block;margin:0 18px 16px}
+.g12-chi-hub-lesson>.g12-chi-paragraph{display:inline-block;margin:0 0 16px 18px}
+.g12-chi-hub-group .g12-chi-item{margin:16px 0}
+@media(max-width:720px){
+ .g12-chi-hub .thpt-r4-practice-card-grid{grid-template-columns:1fr}
+ .g12-chi-hub-group[open]{grid-column:1}
+}

@@ -2,7 +2,7 @@
 
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">TOÁN 12 · CHƯƠNG I · SGK KẾT NỐI TRI THỨC · TẬP MỘT · TRANG 15–19</p>
-<p class="thpt-r4-lead">Học trọn bài tại đây: hiểu bản chất, xem hình, ví dụ có suy luận, tự thử, Core, Luyện tập, Vận dụng, Tự luận và các hướng dẫn tự khắc phục.</p>
+<p class="thpt-r4-lead">Học Kiến thức trọn vẹn tại đây: hiểu bản chất, xem hình, ví dụ có suy luận và tự thử; sau đó mở Core, Luyện tập, Vận dụng, Tự luận trên trang riêng của Chương I.</p>
 <nav class="thpt-r4-lesson-tabs"><a href="../">Chương I</a><a href="../bai-1/">Bài trước</a><a href="../bai-3/">Bài tiếp theo</a></nav></div>
 
 ## 1. Vì sao cần học?
@@ -53,8 +53,10 @@ B. Hàm f(x)=x, 0<x<1, "gần 1" khác "đạt 1" như thế nào?
 C. Khi tối ưu một chiều dài x, vì sao cần ghi 0<x<12 trước khi đạo hàm?
 Tự ghi dự đoán, chỉ sau đó mở từng Core. Nếu sai: đi tới đúng thẻ D6, thử lại mục khác rồi mới trở về câu gốc.
 
-## 7. Core, Luyện tập, Vận dụng, Tự luận và hỗ trợ
+## 7. Chuyển sang Core và Luyện tập
 
-<div class="thpt-r4-screen g12-chi-lesson" data-g12-chi-lesson="B02" aria-live="polite"><p>Đang mở bài tập đã kiểm duyệt...</p></div>
+Sau khi đọc Kiến thức, Ví dụ và hoàn thành các câu **Tự thử** phía trên, em có thể thực hành tại **trang Core và Luyện tập của Chương I**. Câu hỏi vẫn được chia theo từng bài, không cần tìm trong các bài học khác.
+
+<div class="thpt-r4-screen" data-thpt-r4><nav class="thpt-r4-lesson-tabs"><a href="../luyen-tap/#b02-core">✎ Core · Bài 2</a><a href="../luyen-tap/#b02-practice">✎ Luyện tập · Vận dụng · Tự luận · Bài 2</a><a href="../luyen-tap/#b02-help">Hướng dẫn khi gặp khó khăn · Bài 2</a></nav></div>
 
 <div class="thpt-r4-screen" data-thpt-r4><nav class="thpt-r4-lesson-tabs"><a href="../">Chương I</a><a href="../bai-3/">Bài tiếp theo</a></nav></div>

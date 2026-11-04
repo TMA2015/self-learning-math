@@ -94,11 +94,13 @@ for(const [file,gitSha]of fig){
  assert.equal(sha("docs/assets/images/thpt/"+file),gitSha,"Published figure bytes original");
 }
 const root="docs/thpt-preview/sgk/lop-12/";
-for(const p of ["index.md","chuong-i.md",...[1,2,3,4,5].map(i=>"chuong-i/bai-"+i+".md"),"chuong-i/tu-kiem-tra-chuong.md"]){
+for(const p of ["index.md","chuong-i.md","chuong-i/luyen-tap.md",...[1,2,3,4,5].map(i=>"chuong-i/bai-"+i+".md"),"chuong-i/tu-kiem-tra-chuong.md"]){
  assert(fs.existsSync(root+p),"G12 route "+p);
 }
 const js=read("docs/assets/javascripts/thpt-g12-chi-b01-b05-r00.js");
-assert(js.includes("data-g12-chi-lesson")&&js.includes("data-g12-chi-selfcheck"));
+assert(js.includes("data-g12-chi-hub")&&js.includes("data-g12-chi-selfcheck"));
+assert(js.includes("const startHub=")&&js.includes("const groupCard="));
+assert(!js.includes("const startLesson="),"No inline lesson exercise renderer");
 assert(js.includes('button.dataset.g12ChiFinal=""')&&js.includes("entries.filter(x=>!x.input.value.trim()).length"));
 assert(js.includes("if(button.disabled)return")&&js.includes("input.disabled=true"));
 assert(!js.includes(".innerHTML")&&!js.includes("localStorage.setItem(")&&!js.includes("sessionStorage.setItem("));
@@ -108,6 +110,25 @@ for(const cf of ["mkdocs.yml","mkdocs.thpt-preview.yml"]){
  assert(y.includes("assets/stylesheets/thpt-g12-chi-b01-b05-r00.css"));
  assert(y.includes("thpt-preview/sgk/lop-12/chuong-i.md"));
 }
+const hub=read(root+"chuong-i/luyen-tap.md");
+assert(hub.includes('data-g12-chi-hub'),"One chapter-wide Core/Practice page");
+assert(read(root+"chuong-i.md").includes('href="luyen-tap/"'),"Chapter navigation exposes hub");
+const preview=read("mkdocs.thpt-preview.yml");
+assert(preview.includes("thpt-preview/sgk/lop-12/chuong-i/luyen-tap.md"),"R4 navigation exposes hub");
+let originalKnowledgeCount=0;
+for(let i=1;i<=5;i++){
+ const p=read(root+"chuong-i/bai-"+i+".md");
+ assert(!p.includes("data-g12-chi-lesson"),"No inline exercise questions on lesson B0"+i);
+ assert(p.includes('href="../luyen-tap/#b0'+i+'-core"'),"Missing Core navigation B0"+i);
+ assert(p.includes('href="../luyen-tap/#b0'+i+'-practice"'),"Missing Practice navigation B0"+i);
+ assert(p.includes("## 6. Tự thử"),"Original novice pre-Core content retained");
+ originalKnowledgeCount++;
+}
+const publicPractice=bank.items.filter(q=>q.lesson_id!=="END");
+assert.equal(publicPractice.length,66,"Same 66 original public formative items remain");
+assert.equal(bank.items.filter(q=>q.lesson_id==="END").length,12,"12 end-of-chapter protected by Q16");
+assert.equal(new Set(publicPractice.map(q=>q.item_id)).size,66,"No cloned item IDs");
+assert.equal(bank.help.filter(x=>x.lesson_id!=="END").length,32,"All original lesson D6 preserved");
 assert(read(root+"chuong-i/tu-kiem-tra-chuong.md").includes('data-g12-chi-selfcheck="END"'));
 assert(read("docs/thpt-preview/sgk/index.md").includes('data-thpt-grade="12"'));
-console.log("PASS G12 ChI source R1/Q15/Q16/Q18: 78 original canonical; 36 outcomes/D6; 24 D2; six SHA-identical SVG; 8 SGK pages; no Mastery.");
+console.log("PASS G12 ChI single canonical: 66 lesson questions in separate 5-lesson hub; 12 END; 36 D6; 6 SVG; 9 SGK routes; no inline questions/Mastery.");

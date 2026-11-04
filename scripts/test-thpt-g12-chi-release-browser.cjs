@@ -1,76 +1,111 @@
 "use strict";
-/* G12 ChI browser AP/Q16 smoke: three viewports, source-locked UI, no early answers.
- * Chromium P1 QA, NOT physical Safari P2.
+/* G12 ChI AP/Q16 chapter-wide practice hub, golden visual parity to G10/G11.
+ * Same PUBLIC canonical bank, original SVG, no early answer/Final Submit bypass.
+ * Three Chromium viewports; physical Safari owner P2 remains independent.
  */
 const assert=require("node:assert/strict"),{chromium}=require("playwright");
 const base="http://127.0.0.1:8765/thpt-preview/sgk/lop-12/";
-const lessons=[11,12,14,14,15],helpc=[6,6,6,7,7],figurec=[1,1,1,2,1];
+const counts=[11,12,14,14,15],helpc=[6,6,6,7,7],figurec=[1,1,1,2,1];
 (async()=>{
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
  try{
   for(const viewport of [{width:390,height:844},{width:820,height:1180},{width:1440,height:900}]){
    const page=await browser.newPage({viewport});
    try{
-    const check=async url=>{
-     const response=await page.goto(base+url,{waitUntil:"networkidle",timeout:60000});
-     assert(response?.ok(),"Missing generated G12 route "+url);
+    const check=async route=>{
+     const res=await page.goto(base+route,{waitUntil:"networkidle",timeout:90000});
+     assert(res?.ok(),"Missing G12 route "+route);
      const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);
-     assert(overflow<=20,"Horizontal overflow "+url+" "+viewport.width+" by "+overflow);
+     assert(overflow<=20,"Horizontal overflow "+route+" @"+viewport.width+" by "+overflow);
     };
     await check("");
     await check("chuong-i/");
-    assert.equal(await page.locator("a.thpt-r4-tile").count(),6,"5 lessons plus end self-check");
+    assert.equal(await page.locator("a.thpt-r4-tile").count(),7,"Five lesson links + one hub + one END");
+    assert.equal(await page.locator('a.thpt-r4-tile[href="luyen-tap/"]').count(),1,"Chapter Core page tile");
     for(let i=1;i<=5;i++){
      await check("chuong-i/bai-"+i+"/");
-     const root=page.locator('[data-g12-chi-lesson="B0'+i+'"]');
-     await root.waitFor({state:"visible"});
-     await page.waitForFunction(()=>document.querySelector('[data-g12-chi-lesson]')?.dataset.g12ChiReady==="true",null,{timeout:30000});
-     assert.equal(await root.getAttribute("data-g12-chi-error"),null);
-     assert.equal(await root.locator(".g12-chi-item").count(),lessons[i-1],"Original canonical B0"+i);
-     assert.equal(await root.locator(".g12-chi-help").count(),helpc[i-1],"Original D6 B0"+i);
-     assert.equal(await root.locator(".g12-chi-item[data-outcome]").count(),lessons[i-1]);
-     assert.equal(await page.locator(".g12-chi-figure img").count(),figurec[i-1],"Original SVG count B0"+i);
-     const image=page.locator(".g12-chi-figure img").first();
-     assert(await image.evaluate(x=>x.complete&&x.naturalWidth>0),"Original SVG failed to load");
-     assert.equal(await root.locator(".g12-chi-answer:not([hidden])").count(),0,"No early answer");
-     const content=await page.locator(".md-content").innerText();
-     for(const label of ["1. Vì sao cần học?","2. Kiến thức tiền đề","3. Hiểu bản chất","4. Đọc hình","5. Ví dụ","6. Tự thử","7. Core"])
-      assert(content.includes(label),"Missing full lesson flow "+i+" "+label);
-     const first=root.locator(".g12-chi-item").first();
-     await first.locator("button.g12-chi-submit").click();
-     assert.equal(await first.locator(".g12-chi-answer:not([hidden])").count(),0,"No solution when submitting empty input");
-     await first.locator("textarea").fill("Em tự lập luận về kết quả");
-     await first.locator("button.g12-chi-submit").click();
-     assert.equal(await first.locator(".g12-chi-answer:not([hidden])").count(),1,"Reveal formative only after Submit");
-     assert.equal(await root.locator(".g12-chi-answer:not([hidden])").count(),1,"Do not reveal other answers");
-     assert.equal(await root.locator('[data-canonical-item]').count(),lessons[i-1],"One canonical placement each");
-     assert((await root.locator(".g12-chi-help").first().locator("a").getAttribute("href")).startsWith("#"),"D6 same-page return");
-     const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);
-     assert(overflow<=20,"Loaded G12 lesson has horizontal overflow at "+viewport.width+" B0"+i+": "+overflow);
+     assert.equal(await page.locator("[data-g12-chi-lesson]").count(),0,"No inline practice root B"+i);
+     assert.equal(await page.locator(".g12-chi-item").count(),0,"No public quiz item on lesson B"+i);
+     const text=await page.locator(".md-content").innerText();
+     for(const label of ["1. Vì sao cần học?","2. Kiến thức tiền đề","3. Hiểu bản chất",
+        "4. Đọc hình","5. Ví dụ","6. Tự thử","7. Chuyển sang Core"])
+      assert(text.includes(label),"Missing student lesson knowledge step B"+i+": "+label);
+     assert.equal(await page.locator('a[href="../luyen-tap/#b0'+i+'-core"]').count(),1);
+     assert.equal(await page.locator('a[href="../luyen-tap/#b0'+i+'-practice"]').count(),1);
+     assert.equal(await page.locator(".g12-chi-figure img").count(),figurec[i-1]);
+     const images=await page.locator(".g12-chi-figure img").all();
+     for(const img of images){
+      await img.scrollIntoViewIfNeeded();
+      await img.evaluate(async x=>{if(!x.complete)await new Promise((done,fail)=>{
+        x.addEventListener("load",done,{once:true});x.addEventListener("error",fail,{once:true});
+      });if(x.decode)await x.decode();});
+      assert(await img.evaluate(x=>x.naturalWidth>0),"Missing original D5 SVG B"+i);
+     }
     }
+    await check("chuong-i/luyen-tap/");
+    const hub=page.locator("[data-g12-chi-hub]");
+    await page.waitForFunction(()=>document.querySelector("[data-g12-chi-hub]")?.dataset.g12ChiReady==="true",null,{timeout:30000});
+    assert.equal(await hub.getAttribute("data-g12-chi-error"),null);
+    assert.equal(await hub.locator(".g12-chi-hub-lesson").count(),5,"Five G12 chapter lesson sections");
+    assert.equal(await hub.locator("details.g12-chi-hub-group").count(),10,"Core and Practice cards per lesson");
+    assert.equal(await hub.locator(".g12-chi-item").count(),66,"Exactly 66 original public items");
+    assert.equal(await hub.locator(".g12-chi-item[data-outcome]").count(),66);
+    assert.equal(await hub.locator(".g12-chi-help").count(),32,"Same original D6");
+    assert.equal(await hub.locator(".g12-chi-answer:not([hidden])").count(),0,"No formative key before submit");
+    for(let i=1;i<=5;i++){
+     const lesson=hub.locator('[data-g12-chi-hub-lesson="B0'+i+'"]');
+     assert.equal(await lesson.locator(".g12-chi-item").count(),counts[i-1],"Original canonical items B0"+i);
+     assert.equal(await lesson.locator(".g12-chi-help").count(),helpc[i-1],"Original D6 B0"+i);
+     assert.equal(await lesson.locator(".g12-chi-hub-group").count(),2);
+    }
+    const core=hub.locator("#b01-core");
+    assert.equal(await core.getAttribute("open"),null,"Groups collapsed by default");
+    await core.locator("summary").click();
+    assert.notEqual(await core.getAttribute("open"),null,"Core opens");
+    const first=core.locator(".g12-chi-item").first();
+    await first.locator("button.g12-chi-submit").click();
+    assert.equal(await first.locator(".g12-chi-answer:not([hidden])").count(),0,"No reveal on empty submit");
+    await first.locator("textarea").fill("Em tự giải bài này trước");
+    await first.locator("button.g12-chi-submit").click();
+    assert.equal(await first.locator(".g12-chi-answer:not([hidden])").count(),1,"Reveal only submitted Core key");
+    assert.equal(await hub.locator(".g12-chi-answer:not([hidden])").count(),1,"Other keys stay hidden");
+    const help=hub.locator("#b01-help");
+    await help.locator(":scope > summary").click();
+    assert.notEqual(await help.getAttribute("open"),null);
+    await help.locator("details.g12-chi-help > summary").first().click();
+    const d6=help.locator("a.g12-chi-return").first();
+    const anchor=await d6.getAttribute("href");
+    assert(anchor.startsWith("#"),"Original D6 return-to-item link");
+    await d6.click();
+    const target=hub.locator('[id="'+anchor.slice(1)+'"]');
+    assert.equal(await target.count(),1,"Canonical item target exists");
+    assert(await target.isVisible(),"D6 return opens the proper Core/Practice group");
+    const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);
+    assert(overflow<=20,"Expanded practice does not overflow @"+viewport.width);
+    await check("chuong-i/luyen-tap/?qa=deep-link#b02-practice");
+    await page.waitForFunction(()=>document.querySelector("[data-g12-chi-hub]")?.dataset.g12ChiReady==="true",null,{timeout:30000});
+    assert.notEqual(await page.locator("#b02-practice").getAttribute("open"),null,"Deep link opens Practice B02");
+    assert.equal(await page.locator(".g12-chi-answer:not([hidden])").count(),0,"New view never preloads key");
     await check("chuong-i/tu-kiem-tra-chuong/");
     const root=page.locator('[data-g12-chi-selfcheck="END"]');
-    await page.waitForFunction(()=>document.querySelector('[data-g12-chi-selfcheck]')?.dataset.g12ChiReady==="true",null,{timeout:30000});
-    assert.equal(await root.locator(".g12-chi-selfcheck-item").count(),12,"12 public RD0 END original items");
-    assert.equal(await root.locator(".g12-chi-answer:not([hidden])").count(),0,"No pre-final solution");
-    assert.equal(await root.locator(".g12-chi-help").count(),0,"No pre-final D6 hints");
+    await page.waitForFunction(()=>document.querySelector("[data-g12-chi-selfcheck]")?.dataset.g12ChiReady==="true",null,{timeout:30000});
+    assert.equal(await root.locator(".g12-chi-selfcheck-item").count(),12,"12 original PUBLIC end items");
+    assert.equal(await root.locator(".g12-chi-answer:not([hidden])").count(),0);
+    assert.equal(await root.locator(".g12-chi-help").count(),0,"Never reveal D6 before Final Submit");
     const btn=root.locator("button[data-g12-chi-final]");
-    await btn.click();
-    assert.equal(await root.locator(".g12-chi-answer:not([hidden])").count(),0,"Cannot Final Submit empty quiz");
-    await root.locator("textarea").first().fill("Tự thử câu 1");
-    await btn.click();
-    assert.equal(await root.locator(".g12-chi-answer:not([hidden])").count(),0,"Cannot reveal from partially completed quiz");
+    await btn.click();assert.equal(await root.locator(".g12-chi-answer:not([hidden])").count(),0);
+    await root.locator("textarea").first().fill("Tự thử");
+    await btn.click();assert.equal(await root.locator(".g12-chi-answer:not([hidden])").count(),0);
     const inputs=await root.locator(".g12-chi-selfcheck-item textarea").all();
-    for(const [i,el]of inputs.entries())await el.fill("Lập luận của em cho câu "+(i+1));
+    for(const [i,el]of inputs.entries())await el.fill("Lập luận câu "+(i+1));
     await btn.click();
-    assert.equal(await root.locator(".g12-chi-answer:not([hidden])").count(),12,"Post-final reveal exact 12 public original keys");
-    assert.equal(await btn.isDisabled(),true,"Final Submit cannot be repeated");
-    assert.equal(await root.locator(".g12-chi-help").count(),4,"END D6 only after final submit");
+    assert.equal(await root.locator(".g12-chi-answer:not([hidden])").count(),12,"Only after full Final Submit");
+    assert.equal(await btn.isDisabled(),true);
+    assert.equal(await root.locator(".g12-chi-help").count(),4,"END D6 only post-submit");
     assert.equal(await root.locator("textarea:disabled").count(),12);
-    const width=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);
-    assert(width<=20,"Self-check horizontal overflow at "+viewport.width+": "+width);
-    console.log("PASS G12 ChI "+viewport.width+"px: 8 routes; 5 full learning journeys (66 original PUBLIC items), 36 D6, six SVG; 12 Q16 Final Submit with keys hidden until final.");
+    assert((await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth))<=20);
+    console.log("PASS G12 ChI "+viewport.width+"px: 5 knowledge-only lessons, separate 66-item chapter hub, 32 D6, 6 SVG; 12 END Q16.");
    }finally{await page.close()}
   }
  }finally{await browser.close()}
-})().catch(err=>{console.error(err);process.exitCode=1});
+})().catch(e=>{console.error(e);process.exitCode=1});

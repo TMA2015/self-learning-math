@@ -2,7 +2,7 @@
 
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">TOÁN 12 · CHƯƠNG I · SGK KẾT NỐI TRI THỨC · TẬP MỘT · TRANG 26–32</p>
-<p class="thpt-r4-lead">Học trọn bài tại đây: hiểu bản chất, xem hình, ví dụ có suy luận, tự thử, Core, Luyện tập, Vận dụng, Tự luận và các hướng dẫn tự khắc phục.</p>
+<p class="thpt-r4-lead">Học Kiến thức trọn vẹn tại đây: hiểu bản chất, xem hình, ví dụ có suy luận và tự thử; sau đó mở Core, Luyện tập, Vận dụng, Tự luận trên trang riêng của Chương I.</p>
 <nav class="thpt-r4-lesson-tabs"><a href="../">Chương I</a><a href="../bai-3/">Bài trước</a><a href="../bai-5/">Bài tiếp theo</a></nav></div>
 
 ## 1. Vì sao cần học?
@@ -55,8 +55,10 @@ B. Nghiệm bội hai x=0 của y=x³−3x² khiến đường cong tiếp xúc 
 C. Với g=2+11/(x−3), dự đoán tâm đối xứng trước khi xem ví dụ.
 Tự ghi dự đoán rồi kiểm tra lại bằng tính toán, không mở đáp án trước khi tự làm.
 
-## 7. Core, Luyện tập, Vận dụng, Tự luận và hỗ trợ
+## 7. Chuyển sang Core và Luyện tập
 
-<div class="thpt-r4-screen g12-chi-lesson" data-g12-chi-lesson="B04" aria-live="polite"><p>Đang mở bài tập đã kiểm duyệt...</p></div>
+Sau khi đọc Kiến thức, Ví dụ và hoàn thành các câu **Tự thử** phía trên, em có thể thực hành tại **trang Core và Luyện tập của Chương I**. Câu hỏi vẫn được chia theo từng bài, không cần tìm trong các bài học khác.
+
+<div class="thpt-r4-screen" data-thpt-r4><nav class="thpt-r4-lesson-tabs"><a href="../luyen-tap/#b04-core">✎ Core · Bài 4</a><a href="../luyen-tap/#b04-practice">✎ Luyện tập · Vận dụng · Tự luận · Bài 4</a><a href="../luyen-tap/#b04-help">Hướng dẫn khi gặp khó khăn · Bài 4</a></nav></div>
 
 <div class="thpt-r4-screen" data-thpt-r4><nav class="thpt-r4-lesson-tabs"><a href="../">Chương I</a><a href="../bai-5/">Bài tiếp theo</a></nav></div>
