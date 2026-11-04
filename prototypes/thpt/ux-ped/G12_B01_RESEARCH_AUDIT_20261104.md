@@ -31,6 +31,21 @@ Owner nhận thấy phần AI giải thích trực giác bằng chuyện xe ti�
 
 **Giới hạn:** `OUTCOME_ID` cụ thể và lesson-to-outcome matrix phải đối chiếu V2 handoff và source receipt trong T2 tiếp theo; **không tự đặt ID** từ bốn mục tiêu văn xuôi. Q18 không thể chứng minh chỉ bằng mắt nhìn preview.
 
+## Đối chiếu OUTCOME_ID canonical (đã kiểm handoff V2)
+
+Đã đọc `prototypes/thpt/release-handoffs/G12-SGK-CHI-B01-B05-R00_HANDOFF_V2_20261102.md`, nguồn `prototypes/thpt/content-drafts/G12_SGK_CHI_B01_B05_FULL_CHAPTER_PUBLIC_CANONICAL_R00_SOURCE_CANDIDATE.md` và ma trận ITEM_ID→PRIMARY_OUTCOME_ID theo gói. 6 mã sau là **ID chính thức trong nguồn**, không tự tạo. Bảng chỉ là liên hệ sư phạm/hiển thị cho pilot và chưa thay đổi ma trận AUTHORING gốc.
+
+| OUTCOME_ID canonical | Chỗ học sinh gặp nội dung (B01) | Item gốc trong handoff | Vấn đề presentation cụ thể | Q/AP kiểm |
+|---|---|---|---|---|
+| `G12-B01-MONOTONICITY_MEANING` | §1 “Vì sao cần học”; §3.1 định nghĩa/giải thích | C01 | “đang tăng” và dấu vận tốc cần cầu nối trước ký hiệu dày; giữ định nghĩa đúng khoảng | Q03/Q09/Q11; AP1/AP4 |
+| `G12-B01-DERIVATIVE_SIGN` | §3.1 quy tắc dấu; §3.2 bảng dấu; ví dụ 1–2 | C02, P02 | Ký hiệu f′ dương/âm và suy luận thay đổi nên có tầng trực quan/công thức riêng | Q03/Q11/Q13; AP1/AP2 |
+| `G12-B01-DOMAIN_INTERVALS` | §2 miền xác định; §3.2 điều kiện; ví dụ 3 phân thức | P01, W02 | Ranh giới khoảng không liền thông phải nổi bật gần kết luận, tránh học máy móc | Q03/Q10/Q13; AP2/AP4 |
+| `G12-B01-EXTREMA_SIGN_CHANGE` | §3.2 cực trị và đổi dấu; §4 SVG; ví dụ 1–2 | C03, P03, W01 | Đặt dấu, hình, điều kiện đổi dấu và kết luận cùng mạch đọc | Q07/Q11/Q12/Q13; AP1/AP3 |
+| `G12-B01-ZERO_DERIVATIVE_NOT_SUFFICIENT` | §3.2 chiều đảo sai; §3.3 f(x)=x³; §6 Tự thử B | C04, P04 | Nhấn “f′=0 chưa đủ” sát phản ví dụ, không bớt điều kiện | Q03/Q11/Q14; AP1/AP4 |
+| `G12-B01-MOTION_CONTEXT` | §1 vị trí/vận tốc; §5 ví dụ 4 chuyển động | A01 | Trực giác không nhầm vận tốc có hướng với quãng đường; kiểm đơn vị và thời gian t≥0 | Q02/Q04/Q09/Q13; AP4 |
+
+**Giới hạn:** các item trên là PUBLIC RD0 (11 ID B01), không lấy ngân hàng private RD1 hoặc tăng item. Chứng cứ Academic/PED đã PASS theo snapshot gốc không được sửa bằng nghiên cứu này. `source_lock=PASS_READ_ONLY`; `outcome_crosswalk=T2_SOURCE_COMPLETE`; `novice_effectiveness=PENDING`.
+
 ## Phương án so sánh A/B
 
 - **A — tối thiểu:** hiển thị nguyên văn source Markdown với hệ thống heading/list/figure, không phải bản production pixel-perfect.
