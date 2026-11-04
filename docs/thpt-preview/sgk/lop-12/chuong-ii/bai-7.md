@@ -2,7 +2,7 @@
 
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">TOÁN 12 · CHƯƠNG II · SGK KẾT NỐI TRI THỨC · TẬP MỘT · TRANG 60–66</p>
-<p class="thpt-r4-lead">Học theo mạch: hiểu bản chất, đọc hình, xem ví dụ có suy luận, tự thử, Core, Luyện tập, Tự luận và tự khắc phục ngay trong bài.</p>
+<p class="thpt-r4-lead">Học theo mạch: hiểu bản chất, đọc hình, xem ví dụ có suy luận và Tự thử trước Core; sau đó mở Core, Luyện tập và Tự luận trên trang riêng của Chương II.</p>
 <nav class="thpt-r4-lesson-tabs"><a href="../">Chương II</a><a href="../bai-6/">Bài trước</a><a href="../bai-8/">Bài tiếp theo</a></nav>
 </div>
 
@@ -77,7 +77,10 @@ Từ $A$ tới $B$, theo $x$ tăng $5-2=3$, theo $y$ tăng $2-(-1)=3$, theo $z$ 
 
 </details>
 
-## 7. Core · Luyện tập · Tự luận · Hỗ trợ khắc phục
+## 7. Core, Luyện tập, Tự luận và hỗ trợ
 
-<div class="thpt-r4-screen g12-chii-lesson" data-g12-chii-lesson="B07" aria-live="polite"><p>Đang mở bài tập gốc đã kiểm duyệt...</p></div>
+Sau phần Kiến thức, ví dụ và **Tự thử trước Core**, em sang **trang Core và Luyện tập của Chương II**. Tại đây, em chọn Bài 7, tự làm rồi mới đối chiếu, và có hướng dẫn theo đúng câu nếu gặp khó khăn.
+
+<div class="thpt-r4-screen" data-thpt-r4><nav class="thpt-r4-lesson-tabs"><a href="../luyen-tap/#b07-core">✎ Core · Bài 7</a><a href="../luyen-tap/#b07-practice">✎ Luyện tập và Tự luận · Bài 7</a><a href="../luyen-tap/#b07-help">Hỗ trợ khi gặp khó khăn · Bài 7</a></nav></div>
+
 <div class="thpt-r4-screen" data-thpt-r4><nav class="thpt-r4-lesson-tabs"><a href="../">Chương II</a><a href="../bai-8/">Bài tiếp theo</a></nav></div>
