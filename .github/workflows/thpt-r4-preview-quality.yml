@@ -39,6 +39,7 @@ on:
       - 'docs/assets/stylesheets/thpt-self-check-qa-v1.css'
       - 'scripts/test-thpt-self-check-qa-browser.cjs'
       - 'docs/assets/javascripts/floating-ai-tutor-v1.js'
+      - 'scripts/test-floating-ai-thpt-route-browser.cjs'
       - 'docs/assets/javascripts/firebase-gemini-v1.js'
       - 'docs/assets/javascripts/sticky-nav-v1.js'
       - 'docs/assets/javascripts/anchor-library-v1.js'
@@ -366,6 +367,8 @@ jobs:
           node --check docs/assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js
           node --check scripts/test-thpt-g11-chi-selfcheck-browser.cjs
           node scripts/test-thpt-g11-chi-selfcheck-browser.cjs
+      - name: Shared AI Tutor launcher G10/G11/G12 · 390 / 820 / 1440 · no Q16 leak
+        run: node scripts/test-floating-ai-thpt-route-browser.cjs
       - name: Browser smoke test · desktop / iPhone / iPad simulation
         run: |
           python -m http.server 8765 --directory site > /tmp/thpt-r4-combined-http.log 2>&1 &
