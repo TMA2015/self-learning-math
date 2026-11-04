@@ -128,16 +128,78 @@ const helpers=(root,bank,lesson)=>{
   details.append(back,practice);root.append(details);
  });
 };
-const startLesson=(root,bank,lesson)=>{
- const items=bank.items.filter(x=>x.lesson_id===lesson),expected={B06:24,B07:16,B08:24};
- if(items.length!==expected[lesson])throw Error("Source lesson item mismatch "+lesson);
- const groups=[["CORE","1. Core · Nắm chắc kiến thức"],["PRACTICE","2. Luyện tập và vận dụng"],["WRITTEN","3. Tự luận · Trình bày lập luận"]];
- groups.forEach(([role,title])=>{
-  const part=mk("section","g12-chii-stage");part.append(mk("h3","",title));
-  items.filter(x=>x.role===role).forEach((x,i)=>part.append(itemCard(x,i+1)));
-  root.append(part);
- });
- helpers(root,bank,lesson);typeset(root);
+/* Use one chapter-level Core and Practice hub per owner-approved G10/G11 page architecture.
+ * B06–B08 lesson knowledge remains independent from this PUBLIC formative bank.
+ */
+const lessonTitles={
+ B06:"Vectơ trong không gian",
+ B07:"Hệ trục tọa độ trong không gian",
+ B08:"Biểu thức tọa độ của các phép toán vectơ"
+};
+const openHubTarget=(root,id)=>{
+ const target=document.getElementById(id);
+ if(!target||!root.contains(target))return false;
+ let p=target;
+ while(p&&p!==root){if(p.tagName==="DETAILS")p.open=true;p=p.parentElement}
+ requestAnimationFrame(()=>target.scrollIntoView({block:"start"}));
+ return true;
+};
+const makeHubGroup=(bank,lesson,practice)=>{
+ const roles=practice?["PRACTICE","WRITTEN"]:["CORE"];
+ const records=bank.items.filter(q=>q.lesson_id===lesson&&roles.includes(q.role));
+ const details=mk("details","g12-chii-hub-group thpt-r4-practice-card");
+ details.dataset.thptGrade="12";details.id=lesson.toLowerCase()+"-"+(practice?"practice":"core");
+ const summary=mk("summary","g12-chii-hub-summary");
+ summary.append(
+   mk("span","g12-chii-hub-kind",practice?"Luyện tập · Tự luận":"Core"),
+   mk("strong","",practice?"Thực hành và trình bày suy luận":"Kiểm tra nền tảng"),
+   mk("span","g12-chii-hub-count",records.length+" câu canonical"),
+   mk("span","g12-chii-hub-action",practice?"✎ Mở Luyện tập":"✎ Mở Core")
+ );
+ details.append(summary);
+ const body=mk("div","g12-chii-hub-body");
+ for(const [role,title] of (practice?
+ [["PRACTICE","Luyện tập · Vận dụng"],["WRITTEN","Tự luận · Có rubric tự đối chiếu"]]:
+ [["CORE","Core · Nắm chắc kiến thức"]])){
+  const items=records.filter(q=>q.role===role);
+  if(!items.length)continue;
+  const section=mk("section","g12-chii-stage");
+  section.append(mk("h3","",title));
+  items.forEach((q,n)=>section.append(itemCard(q,n+1)));
+  body.append(section);
+ }
+ details.append(body);
+ details.addEventListener("toggle",()=>{if(details.open)typeset(details)});
+ return details;
+};
+const startHub=(root,bank)=>{
+ root.classList.add("thpt-r4-practice-sections");
+ const counts={B06:24,B07:16,B08:24};
+ for(const [i,lesson]of ["B06","B07","B08"].entries()){
+  const available=bank.items.filter(x=>x.lesson_id===lesson);
+  if(available.length!==counts[lesson])throw Error("Original ChII source count mismatch "+lesson);
+  const outer=mk("section","thpt-r4-practice-lesson g12-chii-hub-lesson");
+  outer.dataset.thptGrade="12";outer.dataset.g12ChiiHubLesson=lesson;
+  const header=mk("div","thpt-r4-practice-lesson-header");
+  const h=mk("div","");
+  h.append(mk("p","thpt-r4-practice-class","Lớp 12 · Chương II"),mk("h2","",lessonTitles[lesson]));
+  header.append(mk("span","thpt-r4-lesson-number",i+6),h);outer.append(header);
+  const cards=mk("div","thpt-r4-practice-card-grid");
+  cards.append(makeHubGroup(bank,lesson,false),makeHubGroup(bank,lesson,true));
+  outer.append(cards);
+  const help=mk("details","g12-chii-hub-help");help.id=lesson.toLowerCase()+"-help";
+  help.append(mk("summary","","Khi gặp khó khăn · "+bank.help.filter(x=>x.lesson_id===lesson).length+" hướng dẫn"));
+  const helpBody=mk("div","g12-chii-hub-help-body");
+  helpers(helpBody,bank,lesson);
+  help.append(helpBody);outer.append(help);
+  const back=mk("a","g12-chii-return","← Trở về Kiến thức Bài "+(i+6));
+  back.href="../bai-"+(i+6)+"/";outer.append(back);
+  root.append(outer);
+ }
+ const onHash=()=>{const key=decodeURIComponent(location.hash.slice(1));if(key)openHubTarget(root,key)};
+ window.addEventListener("hashchange",onHash);
+ onHash();
+ typeset(root);
 };
 const startSelfCheck=(root,bank)=>{
  const map=new Map(bank.items.map(x=>[x.item_id,x]));
@@ -167,7 +229,7 @@ const startSelfCheck=(root,bank)=>{
    if(h){
     answer.append(paragraph("Nếu chưa hiểu: ôn lại "+ref.remedial_path));
     const link=mk("a","g12-chii-return","Về bài học, ví dụ và câu Core");
-    link.href="../bai-"+Number(q.lesson_id.slice(1))+"/#"+anchor(h.return_item);
+    link.href="../luyen-tap/#"+anchor(h.return_item);
     answer.append(link);
    }
   });
@@ -177,7 +239,7 @@ const startSelfCheck=(root,bank)=>{
  root.append(button,status);typeset(root);
 };
 const start=async()=>{
- const root=document.querySelector("[data-g12-chii-lesson], [data-g12-chii-selfcheck]");
+ const root=document.querySelector("[data-g12-chii-hub], [data-g12-chii-selfcheck]");
  if(!root)return;
  try{
   const response=await fetch(url,{cache:"no-cache"});
@@ -189,8 +251,7 @@ const start=async()=>{
      bank.items.length!==64||new Set(bank.items.map(x=>x.item_id)).size!==64||
      bank.help.length!==16||bank.end_references.length!==16)throw Error("Frozen source/receipt mismatch");
   root.replaceChildren();
-  const lesson=root.getAttribute("data-g12-chii-lesson");
-  if(lesson){if(!["B06","B07","B08"].includes(lesson))throw Error("Wrong lesson ID");startLesson(root,bank,lesson)}
+  if(root.hasAttribute("data-g12-chii-hub"))startHub(root,bank);
   else startSelfCheck(root,bank);
   root.dataset.g12ChiiReady="true";
   const hash=decodeURIComponent(location.hash.slice(1));
