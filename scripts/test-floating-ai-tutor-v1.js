@@ -17,6 +17,13 @@ for(const pathname of [
   "/roadmap-toan-thcs/kien-thuc/25-tong-hop-on-thi-10/anchor-25-004/",
   "/kien-thuc/25-tong-hop-on-thi-10/anchor-25-011/index.html",
   "/roadmap-toan-thcs/thpt-preview/sgk/chuong-vi/bai-16/",
+  "/roadmap-toan-thcs/thpt-preview/sgk/lop-11/chuong-i/bai-1/",
+  "/self-learning-math/thpt-preview/sgk/lop-11/chuong-ix/bai-31/",
+  "/self-learning-math/thpt-preview/sgk/lop-12/chuong-i/bai-1/",
+  "/self-learning-math/thpt-preview/sgk/lop-12/chuong-i/bai-5/index.html",
+  "/self-learning-math/thpt-preview/sgk/lop-12/chuong-ii/bai-6/",
+  "/thpt-preview/sgk/lop-11/chuong-i/bai-1/",
+  "/thpt/sgk/lop-12/chuong-i/bai-1/",
   "/roadmap-toan-thcs/thpt-preview/chuyen-de/ham-so/kien-thuc/",
   "/self-learning-math/kien-thuc/04-bieu-thuc-dai-so/",
   "/self-learning-math/kien-thuc/25-tong-hop-on-thi-10/anchor-25-004/",
@@ -37,6 +44,12 @@ for(const pathname of [
   "/roadmap-toan-thcs/thpt-preview/chuyen-de/ham-so/luyen-tap/",
   "/self-learning-math/kien-thuc/04-bieu-thuc-dai-so/tu-kiem-tra/",
   "/self-learning-math/thpt-preview/sgk/chuong-vi/tu-kiem-tra-chuong/",
+  "/self-learning-math/thpt-preview/sgk/lop-11/chuong-i/tu-kiem-tra-chuong/",
+  "/self-learning-math/thpt-preview/sgk/lop-11/chuong-ix/luyen-tap/",
+  "/self-learning-math/thpt-preview/sgk/lop-12/chuong-i/tu-kiem-tra-chuong/",
+  "/self-learning-math/thpt-preview/sgk/lop-12/chuong-ii/tu-kiem-tra-chuong/",
+  "/self-learning-math/thpt-preview/sgk/lop-12/chuong-ii/luyen-tap/",
+  "/self-learning-math/thpt-preview/sgk/lop-12/chuong-ii/bai-6/tu-kiem-tra/",
   "/self-learning-math/thpt-preview/chuyen-de/ham-so/tu-kiem-tra/"
 ])ok(!mayMount(pathname),"assessed/nonreading route must not mount Tutor: "+pathname);
 ok(ui.includes('activity: "learning"')&&ui.includes('helpMode: "TEACH_FROM_START"'),"learning context, not assessment/practice");
@@ -45,6 +58,8 @@ ok(ui.includes("tutor-girl-awake.webp")&&ui.includes("floating-ai-head-face"),"a
 ok(ui.includes("Giải thích dễ hơn")&&ui.includes("Cho ví dụ khác")&&ui.includes("Vì sao lại đúng?")&&ui.includes("Em cần nhớ gì?"),"four reading quick actions");
 ok(ui.includes('provider: "gemini"')&&ui.includes("RoadmapRichMath"),"real Gemini through existing validated tutor and math renderer");
 ok(ui.includes("maxLength = 500")&&ui.includes("Không nhập thông tin cá nhân"),"bounded free question and privacy cue");
+ok(ui.includes("const thptGrade = () =>") && ui.includes("thptGrade() : null,"),
+  "G11/G12 Tutor context must be grade-specific without changing THCS");
 ok(prompt.includes('activity === "learning"')&&prompt.includes("NGỮ CẢNH ĐỌC BÀI HỌC"),"provider distinguishes learning from exercise");
 ok(mk.includes("floating-ai-tutor-v1.js"),"global script registered");
 ok(ui.includes('lessonLayer = isTHPTReadingPage() ? "THPT-SGK-KNTT" : "KNTT-Core"'),
