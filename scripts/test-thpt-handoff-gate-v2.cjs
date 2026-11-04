@@ -100,7 +100,7 @@ function verifySupplementSafety(data, handoff, lane) {
   assert(/RD1_PRIVATE_COUNT\s*=\s*0/.test(custody), "Supplement must document zero private RD1");
   assert(/no independent/i.test(custody) && /SGK_CHAPTER_READINESS/i.test(custody), "Supplement must disclaim independent chapter Readiness");
   if (lane === "SGK_YEAR_END_REVIEW_SUPPLEMENT") {
-    assert(/TOPIC_READINESS/i.test(custody) && /year.end/i.test(custody), "Year-end must disclaim Topic Readiness and official exam");
+    assert(/TOPIC_READINESS/i.test(custody) && /(?:year.end|end.year)/i.test(custody), "Year-end must disclaim Topic Readiness and official exam");
   }
 }
 
