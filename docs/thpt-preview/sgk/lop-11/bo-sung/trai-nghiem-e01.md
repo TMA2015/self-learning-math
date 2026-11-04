@@ -1,7 +1,7 @@
-# Toán 11 · Hoạt động trải nghiệm E01 — Mô hình hàm mũ và lôgarit
+# Toán 11 · Hoạt động 1 — Mô hình hàm mũ và lôgarit
 
 <div class="thpt-r4-screen" data-thpt-r4>
-<p class="thpt-r4-eyebrow">SGK KNTT TẬP HAI · TRANG IN 99–101 · HOẠT ĐỘNG TRẢI NGHIỆM</p>
-<p class="thpt-r4-lead">Hiểu vì sao tăng trưởng và bán rã cần số mũ; sử dụng thang pH, Richter, decibel với điều kiện đúng. Tự thử trước Core, xem ví dụ và hình đã được giải thích, sau đó luyện tập theo outcome.</p>
-<div data-g11-supp-view="E01" aria-live="polite"><p>Đang tải học liệu đã khóa nguồn...</p></div>
+<p class="thpt-r4-eyebrow">SGK KẾT NỐI TRI THỨC · TẬP HAI · TRANG 99–101 · HOẠT ĐỘNG THỰC HÀNH TRẢI NGHIỆM</p>
+<p class="thpt-r4-lead">Học lần lượt ngay trên trang này: hiểu vì sao dùng mô hình hàm mũ và thang lôgarit, đọc hình, xem ví dụ có suy luận, tự thử, làm Core/Luyện tập/Vận dụng và viết tự luận. Nếu vướng, mở hỗ trợ cuối hoạt động rồi quay lại câu hỏi.</p>
+<div data-g11-supp-view="E01" aria-live="polite"><p>Đang mở nội dung học...</p></div>
 </div>

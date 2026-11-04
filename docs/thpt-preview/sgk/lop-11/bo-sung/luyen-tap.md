@@ -1,7 +1,7 @@
-# Toán 11 · Core, Luyện tập và Vận dụng — SGK bổ sung
+# Toán 11 · Tổng hợp Core và Luyện tập cuối SGK
 
 <div class="thpt-r4-screen" data-thpt-r4>
-<p class="thpt-r4-eyebrow">SGK KNTT TẬP HAI · TRANG 99–109 · 52 CÂU PUBLIC</p>
-<p class="thpt-r4-lead">Mỗi câu hỏi gắn một outcome và một ID canonical. Viết câu trả lời trước khi chọn Nộp câu trả lời; không có đáp án hoặc đánh giá đúng/sai trước đó. Nếu cần, mở hướng dẫn khắc phục trong bài Kiến thức tương ứng.</p>
-<div data-g11-supp-view="PRACTICE" aria-live="polite"><p>Đang tải ngân hàng câu hỏi đã khóa nguồn...</p></div>
+<p class="thpt-r4-eyebrow">SGK KẾT NỐI TRI THỨC · TẬP HAI · TRANG 99–109</p>
+<p class="thpt-r4-lead">Đây là trang tổng hợp để tra cứu các câu đã học. Để tự học thuận tiện hơn, hãy vào <a href="../">Hoạt động thực hành trải nghiệm hoặc Bài tập ôn tập cuối năm</a>: các câu hỏi đã được đặt ngay dưới kiến thức và ví dụ của từng phần.</p>
+<div data-g11-supp-view="PRACTICE" aria-live="polite"><p>Đang mở bài tập...</p></div>
 </div>

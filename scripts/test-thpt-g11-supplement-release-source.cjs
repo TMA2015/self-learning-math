@@ -103,4 +103,22 @@ for(const config of ["mkdocs.yml","mkdocs.thpt-preview.yml"]){
  assert(txt.includes("thpt-preview/sgk/lop-11/bo-sung/index.md"));
 }
 assert(read("docs/thpt-preview/sgk/index.md").includes('data-thpt-sgk-supplement'));
+
+const menu=read("mkdocs.thpt-preview.yml");
+assert(menu.includes("Hoạt động thực hành trải nghiệm · Trang 99–104:"));
+assert(menu.includes("Bài tập ôn tập cuối năm · Trang 105–109:"));
+assert(!menu.includes("Bổ sung SGK Tập Hai ·"),"No technical package label in student navigation");
+const home=read(dir+"index.md");
+assert(home.includes("Hoạt động thực hành trải nghiệm")&&home.includes("Bài tập ôn tập cuối năm"));
+assert(!home.includes("Bổ sung SGK"),"No technical package label in student heading");
+for(const [p,view] of [["trai-nghiem-e01.md","E01"],["trai-nghiem-e02.md","E02"],["on-tap-cuoi-nam.md","YEAR"]]){
+ assert(read(dir+p).includes('data-g11-supp-view="'+view+'"'),"Original course view remains "+view);
+}
+assert(js.includes("const written=bank.written.filter(q=>groupOf(q)===topic)"),"Written shares original bank");
+assert(js.includes("practiceItems.forEach((q,i)=>practiceSection.append(exerciseCard(q"),"Inline Practice uses original bank");
+assert(js.includes("core.forEach((q,i)=>coreSection.append(exerciseCard(q"),"Inline Core uses original bank");
+assert(js.includes('a.href="#"+idAnchor(h.return_item)'),"D6 same page return link");
+assert(js.includes("card.dataset.canonicalItem=q.item_id"),"Canonical IDs remain on client elements");
+assert(!js.includes('mk("h3","",q.item_id)'),"Hide author technical IDs from learners");
+
 console.log("PASS G11 SGK pp99–109 source lock & release: 22 outcomes, 52 canonical formative, 16 shared Written/Anchor, 28 examples, 8 exact SVG, 23 D6, 7 paths, Q16 public-only no storage.");
