@@ -3,6 +3,9 @@
 PACKET_ID: G10-SGK-CHII-FULL-R03-CANDIDATE-20261104
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STATE: CONTENT_READY
+SOURCE_COMMIT: 5838b4c0f5dd37342fdfc8e5afdb4cbe0c6ac788
+CURRENT_PR: #745 Draft AUTHORING source-locked V2; NO RELEASE
+REVIEW_RECEIPT: prototypes/thpt/review-packets/G10_SGK_CHII_FULL_R03_COMPOSITE_SOURCE_REVIEW_CHAIN_20261104.md original reviewer chain
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 1.1.0
 CURRENT_GOVERNANCE_VERSION: 1.2.0
@@ -51,8 +54,15 @@ The original R02 NotebookLM report states Q18 HOLD and 3,316 bytes for QA metada
 The fourteen historically RD1-named questions are ALREADY PUBLIC in CHII.json and constitute CLIENT_SELF_CHECK_NO_MASTERY ONLY. Private 13-item RD1 candidate remains owner-private with separate exposure/ID hold; do not activate under overlapping IDs. Topic path not reviewed, no Topic PASS.
 
 ## R / AP / P — RELEASE gates (all unfulfilled)
+- [ ] R1_INTEGRATED_CURRENT_MAIN — RELEASE must integrate the independently reviewed source with exact canonical IDs and one shared item bank, never silently rewrite answers.
+- [ ] R2_EXACT_HEAD_CI — RELEASE must pass all required workflow checks on the actual final commit; this authoring-only metadata commit does not prove website release.
+- [ ] R3_CLEAN_STUDENT_UI — RELEASE must verify Golden R4 navigation, concept-first ordering, mathematical readability, figures and mobile UX after integration.
+- [ ] R4_ASSESSMENT_SAFETY — RELEASE must guard Final Submit and prevent early answer/feedback/AI exposure, Skill Mastery and unauthorized official grading.
+- [ ] R5_OWNER_APPROVAL — Explicit project owner release authorization is required after all RELEASE and physical-device gates, not implied by source review.
+- [ ] P1_DEPLOY_RECEIPT — No deployment authorized or performed; RELEASE must retain exact published URL/commit and production smoke test evidence.
+- [ ] P2_DEVICE_UAT — Real desktop and iPhone/iPad QA is RELEASE-owned and not yet completed for this upgraded source.
 - [ ] R1–R5 — exact source integration, final-head CI, clear student UI, assessment protection and explicit owner release approval
 - [ ] AP1–AP5 — idea hierarchy, MathJax visibility, accurate SVG, first-try usability, responsive desktop/iPhone/iPad QA
 - [ ] P1/P2 — production deployment receipt and real-device Safari checks
 
-**Next:** exact-final-HEAD V2 mechanical QA on Draft #641, no merge/deploy. Source READY is independent of website RELEASE_READY.
+**Next:** exact-final-HEAD V2 mechanical QA on Draft #745, no merge/deploy. Source READY is independent of website RELEASE_READY.
