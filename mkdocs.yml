@@ -199,6 +199,7 @@ nav:
               - Luyện tập / Vận dụng: thpt-preview/sgk/chuong-vi/luyen-tap.md
               - Tự kiểm tra (demo chưa tính thành thạo): thpt-preview/sgk/chuong-vi/tu-kiem-tra-chuong.md
               - Thư viện SGK Core: thpt-preview/sgk/core/index.md
+              - Toán 11 · Trải nghiệm và Ôn tập cuối năm: thpt-preview/sgk/lop-11/bo-sung/index.md
               - Core hàm bậc hai: thpt-preview/sgk/core/ham-so-bac-hai.md
           - Chuyên đề:
               - Tổng quan: thpt-preview/chuyen-de/index.md
@@ -252,6 +253,7 @@ extra_css:
   - assets/stylesheets/math-knowledge-r30-consistency.css
 
   - assets/stylesheets/thpt-r4-preview.css
+  - assets/stylesheets/thpt-g11-supplement-p99-p109-r00.css
   - assets/stylesheets/thpt-chvi-d6-reviewed-r01.css
   - assets/stylesheets/thpt-g10-reviewed-selfcheck-v1.css
 
@@ -310,3 +312,4 @@ extra_javascript:
   - assets/javascripts/thpt-r4-preview.js
   - assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js
   - assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js
+  - assets/javascripts/thpt-g11-supplement-p99-p109-r00.js

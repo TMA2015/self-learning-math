@@ -95,6 +95,14 @@ on:
       - 'scripts/test-thpt-g11-chix-browser-smoke.cjs'
       - 'scripts/test-thpt-g11-core-practice-math-source.cjs'
       - 'scripts/test-thpt-g11-core-practice-math-browser.cjs'
+      - 'scripts/test-thpt-g11-supplement-release-source.cjs'
+      - 'scripts/test-thpt-g11-supplement-release-browser.cjs'
+      - 'docs/thpt-preview/sgk/lop-11/bo-sung/**'
+      - 'docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json'
+      - 'docs/assets/javascripts/thpt-g11-supplement-p99-p109-r00.js'
+      - 'docs/assets/stylesheets/thpt-g11-supplement-p99-p109-r00.css'
+      - 'docs/assets/images/thpt/FIG-G11-SUPP-*.svg'
+      - 'docs/assets/images/thpt/FIG-G11-YR-*.svg'
       - 'docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js'
       - 'docs/assets/javascripts/thpt-g11-chix-b31-b33-source-locked-formative-r00.js'
       - 'docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js'
@@ -196,6 +204,8 @@ jobs:
         run: node scripts/test-thpt-g11-learner-presentation-source.cjs
       - name: Audit 359 G11 B01–B33 PUBLIC Core/Practice canonical source and math rendering scope
         run: node scripts/test-thpt-g11-core-practice-math-source.cjs
+      - name: Guard G11 SGK pp99–109 original locked academic source and public canonical release
+        run: node scripts/test-thpt-g11-supplement-release-source.cjs
       - name: Guard G11 B01 source-locked Knowledge presentation (no deploy)
         run: node scripts/test-thpt-g11-b01-ap-parity.cjs
       - name: Guard G10 B03 Knowledge AP source parity (no deploy)
@@ -400,6 +410,8 @@ jobs:
         run: node scripts/test-thpt-g11-chix-browser-smoke.cjs
       - name: Audit every G11 Core/Practice PUBLIC question math · 390 / 820 / 1440
         run: node scripts/test-thpt-g11-core-practice-math-browser.cjs
+      - name: G11 SGK pp99–109 E01/E02 year-end AP and Q16 browser · 390 / 820 / 1440
+        run: node scripts/test-thpt-g11-supplement-release-browser.cjs
       - name: Academic Presentation QA pilot · MathJax overflow / 390 820 1440
         run: node scripts/test-thpt-academic-presentation-browser.cjs
       - name: Academic Presentation QA G10 B03 · 390 820 1440
