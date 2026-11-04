@@ -5,11 +5,11 @@
   // practice, Readiness, final submission, or on answer-library pages.
   const currentPath = () => location.pathname.replace(/\/index\.html$/, "/");
   const isTHPTReadingPage = () =>
-    /^\/(?:(?:roadmap-toan-thcs|self-learning-math)\/)?(?:thpt-preview|thpt)\/(?:sgk\/chuong-[^/]+\/bai-\d+|chuyen-de\/[^/]+\/kien-thuc)\/$/.test(currentPath());
+    /^\/(?:(?:roadmap-toan-thcs|self-learning-math)\/)?(?:thpt-preview|thpt)\/(?:sgk\/(?:lop-(?:10|11|12)\/)?chuong-[^/]+\/bai-\d+|chuyen-de\/[^/]+\/kien-thuc)\/$/.test(currentPath());
   const isReadingPage = () => {
     // Keep this function self-contained: THCS route contract tests run it alone.
     const path = location.pathname.replace(/\/index\.html$/, "/");
-    if (/^\/(?:(?:roadmap-toan-thcs|self-learning-math)\/)?(?:thpt-preview|thpt)\/(?:sgk\/chuong-[^/]+\/bai-\d+|chuyen-de\/[^/]+\/kien-thuc)\/$/.test(path)) return true;
+    if (/^\/(?:(?:roadmap-toan-thcs|self-learning-math)\/)?(?:thpt-preview|thpt)\/(?:sgk\/(?:lop-(?:10|11|12)\/)?chuong-[^/]+\/bai-\d+|chuyen-de\/[^/]+\/kien-thuc)\/$/.test(path)) return true;
     if (/^\/(?:(?:roadmap-toan-thcs|self-learning-math)\/)?kien-thuc\/[^/]+\/$/.test(path)) return true;
     return /^\/(?:(?:roadmap-toan-thcs|self-learning-math)\/)?kien-thuc\/25-tong-hop-on-thi-10\/(?:bai-toan-kinh-dien|kho-bai-mo-neo|anchor-25-\d{3})\/$/.test(path);
   };
@@ -204,7 +204,9 @@
         const context = window.RoadmapTutor.buildContext({
           projectContextVersion: "1.0.17",
           layer: lessonLayer,
-          gradeOverlay: isTHPTReadingPage() && /\/sgk\//.test(currentPath()) ? 10 : null,
+          gradeOverlay: isTHPTReadingPage() && /\/sgk\//.test(currentPath())
+          ? Number(currentPath().match(/\/sgk\/lop-(10|11|12)\//)?.[1] || 10)
+          : null,
           skill: "reading-" + topicSlug(),
           question,
           learnerRequest: questionText,
