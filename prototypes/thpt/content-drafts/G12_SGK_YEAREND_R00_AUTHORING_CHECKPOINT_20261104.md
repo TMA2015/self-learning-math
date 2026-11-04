@@ -5,16 +5,16 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 1.1.0
 LEARNING_PATH: SGK_YEAR_END_REVIEW_CANDIDATE
 RELEASE_SCOPE: SGK_YEAR_END_REVIEW_SUPPLEMENT_CANDIDATE
-AUTHORING_STATUS: NOTEBOOKLM_PASS_REPORTED_Q18_SOURCE_PARITY_HOLD
-ACADEMIC_VERDICT: NOTEBOOKLM_REPORTED_PASS_Q18_HOLD
-PEDAGOGICAL_VERDICT: NOTEBOOKLM_REPORTED_PASS_Q18_HOLD
+AUTHORING_STATUS: ACADEMIC_PED_Q18_PASS_REVIEWED_V2_YEAR_END_ROUTE_HOLD
+ACADEMIC_VERDICT: PASS_ON_LOCKED_SNAPSHOT_BY_INDEPENDENT_NOTEBOOKLM
+PEDAGOGICAL_VERDICT: PASS_ON_LOCKED_SNAPSHOT_BY_INDEPENDENT_NOTEBOOKLM
 CONTENT_READY: NO
 RELEASE_AUTHORIZATION: NO
 MASTERY_ACTIVATION: NO
 OFFICIAL_READINESS: NOT_CLAIMED
 RD1_PRIVATE_COUNT: 0
 ASSESSMENT_MODE: PUBLIC_REVIEW_CLIENT_SELF_CHECK_NO_MASTERY_CANDIDATE
-BLOCKED_BY_AUTHORING: Q18_FOUR_MARKDOWN_SHA_MISMATCH; OFFICIAL_Q_GATE_NAME_CROSSWALK; V2_YEAR_END_PACKET_TYPE_UNAPPROVED
+BLOCKED_BY_AUTHORING: V2_YEAR_END_PACKET_TYPE_OWNER_DECISION_REQUIRED
 
 ## 1. S1 evidence: original book actually inspected (not inferred)
 - Original scanned **SGK Toán 12 KNTT Tập Hai**, 99 PDF pages; SHA256 `3c642f2e80d86d699ea62bbcabd0c3074fd5118def96e4b3b8ce1f9ead7f97bb`. Identical to prior G12 S1 receipt; obtained from existing Math Grade 12 Drive source folder.
@@ -41,7 +41,7 @@ BLOCKED_BY_AUTHORING: Q18_FOUR_MARKDOWN_SHA_MISMATCH; OFFICIAL_Q_GATE_NAME_CROSS
 3. After Academic + PED PASS and A1–A7/Q01–Q18, a **distinct owner decision** is required to route `SGK_YEAR_END_REVIEW_SUPPLEMENT` through V2. The existing V2 gate supports `SGK_CHAPTER` and the owner-approved `SGK_EXPERIENCE_SUPPLEMENT`, **not automatically annual review**. Do not relabel as chapter or experience to force `ready/`.
 4. No handoff V2, no ready manifest, no REGISTER, no website PR, no merge/deploy until appropriate source/receipt and packet-type gates hold. Both RELEASE and Chapter/Topic official Readiness remain separate.
 
-CHECKPOINT: S1_DIRECT_VERIFIED; 6 OUTCOME / 31 CANONICAL R00 SOURCE_CANDIDATE; NOTEBOOKLM_PENDING; CONTENT_READY=NO.
+HISTORICAL_CHECKPOINT_BEFORE_REVIEW: S1_DIRECT_VERIFIED; 6 OUTCOME / 31 CANONICAL R00 SOURCE_CANDIDATE; NOTEBOOKLM_PENDING; CONTENT_READY=NO.
 
 ## 04/11/2026 — independent NotebookLM R00 owner reports received (immutable provenance reconciliation)
 
@@ -49,3 +49,11 @@ CHECKPOINT: S1_DIRECT_VERIFIED; 6 OUTCOME / 31 CANONICAL R00 SOURCE_CANDIDATE; N
 - Direct verification of unchanged R00 ZIP `e2c08924a3c781fa160482a8b387288876a272dd46fe9eab96e2419c69d12beb` **found all four reviewer Markdown SHA256 values inconsistent** with original exact bytes and initial Git blob custody; four PNG SHA256 matched. The reviewer Q02/Q03/Q18 names also do not match the official v1.1.0 standard. See `prototypes/thpt/content-drafts/G12_SGK_YEAREND_R00_NOTEBOOKLM_REVIEW_RECONCILIATION_20261104.md` for byte values and impact.
 - A **targeted metadata/source-fidelity** NotebookLM correction packet is staged at `prototypes/thpt/review-packets/Temp_G12_SGK_YEAREND_R00_Q18_RECEIPT_CORRECTION_20261104.md`. No student source, answer, rubric, figures, item IDs or original reviewer files were modified. This is not DELTA_C; no material academic redraft claimed.
 - `Q18_SOURCE_PARITY=HOLD` until independent reviewer identifies original source Git blob `7274cb3a6c35627f0e23574709cf5cdc355ab46a` and correct R00 file SHA256, maps Q codes to the official standard, and resolves source fidelity. `CONTENT_READY=NO`; V2 `SGK_YEAR_END_REVIEW_SUPPLEMENT` owner permission is a distinct later operational decision; EXP owner approval does not carry over.
+
+## 04/11/2026 — Q18 independent targeted receipt correction received; Q18 HOLD CLOSED
+
+- **Independent correction report uploaded by owner (Studio-generated original source bytes, not an author paraphrase):** `prototypes/thpt/review-packets/G12_YE_R00_NOTEBOOKLM_Q18_CORRECTED_OWNER_REPORT_20261104.md`, SHA256 `03a0af235f238b67e1dcfd05bf185e61ec01720096afd811dbe37f2a4ad4587d`, Git blob `3b5b7f70e3b68895fd976a265ae6f454f774e1cc`. Reviewer re-established the 4 Markdown byte-level SHA256 values, kept all four PNG SHA matches, mapped Q01–Q18 correctly to official v1.1.0 and concluded SOURCE_PARITY=PASS, Q18=PASS, Academic/PED PASS, P0=P1=P2=0, MINIMAL_DELTA=0.
+- Independent reviewed R00 source **unchanged** (Git blob `7274cb3a6c35627f0e23574709cf5cdc355ab46a` / SHA256 `0916e56206570127de02adc6a0016e412536486889d6b7bdeb593f42621e2293`); eight original R00 files verified SHA256+Git blob against ZIP `e2c08924a3c781fa160482a8b387288876a272dd46fe9eab96e2419c69d12beb` and Git. Original R00 NotebookLM two verdicts preserved unmodified; Q18 metadata correction is DELTA_B_SOURCE_EQUIVALENT, no rewritten student mathematics or rubric.
+- **Source fidelity closure QA:** `prototypes/thpt/content-drafts/G12_SGK_YEAREND_R00_Q18_SOURCE_PARITY_CLOSED_20261104.md`, 8/8 provenance table, one official Q01–Q18 map and explicit operational blocker.
+- **One V2 draft handoff, not promoted:** `prototypes/thpt/release-handoffs/G12-SGK-YEAREND-REVIEW-R00_HANDOFF_V2_DRAFT_20261104.md` records 6 lesson IDs, 6 outcomes, 31 public canonical items, their outcome/role mapping and Q01–Q18/PED/A1–A7 evidence, source+review SHA and no RD1/Mastery. No `ready/` manifest and no REGISTER row until the owner separately approves truthful `SGK_YEAR_END_REVIEW_SUPPLEMENT` operational V2 packet type and mechanical QA passes. Prior owner V2 experience authorization does NOT cover year-end review.
+- **Snapshot state:** `ACADEMIC_VERDICT=PASS`, `PEDAGOGICAL_VERDICT=PASS`, `Q18=PASS`, `A1–A7_EVIDENCE_COMPLETE_WITHIN_SCOPE`, `BLOCKED_BY_AUTHORING(V2_YEAR_END_PACKET_TYPE_OWNER_DECISION_REQUIRED)`; `CONTENT_READY=NO`, `RELEASE_AUTHORIZATION=NO`, `MASTERY_ACTIVATION=NO`. No merge/deploy or independent year-end Readiness.
