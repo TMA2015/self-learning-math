@@ -29,13 +29,26 @@ function validate(source, agents, queue) {
  const fail=x=>failures.push(x);
  if(!source.includes("STANDARD_ID:** `SLM-THPT-QUALITY-ONE`"))fail("STANDARD_ID_NOT_EXPLICIT");
  const version=(source.match(/\*\*VERSION:\*\* `(\d+\.\d+\.\d+)`/)||[])[1];
- if(!["1.0.0","1.1.0"].includes(version))fail("VERSION_NOT_LOCKED");
- if(version==="1.1.0"){
+ if(!["1.0.0","1.1.0","1.2.0"].includes(version))fail("VERSION_NOT_LOCKED");
+ if(version==="1.1.0"||version==="1.2.0"){
    for(const token of ["SBT_REFERENCE_GAP_DOCUMENTED","SGK_CORE_AUTHORITY","REFERENCE_EXERCISE","ORIGINAL_AUTHORED","STANDARD_CHANGE_REQUEST_Q01_SOURCE_ROLES_20261103"]){
      if(!source.includes(token))fail("Q01_V1_1_MISSING_CONTROL:"+token);
    }
  }
- if(!source.includes("OFFICIAL_OWNER_APPROVED_MAIN") && !source.includes("OWNER_APPROVED_Q01_REVISION_PENDING_GOVERNANCE_QA_MERGE"))fail("OWNER_APPROVAL_RECEIPT_MISSING");
+ if(version==="1.2.0"){
+   const required=["## II-B. Diễn giải áp dụng Q03/Q04/Q07/Q08/Q09–Q14/Q17 qua cùng AP1–AP5 — bổ sung v1.2.0",
+     "## X-B. Quyết định hợp nhất trải nghiệm tự học — Change Log 04/11/2026",
+     "OWNER_APPROVED_EFFECTIVE_UPON_GOVERNANCE_MERGE",
+     "1.1.0 → 1.2.0","LEARNER_EVIDENCE_PENDING",
+     "Issue #742", "DELTA_C_ACADEMIC_MATERIAL",
+     "Q09", "Q10", "Q11", "Q12", "Q13", "Q14",
+     "AP1","AP2","AP3","AP4","AP5",
+     "không phát sinh tiêu chí toán mới"];
+   for(const token of required)if(!source.includes(token))fail("UX_PED_V1_2_MISSING_CONTROL:"+token);
+ }
+ if(!source.includes("OFFICIAL_OWNER_APPROVED_MAIN") &&
+    !source.includes("OWNER_APPROVED_Q01_REVISION_PENDING_GOVERNANCE_QA_MERGE") &&
+    !source.includes("OWNER_APPROVED_EFFECTIVE_UPON_GOVERNANCE_MERGE"))fail("OWNER_APPROVAL_RECEIPT_MISSING");
  for(const heading of REQUIRED_SECTIONS)if(!source.includes(heading))fail("MISSING_SECTION:"+heading);
  const tableStart=source.indexOf("## II. Ma trận chuẩn chất lượng duy nhất Q01–Q18");
  const tableEnd=source.indexOf("## III.",tableStart);
@@ -71,9 +84,15 @@ function selfTest(){
  assert.equal(a.status,"STANDARD_SCHEMA_PASS_NOT_ACADEMIC_PASS",a.failures.join(";"));
  let bad=full.replace("| **Q18 Review/fidelity**","| **Q17 Review/fidelity**");
  assert(validate(bad,"","").failures.some(e=>e.startsWith("Q01_Q18_MATRIX")));
- if(/\*\*VERSION:\*\* `1\.1\.0`/.test(full)){
+ if(/\*\*VERSION:\*\* `1\.(?:1|2)\.0`/.test(full)){
    assert(validate(full.replaceAll("SBT_REFERENCE_GAP_DOCUMENTED","SBT_REF_GAP_DELETED"),"","").failures.some(e=>e.startsWith("Q01_V1_1_MISSING_CONTROL")));
-   assert(validate(full.replace("**VERSION:** `1.1.0`","**VERSION:** `9.9.9`"),"","").failures.includes("VERSION_NOT_LOCKED"));
+ }
+ if(/\*\*VERSION:\*\* `1\.2\.0`/.test(full)){
+   assert(validate(full.replace("## II-B. Diễn giải áp dụng", "## II-B. [REMOVED]"),"","").failures.some(e=>e.startsWith("UX_PED_V1_2_MISSING_CONTROL")));
+   assert(validate(full.replace("OWNER_APPROVED_EFFECTIVE_UPON_GOVERNANCE_MERGE","NO_OWNER_APPROVAL"),"","").failures.some(e=>e.startsWith("UX_PED_V1_2_MISSING_CONTROL")));
+ }
+ {
+   assert(validate(full.replace(/\*\*VERSION:\*\* `\d+\.\d+\.\d+`/,"**VERSION:** `9.9.9`"),"","").failures.includes("VERSION_NOT_LOCKED"));
  }
  console.log("PASS governance-only preflight: one standard version, owner decision, Q01 source roles, missing evidence, duplicate Q and negative invalid version (NOT Academic/PED PASS)");
 }
