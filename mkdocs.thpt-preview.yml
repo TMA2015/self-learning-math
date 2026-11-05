@@ -173,6 +173,13 @@ nav:
               - Bài 10 · Phương sai và độ lệch chuẩn: thpt-preview/sgk/lop-12/chuong-iii/bai-10.md
               - Core và Luyện tập Bài 9–10: thpt-preview/sgk/lop-12/chuong-iii/luyen-tap.md
               - Tự kiểm tra cuối Chương III · Tự đối chiếu: thpt-preview/sgk/lop-12/chuong-iii/tu-kiem-tra-chuong.md
+          - Chương IV · Nguyên hàm và tích phân:
+              - Tổng quan Chương IV: thpt-preview/sgk/lop-12/chuong-iv.md
+              - Bài 11 · Nguyên hàm: thpt-preview/sgk/lop-12/chuong-iv/bai-11.md
+              - Bài 12 · Tích phân: thpt-preview/sgk/lop-12/chuong-iv/bai-12.md
+              - Bài 13 · Ứng dụng của tích phân: thpt-preview/sgk/lop-12/chuong-iv/bai-13.md
+              - Core và Luyện tập Chương IV: thpt-preview/sgk/lop-12/chuong-iv/luyen-tap.md
+              - Tự kiểm tra cuối Chương IV: thpt-preview/sgk/lop-12/chuong-iv/tu-kiem-tra-chuong.md
   - Học theo chuyên đề:
       - Tổng quan chuyên đề: thpt-preview/chuyen-de/index.md
       - Hàm số và đồ thị:
@@ -231,6 +238,7 @@ extra_css:
   - assets/stylesheets/thpt-g12-chi-b01-b05-r00.css
   - assets/stylesheets/thpt-g12-chii-b06-b08-r00.css
   - assets/stylesheets/thpt-g12-chiii-b09-b10-r00.css
+  - assets/stylesheets/thpt-g12-chiv-b11-b13-r00.css
   - assets/stylesheets/thpt-chvi-d6-reviewed-r01.css
   - assets/stylesheets/thpt-g10-reviewed-selfcheck-v1.css
 extra_javascript:
@@ -299,3 +307,4 @@ extra_javascript:
   - assets/javascripts/thpt-g12-chi-b01-b05-r00.js
   - assets/javascripts/thpt-g12-chii-b06-b08-r00.js
   - assets/javascripts/thpt-g12-chiii-b09-b10-r00.js
+  - assets/javascripts/thpt-g12-chiv-b11-b13-r00.js
