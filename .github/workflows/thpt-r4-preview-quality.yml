@@ -36,6 +36,7 @@ on:
       - 'docs/assets/data/thpt-g10-readiness/**'
       - 'scripts/test-thpt-g10-reviewed-selfcheck-data.cjs'
       - 'scripts/test-thpt-g10-reviewed-selfcheck-browser.cjs'
+      - 'scripts/test-thpt-g10-all9-math-presentation-browser.cjs'
       - 'docs/assets/stylesheets/thpt-self-check-qa-v1.css'
       - 'scripts/test-thpt-self-check-qa-browser.cjs'
       - 'docs/assets/javascripts/floating-ai-tutor-v1.js'
@@ -202,6 +203,7 @@ jobs:
           node --check scripts/test-thpt-self-check-qa-browser.cjs
           node --check scripts/test-thpt-g10-reviewed-selfcheck-data.cjs
           node --check scripts/test-thpt-g10-reviewed-selfcheck-browser.cjs
+          node --check scripts/test-thpt-g10-all9-math-presentation-browser.cjs
           node --check scripts/test-thpt-g10-chii-browser-smoke.cjs
           node --check scripts/test-thpt-g10-chiii-browser-smoke.cjs
           node --check scripts/test-thpt-g10-chiv-b07-b08-browser-smoke.cjs
@@ -370,6 +372,8 @@ jobs:
         run: node scripts/test-thpt-g10-reviewed-selfcheck-data.cjs
       - name: G10 9-chapter source-locked Final Submit · phone/tablet/desktop
         run: node scripts/test-thpt-g10-reviewed-selfcheck-browser.cjs
+      - name: G10 all 9 chapters Core and Self-check math · 390 / 820 / 1440 · no Q16 leak
+        run: node scripts/test-thpt-g10-all9-math-presentation-browser.cjs
       - name: G11 ChI R03 source-locked Final Submit · 20 Written / three viewports
         run: |
           node --check docs/assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js
