@@ -59,6 +59,14 @@ const counts=[11,12,14,14,15],helpc=[6,6,6,7,7],figurec=[1,1,1,2,1];
      assert.equal(await lesson.locator(".g12-chi-hub-group").count(),2);
     }
     const core=hub.locator("#b01-core");
+    const cardLayout=await core.locator(":scope > summary").evaluate(el=>{
+     const style=getComputedStyle(el),rects=[...el.children].map(c=>c.getBoundingClientRect());
+     return {display:style.display,flow:style.flexDirection,stack:rects.every((r,i)=>!i||r.top>=rects[i-1].bottom-1),
+      contained:rects.every(r=>r.right<=el.getBoundingClientRect().right+2)};
+    });
+    assert.equal(cardLayout.display,"flex","G12 Core card CSS must override MkDocs Material summary styles");
+    assert.equal(cardLayout.flow,"column","G11-style stacked Core card hierarchy");
+    assert(cardLayout.stack&&cardLayout.contained,"Core labels and action do not overlap");
     assert.equal(await core.getAttribute("open"),null,"Groups collapsed by default");
     await core.locator("summary").click();
     assert.notEqual(await core.getAttribute("open"),null,"Core opens");
@@ -90,6 +98,9 @@ const counts=[11,12,14,14,15],helpc=[6,6,6,7,7],figurec=[1,1,1,2,1];
     const root=page.locator('[data-g12-chi-selfcheck="END"]');
     await page.waitForFunction(()=>document.querySelector("[data-g12-chi-selfcheck]")?.dataset.g12ChiReady==="true",null,{timeout:30000});
     assert.equal(await root.locator(".g12-chi-selfcheck-item").count(),12,"12 original PUBLIC end items");
+    assert.equal(await root.locator(".g12-chi-quiz-jump").count(),12,"G11-style numbered navigation");
+    assert.equal(await root.locator(".g12-chi-selfcheck-item:visible").count(),1,"One visible question before Final Submit");
+    assert.equal(await root.locator(".g12-chi-quiz-progress").innerText(),"Câu 1 / 12 · Chưa nộp");
     assert.equal(await root.locator(".g12-chi-answer:not([hidden])").count(),0);
     assert.equal(await root.locator(".g12-chi-help").count(),0,"Never reveal D6 before Final Submit");
     const btn=root.locator("button[data-g12-chi-final]");
@@ -97,12 +108,21 @@ const counts=[11,12,14,14,15],helpc=[6,6,6,7,7],figurec=[1,1,1,2,1];
     await root.locator("textarea").first().fill("Tự thử");
     await btn.click();assert.equal(await root.locator(".g12-chi-answer:not([hidden])").count(),0);
     const inputs=await root.locator(".g12-chi-selfcheck-item textarea").all();
-    for(const [i,el]of inputs.entries())await el.fill("Lập luận câu "+(i+1));
+    for(const [i,x]of inputs.entries()){
+     await root.locator(".g12-chi-quiz-jump").nth(i).click();
+     assert.equal(await root.locator(".g12-chi-selfcheck-item:visible").count(),1,"Only selected question visible");
+     await x.fill("Lập luận câu "+(i+1));
+    }
+    await root.locator(".g12-chi-quiz-jump").first().click();
+    assert.equal(await inputs[0].inputValue(),"Lập luận câu 1","Draft retained when navigating");
     await btn.click();
     assert.equal(await root.locator(".g12-chi-answer:not([hidden])").count(),12,"Only after full Final Submit");
     assert.equal(await btn.isDisabled(),true);
     assert.equal(await root.locator(".g12-chi-help").count(),4,"END D6 only post-submit");
     assert.equal(await root.locator("textarea:disabled").count(),12);
+    assert.equal(await root.locator(".g12-chi-selfcheck-item:visible").count(),1,"One visible question after Final Submit");
+    await root.locator(".g12-chi-quiz-jump").last().click();
+    assert.equal(await root.locator(".g12-chi-answer:visible").count(),1,"Reveal only active question result after Final Submit");
     assert((await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth))<=20);
     console.log("PASS G12 ChI "+viewport.width+"px: 5 knowledge-only lessons, separate 66-item chapter hub, 32 D6, 6 SVG; 12 END Q16.");
    }finally{await page.close()}

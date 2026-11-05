@@ -206,6 +206,9 @@ const startSelfCheck=(root,bank)=>{
  if(bank.end_references.length!==16)throw Error("Missing original end references");
  root.append(mk("h3","","16 câu · Tự kiểm tra cuối chương"));
  root.append(paragraph("Đây là 16 câu Luyện tập công khai đã học trước đó. Hãy tự giải trước, sau khi hoàn tất mới được xem đáp án. Không tính điểm hoặc ghi Mastery."));
+ const progress=mk("p","g12-chii-quiz-progress"),nav=mk("nav","g12-chii-quiz-nav");
+ nav.setAttribute("aria-label","Chọn câu hỏi tự kiểm tra");root.append(progress,nav);
+ let cursor=0,submitted=false;
  const entries=[];
  for(const ref of bank.end_references){
   const q=map.get(ref.item_id);if(!q||q.role!=="PRACTICE"||q.outcome_id!==ref.outcome_id)throw Error("Wrong canonical end reference");
@@ -213,15 +216,37 @@ const startSelfCheck=(root,bank)=>{
   const inp=mk("textarea","g12-chii-input");inp.rows=4;inp.setAttribute("aria-label","Trả lời câu "+ref.position);
   const answer=mk("section","g12-chii-answer");answer.hidden=true;
   c.append(mk("h4","","Câu "+ref.position+" / 16"),paragraph(q.stem),inp,answer);
-  root.append(c);entries.push({q,ref,input:inp,answer});
+  root.append(c);entries.push({card:c,q,ref,input:inp,answer});
  }
+
+ const jumpButtons=entries.map((_,i)=>{
+  const el=mk("button","g12-chii-quiz-jump",String(i+1));el.type="button";
+  el.dataset.g12ChiiJump=String(i);el.setAttribute("aria-label","Đến câu "+(i+1));
+  nav.append(el);return el;
+ });
+ const prev=mk("button","g12-chii-quiz-step","Câu trước"),next=mk("button","g12-chii-quiz-step","Câu tiếp");
+ prev.type=next.type="button";
+ const showQuestion=()=>{
+  entries.forEach(({card},i)=>{card.hidden=i!==cursor});
+  jumpButtons.forEach((b,i)=>{
+   b.classList.toggle("is-current",cursor===i);
+   if(cursor===i)b.setAttribute("aria-current","step");else b.removeAttribute("aria-current");
+  });
+  progress.textContent="Câu "+(cursor+1)+" / "+entries.length+(submitted?" · Đã nộp":" · Chưa nộp");
+  prev.disabled=cursor===0;next.disabled=cursor===entries.length-1;
+  typeset(entries[cursor].card);
+ };
+ jumpButtons.forEach((b,i)=>b.addEventListener("click",()=>{cursor=i;showQuestion()}));
+ prev.addEventListener("click",()=>{if(cursor>0){cursor--;showQuestion()}});
+ next.addEventListener("click",()=>{if(cursor<entries.length-1){cursor++;showQuestion()}});
  const button=mk("button","g12-chii-submit g12-chii-final","Final Submit — Tự đối chiếu");button.type="button";button.dataset.g12ChiiFinal="";
  const status=mk("p","g12-chii-feedback");
  button.addEventListener("click",()=>{
   if(button.disabled)return;
   const missing=entries.filter(x=>!x.input.value.trim()).length;
-  if(missing){status.textContent="Còn "+missing+" câu chưa có bài làm. Hãy thử giải đủ 16 câu trước Final Submit.";return}
-  button.disabled=true;
+  if(missing){status.textContent="Còn "+missing+" câu chưa có bài làm. Hãy thử giải đủ 16 câu trước Final Submit.";
+   cursor=entries.findIndex(x=>!x.input.value.trim());showQuestion();return}
+  button.disabled=true;submitted=true;
   entries.forEach(({q,ref,input,answer})=>{
    input.disabled=true;answer.hidden=false;
    answer.append(mk("h5","","Đối chiếu sau Final Submit"));showLines(answer,q.answer);showLines(answer,q.solution);
@@ -234,9 +259,10 @@ const startSelfCheck=(root,bank)=>{
    }
   });
   status.textContent="Đã Final Submit. Đây là tự đối chiếu sau khi làm, không chấm điểm, không ghi Mastery.";
-  typeset(root);
+  showQuestion();typeset(root);
  });
- root.append(button,status);typeset(root);
+ const controls=mk("div","g12-chii-quiz-controls");controls.append(prev,next,button);
+ root.append(controls,status);showQuestion();typeset(root);
 };
 const start=async()=>{
  const root=document.querySelector("[data-g12-chii-hub], [data-g12-chii-selfcheck]");
