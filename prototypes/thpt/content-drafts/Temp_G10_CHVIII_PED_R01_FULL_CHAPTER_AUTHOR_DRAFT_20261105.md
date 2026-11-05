@@ -73,14 +73,14 @@ Chương VIII hiện có 3 bài D1–D6, 25 câu formative/3 Written, một SVG 
 
 **PED5 — Lý do chọn phương pháp, điều kiện và giới hạn:** Tìm các bước 'và' phải làm đủ; ghi số khả năng mỗi bước, kiểm xem chúng có phụ thuộc lựa chọn trước không, rồi nhân nếu cố định.
 
-**PED6 — Tự thử trước Core** (item_id `THPT-G10-CHVIII-TRY02`; outcome `G10-B23-MULTIPLICATION`; `SGK_PRE_CORE_FIRST_TRY`; unscored/no mastery): Có 3 áo phân biệt và 2 quần phân biệt, chọn một bộ gồm một áo và một quần. Có bao nhiêu bộ?
+**PED6 — Tự thử trước Core** (item_id `THPT-G10-CHVIII-TRY02`; outcome `G10-B23-MULTIPLICATION`; `SGK_PRE_CORE_FIRST_TRY`; unscored/no mastery): Có 4 loại bánh mì khác nhau và 3 loại nhân; mỗi suất gồm đúng một loại bánh và một loại nhân. Có bao nhiêu suất?
 
 <details>
 <summary>Tự mở đáp án sau khi đã tự làm</summary>
 
-**Đáp án:** 6 bộ.
+**Đáp án:** 12 suất.
 
-**Lập luận:** Mỗi trong 3 áo ghép được với cả 2 quần: 3×2=6 cặp; không bỏ sót hay lặp cặp nào.
+**Lập luận:** Mỗi trong 4 loại bánh ghép được với 3 loại nhân: 4×3=12 cặp phân biệt; không bỏ sót hay đếm trùng.
 
 **Nếu chưa đúng:** xem D6 `HELP-G10-CHVIII-TRY02`, sau đó luyện bài canonical `THPT-G10-B23-C02` trong ngân hàng đã review (không tính lại câu đã xem lời giải thành Readiness).
 
@@ -88,7 +88,7 @@ Chương VIII hiện có 3 bài D1–D6, 25 câu formative/3 Written, một SVG 
 
 #### D6 — HELP-G10-CHVIII-TRY02 (năm bước khắc phục cùng kỹ năng)
 
-1. **Nhận diện lỗi:** Nếu cộng 3+2, em đang đếm một chiếc áo HOẶC một chiếc quần, không phải một bộ gồm cả hai.
+1. **Nhận diện lỗi:** Nếu cộng 4+3, em đang đếm chọn một loại bánh HOẶC một loại nhân, chứ không phải suất gồm cả hai.
 2. **Quay lại bản chất:** Quy tắc nhân đếm các đường đi hoàn chỉnh qua nhiều bước: mỗi lựa chọn của bước trước có số lựa chọn tiếp theo tương ứng; khi cùng số cách, tổng số là tích.
 3. **Tự làm lại:** Liệt kê (A1,Q1),(A1,Q2), ... cho 3 áo và 2 quần; kiểm đủ 6 lá.
 4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không cộng điểm/Mastery.
@@ -116,7 +116,7 @@ Chương VIII hiện có 3 bài D1–D6, 25 câu formative/3 Written, một SVG 
 
 **Lập luận:** Hàng chục có 3 cách (1,2,3); với mỗi cách, hàng đơn vị còn 3 chữ số trong tập 0..3 nên 3×3=9. Ví dụ 10,12,13,20,21,23,30,31,32.
 
-**Nếu chưa đúng:** xem D6 `HELP-G10-CHVIII-TRY03`, sau đó luyện bài canonical `THPT-G10-B23-P01` trong ngân hàng đã review (không tính lại câu đã xem lời giải thành Readiness).
+**Nếu chưa đúng:** xem D6 `HELP-G10-CHVIII-TRY03`, sau đó luyện bài canonical `THPT-G10-B23-P05` trong ngân hàng đã review (không tính lại câu đã xem lời giải thành Readiness).
 
 </details>
 
@@ -126,7 +126,7 @@ Chương VIII hiện có 3 bài D1–D6, 25 câu formative/3 Written, một SVG 
 2. **Quay lại bản chất:** Đếm một số là hoàn tất hai bước hàng chục → hàng đơn vị; điều kiện 'không lặp' làm số lựa chọn bước thứ hai phụ thuộc chữ số đã chọn, nhưng còn đúng một số lượng bằng nhau cho mọi chọn ở bước đầu.
 3. **Tự làm lại:** Viết ngay hàng chục 1,2,3 và đếm nhánh hàng đơn vị tương ứng, không điền 0 vào đầu.
 4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không cộng điểm/Mastery.
-5. **Luyện tiếp:** `THPT-G10-B23-P01`, câu canonical đã review, phù hợp `G10-B23-DIGIT_COUNT`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
+5. **Luyện tiếp:** `THPT-G10-B23-P05`, câu canonical đã review, phù hợp `G10-B23-DIGIT_COUNT`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
 
 
 ### G10-B23-CASE_SPLIT — Tách trường hợp để xử lý điều kiện chẵn lẻ
@@ -299,26 +299,26 @@ Chương VIII hiện có 3 bài D1–D6, 25 câu formative/3 Written, một SVG 
 5. **Luyện tiếp:** `THPT-G10-B24-P04`, câu canonical đã review, phù hợp `G10-B24-CONSTRAINTS`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
 
 
-### G10-B25-NEWTON_EXPANSION — Hệ số Nhị thức Newton xuất phát từ số lần chọn hạng tử
+### G10-B25-NEWTON_EXPANSION — Từ năm nhân tử đến hệ số Newton
 
-**PED1 — Vì sao cần học:** Khai triển (a+b)⁴ bằng phép nhân trực tiếp dài; ta cần biết một đơn thức a²b² có thể xuất hiện mấy lần trong bốn nhân tử.
+**PED1 — Vì sao cần học:** Khai triển (a+b)⁵ bằng nhân từng cặp dài; hãy hiểu vì sao hệ số của a³b² xuất hiện nhiều lần.
 
-**PED2 — Tiền đề:** Ôn quy tắc nhân các nhị thức và C₄²; trong mỗi nhân tử (a+b), chọn a hoặc chọn b.
+**PED2 — Tiền đề:** Ôn C₅² là số cách chọn 2 vị trí khác nhau trong 5 vị trí; từ mỗi nhân tử (a+b), lấy a hoặc b.
 
-**PED3 — Hiểu bản chất trước công thức:** Đơn thức a²b² xuất hiện khi chọn b đúng hai trong bốn nhân tử, còn hai nhân tử chọn a. Có C₄²=6 cách chọn vị trí b nên hệ số bằng 6, không phải con số cần học thuộc.
+**PED3 — Hiểu bản chất trước công thức:** Đơn thức a³b² xuất hiện khi chọn b từ đúng hai trong năm nhân tử; ba nhân tử còn lại chọn a. Có C₅²=10 cách chọn vị trí b.
 
-**PED4 — Hướng dẫn đọc hình/sơ đồ:** Vẽ bốn ô (a+b), tô hai ô chọn b, hai ô chọn a, để thấy các cặp vị trí b có 6 cách.
+**PED4 — Hướng dẫn đọc hình/sơ đồ:** Vẽ năm ô (a+b), đánh dấu hai ô lấy b, ba ô lấy a; đổi cặp ô đánh dấu cho các tích cùng a³b².
 
-**PED5 — Lý do chọn phương pháp, điều kiện và giới hạn:** Trong SGK Core giới hạn n=4 hoặc n=5. Số mũ của a và b phải cộng bằng n; hệ số của a^(n−k)b^k là C(n,k). Không ép các bài n lớn mở rộng vào Core.
+**PED5 — Lý do chọn phương pháp, điều kiện và giới hạn:** Với SGK Core n=4 hoặc n=5, số mũ của a và b cộng bằng n. Hệ số a^(n−k)b^k bằng C(n,k); không dùng n lớn làm nội dung bắt buộc.
 
-**PED6 — Tự thử trước Core** (item_id `THPT-G10-CHVIII-TRY09`; outcome `G10-B25-NEWTON_EXPANSION`; `SGK_PRE_CORE_FIRST_TRY`; unscored/no mastery): Trong khai triển (a+b)⁴, hệ số của a²b² là bao nhiêu? Vì sao?
+**PED6 — Tự thử trước Core** (item_id `THPT-G10-CHVIII-TRY09`; outcome `G10-B25-NEWTON_EXPANSION`; `SGK_PRE_CORE_FIRST_TRY`; unscored/no mastery): Trong khai triển (a+b)⁵, hệ số của a³b² là bao nhiêu? Giải thích bằng cách chọn nhân tử.
 
 <details>
 <summary>Tự mở đáp án sau khi đã tự làm</summary>
 
-**Đáp án:** 6.
+**Đáp án:** 10.
 
-**Lập luận:** Cần chọn b trong 2 trên 4 nhân tử (a+b), có C₄²=4!/(2!2!)=6 cách, còn lại đều chọn a.
+**Lập luận:** Chọn hai trong năm nhân tử cho b theo C₅²=5!/(2!3!)=10 cách; ba nhân tử còn lại cho a.
 
 **Nếu chưa đúng:** xem D6 `HELP-G10-CHVIII-TRY09`, sau đó luyện bài canonical `THPT-G10-B25-C01` trong ngân hàng đã review (không tính lại câu đã xem lời giải thành Readiness).
 
@@ -326,9 +326,9 @@ Chương VIII hiện có 3 bài D1–D6, 25 câu formative/3 Written, một SVG 
 
 #### D6 — HELP-G10-CHVIII-TRY09 (năm bước khắc phục cùng kỹ năng)
 
-1. **Nhận diện lỗi:** Nếu đáp 4, em nhầm số mũ của b với số cách chọn hai vị trí; nếu 12, em đếm thứ tự hai vị trí b không cần thiết.
-2. **Quay lại bản chất:** Đơn thức a²b² xuất hiện khi chọn b đúng hai trong bốn nhân tử, còn hai nhân tử chọn a. Có C₄²=6 cách chọn vị trí b nên hệ số bằng 6, không phải con số cần học thuộc.
-3. **Tự làm lại:** Vẽ bốn ô, khoanh các cặp vị trí (1,2),(1,3),(1,4),(2,3),(2,4),(3,4).
+1. **Nhận diện lỗi:** Nếu đáp 5, em nhầm số mũ với số cách chọn; nếu 20, em đếm thứ tự hai vị trí b không cần thiết.
+2. **Quay lại bản chất:** Đơn thức a³b² xuất hiện khi chọn b từ đúng hai trong năm nhân tử; ba nhân tử còn lại chọn a. Có C₅²=10 cách chọn vị trí b.
+3. **Tự làm lại:** Vẽ năm vị trí, đánh dấu hai vị trí b hoặc tính C₅².
 4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không cộng điểm/Mastery.
 5. **Luyện tiếp:** `THPT-G10-B25-C01`, câu canonical đã review, phù hợp `G10-B25-NEWTON_EXPANSION`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
 
@@ -367,26 +367,26 @@ Chương VIII hiện có 3 bài D1–D6, 25 câu formative/3 Written, một SVG 
 5. **Luyện tiếp:** `THPT-G10-B25-P03`, câu canonical đã review, phù hợp `G10-B25-COEFFICIENT_SIGN`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
 
 
-### G10-B25-CONSTANT_TERM — Số hạng không chứa x: cân bằng số mũ
+### G10-B25-CONSTANT_TERM — Số hạng tự do chỉ khi không chọn thừa số có x
 
-**PED1 — Vì sao cần học:** Trong khai triển có cả x và 1/x, một tích có thể triệt tiêu lũy thừa x; nhận ra số hạng không chứa x cần xem tổng số mũ chứ không nhìn riêng từng nhân tử.
+**PED1 — Vì sao cần học:** Trong (2x+3)⁴, không cần khai triển hết để biết số hạng không chứa x: chỉ cần nhận ra tích nào không lấy 2x lần nào.
 
-**PED2 — Tiền đề:** Ôn x^a·x^b=x^(a+b) với x≠0 khi có lũy thừa âm; giữ đúng phạm vi nhị thức n=4 hoặc n=5 của SGK.
+**PED2 — Tiền đề:** Ôn mỗi nhân tử (2x+3) cho hai lựa chọn 2x hoặc 3; số mũ x là số lần chọn 2x.
 
-**PED3 — Hiểu bản chất trước công thức:** Khi lấy k lần 1/x và 4−k lần x từ (x+1/x)⁴, số mũ tổng là (4−k)−k=4−2k. Số hạng không chứa x khi số mũ bằng 0.
+**PED3 — Hiểu bản chất trước công thức:** Số hạng không chứa x đòi số mũ x bằng 0: lấy 3 ở tất cả bốn nhân tử. Đây là phạm vi SGK Core n=4; biểu thức 1/x hoặc n lớn thuộc phần hỗ trợ/mở rộng, không bắt làm Tự thử bắt buộc.
 
-**PED4 — Hướng dẫn đọc hình/sơ đồ:** Vẽ bốn ô chọn x hoặc 1/x; có đúng hai x và hai 1/x thì tích các lũy thừa bằng x⁰=1.
+**PED4 — Hướng dẫn đọc hình/sơ đồ:** Vẽ bốn ô (2x+3) và khoanh 3 trong cả bốn ô, thấy tích 3⁴ không có x.
 
-**PED5 — Lý do chọn phương pháp, điều kiện và giới hạn:** Đặt số mũ x trong hạng tổng quát bằng 0 rồi giải k nguyên từ 0 đến n. Không dùng x=0 vì 1/x không xác định; bài nâng cao n lớn không coi Core.
+**PED5 — Lý do chọn phương pháp, điều kiện và giới hạn:** Dùng số hạng C(4,k)(2x)^k·3^(4−k), cho k=0; không giải bài có số mũ âm ngoài phạm vi SGK Core.
 
-**PED6 — Tự thử trước Core** (item_id `THPT-G10-CHVIII-TRY11`; outcome `G10-B25-CONSTANT_TERM`; `SGK_PRE_CORE_FIRST_TRY`; unscored/no mastery): Với x≠0, số hạng không chứa x trong (x+1/x)⁴ có giá trị bao nhiêu?
+**PED6 — Tự thử trước Core** (item_id `THPT-G10-CHVIII-TRY11`; outcome `G10-B25-CONSTANT_TERM`; `SGK_PRE_CORE_FIRST_TRY`; unscored/no mastery): Trong khai triển (2x+3)⁴, số hạng không chứa x bằng bao nhiêu?
 
 <details>
 <summary>Tự mở đáp án sau khi đã tự làm</summary>
 
-**Đáp án:** 6.
+**Đáp án:** 81.
 
-**Lập luận:** Chọn k lần 1/x cho số mũ 4−2k=0 ⇒ k=2. Hệ số là C₄²=6, mỗi tích bằng x²·x⁻²=1.
+**Lập luận:** Chọn 3 từ cả bốn nhân tử: C₄⁰(2x)⁰3⁴=81. Với k≥1, số hạng chứa x^k nên không là hằng số.
 
 **Nếu chưa đúng:** xem D6 `HELP-G10-CHVIII-TRY11`, sau đó luyện bài canonical `THPT-G10-B25-P07` trong ngân hàng đã review (không tính lại câu đã xem lời giải thành Readiness).
 
@@ -394,33 +394,33 @@ Chương VIII hiện có 3 bài D1–D6, 25 câu formative/3 Written, một SVG 
 
 #### D6 — HELP-G10-CHVIII-TRY11 (năm bước khắc phục cùng kỹ năng)
 
-1. **Nhận diện lỗi:** Nếu chỉ chọn một hoặc ba 1/x, số mũ x chưa triệt tiêu; nếu quên x≠0, biểu thức gốc không có nghĩa.
-2. **Quay lại bản chất:** Khi lấy k lần 1/x và 4−k lần x từ (x+1/x)⁴, số mũ tổng là (4−k)−k=4−2k. Số hạng không chứa x khi số mũ bằng 0.
-3. **Tự làm lại:** Viết bảng k=0,1,2,3,4 cùng số mũ 4−2k, khoanh k=2.
+1. **Nhận diện lỗi:** Nếu đáp 16, em lấy hệ số bậc x⁴; nếu chỉ 3, em quên tích của cả bốn nhân tử.
+2. **Quay lại bản chất:** Số hạng không chứa x đòi số mũ x bằng 0: lấy 3 ở tất cả bốn nhân tử. Đây là phạm vi SGK Core n=4; biểu thức 1/x hoặc n lớn thuộc phần hỗ trợ/mở rộng, không bắt làm Tự thử bắt buộc.
+3. **Tự làm lại:** Lập bảng k=0,1,2,3,4 và số mũ x là k, chọn k=0.
 4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không cộng điểm/Mastery.
 5. **Luyện tiếp:** `THPT-G10-B25-P07`, câu canonical đã review, phù hợp `G10-B25-CONSTANT_TERM`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
 
 
-### G10-B25-COEFFICIENT_SUM — Tổng hệ số và tổng hệ số bậc lẻ từ thế giá trị
+### G10-B25-COEFFICIENT_SUM — Tổng hệ số bằng giá trị đa thức tại x=1
 
-**PED1 — Vì sao cần học:** Cộng từng hệ số của đa thức dài dễ sai; thay x=1 hoặc x=−1 làm các lũy thừa x đơn giản giúp nhìn cấu trúc.
+**PED1 — Vì sao cần học:** Cộng riêng từng hệ số khai triển (1+2x)⁴ dễ sai; thay x=1 làm mọi lũy thừa x bằng 1.
 
-**PED2 — Tiền đề:** Ôn đa thức P(x)=a₀+a₁x+...+aₙxⁿ; P(1) là tổng mọi hệ số, P(−1) là tổng hệ số bậc chẵn trừ tổng hệ số bậc lẻ.
+**PED2 — Tiền đề:** Nhắc P(x)=a₀+a₁x+...+a₄x⁴ có P(1)=a₀+...+a₄; chỉ dùng n=4 trong học liệu Core này.
 
-**PED3 — Hiểu bản chất trước công thức:** Gọi E là tổng hệ số bậc chẵn, O là tổng hệ số bậc lẻ. P(1)=E+O và P(−1)=E−O, nên O=(P(1)−P(−1))/2. Bài Tự thử dùng n=4, không yêu cầu công thức tổng quát ngoài Core.
+**PED3 — Hiểu bản chất trước công thức:** Thay x=1, tất cả x^k=1 nên giá trị P(1) chính là tổng hệ số. Tách tổng hệ số lẻ/chẵn bằng P(−1) là nhánh mở rộng tự chọn, không thay phần SGK bắt buộc.
 
-**PED4 — Hướng dẫn đọc hình/sơ đồ:** Viết hai cột hệ số ứng với bậc chẵn/lẻ trong (1+x)⁴; khi x đổi từ +1 sang −1 chỉ cột bậc lẻ đổi dấu.
+**PED4 — Hướng dẫn đọc hình/sơ đồ:** Vẽ bảng bậc 0..4 và hệ số tương ứng, rồi cho x=1 để từng hạng đóng góp đúng hệ số của nó.
 
-**PED5 — Lý do chọn phương pháp, điều kiện và giới hạn:** Với P(x)=(1+x)⁴, P(1)=16, P(−1)=0. Nếu chỉ hỏi tổng mọi hệ số thì lấy P(1); muốn tổng hệ số bậc lẻ thì lấy nửa hiệu.
+**PED5 — Lý do chọn phương pháp, điều kiện và giới hạn:** Hỏi tổng mọi hệ số thì tính P(1). Chỉ khi tự chọn học thêm tổng lẻ/chẵn mới dùng (P(1)−P(−1))/2, không dùng bài n=7 nâng cao làm Core.
 
-**PED6 — Tự thử trước Core** (item_id `THPT-G10-CHVIII-TRY12`; outcome `G10-B25-COEFFICIENT_SUM`; `SGK_PRE_CORE_FIRST_TRY`; unscored/no mastery): Trong (1+x)⁴, tổng các hệ số của x có bậc lẻ bằng bao nhiêu?
+**PED6 — Tự thử trước Core** (item_id `THPT-G10-CHVIII-TRY12`; outcome `G10-B25-COEFFICIENT_SUM`; `SGK_PRE_CORE_FIRST_TRY`; unscored/no mastery): Tổng tất cả hệ số của đa thức (1+2x)⁴ là bao nhiêu?
 
 <details>
 <summary>Tự mở đáp án sau khi đã tự làm</summary>
 
-**Đáp án:** 8.
+**Đáp án:** 81.
 
-**Lập luận:** (1+x)⁴=1+4x+6x²+4x³+x⁴; tổng bậc lẻ 4+4=8. Kiểm thêm [P(1)−P(−1)]/2=(16−0)/2=8.
+**Lập luận:** P(x)=(1+2x)⁴, tổng hệ số =P(1)=(1+2)⁴=3⁴=81.
 
 **Nếu chưa đúng:** xem D6 `HELP-G10-CHVIII-TRY12`, sau đó luyện bài canonical `THPT-G10-CHVIII-W25-01` trong ngân hàng đã review (không tính lại câu đã xem lời giải thành Readiness).
 
@@ -428,12 +428,11 @@ Chương VIII hiện có 3 bài D1–D6, 25 câu formative/3 Written, một SVG 
 
 #### D6 — HELP-G10-CHVIII-TRY12 (năm bước khắc phục cùng kỹ năng)
 
-1. **Nhận diện lỗi:** Nếu ra 16, em tính tổng mọi hệ số chứ chưa lọc bậc lẻ; nếu lấy 6, em chọn hệ số x² là bậc chẵn.
-2. **Quay lại bản chất:** Gọi E là tổng hệ số bậc chẵn, O là tổng hệ số bậc lẻ. P(1)=E+O và P(−1)=E−O, nên O=(P(1)−P(−1))/2. Bài Tự thử dùng n=4, không yêu cầu công thức tổng quát ngoài Core.
-3. **Tự làm lại:** Đánh dấu bậc 1 và3, cộng 4+4, rồi thử kiểm bằng P(1),P(−1).
+1. **Nhận diện lỗi:** Nếu đáp 16, em nhầm (1+2x)⁴ với (1+x)⁴, bỏ hệ số 2.
+2. **Quay lại bản chất:** Thay x=1, tất cả x^k=1 nên giá trị P(1) chính là tổng hệ số. Tách tổng hệ số lẻ/chẵn bằng P(−1) là nhánh mở rộng tự chọn, không thay phần SGK bắt buộc.
+3. **Tự làm lại:** Viết rõ P(1)=(1+2·1)⁴ và tính 3⁴; không cần khai triển.
 4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không cộng điểm/Mastery.
 5. **Luyện tiếp:** `THPT-G10-CHVIII-W25-01`, câu canonical đã review, phù hợp `G10-B25-COEFFICIENT_SUM`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
-
 
 
 ## PHẦN B — HỌC LIỆU SGK ĐÃ CÓ, GIỮ NGUYÊN LÀM BỐI CẢNH
