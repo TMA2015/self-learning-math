@@ -16,7 +16,11 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/lop-12/";
    };
    try{
     await open("");
-    assert.equal(await page.locator("a.thpt-r4-tile").count(),2,"ChI and ChII routes available");
+    // Grade 12 navigation grows as new SGK chapters are released. Check known routes, not a frozen tile count.
+    assert((await page.locator("a.thpt-r4-tile").count())>=2,"At least ChI and ChII routes available");
+    for(const route of ["chuong-i/","chuong-ii/"]){
+      assert.equal(await page.locator('a.thpt-r4-tile[href="'+route+'"]').count(),1,"Missing published Grade 12 "+route+" tile");
+    }
     await open("chuong-ii/");
     assert.equal(await page.locator("a.thpt-r4-tile").count(),5,"Three B06–B08 lessons + one hub + END");
     assert.equal(await page.locator('a.thpt-r4-tile[href="luyen-tap/"]').count(),1);
