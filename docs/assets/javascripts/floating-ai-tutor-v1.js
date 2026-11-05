@@ -214,7 +214,8 @@
     let pending = false;
     const refreshContextLabel = () => {
       const context = lessonContext();
-      contextLabel.textContent = (context.selected ? "Đang dùng đoạn đã bôi đen · " : "Đang đọc · ") + context.section;
+      const inExercise=Boolean(activeFormativeDialog()||/\/(?:luyen-tap|bai-tap|core|tu-luan)(?:\/|$)/.test(currentPath()));
+      contextLabel.textContent = (context.selected ? "Đang dùng đoạn đã bôi đen · " : (inExercise?"Đang làm bài · ":"Đang đọc · ")) + context.section;
     };
 
     const setOpen = open => {
@@ -246,7 +247,7 @@
           (/\/chuyen-de\//.test(currentPath()) ? "THPT-TOPIC-KNTT" : "THPT-SGK-KNTT") : "KNTT-Core";
         const question = {
           id: "lesson-" + topicSlug(),
-          question: "ĐOẠN KIẾN THỨC ĐANG ĐỌC\nTrang: " + page.title + "\nMục: " + page.section + "\n\n" + page.text,
+          question: (activeFormativeDialog()?"CÂU HỎI CORE/LUYỆN TẬP CÔNG KHAI ĐANG LÀM":"ĐOẠN KIẾN THỨC ĐANG ĐỌC") + "\nTrang: " + page.title + "\nMục: " + page.section + "\n\n" + page.text,
           tags: { layer: lessonLayer, skill: ["reading-" + topicSlug()] }
         };
         const context = window.RoadmapTutor.buildContext({
