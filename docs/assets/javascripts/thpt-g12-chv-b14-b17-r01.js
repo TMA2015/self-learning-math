@@ -2,7 +2,7 @@
 (()=>{
 "use strict";
 const source=document.currentScript?.src||"";
-const url=new URL("../data/thpt-g12-chv-b11-b13-public-r00.json",source);
+const url=new URL("../data/thpt-g12-chv-b14-b17-public-r01.json",source);
 const mk=(tag,cls,text)=>{
  const n=document.createElement(tag);
  if(cls)n.className=cls;
@@ -194,7 +194,7 @@ const startSelfCheck=(root,bank)=>{
  
  const jumpButtons=entries.map((_,i)=>{
   const button=mk("button","g12-chv-quiz-jump",String(i+1));button.type="button";
-  button.dataset.g12ChivJump=String(i);button.setAttribute("aria-label","Đến câu "+(i+1));
+  button.dataset.g12ChvJump=String(i);button.setAttribute("aria-label","Đến câu "+(i+1));
   nav.append(button);return button;
  });
  const prev=mk("button","g12-chv-quiz-step","Câu trước"),next=mk("button","g12-chv-quiz-step","Câu tiếp");

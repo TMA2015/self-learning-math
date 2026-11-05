@@ -139,6 +139,7 @@ const runtime=read("docs/assets/javascripts/thpt-g12-chv-b14-b17-r01.js");
 const css=read("docs/assets/stylesheets/thpt-g12-chv-b14-b17-r01.css");
 const config=read("mkdocs.thpt-preview.yml");
 assert(runtime.includes("23 câu chính")&&runtime.includes("q.optional_after_b17")&&runtime.includes("submitted=true"));
+assert(runtime.includes("../data/thpt-g12-chv-b14-b17-public-r01.json")&&!runtime.includes("b11-b13-public"));
 assert(runtime.includes("b14-optional")&&runtime.includes("card.hidden=i!==cursor"));
 assert(!/localStorage|sessionStorage|setDoc\(|getFirestore\(/.test(runtime),"No progress/mastery writes");
 assert(!/PRIVATE_RD1|heldout_stem|protectedAnswer/.test(bankText));

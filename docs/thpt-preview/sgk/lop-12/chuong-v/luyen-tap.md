@@ -1,6 +1,6 @@
 # Toán 12 · Chương V · Core và Luyện tập
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">CHƯƠNG V · PHƯƠNG PHÁP TỌA ĐỘ TRONG KHÔNG GIAN</p><p class="thpt-r4-lead">96 câu canonical gồm Core, Luyện tập, Vận dụng, Tự luận /5 và 24 hướng dẫn khắc phục. Core Bài 14 chỉ O01–O06; O07 thuộc nhóm mở rộng sau Bài 17. Hãy tự giải rồi mới nộp từng câu để đối chiếu; không chấm điểm hay ghi Mastery.</p></div>
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">CHƯƠNG V · PHƯƠNG PHÁP TỌA ĐỘ TRONG KHÔNG GIAN</p><p class="thpt-r4-lead">96 câu Core, Luyện tập, Vận dụng và Tự luận có thang tự đối chiếu /5, cùng 24 hướng dẫn ôn tập. Phần mặt phẳng–mặt cầu đặt riêng sau Bài 17, không bắt buộc khi ôn Core Bài 14. Hãy tự giải rồi mới nộp từng câu để đối chiếu; không tính điểm chính thức hoặc ghi nhận mức độ thành thạo.</p></div>
 
 <div class="thpt-r4-screen g12-chv-hub" data-thpt-r4 data-g12-chv-hub aria-label="Core và Luyện tập Chương V"><p>Đang tải câu hỏi đã review...</p></div>
 

@@ -45,4 +45,4 @@ Tâm phát sóng C(0,0,3), R=5m; mặt sàn z=0. Tính bán kính thiết diện
 
 ## 4. Core/Luyện tập dành riêng cho phần mở rộng
 
-<a href="../luyen-tap/#b14-optional">Đến nhóm câu mở rộng sau Bài 17</a>. Các câu C07/P07/A07/W07 là những mục đã có trong ngân hàng nguồn, không tạo đề mới và không ghi Mastery.
+<a href="../luyen-tap/#b14-optional">Đến nhóm câu mở rộng sau Bài 17</a>. Các bài tập ở đây thuộc nguồn học liệu đã được duyệt, dùng để tự luyện thêm; không tính điểm hay ảnh hưởng kết quả học phần bắt buộc.
