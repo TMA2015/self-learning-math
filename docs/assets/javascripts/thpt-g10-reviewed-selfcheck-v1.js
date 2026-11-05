@@ -12,12 +12,47 @@
     if(txt!==undefined)x.textContent=String(txt);
     return x;
   };
+  // DELTA_A_UI: All nine G10 self-check chapters share this safe presentational
+  // formatter. Original reviewed stems, keys, solutions and rubrics remain
+  // unchanged in the exact canonical JSON; only DOM rendering differs.
   const rich=(parent,value)=>{
-    const html=String(value||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")
-      .replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>")
-      .replace(/`([^`]+)`/g,"<code>$1</code>")
-      .replace(/\n/g,"<br>");
-    const x=create("div","g10sc-rich");x.innerHTML=html;parent.append(x);
+    const source=String(value??"");
+    const container=create("div","g10sc-rich");
+    const text=(dst,s)=>{
+      const rows=s.split("\n");
+      rows.forEach((line,i)=>{
+        if(i)dst.append(document.createElement("br"));
+        if(line)dst.append(document.createTextNode(line));
+      });
+    };
+    const math=(expr,display=false)=>{
+      const node=create(display?"div":"span",display?"g10sc-math-display":"g10sc-math-inline");
+      node.textContent=(display?"\\[":"\\(")+expr+(display?"\\]":"\\)");
+      container.append(node);
+    };
+    const chunks=/\$\$[\s\S]+?\$\$|\$[^$\n]+\$|\\\[[\s\S]+?\\\]|\\\([\s\S]+?\\\)|\x60[^\x60\n]+\x60|\*\*[^*\n]+\*\*|\\overrightarrow\{[^}]+\}|\\vec(?:\{[A-Za-z0-9]+\}|[A-Za-z0-9]+)|\\bar(?:\{[A-Za-z0-9]+\}|[A-Za-z0-9]+)/g;
+    let from=0;
+    for(const match of source.matchAll(chunks)){
+      const token=match[0],start=match.index;
+      if(start>from)text(container,source.slice(from,start));
+      if(token.startsWith("$$"))math(token.slice(2,-2),true);
+      else if(token.startsWith("$"))math(token.slice(1,-1));
+      else if(token.startsWith("\\["))math(token.slice(2,-2),true);
+      else if(token.startsWith("\\("))math(token.slice(2,-2));
+      else if(token.startsWith("\x60")){
+        const inner=token.slice(1,-1);
+        // Legacy inline-code TeX commands are mathematical notation; render
+        // them without changing the canonical stored source.
+        if(/\\(?:bar|vec|overrightarrow|Delta|delta|frac|sqrt|mathbb|le|ge|in)\b/.test(inner))math(inner);
+        else{const el=create("code");el.textContent=inner;container.append(el)}
+      }else if(token.startsWith("**")){
+        const strong=create("strong");text(strong,token.slice(2,-2));container.append(strong);
+      }else if(token.startsWith("\\"))math(token);
+      else text(container,token);
+      from=start+token.length;
+    }
+    if(from<source.length)text(container,source.slice(from));
+    parent.append(container);
   };
   const typeset=root=>{
     if(window.MathJax && typeof window.MathJax.typesetPromise==="function"){
