@@ -160,6 +160,9 @@ const startSelfCheck=(root,bank)=>{
  const map=new Map(bank.items.map(q=>[q.item_id,q]));const entries=[];
  root.append(mk("h3","","12 câu · Tự kiểm tra cuối chương"));
  root.append(paragraph("Đây là những câu Vận dụng đã gặp khi học. Hãy làm đủ 12 câu rồi chọn Final Submit để tự đối chiếu. Hoạt động này không phải bài đánh giá độc lập hoặc chấm điểm."));
+ const progress=mk("p","g12-chiii-quiz-progress"),nav=mk("nav","g12-chiii-quiz-nav");
+ nav.setAttribute("aria-label","Chọn câu hỏi tự kiểm tra");
+ root.append(progress,nav);let cursor=0,submitted=false;
  for(const [i,ref]of bank.end_references.entries()){
   const q=map.get(ref.item_id);
   if(!q||q.role!=="SGK_APPLICATION"||q.outcome_id!==ref.outcome_id)throw Error("END reference invalid "+ref.placement_id);
@@ -167,15 +170,36 @@ const startSelfCheck=(root,bank)=>{
   const input=mk("textarea","g12-chiii-input");input.rows=4;input.setAttribute("aria-label","Trả lời câu "+(i+1));
   const result=mk("section","g12-chiii-answer");result.hidden=true;
   box.append(mk("h4","","Câu "+(i+1)+" / 12"),paragraph(q.stem),input,result);
-  root.append(box);entries.push({q,input,result});
+  root.append(box);entries.push({card:box,q,input,result});
  }
- const submit=mk("button","g12-chiii-submit g12-chiii-final","Final Submit — Tự đối chiếu");submit.type="button";submit.dataset.g12ChiiiFinal="";
+ 
+ const jumpButtons=entries.map((_,i)=>{
+  const button=mk("button","g12-chiii-quiz-jump",String(i+1));button.type="button";
+  button.dataset.g12ChiiiJump=String(i);button.setAttribute("aria-label","Đến câu "+(i+1));
+  nav.append(button);return button;
+ });
+ const prev=mk("button","g12-chiii-quiz-step","Câu trước"),next=mk("button","g12-chiii-quiz-step","Câu tiếp");
+ prev.type=next.type="button";
+ const showQuestion=()=>{
+  entries.forEach(({card},i)=>{card.hidden=i!==cursor});
+  jumpButtons.forEach((button,i)=>{
+   button.classList.toggle("is-current",cursor===i);
+   if(cursor===i)button.setAttribute("aria-current","step");else button.removeAttribute("aria-current");
+  });
+  progress.textContent="Câu "+(cursor+1)+" / "+entries.length+(submitted?" · Đã nộp":" · Chưa nộp");
+  prev.disabled=cursor===0;next.disabled=cursor===entries.length-1;
+  typeset(entries[cursor].card);
+ };
+ jumpButtons.forEach((button,i)=>button.addEventListener("click",()=>{cursor=i;showQuestion()}));
+ prev.addEventListener("click",()=>{if(cursor>0){cursor--;showQuestion()}});
+ next.addEventListener("click",()=>{if(cursor<entries.length-1){cursor++;showQuestion()}});
+const submit=mk("button","g12-chiii-submit g12-chiii-final","Final Submit — Tự đối chiếu");submit.type="button";submit.dataset.g12ChiiiFinal="";
  const status=mk("p","g12-chiii-feedback");
  submit.addEventListener("click",()=>{
   if(submit.disabled)return;
   const missing=entries.filter(x=>!x.input.value.trim()).length;
-  if(missing){status.textContent="Còn "+missing+" câu chưa làm. Hãy hoàn thành trước Final Submit.";return}
-  submit.disabled=true;
+  if(missing){status.textContent="Còn "+missing+" câu chưa làm. Hãy hoàn thành trước Final Submit.";cursor=entries.findIndex(x=>!x.input.value.trim());showQuestion();return}
+  submit.disabled=true;submitted=true;
   for(const {q,input,result}of entries){
    input.disabled=true;result.hidden=false;
    result.append(mk("h5","","Đối chiếu sau Final Submit"));lines(result,q.answer);lines(result,q.solution);
@@ -183,9 +207,10 @@ const startSelfCheck=(root,bank)=>{
    if(h){result.append(paragraph("Nếu chưa đúng, hãy xem lại phần kiến thức tương ứng."));
     const a=mk("a","g12-chiii-return","Quay lại Core và hướng dẫn D6");a.href="../luyen-tap/#"+anchor(h.return_item);result.append(a)}
   }
-  status.textContent="Đã nộp bài. Bây giờ em có thể tự đối chiếu lời giải; kết quả không ghi vào hồ sơ đánh giá.";typeset(root);
+  status.textContent="Đã nộp bài. Bây giờ em có thể tự đối chiếu lời giải; kết quả không ghi vào hồ sơ đánh giá.";showQuestion();typeset(root);
  });
- root.append(submit,status);typeset(root);
+ const controls=mk("div","g12-chiii-quiz-controls");controls.append(prev,next,submit);
+ root.append(controls,status);showQuestion();typeset(root);
 };
 const start=async()=>{
  const root=document.querySelector("[data-g12-chiii-hub], [data-g12-chiii-selfcheck]");

@@ -55,6 +55,15 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/lop-12/";
      assert.equal(await section.locator(".g12-chiii-help").count(),6);
     }
     const core=hub.locator("#b09-core");
+     const cardLayout=await core.locator(":scope > summary").evaluate(el=>{
+      const style=getComputedStyle(el),rects=[...el.children].map(x=>x.getBoundingClientRect());
+      return {display:style.display,direction:style.flexDirection,
+       stack:rects.every((r,i)=>!i||r.top>=rects[i-1].bottom-1),
+       within:rects.every(r=>r.right<=el.getBoundingClientRect().right+2)};
+     });
+     assert.equal(cardLayout.display,"flex","Golden Core summary uses flex layout");
+     assert.equal(cardLayout.direction,"column","Golden Core summary uses vertical labels");
+     assert(cardLayout.stack&&cardLayout.within,"Core labels/count/action must not overlap");
     assert.equal(await core.getAttribute("open"),null);
     await core.locator(":scope > summary").click();
     assert.notEqual(await core.getAttribute("open"),null);
@@ -84,6 +93,9 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/lop-12/";
     await page.waitForFunction(()=>document.querySelector("[data-g12-chiii-selfcheck]")?.dataset.g12ChiiiReady==="true",null,{timeout:25000});
     const questions=end.locator(".g12-chiii-selfcheck-item");
     assert.equal(await questions.count(),12);
+     assert.equal(await end.locator(".g12-chiii-quiz-jump").count(),12,"12 Golden numbered jumps");
+     assert.equal(await end.locator(".g12-chiii-selfcheck-item:visible").count(),1,"One question per screen");
+     assert.equal(await end.locator(".g12-chiii-quiz-progress").innerText(),"Câu 1 / 12 · Chưa nộp");
     assert(!/\b(?:PUBLIC RD0|RD1|Outcome)\b/.test(await page.locator(".md-content").innerText()),"Internal assessment metadata must not appear");
     assert.equal(new Set(await questions.evaluateAll(xs=>xs.map(x=>x.dataset.canonicalItem))).size,12);
     assert.equal(await end.locator(".g12-chiii-answer:not([hidden])").count(),0);
@@ -92,10 +104,20 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/lop-12/";
     await submit.click();assert.equal(await end.locator(".g12-chiii-answer:not([hidden])").count(),0);
     await questions.first().locator("textarea").fill("Thử một câu");
     await submit.click();assert.equal(await end.locator(".g12-chiii-answer:not([hidden])").count(),0);
-    for(const [i,ta]of (await questions.locator("textarea").all()).entries())await ta.fill("Bài làm "+(i+1));
+    for(const [i,ta]of (await questions.locator("textarea").all()).entries()){
+      await end.locator(".g12-chiii-quiz-jump").nth(i).click();
+      assert.equal(await end.locator(".g12-chiii-selfcheck-item:visible").count(),1,"One visible END question");
+      await ta.fill("Bài làm "+(i+1));
+     }
+     await end.locator(".g12-chiii-quiz-jump").first().click();
+     assert.equal(await questions.first().locator("textarea").inputValue(),"Bài làm 1","Preserve draft across question navigation");
     await submit.click();assert(await submit.isDisabled());
     assert.equal(await end.locator(".g12-chiii-answer:not([hidden])").count(),12);
     assert.equal(await questions.locator("textarea:disabled").count(),12);
+     assert.equal(await end.locator(".g12-chiii-selfcheck-item:visible").count(),1,"One END question after Final Submit");
+     assert.equal(await end.locator(".g12-chiii-answer:visible").count(),1,"Show only selected submitted answer");
+     await end.locator(".g12-chiii-quiz-jump").last().click();
+     assert.equal(await end.locator(".g12-chiii-answer:visible").count(),1,"Answer follows numbered navigation");
     assert.equal(await end.locator(".g12-chiii-return").count(),12,"D6 returns only post Final Submit");
     assert(!errors.length,"Unexpected JS errors at "+width+": "+errors.slice(0,2));
     console.log("PASS G12 ChIII "+width+"px: 2 lessons, 3 D5 SVG, 48 PUBLIC Core/Practice, 12 D6, protected Final Submit 12/12");
