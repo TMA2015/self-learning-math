@@ -81,7 +81,9 @@ const base="http://127.0.0.1:8765/";
     // Material instant navigation must tear down Tutor when moving from
     // a PUBLIC practice hub to protected independent self-check.
     await page.goto(base+"thpt-preview/sgk/lop-12/chuong-iii/luyen-tap/",{waitUntil:"networkidle",timeout:60000});
-    await page.locator('a[href*="tu-kiem-tra-chuong/"]').first().click();
+    // Mobile lesson tabs are horizontally clipped. DOM link activation
+    // exercises Material instant navigation without off-viewport pointer.
+    await page.locator('a[href*="tu-kiem-tra-chuong/"]').first().evaluate(el=>el.click());
     await page.waitForURL(/chuong-iii\/tu-kiem-tra-chuong\/$/,{timeout:15000});
     await page.waitForFunction(()=>document.querySelector("[data-floating-ai]")===null,null,{timeout:10000});
     assert.equal(await page.locator("[data-floating-ai]").count(),0,

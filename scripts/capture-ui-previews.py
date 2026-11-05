@@ -635,7 +635,8 @@ $$
         exam_page.goto(BASE + "kien-thuc/25-tong-hop-on-thi-10/de-luyen-" + number + "/", wait_until="networkidle")
         check(exam_page.locator(".exam-engine, [data-exam-engine], .exam-answers, .exam-notation-toolbar").count() == 0,
               "paper-only exam must have no interactive input on " + number)
-        check(exam_page.locator(".floating-ai-launcher").count() == 0, "exam must not reveal AI")
+        # Đề luyện is PUBLIC guided practice, not independent Tự kiểm tra.
+        check(exam_page.locator(".floating-ai-launcher").count() == 1, "public paper practice permits one Tutor")
         check(exam_page.get_by_text("Câu 1.", exact=True).count() > 0 and
               exam_page.get_by_text("Câu 2.", exact=True).count() > 0, "explicit per-Bài labels " + number)
         check("không cần nhập" in exam_page.locator(".md-content__inner").inner_text(),
@@ -646,8 +647,10 @@ $$
               "clear step rubric "+number)
         check(exam_page.locator(".md-content__inner table").first.locator("tr").count() >= expected_parts,
               "rubric rows "+number)
-        check(exam_page.locator(".exam-engine, .exam-answers, .floating-ai-launcher").count() == 0,
-              "no mock engine/AI on key "+number)
+        check(exam_page.locator(".exam-engine, .exam-answers").count() == 0,
+              "no mock exam engine on public worked key "+number)
+        check(exam_page.locator(".floating-ai-launcher").count() == 1,
+              "public answer-review page permits the same Tutor")
         if number == "01": shot(exam_page, "topic25-exam01-rubric-desktop.png")
     exam_page.close()
 
