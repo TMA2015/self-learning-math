@@ -58,7 +58,7 @@ for(const pathname of [
   "/self-learning-math/thpt-preview/chuyen-de/ham-so/tu-kiem-tra/"
 ])ok(!mayMount(pathname),"assessed/nonreading route must not mount Tutor: "+pathname);
 ok(ui.includes('activity: "learning"')&&ui.includes('helpMode: "TEACH_FROM_START"'),"Tutor remains non-grading and has no assessment context");
-ok(ui.includes("selectedText(root)")&&ui.includes("sectionText(root, heading)"),"selection or active section context");
+ok(ui.includes("selectedText(root)")&&ui.includes("selectedText(prompt)")&&ui.includes("sectionText(root,heading)"),"Public reading selection and active modal stem context");
 ok(ui.includes("tutor-girl-awake.webp")&&ui.includes("floating-ai-head-face"),"approved avatar in launcher and panel");
 ok(ui.includes("Giải thích dễ hơn")&&ui.includes("Cho ví dụ khác")&&ui.includes("Vì sao lại đúng?")&&ui.includes("Em cần nhớ gì?"),"four reading quick actions");
 ok(ui.includes('provider: "gemini"')&&ui.includes("RoadmapRichMath"),"real Gemini through existing validated tutor and math renderer");
