@@ -581,10 +581,11 @@
     const typesetCard=()=>{
      if(!card.isConnected)return;
      const mj=window.MathJax;
-     if(typeof mj?.typesetPromise!=="function")return;
+     if(!mj)return;
      const ready=mj.startup?.promise;
-     if(ready?.then)void ready.then(()=>{if(card.isConnected)return mj.typesetPromise([card])}).catch(()=>{});
-     else void mj.typesetPromise([card]).catch(()=>{});
+     const process=()=>{if(card.isConnected&&typeof mj.typesetPromise==="function")return mj.typesetPromise([card])};
+     if(ready?.then)void ready.then(process).catch(()=>{});
+     else void process()?.catch(()=>{});
     };
     if(window.MathJax?.typesetPromise)typesetCard();
     else if(document.readyState==="complete")typesetCard();
