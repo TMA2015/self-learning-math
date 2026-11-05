@@ -221,7 +221,7 @@ function mount(root,bank,{chapter}={}){
   const practice=original.get(h.practice_item);
   const short=id=>{const m=String(id||"").match(/-([CPAW])(\d+)$/i);return m?"câu "+Number(m[2]):"câu liên quan"};
   const lesson=Number(String(h.lesson_id||originalCore.lesson_id||"").replace(/\D/g,""));
-  const retRole=/CORE/.test(originalCore.role||originalCore.placement||"")?"Core ":"Câu ";
+  const retRole=/CORE/.test(originalCore.role||originalCore.placement||"")?"Core ":"";
   summary.textContent="Hướng dẫn khi gặp khó khăn · Bài "+lesson+" · "+retRole+short(h.return_item)+(practice?" / Luyện tập "+short(h.practice_item):"");
   section.dataset.g12GoldenD6Outcome=h.outcome_id;
  }
