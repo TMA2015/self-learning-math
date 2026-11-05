@@ -88,7 +88,9 @@
     const modal=activeFormativeDialog();
     if(modal){
       const card=modal.querySelector("[data-thpt-canonical-item],.thpt-r4-reviewed-formative-card,.topic-micro-panel");
-      const prompt=card?.querySelector("h3,.topic-micro-question");
+      const prompt=modal.matches(".topic-core-dialog")
+        ? card?.querySelector(".topic-micro-question")
+        : card?.querySelector("h3");
       const title=clean(modal.querySelector(".thpt-r4-modal-heading h2,.topic-core-dialog__head h2")?.textContent || document.title);
       const selected=prompt?selectedText(prompt):"";
       return {
