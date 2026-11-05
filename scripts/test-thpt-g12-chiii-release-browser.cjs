@@ -27,7 +27,7 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/lop-12/";
      const text=await content.innerText();
      assert(text.includes("Vì sao cần học"),"Motivation missing B"+n);
      assert(text.includes("Tự thử trước Core"),"First try missing B"+n);
-     for(let i=1;i<=6;i++)assert(text.includes("G12-CHIII-B"+n+"-O"+String(i).padStart(2,"0")),"Missing B"+n+" outcome "+i);
+     for(let i=1;i<=6;i++)assert(text.includes("G12-CHIII-B"+String(n).padStart(2,"0")+"-O"+String(i).padStart(2,"0")),"Missing B"+n+" outcome "+i);
      const images=content.locator("figure.g12-chi-figure img");
      assert.equal(await images.count(),figs,"Original D5 figure count B"+n);
      for(const img of await images.all()){
