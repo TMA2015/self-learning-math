@@ -36,6 +36,7 @@ on:
       - 'docs/assets/data/thpt-g10-readiness/**'
       - 'scripts/test-thpt-g10-reviewed-selfcheck-data.cjs'
       - 'scripts/test-thpt-g10-reviewed-selfcheck-browser.cjs'
+      - 'scripts/test-thpt-g10-all9-math-presentation-browser.cjs'
       - 'docs/assets/stylesheets/thpt-self-check-qa-v1.css'
       - 'scripts/test-thpt-self-check-qa-browser.cjs'
       - 'docs/assets/javascripts/floating-ai-tutor-v1.js'
@@ -202,6 +203,7 @@ jobs:
           node --check scripts/test-thpt-self-check-qa-browser.cjs
           node --check scripts/test-thpt-g10-reviewed-selfcheck-data.cjs
           node --check scripts/test-thpt-g10-reviewed-selfcheck-browser.cjs
+          node --check scripts/test-thpt-g10-all9-math-presentation-browser.cjs
           node --check scripts/test-thpt-g10-chii-browser-smoke.cjs
           node --check scripts/test-thpt-g10-chiii-browser-smoke.cjs
           node --check scripts/test-thpt-g10-chiv-b07-b08-browser-smoke.cjs
@@ -380,6 +382,8 @@ jobs:
           python -m http.server 8765 --directory site > /tmp/thpt-r4-combined-http.log 2>&1 &
           sleep 2
           node scripts/test-thpt-r4-preview-browser.js
+      - name: G10 all 9 chapters Core and Self-check math · 390 / 820 / 1440 · no Q16 leak
+        run: node scripts/test-thpt-g10-all9-math-presentation-browser.cjs
       - name: Shared AI Tutor launcher G10/G11/G12 · 390 / 820 / 1440 · no Q16 leak
         run: node scripts/test-floating-ai-thpt-route-browser.cjs
       - name: Chapter overview Golden VII cards · phone tablet desktop browser QA
