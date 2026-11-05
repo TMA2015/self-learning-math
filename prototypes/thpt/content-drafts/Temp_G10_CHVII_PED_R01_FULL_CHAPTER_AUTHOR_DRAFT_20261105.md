@@ -812,3 +812,337 @@ Học liệu đã có của ChVII gồm bốn bài kiến thức/ ví dụ/ 32 C
 - B22-C01 liên quan tâm sai được giữ ở tầng tự chọn theo review S1 cũ, không xem là Core; First Try elip quay về B22-P01 phù hợp.
 - Reviewer cần đánh giá từng câu, điều kiện và tiến trình trước khi gắn Academic/PED PASS. Gói này chưa phải CONTENT_READY hoặc website đã triển khai.
 
+
+
+## Phần 3 — Bốn bài SGK hiện có làm bối cảnh cho reviewer (nội dung bất biến)
+
+**Phân vai reviewer:** Phần 1–2 mới (23 PED/First Try/D6) là Delta C cần phản biện chi tiết. Phần 3 trích nguyên bốn bài SGK hiện có để người phản biện nhìn thấy nơi học sinh đọc sau đoạn dẫn dắt; D1–D6/Core/Practice/Written cũ đã có review độc lập và **không yêu cầu review lại chỉ vì gói ghép**. Nếu phát hiện một lỗi toán cụ thể trong phần cũ, ghi ID và chứng cứ S1; không tự sửa lẫn source.
+
+### Bài 19 — nguồn kiến thức SGK hiện có (không sửa/không đề nghị review lại D1–D6 cũ)
+
+SOURCE_PATH: docs/thpt-preview/sgk/chuong-vii/bai-19.md
+SOURCE_GIT_BLOB: 8c85401ded1a249fa6d62342a3b0560d352276a0
+
+# Bài 19. Phương trình đường thẳng
+
+<div class="thpt-r4-screen" data-thpt-r4>
+<p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VII · KIẾN THỨC SGK KNTT</p>
+<p class="thpt-r4-lead">Nhận biết vectơ pháp tuyến, vectơ chỉ phương và viết phương trình đường thẳng từ dữ kiện hình học.</p>
+<nav class="thpt-r4-lesson-tabs" aria-label="Điều hướng học Toán 10 Chương VII"><a href="../">Tổng quan Chương VII</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra chương · chưa kích hoạt</a></nav>
+</div>
+
+## 1. Vectơ pháp tuyến và vectơ chỉ phương
+
+Đường thẳng \(\Delta\) nhận **vectơ pháp tuyến** \(\vec n=(a;b)\ne(0;0)\) khi \(\vec n\) vuông góc với đường thẳng. Đường thẳng nhận **vectơ chỉ phương** \(\vec u=(u_1;u_2)\ne(0;0)\) khi \(\vec u\) song song với đường thẳng.
+
+Nếu \(\vec n=(a;b)\) thì có thể chọn \(\vec u=(-b;a)\). Cần phân biệt rõ vai trò hai vectơ, không lấy nhầm vectơ nối hai điểm làm pháp tuyến.
+
+## 2. Hai dạng phương trình của đường thẳng
+
+Qua điểm \(M_0(x_0;y_0)\) và pháp tuyến \(\vec n=(a;b)\):
+
+\[
+a(x-x_0)+b(y-y_0)=0,\quad a^2+b^2>0.
+\]
+
+Đây là phương trình tổng quát \(ax+by+c=0\). Với vectơ chỉ phương \(\vec u=(u_1;u_2)\), phương trình tham số là:
+
+\[
+\begin{cases}x=x_0+u_1t,\\y=y_0+u_2t,\end{cases}\qquad t\in\mathbb R.
+\]
+
+Nếu đường thẳng đi qua \(A\) và \(B\), **phải có \(A\ne B\)** mới dùng được \(\overrightarrow{AB}\) làm vectơ chỉ phương.
+
+## 3. Ví dụ
+
+Cho \(A(1;2)\), \(B(4;3)\). Ta có \(\overrightarrow{AB}=(3;1)\), nên một pháp tuyến là \((1;-3)\).
+
+- Dạng tổng quát: \((x-1)-3(y-2)=0\), hay \(\boxed{x-3y+5=0}\).
+- Dạng tham số: \(x=1+3t,\ y=2+t,\ t\in\mathbb R\).
+- Kiểm tra: thế tọa độ \(A,B\) vào phương trình tổng quát đều cho \(0\).
+
+**Vì sao:** điểm \(M\) thuộc đường thẳng khi \(\overrightarrow{AM}\perp\vec n\); biểu thức tham số quét mọi bội số của vectơ chỉ phương.
+
+!!! tip "Tự nhớ"
+    Trong \(ax+by+c=0\), không được để đồng thời \(a=b=0\). Hai phương trình khác hệ số vẫn có thể xác định **cùng một đường thẳng** nếu toàn bộ hệ số tỉ lệ.
+
+## Khi gặp khó khăn — tự tìm lỗi và học lại
+
+<details class="thpt-r4-pedagogical-note" data-thpt-help-id="D6-G10-B19-01">
+<summary>Nhầm vectơ pháp tuyến/chỉ phương</summary>
+<p><strong>Dấu hiệu:</strong> Từ ax+by+c=0 dùng (a;b) làm chỉ phương, hoặc chấp nhận vectơ không.</p>
+<p><strong>Bản chất toán:</strong> Với (a;b)≠(0;0), n=(a;b) là pháp tuyến, u=(-b;a) có thể làm chỉ phương vì n·u=0 và u≠0.</p>
+<p><strong>Tự sửa:</strong> Ôn B19 mục 1: đánh dấu n và u, tự kiểm n·u=0 rồi mới viết phương trình.</p>
+<p><strong>Kiến thức cần ôn:</strong> Vectơ tọa độ, tích vô hướng; B19 mục 1.</p>
+<p><strong>Luyện lại bài đã có:</strong> <a data-thpt-formative-id="THPT-G10-B19-C01" href="../luyen-tap/?item=THPT-G10-B19-C01">Luyện lại câu 19-C01</a> · <a data-thpt-formative-id="THPT-G10-B19-P05" href="../luyen-tap/?item=THPT-G10-B19-P05">Luyện lại câu 19-P05</a></p>
+</details>
+
+<details class="thpt-r4-pedagogical-note" data-thpt-help-id="D6-G10-B19-02">
+<summary>Viết đường thẳng qua hai điểm chưa kiểm điều kiện</summary>
+<p><strong>Dấu hiệu:</strong> Nhầm AB là pháp tuyến, quên A≠B hoặc không thử nghiệm kết quả.</p>
+<p><strong>Bản chất toán:</strong> Chỉ khi A≠B, AB khác 0 và là một vectơ chỉ phương; chọn n vuông góc AB, rồi thế cả A và B để kiểm phương trình.</p>
+<p><strong>Tự sửa:</strong> Ôn B19 mục 2–3: tìm vectơ \(\overrightarrow{AB}\) với \(A\ne B\), chọn \(\vec n=(a;b)\) vuông góc \(\overrightarrow{AB}\); viết \(a(x-x_A)+b(y-y_A)=0\) (tương đương \(\vec n\cdot\overrightarrow{AM}=0\)); thử lại cả A và B.</p>
+<p><strong>Kiến thức cần ôn:</strong> Hiệu tọa độ hai điểm, vectơ khác 0; B19 mục 2–3.</p>
+<p><strong>Luyện lại bài đã có:</strong> <a data-thpt-formative-id="THPT-G10-B19-P02" href="../luyen-tap/?item=THPT-G10-B19-P02">Luyện lại câu 19-P02</a> · <a data-thpt-formative-id="THPT-G10-B19-P06" href="../luyen-tap/?item=THPT-G10-B19-P06">Luyện lại câu 19-P06</a> · <a data-thpt-formative-id="THPT-G10-CHVII-W19-01" href="../../../thu-vien/tu-luan-chuong-vii/#thpt-g10-chvii-w19-01">Bài tự luận liên quan</a></p>
+</details>
+
+## 4. Tiếp tục học
+
+- [Bài 20 — Hai đường thẳng, góc và khoảng cách](bai-20.md).
+- [Core và Luyện tập/Vận dụng Chương VII](luyen-tap.md): tự luyện và mở lời giải sau khi tự làm.
+
+<small>Nguồn đối chiếu: SGK KNTT Toán 10 tập 2, trang in 30–35; SBT trang 28–31. Ví dụ do dự án biên soạn; không chép nguyên SGK.</small>
+
+
+---
+
+### Bài 20 — nguồn kiến thức SGK hiện có (không sửa/không đề nghị review lại D1–D6 cũ)
+
+SOURCE_PATH: docs/thpt-preview/sgk/chuong-vii/bai-20.md
+SOURCE_GIT_BLOB: 4253bae511fff53803f24f6ec69364b0ae171fab
+
+# Bài 20. Vị trí tương đối, góc và khoảng cách
+
+<div class="thpt-r4-screen" data-thpt-r4>
+<p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VII · KIẾN THỨC SGK KNTT</p>
+<p class="thpt-r4-lead">Xác định vị trí tương đối, góc và khoảng cách trong mặt phẳng tọa độ.</p>
+<nav class="thpt-r4-lesson-tabs" aria-label="Điều hướng học Toán 10 Chương VII"><a href="../">Tổng quan Chương VII</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra chương · chưa kích hoạt</a></nav>
+</div>
+
+## 1. Vị trí tương đối của hai đường thẳng
+
+Với \(d_1:a_1x+b_1y+c_1=0\) và \(d_2:a_2x+b_2y+c_2=0\), mỗi cặp \((a_i;b_i)\ne(0;0)\):
+
+- Nếu \(a_1b_2-a_2b_1\ne0\): hai đường **cắt nhau tại một điểm**.
+- Nếu \(a_1b_2-a_2b_1=0\): cần so sánh **cả ba hệ số** để phân biệt hai đường trùng nhau hay song song phân biệt.
+
+Hai đường **vuông góc** nếu \(a_1a_2+b_1b_2=0\).
+
+## 2. Góc giữa hai đường và khoảng cách
+
+Góc nhỏ \(\varphi\) giữa hai đường thẳng thỏa \(0^\circ\le\varphi\le90^\circ\):
+
+\[
+\cos\varphi=\frac{|a_1a_2+b_1b_2|}
+{\sqrt{a_1^2+b_1^2}\sqrt{a_2^2+b_2^2}}.
+\]
+
+Khoảng cách từ điểm \(M(x_M;y_M)\) đến \(d:ax+by+c=0\):
+
+\[
+d(M,d)=\frac{|ax_M+by_M+c|}{\sqrt{a^2+b^2}}.
+\]
+
+Dấu giá trị tuyệt đối giúp khoảng cách không âm và góc nhỏ không phụ thuộc chiều chọn vectơ pháp tuyến.
+
+## 3. Ví dụ
+
+Xét \(d_1:x-y-1=0\) và \(d_2:x+y-5=0\).
+
+1. Định thức hệ số bằng \(1\cdot1-1\cdot(-1)=2\ne0\), vậy hai đường cắt nhau.
+2. Giải hệ \(x-y=1,\ x+y=5\) được \(I(3;2)\).
+3. Pháp tuyến \((1;-1)\) và \((1;1)\) có tích vô hướng \(0\), vậy hai đường vuông góc.
+4. Khoảng cách từ \(O(0;0)\) đến \(d_1\) bằng \(1/\sqrt2\).
+
+!!! tip "Lỗi dễ mắc"
+    Hai **pháp tuyến tỉ lệ** chỉ cho biết hai đường song song **hoặc trùng nhau**; không tự kết luận trùng. Khi dùng phương trình chứa tham số, kiểm tra các hệ số có thể đồng thời bằng 0.
+
+## Khi gặp khó khăn — tự tìm lỗi và học lại
+
+<details class="thpt-r4-pedagogical-note" data-thpt-help-id="D6-G10-B20-01">
+<summary>Nhầm song song với trùng nhau</summary>
+<p><strong>Dấu hiệu:</strong> Thấy a1b2−a2b1=0 thì kết luận hai đường trùng.</p>
+<p><strong>Bản chất toán:</strong> Điều kiện này chỉ nói hai pháp tuyến cùng phương. Hai phương trình trùng nhau nếu toàn bộ bộ ba (a,b,c) tỉ lệ theo cùng một λ≠0; nếu không chúng song song phân biệt.</p>
+<p><strong>Tự sửa:</strong> Ôn B19 mục 2 và B20 mục 1: kiểm định thức, rồi so sánh cả hằng số; tránh chia cho một hệ số bằng 0.</p>
+<p><strong>Kiến thức cần ôn:</strong> Phương trình tổng quát B19; tỉ lệ các hệ số; B20 mục 1.</p>
+<p><strong>Luyện lại bài đã có:</strong> <a data-thpt-formative-id="THPT-G10-B20-C01" href="../luyen-tap/?item=THPT-G10-B20-C01">Luyện lại câu 20-C01</a> · <a data-thpt-formative-id="THPT-G10-B20-P05" href="../luyen-tap/?item=THPT-G10-B20-P05">Luyện lại câu 20-P05</a></p>
+</details>
+
+<details class="thpt-r4-pedagogical-note" data-thpt-help-id="D6-G10-B20-02">
+<summary>Góc hoặc khoảng cách ra giá trị âm</summary>
+<p><strong>Dấu hiệu:</strong> Bỏ giá trị tuyệt đối hoặc thiếu độ dài vectơ pháp tuyến ở mẫu.</p>
+<p><strong>Bản chất toán:</strong> Khoảng cách là |axM+byM+c|/√(a²+b²)≥0. Với góc nhỏ 0°≤φ≤90°, cosφ=|n1·n2|/(||n1||||n2||)∈[0,1].</p>
+<p><strong>Tự sửa:</strong> Ôn B20 mục 2 (góc) và mục 3 (khoảng cách): xác nhận pháp tuyến khác vectơ không, đặt trị tuyệt đối ở tử và chia đúng độ dài pháp tuyến; kiểm \(\cos\varphi\in[0;1]\) cho góc nhỏ, \(d\ge0\) cho khoảng cách.</p>
+<p><strong>Kiến thức cần ôn:</strong> Chuẩn vectơ, tích vô hướng; B20 mục 2.</p>
+<p><strong>Luyện lại bài đã có:</strong> <a data-thpt-formative-id="THPT-G10-B20-P02" href="../luyen-tap/?item=THPT-G10-B20-P02">Luyện lại câu 20-P02</a> · <a data-thpt-formative-id="THPT-G10-B20-P03" href="../luyen-tap/?item=THPT-G10-B20-P03">Luyện lại câu 20-P03</a> · <a data-thpt-formative-id="THPT-G10-B20-P06" href="../luyen-tap/?item=THPT-G10-B20-P06">Luyện lại câu 20-P06</a> · <a data-thpt-formative-id="THPT-G10-CHVII-W20-01" href="../../../thu-vien/tu-luan-chuong-vii/#thpt-g10-chvii-w20-01">Bài tự luận liên quan</a></p>
+</details>
+
+## 4. Tiếp tục học
+
+- [Bài 19 — Phương trình đường thẳng](bai-19.md).
+- [Bài 21 — Đường tròn](bai-21.md).
+- [Core và Luyện tập/Vận dụng](luyen-tap.md).
+
+<small>Nguồn đối chiếu: SGK Toán 10 KNTT tập 2, trang in 36–42; SBT trang 32–38. Ví dụ do dự án biên soạn.</small>
+
+
+---
+
+### Bài 21 — nguồn kiến thức SGK hiện có (không sửa/không đề nghị review lại D1–D6 cũ)
+
+SOURCE_PATH: docs/thpt-preview/sgk/chuong-vii/bai-21.md
+SOURCE_GIT_BLOB: 23fdc71c66f562cedad4cc380dcd3d87298f9264
+
+# Bài 21. Đường tròn trong mặt phẳng tọa độ
+
+<div class="thpt-r4-screen" data-thpt-r4>
+<p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VII · KIẾN THỨC SGK KNTT</p>
+<p class="thpt-r4-lead">Viết phương trình đường tròn, xác định tâm, bán kính và lập tiếp tuyến tại một điểm.</p>
+<nav class="thpt-r4-lesson-tabs" aria-label="Điều hướng học Toán 10 Chương VII"><a href="../">Tổng quan Chương VII</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra chương · chưa kích hoạt</a></nav>
+</div>
+
+## 1. Phương trình đường tròn
+
+Đường tròn tâm \(I(a;b)\), bán kính \(R>0\) có phương trình:
+
+\[
+(x-a)^2+(y-b)^2=R^2.
+\]
+
+Phương trình tổng quát \(x^2+y^2+Dx+Ey+F=0\) biểu diễn **đường tròn thực có bán kính dương** khi
+
+\[
+I\left(-\frac D2;-\frac E2\right),\qquad R^2=\frac{D^2+E^2}{4}-F>0.
+\]
+
+Nếu \(R^2=0\), tập điểm chỉ có một điểm; nếu \(R^2<0\), không có điểm thực. Không gọi hai trường hợp này là đường tròn có bán kính dương.
+
+## 2. Tiếp tuyến và vị trí với đường thẳng
+
+Tại điểm \(M(x_M;y_M)\) **thuộc đường tròn**, tiếp tuyến vuông góc với bán kính \(IM\):
+
+\[
+(x_M-a)(x-x_M)+(y_M-b)(y-y_M)=0.
+\]
+
+Với đường thẳng \(d\), đặt \(h=d(I,d)\):
+
+- \(h<R\): hai giao điểm;
+- \(h=R\): tiếp xúc;
+- \(h>R\): không giao nhau.
+
+## 3. Ví dụ
+
+Với \(x^2+y^2-4x+6y-12=0\), hoàn thành bình phương:
+
+\[
+(x-2)^2+(y+3)^2=25.
+\]
+
+Vậy \(I(2;-3)\) và \(R=5\). Điểm \(M(5;1)\) thuộc đường tròn vì \(IM^2=3^2+4^2=25\). Vectơ \(IM=(3;4)\) là pháp tuyến của tiếp tuyến tại \(M\), nên:
+
+\[
+3(x-5)+4(y-1)=0\iff \boxed{3x+4y-19=0}.
+\]
+
+!!! tip "Nhớ kiểm tra"
+    Để viết tiếp tuyến **tại một điểm**, phải xác nhận điểm đó thuộc đường tròn. Đừng nhầm bán kính \(R\) với \(R^2\).
+
+## Khi gặp khó khăn — tự tìm lỗi và học lại
+
+<details class="thpt-r4-pedagogical-note" data-thpt-help-id="D6-G10-B21-01">
+<summary>Nhầm R² với bán kính</summary>
+<p><strong>Dấu hiệu:</strong> Hoàn thành bình phương ra R²≤0 nhưng vẫn coi là đường tròn có bán kính dương.</p>
+<p><strong>Bản chất toán:</strong> Chỉ R²&gt;0 mới cho đường tròn thực bán kính R&gt;0. R²=0 cho một điểm; R²&lt;0 không có điểm thực.</p>
+<p><strong>Tự sửa:</strong> Ôn B21 mục 1: chuyển về (x−a)²+(y−b)²=R² rồi kiểm R² trước khi lấy căn.</p>
+<p><strong>Kiến thức cần ôn:</strong> Hằng đẳng thức bình phương và bình phương không âm; B21 mục 1.</p>
+<p><strong>Luyện lại bài đã có:</strong> <a data-thpt-formative-id="THPT-G10-B21-C02" href="../luyen-tap/?item=THPT-G10-B21-C02">Luyện lại câu 21-C02</a> · <a data-thpt-formative-id="THPT-G10-B21-P05" href="../luyen-tap/?item=THPT-G10-B21-P05">Luyện lại câu 21-P05</a></p>
+</details>
+
+<details class="thpt-r4-pedagogical-note" data-thpt-help-id="D6-G10-B21-02">
+<summary>Viết tiếp tuyến khi M chưa thuộc đường tròn</summary>
+<p><strong>Dấu hiệu:</strong> Dùng IM làm pháp tuyến nhưng chưa chứng minh IM²=R²; nhầm cắt nhau với tiếp xúc.</p>
+<p><strong>Bản chất toán:</strong> Công thức tiếp tuyến tại M áp dụng khi M thuộc đường tròn. Đường d bất kỳ tiếp xúc khi d(I,d)=R&gt;0.</p>
+<p><strong>Tự sửa:</strong> Ôn B21 mục 2 và B20 mục 3 (khoảng cách): xác minh \(M\in(C)\), tính \(\overrightarrow{IM}\), lập tiếp tuyến qua M vuông góc với \(\overrightarrow{IM}\), rồi kiểm lại \(d(I,d)=R\).</p>
+<p><strong>Kiến thức cần ôn:</strong> B19 pháp tuyến, B20 khoảng cách; B21 mục 2.</p>
+<p><strong>Luyện lại bài đã có:</strong> <a data-thpt-formative-id="THPT-G10-B21-P02" href="../luyen-tap/?item=THPT-G10-B21-P02">Luyện lại câu 21-P02</a> · <a data-thpt-formative-id="THPT-G10-B21-P03" href="../luyen-tap/?item=THPT-G10-B21-P03">Luyện lại câu 21-P03</a> · <a data-thpt-formative-id="THPT-G10-CHVII-W21-ANCHOR-01" href="../../../thu-vien/tu-luan-chuong-vii/#thpt-g10-chvii-w21-anchor-01">Bài tự luận liên quan</a></p>
+</details>
+
+## 4. Tiếp tục học
+
+- [Bài 22 — Ba đường conic](bai-22.md).
+- [Core và Luyện tập/Vận dụng](luyen-tap.md).
+
+<small>Nguồn đối chiếu: SGK KNTT tập 2, trang in 43–47; SBT trang 39–41. Ví dụ do dự án biên soạn.</small>
+
+
+---
+
+### Bài 22 — nguồn kiến thức SGK hiện có (không sửa/không đề nghị review lại D1–D6 cũ)
+
+SOURCE_PATH: docs/thpt-preview/sgk/chuong-vii/bai-22.md
+SOURCE_GIT_BLOB: 0d991a9b461c270247899a038267058f89e5ffbe
+
+# Bài 22. Ba đường conic
+
+<div class="thpt-r4-screen" data-thpt-r4>
+<p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VII · KIẾN THỨC SGK KNTT</p>
+<p class="thpt-r4-lead">Tìm hiểu elip, hypebol và parabol; nhận biết công thức, tính chất và các điều kiện của ba đường conic.</p>
+<nav class="thpt-r4-lesson-tabs" aria-label="Điều hướng học Toán 10 Chương VII"><a href="../">Tổng quan Chương VII</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra chương · chưa kích hoạt</a></nav>
+</div>
+
+## 1. Elip — trục lớn trùng \(Ox\)
+
+Dạng chính tắc \(\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1\), với \(a>b>0\). Đặt \(c^2=a^2-b^2\), hai tiêu điểm là \((\pm c;0)\), các đỉnh \((\pm a;0)\) và \((0;\pm b)\).
+
+**Ví dụ:** \(\dfrac{x^2}{25}+\dfrac{y^2}{9}=1\) có \(a=5\), \(b=3\), \(c=4\), tiêu điểm \((\pm4;0)\); tổng khoảng cách từ một điểm trên elip đến hai tiêu điểm bằng \(2a=10\).
+
+## 2. Hypebol — trục thực trùng \(Ox\)
+
+Dạng chính tắc \(\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1\), \(a,b>0\). Khi đó \(c^2=a^2+b^2\), hai tiêu điểm \((\pm c;0)\), các đỉnh \((\pm a;0)\), các tiệm cận \(y=\pm\dfrac ba x\).
+
+**Ví dụ:** \(\dfrac{x^2}{9}-\dfrac{y^2}{16}=1\): \(a=3,b=4,c=5\), hai tiệm cận \(y=\pm4x/3\).
+
+## 3. Parabol — quy ước \(y^2=2px,\ p>0\)
+
+Parabol có đỉnh \(O(0;0)\), tiêu điểm \(F(p/2;0)\), đường chuẩn \(x=-p/2\). Mọi điểm \(M\) trên parabol có khoảng cách đến tiêu điểm bằng khoảng cách đến đường chuẩn.
+
+**Ví dụ:** \(y^2=12x\), suy ra \(p=6\), \(F(3;0)\), đường chuẩn \(x=-3\). Điểm \(M(3;6)\) thuộc parabol vì \(36=12\cdot3\); hai khoảng cách đều bằng \(6\).
+
+## 4. Phân biệt công thức và phạm vi
+
+| Đường conic | Công thức liên hệ | Chú ý |
+|---|---|---|
+| Elip | \(c^2=a^2-b^2\) | \(a>b>0\) trong dạng trục lớn \(Ox\) |
+| Hypebol | \(c^2=a^2+b^2\) | Tiệm cận \(y=\pm bx/a\) |
+| Parabol | \(y^2=2px\) | Tiêu điểm \((p/2;0)\), không phải \((p;0)\) |
+
+<details class="thpt-r4-pedagogical-note">
+<summary>Kiến thức mở rộng: tâm sai</summary>
+<p>Tâm sai là kiến thức nâng cao tự chọn, không thuộc phần Core bắt buộc. Hãy học vững phương trình chính tắc trước khi luyện thêm.</p>
+</details>
+
+## Khi gặp khó khăn — tự tìm lỗi và học lại
+
+<details class="thpt-r4-pedagogical-note" data-thpt-help-id="D6-G10-B22-01">
+<summary>Đảo dấu quan hệ c² của conic</summary>
+<p><strong>Dấu hiệu:</strong> Dùng c²=a²+b² cho elip hoặc c²=a²−b² cho hypebol.</p>
+<p><strong>Bản chất toán:</strong> Trong dạng chính tắc trục Ox: elip x²/a²+y²/b²=1, a&gt;b&gt;0: c²=a²−b²; hypebol x²/a²−y²/b²=1, a,b&gt;0: c²=a²+b².</p>
+<p><strong>Tự sửa:</strong> Ôn B22 mục 1–2: đọc dấu trước y² rồi mới xác định a²,b²,c²; elip có c&lt;a, hypebol có c&gt;a.</p>
+<p><strong>Kiến thức cần ôn:</strong> Phương trình chính tắc; B22 mục 1–2.</p>
+<p><strong>Luyện lại bài đã có:</strong> <a data-thpt-formative-id="THPT-G10-B22-C02" href="../luyen-tap/?item=THPT-G10-B22-C02">Luyện lại câu 22-C02</a> · <a data-thpt-formative-id="THPT-G10-B22-P01" href="../luyen-tap/?item=THPT-G10-B22-P01">Luyện lại câu 22-P01</a> · <a data-thpt-formative-id="THPT-G10-B22-P02" href="../luyen-tap/?item=THPT-G10-B22-P02">Luyện lại câu 22-P02</a> · <a data-thpt-formative-id="THPT-G10-CHVII-W22-01" href="../../../thu-vien/tu-luan-chuong-vii/#thpt-g10-chvii-w22-01">Bài tự luận liên quan</a></p>
+</details>
+
+<details class="thpt-r4-pedagogical-note" data-thpt-help-id="D6-G10-B22-02">
+<summary>Nhầm p với tọa độ tiêu điểm parabol</summary>
+<p><strong>Dấu hiệu:</strong> Từ y²=2px ghi tiêu điểm F(p;0), đường chuẩn x=−p.</p>
+<p><strong>Bản chất toán:</strong> Theo quy ước B22 mục 3 (p&gt;0): F(p/2;0), đường chuẩn x=−p/2. Với y²=Kx, phải giải 2p=K.</p>
+<p><strong>Tự sửa:</strong> Ôn B22 mục 3: tính p từ hệ số 2p, xác nhận khoảng cách từ điểm thuộc parabol tới tiêu điểm và đường chuẩn bằng nhau.</p>
+<p><strong>Kiến thức cần ôn:</strong> B20 khoảng cách điểm–đường, B22 mục 3.</p>
+<p><strong>Luyện lại bài đã có:</strong> <a data-thpt-formative-id="THPT-G10-B22-P03" href="../luyen-tap/?item=THPT-G10-B22-P03">Luyện lại câu 22-P03</a> · <a data-thpt-formative-id="THPT-G10-B22-P04" href="../luyen-tap/?item=THPT-G10-B22-P04">Luyện lại câu 22-P04</a> · <a data-thpt-formative-id="THPT-G10-B22-P06" href="../luyen-tap/?item=THPT-G10-B22-P06">Luyện lại câu 22-P06</a></p>
+</details>
+
+## 5. Tiếp tục học
+
+- [Core và Luyện tập/Vận dụng Chương VII](luyen-tap.md).
+- [Tổng quan Chương VII](../chuong-vii.md).
+
+<small>Nguồn đối chiếu: SGK KNTT tập 2, trang in 48–57; SBT trang 42–46. Không dùng đạo hàm hoặc nội dung trục quay ngoài phạm vi đã kiểm chứng.</small>
+
+
+## Chốt phạm vi review độc lập
+
+- **23/23 outcomes B19–B22**: trả Academic và PED1–PED6 theo từng outcome, không chỉ đếm số block. Kiểm riêng 23 bài Tự thử, đáp án và suy luận; cảnh báo lỗi điều kiện toán, hình học, sử dụng sai công thức, tiền đề không giải thích hoặc D6 dẫn nhầm kỹ năng.
+- **Không thêm đề kín**: gói này chỉ là học liệu public formative; nguồn RD1 kín vẫn nằm ngoài GitHub.
+- **Bảo toàn nguồn cũ**: nếu phần cũ vẫn đúng, giữ PASS lịch sử, không xem nó là Delta C mới hoặc đòi sửa metadata ngoài học thuật.
+- Chỉ sau khi nhận biên bản đạt mới lập V2; bản nguồn hiện là ứng viên phản biện và **không được cấp PASS trước**.
