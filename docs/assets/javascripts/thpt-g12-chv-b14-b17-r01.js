@@ -249,7 +249,12 @@ const start=async()=>{
    bank.help.filter(h=>h.optional_after_b17).length!==1||
    bank.end_references.filter(r=>bank.items.find(q=>q.item_id===r.item_id)?.optional_after_b17).length!==1)throw Error("Canonical bank/source receipt mismatch");
   root.replaceChildren();
-  if(root.hasAttribute("data-g12-chv-hub"))startHub(root,bank);else startSelfCheck(root,bank);
+  if(root.hasAttribute("data-g12-chv-hub")){
+   startHub(root,bank);
+   // The same source-locked one-question Golden adapter as G12 ChI-IV.
+   // Fail closed if the approved shared module has not been included.
+   if(!window.THPT_G12_GOLDEN_HUB?.mount(root,bank,{chapter:"V"}))throw Error("G12 Golden V unavailable");
+  }else startSelfCheck(root,bank);
   root.dataset.g12ChvReady="true";
  }catch(e){
   root.dataset.g12ChvError="true";
