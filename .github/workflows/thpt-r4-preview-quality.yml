@@ -100,6 +100,12 @@ on:
       - 'scripts/test-thpt-g11-supplement-release-browser.cjs'
       - 'scripts/test-thpt-g12-chi-release-source.cjs'
       - 'scripts/test-thpt-g12-chi-release-browser.cjs'
+      - 'scripts/test-thpt-g12-chii-release-source.cjs'
+      - 'scripts/test-thpt-g12-chii-release-browser.cjs'
+      - 'docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json'
+      - 'docs/assets/javascripts/thpt-g12-chii-b06-b08-r00.js'
+      - 'docs/assets/stylesheets/thpt-g12-chii-b06-b08-r00.css'
+      - 'docs/assets/images/thpt/FIG-G12-CHII-B0*.svg'
       - 'docs/thpt-preview/sgk/lop-12/**'
       - 'docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json'
       - 'docs/assets/javascripts/thpt-g12-chi-b01-b05-r00.js'
@@ -216,6 +222,8 @@ jobs:
         run: node scripts/test-thpt-g11-supplement-release-source.cjs
       - name: Guard G12 SGK ChI original Academic/PED SOURCE SHA and 78 PUBLIC canonical learner records
         run: node scripts/test-thpt-g12-chi-release-source.cjs
+      - name: Guard G12 SGK ChII original V2 receipt, 64 PUBLIC canonical, 16 END references and 3 original SVG
+        run: node scripts/test-thpt-g12-chii-release-source.cjs
       - name: Guard G11 B01 source-locked Knowledge presentation (no deploy)
         run: node scripts/test-thpt-g11-b01-ap-parity.cjs
       - name: Guard G10 B03 Knowledge AP source parity (no deploy)
@@ -426,6 +434,8 @@ jobs:
         run: node scripts/test-thpt-g11-supplement-release-browser.cjs
       - name: G12 SGK ChI B01–B05 and Final Submit AP/Q16 browser · 390 / 820 / 1440
         run: node scripts/test-thpt-g12-chi-release-browser.cjs
+      - name: G12 SGK ChII B06–B08 and reused 16-item Final Submit AP/Q16 browser · 390 / 820 / 1440
+        run: node scripts/test-thpt-g12-chii-release-browser.cjs
       - name: Academic Presentation QA pilot · MathJax overflow / 390 820 1440
         run: node scripts/test-thpt-academic-presentation-browser.cjs
       - name: Academic Presentation QA G10 B03 · 390 820 1440

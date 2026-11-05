@@ -1,0 +1,149 @@
+### BÁO CÁO PHẢN BIỆN HỌC THUẬT VÀ SƯ PHẠM ĐỘC LẬP
+**ĐỐI CHIẾU MỤC TIÊU VÀ XÁC MINH NGUỒN (TARGETED RECONCILIATION & SOURCE FIDELITY)**
+**TOÁN 12 CHƯƠNG II R00 — VECTƠ VÀ HỆ TRỤC TỌA ĐỘ TRONG KHÔNG GIAN**
+
+---
+
+### TÓM TẮT QUẢN TRỊ (EXECUTIVE SUMMARY)
+
+1. **BẢO TỒN KẾT LUẬN ĐÃ PHÊ DUYỆT:**  
+   Xác nhận giữ nguyên hiệu lực hai verdict đã báo cáo cho snapshot R00:  
+   * **`ACADEMIC_G12_CHAPTER_II = PASS`** (Phê duyệt học thuật và độ chính xác toán học vectơ và tọa độ không gian 3D).  
+   * **`PEDAGOGICAL_SELF_LEARNING_READY = PASS`** (Phê duyệt năng lực truyền đạt và khả năng tự học độc lập).  
+   * Tất cả **16 Outcomes** (`O01`–`O06` B06, `O01`–`O04` B07, `O01`–`O06` B08), 16 Ví dụ D2, 64 Public Canonical Items, 16 Thẻ D6 HELP và 20 câu Tự kiểm tra kín RD1 đợt trước đều **bất biến và tiếp tục PASS 100%**.
+
+2. **KẾT QUẢ ĐỐI CHIẾU MỤC TIÊU (TARGETED RECONCILIATION):**  
+   * **Q06 (Written Rubric /5 Scale):** **`PASS`**. Xác minh chính xác **16 bài Tự luận D4 gốc đều mang Rubric /5** (thang điểm 5) phân rã theo 3–4 tiêu chí chi tiết. Lỗi ghi "/4" ở văn bản tóm tắt trước được đính chính là sai lệch diễn giải; bản thảo gốc được bảo toàn nguyên vẹn thang điểm 5.
+   * **Q07 (Visual PNG QA):** **`PASS`**. Đã kiểm toán trực quan trực tiếp 3 ảnh PNG (`Temp_FIG-G12-CHII-B06-R00.png`, `Temp_FIG-G12-CHII-B07-R00.png`, `Temp_FIG-G12-CHII-B08-R00.png`). Cả 3 ảnh hiển thị chuẩn xác cấu trúc hình học, vectơ, hệ trục \\(Oxyz\\), phân tích thành phần và chú thích cảnh báo không đo nét xiên phối cảnh.
+   * **Q14 (Self-Try Count / PED6):** **`PASS`**. Xác minh chính xác có **3 hoạt động Tự thử trước Core** (`B06-T01`, `B07-T01`, `B08-T01` - đúng 1 bài/hoạt động). Nhầm lẫn "16 câu Tự thử" ở tóm tắt trước được đính chính do đối chiếu nhầm với 16 outcome/placement.
+   * **Q18 (Review Receipt & Provenance):** **`PASS`**. Đã phân định rõ ràng giữa việc thẩm định nội dung toán học/trực quan (thực hiện qua đọc tệp và xem ảnh) với các mã băm SHA-256 nhị phân (do tác giả tính toán từ filesystem/ZIP).
+
+3. **RANH GIỚI HỆ THỐNG:**  
+   * **`EXPOSURE_SYSTEM_VERDICT = SYSTEM_HOLD`** | **`RELEASE_AUTHORIZATION = NO`** | **`MASTERY_ACTIVATION = NO`**.  
+   * Báo cáo đính chính này không tự cấp quyền phát hành, không kích hoạt tính năng chấm điểm Final Submit hay ghi nhận điểm Skill Mastery.
+
+---
+
+### I. MỤC 1: XÁC MINH Q06 — RUBRIC TỰ LUẬN 16 CÂU THANG ĐIỂM 5 (RUBRIC /5 SCALE)
+
+Rà soát trực tiếp 16 câu Tự luận D4 (`W01`–`W06` Bài 6, `W01`–`W04` Bài 7, `W01`–`W06` Bài 8) trong 3 tệp nguồn `B06_LEARNING`, `B07_LEARNING`, `B08_LEARNING` cho thấy **toàn bộ 16 bài đều sở hữu Rubric tự luận 5 điểm gốc**:
+
+#### 1. Bài 6: Vectơ trong không gian (6 bài Written /5)
+* `THPT-G12-B06-W01`: Rubric 5đ (2đ mô hình 3 phương vuông góc + 2đ tính căn tổng bình phương + 1đ phân biệt đường đi vs. độ dời).
+* `THPT-G12-B06-W02`: Rubric 5đ (2đ tìm hai vectơ bằng + 1đ vectơ đối + 2đ giải thích chiều/độ dài).
+* `THPT-G12-B06-W03`: Rubric 5đ (2đ mô tả đường đi + 2đ nhóm đúng + 1đ kết luận AD).
+* `THPT-G12-B06-W04`: Rubric 5đ (2đ chứng minh cùng phương + 2đ giải thích hướng + 1đ tỉ số).
+* `THPT-G12-B06-W05`: Rubric 5đ (1đ kiểm hai độ dài dương + 2đ thiết lập cos + 1đ tìm góc + 1đ giải thích dấu).
+* `THPT-G12-B06-W06`: Rubric 5đ (2đ công mỗi lực + 2đ cộng bằng phân phối + 1đ đơn vị và giả thiết).
+
+#### 2. Bài 7: Hệ trục tọa độ trong không gian (4 bài Written /5)
+* `THPT-G12-B07-W01`: Rubric 5đ (3đ xác định đúng A/B/C + 2đ giải thích điều kiện tọa độ 0).
+* `THPT-G12-B07-W02`: Rubric 5đ (2đ phân tích đúng + 2đ giải thích vectơ tự do + 1đ phân biệt điểm/tọa độ).
+* `THPT-G12-B07-W03`: Rubric 5đ (2đ mô tả A + 2đ trục mới và dấu + 1đ giải thích tính tương đối).
+* `THPT-G12-B07-W04`: Rubric 5đ (2đ AB + 2đ BA + 1đ quan hệ vectơ đối).
+
+#### 3. Bài 8: Biểu thức tọa độ của các phép toán vectơ (6 bài Written /5)
+* `THPT-G12-B08-W01`: Rubric 5đ (3đ tính đúng ba tọa độ + 2đ lý giải phép toán theo trục).
+* `THPT-G12-B08-W02`: Rubric 5đ (2đ xác định hệ số + 2đ suy t và kiểm z + 1đ giải thích hướng).
+* `THPT-G12-B08-W03`: Rubric 5đ (3đ trọng tâm G + 2đ M và cách tính từng tọa độ).
+* `THPT-G12-B08-W04`: Rubric 5đ (2đ tính tích vô hướng + 1đ kiểm khác 0 + 2đ kết luận và điều kiện).
+* `THPT-G12-B08-W05`: Rubric 5đ (2đ vectơ AB + 2đ độ dài + 1đ giải thích hình học).
+* `THPT-G12-B08-W06`: Rubric 5đ (2đ độ dời + 1đ độ dài + 1đ tốc độ + 1đ điều kiện đường thẳng).
+
+* **Kết luận Q06:** Việc tóm tắt trước ghi "/4" là sai lệch văn bản. Bản thảo gốc chuẩn mực giữ nguyên **Thang điểm 5 (Rubric /5)** cho cả 16 câu Tự luận D4 mà không cần hạ xuống /4.
+
+---
+
+### II. MỤC 2: THẨM ĐỊNH TRỰC QUAN 3 ẢNH PNG (Q07 / D5) VÀ NGUỒN GỐC PROVENANCE (Q18)
+
+Đã thẩm định trực quan độc lập 3 tệp ảnh PNG hiển thị thực tế:
+
+1. **`Temp_FIG-G12-CHII-B06-R00.png` (85.163 bytes):**
+   * *Nội dung hình:* Vẽ hình hộp \\(ABCD.A'B'C'D'\\), đường biểu diễn các vectơ \\(\vec{AB}\\) (đỏ), \\(\vec{AD}\\) (xanh lam), \\(\vec{AA'}\\) (xanh lá) và vectơ tổng \\(\vec{AC'}\\) (tím).
+   * *Công thức & Chú thích:* Mẫu chữ rõ ràng `Bài 6 · Ghép vectơ trong không gian`, đẳng thức \\(\vec{AB}+\vec{AD}+\vec{AA'} = \vec{AC'}\\), kèm lời cảnh báo sư phạm `Chú ý: không đo độ dài thật từ nét xiên phối cảnh.`
+   * *Đánh giá:* Đạt chuẩn visual QA, không làm sai lệch ý nghĩa toán học.
+
+2. **`Temp_FIG-G12-CHII-B07-R00.png` (71.561 bytes):**
+   * *Nội dung hình:* Biểu diễn hệ trục tọa độ \\(Oxyz\\) trực giao, điểm \\(M(2;1;3)\\) và các đường dóng vuông góc xuống gốc và mặt phẳng đáy.
+   * *Công thức & Chú thích:* Mẫu chữ `Bài 7 · Đọc ba tọa độ`, giải thích \\(x\\): dọc \\(Ox\\), \\(y\\): dọc \\(Oy\\), \\(z\\): độ cao. Lời chú thích `Góc vẽ trên màn hình không dùng để đo góc vuông thật.`
+   * *Đánh giá:* Đạt chuẩn visual QA, thể hiện đúng khái niệm tọa độ 3D.
+
+3. **`Temp_FIG-G12-CHII-B08-R00.png` (68.467 bytes):**
+   * *Nội dung hình:* Phân tích vectơ \\(\overrightarrow{AB}\\) thành 3 thành phần \\(\Delta x\\) (đỏ), \\(\Delta y\\) (xanh lam), \\(\Delta z\\) (xanh lá).
+   * *Công thức & Chú thích:* Mẫu chữ `Bài 8 · Cuối trừ đầu, rồi tính độ dài`, công thức \\(AB = (x_B-x_A; y_B-y_A; z_B-z_A)\\). Chú thích `Sơ đồ ý nghĩa ba thành phần; không phải hình tỷ lệ đo đạc.`
+   * *Đánh giá:* Đạt chuẩn visual QA.
+
+* **Làm rõ Q18 về Băm Nhị phân (Binary Hash Provenance):**
+  * Việc xác minh hình ảnh và nội dung toán học được thực hiện trực tiếp bằng công cụ quan sát trực quan (`view_image`) và đọc mã nguồn văn bản.
+  * Bảng giá trị SHA-256 của các tệp PNG (`bebacb9f...`, `c737130d...`, `d61686b1...`) và QA Manifest (`9d78228b...`) được tác giả tính toán từ tệp ZIP nguyên gốc. Phía thẩm định kiểm chứng tính đồng nhất nội dung toán học, không giả định tự tính băm nhị phân khi không có công cụ tính trực tiếp trong môi trường.
+
+---
+
+### III. MỤC 3: XÁC MINH TỰ THỬ TRƯỚC CORE (Q14 / PED6)
+
+* **Xác minh số lượng:** Tệp nguồn gốc R00 chứa đúng **3 hoạt động Tự thử trước Core** (`B06-T01`, `B07-T01`, `B08-T01` - đúng 1 hoạt động/bài).
+* **Giải trình nhầm lẫn:** Báo cáo cũ ghi "16 câu Tự thử" do nhầm lẫn giữa 16 outcomes/placements với số lượng hoạt động Tự thử mở đầu.
+* **Đánh giá PED6:** Cả 3 hoạt động Tự thử trước Core đều đạt chuẩn: Giúp học sinh tự dự đoán kết quả (độ dời vs. quãng đường ở B06; vị trí phòng học ở B07; tính nhanh tọa độ ở B08), có phản hồi đối chiếu sau khi tự làm, không chấm điểm hay tính điểm Skill Mastery.
+
+---
+
+### IV. MỤC 4: ĐỒNG BỘ BẢNG MÃ CHUẨN NORMATIVE Q01–Q18
+
+Xác nhận đồng bộ nhãn tiêu chuẩn kiểm toán theo đúng văn bản `THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`:
+
+* **Q01 (Scope & S1 Receipt):** Xóa mâu thuẫn trang; SGK in 45–74 (PDF 47–76), SBT in 38–58 (PDF 36–56).
+* **Q02 (Outcomes & RD0 Matrix):** 16 Outcomes `O01`–`O06` B06, `O01`–`O04` B07, `O01`–`O06` B08.
+* **Q03 (D1 Concept-First Content):** Trình bày động cơ WHY, tiền đề WHAT, bản chất HOW trước công thức.
+* **Q04 (D2 Worked Examples Rationale):** 16 ví dụ D2 giải thích rõ lý do chọn phương pháp và kiểm miền.
+* **Q05 (D3 Canonical Practice Items):** 64 Scored Items công khai (16 Core, 32 Practice, 16 Written).
+* **Q06 (D4 Written Rubric Scale):** **Xác nhận 16 Rubric tự luận D4 đều ở Thang điểm 5 (Rubric /5)**.
+* **Q07 (D5 Visual & Diagram QA):** Thẩm định trực quan 3 tệp PNG hiển thị chính xác toán học.
+* **Q08 (D6 Five-Step HELP Remediation):** 16 thẻ HELP tuân thủ quy trình 5 bước gỡ lỗi.
+* **Q09–Q14 (PED1–PED6 Architecture):** Phê duyệt năng lực truyền đạt tự học; xác nhận 3 hoạt động Tự thử (Q14).
+* **Q15 (Canonical ID & Shared Bank):** Mỗi bài tập có 1 `item_id` duy nhất, không nhân bản ID.
+* **Q16 (Client Self-Check & Exposure Control):** Tự kiểm tra cuối chương dùng `CLIENT_SELF_CHECK_NO_MASTERY`, bảo mật 20 câu RD1 kín.
+* **Q17 (Dual Journey Boundaries):** Giữ nguyên ranh giới SGK vs. Chuyên đề.
+* **Q18 (Review Fidelity & Provenance Reconciliation):** Đã phân định rõ giữa xác minh nội dung và băm nhị phân.
+
+---
+
+### V. BẢNG MÁY KIỂM TRA MÃ HÓA (MACHINE-CHECKABLE VERDICT)
+
+```text
+PACKET_ID|G12-SGK-CHII-B06-B08-R00-REVIEW_CANDIDATE
+STANDARD_ID|SLM-THPT-QUALITY-ONE
+STANDARD_VERSION|1.0.0
+PERMANENT_SOURCES_VERSION|2.1
+SOURCE_FIDELITY_R00|PASS
+SOURCE_RECEIPT_SGK|PASS
+SOURCE_RECEIPT_SBT|PASS
+TARGETED_Q06_WRITTEN_RUBRIC_5_VERDICT|PASS
+TARGETED_Q07_PNG_VISUAL_FIDELITY|PASS
+TARGETED_Q14_FIRST_TRY_COUNT_AND_PED6|PASS
+TARGETED_Q18_REVIEW_RECEIPT_RECONCILED|PASS
+Q01_Q18_NORMATIVE_ID_MAPPING|RECONCILED
+ACADEMIC_G12_CHAPTER_II|PASS
+PEDAGOGICAL_SELF_LEARNING_READY|PASS
+AFFECTED_ITEM_IDS|0
+P0|0
+P1|0
+P2|0
+MINIMAL_DELTA|0
+DELTA_CLASS|DELTA_B_SOURCE_EQUIVALENT
+EXPOSURE_SYSTEM_VERDICT|SYSTEM_HOLD
+RELEASE_AUTHORIZATION|NO
+MASTERY_ACTIVATION|NO
+```
+
+---
+
+### VI. BẢO TỒN RANH GIỚI THẨM QUYỀN HỆ THỐNG
+
+1. Phê duyệt **`ACADEMIC_G12_CHAPTER_II = PASS`** và **`PEDAGOGICAL_SELF_LEARNING_READY = PASS`** áp dụng nghiêm ngặt cho toàn bộ học liệu SGK Toán 12 KNTT Tập 1 (Bài 6–8 và Tự kiểm tra cuối chương) trong gói candidate `R00`.
+2. **`RELEASE_AUTHORIZATION = NO`**: Phê duyệt học thuật và sư phạm này **không** cấp quyền merge/deploy code lên GitHub repository công khai hay xuất bản lên website/frontend.
+3. **`MASTERY_ACTIVATION = NO`**: **Không** tự động kích hoạt tính năng Tự kiểm tra công khai (Final Submit) hay tính điểm Skill Mastery cho người học.
+4. **`EXPOSURE_SYSTEM_VERDICT = SYSTEM_HOLD`**: Tạm hoãn xuất bản hệ thống cho đến khi hoàn tất cổng kiểm thử kỹ thuật và duyệt release chính thức.
+
+---
+
+💡 *Bạn có thể theo dõi chi tiết báo cáo phản biện bổ sung đã được tạo lập trong Studio panel bên phải (`Bao_Cao_Dinh_Chinh_Chung_Cu_Toan_12_Chuong_II_R00.md`).*

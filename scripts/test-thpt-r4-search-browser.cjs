@@ -39,7 +39,7 @@ const base="http://127.0.0.1:8765/thpt-preview/";
    await query("lớp 10",9); // 8 available chapter cards + one clearly marked unpublished ChV
    let result=await query("chương I",3); // G10, G11, and newly integrated G12 chapter I
    assert((await result.first().getAttribute("href")).endsWith("chuong-i/"));
-   result=await query("chương II",2); // G10 and G11 ChII
+   result=await query("chương II",3); // G10, G11 and G12 ChII
    assert((await result.first().getAttribute("href")).endsWith("chuong-ii/"));
    result=await query("lớp 10, chương I",1);
    assert((await result.first().getAttribute("href")).endsWith("chuong-i/"));
@@ -47,13 +47,13 @@ const base="http://127.0.0.1:8765/thpt-preview/";
    assert((await result.first().getAttribute("href")).endsWith("chuong-i/bai-1/"));
    result=await query("lớp 10, chương I, bài 2",1);
    assert((await result.first().getAttribute("href")).endsWith("chuong-i/bai-2/"));
-   result=await query("bài 7",2); // G10 and G11 B07
+   result=await query("bài 7",3); // G10, G11 and G12 B07
    assert((await result.first().getAttribute("href")).endsWith("chuong-iv/bai-7/"));
-   result=await query("tọa độ",2);
+   result=await query("tọa độ",5);
    const paths=await result.evaluateAll(nodes=>nodes.map(node=>node.getAttribute("href")));
    assert(paths.some(path=>path.endsWith("chuong-vii/")),"Coordinate chapter remains discoverable");
    assert(paths.some(path=>path.endsWith("chuong-iv/bai-10/")),"New coordinate lesson must be discoverable");
-   await query("toa do",2);
+   await query("toa do",5);
    result=await query("chương IV, bài 9",1);
    assert((await result.first().getAttribute("href")).endsWith("chuong-iv/bai-9/"));
    result=await query("bài 10",2); // Both G10 and newly released G11 B10
@@ -126,13 +126,19 @@ const base="http://127.0.0.1:8765/thpt-preview/";
    result=await query("lớp 11, bài "+n,1);
    assert((await result.first().getAttribute("href")).endsWith("lop-11/chuong-ix/bai-"+n+"/"),"G11 B"+n+" search");
    }
-   result=await query("lớp 12",1);
+   result=await query("lớp 12",2);
    assert((await result.first().getAttribute("href")).endsWith("lop-12/chuong-i/"),"G12 ChI unique chapter");
    result=await query("lớp 12, chương I",1);
    assert((await result.first().getAttribute("href")).endsWith("lop-12/chuong-i/"),"G12 chapter I");
    for(const n of [1,2,3,4,5]){
     result=await query("lớp 12, bài "+n,1);
     assert((await result.first().getAttribute("href")).endsWith("lop-12/chuong-i/bai-"+n+"/"),"G12 B0"+n+" discoverable");
+   }
+   result=await query("lớp 12, chương II",1);
+   assert((await result.first().getAttribute("href")).endsWith("lop-12/chuong-ii/"),"G12 Chapter II");
+   for(const n of [6,7,8]){
+    result=await query("lớp 12, bài "+n,1);
+    assert((await result.first().getAttribute("href")).endsWith("lop-12/chuong-ii/bai-"+n+"/"),"G12 B0"+n+" route");
    }
    result=await query("lớp 12, chương I, bài 3",1);
    assert((await result.first().getAttribute("href")).endsWith("lop-12/chuong-i/bai-3/"));

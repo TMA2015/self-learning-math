@@ -1,0 +1,48 @@
+/* G12 SGK Chapter II R00 · scoped, learner-first, no golden overrides. */
+.g12-chii-lesson,.g12-chii-self-check{min-width:0;overflow-wrap:anywhere}
+.g12-chii-stage{margin:24px 0 30px;padding-top:12px;border-top:1px solid var(--md-default-fg-color--lightest)}
+.g12-chii-stage-title{font-size:1.11rem;line-height:1.35;margin:12px 0 16px}
+.g12-chii-item{margin:16px 0;padding:16px;border:1px solid var(--md-default-fg-color--lightest);border-radius:12px;scroll-margin-top:6rem;min-width:0}
+.g12-chii-item h4{margin:5px 0 11px;font-size:1rem}
+.g12-chii-item h5{margin:10px 0 6px;font-size:.91rem}
+.g12-chii-input{display:block;width:100%;max-width:100%;min-height:96px;margin:12px 0;padding:12px;background:var(--md-default-bg-color);color:var(--md-default-fg-color);border:1px solid var(--md-default-fg-color--lighter);border-radius:8px;resize:vertical;font:inherit;font-size:16px}
+.g12-chii-input:disabled{opacity:.78}
+.g12-chii-submit{display:inline-flex;min-height:44px;align-items:center;justify-content:center;padding:10px 15px;margin:7px 0;background:var(--md-accent-fg-color);color:var(--md-default-bg-color);font:inherit;font-weight:700;border:1px solid var(--md-accent-fg-color);border-radius:9px;cursor:pointer}
+.g12-chii-submit:disabled{opacity:.62;cursor:default}
+.g12-chii-feedback{font-size:.87rem;margin:7px 0}
+.g12-chii-answer{margin:10px 0;padding:12px 16px;background:var(--md-code-bg-color);border-radius:10px;border:1px solid var(--md-default-fg-color--lightest);white-space:pre-line}
+.g12-chii-answer[hidden]{display:none!important}
+.g12-chii-help{margin:10px 0;padding:12px 15px;border:1px solid var(--md-default-fg-color--lightest);border-radius:9px}
+.g12-chii-help summary{font-weight:650;cursor:pointer}
+.g12-chii-help p{white-space:pre-line}
+.g12-chii-return{display:inline-block;margin:10px 0;font-weight:700}
+.g12-chii-figure{overflow:auto;max-width:100%;margin:12px 0}
+.g12-chii-figure img{max-width:100%;height:auto;display:block;margin:auto}
+.g12-chii-paragraph{white-space:pre-line}
+.g12-chii-math-display{overflow-x:auto}
+.g12-chii-error{padding:12px;border-left:3px solid var(--md-accent-fg-color)}
+@media(max-width:640px){.g12-chii-item{padding:12px;margin:12px 0}.g12-chii-stage{margin:18px 0 24px}.g12-chii-submit{width:100%}.g12-chii-answer{padding:12px}}
+
+/* Keep same-page remediation readable on small physical screens. */
+.g12-chii-return{margin-right:1rem;min-height:44px;display:inline-flex;align-items:center}
+.g12-chii-selfcheck-item .g12-chii-answer[hidden]{display:none!important}
+
+
+/* G12 ChII: one chapter-wide Core and Practice hub, preserve Golden R4 grade palette. */
+.g12-chii-hub{min-width:0;overflow-wrap:anywhere}
+.g12-chii-hub-lesson{scroll-margin-top:6rem}
+.g12-chii-hub-group{display:block;gap:0;align-self:start;scroll-margin-top:6rem}
+.g12-chii-hub-group[open]{grid-column:1/-1}
+.g12-chii-hub-summary{display:flex;flex-direction:column;gap:10px;list-style:none;cursor:pointer}
+.g12-chii-hub-summary::-webkit-details-marker{display:none}
+.g12-chii-hub-summary::marker{content:""}
+.g12-chii-hub-kind{color:var(--thpt-grade-accent,#8554c1);font-weight:850;font-size:.87rem}
+.g12-chii-hub-count{font-size:.82rem;color:var(--md-default-fg-color--light)}
+.g12-chii-hub-action{display:block;text-align:center;min-height:44px;border-radius:8px;border:1px solid #d8c2f4;padding:10px 12px;color:var(--thpt-grade-accent,#8554c1);font-weight:750}
+.g12-chii-hub-summary:hover .g12-chii-hub-action,.g12-chii-hub-group[open] .g12-chii-hub-action{background:var(--md-code-bg-color)}
+.g12-chii-hub-body{border-top:1px solid var(--md-default-fg-color--lightest);margin-top:15px;padding:0 2px;min-width:0}
+.g12-chii-hub-help{margin:0 16px 18px;border:1px solid var(--md-default-fg-color--lightest);border-radius:10px;scroll-margin-top:6rem}
+.g12-chii-hub-help>summary{padding:12px 16px;cursor:pointer;font-weight:700}
+.g12-chii-hub-help-body{padding:0 16px 12px}
+.g12-chii-hub-lesson>.g12-chii-return{margin:0 18px 16px}
+@media(max-width:720px){.g12-chii-hub .thpt-r4-practice-card-grid{grid-template-columns:1fr}.g12-chii-hub-group[open]{grid-column:1}}
