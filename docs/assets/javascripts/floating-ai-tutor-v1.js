@@ -78,17 +78,18 @@
 
   const activeFormativeDialog = () =>
     [...document.querySelectorAll("dialog[open]")].reverse().find(d=>
-      d.matches(".thpt-r4-practice-dialog")&&
+      d.matches(".thpt-r4-practice-dialog,.topic-core-dialog")&&
       !d.matches("[data-thpt-readiness],[data-thpt-protected-readiness]"));
   const lessonContext = () => {
-    // When inside a Golden modal, send ONLY the active PUBLIC question stem.
+    // Inside any native PUBLIC Core/Practice modal (THCS and THPT),
+    // send ONLY the active public question stem, never an answer or draft.
     // Never transfer model answer/rubric, hidden disclosure, learner draft,
     // other questions, or independent assessment content to Gemini.
     const modal=activeFormativeDialog();
     if(modal){
-      const card=modal.querySelector("[data-thpt-canonical-item],.thpt-r4-reviewed-formative-card");
-      const prompt=card?.querySelector("h3");
-      const title=clean(modal.querySelector(".thpt-r4-modal-heading h2")?.textContent || document.title);
+      const card=modal.querySelector("[data-thpt-canonical-item],.thpt-r4-reviewed-formative-card,.topic-micro-panel");
+      const prompt=card?.querySelector("h3,.topic-micro-question");
+      const title=clean(modal.querySelector(".thpt-r4-modal-heading h2,.topic-core-dialog__head h2")?.textContent || document.title);
       const selected=prompt?selectedText(prompt):"";
       return {
         title,
