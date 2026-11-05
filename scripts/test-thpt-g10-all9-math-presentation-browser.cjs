@@ -56,7 +56,21 @@ const open=async(page,url)=>{
       await open(page,practice+"?item="+id);
       await page.locator("dialog.thpt-r4-practice-dialog").waitFor({state:"visible",timeout:15000});
       const prompt=page.locator("dialog.thpt-r4-practice-dialog .thpt-r4-reviewed-formative-card h3");
-      await prompt.locator("mjx-container").first().waitFor({state:"attached",timeout:25000});
+      try{
+       await prompt.locator("mjx-container").first().waitFor({state:"attached",timeout:12000});
+      }catch(error){
+       const diagnostics=await page.evaluate(()=>({
+        mathjax:typeof window.MathJax,
+        typesetPromise:typeof window.MathJax?.typesetPromise,
+        startup:typeof window.MathJax?.startup?.promise?.then,
+        ready:document.readyState,
+        script:[...document.querySelectorAll("script[src]")].filter(s=>s.src.includes("mathjax")).map(s=>s.src),
+        item:document.querySelector(".thpt-r4-reviewed-formative-card")?.dataset.thptCanonicalItem,
+        prompt:document.querySelector(".thpt-r4-reviewed-formative-card h3")?.innerHTML?.slice(0,650),
+        mathNodes:document.querySelectorAll(".thpt-r4-reviewed-formative-card [data-thpt-reviewed-math]").length
+       }));
+       throw Error("G10 "+ch+" item "+id+" @"+width+" MathJax render failure: "+JSON.stringify(diagnostics)+"; "+error.message);
+      }
       assert(await prompt.locator("[data-thpt-reviewed-math]").count()>0,"Missing math wrapper "+id);
       const visible=await prompt.innerText();
       assert(!/\$[^$\n]+\$/.test(visible),"Raw math dollar on published Core "+id);
