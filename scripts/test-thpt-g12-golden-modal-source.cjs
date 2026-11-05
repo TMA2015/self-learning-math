@@ -3,7 +3,7 @@ const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("n
 const root=path.resolve(__dirname,"..");
 const src=p=>fs.readFileSync(path.join(root,p),"utf8");
 const runtime=src("docs/assets/javascripts/thpt-g12-golden-formative-modal-v1.js");
-for(const required of ['text.startsWith("$$",i)','text.startsWith("\\(",i)', 'const mathNode=el(', 'const script=el(', 'q.item_id', 'result.hidden=!state.submitted'])
+for(const required of ['text.startsWith("$$",i)','text.startsWith("\\\\(",i)', 'const mathNode=el(', 'const script=el(', 'q.item_id', 'result.hidden=!state.submitted'])
  assert(runtime.includes(required),"Golden G12 missing AP2/assessment guard: "+required);
 for(const config of ["mkdocs.yml","mkdocs.thpt-preview.yml"]){
  const c=src(config);
