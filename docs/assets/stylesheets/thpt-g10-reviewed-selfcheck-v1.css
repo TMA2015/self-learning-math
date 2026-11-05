@@ -24,3 +24,12 @@
 .g10sc-verdict{font-weight:600}
 .g10sc-error{color:var(--md-typeset-a-color)}
 @media(max-width:480px){[data-g10-chapter-selfcheck]{padding:.65rem}.g10sc-jump{gap:.2rem}.g10sc-choice{padding:.35rem .48rem}.g10sc-controls{justify-content:space-between}.g10sc-button{font-size:.8rem}}
+
+
+/* AP2/AP5: allow long reviewed formulae to reflow/scroll locally without
+ * clipping the page on iPhone; TeX wrappers are presentation-only. */
+.g10sc-rich .g10sc-math-inline{max-width:100%;overflow-wrap:normal}
+.g10sc-rich .g10sc-math-display{max-width:100%;overflow-x:auto;overflow-y:hidden;padding:3px 0}
+.g10sc-rich mjx-container[display="true"]{max-width:100%;overflow-x:auto;overflow-y:hidden}
+.g10sc-body,.g10sc-rich,.g10sc-review{min-width:0}
+.g10sc-choice{max-width:100%;word-break:normal;overflow-wrap:anywhere}
