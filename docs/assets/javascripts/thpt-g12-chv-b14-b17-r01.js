@@ -241,7 +241,7 @@ const start=async()=>{
   if(bank.packet_id!=="G12-SGK-CHV-B14-B17-R01"||bank.mode!=="CLIENT_SELF_CHECK_NO_MASTERY"||
    bank.source_blob!=="11eb2834cfdb4a24685157f84666c2bb0767970a"||
    bank.receipt_blob!=="a07070119259bd0133535fc3250d008cd78d8195"||
-   bank.items.length!==96||new Set(bank.items.map(q=>q.item_id)).size!==88||
+   bank.items.length!==96||new Set(bank.items.map(q=>q.item_id)).size!==96||
    bank.help.length!==24||bank.end_references.length!==24||
    roles.some(role=>bank.items.filter(q=>q.role===role).length!==24)||
    new Set(bank.end_references.map(r=>r.item_id)).size!==24||
@@ -250,9 +250,9 @@ const start=async()=>{
    bank.end_references.filter(r=>bank.items.find(q=>q.item_id===r.item_id)?.optional_after_b17).length!==1)throw Error("Canonical bank/source receipt mismatch");
   root.replaceChildren();
   if(root.hasAttribute("data-g12-chv-hub"))startHub(root,bank);else startSelfCheck(root,bank);
-  root.dataset.g12ChivReady="true";
+  root.dataset.g12ChvReady="true";
  }catch(e){
-  root.dataset.g12ChivError="true";
+  root.dataset.g12ChvError="true";
   root.replaceChildren(paragraph("Không tải được học liệu gốc đã kiểm duyệt. Hãy thử tải lại trang.","g12-chv-error"));
   console.error("G12 ChV RELEASE",e);
  }
