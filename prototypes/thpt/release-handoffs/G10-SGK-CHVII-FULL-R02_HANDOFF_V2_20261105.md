@@ -8,9 +8,9 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: SGK_CHAPTER
 RELEASE_SCOPE: FULL_LEARNING_PATH
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/Temp_G10_SGK_CHVII_FULL_R02_SOURCE_WITH_CANONICAL_REFERENCES_20261105.md
-ACADEMIC_SOURCE_BLOB: c5f132d090d68335dae21a65a5c235f29d6ff4fe
+ACADEMIC_SOURCE_BLOB: c5c222af88b0e932f9b60df059d8ffd4da5f0f26
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/G10_CHVII_FULL_R02_AUTHOR_COMPOSITE_NOTEBOOKLM_REVIEW_CHAIN_20261105.md
-REVIEW_RECEIPT_BLOB: 1548d7ae86ad255f612bc0c43b7c04b3d6cf52a3
+REVIEW_RECEIPT_BLOB: 23d78820b86a7c6afaaceddc9cdd51a1db0c3020
 ACADEMIC_VERDICT: PASS
 PEDAGOGICAL_VERDICT: PASS
 BLOCKERS: NONE
@@ -187,7 +187,7 @@ SGK Kết nối tri thức Toán 10 **Tập Hai**: ChVII trang in 29–59; bài 
 ## D1_D6_EVIDENCE
 
 - D1: bốn bài SGK hiện có gồm vectơ/đường thẳng, vị trí/góc/khoảng cách, đường tròn, ba conic; bổ sung 23 PED3 nghĩa hình học trước công thức.
-- D2: ví dụ R01 lịch sử từng bài với lời giải/điều kiện; bốn bài giữ nguyên trong nguồn tổng hợp `c5f132d090d68335dae21a65a5c235f29d6ff4fe`, reviewer mới không đòi re-review D2.
+- D2: ví dụ R01 lịch sử từng bài với lời giải/điều kiện; bốn bài giữ nguyên trong nguồn tổng hợp `c5c222af88b0e932f9b60df059d8ffd4da5f0f26`, reviewer mới không đòi re-review D2.
 - D3: 32 public canonical Core/Practice/Application cũ hiện giữ một nguồn `docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js` blob `2b191d7abba7a4f5bd79d4c122673cd53a45495b`; thêm 23 First Try mới được reviewer PASS, không nhân bản.
 - D4: bốn Written/Anchor một nguồn `docs/thpt-preview/thu-vien/tu-luan-chuong-vii.md` blob `ebc70018a168998c7dd43b34c3e195a2b1e15ed7`; giữ nguyên rubric, Anchor là nhãn, không phải câu thứ năm.
 - D5: ba hình SVG cũ đã review và 23 hướng dẫn đọc hình PED4 đã được NotebookLM kiểm.
@@ -229,7 +229,7 @@ SGK Kết nối tri thức Toán 10 **Tập Hai**: ChVII trang in 29–59; bài 
 
 ## REVIEW_SOURCE_RECEIPT
 
-Receipt tổng hợp `prototypes/thpt/review-packets/G10_CHVII_FULL_R02_AUTHOR_COMPOSITE_NOTEBOOKLM_REVIEW_CHAIN_20261105.md` Git blob `1548d7ae86ad255f612bc0c43b7c04b3d6cf52a3` định danh chính xác nguồn composite `c5f132d090d68335dae21a65a5c235f29d6ff4fe`. Reviewer owner RAW TXT original `G10_CHVII_PED_R01_NOTEBOOKLM_OWNER_RAW_VERDICT_20261105.txt` Git blob `665be9c606f97cd96c0bb055ce1f8a9031554257`, exact raw SHA256 `d69eacb09af89f46e98a842d08df751a3fffe89aa6fa88634a584fb7549e77a4`: 23/23 outcomes, 23/23 First Try, Q01–Q18, Academic PASS/PED PASS, P0/P1/P2=0, ZERO revisions. Reviewer sử dụng 5 Permanent Sources THPT v2.1. R01 source gốc `5377380447ca2f131b634b8b65db885f86418cdd` giữ nguyên. FULL R02 chỉ thêm tham chiếu ngân hàng đã review và đính chính trang in; không thay nội dung toán của reviewer, không tự gắn reviewer verdict cho source khác không tương đương. Chi tiết phản biện R01 giữ nguyên bản gốc.
+Receipt tổng hợp `prototypes/thpt/review-packets/G10_CHVII_FULL_R02_AUTHOR_COMPOSITE_NOTEBOOKLM_REVIEW_CHAIN_20261105.md` Git blob `23d78820b86a7c6afaaceddc9cdd51a1db0c3020` định danh chính xác nguồn composite `c5c222af88b0e932f9b60df059d8ffd4da5f0f26`. Reviewer owner RAW TXT original `G10_CHVII_PED_R01_NOTEBOOKLM_OWNER_RAW_VERDICT_20261105.txt` Git blob `665be9c606f97cd96c0bb055ce1f8a9031554257`, exact raw SHA256 `d69eacb09af89f46e98a842d08df751a3fffe89aa6fa88634a584fb7549e77a4`: 23/23 outcomes, 23/23 First Try, Q01–Q18, Academic PASS/PED PASS, P0/P1/P2=0, ZERO revisions. Reviewer sử dụng 5 Permanent Sources THPT v2.1. R01 source gốc `5377380447ca2f131b634b8b65db885f86418cdd` giữ nguyên. FULL R02 chỉ thêm tham chiếu ngân hàng đã review và đính chính trang in; không thay nội dung toán của reviewer, không tự gắn reviewer verdict cho source khác không tương đương. Chi tiết phản biện R01 giữ nguyên bản gốc.
 
 ## DELTA_LEDGER
 
@@ -244,7 +244,7 @@ Không đưa ngân hàng đánh giá độc lập RD1 kín lên Git. ChVII 14 ca
 
 ## AUTHOR_SIGNOFF
 
-AUTHORING 05/11/2026 ký **CONTENT_READY học thuật** cho bốn bài SGK và 23 outcome đúng reviewer, không còn P0/P1/P2 liên quan math/PED; source `prototypes/thpt/content-drafts/Temp_G10_SGK_CHVII_FULL_R02_SOURCE_WITH_CANONICAL_REFERENCES_20261105.md` @ `c5f132d090d68335dae21a65a5c235f29d6ff4fe`, reviewer chain `prototypes/thpt/review-packets/G10_CHVII_FULL_R02_AUTHOR_COMPOSITE_NOTEBOOKLM_REVIEW_CHAIN_20261105.md` @ `1548d7ae86ad255f612bc0c43b7c04b3d6cf52a3`. 59 canonical IDs minh bạch, source cũ không nhân bản. `BLOCKERS: NONE` trong phạm vi học liệu public SELF_CHECK_NO_MASTERY, không cấp chứng cứ official readiness hay quyền phát hành.
+AUTHORING 05/11/2026 ký **CONTENT_READY học thuật** cho bốn bài SGK và 23 outcome đúng reviewer, không còn P0/P1/P2 liên quan math/PED; source `prototypes/thpt/content-drafts/Temp_G10_SGK_CHVII_FULL_R02_SOURCE_WITH_CANONICAL_REFERENCES_20261105.md` @ `c5c222af88b0e932f9b60df059d8ffd4da5f0f26`, reviewer chain `prototypes/thpt/review-packets/G10_CHVII_FULL_R02_AUTHOR_COMPOSITE_NOTEBOOKLM_REVIEW_CHAIN_20261105.md` @ `23d78820b86a7c6afaaceddc9cdd51a1db0c3020`. 59 canonical IDs minh bạch, source cũ không nhân bản. `BLOCKERS: NONE` trong phạm vi học liệu public SELF_CHECK_NO_MASTERY, không cấp chứng cứ official readiness hay quyền phát hành.
 
 ## RELEASE_ACCEPTANCE
 
