@@ -66,7 +66,9 @@ async function verifyG12GoldenHub(page,{chapter,selector,lessons,groups,items,he
  await page.keyboard.press("Escape");
  assert.equal(await dlg.isVisible(),false,"Escape closes via native dialog");
  if(chapter==="III"){
-  const firstHelp=hub.locator("details.g12-chiii-help[data-g12-golden-d6-outcome]").first();
+  const outerHelp=hub.locator("details.g12-chiii-hub-help#b09-help");
+  await outerHelp.locator(":scope > summary").click();
+  const firstHelp=outerHelp.locator("details.g12-chiii-help[data-g12-golden-d6-outcome]").first();
   assert.equal(await firstHelp.count(),1,"Existing five-step D6 is canonically tied to an outcome");
   const helpTitle=await firstHelp.locator("summary").innerText();
   assert(helpTitle.includes("Bài 9")&&helpTitle.includes("Core câu 1")&&helpTitle.includes("Luyện tập câu 1"),
