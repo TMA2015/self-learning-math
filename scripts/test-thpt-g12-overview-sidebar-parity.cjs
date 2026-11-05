@@ -17,12 +17,12 @@ const names={i:1,ii:2,iii:3,iv:4,v:5,vi:6};
 assert(cards.length>0&&cards.length===new Set(cards).size,"G12 chapter cards must be unique");
 assert(lessons.length===new Set(lessons).size,"G12 search lesson routes must be unique");
 const equal=(a,b,message)=>assert.deepEqual([...a].sort(),[...b].sort(),message);
-for(const configName of ["mkdocs.yml","mkdocs.thpt-preview.yml"]){
+for(const configName of ["mkdocs.thpt-preview.yml"]){
  const cfg=read(configName);
  const m=cfg.match(/^      - Lớp 12:\s*\n([\s\S]*?)(?=^  - Học theo chuyên đề:)/m);
  assert(m,configName+": missing G12 sidebar section");
  const nav=m[1];
- const chapterRoutes=[...nav.matchAll(/^          - Tổng quan Chương (?:I|II|III|IV|V|VI): thpt-preview\/sgk\/lop-12\/(chuong-[ivx]+)\.md$/gm)].map(x=>x[1]);
+ const chapterRoutes=[...nav.matchAll(/^              - Tổng quan Chương (?:I|II|III|IV|V|VI): thpt-preview\/sgk\/lop-12\/(chuong-[ivx]+)\.md$/gm)].map(x=>x[1]);
  const lessonRoutes=[...nav.matchAll(/thpt-preview\/sgk\/lop-12\/(chuong-[ivx]+)\/bai-(\d+)\.md/g)].map(x=>x[1]+"/bai-"+x[2]);
  equal(cards,chapterRoutes,"G12 overview chapter cards must match "+configName+" sidebar");
  equal(lessons,lessonRoutes,"G12 search lessons must match "+configName+" sidebar");
@@ -30,6 +30,7 @@ for(const configName of ["mkdocs.yml","mkdocs.thpt-preview.yml"]){
  for(const r of lessonRoutes)assert(fs.existsSync(path.join(root,"docs/thpt-preview/sgk/lop-12/"+r+".md")),"Missing G12 lesson source "+r);
 }
 assert(cluster.includes(cards.length+" chương có học liệu"),"G12 overview counter stale");
+assert(read("mkdocs.yml").includes("thpt-preview/sgk/index.md"),"Combined site must still link to THPT SGK overview");
 assert(!cluster.includes("Chương I–II có học liệu"),"G12 stale chapter I-II banner");
 const grade=read("docs/thpt-preview/sgk/lop-12/index.md");
 for(const ch of cards)assert(grade.includes('href="'+ch+'/":')||grade.includes('href="'+ch+'/">'),
@@ -38,4 +39,4 @@ const search=read("docs/assets/javascripts/thpt-r4-preview.js");
 assert(search.includes("items.filter(x=>!x.hasAttribute(\"data-thpt-search-only\")).length"),
  "Search counter must derive from live chapter items, not fixed numbers");
 assert(md.includes("Đang tải danh mục"),"Do not hardcode an outdated global result count");
-console.log("PASS G12 SGK navigation: two MkDocs sidebars, learner chapter/lesson routes, search and overview are consistent for "+cards.length+" published chapters and "+lessons.length+" lessons.");
+console.log("PASS G12 SGK navigation: THPT MkDocs sidebar, combined site entry, chapter/lesson routes, search and overview are consistent for "+cards.length+" published chapters and "+lessons.length+" lessons.");
