@@ -121,6 +121,7 @@ function mount(root,bank,{chapter}={}){
   if(q.conditions)result.append(el("h4","","Điều kiện / giới hạn"),para(q.conditions));
   if(q.rubric){result.append(el("h4","","Tiêu chí tự đối chiếu tự luận /5"));for(const r of Array.isArray(q.rubric)?q.rubric:[q.rubric])result.append(para(r))}
   solution.append(solutionSummary,result);
+  solution.addEventListener("toggle",()=>{if(solution.open)math(solution)});
   form.append(label,submit,feedback);
   form.addEventListener("submit",e=>{
    e.preventDefault();if(state.submitted)return;
