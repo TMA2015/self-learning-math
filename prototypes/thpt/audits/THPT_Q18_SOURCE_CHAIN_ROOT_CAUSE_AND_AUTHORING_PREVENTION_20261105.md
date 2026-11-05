@@ -75,7 +75,7 @@ This example does NOT replace the Source 06 requirement to deliver actual real T
 
 ## D. TOPIC readiness before any new Topic authoring is authorized
 
-- TOPIC must be independently scoped with LEARNING_PATH: TOPIC, its own packet/source/outcomes and exactly three learning sections: Kiến thức, Luyện tập, Tự kiểm tra; no separate Core. Crosslink from SGK supports but does not substitute Topic knowledge.
+- TOPIC must be independently scoped with LEARNING_PATH: TOPIC, an EXPLICIT OUTCOME_ID or EXPECTED_OUTCOME_IDS field in its source (not just cited SGK Bxx_OUT IDs), its own packet/source/outcomes and exactly three learning sections: Kiến thức, Luyện tập, Tự kiểm tra; no separate Core. Crosslink from SGK supports but does not substitute Topic knowledge.
 - Reuse shared canonical item_id with distinct placement/role, not cloned stem/answer/rubric. Original SGK review receipt can be cited only for exact shared item snapshot; SGK PASS is never automatic TOPIC PASS.
 - Run the new authoring PREPARE / PREFLIGHT / REVIEW / AFTER REVIEW / DELTA gates on every new Topic review. Public-safe RD0 and private RD1 follow separate source protection paths.
 - Stop immediately if a reviewer sees the wrong file; do not keep making reviewer solve Git/hash discrepancies or retry full chapters on unchanged content.
@@ -87,6 +87,6 @@ Local offline execution on 05/11/2026:
 
     python scripts/test_authoring_review_source_lock.py -v
 
-Five synthetic regression tests PASS: (1) public exact Git source passes, changing one byte fails; (2) editing uncommitted working source fails; (3) private off-Git source passes and mutation fails; (4) three independently locked sources form a CRC-valid ZIP but changed member fails; (5) report source filename and textual anchor consistency passes and wrong filename fails.
+Eight synthetic regression tests PASS: (1) public exact Git source passes, changing one byte fails; (2) editing uncommitted working source fails; (3) private off-Git source passes and mutation fails; (4) three independently locked sources form a CRC-valid ZIP but changed member fails; (5) report source filename and textual anchor consistency passes and wrong filename fails; (6) legacy SGK Bxx_OUT format is still supported; (7) TOPIC source with only reused SGK ID but no declared Topic outcomes is blocked; (8) private RD1 source placed inside the public Git checkout is blocked.
 
-Test suites and script exist in GitHub Draft branch and **are not automatically enforced on main** until approved and integrated. No private RD1 or real assessment content is included in synthetic tests. G10 ChVI PR #756 remains on Q18 reviewer-input HOLD, not CONTENT_READY; do not retroactively promote its R02 verdict from this tool.
+Test suites and script exist in GitHub Draft branch and **are not automatically enforced on main** until approved and integrated. No private RD1 or real assessment content is included in offline synthetic tests. G10 ChVI PR #756 remains on Q18 reviewer-input HOLD, not CONTENT_READY; do not retroactively promote its R02 verdict from this tool.
