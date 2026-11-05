@@ -167,6 +167,12 @@ nav:
               - Bài 8 · Biểu thức tọa độ của các phép toán vectơ: thpt-preview/sgk/lop-12/chuong-ii/bai-8.md
               - Core và Luyện tập Bài 6–8: thpt-preview/sgk/lop-12/chuong-ii/luyen-tap.md
               - Tự kiểm tra cuối Chương II · Tự đối chiếu: thpt-preview/sgk/lop-12/chuong-ii/tu-kiem-tra-chuong.md
+          - Chương III · Các số đặc trưng đo mức độ phân tán:
+              - Tổng quan Chương III: thpt-preview/sgk/lop-12/chuong-iii.md
+              - Bài 9 · Khoảng biến thiên và khoảng tứ phân vị: thpt-preview/sgk/lop-12/chuong-iii/bai-9.md
+              - Bài 10 · Phương sai và độ lệch chuẩn: thpt-preview/sgk/lop-12/chuong-iii/bai-10.md
+              - Core và Luyện tập Bài 9–10: thpt-preview/sgk/lop-12/chuong-iii/luyen-tap.md
+              - Tự kiểm tra cuối Chương III · Tự đối chiếu: thpt-preview/sgk/lop-12/chuong-iii/tu-kiem-tra-chuong.md
   - Học theo chuyên đề:
       - Tổng quan chuyên đề: thpt-preview/chuyen-de/index.md
       - Hàm số và đồ thị:
@@ -224,6 +230,7 @@ extra_css:
   - assets/stylesheets/thpt-g11-supplement-p99-p109-r00.css
   - assets/stylesheets/thpt-g12-chi-b01-b05-r00.css
   - assets/stylesheets/thpt-g12-chii-b06-b08-r00.css
+  - assets/stylesheets/thpt-g12-chiii-b09-b10-r00.css
   - assets/stylesheets/thpt-chvi-d6-reviewed-r01.css
   - assets/stylesheets/thpt-g10-reviewed-selfcheck-v1.css
 extra_javascript:
@@ -291,3 +298,4 @@ extra_javascript:
   - assets/javascripts/thpt-g11-supplement-p99-p109-r00.js
   - assets/javascripts/thpt-g12-chi-b01-b05-r00.js
   - assets/javascripts/thpt-g12-chii-b06-b08-r00.js
+  - assets/javascripts/thpt-g12-chiii-b09-b10-r00.js
