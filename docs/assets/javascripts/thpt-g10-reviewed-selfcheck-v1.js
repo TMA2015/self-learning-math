@@ -63,10 +63,10 @@
     const run=()=>{
       if(!root.isConnected)return;
       const mj=window.MathJax;
-      if(typeof mj?.typesetPromise!=="function")return;
+      if(!mj)return;
       const ready=mj.startup?.promise;
       const process=()=>{
-        if(!root.isConnected)return;
+        if(!root.isConnected||typeof mj.typesetPromise!=="function")return;
         mj.typesetClear?.([root]);
         return mj.typesetPromise([root]);
       };
