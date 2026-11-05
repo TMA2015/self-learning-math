@@ -50,6 +50,21 @@ Sections were matched by **canonical OUTCOME_ID**, not by position alone. For ea
 
 These are author-owned observations **between R02 and R03 Git source**, not evidence of what the NotebookLM environment mounted for the earlier R02 review.
 
+## 2a. D6 return-target identity cross-check (author-owned)
+
+The 19 `Nếu chưa đúng` remediation returns were parsed from the immutable R03 source. Against the exact **54 canonical IDs in the historical R01 receipt** (`23156f35aab6ec28771a6a57d48bad74f3900e9c`), **15/19 returns resolve to an existing registered canonical ID and 4/19 intentionally return to an in-chapter SGK explanation section**; **0 unresolved THPT item IDs** were found. The four instructional targets are:
+
+| OUTCOME_ID | Actual instructional destination in R03 | Existing chapter page heading checked |
+|---|---|---|
+| B15_OUT_03 | `SGK Bài 15 §2 — điểm thuộc đồ thị` | Bài 15 `## 2. Đồ thị của hàm số` |
+| B16_OUT_01 | `SGK Bài 16 §1 — hệ số a khác 0` | Bài 16 `## 1. Khái niệm` |
+| B16_OUT_04 | `SGK Bài 16 §2 — tính biến thiên và tập giá trị` | Bài 16 `## 2. Đồ thị và tính chất` |
+| B16_OUT_05 | `SGK Bài 16 §5 — mô hình thực tế` | Bài 16 `## 5. Vận dụng` |
+
+This checks **source destination references in existing SGK chapter preview**, not actual learner-clickable HTML anchors or RELEASE route QA. Those four targets are **knowledge-placement references**, not invented exercise IDs. The 15 return IDs were not duplicated: they are references into already-reviewed R01 canonical content.
+
+R03 routing overlay provenance: `prototypes/thpt/content-drafts/G10_CHVI_PED_D6_R03_EFFECTIVE_ROUTING_OVERLAY_20261105.md`, blob `3532973d5b0f09b64160f3d59d4f1c8b644c6877`.
+
 ## 3. Outcome-level ID inventory for scoped independent review if needed
 
 | LESSON_ID | OUTCOME_IDs |
