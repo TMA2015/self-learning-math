@@ -53,6 +53,44 @@ class SourceLockTests(unittest.TestCase):
         self.assertEqual(len(recs), 1)
         return files[0], recs[0]
 
+    def test_sgk_chapter_legacy_outcome_fallback(self):
+        source = self.repo / 'content' / 'SGK-FIXTURE.md'
+        source.write_text('# SGK synthetic test\nPACKET_ID: SGK-FIXTURE\n'
+                          'LEARNING_PATH: SGK_CHAPTER\n'
+                          'STANDARD_ID: SLM-THPT-QUALITY-ONE\n'
+                          'B15_OUT_01: synthetic SGK outcome\n', encoding='utf-8')
+        self.git('add', 'content/SGK-FIXTURE.md')
+        self.git('commit', '-qm', 'synthetic SGK fixture')
+        r = self.run_tool('prepare', '--repo', self.repo,
+                          '--source', 'content/SGK-FIXTURE.md', '--packet', 'SGK-FIXTURE',
+                          '--scope', 'SGK_CHAPTER', '--outdir', self.out)
+        self.assertIn('OUTCOME_COUNT: 1', r.stdout)
+
+    def test_topic_requires_explicit_topic_outcomes(self):
+        source = self.repo / 'content' / 'TOPIC-WITHOUT-OUTCOME.md'
+        source.write_text('# Synthetic topic missing its own outcomes\n'
+                          'PACKET_ID: TOPIC-NO-OUTCOME\nLEARNING_PATH: TOPIC\n'
+                          'STANDARD_ID: SLM-THPT-QUALITY-ONE\n'
+                          'B15_OUT_01: reused SGK outcome only\n', encoding='utf-8')
+        self.git('add', 'content/TOPIC-WITHOUT-OUTCOME.md')
+        self.git('commit', '-qm', 'fixture for missing Topic outcome declaration')
+        r = self.run_tool('prepare', '--repo', self.repo,
+                          '--source', 'content/TOPIC-WITHOUT-OUTCOME.md',
+                          '--packet', 'TOPIC-NO-OUTCOME', '--scope', 'TOPIC',
+                          '--outdir', self.out, ok=False)
+        self.assertIn('TOPIC requires explicit', r.stderr)
+
+    def test_private_inside_public_checkout_is_rejected(self):
+        source = self.repo / 'private' / 'private-rd1.md'
+        source.parent.mkdir()
+        source.write_text('PACKET_ID: RD1-QA\nLEARNING_PATH: TOPIC\n'
+                          'STANDARD_ID: SLM-THPT-QUALITY-ONE\n'
+                          'EXPECTED_OUTCOME_IDS: TOPIC_PRIVATE_OUT_01\n')
+        r = self.run_tool('prepare-private', '--repo', self.repo, '--source', source,
+                          '--packet', 'RD1-QA', '--scope', 'TOPIC', '--outdir', self.out,
+                          ok=False)
+        self.assertIn('OUTSIDE the public Git checkout', r.stderr)
+
     def test_public_verified_then_one_byte_fails(self):
         source, rec = self.make_public()
         self.run_tool('preflight', '--repo', self.repo, '--file', source, '--receipt', rec)
