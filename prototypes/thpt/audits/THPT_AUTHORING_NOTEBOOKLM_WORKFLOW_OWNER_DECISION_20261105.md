@@ -1,5 +1,8 @@
 # AUTHORING — Owner process decision: NotebookLM reviews math/pedagogy, AUTHORING owns file provenance
 
+> **QUYẾT ĐỊNH MỚI NHẤT CỦA CHỦ DỰ ÁN 05/11/2026 — ƯU TIÊN HỌC THUẬT, THAY THẾ DIỄN GIẢI CŨ:** Mục tiêu của AUTHORING chỉ là biên soạn học liệu đúng, đủ, có chiều sâu; review NotebookLM kỹ từng nội dung; sửa những lỗi thật; bàn giao. Việc kiểm tra Git blob/metadata phục vụ truy vết tối thiểu, **không được tự tạo thêm vòng xét duyệt nếu reviewer đã mô tả chính xác đề, đáp án, lập luận, hình và outcome của học liệu**. Chênh lệch số byte đơn độc không là một phát hiện sai toán hoặc sai sư phạm. Không xây công cụ, chuẩn hoặc báo cáo kỹ thuật phụ để vượt qua blocker tự phát sinh; vẫn giữ chuẩn Q01–Q18, biên bản review và an toàn RD1. Quyết định này **thay thế** phần diễn giải trong tài liệu cũ đòi truy nguyên byte R02 bằng mọi giá. Học thuật Toán 10 hoàn thành SGK trước, sau đó mới xét Chuyên đề. Chi tiết tại `AGENTS.md` trong cùng nhánh AUTHORING.
+
+
 DECISION_DATE: 2026-11-05
 DECISION_AUTHORITY: PROJECT_OWNER
 SCOPE: SLM_THPT_AUTHORING_NOTEBOOKLM_HANDOFF
