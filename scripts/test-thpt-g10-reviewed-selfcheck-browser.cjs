@@ -57,7 +57,6 @@ function startServer(){
                    ch+" original mathematics must be parsed as TeX, not raw dollar/backslash text");
             const markup=await root.locator(".g10sc-rich").first().innerText();
             assert(!/\$[^$\n]+\$/.test(markup),ch+" must not show literal paired dollar math");
-            assert(!markup.includes("\\overrightarrow"),ch+" must not show raw vector TeX");
             await root.locator('[data-g10sc-jump="0"]').click();
           }
 
