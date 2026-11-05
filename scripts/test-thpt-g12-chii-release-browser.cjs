@@ -16,7 +16,9 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/lop-12/";
    };
    try{
     await open("");
-    assert.equal(await page.locator("a.thpt-r4-tile").count(),2,"ChI and ChII routes available");
+    assert((await page.locator("a.thpt-r4-tile").count())>=2,"At least ChI and ChII route tiles");
+    for(const route of ["chuong-i/","chuong-ii/"])
+     assert.equal(await page.locator('a.thpt-r4-tile[href="'+route+'"]').count(),1,"Expected G12 "+route+" tile");
     await open("chuong-ii/");
     assert.equal(await page.locator("a.thpt-r4-tile").count(),5,"Three B06–B08 lessons + one hub + END");
     assert.equal(await page.locator('a.thpt-r4-tile[href="luyen-tap/"]').count(),1);
@@ -50,6 +52,14 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/lop-12/";
      assert.equal(await section.locator(".g12-chii-help").count(),d6[n],"D6 count B0"+n);
     }
     const core=hub.locator("#b06-core");
+    const cardLayout=await core.locator(":scope > summary").evaluate(el=>{
+     const style=getComputedStyle(el),rects=[...el.children].map(c=>c.getBoundingClientRect());
+     return {display:style.display,flow:style.flexDirection,stack:rects.every((r,i)=>!i||r.top>=rects[i-1].bottom-1),
+      contained:rects.every(r=>r.right<=el.getBoundingClientRect().right+2)};
+    });
+    assert.equal(cardLayout.display,"flex","G12 Core card CSS must override MkDocs Material summary styles");
+    assert.equal(cardLayout.flow,"column","G11-style stacked Core card hierarchy");
+    assert(cardLayout.stack&&cardLayout.contained,"Core labels and action do not overlap");
     assert.equal(await core.getAttribute("open"),null,"Groups initially closed");
     await core.locator("summary").click();
     assert.notEqual(await core.getAttribute("open"),null,"Core opens");
@@ -78,6 +88,9 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/lop-12/";
     const end=page.locator('[data-g12-chii-selfcheck="END"]');
     await page.waitForFunction(()=>document.querySelector("[data-g12-chii-selfcheck]")?.dataset.g12ChiiReady==="true",null,{timeout:30000});
     assert.equal(await end.locator(".g12-chii-selfcheck-item").count(),16,"Exactly 16 reused approved END refs");
+    assert.equal(await end.locator(".g12-chii-quiz-jump").count(),16,"G11-style numbered navigation");
+    assert.equal(await end.locator(".g12-chii-selfcheck-item:visible").count(),1,"One visible question before Final Submit");
+    assert.equal(await end.locator(".g12-chii-quiz-progress").innerText(),"Câu 1 / 16 · Chưa nộp");
     assert.equal(await end.locator(".g12-chii-answer:not([hidden])").count(),0,"END key protected");
     assert.equal(await end.locator(".g12-chii-return").count(),0,"No END D6 before Final Submit");
     const ids=await end.locator(".g12-chii-selfcheck-item").evaluateAll(xs=>xs.map(x=>x.dataset.canonicalItem));
@@ -90,12 +103,21 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/lop-12/";
     await submit.click();
     assert.equal(await end.locator(".g12-chii-answer:not([hidden])").count(),0,"No partial Final Submit");
     const entries=await end.locator(".g12-chii-selfcheck-item textarea").all();
-    for(const [i,x]of entries.entries())await x.fill("Bài tự giải số "+(i+1));
+    for(const [i,x]of entries.entries()){
+     await end.locator(".g12-chii-quiz-jump").nth(i).click();
+     assert.equal(await end.locator(".g12-chii-selfcheck-item:visible").count(),1,"Only selected question visible");
+     await x.fill("Bài tự giải số "+(i+1));
+    }
+    await end.locator(".g12-chii-quiz-jump").first().click();
+    assert.equal(await entries[0].inputValue(),"Bài tự giải số 1","Draft retained when navigating");
     await submit.click();
     assert(await submit.isDisabled(),"Final Submit one-way");
     assert.equal(await end.locator(".g12-chii-answer:not([hidden])").count(),16,"END keys only after Final Submit");
     assert.equal(await end.locator(".g12-chii-return").count(),16,"Post-Submit D6 available");
     assert.equal(await end.locator("textarea:disabled").count(),16);
+    assert.equal(await end.locator(".g12-chii-selfcheck-item:visible").count(),1,"One visible question after Final Submit");
+    await end.locator(".g12-chii-quiz-jump").last().click();
+    assert.equal(await end.locator(".g12-chii-answer:visible").count(),1,"Reveal only active question result after Final Submit");
     assert((await page.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth))<=20,"END reflow");
     console.log("PASS G12 ChII "+viewport.width+"px: separate 64-item chapter Core/Practice, 16 D6, original 3 SGK lessons/SVG, Q16 16 END refs.");
    }finally{await page.close()}
