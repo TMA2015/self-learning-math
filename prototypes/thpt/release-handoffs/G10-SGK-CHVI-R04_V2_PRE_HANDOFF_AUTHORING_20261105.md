@@ -2,6 +2,12 @@
 
 > **CẬP NHẬT AUTHORING 05/11 — R01 SHA 5/5 PASS:** ZIP gốc 28/10 được khôi phục tại Library, 26.884 bytes, exact full ZIP SHA và 5 thành phần khớp receipt. Audit SHA Git `48d1d46fdc777ed3eda3c94798fa501f6ef6dc35`. **Chỉ còn Q18 R02 reviewer-mounted source identity HOLD.** Giữ `CONTENT_READY=NO`, không signed V2/ready/REGISTER, không release.
 
+R02_SOURCE_IDENTITY_AUTHOR_AUDIT_BLOB: c50494ce18fb8a2f224d11c0e54f49781099f38f
+R02_REVIEWER_MOUNTED_SOURCE_BYTES_REPORTED: 92640
+R02_SOURCE_CANONICAL_UTF8_BYTES: 93198
+R02_SOURCE_CR_COUNT: 0
+R02_SOURCE_IDENTITY_STATUS: HOLD
+
 PACKET_ID: G10-SGK-CHVI
 LEARNING_PATH: SGK_CHAPTER
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -33,6 +39,8 @@ CURRENT_MAIN_R04_NEW_ITEM_IDS_INTEGRATED: 0
 PRIVATE_RD1_COUNT_NEW: 0
 RELEASE_AUTHORIZATION: NO
 MASTERY_ACTIVATION: NO
+
+> **Q18 R02 source-identity audit 05/11:** Kiểm trực tiếp R02 Git blob `1e6a76e...` (93.198 UTF-8 bytes, 0 CR, 812 LF) và R03 `77d42ce...`: **19/19 đề, đáp án, lập luận First Try giữ nguyên**, chỉ 12 đường trở lại D6 và canonical reuse `THPT-G10-B18-C01` có điều chỉnh; biên bản Git `c50494ce18fb8a2f224d11c0e54f49781099f38f`. Reviewer R02 ghi nguồn mounted 92.640 bytes/blob `116963cd...` không truy xuất được, và thống kê R01 48+6 trái với receipt 28+8+18. Không được thay chứng cứ bằng giả thiết normalize xuống dòng. **Q18 R02 còn HOLD; CONTENT_READY=NO**.
 
 ## Một nguồn học liệu theo phiên bản, không viết lại đề đã PASS
 
