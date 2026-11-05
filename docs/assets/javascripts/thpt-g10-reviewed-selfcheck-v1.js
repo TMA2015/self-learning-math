@@ -60,10 +60,22 @@
     parent.append(container);
   };
   const typeset=root=>{
-    if(window.MathJax && typeof window.MathJax.typesetPromise==="function"){
-      window.MathJax.typesetClear && window.MathJax.typesetClear([root]);
-      window.MathJax.typesetPromise([root]).catch(()=>{});
-    }
+    const run=()=>{
+      if(!root.isConnected)return;
+      const mj=window.MathJax;
+      if(typeof mj?.typesetPromise!=="function")return;
+      const ready=mj.startup?.promise;
+      const process=()=>{
+        if(!root.isConnected)return;
+        mj.typesetClear?.([root]);
+        return mj.typesetPromise([root]);
+      };
+      if(ready?.then)void ready.then(process).catch(()=>{});
+      else void process().catch(()=>{});
+    };
+    if(window.MathJax?.typesetPromise)run();
+    else if(document.readyState!=="complete")
+      window.addEventListener("load",run,{once:true});
   };
   const mcqKey=q=>{
     if(q.type!=="MCQ_SINGLE"||q.optional)return null;
