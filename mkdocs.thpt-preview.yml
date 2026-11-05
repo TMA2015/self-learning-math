@@ -180,6 +180,15 @@ nav:
               - Bài 13 · Ứng dụng của tích phân: thpt-preview/sgk/lop-12/chuong-iv/bai-13.md
               - Core và Luyện tập Chương IV: thpt-preview/sgk/lop-12/chuong-iv/luyen-tap.md
               - Tự kiểm tra cuối Chương IV: thpt-preview/sgk/lop-12/chuong-iv/tu-kiem-tra-chuong.md
+          - Chương V · Phương pháp tọa độ trong không gian:
+              - Tổng quan Chương V: thpt-preview/sgk/lop-12/chuong-v.md
+              - Bài 14 · Phương trình mặt phẳng: thpt-preview/sgk/lop-12/chuong-v/bai-14.md
+              - Bài 15 · Phương trình đường thẳng: thpt-preview/sgk/lop-12/chuong-v/bai-15.md
+              - Bài 16 · Công thức tính góc: thpt-preview/sgk/lop-12/chuong-v/bai-16.md
+              - Bài 17 · Phương trình mặt cầu: thpt-preview/sgk/lop-12/chuong-v/bai-17.md
+              - Mở rộng sau Bài 17: thpt-preview/sgk/lop-12/chuong-v/mo-rong-sau-bai-17.md
+              - Core và Luyện tập Chương V: thpt-preview/sgk/lop-12/chuong-v/luyen-tap.md
+              - Tự kiểm tra cuối Chương V: thpt-preview/sgk/lop-12/chuong-v/tu-kiem-tra-chuong.md
   - Học theo chuyên đề:
       - Tổng quan chuyên đề: thpt-preview/chuyen-de/index.md
       - Hàm số và đồ thị:
@@ -235,10 +244,12 @@ extra_css:
   - assets/stylesheets/math-knowledge-r30-consistency.css
   - assets/stylesheets/thpt-r4-preview.css
   - assets/stylesheets/thpt-g11-supplement-p99-p109-r00.css
+  - assets/stylesheets/thpt-g12-golden-formative-modal-v1.css
   - assets/stylesheets/thpt-g12-chi-b01-b05-r00.css
   - assets/stylesheets/thpt-g12-chii-b06-b08-r00.css
   - assets/stylesheets/thpt-g12-chiii-b09-b10-r00.css
   - assets/stylesheets/thpt-g12-chiv-b11-b13-r00.css
+  - assets/stylesheets/thpt-g12-chv-b14-b17-r01.css
   - assets/stylesheets/thpt-chvi-d6-reviewed-r01.css
   - assets/stylesheets/thpt-g10-reviewed-selfcheck-v1.css
 extra_javascript:
@@ -304,7 +315,9 @@ extra_javascript:
   - assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js
   - assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js
   - assets/javascripts/thpt-g11-supplement-p99-p109-r00.js
+  - assets/javascripts/thpt-g12-golden-formative-modal-v1.js
   - assets/javascripts/thpt-g12-chi-b01-b05-r00.js
   - assets/javascripts/thpt-g12-chii-b06-b08-r00.js
   - assets/javascripts/thpt-g12-chiii-b09-b10-r00.js
   - assets/javascripts/thpt-g12-chiv-b11-b13-r00.js
+  - assets/javascripts/thpt-g12-chv-b14-b17-r01.js

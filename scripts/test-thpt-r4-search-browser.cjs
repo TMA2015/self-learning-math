@@ -49,24 +49,24 @@ const base="http://127.0.0.1:8765/thpt-preview/";
    assert((await result.first().getAttribute("href")).endsWith("chuong-i/bai-2/"));
    result=await query("bài 7",3); // G10, G11 and G12 B07
    assert((await result.first().getAttribute("href")).endsWith("chuong-iv/bai-7/"));
-   result=await query("tọa độ",5);
+   result=await query("tọa độ",6);
    const paths=await result.evaluateAll(nodes=>nodes.map(node=>node.getAttribute("href")));
    assert(paths.some(path=>path.endsWith("chuong-vii/")),"Coordinate chapter remains discoverable");
    assert(paths.some(path=>path.endsWith("chuong-iv/bai-10/")),"New coordinate lesson must be discoverable");
-   await query("toa do",5);
+   await query("toa do",6);
    result=await query("chương IV, bài 9",1);
    assert((await result.first().getAttribute("href")).endsWith("chuong-iv/bai-9/"));
-   result=await query("bài 10",2); // Both G10 and newly released G11 B10
+   result=await query("bài 10",3); // G10/G11/G12 B10
    assert((await result.first().getAttribute("href")).endsWith("chuong-iv/bai-10/"));
-   result=await query("bài 11",2); // Both G10 and newly released G11 B11
+   result=await query("bài 11",3); // G10/G11/G12 B11
    assert((await result.first().getAttribute("href")).endsWith("chuong-iv/bai-11/"));
-   result=await query("bài 12",2); // Both G10 and newly released G11 B12
+   result=await query("bài 12",3); // G10/G11/G12 B12
    assert((await result.first().getAttribute("href")).endsWith("chuong-v/bai-12/"));
    result=await query("chương V, bài 12",1);
    assert((await result.first().getAttribute("href")).endsWith("chuong-v/bai-12/"),"Released B12 should be found");
-   result=await query("bài 13",2); // Both G10 and newly released G11 B13
+   result=await query("bài 13",3); // G10/G11/G12 B13
    assert((await result.first().getAttribute("href")).endsWith("chuong-v/bai-13/"));
-   result=await query("bài 14",2); // Both G10 and newly released G11 B14
+   result=await query("bài 14",3); // Both G10 and newly released G11 B14
    assert((await result.first().getAttribute("href")).endsWith("chuong-v/bai-14/"));
    result=await query("lớp 11",9); // G11 ChI–ChVIII, current release candidate
    assert((await result.first().getAttribute("href")).endsWith("lop-11/chuong-i/"));
@@ -126,7 +126,7 @@ const base="http://127.0.0.1:8765/thpt-preview/";
    result=await query("lớp 11, bài "+n,1);
    assert((await result.first().getAttribute("href")).endsWith("lop-11/chuong-ix/bai-"+n+"/"),"G11 B"+n+" search");
    }
-   result=await query("lớp 12",2);
+   result=await query("lớp 12",5);
    assert((await result.first().getAttribute("href")).endsWith("lop-12/chuong-i/"),"G12 ChI unique chapter");
    result=await query("lớp 12, chương I",1);
    assert((await result.first().getAttribute("href")).endsWith("lop-12/chuong-i/"),"G12 chapter I");
@@ -139,6 +139,21 @@ const base="http://127.0.0.1:8765/thpt-preview/";
    for(const n of [6,7,8]){
     result=await query("lớp 12, bài "+n,1);
     assert((await result.first().getAttribute("href")).endsWith("lop-12/chuong-ii/bai-"+n+"/"),"G12 B0"+n+" route");
+   }
+   for(const [roman,lessons] of [["III",[9,10]],["IV",[11,12,13]]]){
+    result=await query("lớp 12, chương "+roman,1);
+    const slug=roman.toLowerCase();
+    assert((await result.first().getAttribute("href")).endsWith("lop-12/chuong-"+slug+"/"),"G12 Chapter "+roman+" must be in overview");
+    for(const n of lessons){
+     result=await query("lớp 12, bài "+n,1);
+     assert((await result.first().getAttribute("href")).endsWith("lop-12/chuong-"+slug+"/bai-"+n+"/"),"G12 B"+n+" searchable");
+    }
+   }
+   result=await query("lớp 12, chương V",1);
+   assert((await result.first().getAttribute("href")).endsWith("lop-12/chuong-v/"),"G12 ChV chapter discovery");
+   for(const n of [14,15,16,17]){
+    result=await query("lớp 12, bài "+n,1);
+    assert((await result.first().getAttribute("href")).endsWith("lop-12/chuong-v/bai-"+n+"/"),"G12 ChV B"+n+" direct lesson discovery");
    }
    result=await query("lớp 12, chương I, bài 3",1);
    assert((await result.first().getAttribute("href")).endsWith("lop-12/chuong-i/bai-3/"));
