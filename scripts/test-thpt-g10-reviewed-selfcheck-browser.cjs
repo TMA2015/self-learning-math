@@ -48,6 +48,18 @@ function startServer(){
           for(const leak of ["Đáp án:","Lời giải:","Kết quả tự đánh giá","Đúng theo đáp án đã review","Chưa khớp đáp án"])
             assert(!before.includes(leak),ch+" pre-submit UI leak "+leak);
           assert.equal(await root.locator(".g10sc-review").count(),0);
+          if(["CHIV","CHV","CHVII","CHVIII"].includes(ch)){
+            const locked=JSON.parse(fs.readFileSync(path.join(docs,"assets/data/thpt-g10-readiness",ch+".json"),"utf8"));
+            const index=locked.items.findIndex(q=>/\$[^$\n]+\$|\\(?:vec|overrightarrow|bar)/.test(q.stem));
+            assert(index>=0,ch+" must have canonical TeX needing display rendering");
+            await root.locator('[data-g10sc-jump="'+index+'"]').click();
+            assert(await root.locator(".g10sc-math-inline, .g10sc-math-display").count()>0,
+                   ch+" original mathematics must be parsed as TeX, not raw dollar/backslash text");
+            const markup=await root.locator(".g10sc-rich").first().innerText();
+            assert(!/\$[^$\n]+\$/.test(markup),ch+" must not show literal paired dollar math");
+            await root.locator('[data-g10sc-jump="0"]').click();
+          }
+
           const choice=root.locator('.g10sc-choice input[type="radio"]');
           if(await choice.count())await choice.first().check();
           else await root.locator("textarea").first().fill("Bài tự kiểm tra QA, tự đối chiếu sau nộp.");

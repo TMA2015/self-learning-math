@@ -318,7 +318,7 @@
   // answer text when a reviewed D6 return link changes roles in this modal.
   const lastViewedReviewed=new Map(),reviewedResponses=new Map();
 
-  // DELTA_A_UI: G11 PUBLIC formative math only; text-node based, no HTML
+  // DELTA_A_UI: G10/G11 PUBLIC formative math; text-node based, no HTML
   // parsing, canonical source mutation, private RD1 or learner data writes.
   const renderG11Math=(parent,value)=>{
     const source=String(value??"");
@@ -399,8 +399,10 @@
     flush();
   };
   const reviewedText=(el,value,item)=>{
-    if(String(item.grade)==="11")renderG11Math(el,value);
-    else el.textContent=String(value??""); // G10 historical display untouched
+    // Same safe presentation-only TeX handling for G10/G11 PUBLIC records.
+    // Never mutate canonical question/answer source or touch Readiness/RD1.
+    if(String(item.grade)==="11"||String(item.grade)==="10"||/^THPT-G10-/.test(String(item.item_id||"")))renderG11Math(el,value);
+    else el.textContent=String(value??"");
   };
 
   let pendingD6Item=null;
@@ -425,7 +427,7 @@
    prev.type=next.type="button";prev.textContent="← Câu trước";next.textContent="Câu tiếp →";
    const render=()=>{
     const item=items[index];lastViewedReviewed.set(viewedKey,item.item_id);
-    if(String(item.grade)==="11")window.MathJax?.typesetClear?.([card]);
+    window.MathJax?.typesetClear?.([card]);
      card.replaceChildren();tabs.replaceChildren();
     card.dataset.thptCanonicalItem=item.item_id;
     const exposureRole=item.role==="CORE"?"SGK_CORE":
@@ -563,7 +565,7 @@
     reviewLesson.className="thpt-r4-remediation-link";
     reviewLesson.textContent="↶ Ôn lại kiến thức Bài "+item.lesson;
     const matchPath=location.pathname.match(/^(.*?\/)(?:thpt-preview|thpt)\//);
-    const chapter=Number(item.lesson)<=2?"i":Number(item.lesson)<=4?"ii":Number(item.lesson)<=6?"iii":Number(item.lesson)<=8?"iv":Number(item.lesson)<=18?"vi":Number(item.lesson)<=22?"vii":Number(item.lesson)<=25?"viii":"ix";
+    const chapter=Number(item.lesson)<=2?"i":Number(item.lesson)<=4?"ii":Number(item.lesson)<=6?"iii":Number(item.lesson)<=8?"iv":Number(item.lesson)<=11?"iv":Number(item.lesson)<=14?"v":Number(item.lesson)<=18?"vi":Number(item.lesson)<=22?"vii":Number(item.lesson)<=25?"viii":"ix";
     reviewLesson.href=matchPath?
       matchPath[0]+(item.item_id.startsWith("THPT-G11-")?"sgk/lop-11/chuong-"+(Number(item.lesson)>=31?"ix":Number(item.lesson)>=28?"viii":Number(item.lesson)>=22?"vii":Number(item.lesson)>=18?"vi":Number(item.lesson)>=15?"v":Number(item.lesson)>=10?"iv":Number(item.lesson)>=8?"iii":Number(item.lesson)>=5?"ii":"i")+"/bai-":"sgk/chuong-"+chapter+"/bai-")+item.lesson+"/":
       "../bai-"+item.lesson+"/";
@@ -574,7 +576,20 @@
     card.append(prompt,answerForm,actions);
     // Only public formative text is typeset; never load any held-out readiness
     // prompts or answer keys into the browser.
-    if(window.MathJax?.typesetPromise)window.MathJax.typesetPromise([card]).catch(()=>{});
+    // Deep links may mount before remote MathJax is ready. Defer the
+    // presentation-only typesetting until script load, without source writes.
+    const typesetCard=()=>{
+     if(!card.isConnected)return;
+     const mj=window.MathJax;
+     if(!mj)return;
+     const ready=mj.startup?.promise;
+     const process=()=>{if(card.isConnected&&typeof window.MathJax?.typesetPromise==="function")return window.MathJax.typesetPromise([card])};
+     if(ready?.then)void ready.then(process).catch(()=>{});
+     else void process()?.catch(()=>{});
+    };
+    if(window.MathJax?.typesetPromise)typesetCard();
+    else if(document.readyState==="complete")typesetCard();
+    else window.addEventListener("load",typesetCard,{once:true});
     prev.disabled=index===0;next.disabled=index===items.length-1;
    };
    prev.addEventListener("click",()=>{if(index>0){index--;render()}});

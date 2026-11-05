@@ -26,4 +26,4 @@
 </div>
 <p><a href="../../../thu-vien/tu-luan-chuong-viii/"><strong>✍️ Ba bài tự luận Chương VIII (một Anchor)</strong></a> · tự giải rồi mở lời giải/rubric.</p>
 <p class="thpt-r4-footnote">Một số bài nhị thức Newton là <strong>mở rộng tự chọn</strong>. Hình cây đếm chỉ hiện khi người học mở lời giải; các bài đã luyện không thay thế bài Tự kiểm tra độc lập.</p>
-<div class="thpt-r4-lesson-tabs"><a href="../">Tổng quan Chương VIII</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra chương · chưa kích hoạt</a></div>
+<div class="thpt-r4-lesson-tabs"><a href="../">Tổng quan Chương VIII</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra chương</a></div>
