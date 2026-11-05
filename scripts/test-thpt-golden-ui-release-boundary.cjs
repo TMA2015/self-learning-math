@@ -50,7 +50,7 @@ for(const ch of chapter){
  assert(bank.mode==="CLIENT_SELF_CHECK_NO_MASTERY","No independent RD1/Mastery from G12 public bank Ch"+ch.name);
  assert(Array.isArray(bank.items)&&bank.items.length===ch.total&&new Set(bank.items.map(x=>x.item_id)).size===ch.total,
   "Frozen public canonical IDs not unique on Ch"+ch.name);
- const count=ch.name==="I"?bank.items.filter(x=>/^B\\d{2}$/.test(x.lesson_id)).length:bank.items.length;
+ const count=ch.name==="I"?bank.items.filter(x=>/^B\d{2}$/.test(x.lesson_id)).length:bank.items.length;
  assert(count===ch.public,"Source placements missing on chapter hub Ch"+ch.name);
  assert(end.includes("data-g12-"+ch.short+"-selfcheck"),"Protected self-check route missing Ch"+ch.name);
  for(let n=ch.start;n<=ch.end;n++){
