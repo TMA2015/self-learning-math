@@ -195,11 +195,11 @@ Chọn đều một số nguyên từ 1 đến 12. Tính xác suất số đư�
 
 **PED6 — TỰ THỬ TRƯỚC CORE: `item_id THPT-G10-CHIX-TRY05`**
 
-Một ứng dụng phát ngẫu nhiên một trong ba thông báo A, B, C theo một **thuật toán không được mô tả**. Bạn Minh nói: “Vì có ba thông báo nên P(hiện A)=1/3”. Minh đã đủ căn cứ chưa? Giải thích.
+(a) Một ứng dụng phát ngẫu nhiên một trong ba thông báo A, B, C theo một **thuật toán không được mô tả**. Bạn Minh nói: “Vì có ba thông báo nên P(hiện A)=1/3”. Minh đã đủ căn cứ chưa? Giải thích. (b) Trong một hộp có **200 vé phân biệt**, chỉ một vé đặc biệt; rút đều một vé. Hãy tính xác suất rút được vé đặc biệt và đánh giá lời khẳng định “Xác suất rất nhỏ nghĩa là không thể trúng”.
 
 <details class="thpt-r4-pedagogical-note" data-thpt-first-try-id="THPT-G10-CHIX-TRY05">
 <summary>Tự đối chiếu lời giải sau khi em đã thử</summary>
-<p><strong>Đáp án và lập luận:</strong> **Chưa đủ căn cứ.** Từ “ngẫu nhiên” không cho biết thuật toán chọn A,B,C có đồng khả năng hay không. Chỉ khi có bằng chứng ba kết quả được chọn đều mới suy ra \(P(A)=1/3\); đề bài hiện tại không cho điều đó.</p>
+<p><strong>Đáp án và lập luận:</strong> **(a) Chưa đủ căn cứ.** Từ “ngẫu nhiên” không cho biết thuật toán chọn A,B,C có đồng khả năng hay không. Chỉ khi ba kết quả được chọn đều mới suy ra \(P(A)=1/3\); đề bài hiện tại không cho điều đó. **(b)** Vì 200 vé được rút đều và chỉ 1 vé trúng, \(P(\text{trúng})=1/200=0{,}005>0\). Trúng rất hiếm trong một lần rút nhưng không phải biến cố không thể.</p>
 </details>
 
 #### D6 — HELP-G10-CHIX-TRY05 (năm bước khắc phục)
@@ -209,7 +209,7 @@ Một ứng dụng phát ngẫu nhiên một trong ba thông báo A, B, C theo m
 <p><strong>Bước 1:</strong> Nhận diện lỗi: tự đồng nhất “có ba nhãn” với “mỗi nhãn có xác suất 1/3”.</p>
 <p><strong>Bước 2:</strong> Nhắc điều kiện định nghĩa cổ điển: Ω hữu hạn, khác rỗng, từng kết quả sơ cấp đồng khả năng.</p>
 <p><strong>Bước 3:</strong> Xét thuật toán khác: chọn A với xác suất 1/2, B và C mỗi cái 1/4; vẫn ngẫu nhiên nhưng không đều.</p>
-<p><strong>Bước 4:</strong> Trở lại phát biểu của Minh: gạch dưới dữ kiện về cơ chế chọn còn thiếu, rồi tự mở lời giải.</p>
+<p><strong>Bước 4:</strong> Trở lại (a) tìm giả thiết đồng khả năng còn thiếu; với (b) nêu 200 vé đồng khả năng, đúng một kết quả thuận lợi, soát \(1/200>0\), rồi tự mở đối chiếu.</p>
 <p><strong>Bước 5:</strong> Ôn canonical THPT-G10-B26-P05 để luyện phát hiện giả thiết đồng khả năng còn thiếu.</p>
 <p><strong>Điểm quay về canonical:</strong> `THPT-G10-B26-P05` — đường học SGK B26, Core/Practice đã review lịch sử; câu mới chỉ là Tự thử unscored, không cộng Mastery.</p>
 </details>
