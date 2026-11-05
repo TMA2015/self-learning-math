@@ -16,13 +16,19 @@ R02_FULL_PED_SOURCE_BLOB: 1e6a76ee32b722b5e5457e85f90eb32f4d98b57d
 R02_OWNER_REVIEWER_SECOND_VERDICT_BLOB: 9c9e1ff77fc8fad501d2858fe14b08dfe4605897
 R02_OWNER_REVIEWER_Q07_SVG_VERDICT: PASS_B15_B18
 R03_D6_CORRECTED_ROUTE_OVERLAY_PATH: prototypes/thpt/content-drafts/G10_CHVI_PED_D6_R03_EFFECTIVE_ROUTING_OVERLAY_20261105.md
-R03_D6_CORRECTED_ROUTE_OVERLAY_BLOB: 883ade5a77fb85c7ffd12d7098cf06e46550a76f
+R03_D6_CORRECTED_ROUTE_OVERLAY_BLOB: 3532973d5b0f09b64160f3d59d4f1c8b644c6877
+R03_EFFECTIVE_CANONICAL_SOURCE_PATH: prototypes/thpt/content-drafts/Temp_G10_CHVI_PED_R03_EFFECTIVE_CANONICAL_SOURCE_20261105.md
+R03_EFFECTIVE_CANONICAL_SOURCE_BLOB: 77d42ce0ecf6fd4677ea0d831589db4bb18290d8
+R03_DELTA_CLASS: DELTA_B_SOURCE_EQUIVALENT_PLACEMENT_AND_DUPLICATE_CANONICAL_ID_RECONCILIATION
+R02_REVIEWED_FIRST_TRY_PLACEMENTS: 19
+R03_RETIRED_REVIEW_ALIAS: THPT-G10-CHVI-TRY17
+R03_ONE_REUSED_CANONICAL: THPT-G10-B18-C01
 PRIMARY_S1_SGK_TAP2_SHA256: ee8a00392e1c9fc5b213e574666cf1f8487548737e138573f28a988c640fafe6
 PRIMARY_S1_SBT_TAP2_SHA256: 3cb33690e0627b9e8ac467c23625b7feb7d05a8422293db0e1b26e44ca6a78c7
 PUBLIC_CLIENT_FINAL_JSON_GIT_BLOB: 0760782256a2d8d91c398814e62d013cf6083eb7
 EXPECTED_OLD_CANONICAL_ITEM_COUNT: 54
-EXPECTED_NEW_PUBLIC_FIRST_TRY_ITEM_COUNT: 19
-EXPECTED_TOTAL_PUBLIC_DISTINCT_CANONICAL_ITEM_COUNT: 73
+EXPECTED_NEW_PUBLIC_FIRST_TRY_ITEM_COUNT: 18
+EXPECTED_TOTAL_PUBLIC_DISTINCT_CANONICAL_ITEM_COUNT: 72
 PROTECTED_RD1_ITEMS_INCLUDED: 0
 CONTENT_READY: NO
 RELEASE_AUTHORIZATION: NO
@@ -44,7 +50,7 @@ MASTERY_ACTIVATION: NO
 |---|---|---|---|---|---|
 | B15 | `B15_OUT_01` | `THPT-G10-CHVI-TRY01` | `HELP-G10-CHVI-TRY01` | `THPT-G10-B15-C01` | — |
 | B15 | `B15_OUT_02` | `THPT-G10-CHVI-TRY02` | `HELP-G10-CHVI-TRY02` | `THPT-G10-B15-C02` | — |
-| B15 | `B15_OUT_03` | `THPT-G10-CHVI-TRY03` | `HELP-G10-CHVI-TRY03` | `SGK B15 §2` | `THPT-G10-CHVI-APP-A2` |
+| B15 | `B15_OUT_03` | `THPT-G10-CHVI-TRY03` | `HELP-G10-CHVI-TRY03` | `SGK B15 §2` | — |
 | B15 | `B15_OUT_04` | `THPT-G10-CHVI-TRY04` | `HELP-G10-CHVI-TRY04` | `THPT-G10-B15-P03` | — |
 | B15 | `B15_OUT_05` | `THPT-G10-CHVI-TRY05` | `HELP-G10-CHVI-TRY05` | `THPT-G10-B15-P02` | `THPT-G10-B15-P04` |
 | B16 | `B16_OUT_01` | `THPT-G10-CHVI-TRY06` | `HELP-G10-CHVI-TRY06` | `SGK B16 §1` | — |
@@ -58,11 +64,11 @@ MASTERY_ACTIVATION: NO
 | B17 | `B17_OUT_04` | `THPT-G10-CHVI-TRY14` | `HELP-G10-CHVI-TRY14` | `THPT-G10-B17-P03` | `THPT-G10-CHVI-APP-B4` |
 | B17 | `B17_OUT_05` | `THPT-G10-CHVI-TRY15` | `HELP-G10-CHVI-TRY15` | `THPT-G10-B17-P04` | `THPT-G10-CHVI-APP-B3` |
 | B18 | `B18_OUT_01` | `THPT-G10-CHVI-TRY16` | `HELP-G10-CHVI-TRY16` | `THPT-G10-B18-C02` | `THPT-G10-B18-P03` |
-| B18 | `B18_OUT_02` | `THPT-G10-CHVI-TRY17` | `HELP-G10-CHVI-TRY17` | `THPT-G10-B18-C01` | `THPT-G10-B18-P01` |
+| B18 | `B18_OUT_02` | `THPT-G10-B18-C01` (FIRST_TRY placement; R02 alias `TRY17` retired) | `HELP-G10-CHVI-TRY17` | `THPT-G10-B18-P01` | `THPT-G10-B18-P03` |
 | B18 | `B18_OUT_03` | `THPT-G10-CHVI-TRY18` | `HELP-G10-CHVI-TRY18` | `THPT-G10-B18-P01` | `THPT-G10-B18-P03` |
 | B18 | `B18_OUT_04` | `THPT-G10-CHVI-TRY19` | `HELP-G10-CHVI-TRY19` | `THPT-G10-B18-P04` | — |
 
-**SOURCE OF ACTUAL MATH AND PED BODY:** R02 `Temp_G10_CHVI_PED_R02_FULL_CHAPTER_REVIEW_20261105.md` exact Git blob `1e6a76ee...`, không copy song song tạo hai phiên bản câu. **Corrected route metadata:** `G10_CHVI_PED_D6_R03_EFFECTIVE_ROUTING_OVERLAY_20261105.md` exact Git blob `883ade5a...`. Reviewer 19/19 Academic+PED PASS đã được ghi nhận trên ngữ nghĩa từng item; Q18 còn là bài toán chứng cứ nguồn của AUTHORING, không giao NotebookLM làm hash.
+**EFFECTIVE AUTHORING PED SOURCE:** R03 `Temp_G10_CHVI_PED_R03_EFFECTIVE_CANONICAL_SOURCE_20261105.md`, exact Git blob `77d42ce0...`, ghép 19 bài toán R02 reviewed blob `1e6a76ee...` mà không thay đề/đáp án, chỉ sửa 12 destination và hợp nhất một câu trùng canonical (overlay `3532973d...`). Reviewer 19/19 Academic+PED PASS là verdict trên snapshot R02, không phải PASS mới cho R03; Q18 mounted parity là trách nhiệm AUTHORING, không giao NotebookLM làm hash.
 
 ## 2. Frozen R01 inventory — đúng một câu/một item ID
 
@@ -159,14 +165,14 @@ MASTERY_ACTIVATION: NO
 | `Q12` | 19 READ_VISUAL, bao gồm 2 SVG mới đúng XML, bổ sung nguồn hình/bảng kế thừa | DOCUMENTED_OR_REVIEWER_REPORTED_PASS |
 | `Q13` | 19 METHOD/limits, điều kiện căn và a≠0, S1 B17_OUT04 tham số a cố định | DOCUMENTED_OR_REVIEWER_REPORTED_PASS |
 | `Q14` | 19 FIRST_TRY trước Core, tự mở đáp án và D6 tự sửa, không Mastery | DOCUMENTED_OR_REVIEWER_REPORTED_PASS |
-| `Q15` | 54 old + 19 TRY =73 canonical item_id, HELP và FIG khác namespace; IDs không trùng | DOCUMENTED_OR_REVIEWER_REPORTED_PASS |
+| `Q15` | R02 TRY17 trùng nguyên đề `THPT-G10-B18-C01`; đã quy về **1 canonical với 2 placements**, 54 old + 18 new TRY = **72 active item IDs**, HELP/FIG khác namespace | AUTHOR_QA_PASS_SOURCE_EQUIVALENT_Q15_DEDUP |
 | `Q16` | 18 public final CHVI.json = CLIENT_SELF_CHECK_NO_MASTERY, Final Submit, không RD1 protected; practice không Mastery | DOCUMENTED_OR_REVIEWER_REPORTED_PASS |
 | `Q17` | Chỉ SGK Chapter, Topic tự đủ riêng; không dùng Topic Core để vá SGK, không suy Topic PASS | DOCUMENTED_OR_REVIEWER_REPORTED_PASS |
 | `Q18` | R01 frozen ZIP 5 SHA; R02 Git blob exists nhưng external NotebookLM mounted diff (93,198 vs 92,640), chưa có diff chứng minh source equivalence | **HOLD_AUTHOR_SOURCE_CUSTODY** |
 
 ## 5. What can and cannot be handed to RELEASE
 
-**Prepared now:** exact Git source of full new R02, reviewer summary with correct 19/19 item outcomes, approved B17 parameter correction, verified two SVG Q07/PED4 PASS, source/page index, repaired D6 routing-to-skill metadata (12 remaps without changing any question body), one 73-item ID inventory, safety boundary CHVI public selfcheck no mastery, and lesson-by-lesson concept-first route.
+**Prepared now:** exact R03 effective Git source gồm 19 bài toán nguyên vẹn, đã sửa routing và định danh canonical,  reviewer summary with correct 19/19 item outcomes, approved B17 parameter correction, verified two SVG Q07/PED4 PASS, source/page index, repaired D6 routing-to-skill metadata (12 remaps without changing any question body), one 72-item active canonical ID inventory, safety boundary CHVI public selfcheck no mastery, and lesson-by-lesson concept-first route.
 
 **NOT prepared / blocked:** this is **NOT** a true full canonical reproduction of the historic five R01 source files, because the private original ZIP is not present in Git at this path, and R02 external NotebookLM mounted source differs in raw bytes without mechanically established equivalence; therefore do not misstate `Q18 PASS`. For a signed FULL_R03 V2 `CONTENT_READY` handoff, AUTHORING must establish credible source-custody proof without delegating it to NotebookLM, then freeze exact R03 source/receipt SHA and create **ONE** handoff V2, **ONE** `ready/` manifest and **ONE** new REGISTER row. If this cannot be closed, report `BLOCKED_BY_AUTHORING(Q18)` without endless technical re-review loops.
 
