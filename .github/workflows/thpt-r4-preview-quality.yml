@@ -103,6 +103,11 @@ on:
       - 'scripts/test-thpt-g12-chi-release-browser.cjs'
       - 'scripts/test-thpt-g12-chii-release-source.cjs'
       - 'scripts/test-thpt-g12-chii-release-browser.cjs'
+      - 'scripts/test-thpt-g12-chiii-source-lock.cjs'
+      - 'scripts/test-thpt-g12-chiii-release-browser.cjs'
+      - 'docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json'
+      - 'docs/assets/javascripts/thpt-g12-chiii-b09-b10-r00.js'
+      - 'docs/assets/stylesheets/thpt-g12-chiii-b09-b10-r00.css'
       - 'docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json'
       - 'docs/assets/javascripts/thpt-g12-chii-b06-b08-r00.js'
       - 'docs/assets/stylesheets/thpt-g12-chii-b06-b08-r00.css'
@@ -195,6 +200,9 @@ jobs:
           node --check docs/assets/javascripts/thpt-chiv-b09-b11-reviewed-formative-v1.js
           node --check docs/assets/javascripts/thpt-g11-chi-reviewed-formative-v1.js
           node --check docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js
+          node --check docs/assets/javascripts/thpt-g12-chiii-b09-b10-r00.js
+          node --check scripts/test-thpt-g12-chiii-source-lock.cjs
+          node --check scripts/test-thpt-g12-chiii-release-browser.cjs
       - name: Validate updated interactive THPT browser test syntax
         run: |
           node --check scripts/test-thpt-interactive-compact-browser.cjs
@@ -226,6 +234,8 @@ jobs:
         run: node scripts/test-thpt-g12-chi-release-source.cjs
       - name: Guard G12 SGK ChII original V2 receipt, 64 PUBLIC canonical, 16 END references and 3 original SVG
         run: node scripts/test-thpt-g12-chii-release-source.cjs
+      - name: Guard G12 ChIII V2 Academic/PED source receipt, 48 canonical and 12 reused END refs
+        run: node scripts/test-thpt-g12-chiii-source-lock.cjs
       - name: Guard G11 B01 source-locked Knowledge presentation (no deploy)
         run: node scripts/test-thpt-g11-b01-ap-parity.cjs
       - name: Guard G10 B03 Knowledge AP source parity (no deploy)
@@ -440,6 +450,8 @@ jobs:
         run: node scripts/test-thpt-g12-chi-release-browser.cjs
       - name: G12 SGK ChII B06–B08 and reused 16-item Final Submit AP/Q16 browser · 390 / 820 / 1440
         run: node scripts/test-thpt-g12-chii-release-browser.cjs
+      - name: G12 SGK ChIII B09–B10, 48 PUBLIC and Q16 12-item Final Submit · 390 / 820 / 1440
+        run: node scripts/test-thpt-g12-chiii-release-browser.cjs
       - name: Academic Presentation QA pilot · MathJax overflow / 390 820 1440
         run: node scripts/test-thpt-academic-presentation-browser.cjs
       - name: Academic Presentation QA G10 B03 · 390 820 1440
