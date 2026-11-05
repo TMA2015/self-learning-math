@@ -115,7 +115,8 @@ function mount(root,bank,{chapter}={}){
   solution.dataset.g12GoldenSolutionFor=q.item_id;
   const solutionSummary=el("summary","","📖 Đáp án / Lời giải");
   const result=el("div","thpt-r4-formative-reveal");
-  result.append(el("h4","","Đáp án và lời giải đã duyệt"));
+  const worked=Boolean(String(q.answer??"").trim()||String(q.solution??"").trim());
+  result.append(el("h4","",worked?"Đáp án và lời giải đã duyệt":"Tiêu chí tự đối chiếu đã duyệt (nguồn chưa có lời giải chi tiết)"));
   if(q.answer!==undefined)result.append(para(q.answer));
   if(q.solution!==undefined)result.append(para(q.solution));
   if(q.conditions)result.append(el("h4","","Điều kiện / giới hạn"),para(q.conditions));
