@@ -146,7 +146,7 @@ const startHub=(root,bank)=>{
   const panel=mk("section","thpt-r4-practice-lesson g12-chiv-hub-lesson");panel.dataset.thptGrade="12";panel.dataset.g12ChivHubLesson=lesson;
   const header=mk("div","thpt-r4-practice-lesson-header");
   const h=mk("div","");
-  h.append(mk("p","thpt-r4-practice-class","Lớp 12 · Chương III"),mk("h2","",lessonNames[lesson]));
+  h.append(mk("p","thpt-r4-practice-class","Lớp 12 · Chương IV"),mk("h2","",lessonNames[lesson]));
   header.append(mk("span","thpt-r4-lesson-number",i+11),h);panel.append(header);
   const cards=mk("div","thpt-r4-practice-card-grid");cards.append(group(bank,lesson,false),group(bank,lesson,true));panel.append(cards);
   const ds=mk("details","g12-chiv-hub-help");ds.id=lesson.toLowerCase()+"-help";
