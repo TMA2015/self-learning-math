@@ -4,7 +4,7 @@ PACKET_ID: G10-SGK-CHVI
 ROLE: AUTHORING_ONLY
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 1.2.0
-STATUS: ITEM_ID_INVENTORY_74_RECONCILED_WRITTEN_OUTCOME_MAPPING_PARTIAL
+STATUS: AUTHOR_ITEM_OUTCOME_PLACEMENT_MAPPED_74_OF_74_SNAPSHOT_CUSTODY_Q18_HOLD
 LEGACY_R01_CANONICAL_RECEIPT_BLOB: 23156f35aab6ec28771a6a57d48bad74f3900e9c
 OLD_18_FORMATIVE_SNAPSHOT_BLOB: 1223d4c2b574433479c5d222dbeff363718ee4bb
 OLD_8_APPLICATION_PUBLIC_PAGE_BLOB: 4876a1d38267bfaf0a570b9ea5bffa48563488ad
@@ -22,8 +22,14 @@ R01_CORE_PRACTICE_APPLICATION_ITEM_IDS: 28
 R01_WRITTEN_ANCHOR_ITEM_IDS: 8
 R01_PUBLIC_CHAPTER_END_ITEM_IDS: 18
 R04_PUBLIC_WRITTEN_SELF_CHECK_ITEM_IDS: 2
-ITEM_TO_OUTCOME_DIRECT_OR_AUTHOR_MAPPED: 66
-R01_WRITTEN_ITEM_TO_OUTCOME_NOT_VERIFIABLE_IN_CURRENT_PUBLIC_SOURCES: 8
+ITEM_TO_OUTCOME_DIRECT_OR_AUTHOR_MAPPED: 74
+R01_WRITTEN_ITEM_TO_OUTCOME_AUTHOR_MAPPED_FROM_PUBLIC_STEMS: 8
+R01_WRITTEN_SOURCE_PAGE_PATH: docs/thpt-preview/thu-vien/tu-luan.md
+R01_WRITTEN_SOURCE_PAGE_BLOB: 4da918f36d30c9b7110099e81fc88943e5b7705b
+WRITTEN_MAPPING_QA_AUDIT_PATH: prototypes/thpt/audits/G10_CHVI_R01_WRITTEN8_PUBLIC_SOURCE_OUTCOME_QA_20261105.md
+WRITTEN_MAPPING_QA_AUDIT_BLOB: d5cd8e960d39df9bbfb17bd021bfb54fc99340c5
+R01_SOURCE_FIVE_TEMP_RECONSTRUCTION: NOT_ESTABLISHED
+Q18_HISTORIC_REVIEW_SNAPSHOT_PARITY: HOLD
 PRIVATE_RD1_NEW: 0
 CONTENT_READY: NO
 RELEASE_AUTHORIZATION: NO
@@ -33,7 +39,22 @@ MASTERY_ACTIVATION: NO
 
 Bảng này dựa vào **đề và kỹ năng hiện hữu** để phát hiện đường học đúng outcome, không chỉ thấy item ID hợp lệ là kết luận PASS. 28 formative R01 có đề công khai ở B15/B17/B18 JS (18 câu), Core/Topic B16 pilot (2 câu), và các bài tổng hợp A1–B4 (8 câu). 18 câu cuối chương có nguồn JSON công khai và ma trận tác giả từng đọc đề; `outcome_id` JSON vẫn đang rỗng nên đây là **phân loại đề xuất**, chưa phải metadata website. R03 đưa 19 vị trí Tự thử với 18 mã mới; `THPT-G10-B18-C01` được dùng chung FIRST_TRY/Core, **không thêm mã thứ 19**. R04 bổ sung hai câu public Written đạt NotebookLM PASS, **chưa tích hợp**.
 
-**Giới hạn quan trọng:** R01 có 8 mã Written/Anchor lịch sử, nhưng trong những nguồn public được trực tiếp đối chiếu ở lượt này mới có **mã và role**, chưa có đủ chính đề để gắn từng `OUTCOME_ID` cụ thể. Không suy đoán chỉ từ “WRI-15” hay tên ID; ghi `UNVERIFIED_WRITTEN_OUTCOME`, blocker cần AUTHORING đối chiếu với nguồn R01 riêng. Điều đó **không hủy Academic PASS** của R01, nhưng chưa thể tự nhận ma trận V2 hoàn chỉnh cho 74 ID. Không tạo bản sao câu và không tiết lộ nguồn private để lấp bảng cho đẹp.
+**Giới hạn quan trọng:** R01 có 8 mã Written/Anchor lịch sử, và từ trang `docs/thpt-preview/thu-vien/tu-luan.md` hiện có **đúng 8 thẻ Written/Anchor công khai chứa đề, lời giải và rubric**. Tác giả đã so từng đề để gắn PRIMARY_OUTCOME_ID và các outcome phụ; 8 mã này không phải đoán từ tên WRI. Biên bản Q15 riêng `G10_CHVI_R01_WRITTEN8_PUBLIC_SOURCE_OUTCOME_QA_20261105.md` khóa nguồn page blob `4da918f...`. **Ma trận 74/74 item hiện có ánh xạ outcome theo chứng cứ**; tuy nhiên, việc có bản học sinh đang thấy không tự chứng minh nguyên byte so với năm file Temp R01 đã review. Q18 lịch sử vẫn HOLD. Không tạo bản sao câu và không tiết lộ nguồn private để lấp bảng cho đẹp.
+
+## R01 public Written/Anchor source found (8/8)
+
+**Nguồn trực tiếp:** `docs/thpt-preview/thu-vien/tu-luan.md` trên `main`, Git blob `4da918f36d30c9b7110099e81fc88943e5b7705b`. Tất cả 8 canonical R01 Written/Anchor IDs được tìm với `data-thpt-written-canonical` và **đề + lời giải + bảng rubric**, mỗi ID đúng một thẻ. Ma trận PRIMARY và SECONDARY được đánh giá theo đề chứ không suy từ tên file.
+
+- `HPT-WRI-DEMO-01` → PRIMARY `B16_OUT_02`; SECONDARY `B16_OUT_04`.
+- `HPT-WRI-DEMO-ANCHOR-01` → PRIMARY `B16_OUT_05`; SECONDARY `B16_OUT_04`.
+- `HPT-G10-CHVI-WRI-15-01` → PRIMARY `B15_OUT_01`; SECONDARY `B15_OUT_02`, `B15_OUT_03`.
+- `HPT-G10-CHVI-WRI-15-02` → PRIMARY `B15_OUT_05`; SECONDARY `B15_OUT_02`.
+- `HPT-G10-CHVI-WRI-17-01` → PRIMARY `B17_OUT_03`; SECONDARY `B17_OUT_01`, `B17_OUT_02`.
+- `HPT-G10-CHVI-WRI-17-02` → PRIMARY `B17_OUT_05`; SECONDARY `B16_OUT_05`, `B17_OUT_03`.
+- `HPT-G10-CHVI-WRI-18-01` → PRIMARY `B18_OUT_01`; SECONDARY `B18_OUT_03`.
+- `HPT-G10-CHVI-WRI-18-02` → PRIMARY `B18_OUT_04`; SECONDARY `B18_OUT_02`, `B18_OUT_03`.
+
+**Q15 SOURCE CONTENT:** đủ 74/74 ánh xạ tại snapshot AUTHORING hiện xét. **Q18 REVIEW PARITY:** chưa thể chứng minh page trên `main` byte-identical với R01 năm Temp nguyên bản; reviewer PASS của snapshot R01 lịch sử được bảo toàn nhưng không tự gắn vào page khác nguồn khi thiếu evidence. Không cần biên soạn mới hay re-review chỉ để thay metadata.
 
 ## 74 ID distinct — bản đồ actual item → outcome/placement/role
 
@@ -85,14 +106,14 @@ Bảng này dựa vào **đề và kỹ năng hiện hữu** để phát hiện 
 | `THPT-G10-B18-R02` | R01 | `B18_OUT_01` | `SGK_PUBLIC_CHAPTER_END_CLIENT_SELFCHECK` | `AUTHOR_MAPPING` | R03 author prompt-derived chapter-end map, not original empty JSON outcome_id |
 | `THPT-G10-B18-R03` | R01 | `B18_OUT_01` | `SGK_PUBLIC_CHAPTER_END_CLIENT_SELFCHECK` | `AUTHOR_MAPPING` | R03 author prompt-derived chapter-end map, not original empty JSON outcome_id |
 | `THPT-G10-B18-R04` | R01 | `B18_OUT_04` | `SGK_PUBLIC_CHAPTER_END_CLIENT_SELFCHECK` | `AUTHOR_MAPPING` | R03 author prompt-derived chapter-end map, not original empty JSON outcome_id |
-| `HPT-G10-CHVI-WRI-15-01` | R01 | `UNVERIFIED_WRITTEN_OUTCOME` | `WRITTEN_ANCHOR_SHARED` | `HOLD` | R01 receipt ID only; item-level body not in presently verified public source |
-| `HPT-G10-CHVI-WRI-15-02` | R01 | `UNVERIFIED_WRITTEN_OUTCOME` | `WRITTEN_ANCHOR_SHARED` | `HOLD` | R01 receipt ID only; item-level body not in presently verified public source |
-| `HPT-G10-CHVI-WRI-17-01` | R01 | `UNVERIFIED_WRITTEN_OUTCOME` | `WRITTEN_ANCHOR_SHARED` | `HOLD` | R01 receipt ID only; item-level body not in presently verified public source |
-| `HPT-G10-CHVI-WRI-17-02` | R01 | `UNVERIFIED_WRITTEN_OUTCOME` | `WRITTEN_ANCHOR_SHARED` | `HOLD` | R01 receipt ID only; item-level body not in presently verified public source |
-| `HPT-G10-CHVI-WRI-18-01` | R01 | `UNVERIFIED_WRITTEN_OUTCOME` | `WRITTEN_ANCHOR_SHARED` | `HOLD` | R01 receipt ID only; item-level body not in presently verified public source |
-| `HPT-G10-CHVI-WRI-18-02` | R01 | `UNVERIFIED_WRITTEN_OUTCOME` | `WRITTEN_ANCHOR_SHARED` | `HOLD` | R01 receipt ID only; item-level body not in presently verified public source |
-| `HPT-WRI-DEMO-01` | R01 | `UNVERIFIED_WRITTEN_OUTCOME` | `WRITTEN_ANCHOR_SHARED` | `HOLD` | R01 receipt ID only; item-level body not in presently verified public source |
-| `HPT-WRI-DEMO-ANCHOR-01` | R01 | `UNVERIFIED_WRITTEN_OUTCOME` | `WRITTEN_ANCHOR_SHARED` | `HOLD` | R01 receipt ID only; item-level body not in presently verified public source |
+| `HPT-G10-CHVI-WRI-15-01` | R01 | `B15_OUT_01` | ``WRITTEN_ANCHOR_SHARED`` | `PUBLIC_WRITTEN_STEM_AUTHOR_QA` | Bảng x={0,1,2,3}, f={2,4,4,8}, tập xác định/giá trị, điểm thuộc đồ thị và tính đơn trị; secondary=B15_OUT_02, B15_OUT_03; source: tu-luan.md [blob 4da918f...] |
+| `HPT-G10-CHVI-WRI-15-02` | R01 | `B15_OUT_05` | ``WRITTEN_ANCHOR_SHARED`` | `PUBLIC_WRITTEN_STEM_AUTHOR_QA` | Cước xe từng đoạn, ngân sách tối đa 50 nghìn, 0<x≤8 km; secondary=B15_OUT_02; source: tu-luan.md [blob 4da918f...] |
+| `HPT-G10-CHVI-WRI-17-01` | R01 | `B17_OUT_03` | ``WRITTEN_ANCHOR_SHARED`` | `PUBLIC_WRITTEN_STEM_AUTHOR_QA` | Tam thức -2x²+4x+6, nghiệm -1,3; bảng dấu và nghiệm BPT; secondary=B17_OUT_01, B17_OUT_02; source: tu-luan.md [blob 4da918f...] |
+| `HPT-G10-CHVI-WRI-17-02` | R01 | `B17_OUT_05` | ``WRITTEN_ANCHOR_SHARED`` | `PUBLIC_WRITTEN_STEM_AUTHOR_QA` | 28m rào ba cạnh, 0<x<14, Smax=98m², S≥90 ⇒ 5≤x≤9; secondary=B16_OUT_05, B17_OUT_03; source: tu-luan.md [blob 4da918f...] |
+| `HPT-G10-CHVI-WRI-18-01` | R01 | `B18_OUT_01` | ``WRITTEN_ANCHOR_SHARED`` | `PUBLIC_WRITTEN_STEM_AUTHOR_QA` | √(x²+4x+4)=√(2x+4), điều kiện x≥-2, nghiệm -2,0; secondary=B18_OUT_03; source: tu-luan.md [blob 4da918f...] |
+| `HPT-G10-CHVI-WRI-18-02` | R01 | `B18_OUT_04` | ``WRITTEN_ANCHOR_SHARED`` | `PUBLIC_WRITTEN_STEM_AUTHOR_QA` | Tam giác 5-12-13 qua phương trình căn và kiểm nghiệm; secondary=B18_OUT_02, B18_OUT_03; source: tu-luan.md [blob 4da918f...] |
+| `HPT-WRI-DEMO-01` | R01 | `B16_OUT_02` | ``WRITTEN_ANCHOR_SHARED`` | `PUBLIC_WRITTEN_STEM_AUTHOR_QA` | Đưa y=x²−6x+7 về dạng đỉnh, tọa độ đỉnh/trục và GTNN; secondary=B16_OUT_04; source: tu-luan.md [blob 4da918f...] |
+| `HPT-WRI-DEMO-ANCHOR-01` | R01 | `B16_OUT_05` | ``WRITTEN_ANCHOR_SHARED`` | `PUBLIC_WRITTEN_STEM_AUTHOR_QA` | Chu vi 24m, tối ưu diện tích hình chữ nhật, điều kiện 0<x<12, Smax=36m²; secondary=B16_OUT_04; source: tu-luan.md [blob 4da918f...] |
 | `THPT-G10-CHVI-TRY01` | R03 | `B15_OUT_01` | `SGK_PRE_CORE_FIRST_TRY_FORMATIVE` | `R03_CANONICAL_SOURCE` | R03 reviewed concept-first First Try; HELP HELP-G10-CHVI-TRY01 |
 | `THPT-G10-CHVI-TRY02` | R03 | `B15_OUT_02` | `SGK_PRE_CORE_FIRST_TRY_FORMATIVE` | `R03_CANONICAL_SOURCE` | R03 reviewed concept-first First Try; HELP HELP-G10-CHVI-TRY02 |
 | `THPT-G10-CHVI-TRY03` | R03 | `B15_OUT_03` | `SGK_PRE_CORE_FIRST_TRY_FORMATIVE` | `R03_CANONICAL_SOURCE` | R03 reviewed concept-first First Try; HELP HELP-G10-CHVI-TRY03 |
@@ -140,7 +161,7 @@ Bảng này dựa vào **đề và kỹ năng hiện hữu** để phát hiện 
 
 ## Cổng Q15 và Q16
 
-- Q15 ID uniqueness: **74/74 unique** across 54 R01 +18 new R03 +2 R04, regardless of many placements. Eight historical Written IDs **still need evidence-based primary outcome**; matrix is marked partial, not falsely signed.
+- Q15 ID uniqueness/author mapping: **74/74 canonical unique**, PRIMARY_OUTCOME_ID 74/74 có đối chiếu nguồn công khai hoặc nguồn R03/R04. Tám Written R01 được xác minh từ **đề, lời giải, rubric công khai** (không chỉ ID); kết quả này là **AUTHORING Q15 mapping QA PASS**. Chính snapshot review năm Temp R01 chưa khôi phục làm Q18 HOLD riêng; không biến QA mapping thành independent Academic PASS mới.
 - R01 18 end-check and R04 two proposed Written end-check: **CLIENT_SELF_CHECK_NO_MASTERY**, no official RD1. Answers/right-wrong/rubric/HELP/Tutor cannot show pre Final Submit. R04 rubric 8/10 points means **tự đối chiếu**, not Skill Mastery awarded.
 - R03 public First Try is prior to Core, self-revealed explanation; not reused for independent postchapter evidence.
 - `PRACTICE-THPT-DEMO-01` originates in Topic preview; referencing by placement for SGK Practice must remain optional; the **SGK** body is self-sufficient without an obligatory Topic link. The actual website is untouched by this AUTHORING register.
@@ -148,4 +169,4 @@ Bảng này dựa vào **đề và kỹ năng hiện hữu** để phát hiện 
 
 ## Gate and next
 
-This is a **source-locked preflight register**, NOT a V2 signed ready packet. Preserve original NotebookLM verdict on correct immutable sources; confirm the eight R01 Written item-to-outcome mappings against their actual reviewed source before claiming Q15 complete. Q18 complete whole-chapter provenance remains AUTHORING-owned; do not delegate hashes to NotebookLM. No release integration, merge/deploy, Mastery, REGISTER promotion or `ready/` manifest.
+This is a **source-locked preflight register**, NOT a V2 signed ready packet. Preserve original NotebookLM verdict on correct immutable sources; Q15 mapped 74/74 from actual current public stems, while Q18 old reviewer snapshot custody remains an open authoring gate; do not claim full source-equivalence from the mapping alone. Q18 complete whole-chapter provenance remains AUTHORING-owned; do not delegate hashes to NotebookLM. No release integration, merge/deploy, Mastery, REGISTER promotion or `ready/` manifest.

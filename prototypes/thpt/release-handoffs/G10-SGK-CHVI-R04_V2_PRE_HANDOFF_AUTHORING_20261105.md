@@ -12,9 +12,15 @@ HANDOFF_STATUS: V2_PRE_HANDOFF_NOT_SIGNED
 ACADEMIC_VERDICT: HISTORIC_R01_PASS_R03_R02_REVIEWER_REPORTED_R04_SCOPED_PASS
 PEDAGOGICAL_VERDICT: R02_REPORTED_19_OUTCOMES_PASS_AND_R04_NEW_2_PASS
 CONTENT_READY: NO
-BLOCKERS: Q15_8_R01_WRITTEN_OUTCOME_NOT_VERIFIED,Q18_HISTORIC_R01_FULL_SOURCE_CUSTODY_AND_R02_EXTERNAL_REVIEW_IDENTITY
+BLOCKERS: Q18_HISTORIC_R01_FIVE_TEMP_REVIEW_SOURCE_NOT_RECONSTITUTED_AND_R02_EXTERNAL_REVIEW_IDENTITY
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PUBLIC_ITEM_IDS_PROPOSED: 74
+WRITTEN8_PUBLIC_BODY_Q15_AUDIT_BLOB: d5cd8e960d39df9bbfb17bd021bfb54fc99340c5
+WRITTEN8_PUBLIC_SOURCE_BLOB: 4da918f36d30c9b7110099e81fc88943e5b7705b
+CURRENT_74_ITEM_MATRIX_BLOB: f4a6bf6f81ad0a2d8dcc5eb661790c1736aaea52
+R01_PRIVATE_TEMP03_RECOVERED_SHA256: 3ee7d0cdf3c50fbbac9b1af5487f9dd1dcba8f33c5224e6bb5e859966c33cdce
+R01_TEMP03_RECOVERY_AUDIT_BLOB: 1229ec394efb9b76cf8e184a787c7d9aca0d819c
+R01_OTHER_TEMP_FILES_NOT_RAW_VERIFIED: 4
 CURRENT_MAIN_R04_NEW_ITEM_IDS_INTEGRATED: 0
 PRIVATE_RD1_COUNT_NEW: 0
 RELEASE_AUTHORIZATION: NO
@@ -35,7 +41,7 @@ MASTERY_ACTIVATION: NO
 | S1 SGK/SBT | Toán 10 KNTT **Tập Hai**, SGK B15 p4–10, B16 11–18, B17 19–24, B18 25–27, cuối chương 28–29; SBT lần lượt 3–9, 10–15, 16–18, 19–21, cuối chương 22–27 | Theo visual index S1 lịch sử. SGK PDF SHA256 `ee8a00392e1c9fc5b213e574666cf1f8487548737e138573f28a988c640fafe6`; SBT `3cb33690e0627b9e8ac467c23625b7feb7d05a8422293db0e1b26e44ca6a78c7` |
 | LESSON_IDs | `G10-SGK-B15`, `G10-SGK-B16`, `G10-SGK-B17`, `G10-SGK-B18` | 4/4 |
 | OUTCOME_IDs | `B15_OUT_01..05`, `B16_OUT_01..05`, `B17_OUT_01..05`, `B18_OUT_01..04` | 19/19 |
-| 74 distinct proposed canonical ITEM_IDs | R01 54 + R03 18 + R04 2; đầy đủ từng mã/role/đường học tại `prototypes/thpt/shared-items/G10_CHVI_R04_CANONICAL_74_ITEM_OUTCOME_PREFLIGHT_20261105.md` blob `000c205385002d14237031f74cf40a07f7569349` | **66 đã có mapping primary từ đề hoặc reviewer/author; 8 Written/Anchor R01 còn thiếu bằng chứng item-specific outcome. Q15 gate không ký PASS toàn bộ** |
+| 74 distinct proposed canonical ITEM_IDs | R01 54 + R03 18 + R04 2; đầy đủ từng mã/role/đường học tại `prototypes/thpt/shared-items/G10_CHVI_R04_CANONICAL_74_ITEM_OUTCOME_PREFLIGHT_20261105.md` blob `f4a6bf6f81ad0a2d8dcc5eb661790c1736aaea52` | **74/74 item ID có primary outcome từ câu thực tế trong public source/R03/R04**, gồm 8 Written/Anchor R01 tìm lại tại `docs/thpt-preview/thu-vien/tu-luan.md` blob `4da918f36d30c9b7110099e81fc88943e5b7705b`. Q15 author placement QA PASS; **Q18 reviewer snapshot custody chưa PASS** |
 | First Try và khắc phục | 19 vị trí trước Core, 19 HELP D6 năm bước trong R03, 12 sửa đích luyện tập chính xác | 19 placement tương ứng 18 ID mới + `B18-C01` dùng chung một canonical; không tính placement là item mới |
 | D5/PED4 SVG | B15 mapping một đầu vào–một đầu ra, B18 điều kiện căn→bình phương→thử nghiệm gốc; R01 B16/B17 đồ thị/bảng dấu giữ | NotebookLM scoped Q07/PED4 PASS về nội dung XML; RELEASE phải QA render |
 | Chapter-end selfcheck | **18 câu đang công khai** + **2 R04 đã duyệt chưa tích hợp**, total **20 ứng viên** | `prototypes/thpt/audits/G10_CHVI_R04_PROPOSED_20_SELF_CHECK_19_OUTCOME_COVERAGE_20261105.md` Git blob `3fa89cc3a6f5a60a6e240502647b0d176d7aae61`: 19/19 outcome có nội dung ứng viên, **không phải website 20 câu hay protected RD1** |
@@ -48,22 +54,33 @@ MASTERY_ACTIVATION: NO
 
 | Cổng | Kết quả authoring | Lý do |
 |---|---|---|
-| A1 SOURCE/SNAPSHOT | **HOLD** | R01 năm source gốc còn chưa hiện diện như canonical đầy đủ cho V2; R02 external reviewer mount không chứng minh tương đương nguồn R03 thừa kế |
+| A1 SOURCE/SNAPSHOT | **HOLD** | R01 năm source gốc còn chưa hiện diện như canonical đầy đủ cho V2 dù đã truy được 8 Written công khai; R02 external reviewer mount không chứng minh tương đương nguồn R03 thừa kế |
 | A2 S1 SGK/SBT | EVIDENCE_READY | S1 đúng sách/tập/trang in từ receipt đã khóa |
 | A3 Academic + PED reviewer | SCOPED_PASS_HISTORY | R01 Academic 54/54; R02 PED/Academic 19/19 được báo, Q07/PED4 hai SVG PASS; R04 Academic/PED 2/2 PASS. **Không cấp PASS chung trên snapshot duy nhất khác** |
-| A4 item/outcome/placement | **PARTIAL_HOLD** | 74 unique, mapping đã có 66; 8 Written R01 chưa xác minh từng outcome từ chính đề và rubric |
+| A4 item/outcome/placement | **AUTHOR_QA_PASS** | 74 unique, đủ 74 PRIMARY outcome theo đề hiện có; 8 Written R01 đã kiểm trực tiếp đề, lời giải, rubric trên `tu-luan.md`; audit `G10_CHVI_R01_WRITTEN8_PUBLIC_SOURCE_OUTCOME_QA_20261105.md` blob `d5cd8e960d39df9bbfb17bd021bfb54fc99340c5`; không suy public page đồng nhất snapshot R01 |
 | A5 D1–D6 / PED1–PED6 | EVIDENCE_PREPARED | Tự học từ bản chất, 19 First Try, 19 HELP, 2 SVG, 12 recovery fixes; R04 đã giải quyết hai độ sâu thiếu trong tự kiểm tra công khai ứng viên |
 | A6 Delta | EVIDENCE_PREPARED | R03 `DELTA_B` routing+ID source equivalent, R04 `DELTA_C` scoped independent PASS, giữ nguyên R01 |
 | A7 Public / private | EVIDENCE_PREPARED | 18 câu cuối chương cũ đã public, 2 R04 public proposed; tất cả NO_MASTERY, không công bố RD1 kín; không suy official Chapter Readiness từ selfcheck |
 
 **PED1–PED6:** chuỗi `WHY→PRE→MEANING→READ_VISUAL→METHOD/LIMITS→FIRST_TRY→D6` hiện trong nguồn R03 theo từng outcome; verdict reviewer được bảo toàn đúng scope. Không dùng đủ số item thay độ sâu.
 
+## Q18 thực tế — một file Temp R01 gốc được kiểm chứng, còn HOLD
+
+AUTHORING truy xuất đúng file private `Temp_03_THPT_G10_CHVI_CHAPTER_READINESS_HELDOUT_20261028_R0.md` từ Library người dùng, **11.158 byte**, SHA256 thực đo `3ee7d0cdf3c50fbbac9b1af5487f9dd1dcba8f33c5224e6bb5e859966c33cdce`, khớp `TEMP_03_SHA256` receipt R01. Biên bản **chỉ metadata**: `prototypes/thpt/audits/G10_CHVI_R01_SOURCE_CUSTODY_PARTIAL_RECOVERY_20261105.md`, blob `1229ec394efb9b76cf8e184a787c7d9aca0d819c`. **Không** đưa đề/đáp án/rubric của file private lên GitHub. Còn bốn phần Temp R01 chưa có nguồn nguyên bản và R02 external mount không có chứng cứ tương đương nội dung toàn tệp, vì vậy Q18 toàn chương **vẫn HOLD**, không thay đổi Academic/PED PASS từng phạm vi.
+
+## Cập nhật 05/11/2026 — giải quyết Q15 Written/Anchor 8/8, không review lại
+
+- **Nguồn tìm được:** `docs/thpt-preview/thu-vien/tu-luan.md`, Git blob `4da918f36d30c9b7110099e81fc88943e5b7705b`, chứa đủ 8 thẻ `data-thpt-written-canonical` khớp receipt R01; mỗi thẻ có đề + lời giải + rubric. **Không phải file gốc Temp R01**, do đó không tự nhận thay thế receipt.
+- **Audit mới:** `prototypes/thpt/audits/G10_CHVI_R01_WRITTEN8_PUBLIC_SOURCE_OUTCOME_QA_20261105.md`, blob `d5cd8e960d39df9bbfb17bd021bfb54fc99340c5`; định danh outcome dựa nội dung từng câu, không dựa tên WRI.
+- **Ma trận canonical:** `prototypes/thpt/shared-items/G10_CHVI_R04_CANONICAL_74_ITEM_OUTCOME_PREFLIGHT_20261105.md`, cập nhật blob `f4a6bf6f81ad0a2d8dcc5eb661790c1736aaea52`: 74/74 unique item IDs mapped primary outcomes; 19 First Try placements vẫn một reuse canonical R01, 20 chapter selfcheck là dự kiến (18 public + 2 R04 accepted, chưa tích hợp).
+- **Kết luận phân biệt:** Q15 **author mapping PASS**; Q18 **historic exact review source custody HOLD** cho 5 Temp R01 và sự sai khác nguồn mounted R02 chưa xác nhận tương đương; các PASS lịch sử vẫn snapshot-bound. Không gọi NotebookLM kiểm Git/hash.
+
 ## Quyết định AUTHORING hiện tại và các điều kiện kết thúc
 
 1. **Có thể coi R04 riêng phần toán/sư phạm đã hoàn tất**: không thêm vòng NotebookLM cho 2 câu đúng nguồn và không sửa câu trả lời/rubric khi không có academic defect.
-2. **Cần AUTHORING lấy bằng chứng thật cho 8 mã Written/Anchor R01** để điền outcome ID cụ thể và vị trí liên kết; không gán chỉ dựa trên tên WRI-15/WRI-17. Nếu chính đề nguồn không có, báo `BLOCKED_BY_AUTHORING(Q15_WRITTEN8)`, không tạo lại câu mới để đạt số.
+2. **ĐÃ ĐÓNG CHỨNG CỨ ÁNH XẠ AUTHORING cho 8 Written/Anchor R01**: mỗi câu có stem + solution + rubric công khai trong `docs/thpt-preview/thu-vien/tu-luan.md` blob `4da918f...`, 8/8 ID khớp R01. PRIMARY_OUTCOME_ID được gắn từ yêu cầu đề, cùng SECONDARY outcomes khi hợp lý; **Q15 mapping 74/74 PASS theo nguồn công khai**, không cần viết lại hay NotebookLM review lại. Điều này chưa giải quyết Q18 source identity của 5 Temp R01.
 3. **Cần AUTHORING đóng khả năng truy xuất source/receipt lịch sử** từ nguồn thực tế mà mình quản lý theo Q18; không yêu cầu NotebookLM chạy Python/Git/hash hoặc review lại nội dung bất biến. Không tự tuyên bố R01 ZIP được phục hồi khi chưa có dữ liệu.
 4. Chỉ sau A1–A7, Academic + PED + Q01–Q18 cùng PASS, mới tạo **một** signed V2 handoff, **một** ready manifest cho `G10-SGK-CHVI` và một REGISTER row đồng bộ; lúc này mới cho RELEASE tiếp nhận bản immutable. Hiện **không tạo** hai hiện vật đó.
 5. Tất cả việc đưa R04 vào JSON/site, bảo đảm Final Submit, Golden UI, responsive, AP1–AP5, R1–R5, Firebase/Skill Mastery, merge/deploy thuộc RELEASE và cần đúng quyền của chủ dự án.
 
-**CHECKPOINT:** `BLOCKED_BY_AUTHORING(Q15_WRITTEN8,Q18_R01_R02_SOURCE_CUSTODY)` — `CONTENT_READY=NO`. Dừng đúng tại hồ sơ AUTHORING; không phát hành.
+**CHECKPOINT:** `BLOCKED_BY_AUTHORING(Q18_R01_R02_SOURCE_CUSTODY)` — `CONTENT_READY=NO`. Dừng đúng tại hồ sơ AUTHORING; không phát hành.
