@@ -143,7 +143,7 @@ const startHub=(root,bank)=>{
  root.classList.add("thpt-r4-practice-sections");
  const lessonNames={"B14":"Phương trình mặt phẳng","B15":"Phương trình đường thẳng trong không gian","B16":"Công thức tính góc trong không gian","B17":"Phương trình mặt cầu"};
  for(const [i,lesson]of ["B14","B15","B16","B17"].entries()){
-  const panel=mk("section","thpt-r4-practice-lesson g12-chv-hub-lesson");panel.dataset.thptGrade="12";panel.dataset.g12ChivHubLesson=lesson;
+  const panel=mk("section","thpt-r4-practice-lesson g12-chv-hub-lesson");panel.dataset.thptGrade="12";panel.dataset.g12ChvHubLesson=lesson;
   const header=mk("div","thpt-r4-practice-lesson-header");
   const h=mk("div","");
   h.append(mk("p","thpt-r4-practice-class","Lớp 12 · Chương V"),mk("h2","",lessonNames[lesson]));
@@ -212,7 +212,7 @@ const startSelfCheck=(root,bank)=>{
  jumpButtons.forEach((button,i)=>button.addEventListener("click",()=>{cursor=i;showQuestion()}));
  prev.addEventListener("click",()=>{if(cursor>0){cursor--;showQuestion()}});
  next.addEventListener("click",()=>{if(cursor<entries.length-1){cursor++;showQuestion()}});
-const submit=mk("button","g12-chv-submit g12-chv-final","Final Submit — Tự đối chiếu");submit.type="button";submit.dataset.g12ChivFinal="";
+const submit=mk("button","g12-chv-submit g12-chv-final","Final Submit — Tự đối chiếu");submit.type="button";submit.dataset.g12ChvFinal="";
  const status=mk("p","g12-chv-feedback");
  submit.addEventListener("click",()=>{
   if(submit.disabled)return;
