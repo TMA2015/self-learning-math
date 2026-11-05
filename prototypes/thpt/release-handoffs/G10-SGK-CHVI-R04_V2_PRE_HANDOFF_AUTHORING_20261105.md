@@ -19,7 +19,10 @@ WRITTEN8_PUBLIC_BODY_Q15_AUDIT_BLOB: d5cd8e960d39df9bbfb17bd021bfb54fc99340c5
 WRITTEN8_PUBLIC_SOURCE_BLOB: 4da918f36d30c9b7110099e81fc88943e5b7705b
 CURRENT_74_ITEM_MATRIX_BLOB: f4a6bf6f81ad0a2d8dcc5eb661790c1736aaea52
 R01_PRIVATE_TEMP03_RECOVERED_SHA256: 3ee7d0cdf3c50fbbac9b1af5487f9dd1dcba8f33c5224e6bb5e859966c33cdce
-R01_TEMP03_RECOVERY_AUDIT_BLOB: 1229ec394efb9b76cf8e184a787c7d9aca0d819c
+R01_TEMP03_RECOVERY_AUDIT_BLOB: 8b05eaa2fdf6cba0c50031ed4c7aa2a5eb3190e6
+ORIGINAL_R01_ZIP_FILENAME_PRIOR_HANDOFF: Temp_THPT_G10_CHVI_NOTEBOOKLM_REVIEW_BATCH_20261028.zip
+R01_TEMP03_18_ITEM_IDS_VS_MAIN_CHVI_JSON: EXACT_ID_SET_MATCH_ONLY
+R01_TEMP03_FULL_QUESTION_PARITY_VS_MAIN: UNPROVEN
 R01_OTHER_TEMP_FILES_NOT_RAW_VERIFIED: 4
 CURRENT_MAIN_R04_NEW_ITEM_IDS_INTEGRATED: 0
 PRIVATE_RD1_COUNT_NEW: 0
@@ -66,7 +69,7 @@ MASTERY_ACTIVATION: NO
 
 ## Q18 thực tế — một file Temp R01 gốc được kiểm chứng, còn HOLD
 
-AUTHORING truy xuất đúng file private `Temp_03_THPT_G10_CHVI_CHAPTER_READINESS_HELDOUT_20261028_R0.md` từ Library người dùng, **11.158 byte**, SHA256 thực đo `3ee7d0cdf3c50fbbac9b1af5487f9dd1dcba8f33c5224e6bb5e859966c33cdce`, khớp `TEMP_03_SHA256` receipt R01. Biên bản **chỉ metadata**: `prototypes/thpt/audits/G10_CHVI_R01_SOURCE_CUSTODY_PARTIAL_RECOVERY_20261105.md`, blob `1229ec394efb9b76cf8e184a787c7d9aca0d819c`. **Không** đưa đề/đáp án/rubric của file private lên GitHub. Còn bốn phần Temp R01 chưa có nguồn nguyên bản và R02 external mount không có chứng cứ tương đương nội dung toàn tệp, vì vậy Q18 toàn chương **vẫn HOLD**, không thay đổi Academic/PED PASS từng phạm vi.
+AUTHORING truy xuất đúng file private `Temp_03_THPT_G10_CHVI_CHAPTER_READINESS_HELDOUT_20261028_R0.md` từ Library người dùng, **11.158 byte**, SHA256 thực đo `3ee7d0cdf3c50fbbac9b1af5487f9dd1dcba8f33c5224e6bb5e859966c33cdce`, khớp `TEMP_03_SHA256` receipt R01. Bản archive từng được tạo với tên `Temp_THPT_G10_CHVI_NOTEBOOKLM_REVIEW_BATCH_20261028.zip`, nhưng ZIP chưa được tìm thấy tại workspace hiện tại; tìm trong GitHub/Library chưa có đủ bốn Temp còn lại. 18 canonical IDs trong `Temp_03` đúng tập ID của `CHVI.json` hiện hành (18/18), nhưng **không phải chứng cứ đồng nhất đề và đáp án**. Biên bản **chỉ metadata**: `prototypes/thpt/audits/G10_CHVI_R01_SOURCE_CUSTODY_PARTIAL_RECOVERY_20261105.md`, blob `1229ec394efb9b76cf8e184a787c7d9aca0d819c`. **Không** đưa đề/đáp án/rubric của file private lên GitHub. Còn bốn phần Temp R01 chưa có nguồn nguyên bản và R02 external mount không có chứng cứ tương đương nội dung toàn tệp, vì vậy Q18 toàn chương **vẫn HOLD**, không thay đổi Academic/PED PASS từng phạm vi.
 
 ## Cập nhật 05/11/2026 — giải quyết Q15 Written/Anchor 8/8, không review lại
 
