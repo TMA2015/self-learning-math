@@ -108,29 +108,78 @@ function mount(root,bank,{chapter}={}){
   label.append(area);
   const submit=el("button","thpt-r4-formative-submit","Nộp và đối chiếu lời giải");submit.type="submit";submit.disabled=state.submitted;
   const feedback=el("p","thpt-r4-formative-feedback");feedback.setAttribute("role","status");
-  const result=el("section","thpt-g12-golden-solution");
-  const reveal=()=>{
-   result.replaceChildren();result.hidden=!state.submitted;
-   if(!state.submitted)return;
-   result.append(el("h4","","Đáp án và lời giải đã duyệt"));
-   if(q.answer!==undefined)result.append(para(q.answer));
-   if(q.solution!==undefined)result.append(para(q.solution));
-   if(q.conditions)result.append(el("h4","","Điều kiện / giới hạn"),para(q.conditions));
-   if(q.rubric){result.append(el("h4","","Tiêu chí tự đối chiếu tự luận /5"));for(const r of Array.isArray(q.rubric)?q.rubric:[q.rubric])result.append(para(r))}
+  // The PUBLIC formative answer follows the existing G10/G11 Golden controls:
+  // explicit "Đáp án / Lời giải" disclosure, auto-expanded after a self-attempt.
+  // This adapter is never mounted on Q16 protected Final Submit routes.
+  const solution=el("details","thpt-g12-golden-solution");
+  solution.dataset.g12GoldenSolutionFor=q.item_id;
+  const solutionSummary=el("summary","","📖 Đáp án / Lời giải");
+  const result=el("div","thpt-r4-formative-reveal");
+  result.append(el("h4","","Đáp án và lời giải đã duyệt"));
+  if(q.answer!==undefined)result.append(para(q.answer));
+  if(q.solution!==undefined)result.append(para(q.solution));
+  if(q.conditions)result.append(el("h4","","Điều kiện / giới hạn"),para(q.conditions));
+  if(q.rubric){result.append(el("h4","","Tiêu chí tự đối chiếu tự luận /5"));for(const r of Array.isArray(q.rubric)?q.rubric:[q.rubric])result.append(para(r))}
+  solution.append(solutionSummary,result);
+  form.append(label,submit,feedback);
+  form.addEventListener("submit",e=>{
+   e.preventDefault();if(state.submitted)return;
+   if(!area.value.trim()){feedback.textContent="Hãy tự làm trước khi đối chiếu.";return}
+   state.text=area.value;state.submitted=true;area.disabled=true;submit.disabled=true;
+   solution.open=true;
    feedback.textContent="Đã nộp. Tự đối chiếu, không chấm điểm hay ghi Mastery.";
-  };
-  form.append(label,submit,feedback,result);
-  form.addEventListener("submit",e=>{e.preventDefault();if(state.submitted)return;if(!area.value.trim()){feedback.textContent="Hãy tự làm trước khi đối chiếu.";return}state.text=area.value;state.submitted=true;area.disabled=true;submit.disabled=true;reveal();math(body)});
+   math(body);
+  });
   const actions=el("div","thpt-r4-formative-actions");
-  const help=bank.help?.find(h=>h.outcome_id===q.outcome_id);
-  if(help?.steps?.length){const d=el("details"),s=el("summary","","💡 Gợi ý"),p=el("div","thpt-r4-formative-reveal");format(p,help.steps[1]||help.steps[0]);d.append(s,p);actions.append(d)}
+  const help=bank.help?.find(h=>h.outcome_id===q.outcome_id&&h.lesson_id===q.lesson_id)
+    ||bank.help?.find(h=>h.outcome_id===q.outcome_id);
+  if(help){
+   const hintText=help.steps?.[1]||help.steps?.[0]||help.body?.split(/\n/)[0]||help.review_path;
+   if(hintText){
+    const d=el("details"),s=el("summary","","💡 Gợi ý"),p=el("div","thpt-r4-formative-reveal");
+    format(p,hintText);d.append(s,p);actions.append(d);
+   }
+  }
+  actions.append(solution);
+  // D6 remediation is linked to the CURRENT question by outcome_id.
+  // Reproduce the locked 5-step source verbatim, do not rewrite math/content.
+  if(help){
+   const d6=el("details","thpt-g12-golden-d6");
+   d6.dataset.g12GoldenD6Outcome=help.outcome_id;
+   const d6Summary=el("summary","","🧭 Khi gặp khó khăn · hướng dẫn của câu này");
+   const wrap=el("div","thpt-g12-golden-d6-body");
+   wrap.append(el("p","thpt-g12-golden-d6-intro","Dùng khi em chưa biết bắt đầu, làm sai hoặc muốn tìm lại kiến thức liên quan."));
+   if(help.steps?.length){
+    const ol=el("ol","thpt-g12-golden-d6-steps");
+    for(const step of help.steps){const li=el("li");format(li,step);ol.append(li)}
+    wrap.append(ol);
+   }else if(help.body){
+    wrap.append(para(help.body));
+   }else if(help.review_path){
+    wrap.append(para("Vị trí ví dụ cần ôn tập: "+help.review_path));
+   }
+   const links=el("div","thpt-g12-golden-d6-links");
+   for(const [id,name] of [[help.return_item,"Quay lại câu liên quan"],[help.practice_item,"Luyện tập lại"]]){
+    if(!id||!original.has(id))continue;
+    const button=el("button","thpt-g12-golden-d6-link",name);
+    button.type="button";button.dataset.g12GoldenD6Target=id;
+    button.addEventListener("click",()=>{
+     const target=byItem.get(anchor(id));
+     if(target)open(target.entry,target.i);
+    });
+    links.append(button);
+   }
+   wrap.append(links);d6.append(d6Summary,wrap);actions.append(d6);
+  }
   const back=el("a","thpt-r4-remediation-link","↶ Ôn lại kiến thức Bài "+Number(group.lesson.slice(1)));
   back.href=group.optional?"../mo-rong-sau-bai-17/":"../bai-"+Number(group.lesson.slice(1))+"/";actions.append(back);
   card.append(prompt,form,actions);
   const controls=el("div","thpt-r4-modal-buttons"),prev=el("button","","← Câu trước"),next=el("button","","Câu tiếp →");
   prev.type=next.type="button";prev.disabled=cursor===0;next.disabled=cursor===records.length-1;
   prev.addEventListener("click",()=>{cursor--;render()});next.addEventListener("click",()=>{cursor++;render()});
-  controls.append(prev,next);body.append(prog,nav,card,controls);reveal();math(body);
+  controls.append(prev,next);body.append(prog,nav,card,controls);
+  if(state.submitted){solution.open=true;feedback.textContent="Đã nộp. Tự đối chiếu, không chấm điểm hay ghi Mastery."}
+  math(body);
  };
  const open=(entry,i=0)=>{
   group=entry;returnFocus=entry.button;cursor=Math.max(0,Math.min(entry.items.length-1,i));
@@ -155,6 +204,27 @@ function mount(root,bank,{chapter}={}){
   button.addEventListener("click",()=>open(entry));byGroup.set(old.id,entry);
   items.forEach((q,i)=>byItem.set(anchor(q.item_id),{entry,i}));
   card.append(copy,button);old.replaceWith(card);
+ }
+ // Make every existing chapter D6 accordion self-explanatory instead of
+ // "phần kiến thức 1, 2..." without the Core/practice question relationship.
+ for(const h of bank.help||[]){
+  const originalCore=original.get(h.return_item);
+  if(!originalCore)continue;
+  const a="#"+anchor(h.return_item);
+  const section=[...root.querySelectorAll("details")].find(d=>
+   [...d.querySelectorAll(':scope > a[href^="#"]')].some(link=>link.getAttribute("href")===a));
+  if(!section)continue;
+  const summary=section.querySelector(":scope > summary");
+  if(!summary)continue;
+  const practice=original.get(h.practice_item);
+  const short=id=>{const m=String(id||"").match(/-([CPAW])(\d+)$/i);return m?"câu "+Number(m[2]):"câu liên quan"};
+  const lesson=Number(String(h.lesson_id||originalCore.lesson_id||"").replace(/\D/g,""));
+  summary.textContent="Hướng dẫn khi gặp khó khăn · Bài "+lesson+" · "+short(h.return_item)+(practice?" / Luyện tập "+short(h.practice_item):"");
+  section.dataset.g12GoldenD6Outcome=h.outcome_id;
+ }
+ for(const panel of root.querySelectorAll('details[class*="-hub-help"]')){
+  const wrap=panel.querySelector(":scope > div");
+  if(wrap)wrap.prepend(el("p","thpt-g12-golden-d6-intro","Dùng khi chưa làm được câu hoặc sau khi tự đối chiếu. Chọn hướng dẫn đúng phần kiến thức; Quay lại Core / Luyện tập lại sẽ mở câu liên quan."));
  }
  if(seen.size!==expected[chapter][1])throw Error("G12 Golden: missing source items "+seen.size);
  const follow=()=>{
