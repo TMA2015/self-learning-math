@@ -14,8 +14,14 @@ const {verifyG12GoldenHub}=require("./test-thpt-g12-golden-modal-helper.cjs");
    const errors=[];
    page.on("pageerror",e=>errors.push(e.message));
    const open=async route=>{
-    const response=await page.goto(base+route,{waitUntil:"networkidle",timeout:90000});
-    assert(response?.ok(),"Missing built route "+route);
+    const url=new URL(route,base);
+    const previous=page.url()?new URL(page.url()):null;
+    const sameDocument=previous?.origin===url.origin&&previous.pathname===url.pathname&&previous.search===url.search;
+    const response=await page.goto(url.href,{waitUntil:"networkidle",timeout:90000});
+    // A same-document hash navigation legitimately returns null (no HTTP request).
+    // Still require a real HTTP 200 for every different page and exact URL for anchors.
+    assert(response?.ok()||(sameDocument&&response===null&&page.url()===url.href),
+      "Missing built route or broken same-page deep link "+route);
     const spill=await page.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth);
     assert(spill<=20,"Horizontal overflow "+route+" at "+width+": "+spill);
    };
