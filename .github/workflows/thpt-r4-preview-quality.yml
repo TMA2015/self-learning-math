@@ -246,6 +246,8 @@ jobs:
         run: node scripts/test-thpt-g12-chii-release-source.cjs
       - name: Guard G12 ChIII V2 Academic/PED source receipt, 48 canonical and 12 reused END refs
         run: node scripts/test-thpt-g12-chiii-source-lock.cjs
+      - name: Enforce existing Golden R4 learner UI, no inline bulk questions and AI Tutor/Q16 boundary
+        run: node scripts/test-thpt-golden-ui-release-boundary.cjs
       - name: Guard Golden G12 Core/Practice modal, source math and no Mastery across ChI-IV
         run: node scripts/test-thpt-g12-golden-modal-source.cjs
       - name: Guard G12 ChIV immutable Academic/PED receipt, 88 source-verbatim items, 6 original PNG and 22 END
