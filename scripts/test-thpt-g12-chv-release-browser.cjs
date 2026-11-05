@@ -5,6 +5,7 @@
 const assert=require("node:assert/strict");
 const {chromium}=require("playwright");
 const base="http://127.0.0.1:8765/thpt-preview/sgk/lop-12/";
+const {verifyG12GoldenHub}=require("./test-thpt-g12-golden-modal-helper.cjs");
 (async()=>{
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
  try{
@@ -49,38 +50,26 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/lop-12/";
     const hub=page.locator("[data-g12-chv-hub]");
     await page.waitForFunction(()=>document.querySelector("[data-g12-chv-hub]")?.dataset.g12ChvReady==="true",null,{timeout:25000});
     assert.equal(await hub.getAttribute("data-g12-chv-error"),null,"No source mismatch runtime fallback");
-    assert.equal(await hub.locator(".g12-chv-hub-lesson").count(),5,"Four lessons + post-B17 optional");
-    assert.equal(await hub.locator(".g12-chv-hub-group").count(),9);
-    assert.equal(await hub.locator(".g12-chv-item").count(),96);
-    assert.equal(await hub.locator(".g12-chv-help").count(),24);
-    for(const [lesson,count,helps]of [["B14",24,6],["B15",28,7],["B16",20,5],["B17",20,5]]){
-     const section=hub.locator('[data-g12-chv-hub-lesson="'+lesson+'"]');
-     assert.equal(await section.locator(".g12-chv-item").count(),count,"Mandatory Core/Practice "+lesson);
-     assert.equal(await section.locator(".g12-chv-help").count(),helps);
-    }
+    await verifyG12GoldenHub(page,{chapter:"V",selector:"[data-g12-chv-hub]",lessons:5,groups:9,items:96,helps:24});
+    assert.equal(await hub.locator('[data-g12-chv-hub-lesson="B14"]').count(),1);
+    for(const lesson of ["B15","B16","B17"])
+     assert.equal(await hub.locator('[data-g12-chv-hub-lesson="'+lesson+'"]').count(),1,"Mandatory lesson "+lesson);
     const optional=hub.locator('[data-g12-chv-hub-lesson="B14-OPTIONAL"]');
-    assert.equal(await optional.locator(".g12-chv-item").count(),4,"Four original optional items separate");
-    assert.equal(await optional.locator(".g12-chv-help").count(),1);
-    assert.equal(await hub.locator(".g12-chv-answer:not([hidden])").count(),0);
-    const core=hub.locator("#b14-core");
-    const layout=await core.locator(":scope > summary").evaluate(el=>{
-     const st=getComputedStyle(el),a=[...el.children].map(x=>x.getBoundingClientRect());
-     return {display:st.display,direction:st.flexDirection,stack:a.every((r,i)=>!i||r.top>=a[i-1].bottom-1),within:a.every(r=>r.right<=el.getBoundingClientRect().right+2)};
-    });
-    assert.equal(layout.display,"flex");
-    assert.equal(layout.direction,"column");
-    assert(layout.stack&&layout.within,"Golden labels/count/actions do not overlap");
-    await core.locator(":scope > summary").click();
-    const item=core.locator(".g12-chv-item").first();
-    await item.locator("button.g12-chv-submit").click();
-    assert.equal(await hub.locator(".g12-chv-answer:not([hidden])").count(),0,"No response without an attempt");
-    await item.locator("textarea").fill("Tự làm");
-    await item.locator("button.g12-chv-submit").click();
-    assert.equal(await hub.locator(".g12-chv-answer:not([hidden])").count(),1,"Only own formative answer unlocks");
-    assert(await item.locator("textarea").isDisabled());
+    assert.equal(await optional.count(),1,"Post-B17 B14 O07 extension remains a separate optional lesson");
+    assert((await optional.innerText()).includes("không phải Core bắt buộc"));
+    assert.equal(await optional.locator('[data-g12-golden-open="b14-optional"]').count(),1,"Optional Golden tile");
+    await optional.locator("button").first().click();
+    const optDialog=page.locator('dialog[data-g12-golden-dialog="V"]');
+    assert(await optDialog.isVisible(),"Optional opens same approved Golden modal");
+    assert.equal(await optDialog.locator(".thpt-r4-modal-question-nav button").count(),4,"Four canonical optional items, not compulsory B14 Core");
+    assert.equal(await optDialog.locator("[data-thpt-canonical-item]").count(),1,"One optional item on screen");
+    assert.equal(await optDialog.locator(".thpt-g12-golden-solution:not([hidden])").count(),0,"Optional key hidden before self-attempt");
+    await optDialog.locator('[aria-label="Đóng cửa sổ"]').click();
     await open("chuong-v/luyen-tap/#b14-optional");
-    await page.waitForFunction(()=>document.querySelector("[data-g12-chv-hub]")?.dataset.g12ChvReady==="true",null,{timeout:25000});
-    assert.notEqual(await page.locator("#b14-optional").getAttribute("open"),null,"Optional deep-link opens after B17");
+    await page.waitForFunction(()=>document.querySelector('dialog[data-g12-golden-dialog="V"]')?.open,null,{timeout:5000});
+    assert.equal(await page.locator('dialog[data-g12-golden-dialog="V"] .thpt-r4-modal-question-nav button').count(),4,
+      "Original optional deep link opens only post-B17 group");
+    await page.keyboard.press("Escape");
     await open("chuong-v/tu-kiem-tra-chuong/");
     const end=page.locator("[data-g12-chv-selfcheck]");
     await page.waitForFunction(()=>document.querySelector("[data-g12-chv-selfcheck]")?.dataset.g12ChvReady==="true",null,{timeout:25000});
