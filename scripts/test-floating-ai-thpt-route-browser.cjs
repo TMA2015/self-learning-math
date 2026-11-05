@@ -83,7 +83,7 @@ const base="http://127.0.0.1:8765/";
     await page.goto(base+"thpt-preview/sgk/lop-12/chuong-iii/luyen-tap/",{waitUntil:"networkidle",timeout:60000});
     // Mobile lesson tabs are horizontally clipped. DOM link activation
     // exercises Material instant navigation without off-viewport pointer.
-    await page.locator('a[href*="tu-kiem-tra-chuong/"]').first().evaluate(el=>el.click());
+    await page.locator('.thpt-r4-lesson-tabs a[href*="tu-kiem-tra-chuong/"]').evaluate(el=>el.click());
     await page.waitForURL(/chuong-iii\/tu-kiem-tra-chuong\/$/,{timeout:15000});
     await page.waitForFunction(()=>document.querySelector("[data-floating-ai]")===null,null,{timeout:10000});
     assert.equal(await page.locator("[data-floating-ai]").count(),0,
