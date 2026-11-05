@@ -30,7 +30,7 @@
       node.textContent=(display?"\\[":"\\(")+expr+(display?"\\]":"\\)");
       dst.append(node);
     };
-    const tokens=/\$\$[\s\S]+?\$\$|\$[^$\n]+\$|\\\[[\s\S]+?\\\]|\\\([\s\S]+?\\\)|\x60[^\x60\n]+\x60|\*\*[^*\n]+\*\*|\\overrightarrow\{[^}]+\}|\\vec(?:\{[A-Za-z0-9]+\}|[A-Za-z0-9]+)|\\bar(?:\{[A-Za-z0-9]+\}|[A-Za-z0-9]+)/g;
+    const tokens=/\$\$[\s\S]+?\$\$|\$[^$\n]+\$|\\\[[\s\S]+?\\\]|\\\([\s\S]+?\\\)|\x60[^\x60\n]+\x60|\*\*[^*]+\*\*|\\overrightarrow\{[^}]+\}|\\vec(?:\{[A-Za-z0-9]+\}|[A-Za-z0-9]+)|\\bar(?:\{[A-Za-z0-9]+\}|[A-Za-z0-9]+)/g;
     const insert=(dst,input)=>{
       const source=String(input??"");
       let from=0;
