@@ -65,6 +65,24 @@ async function verifyG12GoldenHub(page,{chapter,selector,lessons,groups,items,he
  assert.equal(await dlg.locator("[data-thpt-canonical-item]").getAttribute("data-thpt-canonical-item"),id0);
  await page.keyboard.press("Escape");
  assert.equal(await dlg.isVisible(),false,"Escape closes via native dialog");
+ if(chapter==="III"){
+  const firstHelp=hub.locator("details.g12-chiii-help[data-g12-golden-d6-outcome]").first();
+  assert.equal(await firstHelp.count(),1,"Existing five-step D6 is canonically tied to an outcome");
+  const helpTitle=await firstHelp.locator("summary").innerText();
+  assert(helpTitle.includes("Bài 9")&&helpTitle.includes("Core câu 1")&&helpTitle.includes("Luyện tập câu 1"),
+   "D6 section must explain its exact lesson, Core and Practice mapping");
+  await firstHelp.locator("summary").click();
+  await firstHelp.locator('a[href="#thpt-g12-b09-p01"]').click();
+  assert(await dlg.isVisible(),"D6 practice item deep link opens Golden modal");
+  assert.equal(await dlg.locator("[data-thpt-canonical-item]").getAttribute("data-thpt-canonical-item"),
+   "THPT-G12-B09-P01","D6 Luyện tập lại navigates to original mapped canonical question");
+  const linkedD6=dlg.locator(".thpt-g12-golden-d6");
+  await linkedD6.locator("summary").click();
+  await linkedD6.locator('[data-g12-golden-d6-target="THPT-G12-B09-C01"]').click();
+  assert.equal(await dlg.locator("[data-thpt-canonical-item]").getAttribute("data-thpt-canonical-item"),
+   "THPT-G12-B09-C01","D6 Quay lại Core uses original source item ID, not a copy");
+  await dlg.locator("[aria-label='Đóng cửa sổ']").click();
+ }
  const excess=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);
  assert(excess<=20,"No horizontal overflow in Golden chapter hub");
 }
