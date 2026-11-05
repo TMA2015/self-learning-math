@@ -1,12 +1,15 @@
 # G10-SGK-CHVI — R04 consolidated AUTHORING V2 pre-handoff (NOT CONTENT_READY)
 
+> **OWNER DECISION — 05/11/2026 (current operating instruction):** Chấm dứt vòng điều tra chênh lệch byte giữa báo cáo NotebookLM và tệp tác giả khi **nội dung học thuật có thể đối chiếu trực tiếp theo từng câu/outcome**. Tác giả đã xác nhận biên bản R02 mô tả đúng 19/19 câu Tự thử, kết quả và 19 outcomes của source R02; hai SVG B15/B18 có tên/title/desc XML đúng theo phản biện bổ sung; R03 giữ nguyên 19/19 đề, đáp án, lập luận và PED1–PED5, chỉ sửa đường luyện tập D6 cùng một alias item đã kiểm. R01 đã có review gốc, R04 2/2 đã có review độc lập. **Không bắt NotebookLM review lại chỉ vì 558 byte hoặc yêu cầu chạy hash/đối chiếu dòng.** Sai khác 93.198 / 92.640 byte được lưu là *chênh lệch metadata chưa giải thích*, KHÔNG được ghi thành byte-identical PASS. Đây là quyết định xử lý chứng cứ review theo nội dung của chủ dự án, không tạo chuẩn mới và không bỏ qua lỗi toán thực sự nếu tìm thấy. Việc còn lại là hoàn thiện handoff V2 theo nguồn đã review; **CONTENT_READY=NO đến khi gói bàn giao ký/manifest/REGISTER được hoàn tất**. Không tích hợp website/merge/deploy trong AUTHORING.
+
+
 > **CẬP NHẬT AUTHORING 05/11 — R01 SHA 5/5 PASS:** ZIP gốc 28/10 được khôi phục tại Library, 26.884 bytes, exact full ZIP SHA và 5 thành phần khớp receipt. Audit SHA Git `48d1d46fdc777ed3eda3c94798fa501f6ef6dc35`. **Chỉ còn Q18 R02 reviewer-mounted source identity HOLD.** Giữ `CONTENT_READY=NO`, không signed V2/ready/REGISTER, không release.
 
 R02_SOURCE_IDENTITY_AUTHOR_AUDIT_BLOB: c50494ce18fb8a2f224d11c0e54f49781099f38f
 R02_REVIEWER_MOUNTED_SOURCE_BYTES_REPORTED: 92640
 R02_SOURCE_CANONICAL_UTF8_BYTES: 93198
 R02_SOURCE_CR_COUNT: 0
-R02_SOURCE_IDENTITY_STATUS: HOLD
+R02_SOURCE_IDENTITY_STATUS: BYTE_PARITY_UNPROVEN_CONTENT_REVIEW_MATCH_ACCEPTED_BY_OWNER
 
 R03_AUTHOR_STRUCTURAL_QA_BLOB: 6a552663bd0307b29ac4782eae397f93b2d2424b
 R03_AUTHOR_QA_OUTCOMES_PED1_PED6: 19_OF_19
@@ -22,12 +25,12 @@ STANDARD_VERSION: 1.2.0
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 RELEASE_SCOPE: FULL_LEARNING_PATH_CLIENT_SELF_CHECK_NO_MASTERY
 ROLE: AUTHORING_ONLY
-STATE: BLOCKED_BY_AUTHORING
+STATE: AUTHORING_V2_HANDOFF_ASSEMBLY
 HANDOFF_STATUS: V2_PRE_HANDOFF_NOT_SIGNED
 ACADEMIC_VERDICT: HISTORIC_R01_PASS_R03_R02_REVIEWER_REPORTED_R04_SCOPED_PASS
 PEDAGOGICAL_VERDICT: R02_REPORTED_19_OUTCOMES_PASS_AND_R04_NEW_2_PASS
 CONTENT_READY: NO
-BLOCKERS: Q18_R02_EXTERNAL_REVIEW_SOURCE_IDENTITY_ONLY
+BLOCKERS: NONE_ACADEMIC_ON_REVIEWED_CONTENT; V2_SIGNED_HANDOFF_AND_READY_MANIFEST_REGISTER_NOT_CREATED
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PUBLIC_ITEM_IDS_PROPOSED: 74
 WRITTEN8_PUBLIC_BODY_Q15_AUDIT_BLOB: d5cd8e960d39df9bbfb17bd021bfb54fc99340c5
@@ -77,9 +80,9 @@ MASTERY_ACTIVATION: NO
 
 | Cổng | Kết quả authoring | Lý do |
 |---|---|---|
-| A1 SOURCE/SNAPSHOT | **HOLD** | R01 private ZIP + 5/5 raw hashes hiện PASS; R02 external reviewer-mounted snapshot chưa được AUTHORING chứng minh identity/equivalence với canonical R02/R03 |
+| A1 SOURCE/SNAPSHOT | **REVIEW_CONTENT_CONFIRMED; BYTE_METADATA_NOTE** | R01 5/5 raw hashes có receipt gốc; R02 reviewer mô tả đúng 19/19 câu/outcome và nội dung SVG từ source tác giả. Owner cho phép chấp nhận đối chiếu nội dung thay vì truy tìm byte-level không phục vụ toán học. Sai khác 558 byte vẫn chưa giải thích; không ghi tương đương byte. |
 | A2 S1 SGK/SBT | EVIDENCE_READY | S1 đúng sách/tập/trang in từ receipt đã khóa |
-| A3 Academic + PED reviewer | SCOPED_PASS_HISTORY | R01 Academic 54/54; R02 PED/Academic 19/19 được báo, Q07/PED4 hai SVG PASS; R04 Academic/PED 2/2 PASS. **Không cấp PASS chung trên snapshot duy nhất khác** |
+| A3 Academic + PED reviewer | **SCOPED_REVIEW_ACCEPTED** | R01 Academic 54/54; R02 Academic/PED 19/19 và SVG Q07/PED4 PASS đối chiếu nội dung; R03 chỉ Delta B đường khắc phục/alias, tác giả đã QA; R04 Academic/PED 2/2 PASS. Không gán review cho nội dung chưa được xét. |
 | A4 item/outcome/placement | **AUTHOR_QA_PASS** | 74 unique, đủ 74 PRIMARY outcome theo đề hiện có; 8 Written R01 đã kiểm trực tiếp đề, lời giải, rubric trên `tu-luan.md`; audit `G10_CHVI_R01_WRITTEN8_PUBLIC_SOURCE_OUTCOME_QA_20261105.md` blob `d5cd8e960d39df9bbfb17bd021bfb54fc99340c5`; không suy public page đồng nhất snapshot R01 |
 | A5 D1–D6 / PED1–PED6 | EVIDENCE_PREPARED | Tự học từ bản chất, 19 First Try, 19 HELP, 2 SVG, 12 recovery fixes; R04 đã giải quyết hai độ sâu thiếu trong tự kiểm tra công khai ứng viên |
 | A6 Delta | EVIDENCE_PREPARED | R03 `DELTA_B` routing+ID source equivalent, R04 `DELTA_C` scoped independent PASS, giữ nguyên R01 |
@@ -99,6 +102,13 @@ MASTERY_ACTIVATION: NO
 - **Audit mới:** `prototypes/thpt/audits/G10_CHVI_R01_WRITTEN8_PUBLIC_SOURCE_OUTCOME_QA_20261105.md`, blob `d5cd8e960d39df9bbfb17bd021bfb54fc99340c5`; định danh outcome dựa nội dung từng câu, không dựa tên WRI.
 - **Ma trận canonical:** `prototypes/thpt/shared-items/G10_CHVI_R04_CANONICAL_74_ITEM_OUTCOME_PREFLIGHT_20261105.md`, cập nhật blob `f4a6bf6f81ad0a2d8dcc5eb661790c1736aaea52`: 74/74 unique item IDs mapped primary outcomes; 19 First Try placements vẫn một reuse canonical R01, 20 chapter selfcheck là dự kiến (18 public + 2 R04 accepted, chưa tích hợp).
 - **Kết luận phân biệt:** Q15 **author mapping PASS**; Q18 **historic exact review source custody HOLD** cho 5 Temp R01 và chỉ riêng sự sai khác nguồn mounted R02 chưa xác nhận tương đương; các PASS lịch sử vẫn snapshot-bound. Không gọi NotebookLM kiểm Git/hash.
+
+## Thống nhất vận hành sau quyết định chủ dự án — supersedes old R02 mechanical HOLD
+
+- **Cổng học thuật:** R01 giữ PASS gốc, R02 reviewer mô tả đúng 19/19 câu/outcome/đáp án và hai hình đúng source, R03 Delta B đã sửa đường D6 và thống nhất item_id không đổi toán, R04 review độc lập 2/2. **Không thêm vòng review nào về dung lượng tệp.**
+- **Ghi nhận trung thực:** khác biệt 558 byte/metadata của báo cáo R02 chưa được giải thích và **không tuyên bố byte parity**. Nội dung reviewers đã đánh giá là phù hợp với học liệu gửi xét theo đối chiếu tác giả. Nếu có lỗi toán hoặc khác biệt nội dung *cụ thể*, xử lý đúng item/outcome (Delta C) thay vì truy nguyên file chỉ vì metadata.
+- **Còn phải làm trước CONTENT_READY:** thực hiện một V2 signed handoff chuẩn của dự án, ready manifest và REGISTER theo nguồn đã duyệt; không lập thêm tiêu chuẩn/cổng mới. Các mục lịch sử bên dưới ghi `R02 HOLD` là checkpoint cũ **đã bị quyết định này thay thế về cách xử lý**, không yêu cầu tái điều tra byte.
+- **Không thay quyền RELEASE:** Final Submit, AP1–AP5, R1–R5 và quyền merge/deploy vẫn theo cổng riêng và chỉ sau bàn giao. Dữ liệu selfcheck công khai không được ghi Mastery.
 
 ## Quyết định AUTHORING hiện tại và các điều kiện kết thúc
 
