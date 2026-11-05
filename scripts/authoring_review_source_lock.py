@@ -303,7 +303,7 @@ def main():
     b.add_argument('--output', required=True)
     args = ap.parse_args()
     try:
-        {'prepare': prepare, 'preflight': preflight, 'check-report': check_report, 'bundle': bundle}[args.action](args)
+        {'prepare': prepare, 'prepare-private': prepare_private, 'preflight': preflight, 'check-report': check_report, 'bundle': bundle}[args.action](args)
     except (ValueError, FileNotFoundError, KeyError, UnicodeError, subprocess.SubprocessError) as err:
         print('SOURCE_LOCK_HOLD:', err, file=sys.stderr)
         sys.exit(2)
