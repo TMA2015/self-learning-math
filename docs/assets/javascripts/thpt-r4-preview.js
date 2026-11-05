@@ -583,7 +583,7 @@
      const mj=window.MathJax;
      if(!mj)return;
      const ready=mj.startup?.promise;
-     const process=()=>{if(card.isConnected&&typeof mj.typesetPromise==="function")return mj.typesetPromise([card])};
+     const process=()=>{if(card.isConnected&&typeof window.MathJax?.typesetPromise==="function")return window.MathJax.typesetPromise([card])};
      if(ready?.then)void ready.then(process).catch(()=>{});
      else void process()?.catch(()=>{});
     };
