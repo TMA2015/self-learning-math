@@ -13,7 +13,8 @@ const chapter=[
  {roman:"i",name:"I",start:1,end:5,short:"chi",runtime:"thpt-g12-chi-b01-b05-r00.js",bank:"thpt-g12-chi-b01-b05-public-r00.json",selector:"data-g12-chi-hub",public:66,total:78},
  {roman:"ii",name:"II",start:6,end:8,short:"chii",runtime:"thpt-g12-chii-b06-b08-r00.js",bank:"thpt-g12-chii-b06-b08-public-r00.json",selector:"data-g12-chii-hub",public:64,total:64},
  {roman:"iii",name:"III",start:9,end:10,short:"chiii",runtime:"thpt-g12-chiii-b09-b10-r00.js",bank:"thpt-g12-chiii-b09-b10-public-r00.json",selector:"data-g12-chiii-hub",public:48,total:48},
- {roman:"iv",name:"IV",start:11,end:13,short:"chiv",runtime:"thpt-g12-chiv-b11-b13-r00.js",bank:"thpt-g12-chiv-b11-b13-public-r00.json",selector:"data-g12-chiv-hub",public:88,total:88}
+ {roman:"iv",name:"IV",start:11,end:13,short:"chiv",runtime:"thpt-g12-chiv-b11-b13-r00.js",bank:"thpt-g12-chiv-b11-b13-public-r00.json",selector:"data-g12-chiv-hub",public:88,total:88},
+ {roman:"v",name:"V",start:14,end:17,short:"chv",runtime:"thpt-g12-chv-b14-b17-r01.js",bank:"thpt-g12-chv-b14-b17-public-r01.json",selector:"data-g12-chv-hub",public:96,total:96}
 ];
 const golden=read("docs/assets/javascripts/thpt-r4-preview.js");
 const g11=read("docs/thpt-preview/sgk/lop-11/chuong-i/luyen-tap.md");
@@ -84,4 +85,4 @@ assert.deepEqual(unexpectedChapters,[],"New G12 chapter practice requires explic
 const topicsDir="docs/thpt-preview/chuyen-de";
 const futureTopics=fs.readdirSync(path.join(base,topicsDir),{withFileTypes:true}).filter(e=>e.isDirectory()&&e.name!=="ham-so"&&exists(topicsDir+"/"+e.name+"/luyen-tap.md")).map(e=>e.name);
 assert.deepEqual(futureTopics,[],"New THPT Topic practice must register Golden modal, three-page UX and independent browser/Q16 gate first");
-console.log("PASS Golden RELEASE AP/R: G10/G11 reference modal, G12 I-IV four chapter hubs, canonical source-locked items, one-question browser contract, Q16 boundary and G10/G11/G12 AI Tutor regression. New Topic production remains separate gated release.");
+console.log("PASS Golden RELEASE AP/R: G10/G11 reference modal, G12 I-V five chapter hubs, canonical source-locked items, one-question browser contract, Q16 boundary and G10/G11/G12 AI Tutor regression. New Topic production remains separate gated release.");

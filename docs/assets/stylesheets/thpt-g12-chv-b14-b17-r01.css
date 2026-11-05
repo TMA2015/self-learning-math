@@ -1,0 +1,101 @@
+/* G12 SGK Chapter V R00 · scoped, learner-first, no golden overrides. */
+.g12-chv-lesson,.g12-chv-self-check{min-width:0;overflow-wrap:anywhere}
+.g12-chv-stage{margin:24px 0 30px;padding-top:12px;border-top:1px solid var(--md-default-fg-color--lightest)}
+.g12-chv-stage-title{font-size:1.11rem;line-height:1.35;margin:12px 0 16px}
+.g12-chv-item{margin:16px 0;padding:16px;border:1px solid var(--md-default-fg-color--lightest);border-radius:12px;scroll-margin-top:6rem;min-width:0}
+.g12-chv-item h4{margin:5px 0 11px;font-size:1rem}
+.g12-chv-item h5{margin:10px 0 6px;font-size:.91rem}
+.g12-chv-input{display:block;width:100%;max-width:100%;min-height:96px;margin:12px 0;padding:12px;background:var(--md-default-bg-color);color:var(--md-default-fg-color);border:1px solid var(--md-default-fg-color--lighter);border-radius:8px;resize:vertical;font:inherit;font-size:16px}
+.g12-chv-input:disabled{opacity:.78}
+.g12-chv-submit{display:inline-flex;min-height:44px;align-items:center;justify-content:center;padding:10px 15px;margin:7px 0;background:var(--md-accent-fg-color);color:var(--md-default-bg-color);font:inherit;font-weight:700;border:1px solid var(--md-accent-fg-color);border-radius:9px;cursor:pointer}
+.g12-chv-submit:disabled{opacity:.62;cursor:default}
+.g12-chv-feedback{font-size:.87rem;margin:7px 0}
+.g12-chv-answer{margin:10px 0;padding:12px 16px;background:var(--md-code-bg-color);border-radius:10px;border:1px solid var(--md-default-fg-color--lightest);white-space:pre-line}
+.g12-chv-answer[hidden]{display:none!important}
+.g12-chv-help{margin:10px 0;padding:12px 15px;border:1px solid var(--md-default-fg-color--lightest);border-radius:9px}
+.g12-chv-help summary{font-weight:650;cursor:pointer}
+.g12-chv-help p{white-space:pre-line}
+.g12-chv-return{display:inline-block;margin:10px 0;font-weight:700}
+.g12-chv-figure{overflow:auto;max-width:100%;margin:12px 0}
+.g12-chv-figure img{max-width:100%;height:auto;display:block;margin:auto}
+.g12-chv-paragraph{white-space:pre-line}
+.g12-chv-math-display{overflow-x:auto}
+.g12-chv-error{padding:12px;border-left:3px solid var(--md-accent-fg-color)}
+@media(max-width:640px){.g12-chv-item{padding:12px;margin:12px 0}.g12-chv-stage{margin:18px 0 24px}.g12-chv-submit{width:100%}.g12-chv-answer{padding:12px}}
+
+/* Keep same-page remediation readable on small physical screens. */
+.g12-chv-return{margin-right:1rem;min-height:44px;display:inline-flex;align-items:center}
+.g12-chv-selfcheck-item .g12-chv-answer[hidden]{display:none!important}
+
+
+/* G12 ChV: one chapter-wide Core and Practice hub, preserve Golden R4 grade palette. */
+.g12-chv-hub{min-width:0;overflow-wrap:anywhere}
+.g12-chv-hub-lesson{scroll-margin-top:6rem}
+.g12-chv-hub-group{display:block;gap:0;align-self:start;scroll-margin-top:6rem}
+.g12-chv-hub-group[open]{grid-column:1/-1}
+.g12-chv-hub-summary{display:flex;flex-direction:column;gap:10px;list-style:none;cursor:pointer}
+.g12-chv-hub-summary::-webkit-details-marker{display:none}
+.g12-chv-hub-summary::marker{content:""}
+.g12-chv-hub-kind{color:var(--thpt-grade-accent,#8554c1);font-weight:850;font-size:.87rem}
+.g12-chv-hub-count{font-size:.82rem;color:var(--md-default-fg-color--light)}
+.g12-chv-hub-action{display:block;text-align:center;min-height:44px;border-radius:8px;border:1px solid #d8c2f4;padding:10px 12px;color:var(--thpt-grade-accent,#8554c1);font-weight:750}
+.g12-chv-hub-summary:hover .g12-chv-hub-action,.g12-chv-hub-group[open] .g12-chv-hub-action{background:var(--md-code-bg-color)}
+.g12-chv-hub-body{border-top:1px solid var(--md-default-fg-color--lightest);margin-top:15px;padding:0 2px;min-width:0}
+.g12-chv-hub-help{margin:0 16px 18px;border:1px solid var(--md-default-fg-color--lightest);border-radius:10px;scroll-margin-top:6rem}
+.g12-chv-hub-help>summary{padding:12px 16px;cursor:pointer;font-weight:700}
+.g12-chv-hub-help-body{padding:0 16px 12px}
+.g12-chv-hub-lesson>.g12-chv-return{margin:0 18px 16px}
+@media(max-width:720px){.g12-chv-hub .thpt-r4-practice-card-grid{grid-template-columns:1fr}.g12-chv-hub-group[open]{grid-column:1}}
+/* G12 ChV owner visual QA: use established G11 Golden styling already released in ChI/II. */
+.md-typeset details.g12-chv-hub-group.thpt-r4-practice-card{
+ margin:0!important;padding:16px!important;min-width:0;
+ background:var(--md-default-bg-color)!important;
+ border:1px solid var(--md-default-fg-color--lightest)!important;
+ border-radius:12px!important;box-shadow:none!important;color:var(--md-default-fg-color)}
+.md-typeset details.g12-chv-hub-group.thpt-r4-practice-card>summary{
+ display:flex!important;flex-direction:column!important;align-items:stretch!important;
+ gap:12px!important;padding:0!important;margin:0!important;min-width:0;
+ background:transparent!important;color:inherit!important;
+ font:inherit!important;line-height:1.45!important;list-style:none!important;
+ cursor:pointer;white-space:normal!important}
+.md-typeset details.g12-chv-hub-group.thpt-r4-practice-card>summary::before,
+.md-typeset details.g12-chv-hub-group.thpt-r4-practice-card>summary::after{content:none!important;display:none!important}
+.md-typeset details.g12-chv-hub-group.thpt-r4-practice-card>summary>*{
+ display:block!important;position:static!important;margin:0!important;min-width:0;max-width:100%;overflow-wrap:anywhere}
+.md-typeset details.g12-chv-hub-group.thpt-r4-practice-card>summary .g12-chv-hub-kind{
+ color:var(--thpt-grade-accent,#8554c1)!important;font-weight:800!important;font-size:.88rem!important}
+.md-typeset details.g12-chv-hub-group.thpt-r4-practice-card>summary strong{
+ line-height:1.5!important;font-weight:750!important;font-size:1rem!important}
+.md-typeset details.g12-chv-hub-group.thpt-r4-practice-card>summary .g12-chv-hub-count{
+ font-size:.85rem!important;color:var(--md-default-fg-color--light)!important}
+.md-typeset details.g12-chv-hub-group.thpt-r4-practice-card>summary .g12-chv-hub-action{
+ box-sizing:border-box;display:flex!important;align-items:center;justify-content:center;
+ width:100%;min-height:44px;border:1px solid var(--thpt-grade-border,#d8c2f4)!important;
+ border-radius:9px;padding:9px 12px;color:var(--thpt-grade-accent,#8554c1)!important;
+ background:transparent!important;font-weight:750}
+.md-typeset details.g12-chv-hub-group.thpt-r4-practice-card[open]>summary{
+ border-bottom:1px solid var(--md-default-fg-color--lightest);padding-bottom:14px!important}
+.md-typeset details.g12-chv-hub-help{background:var(--md-default-bg-color)!important;
+ border:1px solid var(--md-default-fg-color--lightest)!important;box-shadow:none!important}
+.md-typeset details.g12-chv-hub-help>summary{
+ background:transparent!important;color:var(--md-default-fg-color)!important;padding:12px 16px!important}
+/* Same one-question pager as the accepted G11 UX; answers still gated by Final Submit. */
+.g12-chv-selfcheck-item[hidden]{display:none!important}
+.g12-chv-quiz-progress{font-weight:700;margin:16px 0 6px}
+.g12-chv-quiz-nav{display:flex;flex-wrap:wrap;gap:6px;padding:9px 0 13px;margin:0 0 14px;
+ border-bottom:1px solid var(--md-default-fg-color--lightest)}
+.g12-chv-quiz-jump{font:inherit;min-width:42px;min-height:40px;cursor:pointer;
+ border:1px solid var(--md-default-fg-color--lightest);border-radius:7px;
+ background:var(--md-code-bg-color);color:var(--md-default-fg-color)}
+.g12-chv-quiz-jump.is-current{border-color:var(--md-accent-fg-color);font-weight:800;
+ box-shadow:inset 0 0 0 1px var(--md-accent-fg-color)}
+.g12-chv-quiz-controls{display:flex;align-items:center;flex-wrap:wrap;gap:9px;margin:16px 0 8px}
+.g12-chv-quiz-step{font:inherit;min-height:44px;padding:9px 14px;cursor:pointer;
+ background:transparent;color:var(--md-primary-fg-color);
+ border:1px solid var(--md-primary-fg-color);border-radius:8px}
+.g12-chv-quiz-step:disabled{opacity:.45;cursor:not-allowed}
+.g12-chv-quiz-jump:focus-visible,.g12-chv-quiz-step:focus-visible,
+.md-typeset details.g12-chv-hub-group>summary:focus-visible{
+ outline:2px solid var(--md-accent-fg-color);outline-offset:2px}
+.g12-chv-quiz-controls .g12-chv-final{margin:0}
+@media(max-width:720px){.g12-chv-quiz-controls .g12-chv-final{width:100%}}
