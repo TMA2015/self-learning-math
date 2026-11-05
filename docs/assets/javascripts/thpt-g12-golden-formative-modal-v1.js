@@ -148,7 +148,7 @@ function mount(root,bank,{chapter}={}){
   if(help){
    const d6=el("details","thpt-g12-golden-d6");
    d6.dataset.g12GoldenD6Outcome=help.outcome_id;
-   const d6Summary=el("summary","","🧭 Khi gặp khó khăn · hướng dẫn của câu này");
+   const d6Summary=el("summary","","🧭 Khi gặp khó khăn");
    const wrap=el("div","thpt-g12-golden-d6-body");
    wrap.append(el("p","thpt-g12-golden-d6-intro","Dùng khi em chưa biết bắt đầu, làm sai hoặc muốn tìm lại kiến thức liên quan."));
    if(help.steps?.length){
