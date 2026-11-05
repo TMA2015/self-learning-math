@@ -20,6 +20,7 @@ const base="http://127.0.0.1:8765/";
       "thpt-preview/sgk/lop-11/chuong-iv/luyen-tap/",
       "thpt-preview/sgk/lop-12/chuong-iii/luyen-tap/",
       "thpt-preview/chuyen-de/ham-so/luyen-tap/",
+      "kien-thuc/04-bieu-thuc-dai-so/",
       "kien-thuc/04-bieu-thuc-dai-so/bai-tap/",
       "kien-thuc/25-tong-hop-on-thi-10/kho-bai-mo-neo/"
     ];
@@ -66,6 +67,23 @@ const base="http://127.0.0.1:8765/";
         assert(await dlg.locator(".floating-ai-panel").isVisible(),"Tutor panel opens from native G12 modal");
         await dlg.locator(".floating-ai-close").click();
         await dlg.locator('[aria-label="Đóng cửa sổ"]').click();
+        await page.waitForFunction(()=>document.querySelector("body > [data-floating-ai]")!==null,null,{timeout:10000});
+      }
+      if(route==="kien-thuc/04-bieu-thuc-dai-so/"){
+        const start=page.locator(".topic-core-card .topic-micro-start").first();
+        await start.waitFor({state:"visible",timeout:15000});
+        await start.click();
+        const dlg=page.locator("dialog.topic-core-dialog[open]");
+        await dlg.locator("[data-floating-ai]").waitFor({state:"attached",timeout:10000});
+        const stem=await dlg.locator(".topic-micro-question").first().innerText();
+        assert(stem.length>15,"THCS Core dialog must show one public micro-question");
+        await dlg.locator(".floating-ai-launcher").click();
+        const label=await dlg.locator(".floating-ai-head small").innerText();
+        assert(label.includes(stem.slice(0,15)),
+          "Gemini must read current THCS PUBLIC micro question, not solution or other records");
+        assert(await dlg.locator(".floating-ai-panel").isVisible(),"Same AI usable inside THCS native Core dialog");
+        await dlg.locator(".floating-ai-close").click();
+        await dlg.locator('[aria-label="Đóng cửa sổ Core"]').click();
         await page.waitForFunction(()=>document.querySelector("body > [data-floating-ai]")!==null,null,{timeout:10000});
       }
       if(route==="thpt-preview/sgk/lop-11/chuong-iv/luyen-tap/"){
