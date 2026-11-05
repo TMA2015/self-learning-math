@@ -28,10 +28,24 @@ async function verifyG12GoldenHub(page,{chapter,selector,lessons,groups,items,he
  assert((await nav.count())>=3,"Question-number navigation rendered");
  assert.equal(await question.count(),1,"Exactly one question per modal screen");
  if(chapter==="IV")assert((await question.locator("sup").count())>0,"G12 ChIV raw x^3 must be a proper superscript in Golden modal");
- assert.equal(await dlg.locator(".thpt-g12-golden-solution:not([hidden])").count(),0,"No answer before formative submit");
+ const answer=dlg.locator(".thpt-g12-golden-solution");
+ assert.equal(await answer.count(),1,"Same G10/G11 Golden answer/solution disclosure control");
+ assert.equal(await answer.locator("summary").innerText(),"📖 Đáp án / Lời giải");
+ assert.equal(await dlg.locator(".thpt-g12-golden-solution[open]").count(),0,"No answer before deliberate learner disclosure");
+ await answer.locator("summary").click();
+ assert.equal(await dlg.locator(".thpt-g12-golden-solution[open] .thpt-r4-formative-reveal").count(),1,
+  "Public formative canonical answer available by self-chosen Golden disclosure as G10/G11");
+ await answer.locator("summary").click();
+ assert.equal(await dlg.locator(".thpt-g12-golden-solution[open]").count(),0,"Answer disclosure closes");
+ const d6=dlg.locator(".thpt-g12-golden-d6[data-g12-golden-d6-outcome]");
+ assert.equal(await d6.count(),1,"One outcome-linked D6 remediation per current PUBLIC formative item");
+ await d6.locator("summary").click();
+ assert.equal(await d6.locator(".thpt-g12-golden-d6-links button").count()>0,true,
+  "D6 exposes a canonical return-to-question control");
+ await d6.locator("summary").click();
  const id0=await question.getAttribute("data-thpt-canonical-item");
  await dlg.locator("button.thpt-r4-formative-submit").click();
- assert.equal(await dlg.locator(".thpt-g12-golden-solution:not([hidden])").count(),0,"Blank attempt must not reveal answer");
+ assert.equal(await dlg.locator(".thpt-g12-golden-solution[open]").count(),0,"Blank submit must not automatically reveal answer");
  await dlg.locator("textarea").fill("Bài làm thử của em");
  await nav.nth(1).click();
  assert.equal(await question.count(),1);
@@ -39,10 +53,10 @@ async function verifyG12GoldenHub(page,{chapter,selector,lessons,groups,items,he
  await nav.first().click();
  assert.equal(await dlg.locator("textarea").inputValue(),"Bài làm thử của em","Draft retained when navigating");
  await dlg.locator("button.thpt-r4-formative-submit").click();
- assert.equal(await dlg.locator(".thpt-g12-golden-solution:not([hidden])").count(),1,"Canonical answer only after submit");
+ assert.equal(await dlg.locator(".thpt-g12-golden-solution[open]").count(),1,"Canonical answer auto-expanded after individual formative submit");
  assert(await dlg.locator("textarea").isDisabled(),"Submitted answer locked");
  await nav.nth(1).click();
- assert.equal(await dlg.locator(".thpt-g12-golden-solution:not([hidden])").count(),0,"Other answer remains hidden");
+ assert.equal(await dlg.locator(".thpt-g12-golden-solution[open]").count(),0,"Other answer remains closed without learner disclosure");
  await dlg.locator("[aria-label='Đóng cửa sổ']").click();
  assert.equal(await dlg.isVisible(),false,"Modal closes by explicit control");
  // Canonical D6 item deep links still open the exact source item in modal.
