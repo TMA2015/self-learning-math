@@ -26,7 +26,7 @@ assert(!/<details\b[^>]*class=["'][^"']*thpt-r4-practice-card/.test(g11),
  "Approved G11 buttons must not regress to inline expanding question stacks");
 const modalPath="docs/assets/javascripts/thpt-g12-golden-formative-modal-v1.js";
 const modal=read(modalPath);
-for(const text of ["thpt-r4-practice-dialog","thpt-r4-modal-question-nav","thpt-r4-practice-card-grid","dataset.g12GoldenOpen","result.hidden=!state.submitted","THPT_G12_GOLDEN_HUB"]){
+for(const text of ["thpt-r4-practice-dialog","thpt-r4-modal-question-nav","thpt-r4-practice-card-grid","dataset.g12GoldenOpen","solution.open=true","thpt-g12-golden-solution","thpt-g12-golden-d6","THPT_G12_GOLDEN_HUB"]){
  assert(modal.includes(text),"Shared G12 adapter missing Golden/R3 boundary: "+text);
 }
 for(const code of ["localStorage","sessionStorage","firebase.","setDoc(","recordMastery","SGK_CHAPTER_READINESS","TOPIC_READINESS"]){
