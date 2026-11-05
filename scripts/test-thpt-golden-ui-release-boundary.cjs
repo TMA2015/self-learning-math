@@ -75,6 +75,8 @@ for(const x of ["thpt-preview/sgk/chuong-ii/bai-3/","thpt-preview/sgk/lop-11/chu
 }
 assert(exists("docs/thpt-preview/chuyen-de/ham-so/luyen-tap.md"),
  "Keep legacy THPT Topic demo visible; it does NOT authorize Topic production");
+assert(read("docs/thpt-preview/chuyen-de/ham-so/luyen-tap.md").includes("PRACTICE-THPT-DEMO-01"),
+ "Historic ham-so practice is a demonstration, not independent reviewed Topic or its Golden release");
 const registry=new Set(chapter.map(c=>"chuong-"+c.roman));
 const gradeDir="docs/thpt-preview/sgk/lop-12";
 const unexpectedChapters=fs.readdirSync(path.join(base,gradeDir),{withFileTypes:true}).filter(e=>e.isDirectory()&&/^chuong-[ivx]+$/.test(e.name)&&!registry.has(e.name)&&exists(gradeDir+"/"+e.name+"/luyen-tap.md")).map(e=>e.name);
