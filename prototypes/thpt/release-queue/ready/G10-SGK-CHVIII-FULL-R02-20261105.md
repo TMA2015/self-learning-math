@@ -65,7 +65,7 @@ The full Q01–Q18 per-outcome evidence register belongs in the exact `AUTHOR_HA
 - [ ] AP5_RESPONSIVE_VISUAL — desktop iPhone iPad actual release candidate; owner real device P2 separate.
 
 ## P1/P2 — POST RELEASE
-- [ ] P1_DEPLOY_RECEIPT — no P1 deployment.
+- [ ] P1_DEPLOY_RECEIPT — Not deployed: AUTHORING source-only Draft; no merged website commit, production Pages proof, or owner release authorization. RELEASE must provide P1 proof after a separately approved release.
 - [ ] P2_DEVICE_UAT — no P2 real device validation.
 
 **AUTHORING ONLY:** No topic PASS, no held-out Readiness, no official scoring, no Mastery, no website integration, no merge or deploy. Legacy G10 ChVIII `PUBLIC_FORMATIVE_ONLY` manifest remains frozen and is not overwritten.
