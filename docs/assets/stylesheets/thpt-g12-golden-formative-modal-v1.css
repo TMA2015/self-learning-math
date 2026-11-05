@@ -1,0 +1,10 @@
+/* DELTA_A_UI: same Golden R4 cards/modal for all G12 chapter Core/Practice. */
+.thpt-g12-golden-card{--thpt-grade-accent:#8751c7;--thpt-grade-border:#d9c5f4;--thpt-grade-soft:#f5edfd}
+.thpt-g12-golden-card .thpt-r4-practice-open{min-height:44px}
+.thpt-g12-golden-dialog{border-top:4px solid #8650d0}
+.thpt-g12-golden-dialog .thpt-r4-modal-lesson-badge{background:#8650d0;color:white}
+.thpt-g12-golden-dialog .thpt-r4-modal-main{min-width:0;overflow-wrap:anywhere}
+.thpt-g12-golden-dialog .thpt-g12-golden-solution{background:var(--md-code-bg-color);border:1px solid var(--md-default-fg-color--lightest);border-radius:9px;margin:15px 0;padding:12px 14px;white-space:pre-line}
+.thpt-g12-golden-dialog .thpt-g12-golden-solution[hidden]{display:none!important}
+.thpt-g12-golden-dialog .thpt-r4-modal-question-nav button{min-height:44px}
+@media(max-width:680px){.thpt-g12-golden-dialog{width:calc(100vw - 16px);max-height:95vh}.thpt-g12-golden-dialog .thpt-r4-modal-main{max-height:calc(95vh - 85px)}}

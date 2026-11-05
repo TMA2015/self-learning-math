@@ -277,7 +277,7 @@ const start=async()=>{
      bank.items.length!==64||new Set(bank.items.map(x=>x.item_id)).size!==64||
      bank.help.length!==16||bank.end_references.length!==16)throw Error("Frozen source/receipt mismatch");
   root.replaceChildren();
-  if(root.hasAttribute("data-g12-chii-hub"))startHub(root,bank);
+  if(root.hasAttribute("data-g12-chii-hub")){startHub(root,bank);if(!window.THPT_G12_GOLDEN_HUB?.mount(root,bank,{chapter:"II"}))throw Error("Golden R4 modal unavailable");}
   else startSelfCheck(root,bank);
   root.dataset.g12ChiiReady="true";
   const hash=decodeURIComponent(location.hash.slice(1));
