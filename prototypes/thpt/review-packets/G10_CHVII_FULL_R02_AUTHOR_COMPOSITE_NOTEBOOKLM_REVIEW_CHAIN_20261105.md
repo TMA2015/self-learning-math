@@ -7,7 +7,7 @@ STANDARD_VERSION: 1.1.0
 CURRENT_GOVERNANCE_VERSION: 1.2.0
 LEARNING_PATH: SGK_CHAPTER
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/Temp_G10_SGK_CHVII_FULL_R02_SOURCE_WITH_CANONICAL_REFERENCES_20261105.md
-ACADEMIC_SOURCE_BLOB: c5f132d090d68335dae21a65a5c235f29d6ff4fe
+ACADEMIC_SOURCE_BLOB: c5c222af88b0e932f9b60df059d8ffd4da5f0f26
 NOTEBOOKLM_DELTA_C_REVIEWED_SOURCE_PATH: prototypes/thpt/content-drafts/Temp_G10_CHVII_PED_R01_FULL_CHAPTER_AUTHOR_DRAFT_20261105.md
 NOTEBOOKLM_DELTA_C_REVIEWED_SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd
 OWNER_RAW_REVIEWER_REPORT_PATH: prototypes/thpt/review-packets/G10_CHVII_PED_R01_NOTEBOOKLM_OWNER_RAW_VERDICT_20261105.txt
@@ -44,7 +44,7 @@ Reviewer báo từng Q01–Q18 PASS cho lớp học liệu **PED1–PED6**; đã
 
 ## B. Nguồn academic effective composite và quyền dùng cùng ID
 
-Tệp `prototypes/thpt/content-drafts/Temp_G10_SGK_CHVII_FULL_R02_SOURCE_WITH_CANONICAL_REFERENCES_20261105.md`, blob `c5f132d090d68335dae21a65a5c235f29d6ff4fe` **giữ toàn bộ R01 đầu vào có source blob `5377380447ca2f131b634b8b65db885f86418cdd` nguyên văn**, chỉ bổ sung tài liệu tham chiếu/đường học và **59-row canonical ID/outcome/role map**: 32 D3 cũ +4 Written cũ +23 First Try mới. Gốc của các câu cũ vẫn là ngân hàng JS/Written hiện có, không bị copy vào gói mới hoặc tạo duplicate item. `THPT-G10-B22-C01` vẫn chỉ OPTIONAL_SPECIALIZED, không phải Core; elip Core dùng `THPT-G10-B22-P01`. Có **4 lessons /23 outcomes**, đầu-chương và từng bài đều học độc lập theo SGK; chưa cấp quyền riêng Topic.
+Tệp `prototypes/thpt/content-drafts/Temp_G10_SGK_CHVII_FULL_R02_SOURCE_WITH_CANONICAL_REFERENCES_20261105.md`, blob `c5c222af88b0e932f9b60df059d8ffd4da5f0f26` **giữ toàn bộ R01 đầu vào có source blob `5377380447ca2f131b634b8b65db885f86418cdd` nguyên văn**, chỉ bổ sung tài liệu tham chiếu/đường học và **59-row canonical ID/outcome/role map**: 32 D3 cũ +4 Written cũ +23 First Try mới. Gốc của các câu cũ vẫn là ngân hàng JS/Written hiện có, không bị copy vào gói mới hoặc tạo duplicate item. `THPT-G10-B22-C01` vẫn chỉ OPTIONAL_SPECIALIZED, không phải Core; elip Core dùng `THPT-G10-B22-P01`. Có **4 lessons /23 outcomes**, đầu-chương và từng bài đều học độc lập theo SGK; chưa cấp quyền riêng Topic.
 
 **Q01 citation chỉnh đúng:** bản reviewer ghi S1 trang in B19 29–36, B20 37–43, B21 44–49, B22 50–56, chương-end 57–58, sai vị trí bài thực tế. AUTHORING giữ reviewer gốc bất biến và lập `DELTA_B_SOURCE_EQUIVALENT` chỉ cho chỉ dẫn trang in theo S1: B19 30–35, B20 36–42, B21 43–47, B22 48–56, end 57–59, xem addendum Git `991a6db938bd4858515b9ef5350e75590ef29b10`. Không có điều kiện, câu toán, đáp án, lời giải hay chương trình SGK nào được đổi bởi citation correction; không cần review lại 23 câu chỉ vì trang in, nhưng không mô tả reviewer page range gốc là đúng.
 
