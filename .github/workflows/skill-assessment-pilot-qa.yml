@@ -43,6 +43,10 @@ on:
       - 'docs/thpt-preview/sgk/lop-11/**'
       # G12 RELEASE: protect shared site branding/skill state during chapter integration.
       - 'docs/thpt-preview/sgk/lop-12/**'
+      # Shared Golden G12 UI change must rerun cross-grade/site regressions.
+      - 'docs/assets/javascripts/thpt-g12-golden-formative-modal-v1.js'
+      - 'docs/assets/stylesheets/thpt-g12-golden-formative-modal-v1.css'
+      - 'scripts/test-thpt-g12-golden-modal-helper.cjs'
       - 'docs/assets/javascripts/math-details-v1.js'
       - 'docs/assets/javascripts/thpt-r4-preview.js'
       - 'docs/assets/stylesheets/thpt-r4-preview.css'
