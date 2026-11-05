@@ -69,7 +69,7 @@ const {verifyG12GoldenHub}=require("./test-thpt-g12-golden-modal-helper.cjs");
     assert(await optDialog.isVisible(),"Optional opens same approved Golden modal");
     assert.equal(await optDialog.locator(".thpt-r4-modal-question-nav button").count(),4,"Four canonical optional items, not compulsory B14 Core");
     assert.equal(await optDialog.locator("[data-thpt-canonical-item]").count(),1,"One optional item on screen");
-    assert.equal(await optDialog.locator(".thpt-g12-golden-solution:not([hidden])").count(),0,"Optional key hidden before self-attempt");
+    assert.equal(await optDialog.locator(".thpt-g12-golden-solution[open]").count(),0,"Optional answer closed until learner explicitly opens Golden disclosure");
     await optDialog.locator('[aria-label="Đóng cửa sổ"]').click();
     await open("chuong-v/luyen-tap/#b14-optional");
     await page.waitForFunction(()=>document.querySelector('dialog[data-g12-golden-dialog="V"]')?.open,null,{timeout:5000});

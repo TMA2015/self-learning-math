@@ -109,6 +109,13 @@ on:
       - 'scripts/test-thpt-g12-chiv-release-browser.cjs'
       - 'docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json'
       - 'docs/assets/javascripts/thpt-g12-chiv-b11-b13-r00.js'
+      # One Golden adapter governs every published G12 Core/Practice chapter.
+      - 'docs/assets/javascripts/thpt-g12-golden-formative-modal-v1.js'
+      - 'docs/assets/stylesheets/thpt-g12-golden-formative-modal-v1.css'
+      - 'scripts/test-thpt-g12-golden-modal-helper.cjs'
+      - 'scripts/test-thpt-g12-golden-modal-source.cjs'
+      - 'scripts/test-thpt-golden-ui-release-boundary.cjs'
+      - 'scripts/test-thpt-g12-chv-release-browser.cjs'
       - 'docs/assets/stylesheets/thpt-g12-chiv-b11-b13-r00.css'
       - 'docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json'
       - 'docs/assets/javascripts/thpt-g12-chiii-b09-b10-r00.js'
