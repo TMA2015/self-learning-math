@@ -39,14 +39,14 @@ Chương VIII hiện có 3 bài D1–D6, 25 câu formative/3 Written, một SVG 
 
 **PED5 — Lý do chọn phương pháp, điều kiện và giới hạn:** Kiểm xem các nhóm có giao nhau không; nếu không, lấy m+n. Nếu có, dùng m+n−phần giao hoặc chia thành nhóm rời.
 
-**PED6 — Tự thử trước Core** (item_id `THPT-G10-CHVIII-TRY01`; outcome `G10-B23-ADDITION`; `SGK_PRE_CORE_FIRST_TRY`; unscored/no mastery): Một cửa hàng có 3 loại bút mực và 4 loại bút chì, mỗi lần mua đúng một chiếc bút thuộc một trong hai loại. Có mấy lựa chọn nếu không có món nào thuộc cả hai loại?
+**PED6 — Tự thử trước Core** (item_id `THPT-G10-CHVIII-TRY01`; outcome `G10-B23-ADDITION`; `SGK_PRE_CORE_FIRST_TRY`; unscored/no mastery): Một bạn được chọn đúng một phần thưởng: một trong 2 cuốn truyện hoặc một trong 6 vé xem phim khác nhau. Có mấy lựa chọn?
 
 <details>
 <summary>Tự mở đáp án sau khi đã tự làm</summary>
 
-**Đáp án:** 7 lựa chọn.
+**Đáp án:** 8 lựa chọn.
 
-**Lập luận:** Mua đúng một loại: 3 lựa chọn bút mực hoặc 4 lựa chọn bút chì, hai nhóm rời nhau nên 3+4=7.
+**Lập luận:** Một phần thưởng thuộc đúng một trong hai nhóm không trùng: 2 cuốn truyện hoặc 6 vé, nên 2+6=8.
 
 **Nếu chưa đúng:** xem D6 `HELP-G10-CHVIII-TRY01`, sau đó luyện bài canonical `THPT-G10-B23-C01` trong ngân hàng đã review (không tính lại câu đã xem lời giải thành Readiness).
 
@@ -54,22 +54,22 @@ Chương VIII hiện có 3 bài D1–D6, 25 câu formative/3 Written, một SVG 
 
 #### D6 — HELP-G10-CHVIII-TRY01 (năm bước khắc phục cùng kỹ năng)
 
-1. **Nhận diện lỗi:** Nếu nhân 3×4, em đang đếm cách mua đồng thời cả hai loại bút, không phải chọn một chiếc.
+1. **Nhận diện lỗi:** Nếu nhân 2×6, em đang đếm một cặp truyện–vé, không phải chỉ chọn một phần thưởng.
 2. **Quay lại bản chất:** Quy tắc cộng đếm các khả năng thay thế nhau: thực hiện cách A HOẶC cách B. Chỉ cộng số cách khi hai nhánh không có phương án trùng nhau, nếu có phải loại phần giao.
-3. **Tự làm lại:** Khoanh tròn từ 'hoặc', vẽ hai nhánh rời và tự liệt kê 3+4 khả năng.
+3. **Tự làm lại:** Khoanh từ 'hoặc', vẽ 2 nhánh truyện và 6 nhánh vé, kiểm đủ 8 kết quả.
 4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không cộng điểm/Mastery.
 5. **Luyện tiếp:** `THPT-G10-B23-C01`, câu canonical đã review, phù hợp `G10-B23-ADDITION`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
 
 
 ### G10-B23-MULTIPLICATION — Quy tắc nhân là hoàn tất nhiều bước
 
-**PED1 — Vì sao cần học:** Chọn trang phục gồm áo và quần buộc phải thực hiện đủ cả hai bước, khác hẳn việc chỉ chọn một loại.
+**PED1 — Vì sao cần học:** Một suất bánh mì kèm nhân buộc phải chọn đủ cả hai phần; khác với chỉ chọn một loại món ăn.
 
-**PED2 — Tiền đề:** Ôn cặp có thứ tự (áo, quần), mỗi áo có thể ghép với mọi quần trong điều kiện bài.
+**PED2 — Tiền đề:** Ôn cặp (loại bánh, loại nhân), mỗi bánh có thể ghép với mọi loại nhân nếu đề không cấm kết hợp.
 
 **PED3 — Hiểu bản chất trước công thức:** Quy tắc nhân đếm các đường đi hoàn chỉnh qua nhiều bước: mỗi lựa chọn của bước trước có số lựa chọn tiếp theo tương ứng; khi cùng số cách, tổng số là tích.
 
-**PED4 — Hướng dẫn đọc hình/sơ đồ:** Vẽ cây 3 nhánh áo, mỗi nhánh rẽ ra 2 nhánh quần; đếm 6 lá cuối biểu diễn 6 bộ đầy đủ.
+**PED4 — Hướng dẫn đọc hình/sơ đồ:** Vẽ cây 4 nhánh loại bánh, mỗi nhánh rẽ ra 3 loại nhân; đếm 12 lá cuối của 12 suất ăn.
 
 **PED5 — Lý do chọn phương pháp, điều kiện và giới hạn:** Tìm các bước 'và' phải làm đủ; ghi số khả năng mỗi bước, kiểm xem chúng có phụ thuộc lựa chọn trước không, rồi nhân nếu cố định.
 
@@ -150,7 +150,7 @@ Chương VIII hiện có 3 bài D1–D6, 25 câu formative/3 Written, một SVG 
 
 **Lập luận:** Tận cùng 0: hàng chục có 3 cách 1,2,3 →3 số. Tận cùng 2: hàng chục có 2 cách 1 hoặc3 →2 số. Cộng hai trường hợp rời được 5.
 
-**Nếu chưa đúng:** xem D6 `HELP-G10-CHVIII-TRY04`, sau đó luyện bài canonical `THPT-G10-B23-P06` trong ngân hàng đã review (không tính lại câu đã xem lời giải thành Readiness).
+**Nếu chưa đúng:** xem D6 `HELP-G10-CHVIII-TRY04`, sau đó luyện bài canonical `THPT-G10-B23-P05` trong ngân hàng đã review (không tính lại câu đã xem lời giải thành Readiness).
 
 </details>
 
@@ -160,7 +160,7 @@ Chương VIII hiện có 3 bài D1–D6, 25 câu formative/3 Written, một SVG 
 2. **Quay lại bản chất:** Nếu đếm số chẵn tạo từ các chữ số cho trước, chữ số hàng đơn vị quyết định các lựa chọn ở hàng chục; chia thành những trường hợp không giao nhau rồi cộng kết quả của từng nhánh.
 3. **Tự làm lại:** Viết hai nhánh cuối 0 và cuối 2, kiểm lại danh sách đủ 5 số không lặp.
 4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không cộng điểm/Mastery.
-5. **Luyện tiếp:** `THPT-G10-B23-P06`, câu canonical đã review, phù hợp `G10-B23-CASE_SPLIT`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
+5. **Luyện tiếp:** `THPT-G10-B23-P05`, câu canonical đã review, phù hợp `G10-B23-CASE_SPLIT`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
 
 
 ### G10-B24-PERMUTATION — Hoán vị là xếp hết các phần tử và thứ tự quyết định
@@ -354,7 +354,7 @@ Chương VIII hiện có 3 bài D1–D6, 25 câu formative/3 Written, một SVG 
 
 **Lập luận:** Chọn −x từ ba trong bốn nhân tử có C₄³=4 cách; mỗi tích là 2·(−x)³=−2x³. Tổng −8x³.
 
-**Nếu chưa đúng:** xem D6 `HELP-G10-CHVIII-TRY10`, sau đó luyện bài canonical `THPT-G10-B25-P03` trong ngân hàng đã review (không tính lại câu đã xem lời giải thành Readiness).
+**Nếu chưa đúng:** xem D6 `HELP-G10-CHVIII-TRY10`, sau đó luyện bài canonical `THPT-G10-B25-P01` trong ngân hàng đã review (không tính lại câu đã xem lời giải thành Readiness).
 
 </details>
 
@@ -364,7 +364,7 @@ Chương VIII hiện có 3 bài D1–D6, 25 câu formative/3 Written, một SVG 
 2. **Quay lại bản chất:** Hệ số x^k gồm ba phần: số cách chọn k vị trí là C(n,k), phần số 2^(n−k) từ các vị trí còn lại và dấu (−1)^k. Dấu không tùy ý.
 3. **Tự làm lại:** Viết riêng C₄³, 2¹, (−1)³ rồi nhân từng phần.
 4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không cộng điểm/Mastery.
-5. **Luyện tiếp:** `THPT-G10-B25-P03`, câu canonical đã review, phù hợp `G10-B25-COEFFICIENT_SIGN`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
+5. **Luyện tiếp:** `THPT-G10-B25-P01`, câu canonical đã review, phù hợp `G10-B25-COEFFICIENT_SIGN`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
 
 
 ### G10-B25-CONSTANT_TERM — Số hạng tự do chỉ khi không chọn thừa số có x
