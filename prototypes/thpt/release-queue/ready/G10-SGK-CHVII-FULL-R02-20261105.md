@@ -70,4 +70,4 @@ NotebookLM reported the one normative Q01–Q18 v1.2.0 source and 5 THPT permane
 - [ ] AP4_SELF_STUDY_CLARITY — Teach concept before formula with worked examples and optional D6.
 - [ ] AP5_RESPONSIVE_VISUAL — Check desktop, iPhone and iPad final release candidate.
 
-**AUTHORING CONTENT_READY for SGK academic source only**. The nine? no: **only Chapter VII SGK**. Topic remains separately pending; no protected held-out readiness, Mastery or site release clearance.
+**AUTHORING CONTENT_READY cho đúng Chương VII SGK.** Chuyên đề/TOPIC chưa có PASS riêng; không cấp Readiness độc lập, Mastery hay quyền phát hành website.
