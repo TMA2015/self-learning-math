@@ -27,7 +27,9 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/lop-12/";
      const text=await content.innerText();
      assert(text.includes("Vì sao cần học"),"Motivation missing B"+n);
      assert(text.includes("Tự thử trước Core"),"First try missing B"+n);
-     for(let i=1;i<=6;i++)assert(text.includes("G12-CHIII-B"+String(n).padStart(2,"0")+"-O"+String(i).padStart(2,"0")),"Missing B"+n+" outcome "+i);
+     const titles=await content.locator("h3").allTextContents();
+     assert.equal(titles.filter(t=>/^[1-6]\.\s/.test(t.trim())).length,6,"Six readable knowledge sections B"+n);
+     assert(!/G12-CHIII-B(?:09|10)-O\d{2}|\b(?:Outcome|WHY|FORMAL|PREREQUISITE_CONFIRMED|EX-G12|PUBLIC RD0|RD1)\b|Hình D5-/.test(text),"Internal author IDs must not appear to learners B"+n);
      const images=content.locator("figure.g12-chi-figure img");
      assert.equal(await images.count(),figs,"Original D5 figure count B"+n);
      for(const img of await images.all()){
@@ -45,6 +47,7 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/lop-12/";
     assert.equal(await hub.locator(".g12-chiii-hub-group").count(),4);
     assert.equal(await hub.locator(".g12-chiii-item").count(),48,"48 original PUBLIC canonical items, never clones");
     assert.equal(await hub.locator(".g12-chiii-help").count(),12,"All D6 help");
+    assert(!/\b(?:Outcome|PUBLIC RD0|RD1)\b|Hướng dẫn D6/.test(await hub.innerText()),"Internal metadata must not appear in Practice UI");
     assert.equal(await hub.locator(".g12-chiii-answer:not([hidden])").count(),0);
     for(const [n,id]of [[9,"B09"],[10,"B10"]]){
      const section=hub.locator('[data-g12-chiii-hub-lesson="'+id+'"]');
@@ -77,6 +80,7 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/lop-12/";
     await page.waitForFunction(()=>document.querySelector("[data-g12-chiii-selfcheck]")?.dataset.g12ChiiiReady==="true",null,{timeout:25000});
     const questions=end.locator(".g12-chiii-selfcheck-item");
     assert.equal(await questions.count(),12);
+    assert(!/\b(?:PUBLIC RD0|RD1|Outcome)\b/.test(await page.locator(".md-content").innerText()),"Internal assessment metadata must not appear");
     assert.equal(new Set(await questions.evaluateAll(xs=>xs.map(x=>x.dataset.canonicalItem))).size,12);
     assert.equal(await end.locator(".g12-chiii-answer:not([hidden])").count(),0);
     assert.equal(await end.locator(".g12-chiii-help").count(),0,"No hint/D6 before Final Submit");

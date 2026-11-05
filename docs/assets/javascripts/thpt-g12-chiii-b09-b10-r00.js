@@ -101,10 +101,10 @@ const item=(q,n)=>{
   if(submit.disabled)return;
   if(!textarea.value.trim()){status.textContent="Hãy tự làm trước khi nộp.";return}
   submit.disabled=true;textarea.disabled=true;answer.hidden=false;
-  answer.append(mk("h5","","Đáp án và suy luận gốc (PUBLIC)"));lines(answer,q.answer);lines(answer,q.solution);
+  answer.append(mk("h5","","Đáp án và lời giải"));lines(answer,q.answer);lines(answer,q.solution);
   if(q.conditions){answer.append(mk("h5","","Điều kiện / giới hạn"));lines(answer,q.conditions)}
   if(q.role==="WRITTEN"){answer.append(mk("h5","","Rubric tự đối chiếu /5"));for(const rub of q.rubric||[])lines(answer,rub)}
-  status.textContent="Đã nộp. Chỉ tự đối chiếu, không chấm điểm hay ghi Mastery.";typeset(answer);
+  status.textContent="Đã nộp. Em có thể đối chiếu lời giải; hoạt động này không được tính điểm.";typeset(answer);
  });
  box.append(textarea,submit,status,answer);return box;
 };
@@ -115,7 +115,7 @@ const openTarget=(root,id)=>{
 };
 const help=(root,bank,lesson)=>{
  for(const [i,h]of bank.help.filter(x=>x.lesson_id===lesson).entries()){
-  const d=mk("details","g12-chiii-help");d.append(mk("summary","","Hướng dẫn D6 · Outcome "+(i+1)));
+  const d=mk("details","g12-chiii-help");d.append(mk("summary","","Hướng dẫn ôn tập · phần kiến thức "+(i+1)));
   const ol=mk("ol","g12-chiii-help-steps");
   for(const step of h.steps){const li=mk("li");addText(li,step);ol.append(li)}
   d.append(ol);
@@ -158,8 +158,8 @@ const startHub=(root,bank)=>{
 };
 const startSelfCheck=(root,bank)=>{
  const map=new Map(bank.items.map(q=>[q.item_id,q]));const entries=[];
- root.append(mk("h3","","12 câu · Tự kiểm tra cuối chương (PUBLIC RD0)"));
- root.append(paragraph("Câu hỏi Vận dụng công khai đã gặp khi học, không phải đánh giá độc lập. Làm đủ rồi mới Final Submit để tự đối chiếu. Không chấm Mastery."));
+ root.append(mk("h3","","12 câu · Tự kiểm tra cuối chương"));
+ root.append(paragraph("Đây là những câu Vận dụng đã gặp khi học. Hãy làm đủ 12 câu rồi chọn Final Submit để tự đối chiếu. Hoạt động này không phải bài đánh giá độc lập hoặc chấm điểm."));
  for(const [i,ref]of bank.end_references.entries()){
   const q=map.get(ref.item_id);
   if(!q||q.role!=="SGK_APPLICATION"||q.outcome_id!==ref.outcome_id)throw Error("END reference invalid "+ref.placement_id);
@@ -180,10 +180,10 @@ const startSelfCheck=(root,bank)=>{
    input.disabled=true;result.hidden=false;
    result.append(mk("h5","","Đối chiếu sau Final Submit"));lines(result,q.answer);lines(result,q.solution);
    const h=bank.help.find(x=>x.outcome_id===q.outcome_id);
-   if(h){result.append(paragraph("Nếu sai, hãy xem lại "+q.outcome_id));
+   if(h){result.append(paragraph("Nếu chưa đúng, hãy xem lại phần kiến thức tương ứng."));
     const a=mk("a","g12-chiii-return","Quay lại Core và hướng dẫn D6");a.href="../luyen-tap/#"+anchor(h.return_item);result.append(a)}
   }
-  status.textContent="Đã Final Submit. Không chấm điểm hoặc ghi Mastery.";typeset(root);
+  status.textContent="Đã nộp bài. Bây giờ em có thể tự đối chiếu lời giải; kết quả không ghi vào hồ sơ đánh giá.";typeset(root);
  });
  root.append(submit,status);typeset(root);
 };
