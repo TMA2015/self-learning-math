@@ -5,6 +5,7 @@
  */
 const assert=require("node:assert/strict"),{chromium}=require("playwright");
 const base="http://127.0.0.1:8765/thpt-preview/sgk/lop-12/";
+const {verifyG12GoldenHub}=require("./test-thpt-g12-golden-modal-helper.cjs");
 const counts=[11,12,14,14,15],helpc=[6,6,6,7,7],figurec=[1,1,1,2,1];
 (async()=>{
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
@@ -43,57 +44,7 @@ const counts=[11,12,14,14,15],helpc=[6,6,6,7,7],figurec=[1,1,1,2,1];
      }
     }
     await check("chuong-i/luyen-tap/");
-    const hub=page.locator("[data-g12-chi-hub]");
-    await page.waitForFunction(()=>document.querySelector("[data-g12-chi-hub]")?.dataset.g12ChiReady==="true",null,{timeout:30000});
-    assert.equal(await hub.getAttribute("data-g12-chi-error"),null);
-    assert.equal(await hub.locator(".g12-chi-hub-lesson").count(),5,"Five G12 chapter lesson sections");
-    assert.equal(await hub.locator("details.g12-chi-hub-group").count(),10,"Core and Practice cards per lesson");
-    assert.equal(await hub.locator(".g12-chi-item").count(),66,"Exactly 66 original public items");
-    assert.equal(await hub.locator(".g12-chi-item[data-outcome]").count(),66);
-    assert.equal(await hub.locator(".g12-chi-help").count(),32,"Same original D6");
-    assert.equal(await hub.locator(".g12-chi-answer:not([hidden])").count(),0,"No formative key before submit");
-    for(let i=1;i<=5;i++){
-     const lesson=hub.locator('[data-g12-chi-hub-lesson="B0'+i+'"]');
-     assert.equal(await lesson.locator(".g12-chi-item").count(),counts[i-1],"Original canonical items B0"+i);
-     assert.equal(await lesson.locator(".g12-chi-help").count(),helpc[i-1],"Original D6 B0"+i);
-     assert.equal(await lesson.locator(".g12-chi-hub-group").count(),2);
-    }
-    const core=hub.locator("#b01-core");
-    const cardLayout=await core.locator(":scope > summary").evaluate(el=>{
-     const style=getComputedStyle(el),rects=[...el.children].map(c=>c.getBoundingClientRect());
-     return {display:style.display,flow:style.flexDirection,stack:rects.every((r,i)=>!i||r.top>=rects[i-1].bottom-1),
-      contained:rects.every(r=>r.right<=el.getBoundingClientRect().right+2)};
-    });
-    assert.equal(cardLayout.display,"flex","G12 Core card CSS must override MkDocs Material summary styles");
-    assert.equal(cardLayout.flow,"column","G11-style stacked Core card hierarchy");
-    assert(cardLayout.stack&&cardLayout.contained,"Core labels and action do not overlap");
-    assert.equal(await core.getAttribute("open"),null,"Groups collapsed by default");
-    await core.locator("summary").click();
-    assert.notEqual(await core.getAttribute("open"),null,"Core opens");
-    const first=core.locator(".g12-chi-item").first();
-    await first.locator("button.g12-chi-submit").click();
-    assert.equal(await first.locator(".g12-chi-answer:not([hidden])").count(),0,"No reveal on empty submit");
-    await first.locator("textarea").fill("Em tự giải bài này trước");
-    await first.locator("button.g12-chi-submit").click();
-    assert.equal(await first.locator(".g12-chi-answer:not([hidden])").count(),1,"Reveal only submitted Core key");
-    assert.equal(await hub.locator(".g12-chi-answer:not([hidden])").count(),1,"Other keys stay hidden");
-    const help=hub.locator("#b01-help");
-    await help.locator(":scope > summary").click();
-    assert.notEqual(await help.getAttribute("open"),null);
-    await help.locator("details.g12-chi-help > summary").first().click();
-    const d6=help.locator("a.g12-chi-return").first();
-    const anchor=await d6.getAttribute("href");
-    assert(anchor.startsWith("#"),"Original D6 return-to-item link");
-    await d6.click();
-    const target=hub.locator('[id="'+anchor.slice(1)+'"]');
-    assert.equal(await target.count(),1,"Canonical item target exists");
-    assert(await target.isVisible(),"D6 return opens the proper Core/Practice group");
-    const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);
-    assert(overflow<=20,"Expanded practice does not overflow @"+viewport.width);
-    await check("chuong-i/luyen-tap/?qa=deep-link#b02-practice");
-    await page.waitForFunction(()=>document.querySelector("[data-g12-chi-hub]")?.dataset.g12ChiReady==="true",null,{timeout:30000});
-    assert.notEqual(await page.locator("#b02-practice").getAttribute("open"),null,"Deep link opens Practice B02");
-    assert.equal(await page.locator(".g12-chi-answer:not([hidden])").count(),0,"New view never preloads key");
+    await verifyG12GoldenHub(page,{chapter:"I",selector:"[data-g12-chi-hub]",lessons:5,groups:10,items:66,helps:32});
     await check("chuong-i/tu-kiem-tra-chuong/");
     const root=page.locator('[data-g12-chi-selfcheck="END"]');
     await page.waitForFunction(()=>document.querySelector("[data-g12-chi-selfcheck]")?.dataset.g12ChiReady==="true",null,{timeout:30000});
