@@ -431,4 +431,384 @@ Học liệu đã có của ChVII gồm bốn bài kiến thức/ ví dụ/ 32 C
 
 ## Phần 2 — B21/B22
 
-<!-- Tiếp tục bổ sung 11 outcomes còn lại trước khi gửi NotebookLM. Bản draft chưa phải gói review đầy đủ. -->
+### G10-B21-CIRCLE_STANDARD — Đường tròn là tập hợp điểm cách tâm một khoảng cố định
+
+**PED1 — Vì sao cần học:** Bản đồ một trạm phát sóng có tầm phủ bán kính cố định: đường biên vùng phủ gồm mọi vị trí cách trạm đúng một khoảng.
+
+**PED2 — Kiến thức tiền đề:** Nhắc lại công thức khoảng cách hai điểm: IM²=(x-a)²+(y-b)². Bán kính R phải dương để thực sự có đường tròn.
+
+**PED3 — Bản chất trước công thức:** Phương trình đường tròn chỉ là phát biểu IM=R viết bằng tọa độ. Bình phương hai vế thu điều kiện khoảng cách, không phải công thức xuất hiện từ đâu đó.
+
+**PED4 — Hướng dẫn đọc hình:** Trên hình đánh dấu tâm I, bán kính IM tới một điểm bất kỳ M trên vành; đổi M quanh vành thì IM luôn giữ nguyên.
+
+**PED5 — Chọn phương pháp và giới hạn:** Biết tâm I(a,b), R>0, viết (x-a)²+(y-b)²=R². Kiểm tâm khi thế vào vế trái cho 0 và điều kiện R>0; không nhầm R với R².
+
+**PED6 — Tự thử trước Core** (`THPT-G10-CHVII-TRY13`, `SGK_PRE_CORE_FIRST_TRY`, unscored; outcome `G10-B21-CIRCLE_STANDARD`): Đường tròn có tâm I(-2,1) và bán kính 3 có phương trình nào?
+
+<details>
+<summary>Tự mở đáp án sau khi đã tự làm</summary>
+
+**Đáp án:** (x+2)²+(y-1)²=9.
+
+**Lý do:** IM²=(x+2)²+(y-1)², và R²=3²=9. Cần R=3>0.
+
+**Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY13` bên dưới; quay lại câu canonical cũ `THPT-G10-B21-C01` khi đã hiểu kiến thức.
+
+</details>
+
+#### D6 — HELP-G10-CHVII-TRY13 (không tính Mastery)
+
+1. **Nhận diện lỗi:** Nếu viết vế phải 3 hoặc (x-2)², em nhầm bán kính với bình phương bán kính hoặc nhầm dấu tọa độ tâm.
+2. **Quay lại bản chất:** Phương trình đường tròn chỉ là phát biểu IM=R viết bằng tọa độ. Bình phương hai vế thu điều kiện khoảng cách, không phải công thức xuất hiện từ đâu đó.
+3. **Tự sửa:** Đặt M=I, vế trái phải bằng 0; chọn M=I+(3,0) thì vế trái bằng 9.
+4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B21-C01` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+
+
+### G10-B21-CIRCLE_GENERAL — Từ phương trình tổng quát suy tâm, bán kính
+
+**PED1 — Vì sao cần học:** Một bài toán thường cho phương trình dưới dạng đã khai triển; muốn biết vị trí và kích thước đường tròn phải 'mở ngược' các bình phương.
+
+**PED2 — Kiến thức tiền đề:** Nhớ hằng đẳng thức (x-a)²=x²-2ax+a²; một tổng hai bình phương không thể âm.
+
+**PED3 — Bản chất trước công thức:** Hoàn thành bình phương chuyển điều kiện đại số thành khoảng cách tới một tâm. Nếu kết quả R²≤0 thì không tạo được đường tròn bán kính dương.
+
+**PED4 — Hướng dẫn đọc hình:** Đặt tâm I lên trục tọa độ sau khi hoàn thành bình phương; so sánh hai tình huống R²>0 (vành tròn) và R²=0 (một điểm).
+
+**PED5 — Chọn phương pháp và giới hạn:** Nhóm x²+Dx và y²+Ey, thêm bớt bình phương nửa hệ số rồi kiểm R²>0 trước khi lấy căn. Với R²<0 phương trình vô nghiệm thực.
+
+**PED6 — Tự thử trước Core** (`THPT-G10-CHVII-TRY14`, `SGK_PRE_CORE_FIRST_TRY`, unscored; outcome `G10-B21-CIRCLE_GENERAL`): Phương trình x²+y²−6x+4y+8=0 biểu diễn đường tròn nào?
+
+<details>
+<summary>Tự mở đáp án sau khi đã tự làm</summary>
+
+**Đáp án:** (x−3)²+(y+2)²=5, tâm I(3,−2), bán kính √5.
+
+**Lý do:** x²−6x=(x−3)²−9, y²+4y=(y+2)²−4. Suy ra tổng hai bình phương bằng −8+9+4=5>0.
+
+**Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY14` bên dưới; quay lại câu canonical cũ `THPT-G10-B21-C02` khi đã hiểu kiến thức.
+
+</details>
+
+#### D6 — HELP-G10-CHVII-TRY14 (không tính Mastery)
+
+1. **Nhận diện lỗi:** Nếu kết luận bán kính 5 hoặc tâm (−3,2), em chưa đọc đúng dấu trong bình phương.
+2. **Quay lại bản chất:** Hoàn thành bình phương chuyển điều kiện đại số thành khoảng cách tới một tâm. Nếu kết quả R²≤0 thì không tạo được đường tròn bán kính dương.
+3. **Tự sửa:** Khai triển lại hai bình phương và kiểm phương trình thu được trùng đúng phương trình gốc.
+4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B21-C02` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+
+
+### G10-B21-CIRCLE_TANGENT — Tiếp tuyến tại một điểm thuộc đường tròn
+
+**PED1 — Vì sao cần học:** Một tuyến đi men theo vành tròn ngay tại một điểm chỉ chạm vào vành tại đó; hướng tuyến phải vuông góc với bán kính.
+
+**PED2 — Kiến thức tiền đề:** Ôn bán kính IM và điều kiện điểm M thuộc đường tròn; pháp tuyến của đường thẳng là vectơ vuông góc đường.
+
+**PED3 — Bản chất trước công thức:** Tại M trên đường tròn, bán kính IM vuông góc tiếp tuyến; vì vậy chính IM là một pháp tuyến của tiếp tuyến. Điều kiện 'M nằm trên đường tròn' là bắt buộc.
+
+**PED4 — Hướng dẫn đọc hình:** Trên hình vẽ tròn tâm I, bán kính IM và đường thẳng chạm tại M; góc IM với tiếp tuyến là 90°.
+
+**PED5 — Chọn phương pháp và giới hạn:** Bước 1 thử IM²=R²; bước 2 lấy n=IM khác 0; bước 3 viết n·MX=0 rồi kiểm khoảng cách từ I đến đường bằng R.
+
+**PED6 — Tự thử trước Core** (`THPT-G10-CHVII-TRY15`, `SGK_PRE_CORE_FIRST_TRY`, unscored; outcome `G10-B21-CIRCLE_TANGENT`): Đường tròn tâm I(1,−1), bán kính 5; M(4,3). Viết tiếp tuyến tại M.
+
+<details>
+<summary>Tự mở đáp án sau khi đã tự làm</summary>
+
+**Đáp án:** 3x+4y−24=0.
+
+**Lý do:** IM=(3,4), IM²=9+16=25=R² nên M thuộc đường. Tiếp tuyến: 3(x−4)+4(y−3)=0 ⇒ 3x+4y−24=0.
+
+**Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY15` bên dưới; quay lại câu canonical cũ `THPT-G10-B21-P02` khi đã hiểu kiến thức.
+
+</details>
+
+#### D6 — HELP-G10-CHVII-TRY15 (không tính Mastery)
+
+1. **Nhận diện lỗi:** Nếu điểm chưa thuộc đường tròn hoặc dùng IM làm chỉ phương, cách dựng tiếp tuyến đã sai điều kiện.
+2. **Quay lại bản chất:** Tại M trên đường tròn, bán kính IM vuông góc tiếp tuyến; vì vậy chính IM là một pháp tuyến của tiếp tuyến. Điều kiện 'M nằm trên đường tròn' là bắt buộc.
+3. **Tự sửa:** Thử 3²+4²=5² và thế M vào 3x+4y−24=0; kiểm pháp tuyến (3,4).
+4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B21-P02` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+
+
+### G10-B21-CIRCLE_THROUGH_POINTS — Đường tròn đi qua ba điểm không thẳng hàng
+
+**PED1 — Vì sao cần học:** Ba mốc phân biệt không cùng đường thẳng có thể xác định một đường tròn duy nhất qua cả ba; chỉ hai mốc thì còn vô số cách đặt tâm.
+
+**PED2 — Kiến thức tiền đề:** Ôn đường trung trực đoạn thẳng: mọi điểm trên đường trung trực cách hai đầu mút bằng nhau.
+
+**PED3 — Bản chất trước công thức:** Tâm đường tròn cách đều các điểm đã cho. Giao hai đường trung trực cho tâm nếu ba điểm không thẳng hàng; khi ba điểm thẳng hàng thì không có đường tròn đi qua cả ba.
+
+**PED4 — Hướng dẫn đọc hình:** Vẽ tam giác ABC và hai đường trung trực AB, AC; điểm giao của hai đường là tâm I có IA=IB=IC.
+
+**PED5 — Chọn phương pháp và giới hạn:** Kiểm ba điểm không thẳng hàng; tìm giao hai đường trung trực rồi tính R từ một điểm. Không chọn tùy ý một tâm chỉ dựa hai điểm.
+
+**PED6 — Tự thử trước Core** (`THPT-G10-CHVII-TRY16`, `SGK_PRE_CORE_FIRST_TRY`, unscored; outcome `G10-B21-CIRCLE_THROUGH_POINTS`): Đường tròn qua A(0,0), B(2,0), C(0,2) có tâm, bán kính và phương trình gì?
+
+<details>
+<summary>Tự mở đáp án sau khi đã tự làm</summary>
+
+**Đáp án:** Tâm I(1,1), bán kính √2, phương trình (x−1)²+(y−1)²=2.
+
+**Lý do:** Trung trực AB là x=1; trung trực AC là y=1. IA²=1²+1²=2; thử B và C đều cho tổng bình phương bằng 2.
+
+**Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY16` bên dưới; quay lại câu canonical cũ `THPT-G10-B21-P04` khi đã hiểu kiến thức.
+
+</details>
+
+#### D6 — HELP-G10-CHVII-TRY16 (không tính Mastery)
+
+1. **Nhận diện lỗi:** Nếu lấy trung điểm AB làm tâm, em mới dùng hai điểm và chưa bảo đảm cách đều C.
+2. **Quay lại bản chất:** Tâm đường tròn cách đều các điểm đã cho. Giao hai đường trung trực cho tâm nếu ba điểm không thẳng hàng; khi ba điểm thẳng hàng thì không có đường tròn đi qua cả ba.
+3. **Tự sửa:** Tìm cả hai trung trực rồi thử độ dài IA, IB, IC bằng nhau.
+4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B21-P04` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+
+
+### G10-B21-LINE_CIRCLE_POSITION — Đường thẳng cắt, tiếp xúc hoặc không gặp đường tròn
+
+**PED1 — Vì sao cần học:** Để biết một lối đi thẳng có đi qua vùng tròn, chỉ cần so sánh khoảng cách gần nhất từ tâm đến lối đi với bán kính.
+
+**PED2 — Kiến thức tiền đề:** Nhắc khoảng cách từ điểm I đến đường d và bán kính R>0; đoạn vuông góc là ngắn nhất.
+
+**PED3 — Bản chất trước công thức:** Nếu h=d(I,d)>R thì lối đi ở ngoài vùng; h=R thì chạm một điểm; h<R thì cắt đường tròn tại hai điểm. Không cần giải hệ khi chỉ hỏi số giao điểm.
+
+**PED4 — Hướng dẫn đọc hình:** Vẽ ba đường ở khoảng cách tâm lớn hơn, bằng, nhỏ hơn bán kính; đếm số giao điểm lần lượt 0,1,2.
+
+**PED5 — Chọn phương pháp và giới hạn:** Tính h=|axI+byI+c|/√(a²+b²), so với R. Phải biết đường có n khác 0 và đường tròn R>0.
+
+**PED6 — Tự thử trước Core** (`THPT-G10-CHVII-TRY17`, `SGK_PRE_CORE_FIRST_TRY`, unscored; outcome `G10-B21-LINE_CIRCLE_POSITION`): Đường tròn tâm I(1,2), R=3 và đường d: y=−1 có quan hệ nào?
+
+<details>
+<summary>Tự mở đáp án sau khi đã tự làm</summary>
+
+**Đáp án:** Tiếp xúc; tiếp điểm T(1,−1).
+
+**Lý do:** Khoảng cách từ I(1,2) đến y=−1 là |2−(−1)|=3=R. Chân đường vuông góc từ I xuống d là T(1,−1).
+
+**Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY17` bên dưới; quay lại câu canonical cũ `THPT-G10-B21-P03` khi đã hiểu kiến thức.
+
+</details>
+
+#### D6 — HELP-G10-CHVII-TRY17 (không tính Mastery)
+
+1. **Nhận diện lỗi:** Nếu h=R mà nói 'cắt hai điểm', em nhầm trường hợp tiếp xúc với cát tuyến.
+2. **Quay lại bản chất:** Nếu h=d(I,d)>R thì lối đi ở ngoài vùng; h=R thì chạm một điểm; h<R thì cắt đường tròn tại hai điểm. Không cần giải hệ khi chỉ hỏi số giao điểm.
+3. **Tự sửa:** Vẽ đoạn IT vuông góc d dài 3; các điểm khác T trên d sẽ cách I xa hơn 3.
+4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B21-P03` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+
+
+### G10-B22-ELLIPSE_PARAMETERS — Elip và ý nghĩa hai tiêu điểm
+
+**PED1 — Vì sao cần học:** Một số đường bao có đặc điểm tổng quãng đường đến hai địa điểm cố định không đổi; tập hợp đó là đường elip.
+
+**PED2 — Kiến thức tiền đề:** Nhắc phương trình khoảng cách hai điểm, điều kiện a>b>0 cho elip có trục lớn là Ox.
+
+**PED3 — Bản chất trước công thức:** Tổng MF1+MF2=2a tạo ra elip. Với dạng x²/a²+y²/b²=1 có a>b>0, hai tiêu điểm cách tâm c với c²=a²−b², nên c<a.
+
+**PED4 — Hướng dẫn đọc hình:** Vẽ elip dẹt theo trục Ox, đánh dấu hai đỉnh (±a,0), hai tiêu điểm (±c,0) nằm bên trong đường bao; phân biệt c và b.
+
+**PED5 — Chọn phương pháp và giới hạn:** Đọc mẫu lớn hơn là a² khi trục lớn nằm trên Ox, tìm b², tính c²=a²−b² rồi viết tiêu điểm. **Tâm sai e=c/a là phần nâng cao, không dùng làm Core thay cho mục tiêu tiêu điểm/trục.**
+
+**PED6 — Tự thử trước Core** (`THPT-G10-CHVII-TRY18`, `SGK_PRE_CORE_FIRST_TRY`, unscored; outcome `G10-B22-ELLIPSE_PARAMETERS`): Với elip x²/25+y²/16=1, tìm a, b, c và hai tiêu điểm.
+
+<details>
+<summary>Tự mở đáp án sau khi đã tự làm</summary>
+
+**Đáp án:** a=5, b=4, c=3; F1(−3,0), F2(3,0).
+
+**Lý do:** a²=25>b²=16, c²=25−16=9 ⇒ c=3; elip có trục lớn Ox.
+
+**Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY18` bên dưới; quay lại câu canonical cũ `THPT-G10-B22-P01` khi đã hiểu kiến thức.
+
+</details>
+
+#### D6 — HELP-G10-CHVII-TRY18 (không tính Mastery)
+
+1. **Nhận diện lỗi:** Nếu dùng c²=a²+b², em đã nhầm công thức hypebol; nếu chọn B22-C01 tâm sai làm Core, em đang lệch kỹ năng SGK.
+2. **Quay lại bản chất:** Tổng MF1+MF2=2a tạo ra elip. Với dạng x²/a²+y²/b²=1 có a>b>0, hai tiêu điểm cách tâm c với c²=a²−b², nên c<a.
+3. **Tự sửa:** Quan sát dấu cộng giữa hai phân thức và kiểm 0<c<a; luyện đúng bài elip Core B22-P01.
+4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B22-P01` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+
+
+### G10-B22-HYPERBOLA_PARAMETERS — Hypebol: chênh lệch khoảng cách và hai nhánh
+
+**PED1 — Vì sao cần học:** Đường có chênh lệch khoảng cách tới hai điểm cố định không đổi tạo hình khác elip: hai nhánh kéo ra vô hạn.
+
+**PED2 — Kiến thức tiền đề:** Nhắc c²=a²−b² của elip để thấy hypebol dùng dấu trừ và có c²=a²+b².
+
+**PED3 — Bản chất trước công thức:** Dạng x²/a²−y²/b²=1 có hai nhánh mở theo ±Ox; c²=a²+b² nên tiêu điểm xa tâm hơn các đỉnh (c>a).
+
+**PED4 — Hướng dẫn đọc hình:** Trên hình đánh dấu hai nhánh mở trái và phải, các đỉnh ±a và tiêu điểm ±c xa hơn; không nối hai nhánh thành oval như elip.
+
+**PED5 — Chọn phương pháp và giới hạn:** Đọc đúng dấu trừ và vị trí mẫu dưới x²: a² ở mẫu số hạng dương; b² mẫu số hạng âm; tìm c> a từ a²+b².
+
+**PED6 — Tự thử trước Core** (`THPT-G10-CHVII-TRY19`, `SGK_PRE_CORE_FIRST_TRY`, unscored; outcome `G10-B22-HYPERBOLA_PARAMETERS`): Hypebol x²/16−y²/9=1 có các đỉnh và hai tiêu điểm tọa độ nào?
+
+<details>
+<summary>Tự mở đáp án sau khi đã tự làm</summary>
+
+**Đáp án:** Đỉnh A1(−4,0), A2(4,0); tiêu điểm F1(−5,0), F2(5,0).
+
+**Lý do:** a=4, b=3, c²=a²+b²=16+9=25 ⇒ c=5; trục thực Ox.
+
+**Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY19` bên dưới; quay lại câu canonical cũ `THPT-G10-B22-C02` khi đã hiểu kiến thức.
+
+</details>
+
+#### D6 — HELP-G10-CHVII-TRY19 (không tính Mastery)
+
+1. **Nhận diện lỗi:** Nếu lấy c=√7 hoặc vẽ oval kín, em đang áp dụng công thức và hình elip.
+2. **Quay lại bản chất:** Dạng x²/a²−y²/b²=1 có hai nhánh mở theo ±Ox; c²=a²+b² nên tiêu điểm xa tâm hơn các đỉnh (c>a).
+3. **Tự sửa:** Kiểm c>a và vẽ hai nhánh qua hai đỉnh ±4, không khép kín.
+4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B22-C02` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+
+
+### G10-B22-HYPERBOLA_ASYMPTOTES — Tiệm cận của hypebol biểu diễn hướng hai nhánh ở xa
+
+**PED1 — Vì sao cần học:** Hai nhánh hypebol càng đi xa càng gần những đường thẳng cố định; chúng cho hướng hình học khi không thể vẽ toàn bộ đường cong.
+
+**PED2 — Kiến thức tiền đề:** Ôn tỉ số b/a từ dạng x²/a²−y²/b²=1 và tính chất đường thẳng đi qua gốc.
+
+**PED3 — Bản chất trước công thức:** Khi |x| lớn, hệ thức y²=(b²/a²)(x²−a²) cho |y/x| tiến gần b/a. Hai đường y=±(b/a)x là tiệm cận, không phải các nhánh thực của hypebol.
+
+**PED4 — Hướng dẫn đọc hình:** Vẽ hai đường chéo qua O và hai nhánh hypebol tiến sát chúng nhưng không chạm ở vùng xa; nhấn mạnh tiệm cận không phải trục đối xứng x/y.
+
+**PED5 — Chọn phương pháp và giới hạn:** Chỉ áp dụng công thức y=±(b/a)x cho dạng chính tắc tâm O, trục thực Ox. Trường hợp tịnh tiến/đổi trục cần biến đổi trước.
+
+**PED6 — Tự thử trước Core** (`THPT-G10-CHVII-TRY20`, `SGK_PRE_CORE_FIRST_TRY`, unscored; outcome `G10-B22-HYPERBOLA_ASYMPTOTES`): Hypebol x²/25−y²/4=1 có hai đường tiệm cận nào?
+
+<details>
+<summary>Tự mở đáp án sau khi đã tự làm</summary>
+
+**Đáp án:** y=(2/5)x và y=−(2/5)x.
+
+**Lý do:** a²=25 ⇒ a=5; b²=4 ⇒ b=2. Hệ số góc tiệm cận là ±b/a=±2/5.
+
+**Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY20` bên dưới; quay lại câu canonical cũ `THPT-G10-B22-C02` khi đã hiểu kiến thức.
+
+</details>
+
+#### D6 — HELP-G10-CHVII-TRY20 (không tính Mastery)
+
+1. **Nhận diện lỗi:** Nếu lấy hệ số ±5/2, em đã đảo tỉ số a/b; nếu vẽ thẳng là đồ thị hypebol, em nhầm tiệm cận với đường cong.
+2. **Quay lại bản chất:** Khi |x| lớn, hệ thức y²=(b²/a²)(x²−a²) cho |y/x| tiến gần b/a. Hai đường y=±(b/a)x là tiệm cận, không phải các nhánh thực của hypebol.
+3. **Tự sửa:** Đánh dấu hai giao điểm với Ox (±5,0) của hypebol và hai đường chéo có hệ số ±0,4.
+4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B22-C02` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+
+
+### G10-B22-PARABOLA_FOCUS — Parabol và quan hệ tiêu điểm – đường chuẩn
+
+**PED1 — Vì sao cần học:** Một chảo phản xạ có mặt cắt parabol vì vị trí của các điểm trên đường cong có quan hệ hình học đặc biệt với tiêu điểm và đường chuẩn.
+
+**PED2 — Kiến thức tiền đề:** Ôn khoảng cách điểm đến điểm, điểm đến đường thẳng; lưu ý dự án dùng quy ước y²=2px với p>0.
+
+**PED3 — Bản chất trước công thức:** Điểm M trên parabol có MF bằng khoảng cách vuông góc từ M đến đường chuẩn. Với y²=2px, p>0, tiêu điểm F(p/2,0) và đường chuẩn x=−p/2; **không** lấy F(p,0).
+
+**PED4 — Hướng dẫn đọc hình:** Vẽ đỉnh O, tiêu điểm F ở bên phải và đường chuẩn ở bên trái cách O cùng p/2; từ M trên đường cong, so hai đoạn dài bằng nhau.
+
+**PED5 — Chọn phương pháp và giới hạn:** Từ hệ số của x suy 2p, tính p rồi lấy p/2 cho tiêu điểm và đường chuẩn. Phải dùng đúng một quy ước công thức cho cả hai.
+
+**PED6 — Tự thử trước Core** (`THPT-G10-CHVII-TRY21`, `SGK_PRE_CORE_FIRST_TRY`, unscored; outcome `G10-B22-PARABOLA_FOCUS`): Cho parabol y²=8x với x≥0. Xác định tiêu điểm, đường chuẩn; M(2,4) có thuộc parabol không?
+
+<details>
+<summary>Tự mở đáp án sau khi đã tự làm</summary>
+
+**Đáp án:** p=4; F(2,0), đường chuẩn x=−2; M(2,4) thuộc vì 4²=8·2.
+
+**Lý do:** 2p=8 ⇒ p=4, F=(p/2,0)=(2,0), đường chuẩn x=−p/2=−2. M có MF=4 và khoảng cách đến x=−2 là 4.
+
+**Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY21` bên dưới; quay lại câu canonical cũ `THPT-G10-B22-P03` khi đã hiểu kiến thức.
+
+</details>
+
+#### D6 — HELP-G10-CHVII-TRY21 (không tính Mastery)
+
+1. **Nhận diện lỗi:** Nếu đặt F=(4,0), em đã nhầm p với p/2; nếu không thử M, em chỉ kiểm công thức chứ chưa đọc đồ thị.
+2. **Quay lại bản chất:** Điểm M trên parabol có MF bằng khoảng cách vuông góc từ M đến đường chuẩn. Với y²=2px, p>0, tiêu điểm F(p/2,0) và đường chuẩn x=−p/2; **không** lấy F(p,0).
+3. **Tự sửa:** Thử ngay y²=8x ở M và so MF với khoảng cách ngang từ M đến x=−2.
+4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B22-P03` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+
+
+### G10-B22-CONIC_INTERSECTION — Điểm và đường thẳng cắt conic
+
+**PED1 — Vì sao cần học:** Để xác định chỗ một tuyến đường thẳng đi qua một đường bao conic, ta tìm các tọa độ thỏa cả hai điều kiện.
+
+**PED2 — Kiến thức tiền đề:** Ôn giải hệ và thế phương trình đường thẳng vào công thức elip/hypebol/parabol.
+
+**PED3 — Bản chất trước công thức:** Giao điểm là nghiệm chung; số nghiệm thực phụ thuộc vị trí, chứ không được kết luận luôn có hai giao điểm.
+
+**PED4 — Hướng dẫn đọc hình:** Vẽ elip và trục Oy đi qua hai điểm trên và dưới; so với đường ngoài elip có thể không có giao điểm.
+
+**PED5 — Chọn phương pháp và giới hạn:** Thế phương trình đường vào conic, giải phương trình còn lại và kiểm từng nghiệm thực. Nghiệm hình học phải thỏa tất cả điều kiện.
+
+**PED6 — Tự thử trước Core** (`THPT-G10-CHVII-TRY22`, `SGK_PRE_CORE_FIRST_TRY`, unscored; outcome `G10-B22-CONIC_INTERSECTION`): Đường x=0 cắt elip x²/9+y²/4=1 tại những điểm nào?
+
+<details>
+<summary>Tự mở đáp án sau khi đã tự làm</summary>
+
+**Đáp án:** (0,2) và (0,−2).
+
+**Lý do:** Thế x=0 được y²/4=1 ⇒ y²=4 ⇒ y=±2; cả hai tọa độ thỏa phương trình gốc.
+
+**Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY22` bên dưới; quay lại câu canonical cũ `THPT-G10-B22-P05` khi đã hiểu kiến thức.
+
+</details>
+
+#### D6 — HELP-G10-CHVII-TRY22 (không tính Mastery)
+
+1. **Nhận diện lỗi:** Nếu chỉ ghi y=2, em bỏ mất nghiệm âm vì căn của bình phương; nếu kết luận hai điểm theo hình mà không tính, chứng cứ chưa đủ.
+2. **Quay lại bản chất:** Giao điểm là nghiệm chung; số nghiệm thực phụ thuộc vị trí, chứ không được kết luận luôn có hai giao điểm.
+3. **Tự sửa:** Giải đủ hai dấu của y rồi thay lại từng cặp tọa độ.
+4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B22-P05` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+
+
+### G10-B22-CONIC_MODEL — Ứng dụng kích thước của parabol
+
+**PED1 — Vì sao cần học:** Trong thiết kế máng phản xạ hoặc cổng cong, bản vẽ có thể dùng parabol để tính độ rộng tại một vị trí đã định.
+
+**PED2 — Kiến thức tiền đề:** Nhắc phương trình y²=2px; trục đối xứng là Ox, tại x cố định các giá trị y đối xứng nhau.
+
+**PED3 — Bản chất trước công thức:** Tại một hoành độ x≥0, hai điểm biên của parabol có tung độ ±√(2px); độ rộng theo phương vuông góc trục là hiệu hai tung độ, bằng 2√(2px).
+
+**PED4 — Hướng dẫn đọc hình:** Vẽ parabol mở phải, đoạn thẳng đứng tại x=5 giao hai nhánh; chiều rộng là khoảng cách từ y âm đến y dương, không phải chỉ một tung độ.
+
+**PED5 — Chọn phương pháp và giới hạn:** Giải y²=2px tại x cụ thể, lấy cả ±y rồi trừ hai tung độ. Gắn đơn vị và chỉ dùng trong phạm vi mô hình thực tế phù hợp.
+
+**PED6 — Tự thử trước Core** (`THPT-G10-CHVII-TRY23`, `SGK_PRE_CORE_FIRST_TRY`, unscored; outcome `G10-B22-CONIC_MODEL`): Mặt cắt một máng giả sử có dạng y²=20x (x,y tính bằng cm). Bề rộng của máng tại x=5 cm là bao nhiêu?
+
+<details>
+<summary>Tự mở đáp án sau khi đã tự làm</summary>
+
+**Đáp án:** 20 cm.
+
+**Lý do:** Thế x=5 được y²=100 ⇒ y=±10 cm. Độ rộng là 10−(−10)=20 cm.
+
+**Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY23` bên dưới; quay lại câu canonical cũ `THPT-G10-B22-P04` khi đã hiểu kiến thức.
+
+</details>
+
+#### D6 — HELP-G10-CHVII-TRY23 (không tính Mastery)
+
+1. **Nhận diện lỗi:** Nếu đáp 10 cm, em chỉ lấy khoảng cách từ trục đối xứng đến một bên mép mà quên cả hai nhánh.
+2. **Quay lại bản chất:** Tại một hoành độ x≥0, hai điểm biên của parabol có tung độ ±√(2px); độ rộng theo phương vuông góc trục là hiệu hai tung độ, bằng 2√(2px).
+3. **Tự sửa:** Vẽ đoạn thẳng đứng từ (5,−10) tới (5,10) và tính hiệu hai tung độ.
+4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B22-P04` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+
+
+## Kết luận sư phạm theo nguồn SGK hiện có
+
+- 23 outcome gồm B19=7, B20=5, B21=5, B22=6. Mỗi outcome có giải thích bản chất, câu Tự thử/đáp án tự mở và D6 quay lại đúng câu ngân hàng Core/Practice cũ.
+- 23 bài Tự thử mới được tự soạn; chỉ là formative trước Core, không phải bộ Readiness bảo mật, không ghi Mastery. Các câu cũ/Worked/Written/Anchor/SVG không đổi.
+- B22-C01 liên quan tâm sai được giữ ở tầng tự chọn theo review S1 cũ, không xem là Core; First Try elip quay về B22-P01 phù hợp.
+- Reviewer cần đánh giá từng câu, điều kiện và tiến trình trước khi gắn Academic/PED PASS. Gói này chưa phải CONTENT_READY hoặc website đã triển khai.
+
