@@ -401,7 +401,7 @@
   const reviewedText=(el,value,item)=>{
     // Same safe presentation-only TeX handling for G10/G11 PUBLIC records.
     // Never mutate canonical question/answer source or touch Readiness/RD1.
-    if(String(item.grade)==="10"||String(item.grade)==="11")renderG11Math(el,value);
+    if(String(item.grade)==="11"||String(item.grade)==="10"||/^THPT-G10-/.test(String(item.item_id||"")))renderG11Math(el,value);
     else el.textContent=String(value??"");
   };
 
