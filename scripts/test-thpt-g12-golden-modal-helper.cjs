@@ -27,6 +27,7 @@ async function verifyG12GoldenHub(page,{chapter,selector,lessons,groups,items,he
  const nav=dlg.locator(".thpt-r4-modal-question-nav button"),question=dlg.locator("[data-thpt-canonical-item]");
  assert((await nav.count())>=3,"Question-number navigation rendered");
  assert.equal(await question.count(),1,"Exactly one question per modal screen");
+ if(chapter==="IV")assert((await question.locator("sup").count())>0,"G12 ChIV raw x^3 must be a proper superscript in Golden modal");
  assert.equal(await dlg.locator(".thpt-g12-golden-solution:not([hidden])").count(),0,"No answer before formative submit");
  const id0=await question.getAttribute("data-thpt-canonical-item");
  await dlg.locator("button.thpt-r4-formative-submit").click();

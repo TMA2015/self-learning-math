@@ -8,3 +8,8 @@
 .thpt-g12-golden-dialog .thpt-g12-golden-solution[hidden]{display:none!important}
 .thpt-g12-golden-dialog .thpt-r4-modal-question-nav button{min-height:44px}
 @media(max-width:680px){.thpt-g12-golden-dialog{width:calc(100vw - 16px);max-height:95vh}.thpt-g12-golden-dialog .thpt-r4-modal-main{max-height:calc(95vh - 85px)}}
+
+/* AP2 formula parity: reuse reviewed ChIV safe text/math rendering in the modal. */
+.thpt-g12-golden-dialog .thpt-g12-golden-math-display{overflow-x:auto;max-width:100%}
+.thpt-g12-golden-dialog .thpt-g12-golden-math-inline{overflow-wrap:anywhere}
+.thpt-g12-golden-dialog sup,.thpt-g12-golden-dialog sub{font-size:.75em;line-height:0}

@@ -1,8 +1,75 @@
 /* G12 RELEASE Golden R4 UI-only: one-question Core/Practice modal, source-locked PUBLIC only. */
 (()=>{"use strict";
 const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=String(text);return n};
-const para=(text)=>{const p=el("p");p.textContent=String(text??"");p.style.whiteSpace="pre-line";return p};
-const format=(dst,input)=>{for(const part of String(input??"").split(/(\*\*[^*\n]+\*\*)/g)){if(part.startsWith("**")&&part.endsWith("**"))dst.append(el("strong","",part.slice(2,-2)));else if(part)dst.append(document.createTextNode(part))}};
+const para=(text)=>{const p=el("p");format(p,text);p.style.whiteSpace="pre-line";return p};
+const format=(root,input)=>{
+ const text=String(input??"");
+ const bare=(target,str)=>{
+  let buf="";
+  const flush=()=>{if(buf){target.append(document.createTextNode(buf));buf=""}};
+  for(let i=0;i<str.length;i++){
+   const op=str[i];
+   if((op!=="^"&&op!=="_")||!/[A-Za-z0-9)\]]/.test(buf.slice(-1))
+      ||(op==="_"&&!/[A-Za-z]{1,5}$/.test(buf))){buf+=op;continue}
+   const starter=str[i+1];
+   let parsed=null;
+   if(starter==="{"||starter==="("){
+    const closer=starter==="{"?"}":")";let depth=0;
+    for(let j=i+1;j<str.length;j++){
+     if(str[j]===starter)depth++;
+     else if(str[j]===closer&&--depth===0){
+      parsed={value:starter==="{"?str.slice(i+2,j):str.slice(i+1,j+1),end:j+1};break;
+     }
+    }
+   }else{
+    const m=/^[−-]?(?:[A-Za-z][A-Za-z0-9]*|\d+)/.exec(str.slice(i+1));
+    if(m){const end=i+1+m[0].length;
+     if(!(/^[A-Za-z]+$/.test(m[0])&&str[end]==="(")
+       &&!(/^\d+$/.test(m[0])&&str[end]==="/"))parsed={value:m[0],end};
+    }
+   }
+   if(!parsed){buf+=op;continue}
+   flush();
+   const script=el(op==="^"?"sup":"sub","thpt-g12-golden-math-script",parsed.value);
+   target.append(script);i=parsed.end-1;
+  }
+  flush();
+ };
+ const appendMarked=(segment)=>{
+  const reg=/(?:\x60[^\x60\n]+\x60|\*\*[^*\n]+\*\*)/g;let cursor=0;
+  for(const m of segment.matchAll(reg)){
+   if(m.index>cursor)bare(root,segment.slice(cursor,m.index));
+   const code=m[0][0]==="\x60",span=el(code?"span":"strong",code?"thpt-g12-golden-inline-notation":"");
+   bare(span,m[0].slice(code?1:2,code?-1:-2));root.append(span);
+   cursor=m.index+m[0].length;
+  }
+  if(cursor<segment.length)bare(root,segment.slice(cursor));
+ };
+ let buffer="";
+ const flush=()=>{if(buffer){appendMarked(buffer);buffer=""}};
+ for(let i=0;i<text.length;){
+  let open=null,close=null,display=false;
+  if(text.startsWith("$$",i)){open="$$";close="$$";display=true}
+  else if(text.startsWith("\\[",i)){open="\\[";close="\\]";display=true}
+  else if(text.startsWith("\\(",i)){open="\\(";close="\\)"}
+  else if(text[i]==="$"&&(i===0||text[i-1]!=="\\")){open="$";close="$"}
+  if(open){
+   let end=text.indexOf(close,i+open.length);
+   while(end>=0&&text[end-1]==="\\")end=text.indexOf(close,end+close.length);
+   if(end>i+open.length){
+    const latex=text.slice(i+open.length,end);
+    if(latex.trim()){
+     flush();
+     const mathNode=el(display?"div":"span",display?"thpt-g12-golden-math-display":"thpt-g12-golden-math-inline");
+     mathNode.textContent=(display?"\\[":"\\(")+latex+(display?"\\]":"\\)");
+     root.append(mathNode);i=end+close.length;continue;
+    }
+   }
+  }
+  buffer+=text[i++];
+ }
+ flush();
+};
 const math=root=>{const m=window.MathJax;if(m?.typesetPromise){const go=()=>m.typesetPromise([root]).catch(()=>{});if(m.startup?.promise)void m.startup.promise.then(go).catch(()=>{});else void go()}};
 const anchor=id=>String(id).toLowerCase().replace(/[^a-z0-9-]/g,"-");
 const expected={I:[10,66],II:[6,64],III:[4,48],IV:[6,88],V:[9,96]};
