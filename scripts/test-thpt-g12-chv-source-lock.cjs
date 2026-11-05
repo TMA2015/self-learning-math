@@ -139,6 +139,14 @@ const runtime=read("docs/assets/javascripts/thpt-g12-chv-b14-b17-r01.js");
 const css=read("docs/assets/stylesheets/thpt-g12-chv-b14-b17-r01.css");
 const config=read("mkdocs.thpt-preview.yml");
 assert(runtime.includes("23 câu chính")&&runtime.includes("q.optional_after_b17")&&runtime.includes("submitted=true"));
+assert(runtime.includes("new Set(bank.items.map(q=>q.item_id)).size!==96"),
+ "Chapter V must validate 96 UNIQUE canonical IDs, not a copied value from Chapter IV");
+for(const key of ["g12ChvHubLesson","g12ChvFinal","g12ChvReady","g12ChvError"])
+ assert(runtime.includes(key),"Chapter V own runtime dataset contract missing "+key);
+assert(!runtime.includes("g12Chiv"),"Cross-chapter copy-paste regression: ChIV state key in ChV");
+assert(runtime.includes("THPT_G12_GOLDEN_HUB")||runtime.includes("data-thpt-open-quiz"),
+ "G12 ChV must mount the already approved Golden modal before release; inline question stacks are not accepted");
+
 assert(runtime.includes("../data/thpt-g12-chv-b14-b17-public-r01.json")&&!runtime.includes("b11-b13-public"));
 assert(runtime.includes("b14-optional")&&runtime.includes("card.hidden=i!==cursor"));
 assert(!/localStorage|sessionStorage|setDoc\(|getFirestore\(/.test(runtime),"No progress/mastery writes");
