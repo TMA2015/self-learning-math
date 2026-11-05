@@ -576,7 +576,19 @@
     card.append(prompt,answerForm,actions);
     // Only public formative text is typeset; never load any held-out readiness
     // prompts or answer keys into the browser.
-    if(window.MathJax?.typesetPromise)window.MathJax.typesetPromise([card]).catch(()=>{});
+    // Deep links may mount before remote MathJax is ready. Defer the
+    // presentation-only typesetting until script load, without source writes.
+    const typesetCard=()=>{
+     if(!card.isConnected)return;
+     const mj=window.MathJax;
+     if(typeof mj?.typesetPromise!=="function")return;
+     const ready=mj.startup?.promise;
+     if(ready?.then)void ready.then(()=>{if(card.isConnected)return mj.typesetPromise([card])}).catch(()=>{});
+     else void mj.typesetPromise([card]).catch(()=>{});
+    };
+    if(window.MathJax?.typesetPromise)typesetCard();
+    else if(document.readyState==="complete")typesetCard();
+    else window.addEventListener("load",typesetCard,{once:true});
     prev.disabled=index===0;next.disabled=index===items.length-1;
    };
    prev.addEventListener("click",()=>{if(index>0){index--;render()}});
