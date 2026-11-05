@@ -36,8 +36,8 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/lop-12/";
       await img.scrollIntoViewIfNeeded();
       await page.waitForFunction(()=>[...document.querySelectorAll("figure.g12-chi-figure img")].every(x=>x.complete&&x.naturalWidth>0),null,{timeout:12000});
      }
-     assert.equal(await content.locator('a[href="../luyen-tap/#b'+n+'-core"]').count(),1);
-     assert.equal(await content.locator('a[href="../luyen-tap/#b'+n+'-practice"]').count(),1);
+     assert.equal(await content.locator('a[href="../luyen-tap/#b'+String(n).padStart(2,"0")+'-core"]').count(),1);
+     assert.equal(await content.locator('a[href="../luyen-tap/#b'+String(n).padStart(2,"0")+'-practice"]').count(),1);
     }
     await open("chuong-iii/luyen-tap/");
     const hub=page.locator("[data-g12-chiii-hub]");
