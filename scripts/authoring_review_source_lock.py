@@ -36,7 +36,24 @@ def field(data, name):
 
 
 def outcomes(data):
-    return sorted(set(re.findall(rb'\bB\d{2}_OUT_\d{2}\b', data)))
+    """Prefer explicit lesson/Topic outcome declarations; fallback to SGK Bxx IDs."""
+    text = data.decode('utf-8', 'strict')
+    for name in ('EXPECTED_OUTCOME_IDS', 'OUTCOME_ID'):
+        lines = re.findall(r'^' + name + r'\s*:\s*(.+)$', text, re.M)
+        if lines:
+            values = set()
+            for line in lines:
+                for token in re.split(r'[,;|\s]+', line):
+                    token = token.strip('\x60*[]()')
+                    if re.fullmatch(r'[A-Za-z][A-Za-z0-9_-]{3,}', token):
+                        values.add(token)
+            if values:
+                return sorted(values)
+    return sorted(set(re.findall(r'\bB\d{2}_OUT_\d{2}\b', text)))
+
+
+def topic_outcome_declaration_exists(data):
+    return bool(re.search(rb'(?m)^(?:OUTCOME_ID|EXPECTED_OUTCOME_IDS)\s*:', data))
 
 
 def first_last(data):
@@ -82,8 +99,10 @@ def prepare(args):
         raise ValueError('Missing one official STANDARD_ID')
     if args.scope not in ('SGK_CHAPTER', 'TOPIC'):
         raise ValueError('Unsupported LEARNING_PATH; use SGK_CHAPTER or TOPIC')
+    if args.scope == 'TOPIC' and not topic_outcome_declaration_exists(data):
+        raise ValueError('TOPIC requires explicit OUTCOME_ID or EXPECTED_OUTCOME_IDS')
     if not outcomes(data):
-        raise ValueError('No Bxx_OUT_xx outcome IDs in source')
+        raise ValueError('No explicit outcome IDs in review source')
     prefix = re.sub(r'[^A-Za-z0-9_-]+', '_', args.packet)
     if not prefix or len(prefix) > 100:
         raise ValueError('Unsafe or oversized PACKET_ID')
@@ -145,6 +164,8 @@ def prepare_private(args):
         raise ValueError('Private source PACKET_ID/LEARNING_PATH mismatch')
     if field(data, 'STANDARD_ID') != 'SLM-THPT-QUALITY-ONE' or not outcomes(data):
         raise ValueError('Missing STANDARD_ID or outcome IDs in private source')
+    if args.scope == 'TOPIC' and not topic_outcome_declaration_exists(data):
+        raise ValueError('Private TOPIC requires explicit outcome declaration')
     prefix = re.sub(r'[^A-Za-z0-9_-]+', '_', args.packet)
     if not prefix or len(prefix) > 100:
         raise ValueError('Invalid PACKET_ID')
