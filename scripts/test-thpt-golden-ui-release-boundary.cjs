@@ -75,4 +75,8 @@ for(const x of ["thpt-preview/sgk/chuong-ii/bai-3/","thpt-preview/sgk/lop-11/chu
 }
 assert(exists("docs/thpt-preview/chuyen-de/ham-so/luyen-tap.md"),
  "Keep legacy THPT Topic demo visible; it does NOT authorize Topic production");
+const registry=new Set(chapter.map(c=>"chuong-"+c.roman));
+const gradeDir="docs/thpt-preview/sgk/lop-12";
+const unexpectedChapters=fs.readdirSync(path.join(base,gradeDir),{withFileTypes:true}).filter(e=>e.isDirectory()&&/^chuong-[ivx]+$/.test(e.name)&&!registry.has(e.name)&&exists(gradeDir+"/"+e.name+"/luyen-tap.md")).map(e=>e.name);
+assert.deepEqual(unexpectedChapters,[],"New G12 chapter practice requires explicit Golden and browser contract registration");
 console.log("PASS Golden RELEASE AP/R: G10/G11 reference modal, G12 I-IV four chapter hubs, canonical source-locked items, one-question browser contract, Q16 boundary and G10/G11/G12 AI Tutor regression. New Topic production remains separate gated release.");
