@@ -22,7 +22,7 @@ for(const [i,lesson] of ["B09","B10"].entries()){
  assert(page.includes("Tự thử trước Core"));assert(!page.includes("#### Item THPT-"));assert(!page.includes("#### HELP-G12-"));
  for(let j=1;j<=6;j++){
   assert(page.includes("G12-CHIII-"+lesson+"-O"+String(j).padStart(2,"0")));
-  assert(page.includes("EX-G12-B"+(i+9)+"-"+String(j).padStart(2,"0")));
+  assert(page.includes("EX-G12-B"+String(i+9).padStart(2,"0")+"-"+String(j).padStart(2,"0")));
  }
  for(const q of subset){
   const marker="#### Item "+q.item_id+"\n";const from=source.indexOf(marker);
