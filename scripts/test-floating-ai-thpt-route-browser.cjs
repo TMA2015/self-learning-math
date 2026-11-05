@@ -13,11 +13,16 @@ const base="http://127.0.0.1:8765/";
     const allowed=[
       "thpt-preview/sgk/chuong-ii/bai-3/",
       "thpt-preview/sgk/lop-11/chuong-i/bai-1/",
-      "thpt-preview/sgk/lop-12/chuong-i/bai-1/"
+      "thpt-preview/sgk/lop-12/chuong-i/bai-1/",
+      "thpt-preview/sgk/lop-12/chuong-ii/bai-6/",
+      "thpt-preview/sgk/lop-12/chuong-iii/bai-9/",
+      "thpt-preview/sgk/lop-12/chuong-iv/bai-11/"
     ];
     const denied=[
       "thpt-preview/sgk/lop-11/chuong-i/tu-kiem-tra-chuong/",
       "thpt-preview/sgk/lop-12/chuong-i/tu-kiem-tra-chuong/",
+      "thpt-preview/sgk/lop-12/chuong-iv/tu-kiem-tra-chuong/",
+      "thpt-preview/sgk/lop-12/chuong-iv/luyen-tap/",
       "thpt-preview/sgk/lop-11/chuong-i/luyen-tap/"
     ];
     for(const route of allowed){

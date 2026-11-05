@@ -211,6 +211,8 @@ jobs:
           node --check docs/assets/javascripts/thpt-g12-chiv-b11-b13-r00.js
           node --check scripts/test-thpt-g12-chiv-source-lock.cjs
           node --check scripts/test-thpt-g12-chiv-release-browser.cjs
+          node --check docs/assets/javascripts/thpt-g12-golden-formative-modal-v1.js
+          node --check scripts/test-thpt-g12-golden-modal-helper.cjs
           node --check docs/assets/javascripts/thpt-g12-chv-b14-b17-r01.js
           node --check scripts/test-thpt-g12-chv-source-lock.cjs
           node --check scripts/test-thpt-g12-chv-release-browser.cjs
@@ -247,6 +249,12 @@ jobs:
         run: node scripts/test-thpt-g12-chii-release-source.cjs
       - name: Guard G12 ChIII V2 Academic/PED source receipt, 48 canonical and 12 reused END refs
         run: node scripts/test-thpt-g12-chiii-source-lock.cjs
+      - name: Guard G12 sidebar versus SGK overview, published chapter and lesson route parity
+        run: node scripts/test-thpt-g12-overview-sidebar-parity.cjs
+      - name: Enforce existing Golden R4 learner UI, no inline bulk questions and AI Tutor/Q16 boundary
+        run: node scripts/test-thpt-golden-ui-release-boundary.cjs
+      - name: Guard Golden G12 Core/Practice modal, source math and no Mastery across ChI-IV
+        run: node scripts/test-thpt-g12-golden-modal-source.cjs
       - name: Guard G12 ChIV immutable Academic/PED receipt, 88 source-verbatim items, 6 original PNG and 22 END
         run: node scripts/test-thpt-g12-chiv-source-lock.cjs
       - name: Guard G12 ChV composite R01 receipt, 96 immutable items, 24 outcome/HELP, 6 PNG, optional O07

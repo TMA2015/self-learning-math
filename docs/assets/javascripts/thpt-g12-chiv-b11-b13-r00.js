@@ -228,7 +228,7 @@ const start=async()=>{
    roles.some(role=>bank.items.filter(q=>q.role===role).length!==22)||
    new Set(bank.end_references.map(r=>r.item_id)).size!==22)throw Error("Canonical bank/source receipt mismatch");
   root.replaceChildren();
-  if(root.hasAttribute("data-g12-chiv-hub"))startHub(root,bank);else startSelfCheck(root,bank);
+  if(root.hasAttribute("data-g12-chiv-hub")){startHub(root,bank);if(!window.THPT_G12_GOLDEN_HUB?.mount(root,bank,{chapter:"IV"}))throw Error("Golden R4 modal unavailable");}else startSelfCheck(root,bank);
   root.dataset.g12ChivReady="true";
  }catch(e){
   root.dataset.g12ChivError="true";
