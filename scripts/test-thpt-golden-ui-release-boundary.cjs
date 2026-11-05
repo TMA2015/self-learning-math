@@ -25,7 +25,7 @@ assert(!/<details\b[^>]*class=["'][^"']*thpt-r4-practice-card/.test(g11),
  "Approved G11 buttons must not regress to inline expanding question stacks");
 const modalPath="docs/assets/javascripts/thpt-g12-golden-formative-modal-v1.js";
 const modal=read(modalPath);
-for(const text of ["thpt-r4-practice-dialog","thpt-r4-modal-question-nav","thpt-r4-practice-card-grid","data-g12-golden-open","result.hidden=!state.submitted","THPT_G12_GOLDEN_HUB"]){
+for(const text of ["thpt-r4-practice-dialog","thpt-r4-modal-question-nav","thpt-r4-practice-card-grid","dataset.g12GoldenOpen","result.hidden=!state.submitted","THPT_G12_GOLDEN_HUB"]){
  assert(modal.includes(text),"Shared G12 adapter missing Golden/R3 boundary: "+text);
 }
 for(const code of ["localStorage","sessionStorage","firebase.","setDoc(","recordMastery","SGK_CHAPTER_READINESS","TOPIC_READINESS"]){
@@ -50,7 +50,7 @@ for(const ch of chapter){
  assert(bank.mode==="CLIENT_SELF_CHECK_NO_MASTERY","No independent RD1/Mastery from G12 public bank Ch"+ch.name);
  assert(Array.isArray(bank.items)&&bank.items.length===ch.total&&new Set(bank.items.map(x=>x.item_id)).size===ch.total,
   "Frozen public canonical IDs not unique on Ch"+ch.name);
- const count=ch.name==="I"?bank.items.filter(x=>x.lesson_id).length:bank.items.length;
+ const count=ch.name==="I"?bank.items.filter(x=>/^B\\d{2}$/.test(x.lesson_id)).length:bank.items.length;
  assert(count===ch.public,"Source placements missing on chapter hub Ch"+ch.name);
  assert(end.includes("data-g12-"+ch.short+"-selfcheck"),"Protected self-check route missing Ch"+ch.name);
  for(let n=ch.start;n<=ch.end;n++){
@@ -62,7 +62,7 @@ for(const ch of chapter){
  }
 }
 const helper=read("scripts/test-thpt-g12-golden-modal-helper.cjs");
-for(const text of ['.thpt-g12-golden-card','[data-canonical-item]','[data-thpt-canonical-item]','exactly one question','No answer before','Draft retained']){
+for(const text of ['.thpt-g12-golden-card','[data-canonical-item]','[data-thpt-canonical-item]','Exactly one question','No answer before','Draft retained']){
  assert(helper.includes(text),"Golden browser test does not prove required interaction: "+text);
 }
 const tutor=read("docs/assets/javascripts/floating-ai-tutor-v1.js");
