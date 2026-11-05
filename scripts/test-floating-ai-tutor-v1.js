@@ -67,7 +67,7 @@ ok(ui.includes("const thptGrade = () =>") && ui.includes("thptGrade() : null,"),
   "G11/G12 Tutor context must be grade-specific without changing THCS");
 ok(prompt.includes('activity === "learning"')&&prompt.includes("NGỮ CẢNH ĐỌC BÀI HỌC"),"provider distinguishes learning from exercise");
 ok(mk.includes("floating-ai-tutor-v1.js"),"global script registered");
-ok(ui.includes("THPT-SGK-KNTT")&&ui.includes("THPT-TOPIC-KNTT")&&ui.includes("activeFormativeDialog")&&ui.includes("MutationObserver(sync)"),
+ok(ui.includes("THPT-SGK-KNTT")&&ui.includes("THPT-TOPIC-KNTT")&&ui.includes("activeFormativeDialog")&&ui.includes(".topic-core-dialog")&&ui.includes(".topic-micro-question")&&ui.includes("MutationObserver(sync)"),
   "Shared Tutor must support both THPT journeys and remain usable inside Golden modals");
 ok(prompt.includes('String(context.current_layer || "").startsWith("THPT-")'),
   "Gemini system prompt must distinguish THPT from THCS without changing THCS teaching");
