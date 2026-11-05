@@ -53,13 +53,14 @@ with sync_playwright() as p:
     for number, expected_parts in [("01",12),("02",12),("03",11)]:
         page.goto(BASE+"de-luyen-"+number+"/",wait_until="networkidle")
         assert page.locator(".exam-engine,[data-exam-engine],.exam-answers,.exam-notation-toolbar").count()==0, "no legacy exam UI: "+number
-        assert page.locator(".floating-ai-launcher").count()==0, "no AI on exam: "+number
+        assert page.locator(".floating-ai-launcher").count()==1, "public paper practice must have Tutor: "+number
         assert "không cần nhập" in page.locator(".md-content__inner").inner_text(), "paper instructions: "+number
         assert page.get_by_text("Câu 1.",exact=True).count()>0 and page.get_by_text("Câu 2.",exact=True).count()>0, "independent question numbering: "+number
         page.goto(BASE+"de-luyen-"+number+"-dap-an/",wait_until="networkidle")
         assert page.get_by_role("heading",name="Hướng dẫn chấm theo từng ý").count()==1, "step rubric: "+number
         assert page.locator(".md-content__inner table").first.locator("tr").count()>=expected_parts, "rubric rows: "+number
-        assert page.locator(".exam-engine,.floating-ai-launcher").count()==0, "no exam engine/AI on answer key: "+number
+        assert page.locator(".exam-engine").count()==0, "no exam engine on answer key: "+number
+        assert page.locator(".floating-ai-launcher").count()==1, "public answer-review page must have Tutor: "+number
         page.emulate_media(media="print")
         assert page.locator(".md-content__inner").is_visible(), "paper and rubric must remain printable"
         page.emulate_media(media="screen")
