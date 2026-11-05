@@ -10,7 +10,7 @@ async function verifyG12GoldenHub(page,{chapter,selector,lessons,groups,items,he
  assert.equal(await hub.locator(".thpt-g12-golden-card").count(),groups,"Golden two-card layout");
  assert.equal(await hub.locator("[data-g12-golden-open]").count(),groups,"One modal launcher per Core/Practice group");
  assert.equal(await hub.locator("[data-canonical-item]").count(),0,"No full-page inline question stacks");
- assert.equal(await hub.locator("[class$='-help']").count()>=helps,true,"Original recovery links remain available");
+ assert.equal(await hub.locator('details[class*="-hub-help"]').count(),0,"D6 must live within Golden question, no chapter-level duplicate accordion");
  const id="b"+({I:"01",II:"06",III:"09",IV:"11",V:"14"}[chapter])+"-core";
  const card=hub.locator("#"+id);
  assert.equal(await card.count(),1,"Core card anchored");
@@ -66,23 +66,22 @@ async function verifyG12GoldenHub(page,{chapter,selector,lessons,groups,items,he
  await page.keyboard.press("Escape");
  assert.equal(await dlg.isVisible(),false,"Escape closes via native dialog");
  if(chapter==="III"){
-  const outerHelp=hub.locator("details.g12-chiii-hub-help#b09-help");
-  await outerHelp.locator(":scope > summary").click();
-  const firstHelp=outerHelp.locator("details.g12-chiii-help[data-g12-golden-d6-outcome]").first();
-  assert.equal(await firstHelp.count(),1,"Existing five-step D6 is canonically tied to an outcome");
-  const helpTitle=await firstHelp.locator("summary").innerText();
-  assert(helpTitle.includes("Bài 9")&&helpTitle.includes("Core câu 1")&&helpTitle.includes("Luyện tập câu 1"),
-   "D6 section must explain its exact lesson, Core and Practice mapping");
-  await firstHelp.locator("summary").click();
-  await firstHelp.locator('a[href="#thpt-g12-b09-p01"]').click();
-  assert(await dlg.isVisible(),"D6 practice item deep link opens Golden modal");
+  assert.equal(await hub.locator("details.g12-chiii-hub-help").count(),0,
+   "No unapproved separate D6 learning panel under B09 cards");
+  await card.locator("button").click();
+  const currentD6=dlg.locator(".thpt-g12-golden-d6");
+  await currentD6.locator("summary").click();
+  assert((await currentD6.innerText()).includes("khi em chưa biết bắt đầu")||
+    (await currentD6.innerText()).includes("Dùng khi em chưa biết bắt đầu"),
+    "D6 tells student when to use it");
+  await currentD6.locator('[data-g12-golden-d6-target="THPT-G12-B09-P01"]').click();
   assert.equal(await dlg.locator("[data-thpt-canonical-item]").getAttribute("data-thpt-canonical-item"),
-   "THPT-G12-B09-P01","D6 Luyện tập lại navigates to original mapped canonical question");
-  const linkedD6=dlg.locator(".thpt-g12-golden-d6");
-  await linkedD6.locator("summary").click();
-  await linkedD6.locator('[data-g12-golden-d6-target="THPT-G12-B09-C01"]').click();
+   "THPT-G12-B09-P01","D6 Luyện tập lại navigates to exact canonical practice P01");
+  const linked=dlg.locator(".thpt-g12-golden-d6");
+  await linked.locator("summary").click();
+  await linked.locator('[data-g12-golden-d6-target="THPT-G12-B09-C01"]').click();
   assert.equal(await dlg.locator("[data-thpt-canonical-item]").getAttribute("data-thpt-canonical-item"),
-   "THPT-G12-B09-C01","D6 Quay lại Core uses original source item ID, not a copy");
+   "THPT-G12-B09-C01","D6 Quay lại Core navigates to exact canonical Core C01");
   await dlg.locator("[aria-label='Đóng cửa sổ']").click();
  }
  const excess=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);
