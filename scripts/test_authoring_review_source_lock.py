@@ -28,7 +28,7 @@ class SourceLockTests(unittest.TestCase):
             name = f'TOPIC-QA-{n:03}'
             (self.repo / 'content' / f'{name}.md').write_text(
                 f'# Topic QA {n}\nPACKET_ID: {name}\nLEARNING_PATH: TOPIC\n'
-                f'STANDARD_ID: SLM-THPT-QUALITY-ONE\nB15_OUT_01: synthetic only\n'
+                f'STANDARD_ID: SLM-THPT-QUALITY-ONE\nEXPECTED_OUTCOME_IDS: TOPIC_TEST_OUT_01\nB15_OUT_01: reused SGK only\n'
                 '## Kiến thức\n## Luyện tập\n## Tự kiểm tra\n', encoding='utf-8')
         self.git('add', 'content')
         self.git('commit', '-qm', 'synthetic source fixtures')
@@ -69,7 +69,7 @@ class SourceLockTests(unittest.TestCase):
         source = self.private / 'private-test.md'
         source.write_text('# synthetic no protected content\nPACKET_ID: RD1-QA\n'
                           'LEARNING_PATH: TOPIC\nSTANDARD_ID: SLM-THPT-QUALITY-ONE\n'
-                          'B15_OUT_01: metadata only\n', encoding='utf-8')
+                          'EXPECTED_OUTCOME_IDS: TOPIC_PRIVATE_OUT_01\n', encoding='utf-8')
         self.run_tool('prepare-private', '--repo', self.repo, '--source', source,
                       '--packet', 'RD1-QA', '--scope', 'TOPIC', '--outdir', self.out)
         temp = next(self.out.glob('Temp_RD1-QA_PRIVATE_*.md'))
