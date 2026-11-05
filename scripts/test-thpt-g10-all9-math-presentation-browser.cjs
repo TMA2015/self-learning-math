@@ -12,7 +12,7 @@ const target={
  iv:{lesson:"7",bank:"THPT_CHIV_B07_B08_REVIEWED_FORMATIVE",sc:"CHIV"},
  v:{lesson:"12",bank:"THPT_CHV_B12_REVIEWED_FORMATIVE",sc:"CHV"},
  vii:{lesson:"19",bank:"THPT_CHVII_REVIEWED_FORMATIVE",sc:"CHVII"},
- viii:{lesson:"24",bank:"THPT_CHVIII_REVIEWED_FORMATIVE",sc:"CHVIII"}
+ viii:{lesson:"25",bank:"THPT_CHVIII_REVIEWED_FORMATIVE",sc:"CHVIII"}
 };
 const root="http://127.0.0.1:8765/thpt-preview/sgk/";
 const selfBooks=Object.fromEntries(Object.values(target).map(x=>[x.sc,
