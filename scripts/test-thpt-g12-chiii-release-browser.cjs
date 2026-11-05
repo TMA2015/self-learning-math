@@ -67,7 +67,11 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/lop-12/";
     assert(await item.locator("textarea").isDisabled());
     const help=hub.locator("#b09-help");
     await help.locator(":scope > summary").click();
-    const ret=help.locator("a.g12-chiii-return[href^='#']").first();
+    // D6 help has its own nested <details>; a learner must expand it before using the return link.
+    const firstHelp=help.locator("details.g12-chiii-help").first();
+    await firstHelp.locator(":scope > summary").click();
+    assert.notEqual(await firstHelp.getAttribute("open"),null,"D6 detail opens before navigation");
+    const ret=firstHelp.locator("a.g12-chiii-return[href^='#']").first();
     const hash=await ret.getAttribute("href");assert(hash?.startsWith("#"));
     await ret.click();
     assert(await hub.locator('[id="'+hash.slice(1)+'"]').isVisible(),"D6 directs to canonical Core item");
