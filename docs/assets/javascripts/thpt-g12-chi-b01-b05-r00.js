@@ -294,7 +294,7 @@ const start=async()=>{
    ||bank.items.length!==78||bank.help.length!==36
    ||new Set(bank.items.map(x=>x.item_id)).size!==78)throw Error("Source snapshot mismatch");
   root.replaceChildren();
-  if(root.hasAttribute("data-g12-chi-hub"))startHub(root,bank);
+  if(root.hasAttribute("data-g12-chi-hub")){startHub(root,bank);if(!window.THPT_G12_GOLDEN_HUB?.mount(root,bank,{chapter:"I"}))throw Error("Golden R4 modal unavailable");}
   else if(root.hasAttribute("data-g12-chi-selfcheck"))startSelfCheck(root,bank);
   root.dataset.g12ChiReady="true";
   const hash=decodeURIComponent(location.hash.slice(1));

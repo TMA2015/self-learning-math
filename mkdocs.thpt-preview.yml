@@ -234,6 +234,7 @@ extra_css:
   - assets/stylesheets/math-knowledge-r21-final-polish.css
   - assets/stylesheets/math-knowledge-r30-consistency.css
   - assets/stylesheets/thpt-r4-preview.css
+  - assets/stylesheets/thpt-g12-golden-formative-modal-v1.css
   - assets/stylesheets/thpt-g11-supplement-p99-p109-r00.css
   - assets/stylesheets/thpt-g12-chi-b01-b05-r00.css
   - assets/stylesheets/thpt-g12-chii-b06-b08-r00.css
@@ -301,6 +302,7 @@ extra_javascript:
   - assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js
   - assets/javascripts/thpt-g11-chix-b31-b33-source-locked-formative-r00.js
   - assets/javascripts/thpt-r4-preview.js
+  - assets/javascripts/thpt-g12-golden-formative-modal-v1.js
   - assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js
   - assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js
   - assets/javascripts/thpt-g11-supplement-p99-p109-r00.js
