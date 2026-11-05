@@ -207,28 +207,11 @@ function mount(root,bank,{chapter}={}){
   items.forEach((q,i)=>byItem.set(anchor(q.item_id),{entry,i}));
   card.append(copy,button);old.replaceWith(card);
  }
- // Make every existing chapter D6 accordion self-explanatory instead of
- // "phần kiến thức 1, 2..." without the Core/practice question relationship.
- for(const h of bank.help||[]){
-  const originalCore=original.get(h.return_item);
-  if(!originalCore)continue;
-  const a="#"+anchor(h.return_item);
-  const section=[...root.querySelectorAll("details")].find(d=>
-   [...d.querySelectorAll(':scope > a[href^="#"]')].some(link=>link.getAttribute("href")===a));
-  if(!section)continue;
-  const summary=section.querySelector(":scope > summary");
-  if(!summary)continue;
-  const practice=original.get(h.practice_item);
-  const short=id=>{const m=String(id||"").match(/-([CPAW])(\d+)$/i);return m?"câu "+Number(m[2]):"câu liên quan"};
-  const lesson=Number(String(h.lesson_id||originalCore.lesson_id||"").replace(/\D/g,""));
-  const retRole=/CORE/.test(originalCore.role||originalCore.placement||"")?"Core ":"";
-  summary.textContent="Hướng dẫn khi gặp khó khăn · Bài "+lesson+" · "+retRole+short(h.return_item)+(practice?" / Luyện tập "+short(h.practice_item):"");
-  section.dataset.g12GoldenD6Outcome=h.outcome_id;
- }
- for(const panel of root.querySelectorAll('details[class*="-hub-help"]')){
-  const wrap=panel.querySelector(":scope > div");
-  if(wrap)wrap.prepend(el("p","thpt-g12-golden-d6-intro","Dùng khi chưa làm được câu hoặc sau khi tự đối chiếu. Chọn hướng dẫn đúng phần kiến thức; Quay lại Core / Luyện tập lại sẽ mở câu liên quan."));
- }
+ // Five-step D6 lives in the per-question Golden dialog. The earlier bulk
+ // chapter-level help index was an unapproved second UI; keep its original
+ // canonical data in bank.help, but remove duplicated on-page accordion markup.
+ // Item-ID deep links continue to resolve through the existing modal mapping.
+ for(const panel of root.querySelectorAll('details[class*="-hub-help"]'))panel.remove();
  if(seen.size!==expected[chapter][1])throw Error("G12 Golden: missing source items "+seen.size);
  const follow=()=>{
   const hash=decodeURIComponent(location.hash.slice(1)).toLowerCase();
