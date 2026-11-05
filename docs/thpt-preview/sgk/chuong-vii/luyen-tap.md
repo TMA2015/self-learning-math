@@ -57,5 +57,4 @@
 </div>
 <p><a href="../../../thu-vien/tu-luan-chuong-vii/"><strong>✍️ Thư viện 4 bài tự luận Chương VII</strong></a> · tự giải rồi mới mở lời giải/rubric.</p>
 <p class="thpt-r4-footnote">Tâm sai là kiến thức <strong>nâng cao tự chọn</strong>, không thuộc Core bắt buộc. Luyện tập có lời giải tự mở không thay thế Tự kiểm tra độc lập.</p>
-<nav class="thpt-r4-lesson-tabs"><a href="../">Tổng quan Chương VII</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương · chưa kích hoạt</a></nav>
-</div>
+<nav class="thpt-r4-lesson-tabs"><a href="../">Tổng quan Chương VII</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav>
