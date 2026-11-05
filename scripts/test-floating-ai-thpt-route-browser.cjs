@@ -61,7 +61,7 @@ const base="http://127.0.0.1:8765/";
         assert(await dlg.locator(".floating-ai-launcher").isVisible(),"Tutor must be usable inside G12 Golden modal");
         await dlg.locator(".floating-ai-launcher").click();
         const context=await dlg.locator(".floating-ai-panel small").first().innerText();
-        assert(context.includes("Các nhóm")||context.includes("Cỡ mẫu"),
+        assert(context.includes("Đang làm bài")&&(context.includes("Các nhóm")||context.includes("Cỡ mẫu")),
           "Tutor must receive active PUBLIC Core stem instead of hidden answers or draft");
         assert(await dlg.locator(".floating-ai-panel").isVisible(),"Tutor panel opens from native G12 modal");
         await dlg.locator(".floating-ai-close").click();
