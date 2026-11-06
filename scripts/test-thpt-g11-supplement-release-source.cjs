@@ -88,7 +88,7 @@ for(const fig of bank.figures){
  assert.equal(sha(originalPath),figMap[fig.figure_id],"approved original SVG blob");
 }
 const dir="docs/thpt-preview/sgk/lop-11/bo-sung/";
-const pages=["index","trai-nghiem-e01","trai-nghiem-e02","on-tap-cuoi-nam","luyen-tap","tu-luan","tu-kiem-tra"];
+const pages=["index","trai-nghiem-e01","trai-nghiem-e02","on-tap-cuoi-nam","luyen-tap","tu-luan","tu-kiem-tra","luyen-tap-trai-nghiem","luyen-tap-on-tap-cuoi-nam","tu-kiem-tra-trai-nghiem"];
 for(const p of pages)assert(fs.existsSync(dir+p+".md"),"Missing SGK supplement page "+p);
 const quiz=read(dir+"tu-kiem-tra.md");assert(quiz.includes('data-g11-supp-view="SELFCHECK"'));
 const js=read("docs/assets/javascripts/thpt-g11-supplement-p99-p109-r00.js");
@@ -114,11 +114,25 @@ assert(!home.includes("Bổ sung SGK"),"No technical package label in student he
 for(const [p,view] of [["trai-nghiem-e01.md","E01"],["trai-nghiem-e02.md","E02"],["on-tap-cuoi-nam.md","YEAR"]]){
  assert(read(dir+p).includes('data-g11-supp-view="'+view+'"'),"Original course view remains "+view);
 }
-assert(js.includes("const written=bank.written.filter(q=>groupOf(q)===topic)"),"Written shares original bank");
-assert(js.includes('const practiceCards=practiceItems.map((q,i)=>exerciseCard(q,"formative",i+1))')&&js.includes("practiceCards.forEach(card=>practiceSection.append(card))")&&js.includes('compactDeck(practiceSection,practiceCards,"Luyện tập và vận dụng")'),"Inline Practice uses original bank with one-question layout");
-assert(js.includes('const coreCards=core.map((q,i)=>exerciseCard(q,"formative",i+1))')&&js.includes("coreCards.forEach(card=>coreSection.append(card))")&&js.includes('compactDeck(coreSection,coreCards,"Core")'),"Inline Core uses original bank with one-question layout");
-assert(js.includes('a.href="#"+idAnchor(h.return_item)'),"D6 same page return link");
+// OWNER DELTA_A_UI: Knowledge pages remain approved PED/figures with no inline questions.
+for(const [p,view]of [["luyen-tap-trai-nghiem.md","EXP_PRACTICE"],
+                       ["luyen-tap-on-tap-cuoi-nam.md","YEAR_PRACTICE"],
+                       ["tu-kiem-tra-trai-nghiem.md","SELFCHECK_EXP"]])
+ assert(read(dir+p).includes('data-g11-supp-view="'+view+'"'),"New independent learning route "+view);
+assert(js.includes('bank.written.filter(q=>groupOf(q)===topic)'),"One canonical original Written/Anchor bank");
+for(const token of ["const practiceHub=","thpt-r4-practice-card-grid","thpt-r4-practice-card",
+                    "thpt-r4-practice-open","g11-supp-deck-jump","SELFCHECK_EXP",
+                    "EXP_PRACTICE","YEAR_PRACTICE"])
+ assert(js.includes(token),"Missing Golden practice UI "+token);
+assert(!js.includes("section.append(coreSection)")&&!js.includes("section.append(practiceSection)")
+    &&!js.includes("section.append(writtenSection)"),"Knowledge pages must not stack exercise decks");
+assert(js.includes('+"#"+idAnchor(h.return_item)'),"D6 link must return to exact question in separate hub");
+const exp=bank.items.filter(q=>/G11-SUPP-E0[12]-/.test(q.item_id));
+assert.equal(exp.length,21,"21 experience PUBLIC formative items");
+assert.equal(bank.items.length-exp.length,31,"31 year-end PUBLIC formative items");
+assert.equal(bank.written.filter(q=>/G11-SUPP-E0[12]-/.test(q.item_id)).length,6,"6 experience original Written");
+assert.equal(bank.written.length-6,10,"10 year-end original Written");
 assert(js.includes("card.dataset.canonicalItem=q.item_id"),"Canonical IDs remain on client elements");
 assert(!js.includes('mk("h3","",q.item_id)'),"Hide author technical IDs from learners");
 
-console.log("PASS G11 SGK pp99–109 source lock & release: 22 outcomes, 52 canonical formative, 16 shared Written/Anchor, 28 examples, 8 exact SVG, 23 D6, 7 paths, Q16 public-only no storage.");
+console.log("PASS G11 source lock: 52 formative, 16 Written/Anchor, 22 outcomes split 11+11; 2 Golden end-unit paths, 8 byte-identical SVG, Q16 no Mastery.");
