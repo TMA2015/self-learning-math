@@ -233,6 +233,7 @@
  function initChapterPracticeCards(){
   const root=document.querySelector("[data-thpt-practice-hub]");
   if(!root||root.dataset.thptModalReady==="1")return;
+  const golden=window.THPT_GOLDEN_RUNTIME;if(!golden)throw Error("GOLDEN_RUNTIME_MISSING: SGK G10/G11");
   root.dataset.thptModalReady="1";
   const demoSets={
    "b15-core":[
@@ -275,10 +276,7 @@
   const modalBody=dlg.querySelector("[data-thpt-modal-body]");
   const modalTitle=dlg.querySelector("[data-thpt-modal-title]");
   let returnFocus=null;
-  const close=()=>dlg.close();
-  dlg.querySelector("[data-thpt-modal-close]").addEventListener("click",close);
-  dlg.addEventListener("click",event=>{if(event.target===dlg)close()});
-  dlg.addEventListener("close",()=>returnFocus?.focus());
+  const lifecycle=golden.bindDialog({dialog:dlg,closeButton:dlg.querySelector("[data-thpt-modal-close]"),getReturnFocus:()=>returnFocus});
   const showDemo=(items)=>{
    let index=0;const selections=items.map(()=>null),checked=items.map(()=>false);
    modalBody.replaceChildren();
@@ -291,7 +289,7 @@
    prev.textContent="← Câu trước";next.textContent="Câu tiếp →";prev.type=next.type="button";
    const render=()=>{
     progress.textContent="Câu "+(index+1)+" / "+items.length+" · Tự luyện";
-    numbers.replaceChildren();items.forEach((_,n)=>{const b=document.createElement("button");b.type="button";b.textContent="Câu "+(n+1);b.className=n===index?"active":"";b.setAttribute("aria-current",String(n===index));b.addEventListener("click",()=>{index=n;render()});numbers.append(b)});
+    golden.renderNav({container:numbers,count:items.length,index,onSelect:n=>{index=n;render()}});
     question.replaceChildren();
     const p=document.createElement("h3");p.textContent=items[index][0];question.append(p);
     const form=document.createElement("form"),group=document.createElement("fieldset");group.className="thpt-r4-modal-options";
@@ -304,8 +302,7 @@
     question.append(form);
     prev.disabled=index===0;next.disabled=index===items.length-1;
    };
-   prev.addEventListener("click",()=>{if(index>0){index--;render()}});
-   next.addEventListener("click",()=>{if(index<items.length-1){index++;render()}});
+   golden.bindPager({prev,next,getIndex:()=>index,getCount:()=>items.length,go:n=>{index=n;render()}});
    footer.append(prev,next);modalBody.append(progress,numbers,question,footer);
    render();
   };
@@ -438,12 +435,7 @@
     void window.THPTFormativeExposure?.record(item.item_id,exposureRole,"QUESTION_SHOWN");
     head.textContent="Câu "+(index+1)+" / "+items.length+
       " · Luyện tập tương tác, không ghi điểm";
-    for(let i=0;i<items.length;i++){
-     const button=document.createElement("button");button.type="button";
-     button.textContent="Câu "+(i+1);button.className=i===index?"active":"";
-     button.setAttribute("aria-current",String(i===index));
-     button.addEventListener("click",()=>{index=i;render()});tabs.append(button);
-    }
+    golden.renderNav({container:tabs,count:items.length,index,onSelect:i=>{index=i;render()}});
     const prompt=document.createElement("h3");reviewedText(prompt,item.stem,item);
     // Core/Practice is interactive FORMATIVE learning, not a Readiness test.
     // Only source-reviewed options + answerKey may be checked automatically.
@@ -592,8 +584,7 @@
     else window.addEventListener("load",typesetCard,{once:true});
     prev.disabled=index===0;next.disabled=index===items.length-1;
    };
-   prev.addEventListener("click",()=>{if(index>0){index--;render()}});
-   next.addEventListener("click",()=>{if(index<items.length-1){index++;render()}});
+   golden.bindPager({prev,next,getIndex:()=>index,getCount:()=>items.length,go:i=>{index=i;render()}});
    footer.append(prev,next);root.append(head,tabs,card,footer);
    modalBody.replaceChildren(root);
    render();
@@ -670,7 +661,7 @@
     dlg.querySelector("[data-thpt-modal-lesson-number]").textContent=lesson;
     dlg.querySelector(".thpt-r4-modal-meta").textContent=isG11?("LỚP 11 · CHƯƠNG "+(Number(lesson)<=4?"I":Number(lesson)<=7?"II":Number(lesson)<=9?"III":Number(lesson)<=14?"IV":Number(lesson)<=17?"V":Number(lesson)<=21?"VI":Number(lesson)<=27?"VII":Number(lesson)<=30?"VIII":"IX")):"LỚP 10 · CHƯƠNG "+(Number(lesson)<=2?"I":Number(lesson)<=4?"II":Number(lesson)<=6?"III":Number(lesson)<=11?"IV":Number(lesson)<=14?"V":Number(lesson)>=26?"IX":Number(lesson)>=23?"VIII":Number(lesson)>=19?"VII":"VI");
     modalTitle.textContent=role+" · Bài "+lesson+". "+(isG11?g11LessonTitle[lesson]:lessonTitle[lesson]);
-    modalBody.textContent="Đang mở nội dung…";if(!dlg.open)dlg.showModal();
+    modalBody.textContent="Đang mở nội dung…";lifecycle.open(button);
     const activeBank=isG11?(Number(lesson)<=2?window.THPT_G11_CHI_REVIEWED_FORMATIVE:Number(lesson)<=4?window.THPT_G11_CHI_B03_B04_REVIEWED_FORMATIVE:Number(lesson)<=7?window.THPT_G11_CHII_REVIEWED_FORMATIVE:Number(lesson)<=9?window.THPT_G11_CHIII_REVIEWED_FORMATIVE:Number(lesson)<=14?window.THPT_G11_CHIV_REVIEWED_FORMATIVE:Number(lesson)<=17?window.THPT_G11_CHV_REVIEWED_FORMATIVE:Number(lesson)<=21?window.THPT_G11_CHVI_REVIEWED_FORMATIVE:Number(lesson)<=27?window.THPT_G11_CHVII_REVIEWED_FORMATIVE:Number(lesson)<=30?window.THPT_G11_CHVIII_REVIEWED_FORMATIVE:window.THPT_G11_CHIX_REVIEWED_FORMATIVE):Number(lesson)<=2?window.THPT_CHI_REVIEWED_FORMATIVE:Number(lesson)<=4?window.THPT_CHII_REVIEWED_FORMATIVE:Number(lesson)<=6?window.THPT_CHIII_REVIEWED_FORMATIVE:Number(lesson)<=8?window.THPT_CHIV_B07_B08_REVIEWED_FORMATIVE:Number(lesson)<=11?window.THPT_CHIV_B09_B11_REVIEWED_FORMATIVE:Number(lesson)===12?window.THPT_CHV_B12_REVIEWED_FORMATIVE:Number(lesson)<=14?window.THPT_CHV_B13_B14_REVIEWED_FORMATIVE:Number(lesson)>=26?window.THPT_CHIX_REVIEWED_FORMATIVE:Number(lesson)>=23?window.THPT_CHVIII_REVIEWED_FORMATIVE:Number(lesson)>=19?window.THPT_CHVII_REVIEWED_FORMATIVE:reviewed;
     if(activeBank?.validate().valid){
      const items=activeBank.forLesson(lesson,parts[2]);
