@@ -87,3 +87,16 @@ The 24 **Part III** question positions, math figures/formulas and locally render
 - Re-check G10 B24 accepted authoring source: permutation/adjacent-block first try, method choice, and D6 correction **already exist**. Only composite `ordered seating with multiple gap constraints` remains `METHOD_TRANSFER_PENDING`, **not** a missing-knowledge claim.
 
 Full read-only evidence and reasons: [R04 official key + external PDF QA](OFFICIAL_2026_KEY_AND_EXTERNAL_MOCK_SOURCE_QA_R04.md). This is corpus **quality control**, not a curriculum standard change or new Written item.
+
+## R05 discovery — ưu tiên đề thi **cuối học kỳ II lớp 11**, trường phổ thông Hà Nội (2025–2026)
+
+| EXAM_SOURCE_ID | School, date & scope | Public discovery record | Evidence state and next gate |
+|---|---|---|---|
+| `HN-TNT-2026-HK2-G11` | THPT **Trần Nhân Tông**, Hà Nội, khảo sát học kỳ II Toán 11, 2025–2026, mã **115** (văn bản thứ cấp nêu đề có 3 trang) | Toanmath, post **04/05/2026**: https://toanmath.com/2026/05/de-hoc-ki-2-toan-11-nam-2025-2026-truong-thpt-tran-nhan-tong-ha-noi.html ; independent secondary HTML transcription https://thuviennhatruong.edu.vn/thuviendientu_moi/sach-338267-de-thi-hoc-ki-2-toan-11-nam-2025-2026-truong-thpt-tran-nhan-tong-ha-noi | `SECONDARY_HTML_QUESTION_TEXT_DISCOVERED`. Visible examples include school soccer draw into 3 groups, derivative/velocity application, frustum container volume, exponential growth to a strict savings threshold and spatial distance. **Original PDF pages + school-issued signature/answer rubric not verified**, source question numbers beyond snippets not mapped |
+| `HN-VNBL-2026-HK2-G11` | THPT **Việt Nam – Ba Lan**, Hà Nội, kiểm tra học kỳ II Toán 11, 2025–2026 | Toanmath, post **13/05/2026**: https://toanmath.com/2026/05/de-hoc-ki-2-toan-11-nam-2025-2026-truong-thpt-viet-nam-ba-lan-ha-noi.html | `SECONDARY_EXAM_METADATA_DISCOVERED`. Listing claims PDF with marking guidance but **question-by-question content not fetched/verified**. Do not use to conclude methods or absence |
+
+**Source quality and priority:**
+- These are *ordinary-school semester tests* (G11), distinct from four **G12 graduation mock** papers already rendered in R03. They are nearer the owner's core benchmark than specialist-school tests.
+- The publisher/link is a *secondary mirror*, **not** verification the school released the same version. Where the browser returns `Cache miss`, record `FETCH_BLOCKED` rather than escalating to `CORPUS_VERIFIED`.
+- The older G10/G12 HKI Vạn Xuân PDFs likewise remain text-located/visual-HOLD; they are not elevated by these G11 discoveries.
+- No derivative, probability, 3D or financial **coverage verdict** is issued from a title/preview. The next unit of work is full PDF pages and school source audit.
