@@ -67,6 +67,7 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/lop-11/bo-sung/";
    assert.equal(await modal.locator(".g11-supp-exercise:visible h3.g11-supp-question-stem").count(),1,"Tutor source must be public stem only");
    assert.equal(await modal.locator(".g11-supp-deck-number").count(),5);
    assert.equal(await modal.evaluate(el=>parseFloat(getComputedStyle(el).fontSize)),16,"Readable G11 modal 16px");
+   assert(await modal.locator(".g11-supp-deck-number").first().evaluate(el=>parseFloat(getComputedStyle(el).fontSize)>=14),"Golden question buttons must be legible");
    let first=modal.locator(".g11-supp-exercise:visible");
    assert.equal(await first.locator(".g11-supp-solution:not([hidden])").count(),0);
    await first.locator(".g11-supp-submit").click();
