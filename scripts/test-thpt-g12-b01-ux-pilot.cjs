@@ -15,9 +15,10 @@ const figure=fs.readFileSync(figurePath,"utf8");
 const blobSHA=data=>crypto.createHash("sha1")
   .update(Buffer.from("blob "+Buffer.byteLength(data,"utf8")+"\0","utf8"))
   .update(data,"utf8").digest("hex");
-const sourceSHA="7fc40081bb3f1e104e38e2c86a5bc1e8217e77cc";
+const sourceSHA="7fc40081bb3f1e104e38e2c86a5bc1e8217e77cc"; // original frozen A/B snapshot
+const currentUiSHA="64f6a142a88e8c4dd63dff3f7d2220787fcdec5c"; // main approved DELTA_A_UI snapshot
 const figureSHA="e2696224533994826104e6c505d9dab26fc0a2e2";
-assert.equal(blobSHA(source),sourceSHA,"Original canonical B01 source must remain locked");
+assert([sourceSHA,currentUiSHA].includes(blobSHA(source)),"B01 source must match an explicitly locked historical/production snapshot");
 assert.equal(blobSHA(figure),figureSHA,"Original academic SVG must remain locked");
 function embedded(id) {
  const exp=new RegExp('<script id="'+id+'" type="application/json">([\\s\\S]*?)<\\/script>');
@@ -25,7 +26,14 @@ function embedded(id) {
  assert(match,"missing embedded canonical "+id);
  return JSON.parse(match[1]);
 }
-assert.equal(embedded("canonical-source"),source,"Embedded pilot copy must exactly equal original Markdown");
+const historical=embedded("canonical-source");
+assert.equal(blobSHA(historical),sourceSHA,"Embedded A/B snapshot MUST equal original immutable source");
+const academic=text=>{const start=text.indexOf("## 1. Vì sao cần học?");const end=text.indexOf("## 7.",start);assert(start>0&&end>start,"Academic §1–§6 headings");return text.slice(start,end)};
+assert.equal(academic(source),academic(historical),"Academic §1–§6 must be byte-identical; never waive math/pedagogy delta");
+if(blobSHA(source)===currentUiSHA){
+ assert(source.includes("trang Core và Luyện tập của Chương I"),"Approved relocation in live source");
+ assert(historical.includes("data-g12-chi-lesson"),"Historical prototype retains old UI footer");
+}
 assert.equal(embedded("canonical-figure"),figure,"Embedded pilot SVG must equal original SVG");
 const scripts=[...html.matchAll(/<script>([\s\S]*?)<\/script>/g)];
 assert.equal(scripts.length,1,"Exactly one client-side pilot script");
