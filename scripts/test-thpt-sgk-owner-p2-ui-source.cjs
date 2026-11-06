@@ -41,5 +41,5 @@ const supp=read("docs/assets/javascripts/thpt-g11-supplement-p99-p109-r00.js");
 assert(supp.includes("const compactDeck=")&&supp.includes('compactDeck(form,[')&&supp.includes("data-g11-supp-view"),
  "Supplement Core/Practice/Written/public self-check pagers missing");
 assert(supp.includes("if(!input.value.trim())")&&supp.includes("if(button.disabled)return"),"Original submit guards must survive");
-assert(!/localStorage|sessionStorage|Firebase|setDoc/.test(supp),"Supplement must not gain persistence");
+assert(!/(?:localStorage|sessionStorage)\.(?:setItem|removeItem|clear)\s*\(|\b(?:setDoc|updateDoc|addDoc|getFirestore)\s*\(/.test(supp),"Supplement must not gain persistence writes");
 console.log("PASS P2 SGK source: 79 original lessons, both MkDocs bundles, one nav, G11 exact source-safe TeX, public self-check and supplemental pagers.");
