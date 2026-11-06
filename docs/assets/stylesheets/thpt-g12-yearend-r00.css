@@ -11,3 +11,7 @@
 .g12-ye-question .arithmatex{overflow-wrap:anywhere}
 .g12-ye-reveal p{line-height:1.72}
 @media(max-width:590px){.g12-ye-option{padding:9px}.g12-ye-question{padding:12px}.g12-ye-end-nav{gap:4px}.g12-ye-end-nav .g12-xp-jump-button{min-width:40px}}
+
+/* Use the same horizontal numbered question strip as G11 Golden end-units. */
+.g12-ye-dialog .g12-xp-jump{flex-wrap:nowrap;overflow-x:auto;max-width:100%;scrollbar-width:thin}
+.g12-ye-dialog .g12-xp-jump-button{flex:0 0 auto}
