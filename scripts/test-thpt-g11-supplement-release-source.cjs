@@ -124,6 +124,8 @@ for(const token of ["const practiceHub=","thpt-r4-practice-card-grid","thpt-r4-p
                     "thpt-r4-practice-open","g11-supp-deck-jump","SELFCHECK_EXP",
                     "EXP_PRACTICE","YEAR_PRACTICE"])
  assert(js.includes(token),"Missing Golden practice UI "+token);
+for(const token of ["dialog.showModal()","document.body.append(dialog)","topicTabs(root,sections,","topicTabs(root,entries,","aria-haspopup"])assert(js.includes(token),"Missing real Golden modal or horizontal topic tabs "+token);
+assert(!js.includes("section.append(panel);"),"Forbidden inline panel below Golden card");
 assert(!js.includes("section.append(coreSection)")&&!js.includes("section.append(practiceSection)")
     &&!js.includes("section.append(writtenSection)"),"Knowledge pages must not stack exercise decks");
 assert(js.includes('+"#"+idAnchor(h.return_item)'),"D6 link must return to exact question in separate hub");
@@ -133,6 +135,8 @@ assert.equal(bank.items.length-exp.length,31,"31 year-end PUBLIC formative items
 assert.equal(bank.written.filter(q=>/G11-SUPP-E0[12]-/.test(q.item_id)).length,6,"6 experience original Written");
 assert.equal(bank.written.length-6,10,"10 year-end original Written");
 assert(js.includes("card.dataset.canonicalItem=q.item_id"),"Canonical IDs remain on client elements");
+assert(js.includes("card.dataset.thptCanonicalItem=q.item_id"),"One PUBLIC item identity for modal Tutor context");
+assert(js.includes('mk("h3","g11-supp-question-stem")'),"Gemini context uses a PUBLIC active question h3");
 assert(!js.includes('mk("h3","",q.item_id)'),"Hide author technical IDs from learners");
 
 console.log("PASS G11 source lock: 52 formative, 16 Written/Anchor, 22 outcomes split 11+11; 2 Golden end-unit paths, 8 byte-identical SVG, Q16 no Mastery.");

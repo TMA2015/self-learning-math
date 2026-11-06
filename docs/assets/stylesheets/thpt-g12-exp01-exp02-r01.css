@@ -64,3 +64,15 @@
  .g12-xp-end-controls{gap:8px}
  .g12-xp-end-controls .g12-xp-submit{flex:1 1 100%}
 }
+
+
+/* Dialogs are mounted under body, outside .md-typeset: prevent tiny UA font. */
+.g12-xp-dialog{font-family:var(--md-text-font-family,sans-serif);font-size:16px;line-height:1.65}
+.g12-xp-dialog .g12-xp-counter{font-size:14px;line-height:1.5}
+.g12-xp-dialog .g12-xp-modal-head h2{font-size:clamp(20px,2.2vw,25px);line-height:1.35}
+.g12-xp-dialog .g12-xp-question-stem{font-size:clamp(18px,2vw,21px);line-height:1.65}
+.g12-xp-dialog .g12-xp-question-number{font-size:14px}
+.g12-xp-dialog .g12-xp-label{font-size:15px}
+.g12-xp-dialog .g12-xp-jump-button{font-size:15px}
+.g12-xp-dialog .g12-xp-submit,.g12-xp-dialog .g12-xp-prev,.g12-xp-dialog .g12-xp-next{font-size:15px}
+.g12-xp-dialog .g12-xp-reveal,.g12-xp-dialog .g12-xp-end-message{font-size:16px}

@@ -52,6 +52,8 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/lop-12/bo-sung/";
    await dialog.waitFor({state:"visible"});
    assert.equal(await dialog.locator("[data-thpt-canonical-item]").count(),1,"Golden one question per modal");
    assert.equal(await dialog.locator("h3.g12-xp-question-stem").count(),1,"Only active public question stem to AI");
+   assert(await dialog.evaluate(el=>parseFloat(getComputedStyle(el).fontSize)>=16),"EXP Golden modal 16px");
+   assert(await dialog.locator("h3.g12-xp-question-stem").evaluate(el=>parseFloat(getComputedStyle(el).fontSize)>=18),"EXP question text 18px or larger");
    assert.equal(await dialog.locator(".g12-xp-jump-button").count(),5);
    assert.equal(await dialog.locator(".g12-xp-reveal").innerText(),"","No solution before formative Submit");
    await dialog.locator("textarea.g12-xp-input").fill("Em tính đạo hàm để tự so sánh.");

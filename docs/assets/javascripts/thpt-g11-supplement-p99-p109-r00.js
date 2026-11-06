@@ -215,10 +215,54 @@ const compactDeck=(holder,cards,label)=>{
  });
  show();
 };
+/* Horizontal single-active-topic buttons; original material stays canonical. */
+const topicTabs=(root,entries,prefix,label)=>{
+ if(entries.length<2)return{activate:()=>{}};
+ const nav=mk("nav","g11-supp-topic-tabs");nav.setAttribute("role","tablist");
+ nav.setAttribute("aria-label",label);
+ const buttons=new Map();
+ const activate=(id,writeHash=false)=>{
+  const current=entries.find(e=>e.id===id);if(!current)return;
+  for(const e of entries){
+   const selected=e.id===id,button=buttons.get(e.id);
+   e.section.hidden=!selected;
+   button.setAttribute("aria-selected",String(selected));
+   button.classList.toggle("is-active",selected);button.tabIndex=selected?0:-1;
+  }
+  if(writeHash)history.replaceState(null,"","#"+prefix+id.toLowerCase());
+  typeset(current.section);
+ };
+ for(const [i,e]of entries.entries()){
+  const btn=mk("button","g11-supp-topic-tab",String(i+1)+". "+(topicName[e.id]||e.id));
+  btn.type="button";btn.id="g11-supp-topic-button-"+e.id.toLowerCase();
+  btn.setAttribute("role","tab");btn.setAttribute("aria-controls",e.section.id);
+  e.section.setAttribute("role","tabpanel");e.section.setAttribute("aria-labelledby",btn.id);
+  buttons.set(e.id,btn);nav.append(btn);
+  btn.addEventListener("click",()=>activate(e.id,true));
+  btn.addEventListener("keydown",event=>{
+   const index=event.key==="ArrowRight"?(i+1)%entries.length:
+    event.key==="ArrowLeft"?(i-1+entries.length)%entries.length:
+    event.key==="Home"?0:event.key==="End"?entries.length-1:-1;
+   if(index<0)return;
+   event.preventDefault();activate(entries[index].id,true);
+   buttons.get(entries[index].id).focus();
+  });
+ }
+ root.insertBefore(nav,entries[0].section);
+ const initial=entries.find(e=>location.hash==="#"+prefix+e.id.toLowerCase());
+ activate((initial||entries[0]).id);
+ window.addEventListener("hashchange",()=>{
+  const match=entries.find(e=>location.hash==="#"+prefix+e.id.toLowerCase());
+  if(match)activate(match.id);
+ });
+ return{activate};
+};
+
 const course=(root,bank,view)=>{
  miniNav(root);
  learningPath(root);
  const tracks=view==="YEAR"?bank.year:[bank.experience.find(x=>x.id===view)];
+ const sections=[];
  for(const track of tracks){
   if(!track)continue;
   const topic=view==="YEAR"?track.id:view;
@@ -256,8 +300,9 @@ const course=(root,bank,view)=>{
     topic==="E01"?"../trai-nghiem-e02/":"../tu-kiem-tra-trai-nghiem/";
   if(view==="YEAR"&&topic===bank.year[bank.year.length-1]?.id)next.href="../tu-kiem-tra/";
   section.append(next);
-  root.append(section);
+  root.append(section);sections.push({id:topic,section});
  }
+ if(view==="YEAR")topicTabs(root,sections,"g11-supp-","Mười chủ điểm kiến thức cuối năm");
  typeset(root);
 };
 const submitFormative=(card,q,kind)=>{
@@ -276,15 +321,23 @@ const submitFormative=(card,q,kind)=>{
  });
  card.append(input,button,status,result);
 };
-const exerciseCard=(q,kind,number=1)=>{
+const exerciseCard=(q,kind,number=1,help=null)=>{
  const card=mk("section","g11-supp-exercise");
  card.id=idAnchor(q.item_id);
  card.dataset.canonicalItem=q.item_id;
+ card.dataset.thptCanonicalItem=q.item_id; // PUBLIC single active Golden question for Gemini stem-only context
  card.dataset.exposureRole=q.role;
  card.append(mk("p","thpt-r4-eyebrow",kind==="written"?"BÀI TẬP TỰ LUẬN":
   q.role==="SGK_CORE"?"CORE":q.role==="SGK_APPLICATION"?"VẬN DỤNG":"LUYỆN TẬP"));
- card.append(mk("h4","",kind==="written"?"Bài tự luận "+number:"Câu "+number),paragraph(q.stem));
+ const publicStem=mk("h3","g11-supp-question-stem");addText(publicStem,q.stem);
+ card.append(mk("h4","",kind==="written"?"Bài tự luận "+number:"Câu "+number),publicStem);
  submitFormative(card,q,kind);
+ if(help){
+  const details=mk("details","g11-supp-help g11-supp-modal-help");
+  details.append(mk("summary","","Khi gặp khó khăn · Hướng dẫn D6"));
+  const list=mk("ol");for(const step of help.steps){const li=mk("li");addText(li,step);list.append(li)}
+  details.append(list);card.append(details);
+ }
  return card;
 };
 const practice=(root,bank,kind)=>{
@@ -306,70 +359,87 @@ const practice=(root,bank,kind)=>{
 };
 /* Existing G11 Golden R4 2-column lesson/card/button UI with one-question
  * numbered deck per PUBLIC original role. Multiple placements, no new IDs. */
+/* RELEASE Golden fix: native single-question dialog, no inline role panels. */
 const practiceHub=(root,bank,unit)=>{
  miniNav(root);
  const experience=unit==="EXPERIENCE";
  const topics=experience?["E01","E02"]:bank.year.map(x=>x.id);
  header(root,experience?"SGK TRANG 99–104 · HOẠT ĐỘNG THỰC HÀNH":"SGK TRANG 105–109 · ÔN TẬP CUỐI NĂM",
    experience?"Core, Luyện tập, Vận dụng và Tự luận · Hai hoạt động":"Core, Luyện tập, Vận dụng và Tự luận · Mười chủ điểm");
- root.append(paragraph("Chọn thẻ đúng vai trò rồi bấm nút số câu trên một hàng. Tự làm và nộp từng câu mới xem đối chiếu; tự luận dùng rubric /4. Các nhóm Vận dụng chỉ xuất hiện khi có câu gốc, không tự tạo thêm bài. Không ghi điểm hoặc Skill Mastery."));
- const panels=[];
+ root.append(paragraph("Chọn chủ điểm và thẻ Core, Luyện tập, Vận dụng hoặc Tự luận. Mỗi lần một câu trong cửa sổ Golden; tự làm rồi nộp để đối chiếu. Không ghi điểm hoặc Skill Mastery."));
+ const dialog=mk("dialog","thpt-r4-practice-dialog g11-supp-dialog");
+ dialog.setAttribute("aria-label","Luyện tập Toán 11");
+ const top=mk("header","thpt-r4-modal-top g11-supp-modal-head");
+ const heading=mk("div");
+ const title=mk("h2","","Core và Luyện tập");
+ heading.append(mk("p","thpt-r4-modal-meta","LỚP 11 · TỰ LUYỆN · KHÔNG GHI ĐIỂM"),title);
+ const close=mk("button","g11-supp-modal-close","Đóng ×");close.type="button";
+ close.setAttribute("aria-label","Đóng cửa sổ bài tập");
+ top.append(heading,close);
+ const stage=mk("div","thpt-r4-modal-main g11-supp-modal-main");
+ dialog.append(top,stage);document.body.append(dialog);
+ let current=null,tabs=null;const panels=[],entries=[];
+ close.addEventListener("click",()=>dialog.close());
+ dialog.addEventListener("close",()=>{
+  if(current){current.button.setAttribute("aria-expanded","false");
+   current.button.focus({preventScroll:true});current=null}
+ });
+ const openPanel=entry=>{
+  if(tabs)tabs.activate(entry.topic);
+  if(current)current.button.setAttribute("aria-expanded","false");
+  current=entry;entry.button.setAttribute("aria-expanded","true");
+  title.textContent=(experience?"Hoạt động thực hành":"Ôn tập cuối năm")+" · "+(topicName[entry.topic]||entry.topic)+" · "+entry.label;
+  stage.replaceChildren(entry.panel);
+  if(!dialog.open)dialog.showModal();
+  typeset(stage);
+ };
  for(const [i,topic]of topics.entries()){
-  const title=topicName[topic]||topic;
   const section=mk("section","thpt-r4-practice-lesson g11-supp-golden-lesson");
   section.id="g11-supp-group-"+topic.toLowerCase();
   section.dataset.thptGrade="11";
-  const head=mk("div","thpt-r4-practice-lesson-header"),info=mk("div");
+  const header=mk("div","thpt-r4-practice-lesson-header"),info=mk("div");
   info.append(mk("p","thpt-r4-practice-class",experience?"Lớp 11 · Hoạt động thực hành":"Lớp 11 · Ôn tập cuối năm"),
-    mk("h2","",title));
-  head.append(mk("span","thpt-r4-lesson-number",String(i+1).padStart(2,"0")),info);
+    mk("h2","",topicName[topic]||topic));
+  header.append(mk("span","thpt-r4-lesson-number",String(i+1).padStart(2,"0")),info);
   const grid=mk("div","thpt-r4-practice-card-grid");
-  section.append(head,grid);
-  const definitions=[
+  section.append(header,grid);
+  const roles=[
    ["SGK_CORE","Core",topicFor(topic,bank).filter(q=>q.role==="SGK_CORE"),"formative"],
    ["SGK_PRACTICE","Luyện tập",topicFor(topic,bank).filter(q=>q.role==="SGK_PRACTICE"),"formative"],
    ["SGK_APPLICATION","Vận dụng",topicFor(topic,bank).filter(q=>q.role==="SGK_APPLICATION"),"formative"],
    ["SGK_WRITTEN","Tự luận",bank.written.filter(q=>groupOf(q)===topic),"written"]
   ];
-  for(const [role,label,items,itemKind]of definitions){
+  for(const [role,label,items,itemKind]of roles){
    if(!items.length)continue;
    const card=mk("section","thpt-r4-practice-card");card.dataset.thptGrade="11";
    const copy=mk("div");
    copy.append(mk("p","thpt-r4-practice-card-kind",label),
-    mk("strong","",title+" · "+label),
+    mk("strong","",(topicName[topic]||topic)+" · "+label),
     mk("small","",items.length+" câu · "+(role==="SGK_WRITTEN"?"Rubric /4":"Một câu mỗi lần")+" · Tự đối chiếu"));
    const button=mk("button","thpt-r4-practice-open","✎ Mở "+label);
    button.type="button";button.dataset.g11SuppOpen=topic+"-"+role;
-   button.setAttribute("aria-expanded","false");
+   button.setAttribute("aria-haspopup","dialog");button.setAttribute("aria-expanded","false");
    card.append(copy,button);grid.append(card);
-   const panel=mk("div","g11-supp-role-panel");panel.hidden=true;
+   const panel=mk("section","g11-supp-role-panel");
    panel.dataset.g11SuppTopic=topic;panel.dataset.g11SuppRole=role;
-   const questions=items.map((q,n)=>exerciseCard(q,itemKind,n+1));
+   const questions=items.map((q,n)=>exerciseCard(q,itemKind,n+1,bank.help.find(h=>h.return_item===q.item_id)));
    questions.forEach(q=>panel.append(q));
    compactDeck(panel,questions,label);
-   panels.push({panel,button,section,questions});
-   button.addEventListener("click",()=>{
-    const already=!panel.hidden;
-    for(const entry of panels){
-     entry.panel.hidden=true;entry.button.setAttribute("aria-expanded","false");
-    }
-    if(!already){
-     panel.hidden=false;button.setAttribute("aria-expanded","true");
-     panel.scrollIntoView({block:"nearest"});
-    }
-   });
-   section.append(panel);
+   const entry={topic,label,role,button,panel,questions};
+   panels.push(entry);button.addEventListener("click",()=>openPanel(entry));
   }
   const back=mk("a","g11-supp-return",experience?"Về kiến thức hoạt động này":"Về kiến thức chủ điểm này");
   back.href=experience?(topic==="E01"?"../trai-nghiem-e01/":"../trai-nghiem-e02/"):
     "../on-tap-cuoi-nam/#g11-supp-"+topic.toLowerCase();
-  section.append(back);root.append(section);
+  section.append(back);root.append(section);entries.push({id:topic,section});
  }
- const hash=decodeURIComponent(location.hash.replace(/^#/,""));
- if(hash){
-  const match=panels.find(p=>p.questions.some(q=>q.id===hash));
-  if(match){match.panel.hidden=false;match.button.setAttribute("aria-expanded","true")}
- }
+ if(!experience)tabs=topicTabs(root,entries,"g11-supp-group-","Mười chủ điểm luyện tập cuối năm");
+ const restore=()=>{
+  const hash=decodeURIComponent(location.hash.replace(/^#/,""));
+  const entry=panels.find(p=>p.questions.some(q=>q.id===hash));
+  if(entry)openPanel(entry);
+ };
+ restore();window.addEventListener("hashchange",restore);
  typeset(root);
 };
 const selfCheck=(root,bank,unit)=>{
