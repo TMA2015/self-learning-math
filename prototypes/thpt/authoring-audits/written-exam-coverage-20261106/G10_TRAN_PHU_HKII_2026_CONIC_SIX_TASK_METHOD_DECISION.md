@@ -69,3 +69,53 @@ RELEASE_MERGE_DEPLOY: NO
 - **Không thao tác nhánh RELEASE**, Golden, Firebase, RD1, Topic/PASS/Readiness/Mastery, website hoặc merge/deploy.
 
 CHECKPOINT: TRANPHU_G10_HKII_REVISION_2026|PRIMARY_SCHOOL_PAGE_VERIFIED|SECONDARY_16PAGE_PDF_INDEX_TEXT|SIX_CONIC_Q_LOCI_P14_P15|SIX_OF_SIX_METHODS_CLASSIFIED|FIVE_NUMERICAL_RESULTS_INDEPENDENTLY_CHECKED|LORAN_FINAL_DIAGRAM_HOLD|TWO_HIGH_PRIORITY_DEPTH_CANDIDATES_C4_C5|TWO_MID_C1_C6|EXACT_C3_ALREADY_COVERED|NO_NEW_D4|238_IMMUTABLE|SOURCE_IMAGE_SHA_HOLD|RELEASE_NO
+
+## 5. S1 DIRECT PDF — elliptical tunnel and LORAN (SOURCE VALIDATION COMPLETE, no content edit)
+
+**Gate:** AUTHORING read-only source/depth analysis COMPLETE; original owner's S1 book PDF byte SHA and page-images VERIFIED; current public SLM B22 integrated transfer task ABSENT_IN_INSPECTED_SCOPE; Academic/PED re-verdict NOT ISSUED; new Written 0; targeted Delta C OWNER_APPROVAL_REQUIRED. Teacher-outline C5 final answer still DIAGRAM_HOLD, separate from S1 page verification.
+
+### 5.1 Original S1 books, printed pages vs PDF pages, direct visual review
+
+| Original S1 PDF from owner's KNTT TOAN 10 Drive folder | SHA256 exact bytes | Printed page = PDF page (1-based) | Verified original exercise / educational significance |
+|---|---|---|---|
+| SGK Toán 10 KNTT Tập Hai, 102 PDF pages, 21,979,142 bytes | ee8a00392e1c9fc5b213e574666cf1f8487548737e138573f28a988c640fafe6 | **printed 56 = PDF57** | **SGK 7.24**: two radio stations 300 km apart, 292,000 km/s radio speed, receiving-time difference 0.0005 s; signal from A earlier than B; model hyperbola AND identify branch. This is an actual main textbook exercise, not just optional fun facts |
+| Same original SGK | same | **printed 56–57 = PDF57–58** | LORAN information box: time-delay difference implies distance difference; a station pair determines one hyperbola branch, adding station pairs determines intersection |
+| Same original SGK | same | **printed 51 = PDF52** | Worked **Ví dụ 3**: equal distance to two disjoint circular islands implies constant difference of distances to their centres; explains how physical context creates hyperbola |
+| SBT Toán 10 KNTT Tập Hai, 143 PDF pages, 16,249,440 bytes | 3cb33690e0627b9e8ac467c23625b7feb7d05a8422293db0e1b26e44ca6a78c7 | **printed 46 = PDF47** | **SBT 7.35**: a tunnel with a **semi-ellipse** cross section, 12 m wide and 3 m high; asks whether a vehicle 2.8 m high and no more than 3 m wide can pass; includes axis diagram |
+| Same original SBT | same | **printed 50 = PDF51** | **SBT 7.61**: whispering gallery whose horizontal cross-section is a semiellipse of width 80 feet and height 24 feet; uses focal positions and conversion to metres, further applied ellipse variety |
+| Same original SBT | same | **printed 47 = PDF48** | **SBT 7.37**: lunar elliptic orbit and distance from one focus, further non-duplicate physical ellipse application |
+
+**Source custody:** both original scanned PDFs fetched from owner Drive folder KNTT TOAN 10, SHA256 independently computed on complete files and specified printed pages manually rendered/read; no OCR and no textbook scans committed to public GitHub. Do NOT confuse SGK/SBT checksum confidence with the teacher-outline PDF that still lacks original bytes/image.
+
+### 5.2 Exact S1 exercise mathematical audit (self-computed, not claimed official key)
+
+**SGK 7.24 (radio hyperbola):** O midpoint of AB, A=(-150,0), B=(150,0), unit km. Time delay makes absolute distance difference 292000*0.0005 = **146 km**, so 2a=146, **a=73**, **c=150**, **b²=22500-5329=17171**. Hyperbola equation is x²/5329 - y²/17171 = 1. Because signal from A arrives earlier, distance to A is shorter: P lies on **left branch x≤-73** under A-left convention. Check 0<146<300 to ensure a<c. This includes actual modelling, units, magnitude and orientation, unlike only reading coefficients of a supplied equation.
+
+**SBT 7.35 (ellipse tunnel):** use centred vehicle and y>=0 ground-plane model x²/36+y²/9=1, y>=0. For vehicle width 3 m, edges x=±1.5. The roof height there is y=3sqrt(1-(1.5/6)²)=**3sqrt(15)/4 ≈2.9047 m**, larger than 2.8m by **0.1047 m**. Thus it *can* pass in the idealized centred configuration, not if parked arbitrarily near a side. Student must distinguish outline ellipse from interior clearance, fit axes from physical measurements, and explain constraints.
+
+**Teacher C4** is the **same method family** as SBT 7.35, not an entirely new out-of-curriculum topic: 24m width, 10m height, 4m from side => |x|=8, y=10sqrt(5)/3≈7.4536m. **Teacher C5** is the **same method family** as main SGK 7.24: two transmitters with time lag, multiply speed by time, a=93 miles, b²=13851 miles². Original teacher figure needed to give final distance-to-station number; do not use guessed 57 miles as official key.
+
+### 5.3 Current canonical public learner source comparison — all 23 PED outcomes, 32/32 D3 and 4/4 D4
+
+Original approved G10 ChVII R02 source Draft #764:
+prototypes/thpt/content-drafts/Temp_G10_SGK_CHVII_FULL_R02_SOURCE_WITH_CANONICAL_REFERENCES_20261105.md — Git blob **c5c222af88b0e932f9b60df059d8ffd4da5f0f26** (81,529 characters). Exact D3 bank docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js Git blob **2b191d7abba7a4f5bd79d4c122673cd53a45495b** (32/32 stems). Four unchanged D4 items in docs/thpt-preview/thu-vien/tu-luan-chuong-vii.md Git blob **ebc70018a168998c7dd43b34c3e195a2b1e15ed7** (4/4 stems and solutions).
+
+| S1-backed method | What SLM ALREADY covers | Evidence of bounded application depth still absent in the inspected canonical |
+|---|---|---|
+| Semiellipse tunnel/architecture | G10-B22-ELLIPSE_PARAMETERS, B22-P01: equation from foci/major axis; B22-P05: ellipse intersect with y=constant when equation is given. B22 Written W22-01: derive ellipse from foci and find a horizontal tangent | No D2 worked task or D3/D4 exercise converts physical *width+height* into semiellipse and checks a vehicle's clearance or the height at a side offset. The current CONIC_MODEL PED example TRY23 models **parabola width**, not an ellipse tunnel |
+| Radio-time-delay hyperbola | G10-B22-HYPERBOLA_PARAMETERS, B22-C02 and P02: foci/vertices/asymptotes from given equation, or equation from given foci/vertices; PED describes focal distance difference | No D2 worked task or D3/D4 exercise asks convert **wave speed × arrival-time difference** into focal-distance difference 2a, derive b², choose physical branch from "A earlier", and check 0<2a<2c. The word LORAN and source exercise 7.24 method-chain are not demonstrated in the inspected public source |
+
+**What this proves and does not:** It is FALSE that ellipse tunnels/LORAN are outside or missing from original S1: **both are explicit core S1 exercises**, so user-supplied teacher revision cases are strong *confirmation of relevant types*. It is FALSE that SLM is missing basic ellipse/hyperbola definitions: these are taught. But **the integrated S1 practice chains are not present in the public B22 materials just audited**, which is an evidence-backed **S1_ANCHORED_INTEGRATED_PRACTICE_DEPTH_OMISSION_CANDIDATE**. It is NOT permission to rewrite old PASS, mark Q01/Q04 FAIL, assert the entire G10 or Topic lacks these abilities, or call the school exam source byte verified.
+
+### 5.4 Minimal owner-decision proposals (candidate only: no canonical item or change made)
+
+| Candidate proposal ref (NOT an ITEM_ID) | S1 anchor | Minimal desired learner step | Possible extra Written ONLY AFTER owner approval |
+|---|---|---|---|
+| P-G10-B22-ELLIPSE-REALMODEL | SBT 7.35 printed p46; teacher C4 | One **D2/PED5 worked-example**: choose a,b from height+span, read half-ellipse y>=0, solve boundary height, interpret clearance/domain; include a preceding self-try and D6 back to B22-P01/P05 | One new fully independent D4 problem only if owner wants Written transfer evidence; must be materially distinct from SBT 7.35, teacher C4 and old W22 |
+| P-G10-B22-HYPERBOLA-TIME | **SGK 7.24 printed p56**; teacher C5 | One **D2/PED5 worked-example**: station coords, delta travel time => distance difference, a/c/b, station-order selects branch, units and feasibility; D6 back to B22-C02/P02 | One new D4 problem if owner approves, with mathematically complete independent givens and rubric, not a clone of main SGK 7.24 |
+
+**Priority:** both are S1-anchored and are stronger candidates than merely changing scenery/figures. If authorized, treat addition of worked explanations and/or D4 as DELTA_C_ACADEMIC_MATERIAL and target **only the affected new content** with NotebookLM independent review and exactly 5 permanent v2.1 sources + S1, canonical unique IDs, outcome matrix, no second standard or Topic PASS. No new source has been created; 238 existing D4 are still intact (G10 31/G11 83/G12 124). Do not continue searching official semester exam originals as a gate for these two S1 method discoveries.
+
+**CLOSED:** source grounding and canonical method-depth comparison for C4/C5. **OPEN SEPARATELY:** owner decision to write material, teacher-outline C5 diagram/official answer, Q18 targeted reviewer if material ever changes, and release eligibility. No merge/deploy.
+
+CLOSEOUT: SGK10_T2_SHA_ee8a00392e1c9fc5b213e574666cf1f8487548737e138573f28a988c640fafe6;SGK_7_24_P56_LORAN;SBT10_T2_SHA_3cb33690e0627b9e8ac467c23625b7feb7d05a8422293db0e1b26e44ca6a78c7;SBT_7_35_P46_ELLIPSE_TUNNEL;CANONICAL_32_D3_4_D4_CROSSED;2_S1_TRANSFER_APPLICATIONS_NOT_PRESENT_IN_SCOPE;OWNER_PENDING;NEW_WRITTEN_ZERO;238_D4_IMMUTABLE
