@@ -52,6 +52,9 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/lop-12/on-tap-cuoi-nam/";
     const modal=page.locator("dialog.thpt-r4-practice-dialog[open]");
     await modal.waitFor({state:"visible"});
     assert.equal(await modal.locator("[data-thpt-canonical-item]").count(),1,"Only one source-locked PUBLIC formative question on screen");
+    const sizes=await modal.evaluate(el=>({body:parseFloat(getComputedStyle(el).fontSize),stem:parseFloat(getComputedStyle(el.querySelector(".g12-xp-question-stem")).fontSize),option:el.querySelector(".g12-ye-option>span")?parseFloat(getComputedStyle(el.querySelector(".g12-ye-option>span")).fontSize):null}));
+    assert(sizes.body>=16&&sizes.stem>=18,"Readable G12 Golden question/modal typography "+JSON.stringify(sizes));
+    if(role!=="WRITTEN")assert(sizes.option>=16,"MCQ option must not be tiny: "+JSON.stringify(sizes));
     assert.equal(await modal.locator(".g12-xp-jump-button").count(),count,"Original role placement "+role);
     assert.equal(await modal.locator(".g12-xp-reveal").innerText(),"","No answer/rubric before item submit");
     if(role==="MCQ_CORE"){
