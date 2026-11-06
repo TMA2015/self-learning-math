@@ -4,7 +4,7 @@
 <p class="thpt-r4-eyebrow">SGK KẾT NỐI TRI THỨC · TẬP HAI · TRANG 99–109</p>
 <p class="thpt-r4-lead">Hai phần cuối SGK được bố trí <strong>như hai chương độc lập về giao diện</strong>: Kiến thức → Core/Luyện tập/Vận dụng/Tự luận → Tự kiểm tra. Phạm vi SGK giữ nguyên; không tạo chương học thuật mới hoặc item_id mới. Tất cả bài luyện công khai chỉ tự đối chiếu, không ghi Mastery.</p>
 <section class="thpt-r4-practice-lesson" data-thpt-grade="11">
-<div class="thpt-r4-practice-lesson-header"><span class="thpt-r4-lesson-number">01</span><div><p class="thpt-r4-practice-class">TOÁN 11 · TRANG 99–104</p><h2>Hoạt động thực hành, trải nghiệm</h2></div></div>
+<div class="thpt-r4-practice-lesson-header"><span class="thpt-r4-lesson-number">01</span><div><p class="thpt-r4-practice-class">TOÁN 11 · TRANG 99–104</p><h2>Hoạt động thực hành trải nghiệm</h2></div></div>
 <div class="thpt-r4-grid g11-supp-path-grid">
 <a class="thpt-r4-tile" href="trai-nghiem-e01/"><span>01</span><strong>Kiến thức · Thực hành 1</strong><small>Mô hình mũ và thang lôgarit; ví dụ, hình và Tự thử</small><em>Học hoạt động 1 →</em></a>
 <a class="thpt-r4-tile" href="trai-nghiem-e02/"><span>02</span><strong>Kiến thức · Thực hành 2</strong><small>Hình học và đo đạc; ví dụ, hình và Tự thử</small><em>Học hoạt động 2 →</em></a>
