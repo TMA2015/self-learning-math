@@ -21,6 +21,7 @@ const base="http://127.0.0.1:8765/";
       "thpt-preview/sgk/lop-12/chuong-iii/luyen-tap/",
       "thpt-preview/chuyen-de/ham-so/luyen-tap/",
       "kien-thuc/04-bieu-thuc-dai-so/",
+      "kien-thuc/04-bieu-thuc-dai-so/core/",
       "kien-thuc/04-bieu-thuc-dai-so/bai-tap/",
       "kien-thuc/25-tong-hop-on-thi-10/kho-bai-mo-neo/"
     ];
@@ -69,7 +70,8 @@ const base="http://127.0.0.1:8765/";
         await dlg.locator('[aria-label="Đóng cửa sổ"]').click();
         await page.waitForFunction(()=>document.querySelector("body > [data-floating-ai]")!==null,null,{timeout:10000});
       }
-      if(route==="kien-thuc/04-bieu-thuc-dai-so/"){
+      // Golden THCS dedicated Core route owns the micro buttons; the knowledge page does not.
+      if(route==="kien-thuc/04-bieu-thuc-dai-so/core/"){
         const start=page.locator(".topic-core-card .topic-micro-start").first();
         await start.waitFor({state:"visible",timeout:15000});
         await start.click();
