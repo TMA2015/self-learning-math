@@ -22,7 +22,7 @@ Raw source ZIP provided to the owner: `Temp_SLM_5_NEW_WRITTEN_SOURCES_ONLY_R00_2
 | `Temp_G11_CHIX_MOTION_TRANSFER_R00_20261106.md` | 14,254 | `87837d013c4d167fb9e4993a9728f8ebcf5957d177a39d9fc68a77400abdd30c` | `e04a934c03791e0f24328354dc67c55e6afdd640` |
 | `Temp_D5_FIGURES_PDF_R00_20261106.pdf` | 851,797 | `99a58a3b06df2e762bc0552f3ea6620aaa42f2ed3dec05bd0b9974f080dabdaf` | `NOT_COMMITTED_AS_BINARY` — archive exact source ZIP SHA + PDF SHA, no fabricated Git blob custody |
 
-SHA256 of **exact ZIP**: `PENDING_ADD_IN_NEXT_CHECKPOINT` (source members are individually locked above). PDF 5 pages, one for each `FIGURE_ID`: `FIG-G10-CHIV-FORCE-TR01`, `FIG-G10-CHIV-RIVER-TR01`, `FIG-G10-CHVII-ELLIPSE-TR01`, `FIG-G10-CHVII-HYPERBOLA-TR01`, `FIG-G11-CHIX-MOTION-TR01`.
+SHA256 of **exact ZIP**: `b99975abaaf059a46c47c906d73eb008c58abcb565c4f69002a912921928c91d` (822,444 bytes) (source members are individually locked above). PDF 5 pages, one for each `FIGURE_ID`: `FIG-G10-CHIV-FORCE-TR01`, `FIG-G10-CHIV-RIVER-TR01`, `FIG-G10-CHVII-ELLIPSE-TR01`, `FIG-G10-CHVII-HYPERBOLA-TR01`, `FIG-G11-CHIX-MOTION-TR01`.
 
 ## 2. Exact independent report, not reauthored
 
