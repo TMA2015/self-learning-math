@@ -158,7 +158,7 @@ THIS_SECTION_IS_AUDIT_SPEC_ONLY: TRUE
 - D6: nếu lấy a=6,b=10 dẫn đến trục sai thì quay \`B22-P01\`; nếu dùng cả y âm quay bản chất nửa elip/đọc hình; nếu bỏ điều kiện khoảng an toàn thì quay PED5 đánh dấu yêu cầu ra quyết định.
 
 **QA-HYPERBOLA-01 — mô hình + điều kiện vô lý + chọn nhánh:**
-- Hai trạm tại \(A(-20,0)\), \(B(20,0)\), đơn vị km, đồng phát tín hiệu theo **mô hình giả định** với vận tốc \(v=200000\) km/s; B nhận tín hiệu đến tàu sớm hơn A \(0.0001\) s. Độ chênh quãng đường \(\Delta d=v\Delta t=20\) km = \(2a\), nên \(a=10\), \(c=20\), \(b²=c²-a²=\mathbf{300}\) km²; locus \(x²/100-y²/300=1\).
+- Hai trạm tại \(A(-20,0)\), \(B(20,0)\), đơn vị km, đồng phát tín hiệu theo **mô hình giả định** với vận tốc \(v=200000\) km/s; tín hiệu từ B đến tàu sớm hơn tín hiệu từ A \(0.0001\) s. Độ chênh quãng đường \(\Delta d=v\Delta t=20\) km = \(2a\), nên \(a=10\), \(c=20\), \(b²=c²-a²=\mathbf{300}\) km²; locus \(x²/100-y²/300=1\).
 - B đến trước ⇒ tàu gần B ⇒ **nhánh phải \(\mathbf{x≥10}\)**, không phải mọi điểm trên cả hai nhánh; một cặp trạm cho một **quỹ tích**, chưa định được duy nhất một tọa độ tàu.
 - Trường hợp phép đo lần hai báo \(\Delta t=0.00025\) s ⇒ \(\Delta d=50\) km lớn hơn khoảng cách hai trạm 40 km; theo bất đẳng thức tam giác \(|PA-PB|≤AB=40\), **không có vị trí thực nào thỏa**. Dữ liệu vô lý, không được cố lập hypebol với \(a≥c\).
 - Cổng PED5: đổi đơn vị thời gian → \(\Delta d= v\Delta t\) → nhận diện \(\Delta d=2a\) và \(AB=2c\) → kiểm feasibility trước khi tính \(b²\) → branch orientation → giới hạn không xác định được điểm duy nhất.
