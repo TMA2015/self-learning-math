@@ -45,7 +45,7 @@ $x=2$, giá trị nhỏ nhất là $1$. Đạo hàm $2x-4$ đổi từ âm sang 
 
 </details>
 
-[Chuyển đến 31 câu ôn tập cuối năm](../tu-kiem-tra/)
+[Chuyển đến 31 câu ôn tập cuối năm](tu-kiem-tra.md)
 
 <a id="tram-02"></a>
 
@@ -90,7 +90,7 @@ $[x^4]_0^1=1$. Tích phân xác định là một số nên không ghi $+C$.
 
 </details>
 
-[Chuyển đến 31 câu ôn tập cuối năm](../tu-kiem-tra/)
+[Chuyển đến 31 câu ôn tập cuối năm](tu-kiem-tra.md)
 
 <a id="tram-03"></a>
 
@@ -133,7 +133,7 @@ Dùng hình O02 đọc dấu để phân biệt độ dời và quãng đường
 
 </details>
 
-[Chuyển đến 31 câu ôn tập cuối năm](../tu-kiem-tra/)
+[Chuyển đến 31 câu ôn tập cuối năm](tu-kiem-tra.md)
 
 <a id="tram-04"></a>
 
@@ -178,7 +178,7 @@ $u\cdot v=2-2+0=0$, hai vectơ khác $0$ nên vuông góc.
 
 </details>
 
-[Chuyển đến 31 câu ôn tập cuối năm](../tu-kiem-tra/)
+[Chuyển đến 31 câu ôn tập cuối năm](tu-kiem-tra.md)
 
 <a id="tram-05"></a>
 
@@ -223,7 +223,7 @@ Trung điểm $3,5$, nên $\bar x\approx(3+3\cdot5)/4=4.5$.
 
 </details>
 
-[Chuyển đến 31 câu ôn tập cuối năm](../tu-kiem-tra/)
+[Chuyển đến 31 câu ôn tập cuối năm](tu-kiem-tra.md)
 
 <a id="tram-06"></a>
 
@@ -266,5 +266,5 @@ Sơ đồ hai nhánh điều kiện mô tả bằng lời: nhánh chọn nhóm/h
 
 </details>
 
-[Chuyển đến 31 câu ôn tập cuối năm](../tu-kiem-tra/)
+[Chuyển đến 31 câu ôn tập cuối năm](tu-kiem-tra.md)
 
