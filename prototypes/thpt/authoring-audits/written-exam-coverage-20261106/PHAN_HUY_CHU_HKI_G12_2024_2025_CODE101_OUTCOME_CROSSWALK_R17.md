@@ -70,3 +70,36 @@ CHECKPOINT: R17=HN_PHCQO_2025_HKI_G12_CODE101_ONE_EVENT;MIRROR_PDF_INDEX_AND_KEY
 **Quan sát QA có ích:** SBT 2.38 nói rõ B nằm **giữa** O,A (hệ số dương dưới 1), còn bài thi flycam có M nằm trên **đường thẳng** AB và ở ngoài **đoạn** AB (hệ số âm). Đây là phân biệt điều kiện/ràng buộc đáng đưa vào **review depth PED5/D3**, chứ chưa phải ủy quyền thêm D4 hay thay snapshot.
 
 **S1 evidence status:** `SGK_SBT_T1_ORIGINAL_BYTES_SHA_AND_PAGE_VISUAL_PASS` (chỉ cho các trang/đề mục ghi trên); `EXAM_ISSUER_PDF_VISUAL_SHA_HOLD` vẫn giữ. Nguồn SLM Draft #711/#716/#718 và 238 D4 canonical **chỉ đọc**, không đổi; không phát hành hay NotebookLM review tự cấp.
+
+## 7. R18 — UPGRADE PROVENANCE TO ORIGINAL ISSUER, thêm 3 method checks (2026-11-06)
+
+### 7.1 Phát hiện tài liệu trên đúng tên miền của trường phát hành
+
+**Điều chỉnh đối với kết luận R17:** Thay vì chỉ có một PDF do ToanMath phát lại, đã tìm thấy **tệp đề cùng kỳ thi và mã 101 do chính trường đăng tải trên website `c3phanhuychu.edu.vn`**. Đây là bằng chứng mới **PRIMARY_ISSUER_HOSTED_PDF_URL_AND_INDEXED_TEXT_VERIFIED**; *không* hồi tố đổi trạng thái ảnh/bytes/SHA của R17.
+
+- **School publisher page:** https://c3phanhuychu.edu.vn/posts/599 — “Đề và đáp án các môn thi tập trung cuối học kì I năm học 2024–2025”. Trang mục lục tại https://c3phanhuychu.edu.vn/posts?category_id=58 ghi cập nhật **29/12/2024**.
+- **School-hosted original Toán 12:** https://c3phanhuychu.edu.vn/uploads/embedded_file/file/1258/M%C3%B4n_To%C3%A1n_l%E1%BB%9Bp_12.pdf . Chỉ mục web PDF hiển thị rõ header **Trường THPT Phan Huy Chú – Quốc Oai, Toán 12, cuối HKI 2024–2025, mã đề 101**, **4 trang đề** và phần key sáu mã ở cuối tệp. School PDF web text cho các locators Phần I/II/III.
+- **Independent corroboration (không phải independent exam event):** https://toanmath.com/toanmath-pdf/de-cuoi-ki-1-toan-12-nam-2024-2025-truong-thpt-phan-huy-chu-ha-noi.pdf và https://www.scribd.com/document/810126272/De-Cuoi-Ki-1-Toan-12-Nam-2024-2025-Truong-Thpt-Phan-Huy-Chu-Ha-Noi — đúng cùng nhãn trường/kỳ/mã và khớp dữ kiện các câu kiểm được; các upload khác **không** tăng số lượng exam events, và không khẳng định file bytes-identical.
+- **Attempted page-view/source SHA:** `web screenshot` school PDF p3/p4 **Cache miss**; tải raw PDF từ school host trong container bị lỗi DNS/network. Không có source file bytes, page image, checksum SHA256; nhiều hình/đồ thị và đồ họa vẫn chưa thể xác nhận bằng mắt. Phân loại hai tầng: `ISSUER_URL_AND_TEXT_PASS`; `PDF_BYTES_VISUAL_SHA_HOLD`. Không nói `CORPUS_VISUAL_VERIFIED`, cũng không tuyên bố publisher key được xác minh bằng ảnh.
+- **Nhật ký sự kiện nguồn:** một trường/kỳ thi `HN-PHCQO-2025-HK1-G12`, mã 101 đại diện, sáu mã không thành sáu kỳ thi. School publisher chính là trọng tài **xuất xứ**; ToanMath/Scribd chỉ hỗ trợ đối chiếu văn bản/công thức.
+
+### 7.2 Nâng từ 4 lên 7 câu đối chiếu có dữ kiện/kết quả rõ
+
+Bốn câu ở §2 của R17 vẫn giữ **kết quả toán**: II C3 `ĐSĐS` (vôn kế), III C1 `901` (máy bay), III C3 `3200` (lợi nhuận), III C6 `32` (flycam). Nay đối chiếu **văn bản website trường + key code101**, không còn chỉ dùng mirror làm xuất xứ.
+
+| Câu mới kiểm từ PDF school-hosted (page text) | Lời giải độc lập; không sao chép bản giải thương mại | Key code101 school PDF | Năng lực canonical/source đã có và giới hạn |
+|---|---|---|---|
+| **Phần II C1, trang in 3**: M(2;3;−1), N(−1;1;1), P(1;m+1;2); bốn mệnh đề, trong đó (c) Q∈Oxy và M,N,Q thẳng hàng thì Q là trung điểm MN. | `MN=(-3,-2,2)`, `MN=√17` nên (a) “√13” sai; trung điểm `I=(1/2,2,0)` nên (b) ghi x=3/2 sai. Gọi `Q=M+t(N−M)`, từ `z=-1+2t=0` → **t=1/2**, do đó Q=I, (c) đúng. `MN·MP=(-3)(-1)+(-2)(m-2)+2·3=13−2m`; tại m=−2 khác 0, (d) sai. **S,S,Đ,S**. Đây là **line ∩ ground nằm trong đoạn**, khác III C6 có t=−3/2 nằm ngoài đoạn. | **SSĐS** | G12 ChII **B07 O01** `Oxy⇔z=0`, **B07 O04** tọa độ vectơ theo hai đầu mút, **B08 O02** `u=kv`, **B08 O03** trung điểm. D4 `THPT-G12-B08-W02` kiểm collinear-factor, `THPT-G12-B08-W03` kiểm midpoint. Kỹ năng thành phần có, *chưa chứng minh một canonical tích hợp*; `INTEGRATED_LINE_PLANE_TRANSFER_DEPTH_PENDING`, không tự cấp GAP. |
+| **Phần III C2, trang in 4**: mô hình ca bệnh `f(t)=−t³/3+17t²+580t` và `f′(t)` là tốc độ lây lan trong 30 ngày đầu. | `f′(t)=−t²+34t+580=869−(t−17)²` trên [0,30]. `f′` đạt max tại **t=17**; phải tối ưu **đạo hàm của số tích lũy**, không tối ưu trực tiếp f. Đã đối chiếu chính công thức ở văn bản school-hosted với bản mirror có glyph rõ hơn; không cần sơ đồ. | **17** | G12 ChI **B05** D1/PED khẳng định đạo hàm là tốc độ thay đổi và giới hạn đơn vị, B05 có tình huống vận tốc/gia tốc; **B02** dạy tối ưu cực đại/biên. `RATE_OF_CHANGE_THEN_OPTIMISE_CHAIN_PRESENT_IN_COMPONENTS`, nhưng không khẳng định có exact canonical B05 D4 tối ưu *f′*. |
+| **Phần III C4, trang in 4**: `y=((m+1)x+m)/(2x+1)`, m nguyên [−24,24], đồng biến **trên từng khoảng xác định**. | `D=R\\{−1/2}`, `y′=((m+1)(2x+1)−2((m+1)x+m))/(2x+1)²=(1−m)/(2x+1)²`. Tăng trên **mỗi** thành phần iff m<1. Các m∈{−24,...,0} ⇒ **25** giá trị. Không nhầm “từng khoảng xác định” với “toàn D”. | **25** | G12 ChI **`THPT-G12-CHI-B01-W02` / `G12-B01-DOMAIN_INTERVALS`** đã có phản ví dụ **không gộp hai khoảng của miền phân thức**; cùng nguyên tắc ràng buộc, bài thi thêm tham số và đếm số nguyên. `EXACT_DOMAIN_COMPONENTS_METHOD_PRESENT`, không coi exact parametrized problem covered. |
+
+**Nguồn kiểm từ school issuer:** bài toán/đáp án Phần II C1 và III C2/C4 cùng mã 101 xuất hiện trong indexed school PDF; bản Scribd là đối chiếu văn bản phụ cho công thức do PDF search text phân mảnh. Toàn bộ kết quả toán đã tự tính lại; nếu ảnh trang gốc sau này cho thấy glyph khác, ưu tiên sửa *nhận định audit* với receipt, tuyệt đối không tự sửa học liệu canonical.
+
+### 7.3 Kết luận nguồn, độ sâu và giới hạn
+
+- **Nhờ hai bài line-ground trong chính một đề trường**: II C1 có t=+1/2, III C6 có t=−3/2. Đề kiểm tra thực sự phân biệt **“thuộc đoạn”** và **“thuộc đường thẳng nhưng ngoài đoạn”** trên cùng nền tảng Oxyz. Đây là một **đích review về khả năng chuyển giao phương pháp và diễn giải điều kiện** (D3/PED5), KHÔNG tự động thành nội dung mới SGK hoặc yêu cầu thêm D4.
+- Các phương pháp còn lại: tính đạo hàm rồi tối ưu *tốc độ* (III C2), đạo hàm phân thức có tham số và xét từng khoảng (III C4) đã có nền tảng tương ứng ở ChI B01/B02/B05. Không được chỉ đếm số lượng để phán đủ/thiếu.
+- R17 `MIRROR_PDF_INDEXED_TEXT_AND_PRINTED_KEY_PARTIAL` là lịch sử trước khi tìm thấy trường; R18 nâng **provenance** lên `SCHOOL_HOSTED_ORIGINAL_URL_INDEXED_TEXT_VERIFIED`. **PDF page visual/bytes/SHA vẫn HOLD**, đặc biệt biểu đồ thống kê III C5 và đồ thị phần I/II C4. Không phát hành formal exam `COVERED/GAP`, không mở `DELTA_C` hoặc review lại Written.
+- **Bảo toàn:** 238 canonical D4, khóa các Git blob nguồn G12 ChI/II/III và Academic/PED historical receipts, không tạo content/placement/rubric mới, không can thiệp RD1/Topic/RELEASE.
+
+CHECKPOINT: R18=PRIMARY_SCHOOL_HOSTED_PDF_URL_INDEX_VERIFIED;SCHOOL_PUBLISHER_PAGE_2024_12_29;CODE101_SEVEN_MATH_CHECKS;SAME_EXAM_LINE_PLANE_T_1_2_VS_MINUS_3_2;B01_DOMAIN_COMPONENTS_EXACT_METHOD;B05_RATE_OPTIMIZE_COMPONENTS;EXAM_IMAGE_SHA_HOLD;238_IMMUTABLE;FORMAL_GAP_0
