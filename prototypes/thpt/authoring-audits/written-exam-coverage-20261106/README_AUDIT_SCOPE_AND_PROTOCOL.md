@@ -55,3 +55,13 @@ RELEASE_AUTHORIZATION: NO
 `BASELINE_LOCKED` (238 ID kiểm unique) → `CORPUS_VERIFIED` (từng đề xác minh PDF/nguồn) → `QUESTION_OUTCOME_MAPPED` → `COVERAGE_CLASSIFIED` → `GAP_PROPOSAL_OWNER_DECISION` → `TOPIC_PLACEMENT_CANDIDATES_READY`.
 
 Không tuyên bố `COVERAGE_PASS`, không xác nhận Topic `CONTENT_READY`, không đề xuất quota bài mới hoặc chuyển RELEASE trước khi corpus và từng mapping thực sự hoàn thành.
+
+## CHECKPOINT 2026-11-06 — R03: 4 visually inspected mock PDFs / 24 question loci
+
+- Baseline **238 globally unique canonical D4 item IDs** independently re-counted: G10 31, G11 83, G12 124. Eight entries preserve historical `HPT-` canonical prefix; **do not silently rename them to `THPT-`**. This prefix distinction is *not* a duplicate or correction request.
+- Four **2026 Hanoi graduation mock** PDF copies from the owner's Google Drive have been downloaded and rendered. Byte-level SHA-256, page count, Part III **6 short-answer loci/source** and diagrams/equations visually checked; 24 question locators distinct. The source-issuing school/Sở official publication copies are **not independently verified**. This is **not the same thing as** `CORPUS_VERIFIED`.
+- [R03 24Q source custody + problem-type map](DRIVE_HANOI_2026_MOCK_PDF_VISUAL_24Q_R03.md); [R03 method/rubric comparison + pre-Topic candidates](EXAM_TO_CANONICAL_REASONING_AND_TOPIC_PREPLACEMENT_R03.md). All 14 distinct THPT canonical refs in R03 question matrix exist in frozen baseline. No new `item_id` or cloned item.
+- Findings are **only research candidates**. In particular, constrained seating/row-column counting, finance amortization, piecewise economics and 3D locus may require multi-outcome transfer, but no source-complete D3/D4 scan or independent school semester replication has been finished; **no `COVERAGE_GAP` verdict and no proposal to add any question**.
+- Corpus: graduation mocks = **secondary** evidence. Still prioritize ordinary Hanoi **semester HKI/HKII** tests (grades 10–12) and official Ministry graduation exams (not the third-party 88-item compilation). From 2022–2026 only; specialist-school papers/HSG/SAT/ATC remain out of scope.
+- Publication/privacy: commit classification+PDF SHA/page only; **never** publicize the owner's private Drive identifiers or mirrored PDFs/answer keys. Topic crosswalk remains method/lesson association; actual topic IDs and placement roles are **PENDING** until owner authorizes the later Topic development step.
+
