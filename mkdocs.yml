@@ -203,6 +203,11 @@ nav:
               - Toán 11 · Bài tập ôn tập cuối năm: thpt-preview/sgk/lop-11/bo-sung/on-tap-cuoi-nam.md
               - Toán 12 · Chương I: thpt-preview/sgk/lop-12/chuong-i.md
               - Toán 12 · Chương II: thpt-preview/sgk/lop-12/chuong-ii.md
+              - Toán 12 · Chương VI: thpt-preview/sgk/lop-12/chuong-vi.md
+              - Bài 18 · Xác suất có điều kiện: thpt-preview/sgk/lop-12/chuong-vi/bai-18.md
+              - Bài 19 · Toàn phần & Bayes: thpt-preview/sgk/lop-12/chuong-vi/bai-19.md
+              - Core và Luyện tập · ChVI: thpt-preview/sgk/lop-12/chuong-vi/luyen-tap.md
+              - Tự kiểm tra · ChVI (client-only): thpt-preview/sgk/lop-12/chuong-vi/tu-kiem-tra-chuong.md
               - Core hàm bậc hai: thpt-preview/sgk/core/ham-so-bac-hai.md
           - Chuyên đề:
               - Tổng quan: thpt-preview/chuyen-de/index.md
@@ -260,6 +265,7 @@ extra_css:
   - assets/stylesheets/thpt-g11-supplement-p99-p109-r00.css
   - assets/stylesheets/thpt-g12-chi-b01-b05-r00.css
   - assets/stylesheets/thpt-g12-chii-b06-b08-r00.css
+  - assets/stylesheets/thpt-g12-chv-b14-b17-r01.css
   - assets/stylesheets/thpt-chvi-d6-reviewed-r01.css
   - assets/stylesheets/thpt-g10-reviewed-selfcheck-v1.css
 
@@ -322,3 +328,4 @@ extra_javascript:
   - assets/javascripts/thpt-g11-supplement-p99-p109-r00.js
   - assets/javascripts/thpt-g12-chi-b01-b05-r00.js
   - assets/javascripts/thpt-g12-chii-b06-b08-r00.js
+  - assets/javascripts/thpt-g12-chvi-b18-b19-r00.js

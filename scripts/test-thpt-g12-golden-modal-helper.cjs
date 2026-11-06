@@ -11,7 +11,7 @@ async function verifyG12GoldenHub(page,{chapter,selector,lessons,groups,items,he
  assert.equal(await hub.locator("[data-g12-golden-open]").count(),groups,"One modal launcher per Core/Practice group");
  assert.equal(await hub.locator("[data-canonical-item]").count(),0,"No full-page inline question stacks");
  assert.equal(await hub.locator('details[class*="-hub-help"]').count(),0,"D6 must live within Golden question, no chapter-level duplicate accordion");
- const id="b"+({I:"01",II:"06",III:"09",IV:"11",V:"14"}[chapter])+"-core";
+ const id="b"+({I:"01",II:"06",III:"09",IV:"11",V:"14",VI:"18"}[chapter])+"-core";
  const card=hub.locator("#"+id);
  assert.equal(await card.count(),1,"Core card anchored");
  const geometry=await card.evaluate(c=>{

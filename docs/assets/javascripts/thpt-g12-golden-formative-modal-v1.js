@@ -72,9 +72,9 @@ const format=(root,input)=>{
 };
 const math=root=>{const m=window.MathJax;if(m?.typesetPromise){const go=()=>m.typesetPromise([root]).catch(()=>{});if(m.startup?.promise)void m.startup.promise.then(go).catch(()=>{});else void go()}};
 const anchor=id=>String(id).toLowerCase().replace(/[^a-z0-9-]/g,"-");
-const expected={I:[10,66],II:[6,64],III:[4,48],IV:[6,88],V:[9,96]};
+const expected={I:[10,66],II:[6,64],III:[4,48],IV:[6,88],V:[9,96],VI:[4,56]};
 function mount(root,bank,{chapter}={}){
- if(!expected[chapter]||!root?.matches('[data-g12-chi-hub],[data-g12-chii-hub],[data-g12-chiii-hub],[data-g12-chiv-hub],[data-g12-chv-hub]')||bank?.mode!=="CLIENT_SELF_CHECK_NO_MASTERY")throw Error("G12 Golden: invalid scope");
+ if(!expected[chapter]||!root?.matches('[data-g12-chi-hub],[data-g12-chii-hub],[data-g12-chiii-hub],[data-g12-chiv-hub],[data-g12-chv-hub],[data-g12-chvi-hub]')||bank?.mode!=="CLIENT_SELF_CHECK_NO_MASTERY")throw Error("G12 Golden: invalid scope");
  const details=[...root.querySelectorAll(".thpt-r4-practice-card-grid > details.thpt-r4-practice-card")];
  if(details.length!==expected[chapter][0])throw Error("G12 Golden: missing Core/Practice groups");
  const original=new Map(bank.items.map(x=>[x.item_id,x])),seen=new Set(),byGroup=new Map(),byItem=new Map(),draft=new Map();

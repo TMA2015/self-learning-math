@@ -189,6 +189,12 @@ nav:
               - Mở rộng sau Bài 17: thpt-preview/sgk/lop-12/chuong-v/mo-rong-sau-bai-17.md
               - Core và Luyện tập Chương V: thpt-preview/sgk/lop-12/chuong-v/luyen-tap.md
               - Tự kiểm tra cuối Chương V: thpt-preview/sgk/lop-12/chuong-v/tu-kiem-tra-chuong.md
+          - Chương VI · Xác suất có điều kiện:
+              - Tổng quan Chương VI: thpt-preview/sgk/lop-12/chuong-vi.md
+              - Bài 18 · Xác suất có điều kiện: thpt-preview/sgk/lop-12/chuong-vi/bai-18.md
+              - Bài 19 · Toàn phần và Bayes: thpt-preview/sgk/lop-12/chuong-vi/bai-19.md
+              - Core và Luyện tập Chương VI: thpt-preview/sgk/lop-12/chuong-vi/luyen-tap.md
+              - Tự kiểm tra cuối Chương VI · Tự đối chiếu: thpt-preview/sgk/lop-12/chuong-vi/tu-kiem-tra-chuong.md
   - Học theo chuyên đề:
       - Tổng quan chuyên đề: thpt-preview/chuyen-de/index.md
       - Hàm số và đồ thị:
@@ -321,3 +327,4 @@ extra_javascript:
   - assets/javascripts/thpt-g12-chiii-b09-b10-r00.js
   - assets/javascripts/thpt-g12-chiv-b11-b13-r00.js
   - assets/javascripts/thpt-g12-chv-b14-b17-r01.js
+  - assets/javascripts/thpt-g12-chvi-b18-b19-r00.js

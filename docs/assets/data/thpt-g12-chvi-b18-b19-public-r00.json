@@ -1,0 +1,936 @@
+{
+  "packet_id": "G12-SGK-CHVI-B18-B19-END-R00",
+  "source_blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+  "receipt_blob": "c371e9f4873caa04c0c005b625316cf07ef5449a",
+  "mode": "CLIENT_SELF_CHECK_NO_MASTERY",
+  "items": [
+    {
+      "item_id": "THPT-G12-B18-C01",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O01",
+      "role": "CORE",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 1,
+      "stem": "Chọn đều một số trong {1,2,3,4,5,6}. Đã biết số được chọn là số lẻ; xác suất số đó lớn hơn 3 là bao nhiêu?",
+      "answer": "`1/3`.",
+      "solution": "B={1,3,5}, A∩B={5}; vì chỉ còn 3 khả năng nên P(A|B)=1/3."
+    },
+    {
+      "item_id": "THPT-G12-B18-P01",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O01",
+      "role": "SGK_PRACTICE",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 2,
+      "stem": "Chọn đều một thẻ từ 1 đến 12. Biết thẻ chia hết cho 3; tính xác suất thẻ đồng thời là số chẵn.",
+      "answer": "`1/2`.",
+      "solution": "B={3,6,9,12}, A∩B={6,12}, do đó P(A|B)=2/4=1/2."
+    },
+    {
+      "item_id": "THPT-G12-B18-A01",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O01",
+      "role": "SGK_APPLICATION",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 3,
+      "stem": "Thư viện có 12 cuốn sách: 5 sách khoa học gồm 3 bìa cứng, 7 sách văn học gồm 2 bìa cứng. Chọn đều một cuốn trong nhóm bìa cứng. Xác suất sách khoa học là bao nhiêu?",
+      "answer": "`3/5`.",
+      "solution": "Có 5 cuốn bìa cứng, trong đó 3 khoa học nên 3/5. Không chia cho tổng số 12 cuốn."
+    },
+    {
+      "item_id": "THPT-G12-B18-W01",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O01",
+      "role": "SGK_WRITTEN",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 4,
+      "stem": "Trong hộp có 4 bi đỏ, 5 bi xanh, 3 bi vàng, các bi cùng khả năng được chọn. Biết bi lấy ra không vàng. Tính xác suất bi đỏ; nêu rõ không gian mẫu mới.",
+      "answer": "`4/9`.",
+      "solution": "Không vàng có 4+5=9 bi. Giao với đỏ có 4 bi; do đó P(đỏ|không vàng)=4/9.",
+      "rubric": [
+        "2đ xác định tập điều kiện có 9 bi; 1đ nhận diện 4 bi đỏ thuộc điều kiện; 1đ lập tỷ số 4/9; 1đ giải thích không lấy mẫu số 12."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B18-C02",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O02",
+      "role": "CORE",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 1,
+      "stem": "Cho P(B)=3/5 và P(A∩B)=1/5. Tính P(A|B).",
+      "answer": "`1/3`.",
+      "solution": "P(A|B)=(1/5)/(3/5)=1/3."
+    },
+    {
+      "item_id": "THPT-G12-B18-P02",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O02",
+      "role": "SGK_PRACTICE",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 2,
+      "stem": "Từ 8 thẻ đánh số 1–8, chọn đều một thẻ. B: thẻ chẵn; A: thẻ chia hết cho 4. Tính P(A|B) theo công thức.",
+      "answer": "`1/2`.",
+      "solution": "P(B)=4/8, P(A∩B)=2/8, nên (2/8)/(4/8)=1/2."
+    },
+    {
+      "item_id": "THPT-G12-B18-A02",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O02",
+      "role": "SGK_APPLICATION",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 3,
+      "stem": "Trong 60 thí sinh, 30 người tham dự câu lạc bộ tiếng Anh và 18 người thuộc câu lạc bộ đồng thời đạt điểm giỏi. Chọn đều một người, biết người đó thuộc câu lạc bộ; xác suất đạt giỏi?",
+      "answer": "`3/5`.",
+      "solution": "P(B)=30/60; P(A∩B)=18/60. Chia được 18/30=3/5."
+    },
+    {
+      "item_id": "THPT-G12-B18-W02",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O02",
+      "role": "SGK_WRITTEN",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 4,
+      "stem": "Có 120 học sinh; 50 em tham gia hoạt động ngoại khóa, trong đó 22 em được giấy khen. Tính P(giấy khen|ngoại khóa), kiểm điều kiện và giải thích mẫu số.",
+      "answer": "`11/25`.",
+      "solution": "Biến cố B có P(B)=50/120>0; giao 22/120; do đó 22/50=11/25. Mẫu số 50 là toàn bộ học sinh đã biết thuộc ngoại khóa.",
+      "rubric": [
+        "1đ xác định B và A; 1đ P(B)=50/120>0; 1đ P(A∩B)=22/120; 1đ kết quả 11/25; 1đ giải thích mẫu số 50."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B18-C03",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O03",
+      "role": "CORE",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 1,
+      "stem": "Lớp có 20 học sinh đi xe buýt, trong đó 8 em là nữ; toàn lớp có 25 nữ. Tính P(nữ|đi xe buýt).",
+      "answer": "`2/5`.",
+      "solution": "Nhóm điều kiện có 20 em, giao có 8 em, nên 8/20=2/5."
+    },
+    {
+      "item_id": "THPT-G12-B18-P03",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O03",
+      "role": "SGK_PRACTICE",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 2,
+      "stem": "Với dữ kiện 20 em đi xe buýt, 8 nữ trong số đó, cả lớp có 25 nữ, tính P(đi xe buýt|nữ).",
+      "answer": "`8/25`.",
+      "solution": "Điều kiện là 25 học sinh nữ, giao có 8 nên 8/25."
+    },
+    {
+      "item_id": "THPT-G12-B18-A03",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O03",
+      "role": "SGK_APPLICATION",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 3,
+      "stem": "Một đội có 15 người chơi bóng rổ, 12 người chơi bóng đá, 6 chơi cả hai. Tính cả P(rổ|đá) và P(đá|rổ).",
+      "answer": "`1/2 và 2/5`.",
+      "solution": "Lần lượt 6/12=1/2 và 6/15=2/5. Giải thích vì sao hai xác suất khác nhau."
+    },
+    {
+      "item_id": "THPT-G12-B18-W03",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O03",
+      "role": "SGK_WRITTEN",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 4,
+      "stem": "Trong 80 học sinh: 28 học tiếng Pháp, 20 học tiếng Đức, 8 học cả hai. Hãy tính P(Pháp|Đức), P(Đức|Pháp) và nhận xét sự khác biệt.",
+      "answer": "`2/5 và 2/7`.",
+      "solution": "P(Pháp|Đức)=8/20=2/5; P(Đức|Pháp)=8/28=2/7; không được đổi mẫu số tùy ý.",
+      "rubric": [
+        "1đ lập các biến cố và giao; 1đ xác định mẫu số 20; 1đ được 2/5; 1đ xác định mẫu số 28 và được 2/7; 1đ giải thích khác chiều điều kiện."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B18-C04",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O04",
+      "role": "CORE",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 1,
+      "stem": "Cho P(A)=2/5, P(B)=1/4, P(A∩B)=1/10. A và B có độc lập không?",
+      "answer": "`Có`.",
+      "solution": "P(A)P(B)=(2/5)(1/4)=1/10=P(A∩B) nên độc lập."
+    },
+    {
+      "item_id": "THPT-G12-B18-P04",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O04",
+      "role": "SGK_PRACTICE",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 2,
+      "stem": "Cho P(A)=1/2, P(B)=1/2 nhưng P(A∩B)=0. Có thể nói hai biến cố độc lập không?",
+      "answer": "`Không`.",
+      "solution": "Không; P(A)P(B)=1/4 khác 0. Hai biến cố xung khắc và có xác suất dương không độc lập."
+    },
+    {
+      "item_id": "THPT-G12-B18-A04",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O04",
+      "role": "SGK_APPLICATION",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 3,
+      "stem": "Một lớp có P(chơi cờ)=0,3, P(chơi nhạc)=0,6 và P(cả hai)=0,18. Tính P(chơi cờ|chơi nhạc) và nhận xét.",
+      "answer": "`0,3; độc lập`.",
+      "solution": "0,18/0,6=0,3=P(chơi cờ), nên hai biến cố độc lập với dữ liệu đã cho."
+    },
+    {
+      "item_id": "THPT-G12-B18-W04",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O04",
+      "role": "SGK_WRITTEN",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 4,
+      "stem": "Biết P(A)=0,4, P(B)=0,25, P(A∩B)=0,1. Chứng minh A,B độc lập và tính P(A|B); giải thích ý nghĩa.",
+      "answer": "`Độc lập; P(A|B)=0,4`.",
+      "solution": "(0,4)(0,25)=0,1=P(A∩B), độc lập; P(A|B)=0,1/0,25=0,4, giống P(A).",
+      "rubric": [
+        "2đ kiểm tích và kết luận độc lập; 1đ nêu điều kiện P(B)>0; 1đ tính 0,4; 1đ giải thích thông tin B không đổi cơ hội A."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B18-C05",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O05",
+      "role": "CORE",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 1,
+      "stem": "Khảo sát: CLB có 8 đạt,2 chưa; không CLB có 12 đạt,8 chưa. Tính P(đạt|CLB).",
+      "answer": "`4/5`.",
+      "solution": "Tổng CLB=10, đạt=8 nên 8/10=4/5."
+    },
+    {
+      "item_id": "THPT-G12-B18-P05",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O05",
+      "role": "SGK_PRACTICE",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 2,
+      "stem": "Dữ liệu: Nhóm X 30 chọn A,20 không; Nhóm Y 15 chọn A,35 không. Tính P(X|chọn A).",
+      "answer": "`2/3`.",
+      "solution": "Tổng chọn A=30+15=45, số trong X=30, P=30/45=2/3."
+    },
+    {
+      "item_id": "THPT-G12-B18-A05",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O05",
+      "role": "SGK_APPLICATION",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 3,
+      "stem": "Nhóm I: 18 đúng,12 sai; Nhóm II: 24 đúng,6 sai. So sánh xác suất trả lời đúng trong từng nhóm.",
+      "answer": "`3/5 và 4/5`.",
+      "solution": "P(đúng|I)=18/30=3/5; P(đúng|II)=24/30=4/5, nhóm II cao hơn 1/5."
+    },
+    {
+      "item_id": "THPT-G12-B18-W05",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O05",
+      "role": "SGK_WRITTEN",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 4,
+      "stem": "Khảo sát 200 người: dùng ứng dụng 70 hài lòng và 30 không; không dùng ứng dụng 60 hài lòng và 40 không. Tính P(hài lòng|dùng), P(dùng|hài lòng), giải thích sự khác biệt.",
+      "answer": "`7/10 và 7/13`.",
+      "solution": "P(hài lòng|dùng)=70/100=7/10; P(dùng|hài lòng)=70/130=7/13. Mẫu số khác nên không bằng nhau.",
+      "rubric": [
+        "1đ lập đúng bảng/tổng 200; 1đ lấy mẫu số 100; 1đ tính 7/10; 1đ lấy mẫu số 130 và tính 7/13; 1đ giải thích chiều điều kiện khác."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B18-C06",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O06",
+      "role": "CORE",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 1,
+      "stem": "Cho P(A)=0,3, P(B|A)=0,6. Tính P(A∩B).",
+      "answer": "`9/50`.",
+      "solution": "0,3×0,6=0,18."
+    },
+    {
+      "item_id": "THPT-G12-B18-P06",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O06",
+      "role": "SGK_PRACTICE",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 2,
+      "stem": "Cho P(B)=2/5 và P(A|B)=1/4. Tính P(A∩B).",
+      "answer": "`1/10`.",
+      "solution": "P(B)P(A|B)=(2/5)(1/4)=1/10."
+    },
+    {
+      "item_id": "THPT-G12-B18-A06",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O06",
+      "role": "SGK_APPLICATION",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 3,
+      "stem": "Tỉ lệ chuyến tàu đúng giờ là 80%. Trong các chuyến đúng giờ, 90% hành khách kết nối chuyến tiếp theo thành công. Tính xác suất một hành khách rơi vào cả hai tình huống.",
+      "answer": "`18/25`.",
+      "solution": "P(đúng giờ∩kết nối)=0,8×0,9=0,72. Xác suất 90% là có điều kiện, không phải tổng thể."
+    },
+    {
+      "item_id": "THPT-G12-B18-W06",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O06",
+      "role": "SGK_WRITTEN",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 4,
+      "stem": "Trong khảo sát có P(A)=3/5, P(B|A)=1/3 và P(B)=2/5. Tính P(A∩B) rồi tính P(A|B); kiểm tính hợp lý.",
+      "answer": "`1/5 và 1/2`.",
+      "solution": "Giao=(3/5)(1/3)=1/5. P(A|B)=(1/5)/(2/5)=1/2∈[0,1].",
+      "rubric": [
+        "1đ đặt công thức giao; 1đ tính 1/5; 1đ xác nhận P(B)>0; 1đ tính 1/2; 1đ kiểm kết quả trong [0,1] và phân biệt điều kiện."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B18-C07",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O07",
+      "role": "CORE",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 1,
+      "stem": "Túi 4 bi vàng, 2 bi đen; lấy 2 bi không hoàn lại. Tính P(cả hai vàng).",
+      "answer": "`2/5`.",
+      "solution": "P=(4/6)(3/5)=2/5."
+    },
+    {
+      "item_id": "THPT-G12-B18-P07",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O07",
+      "role": "SGK_PRACTICE",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 2,
+      "stem": "Túi 3 bi đỏ và 2 bi xanh; lấy hai bi không hoàn lại. Tính xác suất hai bi khác màu.",
+      "answer": "`3/5`.",
+      "solution": "P(đỏ rồi xanh)=3/5×2/4=3/10; P(xanh rồi đỏ)=2/5×3/4=3/10; cộng=3/5."
+    },
+    {
+      "item_id": "THPT-G12-B18-A07",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O07",
+      "role": "SGK_APPLICATION",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 3,
+      "stem": "Túi 4 bi đỏ, 2 bi xanh; rút 3 lần không hoàn lại. Xác suất đúng 2 đỏ và 1 xanh?",
+      "answer": "`3/5`.",
+      "solution": "Có 3 thứ tự RRB, RBR, BRR; mỗi thứ tự có xác suất (4×3×2)/(6×5×4)=1/5; tổng=3/5."
+    },
+    {
+      "item_id": "THPT-G12-B18-W07",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O07",
+      "role": "SGK_WRITTEN",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 4,
+      "stem": "Túi 3 bi trắng, 2 bi đen. Rút liên tiếp 2 bi không hoàn lại. Tính P(đúng một bi trắng), ghi rõ các nhánh và kiểm kết quả.",
+      "answer": "`3/5`.",
+      "solution": "Trắng→đen: 3/5×2/4=3/10; đen→trắng:2/5×3/4=3/10. Tổng=3/5.",
+      "rubric": [
+        "1đ phân hai nhánh khác màu; 1đ ghi đúng mẫu không hoàn lại; 1đ tính 3/10 nhánh trắng-đen; 1đ tính 3/10 nhánh đen-trắng; 1đ cộng 3/5 và giải thích xung khắc."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B19-C01",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O01",
+      "role": "CORE",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 1,
+      "stem": "Cho P(A)=0,35. Tính P(Ā).",
+      "answer": "`13/20`.",
+      "solution": "P(Ā)=1−0,35=0,65."
+    },
+    {
+      "item_id": "THPT-G12-B19-P01",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O01",
+      "role": "SGK_PRACTICE",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 2,
+      "stem": "Cho P(A)=2/5. Tính P(Ā), kiểm hai nhánh phủ hết không gian.",
+      "answer": "`3/5`.",
+      "solution": "P(Ā)=3/5, tổng bằng 1 và A∩Ā=∅."
+    },
+    {
+      "item_id": "THPT-G12-B19-A01",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O01",
+      "role": "SGK_APPLICATION",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 3,
+      "stem": "Cho P(B)=0,32, P(A)=0,4, P(B|A)=0,5. Tìm P(B|Ā).",
+      "answer": "`1/5`.",
+      "solution": "0,32=0,4×0,5+0,6×x ⇒ 0,12=0,6x ⇒ x=0,2."
+    },
+    {
+      "item_id": "THPT-G12-B19-W01",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O01",
+      "role": "SGK_WRITTEN",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 4,
+      "stem": "Một trung tâm có P(A)=0,3, xác suất một hồ sơ được duyệt khi thuộc A là 0,7, còn khi không thuộc A là 0,5. Viết phân hoạch biến cố được duyệt theo A,Ā, tính xác suất duyệt.",
+      "answer": "`14/25`.",
+      "solution": "A∩D và Ā∩D xung khắc, phủ D; P(D)=0,3×0,7+0,7×0,5=0,56.",
+      "rubric": [
+        "1đ nêu A và Ā là phân hoạch; 1đ biểu diễn D theo hai nhánh; 1đ tính 0,21; 1đ tính 0,35; 1đ cộng 0,56."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B19-C02",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O02",
+      "role": "CORE",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 1,
+      "stem": "Nhóm A chiếm 40%, xác suất đạt 80%; nhóm còn lại 60%, xác suất đạt 60%. Tính P(đạt).",
+      "answer": "`17/25`.",
+      "solution": "0,4×0,8+0,6×0,6=0,32+0,36=0,68=17/25."
+    },
+    {
+      "item_id": "THPT-G12-B19-P02",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O02",
+      "role": "SGK_PRACTICE",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 2,
+      "stem": "Hai nguồn cung A 30%, B 70%, tỉ lệ lỗi lần lượt 10% và 20%. Xác suất lấy ngẫu nhiên một sản phẩm lỗi?",
+      "answer": "`17/100`.",
+      "solution": "0,3×0,1+0,7×0,2=0,03+0,14=0,17."
+    },
+    {
+      "item_id": "THPT-G12-B19-A02",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O02",
+      "role": "SGK_APPLICATION",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 3,
+      "stem": "Tỉ lệ người di chuyển ngày nghỉ là 60%, 80% trong số này dùng xe công cộng; ngày thường là 40%, 50% dùng xe công cộng. Xác suất ngẫu nhiên một lượt khảo sát dùng xe công cộng?",
+      "answer": "`17/25`.",
+      "solution": "0,6×0,8+0,4×0,5=0,48+0,20=0,68."
+    },
+    {
+      "item_id": "THPT-G12-B19-W02",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O02",
+      "role": "SGK_WRITTEN",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 4,
+      "stem": "Một công ty có 70% giao dịch loại A, 30% loại khác; xác suất trễ của A là 0,1, của loại khác là 0,2. Tính xác suất giao dịch trễ, giải thích vì sao không lấy trung bình cộng 0,1 và 0,2.",
+      "answer": "`13/100`.",
+      "solution": "P(trễ)=0,7×0,1+0,3×0,2=0,07+0,06=0,13; phải lấy trung bình có trọng số theo tỷ lệ nhóm.",
+      "rubric": [
+        "1đ phân hoạch A/Ā với 0,7/0,3; 1đ xác định xác suất trễ điều kiện; 1đ tính nhánh 0,07; 1đ tính nhánh 0,06 và tổng 0,13; 1đ giải thích trọng số không đều."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B19-C03",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O03",
+      "role": "CORE",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 1,
+      "stem": "Cây: P(A)=0,2, P(B|A)=0,7, P(B|Ā)=0,4. Tính P(B).",
+      "answer": "`23/50`.",
+      "solution": "0,2×0,7+0,8×0,4=0,14+0,32=0,46."
+    },
+    {
+      "item_id": "THPT-G12-B19-P03",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O03",
+      "role": "SGK_PRACTICE",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 2,
+      "stem": "Cây: P(A)=0,7; xác suất kết quả E nếu A là 0,2, nếu Ā là 0,5. Tính P(E).",
+      "answer": "`29/100`.",
+      "solution": "0,7×0,2+0,3×0,5=0,14+0,15=0,29."
+    },
+    {
+      "item_id": "THPT-G12-B19-A03",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O03",
+      "role": "SGK_APPLICATION",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 3,
+      "stem": "Theo cây P(A)=0,7, P(E|A)=0,2, P(E|Ā)=0,5, tính P(A|E).",
+      "answer": "`14/29`.",
+      "solution": "P(A∩E)=0,14; P(E)=0,29 nên P(A|E)=14/29."
+    },
+    {
+      "item_id": "THPT-G12-B19-W03",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O03",
+      "role": "SGK_WRITTEN",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 4,
+      "stem": "Cho P(A)=0,4, P(B|A)=0,8, P(B|Ā)=0,3. Hãy mô tả cây, tính P(B) và P(A|B).",
+      "answer": "`1/2 và 16/25`.",
+      "solution": "Lá A∩B=0,32; Ā∩B=0,18; P(B)=0,5. P(A|B)=0,32/0,5=0,64.",
+      "rubric": [
+        "1đ mô tả nhánh gốc và điều kiện; 1đ tính 0,32; 1đ tính 0,18; 1đ cộng P(B)=0,5; 1đ tính P(A|B)=0,64."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B19-C04",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O04",
+      "role": "CORE",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 1,
+      "stem": "P(A)=0,3, P(B|A)=0,1, P(B|Ā)=0,2. Tính P(A|B).",
+      "answer": "`3/17`.",
+      "solution": "Tử 0,03; mẫu 0,03+0,14=0,17; được 3/17."
+    },
+    {
+      "item_id": "THPT-G12-B19-P04",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O04",
+      "role": "SGK_PRACTICE",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 2,
+      "stem": "P(A)=1/4, P(B|A)=4/5, P(B|Ā)=3/5. Tính P(A|B).",
+      "answer": "`4/13`.",
+      "solution": "Tử (1/4)(4/5)=1/5; mẫu 1/5+(3/4)(3/5)=13/20; hậu nghiệm=4/13."
+    },
+    {
+      "item_id": "THPT-G12-B19-A04",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O04",
+      "role": "SGK_APPLICATION",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 3,
+      "stem": "Một tỉ lệ nền là 2%, độ nhạy của phép thử là 90%, tỷ lệ dương tính giả 10% (giả định). Nếu kết quả dương, xác suất thuộc nhóm có đặc điểm là bao nhiêu?",
+      "answer": "`9/58`.",
+      "solution": "P(A|+)=(0,02×0,9)/(0,02×0,9+0,98×0,1)=0,018/0,116=9/58. Đây chỉ là ví dụ toán giả định."
+    },
+    {
+      "item_id": "THPT-G12-B19-W04",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O04",
+      "role": "SGK_WRITTEN",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 4,
+      "stem": "Một tổ có 40% học viên loại A, xác suất đạt của A là 70%, nhóm còn lại đạt 20%. Chọn người đã đạt, xác suất người đó thuộc A?",
+      "answer": "`7/10`.",
+      "solution": "P(A∩Đ)=0,4×0,7=0,28; P(Đ)=0,28+0,6×0,2=0,4; Bayes 0,28/0,4=0,7.",
+      "rubric": [
+        "1đ xác định hai nhóm và điều kiện cần đảo; 1đ tử 0,28; 1đ nhánh còn lại 0,12; 1đ mẫu 0,4; 1đ hậu nghiệm 0,7 và ý nghĩa."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B19-C05",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O05",
+      "role": "CORE",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 1,
+      "stem": "Giả định tỷ lệ nền 2%, độ nhạy 90%, xác suất dương tính giả 5%. Tính P(có đặc điểm|dương).",
+      "answer": "`18/67`.",
+      "solution": "Tử 0,02×0,9=0,018; giả dương 0,98×0,05=0,049; tổng 0,067; P=18/67."
+    },
+    {
+      "item_id": "THPT-G12-B19-P05",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O05",
+      "role": "SGK_PRACTICE",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 2,
+      "stem": "Giả định tỷ lệ nền 1%, độ nhạy 80%, tỷ lệ dương giả 10%. Tính P(có đặc điểm|dương).",
+      "answer": "`8/107`.",
+      "solution": "Tử 0,008; giả dương 0,99×0,10=0,099; tổng 0,107; P=8/107."
+    },
+    {
+      "item_id": "THPT-G12-B19-A05",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O05",
+      "role": "SGK_APPLICATION",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 3,
+      "stem": "Một bộ lọc thư có tỷ lệ thư rác 5%, nhận diện đúng thư rác 90%, gắn nhầm thư thường 4%. Nếu thư bị gắn rác, xác suất thư thực sự rác?",
+      "answer": "`45/83`.",
+      "solution": "P(rác|gắn)=0,05×0,9/[0,05×0,9+0,95×0,04]=0,045/0,083=45/83."
+    },
+    {
+      "item_id": "THPT-G12-B19-W05",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O05",
+      "role": "SGK_WRITTEN",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 4,
+      "stem": "Mô hình giả định 10.000 phép thử với tỷ lệ nền 1%, độ nhạy 90%, độ đặc hiệu 95%. Lập bảng dương thật/dương giả; tính xác suất có đặc điểm khi dương, giải thích vì sao không bằng 90%.",
+      "answer": "`2/13`.",
+      "solution": "100 người có đặc điểm→90 dương thật; 9.900 không có→495 dương giả. Tổng dương 585, hậu nghiệm 90/585=2/13≈15,38%, khác độ nhạy 90%.",
+      "rubric": [
+        "1đ quy đổi 100 và 9.900 người; 1đ tính 90 dương thật; 1đ tính 495 dương giả; 1đ hậu nghiệm 2/13; 1đ phân biệt hậu nghiệm với độ nhạy."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B19-C06",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O06",
+      "role": "CORE",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 1,
+      "stem": "Ba vùng A,B,C chiếm 25%,50%,25% dân số khảo sát; khả năng mưa lần lượt 60%,20%,40%. Tính P(mưa).",
+      "answer": "`7/20`.",
+      "solution": "0,25×0,6+0,5×0,2+0,25×0,4=0,15+0,10+0,10=0,35."
+    },
+    {
+      "item_id": "THPT-G12-B19-P06",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O06",
+      "role": "SGK_PRACTICE",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 2,
+      "stem": "Ba nhà máy đóng góp 20%,30%,50%, tỉ lệ lỗi 1%,2%,3%. Tính tỉ lệ lỗi chung.",
+      "answer": "`23/1000`.",
+      "solution": "0,2×0,01+0,3×0,02+0,5×0,03=0,002+0,006+0,015=0,023."
+    },
+    {
+      "item_id": "THPT-G12-B19-A06",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O06",
+      "role": "SGK_APPLICATION",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 3,
+      "stem": "Ba nguồn cung chiếm 40%,35%,25%, tỷ lệ lỗi lần lượt 2%,4%,8%. Tính P(lỗi).",
+      "answer": "`21/500`.",
+      "solution": "0,4×0,02+0,35×0,04+0,25×0,08=0,008+0,014+0,02=0,042."
+    },
+    {
+      "item_id": "THPT-G12-B19-W06",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O06",
+      "role": "SGK_WRITTEN",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 4,
+      "stem": "Ba dây A,B,C cung cấp 50%,30%,20%; lỗi lần lượt 2%,5%,10%. Tính P(lỗi) và P(C|lỗi).",
+      "answer": "`9/200 và 4/9`.",
+      "solution": "P(lỗi)=0,5×0,02+0,3×0,05+0,2×0,10=0,045. P(C|lỗi)=0,02/0,045=4/9.",
+      "rubric": [
+        "1đ kiểm ba nguồn và tổng tỷ trọng 1; 1đ tính nhánh A,B 0,010+0,015; 1đ tính nhánh C 0,020; 1đ tổng 0,045; 1đ Bayes 4/9."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B19-C07",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O07",
+      "role": "CORE",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 1,
+      "stem": "70% đơn thuộc ca sáng thành công 80%; 30% ca tối thành công 50%. Tính P(thành công) và P(ca sáng|thành công).",
+      "answer": "`71/100 và 56/71`.",
+      "solution": "P(S)=0,7×0,8+0,3×0,5=0,71; P(sáng|S)=0,56/0,71=56/71."
+    },
+    {
+      "item_id": "THPT-G12-B19-P07",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O07",
+      "role": "SGK_PRACTICE",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 2,
+      "stem": "Nguồn A 60% có tỉ lệ hỏng 10%; nguồn B 40% hỏng 5%. Tính P(hỏng) và P(A|hỏng).",
+      "answer": "`2/25 và 3/4`.",
+      "solution": "P(H)=0,6×0,1+0,4×0,05=0,08; P(A|H)=0,06/0,08=3/4."
+    },
+    {
+      "item_id": "THPT-G12-B19-A07",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O07",
+      "role": "SGK_APPLICATION",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 3,
+      "stem": "Tỷ lệ giao ca sáng 45%, tỷ lệ giao đúng là 90%; ca tối 55%, tỷ lệ giao đúng là 80%. Tính P(giao đúng), sau đó P(ca tối|giao đúng).",
+      "answer": "`169/200 và 88/169`.",
+      "solution": "P(Đ)=0,45×0,9+0,55×0,8=0,845=169/200; P(tối|Đ)=0,44/0,845=88/169."
+    },
+    {
+      "item_id": "THPT-G12-B19-W07",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O07",
+      "role": "SGK_WRITTEN",
+      "source_role": "ORIGINAL_AUTHORED",
+      "level": 4,
+      "stem": "Một trung tâm chọn hồ sơ: 65% thuộc nhóm A đạt 90%, 35% thuộc nhóm B đạt 60%. Tính P(đạt), P(A|đạt) và giải thích vì sao P(A|đạt) khác 90%.",
+      "answer": "`159/200 và 39/53`.",
+      "solution": "P(Đ)=0,65×0,9+0,35×0,6=0,585+0,21=0,795=159/200. P(A|Đ)=0,585/0,795=39/53. 90% là P(Đ|A), khác chiều.",
+      "rubric": [
+        "1đ gọi A/B và đặt điều kiện; 1đ P(A∩Đ)=0,585; 1đ P(B∩Đ)=0,21 và toàn phần 0,795; 1đ hậu nghiệm 39/53; 1đ phân biệt chiều điều kiện, diễn giải."
+      ]
+    }
+  ],
+  "help": [
+    {
+      "help_id": "HELP-G12-B18-01",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O01",
+      "steps": [
+        "(1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Thông tin mới làm thay đổi tập kết quả có thể xảy ra.",
+        "(2) Rà tiền đề: Biến cố là tập con của không gian mẫu; mỗi kết quả đồng khả năng có cùng xác suất.",
+        "(3) Nhận diện bẫy: Không dùng toàn bộ Ω sau khi đã biết B.",
+        "(4) Xem lại `EX-G12-B18-O01` nhưng che bước kết quả, tự làm ra giấy.",
+        "(5) Thử lại item `THPT-G12-B18-C01` trước, sau đó `THPT-G12-B18-P01`; chỉ mở đáp án khi đã thử, không ghi Mastery."
+      ],
+      "return_item": "THPT-G12-B18-C01",
+      "practice_item": "THPT-G12-B18-P01"
+    },
+    {
+      "help_id": "HELP-G12-B18-02",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O02",
+      "steps": [
+        "(1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Đếm thô không còn đủ khi xác suất các kết quả khác nhau.",
+        "(2) Rà tiền đề: P(A∩B) là xác suất hai biến cố đồng thời xảy ra; xác suất biến cố >0.",
+        "(3) Nhận diện bẫy: Không dùng P(A) làm mẫu số cho P(A|B).",
+        "(4) Xem lại `EX-G12-B18-O02` nhưng che bước kết quả, tự làm ra giấy.",
+        "(5) Thử lại item `THPT-G12-B18-C02` trước, sau đó `THPT-G12-B18-P02`; chỉ mở đáp án khi đã thử, không ghi Mastery."
+      ],
+      "return_item": "THPT-G12-B18-C02",
+      "practice_item": "THPT-G12-B18-P02"
+    },
+    {
+      "help_id": "HELP-G12-B18-03",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O03",
+      "steps": [
+        "(1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Đổi hướng câu hỏi làm thay đổi mẫu số và thường thay đổi đáp án.",
+        "(2) Rà tiền đề: Định nghĩa xác suất có điều kiện, bảng giao hai nhóm.",
+        "(3) Nhận diện bẫy: P(A|B) không bằng P(B|A) chỉ vì giao là cùng một biến cố.",
+        "(4) Xem lại `EX-G12-B18-O03` nhưng che bước kết quả, tự làm ra giấy.",
+        "(5) Thử lại item `THPT-G12-B18-C03` trước, sau đó `THPT-G12-B18-P03`; chỉ mở đáp án khi đã thử, không ghi Mastery."
+      ],
+      "return_item": "THPT-G12-B18-C03",
+      "practice_item": "THPT-G12-B18-P03"
+    },
+    {
+      "help_id": "HELP-G12-B18-04",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O04",
+      "steps": [
+        "(1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Muốn biết thông tin B có làm thay đổi cơ hội xảy ra A hay không.",
+        "(2) Rà tiền đề: Độc lập nghĩa là P(A∩B)=P(A)P(B).",
+        "(3) Nhận diện bẫy: Xung khắc khác độc lập; không áp dụng P(A|B)=P(A) khi chưa có chứng cứ.",
+        "(4) Xem lại `EX-G12-B18-O04` nhưng che bước kết quả, tự làm ra giấy.",
+        "(5) Thử lại item `THPT-G12-B18-C04` trước, sau đó `THPT-G12-B18-P04`; chỉ mở đáp án khi đã thử, không ghi Mastery."
+      ],
+      "return_item": "THPT-G12-B18-C04",
+      "practice_item": "THPT-G12-B18-P04"
+    },
+    {
+      "help_id": "HELP-G12-B18-05",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O05",
+      "steps": [
+        "(1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Dữ liệu thống kê thường báo kết quả theo từng nhóm khác kích thước.",
+        "(2) Rà tiền đề: Đọc tổng hàng, tổng cột, ô giao trên bảng.",
+        "(3) Nhận diện bẫy: Đổi P(Kết quả|Nhóm) thành P(Nhóm|Kết quả) khi đọc bảng 2×2.",
+        "(4) Xem lại `EX-G12-B18-O05` nhưng che bước kết quả, tự làm ra giấy.",
+        "(5) Thử lại item `THPT-G12-B18-C05` trước, sau đó `THPT-G12-B18-P05`; chỉ mở đáp án khi đã thử, không ghi Mastery."
+      ],
+      "return_item": "THPT-G12-B18-C05",
+      "practice_item": "THPT-G12-B18-P05"
+    },
+    {
+      "help_id": "HELP-G12-B18-06",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O06",
+      "steps": [
+        "(1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Hai điều kiện xảy ra liên tiếp thường phải nhân xác suất của từng bước.",
+        "(2) Rà tiền đề: Công thức xác suất có điều kiện với mẫu số dương.",
+        "(3) Nhận diện bẫy: Công thức nhân xác suất có điều kiện không yêu cầu A,B độc lập.",
+        "(4) Xem lại `EX-G12-B18-O06` nhưng che bước kết quả, tự làm ra giấy.",
+        "(5) Thử lại item `THPT-G12-B18-C06` trước, sau đó `THPT-G12-B18-P06`; chỉ mở đáp án khi đã thử, không ghi Mastery."
+      ],
+      "return_item": "THPT-G12-B18-C06",
+      "practice_item": "THPT-G12-B18-P06"
+    },
+    {
+      "help_id": "HELP-G12-B18-07",
+      "lesson_id": "B18",
+      "outcome_id": "G12-CHVI-B18-O07",
+      "steps": [
+        "(1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Kết quả lượt đầu làm thay đổi cơ hội của lượt sau.",
+        "(2) Rà tiền đề: Tính xác suất theo số lượng và công thức nhân; phân biệt hoàn lại/không hoàn lại.",
+        "(3) Nhận diện bẫy: Sau rút không hoàn lại, mẫu số lượt sau giảm 1; không bỏ sót thứ tự khác.",
+        "(4) Xem lại `EX-G12-B18-O07` nhưng che bước kết quả, tự làm ra giấy.",
+        "(5) Thử lại item `THPT-G12-B18-C07` trước, sau đó `THPT-G12-B18-P07`; chỉ mở đáp án khi đã thử, không ghi Mastery."
+      ],
+      "return_item": "THPT-G12-B18-C07",
+      "practice_item": "THPT-G12-B18-P07"
+    },
+    {
+      "help_id": "HELP-G12-B19-01",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O01",
+      "steps": [
+        "(1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Khi không biết trước A xảy ra hay không, cần xét đủ mọi đường dẫn đến kết quả.",
+        "(2) Rà tiền đề: Biến cố đối; P(Ā)=1−P(A); hợp của biến cố xung khắc.",
+        "(3) Nhận diện bẫy: B có thể xảy ra theo hai nguyên nhân khác nhau; không thể chọn chỉ một nhánh.",
+        "(4) Xem lại `EX-G12-B19-O01` nhưng che bước kết quả, tự làm ra giấy.",
+        "(5) Thử lại item `THPT-G12-B19-C01` trước, sau đó `THPT-G12-B19-P01`; chỉ mở đáp án khi đã thử, không ghi Mastery."
+      ],
+      "return_item": "THPT-G12-B19-C01",
+      "practice_item": "THPT-G12-B19-P01"
+    },
+    {
+      "help_id": "HELP-G12-B19-02",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O02",
+      "steps": [
+        "(1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Kết quả tổng thể được tạo từ nhiều nhóm có tỷ lệ và xác suất riêng.",
+        "(2) Rà tiền đề: Biến cố đối và công thức nhân xác suất.",
+        "(3) Nhận diện bẫy: Không lấy trung bình cộng hai tỷ lệ khi tỷ lệ nguồn khác nhau.",
+        "(4) Xem lại `EX-G12-B19-O02` nhưng che bước kết quả, tự làm ra giấy.",
+        "(5) Thử lại item `THPT-G12-B19-C02` trước, sau đó `THPT-G12-B19-P02`; chỉ mở đáp án khi đã thử, không ghi Mastery."
+      ],
+      "return_item": "THPT-G12-B19-C02",
+      "practice_item": "THPT-G12-B19-P02"
+    },
+    {
+      "help_id": "HELP-G12-B19-03",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O03",
+      "steps": [
+        "(1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Hình cây làm rõ nhân trên nhánh và cộng giữa các đường không trùng.",
+        "(2) Rà tiền đề: Công thức nhân và biến cố đối.",
+        "(3) Nhận diện bẫy: Nhân theo đường, cộng các lá phù hợp; các xác suất tại cùng một nút có tổng 1.",
+        "(4) Xem lại `EX-G12-B19-O03` nhưng che bước kết quả, tự làm ra giấy.",
+        "(5) Thử lại item `THPT-G12-B19-C03` trước, sau đó `THPT-G12-B19-P03`; chỉ mở đáp án khi đã thử, không ghi Mastery."
+      ],
+      "return_item": "THPT-G12-B19-C03",
+      "practice_item": "THPT-G12-B19-P03"
+    },
+    {
+      "help_id": "HELP-G12-B19-04",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O04",
+      "steps": [
+        "(1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Khi thấy kết quả B cần suy xác suất nguyên nhân A, không thể dùng P(B|A) làm đáp án.",
+        "(2) Rà tiền đề: Công thức xác suất toàn phần và P(B)>0.",
+        "(3) Nhận diện bẫy: P(A|B) không bằng P(B|A); dữ kiện nhánh còn lại là cần thiết.",
+        "(4) Xem lại `EX-G12-B19-O04` nhưng che bước kết quả, tự làm ra giấy.",
+        "(5) Thử lại item `THPT-G12-B19-C04` trước, sau đó `THPT-G12-B19-P04`; chỉ mở đáp án khi đã thử, không ghi Mastery."
+      ],
+      "return_item": "THPT-G12-B19-C04",
+      "practice_item": "THPT-G12-B19-P04"
+    },
+    {
+      "help_id": "HELP-G12-B19-05",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O05",
+      "steps": [
+        "(1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Một phép thử tốt vẫn có thể tạo nhiều kết quả dương tính giả nếu hiện tượng hiếm.",
+        "(2) Rà tiền đề: Tỉ lệ nền, độ nhạy, độ đặc hiệu, xác suất dương tính giả.",
+        "(3) Nhận diện bẫy: Độ nhạy cao không có nghĩa P(có đặc điểm|dương) cao nếu tỷ lệ nền thấp.",
+        "(4) Xem lại `EX-G12-B19-O05` nhưng che bước kết quả, tự làm ra giấy.",
+        "(5) Thử lại item `THPT-G12-B19-C05` trước, sau đó `THPT-G12-B19-P05`; chỉ mở đáp án khi đã thử, không ghi Mastery."
+      ],
+      "return_item": "THPT-G12-B19-C05",
+      "practice_item": "THPT-G12-B19-P05"
+    },
+    {
+      "help_id": "HELP-G12-B19-06",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O06",
+      "steps": [
+        "(1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Các lớp nguồn có thể khác kích thước và mức rủi ro.",
+        "(2) Rà tiền đề: Hai nhánh toàn phần, nhân trên nhánh và cộng.",
+        "(3) Nhận diện bẫy: Tỉ lệ chung phải theo trọng số; kiểm tổng tỉ lệ nguồn và diễn giải phần trăm.",
+        "(4) Xem lại `EX-G12-B19-O06` nhưng che bước kết quả, tự làm ra giấy.",
+        "(5) Thử lại item `THPT-G12-B19-C06` trước, sau đó `THPT-G12-B19-P06`; chỉ mở đáp án khi đã thử, không ghi Mastery."
+      ],
+      "return_item": "THPT-G12-B19-C06",
+      "practice_item": "THPT-G12-B19-P06"
+    },
+    {
+      "help_id": "HELP-G12-B19-07",
+      "lesson_id": "B19",
+      "outcome_id": "G12-CHVI-B19-O07",
+      "steps": [
+        "(1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Đề thi tự luận thường đảo điều kiện sau khi đã tính xác suất tổng thể.",
+        "(2) Rà tiền đề: Sơ đồ cây, xác suất giao, toàn phần, Bayes.",
+        "(3) Nhận diện bẫy: Không dừng ở P(B), phải chia Bayes khi yêu cầu “biết đã xảy ra B”.",
+        "(4) Xem lại `EX-G12-B19-O07` nhưng che bước kết quả, tự làm ra giấy.",
+        "(5) Thử lại item `THPT-G12-B19-C07` trước, sau đó `THPT-G12-B19-P07`; chỉ mở đáp án khi đã thử, không ghi Mastery."
+      ],
+      "return_item": "THPT-G12-B19-C07",
+      "practice_item": "THPT-G12-B19-P07"
+    }
+  ],
+  "end_references": [
+    {
+      "placement_id": "G12-CHVI-END-P01",
+      "item_id": "THPT-G12-B18-A01",
+      "outcome_id": "G12-CHVI-B18-O01"
+    },
+    {
+      "placement_id": "G12-CHVI-END-P02",
+      "item_id": "THPT-G12-B18-A02",
+      "outcome_id": "G12-CHVI-B18-O02"
+    },
+    {
+      "placement_id": "G12-CHVI-END-P03",
+      "item_id": "THPT-G12-B18-A03",
+      "outcome_id": "G12-CHVI-B18-O03"
+    },
+    {
+      "placement_id": "G12-CHVI-END-P04",
+      "item_id": "THPT-G12-B18-A04",
+      "outcome_id": "G12-CHVI-B18-O04"
+    },
+    {
+      "placement_id": "G12-CHVI-END-P05",
+      "item_id": "THPT-G12-B18-A05",
+      "outcome_id": "G12-CHVI-B18-O05"
+    },
+    {
+      "placement_id": "G12-CHVI-END-P06",
+      "item_id": "THPT-G12-B18-A06",
+      "outcome_id": "G12-CHVI-B18-O06"
+    },
+    {
+      "placement_id": "G12-CHVI-END-P07",
+      "item_id": "THPT-G12-B18-A07",
+      "outcome_id": "G12-CHVI-B18-O07"
+    },
+    {
+      "placement_id": "G12-CHVI-END-P08",
+      "item_id": "THPT-G12-B19-A01",
+      "outcome_id": "G12-CHVI-B19-O01"
+    },
+    {
+      "placement_id": "G12-CHVI-END-P09",
+      "item_id": "THPT-G12-B19-A02",
+      "outcome_id": "G12-CHVI-B19-O02"
+    },
+    {
+      "placement_id": "G12-CHVI-END-P10",
+      "item_id": "THPT-G12-B19-A03",
+      "outcome_id": "G12-CHVI-B19-O03"
+    },
+    {
+      "placement_id": "G12-CHVI-END-P11",
+      "item_id": "THPT-G12-B19-A04",
+      "outcome_id": "G12-CHVI-B19-O04"
+    },
+    {
+      "placement_id": "G12-CHVI-END-P12",
+      "item_id": "THPT-G12-B19-A05",
+      "outcome_id": "G12-CHVI-B19-O05"
+    },
+    {
+      "placement_id": "G12-CHVI-END-P13",
+      "item_id": "THPT-G12-B19-A06",
+      "outcome_id": "G12-CHVI-B19-O06"
+    },
+    {
+      "placement_id": "G12-CHVI-END-P14",
+      "item_id": "THPT-G12-B19-A07",
+      "outcome_id": "G12-CHVI-B19-O07"
+    }
+  ]
+}
