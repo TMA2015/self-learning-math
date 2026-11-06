@@ -32,7 +32,9 @@ const run=()=>{
  const chapterIndex=ends.findIndex(end=>lesson<=end);
  if(chapters[chapterIndex]!==chapter)return; // fail closed on unexpected source mapping
  const article=document.querySelector(".md-content__inner");
- if(!article||article.querySelector("[data-sgk-lesson-nav]"))return;
+ if(!article)return;
+ if(grade===10)article.classList.add("thpt-g10-knowledge-ap1");
+ if(article.querySelector("[data-sgk-lesson-nav]"))return;
  const root=match[1]+(grade===10?"":"lop-"+grade+"/");
  const lessonUrl=n=>root+"chuong-"+chapters[ends.findIndex(end=>n<=end)]+"/bai-"+n+"/";
  const sectionRoot=root+"chuong-"+chapter+"/";
