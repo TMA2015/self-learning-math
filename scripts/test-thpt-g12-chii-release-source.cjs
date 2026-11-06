@@ -73,7 +73,7 @@ for(const n of [6,7,8]){
 
 §k\vec a=(kx_1;ky_1;kz_1).§`.replaceAll("§",()=>String.fromCharCode(36).repeat(2));
     assert(expected.includes(old),"Source-locked B08 original equations must not change");
-    expected=expected.replace(old,corrected);
+    expected=expected.replace(old,()=>corrected); // function preserves literal TeX $
    }
   }
   assert(page.includes(expected),"Original pedagogy source changed outside approved AP presentation "+id+" "+b.name);
