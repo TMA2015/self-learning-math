@@ -178,7 +178,7 @@ const helpBlocks=(root,bank,topic)=>{
 // DELTA_A_UI: one public exercise at a time per stage; canonical IDs and draft
 // inputs stay intact. Existing question-level Submit / Q16 Final Submit own keys.
 const compactDeck=(holder,cards,label)=>{
- if(cards.length<2)return;
+ if(cards.length<1)return;
  const jump=mk("nav","g11-supp-deck-jump");
  jump.setAttribute("aria-label","Chọn câu "+label);
  const progress=mk("p","g11-supp-deck-progress");
