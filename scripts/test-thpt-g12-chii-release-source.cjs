@@ -65,13 +65,13 @@ for(const n of [6,7,8]){
   if((n===7||n===8)&&/bản chất|Hình thành/i.test(b.name)){
    expected=expected.replace(/^### 2\.([1-5])\./gm,"### 3.$1.");
    if(n===8){
-    const old=String.raw`$\vec a+\vec b=(x_1+x_2;y_1+y_2;z_1+z_2),$
-$\vec a-\vec b=(x_1-x_2;y_1-y_2;z_1-z_2),\quad k\vec a=(kx_1;ky_1;kz_1).$`;
-    const corrected=String.raw`$\vec a+\vec b=(x_1+x_2;y_1+y_2;z_1+z_2),$
+    const old=String.raw`§\vec a+\vec b=(x_1+x_2;y_1+y_2;z_1+z_2),§
+§\vec a-\vec b=(x_1-x_2;y_1-y_2;z_1-z_2),\quad k\vec a=(kx_1;ky_1;kz_1).§`.replaceAll("§",String.fromCharCode(36).repeat(2));
+    const corrected=String.raw`§\vec a+\vec b=(x_1+x_2;y_1+y_2;z_1+z_2),§
 
-$\vec a-\vec b=(x_1-x_2;y_1-y_2;z_1-z_2),$
+§\vec a-\vec b=(x_1-x_2;y_1-y_2;z_1-z_2),§
 
-$k\vec a=(kx_1;ky_1;kz_1).$`;
+§k\vec a=(kx_1;ky_1;kz_1).§`.replaceAll("§",String.fromCharCode(36).repeat(2));
     assert(expected.includes(old),"Source-locked B08 original equations must not change");
     expected=expected.replace(old,corrected);
    }
