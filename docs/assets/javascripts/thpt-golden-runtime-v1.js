@@ -30,7 +30,7 @@
     if(!dialog.open)dialog.showModal();
    },
    close,
-   get open(){return dialog.open}
+   get isOpen(){return dialog.open}
   });
  };
  /* One canonical record is rendered by its academic adapter. The shared nav
