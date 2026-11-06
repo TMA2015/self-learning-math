@@ -29,7 +29,7 @@ These four verified-copy graduation **mock** papers expose transfer demands beyo
 
 ## Shared bank ↔ future Topic path: pre-placement study, **not** Topic implementation
 
-The existing [Project Source 08](../../../../../../08_THPT_DUAL_COMPLETE_LEARNING_PATHS_AND_SHARED_RESOURCES_v2.0.md) concept is **one `ITEM_ID`**, with many `placement_id/role/level` values. These are *conceptual topic correlations only*, not definitive `topic_id` or new content and not a new standard. Native SGK Chuyên đề KNTT book samples supplied by owner show:
+The existing Project Source `08_THPT_DUAL_COMPLETE_LEARNING_PATHS_AND_SHARED_RESOURCES_v2.0.md` (owner-provided project authority, not a GitHub file link) concept is **one `ITEM_ID`**, with many `placement_id/role/level` values. These are *conceptual topic correlations only*, not definitive `topic_id` or new content and not a new standard. Native SGK Chuyên đề KNTT book samples supplied by owner show:
 
 - **G10 ChII `W04-ANCHOR`** (2-variable linear programming) ↔ KNTT **Chuyên đề học tập Toán 12, Chuyên đề 2, Bài 3** (quy hoạch tuyến tính, tập khả thi, mô hình hóa). Possible **prerequisite/shared practice candidate** only; Topic path must teach its own full knowledge.
 - **G12 ChI `B02-W02`** (one-variable derivative optimization) ↔ KNTT **Chuyên đề học tập Toán 12, Chuyên đề 2, Bài 4** (đạo hàm giải bài toán tối ưu thực tế); appropriate topic-activity candidate after outcome-level comparison.
