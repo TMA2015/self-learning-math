@@ -99,6 +99,11 @@ on:
       - 'scripts/test-thpt-g11-core-practice-math-browser.cjs'
       - 'scripts/test-thpt-g11-supplement-release-source.cjs'
       - 'scripts/test-thpt-g11-supplement-release-browser.cjs'
+      - 'scripts/test-thpt-sgk-owner-p2-ui-source.cjs'
+      - 'scripts/test-thpt-sgk-lesson-nav-p2-browser.cjs'
+      - 'scripts/test-thpt-sgk-selfcheck-p2-browser.cjs'
+      - 'docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js'
+      - 'docs/assets/stylesheets/thpt-sgk-lesson-nav-v1.css'
       - 'scripts/test-thpt-g12-chi-release-source.cjs'
       - 'scripts/test-thpt-g12-chi-release-browser.cjs'
       - 'scripts/test-thpt-g12-chii-release-source.cjs'
@@ -341,6 +346,14 @@ jobs:
         run: node scripts/test-thpt-g11-chviii-release-integration.cjs
       - name: Guard G11 ChIX R00 exact source, five SVG, canonical bank and voluntary Q16
         run: node scripts/test-thpt-g11-chix-release-integration.cjs
+      - name: Guard owner P2 SGK UI-only source parity, 79 lessons, G11 math and supplement
+        run: |
+          node --check docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js
+          node --check docs/assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js
+          node --check docs/assets/javascripts/thpt-g11-supplement-p99-p109-r00.js
+          node --check scripts/test-thpt-sgk-lesson-nav-p2-browser.cjs
+          node --check scripts/test-thpt-sgk-selfcheck-p2-browser.cjs
+          node scripts/test-thpt-sgk-owner-p2-ui-source.cjs
       - name: Guard G10 ChIX source-locked public formative and reviewed D5/D6
         run: |
           node scripts/test-thpt-g10-chix-reviewed-stage3.cjs
@@ -498,6 +511,10 @@ jobs:
         run: node scripts/test-thpt-g12-chv-release-browser.cjs
       - name: G12 SGK ChVI B18–B19 Golden, 56 canonical, 14 D6, 14 Q16 END · 390 / 820 / 1440
         run: node scripts/test-thpt-g12-chvi-release-browser.cjs
+      - name: Owner P2 SGK 79 knowledge lesson unified navigation · 390 / 820 / 1440
+        run: node scripts/test-thpt-sgk-lesson-nav-p2-browser.cjs
+      - name: Owner P2 SGK 24 chapter self-check math & Q16 screenshot sweep · 390 / 820 / 1440
+        run: node scripts/test-thpt-sgk-selfcheck-p2-browser.cjs
       - name: Academic Presentation QA pilot · MathJax overflow / 390 820 1440
         run: node scripts/test-thpt-academic-presentation-browser.cjs
       - name: Academic Presentation QA G10 B03 · 390 820 1440

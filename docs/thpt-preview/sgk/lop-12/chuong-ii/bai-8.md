@@ -16,16 +16,19 @@ Tiền đề tối thiểu: quy tắc cộng vectơ; phân tích $\vec a=x\vec i
 
 ## 3. Bản chất và điều kiện áp dụng
 
-### 2.1. Vì sao cộng/trừ/nhân số theo từng tọa độ?
+### 3.1. Vì sao cộng/trừ/nhân số theo từng tọa độ?
 
 Giả sử $\vec a$ làm thay đổi vị trí $(x_1;y_1;z_1)$ và $\vec b$ làm thay đổi $(x_2;y_2;z_2)$. Ghép hai bước đi thì độ dịch chuyển theo mỗi trục **cộng độc lập**. Từ tính duy nhất của phân tích theo $\vec i,\vec j,\vec k$, ta được
 
 $$\vec a+\vec b=(x_1+x_2;y_1+y_2;z_1+z_2),$$
-$$\vec a-\vec b=(x_1-x_2;y_1-y_2;z_1-z_2),\quad k\vec a=(kx_1;ky_1;kz_1).$$
+
+$$\vec a-\vec b=(x_1-x_2;y_1-y_2;z_1-z_2),$$
+
+$$k\vec a=(kx_1;ky_1;kz_1).$$
 
 **Cùng phương:** hai vectơ $\vec a,\vec b$ cùng phương khi một vectơ là bội số thực của vectơ kia, nghĩa là $\vec a=k\vec b$ hoặc $\vec b=k\vec a$ (tùy vectơ nào khác không). Nếu **cả hai khác không**, kiểm từng thành phần với cùng một $k$; không viết các tỉ số khi mẫu tọa độ bằng 0. Vectơ-không là ngoại lệ: trong quy ước vectơ, nó cùng phương với mọi vectơ, nhưng không có hướng riêng. Không suy rằng hai vectơ cùng phương thì cùng hướng.
 
-### 2.2. Trung điểm và trọng tâm không phải là trung bình độ dài
+### 3.2. Trung điểm và trọng tâm không phải là trung bình độ dài
 
 Nếu $M$ là trung điểm $AB$ thì $\overrightarrow{OM}=\tfrac12(\overrightarrow{OA}+\overrightarrow{OB})$, do đó
 
@@ -37,7 +40,7 @@ $$G\left(\frac{x_A+x_B+x_C}{3};\frac{y_A+y_B+y_C}{3};\frac{z_A+z_B+z_C}{3}\right
 
 **Vì sao:** trung điểm/trọng tâm cân bằng vị trí, không cân bằng khoảng cách tới gốc. Điều này đúng trong mọi hệ trực giao $Oxyz$ với cùng đơn vị.
 
-### 2.3. Tích vô hướng từ sự độc lập của ba phương vuông góc
+### 3.3. Tích vô hướng từ sự độc lập của ba phương vuông góc
 
 Vì $\vec i,\vec j,\vec k$ đôi một vuông góc và có độ dài 1, tích vô hướng của hai vectơ theo tọa độ chỉ còn phần trên cùng trục:
 
@@ -49,7 +52,7 @@ $$\cos\theta=\frac{\vec a\cdot\vec b}{|\vec a|\,|\vec b|}.$$
 
 Khi đo góc, kiểm trước $|\vec a|>0,|\vec b|>0$; số thực trong biểu thức cos nằm trong $[-1;1]$. Nếu do làm tròn thu được 1,0000001 thì làm tròn/sửa sai số chứ không kết luận góc vô nghĩa một cách máy móc.
 
-### 2.4. Độ dài và khoảng cách không gian
+### 3.4. Độ dài và khoảng cách không gian
 
 Từ $\vec a\cdot\vec a=|\vec a|^2$, suy ra
 
@@ -61,26 +64,28 @@ $$AB=\sqrt{(x_B-x_A)^2+(y_B-y_A)^2+(z_B-z_A)^2}.$$
 
 **Vì sao chọn:** đề hỏi một độ dài không gian hay khoảng cách từ vị trí này đến vị trí kia thì lập vectơ hiệu trước, sau đó lấy căn tổng bình phương; không cộng ba độ chênh tuyến tính. Không dùng công thức khoảng cách để suy góc nếu dữ liệu góc đã cho thuận tiện để dùng tích vô hướng hơn.
 
-### 2.5. Mô hình hóa và kiểm nghiệm nghiệm vật lý
+### 3.5. Mô hình hóa và kiểm nghiệm nghiệm vật lý
 
 Trong hệ đơn vị thống nhất, nếu điểm $A$ đổi vị trí thành $B$ trong $t$ giây thì độ dời là $\overrightarrow{AB}$, tốc độ **trung bình theo độ dài độ dời** là $|\overrightarrow{AB}|/t$ (với $t>0$). Đây không nhất thiết là **tốc độ trung bình theo quãng đường đã đi** nếu đường đi cong hoặc đổi hướng. Cần giải thích giả thiết chuyển động thẳng khi dùng một bước vectơ để thay đường bay thật.
 
 ## 4. Đọc hình minh họa
 
-**FIG-G12-CHII-B08-R00.svg:** $A,B$ được nối bằng mũi tên $\overrightarrow{AB}$; nét phụ giúp nhìn biến thiên theo ba chiều. Chỉ dẫn đọc: xác định đầu $A$, cuối $B$, tách từng thay đổi $x,y,z$ trước khi dùng công thức độ dài. Hình minh họa tự tạo, không thay thế giả thiết của đề.
-
-| OUTCOME_ID | Triệu chứng sai | D6 quay lại |
-|---|---|---|
-| O01 | Trộn hai tọa độ hoặc bỏ dấu âm khi nhân số | §2.1 / EX01: tính riêng từng trục |
-| O02 | Lấy tỉ số có mẫu bằng 0, suy cùng hướng từ cùng phương | §2.1 / EX02: kiểm $\vec u=k\vec v$ và dấu k |
-| O03 | Lấy trung bình độ dài thay vì vị trí | §2.2 / EX03: tính ba tọa độ độc lập |
-| O04 | Chia cho $|\vec a|=0$ khi tính cos | §2.3 / EX04: kiểm điều kiện khác không |
-| O05 | Quên dấu hiệu $A\to B$ hoặc cộng tuyến tính | §2.4 / EX05: vectơ hiệu rồi căn tổng bình phương |
-| O06 | Nhầm độ dài độ dời với quãng đường cong | §2.5 / EX06: nêu giả thiết chuyển động thẳng và đơn vị |
-
-**Tự đánh giá kết thúc bài:** Em có thể nói khi nào dùng tích vô hướng, khi nào dùng khoảng cách, khi nào dùng phép cộng tọa độ? Hãy làm lại 3 Core theo ba outcome O01/O04/O05; nếu chưa giải thích được *vì sao* thì quay lại mục tương ứng trước khi xem tự đối chiếu cuối chương.
+**Cách đọc hình:** $A,B$ được nối bằng mũi tên $\overrightarrow{AB}$; nét phụ giúp nhìn biến thiên theo ba chiều. Chỉ dẫn đọc: xác định đầu $A$, cuối $B$, tách từng thay đổi $x,y,z$ trước khi dùng công thức độ dài. Hình minh họa tự tạo, không thay thế giả thiết của đề.
 
 <figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/FIG-G12-CHII-B08-R00.svg" alt="Hình minh họa Bài 8 · Biểu thức tọa độ của các phép toán vectơ" /><figcaption>Hình gốc của học liệu Bài 8, đọc cùng hướng dẫn ngay phía trên.</figcaption></figure>
+
+### Các lỗi thường gặp và cách tự khắc phục
+
+| Ý | Triệu chứng sai | D6 quay lại |
+|---|---|---|
+| 1 | Trộn hai tọa độ hoặc bỏ dấu âm khi nhân số | §3.1 / ví dụ 1: tính riêng từng trục |
+| 2 | Lấy tỉ số có mẫu bằng 0, suy cùng hướng từ cùng phương | §3.1 / ví dụ 2: kiểm $\vec u=k\vec v$ và dấu k |
+| 3 | Lấy trung bình độ dài thay vì vị trí | §3.2 / ví dụ 3: tính ba tọa độ độc lập |
+| 4 | Chia cho $|\vec a|=0$ khi tính cos | §3.3 / ví dụ 4: kiểm điều kiện khác không |
+| 5 | Quên dấu hiệu $A\to B$ hoặc cộng tuyến tính | §3.4 / ví dụ 5: vectơ hiệu rồi căn tổng bình phương |
+| 6 | Nhầm độ dài độ dời với quãng đường cong | §3.5 / ví dụ 6: nêu giả thiết chuyển động thẳng và đơn vị |
+
+**Tự đánh giá kết thúc bài:** Em có thể nói khi nào dùng tích vô hướng, khi nào dùng khoảng cách, khi nào dùng phép cộng tọa độ? Hãy làm lại 3 Core theo ba outcome O01/O04/O05; nếu chưa giải thích được *vì sao* thì quay lại mục tương ứng trước khi xem tự đối chiếu cuối chương.
 
 ## 5. Ví dụ có suy luận và lựa chọn phương pháp
 

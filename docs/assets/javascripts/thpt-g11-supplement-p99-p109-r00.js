@@ -172,6 +172,46 @@ const helpBlocks=(root,bank,topic)=>{
   details.append(summary,steps,a);root.append(details);
  }
 };
+// DELTA_A_UI: one public exercise at a time per stage; canonical IDs and draft
+// inputs stay intact. Existing question-level Submit / Q16 Final Submit own keys.
+const compactDeck=(holder,cards,label)=>{
+ if(cards.length<2)return;
+ const jump=mk("nav","g11-supp-deck-jump");
+ jump.setAttribute("aria-label","Chọn câu "+label);
+ const progress=mk("p","g11-supp-deck-progress");
+ const controls=mk("div","g11-supp-deck-controls");
+ const prev=mk("button","g11-supp-deck-step","← Câu trước");
+ const next=mk("button","g11-supp-deck-step","Câu tiếp →");
+ prev.type=next.type="button";controls.append(prev,next);
+ let cursor=Math.max(0,cards.findIndex(card=>card.id&&location.hash==="#"+card.id));
+ const buttons=cards.map((card,i)=>{
+  const button=mk("button","g11-supp-deck-number",String(i+1));
+  button.type="button";button.setAttribute("aria-label",label+" · Câu "+(i+1));
+  button.addEventListener("click",()=>{cursor=i;show()});jump.append(button);
+  return button;
+ });
+ const show=()=>{
+  cards.forEach((card,i)=>{card.hidden=i!==cursor});
+  buttons.forEach((button,i)=>{
+   button.classList.toggle("is-current",i===cursor);
+   if(i===cursor)button.setAttribute("aria-current","step");
+   else button.removeAttribute("aria-current");
+  });
+  progress.textContent=label+" · Câu "+(cursor+1)+" / "+cards.length;
+  prev.disabled=cursor===0;next.disabled=cursor===cards.length-1;
+  if(cards[cursor].isConnected)typeset(cards[cursor]);
+ };
+ prev.addEventListener("click",()=>{if(cursor){cursor--;show()}});
+ next.addEventListener("click",()=>{if(cursor<cards.length-1){cursor++;show()}});
+ const top=mk("div","g11-supp-deck-top");top.append(progress,jump);
+ holder.insertBefore(top,cards[0]);holder.append(controls);
+ holder.dataset.g11SuppDeck=label;
+ window.addEventListener("hashchange",()=>{
+  const i=cards.findIndex(card=>card.id&&location.hash==="#"+card.id);
+  if(i>=0){cursor=i;show();cards[i].scrollIntoView({block:"nearest"})}
+ });
+ show();
+};
 const course=(root,bank,view)=>{
  miniNav(root);
  learningPath(root);
@@ -206,18 +246,24 @@ const course=(root,bank,view)=>{
   const written=bank.written.filter(q=>groupOf(q)===topic);
   const coreSection=mk("div","g11-supp-learning-stage");
   coreSection.append(mk("h3","","1. Core · Tự thử kiến thức"));
-  core.forEach((q,i)=>coreSection.append(exerciseCard(q,"formative",i+1)));
+  const coreCards=core.map((q,i)=>exerciseCard(q,"formative",i+1));
+   coreCards.forEach(card=>coreSection.append(card));
+   compactDeck(coreSection,coreCards,"Core");
   if(!core.length)coreSection.append(paragraph("Ôn tập và hệ thống lại phương pháp trước khi thực hành."));
   section.append(coreSection);
   const practiceSection=mk("div","g11-supp-learning-stage");
   practiceSection.append(mk("h3","","2. Luyện tập và vận dụng"));
-  practiceItems.forEach((q,i)=>practiceSection.append(exerciseCard(q,"formative",i+1)));
+  const practiceCards=practiceItems.map((q,i)=>exerciseCard(q,"formative",i+1));
+   practiceCards.forEach(card=>practiceSection.append(card));
+   compactDeck(practiceSection,practiceCards,"Luyện tập và vận dụng");
   section.append(practiceSection);
   if(written.length){
    const writtenSection=mk("div","g11-supp-learning-stage");
    writtenSection.append(mk("h3","","3. Tự luận · Trình bày lời giải"));
    writtenSection.append(paragraph("Viết cách làm của em trước khi nhấn Nộp. Bài tự luận được tự đối chiếu, không tự chấm điểm."));
-   written.forEach((q,i)=>writtenSection.append(exerciseCard(q,"written",i+1)));
+   const writtenCards=written.map((q,i)=>exerciseCard(q,"written",i+1));
+    writtenCards.forEach(card=>writtenSection.append(card));
+    compactDeck(writtenSection,writtenCards,"Tự luận");
    section.append(writtenSection);
   }
   helpBlocks(section,bank,topic);
@@ -266,7 +312,9 @@ const practice=(root,bank,kind)=>{
   const section=mk("section","g11-supp-topic");
   section.id="g11-supp-group-"+group.toLowerCase();
   section.append(mk("h2","",topicName[group]||group));
-  items.filter(x=>groupOf(x)===group).forEach((q,i)=>section.append(exerciseCard(q,kind,i+1)));
+  const cards=items.filter(x=>groupOf(x)===group).map((q,i)=>exerciseCard(q,kind,i+1));
+   cards.forEach(card=>section.append(card));
+   compactDeck(section,cards,kind==="written"?"Tự luận":"Core và Luyện tập");
   root.append(section);
  }
  typeset(root);
@@ -304,7 +352,8 @@ const selfCheck=(root,bank)=>{
   status.textContent="Đã nộp. Hãy đối chiếu từng bước giải; kết quả không được chấm điểm hoặc lưu lại.";
   typeset(form);
  });
- root.append(form,button,status);typeset(root);
+ compactDeck(form,[...form.querySelectorAll(":scope > .g11-supp-exercise")],"Tự kiểm tra cuối năm");
+  root.append(form,button,status);typeset(root);
 };
 const start=async()=>{
  const root=document.querySelector("[data-g11-supp-view]");

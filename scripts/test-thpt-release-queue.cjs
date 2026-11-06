@@ -13,8 +13,16 @@ for(const dir of ["inventory","ready"]){
   const field=name=>{const m=source.match(new RegExp("^"+name+": (.+)$","m"));assert(m,dir+"/"+file+" missing "+name);return m[1].trim()};
   const id=field("PACKET_ID"),state=field("STATE"),lane=field("LEARNING_PATH");
   assert.equal(file,id+".md","Packet name mismatch");
-  assert(["SGK_CHAPTER","TOPIC"].includes(lane),"Unknown path "+id);
-  assert(["PUBLIC_FORMATIVE_ONLY","FULL_LEARNING_PATH"].includes(field("RELEASE_SCOPE")),"Unknown scope "+id);
+  const scope=field("RELEASE_SCOPE");
+  const allowed=(lane==="SGK_CHAPTER"||lane==="TOPIC")&&["PUBLIC_FORMATIVE_ONLY","FULL_LEARNING_PATH"].includes(scope);
+  const approvedSupplement=lane==="SGK_EXPERIENCE_SUPPLEMENT"&&scope==="SGK_EXPERIENCE_SUPPLEMENT";
+  assert(allowed||approvedSupplement,"Unknown or mismatched learning path/release scope "+id+": "+lane+"/"+scope);
+  if(approvedSupplement){
+   assert.equal(field("ASSESSMENT_MODE"),"CLIENT_SELF_CHECK_NO_MASTERY","Supplement cannot claim official independent assessment");
+   assert.equal(field("PRIVATE_RD1_COUNT"),"0","Supplement cannot claim held-out RD1");
+   assert.equal(field("OFFICIAL_READINESS"),"NOT_CLAIMED","Supplement cannot claim Chapter/Topic Readiness");
+   assert.equal(field("MASTERY_ACTIVATION"),"NO","Supplement cannot activate Mastery");
+  }
   assert(/^[0-9a-f]{40}$/.test(field("SOURCE_COMMIT")),"Invalid source commit "+id);
   assert(field("REVIEW_RECEIPT").length>20&&field("CURRENT_PR").length>3,"Untraceable packet "+id);
   const passed={};

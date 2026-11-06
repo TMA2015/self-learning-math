@@ -12,18 +12,67 @@
     if(txt!==undefined)x.textContent=String(txt);
     return x;
   };
+  // RELEASE DELTA_A_UI: reuse tested G10 chapter self-check safe TeX/notation renderer.
+  // All G11 canonical source banks, Q16 answer guards and Mastery remain unchanged.
   const rich=(parent,value)=>{
-    const html=String(value||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")
-      .replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>")
-      .replace(/`([^`]+)`/g,"<code>$1</code>")
-      .replace(/\n/g,"<br>");
-    const x=create("div","g10sc-rich");x.innerHTML=html;parent.append(x);
+    const container=create("div","g10sc-rich");
+    const plain=(dst,s)=>{
+      s.split("\n").forEach((line,i)=>{
+        if(i)dst.append(document.createElement("br"));
+        if(line)dst.append(document.createTextNode(line));
+      });
+    };
+    const math=(dst,expr,display=false)=>{
+      const node=create(display?"div":"span",display?"g10sc-math-display":"g10sc-math-inline");
+      node.textContent=(display?"\\[":"\\(")+expr+(display?"\\]":"\\)");
+      dst.append(node);
+    };
+    const tokens=/\$\$[\s\S]+?\$\$|\$[^$\n]+\$|\\\[[\s\S]+?\\\]|\\\([\s\S]+?\\\)|\x60[^\x60\n]+\x60|\*\*[^*]+\*\*|\\overrightarrow\{[^}]+\}|\\vec(?:\{[A-Za-z0-9]+\}|[A-Za-z0-9]+)|\\bar(?:\{[A-Za-z0-9]+\}|[A-Za-z0-9]+)/g;
+    const insert=(dst,input)=>{
+      const source=String(input??"");
+      let from=0;
+      for(const match of source.matchAll(tokens)){
+        const token=match[0],start=match.index;
+        if(start>from)plain(dst,source.slice(from,start));
+        if(token.startsWith("$$"))math(dst,token.slice(2,-2),true);
+        else if(token.startsWith("$"))math(dst,token.slice(1,-1));
+        else if(token.startsWith("\\["))math(dst,token.slice(2,-2),true);
+        else if(token.startsWith("\\("))math(dst,token.slice(2,-2));
+        else if(token.startsWith("\x60")){
+          const inner=token.slice(1,-1);
+          if(/\\(?:bar|vec|overrightarrow|Delta|delta|frac|sqrt|mathbb|le|ge|in)\b/.test(inner))math(dst,inner);
+          else{const el=create("code");el.textContent=inner;dst.append(el)}
+        }else if(token.startsWith("**")){
+          const strong=create("strong");
+          // Nested original $...$ inside **emphasis** must still typeset,
+          // notably reviewed ChVIII RD1-03.
+          insert(strong,token.slice(2,-2));dst.append(strong);
+        }else if(token.startsWith("\\"))math(dst,token);
+        else plain(dst,token);
+        from=start+token.length;
+      }
+      if(from<source.length)plain(dst,source.slice(from));
+    };
+    insert(container,value);
+    parent.append(container);
   };
   const typeset=root=>{
-    if(window.MathJax && typeof window.MathJax.typesetPromise==="function"){
-      window.MathJax.typesetClear && window.MathJax.typesetClear([root]);
-      window.MathJax.typesetPromise([root]).catch(()=>{});
-    }
+    const run=()=>{
+      if(!root.isConnected)return;
+      const mj=window.MathJax;
+      if(!mj)return;
+      const ready=mj.startup?.promise;
+      const process=()=>{
+        if(!root.isConnected||typeof mj.typesetPromise!=="function")return;
+        mj.typesetClear?.([root]);
+        return mj.typesetPromise([root]);
+      };
+      if(ready?.then)void ready.then(process).catch(()=>{});
+      else void process().catch(()=>{});
+    };
+    if(window.MathJax?.typesetPromise)run();
+    else if(document.readyState!=="complete")
+      window.addEventListener("load",run,{once:true});
   };
   const mcqKey=q=>{
     if(q.type!=="MCQ_SINGLE"||q.optional)return null;
