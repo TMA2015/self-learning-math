@@ -51,3 +51,22 @@ TOPIC_RELEASE_MERGE_DEPLOY: NO
 4. Giữ nguyên 238 D4, source/receipt SHA, NotebookLM Academic/PED PASS, Q15/Q16/Q18, RD1, Mastery, SGK/Topic journey, và không thao tác nhánh RELEASE.
 
 CHECKPOINT: R17=HN_PHCQO_2025_HKI_G12_CODE101_ONE_EVENT;MIRROR_PDF_INDEX_AND_KEY_FOUR_MATH_CROSSCHECKS;PDF_VISUAL_AND_SHA_HOLD;FOUR_METHOD_CROSSWALKS;CHII_COMPOUND_CHAIN_PENDING;FORMAL_GAP=0;D4_CHANGE=0;RELEASE=NO
+
+## 6. Addendum SOURCE_S1_VISUAL_VERIFIED — đọc trực tiếp SGK/SBT Toán 12 Tập Một
+
+**Hai bản sách gốc** đã tải nguyên bytes từ Google Drive chủ dự án, được render ảnh tại runtime để đọc mục gốc (không OCR, không sao chép scan lên GitHub). Hash khớp chính xác receipt G12 ChI đã có ở #711; chỉ ghi checksum, trang và mô tả phương pháp.
+
+| Nguồn S1 / checksum SHA256 | Phạm vi đã mở trang ảnh | Minh chứng năng lực |
+|---|---|---|
+| **SGK KNTT Toán 12 Tập Một**, 15.988.398 bytes, **104 trang PDF**, SHA256 **faeb554bea9cf81189c5e790b1b1edb42f50b3648694acc80dc99682ada3f1fd** | ChII B07/B08; trang **in 70 = PDF p72** | **Ví dụ 5, Bài 8**: máy bay di chuyển vận tốc/hướng không đổi từ A đến B rồi thêm một khoảng thời gian; xác định điểm C bằng vectơ có **hệ số dương 1/2**, lập phương trình tọa độ từng thành phần; đây là chứng cứ trực tiếp cho **phối hợp ngữ cảnh → vectơ → hệ số tham số → tọa độ** trong một ứng dụng. |
+| SGK cùng SHA | Trang **in 71 = PDF p73** | **Ví dụ 7**: hai khinh khí cầu với gốc O, trục Ox hướng Nam, Oy hướng Đông, Oz hướng lên, chuyển mô tả Bắc/Tây thành tọa độ âm và tính khoảng cách 3D; là bằng chứng năng lực hướng thực tế tương tự bài flycam, không chỉ toán trừ vectơ vô ngữ cảnh. |
+| SGK cùng SHA | Trang **in 72 = PDF p74**, bài tập **2.21** và **2.24** | Bài **2.21(a)** yêu cầu lập MN, MP và chứng minh 3 điểm **không thẳng hàng**, tức dùng kiểm cùng phương/không cùng phương. Bài **2.24** gắn Oxyz với gian khoan biển, Ox Tây, Oy Nam, Oz hướng lên và phát hiện tàu ở độ sâu âm; củng cố chọn hệ quy chiếu vật lý. |
+| **SBT KNTT Toán 12 Tập Một**, 25.644.753 bytes, **117 trang PDF**, SHA256 **db9d07a2fbe55cda3b4b50fb13d1767e45a7552f668b726241c59febac69c0ca** | Trang **in 54 = PDF p52**, bài **2.30(c)** | Bài **2.30(c)** nêu bài chứng minh **O,G,A thẳng hàng trong hệ tọa độ Oxyz**; đòi điều kiện cùng phương trong không gian thay vì chỉ bài tính véc-tơ. |
+| SBT cùng SHA | Trang **in 56 = PDF p54**, bài **2.38** và **2.40** | Bài **2.38**: B **nằm giữa** O và A với OB=OA/3, phải chọn hệ số **trong (0,1)**; bài **2.40** nhận biết điểm M z=0 nằm trên mặt phẳng tọa độ Oxy. Điều kiện **“nằm giữa”** khác câu thi flycam chỉ đòi **“thẳng hàng”** với hệ số **t=−3/2 ngoài đoạn AB**. |
+| SBT cùng SHA | Trang **in 55 = PDF p53** bài **2.31–2.32**; **in 58 = PDF p56** bài **2.48** | Bài 2.31 lấy mặt sàn làm Oxy để tính đỉnh cột/dây, 2.32 mô hình hai bức tường vuông góc, và 2.48 đổi mô tả vật lý chiếc gậy tựa tường thành tọa độ/khoảng cách: minh chứng ứng dụng đa bước mặt đất/độ cao **đúng phạm vi S1**. |
+
+**Chốt ranh giới S1 so với bài thi mirror:** Nền tảng `Oxyz + orientation + affine vector + collinear/segment + z=0` đã **xác minh trực quan trong chính SGK/SBT Tập Một**. Vì vậy **không được** kết luận bài flycam là nội dung ngoài SGK, và cũng không được gắn `SGK_MISSING_METHOD` từ chỗ chưa thấy một bài y hệt. Tuy nhiên, **trong các trang S1 đã kiểm**, chưa thấy nguyên vẹn tình huống *hai điểm trên không → kéo dài đường thẳng → tìm giao mặt sàn z=0 với t âm*; bài thi mirror cần chứng cứ issuer PDF và chất lượng nhiệm vụ D1–D4 trên *từng outcome*. Giữ `G12_B08_MULTI_OUTCOME_TRANSFER_DEPTH_PENDING`, không gắn formal `COVERED/GAP`.
+
+**Quan sát QA có ích:** SBT 2.38 nói rõ B nằm **giữa** O,A (hệ số dương dưới 1), còn bài thi flycam có M nằm trên **đường thẳng** AB và ở ngoài **đoạn** AB (hệ số âm). Đây là phân biệt điều kiện/ràng buộc đáng đưa vào **review depth PED5/D3**, chứ chưa phải ủy quyền thêm D4 hay thay snapshot.
+
+**S1 evidence status:** `SGK_SBT_T1_ORIGINAL_BYTES_SHA_AND_PAGE_VISUAL_PASS` (chỉ cho các trang/đề mục ghi trên); `EXAM_ISSUER_PDF_VISUAL_SHA_HOLD` vẫn giữ. Nguồn SLM Draft #711/#716/#718 và 238 D4 canonical **chỉ đọc**, không đổi; không phát hành hay NotebookLM review tự cấp.
