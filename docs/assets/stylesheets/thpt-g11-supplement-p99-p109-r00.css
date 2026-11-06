@@ -112,3 +112,6 @@
  .g11-supp-topic-tabs{gap:6px}
  .g11-supp-topic-tab{max-width:205px;font-size:13px;padding:8px 11px}
 }
+
+.g11-supp-dialog .g11-supp-question-stem{font-size:20px;line-height:1.65;overflow-wrap:anywhere;font-weight:700}
+@media(max-width:590px){.g11-supp-dialog .g11-supp-question-stem{font-size:18px}}
