@@ -165,6 +165,6 @@ tử `0,25×0,04=0,01`; mẫu `0,025`; do đó `0,4=2/5`. Không nhầm 4% với
 
 ## 7. Chuyển sang Core và Luyện tập
 
-- [Mở Core Bài 19](../luyen-tap/#b19-core)
-- [Luyện tập, Vận dụng và Tự luận Bài 19](../luyen-tap/#b19-practice)
+- <a href="../luyen-tap/#b19-core">Mở Core Bài 19</a>
+- <a href="../luyen-tap/#b19-practice">Luyện tập, Vận dụng và Tự luận Bài 19</a>
 - Nếu gặp khó khăn, dùng hướng dẫn D6 gắn với từng câu trong Core và Luyện tập.
