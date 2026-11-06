@@ -325,10 +325,12 @@ const exerciseCard=(q,kind,number=1,help=null)=>{
  const card=mk("section","g11-supp-exercise");
  card.id=idAnchor(q.item_id);
  card.dataset.canonicalItem=q.item_id;
+ card.dataset.thptCanonicalItem=q.item_id; // PUBLIC single active Golden question for Gemini stem-only context
  card.dataset.exposureRole=q.role;
  card.append(mk("p","thpt-r4-eyebrow",kind==="written"?"BÀI TẬP TỰ LUẬN":
   q.role==="SGK_CORE"?"CORE":q.role==="SGK_APPLICATION"?"VẬN DỤNG":"LUYỆN TẬP"));
- card.append(mk("h4","",kind==="written"?"Bài tự luận "+number:"Câu "+number),paragraph(q.stem));
+ const publicStem=mk("h3","g11-supp-question-stem");addText(publicStem,q.stem);
+ card.append(mk("h4","",kind==="written"?"Bài tự luận "+number:"Câu "+number),publicStem);
  submitFormative(card,q,kind);
  if(help){
   const details=mk("details","g11-supp-help g11-supp-modal-help");
