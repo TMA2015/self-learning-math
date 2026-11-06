@@ -77,3 +77,38 @@
 .g11-supp-path-grid{padding:16px}
 .g11-supp-overview .thpt-r4-practice-lesson{margin:22px 0}
 @media(max-width:640px){.g11-supp-role-panel{padding:10px}.g11-supp-path-grid{padding:12px}}
+
+
+/* Owner screenshot repair: actual Golden dialog + one active horizontal topic. */
+.g11-supp-dialog{box-sizing:border-box;width:min(95vw,960px);max-width:960px;max-height:min(92dvh,900px);padding:0;overflow:hidden;
+ font-family:var(--md-text-font-family,sans-serif);font-size:16px;line-height:1.65}
+.g11-supp-dialog::backdrop{background:rgba(5,15,35,.68)}
+.g11-supp-modal-head h2{margin:0!important;font-size:22px!important;line-height:1.4}
+.g11-supp-modal-head .thpt-r4-modal-meta{font-size:13px}
+.g11-supp-modal-close{min-height:42px;white-space:nowrap;border:1px solid var(--md-default-fg-color--lightest);border-radius:8px;
+ background:var(--md-code-bg-color);color:inherit;padding:8px 14px;cursor:pointer;font:inherit;font-size:14px}
+.g11-supp-modal-main{max-height:calc(min(92dvh,900px) - 94px);overflow-y:auto;padding:18px 24px}
+.g11-supp-dialog .g11-supp-role-panel{padding:0;border:0}
+.g11-supp-dialog .g11-supp-deck-jump{display:flex;flex-wrap:nowrap;overflow-x:auto}
+.g11-supp-dialog .g11-supp-exercise{font-size:16px;line-height:1.7}
+.g11-supp-dialog .g11-supp-exercise h4{font-size:19px}
+.g11-supp-dialog .g11-supp-answer{font-size:16px}
+.g11-supp-dialog .g11-supp-submit{font-size:15px}
+.g11-supp-topic-tabs{display:flex;gap:8px;overflow-x:auto;max-width:100%;padding:8px 2px 14px;margin:14px 0 22px;
+ scrollbar-width:thin;scroll-snap-type:x proximity}
+.g11-supp-topic-tab{flex:0 0 auto;max-width:260px;min-height:44px;scroll-snap-align:start;padding:9px 14px;
+ border:1px solid var(--md-default-fg-color--lightest);border-radius:9px;background:var(--md-code-bg-color);
+ color:var(--md-default-fg-color);font:inherit;font-size:14px;font-weight:650;cursor:pointer}
+.g11-supp-topic-tab.is-active,.g11-supp-topic-tab[aria-selected="true"]{border-color:#148477;
+ background:#e9f7f3;color:#12695f;font-weight:750}
+.g11-supp-topic-tab:focus-visible{outline:3px solid #148477;outline-offset:2px}
+[data-g11-supp-view] .g11-supp-topic[hidden],
+[data-g11-supp-view] .g11-supp-golden-lesson[hidden]{display:none!important}
+@media(max-width:590px){
+ .g11-supp-dialog{width:96vw;max-height:calc(100dvh - 12px);border-radius:13px}
+ .g11-supp-modal-head{padding:12px 15px}
+ .g11-supp-modal-head h2{font-size:19px!important}
+ .g11-supp-modal-main{padding:12px;max-height:calc(100dvh - 95px)}
+ .g11-supp-topic-tabs{gap:6px}
+ .g11-supp-topic-tab{max-width:205px;font-size:13px;padding:8px 11px}
+}
