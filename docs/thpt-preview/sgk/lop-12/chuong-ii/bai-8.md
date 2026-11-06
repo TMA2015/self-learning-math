@@ -20,11 +20,11 @@ Tiền đề tối thiểu: quy tắc cộng vectơ; phân tích $\vec a=x\vec i
 
 Giả sử $\vec a$ làm thay đổi vị trí $(x_1;y_1;z_1)$ và $\vec b$ làm thay đổi $(x_2;y_2;z_2)$. Ghép hai bước đi thì độ dịch chuyển theo mỗi trục **cộng độc lập**. Từ tính duy nhất của phân tích theo $\vec i,\vec j,\vec k$, ta được
 
-$\vec a+\vec b=(x_1+x_2;y_1+y_2;z_1+z_2),$
+$$\vec a+\vec b=(x_1+x_2;y_1+y_2;z_1+z_2),$$
 
-$\vec a-\vec b=(x_1-x_2;y_1-y_2;z_1-z_2),$
+$$\vec a-\vec b=(x_1-x_2;y_1-y_2;z_1-z_2),$$
 
-$k\vec a=(kx_1;ky_1;kz_1).$
+$$k\vec a=(kx_1;ky_1;kz_1).$$
 
 **Cùng phương:** hai vectơ $\vec a,\vec b$ cùng phương khi một vectơ là bội số thực của vectơ kia, nghĩa là $\vec a=k\vec b$ hoặc $\vec b=k\vec a$ (tùy vectơ nào khác không). Nếu **cả hai khác không**, kiểm từng thành phần với cùng một $k$; không viết các tỉ số khi mẫu tọa độ bằng 0. Vectơ-không là ngoại lệ: trong quy ước vectơ, nó cùng phương với mọi vectơ, nhưng không có hướng riêng. Không suy rằng hai vectơ cùng phương thì cùng hướng.
 
