@@ -126,7 +126,7 @@ const base="http://127.0.0.1:8765/thpt-preview/";
    result=await query("lớp 11, bài "+n,1);
    assert((await result.first().getAttribute("href")).endsWith("lop-11/chuong-ix/bai-"+n+"/"),"G11 B"+n+" search");
    }
-   result=await query("lớp 12",5);
+   result=await query("lớp 12",6); // ChI–VI published-candidate chapter catalog
    assert((await result.first().getAttribute("href")).endsWith("lop-12/chuong-i/"),"G12 ChI unique chapter");
    result=await query("lớp 12, chương I",1);
    assert((await result.first().getAttribute("href")).endsWith("lop-12/chuong-i/"),"G12 chapter I");
@@ -155,7 +155,13 @@ const base="http://127.0.0.1:8765/thpt-preview/";
     result=await query("lớp 12, bài "+n,1);
     assert((await result.first().getAttribute("href")).endsWith("lop-12/chuong-v/bai-"+n+"/"),"G12 ChV B"+n+" direct lesson discovery");
    }
-   result=await query("lớp 12, chương I, bài 3",1);
+   result=await query("lớp 12, chương VI",1);
+    assert((await result.first().getAttribute("href")).endsWith("lop-12/chuong-vi/"),"G12 ChVI search route");
+    for(const n of [18,19]){
+     result=await query("lớp 12, bài "+n,1);
+     assert((await result.first().getAttribute("href")).endsWith("lop-12/chuong-vi/bai-"+n+"/"),"G12 ChVI B"+n+" discoverability");
+    }
+    result=await query("lớp 12, chương I, bài 3",1);
    assert((await result.first().getAttribute("href")).endsWith("lop-12/chuong-i/bai-3/"));
    await query("xyz-khong-co",0);
    await field.fill("");
