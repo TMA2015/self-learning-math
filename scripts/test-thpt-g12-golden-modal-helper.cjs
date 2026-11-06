@@ -46,15 +46,15 @@ async function verifyG12GoldenHub(page,{chapter,selector,lessons,groups,items,he
  const id0=await question.getAttribute("data-thpt-canonical-item");
  await dlg.locator("button.thpt-r4-formative-submit").click();
  assert.equal(await dlg.locator(".thpt-g12-golden-solution[open]").count(),0,"Blank submit must not automatically reveal answer");
- await dlg.locator("textarea").fill("Bài làm thử của em");
+ await dlg.locator('textarea[aria-label="Lời giải của em"]').fill("Bài làm thử của em");
  await nav.nth(1).click();
  assert.equal(await question.count(),1);
  assert.notEqual(await question.getAttribute("data-thpt-canonical-item"),id0);
  await nav.first().click();
- assert.equal(await dlg.locator("textarea").inputValue(),"Bài làm thử của em","Draft retained when navigating");
+ assert.equal(await dlg.locator('textarea[aria-label="Lời giải của em"]').inputValue(),"Bài làm thử của em","Draft retained when navigating");
  await dlg.locator("button.thpt-r4-formative-submit").click();
  assert.equal(await dlg.locator(".thpt-g12-golden-solution[open]").count(),1,"Canonical answer auto-expanded after individual formative submit");
- assert(await dlg.locator("textarea").isDisabled(),"Submitted answer locked");
+ assert(await dlg.locator('textarea[aria-label="Lời giải của em"]').isDisabled(),"Submitted answer locked");
  await nav.nth(1).click();
  assert.equal(await dlg.locator(".thpt-g12-golden-solution[open]").count(),0,"Other answer remains closed without learner disclosure");
  await dlg.locator("[aria-label='Đóng cửa sổ']").click();

@@ -49,6 +49,10 @@ on:
       - 'scripts/test-thpt-g12-golden-modal-helper.cjs'
       - 'docs/assets/javascripts/math-details-v1.js'
       - 'docs/assets/javascripts/thpt-r4-preview.js'
+      # Owner Tutor on all public SGK/Topic practice, but NEVER Q16 Readiness.
+      - 'docs/assets/javascripts/floating-ai-tutor-v1.js'
+      - 'scripts/test-floating-ai-thpt-route-browser.cjs'
+      - 'scripts/test-floating-ai-tutor-v1.js'
       - 'docs/assets/stylesheets/thpt-r4-preview.css'
       - 'mkdocs.yml'
       - '.github/workflows/skill-assessment-pilot-qa.yml'

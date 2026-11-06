@@ -1,17 +1,26 @@
 (() => {
   "use strict";
 
-  // Same Gemini Tutor for THCS and THPT reading pages. Do not mount during
-  // practice, Readiness, final submission, or on answer-library pages.
+  // Owner 05/11/2026: Tutor on every learner KNOWLEDGE and PUBLIC
+  // CORE/PRACTICE/WRITTEN/ANCHOR page in both SGK and Topic journeys.
+  // Protected independent self-check/Readiness pages remain WITHOUT AI, before
+  // or after Final Submit. No RD1, learner storage, or assessment changes.
   const currentPath = () => location.pathname.replace(/\/index\.html$/, "/");
-  const isTHPTReadingPage = () =>
-    /^\/(?:(?:roadmap-toan-thcs|self-learning-math)\/)?(?:thpt-preview|thpt)\/(?:sgk\/(?:lop-(?:10|11|12)\/)?chuong-[^/]+\/bai-\d+|chuyen-de\/[^/]+\/kien-thuc)\/$/.test(currentPath());
+  const isTHPTReadingPage = () => {
+    const path=currentPath();
+    return /^\/(?:(?:roadmap-toan-thcs|self-learning-math)\/)?(?:thpt-preview|thpt)\/(?:sgk|chuyen-de|thu-vien)\//.test(path)
+      && !/\/(?:tu-kiem-tra(?:-[^/]+)?|readiness|tu-danh-gia-ky-nang-thi)\//.test(path);
+  };
   const isReadingPage = () => {
-    // Keep this function self-contained: THCS route contract tests run it alone.
+    // Keep self-contained; the THCS route contract tests evaluate this in VM.
     const path = location.pathname.replace(/\/index\.html$/, "/");
-    if (/^\/(?:(?:roadmap-toan-thcs|self-learning-math)\/)?(?:thpt-preview|thpt)\/(?:sgk\/(?:lop-(?:10|11|12)\/)?chuong-[^/]+\/bai-\d+|chuyen-de\/[^/]+\/kien-thuc)\/$/.test(path)) return true;
-    if (/^\/(?:(?:roadmap-toan-thcs|self-learning-math)\/)?kien-thuc\/[^/]+\/$/.test(path)) return true;
-    return /^\/(?:(?:roadmap-toan-thcs|self-learning-math)\/)?kien-thuc\/25-tong-hop-on-thi-10\/(?:bai-toan-kinh-dien|kho-bai-mo-neo|anchor-25-\d{3})\/$/.test(path);
+    // Fail CLOSED on all self-check/readiness routes across BOTH journeys,
+    // including all 25 THCS topics, SGK grades 10–12 and THPT Topic.
+    if (/\/(?:tu-kiem-tra(?:-[^/]+)?|readiness|tu-danh-gia-ky-nang-thi)\//.test(path)) return false;
+    if (/^\/(?:(?:roadmap-toan-thcs|self-learning-math)\/)?(?:thpt-preview|thpt)\/(?:sgk|chuyen-de|thu-vien)\//.test(path)) return true;
+    // THCS: every Golden Knowledge, Core, practice, Written, Anchor, example
+    // and public exercise page in all 25 topics; not just their index.
+    return /^\/(?:(?:roadmap-toan-thcs|self-learning-math)\/)?kien-thuc\/[^/]+(?:\/[^/]+)*\/$/.test(path);
   };
   const thptGrade = () => {
     // Legacy unqualified THPT SGK route is grade 10.
@@ -67,16 +76,45 @@
     return pieces.join("\n").slice(0, 2600);
   };
 
+  const activeFormativeDialog = () =>
+    [...document.querySelectorAll("dialog[open]")].reverse().find(d=>
+      d.matches(".thpt-r4-practice-dialog,.topic-core-dialog")&&
+      !d.matches("[data-thpt-readiness],[data-thpt-protected-readiness]"));
   const lessonContext = () => {
+    // Inside any native PUBLIC Core/Practice modal (THCS and THPT),
+    // send ONLY the active public question stem, never an answer or draft.
+    // Never transfer model answer/rubric, hidden disclosure, learner draft,
+    // other questions, or independent assessment content to Gemini.
+    const modal=activeFormativeDialog();
+    if(modal){
+      const card=modal.querySelector("[data-thpt-canonical-item],.thpt-r4-reviewed-formative-card,.topic-micro-panel");
+      const prompt=modal.matches(".topic-core-dialog")
+        ? card?.querySelector(".topic-micro-question")
+        : card?.querySelector("h3");
+      const title=clean(modal.querySelector(".thpt-r4-modal-heading h2,.topic-core-dialog__head h2")?.textContent || document.title);
+      const selected=prompt?selectedText(prompt):"";
+      return {
+        title,
+        section:clean(prompt?.textContent||title).slice(0,180),
+        text:(selected||clean(prompt?.textContent||title)).slice(0,1400),
+        selected:Boolean(selected)
+      };
+    }
     const root = contentRoot();
     const heading = activeHeading(root);
     const selected = selectedText(root);
     const pageTitle = clean(root.querySelector("h1")?.textContent || document.title);
+    // Public practice hub may contain hundreds of answer-bearing hidden nodes:
+    // take only the learner-visible page heading unless a safe selection
+    // was made, never scrape the full bank or complete practice DOM.
+    const isPublicExercise=/\/(?:luyen-tap|bai-tap|tu-luan|core)(?:\/|$)/.test(currentPath());
+    const safeSelection = selected && !String(selected).match(/Đáp án\s*\/\s*Lời giải|Tiêu chí tự đối chiếu/i);
     return {
-      title: pageTitle,
-      section: clean(heading?.textContent || pageTitle),
-      text: selected || sectionText(root, heading),
-      selected: Boolean(selected)
+      title:pageTitle,
+      section:clean(heading?.textContent || pageTitle),
+      text:(!isPublicExercise && safeSelection ? selected :
+        isPublicExercise ? clean(heading?.textContent || pageTitle) : sectionText(root,heading)).slice(0,2400),
+      selected:Boolean(!isPublicExercise && safeSelection)
     };
   };
 
@@ -94,8 +132,15 @@
     window.MathJax.typesetPromise([element]).catch(() => {});
   };
 
+  let tutorMount=null;
   const init = () => {
-    if (!isReadingPage() || document.querySelector("[data-floating-ai]")) return;
+    if(!isReadingPage()){
+      tutorMount?.dispose?.();
+      tutorMount=null;
+      return;
+    }
+    if(tutorMount?.shell?.isConnected){tutorMount.sync();return}
+    if (document.querySelector("[data-floating-ai]")) return;
     if (!window.RoadmapGemini?.isConfigured?.() || !window.RoadmapTutor) return;
 
     const shell = document.createElement("div");
@@ -113,19 +158,19 @@
     face.height = 64;
     face.decoding = "async";
     launcher.appendChild(face);
-    launcher.setAttribute("aria-label", "Mở AI Tutor để hỏi về bài học");
+    launcher.setAttribute("aria-label", "Mở AI Tutor để hỏi về bài đang học hoặc luyện tập");
     launcher.setAttribute("aria-expanded", "false");
 
     const panel = document.createElement("section");
     panel.className = "floating-ai-panel";
     panel.hidden = true;
-    panel.setAttribute("aria-label", "AI Tutor cho trang kiến thức");
+    panel.setAttribute("aria-label", "AI Tutor cho trang học và luyện tập");
 
     const head = document.createElement("div");
     head.className = "floating-ai-head";
     const titleWrap = document.createElement("div");
     const title = document.createElement("strong");
-    title.textContent = "Gia sư AI · Hỏi về bài đang đọc";
+    title.textContent = "Gia sư AI · Hỏi về bài đang học";
     const contextLabel = document.createElement("small");
     titleWrap.append(title, contextLabel);
     const close = button("×", "floating-ai-close");
@@ -157,7 +202,7 @@
     input.className = "floating-ai-input";
     input.rows = 3;
     input.maxLength = 500;
-    input.placeholder = "Hỏi về phần đang đọc… Ví dụ: Vì sao phải có điều kiện này?";
+    input.placeholder = "Hỏi về bài đang học… Ví dụ: Em nên bắt đầu từ đâu?";
     input.setAttribute("aria-label", "Câu hỏi cho AI Tutor");
 
     const send = button("Hỏi Gemini", "floating-ai-send");
@@ -172,7 +217,8 @@
     let pending = false;
     const refreshContextLabel = () => {
       const context = lessonContext();
-      contextLabel.textContent = (context.selected ? "Đang dùng đoạn đã bôi đen · " : "Đang đọc · ") + context.section;
+      const inExercise=Boolean(activeFormativeDialog()||/\/(?:luyen-tap|bai-tap|core|tu-luan)(?:\/|$)/.test(currentPath()));
+      contextLabel.textContent = (context.selected ? "Đang dùng đoạn đã bôi đen · " : (inExercise?"Đang làm bài · ":"Đang đọc · ")) + context.section;
     };
 
     const setOpen = open => {
@@ -200,10 +246,11 @@
       waiting.textContent = "Gemini đang đọc đúng phần này và chuẩn bị giải thích…";
       answer.appendChild(waiting);
       try {
-        const lessonLayer = isTHPTReadingPage() ? "THPT-SGK-KNTT" : "KNTT-Core";
+        const lessonLayer = isTHPTReadingPage() ?
+          (/\/chuyen-de\//.test(currentPath()) ? "THPT-TOPIC-KNTT" : "THPT-SGK-KNTT") : "KNTT-Core";
         const question = {
           id: "lesson-" + topicSlug(),
-          question: "ĐOẠN KIẾN THỨC ĐANG ĐỌC\nTrang: " + page.title + "\nMục: " + page.section + "\n\n" + page.text,
+          question: (activeFormativeDialog()?"CÂU HỎI CORE/LUYỆN TẬP CÔNG KHAI ĐANG LÀM":"ĐOẠN KIẾN THỨC ĐANG ĐỌC") + "\nTrang: " + page.title + "\nMục: " + page.section + "\n\n" + page.text,
           tags: { layer: lessonLayer, skill: ["reading-" + topicSlug()] }
         };
         const context = window.RoadmapTutor.buildContext({
@@ -252,6 +299,20 @@
     document.addEventListener("keydown", event => {
       if (event.key === "Escape" && !panel.hidden) setOpen(false);
     });
+    // Native showModal() makes all DOM outside the dialog inert. Move the
+    // SAME Tutor shell inside the active formative modal while it is open,
+    // then back to body; do not create a second Tutor/AI provider session.
+    const sync=()=>{
+      if(!shell.isConnected)return;
+      const active=activeFormativeDialog();
+      const destination=active||document.body;
+      if(shell.parentElement!==destination)destination.appendChild(shell);
+    };
+    const observer=new MutationObserver(sync);
+    observer.observe(document.body,{attributes:true,attributeFilter:["open"],childList:true,subtree:true});
+    tutorMount={shell,sync,dispose:()=>{observer.disconnect();shell.remove()}};
+    sync();
+
   };
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);

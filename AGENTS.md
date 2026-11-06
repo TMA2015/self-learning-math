@@ -1,3 +1,7 @@
+## OWNER RELEASE UI DECISION — Gemini across public learning, 05/11/2026 (supersedes older Tutor route limitation)
+
+Owner directs **one existing Gemini floating AI Tutor** on all **PUBLIC learner knowledge, Core, Practice, Written/Anchor, examples and recovery** pages for BOTH SGK and THPT Topic learning journeys (and existing THCS Golden topics), including the **currently open one-question Golden modal**. This expands the former Knowledge-only gate and supersedes the prior operational note “no Tutor on practice”. This is a RELEASE route/interaction decision under the existing one Q01–Q18 / Golden standard, not a separate academic standard. **Never show Tutor on independent Tự kiểm tra/Readiness/Final Submit pages** in either journey or THCS, before or after submission; never expose protected RD1 stems/keys/rubrics or alter score/Mastery/assessment identity. Tutor modal context uses **only the current PUBLIC question stem**, not hidden solution/rubric or learner draft. Use the same Tutor/provider (no duplicate provider, new Firebase or assessment writes), preserve deep links and 390/820/1440 UI. Every changed route must be covered by exact-head automated browser QA and the accepted G10/G11/G12 Golden regression. Student/owner confirmation of real-device UX is P2, not implied by CI.
+
 # Self-Learning Math — working instructions for coding and content agents
 
 **Repository:** `TMA2015/self-learning-math`. Apply this file whenever a new development session, branch or conversation works on the repository.
