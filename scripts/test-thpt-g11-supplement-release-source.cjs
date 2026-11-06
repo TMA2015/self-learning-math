@@ -115,8 +115,8 @@ for(const [p,view] of [["trai-nghiem-e01.md","E01"],["trai-nghiem-e02.md","E02"]
  assert(read(dir+p).includes('data-g11-supp-view="'+view+'"'),"Original course view remains "+view);
 }
 assert(js.includes("const written=bank.written.filter(q=>groupOf(q)===topic)"),"Written shares original bank");
-assert(js.includes("practiceItems.forEach((q,i)=>practiceSection.append(exerciseCard(q"),"Inline Practice uses original bank");
-assert(js.includes("core.forEach((q,i)=>coreSection.append(exerciseCard(q"),"Inline Core uses original bank");
+assert(js.includes('const practiceCards=practiceItems.map((q,i)=>exerciseCard(q,"formative",i+1))')&&js.includes("practiceCards.forEach(card=>practiceSection.append(card))")&&js.includes('compactDeck(practiceSection,practiceCards,"Luyện tập và vận dụng")'),"Inline Practice uses original bank with one-question layout");
+assert(js.includes('const coreCards=core.map((q,i)=>exerciseCard(q,"formative",i+1))')&&js.includes("coreCards.forEach(card=>coreSection.append(card))")&&js.includes('compactDeck(coreSection,coreCards,"Core")'),"Inline Core uses original bank with one-question layout");
 assert(js.includes('a.href="#"+idAnchor(h.return_item)'),"D6 same page return link");
 assert(js.includes("card.dataset.canonicalItem=q.item_id"),"Canonical IDs remain on client elements");
 assert(!js.includes('mk("h3","",q.item_id)'),"Hide author technical IDs from learners");
