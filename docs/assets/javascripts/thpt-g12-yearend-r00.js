@@ -40,6 +40,105 @@ const verify=b=>{
  }
  for(const h of b.help)if(!outcomes.has(h.outcome_id)||!h.text)fail("D6 "+h.help_id);
 };
+/* PUBLIC formative bank: same canonical item_id in a different placement.
+ * Exactly the same Golden R4 lesson/card/buttons as regular Grade 12 chapters. */
+const startPractice=(root,b)=>{
+ const options=[
+  ["MCQ_CORE","Core"],["MCQ_PRACTICE","Luyện tập"],
+  ["MCQ_APPLICATION","Vận dụng"],["WRITTEN","Tự luận"]];
+ const drafts=new Map(),revealed=new Set();
+ const dialog=make("dialog","thpt-r4-practice-dialog g12-xp-dialog g12-ye-dialog");
+ const head=make("header","thpt-r4-modal-heading g12-xp-modal-head");
+ const title=make("h2"),counter=make("p","g12-xp-counter"),close=make("button","g12-xp-close","Đóng ×");
+ close.type="button";head.append(counter,title,close);
+ close.addEventListener("click",()=>dialog.close());
+ const jump=make("nav","g12-xp-jump"),stage=make("div","g12-xp-stage");
+ const foot=make("div","g12-xp-foot"),prev=make("button","g12-xp-prev","← Câu trước"),
+       next=make("button","g12-xp-next","Câu tiếp →");
+ prev.type=next.type="button";foot.append(prev,next);
+ dialog.append(head,jump,stage,foot);document.body.append(dialog);
+ let current=0,role="",group=[];
+ const show=()=>{
+  const q=group[current];
+  title.textContent="Ôn tập cuối năm · "+options.find(x=>x[0]===role)[1];
+  counter.textContent="Câu "+(current+1)+" / "+group.length+" · Tự luyện, không ghi điểm";
+  jump.replaceChildren();
+  group.forEach((item,i)=>{
+   const bt=make("button","g12-xp-jump-button"+(current===i?" is-current":""),String(i+1));
+   bt.type="button";bt.setAttribute("aria-label","Chọn câu "+(i+1));
+   if(current===i)bt.setAttribute("aria-current","step");
+   bt.addEventListener("click",()=>{current=i;show()});jump.append(bt);
+  });
+  stage.replaceChildren();
+  const card=make("section","g12-xp-modal-question");
+  card.dataset.thptCanonicalItem=q.item_id;
+  card.append(rich(make("h3","g12-xp-question-stem"),q.stem));
+  let selected=null;
+  const inputs=make("div");
+  if(q.role==="WRITTEN"){
+   selected=make("textarea","g12-xp-input");selected.rows=6;
+   selected.setAttribute("aria-label","Lời giải tự luận "+q.item_id);
+   selected.value=drafts.get(q.item_id)||"";
+   selected.addEventListener("input",()=>drafts.set(q.item_id,selected.value));
+   inputs.append(make("label","g12-xp-label","Trình bày cách giải của em"),selected);
+  }else{
+   inputs.className="g12-ye-options";
+   for(const opt of q.options){
+    const row=make("label","g12-ye-option"),radio=make("input");
+    radio.type="radio";radio.name="g12-ye-formative-choice";radio.value=opt.letter;
+    radio.checked=drafts.get(q.item_id)===opt.letter;
+    radio.addEventListener("change",()=>drafts.set(q.item_id,opt.letter));
+    row.append(radio,rich(make("span"),opt.letter+". "+opt.text));inputs.append(row);
+   }
+  }
+  const submit=make("button","g12-xp-submit","Nộp và đối chiếu lời giải");submit.type="button";
+  const status=make("p","g12-xp-end-message"),reveal=make("section","g12-xp-reveal");
+  const showReveal=()=>{
+   reveal.replaceChildren(make("h4","","Đối chiếu sau khi tự làm"));
+   if(q.answer)reveal.append(rich(make("p"),"Đáp án: "+q.answer));
+   reveal.append(make("h4","","Lời giải mẫu"),paragraphs(make("div"),q.solution));
+   if(q.rubric)reveal.append(make("h4","","Rubric tự đối chiếu /5"),paragraphs(make("div"),q.rubric));
+   if(q.trap)reveal.append(make("h4","","Lỗi thường gặp"),rich(make("p"),q.trap));
+   submit.disabled=true;submit.textContent="Đã mở đối chiếu";math(reveal);
+  };
+  submit.addEventListener("click",()=>{
+   const value=String(drafts.get(q.item_id)||"").trim();
+   if(!value){status.textContent="Hãy tự làm câu này trước khi mở lời giải.";return}
+   revealed.add(q.item_id);showReveal();
+  });
+  if(revealed.has(q.item_id))showReveal();
+  card.append(inputs,submit,status,reveal);
+  stage.append(card);prev.disabled=current===0;next.disabled=current===group.length-1;math(stage);
+ };
+ prev.addEventListener("click",()=>{if(current){current--;show()}});
+ next.addEventListener("click",()=>{if(current<group.length-1){current++;show()}});
+ const open=(r)=>{
+  role=r;group=b.items.filter(q=>q.role===role);
+  if(!group.length)fail("Empty formative category "+role);
+  current=0;show();if(!dialog.open)dialog.showModal();
+ };
+ root.replaceChildren();root.dataset.g12YePracticeReady="true";
+ const lesson=make("section","thpt-r4-practice-lesson g12-ye-formative-lesson");
+ lesson.dataset.thptGrade="12";
+ const header=make("div","thpt-r4-practice-lesson-header"),copy=make("div");
+ copy.append(make("p","thpt-r4-practice-class","Lớp 12 · Bài tập ôn tập cuối năm"),
+             make("h2","","Sáu trạm ôn tập · Core, Luyện tập, Vận dụng và Tự luận"));
+ header.append(make("span","thpt-r4-lesson-number","YE"),copy);lesson.append(header);
+ const grid=make("div","thpt-r4-practice-card-grid");
+ for(const [name,label]of options){
+  const all=b.items.filter(q=>q.role===name);
+  const card=make("section","thpt-r4-practice-card");card.dataset.thptGrade="12";
+  const info=make("div");
+  info.append(make("p","thpt-r4-practice-card-kind",label),
+    make("strong","","Ôn tập cuối năm · "+label),
+    make("small","",all.length+" câu · "+(name==="WRITTEN"?"Rubric /5":"Trắc nghiệm")+" · Một câu mỗi lần"));
+  const button=make("button","thpt-r4-practice-open","✎ Mở "+label);
+  button.type="button";button.dataset.g12YeOpen=name;
+  button.addEventListener("click",()=>open(name));
+  card.append(info,button);grid.append(card);
+ }
+ lesson.append(grid);root.append(lesson);
+};
 const run=(root,b)=>{
  const items=b.items,drafts=new Map();let current=0,submitted=false;
  root.replaceChildren();root.dataset.g12YeReady="true";
@@ -109,10 +208,11 @@ const run=(root,b)=>{
  render();
 };
 const start=async()=>{
- const root=document.querySelector("[data-g12-ye-selfcheck]");if(!root)return;
+ const root=document.querySelector("[data-g12-ye-practice],[data-g12-ye-selfcheck]");if(!root)return;
  try{
   const res=await fetch(bankUrl,{cache:"no-cache"});if(!res.ok)fail("bank HTTP "+res.status);
-  const bank=await res.json();verify(bank);run(root,bank);
+  const bank=await res.json();verify(bank);
+  if(root.hasAttribute("data-g12-ye-practice"))startPractice(root,bank);else run(root,bank);
  }catch(error){
   root.dataset.g12YeError="true";
   root.replaceChildren(make("p","","Không tải được 31 câu đã duyệt, vui lòng thử tải lại."));

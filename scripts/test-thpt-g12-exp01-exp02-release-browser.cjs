@@ -41,6 +41,12 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/lop-12/bo-sung/";
    const root=page.locator("[data-g12-xp-practice]");
    await page.waitForFunction(()=>document.querySelector("[data-g12-xp-practice]")?.dataset.g12XpReady==="true",null,{timeout:25000});
    assert.equal(await root.locator("[data-g12-xp-open]").count(),8,"4 groups per 2 activities");
+   assert.equal(await root.locator(".thpt-r4-practice-lesson[data-thpt-grade='12']").count(),2,"Both experiences reuse normal grade-12 Golden lessons");
+   assert.equal(await root.locator(".thpt-r4-practice-card[data-thpt-grade='12']").count(),8,"Eight Golden role cards, not independent plain white tile kit");
+   assert.equal(await root.locator(".g12-xp-role-card").count(),0,"Legacy card design removed from live page");
+   const purple=await root.locator(".thpt-r4-practice-card[data-thpt-grade='12']").first().evaluate(x=>getComputedStyle(x).getPropertyValue("--thpt-grade-accent").trim());
+   assert.equal(purple,"#8554c1","Correct established G12 Golden purple palette");
+
    await root.locator('[data-g12-xp-open="EXP01-CORE"]').click();
    const dialog=page.locator("dialog.thpt-r4-practice-dialog[open]");
    await dialog.waitFor({state:"visible"});
