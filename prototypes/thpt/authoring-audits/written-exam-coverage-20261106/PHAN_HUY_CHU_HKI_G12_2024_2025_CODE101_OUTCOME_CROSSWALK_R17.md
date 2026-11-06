@@ -103,3 +103,64 @@ Bốn câu ở §2 của R17 vẫn giữ **kết quả toán**: II C3 `ĐSĐS` (
 - **Bảo toàn:** 238 canonical D4, khóa các Git blob nguồn G12 ChI/II/III và Academic/PED historical receipts, không tạo content/placement/rubric mới, không can thiệp RD1/Topic/RELEASE.
 
 CHECKPOINT: R18=PRIMARY_SCHOOL_HOSTED_PDF_URL_INDEX_VERIFIED;SCHOOL_PUBLISHER_PAGE_2024_12_29;CODE101_SEVEN_MATH_CHECKS;SAME_EXAM_LINE_PLANE_T_1_2_VS_MINUS_3_2;B01_DOMAIN_COMPONENTS_EXACT_METHOD;B05_RATE_OPTIMIZE_COMPONENTS;EXAM_IMAGE_SHA_HOLD;238_IMMUTABLE;FORMAL_GAP_0
+
+## 8. CLOSEOUT — B07–B08: kiểm toán khép kín năng lực ghép outcome và điều kiện đường thẳng/đoạn thẳng
+
+STAGE_ID: G12-CHII-B07-B08-LINE_GROUND_TRANSFER_DEPTH
+LANE: AUTHORING_READ_ONLY
+QA_STAGE_VERDICT: BOUNDED_SOURCE_OUTCOME_AUDIT_COMPLETE
+S1_GATE: ORIGINAL_OWNER_BOOK_BYTES_SHA_AND_PAGE_IMAGES_VERIFIED
+SCHOOL_GATE: ORIGINAL_ISSUER_HOSTED_URL_AND_INDEXED_TEXT_VERIFIED
+SCHOOL_PDF_BYTES_AND_PAGE_IMAGES: HOLD
+FORMAL_EXAM_COVERED_OR_GAP: NOT_ISSUED
+CANONICAL_ITEM_DELTA: ZERO
+D4_BASELINE: G10_31_G11_83_G12_124_UNCHANGED
+NO_REVIEWER_PASS_REOPENED: TRUE
+
+### 8.1 Phạm vi thực tế đã khóa theo source, không thống kê ước lượng
+
+Đã đọc TOÀN VĂN original Git source G12 ChII B06–B08, Draft #716, source path: prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md, Git blob SHA **856a37bd16d2746ffc2e12906de18d1f4338a3b6**. Đếm từ 40 item khai báo ITEM_ID/OUTCOME_ID/ROLE trong D3–D4 của riêng B07 và B08:
+
+| Lesson / outcome | CORE | PRACTICE | Written D4 | D2 solved examples | D6 outcome routes |
+|---|---:|---:|---:|---:|---:|
+| G12-CHII-B07, O01–O04 | 4 | 8 | 4 | 4 | 4 |
+| G12-CHII-B08, O01–O06 | 6 | 12 | 6 | 6 | 6 |
+| **Toàn bộ hai bài** | **10** | **20** | **10** | **10** | **10** |
+
+Có **40/40 canonical ID khác nhau** ở hai bài, kiểm stem và lời giải của cả 10 Written; có **10/10 ví dụ D2** và định tuyến D6. Đây không phải 40 Written: chỉ 10 là Written và nằm trong 124 G12 đã khóa. Không chỉnh source, placement, rubric hoặc answer.
+
+Bằng chứng thành phần cụ thể từ original source:
+- B07 O01: điều kiện thuộc Oxy là z=0; B07-C01.
+- B07 O03: mô hình hóa chọn trục và dấu cao/thấp, B07-W03.
+- B07 O04: tọa độ B−A và dấu hướng, B07-W04.
+- B08 O02: cùng phương u=kv, hệ số âm ở B08-P03 và tham số t trong vectơ ở B08-W02.
+- B08 O03: tọa độ trung điểm ở B08-W03.
+- B08 O06: chuỗi độ dời 3D→độ dài→tốc độ và điều kiện đường thẳng ở B08-W06.
+- Tất cả 10 ví dụ D2 gồm B07-EX01–04 và B08-EX01–06 đều giải theo từng outcome; B08-EX06 đã có máy bay/độ dời/tốc độ nhưng **không** giải bài đường thẳng cắt Oxy.
+
+**Bằng chứng phủ định có giới hạn chặt chẽ:** Trong 40/40 stem, lời giải, 10/10 D2 và lý thuyết D1 của **chính** B07–B08 source-locked, chưa có một ví dụ/nhiệm vụ ghép đủ bốn bước: (1) hướng trục thực tế→tọa độ A,B; (2) một tham số chung cho P=A+t(B−A); (3) từ điều kiện P thuộc Oxy suy z=0 và tìm t; (4) xác định P trên **đường thẳng** hay trên **đoạn** bằng dấu/vị trí t. Toàn source không ghi trực tiếp công thức P=A+t(B−A), các câu B08-W02 chỉ tìm t để **hai vectơ cho trước** cùng phương, chưa dựng điểm giao mặt phẳng.
+
+Finding có phạm vi: **EXACT_MULTI_OUTCOME_TRANSFER_BRIDGE_NOT_PRESENT_IN_INSPECTED_PUBLIC_SOURCE**, trong khi **ALL_PREREQUISITE_METHOD_FAMILIES_PRESENT**. Đây là evidence candidate về độ sâu hướng dẫn, KHÔNG tự kết luận Academic FAIL, Qxx FAIL, không biến chứng nhận PASS lịch sử thành FAIL, không nói ngoài toàn bộ SGK/Topic hoặc website.
+
+### 8.2 Đã kiểm tính toán hai tình huống gốc từ cùng đề trường
+
+Website THPT Phan Huy Chú – Quốc Oai: https://c3phanhuychu.edu.vn/posts/599 ; school-hosted Toán 12 mã 101: https://c3phanhuychu.edu.vn/uploads/embedded_file/file/1258/M%C3%B4n_To%C3%A1n_l%E1%BB%9Bp_12.pdf . Chỉ mục cho thấy 4 trang đề + 1 trang key sáu mã. Thêm nguồn ToanMath/Scribd là đối chứng, **không nhân thành sự kiện thi mới**.
+
+- **Phần II C1, trang in 3/PDF p3:** M=(2;3;−1), N=(−1;1;1). \(\vec{MN}=(-3;-2;2)\). Đặt Q=M+t(N−M), từ Q∈Oxy ⇒ −1+2t=0 ⇒ **t=1/2**, Q=(1/2;2;0). Điểm Q nằm giữa M,N (trên đoạn). Key code 101 mệnh đề liên quan đúng; cả chuỗi Đ/S câu II C1 là **SSĐS**.
+- **Phần III C6, trang in 4/PDF p4:** A=(3;2;3), B=(−2;−4;5), B−A=(−5;−6;2). M=A+t(B−A), từ 3+2t=0 ⇒ **t=−3/2**, M=(21/2;11;0), nên **2a+b+c=32**, khớp key code101. t âm ⇒ M nằm **ngoài đoạn AB** nhưng trên đường thẳng AB. Cả hai flycam z dương nên điểm mặt đất chỉ có thể nằm trên phần **kéo dài** đường thẳng, không suy chúng đã bay theo đoạn đó.
+
+Dùng chung một tham số cho cả 3 tọa độ, không ép t∈[0,1] nếu đề chỉ nói thẳng hàng. **Điều kiện:** A≠B; P trên đoạn AB iff 0≤t≤1, trên đường thẳng iff t thực; nếu z_A=z_B≠0 thì đường thẳng không giao mặt phẳng Oxy; nếu z_A=z_B=0, đường thẳng nằm trong Oxy, không có giao duy nhất.
+
+Bằng chứng S1 trực tiếp có checksum và trang in/PDF:
+- SGK Toán 12 KNTT Tập 1 (104 trang, SHA256 **faeb554bea9cf81189c5e790b1b1edb42f50b3648694acc80dc99682ada3f1fd**), trang in 70/PDF72 mô hình máy bay/giãn vectơ, trang in 71/PDF73 khinh khí cầu/Oxyz, trang in 72/PDF74 bài 2.21 thẳng hàng, 2.24 mô hình biển.
+- SBT Toán 12 KNTT Tập 1 (117 trang, SHA256 **db9d07a2fbe55cda3b4b50fb13d1767e45a7552f668b726241c59febac69c0ca**), trang in 54/PDF52 bài 2.30(c) chứng minh thẳng hàng, trang in 56/PDF54 bài 2.38 nêu B nằm giữa O,A, trang in 58/PDF56 bài 2.48 bài toán tọa độ thực. **Đã render ảnh để đối chiếu lại**, không đưa PDF/scan S1 lên GitHub.
+
+### 8.3 Quyết định đóng khâu và minimal delta chỉ ở dạng đề xuất
+
+**ĐÃ ĐÓNG:** việc kiểm tra source/outcome/độ sâu B07–B08 đã hoàn tất có số liệu item/ví dụ thực và Git SHA; kết luận kỹ năng thành phần hiện hữu nhưng **bridge ghép bốn bước chưa có trong public source được kiểm**. Trạng thái **TRANSFER_DEPTH_REVIEW_CANDIDATE**, không phải formal exam GAP hay Academic/PED re-verdict. Không cần lập R19 và không cần audit lặp cùng bộ đề/cùng source.
+
+**Chỉ đề xuất, KHÔNG thay snapshot:** Khi được chủ dự án cho phép mở lại sư phạm B08, xét một **ví dụ D2/PED5 tích hợp** kèm Tự thử trước Core và D6 quay về ID gốc, không bổ sung Written mới và không động tới 238 item. Mẫu toán riêng để kiểm mô hình, **không sao chép câu thi**: U=(2;1;4), V=(−1;−3;6) ⇒ T=U−2(V−U)=(8;9;0), t=−2 ngoài đoạn; X=(1;2;−3), Y=(5;−2;3) ⇒ Q=X+1/2(Y−X)=(3;0;0), s=1/2 trong đoạn. Chọn một case zA=zB>0 để học sinh biết không có giao Oxy. Cần kiểm rubric/giới hạn/khả năng tự thử và không làm lộ câu RD1. Bất cứ sửa sư phạm source thực nào cũng phải **DELTA_C_ACADEMIC_MATERIAL + independent NotebookLM targeted review** đúng năm Permanent Sources v2.1, sau **owner approval**, bảo toàn các snapshot PASS khác.
+
+**Blocker còn lại KHÁC khâu đã đóng:** School PDF đúng domain trường và nội dung/key đã kiểm qua web indexed text; screenshot trang p3/p4/p5 web vẫn Cache miss, container download DNS failure. Do đó **SCHOOL_PDF_VISUAL_BYTES_SHA_HOLD** vẫn còn; không ghi primary-byte verified, formal exam COVERED/GAP, hay đóng cổng ảnh/biểu đồ. Không phát hành RELEASE/merge/deploy.
+
+END_STAGE_RECEIPT: G12_B07B08_PUBLIC_40_OF_40_ITEMS;B07B08_D2_10_OF_10;B07B08_D6_10_OUTCOMES;OWNER_S1_PDF_CHECKSUM_AND_PAGE_VISUAL;SCHOOL_ISSUER_URL_TEXT_AND_KEY_VERIFIED;T_INSIDE_1_2_VS_T_OUTSIDE_NEG_3_2;TRANSFER_BRIDGE_ABSENT_IN_CHECKED_SOURCE;AUDIT_STAGE_CLOSED;CONTENT_DELTA_ZERO;G10_31_G11_83_G12_124_IMMUTABLE;FORMAL_EXAM_GAP_NONE;SCHOOL_PDF_SHA_HOLD
