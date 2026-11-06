@@ -115,3 +115,7 @@
 
 .g11-supp-dialog .g11-supp-question-stem{font-size:20px;line-height:1.65;overflow-wrap:anywhere;font-weight:700}
 @media(max-width:590px){.g11-supp-dialog .g11-supp-question-stem{font-size:18px}}
+
+.g11-supp-dialog .g11-supp-deck-number,.g11-supp-dialog .g11-supp-deck-step{font-size:15px}
+.g11-supp-dialog .thpt-r4-eyebrow{font-size:13px}
+.g11-supp-dialog .g11-supp-deck-progress,.g11-supp-dialog .g11-supp-feedback{font-size:14px}
