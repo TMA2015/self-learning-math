@@ -16,7 +16,7 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/lop-12/on-tap-cuoi-nam/";
   };
   try{
    await open("");
-   assert.equal(await page.locator("a.thpt-r4-tile").count(),2,"Two year-end learning choices");
+   assert.equal(await page.locator("a.thpt-r4-tile").count(),3,"Three separate Knowledge, Core/Practice and Self-check choices");
    assert((await page.locator(".md-content").innerText()).includes("Sáu trạm"),"Introduction clear");
    await open("tram-on-tap/");
    const main=page.locator(".md-content");
@@ -39,6 +39,35 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/lop-12/on-tap-cuoi-nam/";
    await tries.first().locator("summary").click();
    assert.equal(await main.locator("details.g12-xp-first-try[open]").count(),1,"Voluntary first try disclosure");
    assert(!/NOTEBOOKLM_PENDING|RELEASE_AUTHORIZATION|CONTENT_READY: NO|REVIEW_RECEIPT_BLOB/.test(text),"No authoring QA metadata in student page");
+   await open("luyen-tap/");
+   const hub=page.locator("[data-g12-ye-practice]");
+   await page.waitForFunction(()=>document.querySelector("[data-g12-ye-practice]")?.dataset.g12YePracticeReady==="true",null,{timeout:25000});
+   assert.equal(await hub.locator(".thpt-r4-practice-lesson[data-thpt-grade='12']").count(),1,"Same Golden grade-12 lesson header");
+   assert.equal(await hub.locator(".thpt-r4-practice-card[data-thpt-grade='12']").count(),4,"Four separate Golden role cards");
+   const purple=await hub.locator(".thpt-r4-practice-card").first().evaluate(x=>getComputedStyle(x).getPropertyValue("--thpt-grade-accent").trim());
+   assert.equal(purple,"#8554c1","Correct established grade-12 Golden purple");
+   const roles={"MCQ_CORE":3,"MCQ_PRACTICE":7,"MCQ_APPLICATION":5,"WRITTEN":16};
+   for(const [role,count]of Object.entries(roles)){
+    await hub.locator('[data-g12-ye-open="'+role+'"]').click();
+    const modal=page.locator("dialog.thpt-r4-practice-dialog[open]");
+    await modal.waitFor({state:"visible"});
+    assert.equal(await modal.locator("[data-thpt-canonical-item]").count(),1,"Only one source-locked PUBLIC formative question on screen");
+    assert.equal(await modal.locator(".g12-xp-jump-button").count(),count,"Original role placement "+role);
+    assert.equal(await modal.locator(".g12-xp-reveal").innerText(),"","No answer/rubric before item submit");
+    if(role==="MCQ_CORE"){
+     await modal.locator(".g12-ye-options input[type=radio]").first().check();
+     await modal.locator(".g12-xp-submit").click();
+     assert((await modal.locator(".g12-xp-reveal").innerText()).includes("Đáp án:"),"Only after voluntary MCQ submit");
+     await modal.locator(".g12-xp-next").click();
+     assert.equal(await modal.locator(".g12-xp-reveal").innerText(),"","Next MCQ solution remains hidden");
+    }else if(role==="WRITTEN"){
+     await modal.locator("textarea.g12-xp-input").fill("Em trình bày cách giải và kiểm điều kiện.");
+     await modal.locator(".g12-xp-submit").click();
+     assert((await modal.locator(".g12-xp-reveal").innerText()).includes("Rubric tự đối chiếu /5"),"Reviewed Written rubric only after submit");
+    }
+    await modal.locator(".g12-xp-close").click();
+   }
+   assert.equal(await page.locator(".floating-ai-launcher:visible").count()>0,true,"Floating AI allowed on PUBLIC formative route");
    await open("tu-kiem-tra/");
    const root=page.locator("[data-g12-ye-selfcheck]");
    await page.waitForFunction(()=>document.querySelector("[data-g12-ye-selfcheck]")?.dataset.g12YeReady==="true",null,{timeout:25000});
