@@ -71,3 +71,11 @@ Lấy PDF gốc thực tế của các trường từ bộ nguồn này, mở to
 
 The 24 **Part III** question positions, math figures/formulas and locally rendered pages were checked directly. They are *short-answer graduation-mock questions*, **not** official Bộ graduation papers or school semester tests and not additional Written canonical items. No formal `COVERED/PARTIAL_COVERAGE/COVERAGE_GAP` classification has yet been granted. See [24Q method matrix](DRIVE_HANOI_2026_MOCK_PDF_VISUAL_24Q_R03.md).
 
+
+## 2026 actual national graduation Math exam — highest-priority reference discovered
+
+| EXAM_EVENT_ID | Test date and identity | Public provenance | Status |
+|---|---|---|---|
+| `MOET-GRAD-2026-OFFICIAL-EXAM` | **11 June 2026**, official national THPT graduation **Math** exam; multiple equivalent exam codes | [Vietnam Television VTV, code 0105](https://vtv.vn/de-thi-mon-toan-tot-nghiep-thpt-nam-2026-100260611131943966.htm), original publication **11/06/2026**; [Government portal, codes 0102/0103 and acknowledgement that Ministry released official answers on 19/06/2026](https://xaydungchinhsach.chinhphu.vn/thi-tot-nghiep-thpt-2026-de-thi-mon-toan-vua-suc-co-tinh-phan-hoa-ro-ret-119260611164121523.htm) | `OFFICIAL_EXAM_EVENT_AND_PUBLIC_MEDIA_SCANS_DISCOVERED; QUESTION_LEVEL_VISUAL_SHA_PENDING` |
+
+**Source caution:** one exam event with multiple **code versions** is not 2–3 independent exams. The government news page reporting an officially published **Ministry answer** is strong provenance for the event, but the exam scans shown on media pages still need question-by-question visual inspection and code-specific exam/answer pairing before mapping any question. Do not presume the user-provided '88 đề 2005–2026' third-party compilation is the same canonical official exam set. The actual **2026** national exam has stronger source status than school **mock** exams, and should be prioritized next in the evidence corpus.
