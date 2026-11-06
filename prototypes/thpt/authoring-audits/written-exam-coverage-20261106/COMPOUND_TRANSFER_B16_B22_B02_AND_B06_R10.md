@@ -63,6 +63,6 @@ Reference is a secondary web excerpt, NOT verified to be a particular school Par
 
 - Baseline 31 G10 + 83 G11 + 124 G12 = 238 already-approved D4 IDs; no duplicates, item edits or changes to old rubrics/answer/NotebookLM receipts.
 - This study compares source-locked method practice; it does not infer that an exact school exam exercise must be cloned in SLM. Existing successful learning outcomes can transfer to a new real-world story.
-- Both candidate chains are marked INTEGRATED_TRANSFER_UNDETERMINED. No COVERE D, PARTIAL_COVERAGE or COVERAGE_GAP verdict issued.
+- Both candidate chains are marked INTEGRATED_TRANSFER_UNDETERMINED. No COVERED, PARTIAL_COVERAGE or COVERAGE_GAP verdict issued.
 - Obtain school-issued exam PDFs (currently blocked), real question ID, code-specific key and picture; inspect remaining SGK examples/application and at least two additional independent ordinary Hanoi HKI/HKII papers within the CT GDPT 2018 cohorts.
 - Only if meaningful gaps remain after D1–D4 per-outcome crosswalk should AUTHORING prepare an evidence-backed minimal supplement proposal for owner approval. Any genuinely new mathematical material goes to targeted independent NotebookLM review per existing DELTA_C; no re-review of frozen PASS and no Topic implementation/RELEASE/merge/deploy in this packet.
