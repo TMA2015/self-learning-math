@@ -119,3 +119,60 @@ prototypes/thpt/content-drafts/Temp_G10_SGK_CHVII_FULL_R02_SOURCE_WITH_CANONICAL
 **CLOSED:** source grounding and canonical method-depth comparison for C4/C5. **OPEN SEPARATELY:** owner decision to write material, teacher-outline C5 diagram/official answer, Q18 targeted reviewer if material ever changes, and release eligibility. No merge/deploy.
 
 CLOSEOUT: SGK10_T2_SHA_ee8a00392e1c9fc5b213e574666cf1f8487548737e138573f28a988c640fafe6;SGK_7_24_P56_LORAN;SBT10_T2_SHA_3cb33690e0627b9e8ac467c23625b7feb7d05a8422293db0e1b26e44ca6a78c7;SBT_7_35_P46_ELLIPSE_TUNNEL;CANONICAL_32_D3_4_D4_CROSSED;2_S1_TRANSFER_APPLICATIONS_NOT_PRESENT_IN_SCOPE;OWNER_PENDING;NEW_WRITTEN_ZERO;238_D4_IMMUTABLE
+
+## 6. OWNER DECISION PACKET — MINIMAL ADDITION, PRIORITY, NON-DUPLICATE QA PROBES (khép khâu thiết kế, chưa phải học liệu)
+
+STAGE: G10_B22_S1_ANCHORED_MINIMAL_CHANGE_DECISION_READY
+S1_SOURCE_DIRECT_SHA_PAGE_VISUAL: PASS (as in §5)
+EXISTING_D1_D2_D3_D4_READ: PASS (23 outcomes; 32 D3; 4 D4)
+CANONICAL_ITEM_ADDED_OR_CHANGED: 0
+OWNER_CONTENT_DELTA_APPROVAL: PENDING
+AUTHORING_CONTENT_READY: NO
+ACADEMIC_PED_NEW_REVIEW: NOT_STARTED
+THIS_SECTION_IS_AUDIT_SPEC_ONLY: TRUE
+
+### 6.1 Điều thực sự thiếu và điều KHÔNG được làm
+
+**Thực sự thiếu trong đúng snapshot SGK G10 ChVII đã đối chiếu:** Với outcome hiện hữu \`G10-B22-ELLIPSE_PARAMETERS\`, chưa có hướng dẫn + tự luyện dựng **nửa elip từ kích thước thực tế**, thay tọa độ của một vị trí, phân tích khoảng hở và điều kiện vật lý. Với \`G10-B22-HYPERBOLA_PARAMETERS\`, chưa có hướng dẫn + tự luyện biến **độ trễ tín hiệu thành 2a**, kiểm \`0<2a<2c\`, tính \`b²\`, rồi chọn **nhánh** bằng trạm nhận tín hiệu sớm; cả hai đều được yêu cầu trong S1.
+
+**Không thiếu:** khái niệm/định nghĩa/hệ thức cơ bản elip–hypebol, conic equation, foci/vertices, đơn vị và trung điểm; \`THPT-G10-B22-P01/P02/P05\` và \`THPT-G10-CHVII-W22-01\` đã có những phần đó. Không đổi lời giải/rubric các ID hiện hữu, không nâng \`G10-B22-CONIC_MODEL\` (hiện dạy parabol) thành outcome elip/hypebol bằng một tag thiếu cơ sở.
+
+### 6.2 Phương án MINIMAL_DELTA theo thứ tự tiết kiệm nội dung
+
+| Mức ưu tiên | Scope đề xuất (chưa thi hành) | Vì sao cần, và giới hạn |
+|---|---|---|
+| **P1** | Thêm **một D2/PED5 hướng dẫn đầy đủ “hypebol từ độ trễ tín hiệu”** trong existing \`G10-B22-HYPERBOLA_PARAMETERS\`, với một **Tự thử trước Core**, D6 dẫn trở lại \`THPT-G10-B22-C02/P02\`. Nếu cần minh chứng học sinh tự giải độc lập, **một Written D4 mới** thuộc họ định vị (canonical ID cấp sau, không copy SGK 7.24). | **Toàn ChVII hiện không có Written riêng cho hypebol**, vì D4 B22 duy nhất \`THPT-G10-CHVII-W22-01\` về elip. Họ phương pháp đã có ở SGK 7.24, nhưng chưa thành chuỗi vận dụng public hiện có. Đây là đề xuất D4 có tính bổ sung năng lực, không phải đổi số trong SGK. |
+| **P2** | Thêm **một D2/PED5 “nửa elip – điều kiện khoảng hở”** dưới \`G10-B22-ELLIPSE_PARAMETERS\`, có bước nhận dạng miền y≥0 và D6 quay B22-P01/P05. **Không mặc định thêm D4 elip** ở lượt đầu. | Bài SBT 7.35 chứng minh cần transfer model, nhưng ChVII đã có 1 Written B22 elip từ dữ kiện tiêu điểm. Bổ sung D2 trước giảm ngân hàng trùng họ; một D4 mới chỉ khi có bằng chứng năng lực *tự dựng ứng dụng* vẫn chưa được đo và owner chọn mở rộng. |
+| **Không làm** | Không thêm hai bài là bản sao SBT 7.35 và SGK 7.24; không biến tuyển tập ôn tập thành đề thi thật; không tự sửa outcome counts/Q01–Q18, không cấp thêm Core riêng hay Topic READINESS; không đụng 238 D4 đã PASS. | Tránh trùng lặp, Q15 duplicate, Q16 leakage, nội dung dàn trải và việc mất hiệu lực receipt snapshot đã khóa. |
+
+**Điểm chốt quy mô đề xuất:** \`2_D2_EXPLANATION_BRIDGES + OPTIONAL_1_DISTINCT_HYPERBOLA_WRITTEN\` là **phương án học liệu nhỏ nhất có lý do mạnh**; \`ELIPSE_SECOND_D4\` chỉ là dự phòng. Tất cả **chưa tạo item_id** và **chưa biên soạn vào nguồn học liệu**.
+
+### 6.3 Hai QA probe tính toán TỰ TẠO để định nghĩa độ sâu (không là đề mới, không cấp canonical ID)
+
+Đây là bộ số thử **chỉ cho kiểm toán phương pháp**, dùng để xác định rubric/checklist cho một delta tương lai. Không là đề đã duyệt, không cung cấp cho học sinh và không dùng thay SGK/SBT.
+
+**QA-ELLIPSE-01 — phân biệt “đủ độ cao” và “đủ khoảng an toàn”:**
+- Mái kính nửa elip đối xứng, rộng 20 m, cao 6 m (không giống SBT 7.35 hoặc GV C4), gốc ở tâm nền, lấy nửa trên. \(x²/100+y²/36=1, y≥0, |x|≤10\).
+- Tại vị trí \(|x|=8\) m, mái cao \(y=6\sqrt{1-64/100}=\mathbf{3.6}\) m. Vật cao 3.5 m **không chạm mái** nhưng **chỉ dư 0.1 m**, nên **không đạt** yêu cầu chừa ít nhất 0.2 m. Không được đáp “đi qua được” mà bỏ điều kiện an toàn. Hai cách hỏi (không va chạm / đạt khoảng an toàn) có kết luận khác nhau.
+- Cổng PED5: chọn trục và đơn vị → từ rộng/cao suy a,b đúng vị trí → chỉ lấy nửa y≥0 → thế khoảng cách *từ tâm* (phân biệt từ mép) → so **đúng ràng buộc**.
+- D6: nếu lấy a=6,b=10 dẫn đến trục sai thì quay \`B22-P01\`; nếu dùng cả y âm quay bản chất nửa elip/đọc hình; nếu bỏ điều kiện khoảng an toàn thì quay PED5 đánh dấu yêu cầu ra quyết định.
+
+**QA-HYPERBOLA-01 — mô hình + điều kiện vô lý + chọn nhánh:**
+- Hai trạm tại \(A(-20,0)\), \(B(20,0)\), đơn vị km, đồng phát tín hiệu theo **mô hình giả định** với vận tốc \(v=200000\) km/s; B nhận tín hiệu đến tàu sớm hơn A \(0.0001\) s. Độ chênh quãng đường \(\Delta d=v\Delta t=20\) km = \(2a\), nên \(a=10\), \(c=20\), \(b²=c²-a²=\mathbf{300}\) km²; locus \(x²/100-y²/300=1\).
+- B đến trước ⇒ tàu gần B ⇒ **nhánh phải \(\mathbf{x≥10}\)**, không phải mọi điểm trên cả hai nhánh; một cặp trạm cho một **quỹ tích**, chưa định được duy nhất một tọa độ tàu.
+- Trường hợp phép đo lần hai báo \(\Delta t=0.00025\) s ⇒ \(\Delta d=50\) km lớn hơn khoảng cách hai trạm 40 km; theo bất đẳng thức tam giác \(|PA-PB|≤AB=40\), **không có vị trí thực nào thỏa**. Dữ liệu vô lý, không được cố lập hypebol với \(a≥c\).
+- Cổng PED5: đổi đơn vị thời gian → \(\Delta d= v\Delta t\) → nhận diện \(\Delta d=2a\) và \(AB=2c\) → kiểm feasibility trước khi tính \(b²\) → branch orientation → giới hạn không xác định được điểm duy nhất.
+- Rubric *đề xuất để NotebookLM phản biện khi owner duyệt*, không dùng để chấm học sinh hiện tại: 1 điểm đơn vị/độ trễ, 1 điểm 2a/c, 1 điểm điều kiện tồn tại, 2 điểm phương trình/b², 1 điểm nhánh, 1 điểm không xác định vị trí duy nhất, 1 điểm bác bỏ phép đo vô lý = **8 điểm dự kiến**. Reviewer có thể đổi thang sau khi thực sự soạn item và đồng bộ một source canonical.
+
+**QA chống trùng:** hai probes tạo thêm chiều sâu khác so với SBT 7.35/SGK 7.24 (quyết định có **khoảng an toàn**, kiểm **độ trễ phi vật lý**), khác B22-P01/P02 và W22-01 về chuỗi mô hình hóa, không chỉ thay đơn vị hoặc số. Không đưa trực tiếp probes này lên học liệu như bài tự luận nếu chưa biên soạn đúng outcome, lời giải, rubrics, D6, source-lock và review độc lập.
+
+### 6.4 Tiêu chí đóng AUTHORING nếu được phê duyệt *về sau*
+
+- **Tách hai delta theo chính các lesson outcomes bị ảnh hưởng:** bổ sung D2/PED5 cho elip+hypebol; nếu có Written mới chỉ cấp **một \`ITEM_ID\` canonical** khác 238 ID đã khóa, một rubric/chấm duy nhất, có thể dùng nhiều placement nhưng không nhân bản.
+- **Delta class:** \`DELTA_C_ACADEMIC_MATERIAL\`, vì thêm hướng dẫn bản chất/chuỗi bài và có thể thêm câu, không gọi Delta A/B metadata-only.
+- **Reviewer:** đúng **năm Permanent Sources v2.1**, **S1 SGK/SBT KNTT trực tiếp**, review độc lập Q01–Q18 Academic/PED từng affected outcome/item (D1–D6, PED1–PED6, Q15/Q16/Q18); evidence receipt và source SHA phải trùng snapshot mới. Không suy snapshot 238 PASS sang học liệu thêm, không review lại 238 câu không bị ảnh hưởng.
+- **Owner gate:** chỉ chuyển từ **DECISION_READY** sang **AUTHORING_DELTA_IN_PROGRESS** sau khi có quyết định cho phép *thêm D2 và/hoặc D4*, phạm vi lớp/chương và duyệt câu mới. Không tự đổi source-locked original/REGISTER CONTENT_READY, không mở RELEASE/merge/deploy.
+
+**Kết luận công đoạn:** hai họ method đã được khóa nguồn S1, xác nhận bounded gap sư phạm trong public canonical, thiết kế minimal delta theo thứ tự, QA nguyên lý và chống trùng. Bước tiếp không phải là thêm “R20 kiểm toán PDF” nữa; nếu không có quyết định mở content delta thì giữ \`OWNER_DECISION_PENDING\` và tiếp tục tìm dạng **khác** theo bộ đề luyện mà người dùng đã cho phép, không xoay vòng hai dạng này.
+
+END_STAGE: B22_METHOD_DELTA_SCOPE_DECISION_READY;P1_HYPERBOLA_D2_OPTIONAL_WRITTEN;P2_ELLIPSE_D2_NO_DEFAULT_EXTRA_WRITTEN;TWO_ORIGINAL_NONCANONICAL_QA_PROBES_CHECKED;S1_SHA_VERIFIED;238_CANONICAL_IMMUTABLE;CONTENT_DELTA_NOT_STARTED;AUTHORING_ONLY
