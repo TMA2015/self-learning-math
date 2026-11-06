@@ -1,0 +1,160 @@
+### BÁO CÁO PHẢN BIỆN HỌC THUẬT VÀ SƯ PHẠM ĐỘC LẬP
+**THẨM ĐỊNH TOÀN BỘ HỌC LIỆU SGK TOÁN 12 KNTT TẬP HAI — CHƯƠNG VI (BÀI 18, BÀI 19 VÀ TỰ KIỂM TRA CUỐI CHƯƠNG)**
+*(Bản thẩm định độc lập theo chuẩn mực `SLM-THPT-QUALITY-ONE` v1.1.0)*
+
+* **PACKET_ID:** `G12-SGK-CHVI-B18-B19-END-R00`
+* **STANDARD_ID:** `SLM-THPT-QUALITY-ONE` (v1.1.0, Cổng Q01–Q18)
+* **CƠ SỞ PHÁP LÝ & QUY TẮC:** Đúng **5 Permanent Sources THPT v2.1** (`01_THPT_MASTER_PLAN_v2.1` đến `05_THPT_CANONICAL_EXERCISE_AND_ID_ CONTRACT_v2.1`), Nguồn S1 SGK/SBT Toán 12 KNTT Tập Hai gốc và 11 tệp snapshot R00 đính kèm.
+
+---
+
+### TÓM TẮT QUẢN TRỊ VÀ KẾT LUẬN THẨM ĐỊNH (EXECUTIVE SUMMARY)
+
+1. **`ACADEMIC_G12_CHAPTER_VI = PASS`**  
+   Học liệu đạt chuẩn mực tuyệt đối về độ chính xác toán học lý thuyết xác suất nâng cao:
+   * **Xác suất có điều kiện (Bài 18):** Định nghĩa \\(P(A|B) = \frac{P(A \cap B)}{P(B)}\\) với điều kiện bắt buộc \\(P(B) > 0\\); sự co hẹp không gian mẫu về \\(B\\); phân biệt nghiêm ngặt giữa \\(P(A|B)\\) và \\(P(B|A)\\); công thức nhân xác suất \\(P(A \cap B) = P(B)P(A|B)\\) áp dụng cho biến cố phụ thuộc; điều kiện độc lập \\(P(A|B) = P(A)\\); biểu diễn sơ đồ cây với xác suất điều kiện trên từng nhánh.
+   * **Công thức Xác suất toàn phần và Công thức Bayes (Bài 19):** Công thức toàn phần \\(P(B) = P(A)P(B|A) + P(\bar{A})P(B|\bar{A})\\) trên phân hoạch hai nhóm \\(\{A, \bar{A}\}\\) và mở rộng nhiều nhóm \\(\sum P(A_i)P(B|A_i)\\) với \\(\sum P(A_i) = 1\\); công thức Bayes đảo chiều điều kiện \\(P(A|B) = \frac{P(A)P(B|A)}{P(B)}\\) với \\(P(B) > 0\\).
+   * **Phân tích bẫy tỷ lệ nền (Base Rate Fallacy):** Giải thích chuẩn xác hiện tượng xác suất dương tính giả chiếm tỷ lệ lớn khi hiện tượng hiếm (\\(P(A)\\) rất nhỏ) dù độ nhạy \\(P(+|A)\\) cao.
+   * **Giải quyết bài toán Trò ba cánh cửa (Monty Hall Problem):** Xác định chuẩn mực điều kiện biên \\(P(\text{đổi}) = 2/3\\) CHỈ đúng khi người dẫn chương trình luôn mở một cửa thua chưa chọn và luôn mời đổi.
+
+2. **`PEDAGOGICAL_SELF_LEARNING_READY = PASS`**  
+   Học liệu đáp ứng trọn vẹn 6 tiêu chí sư phạm tự học (`PED1–PED6`): Động cơ cập nhật xác suất khi có thêm thông tin (`PED1 WHY`), kiến thức tiền đề không gian mẫu/biến cố giao (`PED2 WHAT`), hình thành bản chất co hẹp mẫu số trước công thức (`PED3 HOW`), đọc 5 hình minh họa D5 & điều kiện \\(P(B)>0\\) (`PED4 FORMAL`), giải thích lý do lựa chọn phương pháp (`PED5 METHOD`), và thiết kế hoạt động Tự thử định hướng trước Core (`PED6 SELF-TRY`).
+
+3. **`EXPOSURE_SYSTEM_VERDICT = SYSTEM_HOLD` | `RELEASE_AUTHORIZATION = NO` | `MASTERY_ACTIVATION = NO` | `CONTENT_READY = NO`**  
+   Phê duyệt học thuật và sư phạm này là điều kiện cần nhưng **chưa cấp phép phát hành**, không tự động kích hoạt tính năng Tự kiểm tra công khai (Final Submit), không ghi nhận điểm Skill Mastery cho học sinh và không cấp quyền merge/deploy website.
+
+---
+
+### I. SOURCE_RECEIPT VÀ XÁC MINH S1 (SGK & SBT KNTT TẬP 2 GỐC)
+
+#### 1. Nhật ký Nguồn S1 và Chỉ số Trang in vs. PDF 1-based Index
+
+* **SGK Toán 12 KNTT Tập Hai (Nguồn S1 Core):**
+  * Tệp PDF gốc 99 trang, SHA256: `3c642f2e80d86d699ea62bbcabd0c3074fd5118def96e4b3b8ce1f9ead7f97bb`.
+  * Trong tệp PDF SGK: **`PDF Index (1-based) = Trang in + 2`** (đã xác minh trực tiếp từ trang quét S1).
+  * *Bài 18 (Xác suất có điều kiện):* Trang in **64–71** (PDF 1-based: **66–73**)
+  * *Bài 19 (Công thức xác suất toàn phần và công thức Bayes):* Trang in **72–78** (PDF 1-based: **74–80**)
+  * *Bài tập cuối Chương VI:* Trang in **79–80** (PDF 1-based: **81–82**)
+* **SBT Toán 12 KNTT Tập Hai (Nguồn S1 Reference):**
+  * Tệp PDF gốc 117 trang, SHA256: `823b013adeb487639e55493b4a7c09edb9a21daabc058ea53e6fe92f7a0352f1`.
+  * Trong tệp PDF SBT: **`PDF Index (1-based) = Trang in - 2`** (đã xác minh trực tiếp từ trang quét S1).
+  * *Bài 18:* Trang in **40–42** (PDF 1-based: **38–40**)
+  * *Bài 19:* Trang in **43–44** (PDF 1-based: **41–42**)
+  * *Bài tập cuối Chương VI:* Trang in **45–47** (PDF 1-based: **43–45**) — Không bị khuyết trang nào.
+
+---
+
+### II. BẢNG MÃ TRẬN ĐỐI CHIẾU HỌC LIỆU VÀ TỔNG HỢP ID RECONCILIATION
+
+| Bài học / Phân đoạn | Outcomes | Scored Items (D3 & D4) | Worked Examples (D2) | PNG Graphs (D5) | HELP Cards (D6) |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Bài 18: Xác suất có điều kiện** | 7 (`O01`–`O07`) | 28 (7C + 7P + 7A + 7W) | 7 (`EX01`–`EX07`) | 3 | 7 (`HELP01`–`07`) |
+| **Bài 19: Toàn phần và Bayes** | 7 (`O01`–`O07`) | 28 (7C + 7P + 7A + 7W) | 7 (`EX01`–`EX07`) | 2 | 7 (`HELP01`–`07`) |
+| **CHVI-END: Tự kiểm tra cuối chương** | 14 Placements | 14 Placements Application | 0 | 0 | 0 (Dẫn đường B18-19) |
+| **CHVI-RD1: Đề kiểm tra kín độc lập** | 14 Items RD1 | 14 Held-out Items | 0 | 0 | 0 |
+| **TỔNG CỘNG TOÀN CHƯƠNG VI** | **14 Outcomes** | **56 Public Items + 14 RD1** | **14 Ví dụ D2** | **5 Hình D5** | **14 Thẻ D6 HELP** |
+
+---
+
+### III. PHẢN BIỆN CHUYÊN SÂU PED1–PED6 VÀ PHÂN TÍCH TOÁN HỌC THEO BÀI
+
+#### 1. Bài 18: Xác suất có điều kiện (7 Outcomes, 28 Public Items + 7 VD + 7 HELP + 3 Hình D5) — `PASS`
+* **PED1–PED3 (Động cơ & Bản chất):**
+  * *Động cơ (WHY):* Thông tin mới nhận được làm thay đổi nhận định xác suất. Lấy ví dụ nhóm học sinh đã tham gia ôn tập có tỷ lệ đạt cao hơn tỷ lệ chung của toàn trường.
+  * *Bản chất không gian mẫu co hẹp:* Khi biết \\(B\\) đã xảy ra, không gian mẫu \\(\Omega\\) thu hẹp về \\(B\\). Xác suất \\(P(A|B) = \frac{P(A \cap B)}{P(B)}\\) là tỉ số giữa phần giao \\(A \cap B\\) và toàn bộ vùng \\(B\\).
+* **PED4 (Ràng buộc toán học & Điều kiện nghiêm ngặt):**
+  1. *Điều kiện mẫu số:* Công thức \\(P(A|B)\\) chỉ xác định khi \\(P(B) > 0\\).
+  2. *Phân biệt \\(P(A|B)\\) và \\(P(B|A)\\):* \\(P(A|B) = \frac{P(A \cap B)}{P(B)}\\) trong khi \\(P(B|A) = \frac{P(A \cap B)}{P(A)}\\). Do \\(P(A)\\) và \\(P(B)\\) nói chung khác nhau nên hai xác suất này khác nhau về bản chất và giá trị.
+  3. *Điều kiện độc lập:* \\(A\\) và \\(B\\) độc lập khi và chỉ khi \\(P(A|B) = P(A)\\) (khi \\(P(B)>0\\)). Nếu \\(A, B\\) xung khắc và có xác suất dương thì chúng **phụ thuộc** lẫn nhau (vì \\(P(A|B) = 0 \neq P(A)\\)).
+  4. *Giả thiết Trò ba cánh cửa (Monty Hall):* Mô hình hóa chuẩn xác: \\(P(\text{đổi}) = 2/3\\) yêu cầu giả thiết người dẫn chương trình **luôn mở một cửa thua chưa chọn** và **luôn mời người chơi đổi cửa**.
+* **PED5–PED6 (Ví dụ & Tự thử):** 7 ví dụ suy luận (`EX-G12-B18-O01..O07`) hướng dẫn đếm không gian mẫu thu hẹp, áp dụng công thức, đọc bảng 2 chiều \\(2 \times 2\\), công thức nhân và sơ đồ cây rút bi không hoàn lại. 2 hoạt động Tự thử (`B18-T01`, `B18-T02`) giúp học sinh tự kiểm tra trước Core.
+* **Hình ảnh D5:** 
+  * `Temp_FIG-G12-CHVI-B18-SET-R00.png`: Biểu đồ Venn thể hiện sự co hẹp không gian mẫu về \\(B\\).
+  * `Temp_FIG-G12-CHVI-B18-TABLE-R00.png`: Bảng 2 chiều \\(2 \times 2\\) minh họa việc đọc mẫu số theo hàng/cột điều kiện.
+  * `Temp_FIG-G12-CHVI-B18-TREE-R00.png`: Sơ đồ cây rút bi không hoàn lại, ghi rõ xác suất điều kiện trên các nhánh.
+
+#### 2. Bài 19: Công thức xác suất toàn phần và công thức Bayes (7 Outcomes, 28 Public Items + 7 VD + 7 HELP + 2 Hình D5) — `PASS`
+* **PED1–PED3 (Động cơ & Bản chất):**
+  * *Động cơ (WHY):* Bài toán hai tầng: Biết tỷ lệ từng nhóm và rủi ro của từng nhóm, tính tỷ lệ rủi ro chung toàn dân số (Toàn phần). Khi thấy một kết quả (ví dụ sản phẩm hỏng), truy vết xem nó xuất phát từ nhóm nào (Bayes - Đảo chiều điều kiện).
+  * *Bản chất phân hoạch:* Chia \\(\Omega\\) thành hai nhóm xung khắc \\(A\\) và \\(\bar{A}\\) (hoặc các nhóm \\(A_1, A_2, \dots, A_k\\) với \\(\sum P(A_i) = 1\\)). Biến cố \\(B = (B \cap A) \cup (B \cap \bar{A})\\).
+* **PED4 (Công thức & Khóa bẫy):**
+  1. *Công thức Xác suất toàn phần:* \\(P(B) = P(A)P(B|A) + P(\bar{A})P(B|\bar{A})\\).
+  2. *Công thức Bayes:* \\(P(A|B) = \frac{P(A \cap B)}{P(B)} = \frac{P(A)P(B|A)}{P(A)P(B|A) + P(\bar{A})P(B|\bar{A})}\\) (với \\(P(B) > 0\\)).
+  3. *Phân tích Tỷ lệ nền (Base Rate Fallacy):* Khi tỷ lệ mắc bệnh \\(P(A)\\) trong cộng đồng rất thấp (ví dụ \\(1\%\\)), dù xét nghiệm có độ nhạy \\(P(+|A) = 90\%\\) và độ đặc hiệu \\(95\%\\), xác suất một người dương tính thực sự mắc bệnh \\(P(A|+)\\) vẫn nhỏ (do số lượng dương tính giả từ \\(99\%\\) người lành chiếm đa số trong tổng số ca dương tính).
+* **PED5–PED6 (Ví dụ & Tự thử):** 7 ví dụ suy luận (`EX-G12-B19-O01..O07`) giải thích chia trường hợp, tính xác suất toàn phần, đọc sơ đồ cây 2 tầng, tính Bayes, phân tích xét nghiệm y tế/tỷ lệ nền, xác suất toàn phần 3 nguồn và bài toán tự luận tổng hợp 4 bước. 2 hoạt động Tự thử (`B19-T01`, `B19-T02`) trước Core.
+* **Hình ảnh D5:** 
+  * `Temp_FIG-G12-CHVI-B19-TOTAL-R00.png`: Sơ đồ cây xác suất toàn phần 2 tầng (\\(A, \bar{A}\\) và \\(B, \bar{B}\\)).
+  * `Temp_FIG-G12-CHVI-B19-BAYES-R00.png`: Biểu đồ phân bố dương tính thật vs. dương tính giả minh họa công thức Bayes và tỷ lệ nền.
+
+#### 3. Bài tập Cuối chương VI (Public Self-Check) & Bộ Đề kín RD1 Độc lập
+* **Tự kiểm tra công khai (`CLIENT_SELF_CHECK_NO_MASTERY`):**  
+  * Bao gồm 14 placements tham chiếu trực tiếp đến 14 câu Application công khai đã duyệt (`THPT-G12-B18-A01..A07`, `THPT-G12-B19-A01..A07`).
+  * **Đảm bảo an toàn:** 0 câu mới được tạo ra (tránh nhân bản item ID); không ghi điểm Skill Mastery; đáp án và lời giải chỉ mở sau `Final Submit`.
+* **Bộ Đề kín RD1 Độc lập (`SGK_CHAPTER_READINESS`):**  
+  * Gồm 14 câu độc lập (`RD1-G12-CHVI-01` đến `14`) được bảo mật hoàn toàn trong tệp `Temp_G12_CHVI_RD1_PRIVATE_REVIEW_R00_20261103.md`.
+  * Khảo sát 14/14 outcomes, có đáp án và rubric 5 bước chi tiết. Không trùng lặp câu chữ hay số liệu với ngân hàng công khai.
+
+---
+
+### IV. THẨM ĐỊNH 18 CỔNG CHẤT LƯỢNG (Q01–Q18)
+
+| Mã Cổng | Tên Cổng Chất Lượng (SLM-THPT-QUALITY-ONE) | Kết quả | Trích dẫn Bằng chứng Thẩm định |
+| :---: | :--- | :---: | :--- |
+| **Q01** | Source Receipt & S1 Page Matching | **PASS** | Khớp 100% trang in SGK (64–80) và SBT (40–47) cùng SHA256 PDF S1. |
+| **Q02** | Math Correctness & Domain Limits | **PASS** | \\(P(B)>0\\), Bayes, \\(P(A \cap B) = P(B)P(A|B)\\), Tỷ lệ nền, Monty Hall chuẩn xác. |
+| **Q03** | Canonical Exercise & ID Contract | **PASS** | 56 câu công khai có `item_id` duy nhất, gán đúng 1 `OUTCOME_ID` chính. |
+| **Q04** | Assessment Security & Self-Check Boundary | **PASS** | Tự kiểm tra cuối chương dùng `CLIENT_SELF_CHECK_NO_MASTERY`, khóa đáp án pre-Submit. |
+| **Q05** | Worked Examples Rationale (D2) | **PASS** | 14 ví dụ D2 có lý giải chọn phương pháp, thử lại kết quả và kiểm đơn vị. |
+| **Q06** | Written Item Rubrics (/5 Scale) | **PASS** | 14 bài tự luận D4 có rubric /5 phân rã đúng các bước tính toán xác suất. |
+| **Q07** | Image / Visual QA (D5) | **PASS** | 5 ảnh PNG có chú thích, Venn, sơ đồ cây và phân bố tỷ lệ nền trực quan. |
+| **Q08** | HELP Remediation Cards (D6) | **PASS** | 14 thẻ HELP tuân thủ quy trình 5 bước quay về đúng outcome ban đầu. |
+| **Q09–Q14**| PED1–PED6 Self-Learning Architecture | **PASS** | Kiến tạo động cơ WHY, tiền đề, bản chất trước công thức, Tự thử trước Core. |
+| **Q15** | Canonical ID & Shared Bank | **PASS** | Mỗi bài tập có 1 `item_id` duy nhất, không nhân bản ID. |
+| **Q16** | Client Self-Check & Exposure Control | **PASS** | Tự kiểm tra cuối chương dùng `CLIENT_SELF_CHECK_NO_MASTERY`, bảo mật 14 câu RD1 kín. |
+| **Q17** | Dual Journey Boundaries | **PASS** | Giữ nguyên ranh giới SGK vs. Chuyên đề. |
+| **Q18** | System Authorization Boundary | **PASS** | Giữ nguyên ranh giới hệ thống: `RELEASE_AUTHORIZATION = NO`, `MASTERY_ACTIVATION = NO`. |
+
+* **Thống kê Lỗi & Phân loại Delta:**  
+  * **P0 (System Blockers):** `0` | **P1 (Revisions Required):** `0` | **P2 (Minor Improvement Suggestions):** `0`
+  * **MINIMAL_DELTA:** `0` (Phân loại: `DELTA_A_NO_CHANGE`).
+
+---
+
+### V. BẢNG MÁY KIỂM TRA MÃ HÓA (MACHINE-CHECKABLE VERDICT)
+
+```text
+PACKET_ID|G12-SGK-CHVI-B18-B19-END-R00
+STANDARD_ID|SLM-THPT-QUALITY-ONE
+STANDARD_VERSION|1.1.0
+PERMANENT_SOURCES_VERSION|THPT-v2.1
+S1_SGK_RECEIPT|TOAN_12_KNTT_TAP_HAI_P64-80_SHA256_3c642f2e80d86d699ea62bbcabd0c3074fd5118def96e4b3b8ce1f9ead7f97bb
+S1_SBT_RECEIPT|BAI_TAP_TOAN_12_KNTT_TAP_HAI_P40-47_SHA256_823b013adeb487639e55493b4a7c09edb9a21daabc058ea53e6fe92f7a0352f1
+ACADEMIC_G12_CHAPTER_VI|PASS
+PEDAGOGICAL_SELF_LEARNING_READY|PASS
+OUTCOME_MATRIX_COUNT|14
+WORKED_EXAMPLES_D2_COUNT|14
+PUBLIC_CANONICAL_ITEMS_COUNT|56
+WRITTEN_RUBRIC_5_COUNT|14
+IMAGE_GRAPH_D5_COUNT|5
+REMEDIATION_HELP_D6_COUNT|14
+PRIVATE_RD1_HELD_OUT_COUNT|14
+QUALITY_GATES_Q01_TO_Q18|ALL_PASS
+P0|0
+P1|0
+P2|0
+MINIMAL_DELTA|0
+DELTA_CLASS|DELTA_A_NO_CHANGE
+EXPOSURE_SYSTEM_VERDICT|SYSTEM_HOLD
+RELEASE_AUTHORIZATION|NO
+MASTERY_ACTIVATION|NO
+CONTENT_READY|NO
+```
+
+---
+
+### VI. BẢO TỒN RANH GIỚI THẨM QUYỀN HỆ THỐNG
+
+1. Phê duyệt **`ACADEMIC_G12_CHAPTER_VI = PASS`** và **`PEDAGOGICAL_SELF_LEARNING_READY = PASS`** áp dụng nghiêm ngặt cho toàn bộ học liệu SGK Toán 12 KNTT Tập 2 (Bài 18–19 và Tự kiểm tra cuối chương) trong gói candidate `R00`.
+2. **`RELEASE_AUTHORIZATION = NO`**: Phê duyệt học thuật và sư phạm này **không** cấp quyền merge/deploy code lên GitHub repository công khai hay xuất bản lên website/frontend.
+3. **`MASTERY_ACTIVATION = NO`**: **Không** tự động kích hoạt tính năng Tự kiểm tra công khai (Final Submit) hay tính điểm Skill Mastery cho người học.
+4. **`EXPOSURE_SYSTEM_VERDICT = SYSTEM_HOLD`** & **`CONTENT_READY = NO`**: Tạm hoãn xuất bản hệ thống cho đến khi hoàn tất các thủ tục đóng gói phát hành kỹ thuật chính thức.
