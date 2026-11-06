@@ -38,6 +38,9 @@
 .g12-xp-reveal h4,.g12-xp-end-answer h4{margin:8px 0}
 .g12-xp-paragraph{line-height:1.7;overflow-wrap:anywhere}
 .g12-xp-foot,.g12-xp-end-controls{display:flex;justify-content:space-between;gap:10px;padding:14px 25px 20px}
+/* The single existing floating Gemini launcher lives inside a native public modal.
+   Reserve its bottom-right touch footprint; never cover the learner's Next control. */
+.g12-xp-dialog .g12-xp-foot{padding-right:104px;box-sizing:border-box;}
 .g12-xp-prev,.g12-xp-next{border:1px solid var(--md-default-fg-color--lightest);border-radius:8px;min-height:42px;padding:8px 15px;background:var(--md-code-bg-color);color:var(--md-default-fg-color);font:inherit;cursor:pointer}
 .g12-xp-prev:disabled,.g12-xp-next:disabled{opacity:.4;cursor:default}
 .g12-xp-end-progress{margin:14px 0 4px}
@@ -56,7 +59,7 @@
  .g12-xp-modal-head h2{font-size:1.1rem}
  .g12-xp-jump{padding:12px 15px}
  .g12-xp-stage{padding:13px}
- .g12-xp-foot{padding:13px}
+ .g12-xp-foot{padding:13px 104px 13px 13px}
  .g12-xp-end-card{padding:12px}
  .g12-xp-end-controls{gap:8px}
  .g12-xp-end-controls .g12-xp-submit{flex:1 1 100%}
