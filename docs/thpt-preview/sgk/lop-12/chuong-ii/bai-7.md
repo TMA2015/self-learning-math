@@ -16,13 +16,13 @@ Một kiện hàng đặt trên sàn không chỉ có “bên trái/bên phải�
 
 ## 3. Bản chất và điều kiện áp dụng
 
-### 2.1. Hệ ba trục
+### 3.1. Hệ ba trục
 
 Lấy ba đường thẳng $Ox,Oy,Oz$ đôi một vuông góc, cùng đi qua $O$. Chọn ba vectơ đơn vị $\vec i,\vec j,\vec k$ lần lượt trên các chiều dương đó; mỗi vectơ có độ dài 1 và đôi một vuông góc. Ba mặt phẳng $(Oxy),(Oyz),(Oxz)$ là **mặt phẳng tọa độ**; điểm thuộc $(Oxy)$ có $z=0$, thuộc $(Oyz)$ có $x=0$, thuộc $(Oxz)$ có $y=0$. Điểm trên trục $Ox$ có $y=z=0$, tương tự với hai trục kia.
 
 **Cách đọc hình:** trước hết tìm giao điểm của ba trục (gốc), xác định chiều mũi tên dương, xem phép chiếu của điểm xuống các mặt phẳng. Trên hình isometric, các góc của ba trục nhìn bằng mắt thường **không nhất thiết là góc 90 độ**; tính vuông góc đến từ quy ước hình học thật. Hình **FIG-G12-CHII-B07-R00.svg** dùng điểm $M(2;1;3)$ và ba đường trợ giúp theo ba trục; các nét đứt chỉ là đường dẫn mắt, không phải cạnh của vật.
 
-### 2.2. Tọa độ điểm và vectơ khác gì nhau?
+### 3.2. Tọa độ điểm và vectơ khác gì nhau?
 
 Trong hệ $Oxyz$, mọi vectơ $\vec a$ đều viết duy nhất được
 
@@ -30,7 +30,7 @@ $$\vec a=x\vec i+y\vec j+z\vec k,$$
 
 và có tọa độ $(x;y;z)$. Với điểm $M$, viết tọa độ $M(x;y;z)$ nghĩa là **vectơ vị trí** $\overrightarrow{OM}$ có tọa độ $(x;y;z)$. Vectơ tự do $\vec a$ vẫn giữ tọa độ khi dời song song trong cùng hệ; điểm $M$ thì gắn với một vị trí cụ thể. Một điểm tọa độ âm không có nghĩa là “độ dài âm”; dấu chỉ chiều so với trục.
 
-### 2.3. Tọa độ vectơ nối hai điểm: cuối trừ đầu
+### 3.3. Tọa độ vectơ nối hai điểm: cuối trừ đầu
 
 Nếu $A(x_A;y_A;z_A)$ và $B(x_B;y_B;z_B)$ thì đi từ $A$ tới $B$ làm mỗi thành phần thay đổi một lượng **tọa độ cuối − tọa độ đầu**:
 
@@ -38,24 +38,26 @@ $$\overrightarrow{AB}=(x_B-x_A;\;y_B-y_A;\;z_B-z_A).$$
 
 **Vì sao phải chọn phép trừ?** Một bước đi được định nghĩa bằng “sau trừ trước”; đổi thứ tự thành $\overrightarrow{BA}$ sẽ đổi dấu cả ba thành phần. Công thức chỉ có ý nghĩa khi $A,B$ được mô tả trong **cùng hệ quy chiếu** và cùng đơn vị.
 
-### 2.4. Chọn gốc và đơn vị cho bài thực tiễn
+### 3.4. Chọn gốc và đơn vị cho bài thực tiễn
 
 Với một phòng dạng hộp, thường chọn góc phòng làm $O$, hai trục nằm trên sàn, $Oz$ thẳng đứng, đơn vị mét. Với tàu bay, chọn gốc tại nơi xuất phát, trục $x$ theo đông, $y$ theo bắc, $z$ theo độ cao (đã định hướng phù hợp). **Mô hình hóa:** khai báo gốc–trục–đơn vị trước khi gán số; kiểm tra tọa độ $z$ không âm nếu bài đang giới hạn điểm ở phía trên sàn.
 
 ## 4. Đọc hình minh họa
 
-**FIG-G12-CHII-B07-R00.svg:** đọc trục có chữ $x,y,z$, xác định điểm $M(2;1;3)$ từ gốc; nét đứt hướng dẫn tách ba thành phần nhưng không biểu diễn độ dài thật trên giấy. Đây là hình giảng giải tự tạo, không phải ảnh nguyên bản SGK.
-
-| OUTCOME_ID | Triệu chứng sai | D6 quay lại |
-|---|---|---|
-| O01 | Đọc “mặt phẳng Oxy” như một trục | §2.1 / EX01: đặt tọa độ còn lại = 0 |
-| O02 | Lẫn tọa độ điểm với vectơ bất kì | §2.2 / EX02: xác định gốc O |
-| O03 | Không khai báo hướng trục, đơn vị | §2.4 / EX03: vẽ sơ đồ góc phòng |
-| O04 | Lấy đầu trừ cuối | §2.3 / EX04: tính theo biến thiên trước–sau |
-
-**Tự kiểm trước khi sang B08:** Hãy giải thích vì sao $A(-2;1;3)$ không nhất thiết ở “dưới mặt đất”, trong khi $z=-2$ có thể mang nghĩa thấp hơn mặt phẳng $Oxy$ nếu $Oz$ chọn hướng lên. Có thể lấy lại ví dụ trục trước khi tính các phép toán.
+**Cách đọc hình:** đọc trục có chữ $x,y,z$, xác định điểm $M(2;1;3)$ từ gốc; nét đứt hướng dẫn tách ba thành phần nhưng không biểu diễn độ dài thật trên giấy. Đây là hình giảng giải tự tạo, không phải ảnh nguyên bản SGK.
 
 <figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/FIG-G12-CHII-B07-R00.svg" alt="Hình minh họa Bài 7 · Hệ trục tọa độ trong không gian" /><figcaption>Hình gốc của học liệu Bài 7, đọc cùng hướng dẫn ngay phía trên.</figcaption></figure>
+
+### Các lỗi thường gặp và cách tự khắc phục
+
+| Ý | Triệu chứng sai | D6 quay lại |
+|---|---|---|
+| 1 | Đọc “mặt phẳng Oxy” như một trục | §3.1 / ví dụ 1: đặt tọa độ còn lại = 0 |
+| 2 | Lẫn tọa độ điểm với vectơ bất kì | §3.2 / ví dụ 2: xác định gốc O |
+| 3 | Không khai báo hướng trục, đơn vị | §3.4 / ví dụ 3: vẽ sơ đồ góc phòng |
+| 4 | Lấy đầu trừ cuối | §3.3 / ví dụ 4: tính theo biến thiên trước–sau |
+
+**Tự kiểm trước khi sang B08:** Hãy giải thích vì sao $A(-2;1;3)$ không nhất thiết ở “dưới mặt đất”, trong khi $z=-2$ có thể mang nghĩa thấp hơn mặt phẳng $Oxy$ nếu $Oz$ chọn hướng lên. Có thể lấy lại ví dụ trục trước khi tính các phép toán.
 
 ## 5. Ví dụ có suy luận và lựa chọn phương pháp
 
