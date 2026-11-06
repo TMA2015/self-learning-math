@@ -33,6 +33,10 @@ jobs:
         run: |
           node --check docs/assets/javascripts/thpt-g12-exp01-exp02-r01.js
           node scripts/test-thpt-g12-exp01-exp02-release-source.cjs
+      - name: Guard G12 SGK year-end R00 source/receipt and 31 public canonical Q16 before deploy
+        run: |
+          node --check docs/assets/javascripts/thpt-g12-yearend-r00.js
+          node scripts/test-thpt-g12-yearend-release-source.cjs
       - name: Run Roadmap dependency and link QA
         run: python check_roadmap_dependencies.py
 

@@ -125,6 +125,12 @@ on:
       - 'scripts/test-thpt-g12-chvi-release-browser.cjs'
       - 'scripts/test-thpt-g12-exp01-exp02-release-source.cjs'
       - 'scripts/test-thpt-g12-exp01-exp02-release-browser.cjs'
+      - 'scripts/test-thpt-g12-yearend-release-source.cjs'
+      - 'scripts/test-thpt-g12-yearend-release-browser.cjs'
+      - 'docs/assets/data/thpt-g12-yearend-public-r00.json'
+      - 'docs/assets/javascripts/thpt-g12-yearend-r00.js'
+      - 'docs/assets/stylesheets/thpt-g12-yearend-r00.css'
+      - 'docs/assets/images/thpt/Temp_FIG_G12_YE_R00_*.png'
       - 'docs/assets/data/thpt-g12-exp01-exp02-public-r01.json'
       - 'docs/assets/javascripts/thpt-g12-exp01-exp02-r01.js'
       - 'docs/assets/stylesheets/thpt-g12-exp01-exp02-r01.css'
@@ -292,6 +298,10 @@ jobs:
         run: node scripts/test-thpt-g12-chvi-release-source.cjs
       - name: Guard G12 SGK EXP01–EXP02 R01 original 40 items, 5 PNG, 10 D6 and client-only Q16
         run: node scripts/test-thpt-g12-exp01-exp02-release-source.cjs
+      - name: Guard G12 SGK Year-end R00 31 original items, six stations/D6, four original PNG and Q16
+        run: |
+          node --check docs/assets/javascripts/thpt-g12-yearend-r00.js
+          node scripts/test-thpt-g12-yearend-release-source.cjs
       - name: Guard G11 B01 source-locked Knowledge presentation (no deploy)
         run: node scripts/test-thpt-g11-b01-ap-parity.cjs
       - name: Guard G10 B03 Knowledge AP source parity (no deploy)
@@ -528,6 +538,8 @@ jobs:
         run: node scripts/test-thpt-sgk-selfcheck-p2-browser.cjs
       - name: G12 SGK experiential R01 two lesson pages, Golden one-question modal, 10 END Q16 · 390 / 820 / 1440
         run: node scripts/test-thpt-g12-exp01-exp02-release-browser.cjs
+      - name: G12 SGK year-end R00 six stations, 31 public MCQ/Written and guarded Final Submit · 390 / 820 / 1440
+        run: node scripts/test-thpt-g12-yearend-release-browser.cjs
       - name: Academic Presentation QA pilot · MathJax overflow / 390 820 1440
         run: node scripts/test-thpt-academic-presentation-browser.cjs
       - name: Academic Presentation QA G10 B03 · 390 820 1440
