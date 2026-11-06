@@ -109,3 +109,16 @@ Full read-only evidence and reasons: [R04 official key + external PDF QA](OFFICI
 - `HN-VNBL-2026-HK2-G11` remains **`SECONDARY_METADATA_ONLY`** despite mirror pages claiming a PDF answer key. No question-level claims or method mapping without actual pages.
 - Prioritize the *2022–2026 ordinary-school HKI/HKII* corpus over more graduation mocks; four R03 mock PDFs remain useful **secondary complexity examples**, not original-school verified exam statistics.
 
+
+## R07 — normal-school G12 HKII excerpt and genuine school-site source metadata (06/11/2026)
+
+| EXAM_SOURCE_ID | Type/date | Evidence and URL | Proof limit | Curriculum disposition |
+|---|---|---|---|---|
+| `HN-VNBL-2026-HK2-G12` | **THPT Việt Nam–Ba Lan**, G12 cuối HKII **2025–2026** | [Toanmath 03/05/2026 article](https://toanmath.com/2026/05/de-hoc-ki-2-toan-12-nam-2025-2026-truong-thpt-viet-nam-ba-lan-ha-noi.html) gives **3** question type excerpts: disease-testing Bayes, dynamic price/cubic cost profit maximization, variable square-section lantern volume from parabola | `SECONDARY_WEB_EXCERPTS; SCHOOL_PDF_ORIGINAL_AND_OFFICIAL_QUESTION_NUMBERS_PENDING` | `IN_SCOPE_G12_2018_CURRENT`, **do not** emit official-school question IDs |
+| `HN-NQT-2024-HK2-G10-OFFICIAL_META` | THPT Nguyễn Quốc Trinh, G10 cuối HKII 2023–24 | [Official school page](https://thptnguyenquoctrinh.hanoi.edu.vn/thi-va-tuyen-sinh/de-kiem-tra-cuoi-hoc-ky-ii-khoi-10-11-nam-hoc-2023-2024/ctmb/21706/22818) attaches `tieng-anhtoan-10cuoi-hkii.pdf` | `SCHOOL_PUBLISHED_ATTACHMENT_LIST_ONLY; PDF_BYTES_QUESTION_CONTENT_NOT_FETCHED`; ambiguous file name | `CT2018_G10_ELIGIBLE_AFTER_PDF_CHECK` |
+| `HN-NQT-2024-HK2-G11-OFFICIAL_META` | Same school, G11 cuối HKII 2023–24 | Same official school page attaches `toan-11cuoi-hkii-23-24.pdf` | `SCHOOL_PUBLISHED_ATTACHMENT_LIST_ONLY; PDF_BYTES_QUESTION_CONTENT_NOT_FETCHED` | `CT2018_G11_ELIGIBLE_AFTER_PDF_CHECK` |
+| `HN-NQT-2024-HK2-G12-LEGACY_META` | THPT Nguyễn Quốc Trinh G12 cuối HKII 2023–24 | [Official school page 26/04/2024](https://thptnguyenquoctrinh.hanoi.edu.vn/thi-va-tuyen-sinh/de-kiem-tra-cuoi-hoc-ky-ii-khoi-12-nam-hoc-2023-2024/ctmb/21706/22769) attaches `kt-cuoi-hkiitoannqt.pdf` | `SCHOOL_PUBLISHED_ATTACHMENT_LIST_ONLY; PDF_BYTES_QUESTION_CONTENT_NOT_FETCHED` | **`OLD_PROGRAM_G12_HOLD`**: G12 adopted CT2018 in 2024–25, not 2023–24, cannot assert a modern gap from older program |
+
+Full [R07 grade-12 crosswalk and curriculum-cohort provenance](HANOI_G12_HKII_VNBL_AND_OFFICIAL_SCHOOL_META_R07.md) has exact approved Git source blobs and differentiates near-direct method matches from compound transfer candidates.
+
+**Critical:** the owner’s *2022–2026 five-year window is a date filter*, and a **second curriculum-cohort filter is required**: CT GDPT 2018 applied G10 in 2022–23, G11 in 2023–24 and G12 in 2024–25 (TT32/2018/TT-BGDĐT Art. 2). For earlier school cohorts, `LEGACY_CURRICULUM_CONTEXT_ONLY`, not a content gap against G12 S1. School-published PDF listing counts as original-issuer metadata, **not** page/image/full-stem validation. Three Toanmath excerpts are not independent test events.
