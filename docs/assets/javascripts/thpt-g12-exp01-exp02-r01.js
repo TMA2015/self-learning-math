@@ -102,17 +102,25 @@ const startPractice=(root,b)=>{
   if(group.length!==5)fail("modal group "+exp+" "+r);
   current=index;show();if(!dlg.open)dlg.showModal();
  };
+ // Reuse regular SGK Golden R4 components; only source-locked role grouping changes.
  for(const exp of ["EXP01","EXP02"]){
-  const section=make("section","g12-xp-lesson-group");
-  section.append(make("h2","",exp==="EXP01"?"Hoạt động 1 · Tích phân và hình thang":"Hoạt động 2 · Mô hình hình học 3D"));
-  const grid=make("div","g12-xp-card-grid");
+  const section=make("section","thpt-r4-practice-lesson g12-xp-lesson-group");
+  section.dataset.thptGrade="12";
+  const title=exp==="EXP01"?"Hoạt động 1 · Tích phân và hình thang":"Hoạt động 2 · Mô hình hình học 3D";
+  const header=make("div","thpt-r4-practice-lesson-header"),name=make("div");
+  name.append(make("p","thpt-r4-practice-class","Lớp 12 · Hoạt động thực hành, trải nghiệm"),make("h2","",title));
+  header.append(make("span","thpt-r4-lesson-number",exp==="EXP01"?"1":"2"),name);section.append(header);
+  const grid=make("div","thpt-r4-practice-card-grid");
   for(const [role,label] of [["CORE","Core"],["SGK_PRACTICE","Luyện tập"],["SGK_APPLICATION","Vận dụng"],["SGK_WRITTEN","Tự luận"]]){
-   const button=make("button","g12-xp-role-card");button.type="button";
-   button.dataset.g12XpOpen=exp+"-"+role;
-   button.append(make("span","g12-xp-role-number","5 câu"),make("strong","",label),
-     make("small","",role==="SGK_WRITTEN"?"Rubric /5 · Tự đối chiếu":"Một câu mỗi lần, không ghi điểm"),
-     make("span","g12-xp-role-open","Mở câu hỏi →"));
-   button.addEventListener("click",()=>open(exp,role));grid.append(button);
+   const card=make("section","thpt-r4-practice-card");card.dataset.thptGrade="12";
+   const info=make("div");
+   info.append(make("p","thpt-r4-practice-card-kind",label),
+    make("strong","",title+" · "+label),
+    make("small","",role==="SGK_WRITTEN"?"5 câu · Rubric /5 · Tự đối chiếu":"5 câu · Một câu mỗi lần · Không ghi điểm"));
+   const button=make("button","thpt-r4-practice-open","✎ Mở "+label);
+   button.type="button";button.dataset.g12XpOpen=exp+"-"+role;
+   button.addEventListener("click",()=>open(exp,role));
+   card.append(info,button);grid.append(card);
   }
   section.append(grid);root.append(section);
  }
