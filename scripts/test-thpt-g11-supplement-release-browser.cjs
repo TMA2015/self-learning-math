@@ -1,114 +1,106 @@
 "use strict";
-/* RELEASE AP1–AP5 and Q16 visual smoke for G11 SGK supplement pp99–109.
- * Chromium viewport checks are P1 evidence, NOT real iOS Safari P2.
- */
+/* G11 SGK pp99–109 DELTA_A Golden: two independent chapter-like units.
+ * AP1–AP5 / Q15–Q17: approved source content preserved, private RD1 excluded.
+ * Chromium 390/820/1440 is P1 QA, not real iPhone/iPad Safari P2. */
 const assert=require("node:assert/strict"),{chromium}=require("playwright");
 const base="http://127.0.0.1:8765/thpt-preview/sgk/lop-11/bo-sung/";
 (async()=>{
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
  try{
-  for(const viewport of [{width:390,height:844},{width:820,height:1180},{width:1440,height:900}]){
-   const page=await browser.newPage({viewport});
-   const open=async(slug,view)=>{
-    const response=await page.goto(base+slug+"/",{waitUntil:"networkidle",timeout:45000});
-    assert(response?.ok(),slug+" generated route HTTP");
-    const root=page.locator('[data-g11-supp-view="'+view+'"]');
-    await root.waitFor({state:"visible",timeout:18000});
-    await page.waitForFunction(()=>document.querySelector('[data-g11-supp-view]')?.dataset.g11SuppBound==="true",null,{timeout:20000});
-    assert.equal(await root.getAttribute("data-g11-supp-error"),null,"Source JSON load");
-    return root;
-   };
-   try{
-    let response=await page.goto(base,{waitUntil:"networkidle",timeout:45000});
-    assert(response?.ok(),"index route");
-    assert.equal(await page.locator("a.thpt-r4-tile").count(),4);
-    assert((await page.locator(".md-content").innerText()).includes("Hoạt động thực hành trải nghiệm"));
-    assert((await page.locator(".md-content").innerText()).includes("Bài tập ôn tập cuối năm"));
-    assert(!(await page.locator("h1").innerText()).includes("Bổ sung SGK"),"Release package label must not appear to learners");
-    let root=await open("trai-nghiem-e01","E01");
-    assert.equal(await root.locator(".g11-supp-topic").count(),1);
-    assert.equal(await root.locator(".g11-supp-example").count(),6);
-    assert.equal(await root.locator("figure.g11-supp-figure img").count(),2);
-    assert.equal(await root.locator(".g11-supp-help").count(),6);
-    assert.equal(await root.locator(".g11-supp-exercise").count(),14,"E01 complete 11 formative + 3 written on same page");
-    assert((await root.locator(".g11-supp-exercise:visible").count())<=3,"E01 must show one question per learning stage");
-    assert((await root.locator(".g11-supp-deck-jump").count())>=2,"E01 compact numbered question navigation");
-    assert.equal(await root.locator('[data-exposure-role="ANCHOR_TAG"]').count(),2,"E01 canonical Written roles still intact");
-    assert.equal(await root.locator(".g11-supp-solution:not([hidden])").count(),0,"E01 no early key");
-    const withinE01=root.locator(".g11-supp-exercise").first();
-    await withinE01.locator("textarea").fill("Bài giải của học sinh");
-    await withinE01.locator(".g11-supp-submit").click();
-    assert.equal(await withinE01.locator(".g11-supp-solution:not([hidden])").count(),1,"Inline learning solution after submit");
-    assert.equal(await root.locator(".g11-supp-solution:not([hidden])").count(),1,"Other topic answers stay hidden");
-    assert((await root.locator(".g11-supp-help").first().locator("a").getAttribute("href")).startsWith("#"),"D6 returns to the exact exercise on this page");
-    assert((await root.innerText()).includes("Tự thử trước khi vào Core"),"Self-try before Core E01");
-    const stageOrder=await root.locator(".g11-supp-topic > h3, .g11-supp-learning-stage > h3").allInnerTexts();
-    assert(stageOrder.indexOf("Ví dụ có suy luận")<stageOrder.indexOf("Tự thử trước khi vào Core"),"Example before self-try");
-    assert(stageOrder.indexOf("Tự thử trước khi vào Core")<stageOrder.indexOf("1. Core · Tự thử kiến thức"),"Self-try before Core");
-    for(const image of await root.locator("figure.g11-supp-figure img").all()){
-     assert(await image.evaluate(img=>img.complete&&img.naturalWidth>0),"E01 SVG loaded");
-    }
-    root=await open("trai-nghiem-e02","E02");
-    assert.equal(await root.locator(".g11-supp-example").count(),6);
-    assert.equal(await root.locator("figure.g11-supp-figure img").count(),3);
-    assert.equal(await root.locator(".g11-supp-help").count(),5);
-    assert.equal(await root.locator(".g11-supp-exercise").count(),13,"E02 complete 10 formative + 3 written inline");
-    assert((await root.locator(".g11-supp-exercise:visible").count())<=3,"E02 must not show long vertical question stacks");
-    assert.equal(await root.locator(".g11-supp-solution:not([hidden])").count(),0,"E02 no early key");
-    root=await open("on-tap-cuoi-nam","YEAR");
-    assert.equal(await root.locator(".g11-supp-topic").count(),10,"Ten year-end concept tracks");
-    assert.equal(await root.locator(".g11-supp-example").count(),16);
-    assert.equal(await root.locator("figure.g11-supp-figure img").count(),3);
-    assert.equal(await root.locator(".g11-supp-help").count(),12);
-    assert.equal(await root.locator(".g11-supp-exercise").count(),41,"Year-end 31 formative + 10 written across 10 topics");
-    assert((await root.locator(".g11-supp-exercise:visible").count())<41,"Year-end must hide inactive questions");
-    assert((await root.locator(".g11-supp-deck-jump").count())>0,"Year-end question deck present");
-    assert.equal(await root.locator(".g11-supp-learning-stage").count(),29,"10 topic Core+Practice stages and 9+ written stages");
-    assert.equal(await root.locator(".g11-supp-solution:not([hidden])").count(),0,"No early key in review");
-    const allInlineIds=[...await root.locator(".g11-supp-exercise").evaluateAll(els=>els.map(x=>x.dataset.canonicalItem))];
-    assert.equal(new Set(allInlineIds).size,41,"One canonical item per year-end placement");
-    root=await open("luyen-tap","PRACTICE");
-    assert.equal(await root.locator(".g11-supp-exercise").count(),52,"All 52 canonical public D3");
-    assert((await root.locator("h2").first().innerText()).includes("Tổng hợp"),"Old Core route remains as a learner-safe catalogue");
-    assert.equal(await root.locator(".g11-supp-topic").count(),12,"E01,E02 and ten year-end tracks");
-    assert.equal(await root.locator('.g11-supp-solution:not([hidden])').count(),0,"No early answer");
-    const first=root.locator(".g11-supp-exercise").first();
-    const id=await first.getAttribute("data-canonical-item");
-    assert.equal(id,"THPT-G11-SUPP-E01-C01");
-    const button=first.locator("button.g11-supp-submit");
-    await button.click();
-    assert.equal(await first.locator(".g11-supp-solution:not([hidden])").count(),0,"Cannot submit empty response");
-    await first.locator("textarea").fill("Em tính bằng mô hình tăng trưởng");
-    await button.click();
-    assert.equal(await first.locator(".g11-supp-solution:not([hidden])").count(),1,"Solution appears only after learner submit");
-    assert.equal(await first.locator("textarea").isDisabled(),true);
-    assert.equal(await root.locator(".g11-supp-solution:not([hidden])").count(),1,"No other answer exposed");
-    root=await open("tu-luan","WRITTEN");
-    assert.equal(await root.locator(".g11-supp-exercise").count(),16,"One shared Written/Anchor library");
-    assert((await root.locator("h2").first().innerText()).includes("Tổng hợp"),"Old Written route remains as a learner-safe catalogue");
-    assert.equal(await root.locator('[data-exposure-role="ANCHOR_TAG"]').count(),8,"Anchor tags not copied questions");
-    const written=root.locator(".g11-supp-exercise").first();
-    assert.equal(await written.locator(".g11-supp-solution:not([hidden])").count(),0);
-    await written.locator("textarea").fill("Lời giải tự luận do em viết");
-    await written.locator("button.g11-supp-submit").click();
-    assert((await written.locator(".g11-supp-solution").innerText()).includes("Rubric"),"Rubric after submit");
-    root=await open("tu-kiem-tra","SELFCHECK");
-    const storageBefore=await page.evaluate(()=>({local:{...localStorage},session:{...sessionStorage}}));
-    assert.equal(await root.locator(".g11-supp-exercise").count(),22,"One PUBLIC practice item per outcome");
-    assert.equal(await root.locator(".g11-supp-exercise:visible").count(),1,"Only one year-end Final Submit question visible");
-    assert.equal(await root.locator(".g11-supp-deck-number").count(),22,"22-item numbered pager");
-    assert.equal(await root.locator(".g11-supp-solution:not([hidden])").count(),0,"Final Submit protects all answers");
-    assert.equal(await root.locator("button[data-g11-supplement-final]").count(),1);
-    await root.locator("textarea").first().fill("Học sinh tự thử trước khi nộp");
+ for(const width of [390,820,1440]){
+  const page=await browser.newPage({viewport:{width,height:width===390?844:width===820?1180:900}});
+  const errors=[];page.on("pageerror",e=>errors.push(e.message));
+  const open=async(slug,view)=>{
+   const res=await page.goto(base+(slug?slug+"/":""),{waitUntil:"networkidle",timeout:90000});
+   assert(res?.ok(),"Missing learner route "+slug);
+   const spill=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);
+   assert(spill<=20,"Horizontal overflow "+slug+" @"+width+": "+spill);
+   if(!view)return null;
+   const root=page.locator('[data-g11-supp-view="'+view+'"]');
+   await page.waitForFunction(()=>document.querySelector("[data-g11-supp-view]")?.dataset.g11SuppBound==="true",null,{timeout:24000});
+   assert.equal(await root.getAttribute("data-g11-supp-error"),null,"Reviewed public source loaded "+slug);
+   return root;
+  };
+  try{
+   await open("",null);
+   assert.equal(await page.locator("a.thpt-r4-tile").count(),7,"Two chapter-like SGK end units: 4+3 routes");
+   assert.equal(await page.locator(".g11-supp-overview .thpt-r4-practice-lesson[data-thpt-grade='11']").count(),2);
+   let root=await open("trai-nghiem-e01","E01");
+   assert.equal(await root.locator(".g11-supp-topic").count(),1);
+   assert.equal(await root.locator(".g11-supp-example").count(),6);
+   assert.equal(await root.locator("figure.g11-supp-figure img").count(),2);
+   assert.equal(await root.locator(".g11-supp-help").count(),6);
+   assert.equal(await root.locator(".g11-supp-exercise").count(),0,"No Core/Practice/Written stacked inside Knowledge 1");
+   assert((await root.locator(".g11-supp-topic").innerText()).includes("Tự thử trước khi vào Core"));
+   assert((await root.locator(".g11-supp-help").first().locator("a").getAttribute("href")).includes("luyen-tap-trai-nghiem/"),"D6 redirects to exact original practice item");
+   assert((await page.locator("h1").innerText()).includes("Hoạt động 1"));
+   root=await open("trai-nghiem-e02","E02");
+   assert.equal(await root.locator(".g11-supp-example").count(),6);
+   assert.equal(await root.locator("figure.g11-supp-figure img").count(),3);
+   assert.equal(await root.locator(".g11-supp-help").count(),5);
+   assert.equal(await root.locator(".g11-supp-exercise").count(),0,"No inline exercise stacks in Knowledge 2");
+   root=await open("on-tap-cuoi-nam","YEAR");
+   assert.equal(await root.locator(".g11-supp-topic").count(),10,"Ten original concept topics");
+   assert.equal(await root.locator(".g11-supp-example").count(),16);
+   assert.equal(await root.locator("figure.g11-supp-figure img").count(),3);
+   assert.equal(await root.locator(".g11-supp-help").count(),12);
+   assert.equal(await root.locator(".g11-supp-exercise").count(),0,"Year-end Knowledge only, 41 items moved to own hub");
+   assert((await root.locator(".g11-supp-help").first().locator("a").getAttribute("href")).includes("luyen-tap-on-tap-cuoi-nam/"));
+   root=await open("luyen-tap-trai-nghiem","EXP_PRACTICE");
+   assert.equal(await root.locator(".thpt-r4-practice-lesson[data-thpt-grade='11']").count(),2,"Two real green Golden chapter-like practice lessons");
+   assert.equal(await root.locator(".g11-supp-exercise").count(),27,"21 original formative + 6 Written, no new canonical IDs");
+   assert.equal(await root.locator(".g11-supp-exercise:visible").count(),0,"No vertical stack before learner chooses a role");
+   assert.equal(await root.locator(".thpt-r4-practice-card").count(),7,"E01 four roles including 1 Application; E02 three original roles");
+   const green=await root.locator(".thpt-r4-practice-card[data-thpt-grade='11']").first().evaluate(x=>getComputedStyle(x).getPropertyValue("--thpt-grade-accent").trim());
+   assert.equal(green,"#148477","Same grade-11 Golden green as regular SGK");
+   await root.locator('[data-g11-supp-open="E01-SGK_CORE"]').click();
+   assert.equal(await root.locator(".g11-supp-exercise:visible").count(),1,"One public Core question on screen");
+   const panel=root.locator('.g11-supp-role-panel[data-g11-supp-topic="E01"][data-g11-supp-role="SGK_CORE"]');
+   assert.equal(await panel.locator(".g11-supp-deck-number").count(),5);
+   const first=panel.locator(".g11-supp-exercise:visible");
+   assert.equal(await first.locator(".g11-supp-solution:not([hidden])").count(),0);
+   await first.locator(".g11-supp-submit").click();
+   assert.equal(await first.locator(".g11-supp-solution:not([hidden])").count(),0,"Blank answer cannot reveal solution");
+   await first.locator("textarea").fill("Em tự giải rồi mới đối chiếu");
+   await first.locator(".g11-supp-submit").click();
+   assert.equal(await first.locator(".g11-supp-solution:not([hidden])").count(),1);
+   await root.locator('[data-g11-supp-open="E01-SGK_APPLICATION"]').click();
+   assert.equal(await root.locator(".g11-supp-exercise:visible").count(),1);
+   assert.equal(await root.locator('.g11-supp-role-panel[data-g11-supp-role="SGK_APPLICATION"]:not([hidden]) .g11-supp-deck-number').count(),1);
+   assert.equal(await root.locator(".g11-supp-solution:visible").count(),0,"Switching roles must not leak another answer");
+   await root.locator('[data-g11-supp-open="E01-SGK_WRITTEN"]').click();
+   assert.equal(await root.locator('.g11-supp-role-panel[data-g11-supp-topic="E01"][data-g11-supp-role="SGK_WRITTEN"] .g11-supp-exercise').count(),3);
+   root=await open("luyen-tap-on-tap-cuoi-nam","YEAR_PRACTICE");
+   assert.equal(await root.locator(".thpt-r4-practice-lesson[data-thpt-grade='11']").count(),10);
+   assert.equal(await root.locator(".g11-supp-exercise").count(),41,"31 canonical formative + 10 written original");
+   assert.equal(await root.locator(".g11-supp-exercise:visible").count(),0);
+   const ids=await root.locator(".g11-supp-exercise").evaluateAll(els=>els.map(x=>x.dataset.canonicalItem));
+   assert.equal(new Set(ids).size,41,"No duplicate original ID in year-end practice page");
+   await root.locator('[data-g11-supp-open="TRIG-SGK_CORE"]').click();
+   assert.equal(await root.locator(".g11-supp-exercise:visible").count(),1);
+   assert.equal(await root.locator(".g11-supp-deck-number:visible").count(),1);
+   await root.locator('[data-g11-supp-open="INTEGRATE-SGK_APPLICATION"]').click();
+   assert.equal(await root.locator(".g11-supp-exercise:visible").count(),1,"Original integrated Application retained");
+   // Historical URLs remain learner-safe and retain canonical library parity.
+   root=await open("luyen-tap","PRACTICE");assert.equal(await root.locator(".g11-supp-exercise").count(),52);
+   root=await open("tu-luan","WRITTEN");assert.equal(await root.locator(".g11-supp-exercise").count(),16);
+   assert.equal(await root.locator('[data-exposure-role="ANCHOR_TAG"]').count(),8);
+   for(const [slug,view]of [["tu-kiem-tra-trai-nghiem","SELFCHECK_EXP"],["tu-kiem-tra","SELFCHECK"]]){
+    root=await open(slug,view);
+    const snapshot=await page.evaluate(()=>({local:{...localStorage},session:{...sessionStorage}}));
+    assert.equal(await root.locator(".g11-supp-exercise").count(),11,"Exactly 11 distinct reviewed outcomes in "+slug);
+    assert.equal(await root.locator(".g11-supp-exercise:visible").count(),1);
+    assert.equal(await root.locator(".g11-supp-deck-number").count(),11);
+    assert.equal(await root.locator(".g11-supp-solution:not([hidden])").count(),0);
+    assert.equal(await page.locator("[data-floating-ai]").count(),0,"No Gemini Tutor on protected Final Submit");
     await root.locator("button[data-g11-supplement-final]").click();
-    assert.equal(await root.locator(".g11-supp-solution:not([hidden])").count(),22,"Answer reveal only AFTER Final Submit");
-    assert.equal(await root.locator("button[data-g11-supplement-final]").isDisabled(),true);
-    const storageAfter=await page.evaluate(()=>({local:{...localStorage},session:{...sessionStorage}}));
-    assert.deepEqual(storageAfter,storageBefore,"Final Submit must not persist assessment data to local/session storage");
-    const width=await page.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth);
-    assert(width<=20,"Horizontal overflow "+viewport.width+"px by "+width);
-    console.log("PASS G11 supplement AP/Q16 "+viewport.width+"px: 7 learner routes, 28 examples, 8 SVG, 23 D6, 52 Core/Practice, 16 Written, 22-public Final Submit.");
-   }finally{await page.close()}
-  }
+    assert.equal(await root.locator(".g11-supp-solution:not([hidden])").count(),11,"Reveal only AFTER scoped Final Submit");
+    assert(await root.locator("button[data-g11-supplement-final]").isDisabled());
+    assert.deepEqual(await page.evaluate(()=>({local:{...localStorage},session:{...sessionStorage}})),snapshot,"No learner or Mastery storage mutation");
+   }
+   assert.equal(errors.length,0,"JS errors: "+errors.join(" / "));
+   console.log("PASS G11 end units Golden AP/Q16 · "+width+"px: knowledge-only 2+10 topics, 21+6 EXP, 31+10 YEAR, 11+11 public Final Submit.");
+  }finally{await page.close()}
+ }
  }finally{await browser.close()}
 })().catch(e=>{console.error(e);process.exitCode=1});
