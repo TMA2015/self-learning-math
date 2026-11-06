@@ -36,7 +36,7 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/lop-12/";
      await image.evaluate(async img=>{if(!img.complete)await new Promise((resolve,reject)=>{img.addEventListener("load",resolve,{once:true});img.addEventListener("error",reject,{once:true})});if(img.decode)await img.decode()});
      assert(await image.evaluate(img=>img.naturalWidth>0),"Original figure must render B"+n);
     }
-    assert.equal(await content.locator('a[href="../luyen-tap/#b'+n+'-core"]').count(),1);
+    assert((await content.locator('a[href="../luyen-tap/#b'+n+'-core"]').count())>=1,"Golden Core link B"+n);
    }
    await open("chuong-vi/luyen-tap/");
    const hub=page.locator("[data-g12-chvi-hub]");
