@@ -56,7 +56,27 @@ for(const n of [6,7,8]){
  const heads=[...lesson.matchAll(/^## ([^\n]+)$/gm)];
  const blocks=heads.map((m,i)=>({name:m[1],text:lesson.slice(m.index+m[0].length,i+1<heads.length?heads[i+1].index:lesson.length).trim()}));
  for(const b of blocks.filter(b=>/Vì sao|Kiến thức tiền đề|bản chất|Hình thành|Ví dụ|Tự thử/.test(b.name))){
-  assert(page.includes(b.text),"Original pedagogy source changed "+id+" "+b.name);
+  // Owner P2 approved AP-only display normalization: section 3's historical
+  // "2.x" subheadings corrected to "3.x", and B08's consecutive $ blocks
+  // split across separate paragraphs. This is an EXACT allowed transform,
+  // not relaxed academic source comparison: every original math token, prose,
+  // condition, worked step and rubric remains byte-identical otherwise.
+  let expected=b.text;
+  if((n===7||n===8)&&/bản chất/i.test(b.name)){
+   expected=expected.replace(/^### 2\.([1-5])\./gm,"### 3.$1.");
+   if(n===8){
+    const old=String.raw`$\vec a+\vec b=(x_1+x_2;y_1+y_2;z_1+z_2),$
+$\vec a-\vec b=(x_1-x_2;y_1-y_2;z_1-z_2),\quad k\vec a=(kx_1;ky_1;kz_1).$`;
+    const corrected=String.raw`$\vec a+\vec b=(x_1+x_2;y_1+y_2;z_1+z_2),$
+
+$\vec a-\vec b=(x_1-x_2;y_1-y_2;z_1-z_2),$
+
+$k\vec a=(kx_1;ky_1;kz_1).$`;
+    assert(expected.includes(old),"Source-locked B08 original equations must not change");
+    expected=expected.replace(old,corrected);
+   }
+  }
+  assert(page.includes(expected),"Original pedagogy source changed outside approved AP presentation "+id+" "+b.name);
  }
 }
 const root="docs/thpt-preview/sgk/lop-12/";
