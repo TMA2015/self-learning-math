@@ -58,6 +58,13 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
     await check.locator(".g10sc-progress").waitFor({timeout:20000});
     assert((await check.innerText()).includes("Câu 1 / 31"),"31 original public Practice refs");
     assert.equal(await check.locator(".g10sc-jump-button").count(),31);
+    // Owner P2 screenshot regression: original first ChIX source includes
+    // $H(t)=...$; no raw dollar TeX may remain visible in self-check.
+    const sourceMath=check.locator(".g10sc-body .g10sc-math-inline, .g10sc-body .g10sc-math-display");
+    assert(await sourceMath.count()>=1,"G11 ChIX first PUBLIC question must tokenize original TeX");
+    const visibleStem=await check.locator(".g10sc-body .g10sc-rich").first().innerText();
+    assert(!/\$[^$\\n]+\$/.test(visibleStem),"G11 ChIX raw dollar TeX screenshot regression");
+
     assert.equal(await check.locator(".g10sc-review").count(),0,"No pre-Final Submit review");
     assert(!(await check.innerText()).includes("Đáp án:"),"No pre-Final Submit answer");
     await check.locator("textarea").fill("Tự giải");

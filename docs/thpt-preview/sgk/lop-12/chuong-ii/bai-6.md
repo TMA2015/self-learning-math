@@ -60,20 +60,22 @@ Tính chất quan trọng: giao hoán $\vec a\cdot\vec b=\vec b\cdot\vec a$, ph�
 
 ## 4. Đọc hình minh họa
 
-**Hình FIG-G12-CHII-B06-R00.svg:** đọc cạnh/mũi tên bằng tên hai đầu; xác định vectơ cùng hướng trước, rồi ghép $A\to B\to C$; không suy độ dài bằng độ dài biểu diễn trong phối cảnh. Hình tự tạo để giảng giải, không trích ảnh SGK.
-
-| OUTCOME_ID | Triệu chứng sai | Đường khắc phục trực tiếp |
-|---|---|---|
-| O01 | Đo cạnh trên hình xiên rồi cho là độ dài thật | Quay §3.1 và EX01, dựng ba cạnh vuông góc |
-| O02 | Nhầm song song với bằng nhau | Quay §3.1 và EX02, so chiều từng mũi tên |
-| O03 | Cộng vectơ không cùng đầu–đuôi | Quay §3.2 và EX03, vẽ lại đường đi |
-| O04 | Quên dấu âm của $k$ | Quay §3.3 và EX04, xét phương/chiều riêng |
-| O05 | Dùng $\cos$ với vectơ-không | Quay §3.4 và EX05, kiểm điều kiện khác $\vec0$ |
-| O06 | Lấy độ dài lực nhân quãng đường mà bỏ góc | Quay §3.4 và EX06, xác định hướng chuyển động |
-
-**Checkpoint học sinh:** Em có thể tự giải thích vì sao $\vec a\cdot\vec b$ âm khi góc tù, và khi nào không được nói “góc giữa hai vectơ”? Nếu chưa, học lại §3.4 rồi thử câu O05 trước khi sang B07.
+**Cách đọc hình:** đọc cạnh/mũi tên bằng tên hai đầu; xác định vectơ cùng hướng trước, rồi ghép $A\to B\to C$; không suy độ dài bằng độ dài biểu diễn trong phối cảnh. Hình tự tạo để giảng giải, không trích ảnh SGK.
 
 <figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/FIG-G12-CHII-B06-R00.svg" alt="Hình minh họa Bài 6 · Vectơ trong không gian" /><figcaption>Hình gốc của học liệu Bài 6, đọc cùng hướng dẫn ngay phía trên.</figcaption></figure>
+
+### Các lỗi thường gặp và cách tự khắc phục
+
+| Ý | Triệu chứng sai | Đường khắc phục trực tiếp |
+|---|---|---|
+| 1 | Đo cạnh trên hình xiên rồi cho là độ dài thật | Quay §3.1 và ví dụ 1, dựng ba cạnh vuông góc |
+| 2 | Nhầm song song với bằng nhau | Quay §3.1 và ví dụ 2, so chiều từng mũi tên |
+| 3 | Cộng vectơ không cùng đầu–đuôi | Quay §3.2 và ví dụ 3, vẽ lại đường đi |
+| 4 | Quên dấu âm của $k$ | Quay §3.3 và ví dụ 4, xét phương/chiều riêng |
+| 5 | Dùng $\cos$ với vectơ-không | Quay §3.4 và ví dụ 5, kiểm điều kiện khác $\vec0$ |
+| 6 | Lấy độ dài lực nhân quãng đường mà bỏ góc | Quay §3.4 và ví dụ 6, xác định hướng chuyển động |
+
+**Checkpoint học sinh:** Em có thể tự giải thích vì sao $\vec a\cdot\vec b$ âm khi góc tù, và khi nào không được nói “góc giữa hai vectơ”? Nếu chưa, học lại §3.4 rồi thử câu O05 trước khi sang B07.
 
 ## 5. Ví dụ có suy luận và lựa chọn phương pháp
 

@@ -35,3 +35,32 @@
 .g11-supp-next{display:inline-flex;min-height:44px;align-items:center;margin:12px 0;padding:10px 14px;border:1px solid var(--md-accent-fg-color);border-radius:8px;font-weight:700;text-decoration:none!important}
 .g11-supp-overview>h2{margin-top:34px}
 @media(max-width:640px){.g11-supp-local-nav a{flex:1 1 140px;justify-content:center}.g11-supp-learning-guide{padding:12px}.g11-supp-topic{margin:18px 0 24px}.g11-supp-learning-stage .g11-supp-exercise{padding:12px}}
+
+
+/* Owner P2 DELTA_A_UI: compact one-question navigation for original public
+   Core, Luyện tập, Tự luận and final self-check. No source content changes. */
+.g11-supp-deck-top{margin:12px 0 16px;max-width:100%;min-width:0}
+.g11-supp-deck-progress{margin:0 0 10px;font-weight:700;color:var(--md-default-fg-color)}
+.g11-supp-deck-jump{display:flex;flex-wrap:wrap;gap:6px;max-width:100%}
+.g11-supp-deck-number,.g11-supp-deck-step{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-width:40px;min-height:42px;padding:8px 10px;
+  border:1px solid var(--md-default-fg-color--lightest);
+  border-radius:7px;background:var(--md-code-bg-color);
+  color:var(--md-default-fg-color);font:inherit;font-size:.87rem;cursor:pointer
+}
+.g11-supp-deck-number.is-current{
+  border-color:var(--md-accent-fg-color);background:var(--md-default-bg-color);
+  font-weight:700;box-shadow:inset 0 0 0 1px var(--md-accent-fg-color)
+}
+.g11-supp-deck-number:focus-visible,.g11-supp-deck-step:focus-visible{
+  outline:3px solid var(--md-accent-fg-color);outline-offset:2px
+}
+.g11-supp-deck-step:disabled{opacity:.45;cursor:default}
+.g11-supp-deck-controls{display:flex;justify-content:space-between;gap:10px;margin:12px 0 18px}
+[data-g11-supp-deck] > .g11-supp-exercise[hidden]{display:none!important}
+@media(max-width:480px){
+ .g11-supp-deck-jump{gap:5px}
+ .g11-supp-deck-number{min-width:38px;min-height:40px;padding:7px 9px}
+ .g11-supp-deck-step{flex:1 1 45%;min-height:44px}
+}
