@@ -124,6 +124,8 @@ for(const token of ["const practiceHub=","thpt-r4-practice-card-grid","thpt-r4-p
                     "thpt-r4-practice-open","g11-supp-deck-jump","SELFCHECK_EXP",
                     "EXP_PRACTICE","YEAR_PRACTICE"])
  assert(js.includes(token),"Missing Golden practice UI "+token);
+for(const token of ["dialog.showModal()","document.body.append(dialog)","topicTabs(root,sections,","topicTabs(root,entries,","aria-haspopup"])assert(js.includes(token),"Missing real Golden modal or horizontal topic tabs "+token);
+assert(!js.includes("section.append(panel);"),"Forbidden inline panel below Golden card");
 assert(!js.includes("section.append(coreSection)")&&!js.includes("section.append(practiceSection)")
     &&!js.includes("section.append(writtenSection)"),"Knowledge pages must not stack exercise decks");
 assert(js.includes('+"#"+idAnchor(h.return_item)'),"D6 link must return to exact question in separate hub");
