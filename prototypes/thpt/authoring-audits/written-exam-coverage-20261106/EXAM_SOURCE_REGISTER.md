@@ -34,6 +34,17 @@ ACADEMIC_RE_REVIEW: NO
 
 **Đối chiếu phương pháp bước đầu:** `EXAM_EXCERPT_CANDIDATE_MAPPING_R01.md` chứa 9 trích đoạn của 4 nguồn `HN-VD / HN-PHT / HN-HDA / HN-NGT` với `item_id/outcome_id` có nguồn gốc, nhưng **không có mã câu đề gốc, PDF được xác minh hoặc verdict COVERED/GAP**. Trang trường và trang nguồn thứ cấp được phân biệt rõ. Không biến đề cương ôn tập thành đề thi học kỳ.
 
+## PDF văn bản đọc được theo trang — bổ sung 06/11/2026
+
+**Chú ý về mức kiểm chứng:** hai file nguồn dưới đây có thể truy cập dưới dạng `application/pdf` để kiểm phần **văn bản** có tiêu đề trường, năm học, mã đề, trang in và câu tự luận. Tuy nhiên thao tác `PDF screenshot` đều trả lỗi Cache miss, không có byte PDF được tải về để tính SHA, chưa xác nhận bản gốc phát hành từ website trường. Mức chứng cứ **`PDF_TEXT_QUESTION_REFERENCE_LOCATED_VISUAL_PENDING`**, không phải `CORPUS_VERIFIED`. Chỉ dùng để phân nhóm phương pháp tạm thời.
+
+| EXAM_SOURCE_ID | Năm/loại | Bản PDF có văn bản | Câu/vị trí được xác định | Trạng thái |
+|---|---|---|---|---|
+| `HN-VX-2026-HK1-G10-PDF` | 2025–2026, Toán 10 cuối HKI, THPT Vạn Xuân–Hoài Đức; mã 101 | https://file.toan12.edu.vn/file-pdf/de-cuoi-hoc-ky-1-toan-10-nam-2025-2026-truong-thpt-van-xuan-ha-noi.pdf | Phần IV Câu 1–3, **trang in 3/3**; Câu 3 tối ưu thời lượng quảng cáo với các ràng buộc tuyến tính; Câu 2 vectơ có biểu thức cần xem ảnh | `SECONDARY_PDF_MIRROR_TEXT_READ; VISUAL_SHA_ORIGINAL_HOLD` |
+| `HN-VX-2026-HK1-G12-PDF` | 2025–2026, Toán 12 cuối HKI, THPT Vạn Xuân–Hoài Đức; đề lẻ | https://file.toan12.edu.vn/file-pdf/de-cuoi-hoc-ky-1-toan-12-nam-2025-2026-truong-thpt-van-xuan-ha-noi.pdf | Phần IV Câu 1–3, **trang in 4/8** của bản PDF đề lẻ/chẵn; Câu 2 góc flycam 3D; Câu 3 IQR 25 lần đo, bảng không đọc được bằng text | `SECONDARY_PDF_MIRROR_TEXT_READ; VISUAL_SHA_ORIGINAL_HOLD` |
+
+Các ánh xạ `câu đề thực có mã → method/outcome → item_id` và trạng thái HOLD nằm tại [REAL_EXAM_PDF_TEXT_QUESTION_MAPPING_R02.md](REAL_EXAM_PDF_TEXT_QUESTION_MAPPING_R02.md). Không tự suy ra tần suất đề thi hoặc độ khó; **chưa đủ điều kiện công bố COVERED/GAP**. Đây không phải nguồn SGK S1 thay thế, không chạm đến 238 bài đã PASS.
+
 ## Lọc nguồn giai đoạn sau
 
 - Đề 2022–2026 có thể được xét; ưu tiên 2024–2026 và nhất là đề khớp CT GDPT 2018 và cấu trúc hiện hành; đề chương trình cũ nếu không tương đương outcome thì đánh `OUT_OF_SCOPE`.
