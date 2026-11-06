@@ -169,6 +169,6 @@ còn 2 đỏ trên 4 bi, nên `1/2`. Sai thì xem D6 `B18-O07` và sơ đồ `FI
 
 ## 7. Chuyển sang Core và Luyện tập
 
-- [Mở Core Bài 18](../luyen-tap/#b18-core)
-- [Luyện tập, Vận dụng và Tự luận Bài 18](../luyen-tap/#b18-practice)
+- <a href="../luyen-tap/#b18-core">Mở Core Bài 18</a>
+- <a href="../luyen-tap/#b18-practice">Luyện tập, Vận dụng và Tự luận Bài 18</a>
 - Nếu gặp khó khăn, dùng hướng dẫn D6 gắn với từng câu trong Core và Luyện tập.
