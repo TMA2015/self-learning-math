@@ -74,6 +74,7 @@ const math=root=>{const m=window.MathJax;if(m?.typesetPromise){const go=()=>m.ty
 const anchor=id=>String(id).toLowerCase().replace(/[^a-z0-9-]/g,"-");
 const expected={I:[10,66],II:[6,64],III:[4,48],IV:[6,88],V:[9,96],VI:[4,56]};
 function mount(root,bank,{chapter}={}){
+ const golden=window.THPT_GOLDEN_RUNTIME;if(!golden)throw Error("GOLDEN_RUNTIME_MISSING: G12 Ch I–VI");
  if(!expected[chapter]||!root?.matches('[data-g12-chi-hub],[data-g12-chii-hub],[data-g12-chiii-hub],[data-g12-chiv-hub],[data-g12-chv-hub],[data-g12-chvi-hub]')||bank?.mode!=="CLIENT_SELF_CHECK_NO_MASTERY")throw Error("G12 Golden: invalid scope");
  const details=[...root.querySelectorAll(".thpt-r4-practice-card-grid > details.thpt-r4-practice-card")];
  if(details.length!==expected[chapter][0])throw Error("G12 Golden: missing Core/Practice groups");
@@ -88,15 +89,13 @@ function mount(root,bank,{chapter}={}){
  heading.append(meta,title);head.append(badge,heading,close);
  const body=el("div","thpt-r4-modal-main");dialog.append(head,body);document.body.append(dialog);
  let group=null,cursor=0,returnFocus=null;
- close.addEventListener("click",()=>dialog.close());
- dialog.addEventListener("click",e=>{if(e.target===dialog)dialog.close()});
- dialog.addEventListener("close",()=>returnFocus?.focus());
+ const lifecycle=golden.bindDialog({dialog,closeButton:close,getReturnFocus:()=>returnFocus});
  const render=()=>{
   const records=group.items,q=records[cursor];
   window.MathJax?.typesetClear?.([body]);body.replaceChildren();
   const prog=el("p","thpt-r4-modal-progress","Câu "+(cursor+1)+" / "+records.length+" · Luyện tập tương tác, không ghi điểm");
   const nav=el("div","thpt-r4-modal-question-nav");
-  for(let i=0;i<records.length;i++){const b=el("button",i===cursor?"active":"","Câu "+(i+1));b.type="button";b.setAttribute("aria-current",String(i===cursor));b.addEventListener("click",()=>{cursor=i;render()});nav.append(b)}
+  golden.renderNav({container:nav,count:records.length,index:cursor,onSelect:i=>{cursor=i;render()}});
   const card=el("article","thpt-r4-reviewed-formative-card thpt-g12-golden-question");
   card.dataset.thptCanonicalItem=q.item_id;card.dataset.thptExposureRole=q.placement||q.role||"";
   const prompt=el("h3");format(prompt,q.stem);
@@ -178,7 +177,7 @@ function mount(root,bank,{chapter}={}){
   card.append(prompt,form,actions);
   const controls=el("div","thpt-r4-modal-buttons"),prev=el("button","","← Câu trước"),next=el("button","","Câu tiếp →");
   prev.type=next.type="button";prev.disabled=cursor===0;next.disabled=cursor===records.length-1;
-  prev.addEventListener("click",()=>{cursor--;render()});next.addEventListener("click",()=>{cursor++;render()});
+  golden.bindPager({prev,next,getIndex:()=>cursor,getCount:()=>records.length,go:i=>{cursor=i;render()}});
   controls.append(prev,next);body.append(prog,nav,card,controls);
   if(state.submitted){solution.open=true;feedback.textContent="Đã nộp. Tự đối chiếu, không chấm điểm hay ghi Mastery."}
   math(body);
@@ -186,7 +185,7 @@ function mount(root,bank,{chapter}={}){
  const open=(entry,i=0)=>{
   group=entry;returnFocus=entry.button;cursor=Math.max(0,Math.min(entry.items.length-1,i));
   title.textContent=(entry.optional?"Mở rộng":entry.practice?"Luyện tập":"Core")+" · Bài "+Number(entry.lesson.slice(1))+". "+entry.lessonTitle;
-  badge.textContent=String(Number(entry.lesson.slice(1)));render();if(!dialog.open)dialog.showModal();
+  badge.textContent=String(Number(entry.lesson.slice(1)));render();lifecycle.open(entry.button);
  };
  for(const old of details){
   const match=/^b(\d{2})-(core|practice|optional)$/.exec(old.id);if(!match)throw Error("G12 Golden: unexpected group "+old.id);
