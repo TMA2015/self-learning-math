@@ -23,6 +23,19 @@ RELEASE_AUTHORIZATION: NO
 5. **Chia sẻ SGK ↔ Topic** là kiến trúc đã chốt tại Project Source `08` và Q15/Q17, **không phải thay đổi dự án**. Một nguồn canonical, nhiều `placement`/tag; liên kết Topic chỉ `CANDIDATE` trước review hành trình Topic riêng, không suy SGK PASS thành Topic PASS. Nhánh AUTHORING chịu trách nhiệm phân loại; RELEASE tích hợp bộ lọc/đường dẫn khi được chủ dự án phê duyệt riêng.
 6. Không thay website, Firebase, Gemini, keys học sinh, RD1 private, Mastery, Final Submit hay Golden UI trong cuộc kiểm toán này.
 
+## Quyết định bổ sung của chủ dự án — bộ đề luyện tập giáo viên có giá trị độc lập (06/11/2026)
+
+**Hiệu chỉnh thứ tự ưu tiên kiểm toán, KHÔNG đổi chuẩn Q01–Q18 và KHÔNG mở học liệu mới:** Bộ đề cương, tài liệu ôn tập, chuyên đề luyện tập do giáo viên biên soạn/tổng hợp (kể cả các URL chủ dự án đã cung cấp) là **nguồn tham khảo hợp lệ để phát hiện DẠNG BÀI/PHƯƠNG PHÁP/MỨC VẬN DỤNG**. Không phải chờ truy ra đúng tệp PDF đề thi HKI/HKII gốc do một trường Hà Nội công bố mới được phân tích tính đa dạng bài tự luận. Những bài luyện do giáo viên biên soạn dựa trên thực tế giảng dạy và đề các năm có giá trị phương pháp, không được loại vì thiếu tư cách "exam event".
+
+**Tách rõ hai mục đích chứng cứ, tránh tự gây tắc nghẽn:**
+
+- **METHOD_DISCOVERY / TYPE_COVERAGE (ưu tiên hiện nay):** chấp nhận đề luyện, đề cương của trường, bộ tuyển tập giáo viên, SGK/SBT S1, bài ôn tập; yêu cầu có **đề bài đủ rõ, toàn bộ dữ kiện/điều kiện, hình nếu cần, nguồn/URL, phần/bài/trang nếu xác định được**, và phải **tự giải/QA toán**. Bản lưu thứ cấp có thể dùng; ghi \`TEACHER_PRACTICE_COMPILATION\`, \`SCHOOL_REVISION_GUIDE\`, \`SECONDARY_PRACTICE_SET\`, \`PRACTICE_SOURCE_VERIFIED_FOR_METHOD\` hay HOLD đúng mức, không vì chữ "đề thi" mà mặc nhiên gọi là đã thi thật.
+- **EXAM_AUTHENTICITY / EXAM_FREQUENCY (mục đích khác, không chặn method discovery):** chỉ khi nói "đề thi thật của trường", thống kê số trường/kỳ thi/mã đề, hoặc gắn nhãn formal \`EXAM_CORPUS_VERIFIED\`, mới cần các chứng cứ issuer/năm/kỳ thi/trang/mã/cùng sự kiện/ảnh và PDF SHA thích hợp. **Không** áp các cổng này máy móc lên tuyển tập giáo viên vì không phải loại nguồn đó.
+- **SLM GAP vs VARIANT:** xác định \`PROBLEM_TYPE_ID\`, chuỗi thao tác/các outcome, điều kiện áp dụng, bẫy tư duy và mức vận dụng; đối chiếu **trọn D1–D4/PED theo bài/outcome** với canonical Git blob đã khóa và S1. \`METHOD_PRESENT\` nếu đã có dạy đúng phương pháp; \`COMPOUND_TRANSFER_PENDING\` nếu thành phần có nhưng chưa có bài tích hợp; \`CANDIDATE_MISSING_METHOD\` chỉ khi kiểm chứng được **thực sự chưa có** kỹ năng/chuỗi quan trọng và phù hợp S1, không chỉ khác số liệu/bối cảnh. Nếu cần câu mới, đề xuất ngắn có nguồn+độ khó+item/outcome gap trước cho owner, **không tự tăng số câu**, rồi mới \`DELTA_C\` độc lập theo 5 nguồn NotebookLM v2.1.
+- **Ưu tiên đầu ra:** *bảng dạng bài có/chưa có/đang thiếu chuỗi vận dụng + khuyến nghị bổ sung tối thiểu*, **không** phải hàng chục biên bản xác thực URL/CI. Chỉ nghiên cứu nguồn gốc PDF sâu khi ảnh hoặc ký hiệu ảnh hưởng đến phép giải, hoặc khi thực sự công bố thống kê đề thi chính thức. Nếu không có chứng cứ mới, đóng khâu và dừng lặp audit.
+- **Bắt đầu từ nguồn đã nằm trong hồ sơ:** đề cương cuối HKII Toán 10 của THPT Trần Phú–Hoàn Kiếm (R12/R13, nguồn trường); các bộ đề luyện/tuyển tập của giáo viên mà chủ dự án đã gửi ở các lượt khác cần khôi phục đúng URL trước khi ghi nhận là "owner-provided". **Không tự gán URL tìm mới thành link chủ dự án đã từng gửi**.
+- Đề chuyên/HSG/SAT/ATC vẫn ngoài phạm vi; S1 KNTT vẫn là thẩm quyền phạm vi/chương trình, các tài liệu luyện tập không tự thay SGK/SBT. Giữ Golden/238 D4/Topic độc lập/Readiness Q16 và tuyệt đối không tự mở RELEASE.
+
 ## Baseline bất biến — đã rút trực tiếp từ GitHub V2 handoff
 
 - [Toán 10: 31 distinct canonical D4 items](G10_WRITTEN_31_CANONICAL_BASELINE.md), 9 chương/B01–B27; G10 ChVI 8 D4 riêng, 2 Written chapter-END selfcheck khác **không cộng vào D4**.
