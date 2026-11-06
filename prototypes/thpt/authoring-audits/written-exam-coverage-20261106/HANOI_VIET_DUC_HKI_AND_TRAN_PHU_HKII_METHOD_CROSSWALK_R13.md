@@ -48,3 +48,10 @@ RELEASE_OR_TOPIC_IMPLEMENTATION: NO
 4. Keep Draft #771; continue with school-issued/verified real HKI/HKII PDF including correct code, printed page and images, verify D1–D4 across all relevant original chapters; decide on new items only after an important method/depth gap is proven and owner approves a scoped DELTA_C + NotebookLM review.
 
 CHECKPOINT: R13=SOURCE_AND_METHOD_CROSSWALK_RECORDED;B21_P06_METHOD_MATCH;EXAM_ORIGINAL_PDF_HOLD;NO_FORMAL_GAP;NEW_D4=0;RELEASE=NO
+
+## R13 SOURCE-ANCHORED RESOLUTION — river-vector method (06/11/2026)
+
+- **Loại bỏ yêu cầu tìm bằng được đề thi HKI gốc để công nhận dạng luyện:** bài ca nô 22 km/h theo hướng S20°E trong trích đoạn Việt Đức được giữ là tham chiếu **SECONDARY_EXCERPT_ONLY**; nguồn số 21,4 km/h trong §B **chỉ là phép tính có điều kiện** dựa trên việc 22 là tốc độ theo bờ. Chưa có PDF glyph rõ để chốt lời giải trường và câu đó có thuộc phần tự luận hay không.
+- **S1 chính thức đã đọc ảnh trang trực tiếp:** SGK KNTT Toán 10 Tập Một **trang in 53/PDF54** nêu quy tắc tổng vận tốc riêng thuyền + dòng nước; **trang in 54/PDF55** có Ví dụ 4 chọn hướng chèo khi sang sông và bài **4.10** hai ca nô với dòng nước. SGK PDF SHA256 **3cbb335780dc0f2f4a034a55eb542e3bbe67693412b10a90ca1dffe9ea50eac2**. SBT cùng tập PDF SHA256 **2b1b98665b2c5cccb99f6699a43cbf71b8b2dfc63bdaec759a7b1c51778e2fa1**.
+- Đối chiếu source G10 ChIV blob **96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9**, **45/45 canonical**, **15/15 D2**, **24/24 First Try**, cho thấy công thức và phép tọa độ đã có nhưng **không có bài tích hợp thuyền/dòng nước/đến đúng bờ** trong phần public đã rà. Gắn **S1_ANCHORED_RIVER_VECTOR_TRANSFER_CANDIDATE** (ứng viên tăng độ sâu ứng dụng), **không** gắn thiếu lý thuyết hay formal Q FAIL.
+- [Biên bản chứng cứ S1/nguồn lỗi và các QA probes duy nhất — R12 closeout](G10_OFFICIAL_SCHOOL_REVISION_FORCE_APPLICATION_CROSSWALK_R12.md). Không tạo audit R tiếp, không mở DELTA_C/source mới khi chưa có quyết định phạm vi; giữ 238 Written.
