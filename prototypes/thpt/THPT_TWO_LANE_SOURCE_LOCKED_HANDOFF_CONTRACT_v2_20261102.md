@@ -1,3 +1,5 @@
+
+**Owner-approved operational V2 extension (03/11/2026):** `SGK_EXPERIENCE_SUPPLEMENT / SGK_EXPERIENCE_SUPPLEMENT` may use the same `SLM-THPT-QUALITY-ONE` Q01–Q18, exact immutable source/receipt/one V2 handoff/one ready manifest and REGISTER. It is not a separate chapter or Topic; `PRIVATE_RD1_COUNT=0`, `OFFICIAL_READINESS=NOT_CLAIMED`, `CLIENT_SELF_CHECK_NO_MASTERY`. The extension is AUTHORING handoff authority only; website merge/deploy requires independent RELEASE AP/R/CI and owner permission. Original dated rules below retain their historical scope.
 # THPT — Two-lane source-locked handoff & release contract v2.0 (2026-11-02)
 
 **Owner decision:** 02/11/2026. **Repository:** `TMA2015/self-learning-math`. **Roles:** AUTHORING = nhánh phát triển học liệu; RELEASE = nhánh phát hành. **Status on 02/11:** Math release automation PAUSED (task `6ae0530a4aa881918360a03e87887990` disabled); no automatic merge/deploy during pause.

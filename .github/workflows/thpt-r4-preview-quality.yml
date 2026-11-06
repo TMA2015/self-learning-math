@@ -123,6 +123,12 @@ on:
       - 'scripts/test-thpt-g12-chv-release-browser.cjs'
       - 'scripts/test-thpt-g12-chvi-release-source.cjs'
       - 'scripts/test-thpt-g12-chvi-release-browser.cjs'
+      - 'scripts/test-thpt-g12-exp01-exp02-release-source.cjs'
+      - 'scripts/test-thpt-g12-exp01-exp02-release-browser.cjs'
+      - 'docs/assets/data/thpt-g12-exp01-exp02-public-r01.json'
+      - 'docs/assets/javascripts/thpt-g12-exp01-exp02-r01.js'
+      - 'docs/assets/stylesheets/thpt-g12-exp01-exp02-r01.css'
+      - 'docs/assets/images/thpt/Temp_FIG_G12_XP*.png'
       - 'docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json'
       - 'docs/assets/javascripts/thpt-g12-chvi-b18-b19-r00.js'
       - 'docs/assets/images/thpt/Temp_FIG-G12-CHVI-*.png'
@@ -236,6 +242,9 @@ jobs:
           node --check docs/assets/javascripts/thpt-g12-chvi-b18-b19-r00.js
           node --check scripts/test-thpt-g12-chvi-release-source.cjs
           node --check scripts/test-thpt-g12-chvi-release-browser.cjs
+          node --check docs/assets/javascripts/thpt-g12-exp01-exp02-r01.js
+          node --check scripts/test-thpt-g12-exp01-exp02-release-source.cjs
+          node --check scripts/test-thpt-g12-exp01-exp02-release-browser.cjs
       - name: Validate updated interactive THPT browser test syntax
         run: |
           node --check scripts/test-thpt-interactive-compact-browser.cjs
@@ -281,6 +290,8 @@ jobs:
         run: node scripts/test-thpt-g12-chv-source-lock.cjs
       - name: Guard G12 ChVI Academic/PED source, 56 canonical, 5 PNG, private RD1 exclusion and Q16
         run: node scripts/test-thpt-g12-chvi-release-source.cjs
+      - name: Guard G12 SGK EXP01–EXP02 R01 original 40 items, 5 PNG, 10 D6 and client-only Q16
+        run: node scripts/test-thpt-g12-exp01-exp02-release-source.cjs
       - name: Guard G11 B01 source-locked Knowledge presentation (no deploy)
         run: node scripts/test-thpt-g11-b01-ap-parity.cjs
       - name: Guard G10 B03 Knowledge AP source parity (no deploy)
@@ -515,6 +526,8 @@ jobs:
         run: node scripts/test-thpt-sgk-lesson-nav-p2-browser.cjs
       - name: Owner P2 SGK 24 chapter self-check math & Q16 screenshot sweep · 390 / 820 / 1440
         run: node scripts/test-thpt-sgk-selfcheck-p2-browser.cjs
+      - name: G12 SGK experiential R01 two lesson pages, Golden one-question modal, 10 END Q16 · 390 / 820 / 1440
+        run: node scripts/test-thpt-g12-exp01-exp02-release-browser.cjs
       - name: Academic Presentation QA pilot · MathJax overflow / 390 820 1440
         run: node scripts/test-thpt-academic-presentation-browser.cjs
       - name: Academic Presentation QA G10 B03 · 390 820 1440

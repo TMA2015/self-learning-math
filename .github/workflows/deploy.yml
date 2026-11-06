@@ -29,6 +29,10 @@ jobs:
       - name: Guard G12 ChVI source/receipt SHA, 56 public canonical and private RD1 Q16 boundary
         run: node scripts/test-thpt-g12-chvi-release-source.cjs
 
+      - name: Guard G12 SGK EXP01/02 signed V2 original source and public-only boundary before deploy
+        run: |
+          node --check docs/assets/javascripts/thpt-g12-exp01-exp02-r01.js
+          node scripts/test-thpt-g12-exp01-exp02-release-source.cjs
       - name: Run Roadmap dependency and link QA
         run: python check_roadmap_dependencies.py
 

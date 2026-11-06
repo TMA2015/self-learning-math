@@ -208,6 +208,11 @@ nav:
               - Bài 19 · Toàn phần & Bayes: thpt-preview/sgk/lop-12/chuong-vi/bai-19.md
               - Core và Luyện tập · ChVI: thpt-preview/sgk/lop-12/chuong-vi/luyen-tap.md
               - Tự kiểm tra · ChVI (client-only): thpt-preview/sgk/lop-12/chuong-vi/tu-kiem-tra-chuong.md
+              - Toán 12 · Hoạt động trải nghiệm: thpt-preview/sgk/lop-12/bo-sung/index.md
+              - Toán 12 · Thực hành 1 · CAS & hình thang: thpt-preview/sgk/lop-12/bo-sung/trai-nghiem-1.md
+              - Toán 12 · Thực hành 2 · Hình học 3D: thpt-preview/sgk/lop-12/bo-sung/trai-nghiem-2.md
+              - Core/Luyện tập · Trải nghiệm: thpt-preview/sgk/lop-12/bo-sung/luyen-tap-trai-nghiem.md
+              - Tự kiểm tra · Trải nghiệm: thpt-preview/sgk/lop-12/bo-sung/tu-kiem-tra-trai-nghiem.md
               - Core hàm bậc hai: thpt-preview/sgk/core/ham-so-bac-hai.md
           - Chuyên đề:
               - Tổng quan: thpt-preview/chuyen-de/index.md
@@ -269,6 +274,7 @@ extra_css:
   - assets/stylesheets/thpt-chvi-d6-reviewed-r01.css
   - assets/stylesheets/thpt-g10-reviewed-selfcheck-v1.css
   - assets/stylesheets/thpt-sgk-lesson-nav-v1.css
+  - assets/stylesheets/thpt-g12-exp01-exp02-r01.css
 
 extra_javascript:
   # Critical learner route/runtime scripts first so KNTT/Core can mount before remote MathJax or heavier observers.
@@ -331,3 +337,4 @@ extra_javascript:
   - assets/javascripts/thpt-g12-chii-b06-b08-r00.js
   - assets/javascripts/thpt-g12-chvi-b18-b19-r00.js
   - assets/javascripts/thpt-sgk-lesson-nav-v1.js
+  - assets/javascripts/thpt-g12-exp01-exp02-r01.js

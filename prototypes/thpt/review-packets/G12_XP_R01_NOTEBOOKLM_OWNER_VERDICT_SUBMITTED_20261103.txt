@@ -1,0 +1,175 @@
+### BÁO CÁO PHẢN BIỆN HỌC THUẬT VÀ SƯ PHẠM ĐỘC LẬP
+**THẨM ĐỊNH MỤC TIÊU ĐIỀU CHỈNH 10 BÀI TỰ LUẬN D4 VÀ ĐỐI CHIẾU NGUỒN EXP01-O05 (GÓI R01 TARGETED)**
+*(Hoạt động thực hành trải nghiệm SGK Toán 12 KNTT Tập Hai — Trang in 81–89)*
+
+* **PACKET_ID:** `G12-SGK-EXP01-EXP02-R01-TARGETED-Q06-Q18`
+* **STANDARD_ID:** `SLM-THPT-QUALITY-ONE` (v1.1.0, Cổng Q01–Q18)
+* **CƠ SỞ PHÁP LÝ & QUY TẮC:** Đúng **5 Permanent Sources THPT v2.1** (`01_THPT_MASTER_PLAN_v2.1` đến `05_THPT_CANONICAL_EXERCISE_AND_ID_CONTRACT_v2.1`), Nguồn S1 SGK/SBT Toán 12 KNTT Tập Hai gốc và tệp nguồn đối chiếu mục tiêu `Temp_G12_SGK_XP_R01_TARGETED_WRITTEN_O05_NOTEBOOKLM_20261103.md`.
+
+---
+
+### TÓM TẮT QUẢN TRỊ VÀ KẾT LUẬN THẨM ĐỊNH (EXECUTIVE SUMMARY)
+
+1. **`ACADEMIC_VERDICT = PASS`**  
+   Thẩm định độc lập 10 bài Tự luận D4 đề xuất điều chỉnh (`THPT-G12-EXP01-W01..W05` và `THPT-G12-EXP02-W01..W05`) cùng sự cố đối chiếu dữ liệu `EXP01-O05`:
+   * **Xác minh số liệu `EXP01-O05` (Quãng đường 22 m):** Bộ dữ liệu R00 gốc \\(t \in \{0, 2, 4, 6\}\text{ s}\\) với \\(v \in \{2, 3, 5, 4\}\text{ m/s}\\) cho kết quả xấp xỉ hình thang hợp thành \\(T_3 = 2 \times \left[\frac{2+4}{2} + 3 + 5\right] = \mathbf{22\text{ m}}\\) (tính lẻ từng khoảng: \\(5 + 8 + 9 = 22\text{ m}\\)). Xác nhận con số **22 m là chính xác 100%** theo toán học. Nhầm lẫn "21 m" ở văn bản tóm tắt trước là do đối chiếu nhầm với bộ số khác.
+   * **Chất lượng 10 bài Tự luận D4 (R01 Candidate):** Lời giải đề xuất mới đạt độ hoàn thiện cao, lập luận chặt chẽ, minh bạch hóa các bước tính toán, chỉ rõ điều kiện áp dụng và giới hạn mô hình (như sai số xấp xỉ hình thang, định lý Newton–Leibniz, hình chiếu 2D của tam giác Penrose, tham số hóa mặt Möbius \\(M(0,v) = M(2\pi, -v)\\)).
+   * **Thang điểm Rubric /5 (Q06):** Cả 10 bài Tự luận D4 đều sở hữu Rubric tự luận 5 điểm chuẩn mực, phân rã theo 5 tiêu chí 1 điểm rõ ràng.
+
+2. **`PEDAGOGICAL_SELF_LEARNING_READY = PASS`**  
+   10 bài Tự luận D4 bổ sung đáp ứng trọn vẹn tiêu chuẩn tự học độc lập (`PED5 METHOD` & `PED6 SELF-TRY`), hướng dẫn người học tự so sánh đối chiếu kết quả sau khi làm, hiểu sâu sắc bản chất công thức và phương pháp xấp xỉ/mô hình hóa 3D mà không phụ thuộc bắt buộc vào việc phải cài đặt phần mềm GeoGebra.
+
+3. **BẢO TỒN NỘI DUNG BẤT BIẾN R00:**  
+   Tất cả các phần lý thuyết D1, ví dụ D2, bài tập D3 (Core/Practice/Application), hình vẽ D5 (PNG/SVG) và thẻ hỗ trợ D6 HELP không thuộc phạm vi R01 đều được **bảo toàn 100% kết quả PASS đã kết luận ở bản R00**.
+
+4. **RANH GIỚI HỆ THỐNG:**  
+   * **`EXPOSURE_SYSTEM_VERDICT = SYSTEM_HOLD` | `RELEASE_AUTHORIZATION = NO` | `MASTERY_ACTIVATION = NO` | `CONTENT_READY = NO`**.
+   * Phê duyệt đính chính này không tự cấp phép phát hành, không kích hoạt chấm điểm Final Submit và không ghi nhận điểm Skill Mastery.
+
+---
+
+### I. SOURCE_RECEIPT & PROVENANCE KIỂM TOÁN
+
+| Hạng mục / Tệp nguồn | Thông số Kỹ thuật & Mã Băm | Phạm vi / Trang in S1 | Ghi chú Trạng thái |
+| :--- | :--- | :--- | :--- |
+| **Tiêu chuẩn áp dụng** | `SLM-THPT-QUALITY-ONE v1.1.0` | Cổng Q01–Q18 | Chuẩn kiểm toán thống nhất |
+| **5 Permanent Sources** | THPT Version 2.1 | `01_MASTER_PLAN_v2.1` đến `05_CONTRACT_v2.1` | Nguồn quy tắc bất biến |
+| **SGK Toán 12 KNTT Tập 2** | SHA256: `3c642f2e80d86d699ea62bbcabd0c3074fd5118def96e4b3b8ce1f9ead7f97bb` | Trang in **81–89** (PDF1 **83–91**) | Hoạt động Trải nghiệm 1 & 2 |
+| **Gói R00 ZIP Nguyên bản** | SHA256: `9e1e9f6f328a40de99a0a5485f5eee1d1af466256cc44df3bcc5e2653337184f` | 9 tệp gốc R00 | Bất biến, không chỉnh sửa |
+| **Tệp Snapshot R01 Mới** | `Temp_G12_SGK_XP_R01_TARGETED_WRITTEN_O05_NOTEBOOKLM_20261103.md` | SHA256: `1b60e1f3430a03e0d148cd08003eaa61574babf5a3a687a0465539224a05d271` | Phản biện 10 Tự luận D4 & `EXP01-O05` |
+
+---
+
+### II. XÁC MINH SỰ CỐ DỮ LIỆU EXP01-O05 (22 METER PARITY)
+
+* **Bảng dữ liệu R00:** Thời gian \\(t \in \{0, 2, 4, 6\}\text{ s}\\), vận tốc tương ứng \\(v \in \{2, 3, 5, 4\}\text{ m/s}\\), độ rộng khoảng cách đều \\(h = 2\text{ s}\\).
+* **Công thức Hình thang hợp thành (\\(T_3\\)):**
+  \\[T_3 = h \left[ \frac{v_0 + v_3}{2} + v_1 + v_2 \right] = 2 \times \left[ \frac{2 + 4}{2} + 3 + 5 \right] = 2 \times [3 + 3 + 5] = 22\text{ m}.\\]
+* **Tính lẻ từng khoảng:**
+  * Khoảng 1 (\\(\\)): \\(2 \times \frac{2+3}{2} = 5\text{ m}\\)
+  * Khoảng 2 (\\(\\)): \\(2 \times \frac{3+5}{2} = 8\text{ m}\\)
+  * Khoảng 3 (\\(\\)): \\(2 \times \frac{5+4}{2} = 9\text{ m}\\)
+  * Tổng quãng đường: \\(5 + 8 + 9 = \mathbf{22\text{ m}}\\).
+* **Kết luận đính chính:** Kết quả **22 m là chính xác 100%**. Bản R01 bảo toàn dữ liệu gốc và làm rõ phép tính kiểm tra.
+
+---
+
+### III. KIỂM TOÁN CHI TIẾT 10 BÀI TỰ LUẬN D4 ĐỀ XUẤT (R01 CANDIDATE)
+
+#### 1. Thực hành 1: CAS GeoGebra & Hình thang (5 bài Written R01)
+
+1. **`THPT-G12-EXP01-W01` (`G12-SGK-EXP01-O01`):**
+   * *Đề bài R01:* Cho \\(f(x) = 2\cos(2x) + 6x\\) trên \\(\mathbb{R}\\). CAS đề xuất \\(F(x) = \sin(2x) + 3x^2\\). Tìm họ nguyên hàm và kiểm bằng 2 cách: (i) lấy đạo hàm; (ii) đối chiếu tích phân xác định trên \\([0, \pi/2]\\).
+   * *Đánh giá Lời giải & Rubric /5:* Lời giải chính xác tuyệt đối. Đạo hàm \\(F'(x) = 2\cos(2x) + 6x = f(x)\\). Tích phân trên \\([0, \pi/2]\\) cho cả hai cách đều ra \\(3\pi^2/4\\). Rubric phân rã 5 điểm chuẩn mực (1đ nguyên hàm \\(2\cos 2x\\), 1đ nguyên hàm \\(6x\\), 1đ \\(+C\\) & miền \\(\mathbb{R}\\), 1đ kiểm đạo hàm, 1đ kiểm tích phân xác định).
+   * *Kết quả:* **`PASS`**.
+
+2. **`THPT-G12-EXP01-W02` (`G12-SGK-EXP01-O02`):**
+   * *Đề bài R01:* Công cụ hiển thị \\(\int_0^2 (x^2+1)dx \approx 4,67\\). Nêu phân số chính xác, kiểm và giải thích khác biệt.
+   * *Đánh giá Lời giải & Rubric /5:* \\(F(x) = x^3/3 + x \implies \int_0^2 (x^2+1)dx = 14/3 = 4,6666\dots \approx 4,67\\). Giải thích rõ \\(4,67\\) là hiển thị làm tròn, không phải giá trị tích phân khác. Rubric /5 giữ nguyên R00.
+   * *Kết quả:* **`PASS`**.
+
+3. **`THPT-G12-EXP01-W03` (`G12-SGK-EXP01-O03`):**
+   * *Đề bài R01:* Cho \\(f(x) = x^2\\) trên \\(\\), \\(n=4\\). Lập bảng nút, viết \\(T_4\\) và tính sai lệch có dấu.
+   * *Đánh giá Lời giải & Rubric /5:* \\(h=1/2\\), nút \\(x_i \in \{0; 0,5; 1; 1,5; 2\}\\), \\(f(x_i) \in \{0; 0,25; 1; 2,25; 4\}\\). \\(T_4 = 11/4 = 2,75\\). Tích phân đúng \\(I = 8/3\\). Sai lệch có dấu \\(T_4 - I = 11/4 - 8/3 = +1/12 > 0\\). Giải thích hình học: \\(f(x)=x^2\\) lồi nên dây cung hình thang nằm phía trên đồ thị. Rubric /5 giữ nguyên R00.
+   * *Kết quả:* **`PASS`**.
+
+4. **`THPT-G12-EXP01-W04` (`G12-SGK-EXP01-O04`):**
+   * *Đề bài R01:* Quy trình chọn \\(n\\) cho \\(\int_0^1 x^2 dx\\) có sai số \\(< 0,001\\); giải thích vì sao \\(n=12\\) chưa bảo đảm.
+   * *Đánh giá Lời giải & Rubric /5:* \\(f''(x) = 2 \implies M=2\\). Cận sai số \\(|I - T_n| \le \frac{1}{6n^2}\\). Để bảo đảm \\(< 0,001 \implies n^2 > 166,67 \implies n \ge 13\\). Với \\(n=12\\), cận là \\(1/864 \approx 0,001157 > 0,001\\) (chưa đủ bảo đảm bằng cận). Rubric /5 giữ nguyên R00.
+   * *Kết quả:* **`PASS`**.
+
+5. **`THPT-G12-EXP01-W05` (`G12-SGK-EXP01-O05`):**
+   * *Đề bài R01:* Bảng vận tốc \\(t \in \{0,2,4,6\}\text{ s}\\) tương ứng \\(v \in \{2,3,5,4\}\text{ m/s}\\). Công thức hình thang, quãng đường, hạn chế.
+   * *Đánh giá Lời giải & Rubric /5:* \\(T_3 = 22\text{ m}\\). Thử lại từng khoảng \\(5 + 8 + 9 = 22\text{ m}\\). Nêu rõ hạn chế: số liệu rời rạc chưa có chứng nhận cận sai số vì chưa biết \\(v''(t)\\). Rubric /5 chuẩn xác.
+   * *Kết quả:* **`PASS`**.
+
+---
+
+#### 2. Thực hành 2: GeoGebra 3D, Penrose & Möbius (5 bài Written R01)
+
+6. **`THPT-G12-EXP02-W01` (`G12-SGK-EXP02-O01`):**
+   * *Đề bài R01:* Lập luận hai đoạn song song có cùng hình chiếu \\(Oxy\\) nhưng khác \\(z\\), kết luận về tam giác Penrose.
+   * *Đánh giá Lời giải & Rubric /5:* Xét \\(AB\\) với \\(z=0\\) và \\(CD\\) với \\(z=2\\). Hình chiếu lên \\(Oxy\\) trùng nhau nhưng không giao nhau trong 3D, cách nhau 2 đơn vị theo \\(z\\). Xoay góc nhìn làm lộ khoảng hở. Rubric /5 chuẩn xác.
+   * *Kết quả:* **`PASS`**.
+
+7. **`THPT-G12-EXP02-W02` (`G12-SGK-EXP02-O02`):**
+   * *Đề bài R01:* Từ 6 đỉnh cho trước, mô tả thao tác dựng lăng trụ tam giác và kiểm 3 tính chất đáy/song song/thể tích.
+   * *Đánh giá Lời giải & Rubric /5:* \\(A(0,0,0), B(2,0,0), C(0,2,0)\\) và \\(A'(0,0,3), B'(2,0,3), C'(0,2,3)\\). Hai đáy nằm trên \\(z=0\\) và \\(z=3\\) song song, \\(h=3\\), \\(S_{\text{đáy}} = 2 \implies V = 6\\). Rubric /5 giữ nguyên R00.
+   * *Kết quả:* **`PASS`**.
+
+8. **`THPT-G12-EXP02-W03` (`G12-SGK-EXP02-O03`):**
+   * *Đề bài R01:* Thiết kế thủ tục kiểm mô hình 3 thanh Penrose sau khi dựng, tránh kết luận sai từ một góc nhìn.
+   * *Đánh giá Lời giải & Rubric /5:* Quy trình 5 bước: (1) Lưu tọa độ 3D; (2) Chụp ảnh góc gây ảo giác; (3) Xoay camera 90° chụp ảnh thứ hai; (4) Kiểm tọa độ \\(z\\) tại mối nối; (5) Kết luận giới hạn của ảnh 2D. Rubric /5 giữ nguyên R00.
+   * *Kết quả:* **`PASS`**.
+
+9. **`THPT-G12-EXP02-W04` (`G12-SGK-EXP02-O04`):**
+   * *Đề bài R01:* Trình bày công thức tham số mặt Möbius \\(M(u,v)\\), kiểm 2 cặp mép ghép và giải thích tính chất tôpô.
+   * *Đánh giá Lời giải & Rubric /5:* Chứng minh \\(M(0,v) = M(2\pi, -v)\\). Kiểm \\(v=1 \implies M(0,1) = M(2\pi,-1) = (1.5, 0, 0)\\) và \\(v=-1 \implies M(0,-1) = M(2\pi,1) = (0.5, 0, 0)\\). Giải thích sự hoán đổi chiều ngang khi dán mép. Rubric /5 chuẩn xác.
+   * *Kết quả:* **`PASS`**.
+
+10. **`THPT-G12-EXP02-W05` (`G12-SGK-EXP02-O05`):**
+    * *Đề bài R01:* Lập báo cáo 6 mục về mô hình Möbius hoặc ảo giác Penrose và giải thích giới hạn suy luận.
+    * *Đánh giá Lời giải & Rubric /5:* Mẫu báo cáo 6 mục đầy đủ (Mục tiêu, Dữ liệu, Quy trình, Hai góc nhìn, Kiểm chứng, Giới hạn). Rubric /5 chuẩn xác.
+    * *Kết quả:* **`PASS`**.
+
+---
+
+### IV. THẨM ĐỊNH NORM CỔNG Q01–Q18 (SLM-THPT-QUALITY-ONE v1.1.0)
+
+* **Q01 (Scope & Source Receipt):** **PASS**. Phạm vi 2 hoạt động trải nghiệm SGK, S1 PDF SHA256 verified, R00 SHA256 verified.
+* **Q02 (Outcomes):** **PASS**. Đủ 10 Outcomes (`EXP01-O01..O05`, `EXP02-O01..O05`).
+* **Q03–Q05 (D1–D3):** **PASS**. Bảo toàn kết quả R00.
+* **Q06 (D4 Written Items & Rubrics /5):** **PASS**. 10 bài Tự luận D4 R01 đề xuất đạt chất lượng học thuật cao, lời giải đầy đủ, Rubric /5 phân rã minh bạch.
+* **Q07–Q08 (D5–D6):** **PASS**. Bảo toàn 5 hình PNG/SVG và 10 thẻ HELP từ R00.
+* **Q09–Q14 (PED1–PED6):** **PASS**. Bảo toàn kiến trúc sư phạm tự học R00.
+* **Q15 (Canonical ID & Shared Bank):** **PASS**. Mỗi câu hỏi sở hữu 1 canonical `item_id` duy nhất. 10 placement secondary cuối bài trải nghiệm dùng lại câu Application (`A01..A05`), không clone ID.
+* **Q16 (Client Self-Check & Security):** **PASS**. `CLIENT_SELF_CHECK_NO_MASTERY`, không dùng đề kín RD1, không ghi đè điểm Mastery.
+* **Q17 (Dual Journey Boundaries):** **PASS**. Đường trải nghiệm SGK độc lập hoàn toàn với Chuyên đề.
+* **Q18 (Review Fidelity & Source Lock):** **PASS**. Đã kiểm toán chính xác 10 bài Tự luận D4 R01, xác nhận sự cố 22 m và khớp mã băm SHA256 tệp snapshot R01.
+
+---
+
+### V. BẢNG MÁY KIỂM TRA MÃ HÓA (MACHINE-CHECKABLE VERDICT)
+
+```text
+PACKET_ID|G12-SGK-EXP01-EXP02-R01-TARGETED-Q06-Q18
+STANDARD_ID|SLM-THPT-QUALITY-ONE
+STANDARD_VERSION|1.1.0
+PERMANENT_SOURCES_VERSION|THPT-v2.1
+S1_SGK_RECEIPT|TOAN_12_KNTT_TAP_HAI_P81-89_SHA256_3c642f2e80d86d699ea62bbcabd0c3074fd5118def96e4b3b8ce1f9ead7f97bb
+R00_ORIGINAL_ZIP_SHA256|9e1e9f6f328a40de99a0a5485f5eee1d1af466256cc44df3bcc5e2653337184f
+R01_TARGETED_FILE_SHA256|1b60e1f3430a03e0d148cd08003eaa61574babf5a3a687a0465539224a05d271
+EXP01_O05_DATA_PARITY_22M|VERIFIED_PASS
+EXPECTED_WRITTEN_COUNT|10
+REVIEWED_WRITTEN_COUNT|10
+THPT-G12-EXP01-W01|PASS
+THPT-G12-EXP01-W02|PASS
+THPT-G12-EXP01-W03|PASS
+THPT-G12-EXP01-W04|PASS
+THPT-G12-EXP01-W05|PASS
+THPT-G12-EXP02-W01|PASS
+THPT-G12-EXP02-W02|PASS
+THPT-G12-EXP02-W03|PASS
+THPT-G12-EXP02-W04|PASS
+THPT-G12-EXP02-W05|PASS
+ACADEMIC_VERDICT|PASS
+PEDAGOGICAL_SELF_LEARNING_READY|PASS
+P0|0
+P1|0
+P2|0
+MINIMAL_DELTA|0
+DELTA_CLASS|DELTA_C_ACADEMIC_MATERIAL
+EXPOSURE_SYSTEM_VERDICT|SYSTEM_HOLD
+RELEASE_AUTHORIZATION|NO
+MASTERY_ACTIVATION|NO
+CONTENT_READY|NO
+```
+
+---
+
+### VI. BẢO TỒN RANH GIỚI THẨM QUYỀN HỆ THỐNG
+
+1. Phê duyệt **`ACADEMIC_VERDICT = PASS`** và **`PEDAGOGICAL_SELF_LEARNING_READY = PASS`** áp dụng cho 10 bài Tự luận D4 R01 đính chính và đối chiếu dữ liệu `EXP01-O05` thuộc Hoạt động Thực hành Trải nghiệm SGK Toán 12 KNTT Tập 2.
+2. **`RELEASE_AUTHORIZATION = NO`**: Phê duyệt học thuật này **không** cấp quyền merge/deploy code lên GitHub repository công khai hay xuất bản lên website/frontend.
+3. **`MASTERY_ACTIVATION = NO`**: **Không** tự động kích hoạt tính năng Tự kiểm tra công khai (Final Submit) hay tính điểm Skill Mastery cho người học.
+4. **`EXPOSURE_SYSTEM_VERDICT = SYSTEM_HOLD`** & **`CONTENT_READY = NO`**: Tạm hoãn xuất bản hệ thống cho đến khi hoàn tất các thủ tục khóa nguồn (`Source Lock`) và kiểm thử phát hành kỹ thuật chính thức.
