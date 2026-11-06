@@ -22,6 +22,18 @@ ACADEMIC_RE_REVIEW: NO
 | `HN-NQT-2025-HK1-G11` | 2024–2025 | Toán 11 cuối HKI | THPT Nguyễn Quốc Trinh, lưu thứ cấp TailieumonToan | https://tailieumontoan.edu.vn/de-cuoi-ky-1-toan-11-truong-thpt-nguyen-quoc-trinh-tp-ha-noi-nam-2024-2025 | SECONDARY_MIRROR | DISCOVERED_NEEDS_ORIGINAL_OR_PDF_VERIFICATION |
 | `HN-MH-2025-HK1-G10` | 2024–2025 | Toán 10 cuối HKI | THPT Minh Hà, bản PDF lưu trên Giaitoan | https://file.giaitoan.edu.vn/file-pdf/de-cuoi-hoc-ky-1-toan-10-nam-2024-2025-truong-thpt-minh-ha-ha-noi.pdf | SECONDARY_MIRROR_PDF | DISCOVERED_VERIFY_AUTHENTICITY_PDF |
 
+## Bổ sung phát hiện có nguồn ngày 06/11/2026 (chưa nâng CORPUS_VERIFIED)
+
+| EXAM_SOURCE_ID | Năm học | Cấp/lớp/loại | Trang lưu và xác minh | Tình trạng chứng cứ |
+|---|---|---|---|---|
+| `HN-HDA-2026-HK1-G11` | 2025–2026 | THPT Hoài Đức A, Toán 11 cuối HKI | https://toanmath.com/2026/01/de-cuoi-hoc-ky-1-toan-11-nam-2025-2026-truong-thpt-hoai-duc-a-ha-noi.html | `SECONDARY_WEB_EXCERPTS_ONLY`: trang 04/01/2026 nêu 12 MCQ + 2 T/F + 4 short + 3 Written; chưa đọc PDF đề gốc, không xác định số câu của ba trích đoạn |
+| `HN-NGT-2026-HK1-G11` | 2025–2026 | THPT Nguyễn Gia Thiều, Toán 11 cuối HKI | https://khoahoc.vietjack.com/chi-tiet-de-thi/8175/de-thi-hoc-ki-1-toan-11-nam-2025-2026-truong-thpt-nguyen-gia-thieu-ha | `SECONDARY_HTML_TRANSCRIPTION_ONLY`: trang đăng Part IV Câu 1–3 dưới dạng HTML; nguồn gốc/hình/phân số chưa đối chiếu bản PDF gốc |
+| `HN-TPHK-2026-HK2-G10-REVIEW` | 2025–2026 | THPT Trần Phú–Hoàn Kiếm, Toán 10 **nội dung ôn tập** cuối HKII | https://file.giaitoan.edu.vn/file-pdf/on-tap-cuoi-hoc-ki-2-toan-10-nam-2025-2026-truong-thpt-tran-phu-ha-noi.pdf | `PDF_TEXT_EXTRACTED_SCREENSHOT_UNAVAILABLE`: tiêu đề, nội dung & mẫu định dạng đã được hệ thống đọc text; 12 MCQ +2 T/F +4 short + **6 ý tự luận**, 90 phút. **KHÔNG PHẢI ĐỀ THI THỰC**, không dùng làm exam frequency hay gap verdict |
+| `HN-NQT-2023-HK1-G10` | 2023–2024 | THPT Nguyễn Quốc Trinh, Toán 10 đề và đáp án cuối HKI | https://thptnguyenquoctrinh.hanoi.edu.vn/de-kiem-tra/de-dap-an-kiem-tra-cuoi-hoc-ky-i-nam-hoc-2023-2024-toan-van-tieng-anh-khoi-10/ctmb/23789/22140 | `OFFICIAL_SCHOOL_ATTACHMENT_DISCOVERED_PDF_FETCH_BLOCKED`: danh mục gốc có tệp `de-thi-dap-an-toan-10hki-23-24.pdf`, nhưng PDF phía `quantri.hanoi.shieldix.app` không mở được; không xác nhận item |
+| `MOET-EXAM-FORMAT-2025` | 2023–2025 | Bộ GD&ĐT quy định cấu trúc đề tốt nghiệp từ 2025 (không phải một đề thi cụ thể) | https://vqa.moet.gov.vn/vi/news/thong-bao/cau-truc-dinh-dang-de-thi-tot-nghiep-thpt-tu-nam-2025-74.html | `OFFICIAL_FORMAT_ONLY`: Bộ nêu dạng trả lời ngắn kiểm tra tư duy gần tự luận; không dùng thông cáo để kết luận dạng toán hay số câu của đề thực tế 2025–2026 |
+
+**Đối chiếu phương pháp bước đầu:** `EXAM_EXCERPT_CANDIDATE_MAPPING_R01.md` chứa 9 trích đoạn của 4 nguồn `HN-VD / HN-PHT / HN-HDA / HN-NGT` với `item_id/outcome_id` có nguồn gốc, nhưng **không có mã câu đề gốc, PDF được xác minh hoặc verdict COVERED/GAP**. Trang trường và trang nguồn thứ cấp được phân biệt rõ. Không biến đề cương ôn tập thành đề thi học kỳ.
+
 ## Lọc nguồn giai đoạn sau
 
 - Đề 2022–2026 có thể được xét; ưu tiên 2024–2026 và nhất là đề khớp CT GDPT 2018 và cấu trúc hiện hành; đề chương trình cũ nếu không tương đương outcome thì đánh `OUT_OF_SCOPE`.
