@@ -117,9 +117,12 @@ const miniNav=root=>{
  const nav=mk("nav","g11-supp-local-nav");
  nav.setAttribute("aria-label","Điều hướng phần cuối sách giáo khoa");
  [
-  ["Giới thiệu","../"],["Hoạt động 1","../trai-nghiem-e01/"],
-  ["Hoạt động 2","../trai-nghiem-e02/"],
-  ["Ôn tập cuối năm","../on-tap-cuoi-nam/"],
+  ["Mục lục hai phần","../"],["Thực hành 1","../trai-nghiem-e01/"],
+  ["Thực hành 2","../trai-nghiem-e02/"],
+  ["Luyện tập Trải nghiệm","../luyen-tap-trai-nghiem/"],
+  ["Tự kiểm tra Trải nghiệm","../tu-kiem-tra-trai-nghiem/"],
+  ["Kiến thức Ôn tập cuối năm","../on-tap-cuoi-nam/"],
+  ["Luyện tập cuối năm","../luyen-tap-on-tap-cuoi-nam/"],
   ["Tự kiểm tra cuối năm","../tu-kiem-tra/"]
  ].forEach(([label,url])=>{
   const a=mk("a","",label);a.href=url;nav.append(a);
@@ -132,9 +135,9 @@ const learningPath=root=>{
  const steps=mk("ol");
  [
   "Hiểu bản chất, điều kiện và đọc các hình minh họa.",
-  "Xem ví dụ, tự thử rồi giải ngay các câu Core và Luyện tập bên dưới.",
-  "Viết bài tự luận, nộp để tự đối chiếu lời giải; nếu vướng, mở hỗ trợ ở cuối phần.",
-  "Sau khi học xong, sử dụng mục Tự kiểm tra cuối năm."
+  "Xem ví dụ, đọc hình và tự thử trước khi chuyển sang trang Core và Luyện tập.",
+  "Trong trang luyện tập, chọn thẻ Core, Luyện tập, Vận dụng hoặc Tự luận, rồi chọn câu theo hàng nút.",
+  "Nộp từng câu để tự đối chiếu, ôn lại kiến thức khi cần; làm Tự kiểm tra của đúng phần."
  ].forEach(t=>steps.append(mk("li","",t)));
  guide.append(steps);root.append(guide);
 };
@@ -168,7 +171,7 @@ const helpBlocks=(root,bank,topic)=>{
   const steps=mk("ol");
   for(const step of h.steps){const li=mk("li");addText(li,step);steps.append(li)}
   const a=mk("a","","Quay lại bài luyện tập đã liên kết");
-  a.href="#"+idAnchor(h.return_item);
+  a.href=(topic==="E01"||topic==="E02"?"../luyen-tap-trai-nghiem/":"../luyen-tap-on-tap-cuoi-nam/")+"#"+idAnchor(h.return_item);
   details.append(summary,steps,a);root.append(details);
  }
 };
@@ -239,36 +242,18 @@ const course=(root,bank,view)=>{
    section.append(mk("h3","",pedNames.PED6));
    section.append(paragraph(track.ped.PED6,"g11-supp-first-try"));
   }
-  // One canonical JSON bank, multiple learner placements. This topic
-  // owns its full Core → Practice/Application → Written → D6 journey.
-  const core=bank.items.filter(q=>groupOf(q)===topic&&q.role==="SGK_CORE");
-  const practiceItems=bank.items.filter(q=>groupOf(q)===topic&&q.role!=="SGK_CORE");
-  const written=bank.written.filter(q=>groupOf(q)===topic);
-  const coreSection=mk("div","g11-supp-learning-stage");
-  coreSection.append(mk("h3","","1. Core · Tự thử kiến thức"));
-  const coreCards=core.map((q,i)=>exerciseCard(q,"formative",i+1));
-   coreCards.forEach(card=>coreSection.append(card));
-   compactDeck(coreSection,coreCards,"Core");
-  if(!core.length)coreSection.append(paragraph("Ôn tập và hệ thống lại phương pháp trước khi thực hành."));
-  section.append(coreSection);
-  const practiceSection=mk("div","g11-supp-learning-stage");
-  practiceSection.append(mk("h3","","2. Luyện tập và vận dụng"));
-  const practiceCards=practiceItems.map((q,i)=>exerciseCard(q,"formative",i+1));
-   practiceCards.forEach(card=>practiceSection.append(card));
-   compactDeck(practiceSection,practiceCards,"Luyện tập và vận dụng");
-  section.append(practiceSection);
-  if(written.length){
-   const writtenSection=mk("div","g11-supp-learning-stage");
-   writtenSection.append(mk("h3","","3. Tự luận · Trình bày lời giải"));
-   writtenSection.append(paragraph("Viết cách làm của em trước khi nhấn Nộp. Bài tự luận được tự đối chiếu, không tự chấm điểm."));
-   const writtenCards=written.map((q,i)=>exerciseCard(q,"written",i+1));
-    writtenCards.forEach(card=>writtenSection.append(card));
-    compactDeck(writtenSection,writtenCards,"Tự luận");
-   section.append(writtenSection);
-  }
+  // Render author-approved PED, figures, worked examples and first-try here.
+  // Original public formative and Written now live in the Golden practice hub.
+  const practiceUrl=topic==="E01"||topic==="E02"?
+    "../luyen-tap-trai-nghiem/":"../luyen-tap-on-tap-cuoi-nam/";
+  const go=mk("a","g11-supp-next","Mở Core, Luyện tập, Vận dụng và Tự luận →");
+  go.href=practiceUrl+"#g11-supp-group-"+topic.toLowerCase();
+  section.append(go);
   helpBlocks(section,bank,topic);
-  const next=mk("a","g11-supp-next","Học tiếp hoặc chuyển sang tự kiểm tra");
-  next.href=view==="YEAR"?"#g11-supp-"+(bank.year[bank.year.findIndex(t=>t.id===topic)+1]?.id||"end").toLowerCase():topic==="E01"?"../trai-nghiem-e02/":"../on-tap-cuoi-nam/";
+  const next=mk("a","g11-supp-next",view==="YEAR"?
+    "Sang chủ điểm tiếp theo →":"Sang hoạt động tiếp theo →");
+  next.href=view==="YEAR"?"#g11-supp-"+(bank.year[bank.year.findIndex(t=>t.id===topic)+1]?.id||"end").toLowerCase():
+    topic==="E01"?"../trai-nghiem-e02/":"../tu-kiem-tra-trai-nghiem/";
   if(view==="YEAR"&&topic===bank.year[bank.year.length-1]?.id)next.href="../tu-kiem-tra/";
   section.append(next);
   root.append(section);
@@ -319,22 +304,25 @@ const practice=(root,bank,kind)=>{
  }
  typeset(root);
 };
-const selfCheck=(root,bank)=>{
+const selfCheck=(root,bank,unit)=>{
  miniNav(root);
  const picked=[];const seen=new Set();
+ const isExp=unit==="EXPERIENCE";
  for(const q of bank.items){
   if(q.role==="SGK_CORE"||seen.has(q.outcome_id))continue;
+  if((groupOf(q)==="E01"||groupOf(q)==="E02")!==isExp)continue;
   seen.add(q.outcome_id);picked.push(q);
  }
- if(picked.length!==22){root.append(paragraph("Chưa đủ ma trận 22 outcomes để mở tự đối chiếu."));return}
- header(root,"TOÁN 11 · BÀI TẬP ÔN TẬP CUỐI NĂM","Tự kiểm tra và đối chiếu cuối năm");
- root.append(paragraph("Em đã gặp 22 câu hỏi này trong phần học và luyện tập. Hãy tự làm, sau đó nhấn Final Submit để xem lời giải và tự đối chiếu. Đây là hoạt động tự ôn, không tính điểm và không phải bài đánh giá năng lực độc lập."));
+ if(picked.length!==11){root.append(paragraph("Chưa đủ 11 outcome của phần này để tự đối chiếu."));return}
+ header(root,isExp?"TOÁN 11 · HOẠT ĐỘNG THỰC HÀNH":"TOÁN 11 · BÀI TẬP ÔN TẬP CUỐI NĂM",
+   isExp?"Tự kiểm tra Trải nghiệm":"Tự kiểm tra và đối chiếu cuối năm");
+ root.append(paragraph("Tự giải 11 câu của đúng phần học, sau đó nhấn Final Submit để đối chiếu lời giải. Đây là tự ôn công khai, không chấm điểm hoặc ghi Mastery."));
  const form=mk("div","g11-supp-selfcheck");
  const answers=[];
  for(const [i,q]of picked.entries()){
   const section=mk("section","g11-supp-exercise");
   section.dataset.canonicalItem=q.item_id;
-  section.append(mk("h3","","Câu "+(i+1)+" / 22"),paragraph(q.stem));
+  section.append(mk("h3","","Câu "+(i+1)+" / 11"),paragraph(q.stem));
   const textarea=mk("textarea","g11-supp-answer");
   textarea.rows=3;textarea.setAttribute("aria-label","Trả lời câu "+(i+1));
   const answer=mk("div","g11-supp-solution");answer.hidden=true;
@@ -352,7 +340,7 @@ const selfCheck=(root,bank)=>{
   status.textContent="Đã nộp. Hãy đối chiếu từng bước giải; kết quả không được chấm điểm hoặc lưu lại.";
   typeset(form);
  });
- compactDeck(form,[...form.querySelectorAll(":scope > .g11-supp-exercise")],"Tự kiểm tra cuối năm");
+ compactDeck(form,[...form.querySelectorAll(":scope > .g11-supp-exercise")],isExp?"Tự kiểm tra Trải nghiệm":"Tự kiểm tra cuối năm");
   root.append(form,button,status);typeset(root);
 };
 const start=async()=>{
@@ -366,11 +354,14 @@ const start=async()=>{
   if(bank.packet_id!=="G11-SGK-SUPPLEMENT-P99-P109-R00"
     ||bank.items.length!==52||bank.written.length!==16||bank.help.length!==23
     ||bank.figures.length!==8||bank.examples.length!==28)throw Error("Snapshot mismatch");
-  root.dataset.g11SuppBound="true";
+  root.replaceChildren();root.dataset.g11SuppBound="true";
   if(view==="E01"||view==="E02"||view==="YEAR")course(root,bank,view);
+  else if(view==="EXP_PRACTICE")practiceHub(root,bank,"EXPERIENCE");
+  else if(view==="YEAR_PRACTICE")practiceHub(root,bank,"YEAR");
   else if(view==="PRACTICE")practice(root,bank,"formative");
   else if(view==="WRITTEN")practice(root,bank,"written");
-  else if(view==="SELFCHECK")selfCheck(root,bank);
+  else if(view==="SELFCHECK_EXP")selfCheck(root,bank,"EXPERIENCE");
+  else if(view==="SELFCHECK")selfCheck(root,bank,"YEAR");
   else throw Error("Unknown learner page");
   const hash=decodeURIComponent(location.hash.slice(1));
   if(hash){const target=document.getElementById(hash);if(target)requestAnimationFrame(()=>target.scrollIntoView({block:"start"}))}
