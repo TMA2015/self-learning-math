@@ -208,3 +208,13 @@ Không tuyên bố `COVERAGE_PASS`, không xác nhận Topic `CONTENT_READY`, kh
 - **Đóng dứt điểm khâu kiểm toán bounded source/outcome B07–B08:** không lập audit file R19, không tiếp tục vòng kiểm toán cùng bằng chứng. Chỉ mở DELTA_C để bổ sung **một ví dụ sư phạm D2/PED5** (không thêm Written) sau **phê duyệt chủ dự án**, kiểm độc lập NotebookLM đúng 5 Permanent Sources v2.1. Hiện \`CONTENT_DELTA=0\`, \`RELEASE=NO\`, \`MERGE_DEPLOY=NO\`.
 
 CLOSEOUT_STAGE_STATUS: B07_B08_SOURCE_METHOD_TRANSFER_AUDIT_COMPLETE;FORMAL_EXAM_VERDICT_NOT_ISSUED;SCHOOL_PDF_BYTES_SHA_HOLD;D4_238_IMMUTABLE;NO_ACTION_CROSS_LANE
+
+## COMPLETED METHOD_DISCOVERY — Trần Phú G10 ChVII, 6 bài conic (06/11/2026)
+
+**[Đã đóng khâu phân loại cả sáu bài luyện conic của giáo viên](G10_TRAN_PHU_HKII_2026_CONIC_SIX_TASK_METHOD_DECISION.md)** từ PDF 16 trang do THPT Trần Phú – Hoàn Kiếm công bố (07/04/2026), bài trắc nghiệm trả lời ngắn C1–C6 ở PDF P14–P15. **Không phải sáu ý tự luận của đề thi thật**; đây là tài liệu ôn tập và đã được chấp nhận để tìm dạng bài.
+
+- **2 ứng viên tăng chiều sâu ưu tiên cao:** C4 mái nhà vòm nửa **elip** (đổi kích thước thực→phương trình→chiều cao); C5 điều hướng Loran **hypebol** (độ chênh thời gian→hiệu quãng đường→nhánh/điểm cập bờ); riêng đáp án cuối C5 **DIAGRAM_HOLD**. **2 ứng viên vừa:** C1 khoảng cách tối thiểu tới miền phủ sóng, C6 cổng parabol dùng dữ kiện chân cổng/một điểm để xác định đỉnh. C6 đã đối chiếu riêng **ChVI B16**: mô hình parabol mở xuống, miền thực, hai nghiệm và cực đại **đã có**, không mở GAP giả.
+- **2 dạng không cần bài mới:** C2 tỉ lệ bán kính hình tròn sơ cấp; C3 viết tiếp tuyến tại điểm trên đường tròn — exact method đã có `THPT-G10-B21-P02` và `THPT-G10-CHVII-W21-ANCHOR-01`. Năm lời giải số được QA độc lập: C1≈0,16 km; C2=90 cm; C3=−229; C4≈7,45 m; C6≈185,6 m; C5 chỉ chốt a=93,b²=13851.
+- **Đối chiếu canonical thực:** G10 ChVII R02 blob `c5c222af88b0e932f9b60df059d8ffd4da5f0f26`; 32/32 formative blob `2b191d7abba7a4f5bd79d4c122673cd53a45495b`; 4/4 Written blob `ebc70018a168998c7dd43b34c3e195a2b1e15ed7`; G10 ChVI B16 blob `3f3d32c3bfd13634dad033970e944a3623cb5f14`. Tất cả chỉ đọc; **238 D4 immutable**.
+- **Lỗi dữ liệu của nguồn luyện chỉ mới là candidate**: P8 Statistics C6 nói 9 ngày nhưng text liệt kê 10 quan sát, cần PDF image để phân biệt in sai/OCR. `PDF_BYTES_VISUAL_HOLD` vẫn giữ; không dùng để chặn method research các câu khác.
+- **Chốt hành động:** chưa thêm Written; đối chiếu S1/B22 D1–D4 và độ sâu C4/C5 trước quyết định owner. Không kéo dài chỉ để truy tìm PDF đề thi thật/CI; không mở RELEASE hay chấm lại gói đã PASS.
