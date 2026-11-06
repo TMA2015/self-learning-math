@@ -304,6 +304,74 @@ const practice=(root,bank,kind)=>{
  }
  typeset(root);
 };
+/* Existing G11 Golden R4 2-column lesson/card/button UI with one-question
+ * numbered deck per PUBLIC original role. Multiple placements, no new IDs. */
+const practiceHub=(root,bank,unit)=>{
+ miniNav(root);
+ const experience=unit==="EXPERIENCE";
+ const topics=experience?["E01","E02"]:bank.year.map(x=>x.id);
+ header(root,experience?"SGK TRANG 99–104 · HOẠT ĐỘNG THỰC HÀNH":"SGK TRANG 105–109 · ÔN TẬP CUỐI NĂM",
+   experience?"Core, Luyện tập, Vận dụng và Tự luận · Hai hoạt động":"Core, Luyện tập, Vận dụng và Tự luận · Mười chủ điểm");
+ root.append(paragraph("Chọn thẻ đúng vai trò rồi bấm nút số câu trên một hàng. Tự làm và nộp từng câu mới xem đối chiếu; tự luận dùng rubric /4. Các nhóm Vận dụng chỉ xuất hiện khi có câu gốc, không tự tạo thêm bài. Không ghi điểm hoặc Skill Mastery."));
+ const panels=[];
+ for(const [i,topic]of topics.entries()){
+  const title=topicName[topic]||topic;
+  const section=mk("section","thpt-r4-practice-lesson g11-supp-golden-lesson");
+  section.id="g11-supp-group-"+topic.toLowerCase();
+  section.dataset.thptGrade="11";
+  const head=mk("div","thpt-r4-practice-lesson-header"),info=mk("div");
+  info.append(mk("p","thpt-r4-practice-class",experience?"Lớp 11 · Hoạt động thực hành":"Lớp 11 · Ôn tập cuối năm"),
+    mk("h2","",title));
+  head.append(mk("span","thpt-r4-lesson-number",String(i+1).padStart(2,"0")),info);
+  const grid=mk("div","thpt-r4-practice-card-grid");
+  section.append(head,grid);
+  const definitions=[
+   ["SGK_CORE","Core",topicFor(topic,bank).filter(q=>q.role==="SGK_CORE"),"formative"],
+   ["SGK_PRACTICE","Luyện tập",topicFor(topic,bank).filter(q=>q.role==="SGK_PRACTICE"),"formative"],
+   ["SGK_APPLICATION","Vận dụng",topicFor(topic,bank).filter(q=>q.role==="SGK_APPLICATION"),"formative"],
+   ["SGK_WRITTEN","Tự luận",bank.written.filter(q=>groupOf(q)===topic),"written"]
+  ];
+  for(const [role,label,items,itemKind]of definitions){
+   if(!items.length)continue;
+   const card=mk("section","thpt-r4-practice-card");card.dataset.thptGrade="11";
+   const copy=mk("div");
+   copy.append(mk("p","thpt-r4-practice-card-kind",label),
+    mk("strong","",title+" · "+label),
+    mk("small","",items.length+" câu · "+(role==="SGK_WRITTEN"?"Rubric /4":"Một câu mỗi lần")+" · Tự đối chiếu"));
+   const button=mk("button","thpt-r4-practice-open","✎ Mở "+label);
+   button.type="button";button.dataset.g11SuppOpen=topic+"-"+role;
+   button.setAttribute("aria-expanded","false");
+   card.append(copy,button);grid.append(card);
+   const panel=mk("div","g11-supp-role-panel");panel.hidden=true;
+   panel.dataset.g11SuppTopic=topic;panel.dataset.g11SuppRole=role;
+   const questions=items.map((q,n)=>exerciseCard(q,itemKind,n+1));
+   questions.forEach(q=>panel.append(q));
+   compactDeck(panel,questions,label);
+   panels.push({panel,button,section,questions});
+   button.addEventListener("click",()=>{
+    const already=!panel.hidden;
+    for(const entry of panels){
+     entry.panel.hidden=true;entry.button.setAttribute("aria-expanded","false");
+    }
+    if(!already){
+     panel.hidden=false;button.setAttribute("aria-expanded","true");
+     panel.scrollIntoView({block:"nearest"});
+    }
+   });
+   section.append(panel);
+  }
+  const back=mk("a","g11-supp-return",experience?"Về kiến thức hoạt động này":"Về kiến thức chủ điểm này");
+  back.href=experience?(topic==="E01"?"../trai-nghiem-e01/":"../trai-nghiem-e02/"):
+    "../on-tap-cuoi-nam/#g11-supp-"+topic.toLowerCase();
+  section.append(back);root.append(section);
+ }
+ const hash=decodeURIComponent(location.hash.replace(/^#/,""));
+ if(hash){
+  const match=panels.find(p=>p.questions.some(q=>q.id===hash));
+  if(match){match.panel.hidden=false;match.button.setAttribute("aria-expanded","true")}
+ }
+ typeset(root);
+};
 const selfCheck=(root,bank,unit)=>{
  miniNav(root);
  const picked=[];const seen=new Set();
