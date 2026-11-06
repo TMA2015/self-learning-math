@@ -147,5 +147,5 @@ cần kiểm chứng f′′ và n hoặc phương án bound khác; số chữ s
 
 ## 8. Bắt đầu luyện tập
 
-- [Mở Core, Luyện tập, Vận dụng và Tự luận của Hoạt động 1](../luyen-tap-trai-nghiem/#exp01-core)
-- [Tự kiểm tra sau khi học cả hai hoạt động](../tu-kiem-tra-trai-nghiem/)
+- <a href="../luyen-tap-trai-nghiem/#exp01-core">Mở Core, Luyện tập, Vận dụng và Tự luận của Hoạt động 1</a>
+- <a href="../tu-kiem-tra-trai-nghiem/">Tự kiểm tra sau khi học cả hai hoạt động</a>
