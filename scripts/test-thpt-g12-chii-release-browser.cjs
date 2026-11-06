@@ -36,6 +36,31 @@ const {verifyG12GoldenHub}=require("./test-thpt-g12-golden-modal-helper.cjs");
      assert.equal(await img.count(),1,"Original source SVG B0"+n);
      await img.first().scrollIntoViewIfNeeded();
      await page.waitForFunction(()=>{const x=document.querySelector(".g12-chi-figure img");return x&&x.complete&&x.naturalWidth>0;},null,{timeout:15000});
+     // Owner 06/11 screenshot regression: D5 must follow its explanation
+     // before D6 table, source artifact IDs cannot replace student labels.
+     const presentation=await page.evaluate(()=>{
+      const article=document.querySelector(".md-content__inner");
+      const figure=article?.querySelector("figure.g12-chi-figure");
+      const table=[...(article?.querySelectorAll("table")||[])].find(t=>t.textContent.includes("Triệu chứng sai"));
+      return {hasFigure:!!figure,hasTable:!!table,
+       figureBeforeHelpTable:!!(figure&&table&&(figure.compareDocumentPosition(table)&Node.DOCUMENT_POSITION_FOLLOWING)),
+       learnerHeader:table?.querySelector("th")?.textContent.trim()};
+     });
+     assert(presentation.hasFigure&&presentation.hasTable&&presentation.figureBeforeHelpTable,"B0"+n+" figure must be shown before technical D6 table");
+     assert.equal(presentation.learnerHeader,"Ý","B0"+n+" must hide raw OUTCOME_ID metadata");
+     if(n===7||n===8){
+      const subtitles=await page.locator(".md-content__inner h3").allTextContents();
+      assert(subtitles.some(x=>x.startsWith("3.1.")),"B0"+n+" subsection numbering must follow section 3");
+      assert(!subtitles.some(x=>/^2\.[1-5]\./.test(x)),"B0"+n+" must not show contradictory 2.x labels");
+     }
+     if(n===8){
+      const t=await page.locator(".md-content__inner").innerText();
+      assert(!t.includes("$$"),"B08 raw $$ between TeX blocks is a rendering defect");
+      // All original formulas remain source-matched; three separate display
+      // blocks replace adjacent $ and overloaded \\quad math syntax.
+      const displayMath=await page.locator(".md-content__inner .arithmatex").count();
+      assert(displayMath>=3,"B08 original vector identities must remain typeset");
+     }
     }
     await open("chuong-ii/luyen-tap/");
     await verifyG12GoldenHub(page,{chapter:"II",selector:"[data-g12-chii-hub]",lessons:3,groups:6,items:64,helps:16});
