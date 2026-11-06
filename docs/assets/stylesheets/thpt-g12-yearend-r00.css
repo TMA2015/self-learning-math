@@ -15,3 +15,13 @@
 /* Use the same horizontal numbered question strip as G11 Golden end-units. */
 .g12-ye-dialog .g12-xp-jump{flex-wrap:nowrap;overflow-x:auto;max-width:100%;scrollbar-width:thin}
 .g12-ye-dialog .g12-xp-jump-button{flex:0 0 auto}
+
+
+/* Original MCQ options: 16px minimum in the native Golden modal. */
+.g12-ye-dialog .g12-ye-options,.g12-ye-dialog .g12-ye-option,
+.g12-ye-dialog .g12-ye-option>span{font-family:inherit;font-size:16px;line-height:1.65}
+.g12-ye-dialog .g12-ye-option{min-height:48px;align-items:center}
+.g12-ye-dialog .g12-ye-option input{margin-top:0;min-width:18px;min-height:18px}
+.g12-ye-dialog .g12-xp-question-stem .arithmatex,
+.g12-ye-dialog .g12-ye-option .arithmatex{font-size:inherit}
+@media(max-width:590px){.g12-ye-dialog .g12-ye-option{padding:11px 12px}}
