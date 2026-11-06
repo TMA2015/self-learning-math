@@ -57,3 +57,17 @@ Các ánh xạ `câu đề thực có mã → method/outcome → item_id` và tr
 ## Next auditable action
 
 Lấy PDF gốc thực tế của các trường từ bộ nguồn này, mở toàn đề, tạo chỉ số `(EXAM_SOURCE_ID, QUESTION_REF, PROBLEM_TYPE_ID, OUTCOME_ID, METHOD_TAGS, COMPLEXITY_REASON)`, **rồi mới** so 238 item canonical và gắn coverage/Topic candidate. Không tự nhận đã hoàn thành phân tích khi mới tìm thấy link.
+
+## 06/11/2026 — PDF visual + hash verified: four Hanoi graduation mock copies (R03)
+
+**Private Drive policy:** The source PDF files were retrieved through the owner's connected private Google Drive. Only document identity, source-description, PDF page count and **SHA-256** are recorded here. **No Google Drive private file IDs, download links, exam PDF bytes, answer keys or images are committed.** These copies are third-party mirrors and may include watermarks, so verification of the school/Sở as original publisher is **PENDING**.
+
+| EXAM_SOURCE_ID | 2026 test class | Pages / Part III locator | SHA-256 (PDF bytes opened & rendered) | Evidence classification |
+|---|---|---|---|---|
+| `HN-DOE-2026-MOCK-L1` | Sở GD&ĐT Hà Nội, thi thử tốt nghiệp lần 1 | 18; Q1–4 at PDF p4, Q5–6 p5 | `1e7fde330bbd5e3dca6a61a6be3088752c73b7c2ae9f7e74eea328fdf82dfc40` | `PDF_BYTES_HASH_VISUAL_VERIFIED_ORIGINAL_ISSUER_PENDING` |
+| `HN-NGT-2026-MOCK` | THPT Nguyễn Gia Thiều, thi thử tốt nghiệp | 19; Q1–5 p4, Q5 continued/Q6 p5 | `aafb8d8931ed4fce3ffe22aa107846634e63e80cdeb498044d063cf78a7a6085` | `PDF_BYTES_HASH_VISUAL_VERIFIED_ORIGINAL_ISSUER_PENDING` |
+| `HN-CL-2026-MOCK` | THPT Cổ Loa, thi thử tốt nghiệp | 15; Q1–2 p3, Q3–6 p4 | `a73fd8323e351f29d18d49ff1a04d0f8edf67fe974dd3f5353b85f14ae39084f` | `PDF_BYTES_HASH_VISUAL_VERIFIED_ORIGINAL_ISSUER_PENDING` |
+| `HN-TL-2026-MOCK` | Cụm THPT Bắc–Nam Từ Liêm, thi thử tốt nghiệp | 14; Q1–6 PDF p4 | `639e3346d193487c62bea13b3d3caa56bb4bd4293f24a16153a603ee740a7648` | `PDF_BYTES_HASH_VISUAL_VERIFIED_ORIGINAL_ISSUER_PENDING` |
+
+The 24 **Part III** question positions, math figures/formulas and locally rendered pages were checked directly. They are *short-answer graduation-mock questions*, **not** official Bộ graduation papers or school semester tests and not additional Written canonical items. No formal `COVERED/PARTIAL_COVERAGE/COVERAGE_GAP` classification has yet been granted. See [24Q method matrix](DRIVE_HANOI_2026_MOCK_PDF_VISUAL_24Q_R03.md).
+
