@@ -145,5 +145,5 @@ ghép với −v, giải thích sự đảo bề ngang.
 
 ## 8. Bắt đầu luyện tập
 
-- [Mở Core, Luyện tập, Vận dụng và Tự luận của Hoạt động 2](../luyen-tap-trai-nghiem/#exp02-core)
-- [Tự kiểm tra sau khi học cả hai hoạt động](../tu-kiem-tra-trai-nghiem/)
+- <a href="../luyen-tap-trai-nghiem/#exp02-core">Mở Core, Luyện tập, Vận dụng và Tự luận của Hoạt động 2</a>
+- <a href="../tu-kiem-tra-trai-nghiem/">Tự kiểm tra sau khi học cả hai hoạt động</a>
