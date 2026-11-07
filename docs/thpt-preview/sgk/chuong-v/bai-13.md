@@ -26,7 +26,7 @@ Em hãy đọc tình huống, nhớ lại kiến thức cũ và tự trả lời
 
 **Giải thích vì sao:** Có bốn quan sát, tổng 20. Chia đều tổng cho bốn lần ghi cho 5; không bỏ giá trị 10 chỉ vì cao.
 
-**Nếu chưa làm được:** Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó [thử câu cùng kiến thức trong Core/Luyện tập](../luyen-tap/?item=THPT-G10-B13-C01).
+**Nếu chưa làm được:** Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó [thử câu cùng kiến thức trong Core/Luyện tập](luyen-tap.md?item=THPT-G10-B13-C01).
 
 </details>
 
@@ -50,7 +50,7 @@ Em hãy đọc tình huống, nhớ lại kiến thức cũ và tự trả lời
 
 **Giải thích vì sao:** Với bốn giá trị, hai phần tử ở giữa là 5 và 9 sau sắp xếp. Không lấy 2 và 9 theo thứ tự ghi ban đầu.
 
-**Nếu chưa làm được:** Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó [thử câu cùng kiến thức trong Core/Luyện tập](../luyen-tap/?item=THPT-G10-B13-C02).
+**Nếu chưa làm được:** Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó [thử câu cùng kiến thức trong Core/Luyện tập](luyen-tap.md?item=THPT-G10-B13-C02).
 
 </details>
 
@@ -74,7 +74,7 @@ Em hãy đọc tình huống, nhớ lại kiến thức cũ và tự trả lời
 
 **Giải thích vì sao:** Có bảy phần tử, bỏ chính 4 khi tìm Q1/Q3. Không lấy trung bình các vị trí 3 và 4 hay đưa 4 vào hai nửa.
 
-**Nếu chưa làm được:** Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó [thử câu cùng kiến thức trong Core/Luyện tập](../luyen-tap/?item=THPT-G10-B13-P02).
+**Nếu chưa làm được:** Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó [thử câu cùng kiến thức trong Core/Luyện tập](luyen-tap.md?item=THPT-G10-B13-P02).
 
 </details>
 
@@ -98,7 +98,7 @@ Em hãy đọc tình huống, nhớ lại kiến thức cũ và tự trả lời
 
 **Giải thích vì sao:** Cùng tần số cao nhất 2 nên cả hai đều là mốt; 3 lớn hơn 2 không làm nó 'mốt hơn'.
 
-**Nếu chưa làm được:** Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó [thử câu cùng kiến thức trong Core/Luyện tập](../luyen-tap/?item=THPT-G10-B13-P03).
+**Nếu chưa làm được:** Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó [thử câu cùng kiến thức trong Core/Luyện tập](luyen-tap.md?item=THPT-G10-B13-P03).
 
 </details>
 
@@ -122,7 +122,7 @@ Em hãy đọc tình huống, nhớ lại kiến thức cũ và tự trả lời
 
 **Giải thích vì sao:** Vị trí giữa không đổi nếu 28 còn lớn nhất, còn tổng và trung bình tăng khi cực trị tăng.
 
-**Nếu chưa làm được:** Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó [thử câu cùng kiến thức trong Core/Luyện tập](../luyen-tap/?item=THPT-G10-B13-P06).
+**Nếu chưa làm được:** Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó [thử câu cùng kiến thức trong Core/Luyện tập](luyen-tap.md?item=THPT-G10-B13-P06).
 
 </details>
 
