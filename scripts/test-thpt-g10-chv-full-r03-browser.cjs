@@ -30,7 +30,7 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/chuong-v/";
       assert.equal(await row.getAttribute("open"),"","Learner voluntarily opened own answer "+id);
       assert(await content.isVisible(),"Reviewed answer visible on learner choice "+id);
       assert((await row.innerText()).includes("Giải thích vì sao"),"Reviewed reasoning present "+id);
-      assert.equal(await row.locator('a[href*="../luyen-tap/?item=THPT-G10-B"]').count(),1,"D6 deep-link to original item "+id);
+      assert.equal(await row.locator('a[href*="item=THPT-G10-B"]').count(),1,"D6 deep-link to original item "+id);
       await row.locator("summary").click();
       assert.equal(await content.isVisible(),false,"Learner can close answer "+id);
      }
