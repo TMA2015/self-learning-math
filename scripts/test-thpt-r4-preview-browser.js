@@ -616,7 +616,7 @@ async function ready(page,path){
   const chapterReady=page.locator('[data-g10-chapter-selfcheck="CHVI"]');
   assert.equal(await chapterReady.count(),1,"Missing reviewed G10 chapter VI self-check route");
   await chapterReady.locator(".g10sc-progress").waitFor();
-  assert((await chapterReady.locator(".g10sc-progress").innerText()).includes("1 / 18"),"ChVI must show original reviewed 18 candidates");
+  assert((await chapterReady.locator(".g10sc-progress").innerText()).includes("1 / 20"),"ChVI must show original 18 source-locked candidates plus 2 independently reviewed R04 public Written");
   assert(!((await chapterReady.innerText()).includes("Đáp án:")),"ChVI pre-submit answer leak");
   await chapterReady.locator(".g10sc-textarea").fill("Tự giải trước khi xem đáp án");
   await chapterReady.locator(".g10sc-controls button").filter({hasText:"Câu tiếp"}).click();
