@@ -37,6 +37,7 @@ for(const {n,start,expectedOriginalFNV} of lessons){
  });
  assert(!/(?:PED1|PED2|PED3|PED4|PED5|PED6) ·/.test(before),"Authoring labels exposed to student");
  assert(!/REVIEW_RECEIPT|NOTEBOOKLM_PENDING|CONTENT_READY:/i.test(before),"Review/internal metadata leaked");
+ assert(!/\bR0[1-9]\b|HELP-G10-B0\d-\d\d|Hình hình/u.test(before),"Internal author labels or typo exposed to learner "+p);
  assert(txt.includes('href="../luyen-tap/"')&&txt.includes('href="../tu-kiem-tra-chuong/"'),"Original learner routes missing");
  assert.equal((after.match(/data-thpt-help-id="/g)||[]).length,2,"Original D6 must be unchanged");
  assert(after.includes("## 2. Ví dụ")&&after.includes("## 3. Hình minh họa"),"Academic D2/D5 not present");
