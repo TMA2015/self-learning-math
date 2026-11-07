@@ -178,14 +178,14 @@ u là đa thức liên tục trên [1,2], u(1)=−1 và u(2)=2 nên có ít nh�
 | P-M5-04 | Dấu ở vô cực | \(\lim_{x\to-\infty}\sqrt{x^2+16}/x=-1\) | REUSE_FAMILY, giống B16-P04 |
 | P-M5-05 | Liên tục ghép nhánh | \(f=x+2\) nếu x<1, \(f=mx+1\) nếu x≥1; m=2 để liên tục | REUSE_FAMILY, giống B17-P02 |
 | P-M5-06 | Điều kiện định lí | Với \(p(x)=x^3+2x-4\), nêu căn cứ tồn tại nghiệm trong (1,2) | REUSE_FAMILY, giống B17-P03/P07 |
-| P-M5-07 | Lỗ, nhảy và giá trị | Ba trường hợp: \(g(x)=x+2\) cho x≠2, g(2) bị bỏ / bằng 4 / bằng 7. Phân loại giới hạn và liên tục. | CANDIDATE_TRANSFER, cần rà whole bank |
+| P-M5-07 | Lỗ, nhảy và giá trị | Ba trường hợp: \(g(x)=x+2\) cho x≠2, g(2) bị bỏ / bằng 4 / bằng 7. Phân loại giới hạn và liên tục. | REUSE_COMPOSITE, B17-C01/C02 đã dạy cùng kỹ năng |
 | P-M5-08 | Dữ liệu từng đoạn | Cước xe \(C(t)=10\) cho \(0<t\le1\), \(20\) cho t>1; phân biệt C(1) với hai giới hạn một phía. | REUSE_FAMILY, SGK EX-G11-B16-05 |
 | P-M5-09 | Vi phạm giả thiết | Hàm bước \(-1\) nếu x<0, \(1\) nếu x≥0 có hai đầu khác dấu, có nghiệm không? | CANDIDATE_TRANSFER, không nhầm với bài áp dụng định lí |
 | P-M5-10 | Lý giải tiệm cận | \(E(t)=80t/(t+4)\), t≥0; giải thích \(\lim_{t\to\infty}E(t)=80\) nhưng không bằng 80 tại t hữu hạn. | REUSE_FAMILY, tương tự B16-P07 |
 | P-M5-11 | Giao miền + liên tục | Xét \(g(x)=\sqrt{x+2}/(x-1)\), xác định các khoảng liên tục. | CANDIDATE_TRANSFER, cần rà bank |
 | P-M5-12 | Đầu mút | \(h(x)=\sqrt{4-x^2}\) liên tục trên đoạn nào? → \([-2,2]\) | REUSE_FAMILY, giống B17-P05 |
 
-### D3 có giải từng bước và D6 rõ cho ba ứng viên chuyển giao
+### D3 có giải từng bước và D6 rõ cho hai ứng viên mới, một bài tổng hợp nguồn cũ
 
 **P-M5-07 — Ba đồ thị giống nhau gần điểm nhưng khác chính tại điểm.** Cho quy tắc \(g(x)=x+2\) với x≠2; xét ba phiên bản: A không định nghĩa tại 2, B định nghĩa \(g(2)=4\), C định nghĩa \(g(2)=7\). Cả ba đều có **giới hạn gần 2 bằng 4** vì mọi x khác 2 nhưng gần 2 có g(x)=x+2. A gián đoạn vì thiếu giá trị tại điểm; B liên tục do \(4=g(2)\); C gián đoạn vì \(7\ne4\). **Vì sao phương pháp này phù hợp?** Ta tách phần “xu thế” khỏi “giá trị ở điểm” và so đủ ba điều kiện. **D6:** nếu cho A “liên tục” chỉ vì đường thẳng mượt, hãy vẽ vòng tròn rỗng; nếu cho C liên tục, hãy so giá trị chấm đặc với vòng rỗng.
 
@@ -193,7 +193,7 @@ u là đa thức liên tục trên [1,2], u(1)=−1 và u(2)=2 nên có ít nh�
 
 **P-M5-11 — Chọn miền trước, kết luận liên tục sau.** \(h(x)=\sqrt{x+2}/(x-1)\) có điều kiện căn \(x+2\ge0\Rightarrow x\ge-2\) và mẫu \(x\ne1\). Vậy \(D=[-2,1)\cup(1,+\infty)\). Hàm liên tục trên từng khoảng mở \((-2,1)\), \((1,+\infty)\), và **liên tục phải** tại đầu mút −2 của miền nếu hiểu là liên tục trên nhánh \([-2,1)\): khi x→−2⁺, \(\sqrt{x+2}/(x-1)\to0=h(-2)\). Hàm không xác định tại 1; không thể tuyên bố liên tục trên toàn \([-2,+\infty)\). **D6:** nếu loại −2 vì căn bằng 0, nhớ **căn nhận 0**; nếu quên loại 1, nhắc điều kiện mẫu khác 0; nếu kết luận liên tục trên cả hai nhánh “một khoảng”, vẽ điểm loại ở 1.
 
-**Q15 disposition:** chỉ ba bài P-M5-07/09/11 là NEW_CANDIDATE (chưa canonical/promoted), chín bài còn lại là MICRO/REUSE/HOLD. Khi đăng ký nguồn cần rà trùng cả ngân hàng các lớp khác, không coi 12 labels là 12 item.
+**Q15 disposition:** chỉ P-M5-09 và P-M5-11 là NEW_CANDIDATE (chưa canonical/promoted). P-M5-07 là tổng hợp hai trạng thái liên tục/gián đoạn vốn có trong B17-C01/C02 nên **không cấp item riêng**; mười bài còn lại là MICRO/REUSE/HOLD. Khi đăng ký nguồn cần rà trùng toàn ngân hàng, không coi 12 labels là 12 item.
 
 ## M5.9. Written/Anchor và tuyến tự chữa (D4/D6)
 
