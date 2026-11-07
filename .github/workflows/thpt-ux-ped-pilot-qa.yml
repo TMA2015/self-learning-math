@@ -1,0 +1,37 @@
+name: THPT UX-PED research pilot QA (no deploy)
+
+on:
+  pull_request:
+    paths:
+      - 'prototypes/thpt/ux-ped/**'
+      - 'scripts/test-thpt-g12-b01-ux-pilot.cjs'
+      - 'scripts/test-thpt-g12-b01-ux-pilot-browser.py'
+      - '.github/workflows/thpt-ux-ped-pilot-qa.yml'
+      - 'docs/thpt-preview/sgk/lop-12/chuong-i/bai-1.md'
+      - 'docs/assets/images/thpt/G12_B01_FIG01_DERIVATIVE_SIGN_R00.svg'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-and-browser:
+    name: Locked source and A/B visual pilot (no deploy)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Canonical lesson and figure SHA, HTML syntax, no network/persistence
+        run: node scripts/test-thpt-g12-b01-ux-pilot.cjs
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install isolated browser QA runtime
+        run: |
+          python -m pip install playwright==1.56.0
+          python -m playwright install chromium --with-deps
+      # Browser snapshots stay inside the CI runner; repository policy forbids shared artifact uploads.
+      - name: Test offline A/B presentation at 390 / 820 / 1440
+        run: python scripts/test-thpt-g12-b01-ux-pilot-browser.py
