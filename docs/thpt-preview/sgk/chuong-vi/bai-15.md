@@ -221,9 +221,9 @@ Nếu hàm số không có cùng một chiều biến thiên trên toàn miền,
 3. Hàm \(q(x)=-3x+7\) đồng biến hay nghịch biến trên \(\mathbb{R}\)? Giải thích theo định nghĩa.
 
 <details><summary>Đáp án và lập luận (chỉ mở sau khi tự làm)</summary>
-<ol><li>\(5-2x\ge0\iff x\le\frac52\). Vậy \(D=(-\infty;\frac52]\).</li>
-<li>\(p(3)=9-4=5\), do đó \(A(3;5)\) thuộc đồ thị.</li>
-<li>Nếu \(x_1<x_2\) thì \(q(x_1)-q(x_2)=-3(x_1-x_2)>0\); hàm nghịch biến trên \(\mathbb{R}\).</li></ol>
+<ol><li><span class="arithmatex">\(5-2x\ge0\iff x\le\frac52\)</span>. Vậy <span class="arithmatex">\(D=(-\infty;\frac52]\)</span>.</li>
+<li><span class="arithmatex">\(p(3)=9-4=5\)</span>, do đó <span class="arithmatex">\(A(3;5)\)</span> thuộc đồ thị.</li>
+<li>Nếu <span class="arithmatex">\(x_1&lt;x_2\)</span> thì <span class="arithmatex">\(q(x_1)-q(x_2)=-3(x_1-x_2)&gt;0\)</span>; hàm nghịch biến trên <span class="arithmatex">\(\mathbb{R}\)</span>.</li></ol>
 </details>
 
 ## 5. Liên kết kiến thức
