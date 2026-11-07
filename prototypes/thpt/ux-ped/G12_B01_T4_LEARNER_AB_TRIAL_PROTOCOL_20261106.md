@@ -8,6 +8,13 @@
 - Chuẩn THPT đang hiệu lực trên `main`: **SLM-THPT-QUALITY-ONE v1.2.0**, Q01–Q18 (v1.1.0 trong metadata lịch sử #743 chỉ mô tả snapshot khi nghiên cứu bắt đầu). Không tạo Q19 hoặc chuẩn khác. Chủ dự án chưa phê duyệt merge/deploy prototype hay thay academic source.
 - Chỉ đo hiệu quả **hiển thị cùng nguyên liệu học thuật**; phần được khảo sát là hiểu dấu đạo hàm, điều kiện trên khoảng và nhận biết cực trị. Không mở câu hỏi chính thức, không ghi Firebase, Skill Mastery, RD1 hay tên học sinh.
 
+## Cách giao biến thể cho người học (không để nút đổi A/B)
+
+- Mở **file HTML pilot cục bộ** `G12_B01_PRESENTATION_AB_20261104.html` ở chế độ người học bằng địa chỉ `file:///.../G12_B01_PRESENTATION_AB_20261104.html?participant=A` hoặc `?participant=B`. Người hướng dẫn quyết định A/B trước, **không để học sinh tự chọn nhóm**.
+- Chế độ này ẩn nút chuyển A/B, ẩn nhãn reviewer và giữ nguyên một bản nội dung suốt lượt đọc; mặc định khi không có query vẫn là giao diện so sánh dành cho reviewer. Kiểm thử Playwright xác nhận nội dung A/B khớp chính xác với preview, SVG hiển thị và không tràn ngang trên 390/820/1440 px.
+- Đây là **khóa giao diện phục vụ thử nghiệm**, không phải cơ chế bảo mật chống học sinh biết sử dụng công cụ trình duyệt. Người hướng dẫn cần giám sát để không đổi URL/quay lại/mở bản còn lại; nếu có đổi biến thể thì đánh dấu `CROSSOVER_EXCLUDED` và không dùng kết quả để kết luận A/B.
+- Không gửi bản **protocol chứa rubric** hoặc tài liệu **T5 decision brief** cho người học trước khi hoàn thành phiếu. Chỉ giao phiếu `G12_B01_T4_LEARNER_WORKSHEET_20261107.md`, bản bài đọc đã phân và hướng dẫn thời lượng. Không thu tên/PII.
+
 ## 2. Đối tượng, phân nhóm và kiểm soát
 
 Đề nghị 4–8 người học Toán 12 (nếu có thể), chưa từng đọc riêng biến thể A/B. Nếu ít người hơn, chỉ có báo cáo quan sát thăm dò, tuyệt đối không tuyên bố hiệu quả thống kê. Dùng mã vô danh P01…; không ghi họ tên, lớp/trường, địa chỉ, account, IP, ảnh mặt hoặc dữ liệu cá nhân vào repo. Phân nhóm A/B ngẫu nhiên hoặc luân phiên cân bằng theo kiến thức tiền đề; **mỗi người chỉ xem MỘT biến thể** để tránh học trước làm nhiễu kết quả.
