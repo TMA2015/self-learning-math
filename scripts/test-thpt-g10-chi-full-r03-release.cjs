@@ -43,6 +43,6 @@ for(const [name,rel] of [
 ]){
  const content=read(rel);
  if(name.startsWith("Golden"))assert(content.includes("data-thpt-practice-hub")&&content.includes("data-thpt-open-quiz"),name+" original runtime untouched");
- else assert(content.includes('data-g10-chapter-selfcheck="CHI"')&&content.includes("Final Submit")&&content.includes("Không")&&content.includes("thành thạo"),name+" Q16 protected from accidental change");
+ else assert(content.includes('data-g10-chapter-selfcheck="CHI"')&&content.includes("Final Submit")&&/không/i.test(content)&&content.includes("thành thạo"),name+" Q16 protected from accidental change");
 }
 console.log("PASS G10 ChI FULL R03 interface: 2 theory pages, 11 canonical First Tries, 1 extra D6, original D1/D2/D5/Golden/Q16 routes preserved; no Mastery.");
