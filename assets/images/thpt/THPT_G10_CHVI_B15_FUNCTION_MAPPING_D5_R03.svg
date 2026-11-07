@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 340" role="img" aria-labelledby="chviB15Title chviB15Desc">
+<title id="chviB15Title">Bài 15: Một đầu vào ứng với đúng một đầu ra</title>
+<desc id="chviB15Desc">Bảng A hợp lệ: các cặp (1;7), (3;2), (3;2), x bằng 3 lặp nhưng luôn cho y bằng 2. Bảng B không hợp lệ: các cặp (1;7), (3;2), (3;4), cùng x bằng 3 cho hai y khác nhau.</desc>
+<rect width="960" height="340" rx="16" fill="#f7f9fc"/>
+<rect x="22" y="22" width="448" height="292" rx="12" fill="#e9f7f5" stroke="#267c73" stroke-width="2"/>
+<rect x="490" y="22" width="448" height="292" rx="12" fill="#fff1f1" stroke="#9c4b4b" stroke-width="2"/>
+<g font-family="Arial, sans-serif" fill="#152b40">
+<text x="42" y="60" font-size="24" font-weight="bold">A · HÀM SỐ</text>
+<text x="510" y="60" font-size="24" font-weight="bold">B · KHÔNG PHẢI HÀM SỐ</text>
+<text x="42" y="110" font-size="20">x = 1</text><text x="212" y="110" font-size="20">y = 7</text>
+<text x="42" y="165" font-size="20">x = 3</text><text x="212" y="165" font-size="20">y = 2</text>
+<text x="42" y="220" font-size="20">x = 3</text><text x="212" y="220" font-size="20">y = 2</text>
+<text x="42" y="275" font-size="17">Đầu vào lặp, đầu ra không đổi</text>
+<text x="510" y="110" font-size="20">x = 1</text><text x="680" y="110" font-size="20">y = 7</text>
+<text x="510" y="165" font-size="20">x = 3</text><text x="680" y="165" font-size="20">y = 2</text>
+<text x="510" y="220" font-size="20">x = 3</text><text x="680" y="220" font-size="20">y = 4</text>
+<text x="510" y="275" font-size="17">Một đầu vào có hai đầu ra</text>
+</g>
+<g stroke="#315c77" stroke-width="2.5"><path d="M120 104 H193 M120 159 H193 M120 214 H193 M588 104 H660 M588 159 H660 M588 214 H660" fill="none"/></g>
+<g fill="#315c77"><path d="M193 104 l-9 -5 v10 z M193 159 l-9 -5 v10 z M193 214 l-9 -5 v10 z M660 104 l-9 -5 v10 z M660 159 l-9 -5 v10 z M660 214 l-9 -5 v10 z"/></g>
+</svg>

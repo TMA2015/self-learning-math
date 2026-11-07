@@ -1,0 +1,876 @@
+{
+  "packet_id": "G12-SGK-CHII-B06-B08-R00",
+  "mode": "CLIENT_SELF_CHECK_NO_MASTERY",
+  "source_blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+  "receipt_blob": "92c07bc943a3e5f1789b8c9e5e7a3acc1bea7532",
+  "items": [
+    {
+      "item_id": "THPT-G12-B06-C01",
+      "outcome_id": "G12-CHII-B06-O01",
+      "lesson_id": "B06",
+      "role": "CORE",
+      "stem": "Trong hình lập phương cạnh 4 cm, độ dài vectơ đi dọc một cạnh bằng bao nhiêu?",
+      "answer": "4 cm",
+      "solution": "Độ dài vectơ bằng khoảng cách hai đầu cạnh, bằng đúng độ dài cạnh.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B06-P01",
+      "outcome_id": "G12-CHII-B06-O01",
+      "lesson_id": "B06",
+      "role": "PRACTICE",
+      "stem": "Hình hộp chữ nhật có các cạnh theo ba phương vuông góc dài 3, 4, 12 cm. Độ dài vectơ nối hai đỉnh đối diện?",
+      "answer": "13 cm",
+      "solution": "Đường chéo không gian dài $\\sqrt{3^2+4^2+12^2}=13$ cm.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B06-P02",
+      "outcome_id": "G12-CHII-B06-O01",
+      "lesson_id": "B06",
+      "role": "PRACTICE",
+      "stem": "Với hai điểm phân biệt A, B, vectơ $\\overrightarrow{AA}$ có độ dài và hướng thế nào?",
+      "answer": "Độ dài 0, hướng không xác định",
+      "solution": "Vectơ-không có hai đầu trùng nhau, không có hướng xác định.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B06-W01",
+      "outcome_id": "G12-CHII-B06-O01",
+      "lesson_id": "B06",
+      "role": "WRITTEN",
+      "stem": "Hình hộp chữ nhật có ba kích thước 2, 3, 6 cm. Giải thích vì sao vectơ nối hai đỉnh đối diện có độ dài 7 cm, không phải 11 cm.",
+      "answer": "7 cm",
+      "solution": "Chọn ba cạnh vuông góc, áp dụng Pythagore không gian: $\\sqrt{2^2+3^2+6^2}=7$. Tổng $2+3+6$ là độ dài đường đi theo ba cạnh, không phải độ dời.",
+      "rubric": "2 điểm lập mô hình ba phương vuông góc; 2 điểm tính căn tổng bình phương; 1 điểm phân biệt đường đi với độ dời."
+    },
+    {
+      "item_id": "THPT-G12-B06-C02",
+      "outcome_id": "G12-CHII-B06-O02",
+      "lesson_id": "B06",
+      "role": "CORE",
+      "stem": "Trong hình bình hành ABCD, vectơ nào bằng $\\overrightarrow{AB}$?",
+      "answer": "$\\overrightarrow{DC}$",
+      "solution": "Hai vectơ cùng chiều và cùng độ dài trên hai cạnh đối.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B06-P03",
+      "outcome_id": "G12-CHII-B06-O02",
+      "lesson_id": "B06",
+      "role": "PRACTICE",
+      "stem": "Trong hình bình hành ABCD, vectơ nào đối với $\\overrightarrow{AB}$?",
+      "answer": "$\\overrightarrow{BA}$ hoặc $\\overrightarrow{CD}$",
+      "solution": "Đều cùng độ dài và ngược chiều so với $\\overrightarrow{AB}$.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B06-P04",
+      "outcome_id": "G12-CHII-B06-O02",
+      "lesson_id": "B06",
+      "role": "PRACTICE",
+      "stem": "Hai vectơ không bằng 0 cùng phương, một vectơ dài 2 cm, vectơ kia dài 5 cm. Chúng có thể bằng nhau không?",
+      "answer": "Không",
+      "solution": "Hai vectơ bằng nhau phải cùng hướng và cùng độ dài; 2 khác 5.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B06-W02",
+      "outcome_id": "G12-CHII-B06-O02",
+      "lesson_id": "B06",
+      "role": "WRITTEN",
+      "stem": "Trong hình hộp $ABCD.A\\prime B\\prime C\\prime D\\prime$, liệt kê hai vectơ khác vị trí bằng $\\overrightarrow{AB}$ và một vectơ đối với nó; giải thích dựa vào hướng và độ dài.",
+      "answer": "$\\overrightarrow{DC}$ và $\\overrightarrow{A\\prime B\\prime}$ bằng $\\overrightarrow{AB}$; $\\overrightarrow{BA}$ là vectơ đối.",
+      "solution": "Các cạnh song song đồng hướng tương ứng trong hình hộp có độ dài bằng nhau; đảo đầu-cuối đổi hướng.",
+      "rubric": "2 điểm tìm hai vectơ bằng; 1 điểm vectơ đối; 2 điểm giải thích chiều/độ dài."
+    },
+    {
+      "item_id": "THPT-G12-B06-C03",
+      "outcome_id": "G12-CHII-B06-O03",
+      "lesson_id": "B06",
+      "role": "CORE",
+      "stem": "Với A,B,C bất kì, $\\overrightarrow{AB}+\\overrightarrow{BC}$ bằng gì?",
+      "answer": "$\\overrightarrow{AC}$",
+      "solution": "Ghép đường đi đầu–đuôi A→B→C.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B06-P05",
+      "outcome_id": "G12-CHII-B06-O03",
+      "lesson_id": "B06",
+      "role": "PRACTICE",
+      "stem": "Trong hình bình hành ABCD, $\\overrightarrow{AB}+\\overrightarrow{AD}$ bằng gì?",
+      "answer": "$\\overrightarrow{AC}$",
+      "solution": "Quy tắc đường chéo hình bình hành.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B06-P06",
+      "outcome_id": "G12-CHII-B06-O03",
+      "lesson_id": "B06",
+      "role": "PRACTICE",
+      "stem": "Trong hình hộp $ABCD.A\\prime B\\prime C\\prime D\\prime$, $\\overrightarrow{AB}+\\overrightarrow{AD}+\\overrightarrow{AA\\prime}$ bằng gì?",
+      "answer": "$\\overrightarrow{AC\\prime}$",
+      "solution": "Hai cạnh đáy cho AC, cạnh đứng bằng CC′; nối thành AC′.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B06-W03",
+      "outcome_id": "G12-CHII-B06-O03",
+      "lesson_id": "B06",
+      "role": "WRITTEN",
+      "stem": "Cho tứ diện ABCD. Rút gọn $\\overrightarrow{AB}+\\overrightarrow{BC}+\\overrightarrow{CD}$ theo hai cách: nối đường đi và nhóm đại số.",
+      "answer": "$\\overrightarrow{AD}$",
+      "solution": "Nối A→B→C→D được AD. Hoặc AB+BC=AC, AC+CD=AD.",
+      "rubric": "2 điểm mô tả đường đi; 2 điểm nhóm đúng; 1 điểm kết luận AD."
+    },
+    {
+      "item_id": "THPT-G12-B06-C04",
+      "outcome_id": "G12-CHII-B06-O04",
+      "lesson_id": "B06",
+      "role": "CORE",
+      "stem": "Nếu $|\\vec a|=3$ và $k=-2$, độ dài $k\\vec a$ bằng bao nhiêu?",
+      "answer": "6",
+      "solution": "$|-2|\\cdot 3=6$; hướng đổi do k âm.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B06-P07",
+      "outcome_id": "G12-CHII-B06-O04",
+      "lesson_id": "B06",
+      "role": "PRACTICE",
+      "stem": "Điểm M là trung điểm đoạn AB. Biểu diễn $\\overrightarrow{AM}$ qua $\\overrightarrow{AB}$.",
+      "answer": "$\\tfrac12\\overrightarrow{AB}$",
+      "solution": "Cùng hướng và độ dài bằng một nửa.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B06-P08",
+      "outcome_id": "G12-CHII-B06-O04",
+      "lesson_id": "B06",
+      "role": "PRACTICE",
+      "stem": "Điểm N ở tia đối của AB, AN=3AB. Viết $\\overrightarrow{AN}$ qua $\\overrightarrow{AB}$.",
+      "answer": "$-3\\overrightarrow{AB}$",
+      "solution": "Ngược hướng, độ dài gấp ba.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B06-W04",
+      "outcome_id": "G12-CHII-B06-O04",
+      "lesson_id": "B06",
+      "role": "WRITTEN",
+      "stem": "Cho $\\vec a\\ne\\vec0$. Hai vectơ $\\vec b=-\\tfrac32\\vec a$ và $\\vec c=\\tfrac12\\vec a$ có cùng phương không? Hướng và tỉ số độ dài?",
+      "answer": "Có; b ngược hướng a, c cùng hướng a; $|b|:|c|=3:1$.",
+      "solution": "b,c là bội số của a; dấu hệ số xác định chiều, độ lớn xác định tỉ lệ.",
+      "rubric": "2 điểm chứng minh cùng phương; 2 điểm giải thích hướng; 1 điểm tỉ số."
+    },
+    {
+      "item_id": "THPT-G12-B06-C05",
+      "outcome_id": "G12-CHII-B06-O05",
+      "lesson_id": "B06",
+      "role": "CORE",
+      "stem": "Hai vectơ khác 0 dài 2 và 3, tạo góc 60°. Tính tích vô hướng.",
+      "answer": "3",
+      "solution": "$2\\cdot3\\cdot\\cos60^\\circ=3$.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B06-P09",
+      "outcome_id": "G12-CHII-B06-O05",
+      "lesson_id": "B06",
+      "role": "PRACTICE",
+      "stem": "Hai vectơ khác 0 dài 5 và 4 vuông góc. Tích vô hướng bằng bao nhiêu?",
+      "answer": "0",
+      "solution": "Cos90°=0 nên tích bằng 0.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B06-P10",
+      "outcome_id": "G12-CHII-B06-O05",
+      "lesson_id": "B06",
+      "role": "PRACTICE",
+      "stem": "Hai vectơ khác 0 dài 3 và 8 tạo góc 120°. Tích vô hướng bằng bao nhiêu?",
+      "answer": "-12",
+      "solution": "$3\\cdot8\\cdot\\cos120^\\circ=-12$.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B06-W05",
+      "outcome_id": "G12-CHII-B06-O05",
+      "lesson_id": "B06",
+      "role": "WRITTEN",
+      "stem": "Giả sử $|\\vec u|=2$, $|\\vec v|=5$ và $\\vec u\\cdot\\vec v=-5$. Hãy tìm góc và giải thích dấu âm.",
+      "answer": "120°",
+      "solution": "$\\cos\\theta=-5/(2\\cdot5)=-1/2$ nên $\\theta=120^\\circ$; hình chiếu ngược hướng.",
+      "rubric": "1 điểm kiểm hai độ dài dương; 2 điểm thiết lập cos; 1 điểm tìm góc; 1 điểm giải thích dấu."
+    },
+    {
+      "item_id": "THPT-G12-B06-C06",
+      "outcome_id": "G12-CHII-B06-O06",
+      "lesson_id": "B06",
+      "role": "CORE",
+      "stem": "Lực 10 N cùng hướng với độ dời 4 m. Công của lực là bao nhiêu?",
+      "answer": "40 J",
+      "solution": "Góc 0°, W=10·4·cos0°=40 J.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B06-P11",
+      "outcome_id": "G12-CHII-B06-O06",
+      "lesson_id": "B06",
+      "role": "PRACTICE",
+      "stem": "Lực 12 N vuông góc với độ dời 5 m. Công bằng bao nhiêu?",
+      "answer": "0 J",
+      "solution": "Góc 90° nên thành phần lực theo độ dời bằng 0.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B06-P12",
+      "outcome_id": "G12-CHII-B06-O06",
+      "lesson_id": "B06",
+      "role": "PRACTICE",
+      "stem": "Lực 8 N tạo góc 120° với độ dời 3 m. Công bằng bao nhiêu?",
+      "answer": "-12 J",
+      "solution": "$W=8\\cdot3\\cdot(-1/2)=-12$ J; công âm do lực chống chuyển động.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B06-W06",
+      "outcome_id": "G12-CHII-B06-O06",
+      "lesson_id": "B06",
+      "role": "WRITTEN",
+      "stem": "Hai lực không đổi $\\vec F_1,\\vec F_2$ lần lượt 10 N, 20 N, cùng tạo góc 60° với cùng độ dời 2 m. Tính tổng công và nêu vì sao có thể cộng.",
+      "answer": "30 J",
+      "solution": "Theo tính phân phối của tích vô hướng, W=W1+W2=10·2·1/2+20·2·1/2=10+20=30 J.",
+      "rubric": "2 điểm công mỗi lực; 2 điểm cộng hợp lí bằng phân phối; 1 điểm đơn vị và giả thiết."
+    },
+    {
+      "item_id": "THPT-G12-B07-C01",
+      "outcome_id": "G12-CHII-B07-O01",
+      "lesson_id": "B07",
+      "role": "CORE",
+      "stem": "Trong hệ Oxyz, điểm P(4;2;0) nằm trên mặt phẳng tọa độ nào?",
+      "answer": "(Oxy)",
+      "solution": "Mặt phẳng Oxy đặc trưng bởi z=0.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B07-P01",
+      "outcome_id": "G12-CHII-B07-O01",
+      "lesson_id": "B07",
+      "role": "PRACTICE",
+      "stem": "Một điểm Q thuộc trục Oz. Hai tọa độ nào bắt buộc bằng 0?",
+      "answer": "x=0 và y=0",
+      "solution": "Trên trục Oz chỉ có thành phần z.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B07-P02",
+      "outcome_id": "G12-CHII-B07-O01",
+      "lesson_id": "B07",
+      "role": "PRACTICE",
+      "stem": "Điểm M(-1;0;3) thuộc mặt phẳng tọa độ nào?",
+      "answer": "(Oxz)",
+      "solution": "y=0 nên M thuộc mặt phẳng Oxz.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B07-W01",
+      "outcome_id": "G12-CHII-B07-O01",
+      "lesson_id": "B07",
+      "role": "WRITTEN",
+      "stem": "Phân loại A(0;2;-1), B(0;0;5), C(3;-2;0) theo mặt phẳng tọa độ hoặc trục tọa độ; giải thích.",
+      "answer": "A thuộc Oyz; B thuộc Oz và cả Oxz, Oyz; C thuộc Oxy.",
+      "solution": "Xét các tọa độ bằng 0 cho từng điểm. Đừng nhầm điều kiện 1 tọa độ bằng 0 của mặt phẳng với 2 tọa độ bằng 0 của trục.",
+      "rubric": "3 điểm xác định đúng A/B/C; 2 điểm giải thích điều kiện các tọa độ 0."
+    },
+    {
+      "item_id": "THPT-G12-B07-C02",
+      "outcome_id": "G12-CHII-B07-O02",
+      "lesson_id": "B07",
+      "role": "CORE",
+      "stem": "Cho $\\vec a=3\\vec i-2\\vec j+\\vec k$. Tọa độ $\\vec a$ là gì?",
+      "answer": "(3;-2;1)",
+      "solution": "Hệ số theo i,j,k tạo thành ba tọa độ.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B07-P03",
+      "outcome_id": "G12-CHII-B07-O02",
+      "lesson_id": "B07",
+      "role": "PRACTICE",
+      "stem": "Nếu M(-2;4;1), tọa độ vectơ $\\overrightarrow{OM}$ bằng gì?",
+      "answer": "(-2;4;1)",
+      "solution": "Theo định nghĩa tọa độ điểm từ vectơ vị trí.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B07-P04",
+      "outcome_id": "G12-CHII-B07-O02",
+      "lesson_id": "B07",
+      "role": "PRACTICE",
+      "stem": "Vectơ $\\vec u=(0;0;-5)$ viết dưới dạng i,j,k thế nào?",
+      "answer": "$-5\\vec k$",
+      "solution": "Hai tọa độ x,y bằng 0.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B07-W02",
+      "outcome_id": "G12-CHII-B07-O02",
+      "lesson_id": "B07",
+      "role": "WRITTEN",
+      "stem": "Cho P(1;-2;3). Viết vectơ vị trí OP và giải thích vì sao vectơ bằng OP đặt ở một điểm khác vẫn có tọa độ tương tự.",
+      "answer": "$\\overrightarrow{OP}=\\vec i-2\\vec j+3\\vec k$; tọa độ phụ thuộc hướng và độ dài vectơ trong cùng hệ, không phụ thuộc nơi dời song song.",
+      "solution": "Theo định nghĩa tọa độ điểm, $P(1;-2;3)$ nghĩa là $\\overrightarrow{OP}=\\vec i-2\\vec j+3\\vec k$. Vectơ có thể dời song song mà không đổi tọa độ trong cùng hệ, nhưng điểm cuối sẽ đổi nếu đổi điểm đầu.",
+      "rubric": "2 điểm phân tích đúng; 2 điểm giải thích vectơ tự do; 1 điểm phân biệt điểm/tọa độ."
+    },
+    {
+      "item_id": "THPT-G12-B07-C03",
+      "outcome_id": "G12-CHII-B07-O03",
+      "lesson_id": "B07",
+      "role": "CORE",
+      "stem": "Trong phòng lấy O góc sàn và ba trục dọc dài/rộng/cao. Vật cách O lần lượt 2,3,4 m theo ba chiều dương có tọa độ gì?",
+      "answer": "(2;3;4) m",
+      "solution": "Ba chuyển động độc lập theo ba trục từ O.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B07-P05",
+      "outcome_id": "G12-CHII-B07-O03",
+      "lesson_id": "B07",
+      "role": "PRACTICE",
+      "stem": "Một cảm biến ở trần trong phòng cao 3 m, chọn Oz hướng lên từ sàn. Tọa độ z của cảm biến là gì?",
+      "answer": "3 m",
+      "solution": "Độ cao được đo từ mặt sàn z=0 theo chiều dương.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B07-P06",
+      "outcome_id": "G12-CHII-B07-O03",
+      "lesson_id": "B07",
+      "role": "PRACTICE",
+      "stem": "Khi lấy gốc ở góc trần và Oz hướng xuống, sàn cách gốc 3 m có tọa độ z gì?",
+      "answer": "3 m",
+      "solution": "Trục dương đã đổi hướng; do chọn Oz xuống nên sàn có z dương.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B07-W03",
+      "outcome_id": "G12-CHII-B07-O03",
+      "lesson_id": "B07",
+      "role": "WRITTEN",
+      "stem": "Phòng 5×4×3 m; lấy O ở góc sàn, Ox dài, Oy rộng, Oz cao. Điểm A(5;4;3) là vị trí nào? Nếu gốc thay thành điểm trần đối diện và trục Oz vẫn hướng lên, z của O cũ bằng bao nhiêu?",
+      "answer": "A là góc trần đối diện O; z của O cũ bằng -3 m trong hệ mới.",
+      "solution": "Nêu rõ gốc mới; điểm sàn thấp hơn gốc trần 3 m.",
+      "rubric": "2 điểm mô tả A; 2 điểm trục mới và dấu; 1 điểm giải thích tính tương đối."
+    },
+    {
+      "item_id": "THPT-G12-B07-C04",
+      "outcome_id": "G12-CHII-B07-O04",
+      "lesson_id": "B07",
+      "role": "CORE",
+      "stem": "A(1;2;3), B(5;2;1). Tọa độ $\\overrightarrow{AB}$?",
+      "answer": "(4;0;-2)",
+      "solution": "B-A theo từng tọa độ.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B07-P07",
+      "outcome_id": "G12-CHII-B07-O04",
+      "lesson_id": "B07",
+      "role": "PRACTICE",
+      "stem": "A(-2;3;4), B(1;-1;2). Tọa độ $\\overrightarrow{BA}$?",
+      "answer": "(-3;4;2)",
+      "solution": "A-B vì điểm đầu B, cuối A.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B07-P08",
+      "outcome_id": "G12-CHII-B07-O04",
+      "lesson_id": "B07",
+      "role": "PRACTICE",
+      "stem": "A(0;0;0), B(-3;2;5). Tọa độ $\\overrightarrow{AB}$?",
+      "answer": "(-3;2;5)",
+      "solution": "Lấy vị trí B trừ vị trí gốc A.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B07-W04",
+      "outcome_id": "G12-CHII-B07-O04",
+      "lesson_id": "B07",
+      "role": "WRITTEN",
+      "stem": "Cho A(2;-3;1), B(-4;5;0). Tính AB và BA theo tọa độ, rồi giải thích quan hệ.",
+      "answer": "$\\overrightarrow{AB}=(-6;8;-1)$ và $\\overrightarrow{BA}=(6;-8;1)$; đối nhau.",
+      "solution": "B-A và A-B có dấu ngược nhau ở cả 3 thành phần.",
+      "rubric": "2 điểm AB; 2 điểm BA; 1 điểm quan hệ vectơ đối."
+    },
+    {
+      "item_id": "THPT-G12-B08-C01",
+      "outcome_id": "G12-CHII-B08-O01",
+      "lesson_id": "B08",
+      "role": "CORE",
+      "stem": "Với a=(1;2;3), b=(3;-1;2), tính a+b.",
+      "answer": "(4;1;5)",
+      "solution": "Cộng ba tọa độ tương ứng.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B08-P01",
+      "outcome_id": "G12-CHII-B08-O01",
+      "lesson_id": "B08",
+      "role": "PRACTICE",
+      "stem": "Với a=(2;-3;1), b=(-1;4;0), tính a-b.",
+      "answer": "(3;-7;1)",
+      "solution": "Trừ ba tọa độ tương ứng; -3-4=-7.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B08-P02",
+      "outcome_id": "G12-CHII-B08-O01",
+      "lesson_id": "B08",
+      "role": "PRACTICE",
+      "stem": "Với a=(1;-2;4), tính -3a.",
+      "answer": "(-3;6;-12)",
+      "solution": "Nhân từng tọa độ với -3.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B08-W01",
+      "outcome_id": "G12-CHII-B08-O01",
+      "lesson_id": "B08",
+      "role": "WRITTEN",
+      "stem": "Với a=(2;1;-1), b=(-1;3;2), hãy tính 2a-3b và mô tả vì sao mỗi thành phần được tính riêng.",
+      "answer": "(7;-7;-8)",
+      "solution": "$2a=(4;2;-2)$, $3b=(-3;9;6)$, lấy hiệu (7;-7;-8); tính duy nhất cơ sở trực giao.",
+      "rubric": "3 điểm tính đúng ba tọa độ; 2 điểm lý giải phép toán theo trục."
+    },
+    {
+      "item_id": "THPT-G12-B08-C02",
+      "outcome_id": "G12-CHII-B08-O02",
+      "lesson_id": "B08",
+      "role": "CORE",
+      "stem": "a=(2;4;6) và b=(1;2;3) có cùng phương không?",
+      "answer": "Có; a=2b",
+      "solution": "Một hệ số 2 khớp cả ba tọa độ.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B08-P03",
+      "outcome_id": "G12-CHII-B08-O02",
+      "lesson_id": "B08",
+      "role": "PRACTICE",
+      "stem": "u=(3;0;-6) và v=(-1;0;2) có cùng phương không?",
+      "answer": "Có; u=-3v",
+      "solution": "Kiểm thành phần x,z và 0= -3·0; không lấy tỉ số 0/0.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B08-P04",
+      "outcome_id": "G12-CHII-B08-O02",
+      "lesson_id": "B08",
+      "role": "PRACTICE",
+      "stem": "a=(1;2;3) và b=(2;4;7) có cùng phương không?",
+      "answer": "Không",
+      "solution": "Tỉ lệ x,y là 2 nhưng z phải là 6, không phải 7.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B08-W02",
+      "outcome_id": "G12-CHII-B08-O02",
+      "lesson_id": "B08",
+      "role": "WRITTEN",
+      "stem": "Cho u=(t;2;4), v=(3;1;2). Tìm t để u, v cùng phương; chỉ ra hướng của chúng.",
+      "answer": "t=6; cùng hướng",
+      "solution": "Từ tọa độ y: u=2v, kiểm z: 4=2·2, suy t=2·3=6; k=2>0.",
+      "rubric": "2 điểm xác định hệ số; 2 điểm suy t và kiểm z; 1 điểm giải thích hướng."
+    },
+    {
+      "item_id": "THPT-G12-B08-C03",
+      "outcome_id": "G12-CHII-B08-O03",
+      "lesson_id": "B08",
+      "role": "CORE",
+      "stem": "Trung điểm A(1;3;5), B(3;1;7) có tọa độ?",
+      "answer": "(2;2;6)",
+      "solution": "Trung bình từng thành phần.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B08-P05",
+      "outcome_id": "G12-CHII-B08-O03",
+      "lesson_id": "B08",
+      "role": "PRACTICE",
+      "stem": "Trọng tâm tam giác A(0;0;0), B(3;0;0), C(0;6;0) là?",
+      "answer": "(1;2;0)",
+      "solution": "Lấy tổng ba tọa độ rồi chia 3.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B08-P06",
+      "outcome_id": "G12-CHII-B08-O03",
+      "lesson_id": "B08",
+      "role": "PRACTICE",
+      "stem": "Trung điểm đoạn AB với A(-2;4;0) B(4;-2;6) là?",
+      "answer": "(1;1;3)",
+      "solution": "Trung bình theo trục x,y,z.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B08-W03",
+      "outcome_id": "G12-CHII-B08-O03",
+      "lesson_id": "B08",
+      "role": "WRITTEN",
+      "stem": "Cho A(1;2;3), B(3;4;5), C(5;0;1). Tìm trọng tâm G và kiểm tra tọa độ của trung điểm M của AB.",
+      "answer": "$G=(3;2;3)$; $M=(2;3;4)$.",
+      "solution": "$G=((1+3+5)/3;(2+4+0)/3;(3+5+1)/3)=(3;2;3)$. Trung điểm là (2;3;4).",
+      "rubric": "3 điểm G; 2 điểm M và cách tính từng tọa độ."
+    },
+    {
+      "item_id": "THPT-G12-B08-C04",
+      "outcome_id": "G12-CHII-B08-O04",
+      "lesson_id": "B08",
+      "role": "CORE",
+      "stem": "a=(1;2;3), b=(2;0;-1). Tính tích vô hướng a·b.",
+      "answer": "-1",
+      "solution": "$1·2+2·0+3·(-1)=-1$.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B08-P07",
+      "outcome_id": "G12-CHII-B08-O04",
+      "lesson_id": "B08",
+      "role": "PRACTICE",
+      "stem": "u=(1;1;0), v=(1;-1;0) có vuông góc không?",
+      "answer": "Có",
+      "solution": "Tích vô hướng 1-1+0=0, cả hai vectơ khác 0.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B08-P08",
+      "outcome_id": "G12-CHII-B08-O04",
+      "lesson_id": "B08",
+      "role": "PRACTICE",
+      "stem": "a=(1;0;0), b=(1;1;0). Góc giữa hai vectơ?",
+      "answer": "45°",
+      "solution": "$\\cos\\theta=1/(1\\cdot\\sqrt2)=1/\\sqrt2$.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B08-W04",
+      "outcome_id": "G12-CHII-B08-O04",
+      "lesson_id": "B08",
+      "role": "WRITTEN",
+      "stem": "Cho a=(1;2;2), b=(2;-1;0). Chứng minh chúng vuông góc và nêu điều kiện để sử dụng tiêu chuẩn tích vô hướng bằng 0.",
+      "answer": "a·b=2-2+0=0, hai vectơ khác 0 nên vuông góc.",
+      "solution": "Không được suy vuông góc giữa vectơ-không và vectơ bất kì chỉ từ tích 0.",
+      "rubric": "2 điểm tính tích; 1 điểm kiểm khác 0; 2 điểm kết luận và điều kiện."
+    },
+    {
+      "item_id": "THPT-G12-B08-C05",
+      "outcome_id": "G12-CHII-B08-O05",
+      "lesson_id": "B08",
+      "role": "CORE",
+      "stem": "Tính độ dài vectơ u=(3;4;0).",
+      "answer": "5",
+      "solution": "$\\sqrt{9+16+0}=5$.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B08-P09",
+      "outcome_id": "G12-CHII-B08-O05",
+      "lesson_id": "B08",
+      "role": "PRACTICE",
+      "stem": "Khoảng cách A(1;2;3), B(1;2;7) bằng?",
+      "answer": "4",
+      "solution": "Độ chênh tọa độ (0;0;4) có độ dài 4.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B08-P10",
+      "outcome_id": "G12-CHII-B08-O05",
+      "lesson_id": "B08",
+      "role": "PRACTICE",
+      "stem": "Độ dài vectơ v=(-2;3;6) bằng?",
+      "answer": "7",
+      "solution": "$\\sqrt{4+9+36}=7$.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B08-W05",
+      "outcome_id": "G12-CHII-B08-O05",
+      "lesson_id": "B08",
+      "role": "WRITTEN",
+      "stem": "Cho A(-1;2;3), B(2;-2;15). Tính AB. Nêu vì sao không thể lấy tổng trị tuyệt đối ba độ chênh.",
+      "answer": "13",
+      "solution": "$\\overrightarrow{AB}=(3;-4;12)$, $AB=\\sqrt{9+16+144}=13$. Tổng trị tuyệt đối là độ dài đi theo ba trục, không phải khoảng cách thẳng.",
+      "rubric": "2 điểm vectơ AB; 2 điểm độ dài; 1 điểm giải thích hình học."
+    },
+    {
+      "item_id": "THPT-G12-B08-C06",
+      "outcome_id": "G12-CHII-B08-O06",
+      "lesson_id": "B08",
+      "role": "CORE",
+      "stem": "Robot đi thẳng từ A(0;0;0) tới B(3;4;0), tọa độ mét. Quãng đường đi thẳng là bao nhiêu?",
+      "answer": "5 m",
+      "solution": "Độ dài đoạn AB là 5 m.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B08-P11",
+      "outcome_id": "G12-CHII-B08-O06",
+      "lesson_id": "B08",
+      "role": "PRACTICE",
+      "stem": "Drone đi thẳng 10 m trong 2 s. Tốc độ không đổi?",
+      "answer": "5 m/s",
+      "solution": "Lấy độ dài đường đi chia thời gian dương.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B08-P12",
+      "outcome_id": "G12-CHII-B08-O06",
+      "lesson_id": "B08",
+      "role": "PRACTICE",
+      "stem": "Máy bay A(1;2;3) tới B(4;6;15) theo đường thẳng; độ dời dài bao nhiêu?",
+      "answer": "13 đơn vị",
+      "solution": "Hiệu (3;4;12), độ dài 13.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-B08-W06",
+      "outcome_id": "G12-CHII-B08-O06",
+      "lesson_id": "B08",
+      "role": "WRITTEN",
+      "stem": "Một thiết bị chuyển động thẳng từ A(2;0;5) đến B(8;-8;11) trong 4 s (tọa độ mét). Tìm vectơ độ dời, độ dài và tốc độ. Khi nào độ dài độ dời khác quãng đường?",
+      "answer": "Độ dời (6;-8;6) m, độ dài $\\sqrt{136}=2\\sqrt{34}$ m, tốc độ $\\sqrt{34}/2$ m/s.",
+      "solution": "4 s>0; nếu đường đi cong hoặc vòng lại thì độ dài độ dời nhỏ hơn hoặc bằng quãng đường thực.",
+      "rubric": "2 điểm độ dời; 1 điểm độ dài; 1 điểm tốc độ; 1 điểm điều kiện đường thẳng."
+    }
+  ],
+  "help": [
+    {
+      "help_id": "THPT-G12-B06-HELP01",
+      "outcome_id": "G12-CHII-B06-O01",
+      "lesson_id": "B06",
+      "review_path": "§3.1 / EX-G12-B06-01",
+      "return_item": "THPT-G12-B06-C01",
+      "practice_item": "THPT-G12-B06-P01"
+    },
+    {
+      "help_id": "THPT-G12-B06-HELP02",
+      "outcome_id": "G12-CHII-B06-O02",
+      "lesson_id": "B06",
+      "review_path": "§3.1 / EX-G12-B06-02",
+      "return_item": "THPT-G12-B06-C02",
+      "practice_item": "THPT-G12-B06-P03"
+    },
+    {
+      "help_id": "THPT-G12-B06-HELP03",
+      "outcome_id": "G12-CHII-B06-O03",
+      "lesson_id": "B06",
+      "review_path": "§3.2 / EX-G12-B06-03",
+      "return_item": "THPT-G12-B06-C03",
+      "practice_item": "THPT-G12-B06-P05"
+    },
+    {
+      "help_id": "THPT-G12-B06-HELP04",
+      "outcome_id": "G12-CHII-B06-O04",
+      "lesson_id": "B06",
+      "review_path": "§3.3 / EX-G12-B06-04",
+      "return_item": "THPT-G12-B06-C04",
+      "practice_item": "THPT-G12-B06-P07"
+    },
+    {
+      "help_id": "THPT-G12-B06-HELP05",
+      "outcome_id": "G12-CHII-B06-O05",
+      "lesson_id": "B06",
+      "review_path": "§3.4 / EX-G12-B06-05",
+      "return_item": "THPT-G12-B06-C05",
+      "practice_item": "THPT-G12-B06-P09"
+    },
+    {
+      "help_id": "THPT-G12-B06-HELP06",
+      "outcome_id": "G12-CHII-B06-O06",
+      "lesson_id": "B06",
+      "review_path": "§3.4 / EX-G12-B06-06",
+      "return_item": "THPT-G12-B06-C06",
+      "practice_item": "THPT-G12-B06-P11"
+    },
+    {
+      "help_id": "THPT-G12-B07-HELP01",
+      "outcome_id": "G12-CHII-B07-O01",
+      "lesson_id": "B07",
+      "review_path": "§2.1 / EX-G12-B07-01",
+      "return_item": "THPT-G12-B07-C01",
+      "practice_item": "THPT-G12-B07-P01"
+    },
+    {
+      "help_id": "THPT-G12-B07-HELP02",
+      "outcome_id": "G12-CHII-B07-O02",
+      "lesson_id": "B07",
+      "review_path": "§2.2 / EX-G12-B07-02",
+      "return_item": "THPT-G12-B07-C02",
+      "practice_item": "THPT-G12-B07-P03"
+    },
+    {
+      "help_id": "THPT-G12-B07-HELP03",
+      "outcome_id": "G12-CHII-B07-O03",
+      "lesson_id": "B07",
+      "review_path": "§2.4 / EX-G12-B07-03",
+      "return_item": "THPT-G12-B07-C03",
+      "practice_item": "THPT-G12-B07-P05"
+    },
+    {
+      "help_id": "THPT-G12-B07-HELP04",
+      "outcome_id": "G12-CHII-B07-O04",
+      "lesson_id": "B07",
+      "review_path": "§2.3 / EX-G12-B07-04",
+      "return_item": "THPT-G12-B07-C04",
+      "practice_item": "THPT-G12-B07-P07"
+    },
+    {
+      "help_id": "THPT-G12-B08-HELP01",
+      "outcome_id": "G12-CHII-B08-O01",
+      "lesson_id": "B08",
+      "review_path": "§2.1 / EX-G12-B08-01",
+      "return_item": "THPT-G12-B08-C01",
+      "practice_item": "THPT-G12-B08-P01"
+    },
+    {
+      "help_id": "THPT-G12-B08-HELP02",
+      "outcome_id": "G12-CHII-B08-O02",
+      "lesson_id": "B08",
+      "review_path": "§2.1 / EX-G12-B08-02",
+      "return_item": "THPT-G12-B08-C02",
+      "practice_item": "THPT-G12-B08-P03"
+    },
+    {
+      "help_id": "THPT-G12-B08-HELP03",
+      "outcome_id": "G12-CHII-B08-O03",
+      "lesson_id": "B08",
+      "review_path": "§2.2 / EX-G12-B08-03",
+      "return_item": "THPT-G12-B08-C03",
+      "practice_item": "THPT-G12-B08-P05"
+    },
+    {
+      "help_id": "THPT-G12-B08-HELP04",
+      "outcome_id": "G12-CHII-B08-O04",
+      "lesson_id": "B08",
+      "review_path": "§2.3 / EX-G12-B08-04",
+      "return_item": "THPT-G12-B08-C04",
+      "practice_item": "THPT-G12-B08-P07"
+    },
+    {
+      "help_id": "THPT-G12-B08-HELP05",
+      "outcome_id": "G12-CHII-B08-O05",
+      "lesson_id": "B08",
+      "review_path": "§2.4 / EX-G12-B08-05",
+      "return_item": "THPT-G12-B08-C05",
+      "practice_item": "THPT-G12-B08-P09"
+    },
+    {
+      "help_id": "THPT-G12-B08-HELP06",
+      "outcome_id": "G12-CHII-B08-O06",
+      "lesson_id": "B08",
+      "review_path": "§2.5 / EX-G12-B08-06",
+      "return_item": "THPT-G12-B08-C06",
+      "practice_item": "THPT-G12-B08-P11"
+    }
+  ],
+  "end_references": [
+    {
+      "position": 1,
+      "item_id": "THPT-G12-B06-P02",
+      "outcome_id": "G12-CHII-B06-O01",
+      "remedial_path": "Bài 06 · §D6/01, ví dụ EX01"
+    },
+    {
+      "position": 2,
+      "item_id": "THPT-G12-B06-P04",
+      "outcome_id": "G12-CHII-B06-O02",
+      "remedial_path": "Bài 06 · §D6/02, ví dụ EX02"
+    },
+    {
+      "position": 3,
+      "item_id": "THPT-G12-B06-P06",
+      "outcome_id": "G12-CHII-B06-O03",
+      "remedial_path": "Bài 06 · §D6/03, ví dụ EX03"
+    },
+    {
+      "position": 4,
+      "item_id": "THPT-G12-B06-P08",
+      "outcome_id": "G12-CHII-B06-O04",
+      "remedial_path": "Bài 06 · §D6/04, ví dụ EX04"
+    },
+    {
+      "position": 5,
+      "item_id": "THPT-G12-B06-P10",
+      "outcome_id": "G12-CHII-B06-O05",
+      "remedial_path": "Bài 06 · §D6/05, ví dụ EX05"
+    },
+    {
+      "position": 6,
+      "item_id": "THPT-G12-B06-P12",
+      "outcome_id": "G12-CHII-B06-O06",
+      "remedial_path": "Bài 06 · §D6/06, ví dụ EX06"
+    },
+    {
+      "position": 7,
+      "item_id": "THPT-G12-B07-P02",
+      "outcome_id": "G12-CHII-B07-O01",
+      "remedial_path": "Bài 07 · §D6/01, ví dụ EX01"
+    },
+    {
+      "position": 8,
+      "item_id": "THPT-G12-B07-P04",
+      "outcome_id": "G12-CHII-B07-O02",
+      "remedial_path": "Bài 07 · §D6/02, ví dụ EX02"
+    },
+    {
+      "position": 9,
+      "item_id": "THPT-G12-B07-P06",
+      "outcome_id": "G12-CHII-B07-O03",
+      "remedial_path": "Bài 07 · §D6/03, ví dụ EX03"
+    },
+    {
+      "position": 10,
+      "item_id": "THPT-G12-B07-P08",
+      "outcome_id": "G12-CHII-B07-O04",
+      "remedial_path": "Bài 07 · §D6/04, ví dụ EX04"
+    },
+    {
+      "position": 11,
+      "item_id": "THPT-G12-B08-P02",
+      "outcome_id": "G12-CHII-B08-O01",
+      "remedial_path": "Bài 08 · §D6/01, ví dụ EX01"
+    },
+    {
+      "position": 12,
+      "item_id": "THPT-G12-B08-P04",
+      "outcome_id": "G12-CHII-B08-O02",
+      "remedial_path": "Bài 08 · §D6/02, ví dụ EX02"
+    },
+    {
+      "position": 13,
+      "item_id": "THPT-G12-B08-P06",
+      "outcome_id": "G12-CHII-B08-O03",
+      "remedial_path": "Bài 08 · §D6/03, ví dụ EX03"
+    },
+    {
+      "position": 14,
+      "item_id": "THPT-G12-B08-P08",
+      "outcome_id": "G12-CHII-B08-O04",
+      "remedial_path": "Bài 08 · §D6/04, ví dụ EX04"
+    },
+    {
+      "position": 15,
+      "item_id": "THPT-G12-B08-P10",
+      "outcome_id": "G12-CHII-B08-O05",
+      "remedial_path": "Bài 08 · §D6/05, ví dụ EX05"
+    },
+    {
+      "position": 16,
+      "item_id": "THPT-G12-B08-P12",
+      "outcome_id": "G12-CHII-B08-O06",
+      "remedial_path": "Bài 08 · §D6/06, ví dụ EX06"
+    }
+  ]
+}
