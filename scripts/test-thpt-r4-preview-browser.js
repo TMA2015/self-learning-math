@@ -720,8 +720,8 @@ async function ready(page,path){
   const chapterActions=page.locator(".thpt-r4-lesson-tabs");
   assert.equal(await chapterActions.locator('a[href="luyen-tap/"]').count(),1);
   assert.equal(await chapterActions.locator('a[href="tu-kiem-tra-chuong/"]').count(),1);
-  // Full-page B17/B18 rendering QA: do not sample only the screenshots.
-  for(const [lesson,inlineCount,displayCount] of [["17",130,4],["18",59,8]]){
+  // Full-page B17/B18 rendering QA: exact 130/59 original +66/48 independently reviewed PED math spans, plus original 4/8 displays; no raw TeX.
+  for(const [lesson,inlineCount,displayCount] of [["17",196,4],["18",107,8]]){
     await ready(page,"sgk/chuong-vi/bai-"+lesson+"/");
     const article=page.locator("article.md-content__inner");
     assert.equal(await article.locator("span.arithmatex").count(),inlineCount,
