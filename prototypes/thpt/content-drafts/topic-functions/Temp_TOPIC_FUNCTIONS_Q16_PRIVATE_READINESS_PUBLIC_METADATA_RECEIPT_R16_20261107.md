@@ -6,11 +6,11 @@
 ## Review package — private to project owner, NOT on GitHub
 
 - Owner download filename: `Temp_TOPIC_FUNCTIONS_PRIVATE_RD1_REVIEW_R01_20261107.zip` (private owner delivery).
-- ZIP SHA-256 **`2b6e417fc1acb6cd347765ad4f405402af5f2abdc8c01c907c25927d3f8af427`**, exact size **10,963 bytes**.
+- ZIP SHA-256 **`59dba34b09695f8b127e10ab7ec8cc295b03293e9cbdeedf8bc2218799eb658a`**, exact size **10,961 bytes**.
 - The ZIP contains **three actual `Temp_*.md`** files, to be unzipped for private NotebookLM review: Question-only student draft, separate owner-only complete worked answers and rubric, and coverage/audit mapping metadata.
 - **SHA256 per private part (hashes ONLY, no content):**
-  - question source: `389ce39b71f72329932766a7079759bc842a0477efb5a727895609392aaccaee`;
-  - answer/rubric source: `0c3de6d22b15302f8bbc84e58abedc5ab0d5bfe308201232d6a22f255fcc1766`;
+  - question source: `562d4f371da285a7d05d17f788160bcd03a93c025c9ee2730ca34b4724389a15`;
+  - answer/rubric source: `ccbe2fad0843a239dd504386a9776addb16f1a9d28800401700b73292450c303`;
   - coverage/QA metadata: `503af3076cc741d793dec6c3431d920effa0925119505343dfeddb71f68e6ff9`.
 - **Actual assessment candidate:** 30 newly authored held-out private item IDs, 4 rubric points each / 120 points as authoring review scale (NOT final official mastery threshold), independently cover all 48 topic outcome rows with meaningful multi-outcome items, and keep **all** existing 196 public AUTHORING refs out of this private question set. No new public item ID is registered by R16.
 - Module coverage rows in original public Topic register: G10 10; M4 10; M5 9; M6 9; M7 10. The private ZIP contains the item-specific coverage matrix, not exposed here.
