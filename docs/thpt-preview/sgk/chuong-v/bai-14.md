@@ -20,14 +20,13 @@ Em hãy đọc tình huống, nhớ lại kiến thức cũ và tự trả lời
 
 **Tự thử trước Core** Với mẫu đã sắp \(2,3,4,6,8,9,10\), tìm khoảng biến thiên R và khoảng tứ phân vị \(\Delta_Q\) theo KNTT.
 
-<details class="thpt-r4-pedagogical-note" markdown="1" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY10"><summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
-
-**Đối chiếu kết quả:** \(R=10-2=8\); \(Q_2=6\), \(Q_1=3\), \(Q_3=9\) nên \(\Delta_Q=9-3=6\).
-
-**Giải thích vì sao:** Với n=7 bỏ số giữa 6, nửa dưới 2,3,4 cho Q1=3 và nửa trên 8,9,10 cho Q3=9. R dùng min/max, IQR dùng Q1/Q3.
-
-**Nếu chưa làm được:** Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó [thử câu cùng kiến thức trong Core/Luyện tập](luyen-tap.md?item=THPT-G10-B14-P01).
-
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY10">
+<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+<div class="thpt-r4-first-try-answer">
+<p><strong>Đối chiếu kết quả:</strong> \(R=10-2=8\); \(Q_2=6\), \(Q_1=3\), \(Q_3=9\) nên \(\Delta_Q=9-3=6\).</p>
+<p><strong>Giải thích vì sao:</strong> Với n=7 bỏ số giữa 6, nửa dưới 2,3,4 cho Q1=3 và nửa trên 8,9,10 cho Q3=9. R dùng min/max, IQR dùng Q1/Q3.</p>
+<p><strong>Nếu chưa làm được:</strong> Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó <a href="../luyen-tap/?item=THPT-G10-B14-P01">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
+</div>
 </details>
 
 ### Độ lệch có thể bù dấu, nên phải bình phương
@@ -44,14 +43,13 @@ Em hãy đọc tình huống, nhớ lại kiến thức cũ và tự trả lời
 
 **Tự thử trước Core** Với mẫu \(2,4,6\), tìm trung bình và phương sai mô tả theo SGK (chia cho n).
 
-<details class="thpt-r4-pedagogical-note" markdown="1" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY11"><summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
-
-**Đối chiếu kết quả:** \(\bar x=4\); \(s^2=[(2-4)^2+(4-4)^2+(6-4)^2]/3=8/3\).
-
-**Giải thích vì sao:** Hai độ lệch −2 và +2 có tổng 0 nhưng bình phương đều 4; tổng bình phương 8 chia 3 phần tử.
-
-**Nếu chưa làm được:** Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó [thử câu cùng kiến thức trong Core/Luyện tập](luyen-tap.md?item=THPT-G10-B14-C02).
-
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY11">
+<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+<div class="thpt-r4-first-try-answer">
+<p><strong>Đối chiếu kết quả:</strong> \(\bar x=4\); \(s^2=[(2-4)^2+(4-4)^2+(6-4)^2]/3=8/3\).</p>
+<p><strong>Giải thích vì sao:</strong> Hai độ lệch −2 và +2 có tổng 0 nhưng bình phương đều 4; tổng bình phương 8 chia 3 phần tử.</p>
+<p><strong>Nếu chưa làm được:</strong> Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó <a href="../luyen-tap/?item=THPT-G10-B14-C02">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
+</div>
 </details>
 
 ### Vì sao độ lệch chuẩn dễ đọc hơn phương sai?
@@ -68,14 +66,13 @@ Em hãy đọc tình huống, nhớ lại kiến thức cũ và tự trả lời
 
 **Tự thử trước Core** Bốn chiều dài (cm) là \(2,2,6,6\). Tìm phương sai và độ lệch chuẩn, kèm đơn vị.
 
-<details class="thpt-r4-pedagogical-note" markdown="1" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY12"><summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
-
-**Đối chiếu kết quả:** Trung bình 4 cm; \(s^2=[4+4+4+4]/4=4\,\mathrm{cm}^2\), \(s=2\,\mathrm{cm}\).
-
-**Giải thích vì sao:** Mỗi độ lệch với 4 là ±2 cm, bình phương 4 cm²; căn 4 cm² cho 2 cm.
-
-**Nếu chưa làm được:** Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó [thử câu cùng kiến thức trong Core/Luyện tập](luyen-tap.md?item=THPT-G10-B14-P05).
-
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY12">
+<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+<div class="thpt-r4-first-try-answer">
+<p><strong>Đối chiếu kết quả:</strong> Trung bình 4 cm; \(s^2=[4+4+4+4]/4=4\,\mathrm{cm}^2\), \(s=2\,\mathrm{cm}\).</p>
+<p><strong>Giải thích vì sao:</strong> Mỗi độ lệch với 4 là ±2 cm, bình phương 4 cm²; căn 4 cm² cho 2 cm.</p>
+<p><strong>Nếu chưa làm được:</strong> Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó <a href="../luyen-tap/?item=THPT-G10-B14-P05">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
+</div>
 </details>
 
 ### Một giá trị xa trung tâm cần được nhận diện bằng quy tắc
@@ -92,14 +89,13 @@ Em hãy đọc tình huống, nhớ lại kiến thức cũ và tự trả lời
 
 **Tự thử trước Core** Mẫu đã sắp \(1,2,3,4,5,6,20\). Tính \(Q_1,Q_3,\Delta_Q\), hai hàng rào và xác định giá trị bất thường theo quy tắc 1,5 IQR.
 
-<details class="thpt-r4-pedagogical-note" markdown="1" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY13"><summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
-
-**Đối chiếu kết quả:** \(Q_2=4\), \(Q_1=2\), \(Q_3=6\), \(\Delta_Q=4\); hàng rào dưới −4, hàng rào trên 12. Chỉ giá trị 20 là bất thường.
-
-**Giải thích vì sao:** Với n=7, bỏ số giữa 4. Hai hàng rào =2−1,5·4=−4 và 6+1,5·4=12; 20>12, các giá trị 1..6 trong khoảng.
-
-**Nếu chưa làm được:** Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó [thử câu cùng kiến thức trong Core/Luyện tập](luyen-tap.md?item=THPT-G10-B14-P03).
-
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY13">
+<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+<div class="thpt-r4-first-try-answer">
+<p><strong>Đối chiếu kết quả:</strong> \(Q_2=4\), \(Q_1=2\), \(Q_3=6\), \(\Delta_Q=4\); hàng rào dưới −4, hàng rào trên 12. Chỉ giá trị 20 là bất thường.</p>
+<p><strong>Giải thích vì sao:</strong> Với n=7, bỏ số giữa 4. Hai hàng rào =2−1,5·4=−4 và 6+1,5·4=12; 20&gt;12, các giá trị 1..6 trong khoảng.</p>
+<p><strong>Nếu chưa làm được:</strong> Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó <a href="../luyen-tap/?item=THPT-G10-B14-P03">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
+</div>
 </details>
 
 ### Cùng trung bình không có nghĩa phân tán giống nhau
@@ -116,14 +112,13 @@ Em hãy đọc tình huống, nhớ lại kiến thức cũ và tự trả lời
 
 **Tự thử trước Core** Nhóm A có \(2,4,6\), nhóm B có \(0,4,8\). Trung bình của hai nhóm và phương sai mô tả từng nhóm bằng bao nhiêu? Nhóm nào phân tán hơn?
 
-<details class="thpt-r4-pedagogical-note" markdown="1" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY14"><summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
-
-**Đối chiếu kết quả:** Cả hai trung bình 4; \(s_A^2=8/3\), \(s_B^2=32/3\), nên B phân tán hơn.
-
-**Giải thích vì sao:** A lệch −2,0,2; B lệch −4,0,4. Bình phương độ lệch nhóm B gấp bốn lần nên phương sai B lớn hơn.
-
-**Nếu chưa làm được:** Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó [thử câu cùng kiến thức trong Core/Luyện tập](luyen-tap.md?item=THPT-G10-B14-P04).
-
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY14">
+<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+<div class="thpt-r4-first-try-answer">
+<p><strong>Đối chiếu kết quả:</strong> Cả hai trung bình 4; \(s_A^2=8/3\), \(s_B^2=32/3\), nên B phân tán hơn.</p>
+<p><strong>Giải thích vì sao:</strong> A lệch −2,0,2; B lệch −4,0,4. Bình phương độ lệch nhóm B gấp bốn lần nên phương sai B lớn hơn.</p>
+<p><strong>Nếu chưa làm được:</strong> Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó <a href="../luyen-tap/?item=THPT-G10-B14-P04">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
+</div>
 </details>
 
 ## 1. Kiến thức SGK
