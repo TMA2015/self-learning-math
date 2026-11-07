@@ -147,7 +147,7 @@ if(process.argv.includes("--built")){
  for(const n of [23,24,25]){
   const html=read("site/thpt-preview/sgk/chuong-viii/bai-"+n+"/index.html");
   assert.equal((html.match(/data-thpt-first-try-id=/g)||[]).length,4,"Four built First Tries B"+n);
-  assert.equal((html.match(/data-thpt-help-id=/g)||[]).length,4,"Four built D6 identities B"+n);
+  assert.equal((html.match(/data-thpt-help-id="HELP-G10-CHVIII-TRY\d\d"/g)||[]).length,4,"Four NEW reviewed D6 identities B"+n);
   assert.equal((html.match(/<details class="question"/g)||[]).length,4,"Answer disclosure rendered, B"+n);
   assert.equal((html.match(/<details class="tip"/g)||[]).length,4,"D6 disclosure rendered, B"+n);
   assert(!html.includes("??? question"),"Raw unrendered disclosure in B"+n);
