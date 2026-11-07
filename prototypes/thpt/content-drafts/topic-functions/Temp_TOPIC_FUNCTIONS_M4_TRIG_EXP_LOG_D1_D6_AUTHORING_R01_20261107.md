@@ -193,6 +193,40 @@ Miền \(x>-4\); đồ thị là đồ thị \(\log_2 x\) dịch sang trái 4 đ
 
 **Trước khi sinh phiên bản canonical:** phải kiểm chống trùng với EX-G11-B03-01..05, SGK B03 4 Core/8 Practice, B20 Core/Practice, Written/Anchor và toàn bank đã duyệt. Những câu chỉ thay số từ ví dụ nguồn có nguy cơ trùng ý, không dùng làm bằng chứng độ sâu mới. Cần lời giải chi tiết theo từng family và mức, không chỉ bảng tóm tắt trên đây.
 
+### Ba bài Practice mang bước tư duy khác với SGK Core — lời giải đầy đủ (vẫn **NEW CANDIDATE**, chưa duyệt)
+
+**P-M4-02 — Dạng miền của hàm phân thức có mẫu lượng giác, mức thông hiểu.**
+
+*Đề tự làm:* Tìm tập xác định của \(f(x)=\frac1{1-\cos x}\). Đánh dấu trên trục x ít nhất ba giá trị bị loại và giải thích vì sao các khoảng còn lại đều hợp lệ.
+
+*Chọn phương pháp vì sao?* Phân thức không được chia cho 0; tử luôn là 1 nên không cần kiểm điều kiện tử. Miền chỉ phụ thuộc vào mẫu \(1-\cos x\).
+
+*Giải từng bước:* \(1-\cos x\ne0\iff\cos x\ne1\). Trên đường tròn đơn vị, \(\cos x=1\iff x=2k\pi\), \(k\in\mathbb Z\). Do đó \(D=\mathbb R\setminus\{2k\pi:k\in\mathbb Z\}\). Các giá trị bị loại gần gốc là \(-2\pi,0,2\pi\). Ngay gần nhưng khác các mốc này, biểu thức có nghĩa, dù giá trị có thể rất lớn. **Kiểm:** \(f(\pi)=1/(1-(-1))=1/2\), hợp lệ; \(f(0)\) chia 0, loại.
+
+*Đường D6:* Nếu em ghi \(x\ne k\pi\), em đã loại thừa các bội lẻ của \(\pi\). Quay lại bảng cos: \(\cos\pi=-1\) chứ không phải 1. Vẽ điểm \((1,0)\) trên đường tròn đơn vị và kiểm góc cho hoành độ bằng 1.
+
+**P-M4-09 — Phân biệt quy tắc toán với miền dữ liệu quan sát, mức transfer.**
+
+*Đề tự làm:* Một thiết bị chỉ ghi khối lượng vào cuối mỗi kỳ nguyên \(n=0,1,2,\ldots\), theo mô hình \(Q(n)=100(0{,}8)^n\) gam. (a) Tìm giá trị sau 2 kỳ; (b) khối lượng giảm bao nhiêu % ở mỗi kỳ? (c) Từ dữ kiện ấy có thể khẳng định thiết bị đã đo được \(Q(1{,}5)\) không? (d) Nếu xét công thức trên biến thực như mô hình nội suy **bổ sung**, hãy nêu điều kiện cần nói rõ.
+
+*Chọn phương pháp:* Khi mỗi kỳ nhân cùng một tỷ lệ \(0{,}8\), dùng hàm mũ. Phải phân biệt **miền của hàm toán** với **các thời điểm đã ghi dữ liệu**.
+
+*Giải từng bước:* \(Q(0)=100\), \(Q(1)=80\), \(Q(2)=100\times(0{,}8)^2=64\) g. Mỗi kỳ còn 80% so với kỳ trước, nên giảm **20% của lượng ở kỳ trước**, không giảm đều 20 g. Thiết bị chỉ ghi tại các kỳ nguyên: không có số đo \(n=1{,}5\). Nếu muốn dùng \(100(0{,}8)^t\) cho \(t\) thực, cần tuyên bố đó là mô hình nội suy theo thời gian liên tục, nêu đơn vị, phạm vi và rằng con số không phải số đo trực tiếp.
+
+*Đường D6:* Nếu em trả lời "giảm 20 g mỗi kỳ", hãy tính 100→80→64 rồi so sánh: lần hai giảm 16 g. Nếu em khẳng định \(Q(1{,}5)\) là số liệu có sẵn, gạch dưới cụm "chỉ ghi cuối mỗi kỳ nguyên".
+
+**P-M4-10 — Miền chứa đồng thời điều kiện logarit và căn, mức chuyển giao.**
+
+*Đề tự làm:* Tìm tập xác định \(h(x)=\sqrt{\log_2 x}\) trong số thực. Giải thích điểm đầu mút nào **được** giữ và vì sao không cần loại riêng \(x=1\).
+
+*Chọn phương pháp:* Trước tiên đối số log phải dương để \(\log_2 x\) tồn tại; sau đó biểu thức **dưới dấu căn** phải không âm. Hai điều kiện là **giao**, không phải hợp.
+
+*Giải từng bước:* \(x>0\) và \(\log_2x\ge0\). Vì cơ số 2 lớn hơn 1, \(\log_2x\) là hàm tăng và \(\log_21=0\), nên \(\log_2x\ge0\iff x\ge1\). Giao với \(x>0\) cho \(D=[1,+\infty)\). **Kiểm:** \(h(1)=\sqrt0=0\) hợp lệ; \(h(1/2)=\sqrt{-1}\) không có giá trị thực; \(h(0)\) vô nghĩa ngay ở log.
+
+*Đường D6:* Nếu em chỉ ghi \(x>0\), em quên điều kiện căn. Nếu em ghi \(x>1\), em đã loại sai \(x=1\). Đọc lại "căn không âm", khác với "mẫu số khác 0".
+
+**Q15 classification readback:** P-M4-01/03/04/05/06/07/08/12 là micro, reuse hoặc biến thể họ đã có; P-M4-11 còn chờ kiểm trùng chuyển giao. **Không tính 12 ứng viên trong bảng thành 12 câu canonical mới.** Ba bài có lời giải đầy đủ ở trên mới là các candidate content khác biệt cần review; mọi stems/keys/solutions duy nhất nằm trong file M4 R01 này. Metadata de-dup độc lập tại file M4 Q15 ledger chỉ có diễn giải dạng, không tạo phiên bản đề/lời giải thứ hai.
+
 ## M4.8. Tự luận có rubric dự thảo (D4) — KHÔNG tạo Written bank thứ hai
 
 **CAND-WRI-M4-01 — Mô hình tuần hoàn tự đủ.** Một mô hình nhiệt độ \(T(t)=20+4\cos(\pi t/6)\) (°C), \(0\le t\le12\) giờ. Trên giấy: (a) nêu lý do chỉ xét miền đã cho; (b) tính biên độ, mức trung bình, chu kỳ của công thức; (c) tìm nhiệt độ lớn/nhỏ nhất trên miền và thời điểm; (d) giải thích vì sao không được suy nhiệt độ ngày hôm sau từ mô hình.  
