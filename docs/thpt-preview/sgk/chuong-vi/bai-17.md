@@ -23,12 +23,12 @@
 
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHVI-TRY11" data-outcome-id="B17_OUT_01">
 <summary>Em đã tự thử? Mở đáp án để đối chiếu</summary>
-<div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> \(\Delta=2^2-4\cdot1\cdot5=-16&lt;0\). Không có nghiệm thực, và \(f(x)&gt;0\) với mọi x.</p><p><strong>Vì sao:</strong> a=1&gt;0 nên parabol mở lên; không cắt Ox khi Δ&lt;0. Đồng thời \(f(x)=(x+1)^2+4&gt;0\) kiểm chứng trực tiếp.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
+<div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> <span class="arithmatex">\(\Delta=2^2-4\cdot1\cdot5=-16&lt;0\)</span>. Không có nghiệm thực, và <span class="arithmatex">\(f(x)&gt;0\)</span> với mọi x.</p><p><strong>Vì sao:</strong> a=1&gt;0 nên parabol mở lên; không cắt Ox khi Δ&lt;0. Đồng thời <span class="arithmatex">\(f(x)=(x+1)^2+4&gt;0\)</span> kiểm chứng trực tiếp.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
 </details>
 
 <details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-CHVI-TRY11"><summary>Gợi ý khắc phục khi chưa làm được — 5 bước</summary><ol><li><strong>Nhận diện lỗi:</strong> Chỉ thấy Δ âm mà kết luận f âm; quên xét dấu a.</li>
 <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
-<li><strong>Kiến thức gốc:</strong> Tam thức bậc hai là \(f(x)=ax^2+bx+c\) với a≠0. Dấu của f(x) tại x chính là vị trí đồ thị so với trục Ox; nghiệm f(x)=0 là chỗ giao/tiếp xúc Ox. Số nghiệm được quyết định bởi \(\Delta\), còn hướng mở theo a.</li>
+<li><strong>Kiến thức gốc:</strong> Tam thức bậc hai là <span class="arithmatex">\(f(x)=ax^2+bx+c\)</span> với a≠0. Dấu của f(x) tại x chính là vị trí đồ thị so với trục Ox; nghiệm f(x)=0 là chỗ giao/tiếp xúc Ox. Số nghiệm được quyết định bởi <span class="arithmatex">\(\Delta\)</span>, còn hướng mở theo a.</li>
 <li><strong>Tự sửa:</strong> Viết hai ô: a dương/âm và Δ âm/bằng 0/dương, rồi mới kết luận theo hình và công thức. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
 <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B17-C01">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol></details>
 <!-- G10_CHVI_R04_END:B17_OUT_01 -->
@@ -60,12 +60,12 @@ f(x)=ax^2+bx+c,\quad a\ne0.
 
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHVI-TRY12" data-outcome-id="B17_OUT_02">
 <summary>Em đã tự thử? Mở đáp án để đối chiếu</summary>
-<div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> \(f(x)&lt;0\) khi \(x\ne2\); \(f(x)\le0\) với mọi \(x\in\mathbb R\).</p><p><strong>Vì sao:</strong> Do −3 nhân bình phương luôn ≤0, chỉ bằng 0 khi x=2; khi x≠2 tích âm.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
+<div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> <span class="arithmatex">\(f(x)&lt;0\)</span> khi <span class="arithmatex">\(x\ne2\)</span>; <span class="arithmatex">\(f(x)\le0\)</span> với mọi <span class="arithmatex">\(x\in\mathbb R\)</span>.</p><p><strong>Vì sao:</strong> Do −3 nhân bình phương luôn ≤0, chỉ bằng 0 khi x=2; khi x≠2 tích âm.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
 </details>
 
 <details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-CHVI-TRY12"><summary>Gợi ý khắc phục khi chưa làm được — 5 bước</summary><ol><li><strong>Nhận diện lỗi:</strong> Nhầm nghiệm kép làm thay dấu hai phía, hoặc quên loại x0 ở dấu &lt;.</li>
 <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
-<li><strong>Kiến thức gốc:</strong> Với \(\Delta=0\), tam thức viết được dưới dạng \(a(x-x_0)^2\). Nó bằng 0 tại x0, có dấu của a ở mọi điểm khác; vì bình phương không âm nên không có sự đổi dấu khi đi qua nghiệm kép.</li>
+<li><strong>Kiến thức gốc:</strong> Với <span class="arithmatex">\(\Delta=0\)</span>, tam thức viết được dưới dạng <span class="arithmatex">\(a(x-x_0)^2\)</span>. Nó bằng 0 tại x0, có dấu của a ở mọi điểm khác; vì bình phương không âm nên không có sự đổi dấu khi đi qua nghiệm kép.</li>
 <li><strong>Tự sửa:</strong> Tô đậm điểm x0=2, thay x0 vào f được 0, xét số âm nhân bình phương ở hai phía. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
 <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B17-C02">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol></details>
 <!-- G10_CHVI_R04_END:B17_OUT_02 -->
@@ -116,12 +116,12 @@ Khi \(\Delta=0\), không xuất hiện khoảng đổi dấu qua nghiệm kép; 
 
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHVI-TRY13" data-outcome-id="B17_OUT_03">
 <summary>Em đã tự thử? Mở đáp án để đối chiếu</summary>
-<div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> \(x^2-5x+6=(x-2)(x-3)\le0\Rightarrow x\in[2;3]\).</p><p><strong>Vì sao:</strong> Parabol mở lên nên biểu thức ≤0 ở giữa hai nghiệm 2,3; dấu bằng buộc lấy cả 2 và 3.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
+<div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> <span class="arithmatex">\(x^2-5x+6=(x-2)(x-3)\le0\Rightarrow x\in[2;3]\)</span>.</p><p><strong>Vì sao:</strong> Parabol mở lên nên biểu thức ≤0 ở giữa hai nghiệm 2,3; dấu bằng buộc lấy cả 2 và 3.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
 </details>
 
 <details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-CHVI-TRY13"><summary>Gợi ý khắc phục khi chưa làm được — 5 bước</summary><ol><li><strong>Nhận diện lỗi:</strong> Chỉ ghi {2,3} thay vì cả [2,3], hoặc bỏ đầu mút dù dấu ≤.</li>
 <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
-<li><strong>Kiến thức gốc:</strong> Nghiệm của \(f(x)=0\) chia trục số thành những khoảng có dấu cố định. Để giải \(f(x)\le0\), ta chọn những khoảng mà f âm và <strong>lấy cả các nghiệm bằng 0</strong>; với dấu &lt; thì bỏ các đầu mút.</li>
+<li><strong>Kiến thức gốc:</strong> Nghiệm của <span class="arithmatex">\(f(x)=0\)</span> chia trục số thành những khoảng có dấu cố định. Để giải <span class="arithmatex">\(f(x)\le0\)</span>, ta chọn những khoảng mà f âm và <strong>lấy cả các nghiệm bằng 0</strong>; với dấu &lt; thì bỏ các đầu mút.</li>
 <li><strong>Tự sửa:</strong> Đặt dấu +−+ qua hai mốc x=2,3, lấy vùng âm cùng hai vị trí bằng 0. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
 <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B17-P01">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol></details>
 <!-- G10_CHVI_R04_END:B17_OUT_03 -->
@@ -154,12 +154,12 @@ Giải bất phương trình \(ax^2+bx+c\ >,\ge,<,\le\ 0\) bằng quy trình:
 
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHVI-TRY15" data-outcome-id="B17_OUT_05">
 <summary>Em đã tự thử? Mở đáp án để đối chiếu</summary>
-<div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> \(S=x(20-2x)\ge48\Leftrightarrow -2(x-4)(x-6)\ge0\Leftrightarrow x\in[4;6]\) (m), đã thuộc \(0&lt;x&lt;10\).</p><p><strong>Vì sao:</strong> Hai cạnh rộng x sử dụng 2x m lưới, cạnh còn lại 20−2x; dấu ≥ lấy hai đầu x=4,6 đều cho 48 m².</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
+<div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> <span class="arithmatex">\(S=x(20-2x)\ge48\Leftrightarrow -2(x-4)(x-6)\ge0\Leftrightarrow x\in[4;6]\)</span> (m), đã thuộc <span class="arithmatex">\(0&lt;x&lt;10\)</span>.</p><p><strong>Vì sao:</strong> Hai cạnh rộng x sử dụng 2x m lưới, cạnh còn lại 20−2x; dấu ≥ lấy hai đầu x=4,6 đều cho 48 m².</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
 </details>
 
 <details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-CHVI-TRY15"><summary>Gợi ý khắc phục khi chưa làm được — 5 bước</summary><ol><li><strong>Nhận diện lỗi:</strong> Bỏ điều kiện x&gt;0, 20−2x&gt;0, hoặc dùng cả bốn cạnh rào.</li>
 <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
-<li><strong>Kiến thức gốc:</strong> Với 20 m dây rào ba cạnh sát tường, đặt x là chiều rộng, chiều dài còn lại \(20-2x&gt;0\) đòi \(0&lt;x&lt;10\). Diện tích \(S(x)=x(20-2x)\). Bất phương trình S≥48 cho khoảng x, nhưng phải <strong>giao với miền hình học</strong> trước khi kết luận.</li>
+<li><strong>Kiến thức gốc:</strong> Với 20 m dây rào ba cạnh sát tường, đặt x là chiều rộng, chiều dài còn lại <span class="arithmatex">\(20-2x&gt;0\)</span> đòi <span class="arithmatex">\(0&lt;x&lt;10\)</span>. Diện tích <span class="arithmatex">\(S(x)=x(20-2x)\)</span>. Bất phương trình S≥48 cho khoảng x, nhưng phải <strong>giao với miền hình học</strong> trước khi kết luận.</li>
 <li><strong>Tự sửa:</strong> Vẽ ba đoạn lưới, viết 2x+L=20 rồi S=xL; cuối cùng kiểm từng nghiệm biên hợp hình. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
 <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B17-P04">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol></details>
 <!-- G10_CHVI_R04_END:B17_OUT_05 -->
@@ -191,12 +191,12 @@ Suy ra \(\boxed{3\le x\le6}\) (m); các nghiệm thỏa \(0<x<9\).
 
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHVI-TRY14" data-outcome-id="B17_OUT_04">
 <summary>Em đã tự thử? Mở đáp án để đối chiếu</summary>
-<div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> Vì a=1&gt;0, yêu cầu tương đương \(\Delta=(2m)^2-4\cdot1\cdot4=4m^2-16&lt;0\), nên \(-2&lt;m&lt;2\).</p><p><strong>Vì sao:</strong> Điều kiện tương đương m²&lt;4. Nếu m=±2 thì Δ=0, tam thức chạm Ox và bằng 0 tại một x nên không thỏa dấu nghiêm ngặt &gt;0.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
+<div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> Vì a=1&gt;0, yêu cầu tương đương <span class="arithmatex">\(\Delta=(2m)^2-4\cdot1\cdot4=4m^2-16&lt;0\)</span>, nên <span class="arithmatex">\(-2&lt;m&lt;2\)</span>.</p><p><strong>Vì sao:</strong> Điều kiện tương đương m²&lt;4. Nếu m=±2 thì Δ=0, tam thức chạm Ox và bằng 0 tại một x nên không thỏa dấu nghiêm ngặt &gt;0.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
 </details>
 
 <details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-CHVI-TRY14"><summary>Gợi ý khắc phục khi chưa làm được — 5 bước</summary><ol><li><strong>Nhận diện lỗi:</strong> Nhầm Δ≤0 với Δ&lt;0 trong điều kiện “&gt;0 mọi x”, hoặc tự mở rộng sang a(m)=0.</li>
 <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
-<li><strong>Kiến thức gốc:</strong> Xét \(f_m(x)=x^2+2mx+4\). Do hệ số trước x² luôn \(1&gt;0\), để \(f_m(x)&gt;0\) với mọi \(x\in\mathbb R\) cần và đủ parabol mở lên <strong>không chạm, không cắt</strong> Ox: \(\Delta&lt;0\). Nếu dấu yêu cầu là ≥0 thì \(\Delta\le0\) cũng được; phân biệt dấu là bản chất.</li>
+<li><strong>Kiến thức gốc:</strong> Xét <span class="arithmatex">\(f_m(x)=x^2+2mx+4\)</span>. Do hệ số trước x² luôn <span class="arithmatex">\(1&gt;0\)</span>, để <span class="arithmatex">\(f_m(x)&gt;0\)</span> với mọi <span class="arithmatex">\(x\in\mathbb R\)</span> cần và đủ parabol mở lên <strong>không chạm, không cắt</strong> Ox: <span class="arithmatex">\(\Delta&lt;0\)</span>. Nếu dấu yêu cầu là ≥0 thì <span class="arithmatex">\(\Delta\le0\)</span> cũng được; phân biệt dấu là bản chất.</li>
 <li><strong>Tự sửa:</strong> Thử m=2 để thấy nghiệm kép làm f bằng 0; khóa a=1 cố định, giải riêng Δ&lt;0. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
 <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B17-P03">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol></details>
 <!-- G10_CHVI_R04_END:B17_OUT_04 -->
