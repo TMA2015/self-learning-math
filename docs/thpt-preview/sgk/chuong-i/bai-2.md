@@ -26,7 +26,7 @@ Em hãy đọc tình huống, nhớ lại kiến thức cũ và tự trả lời
 
 **Tự thử trước Core** Cho A={2,4}. Đánh giá ba phát biểu: (a) 2∈A; (b) {2}⊆A; (c) {2}∈A.
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY06">
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY06" markdown="1">
 <summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
 
 (a) **đúng** vì 2 là phần tử của A. (b) **đúng** vì phần tử duy nhất 2 của {2} nằm trong A. (c) **sai** vì A gồm hai phần tử là các số 2 và 4, không có phần tử là tập {2}.
@@ -49,7 +49,7 @@ Em hãy đọc tình huống, nhớ lại kiến thức cũ và tự trả lời
 
 **Tự thử trước Core** Cho A={a,b,c}, B={b,c,d}. Hãy viết A∩B, A∪B và số phần tử của mỗi tập kết quả.
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY07">
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY07" markdown="1">
 <summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
 
 A∩B={b,c}, có 2 phần tử; A∪B={a,b,c,d}, có 4 phần tử, không đếm b,c hai lần.
@@ -72,7 +72,7 @@ A∩B={b,c}, có 2 phần tử; A∪B={a,b,c,d}, có 4 phần tử, không đế
 
 **Tự thử trước Core** A={1,2,3,4}, B={2,4,6}. Tính A\B và B\A. Hai tập kết quả có bằng nhau không?
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY08">
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY08" markdown="1">
 <summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
 
 A\B={1,3}; B\A={6}. **Không bằng nhau**, vì chẳng hạn 1 nằm trong A\B nhưng không nằm trong B\A.
@@ -95,7 +95,7 @@ A\B={1,3}; B\A={6}. **Không bằng nhau**, vì chẳng hạn 1 nằm trong A\B 
 
 **Tự thử trước Core** Với U={0,1,2,3,4,5} và A={1,3,5}, tìm phần bù của A trong U. Vì sao cần ghi U?
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY09">
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY09" markdown="1">
 <summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
 
 U\A={0,2,4}. Cần U vì “không thuộc A” chỉ có nghĩa trong phạm vi được xét; thay U sẽ có thể thay phần bù.
@@ -118,7 +118,7 @@ U\A={0,2,4}. Cần U vì “không thuộc A” chỉ có nghĩa trong phạm vi
 
 **Tự thử trước Core** Cho X=(-2,4] và Y=[1,6). Tìm X∩Y và X∪Y. Với mỗi kết quả, cho biết 1, 4 và 6 có thuộc hay không.
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY10">
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY10" markdown="1">
 <summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
 
 X∩Y=[1,4], gồm 1 và 4 nhưng không có 6. X∪Y=(-2,6), gồm 1,4 nhưng không có 6 (cũng không có -2).
@@ -141,7 +141,7 @@ X∩Y=[1,4], gồm 1 và 4 nhưng không có 6. X∪Y=(-2,6), gồm 1,4 nhưng k
 
 **Tự thử trước Core** Một lớp có 32 học sinh; 18 bạn tham gia CLB Âm nhạc, 15 bạn tham gia CLB Thể thao và 6 bạn tham gia cả hai. Hãy tính số bạn chỉ tham gia mỗi CLB và số bạn không tham gia CLB nào.
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY11">
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY11" markdown="1">
 <summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
 
 Chỉ Âm nhạc: 18−6=12; chỉ Thể thao: 15−6=9; tham gia ít nhất một CLB: 12+6+9=27; không tham gia CLB nào: 32−27=5. Bốn miền 12+6+9+5=32, khớp sĩ số.
@@ -195,6 +195,21 @@ Chỉ Âm nhạc: 18−6=12; chỉ Thể thao: 15−6=9; tham gia ít nhất m�
 <p><strong>Tự sửa:</strong> Vẽ bốn miền Venn; điền giao trước, trừ ra hai miền chỉ một tập, cuối cùng lấy tổng U trừ hợp. Với khoảng, tô đúng đầu mút và dùng giao/hợp.</p>
 <p><strong>Tiền đề:</strong> EX-G10-B02-03</p>
 <p><strong>Luyện lại:</strong> <a data-thpt-formative-id="THPT-G10-B02-C02" href="../luyen-tap/?item=THPT-G10-B02-C02">B02-C02</a> · <a data-thpt-formative-id="THPT-G10-B02-P02" href="../luyen-tap/?item=THPT-G10-B02-P02">B02-P02</a> · <a data-thpt-formative-id="THPT-G10-B02-P05" href="../luyen-tap/?item=THPT-G10-B02-P05">B02-P05</a></p>
+</details>
+
+<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-B02-03" markdown="1">
+<summary>Khi nhầm khoảng, đoạn và dấu ngoặc ở đầu mút</summary>
+
+1. **Nhận biết dấu hiệu sai:** Em viết sai ngoặc ở 1,4 hoặc 6 khi tìm hợp/giao hai khoảng.
+
+2. **Nhớ lại tiền đề:** Hỏi “1 có thuộc X? thuộc Y?”; đọc đúng dấu ≤/< và ý nghĩa ngoặc vuông/tròn. Luôn tách từng điều kiện.
+
+3. **Xem ví dụ đã duyệt:** Quay về Kiến thức SGK Bài 2 “Khoảng/đoạn/nửa khoảng” và Ví dụ 2 (X=(-∞,3], Y=(1,+∞)); giải thích vì sao 1 bị loại, 3 được lấy trong giao.
+
+4. **Tự sửa câu ngắn:** X=(-2,4], Y=[1,6). Thử từng giá trị -2,1,4,6 và xác định có ở hợp/giao; chỉ sau đó viết khoảng.
+
+5. **Quay lại & tự đối chiếu:** Làm lại câu Tự thử về khoảng/đoạn ở phía trên và hai item R01 các câu Core/Luyện tập về khoảng và đoạn, tự mở đối chiếu; không dùng kết quả làm Mastery hay xác nhận official Readiness.
+
 </details>
 
 ## 4. Tiếp tục học
