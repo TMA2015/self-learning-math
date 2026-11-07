@@ -45,6 +45,33 @@ const counts=[11,12,14,14,15],helpc=[6,6,6,7,7],figurec=[1,1,1,2,1];
     }
     await check("chuong-i/luyen-tap/");
     await verifyG12GoldenHub(page,{chapter:"I",selector:"[data-g12-chi-hub]",lessons:5,groups:10,items:66,helps:32});
+    // Targeted W01/W02 DELTA_C: reviewed answer/solution/D6 only after the learner submits.
+    await page.locator("#b01-practice button[data-g12-golden-open]").click();
+    const writtenDialog=page.locator('dialog[data-g12-golden-dialog="I"]');
+    assert(await writtenDialog.isVisible(),"W01/W02 stay in original B01 Golden Practice group");
+    const numbers=writtenDialog.locator(".thpt-r4-modal-question-nav button");
+    for(const id of ["THPT-G12-CHI-B01-W01","THPT-G12-CHI-B01-W02"]){
+     let found=false;
+     for(let k=0;k<await numbers.count();k++){
+      await numbers.nth(k).click();
+      if((await writtenDialog.locator("[data-thpt-canonical-item]").getAttribute("data-thpt-canonical-item"))===id){found=true;break}
+     }
+     assert(found,"Same original canonical item in B01: "+id);
+     assert.equal(await writtenDialog.locator(".thpt-g12-golden-solution:visible").count(),0,"Reviewed worked solution cannot be opened before self-attempt "+id);
+     assert.equal(await writtenDialog.locator(".thpt-g12-golden-solution[open]").count(),0);
+     await writtenDialog.locator(".thpt-r4-formative-submit").click();
+     assert.equal(await writtenDialog.locator(".thpt-g12-golden-solution:visible").count(),0,"Empty submission does not release solution "+id);
+     await writtenDialog.locator('textarea[aria-label="Lời giải của em"]').fill("Em đã tự làm, muốn đối chiếu "+id);
+     await writtenDialog.locator(".thpt-r4-formative-submit").click();
+     const solution=writtenDialog.locator(".thpt-g12-golden-solution");
+     assert(await solution.isVisible(),"Reviewed solution visible only after attempted submit "+id);
+     assert.equal(await solution.getAttribute("open"),"","Written result deliberately opened after submit "+id);
+     const compare=await solution.innerText();
+     assert(compare.includes("Bước 1")&&compare.includes("Bước 5")&&compare.includes("D6 sau đối chiếu"),"Five-step reviewed worked solution + D6 "+id);
+     assert(compare.includes("Tiêu chí tự đối chiếu tự luận /4"),"Original G12 ChI rubric must be /4 "+id);
+     assert(await writtenDialog.locator('textarea[aria-label="Lời giải của em"]').isDisabled());
+    }
+    await writtenDialog.locator("[aria-label='Đóng cửa sổ']").click();
     await check("chuong-i/tu-kiem-tra-chuong/");
     const root=page.locator('[data-g12-chi-selfcheck="END"]');
     await page.waitForFunction(()=>document.querySelector("[data-g12-chi-selfcheck]")?.dataset.g12ChiReady==="true",null,{timeout:30000});
