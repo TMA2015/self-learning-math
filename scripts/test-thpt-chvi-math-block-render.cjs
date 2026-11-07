@@ -8,11 +8,13 @@ const built=process.argv.includes("--built");
 const decode=text=>text.replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&amp;/g,"&").replace(/&quot;/g,'"').replace(/&#39;/g,"'");
 for(const [lesson,count] of Object.entries(displayExpected)){
  const source=read("docs/thpt-preview/sgk/chuong-vi/bai-"+lesson+".md");
+ const original=source.replace(/<!-- G10_CHVI_R04_BEGIN:(B\d\d_OUT_\d\d) -->[\s\S]*?<!-- G10_CHVI_R04_END:\1 -->\n\n/g,"");
+ assert(!original.includes("G10_CHVI_R04_BEGIN"),"All new review blocks must be removable for exact old math parity");
  const displays=[...source.matchAll(/(?:^|\n\n)\\\[\n([\s\S]*?)\n\\\](?=\n\n|$)/g)].map(m=>m[1].trim());
  assert.equal((source.match(/\\\[\n/g)||[]).length,count,"B"+lesson+": display math opening delimiters");
  assert.equal((source.match(/\n\\\]/g)||[]).length,count,"B"+lesson+": display math closing delimiters");
  assert.equal(displays.length,count,"B"+lesson+": display TeX must be on own separated Markdown block");
- const fullInline=[...source.matchAll(/\\\(([\s\S]*?)\\\)/g)].map(m=>m[1]);
+ const fullInline=[...original.matchAll(/\\\(([\s\S]*?)\\\)/g)].map(m=>m[1]);
  if(lesson in inlineExpected){
   assert.equal(fullInline.length,inlineExpected[lesson],"B"+lesson+": full-page inline math count drift");
   const answerStart=source.indexOf("<details><summary>");
@@ -33,17 +35,19 @@ for(const [lesson,count] of Object.entries(displayExpected)){
    const end=html.indexOf("</article>",start);
    assert(start>=0&&end>start,"B"+lesson+": article not built");
    const article=html.slice(start,end);
-   const htmlInline=[...article.matchAll(/<span class="arithmatex">\\\(([\s\S]*?)\\\)<\/span>/g)].map(m=>m[1]);
+   const originalArticle=article.replace(/<!-- G10_CHVI_R04_BEGIN:(B\d\d_OUT_\d\d) -->[\s\S]*?<!-- G10_CHVI_R04_END:\1 -->/g,"");
+   assert(!originalArticle.includes("G10_CHVI_R04_BEGIN"),"Original learner math must be isolatable from reviewed new blocks");
+   const htmlInline=[...originalArticle.matchAll(/<span class="arithmatex">\\\(([\s\S]*?)\\\)<\/span>/g)].map(m=>m[1]);
    assert.equal(htmlInline.length,fullInline.length,
     "B"+lesson+": one or more inline TeX formulas remain plain visible text");
    for(let i=0;i<fullInline.length;i++)assert.equal(decode(htmlInline[i]),fullInline[i],
     "B"+lesson+": altered TeX expression at inline "+(i+1));
-   const outside=article.replace(/<(?:span|div) class="arithmatex">[\s\S]*?<\/(?:span|div)>/g,"");
+   const outside=originalArticle.replace(/<(?:span|div) class="arithmatex">[\s\S]*?<\/(?:span|div)>/g,"");
    assert(!/\\(?:sqrt|iff|Delta|frac|ge|le|infty|begin\{|mathbb|boxed)\b/.test(outside),
     "B"+lesson+": unrendered TeX commands outside math wrappers");
-   const startAnswer=article.indexOf("<details><summary>"),endAnswer=article.indexOf("</details>",startAnswer);
+   const startAnswer=originalArticle.indexOf("<details><summary>"),endAnswer=article.indexOf("</details>",startAnswer);
    assert(startAnswer>=0&&endAnswer>startAnswer,"B"+lesson+": written answers must remain available");
-   const answer=article.slice(startAnswer,endAnswer);
+   const answer=originalArticle.slice(startAnswer,endAnswer);
    assert.equal((answer.match(/<li>/g)||[]).length,3,"B"+lesson+": original 3 written solutions lost");
    assert.equal((answer.match(/<span class="arithmatex">/g)||[]).length,9,
     "B"+lesson+": hidden answers have unrendered TeX");
