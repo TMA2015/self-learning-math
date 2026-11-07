@@ -15,6 +15,7 @@
 .wrap{max-width:980px;margin:0 auto;padding:18px 16px 60px}
 .notice{font-size:.86rem;background:#fff5d9;border:1px solid #e8ca75;padding:12px 16px;border-radius:12px;margin:0 0 16px}
 .controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:16px 0}
+[hidden]{display:none!important}
 .controls button{padding:10px 16px;border-radius:10px;border:1px solid #9daccc;background:#fff;color:#192c5f}
 .controls button[aria-pressed=true]{background:#304bc2;color:#fff;border-color:#304bc2}
 .controls .hint{margin-left:auto;color:#52617e;font-size:.8rem}
@@ -138,8 +139,21 @@ document.getElementById("view-b").setAttribute("aria-pressed",String(mode==="B")
 }
 document.getElementById("view-a").addEventListener("click",function(){toggle("A");});
 document.getElementById("view-b").addEventListener("click",function(){toggle("B");});
-toggle("A");
-window.__SLM_B01_RESEARCH={source:raw,sourceLength:raw.length,baseline:function(){toggle("A");},variant:function(){toggle("B");}};
+/* T4: facilitator chooses ?participant=A or ?participant=B before giving the
+ * offline file to a learner. Review default keeps both comparison buttons. */
+var assigned=(new URLSearchParams(location.search)).get("participant");
+var learnerMode=assigned==="A"||assigned==="B";
+if(learnerMode){
+ document.documentElement.dataset.trialParticipant="true";
+ document.querySelector(".controls").hidden=true;
+ document.querySelector(".source-note").hidden=true;
+ document.querySelector(".top h1").textContent="Toán 12 · Bài 1. Tính đơn điệu và cực trị của hàm số";
+ document.querySelector(".top p").textContent="Đọc bài độc lập. Sau khi đọc, trả lời hai nhiệm vụ trong phiếu người học do người hướng dẫn phát.";
+ document.querySelector(".notice").textContent="Tài liệu đọc thử nghiệm, không phải website chính thức. Không gửi dữ liệu, không chấm điểm hoặc ghi tiến độ học tập.";
+ toggle(assigned);
+}else toggle("A");
+window.__SLM_B01_RESEARCH=learnerMode?Object.freeze({sourceLength:raw.length,participant:true}):
+ Object.freeze({source:raw,sourceLength:raw.length,baseline:function(){toggle("A");},variant:function(){toggle("B");}});
 })();
 </script>
 </body>
