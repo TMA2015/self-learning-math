@@ -11,7 +11,7 @@ ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/transfer-written-r00-20261106/Temp_G10_CHVII_FULL_R03_WITH_TRANSFER_DELTA_C_20261107.md
 ACADEMIC_SOURCE_BLOB: 3ec28c8fb8cb0d63ea390546bba5a2edf9510e0d
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/transfer-written-r00-20261106/Temp_G10_CHVII_TRANSFER_R00_COMPOSITE_REVIEW_CHAIN_20261107.md
-REVIEW_RECEIPT_BLOB: 88f6fdeadefc2085cff8c1978be1267311579e25
+REVIEW_RECEIPT_BLOB: c90275d306ddef83026bc2b2f25f21930ec573eb
 ACADEMIC_VERDICT: PASS
 PEDAGOGICAL_VERDICT: PASS
 BLOCKERS: NONE
@@ -263,7 +263,7 @@ One normative source `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.
 
 ## REVIEW_SOURCE_RECEIPT
 
-Original independently reviewed chapter: `prototypes/thpt/release-handoffs/G10-SGK-CHVII-FULL-R02_HANDOFF_V2_20261105.md` blob `903730482da1bcccf9ab387fff95339ddf83a273`. New reviewer TXT original Git blob `865bb30feca7b4ade054b9b53d6306044b2d5e9f` verifies all affected new source IDs and Academic/PED PASS with P0/P1/P2=0. Author composite chain `88f6fdeadefc2085cff8c1978be1267311579e25` includes exact new full academic source blob `3ec28c8fb8cb0d63ea390546bba5a2edf9510e0d`; it is an author reconciliation, **not** a new independent reviewer. Review reports 5 Permanent THPT v2.1 and KNTT S1; raw NotebookLM Studio-byte equality cannot be proved from reported sizes, documented in `Temp_TRANSFER_R00_REVIEW_RECEIPT_RECONCILIATION_20261106.md`.
+Original independently reviewed chapter: `prototypes/thpt/release-handoffs/G10-SGK-CHVII-FULL-R02_HANDOFF_V2_20261105.md` blob `903730482da1bcccf9ab387fff95339ddf83a273`. New reviewer TXT original Git blob `865bb30feca7b4ade054b9b53d6306044b2d5e9f` verifies all affected new source IDs and Academic/PED PASS with P0/P1/P2=0. Author composite chain `c90275d306ddef83026bc2b2f25f21930ec573eb` includes exact new full academic source blob `3ec28c8fb8cb0d63ea390546bba5a2edf9510e0d`; it is an author reconciliation, **not** a new independent reviewer. Review reports 5 Permanent THPT v2.1 and KNTT S1; raw NotebookLM Studio-byte equality cannot be proved from reported sizes, documented in `Temp_TRANSFER_R00_REVIEW_RECEIPT_RECONCILIATION_20261106.md`.
 
 ## DELTA_LEDGER
 
