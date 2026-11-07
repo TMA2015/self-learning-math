@@ -39,6 +39,14 @@
 - `DELTA_A_UI`: not invoked here. `DELTA_B_SOURCE_EQUIVALENT`: G12 pagination receipt correction only, with log and no math change. `DELTA_C_ACADEMIC_MATERIAL`: M4–M7 entirely new conceptual/teacher-free explanations plus distinct public candidates; **requires independent Academic AND PED review of reviewed scope**. `DELTA_D_BLOCKER`: hold missing page/outcome source or any academic blocker.
 - Q18: QA scripts and Git blobs are author preflight. They **never** create NotebookLM SOURCE_RECEIPT or reviewer verdict. Snapshot PASS remains attached to immutable reviewed source, not general module name.
 
+## 3b. NotebookLM batch prepared for M4–M7 — one source, no reviewer verdict yet (R05)
+
+- Review input: `Temp_TOPIC_FUNCTIONS_M4_M7_ONE_SOURCE_NOTEBOOKLM_INDEPENDENT_DELTA_C_PACKET_R01_20261107.md`, Git blob `39548922eddee9712441a264424e08f61c6de966`, **181,533 characters**. It embeds exactly **12 verbatim SHA-matched source files** across M4–M7: one Knowledge R01, one canonical Q15 ledger, one author QA receipt per module. Each original Git blob SHA was checked against the full embedded source text on this exact PR branch; 12/12 exact readback PASS.
+- Reviewer prompt: `Temp_TOPIC_FUNCTIONS_M4_M7_NOTEBOOKLM_REVIEW_PROMPT_R01_20261107.txt`, Git blob `5cd7d84dc099c7f106916a6725e2c6dfe069df84`, **five Vietnamese sentences**, to COPY into NotebookLM, not add as a second source. Because review input is **one Markdown source**, no Temp ZIP is necessary (12 originals are appendices inside this one source).
+- Select exactly **five Permanent Sources THPT v2.1** and original SGK/SBT KNTT S1, not v2.0, no sixth Permanent Source. Require per-outcome Academic+PED verdict, Q01–Q18 and D1–D6/PED evidence, P0/P1/P2, MINIMAL_DELTA, exact `SOURCE_RECEIPT`. No auto-PASS, no V2 handoff until actual reviewer response.
+- M1–M3 remain a **separate** exact review packet Git blob `29e067b51aa0b731185be1ddb1f9e40bd0556760`; the owner's other M1–M3 reported PASS mismatches the current bridge outcome mapping and source SHA; `SOURCE_SNAPSHOT_MISMATCH_HOLD` remains. G12 original SGK ChI R00 independent PASS receipt blob `8fef1c7dbd9b404881ff40cec8147c9ae89ef473` preserved, not inherited by new Topic M7.
+- The combined packet deliberately contains **no official protected RD1 item/answer/rubric**; Q16 full Topic held-out independent Readiness and Final Submit remain unproven. Public practice solutions exposed in author material cannot be rebranded as independent unseen testing.
+
 ## 4. P0/P1 blocker register for closing one pilot coherently
 
 | Blocker ID | Precisely unresolved gate | Minimal close condition |
