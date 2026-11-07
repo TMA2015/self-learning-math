@@ -3,9 +3,9 @@
 
 ## 1. Khóa nguồn và giới hạn so sánh
 
-- Variant A và B của prototype \`G12_B01_PRESENTATION_AB_20261104.html\` dùng **cùng nội dung canonical snapshot cũ** \`docs/thpt-preview/sgk/lop-12/chuong-i/bai-1.md\`, Git blob \`7fc40081bb3f1e104e38e2c86a5bc1e8217e77cc\` và cùng SVG; B chỉ thay bố cục/tiến trình thị giác và cách lộ metadata, không viết lại kiến thức. Bản pilot **không phải** production pixel-perfect.
-- **Drift production cần công bố:** main tại thời điểm rà 06/11/2026 (\`6baa24b86782d38348bef7d67132efefc0339516\`) có blob B01 \`64f6a142a88e8c4dd63dff3f7d2220787fcdec5c\`. Khác ở đoạn giới thiệu cách học và §7 điều hướng sang Core/Luyện tập chương (DELTA_A_UI), trong khi các đoạn toán §1–§6 chưa đổi về văn bản. **Không coi A là bản production hiện tại**, không đánh đồng kết quả pilot với hiệu quả trên website đã phát hành.
-- Chuẩn THPT đang hiệu lực trên \`main\`: **SLM-THPT-QUALITY-ONE v1.2.0**, Q01–Q18 (v1.1.0 trong metadata lịch sử #743 chỉ mô tả snapshot khi nghiên cứu bắt đầu). Không tạo Q19 hoặc chuẩn khác. Chủ dự án chưa phê duyệt merge/deploy prototype hay thay academic source.
+- Variant A và B của prototype `G12_B01_PRESENTATION_AB_20261104.html` dùng **cùng nội dung canonical snapshot cũ** `docs/thpt-preview/sgk/lop-12/chuong-i/bai-1.md`, Git blob `7fc40081bb3f1e104e38e2c86a5bc1e8217e77cc` và cùng SVG; B chỉ thay bố cục/tiến trình thị giác và cách lộ metadata, không viết lại kiến thức. Bản pilot **không phải** production pixel-perfect.
+- **Drift production cần công bố:** main tại thời điểm rà 06/11/2026 (`6baa24b86782d38348bef7d67132efefc0339516`) có blob B01 `64f6a142a88e8c4dd63dff3f7d2220787fcdec5c`. Khác ở đoạn giới thiệu cách học và §7 điều hướng sang Core/Luyện tập chương (DELTA_A_UI), trong khi các đoạn toán §1–§6 chưa đổi về văn bản. **Không coi A là bản production hiện tại**, không đánh đồng kết quả pilot với hiệu quả trên website đã phát hành.
+- Chuẩn THPT đang hiệu lực trên `main`: **SLM-THPT-QUALITY-ONE v1.2.0**, Q01–Q18 (v1.1.0 trong metadata lịch sử #743 chỉ mô tả snapshot khi nghiên cứu bắt đầu). Không tạo Q19 hoặc chuẩn khác. Chủ dự án chưa phê duyệt merge/deploy prototype hay thay academic source.
 - Chỉ đo hiệu quả **hiển thị cùng nguyên liệu học thuật**; phần được khảo sát là hiểu dấu đạo hàm, điều kiện trên khoảng và nhận biết cực trị. Không mở câu hỏi chính thức, không ghi Firebase, Skill Mastery, RD1 hay tên học sinh.
 
 ## 2. Đối tượng, phân nhóm và kiểm soát
@@ -13,6 +13,8 @@
 Đề nghị 4–8 người học Toán 12 (nếu có thể), chưa từng đọc riêng biến thể A/B. Nếu ít người hơn, chỉ có báo cáo quan sát thăm dò, tuyệt đối không tuyên bố hiệu quả thống kê. Dùng mã vô danh P01…; không ghi họ tên, lớp/trường, địa chỉ, account, IP, ảnh mặt hoặc dữ liệu cá nhân vào repo. Phân nhóm A/B ngẫu nhiên hoặc luân phiên cân bằng theo kiến thức tiền đề; **mỗi người chỉ xem MỘT biến thể** để tránh học trước làm nhiễu kết quả.
 
 Giữ nguyên thời lượng tối đa, thiết bị, mức trợ giúp, nguồn nội dung và câu hỏi sau học. Thời lượng gợi ý: kiểm tra tiền đề 2 phút; đọc độc lập ≤8 phút; 2 nhiệm vụ sau đọc ≤6 phút; đánh giá trải nghiệm 1 phút. Không sử dụng Gemini/AI/đáp án trong lúc thử, không xem Core/Practice trước kiểm tra; không ghi hành vi tìm đáp án như kết quả đo khả năng hiểu.
+
+**Phiếu cho học sinh (không có đáp án):** [`G12_B01_T4_LEARNER_WORKSHEET_20261107.md`](G12_B01_T4_LEARNER_WORKSHEET_20261107.md). Chỉ người hướng dẫn dùng rubric bên dưới để chấm sau khi nhận câu trả lời; không phát protocol kèm đáp án cho người học.
 
 ## 3. Phiếu đánh giá — dùng y nguyên cho A và B
 
@@ -42,8 +44,8 @@ Trước khi ra quyết định, kiểm tra: (i) chênh lệch kiến thức ti�
 ## 5. Cổng kết luận và ranh giới Delta
 
 - **Đang có:** T2 source/outcome audit và T3 prototype A/B nguồn-khóa; browser QA prototype trên 390/820/1440 đã SUCCESS ở snapshot #743 trước đây.
-- **Chưa có:** T4 phản hồi/nghiệm vụ của người học thật, so sánh năng lực độc lập, owner decision T5. Đến khi có dữ liệu: \`T4_LEARNER_EVIDENCE=PENDING\`, \`T5_OWNER_REVIEW=PENDING\`, \`PRODUCTION_CHANGE=NONE\`.
-- Nếu B chỉ sắp xếp lại cùng văn bản/hình/metadata: đề xuất \`DELTA_A_UI\`, kiểm chứng AP1–AP5 và quyền owner trước khi merge/deploy **PR riêng**. Nếu cần thêm phép tương tự, viết lại giải thích, đổi điều kiện hay ví dụ: \`DELTA_C_ACADEMIC_MATERIAL\`, trả AUTHORING/NotebookLM phản biện đúng phần bị ảnh hưởng, không đi cửa RELEASE.
+- **Chưa có:** T4 phản hồi/nghiệm vụ của người học thật, so sánh năng lực độc lập, owner decision T5. Đến khi có dữ liệu: `T4_LEARNER_EVIDENCE=PENDING`, `T5_OWNER_REVIEW=PENDING`, `PRODUCTION_CHANGE=NONE`.
+- Nếu B chỉ sắp xếp lại cùng văn bản/hình/metadata: đề xuất `DELTA_A_UI`, kiểm chứng AP1–AP5 và quyền owner trước khi merge/deploy **PR riêng**. Nếu cần thêm phép tương tự, viết lại giải thích, đổi điều kiện hay ví dụ: `DELTA_C_ACADEMIC_MATERIAL`, trả AUTHORING/NotebookLM phản biện đúng phần bị ảnh hưởng, không đi cửa RELEASE.
 - Không thay văn bản chuẩn Q01–Q18 khi chưa có quyết định owner về yêu cầu chất lượng mới. Bất cứ thay đổi tiêu chuẩn nào vẫn dùng một file canonical và lịch sử phiên bản theo governance.
 
-**Checkpoint:** \`T4_TEST_PROTOCOL_READY / REAL_LEARNER_DATA_NOT_COLLECTED / HISTORICAL_SOURCE_LOCK_UNCHANGED / Q01-Q18_v1.2.0 / NO_MERGE_NO_DEPLOY\`.
+**Checkpoint:** `T4_TEST_PROTOCOL_READY / REAL_LEARNER_DATA_NOT_COLLECTED / HISTORICAL_SOURCE_LOCK_UNCHANGED / Q01-Q18_v1.2.0 / NO_MERGE_NO_DEPLOY`.
