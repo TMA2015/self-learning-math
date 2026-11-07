@@ -37,13 +37,21 @@
 
 **Q15 important distinction:** A verified original Git source SHA is an actual immutable source snapshot, NOT an invented item's `content_version`. For original 192 IDs, reuse the original canonical version unchanged; if legacy source does not expose an explicit per-item version, RELEASE must map the existing import without cloning. The four new public R13 entries have explicit AUTHORING registration `content_version=1.0.0`. Missing legacy field formatting is **not**, by itself, a reason to trigger another academic NotebookLM review.
 
-## 3. A1–A7 AUTHORING control outcome and readiness decision
+## 3. Actual A1–A7 PRE-HANDOFF criteria from authoritative unified v1.2.0 source
 
-- **A1/A2 source and scope:** read-backed existing SGK/SBT source receipts and original reviewed concept modules, 48 outcome coverage.
-- **A3/A4 pedagogy and actual item source:** R14 source-equivalent learner knowledge and R15 shared bank without duplicate item/rubric.
-- **A5 figure/help:** known existing figure/HELP pointers with original mathematical meaning; no fabricated new SVG in AUTHORING.
-- **A6 source/semantic QA:** no new errors proven in accepted knowledge; R13 four prior-reviewed public questions remain unchanged; R14/R15/R16 hashes verified via Git readback or private transport. No redundant NotebookLM re-review.
-- **A7 independent Academic/PED + handoff:** original modules PASS; **new Q16 protected assessment source** still requires one narrow owner NotebookLM verdict. Thus **A7=HOLD_PENDING_PRIVATE_ASSESSMENT_REVIEW**, not a reason to re-run original M1–M7 reviews.
+Source of checklist: GitHub `main`, `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`, Section IX, blob `2d7a3d951b4b2968376ab5b0a6e989a7e6cd8b4e`. **These are the original seven evidence gates, NOT alternative criteria**.
+
+| Authoring gate | Exact criterion in official Section IX | Current evidence/disposition |
+|---|---|---|
+| A1 | S1 SGK/chương trình Core canonical Git blob, version/commit, checked original printed-page mappings; SBT provenance and documented reference gap if any | ORIGINAL module source receipts collected on R10/R11; no extra fabricated SBT page numbers |
+| A2 | Accurate outcome/scope and coverage of real problem families | 48 outcome routes + varied original source examples, R11–R15; module Academic/PED PASS preserved |
+| A3 | BOTH Academic AND PED independent review receipt matching actual source snapshot | M1–M7 PASS according owner-supplied reviewer on original content; **new private Q16 source review is PENDING** |
+| A4 | Lesson/outcome/item matrix: item IDs, role/placement, primary outcome, integrated outcome evidence | R12 192 actual IDs +48 routes, R13 4 new source pointers, R15 28 single-library Written refs; **exact runtime `placement_id` not claimed registered** |
+| A5 | D1–D6 + PED1–PED6 per outcome, including real question/level/type coverage | Original source reviewed and R14–R15 source-preserving compilation; browser rendering is still RELEASE |
+| A6 | Delta log actually closes affected changes C/D | M1–M7 original source PASS preserved; R14–R15 source-equivalent assembly, R13 metadata; **new Q16 private assessment is a Delta C pending focused independent review**, so A6 not fully CLOSED yet |
+| A7 | RD1 private custody count/hash with truthful exposure mode | R16 owner-held 30-question/48-outcome private ZIP recorded by hashes only; **official independent reviewer verdict + release-protected exposure not yet proven** |
+
+**A3/A6/A7 remain legitimately blocked for the newly authored private assessment only** until owner NotebookLM gives academic and pedagogical verdict. A4 exact live placement/runtime compatibility belongs to independent RELEASE QA after valid AUTHORING handoff; this is not an excuse to rerun scholarly NotebookLM reviews or create duplicate canonical bank.
 
 ## 4. Exactly ONE remaining scholarly dependency before final AUTHORING handoff
 
