@@ -84,7 +84,7 @@ for(const q of bank.items){
    assert.equal(originalAnswer,"",q.item_id+" original R00 answer remains empty on locked source");
    assert(q.answer.length>120&&q.solution?.length>700,q.item_id+" target reviewed answer and D6");
    assert(q.solution.includes("**D6 sau đối chiếu:**"),q.item_id+" post-comparison remedial route");
-   assert.equal(fnv(q.answer+"\\0"+q.solution),deltaChecksums.get(q.item_id),q.item_id+" exact reviewed DELTA C answer/solution");
+   assert.equal(fnv(q.answer+String.fromCharCode(0)+q.solution),deltaChecksums.get(q.item_id),q.item_id+" exact reviewed DELTA C answer/solution");
  }else{
    assert.equal(q.answer,originalAnswer,q.item_id+" historic answer unchanged");
    assert.equal(q.solution,undefined,q.item_id+" no unrelated solution additions");
@@ -121,7 +121,7 @@ for(const p of ["index.md","chuong-i.md","chuong-i/luyen-tap.md",...[1,2,3,4,5].
 }
 const js=read("docs/assets/javascripts/thpt-g12-chi-b01-b05-r00.js");
 const goldenJs=read("docs/assets/javascripts/thpt-g12-golden-formative-modal-v1.js");
-assert(goldenJs.includes("const postCompareGate=chapter===\\"I\\""),"Reviewed G12 B01 solutions require self-attempt before reveal");
+assert(goldenJs.includes('const postCompareGate=chapter==="I"'),"Reviewed G12 B01 solutions require self-attempt before reveal");
 assert(goldenJs.includes("if(postCompareGate&&!state.submitted)solution.hidden=true"),"Solutions hidden before submission");
 assert(goldenJs.includes("if(postCompareGate)solution.hidden=false"),"Solutions revealed only after user submits");
 assert(goldenJs.includes('chapter==="I"?"4":"5"'),"Original ChI /4; other G12 /5 must remain");
