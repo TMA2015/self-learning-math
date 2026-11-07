@@ -62,6 +62,12 @@
 - **Original S1 locator typo:** reviewer report says G11 limit/continuity B15–17 Tập 2, while author source M5 correctly locks B16/B17 **G11 Tập 1**; retain `S1_G11_VOLUME_LOCATOR_METADATA_HOLD` until reviewer receipt correction.
 - **Owner rule is longstanding:** prompt always posted directly in chat and NEVER saved as a separate prompt file. No new standard/rule. Other remaining gates: M1–M3 mismatched reviewed snapshot, public candidate semantic dedup, full protected Topic Q16 Readiness, M1–M7 consolidation and source/version/receipt sync.
 
+## 3e. Owner confirmation: source did not change, reporter byte counts are NOT a review blocker
+
+Owner has confirmed downloading the file directly from PR #782 and uploading **the same unchanged contents** to NotebookLM. The independent report cites the exact parent Git blob `39548922eddee9712441a264424e08f61c6de966`; the **same 12/12 child source Git SHA** are present and match. The cited parent auxiliary bytes/lines (**204,668/1,285**) are erroneous versus actual GitHub (**204,122/1,848**), but this is a **nonblocking report-metadata typo**, NOT evidence of another review input or wrong mathematical chapter. The report's G11 S1 Tập label shorthand is similarly nonblocking; original authoring source receipts correctly say G11 B16/B17 limit/continuity **Tập 1**.
+
+**Latest authoritative disposition:** M4/M5/M6/M7 **Academic+PED PASS accepted on their exact reviewed source snapshot**. No further NotebookLM metadata corrections, no blanket re-review. This supersedes the earlier R06/R07 assistant-imposed `SOURCE_RECEIPT_PACKET_BYTE_LINE_METADATA_HOLD` and `S1_G11_VOLUME_LOCATOR_METADATA_HOLD`; preserve them only as historical audit observations, not active blockers. [R07 record](prototypes/thpt/content-drafts/topic-functions/Temp_TOPIC_FUNCTIONS_M4_M7_NOTEBOOKLM_CORRECTED_VERDICT_AND_SOURCE_RECEIPT_R07_20261107.md) now records this correction to assistant judgment. Remaining genuine blockers: G10 M1–M3 separate reviewer/source snapshot mapping, canonical semantic de-dup of public candidates, comprehensive M1–M7 Topic source/QA, and full private Q16 Topic Readiness. No content/source changes, no RELEASE.
+
 ## 4. P0/P1 blocker register for closing one pilot coherently
 
 | Blocker ID | Precisely unresolved gate | Minimal close condition |
