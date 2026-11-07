@@ -47,6 +47,14 @@
 - M1–M3 remain a **separate** exact review packet Git blob `29e067b51aa0b731185be1ddb1f9e40bd0556760`; the owner's other M1–M3 reported PASS mismatches the current bridge outcome mapping and source SHA; `SOURCE_SNAPSHOT_MISMATCH_HOLD` remains. G12 original SGK ChI R00 independent PASS receipt blob `8fef1c7dbd9b404881ff40cec8147c9ae89ef473` preserved, not inherited by new Topic M7.
 - The combined packet deliberately contains **no official protected RD1 item/answer/rubric**; Q16 full Topic held-out independent Readiness and Final Submit remain unproven. Public practice solutions exposed in author material cannot be rebranded as independent unseen testing.
 
+## 3c. Owner NotebookLM report M4–M7 received — reported PASS, source receipt needs targeted clarification (R06)
+
+- Owner's two uploaded files describe **independent Academic PASS / PED PASS on M4–M7** (38 proposed outcomes, P0=0, P1=0, P2=4 management holds), but are two presentations of the **same reported review**, not two independent verdicts. The `.md` upload is actually a Python script containing `report_content`; the `.txt` upload contains the report text.
+- Source receipt triage: `Temp_TOPIC_FUNCTIONS_M4_M7_OWNER_NOTEBOOKLM_REVIEW_RECEIPT_TRIAGE_R06_20261107.md`, exact Git blob `575732f87e47f96c7efbc7e523be89b44b0f6dac`. The reviewer reports input `Temp_TOPIC_FUNCTIONS_M4_M7_ONE_SOURCE_NOTEBOOKLM_INDEPENDENT.md` at **204,668 bytes**; the exact PR source Git blob `39548922eddee9712441a264424e08f61c6de966` is `Temp_TOPIC_FUNCTIONS_M4_M7_ONE_SOURCE_NOTEBOOKLM_INDEPENDENT_DELTA_C_PACKET_R01_20261107.md`, **204,122 UTF-8 bytes**. Its twelve child Git source SHA match 12/12, but packet byte identity is **not established**.
+- Material report-vs-source examples: `CAND-P-M6-02` is `ln(sqrt(4-x²))` on `(-2,2)`, whereas report discusses `ln(sqrt(x²-4))` on `|x|>2`; `CAND-P-M7-01` source is a discontinuous two-piece linear function, report discusses `-1/x`; M7 report uses a different `OUTCOME_ID` prefix; M4 ledger has **5 SVG** whereas report states 2 FIG. **Do not silently rewrite the existing source or declare exact-source PASS while these mismatches remain.**
+- Preserve the reviewer-reported result but mark `SOURCE_RECEIPT_CONTENT_INCONSISTENCY_HOLD` for affected candidate/outcome/Q07/Q18 claims. Ask for **targeted** reviewer correction/corresponding original packet or only affected new Delta C content re-review; do not re-review entire M4–M7 just because of a report transcription error.
+- Standing workflow, not new: **NotebookLM prompts always sent directly in ChatGPT**, no prompt file. Reviewer reported PASS is **not** FULL_TOPIC_CONTENT_READY; M1–M3 source mismatch and Q16 protected full Topic Readiness remain separately blocked.
+
 ## 4. P0/P1 blocker register for closing one pilot coherently
 
 | Blocker ID | Precisely unresolved gate | Minimal close condition |
