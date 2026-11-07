@@ -1,8 +1,14 @@
 # Authoring — owner NotebookLM reviews received; D5 R01 targeted correction
 
 PACKET_ID: SLM-THPT-TRANSFER-WRITTEN-20261106-R00  
-STATUS: AUTHORING_REVIEW_RECEIVED / D5_CORRECTION_R01 / SOURCE_RECEIPT_HOLD  
+STATUS: AUTHORING_REVIEW_RECEIVED / D5_TWO_FIGURES_Q07_PED4_TARGETED_REVIEW_PENDING / Q18_METADATA_NONBLOCKING_BY_OWNER_787  
 LANE: AUTHORING_ONLY; CONTENT_READY=NO; RELEASE=NO; RD1=NONE; Mastery=NONE
+
+## Owner 07/11/2026 supersession — distinguish actual incorrect diagram from no-value metadata audit
+
+- [Owner decision #787](https://github.com/TMA2015/self-learning-math/issues/787) instructs to accept NotebookLM Academic/PED when **right subject, right mathematical/pedagogical answers, actual supplied source**; do NOT demand repeated byte/line/file-name report corrections. This **closes the Q18 byte-size-only review HOLD** cited later in this historical receipt (older evidence retained for history). Original R00 Written and learning content remains Academic/PED PASS; no raw notebook session SHA proof is invented.
+- **One actual academic-visual defect remains:** two R00 figure arrowheads in `FIG-G10-CHIV-FORCE-TR01` and `FIG-G10-CHIV-RIVER-TR01` pointed horizontally instead of along oblique vectors. The owner-held corrected R01 PDF already exists (identifier/hash recorded later). Its **two corrected figures** need one focused independent Q07/PED4 visual correctness verdict, not a review of unrelated content; versioning/custody then handled in AUTHORING and actual site SVG/AP3 in RELEASE.
+- **No new academic standard**, no new prompt file. Reviewer prompt goes directly in chat. Only targeted Q07 may prevent the two corrected figure-bearing placements from being called Content Ready; source-byte metadata is not an academic blocker.
 
 ## Two independent reviews must not be mixed
 
@@ -39,5 +45,5 @@ ZIP_CONTENT_ONLY: 3 unchanged MD + 1 corrected five-page PDF; no SVG, PNG, TXT o
 - 5 new D4 are candidates ONLY: 238 old public D4 remain immutable (G10 31, G11 83, G12 124). No source READY manifest or V2 handoff until targeted D5 confirmation and source receipt reconciliation; do not duplicate an existing canonical ITEM_ID or declare Q16 runtime protection active.
 - CI success (if any) is structural only; no RELEASE or merge/deploy. PR #771 stays audit-only, PR #768 stays separate historical authoring.
 
-BLOCKED_BY_AUTHORING: Q07_D5_TARGETED_REVIEW_PENDING; Q18_REVIEW_RECEIPT_BYTE_MISMATCH_PENDING; HANDOFF_V2_PENDING; READY_MANIFEST_PENDING; REGISTER_PENDING.  
-NEXT: Owner NotebookLM confirms R01 figures + source identity using one focused prompt in chat; then AUTHORING exact snapshot/receipt + V2 handoff may be finalized.
+BLOCKED_BY_AUTHORING: Q07_PED4_FORCE_RIVER_FIGURE_CORRECTION_PENDING; HANDOFF_V2_PENDING; READY_MANIFEST_PENDING; REGISTER_PENDING. Q18_BYTE_SIZE_METADATA_NONBLOCKING_OWNER_787.  
+NEXT: One focused independent academic-visual Q07/PED4 confirmation of the two corrected R01 force/boat figures using the already prepared PDF; NO further NotebookLM source-byte/metadata correction under owner #787. Then AUTHORING decides scoped corrected source and V2 readiness; never merge/deploy from this Draft.
