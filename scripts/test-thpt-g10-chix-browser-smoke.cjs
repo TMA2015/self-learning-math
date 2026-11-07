@@ -12,15 +12,18 @@ const {chromium}=require("playwright");
      const response=await page.goto(url,{waitUntil:"networkidle"});
      assert(response?.ok(),"No ChIX page B"+lesson);
      const ids=[...await page.locator("[data-thpt-help-id]").evaluateAll(ns=>ns.map(n=>n.dataset.thptHelpId))];
-     assert.deepEqual(ids,["D6-G10-B"+lesson+"-01","D6-G10-B"+lesson+"-02"],"Reviewed D6 visible B"+lesson);
+     assert.deepEqual(ids.filter(id=>id.startsWith("HELP-G10-CHIX-TRY")),Array.from({length:5},(_,i)=>"HELP-G10-CHIX-TRY"+String((lesson-26)*5+i+1).padStart(2,"0")),"Reviewed new First Try HELP B"+lesson);
+     assert.deepEqual(ids.filter(id=>id.startsWith("D6-G10-B")),["D6-G10-B"+lesson+"-01","D6-G10-B"+lesson+"-02"],"Original D6 retained B"+lesson);
      assert.equal(await page.locator("[data-thpt-help-id][open]").count(),0,"D6 cards must be collapsed");
      const fig=page.locator(".thpt-r4-probability-figure img");
      assert.equal(await fig.count(),1,"Missing D5 teaching SVG B"+lesson);
+     await fig.scrollIntoViewIfNeeded();
+     await fig.evaluate(el=>el.decode());
      const check=await fig.evaluate(el=>({loaded:el.complete&&el.naturalWidth>0,imgWidth:el.getBoundingClientRect().width,boxWidth:el.parentElement.getBoundingClientRect().width}));
      assert(check.loaded,"Broken D5 SVG image link B"+lesson+" at "+width);
      assert(check.imgWidth<=check.boxWidth+1,"SVG overflows container B"+lesson+" at "+width);
-     await page.locator("[data-thpt-help-id]").first().locator("summary").click();
-     assert(await page.locator("[data-thpt-help-id]").first().getAttribute("open")!==null,"D6 card cannot expand");
+     await page.locator('[data-thpt-help-id="D6-G10-B'+lesson+'-01"]').locator("summary").click();
+     assert(await page.locator('[data-thpt-help-id="D6-G10-B'+lesson+'-01"]').getAttribute("open")!==null,"D6 card cannot expand");
     }
     const firstId="THPT-G10-B27-C01";
     await page.locator('[data-thpt-formative-id="'+firstId+'"]').first().click();
@@ -34,6 +37,6 @@ const {chromium}=require("playwright");
     assert(ready?.ok());await page.locator('[data-g10-chapter-selfcheck="CHIX"] .g10sc-progress').waitFor();assert(!(await page.locator('[data-g10-chapter-selfcheck="CHIX"]').innerText()).includes("Đáp án:"),"ChIX pre-submit answer leak");
    }finally{await page.close()}
   }
-  console.log("PASS G10 ChIX B26/B27 browser: 4 reviewed D6 cards, 2 responsive SVG on phone/tablet/desktop, canonical deep link, client self-check without Mastery");
+  console.log("PASS G10 ChIX B26/B27 browser: 10 new HELP plus 4 original D6 cards, 2 responsive SVG on phone/tablet/desktop, canonical deep link, client self-check without Mastery");
  }finally{await browser.close()}
 })().catch(e=>{console.error(e.stack||e);process.exit(1)});
