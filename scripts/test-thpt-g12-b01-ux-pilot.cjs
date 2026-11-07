@@ -42,6 +42,11 @@ assert.match(html,/id="view-a"/);
 assert.match(html,/id="view-b"/);
 assert.match(html,/data-mode="A"/);
 assert.match(html,/PILOT|Pilot/);
+assert(html.includes('get("participant")'),"T4 participant variant must be selected by query, not visible chooser");
+assert(html.includes('document.querySelector(".controls").hidden=true'),"Learner view must hide reviewer A/B choice");
+assert(html.includes('document.querySelector(".source-note").hidden=true'),"Learner view must hide reviewer metadata");
+assert(html.includes('toggle(assigned)'),"Learner sees assigned original canonical variant only");
+assert(facilitator.includes("CROSSOVER_EXCLUDED"),"Explicit exclusion when learner switches variants");
 assert(!/fetch\s*\(|XMLHttpRequest|localStorage|sessionStorage|firebase\.|sendBeacon|RoadmapTutor\./.test(scripts[0][1]),"No network, AI, persistence or mastery");
 assert(!/docs\/thpt-preview\/sgk\/lop-12\/chuong-i\/bai-1\.md/.test(html.slice(0,1000)), "Prototype is not a deployed SGK lesson page");
 // T4/T5 research artifacts are part of the isolated pilot only; no learner answer key or fake measured verdict.
