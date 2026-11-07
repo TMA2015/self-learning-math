@@ -6,7 +6,7 @@
 
 Em hãy đọc tình huống, nhắc lại kiến thức đã học và tự trả lời từng câu **Tự thử** trước khi đọc phần công thức. Chỉ mở lời giải sau khi em đã tự làm. Nếu gặp khó khăn, xem mục hỗ trợ của bài rồi mới luyện Core/Luyện tập. Hoạt động này không chấm điểm hay ghi mức độ thành thạo.
 
-### Cosine rule
+### Định lí côsin
 
 **Vì sao cần học?** Pitago chỉ cho tam giác vuông; với hai cạnh và góc xen giữa là góc tù, cạnh thứ ba có thể dài hơn nhiều. Làm sao tính đúng khi góc không vuông?
 
@@ -29,7 +29,7 @@ Em hãy đọc tình huống, nhắc lại kiến thức đã học và tự tr�
 
 </details>
 
-### Sine rule
+### Định lí sin
 
 **Vì sao cần học?** Trong đo đạc, thường dễ đo góc từ hai điểm hơn là trực tiếp đo khoảng cách tới vật. Định lí sin giúp nối các góc với các cạnh đối diện mà không cần dựng đường cao rồi chia nhỏ tam giác.
 
@@ -52,7 +52,7 @@ Em hãy đọc tình huống, nhắc lại kiến thức đã học và tự tr�
 
 </details>
 
-### Area sin
+### Diện tích tam giác theo sin
 
 **Vì sao cần học?** Nếu hai cạnh và góc xen giữa đã biết nhưng chưa biết đường cao, liệu tính được diện tích mà không cần dựng và đo đường cao trực tiếp?
 
@@ -75,7 +75,7 @@ Em hãy đọc tình huống, nhắc lại kiến thức đã học và tự tr�
 
 </details>
 
-### Heron
+### Công thức Heron
 
 **Vì sao cần học?** Chỉ biết ba cạnh mảnh đất hình tam giác mà chưa biết góc hoặc đường cao, vẫn có thể tính diện tích được hay không? Và ba số đo nào thực sự lập được một tam giác?
 
@@ -98,7 +98,7 @@ Em hãy đọc tình huống, nhắc lại kiến thức đã học và tự tr�
 
 </details>
 
-### Application
+### Bài toán đo đạc thực tế
 
 **Vì sao cần học?** Không thể sang trực tiếp một điểm C bên kia vật cản để đo đoạn đường tới đó. Chỉ cần một đường chuẩn AB và các góc ngắm A,B, ta có thể dựng tam giác và tính những khoảng cách chưa đo trực tiếp.
 
