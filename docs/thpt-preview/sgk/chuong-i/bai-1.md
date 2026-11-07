@@ -10,8 +10,6 @@
 
 Em hãy đọc tình huống, nhớ lại kiến thức cũ và tự trả lời từng câu **Tự thử**. Chỉ mở lời giải sau khi tự làm. Sau đó tiếp tục với **Kiến thức SGK**, **Ví dụ** rồi **Core/Luyện tập**. Hoạt động này không chấm điểm hay ghi mức độ thành thạo.
 
-
-
 ### Mệnh đề và mệnh đề chứa biến
 
 **Vì sao cần học?** Khi đọc thông báo, ta cần biết câu nào có thể kiểm chứng đúng hoặc sai; câu hỏi và câu chưa xác định giá trị biến chưa thể đem ra kết luận.
@@ -26,7 +24,7 @@ Em hãy đọc tình huống, nhớ lại kiến thức cũ và tự trả lời
 
 **Tự thử trước Core** Trong ba câu sau, câu nào là mệnh đề và câu nào là mệnh đề chứa biến hoặc câu hỏi? (a) “14 chia hết cho 7”. (b) “Bạn đã hoàn thành bài chưa?”. (c) “k+2=7”, với k chưa được gán giá trị.
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY01">
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY01" markdown="1">
 <summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
 
 (a) là mệnh đề **đúng**, vì 14=7×2. (b) là câu hỏi, không phải mệnh đề. (c) là mệnh đề chứa biến; khi k=5 nó đúng, khi k=4 nó sai, vì vậy chưa thể đánh giá khi không biết k.
@@ -49,7 +47,7 @@ Em hãy đọc tình huống, nhớ lại kiến thức cũ và tự trả lời
 
 **Tự thử trước Core** Phủ định chính xác câu “Tất cả các thành viên đội bóng đều biết bơi” là phát biểu nào: (A) “Không ai biết bơi”; (B) “Có ít nhất một thành viên không biết bơi”? Giải thích.
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY02">
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY02" markdown="1">
 <summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
 
 Chọn **(B)**. Chỉ cần một thành viên không biết bơi thì câu “tất cả đều biết bơi” sai; (A) mạnh hơn mức cần thiết và không phải phủ định tương đương.
@@ -72,7 +70,7 @@ Chọn **(B)**. Chỉ cần một thành viên không biết bơi thì câu “t
 
 **Tự thử trước Core** Với n∈ℤ: (P) “n chia hết cho 8”, (Q) “n chia hết cho 4”. P⇒Q đúng hay sai? Mệnh đề đảo Q⇒P đúng hay sai? Hãy chỉ ra một phản ví dụ nếu có.
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY03">
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY03" markdown="1">
 <summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
 
 P⇒Q **đúng**, vì n=8t=4(2t). Q⇒P **sai**: n=4 chia hết cho 4 nhưng không chia hết cho 8.
@@ -95,7 +93,7 @@ P⇒Q **đúng**, vì n=8t=4(2t). Q⇒P **sai**: n=4 chia hết cho 4 nhưng kh�
 
 **Tự thử trước Core** Với n∈ℤ, “n chẵn khi và chỉ khi n+2 chẵn” có đúng không? Hãy trình bày riêng hai chiều.
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY04">
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY04" markdown="1">
 <summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
 
 **Đúng.** Nếu n=2m thì n+2=2(m+1) chẵn. Nếu n+2=2k thì n=2(k−1) cũng chẵn. Cả hai chiều đúng trên ℤ.
@@ -118,7 +116,7 @@ P⇒Q **đúng**, vì n=8t=4(2t). Q⇒P **sai**: n=4 chia hết cho 4 nhưng kh�
 
 **Tự thử trước Core** Xét “Với mọi số nguyên n, n²>0”. Câu này đúng hay sai? Viết phủ định có lượng từ và chỉ ra một chứng cứ.
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY05">
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY05" markdown="1">
 <summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
 
 **Sai** vì n=0 cho n²=0 không lớn hơn 0. Phủ định: “Tồn tại số nguyên n sao cho n²≤0”, với n=0 là chứng cứ.
