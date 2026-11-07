@@ -45,10 +45,10 @@ for(const [lesson,count] of Object.entries(displayExpected)){
    const outside=originalArticle.replace(/<(?:span|div) class="arithmatex">[\s\S]*?<\/(?:span|div)>/g,"");
    assert(!/\\(?:sqrt|iff|Delta|frac|ge|le|infty|begin\{|mathbb|boxed)\b/.test(outside),
     "B"+lesson+": unrendered TeX commands outside math wrappers");
-   const startAnswer=originalArticle.indexOf("<details><summary>"),endAnswer=article.indexOf("</details>",startAnswer);
+   const startAnswer=originalArticle.indexOf("<details><summary>"),endAnswer=originalArticle.indexOf("</details>",startAnswer);
    assert(startAnswer>=0&&endAnswer>startAnswer,"B"+lesson+": written answers must remain available");
    const answer=originalArticle.slice(startAnswer,endAnswer);
-   assert.equal((answer.match(/<li>/g)||[]).length,3,"B"+lesson+": original 3 written solutions lost; answer fragment="+JSON.stringify(answer.slice(0,2400))+"; total old HTML chars="+originalArticle.length);
+   assert.equal((answer.match(/<li>/g)||[]).length,3,"B"+lesson+": original 3 written solutions lost");
    assert.equal((answer.match(/<span class="arithmatex">/g)||[]).length,9,
     "B"+lesson+": hidden answers have unrendered TeX");
   }
