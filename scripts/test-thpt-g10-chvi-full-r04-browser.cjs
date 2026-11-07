@@ -15,6 +15,8 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/chuong-vi/";
     for(const {n,count}of [{n:15,count:5},{n:16,count:5},{n:17,count:5},{n:18,count:4}]){
      const r=await page.goto(base+"bai-"+n+"/",{waitUntil:"networkidle",timeout:90000});
      assert(r?.ok(),"Missing SGK B"+n);
+     const expectedMath={15:199,16:134,17:196,18:107};
+     assert.equal(await page.locator("article.md-content__inner span.arithmatex").count(),expectedMath[n],"Original + reviewed source math must ALL have MathJax wrappers B"+n);
      const cards=page.locator('details[data-ped-first-try="1"]'),help=page.locator('details[data-thpt-help-id^="HELP-G10-CHVI-TRY"]');
      assert.equal(await cards.count(),count,"19 reviewed per-subtopic FIRST_TRY placements B"+n);
      assert.equal(await help.count(),count,"Five-step D6 for each outcome B"+n);
