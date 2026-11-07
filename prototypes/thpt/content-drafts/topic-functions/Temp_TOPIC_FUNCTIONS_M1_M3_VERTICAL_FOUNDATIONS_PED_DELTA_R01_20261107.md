@@ -10,6 +10,10 @@
 
 > **Một câu hỏi nối cả Chuyên đề:** Khi một đại lượng thay đổi, ta phải biết ba điều trước khi tính toán: *đầu vào nào được phép; quy tắc cho ta điều gì; và kết luận áp dụng đến đâu?* Đồ thị làm rõ câu chuyện đó. Parabol chỉ là một kiểu quan hệ; về sau em gặp dao động, tăng trưởng mũ, giới hạn và đạo hàm nhưng vẫn trả lời chính ba câu hỏi ấy.
 
+## Một ví dụ có thể được giảng ở nhiều vị trí nhưng không thành hai nguồn
+
+Các nhãn **EX-M1/2/3** trong bản thảo chỉ là **nhãn vị trí để tác giả rà soát**, không phải canonical `example_id` hoặc `item_id`. Đối chiếu exact source G10 R01 cho thấy EX-M1-01 dùng chung VD01; EX-M1-02 dùng chung VD02; EX-M1-03 và EX-M3-04 cùng quay về **một VD08**; EX-M2-01 dùng chung VD03; EX-M3-01, EX-M3-02, EX-M3-03 tương ứng VD05, VD06, VD07. Phần diễn giải mới dưới đây chỉ giúp người học đọc ý nghĩa trong Topic; khi chuẩn hóa ngân hàng cần trỏ **cùng source example/version**, không giữ một phiên bản bài toán và lời giải thứ hai theo tiền tố M1/M2/M3. EX-M2-02 và EX-M2-03 là ví dụ **giảng giải cầu nối mới** chưa được phản biện. **G10 R01/VD04** (hàm từng đoạn tính tiền khác dữ kiện) vẫn là ví dụ riêng đã có; không nhận EX-M2-03 là bản sửa của VD04. Việc thêm/thay cách giảng là DELTA_C cần NotebookLM review phần mới; không chỉnh snapshot G10 bất biến.
+
 ## M1 — Hàm số không phải một biểu thức, mà là một quy tắc có miền đầu vào
 
 ### Tại sao cần định nghĩa đầu vào trước?
