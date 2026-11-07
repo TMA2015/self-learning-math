@@ -1,8 +1,0 @@
-NOTEBOOKLM REVIEW PROMPT — TOPIC Hàm số và đồ thị, M4–M7, 07/11/2026
-Packet Git blob: 39548922eddee9712441a264424e08f61c6de966
-One temporary reviewer source: Temp_TOPIC_FUNCTIONS_M4_M7_ONE_SOURCE_NOTEBOOKLM_INDEPENDENT_DELTA_C_PACKET_R01_20261107.md
-Standard: SLM-THPT-QUALITY-ONE v1.2.0 Q01–Q18, exactly five existing THPT Permanent Sources v2.1 and original S1.
-
-Hãy phản biện độc lập nội dung mới DELTA_C của các mạch M4–M7 trong một file Temp đính kèm, đối chiếu đúng năm Permanent Sources THPT v2.1 và SGK/SBT Kết nối tri thức S1 gốc, không thêm Permanent Source thứ sáu. Đánh giá riêng từng mạch và từng outcome, chỉ rõ chứng cứ Q01–Q18, D1–D6/PED1–PED6, tính đúng đắn của điều kiện, diễn giải bản chất trước công thức, hình vẽ, ví dụ, Tự thử, chiều sâu luyện tập và D6, không lấy số lượng làm bằng chứng tự học. Đối chiếu item/FIG/HELP với ledger canonical để phát hiện trùng ngữ nghĩa, phân biệt hai sai lệch số lượng đã đóng (62 item ChIX, 36 HELP ChI) với câu hỏi outcome M6 9 hay 10 còn mở, và giữ nguyên PASS lịch sử của nguồn SGK G12 đúng SHA mà không truyền sang M7 Topic. Trả Academic/PED verdict theo từng outcome, P0/P1/P2, MINIMAL_DELTA cụ thể và SOURCE_RECEIPT khớp chính xác các Git blob trong packet, nêu STANDARD_CONFLICT_HOLD nếu chứng cứ S1 hoặc chuẩn không thống nhất. Không tự cấp CONTENT_READY hay quyền RELEASE, không suy rộng PASS sang M1–M3 hoặc toàn Chuyên đề, và không coi bài công khai là chứng cứ TOPIC_READINESS độc lập trước Final Submit.
-
-HƯỚNG DẪN: Tải nội dung file Markdown dưới dạng Raw, thêm file Markdown đó như TEMP reviewer source; năm Permanent Sources v2.1 giữ nguyên đang chọn. File .txt này chỉ để COPY prompt vào ô hỏi của NotebookLM, KHÔNG cần thêm làm source thứ hai.
