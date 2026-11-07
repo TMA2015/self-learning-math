@@ -30,6 +30,8 @@ on:
       - 'docs/assets/images/thpt/THPT_G10_B14_DISPERSION_D5_R01.svg'
       - 'scripts/test-thpt-g10-chv-b13-b14-release-integration.cjs'
       - 'scripts/test-thpt-g10-chv-b13-b14-browser-smoke.cjs'
+      - 'scripts/test-thpt-g10-chv-full-r03-release.cjs'
+      - 'scripts/test-thpt-g10-chv-full-r03-browser.cjs'
       - 'docs/assets/javascripts/thpt-self-check-qa-v1.js'
       - 'docs/assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js'
       - 'docs/assets/stylesheets/thpt-g10-reviewed-selfcheck-v1.css'
@@ -343,6 +345,8 @@ jobs:
           node --check docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js
           node --check scripts/test-thpt-g10-chv-b13-b14-release-integration.cjs
           node scripts/test-thpt-g10-chv-b13-b14-release-integration.cjs
+      - name: Guard G10 ChV FULL R03 exactly 14 reviewed pedagogical outcomes, First Try / D6 and unchanged R01/R02
+        run: node scripts/test-thpt-g10-chv-full-r03-release.cjs
       - name: Guard G11 ChI original 16 source-locked items, 2 SVG, Written/Anchor and D6
         run: node scripts/test-thpt-g11-chi-b01-b02-release-integration.cjs
       - name: Guard G11 ChI B03/B04 additional 26 canonical and D1-D6 source lock
@@ -434,6 +438,7 @@ jobs:
           node scripts/test-thpt-g10-chiv-b09-b11-release-integration.cjs --built
           node scripts/test-thpt-g10-chv-b13-b14-release-integration.cjs --built
           node scripts/test-thpt-g10-chv-b12-reviewed-r02-integration.cjs --built
+          node scripts/test-thpt-g10-chv-full-r03-release.cjs --built
           node scripts/test-thpt-g11-chi-b01-b02-release-integration.cjs --built
           node scripts/test-thpt-chvi-student-notes.cjs --built
       - name: Guard G11 ChI protected RD1 exclusion in both built clients
@@ -496,6 +501,8 @@ jobs:
         run: node scripts/test-thpt-g10-chv-b12-reviewed-r02-browser.cjs
       - name: G10 ChV B13/B14 reviewed browser QA · 390 820 1440
         run: node scripts/test-thpt-g10-chv-b13-b14-browser-smoke.cjs
+      - name: G10 ChV FULL R03 14 source-locked First Try and original Golden/Q16 browser · 390 820 1440
+        run: node scripts/test-thpt-g10-chv-full-r03-browser.cjs
       - name: G11 ChI B01/B02 browser QA mobile / tablet / desktop
         run: node scripts/test-thpt-g11-chi-b01-b02-browser-smoke.cjs
       - name: G11 ChI B03/B04 reviewed browser QA · mobile tablet desktop
