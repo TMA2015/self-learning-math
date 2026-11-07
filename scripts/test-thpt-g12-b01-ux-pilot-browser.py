@@ -36,7 +36,29 @@ with sync_playwright() as p:
             page.get_by_role("button", name="A · Bản gốc").click()
             assert page.locator("#lesson").inner_text() == a_text, "A must remain reproducible after toggling"
             assert page.locator("[data-floating-ai]").count() == 0
-            print(f"PASS G12 B01 A/B pilot {width}px: source sections, SVG, 7 units, 3 try prompts, no overflow/errors")
+            # T4 participant mode: assigned ONE variant, no visible A/B switch and
+            # no reviewer hints. Source and figures must match the preview exactly.
+            page.goto(preview + "?participant=A", wait_until="load")
+            assert page.locator("html[data-trial-participant=true]").count() == 1
+            assert page.locator("article[data-mode=A]").count() == 1
+            assert page.locator(".controls").is_hidden(), "T4 learner may not switch A/B"
+            assert page.locator(".source-note").is_hidden(), "Hide reviewer source metadata in T4"
+            assert page.locator("#lesson").inner_text() == a_text, "Participant A differs from approved A preview"
+            assert page.locator("img").evaluate("(img) => img.complete && img.naturalWidth > 0")
+            assert page.evaluate("document.documentElement.scrollWidth <= window.innerWidth + 3")
+            page.screenshot(path=str(out / f"participant-a-{width}.png"), full_page=True)
+            page.goto(preview + "?participant=B", wait_until="load")
+            assert page.locator("html[data-trial-participant=true]").count() == 1
+            assert page.locator("article[data-mode=B]").count() == 1
+            assert page.locator(".controls").is_hidden()
+            assert page.locator(".source-note").is_hidden()
+            assert page.locator("#lesson").inner_text() == b_text, "Participant B differs from approved B preview"
+            assert page.locator("section.lesson-unit").count() == 7
+            assert page.locator("img").evaluate("(img) => img.complete && img.naturalWidth > 0")
+            assert page.evaluate("document.documentElement.scrollWidth <= window.innerWidth + 3")
+            assert not errors, "JavaScript errors: " + "; ".join(errors)
+            page.screenshot(path=str(out / f"participant-b-{width}.png"), full_page=True)
+            print(f"PASS G12 B01 pilot {width}px: source/SVG A=B, reviewer toggle and participant A/B locked visual flows, no overflow/errors")
             page.close()
     finally:
         browser.close()
