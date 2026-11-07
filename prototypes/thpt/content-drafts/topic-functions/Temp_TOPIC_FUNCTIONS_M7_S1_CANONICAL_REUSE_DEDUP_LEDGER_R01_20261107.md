@@ -5,7 +5,7 @@
 **ONE STANDARD:** SLM-THPT-QUALITY-ONE v1.2.0, Q01–Q18; no parallel standards.
 **LEARNER CONTENT:** Temp_TOPIC_FUNCTIONS_M7_DERIVATIVE_TO_GRAPH_OPTIMIZATION_KNOWLEDGE_R01_20261107.md (source candidate).
 **PRIMARY SGK AUTHOR SOURCE:** prototypes/thpt/content-drafts/G12_SGK_CHI_B01_B05_FULL_CHAPTER_PUBLIC_CANONICAL_R00_SOURCE_CANDIDATE.md, Git blob \`f0862dcdab21dec136e43969f45c42638e7c7574\`.
-**SOURCE VERDICT CRITICAL:** The G12 R00 author source explicitly says ACADEMIC_VERDICT=INDEPENDENT_PENDING, PEDAGOGICAL_SELF_LEARNING_READY=INDEPENDENT_PENDING. Accordingly the 78 ID headings described here are **EXISTING_AUTHOR_CANDIDATE_IDs**, NOT proof of approved source or CONTENT_READY; do not falsely describe them as independently PASSed.
+**R04 SOURCE VERDICT CORRECTION (07/11/2026):** Original G12 ChI author R00 source blob `f0862dcdab21dec136e43969f45c42638e7c7574` has the **pre-review creation label** `ACADEMIC_VERDICT=INDEPENDENT_PENDING`, but its **later independently verified owner NotebookLM receipt** Git blob `8fef1c7dbd9b404881ff40cec8147c9ae89ef473` establishes **Academic PASS + PED PASS on exactly that unchanged SGK_CHAPTER source** (5 Permanent THPT v2.1, 2026-11-02), with system exposure HOLD. The 78 original public item headings belong to an independently reviewed **SGK** source; this fact does NOT review/promote any new Topic M7 learning prose, new transfer candidates, Topic placement, private Topic Readiness, or deployment. The targeted W01/W02 2026-11-07 reviewer report has already been handled separately in AUTHORING Draft PR #780; no duplicate answer/solution source is created in #782.
 **ORIGINAL SOURCE SHA256:** SGK 12 T1 \`faeb554bea9cf81189c5e790b1b1edb42f50b3648694acc80dc99682ada3f1fd\`, SBT 12 T1 \`db9d07a2fbe55cda3b4b50fb13d1767e45a7552f668b726241c59febac69c0ca\`.
 
 ## 1. Directly inspected printed/PDF original page receipts
@@ -124,7 +124,7 @@ All figures were fetched from \`prototypes/thpt/content-drafts\` on main. Render
 | HELP-G12-CHI-END-03 | G12-CHI-INTEGRATED_ERROR_DIAGNOSIS | THPT-G12-CHI-END-C03 |
 | HELP-G12-CHI-END-04 | G12-CHI-INTEGRATED_MODEL_RATE_OPTIMUM | THPT-G12-CHI-END-C04 |
 
-**Count reconciliation:** 32 + 4 = **36 HELP IDs**. Q08 coverage **per outcome**, G12 independently reviewed Academic/PED verdict and actual live placement remain **PENDING**. No private RD1 stems, solutions or rubrics are added. See `Temp_TOPIC_FUNCTIONS_CANONICAL_METADATA_EXACT_ID_RECONCILIATION_R03_20261107.md`.
+**Count reconciliation:** 32 + 4 = **36 original HELP IDs**, and original **SGK_CHAPTER** source PASS is independently recorded at reviewer receipt blob `8fef1c7dbd9b404881ff40cec8147c9ae89ef473`. Only **new Topic learning content/placements** remain Academic/PED PENDING; Q08 and Q16 implementation in Topic remain unproven. No private RD1 stems, solutions or rubrics are added. See `Temp_TOPIC_FUNCTIONS_CANONICAL_METADATA_EXACT_ID_RECONCILIATION_R03_20261107.md` and `Temp_TOPIC_FUNCTIONS_NLM_UPLOAD_G10_G12_SOURCE_RECEIPT_TRIAGE_R04_20261107.md`.
 
 ## 5. D3 differentiated transfer: no numbers-only clones
 
@@ -147,9 +147,9 @@ All figures were fetched from \`prototypes/thpt/content-drafts\` on main. Render
 ## 6. Independent learning and safety boundary
 
 - Topic learner-facing only **Kiến thức / Luyện tập / Tự kiểm tra**. Existing SGK author source item placements can be reused by exact item_id across journeys, but must render **inside Topic**, not as mandatory student hyperlinks to SGK.
-- Q01–Q14 D1–D6/PED must be checked per M7 proposed outcome/skill, including diagrams and actual conditions. Source R00 \`INDEPENDENT_PENDING\` stays PENDING until owner-supplied NotebookLM receipt proves otherwise.
+- Q01–Q14 for the **NEW M7 Topic** pedagogical explanation must be reviewed independently per outcome/skill, including diagrams and conditions. Unchanged **G12 SGK Chapter I R00** already has Academic+PED PASS receipt blob `8fef1c7dbd9b404881ff40cec8147c9ae89ef473`; its old inline `INDEPENDENT_PENDING` is a pre-review label, not a reason to revoke snapshot PASS.
 - Q16 \`TOPIC_READINESS\` must be independent and private; these public exercises cannot become unseen final tests once explanations are public. No hint/answer/correctness/AI tutor before Final Submit, no Skill Mastery from formative or client self-check.
 - Q18 new M7 knowledge and these two genuinely new public questions are Delta C; NotebookLM uses **exactly five Permanent THPT v2.1** sources plus S1 original and Git blob receipt. No scope transference of PASS, no false readiness.
 - AUTHORING stops at one handoff V2/one ready manifest/REGISTER after Q01–Q18/A1–A7 and Academic+PED PASS; no website edits, merge or deploy.
 
-**CHECKPOINT:** S1_G12_PRINTED_PDF_OFFSET_CORRECTED; G12_CANDIDATE_SOURCE_EXACT_78_IDS/66_B01_B05/12_END_DEMO; Q15_HELP_36_ID_VERIFIED_32_LESSON_PLUS_4_END_CLOSED_R03; FIG_6_EXACT_BLOB; NEW_CANONICAL_0; TOPIC_M7_ACADEMIC_PED=PENDING; FULL_TOPIC_CONTENT_READY=NO.
+**CHECKPOINT:** S1_G12_PRINTED_PDF_OFFSET_CORRECTED; G12_SGK_CHI_R00_SOURCE_78_IDS_ACADEMIC_PED_PASS_ON_OLD_SNAPSHOT_RECEIPT_8fef1c7d; Q15_HELP_36_ID_VERIFIED_32_LESSON_PLUS_4_END_CLOSED_R03; FIG_6_EXACT_BLOB; NEW_TOPIC_CANONICAL_0; TOPIC_M7_NEW_DELTA_C_ACADEMIC_PED=PENDING; FULL_TOPIC_CONTENT_READY=NO.
