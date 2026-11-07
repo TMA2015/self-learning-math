@@ -4,7 +4,7 @@
  */
 (() => {
   "use strict";
-  const expected = Object.freeze({CHI:14,CHII:14,CHIII:14,CHIV:21,CHV:18,CHVI:18,CHVII:22,CHVIII:14,CHIX:6});
+  const expected = Object.freeze({CHI:14,CHII:14,CHIII:14,CHIV:21,CHV:18,CHVI:20,CHVII:22,CHVIII:14,CHIX:6});
   const scriptUrl = document.currentScript && document.currentScript.src;
   const create = (tag,cls,txt) => {
     const x=document.createElement(tag);
