@@ -75,17 +75,23 @@ Owner has confirmed downloading the file directly from PR #782 and uploading **t
 
 ---
  
+## 3g. R09 owner academic acceptance for G10 M1–M3
+
+- [G10 R09 original-outcome map](prototypes/thpt/content-drafts/topic-functions/Temp_TOPIC_FUNCTIONS_G10_M1_M3_REVIEW_ACCEPTANCE_AND_CANONICAL_OUTCOME_ROUTE_R09_20261107.md), Git blob `ff58d0c32b1686781aec83ef4f2024b4ba8dda96`: original 10 Topic outcome semantics preserved; academic/pedagogical review of correct G10 mathematical material accepted under owner decision #787.
+- Actual G10 bridge has seven formative Tự thử blocks; the reviewer-generated illustrative 10 TRY/HELP labels do not become ten new canonical items. No NotebookLM re-review of correct work, no clone of old SGK/Topic question stem/answer/rubric.
+- G10 foundational academic/pedagogical authoring scope completed, but full cross-grade Topic with protected independent Readiness and handoff remains separate.
+
 ## 4. P0/P1 blocker register for closing one pilot coherently
 
 | Blocker ID | Precisely unresolved gate | Minimal close condition |
 |---|---|---|
-| `TOP-FUNC-M1_M3_PED_DELTA_REVIEW_HOLD` | M1–M3 bridge R01 NEW Delta C, G10 historical R01 academic PASS scoped | Original G10 SGK/SBT printed and PDF now directly read; **SBT G10 T2 source receipt R03 complete**, submit only NEW bridge Delta C for 5-Permanent-Sources-v2.1 Academic+PED review |
-| `TOP-FUNC-G10_NLM_OTHER_SNAPSHOT_HOLD` | Owner uploaded 07/11 M1–M3 report claims Academic/PED PASS for a **different** source with 10 new TRY/HELP IDs and historic Git blob `e1f9a2...` (GitHub 404); current #782 bridge blob `fcecb2...` has seven local First Try and historical G10 original `57eaf...` maps O05/O06 differently | Keep external PASS only for its actual unverified source snapshot; provide exact reviewed source receipt with semantic outcome mapping or re-review current #782 packet blob `29e067...` using 5 Permanent v2.1, then close HOLD |
+| `TOP-FUNC-M1_M3_ACADEMIC_PED_REVIEW_CLOSED_R09` | G10 M1–M3 Academic/PED PASS accepted: correct source, math and Topic scope. R09 maps all 10 historic outcome meanings | Do not re-review NotebookLM due illustrative labels. Preserve original source and canonical IDs |
+| `TOP-FUNC-G10_REVIEW_SUMMARY_LABELS_NONBLOCKING` | Illustrative reviewer TRY names and outcome numbering differ from R01 source; not evidence of a wrong academic topic or wrong mathematics | Never promote IDs from narrative reviewer summaries; use R09 mapping and actual existing source |
 | `TOP-FUNC-M4_M7_REVIEW_CLOSED` | Owner NotebookLM Academic+PED PASS accepted for four unchanged new Topic source blobs (M4/M5/M6/M7), no metadata-based repeat review | Preserve source and verdict; only new substantive Delta C would trigger targeted review |
 | `TOP-FUNC-Q15_REMAINING_FOUR_CANDIDATES_HOLD` | R08 scoped semantic check of six reviewed public candidates: **2 reuse existing source, 4 genuinely differentiated transfer candidates remain unpromoted** | No clone or automatic ID creation; finish focused full-bank uniqueness/placement for retained 4 and preserve old written/rubrics |
 | `TOP-FUNC-Q16_PRIVATE_RD1_HOLD` | No separately verified private G10–12 Topic Readiness held-out full outcome coverage | Protected source and official Final Submit workflow, zero private stem/key/rubric on public GitHub, no hints/answer/correctness/AI before Final Submit and no unauthorized Mastery |
-| `TOP-FUNC-V2_HANDOFF_HOLD` | All-one Topic source not independently PASS and owner handoff not possible yet | Academic+PED PASS + Q01–Q18/A1–A7 + exact Git source/receipt SHA + one V2 handoff, one ready manifest and synchronized REGISTER |
+| `TOP-FUNC-V2_HANDOFF_HOLD` | All G10–12 M1–M7 academic/PED source scopes accepted. Full Topic cross-grade canonical assembly, four distinct public candidate registrations, private Q16 Readiness and one V2 source handoff remain incomplete. | Complete those genuine gates without repeating already-accepted NotebookLM reviews. |
 
 **AUTHORING stop condition:** no merge/deploy, no Golden/Firebase/learner data changes, and no release authority inferred from Draft CI PASS.
 
-**CURRENT CHECKPOINT (R08, 07/11/2026):** New Topic **M4–M7 Academic+PED PASS ACCEPTED**, with all original review material preserved. Six specific reviewer-mentioned public candidates received an AUTHORING academic-semantic no-clone triage: **2 REUSE_NOT_NEW**, **4 DISTINCT_PUBLIC_CANDIDATES_UNPROMOTED**, **0 new canonical IDs**; source Git blob `dc9bf99011dd6206dfead140a698a37410ae4b01`. M1–M3 new bridge retains a genuine DIFFERENT-OUTCOME/SOURCE review-mapping issue; full M1–M7 source, full Q15 registration and private Q16 TOPIC_READINESS still outstanding. No NotebookLM metadata corrections, no repeated M4–M7 review, no RELEASE. `FULL_TOPIC_CONTENT_READY=NO`.
+**CURRENT CHECKPOINT (R09, 07/11/2026):** M1–M3 academic/PED PASS ACCEPTED on original G10 R01+new bridge; 10 unchanged outcome meanings map to real source questions per R09 Git blob ff58d0c32b1686781aec83ef4f2024b4ba8dda96. M4–M7 already PASS. Six Q15 public candidates triaged (2 reuse / 4 unpromoted). Actual remaining Topic gates: coherent M1–M7 canonical material, proposed distinct ID/role decisions, official private Topic Readiness Q16 and one V2 handoff. No more metadata correction requests. `FULL_TOPIC_CONTENT_READY=NO`, `RELEASE=NO`.
