@@ -23,7 +23,15 @@ for(const lesson of lessons){
  assert.equal(match.length,lesson.items.length,"Per-subtopic reviewed placement count B"+lesson.n);
  assert.deepEqual(match.map(m=>m[1]),lesson.outcomes,"Follow authoring per-lesson insertion map B"+lesson.n);
  assert.equal(blob(p.replace(".md",".md")),blob(p),"Deterministic lesson hash");
- const original=s.replace(marker,""),b=Buffer.from(original);
+ // RELEASE DELTA_A_UI: B15's seven original formulas live in raw HTML <li> tags.
+ // Reversing only their presentation wrappers proves exact historical source parity.
+ let original=s.replace(marker,"");
+ if(lesson.n===15){
+  const wrapper=/<span class="arithmatex">(\\\([\s\S]*?\\\))<\/span>/g;
+  assert.equal([...original.matchAll(wrapper)].length,7,"Only seven original B15 solution math wrappers may differ in UI");
+  original=original.replace(wrapper,(_,math)=>math.replace(/&lt;/g,"<").replace(/&gt;/g,">"));
+ }
+ const b=Buffer.from(original);
  const restored=crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+b.length+"\0"),b])).digest("hex");
  assert.equal(restored,lesson.old,"Unchanged original S1 Knowledge/Examples/D5/D6 B"+lesson.n);
  for(let i=0;i<match.length;i++){
