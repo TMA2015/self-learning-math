@@ -6,6 +6,197 @@
 <nav class="thpt-r4-lesson-tabs" aria-label="Học và luyện Chương IX"><a href="../">Tổng quan Chương IX</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra chương · chưa kích hoạt</a></nav>
 </div>
 
+<!-- G10_CHIX_FULL_R02_ALL_BEGIN -->
+
+## Tự khám phá trước công thức
+
+<!-- G10_CHIX_R02_BEGIN:THPT-G10-CHIX-TRY01 OUTCOME=G10-B26-EXPERIMENT_SAMPLE_SPACE -->
+
+### Một kết quả sơ cấp phải ghi đủ thông tin
+
+**Vì sao cần học:** Trong một trò chơi có hai thao tác, nói chỉ “ra số 2” chưa mô tả đầy đủ kết quả nếu còn phải ghi mặt đồng xu. Thiếu một thành phần làm không gian mẫu bị thiếu và các xác suất sau đó sai ngay từ đầu.
+
+**Kiến thức tiền đề và điều kiện:** Nhớ quy tắc nhân của B23 và khái niệm cặp có thứ tự: (ô 1, ngửa) khác (ô 1, sấp). Một kết quả sơ cấp phải tương ứng đúng một cách hoàn tất phép thử.
+
+**Hình thành bản chất trước công thức:** Ta tạo không gian mẫu bằng cách liệt kê mọi kết quả hoàn chỉnh; mỗi kết quả chứa một lựa chọn ở từng giai đoạn. **Đếm bằng phép nhân là đếm các cặp hoàn chỉnh, không đếm các nhãn đơn lẻ.** Khi từng lựa chọn vật lí đồng đều và hai thao tác độc lập, các cặp mới đồng khả năng.
+
+**Hướng dẫn đọc hình/bảng:** Vẽ bảng ba hàng ứng với các ô 1,2,3 và hai cột N,S. Mỗi giao điểm là một cặp (ô,mặt xu); quét bảng theo hàng để chắc chắn mỗi cặp xuất hiện đúng một lần.
+
+**Vì sao chọn phương pháp này và giới hạn áp dụng:** Ưu tiên bảng hoặc cây khi có ít tầng; dùng tích số lựa chọn sau khi xác định đúng phần tử của Ω. Chỉ nói mọi cặp đồng khả năng khi đã có giả thiết ô bằng nhau, đồng xu cân đối và hai thao tác độc lập.
+
+**Tự thử trước Core:**
+
+Một vòng quay có **3 ô bằng nhau** mang số 1,2,3, dừng đều trên từng ô; đồng thời tung một đồng xu cân đối, độc lập với vòng quay, ghi N (ngửa) hoặc S (sấp). Kết quả được ghi dưới dạng (số ô, mặt xu). Hãy viết Ω và n(Ω).
+
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-outcome-id="G10-B26-EXPERIMENT_SAMPLE_SPACE" data-thpt-first-try-id="THPT-G10-CHIX-TRY01">
+<summary>Tự đối chiếu lời giải sau khi em đã thử</summary>
+<p><strong>Đáp án và lập luận:</strong> <span class="arithmatex">\(\Omega=\{(1,N),(1,S),(2,N),(2,S),(3,N),(3,S)\}\)</span>, <span class="arithmatex">\(n(\Omega)=6\)</span>. Vì có ba lựa chọn ô và hai mặt xu độc lập, số cặp là <span class="arithmatex">\(3\cdot2=6\)</span>; mỗi ô kết hợp đủ hai mặt xu.</p>
+</details>
+
+#### D6 — HELP-G10-CHIX-TRY01 (năm bước khắc phục)
+
+<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-CHIX-TRY01">
+<summary>Khi chưa làm được: tự phát hiện lỗi và quay về kiến thức</summary>
+<p><strong>Bước 1:</strong> Nhận diện lỗi hay gặp: chỉ viết {1,2,3} hoặc {N,S} và bỏ mất một thành phần của kết quả.</p>
+<p><strong>Bước 2:</strong> Nhớ quy tắc nhân B23: kết quả hai giai đoạn là một cặp có thứ tự; phân biệt ô 1 và mặt N.</p>
+<p><strong>Bước 3:</strong> Thử trường hợp nhỏ: hai ô 1,2 và một đồng xu cho bốn cặp (1,N),(1,S),(2,N),(2,S).</p>
+<p><strong>Bước 4:</strong> Trở lại bảng 3×2; tự điền từng ô rồi mới mở lời giải của Tự thử để đối chiếu.</p>
+<p><strong>Bước 5:</strong> Luyện đúng kỹ năng mô tả Ω với câu canonical THPT-G10-B26-C01; giữ kết quả hoàn chỉnh trước khi đếm.</p>
+<p><strong>Điểm quay về canonical:</strong> `THPT-G10-B26-C01` — đường học SGK B26, Core/Practice đã review lịch sử; câu mới chỉ là Tự thử unscored, không cộng Mastery.</p>
+</details>
+
+<!-- G10_CHIX_R02_END:THPT-G10-CHIX-TRY01 -->
+
+<!-- G10_CHIX_R02_BEGIN:THPT-G10-CHIX-TRY02 OUTCOME=G10-B26-EVENT_SUBSET -->
+
+### Biến cố là một tập con của không gian mẫu
+
+**Vì sao cần học:** Cùng một phép thử có thể hỏi “ra số nguyên tố”, “ra số chẵn” hay “ra số lớn hơn 5”. Mỗi câu hỏi tương ứng một nhóm kết quả, không phải một phép thử mới.
+
+**Kiến thức tiền đề và điều kiện:** Nhắc định nghĩa tập hợp, kí hiệu \(A\subseteq\Omega\) và số nguyên tố (số tự nhiên lớn hơn 1 chỉ có hai ước dương 1 và chính nó); đặc biệt số 1 không nguyên tố.
+
+**Hình thành bản chất trước công thức:** Phép thử quyết định Ω trước, phát biểu biến cố chọn từ Ω **những kết quả thỏa điều kiện**, không thêm phần tử bên ngoài Ω. Khi đã liệt kê đúng A, số phần tử thuận lợi mới dùng được để tính xác suất nếu Ω đồng khả năng.
+
+**Hướng dẫn đọc hình/bảng:** Viết Ω trên một hàng bảy vị trí. Dùng dấu khoanh vào các vị trí thuộc A; các vị trí còn lại cho thấy A thực sự là tập con của Ω.
+
+**Vì sao chọn phương pháp này và giới hạn áp dụng:** Với ít kết quả, liệt kê A minh bạch hơn đếm tắt; với nhiều kết quả dùng tính chất số học nhưng vẫn phải chứng minh thuộc Ω. Chỉ chia \(n(A)/n(\Omega)\) sau khi xác nhận chọn đều.
+
+**Tự thử trước Core:**
+
+Rút đều ngẫu nhiên một thẻ trong **7 thẻ phân biệt** được ghi số 1,2,3,4,5,6,7. Gọi A là biến cố “rút được thẻ mang số nguyên tố”. Hãy viết Ω, A và tính P(A).
+
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-outcome-id="G10-B26-EVENT_SUBSET" data-thpt-first-try-id="THPT-G10-CHIX-TRY02">
+<summary>Tự đối chiếu lời giải sau khi em đã thử</summary>
+<p><strong>Đáp án và lập luận:</strong> <span class="arithmatex">\(\Omega=\{1,2,3,4,5,6,7\}\)</span>, <span class="arithmatex">\(A=\{2,3,5,7\}\)</span> nên <span class="arithmatex">\(P(A)=4/7\)</span>. Số 1 không phải số nguyên tố; bảy thẻ phân biệt được rút đều nên các kết quả đồng khả năng.</p>
+</details>
+
+#### D6 — HELP-G10-CHIX-TRY02 (năm bước khắc phục)
+
+<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-CHIX-TRY02">
+<summary>Khi chưa làm được: tự phát hiện lỗi và quay về kiến thức</summary>
+<p><strong>Bước 1:</strong> Kiểm lỗi: viết nhầm A={1,2,3,5,7} vì coi 1 là số nguyên tố, hoặc quên xác định Ω.</p>
+<p><strong>Bước 2:</strong> Ôn định nghĩa tập con và số nguyên tố; chỉ chọn những thẻ số thuộc Ω thỏa đúng điều kiện.</p>
+<p><strong>Bước 3:</strong> Thử trên các số 1 đến 4: tập số nguyên tố chỉ là {2,3}, không gồm 1.</p>
+<p><strong>Bước 4:</strong> Gạch chân từng số nguyên tố trong Ω bảy phần tử, kiểm đã đếm đúng bốn kết quả rồi tự mở đối chiếu.</p>
+<p><strong>Bước 5:</strong> Luyện tiếp canonical THPT-G10-B26-P02 để phân biệt Ω và biến cố trong phép thử nhiều bước.</p>
+<p><strong>Điểm quay về canonical:</strong> `THPT-G10-B26-P02` — đường học SGK B26, Core/Practice đã review lịch sử; câu mới chỉ là Tự thử unscored, không cộng Mastery.</p>
+</details>
+
+<!-- G10_CHIX_R02_END:THPT-G10-CHIX-TRY02 -->
+
+<!-- G10_CHIX_R02_BEGIN:THPT-G10-CHIX-TRY03 OUTCOME=G10-B26-CLASSICAL_RATIO -->
+
+### Đồng khả năng thuộc kết quả sơ cấp, không mặc định thuộc nhãn
+
+**Vì sao cần học:** Nếu 10 thẻ có hai nhãn X và Y, xác suất nhãn X không vì thế bằng 1/2: số thẻ thực tế mang mỗi nhãn mới quyết định tần suất khi từng thẻ được chọn đều.
+
+**Kiến thức tiền đề và điều kiện:** Nhớ phân biệt đối tượng vật lí (thẻ có số riêng) và nhãn cùng loại; ô/hồ sơ có cùng nhãn vẫn là các kết quả sơ cấp khác nhau.
+
+**Hình thành bản chất trước công thức:** Định nghĩa cổ điển \(P(A)=n(A)/n(\Omega)\) chỉ đúng với **Ω hữu hạn, không rỗng và các kết quả sơ cấp đồng khả năng**. Có thể nhiều kết quả sơ cấp cùng mang một nhãn; gom nhãn lại không bảo toàn đồng khả năng.
+
+**Hướng dẫn đọc hình/bảng:** Xếp 10 ô có tên riêng 1–10, tô dấu X lên đúng bốn ô, dấu Y lên sáu ô. Đếm 10 ô vật lí, không lấy mẫu số 2 là hai nhãn.
+
+**Vì sao chọn phương pháp này và giới hạn áp dụng:** Chọn Ω là các thẻ phân biệt được rút đều; đếm số thẻ mang X. Nếu đề chỉ nói “ngẫu nhiên” mà không cho chọn đều, phải kiểm mô hình trước khi tính.
+
+**Tự thử trước Core:**
+
+Có 10 thẻ **phân biệt được khi đánh số**, trong đó đúng **4 thẻ ghi X** và 6 thẻ ghi Y. Chọn đều ngẫu nhiên một thẻ. Tính P(đọc được nhãn X) và giải thích vì sao không phải 1/2.
+
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-outcome-id="G10-B26-CLASSICAL_RATIO" data-thpt-first-try-id="THPT-G10-CHIX-TRY03">
+<summary>Tự đối chiếu lời giải sau khi em đã thử</summary>
+<p><strong>Đáp án và lập luận:</strong> <span class="arithmatex">\(P(X)=4/10=2/5\)</span>. Mỗi thẻ vật lí là một kết quả sơ cấp đồng khả năng; bốn thẻ mang X. Hai nhãn X,Y không đồng khả năng vì xuất hiện trên số thẻ khác nhau.</p>
+</details>
+
+#### D6 — HELP-G10-CHIX-TRY03 (năm bước khắc phục)
+
+<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-CHIX-TRY03">
+<summary>Khi chưa làm được: tự phát hiện lỗi và quay về kiến thức</summary>
+<p><strong>Bước 1:</strong> Nhận diện lỗi: lấy 1/2 vì có hai tên X, Y, trong khi mẫu phải là số thẻ đồng khả năng.</p>
+<p><strong>Bước 2:</strong> Tách “thẻ vật lí” khỏi “nhãn đọc được”; hãy đặt chỉ số riêng cho từng thẻ.</p>
+<p><strong>Bước 3:</strong> Thử ba thẻ X₁, X₂, Y₁ chọn đều: xác suất X là 2/3 chứ không phải 1/2.</p>
+<p><strong>Bước 4:</strong> Với 10 thẻ, đếm bốn X trên tổng mười; mở lời giải khi đã tự chọn Ω và n(A).</p>
+<p><strong>Bước 5:</strong> Ôn canonical THPT-G10-B26-C02 (vòng quay có nhãn màu lặp) để luyện chọn đúng kết quả sơ cấp.</p>
+<p><strong>Điểm quay về canonical:</strong> `THPT-G10-B26-C02` — đường học SGK B26, Core/Practice đã review lịch sử; câu mới chỉ là Tự thử unscored, không cộng Mastery.</p>
+</details>
+
+<!-- G10_CHIX_R02_END:THPT-G10-CHIX-TRY03 -->
+
+<!-- G10_CHIX_R02_BEGIN:THPT-G10-CHIX-TRY04 OUTCOME=G10-B26-COMPLEMENT -->
+
+### Biến cố đối đếm phần còn lại mà không bỏ sót
+
+**Vì sao cần học:** Muốn tìm xác suất “không xuất hiện bội số của 3”, đếm riêng mọi kết quả không phải bội số có thể dài và dễ bỏ sót. Phần bù cho phép tính ngắn hơn.
+
+**Kiến thức tiền đề và điều kiện:** Nhớ quan hệ \(\bar A=\Omega\setminus A\) trong **cùng Ω**, và các xác suất đồng khả năng cộng thành 1. Không nhầm “không thuộc A” với một điều kiện khác.
+
+**Hình thành bản chất trước công thức:** A và biến cố đối không thể xảy ra cùng lúc và phủ kín Ω, nên \(P(\bar A)=1-P(A)\). Đây không phải một mẹo trừ số không có căn cứ; chính việc phân hoạch Ω thành hai phần rời nhau làm công thức đúng.
+
+**Hướng dẫn đọc hình/bảng:** Đánh dấu 12 số 1–12; tô nhóm bội của 3 bằng một kí hiệu, để phần còn lại không tô. Hai phần ghép lại đủ 12 phần tử.
+
+**Vì sao chọn phương pháp này và giới hạn áp dụng:** Dùng phần bù khi A dễ liệt kê hơn \(\bar A\). Với nhóm số, vẫn kiểm các phần tử bội của 3, không nhân thừa vì trùng số.
+
+**Tự thử trước Core:**
+
+Chọn đều một số nguyên từ 1 đến 12. Tính xác suất số được chọn **không chia hết cho 3** bằng biến cố đối.
+
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-outcome-id="G10-B26-COMPLEMENT" data-thpt-first-try-id="THPT-G10-CHIX-TRY04">
+<summary>Tự đối chiếu lời giải sau khi em đã thử</summary>
+<p><strong>Đáp án và lập luận:</strong> Các bội của 3 là 3,6,9,12, có 4 trong 12 số. Do đó <span class="arithmatex">\(P(\text{không chia hết cho 3})=1-4/12=8/12=2/3\)</span>.</p>
+</details>
+
+#### D6 — HELP-G10-CHIX-TRY04 (năm bước khắc phục)
+
+<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-CHIX-TRY04">
+<summary>Khi chưa làm được: tự phát hiện lỗi và quay về kiến thức</summary>
+<p><strong>Bước 1:</strong> Kiểm lỗi: biến cố đối của “chia hết cho 3” phải gồm toàn bộ các số không chia hết cho 3, không chỉ số lẻ.</p>
+<p><strong>Bước 2:</strong> Xác định Ω={1,…,12}; gọi A là nhóm bội 3, viết phần bù trong cùng Ω.</p>
+<p><strong>Bước 3:</strong> Trên Ω={1,…,6}, nhóm bội 3 là {3,6}; phần không chia hết có 4 phần tử.</p>
+<p><strong>Bước 4:</strong> Liệt kê bốn bội 3 trong 1–12, trừ khỏi tổng; chỉ sau đó mở lời giải Tự thử.</p>
+<p><strong>Bước 5:</strong> Luyện canonical THPT-G10-B26-P01 để củng cố phép tính biến cố đối.</p>
+<p><strong>Điểm quay về canonical:</strong> `THPT-G10-B26-P01` — đường học SGK B26, Core/Practice đã review lịch sử; câu mới chỉ là Tự thử unscored, không cộng Mastery.</p>
+</details>
+
+<!-- G10_CHIX_R02_END:THPT-G10-CHIX-TRY04 -->
+
+<!-- G10_CHIX_R02_BEGIN:THPT-G10-CHIX-TRY05 OUTCOME=G10-B26-SCOPE_SMALL_PROBABILITY -->
+
+### Biết khi nào KHÔNG đủ dữ kiện để chia đều
+
+**Vì sao cần học:** Từ “ngẫu nhiên” trong đời sống không bảo đảm mọi nhãn đầu ra có xác suất bằng nhau. Tự học xác suất bắt đầu từ việc kiểm dữ kiện, không phải từ việc tìm một phân số bằng mọi giá.
+
+**Kiến thức tiền đề và điều kiện:** Ôn ý nghĩa của xác suất dương rất nhỏ và điều kiện đồng khả năng của Ω. Phân biệt “một trong ba lựa chọn có thể xảy ra” với “ba lựa chọn có cùng xác suất”.
+
+**Hình thành bản chất trước công thức:** Nếu chưa biết quy tắc chọn hoặc tần suất/mô hình, không thể tự gán \(1/3\) chỉ vì có ba kết quả được đặt tên. Đây là một **giới hạn áp dụng** của định nghĩa cổ điển. Một biến cố có xác suất rất nhỏ vẫn có thể xảy ra, không đồng nghĩa biến cố không thể.
+
+**Hướng dẫn đọc hình/bảng:** Vẽ ba nhánh A,B,C nhưng để dấu hỏi ở độ rộng/xác suất nhánh; dấu hỏi nhắc rằng chưa có chứng cứ ba nhánh đồng khả năng.
+
+**Vì sao chọn phương pháp này và giới hạn áp dụng:** Chỉ tính \(n(A)/n(\Omega)\) khi chọn đều từng kết quả sơ cấp đã được nêu. Nếu thiếu giả thiết, kết luận 'không đủ thông tin' và nói rõ cần thêm dữ kiện về cơ chế chọn; không bịa phân bố đều.
+
+**Tự thử trước Core:**
+
+(a) Một ứng dụng phát ngẫu nhiên một trong ba thông báo A, B, C theo một **thuật toán không được mô tả**. Bạn Minh nói: “Vì có ba thông báo nên P(hiện A)=1/3”. Minh đã đủ căn cứ chưa? Giải thích. (b) Trong một hộp có **200 vé phân biệt**, chỉ một vé đặc biệt; rút đều một vé. Hãy tính xác suất rút được vé đặc biệt và đánh giá lời khẳng định “Xác suất rất nhỏ nghĩa là không thể trúng”.
+
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-outcome-id="G10-B26-SCOPE_SMALL_PROBABILITY" data-thpt-first-try-id="THPT-G10-CHIX-TRY05">
+<summary>Tự đối chiếu lời giải sau khi em đã thử</summary>
+<p><strong>Đáp án và lập luận:</strong> **(a) Chưa đủ căn cứ.** Từ “ngẫu nhiên” không cho biết thuật toán chọn A,B,C có đồng khả năng hay không. Chỉ khi ba kết quả được chọn đều mới suy ra <span class="arithmatex">\(P(A)=1/3\)</span>; đề bài hiện tại không cho điều đó. **(b)** Vì 200 vé được rút đều và chỉ 1 vé trúng, <span class="arithmatex">\(P(\text{trúng})=1/200=0{,}005&gt;0\)</span>. Trúng rất hiếm trong một lần rút nhưng không phải biến cố không thể.</p>
+</details>
+
+#### D6 — HELP-G10-CHIX-TRY05 (năm bước khắc phục)
+
+<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-CHIX-TRY05">
+<summary>Khi chưa làm được: tự phát hiện lỗi và quay về kiến thức</summary>
+<p><strong>Bước 1:</strong> Nhận diện lỗi: tự đồng nhất “có ba nhãn” với “mỗi nhãn có xác suất 1/3”.</p>
+<p><strong>Bước 2:</strong> Nhắc điều kiện định nghĩa cổ điển: Ω hữu hạn, khác rỗng, từng kết quả sơ cấp đồng khả năng.</p>
+<p><strong>Bước 3:</strong> Xét thuật toán khác: chọn A với xác suất 1/2, B và C mỗi cái 1/4; vẫn ngẫu nhiên nhưng không đều.</p>
+<p><strong>Bước 4:</strong> Trở lại (a) tìm giả thiết đồng khả năng còn thiếu; với (b) nêu 200 vé đồng khả năng, đúng một kết quả thuận lợi, soát <span class="arithmatex">\(1/200&gt;0\)</span>, rồi tự mở đối chiếu.</p>
+<p><strong>Bước 5:</strong> Ôn canonical THPT-G10-B26-P05 để luyện phát hiện giả thiết đồng khả năng còn thiếu.</p>
+<p><strong>Điểm quay về canonical:</strong> `THPT-G10-B26-P05` — đường học SGK B26, Core/Practice đã review lịch sử; câu mới chỉ là Tự thử unscored, không cộng Mastery.</p>
+</details>
+
+<!-- G10_CHIX_R02_END:THPT-G10-CHIX-TRY05 -->
+
+<!-- G10_CHIX_FULL_R02_ALL_END -->
+
 ## 1. Kiến thức SGK — khái niệm và điều kiện
 
 ### 26.1. Phép thử ngẫu nhiên và không gian mẫu
