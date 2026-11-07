@@ -6,6 +6,172 @@
 <nav class="thpt-r4-lesson-tabs" aria-label="Điều hướng Chương VIII"><a href="../">Tổng quan Chương VIII</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra chương · chưa kích hoạt</a></nav>
 </div>
 
+<!-- G10_CHVIII_FULL_R02_ALL_BEGIN -->
+
+## Tự khám phá trước công thức
+
+<!-- G10_CHVIII_R02_BEGIN:THPT-G10-CHVIII-TRY05 -->
+
+<span id="thpt-g10-chviii-try05" data-thpt-first-try-id="THPT-G10-CHVIII-TRY05" data-outcome-id="G10-B24-PERMUTATION"></span>
+
+### Hoán vị là xếp hết các phần tử và thứ tự quyết định
+
+**Vì sao cần học:** Khi xếp nhiều quyển sách trên giá, đổi chỗ hai quyển tạo ra một cách xếp khác dù bộ sách không đổi.
+
+**Tiền đề:** Ôn quy tắc nhân qua các vị trí; n đối tượng phân biệt, mỗi vị trí dùng đúng một đối tượng.
+
+**Hiểu bản chất trước công thức:** Hoán vị của n vật phân biệt là một thứ tự của tất cả n vật; số lựa chọn giảm dần n,n−1,...,1. Khi các vật phải đứng cạnh nhau, gộp chúng thành một khối trước khi đếm.
+
+**Hướng dẫn đọc hình/sơ đồ:** Vẽ 4 vị trí trên kệ và một khối [A B]; mỗi hoán đổi A B trong khối làm ra 2 cách khác nhau.
+
+**Lý do chọn phương pháp, điều kiện và giới hạn:** Nếu xếp tất cả n vật phân biệt, dùng n!. Nếu có ràng buộc đứng kề, xem nhóm như một khối để xếp ngoài rồi nhân cách sắp trong khối. Không dùng tổ hợp vì thứ tự quan trọng.
+
+**Tự thử trước Core:** Có bốn sách phân biệt A,B,C,D; xếp thành một hàng sao cho A và B đứng cạnh nhau. Có mấy cách?
+
+??? question "Tự mở đáp án sau khi đã tự làm"
+    **Đáp án:** 12 cách.
+
+    **Lập luận:** Gộp A,B thành một khối, cùng C,D là 3 đối tượng có 3!=6 cách xếp; A,B trong khối đổi chỗ có 2!=2 cách. Tổng 6×2=12.
+
+    **Nếu chưa đúng:** xem D6 `HELP-G10-CHVIII-TRY05`, sau đó luyện bài canonical `THPT-G10-B24-C01` trong ngân hàng đã review (không tính lại câu đã xem lời giải thành Readiness).
+
+    <a href="#help-g10-chviii-try05">Chuyển đến hướng dẫn D6</a>
+
+<span id="help-g10-chviii-try05" data-thpt-help-id="HELP-G10-CHVIII-TRY05"></span>
+
+??? tip "Nếu chưa làm được — khắc phục 5 bước"
+    1. **Nhận diện lỗi:** Nếu tính 4!=24, em chưa xử lý yêu cầu A,B kề nhau; nếu chỉ 3!=6, em quên hai trật tự AB/BA.
+    2. **Quay lại bản chất:** Hoán vị của n vật phân biệt là một thứ tự của tất cả n vật; số lựa chọn giảm dần n,n−1,...,1. Khi các vật phải đứng cạnh nhau, gộp chúng thành một khối trước khi đếm.
+    3. **Tự làm lại:** Vẽ [AB], C,D rồi thay [AB] bằng [BA], đếm hai lần 6.
+    4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không cộng điểm/Mastery.
+    5. **Luyện tiếp:** `THPT-G10-B24-C01`, câu canonical đã review, phù hợp `G10-B24-PERMUTATION`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
+
+    <a href="../luyen-tap/?item=THPT-G10-B24-C01">Mở câu luyện tập đã review</a>
+
+<!-- G10_CHVIII_R02_END:THPT-G10-CHVIII-TRY05 -->
+
+<!-- G10_CHVIII_R02_BEGIN:THPT-G10-CHVIII-TRY06 -->
+
+<span id="thpt-g10-chviii-try06" data-thpt-first-try-id="THPT-G10-CHVIII-TRY06" data-outcome-id="G10-B24-ARRANGEMENT"></span>
+
+### Chỉnh hợp chọn một số người rồi phân vai
+
+**Vì sao cần học:** Chọn lớp trưởng và lớp phó khác với chọn hai bạn vào nhóm: vai trò khác nhau nên cùng hai bạn đổi vị trí tạo kết quả khác.
+
+**Tiền đề:** Nhắc 0≤k≤n, n người phân biệt, nhiệm vụ có k vị trí hoặc chức danh **phân biệt**.
+
+**Hiểu bản chất trước công thức:** Chỉnh hợp chập k đếm k người chọn từ n **và xếp vào k vị trí phân biệt**; đây là số cách nhân n(n−1)...(n−k+1).
+
+**Hướng dẫn đọc hình/sơ đồ:** Vẽ ô lớp trưởng và lớp phó; gán An→trưởng, Bình→phó khác Bình→trưởng, An→phó.
+
+**Lý do chọn phương pháp, điều kiện và giới hạn:** Hỏi 'ai làm vị trí thứ nhất, ai làm vị trí thứ hai' → chỉnh hợp. Khi không phân vai mới chuyển sang tổ hợp.
+
+**Tự thử trước Core:** Có 5 học sinh khác nhau, chọn một lớp trưởng và một lớp phó, hai chức vụ không kiêm nhiệm. Có mấy cách?
+
+??? question "Tự mở đáp án sau khi đã tự làm"
+    **Đáp án:** 20 cách.
+
+    **Lập luận:** Lớp trưởng 5 cách, lớp phó còn 4, nên 5×4=20=A₅². Hai bạn hoán đổi vai trò là hai cách khác.
+
+    **Nếu chưa đúng:** xem D6 `HELP-G10-CHVIII-TRY06`, sau đó luyện bài canonical `THPT-G10-B24-C02` trong ngân hàng đã review (không tính lại câu đã xem lời giải thành Readiness).
+
+    <a href="#help-g10-chviii-try06">Chuyển đến hướng dẫn D6</a>
+
+<span id="help-g10-chviii-try06" data-thpt-help-id="HELP-G10-CHVIII-TRY06"></span>
+
+??? tip "Nếu chưa làm được — khắc phục 5 bước"
+    1. **Nhận diện lỗi:** Nếu ra 10, em đã chia 2 như tổ hợp, tức không phân biệt hai chức danh.
+    2. **Quay lại bản chất:** Chỉnh hợp chập k đếm k người chọn từ n **và xếp vào k vị trí phân biệt**; đây là số cách nhân n(n−1)...(n−k+1).
+    3. **Tự làm lại:** So hai phân công (An trưởng,Bình phó) và (Bình trưởng,An phó) để thấy chúng khác nhau.
+    4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không cộng điểm/Mastery.
+    5. **Luyện tiếp:** `THPT-G10-B24-C02`, câu canonical đã review, phù hợp `G10-B24-ARRANGEMENT`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
+
+    <a href="../luyen-tap/?item=THPT-G10-B24-C02">Mở câu luyện tập đã review</a>
+
+<!-- G10_CHVIII_R02_END:THPT-G10-CHVIII-TRY06 -->
+
+<!-- G10_CHVIII_R02_BEGIN:THPT-G10-CHVIII-TRY07 -->
+
+<span id="thpt-g10-chviii-try07" data-thpt-first-try-id="THPT-G10-CHVIII-TRY07" data-outcome-id="G10-B24-COMBINATION"></span>
+
+### Tổ hợp chỉ chọn nhóm không phân vai
+
+**Vì sao cần học:** Khi chọn hai đại diện cùng vai trò tham gia một cuộc họp, đổi thứ tự kể tên không tạo ra một nhóm mới.
+
+**Tiền đề:** Nhắc chỉnh hợp đếm thứ tự; hai người phân biệt có 2!=2 thứ tự khi cùng một nhóm.
+
+**Hiểu bản chất trước công thức:** Tổ hợp chập k đếm các tập con k phần tử, không xét thứ tự. Từ số cách xếp k người, chia cho k! trật tự bị đếm trùng.
+
+**Hướng dẫn đọc hình/sơ đồ:** Vẽ hai phiếu 'An,Bình' và 'Bình,An' đặt vào cùng một ô 'nhóm {An,Bình}' vì thực chất giống nhau.
+
+**Lý do chọn phương pháp, điều kiện và giới hạn:** Hỏi 'chọn nhóm' với vai trò ngang nhau → C(n,k)=A(n,k)/k!, 0≤k≤n. Tránh tự chia k! nếu bài có phân vai.
+
+**Tự thử trước Core:** Từ 5 bạn phân biệt, chọn 2 bạn cùng đi trực nhật (không phân vai). Có mấy nhóm?
+
+??? question "Tự mở đáp án sau khi đã tự làm"
+    **Đáp án:** 10 nhóm.
+
+    **Lập luận:** Chọn bạn đầu có 5 cách, bạn thứ hai có 4, mỗi cặp bị đếm hai thứ tự: 5×4/2=10=C₅².
+
+    **Nếu chưa đúng:** xem D6 `HELP-G10-CHVIII-TRY07`, sau đó luyện bài canonical `THPT-G10-B24-P01` trong ngân hàng đã review (không tính lại câu đã xem lời giải thành Readiness).
+
+    <a href="#help-g10-chviii-try07">Chuyển đến hướng dẫn D6</a>
+
+<span id="help-g10-chviii-try07" data-thpt-help-id="HELP-G10-CHVIII-TRY07"></span>
+
+??? tip "Nếu chưa làm được — khắc phục 5 bước"
+    1. **Nhận diện lỗi:** Nếu ra 20, em đã tính như hai chức danh khác nhau, đếm mỗi nhóm hai lần.
+    2. **Quay lại bản chất:** Tổ hợp chập k đếm các tập con k phần tử, không xét thứ tự. Từ số cách xếp k người, chia cho k! trật tự bị đếm trùng.
+    3. **Tự làm lại:** Viết {A,B}={B,A}; ghép các thứ tự trùng rồi đếm lại.
+    4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không cộng điểm/Mastery.
+    5. **Luyện tiếp:** `THPT-G10-B24-P01`, câu canonical đã review, phù hợp `G10-B24-COMBINATION`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
+
+    <a href="../luyen-tap/?item=THPT-G10-B24-P01">Mở câu luyện tập đã review</a>
+
+<!-- G10_CHVIII_R02_END:THPT-G10-CHVIII-TRY07 -->
+
+<!-- G10_CHVIII_R02_BEGIN:THPT-G10-CHVIII-TRY08 -->
+
+<span id="thpt-g10-chviii-try08" data-thpt-first-try-id="THPT-G10-CHVIII-TRY08" data-outcome-id="G10-B24-CONSTRAINTS"></span>
+
+### Chọn nhóm có điều kiện: tổ hợp rồi nhân
+
+**Vì sao cần học:** Khi lập nhóm có cơ cấu bắt buộc, phải đảm bảo đủ từng loại trước khi đếm toàn nhóm.
+
+**Tiền đề:** Ôn tổ hợp chọn nhóm không thứ tự và quy tắc nhân khi cần thực hiện đồng thời các lựa chọn thành phần.
+
+**Hiểu bản chất trước công thức:** Chọn đúng 2 nam và 1 nữ là hai việc phối hợp: chọn nhóm hai nam VÀ chọn một nữ. Mỗi cặp nam ghép với mỗi nữ thành một nhóm cuối cùng.
+
+**Hướng dẫn đọc hình/sơ đồ:** Vẽ hai ô 'chọn 2 từ 5 nam' và 'chọn 1 từ 4 nữ', nối mỗi ô sang một nhóm 3 người; không phân biệt thứ tự liệt kê trong nhóm.
+
+**Lý do chọn phương pháp, điều kiện và giới hạn:** Tách thành thành phần theo loại, dùng tổ hợp cho mỗi nhóm ngang vai rồi nhân các lựa chọn thành phần; kiểm điều kiện đúng 3 người và đúng số nam/nữ.
+
+**Tự thử trước Core:** Có 5 học sinh nam và 4 học sinh nữ khác nhau. Có bao nhiêu cách chọn nhóm 3 bạn gồm đúng 2 nam, 1 nữ?
+
+??? question "Tự mở đáp án sau khi đã tự làm"
+    **Đáp án:** 40 nhóm.
+
+    **Lập luận:** C(5,2)=10 cách chọn hai nam; C(4,1)=4 cách chọn một nữ. Mỗi cặp ghép một nữ tạo 10×4=40 nhóm phân biệt.
+
+    **Nếu chưa đúng:** xem D6 `HELP-G10-CHVIII-TRY08`, sau đó luyện bài canonical `THPT-G10-B24-P04` trong ngân hàng đã review (không tính lại câu đã xem lời giải thành Readiness).
+
+    <a href="#help-g10-chviii-try08">Chuyển đến hướng dẫn D6</a>
+
+<span id="help-g10-chviii-try08" data-thpt-help-id="HELP-G10-CHVIII-TRY08"></span>
+
+??? tip "Nếu chưa làm được — khắc phục 5 bước"
+    1. **Nhận diện lỗi:** Nếu lấy C(9,3), em đã tính cả nhóm không có đúng 2 nam 1 nữ; nếu dùng hoán vị, em đếm trùng thứ tự kể tên.
+    2. **Quay lại bản chất:** Chọn đúng 2 nam và 1 nữ là hai việc phối hợp: chọn nhóm hai nam VÀ chọn một nữ. Mỗi cặp nam ghép với mỗi nữ thành một nhóm cuối cùng.
+    3. **Tự làm lại:** Viết sơ đồ 2 nam +1 nữ và thử kiểm vài nhóm từ kết quả.
+    4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không cộng điểm/Mastery.
+    5. **Luyện tiếp:** `THPT-G10-B24-P04`, câu canonical đã review, phù hợp `G10-B24-CONSTRAINTS`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
+
+    <a href="../luyen-tap/?item=THPT-G10-B24-P04">Mở câu luyện tập đã review</a>
+
+<!-- G10_CHVIII_R02_END:THPT-G10-CHVIII-TRY08 -->
+
+<!-- G10_CHVIII_FULL_R02_ALL_END -->
+
 ## 1. Khái niệm, điều kiện và công thức
 
 **Điều kiện chung.** Có \(n\) đối tượng **phân biệt**, \(n\) nguyên không âm. Với \(0\le k\le n\):

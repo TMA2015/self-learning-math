@@ -34,6 +34,8 @@ on:
       - 'scripts/test-thpt-g10-chv-full-r03-browser.cjs'
       - 'scripts/test-thpt-g10-chvi-full-r04-release.cjs'
       - 'scripts/test-thpt-g10-chvi-full-r04-browser.cjs'
+      - 'scripts/test-thpt-g10-chviii-full-r02-release.cjs'
+      - 'scripts/test-thpt-g10-chviii-full-r02-browser.cjs'
       - 'docs/assets/images/thpt/THPT_G10_CHVI_B15_FUNCTION_MAPPING_D5_R03.svg'
       - 'docs/assets/images/thpt/THPT_G10_CHVI_B18_RADICAL_FLOW_D5_R03.svg'
       - 'docs/assets/javascripts/thpt-self-check-qa-v1.js'
@@ -353,6 +355,10 @@ jobs:
         run: node scripts/test-thpt-g10-chv-full-r03-release.cjs
       - name: Guard G10 ChVI FULL R04 19 concept-first, original four S1 lessons, two SVG and 20 Q16 public selfchecks
         run: node scripts/test-thpt-g10-chvi-full-r04-release.cjs
+      - name: Guard G10 ChVIII FULL R02 12 source-verbatim First Try/D6 and unchanged 3 SGK lessons/banks
+        run: |
+          node --check scripts/test-thpt-g10-chviii-full-r02-release.cjs
+          node scripts/test-thpt-g10-chviii-full-r02-release.cjs
       - name: Guard G11 ChI original 16 source-locked items, 2 SVG, Written/Anchor and D6
         run: node scripts/test-thpt-g11-chi-b01-b02-release-integration.cjs
       - name: Guard G11 ChI B03/B04 additional 26 canonical and D1-D6 source lock
@@ -446,6 +452,7 @@ jobs:
           node scripts/test-thpt-g10-chv-b12-reviewed-r02-integration.cjs --built
           node scripts/test-thpt-g10-chv-full-r03-release.cjs --built
           node scripts/test-thpt-g10-chvi-full-r04-release.cjs --built
+          node scripts/test-thpt-g10-chviii-full-r02-release.cjs --built
           node scripts/test-thpt-g11-chi-b01-b02-release-integration.cjs --built
           node scripts/test-thpt-chvi-student-notes.cjs --built
       - name: Guard G11 ChI protected RD1 exclusion in both built clients
@@ -512,6 +519,8 @@ jobs:
         run: node scripts/test-thpt-g10-chv-full-r03-browser.cjs
       - name: G10 ChVI FULL R04 19 First Try 2 SVG 2 new Written post-Final browser · 390 820 1440
         run: node scripts/test-thpt-g10-chvi-full-r04-browser.cjs
+      - name: G10 ChVIII FULL R02 12 Golden First Try/D6 and 14 Q16 original · 390 820 1440
+        run: node scripts/test-thpt-g10-chviii-full-r02-browser.cjs
       - name: G11 ChI B01/B02 browser QA mobile / tablet / desktop
         run: node scripts/test-thpt-g11-chi-b01-b02-browser-smoke.cjs
       - name: G11 ChI B03/B04 reviewed browser QA · mobile tablet desktop

@@ -30,6 +30,8 @@ jobs:
         run: node scripts/test-thpt-g10-chv-full-r03-release.cjs
       - name: Guard G10 ChVI FULL R04 19 PED placements, two reviewed public Written and no Mastery before deploy
         run: node scripts/test-thpt-g10-chvi-full-r04-release.cjs
+      - name: Guard G10 ChVIII FULL R02 12 source-locked First Try/D6 and frozen 25+3+14 public banks before deploy
+        run: node scripts/test-thpt-g10-chviii-full-r02-release.cjs
       - name: Guard G12 ChVI source/receipt SHA, 56 public canonical and private RD1 Q16 boundary
         run: node scripts/test-thpt-g12-chvi-release-source.cjs
 
