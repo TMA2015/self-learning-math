@@ -26,12 +26,12 @@
 
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHVI-TRY01" data-outcome-id="B15_OUT_01">
 <summary>Em đã tự thử? Mở đáp án để đối chiếu</summary>
-<div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> A là hàm số trên \(D=\{1,3\}\); B không là hàm số \(y\) theo \(x\).</p><p><strong>Vì sao:</strong> Trong A, \(x=3\) lặp hai lần nhưng luôn cho \(y=2\). Trong B, cùng \(x=3\) cho cả \(y=2\) và \(y=4\), vi phạm tính đơn trị.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
+<div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> A là hàm số trên <span class="arithmatex">\(D=\{1,3\}\)</span>; B không là hàm số <span class="arithmatex">\(y\)</span> theo <span class="arithmatex">\(x\)</span>.</p><p><strong>Vì sao:</strong> Trong A, <span class="arithmatex">\(x=3\)</span> lặp hai lần nhưng luôn cho <span class="arithmatex">\(y=2\)</span>. Trong B, cùng <span class="arithmatex">\(x=3\)</span> cho cả <span class="arithmatex">\(y=2\)</span> và <span class="arithmatex">\(y=4\)</span>, vi phạm tính đơn trị.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
 </details>
 
 <details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-CHVI-TRY01"><summary>Gợi ý khắc phục khi chưa làm được — 5 bước</summary><ol><li><strong>Nhận diện lỗi:</strong> Nhầm “một x xuất hiện hai lần” với “một x có hai kết quả khác nhau”.</li>
 <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
-<li><strong>Kiến thức gốc:</strong> Một quy tắc là hàm số trên tập \(D\) nếu mỗi đầu vào \(x\in D\) có <strong>đúng một</strong> giá trị đầu ra \(y\). Hai dòng trùng hệt \((x;y)\) không phá điều kiện; nhưng \((x;y_1)\) và \((x;y_2)\) với \(y_1\ne y_2\) thì phá. Sau trực giác ấy mới dùng kí hiệu \(y=f(x)\).</li>
+<li><strong>Kiến thức gốc:</strong> Một quy tắc là hàm số trên tập <span class="arithmatex">\(D\)</span> nếu mỗi đầu vào <span class="arithmatex">\(x\in D\)</span> có <strong>đúng một</strong> giá trị đầu ra <span class="arithmatex">\(y\)</span>. Hai dòng trùng hệt <span class="arithmatex">\((x;y)\)</span> không phá điều kiện; nhưng <span class="arithmatex">\((x;y_1)\)</span> và <span class="arithmatex">\((x;y_2)\)</span> với <span class="arithmatex">\(y_1\ne y_2\)</span> thì phá. Sau trực giác ấy mới dùng kí hiệu <span class="arithmatex">\(y=f(x)\)</span>.</li>
 <li><strong>Tự sửa:</strong> Tách các dòng theo từng x phân biệt, liệt kê mọi y gắn với x đó và thử tính đơn trị. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
 <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B15-C01">luyện lại một câu có sẵn trong Core/Luyện tập</a>, sau đó tự giải thích bằng lời của mình.</li></ol></details>
 <!-- G10_CHVI_R04_END:B15_OUT_01 -->
@@ -63,12 +63,12 @@ Cho tập hợp \(D\) gồm các giá trị của \(x\). Nếu **mỗi** \(x\in 
 
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHVI-TRY02" data-outcome-id="B15_OUT_02">
 <summary>Em đã tự thử? Mở đáp án để đối chiếu</summary>
-<div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> \(D=[2;+\infty)\), còn \(T=[0;+\infty)\).</p><p><strong>Vì sao:</strong> \(x-2\ge0\Rightarrow x\ge2\). Căn luôn không âm, bằng 0 khi x=2; với mọi y≥0, lấy x=y²+2 được f(x)=y.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
+<div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> <span class="arithmatex">\(D=[2;+\infty)\)</span>, còn <span class="arithmatex">\(T=[0;+\infty)\)</span>.</p><p><strong>Vì sao:</strong> <span class="arithmatex">\(x-2\ge0\Rightarrow x\ge2\)</span>. Căn luôn không âm, bằng 0 khi x=2; với mọi y≥0, lấy x=y²+2 được f(x)=y.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
 </details>
 
 <details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-CHVI-TRY02"><summary>Gợi ý khắc phục khi chưa làm được — 5 bước</summary><ol><li><strong>Nhận diện lỗi:</strong> Đồng nhất tập x được nhập với tập y nhận được; quên điều kiện dưới dấu căn.</li>
 <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
-<li><strong>Kiến thức gốc:</strong> Tập xác định \(D\) là những \(x\) <strong>được phép thay vào</strong> biểu thức; tập giá trị \(T\) gồm mọi \(y\) thực sự <strong>đạt được</strong> sau khi thay \(x\in D\). Ví dụ căn thức vừa giới hạn đầu vào, vừa làm mọi đầu ra không âm; không lấy \(D=T\) chỉ vì có cùng kí hiệu tập.</li>
+<li><strong>Kiến thức gốc:</strong> Tập xác định <span class="arithmatex">\(D\)</span> là những <span class="arithmatex">\(x\)</span> <strong>được phép thay vào</strong> biểu thức; tập giá trị <span class="arithmatex">\(T\)</span> gồm mọi <span class="arithmatex">\(y\)</span> thực sự <strong>đạt được</strong> sau khi thay <span class="arithmatex">\(x\in D\)</span>. Ví dụ căn thức vừa giới hạn đầu vào, vừa làm mọi đầu ra không âm; không lấy <span class="arithmatex">\(D=T\)</span> chỉ vì có cùng kí hiệu tập.</li>
 <li><strong>Tự sửa:</strong> Viết riêng hai câu “x nào hợp lệ?” và “giá trị căn có thể bằng bao nhiêu?” rồi thử tìm x tương ứng với một y bất kỳ. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
 <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B15-C02">luyện lại một câu có sẵn trong Core/Luyện tập</a>, sau đó tự giải thích bằng lời của mình.</li></ol></details>
 <!-- G10_CHVI_R04_END:B15_OUT_02 -->
@@ -94,12 +94,12 @@ Cho tập hợp \(D\) gồm các giá trị của \(x\). Nếu **mỗi** \(x\in 
 
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHVI-TRY03" data-outcome-id="B15_OUT_03">
 <summary>Em đã tự thử? Mở đáp án để đối chiếu</summary>
-<div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> Chỉ \(A(-2;3)\) thuộc đồ thị; B không thuộc.</p><p><strong>Vì sao:</strong> \(f(-2)=(-2)^2-1=3\) khớp tung độ A; \(f(2)=3\ne5\) nên B không thuộc đồ thị.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
+<div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> Chỉ <span class="arithmatex">\(A(-2;3)\)</span> thuộc đồ thị; B không thuộc.</p><p><strong>Vì sao:</strong> <span class="arithmatex">\(f(-2)=(-2)^2-1=3\)</span> khớp tung độ A; <span class="arithmatex">\(f(2)=3\ne5\)</span> nên B không thuộc đồ thị.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
 </details>
 
 <details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-CHVI-TRY03"><summary>Gợi ý khắc phục khi chưa làm được — 5 bước</summary><ol><li><strong>Nhận diện lỗi:</strong> Đọc nhầm hoành độ với tung độ, hoặc suy thuộc đồ thị chỉ bằng quan sát hình.</li>
 <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
-<li><strong>Kiến thức gốc:</strong> Đồ thị của \(y=f(x)\) là tập tất cả điểm \((x,f(x))\) với \(x\in D\). Việc điểm nằm “gần” nét đồ thị trên hình in không đủ chứng minh: cần thử \(y=f(x)\) với đúng hoành độ của điểm.</li>
+<li><strong>Kiến thức gốc:</strong> Đồ thị của <span class="arithmatex">\(y=f(x)\)</span> là tập tất cả điểm <span class="arithmatex">\((x,f(x))\)</span> với <span class="arithmatex">\(x\in D\)</span>. Việc điểm nằm “gần” nét đồ thị trên hình in không đủ chứng minh: cần thử <span class="arithmatex">\(y=f(x)\)</span> với đúng hoành độ của điểm.</li>
 <li><strong>Tự sửa:</strong> Thay x của từng điểm vào f, viết cặp ((x;f(x))) rồi so đúng hai tọa độ. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
 <li><strong>Luyện lại (không nhân bản câu):</strong> Quay lại phần kiến thức liên quan ngay trong bài và thử giải thích phương pháp trước khi xem lại kết quả.</li></ol></details>
 <!-- G10_CHVI_R04_END:B15_OUT_03 -->
@@ -144,7 +144,7 @@ Trong dữ liệu chỉ gồm ba thời điểm đó, tập xác định là \(D
 
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHVI-TRY05" data-outcome-id="B15_OUT_05">
 <summary>Em đã tự thử? Mở đáp án để đối chiếu</summary>
-<div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> \(C(3)=12\); \(C(5)=12+4(5-3)=20\) (nghìn đồng).</p><p><strong>Vì sao:</strong> x=3 dùng nhánh thứ nhất vì có dấu bằng. x=5 dùng nhánh thứ hai, quãng đường vượt 3 km là 2 km.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
+<div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> <span class="arithmatex">\(C(3)=12\)</span>; <span class="arithmatex">\(C(5)=12+4(5-3)=20\)</span> (nghìn đồng).</p><p><strong>Vì sao:</strong> x=3 dùng nhánh thứ nhất vì có dấu bằng. x=5 dùng nhánh thứ hai, quãng đường vượt 3 km là 2 km.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
 </details>
 
 <details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-CHVI-TRY05"><summary>Gợi ý khắc phục khi chưa làm được — 5 bước</summary><ol><li><strong>Nhận diện lỗi:</strong> Áp nhánh x&gt;3 cho ngay x=3 hoặc cộng phí theo x thay vì phần vượt x−3.</li>
@@ -189,12 +189,12 @@ C(x)=
 
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHVI-TRY04" data-outcome-id="B15_OUT_04">
 <summary>Em đã tự thử? Mở đáp án để đối chiếu</summary>
-<div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> \(f(x_2)-f(x_1)=3(x_2-x_1)&gt;0\); đồng biến trên \([-1;2]\).</p><p><strong>Vì sao:</strong> Hệ số 3 dương nên khi x tăng thì giá trị f(x) tăng. Lập luận áp dụng mọi cặp x1&lt;x2 trong khoảng, không chỉ một bảng nhỏ.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
+<div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> <span class="arithmatex">\(f(x_2)-f(x_1)=3(x_2-x_1)&gt;0\)</span>; đồng biến trên <span class="arithmatex">\([-1;2]\)</span>.</p><p><strong>Vì sao:</strong> Hệ số 3 dương nên khi x tăng thì giá trị f(x) tăng. Lập luận áp dụng mọi cặp x1&lt;x2 trong khoảng, không chỉ một bảng nhỏ.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
 </details>
 
 <details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-CHVI-TRY04"><summary>Gợi ý khắc phục khi chưa làm được — 5 bước</summary><ol><li><strong>Nhận diện lỗi:</strong> Đoán tăng/giảm từ một cặp điểm rồi mở rộng ra mọi x, hoặc đảo chiều khi trừ hai giá trị.</li>
 <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
-<li><strong>Kiến thức gốc:</strong> Trên một khoảng \(K\), đồng biến nghĩa là \(x_1&lt;x_2\) trong K kéo theo \(f(x_1)&lt;f(x_2)\). Nếu \(f(x_1)&gt;f(x_2)\) thì nghịch biến. Khái niệm phụ thuộc vào <strong>khoảng đang xét</strong>, không phải tính chất tuyệt đối của mọi hàm trên \(\mathbb R\).</li>
+<li><strong>Kiến thức gốc:</strong> Trên một khoảng <span class="arithmatex">\(K\)</span>, đồng biến nghĩa là <span class="arithmatex">\(x_1&lt;x_2\)</span> trong K kéo theo <span class="arithmatex">\(f(x_1)&lt;f(x_2)\)</span>. Nếu <span class="arithmatex">\(f(x_1)&gt;f(x_2)\)</span> thì nghịch biến. Khái niệm phụ thuộc vào <strong>khoảng đang xét</strong>, không phải tính chất tuyệt đối của mọi hàm trên <span class="arithmatex">\(\mathbb R\)</span>.</li>
 <li><strong>Tự sửa:</strong> Viết f(x2)−f(x1), thay chính giả thiết x2−x1&gt;0 và kết luận theo cả khoảng. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
 <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B15-P03">luyện lại một câu có sẵn trong Core/Luyện tập</a>, sau đó tự giải thích bằng lời của mình.</li></ol></details>
 <!-- G10_CHVI_R04_END:B15_OUT_04 -->
