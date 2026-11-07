@@ -17,6 +17,8 @@ const {chromium}=require("playwright");
      assert.equal(await page.locator("[data-thpt-help-id][open]").count(),0,"D6 cards must be collapsed");
      const fig=page.locator(".thpt-r4-probability-figure img");
      assert.equal(await fig.count(),1,"Missing D5 teaching SVG B"+lesson);
+     await fig.scrollIntoViewIfNeeded();
+     await fig.evaluate(el=>el.decode());
      const check=await fig.evaluate(el=>({loaded:el.complete&&el.naturalWidth>0,imgWidth:el.getBoundingClientRect().width,boxWidth:el.parentElement.getBoundingClientRect().width}));
      assert(check.loaded,"Broken D5 SVG image link B"+lesson+" at "+width);
      assert(check.imgWidth<=check.boxWidth+1,"SVG overflows container B"+lesson+" at "+width);
