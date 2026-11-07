@@ -25,7 +25,7 @@ Em hãy đọc tình huống, nhắc lại kiến thức đã học và tự tr�
 
 **Lời giải và giải thích.** M=(-1,0); sin180°=0, cos180°=-1. M ở trên Ox âm nên tung độ bằng 0, hoành độ bằng -1.
 
-**Nếu chưa đúng:** Xem lại phần hỗ trợ khắc phục lỗi ở cuối bài ở R01, thử nhắc lại bản chất bằng lời của mình rồi làm câu liên kết câu Core/Luyện tập tương ứng; phần sau này là luyện tập tự nguyện, không là kiểm tra độc lập.
+**Nếu chưa đúng:** Xem lại mục Hỗ trợ khắc phục lỗi ở cuối bài, thử nhắc lại bản chất bằng lời của mình rồi làm câu liên kết câu Core/Luyện tập tương ứng; phần sau này là luyện tập tự nguyện, không là kiểm tra độc lập.
 
 </details>
 
@@ -48,7 +48,7 @@ Em hãy đọc tình huống, nhắc lại kiến thức đã học và tự tr�
 
 **Lời giải và giải thích.** sin135°=√2/2; cos135°=-√2/2. So với 45°, sin giữ nguyên, cos đổi dấu do đối xứng qua Oy.
 
-**Nếu chưa đúng:** Xem lại phần hỗ trợ khắc phục lỗi ở cuối bài ở R01, thử nhắc lại bản chất bằng lời của mình rồi làm câu liên kết câu Core/Luyện tập tương ứng; phần sau này là luyện tập tự nguyện, không là kiểm tra độc lập.
+**Nếu chưa đúng:** Xem lại mục Hỗ trợ khắc phục lỗi ở cuối bài, thử nhắc lại bản chất bằng lời của mình rồi làm câu liên kết câu Core/Luyện tập tương ứng; phần sau này là luyện tập tự nguyện, không là kiểm tra độc lập.
 
 </details>
 
@@ -71,7 +71,7 @@ Em hãy đọc tình huống, nhắc lại kiến thức đã học và tự tr�
 
 **Lời giải và giải thích.** tan0°=0/1=0; cot0°=1/0 không xác định; tan90°=1/0 không xác định; cot90°=0/1=0.
 
-**Nếu chưa đúng:** Xem lại phần hỗ trợ khắc phục lỗi ở cuối bài ở R01, thử nhắc lại bản chất bằng lời của mình rồi làm câu liên kết câu Core/Luyện tập tương ứng; phần sau này là luyện tập tự nguyện, không là kiểm tra độc lập.
+**Nếu chưa đúng:** Xem lại mục Hỗ trợ khắc phục lỗi ở cuối bài, thử nhắc lại bản chất bằng lời của mình rồi làm câu liên kết câu Core/Luyện tập tương ứng; phần sau này là luyện tập tự nguyện, không là kiểm tra độc lập.
 
 </details>
 
@@ -94,7 +94,7 @@ Em hãy đọc tình huống, nhắc lại kiến thức đã học và tự tr�
 
 **Lời giải và giải thích.** sin140°=sin40°; cos140°=−cos40°; tan140°=−tan40°; cot140°=−cot40°. Không cần số thập phân; tan/cot xác định ở cả hai góc này.
 
-**Nếu chưa đúng:** Xem lại phần hỗ trợ khắc phục lỗi ở cuối bài ở R01, thử nhắc lại bản chất bằng lời của mình rồi làm câu liên kết câu Core/Luyện tập tương ứng; phần sau này là luyện tập tự nguyện, không là kiểm tra độc lập.
+**Nếu chưa đúng:** Xem lại mục Hỗ trợ khắc phục lỗi ở cuối bài, thử nhắc lại bản chất bằng lời của mình rồi làm câu liên kết câu Core/Luyện tập tương ứng; phần sau này là luyện tập tự nguyện, không là kiểm tra độc lập.
 
 </details>
 
@@ -117,7 +117,7 @@ Em hãy đọc tình huống, nhắc lại kiến thức đã học và tự tr�
 
 **Lời giải và giải thích.** sin²α=1−25/169=144/169. Góc tù có sin>0 nên sinα=12/13; tanα=(12/13)/(−5/13)=−12/5.
 
-**Nếu chưa đúng:** Xem lại phần hỗ trợ khắc phục lỗi ở cuối bài ở R01, thử nhắc lại bản chất bằng lời của mình rồi làm câu liên kết câu Core/Luyện tập tương ứng; phần sau này là luyện tập tự nguyện, không là kiểm tra độc lập.
+**Nếu chưa đúng:** Xem lại mục Hỗ trợ khắc phục lỗi ở cuối bài, thử nhắc lại bản chất bằng lời của mình rồi làm câu liên kết câu Core/Luyện tập tương ứng; phần sau này là luyện tập tự nguyện, không là kiểm tra độc lập.
 
 </details>
 
