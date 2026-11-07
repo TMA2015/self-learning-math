@@ -143,15 +143,15 @@ Không, đỉnh x=−2 nằm ngoài \([-1,2]\). Trên đoạn này x+2>0 nên p 
 | G10 immutable outcome | Vai trò giải thích mới (DELTA_C only) | Câu gốc/FIG/HELP |
 |---|---|---|
 | TOP-G10-FUNC-O01 | M1, EX01, TRY T01, đơn trị | SGK B15 C01; HELP B15-01 |
-| O02 | M1 EX02, TRY T02, giao điều kiện và miền thực tế | B15 C02/P01; HELP B15-02 |
-| O03 | M2 EX01, đọc trục/điểm/chứng cứ, không ngoại suy | B15 core/Topic P01 cũ |
-| O04 | M2 EX02, TRY T01, tăng giảm trên khoảng | B15 P03; HELP B15-02 |
-| O05 | M2 EX03, TRY T02, điểm nối/hàm từng đoạn | B15 P02/WRITTEN-15-02; HELP B15-02 |
-| O06 | M3 định nghĩa a≠0, đối chứng với đường thẳng | Topic P02 source immutable; HELP B16-01 |
-| O07 | M3 bình phương→đỉnh/trục và TRY T01 | Topic P03; HELP B16-01 |
-| O08 | M3 EX02, TRY T03, giao trục và \(\Delta\) | Topic P04; HELP B16-02; FIG B16 |
-| O09 | M3 EX03, TRY T02, cực trị miền con | Topic P05; HELP B16-01/B16-02 |
-| O10 | M3 EX04, miền số nguyên/mô hình, nối M7 | Topic P06; HELP B16-02 |
+| TOP-G10-FUNC-O02 | M1 EX02, TRY T02, giao điều kiện và miền thực tế | B15 C02/P01; HELP B15-02 |
+| TOP-G10-FUNC-O03 | M2 EX01, đọc trục/điểm/chứng cứ, không ngoại suy | B15 core/Topic P01 cũ |
+| TOP-G10-FUNC-O04 | M2 EX02, TRY T01, tăng giảm trên khoảng | B15 P03; HELP B15-02 |
+| TOP-G10-FUNC-O05 | M2 EX03, TRY T02, điểm nối/hàm từng đoạn | B15 P02/WRITTEN-15-02; HELP B15-02 |
+| TOP-G10-FUNC-O06 | M3 định nghĩa a≠0, đối chứng với đường thẳng | Topic P02 source immutable; HELP B16-01 |
+| TOP-G10-FUNC-O07 | M3 bình phương→đỉnh/trục và TRY T01 | Topic P03; HELP B16-01 |
+| TOP-G10-FUNC-O08 | M3 EX02, TRY T03, giao trục và \(\Delta\) | Topic P04; HELP B16-02; FIG B16 |
+| TOP-G10-FUNC-O09 | M3 EX03, TRY T02, cực trị miền con | Topic P05; HELP B16-01/B16-02 |
+| TOP-G10-FUNC-O10 | M3 EX04, miền số nguyên/mô hình, nối M7 | Topic P06; HELP B16-02 |
 
 **Có đủ 10 hàng không chứng minh đủ D1–D6/PED.** Đặc biệt QA độc lập phải kiểm phép nối từ G10 sang M4–M7 và xem có lặp/đổi nội dung đã review hay không.
 
