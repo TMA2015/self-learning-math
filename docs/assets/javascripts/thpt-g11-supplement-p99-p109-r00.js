@@ -361,6 +361,7 @@ const practice=(root,bank,kind)=>{
  * numbered deck per PUBLIC original role. Multiple placements, no new IDs. */
 /* RELEASE Golden fix: native single-question dialog, no inline role panels. */
 const practiceHub=(root,bank,unit)=>{
+ const golden=window.THPT_GOLDEN_RUNTIME;if(!golden)throw Error("GOLDEN_RUNTIME_MISSING: G11 supplement");
  miniNav(root);
  const experience=unit==="EXPERIENCE";
  const topics=experience?["E01","E02"]:bank.year.map(x=>x.id);
@@ -379,18 +380,16 @@ const practiceHub=(root,bank,unit)=>{
  const stage=mk("div","thpt-r4-modal-main g11-supp-modal-main");
  dialog.append(top,stage);document.body.append(dialog);
  let current=null,tabs=null;const panels=[],entries=[];
- close.addEventListener("click",()=>dialog.close());
- dialog.addEventListener("close",()=>{
-  if(current){current.button.setAttribute("aria-expanded","false");
-   current.button.focus({preventScroll:true});current=null}
- });
+ const lifecycle=golden.bindDialog({dialog,closeButton:close,getReturnFocus:()=>current?.button,onClose:()=>{
+  if(current){current.button.setAttribute("aria-expanded","false");current=null}
+ }});
  const openPanel=entry=>{
   if(tabs)tabs.activate(entry.topic);
   if(current)current.button.setAttribute("aria-expanded","false");
   current=entry;entry.button.setAttribute("aria-expanded","true");
   title.textContent=(experience?"Hoạt động thực hành":"Ôn tập cuối năm")+" · "+(topicName[entry.topic]||entry.topic)+" · "+entry.label;
   stage.replaceChildren(entry.panel);
-  if(!dialog.open)dialog.showModal();
+  lifecycle.open(entry.button);
   typeset(stage);
  };
  for(const [i,topic]of topics.entries()){

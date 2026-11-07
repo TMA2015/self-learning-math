@@ -46,28 +46,25 @@ const verify=b=>{
  }
 };
 const startPractice=(root,b)=>{
+ const golden=window.THPT_GOLDEN_RUNTIME;if(!golden)throw Error("GOLDEN_RUNTIME_MISSING: G12 EXP");
  root.replaceChildren();root.dataset.g12XpReady="true";
  const drafts=new Map(),unlocked=new Set();
  const dlg=make("dialog","thpt-r4-practice-dialog g12-xp-dialog");
  const head=make("header","thpt-r4-modal-heading g12-xp-modal-head");
  const title=make("h2"),subtitle=make("p","g12-xp-counter"),close=make("button","g12-xp-close","Đóng ×");
- close.type="button";head.append(subtitle,title,close);close.addEventListener("click",()=>dlg.close());
+ close.type="button";head.append(subtitle,title,close);
  const jumps=make("nav","g12-xp-jump"),stage=make("div","g12-xp-stage"),footer=make("div","g12-xp-foot");
  const prev=make("button","g12-xp-prev","← Câu trước"),next=make("button","g12-xp-next","Câu tiếp →");
  prev.type=next.type="button";footer.append(prev,next);
  dlg.append(head,jumps,stage,footer);document.body.append(dlg);
+ const lifecycle=golden.bindDialog({dialog:dlg,closeButton:close});
  let current=0,group=[],lesson="",role="";
  const show=()=>{
   const q=group[current];
   subtitle.textContent="Câu "+(current+1)+" / 5 · Tự luyện, không ghi điểm";
   title.textContent=(lesson==="EXP01"?"Thực hành 1":"Thực hành 2")+" · "+({CORE:"Core",SGK_PRACTICE:"Luyện tập",SGK_APPLICATION:"Vận dụng",SGK_WRITTEN:"Tự luận"}[role]);
-  jumps.replaceChildren();
-  group.forEach((x,i)=>{
-   const button=make("button","g12-xp-jump-button"+(i===current?" is-current":""),String(i+1));
-   button.type="button";button.setAttribute("aria-label","Đến câu "+(i+1));
-   if(i===current)button.setAttribute("aria-current","step");
-   button.addEventListener("click",()=>{current=i;show()});jumps.append(button);
-  });
+  golden.renderNav({container:jumps,count:group.length,index:current,onSelect:i=>{current=i;show()},
+   buttonClass:"g12-xp-jump-button",activeClass:"is-current",label:i=>String(i+1),ariaCurrent:"step",allAriaCurrent:false});
   stage.replaceChildren();
   const card=make("section","g12-xp-modal-question");card.dataset.thptCanonicalItem=q.item_id;
   const h3=rich(make("h3","g12-xp-question-stem"),q.stem);
@@ -95,12 +92,11 @@ const startPractice=(root,b)=>{
   if(unlocked.has(q.item_id))reveal();
   math(stage);
  };
- prev.addEventListener("click",()=>{if(current>0){current--;show()}});
- next.addEventListener("click",()=>{if(current<4){current++;show()}});
- const open=(exp,r,index=0)=>{
+ golden.bindPager({prev,next,getIndex:()=>current,getCount:()=>group.length,go:i=>{current=i;show()}});
+ const open=(exp,r,index=0,trigger=null)=>{
   lesson=exp;role=r;group=b.items.filter(q=>q.lesson_id===exp&&q.role===r);
   if(group.length!==5)fail("modal group "+exp+" "+r);
-  current=index;show();if(!dlg.open)dlg.showModal();
+  current=index;show();lifecycle.open(trigger);
  };
  // Reuse regular SGK Golden R4 components; only source-locked role grouping changes.
  for(const exp of ["EXP01","EXP02"]){
@@ -119,7 +115,7 @@ const startPractice=(root,b)=>{
     make("small","",role==="SGK_WRITTEN"?"5 câu · Rubric /5 · Tự đối chiếu":"5 câu · Một câu mỗi lần · Không ghi điểm"));
    const button=make("button","thpt-r4-practice-open","✎ Mở "+label);
    button.type="button";button.dataset.g12XpOpen=exp+"-"+role;
-   button.addEventListener("click",()=>open(exp,role));
+   button.addEventListener("click",()=>open(exp,role,0,button));
    card.append(info,button);grid.append(card);
   }
   section.append(grid);root.append(section);

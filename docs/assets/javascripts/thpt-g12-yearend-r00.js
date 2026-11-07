@@ -43,6 +43,7 @@ const verify=b=>{
 /* PUBLIC formative bank: same canonical item_id in a different placement.
  * Exactly the same Golden R4 lesson/card/buttons as regular Grade 12 chapters. */
 const startPractice=(root,b)=>{
+ const golden=window.THPT_GOLDEN_RUNTIME;if(!golden)throw Error("GOLDEN_RUNTIME_MISSING: G12 YEAR");
  const options=[
   ["MCQ_CORE","Core"],["MCQ_PRACTICE","Luyện tập"],
   ["MCQ_APPLICATION","Vận dụng"],["WRITTEN","Tự luận"]];
@@ -51,24 +52,19 @@ const startPractice=(root,b)=>{
  const head=make("header","thpt-r4-modal-heading g12-xp-modal-head");
  const title=make("h2"),counter=make("p","g12-xp-counter"),close=make("button","g12-xp-close","Đóng ×");
  close.type="button";head.append(counter,title,close);
- close.addEventListener("click",()=>dialog.close());
  const jump=make("nav","g12-xp-jump"),stage=make("div","g12-xp-stage");
  const foot=make("div","g12-xp-foot"),prev=make("button","g12-xp-prev","← Câu trước"),
        next=make("button","g12-xp-next","Câu tiếp →");
  prev.type=next.type="button";foot.append(prev,next);
  dialog.append(head,jump,stage,foot);document.body.append(dialog);
+ const lifecycle=golden.bindDialog({dialog,closeButton:close});
  let current=0,role="",group=[];
  const show=()=>{
   const q=group[current];
   title.textContent="Ôn tập cuối năm · "+options.find(x=>x[0]===role)[1];
   counter.textContent="Câu "+(current+1)+" / "+group.length+" · Tự luyện, không ghi điểm";
-  jump.replaceChildren();
-  group.forEach((item,i)=>{
-   const bt=make("button","g12-xp-jump-button"+(current===i?" is-current":""),String(i+1));
-   bt.type="button";bt.setAttribute("aria-label","Chọn câu "+(i+1));
-   if(current===i)bt.setAttribute("aria-current","step");
-   bt.addEventListener("click",()=>{current=i;show()});jump.append(bt);
-  });
+  golden.renderNav({container:jump,count:group.length,index:current,onSelect:i=>{current=i;show()},
+   buttonClass:"g12-xp-jump-button",activeClass:"is-current",label:i=>String(i+1),ariaCurrent:"step",allAriaCurrent:false});
   stage.replaceChildren();
   const card=make("section","g12-xp-modal-question");
   card.dataset.thptCanonicalItem=q.item_id;
@@ -110,12 +106,11 @@ const startPractice=(root,b)=>{
   card.append(inputs,submit,status,reveal);
   stage.append(card);prev.disabled=current===0;next.disabled=current===group.length-1;math(stage);
  };
- prev.addEventListener("click",()=>{if(current){current--;show()}});
- next.addEventListener("click",()=>{if(current<group.length-1){current++;show()}});
- const open=(r)=>{
+ golden.bindPager({prev,next,getIndex:()=>current,getCount:()=>group.length,go:i=>{current=i;show()}});
+ const open=(r,trigger=null)=>{
   role=r;group=b.items.filter(q=>q.role===role);
   if(!group.length)fail("Empty formative category "+role);
-  current=0;show();if(!dialog.open)dialog.showModal();
+  current=0;show();lifecycle.open(trigger);
  };
  root.replaceChildren();root.dataset.g12YePracticeReady="true";
  const lesson=make("section","thpt-r4-practice-lesson g12-ye-formative-lesson");
@@ -134,7 +129,7 @@ const startPractice=(root,b)=>{
     make("small","",all.length+" câu · "+(name==="WRITTEN"?"Rubric /5":"Trắc nghiệm")+" · Một câu mỗi lần"));
   const button=make("button","thpt-r4-practice-open","✎ Mở "+label);
   button.type="button";button.dataset.g12YeOpen=name;
-  button.addEventListener("click",()=>open(name));
+  button.addEventListener("click",()=>open(name,button));
   card.append(info,button);grid.append(card);
  }
  lesson.append(grid);root.append(lesson);
