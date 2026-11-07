@@ -19,6 +19,13 @@ CONTENT_READY: YES
 D5_FIGURE_DESIGN_SOURCE_PATH: prototypes/thpt/content-drafts/transfer-written-r00-20261106/Temp_TRANSFER_R00_D5_FIGURE_SOURCE_SPEC_20261107.md
 D5_FIGURE_DESIGN_SOURCE_BLOB: a2ee2b226780b3aeff379ccb7d5eae0bde0156b5
 ORIGINAL_REVIEW_PDF_SHA256: 99a58a3b06df2e762bc0552f3ea6620aaa42f2ed3dec05bd0b9974f080dabdaf
+D5_G10_CHIV_ACTIVE_CORRECTED_PDF: Temp_D5_FIGURES_PDF_R01_CORRECTED_20261106.pdf
+D5_G10_CHIV_ACTIVE_CORRECTED_PDF_SHA256: d4804fd7b037afee5560097c1844139de9f8911dde95e10fc6ebbd84d05a60e5
+D5_G10_CHIV_R01_CORRECTED_FIGURES: FIG-G10-CHIV-FORCE-TR01; FIG-G10-CHIV-RIVER-TR01
+D5_G10_CHIV_TARGETED_Q07_PED4_VERDICT: ACADEMIC_PASS_PEDAGOGICAL_PASS
+D5_G10_CHIV_TARGETED_REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/transfer-written-r00-20261106/Temp_G10_CHIV_D5_R01_TWO_FIGURES_OWNER_NOTEBOOKLM_PASS_20261107.md
+D5_G10_CHIV_TARGETED_REVIEW_RECEIPT_BLOB: fa7b89f93b7632bec18910c4dad3fa9fe698e7b8
+D5_G10_CHIV_R00_PDF_TWO_VECTOR_FIGURES: SUPERSEDED_NOT_FOR_RELEASE_RENDERING
 Q18_CONTENT_IDENTITY: RECONCILED_BY_ALL_15_IDS_AND_VERBATIM_GIT_SOURCES
 Q18_RAW_STUDIO_BYTE_PARITY: NOT_CLAIMED_NONBLOCKING_DISCLOSED_METADATA_DIFFERENCE
 OFFICIAL_INDEPENDENT_READINESS: NOT_CLAIMED
@@ -351,6 +358,12 @@ AUTHORING source-assembly SHA `d8020a23db8ec8465f5361e3c9834cdb6a55538e`; origin
 **07/11 D5 AUTHORING source handoff clarification:** Exact five-page PDF was visually reviewed by NotebookLM and retained in the user ZIP (SHA256 above); one **math-precise, page-by-page descriptive source spec** is now in Git at `prototypes/thpt/content-drafts/transfer-written-r00-20261106/Temp_TRANSFER_R00_D5_FIGURE_SOURCE_SPEC_20261107.md` blob `a2ee2b226780b3aeff379ccb7d5eae0bde0156b5`. That closes missing *authoring design/provenance* for all 5 D5 figures without introducing SVG as NotebookLM source. RELEASE still owns responsive SVG/MathJax render and AP3 screenshot equivalence; the PDF binary is not claimed as a Git asset. Source figure parameters have **not changed** from the independently reviewed five-page PDF.
 
 **07/11 Q18 evidence classification:** All 15 new IDs and their math inputs/expected outputs appear in the single independent reviewer report, all source Markdown and reviewed components are frozen on Git and complete-chapter assembly is verified verbatim. The size numbers in the reviewer report are not exact; those are declared **source receipt metadata limitations, not proof of a different mathematical version**. `Q18_CONTENT_IDENTITY_RECONCILED` means source/receipt Git evidence chains are explicit and task content matched; it does **not** assert a SHA computed inside NotebookLM Studio. The historical G10 ChIX full R02 (#768) already records the same distinction for a reviewer-size mismatch without rerunning old math.
+
+## 07/11 — Corrected D5 R01 two-vector figure academic acceptance (supersedes R00 graphics only)
+
+Original Transfer R00 **Written questions, stems, worked answers, rubrics, canonical IDs, all prior SGK pedagogy and source Git SHA stay unchanged**. Original R00 reviewer PDF has incorrect *graphical* diagonal force/boat arrowhead orientation, even though the frozen math/design specification is correct; **do not render the two ChIV vector figures from that old PDF**. Owner provided `Temp_D5_FIGURES_PDF_R01_CORRECTED_20261106.pdf` (SHA256 `d4804fd7b037afee5560097c1844139de9f8911dde95e10fc6ebbd84d05a60e5`). Independent NotebookLM reviewed precisely PDF pp1–2 with the unchanged ChIV force/river learning source and declared **Academic PASS + PEDAGOGICAL PASS, P0=P1=P2=0, MINIMAL_DELTA=0** for `FIG-G10-CHIV-FORCE-TR01` and `FIG-G10-CHIV-RIVER-TR01`, accepted in [AUTHORING R01 targeted reviewer receipt](../review-packets/transfer-written-r00-20261106/Temp_G10_CHIV_D5_R01_TWO_FIGURES_OWNER_NOTEBOOKLM_PASS_20261107.md) Git blob `fa7b89f93b7632bec18910c4dad3fa9fe698e7b8`. **Q07/PED4 HOLD for these two figures CLOSED**.
+
+For **G10 ChIV release intake only**, corrected R01 PDF is the active visual reference for those two diagrams. The R00 PDF SHA remains above as *historical original 5-page review transport*, not accepted replacement graphics. The three unrelated D5 figures used by G10 ChVII and G11 ChIX have independent unchanged R00 review scope. The corrected PDF/ZIP is owner-held; **its binary is not asserted present on this Git branch**, while Git-custodied math source specs and R01 reviewer receipt provide the figure requirements. RELEASE must reproduce true arrow directions/labels in responsive accessible HTML/SVG and verify AP3 on its own integrated website, not clone visually incorrect old screenshots. No site changes or merge/deploy in AUTHORING; old Q18 raw-byte trivia is not a blocking Academic/PED review requirement under owner decision #787.
 
 ## RELEASE_ACCEPTANCE
 
