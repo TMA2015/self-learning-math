@@ -11,7 +11,7 @@
 | File | Git blob SHA / actual readback | Function |
 |---|---|---|
 | Temp_TOPIC_FUNCTIONS_M6_KNOWLEDGE_CONCEPT_TO_SECOND_DERIVATIVE_R01_20261107.md | f35e7fcd99b853bb5f9392c6ded25c2e20aa012f; 12,086 chars | Learner-facing concept-first knowledge, 6 self-reveal First Tries and worked examples with why/conditions |
-| Temp_TOPIC_FUNCTIONS_M6_PRACTICE_CANONICAL_REUSE_LEDGER_R01_20261107.md | c65d905aafe62ff70038293ec38489184251225c; 16,874 chars | 60 exact SGK public IDs, 9 Written IDs, 11 HELP, 5 SVG blob refs; 2 differentiated new transfer candidates with one canonical candidate stem+key+worked+D6 source |
+| Temp_TOPIC_FUNCTIONS_M6_PRACTICE_CANONICAL_REUSE_LEDGER_R01_20261107.md | c735a2e21bffe4ffe2e16d06de1d8592acc22674; 17,281 chars | 62 exact SGK public IDs, 9 Written IDs, 11 HELP, 5 SVG blob refs; 2 differentiated new transfer candidates with one canonical candidate stem+key+worked+D6 source |
 
 The older R00 seven-module Student Knowledge Flow is a **historical pilot overview**, not a second canonical M6 source. When promoted after reviewer, source-of-truth must be chosen by explicit Delta, not copy the same MathJax, questions or rubric into two banks.
 
@@ -44,11 +44,9 @@ Also inspected SGK ChIX end p97 opening and SBT ChIX end printed p63–65. These
 
 **Preflight limitations:** SymPy cases select representative calculations, not all SGK/SBT problem variants; proof-style math like conceptual definitions, domain endpoint interpretation and graphical reading needs independent review. No answers or rubrics of held-out private Topic Readiness were placed in public GitHub.
 
-## 4. Canonical Q15: exact counts and a factual metadata HOLD
+## 4. Canonical Q15: R03 corrected 62 exact source items
 
-The shared source file blob 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0 actually contains **60 separately headed public Core/Practice item IDs**: B31 20, B32 30, B33 10, and **9 Written/Anchor-tagged items**, **11 HELP**, **5 FIG**. Ledger derived from exact headings and skills; placements are proposals only, not implemented website.
-
-**SOURCE_STEM_COUNT_DIFF_HOLD:** Source section title says “62 stems” but only 60 C/P headings of that canonical ID pattern are verified. Do not assume the other two are missing without checking register and history. Reconcile metadata while protecting historical immutable PASS; do not rewrite SGK stems or create two phantom items to make counts fit.
+**R03 AUDIT CORRECTION (07/11/2026):** Original G11 source Git blob `3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0` has **62 exact PART D Core/Practice headings**: B31=20, B32=30, B33=10, PLUS CHIX level `THPT-G11-CHIX-CHIX-C01` (integrated velocity/acceleration) and `THPT-G11-CHIX-CHIX-P01` (integrated tangent/second derivative). Prior scoped regex matched only B31–B33 and erroneously concluded “60 vs 62”; original PART D title **was correct**. 9 Written, 11 HELP and 5 FIG remain unchanged. Newly corrected M6 ledger blob `c735a2e21bffe4ffe2e16d06de1d8592acc22674` and R03 evidence `Temp_TOPIC_FUNCTIONS_CANONICAL_METADATA_EXACT_ID_RECONCILIATION_R03_20261107.md` establish the IDs. Only candidate placement is proposed, not live; no new item/rubric created. `SOURCE_STEM_COUNT_DIFF_HOLD=CLOSED` without changing historical G11 source.
 
 New public D3 candidates: **CAND-P-M6-01** (continuity + differentiability at a join) and **CAND-P-M6-02** (domain and derivative of ln√(4−x²)). Both have complete worked/D6 in **one candidate source**, no official ITEM_ID promoted. Need whole bank duplicate scan + reviewer Delta C. Public exposure means neither may serve as independently held-out Topic RD1.
 
@@ -56,7 +54,7 @@ New public D3 candidates: **CAND-P-M6-01** (continuity + differentiability at a 
 
 - **Q01/Q02:** S1 printed→PDF verified exactly for M6; nine proposed M6 learning outcomes and their prerequisites still require independent per-outcome review. Other Topic modules cannot inherit this PASS.
 - **Q03/Q04:** Knowledge explains derivative from a limit, secant→tangent, continuity vs differentiability, WHY of product/chain, conditionally valid derivative rules and a second derivative/acceleration model. Pedagogical/scientific reviewer must inspect reasoning, not infer from number of headings.
-- **Q05/Q06:** 60 existing C/P plus 9 Written are available for placement, not cloned; source-count HOLD and two new candidate de-dup must close.
+- **Q05/Q06:** 62 existing C/P plus 9 Written are available for placement, not cloned; source-count HOLD is closed by exact CHIX IDs. Two differentiated new public candidate items still require cross-bank semantic de-dup and Delta C review.
 - **Q07/Q12:** Five canonical SVG and instructional readings already in M6 source; no duplicate drawing created. Browser AP3 and displayed mathematical labels still pending in RELEASE after source approval.
 - **Q08/Q14:** 11 existing HELP and six First Try self-reveal, with paths back to Topic concepts. Help must render immediately at Topic; SGK deep-links are optional, never necessary.
 - **Q09–Q13:** WHY → intuitive change → limit → geometry → rules → acceleration; this is deliberately concept-driven, not a mandatory fixed 7-step outline. Delta C requires independent NotebookLM pedagogy verdict.
@@ -69,4 +67,4 @@ New public D3 candidates: **CAND-P-M6-01** (continuity + differentiability at a 
 
 Continue the authorized single-pilot **M7: use derivative sign to read monotonicity, extrema, asymptotes, sketch and optimize**, with direct SGK/SBT 12 source pages and G12 canonical shared bank. Then reconcile Topic M1–M7 to one source-of-truth, outcome coverage, FIG/D6, private held-out Readiness, correct versioned item placements and independent NotebookLM Academic+PED review. Only after full Q01–Q18/A1–A7 and independent verdict may AUTHORING create one V2 handoff/ready manifest/REGISTER. **Never merge/deploy or change website in AUTHORING.**
 
-**CHECKPOINT:** M6_SOURCE_SCOPED_PASS; SYMPY_54_OF_54_PASS; Q15_60_PUBLIC_9_WRITTEN_11_HELP_5_FIG; SOURCE_COUNT_DIFF_HOLD; M6_NEW_CANONICAL_APPROVED=0; M6_ACADEMIC/PED=PENDING; FULL_TOPIC_CONTENT_READY=NO; RELEASE=NO.
+**CHECKPOINT:** M6_SOURCE_SCOPED_PASS; SYMPY_54_OF_54_PASS; Q15_62_PUBLIC_9_WRITTEN_11_HELP_5_FIG; SOURCE_COUNT_DIFF_CLOSED_R03; M6_NEW_CANONICAL_APPROVED=0; M6_ACADEMIC/PED=PENDING; FULL_TOPIC_CONTENT_READY=NO; RELEASE=NO.
