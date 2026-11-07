@@ -22,10 +22,12 @@
 
 - M4 ledger blob `3a399a40e837e2fef1ad04e2712ccbcb5a8ba839`: existing G11 B03/B20 20 public item IDs, three differentiated new public practice candidates HOLD, three relevant existing Written IDs, five SVG/HELP reuse.
 - M5 ledger blob `0a1ed99f4df0a6266807a1b7ed843b350855f656`: existing G11 B16/B17 20 public item IDs, four Written, four HELP, two shared SVG; two new public candidate items HOLD.
-- M6 ledger blob `c65d905aafe62ff70038293ec38489184251225c`: existing G11 B31/B32/B33 **60** exact Core/Practice IDs, 9 Written, 11 HELP, five SVG; two new public candidate items HOLD; source header “62 stems” mismatch 60 exact C/P headings requires reconciliation.
-- M7 ledger blob `583ba9b80688553e890319aa0a677aa91a6fa982`: **78 exact** existing G12 AUTHOR DRAFT ID headings, including **66** B01–B05 public/10 Written and **12** END public RD0 demo (not independent assessment); 32 actual HELP headings vs declared 36 (**metadata HOLD**); 6 shared SVG; two new transfer candidate items HOLD. **CRITICAL** original G12 author R00 source still self-identifies `INDEPENDENT_PENDING`; neither its bank nor the Topic is approved merely because IDs exist.
+- M6 ledger blob `c735a2e21bffe4ffe2e16d06de1d8592acc22674`: G11 ChIX **62** exact original public Core/Practice IDs (**60 B31–33 + 2 CHIX integrated**), 9 Written, 11 HELP, five FIG. Two new public candidates HOLD for semantic de-dup; prior 62-vs-60 source-count metadata HOLD **CLOSED R03** by exact ID readback.
+- M7 ledger blob `fa03e633f281929cda526c451f8a17376b0043f9`: G12 **78** author D3/D4/END source candidate item headings (66 B01–B05 + 12 public END RD0 demo), **36** exact source HELP IDs (**32 lesson + 4 CHI-END**), six shared FIG, two new transfer candidates HOLD. Prior 36-vs-32 HELP metadata HOLD **CLOSED R03**; G12 academic reviewer verdict remains **INDEPENDENT_PENDING**.
 
 **No new canonical ITEM_ID promoted in this Draft**, no duplicate Written rubric or SVG file. `P-M4*`, `P-M5*`, `CAND-P-M6*`, `CAND-P-M7*` are **author-only labels** and may be reused/dropped after semantic bank audit; multiple placements must point to one verified canonical version. Shared figures are displayed in Topic with pedagogical directions; Topic must not require opening SGK.
+
+**New R03 direct source and exact-ID correction receipts:** `Temp_TOPIC_FUNCTIONS_G10_SBT_T2_DIRECT_VISUAL_RECEIPT_R03_20261107.md` (raw SBT PDF SHA256 above; original B15 printed 3–9 = PDF4–10 and B16 printed 10–15 = PDF11–16), and `Temp_TOPIC_FUNCTIONS_CANONICAL_METADATA_EXACT_ID_RECONCILIATION_R03_20261107.md`. Neither repairs source math by assumption nor promotes Topic Academic/PED.
 
 ## 3. Source receipts, delta governance and evidence integrity
 
@@ -39,13 +41,13 @@
 
 | Blocker ID | Precisely unresolved gate | Minimal close condition |
 |---|---|---|
-| `TOP-FUNC-M1_M3_PED_DELTA_REVIEW_HOLD` | M1–M3 bridge R01 newly authored, G10 R01 original remains independently PASS for its exact source; SBT G10 T2 not directly reopened in this turn | Review new Delta C prose at per-outcome scope, lock direct SBT receipt and G10 original source, do not re-review the immutable old SGK/Topic text |
+| `TOP-FUNC-M1_M3_PED_DELTA_REVIEW_HOLD` | M1–M3 bridge R01 NEW Delta C, G10 historical R01 academic PASS scoped | Original G10 SGK/SBT printed and PDF now directly read; **SBT G10 T2 source receipt R03 complete**, submit only NEW bridge Delta C for 5-Permanent-Sources-v2.1 Academic+PED review |
 | `TOP-FUNC-M4_M7_REVIEW_HOLD` | M4–M7 new academic prose sources, local 19/32/33/54/64 selected tests not independent QA | Peer review Academic+PED by each outcome, exact Git SHA + original S1, **5 Permanent THPT v2.1** only |
 | `TOP-FUNC-G12_CHI_SOURCE_PENDING_HOLD` | G12 chapter R00 original self-labels independent PENDING | Verify actual NotebookLM owner verdict/source receipt for exact source before classifying canonical records as approved; no automatic PASS |
-| `TOP-FUNC-Q15_REGISTRY_HOLD` | Reconcile M6 “62 stems” vs 60 exact ID headings, M7 “36 HELP” vs 32 exact IDs, and potential cross-grade semantic duplicate candidates | Document evidence-based registry resolution and single canonical version/role/placement for every used item and figure |
+| `TOP-FUNC-Q15_SEMANTIC_REVIEW_HOLD` | Numeric ID mismatches **closed** by source audit R03 (G11 62=60+2 CHIX; G12 36=32+4 END); remaining semantic overlap of new transfer candidates, G12 independent review and placement/version authority | Confirm cross-grade no-clone evidence, only reviewer-approved canonical source/version/role/placement; do not confuse RD0 public with private readiness |
 | `TOP-FUNC-Q16_PRIVATE_RD1_HOLD` | No separately verified private G10–12 Topic Readiness held-out full outcome coverage | Protected source and official Final Submit workflow, zero private stem/key/rubric on public GitHub, no hints/answer/correctness/AI before Final Submit and no unauthorized Mastery |
 | `TOP-FUNC-V2_HANDOFF_HOLD` | All-one Topic source not independently PASS and owner handoff not possible yet | Academic+PED PASS + Q01–Q18/A1–A7 + exact Git source/receipt SHA + one V2 handoff, one ready manifest and synchronized REGISTER |
 
 **AUTHORING stop condition:** no merge/deploy, no Golden/Firebase/learner data changes, and no release authority inferred from Draft CI PASS.
 
-**CHECKPOINT:** M1–M7 have actual new AUTHORING pedagogical candidate sources; M1–M3 bridge DELTA_C pending with old G10 R01 academic PASS preserved; M4–M7 DELTA_C pending; G10 SBT direct PDF still HOLD; Q15 metadata + Q16 independent protected readiness unresolved; FULL_TOPIC_CONTENT_READY=NO.
+**CHECKPOINT:** All M1–M7 AUTHORING learner drafts present; M1–M3 bridge DELTA_C pending with immutable G10 historical PASS preserved; G10 SBT original B15/B16 direct visual source receipt completed (PDF+1, SHA256 3cb33690e0627b9e8ac467c23625b7feb7d05a8422293db0e1b26e44ca6a78c7); G11 62 item and G12 36 HELP count mismatches CLOSED R03; new candidate semantic de-dup, G12 independent Academic/PED, full cross-grade Q16 protected readiness remain HOLD; `FULL_TOPIC_CONTENT_READY=NO` / `RELEASE=NO`.
