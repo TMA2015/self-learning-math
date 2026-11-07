@@ -25,7 +25,7 @@ Em hãy đọc tình huống, nhắc lại kiến thức đã học và tự tr�
 
 **Lời giải và giải thích.** a²=25+25−50cos120°=50+25=75, nên a=5√3. Vì cos120°<0, phần điều chỉnh khiến cạnh đối diện góc tù dài hơn 5.
 
-**Nếu chưa đúng:** Xem lại phần hỗ trợ khắc phục lỗi ở cuối bài ở R01, thử nhắc lại bản chất bằng lời của mình rồi làm câu liên kết câu Core/Luyện tập tương ứng; phần sau này là luyện tập tự nguyện, không là kiểm tra độc lập.
+**Nếu chưa đúng:** Xem lại mục Hỗ trợ khắc phục lỗi ở cuối bài, thử nhắc lại bản chất bằng lời của mình rồi làm câu liên kết câu Core/Luyện tập tương ứng; phần sau này là luyện tập tự nguyện, không là kiểm tra độc lập.
 
 </details>
 
@@ -37,7 +37,7 @@ Em hãy đọc tình huống, nhắc lại kiến thức đã học và tự tr�
 
 **Hiểu bản chất trước công thức** Định lí sin a/sinA=b/sinB=c/sinC=2R cho thấy cạnh lớn tương ứng sin góc lớn hơn trong cùng tam giác. Nó có ích cho ASA/AAS; với dữ liệu SSA có thể tồn tại hai tam giác khác nhau, không mặc định mọi kết quả arcsin là duy nhất.
 
-**Cách đọc hình và hình dung** Trong tam giác ở R01, đánh dấu cặp A–a, B–b, C–c; đặt hai cạnh đối diện cạnh nhau rồi so sánh. Hình hình minh họa bên dưới minh họa nhãn cạnh/góc, không phải một hình riêng chứng minh định lí sin.
+**Cách đọc hình và hình dung** Trong hình tam giác minh họa ở phần kiến thức bên dưới, đánh dấu cặp A–a, B–b, C–c; đặt hai cạnh đối diện cạnh nhau rồi so sánh. Hình bên dưới chỉ minh họa nhãn cạnh và góc, không phải một hình riêng chứng minh định lí sin.
 
 **Vì sao làm theo cách này?** Khi biết hai góc và một cạnh, tìm góc thứ ba rồi ghép đúng cặp cạnh–sin góc; dùng a/sinA=2R nếu cần bán kính. Không thể khôi phục cả tam giác từ một cặp A,a duy nhất.
 
@@ -48,7 +48,7 @@ Em hãy đọc tình huống, nhắc lại kiến thức đã học và tự tr�
 
 **Lời giải và giải thích.** 2R=a/sinA=5/(1/2)=10 nên R=5. Không xác định duy nhất B,C: cần thêm dữ kiện độc lập; chỉ biết B+C=150°.
 
-**Nếu chưa đúng:** Xem lại phần hỗ trợ khắc phục lỗi ở cuối bài ở R01, thử nhắc lại bản chất bằng lời của mình rồi làm câu liên kết câu Core/Luyện tập tương ứng; phần sau này là luyện tập tự nguyện, không là kiểm tra độc lập.
+**Nếu chưa đúng:** Xem lại mục Hỗ trợ khắc phục lỗi ở cuối bài, thử nhắc lại bản chất bằng lời của mình rồi làm câu liên kết câu Core/Luyện tập tương ứng; phần sau này là luyện tập tự nguyện, không là kiểm tra độc lập.
 
 </details>
 
@@ -71,7 +71,7 @@ Em hãy đọc tình huống, nhắc lại kiến thức đã học và tự tr�
 
 **Lời giải và giải thích.** Cả hai có S=(1/2)·6·8·sin30°=(1/2)·6·8·sin150°=12 đơn vị diện tích, do sin150°=sin30°. Chúng không nhất thiết có cùng cạnh thứ ba.
 
-**Nếu chưa đúng:** Xem lại phần hỗ trợ khắc phục lỗi ở cuối bài ở R01, thử nhắc lại bản chất bằng lời của mình rồi làm câu liên kết câu Core/Luyện tập tương ứng; phần sau này là luyện tập tự nguyện, không là kiểm tra độc lập.
+**Nếu chưa đúng:** Xem lại mục Hỗ trợ khắc phục lỗi ở cuối bài, thử nhắc lại bản chất bằng lời của mình rồi làm câu liên kết câu Core/Luyện tập tương ứng; phần sau này là luyện tập tự nguyện, không là kiểm tra độc lập.
 
 </details>
 
@@ -94,7 +94,7 @@ Em hãy đọc tình huống, nhắc lại kiến thức đã học và tự tr�
 
 **Lời giải và giải thích.** Với 3,4,5: p=6, S=√(6·3·2·1)=6, r=S/p=1. Với 2,3,6: 2+3<6, không lập thành tam giác nên không có diện tích tam giác hợp lệ.
 
-**Nếu chưa đúng:** Xem lại phần hỗ trợ khắc phục lỗi ở cuối bài ở R01, thử nhắc lại bản chất bằng lời của mình rồi làm câu liên kết câu Core/Luyện tập tương ứng; phần sau này là luyện tập tự nguyện, không là kiểm tra độc lập.
+**Nếu chưa đúng:** Xem lại mục Hỗ trợ khắc phục lỗi ở cuối bài, thử nhắc lại bản chất bằng lời của mình rồi làm câu liên kết câu Core/Luyện tập tương ứng; phần sau này là luyện tập tự nguyện, không là kiểm tra độc lập.
 
 </details>
 
@@ -117,7 +117,7 @@ Em hãy đọc tình huống, nhắc lại kiến thức đã học và tự tr�
 
 **Lời giải và giải thích.** C=90°, tam giác vuông cân tại C nên AC=BC=20 m (AB là cạnh huyền 20√2 m). Diện tích S=1/2·20·20=200 m²; CH=2S/AB=400/(20√2)=10√2 m.
 
-**Nếu chưa đúng:** Xem lại `HELP-G10-B06-01 và HELP-G10-B06-02` ở R01, thử nhắc lại bản chất bằng lời của mình rồi làm câu liên kết câu Core/Luyện tập tương ứng; phần sau này là luyện tập tự nguyện, không là kiểm tra độc lập.
+**Nếu chưa đúng:** Xem lại các mục Hỗ trợ khắc phục lỗi ở cuối bài, thử nhắc lại bản chất bằng lời của mình rồi làm câu liên kết câu Core/Luyện tập tương ứng; phần sau này là luyện tập tự nguyện, không là kiểm tra độc lập.
 
 </details>
 
