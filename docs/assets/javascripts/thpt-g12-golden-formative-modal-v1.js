@@ -110,7 +110,9 @@ function mount(root,bank,{chapter}={}){
   // The PUBLIC formative answer follows the existing G10/G11 Golden controls:
   // explicit "Đáp án / Lời giải" disclosure, auto-expanded after a self-attempt.
   // This adapter is never mounted on Q16 protected Final Submit routes.
+  const postCompareGate=chapter==="I"&&bank.targeted_delta?.item_ids?.includes(q.item_id)&&Boolean(q.solution);
   const solution=el("details","thpt-g12-golden-solution");
+  if(postCompareGate&&!state.submitted)solution.hidden=true;
   solution.dataset.g12GoldenSolutionFor=q.item_id;
   const solutionSummary=el("summary","","📖 Đáp án / Lời giải");
   const result=el("div","thpt-r4-formative-reveal");
@@ -119,7 +121,7 @@ function mount(root,bank,{chapter}={}){
   if(q.answer!==undefined)result.append(para(q.answer));
   if(q.solution!==undefined)result.append(para(q.solution));
   if(q.conditions)result.append(el("h4","","Điều kiện / giới hạn"),para(q.conditions));
-  if(q.rubric){result.append(el("h4","","Tiêu chí tự đối chiếu tự luận /5"));for(const r of Array.isArray(q.rubric)?q.rubric:[q.rubric])result.append(para(r))}
+  if(q.rubric){result.append(el("h4","","Tiêu chí tự đối chiếu tự luận /"+(chapter==="I"?"4":"5")));for(const r of Array.isArray(q.rubric)?q.rubric:[q.rubric])result.append(para(r))}
   solution.append(solutionSummary,result);
   solution.addEventListener("toggle",()=>{if(solution.open)math(solution)});
   form.append(label,submit,feedback);
@@ -127,6 +129,7 @@ function mount(root,bank,{chapter}={}){
    e.preventDefault();if(state.submitted)return;
    if(!area.value.trim()){feedback.textContent="Hãy tự làm trước khi đối chiếu.";return}
    state.text=area.value;state.submitted=true;area.disabled=true;submit.disabled=true;
+   if(postCompareGate)solution.hidden=false;
    solution.open=true;
    feedback.textContent="Đã nộp. Tự đối chiếu, không chấm điểm hay ghi Mastery.";
    math(body);

@@ -12,6 +12,19 @@ assert.equal(bank.packet_id,"G12-SGK-CHI-B01-B05-R00");
 assert.equal(bank.mode,"CLIENT_SELF_CHECK_NO_MASTERY");
 assert.equal(bank.source_blob,"f0862dcdab21dec136e43969f45c42638e7c7574");
 assert.equal(bank.receipt_blob,"8fef1c7dbd9b404881ff40cec8147c9ae89ef473");
+const delta=bank.targeted_delta;
+const expectedDeltaIds=["THPT-G12-CHI-B01-W01","THPT-G12-CHI-B01-W02"];
+assert.equal(delta?.scope,"G12_B01_W01_W02_SOLUTION_ONLY");
+assert.equal(delta.class,"DELTA_C_ACADEMIC_MATERIAL");
+assert.deepEqual(delta.item_ids,expectedDeltaIds);
+assert.equal(delta.original_source_blob,bank.source_blob);
+assert.equal(delta.authoring_source_blob,"86063e922bbb883f6ae9a3d86049f60ff3fe5562");
+assert.equal(delta.independent_review_blob,"9f0466b7ded7d2a7441fdc55768949536f7a680e");
+assert.equal(delta.composite_receipt_blob,"39c7c98a0f311f72a7eb70b25b75d38b34998793");
+assert.equal(delta.protected_rd1_new,0);assert.equal(delta.mastery,false);
+const deltaChecksums=new Map([["THPT-G12-CHI-B01-W01","64ada968"],["THPT-G12-CHI-B01-W02","cf8dfbc3"]]);
+const fnv=s=>{let h=2166136261;for(let i=0;i<s.length;i++)h=Math.imul(h^s.charCodeAt(i),16777619)>>>0;return h.toString(16).padStart(8,"0")};
+
 assert.equal(sha(base+"G12_SGK_CHI_B01_B05_FULL_CHAPTER_PUBLIC_CANONICAL_R00_SOURCE_CANDIDATE.md"),bank.source_blob);
 assert.equal(sha("prototypes/thpt/review-packets/G12_SGK_CHI_B01_B05_R00_INDEPENDENT_NOTEBOOKLM_ACADEMIC_PED_PASS_SOURCE_RECEIPT_20261102.md"),bank.receipt_blob);
 const paths=[
@@ -66,7 +79,16 @@ for(const q of bank.items){
  const fs0=fields(original.body);
  const find=rx=>fs0.find(f=>rx.test(f.label))?.value||"";
  assert.equal(q.stem,find(/^(?:Câu hỏi(?: tự luận)?|Hỏi|Đề)$/),q.item_id+" stem");
- assert.equal(q.answer,find(/^(?:Đáp án|Đối chiếu|Author-key|Lời giải tự mở)/),q.item_id+" answer");
+ const originalAnswer=find(/^(?:Đáp án|Đối chiếu|Author-key|Lời giải tự mở)/);
+ if(deltaChecksums.has(q.item_id)){
+   assert.equal(originalAnswer,"",q.item_id+" original R00 answer remains empty on locked source");
+   assert(q.answer.length>120&&q.solution?.length>700,q.item_id+" target reviewed answer and D6");
+   assert(q.solution.includes("**D6 sau đối chiếu:**"),q.item_id+" post-comparison remedial route");
+   assert.equal(fnv(q.answer+String.fromCharCode(0)+q.solution),deltaChecksums.get(q.item_id),q.item_id+" exact reviewed DELTA C answer/solution");
+ }else{
+   assert.equal(q.answer,originalAnswer,q.item_id+" historic answer unchanged");
+   assert.equal(q.solution,undefined,q.item_id+" no unrelated solution additions");
+ }
  assert.equal(q.rubric,find(/^(?:Rubric tự đối chiếu|Rubric \/4)/),q.item_id+" rubric");
  assert.equal(q.outcome_id,attrs.skill_id,q.item_id+" primary outcome");
  assert.equal(q.placement,attrs.placement,q.item_id+" placement");
@@ -98,6 +120,12 @@ for(const p of ["index.md","chuong-i.md","chuong-i/luyen-tap.md",...[1,2,3,4,5].
  assert(fs.existsSync(root+p),"G12 route "+p);
 }
 const js=read("docs/assets/javascripts/thpt-g12-chi-b01-b05-r00.js");
+const goldenJs=read("docs/assets/javascripts/thpt-g12-golden-formative-modal-v1.js");
+assert(goldenJs.includes('const postCompareGate=chapter==="I"'),"Reviewed G12 B01 solutions require self-attempt before reveal");
+assert(goldenJs.includes("if(postCompareGate&&!state.submitted)solution.hidden=true"),"Solutions hidden before submission");
+assert(goldenJs.includes("if(postCompareGate)solution.hidden=false"),"Solutions revealed only after user submits");
+assert(goldenJs.includes('chapter==="I"?"4":"5"'),"Original ChI /4; other G12 /5 must remain");
+
 assert(js.includes("data-g12-chi-hub")&&js.includes("data-g12-chi-selfcheck"));
 assert(js.includes("const startHub=")&&js.includes("const groupCard="));
 assert(!js.includes("const startLesson="),"No inline lesson exercise renderer");

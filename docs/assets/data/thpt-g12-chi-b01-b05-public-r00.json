@@ -109,8 +109,9 @@
       "placement": "SGK_WRITTEN",
       "role": "WRITTEN",
       "stem": "Khảo sát sự đồng biến, nghịch biến và cực trị của f(x)=x³−3x, tự vẽ phác thảo bảng dấu. Trình bày vì sao f′=0 riêng lẻ chưa phải kết luận.",
-      "answer": "",
-      "rubric": "1 điểm xác định D=ℝ và f′=3(x²−1); 1 điểm tìm đúng −1,1 và dấu +,−,+; 1 điểm nêu đúng các khoảng tăng/giảm; 1 điểm tính đúng cực đại (−1,2), cực tiểu (1,−2) và giải thích đổi dấu."
+      "answer": "Tập xác định $\\mathbb R$. $f'(x)=3(x-1)(x+1)$, bằng 0 tại $-1$ và $1$; dấu đạo hàm là $+,-,+$ lần lượt trên $(-\\infty,-1)$, $(-1,1)$ và $(1,+\\infty)$. Hàm số tăng trên $(-\\infty,-1)$ và $(1,+\\infty)$, giảm trên $(-1,1)$. Cực đại địa phương ở $x=-1$ với $f(-1)=2$; cực tiểu địa phương ở $x=1$ với $f(1)=-2$. Cần xét **dấu đổi chiều** của $f'$ tại điểm tới hạn, không kết luận cực trị chỉ vì $f'=0$.",
+      "rubric": "1 điểm xác định D=ℝ và f′=3(x²−1); 1 điểm tìm đúng −1,1 và dấu +,−,+; 1 điểm nêu đúng các khoảng tăng/giảm; 1 điểm tính đúng cực đại (−1,2), cực tiểu (1,−2) và giải thích đổi dấu.",
+      "solution": "**Bước 1 — Xét điều kiện.** $f(x)=x^3-3x$ là đa thức nên xác định trên $D=\\mathbb R$ và khả vi với mọi $x\\in\\mathbb R$.\n\n**Bước 2 — Đạo hàm và các điểm cần kiểm tra.**\n\\[\nf'(x)=3x^2-3=3(x-1)(x+1).\n\\]\nPhương trình $f'(x)=0$ cho hai nghiệm $x=-1$ và $x=1$, chia trục số thành ba khoảng.\n\n**Bước 3 — Xét dấu, không bỏ qua bước này.**\n- Nếu $x<-1$: hai thừa số $(x-1)$ và $(x+1)$ đều âm, nên $f'(x)>0$.\n- Nếu $-1<x<1$: một âm, một dương, nên $f'(x)<0$.\n- Nếu $x>1$: cả hai dương, nên $f'(x)>0$.\n\nBảng biến thiên có hàng dấu đạo hàm **$+\\;|\\;0\\;|\\;-\\;|\\;0\\;|\\;+$** qua các mốc $-1$ và $1$. Hàng giá trị hàm: tăng đến $f(-1)=2$, giảm đến $f(1)=-2$, rồi lại tăng.\n\n**Bước 4 — Kết luận đồng biến/nghịch biến và cực trị.** Hàm đồng biến trên $(-\\infty,-1)$ và $(1,+\\infty)$; nghịch biến trên $(-1,1)$. Tại $x=-1$, $f'$ đổi dấu **dương → âm**, nên $x=-1$ là điểm cực đại, giá trị cực đại địa phương $2$ (điểm trên đồ thị $(-1,2)$). Tại $x=1$, $f'$ đổi dấu **âm → dương**, nên $x=1$ là điểm cực tiểu, giá trị cực tiểu địa phương $-2$ (điểm $(1,-2)$).\n\n**Bước 5 — Vì sao $f'(x_0)=0$ chưa đủ?** Đây mới là dấu hiệu của một **ứng viên điểm cực trị** đối với hàm khả vi trong khoảng đang xét. Phải kiểm tra sự đổi chiều đơn điệu, chẳng hạn xét dấu đạo hàm hai bên. Phản ví dụ $g(x)=x^3$ có $g'(0)=0$ nhưng $g$ đồng biến trên cả hai phía của 0, nên $x=0$ không là cực trị. Lưu ý hàm $f$ không có giá trị lớn nhất/nhỏ nhất toàn cục trên $\\mathbb R$; các cực trị ở trên là **cực trị địa phương**, không phải cực trị toàn miền.\n\n**D6 sau đối chiếu:** Nếu sai đạo hàm, trở về kiến thức $f'$; nếu tìm đúng $f'=0$ mà kết luận sai, làm lại bảng dấu và giải thích đổi dấu; nếu nhầm cực trị với GTLN/GTNN, đối chiếu định nghĩa cực trị địa phương và ứng dụng giới hạn miền ở Bài 2. Học sinh không tự cấp Mastery."
     },
     {
       "item_id": "THPT-G12-CHI-B01-W02",
@@ -119,8 +120,9 @@
       "placement": "SGK_WRITTEN",
       "role": "ANCHOR_TAG",
       "stem": "Xét f(x)=1/(x−2). Chứng minh f nghịch biến trên mỗi thành phần khoảng của miền xác định; nêu một cặp x1<x2 ở hai phía x=2 cho thấy không thể gộp các khoảng vào một phát biểu \\\"nghịch biến trên D\\\".",
-      "answer": "",
-      "rubric": "1 điểm D=ℝ\\{2}; 1 điểm f′=−1/(x−2)²<0; 1 điểm hai khoảng (−∞,2),(2,+∞); 1 điểm phản ví dụ f(1)=−1, f(3)=1 với 1<3 nhưng f(1)<f(3), nên không nghịch biến trên D theo định nghĩa toàn miền.\n**Anchor chỉ gắn nhãn** cho cùng item_id W02, không tạo bản chép chấm điểm thứ hai."
+      "answer": "$D=\\mathbb R\\setminus\\{2\\}$. $f'(x)=-1/(x-2)^2<0$ với mọi $x\\in D$, nên $f$ nghịch biến trên **từng khoảng** $(-\\infty,2)$ và $(2,+\\infty)$. Nhưng $1<3$ đều thuộc $D$, trong khi $f(1)=-1<f(3)=1$; điều này trái với yêu cầu $f(x_1)>f(x_2)$ của một hàm nghịch biến khi lấy hai điểm bất kỳ $x_1<x_2$ trên toàn $D$. Không được gộp hai khoảng qua điểm $x=2$ bị loại.",
+      "rubric": "1 điểm D=ℝ\\{2}; 1 điểm f′=−1/(x−2)²<0; 1 điểm hai khoảng (−∞,2),(2,+∞); 1 điểm phản ví dụ f(1)=−1, f(3)=1 với 1<3 nhưng f(1)<f(3), nên không nghịch biến trên D theo định nghĩa toàn miền.\n**Anchor chỉ gắn nhãn** cho cùng item_id W02, không tạo bản chép chấm điểm thứ hai.",
+      "solution": "**Bước 1 — Miền xác định là bước không thể bỏ qua.** Mẫu $x-2\\ne0$, do đó $D=\\mathbb R\\setminus\\{2\\}=(-\\infty,2)\\cup(2,+\\infty)$. Hai khoảng này rời nhau, **không** tạo thành một khoảng liên thông chứa $x=2$.\n\n**Bước 2 — Đạo hàm trên từng thành phần miền xác định.**\n\\[\nf'(x)=\\left(\\frac{1}{x-2}\\right)'=-\\frac{1}{(x-2)^2}.\n\\]\nVới mọi $x\\in D$, $(x-2)^2>0$, nên $f'(x)<0$.\n\n**Bước 3 — Áp dụng đúng phạm vi của định lí dấu đạo hàm.** Trên mỗi khoảng $(-\\infty,2)$ và $(2,+\\infty)$, hàm xác định, liên tục và khả vi; đạo hàm luôn âm. Vì vậy theo tiêu chuẩn đơn điệu, hàm **nghịch biến trên từng khoảng** này.\n\n**Bước 4 — Bác bỏ phát biểu gộp thành \"nghịch biến trên D\".** Chọn $x_1=1$ và $x_2=3$. Có $1<3$, cả hai thuộc $D$, nhưng\n\\[\nf(1)=\\frac1{1-2}=-1 < 1=\\frac1{3-2}=f(3).\n\\]\nMột hàm nghịch biến trên toàn tập xét theo so sánh mọi cặp $x_1<x_2$ phải cho $f(x_1)>f(x_2)$; cặp trên cho bất đẳng thức **ngược lại**. Vậy không thể kết luận hàm nghịch biến trên cả $D$ theo nghĩa toàn tập.\n\n**Bước 5 — Chỉ ra lỗi tư duy cần tránh.** Mệnh đề \"$f'(x)<0$ trên miền xác định\" chỉ bảo đảm nghịch biến **trên từng khoảng nằm trọn trong miền xác định**. Không được áp dụng định lí trên đoạn $[1,3]$, vì tại $x=2$ hàm **không xác định**. Không thể đi xuyên qua điểm gián đoạn để nối hai bảng biến thiên thành một khoảng đơn điệu chung.\n\n**D6 sau đối chiếu:** Nếu sai $D$, kiểm tra mẫu số trước khi đạo hàm; nếu nhầm \"$f'<0$\" thành \"giảm trên mọi hợp khoảng\", quay về điều kiện áp dụng trên **một khoảng**; nếu chưa hiểu phản ví dụ, so sánh trực tiếp $f(1)=-1$ với $f(3)=1$. Không ghi Mastery."
     },
     {
       "item_id": "THPT-G12-CHI-B02-C01",
@@ -1054,5 +1056,19 @@
     "B04",
     "B05",
     "END"
-  ]
+  ],
+  "targeted_delta": {
+    "scope": "G12_B01_W01_W02_SOLUTION_ONLY",
+    "class": "DELTA_C_ACADEMIC_MATERIAL",
+    "item_ids": [
+      "THPT-G12-CHI-B01-W01",
+      "THPT-G12-CHI-B01-W02"
+    ],
+    "authoring_source_blob": "86063e922bbb883f6ae9a3d86049f60ff3fe5562",
+    "independent_review_blob": "9f0466b7ded7d2a7441fdc55768949536f7a680e",
+    "composite_receipt_blob": "39c7c98a0f311f72a7eb70b25b75d38b34998793",
+    "original_source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+    "protected_rd1_new": 0,
+    "mastery": false
+  }
 }
