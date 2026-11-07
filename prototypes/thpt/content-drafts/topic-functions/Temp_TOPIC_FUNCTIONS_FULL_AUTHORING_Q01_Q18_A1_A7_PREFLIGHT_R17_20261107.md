@@ -15,7 +15,7 @@
 | R15 learner-focused Luyện tập + shared Written/Anchor | `03e103c96f25eecc611d0bdaca258865a5fc981c` | 48 public practice outcome routes with existing FIG/HELP; 28 historical Written source references listed (G10 2 pending runtime legacy-name verification, M4 3/M5 4/M6 9/M7 10), no copied answer/rubric |
 | R16 private full Topic Readiness **public metadata only** | `2e8c7a9c9f6644b8d45a9f60b124ea1721f16810` | **Private owner-held ZIP**, 30 independently held-out original candidate questions, 120-point reviewer-scale rubric and coverage mapping 48/48; only aggregate counts/hash committed, private stems/solutions/keys/rubrics NEVER public |
 
-**Private assessment owner transport:** `Temp_TOPIC_FUNCTIONS_PRIVATE_RD1_REVIEW_R01_20261107.zip`, SHA256 `2b6e417fc1acb6cd347765ad4f405402af5f2abdc8c01c907c25927d3f8af427`, **10,963 bytes**, three `Temp_*.md` inside. The ZIP is downloadable **in the owner's current ChatGPT conversation** and deliberately **not uploaded to GitHub**. It includes a student question-only source, a separately protected answer/rubric source and source-coverage register; no prompt file, prompt appears in chat.
+**Private assessment owner transport:** `Temp_TOPIC_FUNCTIONS_PRIVATE_RD1_REVIEW_R01_20261107.zip`, SHA256 `59dba34b09695f8b127e10ab7ec8cc295b03293e9cbdeedf8bc2218799eb658a`, **10,961 bytes**, three `Temp_*.md` inside. The ZIP is downloadable **in the owner's current ChatGPT conversation** and deliberately **not uploaded to GitHub**. It includes a student question-only source, a separately protected answer/rubric source and source-coverage register; no prompt file, prompt appears in chat.
 
 ## 2. The same Q01–Q18 preflight — no new standard
 
