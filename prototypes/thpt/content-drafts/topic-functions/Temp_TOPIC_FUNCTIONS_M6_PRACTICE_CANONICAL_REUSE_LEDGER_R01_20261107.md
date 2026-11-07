@@ -10,7 +10,7 @@
 
 ## 1. Exact verified existing public IDs — zero cloning
 
-The following **60** canonical public question IDs were parsed from their actual GitHub Markdown item headings and matched by skill/role. The Topic proposes additional placement on the *same source*, *same answer*, *same worked solution* and *same item version*; no second question bank or score engine is created. Counts: B31 10 Core + 10 Practice; B32 15 Core + 15 Practice; B33 5 Core + 5 Practice, total 30+30=60.
+The following **62** canonical public question IDs were parsed from their actual GitHub Markdown item headings and matched by skill/role. The Topic proposes additional placement on the *same source*, *same answer*, *same worked solution* and *same item version*; no second question bank or score engine is created. Counts: B31 10 Core + 10 Practice; B32 15 Core + 15 Practice; B33 5 Core + 5 Practice; **CHIX integrated 1 Core + 1 Practice**. Total **62** Core/Practice items.
 
 | Existing canonical item_id | Exact existing skill_id | Original → proposed role/placement |
 |---|---|---|
@@ -74,8 +74,10 @@ The following **60** canonical public question IDs were parsed from their actual
 | THPT-G11-CHIX-B33-P04 | G11-B33-ACCELERATION | SGK_PRACTICE → TOPIC_PRACTICE · M6 |
 | THPT-G11-CHIX-B33-C05 | G11-B33-SIGN_INTERPRET | SGK_CORE → TOPIC_PRACTICE · M6 |
 | THPT-G11-CHIX-B33-P05 | G11-B33-SIGN_INTERPRET | SGK_PRACTICE → TOPIC_PRACTICE · M6 |
+| THPT-G11-CHIX-CHIX-C01 | G11-CHIX-INTEGRATED | SGK_CORE → TOPIC_PRACTICE · M6 (source existing, no clone) |
+| THPT-G11-CHIX-CHIX-P01 | G11-CHIX-INTEGRATED | SGK_PRACTICE → TOPIC_PRACTICE · M6 (source existing, no clone) |
 
-**SOURCE_COUNT_RECONCILIATION_HOLD:** The source Part D title says “62 stems” while 60 uniquely headed C/P IDs were read back. This may be a historical counting label or other items with a different ID shape; **do not silently change the historical SGK source or claim that the 2 difference are present/absent academically**. Before canonical registry promotion, reconcile source item register/receipts and explain count with evidence. The 60 IDs above are exact verified records, not a guessed 62.
+**R03 SOURCE_COUNT_RECONCILIATION_CLOSED (07/11/2026):** Previous R01 filter counted only B31/B32/B33 C/P headings (60), missing two exact headings in the same original PART D with prefix `CHIX`: `THPT-G11-CHIX-CHIX-C01` and `THPT-G11-CHIX-CHIX-P01`. Original source PART D correctly says **62 stems**. Both records were read back at source blob `3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0`; see `Temp_TOPIC_FUNCTIONS_CANONICAL_METADATA_EXACT_ID_RECONCILIATION_R03_20261107.md`. No new item, key or rubric was created. This corrects **author metadata evidence only**, not Academic/PED status.
 
 ## 2. Same existing Written/Anchor library — nine IDs, no rubric rewrite
 
@@ -190,8 +192,8 @@ This is a proposed pedagogical map; it is **not** independent Academic/PED Q01�
 ## 7. Gate and safety
 
 - M6 pedagogical source NEW: independent NotebookLM Academic+PED review only with **five Permanent THPT v2.1** sources and direct S1; preserve historical SGK PASS on exact snapshot without unnecessary re-review.
-- Canonical source input is source Git blob, item_id/version, role/placement; written/anchor single library. Before promoting the two new D3 candidates, reconcile the source's “62 stems” label vs 60 exact headed C/P item IDs and check the full bank.
+- Canonical source input is source Git blob, item_id/version, role/placement; written/anchor single library. Before promoting the two new D3 candidates, check semantic duplicates across the full bank; the source 62 item headings are now exactly accounted for (including CHIX-C01/P01).
 - Do not include protected RD1 questions, solutions or rubrics in public GitHub. Public formative does not score independent Topic Readiness or Mastery. No hint/answer/correctness/Tutor before the official Final Submit for held-out checks.
 - Authoring stops at V2 handoff + one ready manifest + REGISTER after Q01–Q18/A1–A7 and independent Academic/PED PASS. No website edits, merge, deploy, Golden UI/Firebase changes.
 
-**CHECKPOINT:** M6_Q15_EXISTING_PUBLIC_60_VERIFIED, WRITTEN_9, HELP_11, FIG_5; NEW_ITEM_ID_PROMOTED_0; TWO_NEW_CANDIDATES_HOLD; SOURCE_STEM_COUNT_DIFF=HOLD_METADATA; M6_ACADEMIC_PED=PENDING; FULL_TOPIC_CONTENT_READY=NO.
+**CHECKPOINT:** M6_Q15_EXISTING_PUBLIC_62_VERIFIED, WRITTEN_9, HELP_11, FIG_5; NEW_ITEM_ID_PROMOTED_0; TWO_NEW_CANDIDATES_HOLD; SOURCE_STEM_COUNT_DIFF=CLOSED_R03; M6_ACADEMIC_PED=PENDING; FULL_TOPIC_CONTENT_READY=NO.
