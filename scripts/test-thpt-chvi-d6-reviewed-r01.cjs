@@ -4,6 +4,7 @@ const fs=require("node:fs");
 const crypto=require("node:crypto");
 const path=require("node:path");
 const base=path.join(__dirname,"..");
+const fnv=s=>{let h=2166136261;for(let i=0;i<s.length;i++)h=Math.imul(h^s.charCodeAt(i),16777619)>>>0;return h.toString(16).padStart(8,"0")};
 const help=require("../docs/assets/javascripts/thpt-chvi-d6-reviewed-r01.js");
 const formative=require("../docs/assets/javascripts/thpt-chvi-reviewed-formative-v1.js");
 const expected={
@@ -59,7 +60,11 @@ function run(){
  const readiness=fs.readFileSync(path.join(base,"docs/thpt-preview/sgk/chuong-vi/tu-kiem-tra-chuong.md"),"utf8");
  const reviewed=JSON.parse(fs.readFileSync(path.join(base,"docs/assets/data/thpt-g10-readiness/CHVI.json"),"utf8"));
  assert(readiness.includes('data-g10-chapter-selfcheck="CHVI"')&&readiness.includes("Final Submit"));
- assert.equal(reviewed.items.length,18,"ChVI must show all 18 reviewed self-check items");
+ assert.equal(reviewed.items.length,20,"ChVI must contain original 18 plus exactly two reviewed R04 public Written");
+ assert.equal(fnv(JSON.stringify(reviewed.items.slice(0,18))),"a1c5d223","Original 18 reviewed self-check stems/keys/rubrics must remain unchanged");
+ assert.deepEqual(reviewed.items.slice(18).map(q=>q.item_id),["THPT-G10-B16-R06","THPT-G10-B17-R05"],"Only independently reviewed new R04 IDs may be appended");
+ assert.equal(reviewed.targeted_delta?.source_blob,"ef0b82555bb9f8028c49d948d2276b6ea0f16956");
+ assert.equal(reviewed.targeted_delta?.review_receipt_blob,"43b2da942b9d8d3ec5a32647e3ed1a217125a255");
  assert.equal(reviewed.mastery_credit,false,"Reviewed client self-check must not award Mastery");
  assert.equal(reviewed.persist_results,false,"Reviewed self-check must not modify learner progress");
  console.log("PASS CHVI D6 authoring source parity: 8 cards / 40 original stages / 19 outcomes / 17 canonical return refs");
