@@ -4,6 +4,14 @@
 
 **Owner-provided corrected report:** Bao_Cao_Kiem_Toan_Chuyen_De_Ham_So_M4_M7_R01(1).md, uploaded in chat on 07/11/2026. The exact uploaded UTF-8 file is 13,266 bytes and 148 physical lines, SHA256 3363ec6c00632782cb742b2e57a59956b43ef02a281b413b1f4a4ab659009a3a. This file is an owner-supplied independent reviewer output; the present R07 record is a *triage/acceptance receipt*, not a rewrite of that independent report.
 
+## 0. Owner clarification and correction to assistant's over-audit (same day)
+
+The owner explicitly confirmed that **the same review input linked from PR #782 was downloaded and uploaded to NotebookLM without editing or replacing its content**. The reviewer names the **exact same parent Git blob** 39548922eddee9712441a264424e08f61c6de966 and all twelve child Git blobs match. The auxiliary displayed numbers **204,668 bytes / 1,285 lines** in NotebookLM's report are inaccurate relative to GitHub's verified **204,122 UTF-8 bytes / 1,848 physical lines**, but **they do not demonstrate a different academic source was reviewed**, especially in the face of the matching parent SHA, twelve child SHAs and owner's unchanged-file confirmation.
+
+**Revised decision:** **CLOSE** the earlier assistant-imposed \`Q18_RECEIPT_METADATA_CORRECTION_HOLD\` as a **nonblocking reporter-metadata observation**, NOT a content/source mismatch. **No repeat NotebookLM correction prompt or full re-review required.** The report's informal original-book locator typo (G11 B16/B17 limit/continuity belongs to Tập 1, not Tập 2) is likewise **nonblocking** because the original authoring M5 S1 direct source receipts are correct. Record \`M4_M7_ACADEMIC_PED_PASS_ACCEPTED_ON_MATCHED_SOURCE_SHAS\` for these four scoped modules only; do **not** transfer this verdict to M1–M3, private Topic Readiness, unapproved item candidates or all-topic CONTENT_READY.
+
+**Independent mathematical spot-check by AUTHORING after owner challenge:** F=ln(sqrt(4-x²)) has domain (−2,2) and F'=−x/(4−x²); piecewise f=x+10 (x<0) / f=x (x≥0) has slope +1 on each open side but f(−1)=9>f(0)=0; the 30×20 cardboard model derivative is 4(3x²−50x+150), continuous optimum x≈3.9237478 with V(3)=1008 and V(4)=1056; G11 limit sqrt(x²+16)/x tends to −1 as x→−∞. These all agree with the mathematically relevant report/source examples. The old report's formula swaps were **summary inaccuracies later corrected**, not evidence that NotebookLM was asked another chapter.
+
 ## 1. Scope of reviewer-reported PASS, correctly linked to matching child Git blobs
 
 The corrected report states **Academic PASS and PEDAGOGICAL PASS** for four modules: M4 ten outcomes, M5 nine, M6 nine (not ten), M7 ten. It declares P0=0, P1=0, P2=0 and MINIMAL_DELTA=0 for academic/pedagogical explanations. It explicitly maintains FULL_TOPIC_CONTENT_READY=NO, RELEASE_AUTHORIZATION=NO, MASTERY_ACTIVATION=NO and PRIVATE_RD1_COUNT_NEW=0.
@@ -35,3 +43,8 @@ All **12 of the 12 child source Git blob hashes** in its Appendix 01–12 manife
 **STANDING workflow (not a new rule):** every NotebookLM prompt is given directly in the ChatGPT chat, 3–6 sentences, with real Temp review file links, never as a separate prompt file. Past attempts to create prompt .txt/.md were assistant noncompliance.
 
 **CHECKPOINT:** M4_M7_REVIEWER_REPORTED_CORRECTED_ACADEMIC_PED_PASS; CHILD_BLOBS_12_OF_12_MATCH; PARENT_SHA_MATCH; PARENT_BYTE_LINE_RECEIPT_HOLD; S1_G11_VOLUME_LOCATOR_METADATA_HOLD; CANDIDATE_DEDUP_HOLD; M1_M3_SOURCE_SNAPSHOT_MISMATCH_HOLD; Q16_FULL_TOPIC_HOLD; FULL_TOPIC_CONTENT_READY=NO; RELEASE=NO.
+
+
+## R07 final status addendum after owner-confirmed unchanged input
+
+**SUPERSEDES any earlier phrases in this historical R07 document labelling packet byte/line numbers or the G11 S1 book-volume shorthand as blocking.** Preserve the numerical discrepancy as an audit note only, not as a fresh request to NotebookLM. Actual M4–M7 module Academic/PED PASS is **ACCEPTED** on the documented parent source Git SHA and 12/12 exact child Git SHAs; six public candidate dedup decisions, the separate M1–M3 snapshot conflict, and official protected TOPIC_READINESS remain open. No prompt file, no re-review of the same content, no merge/deploy.
