@@ -9,7 +9,7 @@
 const fs=require("node:fs"),path=require("node:path"),crypto=require("node:crypto"),assert=require("node:assert/strict");
 const root=path.resolve(__dirname,"..");
 const read=p=>fs.readFileSync(path.join(root,p),"utf8");
-const gitblob=p=>{const b=fs.readFileSync(path.join(root,p));return crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+b.length+"\\0"),b])).digest("hex")};
+const gitblob=p=>{const b=fs.readFileSync(path.join(root,p));return crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+b.length+"\0"),b])).digest("hex")};
 const fnv=t=>{let h=2166136261;for(let i=0;i<t.length;i++)h=Math.imul(h^t.charCodeAt(i),16777619)>>>0;return h.toString(16).padStart(8,"0")};
 const original={23:"71cbb566fcb2a87e31676c5258d0d9a573f3f3fb",24:"62e1936c7bc4f6e27e4bd1cee5f43506c23bff78",25:"58869d20956c905a532d31d33269dcc0d1ecdd7b"};
 const records=[
@@ -104,11 +104,11 @@ for(const n of [23,24,25]){
  const file="docs/thpt-preview/sgk/chuong-viii/bai-"+n+".md",source=read(file);
  const start="<!-- G10_CHVIII_FULL_R02_ALL_BEGIN -->",finish="<!-- G10_CHVIII_FULL_R02_ALL_END -->";
  assert(source.includes(start)&&source.includes(finish),"Missing bounded approved pedagogical additions B"+n);
- const restored=source.replace(/<!-- G10_CHVIII_FULL_R02_ALL_BEGIN -->[\\s\\S]*?<!-- G10_CHVIII_FULL_R02_ALL_END -->\\n\\n/,"");
+ const restored=source.replace(/<!-- G10_CHVIII_FULL_R02_ALL_BEGIN -->[\s\S]*?<!-- G10_CHVIII_FULL_R02_ALL_END -->\n\n/,"");
  const b=Buffer.from(restored);
- const restoredSha=crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+b.length+"\\0"),b])).digest("hex");
+ const restoredSha=crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+b.length+"\0"),b])).digest("hex");
  assert.equal(restoredSha,original[n],"Unchanged exact original S1 lesson B"+n);
- const matches=[...source.matchAll(/<!-- G10_CHVIII_R02_BEGIN:(THPT-G10-CHVIII-TRY\\d\\d) -->([\\s\\S]*?)<!-- G10_CHVIII_R02_END:\\1 -->/g)];
+ const matches=[...source.matchAll(/<!-- G10_CHVIII_R02_BEGIN:(THPT-G10-CHVIII-TRY\d\d) -->([\s\S]*?)<!-- G10_CHVIII_R02_END:\1 -->/g)];
  assert.equal(matches.length,4,"Four reviewed outcomes per lesson B"+n);
  for(const [,id,section] of matches){
   const k=records.find(x=>x.id===id);
@@ -117,19 +117,19 @@ for(const n of [23,24,25]){
   all.push(id);
   const meta=section.match(new RegExp('<span id="'+id.toLowerCase()+'" data-thpt-first-try-id="'+id+'" data-outcome-id="([^"]+)"'));
   assert(meta&&meta[1]===k.outcome,"Wrong outcome binding "+id);
-  const helpMeta=section.match(/data-thpt-help-id="(HELP-G10-CHVIII-TRY\\d\\d)"/);
+  const helpMeta=section.match(/data-thpt-help-id="(HELP-G10-CHVIII-TRY\d\d)"/);
   assert(helpMeta&&helpMeta[1]===k.help,"Wrong D6 binding "+id);
   const labels=["Vì sao cần học","Tiền đề","Hiểu bản chất trước công thức","Hướng dẫn đọc hình/sơ đồ","Lý do chọn phương pháp, điều kiện và giới hạn"];
-  const ped=[...section.matchAll(/^\\*\\*([^*]+):\\*\\* (.*)$/gm)].filter(m=>labels.includes(m[1])).map(m=>m[1]+": "+m[2]);
+  const ped=[...section.matchAll(/^\*\*([^*]+):\*\* (.*)$/gm)].filter(m=>labels.includes(m[1])).map(m=>m[1]+": "+m[2]);
   assert.deepEqual(ped.map(p=>p.slice(0,p.indexOf(": "))),labels,"PED1–PED5 concept-first sequence "+id);
-  const prompt=section.match(/^\\*\\*Tự thử trước Core:\\*\\* (.*)$/m);
-  const answer=[...section.matchAll(/^    \\*\\*(Đáp án|Lập luận|Nếu chưa đúng):\\*\\* (.*)$/gm)].map(m=>"**"+m[1]+":** "+m[2]);
-  const steps=section.split("\\n").filter(x=>/^    [1-5]\\. \\*\\*/.test(x)).map(x=>x.slice(4));
+  const prompt=section.match(/^\*\*Tự thử trước Core:\*\* (.*)$/m);
+  const answer=[...section.matchAll(/^    \*\*(Đáp án|Lập luận|Nếu chưa đúng):\*\* (.*)$/gm)].map(m=>"**"+m[1]+":** "+m[2]);
+  const steps=section.split("\n").filter(x=>/^    [1-5]\. \*\*/.test(x)).map(x=>x.slice(4));
   assert(prompt&&answer.length===3&&steps.length===5,"Exactly 3 hidden reviewer answer fields + five D6 steps "+id);
   assert.equal(fnv(JSON.stringify([k.outcome,id,k.help,ped,prompt[1],answer,steps])),k.hash,
      "Original authoring reviewed pedagogical source must be verbatim "+id);
-  assert.equal((section.match(/\\?\\?\\? question "Tự mở đáp án sau khi đã tự làm"/g)||[]).length,1,"One voluntary answer disclosure "+id);
-  assert.equal((section.match(/\\?\\?\\? tip "Nếu chưa làm được — khắc phục 5 bước"/g)||[]).length,1,"One voluntary remediation disclosure "+id);
+  assert.equal((section.match(/\?\?\? question "Tự mở đáp án sau khi đã tự làm"/g)||[]).length,1,"One voluntary answer disclosure "+id);
+  assert.equal((section.match(/\?\?\? tip "Nếu chưa làm được — khắc phục 5 bước"/g)||[]).length,1,"One voluntary remediation disclosure "+id);
  }
 }
 assert.equal(all.length,12);assert.equal(new Set(all).size,12);
