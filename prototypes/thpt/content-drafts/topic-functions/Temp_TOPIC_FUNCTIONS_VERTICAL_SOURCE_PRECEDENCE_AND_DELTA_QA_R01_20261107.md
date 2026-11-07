@@ -1,5 +1,20 @@
 # Kiểm soát một nguồn học liệu Topic “Hàm số và đồ thị” · SOURCE PRECEDENCE & DELTA R01
 
+## LATEST AUTHORING CHECKPOINT — R10/R11 unified candidate (07/11/2026)
+
+**Supersedes older "PENDING" labels only for the exact already-reviewed mathematical source modules (G10 M1–M3 and M4–M7).** Under owner [decision #787](https://github.com/TMA2015/self-learning-math/issues/787), correct academic/PED reviewer results have been accepted without repeated NotebookLM metadata errata. The two deliverables below are **source-preserving AUTHORING artifacts**, not newly reviewed independent final Readiness:
+
+- [R10 unified M1–M7 knowledge source candidate](prototypes/thpt/content-drafts/topic-functions/Temp_TOPIC_FUNCTIONS_M1_M7_UNIFIED_KNOWLEDGE_CANONICAL_CANDIDATE_R10_20261107.md), actual Git blob `c8260cfecb078954cde36d1704ba155799037eb1`, **114,732 characters**. It includes the exact unchanged G10 R01 D1/D2 passage from original Git blob `57eaf0141a5db9bfba91f0e6c863fc7dcc638068` plus five **entire exact Markdown pedagogical source files**: G10 M1–M3 bridge and M4, M5, M6, M7. **5/5 entire source bodies matched** readback, G10 original D1/D2 matched. It includes no newly minted canonical question, answer bank, rubric or private protected Topic Readiness.
+- [R11 source-grounded 48-row outcome evidence route](prototypes/thpt/content-drafts/topic-functions/Temp_TOPIC_FUNCTIONS_M1_M7_48_OUTCOME_CANONICAL_EVIDENCE_ROUTE_R11_20261107.md), actual Git blob `7f81949cea6cc6722b8889b5f48333ae461d169d`: 10 G10 already canonical outcome rows + M4 10/M5 9/M6 9/M7 10 **reviewed proposed outcomes**; **48/48 unique route IDs and 48/48 source-table row checks PASS**, no new official outcome or item ID created.
+- **R10/R11 are not yet final student-facing "one canonical" content**: they are a safe, source-preserving consolidation with original author-only QA paragraphs preserved for lineage, not a publication-ready student narrative. RELEASE must not display source control/QA paragraphs. This is **no substantive DELTA_C**; no renewed NotebookLM math review is triggered. Future substantial teaching-text edits are scoped/reviewed only if truly needed.
+- **Next real AUTHORING tasks:** finish one actual `item_id + content_version + role/placement + outcome + FIG/HELP` matrix rather than source shorthand; resolve **four** genuinely distinct M6/M7 transfer candidates, no duplicate source bank; ensure single nonrepetitive learner view from R10; independent protected Topic Readiness Q16 and Final Submit/no-Mastery constraints; then one V2 handoff/ready manifest/REGISTER **only when genuinely eligible**. Do not add private stems/keys on GitHub.
+- **Cross-lane boundary:** G10 SGK ChIV corrected D5 R01 Academic/PED PASS and updated V2/ready/REGISTER live separately on AUTHORING Draft #778 (still unmerged); G10 ChII source R03 ready, RELEASE handles downstream integration. G10 ChVI #786 MERGED (not automatically production-deployed). None of these are mixed into Topic source #782.
+
+**R10/R11 STATUS:** `EXACT_SOURCE_COMPILE=PASS_5_OF_5`; `G10_ORIGINAL_D1_D2_EXACT=PASS`; `OUTCOME_ROUTE=PASS_48_UNIQUE_ROWS`; `M1_M7_ACADEMIC_PED_SCOPED_PASS_PRESERVED`; `OFFICIAL_Q15_ALL_PLACEMENTS=OPEN`; `TOPIC_PRIVATE_Q16=OPEN`; `FULL_TOPIC_CONTENT_READY=NO`; `RELEASE=NO`.
+
+---
+
+
 **PACKET_ID:** THPT-TOPIC-FUNCTIONS-VERTICAL-PILOT-R01-20261107  
 **BRANCH:** authoring/topic-functions-vertical-pilot-prep-20261107 · **PR:** Draft #782  
 **ONE STANDARD:** SLM-THPT-QUALITY-ONE v1.2.0 Q01–Q18; single norm and GOLDEN THPT R4 unchanged.  
