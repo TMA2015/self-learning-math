@@ -35,7 +35,7 @@
 
     **Nếu chưa đúng:** xem D6 `HELP-G10-CHVIII-TRY05`, sau đó luyện bài canonical `THPT-G10-B24-C01` trong ngân hàng đã review (không tính lại câu đã xem lời giải thành Readiness).
 
-    [Chuyển đến hướng dẫn D6](#help-g10-chviii-try05)
+    <a href="#help-g10-chviii-try05">Chuyển đến hướng dẫn D6</a>
 
 <span id="help-g10-chviii-try05" data-thpt-help-id="HELP-G10-CHVIII-TRY05"></span>
 
@@ -46,7 +46,7 @@
     4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không cộng điểm/Mastery.
     5. **Luyện tiếp:** `THPT-G10-B24-C01`, câu canonical đã review, phù hợp `G10-B24-PERMUTATION`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
 
-    [Mở câu luyện tập đã review](../luyen-tap/?item=THPT-G10-B24-C01)
+    <a href="../luyen-tap/?item=THPT-G10-B24-C01">Mở câu luyện tập đã review</a>
 
 <!-- G10_CHVIII_R02_END:THPT-G10-CHVIII-TRY05 -->
 
@@ -75,7 +75,7 @@
 
     **Nếu chưa đúng:** xem D6 `HELP-G10-CHVIII-TRY06`, sau đó luyện bài canonical `THPT-G10-B24-C02` trong ngân hàng đã review (không tính lại câu đã xem lời giải thành Readiness).
 
-    [Chuyển đến hướng dẫn D6](#help-g10-chviii-try06)
+    <a href="#help-g10-chviii-try06">Chuyển đến hướng dẫn D6</a>
 
 <span id="help-g10-chviii-try06" data-thpt-help-id="HELP-G10-CHVIII-TRY06"></span>
 
@@ -86,7 +86,7 @@
     4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không cộng điểm/Mastery.
     5. **Luyện tiếp:** `THPT-G10-B24-C02`, câu canonical đã review, phù hợp `G10-B24-ARRANGEMENT`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
 
-    [Mở câu luyện tập đã review](../luyen-tap/?item=THPT-G10-B24-C02)
+    <a href="../luyen-tap/?item=THPT-G10-B24-C02">Mở câu luyện tập đã review</a>
 
 <!-- G10_CHVIII_R02_END:THPT-G10-CHVIII-TRY06 -->
 
@@ -115,7 +115,7 @@
 
     **Nếu chưa đúng:** xem D6 `HELP-G10-CHVIII-TRY07`, sau đó luyện bài canonical `THPT-G10-B24-P01` trong ngân hàng đã review (không tính lại câu đã xem lời giải thành Readiness).
 
-    [Chuyển đến hướng dẫn D6](#help-g10-chviii-try07)
+    <a href="#help-g10-chviii-try07">Chuyển đến hướng dẫn D6</a>
 
 <span id="help-g10-chviii-try07" data-thpt-help-id="HELP-G10-CHVIII-TRY07"></span>
 
@@ -126,7 +126,7 @@
     4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không cộng điểm/Mastery.
     5. **Luyện tiếp:** `THPT-G10-B24-P01`, câu canonical đã review, phù hợp `G10-B24-COMBINATION`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
 
-    [Mở câu luyện tập đã review](../luyen-tap/?item=THPT-G10-B24-P01)
+    <a href="../luyen-tap/?item=THPT-G10-B24-P01">Mở câu luyện tập đã review</a>
 
 <!-- G10_CHVIII_R02_END:THPT-G10-CHVIII-TRY07 -->
 
@@ -155,7 +155,7 @@
 
     **Nếu chưa đúng:** xem D6 `HELP-G10-CHVIII-TRY08`, sau đó luyện bài canonical `THPT-G10-B24-P04` trong ngân hàng đã review (không tính lại câu đã xem lời giải thành Readiness).
 
-    [Chuyển đến hướng dẫn D6](#help-g10-chviii-try08)
+    <a href="#help-g10-chviii-try08">Chuyển đến hướng dẫn D6</a>
 
 <span id="help-g10-chviii-try08" data-thpt-help-id="HELP-G10-CHVIII-TRY08"></span>
 
@@ -166,7 +166,7 @@
     4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không cộng điểm/Mastery.
     5. **Luyện tiếp:** `THPT-G10-B24-P04`, câu canonical đã review, phù hợp `G10-B24-CONSTRAINTS`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
 
-    [Mở câu luyện tập đã review](../luyen-tap/?item=THPT-G10-B24-P04)
+    <a href="../luyen-tap/?item=THPT-G10-B24-P04">Mở câu luyện tập đã review</a>
 
 <!-- G10_CHVIII_R02_END:THPT-G10-CHVIII-TRY08 -->
 
