@@ -763,7 +763,7 @@ async function ready(page,path){
   await ready(page,"sgk/chuong-vi/bai-16/");
   assert(!(await page.locator("article").textContent()).includes("ACADEMIC_CLEARANCE"),"B16 shows internal QA approval");
   await ready(page,"sgk/chuong-vi/bai-17/");
-  const scope=page.locator("details.thpt-r4-pedagogical-note");
+  const scope=page.locator("details.thpt-r4-pedagogical-note:not([data-thpt-help-id])");
   assert.equal(await scope.count(),1,"B17 should offer one compact optional extension note");
   assert(!(await scope.evaluate(el=>el.open)),"B17 scope note must begin collapsed");
   await scope.locator("summary").click();
