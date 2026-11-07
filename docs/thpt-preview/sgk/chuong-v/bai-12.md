@@ -20,14 +20,13 @@ Em hãy đọc tình huống, nhớ lại kiến thức cũ và tự trả lời
 
 **Tự thử trước Core** Với số đúng \(\bar a=1/3\), máy hiển thị \(a=0{,}33\). Số nào gần đúng, số nào đúng? Có thể viết \(a=\bar a\) hay chỉ \(a\approx\bar a\)?
 
-<details class="thpt-r4-pedagogical-note" markdown="1" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY01"><summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
-
-**Đối chiếu kết quả:** \(a=0{,}33\) là số gần đúng; \(\bar a=1/3\) là số đúng; viết \(0{,}33\approx1/3\), không viết bằng.
-
-**Giải thích vì sao:** \(0{,}33=33/100\ne1/3\). Việc cắt độ chính xác biểu diễn tạo ra số gần đúng dù cách tính là hợp lệ.
-
-**Nếu chưa làm được:** Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó [thử câu cùng kiến thức trong Core/Luyện tập](luyen-tap.md?item=THPT-G10-B12-P04).
-
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY01">
+<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+<div class="thpt-r4-first-try-answer">
+<p><strong>Đối chiếu kết quả:</strong> \(a=0{,}33\) là số gần đúng; \(\bar a=1/3\) là số đúng; viết \(0{,}33\approx1/3\), không viết bằng.</p>
+<p><strong>Giải thích vì sao:</strong> \(0{,}33=33/100\ne1/3\). Việc cắt độ chính xác biểu diễn tạo ra số gần đúng dù cách tính là hợp lệ.</p>
+<p><strong>Nếu chưa làm được:</strong> Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó <a href="../luyen-tap/?item=THPT-G10-B12-P04">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
+</div>
 </details>
 
 ### Độ chính xác không phải sai số thực
@@ -44,14 +43,13 @@ Em hãy đọc tình huống, nhớ lại kiến thức cũ và tự trả lời
 
 **Tự thử trước Core** Máy báo \(a=8{,}4\,\mathrm{cm}\), độ chính xác \(d=0{,}3\,\mathrm{cm}\). Số đúng \(\bar a\) thuộc khoảng nào? Có chắc \(\Delta_a=0{,}3\,\mathrm{cm}\) không?
 
-<details class="thpt-r4-pedagogical-note" markdown="1" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY02"><summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
-
-**Đối chiếu kết quả:** \(\bar a\in[8{,}1;8{,}7]\,\mathrm{cm}\). Chỉ chắc \(\Delta_a\le0{,}3\,\mathrm{cm}\), không chắc bằng.
-
-**Giải thích vì sao:** Lấy 8,4 trừ/cộng 0,3. Sai số có thể 0 nếu giá trị đúng đúng bằng 8,4; độ chính xác chỉ giới hạn trên.
-
-**Nếu chưa làm được:** Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó [thử câu cùng kiến thức trong Core/Luyện tập](luyen-tap.md?item=THPT-G10-B12-C02).
-
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY02">
+<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+<div class="thpt-r4-first-try-answer">
+<p><strong>Đối chiếu kết quả:</strong> \(\bar a\in[8{,}1;8{,}7]\,\mathrm{cm}\). Chỉ chắc \(\Delta_a\le0{,}3\,\mathrm{cm}\), không chắc bằng.</p>
+<p><strong>Giải thích vì sao:</strong> Lấy 8,4 trừ/cộng 0,3. Sai số có thể 0 nếu giá trị đúng đúng bằng 8,4; độ chính xác chỉ giới hạn trên.</p>
+<p><strong>Nếu chưa làm được:</strong> Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó <a href="../luyen-tap/?item=THPT-G10-B12-C02">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
+</div>
 </details>
 
 ### Sai số lớn hay nhỏ còn phụ thuộc cỡ đại lượng
@@ -68,14 +66,13 @@ Em hãy đọc tình huống, nhớ lại kiến thức cũ và tự trả lời
 
 **Tự thử trước Core** Một phép đo cho \(a=150\,\mathrm{m}\) và độ chính xác \(d=3\,\mathrm{m}\), chưa biết số đúng. Cận trên sai số tương đối là bao nhiêu phần trăm? Có thể kết luận sai số tương đối chính xác bằng mức đó không?
 
-<details class="thpt-r4-pedagogical-note" markdown="1" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY03"><summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
-
-**Đối chiếu kết quả:** \(\delta_a\le3/150=0{,}02=2\%\), không thể kết luận \(\delta_a=2\%\).
-
-**Giải thích vì sao:** Ta đang so giới hạn sai số 3 m với số gần đúng 150 m. Sai số thực có thể nhỏ hơn 3 m; cần giữ dấu \(\le\).
-
-**Nếu chưa làm được:** Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó [thử câu cùng kiến thức trong Core/Luyện tập](luyen-tap.md?item=THPT-G10-B12-P06).
-
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY03">
+<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+<div class="thpt-r4-first-try-answer">
+<p><strong>Đối chiếu kết quả:</strong> \(\delta_a\le3/150=0{,}02=2\%\), không thể kết luận \(\delta_a=2\%\).</p>
+<p><strong>Giải thích vì sao:</strong> Ta đang so giới hạn sai số 3 m với số gần đúng 150 m. Sai số thực có thể nhỏ hơn 3 m; cần giữ dấu \(\le\).</p>
+<p><strong>Nếu chưa làm được:</strong> Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó <a href="../luyen-tap/?item=THPT-G10-B12-P06">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
+</div>
 </details>
 
 ### Cắt bớt chữ số nhưng phải biết mức chênh
@@ -92,14 +89,13 @@ Em hãy đọc tình huống, nhớ lại kiến thức cũ và tự trả lời
 
 **Tự thử trước Core** Giả sử \(7{,}346\) là số **đúng**. Làm tròn tới hàng phần trăm, tìm số quy tròn và sai số thực của thao tác làm tròn.
 
-<details class="thpt-r4-pedagogical-note" markdown="1" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY04"><summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
-
-**Đối chiếu kết quả:** Số quy tròn là \(7{,}35\); sai số là \(|7{,}35-7{,}346|=0{,}004\).
-
-**Giải thích vì sao:** Giữ hai chữ số thập phân, chữ số kế tiếp 6 làm tăng hàng phần trăm. Sai số 0,004 nhỏ hơn 0,005 (nửa đơn vị hàng phần trăm).
-
-**Nếu chưa làm được:** Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó [thử câu cùng kiến thức trong Core/Luyện tập](luyen-tap.md?item=THPT-G10-B12-P02).
-
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY04">
+<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+<div class="thpt-r4-first-try-answer">
+<p><strong>Đối chiếu kết quả:</strong> Số quy tròn là \(7{,}35\); sai số là \(|7{,}35-7{,}346|=0{,}004\).</p>
+<p><strong>Giải thích vì sao:</strong> Giữ hai chữ số thập phân, chữ số kế tiếp 6 làm tăng hàng phần trăm. Sai số 0,004 nhỏ hơn 0,005 (nửa đơn vị hàng phần trăm).</p>
+<p><strong>Nếu chưa làm được:</strong> Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó <a href="../luyen-tap/?item=THPT-G10-B12-P02">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
+</div>
 </details>
 
 ## B13 — Các số đặc trưng đo xu thế trung tâm
