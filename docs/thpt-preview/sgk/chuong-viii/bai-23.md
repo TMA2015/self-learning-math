@@ -7,6 +7,7 @@
 </div>
 
 <!-- G10_CHVIII_FULL_R02_ALL_BEGIN -->
+
 ## Tự khám phá trước công thức
 
 <!-- G10_CHVIII_R02_BEGIN:THPT-G10-CHVIII-TRY01 -->
@@ -32,7 +33,9 @@
 
     **Lập luận:** Một phần thưởng thuộc đúng một trong hai nhóm không trùng: 2 cuốn truyện hoặc 6 vé, nên 2+6=8.
 
-    **Nếu chưa đúng:** Em có thể mở [hướng dẫn khắc phục 5 bước](#help-g10-chviii-try01), rồi [luyện lại câu tương ứng](../luyen-tap/?item=THPT-G10-B23-C01). Câu đã xem lời giải chỉ dùng để luyện tập, không tính như bài tự kiểm tra độc lập.
+    **Nếu chưa đúng:** xem D6 `HELP-G10-CHVIII-TRY01`, sau đó luyện bài canonical `THPT-G10-B23-C01` trong ngân hàng đã review (không tính lại câu đã xem lời giải thành Readiness).
+
+    [Chuyển đến hướng dẫn D6](#help-g10-chviii-try01)
 
 <span id="help-g10-chviii-try01" data-thpt-help-id="HELP-G10-CHVIII-TRY01"></span>
 
@@ -40,8 +43,10 @@
     1. **Nhận diện lỗi:** Nếu nhân 2×6, em đang đếm một cặp truyện–vé, không phải chỉ chọn một phần thưởng.
     2. **Quay lại bản chất:** Quy tắc cộng đếm các khả năng thay thế nhau: thực hiện cách A HOẶC cách B. Chỉ cộng số cách khi hai nhánh không có phương án trùng nhau, nếu có phải loại phần giao.
     3. **Tự làm lại:** Khoanh từ 'hoặc', vẽ 2 nhánh truyện và 6 nhánh vé, kiểm đủ 8 kết quả.
-    4. **Đối chiếu tự nguyện:** Tự mở đáp án sau khi làm, kiểm tra và giải thích lại từng điều kiện; việc đối chiếu này không ghi điểm thành thạo.
-    5. **Luyện tiếp:** [Làm câu đã học cùng kỹ năng](../luyen-tap/?item=THPT-G10-B23-C01) và tự giải thích vì sao chọn phương pháp; nếu đã xem lời giải thì chỉ xem đây là luyện tập, không phải đánh giá độc lập.
+    4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không cộng điểm/Mastery.
+    5. **Luyện tiếp:** `THPT-G10-B23-C01`, câu canonical đã review, phù hợp `G10-B23-ADDITION`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
+
+    [Mở câu luyện tập đã review](../luyen-tap/?item=THPT-G10-B23-C01)
 
 <!-- G10_CHVIII_R02_END:THPT-G10-CHVIII-TRY01 -->
 
@@ -68,7 +73,9 @@
 
     **Lập luận:** Mỗi trong 4 loại bánh ghép được với 3 loại nhân: 4×3=12 cặp phân biệt; không bỏ sót hay đếm trùng.
 
-    **Nếu chưa đúng:** Em có thể mở [hướng dẫn khắc phục 5 bước](#help-g10-chviii-try02), rồi [luyện lại câu tương ứng](../luyen-tap/?item=THPT-G10-B23-C02). Câu đã xem lời giải chỉ dùng để luyện tập, không tính như bài tự kiểm tra độc lập.
+    **Nếu chưa đúng:** xem D6 `HELP-G10-CHVIII-TRY02`, sau đó luyện bài canonical `THPT-G10-B23-C02` trong ngân hàng đã review (không tính lại câu đã xem lời giải thành Readiness).
+
+    [Chuyển đến hướng dẫn D6](#help-g10-chviii-try02)
 
 <span id="help-g10-chviii-try02" data-thpt-help-id="HELP-G10-CHVIII-TRY02"></span>
 
@@ -76,8 +83,10 @@
     1. **Nhận diện lỗi:** Nếu cộng 4+3, em đang đếm chọn một loại bánh HOẶC một loại nhân, chứ không phải suất gồm cả hai.
     2. **Quay lại bản chất:** Quy tắc nhân đếm các đường đi hoàn chỉnh qua nhiều bước: mỗi lựa chọn của bước trước có số lựa chọn tiếp theo tương ứng; khi cùng số cách, tổng số là tích.
     3. **Tự làm lại:** Liệt kê (A1,Q1),(A1,Q2), ... cho 3 áo và 2 quần; kiểm đủ 6 lá.
-    4. **Đối chiếu tự nguyện:** Tự mở đáp án sau khi làm, kiểm tra và giải thích lại từng điều kiện; việc đối chiếu này không ghi điểm thành thạo.
-    5. **Luyện tiếp:** [Làm câu đã học cùng kỹ năng](../luyen-tap/?item=THPT-G10-B23-C02) và tự giải thích vì sao chọn phương pháp; nếu đã xem lời giải thì chỉ xem đây là luyện tập, không phải đánh giá độc lập.
+    4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không cộng điểm/Mastery.
+    5. **Luyện tiếp:** `THPT-G10-B23-C02`, câu canonical đã review, phù hợp `G10-B23-MULTIPLICATION`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
+
+    [Mở câu luyện tập đã review](../luyen-tap/?item=THPT-G10-B23-C02)
 
 <!-- G10_CHVIII_R02_END:THPT-G10-CHVIII-TRY02 -->
 
@@ -104,7 +113,9 @@
 
     **Lập luận:** Hàng chục có 3 cách (1,2,3); với mỗi cách, hàng đơn vị còn 3 chữ số trong tập 0..3 nên 3×3=9. Ví dụ 10,12,13,20,21,23,30,31,32.
 
-    **Nếu chưa đúng:** Em có thể mở [hướng dẫn khắc phục 5 bước](#help-g10-chviii-try03), rồi [luyện lại câu tương ứng](../luyen-tap/?item=THPT-G10-B23-P05). Câu đã xem lời giải chỉ dùng để luyện tập, không tính như bài tự kiểm tra độc lập.
+    **Nếu chưa đúng:** xem D6 `HELP-G10-CHVIII-TRY03`, sau đó luyện bài canonical `THPT-G10-B23-P05` trong ngân hàng đã review (không tính lại câu đã xem lời giải thành Readiness).
+
+    [Chuyển đến hướng dẫn D6](#help-g10-chviii-try03)
 
 <span id="help-g10-chviii-try03" data-thpt-help-id="HELP-G10-CHVIII-TRY03"></span>
 
@@ -112,8 +123,10 @@
     1. **Nhận diện lỗi:** Nếu tính 4×3=12, em đã cho chữ số 0 ở đầu và đếm cả dạng '01' không phải số hai chữ số.
     2. **Quay lại bản chất:** Đếm một số là hoàn tất hai bước hàng chục → hàng đơn vị; điều kiện 'không lặp' làm số lựa chọn bước thứ hai phụ thuộc chữ số đã chọn, nhưng còn đúng một số lượng bằng nhau cho mọi chọn ở bước đầu.
     3. **Tự làm lại:** Viết ngay hàng chục 1,2,3 và đếm nhánh hàng đơn vị tương ứng, không điền 0 vào đầu.
-    4. **Đối chiếu tự nguyện:** Tự mở đáp án sau khi làm, kiểm tra và giải thích lại từng điều kiện; việc đối chiếu này không ghi điểm thành thạo.
-    5. **Luyện tiếp:** [Làm câu đã học cùng kỹ năng](../luyen-tap/?item=THPT-G10-B23-P05) và tự giải thích vì sao chọn phương pháp; nếu đã xem lời giải thì chỉ xem đây là luyện tập, không phải đánh giá độc lập.
+    4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không cộng điểm/Mastery.
+    5. **Luyện tiếp:** `THPT-G10-B23-P05`, câu canonical đã review, phù hợp `G10-B23-DIGIT_COUNT`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
+
+    [Mở câu luyện tập đã review](../luyen-tap/?item=THPT-G10-B23-P05)
 
 <!-- G10_CHVIII_R02_END:THPT-G10-CHVIII-TRY03 -->
 
@@ -140,7 +153,9 @@
 
     **Lập luận:** Tận cùng 0: hàng chục có 3 cách 1,2,3 →3 số. Tận cùng 2: hàng chục có 2 cách 1 hoặc3 →2 số. Cộng hai trường hợp rời được 5.
 
-    **Nếu chưa đúng:** Em có thể mở [hướng dẫn khắc phục 5 bước](#help-g10-chviii-try04), rồi [luyện lại câu tương ứng](../luyen-tap/?item=THPT-G10-B23-P05). Câu đã xem lời giải chỉ dùng để luyện tập, không tính như bài tự kiểm tra độc lập.
+    **Nếu chưa đúng:** xem D6 `HELP-G10-CHVIII-TRY04`, sau đó luyện bài canonical `THPT-G10-B23-P05` trong ngân hàng đã review (không tính lại câu đã xem lời giải thành Readiness).
+
+    [Chuyển đến hướng dẫn D6](#help-g10-chviii-try04)
 
 <span id="help-g10-chviii-try04" data-thpt-help-id="HELP-G10-CHVIII-TRY04"></span>
 
@@ -148,8 +163,10 @@
     1. **Nhận diện lỗi:** Nếu tính 2×3=6, em đã bỏ qua điều kiện khi hàng đơn vị là 2 thì hàng chục chỉ còn 2 cách, không phải 3.
     2. **Quay lại bản chất:** Nếu đếm số chẵn tạo từ các chữ số cho trước, chữ số hàng đơn vị quyết định các lựa chọn ở hàng chục; chia thành những trường hợp không giao nhau rồi cộng kết quả của từng nhánh.
     3. **Tự làm lại:** Viết hai nhánh cuối 0 và cuối 2, kiểm lại danh sách đủ 5 số không lặp.
-    4. **Đối chiếu tự nguyện:** Tự mở đáp án sau khi làm, kiểm tra và giải thích lại từng điều kiện; việc đối chiếu này không ghi điểm thành thạo.
-    5. **Luyện tiếp:** [Làm câu đã học cùng kỹ năng](../luyen-tap/?item=THPT-G10-B23-P05) và tự giải thích vì sao chọn phương pháp; nếu đã xem lời giải thì chỉ xem đây là luyện tập, không phải đánh giá độc lập.
+    4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không cộng điểm/Mastery.
+    5. **Luyện tiếp:** `THPT-G10-B23-P05`, câu canonical đã review, phù hợp `G10-B23-CASE_SPLIT`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
+
+    [Mở câu luyện tập đã review](../luyen-tap/?item=THPT-G10-B23-P05)
 
 <!-- G10_CHVIII_R02_END:THPT-G10-CHVIII-TRY04 -->
 
