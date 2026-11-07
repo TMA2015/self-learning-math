@@ -9,6 +9,8 @@ const fs=require("node:fs"),path=require("node:path"),assert=require("node:asser
 const base=path.resolve(__dirname,"..");
 // Issue #763 must prove runtime code reuse, rather than only matching Golden CSS.
 require("./test-thpt-golden-shared-runtime.cjs");
+// Scope: source-locked G10 ChI FULL R03 concept-first release (11 FIRST TRY + D6).
+require("./test-thpt-g10-chi-full-r03-release.cjs");
 const read=p=>fs.readFileSync(path.join(base,p),"utf8");
 const exists=p=>fs.existsSync(path.join(base,p));
 const chapter=[
