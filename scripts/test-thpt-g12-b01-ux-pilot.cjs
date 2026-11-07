@@ -46,7 +46,6 @@ assert(html.includes('get("participant")'),"T4 participant variant must be selec
 assert(html.includes('document.querySelector(".controls").hidden=true'),"Learner view must hide reviewer A/B choice");
 assert(html.includes('document.querySelector(".source-note").hidden=true'),"Learner view must hide reviewer metadata");
 assert(html.includes('toggle(assigned)'),"Learner sees assigned original canonical variant only");
-assert(facilitator.includes("CROSSOVER_EXCLUDED"),"Explicit exclusion when learner switches variants");
 assert(!/fetch\s*\(|XMLHttpRequest|localStorage|sessionStorage|firebase\.|sendBeacon|RoadmapTutor\./.test(scripts[0][1]),"No network, AI, persistence or mastery");
 assert(!/docs\/thpt-preview\/sgk\/lop-12\/chuong-i\/bai-1\.md/.test(html.slice(0,1000)), "Prototype is not a deployed SGK lesson page");
 // T4/T5 research artifacts are part of the isolated pilot only; no learner answer key or fake measured verdict.
@@ -57,5 +56,6 @@ assert(learnerForm.includes("Nhiệm vụ 1.")&&learnerForm.includes("Nhiệm v�
 assert(learnerForm.includes("Không phải bài kiểm tra chính thức"),"Research only, not official self-check");
 assert(!/đáp án\s*:\s*[ABCD]|f'\(x\)\s*>\s*0\s*trên/.test(learnerForm),"No scored answer-key text in learner form");
 assert(facilitator.includes("rubric")&&facilitator.includes("G12_B01_T4_LEARNER_WORKSHEET_20261107.md"),"Facilitator rubric must stay separate from learner worksheet");
+assert(facilitator.includes("CROSSOVER_EXCLUDED"),"Explicit exclusion when learner switches variants");
 assert(decision.includes("T4_REAL_LEARNER_RESULTS=PENDING")&&decision.includes("Chưa phát hành biến thể B"),"No fictional learner outcome or approval");
 console.log("PASS isolated UX-PED A/B: source Git SHA "+sourceSHA+"; original SVG SHA "+figureSHA+"; no source edits/network/persistence; JS syntax valid");
