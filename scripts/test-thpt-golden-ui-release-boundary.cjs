@@ -11,6 +11,8 @@ const base=path.resolve(__dirname,"..");
 require("./test-thpt-golden-shared-runtime.cjs");
 // Scope: source-locked G10 ChI FULL R03 concept-first release (11 FIRST TRY + D6).
 require("./test-thpt-g10-chi-full-r03-release.cjs");
+// Scoped G10 ChIII new content must preserve reviewed D1/D2/D5/D6 and Q16.
+require("./test-thpt-g10-chiii-full-r03-release.cjs");
 const read=p=>fs.readFileSync(path.join(base,p),"utf8");
 const exists=p=>fs.existsSync(path.join(base,p));
 const chapter=[
