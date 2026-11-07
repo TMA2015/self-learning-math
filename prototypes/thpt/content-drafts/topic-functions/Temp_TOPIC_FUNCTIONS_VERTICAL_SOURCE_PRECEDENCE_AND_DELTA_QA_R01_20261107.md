@@ -55,6 +55,13 @@
 - Preserve the reviewer-reported result but mark `SOURCE_RECEIPT_CONTENT_INCONSISTENCY_HOLD` for affected candidate/outcome/Q07/Q18 claims. Ask for **targeted** reviewer correction/corresponding original packet or only affected new Delta C content re-review; do not re-review entire M4–M7 just because of a report transcription error.
 - Standing workflow, not new: **NotebookLM prompts always sent directly in ChatGPT**, no prompt file. Reviewer reported PASS is **not** FULL_TOPIC_CONTENT_READY; M1–M3 source mismatch and Q16 protected full Topic Readiness remain separately blocked.
 
+## 3d. R07 newer corrected owner NotebookLM verdict — 12 exact child sources, parent receipt metadata hold
+
+- [R07 corrected review receipt](prototypes/thpt/content-drafts/topic-functions/Temp_TOPIC_FUNCTIONS_M4_M7_NOTEBOOKLM_CORRECTED_VERDICT_AND_SOURCE_RECEIPT_R07_20261107.md), Git blob `0af6fd7ab0d673ed0b1fd9cf8a8a6030cff8d8d0`, supersedes R06's **four report-description errors** but does not rewrite old reports. Owner corrected reviewer text now matches actual M6 CAND-P02 expression/domain, M7 CAND-P01 piecewise example, M7 outcome IDs and five SVG M4, and expressly states **Academic+PED PASS M4/M5/M6/M7** (10+9+9+10 outcomes), P0=P1=P2=0 in academic/pedagogic scope. All **12 child Git blob source hashes match**. Record reviewer PASS with its scoped source SHA, not FULL_TOPIC_CONTENT_READY.
+- **R07 remaining Q18 evidence:** reviewer correction names proper **parent** Git blob `39548922eddee9712441a264424e08f61c6de966` but prints **204,668 bytes / 1,285 lines**, whereas that actual Git blob is **204,122 bytes / 1,848 lines**. The parent SHA match is real, numerics are still inconsistent: `SOURCE_RECEIPT_PACKET_BYTE_LINE_METADATA_HOLD`. One-line metadata correction preferred over re-reviewing mathematics.
+- **Original S1 locator typo:** reviewer report says G11 limit/continuity B15–17 Tập 2, while author source M5 correctly locks B16/B17 **G11 Tập 1**; retain `S1_G11_VOLUME_LOCATOR_METADATA_HOLD` until reviewer receipt correction.
+- **Owner rule is longstanding:** prompt always posted directly in chat and NEVER saved as a separate prompt file. No new standard/rule. Other remaining gates: M1–M3 mismatched reviewed snapshot, public candidate semantic dedup, full protected Topic Q16 Readiness, M1–M7 consolidation and source/version/receipt sync.
+
 ## 4. P0/P1 blocker register for closing one pilot coherently
 
 | Blocker ID | Precisely unresolved gate | Minimal close condition |
