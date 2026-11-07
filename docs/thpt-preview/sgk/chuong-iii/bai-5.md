@@ -6,7 +6,7 @@
 
 Em hãy đọc tình huống, nhắc lại kiến thức đã học và tự trả lời từng câu **Tự thử** trước khi đọc phần công thức. Chỉ mở lời giải sau khi em đã tự làm. Nếu gặp khó khăn, xem mục hỗ trợ của bài rồi mới luyện Core/Luyện tập. Hoạt động này không chấm điểm hay ghi mức độ thành thạo.
 
-### Unit semicircle
+### Góc và nửa đường tròn đơn vị
 
 **Vì sao cần học?** Khi một bán kính quay trên mặt phẳng, làm sao nói chính xác đầu bán kính nằm lệch sang trái hay lên cao mà không cần đo bằng mắt? Các tọa độ cho ta ngôn ngữ để mô tả hướng và dự đoán dấu của lượng giác.
 
@@ -29,7 +29,7 @@ Em hãy đọc tình huống, nhắc lại kiến thức đã học và tự tr�
 
 </details>
 
-### Special angles
+### Các góc đặc biệt
 
 **Vì sao cần học?** Vì sao hai góc nhìn rất khác nhau như 45° và 135° có cùng độ cao trên nửa đường tròn, nhưng hướng ngang trái/ngược nhau? Hiểu sự đối xứng giúp nhớ các giá trị đặc biệt thay vì học hai bảng rời rạc.
 
@@ -52,7 +52,7 @@ Em hãy đọc tình huống, nhắc lại kiến thức đã học và tự tr�
 
 </details>
 
-### Sign domain
+### Dấu và điều kiện xác định
 
 **Vì sao cần học?** Nếu ta lấy độ dốc của một hướng bằng “độ cao chia độ lệch ngang”, điều gì xảy ra khi độ lệch ngang bằng 0? Đó là lí do tan/cot phải có điều kiện xác định, không thể suy chúng luôn là những con số.
 
@@ -75,7 +75,7 @@ Em hãy đọc tình huống, nhắc lại kiến thức đã học và tự tr�
 
 </details>
 
-### Supplementary
+### Hai góc bù nhau
 
 **Vì sao cần học?** Khi quay một hướng từ 40° sang 140°, điểm trên đường tròn đổi bên trái/phải nhưng vẫn giữ nguyên độ cao. Ta có thể tính hoặc so sánh lượng giác góc tù từ góc nhọn đã biết mà không học thuộc công thức mới một cách rời rạc.
 
@@ -98,7 +98,7 @@ Em hãy đọc tình huống, nhắc lại kiến thức đã học và tự tr�
 
 </details>
 
-### Identities
+### Hệ thức lượng giác
 
 **Vì sao cần học?** Nếu biết chỉ thành phần ngang của một hướng, ta có thể suy thành phần đứng từ độ dài bán kính 1 hay không? Hệ thức lượng giác là hệ quả của Pitago, nhưng vẫn cần thông tin vị trí để chọn dấu.
 
