@@ -14,8 +14,13 @@ REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/transfer-written-r00-2026110
 REVIEW_RECEIPT_BLOB: ce566f0fa3c2bd221751f05ff680cabeb200a848
 ACADEMIC_VERDICT: PASS
 PEDAGOGICAL_VERDICT: PASS
-BLOCKERS: PRE_READY_Q18_NOTEBOOKLM_SOURCE_SIZE_DISCREPANCY_AND_SUPERSESSION_GATE
+BLOCKERS: PRE_READY_ACTIVE_CANONICAL_CHAPTER_VERSION_SUPERSESSION_GATE
 CONTENT_READY: NO
+D5_FIGURE_DESIGN_SOURCE_PATH: prototypes/thpt/content-drafts/transfer-written-r00-20261106/Temp_TRANSFER_R00_D5_FIGURE_SOURCE_SPEC_20261107.md
+D5_FIGURE_DESIGN_SOURCE_BLOB: a2ee2b226780b3aeff379ccb7d5eae0bde0156b5
+ORIGINAL_REVIEW_PDF_SHA256: 99a58a3b06df2e762bc0552f3ea6620aaa42f2ed3dec05bd0b9974f080dabdaf
+Q18_CONTENT_IDENTITY: RECONCILED_BY_ALL_15_IDS_AND_VERBATIM_GIT_SOURCES
+Q18_RAW_STUDIO_BYTE_PARITY: NOT_CLAIMED_NONBLOCKING_DISCLOSED_METADATA_DIFFERENCE
 OFFICIAL_INDEPENDENT_READINESS: NOT_CLAIMED
 PRIVATE_RD1_NEW_COUNT: 0
 MASTERY_ACTIVATION: NO
@@ -341,6 +346,11 @@ No private RD1 items, stems, solutions or grading rubrics added by these public 
 ## AUTHOR_SIGNOFF
 
 AUTHORING source-assembly SHA `d8020a23db8ec8465f5361e3c9834cdb6a55538e`; original independently reviewed full chapter source embedded unchanged; new 15 candidate IDs match independent reviewer; receiver RELEASE would consume one **complete chapter source** only after source provenance and single-active-packet gate are closed. This **does not** authorize merge/deploy or change the historical `CONTENT_READY` packet. PR #778 Draft head only; exact QA on HEAD must be verified before final authoring declaration.
+
+
+**07/11 D5 AUTHORING source handoff clarification:** Exact five-page PDF was visually reviewed by NotebookLM and retained in the user ZIP (SHA256 above); one **math-precise, page-by-page descriptive source spec** is now in Git at `prototypes/thpt/content-drafts/transfer-written-r00-20261106/Temp_TRANSFER_R00_D5_FIGURE_SOURCE_SPEC_20261107.md` blob `a2ee2b226780b3aeff379ccb7d5eae0bde0156b5`. That closes missing *authoring design/provenance* for all 5 D5 figures without introducing SVG as NotebookLM source. RELEASE still owns responsive SVG/MathJax render and AP3 screenshot equivalence; the PDF binary is not claimed as a Git asset. Source figure parameters have **not changed** from the independently reviewed five-page PDF.
+
+**07/11 Q18 evidence classification:** All 15 new IDs and their math inputs/expected outputs appear in the single independent reviewer report, all source Markdown and reviewed components are frozen on Git and complete-chapter assembly is verified verbatim. The size numbers in the reviewer report are not exact; those are declared **source receipt metadata limitations, not proof of a different mathematical version**. `Q18_CONTENT_IDENTITY_RECONCILED` means source/receipt Git evidence chains are explicit and task content matched; it does **not** assert a SHA computed inside NotebookLM Studio. The historical G10 ChIX full R02 (#768) already records the same distinction for a reviewer-size mismatch without rerunning old math.
 
 ## RELEASE_ACCEPTANCE
 
