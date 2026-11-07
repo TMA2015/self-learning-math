@@ -9,7 +9,7 @@ ACADEMIC_SOURCE_BLOB: d8020a23db8ec8465f5361e3c9834cdb6a55538e
 ORIGINAL_INDEPENDENT_REVIEWER_GIT_BLOB: 865bb30feca7b4ade054b9b53d6306044b2d5e9f
 ACADEMIC_VERDICT: PASS_REPORTED_BY_NOTEBOOKLM_FOR_DELTA_ONLY
 PEDAGOGICAL_VERDICT: PASS_REPORTED_BY_NOTEBOOKLM_FOR_DELTA_ONLY
-BLOCKERS: V2_READY_NOT_ISSUED
+BLOCKERS: NONE_AUTHORING_SCOPED
 
 ## SOURCE_RECEIPT — immutable component chain
 
@@ -34,8 +34,8 @@ AUTHOR_SOURCE_ASSEMBLY_EQUIVALENCE: PASS
 GIT_SOURCE_AND_HISTORICAL_RECEIPT_BLOBS: VERIFIED
 NOTEBOOKLM_EXACT_BYTE_PARITY: NOT_CLAIMED
 REVIEW_DELTA_MINIMAL_REVISIONS: NONE_REPORTED
-V2_READY_MANIFEST: NOT_CREATED_YET
-CHAPTER_CANONICAL_SUPERSESSION: PENDING_V2_CATALOG_DECISION
+V2_READY_MANIFEST: prototypes/thpt/release-queue/ready/G10-SGK-CHIV-FULL-R04-TRANSFER-20261107.md AUTHORING_DRAFT_ONLY
+CHAPTER_CANONICAL_SUPERSESSION: G10_PRIOR_R03_SEPARATE_DRAFT_UNCHANGED_NEW_R04_ONLY_READY_ON_THIS_BRANCH
 RELEASE: NOT_AUTHORIZED
 
-The original reviewer file remains the authority for academic/PED PASS claims. This receipt is an **AUTHORING traceability reconciliation**, not a fabricated second independent review, a new standard, a release certificate, or permission to overwrite historical READY manifests.
+Current 07/11/2026 handoff state: one V2 AUTHORING CONTENT_READY manifest and one matching REGISTER row for this chapter **on PR #778 Draft only**, following exact source and 15-ID content Q18 reconciliation. No active duplicate FULL packet in the branch; original independent historical source/receipt PASS preserved. PDF figure SHA and D5 design spec are source-locked; actual website AP3 remains for RELEASE. NotebookLM did not issue raw SHA; its source-byte label differences remain explicitly disclosed. The original reviewer file remains the authority for academic/PED PASS claims. This receipt is an **AUTHORING traceability reconciliation**, not a fabricated second independent review, a new standard, a release certificate, or permission to overwrite historical READY manifests.
