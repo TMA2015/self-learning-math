@@ -17,7 +17,7 @@ const root="http://127.0.0.1:8765/thpt-preview/sgk/chuong-viii/";
      assert(response?.ok(),"Missing Chapter VIII B"+n);
      const article=page.locator("article.md-content__inner");
      const first=article.locator("[data-thpt-first-try-id]");
-     const helps=article.locator("[data-thpt-help-id]");
+     const helps=article.locator('[data-thpt-help-id^="HELP-G10-CHVIII-TRY"]');
      const answers=article.locator("details.question");
      const recovery=article.locator("details.tip");
      assert.equal(await first.count(),4,"Four canonical First Try identities B"+n);
