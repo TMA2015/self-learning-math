@@ -20,14 +20,13 @@ Em hãy đọc tình huống, nhớ lại kiến thức cũ và tự trả lời
 
 **Tự thử trước Core** Một nhóm có bốn giá trị \(2,4,4,10\). Tính số trung bình và nêu vì sao giá trị 10 phải được tính một lần dù lớn.
 
-<details class="thpt-r4-pedagogical-note" markdown="1" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY05"><summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
-
-**Đối chiếu kết quả:** \(\bar x=(2+4+4+10)/4=5\).
-
-**Giải thích vì sao:** Có bốn quan sát, tổng 20. Chia đều tổng cho bốn lần ghi cho 5; không bỏ giá trị 10 chỉ vì cao.
-
-**Nếu chưa làm được:** Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó [thử câu cùng kiến thức trong Core/Luyện tập](luyen-tap.md?item=THPT-G10-B13-C01).
-
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY05">
+<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+<div class="thpt-r4-first-try-answer">
+<p><strong>Đối chiếu kết quả:</strong> \(\bar x=(2+4+4+10)/4=5\).</p>
+<p><strong>Giải thích vì sao:</strong> Có bốn quan sát, tổng 20. Chia đều tổng cho bốn lần ghi cho 5; không bỏ giá trị 10 chỉ vì cao.</p>
+<p><strong>Nếu chưa làm được:</strong> Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó <a href="../luyen-tap/?item=THPT-G10-B13-C01">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
+</div>
 </details>
 
 ### Điểm giữa không bị một giá trị rất lớn kéo đi
@@ -44,14 +43,13 @@ Em hãy đọc tình huống, nhớ lại kiến thức cũ và tự trả lời
 
 **Tự thử trước Core** Cho mẫu chưa xếp \(12,2,9,5\). Tìm trung vị.
 
-<details class="thpt-r4-pedagogical-note" markdown="1" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY06"><summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
-
-**Đối chiếu kết quả:** Sắp thành \(2,5,9,12\). Trung vị \(Q_2=(5+9)/2=7\).
-
-**Giải thích vì sao:** Với bốn giá trị, hai phần tử ở giữa là 5 và 9 sau sắp xếp. Không lấy 2 và 9 theo thứ tự ghi ban đầu.
-
-**Nếu chưa làm được:** Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó [thử câu cùng kiến thức trong Core/Luyện tập](luyen-tap.md?item=THPT-G10-B13-C02).
-
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY06">
+<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+<div class="thpt-r4-first-try-answer">
+<p><strong>Đối chiếu kết quả:</strong> Sắp thành \(2,5,9,12\). Trung vị \(Q_2=(5+9)/2=7\).</p>
+<p><strong>Giải thích vì sao:</strong> Với bốn giá trị, hai phần tử ở giữa là 5 và 9 sau sắp xếp. Không lấy 2 và 9 theo thứ tự ghi ban đầu.</p>
+<p><strong>Nếu chưa làm được:</strong> Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó <a href="../luyen-tap/?item=THPT-G10-B13-C02">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
+</div>
 </details>
 
 ### Chia mẫu dữ liệu thành bốn phần
@@ -68,14 +66,13 @@ Em hãy đọc tình huống, nhớ lại kiến thức cũ và tự trả lời
 
 **Tự thử trước Core** Cho mẫu đã sắp \(1,2,3,4,5,6,7\). Tìm \(Q_1,Q_2,Q_3\) theo quy ước KNTT.
 
-<details class="thpt-r4-pedagogical-note" markdown="1" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY07"><summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
-
-**Đối chiếu kết quả:** \(Q_2=4\), nửa dưới \(1,2,3\) cho \(Q_1=2\), nửa trên \(5,6,7\) cho \(Q_3=6\).
-
-**Giải thích vì sao:** Có bảy phần tử, bỏ chính 4 khi tìm Q1/Q3. Không lấy trung bình các vị trí 3 và 4 hay đưa 4 vào hai nửa.
-
-**Nếu chưa làm được:** Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó [thử câu cùng kiến thức trong Core/Luyện tập](luyen-tap.md?item=THPT-G10-B13-P02).
-
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY07">
+<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+<div class="thpt-r4-first-try-answer">
+<p><strong>Đối chiếu kết quả:</strong> \(Q_2=4\), nửa dưới \(1,2,3\) cho \(Q_1=2\), nửa trên \(5,6,7\) cho \(Q_3=6\).</p>
+<p><strong>Giải thích vì sao:</strong> Có bảy phần tử, bỏ chính 4 khi tìm Q1/Q3. Không lấy trung bình các vị trí 3 và 4 hay đưa 4 vào hai nửa.</p>
+<p><strong>Nếu chưa làm được:</strong> Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó <a href="../luyen-tap/?item=THPT-G10-B13-P02">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
+</div>
 </details>
 
 ### Giá trị lặp lại nhiều nhất mới là mốt
@@ -92,14 +89,13 @@ Em hãy đọc tình huống, nhớ lại kiến thức cũ và tự trả lời
 
 **Tự thử trước Core** Mẫu \(1,2,2,3,3,4\) có những mốt nào? Vì sao không chỉ chọn số 3?
 
-<details class="thpt-r4-pedagogical-note" markdown="1" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY08"><summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
-
-**Đối chiếu kết quả:** Có hai mốt là 2 và 3, mỗi số xuất hiện hai lần.
-
-**Giải thích vì sao:** Cùng tần số cao nhất 2 nên cả hai đều là mốt; 3 lớn hơn 2 không làm nó 'mốt hơn'.
-
-**Nếu chưa làm được:** Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó [thử câu cùng kiến thức trong Core/Luyện tập](luyen-tap.md?item=THPT-G10-B13-P03).
-
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY08">
+<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+<div class="thpt-r4-first-try-answer">
+<p><strong>Đối chiếu kết quả:</strong> Có hai mốt là 2 và 3, mỗi số xuất hiện hai lần.</p>
+<p><strong>Giải thích vì sao:</strong> Cùng tần số cao nhất 2 nên cả hai đều là mốt; 3 lớn hơn 2 không làm nó 'mốt hơn'.</p>
+<p><strong>Nếu chưa làm được:</strong> Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó <a href="../luyen-tap/?item=THPT-G10-B13-P03">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
+</div>
 </details>
 
 ### Vì sao đôi khi trung vị nói đúng hơn trung bình?
@@ -116,14 +112,13 @@ Em hãy đọc tình huống, nhớ lại kiến thức cũ và tự trả lời
 
 **Tự thử trước Core** Dữ liệu \(4,5,6,7,28\) đã sắp. Tính trung bình và trung vị; số nào ít bị giá trị 28 chi phối hơn?
 
-<details class="thpt-r4-pedagogical-note" markdown="1" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY09"><summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
-
-**Đối chiếu kết quả:** Trung bình \((4+5+6+7+28)/5=50/5=10\); trung vị 6; trung vị ít bị 28 chi phối hơn.
-
-**Giải thích vì sao:** Vị trí giữa không đổi nếu 28 còn lớn nhất, còn tổng và trung bình tăng khi cực trị tăng.
-
-**Nếu chưa làm được:** Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó [thử câu cùng kiến thức trong Core/Luyện tập](luyen-tap.md?item=THPT-G10-B13-P06).
-
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY09">
+<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+<div class="thpt-r4-first-try-answer">
+<p><strong>Đối chiếu kết quả:</strong> Trung bình \((4+5+6+7+28)/5=50/5=10\); trung vị 6; trung vị ít bị 28 chi phối hơn.</p>
+<p><strong>Giải thích vì sao:</strong> Vị trí giữa không đổi nếu 28 còn lớn nhất, còn tổng và trung bình tăng khi cực trị tăng.</p>
+<p><strong>Nếu chưa làm được:</strong> Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó <a href="../luyen-tap/?item=THPT-G10-B13-P06">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
+</div>
 </details>
 
 ## B14 — Các số đặc trưng đo độ phân tán
