@@ -12,9 +12,9 @@ const root=path.resolve(__dirname,".."),read=p=>fs.readFileSync(path.join(root,p
 const fnv=s=>{let h=2166136261;for(let i=0;i<s.length;i++)h=Math.imul(h^s.charCodeAt(i),16777619)>>>0;return h.toString(16).padStart(8,"0")};
 const part="## Trước khi học — hiểu ý nghĩa trước khi nhớ công thức",anchor="## 1. Kiến thức SGK";
 const lessons=[
- {n:12,count:4,first:1,bridge:"a86dd77e",suffix:"7e0a79ab"},
- {n:13,count:5,first:5,bridge:"524e983d",suffix:"df2f1086"},
- {n:14,count:5,first:10,bridge:"205f5c9f",suffix:"06b6ea57"}
+ {n:12,count:4,first:1,bridge:"6ef1cfdc",suffix:"7e0a79ab"},
+ {n:13,count:5,first:5,bridge:"9177453c",suffix:"df2f1086"},
+ {n:14,count:5,first:10,bridge:"e90171dc",suffix:"06b6ea57"}
 ];
 const ids=[];
 const labels=["Vì sao cần học?","Em đã biết gì?","Hiểu bản chất trước công thức","Cách đọc hình và hình dung","Vì sao làm theo cách này?","Tự thử trước Core"];
@@ -34,7 +34,7 @@ for(const {n,count,first,bridge:expectedBridge,suffix:expectedSuffix}of lessons)
  assert.equal((pre.match(/\*\*Đối chiếu kết quả:\*\*/g)||[]).length,count);
  assert.equal((pre.match(/\*\*Giải thích vì sao:\*\*/g)||[]).length,count);
  assert.equal((pre.match(/\*\*Nếu chưa làm được:\*\*/g)||[]).length,count);
- assert.equal((pre.match(/\.\.\/luyen-tap\/\?item=THPT-G10-B\d\d-[CP]\d\d/g)||[]).length,count,"Link only to existing canonical Core/Practice");
+ assert.equal((pre.match(/luyen-tap\.md\?item=THPT-G10-B\d\d-[CP]\d\d/g)||[]).length,count,"Link only to existing canonical Core/Practice");
  assert(!/\bR0[1-9]\b|HELP-G10|FIG-G10|PREREQUISITE_CONFIRMED|\bPED[1-6] ·|data-mastery-credit=/.test(pre),"No author/admin artifacts or Mastery exposure "+p);
  matches.forEach((m,i)=>{
   const id="THPT-G10-CHV-TRY"+String(first+i).padStart(2,"0");
