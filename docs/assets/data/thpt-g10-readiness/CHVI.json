@@ -187,6 +187,43 @@
       "answer": "`x=3m`.",
       "solution": "`√(x²+16)=x+2`. Bình phương cho `x²+16=(x+2)²`, tức `4x=12`, nên `x=3`. Thử `5=3+2`, thỏa điều kiện.",
       "rubric": "- Áp dụng Pitago để có √(x²+16)=x+2 (1đ)\n- Nêu x>0 và x+2>0 trước khi bình phương (1đ)\n- Bình phương, giải x²+16=(x+2)² ⇒ x=3 (1đ)\n- Thử lại cạnh huyền 5=3+2 và ghi đơn vị m (1đ)"
+    },
+    {
+      "item_id": "THPT-G10-B16-R06",
+      "stem": "Cho \\(f(x)=-(x-1)^2+9\\), **chỉ xét trên** \\(D=[-2;5]\\).\n\na) Xác định tọa độ đỉnh và trục đối xứng của parabol.\n\nb) Trên những đoạn nào trong D, hàm đồng biến và nghịch biến? Giải thích dựa trên dạng bình phương/khoảng cách tới trục, không chỉ thử hai số.\n\nc) Tính \\(f(-2)\\), \\(f(1)\\), \\(f(5)\\); tìm GTLN, GTNN, **tập giá trị \\(T_D\\)**. Vì sao \\(T_D\\) khác tập giá trị của hàm nếu xét toàn \\(\\mathbb R\\)?",
+      "type": "OPEN_REVIEW",
+      "optional": false,
+      "outcome_id": "B16_OUT_04",
+      "answer": "1. Đỉnh \\(I(1;9)\\), trục \\(x=1\\), parabol mở xuống vì \\(a=-1<0\\).\n2. Trên \\([-2;1]\\), khi x tăng thì khoảng cách \\(|x-1|\\) giảm, nên \\(-(x-1)^2\\) tăng: **đồng biến**. Trên \\([1;5]\\), khi x tăng thì \\(|x-1|\\) tăng: **nghịch biến**. Không được nói hàm cùng một chiều trên toàn D.\n3. \\(f(-2)=-(-3)^2+9=0\\), \\(f(1)=9\\), \\(f(5)=-(4)^2+9=-7\\). Trên D, GTLN \\(=9\\) tại x=1, GTNN \\(=-7\\) tại x=5; **tập giá trị \\(T_D=[-7;9]\\)**. Nếu xét toàn ℝ, tập giá trị là \\((-\\infty;9]\\), khác D đã cho.",
+      "solution": "1. Đỉnh \\(I(1;9)\\), trục \\(x=1\\), parabol mở xuống vì \\(a=-1<0\\).\n2. Trên \\([-2;1]\\), khi x tăng thì khoảng cách \\(|x-1|\\) giảm, nên \\(-(x-1)^2\\) tăng: **đồng biến**. Trên \\([1;5]\\), khi x tăng thì \\(|x-1|\\) tăng: **nghịch biến**. Không được nói hàm cùng một chiều trên toàn D.\n3. \\(f(-2)=-(-3)^2+9=0\\), \\(f(1)=9\\), \\(f(5)=-(4)^2+9=-7\\). Trên D, GTLN \\(=9\\) tại x=1, GTNN \\(=-7\\) tại x=5; **tập giá trị \\(T_D=[-7;9]\\)**. Nếu xét toàn ℝ, tập giá trị là \\((-\\infty;9]\\), khác D đã cho.\n4. Kiểm chứng bằng bất đẳng thức: vì \\(x\\in[-2;5]\\) nên \\(0\\le(x-1)^2\\le16\\). Do đó \\(-7\\le f(x)\\le9\\); hàm liên tục trên D nên nhận tất cả các giá trị trong đoạn này.\n\n**Hỗ trợ tự khắc phục sau Final Submit:**\n1. **Nhận diện:** Em có kết luận tăng/giảm cả D, quên đầu x=5 hoặc dùng tập giá trị toàn ℝ?\n2. **Tự chẩn đoán:** Khoanh lỗi đầu tiên trong ba bước: đọc đỉnh x=1, chia miền bởi đỉnh, so hai biên.\n3. **Kiến thức gốc:** Parabol a<0 đi lên bên trái đỉnh, đi xuống bên phải; tập giá trị phải tính trên miền của **đề**, không trên toàn ℝ.\n4. **Tự sửa:** Đánh dấu [-2;1], [1;5], tính lại f(-2), f(1), f(5), ghi khoảng biến thiên rồi tự rút tập giá trị.\n5. **Luyện lại:** Xem SGK B16 §2, R03 B16_OUT_04, FIRST_TRY THPT-G10-CHVI-TRY09 và HELP-G10-CHVI-TRY09. Chỉ luyện tập tự đối chiếu, không tính Mastery từ câu đã xem đáp án.",
+      "rubric": "**Rubric 8 điểm (chỉ sau Final Submit):** 1đ đỉnh/trục/chiều mở; 2đ hai đoạn tăng/giảm đúng; 2đ giải thích hướng biến thiên chứ không chỉ nêu đáp án; 1đ cả ba giá trị -2,1,5; 2đ GTLN/GTNN, tập giá trị trên D và phân biệt với toàn ℝ."
+    },
+    {
+      "item_id": "THPT-G10-B17-R05",
+      "stem": "Xét trên \\(\\mathbb R\\) ba tam thức:\n\\[\nP(x)=2x^2+4x+5,\\qquad Q(x)=-(x+1)^2,\\qquad R(x)=-2(x-1)(x-4).\n\\]\n\na) Với mỗi tam thức, tính Δ, nêu dấu a và phân loại Δ<0, =0 hay >0.\n\nb) Với mỗi tam thức, xác định **đầy đủ** khoảng có giá trị dương, âm và các điểm bằng 0; giải thích qua vị trí parabol so với Ox.\n\nc) Giải thích 2–3 câu vì sao dấu của Δ **không đủ** nếu chưa xét dấu a.",
+      "type": "OPEN_REVIEW",
+      "optional": false,
+      "outcome_id": "B17_OUT_01",
+      "answer": "- **P:** a=2>0, b=4, c=5, \\(\\Delta=4^2-4\\cdot2\\cdot5=-24<0\\). Không có nghiệm thực, **P(x)>0 mọi x∈ℝ**; không có điểm bằng 0 hoặc miền âm. Cách kiểm: \\(P(x)=2(x+1)^2+3>0\\).\n- **Q:** \\(Q=-x^2-2x-1\\), a=-1<0, \\(\\Delta=(-2)^2-4(-1)(-1)=0\\); nghiệm kép **x=-1**. Q=0 tại -1; **Q<0** trên \\((-\\infty;-1)\\cup(-1;+\\infty)\\); không có miền dương. Đồ thị chạm Ox chứ không đổi dấu.\n- **R:** \\(R=-2x^2+10x-8\\), a=-2<0, \\(\\Delta=100-4(-2)(-8)=36>0\\). Hai nghiệm **1, 4**. R<0 trên \\((-\\infty;1)\\cup(4;+\\infty)\\); R>0 trên \\((1;4)\\); R=0 tại x=1,4.",
+      "solution": "- **P:** a=2>0, b=4, c=5, \\(\\Delta=4^2-4\\cdot2\\cdot5=-24<0\\). Không có nghiệm thực, **P(x)>0 mọi x∈ℝ**; không có điểm bằng 0 hoặc miền âm. Cách kiểm: \\(P(x)=2(x+1)^2+3>0\\).\n- **Q:** \\(Q=-x^2-2x-1\\), a=-1<0, \\(\\Delta=(-2)^2-4(-1)(-1)=0\\); nghiệm kép **x=-1**. Q=0 tại -1; **Q<0** trên \\((-\\infty;-1)\\cup(-1;+\\infty)\\); không có miền dương. Đồ thị chạm Ox chứ không đổi dấu.\n- **R:** \\(R=-2x^2+10x-8\\), a=-2<0, \\(\\Delta=100-4(-2)(-8)=36>0\\). Hai nghiệm **1, 4**. R<0 trên \\((-\\infty;1)\\cup(4;+\\infty)\\); R>0 trên \\((1;4)\\); R=0 tại x=1,4.\n- **Tổng kết:** Δ quyết định số giao/chạm Ox; a quyết định hướng mở và dấu ở các khoảng ngoài nghiệm. Muốn xét dấu đúng phải dùng **cả a và Δ**, đồng thời điền 0 tại nghiệm.\n\n**Hỗ trợ tự khắc phục sau Final Submit:**\n1. **Nhận diện:** Em có cho Q đổi dấu qua -1 hoặc cho R dương ở hai khoảng ngoài?\n2. **Tự chẩn đoán:** Với P/Q/R, viết rõ a và Δ; khoanh bước đầu tiên em suy dấu nhưng không giải thích được.\n3. **Kiến thức gốc:** Δ<0 giữ dấu a; Δ=0 giữ dấu a trừ nghiệm kép bằng 0; Δ>0 cùng dấu a ngoài hai nghiệm, trái dấu a ở giữa.\n4. **Tự sửa:** Vẽ ba phác họa parabol (mở lên không cắt, mở xuống chạm, mở xuống cắt hai điểm), điền 0 tại nghiệm rồi xét khoảng.\n5. **Luyện lại:** Trở về SGK B17 §2, R03 B17_OUT_01, FIRST_TRY THPT-G10-CHVI-TRY11 và HELP-G10-CHVI-TRY11; có thể làm Core THPT-G10-B17-C01/C02. Không biến bài đã xem lời giải thành điểm Mastery.",
+      "rubric": "**Rubric 10 điểm (chỉ sau Final Submit):** 3đ P (a, Δ=-24, dấu mọi x); 3đ Q (a âm, Δ=0, nghiệm kép và không đổi dấu); 3đ R (a âm, Δ=36, nghiệm/ba khoảng dấu); 1đ giải thích đúng vai trò kết hợp dấu a với Δ."
     }
-  ]
+  ],
+  "targeted_delta": {
+    "scope": "G10_CHVI_R04_TWO_PUBLIC_WRITTEN_SELFCHECK",
+    "class": "DELTA_C_ACADEMIC_MATERIAL",
+    "source_blob": "ef0b82555bb9f8028c49d948d2276b6ea0f16956",
+    "review_receipt_blob": "43b2da942b9d8d3ec5a32647e3ed1a217125a255",
+    "full_chapter_source_blob": "3f3d32c3bfd13634dad033970e944a3623cb5f14",
+    "original_public_chvi_blob": "0760782256a2d8d91c398814e62d013cf6083eb7",
+    "item_ids": [
+      "THPT-G10-B16-R06",
+      "THPT-G10-B17-R05"
+    ],
+    "type": "OPEN_REVIEW",
+    "release_boundary": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "reveal": "ONLY_AFTER_FINAL_SUBMIT",
+    "protected_rd1_new": 0,
+    "mastery_credit": false
+  }
 }

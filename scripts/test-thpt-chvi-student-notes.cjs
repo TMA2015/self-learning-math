@@ -20,10 +20,10 @@ for(const [lesson,anchor] of Object.entries(pedagogical)){
   assert(!banned.test(article),"B"+lesson+" published student article leaks review metadata");
   assert(!article.includes('class="admonition warning"'),"B"+lesson+" student page still has large admin warning");
   if(lesson==="17"){
-   const matches=[...article.matchAll(/<details class="thpt-r4-pedagogical-note"([^>]*)>/g)];
-   assert.equal(matches.length,1,"B17 compact extension note missing");
+   const matches=[...article.matchAll(/<details class="thpt-r4-pedagogical-note"([^>]*)>/g)].filter(m=>!m[1].includes("data-ped-first-try")&&!m[1].includes("data-thpt-help-id"));
+   assert.equal(matches.length,1,"B17 original S1 fixed-a extension note must remain exactly once beside 5 new First Tries and 5 new D6");
    assert(!/\bopen\b/.test(matches[0][1]),"B17 note must begin collapsed");
-   const noteStart=article.indexOf('<details class="thpt-r4-pedagogical-note"');
+   const noteStart=article.indexOf(matches[0][0]);
    const noteEnd=article.indexOf("</details>",noteStart);
    assert(noteStart>=0&&noteEnd>noteStart,"B17 approved R02 note missing");
    const note=article.slice(noteStart,noteEnd);

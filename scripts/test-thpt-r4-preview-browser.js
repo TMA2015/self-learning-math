@@ -616,7 +616,7 @@ async function ready(page,path){
   const chapterReady=page.locator('[data-g10-chapter-selfcheck="CHVI"]');
   assert.equal(await chapterReady.count(),1,"Missing reviewed G10 chapter VI self-check route");
   await chapterReady.locator(".g10sc-progress").waitFor();
-  assert((await chapterReady.locator(".g10sc-progress").innerText()).includes("1 / 18"),"ChVI must show original reviewed 18 candidates");
+  assert((await chapterReady.locator(".g10sc-progress").innerText()).includes("1 / 20"),"ChVI must show original 18 source-locked candidates plus 2 independently reviewed R04 public Written");
   assert(!((await chapterReady.innerText()).includes("Đáp án:")),"ChVI pre-submit answer leak");
   await chapterReady.locator(".g10sc-textarea").fill("Tự giải trước khi xem đáp án");
   await chapterReady.locator(".g10sc-controls button").filter({hasText:"Câu tiếp"}).click();
@@ -720,8 +720,8 @@ async function ready(page,path){
   const chapterActions=page.locator(".thpt-r4-lesson-tabs");
   assert.equal(await chapterActions.locator('a[href="luyen-tap/"]').count(),1);
   assert.equal(await chapterActions.locator('a[href="tu-kiem-tra-chuong/"]').count(),1);
-  // Full-page B17/B18 rendering QA: do not sample only the screenshots.
-  for(const [lesson,inlineCount,displayCount] of [["17",130,4],["18",59,8]]){
+  // Full-page B17/B18 rendering QA: exact 130/59 original +66/48 independently reviewed PED math spans, plus original 4/8 displays; no raw TeX.
+  for(const [lesson,inlineCount,displayCount] of [["17",196,4],["18",107,8]]){
     await ready(page,"sgk/chuong-vi/bai-"+lesson+"/");
     const article=page.locator("article.md-content__inner");
     assert.equal(await article.locator("span.arithmatex").count(),inlineCount,
@@ -763,7 +763,7 @@ async function ready(page,path){
   await ready(page,"sgk/chuong-vi/bai-16/");
   assert(!(await page.locator("article").textContent()).includes("ACADEMIC_CLEARANCE"),"B16 shows internal QA approval");
   await ready(page,"sgk/chuong-vi/bai-17/");
-  const scope=page.locator("details.thpt-r4-pedagogical-note");
+  const scope=page.locator('details.thpt-r4-pedagogical-note:has(> summary:text-is("Lưu ý về phạm vi Core và mở rộng của bài toán tham số"))');
   assert.equal(await scope.count(),1,"B17 should offer one compact optional extension note");
   assert(!(await scope.evaluate(el=>el.open)),"B17 scope note must begin collapsed");
   await scope.locator("summary").click();
