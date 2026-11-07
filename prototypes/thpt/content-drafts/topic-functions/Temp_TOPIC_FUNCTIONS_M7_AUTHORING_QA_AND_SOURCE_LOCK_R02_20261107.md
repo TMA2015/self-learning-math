@@ -12,7 +12,7 @@
 | AUTHORING file | Git blob SHA | Actual contents |
 |---|---|---|
 | Temp_TOPIC_FUNCTIONS_M7_DERIVATIVE_TO_GRAPH_OPTIMIZATION_KNOWLEDGE_R01_20261107.md | \`944673fffe5dad9444c994e7719e5c054570bca2\` | 18,507 characters, 7 actual details/answer reveal pairs; 9 worked explanation examples, 6 original D5 FIG references; WHY/rule limits and recovery, Q01–Q14 candidate |
-| Temp_TOPIC_FUNCTIONS_M7_S1_CANONICAL_REUSE_DEDUP_LEDGER_R01_20261107.md | \`583ba9b80688553e890319aa0a677aa91a6fa982\` | 17,774 characters, 66 per-lesson existing source-candidate ID rows, 12 END demos explicitly excluded, 6 shared FIG/SHA, 32 actual HELP ID headings, 2 differentiated new public candidates |
+| Temp_TOPIC_FUNCTIONS_M7_S1_CANONICAL_REUSE_DEDUP_LEDGER_R01_20261107.md | \`fa03e633f281929cda526c451f8a17376b0043f9\` | 18,571 characters, 66 per-lesson existing source-candidate ID rows, 12 END RD0 demos excluded from protected readiness, 6 shared FIG/SHA, **36 HELP ID headings** (32 lesson + 4 END), 2 differentiated new public candidates |
 | Temp_TOPIC_FUNCTIONS_S1_DIRECT_PDF_VISUAL_RECEIPT_R01_20261107.md | \`001a9dd34cf8af83e787fd28d760431fe63e1f24\` | Corrected G12 Tập 1 source pagination: PDF 1-based = printed+2; previous printed+3 statement was wrong |
 
 **Original G12 Chapter I author source:** \`prototypes/thpt/content-drafts/G12_SGK_CHI_B01_B05_FULL_CHAPTER_PUBLIC_CANONICAL_R00_SOURCE_CANDIDATE.md\`, blob \`f0862dcdab21dec136e43969f45c42638e7c7574\`. Its first lines **explicitly mark Academic/PED INDEPENDENT_PENDING**, so *this audit does not certify G12 source item IDs as reviewed or deployable*. Each unique heading is a source candidate, not a promoted item record.
@@ -46,13 +46,15 @@ A deterministic local SymPy script \`_topic_m7_review/m7_math_preflight.py\` wit
 
 ## 4. Structural and canonical source preflight
 
+**R03 correction of earlier QA source-count conclusion:** Prior regex filtered HELP to B01–B05 and omitted four CHI-END HELP IDs. Direct source readback shows 36/36, so this metadata discrepancy is closed; the separately pending G12 Academic/PED independent verdict remains unaffected. R03 source evidence: `Temp_TOPIC_FUNCTIONS_CANONICAL_METADATA_EXACT_ID_RECONCILIATION_R03_20261107.md`.
+
 | Check run | Observed | Boundary |
 |---|---|---|
 | M7 Knowledge source HTML | 7 \`<details>\` opening + 7 \`</details>\` closing | Balanced author Markdown, not browser AP4 PASS |
 | M7 Knowledge math | 111 \`\\(\` opens/111 \`\\)\` closes; 3 \`\\[\` opens/3 \`\\]\` closes | Balanced delimiters, not browser MathJax AP2 |
 | M7 source Git readback | 2 source blobs + corrected S1 blob verified, 0 merge markers/private RD1 material | Author preflight |
 | G12 R00 chapter source headings | **78** exact item headings = **66 B01–05** (20 Core, 28 Practice, 8 Application, 10 Written) + **12 END RD0** demos | Candidate IDs, NOT independent PASS. 12 end demos not held-out official RD1 |
-| G12 HELP source headings | **32** exact unique \`HELP-G12-BXX-NN\` headings, despite source summary saying **36** | \`HELP_COUNT_METADATA_HOLD\`, do not invent four records |
+| G12 HELP source headings | **36** exact original HELP headings: 32 \`HELP-G12-BXX-NN\` plus 4 \`HELP-G12-CHI-END-NN\` | **R03 COUNT_CLOSED**, unchanged source, END four only public RD0 demo remediation |
 | D5 existing assets | Six source SVGs, exact file Git blobs in M7 ledger | AUTHORING may guide reading; browser AP3 pending |
 | Two differentiated public D3 cases | One two-branch positive-derivative/global-monotonicity counterexample; one continuous vs integer-constrained box optimization | \`NEW_CANDIDATE_HOLD\` after de-dup, **0 canonical new items** |
 | Full Topic readiness | Nothing official generated in public, all source examples are formative | \`TOPIC_READINESS_INDEPENDENCE_HOLD\` |
@@ -74,7 +76,7 @@ A deterministic local SymPy script \`_topic_m7_review/m7_math_preflight.py\` wit
 | M7-O09 distinguish discrete and continuous optima | M7.5, public candidate integer box optimization | Q05/Q15 candidate novelty and answer scope |
 | M7-O10 explain meaning of derivative rate in units | M7.6, EX-M7-09, TRY-T07, cost/marginal | Q01 B05 scope and dimensions |
 
-**Full M7 PASS blockers:** R01 concepts + candidate D3 only; full original page-by-page review, canonical item register/HELP 36-versus-32 reconciliation, new item duplication review, full independent NotebookLM Academic+PED on exact source blob, figures and proof/conditions. Whole Topic G10–12 also needs M1–M3 harmonization, Q01–Q18/outcomes and protected independently held-out Topic Readiness.
+**Full M7 PASS blockers:** R01 concepts + candidate D3 only; full original page-by-page review, canonical item register and new candidate duplication review (**HELP 36 ID count now reconciled R03**), full independent NotebookLM Academic+PED on exact source blob, figures and proof/conditions. Whole Topic G10–12 also needs M1–M3 harmonization, Q01–Q18/outcomes and protected independently held-out Topic Readiness.
 
 ## 6. AUTHORING next gate and safety
 
@@ -84,4 +86,4 @@ A deterministic local SymPy script \`_topic_m7_review/m7_math_preflight.py\` wit
 4. Keep Q16: RD1 encrypted/protected outside public GitHub, no hints/AI Tutor/keys/correctness until Final Submit, no Mastery from formative/self-comparison. Do not create V2 handoff/ready manifest/REGISTER until Q01–Q18/A1–A7 full and independent Academic/PED PASS.
 5. AUTHORING stops at approved handoff; website/Golden/Firebase/merge/deploy remain untouched and solely RELEASE responsibility.
 
-**CHECKPOINT:** TOPIC_M7_SOURCE_R01_AUTHORING_QA_SCOPED_PASS; S1_G12_PAGINATION_CORRECTED; 64/64_SELECTED_MATH_PASS; G12_SOURCE_78_CANDIDATES_NOT_INDEPENDENTLY_PASS; HELP_COUNT_36_VS_32_HOLD; NEW_CANONICAL_PROMOTED=0; TOPIC_FULL_CONTENT_READY=NO; RELEASE=NO.
+**CHECKPOINT:** TOPIC_M7_SOURCE_R01_AUTHORING_QA_SCOPED_PASS; S1_G12_PAGINATION_CORRECTED; 64/64_SELECTED_MATH_PASS; G12_SOURCE_78_CANDIDATES_NOT_INDEPENDENTLY_PASS; HELP_COUNT_36_VERIFIED_32_LESSON_PLUS_4_END_R03; NEW_CANONICAL_PROMOTED=0; TOPIC_FULL_CONTENT_READY=NO; RELEASE=NO.
