@@ -3,7 +3,7 @@
 **PACKET_ID:** THPT-TOPIC-FUNCTIONS-M1-M3-VERTICAL-BRIDGE-R01-20261107  
 **ONE STANDARD:** SLM-THPT-QUALITY-ONE v1.2.0 Q01–Q18; Q09–Q14 flexible, not a rigid template.  
 **LANE:** AUTHORING on Draft PR #782; no website/Golden/Firestore/RELEASE/merge/deploy.  
-**SOURCE NEW DELTA C:** `Temp_TOPIC_FUNCTIONS_M1_M3_VERTICAL_FOUNDATIONS_PED_DELTA_R01_20261107.md`, Git blob `6d3ec22315941805edf937945bed3eef04a7a417`, exact GitHub readback.  
+**SOURCE NEW DELTA C:** `Temp_TOPIC_FUNCTIONS_M1_M3_VERTICAL_FOUNDATIONS_PED_DELTA_R01_20261107.md`, Git blob `57e55bda82b30eea09f8f98c34bd330b33f4e973`, exact GitHub readback.  
 **VERDICT:** AUTHORING_PREFLIGHT_SCOPED_PASS / ACADEMIC_PED_REVIEW_NEW_DELTA=PENDING / FULL_TOPIC_CONTENT_READY=NO.
 **SEPARATION:** author preflight is NOT NotebookLM, not approval of new stems or official readiness.
 
@@ -28,7 +28,7 @@
 
 | Check | Observed evidence | Conclusion |
 |---|---|---|
-| Structural source readback | Git blob `6d3ec22315941805edf937945bed3eef04a7a417`, ~15.8k chars, Markdown headings | SOURCE_LOCK_PASS |
+| Structural source readback | Git blob `57e55bda82b30eea09f8f98c34bd330b33f4e973`, 15,707 chars, Markdown headings | SOURCE_LOCK_PASS |
 | Self-reveal First Try | Exactly **7 opening + 7 closing** `<details>` tags | MARKUP_BALANCE_PASS, not AP4 rendered |
 | Math delimiters | **95 `\\(` opens / 95 `\\)` closes**, **2 `\\[` opens / 2 `\\]` closes** | SOURCE_BALANCE_PASS, not browser MathJax/AP2 |
 | Worked pedagogical explanation | **10 EX source labels**, M1–M3 concept-first, 7 First Tries with local self-reveal, D6 8 misconception routes | Presence and coherent flows, **not** independent Q03–Q14 depth verdict |
