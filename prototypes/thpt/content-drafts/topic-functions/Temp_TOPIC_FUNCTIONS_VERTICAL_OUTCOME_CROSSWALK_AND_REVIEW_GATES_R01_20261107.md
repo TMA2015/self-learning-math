@@ -45,6 +45,12 @@ VERDICT: OUTCOME_CLASSIFICATION_PREFLIGHT_ONLY; ACADEMIC_PED_PENDING; CONTENT_RE
 - **HOLD_M6_OUTCOME_COUNT_9_VS_10:** Trước khi reviewer chấm, xác nhận outcome “lý do chọn phương pháp/giới hạn mô hình” có được chứng minh đủ bằng M6-O09 hay thực sự là outcome O10 mới với đánh giá độc lập. Không tự chọn 9 hoặc 10 như verdict học thuật chỉ để đẹp thống kê.
 - Không lấy ID `TOP-FUNC-M6-O10` từ nguồn trung gian không tồn tại trên Draft làm một canonical ID mới. Source-of-truth là bản Knowledge/ledger R01 đã readback, reviewer quyết định theo nội dung/điều kiện.
 
+## 3a. Uploaded owner NotebookLM verdicts — source lineage boundary (R04)
+
+- Owner's newly attached M1–M3 reviewer report says PASS for a source having **10 new `THPT-TOPIC-FUNC-TRY01..10` and 10 HELP IDs** and historical blob `e1f9a2...` not found in this repo. Its `O05`/`O06` meaning conflicts with exact G10 source outcome mapping; current #782 bridge has **seven** local First Tries and Git blob `fcecb2...`. **Never stamp PASS on this Draft** without exact source and outcome mapping. `SOURCE_SNAPSHOT_MISMATCH_HOLD`.
+- Owner's targeted Toán 12 W01/W02 SGK report has SHA256 `0da9a0fecbefb88494afbd674936a2835eac535096ce154d570c420af241da25`, already preserved verbatim Git blob `9f0466b7...` in separate Draft #780, issue #767 closed, current main public bank has populated answer/solution; this is not M7 Topic review. Original G12 SGK Chapter I R00 receipt `8fef1c7...` is independently PASS; its embedded pre-review `INDEPENDENT_PENDING` does not override later receipt.
+- Full R04 evidence: `Temp_TOPIC_FUNCTIONS_NLM_UPLOAD_G10_G12_SOURCE_RECEIPT_TRIAGE_R04_20261107.md`; Q18 source/receipt SHA must match and no full Topic PASS is implied.
+
 ## 4. Map Academic/PED and no-clone review to actual sources
 
 | Scope | Candidate source SHA locked | Existing bank evidence | Review scope / blocker |
@@ -53,7 +59,7 @@ VERDICT: OUTCOME_CLASSIFICATION_PREFLIGHT_ONLY; ACADEMIC_PED_PENDING; CONTENT_RE
 | M4 | `a3db248040abe2109410614f2f11f5ef84aff422` | G11 B03/B20 20 public IDs | New content; source S1 direct, duplicates/FIG/WRITTEN need review |
 | M5 | `f1fe1997242714ddadf3e94b981df904f4e12787` | G11 B16/B17 20 public IDs | New content; independent Academic/PED |
 | M6 | `f35e7fcd99b853bb5f9392c6ded25c2e20aa012f` | G11 ChIX **62 public IDs** (60 B31–B33 plus 2 CHIX integrated), 9 Written, 11 HELP, 5 FIG | New pedagogical source; **62 item metadata count verified and closed R03**, separate M6 9-vs-10 outcome candidate HOLD remains |
-| M7 | `944673fffe5dad9444c994e7719e5c054570bca2` | G12 Chapter I author source `INDEPENDENT_PENDING` 66 item headings + 12 END RD0 demo | New content; **36 HELP ID source count verified R03 =32 lesson+4 END RD0**, G12 independent reviewer receipt still unverified |
+| M7 | `944673fffe5dad9444c994e7719e5c054570bca2` | **Original G12 SGK ChI R00** 78 public IDs, 36 HELP has owner independently reviewed Academic/PED PASS receipt Git `8fef1c7dbd9b404881ff40cec8147c9ae89ef473`, on old immutable source `f0862dcdab21dec136e43969f45c42638e7c7574` | **New M7 Topic pedagogy** and placement/new public candidates still independently PENDING; SGK PASS != Topic PASS |
 
 **Q16:** 12 historical G10 Topic private readiness candidates reviewed in 2026-10-31 summary do **NOT** provide independently held-out readiness for all G10–12. Protected source stays outside public Git; no hints/key/correctness/Tutor until Final Submit; no Mastery from public Practice or self-assessment.
 **Q18:** no new NotebookLM Academic/PED PASS has been issued for M1–M7 new Delta C sources. Use exactly five Permanent THPT v2.1 + S1, exact source+receipt SHA, P0/P1/P2 and minimal Delta. Do not review historical unchanged G10 in full again.
@@ -67,4 +73,4 @@ VERDICT: OUTCOME_CLASSIFICATION_PREFLIGHT_ONLY; ACADEMIC_PED_PENDING; CONTENT_RE
 4. Prepare downloadable real `Temp_*.md` files + 3–6 sentence prompt; if ≥3 sources use a single `Temp_*.zip` containing only `Temp_` files; remind user to unzip. Exact five THPT Permanent v2.1 and S1.
 5. After external Academic+PED PASS (and Q01–Q18/A1–A7, protected RD1), create **one** V2 handoff, one ready manifest, REGISTER synchronized. AUTHORING then stops; RELEASE alone handles integration/merge/deploy with owner authorization.
 
-**CHECKPOINT:** R00_PLANNING_21_NE_CANONICAL; G10_10_OLD_PASS; M4_10 + M5_9 + M6_9_CANDIDATE + M7_10_CANDIDATE; M6_OUTCOME_CANDIDATE_COUNT_HOLD; G11_D3_62_VERIFIED; G12_HELP_36_VERIFIED; G10_SBT_DIRECT_R03_COMPLETE; WHOLE_TOPIC_READINESS_HOLD; ALL_NEW_DELTA_C_REVIEW_PENDING; FULL_CONTENT_READY=NO.
+**CHECKPOINT:** R00_PLANNING_21_NOT_CANONICAL; G10_10_OLD_PASS_IMMUTABLE; G12_ORIGINAL_SGK_CHI_PASS_RECEIPT_8fef1c7d_CONFIRMED; M4_10 + M5_9 + M6_9_CANDIDATE + M7_10_CANDIDATE still NEW_DELTA_C_REVIEW_PENDING; M6_OUTCOME_CANDIDATE_COUNT_HOLD; G11_D3_62_VERIFIED; G12_HELP_36_VERIFIED; G10_SBT_DIRECT_R03_COMPLETE; G10_UPLOADED_EXTERNAL_PASS_DIFFERENT_SNAPSHOT_MISMATCH_HOLD; WHOLE_TOPIC_READINESS_HOLD; FULL_CONTENT_READY=NO.
