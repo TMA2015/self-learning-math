@@ -29,6 +29,16 @@ RELEASE_AUTHORIZATION: NO
 PREVIOUS_HISTORIC_AUTHORING_PACKET: G10-SGK-CHIV-FULL-R03-CANDIDATE-20261105 (separate Draft #750, left unchanged)
 D5_DESIGN_SOURCE_BLOB: a2ee2b226780b3aeff379ccb7d5eae0bde0156b5
 ORIGINAL_REVIEW_PDF_SHA256: 99a58a3b06df2e762bc0552f3ea6620aaa42f2ed3dec05bd0b9974f080dabdaf
+G10_CHIV_TWO_ACTIVE_FIGURE_PDF: Temp_D5_FIGURES_PDF_R01_CORRECTED_20261106.pdf
+G10_CHIV_TWO_ACTIVE_FIGURE_PDF_SHA256: d4804fd7b037afee5560097c1844139de9f8911dde95e10fc6ebbd84d05a60e5
+G10_CHIV_TWO_ACTIVE_FIGURE_IDS: FIG-G10-CHIV-FORCE-TR01; FIG-G10-CHIV-RIVER-TR01
+G10_CHIV_Q07_PED4_R01_VERDICT: ACADEMIC_PASS_AND_PED_PASS
+G10_CHIV_Q07_PED4_R01_REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/transfer-written-r00-20261106/Temp_G10_CHIV_D5_R01_TWO_FIGURES_OWNER_NOTEBOOKLM_PASS_20261107.md
+G10_CHIV_Q07_PED4_R01_REVIEW_RECEIPT_BLOB: fa7b89f93b7632bec18910c4dad3fa9fe698e7b8
+G10_CHIV_V2_HANDOFF_BLOB_AFTER_D5_R01_ACCEPTANCE: e4d613efd05a2461ef38c5aa7e88f9a82387343d
+ORIGINAL_R00_PDF_CHIV_FORCE_RIVER_VISUAL_STATUS: HISTORICAL_SUPERSEDED_DO_NOT_RENDER
+
+**D5 R01 corrected-two-figure academic handoff (07/11):** Original five-page R00 review PDF contained *incorrectly oriented diagonal arrowheads* on the ChIV force/river drawings only; the underlying FULL academic Markdown and canonical question bank did not change. NotebookLM separately audited the corrected **R01 PDF pp1–2** and returned **Academic/PED PASS** for both `FIG-G10-CHIV-FORCE-TR01` and `FIG-G10-CHIV-RIVER-TR01` (P0=P1=P2=0, no further mathematical revisions). Use only `Temp_D5_FIGURES_PDF_R01_CORRECTED_20261106.pdf` SHA256 `d4804fd7b037afee5560097c1844139de9f8911dde95e10fc6ebbd84d05a60e5` as the **ChIV active visual reference** (owner-held, not Git-binary-committed). Reviewer receipt blob `fa7b89f93b7632bec18910c4dad3fa9fe698e7b8`. Old R00 PDF hash and its other three unaffected figures remain historical sources. No clone, no fresh ID, no NotebookLM metadata correction, no release permission; RELEASE must perform actual responsive visual Q07/AP3 check against R01.
 
 **Exact AUTHORING provenance:** 5 SGK lessons and 24 historical RD0 outcomes remain content-identical with historical reviewer PASS. 90 original public canonical items + 2 unscored First Try + 2 independent Written = **94 public question IDs**; 2 newly reviewed D2 teaching-example resource IDs are separately mapped, not counted as extra independent scored questions. Original 238 D4 across G10/G11/G12 immutable. The independent owner NotebookLM R00 review covers the additive 5 transfer problem families with Academic/PED PASS, P0=P1=P2=0; author-composed receipt is not a second reviewer. The review's Markdown size narrative differs from delivered ZIP, logged Q18 and reconciled by matching full 15 item/solution/outcome descriptions; no fictional raw Studio hash is asserted. All five D5 figure designs are source-locked in a Git spec, PDF original SHA recorded, but actual website SVG/MathJax/AP3 must be verified by RELEASE.
 
