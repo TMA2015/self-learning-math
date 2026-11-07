@@ -6,6 +6,155 @@
 <nav class="thpt-r4-lesson-tabs" aria-label="Điều hướng Chương VIII"><a href="../">Tổng quan Chương VIII</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra chương · chưa kích hoạt</a></nav>
 </div>
 
+<!-- G10_CHVIII_FULL_R02_ALL_BEGIN -->
+## Tự khám phá trước công thức
+
+<!-- G10_CHVIII_R02_BEGIN:THPT-G10-CHVIII-TRY09 -->
+
+<span id="thpt-g10-chviii-try09" data-thpt-first-try-id="THPT-G10-CHVIII-TRY09" data-outcome-id="G10-B25-NEWTON_EXPANSION"></span>
+
+### Từ năm nhân tử đến hệ số Newton
+
+**Vì sao cần học:** Khai triển (a+b)⁵ bằng nhân từng cặp dài; hãy hiểu vì sao hệ số của a³b² xuất hiện nhiều lần.
+
+**Tiền đề:** Ôn C₅² là số cách chọn 2 vị trí khác nhau trong 5 vị trí; từ mỗi nhân tử (a+b), lấy a hoặc b.
+
+**Hiểu bản chất trước công thức:** Đơn thức a³b² xuất hiện khi chọn b từ đúng hai trong năm nhân tử; ba nhân tử còn lại chọn a. Có C₅²=10 cách chọn vị trí b.
+
+**Hướng dẫn đọc hình/sơ đồ:** Vẽ năm ô (a+b), đánh dấu hai ô lấy b, ba ô lấy a; đổi cặp ô đánh dấu cho các tích cùng a³b².
+
+**Lý do chọn phương pháp, điều kiện và giới hạn:** Với SGK Core n=4 hoặc n=5, số mũ của a và b cộng bằng n. Hệ số a^(n−k)b^k bằng C(n,k); không dùng n lớn làm nội dung bắt buộc.
+
+**Tự thử trước Core:** Trong khai triển (a+b)⁵, hệ số của a³b² là bao nhiêu? Giải thích bằng cách chọn nhân tử.
+
+??? question "Tự mở đáp án sau khi đã tự làm"
+    **Đáp án:** 10.
+
+    **Lập luận:** Chọn hai trong năm nhân tử cho b theo C₅²=5!/(2!3!)=10 cách; ba nhân tử còn lại cho a.
+
+    **Nếu chưa đúng:** Em có thể mở [hướng dẫn khắc phục 5 bước](#help-g10-chviii-try09), rồi [luyện lại câu tương ứng](../luyen-tap/?item=THPT-G10-B25-C01). Câu đã xem lời giải chỉ dùng để luyện tập, không tính như bài tự kiểm tra độc lập.
+
+<span id="help-g10-chviii-try09" data-thpt-help-id="HELP-G10-CHVIII-TRY09"></span>
+
+??? tip "Nếu chưa làm được — khắc phục 5 bước"
+    1. **Nhận diện lỗi:** Nếu đáp 5, em nhầm số mũ với số cách chọn; nếu 20, em đếm thứ tự hai vị trí b không cần thiết.
+    2. **Quay lại bản chất:** Đơn thức a³b² xuất hiện khi chọn b từ đúng hai trong năm nhân tử; ba nhân tử còn lại chọn a. Có C₅²=10 cách chọn vị trí b.
+    3. **Tự làm lại:** Vẽ năm vị trí, đánh dấu hai vị trí b hoặc tính C₅².
+    4. **Đối chiếu tự nguyện:** Tự mở đáp án sau khi làm, kiểm tra và giải thích lại từng điều kiện; việc đối chiếu này không ghi điểm thành thạo.
+    5. **Luyện tiếp:** [Làm câu đã học cùng kỹ năng](../luyen-tap/?item=THPT-G10-B25-C01) và tự giải thích vì sao chọn phương pháp; nếu đã xem lời giải thì chỉ xem đây là luyện tập, không phải đánh giá độc lập.
+
+<!-- G10_CHVIII_R02_END:THPT-G10-CHVIII-TRY09 -->
+
+<!-- G10_CHVIII_R02_BEGIN:THPT-G10-CHVIII-TRY10 -->
+
+<span id="thpt-g10-chviii-try10" data-thpt-first-try-id="THPT-G10-CHVIII-TRY10" data-outcome-id="G10-B25-COEFFICIENT_SIGN"></span>
+
+### Dấu hệ số phụ thuộc hạng tử âm được chọn bao nhiêu lần
+
+**Vì sao cần học:** Trong (2−x)⁴, có số hạng dương và âm; nhầm dấu có thể làm sai cả hệ số dù tổ hợp tính đúng.
+
+**Tiền đề:** Ôn (−x)^k=(−1)^k x^k, dấu âm mũ lẻ giữ dấu trừ; chọn k nhân tử (−x) từ n nhân tử.
+
+**Hiểu bản chất trước công thức:** Hệ số x^k gồm ba phần: số cách chọn k vị trí là C(n,k), phần số 2^(n−k) từ các vị trí còn lại và dấu (−1)^k. Dấu không tùy ý.
+
+**Hướng dẫn đọc hình/sơ đồ:** Dùng bốn ô (2−x), đánh dấu ba ô lấy −x và một ô lấy 2; mỗi tích chọn có ba dấu trừ nên kết quả âm.
+
+**Lý do chọn phương pháp, điều kiện và giới hạn:** Trong n=4 Core, hệ số x³ của (2−x)⁴ là C(4,3)·2¹·(−1)³. Kiểm đúng số mũ x trước khi tính, không mở rộng cấp số tùy chọn n lớn.
+
+**Tự thử trước Core:** Tìm hệ số của x³ trong (2−x)⁴.
+
+??? question "Tự mở đáp án sau khi đã tự làm"
+    **Đáp án:** −8.
+
+    **Lập luận:** Chọn −x từ ba trong bốn nhân tử có C₄³=4 cách; mỗi tích là 2·(−x)³=−2x³. Tổng −8x³.
+
+    **Nếu chưa đúng:** Em có thể mở [hướng dẫn khắc phục 5 bước](#help-g10-chviii-try10), rồi [luyện lại câu tương ứng](../luyen-tap/?item=THPT-G10-B25-P01). Câu đã xem lời giải chỉ dùng để luyện tập, không tính như bài tự kiểm tra độc lập.
+
+<span id="help-g10-chviii-try10" data-thpt-help-id="HELP-G10-CHVIII-TRY10"></span>
+
+??? tip "Nếu chưa làm được — khắc phục 5 bước"
+    1. **Nhận diện lỗi:** Nếu đáp +8, em đã bỏ dấu (−1)³; nếu đáp −4, em quên nhân hệ số 2 ở nhân tử còn lại.
+    2. **Quay lại bản chất:** Hệ số x^k gồm ba phần: số cách chọn k vị trí là C(n,k), phần số 2^(n−k) từ các vị trí còn lại và dấu (−1)^k. Dấu không tùy ý.
+    3. **Tự làm lại:** Viết riêng C₄³, 2¹, (−1)³ rồi nhân từng phần.
+    4. **Đối chiếu tự nguyện:** Tự mở đáp án sau khi làm, kiểm tra và giải thích lại từng điều kiện; việc đối chiếu này không ghi điểm thành thạo.
+    5. **Luyện tiếp:** [Làm câu đã học cùng kỹ năng](../luyen-tap/?item=THPT-G10-B25-P01) và tự giải thích vì sao chọn phương pháp; nếu đã xem lời giải thì chỉ xem đây là luyện tập, không phải đánh giá độc lập.
+
+<!-- G10_CHVIII_R02_END:THPT-G10-CHVIII-TRY10 -->
+
+<!-- G10_CHVIII_R02_BEGIN:THPT-G10-CHVIII-TRY11 -->
+
+<span id="thpt-g10-chviii-try11" data-thpt-first-try-id="THPT-G10-CHVIII-TRY11" data-outcome-id="G10-B25-CONSTANT_TERM"></span>
+
+### Số hạng tự do chỉ khi không chọn thừa số có x
+
+**Vì sao cần học:** Trong (2x+3)⁴, không cần khai triển hết để biết số hạng không chứa x: chỉ cần nhận ra tích nào không lấy 2x lần nào.
+
+**Tiền đề:** Ôn mỗi nhân tử (2x+3) cho hai lựa chọn 2x hoặc 3; số mũ x là số lần chọn 2x.
+
+**Hiểu bản chất trước công thức:** Số hạng không chứa x đòi số mũ x bằng 0: lấy 3 ở tất cả bốn nhân tử. Đây là phạm vi SGK Core n=4; biểu thức 1/x hoặc n lớn thuộc phần hỗ trợ/mở rộng, không bắt làm Tự thử bắt buộc.
+
+**Hướng dẫn đọc hình/sơ đồ:** Vẽ bốn ô (2x+3) và khoanh 3 trong cả bốn ô, thấy tích 3⁴ không có x.
+
+**Lý do chọn phương pháp, điều kiện và giới hạn:** Dùng số hạng C(4,k)(2x)^k·3^(4−k), cho k=0; không giải bài có số mũ âm ngoài phạm vi SGK Core.
+
+**Tự thử trước Core:** Trong khai triển (2x+3)⁴, số hạng không chứa x bằng bao nhiêu?
+
+??? question "Tự mở đáp án sau khi đã tự làm"
+    **Đáp án:** 81.
+
+    **Lập luận:** Chọn 3 từ cả bốn nhân tử: C₄⁰(2x)⁰3⁴=81. Với k≥1, số hạng chứa x^k nên không là hằng số.
+
+    **Nếu chưa đúng:** Em có thể mở [hướng dẫn khắc phục 5 bước](#help-g10-chviii-try11), rồi [luyện lại câu tương ứng](../luyen-tap/?item=THPT-G10-B25-P07). Câu đã xem lời giải chỉ dùng để luyện tập, không tính như bài tự kiểm tra độc lập.
+
+<span id="help-g10-chviii-try11" data-thpt-help-id="HELP-G10-CHVIII-TRY11"></span>
+
+??? tip "Nếu chưa làm được — khắc phục 5 bước"
+    1. **Nhận diện lỗi:** Nếu đáp 16, em lấy hệ số bậc x⁴; nếu chỉ 3, em quên tích của cả bốn nhân tử.
+    2. **Quay lại bản chất:** Số hạng không chứa x đòi số mũ x bằng 0: lấy 3 ở tất cả bốn nhân tử. Đây là phạm vi SGK Core n=4; biểu thức 1/x hoặc n lớn thuộc phần hỗ trợ/mở rộng, không bắt làm Tự thử bắt buộc.
+    3. **Tự làm lại:** Lập bảng k=0,1,2,3,4 và số mũ x là k, chọn k=0.
+    4. **Đối chiếu tự nguyện:** Tự mở đáp án sau khi làm, kiểm tra và giải thích lại từng điều kiện; việc đối chiếu này không ghi điểm thành thạo.
+    5. **Luyện tiếp:** [Làm câu đã học cùng kỹ năng](../luyen-tap/?item=THPT-G10-B25-P07) và tự giải thích vì sao chọn phương pháp; nếu đã xem lời giải thì chỉ xem đây là luyện tập, không phải đánh giá độc lập.
+
+<!-- G10_CHVIII_R02_END:THPT-G10-CHVIII-TRY11 -->
+
+<!-- G10_CHVIII_R02_BEGIN:THPT-G10-CHVIII-TRY12 -->
+
+<span id="thpt-g10-chviii-try12" data-thpt-first-try-id="THPT-G10-CHVIII-TRY12" data-outcome-id="G10-B25-COEFFICIENT_SUM"></span>
+
+### Tổng hệ số bằng giá trị đa thức tại x=1
+
+**Vì sao cần học:** Cộng riêng từng hệ số khai triển (1+2x)⁴ dễ sai; thay x=1 làm mọi lũy thừa x bằng 1.
+
+**Tiền đề:** Nhắc P(x)=a₀+a₁x+...+a₄x⁴ có P(1)=a₀+...+a₄; chỉ dùng n=4 trong học liệu Core này.
+
+**Hiểu bản chất trước công thức:** Thay x=1, tất cả x^k=1 nên giá trị P(1) chính là tổng hệ số. Tách tổng hệ số lẻ/chẵn bằng P(−1) là nhánh mở rộng tự chọn, không thay phần SGK bắt buộc.
+
+**Hướng dẫn đọc hình/sơ đồ:** Vẽ bảng bậc 0..4 và hệ số tương ứng, rồi cho x=1 để từng hạng đóng góp đúng hệ số của nó.
+
+**Lý do chọn phương pháp, điều kiện và giới hạn:** Hỏi tổng mọi hệ số thì tính P(1). Chỉ khi tự chọn học thêm tổng lẻ/chẵn mới dùng (P(1)−P(−1))/2, không dùng bài n=7 nâng cao làm Core.
+
+**Tự thử trước Core:** Tổng tất cả hệ số của đa thức (1+2x)⁴ là bao nhiêu?
+
+??? question "Tự mở đáp án sau khi đã tự làm"
+    **Đáp án:** 81.
+
+    **Lập luận:** P(x)=(1+2x)⁴, tổng hệ số =P(1)=(1+2)⁴=3⁴=81.
+
+    **Nếu chưa đúng:** Em có thể mở [hướng dẫn khắc phục 5 bước](#help-g10-chviii-try12), rồi [luyện lại câu tương ứng](../../../thu-vien/tu-luan-chuong-viii/). Câu đã xem lời giải chỉ dùng để luyện tập, không tính như bài tự kiểm tra độc lập.
+
+<span id="help-g10-chviii-try12" data-thpt-help-id="HELP-G10-CHVIII-TRY12"></span>
+
+??? tip "Nếu chưa làm được — khắc phục 5 bước"
+    1. **Nhận diện lỗi:** Nếu đáp 16, em nhầm (1+2x)⁴ với (1+x)⁴, bỏ hệ số 2.
+    2. **Quay lại bản chất:** Thay x=1, tất cả x^k=1 nên giá trị P(1) chính là tổng hệ số. Tách tổng hệ số lẻ/chẵn bằng P(−1) là nhánh mở rộng tự chọn, không thay phần SGK bắt buộc.
+    3. **Tự làm lại:** Viết rõ P(1)=(1+2·1)⁴ và tính 3⁴; không cần khai triển.
+    4. **Đối chiếu tự nguyện:** Tự mở đáp án sau khi làm, kiểm tra và giải thích lại từng điều kiện; việc đối chiếu này không ghi điểm thành thạo.
+    5. **Luyện tiếp:** [Làm câu đã học cùng kỹ năng](../../../thu-vien/tu-luan-chuong-viii/) và tự giải thích vì sao chọn phương pháp; nếu đã xem lời giải thì chỉ xem đây là luyện tập, không phải đánh giá độc lập.
+
+<!-- G10_CHVIII_R02_END:THPT-G10-CHVIII-TRY12 -->
+
+<!-- G10_CHVIII_FULL_R02_ALL_END -->
+
 ## 1. Khái niệm, điều kiện và công thức
 
 **Công thức.** Với \(n\) là số nguyên không âm,
