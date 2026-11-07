@@ -1,8 +1,14 @@
 # Authoring — owner NotebookLM reviews received; D5 R01 targeted correction
 
 PACKET_ID: SLM-THPT-TRANSFER-WRITTEN-20261106-R00  
-STATUS: AUTHORING_REVIEW_RECEIVED / D5_TWO_FIGURES_Q07_PED4_TARGETED_REVIEW_PENDING / Q18_METADATA_NONBLOCKING_BY_OWNER_787  
+STATUS: TWO_D5_R01_CORRECTED_INDEPENDENT_ACADEMIC_PED_PASS_ACCEPTED / Q07_PED4_CLOSED / Q18_METADATA_NONBLOCKING_BY_OWNER_787  
 LANE: AUTHORING_ONLY; CONTENT_READY=NO; RELEASE=NO; RD1=NONE; Mastery=NONE
+
+## R02 — Owner returned independent corrected D5 verdict, both figures PASS (07/11/2026)
+
+The owner provided the requested **targeted** NotebookLM report for `Temp_D5_FIGURES_PDF_R01_CORRECTED_20261106.pdf` pages 1–2 and unchanged `Temp_G10_CHIV_FORCE_RIVER_TRANSFER_R00_20261106.md`. The independent audit confirms correct arrow directions/geometry and worked math: `FIG-G10-CHIV-FORCE-TR01` 120° force resultant 13 N, balancing force exactly opposite; `FIG-G10-CHIV-RIVER-TR01` 6.5 m/s own north heading drift 750/13 m, NW correction 6 m/s north ground speed; both figures **Academic PASS + PED PASS**, `P0=P1=P2=0`, `MINIMAL_DELTA=0`.
+
+Reviewer source: corrected PDF R01 SHA256 `d4804fd7b037afee5560097c1844139de9f8911dde95e10fc6ebbd84d05a60e5` as previously recorded; one scoped AUTHORING receipt [`Temp_TRANSFER_R01_TWO_D5_FIGURES_NOTEBOOKLM_ACADEMIC_PED_PASS_20261107.md`](Temp_TRANSFER_R01_TWO_D5_FIGURES_NOTEBOOKLM_ACADEMIC_PED_PASS_20261107.md), Git blob `cbe476dfe863cc46e590621e8349f584ae8a3275`. **`Q07_PED4_R01=PASS_CLOSED`**; do not review again. The original R00 PDF's two visually wrong arrowheads are NOT approved for rendering. Other original learner material remains independently PASS. Only proper version selection in FULL V2 AUTHORING handoff #778 plus subsequent independent RELEASE QA are required; no extra metadata review.
 
 ## Owner 07/11/2026 supersession — distinguish actual incorrect diagram from no-value metadata audit
 
@@ -45,5 +51,5 @@ ZIP_CONTENT_ONLY: 3 unchanged MD + 1 corrected five-page PDF; no SVG, PNG, TXT o
 - 5 new D4 are candidates ONLY: 238 old public D4 remain immutable (G10 31, G11 83, G12 124). No source READY manifest or V2 handoff until targeted D5 confirmation and source receipt reconciliation; do not duplicate an existing canonical ITEM_ID or declare Q16 runtime protection active.
 - CI success (if any) is structural only; no RELEASE or merge/deploy. PR #771 stays audit-only, PR #768 stays separate historical authoring.
 
-BLOCKED_BY_AUTHORING: Q07_PED4_FORCE_RIVER_FIGURE_CORRECTION_PENDING; HANDOFF_V2_PENDING; READY_MANIFEST_PENDING; REGISTER_PENDING. Q18_BYTE_SIZE_METADATA_NONBLOCKING_OWNER_787.  
-NEXT: One focused independent academic-visual Q07/PED4 confirmation of the two corrected R01 force/boat figures using the already prepared PDF; NO further NotebookLM source-byte/metadata correction under owner #787. Then AUTHORING decides scoped corrected source and V2 readiness; never merge/deploy from this Draft.
+BLOCKED_BY_AUTHORING: Q07_PED4_CORRECTED_FORCE_RIVER_FIGURES_CLOSED; R01_FIGURE_VERSION_HANDOFF_ALIGNMENT_PENDING_ON_PR_778 (the R00 source has existing V2/ready/register). Q18_BYTE_SIZE_METADATA_NONBLOCKING_OWNER_787. No academic re-review.  
+NEXT: Targeted NotebookLM review completed and PASS accepted for both corrected figures. Carry exact R01 PDF hash and owner reviewer verdict into one existing authoritative FULL R04 G10 ChIV handoff/ready on #778, leaving original R00 text/old question bank unchanged. RELEASE owns rendering/QA/deploy.
