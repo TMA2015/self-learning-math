@@ -115,7 +115,16 @@ All figures were fetched from \`prototypes/thpt/content-drafts\` on main. Render
 
 \`HELP-G12-B01-01`, `HELP-G12-B01-02`, `HELP-G12-B01-03`, `HELP-G12-B01-04`, `HELP-G12-B01-05`, `HELP-G12-B01-06`, `HELP-G12-B02-01`, `HELP-G12-B02-02`, `HELP-G12-B02-03`, `HELP-G12-B02-04`, `HELP-G12-B02-05`, `HELP-G12-B02-06`, `HELP-G12-B03-01`, `HELP-G12-B03-02`, `HELP-G12-B03-03`, `HELP-G12-B03-04`, `HELP-G12-B03-05`, `HELP-G12-B03-06`, `HELP-G12-B04-01`, `HELP-G12-B04-02`, `HELP-G12-B04-03`, `HELP-G12-B04-04`, `HELP-G12-B04-05`, `HELP-G12-B04-06`, `HELP-G12-B04-07`, `HELP-G12-B05-01`, `HELP-G12-B05-02`, `HELP-G12-B05-03`, `HELP-G12-B05-04`, `HELP-G12-B05-05`, `HELP-G12-B05-06`, `HELP-G12-B05-07\`.
 
-**COUNT_HELP_METADATA_HOLD:** The G12 full source introductory count states “help=36”, while exact \`^### HELP-G12-BXX-NN\` headings read back **32 unique IDs** (B01=6, B02=6, B03=6, B04=7, B05=7). This audit does **not** invent four missing HELP rows or revise historical source. Before Q08/Q14/Q15 PASS, reconcile whether source declared count includes help outside this exact heading pattern or is stale; evaluate per outcome whether any D6 functionality is actually missing. Topic Knowledge has local misconception routes, but these are not duplicate canonical HELP_ID records.
+**R03 HELP_COUNT_METADATA_RECONCILED (07/11/2026):** Original audit matched **32 lesson HELP** headings only (B01=6, B02=6, B03=6, B04=7, B05=7). The **same original source** contains **four additional Chapter I end HELPs** with distinct prefix `HELP-G12-CHI-END-01..04`. The original author count **36 is correct**: 32 lesson + 4 END, all exact IDs/source headings verified at Git blob `f0862dcdab21dec136e43969f45c42638e7c7574`. This is an audit filter correction, not a new HELP bank. The END HELPs return to `THPT-G12-CHI-END-C01..C04` (public RD0 demo **without Mastery**), not protected independent Topic Readiness.
+
+| Existing END HELP ID | Existing primary skill | Existing return item |
+|---|---|---|
+| HELP-G12-CHI-END-01 | G12-CHI-INTEGRATED_VARIATION_EXTREMA | THPT-G12-CHI-END-C01 |
+| HELP-G12-CHI-END-02 | G12-CHI-INTEGRATED_ASYMPTOTE_GRAPH | THPT-G12-CHI-END-C02 |
+| HELP-G12-CHI-END-03 | G12-CHI-INTEGRATED_ERROR_DIAGNOSIS | THPT-G12-CHI-END-C03 |
+| HELP-G12-CHI-END-04 | G12-CHI-INTEGRATED_MODEL_RATE_OPTIMUM | THPT-G12-CHI-END-C04 |
+
+**Count reconciliation:** 32 + 4 = **36 HELP IDs**. Q08 coverage **per outcome**, G12 independently reviewed Academic/PED verdict and actual live placement remain **PENDING**. No private RD1 stems, solutions or rubrics are added. See `Temp_TOPIC_FUNCTIONS_CANONICAL_METADATA_EXACT_ID_RECONCILIATION_R03_20261107.md`.
 
 ## 5. D3 differentiated transfer: no numbers-only clones
 
@@ -143,4 +152,4 @@ All figures were fetched from \`prototypes/thpt/content-drafts\` on main. Render
 - Q18 new M7 knowledge and these two genuinely new public questions are Delta C; NotebookLM uses **exactly five Permanent THPT v2.1** sources plus S1 original and Git blob receipt. No scope transference of PASS, no false readiness.
 - AUTHORING stops at one handoff V2/one ready manifest/REGISTER after Q01–Q18/A1–A7 and Academic+PED PASS; no website edits, merge or deploy.
 
-**CHECKPOINT:** S1_G12_PRINTED_PDF_OFFSET_CORRECTED; G12_CANDIDATE_SOURCE_EXACT_78_IDS/66_B01_B05/12_END_DEMO; Q15_HELP_SOURCE_DECLARED_36_VS_32_HEADED_HOLD; FIG_6_EXACT_BLOB; NEW_CANONICAL_0; TOPIC_M7_ACADEMIC_PED=PENDING; FULL_TOPIC_CONTENT_READY=NO.
+**CHECKPOINT:** S1_G12_PRINTED_PDF_OFFSET_CORRECTED; G12_CANDIDATE_SOURCE_EXACT_78_IDS/66_B01_B05/12_END_DEMO; Q15_HELP_36_ID_VERIFIED_32_LESSON_PLUS_4_END_CLOSED_R03; FIG_6_EXACT_BLOB; NEW_CANONICAL_0; TOPIC_M7_ACADEMIC_PED=PENDING; FULL_TOPIC_CONTENT_READY=NO.
