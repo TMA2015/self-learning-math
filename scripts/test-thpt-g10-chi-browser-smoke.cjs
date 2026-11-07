@@ -5,9 +5,14 @@ const assert=require("node:assert/strict");const {chromium}=require("playwright"
   const page=await browser.newPage({viewport:{width,height}});try{
    for(const n of [1,2]){
     const res=await page.goto("http://127.0.0.1:8765/thpt-preview/sgk/chuong-i/bai-"+n+"/",{waitUntil:"networkidle"});assert(res?.ok(),"Missing Chapter I lesson "+n);
-    const cards=page.locator("[data-thpt-help-id]");assert.equal(await cards.count(),2,"Missing two B0"+n+" D6 cards");
+    const cards=page.locator("[data-thpt-help-id]");assert.equal(await cards.count(),n===1?2:3,"Expected two original B01 HELP and two original plus one reviewed B02 HELP");
+    const firstTries=page.locator('details[data-ped-first-try="1"]');assert.equal(await firstTries.count(),n===1?5:6,"Source-locked R02 First Try count");
+    assert.equal(await page.locator('details[data-ped-first-try="1"][open]').count(),0,"First Try answer must stay closed until learner chooses");
+    await firstTries.first().locator("summary").click();assert(await firstTries.first().getAttribute("open")!==null,"Cannot open First Try comparison");
+    await firstTries.first().locator("summary").click();assert(await firstTries.first().getAttribute("open")===null,"Cannot close First Try comparison");
     assert.equal(await page.locator("[data-thpt-help-id][open]").count(),0,"D6 must start collapsed");
     const image=page.locator(".thpt-r4-probability-figure img");assert.equal(await image.count(),1);
+    await image.scrollIntoViewIfNeeded();await image.evaluate(async el=>{if(typeof el.decode==="function")await el.decode()}); // lazy-loaded original SVG lies after new concept-first content
     const data=await image.evaluate(el=>({loaded:el.complete&&el.naturalWidth>0,imgWidth:el.getBoundingClientRect().width,parentWidth:el.parentElement.getBoundingClientRect().width}));
     assert(data.loaded&&data.imgWidth<=data.parentWidth+1,"D5 image missing/overflowing on "+width+" for lesson "+n);
     await cards.first().locator("summary").click();assert(await cards.first().getAttribute("open")!==null,"Cannot open D6");
@@ -23,5 +28,5 @@ const assert=require("node:assert/strict");const {chromium}=require("playwright"
    assert(ready?.ok()&&await page.locator('[data-g10-chapter-selfcheck="CHI"] .g10sc-progress').count()===1,"Chapter I reviewed self-check missing");assert(!(await page.locator('[data-g10-chapter-selfcheck="CHI"]').innerText()).includes("Đáp án:"),"Answer exposed before Final Submit");
   }finally{await page.close()}
  }
- console.log("PASS G10 ChI browser: 16 source-locked formative items, two D1/D2 lesson pages, 4 D6 and 2 responsive D5, original item deep-links, client self-check no pre-final answers");
+ console.log("PASS G10 ChI browser: 16 source-locked formative items, two D1/D2 lesson pages, 11 source-locked First Try, 5 D6 and 2 responsive D5, original item deep-links, client self-check no pre-final answers");
 }finally{await browser.close()}})().catch(e=>{console.error(e.stack||e);process.exit(1)});
