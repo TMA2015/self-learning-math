@@ -28,12 +28,12 @@
 
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHVI-TRY06" data-outcome-id="B16_OUT_01">
 <summary>Em đã tự thử? Mở đáp án để đối chiếu</summary>
-<div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> Chỉ \(g(x)\) là bậc hai (a=−1); \(f(x)=2x+1\) là bậc nhất.</p><p><strong>Vì sao:</strong> Hệ số x² của f bằng 0 nên hạng tử bậc hai biến mất; của g bằng −1 khác 0.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
+<div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> Chỉ <span class="arithmatex">\(g(x)\)</span> là bậc hai (a=−1); <span class="arithmatex">\(f(x)=2x+1\)</span> là bậc nhất.</p><p><strong>Vì sao:</strong> Hệ số x² của f bằng 0 nên hạng tử bậc hai biến mất; của g bằng −1 khác 0.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
 </details>
 
 <details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-CHVI-TRY06"><summary>Gợi ý khắc phục khi chưa làm được — 5 bước</summary><ol><li><strong>Nhận diện lỗi:</strong> Chỉ nhìn chữ x² trong cách viết mà quên xét hệ số a=0.</li>
 <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
-<li><strong>Kiến thức gốc:</strong> Một hàm bậc hai có phần thay đổi theo \(x^2\) <strong>không mất đi</strong>: \(y=ax^2+bx+c\) với \(a\ne0\). Nếu \(a=0\), quy tắc chỉ còn bậc nhất hoặc hằng, và các kết luận về parabol không còn đúng.</li>
+<li><strong>Kiến thức gốc:</strong> Một hàm bậc hai có phần thay đổi theo <span class="arithmatex">\(x^2\)</span> <strong>không mất đi</strong>: <span class="arithmatex">\(y=ax^2+bx+c\)</span> với <span class="arithmatex">\(a\ne0\)</span>. Nếu <span class="arithmatex">\(a=0\)</span>, quy tắc chỉ còn bậc nhất hoặc hằng, và các kết luận về parabol không còn đúng.</li>
 <li><strong>Tự sửa:</strong> Thu gọn rồi khoanh hệ số đứng trước x²; nếu bằng 0 không dùng công thức parabol. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
 <li><strong>Luyện lại (không nhân bản câu):</strong> Quay lại phần kiến thức liên quan ngay trong bài và thử giải thích phương pháp trước khi xem lại kết quả.</li></ol></details>
 <!-- G10_CHVI_R04_END:B16_OUT_01 -->
@@ -65,12 +65,12 @@ Tập xác định là \(\mathbb{R}\). Điều kiện \(a\ne 0\) là bắt buộ
 
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHVI-TRY07" data-outcome-id="B16_OUT_02">
 <summary>Em đã tự thử? Mở đáp án để đối chiếu</summary>
-<div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> Đỉnh \(I(2;-3)\), trục \(x=2\), parabol mở lên.</p><p><strong>Vì sao:</strong> Vì hệ số của bình phương là 1&gt;0 và \((x-2)^2\ge0\), giá trị nhỏ nhất −3 nhận tại x=2.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
+<div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> Đỉnh <span class="arithmatex">\(I(2;-3)\)</span>, trục <span class="arithmatex">\(x=2\)</span>, parabol mở lên.</p><p><strong>Vì sao:</strong> Vì hệ số của bình phương là 1&gt;0 và <span class="arithmatex">\((x-2)^2\ge0\)</span>, giá trị nhỏ nhất −3 nhận tại x=2.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
 </details>
 
 <details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-CHVI-TRY07"><summary>Gợi ý khắc phục khi chưa làm được — 5 bước</summary><ol><li><strong>Nhận diện lỗi:</strong> Đổi nhầm dấu h thành −2, hoặc cho trục đối xứng là y=2.</li>
 <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
-<li><strong>Kiến thức gốc:</strong> Viết \(y=a(x-h)^2+k\): vì bình phương nhỏ nhất bằng 0 tại x=h, đỉnh chính là \(I(h;k)\). Dấu a quyết định cực tiểu hay cực đại; đường thẳng x=h đi qua đỉnh và là trục đối xứng.</li>
+<li><strong>Kiến thức gốc:</strong> Viết <span class="arithmatex">\(y=a(x-h)^2+k\)</span>: vì bình phương nhỏ nhất bằng 0 tại x=h, đỉnh chính là <span class="arithmatex">\(I(h;k)\)</span>. Dấu a quyết định cực tiểu hay cực đại; đường thẳng x=h đi qua đỉnh và là trục đối xứng.</li>
 <li><strong>Tự sửa:</strong> Tìm x làm biểu thức bình phương bằng 0 rồi đọc h và k; kiểm dấu a để xác định hướng mở. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
 <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-CORE-QF01">luyện lại một câu có sẵn trong Core/Luyện tập</a>, sau đó tự giải thích bằng lời của mình.</li></ol></details>
 <!-- G10_CHVI_R04_END:B16_OUT_02 -->
@@ -101,12 +101,12 @@ y=a(x-h)^2+k,\qquad h=-\frac{b}{2a},\quad k=f(h)=-\frac{\Delta}{4a},\qquad \Delt
 
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHVI-TRY09" data-outcome-id="B16_OUT_04">
 <summary>Em đã tự thử? Mở đáp án để đối chiếu</summary>
-<div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> GTLN 8 tại x=−1, \(T=(-\infty;8]\); đồng biến trên \((-\infty;-1)\), nghịch biến trên \((-1;+\infty)\).</p><p><strong>Vì sao:</strong> Vì −2(x+1)²≤0. Trục x=−1 là ranh giới đổi chiều, parabol mở xuống; mọi y≤8 đều đạt được.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
+<div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> GTLN 8 tại x=−1, <span class="arithmatex">\(T=(-\infty;8]\)</span>; đồng biến trên <span class="arithmatex">\((-\infty;-1)\)</span>, nghịch biến trên <span class="arithmatex">\((-1;+\infty)\)</span>.</p><p><strong>Vì sao:</strong> Vì −2(x+1)²≤0. Trục x=−1 là ranh giới đổi chiều, parabol mở xuống; mọi y≤8 đều đạt được.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
 </details>
 
 <details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-CHVI-TRY09"><summary>Gợi ý khắc phục khi chưa làm được — 5 bước</summary><ol><li><strong>Nhận diện lỗi:</strong> Đọc nhầm đỉnh là GTNN khi a âm, hoặc nhận khoảng tăng và giảm theo chiều từ phải qua trái.</li>
 <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
-<li><strong>Kiến thức gốc:</strong> Nếu a&lt;0, parabol mở xuống nên tăng tới h rồi giảm sau h, giá trị không vượt k. Nếu a&gt;0 thì ngược lại, luôn không nhỏ hơn k. Vì \((x-h)^2\ge0\), đây là chứng minh đại số cho tập giá trị chứ không chỉ nhìn tranh.</li>
+<li><strong>Kiến thức gốc:</strong> Nếu a&lt;0, parabol mở xuống nên tăng tới h rồi giảm sau h, giá trị không vượt k. Nếu a&gt;0 thì ngược lại, luôn không nhỏ hơn k. Vì <span class="arithmatex">\((x-h)^2\ge0\)</span>, đây là chứng minh đại số cho tập giá trị chứ không chỉ nhìn tranh.</li>
 <li><strong>Tự sửa:</strong> Khoanh a&lt;0, vẽ mũi tên mở xuống, đọc nhánh trái lên đỉnh và nhánh phải xuống. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
 <li><strong>Luyện lại (không nhân bản câu):</strong> Quay lại phần kiến thức liên quan ngay trong bài và thử giải thích phương pháp trước khi xem lại kết quả.</li></ol></details>
 <!-- G10_CHVI_R04_END:B16_OUT_04 -->
@@ -138,12 +138,12 @@ y=a(x-h)^2+k,\qquad h=-\frac{b}{2a},\quad k=f(h)=-\frac{\Delta}{4a},\qquad \Delt
 
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHVI-TRY08" data-outcome-id="B16_OUT_03">
 <summary>Em đã tự thử? Mở đáp án để đối chiếu</summary>
-<div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> Đỉnh \(I(1;-4)\), trục \(x=1\); giao Ox tại \((-1;0)\) và \((3;0)\); giao Oy \((0;-3)\). Mở lên.</p><p><strong>Vì sao:</strong> Cho y=0: \((x-1)^2=4\Rightarrow x=1\pm2=-1,3\). Thay x=0 được y=1−4=−3. Hai giao Ox đối xứng quanh x=1.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
+<div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> Đỉnh <span class="arithmatex">\(I(1;-4)\)</span>, trục <span class="arithmatex">\(x=1\)</span>; giao Ox tại <span class="arithmatex">\((-1;0)\)</span> và <span class="arithmatex">\((3;0)\)</span>; giao Oy <span class="arithmatex">\((0;-3)\)</span>. Mở lên.</p><p><strong>Vì sao:</strong> Cho y=0: <span class="arithmatex">\((x-1)^2=4\Rightarrow x=1\pm2=-1,3\)</span>. Thay x=0 được y=1−4=−3. Hai giao Ox đối xứng quanh x=1.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
 </details>
 
 <details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-CHVI-TRY08"><summary>Gợi ý khắc phục khi chưa làm được — 5 bước</summary><ol><li><strong>Nhận diện lỗi:</strong> Vẽ đường trục nằm ngang hoặc đánh dấu một giao trục sai nhưng vẫn nối hình đẹp.</li>
 <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
-<li><strong>Kiến thức gốc:</strong> Đồ thị \(y=a(x-h)^2+k\) đối xứng quanh x=h. Vẽ theo thứ tự: (1) đỉnh, (2) trục, (3) giao trục và điểm đối xứng cần thiết, (4) nối đường cong theo dấu a. Không thể nối các điểm bất kỳ thành parabol chuẩn.</li>
+<li><strong>Kiến thức gốc:</strong> Đồ thị <span class="arithmatex">\(y=a(x-h)^2+k\)</span> đối xứng quanh x=h. Vẽ theo thứ tự: (1) đỉnh, (2) trục, (3) giao trục và điểm đối xứng cần thiết, (4) nối đường cong theo dấu a. Không thể nối các điểm bất kỳ thành parabol chuẩn.</li>
 <li><strong>Tự sửa:</strong> Tính đỉnh trước, kiểm từng giao điểm bằng thay tọa độ và phản chiếu qua trục x=h. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
 <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-CHVI-APP-A2">luyện lại một câu có sẵn trong Core/Luyện tập</a>, sau đó tự giải thích bằng lời của mình.</li></ol></details>
 <!-- G10_CHVI_R04_END:B16_OUT_03 -->
@@ -204,12 +204,12 @@ Xét \(f(x)=x^2-4x+3=(x-2)^2-1\). Do đó:
 
 <details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHVI-TRY10" data-outcome-id="B16_OUT_05">
 <summary>Em đã tự thử? Mở đáp án để đối chiếu</summary>
-<div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> \(h(t)=-5(t-2)^2+20\), đạt lớn nhất \(20\,\mathrm{m}\) tại \(t=2\,\mathrm{s}\).</p><p><strong>Vì sao:</strong> Vì \(-(t-2)^2\le0\) và 2∈[0;4]. Hai đầu t=0,4 có h=0; đây là mô hình giả định với thời gian không âm.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
+<div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> <span class="arithmatex">\(h(t)=-5(t-2)^2+20\)</span>, đạt lớn nhất <span class="arithmatex">\(20\,\mathrm{m}\)</span> tại <span class="arithmatex">\(t=2\,\mathrm{s}\)</span>.</p><p><strong>Vì sao:</strong> Vì <span class="arithmatex">\(-(t-2)^2\le0\)</span> và 2∈[0;4]. Hai đầu t=0,4 có h=0; đây là mô hình giả định với thời gian không âm.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
 </details>
 
 <details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-CHVI-TRY10"><summary>Gợi ý khắc phục khi chưa làm được — 5 bước</summary><ol><li><strong>Nhận diện lỗi:</strong> Chỉ lấy −b/(2a) mà không kiểm miền thời gian hoặc quên đơn vị.</li>
 <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
-<li><strong>Kiến thức gốc:</strong> Mô hình \(h(t)\) là hàm bậc hai theo t với miền thực tế t≥0 và h≥0 trong giai đoạn bay. Đỉnh cho độ cao tối đa nếu thời điểm đỉnh thuộc miền đó. Không được áp cực trị trên toàn \(\mathbb R\) rồi kết luận cho t âm.</li>
+<li><strong>Kiến thức gốc:</strong> Mô hình <span class="arithmatex">\(h(t)\)</span> là hàm bậc hai theo t với miền thực tế t≥0 và h≥0 trong giai đoạn bay. Đỉnh cho độ cao tối đa nếu thời điểm đỉnh thuộc miền đó. Không được áp cực trị trên toàn <span class="arithmatex">\(\mathbb R\)</span> rồi kết luận cho t âm.</li>
 <li><strong>Tự sửa:</strong> Viết 0≤t≤4 ngay dưới bài, kiểm t đỉnh có thuộc miền, rồi báo cả giá trị và đơn vị. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
 <li><strong>Luyện lại (không nhân bản câu):</strong> Quay lại phần kiến thức liên quan ngay trong bài và thử giải thích phương pháp trước khi xem lại kết quả.</li></ol></details>
 <!-- G10_CHVI_R04_END:B16_OUT_05 -->
