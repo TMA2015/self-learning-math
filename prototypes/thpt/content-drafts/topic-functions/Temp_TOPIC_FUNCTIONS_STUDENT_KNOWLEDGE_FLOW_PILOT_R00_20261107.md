@@ -89,9 +89,26 @@ Bình phương \((x-h)^2\) nhỏ nhất là 0 khi \(x=h\). Nếu \(a>0\), \(a(x-
 
 **Một đường cong chỉ tăng rồi giảm chưa nói đủ mọi hiện tượng.** Thủy triều, con lắc hay bánh xe quay có thể trở lại trạng thái cũ nhiều lần; tiền gửi tăng theo tỷ lệ lại có đường đi không quay trở lại. Trước khi chọn công cụ, hãy hỏi: *sự thay đổi lặp lại hay tích lũy theo tỷ lệ?*
 
+### Một đối xứng có ý nghĩa toán học
+
+Trước khi đọc các đường cong đặc biệt, em hãy nhìn hai đồ thị quen thuộc: \(y=x^2\) và \(y=x^3\). Với \(x=2\) và \(x=-2\), bình phương đều bằng \(4\); còn lập phương lần lượt bằng \(8\) và \(-8\). Vì thế đồ thị \(y=x^2\) đối xứng qua **trục tung**, còn đồ thị \(y=x^3\) đối xứng qua **gốc tọa độ**. Ta dùng từ **hàm chẵn** và **hàm lẻ** để mô tả chính xác hai kiểu đối xứng ấy.
+
+- **Hàm chẵn:** miền xác định \(D\) đối xứng qua \(0\) (nếu \(x\in D\) thì \(-x\in D\)) và \(f(-x)=f(x)\) với mọi \(x\in D\). Đồ thị đối xứng qua \(Oy\). Ví dụ \(x^2\) và \(\cos x\).
+- **Hàm lẻ:** miền xác định cũng phải đối xứng qua \(0\) và \(f(-x)=-f(x)\). Đồ thị đối xứng qua gốc \(O\). Ví dụ \(x^3\) và \(\sin x\).
+- **Không phải hàm nào cũng chẵn hoặc lẻ:** \(f(x)=x^2+x\) trên \(\mathbb R\) không thỏa hai điều kiện. Nếu miền xác định không đối xứng, không được chỉ kiểm một vài giá trị rồi kết luận chẵn/lẻ.
+
+**Vì sao cần biết?** Khi đã thấy đối xứng, em chỉ cần hiểu một phần đồ thị để hình dung phần còn lại; đây là công cụ đọc hình chứ không phải một công thức tính mới. **Lưu ý điều kiện:** một hàm lẻ không nhất thiết đi qua \(O\) nếu \(x=0\) không thuộc miền xác định, chẳng hạn \(\cot x\).
+
+**Tự thử:** \(f(x)=x^2+1\) và \(g(x)=x^3\) trên \(\mathbb R\): hàm nào chẵn, hàm nào lẻ? Nêu tính đối xứng của đồ thị trước khi mở đáp án.
+
+<details><summary>Đã thử? Mở đối chiếu</summary>
+
+\(f(-x)=(-x)^2+1=f(x)\) nên f chẵn, đồ thị đối xứng qua trục tung. \(g(-x)=(-x)^3=-g(x)\) nên g lẻ, đồ thị đối xứng qua gốc tọa độ. Nếu lúng túng với dấu âm, thử lấy hai giá trị \(x=2\) và \(x=-2\), rồi kiểm lại bằng biến đổi tổng quát.
+</details>
+
 ### Khi hiện tượng lặp lại
 
-Điểm M chuyển động trên đường tròn đơn vị với góc x tính bằng radian có tọa độ \((\cos x,\sin x)\). Khi M quay trọn vòng \(2\pi\), tọa độ lặp lại. Vì vậy \(\sin(x+2\pi)=\sin x\), \(\cos(x+2\pi)=\cos x\); đồ thị sin/cos có chu kỳ \(2\pi\), nhận giá trị trong \([-1,1]\) và xác định với mọi x thực. "Chu kỳ" là quãng đầu vào để hàm lặp, không phải độ cao cực đại. \(\tan x=\sin x/\cos x\) chỉ dùng khi \(\cos x\ne0\); \(\cot x=\cos x/\sin x\) đòi \(\sin x\ne0\). Khi triển khai FULL phải có hình đường tròn/đồ thị kèm chú thích và các tính chất đúng S1 của từng hàm, không chỉ hai công thức trên.
+Điểm M chuyển động trên đường tròn đơn vị với góc x tính bằng radian có tọa độ \((\cos x,\sin x)\). Khi M quay trọn vòng \(2\pi\), tọa độ lặp lại. Vì vậy \(\sin(x+2\pi)=\sin x\), \(\cos(x+2\pi)=\cos x\); đồ thị sin/cos có chu kỳ \(2\pi\), nhận giá trị trong \([-1,1]\) và xác định với mọi x thực. "Chu kỳ" là quãng đầu vào để hàm lặp, không phải độ cao cực đại. \(\tan x=\sin x/\cos x\) chỉ dùng khi \(\cos x\ne0\); \(\cot x=\cos x/\sin x\) đòi \(\sin x\ne0\). Sin là hàm lẻ, cos là hàm chẵn, còn tan và cot là hàm lẻ **trên đúng miền xác định của chúng**. Đồ thị sin/cos lặp sau \(2\pi\); tan/cot lặp sau \(\pi\) nhưng có những điểm không xác định. Cụ thể, \(\tan x\) không xác định tại \(x=\pi/2+k\pi\), \(\cot x\) không xác định tại \(x=k\pi\) (\(k\in\mathbb Z\)). Ở mỗi khoảng liên tục giữa hai điểm bị loại kề nhau, tan tăng còn cot giảm; **không nối** các nhánh qua đường tiệm cận đứng. Hình tròn lượng giác và bốn đồ thị cần hướng dẫn đọc trực tiếp tại Topic: xem trục, giá trị biên, khoảng tăng/giảm, đối xứng, chu kỳ và điểm bị loại. Khi hoàn thiện FULL cần rà đủ công thức/điều kiện theo S1 từng họ hàm, không chỉ dừng ở đoạn giới thiệu này.
 
 **Tự thử nhanh:** Nếu một đồ thị sin bắt đầu lại sau khi x tăng \(2\pi\), ta có thể kết luận biên độ bằng \(2\pi\) không? Vì sao?
 <details><summary>Mở đối chiếu</summary>Không. \(2\pi\) là chu kỳ theo trục x; với sin x thông thường, biên độ bằng 1 theo trục y. Phân biệt trục và đơn vị trước khi đọc hình.</details>
