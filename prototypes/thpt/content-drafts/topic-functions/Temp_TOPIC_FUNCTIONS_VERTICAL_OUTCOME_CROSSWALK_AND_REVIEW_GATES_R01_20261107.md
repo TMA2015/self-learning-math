@@ -39,7 +39,7 @@ VERDICT: OUTCOME_CLASSIFICATION_PREFLIGHT_ONLY; ACADEMIC_PED_PENDING; CONTENT_RE
 
 **Các cụm trong bảng là phép ánh xạ ngữ nghĩa để kiểm toán, không biến planning O01–O21 thành ITEM_ID, không ra lệnh trình bày giao diện 21 bài/tab.** Một outcome có thể có evidence ở nhiều M, một item có thể placement trên nhiều M; canonical ID giữ nguyên một bản câu/đáp án/rubric.
 
-## 3. M6 có xung đột số lượng đề nghị — metadata HOLD, không bịa thêm outcome
+## 3. M6 có xung đột số lượng đề nghị (khác với lỗi bộ đếm stem đã đóng) — metadata HOLD, không bịa thêm outcome
 
 - Tài liệu M6 trung gian `Temp_TOPIC_FUNCTIONS_M6_DERIVATIVE_MEANING_RULES_SECOND_D1_D6_R01_20261107.md` chưa nằm trong 20 file đang có ở Draft #782; nó từng nêu “TOP-FUNC-M6-O01..O10” trong luồng biên soạn, nhưng **không dùng làm nguồn canonical chính thức**. Nguồn ưu tiên M6 learner R01 là `Temp_TOPIC_FUNCTIONS_M6_KNOWLEDGE_CONCEPT_TO_SECOND_DERIVATIVE_R01_20261107.md`, và ledger `Temp_TOPIC_FUNCTIONS_M6_PRACTICE_CANONICAL_REUSE_LEDGER_R01_20261107.md` cho **9 candidate rows O01–O09**.
 - **HOLD_M6_OUTCOME_COUNT_9_VS_10:** Trước khi reviewer chấm, xác nhận outcome “lý do chọn phương pháp/giới hạn mô hình” có được chứng minh đủ bằng M6-O09 hay thực sự là outcome O10 mới với đánh giá độc lập. Không tự chọn 9 hoặc 10 như verdict học thuật chỉ để đẹp thống kê.
@@ -49,11 +49,11 @@ VERDICT: OUTCOME_CLASSIFICATION_PREFLIGHT_ONLY; ACADEMIC_PED_PENDING; CONTENT_RE
 
 | Scope | Candidate source SHA locked | Existing bank evidence | Review scope / blocker |
 |---|---|---|---|
-| M1–M3 | `fcecb2c97fe7799124809c47045f2087d333afa9` | G10 R01 Academic PASS exact blob `57eaf0141a5db9bfba91f0e6c863fc7dcc638068` | Only **new Delta C pedagogical bridge**; direct SBT G10 T2 original PDF still HOLD |
+| M1–M3 | `fcecb2c97fe7799124809c47045f2087d333afa9` | G10 R01 Academic PASS exact blob `57eaf0141a5db9bfba91f0e6c863fc7dcc638068` | Only **new Delta C pedagogical bridge**; original G10 SBT T2 direct PDF B15/B16 verified R03, SHA256 `3cb33690e0627b9e8ac467c23625b7feb7d05a8422293db0e1b26e44ca6a78c7` |
 | M4 | `a3db248040abe2109410614f2f11f5ef84aff422` | G11 B03/B20 20 public IDs | New content; source S1 direct, duplicates/FIG/WRITTEN need review |
 | M5 | `f1fe1997242714ddadf3e94b981df904f4e12787` | G11 B16/B17 20 public IDs | New content; independent Academic/PED |
-| M6 | `f35e7fcd99b853bb5f9392c6ded25c2e20aa012f` | G11 B31–33 60 public IDs, 9 Written, HELP/FIG | New content; M6 metadata count HOLD, source “62 stems” vs 60 C/P headings |
-| M7 | `944673fffe5dad9444c994e7719e5c054570bca2` | G12 Chapter I author source `INDEPENDENT_PENDING` 66 item headings + 12 END RD0 demo | New content; source 36 HELP summary vs 32 actual headings, G12 independent reviewer receipt unverified |
+| M6 | `f35e7fcd99b853bb5f9392c6ded25c2e20aa012f` | G11 ChIX **62 public IDs** (60 B31–B33 plus 2 CHIX integrated), 9 Written, 11 HELP, 5 FIG | New pedagogical source; **62 item metadata count verified and closed R03**, separate M6 9-vs-10 outcome candidate HOLD remains |
+| M7 | `944673fffe5dad9444c994e7719e5c054570bca2` | G12 Chapter I author source `INDEPENDENT_PENDING` 66 item headings + 12 END RD0 demo | New content; **36 HELP ID source count verified R03 =32 lesson+4 END RD0**, G12 independent reviewer receipt still unverified |
 
 **Q16:** 12 historical G10 Topic private readiness candidates reviewed in 2026-10-31 summary do **NOT** provide independently held-out readiness for all G10–12. Protected source stays outside public Git; no hints/key/correctness/Tutor until Final Submit; no Mastery from public Practice or self-assessment.
 **Q18:** no new NotebookLM Academic/PED PASS has been issued for M1–M7 new Delta C sources. Use exactly five Permanent THPT v2.1 + S1, exact source+receipt SHA, P0/P1/P2 and minimal Delta. Do not review historical unchanged G10 in full again.
@@ -61,10 +61,10 @@ VERDICT: OUTCOME_CLASSIFICATION_PREFLIGHT_ONLY; ACADEMIC_PED_PENDING; CONTENT_RE
 
 ## 5. Minimal closure order, AUTHORING only
 
-1. Get original G10 SBT Tập 2 direct printed/PDF offset and scope receipt; review actual M1–M3 outcome depth without revoking unchanged PASS.
-2. Reconcile M6 nine-vs-ten proposed outcome metadata, G11 M6 62-vs-60 stems and G12 36-vs-32 HELP metadata **without creating phantom items**.
+1. Original G10 SBT Tập 2 B15 printed 3–9 = PDF4–10, B16 printed 10–15 = PDF11–16 is now **directly verified** with SHA256 `3cb33690e0627b9e8ac467c23625b7feb7d05a8422293db0e1b26e44ca6a78c7`; review **only new** M1–M3 Delta C depth without revoking unchanged G10 PASS.
+2. Reconcile **only the remaining M6 nine-vs-ten proposed outcome metadata**, and check cross-grade semantic item duplication. G11 D3 62 vs 60 and G12 HELP 36 vs 32 false mismatches were **closed R03 by finding CHIX/END exact IDs**; no new stems or HELP were created.
 3. Lock one reviewer-ready inventory with final outcome IDs/placements/FIG/HELP and reviewer scope. New source prose is Delta C; tests/CI do not imply Academic/PED PASS.
 4. Prepare downloadable real `Temp_*.md` files + 3–6 sentence prompt; if ≥3 sources use a single `Temp_*.zip` containing only `Temp_` files; remind user to unzip. Exact five THPT Permanent v2.1 and S1.
 5. After external Academic+PED PASS (and Q01–Q18/A1–A7, protected RD1), create **one** V2 handoff, one ready manifest, REGISTER synchronized. AUTHORING then stops; RELEASE alone handles integration/merge/deploy with owner authorization.
 
-**CHECKPOINT:** R00_PLANNING_21_NE_CANONICAL; G10_10_OLD_PASS; M4_10 + M5_9 + M6_9_CANDIDATE + M7_10_CANDIDATE; M6_METADATA_COUNT_HOLD; G10_SBT_DIRECT_HOLD; WHOLE_TOPIC_READINESS_HOLD; ALL_NEW_DELTA_C_REVIEW_PENDING; FULL_CONTENT_READY=NO.
+**CHECKPOINT:** R00_PLANNING_21_NE_CANONICAL; G10_10_OLD_PASS; M4_10 + M5_9 + M6_9_CANDIDATE + M7_10_CANDIDATE; M6_OUTCOME_CANDIDATE_COUNT_HOLD; G11_D3_62_VERIFIED; G12_HELP_36_VERIFIED; G10_SBT_DIRECT_R03_COMPLETE; WHOLE_TOPIC_READINESS_HOLD; ALL_NEW_DELTA_C_REVIEW_PENDING; FULL_CONTENT_READY=NO.
