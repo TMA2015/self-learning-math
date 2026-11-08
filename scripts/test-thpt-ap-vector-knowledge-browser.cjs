@@ -22,7 +22,15 @@ const cases=[
        "Never display D1.x audit labels as lesson headings");
      const figures=page.locator(".thpt-r4-probability-figure img");
      assert(await figures.count()>=1,"Missing original reviewed SVG figure");
-     await page.waitForFunction(()=>[...document.querySelectorAll(".thpt-r4-probability-figure img")].every(img=>img.complete&&img.naturalWidth>0));
+     // SVG figures are lazy-loaded. Scroll each actual figure into view and
+     // verify that its image decodes; don't mistake an off-screen lazy image for a broken asset.
+     for(let idx=0;idx<await figures.count();idx++){
+      const figure=figures.nth(idx);
+      await figure.scrollIntoViewIfNeeded();
+      await figure.evaluate(async img=>img.decode());
+      assert(await figure.evaluate(img=>img.complete&&img.naturalWidth>0),
+        "SVG asset failed to render B"+item.lesson+" figure "+idx+" @"+width);
+     }
      const status=await page.evaluate(()=>{
       const d=document.documentElement;
       const images=[...document.querySelectorAll(".thpt-r4-probability-figure img")];
