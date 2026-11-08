@@ -35,13 +35,13 @@ Các đầu mối dưới đây dùng để **xác định đúng phạm vi cầ
 - https://www.sgkvn.com/lop-12-15/ket-noi-tri-thuc-voi-cuoc-song-3/toan-12-tap-mot-3500.html
 - https://www.sgkvn.com/xem-sach-pdf-toan-12-tap-hai-3520.html
 
-**SOURCE_HOLD (chưa phải lỗi toán):** Chưa đối chiếu trực tiếp bản PDF SGK/SBT gốc của sáu tập SGK liên quan (Toán 10, 11, 12; mỗi lớp hai tập), trang in ↔ PDF index, thứ tự phiên bản sách, ảnh hình và mục tiêu năng lực từng bài. Không điền số trang hoặc tuyên bố Q01/Q02 PASS bằng suy đoán.
+**S1 PARTIAL VERIFIED:** Đã đọc trực tiếp SGK Toán 10 T1 B07 trang **in 46–50 ↔ PDF trang 47–51 (1-based)**, SBT Toán 10 T1 B07 **in 45–47 ↔ PDF 46–48**, đối chiếu từ folder Drive `KNTT TOAN 10`. Quy ước vectơ-không đúng SBT trang in 45; SGK B07 trang in 49 có điều kiện thẳng hàng/điểm nằm giữa. **SOURCE_HOLD chỉ còn đối với Phần 2–7 chưa tự kiểm trực tiếp SGK/SBT và chưa có review Chuyên đề**; không tự suy Q01–Q02 toàn chuyên đề PASS.
 
 ## C. Bảy phần của CHÍNH MỘT chuyên đề — đề cương R00
 
 | Phần | Tên học sinh nhìn thấy | Kết quả học tập dự kiến (chưa canonical) | Trạng thái |
 | --- | --- | --- | --- |
-| 1 | Vectơ: độ lớn và hướng | Nhận ra vì sao cần vectơ; hiểu vectơ, vectơ-không, hai vectơ bằng nhau/đối nhau; đọc vectơ từ hình | **Bản nháp RD0 R01 Kiến thức + Luyện tập**, chưa S1 PDF-index và NotebookLM QA |
+| 1 | Vectơ: độ lớn và hướng | Hiểu vectơ, độ lớn/phương/hướng, vectơ-không theo KNTT, bằng nhau; đọc hình, chứng minh thẳng hàng/điểm giữa | **Bản nháp RD0 R01 + S1 đã tự kiểm**, có 2 câu và 1 SVG mới, **chưa NotebookLM PASS** |
 | 2 | Cộng, trừ vectơ và nhân với một số | Giải thích quy tắc ghép dịch chuyển; chọn công cụ thích hợp; dùng quan hệ vectơ trong hình học | Đề cương |
 | 3 | Tọa độ vectơ và tích vô hướng trong mặt phẳng | Đổi hình sang thành phần tọa độ; hiểu ý nghĩa tích vô hướng, góc và vuông góc; kiểm điều kiện | Đề cương |
 | 4 | Giải bài toán hình học bằng tọa độ phẳng | Từ điểm/hướng/khoảng cách lập phương trình đường thẳng, đường tròn; nhận diện phạm vi ba conic | Đề cương |
