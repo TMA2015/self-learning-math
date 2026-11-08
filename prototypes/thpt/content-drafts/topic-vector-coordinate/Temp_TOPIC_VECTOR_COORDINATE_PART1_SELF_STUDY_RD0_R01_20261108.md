@@ -107,6 +107,41 @@ Tự thử ở đây dùng **đúng các canonical public IDs đã có**, thay v
 
 ---
 
+
+## 7. Ba điểm thẳng hàng và điểm nằm giữa — hoàn thiện phạm vi S1 Bài 7
+
+SGK Bài 7 trang **in 49** (PDF trang 50) dùng tính chất **cùng phương** để nhận biết ba điểm thẳng hàng; SGK cũng yêu cầu nhận biết một điểm có nằm giữa hai điểm khác không.
+
+**Kiến thức và điều kiện:**
+- Nếu A, B, C **đôi một phân biệt**, thì A, B, C thẳng hàng **khi và chỉ khi** \(\overrightarrow{AB}\) và \(\overrightarrow{AC}\) cùng phương. Hai giá cùng đi qua A; nếu song song thì thực tế chúng trùng nhau.
+- Nếu A, B, M **đôi một phân biệt**, M nằm **giữa** A và B **khi và chỉ khi** \(\overrightarrow{MA}\) và \(\overrightarrow{MB}\) **ngược hướng**.
+- \(\overrightarrow{AB}\) và \(\overrightarrow{AM}\) cùng hướng chỉ cho biết M nằm trên tia AB; **chưa đủ** kết luận M ở trong đoạn AB, vì M có thể nằm ngoài B.
+- Không dùng quy ước vectơ-không để suy ra quan hệ nằm giữa tại các **đầu mút**: tính “nằm giữa” nghiêm ngặt yêu cầu ba điểm phân biệt.
+
+**Vì sao dùng vectơ?** Độ dài không tự nói một điểm có nằm giữa hai điểm khác hay không. Nhìn hai mũi tên từ M về A và B, ta thấy A, B nằm hai phía của M hay cùng phía.
+
+**Đọc hình bằng lời:** Đặt A, M, B lần lượt từ trái sang phải trên một đường thẳng. Hai mũi tên M→A và M→B ngược hướng. Nếu xếp A, B, M theo thứ tự, hai mũi tên bắt đầu tại M cùng quay về phía trái, không thể kết luận M ở giữa. Học sinh cần đọc chữ đầu–cuối trước khi đánh giá chiều.
+
+### Hai câu bổ sung mới — ID đề xuất, chưa đăng ký canonical
+
+**Câu T01, đề xuất ID THPT-TOPIC-VECTOR-P1-R01-T01 (TOPIC_FIRST_TRY/TRAP).** Ba điểm A, M, B đôi một phân biệt. Điều kiện nào **cần và đủ** để M nằm giữa A và B?
+
+A. \(\overrightarrow{AB}\) và \(\overrightarrow{AM}\) cùng hướng.  
+B. \(\overrightarrow{MA}\) và \(\overrightarrow{MB}\) ngược hướng.  
+C. \(AM=BM\).  
+D. \(\overrightarrow{MA}=\overrightarrow{MB}\).
+
+**Đáp án dự kiến B.** Hai vectơ xuất phát từ M, có giá trùng nhau và ngược hướng nên A, B nằm ở hai phía M. A chỉ đảm bảo M nằm trên tia AB, có thể vượt quá B; C có thể xảy ra nếu M nằm trên đường trung trực AB, không nằm trên AB; D vô lí do A khác B. **Tự thử:** học sinh chọn trước, tự mở sau, không Mastery.
+
+**Câu P01, đề xuất ID THPT-TOPIC-VECTOR-P1-R01-P01 (TOPIC_PRACTICE/SHORT_REASONING).** Cho A, B, C đôi một phân biệt. Hai vectơ \(\overrightarrow{AB}\) và \(\overrightarrow{AC}\) cùng phương. Giải thích vì sao A, B, C thẳng hàng. Từ đây có thể kết luận C nằm giữa A và B không?
+
+**Lời giải dự kiến:** Hai giá đều qua A; cùng phương nên trùng nhau. Do đó B và C thuộc một đường thẳng qua A: A, B, C thẳng hàng. Nhưng chưa thể kết luận C nằm giữa A và B vì chưa biết thứ tự điểm; C có thể ở ngoài B hoặc phía đối diện B. **Rubric tự đối chiếu /3, không Mastery:** 1 điểm nêu hai giá đi qua A; 1 điểm suy giá trùng nhau và thẳng hàng; 1 điểm phủ định kết luận nằm giữa kèm phản ví dụ hợp lệ. Viết “vì cùng phương” mà không lí giải trùng giá chưa đủ lập luận.
+
+**D6:** Nếu chọn A trong T01, vẽ A–B–M thẳng hàng; AB và AM vẫn cùng hướng nhưng M nằm ngoài AB. Nếu chọn C, lấy ba đỉnh tam giác cân với MA=MB mà M không thuộc AB. Nếu kẹt P01, thử vẽ hai đường thẳng cùng qua A và song song nhưng phân biệt: không thể.
+
+**Delta:** Hai câu có nội dung mới, thuộc DELTA_C_ACADEMIC_MATERIAL. Cả hai chỉ là đề xuất trong một bản thảo nguồn, **chưa đăng ký item canonical**, chưa có verdict độc lập, không phát hành hoặc ghi điểm.
+
+
 # II. LUYỆN TẬP — Đúng ngân hàng canonical, không sao chép câu hỏi
 
 ## 1. Bảng item–outcome–role để sử dụng từ nguồn SGK đã duyệt
@@ -175,10 +210,10 @@ Phần 1 **không tạo ngân hàng Readiness riêng**; Chuyên đề 2 về sau
 | Q01–Q02/S1 | **Đã tự đối chiếu** Toán 10 SGK B07 trang in 46–50 ↔ PDF 47–51; SBT B07 trang in 45–47 ↔ PDF 46–48 và khớp quy ước vectơ-không. **S1 của 6 phần còn lại chưa được đối chiếu**, vì vậy không suy Q01/Q02 PASS cho toàn chuyên đề. |
 | Q03–Q08 | D1–D6 được ánh xạ tới item/EX/FIG/Written có thật; kiểm đủ họ dạng độc lập ở Topic bằng review chuyên đề, không suy SGK PASS |
 | Q09–Q14 | Có trình tự PED + first try; cần review độc lập nội dung Topic mới |
-| Q15 | 8 public formative + 1 Written = **9 unique câu/bài** được tham chiếu, **0 item clone**, 3 EX dùng lại bằng ID gốc; placement còn ở mức đề xuất |
+| Q15 | 8 public formative + 1 Written = **9 câu/bài SGK tham chiếu nguyên ID** và **2 câu mới có ID đề xuất** cho thẳng hàng/điểm giữa; **0 item clone**, 3 EX dùng lại bằng ID gốc; hai ID mới chưa đăng ký |
 | Q16 | Tự kiểm tra Chuyên đề 2 chưa có private RD1 candidate; tuyệt đối không công khai đề/khoá kín, không Mastery |
 | Q17 | Chưa đủ 7 phần, không tuyên bố Chuyên đề hoàn chỉnh |
 | Q18 | Chưa có reviewer receipt riêng cho Topic Chuyên đề 2, chưa handoff V2 |
 | RELEASE | Chưa website/QA/merge/deploy; Issue #790 là blocker **intake kỹ thuật** của Chuyên đề 1, không tự sửa gate trong AUTHORING |
 
-**Đầu ra tiếp theo:** Biên soạn Phần 2–7 với S1 theo từng mục, kiểm math/figure/canonical item mapping; khi **trọn Chuyên đề 2** có source full mới chuẩn bị batch review Markdown/TXT `Temp_` thật + prompt ngắn 3–6 câu, đúng 5 Permanent Sources v2.1. Không tự tạo biên bản Academic/PED PASS.
+**Đầu ra tiếp theo:** Kiểm hai câu mới T01/P01 không trùng ngân hàng thực, sau đó biên soạn Phần 2–7 với S1 theo từng mục, kiểm math/figure/canonical item mapping; khi **trọn Chuyên đề 2** có source full mới chuẩn bị batch review Markdown/TXT `Temp_` thật + prompt ngắn 3–6 câu, đúng 5 Permanent Sources v2.1. Không tự tạo biên bản Academic/PED PASS.
