@@ -11,7 +11,11 @@ const expr=s=>[...s.matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]/g)].map(x=>(
 const k=src.slice(a,b);
 assert.equal(expr(k).length,20,"Expression count drift");
 assert.equal(fnv(JSON.stringify(expr(k))),"20a9cd2f","Source mathematical expressions changed; academic review classification required");
-assert.equal(fnv(src.slice(0,a)),"0de94b33","Header/deep links changed");
+const rawHeader=src.slice(0,a);
+const scopedAddition=/<!-- G10_CHII_FULL_R03_ALL_BEGIN -->[\s\S]*?<!-- G10_CHII_FULL_R03_ALL_END -->\n\n/g;
+assert.equal([...rawHeader.matchAll(scopedAddition)].length,1,"Exactly one bounded source-locked R03 concept-first addition before S1 knowledge");
+const pristineHeader=rawHeader.replace(scopedAddition,"");
+assert.equal(fnv(pristineHeader),"0de94b33","Original Header/deep links changed (recovered after only bounded R03 addition)");
 assert.equal(fnv(src.slice(b)),"4cd03416","Examples, original SVG, HELP_ID, canonical item links or sources changed");
 for(const heading of ["### 1. Dạng bất phương trình bậc nhất hai ẩn","### 2. Cặp nghiệm và miền nghiệm","### 3. Quy trình biểu diễn miền nghiệm","### 4. Điều kiện thực tiễn"])assert(k.includes(heading),"Missing AP1 heading "+heading);
 for(const label of ["**Định nghĩa:**","**Miền nghiệm và đường biên:**","**Quy trình 5 bước:**","**Lỗi cần tránh:**","**Điều kiện nguyên:**","**Điều kiện của mẫu:**"])assert(k.includes(label),"Missing AP4 group "+label);
