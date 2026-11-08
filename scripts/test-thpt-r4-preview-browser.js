@@ -244,14 +244,25 @@ async function ready(page,path){
       await dlg.locator("[data-thpt-modal-close]").click();
     }
     await ready(page,"thu-vien/tu-luan-chuong-vii/");
-    assert.equal(await page.locator('[data-thpt-written-canonical]').count(),4,
-      "Four ChVII Written cards must be independently accessible");
+    assert.equal(await page.locator('[data-thpt-written-canonical]').count(),6,
+      "Four historic plus two reviewed transfer ChVII Written cards must be independently accessible");
     assert.equal(await page.locator('.thpt-r4-written-card[data-thpt-kind="anchor"]').count(),1,
       "Anchor is a tag on one Written item, not an extra duplicate");
     assert.equal(await page.locator('.thpt-r4-written-card details[open]').count(),0,
       "All ChVII Written solutions and rubrics must start closed");
-    assert.equal(await page.locator('.thpt-r4-written-card details').count(),4,
-      "Each Written item must retain one reviewed solution/rubric");
+    assert.equal(await page.locator('.thpt-r4-written-card details').count(),8,
+      "Four historic Written require one closed solution each; two reviewed transfer Written require a closed hint and solution each");
+    const historicChVII=["THPT-G10-CHVII-W19-01","THPT-G10-CHVII-W20-01","THPT-G10-CHVII-W21-ANCHOR-01","THPT-G10-CHVII-W22-01"];
+    for(const id of historicChVII)assert.equal(await page.locator('[data-thpt-written-canonical="'+id+'"] details').count(),1,
+      "Original historic Written disclosure missing or duplicated: "+id);
+    for(const kind of ["ELLIPSE","HYPERBOLA"]){
+      const card=page.locator('[data-thpt-written-canonical="THPT-G10-CHVII-W22-'+kind+'-TR01"]');
+      assert.equal(await card.count(),1,"One reviewed new Written per transfer item "+kind);
+      assert.equal(await card.locator("details").count(),2,"Separate voluntary hint and worked solution/rubric "+kind);
+      assert.equal(await card.locator("details[open]").count(),0,"No transfer hints or answers before opening "+kind);
+      assert.equal(await card.locator("details").nth(1).locator("table").count(),1,
+        "Reviewed four-point rubric must remain in the second closed solution "+kind);
+    }
     await ready(page,"sgk/chuong-vii/tu-kiem-tra-chuong/");
     assert.equal(await page.locator("[data-thpt-secure-readiness]").count(),0);
     assert.equal(await page.locator("[data-thpt-open-quiz]").count(),0,
