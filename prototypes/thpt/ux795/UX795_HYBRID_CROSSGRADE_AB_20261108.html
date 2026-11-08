@@ -56,7 +56,7 @@ header p{margin:4px 0;color:#dce5ff;font-size:.91rem}
 </head><body>
 <header><div style="font-weight:800;font-size:.75rem;letter-spacing:.1em">G LEARNING · SLM THPT · RESEARCH / RELEASE QA · ISSUE #795</div>
 <h1>Mô hình lai — đối chiếu A/B trên cùng học liệu SGK</h1>
-<p>Thí điểm 3 bài đại diện lớp 10, 11, 12 · Không thay trang production</p></header>
+<p>Thí điểm 3 bài đại diện lớp 10, 11, 12 · Không thay trang production; B là minh họa chọn lọc, chưa đủ tất cả outcome</p></header>
 <main class="wrap">
 <div class="notice"><strong>Bản thí điểm chưa phát hành.</strong> A là đoạn bài học HTML đã xuất bản; B là nghiên cứu tổ chức lại những phần đã có, không thêm câu đánh giá. Giữ đáp án tự mở, không chấm điểm, không lưu dữ liệu học sinh hay Mastery. Mô hình B chưa được phản biện sư phạm, không dùng để công bố như một bài đã duyệt.</div>
 <div class="tools">
@@ -124,15 +124,15 @@ function g10(source){
    const tries=map.map(n=>{
      const ch=expl.chunks[n];
      if(!ch)return '';
-     const q=findParagraphs(ch.body,'Tự thử trước Core').join('');
+     const q=findParagraphs(ch.body,'Tự thử trước Core').join('').replace(/<strong>Tự thử trước Core:?<\/strong>/g,'');
      const answers=extractDetails(ch.body).slice(0,1).join('');
      return q?'<div class="application"><strong>Em vận dụng (tự đối chiếu):</strong>'+q+answers+'</div>':'';
    }).join('');
    knowledge+='<div class="concept">'+k.heading+k.body+(i===3?figure:'')+tries+'</div>';
  });
- knowledge+='<details class="source-preserve"><summary>Xem toàn bộ lời dẫn gốc để đối chiếu nội dung</summary>'+s[0].body+'</details>';
+ // Full original is preserved in A/source JSON, never duplicate a canonical First Try in B.
  return section('Khám phá kiến thức',discover)
-   +section('Thuật ngữ · Kiến thức và kỹ năng',listConcepts(kn)+'<p class="source-data">Bản đồ nội dung lấy nguyên từ tiêu đề nguồn; phần kỹ năng tổng kết theo S1 cần AUTHORING phê duyệt.</p>')
+   +section('Thuật ngữ · Kiến thức và kỹ năng',listConcepts(kn)+'<p class="source-data">Bản đồ nội dung trích từ tiêu đề nguồn. Phần kỹ năng và nội dung giải thích được chọn lọc đang CHỜ AUTHORING duyệt; không phải học liệu hoàn chỉnh.</p>')
    +section('Kiến thức SGK',knowledge)
    +section('Ví dụ giải toán',s[2].body)
    +section('Lỗi thường gặp và cách khắc phục',removeFigure(s[3].body))
