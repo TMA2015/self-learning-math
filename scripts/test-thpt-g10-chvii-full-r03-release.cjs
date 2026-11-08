@@ -203,7 +203,8 @@ for(const n of [19,20,21,22]){
 assert.equal(all.length,23);
 const b22=read("docs/thpt-preview/sgk/chuong-vii/bai-22.md");
 for(const tag of ["ELLIPSE","HYPERBOLA"]){
- const part=b22.match(new RegExp("<!-- G10_CHVII_TRANSFER_BEGIN:"+tag+" -->([\\\\s\\\\S]*?)<!-- G10_CHVII_TRANSFER_END:"+tag+" -->"))?.[1];
+ const begin="<!-- G10_CHVII_TRANSFER_BEGIN:"+tag+" -->",end="<!-- G10_CHVII_TRANSFER_END:"+tag+" -->";
+ const part=b22.split(begin).length===2&&b22.split(end).length===2?b22.split(begin)[1].split(end)[0]:null;
  assert(part,"Missing reviewed transfer module "+tag);
  const id="THPT-G10-CHVII-TRY-"+tag+"-TR01",help="HELP-G10-CHVII-"+tag+"-TR01",ex="EX-G10-B22-"+tag+"-TR01";
  assert(part.includes('data-thpt-first-try-id="'+id+'"')&&part.includes('data-thpt-help-id="'+help+'"')&&part.includes("#### Ví dụ giải có hướng dẫn — "+ex),"Canonical First Try/D2/HELP labels "+tag);
@@ -224,7 +225,8 @@ const wRange=/\n<!-- G10_CHVII_TRANSFER_WRITTEN_ALL_BEGIN -->[\s\S]*?<!-- G10_CH
 assert(wRange.test(w));assert.equal(shaText(w.replace(wRange,"")),"ebc70018a168998c7dd43b34c3e195a2b1e15ed7","Four historic Written must remain exact");
 for(const tag of ["ELLIPSE","HYPERBOLA"]){
  const id="THPT-G10-CHVII-W22-"+tag+"-TR01";
- const html=w.match(new RegExp("<!-- G10_CHVII_TRANSFER_WRITTEN_BEGIN:"+id+" -->([\\\\s\\\\S]*?)<!-- G10_CHVII_TRANSFER_WRITTEN_END:"+id+" -->"))?.[1];
+ const begin="<!-- G10_CHVII_TRANSFER_WRITTEN_BEGIN:"+id+" -->",end="<!-- G10_CHVII_TRANSFER_WRITTEN_END:"+id+" -->";
+ const html=w.split(begin).length===2&&w.split(end).length===2?w.split(begin)[1].split(end)[0]:null;
  assert(html&&html.includes('data-thpt-written-canonical="'+id+'"')&&(html.match(/<details>/g)||[]).length===2,"One canonical new Written and optional hint + solution "+id);
  assert(!/<details[^>]+open/.test(html),"No automatic answer/rubric exposure "+id);
 }
