@@ -1,5 +1,9 @@
 # Temp — AUTHORING R17 | Full Topic Hàm số và đồ thị M1–M7 Q01–Q18 closeout preflight
 
+## 08/11 R19 Q15 — 2/2 historical G10 Written canonical sources verified (no new math)
+
+[Exact source Q15 addendum](prototypes/thpt/content-drafts/topic-functions/Temp_TOPIC_FUNCTIONS_G10_SHARED_WRITTEN_SOURCE_EXACT_REUSE_R19_20261108.md), Git blob `89851c0ae78ab53b4d89d50391579806bc4f0dd6`: original main `docs/thpt-preview/thu-vien/tu-luan.md` blob `4da918f36d30c9b7110099e81fc88943e5b7705b` has real `HPT-G10-CHVI-WRI-15-01` with original rubric **/5** and `HPT-G10-CHVI-WRI-15-02` original **/6**, and established G10 ChVI source placement registry blob `1634608678b54c2bdf0598e8520a4cad15d5b1ae` contains the exact two. The unusual **HPT prefix is original canonical**, not a typo. This closes the previously provisional 2 G10 Written source-identity question **without changing item/answer/rubric or NotebookLM-reviewing math again**. Runtime reuse is RELEASE QA.
+
 ## 08/11 OWNER INDEPENDENT REVIEW: ACADEMIC + PED PASS CLOSED
 
 The new 30-item `TOPIC_READINESS` R01 was independently audited by NotebookLM (same owner-held three-file private packet) and received **Academic PASS + Pedagogical PASS**, 48/48 outcome coverage, P0/P1/P2=0, no revisions. The original unchanged M1–M7 academic/PED PASS remains preserved. [Public safety-only Q18 verdict receipt](../review-packets/Temp_TOPIC_FUNCTIONS_FULL_R18_Q18_OWNER_INDEPENDENT_VERDICT_RECEIPT_R01_20261108.md), Git blob `d2e86bac887ff04cf41f5cc9a1fa3ca622a9ca63`; new R18 public unified source Git blob `2340ea4975b37a457363eea59dd617070934983c`. **No private questions/keys/solutions/rubric on GitHub.**
