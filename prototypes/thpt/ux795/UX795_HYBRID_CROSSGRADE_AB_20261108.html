@@ -77,6 +77,7 @@ const buttons=[...document.querySelectorAll('[data-view]')];
 const status=document.getElementById('view-status');
 function cleanTechnical(html){
  return html.replace(/<code>(?:FIG-G(?:10|11|12)[^<]+|HELP-G(?:10|11|12)[^<]+|THPT-G(?:10|11|12)[^<]+)<\/code>/g,'<span class="source-data" title="Mã nguồn nội bộ được ẩn trong giao diện thí điểm">[mã nguồn đã ẩn]</span>')
+ .replace(/\bFIG-G10-B02-[A-Z0-9-]+\b/g,'hình minh họa')
  .replace(/\bVD-G11-B08-0[1-4]:\s*/g,'')
  .replace(/\bEX-G12-B07-0[1-4] · O0[1-4] — /g,'')
  .replace(/\bFIG-G12-CHII-B07-R00\.svg\b/g,'hình tọa độ không gian')
