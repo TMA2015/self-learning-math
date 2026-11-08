@@ -36,6 +36,7 @@ header p{margin:4px 0;color:#dce5ff;font-size:.91rem}
 .hybrid .two-column{display:grid;grid-template-columns:1fr 1fr;gap:13px}
 .hybrid .box{background:#f7f9fd;border:1px solid #dde6f5;border-radius:12px;padding:13px 17px}
 .hybrid .box h3{margin-top:0;border:none;padding:0}
+.hybrid .terms-after{border-top:1px dashed #d3dded;margin-top:22px;padding-top:12px}
 .hybrid .terms{display:flex;flex-wrap:wrap;gap:7px;list-style:none;padding:0}
 .hybrid .terms li{background:#eef3fc;color:#274b8f;border-radius:8px;padding:5px 10px;font-size:.89rem;margin:0}
 .hybrid .conclusion{background:#fff5da;border:1px solid #e9cc7d;border-left:4px solid #dcaf3c;border-radius:8px;padding:13px 16px;margin:13px 0}
@@ -132,8 +133,7 @@ function g10(source){
    knowledge+='<div class="concept">'+k.heading+k.body+(i===3?figure:'')+tries+'</div>';
  });
  // Full original is preserved in A/source JSON, never duplicate a canonical First Try in B.
- return section('Khám phá kiến thức',discover)
-   +section('Thuật ngữ · Kiến thức và kỹ năng',listConcepts(kn)+'<p class="source-data">Bản đồ nội dung trích từ tiêu đề nguồn. Phần kỹ năng và nội dung giải thích được chọn lọc đang CHỜ AUTHORING duyệt; không phải học liệu hoàn chỉnh.</p>')
+ return section('Khám phá kiến thức',discover+'<div class="terms-after"><h3>Thuật ngữ và kiến thức, kỹ năng</h3>'+listConcepts(kn)+'<p class="source-data">Bản đồ nội dung trích từ tiêu đề nguồn. Phần kỹ năng và nội dung giải thích được chọn lọc đang CHỜ AUTHORING duyệt; không phải học liệu hoàn chỉnh.</p></div>')
    +section('Kiến thức SGK',knowledge)
    +section('Ví dụ giải toán',s[2].body)
    +section('Lỗi thường gặp và cách khắc phục',removeFigure(s[3].body))
@@ -146,11 +146,12 @@ function g11(source){
  const q=s[1].body;
  const ex1=examples.chunks[0]||{heading:'',body:''};
  const reasons=(examples.chunks.slice(-1)[0]?.body.match(/<li\b[\s\S]*?<\/li>/g)||[]);
- const intro=section('Khám phá kiến thức','<div class="two-column"><div class="box"><h3>Cùng tìm hiểu</h3>'+why+'</div><div class="box"><h3>Ví dụ trực quan</h3>'+ex1.heading+ex1.body+(reasons[0]||'')+'</div></div>');
- const terms=section('Thuật ngữ · Kiến thức và kỹ năng','<ul class="terms"><li>Mẫu số liệu ghép nhóm</li><li>Tần số</li><li>Cỡ mẫu</li><li>Độ rộng nhóm</li><li>Tỉ lệ nhóm</li></ul><p class="source-data">Các thuật ngữ đã xuất hiện trong định nghĩa gốc; bản tóm tắt kỹ năng cần xác nhận S1.</p>');
+ const summary='<div class="terms-after"><h3>Thuật ngữ và kiến thức, kỹ năng</h3><ul class="terms"><li>Mẫu số liệu ghép nhóm</li><li>Tần số</li><li>Cỡ mẫu</li><li>Độ rộng nhóm</li><li>Tỉ lệ nhóm</li></ul><p class="source-data">Các thuật ngữ đã xuất hiện trong định nghĩa gốc; bản tóm tắt kỹ năng cần xác nhận S1.</p></div>';
+ const firstReason=(reasons[0]||'').replace(/<\/?li[^>]*>/g,'');
+ const intro=section('Khám phá kiến thức','<div class="two-column"><div class="box"><h3>Cùng tìm hiểu</h3>'+why+'</div><div class="box"><h3>Ví dụ trực quan</h3>'+ex1.heading+ex1.body+(firstReason?'<p class="reason"><strong>Vì sao chọn cách giải?</strong> '+firstReason+'</p>':'')+'</div></div>'+summary);
  const know=section('Kiến thức SGK',s[2].body+fig+'<div class="application"><strong>Em vận dụng (tự đối chiếu):</strong>'+q+'</div>');
  const ex=examples.chunks.slice(1).filter(x=>/Ví dụ/.test(x.heading)).map((x,i)=>'<div class="example">'+x.heading+x.body+(reasons[i+1]?'<p class="reason"><strong>Vì sao chọn cách giải?</strong> '+reasons[i+1].replace(/<\/?li[^>]*>/g,'')+'</p>':'')+'</div>').join('');
- return intro+terms+know+section('Ví dụ giải toán',ex)+section('Lỗi thường gặp và cách khắc phục',s[5].body)
+ return intro+know+section('Ví dụ giải toán',ex)+section('Lỗi thường gặp và cách khắc phục',s[5].body)
  +'<p class="demo-warning">Các ví dụ và lý do vẫn lấy từ nguồn B08 đã phát hành; dời lý do về ngay sau từng ví dụ, không thêm bài toán.</p>';
 }
 function g12(source){
@@ -158,14 +159,14 @@ function g12(source){
  const reasons=(s[3].body.match(/<p\b[^>]*>[\s\S]*?<\/p>/g)||[]);
  const app=reasons.find(x=>x.includes('EX-G12-B07-03'))||'';
  const keep=reasons.filter(x=>x!==app);
- const intro=section('Khám phá kiến thức','<div class="two-column"><div class="box"><h3>Cùng tìm hiểu</h3>'+s[0].body+'</div><div class="box"><h3>Ví dụ trực quan</h3>'+app+'</div></div>');
- const terms=section('Thuật ngữ · Kiến thức và kỹ năng',listConcepts(knowledge)+'<p class="source-data">Chỉ trích các đầu mục nguồn; bản Thuật ngữ/Kỹ năng học sinh cần AUTHORING duyệt.</p>');
+ const summary='<div class="terms-after"><h3>Thuật ngữ và kiến thức, kỹ năng</h3>'+listConcepts(knowledge)+'<p class="source-data">Chỉ trích các đầu mục nguồn; bản Thuật ngữ/Kỹ năng học sinh cần AUTHORING duyệt.</p></div>';
+ const intro=section('Khám phá kiến thức','<div class="two-column"><div class="box"><h3>Cùng tìm hiểu</h3>'+s[0].body+'</div><div class="box"><h3>Ví dụ trực quan</h3>'+app+'</div></div>'+summary);
  let content='';
  knowledge.chunks.forEach((k,i)=>{content+='<div class="concept">'+k.heading+k.body+(i===0?fig:'')+'</div>'});
  content+='<div class="application"><strong>Em vận dụng (tự đối chiếu):</strong>'+s[4].body+'</div>';
  const table=s[2].body.match(/<table\b[\s\S]*?<\/table>/)?.[0]||'';
  const errors=table||'<p>Xem lại phần điều kiện và ví dụ ngay trước đó.</p>';
- return intro+terms+section('Kiến thức SGK',content)+section('Ví dụ giải toán',keep.map(x=>'<div class="example">'+x+'</div>').join(''))
+ return intro+section('Kiến thức SGK',content)+section('Ví dụ giải toán',keep.map(x=>'<div class="example">'+x+'</div>').join(''))
    +section('Lỗi thường gặp và cách khắc phục',errors)
    +'<p class="demo-warning">Dùng nguyên SVG đã được xuất bản, đưa về cạnh định nghĩa hệ ba trục. Nội dung toán không được bổ sung.</p>';
 }
