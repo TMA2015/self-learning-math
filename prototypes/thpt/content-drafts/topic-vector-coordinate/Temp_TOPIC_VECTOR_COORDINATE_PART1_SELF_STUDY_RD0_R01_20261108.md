@@ -5,11 +5,11 @@
 **Chuẩn duy nhất:** `SLM-THPT-QUALITY-ONE / 1.2.0`, Q01–Q18.  
 **Phạm vi:** Phần 1 của đúng **một** chuyên đề xuyên lớp; không áp Chương/Bài SGK thành các trang học mới.  
 **Kiến trúc người học:** đúng ba mục `Kiến thức / Luyện tập / Tự kiểm tra`; tệp này chuẩn bị **Kiến thức + Luyện tập** và metadata giới hạn Tự kiểm tra, không phải RD1.  
-**Trạng thái phần:** RD0 draft đủ khung D1–D6; chưa qua S1 PDF-index tự kiểm / NotebookLM; không gán `PASS` cho phần hoặc toàn chuyên đề.
+**Trạng thái phần:** RD0 draft đủ khung D1–D6; **đã đối chiếu trực tiếp SGK/SBT S1 và trang in ↔ trang PDF của Bài 7**; chưa NotebookLM Topic, không gán Academic/PED `PASS` cho phần hoặc toàn chuyên đề.
 
 ### Nguồn S1 và bảo toàn thành quả đã duyệt
 
-**Phạm vi S1 trực tiếp của phần 1:** SGK Toán 10 KNTT tập 1, Chương IV, **Bài 7 — Các khái niệm mở đầu, trang in 46–50**; SBT Toán 10 KNTT tập 1, **Bài 7, trang in 45–47**. Đây là số **trang in** trích từ gói SGK đã có **reviewer độc lập** trong repository; **chưa ghi chỉ số trang PDF** vì chưa tự mở PDF scan gốc trong lượt này. Không sử dụng kiến thức Bài 8–11 hay lớp 11–12 như điều kiện bắt buộc của Phần 1. Các phần sau sẽ kiểm trực tiếp S1 theo từng phạm vi.
+**Phạm vi S1 trực tiếp của phần 1:** SGK Toán 10 KNTT tập 1, Chương IV, **Bài 7 — Các khái niệm mở đầu, trang in 46–50**; SBT Toán 10 KNTT tập 1, **Bài 7, trang in 45–47**. **Đã trực tiếp đối chiếu** hai bản PDF scan nguyên trang từ thư mục Drive `KNTT TOAN 10` của chủ dự án: SGK trang **in 46–50 ↔ PDF trang 47–51 (1-based, index 46–50)**; SBT trang **in 45–47 ↔ PDF trang 46–48 (1-based, index 45–47)**. Hai bản scan đều có lệch **+1 trang PDF** ở phạm vi này. SGK hash SHA256 `3cbb335780dc0f2f4a034a55eb542e3bbe67693412b10a90ca1dffe9ea50eac2`; SBT hash SHA256 `2b1b98665b2c5cccb99f6699a43cbf71b8b2dfc63bdaec759a7b1c51778e2fa1`. Đây là **receipt nguồn trực tiếp của riêng Phần 1**, không phải chứng cứ đã tự đối chiếu SGK/SBT của 6 phần còn lại. Không sử dụng kiến thức Bài 8–11 hay lớp 11–12 như điều kiện bắt buộc của Phần 1. Các phần sau sẽ kiểm trực tiếp S1 theo từng phạm vi.
 
 **Một nguồn canonical SGK đã PASS (chỉ đúng snapshot SGK):**
 - `prototypes/thpt/content-drafts/THPT_G10_CHIV_B07_B08_D1D6_AUTHORING_R01_SNAPSHOT.md`, Git blob `42b206e31421b33860a1bf697d2d04b7aba992cf`.
@@ -172,7 +172,7 @@ Phần 1 **không tạo ngân hàng Readiness riêng**; Chuyên đề 2 về sau
 
 | Gate | Trạng thái và điều kiện đóng |
 | --- | --- |
-| Q01–Q02/S1 | SGK/SBT Toán 10 B07 trang **in** đã có reviewer receipt; chưa tự đối chiếu số trang PDF index và cross-grade S1 cho 6 phần còn lại |
+| Q01–Q02/S1 | **Đã tự đối chiếu** Toán 10 SGK B07 trang in 46–50 ↔ PDF 47–51; SBT B07 trang in 45–47 ↔ PDF 46–48 và khớp quy ước vectơ-không. **S1 của 6 phần còn lại chưa được đối chiếu**, vì vậy không suy Q01/Q02 PASS cho toàn chuyên đề. |
 | Q03–Q08 | D1–D6 được ánh xạ tới item/EX/FIG/Written có thật; kiểm đủ họ dạng độc lập ở Topic bằng review chuyên đề, không suy SGK PASS |
 | Q09–Q14 | Có trình tự PED + first try; cần review độc lập nội dung Topic mới |
 | Q15 | 8 public formative + 1 Written = **9 unique câu/bài** được tham chiếu, **0 item clone**, 3 EX dùng lại bằng ID gốc; placement còn ở mức đề xuất |
