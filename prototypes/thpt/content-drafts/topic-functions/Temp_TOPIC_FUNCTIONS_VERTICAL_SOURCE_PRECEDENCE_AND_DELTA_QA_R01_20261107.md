@@ -1,5 +1,21 @@
 # Kiểm soát một nguồn học liệu Topic “Hàm số và đồ thị” · SOURCE PRECEDENCE & DELTA R01
 
+## LATEST 08/11 AUTHORING FINAL ACADEMIC CLOSEOUT — private RD1 independent PASS accepted, source frozen
+
+**Supersedes older historical `PENDING_PRIVATE_RD1` and metadata HOLD statements below.** Owner-supplied NotebookLM verdict on the original owner-held 30-question/48-outcome Topic Readiness R01 is **Academic PASS + Pedagogical PASS, P0/P1/P2=0, MINIMAL_DELTA=0**, correct scope/S1/five Permanent v2.1. No repeat reviewer requests under [owner decision #787](https://github.com/TMA2015/self-learning-math/issues/787). Prior M1–M7 public Knowledge and Practice independent Academic/PED PASS preserved unchanged.
+
+- **ONE PUBLIC SOURCE:** [Full Topic R18](prototypes/thpt/content-drafts/topic-functions/Temp_TOPIC_FUNCTIONS_FULL_PUBLIC_CANONICAL_SOURCE_R18_20261108.md), Git blob `2340ea4975b37a457363eea59dd617070934983c`: Kiến thức + Luyện tập + protected independent Tự kiểm tra **interface requirements only**, 48 outcomes, one original public bank; no private exam stems/keys/rubrics on GitHub.
+- **Q18 SAFE REVIEW RECEIPT:** [Independent owner report acceptance](prototypes/thpt/review-packets/Temp_TOPIC_FUNCTIONS_FULL_R18_Q18_OWNER_INDEPENDENT_VERDICT_RECEIPT_R01_20261108.md), Git blob `d2e86bac887ff04cf41f5cc9a1fa3ca622a9ca63`: two owner-submitted presentation variants record **one** accepted original private R01 review, with SHA hashes; privacy preserved. Private ZIP SHA256 `59dba34b09695f8b127e10ab7ec8cc295b03293e9cbdeedf8bc2218799eb658a` owner-held only.
+- **A1–A7 / Q01–Q18 SOURCE PREFLIGHT:** [R17](prototypes/thpt/content-drafts/topic-functions/Temp_TOPIC_FUNCTIONS_FULL_AUTHORING_Q01_Q18_A1_A7_PREFLIGHT_R17_20261107.md), Git blob `0ef55d29a9c5aebbe3224cbdefddcc9969afbc8d`: authoring scholarly Q16/A3/A6/A7 review closure accepted, no active mathematical/PED defect.
+- **ONE V2 AUTHORING DRAFT:** [Topic R18 handoff](prototypes/thpt/release-handoffs/THPT-TOPIC-FUNCTIONS-G10-G12-FULL-R18_HANDOFF_V2_DRAFT_20261108.md), Git blob `4fbb0bafa91414c9d88a08de54f7ca5ad60492e3`: 48 outcomes, **116 unique proposed placed public IDs / 122 proposed placement rows**, shared bank/28 Written refs, private assessment count/hash, all original source/receipt hashes. No inflated claim that all 192 existing bank IDs are actually placed or that any placement is live.
+- **ACTUAL INTAKE BLOCKER:** [Issue #790](https://github.com/TMA2015/self-learning-math/issues/790), `scripts/test-thpt-handoff-gate-v2.cjs` currently admits only SGK types and standard versions 1.0/1.1, not legitimate `TOPIC/FULL_TOPIC_LEARNING_PATH` nor effective unified v1.2.0. Do **not** fake an SGK type/change standards to pass, do **not** create `ready/` or REGISTER row until owner authorizes compatible intake. AUTHORING is **academically finished on this scoped Topic**, but technical `CONTENT_READY` gate is **HELD BY RELEASE INTAKE CONTRACT**. Final Submit secrecy/runtime, genuine mastery, SVG/Golden/AP1–AP5/CI and merge/deploy remain RELEASE's job after authorized intake.
+- G10 two historic Written source IDs have `HPT` prefix from original R01 and are **not silently renamed** to a fabricated runtime `THPT` ID. Release-specific exact bank import/legacy alias check remains in the V2 draft.
+
+**CURRENT STATE:** `TOPIC_M1_M7_ACADEMIC_PED_ALL=PASS_ACCEPTED`; `PRIVATE_TOPIC_RD1_R01=PASS_ACCEPTED`; `Q15_SOURCE_REUSE_NO_CLONE=YES`; `Q18_SOURCE_RECEIPTS=FROZEN`; `V2_HANDOFF_PREPARED=YES_DRAFT`; `TOPIC_V2_GATE_UNSUPPORTED=OPEN_ISSUE_790`; `FULL_TOPIC_CONTENT_READY=NO`; `MERGE_DEPLOY=NO`. **Do not ask owner for another NotebookLM review.**
+
+---
+
+
 ## LATEST OWNER-AUTHORIZED CLOSEOUT — R14–R17, true remaining Q16 private review (07/11/2026)
 
 - [R14 clean student Kiến thức M1–M7](prototypes/thpt/content-drafts/topic-functions/Temp_TOPIC_FUNCTIONS_M1_M7_STUDENT_KNOWLEDGE_CLEAN_FLOW_R14_20261107.md), Git blob `3de111faf1a0080cad3d74f1a396975e07aec31b`, source-equivalent concept-first paragraphs from already accepted M1–M7, with no reauthored mathematical statements or new review requirement.
