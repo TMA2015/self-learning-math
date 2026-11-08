@@ -143,6 +143,7 @@ M là trung điểm AB ⇔ $\overrightarrow{MA}+\overrightarrow{MB}=\vec0$. Nế
 **D6:** `HELP-G10-B08-01` ghép sai đầu–đuôi → vẽ A→B→C rồi thử lại; `HELP-G10-B08-02` nhầm trung điểm/trọng tâm → đánh dấu M/G và dùng đúng hệ thức; `HELP-G10-B09-01` ghi độ dài âm → tách dấu hệ số/hướng với $|k|$; `HELP-G10-B09-02` nhầm tỷ số AG:GM và AG:AM → vẽ trung tuyến và ghi 2:1 trước khi dùng công thức.
 
 ---
+
 # PHẦN 3/7 — Tọa độ vectơ và tích vô hướng trong mặt phẳng
 
 **Nguồn S1:** SGK Toán 10 KNTT tập 1, Bài 10 trang in 60–65/PDF 61–66 và Bài 11 trang in 66–70/PDF 67–71; SBT Bài 10 trang in 55–58/PDF 56–59 và Bài 11 trang in 59–65/PDF 60–66. Bản PDF SGK/SBT đã mở tại các mốc bài; canonical SGK gốc `a9f6fab8...` giữ nguyên. 
@@ -220,6 +221,7 @@ Các `ITEM_ID` hoàn chỉnh tương ứng có tiền tố `THPT-TOPIC-VEC-P03-`
 **D6 đường quay lại:** (i) lấy nhầm tọa độ B làm AB ⇒ thử A=O xem khi nào công thức trùng; (ii) dấu sai của tọa độ ⇒ vẽ lưới Oxy, kiểm B=A+AB; (iii) lạm dụng dot=0 với vectơ-không ⇒ đọc lại điều kiện góc; (iv) sai trung điểm/trọng tâm ⇒ giải thích vì sao chia 2 hay 3 trước khi tính. Sau sửa làm lại câu khác cùng outcome, không dùng đáp án vừa xem làm RD1.
 
 ---
+
 # PHẦN 4/7 — Phương pháp tọa độ giải hình học phẳng
 
 **Nguồn S1:** SGK Toán 10 KNTT Tập Hai, Chương VII B19–B22 **trang in 30–56 (PDF #31–57)**, cuối chương 57–59 (PDF #58–60). Các mốc đã xem trực tiếp: B19 bắt đầu trang in 30/PDF31; B21 đường tròn trang in 43/PDF44; B22 ba đường conic trang in 48/PDF49. SBT Toán 10 Tập Hai ChVII được cung cấp nguyên bản; **không gán số trang bài SBT chưa đối chiếu từng tờ**, yêu cầu reviewer S1 kiểm sâu những dạng còn nghi vấn. Các câu dưới đây do tác giả biên soạn, không chép nguyên bài SGK/SBT.
@@ -299,6 +301,7 @@ Một điểm M thuộc đường tròn tâm I(a;b), bán kính R>0 khi $IM=R$. 
 **D6 theo lỗi:** (1) pháp tuyến và chỉ phương nhầm nhau ⇒ chấm dot bằng 0, tự dựng; (2) sai c trong đường thẳng ⇒ thế điểm gốc vào phương trình; (3) khoảng cách âm ⇒ đặt trị tuyệt đối; (4) đường tròn không có R>0 ⇒ hoàn thành bình phương và kiểm; (5) parabola sai tiêu điểm ⇒ giải thích p vs p/2 bằng khoảng cách đến đường chuẩn. Sai conic phải vẽ lại tiêu điểm/trục và thử một điểm, không thay bằng thao tác nhớ mẹo.
 
 ---
+
 # PHẦN 5/7 — Nhìn và suy luận quan hệ hình học trong không gian
 
 **S1:** SGK Toán 11 Tập Một Chương IV **70–103** (PDF trang 71–104), SBT Tập Một 53–74 (PDF 54–75), trọng tâm quan hệ điểm–đường–mặt, song song, phép chiếu song song; SGK Toán 11 Tập Hai Chương VII B22–B26 **27–60** (PDF 28–61), bài V thể tích B27 61–63 khi cần hiểu chiều cao; SBT Tập Hai B22–B26 in24–37/PDF25–38, B27 in38–40/PDF39–41. Bản scan đã xem ở các mốc nguồn; bài này là **tiền đề hình học độc lập**, không đưa Oxyz vào trước khi học sinh biết tại sao phải dùng tọa độ.
@@ -394,6 +397,7 @@ Hai mặt phẳng có thể vuông góc: có một đường nằm trong mặt t
 **D6:** (1) Chéo nhau ≠ song song ⇒ xác nhận đồng phẳng; (2) hai đường vuông góc về phương có thể không giao ⇒ dựng đường song song qua điểm chung; (3) đường–mặt chỉ từ một phương ⇒ lập phản ví dụ d nằm trong mặt; (4) góc đường–mặt ⇒ tự dựng chân chiếu rồi đọc cạnh đối/cạnh huyền; (5) khoảng cách ⇒ đánh dấu đoạn ngắn nhất vuông góc cả hai đối tượng. Trở lại ví dụ liên quan và luyện câu khác, không xem trước lời giải RD1.
 
 ---
+
 # PHẦN 6/7 — Vectơ và hệ tọa độ trong không gian Oxyz
 
 **S1:** SGK Toán 12 KNTT Tập Một Chương II B06–B08 **trang in 45–72 ↔ PDF 47–74 (1-based)**; SBT Tập Một **trang in 38–54 ↔ PDF 36–52**, lưu ý **hai PDF có offset khác nhau**. SGK B06 vectơ không gian p45–59, B07 hệ tọa độ p60–66, B08 biểu thức tọa độ p67–72; trích từ nguồn gốc và canonical SGK blob `856a37bd16d2746ffc2e12906de18d1f4338a3b6` (SGK PASS chỉ đúng snapshot SGK). Không nhân bản các câu gốc khi đặt sang Topic.
@@ -481,6 +485,7 @@ Chọn gốc/tọa độ/đơn vị trước khi tính. Một tọa độ âm ch
 **D6:** Nếu nhầm OA và điểm A, kiểm O=(0;0;0); nếu đảo cuối−đầu, lấy BA và xác nhận AB+BA=0; nếu bỏ tọa độ z, dựng hộp và kiểm chênh cao; nếu dot=0 với vectơ-không, đọc lại điều kiện góc; nếu sai trung điểm, tìm M bằng MA+MB=0 rồi đối chiếu. Mỗi lỗi có thao tác sửa trước khi quay lại câu tương tự.
 
 ---
+
 # PHẦN 7/7 — Phương pháp tọa độ giải hình học trong không gian
 
 **Nguồn S1:** SGK Toán 12 KNTT Tập Hai, Chương V **B14–B17, trang in 29–60 ↔ PDF 31–62**, cuối chương 61–63/PDF 63–65. SBT Tập Hai B14–B17 trang in 22–34 nhưng **thiếu hẳn trang SBT in25** trong scan: in22–24 tương ứng PDF21–23; tiếp theo PDF24 đã là in26, các trang B15–B17 tiếp nối tới in34/PDF32. Reviewer không được tưởng trang 25 đã được quan sát; không dựa vào câu 5.6–5.7 để coi Q01 tự PASS. Nguồn gốc SGK canonical `11eb2834cfdb4a24685157f84666c2bb0767970a`, lịch sử targeted Q01 và rubric đã lưu tại manifest SGK, **không** chuyển tự động PASS sang Topic.
@@ -579,6 +584,7 @@ Tập điểm cách đều I(a;b;c) một khoảng R>0 có phương trình $(x-a
 **D6:** (1) Sai mặt phẳng vì hằng số ⇒ thay điểm đã cho; (2) nhầm pháp tuyến với chỉ phương ⇒ dựng u,n và hỏi đường có cắt mặt không; (3) viết chính tắc chia cho 0 ⇒ chuyển sang tham số; (4) nhầm trùng với song song ⇒ chuẩn hóa cả hằng số; (5) tưởng mọi mặt cắt mặt cầu đều là đường tròn ⇒ so h với R trước; (6) nhầm B14–B17 ⇒ không dùng kết quả mặt cầu trước khi học B17. Học sinh thử bài mới sau khi đọc lại tiền đề, không tái dùng câu đã xem làm kiểm tra độc lập.
 
 ---
+
 # KẾT LUẬN CỦA TÁC GIẢ TRƯỚC REVIEW — KHÔNG PHẢI VERDICT NOTEBOOKLM
 
 ## Outcome 56 mục tiêu — phân bố và ID canonical
