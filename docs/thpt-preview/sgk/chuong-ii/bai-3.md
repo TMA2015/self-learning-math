@@ -2,6 +2,204 @@
 
 <div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG II · KIẾN THỨC SGK KNTT</p><p class="thpt-r4-lead">Lý thuyết, ví dụ và sơ đồ nửa mặt phẳng/đa giác từ học liệu đã duyệt. Em tự luyện trước khi mở đáp án, không ghi điểm thành thạo.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương II</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra · chưa kích hoạt</a></nav></div>
 
+<!-- G10_CHII_FULL_R03_ALL_BEGIN -->
+
+## Tự khám phá trước công thức
+
+Em hãy đọc tình huống, nhớ kiến thức đã học và **tự trả lời từng câu Tự thử** trước khi mở lời giải. Sau đó học phần Kiến thức SGK và luyện Core. Hoạt động Tự thử chỉ dùng để tự học, không chấm điểm hay ghi Mastery.
+
+<!-- G10_CHII_R03_BEGIN:THPT-G10-CHII-TRY01 OUTCOME=G10-B03-LINEAR_INEQUALITY -->
+
+<span id="thpt-g10-chii-try01" data-thpt-first-try-id="THPT-G10-CHII-TRY01" data-outcome-id="G10-B03-LINEAR_INEQUALITY" data-thpt-help-ref="HELP-G10-B03-02"></span>
+
+### Nhận diện bất phương trình bậc nhất hai ẩn
+
+**Vì sao cần học:** Hai loại sản phẩm cùng dùng chung một nguồn lực, nên ta cần mô tả đồng thời hai số lượng, không chỉ một số.
+
+**Điều phải nhớ trước:** Em đã biết bất phương trình một ẩn và biểu thức bậc nhất; hệ số có thể bằng 0 nhưng không được đồng thời mất cả hai biến.
+
+**Hình thành bản chất:** Bất phương trình dạng \(ax+by\le c\) (hoặc <, >, ≥) nói rằng mỗi cặp số \((x,y)\) thỏa một điều kiện; nếu \((a,b)=(0,0)\), đó không còn là bất phương trình bậc nhất hai ẩn.
+
+**Hướng dẫn đọc hình:** PED4 N/A: trước khi vẽ miền, outcome này chỉ nhận diện dạng đại số; sử dụng ví dụ đường thẳng ở outcome BOUNDARY.
+
+**Vì sao chọn phương pháp:** Kiểm tra biến chỉ ở bậc nhất, không có tích \(xy\) hay bình phương, rồi kiểm \((a,b)\ne(0,0)\). Không loại nhầm trường hợp hệ số của một biến bằng 0.
+
+**Tự thử trước Core:** Trong ba biểu thức (a) \(2x-3y<6\); (b) \(xy\le6\); (c) \(0x+0y\le4\), biểu thức nào là bất phương trình bậc nhất hai ẩn? Vì sao?
+
+??? question "Đã tự làm? Tự mở đáp án và hướng khắc phục"
+
+    **Đáp án canonical:** Chỉ (a).
+
+
+
+    **Giải thích và kiểm điều kiện:** (a) có \((a,b)=(2,-3)\ne(0,0)\) và các biến bậc nhất. (b) có tích \(xy\), không bậc nhất. (c) cả hai hệ số bằng 0, chỉ còn bất đẳng thức hằng.
+
+
+
+    **D6 · Tự khắc phục sau khi thử:** Nếu chọn (b), nhớ tích hai biến là phi tuyến; nếu chọn (c), soát lại điều kiện \((a,b)\ne(0,0)\). Xem D1 R01 và ví dụ EX-G10-B03-01.
+
+
+
+    **Đường trở lại:** Đối chiếu EX-G10-B03-01 và HELP-G10-B03-02 trong R01 đã khóa, rồi mới làm Core/Practice.
+
+
+
+<!-- G10_CHII_R03_END:THPT-G10-CHII-TRY01 -->
+
+<!-- G10_CHII_R03_BEGIN:THPT-G10-CHII-TRY02 OUTCOME=G10-B03-POINT_TEST -->
+
+<span id="thpt-g10-chii-try02" data-thpt-first-try-id="THPT-G10-CHII-TRY02" data-outcome-id="G10-B03-POINT_TEST" data-thpt-help-ref="HELP-G10-B03-01"></span>
+
+### Kiểm tra một cặp số có là nghiệm
+
+**Vì sao cần học:** Một phương án đã đề xuất chỉ có ích nếu ta kiểm được nó thật sự thỏa điều kiện, kể cả trường hợp vừa đúng mức giới hạn.
+
+**Điều phải nhớ trước:** Biết thay cặp số vào biểu thức hai biến và so sánh số thực; phân biệt \(\le\) với \(<\).
+
+**Hình thành bản chất:** Một cặp \((x_0,y_0)\) là nghiệm đúng khi bất đẳng thức trở thành mệnh đề đúng sau phép thế; không thể chỉ nhìn hình hoặc xét một tọa độ.
+
+**Hướng dẫn đọc hình:** PED4: Khi đọc hình miền nghiệm, ghép mỗi điểm \((x,y)\) với phép thay tọa độ thực tế vào bất phương trình; điểm trên đường biên phải được xét dấu bằng.
+
+**Vì sao chọn phương pháp:** Thế đầy đủ cả x và y, tính vế trái rồi so dấu. Với dấu không nghiêm ngặt, kết quả đúng bằng ngưỡng vẫn là nghiệm.
+
+**Tự thử trước Core:** Xét \(x+2y\le6\). Trong \(A(2,2), B(3,2), C(0,0)\), những điểm nào là nghiệm? Điểm nào ở trên biên?
+
+??? question "Đã tự làm? Tự mở đáp án và hướng khắc phục"
+
+    **Đáp án canonical:** A và C là nghiệm; A nằm trên biên, B không là nghiệm.
+
+
+
+    **Giải thích và kiểm điều kiện:** Tại A: \(2+2\cdot2=6\le6\). Tại B: \(3+2\cdot2=7>6\). Tại C: \(0\le6\). Đường biên là \(x+2y=6\), đi qua A.
+
+
+
+    **D6 · Tự khắc phục sau khi thử:** Nếu loại A, em đã quên dấu bằng của \(\le\); tự kiểm lại bằng một điểm ngoài biên rồi xem HELP-G10-B03-01.
+
+
+
+    **Đường trở lại:** Đối chiếu EX-G10-B03-01 và HELP-G10-B03-01 trong R01 đã khóa, rồi mới làm Core/Practice.
+
+
+
+<!-- G10_CHII_R03_END:THPT-G10-CHII-TRY02 -->
+
+<!-- G10_CHII_R03_BEGIN:THPT-G10-CHII-TRY03 OUTCOME=G10-B03-BOUNDARY -->
+
+<span id="thpt-g10-chii-try03" data-thpt-first-try-id="THPT-G10-CHII-TRY03" data-outcome-id="G10-B03-BOUNDARY" data-thpt-help-ref="HELP-G10-B03-02"></span>
+
+### Hiểu đường biên và dấu bất phương trình
+
+**Vì sao cần học:** Một kế hoạch "ít hơn 6" khác "không quá 6" đúng ở những trường hợp bằng 6; đường biên quyết định chuyện có nhận giới hạn hay không.
+
+**Điều phải nhớ trước:** Biết vẽ đường thẳng từ phương trình bậc nhất hai ẩn và hiểu dấu bằng.
+
+**Hình thành bản chất:** Đường biên \(ax+by=c\) là tập điểm đạt đúng ngưỡng. Miền nghiêm ngặt \(<,>\) không nhận biên; miền \(\le,\ge\) nhận biên.
+
+**Hướng dẫn đọc hình:** PED4: Đường thẳng \(3x+y=6\) chia mặt phẳng thành hai phía; dấu \(<\) loại chính đường thẳng này. Trên FIG-G10-B03-01 hãy phân biệt đường biên với phần tô.
+
+**Vì sao chọn phương pháp:** Thay dấu bất phương trình bằng dấu bằng để tìm biên, kiểm dấu nghiêm ngặt để chọn nét đứt và một điểm kiểm tra xác định phía.
+
+**Tự thử trước Core:** Với \(3x+y<6\), đường biên là đường nào? Vẽ nét liền hay đứt? Điểm \((2,0)\) có được tính là nghiệm không?
+
+??? question "Đã tự làm? Tự mở đáp án và hướng khắc phục"
+
+    **Đáp án canonical:** Biên \(3x+y=6\), vẽ nét đứt; \((2,0)\) không là nghiệm.
+
+
+
+    **Giải thích và kiểm điều kiện:** Tại \((2,0)\), \(3\cdot2+0=6\), không thỏa \(<6\). Vì bất phương trình nghiêm ngặt nên không nhận điểm nằm trên biên.
+
+
+
+    **D6 · Tự khắc phục sau khi thử:** Nếu chọn nét liền, em đã nhầm dấu nghiêm ngặt với dấu có bằng; xem HELP-G10-B03-02 và FIG-G10-B03-01.
+
+
+
+    **Đường trở lại:** Đối chiếu EX-G10-B03-02 và HELP-G10-B03-02 trong R01 đã khóa, rồi mới làm Core/Practice.
+
+
+
+<!-- G10_CHII_R03_END:THPT-G10-CHII-TRY03 -->
+
+<!-- G10_CHII_R03_BEGIN:THPT-G10-CHII-TRY04 OUTCOME=G10-B03-HALFPLANE -->
+
+<span id="thpt-g10-chii-try04" data-thpt-first-try-id="THPT-G10-CHII-TRY04" data-outcome-id="G10-B03-HALFPLANE" data-thpt-help-ref="HELP-G10-B03-02"></span>
+
+### Chọn đúng phía của nửa mặt phẳng
+
+**Vì sao cần học:** Chỉ tìm được đường biên chưa đủ để chọn khu vực nghiệm: một đường thẳng có hai phía, nhưng điều kiện chỉ nhận một phía.
+
+**Điều phải nhớ trước:** Biết phép biến đổi bất phương trình một ẩn và khi chia cho số âm phải đổi chiều.
+
+**Hình thành bản chất:** Mỗi phía đường biên cho một dấu của \(ax+by-c\). Một điểm không nằm trên biên giúp xác định phía nào là nghiệm.
+
+**Hướng dẫn đọc hình:** PED4: Tưởng tượng đường \(y=3x-3\) là ranh giới; điểm \((0,0)\) nằm phía trên đường. Đường đứt vì dấu \(>\). Đối chiếu FIG-G10-B03-01.
+
+**Vì sao chọn phương pháp:** Có thể đổi về \(y>mx+b\) để nhìn phía, nhưng phải đảo dấu khi nhân/chia số âm; luôn thế lại một điểm để kiểm.
+
+**Tự thử trước Core:** Biến đổi \(3x-y<3\) về điều kiện theo y. Đường biên có lấy hay không? \(O(0,0)\) thuộc phía nghiệm chứ?
+
+??? question "Đã tự làm? Tự mở đáp án và hướng khắc phục"
+
+    **Đáp án canonical:** \(y>3x-3\); không lấy biên; O là nghiệm.
+
+
+
+    **Giải thích và kiểm điều kiện:** \(3x-y<3\iff-y<3-3x\iff y>3x-3\). Thế O: \(0<3\) đúng, O ở phía nghiệm. Biên \(3x-y=3\) không được lấy.
+
+
+
+    **D6 · Tự khắc phục sau khi thử:** Nếu nhận \(y<3x-3\), em đã không đảo dấu khi chia -1. Xem HELP-G10-B03-02.
+
+
+
+    **Đường trở lại:** Đối chiếu EX-G10-B03-02 và HELP-G10-B03-02 trong R01 đã khóa, rồi mới làm Core/Practice.
+
+
+
+<!-- G10_CHII_R03_END:THPT-G10-CHII-TRY04 -->
+
+<!-- G10_CHII_R03_BEGIN:THPT-G10-CHII-TRY05 OUTCOME=G10-B03-MODELING -->
+
+<span id="thpt-g10-chii-try05" data-thpt-first-try-id="THPT-G10-CHII-TRY05" data-outcome-id="G10-B03-MODELING" data-thpt-help-ref="HELP-G10-B03-01"></span>
+
+### Chuyển điều kiện thực tế thành bất phương trình
+
+**Vì sao cần học:** Muốn biết một lịch sản xuất khả thi không, ta phải chuyển ngôn ngữ "giới hạn thời gian" thành một điều kiện tính toán được.
+
+**Điều phải nhớ trước:** Biết tổng thời gian của nhiều công việc, bất đẳng thức \(\le\), và hiểu số sản phẩm là số nguyên không âm khi đếm chiếc.
+
+**Hình thành bản chất:** Biến x,y đại diện số lượng, mỗi hệ số mang đơn vị phút/sản phẩm; tổng thời gian không vượt thời lượng, nên dấu \(\le\) mô tả đúng.
+
+**Hướng dẫn đọc hình:** PED4 N/A ở bước lập biến; bảng đơn vị và thử cặp số thay cho hình phẳng. Nếu vẽ, phải nêu hai trục đại diện số lượng A/B.
+
+**Vì sao chọn phương pháp:** Đặt biến và đơn vị trước khi lập công thức; viết rõ \(x,y\in\mathbb Z_{\ge0}\) **chỉ khi** thực tế là số sản phẩm rời rạc. Khi là đại lượng liên tục, không ép điều kiện nguyên.
+
+**Tự thử trước Core:** Hai công việc A và B cần tương ứng 4 phút và 6 phút mỗi sản phẩm, tổng thời gian không quá 120 phút. Gọi x,y là số sản phẩm. Viết điều kiện và kiểm cặp \((10,10)\).
+
+??? question "Đã tự làm? Tự mở đáp án và hướng khắc phục"
+
+    **Đáp án canonical:** \(4x+6y\le120\), \(x,y\in\mathbb Z_{\ge0}\); cặp (10,10) hợp lệ.
+
+
+
+    **Giải thích và kiểm điều kiện:** Tổng thời gian là \(4x+6y\) phút. \(4\cdot10+6\cdot10=100\le120\). x,y nguyên không âm vì đếm sản phẩm.
+
+
+
+    **D6 · Tự khắc phục sau khi thử:** Nếu viết \(4x+6y=120\), em đã biến "không quá" thành "bằng đúng". Đọc lại đơn vị và soát phép thế; liên hệ ví dụ EX-G10-B03-03.
+
+
+
+    **Đường trở lại:** Đối chiếu EX-G10-B03-03 và HELP-G10-B03-01 trong R01 đã khóa, rồi mới làm Core/Practice.
+
+
+
+<!-- G10_CHII_R03_END:THPT-G10-CHII-TRY05 -->
+
+<!-- G10_CHII_FULL_R03_ALL_END -->
+
 ## 1. Kiến thức SGK
 
 ### 1. Dạng bất phương trình bậc nhất hai ẩn

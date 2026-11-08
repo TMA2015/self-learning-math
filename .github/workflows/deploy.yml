@@ -34,6 +34,8 @@ jobs:
         run: node scripts/test-thpt-g10-chviii-full-r02-release.cjs
       - name: Guard G10 ChIX FULL R02 10 reviewed First Try/D6 and frozen public formative/Written/6 client Q16 before deploy
         run: node scripts/test-thpt-g10-chix-full-r02-release.cjs
+      - name: Guard G10 ChII FULL R03 source locked 10 First Try, reuse four D6, original 14 Q16 before deploy
+        run: node scripts/test-thpt-g10-chii-full-r03-release.cjs
       - name: Guard G12 ChVI source/receipt SHA, 56 public canonical and private RD1 Q16 boundary
         run: node scripts/test-thpt-g12-chvi-release-source.cjs
 
