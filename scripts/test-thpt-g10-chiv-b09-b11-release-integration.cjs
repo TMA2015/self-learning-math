@@ -43,7 +43,7 @@ for(const n of [9,10,11]){
  const p=text("docs/thpt-preview/sgk/chuong-iv/bai-"+n+".md");
  assert(p.includes("## 1. Kiến thức SGK")&&p.includes("## 2. Ví dụ"));
  assert.equal((p.match(/^### Ví dụ \d+\./gm)||[]).length,3);
- assert.equal((p.match(/data-thpt-help-id=/g)||[]).length,2);
+ assert.equal((p.match(new RegExp('data-thpt-help-id="HELP-G10-B'+String(n).padStart(2,"0")+'-0[12]"',"g"))||[]).length,2,"Original reviewer R01 D6 IDs remain untouched; transfer D6 guarded separately");
  for(const kind of ["core","practice"])assert(text("docs/thpt-preview/sgk/chuong-iv/luyen-tap.md").includes('data-thpt-open-quiz="b'+n+'-'+kind+'"'));
 }
 const written=text("docs/thpt-preview/thu-vien/tu-luan-chuong-iv-b09-b11.md");

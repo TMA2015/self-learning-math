@@ -42,6 +42,8 @@ on:
       - 'scripts/test-thpt-g10-chii-full-r03-browser.cjs'
       - 'scripts/test-thpt-g10-chvii-full-r03-release.cjs'
       - 'scripts/test-thpt-g10-chvii-full-r03-browser.cjs'
+      - 'scripts/test-thpt-g10-chiv-full-r04-release.cjs'
+      - 'scripts/test-thpt-g10-chiv-full-r04-browser.cjs'
       - 'docs/assets/images/thpt/THPT_G10_CHVI_B15_FUNCTION_MAPPING_D5_R03.svg'
       - 'docs/assets/images/thpt/THPT_G10_CHVI_B18_RADICAL_FLOW_D5_R03.svg'
       - 'docs/assets/javascripts/thpt-self-check-qa-v1.js'
@@ -377,6 +379,10 @@ jobs:
         run: |
           node --check scripts/test-thpt-g10-chvii-full-r03-release.cjs
           node scripts/test-thpt-g10-chvii-full-r03-release.cjs
+      - name: Guard G10 ChIV FULL R04 24 source-approved PED +2 transfer, corrected R01 D5 and 21 frozen Q16
+        run: |
+          node --check scripts/test-thpt-g10-chiv-full-r04-release.cjs
+          node scripts/test-thpt-g10-chiv-full-r04-release.cjs
       - name: Guard G11 ChI original 16 source-locked items, 2 SVG, Written/Anchor and D6
         run: node scripts/test-thpt-g11-chi-b01-b02-release-integration.cjs
       - name: Guard G11 ChI B03/B04 additional 26 canonical and D1-D6 source lock
@@ -474,6 +480,7 @@ jobs:
           node scripts/test-thpt-g10-chix-full-r02-release.cjs --built
           node scripts/test-thpt-g10-chii-full-r03-release.cjs --built
           node scripts/test-thpt-g10-chvii-full-r03-release.cjs --built
+          node scripts/test-thpt-g10-chiv-full-r04-release.cjs --built
           node scripts/test-thpt-g11-chi-b01-b02-release-integration.cjs --built
           node scripts/test-thpt-chvi-student-notes.cjs --built
       - name: Guard G11 ChI protected RD1 exclusion in both built clients
@@ -548,6 +555,8 @@ jobs:
         run: node scripts/test-thpt-g10-chii-full-r03-browser.cjs
       - name: G10 ChVII FULL R03 25 First Try, 2 D5/Written, original 22 Q16 · 390 820 1440
         run: node scripts/test-thpt-g10-chvii-full-r03-browser.cjs
+      - name: G10 ChIV FULL R04 26 First Try, 2 corrected R01 D5, 2 new Written/21 Q16 · 390 820 1440
+        run: node scripts/test-thpt-g10-chiv-full-r04-browser.cjs
       - name: G11 ChI B01/B02 browser QA mobile / tablet / desktop
         run: node scripts/test-thpt-g11-chi-b01-b02-browser-smoke.cjs
       - name: G11 ChI B03/B04 reviewed browser QA · mobile tablet desktop

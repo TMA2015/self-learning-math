@@ -19,7 +19,11 @@ for(const [name,count,mathSum,preSum,postSum,headings] of checks){
  const middle=src.slice(start,end),formulas=math(middle);
  assert.equal(formulas.length,count,name+": unexpected math count");
  assert.equal(hash(JSON.stringify(formulas)),mathSum,name+": source math altered");
- assert.equal(hash(src.slice(0,start)),preSum,name+": lesson prefix altered");
+ const prefix=src.slice(0,start);
+ const addition=/<!-- G10_CHIV_FULL_R04_ALL_BEGIN -->[\s\S]*?<!-- G10_CHIV_FULL_R04_ALL_END -->\n\n/g;
+ assert.equal([...prefix.matchAll(addition)].length,1,name+": one and only one source-reviewed R04 preknowledge block");
+ const preservedPrefix=prefix.replace(addition,"");
+ assert.equal(hash(preservedPrefix),preSum,name+": original lesson prefix altered beyond approved bounded R04");
  assert.equal(hash(src.slice(end)),postSum,name+": examples, SVG, HELP, canonical or lessons after knowledge altered");
  assert.equal((middle.match(/^### \d+\./gm)||[]).length,headings,name+": expected learner headings");
  assert(!/\bD1\.\d\b/.test(middle),name+": remove audit-only D1 headings from student UI");
