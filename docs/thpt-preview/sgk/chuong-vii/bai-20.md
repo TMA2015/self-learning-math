@@ -6,6 +6,234 @@
 <nav class="thpt-r4-lesson-tabs" aria-label="Điều hướng học Toán 10 Chương VII"><a href="../">Tổng quan Chương VII</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra chương · chưa kích hoạt</a></nav>
 </div>
 
+<!-- G10_CHVII_FULL_R03_ALL_BEGIN -->
+
+## Tự khám phá trước khi học công thức
+
+Đọc vì sao cần học, tự làm Tự thử trước khi mở đáp án và chỉ quay lại Core sau khi đã đối chiếu. Các câu này là luyện tập không ghi Mastery.
+
+<!-- G10_CHVII_R03_BEGIN:THPT-G10-CHVII-TRY08 OUTCOME=G10-B20-RELATIVE_POSITION -->
+
+<span id="thpt-g10-chvii-try08" data-thpt-first-try-id="THPT-G10-CHVII-TRY08" data-outcome-id="G10-B20-RELATIVE_POSITION" data-thpt-help-ref="HELP-G10-CHVII-TRY08"></span>
+
+### Song song, trùng, cắt
+
+**Vì sao cần học:** Hai con đường có cùng hướng chưa chắc là cùng một đường; xác định vị trí tương đối cần xét cả nơi chúng đi qua.
+
+**Kiến thức tiền đề:** Ôn pháp tuyến của ax+by+c=0; khi hai cặp pháp tuyến tỉ lệ, hai đường có cùng hướng.
+
+**Bản chất trước công thức:** Định thức a1b2-a2b1 khác 0 thì hai đường cắt nhau. Bằng 0 chỉ nói cùng hướng: xét thêm c để phân biệt song song khác nhau và trùng nhau.
+
+**Hướng dẫn đọc hình:** Đặt cạnh nhau ba hình cắt, song song phân biệt, trùng; hai hình sau có cùng hướng nhưng khác vị trí.
+
+**Chọn phương pháp và giới hạn:** Kiểm pháp tuyến khác 0; kiểm định thức; nếu bằng 0, so sánh đủ bộ ba hệ số, tránh chia cho hệ số 0.
+
+**Tự thử trước Core:** d1: 2x-y+1=0, d2: 4x-2y+3=0 là song song phân biệt hay trùng nhau?
+
+??? question "Tự mở đáp án sau khi đã tự làm"
+
+    **Đáp án:** Song song phân biệt.
+
+    **Lý do:** Hai pháp tuyến (2,-1) và (4,-2) tỉ lệ 2 lần, nhưng nhân toàn phương trình d1 với 2 cho hằng số 2, không phải 3 của d2.
+
+    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY08` bên dưới; quay lại câu canonical cũ `THPT-G10-B20-C01` khi đã hiểu kiến thức.
+
+<span id="help-g10-chvii-try08" data-thpt-help-id="HELP-G10-CHVII-TRY08"></span>
+
+??? tip "Tự khắc phục theo năm bước"
+
+    1. **Nhận diện lỗi:** Nếu kết luận trùng ngay khi pháp tuyến tỉ lệ, em đã bỏ quên hệ số tự do.
+
+    2. **Quay lại bản chất:** Định thức a1b2-a2b1 khác 0 thì hai đường cắt nhau. Bằng 0 chỉ nói cùng hướng: xét thêm c để phân biệt song song khác nhau và trùng nhau.
+
+    3. **Tự sửa:** Nhân hẳn d1 với hệ số 2 rồi đối chiếu cả ba hệ số của d2.
+
+    4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+
+    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B20-C01` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+
+<a href="../luyen-tap/?item=THPT-G10-B20-C01">Mở câu luyện tập đã review để tự sửa</a>
+
+<!-- G10_CHVII_R03_END:THPT-G10-CHVII-TRY08 -->
+
+<!-- G10_CHVII_R03_BEGIN:THPT-G10-CHVII-TRY09 OUTCOME=G10-B20-PERPENDICULAR -->
+
+<span id="thpt-g10-chvii-try09" data-thpt-first-try-id="THPT-G10-CHVII-TRY09" data-outcome-id="G10-B20-PERPENDICULAR" data-thpt-help-ref="HELP-G10-CHVII-TRY09"></span>
+
+### Đường thẳng vuông góc qua điểm
+
+**Vì sao cần học:** Khi dựng một lối đi cắt tuyến đường cũ theo góc vuông, ta phải kiểm cả hướng lẫn vị trí đi qua điểm đã cho.
+
+**Kiến thức tiền đề:** Ôn pháp tuyến của đường thẳng và điều kiện hai pháp tuyến vuông góc khi tích vô hướng bằng 0.
+
+**Bản chất trước công thức:** Nếu hai đường vuông góc thì hai pháp tuyến của chúng cũng vuông góc (đều bị quay cùng 90 độ so với đường). Điểm quyết định tịnh tiến đường mới.
+
+**Hướng dẫn đọc hình:** Vẽ đường d và đường qua P vuông góc với d; chỉ ra vì sao đường qua P có thể di chuyển song song mà vẫn vuông góc.
+
+**Chọn phương pháp và giới hạn:** Chọn n' vuông góc với n của d, rồi dùng n'·PM=0; kiểm P thuộc đường mới và n·n'=0.
+
+**Tự thử trước Core:** Qua P(1,-2) viết đường vuông góc với d: x+2y-5=0.
+
+??? question "Tự mở đáp án sau khi đã tự làm"
+
+    **Đáp án:** 2x-y-4=0.
+
+    **Lý do:** n=(1,2) của d, chọn n'=(2,-1) có tích vô hướng 0. Qua P: 2(x-1)-(y+2)=0 ⇒ 2x-y-4=0.
+
+    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY09` bên dưới; quay lại câu canonical cũ `THPT-G10-B20-C02` khi đã hiểu kiến thức.
+
+<span id="help-g10-chvii-try09" data-thpt-help-id="HELP-G10-CHVII-TRY09"></span>
+
+??? tip "Tự khắc phục theo năm bước"
+
+    1. **Nhận diện lỗi:** Nếu chỉ lấy lại n=(1,2), em sẽ viết đường song song với d chứ không vuông góc.
+
+    2. **Quay lại bản chất:** Nếu hai đường vuông góc thì hai pháp tuyến của chúng cũng vuông góc (đều bị quay cùng 90 độ so với đường). Điểm quyết định tịnh tiến đường mới.
+
+    3. **Tự sửa:** Thử n·n'=0 và thay P vào phương trình vừa viết.
+
+    4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+
+    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B20-C02` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+
+<a href="../luyen-tap/?item=THPT-G10-B20-C02">Mở câu luyện tập đã review để tự sửa</a>
+
+<!-- G10_CHVII_R03_END:THPT-G10-CHVII-TRY09 -->
+
+<!-- G10_CHVII_R03_BEGIN:THPT-G10-CHVII-TRY10 OUTCOME=G10-B20-INTERSECTION -->
+
+<span id="thpt-g10-chvii-try10" data-thpt-first-try-id="THPT-G10-CHVII-TRY10" data-outcome-id="G10-B20-INTERSECTION" data-thpt-help-ref="HELP-G10-CHVII-TRY10"></span>
+
+### Tọa độ giao hai đường
+
+**Vì sao cần học:** Tìm chỗ hai tuyến đường gặp nhau tương đương tìm một cặp tọa độ thỏa đồng thời hai điều kiện.
+
+**Kiến thức tiền đề:** Nhắc giải hệ hai phương trình bậc nhất và phép thế kiểm nghiệm.
+
+**Bản chất trước công thức:** Một giao điểm là nghiệm chung của hai phương trình; giải từng phương trình riêng không đủ.
+
+**Hướng dẫn đọc hình:** Vẽ hai đường giao nhau; đánh dấu giao và thử nhận xét vì sao một điểm nằm riêng trên d1 chưa chắc thuộc d2.
+
+**Chọn phương pháp và giới hạn:** Lập hệ đúng hai phương trình, giải bằng thế/khử, kiểm tọa độ cuối ở cả hai. Nếu hệ vô nghiệm, không được bịa giao điểm.
+
+**Tự thử trước Core:** Tìm giao điểm của x+2y=8 và 2x-y=1.
+
+??? question "Tự mở đáp án sau khi đã tự làm"
+
+    **Đáp án:** I(2,3).
+
+    **Lý do:** Từ 2x-y=1 ⇒ y=2x-1. Thế vào x+2(2x-1)=8 ⇒ x=2, y=3; kiểm 2+6=8, 4-3=1.
+
+    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY10` bên dưới; quay lại câu canonical cũ `THPT-G10-B20-P01` khi đã hiểu kiến thức.
+
+<span id="help-g10-chvii-try10" data-thpt-help-id="HELP-G10-CHVII-TRY10"></span>
+
+??? tip "Tự khắc phục theo năm bước"
+
+    1. **Nhận diện lỗi:** Nếu ra một điểm chỉ thỏa một đường, em đã dừng trước bước thử.
+
+    2. **Quay lại bản chất:** Một giao điểm là nghiệm chung của hai phương trình; giải từng phương trình riêng không đủ.
+
+    3. **Tự sửa:** Ghi thành hai dòng kiểm thế tọa độ vào từng phương trình.
+
+    4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+
+    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B20-P01` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+
+<a href="../luyen-tap/?item=THPT-G10-B20-P01">Mở câu luyện tập đã review để tự sửa</a>
+
+<!-- G10_CHVII_R03_END:THPT-G10-CHVII-TRY10 -->
+
+<!-- G10_CHVII_R03_BEGIN:THPT-G10-CHVII-TRY11 OUTCOME=G10-B20-DISTANCE -->
+
+<span id="thpt-g10-chvii-try11" data-thpt-first-try-id="THPT-G10-CHVII-TRY11" data-outcome-id="G10-B20-DISTANCE" data-thpt-help-ref="HELP-G10-CHVII-TRY11"></span>
+
+### Khoảng cách điểm đến đường
+
+**Vì sao cần học:** Khoảng cách ngắn nhất từ một vị trí đến con đường là độ dài đoạn vuông góc, không phải độ dài đến một điểm tùy ý trên đường.
+
+**Kiến thức tiền đề:** Ôn độ dài vectơ pháp tuyến (a,b) và giá trị tuyệt đối của số thực.
+
+**Bản chất trước công thức:** Biểu thức axM+byM+c đo độ lệch có dấu theo pháp tuyến chưa chuẩn hóa; chia √(a²+b²) đổi thành độ dài thật và lấy trị tuyệt đối.
+
+**Hướng dẫn đọc hình:** Chỉ đoạn vuông góc ngắn nhất từ M tới d, phân biệt với đoạn xiên đến một điểm khác trên d; dấu của biểu thức đổi khi M ở hai phía.
+
+**Chọn phương pháp và giới hạn:** Kiểm (a,b)≠(0,0), tính |axM+byM+c|/√(a²+b²). Kết quả phải ≥0; nếu M nằm trên d thì khoảng cách 0.
+
+**Tự thử trước Core:** Tính khoảng cách từ M(1,2) đến d: 3x+4y-1=0.
+
+??? question "Tự mở đáp án sau khi đã tự làm"
+
+    **Đáp án:** d(M,d)=2.
+
+    **Lý do:** Tử |3·1+4·2−1|=10, mẫu √(3²+4²)=5, nên khoảng cách bằng 10/5=2.
+
+    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY11` bên dưới; quay lại câu canonical cũ `THPT-G10-B20-P02` khi đã hiểu kiến thức.
+
+<span id="help-g10-chvii-try11" data-thpt-help-id="HELP-G10-CHVII-TRY11"></span>
+
+??? tip "Tự khắc phục theo năm bước"
+
+    1. **Nhận diện lỗi:** Nếu cho kết quả 10 hoặc -2, em đã quên chuẩn hóa pháp tuyến hoặc trị tuyệt đối.
+
+    2. **Quay lại bản chất:** Biểu thức axM+byM+c đo độ lệch có dấu theo pháp tuyến chưa chuẩn hóa; chia √(a²+b²) đổi thành độ dài thật và lấy trị tuyệt đối.
+
+    3. **Tự sửa:** Tách tính tử và mẫu, kiểm mẫu khác 0, kết luận độ dài không âm.
+
+    4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+
+    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B20-P02` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+
+<a href="../luyen-tap/?item=THPT-G10-B20-P02">Mở câu luyện tập đã review để tự sửa</a>
+
+<!-- G10_CHVII_R03_END:THPT-G10-CHVII-TRY11 -->
+
+<!-- G10_CHVII_R03_BEGIN:THPT-G10-CHVII-TRY12 OUTCOME=G10-B20-ANGLE -->
+
+<span id="thpt-g10-chvii-try12" data-thpt-first-try-id="THPT-G10-CHVII-TRY12" data-outcome-id="G10-B20-ANGLE" data-thpt-help-ref="HELP-G10-CHVII-TRY12"></span>
+
+### Góc nhỏ giữa hai đường
+
+**Vì sao cần học:** Hai tuyến đường không vuông góc vẫn cần một thước đo góc độc lập với việc chúng ta chọn mũi tên hướng nào.
+
+**Kiến thức tiền đề:** Ôn tích vô hướng, độ dài vectơ và cosin góc giữa hai vectơ khác 0.
+
+**Bản chất trước công thức:** Góc nhỏ giữa hai đường nằm từ 0 đến 90 độ; đổi hướng một pháp tuyến không làm đổi góc nhỏ nên lấy trị tuyệt đối tích vô hướng.
+
+**Hướng dẫn đọc hình:** So sánh góc nhọn với góc tù bù nhau do đảo chiều mũi tên; góc giữa đường là góc nhỏ nên không phụ thuộc chiều vectơ.
+
+**Chọn phương pháp và giới hạn:** Dùng |n1·n2|/(||n1||||n2||) và kiểm 0≤cosφ≤1. Đừng nhầm góc tù giữa hai vectơ với góc nhỏ giữa hai đường.
+
+**Tự thử trước Core:** Góc nhỏ giữa d1: x=0 và d2: x-y=0 bằng bao nhiêu?
+
+??? question "Tự mở đáp án sau khi đã tự làm"
+
+    **Đáp án:** 45°.
+
+    **Lý do:** Pháp tuyến n1=(1,0), n2=(1,-1). cosφ=|1|/(1·√2)=1/√2 nên φ=45°.
+
+    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY12` bên dưới; quay lại câu canonical cũ `THPT-G10-B20-P03` khi đã hiểu kiến thức.
+
+<span id="help-g10-chvii-try12" data-thpt-help-id="HELP-G10-CHVII-TRY12"></span>
+
+??? tip "Tự khắc phục theo năm bước"
+
+    1. **Nhận diện lỗi:** Nếu kết luận 135°, em đã lấy góc tù theo hướng pháp tuyến thay vì góc nhỏ giữa hai đường.
+
+    2. **Quay lại bản chất:** Góc nhỏ giữa hai đường nằm từ 0 đến 90 độ; đổi hướng một pháp tuyến không làm đổi góc nhỏ nên lấy trị tuyệt đối tích vô hướng.
+
+    3. **Tự sửa:** Lấy trị tuyệt đối tích vô hướng, kiểm φ không vượt 90°.
+
+    4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+
+    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B20-P03` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+
+<a href="../luyen-tap/?item=THPT-G10-B20-P03">Mở câu luyện tập đã review để tự sửa</a>
+
+<!-- G10_CHVII_R03_END:THPT-G10-CHVII-TRY12 -->
+
+<!-- G10_CHVII_FULL_R03_ALL_END -->
+
 ## 1. Vị trí tương đối của hai đường thẳng
 
 Với \(d_1:a_1x+b_1y+c_1=0\) và \(d_2:a_2x+b_2y+c_2=0\), mỗi cặp \((a_i;b_i)\ne(0;0)\):
