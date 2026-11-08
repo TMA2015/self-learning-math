@@ -8,7 +8,7 @@
 
 - [`UX795_HYBRID_CROSSGRADE_AB_20261108.html`](UX795_HYBRID_CROSSGRADE_AB_20261108.html): one HTML-only **A/B research viewer**, 3 switchable case studies (G10 B02, G11 B08, G12 B07), `noindex`, browser-only, no backend, no scoring or student data.
 - `A`: original `<article>` fragment from a locked, published `gh-pages` snapshot, with the exact published SVG embedded. Not a complete copy of production site scaffolding/CSS.
-- `B`: **selected/organised fragments** from the same HTML snapshot: shared headings `Khám phá kiến thức` → `Thuật ngữ · Kiến thức và kỹ năng` → `Kiến thức SGK` → `Ví dụ giải toán` → `Lỗi thường gặp và cách khắc phục`. In source-locked examples, a figure is re-positioned near the relevant knowledge concept; solution-reason is relocated closer to G11 examples; existing pre-Core formative prompt stays under SGK knowledge rather than inside discovery.
+- `B`: **selected/organised fragments** from the same HTML snapshot: four main regions `Khám phá kiến thức` (with `Thuật ngữ và kiến thức, kỹ năng` immediately at the bottom of Discovery) → `Kiến thức SGK` → `Ví dụ giải toán` → `Lỗi thường gặp và cách khắc phục`. In source-locked examples, a figure is re-positioned near the relevant knowledge concept; solution-reason is relocated closer to G11 examples; existing pre-Core formative prompt stays under SGK knowledge rather than inside discovery.
 - `B` intentionally selects or hides **some** original narrative. **Do not publish** without targeted AUTHORING verification that every lesson/outcome and Q01–Q14 remain complete. The terminology/skills overview is a study placeholder derived from visible source headings/terms and must be checked against S1; **no new mathematical claim is certified**.
 
 ## 2. Source receipts
@@ -29,7 +29,7 @@ SVG source is not modified, and prototypes are **outside `docs/` / `mkdocs.yml` 
 ## 3. First-pass QA
 
 - **PASS (static source inventory):** three exact source receipts and three original source SVGs embedded as local `data:image/svg+xml`; three compiled HTML lesson fragments isolated in A mode.
-- **PASS (JS parser / mocked DOM, not real browser):** B mode renders five uniform H2 regions for each grade; retains one figure per lesson; G10 B02 keeps 6 distinct original First Try IDs **without duplicate placements** and preserves closed-answer blocks.
+- **PASS (JS parser / mocked DOM, not real browser):** B mode renders four uniform H2 regions for each grade; retains one figure per lesson; G10 B02 keeps 6 distinct original First Try IDs **without duplicate placements** and preserves closed-answer blocks.
 - **PASS (no write paths):** A/B switch and lesson choice affect only isolated DOM in research viewer, no forms, marks, storage or server calls.
 - **NOT_RUN:** interactive Chromium/Safari/iPad QA at 390/820/1440, computed font/size parity, MathJax online/CDN availability or accessibility audit with real screen reader.
 - **NOT_RUN:** learner evidence (unseen transfer tasks, without AI Tutor). No claim that the hybrid design is yet better than source or SGK.
