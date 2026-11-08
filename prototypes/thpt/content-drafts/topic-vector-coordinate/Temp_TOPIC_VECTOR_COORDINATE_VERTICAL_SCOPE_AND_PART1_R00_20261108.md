@@ -5,14 +5,14 @@
 **Một chuẩn:** SLM-THPT-QUALITY-ONE v1.2.0, Q01–Q18  
 **Phạm vi:** 1 chuyên đề, 7 phần học; không phải 7 chuyên đề.  
 **Số thứ tự "2":** thứ tự báo cáo/triển khai sau chuyên đề Hàm số và đồ thị, **không** tự nhận là mã chuyên đề chính thức đã được chuẩn hóa ở website.  
-**Tình trạng:** 7/7 phần đã có đề cương sơ bộ; 1/7 phần có **bản nháp kiến thức**; 0/7 phần Academic/PED PASS. Không có item canonical mới, không có review NotebookLM, handoff, manifest ready hoặc cấp phép phát hành.
+**Tình trạng:** 7/7 phần đã có đề cương sơ bộ; **Phần 1/7 hiện đã có bản nháp RD0 R01 Kiến thức + Luyện tập** trong file riêng `Temp_TOPIC_VECTOR_COORDINATE_PART1_SELF_STUDY_RD0_R01_20261108.md`; **0/7 phần Academic/PED PASS**. Bản R00 bên dưới là lịch sử ý tưởng, **R01 thay thế mọi diễn giải R00 mâu thuẫn**, nhất là quy ước vectơ-không. Không có review NotebookLM Topic, handoff, ready manifest hoặc quyền phát hành.
 
 ## A. Trạng thái chương trình chuyên đề
 
 | Thứ tự báo cáo | Tên chuyên đề | Tiến độ học liệu | Review | Bàn giao |
 | --- | --- | --- | --- | --- |
 | 1 | Hàm số và đồ thị (lớp 10–12) | 7/7 phần xong | Academic/PED PASS; Topic Readiness private PASS | Chờ tương thích cổng tiếp nhận V2 — Issue #790. Giữ bất biến nguồn R18 tại Draft PR #782. |
-| 2 | Vectơ và phương pháp tọa độ (lớp 10–12) | **1/7 phần đang soạn**; 0/7 phần được duyệt | Chưa review | Chưa bàn giao |
+| 2 | Vectơ và phương pháp tọa độ (lớp 10–12) | **1/7 phần có bản nháp RD0 R01**; 0/7 phần được duyệt | Chưa review | Chưa bàn giao |
 
 **Chưa có tổng số chuyên đề THPT canonical được xác minh trong nguồn vận hành đang đọc.** Không dùng số lượng 25 chuyên đề THCS làm tổng số chuyên đề THPT.
 
@@ -41,7 +41,7 @@ Các đầu mối dưới đây dùng để **xác định đúng phạm vi cầ
 
 | Phần | Tên học sinh nhìn thấy | Kết quả học tập dự kiến (chưa canonical) | Trạng thái |
 | --- | --- | --- | --- |
-| 1 | Vectơ: độ lớn và hướng | Nhận ra vì sao cần vectơ; hiểu vectơ, vectơ-không, hai vectơ bằng nhau/đối nhau; đọc vectơ từ hình | **Bản nháp D1/PED**, chưa S1 QA |
+| 1 | Vectơ: độ lớn và hướng | Nhận ra vì sao cần vectơ; hiểu vectơ, vectơ-không, hai vectơ bằng nhau/đối nhau; đọc vectơ từ hình | **Bản nháp RD0 R01 Kiến thức + Luyện tập**, chưa S1 PDF-index và NotebookLM QA |
 | 2 | Cộng, trừ vectơ và nhân với một số | Giải thích quy tắc ghép dịch chuyển; chọn công cụ thích hợp; dùng quan hệ vectơ trong hình học | Đề cương |
 | 3 | Tọa độ vectơ và tích vô hướng trong mặt phẳng | Đổi hình sang thành phần tọa độ; hiểu ý nghĩa tích vô hướng, góc và vuông góc; kiểm điều kiện | Đề cương |
 | 4 | Giải bài toán hình học bằng tọa độ phẳng | Từ điểm/hướng/khoảng cách lập phương trình đường thẳng, đường tròn; nhận diện phạm vi ba conic | Đề cương |
@@ -74,7 +74,7 @@ Một mũi tên từ B về A đi ngược chiều mũi tên từ A đến B. C�
 - Vectơ $\overrightarrow{AB}$ là đoạn thẳng có hướng, A là điểm đầu, B là điểm cuối; độ dài ký hiệu $|\overrightarrow{AB}|=AB$.
 - Hai vectơ khác vectơ-không **bằng nhau** khi cùng hướng và cùng độ dài.
 - $\overrightarrow{BA}$ đối của $\overrightarrow{AB}$: cùng độ dài, ngược hướng.
-- $\overrightarrow{AA}=\vec{0}$ là vectơ-không, độ dài bằng 0. **Không gán một hướng xác định cho vectơ-không.** Khi dùng định nghĩa “cùng hướng” để xét bằng nhau phải lưu ý trường hợp vectơ-không riêng biệt.
+- $\overrightarrow{AA}=\vec{0}$ là vectơ-không, độ dài bằng 0. **Theo quy ước SGK/SBT KNTT, vectơ-không cùng phương và cùng hướng với mọi vectơ**; trực giác “mũi tên độ dài 0 không có chiều hình học quan sát được” không được thay thế quy ước này. Bản diễn giải đầy đủ ở R01.
 
 ### 5. Ví dụ có giải thích phương pháp
 
@@ -104,7 +104,7 @@ Có, **nếu các ô cùng kích thước**: chúng có cùng độ lớn và c�
 
 1. **Cùng độ dài ⇒ tưởng cùng vectơ.** Vẽ mũi tên có chiều ngược để thấy điều kiện còn thiếu: hướng.
 2. **Nhầm AB với BA.** Bắt đầu từ chữ đầu (điểm đặt đuôi mũi tên) và đi tới chữ cuối (đầu mũi tên).
-3. **Nói vectơ-không hướng Đông/Tây.** Vectơ-không có độ dài 0; không có hướng xác định để so sánh như vectơ khác 0.
+3. **Nhầm trực giác với quy ước vectơ-không.** Vectơ-không dài 0; dù không quan sát được chiều mũi tên, KNTT **quy ước cùng hướng, cùng phương với mọi vectơ**. Khi làm bài phải vận dụng quy ước này.
 4. **Không đọc được hình bình hành.** Nhắc lại cạnh đối và cách di chuyển A→B, D→C; thử với hình chữ nhật trước khi trở lại ví dụ.
 
 ### 8. Họ dạng luyện tập cần soạn (chưa tạo item canonical)
@@ -114,7 +114,7 @@ Có, **nếu các ô cùng kích thước**: chúng có cùng độ lớn và c�
 - Chọn chiều đúng của cặp cạnh đối trong hình bình hành.
 - Giải thích tình huống thực tế: hai dịch chuyển bằng độ dài nhưng khác hướng.
 
-Cần thêm D2 đa dạng cấu trúc, câu Core-like được dùng như Topic Practice cơ bản, câu chuyển giao, Written/rubric và D5 kiểm chứng trước khi coi phần 1 đã hoàn chỉnh.
+**Cập nhật:** Bản R01 đã ánh xạ đúng 3 ví dụ D2, 8 câu Core/Practice, 1 Written/rubric, 1 hình D5, 2 HELP từ nguồn canonical SGK Bài 7 đã review, đồng thời bổ sung PED và hai Tự thử qua placement. ĐÂY LÀ DRAFT, **không tự coi Phần 1 Academic/PED PASS**; còn kiểm PDF-index, nguồn Topic, phản biện độc lập.
 
 ## E. Kiểm tra AUTHORING tự thực hiện trong R00
 
