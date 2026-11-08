@@ -120,6 +120,57 @@ Hãy hiểu bản chất và tự thử trước khi mở đối chiếu. Hoạt
 
 <!-- G10_CHIV_R04_END:THPT-G10-CHIV-TRY24 -->
 
+<!-- G10_CHIV_TRANSFER_BEGIN:FORCE -->
+
+<span id="thpt-g10-chiv-try-force-tr01" data-thpt-first-try-id="THPT-G10-CHIV-TRY-FORCE-TR01" data-outcome-id="G10-B11-GEOMETRIC_DOT" data-thpt-help-ref="HELP-G10-CHIV-FORCE-TR01"></span>
+
+### Ứng dụng: Hợp lực góc 120° và lực giữ cân bằng
+
+**Vì sao cần học:** Một vòng móc được kéo bởi hai dây theo hai hướng; muốn giữ vòng móc đứng yên, lực thứ ba phải triệt tiêu **tổng vectơ** của hai lực, không phải triệt tiêu tổng hai con số độ lớn.
+
+**Kiến thức tiền đề:** Quy tắc hình bình hành B08, định nghĩa lực đối của một vectơ; góc giữa hai vectơ khác 0 và tích vô hướng B11. Cần phân biệt “hai lực bằng độ lớn” với “hai lực bằng vectơ”.
+
+**Hiểu bản chất trước công thức:** Dời hai lực cùng gốc, đường chéo hình bình hành là hợp lực `R=F₁+F₂`. Lực giữ cân bằng `F₃=−R`. Vì `|u+v|²=|u|²+|v|²+2u·v`, ta có `|R|²=|F₁|²+|F₂|²+2|F₁||F₂|cosθ`; Pythagoras chỉ là trường hợp **θ=90°**.
+
+**Hướng dẫn đọc hình:** Vẽ O là điểm đặt, Ox trùng hướng F₁, F₂ quay ngược chiều kim đồng hồ một góc θ. R là đường chéo, F₃ có **cùng độ dài nhưng chiều đối ngược R**. Trên hình, góc θ phải là góc **giữa F₁ và F₂**, không phải giữa F₂ và F₃.
+
+**Chọn phương pháp và giới hạn:** Dùng công thức tổng vectơ khi **biết độ lớn và góc**; dùng tọa độ nếu cần **hướng và các thành phần**. Kiểm `0≤|R|≤|F₁|+|F₂|`; không kết luận lực thứ ba cùng chiều với hợp lực.
+
+<figure class="thpt-r4-plot thpt-r4-probability-figure" data-thpt-reviewed-d5="FIG-G10-CHIV-FORCE-TR01"><img src="../../../../assets/images/thpt/THPT_G10_CHIV_FORCE_TRANSFER_D5_R01_CORRECTED.svg" alt="Hai vectơ lực F1 8 N sang Đông, F2 15 N ở 120 độ, hợp lực R 13 N gần hướng Bắc và lực cân bằng F3 ngược R" loading="lazy"><figcaption>Hợp lực R theo đường chéo, lực thứ ba F₃=−R ngược chiều và cùng độ lớn.</figcaption></figure>
+
+**Tự thử trước Core:** Hai lực bằng nhau, mỗi lực 4 N, tạo góc 60°. Muốn vật cân bằng, lực thứ ba phải có **độ lớn và chiều** như thế nào? Hãy tự dự đoán trước khi mở kết quả.
+
+??? question "Tự mở đáp án sau khi đã tự thử"
+
+    `|F₁+F₂|=√(4²+4²+2·4·4·cos60°)=4√3 N`. Vì tổng ba lực bằng vectơ 0, `F₃=−(F₁+F₂)` nên lực thứ ba có độ lớn `4√3 N` và **ngược chiều hợp lực**. Nếu đáp `8 N`, xem `HELP-G10-CHIV-FORCE-TR01`.
+
+#### Ví dụ có hướng dẫn — EX-G10-B08-FORCE-TR01
+
+**Tình huống khác câu tự luận:** Hai dây đồng thời kéo vòng móc với lực 6 N và 6 N, tạo góc 120°. Một dây thứ ba giữ vòng đứng yên. Hãy tìm độ lớn và chiều của lực thứ ba.
+
+1. **Chọn mô hình:** Cân bằng nghĩa là `F₁+F₂+F₃=0`, vì thế **phải tìm hợp lực** hai dây trước khi tìm F₃.
+2. **Chọn định lí:** Góc 120° không vuông, nên `|F₁+F₂|²=6²+6²+2·6·6·cos120°=72−36=36`; suy ra hợp lực có độ lớn **6 N**.
+3. **Giải thích chiều:** `F₃=−(F₁+F₂)`, nghĩa là **6 N ngược chiều đường chéo hợp lực**; không phải ngược riêng một trong hai dây.
+4. **Kiểm:** Hợp lực bằng 6 N nằm trong `[0,12]` N, phù hợp bất đẳng thức tam giác. Nếu dùng 6+6=12 N là nhầm độ lớn với tổng vectơ.
+
+**D2 WHY/METHOD/LIMIT:** Không cộng thẳng độ lớn khi lực không cùng phương; dữ kiện hai độ lớn + góc cho **độ lớn**, còn yêu cầu xác định **hướng** cần đọc hướng vectơ hoặc bổ sung hệ trục. Số liệu được chọn để học sinh thấy lực thứ ba cũng có thể bằng độ lớn **một** lực mà không cùng phương lực đó.
+
+<span id="help-g10-chiv-force-tr01" data-thpt-help-id="HELP-G10-CHIV-FORCE-TR01"></span>
+
+??? tip "Tự khắc phục trong năm bước"
+
+    1. **Nhận diện:** em đã cộng `8+15`, dùng Pythagoras ở góc 120°, hay lấy F₃ cùng chiều hợp lực?
+
+    2. **Chẩn đoán:** vẽ lại hai vectơ xuất phát O và đánh dấu góc **120°**; thử hướng F₃ xem ba mũi tên có khép thành đường gấp khúc không.
+
+    3. **Lấp nền:** B08 quy tắc hình bình hành và vectơ đối; B11 `u·v=|u||v|cosθ`.
+
+    4. **Tự sửa:** tính `R²` trước, kiểm `|R|≤23`, rồi đặt `F₃=−R`; kiểm tổng thành phần Ox/Oy bằng 0.
+
+    5. **Luyện lại đúng nguồn:** B08-P06 → B11-P01 → D2 mới; nếu đã xem đáp án D4, **không** tái dùng D4 làm chứng cứ RD1.
+
+<!-- G10_CHIV_TRANSFER_END:FORCE -->
+
 <!-- G10_CHIV_FULL_R04_ALL_END -->
 
 ## 1. Kiến thức SGK
