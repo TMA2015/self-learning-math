@@ -5,14 +5,14 @@
 **Một chuẩn:** SLM-THPT-QUALITY-ONE v1.2.0, Q01–Q18  
 **Phạm vi:** 1 chuyên đề, 7 phần học; không phải 7 chuyên đề.  
 **Số thứ tự "2":** thứ tự báo cáo/triển khai sau chuyên đề Hàm số và đồ thị, **không** tự nhận là mã chuyên đề chính thức đã được chuẩn hóa ở website.  
-**Tình trạng:** 7/7 phần đã có đề cương sơ bộ; **Phần 1/7 hiện đã có bản nháp RD0 R01 Kiến thức + Luyện tập** trong file riêng `Temp_TOPIC_VECTOR_COORDINATE_PART1_SELF_STUDY_RD0_R01_20261108.md`; **0/7 phần Academic/PED PASS**. Bản R00 bên dưới là lịch sử ý tưởng, **R01 thay thế mọi diễn giải R00 mâu thuẫn**, nhất là quy ước vectơ-không. Không có review NotebookLM Topic, handoff, ready manifest hoặc quyền phát hành.
+**Tình trạng:** Đã có đề cương 7 phần; **2/7 phần có bản thảo Kiến thức + Luyện tập**: Phần 1 `Temp_TOPIC_VECTOR_COORDINATE_PART1_SELF_STUDY_RD0_R01_20261108.md`, Phần 2 `Temp_TOPIC_VECTOR_COORDINATE_PART2_VECTOR_OPERATIONS_RD0_R00_20261108.md`. **0/7 phần Academic/PED PASS**. Bản R00 bên dưới là lịch sử ý tưởng, **R01 thay thế mọi diễn giải R00 mâu thuẫn**, nhất là quy ước vectơ-không. Không có review NotebookLM Topic, handoff, ready manifest hoặc quyền phát hành.
 
 ## A. Trạng thái chương trình chuyên đề
 
 | Thứ tự báo cáo | Tên chuyên đề | Tiến độ học liệu | Review | Bàn giao |
 | --- | --- | --- | --- | --- |
 | 1 | Hàm số và đồ thị (lớp 10–12) | 7/7 phần xong | Academic/PED PASS; Topic Readiness private PASS | Chờ tương thích cổng tiếp nhận V2 — Issue #790. Giữ bất biến nguồn R18 tại Draft PR #782. |
-| 2 | Vectơ và phương pháp tọa độ (lớp 10–12) | **1/7 phần có bản nháp RD0 R01**; 0/7 phần được duyệt | Chưa review | Chưa bàn giao |
+| 2 | Vectơ và phương pháp tọa độ (lớp 10–12) | **2/7 phần có bản nháp RD0**; 0/7 phần được duyệt | Chưa review | Chưa bàn giao |
 
 **Chưa có tổng số chuyên đề THPT canonical được xác minh trong nguồn vận hành đang đọc.** Không dùng số lượng 25 chuyên đề THCS làm tổng số chuyên đề THPT.
 
@@ -35,14 +35,16 @@ Các đầu mối dưới đây dùng để **xác định đúng phạm vi cầ
 - https://www.sgkvn.com/lop-12-15/ket-noi-tri-thuc-voi-cuoc-song-3/toan-12-tap-mot-3500.html
 - https://www.sgkvn.com/xem-sach-pdf-toan-12-tap-hai-3520.html
 
-**S1 PARTIAL VERIFIED:** Đã đọc trực tiếp SGK Toán 10 T1 B07 trang **in 46–50 ↔ PDF trang 47–51 (1-based)**, SBT Toán 10 T1 B07 **in 45–47 ↔ PDF 46–48**, đối chiếu từ folder Drive `KNTT TOAN 10`. Quy ước vectơ-không đúng SBT trang in 45; SGK B07 trang in 49 có điều kiện thẳng hàng/điểm nằm giữa. **SOURCE_HOLD chỉ còn đối với Phần 2–7 chưa tự kiểm trực tiếp SGK/SBT và chưa có review Chuyên đề**; không tự suy Q01–Q02 toàn chuyên đề PASS.
+**Cập nhật S1 phần 2:** SGK KNTT T1 B08 trang in 51–54 ↔ PDF trang 52–55, B09 trang in 55–59 ↔ PDF trang 56–60; SBT B08 trang in 48–50 ↔ PDF trang 49–51, B09 trang in 51–54 ↔ PDF trang 52–55. Đã trực tiếp render và xem trang gốc, đối chiếu SHA256 của SGK/SBT; chi tiết trong file Phần 2. **Chưa phải Academic/PED PASS Topic.**
+
+**S1 PARTIAL VERIFIED:** Đã đọc trực tiếp SGK Toán 10 T1 B07 trang **in 46–50 ↔ PDF trang 47–51 (1-based)**, SBT Toán 10 T1 B07 **in 45–47 ↔ PDF 46–48**, đối chiếu từ folder Drive `KNTT TOAN 10`. Quy ước vectơ-không đúng SBT trang in 45; SGK B07 trang in 49 có điều kiện thẳng hàng/điểm nằm giữa. **SOURCE_HOLD chỉ còn đối với Phần 3–7 chưa tự kiểm trực tiếp SGK/SBT và chưa có review Chuyên đề**; không tự suy Q01–Q02 toàn chuyên đề PASS.
 
 ## C. Bảy phần của CHÍNH MỘT chuyên đề — đề cương R00
 
 | Phần | Tên học sinh nhìn thấy | Kết quả học tập dự kiến (chưa canonical) | Trạng thái |
 | --- | --- | --- | --- |
 | 1 | Vectơ: độ lớn và hướng | Hiểu vectơ, độ lớn/phương/hướng, vectơ-không theo KNTT, bằng nhau; đọc hình, chứng minh thẳng hàng/điểm giữa | **Bản nháp RD0 R01 + S1 đã tự kiểm**, có 2 câu và 1 SVG mới, **chưa NotebookLM PASS** |
-| 2 | Cộng, trừ vectơ và nhân với một số | Giải thích quy tắc ghép dịch chuyển; chọn công cụ thích hợp; dùng quan hệ vectơ trong hình học | Đề cương |
+| 2 | Cộng, trừ vectơ và nhân với một số | Giải thích quy tắc ghép dịch chuyển; chọn phương pháp; trung điểm/trọng tâm; hệ số vectơ và hướng | **RD0 R00 đủ D1–D6/PED bản thảo; SGK/SBT B08–B09 đã đối chiếu trực tiếp, 18 item canonical tham chiếu, chưa NotebookLM PASS** |
 | 3 | Tọa độ vectơ và tích vô hướng trong mặt phẳng | Đổi hình sang thành phần tọa độ; hiểu ý nghĩa tích vô hướng, góc và vuông góc; kiểm điều kiện | Đề cương |
 | 4 | Giải bài toán hình học bằng tọa độ phẳng | Từ điểm/hướng/khoảng cách lập phương trình đường thẳng, đường tròn; nhận diện phạm vi ba conic | Đề cương |
 | 5 | Quan hệ hình học trong không gian | Nhìn và mô tả thẳng hàng, song song, vuông góc, hình chiếu và khoảng cách trước khi dùng tọa độ | Đề cương |
@@ -138,4 +140,4 @@ Có, **nếu các ô cùng kích thước**: chúng có cùng độ lớn và c�
 3. Mở rộng lần lượt phần 2–7, dứt điểm trọn chuyên đề rồi chuẩn bị một batch NotebookLM đủ nguồn, file Temp thực + prompt 3–6 câu.
 4. Không yêu cầu review lại Chuyên đề 1 chỉ vì Issue #790 là lỗi hợp đồng tiếp nhận do RELEASE/Governance xử lý.
 
-**Gửi chủ dự án ngắn gọn:** “Chuyên đề 1: học liệu 7/7, đã PASS, chờ bàn giao kỹ thuật. Chuyên đề 2: 1/7 đang soạn, 0/7 được duyệt. Chưa phát hành.”
+**Gửi chủ dự án ngắn gọn:** “Chuyên đề 1: học liệu 7/7, đã PASS, chờ bàn giao kỹ thuật. Chuyên đề 2: đã soạn bản thảo 2/7 phần, 0/7 được nghiệm thu. Tiếp theo Phần 3. Chưa phát hành.”
