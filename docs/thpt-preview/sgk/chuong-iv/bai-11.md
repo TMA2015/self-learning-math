@@ -2,6 +2,126 @@
 
 <div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG IV · KIẾN THỨC SGK KNTT</p><p class="thpt-r4-lead">Học kiến thức và ví dụ, rồi luyện tập theo từng kĩ năng.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương IV</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra · chưa kích hoạt</a></nav></div>
 
+<!-- G10_CHIV_FULL_R04_ALL_BEGIN -->
+
+## Tự khám phá trước công thức
+
+Hãy hiểu bản chất và tự thử trước khi mở đối chiếu. Hoạt động công khai này không tính điểm Mastery hoặc kiểm tra độc lập cuối chương.
+
+<!-- G10_CHIV_R04_BEGIN:THPT-G10-CHIV-TRY21 OUTCOME=G10-B11-GEOMETRIC_DOT -->
+
+<span id="thpt-g10-chiv-try21" data-thpt-first-try-id="THPT-G10-CHIV-TRY21" data-outcome-id="G10-B11-GEOMETRIC_DOT" data-thpt-help-ref="HELP-G10-B11-02"></span>
+
+### Tích vô hướng mô tả mức độ cùng hướng
+
+**Vì sao cần học:** Một lực tác dụng dọc hướng di chuyển có ích hơn lực kéo vuông góc; lực ngược chiều chuyển động có thể gây công âm.
+
+**Kiến thức cần nhớ trước:** Nhớ độ dài vectơ, góc giữa hai vectơ khác không thuộc 0°–180° và cos góc nhọn/vuông/tù. Trạng thái tiền đề: `PREREQUISITE_CONFIRMED/RECALL_ONLY` từ phần định nghĩa tại bài này hoặc bài SGK trước; đoạn này nhắc lại đủ để không bắt học sinh chuyển trang.
+
+**Hiểu bản chất trước công thức:** Tích vô hướng đo tích hai độ lớn có xét thành phần cùng hướng bằng cos: \(\vec u\cdot\vec v=|\vec u||\vec v|\cos\theta\). Nếu vuông góc tích 0, nếu ngược hướng tích âm; góc chỉ định nghĩa khi cả hai khác 0.
+
+**Đọc hình như thế nào:** Đọc `FIG-G10-B11-01`: đặt hai vectơ cùng gốc để đọc góc đúng giữa mũi tên; nhìn góc tù cho dấu cos âm, không đổi thành góc nhọn bổ sung. D5 kế thừa: `FIG-G10-B11-01`, không tạo hình mới, không thay XML/nhãn.
+
+**Chọn phương pháp và giới hạn:** Chọn định nghĩa hình học nếu biết hai độ dài và góc giữa vectơ; nếu một vectơ bằng 0, tích là 0 theo đại số nhưng không gán góc thường.
+
+**Tự thử trước Core:** Cho \(|\vec u|=2\), \(|\vec v|=3\), góc giữa hai vectơ là 120°. Tích vô hướng âm hay dương, bằng bao nhiêu?
+
+??? question "Em tự mở đối chiếu sau khi đã thử làm"
+
+    **Kết quả:** \(\vec u\cdot\vec v=2\cdot3\cdot\cos120^\circ=-3\).
+
+    **Vì sao:** Cos120°=−1/2 nên tích âm; không thể dùng cos60° vì đây là góc giữa hai vectơ đang hướng xa nhau.
+
+    **Đường tự sửa nếu mắc lỗi:** quay lại `HELP-G10-B11-02` (D6 R01), đọc lại mục PED3/PED5 ở trên, sau đó thử `THPT-G10-B11-P01` trong SGK Core/Practice R01. Câu Tự thử này là công khai và không ghi điểm thành thạo; không sử dụng làm kiểm tra độc lập cuối chương.
+
+<!-- G10_CHIV_R04_END:THPT-G10-CHIV-TRY21 -->
+
+<!-- G10_CHIV_R04_BEGIN:THPT-G10-CHIV-TRY22 OUTCOME=G10-B11-COORDINATE_DOT -->
+
+<span id="thpt-g10-chiv-try22" data-thpt-first-try-id="THPT-G10-CHIV-TRY22" data-outcome-id="G10-B11-COORDINATE_DOT" data-thpt-help-ref="HELP-G10-B11-01"></span>
+
+### Tại sao tích vô hướng có thể tính bằng hai cặp số?
+
+**Vì sao cần học:** Trong bản đồ Oxy, biết hai tọa độ vectơ có thể suy mức độ cùng hướng mà không cần đo góc.
+
+**Kiến thức cần nhớ trước:** Đã biết vectơ đơn vị \(\vec i,\vec j\) vuông góc, \(\vec u=u_x\vec i+u_y\vec j\) và tính chất phân phối. Trạng thái tiền đề: `PREREQUISITE_CONFIRMED/RECALL_ONLY` từ phần định nghĩa tại bài này hoặc bài SGK trước; đoạn này nhắc lại đủ để không bắt học sinh chuyển trang.
+
+**Hiểu bản chất trước công thức:** Vì \(\vec i\cdot\vec i=1\), \(\vec j\cdot\vec j=1\), \(\vec i\cdot\vec j=0\), khi nhân phân phối chỉ còn \(u_xv_x+u_yv_y\). Đây là công thức tọa độ của cùng tích vô hướng hình học.
+
+**Đọc hình như thế nào:** Đọc `FIG-G10-B11-01` cho hướng, góc; kết hợp hình trục B10 nếu cần tách thành phần trước khi nhân. D5 kế thừa: `FIG-G10-B11-01`, không tạo hình mới, không thay XML/nhãn.
+
+**Chọn phương pháp và giới hạn:** Khi có tọa độ, nhân các thành phần cùng trục rồi cộng; không nhân nhầm ux với vy hoặc lấy tích độ dài thay cho dấu.
+
+**Tự thử trước Core:** Cho \(\vec u=(2;-1)\), \(\vec v=(3;4)\). Tính \(\vec u\cdot\vec v\).
+
+??? question "Em tự mở đối chiếu sau khi đã thử làm"
+
+    **Kết quả:** \(2\cdot3+(-1)\cdot4=2\).
+
+    **Vì sao:** Thành phần theo Ox cho 6, theo Oy cho −4, cộng là 2. Tích vô hướng là một số, không phải vectơ.
+
+    **Đường tự sửa nếu mắc lỗi:** quay lại `HELP-G10-B11-01` (D6 R01), đọc lại mục PED3/PED5 ở trên, sau đó thử `THPT-G10-B11-C01` trong SGK Core/Practice R01. Câu Tự thử này là công khai và không ghi điểm thành thạo; không sử dụng làm kiểm tra độc lập cuối chương.
+
+<!-- G10_CHIV_R04_END:THPT-G10-CHIV-TRY22 -->
+
+<!-- G10_CHIV_R04_BEGIN:THPT-G10-CHIV-TRY23 OUTCOME=G10-B11-PERPENDICULAR -->
+
+<span id="thpt-g10-chiv-try23" data-thpt-first-try-id="THPT-G10-CHIV-TRY23" data-outcome-id="G10-B11-PERPENDICULAR" data-thpt-help-ref="HELP-G10-B11-01"></span>
+
+### Vuông góc có thể kiểm bằng số
+
+**Vì sao cần học:** Thay vì đo góc trên hình vẽ không chuẩn tỉ lệ, ta có thể dùng tích vô hướng bằng 0 để nhận biết hai vectơ vuông góc.
+
+**Kiến thức cần nhớ trước:** Biết cos90°=0 và công thức tọa độ tích vô hướng, cùng điều kiện cả hai vectơ khác không. Trạng thái tiền đề: `PREREQUISITE_CONFIRMED/RECALL_ONLY` từ phần định nghĩa tại bài này hoặc bài SGK trước; đoạn này nhắc lại đủ để không bắt học sinh chuyển trang.
+
+**Hiểu bản chất trước công thức:** Nếu hai vectơ khác không có tích vô hướng 0 thì cos góc giữa chúng là 0, vì tích độ dài dương; góc bằng 90°. Chiều ngược lại cũng đúng.
+
+**Đọc hình như thế nào:** Trong `FIG-G10-B11-01`, xem góc vẽ chỉ giúp dự đoán; kết luận bằng phép tính dấu/tích mới chính xác. D5 kế thừa: `FIG-G10-B11-01`, không tạo hình mới, không thay XML/nhãn.
+
+**Chọn phương pháp và giới hạn:** Kiểm tra hai vectơ khác không trước, sau đó tính tích vô hướng; \(\vec0\cdot\vec v=0\) nhưng không suy góc vuông với vectơ-không.
+
+**Tự thử trước Core:** \(\vec u=(2;3)\), \(\vec v=(3;-2)\). Chúng có vuông góc không? Vì sao điều kiện khác 0 quan trọng?
+
+??? question "Em tự mở đối chiếu sau khi đã thử làm"
+
+    **Kết quả:** Có, vì \(\vec u\cdot\vec v=2\cdot3+3\cdot(-2)=0\), và cả hai khác \(\vec0\).
+
+    **Vì sao:** Nếu một vectơ bằng 0 thì tích vẫn bằng 0 nhưng góc giữa hai vectơ không xác định theo định nghĩa dùng ở đây.
+
+    **Đường tự sửa nếu mắc lỗi:** quay lại `HELP-G10-B11-01` (D6 R01), đọc lại mục PED3/PED5 ở trên, sau đó thử `THPT-G10-B11-C02` trong SGK Core/Practice R01. Câu Tự thử này là công khai và không ghi điểm thành thạo; không sử dụng làm kiểm tra độc lập cuối chương.
+
+<!-- G10_CHIV_R04_END:THPT-G10-CHIV-TRY23 -->
+
+<!-- G10_CHIV_R04_BEGIN:THPT-G10-CHIV-TRY24 OUTCOME=G10-B11-APPLICATION -->
+
+<span id="thpt-g10-chiv-try24" data-thpt-first-try-id="THPT-G10-CHIV-TRY24" data-outcome-id="G10-B11-APPLICATION" data-thpt-help-ref="HELP-G10-B11-02"></span>
+
+### Công của lực: độ lớn không đủ
+
+**Vì sao cần học:** Đẩy một vật 3 m cùng chiều lực khác với kéo vật theo chiều ngược hoặc vuông góc lực, dù độ lớn lực và quãng dịch chuyển giống nhau.
+
+**Kiến thức cần nhớ trước:** Biết lực \(\vec F\) đo N, độ dời \(\vec s\) đo m, góc giữa hai vectơ khác không và tích vô hướng. Trạng thái tiền đề: `PREREQUISITE_CONFIRMED/RECALL_ONLY` từ phần định nghĩa tại bài này hoặc bài SGK trước; đoạn này nhắc lại đủ để không bắt học sinh chuyển trang.
+
+**Hiểu bản chất trước công thức:** Chỉ thành phần lực cùng chiều độ dời tạo công có dấu: \(W=\vec F\cdot\vec s=|\vec F||\vec s|\cos\theta\); cùng chiều cho dương, ngược chiều cho âm, vuông góc cho 0.
+
+**Đọc hình như thế nào:** Đọc `FIG-G10-B11-01` như một ví dụ về dấu góc tù; trong tình huống lực phải đặt hai vectơ cùng gốc để xác định góc chính xác. D5 kế thừa: `FIG-G10-B11-01`, không tạo hình mới, không thay XML/nhãn.
+
+**Chọn phương pháp và giới hạn:** Xác định hướng tương đối của lực và độ dời trước, kiểm đơn vị N·m=J; không lấy giá trị tuyệt đối khi bài hỏi công có dấu.
+
+**Tự thử trước Core:** Một lực 10 N hướng Đông, vật dịch chuyển 3 m hướng Tây. Công của lực là bao nhiêu J? Nếu dịch chuyển vuông góc lực thì sao?
+
+??? question "Em tự mở đối chiếu sau khi đã thử làm"
+
+    **Kết quả:** Cùng phương ngược hướng: \(W=10\cdot3\cos180^\circ=-30\) J; vuông góc: \(W=0\) J.
+
+    **Vì sao:** Cos180°=−1, cos90°=0. Công là vô hướng có dấu, khác với độ lớn lực hay quãng đường.
+
+    **Đường tự sửa nếu mắc lỗi:** quay lại `HELP-G10-B11-02` (D6 R01), đọc lại mục PED3/PED5 ở trên, sau đó thử `THPT-G10-B11-P05` trong SGK Core/Practice R01. Câu Tự thử này là công khai và không ghi điểm thành thạo; không sử dụng làm kiểm tra độc lập cuối chương.
+
+<!-- G10_CHIV_R04_END:THPT-G10-CHIV-TRY24 -->
+
+<!-- G10_CHIV_FULL_R04_ALL_END -->
+
 ## 1. Kiến thức SGK
 
 **D1.1 Góc hai vectơ.** Với $\vec u,\vec v\ne\vec0$, góc $\theta$ giữa chúng thuộc $[0^\circ,180^\circ]$. Khi $\theta$ nhọn, cos dương; khi vuông, cos bằng 0; khi tù, cos âm. **Không định nghĩa góc thông thường giữa một vectơ-không và vectơ khác không.**
