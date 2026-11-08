@@ -51,6 +51,12 @@ for(const check of checks){
     prefix=prefix.slice(0,prefix.indexOf("## Trước khi học:"));
     prefix=prefix.replace(current,frozen).replace("Tự kiểm tra · tự đối chiếu","Tự kiểm tra · chưa kích hoạt");
   }
+  if(check.file==="docs/thpt-preview/sgk/chuong-iv/bai-9.md"){
+    // Preserve the originally audited header, while independently source-locking the 5 new Q01-Q18 PED outcomes.
+    const addition=/<!-- G10_CHIV_FULL_R04_ALL_BEGIN -->[\s\S]*?<!-- G10_CHIV_FULL_R04_ALL_END -->\n\n/g;
+    assert.equal([...prefix.matchAll(addition)].length,1,"One unique approved bounded FULL R04 pedagogy addition before B09 Knowledge");
+    prefix=prefix.replace(addition,"");
+  }
   assert.equal(fnv(prefix),check.prefixHash,check.file+": lesson header changed beyond approved UI-only scope");
   let originalSuffix=src.slice(end);
   if(check.file==="docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md"){
