@@ -188,7 +188,15 @@ for(const n of [7,8,9,10,11]){
  const path="docs/thpt-preview/sgk/chuong-iv/bai-"+n+".md",s=read(path);
  const bounded=/<!-- G10_CHIV_FULL_R04_ALL_BEGIN -->[\s\S]*?<!-- G10_CHIV_FULL_R04_ALL_END -->\n\n/g;
  assert.equal([...s.matchAll(bounded)].length,1,"One bounded source-locked pedagogy section B"+n);
- assert.equal(sha(s.replace(bounded,"")),original[n],"Original S1 Knowledge D2 D5 D6 changed B"+n);
+ const afterB11=/<!-- G10_CHIV_POST_B11_TRANSFER_ALL_BEGIN -->[\s\S]*?<!-- G10_CHIV_POST_B11_TRANSFER_ALL_END -->\n\n/g;
+ assert.equal([...s.matchAll(afterB11)].length,n===11?1:0,
+   "Reviewed force application must be placed only after B11 lesson and before continuing");
+ if(n===11){
+   assert(s.indexOf("## 4. Tự khắc phục lỗi thường gặp")<s.indexOf("<!-- G10_CHIV_POST_B11_TRANSFER_ALL_BEGIN -->")&&
+     s.indexOf("<!-- G10_CHIV_POST_B11_TRANSFER_ALL_END -->")<s.indexOf("## 5. Tiếp tục"),
+     "FORCE requires B11 dot-product prerequisites and must be AFTER complete B11 lesson, not before Core");
+ }
+ assert.equal(sha(s.replace(bounded,"").replace(afterB11,"")),original[n],"Original S1 Knowledge D2 D5 D6 changed B"+n);
  const blocks=[...s.matchAll(/<!-- G10_CHIV_R04_BEGIN:(THPT-G10-CHIV-TRY\d\d) OUTCOME=(G10-B(?:07|08|09|10|11)-[A-Z_-]+) -->([\s\S]*?)<!-- G10_CHIV_R04_END:\1 -->/g)];
  assert.equal(blocks.length,({7:5,8:5,9:5,10:5,11:4})[n],"Original 24 distinct outcome paths partition B"+n);
  for(const [,id,outcome,text]of blocks){
