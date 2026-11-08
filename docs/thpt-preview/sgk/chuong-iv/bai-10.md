@@ -148,6 +148,57 @@ Hãy hiểu bản chất và tự thử trước khi mở đối chiếu. Hoạt
 
 <!-- G10_CHIV_R04_END:THPT-G10-CHIV-TRY20 -->
 
+<!-- G10_CHIV_TRANSFER_BEGIN:RIVER -->
+
+<span id="thpt-g10-chiv-try-river-tr01" data-thpt-first-try-id="THPT-G10-CHIV-TRY-RIVER-TR01" data-outcome-id="G10-B10-OPERATIONS" data-thpt-help-ref="HELP-G10-CHIV-RIVER-TR01"></span>
+
+### Ứng dụng: Ca nô: vận tốc theo bờ và điều kiện không trôi
+
+**Vì sao cần học:** Mũi thuyền đang hướng Bắc nhưng dòng nước kéo sang Đông: **hướng mũi thuyền không trùng quỹ đạo theo bờ**. Muốn cập đúng điểm đối diện, phải chủ động hướng thuyền ngược dòng.
+
+**Kiến thức tiền đề:** B08 cộng/trừ vectơ, B10 tọa độ `(x;y)` và độ dài vectơ; định nghĩa vận tốc là vectơ (m/s), phân biệt **vận tốc riêng so với nước** với **vận tốc theo bờ**.
+
+**Hiểu bản chất trước công thức:** Nếu chọn Ox về Đông, Oy về Bắc: `v_bờ=v_thuyền/nước+v_dòng`. Thời gian qua sông bằng **bề rộng chia thành phần Bắc dương** của `v_bờ` (không tự động chia cho độ lớn tốc độ riêng). Dịch chuyển ngang bằng `v_bờ,x·t`.
+
+**Hướng dẫn đọc hình:** Vẽ mũi tên dòng nước sang phải, mũi tên lái về phía bờ (có thể hơi chếch trái), và đường chéo vận tốc thực. Khoảng cách hai bờ đo dọc Oy; trôi dạt đo dọc Ox. Không coi đồ thị tốc độ–thời gian là sơ đồ hai bờ.
+
+**Chọn phương pháp và giới hạn:** Để **không trôi**, giải `v_thuyền/nước,x=−v_dòng,x` rồi chọn thành phần Bắc dương từ độ lớn đã cho. Điều kiện **`|v_dòng|<|v_thuyền/nước|`** cần thiết để vẫn có thành phần Bắc dương (dòng bằng tốc độ riêng thì không vượt qua bờ). Giả định dòng đều, vận tốc riêng có độ lớn không đổi, hai bờ thẳng song song.
+
+<figure class="thpt-r4-plot thpt-r4-probability-figure" data-thpt-reviewed-d5="FIG-G10-CHIV-RIVER-TR01"><img src="../../../../assets/images/thpt/THPT_G10_CHIV_RIVER_TRANSFER_D5_R01_CORRECTED.svg" alt="Hai trường hợp hướng mũi ca nô; lái Bắc thì trôi Đông, lái chếch Tây Bắc thì đi Bắc không trôi" loading="lazy"><figcaption>Hai bờ song song: thời gian phụ thuộc thành phần Bắc của vận tốc theo bờ.</figcaption></figure>
+
+**Tự thử trước Core:** Sông rộng 60 m, nước chảy **3 m/s về Đông**; ca nô chạy **5 m/s so với nước**, lái thẳng về Bắc. Ca nô sẽ trôi bao nhiêu mét về Đông khi tới bờ bên kia? Hãy thử trước khi mở.
+
+??? question "Tự mở đối chiếu kết quả"
+
+    `v_bờ=(3;5)` m/s; thành phần qua sông 5 m/s, nên `t=60/5=12 s` và độ trôi Đông `3·12=36 m`. Độ lớn vận tốc thực `√34` m/s, **không phải** tốc độ Bắc 5 m/s. Nếu dùng `60/√34`, xem `HELP-G10-CHIV-RIVER-TR01`.
+
+#### Ví dụ có hướng dẫn — EX-G10-B10-RIVER-TR01
+
+Sông rộng 96 m, dòng chảy đều 3 m/s về Đông; thuyền chạy 5 m/s so với nước. So sánh (i) giữ mũi thuyền thẳng Bắc và (ii) chọn hướng để cập đúng điểm đối diện.
+
+1. **Lập hệ:** Ox về Đông, Oy về Bắc. Vận tốc dòng `(3;0)` m/s. 
+2. **Trường hợp (i):** vận tốc riêng `(0;5)` m/s; theo bờ `(3;5)` m/s. Thời gian `96/5=19,2 s`; trôi Đông `3·19,2=57,6 m`.
+3. **Trường hợp (ii):** yêu cầu vận tốc thực không có thành phần Đông, tức vận tốc riêng `(-3;v_y)`; vì độ lớn là 5, `(-3)²+v_y²=25` ⇒ lấy **`v_y=+4` m/s** để qua bờ. Vận tốc thực `(0;4)`; qua sông hết `96/4=24 s`, không trôi ngang.
+4. **So sánh:** đi đúng điểm đối diện tốn **nhiều thời gian hơn** do một phần tốc độ riêng dùng để khử dòng. Không lấy nghiệm `v_y=-4` vì nó hướng **ra xa bờ đích**.
+
+**Tại sao không dùng định lí Pitago làm toàn bộ bài?** Pitago giúp tìm độ lớn/thành phần, nhưng không thay bước thiết lập quan hệ **vectơ vận tốc tương đối** và điều kiện “đúng điểm đối diện”.
+
+<span id="help-g10-chiv-river-tr01" data-thpt-help-id="HELP-G10-CHIV-RIVER-TR01"></span>
+
+??? tip "Tự khắc phục trong năm bước"
+
+    1. **Nhận diện:** em đang dùng tốc độ tổng thay cho thành phần qua sông, hay quên cộng vectơ dòng nước?
+
+    2. **Chẩn đoán:** vẽ 3 mũi tên từ cùng gốc; mũi tên nào chỉ đường đi thực khi đứng trên bờ?
+
+    3. **Lấp nền:** quay B08 cộng/trừ, B10 tọa độ và định lí độ dài vectơ, giải nghĩa hai hệ quy chiếu “nước” và “bờ”.
+
+    4. **Tự sửa:** viết `v_bờ,y>0`, áp `t=bề_rộng/v_bờ,y`, đặt `v_bờ,x=0` khi không trôi; kiểm điều kiện căn không âm và v_y dương.
+
+    5. **Luyện lại:** B10-P01/P02 → Tự thử `THPT-G10-CHIV-TRY-RIVER-TR01` mới (đã xem đáp án thì không làm bằng chứng độc lập) → D2 mới.
+
+<!-- G10_CHIV_TRANSFER_END:RIVER -->
+
 <!-- G10_CHIV_FULL_R04_ALL_END -->
 
 ## 1. Kiến thức SGK
