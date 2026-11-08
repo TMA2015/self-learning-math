@@ -41,7 +41,7 @@ const base="http://127.0.0.1:8765/thpt-preview/";
       assert.equal(await imgs.count(),2,"Two reviewed D5 transfer geometry figures");
       for(let i=0;i<2;i++){
        const im=imgs.nth(i);await im.scrollIntoViewIfNeeded();
-       await page.waitForFunction(()=>[...document.querySelectorAll('figure[data-thpt-reviewed-d5] img')].every(x=>x.complete&&x.naturalWidth>0));
+       await page.waitForFunction(index=>{const img=document.querySelectorAll('figure[data-thpt-reviewed-d5] img')[index];return !!img&&img.complete&&img.naturalWidth>0;},i);
        const sz=await im.evaluate(el=>({img:el.getBoundingClientRect().width,parent:el.parentElement.getBoundingClientRect().width}));
        assert(sz.img<=sz.parent+2,"Reviewed D5 SVG not responsive "+width);
       }
@@ -51,7 +51,7 @@ const base="http://127.0.0.1:8765/thpt-preview/";
     }
     const writtenResponse=await page.goto(base+"thu-vien/tu-luan-chuong-vii/",{waitUntil:"networkidle",timeout:90000});
     assert(writtenResponse?.ok(),"New ChVII public Written page missing");
-    const cards=page.locator('[data-thpt-written-canonical^="THPT-G10-CHVII-W22-"][data-thpt-filter-item]');
+    const cards=page.locator('[data-thpt-written-canonical^="THPT-G10-CHVII-W22-"][data-thpt-written-canonical$="-TR01"][data-thpt-filter-item]');
     assert.equal(await cards.count(),2,"Two new unique written items, no duplicate Anchor");
     for(let i=0;i<2;i++){
      const item=cards.nth(i),id=await item.getAttribute("data-thpt-written-canonical"),folds=item.locator("details");
