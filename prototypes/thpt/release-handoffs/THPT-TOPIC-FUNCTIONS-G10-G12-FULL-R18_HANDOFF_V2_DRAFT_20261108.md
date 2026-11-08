@@ -11,7 +11,7 @@ ACADEMIC_SOURCE_BLOB: 2340ea4975b37a457363eea59dd617070934983c
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC_FUNCTIONS_FULL_R18_Q18_OWNER_INDEPENDENT_VERDICT_RECEIPT_R01_20261108.md
 REVIEW_RECEIPT_BLOB: d2e86bac887ff04cf41f5cc9a1fa3ca622a9ca63
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic-functions/Temp_TOPIC_FUNCTIONS_FULL_AUTHORING_Q01_Q18_A1_A7_PREFLIGHT_R17_20261107.md
-AUTHOR_A1_A7_BLOB: 0ef55d29a9c5aebbe3224cbdefddcc9969afbc8d
+AUTHOR_A1_A7_BLOB: 8cee94ee5471e52499a94c711100c807984be397
 ACADEMIC_VERDICT: PASS
 PEDAGOGICAL_VERDICT: PASS
 PRIVATE_TOPIC_RD1_SCHOLARLY_VERDICT: PASS
@@ -208,7 +208,7 @@ Original verified KNTT SGK/SBT and receipts from G10 B15–B16; G11 B03/B20, B16
 - THPT-G12-TOP-FUNC-P01
 - THPT-G12-TOP-FUNC-P02
 
-**PUBLIC_ITEM_IDS scope:** 116 **distinct proposed placed public ID references** selected from the existing 192-source inventory, the four genuinely new R13 source pointers, and 28 historical Written references (10 already overlap G12 public inventory). This is NOT a claim of 116 new questions or live website records. The two original G10 `HPT-` aliases are preserved from historical author source, not made into fake THPT replacements; verify exact runtime canonical identity before import.
+**PUBLIC_ITEM_IDS scope:** 116 **distinct proposed placed public ID references** selected from the existing 192-source inventory, the four genuinely new R13 source pointers, and 28 historical Written references (10 already overlap G12 public inventory). This is NOT a claim of 116 new questions or live website records. The two original G10 `HPT-` IDs have now also been verified at **actual existing canonical source + original rubrics** via [R19](../content-drafts/topic-functions/Temp_TOPIC_FUNCTIONS_G10_SHARED_WRITTEN_SOURCE_EXACT_REUSE_R19_20261108.md) blob `89851c0ae78ab53b4d89d50391579806bc4f0dd6`. Their unusual HPT prefix is correct, NOT a typo. Original `tu-luan.md` source blob `4da918f36d30c9b7110099e81fc88943e5b7705b` contains /5 and /6 rubric respectively; the public placement registry separately confirms same IDs. RELEASE must reuse existing original runtime IDs unchanged, not invent THPT-prefixed duplicates.
 
 ## ITEM_OUTCOME_MATRIX
 
@@ -343,7 +343,7 @@ Original verified KNTT SGK/SBT and receipts from G10 B15–B16; G11 B03/B20, B16
 
 - D1/D2: exact reviewed M1–M7 content in public R18, original why/meaning/conditions/EX/First Try.
 - D3: 48 outcome-specific item-anchor routes, source library R12; 4 differentiated original public practice items registered in R13 to original candidate source without retyping source math.
-- D4: 28 historical Written source references (Anchor only a role/tag), original rubric unchanged, two G10 legacy aliases need RELEASE-side exact-name compatibility.
+- D4: 28 historical Written source references (Anchor only a role/tag), original rubric unchanged, two G10 original HPT canonical Written have verified underlying source and rubric; RELEASE must preserve exact canonical identifiers.
 - D5: original G10 graph hook, M4–M6 original G11 SVG and M7 original G12 ChI SVG; math & reading guidance, actual accessible rendering remains RELEASE.
 - D6: source-route HELP references by outcome, original preconditions/failure explanation and remediation. No exposed public practice item supplies protected Topic mastery.
 
