@@ -35,7 +35,7 @@ Các đầu mối dưới đây dùng để **xác định đúng phạm vi cầ
 - https://www.sgkvn.com/lop-12-15/ket-noi-tri-thuc-voi-cuoc-song-3/toan-12-tap-mot-3500.html
 - https://www.sgkvn.com/xem-sach-pdf-toan-12-tap-hai-3520.html
 
-**SOURCE_HOLD (chưa phải lỗi toán):** Chưa đối chiếu trực tiếp bản PDF SGK/SBT gốc của cả bốn tập liên quan, trang in ↔ PDF index, thứ tự phiên bản sách, ảnh hình và mục tiêu năng lực từng bài. Không điền số trang hoặc tuyên bố Q01/Q02 PASS bằng suy đoán.
+**SOURCE_HOLD (chưa phải lỗi toán):** Chưa đối chiếu trực tiếp bản PDF SGK/SBT gốc của sáu tập SGK liên quan (Toán 10, 11, 12; mỗi lớp hai tập), trang in ↔ PDF index, thứ tự phiên bản sách, ảnh hình và mục tiêu năng lực từng bài. Không điền số trang hoặc tuyên bố Q01/Q02 PASS bằng suy đoán.
 
 ## C. Bảy phần của CHÍNH MỘT chuyên đề — đề cương R00
 
