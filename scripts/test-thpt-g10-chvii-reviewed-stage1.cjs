@@ -65,13 +65,15 @@ const written=read("docs/thpt-preview/thu-vien/tu-luan-chuong-vii.md");
 const writtenIds=[...written.matchAll(/data-thpt-written-canonical="([^"]+)"/g)].map(x=>x[1]);
 const expectedWritten=["THPT-G10-CHVII-W19-01","THPT-G10-CHVII-W20-01",
  "THPT-G10-CHVII-W21-ANCHOR-01","THPT-G10-CHVII-W22-01"];
-assert.deepEqual(writtenIds,expectedWritten,"Four reviewed Written/Anchor items in one canonical register");
-assert.equal(new Set([...ids,...writtenIds]).size,36,"32 C/P + 4 Written must stay unique");
+assert.deepEqual(writtenIds.slice(0,4),expectedWritten,"Four original reviewed Written/Anchor items preserved in canonical order");
+const additiveWritten=["THPT-G10-CHVII-W22-ELLIPSE-TR01","THPT-G10-CHVII-W22-HYPERBOLA-TR01"];
+assert.deepEqual(writtenIds.slice(4),additiveWritten,"Exactly two reviewed transfer Written IDs and no duplicates");
+assert.equal(new Set([...ids,...writtenIds]).size,38,"32 original C/P + 4 historic Written + 2 reviewed transfer Written must stay unique");
 assert(!/Anchor skills:|anchor_tag=true|1 Anchor/.test(written),"Internal Anchor audit metadata must not appear in learner-facing Written text");
 assert.equal((written.match(/data-thpt-kind="anchor"/g)||[]).length,1,
  "Anchor is a single tag on one Written item");
-assert.equal((written.match(/<details>/g)||[]).length,4,"All solutions and rubrics must be collapsed initially");
-assert.equal((written.match(/class="thpt-r4-remediation-link"/g)||[]).length,4,"Every ChVII Written must link to the matching knowledge lesson");
+assert.equal((written.match(/<details>/g)||[]).length,8,"Four original solutions and two hint+answer folds per reviewed transfer Written, all initially closed");
+assert.equal((written.match(/class="thpt-r4-remediation-link"/g)||[]).length,6,"Four original and two new Written link to the correct Knowledge page");
 assert.equal((written.match(/<span class="arithmatex">\\\(/g)||[]).length,57,
  "All 57 Written inline formula strings must be MathJax-wrapped in raw HTML");
 const hub=read("docs/thpt-preview/sgk/chuong-vii/luyen-tap.md");
