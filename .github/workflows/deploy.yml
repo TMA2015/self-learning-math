@@ -38,6 +38,8 @@ jobs:
         run: node scripts/test-thpt-g10-chii-full-r03-release.cjs
       - name: Guard G10 ChVII FULL R03 25 source-locked First Try, 2 new Written/D5, no private RD1/Mastery before deploy
         run: node scripts/test-thpt-g10-chvii-full-r03-release.cjs
+      - name: Guard G10 ChIV FULL R04 26 canonical First Try, corrected R01 D5 and 21 client-only Q16 before deploy
+        run: node scripts/test-thpt-g10-chiv-full-r04-release.cjs
       - name: Guard G12 ChVI source/receipt SHA, 56 public canonical and private RD1 Q16 boundary
         run: node scripts/test-thpt-g12-chvi-release-source.cjs
 
