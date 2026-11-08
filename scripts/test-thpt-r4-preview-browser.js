@@ -244,14 +244,14 @@ async function ready(page,path){
       await dlg.locator("[data-thpt-modal-close]").click();
     }
     await ready(page,"thu-vien/tu-luan-chuong-vii/");
-    assert.equal(await page.locator('[data-thpt-written-canonical]').count(),4,
-      "Four ChVII Written cards must be independently accessible");
+    assert.equal(await page.locator('[data-thpt-written-canonical]').count(),6,
+      "Four historic plus two reviewed transfer ChVII Written cards must be independently accessible");
     assert.equal(await page.locator('.thpt-r4-written-card[data-thpt-kind="anchor"]').count(),1,
       "Anchor is a tag on one Written item, not an extra duplicate");
     assert.equal(await page.locator('.thpt-r4-written-card details[open]').count(),0,
       "All ChVII Written solutions and rubrics must start closed");
-    assert.equal(await page.locator('.thpt-r4-written-card details').count(),4,
-      "Each Written item must retain one reviewed solution/rubric");
+    assert.equal(await page.locator('.thpt-r4-written-card details').count(),6,
+      "Each of six reviewed Written items must retain one solution/rubric");
     await ready(page,"sgk/chuong-vii/tu-kiem-tra-chuong/");
     assert.equal(await page.locator("[data-thpt-secure-readiness]").count(),0);
     assert.equal(await page.locator("[data-thpt-open-quiz]").count(),0,
