@@ -1,5 +1,16 @@
 # Kiểm soát một nguồn học liệu Topic “Hàm số và đồ thị” · SOURCE PRECEDENCE & DELTA R01
 
+## MOST RECENT 08/11 Q15 source closure — G10 Written exact records verified
+
+- [R19 original two G10 Written source/rubric confirmation](prototypes/thpt/content-drafts/topic-functions/Temp_TOPIC_FUNCTIONS_G10_SHARED_WRITTEN_SOURCE_EXACT_REUSE_R19_20261108.md), Git blob `89851c0ae78ab53b4d89d50391579806bc4f0dd6`: the historical `HPT-` ID prefixes ARE original actual canonical identifiers in `docs/thpt-preview/thu-vien/tu-luan.md` and existing public G10 placement; original /5 and /6 rubric sources present. No new Written, no duplicate rubric, no textbook re-review, no renaming of stable IDs.
+- One [Draft V2 handoff](prototypes/thpt/release-handoffs/THPT-TOPIC-FUNCTIONS-G10-G12-FULL-R18_HANDOFF_V2_DRAFT_20261108.md) Git blob `34d286aaad311b660580df580d4b89509c1adbb7`, source SHA `2340ea4975b37a457363eea59dd617070934983c`, Q18 private academic PASS receipt SHA `d2e86bac887ff04cf41f5cc9a1fa3ca622a9ca63` and A1–A7 evidence SHA `8cee94ee5471e52499a94c711100c807984be397` are now synchronized in AUTHORING.
+- **Academic/PED + source Q15 are complete on the supported content scope.** Only the **technical V2 Topic intake contract** (Type/standard v1.2.0 support at [Issue #790](https://github.com/TMA2015/self-learning-math/issues/790)) prevents official `CONTENT_READY`; do NOT bypass by marking Topic as SGK. RELEASE retains 116 selected unique IDs/122 proposed placements exact runtime QA, private Final Submit, Golden and deploy authority.
+
+**FINAL ACADEMIC AUTHORING STATE:** `M1_M7_AND_PRIVATE_RD1_ACADEMIC_PED=PASS`; `G10_WRITTEN_SOURCE_TWO_VERIFIED`; `R18_PUBLIC_SOURCE_IMMUTABLE`; `Q18_PRIVATE_SAFE_HASH_RECEIPT_VALID`; `V2_DRAFT_EXISTS`; `READY_GATE_TOPIC_UNSUPPORTED`; `CONTENT_READY=NO`; `MERGE_DEPLOY=NO`.
+
+---
+
+
 ## LATEST 08/11 AUTHORING FINAL ACADEMIC CLOSEOUT — private RD1 independent PASS accepted, source frozen
 
 **Supersedes older historical `PENDING_PRIVATE_RD1` and metadata HOLD statements below.** Owner-supplied NotebookLM verdict on the original owner-held 30-question/48-outcome Topic Readiness R01 is **Academic PASS + Pedagogical PASS, P0/P1/P2=0, MINIMAL_DELTA=0**, correct scope/S1/five Permanent v2.1. No repeat reviewer requests under [owner decision #787](https://github.com/TMA2015/self-learning-math/issues/787). Prior M1–M7 public Knowledge and Practice independent Academic/PED PASS preserved unchanged.
