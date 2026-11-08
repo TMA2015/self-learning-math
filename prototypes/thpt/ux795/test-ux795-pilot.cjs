@@ -52,14 +52,14 @@ for(const row of records){
  buttons.forEach(x=>x.pressed=x.dataset.view==='B');
  context.render();
  const after=article.innerHTML;
- assert.deepEqual(h2(after).slice(0,5),[
-  'Khám phá kiến thức','Thuật ngữ · Kiến thức và kỹ năng',
-  'Kiến thức SGK','Ví dụ giải toán','Lỗi thường gặp và cách khắc phục'
- ],row.id+': uniform visible page hierarchy');
+ assert.deepEqual(h2(after).slice(0,4),[
+  'Khám phá kiến thức','Kiến thức SGK','Ví dụ giải toán','Lỗi thường gặp và cách khắc phục'
+ ],row.id+': uniform four-area page hierarchy');
+ assert(after.includes('<h3>Thuật ngữ và kiến thức, kỹ năng</h3>'),row.id+': terms after Discovery');
  assert.equal(figures(after),count,row.id+': source figure retained once');
  assert.equal(ids(after).length,new Set(ids(after)).size,row.id+': no duplicated canonical first-try');
  assert.equal(ids(after).length,ids(before).length,row.id+': first-try placement preserved');
  assert(!/PREREQUISITE_CONFIRMED|PED4|FIG-G10-B02-/.test(after),row.id+': no known audit tokens in hybrid');
- console.log('PASS '+row.id+' · 5 headings · SVG figure · first-try preserved');
+ console.log('PASS '+row.id+' · 4 main sections · SVG figure · first-try preserved');
 }
 console.log('PASS UX795 static/DOM-shim checks (NOT browser/AP5, MathJax or learner QA)');
