@@ -44,14 +44,13 @@ for(const row of records){
  assert(row.article.includes('data:image/svg+xml'),'source SVG embedded unchanged');
  selector.value=row.id;
  buttons.forEach(x=>x.pressed=x.dataset.view==='A');
- context.render?.(); // render is lexical in the prototype; triggering listener-less render below via re-evaluation is intentional
- // The script's render() runs on startup; re-evaluate it after state reset to test both modes.
- vm.runInNewContext(app,context,{timeout:1000});
+ assert.equal(typeof context.render,'function');
+ context.render();
  const before=article.innerHTML;
  const count=figures(before);
  assert(count>=1,'figure present for each selected case');
  buttons.forEach(x=>x.pressed=x.dataset.view==='B');
- vm.runInNewContext(app,context,{timeout:1000});
+ context.render();
  const after=article.innerHTML;
  assert.deepEqual(h2(after).slice(0,5),[
   'Khám phá kiến thức','Thuật ngữ · Kiến thức và kỹ năng',
