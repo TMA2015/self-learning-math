@@ -2,19 +2,19 @@
 ## PHẦN 1/7 — Vectơ, độ lớn và hướng · RD0 AUTHORING R01 (BẢN THẢO)
 
 **Vai trò:** AUTHORING DRAFT ONLY — không phải website, không phải gói NotebookLM, chưa Academic/PED PASS, không CONTENT_READY.  
-**Chuẩn duy nhất:** \`SLM-THPT-QUALITY-ONE / 1.2.0\`, Q01–Q18.  
+**Chuẩn duy nhất:** `SLM-THPT-QUALITY-ONE / 1.2.0`, Q01–Q18.  
 **Phạm vi:** Phần 1 của đúng **một** chuyên đề xuyên lớp; không áp Chương/Bài SGK thành các trang học mới.  
-**Kiến trúc người học:** đúng ba mục \`Kiến thức / Luyện tập / Tự kiểm tra\`; tệp này chuẩn bị **Kiến thức + Luyện tập** và metadata giới hạn Tự kiểm tra, không phải RD1.  
-**Trạng thái phần:** RD0 draft đủ khung D1–D6; chưa qua S1 PDF-index tự kiểm / NotebookLM; không gán \`PASS\` cho phần hoặc toàn chuyên đề.
+**Kiến trúc người học:** đúng ba mục `Kiến thức / Luyện tập / Tự kiểm tra`; tệp này chuẩn bị **Kiến thức + Luyện tập** và metadata giới hạn Tự kiểm tra, không phải RD1.  
+**Trạng thái phần:** RD0 draft đủ khung D1–D6; chưa qua S1 PDF-index tự kiểm / NotebookLM; không gán `PASS` cho phần hoặc toàn chuyên đề.
 
 ### Nguồn S1 và bảo toàn thành quả đã duyệt
 
 **Phạm vi S1 trực tiếp của phần 1:** SGK Toán 10 KNTT tập 1, Chương IV, **Bài 7 — Các khái niệm mở đầu, trang in 46–50**; SBT Toán 10 KNTT tập 1, **Bài 7, trang in 45–47**. Đây là số **trang in** trích từ gói SGK đã có **reviewer độc lập** trong repository; **chưa ghi chỉ số trang PDF** vì chưa tự mở PDF scan gốc trong lượt này. Không sử dụng kiến thức Bài 8–11 hay lớp 11–12 như điều kiện bắt buộc của Phần 1. Các phần sau sẽ kiểm trực tiếp S1 theo từng phạm vi.
 
 **Một nguồn canonical SGK đã PASS (chỉ đúng snapshot SGK):**
-- \`prototypes/thpt/content-drafts/THPT_G10_CHIV_B07_B08_D1D6_AUTHORING_R01_SNAPSHOT.md\`, Git blob \`42b206e31421b33860a1bf697d2d04b7aba992cf\`.
-- \`prototypes/thpt/content-drafts/THPT_G10_CHIV_B07_B08_NOTEBOOKLM_D1D6_R01_PASS_RECEIPT_20261029.md\`, nguồn reviewer độc lập của **SGK B07/B08**, không phải Academic/PED PASS mới cho Chuyên đề 2.
-- \`prototypes/thpt/release-queue/ready/G10-SGK-CHIV.md\`: ghi nhận S1 trang in 46–50/45–47 và hai D5 SVG.  
+- `prototypes/thpt/content-drafts/THPT_G10_CHIV_B07_B08_D1D6_AUTHORING_R01_SNAPSHOT.md`, Git blob `42b206e31421b33860a1bf697d2d04b7aba992cf`.
+- `prototypes/thpt/content-drafts/THPT_G10_CHIV_B07_B08_NOTEBOOKLM_D1D6_R01_PASS_RECEIPT_20261029.md`, nguồn reviewer độc lập của **SGK B07/B08**, không phải Academic/PED PASS mới cho Chuyên đề 2.
+- `prototypes/thpt/release-queue/ready/G10-SGK-CHIV.md`: ghi nhận S1 trang in 46–50/45–47 và hai D5 SVG.  
 **Kỉ luật nguồn:** Toàn bộ câu Core/Practice/Written/Worked dưới đây được **tham chiếu** cùng một ID gốc SGK; không tạo item/đáp án/rubric thứ hai. Muốn NotebookLM review Chuyên đề 2, phải xuất snapshot đủ **nội dung thật** từ các ref này vào file Temp review và kiểm item 1:1; không chỉ gửi danh sách ID.
 
 **Điểm sửa học thuật quan trọng so với RD0 R00:** KNTT **quy ước vectơ-không cùng phương và cùng hướng với mọi vectơ** (SBT Bài 7 trang in 45; receipt nguồn SGK đã được NotebookLM chấp nhận). Trong trực giác hình học, mũi tên dài 0 không có chiều quan sát được; nhưng tuyệt đối **không dạy rằng vectơ-không không cùng hướng với vectơ nào**. Khi giải bài theo KNTT phải áp dụng đúng quy ước.
@@ -56,7 +56,7 @@ Nhớ lại điểm A, B; đoạn thẳng AB và độ dài AB; các đường t
 
 ## 4. Hướng dẫn đọc hình (D5) — dùng chung, không nhân bản
 
-**Nguồn hình canonical đã được duyệt SGK:** \`FIG-G10-B07-01\` — \`THPT_G10_B07_PARALLELOGRAM_EQUAL_OPPOSITE_D5_R01.svg\`, XML nguyên gốc nằm trong phần D5 của snapshot SGK Git blob \`42b206e31421b33860a1bf697d2d04b7aba992cf\`. **Không tạo một SVG bản sao** chỉ để chuyển từ SGK sang Chuyên đề; đề xuất placement \`TOPIC_KNOWLEDGE / PART_1 / FIG-G10-B07-01\`. RELEASE kiểm việc tham chiếu thành ảnh thật trên website khi đến lượt tích hợp.
+**Nguồn hình canonical đã được duyệt SGK:** `FIG-G10-B07-01` — `THPT_G10_B07_PARALLELOGRAM_EQUAL_OPPOSITE_D5_R01.svg`, XML nguyên gốc nằm trong phần D5 của snapshot SGK Git blob `42b206e31421b33860a1bf697d2d04b7aba992cf`. **Không tạo một SVG bản sao** chỉ để chuyển từ SGK sang Chuyên đề; đề xuất placement `TOPIC_KNOWLEDGE / PART_1 / FIG-G10-B07-01`. RELEASE kiểm việc tham chiếu thành ảnh thật trên website khi đến lượt tích hợp.
 
 **Học sinh đọc hình theo thứ tự:**
 1. Tìm đuôi và đầu mũi tên: \(A\to B\), \(D\to C\), \(C\to D\).
@@ -70,7 +70,7 @@ Nhớ lại điểm A, B; đoạn thẳng AB và độ dài AB; các đường t
 ## 5. Ví dụ đã có một nguồn gốc, dùng lại với cách dẫn dắt của Chuyên đề
 
 ### Ví dụ A — Vì sao phải kiểm cả chiều lẫn độ dài?
-**Canonical worked ID:** \`EX-G10-B07-01\` (tham chiếu SGK; không sinh EX mới).
+**Canonical worked ID:** `EX-G10-B07-01` (tham chiếu SGK; không sinh EX mới).
 
 **Bài toán gốc:** Với hình bình hành ABCD, so sánh \(\overrightarrow{AB}\) với \(\overrightarrow{DC}\), và \(\overrightarrow{AB}\) với \(\overrightarrow{CD}\).
 
@@ -79,14 +79,14 @@ Nhớ lại điểm A, B; đoạn thẳng AB và độ dài AB; các đường t
 **Nếu gặp bế tắc:** Đặt ngón tay tại A, di chuyển đến B; sau đó đặt tại D, di chuyển đến C. Đó là cùng chiều. Đổi đường đi thành C đến D sẽ đổi chiều.
 
 ### Ví dụ B — Đoạn mũi tên dài bằng 0 thì sao?
-**Canonical worked ID:** \`EX-G10-B07-02\`.
+**Canonical worked ID:** `EX-G10-B07-02`.
 
 **Bài toán gốc:** A, B là hai điểm, so sánh \(\overrightarrow{AA}\) với \(\overrightarrow{BB}\) và nêu độ dài.
 
 **Chọn phương pháp:** Ở đây điểm đầu trùng điểm cuối nên không dùng việc quan sát chiều mũi tên thông thường; nhận ra ngay cả hai là \(\vec0\). Vì vậy hai vectơ bằng nhau và cùng có độ dài 0. Với một vectơ khác 0, dùng **quy ước KNTT về cùng phương/cùng hướng** để trả lời câu hỏi tương ứng.
 
 ### Ví dụ C — Quãng đường có phải độ dài vectơ độ dời?
-**Canonical worked ID:** \`EX-G10-B07-03\`.
+**Canonical worked ID:** `EX-G10-B07-03`.
 
 **Bài toán gốc:** Tàu đi 6 km về Đông rồi 8 km về Bắc. Tính quãng đường và độ dài vectơ độ dời từ đầu đến cuối.
 
@@ -98,10 +98,10 @@ Nhớ lại điểm A, B; đoạn thẳng AB và độ dài AB; các đường t
 
 Tự thử ở đây dùng **đúng các canonical public IDs đã có**, thay vì tạo biến thể gần trùng:
 
-1. \`THPT-G10-B07-C02\` — Kiểm tra tiêu chuẩn hai vectơ bằng nhau. **Học sinh chọn trước; mở đối chiếu sau:** Đáp án \`C\`, cùng hướng và cùng độ dài; cùng phương hoặc cùng độ dài riêng lẻ không đủ.
-2. \`THPT-G10-B07-P04\` — Kiểm tra vectơ-không theo KNTT. **Chọn trước; mở đối chiếu sau:** Đáp án \`D\`, độ dài 0, quy ước cùng hướng với mọi vectơ.
+1. `THPT-G10-B07-C02` — Kiểm tra tiêu chuẩn hai vectơ bằng nhau. **Học sinh chọn trước; mở đối chiếu sau:** Đáp án `C`, cùng hướng và cùng độ dài; cùng phương hoặc cùng độ dài riêng lẻ không đủ.
+2. `THPT-G10-B07-P04` — Kiểm tra vectơ-không theo KNTT. **Chọn trước; mở đối chiếu sau:** Đáp án `D`, độ dài 0, quy ước cùng hướng với mọi vectơ.
 
-**Kiến trúc:** đây là hai \`TOPIC_FIRST_TRY\` placements trên những ID công khai có sẵn; không tăng tổng unique item ID; khi chuyển xuống Luyện tập vẫn là **một item** trên engine. Tự thử là formative, không phải \`TOPIC_READINESS\`. File Markdown trình bày cả câu trả lời để review, nhưng bản người học phải **ẩn lời giải cho tới khi học sinh tự mở**; RELEASE đảm bảo điều này khi render.
+**Kiến trúc:** đây là hai `TOPIC_FIRST_TRY` placements trên những ID công khai có sẵn; không tăng tổng unique item ID; khi chuyển xuống Luyện tập vẫn là **một item** trên engine. Tự thử là formative, không phải `TOPIC_READINESS`. File Markdown trình bày cả câu trả lời để review, nhưng bản người học phải **ẩn lời giải cho tới khi học sinh tự mở**; RELEASE đảm bảo điều này khi render.
 
 **Nếu làm sai:** đọc lại bảng phân biệt ở mục 3, mở HELP tương ứng trong mục II.2, sau đó thực hành một câu khác. Không tự ghi Skill Mastery.
 
@@ -113,31 +113,31 @@ Tự thử ở đây dùng **đúng các canonical public IDs đã có**, thay v
 
 | ID canonical gốc | Outcome chính | Vai trò Chuyên đề (đề xuất) | Đáp án gốc bất biến | Vị trí |
 | --- | --- | --- | --- | --- |
-| \`THPT-G10-B07-C01\` | Vectơ/đầu–cuối | \`TOPIC_PRACTICE_BASIC\` | B | Luyện tập |
-| \`THPT-G10-B07-C02\` | Hai vectơ bằng nhau | \`TOPIC_FIRST_TRY\`, sau đó Practice | C | Tự thử / Luyện tập |
-| \`THPT-G10-B07-P01\` | Độ dài vectơ | \`TOPIC_PRACTICE_BASIC\` | 7 cm | Luyện tập |
-| \`THPT-G10-B07-P02\` | Bằng nhau trong hình bình hành | \`TOPIC_PRACTICE_REASONING\` | A | Luyện tập |
-| \`THPT-G10-B07-P03\` | Ngược hướng | \`TOPIC_PRACTICE_REASONING\` | \(\overrightarrow{CD}\) | Luyện tập |
-| \`THPT-G10-B07-P04\` | Vectơ-không | \`TOPIC_FIRST_TRY\`, sau đó Practice | D | Tự thử / Luyện tập |
-| \`THPT-G10-B07-P05\` | Cùng hướng nhưng khác độ dài | \`TOPIC_PRACTICE_TRAP\` | B | Luyện tập |
-| \`THPT-G10-B07-P06\` | Độ dời và quãng đường | \`TOPIC_PRACTICE_APPLY\` | 5 km | Luyện tập |
-| \`THPT-G10-CHIV-W07\` | Bằng nhau/hình bình hành | \`TOPIC_WRITTEN\` | Rubric gốc /7 | Written chung |
+| `THPT-G10-B07-C01` | Vectơ/đầu–cuối | `TOPIC_PRACTICE_BASIC` | B | Luyện tập |
+| `THPT-G10-B07-C02` | Hai vectơ bằng nhau | `TOPIC_FIRST_TRY`, sau đó Practice | C | Tự thử / Luyện tập |
+| `THPT-G10-B07-P01` | Độ dài vectơ | `TOPIC_PRACTICE_BASIC` | 7 cm | Luyện tập |
+| `THPT-G10-B07-P02` | Bằng nhau trong hình bình hành | `TOPIC_PRACTICE_REASONING` | A | Luyện tập |
+| `THPT-G10-B07-P03` | Ngược hướng | `TOPIC_PRACTICE_REASONING` | \(\overrightarrow{CD}\) | Luyện tập |
+| `THPT-G10-B07-P04` | Vectơ-không | `TOPIC_FIRST_TRY`, sau đó Practice | D | Tự thử / Luyện tập |
+| `THPT-G10-B07-P05` | Cùng hướng nhưng khác độ dài | `TOPIC_PRACTICE_TRAP` | B | Luyện tập |
+| `THPT-G10-B07-P06` | Độ dời và quãng đường | `TOPIC_PRACTICE_APPLY` | 5 km | Luyện tập |
+| `THPT-G10-CHIV-W07` | Bằng nhau/hình bình hành | `TOPIC_WRITTEN` | Rubric gốc /7 | Written chung |
 
 **Hướng dẫn học:** Làm P01 và C01 trước; tiếp P02/P03/P05 để phân biệt hướng; làm P04 khi đã đọc quy ước vectơ-không; cuối cùng P06 và W07 để chuyển từ nhận biết sang vận dụng. Nếu đã tự thử C02/P04 thì kết quả đó là **formative đã xem**, không được tính là kiểm tra độc lập.
 
-**Không nhân bản:** Tất cả câu, đáp án, lời giải, distractor và rubric nằm tại SGK canonical source; bảng là \`placement manifest DRAFT\`, không phải dữ liệu runtime đã được tích hợp. \`TOPIC_FIRST_TRY\` và các vai trò là nhãn đề xuất; cần so với schema thực tế trong RELEASE trước khi triển khai, không tuyên bố engine hỗ trợ ngay.
+**Không nhân bản:** Tất cả câu, đáp án, lời giải, distractor và rubric nằm tại SGK canonical source; bảng là `placement manifest DRAFT`, không phải dữ liệu runtime đã được tích hợp. `TOPIC_FIRST_TRY` và các vai trò là nhãn đề xuất; cần so với schema thực tế trong RELEASE trước khi triển khai, không tuyên bố engine hỗ trợ ngay.
 
 ## 2. D6 — Khi sai thì học lại chỗ nào?
 
-**\`HELP-G10-B07-01\` (nguồn dùng chung):** Nhầm điểm đầu/cuối, hay đảo chiều AB và BA. Hãy đọc mũi tên từ chữ đầu đến chữ sau; vẽ cả \(\overrightarrow{AB}\) và \(\overrightarrow{BA}\) trên một đoạn; thử lại P03 rồi C02.
+**`HELP-G10-B07-01` (nguồn dùng chung):** Nhầm điểm đầu/cuối, hay đảo chiều AB và BA. Hãy đọc mũi tên từ chữ đầu đến chữ sau; vẽ cả \(\overrightarrow{AB}\) và \(\overrightarrow{BA}\) trên một đoạn; thử lại P03 rồi C02.
 
-**\`HELP-G10-B07-02\` (nguồn dùng chung):** Nhầm cùng phương/cùng hướng/bằng nhau hoặc bỏ quên quy ước vectơ-không. So sánh theo thứ tự **phương → hướng → độ dài** với vectơ khác không; nếu là \(\vec0\) dùng quy ước KNTT và độ dài 0. Thử P05 trước, P04 sau.
+**`HELP-G10-B07-02` (nguồn dùng chung):** Nhầm cùng phương/cùng hướng/bằng nhau hoặc bỏ quên quy ước vectơ-không. So sánh theo thứ tự **phương → hướng → độ dài** với vectơ khác không; nếu là \(\vec0\) dùng quy ước KNTT và độ dài 0. Thử P05 trước, P04 sau.
 
 **Với câu độ dời P06:** Vẽ hai chặng vuông góc và đoạn nối điểm đầu–cuối; phân biệt quãng đường \(4+3=7\) km với độ dài độ dời 5 km. Đối chiếu Ví dụ C; đây là hướng dẫn bổ sung **D6 tại chỗ**, không phải item mới.
 
 ## 3. Written — một thư viện, rubric gốc, không tự cho điểm hệ thống
 
-**Canonical:** \`THPT-G10-CHIV-W07\`. Bài gốc yêu cầu giải thích vectơ bằng nhau trong hình bình hành, chỉ vectơ ngược hướng, dùng giao hai đường chéo O và tính độ dài. Khi làm, học sinh vẽ hình và ghi từng lí do, không chỉ kết quả.
+**Canonical:** `THPT-G10-CHIV-W07`. Bài gốc yêu cầu giải thích vectơ bằng nhau trong hình bình hành, chỉ vectơ ngược hướng, dùng giao hai đường chéo O và tính độ dài. Khi làm, học sinh vẽ hình và ghi từng lí do, không chỉ kết quả.
 
 **Tự đối chiếu:** Sau khi hoàn tất bài trên giấy, mở lời giải/rubric đúng **bản SGK đã duyệt**, tổng **7,0 điểm**. Chấm tay là tự học, **không tạo Mastery, Readiness hoặc điểm chính thức**. Không tạo thêm Written/Anchor ID.
 
@@ -152,7 +152,7 @@ Tự thử ở đây dùng **đúng các canonical public IDs đã có**, thay v
 
 # III. TỰ KIỂM TRA — Giới hạn an toàn tại RD0
 
-Phần 1 **không tạo ngân hàng Readiness riêng**; Chuyên đề 2 về sau cần **một Tự kiểm tra cấp chuyên đề** phủ đủ 7 phần. \`TOPIC_READINESS\` độc lập khác \`SGK_CHAPTER_READINESS\`. Không dùng lại các câu công khai đã luyện rồi tuyên bố đó là chứng cứ đánh giá độc lập. Không chứa câu hỏi/đáp án/rubric private RD1 trong kho công khai. \`CLIENT_SELF_CHECK_NO_MASTERY\` nếu dùng demo thì không là kiểm tra chính thức. Quy tắc Final Submit, không hint/Tutor/đúng-sai trước nộp thuộc RELEASE và không được suy hoàn thành từ tệp học liệu này.
+Phần 1 **không tạo ngân hàng Readiness riêng**; Chuyên đề 2 về sau cần **một Tự kiểm tra cấp chuyên đề** phủ đủ 7 phần. `TOPIC_READINESS` độc lập khác `SGK_CHAPTER_READINESS`. Không dùng lại các câu công khai đã luyện rồi tuyên bố đó là chứng cứ đánh giá độc lập. Không chứa câu hỏi/đáp án/rubric private RD1 trong kho công khai. `CLIENT_SELF_CHECK_NO_MASTERY` nếu dùng demo thì không là kiểm tra chính thức. Quy tắc Final Submit, không hint/Tutor/đúng-sai trước nộp thuộc RELEASE và không được suy hoàn thành từ tệp học liệu này.
 
 ---
 
@@ -160,11 +160,11 @@ Phần 1 **không tạo ngân hàng Readiness riêng**; Chuyên đề 2 về sau
 
 | Outcome gốc SGK được ánh xạ Chuyên đề | D1/D2 | D3 item | D4 | D5 | D6/PED | Tình trạng |
 | --- | --- | --- | --- | --- | --- | --- |
-| \`G10-B07-DEFINITION\` | §I.1–3; EX-01 | C01 | W07 (hỗ trợ ký hiệu) | FIG-B07-01 | HELP-01; WHY/tiền đề/đọc mũi tên | DRAFT |
-| \`G10-B07-LENGTH\` | §I.3; EX-03 | P01,P06 | W07/độ dài | FIG-B07-01 | P06 remediation, giải thích quãng đường | DRAFT |
-| \`G10-B07-DIRECTION\` | §I.3–5; EX-01 | P03,P05 | W07/hướng | FIG-B07-01 | HELP-01/02; quan sát chiều | DRAFT |
-| \`G10-B07-EQUALITY\` | §I.3–5; EX-01 | C02,P02 | W07/chứng minh | FIG-B07-01 | HELP-02; First Try C02 | DRAFT |
-| \`G10-B07-ZERO\` | §I.3–5; EX-02 | P04 | NOT_APPLICABLE (B07 Written không có phần riêng về zero) | Mô tả bằng văn bản, không gán hướng vật lí | HELP-02; First Try P04 | DRAFT |
+| `G10-B07-DEFINITION` | §I.1–3; EX-01 | C01 | W07 (hỗ trợ ký hiệu) | FIG-B07-01 | HELP-01; WHY/tiền đề/đọc mũi tên | DRAFT |
+| `G10-B07-LENGTH` | §I.3; EX-03 | P01,P06 | W07/độ dài | FIG-B07-01 | P06 remediation, giải thích quãng đường | DRAFT |
+| `G10-B07-DIRECTION` | §I.3–5; EX-01 | P03,P05 | W07/hướng | FIG-B07-01 | HELP-01/02; quan sát chiều | DRAFT |
+| `G10-B07-EQUALITY` | §I.3–5; EX-01 | C02,P02 | W07/chứng minh | FIG-B07-01 | HELP-02; First Try C02 | DRAFT |
+| `G10-B07-ZERO` | §I.3–5; EX-02 | P04 | NOT_APPLICABLE (B07 Written không có phần riêng về zero) | Mô tả bằng văn bản, không gán hướng vật lí | HELP-02; First Try P04 | DRAFT |
 
 **PED1–PED6:** WHY = §I.1; prerequisites = §I.2; concept before formal = §I.2–3; guide to figure = §I.4; reasoned methods/limits = §I.5; first try/open/remediation = §I.6 và II.2. Các chỉ dẫn đã **được biên soạn**, nhưng tính tự học và độ sâu của **Chuyên đề** chưa được NotebookLM kết luận.
 
@@ -181,4 +181,4 @@ Phần 1 **không tạo ngân hàng Readiness riêng**; Chuyên đề 2 về sau
 | Q18 | Chưa có reviewer receipt riêng cho Topic Chuyên đề 2, chưa handoff V2 |
 | RELEASE | Chưa website/QA/merge/deploy; Issue #790 là blocker **intake kỹ thuật** của Chuyên đề 1, không tự sửa gate trong AUTHORING |
 
-**Đầu ra tiếp theo:** Biên soạn Phần 2–7 với S1 theo từng mục, kiểm math/figure/canonical item mapping; khi **trọn Chuyên đề 2** có source full mới chuẩn bị batch review Markdown/TXT \`Temp_\` thật + prompt ngắn 3–6 câu, đúng 5 Permanent Sources v2.1. Không tự tạo biên bản Academic/PED PASS.
+**Đầu ra tiếp theo:** Biên soạn Phần 2–7 với S1 theo từng mục, kiểm math/figure/canonical item mapping; khi **trọn Chuyên đề 2** có source full mới chuẩn bị batch review Markdown/TXT `Temp_` thật + prompt ngắn 3–6 câu, đúng 5 Permanent Sources v2.1. Không tự tạo biên bản Academic/PED PASS.
