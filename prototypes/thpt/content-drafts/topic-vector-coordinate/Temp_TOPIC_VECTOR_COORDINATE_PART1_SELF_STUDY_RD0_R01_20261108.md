@@ -120,6 +120,8 @@ SGK Bài 7 trang **in 49** (PDF trang 50) dùng tính chất **cùng phương** 
 
 **Vì sao dùng vectơ?** Độ dài không tự nói một điểm có nằm giữa hai điểm khác hay không. Nhìn hai mũi tên từ M về A và B, ta thấy A, B nằm hai phía của M hay cùng phía.
 
+**Hình mới D5, CHƯA THẨM ĐỊNH:** `FIG-THPT-TOPIC-VECTOR-P1-01` tại `Temp_TOPIC_VECTOR_PART1_BETWEENNESS_D5_R01.svg` là hình gốc mới có `title/desc` mô tả cả hai trường hợp. Không nhân bản hình bình hành `FIG-G10-B07-01` của SGK. Cần QA hình học, SVG và reviewer đối với hình mới trước khi dùng trên website.
+
 **Đọc hình bằng lời:** Đặt A, M, B lần lượt từ trái sang phải trên một đường thẳng. Hai mũi tên M→A và M→B ngược hướng. Nếu xếp A, B, M theo thứ tự, hai mũi tên bắt đầu tại M cùng quay về phía trái, không thể kết luận M ở giữa. Học sinh cần đọc chữ đầu–cuối trước khi đánh giá chiều.
 
 ### Hai câu bổ sung mới — ID đề xuất, chưa đăng ký canonical
@@ -200,6 +202,7 @@ Phần 1 **không tạo ngân hàng Readiness riêng**; Chuyên đề 2 về sau
 | `G10-B07-DIRECTION` | §I.3–5; EX-01 | P03,P05 | W07/hướng | FIG-B07-01 | HELP-01/02; quan sát chiều | DRAFT |
 | `G10-B07-EQUALITY` | §I.3–5; EX-01 | C02,P02 | W07/chứng minh | FIG-B07-01 | HELP-02; First Try C02 | DRAFT |
 | `G10-B07-ZERO` | §I.3–5; EX-02 | P04 | NOT_APPLICABLE (B07 Written không có phần riêng về zero) | Mô tả bằng văn bản, không gán hướng vật lí | HELP-02; First Try P04 | DRAFT |
+| `TOPIC-VECTOR-P1-COLLINEAR-BETWEEN` (ID outcome đề xuất) | §I.7, SGK B07 p49 | **T01/P01 mới, chưa đăng ký** | P01 rubric tự đối chiếu /3, không Mastery | FIG-THPT-TOPIC-VECTOR-P1-01 **mới, chưa review** | Phản ví dụ tia/đoạn và đường trung trực; Tự thử T01 | DRAFT / DELTA_C |
 
 **PED1–PED6:** WHY = §I.1; prerequisites = §I.2; concept before formal = §I.2–3; guide to figure = §I.4; reasoned methods/limits = §I.5; first try/open/remediation = §I.6 và II.2. Các chỉ dẫn đã **được biên soạn**, nhưng tính tự học và độ sâu của **Chuyên đề** chưa được NotebookLM kết luận.
 
@@ -208,7 +211,7 @@ Phần 1 **không tạo ngân hàng Readiness riêng**; Chuyên đề 2 về sau
 | Gate | Trạng thái và điều kiện đóng |
 | --- | --- |
 | Q01–Q02/S1 | **Đã tự đối chiếu** Toán 10 SGK B07 trang in 46–50 ↔ PDF 47–51; SBT B07 trang in 45–47 ↔ PDF 46–48 và khớp quy ước vectơ-không. **S1 của 6 phần còn lại chưa được đối chiếu**, vì vậy không suy Q01/Q02 PASS cho toàn chuyên đề. |
-| Q03–Q08 | D1–D6 được ánh xạ tới item/EX/FIG/Written có thật; kiểm đủ họ dạng độc lập ở Topic bằng review chuyên đề, không suy SGK PASS |
+| Q03–Q08 | D1–D6 ánh xạ tới item/EX/FIG/Written SGK có thật; bổ sung O06 thẳng hàng/điểm giữa với 2 item và 1 SVG mới **đang DRAFT**. Chưa QA hình/render, cần review chuyên đề, không suy SGK PASS. |
 | Q09–Q14 | Có trình tự PED + first try; cần review độc lập nội dung Topic mới |
 | Q15 | 8 public formative + 1 Written = **9 câu/bài SGK tham chiếu nguyên ID** và **2 câu mới có ID đề xuất** cho thẳng hàng/điểm giữa; **0 item clone**, 3 EX dùng lại bằng ID gốc; hai ID mới chưa đăng ký |
 | Q16 | Tự kiểm tra Chuyên đề 2 chưa có private RD1 candidate; tuyệt đối không công khai đề/khoá kín, không Mastery |
