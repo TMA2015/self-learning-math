@@ -1,16 +1,16 @@
 function buildG10KnowledgeR02(source,cfg){
  const title=(source.match(/^# (.+)$/m)||[])[1];if(!title)throw Error("Missing title "+cfg.b);
  let text=source.replace(/^# [^\n]*\n/,"").replace(/<div class="thpt-r4-screen"[\s\S]*?<\/div>/,"").replace(/<!--[\s\S]*?-->/g,"");
- const figures=[...text.matchAll(/<figure\b[\s\S]*?<\/figure>/g)].map(x=>x[0]);text=text.replace(/<figure\b[\s\S]*?<\/figure>/g,"");
+ const figures=[...text.matchAll(/<figure\b[\s\S]*?<\/figure>/g)].map(x=>x[0].replace(/\sdata-thpt-reviewed-d5="[^"]*"/g,""));text=text.replace(/<figure\b[\s\S]*?<\/figure>/g,"");
  text=text.replace(/(?:Trạng thái tiền đề:|D5 kế thừa:)[^\n]*?(?=\n|$)/g,"")
  .replace(/^.*\*\*(?:Đọc hình như thế nào|Cách đọc hình và hình dung)[^:]*:?\*\*.*$/gm,"")
  .replace(/^.*\b(?:PED[1-6]|FIG-G10|PREREQUISITE_CONFIRMED)[^\n]*$/gm,"")
  .replace(/^#{4}\s+D6\s+—[^\n]*\n/gm,"")
  .replace(/^##\s+B\d+\s+—[^\n]*\n/gm,"")
  .replace(/\*\*Vì sao cần học(?:\?|\:)\*\*\s*/g,"")
- .replace(/\*\*Kiến thức cần nhớ trước:\*\*\s*/g,"Để theo kịp bước này, em hãy nhớ rằng ")
- .replace(/\*\*Kiến thức tiền đề và điều kiện:\*\*\s*/g,"Điều cần nhớ trước khi làm là ")
- .replace(/\*\*Em đã biết gì\?\*\*\s*/g,"Em có thể dựa vào kiến thức trước đó: ")
+ .replace(/\*\*Kiến thức cần nhớ trước:\*\*\s*/g,"")
+ .replace(/\*\*Kiến thức tiền đề và điều kiện:\*\*\s*/g,"")
+ .replace(/\*\*Em đã biết gì\?\*\*\s*/g,"")
  .replace(/\*\*Hiểu bản chất trước công thức(?:\:)?\*\*\s*/g,"")
  .replace(/\*\*Hình thành bản chất trước công thức(?:\:)?\*\*\s*/g,"")
  .replace(/\*\*Chọn phương pháp và giới hạn(?:\:)?\*\*\s*/g,"")
