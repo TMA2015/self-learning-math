@@ -18,6 +18,10 @@ Chủ dự án phê duyệt hợp nhất cách diễn giải, nhịp dẫn dắt
 
 **Báo cáo cho chủ dự án:** ngắn gọn theo **lớp/chương đã phát hành – đang QA – blocker cần quyết định – kết quả cần kiểm tra**. PR/CI/SHA chi tiết lưu trong GitHub, chỉ đưa vào tin nhắn khi thật sự cần đối chiếu. Không vì rút gọn báo cáo mà rút gọn QA.
 
+## Cập nhật tương thích RELEASE V2 cho Topic và chuẩn v1.2.0 (09/11/2026)
+
+Cổng V2 chấp nhận `TOPIC/FULL_TOPIC_LEARNING_PATH` trên **cùng** `SLM-THPT-QUALITY-ONE v1.2.0` (vẫn nhận 1.0/1.1 lịch sử), không ép Topic đổi thành SGK hoặc lùi phiên bản. Các Topic public `item_id` được kiểm theo nhiều role/placement hợp lệ nhưng **một canonical source**, không nhân bản đáp án/rubric. Topic chỉ có **Kiến thức / Luyện tập / Tự kiểm tra**; private Topic RD1 chỉ giữ hash/count owner-held, không được đưa raw nội dung vào GitHub, không bật Mastery hay tự nhận chính thức. `CONTENT_READY` cần one handoff/one ready manifest/REGISTER và source+receipt SHA; cần owner cho phép cùng AP1–AP5/R1–R5/Q16 trước khi triển khai. Đây chỉ là DELTA_A vận hành/CI, **không tự tạo manifest READY, không merge SOURCE AUTHORING hoặc deploy Topic**.
+
 ## Handoff V2 sau quyết định chủ dự án 02/11/2026
 
 Trước khi nhận gói học liệu mới, cả hai nhánh **bắt buộc** đọc [THPT two-lane source-locked contract v2](../THPT_TWO_LANE_SOURCE_LOCKED_HANDOFF_CONTRACT_v2_20261102.md) và `AGENTS.md`. Nhánh A = học thuật (đầy đủ SGK/SBT, D1–D6, PED1–PED6, NotebookLM Academic + Pedagogical PASS đúng snapshot, danh sách ID, delta); nhánh B = tích hợp, AP1–AP5 trên UI, Final Submit, R1–R5, P1/P2. Hai nhánh trao đổi bằng một handoff canonical trong `release-handoffs/`, một manifest `ready/PACKET_ID.md` và REGISTER một dòng; biên bản NotebookLM không tự biến thành manifest.
