@@ -246,5 +246,5 @@
 
     **Học tiếp:** [Core và Luyện tập Chương III](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Chương IV — Vectơ](../../chuong-iv/).
 
-    <p class="thpt-r4-footnote">Kiến thức đối chiếu theo SGK Toán 10 · Kết nối tri thức · tập 1 · Bài 6 và canonical SLM; chọn lọc lời dẫn từ Gemini, ví dụ SAS từ NotebookLM v1. Hình đo đạc là sơ đồ gốc do SLM dựng có ghi rõ điều kiện.</p>
+    <p class="thpt-r4-footnote">Kiến thức đối chiếu theo SGK Toán 10 · Kết nối tri thức · tập 1 · Bài 6 và học liệu SLM hiện hành; chọn lọc lời dẫn từ Gemini, ví dụ SAS từ NotebookLM v1. Hình đo đạc là sơ đồ gốc do SLM dựng có ghi rõ điều kiện.</p>
 
