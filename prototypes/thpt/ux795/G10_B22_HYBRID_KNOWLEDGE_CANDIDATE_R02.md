@@ -18,7 +18,7 @@ Bài học sẽ đi từ đặc điểm hình học đến ba phương trình ch
 
 ## 2. Kiến thức SGK
 
-Đọc vì sao cần học, tự làm Tự thử trước khi mở đáp án và chỉ quay lại Core sau khi đã đối chiếu. Các câu này là luyện tập không ghi Mastery.
+Đọc vì sao cần học, tự làm Tự thử trước khi mở đáp án và chỉ quay lại Core sau khi đã đối chiếu. Các câu này là luyện tập không ghi điểm thành thạo.
 
 
 <span id="thpt-g10-chvii-try18" data-thpt-first-try-id="THPT-G10-CHVII-TRY18" data-outcome-id="G10-B22-ELLIPSE_PARAMETERS" data-thpt-help-ref="HELP-G10-CHVII-TRY18"></span>
@@ -43,7 +43,7 @@ Một số đường bao có đặc điểm tổng quãng đường đến hai �
 
     **Lý do:** a²=25>b²=16, c²=25−16=9 ⇒ c=3; elip có trục lớn Ox.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY18` bên dưới; quay lại câu canonical cũ `THPT-G10-B22-P01` khi đã hiểu kiến thức.
+    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY18` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
 
 <span id="help-g10-chvii-try18" data-thpt-help-id="HELP-G10-CHVII-TRY18"></span>
 
@@ -57,9 +57,9 @@ Một số đường bao có đặc điểm tổng quãng đường đến hai �
 
     4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B22-P01` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B22-P01` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B22-P01">Mở câu luyện tập đã review để tự sửa</a>
+<a href="../luyen-tap/?item=THPT-G10-B22-P01">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
 
 
 <span id="thpt-g10-chvii-try19" data-thpt-first-try-id="THPT-G10-CHVII-TRY19" data-outcome-id="G10-B22-HYPERBOLA_PARAMETERS" data-thpt-help-ref="HELP-G10-CHVII-TRY19"></span>
@@ -84,7 +84,7 @@ Một số đường bao có đặc điểm tổng quãng đường đến hai �
 
     **Lý do:** a=4, b=3, c²=a²+b²=16+9=25 ⇒ c=5; trục thực Ox.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY19` bên dưới; quay lại câu canonical cũ `THPT-G10-B22-C02` khi đã hiểu kiến thức.
+    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY19` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
 
 <span id="help-g10-chvii-try19" data-thpt-help-id="HELP-G10-CHVII-TRY19"></span>
 
@@ -98,9 +98,9 @@ Một số đường bao có đặc điểm tổng quãng đường đến hai �
 
     4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B22-C02` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B22-C02` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B22-C02">Mở câu luyện tập đã review để tự sửa</a>
+<a href="../luyen-tap/?item=THPT-G10-B22-C02">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
 
 
 <span id="thpt-g10-chvii-try20" data-thpt-first-try-id="THPT-G10-CHVII-TRY20" data-outcome-id="G10-B22-HYPERBOLA_ASYMPTOTES" data-thpt-help-ref="HELP-G10-CHVII-TRY20"></span>
@@ -125,7 +125,7 @@ Chỉ áp dụng công thức y=±(b/a)x cho dạng chính tắc tâm O, trục 
 
     **Lý do:** a²=25 ⇒ a=5; b²=4 ⇒ b=2. Hệ số góc tiệm cận là ±b/a=±2/5.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY20` bên dưới; quay lại câu canonical cũ `THPT-G10-B22-C02` khi đã hiểu kiến thức.
+    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY20` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
 
 <span id="help-g10-chvii-try20" data-thpt-help-id="HELP-G10-CHVII-TRY20"></span>
 
@@ -139,9 +139,9 @@ Chỉ áp dụng công thức y=±(b/a)x cho dạng chính tắc tâm O, trục 
 
     4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B22-C02` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B22-C02` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B22-C02">Mở câu luyện tập đã review để tự sửa</a>
+<a href="../luyen-tap/?item=THPT-G10-B22-C02">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
 
 
 <span id="thpt-g10-chvii-try21" data-thpt-first-try-id="THPT-G10-CHVII-TRY21" data-outcome-id="G10-B22-PARABOLA_FOCUS" data-thpt-help-ref="HELP-G10-CHVII-TRY21"></span>
@@ -166,7 +166,7 @@ Từ hệ số của x suy 2p, tính p rồi lấy p/2 cho tiêu điểm và đ�
 
     **Lý do:** 2p=8 ⇒ p=4, F=(p/2,0)=(2,0), đường chuẩn x=−p/2=−2. M có MF=4 và khoảng cách đến x=−2 là 4.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY21` bên dưới; quay lại câu canonical cũ `THPT-G10-B22-P03` khi đã hiểu kiến thức.
+    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY21` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
 
 <span id="help-g10-chvii-try21" data-thpt-help-id="HELP-G10-CHVII-TRY21"></span>
 
@@ -180,9 +180,9 @@ Từ hệ số của x suy 2p, tính p rồi lấy p/2 cho tiêu điểm và đ�
 
     4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B22-P03` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B22-P03` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B22-P03">Mở câu luyện tập đã review để tự sửa</a>
+<a href="../luyen-tap/?item=THPT-G10-B22-P03">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
 
 
 <span id="thpt-g10-chvii-try22" data-thpt-first-try-id="THPT-G10-CHVII-TRY22" data-outcome-id="G10-B22-CONIC_INTERSECTION" data-thpt-help-ref="HELP-G10-CHVII-TRY22"></span>
@@ -207,7 +207,7 @@ Thế phương trình đường vào conic, giải phương trình còn lại v�
 
     **Lý do:** Thế x=0 được y²/4=1 ⇒ y²=4 ⇒ y=±2; cả hai tọa độ thỏa phương trình gốc.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY22` bên dưới; quay lại câu canonical cũ `THPT-G10-B22-P05` khi đã hiểu kiến thức.
+    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY22` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
 
 <span id="help-g10-chvii-try22" data-thpt-help-id="HELP-G10-CHVII-TRY22"></span>
 
@@ -221,9 +221,9 @@ Thế phương trình đường vào conic, giải phương trình còn lại v�
 
     4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B22-P05` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B22-P05` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B22-P05">Mở câu luyện tập đã review để tự sửa</a>
+<a href="../luyen-tap/?item=THPT-G10-B22-P05">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
 
 
 <span id="thpt-g10-chvii-try23" data-thpt-first-try-id="THPT-G10-CHVII-TRY23" data-outcome-id="G10-B22-CONIC_MODEL" data-thpt-help-ref="HELP-G10-CHVII-TRY23"></span>
@@ -248,7 +248,7 @@ Giải y²=2px tại x cụ thể, lấy cả ±y rồi trừ hai tung độ. G�
 
     **Lý do:** Thế x=5 được y²=100 ⇒ y=±10 cm. Độ rộng là 10−(−10)=20 cm.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY23` bên dưới; quay lại câu canonical cũ `THPT-G10-B22-P04` khi đã hiểu kiến thức.
+    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY23` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
 
 <span id="help-g10-chvii-try23" data-thpt-help-id="HELP-G10-CHVII-TRY23"></span>
 
@@ -262,9 +262,9 @@ Giải y²=2px tại x cụ thể, lấy cả ±y rồi trừ hai tung độ. G�
 
     4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B22-P04` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B22-P04` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B22-P04">Mở câu luyện tập đã review để tự sửa</a>
+<a href="../luyen-tap/?item=THPT-G10-B22-P04">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
 
 
 <span id="thpt-g10-chvii-try-ellipse-tr01" data-thpt-first-try-id="THPT-G10-CHVII-TRY-ELLIPSE-TR01" data-outcome-id="G10-B22-ELLIPSE_PARAMETERS" data-thpt-help-ref="HELP-G10-CHVII-ELLIPSE-TR01"></span>
@@ -454,5 +454,5 @@ Trước khi xem lời giải, hãy xác định dữ kiện, điều phải tì
 
 **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/).
 
-<p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 10 Kết nối tri thức với cuộc sống và học liệu canonical SLM. Lời giảng được biên tập nhằm hỗ trợ tự học độc lập.</p>
+<p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 10 Kết nối tri thức với cuộc sống và học liệu SLM hiện hành. Lời giảng được biên tập nhằm hỗ trợ tự học độc lập.</p>
 
