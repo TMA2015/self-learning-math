@@ -58,7 +58,7 @@
 
     **Em vận dụng.** Xét hệ \(x\ge1,\ y\ge0,\ x+y\le5\). Hai cặp \((2,3)\) và \((0,4)\) có là nghiệm hệ không? Vì sao?
 
-    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY06" data-outcome-id="G10-B04-SYSTEM" hidden></span>
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY06" data-outcome-id="G10-B04-SYSTEM" data-thpt-help-ref="HELP-G10-B04-01" hidden></span>
 
     ??? question "Em đã tự làm? Mở lời giải để đối chiếu"
 
@@ -84,7 +84,7 @@
 
     **Em vận dụng.** Hệ \(x\ge0,\ y\ge0,\ x+2y\le6\) có những đỉnh nào? Các cạnh có được lấy không? Đây là **hệ ba điều kiện khác với tứ giác trong hình**.
 
-    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY07" data-outcome-id="G10-B04-REGION_INTERSECTION" hidden></span>
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY07" data-outcome-id="G10-B04-REGION_INTERSECTION" data-thpt-help-ref="HELP-G10-B04-01" hidden></span>
 
     ??? question "Em đã thử tìm đỉnh? Mở đối chiếu"
 
@@ -99,7 +99,7 @@
 
     **Em vận dụng.** Xét hệ \(x\ge3,\ y\ge0,\ x+y\le2\). Hệ có nghiệm không? Giải thích bằng bất đẳng thức.
 
-    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY08" data-outcome-id="G10-B04-FEASIBILITY" hidden></span>
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY08" data-outcome-id="G10-B04-FEASIBILITY" data-thpt-help-ref="HELP-G10-B04-01" hidden></span>
 
     ??? question "Mở lời giải sau khi suy nghĩ"
 
@@ -129,7 +129,7 @@
 
     **Em vận dụng.** Tam giác nghiệm của \(x\ge0,\ y\ge0,\ 2x+y\le6\) có các đỉnh \((0,0),(3,0),(0,6)\). Tính \(F=x+2y\) ở các đỉnh và xác định \(F_{\max}\). Đây **không** phải hàm và hệ trong hình tứ giác ở mục §2.2.
 
-    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY09" data-outcome-id="G10-B04-LINEAR_OBJECTIVE" hidden></span>
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY09" data-outcome-id="G10-B04-LINEAR_OBJECTIVE" data-thpt-help-ref="HELP-G10-B04-02" hidden></span>
 
     ??? question "Em đã tính ở cả ba đỉnh? Mở đáp án"
 
@@ -144,7 +144,7 @@
 
     **Em vận dụng.** Với \(x+2y\le7,\ 2x+y\le7,\ x,y\in\mathbb Z_{\ge0}\), xét \(F=3x+2y\). Điểm \((7/3,7/3)\) có hợp lệ không? So \(F\) tại hai điểm \((2,2)\) và \((3,1)\). **Chỉ so hai điểm, chưa kết luận tối ưu toàn cục.**
 
-    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY10" data-outcome-id="G10-B04-INTEGER_MODELS" hidden></span>
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY10" data-outcome-id="G10-B04-INTEGER_MODELS" data-thpt-help-ref="HELP-G10-B04-02" hidden></span>
 
     ??? question "Mở đối chiếu sau khi tự làm"
 
