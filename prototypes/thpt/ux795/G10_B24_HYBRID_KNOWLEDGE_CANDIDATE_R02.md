@@ -39,9 +39,9 @@ Hoán vị của n vật phân biệt là một thứ tự của tất cả n v�
 
     **Lập luận:** Gộp A,B thành một khối, cùng C,D là 3 đối tượng có 3!=6 cách xếp; A,B trong khối đổi chỗ có 2!=2 cách. Tổng 6×2=12.
 
-    **Nếu chưa đúng:** xem D6 `HELP-G10-CHVIII-TRY05`, sau đó luyện bài canonical `THPT-G10-B24-C01` trong ngân hàng đã review (không tính lại câu đã xem lời giải thành Readiness).
+    **Nếu chưa đúng:** xem hướng dẫn tự sửa tương ứng, sau đó luyện câu liên quan trong phần Luyện tập ở phần Luyện tập (không dùng câu đã xem lời giải làm chứng cứ tự kiểm tra độc lập).
 
-    <a href="#help-g10-chviii-try05">Chuyển đến hướng dẫn D6</a>
+    <a href="#help-g10-chviii-try05">Đến hướng dẫn tự sửa</a>
 
 <span id="help-g10-chviii-try05" data-thpt-help-id="HELP-G10-CHVIII-TRY05"></span>
 
@@ -49,10 +49,10 @@ Hoán vị của n vật phân biệt là một thứ tự của tất cả n v�
     1. **Nhận diện lỗi:** Nếu tính 4!=24, em chưa xử lý yêu cầu A,B kề nhau; nếu chỉ 3!=6, em quên hai trật tự AB/BA.
     2. **Quay lại bản chất:** Hoán vị của n vật phân biệt là một thứ tự của tất cả n vật; số lựa chọn giảm dần n,n−1,...,1. Khi các vật phải đứng cạnh nhau, gộp chúng thành một khối trước khi đếm.
     3. **Tự làm lại:** Vẽ [AB], C,D rồi thay [AB] bằng [BA], đếm hai lần 6.
-    4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không cộng điểm/Mastery.
-    5. **Luyện tiếp:** `THPT-G10-B24-C01`, câu canonical đã review, phù hợp `G10-B24-PERMUTATION`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
+    4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không tính điểm thành thạo.
+    5. **Luyện tiếp:** `THPT-G10-B24-C01`, câu luyện tập đã có, phù hợp `G10-B24-PERMUTATION`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
 
-    <a href="../luyen-tap/?item=THPT-G10-B24-C01">Mở câu luyện tập đã review</a>
+    <a href="../luyen-tap/?item=THPT-G10-B24-C01">Mở câu luyện tập đã được kiểm tra</a>
 
 
 <span id="thpt-g10-chviii-try06" data-thpt-first-try-id="THPT-G10-CHVIII-TRY06" data-outcome-id="G10-B24-ARRANGEMENT"></span>
@@ -76,9 +76,9 @@ Chỉnh hợp chập k đếm k người chọn từ n **và xếp vào k vị t
 
     **Lập luận:** Lớp trưởng 5 cách, lớp phó còn 4, nên 5×4=20=A₅². Hai bạn hoán đổi vai trò là hai cách khác.
 
-    **Nếu chưa đúng:** xem D6 `HELP-G10-CHVIII-TRY06`, sau đó luyện bài canonical `THPT-G10-B24-C02` trong ngân hàng đã review (không tính lại câu đã xem lời giải thành Readiness).
+    **Nếu chưa đúng:** xem hướng dẫn tự sửa tương ứng, sau đó luyện câu liên quan trong phần Luyện tập ở phần Luyện tập (không dùng câu đã xem lời giải làm chứng cứ tự kiểm tra độc lập).
 
-    <a href="#help-g10-chviii-try06">Chuyển đến hướng dẫn D6</a>
+    <a href="#help-g10-chviii-try06">Đến hướng dẫn tự sửa</a>
 
 <span id="help-g10-chviii-try06" data-thpt-help-id="HELP-G10-CHVIII-TRY06"></span>
 
@@ -86,10 +86,10 @@ Chỉnh hợp chập k đếm k người chọn từ n **và xếp vào k vị t
     1. **Nhận diện lỗi:** Nếu ra 10, em đã chia 2 như tổ hợp, tức không phân biệt hai chức danh.
     2. **Quay lại bản chất:** Chỉnh hợp chập k đếm k người chọn từ n **và xếp vào k vị trí phân biệt**; đây là số cách nhân n(n−1)...(n−k+1).
     3. **Tự làm lại:** So hai phân công (An trưởng,Bình phó) và (Bình trưởng,An phó) để thấy chúng khác nhau.
-    4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không cộng điểm/Mastery.
-    5. **Luyện tiếp:** `THPT-G10-B24-C02`, câu canonical đã review, phù hợp `G10-B24-ARRANGEMENT`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
+    4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không tính điểm thành thạo.
+    5. **Luyện tiếp:** `THPT-G10-B24-C02`, câu luyện tập đã có, phù hợp `G10-B24-ARRANGEMENT`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
 
-    <a href="../luyen-tap/?item=THPT-G10-B24-C02">Mở câu luyện tập đã review</a>
+    <a href="../luyen-tap/?item=THPT-G10-B24-C02">Mở câu luyện tập đã được kiểm tra</a>
 
 
 <span id="thpt-g10-chviii-try07" data-thpt-first-try-id="THPT-G10-CHVIII-TRY07" data-outcome-id="G10-B24-COMBINATION"></span>
@@ -113,9 +113,9 @@ Tổ hợp chập k đếm các tập con k phần tử, không xét thứ tự.
 
     **Lập luận:** Chọn bạn đầu có 5 cách, bạn thứ hai có 4, mỗi cặp bị đếm hai thứ tự: 5×4/2=10=C₅².
 
-    **Nếu chưa đúng:** xem D6 `HELP-G10-CHVIII-TRY07`, sau đó luyện bài canonical `THPT-G10-B24-P01` trong ngân hàng đã review (không tính lại câu đã xem lời giải thành Readiness).
+    **Nếu chưa đúng:** xem hướng dẫn tự sửa tương ứng, sau đó luyện câu liên quan trong phần Luyện tập ở phần Luyện tập (không dùng câu đã xem lời giải làm chứng cứ tự kiểm tra độc lập).
 
-    <a href="#help-g10-chviii-try07">Chuyển đến hướng dẫn D6</a>
+    <a href="#help-g10-chviii-try07">Đến hướng dẫn tự sửa</a>
 
 <span id="help-g10-chviii-try07" data-thpt-help-id="HELP-G10-CHVIII-TRY07"></span>
 
@@ -123,10 +123,10 @@ Tổ hợp chập k đếm các tập con k phần tử, không xét thứ tự.
     1. **Nhận diện lỗi:** Nếu ra 20, em đã tính như hai chức danh khác nhau, đếm mỗi nhóm hai lần.
     2. **Quay lại bản chất:** Tổ hợp chập k đếm các tập con k phần tử, không xét thứ tự. Từ số cách xếp k người, chia cho k! trật tự bị đếm trùng.
     3. **Tự làm lại:** Viết {A,B}={B,A}; ghép các thứ tự trùng rồi đếm lại.
-    4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không cộng điểm/Mastery.
-    5. **Luyện tiếp:** `THPT-G10-B24-P01`, câu canonical đã review, phù hợp `G10-B24-COMBINATION`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
+    4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không tính điểm thành thạo.
+    5. **Luyện tiếp:** `THPT-G10-B24-P01`, câu luyện tập đã có, phù hợp `G10-B24-COMBINATION`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
 
-    <a href="../luyen-tap/?item=THPT-G10-B24-P01">Mở câu luyện tập đã review</a>
+    <a href="../luyen-tap/?item=THPT-G10-B24-P01">Mở câu luyện tập đã được kiểm tra</a>
 
 
 <span id="thpt-g10-chviii-try08" data-thpt-first-try-id="THPT-G10-CHVIII-TRY08" data-outcome-id="G10-B24-CONSTRAINTS"></span>
@@ -150,9 +150,9 @@ Chọn đúng 2 nam và 1 nữ là hai việc phối hợp: chọn nhóm hai nam
 
     **Lập luận:** C(5,2)=10 cách chọn hai nam; C(4,1)=4 cách chọn một nữ. Mỗi cặp ghép một nữ tạo 10×4=40 nhóm phân biệt.
 
-    **Nếu chưa đúng:** xem D6 `HELP-G10-CHVIII-TRY08`, sau đó luyện bài canonical `THPT-G10-B24-P04` trong ngân hàng đã review (không tính lại câu đã xem lời giải thành Readiness).
+    **Nếu chưa đúng:** xem hướng dẫn tự sửa tương ứng, sau đó luyện câu liên quan trong phần Luyện tập ở phần Luyện tập (không dùng câu đã xem lời giải làm chứng cứ tự kiểm tra độc lập).
 
-    <a href="#help-g10-chviii-try08">Chuyển đến hướng dẫn D6</a>
+    <a href="#help-g10-chviii-try08">Đến hướng dẫn tự sửa</a>
 
 <span id="help-g10-chviii-try08" data-thpt-help-id="HELP-G10-CHVIII-TRY08"></span>
 
@@ -160,10 +160,10 @@ Chọn đúng 2 nam và 1 nữ là hai việc phối hợp: chọn nhóm hai nam
     1. **Nhận diện lỗi:** Nếu lấy C(9,3), em đã tính cả nhóm không có đúng 2 nam 1 nữ; nếu dùng hoán vị, em đếm trùng thứ tự kể tên.
     2. **Quay lại bản chất:** Chọn đúng 2 nam và 1 nữ là hai việc phối hợp: chọn nhóm hai nam VÀ chọn một nữ. Mỗi cặp nam ghép với mỗi nữ thành một nhóm cuối cùng.
     3. **Tự làm lại:** Viết sơ đồ 2 nam +1 nữ và thử kiểm vài nhóm từ kết quả.
-    4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không cộng điểm/Mastery.
-    5. **Luyện tiếp:** `THPT-G10-B24-P04`, câu canonical đã review, phù hợp `G10-B24-CONSTRAINTS`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
+    4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không tính điểm thành thạo.
+    5. **Luyện tiếp:** `THPT-G10-B24-P04`, câu luyện tập đã có, phù hợp `G10-B24-CONSTRAINTS`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
 
-    <a href="../luyen-tap/?item=THPT-G10-B24-P04">Mở câu luyện tập đã review</a>
+    <a href="../luyen-tap/?item=THPT-G10-B24-P04">Mở câu luyện tập đã được kiểm tra</a>
 
 ### Khái niệm, điều kiện và công thức
 
@@ -222,5 +222,5 @@ Trước khi xem lời giải, hãy xác định dữ kiện, điều phải tì
 
 **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/).
 
-<p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 10 Kết nối tri thức với cuộc sống và học liệu canonical SLM. Lời giảng được biên tập nhằm hỗ trợ tự học độc lập.</p>
+<p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 10 Kết nối tri thức với cuộc sống và học liệu SLM hiện hành. Lời giảng được biên tập nhằm hỗ trợ tự học độc lập.</p>
 
