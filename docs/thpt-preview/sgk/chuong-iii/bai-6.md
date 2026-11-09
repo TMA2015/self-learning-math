@@ -230,7 +230,7 @@
 
         **Vì sao sai?** Trong công thức cạnh \(a\), góc xen giữa \(b,c\) phải là \(A\), đồng thời cạnh \(a\) đối diện \(A\). Định lí sin kết nối **cạnh với góc đối diện**, không tùy ý ghép.
 
-        **Tự sửa:** Trên hình §2.1, chỉ \(a=BC,b=CA,c=AB\) rồi xác định góc A trước khi tính. Tự giải lại \(b=6,c=8,A=60^\circ\). [Ôn định lí côsin và sin tại Core](../luyen-tap/).
+        **Tự sửa:** Trên hình §2.1, chỉ \(a=BC,b=CA,c=AB\) rồi xác định góc A trước khi tính. Tự giải lại \(b=6,c=8,A=60^\circ\). [Ôn định lí côsin và sin tại Core](luyen-tap.md).
 
 
     <span data-thpt-help-id="HELP-G10-B06-02" hidden></span>
@@ -241,10 +241,10 @@
 
         **Vì sao sai?** Diện tích theo hai cạnh cần **sin góc xen giữa**; Heron dùng **nửa chu vi**; \(r\) gắn với đường tròn nội tiếp còn \(R\) gắn với đường tròn ngoại tiếp.
 
-        **Tự sửa:** Với ba cạnh \(13,14,15\), kiểm \(p=21\), \(S=84\), \(r=4\), \(R=65/8\). Ghi đơn vị: cạnh và bán kính là m, diện tích là m² nếu đề cho mét. [Ôn tại Core/Luyện tập](../luyen-tap/).
+        **Tự sửa:** Với ba cạnh \(13,14,15\), kiểm \(p=21\), \(S=84\), \(r=4\), \(R=65/8\). Ghi đơn vị: cạnh và bán kính là m, diện tích là m² nếu đề cho mét. [Ôn tại Core/Luyện tập](luyen-tap.md).
 
 
-    **Học tiếp:** [Core và Luyện tập Chương III](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Chương IV — Vectơ](../../chuong-iv/).
+    **Học tiếp:** [Core và Luyện tập Chương III](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md) · [Chương IV — Vectơ](../chuong-iv.md).
 
     <p class="thpt-r4-footnote">Kiến thức đối chiếu theo SGK Toán 10 · Kết nối tri thức · tập 1 · Bài 6 và học liệu SLM hiện hành; chọn lọc lời dẫn từ Gemini, ví dụ SAS từ NotebookLM v1. Hình đo đạc là sơ đồ gốc do SLM dựng có ghi rõ điều kiện.</p>
 
