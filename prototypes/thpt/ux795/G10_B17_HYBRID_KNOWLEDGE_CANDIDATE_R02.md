@@ -97,7 +97,7 @@ Với \(\Delta=0\), tam thức viết được dưới dạng \(a(x-x_0)^2\). N�
 
 **Cách đọc hình.** Đọc hai nghiệm 1 và 3 từ trái sang phải. Dấu của (x−1)(x−3) là dương ở ngoài, âm ở giữa; tại nghiệm bằng 0. Nét này minh họa trường hợp a>0 và hai nghiệm phân biệt.
 
-<figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="images/G10_B17_QUADRATIC_SIGN_R02.svg" loading="lazy" alt="Bảng dấu của f(x)=(x-1)(x-3): dương khi x nhỏ hơn 1 hoặc lớn hơn 3, âm giữa hai nghiệm"><figcaption>Từ (f(x)=(x-1)(x-3)), hai nghiệm (1,3) chia trục số thành ba miền. Dấu **(+, -, +)** ứng với **tam thức cụ thể này**, không phải mọi tam thức.</figcaption></figure>
+<figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="images/G10_B17_QUADRATIC_SIGN_R02.svg" loading="lazy" alt="Bảng dấu của f(x)=(x-1)(x-3): dương khi x nhỏ hơn 1 hoặc lớn hơn 3, âm giữa hai nghiệm"><figcaption>Với \(f(x)=(x-1)(x-3)\), hai nghiệm \(1\) và \(3\) chia trục số thành ba miền. Dấu \(+, -, +\) đúng cho tam thức có hai nghiệm này và hệ số bậc hai dương.</figcaption></figure>
 
 
 Trên bảng xét dấu, mỗi nghiệm của tam thức là điểm phân chia khoảng; tại nghiệm thì giá trị bằng \(0\). Với \(\Delta>0\) và \(x_1<x_2\), dấu được xác định như sau:
