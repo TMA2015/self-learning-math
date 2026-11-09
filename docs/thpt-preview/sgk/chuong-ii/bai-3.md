@@ -216,7 +216,7 @@
 
         **Vì sao sai?** Điểm thử phải nằm ngoài đường biên để cho biết **phía nào** thỏa. Một phép biến đổi bất phương trình không thể tự loại bỏ điều kiện xác định ban đầu.
 
-        **Tự sửa:** Với \(2x+y\ge0\), thử \((1,0)\): \(2\ge0\) đúng, rồi thử \((-1,0)\): \(-2\ge0\) sai. Với phân thức, viết điều kiện mẫu dương trước khi nhân chéo. [Luyện điểm thử](../luyen-tap/?item=THPT-G10-B03-P03) · [Luyện đối chiếu](../luyen-tap/?item=THPT-G10-B03-P01).
+        **Tự sửa:** Với \(2x+y\ge0\), thử \((1,0)\): \(2\ge0\) đúng, rồi thử \((-1,0)\): \(-2\ge0\) sai. Với phân thức, viết điều kiện mẫu dương trước khi nhân chéo. [Luyện điểm thử](luyen-tap.md?item=THPT-G10-B03-P03) · [Luyện đối chiếu](luyen-tap.md?item=THPT-G10-B03-P01).
 
 
     <span data-thpt-help-id="HELP-G10-B03-02" hidden></span>
@@ -227,10 +227,10 @@
 
         **Vì sao sai?** Khi nhân hoặc chia cho số âm, chiều bất đẳng thức phải đổi. Bất phương trình nghiêm ngặt loại toàn bộ các điểm trên đường biên.
 
-        **Tự sửa:** \(3x-y<2\iff y>3x-2\). Thử một điểm phía trên đường để kiểm kết quả. [Luyện đổi dấu](../luyen-tap/?item=THPT-G10-B03-P02) · [Luyện chọn miền](../luyen-tap/?item=THPT-G10-B03-P05).
+        **Tự sửa:** \(3x-y<2\iff y>3x-2\). Thử một điểm phía trên đường để kiểm kết quả. [Luyện đổi dấu](luyen-tap.md?item=THPT-G10-B03-P02) · [Luyện chọn miền](luyen-tap.md?item=THPT-G10-B03-P05).
 
 
-    **Tiếp tục tự học:** [Core và Luyện tập Chương II](../luyen-tap/) · [Bài 4 — Hệ bất phương trình bậc nhất hai ẩn](../bai-4/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/).
+    **Tiếp tục tự học:** [Core và Luyện tập Chương II](luyen-tap.md) · [Bài 4 — Hệ bất phương trình bậc nhất hai ẩn](bai-4.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
     <p class="thpt-r4-footnote">Nguồn kiến thức: SGK Toán 10, Kết nối tri thức với cuộc sống, tập một, Bài 3. Phần lời giảng và ví dụ hỗ trợ tự học do SLM biên tập; hình hai nửa mặt phẳng của SLM được đối chiếu với từng bất phương trình tương ứng.</p>
 
