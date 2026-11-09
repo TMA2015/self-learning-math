@@ -1,53 +1,51 @@
 #!/usr/bin/env node
 "use strict";
-// UI-only regression guard for G10 SGK lesson headings and rendered display TeX.
-// Does not inspect or modify item banks, held-out Readiness, scores or Mastery.
-const assert = require("node:assert/strict");
-const fs = require("node:fs");
-const path = require("node:path");
-const root = path.resolve(__dirname, "..");
-const read = p => fs.readFileSync(path.join(root,p),"utf8");
-const built = process.argv.includes("--built");
-const listed = {
-  i:[1,2], ii:[3,4], iii:[5,6],
-  vii:[19,20,21], viii:[23,24,25], ix:[26,27]
-};
-const htmlDecode = value => value
- .replace(/&lt;/g,"<").replace(/&gt;/g,">")
- .replace(/&amp;/g,"&").replace(/&quot;/g,'"')
- .replace(/&#39;|&#x27;/g,"'");
-for (const [chapter,nums] of Object.entries(listed)) for(const num of nums) {
-  const base = "thpt-preview/sgk/chuong-"+chapter+"/bai-"+num;
-  const source = read("docs/"+base+".md");
-  const exampleSection = [19,20,21].includes(num) ? 3 : 2;
-  assert(new RegExp("^## "+exampleSection+"\\. Ví dụ$","m").test(source),
-    "B"+num+": student example heading should be 'Ví dụ' only");
-  assert(!/Ví dụ giải mẫu|Ví dụ đã giải|Ví dụ mẫu có giải thích|Ví dụ từng bước|Ví dụ có kiểm tra/.test(source),
-    "B"+num+": redundant example labels are not learner-facing");
-  if(num === 1 || num === 2){
-    const subs = [...source.matchAll(/^### (1\.\d+)\. /gm)].map(m=>m[1]);
-    assert.deepEqual(subs,["1.1","1.2","1.3","1.4"],
-      "B"+num+": four subsections must have hierarchical numbering");
-  }
-  if([3,5,6].includes(num)) {
-    const mathBlocks = [...source.matchAll(/(?:^|\n\n)\\\[\n([\s\S]*?)\n\\\](?=\n\n|$)/g)].map(m=>m[1].trim());
-    const open = (source.match(/^\\\[$/gm)||[]).length;
-    const close = (source.match(/^\\\]$/gm)||[]).length;
-    assert(open>0 && mathBlocks.length===open && close===open,
-      "B"+num+": block TeX must be separated into Markdown paragraphs");
-    if(built){
-      const html=read("site/"+base+"/index.html");
-      const rendered=[...html.matchAll(/<div class="arithmatex">\\\[([\s\S]*?)\\\]<\/div>/g)].map(m=>m[1].trim());
-      assert.equal(rendered.length,mathBlocks.length,"B"+num+": TeX leaked as raw delimiters");
-      for(let i=0;i<mathBlocks.length;i++)
-        assert.equal(htmlDecode(rendered[i]),mathBlocks[i],
-          "B"+num+": mathematical content changed in rendered formula "+(i+1));
-    }
-  }
-  if(built){
-    const html=read("site/"+base+"/index.html");
-    assert(new RegExp("<h2[^>]*>"+exampleSection+"\\. Ví dụ(?:<|\\s)").test(html),
-      "B"+num+": built heading incorrect");
-  }
-  console.log("PASS G10 SGK B"+String(num).padStart(2,"0")+": headings"+(built?" / built HTML":" / source"));
+/* UI-only regression for SGK Grade 10 Knowledge under UX795 owner-approved
+ * four-Level-1-tab Model B. Keep former requirements: no redundant example
+ * headings, hierarchical concept numbering, and exact TeX source/render parity.
+ * This guard does not approve academic Delta C, Mastery, RD1 or publication.
+ */
+const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path");
+const root=path.resolve(__dirname,".."),read=p=>fs.readFileSync(path.join(root,p),"utf8");
+const built=process.argv.includes("--built");
+const listed={i:[1,2],ii:[3,4],iii:[5,6],vii:[19,20,21],viii:[23,24,25],ix:[26,27]};
+const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
+const htmlDecode=value=>value.replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&amp;/g,"&").replace(/&quot;/g,'"').replace(/&#39;|&#x27;/g,"'");
+const normalize=s=>htmlDecode(s).replace(/^[ \t]{4}/gm,"").replace(/\s+/g," ").trim();
+for(const [chapter,nums] of Object.entries(listed))for(const num of nums){
+ const base="thpt-preview/sgk/chuong-"+chapter+"/bai-"+num;
+ const source=read("docs/"+base+".md");
+ const tabs=[...source.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]);
+ assert.deepEqual(tabs,labels,"B"+num+": exactly four approved Level-1 tabs");
+ assert(!/^==== /m.test(source),"B"+num+": Level-2 tab is outside approved phase 1");
+ assert(!/^## \d+\. Ví dụ/m.test(source),"B"+num+": obsolete top-level example heading");
+ assert(!/Ví dụ giải mẫu|Ví dụ đã giải|Ví dụ mẫu có giải thích|Ví dụ từng bước|Ví dụ có kiểm tra/.test(source),
+  "B"+num+": redundant example labels are not learner-facing");
+ if(num===1||num===2){
+   const subs=[...source.matchAll(/^    ### (2\.\d+)\. /gm)].map(m=>m[1]);
+   assert.deepEqual(subs,["2.1","2.2","2.3","2.4"],
+    "B"+num+": keep four SGK concept subsections and hierarchical numbering");
+ }
+ if([3,5,6].includes(num)){
+   const opens=(source.match(/^    \\\[$/gm)||[]).length,closes=(source.match(/^    \\\]$/gm)||[]).length;
+   const display=[...source.matchAll(/^    \\\[$\n([\s\S]*?)^    \\\]$/gm)].map(m=>normalize(m[1]));
+   assert(opens>0&&opens===closes&&display.length===opens,
+    "B"+num+": every display TeX must be a standalone Markdown paragraph");
+   if(built){
+     const html=read("site/"+base+"/index.html");
+     const rendered=[...html.matchAll(/<div class="arithmatex">\\\[([\s\S]*?)\\\]<\/div>/g)].map(m=>normalize(m[1]));
+     assert.equal(rendered.length,display.length,"B"+num+": TeX leaked or missing in built HTML");
+     for(let i=0;i<display.length;i++)assert.equal(rendered[i],display[i],
+       "B"+num+": built mathematical content drift at block "+(i+1));
+   }
+ }
+ if(built){
+   const html=read("site/"+base+"/index.html");
+   assert(/class="tabbed-set"/.test(html),"B"+num+": built page missing horizontal tab container");
+   assert(/class="tabbed-labels"/.test(html),"B"+num+": built page missing selectable tabs");
+   for(const label of labels)assert(html.includes(label),"B"+num+": missing tab label "+label);
+   assert(!html.includes("??? question")&&!html.includes("??? tip"),
+     "B"+num+": raw disclosure syntax leaked into HTML");
+ }
+ console.log("PASS G10 SGK B"+String(num).padStart(2,"0")+": 4 L1 tabs, concept numbering"+(built?", rendered tabs/TeX":""));
 }
