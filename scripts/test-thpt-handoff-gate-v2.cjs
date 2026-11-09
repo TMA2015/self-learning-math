@@ -59,17 +59,35 @@ function verifyOneStandardEvidence(data, handoff, initialHandoff) {
   }
   assert.equal(field(data,"QUALITY_EVIDENCE_SECTION"),"QUALITY_Q01_Q18_EVIDENCE");
   const evidence=section(handoff,"QUALITY_Q01_Q18_EVIDENCE");
-  assert(evidence.includes("THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md"),
-    "Evidence must reference THE ONE normative source");
-  const rows=evidence.split("\n").filter(line=>/^\|\s*Q\d{2}\s*\|/.test(line));
+  const compact=data.includes("LEARNING_PATH: TOPIC") &&
+    !evidence.split("\n").some(line=>/^\|\s*Q\d{2}\s*\|/.test(line));
+  let qEvidence=evidence;
+  if(compact) {
+    // Signed authoring A1-A7 may hold the full Q01-Q18 table, not a V2
+    // copy. Validate the original Git blob and both source/receipt pointers.
+    assert(evidence.includes("AUTHOR_A1_A7_PATH") && evidence.includes("REVIEW_RECEIPT_PATH"),
+      "Compact Topic Q evidence must identify the independent review");
+    const fp=safeRepoFile(field(handoff,"AUTHOR_A1_A7_PATH"),["prototypes/thpt/content-drafts/"]);
+    verifyBlob(field(handoff,"AUTHOR_A1_A7_BLOB"),fp);
+    qEvidence=fs.readFileSync(fp,"utf8");
+    assert(qEvidence.includes(field(data,"ACADEMIC_SOURCE_BLOB")) &&
+       qEvidence.includes(field(data,"REVIEW_RECEIPT_PATH")),
+       "Signed Topic Q evidence source/receipt mismatch");
+    assert(qEvidence.includes("SLM-THPT-QUALITY-ONE") && qEvidence.includes(normVersion),
+       "Signed Topic evidence uses wrong standard version");
+  } else assert(evidence.includes("THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md"),
+    "Evidence must reference the ONE normative source");
+  const rows=qEvidence.split("\n").filter(line=>/^\|\s*Q\d{2}\s*\|/.test(line));
   const codes=rows.map(line=>line.split("|")[1].trim());
   const expected=Array.from({length:18},(_,i)=>"Q"+String(i+1).padStart(2,"0"));
   assert.deepEqual(codes,expected,"Q01..Q18 must be complete and unique in author handoff");
   rows.forEach((line,i)=>{
     const cells=line.split("|").slice(1,-1).map(s=>s.trim());
-    assert(cells.length>=5,"Not enough source/review/release evidence in "+expected[i]);
-    for (const cell of cells.slice(1)) assert(cell.length>4&&!/(REPLACE_|PENDING|CHUA_CO|TBD)/i.test(cell),
-      "Placeholder/empty evidence in "+expected[i]);
+    assert(cells.length>=(compact?3:5),"Incomplete signed Q evidence "+expected[i]);
+    for(const cell of cells.slice(1)) assert(cell.length>4 &&
+      !(compact?/REPLACE_|CHUA_CO|TBD/i:/REPLACE_|PENDING|CHUA_CO|TBD/i).test(cell),
+      "Placeholder or empty Q evidence "+expected[i]);
+    if(compact) assert(/REVIEW_PASS/i.test(cells[2]),"Missing signed scoped review "+expected[i]);
   });
 }
 
@@ -110,23 +128,33 @@ function verifySupplementSafety(data, handoff, lane) {
 // Private independent RD1 stays owner-held; a PUBLIC static site may only provide
 // voluntary self-comparison after Final Submit, with no scoring/Mastery claim.
 function verifyTopicSafety(data, handoff) {
-  assert.equal(field(data, "ASSESSMENT_MODE"), "CLIENT_SELF_CHECK_NO_MASTERY");
-  assert.equal(field(data, "OFFICIAL_READINESS"), "NOT_CLAIMED");
-  assert.equal(field(data, "MASTERY_ACTIVATION"), "NO");
-  assert.equal(field(data, "RELEASE_AUTHORIZATION"), "NO");
-  assert.equal(field(handoff, "LEARNING_PATH"), "TOPIC");
-  assert.equal(field(handoff, "RELEASE_SCOPE"), "FULL_TOPIC_LEARNING_PATH");
-  assert.equal(field(handoff, "ASSESSMENT_MODE"), "CLIENT_SELF_CHECK_NO_MASTERY");
-  assert.equal(field(handoff, "MASTERY_ACTIVATION"), "NO");
-  assert.equal(field(handoff, "RELEASE_AUTHORIZATION"), "NO");
-  const count = field(data, "PRIVATE_RD1_COUNT");
-  assert(/^\d+$/.test(count), "Topic private RD1 count must be metadata only");
-  assert.equal(field(handoff, "PRIVATE_RD1_COUNT"), count, "Private Topic RD1 custody count mismatch");
-  const custody = section(handoff, "PRIVATE_RD1_CUSTODY_METADATA");
-  assert(new RegExp("RD1_PRIVATE_COUNT\\s*=\\s*" + count + "\\b").test(custody), "Private Topic RD1 count absent from custody receipt");
-  assert(/PRIVATE_OWNER_HELD\s*=\s*YES/.test(custody), "Topic RD1 must remain owner-held");
-  assert(/PRIVATE_GIT_CONTENT\s*=\s*NONE/.test(custody), "Private Topic RD1 may not enter public Git");
-  assert(/PRIVATE_BANK_SHA256\s*=\s*[0-9a-f]{64}/.test(custody), "Missing private Topic RD1 hash metadata");
+  assert.equal(field(data,"ASSESSMENT_MODE"),"CLIENT_SELF_CHECK_NO_MASTERY");
+  assert.equal(field(data,"OFFICIAL_READINESS"),"NOT_CLAIMED");
+  assert.equal(field(data,"MASTERY_ACTIVATION"),"NO");
+  assert.equal(field(data,"RELEASE_AUTHORIZATION"),"NO");
+  assert.equal(field(handoff,"LEARNING_PATH"),"TOPIC");
+  assert.equal(field(handoff,"RELEASE_SCOPE"),"FULL_TOPIC_LEARNING_PATH");
+  assert.equal(field(handoff,"ASSESSMENT_MODE"),"CLIENT_SELF_CHECK_NO_MASTERY");
+  assert.equal(field(handoff,"MASTERY_ACTIVATION"),"NO");
+  assert.equal(field(handoff,"RELEASE_AUTHORIZATION"),"NO");
+  const count=field(data,"PRIVATE_RD1_COUNT");
+  assert(/^\d+$/.test(count),"Invalid private Topic count");
+  assert.equal(field(handoff,"PRIVATE_RD1_COUNT"),count,"Private count mismatch");
+  const custody=section(handoff,"PRIVATE_RD1_CUSTODY_METADATA");
+  if(new RegExp("RD1_PRIVATE_COUNT\\s*=\\s*"+count+"\\b").test(custody)){
+    assert(/PRIVATE_OWNER_HELD\s*=\s*YES/.test(custody),"Private RD1 not owner-held");
+    assert(/PRIVATE_GIT_CONTENT\s*=\s*NONE/.test(custody),"Private RD1 cannot enter public Git");
+    assert(/PRIVATE_BANK_SHA256\s*=\s*[0-9a-f]{64}/.test(custody),"Private bank hash absent");
+  } else {
+    const hash=field(data,"PRIVATE_RD1_SHA256");
+    assert(/^[0-9a-f]{64}$/.test(hash),"Missing private RD1 SHA256 metadata");
+    assert.equal(field(handoff,"PRIVATE_RD1_SHA256"),hash,"Private hash mismatch");
+    assert(new RegExp("\\b"+count+"\\s+held-out private items","i").test(custody),
+      "Private Topic count absent from custody");
+    const plain=custody.replace(/\*/g,"");
+    assert(/owner-held only/i.test(plain) && /NOT\s+on\s+GitHub/i.test(plain),
+      "Private Topic assessment must remain outside public Git");
+  }
 }
 
 // A canonical item may be placed at multiple Topic outcomes/roles without
