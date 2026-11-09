@@ -180,7 +180,7 @@ Sông rộng 96 m, dòng chảy đều 3 m/s về Đông; thuyền chạy 5 m/s 
 
 **Cách đọc hình.** Đọc mũi tên từ điểm A đến B; lấy hoành độ và tung độ điểm cuối trừ điểm đầu, rồi đối chiếu chiều chuyển động trên trục.
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B10_COORDINATES_DIFFERENCE_D5_R01.svg" loading="lazy" alt="Tọa độ vectơ AB bằng tọa độ điểm cuối trừ điểm đầu"><figcaption>Tọa độ vectơ AB bằng tọa độ điểm cuối trừ điểm đầu.</figcaption></figure>
+<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../docs/assets/images/thpt/THPT_G10_B10_COORDINATES_DIFFERENCE_D5_R01.svg" loading="lazy" alt="Tọa độ vectơ AB bằng tọa độ điểm cuối trừ điểm đầu"><figcaption>Tọa độ vectơ AB bằng tọa độ điểm cuối trừ điểm đầu.</figcaption></figure>
 
 
  Trong hệ tọa độ vuông góc $Oxy$ với hai vectơ đơn vị $\vec i=(1;0)$ và $\vec j=(0;1)$, vectơ $\vec u=(u_x;u_y)=u_x\vec i+u_y\vec j$. Nếu $A(x_A;y_A)$, $B(x_B;y_B)$, thì
@@ -223,7 +223,7 @@ G\left(\frac{x_A+x_B+x_C}{3};\frac{y_A+y_B+y_C}{3}\right).
 
 **Cách đọc hình.** Đọc vectơ vận tốc theo bờ như tổng hai chuyển động của ca nô và dòng nước. Phân biệt trục dọc bờ với trục qua sông; kiểm điều kiện không trôi bằng thành phần ngang.
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_CHIV_RIVER_TRANSFER_D5_R01_CORRECTED.svg" alt="Hai trường hợp hướng mũi ca nô; lái Bắc thì trôi Đông, lái chếch Tây Bắc thì đi Bắc không trôi" loading="lazy"><figcaption>Hai bờ song song: thời gian phụ thuộc thành phần Bắc của vận tốc theo bờ.</figcaption></figure>
+<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../docs/assets/images/thpt/THPT_G10_CHIV_RIVER_TRANSFER_D5_R01_CORRECTED.svg" alt="Hai trường hợp hướng mũi ca nô; lái Bắc thì trôi Đông, lái chếch Tây Bắc thì đi Bắc không trôi" loading="lazy"><figcaption>Hai bờ song song: thời gian phụ thuộc thành phần Bắc của vận tốc theo bờ.</figcaption></figure>
 
 
  Định vị/chuyển động trong bản đồ Oxy phải xác định trục, đơn vị và phân biệt độ dài đường đi thực tế với khoảng cách thẳng giữa hai vị trí.
