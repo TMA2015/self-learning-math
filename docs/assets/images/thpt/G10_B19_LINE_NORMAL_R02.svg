@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" role="img" aria-labelledby="t d">
+<title id="t">Đường thẳng 2x+y=6, vectơ chỉ phương vuông góc pháp tuyến</title>
+<desc id="d">Hai trục dùng cùng tỉ lệ 45 pixel mỗi đơn vị. Đường 2x+y=6 qua (0,6) và (3,0). Tại P(1,4), vectơ chỉ phương u=(1,-2) đi dọc đường, vectơ pháp tuyến n=(2,1) vuông góc; u nhân vô hướng n bằng 0.</desc>
+<rect width="760" height="440" fill="#f8fbff" rx="20"/>
+<text x="24" y="40" font-size="24" font-weight="700" fill="#18395f" font-family="Arial,sans-serif">Chỉ phương dọc đường, pháp tuyến vuông góc</text>
+<line x1="110" y1="360" x2="700" y2="360" stroke="#72839b" stroke-width="2"/><line x1="280" y1="408" x2="280" y2="55" stroke="#72839b" stroke-width="2"/>
+<line x1="280" y1="90" x2="415" y2="360" stroke="#225da0" stroke-width="4"/>
+<line x1="325" y1="180" x2="370" y2="270" stroke="#188276" stroke-width="5"/>
+<path d="M355 262 L370 270 L366 251" stroke="#188276" fill="none" stroke-width="4"/>
+<line x1="325" y1="180" x2="415" y2="135" stroke="#bd671a" stroke-width="5"/>
+<path d="M397 135 L415 135 L407 150" stroke="#bd671a" fill="none" stroke-width="4"/>
+<path d="M337 174 L343 186 L331 192" fill="none" stroke="#344d72" stroke-width="2.5"/>
+<circle cx="325" cy="180" r="6" fill="#18395f"/>
+<g font-family="Arial,sans-serif" font-size="18" fill="#18395f">
+<text x="293" y="160">P(1;4)</text><text x="378" y="276">u=(1;−2)</text><text x="427" y="135">n=(2;1)</text><text x="430" y="364">2x+y=6</text><text x="261" y="386">O</text></g>
+<text x="24" y="418" font-size="18" font-family="Arial,sans-serif" fill="#375575">Cùng tỷ lệ hai trục: u·n = 1·2 + (−2)·1 = 0, nên hai hướng vuông góc.</text>
+</svg>
