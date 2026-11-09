@@ -46,8 +46,8 @@ Chọn đều ngẫu nhiên **một nhóm hai thẻ** từ năm thẻ phân bi�
 <p><strong>Bước 2:</strong> Ôn B24 tổ hợp và tính chẵn lẻ; tổng hai số lẻ khi có một lẻ và một chẵn.</p>
 <p><strong>Bước 3:</strong> Thử {1,2,3}: ba nhóm {1,2},{1,3},{2,3}; hai nhóm có tổng lẻ.</p>
 <p><strong>Bước 4:</strong> Liệt kê 6 nối lẻ–chẵn trên năm số và đối chiếu với tổng 10 nhóm rồi mở lời giải.</p>
-<p><strong>Bước 5:</strong> Luyện canonical THPT-G10-B27-P01 để củng cố chọn đều các nhóm bằng tổ hợp.</p>
-<p><strong>Điểm quay về canonical:</strong> `THPT-G10-B27-P01` — đường học SGK B27, Core/Practice đã review lịch sử; câu mới chỉ là Tự thử unscored, không cộng Mastery.</p>
+<p><strong>Bước 5:</strong> luyện câu liên quan trong phần Luyện tập để củng cố chọn đều các nhóm bằng tổ hợp.</p>
+<p><strong>Nơi luyện tiếp:</strong> `THPT-G10-B27-P01` — đường học SGK B27, Core/Luyện tập đã có trong phần Luyện tập; câu mới chỉ là câu tự đối chiếu, không tính điểm thành thạo.</p>
 </details>
 
 
@@ -84,8 +84,8 @@ Một túi có **5 thẻ phân biệt**, gồm ba thẻ đỏ R₁,R₂,R₃ và
 <p><strong>Bước 2:</strong> Nhắc quy tắc nhân và điều kiện mỗi lượt rút đều thẻ còn lại, tạo cặp có thứ tự.</p>
 <p><strong>Bước 3:</strong> Xét 2 thẻ đỏ R₁,R₂ và 1 xanh B: sáu cặp có thứ tự, bốn cặp khác màu.</p>
 <p><strong>Bước 4:</strong> Lập hai nhóm nhánh đỏ→xanh và xanh→đỏ trong bài năm thẻ rồi mở giải sau khi tính.</p>
-<p><strong>Bước 5:</strong> Luyện canonical THPT-G10-B27-C01 và đọc SVG cây rút không hoàn lại để kiểm trạng thái sau rút.</p>
-<p><strong>Điểm quay về canonical:</strong> `THPT-G10-B27-C01` — đường học SGK B27, Core/Practice đã review lịch sử; câu mới chỉ là Tự thử unscored, không cộng Mastery.</p>
+<p><strong>Bước 5:</strong> luyện câu liên quan trong phần Luyện tập và đọc SVG cây rút không hoàn lại để kiểm trạng thái sau rút.</p>
+<p><strong>Nơi luyện tiếp:</strong> `THPT-G10-B27-C01` — đường học SGK B27, Core/Luyện tập đã có trong phần Luyện tập; câu mới chỉ là câu tự đối chiếu, không tính điểm thành thạo.</p>
 </details>
 
 
@@ -117,8 +117,8 @@ Tung một đồng xu cân đối **ba lần độc lập**, ghi kết quả the
 <p><strong>Bước 2:</strong> Ôn từ khóa 'ít nhất' và phép lấy phần bù trong cùng không gian Ω.</p>
 <p><strong>Bước 3:</strong> Với hai lần tung, 'ít nhất một N' là {NN,NS,SN}, đối là {SS}; kiểm 3/4.</p>
 <p><strong>Bước 4:</strong> Vẽ cây ba lần tung, đánh dấu duy nhất SSS rồi tự mở đối chiếu đáp án.</p>
-<p><strong>Bước 5:</strong> Luyện canonical THPT-G10-B27-P02 để áp dụng biến cố đối trong chọn nhóm nhiều đối tượng.</p>
-<p><strong>Điểm quay về canonical:</strong> `THPT-G10-B27-P02` — đường học SGK B27, Core/Practice đã review lịch sử; câu mới chỉ là Tự thử unscored, không cộng Mastery.</p>
+<p><strong>Bước 5:</strong> luyện câu liên quan trong phần Luyện tập để áp dụng biến cố đối trong chọn nhóm nhiều đối tượng.</p>
+<p><strong>Nơi luyện tiếp:</strong> `THPT-G10-B27-P02` — đường học SGK B27, Core/Luyện tập đã có trong phần Luyện tập; câu mới chỉ là câu tự đối chiếu, không tính điểm thành thạo.</p>
 </details>
 
 
@@ -150,8 +150,8 @@ Một hộp có năm thẻ phân biệt ghi số 1,2,3,4,5. Rút đều một th
 <p><strong>Bước 2:</strong> Ôn cặp có thứ tự, quy tắc nhân và điều kiện hoàn lại.</p>
 <p><strong>Bước 3:</strong> Xét hai thẻ A,B, rút hai lần có hoàn lại: các cặp AA,AB,BA,BB đều có thể xảy ra.</p>
 <p><strong>Bước 4:</strong> Với năm thẻ, tô bốn ô trong bảng 5×5 được tạo bởi {2,4}×{2,4} rồi mở lời giải.</p>
-<p><strong>Bước 5:</strong> Luyện canonical THPT-G10-B27-P03 để so sánh với rút **không** hoàn lại và tránh tráo mô hình.</p>
-<p><strong>Điểm quay về canonical:</strong> `THPT-G10-B27-P03` — đường học SGK B27, Core/Practice đã review lịch sử; câu mới chỉ là Tự thử unscored, không cộng Mastery.</p>
+<p><strong>Bước 5:</strong> luyện câu liên quan trong phần Luyện tập để so sánh với rút **không** hoàn lại và tránh tráo mô hình.</p>
+<p><strong>Nơi luyện tiếp:</strong> `THPT-G10-B27-P03` — đường học SGK B27, Core/Luyện tập đã có trong phần Luyện tập; câu mới chỉ là câu tự đối chiếu, không tính điểm thành thạo.</p>
 </details>
 
 
@@ -183,8 +183,8 @@ Gieo hai xúc xắc **cân đối và phân biệt**. Một bạn cho rằng có
 <p><strong>Bước 2:</strong> Nhớ định nghĩa Ω của hai xúc xắc phân biệt; (1,2) và (2,1) khác nhau, còn (1,1) chỉ một cặp.</p>
 <p><strong>Bước 3:</strong> Thử hai xúc xắc hai mặt cân đối: các cặp có thứ tự (1,1),(1,2),(2,1),(2,2), trong đó cùng số có 2/4.</p>
 <p><strong>Bước 4:</strong> Trong bảng 6×6, đếm sáu ô đường chéo trong 36 ô đồng khả năng, rồi tự mở đối chiếu.</p>
-<p><strong>Bước 5:</strong> Luyện canonical THPT-G10-B27-P05 để nhận diện mô hình gộp cặp không đồng khả năng.</p>
-<p><strong>Điểm quay về canonical:</strong> `THPT-G10-B27-P05` — đường học SGK B27, Core/Practice đã review lịch sử; câu mới chỉ là Tự thử unscored, không cộng Mastery.</p>
+<p><strong>Bước 5:</strong> luyện câu liên quan trong phần Luyện tập để nhận diện mô hình gộp cặp không đồng khả năng.</p>
+<p><strong>Nơi luyện tiếp:</strong> `THPT-G10-B27-P05` — đường học SGK B27, Core/Luyện tập đã có trong phần Luyện tập; câu mới chỉ là câu tự đối chiếu, không tính điểm thành thạo.</p>
 </details>
 
 ### Kiến thức SGK — khái niệm và điều kiện
@@ -247,5 +247,5 @@ Trước khi xem lời giải, hãy xác định dữ kiện, điều phải tì
 
 **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/).
 
-<p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 10 Kết nối tri thức với cuộc sống và học liệu canonical SLM. Lời giảng được biên tập nhằm hỗ trợ tự học độc lập.</p>
+<p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 10 Kết nối tri thức với cuộc sống và học liệu SLM hiện hành. Lời giảng được biên tập nhằm hỗ trợ tự học độc lập.</p>
 
