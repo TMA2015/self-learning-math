@@ -362,7 +362,7 @@ Hai trạm đồng phát cùng tín hiệu, tín hiệu đến người thu khá
 
 **Cách đọc hình.** Đọc hai tiêu điểm và độ dài các bán trục trong hình elip; điểm trên elip có tổng khoảng cách đến hai tiêu điểm không đổi.
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_CHVII_ELLIPSE_TRANSFER_D5_R00.svg" alt="Mái nửa elip rộng 20 m và khối rộng 14 m; độ hở nhỏ nhất hai mép khoảng 0,285 m, không đạt 0,8 m" loading="lazy"><figcaption>Hình minh họa độ hở theo phương đứng tại hai mép khối, không chỉ tại tâm.</figcaption></figure>
+<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../docs/assets/images/thpt/THPT_G10_CHVII_ELLIPSE_TRANSFER_D5_R00.svg" alt="Mái nửa elip rộng 20 m và khối rộng 14 m; độ hở nhỏ nhất hai mép khoảng 0,285 m, không đạt 0,8 m" loading="lazy"><figcaption>Hình minh họa độ hở theo phương đứng tại hai mép khối, không chỉ tại tâm.</figcaption></figure>
 
 
 Dạng chính tắc \(\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1\), với \(a>b>0\). Đặt \(c^2=a^2-b^2\), hai tiêu điểm là \((\pm c;0)\), các đỉnh \((\pm a;0)\) và \((0;\pm b)\).
@@ -373,7 +373,7 @@ Dạng chính tắc \(\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1\), với \(a>b>0\). Đ
 
 **Cách đọc hình.** Đọc hai nhánh hypebol, hai tiêu điểm và đường tiệm cận; đừng tráo công thức c²=a²+b² thành elip.
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_CHVII_HYPERBOLA_TRANSFER_D5_R00.svg" alt="Hypebol từ hai trạm A(-50;0), B(50;0), nhánh phải có B đến trước và PA trừ PB bằng 60 km" loading="lazy"><figcaption>Hình minh họa quỹ tích hai nhánh; B nhận trước chọn nhánh gần B, không phải một điểm duy nhất.</figcaption></figure>
+<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../docs/assets/images/thpt/THPT_G10_CHVII_HYPERBOLA_TRANSFER_D5_R00.svg" alt="Hypebol từ hai trạm A(-50;0), B(50;0), nhánh phải có B đến trước và PA trừ PB bằng 60 km" loading="lazy"><figcaption>Hình minh họa quỹ tích hai nhánh; B nhận trước chọn nhánh gần B, không phải một điểm duy nhất.</figcaption></figure>
 
 
 Dạng chính tắc \(\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1\), \(a,b>0\). Khi đó \(c^2=a^2+b^2\), hai tiêu điểm \((\pm c;0)\), các đỉnh \((\pm a;0)\), các tiệm cận \(y=\pm\dfrac ba x\).
