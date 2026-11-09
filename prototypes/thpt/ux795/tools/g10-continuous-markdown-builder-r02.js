@@ -52,6 +52,7 @@ function buildG10KnowledgeR02(source,cfg){
  }
  let exampleSection=worked.join("\n\n").trim();
  if(!exampleSection){if(!cfg.worked)throw Error("Missing authored worked example "+cfg.b);exampleSection=cfg.worked;}
+ if(cfg.workedLead)exampleSection=cfg.workedLead+"\n\n"+exampleSection;
  let errorSection=errors.join("\n\n").trim();
  if(!errorSection){if(!cfg.errors)throw Error("Missing original errors "+cfg.b);errorSection=cfg.errors;}
  const out=["# "+title,"## 1. Khám phá kiến thức","### Cùng tìm hiểu",cfg.lead.trim(),"### Thuật ngữ, kiến thức và kỹ năng",
