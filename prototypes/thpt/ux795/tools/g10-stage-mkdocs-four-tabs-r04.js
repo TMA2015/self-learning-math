@@ -9,7 +9,7 @@ function stageG10Knowledge(candidate, original, settings){
   if(!originalScreen)throw Error("G10 B"+lesson+" original R4 header missing");
   // Reuse the page identity, but avoid a duplicate navigation: native lesson navigation
   // is already mounted in the exact same route by thpt-sgk-lesson-nav-v1.js.
-  const safeScreen=originalScreen.replace(/<nav class="thpt-r4-lesson-tabs">[\s\S]*?<\/nav>/,"")
+  const safeScreen=originalScreen.replace(/<nav class="thpt-r4-lesson-tabs"[^>]*>[\s\S]*?<\/nav>/g,"")
      .replace(/Học định nghĩa, công thức và ví dụ, rồi luyện tập theo từng kĩ năng\./g,"Học từ tình huống trực quan, nắm kiến thức và tự kiểm tra cách hiểu trước khi luyện tập.");
   function escapeCell(s){
     return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")
