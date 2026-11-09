@@ -45,8 +45,13 @@ function stageG10Knowledge(candidate, original, settings){
       const typ=/thpt-r4-help-fold|data-thpt-help-id/.test(attrs)?"tip":"question";
       const label=summary.replace(/<[^>]+>/g,"").trim().replace(/"/g,"'");
       const inner=body.replace(/^\n+|\n+$/g,"");
+      // Preserve the canonical data attributes that were on the original HTML
+      // details element. Native pymdownx.details renders a new details element;
+      // a nearby hidden span retains the original ID and pedagogical role.
+      const meta=[...attrs.matchAll(/(?:\bid|\bdata-[a-z0-9-]+)="[^"]*"/g)].map(m=>m[0]);
+      const marker=meta.length?'<span '+meta.join(" ")+' hidden></span>\n\n':"";
       conversions++;
-      return '??? '+typ+' "'+label+'"\n\n'+inner.split("\n").map(ln=>ln?"    "+ln:"").join("\n")+"\n";
+      return marker+'??? '+typ+' "'+label+'"\n\n'+inner.split("\n").map(ln=>ln?"    "+ln:"").join("\n")+"\n";
     });
     if(result.includes("<details")||result.includes("</details>"))throw Error("Unconverted details B"+lesson);
     return {text:result,count:conversions};
