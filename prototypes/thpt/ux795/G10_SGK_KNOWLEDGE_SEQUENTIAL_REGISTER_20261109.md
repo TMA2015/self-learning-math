@@ -1,20 +1,27 @@
 # UX795 · Toán 10 SGK Knowledge · sổ theo dõi tuần tự
 
-**Quyết định chủ dự án:** tiến hành từ Toán 10 theo thứ tự SGK, hoàn thiện theo chương, dùng mô hình B đã được owner chấp thuận về UX. Một hàng **4 tab cấp 1**, không thêm tab cấp 2 trước khi hoàn thiện toàn bộ SGK. Trang Kiến thức không thay đổi Core/Luyện tập/Tự kiểm tra độc lập. Trạng thái dưới đây chỉ ghi việc trên **Draft PR #797**, không phải trạng thái production.
+**Quyết định chủ dự án:** hoàn thiện **liên tục toàn bộ 27 bài SGK Toán 10** bằng mô hình B; **không tạo A/B HTML mới**, không dừng từng hai bài để xin duyệt UX. Chỉ dùng **4 tab cấp 1**, chưa có tab cấp 2. Lời văn phải tự nhiên, đầy đủ ý, giải thích tại sao chọn thao tác và điều kiện áp dụng. Chủ dự án đã chấp thuận sửa diễn đạt cụ thể ở B05. Trang Kiến thức không thay đổi Core/Luyện tập/Tự kiểm tra. Trạng thái này ghi công việc trên **Draft PR #797**, không phải website đã phát hành.
 
 | Chương | Bài SGK | Trạng thái học liệu mới | Nội dung cần đóng trước khi ghi READY |
 |---|---|---|---|
 | I — Mệnh đề và tập hợp | B01–B02 | **R01 đã biên soạn**, owner chấp thuận **mẫu UX B** | S1/Q18 cho Delta C, browser/MathJax/SVG, Q15/Q16 regression |
 | II — Bất phương trình bậc nhất hai ẩn | B03–B04 | **R01 đã biên soạn; OWNER_UX_PASS cả B03–B04** | S1/Q18 snapshot mới, browser 390/820/1440, keyboard/ARIA, QA hình |
 | III — Hệ thức lượng trong tam giác | B05–B06 | **R01 đã biên soạn cả 2 bài**, A/B bốn tab, static/numeric guard PASS | Chủ dự án chưa nghiệm thu UX B05–B06, S1/Q18, browser AP1–AP5; nguồn Gemini B05 sai ánh xạ đã loại |
-| IV — Vectơ | B07–B11 | Chưa mở | Chờ ChIII review/QA đúng phạm vi |
-| V | B12–B14 | Chưa mở | Chờ ChIV |
-| VI | B15–B18 | Chưa mở | Chờ ChV |
-| VII | B19–B22 | Chưa mở | Chờ ChVI |
-| VIII | B23–B25 | Chưa mở | Chờ ChVII |
-| IX — Tính xác suất theo định nghĩa cổ điển | B26–B27 | Chưa mở | Chờ ChVIII |
+| IV — Vectơ | B07–B11 | **R02 đã biên soạn cả 5 bài**, QA tĩnh nguồn/ID/hình PASS | S1 từng outcome, Q18 snapshot, MathJax & browser, link rebase |
+| V — Thống kê | B12–B14 | **R02 đã biên soạn cả 3 bài**, QA tĩnh PASS | S1/Q18, kiểm sai số/tứ phân vị, MathJax/mobile |
+| VI — Hàm số và phương trình | B15–B18 | **R02 đã biên soạn cả 4 bài**, QA tĩnh PASS; thêm SVG parabol và bảng dấu | S1/Q18, QA SVG, nghiệm ngoại lai, browser |
+| VII — Phương pháp tọa độ | B19–B22 | **R02 đã biên soạn cả 4 bài**, QA tĩnh PASS; SVG đường/pháp tuyến, khoảng cách, tròn, parabol | S1/Q18, QA trục và thông số hình, browser |
+| VIII — Tổ hợp, nhị thức Newton | B23–B25 | **R02 đã biên soạn cả 3 bài**, QA tĩnh PASS; ba SVG mới | S1/Q18, kiểm chính xác điều kiện đếm, browser |
+| IX — Xác suất cổ điển | B26–B27 | **R02 đã biên soạn cả 2 bài**, QA tĩnh PASS; giữ sơ đồ không gian mẫu/cây gốc | S1/Q18, xác nhận đồng khả năng và browser |
 
-**Tổng cộng:** **6/27** bài đã có lời giảng R01 trên nhánh nghiên cứu; **0/27** bài mới được xác minh là phát hành. B03–B04 đã được chủ dự án PASS về UX, không đồng nghĩa chứng cứ Q18 hay phát hành. “Đã biên soạn” không tự động thành “đã review”, “CONTENT_READY” hoặc “đã phát hành”.
+**Tổng cộng:** **27/27** bài đã có lời giảng ứng viên R01 (B01–B06) hoặc R02 (B07–B27) trên nhánh nghiên cứu; **21/21 bản R02 QA tĩnh PASS** khi đối chiếu nguồn chính: 106 First Try ID, 102 HELP ID, 26 figure và công thức source delimiter/HTML details cân bằng. **0/27** bài trong đợt này được xác minh phát hành. B03–B04 Owner UX PASS; B05 có sửa câu diễn đạt Owner APPROVED. Các trường hợp đó không tự thành Q18 PASS, CONTENT_READY, AP/P2 PASS hoặc quyền merge/deploy.
+
+### Bàn giao toàn bộ Bài 7–27 (không có HTML A/B mới)
+
+- Nguồn R02 từng bài: `G10_B07_HYBRID_KNOWLEDGE_CANDIDATE_R02.md` đến `G10_B27_HYBRID_KNOWLEDGE_CANDIDATE_R02.md` (21 tệp trong thư mục này).
+- [Bộ kiểm tra nguồn/ID/hình/Math](test-ux795-g10-full-knowledge-r03.cjs); [công cụ chỉnh văn bản](tools/g10-student-prose-cleanup-r02.js) và [chuyển thẻ tự mở](tools/g10-convert-collapsible-and-polish-r03.js).
+- [Sổ QA toàn lớp và các cổng chưa đạt](G10_FULL_KNOWLEDGE_R02_QA_RECEIPT_20261109.md).
+- SVG bổ sung được lưu trong `images/`; hình gốc còn tham chiếu `docs/assets/images/thpt` của repository.
 
 ### Bàn giao Chương III
 
@@ -32,4 +39,4 @@
 
 **Ranh giới cần giữ:** Gemini/Notebook v1 được chọn lọc theo đúng quyết định chủ dự án; S1 vẫn quyết định phạm vi và toán. Văn bản/hình mới là DELTA_C, không tự chuyển PASS của nguồn canonical cũ sang snapshot mới. Q15 mỗi item một ID canonical; bản thử không cho phép thay ngân hàng hoặc đáp án đã kiểm soát khi chưa đồng bộ version. Không ghi Mastery từ First Try hoặc Practice, không động tới RD1/Final Submit, Golden UI, Gemini, Firebase, hoặc dữ liệu học sinh. Chỉ merge/deploy khi chủ dự án phê duyệt riêng, QA cuối cùng trên HEAD thực và các cổng đạt.
 
-**Checkpoint:** G10_06_OF_27_R01_DRAFTED · CHI_CHII_CHIII_DRAFTS_EXIST · OWNER_CHII_UX_PASS · CHIII_OWNER_UX_PENDING · Q18_AND_REAL_BROWSER_HOLD · NO_MERGE_DEPLOY.
+**Checkpoint:** G10_27_OF_27_SOURCE_DRAFTED · R02_21_OF_21_STATIC_SOURCE_QA_PASS · OWNER_B03_B04_UX_PASS · B05_TEXT_APPROVED · Q18_BROWSER_LINK_REBASE_HOLD · NO_MERGE_DEPLOY.
