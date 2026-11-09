@@ -351,9 +351,9 @@ Tính m=(y2-y1)/(x2-x1) khi x2≠x1; thay một điểm để tìm b, sau đó k
 
 ### Vectơ pháp tuyến và vectơ chỉ phương
 
-**Cách đọc hình.** Quan sát (ec u=(1,-2)) nằm dọc (2x+y=6), còn (ec n=(2,1)) vuông góc; tích vô hướng bằng 0. Điểm P(1,4) thỏa phương trình đường thẳng.
+**Cách đọc hình.** Quan sát vectơ chỉ phương \(\vec u=(1,-2)\) đi dọc đường \(2x+y=6\), còn \(\vec n=(2,1)\) vuông góc với đường. Điểm \(P(1,4)\) nằm trên đường vì \(2\cdot1+4=6\).
 
-<figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="images/G10_B19_LINE_NORMAL_R02.svg" loading="lazy" alt="Đường 2x+y=6 qua P(1,4), vectơ chỉ phương (1,-2) và pháp tuyến (2,1)"><figcaption>Với (d:2x+y=6), một chỉ phương là ((1,-2)), pháp tuyến là ((2,1)), tích vô hướng bằng 0. Hình dùng **đúng hệ số của d**.</figcaption></figure>
+<figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="images/G10_B19_LINE_NORMAL_R02.svg" loading="lazy" alt="Đường 2x+y=6 qua P(1,4), vectơ chỉ phương (1,-2) và pháp tuyến (2,1)"><figcaption>Đường thẳng \(d:2x+y=6\) có một vectơ chỉ phương \((1,-2)\) và một pháp tuyến \((2,1)\). Hai vectơ vuông góc vì tích vô hướng bằng 0.</figcaption></figure>
 
 
 Đường thẳng \(\Delta\) nhận **vectơ pháp tuyến** \(\vec n=(a;b)\ne(0;0)\) khi \(\vec n\) vuông góc với đường thẳng. Đường thẳng nhận **vectơ chỉ phương** \(\vec u=(u_1;u_2)\ne(0;0)\) khi \(\vec u\) song song với đường thẳng.
