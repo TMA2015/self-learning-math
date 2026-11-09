@@ -18,7 +18,7 @@ Góc giữa hai đường thẳng cũng có thể tính từ góc giữa các ve
 
 ## 2. Kiến thức SGK
 
-Đọc vì sao cần học, tự làm Tự thử trước khi mở đáp án và chỉ quay lại Core sau khi đã đối chiếu. Các câu này là luyện tập không ghi Mastery.
+Đọc vì sao cần học, tự làm Tự thử trước khi mở đáp án và chỉ quay lại Core sau khi đã đối chiếu. Các câu này là luyện tập không ghi điểm thành thạo.
 
 
 <span id="thpt-g10-chvii-try08" data-thpt-first-try-id="THPT-G10-CHVII-TRY08" data-outcome-id="G10-B20-RELATIVE_POSITION" data-thpt-help-ref="HELP-G10-CHVII-TRY08"></span>
@@ -43,7 +43,7 @@ Kiểm pháp tuyến khác 0; kiểm định thức; nếu bằng 0, so sánh đ
 
     **Lý do:** Hai pháp tuyến (2,-1) và (4,-2) tỉ lệ 2 lần, nhưng nhân toàn phương trình d1 với 2 cho hằng số 2, không phải 3 của d2.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY08` bên dưới; quay lại câu canonical cũ `THPT-G10-B20-C01` khi đã hiểu kiến thức.
+    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY08` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
 
 <span id="help-g10-chvii-try08" data-thpt-help-id="HELP-G10-CHVII-TRY08"></span>
 
@@ -57,9 +57,9 @@ Kiểm pháp tuyến khác 0; kiểm định thức; nếu bằng 0, so sánh đ
 
     4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B20-C01` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B20-C01` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B20-C01">Mở câu luyện tập đã review để tự sửa</a>
+<a href="../luyen-tap/?item=THPT-G10-B20-C01">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
 
 
 <span id="thpt-g10-chvii-try09" data-thpt-first-try-id="THPT-G10-CHVII-TRY09" data-outcome-id="G10-B20-PERPENDICULAR" data-thpt-help-ref="HELP-G10-CHVII-TRY09"></span>
@@ -84,7 +84,7 @@ Chọn n' vuông góc với n của d, rồi dùng n'·PM=0; kiểm P thuộc đ
 
     **Lý do:** n=(1,2) của d, chọn n'=(2,-1) có tích vô hướng 0. Qua P: 2(x-1)-(y+2)=0 ⇒ 2x-y-4=0.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY09` bên dưới; quay lại câu canonical cũ `THPT-G10-B20-C02` khi đã hiểu kiến thức.
+    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY09` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
 
 <span id="help-g10-chvii-try09" data-thpt-help-id="HELP-G10-CHVII-TRY09"></span>
 
@@ -98,9 +98,9 @@ Chọn n' vuông góc với n của d, rồi dùng n'·PM=0; kiểm P thuộc đ
 
     4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B20-C02` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B20-C02` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B20-C02">Mở câu luyện tập đã review để tự sửa</a>
+<a href="../luyen-tap/?item=THPT-G10-B20-C02">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
 
 
 <span id="thpt-g10-chvii-try10" data-thpt-first-try-id="THPT-G10-CHVII-TRY10" data-outcome-id="G10-B20-INTERSECTION" data-thpt-help-ref="HELP-G10-CHVII-TRY10"></span>
@@ -125,7 +125,7 @@ Lập hệ đúng hai phương trình, giải bằng thế/khử, kiểm tọa �
 
     **Lý do:** Từ 2x-y=1 ⇒ y=2x-1. Thế vào x+2(2x-1)=8 ⇒ x=2, y=3; kiểm 2+6=8, 4-3=1.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY10` bên dưới; quay lại câu canonical cũ `THPT-G10-B20-P01` khi đã hiểu kiến thức.
+    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY10` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
 
 <span id="help-g10-chvii-try10" data-thpt-help-id="HELP-G10-CHVII-TRY10"></span>
 
@@ -139,9 +139,9 @@ Lập hệ đúng hai phương trình, giải bằng thế/khử, kiểm tọa �
 
     4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B20-P01` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B20-P01` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B20-P01">Mở câu luyện tập đã review để tự sửa</a>
+<a href="../luyen-tap/?item=THPT-G10-B20-P01">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
 
 
 <span id="thpt-g10-chvii-try11" data-thpt-first-try-id="THPT-G10-CHVII-TRY11" data-outcome-id="G10-B20-DISTANCE" data-thpt-help-ref="HELP-G10-CHVII-TRY11"></span>
@@ -166,7 +166,7 @@ Kiểm (a,b)≠(0,0), tính |axM+byM+c|/√(a²+b²). Kết quả phải ≥0; n
 
     **Lý do:** Tử |3·1+4·2−1|=10, mẫu √(3²+4²)=5, nên khoảng cách bằng 10/5=2.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY11` bên dưới; quay lại câu canonical cũ `THPT-G10-B20-P02` khi đã hiểu kiến thức.
+    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY11` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
 
 <span id="help-g10-chvii-try11" data-thpt-help-id="HELP-G10-CHVII-TRY11"></span>
 
@@ -180,9 +180,9 @@ Kiểm (a,b)≠(0,0), tính |axM+byM+c|/√(a²+b²). Kết quả phải ≥0; n
 
     4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B20-P02` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B20-P02` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B20-P02">Mở câu luyện tập đã review để tự sửa</a>
+<a href="../luyen-tap/?item=THPT-G10-B20-P02">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
 
 
 <span id="thpt-g10-chvii-try12" data-thpt-first-try-id="THPT-G10-CHVII-TRY12" data-outcome-id="G10-B20-ANGLE" data-thpt-help-ref="HELP-G10-CHVII-TRY12"></span>
@@ -207,7 +207,7 @@ Dùng |n1·n2|/(||n1||||n2||) và kiểm 0≤cosφ≤1. Đừng nhầm góc tù 
 
     **Lý do:** Pháp tuyến n1=(1,0), n2=(1,-1). cosφ=|1|/(1·√2)=1/√2 nên φ=45°.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY12` bên dưới; quay lại câu canonical cũ `THPT-G10-B20-P03` khi đã hiểu kiến thức.
+    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY12` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
 
 <span id="help-g10-chvii-try12" data-thpt-help-id="HELP-G10-CHVII-TRY12"></span>
 
@@ -221,9 +221,9 @@ Dùng |n1·n2|/(||n1||||n2||) và kiểm 0≤cosφ≤1. Đừng nhầm góc tù 
 
     4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B20-P03` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B20-P03` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B20-P03">Mở câu luyện tập đã review để tự sửa</a>
+<a href="../luyen-tap/?item=THPT-G10-B20-P03">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
 
 ### Vị trí tương đối của hai đường thẳng
 
@@ -300,5 +300,5 @@ Xét \(d_1:x-y-1=0\) và \(d_2:x+y-5=0\).
 
 **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/).
 
-<p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 10 Kết nối tri thức với cuộc sống và học liệu canonical SLM. Lời giảng được biên tập nhằm hỗ trợ tự học độc lập.</p>
+<p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 10 Kết nối tri thức với cuộc sống và học liệu SLM hiện hành. Lời giảng được biên tập nhằm hỗ trợ tự học độc lập.</p>
 
