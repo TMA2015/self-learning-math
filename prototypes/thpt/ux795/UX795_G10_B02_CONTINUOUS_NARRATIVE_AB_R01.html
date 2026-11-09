@@ -67,5 +67,5 @@ function draw(mode){
  if(window.MathJax?.typesetPromise)window.MathJax.typesetPromise([view]).catch(()=>{});
 }
 btnA.addEventListener('click',()=>draw('A'));btnB.addEventListener('click',()=>draw('B'));
-draw('B');
+document.addEventListener('DOMContentLoaded',()=>draw('B'));
 </script></body></html>
