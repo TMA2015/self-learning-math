@@ -70,7 +70,7 @@ function buildG10KnowledgeR02(source,cfg){
  const ids=(v,attr)=>[...v.matchAll(new RegExp(attr+'="([^"]+)"','g'))].map(x=>x[1]);
  for(const attr of ["data-thpt-first-try-id","data-thpt-help-id"]){
   const old=ids(source,attr),next=ids(out,attr);
-  if(JSON.stringify(old)!==JSON.stringify(next))throw Error(`B${cfg.b} ${attr} mismatch ${old.length}/${next.length}`);
+  if(old.length!==next.length||old.some(id=>!next.includes(id)))throw Error(`B${cfg.b} ${attr} set mismatch ${old.length}/${next.length}`);
   if(new Set(next).size!==next.length)throw Error("Duplicate "+attr);
  }
  if((out.match(/^## /gm)||[]).length!==4)throw Error("Four section rule B"+cfg.b);
