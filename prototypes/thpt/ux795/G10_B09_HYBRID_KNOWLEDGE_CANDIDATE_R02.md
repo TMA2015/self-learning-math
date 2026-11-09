@@ -14,7 +14,7 @@ Cách nghĩ ấy giải thích phép nhân \(k\vec u\) trước khi viết tính
 
 **Thuật ngữ:** Tích của số với vectơ, độ dài, đổi hướng theo dấu hệ số, tính phân phối, cùng phương, trung điểm/trọng tâm.
 
-**Sau bài học, em cần làm được:** Tìm hướng và độ dài của (kec u); nhận biết bội vectơ; biến đổi tổng và tích; kiểm các trường hợp (k=0), (k<0).
+**Sau bài học, em cần làm được:** Tìm hướng và độ dài của \(k\vec u\); nhận biết hai vectơ cùng phương; biến đổi tổng và tích; kiểm các trường hợp \(k=0\) và \(k<0\).
 
 ## 2. Kiến thức SGK
 
