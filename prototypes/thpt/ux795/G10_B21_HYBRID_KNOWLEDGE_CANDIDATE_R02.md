@@ -18,7 +18,7 @@ Một đường thẳng có thể không chạm, cắt tại hai điểm hoặc 
 
 ## 2. Kiến thức SGK
 
-Đọc vì sao cần học, tự làm Tự thử trước khi mở đáp án và chỉ quay lại Core sau khi đã đối chiếu. Các câu này là luyện tập không ghi Mastery.
+Đọc vì sao cần học, tự làm Tự thử trước khi mở đáp án và chỉ quay lại Core sau khi đã đối chiếu. Các câu này là luyện tập không ghi điểm thành thạo.
 
 
 <span id="thpt-g10-chvii-try13" data-thpt-first-try-id="THPT-G10-CHVII-TRY13" data-outcome-id="G10-B21-CIRCLE_STANDARD" data-thpt-help-ref="HELP-G10-CHVII-TRY13"></span>
@@ -43,7 +43,7 @@ Biết tâm I(a,b), R>0, viết (x-a)²+(y-b)²=R². Kiểm tâm khi thế vào 
 
     **Lý do:** IM²=(x+2)²+(y-1)², và R²=3²=9. Cần R=3>0.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY13` bên dưới; quay lại câu canonical cũ `THPT-G10-B21-C01` khi đã hiểu kiến thức.
+    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY13` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
 
 <span id="help-g10-chvii-try13" data-thpt-help-id="HELP-G10-CHVII-TRY13"></span>
 
@@ -57,9 +57,9 @@ Biết tâm I(a,b), R>0, viết (x-a)²+(y-b)²=R². Kiểm tâm khi thế vào 
 
     4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B21-C01` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B21-C01` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B21-C01">Mở câu luyện tập đã review để tự sửa</a>
+<a href="../luyen-tap/?item=THPT-G10-B21-C01">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
 
 
 <span id="thpt-g10-chvii-try14" data-thpt-first-try-id="THPT-G10-CHVII-TRY14" data-outcome-id="G10-B21-CIRCLE_GENERAL" data-thpt-help-ref="HELP-G10-CHVII-TRY14"></span>
@@ -84,7 +84,7 @@ Nhóm x²+Dx và y²+Ey, thêm bớt bình phương nửa hệ số rồi kiểm
 
     **Lý do:** x²−6x=(x−3)²−9, y²+4y=(y+2)²−4. Suy ra tổng hai bình phương bằng −8+9+4=5>0.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY14` bên dưới; quay lại câu canonical cũ `THPT-G10-B21-C02` khi đã hiểu kiến thức.
+    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY14` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
 
 <span id="help-g10-chvii-try14" data-thpt-help-id="HELP-G10-CHVII-TRY14"></span>
 
@@ -98,9 +98,9 @@ Nhóm x²+Dx và y²+Ey, thêm bớt bình phương nửa hệ số rồi kiểm
 
     4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B21-C02` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B21-C02` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B21-C02">Mở câu luyện tập đã review để tự sửa</a>
+<a href="../luyen-tap/?item=THPT-G10-B21-C02">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
 
 
 <span id="thpt-g10-chvii-try15" data-thpt-first-try-id="THPT-G10-CHVII-TRY15" data-outcome-id="G10-B21-CIRCLE_TANGENT" data-thpt-help-ref="HELP-G10-CHVII-TRY15"></span>
@@ -125,7 +125,7 @@ Bước 1 thử IM²=R²; bước 2 lấy n=IM khác 0; bước 3 viết n·MX=0
 
     **Lý do:** IM=(3,4), IM²=9+16=25=R² nên M thuộc đường. Tiếp tuyến: 3(x−4)+4(y−3)=0 ⇒ 3x+4y−24=0.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY15` bên dưới; quay lại câu canonical cũ `THPT-G10-B21-P02` khi đã hiểu kiến thức.
+    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY15` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
 
 <span id="help-g10-chvii-try15" data-thpt-help-id="HELP-G10-CHVII-TRY15"></span>
 
@@ -139,9 +139,9 @@ Bước 1 thử IM²=R²; bước 2 lấy n=IM khác 0; bước 3 viết n·MX=0
 
     4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B21-P02` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B21-P02` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B21-P02">Mở câu luyện tập đã review để tự sửa</a>
+<a href="../luyen-tap/?item=THPT-G10-B21-P02">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
 
 
 <span id="thpt-g10-chvii-try16" data-thpt-first-try-id="THPT-G10-CHVII-TRY16" data-outcome-id="G10-B21-CIRCLE_THROUGH_POINTS" data-thpt-help-ref="HELP-G10-CHVII-TRY16"></span>
@@ -166,7 +166,7 @@ Kiểm ba điểm không thẳng hàng; tìm giao hai đường trung trực r�
 
     **Lý do:** Trung trực AB là x=1; trung trực AC là y=1. IA²=1²+1²=2; thử B và C đều cho tổng bình phương bằng 2.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY16` bên dưới; quay lại câu canonical cũ `THPT-G10-B21-P04` khi đã hiểu kiến thức.
+    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY16` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
 
 <span id="help-g10-chvii-try16" data-thpt-help-id="HELP-G10-CHVII-TRY16"></span>
 
@@ -180,9 +180,9 @@ Kiểm ba điểm không thẳng hàng; tìm giao hai đường trung trực r�
 
     4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B21-P04` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B21-P04` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B21-P04">Mở câu luyện tập đã review để tự sửa</a>
+<a href="../luyen-tap/?item=THPT-G10-B21-P04">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
 
 
 <span id="thpt-g10-chvii-try17" data-thpt-first-try-id="THPT-G10-CHVII-TRY17" data-outcome-id="G10-B21-LINE_CIRCLE_POSITION" data-thpt-help-ref="HELP-G10-CHVII-TRY17"></span>
@@ -207,7 +207,7 @@ Tính h=|axI+byI+c|/√(a²+b²), so với R. Phải biết đường có n khá
 
     **Lý do:** Khoảng cách từ I(1,2) đến y=−1 là |2−(−1)|=3=R. Chân đường vuông góc từ I xuống d là T(1,−1).
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY17` bên dưới; quay lại câu canonical cũ `THPT-G10-B21-P03` khi đã hiểu kiến thức.
+    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY17` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
 
 <span id="help-g10-chvii-try17" data-thpt-help-id="HELP-G10-CHVII-TRY17"></span>
 
@@ -221,9 +221,9 @@ Tính h=|axI+byI+c|/√(a²+b²), so với R. Phải biết đường có n khá
 
     4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B21-P03` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B21-P03` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B21-P03">Mở câu luyện tập đã review để tự sửa</a>
+<a href="../luyen-tap/?item=THPT-G10-B21-P03">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
 
 ### Phương trình đường tròn
 
@@ -309,5 +309,5 @@ Vậy \(I(2;-3)\) và \(R=5\). Điểm \(M(5;1)\) thuộc đường tròn vì \(
 
 **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/).
 
-<p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 10 Kết nối tri thức với cuộc sống và học liệu canonical SLM. Lời giảng được biên tập nhằm hỗ trợ tự học độc lập.</p>
+<p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 10 Kết nối tri thức với cuộc sống và học liệu SLM hiện hành. Lời giảng được biên tập nhằm hỗ trợ tự học độc lập.</p>
 
