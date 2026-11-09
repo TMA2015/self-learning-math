@@ -129,29 +129,43 @@ function verifyTopicSafety(data, handoff) {
   assert(/PRIVATE_BANK_SHA256\s*=\s*[0-9a-f]{64}/.test(custody), "Missing private Topic RD1 hash metadata");
 }
 
-// One canonical item can legitimately have several distinct Topic outcome/role placements.
-// Enforce unique placement tuples instead of falsely requiring one row per item.
+// A canonical item may be placed at multiple Topic outcomes/roles without
+// duplicating stem, key or rubric. Accept two reviewed AUTHORING schemas:
+// explicit indexed placement rows or compact source_type + Topic role rows.
+// The latter has no live route claim; RELEASE still verifies the actual route.
 function verifyTopicPlacementMatrix(matrix, items, outcomes) {
-  const rows = matrix.split("\n").filter(s => /^\|\s*\d+\s*\|/.test(s))
-    .map(s => s.split("|").slice(1, -1).map(x => x.trim().replace(/^\x60|\x60$/g, "")));
-  assert(rows.length >= items.length, "Topic placements must cover all canonical public IDs");
-  const seen = new Set(), covered = new Set();
-  for (const row of rows) {
-    assert(row.length >= 6, "Malformed Topic placement row");
-    const [, item, outcome, role, placement] = row;
-    assert(items.includes(item), "Unregistered Topic item " + item);
-    assert(outcomes.includes(outcome), "Unknown Topic outcome " + outcome);
-    assert(/^TOPIC_/.test(role), "Not a Topic placement role for " + item);
-    assert(placement.startsWith("TOPIC/") && !/(^|\/)CORE(\/|$)/.test(placement),
-      "Topic must reuse canonical items through Practice/Written, not a separate Core page");
-    assert(!/(READINESS|RD1)/i.test(placement), "Private Topic Readiness cannot be registered as a public placement");
-    const key = [item, outcome, role, placement].join("|");
-    assert(!seen.has(key), "Duplicate Topic item/outcome/role/placement: " + key);
-    seen.add(key);
-    covered.add(item);
+  const lines=matrix.split("\n").filter(s=>/^\|/.test(s));
+  const seen=new Set(),covered=new Set();
+  let count=0,format=null;
+  for(const line of lines) {
+    const cells=line.split("|").slice(1,-1).map(s=>s.trim().replace(/^\x60|\x60$/g,""));
+    if(!cells.length || cells[0]==="#" || /^item_id$/i.test(cells[0]) || /^[-:]+$/.test(cells[0]))continue;
+    let item,outcome,role,placement,sourceType;
+    if(cells.length===6 && /^\d+$/.test(cells[0])) {
+      [,item,outcome,role,placement]=cells;
+      assert(placement.startsWith("TOPIC/"),"Topic placement must start TOPIC/: "+item);
+      assert(!/(^|\/)CORE(\/|$)/.test(placement),"Topic cannot create a fourth Core page");
+      assert(!/(READINESS|RD1)/i.test(placement),"Private Topic Readiness cannot be a public placement");
+      format=format||"EXPLICIT";
+      assert.equal(format,"EXPLICIT","Mixed Topic matrix schemas forbidden");
+    } else if(cells.length===5 && /^[A-Za-z0-9_.-]+$/.test(cells[0])) {
+      [item,outcome,role,sourceType]=cells;
+      assert(["SGK_CANONICAL_REUSE","TOPIC_NEW_CANDIDATE"].includes(sourceType),
+        "Unverified Topic source_type: "+sourceType);
+      placement="TOPIC/"+role+"/"+sourceType;
+      format=format||"COMPACT";
+      assert.equal(format,"COMPACT","Mixed Topic matrix schemas forbidden");
+    } else throw new Error("Malformed Topic item–outcome mapping: "+line);
+    assert(items.includes(item),"Unregistered Topic canonical ID: "+item);
+    assert(outcomes.includes(outcome),"Unknown Topic outcome: "+outcome);
+    assert(/^TOPIC_/.test(role),"Invalid Topic role: "+role);
+    const tuple=[item,outcome,role,placement].join("|");
+    assert(!seen.has(tuple),"Duplicate Topic placement tuple: "+tuple);
+    seen.add(tuple);covered.add(item);count++;
   }
-  for (const item of items) assert(covered.has(item), "Unmapped Topic canonical item " + item);
-  return rows.length;
+  assert(count>=items.length,"Topic placements must cover all canonical IDs");
+  for(const item of items)assert(covered.has(item),"Unmapped Topic canonical ID: "+item);
+  return count;
 }
 
 function verifyReadyManifest(rel, initialHandoff) {
