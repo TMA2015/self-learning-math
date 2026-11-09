@@ -221,5 +221,5 @@
 
     **Học tiếp:** [Core và Luyện tập Chương III](../luyen-tap/) · [Bài 6 — Hệ thức lượng trong tam giác](../bai-6/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/).
 
-    <p class="thpt-r4-footnote">Kiến thức đối chiếu theo SGK Toán 10 · Kết nối tri thức · tập 1 · Bài 5, canonical SLM hiện hành; giải thích nguồn NotebookLM v1 được biên tập chọn lọc. Minh họa góc 120° do SLM xây dựng.</p>
+    <p class="thpt-r4-footnote">Kiến thức đối chiếu theo SGK Toán 10 · Kết nối tri thức · tập 1 · Bài 5, học liệu SLM hiện hành; giải thích nguồn NotebookLM v1 được biên tập chọn lọc. Minh họa góc 120° do SLM xây dựng.</p>
 
