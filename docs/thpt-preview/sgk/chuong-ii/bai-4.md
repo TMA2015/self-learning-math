@@ -234,3 +234,4 @@
 
     <p class="thpt-r4-footnote">Nguồn kiến thức: SGK Toán 10, Kết nối tri thức với cuộc sống, tập một, Bài 4. Lời giảng và ví dụ do SLM biên tập từ học liệu hiện có, nguồn Gemini/NotebookLM v1 và minh họa nguồn đã kiểm điều kiện toán.</p>
 
+<p class="thpt-r4-footnote">Nguồn: SGK Toán 10 KNTT tập 1 Bài 4 trang 26–30; SBT Bài 4 trang 19–23. Luyện tập tự đối chiếu không phải Tự kiểm tra độc lập.</p>
