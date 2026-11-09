@@ -46,8 +46,8 @@ Một vòng quay có **3 ô bằng nhau** mang số 1,2,3, dừng đều trên t
 <p><strong>Bước 2:</strong> Nhớ quy tắc nhân B23: kết quả hai giai đoạn là một cặp có thứ tự; phân biệt ô 1 và mặt N.</p>
 <p><strong>Bước 3:</strong> Thử trường hợp nhỏ: hai ô 1,2 và một đồng xu cho bốn cặp (1,N),(1,S),(2,N),(2,S).</p>
 <p><strong>Bước 4:</strong> Trở lại bảng 3×2; tự điền từng ô rồi mới mở lời giải của Tự thử để đối chiếu.</p>
-<p><strong>Bước 5:</strong> Luyện đúng kỹ năng mô tả Ω với câu canonical THPT-G10-B26-C01; giữ kết quả hoàn chỉnh trước khi đếm.</p>
-<p><strong>Điểm quay về canonical:</strong> `THPT-G10-B26-C01` — đường học SGK B26, Core/Practice đã review lịch sử; câu mới chỉ là Tự thử unscored, không cộng Mastery.</p>
+<p><strong>Bước 5:</strong> Luyện đúng kỹ năng mô tả Ω với câu luyện tập liên quan; giữ kết quả hoàn chỉnh trước khi đếm.</p>
+<p><strong>Nơi luyện tiếp:</strong> `THPT-G10-B26-C01` — đường học SGK B26, Core/Luyện tập đã có trong phần Luyện tập; câu mới chỉ là câu tự đối chiếu, không tính điểm thành thạo.</p>
 </details>
 
 
@@ -79,8 +79,8 @@ Rút đều ngẫu nhiên một thẻ trong **7 thẻ phân biệt** được gh
 <p><strong>Bước 2:</strong> Ôn định nghĩa tập con và số nguyên tố; chỉ chọn những thẻ số thuộc Ω thỏa đúng điều kiện.</p>
 <p><strong>Bước 3:</strong> Thử trên các số 1 đến 4: tập số nguyên tố chỉ là {2,3}, không gồm 1.</p>
 <p><strong>Bước 4:</strong> Gạch chân từng số nguyên tố trong Ω bảy phần tử, kiểm đã đếm đúng bốn kết quả rồi tự mở đối chiếu.</p>
-<p><strong>Bước 5:</strong> Luyện tiếp canonical THPT-G10-B26-P02 để phân biệt Ω và biến cố trong phép thử nhiều bước.</p>
-<p><strong>Điểm quay về canonical:</strong> `THPT-G10-B26-P02` — đường học SGK B26, Core/Practice đã review lịch sử; câu mới chỉ là Tự thử unscored, không cộng Mastery.</p>
+<p><strong>Bước 5:</strong> Luyện tiếp đã có THPT-G10-B26-P02 để phân biệt Ω và biến cố trong phép thử nhiều bước.</p>
+<p><strong>Nơi luyện tiếp:</strong> `THPT-G10-B26-P02` — đường học SGK B26, Core/Luyện tập đã có trong phần Luyện tập; câu mới chỉ là câu tự đối chiếu, không tính điểm thành thạo.</p>
 </details>
 
 
@@ -112,8 +112,8 @@ Có 10 thẻ **phân biệt được khi đánh số**, trong đó đúng **4 th
 <p><strong>Bước 2:</strong> Tách “thẻ vật lí” khỏi “nhãn đọc được”; hãy đặt chỉ số riêng cho từng thẻ.</p>
 <p><strong>Bước 3:</strong> Thử ba thẻ X₁, X₂, Y₁ chọn đều: xác suất X là 2/3 chứ không phải 1/2.</p>
 <p><strong>Bước 4:</strong> Với 10 thẻ, đếm bốn X trên tổng mười; mở lời giải khi đã tự chọn Ω và n(A).</p>
-<p><strong>Bước 5:</strong> Ôn canonical THPT-G10-B26-C02 (vòng quay có nhãn màu lặp) để luyện chọn đúng kết quả sơ cấp.</p>
-<p><strong>Điểm quay về canonical:</strong> `THPT-G10-B26-C02` — đường học SGK B26, Core/Practice đã review lịch sử; câu mới chỉ là Tự thử unscored, không cộng Mastery.</p>
+<p><strong>Bước 5:</strong> Ôn đã có THPT-G10-B26-C02 (vòng quay có nhãn màu lặp) để luyện chọn đúng kết quả sơ cấp.</p>
+<p><strong>Nơi luyện tiếp:</strong> `THPT-G10-B26-C02` — đường học SGK B26, Core/Luyện tập đã có trong phần Luyện tập; câu mới chỉ là câu tự đối chiếu, không tính điểm thành thạo.</p>
 </details>
 
 
@@ -145,8 +145,8 @@ Chọn đều một số nguyên từ 1 đến 12. Tính xác suất số đư�
 <p><strong>Bước 2:</strong> Xác định Ω={1,…,12}; gọi A là nhóm bội 3, viết phần bù trong cùng Ω.</p>
 <p><strong>Bước 3:</strong> Trên Ω={1,…,6}, nhóm bội 3 là {3,6}; phần không chia hết có 4 phần tử.</p>
 <p><strong>Bước 4:</strong> Liệt kê bốn bội 3 trong 1–12, trừ khỏi tổng; chỉ sau đó mở lời giải Tự thử.</p>
-<p><strong>Bước 5:</strong> Luyện canonical THPT-G10-B26-P01 để củng cố phép tính biến cố đối.</p>
-<p><strong>Điểm quay về canonical:</strong> `THPT-G10-B26-P01` — đường học SGK B26, Core/Practice đã review lịch sử; câu mới chỉ là Tự thử unscored, không cộng Mastery.</p>
+<p><strong>Bước 5:</strong> luyện câu liên quan trong phần Luyện tập để củng cố phép tính biến cố đối.</p>
+<p><strong>Nơi luyện tiếp:</strong> `THPT-G10-B26-P01` — đường học SGK B26, Core/Luyện tập đã có trong phần Luyện tập; câu mới chỉ là câu tự đối chiếu, không tính điểm thành thạo.</p>
 </details>
 
 
@@ -178,8 +178,8 @@ Chỉ tính \(n(A)/n(\Omega)\) khi chọn đều từng kết quả sơ cấp đ
 <p><strong>Bước 2:</strong> Nhắc điều kiện định nghĩa cổ điển: Ω hữu hạn, khác rỗng, từng kết quả sơ cấp đồng khả năng.</p>
 <p><strong>Bước 3:</strong> Xét thuật toán khác: chọn A với xác suất 1/2, B và C mỗi cái 1/4; vẫn ngẫu nhiên nhưng không đều.</p>
 <p><strong>Bước 4:</strong> Trở lại (a) tìm giả thiết đồng khả năng còn thiếu; với (b) nêu 200 vé đồng khả năng, đúng một kết quả thuận lợi, soát <span class="arithmatex">\(1/200&gt;0\)</span>, rồi tự mở đối chiếu.</p>
-<p><strong>Bước 5:</strong> Ôn canonical THPT-G10-B26-P05 để luyện phát hiện giả thiết đồng khả năng còn thiếu.</p>
-<p><strong>Điểm quay về canonical:</strong> `THPT-G10-B26-P05` — đường học SGK B26, Core/Practice đã review lịch sử; câu mới chỉ là Tự thử unscored, không cộng Mastery.</p>
+<p><strong>Bước 5:</strong> Ôn đã có THPT-G10-B26-P05 để luyện phát hiện giả thiết đồng khả năng còn thiếu.</p>
+<p><strong>Nơi luyện tiếp:</strong> `THPT-G10-B26-P05` — đường học SGK B26, Core/Luyện tập đã có trong phần Luyện tập; câu mới chỉ là câu tự đối chiếu, không tính điểm thành thạo.</p>
 </details>
 
 ### Kiến thức SGK — khái niệm và điều kiện
@@ -251,5 +251,5 @@ Trước khi xem lời giải, hãy xác định dữ kiện, điều phải tì
 
 **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/).
 
-<p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 10 Kết nối tri thức với cuộc sống và học liệu canonical SLM. Lời giảng được biên tập nhằm hỗ trợ tự học độc lập.</p>
+<p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 10 Kết nối tri thức với cuộc sống và học liệu SLM hiện hành. Lời giảng được biên tập nhằm hỗ trợ tự học độc lập.</p>
 
