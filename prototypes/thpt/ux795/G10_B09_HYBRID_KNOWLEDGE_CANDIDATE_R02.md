@@ -33,12 +33,14 @@ Kiểm k=0 hoặc \(\vec u=\vec0\) trước khi nói cùng/ngược hướng c�
 
 **Em vận dụng.** Với \(\vec u\ne\vec0\), vectơ \(0\vec u\) là gì? Nó có độ dài bằng bao nhiêu?
 
-??? question "Em tự mở đối chiếu sau khi đã thử làm"
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Em tự mở đối chiếu sau khi đã thử làm</summary>
 
-    **Kết quả:** \(0\vec u=\vec0\), độ dài bằng 0.
+**Kết quả:** \(0\vec u=\vec0\), độ dài bằng 0.
 
-    **Vì sao:** Vì \(|0\vec u|=|0|\,|\vec u|=0\); không cố gán hướng vật lý riêng cho vectơ-không.
+**Vì sao:** Vì \(|0\vec u|=|0|\,|\vec u|=0\); không cố gán hướng vật lý riêng cho vectơ-không.
 
+</details>
 
 <span id="thpt-g10-chiv-try12" data-thpt-first-try-id="THPT-G10-CHIV-TRY12" data-outcome-id="G10-B09-LENGTH_DIRECTION" data-thpt-help-ref="HELP-G10-B09-01"></span>
 
@@ -46,7 +48,7 @@ Kiểm k=0 hoặc \(\vec u=\vec0\) trước khi nói cùng/ngược hướng c�
 
 Khi một robot quay trở lại theo đúng đường vừa đi nhưng gấp đôi độ dời, độ lớn tăng còn chiều đổi ngược.
 
-Để theo kịp lập luận, em nhớ rằng Biết phân biệt chiều, độ dài, vectơ đối và dấu hệ số k. 
+Trước khi tiếp tục, em hãy nhớ lại phân biệt chiều, độ dài, vectơ đối và dấu hệ số k. 
 
 Với vectơ khác không, \(k=-2\) làm mũi tên quay ngược và kéo dài gấp đôi; **độ dài** dùng \(|k|\), còn dấu chỉ ảnh hưởng **hướng**.
 
@@ -55,12 +57,14 @@ Hỏi 'k có âm không' để xét hướng; hỏi '|k| bằng mấy' để xé
 
 **Em vận dụng.** Một vectơ \(\vec u\) dài 3 m hướng Đông. Mô tả \(-2\vec u\): độ dài và hướng.
 
-??? question "Em tự mở đối chiếu sau khi đã thử làm"
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Em tự mở đối chiếu sau khi đã thử làm</summary>
 
-    **Kết quả:** \(-2\vec u\) dài 6 m và hướng Tây.
+**Kết quả:** \(-2\vec u\) dài 6 m và hướng Tây.
 
-    **Vì sao:** Độ dài là 2×3=6, dấu âm khiến nó ngược hướng với \(\vec u\).
+**Vì sao:** Độ dài là 2×3=6, dấu âm khiến nó ngược hướng với \(\vec u\).
 
+</details>
 
 <span id="thpt-g10-chiv-try13" data-thpt-first-try-id="THPT-G10-CHIV-TRY13" data-outcome-id="G10-B09-DISTRIBUTION" data-thpt-help-ref="HELP-G10-B09-01"></span>
 
@@ -68,7 +72,7 @@ Hỏi 'k có âm không' để xét hướng; hỏi '|k| bằng mấy' để xé
 
 Đi hai chặng rồi phóng to toàn bộ lộ trình theo một tỉ lệ cho cùng độ dời ròng như phóng to từng chặng rồi cộng.
 
-Để theo kịp lập luận, em nhớ rằng Nhớ phép cộng vectơ B08 và ý nghĩa nhân vectơ với số; dùng quy tắc tam giác. 
+Trước khi tiếp tục, em hãy nhớ lại phép cộng vectơ B08 và ý nghĩa nhân vectơ với số; dùng quy tắc tam giác. 
 
 Do phép dời tỉ lệ theo từng thành phần, \(k(\vec u+\vec v)=k\vec u+k\vec v\). Cùng một vectơ có thể biểu diễn theo nhiều chặng, không được nhân k chỉ cho chặng đầu.
 
@@ -77,12 +81,14 @@ Nhận ra biểu thức có ngoặc và một hệ số chung trước khi phân
 
 **Em vận dụng.** Cho \(\vec u\) dài 2 đơn vị về Đông và \(\vec v\) dài 1 đơn vị về Bắc. Hãy mô tả \(2(\vec u+\vec v)\) và \(2\vec u+2\vec v\).
 
-??? question "Em tự mở đối chiếu sau khi đã thử làm"
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Em tự mở đối chiếu sau khi đã thử làm</summary>
 
-    **Kết quả:** Cả hai là vectơ có thành phần 4 đơn vị về Đông và 2 đơn vị về Bắc.
+**Kết quả:** Cả hai là vectơ có thành phần 4 đơn vị về Đông và 2 đơn vị về Bắc.
 
-    **Vì sao:** Phóng đôi tổng hai chặng hoặc phóng đôi từng chặng dẫn đến cùng điểm cuối. Đây là đẳng thức vectơ, không có nghĩa độ dài bằng 4+2.
+**Vì sao:** Phóng đôi tổng hai chặng hoặc phóng đôi từng chặng dẫn đến cùng điểm cuối. Đây là đẳng thức vectơ, không có nghĩa độ dài bằng 4+2.
 
+</details>
 
 <span id="thpt-g10-chiv-try14" data-thpt-first-try-id="THPT-G10-CHIV-TRY14" data-outcome-id="G10-B09-COLLINEAR" data-thpt-help-ref="HELP-G10-B09-01"></span>
 
@@ -90,7 +96,7 @@ Nhận ra biểu thức có ngoặc và một hệ số chung trước khi phân
 
 Các mũi tên cùng nằm trên một đường có thể dài ngắn khác nhau và ngược chiều; vẫn cùng phương.
 
-Để theo kịp lập luận, em nhớ rằng Đã biết cùng phương B07 và nhân số B09; nhớ điều kiện cả hai vectơ khác không nếu diễn đạt tỉ lệ k khác 0. 
+Trước khi tiếp tục, em hãy nhớ lại cùng phương B07 và nhân số B09; nhớ điều kiện cả hai vectơ khác không nếu diễn đạt tỉ lệ k khác 0. 
 
 Hai vectơ khác không cùng phương khi vectơ nọ là bội khác 0 của vectơ kia; hệ số âm cho ngược hướng, hệ số dương cho cùng hướng. Trường hợp \(\vec0\) cần quy ước S1 riêng.
 
@@ -99,12 +105,14 @@ Hai vectơ khác không cùng phương khi vectơ nọ là bội khác 0 của v
 
 **Em vận dụng.** \(\vec v=-3\vec u\) và \(\vec u\ne\vec0\). Hai vectơ có cùng phương không? Cùng hướng không? Tỉ số độ dài bằng bao nhiêu?
 
-??? question "Em tự mở đối chiếu sau khi đã thử làm"
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Em tự mở đối chiếu sau khi đã thử làm</summary>
 
-    **Kết quả:** Cùng phương, ngược hướng, \(|\vec v|/|\vec u|=3\).
+**Kết quả:** Cùng phương, ngược hướng, \(|\vec v|/|\vec u|=3\).
 
-    **Vì sao:** Bội âm đổi chiều, độ lớn nhân với 3. Đây là phép mô tả phương/hướng, không phải hai vectơ bằng nhau.
+**Vì sao:** Bội âm đổi chiều, độ lớn nhân với 3. Đây là phép mô tả phương/hướng, không phải hai vectơ bằng nhau.
 
+</details>
 
 <span id="thpt-g10-chiv-try15" data-thpt-first-try-id="THPT-G10-CHIV-TRY15" data-outcome-id="G10-B09-MIDPOINT_CENTROID" data-thpt-help-ref="HELP-G10-B09-02"></span>
 
@@ -112,7 +120,7 @@ Hai vectơ khác không cùng phương khi vectơ nọ là bội khác 0 của v
 
 Biết điểm M ở chính giữa AB hay G chia trung tuyến AM theo tỉ lệ 2:1 giúp tìm vị trí chỉ bằng phép nhân vectơ với số.
 
-Để theo kịp lập luận, em nhớ rằng Đã biết điểm M trung điểm BC, G trọng tâm ABC, hai điểm G và M nằm trên trung tuyến AM, độ dài AG:GM=2:1. 
+Trước khi tiếp tục, em hãy nhớ lại điểm M trung điểm BC, G trọng tâm ABC, hai điểm G và M nằm trên trung tuyến AM, độ dài AG:GM=2:1. 
 
 Vectơ cùng phương cùng chiều theo một đoạn cho phép đổi tỉ số độ dài thành hệ số có dấu: \(\overrightarrow{AG}=\frac23\overrightarrow{AM}\), trong khi \(\overrightarrow{GA}=-2\overrightarrow{GM}\).
 
@@ -121,11 +129,14 @@ Vectơ cùng phương cùng chiều theo một đoạn cho phép đổi tỉ s�
 
 **Em vận dụng.** Trong tam giác ABC, M là trung điểm BC, G là trọng tâm; nếu AM=9 cm thì AG bằng bao nhiêu? Viết \(\overrightarrow{AG}\) theo \(\overrightarrow{AM}\).
 
-??? question "Em tự mở đối chiếu sau khi đã thử làm"
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Em tự mở đối chiếu sau khi đã thử làm</summary>
 
-    **Kết quả:** AG=6 cm và \(\overrightarrow{AG}=\frac23\overrightarrow{AM}\).
+**Kết quả:** AG=6 cm và \(\overrightarrow{AG}=\frac23\overrightarrow{AM}\).
 
-    **Vì sao:** G nằm giữa A và M, AG:GM=2:1 nên AM gồm 3 phần, AG chiếm 2 phần. Hai vectơ A→G, A→M cùng hướng.
+**Vì sao:** G nằm giữa A và M, AG:GM=2:1 nên AM gồm 3 phần, AG chiếm 2 phần. Hai vectơ A→G, A→M cùng hướng.
+
+</details>
 
 ### Kiến thức SGK
 
