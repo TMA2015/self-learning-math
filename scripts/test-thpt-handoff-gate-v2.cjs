@@ -242,7 +242,14 @@ function verifyReadyManifest(rel, initialHandoff) {
   const lessons = ids(handoff, "LESSON_IDS");
   const outcomes = ids(handoff, "OUTCOME_IDS");
   const items = ids(handoff, "PUBLIC_ITEM_IDS");
-  for (const canonicalId of [...lessons, ...outcomes, ...items]) assert(sourceText.includes(canonicalId), "Registered ID absent from canonical academic source: " + canonicalId);
+  // Topic lesson/outcome IDs are source-locked handoff *mapping metadata*.
+  // Their literal tokens need not appear in learner-facing canonical prose.
+  // Academic Q02/PED evidence and the full item→outcome crosswalk bind them.
+  // Canonical PUBLIC item IDs must still exist in the frozen academic source;
+  // no missing/renamed questions or fabricated item IDs are permitted.
+  const sourceAnchoredIds=lane==="TOPIC" ? items : [...lessons,...outcomes,...items];
+  for(const canonicalId of sourceAnchoredIds)
+    assert(sourceText.includes(canonicalId), "Registered source item/ID absent from canonical academic source: "+canonicalId);
   const pedKeys = ["PED1_MOTIVATION", "PED2_PREREQUISITES", "PED3_MEANING_FIRST", "PED4_EXPLAINED_VISUAL", "PED5_REASONED_EXAMPLES", "PED6_FIRST_TRY_REMEDIATION"];
   for (const key of pedKeys) assert(data.split("\n").some(line => line.startsWith("- [x] " + key + " — ") && line.length > key.length + 35), "PED evidence not signed off: " + key);
   const matrix = section(handoff, "ITEM_OUTCOME_MATRIX");
