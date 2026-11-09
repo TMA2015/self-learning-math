@@ -147,7 +147,7 @@ Dùng \(\vec0\) để cộng, trừ và biểu diễn độ dời ròng bằng 0
 
 **Quan sát hình.** Đọc hình bình hành theo thứ tự: chọn cạnh AB, đối chiếu mũi tên DC và CD, rồi kiểm chiều của từng mũi tên trước khi kết luận bằng nhau. Hai cạnh đối bằng độ dài chưa đủ để hai vectơ cùng bằng nhau.
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B07_PARALLELOGRAM_EQUAL_OPPOSITE_D5_R01.svg" loading="lazy" alt="Hình bình hành ABCD với các vectơ cạnh đối bằng nhau"><figcaption>Hình bình hành ABCD với các vectơ cạnh đối bằng nhau.</figcaption></figure>
+<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../docs/assets/images/thpt/THPT_G10_B07_PARALLELOGRAM_EQUAL_OPPOSITE_D5_R01.svg" loading="lazy" alt="Hình bình hành ABCD với các vectơ cạnh đối bằng nhau"><figcaption>Hình bình hành ABCD với các vectơ cạnh đối bằng nhau.</figcaption></figure>
 
  $\vec u=\vec v$ khi cùng hướng, cùng độ dài. Trong hình bình hành ABCD: $\overrightarrow{AB}=\overrightarrow{DC}$; còn $\overrightarrow{AB}$ và $\overrightarrow{CD}$ cùng độ dài nhưng **ngược hướng**.
 
