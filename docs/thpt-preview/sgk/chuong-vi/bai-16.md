@@ -161,7 +161,7 @@
 
     *Lưu ý:* Nếu \(\Delta<0\), parabol không cắt \(Ox\); nếu \(\Delta=0\), parabol tiếp xúc \(Ox\) tại đỉnh. Không được tự giả định luôn có hai giao điểm.
 
-=== "Ví dụ giải toán"
+=== "Ví dụ"
 
     Trước khi xem lời giải, hãy xác định dữ kiện, điều phải tìm và lý do chọn cách giải. Sau đó kiểm tra lại điều kiện áp dụng và kết quả, thay vì chỉ nhìn phép tính cuối cùng.
 
@@ -246,7 +246,7 @@
 
     Hai ví dụ củng cố cách tìm giá trị lớn nhất, nhỏ nhất từ dạng đỉnh của parabol. Khi vận dụng mô hình thực tế, cần kiểm tra **điều kiện và đơn vị** của các đại lượng.
 
-=== "Lỗi thường gặp và cách tự khắc phục"
+=== "Lỗi thường gặp"
 
     <span data-thpt-help-id="HELP-G10-CHVI-TRY06" hidden></span>
 
