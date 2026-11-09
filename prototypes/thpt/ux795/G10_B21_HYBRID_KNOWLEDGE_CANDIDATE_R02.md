@@ -275,7 +275,7 @@ Nếu \(R^2=0\), tập điểm chỉ có một điểm; nếu \(R^2<0\), không 
 
 **Cách đọc hình.** Chỉ I(2,1), đoạn IT dài 3 nằm ngang và tiếp tuyến tại T(5,1) thẳng đứng; bán kính vuông góc tiếp tuyến. Hình có cùng phương trình đường tròn được ghi ở chú thích.
 
-<figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="images/G10_B21_CIRCLE_TANGENT_R02.svg" loading="lazy" alt="Đường tròn (x-2)²+(y-1)²=9 tâm I(2,1), tiếp tuyến x=5 tại T(5,1)"><figcaption>Đường tròn ((x-2)^2+(y-1)^2=9) có tâm (I(2,1)), bán kính 3; (T(5,1)) thuộc đường và tiếp tuyến tại T là (x=5).</figcaption></figure>
+<figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="images/G10_B21_CIRCLE_TANGENT_R02.svg" loading="lazy" alt="Đường tròn (x-2)²+(y-1)²=9 tâm I(2,1), tiếp tuyến x=5 tại T(5,1)"><figcaption>Đường tròn \((x-2)^2+(y-1)^2=9\) có tâm \(I(2,1)\), bán kính 3. Điểm \(T(5,1)\) nằm trên đường tròn và tiếp tuyến tại \(T\) là \(x=5\).</figcaption></figure>
 
 
 Tại điểm \(M(x_M;y_M)\) **thuộc đường tròn**, tiếp tuyến vuông góc với bán kính \(IM\):
