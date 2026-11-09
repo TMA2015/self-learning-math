@@ -248,7 +248,7 @@ Trước khi xem lời giải, hãy xác định dữ kiện, điều phải tì
 
 **Lời giải.** Với \(x<1\), hai thừa số âm nên tích dương. Với \(1<x<3\), tích âm. Với \(x>3\), tích dương. Tại \(x=1,3\) tích bằng 0. Vì đề yêu cầu \(\le0\), tập nghiệm là \([1,3]\).
 
-**Kiểm lại:** Thử \(x=2\) được \((-1)\cdot(-? )\): chính xác là \((2-1)(2-3)=1\cdot(-1)=-1\le0\), còn \(x=0\) cho \(3>0\), phù hợp kết luận.
+**Kiểm lại:** Thử \(x=2\) được \((2-1)(2-3)=1\cdot(-1)=-1\le0\), nên 2 thuộc tập nghiệm. Thử \(x=0\) được \((-1)(-3)=3>0\), nên 0 không thuộc tập nghiệm. Hai phép thử phù hợp với bảng dấu.
 
 1. Xét dấu \(h(x)=2x^2+3x+5\) trên \(\mathbb R\).
 2. Giải \(x^2-5x+6<0\).
