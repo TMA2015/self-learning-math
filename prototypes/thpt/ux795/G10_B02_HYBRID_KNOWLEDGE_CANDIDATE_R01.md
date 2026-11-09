@@ -8,6 +8,11 @@ Em hãy tưởng tượng trên bàn có một chiếc hộp ghi chữ \(A\), tr
 
 Bây giờ, em lấy riêng thẻ số 2 đặt vào chiếc hộp nhỏ \(B\). Hộp nhỏ ấy biểu diễn tập \(B=\{2\}\). Lúc này có hai đối tượng cần phân biệt: **số 2** là một phần tử, còn **\(\{2\}\)** là một tập hợp có đúng một phần tử. Vì mọi phần tử của \(B\) đều nằm trong \(A\), ta nói \(B\) là **tập con của \(A\)** và viết \(B\subseteq A\).
 
+<figure class="thpt-r4-plot thpt-r4-concept-figure">
+<img src="images/G10_B02_MEMBERSHIP_SUBSET_R01.svg" loading="lazy" alt="Tập A chứa số 2 và 4; tập B chỉ chứa số 2, nằm bên trong A; B là tập con của A nhưng không là phần tử của A">
+<figcaption>Quan sát: cả hai số 2, 4 đều thuộc A; số 2 đồng thời thuộc B. Vì mọi phần tử của B đều thuộc A nên B là tập con của A. Riêng tập {2} không phải phần tử của A trong ví dụ này.</figcaption>
+</figure>
+
 Cách nghĩ này giải thích vì sao \(2\in A\) và \(\{2\}\subseteq A\) đều đúng, nhưng \(\{2\}\in A\) lại sai **trong ví dụ đang xét**: hai phần tử của \(A\) là *các số* 2 và 4, không có phần tử nào là tập \(\{2\}\). Trong toán học, bản thân một tập cũng có thể là phần tử của một tập lớn hơn; điều quyết định là tập đó thực sự chứa **những đối tượng nào**.
 
 Khi học phần này, em sẽ gặp cả trường hợp không có phần tử nào: đó là **tập rỗng** \(\varnothing\). Em cũng sẽ gặp những tập được viết theo một điều kiện, chẳng hạn tập các số tự nhiên nhỏ hơn 5, thay vì phải kể tên từng số. Nhờ vậy, tập hợp trở thành một cách ghi rõ **ta đang xét những đối tượng nào**.
@@ -38,6 +43,12 @@ Một tập hợp được xác định bởi các phần tử của nó. Có th
 - \(\varnothing\) là tập không chứa phần tử nào; \(\varnothing\subseteq A\) và \(A\subseteq A\) với mọi tập \(A\).
 
 <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ:</strong> “Thuộc” (\(\in\)) dùng để nói về <em>phần tử</em>; “là tập con” (\(\subseteq\)) dùng để nói về <em>quan hệ giữa hai tập</em>. Hai tập bằng nhau phải có đúng các phần tử như nhau.</div>
+
+| Em muốn diễn đạt | Ký hiệu | Ví dụ đúng với \(A=\{2,4\}\) |
+|---|---|---|
+| Một **phần tử** nằm trong tập | \(\in\) | \(2\in A\) |
+| Một **tập** có toàn bộ phần tử thuộc tập khác | \(\subseteq\) | \(\{2\}\subseteq A\) |
+| Một **tập** cũng là phần tử của tập lớn? | Phải kiểm phần tử thực tế | \(\{2\}\notin A\) trong ví dụ này |
 
 **Em vận dụng.** Với \(A=\{2,4\}\), hãy tự xét ba phát biểu: (a) \(2\in A\); (b) \(\{2\}\subseteq A\); (c) \(\{2\}\in A\). Nghĩ xem hai vế của ký hiệu đang nói về *số* hay *tập* trước khi mở đối chiếu.
 
