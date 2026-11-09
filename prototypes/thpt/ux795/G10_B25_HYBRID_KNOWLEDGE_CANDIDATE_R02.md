@@ -198,7 +198,7 @@ Thay x=1, tất cả x^k=1 nên giá trị P(1) chính là tổng hệ số. Tá
 
 **Cách đọc hình.** Đọc từng hàng hệ số theo n từ 0 đến 4; hệ số giữa bằng tổng hai hệ số ở trên. Hàng n=4 là 1,4,6,4,1 ứng với khai triển (a+b)⁴.
 
-<figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="images/G10_B25_PASCAL_TRIANGLE_R02.svg" loading="lazy" alt="Tam giác Pascal các hàng 1; 1 1; 1 2 1; 1 3 3 1; 1 4 6 4 1"><figcaption>Các hệ số (1,4,6,4,1) của ((a+b)^4) đến từ số cách chọn hạng tử (b) đúng (k) lần trong bốn thừa số.</figcaption></figure>
+<figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="images/G10_B25_PASCAL_TRIANGLE_R02.svg" loading="lazy" alt="Tam giác Pascal các hàng 1; 1 1; 1 2 1; 1 3 3 1; 1 4 6 4 1"><figcaption>Các hệ số \(1,4,6,4,1\) của \((a+b)^4\) xuất phát từ số cách chọn hạng tử \(b\) đúng \(k\) lần trong bốn thừa số.</figcaption></figure>
 
 
 **Công thức.** Với \(n\) là số nguyên không âm,
