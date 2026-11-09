@@ -264,7 +264,23 @@ function verifyReadyManifest(rel, initialHandoff) {
       for (const id of items) assert.equal(canonicalRows.filter(row=>row[0]===id).length,1,"Duplicate supplement item mapping "+id);
     }
   }
-  for (const heading of ["S1_SGK_SBT_SOURCE","D1_D6_EVIDENCE","PED1_PED6_EVIDENCE","REVIEW_SOURCE_RECEIPT","DELTA_LEDGER","PRIVATE_RD1_CUSTODY_METADATA","AUTHOR_SIGNOFF"]) assert(section(handoff, heading).length > 35, "Insufficient evidence in " + heading);
+  const commonEvidence=["S1_SGK_SBT_SOURCE","D1_D6_EVIDENCE","PED1_PED6_EVIDENCE","DELTA_LEDGER","PRIVATE_RD1_CUSTODY_METADATA"];
+  for(const heading of commonEvidence)
+    assert(section(handoff,heading).length>35,"Insufficient evidence in "+heading);
+  if(lane==="TOPIC"){
+    // Signed Topic authoring packets also use AUTHORING_A1_A7 and
+    // RELEASE_AND_OWNER_GATE as equivalent custody/signoff section titles.
+    // Review receipt SHA/source lock and Q01–Q18 are validated above.
+    const reviewHeading=handoff.includes("## REVIEW_SOURCE_RECEIPT")
+      ?"REVIEW_SOURCE_RECEIPT":"AUTHORING_A1_A7";
+    const signoffHeading=handoff.includes("## AUTHOR_SIGNOFF")
+      ?"AUTHOR_SIGNOFF":"RELEASE_AND_OWNER_GATE";
+    for(const heading of [reviewHeading,signoffHeading])
+      assert(section(handoff,heading).length>35,"Incomplete Topic source evidence "+heading);
+  }else{
+    for(const heading of ["REVIEW_SOURCE_RECEIPT","AUTHOR_SIGNOFF"])
+      assert(section(handoff,heading).length>35,"Insufficient evidence in "+heading);
+  }
   assert(lessons.length && outcomes.length && items.length, "Empty author register");
   console.log("SOURCE_LOCK_PASS " + id + ": " + lessons.length + " lessons, " + outcomes.length + " outcomes, " + items.length + " public item IDs; evidence hashes match (not an Academic PASS).");
 }
