@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" role="img" aria-labelledby="t d">
+<title id="t">Bảng dấu f(x)=(x−1)(x−3) theo hai nghiệm 1 và 3</title>
+<desc id="d">Trục số có hai mốc x bằng 1 và 3. Tam thức f(x) bằng 0 tại cả hai mốc, dương khi x nhỏ hơn 1 hoặc lớn hơn 3, âm khi x nằm giữa 1 và 3. Đây là tam thức có hệ số a dương và hai nghiệm phân biệt.</desc>
+<rect width="760" height="300" rx="20" fill="#f8fbff"/>
+<text x="28" y="44" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#193a69">Đọc dấu từ hai nghiệm của tam thức</text>
+<text x="30" y="96" font-family="Arial,sans-serif" font-size="21" fill="#24496f">f(x) = (x − 1)(x − 3)</text>
+<line x1="65" y1="160" x2="705" y2="160" stroke="#435d81" stroke-width="3"/>
+<path d="M692 153 L707 160 L692 167" fill="none" stroke="#435d81" stroke-width="3"/>
+<g font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#123657">
+<text x="180" y="144">+</text><text x="366" y="144">−</text><text x="568" y="144">+</text></g>
+<g stroke="#7f4c21" stroke-width="3"><line x1="270" y1="140" x2="270" y2="180"/><line x1="470" y1="140" x2="470" y2="180"/></g>
+<g font-family="Arial,sans-serif" font-size="21" fill="#133f72"><text x="263" y="201">1</text><text x="463" y="201">3</text><text x="130" y="201">x&lt;1</text><text x="340" y="201">1&lt;x&lt;3</text><text x="533" y="201">x&gt;3</text></g>
+<text x="30" y="255" font-family="Arial,sans-serif" font-size="19" fill="#385676">Dấu “+” ở hai phía ngoài, dấu “−” ở giữa; tại x=1 hoặc x=3, f(x)=0.</text>
+</svg>
