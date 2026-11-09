@@ -151,7 +151,7 @@
         \((7/3,7/3)\) thỏa hai bất phương trình nhưng **không phải phương án nguyên**. \((2,2)\) có \(2+4=6\le7,\ 4+2=6\le7\), cho \(F=10\). \((3,1)\) có \(3+2=5\le7,\ 6+1=7\le7\), cho \(F=11\). Trong **hai điểm được so**, \((3,1)\) tốt hơn; bài chưa yêu cầu chứng minh đó là tối ưu toàn cục.
 
 
-=== "Ví dụ giải toán"
+=== "Ví dụ"
 
     Các bước trên cho em hiểu từng điều kiện. Bây giờ ta giải ba bài **trọn vẹn**, với lý do chọn phương pháp nằm ngay tại ví dụ.
 
@@ -206,7 +206,7 @@
 
     **Kiểm lại.** Tiền vốn \(20\cdot20+10\cdot80=1200\) triệu và tổng số sản phẩm \(20+80=100\), đều đúng giới hạn. Đừng lấy các đỉnh của **hình §2.2** vì hình ấy mô tả một hệ có số liệu khác.
 
-=== "Lỗi thường gặp và cách tự khắc phục"
+=== "Lỗi thường gặp"
 
     <span data-thpt-help-id="HELP-G10-B04-01" hidden></span>
 
