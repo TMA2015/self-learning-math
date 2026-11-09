@@ -179,7 +179,7 @@
 
     Khi các vectơ biểu diễn dịch chuyển hay lực, $k$ thay đổi độ lớn và có thể đổi chiều. Không ghi độ dài âm hoặc cộng độ dài thay cho tổng vectơ khi các hướng khác nhau.
 
-=== "Ví dụ giải toán"
+=== "Ví dụ"
 
     Trước khi xem lời giải, hãy tự hỏi **bài cho dữ kiện gì, cần tìm điều gì và vì sao quy tắc vừa học phù hợp**. Sau đó hãy giải từng bước, kiểm lại hướng, độ lớn và điều kiện của kết quả.
 
@@ -201,7 +201,7 @@
     **Giải:** $\overrightarrow{AG}=\tfrac23\overrightarrow{AM}$ và $2\overrightarrow{AM}=\overrightarrow{AB}+\overrightarrow{AC}$, suy ra $\overrightarrow{AG}=\tfrac13(\overrightarrow{AB}+\overrightarrow{AC})$.  
     **Tự kiểm:** AG:GM=2:1, nhưng AG:AM=2:3.
 
-=== "Lỗi thường gặp và cách tự khắc phục"
+=== "Lỗi thường gặp"
 
     <span data-thpt-help-id="HELP-G10-B09-01" hidden></span>
 
