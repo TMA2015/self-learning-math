@@ -42,7 +42,7 @@ Một quy tắc là hàm số trên tập \(D\) nếu mỗi đầu vào \(x\in D
 
 **Cách đọc hình.** Đọc các mũi tên từ tập giá trị đầu vào sang tập đầu ra: mỗi đầu vào có đúng một đầu ra, dù nhiều đầu vào có thể cùng chung giá trị.
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_CHVI_B15_FUNCTION_MAPPING_D5_R03.svg" loading="lazy" alt="So sánh hai bảng: cùng đầu vào x có một hay hai giá trị đầu ra khác nhau"><figcaption>Đọc từng đầu vào: lặp đúng cùng một giá trị khác với hai đầu ra mâu thuẫn.</figcaption></figure>
+<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../docs/assets/images/thpt/THPT_G10_CHVI_B15_FUNCTION_MAPPING_D5_R03.svg" loading="lazy" alt="So sánh hai bảng: cùng đầu vào x có một hay hai giá trị đầu ra khác nhau"><figcaption>Đọc từng đầu vào: lặp đúng cùng một giá trị khác với hai đầu ra mâu thuẫn.</figcaption></figure>
 
 
 Cho tập hợp \(D\) gồm các giá trị của \(x\). Nếu **mỗi** \(x\in D\) xác định **duy nhất một** số thực \(y\), ta nói \(y\) là một *hàm số* của \(x\) trên \(D\). Kí hiệu \(y=f(x)\).
