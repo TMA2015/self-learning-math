@@ -2,7 +2,7 @@
 
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG IX · KIẾN THỨC SGK KNTT</p>
-<p class="thpt-r4-lead">Kiến thức, điều kiện đồng khả năng và ví dụ được trình bày theo SGK KNTT. Core/Luyện tập là hình thức tự đối chiếu, chưa chấm điểm hoặc ghi Mastery.</p>
+<p class="thpt-r4-lead">Học khái niệm, kiểm các điều kiện của xác suất cổ điển và tự đối chiếu trước khi luyện tập.</p>
 
 </div>
 
