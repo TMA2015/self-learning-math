@@ -140,7 +140,9 @@ Do \(M\) nằm trên đường tròn đơn vị, ta có \(x^2+y^2=1\), nên
 \boxed{\sin^2\alpha+\cos^2\alpha=1.}
 \]
 
-Nếu \(\cos\alpha\ne0\), chia hai vế cho \(\cos^2\alpha\) cho \(1+\tan^2\alpha=\frac1{\cos^2\alpha}\). Nếu \(\sin\alpha\ne0\), chia cho \(\sin^2\alpha\) cho \(1+\cot^2\alpha=\frac1{\sin^2\alpha}\). Khi cả sin và cos đều khác 0, \(\tan\alpha\cdot\cot\alpha=1\).
+Nếu \(\cos\alpha\ne0\), ta chia cả hai vế của **hệ thức \(\sin^2\alpha+\cos^2\alpha=1\) ở trên** cho \(\cos^2\alpha\). Khi đó, ta nhận được \(1+\tan^2\alpha=\frac1{\cos^2\alpha}\), vì \(\frac{\sin^2\alpha}{\cos^2\alpha}=\tan^2\alpha\) và \(\frac{\cos^2\alpha}{\cos^2\alpha}=1\).
+
+Tương tự, nếu \(\sin\alpha\ne0\), ta chia **cả hai vế của hệ thức ban đầu** cho \(\sin^2\alpha\) và thu được \(1+\cot^2\alpha=\frac1{\sin^2\alpha}\). Khi cả sin và cos đều khác 0, từ định nghĩa của tan và cot, ta còn có \(\tan\alpha\cdot\cot\alpha=1\).
 
 Hệ thức đầu tiên cho ta **bình phương** của giá trị chưa biết, nhưng dấu của căn phải dựa vào **góc nhọn hay góc tù**. Ví dụ \(\sin\alpha=\frac35\), \(\alpha\) là góc tù, thì \(\cos^2\alpha=1-\frac9{25}=\frac{16}{25}\), do đó \(\cos\alpha=-\frac45\), chứ không phải \(+\frac45\).
 
