@@ -204,7 +204,7 @@
 
         **Vì sao sai?** Phát biểu còn phụ thuộc biến chưa được gán. Hai giá trị \(x\) khác nhau có thể cho hai kết quả khác nhau.
 
-        **Tự sửa:** Trở lại mục 2.1. Thay \(x=3\) và \(x=4\) để so sánh, rồi xác định miền và lượng từ nếu cần. [Luyện lại câu Core](../luyen-tap/?item=THPT-G10-B01-C01).
+        **Tự sửa:** Trở lại mục 2.1. Thay \(x=3\) và \(x=4\) để so sánh, rồi xác định miền và lượng từ nếu cần. [Luyện lại câu Core](luyen-tap.md?item=THPT-G10-B01-C01).
 
 
     <span data-thpt-help-id="HELP-G10-B01-02" hidden></span>
@@ -215,10 +215,10 @@
 
         **Vì sao sai?** Đảo chiều là một phát biểu khác cần chứng minh; phủ định “mọi” chỉ cần một trường hợp không thỏa.
 
-        **Tự sửa:** Viết \(P\), \(Q\) bằng lời; thử tìm phản ví dụ của chiều đảo. Với lượng từ, giữ nguyên miền xét và đổi “mọi” thành “tồn tại … không”. [Luyện chiều đảo](../luyen-tap/?item=THPT-G10-B01-P03) · [Luyện lượng từ](../luyen-tap/?item=THPT-G10-B01-P05).
+        **Tự sửa:** Viết \(P\), \(Q\) bằng lời; thử tìm phản ví dụ của chiều đảo. Với lượng từ, giữ nguyên miền xét và đổi “mọi” thành “tồn tại … không”. [Luyện chiều đảo](luyen-tap.md?item=THPT-G10-B01-P03) · [Luyện lượng từ](luyen-tap.md?item=THPT-G10-B01-P05).
 
 
-    **Tiếp tục học:** [Core và Luyện tập Chương I](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/).
+    **Tiếp tục học:** [Core và Luyện tập Chương I](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
     <p class="thpt-r4-footnote">Nguồn kiến thức: SGK Toán 10 · Kết nối tri thức với cuộc sống · tập một · Bài 1. Lời giảng và ví dụ hỗ trợ tự học được SLM biên tập từ nguồn học liệu đã có.</p>
 
