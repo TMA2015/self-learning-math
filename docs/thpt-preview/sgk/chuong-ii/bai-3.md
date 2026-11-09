@@ -234,3 +234,4 @@
 
     <p class="thpt-r4-footnote">Nguồn kiến thức: SGK Toán 10, Kết nối tri thức với cuộc sống, tập một, Bài 3. Phần lời giảng và ví dụ hỗ trợ tự học do SLM biên tập; hình hai nửa mặt phẳng của SLM được đối chiếu với từng bất phương trình tương ứng.</p>
 
+<p class="thpt-r4-footnote">Nguồn: SGK Toán 10 KNTT tập 1 Bài 3 trang 22–25; SBT Bài 3 trang 16–18. Luyện tập tự đối chiếu không phải Tự kiểm tra độc lập.</p>
