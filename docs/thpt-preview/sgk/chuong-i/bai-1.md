@@ -150,7 +150,7 @@
         **Sai** vì \(n=0\) cho \(n^2=0\) không lớn hơn 0. Phủ định: “Tồn tại số nguyên \(n\) sao cho \(n^2\le0\)”, với \(n=0\) là chứng cứ.
 
 
-=== "Ví dụ giải toán"
+=== "Ví dụ"
 
     Phần trên giúp em nắm các khái niệm. Sau đây là những bài toán cần dùng **định nghĩa, phản ví dụ hoặc chứng minh hai chiều**. Trong mỗi ví dụ, lời giải thích vì sao chọn phương pháp được đặt ngay cùng bài toán.
 
@@ -194,7 +194,7 @@
 
     **Kết luận.** Cả hai chiều đều đúng; do đó \(n\) chẵn \(\Leftrightarrow n^2\) chẵn.
 
-=== "Lỗi thường gặp và cách tự khắc phục"
+=== "Lỗi thường gặp"
 
     <span data-thpt-help-id="HELP-G10-B01-01" hidden></span>
 
