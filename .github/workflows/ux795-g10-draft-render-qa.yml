@@ -6,6 +6,7 @@ on:
       - "docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"
       - "docs/assets/images/thpt/**"
       - "scripts/test-ux795-g10-render-draft.cjs"
+      - "scripts/test-thpt-chvi-math-block-render.cjs"
       - ".github/workflows/ux795-g10-draft-render-qa.yml"
 
 permissions:
