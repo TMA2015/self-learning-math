@@ -268,7 +268,7 @@ Hai đường **vuông góc** nếu \(a_1a_2+b_1b_2=0\).
 
 **Cách đọc hình.** Từ M(0,0), đoạn MH đi vuông góc đến H trên đường 2x+y=6; (H=(12/5,6/5)) và (MH=6/sqrt5). Không đo khoảng cách theo một đường xiên bất kỳ.
 
-<figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="images/G10_B20_POINT_LINE_DISTANCE_R02.svg" loading="lazy" alt="Khoảng cách từ M(0,0) đến 2x+y=6 theo đường vuông góc là 6 chia căn 5"><figcaption>Đường (2x+y-6=0), điểm (M(0,0)); khoảng cách (d(M,Delta)=rac{|{-6}|}{sqrt{2^2+1^2}}=rac6{sqrt5}).</figcaption></figure>
+<figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="images/G10_B20_POINT_LINE_DISTANCE_R02.svg" loading="lazy" alt="Khoảng cách từ M(0,0) đến 2x+y=6 theo đường vuông góc là 6 chia căn 5"><figcaption>Với đường \(2x+y-6=0\) và \(M(0,0)\), khoảng cách \(d(M,\Delta)=\dfrac{|{-6}|}{\sqrt{2^2+1^2}}=\dfrac6{\sqrt5}\). Đo theo đoạn vuông góc, không theo đường xiên bất kỳ.</figcaption></figure>
 
 
 Góc nhỏ \(\varphi\) giữa hai đường thẳng thỏa \(0^\circ\le\varphi\le90^\circ\):
