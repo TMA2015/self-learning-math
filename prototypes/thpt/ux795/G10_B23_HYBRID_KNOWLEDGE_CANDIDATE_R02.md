@@ -198,7 +198,7 @@ Nếu đếm số chẵn tạo từ các chữ số cho trước, chữ số hà
 
 **Cách đọc hình.** Bên trái chọn **một** môn từ hai nhóm không trùng: 4+3. Bên phải chọn **một môn mỗi nhóm**: một kết quả là một cặp, nên 4×3.
 
-<figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="images/G10_B23_ADD_MULTIPLY_CHOICES_R02.svg" loading="lazy" alt="Chọn một môn giữa nhóm 4 và nhóm 3 có 7 cách; chọn một môn ở mỗi nhóm có 12 cặp"><figcaption>Quy tắc cộng (4+3=7) dùng khi hai nhóm lựa chọn rời nhau; quy tắc nhân (4cdot3=12) dùng khi cần hoàn tất cả hai bước.</figcaption></figure>
+<figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="images/G10_B23_ADD_MULTIPLY_CHOICES_R02.svg" loading="lazy" alt="Chọn một môn giữa nhóm 4 và nhóm 3 có 7 cách; chọn một môn ở mỗi nhóm có 12 cặp"><figcaption>Quy tắc cộng \(4+3=7\) áp dụng cho hai nhóm lựa chọn rời nhau. Quy tắc nhân \(4\cdot3=12\) áp dụng khi một kết quả phải hoàn tất cả hai bước.</figcaption></figure>
 
 
 **Quy tắc cộng.** Nếu một lựa chọn được thực hiện theo đúng một trong các trường hợp A1,...,Ak **đôi một không giao nhau**, số cách là \(m_1+\cdots+m_k\). Khi các trường hợp chồng lấn, cần loại trùng hoặc chia lại thành các trường hợp rời nhau; không cộng máy móc.
