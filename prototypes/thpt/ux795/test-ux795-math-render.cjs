@@ -11,9 +11,9 @@ const locked=html.match(/<script type="application\/json" id="locked">([\s\S]*?)
 assert(locked,'locked source data exists');
 const data=JSON.parse(locked[1]);
 assert.match(data.receipts.md,/^[0-9a-f]{40}$/);
-const scripts=[...html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)];
-for(const script of scripts){if(script[1].trim())new vm.Script(script[1]);}
-const app=scripts.at(-1)[1];
+const scripts=[...html.matchAll(/<script([^>]*)>([\s\S]*?)<\/script>/g)];
+for(const script of scripts){if(!script[1].includes('application/json') && script[2].trim())new vm.Script(script[2]);}
+const app=scripts.at(-1)[2];
 const view={innerHTML:'',querySelectorAll:()=>[]};
 const status={textContent:''},mathStatus={textContent:''};
 const button=()=>({setAttribute:()=>{},addEventListener:()=>{}});
