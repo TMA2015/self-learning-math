@@ -24,7 +24,7 @@ Trong bài này, em sẽ bắt đầu từ những mũi tên quen thuộc, rồi
 
 Đi từ A đến B rồi đi ngược từ B về A có cùng đoạn đường, nhưng hai lần di chuyển đưa ta về hai hướng trái nhau. Chỉ độ dài AB không đủ mô tả sự di chuyển.
 
-Để theo kịp lập luận, em nhớ rằng Đã biết đoạn thẳng AB, hai đầu mút và hướng chuyển động trên đường thẳng; ký hiệu A là nơi xuất phát, B là nơi đến. 
+Trước khi tiếp tục, em hãy nhớ lại đoạn thẳng AB, hai đầu mút và hướng chuyển động trên đường thẳng; ký hiệu A là nơi xuất phát, B là nơi đến. 
 
 Đặt mũi tên đi từ A tới B: đó là độ dời có cả độ lớn lẫn chiều; đổi điểm đầu–cuối làm đổi vectơ, dù độ dài vẫn là AB. Bây giờ mới đặt tên đoạn thẳng có hướng là vectơ \(\overrightarrow{AB}\).
 
@@ -33,12 +33,14 @@ Muốn xác định vectơ, hỏi 'đi từ đâu đến đâu?' trước khi so
 
 **Em vận dụng.** An đi từ A đến B; Bình đi từ B về A, với A khác B. Hai vectơ độ dời có bằng nhau không, và độ dài của chúng thế nào?
 
-??? question "Em tự mở đối chiếu sau khi đã thử làm"
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Em tự mở đối chiếu sau khi đã thử làm</summary>
 
-    **Kết quả:** Không bằng nhau: \(\overrightarrow{AB}=-\overrightarrow{BA}\); cả hai có độ dài AB.
+**Kết quả:** Không bằng nhau: \(\overrightarrow{AB}=-\overrightarrow{BA}\); cả hai có độ dài AB.
 
-    **Vì sao:** Khi đảo điểm đầu/cuối mũi tên quay ngược, trong khi khoảng cách giữa hai đầu không đổi. Độ dài bằng nhau chưa đủ để vectơ bằng nhau.
+**Vì sao:** Khi đảo điểm đầu/cuối mũi tên quay ngược, trong khi khoảng cách giữa hai đầu không đổi. Độ dài bằng nhau chưa đủ để vectơ bằng nhau.
 
+</details>
 
 <span id="thpt-g10-chiv-try02" data-thpt-first-try-id="THPT-G10-CHIV-TRY02" data-outcome-id="G10-B07-LENGTH" data-thpt-help-ref="HELP-G10-B07-02"></span>
 
@@ -46,7 +48,7 @@ Muốn xác định vectơ, hỏi 'đi từ đâu đến đâu?' trước khi so
 
 Trên bản đồ, hai người đi 4 km theo các hướng khác nhau đều có quãng di chuyển 4 km, nhưng không có cùng vectơ độ dời.
 
-Để theo kịp lập luận, em nhớ rằng Đã biết độ dài đoạn thẳng là số không âm; vectơ \(\overrightarrow{AB}\) thể hiện cả chiều A→B. 
+Trước khi tiếp tục, em hãy nhớ lại độ dài đoạn thẳng là số không âm; vectơ \(\overrightarrow{AB}\) thể hiện cả chiều A→B. 
 
 Chỉ bỏ chiều của mũi tên và đo độ dài đoạn nối A-B thì được **độ dài vectơ** \(|\overrightarrow{AB}|=AB\). Phép đo này không 'nhớ' chiều và luôn không âm.
 
@@ -55,12 +57,14 @@ Khi hỏi độ lớn dùng ký hiệu độ dài; khi hỏi vectơ bằng nhau 
 
 **Em vận dụng.** Một vectơ đi 3 m sang Đông, vectơ khác đi 3 m sang Tây. Hai độ dài bằng bao nhiêu và các vectơ có bằng nhau không?
 
-??? question "Em tự mở đối chiếu sau khi đã thử làm"
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Em tự mở đối chiếu sau khi đã thử làm</summary>
 
-    **Kết quả:** Đều có độ dài 3 m, nhưng hai vectơ không bằng nhau.
+**Kết quả:** Đều có độ dài 3 m, nhưng hai vectơ không bằng nhau.
 
-    **Vì sao:** Độ lớn chỉ bằng 3 m cho cả hai; chiều Đông và Tây khác nhau. Nếu cùng đường thẳng thì chúng ngược hướng.
+**Vì sao:** Độ lớn chỉ bằng 3 m cho cả hai; chiều Đông và Tây khác nhau. Nếu cùng đường thẳng thì chúng ngược hướng.
 
+</details>
 
 <span id="thpt-g10-chiv-try03" data-thpt-first-try-id="THPT-G10-CHIV-TRY03" data-outcome-id="G10-B07-DIRECTION" data-thpt-help-ref="HELP-G10-B07-02"></span>
 
@@ -68,7 +72,7 @@ Khi hỏi độ lớn dùng ký hiệu độ dài; khi hỏi vectơ bằng nhau 
 
 Trên đường hai chiều, hai xe có thể đi trên hai làn song song mà một xe về Đông, xe còn lại về Tây.
 
-Để theo kịp lập luận, em nhớ rằng Nhớ định nghĩa giá vectơ khác không và hai đường thẳng song song; phải phân biệt đường chạy với chiều chạy. 
+Trước khi tiếp tục, em hãy nhớ lại định nghĩa giá vectơ khác không và hai đường thẳng song song; phải phân biệt đường chạy với chiều chạy. 
 
 **Phương** cho biết mũi tên nằm dọc đường nào; **hướng** cho biết chạy về phía nào trên đường ấy. Hai vectơ khác không cùng phương khi giá song song hoặc trùng; sau đó mới phân biệt cùng hay ngược hướng.
 
@@ -77,12 +81,14 @@ Kiểm tra hai giá trước, tiếp đến dấu chiều; với vectơ-không d
 
 **Em vận dụng.** Hai vectơ khác không nằm trên hai đường thẳng song song; một mũi tên hướng Đông, một hướng Tây. Chúng cùng phương không? Có cùng hướng không?
 
-??? question "Em tự mở đối chiếu sau khi đã thử làm"
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Em tự mở đối chiếu sau khi đã thử làm</summary>
 
-    **Kết quả:** Cùng phương, nhưng ngược hướng; không cùng hướng.
+**Kết quả:** Cùng phương, nhưng ngược hướng; không cùng hướng.
 
-    **Vì sao:** Đường thẳng song song chứng minh cùng phương; chiều Đông/Tây trái nhau làm hai vectơ ngược hướng.
+**Vì sao:** Đường thẳng song song chứng minh cùng phương; chiều Đông/Tây trái nhau làm hai vectơ ngược hướng.
 
+</details>
 
 <span id="thpt-g10-chiv-try04" data-thpt-first-try-id="THPT-G10-CHIV-TRY04" data-outcome-id="G10-B07-EQUALITY" data-thpt-help-ref="HELP-G10-B07-02"></span>
 
@@ -99,12 +105,14 @@ Chỉ kết luận bằng nhau khi cả hai điều kiện độ dài và cùng 
 
 **Em vận dụng.** Hình bình hành ABCD theo thứ tự các đỉnh. \(\overrightarrow{AB}\) và \(\overrightarrow{DC}\) có bằng nhau không? \(\overrightarrow{CD}\) thì sao?
 
-??? question "Em tự mở đối chiếu sau khi đã thử làm"
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Em tự mở đối chiếu sau khi đã thử làm</summary>
 
-    **Kết quả:** \(\overrightarrow{AB}=\overrightarrow{DC}\), còn \(\overrightarrow{AB}\ne\overrightarrow{CD}\).
+**Kết quả:** \(\overrightarrow{AB}=\overrightarrow{DC}\), còn \(\overrightarrow{AB}\ne\overrightarrow{CD}\).
 
-    **Vì sao:** AB và DC song song, cùng hướng, cùng dài; CD ngược hướng với AB. Cùng độ dài vẫn không đủ.
+**Vì sao:** AB và DC song song, cùng hướng, cùng dài; CD ngược hướng với AB. Cùng độ dài vẫn không đủ.
 
+</details>
 
 <span id="thpt-g10-chiv-try05" data-thpt-first-try-id="THPT-G10-CHIV-TRY05" data-outcome-id="G10-B07-ZERO" data-thpt-help-ref="HELP-G10-B07-02"></span>
 
@@ -121,11 +129,14 @@ Dùng \(\vec0\) để cộng, trừ và biểu diễn độ dời ròng bằng 0
 
 **Em vận dụng.** Bạn đi từ A đến B rồi trở về A. Vectơ độ dời từ điểm đầu đến điểm cuối là gì? Có bằng tổng độ dài hai chặng không?
 
-??? question "Em tự mở đối chiếu sau khi đã thử làm"
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Em tự mở đối chiếu sau khi đã thử làm</summary>
 
-    **Kết quả:** Vectơ độ dời \(\overrightarrow{AA}=\vec0\), độ dài 0; không bằng tổng quãng đường hai chặng (trừ trường hợp không hề đi).
+**Kết quả:** Vectơ độ dời \(\overrightarrow{AA}=\vec0\), độ dài 0; không bằng tổng quãng đường hai chặng (trừ trường hợp không hề đi).
 
-    **Vì sao:** Độ dời chỉ quan tâm vị trí đầu/cuối; đi rồi quay lại cho vectơ-không. Quãng đường vẫn là số dương nếu có di chuyển.
+**Vì sao:** Độ dời chỉ quan tâm vị trí đầu/cuối; đi rồi quay lại cho vectơ-không. Quãng đường vẫn là số dương nếu có di chuyển.
+
+</details>
 
 ### Kiến thức SGK
 
