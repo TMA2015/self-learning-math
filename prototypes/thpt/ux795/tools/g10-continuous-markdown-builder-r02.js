@@ -56,7 +56,7 @@ function buildG10KnowledgeR02(source,cfg){
  let errorSection=errors.join("\n\n").trim();
  if(!errorSection){
   const extracted=[];
-  knowledge=knowledge.replace(/<details\\b(?=[^>]*data-thpt-help-id)[\\s\\S]*?<\\/details>/g,m=>{extracted.push(m);return "";});
+  knowledge=knowledge.replace(/<details\b(?=[^>]*data-thpt-help-id)[\s\S]*?<\/details>/g,m=>{extracted.push(m);return "";});
   errorSection=extracted.join("\n\n").trim();
  }
  if(!errorSection){if(!cfg.errors)throw Error("Missing original errors "+cfg.b);errorSection=cfg.errors;}
