@@ -164,7 +164,7 @@
         Điều kiện là \(4x+6y\le120\), \(x,y\in\mathbb Z_{\ge0}\) nếu đếm sản phẩm rời rạc. Thay \(x=y=10\) được \(4\cdot10+6\cdot10=100\le120\), nên phương án hợp lệ.
 
 
-=== "Ví dụ giải toán"
+=== "Ví dụ"
 
     Các câu “Em vận dụng” vừa giúp kiểm tra từng khái niệm. Bây giờ em xem những bài toán **trọn vẹn**, chú ý cách chọn phương pháp trước khi làm phép tính.
 
@@ -206,7 +206,7 @@
 
     **Kiểm lại.** Phương án \(x=y=0\) thỏa \(y\le3x\) nhưng **không hợp lệ trong bài toán giá trung bình**, vì mẫu \(x+y=0\). Điều kiện miền biến là một phần của lời giải, không được xóa đi sau phép biến đổi.
 
-=== "Lỗi thường gặp và cách tự khắc phục"
+=== "Lỗi thường gặp"
 
     <span data-thpt-help-id="HELP-G10-B03-01" hidden></span>
 
