@@ -165,7 +165,7 @@
         Chỉ Âm nhạc: \(18-6=12\); chỉ Thể thao: \(15-6=9\). Tham gia ít nhất một CLB: \(12+6+9=27\). Không tham gia CLB nào: \(32-27=5\). Kiểm tra \(12+6+9+5=32\).
 
 
-=== "Ví dụ giải toán"
+=== "Ví dụ"
 
     Các câu “Em vận dụng” phía trên chỉ giúp em kiểm tra một bước hiểu bài. Trong phần này, em xem cách giải **một bài toán hoàn chỉnh**, đặc biệt chú ý **vì sao chọn cách làm** và cách tự kiểm kết quả.
 
@@ -199,7 +199,7 @@
 
     **Kiểm lại.** Bốn miền \(11+12+13+4=40\), khớp sĩ số ban đầu. Đây chính là các giá trị trong **hình ở phần 2.4**, không phải lời giải của bài 32 học sinh ở trên.
 
-=== "Lỗi thường gặp và cách tự khắc phục"
+=== "Lỗi thường gặp"
 
     <span data-thpt-help-id="HELP-G10-B02-01" hidden></span>
 
