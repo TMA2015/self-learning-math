@@ -431,7 +431,7 @@ Dạng chính tắc \(\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1\), \(a,b>0\). Khi đó
 
 **Cách đọc hình.** Trên parabol y²=4x, đỉnh là O, F(1,0), đường chuẩn x=-1; điểm trên đường cách đều tiêu điểm và đường chuẩn.
 
-<figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="images/G10_B22_PARABOLA_FOCUS_R02.svg" loading="lazy" alt="Parabol y bình phương bằng 4x, tiêu điểm F(1,0), đường chuẩn x=-1, đỉnh O(0,0)"><figcaption>Với **(y^2=4x)** và quy ước **(y^2=2px)**, ta có (p=2), (F(1,0)), đường chuẩn (x=-1). Đây là hình tự dựng cho đúng phương trình này.</figcaption></figure>
+<figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="images/G10_B22_PARABOLA_FOCUS_R02.svg" loading="lazy" alt="Parabol y bình phương bằng 4x, tiêu điểm F(1,0), đường chuẩn x=-1, đỉnh O(0,0)"><figcaption>Với \(y^2=4x\) và quy ước \(y^2=2px\), ta có \(p=2\), tiêu điểm \(F(1,0)\) và đường chuẩn \(x=-1\). Hình chỉ minh họa phương trình này.</figcaption></figure>
 
 
 Parabol có đỉnh \(O(0;0)\), tiêu điểm \(F(p/2;0)\), đường chuẩn \(x=-p/2\). Mọi điểm \(M\) trên parabol có khoảng cách đến tiêu điểm bằng khoảng cách đến đường chuẩn.
