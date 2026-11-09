@@ -1,7 +1,5 @@
 # Toán 10 · Bài 2. Tập hợp và các phép toán trên tập hợp
 
-> **Bản giảng ứng viên UX795 R01 — chưa phát hành.** Biên tập từ SGK S1 theo canonical SLM hiện hành, chọn lọc nội dung diễn giải của Gemini/NotebookLM v1. Đây là DELTA_C ở phần diễn giải và ví dụ minh họa; chưa phải verdict Academic/PED PASS cho snapshot mới. Phần Core/Luyện tập và Tự kiểm tra cuối chương vẫn ở trang chung của chương, không đưa vào trang này.
-
 ## 1. Khám phá kiến thức
 
 ### Cùng tìm hiểu
@@ -217,4 +215,4 @@ Các câu “Em vận dụng” phía trên chỉ giúp em kiểm tra một bư�
 
 **Tiếp tục tự học:** [Core và Luyện tập Chương I](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương I](../../thu-vien/tu-luan-chuong-i.md).
 
-<p class="thpt-r4-footnote">Nguồn học liệu chuẩn: SGK Toán 10 KNTT tập một, Bài 2; đối chiếu canonical SLM G10 B02 main (blob 70c77844b0bee75565f8a059ddc4befd3ad9dd2d). Văn xuôi diễn giải được biên tập chọn lọc từ Gemini G10 B02 và Notebook Gemini v1 (xem source registry tại UX795). Đây là bản thí điểm học liệu mới, không phải bản production đã nghiệm thu.</p>
+<p class="thpt-r4-footnote">Nguồn kiến thức: SGK Toán 10 · Kết nối tri thức với cuộc sống · tập một · Bài 2. Phần giải thích và ví dụ hỗ trợ tự học do SLM biên tập.</p>
