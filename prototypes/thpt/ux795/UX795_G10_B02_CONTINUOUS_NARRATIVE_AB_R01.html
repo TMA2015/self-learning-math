@@ -59,10 +59,24 @@ function fallback(md){
  }
  endP();endList();return out.join('\n').replace(/<section data-preserve>([\s\S]*?)<\/section>/g,'$1');
 }
+function renderLearnerMarkdown(md){
+ if(!window.marked?.parse)return fallback(md);
+ const preserved=[];
+ const protectedMd=md.replace(/<details\b[^>]*>[\s\S]*?<\/details>/g,block=>{
+   const opening=block.match(/^<details\b[^>]*>/)?.[0]||'<details>';
+   const summary=block.match(/<summary\b[^>]*>[\s\S]*?<\/summary>/)?.[0]||'<summary>Đối chiếu</summary>';
+   const inner=block.slice(opening.length).replace(summary,'').replace(/<\/details>\s*$/,'').trim();
+   preserved.push(opening+summary+window.marked.parse(inner,{gfm:true})+'</details>');
+   return '\n\nUX795DETAILBLOCK'+(preserved.length-1)+'END\n\n';
+ });
+ let output=window.marked.parse(protectedMd,{gfm:true});
+ preserved.forEach((block,i)=>{output=output.replace(new RegExp('<p>\\s*UX795DETAILBLOCK'+i+'END\\s*<\\/p>|UX795DETAILBLOCK'+i+'END','g'),block)});
+ return output;
+}
 function draw(mode){
  btnA.setAttribute('aria-pressed',String(mode==='A'));btnB.setAttribute('aria-pressed',String(mode==='B'));
  if(mode==='A'){view.innerHTML=data.a;status.textContent='A — Trang HTML đã phát hành (chỉ phần nội dung, không sao chép CSS hệ thống)'}
- else{view.innerHTML=window.marked?.parse?window.marked.parse(data.md,{gfm:true}):fallback(data.md);status.textContent='B — Bài giảng mới từ nguồn Gemini / NotebookLM v1 + SGK, ứng viên DELTA_C chưa nghiệm thu'}
+ else{view.innerHTML=renderLearnerMarkdown(data.md);status.textContent='B — Bài giảng mới từ nguồn Gemini / NotebookLM v1 + SGK, ứng viên DELTA_C chưa nghiệm thu'}
  view.querySelectorAll('a').forEach(x=>{if(x.getAttribute('href')?.startsWith('../')){x.addEventListener('click',e=>e.preventDefault());x.title='Liên kết Core chỉ hoạt động trên website thật'}});
  if(window.MathJax?.typesetPromise)window.MathJax.typesetPromise([view]).catch(()=>{});
 }
