@@ -427,7 +427,7 @@
         <p>Tâm sai là kiến thức nâng cao tự chọn, không thuộc phần Core bắt buộc. Hãy học vững phương trình chính tắc trước khi luyện thêm.</p>
 
 
-=== "Ví dụ giải toán"
+=== "Ví dụ"
 
     Trước khi xem lời giải, hãy xác định dữ kiện, điều phải tìm và lý do chọn cách giải. Sau đó kiểm tra lại điều kiện áp dụng và kết quả, thay vì chỉ nhìn phép tính cuối cùng.
 
@@ -455,7 +455,7 @@
 
     **Giải.** \(2p=4\Rightarrow p=2\). Tiêu điểm \(F(\frac p2,0)=(1,0)\), đường chuẩn \(x=-\frac p2=-1\). **Kiểm lại:** đỉnh \(O(0,0)\) cách F và đường chuẩn cùng một đơn vị.
 
-=== "Lỗi thường gặp và cách tự khắc phục"
+=== "Lỗi thường gặp"
 
     <span data-thpt-help-id="D6-G10-B22-01" hidden></span>
 
