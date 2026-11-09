@@ -29,6 +29,14 @@ button[aria-pressed=true]{background:#3456bc;color:white;border-color:#3456bc}
 #view .thpt-r4-eyebrow{font-weight:800;font-size:.85rem;letter-spacing:.04em;color:#3e5ca4}
 #view .thpt-r4-lesson-tabs{display:flex;gap:8px;flex-wrap:wrap}
 #view .thpt-r4-lesson-tabs a{padding:6px 12px;background:white;border:1px solid #e0e8f4;border-radius:7px;text-decoration:none}
+#view .slm-level1-tabs{position:sticky;top:0;z-index:5;display:flex;gap:8px;overflow-x:auto;overscroll-behavior-x:contain;padding:12px 2px;background:#fff;border-bottom:1px solid #cfdaee;scrollbar-width:thin}
+#view .slm-level1-tabs button{flex:0 0 auto;white-space:nowrap;font-weight:700;font-size:.95rem;color:#2d426f;background:#edf2fb;border-color:#cdd8ec;border-radius:9px;padding:9px 13px;min-height:44px}
+#view .slm-level1-tabs button[aria-selected="true"]{background:#284db5;color:white;border-color:#284db5}
+#view .slm-level1-tabs button:focus-visible{outline:3px solid #dfaa3a;outline-offset:2px}
+#view [role="tabpanel"]{min-height:120px}
+#view [role="tabpanel"][hidden]{display:none!important}
+#view [role="tabpanel"]>h2{margin-top:22px}
+@media(max-width:640px){#view .slm-level1-tabs{margin:0 -12px;padding:10px 12px}#view .slm-level1-tabs button{font-size:.87rem;padding:8px 10px}}
 #status,#receipts{color:#68748a;font-size:.86rem}
 @media(max-width:640px){main{padding:10px 7px 45px}#view{padding:16px 12px}#view h3{font-size:1.05rem}}
 </style>
@@ -43,6 +51,8 @@ button[aria-pressed=true]{background:#3456bc;color:white;border-color:#3456bc}
 const data=JSON.parse(document.getElementById('locked').textContent);
 const view=document.getElementById('view'),status=document.getElementById('status');
 const btnA=document.getElementById('a'),btnB=document.getElementById('b');
+let selectedLearningTab=0;
+const LEVEL1_LABELS=['Khám phá kiến thức','Kiến thức SGK','Ví dụ','Lỗi thường gặp'];
 function inline(t){return t.replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>').replace(/\*([^*]+)\*/g,'<em>$1</em>').replace(/\[([^\]]+)\]\(([^)]+)\)/g,'<a href="$2">$1</a>')}
 function fallback(md){
  md=md.replace(/<details\b[\s\S]*?<\/details>/g,m=>'<section data-preserve>'+m+'</section>');
@@ -95,8 +105,67 @@ function renderLearnerMarkdown(md){
  preserved.forEach((block,i)=>{output=output.replace(new RegExp('<p>\\s*UX795DETAILBLOCK'+i+'END\\s*<\\/p>|UX795DETAILBLOCK'+i+'END','g'),block)});
  return math.restore(output);
 }
+// Phase 1: exactly one horizontal tab tier (4 areas). No tabs for individual concepts.
+function buildLevel1Tabs(){
+ const nodes=Array.from(view.childNodes);
+ const positions=[];
+ nodes.forEach((node,i)=>{if(node.nodeType===1&&node.tagName==='H2')positions.push(i);});
+ if(positions.length!==4){status.textContent+=' · Lỗi cấu trúc: cần đúng bốn mục cấp 1';return null;}
+ const strip=html=>html.replace(/<[^>]*>/g,'').replace(/^\s*\d+\.\s*/,'').trim();
+ const headings=positions.map(i=>strip(nodes[i].textContent));
+ if(headings[0]!=='Khám phá kiến thức'||headings[1]!=='Kiến thức SGK'||!headings[2].startsWith('Ví dụ')||!headings[3].startsWith('Lỗi thường gặp')){
+  status.textContent+=' · Lỗi thứ tự bốn mục';return null;
+ }
+ const tablist=document.createElement('div');
+ tablist.className='slm-level1-tabs';
+ tablist.setAttribute('role','tablist');
+ tablist.setAttribute('aria-label','Bốn phần của bài học');
+ const panels=positions.map((start,i)=>{
+  const panel=document.createElement('section');
+  panel.id='slm-b02-panel-'+i;
+  panel.setAttribute('role','tabpanel');
+  panel.setAttribute('aria-labelledby','slm-b02-tab-'+i);
+  panel.setAttribute('tabindex','0');
+  const end=positions[i+1]??nodes.length;
+  for(const node of nodes.slice(start,end))panel.appendChild(node);
+  return panel;
+ });
+ function select(index,focus){
+  selectedLearningTab=(index+4)%4;
+  buttons.forEach((button,i)=>{
+   const active=i===selectedLearningTab;
+   button.setAttribute('aria-selected',String(active));
+   button.setAttribute('tabindex',active?'0':'-1');
+   panels[i].hidden=!active;
+  });
+  if(focus)buttons[selectedLearningTab].focus();
+  panels[selectedLearningTab].querySelectorAll('img[loading="lazy"]').forEach(img=>{img.loading='eager';});
+  typesetMath(panels[selectedLearningTab]);
+ }
+ const buttons=LEVEL1_LABELS.map((label,i)=>{
+  const button=document.createElement('button');
+  button.type='button';button.id='slm-b02-tab-'+i;
+  button.setAttribute('role','tab');
+  button.setAttribute('aria-controls',panels[i].id);
+  button.textContent=label;
+  button.addEventListener('click',()=>select(i,false));
+  button.addEventListener('keydown',event=>{
+   const next={ArrowRight:i+1,ArrowLeft:i-1,Home:0,End:3}[event.key];
+   if(next===undefined)return;
+   event.preventDefault();select(next,true);
+  });
+  tablist.appendChild(button);return button;
+ });
+ view.appendChild(tablist);
+ for(const panel of panels)view.appendChild(panel);
+ // Tabs appear after the lesson h1/intro; before the four area panels.
+ const firstPanel=panels[0];
+ view.insertBefore(tablist,firstPanel);
+ select(Math.min(selectedLearningTab,3),false);
+ return {tablist,panels,buttons};
+}
 let activeTypeset=0;
-function typesetMath(){
+function typesetMath(scope=view){
  const sequence=++activeTypeset;
  const message=document.getElementById('math-status');
  const mj=window.MathJax;
@@ -108,18 +177,19 @@ function typesetMath(){
  ready.then(()=>{
    if(sequence!==activeTypeset)return;
    if(!mj.typesetPromise)throw new Error('MathJax chưa sẵn sàng');
-   if(mj.typesetClear)mj.typesetClear([view]);
-   return mj.typesetPromise([view]).then(()=>{if(sequence===activeTypeset)message.textContent='';});
+   return mj.typesetPromise([scope]).then(()=>{if(sequence===activeTypeset)message.textContent='';});
  }).catch(()=>{if(sequence===activeTypeset)message.textContent='MathJax không hiển thị được công thức; cần kiểm tra kết nối trước khi đánh giá bài giảng.'});
 }
 function draw(mode){
  btnA.setAttribute('aria-pressed',String(mode==='A'));btnB.setAttribute('aria-pressed',String(mode==='B'));
+ if(window.MathJax?.typesetClear)window.MathJax.typesetClear([view]);
  if(mode==='A'){view.innerHTML=data.a;status.textContent='A — Trang HTML đã phát hành (chỉ phần nội dung, không sao chép CSS hệ thống)'}
- else{view.innerHTML=renderLearnerMarkdown(data.md);status.textContent='B — Bài giảng mới từ nguồn Gemini / NotebookLM v1 + SGK, ứng viên DELTA_C chưa nghiệm thu'}
+ else{view.innerHTML=renderLearnerMarkdown(data.md);status.textContent='B — Bài giảng mới, bốn tab cấp 1; không có tab cấp 2 (DELTA_C chưa nghiệm thu)'}
  view.querySelectorAll('a').forEach(x=>{if(x.getAttribute('href')?.startsWith('../')){x.addEventListener('click',e=>e.preventDefault());x.title='Liên kết Core chỉ hoạt động trên website thật'}});
- typesetMath();
+ if(mode==='B')buildLevel1Tabs();else typesetMath(view);
 }
 btnA.addEventListener('click',()=>draw('A'));btnB.addEventListener('click',()=>draw('B'));
 document.addEventListener('DOMContentLoaded',()=>draw('B'));
-window.addEventListener('load',typesetMath);
+window.addEventListener('load',()=>{const panel=view.querySelector('[role="tabpanel"]:not([hidden])');typesetMath(panel||view);});
+view.addEventListener('toggle',event=>{if(event.target.tagName==='DETAILS'&&event.target.open)typesetMath(event.target);},true);
 </script></body></html>
