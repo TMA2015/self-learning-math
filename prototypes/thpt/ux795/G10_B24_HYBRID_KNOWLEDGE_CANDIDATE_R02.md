@@ -198,7 +198,7 @@ Chọn đúng 2 nam và 1 nữ là hai việc phối hợp: chọn nhóm hai nam
 
 **Cách đọc hình.** Cùng chọn hai từ A,B,C: nếu có vai AB khác BA nên có 6 chỉnh hợp; nếu chỉ là nhóm AB=BA thì còn 3 tổ hợp.
 
-<figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="images/G10_B24_ORDER_VS_COMBINATION_R02.svg" loading="lazy" alt="Ba bạn A B C, chọn hai có thứ tự có 6 cách và chọn nhóm không thứ tự có 3 cách"><figcaption>Phân biệt (A_3^2=6) với (inom32=3): hai cách phân vai AB và BA chỉ là **một** nhóm khi không xét thứ tự.</figcaption></figure>
+<figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="images/G10_B24_ORDER_VS_COMBINATION_R02.svg" loading="lazy" alt="Ba bạn A B C, chọn hai có thứ tự có 6 cách và chọn nhóm không thứ tự có 3 cách"><figcaption>Khi phân vai, \(A_3^2=6\) vì AB và BA là hai kết quả khác nhau. Khi chỉ chọn nhóm, \(\binom32=3\) vì AB và BA là cùng một nhóm.</figcaption></figure>
 
 
 **Điều kiện chung.** Có \(n\) đối tượng **phân biệt**, \(n\) nguyên không âm. Với \(0\le k\le n\):
