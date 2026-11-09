@@ -54,7 +54,7 @@
 
     **Em vận dụng.** Trong ba biểu thức (a) \(2x-3y<6\); (b) \(xy\le6\); (c) \(0x+0y\le4\), biểu thức nào là bất phương trình bậc nhất hai ẩn? Giải thích.
 
-    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY01" data-outcome-id="G10-B03-LINEAR_INEQUALITY" hidden></span>
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY01" data-outcome-id="G10-B03-LINEAR_INEQUALITY" data-thpt-help-ref="HELP-G10-B03-02" hidden></span>
 
     ??? question "Em đã tự làm? Mở lời giải để đối chiếu"
 
@@ -81,7 +81,7 @@
 
     **Em vận dụng.** Với \(x+2y\le6\), trong \(A(2,2)\), \(B(3,2)\), \(C(0,0)\), những điểm nào là nghiệm? Điểm nào nằm đúng trên đường biên?
 
-    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY02" data-outcome-id="G10-B03-POINT_TEST" hidden></span>
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY02" data-outcome-id="G10-B03-POINT_TEST" data-thpt-help-ref="HELP-G10-B03-01" hidden></span>
 
     ??? question "Mở đáp án sau khi tự kiểm tra"
 
@@ -111,7 +111,7 @@
 
     **Em vận dụng.** Với \(3x+y<6\), đường biên là gì, vẽ nét liền hay nét đứt? Điểm \((2,0)\) có thuộc miền nghiệm không?
 
-    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY03" data-outcome-id="G10-B03-BOUNDARY" hidden></span>
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY03" data-outcome-id="G10-B03-BOUNDARY" data-thpt-help-ref="HELP-G10-B03-02" hidden></span>
 
     ??? question "Em đã tự làm? Mở đối chiếu"
 
@@ -131,7 +131,7 @@
 
     **Em vận dụng.** Biến đổi \(3x-y<3\) về điều kiện theo \(y\). Biên có được lấy không? Gốc \(O(0,0)\) có thuộc miền nghiệm không?
 
-    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY04" data-outcome-id="G10-B03-HALFPLANE" hidden></span>
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY04" data-outcome-id="G10-B03-HALFPLANE" data-thpt-help-ref="HELP-G10-B03-02" hidden></span>
 
     ??? question "Mở lời giải sau khi tự làm"
 
@@ -157,7 +157,7 @@
 
     **Em vận dụng.** Công việc A cần 4 phút/sản phẩm, B cần 6 phút/sản phẩm, tổng thời gian không quá 120 phút. Viết điều kiện cho số sản phẩm \(x,y\) rồi kiểm \((10,10)\).
 
-    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY05" data-outcome-id="G10-B03-MODELING" hidden></span>
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY05" data-outcome-id="G10-B03-MODELING" data-thpt-help-ref="HELP-G10-B03-01" hidden></span>
 
     ??? question "Mở đáp án sau khi tự làm"
 
