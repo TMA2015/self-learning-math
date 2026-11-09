@@ -50,7 +50,7 @@ trong đó \(a,b,c\) là các số thực và **\(a,b\) không đồng thời b�
 
 **Em vận dụng.** Trong ba biểu thức (a) \(2x-3y<6\); (b) \(xy\le6\); (c) \(0x+0y\le4\), biểu thức nào là bất phương trình bậc nhất hai ẩn? Giải thích.
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY01" data-outcome-id="G10-B03-LINEAR_INEQUALITY" markdown="1">
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY01" data-outcome-id="G10-B03-LINEAR_INEQUALITY" data-thpt-help-ref="HELP-G10-B03-02" markdown="1">
 <summary>Em đã tự làm? Mở lời giải để đối chiếu</summary>
 
 **Chỉ (a)** đúng dạng vì các biến ở bậc nhất và hai hệ số \(2,-3\) không đồng thời bằng 0. (b) chứa tích \(xy\); (c) có cả hai hệ số bằng 0. Nếu nhầm, quay lại điều kiện trong khung “Kiến thức cần nhớ”.
@@ -75,7 +75,7 @@ Xét \(x+2y\le6\):
 
 **Em vận dụng.** Với \(x+2y\le6\), trong \(A(2,2)\), \(B(3,2)\), \(C(0,0)\), những điểm nào là nghiệm? Điểm nào nằm đúng trên đường biên?
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY02" data-outcome-id="G10-B03-POINT_TEST" markdown="1">
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY02" data-outcome-id="G10-B03-POINT_TEST" data-thpt-help-ref="HELP-G10-B03-01" markdown="1">
 <summary>Mở đáp án sau khi tự kiểm tra</summary>
 
 **A và C** là nghiệm. A nằm trên biên vì \(2+2\cdot2=6\); B không là nghiệm vì \(3+2\cdot2=7>6\). C nằm trong miền vì \(0\le6\).
@@ -105,7 +105,7 @@ Hình dưới đây đặt hai trường hợp cạnh nhau. Hãy nhìn **đườ
 
 **Em vận dụng.** Với \(3x+y<6\), đường biên là gì, vẽ nét liền hay nét đứt? Điểm \((2,0)\) có thuộc miền nghiệm không?
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY03" data-outcome-id="G10-B03-BOUNDARY" markdown="1">
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY03" data-outcome-id="G10-B03-BOUNDARY" data-thpt-help-ref="HELP-G10-B03-02" markdown="1">
 <summary>Em đã tự làm? Mở đối chiếu</summary>
 
 Đường biên là \(3x+y=6\), phải vẽ **nét đứt**. \((2,0)\) cho \(3\cdot2+0=6\), không thỏa \(<6\); đó là điểm trên đường biên **không được lấy**.
@@ -125,7 +125,7 @@ Khi biến đổi để đưa về \(y>mx+n\), hãy nhớ quy tắc từ bất p
 
 **Em vận dụng.** Biến đổi \(3x-y<3\) về điều kiện theo \(y\). Biên có được lấy không? Gốc \(O(0,0)\) có thuộc miền nghiệm không?
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY04" data-outcome-id="G10-B03-HALFPLANE" markdown="1">
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY04" data-outcome-id="G10-B03-HALFPLANE" data-thpt-help-ref="HELP-G10-B03-02" markdown="1">
 <summary>Mở lời giải sau khi tự làm</summary>
 
 \(3x-y<3\iff -y<3-3x\iff y>3x-3\). **Không lấy biên** vì dấu nghiêm ngặt. Tại \(O\): \(0<3\) đúng, nên \(O\) là nghiệm.
@@ -149,7 +149,7 @@ Nếu bài toán có **phân thức**, chẳng hạn giá trung bình \(\frac{14
 
 **Em vận dụng.** Công việc A cần 4 phút/sản phẩm, B cần 6 phút/sản phẩm, tổng thời gian không quá 120 phút. Viết điều kiện cho số sản phẩm \(x,y\) rồi kiểm \((10,10)\).
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY05" data-outcome-id="G10-B03-MODELING" markdown="1">
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY05" data-outcome-id="G10-B03-MODELING" data-thpt-help-ref="HELP-G10-B03-01" markdown="1">
 <summary>Mở đáp án sau khi tự làm</summary>
 
 Điều kiện là \(4x+6y\le120\), \(x,y\in\mathbb Z_{\ge0}\) nếu đếm sản phẩm rời rạc. Thay \(x=y=10\) được \(4\cdot10+6\cdot10=100\le120\), nên phương án hợp lệ.
