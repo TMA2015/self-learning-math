@@ -41,10 +41,11 @@ function buildG10KnowledgeR02(source,cfg){
  let knowledge=[...intro,...theory.map(p=>`### ${p.head.replace(/^\d+\.\s*/,"")}\n\n${p.body}`)].join("\n\n");
  knowledge=knowledge.replace(/^(?:\s*)(?:Em hãy đọc tình huống[^\n]*|Hãy hiểu bản chất[^\n]*)/gm,"");
  for(const bridge of cfg.bridges||[]){const at=knowledge.indexOf(bridge.before);if(at<0)throw Error("Missing bridge anchor "+cfg.b);knowledge=knowledge.slice(0,at)+bridge.text+"\n\n"+knowledge.slice(at);}
- for(let i=0;i<figures.length;i++){
+ const allFigures=[...figures,...(cfg.extraFigures||[])];
+ for(let i=0;i<allFigures.length;i++){
   const anchor=cfg.figureAnchors?.[i]||cfg.figureAnchor||"";
   const explanation=cfg.figureReadings?.[i]||"Quan sát nhãn, hướng và vị trí trên hình; đối chiếu từng chi tiết với khái niệm đang học.";
-  const chunk=`**Cách đọc hình.** ${explanation}\n\n${figures[i]}\n\n`;
+  const chunk=`**Cách đọc hình.** ${explanation}\n\n${allFigures[i]}\n\n`;
   const at=anchor?knowledge.indexOf(anchor):-1;
   if(at>=0){const end=knowledge.indexOf("\n",at),offset=end>=0?end+1:knowledge.length;knowledge=knowledge.slice(0,offset)+"\n"+chunk+knowledge.slice(offset);}
   else knowledge=chunk+knowledge;
@@ -67,7 +68,7 @@ function buildG10KnowledgeR02(source,cfg){
   if(new Set(next).size!==next.length)throw Error("Duplicate "+attr);
  }
  if((out.match(/^## /gm)||[]).length!==4)throw Error("Four section rule B"+cfg.b);
- if((out.match(/<figure\b/g)||[]).length!==figures.length)throw Error("Figures count B"+cfg.b);
+ if((out.match(/<figure\b/g)||[]).length!==allFigures.length)throw Error("Figures count B"+cfg.b);
  if(/PREREQUISITE_CONFIRMED|PED3\/PED5|D5 kế thừa|FIG-G10/.test(out))throw Error("Audit leaked B"+cfg.b);
- return {markdown:out,items:ids(source,"data-thpt-first-try-id"),helps:ids(source,"data-thpt-help-id"),figureCount:figures.length,chars:out.length,title};
+ return {markdown:out,items:ids(source,"data-thpt-first-try-id"),helps:ids(source,"data-thpt-help-id"),figureCount:allFigures.length,chars:out.length,title};
 }
