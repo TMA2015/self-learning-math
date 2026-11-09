@@ -205,7 +205,7 @@
 
     [Chuyển đến Luyện tập và Vận dụng Chương VI](luyen-tap.md) để làm bài củng cố. Bạn có thể mở gợi ý và lời giải sau khi tự làm.
 
-=== "Ví dụ giải toán"
+=== "Ví dụ"
 
     Trước khi xem lời giải, hãy xác định dữ kiện, điều phải tìm và lý do chọn cách giải. Sau đó kiểm tra lại điều kiện áp dụng và kết quả, thay vì chỉ nhìn phép tính cuối cùng.
 
@@ -232,7 +232,7 @@
         </ol>
 
 
-=== "Lỗi thường gặp và cách tự khắc phục"
+=== "Lỗi thường gặp"
 
     <span data-thpt-help-id="HELP-G10-CHVI-TRY16" hidden></span>
 
