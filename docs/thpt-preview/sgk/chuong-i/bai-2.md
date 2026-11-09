@@ -209,7 +209,7 @@
 
         **Tự sửa:** Đọc lại ý nghĩa \(\in\) và \(\subseteq\) tại 2.1. Nếu hai vế là hai tập, muốn chứng minh bằng nhau phải kiểm **cả hai chiều** tập con.
 
-        **Luyện tiếp:** [Câu Core về tập hợp](../luyen-tap/?item=THPT-G10-B02-C01) · [Bài luyện về tập con](../luyen-tap/?item=THPT-G10-B02-P06).
+        **Luyện tiếp:** [Câu Core về tập hợp](luyen-tap.md?item=THPT-G10-B02-C01) · [Bài luyện về tập con](luyen-tap.md?item=THPT-G10-B02-P06).
 
 
     <span data-thpt-help-id="HELP-G10-B02-02" hidden></span>
@@ -220,7 +220,7 @@
 
         **Tự sửa:** Trở lại 2.2 và 2.4. Xác định nhóm chung trước, trừ giao đúng một lần, nêu rõ U trước khi tính phần bù. Kiểm tổng các vùng phải bằng số người được khảo sát.
 
-        **Luyện tiếp:** [Core giao/hợp](../luyen-tap/?item=THPT-G10-B02-C02) · [Luyện vận dụng](../luyen-tap/?item=THPT-G10-B02-P02) · [Đếm Venn](../luyen-tap/?item=THPT-G10-B02-P05).
+        **Luyện tiếp:** [Core giao/hợp](luyen-tap.md?item=THPT-G10-B02-C02) · [Luyện vận dụng](luyen-tap.md?item=THPT-G10-B02-P02) · [Đếm Venn](luyen-tap.md?item=THPT-G10-B02-P05).
 
 
     <span data-thpt-help-id="HELP-G10-B02-03" hidden></span>
@@ -232,7 +232,7 @@
         **Tự sửa:** Trở lại 2.3, chuyển từng khoảng thành điều kiện \(<,\le,>,\ge\). Kiểm riêng 1, 4, 6 trên từng tập trước khi viết ký hiệu khoảng. Sau đó làm lại câu “Em vận dụng” tại 2.3 bằng cách tự mở đối chiếu.
 
 
-    **Tiếp tục tự học:** [Core và Luyện tập Chương I](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương I](../../thu-vien/tu-luan-chuong-i.md).
+    **Tiếp tục tự học:** [Core và Luyện tập Chương I](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md) · [Tự luận Chương I](../../thu-vien/tu-luan-chuong-i.md).
 
     <p class="thpt-r4-footnote">Nguồn kiến thức: SGK Toán 10 · Kết nối tri thức với cuộc sống · tập một · Bài 2. Phần giải thích và ví dụ hỗ trợ tự học do SLM biên tập.</p>
 
