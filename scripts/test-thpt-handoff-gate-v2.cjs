@@ -120,20 +120,20 @@ function verifyTopicSafety(data, handoff) {
   assert.equal(field(handoff, "MASTERY_ACTIVATION"), "NO");
   assert.equal(field(handoff, "RELEASE_AUTHORIZATION"), "NO");
   const count = field(data, "PRIVATE_RD1_COUNT");
-  assert(/^\\d+$/.test(count), "Topic private RD1 count must be metadata only");
+  assert(/^\d+$/.test(count), "Topic private RD1 count must be metadata only");
   assert.equal(field(handoff, "PRIVATE_RD1_COUNT"), count, "Private Topic RD1 custody count mismatch");
   const custody = section(handoff, "PRIVATE_RD1_CUSTODY_METADATA");
-  assert(new RegExp("RD1_PRIVATE_COUNT\\\\s*=\\\\s*" + count + "\\\\b").test(custody), "Private Topic RD1 count absent from custody receipt");
-  assert(/PRIVATE_OWNER_HELD\\s*=\\s*YES/.test(custody), "Topic RD1 must remain owner-held");
-  assert(/PRIVATE_GIT_CONTENT\\s*=\\s*NONE/.test(custody), "Private Topic RD1 may not enter public Git");
-  assert(/PRIVATE_BANK_SHA256\\s*=\\s*[0-9a-f]{64}/.test(custody), "Missing private Topic RD1 hash metadata");
+  assert(new RegExp("RD1_PRIVATE_COUNT\\s*=\\s*" + count + "\\b").test(custody), "Private Topic RD1 count absent from custody receipt");
+  assert(/PRIVATE_OWNER_HELD\s*=\s*YES/.test(custody), "Topic RD1 must remain owner-held");
+  assert(/PRIVATE_GIT_CONTENT\s*=\s*NONE/.test(custody), "Private Topic RD1 may not enter public Git");
+  assert(/PRIVATE_BANK_SHA256\s*=\s*[0-9a-f]{64}/.test(custody), "Missing private Topic RD1 hash metadata");
 }
 
 // One canonical item can legitimately have several distinct Topic outcome/role placements.
 // Enforce unique placement tuples instead of falsely requiring one row per item.
 function verifyTopicPlacementMatrix(matrix, items, outcomes) {
-  const rows = matrix.split("\\n").filter(s => /^\\|\\s*\\d+\\s*\\|/.test(s))
-    .map(s => s.split("|").slice(1, -1).map(x => x.trim().replace(/^\\x60|\\x60$/g, "")));
+  const rows = matrix.split("\n").filter(s => /^\|\s*\d+\s*\|/.test(s))
+    .map(s => s.split("|").slice(1, -1).map(x => x.trim().replace(/^\x60|\x60$/g, "")));
   assert(rows.length >= items.length, "Topic placements must cover all canonical public IDs");
   const seen = new Set(), covered = new Set();
   for (const row of rows) {
@@ -142,7 +142,7 @@ function verifyTopicPlacementMatrix(matrix, items, outcomes) {
     assert(items.includes(item), "Unregistered Topic item " + item);
     assert(outcomes.includes(outcome), "Unknown Topic outcome " + outcome);
     assert(/^TOPIC_/.test(role), "Not a Topic placement role for " + item);
-    assert(placement.startsWith("TOPIC/") && !/(^|\\/)CORE(\\/|$)/.test(placement),
+    assert(placement.startsWith("TOPIC/") && !/(^|\/)CORE(\/|$)/.test(placement),
       "Topic must reuse canonical items through Practice/Written, not a separate Core page");
     assert(!/(READINESS|RD1)/i.test(placement), "Private Topic Readiness cannot be registered as a public placement");
     const key = [item, outcome, role, placement].join("|");
@@ -252,18 +252,18 @@ function selfTest() {
   assert.throws(()=>verifyOneStandardEvidence(
     "STANDARD_ID: SLM-THPT-QUALITY-ONE\nSTANDARD_VERSION: 1.1.0\nQUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE",
     "STANDARD_ID: SLM-THPT-QUALITY-ONE\nSTANDARD_VERSION: 1.0.0\n"+bad,true));
-  const topicMeta="ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY\\nOFFICIAL_READINESS: NOT_CLAIMED\\nMASTERY_ACTIVATION: NO\\nRELEASE_AUTHORIZATION: NO\\nPRIVATE_RD1_COUNT: 30";
-  const topicHandoff="LEARNING_PATH: TOPIC\\nRELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH\\nASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY\\nMASTERY_ACTIVATION: NO\\nRELEASE_AUTHORIZATION: NO\\nPRIVATE_RD1_COUNT: 30\\n## PRIVATE_RD1_CUSTODY_METADATA\\nRD1_PRIVATE_COUNT = 30, PRIVATE_OWNER_HELD = YES, PRIVATE_GIT_CONTENT = NONE, PRIVATE_BANK_SHA256 = " + "a".repeat(64);
+  const topicMeta="ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY\nOFFICIAL_READINESS: NOT_CLAIMED\nMASTERY_ACTIVATION: NO\nRELEASE_AUTHORIZATION: NO\nPRIVATE_RD1_COUNT: 30";
+  const topicHandoff="LEARNING_PATH: TOPIC\nRELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH\nASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY\nMASTERY_ACTIVATION: NO\nRELEASE_AUTHORIZATION: NO\nPRIVATE_RD1_COUNT: 30\n## PRIVATE_RD1_CUSTODY_METADATA\nRD1_PRIVATE_COUNT = 30, PRIVATE_OWNER_HELD = YES, PRIVATE_GIT_CONTENT = NONE, PRIVATE_BANK_SHA256 = " + "a".repeat(64);
   assert.doesNotThrow(() => verifyTopicSafety(topicMeta, topicHandoff));
   assert.throws(() => verifyTopicSafety(topicMeta.replace("MASTERY_ACTIVATION: NO","MASTERY_ACTIVATION: YES"), topicHandoff));
   assert.throws(() => verifyTopicSafety(topicMeta.replace("PRIVATE_RD1_COUNT: 30","PRIVATE_RD1_COUNT: 29"), topicHandoff));
   assert.throws(() => verifyTopicSafety(topicMeta, topicHandoff.replace("PRIVATE_GIT_CONTENT = NONE","PRIVATE_GIT_CONTENT = FULL")));
-  const topicMatrix="| # | item_id | primary outcome | TOPIC role | placement | state |\\n| 1 | \\x60ITEM-A\\x60 | \\x60O1\\x60 | \\x60TOPIC_PRACTICE\\x60 | \\x60TOPIC/UNIT/O1/PRACTICE\\x60 | PROPOSED |\\n| 2 | \\x60ITEM-A\\x60 | \\x60O2\\x60 | \\x60TOPIC_PRACTICE\\x60 | \\x60TOPIC/UNIT/O2/PRACTICE\\x60 | PROPOSED |\\n| 3 | \\x60ITEM-B\\x60 | \\x60O2\\x60 | \\x60TOPIC_WRITTEN\\x60 | \\x60TOPIC/UNIT/WRITTEN\\x60 | PROPOSED |";
+  const topicMatrix="| # | item_id | primary outcome | TOPIC role | placement | state |\n| 1 | \x60ITEM-A\x60 | \x60O1\x60 | \x60TOPIC_PRACTICE\x60 | \x60TOPIC/UNIT/O1/PRACTICE\x60 | PROPOSED |\n| 2 | \x60ITEM-A\x60 | \x60O2\x60 | \x60TOPIC_PRACTICE\x60 | \x60TOPIC/UNIT/O2/PRACTICE\x60 | PROPOSED |\n| 3 | \x60ITEM-B\x60 | \x60O2\x60 | \x60TOPIC_WRITTEN\x60 | \x60TOPIC/UNIT/WRITTEN\x60 | PROPOSED |";
   assert.equal(verifyTopicPlacementMatrix(topicMatrix, ["ITEM-A","ITEM-B"], ["O1","O2"]), 3);
-  assert.throws(() => verifyTopicPlacementMatrix(topicMatrix + "\\n" + topicMatrix.split("\\n")[1], ["ITEM-A","ITEM-B"], ["O1","O2"]));
+  assert.throws(() => verifyTopicPlacementMatrix(topicMatrix + "\n" + topicMatrix.split("\n")[1], ["ITEM-A","ITEM-B"], ["O1","O2"]));
   assert.throws(() => verifyTopicPlacementMatrix(topicMatrix.replace("TOPIC/UNIT/WRITTEN","TOPIC/UNIT/CORE"), ["ITEM-A","ITEM-B"], ["O1","O2"]));
-  const evidence12="## QUALITY_Q01_Q18_EVIDENCE\\nTHPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md\\n"+Array.from({length:18},(_,i)=>"| Q"+String(i+1).padStart(2,"0")+" | outcome proof | author evidence | independent receipt | rendered check |").join("\\n");
-  assert.doesNotThrow(() => verifyOneStandardEvidence("STANDARD_ID: SLM-THPT-QUALITY-ONE\\nSTANDARD_VERSION: 1.2.0\\nQUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE","STANDARD_ID: SLM-THPT-QUALITY-ONE\\nSTANDARD_VERSION: 1.2.0\\n"+evidence12,true));
+  const evidence12="## QUALITY_Q01_Q18_EVIDENCE\nTHPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md\n"+Array.from({length:18},(_,i)=>"| Q"+String(i+1).padStart(2,"0")+" | outcome proof | author evidence | independent receipt | rendered check |").join("\n");
+  assert.doesNotThrow(() => verifyOneStandardEvidence("STANDARD_ID: SLM-THPT-QUALITY-ONE\nSTANDARD_VERSION: 1.2.0\nQUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE","STANDARD_ID: SLM-THPT-QUALITY-ONE\nSTANDARD_VERSION: 1.2.0\n"+evidence12,true));
   console.log("PASS handoff V2 parser: SGK, TOPIC multi-placement, supplements; version 1.2, Q16 private custody, negative pairing/safety checks");
 }
 if (process.argv.includes("--self-test")) selfTest();
