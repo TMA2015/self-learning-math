@@ -37,29 +37,35 @@ Một số đường bao có đặc điểm tổng quãng đường đến hai �
 
 **Em vận dụng.** Với elip x²/25+y²/16=1, tìm a, b, c và hai tiêu điểm.
 
-??? question "Tự mở đáp án sau khi đã tự làm"
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Tự mở đáp án sau khi đã tự làm</summary>
 
-    **Đáp án:** a=5, b=4, c=3; F1(−3,0), F2(3,0).
+**Đáp án:** a=5, b=4, c=3; F1(−3,0), F2(3,0).
 
-    **Lý do:** a²=25>b²=16, c²=25−16=9 ⇒ c=3; elip có trục lớn Ox.
+**Lý do:** a²=25>b²=16, c²=25−16=9 ⇒ c=3; elip có trục lớn Ox.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY18` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+**Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY18` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+
+</details>
 
 <span id="help-g10-chvii-try18" data-thpt-help-id="HELP-G10-CHVII-TRY18"></span>
 
-??? tip "Tự khắc phục theo năm bước"
+<details class="thpt-r4-pedagogical-note thpt-r4-help-fold" markdown="1">
+<summary>Tự khắc phục theo năm bước</summary>
 
-    1. **Nhận diện lỗi:** Nếu dùng c²=a²+b², em đã nhầm công thức hypebol; nếu chọn B22-C01 tâm sai làm Core, em đang lệch kỹ năng SGK.
+1. **Nhận diện lỗi:** Nếu dùng c²=a²+b², em đã nhầm công thức hypebol; nếu chọn B22-C01 tâm sai làm Core, em đang lệch kỹ năng SGK.
 
-    2. **Quay lại bản chất:** Tổng MF1+MF2=2a tạo ra elip. Với dạng x²/a²+y²/b²=1 có a>b>0, hai tiêu điểm cách tâm c với c²=a²−b², nên c<a.
+2. **Quay lại bản chất:** Tổng MF1+MF2=2a tạo ra elip. Với dạng x²/a²+y²/b²=1 có a>b>0, hai tiêu điểm cách tâm c với c²=a²−b², nên c<a.
 
-    3. **Tự sửa:** Quan sát dấu cộng giữa hai phân thức và kiểm 0<c<a; luyện đúng bài elip Core B22-P01.
+3. **Tự sửa:** Quan sát dấu cộng giữa hai phân thức và kiểm 0<c<a; luyện đúng bài elip Core B22-P01.
 
-    4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B22-P01` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B22-P01` trong phần Core/Luyện tập; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B22-P01">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
+</details>
+
+<a href="../luyen-tap/?item=THPT-G10-B22-P01">Mở câu luyện tập tương ứng để tự luyện</a>
 
 
 <span id="thpt-g10-chvii-try19" data-thpt-first-try-id="THPT-G10-CHVII-TRY19" data-outcome-id="G10-B22-HYPERBOLA_PARAMETERS" data-thpt-help-ref="HELP-G10-CHVII-TRY19"></span>
@@ -78,29 +84,35 @@ Một số đường bao có đặc điểm tổng quãng đường đến hai �
 
 **Em vận dụng.** Hypebol x²/16−y²/9=1 có các đỉnh và hai tiêu điểm tọa độ nào?
 
-??? question "Tự mở đáp án sau khi đã tự làm"
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Tự mở đáp án sau khi đã tự làm</summary>
 
-    **Đáp án:** Đỉnh A1(−4,0), A2(4,0); tiêu điểm F1(−5,0), F2(5,0).
+**Đáp án:** Đỉnh A1(−4,0), A2(4,0); tiêu điểm F1(−5,0), F2(5,0).
 
-    **Lý do:** a=4, b=3, c²=a²+b²=16+9=25 ⇒ c=5; trục thực Ox.
+**Lý do:** a=4, b=3, c²=a²+b²=16+9=25 ⇒ c=5; trục thực Ox.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY19` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+**Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY19` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+
+</details>
 
 <span id="help-g10-chvii-try19" data-thpt-help-id="HELP-G10-CHVII-TRY19"></span>
 
-??? tip "Tự khắc phục theo năm bước"
+<details class="thpt-r4-pedagogical-note thpt-r4-help-fold" markdown="1">
+<summary>Tự khắc phục theo năm bước</summary>
 
-    1. **Nhận diện lỗi:** Nếu lấy c=√7 hoặc vẽ oval kín, em đang áp dụng công thức và hình elip.
+1. **Nhận diện lỗi:** Nếu lấy c=√7 hoặc vẽ oval kín, em đang áp dụng công thức và hình elip.
 
-    2. **Quay lại bản chất:** Dạng x²/a²−y²/b²=1 có hai nhánh mở theo ±Ox; c²=a²+b² nên tiêu điểm xa tâm hơn các đỉnh (c>a).
+2. **Quay lại bản chất:** Dạng x²/a²−y²/b²=1 có hai nhánh mở theo ±Ox; c²=a²+b² nên tiêu điểm xa tâm hơn các đỉnh (c>a).
 
-    3. **Tự sửa:** Kiểm c>a và vẽ hai nhánh qua hai đỉnh ±4, không khép kín.
+3. **Tự sửa:** Kiểm c>a và vẽ hai nhánh qua hai đỉnh ±4, không khép kín.
 
-    4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B22-C02` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B22-C02` trong phần Core/Luyện tập; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B22-C02">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
+</details>
+
+<a href="../luyen-tap/?item=THPT-G10-B22-C02">Mở câu luyện tập tương ứng để tự luyện</a>
 
 
 <span id="thpt-g10-chvii-try20" data-thpt-first-try-id="THPT-G10-CHVII-TRY20" data-outcome-id="G10-B22-HYPERBOLA_ASYMPTOTES" data-thpt-help-ref="HELP-G10-CHVII-TRY20"></span>
@@ -119,29 +131,35 @@ Chỉ áp dụng công thức y=±(b/a)x cho dạng chính tắc tâm O, trục 
 
 **Em vận dụng.** Hypebol x²/25−y²/4=1 có hai đường tiệm cận nào?
 
-??? question "Tự mở đáp án sau khi đã tự làm"
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Tự mở đáp án sau khi đã tự làm</summary>
 
-    **Đáp án:** y=(2/5)x và y=−(2/5)x.
+**Đáp án:** y=(2/5)x và y=−(2/5)x.
 
-    **Lý do:** a²=25 ⇒ a=5; b²=4 ⇒ b=2. Hệ số góc tiệm cận là ±b/a=±2/5.
+**Lý do:** a²=25 ⇒ a=5; b²=4 ⇒ b=2. Hệ số góc tiệm cận là ±b/a=±2/5.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY20` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+**Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY20` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+
+</details>
 
 <span id="help-g10-chvii-try20" data-thpt-help-id="HELP-G10-CHVII-TRY20"></span>
 
-??? tip "Tự khắc phục theo năm bước"
+<details class="thpt-r4-pedagogical-note thpt-r4-help-fold" markdown="1">
+<summary>Tự khắc phục theo năm bước</summary>
 
-    1. **Nhận diện lỗi:** Nếu lấy hệ số ±5/2, em đã đảo tỉ số a/b; nếu vẽ thẳng là đồ thị hypebol, em nhầm tiệm cận với đường cong.
+1. **Nhận diện lỗi:** Nếu lấy hệ số ±5/2, em đã đảo tỉ số a/b; nếu vẽ thẳng là đồ thị hypebol, em nhầm tiệm cận với đường cong.
 
-    2. **Quay lại bản chất:** Khi |x| lớn, hệ thức y²=(b²/a²)(x²−a²) cho |y/x| tiến gần b/a. Hai đường y=±(b/a)x là tiệm cận, không phải các nhánh thực của hypebol.
+2. **Quay lại bản chất:** Khi |x| lớn, hệ thức y²=(b²/a²)(x²−a²) cho |y/x| tiến gần b/a. Hai đường y=±(b/a)x là tiệm cận, không phải các nhánh thực của hypebol.
 
-    3. **Tự sửa:** Đánh dấu hai giao điểm với Ox (±5,0) của hypebol và hai đường chéo có hệ số ±0,4.
+3. **Tự sửa:** Đánh dấu hai giao điểm với Ox (±5,0) của hypebol và hai đường chéo có hệ số ±0,4.
 
-    4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B22-C02` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B22-C02` trong phần Core/Luyện tập; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B22-C02">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
+</details>
+
+<a href="../luyen-tap/?item=THPT-G10-B22-C02">Mở câu luyện tập tương ứng để tự luyện</a>
 
 
 <span id="thpt-g10-chvii-try21" data-thpt-first-try-id="THPT-G10-CHVII-TRY21" data-outcome-id="G10-B22-PARABOLA_FOCUS" data-thpt-help-ref="HELP-G10-CHVII-TRY21"></span>
@@ -160,29 +178,35 @@ Từ hệ số của x suy 2p, tính p rồi lấy p/2 cho tiêu điểm và đ�
 
 **Em vận dụng.** Cho parabol y²=8x với x≥0. Xác định tiêu điểm, đường chuẩn; M(2,4) có thuộc parabol không?
 
-??? question "Tự mở đáp án sau khi đã tự làm"
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Tự mở đáp án sau khi đã tự làm</summary>
 
-    **Đáp án:** p=4; F(2,0), đường chuẩn x=−2; M(2,4) thuộc vì 4²=8·2.
+**Đáp án:** p=4; F(2,0), đường chuẩn x=−2; M(2,4) thuộc vì 4²=8·2.
 
-    **Lý do:** 2p=8 ⇒ p=4, F=(p/2,0)=(2,0), đường chuẩn x=−p/2=−2. M có MF=4 và khoảng cách đến x=−2 là 4.
+**Lý do:** 2p=8 ⇒ p=4, F=(p/2,0)=(2,0), đường chuẩn x=−p/2=−2. M có MF=4 và khoảng cách đến x=−2 là 4.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY21` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+**Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY21` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+
+</details>
 
 <span id="help-g10-chvii-try21" data-thpt-help-id="HELP-G10-CHVII-TRY21"></span>
 
-??? tip "Tự khắc phục theo năm bước"
+<details class="thpt-r4-pedagogical-note thpt-r4-help-fold" markdown="1">
+<summary>Tự khắc phục theo năm bước</summary>
 
-    1. **Nhận diện lỗi:** Nếu đặt F=(4,0), em đã nhầm p với p/2; nếu không thử M, em chỉ kiểm công thức chứ chưa đọc đồ thị.
+1. **Nhận diện lỗi:** Nếu đặt F=(4,0), em đã nhầm p với p/2; nếu không thử M, em chỉ kiểm công thức chứ chưa đọc đồ thị.
 
-    2. **Quay lại bản chất:** Điểm M trên parabol có MF bằng khoảng cách vuông góc từ M đến đường chuẩn. Với y²=2px, p>0, tiêu điểm F(p/2,0) và đường chuẩn x=−p/2; **không** lấy F(p,0).
+2. **Quay lại bản chất:** Điểm M trên parabol có MF bằng khoảng cách vuông góc từ M đến đường chuẩn. Với y²=2px, p>0, tiêu điểm F(p/2,0) và đường chuẩn x=−p/2; **không** lấy F(p,0).
 
-    3. **Tự sửa:** Thử ngay y²=8x ở M và so MF với khoảng cách ngang từ M đến x=−2.
+3. **Tự sửa:** Thử ngay y²=8x ở M và so MF với khoảng cách ngang từ M đến x=−2.
 
-    4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B22-P03` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B22-P03` trong phần Core/Luyện tập; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B22-P03">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
+</details>
+
+<a href="../luyen-tap/?item=THPT-G10-B22-P03">Mở câu luyện tập tương ứng để tự luyện</a>
 
 
 <span id="thpt-g10-chvii-try22" data-thpt-first-try-id="THPT-G10-CHVII-TRY22" data-outcome-id="G10-B22-CONIC_INTERSECTION" data-thpt-help-ref="HELP-G10-CHVII-TRY22"></span>
@@ -201,29 +225,35 @@ Thế phương trình đường vào conic, giải phương trình còn lại v�
 
 **Em vận dụng.** Đường x=0 cắt elip x²/9+y²/4=1 tại những điểm nào?
 
-??? question "Tự mở đáp án sau khi đã tự làm"
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Tự mở đáp án sau khi đã tự làm</summary>
 
-    **Đáp án:** (0,2) và (0,−2).
+**Đáp án:** (0,2) và (0,−2).
 
-    **Lý do:** Thế x=0 được y²/4=1 ⇒ y²=4 ⇒ y=±2; cả hai tọa độ thỏa phương trình gốc.
+**Lý do:** Thế x=0 được y²/4=1 ⇒ y²=4 ⇒ y=±2; cả hai tọa độ thỏa phương trình gốc.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY22` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+**Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY22` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+
+</details>
 
 <span id="help-g10-chvii-try22" data-thpt-help-id="HELP-G10-CHVII-TRY22"></span>
 
-??? tip "Tự khắc phục theo năm bước"
+<details class="thpt-r4-pedagogical-note thpt-r4-help-fold" markdown="1">
+<summary>Tự khắc phục theo năm bước</summary>
 
-    1. **Nhận diện lỗi:** Nếu chỉ ghi y=2, em bỏ mất nghiệm âm vì căn của bình phương; nếu kết luận hai điểm theo hình mà không tính, chứng cứ chưa đủ.
+1. **Nhận diện lỗi:** Nếu chỉ ghi y=2, em bỏ mất nghiệm âm vì căn của bình phương; nếu kết luận hai điểm theo hình mà không tính, chứng cứ chưa đủ.
 
-    2. **Quay lại bản chất:** Giao điểm là nghiệm chung; số nghiệm thực phụ thuộc vị trí, chứ không được kết luận luôn có hai giao điểm.
+2. **Quay lại bản chất:** Giao điểm là nghiệm chung; số nghiệm thực phụ thuộc vị trí, chứ không được kết luận luôn có hai giao điểm.
 
-    3. **Tự sửa:** Giải đủ hai dấu của y rồi thay lại từng cặp tọa độ.
+3. **Tự sửa:** Giải đủ hai dấu của y rồi thay lại từng cặp tọa độ.
 
-    4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B22-P05` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B22-P05` trong phần Core/Luyện tập; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B22-P05">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
+</details>
+
+<a href="../luyen-tap/?item=THPT-G10-B22-P05">Mở câu luyện tập tương ứng để tự luyện</a>
 
 
 <span id="thpt-g10-chvii-try23" data-thpt-first-try-id="THPT-G10-CHVII-TRY23" data-outcome-id="G10-B22-CONIC_MODEL" data-thpt-help-ref="HELP-G10-CHVII-TRY23"></span>
@@ -242,29 +272,35 @@ Giải y²=2px tại x cụ thể, lấy cả ±y rồi trừ hai tung độ. G�
 
 **Em vận dụng.** Mặt cắt một máng giả sử có dạng y²=20x (x,y tính bằng cm). Bề rộng của máng tại x=5 cm là bao nhiêu?
 
-??? question "Tự mở đáp án sau khi đã tự làm"
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Tự mở đáp án sau khi đã tự làm</summary>
 
-    **Đáp án:** 20 cm.
+**Đáp án:** 20 cm.
 
-    **Lý do:** Thế x=5 được y²=100 ⇒ y=±10 cm. Độ rộng là 10−(−10)=20 cm.
+**Lý do:** Thế x=5 được y²=100 ⇒ y=±10 cm. Độ rộng là 10−(−10)=20 cm.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY23` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+**Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY23` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+
+</details>
 
 <span id="help-g10-chvii-try23" data-thpt-help-id="HELP-G10-CHVII-TRY23"></span>
 
-??? tip "Tự khắc phục theo năm bước"
+<details class="thpt-r4-pedagogical-note thpt-r4-help-fold" markdown="1">
+<summary>Tự khắc phục theo năm bước</summary>
 
-    1. **Nhận diện lỗi:** Nếu đáp 10 cm, em chỉ lấy khoảng cách từ trục đối xứng đến một bên mép mà quên cả hai nhánh.
+1. **Nhận diện lỗi:** Nếu đáp 10 cm, em chỉ lấy khoảng cách từ trục đối xứng đến một bên mép mà quên cả hai nhánh.
 
-    2. **Quay lại bản chất:** Tại một hoành độ x≥0, hai điểm biên của parabol có tung độ ±√(2px); độ rộng theo phương vuông góc trục là hiệu hai tung độ, bằng 2√(2px).
+2. **Quay lại bản chất:** Tại một hoành độ x≥0, hai điểm biên của parabol có tung độ ±√(2px); độ rộng theo phương vuông góc trục là hiệu hai tung độ, bằng 2√(2px).
 
-    3. **Tự sửa:** Vẽ đoạn thẳng đứng từ (5,−10) tới (5,10) và tính hiệu hai tung độ.
+3. **Tự sửa:** Vẽ đoạn thẳng đứng từ (5,−10) tới (5,10) và tính hiệu hai tung độ.
 
-    4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B22-P04` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B22-P04` trong phần Core/Luyện tập; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B22-P04">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
+</details>
+
+<a href="../luyen-tap/?item=THPT-G10-B22-P04">Mở câu luyện tập tương ứng để tự luyện</a>
 
 
 <span id="thpt-g10-chvii-try-ellipse-tr01" data-thpt-first-try-id="THPT-G10-CHVII-TRY-ELLIPSE-TR01" data-outcome-id="G10-B22-ELLIPSE_PARAMETERS" data-thpt-help-ref="HELP-G10-CHVII-ELLIPSE-TR01"></span>
@@ -284,9 +320,12 @@ Cùng chiều cao giữa đỉnh mái và nền **không đảm bảo** một th
 
 **Em vận dụng.** Mái nửa elip rộng **12 m**, cao **4 m** tại tâm. Đặt O ở giữa nền, Ox dọc nền. (a) Viết phương trình elip đầy đủ và điều kiện miền mái. (b) Tại x=3 m, mái cao bao nhiêu? Tự làm rồi mở kết quả.
 
-??? question "Tự mở kết quả sau khi đã thử"
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Tự mở kết quả sau khi đã thử</summary>
 
-    Bán trục ngang 6, bán trục đứng 4: `x²/36+y²/16=1`, **y≥0**, |x|≤6. Tại x=3, `y=4√(1−9/36)=2√3≈3,464 m`. Không lấy y âm hoặc dùng a=12. Nếu sai, xem `HELP-G10-CHVII-ELLIPSE-TR01`.
+Bán trục ngang 6, bán trục đứng 4: `x²/36+y²/16=1`, **y≥0**, |x|≤6. Tại x=3, `y=4√(1−9/36)=2√3≈3,464 m`. Không lấy y âm hoặc dùng a=12. Nếu sai, xem `HELP-G10-CHVII-ELLIPSE-TR01`.
+
+</details>
 
 #### Ví dụ giải có hướng dẫn — EX-G10-B22-ELLIPSE-TR01
 
@@ -301,18 +340,20 @@ Cùng chiều cao giữa đỉnh mái và nền **không đảm bảo** một th
 
 <span id="help-g10-chvii-ellipse-tr01" data-thpt-help-id="HELP-G10-CHVII-ELLIPSE-TR01"></span>
 
-??? tip "Tự khắc phục theo năm bước"
+<details class="thpt-r4-pedagogical-note thpt-r4-help-fold" markdown="1">
+<summary>Tự khắc phục theo năm bước</summary>
 
-    1. **Nhận diện:** sai bán trục, sai x mép, quên nửa elip, hay quên yêu cầu an toàn?  
+1. **Nhận diện:** sai bán trục, sai x mép, quên nửa elip, hay quên yêu cầu an toàn?  
 
-    2. **Chẩn đoán:** đánh dấu −10, −7, 0, 7, 10 trên Ox; khoanh hai góc trên khối và khoảng hở thẳng đứng cần kiểm.  
+2. **Chẩn đoán:** đánh dấu −10, −7, 0, 7, 10 trên Ox; khoanh hai góc trên khối và khoảng hở thẳng đứng cần kiểm.  
 
-    3. **Lấp nền:** elip chính tắc theo **bán trục ngang/dọc**, hình đối xứng; điểm trên mái thỏa `y≥0`.  
+3. **Lấp nền:** elip chính tắc theo **bán trục ngang/dọc**, hình đối xứng; điểm trên mái thỏa `y≥0`.  
 
-    4. **Tự sửa:** thay x=7 vào phương trình; so `y(7)−4` với **0,8**, sau đó giải ngược điều kiện độ hở theo w.  
+4. **Tự sửa:** thay x=7 vào phương trình; so `y(7)−4` với **0,8**, sau đó giải ngược điều kiện độ hở theo w.  
 
-    5. **Luyện đúng nguồn:** B22-P01 → B22-P05 → D2 mới; bài D4 đã xem lời giải không được tính làm kiểm tra độc lập.
+5. **Luyện đúng nguồn:** B22-P01 → B22-P05 → D2 mới; bài D4 đã xem lời giải không được tính làm kiểm tra độc lập.
 
+</details>
 
 <span id="thpt-g10-chvii-try-hyperbola-tr01" data-thpt-first-try-id="THPT-G10-CHVII-TRY-HYPERBOLA-TR01" data-outcome-id="G10-B22-HYPERBOLA_PARAMETERS" data-thpt-help-ref="HELP-G10-CHVII-HYPERBOLA-TR01"></span>
 
@@ -331,9 +372,12 @@ Hai trạm đồng phát cùng tín hiệu, tín hiệu đến người thu khá
 
 **Em vận dụng.** Hai trạm cách nhau 60 km, phát tín hiệu đồng thời; sóng truyền 100.000 km/s. Chênh thời gian tới máy thu là 0,0002 s. Tính `2a`, `c`, `b²` cho hypebol tương ứng và kiểm điều kiện có nghiệm hình học, rồi mở đối chiếu.
 
-??? question "Tự mở kết quả sau khi đã thử"
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Tự mở kết quả sau khi đã thử</summary>
 
-    Hiệu quãng đường `vΔt=100000·0,0002=20 km`, nên `2a=20`, `a=10 km`, `2c=60`, `c=30 km`, `b²=c²−a²=900−100=800 km²`. Vì `0<20<60`, dữ kiện hình học phù hợp hypebol. **Chưa đủ thông tin trạm nào nhận trước** nên chưa thể chọn nhánh. Nếu quên điều kiện này, xem `HELP-G10-CHVII-HYPERBOLA-TR01`.
+Hiệu quãng đường `vΔt=100000·0,0002=20 km`, nên `2a=20`, `a=10 km`, `2c=60`, `c=30 km`, `b²=c²−a²=900−100=800 km²`. Vì `0<20<60`, dữ kiện hình học phù hợp hypebol. **Chưa đủ thông tin trạm nào nhận trước** nên chưa thể chọn nhánh. Nếu quên điều kiện này, xem `HELP-G10-CHVII-HYPERBOLA-TR01`.
+
+</details>
 
 #### Ví dụ giải có hướng dẫn — EX-G10-B22-HYPERBOLA-TR01
 
@@ -346,17 +390,20 @@ Hai trạm đồng phát cùng tín hiệu, tín hiệu đến người thu khá
 
 <span id="help-g10-chvii-hyperbola-tr01" data-thpt-help-id="HELP-G10-CHVII-HYPERBOLA-TR01"></span>
 
-??? tip "Tự khắc phục theo năm bước"
+<details class="thpt-r4-pedagogical-note thpt-r4-help-fold" markdown="1">
+<summary>Tự khắc phục theo năm bước</summary>
 
-    1. **Nhận diện:** nhầm c với a, quên vΔt, sai nhánh hay cố lập hypebol từ chênh quãng đường quá lớn?  
+1. **Nhận diện:** nhầm c với a, quên vΔt, sai nhánh hay cố lập hypebol từ chênh quãng đường quá lớn?  
 
-    2. **Chẩn đoán:** vẽ A trái/B phải; chọn điểm P bên B, kiểm ai gần hơn, viết `PA−PB` với dấu dương.  
+2. **Chẩn đoán:** vẽ A trái/B phải; chọn điểm P bên B, kiểm ai gần hơn, viết `PA−PB` với dấu dương.  
 
-    3. **Lấp nền:** ôn định nghĩa giá trị tuyệt đối hiệu khoảng cách bằng `2a`, trục thực và quan hệ hypebol **`c²=a²+b²`**; nhắc bất đẳng thức tam giác `|PA−PB|≤AB`.  
+3. **Lấp nền:** ôn định nghĩa giá trị tuyệt đối hiệu khoảng cách bằng `2a`, trục thực và quan hệ hypebol **`c²=a²+b²`**; nhắc bất đẳng thức tam giác `|PA−PB|≤AB`.  
 
-    4. **Tự sửa:** ghi bảng `2c=AB`, `2a=vΔt`, `b²=c²−a²`, `0<2a<2c`; sau đó mới dùng thông tin trạm đến trước để chọn nhánh.  
+4. **Tự sửa:** ghi bảng `2c=AB`, `2a=vΔt`, `b²=c²−a²`, `0<2a<2c`; sau đó mới dùng thông tin trạm đến trước để chọn nhánh.  
 
-    5. **Luyện đúng nguồn:** B22-C02/P02 → First Try mới nếu chưa mở đáp án → D2 mới; đã xem đáp án D4 thì không tái dùng D4 cho RD1.
+5. **Luyện đúng nguồn:** B22-C02/P02 → First Try mới nếu chưa mở đáp án → D2 mới; đã xem đáp án D4 thì không tái dùng D4 cho RD1.
+
+</details>
 
 ### Elip — trục lớn trùng \(Ox\)
 
