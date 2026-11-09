@@ -188,7 +188,7 @@ Chỉ tính \(n(A)/n(\Omega)\) khi chọn đều từng kết quả sơ cấp đ
 
 **Cách đọc hình.** Mỗi ô của bảng là một cặp **(mặt đồng xu, số chấm xúc xắc)**. Có 2 hàng và 6 cột nên 12 kết quả; bốn ô đánh dấu có số chấm 3 hoặc 6, suy ra xác suất 4/12.
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B26_COIN_DIE_SAMPLE_SPACE.svg" loading="lazy" alt="Bảng 2 nhân 6 kết quả gieo đồng xu và xúc xắc"><figcaption>Mô hình 12 kết quả đồng khả năng của phép thử đồng xu × xúc xắc.</figcaption></figure>
+<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../docs/assets/images/thpt/THPT_G10_B26_COIN_DIE_SAMPLE_SPACE.svg" loading="lazy" alt="Bảng 2 nhân 6 kết quả gieo đồng xu và xúc xắc"><figcaption>Mô hình 12 kết quả đồng khả năng của phép thử đồng xu × xúc xắc.</figcaption></figure>
 
 
 Một **phép thử ngẫu nhiên** là hành động có thể biết trước các kết quả có thể xảy ra nhưng không chắc kết quả cụ thể của lần thử. Kí hiệu **Ω** là *không gian mẫu*: tập tất cả kết quả của phép thử. Khi gieo một con xúc xắc sáu mặt cân đối, Ω={1,2,3,4,5,6}. Nêu rõ một kết quả là một số chấm, không phải xác suất.
