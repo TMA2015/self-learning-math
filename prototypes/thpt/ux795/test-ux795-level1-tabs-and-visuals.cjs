@@ -29,9 +29,9 @@ assert.equal((md.match(/data-thpt-help-id="/g)||[]).length,3);
 assert.equal((md.match(/<details\b/g)||[]).length,(md.match(/<\/details>/g)||[]).length);
 assert(!html.includes('slm-level2-tabs'),'No second-tier tabs');
 
-const scripts=[...html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)];
-for(const script of scripts){if(script[1].trim())new vm.Script(script[1]);}
-const app=scripts.at(-1)[1], begin=app.indexOf('function buildLevel1Tabs'),end=app.indexOf('let activeTypeset=');
+const scripts=[...html.matchAll(/<script([^>]*)>([\s\S]*?)<\/script>/g)];
+for(const script of scripts){if(!script[1].includes('application/json') && script[2].trim())new vm.Script(script[2]);}
+const app=scripts.at(-1)[2], begin=app.indexOf('function buildLevel1Tabs'),end=app.indexOf('let activeTypeset=');
 assert(begin>=0 && end>begin,'Reusable single-level tab builder present');
 
 class E{
