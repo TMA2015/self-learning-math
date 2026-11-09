@@ -18,7 +18,7 @@ Bài học đi từ hai cách mô tả đường thẳng đến các dạng phư
 
 ## 2. Kiến thức SGK
 
-Đọc vì sao cần học, tự làm Tự thử trước khi mở đáp án và chỉ quay lại Core sau khi đã đối chiếu. Các câu này là luyện tập không ghi Mastery.
+Đọc vì sao cần học, tự làm Tự thử trước khi mở đáp án và chỉ quay lại Core sau khi đã đối chiếu. Các câu này là luyện tập không ghi điểm thành thạo.
 
 
 <span id="thpt-g10-chvii-try01" data-thpt-first-try-id="THPT-G10-CHVII-TRY01" data-outcome-id="G10-B19-NORMAL_DIRECTION" data-thpt-help-ref="HELP-G10-CHVII-TRY01"></span>
@@ -43,7 +43,7 @@ Muốn đổi giữa hai loại vectơ, xoay tọa độ 90 độ: n=(a,b) khác
 
     **Lý do:** Tích vô hướng bằng 0 chứng minh u vuông góc với pháp tuyến n, tức song song với đường thẳng d; u không phải vectơ không.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY01` bên dưới; quay lại câu canonical cũ `THPT-G10-B19-C01` khi đã hiểu kiến thức.
+    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY01` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
 
 <span id="help-g10-chvii-try01" data-thpt-help-id="HELP-G10-CHVII-TRY01"></span>
 
@@ -57,9 +57,9 @@ Muốn đổi giữa hai loại vectơ, xoay tọa độ 90 độ: n=(a,b) khác
 
     4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B19-C01` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B19-C01` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B19-C01">Mở câu luyện tập đã review để tự sửa</a>
+<a href="../luyen-tap/?item=THPT-G10-B19-C01">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
 
 
 <span id="thpt-g10-chvii-try02" data-thpt-first-try-id="THPT-G10-CHVII-TRY02" data-outcome-id="G10-B19-GENERAL_POINT" data-thpt-help-ref="HELP-G10-CHVII-TRY02"></span>
@@ -84,7 +84,7 @@ Từ điểm A(x0,y0), n=(a,b)≠0, viết a(x-x0)+b(y-y0)=0 rồi khai triển.
 
     **Lý do:** AM=(x-1,y-3), n·AM=2(x-1)-(y-3); thế A được 0. Không tự đảo vai trò n với vectơ chỉ phương.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY02` bên dưới; quay lại câu canonical cũ `THPT-G10-B19-C02` khi đã hiểu kiến thức.
+    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY02` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
 
 <span id="help-g10-chvii-try02" data-thpt-help-id="HELP-G10-CHVII-TRY02"></span>
 
@@ -98,9 +98,9 @@ Từ điểm A(x0,y0), n=(a,b)≠0, viết a(x-x0)+b(y-y0)=0 rồi khai triển.
 
     4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B19-C02` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B19-C02` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B19-C02">Mở câu luyện tập đã review để tự sửa</a>
+<a href="../luyen-tap/?item=THPT-G10-B19-C02">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
 
 
 <span id="thpt-g10-chvii-try03" data-thpt-first-try-id="THPT-G10-CHVII-TRY03" data-outcome-id="G10-B19-PARAMETRIC" data-thpt-help-ref="HELP-G10-CHVII-TRY03"></span>
@@ -125,7 +125,7 @@ Chọn một điểm A và một vectơ chỉ phương u≠0, đặt x=xA+tux, y
 
     **Lý do:** Khi t=0 thu A; khi t=1 thu A+u=(-1,2). Mọi điểm thuộc đường có độ dời t·u.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY03` bên dưới; quay lại câu canonical cũ `THPT-G10-B19-P01` khi đã hiểu kiến thức.
+    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY03` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
 
 <span id="help-g10-chvii-try03" data-thpt-help-id="HELP-G10-CHVII-TRY03"></span>
 
@@ -139,9 +139,9 @@ Chọn một điểm A và một vectơ chỉ phương u≠0, đặt x=xA+tux, y
 
     4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B19-P01` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B19-P01` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B19-P01">Mở câu luyện tập đã review để tự sửa</a>
+<a href="../luyen-tap/?item=THPT-G10-B19-P01">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
 
 
 <span id="thpt-g10-chvii-try04" data-thpt-first-try-id="THPT-G10-CHVII-TRY04" data-outcome-id="G10-B19-TWO_POINTS" data-thpt-help-ref="HELP-G10-CHVII-TRY04"></span>
@@ -166,7 +166,7 @@ Kiểm A≠B, tính AB, chọn n vuông góc, viết n·AM=0 và thử cả A,B.
 
     **Lý do:** AB=(3,3)≠0, chọn n=(1,-1). Qua A: (x+1)-(y-2)=0 ⇒ x-y+3=0; thế B: 2-5+3=0.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY04` bên dưới; quay lại câu canonical cũ `THPT-G10-B19-P02` khi đã hiểu kiến thức.
+    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY04` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
 
 <span id="help-g10-chvii-try04" data-thpt-help-id="HELP-G10-CHVII-TRY04"></span>
 
@@ -180,9 +180,9 @@ Kiểm A≠B, tính AB, chọn n vuông góc, viết n·AM=0 và thử cả A,B.
 
     4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B19-P02` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B19-P02` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B19-P02">Mở câu luyện tập đã review để tự sửa</a>
+<a href="../luyen-tap/?item=THPT-G10-B19-P02">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
 
 
 <span id="thpt-g10-chvii-try05" data-thpt-first-try-id="THPT-G10-CHVII-TRY05" data-outcome-id="G10-B19-MEMBERSHIP" data-thpt-help-ref="HELP-G10-CHVII-TRY05"></span>
@@ -207,7 +207,7 @@ Thế (xM,yM) vào ax+by+c; bằng 0 thì M thuộc, khác 0 thì không. Không
 
     **Lý do:** Điểm thuộc là nghiệm của phương trình theo cặp tọa độ. Đây là phép thử hai lần độc lập.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY05` bên dưới; quay lại câu canonical cũ `THPT-G10-B19-P03` khi đã hiểu kiến thức.
+    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY05` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
 
 <span id="help-g10-chvii-try05" data-thpt-help-id="HELP-G10-CHVII-TRY05"></span>
 
@@ -221,9 +221,9 @@ Thế (xM,yM) vào ax+by+c; bằng 0 thì M thuộc, khác 0 thì không. Không
 
     4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B19-P03` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B19-P03` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B19-P03">Mở câu luyện tập đã review để tự sửa</a>
+<a href="../luyen-tap/?item=THPT-G10-B19-P03">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
 
 
 <span id="thpt-g10-chvii-try06" data-thpt-first-try-id="THPT-G10-CHVII-TRY06" data-outcome-id="G10-B19-MULTISTEP" data-thpt-help-ref="HELP-G10-CHVII-TRY06"></span>
@@ -248,7 +248,7 @@ Giải hệ trước để có tọa độ giao; kiểm bằng cách thế lại
 
     **Lý do:** Cộng hai phương trình được 2x=6 ⇒ x=3, y=1. Pháp tuyến (1,1) và (1,-1) có tích vô hướng 1-1=0.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY06` bên dưới; quay lại câu canonical cũ `THPT-G10-B19-P06` khi đã hiểu kiến thức.
+    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY06` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
 
 <span id="help-g10-chvii-try06" data-thpt-help-id="HELP-G10-CHVII-TRY06"></span>
 
@@ -262,9 +262,9 @@ Giải hệ trước để có tọa độ giao; kiểm bằng cách thế lại
 
     4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B19-P06` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B19-P06` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B19-P06">Mở câu luyện tập đã review để tự sửa</a>
+<a href="../luyen-tap/?item=THPT-G10-B19-P06">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
 
 
 <span id="thpt-g10-chvii-try07" data-thpt-first-try-id="THPT-G10-CHVII-TRY07" data-outcome-id="G10-B19-LINEAR_MODEL" data-thpt-help-ref="HELP-G10-CHVII-TRY07"></span>
@@ -289,7 +289,7 @@ Tính m=(y2-y1)/(x2-x1) khi x2≠x1; thay một điểm để tìm b, sau đó k
 
     **Lý do:** Hệ số góc (9-5)/(2-0)=2, giá trị tại t=0 là 5. Đây là phép ngoại suy t=3, chỉ hợp lý nếu giả thiết tăng đều vẫn đúng.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY07` bên dưới; quay lại câu canonical cũ `THPT-G10-B19-P04` khi đã hiểu kiến thức.
+    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY07` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
 
 <span id="help-g10-chvii-try07" data-thpt-help-id="HELP-G10-CHVII-TRY07"></span>
 
@@ -303,9 +303,9 @@ Tính m=(y2-y1)/(x2-x1) khi x2≠x1; thay một điểm để tìm b, sau đó k
 
     4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B19-P04` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B19-P04` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B19-P04">Mở câu luyện tập đã review để tự sửa</a>
+<a href="../luyen-tap/?item=THPT-G10-B19-P04">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
 
 ### Vectơ pháp tuyến và vectơ chỉ phương
 
@@ -379,5 +379,5 @@ Cho \(A(1;2)\), \(B(4;3)\). Ta có \(\overrightarrow{AB}=(3;1)\), nên một ph�
 
 **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/).
 
-<p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 10 Kết nối tri thức với cuộc sống và học liệu canonical SLM. Lời giảng được biên tập nhằm hỗ trợ tự học độc lập.</p>
+<p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 10 Kết nối tri thức với cuộc sống và học liệu SLM hiện hành. Lời giảng được biên tập nhằm hỗ trợ tự học độc lập.</p>
 
