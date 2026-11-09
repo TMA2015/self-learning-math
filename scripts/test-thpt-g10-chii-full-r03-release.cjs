@@ -1,16 +1,10 @@
 #!/usr/bin/env node
 "use strict";
-/* Source-equivalent G10 CHII FULL R03 (AUTHORING #745; source Git blob
- * 25f4eaf91483cb310ed13ebc5080f98cd247dd70; reviewer chain
- * 105e55939383c14242652dc326e508656643f07d).
- * This is release verification, not a second academic verdict. Q18 metadata-only
- * mismatch is not a review blocker under owner decision GitHub Issue #787.
- */
+/* UX795 G10 ChII source-locked model B; Q15/16 + Golden preserved, not independent academic verdict. */
 const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path"),crypto=require("node:crypto");
 const root=path.resolve(__dirname,".."),read=p=>fs.readFileSync(path.join(root,p),"utf8");
 const gitblob=p=>{const b=fs.readFileSync(path.join(root,p));return crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+b.length+"\0"),b])).digest("hex")};
 const shaText=s=>{const b=Buffer.from(s);return crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+b.length+"\0"),b])).digest("hex")};
-const fnv=t=>{let h=2166136261;for(let i=0;i<t.length;i++)h=Math.imul(h^t.charCodeAt(i),16777619)>>>0;return h.toString(16).padStart(8,"0")};
 const records=[
   {
     "lesson": 3,
@@ -83,31 +77,32 @@ const records=[
     "hash": "3cd971c5"
   }
 ];
-const original={3:"d63f02e2876622eaf88c987e41e2800689e620d2",4:"2cbcd2f1c2e774298936f53bd8a119e6e2eda57b"};
-const names=["Vì sao cần học","Điều phải nhớ trước","Hình thành bản chất","Hướng dẫn đọc hình","Vì sao chọn phương pháp","Tự thử trước Core"];
-const answers=["Đáp án canonical","Giải thích và kiểm điều kiện","D6 · Tự khắc phục sau khi thử","Đường trở lại"];
+const snapshot={3:"d7fab29f7727e1873120c81353d9db0d30ef2c69",4:"ad312d8eec7386f989846edb379be285a6ba1d7a"};
+const tabs=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
 const seen=[];
 for(const n of [3,4]){
  const p="docs/thpt-preview/sgk/chuong-ii/bai-"+n+".md",s=read(p);
- const range=/<!-- G10_CHII_FULL_R03_ALL_BEGIN -->[\s\S]*?<!-- G10_CHII_FULL_R03_ALL_END -->\n\n/g;
- assert.equal([...s.matchAll(range)].length,1,"Exactly one bounded source-equivalent addition B"+n);
- assert.equal(shaText(s.replace(range,"")),original[n],"Exact original S1 Academic source must remain unmodified B"+n);
- const blocks=[...s.matchAll(/<!-- G10_CHII_R03_BEGIN:(THPT-G10-CHII-TRY\d\d) OUTCOME=(G10-B0[34]-[A-Z_]+) -->([\s\S]*?)<!-- G10_CHII_R03_END:\1 -->/g)];
- assert.equal(blocks.length,5,"Five canonical approved outcomes B"+n);
- for(const [,id,outcome,text]of blocks){
-  const k=records.find(x=>x.id===id);assert(k&&k.lesson===n&&k.outcome===outcome,"Canonical placement mismatch "+id);
-  assert(!seen.includes(id),"No duplicated Q15 item "+id);seen.push(id);
-  assert(text.includes('data-thpt-first-try-id="'+id+'"')&&text.includes('data-outcome-id="'+outcome+'"')&&text.includes('data-thpt-help-ref="'+k.help+'"'),"Q15/HELP reference "+id);
-  const peds=[...text.matchAll(/^\*\*([^*]+):\*\* (.*)$/gm)].filter(m=>names.includes(m[1])).map(m=>({name:m[1],value:m[2]}));
-  assert.deepEqual(peds.map(x=>x.name),names,"PED1–PED6 student-first pedagogy "+id);
-  const answersParsed=[...text.matchAll(/^    \*\*([^*]+):\*\* ([^\n]+)$/gm)].filter(m=>answers.includes(m[1])).map(m=>({name:m[1],value:m[2]}));
-  assert.deepEqual(answersParsed.map(x=>x.name),answers,"All four verbatim original authoring answer/HELP lines "+id);
-  assert.equal(fnv(JSON.stringify([outcome,id,k.help,peds.map(x=>x.value),answersParsed.map(x=>x.value)])),k.hash,"Source fingerprint must match approved exact R02 text "+id);
-  assert.equal((text.match(/\?\?\? question "Đã tự làm\? Tự mở đáp án và hướng khắc phục"/g)||[]).length,1,"Only one voluntary answer disclosure "+id);
-  assert(!/^\s*ROLE:|^\s*SCORING:|SUPPORT_ONLY|RELEASE_AUTHORIZATION/.test(text),"No authoring metadata leaked "+id);
-  assert(!/data-thpt-help-id="HELP-G10-CHII-TRY/.test(text),"Do not duplicate four existing canonical D6 HELP");
+ assert.equal(shaText(s),snapshot[n],"B"+n+": exact Model B source receipt drift, classify Delta C before updating");
+ assert.deepEqual([...s.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]),tabs,"B"+n+": exactly four owner-approved L1 tabs");
+ assert(!/^    === "/m.test(s),"B"+n+": no L2 tabs in phase 1");
+ const ids=[...s.matchAll(/data-thpt-first-try-id="([^"]+)"/g)].map(m=>m[1]);
+ assert.equal(ids.length,5,"B"+n+": five Q15 canonical IDs");
+ assert.equal(new Set(ids).size,5,"B"+n+": repeated First Try");
+ for(const k of records.filter(v=>v.lesson===n)){
+  assert(ids.includes(k.id),"B"+n+": Q15 missing "+k.id);
+  const marker='data-thpt-first-try-id="'+k.id+'" data-outcome-id="'+k.outcome+'" data-thpt-help-ref="'+k.help+'"';
+  assert(s.includes(marker),"B"+n+": original outcome/HELP relation changed "+k.id);
+  assert(!seen.includes(k.id),"Duplicate canonical "+k.id);seen.push(k.id);
  }
- for(const help of [1,2])assert.equal((s.match(new RegExp('data-thpt-help-id="HELP-G10-B0'+n+'-0'+help+'"','g'))||[]).length,1,"Existing reviewed R01 D6 untouched B"+n+" HELP"+help);
+ for(const h of [1,2]){
+  const id="HELP-G10-B0"+n+"-0"+h;
+  assert.equal((s.match(new RegExp('data-thpt-help-id="'+id+'"','g'))||[]).length,1,"B"+n+": reviewed D6 "+id);
+ }
+ assert.equal((s.match(/^    \?\?\? (?:question|tip) "/gm)||[]).length,7,"B"+n+": five closed First Try and two closed HELP");
+ assert.equal((s.match(/<figure\b/g)||[]).length,1,"B"+n+": source SVG retained");
+ assert.equal((s.match(/\\\(/g)||[]).length,(s.match(/\\\)/g)||[]).length,"B"+n+": balanced inline TeX");
+ assert(s.includes("luyen-tap.md")&&s.includes("tu-kiem-tra-chuong.md"),"B"+n+": Core/Final Submit links resolve");
+ assert(!/PREREQUISITE_CONFIRMED|CONTENT_READY:|REVIEW_RECEIPT/.test(s),"B"+n+": student-facing audit leak");
 }
 assert.equal(seen.length,10);assert.equal(new Set(seen).size,10);
 for(const [p,sha]of [
@@ -127,4 +122,4 @@ if(process.argv.includes("--built")){
   assert(!html.includes("??? question"),"No raw Markdown disclosure B"+n);
  }
 }
-console.log("PASS ChII FULL R03: original 2 SGK Git blobs, 10 verbatim PED1–6/answers and 4 reused D6, historical 16 formative+2 Written+14 Q16, no official Mastery.");
+console.log("PASS ChII UX795: two exact Model B SHA, 10 original outcome-to-HELP roles, 4 D6, historical formative/Written/Q16 assets and Golden preserved.");
