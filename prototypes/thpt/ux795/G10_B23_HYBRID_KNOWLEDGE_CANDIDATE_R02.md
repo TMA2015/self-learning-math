@@ -34,26 +34,33 @@ Quy tắc cộng đếm các khả năng thay thế nhau: thực hiện cách A 
 
 **Em vận dụng.** Một bạn được chọn đúng một phần thưởng: một trong 2 cuốn truyện hoặc một trong 6 vé xem phim khác nhau. Có mấy lựa chọn?
 
-??? question "Tự mở đáp án sau khi đã tự làm"
-    **Đáp án:** 8 lựa chọn.
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Tự mở đáp án sau khi đã tự làm</summary>
 
-    **Lập luận:** Một phần thưởng thuộc đúng một trong hai nhóm không trùng: 2 cuốn truyện hoặc 6 vé, nên 2+6=8.
+**Đáp án:** 8 lựa chọn.
 
-    **Nếu chưa đúng:** xem hướng dẫn tự sửa tương ứng, sau đó luyện câu liên quan trong phần Luyện tập ở phần Luyện tập (không dùng câu đã xem lời giải làm chứng cứ tự kiểm tra độc lập).
+**Lập luận:** Một phần thưởng thuộc đúng một trong hai nhóm không trùng: 2 cuốn truyện hoặc 6 vé, nên 2+6=8.
 
-    <a href="#help-g10-chviii-try01">Đến hướng dẫn tự sửa</a>
+**Nếu chưa đúng:** xem hướng dẫn tự sửa tương ứng, sau đó luyện câu liên quan ở phần Luyện tập (không dùng câu đã xem lời giải làm chứng cứ tự kiểm tra độc lập).
+
+<a href="#help-g10-chviii-try01">Đến hướng dẫn tự sửa</a>
+
+</details>
 
 <span id="help-g10-chviii-try01" data-thpt-help-id="HELP-G10-CHVIII-TRY01"></span>
 
-??? tip "Nếu chưa làm được — khắc phục 5 bước"
-    1. **Nhận diện lỗi:** Nếu nhân 2×6, em đang đếm một cặp truyện–vé, không phải chỉ chọn một phần thưởng.
-    2. **Quay lại bản chất:** Quy tắc cộng đếm các khả năng thay thế nhau: thực hiện cách A HOẶC cách B. Chỉ cộng số cách khi hai nhánh không có phương án trùng nhau, nếu có phải loại phần giao.
-    3. **Tự làm lại:** Khoanh từ 'hoặc', vẽ 2 nhánh truyện và 6 nhánh vé, kiểm đủ 8 kết quả.
-    4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không tính điểm thành thạo.
-    5. **Luyện tiếp:** `THPT-G10-B23-C01`, câu luyện tập đã có, phù hợp `G10-B23-ADDITION`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
+<details class="thpt-r4-pedagogical-note thpt-r4-help-fold" markdown="1">
+<summary>Nếu chưa làm được — khắc phục 5 bước</summary>
 
-    <a href="../luyen-tap/?item=THPT-G10-B23-C01">Mở câu luyện tập đã được kiểm tra</a>
+1. **Nhận diện lỗi:** Nếu nhân 2×6, em đang đếm một cặp truyện–vé, không phải chỉ chọn một phần thưởng.
+2. **Quay lại bản chất:** Quy tắc cộng đếm các khả năng thay thế nhau: thực hiện cách A HOẶC cách B. Chỉ cộng số cách khi hai nhánh không có phương án trùng nhau, nếu có phải loại phần giao.
+3. **Tự làm lại:** Khoanh từ 'hoặc', vẽ 2 nhánh truyện và 6 nhánh vé, kiểm đủ 8 kết quả.
+4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không tính điểm thành thạo.
+5. **Luyện tiếp:** `THPT-G10-B23-C01`, câu luyện tập cùng kỹ năng; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
 
+<a href="../luyen-tap/?item=THPT-G10-B23-C01">Mở câu luyện tập đã được kiểm tra</a>
+
+</details>
 
 <span id="thpt-g10-chviii-try02" data-thpt-first-try-id="THPT-G10-CHVIII-TRY02" data-outcome-id="G10-B23-MULTIPLICATION"></span>
 
@@ -71,26 +78,33 @@ Quy tắc nhân đếm các đường đi hoàn chỉnh qua nhiều bước: m�
 
 **Em vận dụng.** Có 4 loại bánh mì khác nhau và 3 loại nhân; mỗi suất gồm đúng một loại bánh và một loại nhân. Có bao nhiêu suất?
 
-??? question "Tự mở đáp án sau khi đã tự làm"
-    **Đáp án:** 12 suất.
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Tự mở đáp án sau khi đã tự làm</summary>
 
-    **Lập luận:** Mỗi trong 4 loại bánh ghép được với 3 loại nhân: 4×3=12 cặp phân biệt; không bỏ sót hay đếm trùng.
+**Đáp án:** 12 suất.
 
-    **Nếu chưa đúng:** xem hướng dẫn tự sửa tương ứng, sau đó luyện câu liên quan trong phần Luyện tập ở phần Luyện tập (không dùng câu đã xem lời giải làm chứng cứ tự kiểm tra độc lập).
+**Lập luận:** Mỗi trong 4 loại bánh ghép được với 3 loại nhân: 4×3=12 cặp phân biệt; không bỏ sót hay đếm trùng.
 
-    <a href="#help-g10-chviii-try02">Đến hướng dẫn tự sửa</a>
+**Nếu chưa đúng:** xem hướng dẫn tự sửa tương ứng, sau đó luyện câu liên quan ở phần Luyện tập (không dùng câu đã xem lời giải làm chứng cứ tự kiểm tra độc lập).
+
+<a href="#help-g10-chviii-try02">Đến hướng dẫn tự sửa</a>
+
+</details>
 
 <span id="help-g10-chviii-try02" data-thpt-help-id="HELP-G10-CHVIII-TRY02"></span>
 
-??? tip "Nếu chưa làm được — khắc phục 5 bước"
-    1. **Nhận diện lỗi:** Nếu cộng 4+3, em đang đếm chọn một loại bánh HOẶC một loại nhân, chứ không phải suất gồm cả hai.
-    2. **Quay lại bản chất:** Quy tắc nhân đếm các đường đi hoàn chỉnh qua nhiều bước: mỗi lựa chọn của bước trước có số lựa chọn tiếp theo tương ứng; khi cùng số cách, tổng số là tích.
-    3. **Tự làm lại:** Liệt kê (A1,Q1),(A1,Q2), ... cho 3 áo và 2 quần; kiểm đủ 6 lá.
-    4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không tính điểm thành thạo.
-    5. **Luyện tiếp:** `THPT-G10-B23-C02`, câu luyện tập đã có, phù hợp `G10-B23-MULTIPLICATION`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
+<details class="thpt-r4-pedagogical-note thpt-r4-help-fold" markdown="1">
+<summary>Nếu chưa làm được — khắc phục 5 bước</summary>
 
-    <a href="../luyen-tap/?item=THPT-G10-B23-C02">Mở câu luyện tập đã được kiểm tra</a>
+1. **Nhận diện lỗi:** Nếu cộng 4+3, em đang đếm chọn một loại bánh HOẶC một loại nhân, chứ không phải suất gồm cả hai.
+2. **Quay lại bản chất:** Quy tắc nhân đếm các đường đi hoàn chỉnh qua nhiều bước: mỗi lựa chọn của bước trước có số lựa chọn tiếp theo tương ứng; khi cùng số cách, tổng số là tích.
+3. **Tự làm lại:** Liệt kê (A1,Q1),(A1,Q2), ... cho 3 áo và 2 quần; kiểm đủ 6 lá.
+4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không tính điểm thành thạo.
+5. **Luyện tiếp:** `THPT-G10-B23-C02`, câu luyện tập cùng kỹ năng; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
 
+<a href="../luyen-tap/?item=THPT-G10-B23-C02">Mở câu luyện tập đã được kiểm tra</a>
+
+</details>
 
 <span id="thpt-g10-chviii-try03" data-thpt-first-try-id="THPT-G10-CHVIII-TRY03" data-outcome-id="G10-B23-DIGIT_COUNT"></span>
 
@@ -108,26 +122,33 @@ Một mã hai chữ số là số tự nhiên nên chữ số hàng chục khôn
 
 **Em vận dụng.** Từ các chữ số 0,1,2,3 tạo số tự nhiên có hai chữ số khác nhau. Có bao nhiêu số?
 
-??? question "Tự mở đáp án sau khi đã tự làm"
-    **Đáp án:** 9 số.
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Tự mở đáp án sau khi đã tự làm</summary>
 
-    **Lập luận:** Hàng chục có 3 cách (1,2,3); với mỗi cách, hàng đơn vị còn 3 chữ số trong tập 0..3 nên 3×3=9. Ví dụ 10,12,13,20,21,23,30,31,32.
+**Đáp án:** 9 số.
 
-    **Nếu chưa đúng:** xem hướng dẫn tự sửa tương ứng, sau đó luyện câu liên quan trong phần Luyện tập ở phần Luyện tập (không dùng câu đã xem lời giải làm chứng cứ tự kiểm tra độc lập).
+**Lập luận:** Hàng chục có 3 cách (1,2,3); với mỗi cách, hàng đơn vị còn 3 chữ số trong tập 0..3 nên 3×3=9. Ví dụ 10,12,13,20,21,23,30,31,32.
 
-    <a href="#help-g10-chviii-try03">Đến hướng dẫn tự sửa</a>
+**Nếu chưa đúng:** xem hướng dẫn tự sửa tương ứng, sau đó luyện câu liên quan ở phần Luyện tập (không dùng câu đã xem lời giải làm chứng cứ tự kiểm tra độc lập).
+
+<a href="#help-g10-chviii-try03">Đến hướng dẫn tự sửa</a>
+
+</details>
 
 <span id="help-g10-chviii-try03" data-thpt-help-id="HELP-G10-CHVIII-TRY03"></span>
 
-??? tip "Nếu chưa làm được — khắc phục 5 bước"
-    1. **Nhận diện lỗi:** Nếu tính 4×3=12, em đã cho chữ số 0 ở đầu và đếm cả dạng '01' không phải số hai chữ số.
-    2. **Quay lại bản chất:** Đếm một số là hoàn tất hai bước hàng chục → hàng đơn vị; điều kiện 'không lặp' làm số lựa chọn bước thứ hai phụ thuộc chữ số đã chọn, nhưng còn đúng một số lượng bằng nhau cho mọi chọn ở bước đầu.
-    3. **Tự làm lại:** Viết ngay hàng chục 1,2,3 và đếm nhánh hàng đơn vị tương ứng, không điền 0 vào đầu.
-    4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không tính điểm thành thạo.
-    5. **Luyện tiếp:** `THPT-G10-B23-P05`, câu luyện tập đã có, phù hợp `G10-B23-DIGIT_COUNT`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
+<details class="thpt-r4-pedagogical-note thpt-r4-help-fold" markdown="1">
+<summary>Nếu chưa làm được — khắc phục 5 bước</summary>
 
-    <a href="../luyen-tap/?item=THPT-G10-B23-P05">Mở câu luyện tập đã được kiểm tra</a>
+1. **Nhận diện lỗi:** Nếu tính 4×3=12, em đã cho chữ số 0 ở đầu và đếm cả dạng '01' không phải số hai chữ số.
+2. **Quay lại bản chất:** Đếm một số là hoàn tất hai bước hàng chục → hàng đơn vị; điều kiện 'không lặp' làm số lựa chọn bước thứ hai phụ thuộc chữ số đã chọn, nhưng còn đúng một số lượng bằng nhau cho mọi chọn ở bước đầu.
+3. **Tự làm lại:** Viết ngay hàng chục 1,2,3 và đếm nhánh hàng đơn vị tương ứng, không điền 0 vào đầu.
+4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không tính điểm thành thạo.
+5. **Luyện tiếp:** `THPT-G10-B23-P05`, câu luyện tập cùng kỹ năng; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
 
+<a href="../luyen-tap/?item=THPT-G10-B23-P05">Mở câu luyện tập đã được kiểm tra</a>
+
+</details>
 
 <span id="thpt-g10-chviii-try04" data-thpt-first-try-id="THPT-G10-CHVIII-TRY04" data-outcome-id="G10-B23-CASE_SPLIT"></span>
 
@@ -145,25 +166,33 @@ Nếu đếm số chẵn tạo từ các chữ số cho trước, chữ số hà
 
 **Em vận dụng.** Từ 0,1,2,3, lập được bao nhiêu số chẵn có hai chữ số khác nhau?
 
-??? question "Tự mở đáp án sau khi đã tự làm"
-    **Đáp án:** 5 số: 10,12,20,30,32.
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Tự mở đáp án sau khi đã tự làm</summary>
 
-    **Lập luận:** Tận cùng 0: hàng chục có 3 cách 1,2,3 →3 số. Tận cùng 2: hàng chục có 2 cách 1 hoặc3 →2 số. Cộng hai trường hợp rời được 5.
+**Đáp án:** 5 số: 10,12,20,30,32.
 
-    **Nếu chưa đúng:** xem hướng dẫn tự sửa tương ứng, sau đó luyện câu liên quan trong phần Luyện tập ở phần Luyện tập (không dùng câu đã xem lời giải làm chứng cứ tự kiểm tra độc lập).
+**Lập luận:** Tận cùng 0: hàng chục có 3 cách 1,2,3 →3 số. Tận cùng 2: hàng chục có 2 cách 1 hoặc3 →2 số. Cộng hai trường hợp rời được 5.
 
-    <a href="#help-g10-chviii-try04">Đến hướng dẫn tự sửa</a>
+**Nếu chưa đúng:** xem hướng dẫn tự sửa tương ứng, sau đó luyện câu liên quan ở phần Luyện tập (không dùng câu đã xem lời giải làm chứng cứ tự kiểm tra độc lập).
+
+<a href="#help-g10-chviii-try04">Đến hướng dẫn tự sửa</a>
+
+</details>
 
 <span id="help-g10-chviii-try04" data-thpt-help-id="HELP-G10-CHVIII-TRY04"></span>
 
-??? tip "Nếu chưa làm được — khắc phục 5 bước"
-    1. **Nhận diện lỗi:** Nếu tính 2×3=6, em đã bỏ qua điều kiện khi hàng đơn vị là 2 thì hàng chục chỉ còn 2 cách, không phải 3.
-    2. **Quay lại bản chất:** Nếu đếm số chẵn tạo từ các chữ số cho trước, chữ số hàng đơn vị quyết định các lựa chọn ở hàng chục; chia thành những trường hợp không giao nhau rồi cộng kết quả của từng nhánh.
-    3. **Tự làm lại:** Viết hai nhánh cuối 0 và cuối 2, kiểm lại danh sách đủ 5 số không lặp.
-    4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không tính điểm thành thạo.
-    5. **Luyện tiếp:** `THPT-G10-B23-P05`, câu luyện tập đã có, phù hợp `G10-B23-CASE_SPLIT`; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
+<details class="thpt-r4-pedagogical-note thpt-r4-help-fold" markdown="1">
+<summary>Nếu chưa làm được — khắc phục 5 bước</summary>
 
-    <a href="../luyen-tap/?item=THPT-G10-B23-P05">Mở câu luyện tập đã được kiểm tra</a>
+1. **Nhận diện lỗi:** Nếu tính 2×3=6, em đã bỏ qua điều kiện khi hàng đơn vị là 2 thì hàng chục chỉ còn 2 cách, không phải 3.
+2. **Quay lại bản chất:** Nếu đếm số chẵn tạo từ các chữ số cho trước, chữ số hàng đơn vị quyết định các lựa chọn ở hàng chục; chia thành những trường hợp không giao nhau rồi cộng kết quả của từng nhánh.
+3. **Tự làm lại:** Viết hai nhánh cuối 0 và cuối 2, kiểm lại danh sách đủ 5 số không lặp.
+4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không tính điểm thành thạo.
+5. **Luyện tiếp:** `THPT-G10-B23-P05`, câu luyện tập cùng kỹ năng; nếu làm câu này sau khi đã xem lời giải thì chỉ tính luyện tập, không chứng nhận đánh giá độc lập.
+
+<a href="../luyen-tap/?item=THPT-G10-B23-P05">Mở câu luyện tập đã được kiểm tra</a>
+
+</details>
 
 ### Khái niệm, điều kiện và công thức
 
