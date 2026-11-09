@@ -222,3 +222,4 @@
 
     <p class="thpt-r4-footnote">Nguồn kiến thức: SGK Toán 10 · Kết nối tri thức với cuộc sống · tập một · Bài 1. Lời giảng và ví dụ hỗ trợ tự học được SLM biên tập từ nguồn học liệu đã có.</p>
 
+<p class="thpt-r4-footnote">Nguồn: SGK Toán 10 KNTT tập 1, Bài 1 trang 5–11; SBT Bài 1 trang 5–7. Học liệu tự luyện không dùng làm bài đánh giá độc lập.</p>
