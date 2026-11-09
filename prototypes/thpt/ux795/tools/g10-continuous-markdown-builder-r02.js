@@ -54,6 +54,11 @@ function buildG10KnowledgeR02(source,cfg){
  if(!exampleSection){if(!cfg.worked)throw Error("Missing authored worked example "+cfg.b);exampleSection=cfg.worked;}
  if(cfg.workedLead)exampleSection=cfg.workedLead+"\n\n"+exampleSection;
  let errorSection=errors.join("\n\n").trim();
+ if(!errorSection){
+  const extracted=[];
+  knowledge=knowledge.replace(/<details\\b(?=[^>]*data-thpt-help-id)[\\s\\S]*?<\\/details>/g,m=>{extracted.push(m);return "";});
+  errorSection=extracted.join("\n\n").trim();
+ }
  if(!errorSection){if(!cfg.errors)throw Error("Missing original errors "+cfg.b);errorSection=cfg.errors;}
  const out=["# "+title,"## 1. Khám phá kiến thức","### Cùng tìm hiểu",cfg.lead.trim(),"### Thuật ngữ, kiến thức và kỹ năng",
  "**Thuật ngữ:** "+cfg.terms,"**Sau bài học, em cần làm được:** "+cfg.skills,"## 2. Kiến thức SGK",knowledge.trim(),
