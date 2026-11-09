@@ -19,7 +19,7 @@ e0), parabol, đỉnh, trục đối xứng, khoảng tăng/giảm, cực trị 
 
 **Cách đọc hình.** Quan sát nhãn, hướng và vị trí trên hình; đối chiếu từng chi tiết với khái niệm đang học.
 
-<figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="images/G10_B16_PARABOLA_VERTEX_R02.svg" loading="lazy" alt="Parabol y=(x-1)²-4 có đỉnh I(1,-4), trục x=1 và hai giao điểm với Ox là -1, 3"><figcaption>Hình do SLM vẽ cho **(y=(x-1)^2-4)**, không dùng tọa độ này cho mọi parabol. Đỉnh (I(1,-4)) và trục (x=1) giúp đọc khoảng tăng, giảm.</figcaption></figure>
+<figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="images/G10_B16_PARABOLA_VERTEX_R02.svg" loading="lazy" alt="Parabol y=(x-1)²-4 có đỉnh I(1,-4), trục x=1 và hai giao điểm với Ox là -1, 3"><figcaption>Hình do SLM vẽ cho \(y=(x-1)^2-4\). Đỉnh \(I(1,-4)\) và trục \(x=1\) giúp đọc các khoảng tăng, giảm. Không dùng bộ tọa độ này cho mọi parabol.</figcaption></figure>
 
 ### Bậc hai cần hệ số bậc hai thực sự khác 0
 
