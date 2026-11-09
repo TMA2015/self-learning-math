@@ -35,11 +35,11 @@ for(const check of checks){
   // formal expressions in their original order while pinning the NEW exact source
   // and its canonical IDs. G11 B02 and all non-UX795 logic remain unchanged.
   if(check.file==="docs/thpt-preview/sgk/chuong-iv/bai-9.md") {
-    const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ giải toán","Lỗi thường gặp và cách tự khắc phục"];
+    const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
     const tabs=[...src.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]);
     assert.deepEqual(tabs,labels,"G10 B09 must have exactly four owner-approved Level-1 tabs");
     const start=src.indexOf('=== "Kiến thức SGK"');
-    const end=src.indexOf('=== "Ví dụ giải toán"',start);
+    const end=src.indexOf('=== "Ví dụ"',start);
     assert(start>=0&&end>start,"G10 B09 contiguous Knowledge area missing");
     const body=src.slice(start,end);
     const actual=math(body).map(x=>x.replace(/\s+/g," ").trim());
