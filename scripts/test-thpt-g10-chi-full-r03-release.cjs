@@ -1,48 +1,60 @@
 #!/usr/bin/env node
 "use strict";
-/* One original SLM-THPT-QUALITY-ONE Q01–Q18 standard.
- * UI-only integration verification of AUTHORING ChI R03 (PR #746).
- * Academic material is source-locked there, never invented in RELEASE.
+/* Q01–Q18 single-standard preservation during owner-approved UX795 Delta C.
+ * Grade 10 ChI model B replaces the six QA-heading layout with four coherent
+ * Level-1 tabs. This gate is NOT academic authoring approval; exact source
+ * blob locks and all canonical First Try/HELP/Q16 boundaries remain mandatory.
  */
-const fs=require("node:fs"),path=require("node:path"),assert=require("node:assert/strict");
-const root=path.resolve(__dirname,"..");
-const read=rel=>fs.readFileSync(path.join(root,rel),"utf8");
-const chapters=[
- {file:"docs/thpt-preview/sgk/chuong-i/bai-1.md",lesson:"B01",expected:5,start:1,end:5},
- {file:"docs/thpt-preview/sgk/chuong-i/bai-2.md",lesson:"B02",expected:6,start:6,end:11}
+const fs=require("node:fs"),path=require("node:path"),assert=require("node:assert/strict"),crypto=require("node:crypto");
+const root=path.resolve(__dirname,".."),read=rel=>fs.readFileSync(path.join(root,rel),"utf8");
+const gitBlob=s=>crypto.createHash("sha1").update("blob "+Buffer.byteLength(s,"utf8")+"\0").update(s,"utf8").digest("hex");
+const tabs=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
+const cases=[
+  {file:"docs/thpt-preview/sgk/chuong-i/bai-1.md",id:"B01",first:1,last:5,helps:["HELP-G10-B01-01","HELP-G10-B01-02"],
+   figures:1,sha:"0b8729751a2de0aec450543adfd1808a1a1e1483",
+   concepts:["mệnh đề","phủ định","kéo theo","tương đương","lượng từ"]},
+  {file:"docs/thpt-preview/sgk/chuong-i/bai-2.md",id:"B02",first:6,last:11,helps:["HELP-G10-B02-01","HELP-G10-B02-02","HELP-G10-B02-03"],
+   figures:2,sha:"e122cc154ecdf53709a89f0b8af2f3961f4c6515",
+   concepts:["phần tử","tập con","tập rỗng","hợp","giao","hiệu","phần bù","khoảng"]}
 ];
-const all=[];
-for(const c of chapters){
- const x=read(c.file),head=x.split("## 1. Kiến thức SGK")[0],tail=x.split("## 1. Kiến thức SGK")[1];
- assert.equal(x.split("## 1. Kiến thức SGK").length,2,c.lesson+": one original reviewed D1 section");
- assert(head.includes("Trước khi học — hiểu ý nghĩa trước khi nhớ quy tắc"),"Concept-first before formula");
- for(const label of ["Vì sao cần học?","Em đã biết gì?","Hiểu bản chất trước công thức","Quy tắc và điều kiện áp dụng","Vì sao làm theo cách này?","Tự thử trước Core"])
-  assert.equal((head.match(new RegExp(label.replace(/[?]/g,"\\?"),"g"))||[]).length,c.expected,c.lesson+" requires all PED1–PED6 per outcome: "+label);
- const ids=[...x.matchAll(/data-thpt-first-try-id="([^"]+)"/g)].map(z=>z[1]);
- const expected=Array.from({length:c.expected},(_,i)=>"THPT-G10-CHI-TRY"+String(c.start+i).padStart(2,"0"));
- assert.deepEqual(ids,expected,c.lesson+" original 11 canonical First Try IDs, no duplicates");
- assert.equal((head.match(/<details class="thpt-r4-pedagogical-note" data-ped-first-try="1"/g)||[]).length,c.expected,"Solutions self-reveal after Tự thử only");
- assert.equal((head.match(/Em đã tự thử\? Mở lời giải để đối chiếu/g)||[]).length,c.expected);
- assert(!/(?:PED1|PED2|PED3|PED5|PED6) —/.test(head),"No internal authoring labels shown to learners");
- assert(!head.includes("REVIEW_RECEIPT")&&!head.includes("CONTENT_READY:"),"No audit/admin status on public lessons");
- assert(x.indexOf("## 1. Kiến thức SGK")>x.lastIndexOf("data-thpt-first-try-id"),"First Try is before formal theory");
- assert(tail.includes("## 2. Ví dụ"),"Reviewed old worked examples retained");
- assert(tail.includes("## 3. Hình minh họa"),"Reviewed original D5 examples retained");
- assert(x.includes('href="../luyen-tap/"'),"Existing Golden Core/Luyện tập path intact");
- assert(x.includes('href="../tu-kiem-tra-chuong/"'),"Existing Final Submit route intact");
- assert(!x.includes("chưa kích hoạt"),"Do not mislabel functional client self-check");
- all.push(...ids);
+const seen=[];
+for(const c of cases){
+  const s=read(c.file);
+  assert.equal(gitBlob(s),c.sha,c.id+": exact source receipt changed; classify Delta before updating lock");
+  assert.deepEqual([...s.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]),tabs,
+    c.id+": four and only four Level-1 tabs in owner-approved order");
+  assert(!/^ {4}=== "/m.test(s),c.id+": no Level-2 tabs in Phase 1");
+  for(const w of c.concepts)
+    assert(s.toLowerCase().includes(w),c.id+": core outcome missing: "+w);
+  const ids=[...s.matchAll(/data-thpt-first-try-id="([^"]+)"/g)].map(m=>m[1]);
+  const expected=Array.from({length:c.last-c.first+1},(_,i)=>
+    "THPT-G10-CHI-TRY"+String(c.first+i).padStart(2,"0"));
+  assert.deepEqual(ids,expected,c.id+": original Q15 canonical First Try IDs lost/duplicated");
+  const helpers=[...s.matchAll(/data-thpt-help-id="([^"]+)"/g)].map(m=>m[1]);
+  assert.deepEqual(helpers,c.helps,c.id+": D6 remedial IDs changed or duplicated");
+  assert.equal((s.match(/^    \?\?\? (?:question|tip) "/gm)||[]).length,ids.length+helpers.length,
+    c.id+": 1 closed-by-default disclosure per formative/remediation ID");
+  assert.equal((s.match(/<figure\b/g)||[]).length,c.figures,c.id+": reviewed D5/SVG figures lost");
+  assert.equal((s.match(/\\\(/g)||[]).length,(s.match(/\\\)/g)||[]).length,c.id+": unmatched inline TeX");
+  assert.equal((s.match(/\\\[/g)||[]).length,(s.match(/\\\]/g)||[]).length,c.id+": unmatched display TeX");
+  assert(s.includes("luyen-tap.md")&&s.includes("tu-kiem-tra-chuong.md"),
+    c.id+": Core and end-check links must resolve to MkDocs source pages");
+  assert(!/PREREQUISITE_CONFIRMED|PED[1-6]\/PED|D5 kế thừa|REVIEW_RECEIPT|CONTENT_READY:/.test(s),
+    c.id+": internal QA metadata leaked to student text");
+  assert(!s.includes("chưa kích hoạt"),c.id+": functional chapter self-check mislabeled");
+  seen.push(...ids);
 }
-assert.equal(new Set(all).size,11,"One canonical First Try per outcome, not repeated in the two lessons");
-const b02=read("docs/thpt-preview/sgk/chuong-i/bai-2.md");
-assert(b02.includes('data-thpt-help-id="HELP-G10-B02-03"'),"Additional reviewed R02 D6 interval remediation required");
-assert.equal((b02.match(/data-thpt-help-id="HELP-G10-B02-03"/g)||[]).length,1);
-for(const [name,rel] of [
- ["Golden Core/Luyện tập","docs/thpt-preview/sgk/chuong-i/luyen-tap.md"],
- ["public chapter Final Submit","docs/thpt-preview/sgk/chuong-i/tu-kiem-tra-chuong.md"]
-]){
- const content=read(rel);
- if(name.startsWith("Golden"))assert(content.includes("data-thpt-practice-hub")&&content.includes("data-thpt-open-quiz"),name+" original runtime untouched");
- else assert(content.includes('data-g10-chapter-selfcheck="CHI"')&&content.includes("Final Submit")&&/không/i.test(content)&&content.includes("thành thạo"),name+" Q16 protected from accidental change");
-}
-console.log("PASS G10 ChI FULL R03 interface: 2 theory pages, 11 canonical First Tries, 1 extra D6, original D1/D2/D5/Golden/Q16 routes preserved; no Mastery.");
+assert.equal(new Set(seen).size,11,"exactly 11 Q15 canonical First Try IDs across ChI");
+const b02=read(cases[1].file);
+assert.equal((b02.match(/data-thpt-help-id="HELP-G10-B02-03"/g)||[]).length,1,
+  "B02 extra reviewed interval remediation HELP must remain present");
+const practice=read("docs/thpt-preview/sgk/chuong-i/luyen-tap.md");
+assert(practice.includes("data-thpt-practice-hub")&&practice.includes("data-thpt-open-quiz"),
+  "Golden Core/Luyện tập runtime unchanged");
+const self=read("docs/thpt-preview/sgk/chuong-i/tu-kiem-tra-chuong.md");
+assert(self.includes('data-g10-chapter-selfcheck="CHI"')&&self.includes("Final Submit")
+  &&/không/i.test(self)&&self.includes("thành thạo"),"Q16 Final Submit and Mastery boundary preserved");
+const nav=read("docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js");
+assert(nav.includes('10:[2,4,6,11,14,18,22,25,27]')&&nav.includes("data-sgk-lesson-nav"),
+  "Golden SGK lesson navigation contract preserved outside Knowledge content");
+console.log("PASS G10 ChI UX795: 4 Level-1 tabs, exact B01/B02 snapshot SHA, 11 Q15 tries, 5 HELP, 3 original SVG, collapsed answers and protected Q16/Golden routes.");
