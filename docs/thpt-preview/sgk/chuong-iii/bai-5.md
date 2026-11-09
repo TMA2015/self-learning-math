@@ -205,7 +205,7 @@
 
         **Vì sao sai?** Tọa độ ngang của điểm góc tù nằm bên trái \(Oy\), nên cos âm. Hai góc bù nhau có sin bằng nhau nhưng cos đối nhau.
 
-        **Tự sửa:** Quay lại hình §2.1: chỉ điểm \(M\) và hình chiếu xuống trục hoành. Dùng \(180^\circ-\alpha\) và tự tính lại. [Luyện lại tại Core/Luyện tập](../luyen-tap/).
+        **Tự sửa:** Quay lại hình §2.1: chỉ điểm \(M\) và hình chiếu xuống trục hoành. Dùng \(180^\circ-\alpha\) và tự tính lại. [Luyện lại tại Core/Luyện tập](luyen-tap.md).
 
 
     <span data-thpt-help-id="HELP-G10-B05-02" hidden></span>
@@ -216,10 +216,10 @@
 
         **Vì sao sai?** Tan và cot là phép chia có mẫu; mẫu bằng 0 khiến phép chia **không xác định**. Hệ thức sin²+cos²=1 chỉ cho bình phương, còn dấu cần xét theo khoảng góc.
 
-        **Tự sửa:** Viết mẫu trước, kiểm khác 0, nhìn lại vị trí góc. Với góc tù có sin \(3/5\), tự tính lại cos âm \(-4/5\). [Ôn tại Core/Luyện tập](../luyen-tap/).
+        **Tự sửa:** Viết mẫu trước, kiểm khác 0, nhìn lại vị trí góc. Với góc tù có sin \(3/5\), tự tính lại cos âm \(-4/5\). [Ôn tại Core/Luyện tập](luyen-tap.md).
 
 
-    **Học tiếp:** [Core và Luyện tập Chương III](../luyen-tap/) · [Bài 6 — Hệ thức lượng trong tam giác](../bai-6/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/).
+    **Học tiếp:** [Core và Luyện tập Chương III](luyen-tap.md) · [Bài 6 — Hệ thức lượng trong tam giác](bai-6.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
     <p class="thpt-r4-footnote">Kiến thức đối chiếu theo SGK Toán 10 · Kết nối tri thức · tập 1 · Bài 5, học liệu SLM hiện hành; giải thích nguồn NotebookLM v1 được biên tập chọn lọc. Minh họa góc 120° do SLM xây dựng.</p>
 
