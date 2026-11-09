@@ -7,6 +7,7 @@ on:
       - "docs/assets/images/thpt/**"
       - "scripts/test-ux795-g10-render-draft.cjs"
       - "scripts/test-thpt-chvi-math-block-render.cjs"
+      - "scripts/test-thpt-chvi-student-notes.cjs"
       - ".github/workflows/ux795-g10-draft-render-qa.yml"
 
 permissions:
