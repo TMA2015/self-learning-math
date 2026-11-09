@@ -55,7 +55,7 @@ Chọn đều ngẫu nhiên **một nhóm hai thẻ** từ năm thẻ phân bi�
 
 **Cách đọc hình.** Cây biểu diễn bốn thẻ phân biệt R1,R2,B1,B2; sau lượt đầu chỉ còn ba thẻ. Có 12 cặp có thứ tự đồng khả năng. Nhánh RR có hai cặp, không bằng số nhánh RB hay BR.
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B27_WITHOUT_REPLACEMENT_TREE.svg" loading="lazy" alt="Sơ đồ cây lấy không hoàn lại 12 kết quả"><figcaption>Sơ đồ cây lựa chọn không hoàn lại; chỉ dùng quy tắc đếm lá khi các kết quả sơ cấp đồng khả năng.</figcaption></figure>
+<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../docs/assets/images/thpt/THPT_G10_B27_WITHOUT_REPLACEMENT_TREE.svg" loading="lazy" alt="Sơ đồ cây lấy không hoàn lại 12 kết quả"><figcaption>Sơ đồ cây lựa chọn không hoàn lại; chỉ dùng quy tắc đếm lá khi các kết quả sơ cấp đồng khả năng.</figcaption></figure>
 
 
 Rút một thẻ không hoàn lại làm túi ở lượt hai thay đổi. Nếu vẽ nhánh lượt hai như lượt một, ta đếm cả trường hợp rút lại chính thẻ đã lấy.
