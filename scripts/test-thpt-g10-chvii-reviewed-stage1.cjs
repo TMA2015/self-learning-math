@@ -21,7 +21,14 @@ for(const lesson of required){
  assert.equal(bank.forLesson(lesson,"core").length,2,"Two SGK Core placements required B"+lesson);
  assert.equal(bank.forLesson(lesson,"practice").length,lesson==="22"?7:6,"SGK Practice/Application/specialist placement missing B"+lesson);
  const lessonText=read("docs/thpt-preview/sgk/chuong-vii/bai-"+lesson+".md");
- assert(lessonText.includes("## 1.")&&lessonText.includes("## 3."),"SGK knowledge not stand-alone B"+lesson);
+ const sectionLabels=[...lessonText.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]);
+ assert.deepEqual(sectionLabels,["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
+  "SGK Knowledge must remain a complete, four-tab learner page B"+lesson);
+ const sections=lessonText.split(/^=== "[^"]+"$/gm).slice(1);
+ assert.equal(sections.length,4,"Four Knowledge tabs required B"+lesson);
+ assert(sections.every(section=>section.trim().length>500),
+  "Each SGK Knowledge tab must contain standalone teaching, examples or remediation B"+lesson);
+ assert(!/^==== /m.test(lessonText),"No unapproved Level-2 tabs B"+lesson);
  assert(lessonText.includes("SGK")&&lessonText.includes("SBT"),"S1 lesson page provenance missing B"+lesson);
  // Direct visual source lock, original SGK/SBT Toán 10 KNTT tập 2 PDFs.
  // Only printed-page metadata may change; reviewed math/D6 must remain frozen.
