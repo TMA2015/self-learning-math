@@ -173,7 +173,7 @@
         \(C=180^\circ-45^\circ-45^\circ=90^\circ\), nên tam giác vuông cân tại C. \(AC=BC=\frac{AB}{\sqrt2}=20\) m. Diện tích \(S=\frac12\cdot20\cdot20=200\) m², mặt khác \(S=\frac12 AB\cdot CH\). Vì vậy \(CH=\frac{400}{20\sqrt2}=10\sqrt2\) m.
 
 
-=== "Ví dụ giải toán"
+=== "Ví dụ"
 
     ### Ví dụ 1 — Côsin và diện tích với hình minh họa khớp số liệu
 
@@ -220,7 +220,7 @@
 
     **Kiểm lại.** \(5+7>8\), \(7+8>5\), \(8+5>7\): các cạnh thỏa điều kiện. Không lấy kết quả \(2\sqrt{13}\) của ví dụ khác.
 
-=== "Lỗi thường gặp và cách tự khắc phục"
+=== "Lỗi thường gặp"
 
     <span data-thpt-help-id="HELP-G10-B06-01" hidden></span>
 
