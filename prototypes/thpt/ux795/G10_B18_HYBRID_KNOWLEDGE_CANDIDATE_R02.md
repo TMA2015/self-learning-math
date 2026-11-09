@@ -68,7 +68,7 @@ Bình phương được \(x^2-3x+4=x+2\), suy ra \(x^2-4x+2=0\). Hai nghiệm �
 
 **Cách đọc hình.** Đọc sơ đồ theo thứ tự điều kiện của căn/vế phải, phép bình phương, giải phương trình, rồi thử lại. Mũi tên quay về kiểm tra cho thấy nghiệm phương trình sau bình phương chưa chắc là nghiệm ban đầu.
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_CHVI_B18_RADICAL_FLOW_D5_R03.svg" loading="lazy" alt="Sơ đồ điều kiện cho hai dạng phương trình căn và bước kiểm tra nghiệm gốc"><figcaption>Đọc từ điều kiện đến nghiệm ứng viên, rồi luôn kiểm lại trong phương trình gốc.</figcaption></figure>
+<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../docs/assets/images/thpt/THPT_G10_CHVI_B18_RADICAL_FLOW_D5_R03.svg" loading="lazy" alt="Sơ đồ điều kiện cho hai dạng phương trình căn và bước kiểm tra nghiệm gốc"><figcaption>Đọc từ điều kiện đến nghiệm ứng viên, rồi luôn kiểm lại trong phương trình gốc.</figcaption></figure>
 
 
 Một căn thức thực không bao giờ âm. Do đó nếu nó bằng một biểu thức \(B(x)\), bản thân \(B(x)\) phải không âm, điều thường bị mất khi bình phương.
