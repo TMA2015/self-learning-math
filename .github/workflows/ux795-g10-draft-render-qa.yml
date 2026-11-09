@@ -1,0 +1,33 @@
+name: UX795 G10 Draft Render QA (no deploy)
+on:
+  pull_request:
+    paths:
+      - "docs/thpt-preview/sgk/chuong-*/bai-*.md"
+      - "docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"
+      - "docs/assets/images/thpt/**"
+      - "scripts/test-ux795-g10-render-draft.cjs"
+      - ".github/workflows/ux795-g10-draft-render-qa.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ux795-g10-preview-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  render-model-b:
+    name: Build and inspect G10 all 27 Knowledge pages
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install MkDocs Material
+        run: python -m pip install --disable-pip-version-check mkdocs-material
+      - name: Build draft THPT with full original MkDocs config, no deploy
+        run: mkdocs build --config-file mkdocs.thpt-preview.yml --site-dir site-thpt-preview
+      - name: Enforce 27 rendered pages, four tabs, closed self-reveals, MathJax and SVG paths
+        run: node scripts/test-ux795-g10-render-draft.cjs
