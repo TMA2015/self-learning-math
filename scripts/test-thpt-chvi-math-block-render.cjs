@@ -59,7 +59,7 @@ for(const [lesson,spec] of Object.entries(specs)){
   for(let i=0;i<display.length;i++)assert.equal(blocks[i],display[i],
    "B"+lesson+": built display TeX changed at "+(i+1));
   assert(!html.includes("\n[\n"),"B"+lesson+": raw TeX display delimiters leaked to page");
-  const tabLabels=(html.match(/class="tabbed-set"/g)||[]).length;
+  const tabLabels=(html.match(/class="tabbed-set(?: [^"]+)?"/g)||[]).length;
   assert(tabLabels>=1,"B"+lesson+": no rendered tabbed-set in MkDocs HTML");
   const visibleWrappers=(html.match(/<span class="arithmatex">\\\(/g)||[]).length;
   assert(visibleWrappers>0,"B"+lesson+": inline formulas not parsed into MathJax wrappers");
