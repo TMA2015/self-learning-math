@@ -216,7 +216,7 @@
 
         **Vì sao sai?** Hệ yêu cầu các điều kiện xảy ra **đồng thời**. Một điểm có thể đúng với hai điều kiện nhưng sai điều kiện thứ ba, nên không nằm trong miền nghiệm của hệ.
 
-        **Tự sửa:** Khi xét một cặp số, lập bảng kiểm mọi dòng. Khi vẽ, đánh dấu vùng bị loại sau mỗi ràng buộc, chỉ giữ phần còn lại. Nếu các ràng buộc mâu thuẫn như ở 2.3, kết luận miền rỗng ngay. [Luyện kiểm nghiệm hệ](../luyen-tap/?item=THPT-G10-B04-C01) · [Luyện đọc miền giao](../luyen-tap/?item=THPT-G10-B04-P04).
+        **Tự sửa:** Khi xét một cặp số, lập bảng kiểm mọi dòng. Khi vẽ, đánh dấu vùng bị loại sau mỗi ràng buộc, chỉ giữ phần còn lại. Nếu các ràng buộc mâu thuẫn như ở 2.3, kết luận miền rỗng ngay. [Luyện kiểm nghiệm hệ](luyen-tap.md?item=THPT-G10-B04-C01) · [Luyện đọc miền giao](luyen-tap.md?item=THPT-G10-B04-P04).
 
 
     <span data-thpt-help-id="HELP-G10-B04-02" hidden></span>
@@ -227,10 +227,10 @@
 
         **Vì sao sai?** Hàm mục tiêu phụ thuộc cả \(x\) lẫn \(y\). Trên đa giác liên tục phải so **mọi đỉnh**, và bài toán sản phẩm nguyên chỉ nhận các phương án có tọa độ nguyên.
 
-        **Tự sửa:** Lập bảng “đỉnh → điều kiện → giá trị \(F\)”. Nếu nghiệm liên tục là phân số, dùng nó làm **chặn**, sau đó xét các điểm nguyên khả thi hoặc có lập luận chứng minh tối ưu. [Luyện tối ưu nguyên](../luyen-tap/?item=THPT-G10-B04-P06) · [Luyện trường hợp nhiều điểm tối ưu](../luyen-tap/?item=THPT-G10-B04-P03).
+        **Tự sửa:** Lập bảng “đỉnh → điều kiện → giá trị \(F\)”. Nếu nghiệm liên tục là phân số, dùng nó làm **chặn**, sau đó xét các điểm nguyên khả thi hoặc có lập luận chứng minh tối ưu. [Luyện tối ưu nguyên](luyen-tap.md?item=THPT-G10-B04-P06) · [Luyện trường hợp nhiều điểm tối ưu](luyen-tap.md?item=THPT-G10-B04-P03).
 
 
-    **Tiếp tục tự học:** [Core và Luyện tập Chương II](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/).
+    **Tiếp tục tự học:** [Core và Luyện tập Chương II](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
     <p class="thpt-r4-footnote">Nguồn kiến thức: SGK Toán 10, Kết nối tri thức với cuộc sống, tập một, Bài 4. Lời giảng và ví dụ do SLM biên tập từ học liệu hiện có, nguồn Gemini/NotebookLM v1 và minh họa nguồn đã kiểm điều kiện toán.</p>
 
