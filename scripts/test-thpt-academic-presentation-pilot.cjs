@@ -42,7 +42,7 @@ for(const check of checks){
     const end=src.indexOf('=== "Ví dụ giải toán"',start);
     assert(start>=0&&end>start,"G10 B09 contiguous Knowledge area missing");
     const body=src.slice(start,end);
-    const actual=math(body).map(x=>x.replace(/\\s+/g," ").trim());
+    const actual=math(body).map(x=>x.replace(/\s+/g," ").trim());
     const frozen=["k\\in\\mathbb R","\\vec u","k\\vec u","|k\\vec u|=|k|\\,|\\vec u|","\\vec u\\ne\\vec0","k>0","k\\vec u","\\vec u","k<0","k=0","\\vec u=\\vec0","k\\vec u=\\vec0","k(\\vec u+\\vec v)=k\\vec u+k\\vec v","(k+m)\\vec u=k\\vec u+m\\vec u","k(m\\vec u)=(km)\\vec u","1\\vec u=\\vec u","(-1)\\vec u=-\\vec u","\\vec u","\\vec v","t\\ne0","\\vec v=t\\vec u","M","AB","\\overrightarrow{AM}=\\tfrac12\\overrightarrow{AB}","G","ABC","M","BC","\\overrightarrow{AG}=\\tfrac23\\overrightarrow{AM}=\\tfrac13(\\overrightarrow{AB}+\\overrightarrow{AC}), \\quad \\overrightarrow{GA}+\\overrightarrow{GB}+\\overrightarrow{GC}=\\vec0.","k"];
     const hasConsecutiveLegacy=actual.some((_,i)=>i+frozen.length<=actual.length&&
       frozen.every((v,j)=>actual[i+j]===v));
@@ -56,7 +56,7 @@ for(const check of checks){
     assert.equal(new Set(tries).size,5,"G10 B09 duplicate First Try ID");
     assert.equal(helps.length,2,"G10 B09 two canonical HELP IDs must survive");
     assert.equal(new Set(helps).size,2,"G10 B09 duplicate HELP");
-    assert.equal((src.match(/^    \\?\\?\\? (question|tip)/gm)||[]).length,7,
+    assert.equal((src.match(/^    \?\?\? (question|tip)/gm)||[]).length,7,
       "G10 B09 existing self-reveal/remediation must remain collapsed");
     assert.equal(fnv(src),"caa5d2b4",
       "G10 B09 exact Model B source snapshot changed; update receipt after Delta classification");
