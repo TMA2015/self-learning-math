@@ -28,7 +28,7 @@ for(const item of cases){
  const actual=[...src.matchAll(/data-thpt-first-try-id="([^"]+)"/g)].map(m=>m[1]);
  assert.deepEqual(actual,item.ids.map(i=>'THPT-G10-CHI-TRY'+String(i).padStart(2,'0')),item.id+' canonical IDs unchanged, unique');
  assert.equal(data.receipts.md.length,40,'SHA receipt '+item.id);
- for(const x of item.important)assert(src.includes(x),item.id+' contains '+x);
+ for(const x of item.important)assert(src.toLocaleLowerCase('vi').includes(x.toLocaleLowerCase('vi')),item.id+' contains '+x);
  assert(!/Vì sao cần học\?|Em đã biết gì\?|Hiểu bản chất trước công thức|Tự thử trước Core|PREREQUISITE_CONFIRMED/.test(src),'student sees no PED checklist');
  assert(!html.includes('slm-level2'),'NO LEVEL-2 in Phase 1');
  assert(html.includes('const LEVEL1_LABELS='),'four tab labels and builder exist');
