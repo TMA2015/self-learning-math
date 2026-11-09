@@ -311,6 +311,11 @@ function selfTest() {
   assert.equal(verifyTopicPlacementMatrix(topicMatrix, ["ITEM-A","ITEM-B"], ["O1","O2"]), 3);
   assert.throws(() => verifyTopicPlacementMatrix(topicMatrix + "\n" + topicMatrix.split("\n")[1], ["ITEM-A","ITEM-B"], ["O1","O2"]));
   assert.throws(() => verifyTopicPlacementMatrix(topicMatrix.replace("TOPIC/UNIT/WRITTEN","TOPIC/UNIT/CORE"), ["ITEM-A","ITEM-B"], ["O1","O2"]));
+  const compactTopicMatrix="| item_id | primary_outcome | role | source_type | status |\n| --- | --- | --- | --- | --- |\n| \x60ITEM-A\x60 | \x60O1\x60 | \x60TOPIC_PRACTICE\x60 | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |\n| \x60ITEM-B\x60 | \x60O2\x60 | \x60TOPIC_WRITTEN_SHARED\x60 | TOPIC_NEW_CANDIDATE | PROPOSED_NOT_LIVE |";
+  assert.equal(verifyTopicPlacementMatrix(compactTopicMatrix,["ITEM-A","ITEM-B"],["O1","O2"]),2);
+  assert.throws(()=>verifyTopicPlacementMatrix(compactTopicMatrix.replace("TOPIC_NEW_CANDIDATE","PRIVATE_RD1"),["ITEM-A","ITEM-B"],["O1","O2"]));
+  assert.throws(()=>verifyTopicPlacementMatrix(compactTopicMatrix.replace("ITEM-B","ITEM-UNREGISTERED"),["ITEM-A","ITEM-B"],["O1","O2"]));
+  assert.throws(()=>verifyTopicPlacementMatrix(compactTopicMatrix+"\n"+compactTopicMatrix.split("\n")[2],["ITEM-A","ITEM-B"],["O1","O2"]));
   const evidence12="## QUALITY_Q01_Q18_EVIDENCE\nTHPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md\n"+Array.from({length:18},(_,i)=>"| Q"+String(i+1).padStart(2,"0")+" | outcome proof | author evidence | independent receipt | rendered check |").join("\n");
   assert.doesNotThrow(() => verifyOneStandardEvidence("STANDARD_ID: SLM-THPT-QUALITY-ONE\nSTANDARD_VERSION: 1.2.0\nQUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE","STANDARD_ID: SLM-THPT-QUALITY-ONE\nSTANDARD_VERSION: 1.2.0\n"+evidence12,true));
   console.log("PASS handoff V2 parser: SGK, TOPIC multi-placement, supplements; version 1.2, Q16 private custody, negative pairing/safety checks");
