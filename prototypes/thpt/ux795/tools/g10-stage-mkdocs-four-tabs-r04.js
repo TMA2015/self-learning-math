@@ -10,7 +10,8 @@ function stageG10Knowledge(candidate, original, settings){
   // Reuse the page identity, but avoid a duplicate navigation: native lesson navigation
   // is already mounted in the exact same route by thpt-sgk-lesson-nav-v1.js.
   const safeScreen=originalScreen.replace(/<nav class="thpt-r4-lesson-tabs"[^>]*>[\s\S]*?<\/nav>/g,"")
-     .replace(/Học định nghĩa, công thức và ví dụ, rồi luyện tập theo từng kĩ năng\./g,"Học từ tình huống trực quan, nắm kiến thức và tự kiểm tra cách hiểu trước khi luyện tập.");
+     .replace(/Học định nghĩa, công thức và ví dụ, rồi luyện tập theo từng kĩ năng\./g,"Học từ tình huống trực quan, nắm kiến thức và tự kiểm tra cách hiểu trước khi luyện tập.")
+     .replace(/<p class="thpt-r4-lead">[^<]*Mastery[^<]*<\/p>/g,'<p class="thpt-r4-lead">Học khái niệm, kiểm điều kiện và tự đối chiếu trước khi luyện tập.</p>');
   function escapeCell(s){
     return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")
       .replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>");
@@ -63,6 +64,7 @@ function stageG10Knowledge(candidate, original, settings){
     let section=candidate.slice(chunks[i].index+chunks[i][0].length,chunks[i+1]?.index??candidate.length).trim();
     const converted=detailsToAdmonition(section);section=converted.text;folds+=converted.count;
     section=markdownTablesToHtml(section);
+    section=section.replace(/\bcanonical SLM(?: hiện hành)?\b/g,"học liệu SLM hiện hành");
     section=section.replace(/src="(?:\.\.\/){3}docs\/assets\/images\/thpt\//g,'src="../../../../assets/images/thpt/')
        .replace(/src="images\/(G10_[^"]+\.svg)"/g,'src="../../../../assets/images/thpt/$1"');
     // Raw HTML figcaption does not use markdown-in-HTML; convert its simple emphasis to semantic HTML.
