@@ -162,15 +162,15 @@ Các câu “Em vận dụng” phía trên chỉ giúp em kiểm tra một bư�
 
 **Kiểm lại.** Hợp có 5 phần tử và \(n(A)+n(B)-n(A\cap B)=4+3-2=5\). Hai hiệu khác nhau như đã dự đoán.
 
-### Ví dụ 2 — Giao và hợp của hai khoảng
+### Ví dụ 2 — Giao, hợp và hiệu của hai khoảng (chọn lọc NotebookLM v1)
 
-**Đề bài.** Cho \(X=(-\infty,3]\), \(Y=(1,+\infty)\). Tìm \(X\cap Y\) và \(X\cup Y\).
+**Đề bài.** Cho \(A=(-3,2]\), \(B=[0,5)\). Tìm \(A\cap B\), \(A\cup B\) và \(A\setminus B\).
 
-**Vì sao chọn cách giải này?** Hai tập là các khoảng trên \(\mathbb R\), nên cách ít sai nhất là đọc điều kiện \(x\le3\) và \(x>1\), rồi kiểm **hai đầu mút 1 và 3**.
+**Vì sao chọn cách giải này?** Mỗi tập là một khoảng trên trục số, nên ta xác định phần **chồng lên nhau**, phần **được phủ bởi ít nhất một tập** và phần **chỉ còn lại trong A**. Quyết định lấy hay bỏ đầu mút sau khi kiểm điều kiện, không đoán qua dấu ngoặc.
 
-**Lời giải.** Muốn thuộc cả hai tập, số \(x\) phải thỏa \(1<x\le3\), vì thế \(X\cap Y=(1,3]\). Muốn thuộc ít nhất một tập, mọi số thực đều được nhận: số \(x\le3\) thuộc X, còn số \(x>3\) thuộc Y. Vậy \(X\cup Y=\mathbb R\).
+**Lời giải.** Những số nằm đồng thời trong A và B là các số thỏa \(0\le x\le2\), nên \(A\cap B=[0,2]\). Vì hai khoảng có chung phần \([0,2]\), lấy tất cả phần thuộc ít nhất một khoảng cho \(A\cup B=(-3,5)\). Cuối cùng, từ A bỏ các số có trong B, tức bỏ đoạn \([0,2]\), ta còn \(A\setminus B=(-3,0)\).
 
-**Kiểm lại.** \(1\) **không thuộc giao** vì \(1\notin Y\), còn \(3\) **thuộc giao** vì thỏa cả \(3\le3\) và \(3>1\). Không lấy ngoặc vuông/tròn theo cảm giác.
+**Kiểm lại.** Số \(0\) thuộc B nên **không** thuộc \(A\setminus B\). Số \(2\) nằm trong giao vì cả A và B đều chứa 2. Hai đầu mút \(-3\) và \(5\) đều không nằm trong hợp.
 
 ### Ví dụ 3 — Giải bài toán đếm bằng sơ đồ Venn
 
