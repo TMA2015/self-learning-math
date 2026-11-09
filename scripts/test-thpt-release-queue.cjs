@@ -14,7 +14,9 @@ for(const dir of ["inventory","ready"]){
   const id=field("PACKET_ID"),state=field("STATE"),lane=field("LEARNING_PATH");
   assert.equal(file,id+".md","Packet name mismatch");
   const scope=field("RELEASE_SCOPE");
-  const allowed=(lane==="SGK_CHAPTER"||lane==="TOPIC")&&["PUBLIC_FORMATIVE_ONLY","FULL_LEARNING_PATH"].includes(scope);
+  const allowed=(lane==="SGK_CHAPTER"&&["PUBLIC_FORMATIVE_ONLY","FULL_LEARNING_PATH"].includes(scope)) ||
+    (lane==="TOPIC"&&["PUBLIC_FORMATIVE_ONLY","FULL_LEARNING_PATH","FULL_TOPIC_LEARNING_PATH"].includes(scope));
+  // Legacy Topic scopes remain readable; NEW V2 FULL_TOPIC is strictly gated by source-lock V2.
   const approvedSupplement=lane==="SGK_EXPERIENCE_SUPPLEMENT"&&scope==="SGK_EXPERIENCE_SUPPLEMENT";
   const approvedYearEnd=lane==="SGK_YEAR_END_REVIEW_SUPPLEMENT"&&scope==="SGK_YEAR_END_REVIEW_SUPPLEMENT";
   assert(allowed||approvedSupplement||approvedYearEnd,"Unknown or mismatched learning path/release scope "+id+": "+lane+"/"+scope);
