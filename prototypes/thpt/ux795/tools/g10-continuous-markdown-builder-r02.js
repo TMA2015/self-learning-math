@@ -1,7 +1,7 @@
 function buildG10KnowledgeR02(source,cfg){
  const title=(source.match(/^# (.+)$/m)||[])[1];if(!title)throw Error("Missing title "+cfg.b);
  let text=source.replace(/^# [^\n]*\n/,"").replace(/<div class="thpt-r4-screen"[\s\S]*?<\/div>/,"").replace(/<!--[\s\S]*?-->/g,"");
- const figures=[...text.matchAll(/<figure\b[\s\S]*?<\/figure>/g)].map(x=>x[0].replace(/\sdata-thpt-reviewed-d5="[^"]*"/g,""));text=text.replace(/<figure\b[\s\S]*?<\/figure>/g,"");
+ const figures=[...text.matchAll(/<figure\b[\s\S]*?<\/figure>/g)].map(x=>x[0].replace(/\sdata-thpt-(?:fig-id|reviewed-d5)="[^"]*"/g,"").replace(/Hình\s+FIG-G10-[A-Z0-9-]+/g,"hình minh họa").replace(/\s*·\s*Bản R0[12] đã được duyệt/g,""));text=text.replace(/<figure\b[\s\S]*?<\/figure>/g,"");
  text=text.replace(/(?:Trạng thái tiền đề:|D5 kế thừa:)[^\n]*?(?=\n|$)/g,"")
  .replace(/^.*\*\*(?:Đọc hình như thế nào|Cách đọc hình và hình dung)[^:]*:?\*\*.*$/gm,"")
  .replace(/^.*\b(?:PED[1-6]|FIG-G10|PREREQUISITE_CONFIRMED)[^\n]*$/gm,"")
