@@ -24,7 +24,7 @@ Khi đưa vectơ lên hệ trục, tích vô hướng còn tính được bằng
 
 **Cách đọc hình.** Quan sát góc tù giữa hai vectơ trong hình: cos âm nên tích vô hướng âm, dù độ dài hai vectơ đều dương.
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B11_DOT_PRODUCT_OBTUSE_D5_R01.svg" loading="lazy" alt="Tích vô hướng khi góc giữa hai vectơ là 120 độ"><figcaption>Tích vô hướng khi góc giữa hai vectơ là 120 độ.</figcaption></figure>
+<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../docs/assets/images/thpt/THPT_G10_B11_DOT_PRODUCT_OBTUSE_D5_R01.svg" loading="lazy" alt="Tích vô hướng khi góc giữa hai vectơ là 120 độ"><figcaption>Tích vô hướng khi góc giữa hai vectơ là 120 độ.</figcaption></figure>
 
 
 Một lực tác dụng dọc hướng di chuyển có ích hơn lực kéo vuông góc; lực ngược chiều chuyển động có thể gây công âm.
@@ -51,7 +51,7 @@ Chọn định nghĩa hình học nếu biết hai độ dài và góc giữa ve
 
 **Cách đọc hình.** Đọc hướng hợp lực/lực giữ cân bằng và đối chiếu hai hướng tác dụng trên hình; khi tính công chỉ dùng thành phần lực theo hướng chuyển dời.
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_CHIV_FORCE_TRANSFER_D5_R01_CORRECTED.svg" alt="Hai vectơ lực F1 8 N sang Đông, F2 15 N ở 120 độ, hợp lực R 13 N gần hướng Bắc và lực cân bằng F3 ngược R" loading="lazy"><figcaption>Hợp lực R theo đường chéo, lực thứ ba F₃=−R ngược chiều và cùng độ lớn.</figcaption></figure>
+<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../docs/assets/images/thpt/THPT_G10_CHIV_FORCE_TRANSFER_D5_R01_CORRECTED.svg" alt="Hai vectơ lực F1 8 N sang Đông, F2 15 N ở 120 độ, hợp lực R 13 N gần hướng Bắc và lực cân bằng F3 ngược R" loading="lazy"><figcaption>Hợp lực R theo đường chéo, lực thứ ba F₃=−R ngược chiều và cùng độ lớn.</figcaption></figure>
 
 
 Trong bản đồ Oxy, biết hai tọa độ vectơ có thể suy mức độ cùng hướng mà không cần đo góc.
