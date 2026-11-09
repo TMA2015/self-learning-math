@@ -4,6 +4,7 @@ function stageG10Knowledge(candidate, original, settings){
   if(!title)throw Error("No candidate H1 for B"+lesson);
   const chunks=[...candidate.matchAll(/^## ([1-4])\. (.+)$/gm)];
   const headings=["Khám phá kiến thức","Kiến thức SGK","Ví dụ giải toán","Lỗi thường gặp và cách tự khắc phục"];
+  const tabLabels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
   if(chunks.length!==4||chunks.some((c,i)=>Number(c[1])!==i+1||c[2]!==headings[i]))throw Error("B"+lesson+" sections invalid");
   const originalScreen=(original.match(/<div class="thpt-r4-screen"[\s\S]*?<\/div>/)||[])[0];
   if(!originalScreen)throw Error("G10 B"+lesson+" original R4 header missing");
@@ -70,7 +71,7 @@ function stageG10Knowledge(candidate, original, settings){
     // Raw HTML figcaption does not use markdown-in-HTML; convert its simple emphasis to semantic HTML.
     section=section.replace(/<figcaption>([\s\S]*?)<\/figcaption>/g,(_,txt)=>"<figcaption>"+txt.replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>")+"</figcaption>");
     paths.push(...[...section.matchAll(/src="([^"]+)"/g)].map(m=>m[1]));
-    result+='=== "'+headings[i]+'"\n\n'+section.split("\n").map(ln=>ln?"    "+ln:"").join("\n")+"\n\n";
+    result+='=== "'+tabLabels[i]+'"\n\n'+section.split("\n").map(ln=>ln?"    "+ln:"").join("\n")+"\n\n";
   }
   const count=(s,re)=>(s.match(re)||[]).length;
   function ids(s,attr){return [...s.matchAll(new RegExp(attr+'="([^"]+)"','g'))].map(x=>x[1]).sort()}
