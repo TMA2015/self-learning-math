@@ -38,12 +38,14 @@ Chọn định nghĩa hình học nếu biết hai độ dài và góc giữa ve
 
 **Em vận dụng.** Cho \(|\vec u|=2\), \(|\vec v|=3\), góc giữa hai vectơ là 120°. Tích vô hướng âm hay dương, bằng bao nhiêu?
 
-??? question "Em tự mở đối chiếu sau khi đã thử làm"
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Em tự mở đối chiếu sau khi đã thử làm</summary>
 
-    **Kết quả:** \(\vec u\cdot\vec v=2\cdot3\cdot\cos120^\circ=-3\).
+**Kết quả:** \(\vec u\cdot\vec v=2\cdot3\cdot\cos120^\circ=-3\).
 
-    **Vì sao:** Cos120°=−1/2 nên tích âm; không thể dùng cos60° vì đây là góc giữa hai vectơ đang hướng xa nhau.
+**Vì sao:** Cos120°=−1/2 nên tích âm; không thể dùng cos60° vì đây là góc giữa hai vectơ đang hướng xa nhau.
 
+</details>
 
 <span id="thpt-g10-chiv-try22" data-thpt-first-try-id="THPT-G10-CHIV-TRY22" data-outcome-id="G10-B11-COORDINATE_DOT" data-thpt-help-ref="HELP-G10-B11-01"></span>
 
@@ -65,12 +67,14 @@ Khi có tọa độ, nhân các thành phần cùng trục rồi cộng; không 
 
 **Em vận dụng.** Cho \(\vec u=(2;-1)\), \(\vec v=(3;4)\). Tính \(\vec u\cdot\vec v\).
 
-??? question "Em tự mở đối chiếu sau khi đã thử làm"
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Em tự mở đối chiếu sau khi đã thử làm</summary>
 
-    **Kết quả:** \(2\cdot3+(-1)\cdot4=2\).
+**Kết quả:** \(2\cdot3+(-1)\cdot4=2\).
 
-    **Vì sao:** Thành phần theo Ox cho 6, theo Oy cho −4, cộng là 2. Tích vô hướng là một số, không phải vectơ.
+**Vì sao:** Thành phần theo Ox cho 6, theo Oy cho −4, cộng là 2. Tích vô hướng là một số, không phải vectơ.
 
+</details>
 
 <span id="thpt-g10-chiv-try23" data-thpt-first-try-id="THPT-G10-CHIV-TRY23" data-outcome-id="G10-B11-PERPENDICULAR" data-thpt-help-ref="HELP-G10-B11-01"></span>
 
@@ -87,12 +91,14 @@ Kiểm tra hai vectơ khác không trước, sau đó tính tích vô hướng; 
 
 **Em vận dụng.** \(\vec u=(2;3)\), \(\vec v=(3;-2)\). Chúng có vuông góc không? Vì sao điều kiện khác 0 quan trọng?
 
-??? question "Em tự mở đối chiếu sau khi đã thử làm"
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Em tự mở đối chiếu sau khi đã thử làm</summary>
 
-    **Kết quả:** Có, vì \(\vec u\cdot\vec v=2\cdot3+3\cdot(-2)=0\), và cả hai khác \(\vec0\).
+**Kết quả:** Có, vì \(\vec u\cdot\vec v=2\cdot3+3\cdot(-2)=0\), và cả hai khác \(\vec0\).
 
-    **Vì sao:** Nếu một vectơ bằng 0 thì tích vẫn bằng 0 nhưng góc giữa hai vectơ không xác định theo định nghĩa dùng ở đây.
+**Vì sao:** Nếu một vectơ bằng 0 thì tích vẫn bằng 0 nhưng góc giữa hai vectơ không xác định theo định nghĩa dùng ở đây.
 
+</details>
 
 <span id="thpt-g10-chiv-try24" data-thpt-first-try-id="THPT-G10-CHIV-TRY24" data-outcome-id="G10-B11-APPLICATION" data-thpt-help-ref="HELP-G10-B11-02"></span>
 
@@ -109,11 +115,14 @@ Xác định hướng tương đối của lực và độ dời trước, kiể
 
 **Em vận dụng.** Một lực 10 N hướng Đông, vật dịch chuyển 3 m hướng Tây. Công của lực là bao nhiêu J? Nếu dịch chuyển vuông góc lực thì sao?
 
-??? question "Em tự mở đối chiếu sau khi đã thử làm"
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Em tự mở đối chiếu sau khi đã thử làm</summary>
 
-    **Kết quả:** Cùng phương ngược hướng: \(W=10\cdot3\cos180^\circ=-30\) J; vuông góc: \(W=0\) J.
+**Kết quả:** Cùng phương ngược hướng: \(W=10\cdot3\cos180^\circ=-30\) J; vuông góc: \(W=0\) J.
 
-    **Vì sao:** Cos180°=−1, cos90°=0. Công là vô hướng có dấu, khác với độ lớn lực hay quãng đường.
+**Vì sao:** Cos180°=−1, cos90°=0. Công là vô hướng có dấu, khác với độ lớn lực hay quãng đường.
+
+</details>
 
 ### Kiến thức SGK
 
@@ -176,9 +185,12 @@ Dùng công thức tổng vectơ khi **biết độ lớn và góc**; dùng tọ
 
 **Em vận dụng.** Hai lực bằng nhau, mỗi lực 4 N, tạo góc 60°. Muốn vật cân bằng, lực thứ ba phải có **độ lớn và chiều** như thế nào? Hãy tự dự đoán trước khi mở kết quả.
 
-??? question "Tự mở đáp án sau khi đã tự thử"
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Tự mở đáp án sau khi đã tự thử</summary>
 
-    `|F₁+F₂|=√(4²+4²+2·4·4·cos60°)=4√3 N`. Vì tổng ba lực bằng vectơ 0, `F₃=−(F₁+F₂)` nên lực thứ ba có độ lớn `4√3 N` và **ngược chiều hợp lực**. Nếu đáp `8 N`, xem `HELP-G10-CHIV-FORCE-TR01`.
+`|F₁+F₂|=√(4²+4²+2·4·4·cos60°)=4√3 N`. Vì tổng ba lực bằng vectơ 0, `F₃=−(F₁+F₂)` nên lực thứ ba có độ lớn `4√3 N` và **ngược chiều hợp lực**. Nếu đáp `8 N`, xem `HELP-G10-CHIV-FORCE-TR01`.
+
+</details>
 
 #### Ví dụ có hướng dẫn — EX-G10-B08-FORCE-TR01
 
@@ -193,17 +205,20 @@ Dùng công thức tổng vectơ khi **biết độ lớn và góc**; dùng tọ
 
 <span id="help-g10-chiv-force-tr01" data-thpt-help-id="HELP-G10-CHIV-FORCE-TR01"></span>
 
-??? tip "Tự khắc phục trong năm bước"
+<details class="thpt-r4-pedagogical-note thpt-r4-help-fold" markdown="1">
+<summary>Tự khắc phục trong năm bước</summary>
 
-    1. **Nhận diện:** em đã cộng `8+15`, dùng Pythagoras ở góc 120°, hay lấy F₃ cùng chiều hợp lực?
+1. **Nhận diện:** em đã cộng `8+15`, dùng Pythagoras ở góc 120°, hay lấy F₃ cùng chiều hợp lực?
 
-    2. **Chẩn đoán:** vẽ lại hai vectơ xuất phát O và đánh dấu góc **120°**; thử hướng F₃ xem ba mũi tên có khép thành đường gấp khúc không.
+2. **Chẩn đoán:** vẽ lại hai vectơ xuất phát O và đánh dấu góc **120°**; thử hướng F₃ xem ba mũi tên có khép thành đường gấp khúc không.
 
-    3. **Lấp nền:** B08 quy tắc hình bình hành và vectơ đối; B11 `u·v=|u||v|cosθ`.
+3. **Lấp nền:** B08 quy tắc hình bình hành và vectơ đối; B11 `u·v=|u||v|cosθ`.
 
-    4. **Tự sửa:** tính `R²` trước, kiểm `|R|≤23`, rồi đặt `F₃=−R`; kiểm tổng thành phần Ox/Oy bằng 0.
+4. **Tự sửa:** tính `R²` trước, kiểm `|R|≤23`, rồi đặt `F₃=−R`; kiểm tổng thành phần Ox/Oy bằng 0.
 
-    5. **Luyện lại đúng nguồn:** B08-P06 → B11-P01 → D2 mới; nếu đã xem đáp án D4, **không** tái dùng D4 làm chứng cứ RD1.
+5. **Luyện lại đúng nguồn:** B08-P06 → B11-P01 → D2 mới; nếu đã xem đáp án D4, **không** tái dùng D4 làm chứng cứ RD1.
+
+</details>
 
 **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/).
 
