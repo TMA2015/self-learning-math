@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 "use strict";
-// Source-lock V2: SGK_CHAPTER and owner-approved SGK_EXPERIENCE_SUPPLEMENT / SGK_YEAR_END_REVIEW_SUPPLEMENT only.
+// Source-lock V2: SGK chapter, independent TOPIC/FULL_TOPIC, and approved SGK supplements.
+// Version compatibility is source-scoped; an accepted version never grants deploy rights.
 // This never issues Academic/PED PASS and intentionally grandfathers historical READY manifests.
 const fs = require("node:fs");
 const assert = require("node:assert/strict");
@@ -51,7 +52,7 @@ function verifyBlob(value, file) {
 function verifyOneStandardEvidence(data, handoff, initialHandoff) {
   if (!initialHandoff && !data.includes("STANDARD_ID: ")) return;
   const normVersion=field(data,"STANDARD_VERSION");
-  assert(["1.0.0","1.1.0"].includes(normVersion),"Unrecognized standard version");
+  assert(["1.0.0","1.1.0","1.2.0"].includes(normVersion),"Unrecognized standard version");
   for (const text of [data, handoff]) {
     assert.equal(field(text,"STANDARD_ID"),"SLM-THPT-QUALITY-ONE","Two competing quality standards are forbidden");
     assert.equal(field(text,"STANDARD_VERSION"),normVersion,"Version mismatch across a source-locked V2 handoff");
@@ -78,6 +79,7 @@ function verifyLaneScope(data) {
   const scope = field(data, "RELEASE_SCOPE");
   assert(
     (lane === "SGK_CHAPTER" && scope === "FULL_LEARNING_PATH") ||
+    (lane === "TOPIC" && scope === "FULL_TOPIC_LEARNING_PATH") ||
     (lane === "SGK_EXPERIENCE_SUPPLEMENT" && scope === "SGK_EXPERIENCE_SUPPLEMENT") ||
     (lane === "SGK_YEAR_END_REVIEW_SUPPLEMENT" && scope === "SGK_YEAR_END_REVIEW_SUPPLEMENT"),
     "V2 ready lane/scope mismatch or unapproved type: " + lane + " / " + scope
@@ -102,6 +104,54 @@ function verifySupplementSafety(data, handoff, lane) {
   if (lane === "SGK_YEAR_END_REVIEW_SUPPLEMENT") {
     assert(/TOPIC_READINESS/i.test(custody) && /(?:year.end|end.year)/i.test(custody), "Year-end must disclaim Topic Readiness and official exam");
   }
+}
+
+// TOPIC has three learner pages (Knowledge / Practice / Self-check), not a fourth Core tab.
+// Private independent RD1 stays owner-held; a PUBLIC static site may only provide
+// voluntary self-comparison after Final Submit, with no scoring/Mastery claim.
+function verifyTopicSafety(data, handoff) {
+  assert.equal(field(data, "ASSESSMENT_MODE"), "CLIENT_SELF_CHECK_NO_MASTERY");
+  assert.equal(field(data, "OFFICIAL_READINESS"), "NOT_CLAIMED");
+  assert.equal(field(data, "MASTERY_ACTIVATION"), "NO");
+  assert.equal(field(data, "RELEASE_AUTHORIZATION"), "NO");
+  assert.equal(field(handoff, "LEARNING_PATH"), "TOPIC");
+  assert.equal(field(handoff, "RELEASE_SCOPE"), "FULL_TOPIC_LEARNING_PATH");
+  assert.equal(field(handoff, "ASSESSMENT_MODE"), "CLIENT_SELF_CHECK_NO_MASTERY");
+  assert.equal(field(handoff, "MASTERY_ACTIVATION"), "NO");
+  assert.equal(field(handoff, "RELEASE_AUTHORIZATION"), "NO");
+  const count = field(data, "PRIVATE_RD1_COUNT");
+  assert(/^\\d+$/.test(count), "Topic private RD1 count must be metadata only");
+  assert.equal(field(handoff, "PRIVATE_RD1_COUNT"), count, "Private Topic RD1 custody count mismatch");
+  const custody = section(handoff, "PRIVATE_RD1_CUSTODY_METADATA");
+  assert(new RegExp("RD1_PRIVATE_COUNT\\\\s*=\\\\s*" + count + "\\\\b").test(custody), "Private Topic RD1 count absent from custody receipt");
+  assert(/PRIVATE_OWNER_HELD\\s*=\\s*YES/.test(custody), "Topic RD1 must remain owner-held");
+  assert(/PRIVATE_GIT_CONTENT\\s*=\\s*NONE/.test(custody), "Private Topic RD1 may not enter public Git");
+  assert(/PRIVATE_BANK_SHA256\\s*=\\s*[0-9a-f]{64}/.test(custody), "Missing private Topic RD1 hash metadata");
+}
+
+// One canonical item can legitimately have several distinct Topic outcome/role placements.
+// Enforce unique placement tuples instead of falsely requiring one row per item.
+function verifyTopicPlacementMatrix(matrix, items, outcomes) {
+  const rows = matrix.split("\\n").filter(s => /^\\|\\s*\\d+\\s*\\|/.test(s))
+    .map(s => s.split("|").slice(1, -1).map(x => x.trim().replace(/^\\x60|\\x60$/g, "")));
+  assert(rows.length >= items.length, "Topic placements must cover all canonical public IDs");
+  const seen = new Set(), covered = new Set();
+  for (const row of rows) {
+    assert(row.length >= 6, "Malformed Topic placement row");
+    const [, item, outcome, role, placement] = row;
+    assert(items.includes(item), "Unregistered Topic item " + item);
+    assert(outcomes.includes(outcome), "Unknown Topic outcome " + outcome);
+    assert(/^TOPIC_/.test(role), "Not a Topic placement role for " + item);
+    assert(placement.startsWith("TOPIC/") && !/(^|\\/)CORE(\\/|$)/.test(placement),
+      "Topic must reuse canonical items through Practice/Written, not a separate Core page");
+    assert(!/(READINESS|RD1)/i.test(placement), "Private Topic Readiness cannot be registered as a public placement");
+    const key = [item, outcome, role, placement].join("|");
+    assert(!seen.has(key), "Duplicate Topic item/outcome/role/placement: " + key);
+    seen.add(key);
+    covered.add(item);
+  }
+  for (const item of items) assert(covered.has(item), "Unmapped Topic canonical item " + item);
+  return rows.length;
 }
 
 function verifyReadyManifest(rel, initialHandoff) {
@@ -133,12 +183,13 @@ function verifyReadyManifest(rel, initialHandoff) {
     assert(reviewText.includes("SLM-THPT-QUALITY-ONE"),
       "New reviewer receipt must identify the same ONE normative standard as both lanes");
     assert(reviewText.includes(field(data,"STANDARD_VERSION")),
-      "New reviewer receipt must identify its own effective standard version (historical 1.0.0 or approved 1.1.0)");
+      "New reviewer receipt must identify its own effective standard version (including approved 1.2.0; historical versions remain source-scoped)");
   }
   const handoffRel = field(data, "AUTHOR_HANDOFF");
   const handoff = fs.readFileSync(safeRepoFile(handoffRel, ["prototypes/thpt/release-handoffs/"]), "utf8");
   verifyOneStandardEvidence(data, handoff, initialHandoff);
-  if (lane !== "SGK_CHAPTER") verifySupplementSafety(data, handoff, lane);
+  if (lane === "TOPIC") verifyTopicSafety(data, handoff);
+  else if (lane !== "SGK_CHAPTER") verifySupplementSafety(data, handoff, lane);
   for (const [k,v] of [
     ["PACKET_ID", id], ["ACADEMIC_SOURCE_BLOB", sourceBlob],
     ["REVIEW_RECEIPT_BLOB", reviewBlob], ["ACADEMIC_VERDICT", "PASS"],
@@ -153,12 +204,16 @@ function verifyReadyManifest(rel, initialHandoff) {
   const pedKeys = ["PED1_MOTIVATION", "PED2_PREREQUISITES", "PED3_MEANING_FIRST", "PED4_EXPLAINED_VISUAL", "PED5_REASONED_EXAMPLES", "PED6_FIRST_TRY_REMEDIATION"];
   for (const key of pedKeys) assert(data.split("\n").some(line => line.startsWith("- [x] " + key + " — ") && line.length > key.length + 35), "PED evidence not signed off: " + key);
   const matrix = section(handoff, "ITEM_OUTCOME_MATRIX");
-  const rows = matrix.split("\n").filter(s => /^\|/.test(s)).map(s => s.split("|").slice(1).map(x => x.trim()));
-  for (const id of items) assert(rows.some(row => row[0] === id && outcomes.includes(row[1])), "Unmapped item " + id);
-  if (lane !== "SGK_CHAPTER") {
-    const canonicalRows=rows.filter(row=>items.includes(row[0]));
-    assert.equal(canonicalRows.length, items.length, "Supplement requires exactly one canonical item–outcome row per item");
-    for (const id of items) assert.equal(canonicalRows.filter(row=>row[0]===id).length,1,"Duplicate supplement item mapping "+id);
+  if (lane === "TOPIC") {
+    verifyTopicPlacementMatrix(matrix, items, outcomes);
+  } else {
+    const rows = matrix.split("\n").filter(s => /^\|/.test(s)).map(s => s.split("|").slice(1).map(x => x.trim()));
+    for (const id of items) assert(rows.some(row => row[0] === id && outcomes.includes(row[1])), "Unmapped item " + id);
+    if (lane !== "SGK_CHAPTER") {
+      const canonicalRows=rows.filter(row=>items.includes(row[0]));
+      assert.equal(canonicalRows.length, items.length, "Supplement requires exactly one canonical item–outcome row per item");
+      for (const id of items) assert.equal(canonicalRows.filter(row=>row[0]===id).length,1,"Duplicate supplement item mapping "+id);
+    }
   }
   for (const heading of ["S1_SGK_SBT_SOURCE","D1_D6_EVIDENCE","PED1_PED6_EVIDENCE","REVIEW_SOURCE_RECEIPT","DELTA_LEDGER","PRIVATE_RD1_CUSTODY_METADATA","AUTHOR_SIGNOFF"]) assert(section(handoff, heading).length > 35, "Insufficient evidence in " + heading);
   assert(lessons.length && outcomes.length && items.length, "Empty author register");
@@ -167,6 +222,9 @@ function verifyReadyManifest(rel, initialHandoff) {
 function selfTest() {
   assert.deepEqual(ids("## IDS\n- A\n- B\n", "IDS"), ["A","B"]);
   assert.equal(verifyLaneScope("LEARNING_PATH: SGK_CHAPTER\nRELEASE_SCOPE: FULL_LEARNING_PATH"), "SGK_CHAPTER");
+  assert.equal(verifyLaneScope("LEARNING_PATH: TOPIC\nRELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH"), "TOPIC");
+  assert.throws(() => verifyLaneScope("LEARNING_PATH: TOPIC\nRELEASE_SCOPE: FULL_LEARNING_PATH"));
+  assert.throws(() => verifyLaneScope("LEARNING_PATH: SGK_CHAPTER\nRELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH"));
   assert.equal(verifyLaneScope("LEARNING_PATH: SGK_EXPERIENCE_SUPPLEMENT\nRELEASE_SCOPE: SGK_EXPERIENCE_SUPPLEMENT"), "SGK_EXPERIENCE_SUPPLEMENT");
   assert.equal(verifyLaneScope("LEARNING_PATH: SGK_YEAR_END_REVIEW_SUPPLEMENT\nRELEASE_SCOPE: SGK_YEAR_END_REVIEW_SUPPLEMENT"), "SGK_YEAR_END_REVIEW_SUPPLEMENT");
   assert.throws(() => verifyLaneScope("LEARNING_PATH: SGK_YEAR_END_REVIEW_SUPPLEMENT\nRELEASE_SCOPE: FULL_LEARNING_PATH"));
@@ -194,7 +252,19 @@ function selfTest() {
   assert.throws(()=>verifyOneStandardEvidence(
     "STANDARD_ID: SLM-THPT-QUALITY-ONE\nSTANDARD_VERSION: 1.1.0\nQUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE",
     "STANDARD_ID: SLM-THPT-QUALITY-ONE\nSTANDARD_VERSION: 1.0.0\n"+bad,true));
-  console.log("PASS handoff V2 parser: chapters, experiential and year-end supplements scoped; negative pairing/assessment tests and historical version checks");
+  const topicMeta="ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY\\nOFFICIAL_READINESS: NOT_CLAIMED\\nMASTERY_ACTIVATION: NO\\nRELEASE_AUTHORIZATION: NO\\nPRIVATE_RD1_COUNT: 30";
+  const topicHandoff="LEARNING_PATH: TOPIC\\nRELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH\\nASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY\\nMASTERY_ACTIVATION: NO\\nRELEASE_AUTHORIZATION: NO\\nPRIVATE_RD1_COUNT: 30\\n## PRIVATE_RD1_CUSTODY_METADATA\\nRD1_PRIVATE_COUNT = 30, PRIVATE_OWNER_HELD = YES, PRIVATE_GIT_CONTENT = NONE, PRIVATE_BANK_SHA256 = " + "a".repeat(64);
+  assert.doesNotThrow(() => verifyTopicSafety(topicMeta, topicHandoff));
+  assert.throws(() => verifyTopicSafety(topicMeta.replace("MASTERY_ACTIVATION: NO","MASTERY_ACTIVATION: YES"), topicHandoff));
+  assert.throws(() => verifyTopicSafety(topicMeta.replace("PRIVATE_RD1_COUNT: 30","PRIVATE_RD1_COUNT: 29"), topicHandoff));
+  assert.throws(() => verifyTopicSafety(topicMeta, topicHandoff.replace("PRIVATE_GIT_CONTENT = NONE","PRIVATE_GIT_CONTENT = FULL")));
+  const topicMatrix="| # | item_id | primary outcome | TOPIC role | placement | state |\\n| 1 | \\x60ITEM-A\\x60 | \\x60O1\\x60 | \\x60TOPIC_PRACTICE\\x60 | \\x60TOPIC/UNIT/O1/PRACTICE\\x60 | PROPOSED |\\n| 2 | \\x60ITEM-A\\x60 | \\x60O2\\x60 | \\x60TOPIC_PRACTICE\\x60 | \\x60TOPIC/UNIT/O2/PRACTICE\\x60 | PROPOSED |\\n| 3 | \\x60ITEM-B\\x60 | \\x60O2\\x60 | \\x60TOPIC_WRITTEN\\x60 | \\x60TOPIC/UNIT/WRITTEN\\x60 | PROPOSED |";
+  assert.equal(verifyTopicPlacementMatrix(topicMatrix, ["ITEM-A","ITEM-B"], ["O1","O2"]), 3);
+  assert.throws(() => verifyTopicPlacementMatrix(topicMatrix + "\\n" + topicMatrix.split("\\n")[1], ["ITEM-A","ITEM-B"], ["O1","O2"]));
+  assert.throws(() => verifyTopicPlacementMatrix(topicMatrix.replace("TOPIC/UNIT/WRITTEN","TOPIC/UNIT/CORE"), ["ITEM-A","ITEM-B"], ["O1","O2"]));
+  const evidence12="## QUALITY_Q01_Q18_EVIDENCE\\nTHPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md\\n"+Array.from({length:18},(_,i)=>"| Q"+String(i+1).padStart(2,"0")+" | outcome proof | author evidence | independent receipt | rendered check |").join("\\n");
+  assert.doesNotThrow(() => verifyOneStandardEvidence("STANDARD_ID: SLM-THPT-QUALITY-ONE\\nSTANDARD_VERSION: 1.2.0\\nQUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE","STANDARD_ID: SLM-THPT-QUALITY-ONE\\nSTANDARD_VERSION: 1.2.0\\n"+evidence12,true));
+  console.log("PASS handoff V2 parser: SGK, TOPIC multi-placement, supplements; version 1.2, Q16 private custody, negative pairing/safety checks");
 }
 if (process.argv.includes("--self-test")) selfTest();
 else {
