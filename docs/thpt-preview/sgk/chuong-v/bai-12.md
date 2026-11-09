@@ -126,7 +126,7 @@
     ### Giới hạn độ chính xác và quy tròn
     Khi làm tròn một số đúng tới đơn vị của hàng \(h>0\), sai số làm tròn thông thường không quá \(h/2\) nếu áp dụng quy tắc làm tròn gần nhất. Không tự khẳng định mọi phép đo tới hàng đó có cùng sai số tối đa: còn phụ thuộc độ chính xác đo ban đầu. Khi một số gần đúng \(a\) được cho với độ chính xác \(d\) nhưng không nêu hàng quy tròn, cần kiểm đúng quy tắc SGK/SBT về **hàng thấp nhất có một đơn vị lớn hơn d** trước khi chọn hàng.
 
-=== "Ví dụ giải toán"
+=== "Ví dụ"
 
     Trước khi xem lời giải, hãy xác định dữ kiện, điều phải tìm và lý do chọn cách giải. Sau đó kiểm tra lại điều kiện áp dụng và kết quả, thay vì chỉ nhìn phép tính cuối cùng.
 
@@ -139,7 +139,7 @@
     ### Ví dụ 3. quy tròn
     Làm tròn \(3{,}14159\) tới hàng phần trăm được \(3{,}14\). Sai số tuyệt đối của phép làm tròn \(0{,}00159\le0{,}005\). Nói rõ hàng phần trăm là 2 chữ số thập phân.
 
-=== "Lỗi thường gặp và cách tự khắc phục"
+=== "Lỗi thường gặp"
 
     <span data-thpt-help-id="HELP-G10-B12-01" hidden></span>
 
