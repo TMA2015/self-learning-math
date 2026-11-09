@@ -135,7 +135,7 @@ Vectơ cùng phương cùng chiều theo một đoạn cho phép đổi tỉ s�
 
 **Quan sát hình.** Quan sát mũi tên gốc, các bội dương và âm: độ dài đổi theo (|k|), còn chiều quay ngược khi (k<0). Chú ý (k=0) tạo vectơ-không.
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B09_SCALAR_MULTIPLE_VECTORS_D5_R01.svg" loading="lazy" alt="Nhân một vectơ với số: cùng hướng, ngược hướng và vectơ không"><figcaption>Nhân một vectơ với số: cùng hướng, ngược hướng và vectơ không.</figcaption></figure>
+<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../docs/assets/images/thpt/THPT_G10_B09_SCALAR_MULTIPLE_VECTORS_D5_R01.svg" loading="lazy" alt="Nhân một vectơ với số: cùng hướng, ngược hướng và vectơ không"><figcaption>Nhân một vectơ với số: cùng hướng, ngược hướng và vectơ không.</figcaption></figure>
 
 Cho $k\in\mathbb R$ và vectơ $\vec u$. 
 
