@@ -1,198 +1,225 @@
-# Bài 5. Giá trị lượng giác của một góc từ 0° đến 180°
+# Toán 10 · Bài 5. Giá trị lượng giác của một góc từ 0° đến 180°
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG III · KIẾN THỨC SGK KNTT</p><p class="thpt-r4-lead">Học kiến thức và ví dụ theo Bài 5, sau đó tự luyện.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương III</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra</a></nav></div>
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG III · KIẾN THỨC SGK KNTT</p><p class="thpt-r4-lead">Học kiến thức và ví dụ theo Bài 5, sau đó tự luyện.</p></div>
 
-## Trước khi học — hiểu ý nghĩa trước khi nhớ quy tắc
+=== "Khám phá kiến thức"
 
-Em hãy đọc tình huống, nhắc lại kiến thức đã học và tự trả lời từng câu **Tự thử** trước khi đọc phần công thức. Chỉ mở lời giải sau khi em đã tự làm. Nếu gặp khó khăn, xem mục hỗ trợ của bài rồi mới luyện Core/Luyện tập. Hoạt động này không chấm điểm hay ghi mức độ thành thạo.
+    ### Cùng tìm hiểu
 
-### Góc và nửa đường tròn đơn vị
+    Ở THCS, em đã quen với \(\sin\), \(\cos\), \(\tan\) của **góc nhọn** trong tam giác vuông. Nhưng điều gì xảy ra khi góc mở rộng đến \(120^\circ\), \(150^\circ\), thậm chí \(180^\circ\)? Một cánh tay robot có thể quay vượt quá góc vuông, hay một hướng di chuyển có thể chếch hẳn sang trái. Nếu chỉ học thuộc các tỉ số trong tam giác vuông, em sẽ khó giải thích vì sao \(\cos120^\circ\) **âm** mà \(\sin120^\circ\) vẫn **dương**.
 
-**Vì sao cần học?** Khi một bán kính quay trên mặt phẳng, làm sao nói chính xác đầu bán kính nằm lệch sang trái hay lên cao mà không cần đo bằng mắt? Các tọa độ cho ta ngôn ngữ để mô tả hướng và dự đoán dấu của lượng giác.
+    Hãy hình dung một điểm \(M\) đi trên **nửa đường tròn đơn vị** ở phía trên trục hoành, tâm \(O\), bán kính 1. Điểm bắt đầu từ \((1,0)\), rồi tia \(OM\) quay ngược chiều kim đồng hồ tạo góc \(\alpha\) với chiều dương \(Ox\). Góc \(\alpha\) chạy từ \(0^\circ\) đến \(180^\circ\). Tọa độ ngang của \(M\) cho biết điểm lệch về **phải** hay **trái**; tọa độ đứng cho biết nó ở **cao** bao nhiêu. Hai con số ấy chính là \(\cos\alpha\) và \(\sin\alpha\).
 
-**Em đã biết gì?** Nhắc lại hệ trục tọa độ Oxy, nửa mặt phẳng phía trên có tung độ không âm, bán kính đường tròn đơn vị bằng 1. Điểm trên đường tròn thỏa x²+y²=1. Góc đo từ Ox dương theo chiều ngược kim đồng hồ.
+    Đến \(90^\circ\), điểm \(M=(0,1)\): độ lệch ngang bằng 0. Đi tiếp sang góc tù, \(M\) nằm **bên trái** trục tung, nên \(\cos\alpha<0\), nhưng vẫn ở phía trên trục hoành, nên \(\sin\alpha>0\). Em không cần nhớ dấu bằng một mẹo riêng: **dấu xuất hiện ngay trên hình**.
 
-**Hiểu bản chất trước công thức** Hãy tưởng tượng đầu bán kính đi từ (1,0) theo nửa đường tròn phía trên. Tọa độ ngang x biểu diễn cos α, tọa độ đứng y biểu diễn sin α; chính hình chiếu giải thích hai giá trị, không phải công thức cần học thuộc trước. Sau khi thấy x,y mới ghi cos α=x và sin α=y, với 0°≤α≤180°.
+    Nếu lấy độ cao chia độ lệch ngang, em có \(\tan\alpha=\sin\alpha/\cos\alpha\). Phép chia này **chỉ thực hiện khi mẫu khác 0**. Vì thế \(\tan90^\circ\) không xác định. Cùng cách nghĩ ấy giúp em nhớ khi nào \(\cot\alpha\) xác định.
 
-**Cách đọc hình và hình dung** Ở hình minh họa bên dưới, tìm O, Ox, M ứng với góc 120°. Đọc đường dóng từ M xuống hai trục: M nằm bên trái Oy nên hoành độ âm, ở trên Ox nên tung độ dương. Với α=180°, đầu bán kính nằm chính trên trục Ox âm.
+    ### Ví dụ trực quan
 
-**Vì sao làm theo cách này?** Nếu đề hỏi sin/cos của một góc và có thể hình dung điểm M, xác định vị trí và dấu tọa độ trước; chưa cần tính tan/cot. Cách này bị giới hạn ở mô hình đã chọn 0°–180°, không tùy tiện suy ra giá trị theo chiều quay khác.
+    Góc \(120^\circ\) là góc bù của \(60^\circ\). Hai điểm trên nửa đường tròn ứng với \(60^\circ\) và \(120^\circ\) **đối xứng qua trục \(Oy\)**: cùng độ cao, khác bên trái/phải. Vì vậy:
 
-**Tự thử trước Core** Trên nửa đường tròn đơn vị, khi α=180°, điểm M có tọa độ gì? Từ đó xác định sin α, cos α và giải thích bằng hình chiếu.
+    \[
+    \sin120^\circ=\sin60^\circ=\frac{\sqrt3}{2},
+    \qquad
+    \cos120^\circ=-\cos60^\circ=-\frac12.
+    \]
 
-<details class="thpt-r4-pedagogical-note" markdown="1" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHIII-TRY01">
-<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+    Từ đây \(\tan120^\circ=(\sqrt3/2)/(-1/2)=-\sqrt3\). Dấu âm không phải điều khó nhớ: nó đến từ việc điểm \(M\) ở phía **trái** trục \(Oy\).
 
-**Lời giải và giải thích.** M=(-1,0); sin180°=0, cos180°=-1. M ở trên Ox âm nên tung độ bằng 0, hoành độ bằng -1.
+    ### Thuật ngữ và kiến thức, kỹ năng
 
-**Nếu chưa đúng:** Xem lại mục Hỗ trợ khắc phục lỗi ở cuối bài, thử nhắc lại bản chất bằng lời của mình rồi làm câu liên kết câu Core/Luyện tập tương ứng; phần sau này là luyện tập tự nguyện, không là kiểm tra độc lập.
+    **Thuật ngữ:** nửa đường tròn đơn vị; góc từ \(0^\circ\) đến \(180^\circ\); \(\sin,\cos,\tan,\cot\); góc nhọn, góc vuông, góc tù; hai góc bù nhau; giá trị đặc biệt; điều kiện xác định.
 
-</details>
+    **Sau bài học, em cần làm được:** đọc \(\sin,\cos\) từ tọa độ điểm trên nửa đường tròn; xác định đúng dấu từng hàm lượng giác; xét mẫu trước khi tính \(\tan,\cot\); suy giá trị góc tù từ góc bù; dùng hệ thức lượng giác cơ bản để tính giá trị chưa biết và chọn đúng dấu căn.
 
-### Các góc đặc biệt
+=== "Kiến thức SGK"
 
-**Vì sao cần học?** Vì sao hai góc nhìn rất khác nhau như 45° và 135° có cùng độ cao trên nửa đường tròn, nhưng hướng ngang trái/ngược nhau? Hiểu sự đối xứng giúp nhớ các giá trị đặc biệt thay vì học hai bảng rời rạc.
+    ### 2.1. Nửa đường tròn đơn vị: hiểu tọa độ trước công thức
 
-**Em đã biết gì?** Nhắc lại sin45°=cos45°=√2/2 từ tam giác vuông cân. Hai điểm đối xứng qua trục Oy có cùng tung độ và hoành độ trái dấu.
+    Xét nửa đường tròn tâm \(O\), bán kính 1 và nằm trong nửa mặt phẳng \(y\ge0\). Với \(0^\circ\le\alpha\le180^\circ\), tia \(OM\) tạo với \(Ox\) dương một góc \(\alpha\), và \(M=(x,y)\) nằm trên nửa đường tròn. Khi đó:
 
-**Hiểu bản chất trước công thức** Góc 135° là ảnh đối xứng của 45° qua Oy. Vì vậy sin135°=sin45° còn cos135°=-cos45°. Các góc đặc biệt 120°, 150° cũng được hiểu từ góc nhọn tham chiếu 60°, 30°; ghi bảng sau khi giải thích đối xứng.
+    \[
+    \boxed{\cos\alpha=x,\qquad\sin\alpha=y.}
+    \]
 
-**Cách đọc hình và hình dung** Ở hình minh họa bên dưới, nhận xét điểm ứng với góc tù ở bên trái Oy. Vẽ tưởng tượng đường ngang nối hai điểm cùng độ cao để thấy sin không đổi và cos đổi dấu.
+    Vì \(OM=1\), định lí Pitago theo hình chiếu cho \(x^2+y^2=1\), tức \(\sin^2\alpha+\cos^2\alpha=1\). Góc nhọn có \(x>0,y>0\); góc tù có \(x<0,y>0\); ở \(90^\circ\), \(x=0\). Tại \(0^\circ\), \(M=(1,0)\), còn tại \(180^\circ\), \(M=(-1,0)\).
 
-**Vì sao làm theo cách này?** Nhận góc tham chiếu nhọn (30°,45°,60°) và dấu theo vùng trên nửa đường tròn trước khi thế vào bảng; không tự cho cos góc tù dương vì độ lớn cos vẫn nhỏ hơn 1.
+    <figure class="thpt-r4-plot thpt-r4-concept-figure">
+    <img src="../../../../assets/images/thpt/THPT_G10_B05_SEMICIRCLE_120_D5_R01.svg" loading="lazy" alt="Nửa đường tròn đơn vị có góc 120 độ, M ở bên trái trục tung và phía trên trục hoành, tọa độ âm một phần hai và căn ba trên hai">
+    <figcaption>Đọc hình theo thứ tự: \(O\) → tia \(OM\) tạo \(120^\circ\) → hình chiếu của \(M\) lên hai trục. Hoành độ \(-\frac12\) là \(\cos120^\circ\), tung độ \(\frac{\sqrt3}{2}\) là \(\sin120^\circ\). Hình này minh họa <strong>góc 120°</strong>, không phải mọi góc tù có cùng tọa độ.</figcaption>
+    </figure>
 
-**Tự thử trước Core** Không dùng máy tính, tính sin135° và cos135°. Hai giá trị này khác sin45°, cos45° về dấu như thế nào?
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ:</strong> \(\cos\alpha\) là hoành độ, \(\sin\alpha\) là tung độ của \(M\). Trên đoạn \(0^\circ\le\alpha\le180^\circ\), sin không âm, cos đổi dấu khi đi qua góc \(90^\circ\). Trước khi tính, hãy xác định góc nằm ở đâu.</div>
 
-<details class="thpt-r4-pedagogical-note" markdown="1" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHIII-TRY02">
-<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+    **Em vận dụng.** Trên nửa đường tròn đơn vị, với \(\alpha=180^\circ\), điểm \(M\) có tọa độ gì? Từ đó tìm \(\sin180^\circ\) và \(\cos180^\circ\).
 
-**Lời giải và giải thích.** sin135°=√2/2; cos135°=-√2/2. So với 45°, sin giữ nguyên, cos đổi dấu do đối xứng qua Oy.
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHIII-TRY01" hidden></span>
 
-**Nếu chưa đúng:** Xem lại mục Hỗ trợ khắc phục lỗi ở cuối bài, thử nhắc lại bản chất bằng lời của mình rồi làm câu liên kết câu Core/Luyện tập tương ứng; phần sau này là luyện tập tự nguyện, không là kiểm tra độc lập.
+    ??? question "Em đã tự làm? Mở lời giải để đối chiếu"
 
-</details>
+        \(M=(-1,0)\) nên \(\sin180^\circ=0\), \(\cos180^\circ=-1\). Điểm nằm trên trục \(Ox\) âm: tung độ bằng 0, hoành độ bằng \(-1\).
 
-### Dấu và điều kiện xác định
 
-**Vì sao cần học?** Nếu ta lấy độ dốc của một hướng bằng “độ cao chia độ lệch ngang”, điều gì xảy ra khi độ lệch ngang bằng 0? Đó là lí do tan/cot phải có điều kiện xác định, không thể suy chúng luôn là những con số.
+    ### 2.2. Góc đặc biệt: nhớ theo đối xứng, không học hai bảng rời rạc
 
-**Em đã biết gì?** Nhắc lại phép chia không được có mẫu bằng 0. Trên nửa đường tròn đơn vị sin≥0, cos có thể âm, bằng 0 hoặc dương tùy góc.
+    Em đã biết các góc nhọn \(30^\circ,45^\circ,60^\circ\) từ tam giác vuông đặc biệt. Khi góc mở quá \(90^\circ\), dùng đối xứng qua \(Oy\) để suy giá trị. Hai góc \(\alpha\) và \(180^\circ-\alpha\) có các điểm \(M\) **cùng tung độ, trái hoành độ**, nên sin bằng nhau, cos đối nhau.
 
-**Hiểu bản chất trước công thức** Tan α là tỉ số sin α/cos α, chỉ có nghĩa nếu cos α≠0; cot α là cos α/sin α, chỉ có nghĩa nếu sin α≠0. Khái niệm miền xác định phải có trước thao tác chia. Tan/cot có thể bằng 0 khi tử bằng 0 và mẫu khác 0.
+    <div class="thpt-g10-table-scroll"><table class="thpt-g10-knowledge-table">
+    <thead><tr><th>Góc \(\alpha\)</th><th>\(0^\circ\)</th><th>\(30^\circ\)</th><th>\(45^\circ\)</th><th>\(60^\circ\)</th><th>\(90^\circ\)</th></tr></thead>
+    <tbody>
+    <tr><td>\(\sin\alpha\)</td><td>\(0\)</td><td>\(\frac12\)</td><td>\(\frac{\sqrt2}{2}\)</td><td>\(\frac{\sqrt3}{2}\)</td><td>\(1\)</td></tr>
+    <tr><td>\(\cos\alpha\)</td><td>\(1\)</td><td>\(\frac{\sqrt3}{2}\)</td><td>\(\frac{\sqrt2}{2}\)</td><td>\(\frac12\)</td><td>\(0\)</td></tr>
+    </tbody></table></div>
 
-**Cách đọc hình và hình dung** Dùng hình minh họa bên dưới để đọc hai trục và hình dung tại 0° thì M=(1,0), tại 90° thì M=(0,1). Với x=0, không thể lấy y/x; với y=0, không thể lấy x/y.
+    <div class="thpt-g10-table-scroll"><table class="thpt-g10-knowledge-table">
+    <thead><tr><th>Góc \(\alpha\)</th><th>\(120^\circ\)</th><th>\(135^\circ\)</th><th>\(150^\circ\)</th><th>\(180^\circ\)</th></tr></thead>
+    <tbody>
+    <tr><td>\(\sin\alpha\)</td><td>\(\frac{\sqrt3}{2}\)</td><td>\(\frac{\sqrt2}{2}\)</td><td>\(\frac12\)</td><td>\(0\)</td></tr>
+    <tr><td>\(\cos\alpha\)</td><td>\(-\frac12\)</td><td>\(-\frac{\sqrt2}{2}\)</td><td>\(-\frac{\sqrt3}{2}\)</td><td>\(-1\)</td></tr>
+    </tbody></table></div>
 
-**Vì sao làm theo cách này?** Muốn tính tan/cot, xét mẫu trước rồi mới lập tỉ số; dấu của tan/cot là dấu của thương. Không nhầm “không xác định” với số 0.
+    Hãy quan sát, chẳng hạn \(135^\circ=180^\circ-45^\circ\). Vì đối xứng, sin giữ nguyên \(\sqrt2/2\) còn cos đổi dấu thành \(-\sqrt2/2\).
 
-**Tự thử trước Core** Trong bốn giá trị tan0°, cot0°, tan90°, cot90°, giá trị nào bằng 0 và giá trị nào không xác định? Giải thích bằng mẫu số.
+    **Em vận dụng.** Không dùng máy tính, tính \(\sin135^\circ,\cos135^\circ\). So với \(45^\circ\), giá trị nào giữ nguyên, giá trị nào đổi dấu?
 
-<details class="thpt-r4-pedagogical-note" markdown="1" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHIII-TRY03">
-<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHIII-TRY02" hidden></span>
 
-**Lời giải và giải thích.** tan0°=0/1=0; cot0°=1/0 không xác định; tan90°=1/0 không xác định; cot90°=0/1=0.
+    ??? question "Em đã tự tính? Mở đối chiếu"
 
-**Nếu chưa đúng:** Xem lại mục Hỗ trợ khắc phục lỗi ở cuối bài, thử nhắc lại bản chất bằng lời của mình rồi làm câu liên kết câu Core/Luyện tập tương ứng; phần sau này là luyện tập tự nguyện, không là kiểm tra độc lập.
+        \(\sin135^\circ=\frac{\sqrt2}{2}\), \(\cos135^\circ=-\frac{\sqrt2}{2}\). Sin giữ nguyên, cos đổi dấu do hai điểm trên nửa đường tròn đối xứng qua trục \(Oy\).
 
-</details>
 
-### Hai góc bù nhau
+    ### 2.3. Từ sin, cos đến tan, cot: phải xét mẫu số
 
-**Vì sao cần học?** Khi quay một hướng từ 40° sang 140°, điểm trên đường tròn đổi bên trái/phải nhưng vẫn giữ nguyên độ cao. Ta có thể tính hoặc so sánh lượng giác góc tù từ góc nhọn đã biết mà không học thuộc công thức mới một cách rời rạc.
+    Nếu \(\cos\alpha\ne0\), ta định nghĩa \(\tan\alpha=\frac{\sin\alpha}{\cos\alpha}\). Nếu \(\sin\alpha\ne0\), ta định nghĩa \(\cot\alpha=\frac{\cos\alpha}{\sin\alpha}\). Đây là **hai phép chia**, nên khi mẫu bằng 0, giá trị không xác định — **không phải bằng 0**.
 
-**Em đã biết gì?** Nhắc lại hai góc bù có tổng 180° và phép phản xạ qua trục Oy giữ nguyên tung độ, đổi dấu hoành độ.
+    <div class="thpt-g10-table-scroll"><table class="thpt-g10-knowledge-table">
+    <thead><tr><th>Hàm</th><th>Công thức</th><th>Không xác định tại</th></tr></thead>
+    <tbody>
+    <tr><td>\(\tan\alpha\)</td><td>\(\sin\alpha/\cos\alpha\)</td><td>\(90^\circ\) trong đoạn \(0^\circ\)–\(180^\circ\)</td></tr>
+    <tr><td>\(\cot\alpha\)</td><td>\(\cos\alpha/\sin\alpha\)</td><td>\(0^\circ\), \(180^\circ\) trong đoạn đang xét</td></tr>
+    </tbody></table></div>
 
-**Hiểu bản chất trước công thức** Đối với góc β=180°−α, hai điểm trên nửa đường tròn đối xứng qua Oy. Vì vậy sin β=sin α và cos β=−cos α. Tan, cot đổi dấu khi các tỉ số có nghĩa; phải xét mẫu số trước.
+    Ví dụ, \(\tan0^\circ=0/1=0\) nhưng \(\cot0^\circ=1/0\) không xác định. Tại \(90^\circ\), \(\tan90^\circ\) không xác định, còn \(\cot90^\circ=0/1=0\). Với góc tù \(90^\circ<\alpha<180^\circ\), sin dương, cos âm nên cả tan và cot đều âm.
 
-**Cách đọc hình và hình dung** Đọc cặp điểm ở 40°/140° đối xứng qua Oy trên nửa đường tròn; nêu bằng lời vì sao đường dóng ngang có cùng độ cao, còn đường dóng dọc nằm hai phía Oy.
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ:</strong> \(\tan\alpha\) chỉ có nghĩa khi \(\cos\alpha\ne0\); \(\cot\alpha\) chỉ có nghĩa khi \(\sin\alpha\ne0\). “Không xác định” khác với số 0.</div>
 
-**Vì sao làm theo cách này?** Nhận diện tổng 180° trước, đổi dấu **chỉ** những hàm có thay đổi dấu; kiểm tra miền xác định trước khi dùng công thức tan/cot. Không áp dụng tùy tiện cho tổng góc không bằng 180°.
+    **Em vận dụng.** Trong bốn giá trị \(\tan0^\circ,\cot0^\circ,\tan90^\circ,\cot90^\circ\), giá trị nào bằng 0 và giá trị nào không xác định? Giải thích bằng mẫu số.
 
-**Tự thử trước Core** Hai góc 40° và 140° có các quan hệ nào giữa sin, cos, tan và cot? Có cần tính số thập phân để kết luận không?
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHIII-TRY03" hidden></span>
 
-<details class="thpt-r4-pedagogical-note" markdown="1" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHIII-TRY04">
-<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+    ??? question "Em đã xét mẫu số? Mở đáp án"
 
-**Lời giải và giải thích.** sin140°=sin40°; cos140°=−cos40°; tan140°=−tan40°; cot140°=−cot40°. Không cần số thập phân; tan/cot xác định ở cả hai góc này.
+        \(\tan0^\circ=0\), \(\cot90^\circ=0\). \(\cot0^\circ\) và \(\tan90^\circ\) **không xác định** vì mẫu số bằng 0.
 
-**Nếu chưa đúng:** Xem lại mục Hỗ trợ khắc phục lỗi ở cuối bài, thử nhắc lại bản chất bằng lời của mình rồi làm câu liên kết câu Core/Luyện tập tương ứng; phần sau này là luyện tập tự nguyện, không là kiểm tra độc lập.
 
-</details>
+    ### 2.4. Hai góc bù nhau và giới hạn của công thức
 
-### Hệ thức lượng giác
+    Với hai góc bù nhau \(\alpha\) và \(180^\circ-\alpha\), các điểm trên nửa đường tròn đối xứng qua \(Oy\). Do đó:
 
-**Vì sao cần học?** Nếu biết chỉ thành phần ngang của một hướng, ta có thể suy thành phần đứng từ độ dài bán kính 1 hay không? Hệ thức lượng giác là hệ quả của Pitago, nhưng vẫn cần thông tin vị trí để chọn dấu.
+    \[
+    \sin(180^\circ-\alpha)=\sin\alpha,\qquad
+    \cos(180^\circ-\alpha)=-\cos\alpha.
+    \]
 
-**Em đã biết gì?** Nhắc lại x²+y²=1 của đường tròn đơn vị và Pitago; căn bậc hai của một bình phương có thể cho hai dấu. Với góc tù trên (90°,180°), sin>0, cos<0.
+    Từ hai hệ thức trên suy ra
 
-**Hiểu bản chất trước công thức** Thay x=cos α, y=sin α vào x²+y²=1, suy ra sin²α+cos²α=1. Khi biết cos α, tính độ lớn sin rồi dùng nửa đường tròn để chọn dấu; không suy sin âm trên miền góc của bài.
+    \[
+    \tan(180^\circ-\alpha)=-\tan\alpha,\qquad
+    \cot(180^\circ-\alpha)=-\cot\alpha,
+    \]
 
-**Cách đọc hình và hình dung** Từ M ở nửa trái đường tròn, dựng tam giác vuông tới các trục: bình phương hai cạnh góc vuông cộng lại bằng 1. Hướng đứng của M dương dù hướng ngang âm.
+    **chỉ tại những góc mà hai tỉ số tương ứng đều xác định**. Đây là công thức dành cho **hai góc bù nhau**, không phải công thức cộng góc tùy ý.
 
-**Vì sao làm theo cách này?** Sử dụng Pitago khi có một sin/cos đã biết; chọn dấu từ khoảng góc; tính tan cuối cùng khi cos khác 0. Không lấy căn dương cho cos góc tù chỉ vì là căn bậc hai.
+    **Em vận dụng.** Hai góc \(40^\circ\) và \(140^\circ\) có quan hệ nào giữa sin, cos, tan và cot? Có phải dùng máy tính tìm số thập phân không?
 
-**Tự thử trước Core** Góc tù α có cosα=−5/13. Tìm sinα và tanα, kèm lí do chọn dấu.
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHIII-TRY04" hidden></span>
 
-<details class="thpt-r4-pedagogical-note" markdown="1" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHIII-TRY05">
-<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+    ??? question "Mở đáp án sau khi tự suy luận"
 
-**Lời giải và giải thích.** sin²α=1−25/169=144/169. Góc tù có sin>0 nên sinα=12/13; tanα=(12/13)/(−5/13)=−12/5.
+        \(\sin140^\circ=\sin40^\circ\), \(\cos140^\circ=-\cos40^\circ\), \(\tan140^\circ=-\tan40^\circ\), \(\cot140^\circ=-\cot40^\circ\). Cả tan và cot đều xác định ở 40° và 140°, không cần tính số thập phân.
 
-**Nếu chưa đúng:** Xem lại mục Hỗ trợ khắc phục lỗi ở cuối bài, thử nhắc lại bản chất bằng lời của mình rồi làm câu liên kết câu Core/Luyện tập tương ứng; phần sau này là luyện tập tự nguyện, không là kiểm tra độc lập.
 
-</details>
+    ### 2.5. Hệ thức cơ bản: chọn dấu theo góc
 
----
+    Do \(M\) nằm trên đường tròn đơn vị, ta có \(x^2+y^2=1\), nên
 
-## 1. Kiến thức
+    \[
+    \boxed{\sin^2\alpha+\cos^2\alpha=1.}
+    \]
 
-### Định nghĩa trên nửa đường tròn đơn vị
+    Nếu \(\cos\alpha\ne0\), ta chia cả hai vế của **hệ thức \(\sin^2\alpha+\cos^2\alpha=1\) ở trên** cho \(\cos^2\alpha\). Khi đó, ta nhận được \(1+\tan^2\alpha=\frac1{\cos^2\alpha}\), vì \(\frac{\sin^2\alpha}{\cos^2\alpha}=\tan^2\alpha\) và \(\frac{\cos^2\alpha}{\cos^2\alpha}=1\).
 
-Cho `0° ≤ α ≤ 180°`. Điểm `M(x,y)` trên nửa đường tròn đơn vị tâm O, từ tia Ox quay góc α ngược chiều kim đồng hồ, xác định `cos α = x`, `sin α = y` và `x²+y²=1`, `y≥0`. Sin luôn không âm; cos dương với góc nhọn, bằng 0 tại 90°, âm với góc tù.
+    Tương tự, nếu \(\sin\alpha\ne0\), ta chia **cả hai vế của hệ thức ban đầu** cho \(\sin^2\alpha\) và thu được \(1+\cot^2\alpha=\frac1{\sin^2\alpha}\). Khi cả sin và cos đều khác 0, từ định nghĩa của tan và cot, ta còn có \(\tan\alpha\cdot\cot\alpha=1\).
 
-\[
-\tan\alpha=\frac{\sin\alpha}{\cos\alpha}\quad\text{chỉ khi }\cos\alpha\ne0;\qquad
-\cot\alpha=\frac{\cos\alpha}{\sin\alpha}\quad\text{chỉ khi }\sin\alpha\ne0.
-\]
+    Hệ thức đầu tiên cho ta **bình phương** của giá trị chưa biết, nhưng dấu của căn phải dựa vào **góc nhọn hay góc tù**. Ví dụ \(\sin\alpha=\frac35\), \(\alpha\) là góc tù, thì \(\cos^2\alpha=1-\frac9{25}=\frac{16}{25}\), do đó \(\cos\alpha=-\frac45\), chứ không phải \(+\frac45\).
 
-`tan 90°` không xác định; `cot 0°` và `cot 180°` không xác định. `sin`, `cos` xác định trên toàn đoạn 0°–180°. Trên góc tù 90°–180°, cả tan và cot (khi có nghĩa) đều âm.
+    **Em vận dụng.** Góc tù \(\alpha\) có \(\cos\alpha=-\frac5{13}\). Tìm \(\sin\alpha\), \(\tan\alpha\) và giải thích cách chọn dấu.
 
-### Giá trị đặc biệt
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHIII-TRY05" hidden></span>
 
-| α | 0° | 30° | 45° | 60° | 90° | 120° | 135° | 150° | 180° |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| sin α | 0 | 1/2 | √2/2 | √3/2 | 1 | √3/2 | √2/2 | 1/2 | 0 |
-| cos α | 1 | √3/2 | √2/2 | 1/2 | 0 | −1/2 | −√2/2 | −√3/2 | −1 |
+    ??? question "Em đã chọn dấu? Mở lời giải"
 
-Với tan/cot, dùng tỷ số sin/cos chỉ **khi mẫu khác 0**; không ghi một số tại ô không xác định. SBT p.29–30 cung cấp bảng và những ví dụ góc đặc biệt; ở đây nêu tối thiểu các hàng sin/cos để học sinh tránh học thuộc tan/cot sai điều kiện.
+        \(\sin^2\alpha=1-\frac{25}{169}=\frac{144}{169}\). Vì \(\alpha\) tù, \(\sin\alpha>0\), nên \(\sin\alpha=\frac{12}{13}\). Do đó \(\tan\alpha=(12/13)/(-5/13)=-\frac{12}{5}\).
 
-### Góc bù
 
-Với hai góc bù `α` và `180°−α`:
+=== "Ví dụ giải toán"
 
-\[
-\begin{aligned}
-\sin(180^\circ-\alpha)&=\sin\alpha, & \cos(180^\circ-\alpha)&=-\cos\alpha,\\
-\tan(180^\circ-\alpha)&=-\tan\alpha, & \cot(180^\circ-\alpha)&=-\cot\alpha
-\end{aligned}
-\]
+    ### Ví dụ 1 — Giá trị lượng giác góc 120° (đọc từ hình)
 
-Hai đẳng thức có tan và cot chỉ dùng khi vế tương ứng đều xác định. Đây không phải công thức sin/cos của tổng hai góc bất kỳ; không đưa nội dung công thức cộng Toán 11 vào Core.
+    **Đề bài.** Tính \(\sin120^\circ,\cos120^\circ,\tan120^\circ,\cot120^\circ\) không dùng máy tính.
 
-### Hệ thức cơ bản và dấu
+    **Vì sao chọn cách này?** \(120^\circ=180^\circ-60^\circ\) là góc bù một góc nhọn đặc biệt. Dùng **đối xứng qua trục \(Oy\)** nhanh và kiểm dấu được bằng hình trong §2.1.
 
-\[
-\sin^2\alpha+\cos^2\alpha=1,\quad
-1+\tan^2\alpha=\frac1{\cos^2\alpha}\;(\cos\alpha\ne0),\quad
-1+\cot^2\alpha=\frac1{\sin^2\alpha}\;(\sin\alpha\ne0).
-\]
+    **Lời giải.** \(\sin120^\circ=\sin60^\circ=\frac{\sqrt3}{2}\), \(\cos120^\circ=-\cos60^\circ=-\frac12\). Vì sin và cos đều khác 0, \(\tan120^\circ=\frac{\sqrt3/2}{-1/2}=-\sqrt3\), \(\cot120^\circ=\frac{-1/2}{\sqrt3/2}=-\frac{\sqrt3}{3}\).
 
-Khi `sin α ≠ 0` **và** `cos α ≠ 0`, có `tan α·cot α=1`. Biết một giá trị sin/cos cần xét **góc nhọn hay tù** để chọn dấu căn còn lại.
+    **Kiểm lại.** Cả tan và cot là số âm, đúng với hướng góc tù. Hình §2.1 ghi chính các giá trị này.
 
-## 2. Ví dụ
+    ### Ví dụ 2 — Biết sin và biết góc tù (chọn lọc NotebookLM v1)
 
-**Ví dụ 1 — Góc 120°:** `120°=180°−60°`, do đó 
-\(\sin120^\circ=\sqrt3/2\), \(\cos120^\circ=-1/2\), \(\tan120^\circ=-\sqrt3\), \(\cot120^\circ=-\sqrt3/3\). Cos âm vì góc tù; hai tỷ số đều có nghĩa.
+    **Đề bài.** Cho \(\sin\alpha=\frac35\), \(90^\circ<\alpha<180^\circ\). Tính \(\cos\alpha\) và \(\tan\alpha\).
 
-**Ví dụ 2 — Biết sin và biết góc tù:** Cho góc tù α với `sin α=3/5`. Từ `sin²+cos²=1` suy `cos²=16/25`; chọn `cos α=−4/5` vì góc tù, và `tan α=−3/4`. Lỗi thường gặp: dùng căn dương mà không xét miền của α.
+    **Vì sao chọn cách này?** Khi biết sin và cần tìm cos, dùng hệ thức \(\sin^2+\cos^2=1\). Nhưng phương trình cho **hai khả năng dấu**, nên phải dùng khoảng của góc.
 
-**Ví dụ 3 — Tính biểu thức góc bù:** `sin150°+cos150° = 1/2−√3/2=(1−√3)/2`. Trước khi thay giá trị, nhận ra `150°=180°−30°`, sin giữ nguyên, cos đổi dấu.
+    **Lời giải.** \(\cos^2\alpha=1-\frac9{25}=\frac{16}{25}\). Góc \(\alpha\) tù có cos âm, suy ra \(\cos\alpha=-\frac45\). Vì cos khác 0, \(\tan\alpha=\frac{3/5}{-4/5}=-\frac34\).
 
-## 3. Hình minh họa
+    **Kiểm lại.** \((3/5)^2+(-4/5)^2=1\), sin dương và cos âm, đúng miền góc đã cho.
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B05_SEMICIRCLE_120_D5_R01.svg" loading="lazy" alt="Nửa đường tròn đơn vị: xác định dấu các giá trị lượng giác và góc 120°"><figcaption>Nửa đường tròn đơn vị: xác định dấu các giá trị lượng giác và góc 120°.</figcaption></figure>
+    ### Ví dụ 3 — Nhận ra góc bù trong một biểu thức
 
-## 4. Tự khắc phục lỗi thường gặp
+    **Đề bài.** Tính chính xác \(T=\sin150^\circ+\cos150^\circ\).
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-B05-01"><summary>Nhầm dấu góc tù và hai góc bù</summary><ol><li><strong>Dấu hiệu:</strong> Chọn cos120° dương hoặc cos150° bằng cos30°.</li>
-<li><strong>Chẩn đoán:</strong> Học sinh nhớ bảng góc nhọn nhưng bỏ nửa đường tròn phía trái trục Oy.</li>
-<li><strong>Bản chất:</strong> `sin(180°−α)=sinα`, `cos(180°−α)=−cosα`; điểm M góc tù nằm phía trái, tung độ dương.</li>
-<li><strong>Tự sửa:</strong> Vẽ M góc 120° trên FIG-G10-B05-01, đọc hoành/tung; giải lại không nhìn đáp án.</li></ol><p><a href="../luyen-tap/">Luyện lại các câu liên quan</a></p></details>
+    **Vì sao chọn cách này?** \(150^\circ=180^\circ-30^\circ\). Đổi về góc nhọn đặc biệt để tránh số thập phân và tránh sai dấu cos.
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-B05-02"><summary>Bỏ điều kiện tan/cot và chọn sai dấu căn</summary><ol><li><strong>Dấu hiệu:</strong> Tính tan90° bằng 0; viết cot0° là vô hạn; cho cos góc tù dương khi biết sin.</li>
-<li><strong>Chẩn đoán:</strong> Bỏ mẫu của tỷ số sin/cos và không sử dụng miền của góc.</li>
-<li><strong>Bản chất:</strong> Tan chỉ xác định nếu cos≠0, cot nếu sin≠0; `sin²+cos²=1` cho hai dấu căn nhưng miền góc quyết định dấu.</li>
-<li><strong>Tự sửa:</strong> Kiểm tra mẫu và dấu trước khi thế số; tự đối chiếu từng bước.</li></ol><p><a href="../luyen-tap/">Luyện lại các câu liên quan</a></p></details>
+    **Lời giải.** \(\sin150^\circ=\sin30^\circ=\frac12\), \(\cos150^\circ=-\cos30^\circ=-\frac{\sqrt3}{2}\). Vì vậy \(T=\frac{1-\sqrt3}{2}\).
 
-## 5. Luyện tập
+    **Kiểm lại.** \(T<0\) vì \(\sqrt3>1\); điều này phù hợp với cos âm có độ lớn lớn hơn sin ở góc 150°.
 
-[Luyện tập Bài 5](luyen-tap.md) · [Bài tự luận Chương III](../../thu-vien/tu-luan-chuong-iii.md)
+=== "Lỗi thường gặp và cách tự khắc phục"
+
+    <span data-thpt-help-id="HELP-G10-B05-01" hidden></span>
+
+    ??? tip "Nhớ góc nhọn nhưng bỏ dấu âm của cos góc tù"
+
+        **Dấu hiệu:** Viết \(\cos120^\circ=+\frac12\) hoặc \(\cos150^\circ=\cos30^\circ\).
+
+        **Vì sao sai?** Tọa độ ngang của điểm góc tù nằm bên trái \(Oy\), nên cos âm. Hai góc bù nhau có sin bằng nhau nhưng cos đối nhau.
+
+        **Tự sửa:** Quay lại hình §2.1: chỉ điểm \(M\) và hình chiếu xuống trục hoành. Dùng \(180^\circ-\alpha\) và tự tính lại. [Luyện lại tại Core/Luyện tập](../luyen-tap/).
+
+
+    <span data-thpt-help-id="HELP-G10-B05-02" hidden></span>
+
+    ??? tip "Quên điều kiện mẫu của tan/cot hoặc chọn căn dương máy móc"
+
+        **Dấu hiệu:** Cho \(\tan90^\circ=0\), \(\cot0^\circ\) “bằng vô hạn”, hoặc lấy \(\cos\alpha>0\) dù góc tù.
+
+        **Vì sao sai?** Tan và cot là phép chia có mẫu; mẫu bằng 0 khiến phép chia **không xác định**. Hệ thức sin²+cos²=1 chỉ cho bình phương, còn dấu cần xét theo khoảng góc.
+
+        **Tự sửa:** Viết mẫu trước, kiểm khác 0, nhìn lại vị trí góc. Với góc tù có sin \(3/5\), tự tính lại cos âm \(-4/5\). [Ôn tại Core/Luyện tập](../luyen-tap/).
+
+
+    **Học tiếp:** [Core và Luyện tập Chương III](../luyen-tap/) · [Bài 6 — Hệ thức lượng trong tam giác](../bai-6/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/).
+
+    <p class="thpt-r4-footnote">Kiến thức đối chiếu theo SGK Toán 10 · Kết nối tri thức · tập 1 · Bài 5, canonical SLM hiện hành; giải thích nguồn NotebookLM v1 được biên tập chọn lọc. Minh họa góc 120° do SLM xây dựng.</p>
+
