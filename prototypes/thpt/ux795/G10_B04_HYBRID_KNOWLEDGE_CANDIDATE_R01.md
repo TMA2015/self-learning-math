@@ -54,7 +54,7 @@ Một **hệ bất phương trình bậc nhất hai ẩn** gồm hai hoặc nhi�
 
 **Em vận dụng.** Xét hệ \(x\ge1,\ y\ge0,\ x+y\le5\). Hai cặp \((2,3)\) và \((0,4)\) có là nghiệm hệ không? Vì sao?
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY06" data-outcome-id="G10-B04-SYSTEM" markdown="1">
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY06" data-outcome-id="G10-B04-SYSTEM" data-thpt-help-ref="HELP-G10-B04-01" markdown="1">
 <summary>Em đã tự làm? Mở lời giải để đối chiếu</summary>
 
 \((2,3)\) **là nghiệm** vì \(2\ge1,\ 3\ge0,\ 2+3=5\le5\). \((0,4)\) **không là nghiệm** vì \(0\not\ge1\), dù hai điều kiện còn lại đúng.
@@ -80,7 +80,7 @@ Không phải hệ nào cũng tạo một đa giác đóng, bị chặn. Miền 
 
 **Em vận dụng.** Hệ \(x\ge0,\ y\ge0,\ x+2y\le6\) có những đỉnh nào? Các cạnh có được lấy không? Đây là **hệ ba điều kiện khác với tứ giác trong hình**.
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY07" data-outcome-id="G10-B04-REGION_INTERSECTION" markdown="1">
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY07" data-outcome-id="G10-B04-REGION_INTERSECTION" data-thpt-help-ref="HELP-G10-B04-01" markdown="1">
 <summary>Em đã thử tìm đỉnh? Mở đối chiếu</summary>
 
 Các đỉnh là \((0,0)\), \((6,0)\), \((0,3)\). Ba đường biên tạo thành một **tam giác**, **không phải** tứ giác ở hình trên. Cả ba cạnh đều thuộc miền vì các dấu \(\ge,\le\) đều có bằng.
@@ -95,7 +95,7 @@ Trong hình học, đó là trường hợp các miền riêng lẻ **không có
 
 **Em vận dụng.** Xét hệ \(x\ge3,\ y\ge0,\ x+y\le2\). Hệ có nghiệm không? Giải thích bằng bất đẳng thức.
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY08" data-outcome-id="G10-B04-FEASIBILITY" markdown="1">
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY08" data-outcome-id="G10-B04-FEASIBILITY" data-thpt-help-ref="HELP-G10-B04-01" markdown="1">
 <summary>Mở lời giải sau khi suy nghĩ</summary>
 
 **Không có nghiệm.** Từ \(x\ge3,\ y\ge0\) suy ra \(x+y\ge3\), trái với điều kiện \(x+y\le2\). Không thể tối ưu trên một miền nghiệm rỗng.
@@ -123,7 +123,7 @@ Quy tắc “thử các đỉnh” **không được áp dụng máy móc** cho 
 
 **Em vận dụng.** Tam giác nghiệm của \(x\ge0,\ y\ge0,\ 2x+y\le6\) có các đỉnh \((0,0),(3,0),(0,6)\). Tính \(F=x+2y\) ở các đỉnh và xác định \(F_{\max}\). Đây **không** phải hàm và hệ trong hình tứ giác ở mục §2.2.
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY09" data-outcome-id="G10-B04-LINEAR_OBJECTIVE" markdown="1">
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY09" data-outcome-id="G10-B04-LINEAR_OBJECTIVE" data-thpt-help-ref="HELP-G10-B04-02" markdown="1">
 <summary>Em đã tính ở cả ba đỉnh? Mở đáp án</summary>
 
 \(F(0,0)=0\), \(F(3,0)=3\), \(F(0,6)=12\). Vậy \(F_{\max}=12\) tại \((0,6)\).
@@ -138,7 +138,7 @@ Nếu tìm cực đại trên miền liên tục mà điểm đạt cực đại
 
 **Em vận dụng.** Với \(x+2y\le7,\ 2x+y\le7,\ x,y\in\mathbb Z_{\ge0}\), xét \(F=3x+2y\). Điểm \((7/3,7/3)\) có hợp lệ không? So \(F\) tại hai điểm \((2,2)\) và \((3,1)\). **Chỉ so hai điểm, chưa kết luận tối ưu toàn cục.**
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY10" data-outcome-id="G10-B04-INTEGER_MODELS" markdown="1">
+<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY10" data-outcome-id="G10-B04-INTEGER_MODELS" data-thpt-help-ref="HELP-G10-B04-02" markdown="1">
 <summary>Mở đối chiếu sau khi tự làm</summary>
 
 \((7/3,7/3)\) thỏa hai bất phương trình nhưng **không phải phương án nguyên**. \((2,2)\) có \(2+4=6\le7,\ 4+2=6\le7\), cho \(F=10\). \((3,1)\) có \(3+2=5\le7,\ 6+1=7\le7\), cho \(F=11\). Trong **hai điểm được so**, \((3,1)\) tốt hơn; bài chưa yêu cầu chứng minh đó là tối ưu toàn cục.
