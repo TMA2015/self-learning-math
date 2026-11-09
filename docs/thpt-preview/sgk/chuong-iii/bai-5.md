@@ -163,7 +163,7 @@
         \(\sin^2\alpha=1-\frac{25}{169}=\frac{144}{169}\). Vì \(\alpha\) tù, \(\sin\alpha>0\), nên \(\sin\alpha=\frac{12}{13}\). Do đó \(\tan\alpha=(12/13)/(-5/13)=-\frac{12}{5}\).
 
 
-=== "Ví dụ giải toán"
+=== "Ví dụ"
 
     ### Ví dụ 1 — Giá trị lượng giác góc 120° (đọc từ hình)
 
@@ -195,7 +195,7 @@
 
     **Kiểm lại.** \(T<0\) vì \(\sqrt3>1\); điều này phù hợp với cos âm có độ lớn lớn hơn sin ở góc 150°.
 
-=== "Lỗi thường gặp và cách tự khắc phục"
+=== "Lỗi thường gặp"
 
     <span data-thpt-help-id="HELP-G10-B05-01" hidden></span>
 
