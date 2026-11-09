@@ -37,29 +37,35 @@ Kiểm pháp tuyến khác 0; kiểm định thức; nếu bằng 0, so sánh đ
 
 **Em vận dụng.** d1: 2x-y+1=0, d2: 4x-2y+3=0 là song song phân biệt hay trùng nhau?
 
-??? question "Tự mở đáp án sau khi đã tự làm"
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Tự mở đáp án sau khi đã tự làm</summary>
 
-    **Đáp án:** Song song phân biệt.
+**Đáp án:** Song song phân biệt.
 
-    **Lý do:** Hai pháp tuyến (2,-1) và (4,-2) tỉ lệ 2 lần, nhưng nhân toàn phương trình d1 với 2 cho hằng số 2, không phải 3 của d2.
+**Lý do:** Hai pháp tuyến (2,-1) và (4,-2) tỉ lệ 2 lần, nhưng nhân toàn phương trình d1 với 2 cho hằng số 2, không phải 3 của d2.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY08` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+**Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY08` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+
+</details>
 
 <span id="help-g10-chvii-try08" data-thpt-help-id="HELP-G10-CHVII-TRY08"></span>
 
-??? tip "Tự khắc phục theo năm bước"
+<details class="thpt-r4-pedagogical-note thpt-r4-help-fold" markdown="1">
+<summary>Tự khắc phục theo năm bước</summary>
 
-    1. **Nhận diện lỗi:** Nếu kết luận trùng ngay khi pháp tuyến tỉ lệ, em đã bỏ quên hệ số tự do.
+1. **Nhận diện lỗi:** Nếu kết luận trùng ngay khi pháp tuyến tỉ lệ, em đã bỏ quên hệ số tự do.
 
-    2. **Quay lại bản chất:** Định thức a1b2-a2b1 khác 0 thì hai đường cắt nhau. Bằng 0 chỉ nói cùng hướng: xét thêm c để phân biệt song song khác nhau và trùng nhau.
+2. **Quay lại bản chất:** Định thức a1b2-a2b1 khác 0 thì hai đường cắt nhau. Bằng 0 chỉ nói cùng hướng: xét thêm c để phân biệt song song khác nhau và trùng nhau.
 
-    3. **Tự sửa:** Nhân hẳn d1 với hệ số 2 rồi đối chiếu cả ba hệ số của d2.
+3. **Tự sửa:** Nhân hẳn d1 với hệ số 2 rồi đối chiếu cả ba hệ số của d2.
 
-    4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B20-C01` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B20-C01` trong phần Core/Luyện tập; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B20-C01">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
+</details>
+
+<a href="../luyen-tap/?item=THPT-G10-B20-C01">Mở câu luyện tập tương ứng để tự luyện</a>
 
 
 <span id="thpt-g10-chvii-try09" data-thpt-first-try-id="THPT-G10-CHVII-TRY09" data-outcome-id="G10-B20-PERPENDICULAR" data-thpt-help-ref="HELP-G10-CHVII-TRY09"></span>
@@ -78,29 +84,35 @@ Chọn n' vuông góc với n của d, rồi dùng n'·PM=0; kiểm P thuộc đ
 
 **Em vận dụng.** Qua P(1,-2) viết đường vuông góc với d: x+2y-5=0.
 
-??? question "Tự mở đáp án sau khi đã tự làm"
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Tự mở đáp án sau khi đã tự làm</summary>
 
-    **Đáp án:** 2x-y-4=0.
+**Đáp án:** 2x-y-4=0.
 
-    **Lý do:** n=(1,2) của d, chọn n'=(2,-1) có tích vô hướng 0. Qua P: 2(x-1)-(y+2)=0 ⇒ 2x-y-4=0.
+**Lý do:** n=(1,2) của d, chọn n'=(2,-1) có tích vô hướng 0. Qua P: 2(x-1)-(y+2)=0 ⇒ 2x-y-4=0.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY09` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+**Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY09` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+
+</details>
 
 <span id="help-g10-chvii-try09" data-thpt-help-id="HELP-G10-CHVII-TRY09"></span>
 
-??? tip "Tự khắc phục theo năm bước"
+<details class="thpt-r4-pedagogical-note thpt-r4-help-fold" markdown="1">
+<summary>Tự khắc phục theo năm bước</summary>
 
-    1. **Nhận diện lỗi:** Nếu chỉ lấy lại n=(1,2), em sẽ viết đường song song với d chứ không vuông góc.
+1. **Nhận diện lỗi:** Nếu chỉ lấy lại n=(1,2), em sẽ viết đường song song với d chứ không vuông góc.
 
-    2. **Quay lại bản chất:** Nếu hai đường vuông góc thì hai pháp tuyến của chúng cũng vuông góc (đều bị quay cùng 90 độ so với đường). Điểm quyết định tịnh tiến đường mới.
+2. **Quay lại bản chất:** Nếu hai đường vuông góc thì hai pháp tuyến của chúng cũng vuông góc (đều bị quay cùng 90 độ so với đường). Điểm quyết định tịnh tiến đường mới.
 
-    3. **Tự sửa:** Thử n·n'=0 và thay P vào phương trình vừa viết.
+3. **Tự sửa:** Thử n·n'=0 và thay P vào phương trình vừa viết.
 
-    4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B20-C02` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B20-C02` trong phần Core/Luyện tập; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B20-C02">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
+</details>
+
+<a href="../luyen-tap/?item=THPT-G10-B20-C02">Mở câu luyện tập tương ứng để tự luyện</a>
 
 
 <span id="thpt-g10-chvii-try10" data-thpt-first-try-id="THPT-G10-CHVII-TRY10" data-outcome-id="G10-B20-INTERSECTION" data-thpt-help-ref="HELP-G10-CHVII-TRY10"></span>
@@ -119,29 +131,35 @@ Lập hệ đúng hai phương trình, giải bằng thế/khử, kiểm tọa �
 
 **Em vận dụng.** Tìm giao điểm của x+2y=8 và 2x-y=1.
 
-??? question "Tự mở đáp án sau khi đã tự làm"
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Tự mở đáp án sau khi đã tự làm</summary>
 
-    **Đáp án:** I(2,3).
+**Đáp án:** I(2,3).
 
-    **Lý do:** Từ 2x-y=1 ⇒ y=2x-1. Thế vào x+2(2x-1)=8 ⇒ x=2, y=3; kiểm 2+6=8, 4-3=1.
+**Lý do:** Từ 2x-y=1 ⇒ y=2x-1. Thế vào x+2(2x-1)=8 ⇒ x=2, y=3; kiểm 2+6=8, 4-3=1.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY10` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+**Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY10` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+
+</details>
 
 <span id="help-g10-chvii-try10" data-thpt-help-id="HELP-G10-CHVII-TRY10"></span>
 
-??? tip "Tự khắc phục theo năm bước"
+<details class="thpt-r4-pedagogical-note thpt-r4-help-fold" markdown="1">
+<summary>Tự khắc phục theo năm bước</summary>
 
-    1. **Nhận diện lỗi:** Nếu ra một điểm chỉ thỏa một đường, em đã dừng trước bước thử.
+1. **Nhận diện lỗi:** Nếu ra một điểm chỉ thỏa một đường, em đã dừng trước bước thử.
 
-    2. **Quay lại bản chất:** Một giao điểm là nghiệm chung của hai phương trình; giải từng phương trình riêng không đủ.
+2. **Quay lại bản chất:** Một giao điểm là nghiệm chung của hai phương trình; giải từng phương trình riêng không đủ.
 
-    3. **Tự sửa:** Ghi thành hai dòng kiểm thế tọa độ vào từng phương trình.
+3. **Tự sửa:** Ghi thành hai dòng kiểm thế tọa độ vào từng phương trình.
 
-    4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B20-P01` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B20-P01` trong phần Core/Luyện tập; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B20-P01">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
+</details>
+
+<a href="../luyen-tap/?item=THPT-G10-B20-P01">Mở câu luyện tập tương ứng để tự luyện</a>
 
 
 <span id="thpt-g10-chvii-try11" data-thpt-first-try-id="THPT-G10-CHVII-TRY11" data-outcome-id="G10-B20-DISTANCE" data-thpt-help-ref="HELP-G10-CHVII-TRY11"></span>
@@ -160,29 +178,35 @@ Kiểm (a,b)≠(0,0), tính |axM+byM+c|/√(a²+b²). Kết quả phải ≥0; n
 
 **Em vận dụng.** Tính khoảng cách từ M(1,2) đến d: 3x+4y-1=0.
 
-??? question "Tự mở đáp án sau khi đã tự làm"
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Tự mở đáp án sau khi đã tự làm</summary>
 
-    **Đáp án:** d(M,d)=2.
+**Đáp án:** d(M,d)=2.
 
-    **Lý do:** Tử |3·1+4·2−1|=10, mẫu √(3²+4²)=5, nên khoảng cách bằng 10/5=2.
+**Lý do:** Tử |3·1+4·2−1|=10, mẫu √(3²+4²)=5, nên khoảng cách bằng 10/5=2.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY11` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+**Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY11` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+
+</details>
 
 <span id="help-g10-chvii-try11" data-thpt-help-id="HELP-G10-CHVII-TRY11"></span>
 
-??? tip "Tự khắc phục theo năm bước"
+<details class="thpt-r4-pedagogical-note thpt-r4-help-fold" markdown="1">
+<summary>Tự khắc phục theo năm bước</summary>
 
-    1. **Nhận diện lỗi:** Nếu cho kết quả 10 hoặc -2, em đã quên chuẩn hóa pháp tuyến hoặc trị tuyệt đối.
+1. **Nhận diện lỗi:** Nếu cho kết quả 10 hoặc -2, em đã quên chuẩn hóa pháp tuyến hoặc trị tuyệt đối.
 
-    2. **Quay lại bản chất:** Biểu thức axM+byM+c đo độ lệch có dấu theo pháp tuyến chưa chuẩn hóa; chia √(a²+b²) đổi thành độ dài thật và lấy trị tuyệt đối.
+2. **Quay lại bản chất:** Biểu thức axM+byM+c đo độ lệch có dấu theo pháp tuyến chưa chuẩn hóa; chia √(a²+b²) đổi thành độ dài thật và lấy trị tuyệt đối.
 
-    3. **Tự sửa:** Tách tính tử và mẫu, kiểm mẫu khác 0, kết luận độ dài không âm.
+3. **Tự sửa:** Tách tính tử và mẫu, kiểm mẫu khác 0, kết luận độ dài không âm.
 
-    4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B20-P02` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B20-P02` trong phần Core/Luyện tập; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B20-P02">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
+</details>
+
+<a href="../luyen-tap/?item=THPT-G10-B20-P02">Mở câu luyện tập tương ứng để tự luyện</a>
 
 
 <span id="thpt-g10-chvii-try12" data-thpt-first-try-id="THPT-G10-CHVII-TRY12" data-outcome-id="G10-B20-ANGLE" data-thpt-help-ref="HELP-G10-CHVII-TRY12"></span>
@@ -201,29 +225,35 @@ Dùng |n1·n2|/(||n1||||n2||) và kiểm 0≤cosφ≤1. Đừng nhầm góc tù 
 
 **Em vận dụng.** Góc nhỏ giữa d1: x=0 và d2: x-y=0 bằng bao nhiêu?
 
-??? question "Tự mở đáp án sau khi đã tự làm"
+<details class="thpt-r4-pedagogical-note thpt-r4-first-try-fold" markdown="1">
+<summary>Tự mở đáp án sau khi đã tự làm</summary>
 
-    **Đáp án:** 45°.
+**Đáp án:** 45°.
 
-    **Lý do:** Pháp tuyến n1=(1,0), n2=(1,-1). cosφ=|1|/(1·√2)=1/√2 nên φ=45°.
+**Lý do:** Pháp tuyến n1=(1,0), n2=(1,-1). cosφ=|1|/(1·√2)=1/√2 nên φ=45°.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY12` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+**Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY12` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+
+</details>
 
 <span id="help-g10-chvii-try12" data-thpt-help-id="HELP-G10-CHVII-TRY12"></span>
 
-??? tip "Tự khắc phục theo năm bước"
+<details class="thpt-r4-pedagogical-note thpt-r4-help-fold" markdown="1">
+<summary>Tự khắc phục theo năm bước</summary>
 
-    1. **Nhận diện lỗi:** Nếu kết luận 135°, em đã lấy góc tù theo hướng pháp tuyến thay vì góc nhỏ giữa hai đường.
+1. **Nhận diện lỗi:** Nếu kết luận 135°, em đã lấy góc tù theo hướng pháp tuyến thay vì góc nhỏ giữa hai đường.
 
-    2. **Quay lại bản chất:** Góc nhỏ giữa hai đường nằm từ 0 đến 90 độ; đổi hướng một pháp tuyến không làm đổi góc nhỏ nên lấy trị tuyệt đối tích vô hướng.
+2. **Quay lại bản chất:** Góc nhỏ giữa hai đường nằm từ 0 đến 90 độ; đổi hướng một pháp tuyến không làm đổi góc nhỏ nên lấy trị tuyệt đối tích vô hướng.
 
-    3. **Tự sửa:** Lấy trị tuyệt đối tích vô hướng, kiểm φ không vượt 90°.
+3. **Tự sửa:** Lấy trị tuyệt đối tích vô hướng, kiểm φ không vượt 90°.
 
-    4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B20-P03` trong ngân hàng Core/Luyện tập SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B20-P03` trong phần Core/Luyện tập; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B20-P03">Mở câu luyện tập đã được kiểm tra để tự sửa</a>
+</details>
+
+<a href="../luyen-tap/?item=THPT-G10-B20-P03">Mở câu luyện tập tương ứng để tự luyện</a>
 
 ### Vị trí tương đối của hai đường thẳng
 
