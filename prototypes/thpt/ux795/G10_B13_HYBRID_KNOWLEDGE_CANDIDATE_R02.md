@@ -124,7 +124,7 @@ Mẫu \(x_1,\ldots,x_n\) có \(n>0\), số trung bình \(\bar x=(\sum_i x_i)/n\)
 
 **Cách đọc hình.** Sắp xếp dữ liệu từ bé đến lớn trước khi nhìn Q1, Q2, Q3. Các mốc chia nhóm quan sát đã sắp xếp, không chia khoảng giá trị thành những đoạn bằng nhau.
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B13_QUARTILES_D5_R01.svg" loading="lazy" alt="Mẫu đã sắp và cách lấy tứ phân vị khi có năm giá trị"><figcaption>Mẫu đã sắp và cách lấy tứ phân vị khi có năm giá trị.</figcaption></figure>
+<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../docs/assets/images/thpt/THPT_G10_B13_QUARTILES_D5_R01.svg" loading="lazy" alt="Mẫu đã sắp và cách lấy tứ phân vị khi có năm giá trị"><figcaption>Mẫu đã sắp và cách lấy tứ phân vị khi có năm giá trị.</figcaption></figure>
 
 Với mẫu tăng dần: \(Q_2\) là trung vị; \(Q_1\) là trung vị **nửa dưới** và \(Q_3\) là trung vị **nửa trên**. Khi \(n\) lẻ, **loại chính \(Q_2\)** khỏi cả hai nửa; khi \(n\) chẵn, chia dãy thành hai nửa bằng nhau. Mỗi trường hợp cần ghi thao tác, không dùng máy tính có quy ước percentile khác làm bằng chứng thay SGK.
 
