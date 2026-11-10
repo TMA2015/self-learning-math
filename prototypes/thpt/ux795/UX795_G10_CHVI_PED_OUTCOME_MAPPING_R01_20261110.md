@@ -8,7 +8,7 @@
 
 - B15: `7b579927e0f6fe4d5a562d5e1127efa8d6deeb96` — `docs/thpt-preview/sgk/chuong-vi/bai-15.md`
 - B16: `afe31b484ba60f8f7fed243b29995332a5609826` — `docs/thpt-preview/sgk/chuong-vi/bai-16.md`
-- B17: `6302851ed5ce78540a315eec475df7581c321390` — `docs/thpt-preview/sgk/chuong-vi/bai-17.md`
+- B17: `11d63ba7b40dfc75c1964f3bd59585975abaf8e9` — `docs/thpt-preview/sgk/chuong-vi/bai-17.md`
 - B18: `31ed3e85424d68130fc62a96e031389fc937122c` — `docs/thpt-preview/sgk/chuong-vi/bai-18.md`
 
 ## Bảng năng lực tự học cần chứng minh (một outcome, một luồng)
@@ -29,7 +29,7 @@
 | B17 | `B17_OUT_02` | Nghiệm kép chỉ tiếp xúc, không đổi dấu; phân biệt ≤ và < | `THPT-G10-CHVI-TRY12` | `HELP-G10-CHVI-TRY12` | `STRUCTURE_MAPPED` |
 | B17 | `B17_OUT_03` | Tập nghiệm bất phương trình là khoảng, chọn đầu mút theo dấu | `THPT-G10-CHVI-TRY13` | `HELP-G10-CHVI-TRY13` | `STRUCTURE_MAPPED` |
 | B17 | `B17_OUT_04` | Dương mọi x: xác nhận a cố định và Δ<0; không vượt Core nếu a có thể bằng 0 | `THPT-G10-CHVI-TRY14` | `HELP-G10-CHVI-TRY14` | `STRUCTURE_MAPPED` |
-| B17 | `B17_OUT_05` | Rào ba cạnh: lập diện tích và giao nghiệm với miền hình học | `THPT-G10-CHVI-TRY15` | `HELP-G10-CHVI-TRY15` | `STRUCTURE_MAPPED` |
+| B17 | `B17_OUT_05` | Rào ba cạnh và vật bay: lập bất phương trình, giao tập nghiệm với miền hình học/thời gian thực tế | `THPT-G10-CHVI-TRY15` | `HELP-G10-CHVI-TRY15` | `STRUCTURE_MAPPED` |
 | B18 | `B18_OUT_01` | Hai căn bằng nhau: đặt điều kiện cả hai biểu thức dưới căn rồi mới bình phương | `THPT-G10-CHVI-TRY16` | `HELP-G10-CHVI-TRY16` | `STRUCTURE_MAPPED` |
 | B18 | `B18_OUT_02` | Một căn bằng biểu thức: vế phải phải không âm; thử nghiệm gốc | `THPT-G10-B18-C01` | `HELP-G10-CHVI-TRY17` | `STRUCTURE_MAPPED` |
 | B18 | `B18_OUT_03` | Nghiệm ngoại lai do bình phương mất dấu; kiểm điều kiện và phương trình gốc | `THPT-G10-CHVI-TRY18` | `HELP-G10-CHVI-TRY18` | `STRUCTURE_MAPPED` |
