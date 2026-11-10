@@ -23,7 +23,7 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/chuong-v/";
      for(let k=0;k<count;k++){
       const row=disc.nth(k),id="THPT-G10-CHV-TRY"+String(first+k).padStart(2,"0");
       assert.equal(await row.getAttribute("data-thpt-first-try-id"),id,"Canonical First Try ID and order");
-      assert.equal(await row.locator("summary").innerText(),"Em đã tự thử? Mở lời giải để đối chiếu");
+      assert.equal(await row.locator("summary").innerText(),"Đối chiếu","Owner-approved concise First Try title");
       const content=row.locator(".thpt-r4-first-try-answer");
       assert.equal(await content.count(),1,"One semantic answer container distinct from visible summary "+id);
       assert.equal(await content.isVisible(),false,"Closed answer must be hidden "+id);

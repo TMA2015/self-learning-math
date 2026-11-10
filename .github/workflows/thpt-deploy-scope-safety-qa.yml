@@ -1,0 +1,49 @@
+name: THPT Safe Main Push Deploy Scope QA (no deploy)
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/deploy.yml'
+      - 'scripts/test-thpt-push-deploy-scope.cjs'
+      - '.github/workflows/thpt-deploy-scope-safety-qa.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  deploy-scope:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Strict syntax and positive/negative site change regression
+        run: |
+          node --check scripts/test-thpt-push-deploy-scope.cjs
+          node scripts/test-thpt-push-deploy-scope.cjs --self-test
+      - name: Preserve full original deploy gate signatures
+        run: |
+          node - <<'NODE'
+          const fs=require('node:fs'),assert=require('node:assert/strict');
+          const w=fs.readFileSync('.github/workflows/deploy.yml','utf8');
+          assert(/BEFORE_SHA:\s*\$\{\{\s*github\.event\.before\s*\}\}/.test(w),'Full main push base required');
+          assert(/HEAD_SHA:\s*\$\{\{\s*github\.sha\s*\}\}/.test(w),'Full main push head required');
+          assert(w.includes("if: needs.release-scope.outputs.deploy == 'true'"),'No unscoped automatic publish');
+          for(const s of ['scripts/test-thpt-release-queue.cjs','scripts/test-thpt-g10-chvi-full-r04-release.cjs',
+            'scripts/test-thpt-g10-chiv-full-r04-release.cjs','scripts/test-thpt-g12-chvi-release-source.cjs',
+            'node scripts/test-thpt-static-release.cjs','python check_roadmap_dependencies.py']){
+            assert(w.includes(s),'Original production regression guard removed: '+s);
+          }
+          const queueStep=w.indexOf('Protect release-queue manifest and REGISTER even on metadata-only main pushes');
+          const classificationStep=w.indexOf('Assert safe push-scope classifier and classify FULL main push');
+          assert(queueStep>0 && classificationStep>queueStep,'Ready/REGISTER guard must run before any no-deploy classification');
+          assert(w.slice(queueStep,classificationStep).includes('node scripts/test-thpt-release-queue.cjs'),'Ready/REGISTER preflight cannot be skipped');
+          const v2Step=w.indexOf('Enforce V2 source/receipt SHA of any new READY packet even when no site deployment');
+          assert(v2Step>queueStep && v2Step<classificationStep,'V2 source lock must precede metadata-only deploy skip');
+          assert(w.slice(v2Step,classificationStep).includes('node scripts/test-thpt-handoff-gate-v2.cjs'),'New V2 READY receipt SHA cannot be skipped');
+
+          assert(!w.includes('continue-on-error:'),'No failures may be ignored');
+          console.log('PASS deploy safety: all original main release gate signatures present; full push diff and no bypass.');
+          NODE
+      - name: Evidence boundary
+        run: |
+          echo 'This verifies deployment scope logic only; not a site publication or owner approval.'

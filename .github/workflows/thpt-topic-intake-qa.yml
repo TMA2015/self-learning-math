@@ -1,0 +1,54 @@
+name: THPT Topic V2 Intake and Source-Scope QA (no deploy)
+
+on:
+  pull_request:
+    paths:
+      - 'docs/thpt-preview/chuyen-de/**'
+      - 'prototypes/thpt/content-drafts/topic-*/**'
+      - 'prototypes/thpt/release-handoffs/THPT-TOPIC-*.md'
+      - 'prototypes/thpt/release-queue/**'
+      - 'scripts/test-thpt-handoff-gate-v2.cjs'
+      - 'scripts/test-thpt-release-queue.cjs'
+      - 'scripts/test-thpt-release-scope-isolation.cjs'
+      - '.github/workflows/thpt-topic-intake-qa.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: math-thpt-topic-intake-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  topic-intake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Classify Topic versus SGK source changes (diagnostic only, never a PASS verdict)
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          node scripts/test-thpt-release-scope-isolation.cjs --self-test
+          node scripts/test-thpt-release-scope-isolation.cjs
+
+      - name: Enforce one source-locked V2 contract and independent Topic Q18 / Q15-Q16 metadata
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          node scripts/test-thpt-handoff-gate-v2.cjs --self-test
+          node scripts/test-thpt-handoff-gate-v2.cjs
+
+      - name: Enforce real ready manifests, REGISTER, A1-A7/R1-R5/P1-P2 without faking CONTENT_READY
+        run: node scripts/test-thpt-release-queue.cjs
+
+      - name: Scope limit
+        run: |
+          echo 'PASS means intake schema and currently staged ready manifests are consistent.'
+          echo 'It is NOT an Academic/PED review, CONTENT_READY for packets still in AUTHORING draft, a browser QA, or permission to deploy.'
+          echo 'Topic has three independent learning pages, no fourth Core; private RD1 items/keys/rubrics must never enter the public site.'
