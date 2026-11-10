@@ -9,7 +9,7 @@
 - B15: `7b579927e0f6fe4d5a562d5e1127efa8d6deeb96` — `docs/thpt-preview/sgk/chuong-vi/bai-15.md`
 - B16: `afe31b484ba60f8f7fed243b29995332a5609826` — `docs/thpt-preview/sgk/chuong-vi/bai-16.md`
 - B17: `11d63ba7b40dfc75c1964f3bd59585975abaf8e9` — `docs/thpt-preview/sgk/chuong-vi/bai-17.md`
-- B18: `31ed3e85424d68130fc62a96e031389fc937122c` — `docs/thpt-preview/sgk/chuong-vi/bai-18.md`
+- B18: `712694dca594379ae27e49d6c192adf47b2d0d81` — `docs/thpt-preview/sgk/chuong-vi/bai-18.md`
 
 ## Bảng năng lực tự học cần chứng minh (một outcome, một luồng)
 
@@ -33,7 +33,7 @@
 | B18 | `B18_OUT_01` | Hai căn bằng nhau: đặt điều kiện cả hai biểu thức dưới căn rồi mới bình phương | `THPT-G10-CHVI-TRY16` | `HELP-G10-CHVI-TRY16` | `STRUCTURE_MAPPED` |
 | B18 | `B18_OUT_02` | Một căn bằng biểu thức: vế phải phải không âm; thử nghiệm gốc | `THPT-G10-B18-C01` | `HELP-G10-CHVI-TRY17` | `STRUCTURE_MAPPED` |
 | B18 | `B18_OUT_03` | Nghiệm ngoại lai do bình phương mất dấu; kiểm điều kiện và phương trình gốc | `THPT-G10-CHVI-TRY18` | `HELP-G10-CHVI-TRY18` | `STRUCTURE_MAPPED` |
-| B18 | `B18_OUT_04` | Ứng dụng độ dài: ẩn dương, hệ thức Pitago, kiểm đơn vị và nghiệm gốc | `THPT-G10-CHVI-TRY19` | `HELP-G10-CHVI-TRY19` | `STRUCTURE_MAPPED` |
+| B18 | `B18_OUT_04` | Ứng dụng độ dài và thời gian gặp nhau: lập miền thực tế, dùng Pitago/tốc độ, loại nghiệm ngoại lai và thử gốc | `THPT-G10-CHVI-TRY19` | `HELP-G10-CHVI-TRY19` | `STRUCTURE_MAPPED` |
 
 **Giải thích trạng thái:** 19/19 dòng đã được đối chiếu với source Markdown đang staged: có `data-outcome-id`, `data-thpt-first-try-id` và `data-thpt-help-id` thích hợp trong cùng bài. **Chỉ kiểm tra cấu trúc/đường học hiện diện**, không chứng minh một học sinh mới học thật sự hiểu, không xác minh SGK/SBT S1 và không tự cấp `PED_PASS` hay reviewer verdict.
 
