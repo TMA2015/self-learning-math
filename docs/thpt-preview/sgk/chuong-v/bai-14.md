@@ -148,13 +148,13 @@
 
     Trước khi xem lời giải, hãy xác định dữ kiện, điều phải tìm và lý do chọn cách giải. Sau đó kiểm tra lại điều kiện áp dụng và kết quả, thay vì chỉ nhìn phép tính cuối cùng.
 
-    ### Ví dụ 1. R, IQR, phương sai
+    ### Ví dụ 1. Khoảng biến thiên, khoảng tứ phân vị và phương sai
     Mẫu \(2,4,6,8\): \(\bar x=5\), \(R=6\), \(Q_1=3,Q_3=7,\Delta_Q=4\); \(s^2=(9+1+1+9)/4=5\), \(s=\sqrt5\approx2{,}236\).
 
-    ### Ví dụ 2. cùng trung bình, khác độ phân tán
+    ### Ví dụ 2. Cùng trung bình nhưng khác độ phân tán
     \(A=(4,5,6)\), \(B=(1,5,9)\) đều có \(\bar x=5\), nhưng \(s_A^2=2/3\), \(s_B^2=32/3\); B biến động hơn, không thể dùng duy nhất trung bình.
 
-    ### Ví dụ 3. nhận diện giá trị bất thường
+    ### Ví dụ 3. Nhận diện giá trị bất thường
     Mẫu \(1,2,2,3,3,4,4,20\): \(Q_1=2\), \(Q_3=4\), \(\Delta_Q=2\), ngưỡng trên \(4+1{,}5(2)=7\), nên 20 là giá trị bất thường. Không gọi tất cả giá trị lớn hơn trung bình là ngoại lệ.
 
 === "Lỗi thường gặp"
