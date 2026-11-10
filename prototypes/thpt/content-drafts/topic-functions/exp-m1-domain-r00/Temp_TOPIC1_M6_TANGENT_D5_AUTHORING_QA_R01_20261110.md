@@ -6,7 +6,7 @@
 
 - Canonical R18 đã Academic/PED PASS của Chuyên đề 1: \`Temp_TOPIC_FUNCTIONS_FULL_PUBLIC_CANONICAL_SOURCE_R18_20261108.md\`, Git blob \`2340ea4975b37a457363eea59dd617070934983c\`, không chỉnh sửa. Trong M6.1 đã có **thương sai phân/tốc độ tức thời**; M6.2 có hình D5 gốc \`FIG-G11-CHIX-B31-01_R00.svg\`, đồ thị f(x)=x², cát tuyến và tiếp tuyến, source blob \`ca0a19f3931983632f88754bf4317d012add6b79\`. Mô hình mới **bổ sung sự liên kết với f′ và phản ví dụ cực trị**, không thay hình hoặc cách giải đã review.
 - File HTML 10-in-1 người dùng cung cấp, SHA-256 \`b303b6ed23c47f79f6f49bbb5d42288bebd5c66a6f11e509bed16dce754848db\`, mô hình số **4** được dùng làm ý tưởng. Không sao chép nguyên, vì câu \`f'(x)=0 ⇒ cực trị\` trong nguồn sai tổng quát và nguồn không thực sự vẽ f′(x).
-- **Mô hình AUTHORING đã dựng mới:** \`Temp_TOPIC1_M6_TANGENT_DERIVATIVE_TWO_GRAPHS_D5_R00_20261110.html\`, Git blob **\`65af7b8f8d9d51e1dbce0e3266f71f7b6b3a6b22\`**.
+- **Mô hình AUTHORING đã dựng mới:** \`Temp_TOPIC1_M6_TANGENT_DERIVATIVE_TWO_GRAPHS_D5_R00_20261110.html\`, Git blob **\`ceaae390bb21fafb99cd5cdcbf7e8dbf497a6123\`**.
 
 ## 2. Giá trị tự học/đọc hình
 
@@ -35,7 +35,7 @@ Với \(f(x)=x^3\), chọn \(x_0=0\) và h=0,1. Dự đoán trước: cát tuy�
 - Với \(x^3\): f′=3x², chỉ 0 tại x=0, không có biến đổi dấu.
 - Thương của \(x^3\) tại \(x_0=0\): \(h^2\to0\) khi h→0 **cả hai phía**, không là 0 khi h còn khác 0.
 
-**D5 smoke:** JavaScript trích từ đúng blob SHA trên, chạy trong V8 với DOM/Canvas **mô phỏng** ở bề rộng 390,820,1440 px. Mỗi cấu hình đã thử tám tình huống: cực tiểu + cực đại khi f=x³/3−x; đạo hàm 0 không cực trị khi f=x³; cát tuyến âm h; đạo hàm tại x=1; giá trị secant khi h=−1; hai Canvas vẽ lại; nút reset. **8/8 mỗi cấu hình, tổng 24/24 PASS, 0 JS exception.** Không API mạng, không CDN, có các slider và nút keyboard focus, thông báo văn bản \`aria-live\`.
+**D5 smoke trên blob mới sau sửa thang đồ thị:** JavaScript trích từ đúng blob SHA trên, chạy trong V8 với DOM/Canvas **mô phỏng** ở bề rộng 390,820,1440 px. Mỗi cấu hình đã thử 12 tình huống: cực tiểu + cực đại khi f=x³/3−x; đạo hàm 0 không cực trị khi f=x³; cát tuyến với h âm; đạo hàm tại x₀=±2 bằng 12; **hai thang tung độ đổi theo hàm để giữ tiếp điểm trong khung**; hai Canvas vẽ lại; nút reset; ba nút chuyển nhanh x₀=−1,0,1. Những phép thử này là logic với DOM/Canvas giả lập. **12/12 mỗi cấu hình, tổng 36/36 PASS, 0 JS exception.** Không API mạng, không CDN, có các slider và nút keyboard focus, thông báo văn bản \`aria-live\`.
 
 **Giới hạn:** phép thử dùng Canvas context mock, **không phải Chromium browser render/QA responsive/thiết bị thật**. Hình sau render, hiển thị công thức trong website, ánh xạ source/model/figure trên nhiều placement, kiểm keyboard screen-reader/touch vẫn phải QA đúng HEAD. Không ghi Mastery, không làm bài Tự kiểm tra.
 
