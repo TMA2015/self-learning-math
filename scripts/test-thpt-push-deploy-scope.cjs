@@ -53,7 +53,7 @@ function selfTest(){
  }
  assert.equal(decide([...safe,...safe]).changed,safe.length);
  assert.throws(()=>decide([]));
- assert.throws(()=>decide(["../docs/index.md"]));
+ assert.equal(decide(["../docs/index.md"]).deploy,true,"Unsafe relative path cannot skip deployment");
  console.log("PASS deploy scope: metadata-only safe; 10 site/unknown negative cases; multi-file pushes and empty diff fail-closed.");
 }
 if(process.argv.includes("--self-test"))selfTest();
