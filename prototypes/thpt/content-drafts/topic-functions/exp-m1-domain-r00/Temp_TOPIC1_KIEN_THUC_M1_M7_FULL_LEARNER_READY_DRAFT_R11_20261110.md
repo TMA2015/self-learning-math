@@ -33,7 +33,7 @@ D=[-2,1)\cup(1,+\infty).
 \]
 **Tại sao x=−2 được nhận?** \(\sqrt0=0\) hợp lệ, còn mẫu −3 khác 0. **Tại sao x=1 bị loại?** Mẫu bằng 0, bất kể căn có nghĩa.
 
-**EX-M1-03 — Miền toán học khác miền dữ liệu:** mô hình \(F(q)=-(q-4)^2+25\), q là số sản phẩm nguyên trong ngày và \(0\le q\le8\). Hàm đa thức xác định trên mọi số thực **về mặt đại số**; nhưng trong mô hình doanh nghiệp chỉ xem q thuộc \(\{0,1,\ldots,8\}\). Đỉnh tại q=4 là một phương án có thể sản xuất. Nếu sau đó dữ kiện giới hạn chỉ 0–3 sản phẩm, kết luận tốt nhất phải đổi. **Không làm tăng chiều sâu chỉ bằng thay số:** đây là bài đọc miền và điều kiện, không phải một canonical item mới.
+**EX-M1-03 — Miền toán học khác miền dữ liệu:** mô hình \(F(q)=-(q-4)^2+25\), q là số sản phẩm nguyên trong ngày và \(0\le q\le8\). Hàm đa thức xác định trên mọi số thực **về mặt đại số**; nhưng trong mô hình doanh nghiệp chỉ xem q thuộc \(\{0,1,\ldots,8\}\). Đỉnh tại q=4 là một phương án có thể sản xuất. Nếu sau đó dữ kiện giới hạn chỉ 0–3 sản phẩm, kết luận tốt nhất phải đổi. **Bài học:** muốn tối ưu, em phải giữ đúng miền có ý nghĩa thực tế.
 
 **TỰ THỬ M1-T02.** \(h(x)=\sqrt{5-x}/(x-1)\). Điều kiện nào đến từ căn, điều kiện nào đến từ mẫu? \(x=5\) có được nhận không?
 <details><summary>Đã làm? Mở đối chiếu</summary>
@@ -248,7 +248,7 @@ Không, đỉnh x=−2 nằm ngoài \([-1,2]\). Trên đoạn này x+2>0 nên p 
 
 **EX-M3-04 — Tối ưu với số lượng nguyên và giới hạn thực tế:** mô hình lợi nhuận \(L(q)=-(q-4)^2+25\) triệu đồng, số lượng sản phẩm nguyên trong \(\{0,1,\ldots,8\}\). Đỉnh q=4 là số nguyên hợp lệ và cho GTLN 25 triệu đồng. Nếu chỉ có thể làm tối đa 3 sản phẩm, miền đổi thành \(\{0,1,2,3\}\), giá trị tốt nhất là \(L(3)=24\) triệu đồng. **Không biến đáp án trong miền khác thành đáp án của bài mới.**
 
-**Hướng dẫn đọc hình:** hình SGK B16 PDF p14–16 cho trục, đỉnh, chiều mở và mốc giá trị; minh họa R4 canonical ở `docs/thpt-preview/sgk/chuong-vi/bai-16.md` có đỉnh I(2,−1), trục x=2, giao Ox 1/3 và giao Oy 3. Khi hiển thị trong Topic, phải dùng **chính một nguồn hình/source**, kiểm tọa độ tương ứng giữa caption và graph, chỉ rõ nếu miền ứng dụng chỉ là một đoạn parabol.
+**Tự phác thảo để kiểm hiểu bài:** Với \(y=(x-2)^2-1\), đỉnh là \(I(2;-1)\), trục đối xứng \(x=2\), giao \(Ox\) tại \(x=1,3\), giao \(Oy\) tại \((0;3)\). Hãy đặt các điểm ấy lên một hệ trục rồi nối thành parabol mở lên. Nếu đề chỉ lấy một miền con, chỉ vẽ phần đồ thị ứng với miền con đó.
 
 **TỰ THỬ M3-T03.** \(u(x)=x^2-6x+8\). Tìm trục, đỉnh và các giao Ox; giải thích vì sao hai nghiệm cách trục một khoảng bằng nhau.
 <details><summary>Đã tự làm? Mở đối chiếu</summary>
@@ -437,8 +437,8 @@ k-c(x-h)^2\ge m
 
 | Biểu hiện người học | Lỗi bản chất | Đường sửa ngay trên trang |
 |---|---|---|
-| Gọi bảng có hai x khác nhau cùng y là không phải hàm | Nhầm đơn trị với một-một | M1 EX01 + TRY T01; canonical HELP-G10-B15-01 |
-| Quên x=−2 được nhận trong căn hoặc quên x=1 bị loại ở mẫu | Không lấy giao điều kiện, nhầm dấu căn | M1 EX02 + TRY T02; canonical HELP-G10-B15-02 |
+| Gọi bảng có hai x khác nhau cùng y là không phải hàm | Nhầm đơn trị với một-một | M1 EX01 + TRY T01 |
+| Quên x=−2 được nhận trong căn hoặc quên x=1 bị loại ở mẫu | Không lấy giao điều kiện, nhầm dấu căn | M1 EX02 + TRY T02 |
 | Dự đoán số đo giữa hai mốc như chắc chắn | Nhầm nội suy mô hình với dữ kiện đã quan sát | M2 lời dẫn + EX01; phải hỏi nguồn chứng cứ |
 | Nói hàm tăng từ hai điểm hay nối qua điểm loại | Chưa kiểm “mọi cặp x” trên một khoảng | M2 EX02 + TRY T01; HELP-G10-B15-02 |
 | Thay nhánh sai ở điểm nối | Bỏ điều kiện \(<,\le\) | M2 EX03 + TRY T02; HELP-G10-B15-02 |
@@ -449,16 +449,6 @@ k-c(x-h)^2\ge m
 
 
 ---
-
-### M4–M7 · Một hàm xuyên suốt bốn bài
-
-## Một hàm số xuyên suốt bốn chặng: \(f(x)=\log_2x\)
-
-Đừng vội học bốn công cụ như bốn danh sách công thức tách rời. Hãy giữ nguyên một hàm số, nhưng đổi **câu hỏi**: M4 hỏi đầu vào và cách thay đổi; M5 hỏi điều gì xảy ra sát ranh giới; M6 hỏi độ dốc tại một điểm hợp lệ; M7 kết hợp các kết quả để hiểu toàn bộ đồ thị.
-
-![Một hàm logarit với miền, điểm mốc, tiệm cận và tiếp tuyến](Temp_FIG_TOPIC1_M4_M7_LOG_ONE_FUNCTION_STORY_R10.svg)
-
-**Đọc hình:** A(0,5;−1), B(1;0), C(2;1), D(4;2). Nét đứt đứng tại \(x=0\) là **tiệm cận**, không thuộc đồ thị; đoạn xanh đậm tương ứng miền con \([0{,}5;4]\); nét nâu là **tiếp tuyến ở C**, không phải một nhánh khác của f.
 
 ## M4.0. Khởi động: Không phải đại lượng nào cũng thay đổi như một đường parabol
 
@@ -594,15 +584,25 @@ Ví dụ cơ số nhỏ hơn 1: \((1/2)^{-3}=8\) nên \(\log_{1/2}8=-3\); \(\log
 
 **Khi giải hoặc xét miền:** với \(h(x)=\log_2(x+4)\), điều kiện là \(x+4>0\), tức \(x>-4\). Nếu \(h(x)=3\), thì \(x+4=2^3=8\) nên \(x=4\), và x=4 thỏa miền. **Lý do chọn phương pháp:** ta đảo hàm log sang mũ *sau khi* kiểm điều kiện, không lấy log của đối số âm.
 
-**Quan sát hình hai hàm ngược:** FIG-G11-CHVI-B20-01_R00.svg. Đặt trực tiếp tại Topic với chú thích: tìm cặp \((0,1)\leftrightarrow(1,0)\), \((1,a)\leftrightarrow(a,1)\); đường \(y=x\) là trục phản xạ; đọc miền x dương của log và hướng tăng/giảm tương ứng. Bản SVG hiện là nguồn chia sẻ; kiểm cách hiển thị thực thuộc AP3 ở RELEASE.
+**Cách đọc hai đồ thị hàm ngược:** Hãy đối chiếu cặp \((0,1)\leftrightarrow(1,0)\) và \((1,a)\leftrightarrow(a,1)\); đường \(y=x\) là trục phản xạ. Chú ý miền \(x>0\) của logarit và hướng tăng/giảm tùy cơ số.
 
-![Hình trực quan dùng chung: FIG-G11-CHVI-B20-01_R00.svg](../../../../../docs/assets/images/thpt/FIG-G11-CHVI-B20-01_R00.svg)
+![Cặp đồ thị hàm mũ và logarit đối xứng qua đường y bằng x](../../../../../docs/assets/images/thpt/FIG-G11-CHVI-B20-01_R00.svg)
 
 
 **TRY-M4-05.** Không dùng máy tính, hãy tìm \(\log_3(1/9)\) và cho biết \(\log_3(-9)\) có nghĩa trong số thực không.
 <details><summary>Đã thử? Mở đối chiếu</summary>
 \(3^{-2}=1/9\), vậy \(\log_3(1/9)=-2\). \(\log_3(-9)\) không xác định trong \(\mathbb R\). Nếu vướng, quay lại điều kiện \(x>0\) của hàm log.
 </details>
+
+### M4–M7 · Cùng một hàm qua bốn câu hỏi
+
+## Một hàm số xuyên suốt bốn chặng: \(f(x)=\log_2x\)
+
+Đừng vội học bốn công cụ như bốn danh sách công thức tách rời. Hãy giữ nguyên một hàm số, nhưng đổi **câu hỏi**: M4 hỏi đầu vào và cách thay đổi; M5 hỏi điều gì xảy ra sát ranh giới; M6 hỏi độ dốc tại một điểm hợp lệ; M7 kết hợp các kết quả để hiểu toàn bộ đồ thị.
+
+![Một hàm logarit với miền, điểm mốc, tiệm cận và tiếp tuyến](Temp_FIG_TOPIC1_M4_M7_LOG_ONE_FUNCTION_STORY_R10.svg)
+
+**Đọc hình:** A(0,5;−1), B(1;0), C(2;1), D(4;2). Nét đứt đứng tại \(x=0\) là **tiệm cận**, không thuộc đồ thị; đoạn xanh đậm tương ứng miền con \([0{,}5;4]\); nét nâu là **tiếp tuyến ở C**, không phải một nhánh khác của f.
 
 ### M4 · Quy tắc nào nhận đầu vào nào?
 
@@ -646,7 +646,7 @@ Miền \(x>-4\); đồ thị là đồ thị \(\log_2 x\) dịch sang trái 4 đ
 
 ## M4.9. Nếu em hiểu sai, quay lại đúng chỗ
 
-| HELP candidate | Dấu hiệu quan sát | Sửa lỗi theo ý nghĩa, ví dụ và đường quay lại |
+| Tình huống | Dấu hiệu quan sát | Sửa lỗi theo ý nghĩa, ví dụ và đường quay lại |
 |---|---|---|
 | HELP-A | Gọi hàm lẻ chỉ vì đi qua gốc, hoặc quên miền đối xứng | Quay lại M4.1; viết D, thay \(-x\), so \(f(-x)\) với \(f(x)\) và \(-f(x)\); thử phản ví dụ \(f(x)=x^2+x\) |
 | HELP-B | Tính tan/cot tại chỗ mẫu bằng 0, nối đồ thị qua nhánh đứt | Quay lại M4.2; xác định sin/cos ở mẫu, gạch điểm loại trên trục x, dùng FIG tan/cot và giải ví dụ miền trước |
@@ -676,7 +676,7 @@ Ký hiệu \(\lim\) đọc là “giới hạn”; dòng trên nói về các đ
 
 **Cách đọc hình:** xem FIG-G11-B16-01_R01.svg, nguồn hình chuẩn. Trục hoành là x, trục tung là y. Hãy nhìn đường thẳng đi gần \((2,4)\) từ hai bên; vòng tròn rỗng nhắc rằng điểm (2,4) **không thuộc đồ thị của hàm gốc**. Không vẽ chấm đặc ở đó vì chưa có \(f(2)\). Hình chỉ minh họa, bước kiểm toán dùng định nghĩa/biến đổi và miền xác định.
 
-![Hình trực quan dùng chung: FIG-G11-B16-01_R01.svg](../../../../../docs/assets/images/thpt/FIG-G11-B16-01_R01.svg)
+![Đồ thị có lỗ tại x bằng 2 nhưng có giới hạn bằng 4](../../../../../docs/assets/images/thpt/FIG-G11-B16-01_R01.svg)
 
 
 **Kiến thức cần nắm:** với \(a\) là điểm mà miền xác định có các giá trị x khác a tiến sát được, \(\lim_{x\to a}f(x)=L\) diễn tả đầu ra f(x) tiến sát L khi x tiến sát a trong miền hợp lệ. Giới hạn hữu hạn là xu thế tới một số thực L. Nếu xét \(\lim_{x\to a^-}\) ta chỉ đến từ **trái** (x<a), còn \(\lim_{x\to a^+}\) là từ **phải** (x>a). Với điểm được tiếp cận từ cả hai phía, **giới hạn hai phía hữu hạn tồn tại bằng L khi và chỉ khi hai giới hạn một phía cùng bằng L**.
@@ -779,7 +779,7 @@ Một hàm liên tục ở một điểm a khi giá trị **đúng ở a** khớ
 
 **Hình cần đọc tại Topic:** FIG-G11-B17-01_R01.svg, nguồn hình chuẩn. Chú ý **vòng tròn rỗng** thể hiện giá trị tiến gần (không nhận) và **chấm đặc** cho biết giá trị thật. Đọc tọa độ cụ thể của các ký hiệu theo hình; không mặc định mọi vòng tròn rỗng đều là “tiệm cận đứng”. Đọc hình trước; ba điều kiện ở trên là căn cứ kết luận.
 
-![Hình trực quan dùng chung: FIG-G11-B17-01_R01.svg](../../../../../docs/assets/images/thpt/FIG-G11-B17-01_R01.svg)
+![Điểm rỗng và điểm đặc dùng để xét tính liên tục](../../../../../docs/assets/images/thpt/FIG-G11-B17-01_R01.svg)
 
 
 **Tại nơi công thức đổi:** giả sử
@@ -895,12 +895,12 @@ y-f(a)=f'(a)(x-a).
 
 **Quan sát hình:** FIG-G11-CHIX-B31-01_R00.svg, nguồn hình chuẩn. Đọc điểm P(1,1) và Q(1,8;3,24) trên y=x²; độ dốc cát tuyến là 2,8. Khi Q trượt dần đến P, độ dốc tiến 2. Tiếp tuyến tại P là y−1=2(x−1), tức y=2x−1. Không dùng một hình chụp cát tuyến cố định như chứng minh giới hạn.
 
-![Hình trực quan dùng chung: FIG-G11-CHIX-B31-01_R00.svg](../../../../../docs/assets/images/thpt/FIG-G11-CHIX-B31-01_R00.svg)
+![Cát tuyến tiến dần thành tiếp tuyến tại điểm trên parabol](../../../../../docs/assets/images/thpt/FIG-G11-CHIX-B31-01_R00.svg)
 
 
 **Liên tục có đủ để có đạo hàm không?** Không. Hàm y=|x| liên tục tại 0 nhưng thương |h|/h bằng −1 với h<0 và +1 với h>0; hai giới hạn một phía khác nhau. Vì thế không có đạo hàm tại góc nhọn. **Có đạo hàm thì liên tục**, còn chiều đảo lại là sai. Hình FIG-G11-CHIX-B31-02_R00.svg: đọc hai nhánh gặp nhau ở O nhưng độ dốc −1 và +1, không gộp chúng thành một tiếp tuyến.
 
-![Hình trực quan dùng chung: FIG-G11-CHIX-B31-02_R00.svg](../../../../../docs/assets/images/thpt/FIG-G11-CHIX-B31-02_R00.svg)
+![Đồ thị giá trị tuyệt đối có góc nhọn không khả vi tại gốc](../../../../../docs/assets/images/thpt/FIG-G11-CHIX-B31-02_R00.svg)
 
 
 **Ví dụ có suy luận:** f(x)=x²−2x+3 tại a=2. Ta có f(2)=3, f'(x)=2x−2 nên f'(2)=2. Tiếp tuyến đi qua (2,3) và có hệ số góc 2: y−3=2(x−2), hay y=2x−1. Nếu học sinh viết y=2x, kiểm lại khi x=2 sẽ cho y=4, không đi qua (2,3).
@@ -912,7 +912,7 @@ Hàm liên tục, nhận giá trị 0 tại 2 và tiến về 0 từ hai phía. 
 
 ### M6 · Tự thử với hai đồ thị f và f′
 
-[Mở nguồn mô hình D5: Cát tuyến, tiếp tuyến và đồ thị đạo hàm](Temp_TOPIC1_M6_TANGENT_DERIVATIVE_TWO_GRAPHS_D5_R00_20261110.html)
+[Tự thử mô hình cát tuyến, tiếp tuyến và đồ thị đạo hàm](Temp_TOPIC1_M6_TANGENT_DERIVATIVE_TWO_GRAPHS_D5_R00_20261110.html)
 
 Khung bên trái cho thấy đồ thị \(y=f(x)\) (xanh dương), cát tuyến qua M và N (cam nét đứt) và tiếp tuyến tại M (xanh lá). Khung bên phải cho thấy đồ thị \(y=f'(x)\), điểm cam tương ứng với hoành độ \(x_0\) đang chọn. **Đừng chỉ quan sát đường thẳng quay:** hãy so giá trị hệ số góc cát tuyến và đạo hàm hiển thị bên dưới. Khi thu nhỏ \(|h|\), hai số phải tiến gần nhau.
 
@@ -975,14 +975,14 @@ Nếu u(x), v(x) khả vi tại điểm đang xét:
 (uv)'=u'v+uv',\qquad (u/v)'=\frac{u'v-uv'}{v^2}\quad(v\ne0).
 \]
 
-**Bản chất quy tắc tích:** diện tích hình chữ nhật có hai cạnh u và v. Khi chúng đổi thêm Δu, Δv, diện tích tăng vΔu+uΔv+ΔuΔv. Khi chia cho Δx rồi cho Δx→0, nếu u,v khả vi, hạng chéo bậc hai mất đi; còn hai đóng góp vu'+uv'. **Hình D5:** FIG-G11-CHIX-B32-01_R00.svg, đọc vùng uv cũ, hai dải bổ sung và góc chéo nhỏ.
+**Bản chất quy tắc tích:** diện tích hình chữ nhật có hai cạnh u và v. Khi chúng đổi thêm Δu, Δv, diện tích tăng vΔu+uΔv+ΔuΔv. Khi chia cho Δx rồi cho Δx→0, nếu u,v khả vi, hạng chéo bậc hai mất đi; còn hai đóng góp vu'+uv'. **Hình minh họa:** FIG-G11-CHIX-B32-01_R00.svg, đọc vùng uv cũ, hai dải bổ sung và góc chéo nhỏ.
 
-![Hình trực quan dùng chung: FIG-G11-CHIX-B32-01_R00.svg](../../../../../docs/assets/images/thpt/FIG-G11-CHIX-B32-01_R00.svg)
+![Diện tích hình chữ nhật minh họa quy tắc đạo hàm tích](../../../../../docs/assets/images/thpt/FIG-G11-CHIX-B32-01_R00.svg)
 
 
 **Bản chất quy tắc dây chuyền:** f(x)=g(u(x)): trước hết x làm u thay, sau đó u làm g thay. Vì vậy f'=g'(u(x))u'(x) trên những điểm các đạo hàm phù hợp tồn tại. Hình FIG-G11-CHIX-B32-02_R00.svg, đọc hai mũi tên x→u→g(u), không bỏ đạo hàm tầng trong.
 
-![Hình trực quan dùng chung: FIG-G11-CHIX-B32-02_R00.svg](../../../../../docs/assets/images/thpt/FIG-G11-CHIX-B32-02_R00.svg)
+![Sơ đồ hai tầng đầu vào hàm trong và hàm ngoài của quy tắc dây chuyền](../../../../../docs/assets/images/thpt/FIG-G11-CHIX-B32-02_R00.svg)
 
 
 **Ví dụ 1 — tích và hợp:** F(x)=(x²+1)sin(2x). Tầng ngoài là **tích**; bên trong sin lại có **hàm hợp**:
@@ -1074,7 +1074,7 @@ Tại t=1, v=+6 và a=−6, trái dấu: tốc độ |v| đang giảm. Tại t=3
 
 **Quan sát hình:** FIG-G11-CHIX-B33-01_R00.svg, có chuỗi quan hệ vị trí→vận tốc→gia tốc. Hướng dẫn đọc: xem tên đại lượng và đơn vị trên từng trục, rồi đối chiếu dấu v,a theo từng khoảng.
 
-![Hình trực quan dùng chung: FIG-G11-CHIX-B33-01_R00.svg](../../../../../docs/assets/images/thpt/FIG-G11-CHIX-B33-01_R00.svg)
+![Chuỗi mối liên hệ từ vị trí đến vận tốc và gia tốc](../../../../../docs/assets/images/thpt/FIG-G11-CHIX-B33-01_R00.svg)
 
 
 **Ví dụ 7 — tính hai lần:** f(x)=x³−3x²+2x có f'=3x²−6x+2, f''=6x−6. Tại x=1, f''=0; trong trường hợp này f'' đổi dấu qua 1, nên đồ thị đổi chiều lõm tại đó. Nhưng **chỉ riêng f''(a)=0 chưa chứng minh điểm uốn**. Phản ví dụ f(x)=x⁴: f''(x)=12x²≥0 cả hai phía của 0, f''(0)=0 nhưng không đổi chiều lõm.
@@ -1132,9 +1132,9 @@ Vì hàm đổi **tăng → giảm** khi qua −1, \(f(-1)=2\) là **cực đạ
 
 **Một bẫy cần hiểu:** \(g(x)=x^3\) có \(g'(0)=0\) nhưng g vẫn tăng từ trái sang phải qua 0; không có cực đại/cực tiểu tại đó. Tại điểm f' không tồn tại, cũng phải xét dấu/hành vi, ví dụ \(g(x)=|x|\) có cực tiểu tại 0 dù không có đạo hàm ở đó.
 
-**Đọc hình:** \`G12_B01_FIG01_DERIVATIVE_SIGN_R00.svg\`, source blob \`e2696224533994826104e6c505d9dab26fc0a2e2\`. Hãy đọc hai trục, điểm x=−1,1, các dấu +/− trên khoảng và chiều mũi tên. Đừng chỉ nhìn hình rồi điền dấu mà quên kiểm đại số \(f'\).
+**Cách đọc hình dấu đạo hàm:** Hãy đọc hai trục, điểm x=−1,1, các dấu +/− trên khoảng và chiều mũi tên. Đừng chỉ nhìn hình rồi điền dấu mà quên kiểm đại số \(f'\).
 
-![Hình trực quan dùng chung: G12_B01_FIG01_DERIVATIVE_SIGN_R00.svg](../../../../../docs/assets/images/thpt/G12_B01_FIG01_DERIVATIVE_SIGN_R00.svg)
+![Bảng dấu đạo hàm và khoảng tăng giảm qua hai điểm tới hạn](../../../../../docs/assets/images/thpt/G12_B01_FIG01_DERIVATIVE_SIGN_R00.svg)
 
 
 **TỰ THỬ M7-T01.** \(h(x)=x^3\). Đạo hàm bằng 0 tại x=0. Có thể kết luận cực trị không? Nêu một lý do bằng dấu hoặc lập luận so sánh giá trị.
@@ -1154,9 +1154,9 @@ Một **cực đại địa phương** chỉ so với những điểm **ở gầ
 
 **Trái lại, trên khoảng mở \((0,1)\)**, \(x^2\) luôn dương và nhỏ hơn 1, nhưng **không đạt** 0 hoặc 1 trong miền; do đó **không có GTLN hay GTNN** trên khoảng này, dù có cận trên/cận dưới. Câu “có giới hạn bằng 1 khi x→1⁻” không làm cho x=1 trở thành một điểm trong miền.
 
-**Đọc hình:** \`G12_B02_FIG01_GLOBAL_MIN_MAX_CLOSED_INTERVAL_R00.svg\`, blob \`057991020c0f9349f160047cd87ae35ce03a87ef\` minh họa **một hàm khác** \(y=x^2-4x+1\) trên [0,5], **không phải đồ thị của \(q=x^2\)**. Học sinh hãy đọc: f(0)=1, f(2)=−3 (thấp nhất), f(5)=6 (cao nhất); xác định các điểm có/không nằm trong đoạn. Không ghép nhầm lời giải EX-M7-02 vào hình B02.
+**Đọc hình:** \`G12_B02_FIG01_GLOBAL_MIN_MAX_CLOSED_INTERVAL_R00.svg\` minh họa **một hàm khác** \(y=x^2-4x+1\) trên [0,5], **không phải đồ thị của \(q=x^2\)**. Học sinh hãy đọc: f(0)=1, f(2)=−3 (thấp nhất), f(5)=6 (cao nhất); xác định các điểm có/không nằm trong đoạn. Không ghép nhầm lời giải EX-M7-02 vào hình B02.
 
-![Hình trực quan dùng chung: G12_B02_FIG01_GLOBAL_MIN_MAX_CLOSED_INTERVAL_R00.svg](../../../../../docs/assets/images/thpt/G12_B02_FIG01_GLOBAL_MIN_MAX_CLOSED_INTERVAL_R00.svg)
+![Parabol với giá trị lớn nhất nhỏ nhất trên đoạn kín](../../../../../docs/assets/images/thpt/G12_B02_FIG01_GLOBAL_MIN_MAX_CLOSED_INTERVAL_R00.svg)
 
 
 **TỰ THỬ M7-T02.** \(f(x)=x^2\) trên \((-1,2)\). Giá trị f nhỏ nhất có tồn tại không? Có GTLN không? Giải thích bằng miền, không chỉ ghi số 4.
@@ -1191,9 +1191,9 @@ Một **tiệm cận ngang** \(y=L\) xuất hiện nếu \(\lim_{x\to+\infty}f(x
 
 **EX-M7-03 — Dấu mẫu và tiệm cận ngang/đứng.** \(f(x)=(3x+1)/(x-2)=3+7/(x-2)\). Miền x≠2. Khi x→2⁻, \(7/(x-2)\to-\infty\); khi x→2⁺, nó→+\infty. Vậy x=2 là tiệm cận đứng. Khi x→±∞, phần 7/(x−2)→0, nên y=3 là tiệm cận ngang ở cả hai phía. **Không nối hai nhánh qua x=2.**
 
-**Đọc hình:** \`G12_B03_FIG01_ASYMPTOTES_R00.svg\`, blob \`802f01f5b8dce392e3a064a54efe33ae1aea44fc\`, vẽ **đúng** f(x)=(3x+1)/(x−2): trục x/y, nét đứt x=2/y=3, nhánh trái dưới y=3 và phải trên y=3. Nét đứt biểu diễn tiệm cận, **không thuộc đồ thị f**.
+**Đọc hình:** \`G12_B03_FIG01_ASYMPTOTES_R00.svg\`, vẽ **đúng** f(x)=(3x+1)/(x−2): trục x/y, nét đứt x=2/y=3, nhánh trái dưới y=3 và phải trên y=3. Nét đứt biểu diễn tiệm cận, **không thuộc đồ thị f**.
 
-![Hình trực quan dùng chung: G12_B03_FIG01_ASYMPTOTES_R00.svg](../../../../../docs/assets/images/thpt/G12_B03_FIG01_ASYMPTOTES_R00.svg)
+![Đồ thị phân thức có tiệm cận đứng và ngang](../../../../../docs/assets/images/thpt/G12_B03_FIG01_ASYMPTOTES_R00.svg)
 
 
 **EX-M7-04 — Tiệm cận xiên từ phần dư.** \(g(x)=x+1+2/(x-1)\), x≠1. Hiệu \(g(x)-(x+1)=2/(x-1)\to0\) khi x→±∞; vậy y=x+1 là tiệm cận xiên. x=1 là tiệm cận đứng vì 2/(x−1) không bị chặn gần 1. Ở bài này không gọi y=x+1 là một tiệm cận ngang vì hệ số x bằng 1≠0.
@@ -1223,17 +1223,17 @@ Xét \(g(x)=(x+2)/(x-1)=1+3/(x-1)\).
 - Khi x→±∞, g→1; tiệm cận ngang y=1. Trên nhánh trái g<1, trên nhánh phải g>1.
 - Bảng biến thiên gồm hai nhánh tách tại 1; do g'<0 trên từng nhánh, **không có cực trị nội tại** của hai nhánh.
 
-**Đọc hình:** \`G12_B04_FIG01_RATIONAL_SURVEY_R00.svg\`, blob \`529b05d33fb0347dab70587c84c8ec08789c5c98\`, biểu diễn chính \(g\) trên. Kiểm lại hình bằng các số \((-2,0)\), \((0,-2)\), tiệm cận \(x=1\) và \(y=1\). Nếu hình không đọc rõ, mô tả trên đủ để tái dựng.
+**Đọc hình:** \`G12_B04_FIG01_RATIONAL_SURVEY_R00.svg\`, biểu diễn chính \(g\) trên. Kiểm lại hình bằng các số \((-2,0)\), \((0,-2)\), tiệm cận \(x=1\) và \(y=1\). Nếu hình không đọc rõ, mô tả trên đủ để tái dựng.
 
-![Hình trực quan dùng chung: G12_B04_FIG01_RATIONAL_SURVEY_R00.svg](../../../../../docs/assets/images/thpt/G12_B04_FIG01_RATIONAL_SURVEY_R00.svg)
+![Khảo sát đồ thị phân thức với hai nhánh và hai tiệm cận](../../../../../docs/assets/images/thpt/G12_B04_FIG01_RATIONAL_SURVEY_R00.svg)
 
 
 **EX-M7-06 — Một đa thức, không có tiệm cận.**
 Cho \(h(x)=x^3-3x^2=x^2(x-3)\), miền R. Ta có \(h'=3x(x-2)\): dấu + trên \((-\infty,0)\), − trên \((0,2)\), + trên \((2,+\infty)\). Cực đại địa phương \(h(0)=0\); cực tiểu địa phương \(h(2)=-4\). Các nghiệm \(x=0\) (bội hai, đồ thị **chạm** Ox) và \(x=3\) (cắt Ox). Đa thức không có tiệm cận đứng, ngang hay xiên như các phân thức trên; khi x→±∞, h→±∞. Đồ thị không bị tách nhánh tại điểm loại.
 
-**Đọc hình:** \`G12_B04_FIG02_CUBIC_SURVEY_R00.svg\`, blob \`8e4cf830e5aa1cac3fe37b9b3c3d93d9b34c006b\`. Đọc điểm O, điểm (2,−4), điểm cắt Ox tại 3; một điểm có \(f'(0)=0\) còn có thể là cực đại vì dấu **thật sự đổi** qua 0.
+**Đọc hình:** \`G12_B04_FIG02_CUBIC_SURVEY_R00.svg\`. Đọc điểm O, điểm (2,−4), điểm cắt Ox tại 3; một điểm có \(f'(0)=0\) còn có thể là cực đại vì dấu **thật sự đổi** qua 0.
 
-![Hình trực quan dùng chung: G12_B04_FIG02_CUBIC_SURVEY_R00.svg](../../../../../docs/assets/images/thpt/G12_B04_FIG02_CUBIC_SURVEY_R00.svg)
+![Đồ thị bậc ba với cực trị và giao điểm trục hoành](../../../../../docs/assets/images/thpt/G12_B04_FIG02_CUBIC_SURVEY_R00.svg)
 
 
 **TỰ THỬ M7-T04.** Với \(g(x)=(x+2)/(x-1)\), có được kẻ một nét liền đi qua x=1 không? g tăng/giảm trên những khoảng nào? Vì sao?
@@ -1264,9 +1264,9 @@ Chỉ \(x_1\in(0,10)\). Vì V' dương trước \(x_1\) và âm từ \(x_1\) t�
 
 **Tại sao chọn dấu đạo hàm thay vì chỉ thử vài kích thước?** Thử một số giá trị có thể gợi đoán nhưng không bảo đảm lớn nhất. Đạo hàm, miền và giới hạn ở biên cho lập luận bao phủ mọi kích thước hợp lệ. **Giới hạn mô hình:** bỏ qua độ dày giấy, mép gấp, hao phí, nên kết luận là cực đại của mô hình hình học, không tự bảo đảm hiệu quả sản xuất thực tế.
 
-**Đọc hình:** \`G12_B05_FIG01_BOX_VOLUME_R00.svg\`, blob \`eacd5ba60f25d87c102917a55d314fb16d6f8341\`, chính xác mô tả tấm bìa **30×20 cm**, miền 0<x<10 và đỉnh tối ưu gần 3,924 cm. Hai đầu mút là vòng tròn rỗng; khi đọc hình, phải nhận ra **GTLN đạt trong miền** nhưng GTNN bằng 0 không đạt.
+**Cách đọc hình hộp không nắp:** chính xác mô tả tấm bìa **30×20 cm**, miền 0<x<10 và đỉnh tối ưu gần 3,924 cm. Hai đầu mút là vòng tròn rỗng; khi đọc hình, phải nhận ra **GTLN đạt trong miền** nhưng GTNN bằng 0 không đạt.
 
-![Hình trực quan dùng chung: G12_B05_FIG01_BOX_VOLUME_R00.svg](../../../../../docs/assets/images/thpt/G12_B05_FIG01_BOX_VOLUME_R00.svg)
+![Đồ thị thể tích hộp không nắp trên miền độ dài hợp lệ](../../../../../docs/assets/images/thpt/G12_B05_FIG01_BOX_VOLUME_R00.svg)
 
 
 **EX-M7-07 — Tối ưu trong một miền mở vô hạn.** Một mô hình chi phí (đơn vị quy ước) \(C(x)=x+16/x\) với \(x>0\). Ta có \(C'(x)=1-16/x^2=(x^2-16)/x^2\), âm trên (0,4), dương trên (4,+∞). Vì vậy C giảm rồi tăng, **GTNN=8** đạt khi x=4. Khi x→0⁺ hoặc x→+∞, C→+∞ nên không có GTLN trên (0,+∞). Không chọn x âm, vì miền công thức thực tế đã nêu x>0.
