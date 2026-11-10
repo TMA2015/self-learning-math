@@ -61,7 +61,17 @@ Chế độ B phải có **cổng độc lập về kỹ thuật và toàn vẹn
 4. **RELEASE:** chỉ sau source receipt hợp lệ mới cập nhật test source-lock theo đúng mode, đồng bộ PR #797 lên main hiện hành (có PR #800/#802), chạy R4/Roadmap/Golden/P2/Q15/Q16 exact HEAD, merge/deploy theo **quyền chủ dự án đã cấp cho G10**. Không xin phát hành lại.
 5. **G11/G12:** áp dụng khi cải tiến bài Kiến thức đã được nghiệm thu; không đặt một quy trình phản biện toàn chương mới. Chương/chuyên đề mới chưa được nghiệm thu vẫn giữ chế độ A cho đến khi chủ dự án quyết định thêm.
 
-## 6. Trạng thái và đề nghị quyết định
+## 6. Bảng đối chiếu và đề xuất sửa Project Source `07 v1.1` (chưa cập nhật nguồn gốc)
+
+**Nguồn đang có thật:** `07_THPT_NOTEBOOKLM_BATCH_AND_DELTA_REVIEW_POLICY_v1.1.md` (Project Source do chủ dự án quản lý). Mục II, dòng `DELTA_C_ACADEMIC_MATERIAL` quy định **review lại phần chịu ảnh hưởng**. V1.1 đã cho `DELTA_A_UI` và `DELTA_B_SOURCE_EQUIVALENT` tự QA và log, nhưng **chưa có ngoại lệ** cho ví dụ/hình mới thuộc DELTA_C. Vì vậy không được tuyên bố Source 07 đã thay hoặc chọn phiên bản GitHub `THPT_NOTEBOOKLM_BATCH_AND_DELTA_REVIEW_POLICY_v1.0.md` làm nguồn thay thế cho Project Source 07 v1.1.
+
+**Nội dung bổ sung đề xuất cho bản Source 07 kế tiếp — cần owner cập nhật nguồn gốc và phiên bản, không thêm nguồn thứ sáu NotebookLM**:
+
+> `DELTA_C_ACADEMIC_MATERIAL` giữ nguyên phân loại nếu bổ sung ví dụ, hình hoặc lời giải thích mang nội dung toán. Khi phần sửa là **SGK Knowledge đã có snapshot Academic/PED PASS**, không đổi Core/outcome, phát biểu điều kiện/định lý, item canonical, đáp án/rubric, RD1, Final Submit hoặc Mastery, và đúng bản chuẩn `SLM-THPT-QUALITY-ONE` có hiệu lực cho phép `Q18_OWNER_SELF_VERIFIED_ENRICHMENT`, AUTHORING được tự kiểm SGK S1, tính và kiểm ngược từng ví dụ, xác minh hình/điều kiện/PED theo outcome, khóa `SELF_QA_EVIDENCE_RECEIPT` cho đúng Git blob SHA. Nếu đầy đủ bằng chứng này, **không bắt buộc vòng NotebookLM reviewer mới chỉ vì thêm giải thích/ví dụ/hình**. Nếu thiếu PASS gốc, đổi outcome/Core/điều kiện/key/rubric, có lỗi toán P0/P1 chưa giải quyết hoặc không chắc nguồn S1, dùng DELTA_C reviewer independent theo affected scope hoặc DELTA_D HOLD. Không gọi `SELF_QA_EVIDENCE_RECEIPT` là ACADEMIC/PED reviewer PASS.
+
+**Tính tương thích và lộ trình:** trước khi chủ dự án duyệt và thay Project Source 07 gốc, đoạn trên chỉ là đề xuất, `STANDARD_CONFLICT_HOLD` tiếp tục hiệu lực. Không gửi bộ nguồn NotebookLM v2.0/v2.1 trùng nhau và không tự cập nhật Permanent Sources v2.1. Hợp đồng V2 hiện có phần phụ lục dự thảo trong chính PR #804, song script `test-thpt-handoff-gate-v2.cjs` chưa kích hoạt chế độ mới và nguồn học liệu G10 #797 chưa được phát hành.
+
+## 7. Trạng thái và đề nghị quyết định
 
 **Ghi nhận chủ trương owner:** bỏ vòng reviewer lặp lại đối với cập nhật kiến thức có thể tự kiểm chứng; **không đồng nghĩa** owner đã chấp nhận chính xác chữ nghĩa thay đổi Q18 hoặc miễn mọi trường hợp sai toán.
 
