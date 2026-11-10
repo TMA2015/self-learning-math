@@ -102,6 +102,11 @@ function render(){
   c.beginPath();for(let i=0;i<=140;i++){const a=2*Math.PI*i/140,p=project(R*Math.cos(a)*Math.cos(meridian),R*Math.cos(a)*Math.sin(meridian),R*Math.sin(a));if(i===0)c.moveTo(...p);else c.lineTo(...p);}
   c.strokeStyle="#e1ecf2";c.lineWidth=1;c.stroke();
  }
+ // Tấm mặt phẳng hiện cả khi không giao, để nhìn thấy sự dịch chuyển qua mặt cầu.
+ const corners=[[-6,-6,t],[6,-6,t],[6,6,t],[-6,6,t]];
+ c.beginPath();corners.forEach((q,i)=>{const pp=project(...q);if(i===0)c.moveTo(...pp);else c.lineTo(...pp);});c.closePath();
+ c.fillStyle="rgba(53,159,197,0.085)";c.fill();
+ c.lineWidth=1.3;c.strokeStyle="rgba(48,128,164,0.42)";c.setLineDash([6,5]);c.stroke();c.setLineDash([]);
  if(d<=R){
   const rad=r;
   c.beginPath();
