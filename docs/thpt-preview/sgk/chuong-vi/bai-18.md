@@ -307,7 +307,7 @@
         <ol><li><strong>Nhận diện lỗi:</strong> Bỏ điều kiện h&gt;0, nhầm cạnh huyền thành h hoặc nhận nghiệm −12 m.</li>
         <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
         <li><strong>Kiến thức gốc:</strong> Khi một cạnh góc vuông là h&gt;0 và cạnh kia 5 m, cạnh huyền là <span class="arithmatex">\(\sqrt{h^2+25}\)</span>, phải phù hợp chiều dài thang cho trước. Giải căn rồi lọc h&gt;0 không chỉ vì toán căn mà vì <strong>ý nghĩa vật lý</strong> của ẩn.</li>
-        <li><strong>Tự sửa:</strong> Vẽ hình và đánh dấu **cạnh huyền 13 m** và **cạnh góc vuông 5 m**, viết h&gt;0, rồi thử lại định lí Pitago với nghiệm tìm được. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
+        <li><strong>Tự sửa:</strong> Vẽ hình và đánh dấu <strong>cạnh huyền 13 m</strong> và <strong>cạnh góc vuông 5 m</strong>, viết h&gt;0, rồi thử lại định lí Pitago với nghiệm tìm được. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
         <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B18-P04">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
 
 
