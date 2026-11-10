@@ -42,11 +42,11 @@ So sánh tập xác định của \(\displaystyle g(x)=\frac1{\sqrt{5-x}}\) vớ
 
 ### DRAFT-T1-M1-APP04 · Công thức toán và điều kiện thực tế
 
-Một cửa hàng thu 8 nghìn đồng phí xử lý đơn và 12 nghìn đồng cho mỗi vé. Một đơn tối đa 6 vé, chỉ nhận số vé nguyên không âm. Viết tập xác định và tập giá trị của \(C(n)=8+12n\). Có được thay \(n=2{,}5\) để dự báo chi phí mua 2,5 vé hay không?
+Một cửa hàng thu 8 nghìn đồng phí xử lý đơn và 12 nghìn đồng cho mỗi vé. Mỗi đơn phải có ít nhất một vé và tối đa 6 vé, chỉ nhận số vé nguyên. Viết tập xác định và tập giá trị của \(C(n)=8+12n\). Có được thay \(n=2{,}5\) để dự báo chi phí mua 2,5 vé hay không?
 
 <details><summary>Đối chiếu</summary>
 
-\(D=\{0,1,2,3,4,5,6\}\); \(T=\{8,20,32,44,56,68,80\}\) (nghìn đồng). Về đại số tính \(C(2{,}5)=38\) được, nhưng đầu vào đó **không thuộc bài toán** đã mô tả nên không dùng làm câu trả lời thực tế.
+\(D=\{1,2,3,4,5,6\}\); \(T=\{20,32,44,56,68,80\}\) (nghìn đồng). Về đại số tính \(C(2{,}5)=38\) được, nhưng đầu vào đó **không thuộc bài toán** đã mô tả nên không dùng làm câu trả lời thực tế.
 
 </details>
 
