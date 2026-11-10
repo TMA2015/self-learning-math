@@ -26,6 +26,26 @@ g(x)=|f(x)|,\qquad h(x)=f(|x|).
 
 Hai công thức có cùng dấu gạch đứng, nhưng chúng yêu cầu hai hành động hoàn toàn khác nhau. Với \(g\), ta tính xong giá trị \(f(x)\) rồi mới lấy trị tuyệt đối của **đầu ra**. Với \(h\), ta lấy trị tuyệt đối của **đầu vào** trước rồi mới đưa vào quy tắc \(f\).
 
+### Tự thử · Hai chiếc máy xử lý cùng một đầu vào
+
+Em hãy hình dung có hai chiếc máy đều dùng **cùng công thức** \(f(x)=x^2-4x+3\), nhưng thứ tự xử lý khác nhau. Máy A nhận số \(x\), tính \(f(x)\), **sau cùng** mới lấy trị tuyệt đối kết quả. Máy B lấy trị tuyệt đối của \(x\) **ngay từ cửa vào**, rồi mới tính \(f\). Dấu \(|\ |\) nằm ở đâu sẽ quyết định máy đổi **đầu vào** hay **đầu ra**.
+
+Cho \(x=-2\). Em đã biết \(f(-2)=15\) và \(f(2)=-1\). **Trước khi xem hình**, hãy tự trả lời hai câu: Máy A cho bao nhiêu? Máy B cho bao nhiêu? Máy nào có thể cho một đầu ra âm? Hãy thử viết đường đi của số \(-2\) qua từng máy.
+
+<details>
+<summary>Đối chiếu hai đường đi và xem sơ đồ</summary>
+
+![Sơ đồ hai máy: trị tuyệt đối đặt ngoài hay trong f](Temp_FIG_TOPIC1_M3_INPUT_OUTPUT_TWO_MACHINES_R01.svg)
+
+- **Máy A:** \(-2\longrightarrow f(-2)=15\longrightarrow |15|=15\). Ta chỉ can thiệp vào **kết quả** của \(f\); vì vậy \(|f(x)|\) không âm.
+- **Máy B:** \(-2\longrightarrow |-2|=2\longrightarrow f(2)=-1\). Ta thay **số đem vào f**, nên \(f(|x|)\) vẫn có thể âm.
+
+Cùng một đầu vào \(-2\), hai đường đi cho \(15\) và \(-1\). Đừng đổi chỗ hai thao tác: \(f(|x|)\) và \(|f(x)|\) không phải một công thức.
+
+</details>
+
+**Mang dự đoán sang đồ thị:** Máy A giữ nguyên hoành độ và chỉ lật những điểm có tung độ âm qua trục \(Ox\). Máy B sử dụng cùng giá trị \(|x|\) cho hai vị trí \(x\) và \(-x\), nên hình mới đối xứng qua trục \(Oy\) trên những đầu vào được phép. Em sẽ thấy và giải thích hai điều ấy ở mô hình ngay dưới đây; không cần học thuộc quy tắc vẽ trước khi hiểu thứ tự thao tác.
+
 ## 1. Giá trị tuyệt đối ở bên ngoài: \(y=|f(x)|\)
 
 Nhớ rằng \(|u|=u\) khi \(u\ge0\), còn \(|u|=-u\) khi \(u<0\). Vì vậy,
