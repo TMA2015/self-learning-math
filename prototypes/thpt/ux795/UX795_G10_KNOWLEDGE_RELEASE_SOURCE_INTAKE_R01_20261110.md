@@ -28,7 +28,7 @@
 | B14 | V | `0cb35d210afc9dba136a6b256bc1c8138cb01396` | `894c31de396a2f6d6d30912399d6cad39f790130` |
 | B15 | VI | `72ed03b1cb625f157bb49064cf1df2100856e057` | `7b579927e0f6fe4d5a562d5e1127efa8d6deeb96` |
 | B16 | VI | `a0fc509e1c08b7ee90225dee3994d6b3fa84e21a` | `afe31b484ba60f8f7fed243b29995332a5609826` |
-| B17 | VI | `f94608d832b43e671439afde9c14332bb443ac13` | `6302851ed5ce78540a315eec475df7581c321390` |
+| B17 | VI | `f94608d832b43e671439afde9c14332bb443ac13` | `11d63ba7b40dfc75c1964f3bd59585975abaf8e9` |
 | B18 | VI | `0f2c6420f40112018dfd4be1268b0deb83f4452a` | `31ed3e85424d68130fc62a96e031389fc937122c` |
 | B19 | VII | `a4dbf99d12c35f0b3af73fb3df423126aa861add` | `36226f87857499897da3f62aaa9bd6a6f2ec7784` |
 | B20 | VII | `489e4d1784e19a896748d83a9e71a9b00ac73a09` | `4a704fdbc8ff6eecb932c8c61187b891f40e01ec` |
@@ -91,6 +91,13 @@
 - Đối chiếu trực tiếp SGK Toán 10 KNTT Tập 2 trang in **16**, bài 6.9–6.10: có dạng **xác định hàm số bậc hai từ thông tin hình học** (điểm, trục, đỉnh). Nguồn Knowledge cũ B16 chưa dạy rõ quy trình đi ngược từ đỉnh + điểm về công thức.
 - Đã bổ sung ví dụ tự biên soạn: đỉnh \(I(1;2)\), đi qua \(A(0;0)\), chọn dạng đỉnh \(y=a(x-1)^2+2\), suy ra \(a=-2\), kiểm ngược tại \(x=0,1,2\); cảnh báo tính duy nhất và điều kiện \(a\ne0\). Đây là `DELTA_C_ACADEMIC_MATERIAL` thuộc Knowledge, không thay outcome, First Try, HELP, Core, Practice, ngân hàng hay Readiness.
 - SHA mới của B16 được re-lock tại hàng B16; bộ kiểm toán ví dụ ChVI có thêm một trường hợp. Chưa gọi S1/PED toàn chương PASS; chưa kích hoạt Q18 self-QA mode hoặc merge/deploy.
+
+## S1 B17 inequality within physical flight-time domain — 10/11/2026
+
+- SGK Toán 10 KNTT Tập 2 trang in **24** có dạng ứng dụng bất phương trình bậc hai vào chuyển động/độ cao (bài 6.18); SBT Tập 2 trang in **18** có dạng quỹ đạo vật phóng (bài 6.26). Họ bài này đòi xác định **miền có ý nghĩa của thời gian** trước khi kết luận tập nghiệm. B17 trước đó có ví dụ rào vườn nhưng thiếu minh họa miền thời gian vận động.
+- Bổ sung **ví dụ tự biên soạn, khác dữ kiện SGK/SBT**: \(h(t)=-5t^2+20t+5\) m, yêu cầu \(h(t)\ge20\); thời gian bay \(0\le t\le2+\sqrt5\), giải \(h(t)\ge20\iff(t-1)(t-3)\le0\), được \(1\le t\le3\) giây. Kiểm \(h(0)=5\), \(h(1)=h(3)=20\), \(h(2)=25\), \(h(2+\sqrt5)=0\).
+- Đồng thời sửa lỗi vỡ công thức \(a\ne0\) thành hai dòng 'a'/'e0' trong tab Khám phá. Giữ nguyên First Try, HELP, các ID canonical và 4 tab; **B17 là DELTA_C phần giải thích/ứng dụng**, không đổi toán hoặc rubric của ngân hàng câu cũ.
+- New candidate B17 Git blob khóa ở bảng; [ChVI S1 source scope R01](UX795_G10_CHVI_S1_PRINTED_PAGE_SCOPE_R01_20261110.md). Không gọi ứng dụng mới là kết quả review độc lập; Q18 hiệu lực vẫn HOLD.
 
 ## RELEASE QA hiện có
 
