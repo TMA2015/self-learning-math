@@ -13,17 +13,17 @@
 
 | Mạch | Học liệu bổ sung | D5 | Luyện tập ứng viên |
 |---|---|---|---|
-| M1 · Hàm, miền, tập giá trị | một file Markdown đầy đủ: quy tắc đơn trị, miền công thức và miền thực tế, căn/mẫu, điểm biên, ví dụ chứng minh tập giá trị | 1 SVG giao hai điều kiện + 1 lab HTML chọn x | 7 APP + 2 WR = **9** |
+| M1 · Hàm, miền, tập giá trị | một file Markdown đầy đủ: quy tắc đơn trị, miền công thức và miền thực tế, căn/mẫu, điểm biên, ví dụ chứng minh tập giá trị | 1 SVG giao hai điều kiện + 1 lab HTML chọn x | 6 APP + 2 WR = **8** |
 | M2 · Đọc dữ kiện/đồ thị | một file Markdown: phép đo vs nội suy, tập vào rời rạc, nhánh tại điểm mốc, đồng biến trên từng miền | 1 SVG điểm rỗng/đặc + 1 lab HTML đọc x tại mốc 1 | 3 APP + 1 WR = **4** |
 | M3 · Parabol | một file Markdown: \(|f(x)|\) vs \(f(|x|)\), miền biến đổi, \(a=0\), tối ưu trên miền con | 1 SVG so sánh 2 khung cùng tỉ lệ trục + 1 lab Canvas hệ số a/b/c | 4 APP + 1 WR = **5** |
-| **Tổng** | **3 Markdown kiến thức** | **3 SVG + 3 HTML lab** | **18 DRAFT item** |
+| **Tổng** | **3 Markdown kiến thức** | **3 SVG + 3 HTML lab** | **17 DRAFT item** |
 
 Tổng thư mục sau bổ sung ma trận dùng chung có **14 file**, tính cả 2 hồ sơ QA và 1 ma trận existing/reuse. Ma trận được ghi ở \`Temp_TOPIC1_M1_M3_REUSE_AND_NEW_ITEM_MATRIX_R00_20261110.md\`. Nội dung student-facing không hiển thị metadata QA và không được dùng làm trang Tự kiểm tra kín. Các câu có đáp án mở \`<details><summary>Đối chiếu</summary>\` chỉ thuộc Kiến thức/Luyện tập.
 
 ## C. Kết quả QA sơ bộ có chứng cứ
 
 1. **GitHub readback:** đã fetch 12/12 file từ nhánh và xác minh blob SHA từng file. R18 canonical blob **vẫn chính xác** \`2340ea4975b37a457363eea59dd617070934983c\`.
-2. **Q15 sơ bộ:** 18 \`DRAFT-T1-...\` ID trong hai file practice đều **duy nhất nội bộ**; chưa có ID nào trùng dạng chuỗi trong nguồn R18. Đây **không** có nghĩa bài/đề/hướng giải khác nhau về nội dung. Các ứng viên lặp đúng ví dụ Vận dụng đã được đổi sang bài về bước nhảy tại 0, miền hai đoạn rời nhau, biên căn khác số và tập giá trị khi đỉnh bị loại; vẫn phải đối chiếu stem/key/rubric toàn thư viện SGK/Topic.
+2. **Q15 sơ bộ:** 17 \`DRAFT-T1-...\` ID trong hai file practice đều **duy nhất nội bộ**; chưa có ID nào trùng dạng chuỗi trong nguồn R18. Đây **không** có nghĩa bài/đề/hướng giải khác nhau về nội dung. Bài APP07 M1 đã bỏ vì trùng phương pháp/ý nghĩa với canonical TOP-FUNC-P05; WR02 M1 đã đổi thành bài miền rời rạc. Các ứng viên khác lặp đúng ví dụ Vận dụng đã được đổi sang bài về bước nhảy tại 0, miền hai đoạn rời nhau, biên căn khác số và tập giá trị khi đỉnh bị loại; vẫn phải đối chiếu stem/key/rubric toàn thư viện SGK/Topic (12/12 item G10 đã được truy xuất trong bước QA 10/11, Written/Anchor vẫn HOLD).
 3. **Toán M1:** \(h(x)=\sqrt{4-x^2}/(x-1)\) có \(D=[-2,1)\cup(1,2]\), \(h(-2)=0,\ h(0)=-2,\ h(2)=0\), x=1/3 bị loại. \(p(x)=(x-1)^2+2\) trên \([0,2]\) có tập giá trị \([2,3]\) (chứng minh tính đạt mọi giá trị bằng \(x=1+\sqrt{y-2}\)).
 4. **Toán M2:** \(f(x)=x+1\) khi x<1, bằng 3 khi x≥1: \(f(1)=3\), vòng rỗng \((1;2)\), điểm đặc \((1;3)\). Bài mới \(r(x)=x+1\) khi x<0, \(r(x)=x-2\) khi x≥0: \(r(-0{,}5)=0{,}5>r(0)=-2\) — phản ví dụ cho việc suy tăng toàn miền.
 5. **Toán M3:** với \(f(x)=(x-2)^2-1\), \(f(-2)=15,\ |f(2)|=1,\ f(|-2|)=-1\); \(|f|=0\) có nghiệm 1,3, còn \(f(|x|)=0\) có nghiệm ±1,±3. Nếu \(a=0\) thì không có đỉnh parabol. Với \(m(x)=5-(x-2)^2\), \(D=[0,1]\cup[3,4]\), GTLN là 4 tại x=1 hoặc x=3; GTNN là 1 tại x=0 hoặc x=4.
