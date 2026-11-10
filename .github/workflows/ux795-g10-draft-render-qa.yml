@@ -10,6 +10,7 @@ on:
       - "scripts/test-ux795-g10-source-candidate-lock.cjs"
       - "scripts/test-ux795-g10-figure-math.cjs"
       - "prototypes/thpt/ux795/UX795_G10_KNOWLEDGE_RELEASE_SOURCE_INTAKE_R01_20261110.md"
+      - "prototypes/thpt/ux795/UX795_G10_FIGURE_MATH_SELF_AUDIT_R01_20261110.md"
       - "scripts/test-ux795-g10-postmerge-headings.cjs"
       - "scripts/test-thpt-chvi-math-block-render.cjs"
       - "scripts/test-thpt-chvi-student-notes.cjs"
