@@ -12,8 +12,8 @@
 
 | Bài | Chương | Git blob main baseline | Git blob PR #797 staged |
 |---|---|---|---|
-| B01 | I | `0ffa4eecff1aa8dd249e8863fccbc7a674a6ddb2` | `3e12aa813e5fa472f7d84b754224ca2159b53935` |
-| B02 | I | `70c77844b0bee75565f8a059ddc4befd3ad9dd2d` | `cc1e78a48967fa681c7739ac2331c332d1f69753` |
+| B01 | I | `0ffa4eecff1aa8dd249e8863fccbc7a674a6ddb2` | `fb4bd72f6101523e30e30cc970d74c23b76228a8` |
+| B02 | I | `70c77844b0bee75565f8a059ddc4befd3ad9dd2d` | `8a7b90f1768b789429def045e38ebe97e6adbf3a` |
 | B03 | II | `a8ca8ff2a354df8cfa0292cf26051d0a8fe8edb0` | `ebc0538582be2ee77313bbda534a1016263c58fc` |
 | B04 | II | `69d4067e31ac714b451e9d1827e6081c8f9f2726` | `8d4fa65c64893ec5e867bc9a1a98eb8eb04b46ed` |
 | B05 | III | `a84ada557f30e484c1b5033238ed3ee6deab366e` | `dd1a9ecaa51a6ad1da0a6d86d6ac39847be68140` |
