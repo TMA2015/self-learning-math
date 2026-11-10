@@ -64,22 +64,11 @@ jobs:
           ref: main
           path: integration-main
           fetch-depth: 1
-      # PR #802 is a separate, owner-approved UI-only title update. Test the
-      # exact UI delta alongside G10 draft without merging either academic
-      # content or unreviewed Markdown into production.
-      - uses: actions/checkout@v4
-        with:
-          ref: de5b2c0d97516acad58da04f75c40791f331e127
-          path: integration-ui-titles
-          fetch-depth: 1
       - name: "DRY RUN - merge 27 G10 Knowledge pages with published main titles, NO DEPLOY"
         run: |
           set -euo pipefail
           echo "Published main baseline for dry run:"
           git -C integration-main rev-parse HEAD
-          test "$(git -C integration-ui-titles rev-parse HEAD)" = "de5b2c0d97516acad58da04f75c40791f331e127"
-          cp integration-ui-titles/hooks/topic_markdown_fixes.py integration-main/hooks/topic_markdown_fixes.py
-          cp integration-ui-titles/scripts/test_thpt_knowledge_short_labels.py integration-main/scripts/test_thpt_knowledge_short_labels.py
           lesson_count=0
           for lesson in docs/thpt-preview/sgk/chuong-*/bai-*.md; do
             [[ "$lesson" =~ /bai-[0-9]+\.md$ ]] || continue
@@ -88,8 +77,22 @@ jobs:
             lesson_count=$((lesson_count + 1))
           done
           test "$lesson_count" -eq 27
-          cp mkdocs.yml integration-main/mkdocs.yml
-          cp mkdocs.thpt-preview.yml integration-main/mkdocs.thpt-preview.yml
+          # Candidate MkDocs config MUST differ from published main only by
+          # this scoped CSS line. Abort instead of replacing navigation, hooks,
+          # scripts, authentication, or other established site configuration.
+          python - <<'PY'
+          from pathlib import Path
+          css = "  - assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css\n"
+          for name in ("mkdocs.yml", "mkdocs.thpt-preview.yml"):
+              candidate = Path(name).read_text(encoding="utf-8")
+              live_file = Path("integration-main") / name
+              published = live_file.read_text(encoding="utf-8")
+              if candidate.count(css) != 1 or candidate.replace(css, "", 1) != published:
+                  raise SystemExit(f"STANDARD_CONFLICT_HOLD: {name} has non-CSS differences against current main")
+              # Verified equivalent to inserting only the scoped CSS line.
+              live_file.write_text(candidate, encoding="utf-8")
+              print(f"PASS current main {name}: only G10 Knowledge CSS inserted")
+          PY
           cp docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css integration-main/docs/assets/stylesheets/
           for name in \
             G10_B02_MEMBERSHIP_SUBSET_R01.svg \
