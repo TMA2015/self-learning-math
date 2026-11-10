@@ -43,7 +43,7 @@ function validateReceipt(source,options={}){
    "BASELINE_REVIEW_RECEIPT_BLOB","S1_SOURCE","OUTCOME_SCOPE",
    "ASSESSMENT_MODE","Q15_Q16_DELTA","RD1_CUSTODY_DELTA",
    "FINAL_SUBMIT_DELTA","MASTERY_ACTIVATION","OPEN_P0","OPEN_P1",
-   "MATH_SELF_CHECK","PED_SELF_CHECK","OWNER_POLICY_APPLICABLE","AUTHORING_SIGNOFF"
+   "MATH_SELF_CHECK","PED_SELF_CHECK","OWNER_POLICY_APPLICABLE","CONTENT_OWNER_LANE","CONTENT_OWNER_SIGNOFF"
   ])meta[key]=field(source,key);
  }catch(e){errors.push(e.message);return {status:"HOLD",errors}}
  const equals={
@@ -61,14 +61,15 @@ function validateReceipt(source,options={}){
   OPEN_P1:"0",
   MATH_SELF_CHECK:"PASS",
   PED_SELF_CHECK:"PASS",
-  OWNER_POLICY_APPLICABLE:"YES_EFFECTIVE"
+  OWNER_POLICY_APPLICABLE:"YES_EFFECTIVE",
+   CONTENT_OWNER_LANE:"RELEASE"
  };
  for(const [k,v] of Object.entries(equals))check(meta[k]===v,"BOUNDARY_MISMATCH:"+k);
  check(sha.test(meta.BASELINE_REVIEW_RECEIPT_BLOB),"BASELINE_RECEIPT_SHA_INVALID");
  check(/^prototypes\/thpt\/(?:review-packets|release-handoffs)\/[^.][A-Za-z0-9_./-]*\.md$/.test(meta.BASELINE_REVIEW_RECEIPT_PATH)&&!meta.BASELINE_REVIEW_RECEIPT_PATH.includes(".."),"BASELINE_RECEIPT_PATH_INVALID");
  check(meta.S1_SOURCE.includes("KNTT")&&/trang in/i.test(meta.S1_SOURCE),"S1_PRINTED_PAGE_UNVERIFIED");
  check(id.test(meta.PACKET_ID),"PACKET_ID_INVALID");
- check(meta.AUTHORING_SIGNOFF.length>=18,"AUTHORING_SIGNOFF_MISSING");
+ check(meta.CONTENT_OWNER_SIGNOFF.length>=18,"CONTENT_OWNER_SIGNOFF_MISSING");
  const outcomes=new Set(meta.OUTCOME_SCOPE.split(",").map(x=>x.trim()));
  check(outcomes.size>0&&[...outcomes].every(x=>id.test(x)),"OUTCOME_SCOPE_INVALID");
  let sources,delta,figures;
@@ -136,7 +137,7 @@ function makeFixture(){
 "MASTERY_ACTIVATION: NO","OPEN_P0: 0","OPEN_P1: 0",
 "MATH_SELF_CHECK: PASS","PED_SELF_CHECK: PASS",
 "OWNER_POLICY_APPLICABLE: YES_EFFECTIVE",
-"AUTHORING_SIGNOFF: SYNTHETIC_TEST_ONLY_NOT_REAL",
+"CONTENT_OWNER_LANE: RELEASE","CONTENT_OWNER_SIGNOFF: SYNTHETIC_TEST_ONLY_NOT_REAL",
 "",
 "## SOURCE_DELTA_EVIDENCE",
 "| LESSON_ID | OUTCOME_IDS | BASELINE_SOURCE_PATH | BASELINE_SOURCE_BLOB | CANDIDATE_SOURCE_PATH | CANDIDATE_SOURCE_BLOB | CHANGE_SCOPE | STATUS |",
@@ -171,7 +172,9 @@ function test(){
   r.replace(" | MIXED | PASS |"," | CORE_CHANGE | PASS |"),
   r.replace("BASELINE_REVIEW_RECEIPT_BLOB: "+ "d".repeat(40),"BASELINE_REVIEW_RECEIPT_BLOB: INVALID"),
   r.replace("| G10-B02 | G10-O02 |","| G10-B02 | NOT_AN_OUTCOME |"),
-  r.replace("MASTERY_ACTIVATION: NO","MASTERY_ACTIVATION: YES")
+  r.replace("MASTERY_ACTIVATION: NO","MASTERY_ACTIVATION: YES"),
+   r.replace("CONTENT_OWNER_LANE: RELEASE","CONTENT_OWNER_LANE: AUTHORING"),
+   r.replace("CONTENT_OWNER_SIGNOFF: SYNTHETIC_TEST_ONLY_NOT_REAL","CONTENT_OWNER_SIGNOFF: X")
  ];
  bad.forEach((text,i)=>assert.equal(validateReceipt(text,{sourceBlobOf:p=>map[p]}).status,"HOLD","Negative case "+i));
  assert.equal(validateReceipt(r,{sourceBlobOf:p=>"e".repeat(40)}).status,"HOLD","Source blob must match actual bytes");
