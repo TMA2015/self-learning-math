@@ -26,10 +26,10 @@
 | B12 | V | `672ac88b3c36a5abde45b73ab7ad0fb7ff830983` | `701ef6224ba101ea06e2f3148dc5f1ee12de7976` |
 | B13 | V | `b4008a227494ef7165871b67a1a0f255c66c5c6c` | `c55d650f5b59c5260960de136e3c7fc26f219cdf` |
 | B14 | V | `0cb35d210afc9dba136a6b256bc1c8138cb01396` | `894c31de396a2f6d6d30912399d6cad39f790130` |
-| B15 | VI | `72ed03b1cb625f157bb49064cf1df2100856e057` | `295b0d032c4d91cc718bf9c556924b4ff9f74da5` |
-| B16 | VI | `a0fc509e1c08b7ee90225dee3994d6b3fa84e21a` | `02d4bd23fd584cee78105e074766cb31f875141d` |
-| B17 | VI | `f94608d832b43e671439afde9c14332bb443ac13` | `38f9683aa332bc713a44616eff1b7e199af3011e` |
-| B18 | VI | `0f2c6420f40112018dfd4be1268b0deb83f4452a` | `06e97d3685f0dbfb5ef80082622eda185a5dfe7d` |
+| B15 | VI | `72ed03b1cb625f157bb49064cf1df2100856e057` | `7b579927e0f6fe4d5a562d5e1127efa8d6deeb96` |
+| B16 | VI | `a0fc509e1c08b7ee90225dee3994d6b3fa84e21a` | `9a3c704459803de44dd122b15183d568bfd47d6c` |
+| B17 | VI | `f94608d832b43e671439afde9c14332bb443ac13` | `6302851ed5ce78540a315eec475df7581c321390` |
+| B18 | VI | `0f2c6420f40112018dfd4be1268b0deb83f4452a` | `31ed3e85424d68130fc62a96e031389fc937122c` |
 | B19 | VII | `a4dbf99d12c35f0b3af73fb3df423126aa861add` | `789adbd1dd24d1fe48629fedcff5d2d552791742` |
 | B20 | VII | `489e4d1784e19a896748d83a9e71a9b00ac73a09` | `bbb192caee4914cfd90e24cb4b63b443d8055bf0` |
 | B21 | VII | `361f5ed232e500d7db567ef9ffa8aaca4e5b6fe5` | `070d398ad721b8980ae0029c97a47b0431179d19` |
@@ -56,6 +56,15 @@
 - **B12–B14:** chuẩn hóa tên ví dụ theo câu tiếng Việt cho dễ đọc; không thay nội dung bài toán.
 - Đã so từng trang: **HTML `data-*` attributes, toàn bộ MathJax/TeX tokens và 4 tab cấp 1 bất biến**. Các sửa số học B11 đã kiểm bằng phép tính nêu trên; đây là QA nội bộ của RELEASE, **không là Q18 Academic/PED PASS** và không mở nguồn Q18 theo dự thảo.
 - 5 Git blob SHA ứng viên mới được cập nhật vào bảng trên. Không tác động Core, Practice, Readiness, private RD1, Firebase hoặc Mastery. Exact-head CI/browser phải chạy lại; Q18 HOLD và cấm merge/deploy giữ nguyên.
+
+## RELEASE natural-language cleanup — G10 ChVI B15–B18
+
+- B15: lời dẫn về cặp đầu vào–đầu ra, miền căn thức và mô hình tính phí rõ hơn cho người tự học.
+- B16: giải thích vai trò bình phương không âm tự nhiên hơn; thay ghi chú kỹ thuật về *item ID/placement* bằng lời mời luyện Core dễ hiểu, **không đổi nút Core, nguồn câu hoặc điểm số**.
+- B17: thay thuật ngữ nội bộ “S1 đã đính chính” bằng lời nhắc điều kiện hệ số bậc hai; các nhãn “Luyện lại (không nhân bản câu)” nay là “Luyện lại”.
+- B18: hướng học sinh trực tiếp thử lại nghiệm, làm rõ điều kiện căn thức, bớt văn phong viết cho reviewer.
+- Kiểm tĩnh từng file: toàn bộ MathJax/TeX token và chuỗi thuộc tính `data-*` giữ nguyên, đủ 4 tabs. Tất cả 4 Git blob ứng viên được khóa lại trong bảng. Không sửa Core/Practice/Readiness/đáp án/RD1/Firebase.
+- **Không biến QA biên tập thành Academic/PED reviewer PASS**. Q18 v2.0 còn ở PR #804 Draft; không merge/deploy trước khi các cổng chính thức và SHA/receipt mới tương thích.
 
 ## RELEASE QA hiện có
 
