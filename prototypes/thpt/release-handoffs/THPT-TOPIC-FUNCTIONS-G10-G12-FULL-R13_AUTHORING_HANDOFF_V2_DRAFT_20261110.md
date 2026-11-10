@@ -32,7 +32,7 @@ CONTENT_READY: NO
 PUBLIC_SITE_INTEGRATION: NO
 MASTERY_ACTIVATION: NO
 RELEASE_AUTHORIZATION: NO
-BLOCKERS: R12_TO_PRIVATE_R01_EXPOSURE_AUDIT_PENDING; NEW_PUBLIC_R11_R12_RISK_CLEARANCE; Q15_NEW_PUBLIC_CANDIDATES_9_PENDING; R14_REVIEW_RECEIPT_SOURCE_LOCK_PENDING; TOPIC_RELEASE_INTAKE_790; SECURE_FINAL_SUBMIT_RUNTIME_QA_PENDING
+BLOCKERS: R12_TO_PRIVATE_R01_EXPOSURE_AUDIT_PENDING; NEW_PUBLIC_R11_R12_RISK_CLEARANCE; Q15_NEW_PUBLIC_CANDIDATES_9_PENDING; R14_REVIEW_RECEIPT_SOURCE_LOCK_PENDING; V2_READY_EXACT_HEAD_NOT_VERIFIED; SECURE_FINAL_SUBMIT_RUNTIME_QA_PENDING
 
 **Không đưa gói này vào `ready/`, không ghi REGISTER thành CONTENT_READY, không merge/deploy.** Đã đóng nút thắt **single-source transport** bằng cách tạo MỘT bản vận chuyển R14 có Git blob `aedd6ec7fa09aa4e1602d7cff8698e33cbcfd96b`; ba phần R11/R12/R13 được chép nguyên văn, có marker BEGIN/END và source SHA. Không thêm chuẩn Q01–Q18. Việc hỗ trợ TOPIC/v1.2.0 của cổng V2, chấp thuận theo thẩm quyền và QA bảo mật vẫn do nhánh RELEASE xử lý.
 
@@ -97,18 +97,18 @@ BLOCKERS: R12_TO_PRIVATE_R01_EXPOSURE_AUDIT_PENDING; NEW_PUBLIC_R11_R12_RISK_CLE
 
 **R11/R12 khác R18:** các đoạn dẫn, bài mới, hình và luyện mới có thể thuộc `DELTA_C_ACADEMIC_MATERIAL`. Quy định Source 07 v1.1 hiện đòi review affected scope, còn quyết định owner mới nhấn review **khi rủi ro thật sự cần**. R11 QA đã ghi `STANDARD_CHANGE_REQUEST` cần đồng bộ vào **chuẩn gốc** khi được phê duyệt. **Không tự cấp PASS mới** của bản R11/R12 từ chứng cứ R18; chưa xong rà soát theo quy định hiện hành thì ghi `STANDARD_CONFLICT_HOLD` đúng phần, không cản việc soạn học liệu.
 
-**Source-lock V2:** Đã có ONE BLOB R14 làm `ACADEMIC_SOURCE_BLOB`, thay thế phương án multi-part chưa chắc được hỗ trợ. R18 handoff Draft `prototypes/thpt/release-handoffs/THPT-TOPIC-FUNCTIONS-G10-G12-FULL-R18_HANDOFF_V2_DRAFT_20261108.md` (blob `34d286aaad311b660580df580d4b89509c1adbb7`) chỉ đúng snapshot cũ; **R13 là handoff đề xuất hiện hành được cập nhật để tham chiếu R14; không tự sửa lịch sử R18**. V2 hiện cần tương thích với `TOPIC / FULL_TOPIC_LEARNING_PATH`, `STANDARD_VERSION=1.2.0`, ba nguồn học liệu khóa SHA và private receipt; Issue #790 chưa đóng, RELEASE Draft PR #799 đang mở. Không được sửa nhãn thành SGK hoặc giảm version để qua gate.
+**Source-lock V2:** Đã có ONE BLOB R14 làm `ACADEMIC_SOURCE_BLOB`, thay thế phương án multi-part chưa chắc được hỗ trợ. R18 handoff Draft `prototypes/thpt/release-handoffs/THPT-TOPIC-FUNCTIONS-G10-G12-FULL-R18_HANDOFF_V2_DRAFT_20261108.md` (blob `34d286aaad311b660580df580d4b89509c1adbb7`) chỉ đúng snapshot cũ; **R13 là handoff đề xuất hiện hành được cập nhật để tham chiếu R14; không tự sửa lịch sử R18**. RELEASE PR #799 **đã merge** vào main tại commit `52a049daa78cb1fe92483227714082a42b964775` (cổng V2 blob `048b8ee5566bf17ad771974d0d35414a592e0792`), đã hỗ trợ `TOPIC/FULL_TOPIC_LEARNING_PATH` và v1.2.0. Issue #790 vẫn **OPEN**. Đây là khả năng tiếp nhận ở code, **chưa** chứng minh packet R14 đạt READY hoặc site đã phát hành. Không được sửa nhãn thành SGK hoặc giảm version để qua gate.
 
 ## 5. QA AUTHORING R13 thực hiện và checkpoint
 
 - Kiểm trực tiếp GitHub **3/3 nguồn hiện hành SHA đúng**, baseline R18 và Q18 receipt giữ bất biến; `48/48` outcome có mặt trong R12, `28/28` Written IDs trong R12, M1–M7 được nhắc trong cả ba phần.
 - R13 student copy có hướng dẫn trước/trong/sau, Final Submit, privacy và fallback; không chứa thân câu/đáp án/rubric hoặc bảng ID kín; soát hành vi UI vẫn PENDING.
 - Q16/18 receipt original có đúng 4 SHA-256 tư nhân và Academic/PED PASS; **không** giả tính hash mới của tệp chưa được cung cấp.
-- **Đã đóng:** source transport một file, một Git blob; 3/3 source-body parity (không phải academic review mới). **Chưa QA:** runtime bảo mật; private vs 14 public collision; 9 candidate Q15; cổng Topic/v1.2.0 của RELEASE; review học thuật/PED phần R11/R12 nếu còn yêu cầu hiện hành; actual browser/device AP/CI trên HEAD.
+- **Đã đóng:** source transport một file, một Git blob; 3/3 source-body parity (không phải academic review mới). **Chưa QA:** runtime bảo mật; private vs 14 public collision; 9 candidate Q15; exact-head V2 READY trên packet R14 vẫn chưa chạy; review học thuật/PED phần R11/R12 nếu còn yêu cầu hiện hành; actual browser/device AP/CI trên HEAD.
 
 **AUTHORING THREE PARTS SOURCE ASSEMBLED = YES.** **ONE PUBLIC ACADEMIC_SOURCE_BLOB = aedd6ec7fa09aa4e1602d7cff8698e33cbcfd96b.** **PRIVATE RD1 R01 ACADEMIC/PED PASS PRESERVED = YES.** **OFFICIAL TOPIC SELF-CHECK RUNNING = NO.** **CONTENT_READY = NO.** **MERGE/DEPLOY = NO.**
 
-Bước tiếp theo không viết lại đề: owner-held private collision audit và chuẩn nguồn, sau đó RELEASE tiếp nhận qua cổng #790 khi hợp đồng đã hợp lệ; không biến phần còn lại thành chuỗi công việc nhỏ thuộc nhánh AUTHORING.
+Bước tiếp theo không viết lại đề: owner-held private collision audit và chuẩn nguồn, sau đó RELEASE kiểm nhận packet R14 qua cổng V2 đã hỗ trợ TOPIC trên main, sau khi các cổng học thuật/Q16 còn thiếu được đóng hợp lệ; không biến phần còn lại thành chuỗi công việc nhỏ thuộc nhánh AUTHORING.
 
 
 ## R14 V2 CONTRACT EVIDENCE — HISTORICAL BASELINE + CURRENT DELTA
@@ -525,4 +525,4 @@ Single normative source: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD
 
 ## RELEASE_ACCEPTANCE
 
-Draft RELEASE PR #799 đề xuất hỗ trợ `TOPIC/FULL_TOPIC_LEARNING_PATH` với chuẩn v1.2.0; chưa merge. Ở trạng thái hiện tại, source-lock transport một blob đã được chuẩn bị, nhưng **R14 reviewer receipt chưa khóa đúng new blob**, `ASSESSMENT_MODE=CLIENT_SELF_CHECK_NO_MASTERY` chỉ xác định fallback public, **không** kích hoạt private RD1; 14 public activities chưa được đối chiếu với owner-held 30 RD1; 9 candidates chưa được đăng ký canonical. RELEASE chịu trách nhiệm exact-HEAD CI, real-browser AP1–AP5, bảo vệ private answers, Final Submit và sự cho phép merge/deploy của owner. `NO_MERGE/NO_DEPLOY`.
+RELEASE PR #799 đã merge vào main tại commit `52a049daa78cb1fe92483227714082a42b964775`, cổng V2 hiện hành blob `048b8ee5566bf17ad771974d0d35414a592e0792` nhận TOPIC/v1.2.0. Issue #790 vẫn OPEN và chưa xác nhận READY trên packet R14. Ở trạng thái hiện tại, source-lock transport một blob đã được chuẩn bị, nhưng **R14 reviewer receipt chưa khóa đúng new blob**, `ASSESSMENT_MODE=CLIENT_SELF_CHECK_NO_MASTERY` chỉ xác định fallback public, **không** kích hoạt private RD1; 14 public activities chưa được đối chiếu với owner-held 30 RD1; 9 candidates chưa được đăng ký canonical. RELEASE chịu trách nhiệm exact-HEAD CI, real-browser AP1–AP5, bảo vệ private answers, Final Submit và sự cho phép merge/deploy của owner. `NO_MERGE/NO_DEPLOY`.
