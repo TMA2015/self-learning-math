@@ -5,7 +5,7 @@ THPT ONE STANDARD SLM-THPT-QUALITY-ONE v1.2.0 Q01–Q18.
 STATUS: AUTHORING COMPILED DRAFT; NOT CONTENT_READY, NOT WEBSITE IMPLEMENTED, NO MASTERY.
 IMMUTABLE_SOURCE_PARTS:
 KNOWLEDGE: prototypes/thpt/content-drafts/topic-functions/exp-m1-domain-r00/Temp_TOPIC1_KIEN_THUC_M1_M7_FULL_LEARNER_READY_DRAFT_R11_20261110.md | GIT_BLOB 25a91f18d6a4a764e3600d12b835b4b58e972b1f | LENGTH 97881
-PRACTICE: prototypes/thpt/content-drafts/topic-functions/exp-m1-domain-r00/Temp_TOPIC1_LUYEN_TAP_M1_M7_FULL_PUBLIC_SHARED_SOURCE_R12_20261110.md | GIT_BLOB 20c97d7bd7e1d5699ed186f7d7fbfd15c9d74c92 | LENGTH 35181
+PRACTICE: prototypes/thpt/content-drafts/topic-functions/exp-m1-domain-r00/Temp_TOPIC1_LUYEN_TAP_M1_M7_FULL_PUBLIC_SHARED_SOURCE_R12_20261110.md | GIT_BLOB 72ab85d195153a3a2fd26b730f0c1ed8af60383c | LENGTH 36384
 SELF_CHECK_PUBLIC: prototypes/thpt/content-drafts/topic-functions/exp-m1-domain-r00/Temp_TOPIC1_TU_KIEM_TRA_M1_M7_SAFE_STUDENT_SOURCE_R13_20261110.md | GIT_BLOB cb1f5aa42e176218b3127711202d5bfd8d06acf0 | LENGTH 4280
 This compilation reproduces each part EXACTLY as checked; the section markers allow content parity validation.
 -->
@@ -1352,7 +1352,7 @@ Phần **Tự kiểm tra** là bài đánh giá riêng bao quát toàn Chuyên �
 ---
 <!-- SLM_PART_END:KNOWLEDGE -->
 
-<!-- SLM_PART_BEGIN:PRACTICE|20c97d7bd7e1d5699ed186f7d7fbfd15c9d74c92 -->
+<!-- SLM_PART_BEGIN:PRACTICE|72ab85d195153a3a2fd26b730f0c1ed8af60383c -->
 # CHUYÊN ĐỀ 1 · HÀM SỐ VÀ ĐỒ THỊ
 ## LUYỆN TẬP · M1–M7 · BẢN HỢP NHẤT AUTHORING
 
@@ -1551,9 +1551,13 @@ Em chọn bài tự luận theo mục tiêu đang luyện. Viết cách lập lu
 
 ## Bài luyện bổ sung · Chỉ khi cần đào sâu hoặc khắc phục lỗi
 
+Những bài sau gồm cả **ôn luyện sau khi đã xem ví dụ** và **bài mở rộng cần giải thích sâu hơn**. Hãy tự thử rồi mới mở lời giải. Đây đều là bài công khai; kết quả tự đối chiếu không được ghi Skill Mastery hay dùng làm Tự kiểm tra độc lập.
+
 Đây là **bài công khai** để tự thử; không có điểm Mastery và không thuộc Tự kiểm tra độc lập. Chỉ mở Đối chiếu sau khi đã viết dự đoán hoặc lời giải. Một số câu bên dưới là biến thể **khắc phục** của ví dụ đã học; chúng không tự động được đăng ký thành một item mới trong ngân hàng chung.
 
-### DRAFT-T1-M1-APP02 · Rút gọn rồi có được nhận điểm bị loại?
+### Rút gọn rồi có được nhận điểm bị loại?
+
+<!-- AUTHORING_Q15_ID: DRAFT-T1-M1-APP02; OUTCOME: TOP-G10-FUNC-O02; PUBLIC_SEMANTIC: REMEDIATION_NO_NEW_ID; REASON: removable-hole-domain; NO_OFFICIAL_RD1; NO_MASTERY -->
 
 Cho \(f(x)=\dfrac{x^2-1}{x-1}\). Một bạn rút gọn thành \(x+1\), rồi khẳng định tập xác định là \(\mathbb R\). Em hãy phản biện và nêu điều gì đúng, điều gì sai trong lời giải ấy.
 
@@ -1563,10 +1567,11 @@ Từ biểu thức **ban đầu**, mẫu số \(x-1\) yêu cầu \(x\ne1\). Trê
 
 </details>
 
-**Vai trò:** tự luyện khắc phục/ôn lại một ý đã xuất hiện; không đề xuất cấp ID canonical riêng nếu bài gốc đã đủ.
 
 
-### DRAFT-T1-M1-APP05 · Đọc đúng điểm biên và điểm loại
+### Đọc đúng điểm biên và điểm loại
+
+<!-- AUTHORING_Q15_ID: DRAFT-T1-M1-APP05; OUTCOME: TOP-G10-FUNC-O02; PUBLIC_SEMANTIC: REMEDIATION_NO_NEW_ID; REASON: radical-domain-endpoints; NO_OFFICIAL_RD1; NO_MASTERY -->
 
 Xét \(q(x)=\dfrac{\sqrt{9-x^2}}{x+2}\). Xác định tập xác định và kiểm các giá trị \(x=-3,-2,0,3\). Với các giá trị hợp lệ, hãy tính \(q(x)\).
 
@@ -1576,10 +1581,11 @@ Căn yêu cầu \(9-x^2\ge0\), tức \(-3\le x\le3\). Mẫu yêu cầu \(x+2\ne0
 
 </details>
 
-**Vai trò:** tự luyện khắc phục/ôn lại một ý đã xuất hiện; không đề xuất cấp ID canonical riêng nếu bài gốc đã đủ.
 
 
-### DRAFT-T1-M1-APP06 · Ba ràng buộc trong một biểu thức
+### Ba ràng buộc trong một biểu thức
+
+<!-- AUTHORING_Q15_ID: DRAFT-T1-M1-APP06; OUTCOME: TOP-G10-FUNC-O02; PUBLIC_SEMANTIC: PUBLIC_DISTINCT_CANDIDATE; REASON: three-simultaneous-domain-constraints; NO_OFFICIAL_RD1; NO_MASTERY -->
 
 Xét \(\displaystyle r(x)=\frac{\sqrt{x+2}}{(x-1)(x-3)}\). Tìm \(D\), rồi cho biết \(-2,1,3,4\) có thuộc miền hay không.
 
@@ -1589,10 +1595,11 @@ Xét \(\displaystyle r(x)=\frac{\sqrt{x+2}}{(x-1)(x-3)}\). Tìm \(D\), rồi cho
 
 </details>
 
-**Vai trò:** ứng viên luyện sâu hoặc chuyển giao chưa có một placement tương đương rõ ràng; ID hiện mới là DRAFT.
 
 
-### DRAFT-T1-M1-WR01 · Phản biện một kết luận sai
+### Phản biện một kết luận sai
+
+<!-- AUTHORING_Q15_ID: DRAFT-T1-M1-WR01; OUTCOME: TOP-G10-FUNC-O02; PUBLIC_SEMANTIC: REMEDIATION_NO_NEW_ID; REASON: radical-in-denominator; NO_OFFICIAL_RD1; NO_MASTERY -->
 
 Một bạn viết: “Vì \(\sqrt{x-1}\) xác định khi \(x\ge1\), nên \(\displaystyle\frac1{\sqrt{x-1}}\) cũng xác định khi \(x\ge1\)”. Em hãy giải thích lỗi, tìm tập xác định đúng và đưa ra một giá trị tại biên để kiểm chứng.
 
@@ -1604,10 +1611,11 @@ Một bạn viết: “Vì \(\sqrt{x-1}\) xác định khi \(x\ge1\), nên \(\di
 
 </details>
 
-**Vai trò:** tự luyện khắc phục/ôn lại một ý đã xuất hiện; không đề xuất cấp ID canonical riêng nếu bài gốc đã đủ.
 
 
-### DRAFT-T1-M1-WR02 · Rút gọn có làm mất một điểm trên đồ thị?
+### Rút gọn có làm mất một điểm trên đồ thị?
+
+<!-- AUTHORING_Q15_ID: DRAFT-T1-M1-WR02; OUTCOME: TOP-G10-FUNC-O02; PUBLIC_SEMANTIC: PUBLIC_DISTINCT_CANDIDATE; REASON: hole-removes-unique-range-value; NO_OFFICIAL_RD1; NO_MASTERY -->
 
 Cho hai hàm số
 
@@ -1650,10 +1658,11 @@ T_f=[0,+\infty)\setminus\{\sqrt2\}.
 
 ---
 
-**Vai trò:** ứng viên luyện sâu hoặc chuyển giao chưa có một placement tương đương rõ ràng; ID hiện mới là DRAFT.
 
 
-### DRAFT-T1-M2-APP05 — Nhánh nào nhận đúng tại mốc?
+### Nhánh nào nhận đúng tại mốc?
+
+<!-- AUTHORING_Q15_ID: DRAFT-T1-M2-APP05; OUTCOME: TOP-G10-FUNC-O05; PUBLIC_SEMANTIC: REMEDIATION_NO_NEW_ID; REASON: piecewise-included-endpoint; NO_OFFICIAL_RD1; NO_MASTERY -->
 
 Xét \(p(x)=2-x\) khi \(x\le1\) và \(p(x)=x+1\) khi \(x>1\). Hãy tính \(p(0),p(1),p(2)\) rồi cho biết ở \(x=1\), điểm \((1;1)\) hay \((1;2)\) phải được tô đặc.
 
@@ -1663,10 +1672,11 @@ Xét \(p(x)=2-x\) khi \(x\le1\) và \(p(x)=x+1\) khi \(x>1\). Hãy tính \(p(0),
 
 </details>
 
-**Vai trò:** tự luyện khắc phục/ôn lại một ý đã xuất hiện; không đề xuất cấp ID canonical riêng nếu bài gốc đã đủ.
 
 
-### DRAFT-T1-M2-APP06 — Hai nhánh đều tăng, cả hàm có tăng?
+### Hai nhánh đều tăng, cả hàm có tăng?
+
+<!-- AUTHORING_Q15_ID: DRAFT-T1-M2-APP06; OUTCOME: TOP-G10-FUNC-O04; PUBLIC_SEMANTIC: PUBLIC_DISTINCT_CANDIDATE; REASON: piecewise-increasing-branches-not-global; NO_OFFICIAL_RD1; NO_MASTERY -->
 
 Xét \(r(x)=x+1\) khi \(x<0\), và \(r(x)=x-2\) khi \(x\ge0\). Cả hai nhánh đều là đường thẳng có hệ số góc dương. Có được kết luận \(r\) đồng biến nghiêm ngặt trên toàn \(\mathbb R\) không? Hãy kiểm riêng hai đầu vào ở hai phía mốc 0.
 
@@ -1676,10 +1686,11 @@ Xét \(r(x)=x+1\) khi \(x<0\), và \(r(x)=x-2\) khi \(x\ge0\). Cả hai nhánh �
 
 </details>
 
-**Vai trò:** ứng viên luyện sâu hoặc chuyển giao chưa có một placement tương đương rõ ràng; ID hiện mới là DRAFT.
 
 
-### DRAFT-T1-M2-APP07 — Ba điểm quan sát có xác định một đồ thị? (ứng viên **tương tác chọn một đáp án**)
+### Ba điểm quan sát có xác định một đồ thị?
+
+<!-- AUTHORING_Q15_ID: DRAFT-T1-M2-APP07; OUTCOME: TOP-G10-FUNC-O03; PUBLIC_SEMANTIC: REMEDIATION_NO_NEW_ID; REASON: affine-rescaled-three-points-knowledge-example; NO_OFFICIAL_RD1; NO_MASTERY -->
 
 Một bảng quan sát chỉ ghi các điểm \((-2;4),(0;0),(2;4)\). Hai nhóm đề xuất **hai quy tắc mô hình** trên cùng miền \(D=[-2,2]\):
 \[
@@ -1708,10 +1719,11 @@ Kiểm lần lượt \(x=-2,0,2\) với cả hai quy tắc. Sau đó thử một
 
 
 
-**Vai trò:** ứng viên luyện sâu hoặc chuyển giao chưa có một placement tương đương rõ ràng; ID hiện mới là DRAFT.
 
 
-### DRAFT-T1-M2-WR01 — Tách dữ kiện khỏi suy luận
+### Tách dữ kiện khỏi suy luận
+
+<!-- AUTHORING_Q15_ID: DRAFT-T1-M2-WR01; OUTCOME: TOP-G10-FUNC-O03; PUBLIC_SEMANTIC: PUBLIC_DISTINCT_CANDIDATE; REASON: data-vs-model-linear-interpolation-justification; NO_OFFICIAL_RD1; NO_MASTERY -->
 
 Một bảng chỉ ghi vận tốc của xe tại \(t=0\) là 10 km/h và tại \(t=10\) phút là 20 km/h. Hãy trình bày (a) điều gì biết chắc từ bảng; (b) điều gì chưa thể khẳng định về vận tốc lúc \(t=5\) phút; (c) nếu giả định vận tốc tăng đều theo thời gian, hãy tính vận tốc dự kiến ở phút thứ 5 và nêu giới hạn của kết quả.
 
@@ -1723,12 +1735,13 @@ Một bảng chỉ ghi vận tốc của xe tại \(t=0\) là 10 km/h và tại 
 
 </details>
 
-## B. Parabol và hai phép biến đổi — M3
-
-**Vai trò:** ứng viên luyện sâu hoặc chuyển giao chưa có một placement tương đương rõ ràng; ID hiện mới là DRAFT.
+**Chuyển sang các bài tự luyện về parabol và phép biến đổi M3.**
 
 
-### DRAFT-T1-M3-APP07 — Nghiệm âm có được đưa vào |x|?
+
+### Nghiệm âm có được đưa vào |x|?
+
+<!-- AUTHORING_Q15_ID: DRAFT-T1-M3-APP07; OUTCOME: TOP-G10-FUNC-O08; PUBLIC_SEMANTIC: PUBLIC_DISTINCT_CANDIDATE; REASON: solve-abs-output-vs-input-equations; NO_OFFICIAL_RD1; NO_MASTERY -->
 
 Cho \(f(x)=x^2+2x-3\). Hãy giải \(|f(x)|=0\) và \(f(|x|)=0\). Khi đặt \(u=|x|\), vì sao phải kiểm tra \(u\ge0\) trước khi suy ra \(x\)?
 
@@ -1738,10 +1751,11 @@ Cho \(f(x)=x^2+2x-3\). Hãy giải \(|f(x)|=0\) và \(f(|x|)=0\). Khi đặt \(u
 
 </details>
 
-**Vai trò:** ứng viên luyện sâu hoặc chuyển giao chưa có một placement tương đương rõ ràng; ID hiện mới là DRAFT.
 
 
-### DRAFT-T1-M3-APP09 — Miền không liền nhau
+### Miền không liền nhau
+
+<!-- AUTHORING_Q15_ID: DRAFT-T1-M3-APP09; OUTCOME: TOP-G10-FUNC-O09; PUBLIC_SEMANTIC: PUBLIC_DISTINCT_CANDIDATE; REASON: extrema-disconnected-domain; NO_OFFICIAL_RD1; NO_MASTERY -->
 
 Cho \(m(x)=5-(x-2)^2\) nhưng chỉ xét \(D=[0,1]\cup[3,4]\). Tìm GTNN và GTLN trên \(D\). Vì sao không được lấy giá trị 5 tại đỉnh của parabol làm GTLN trong bài?
 
@@ -1751,10 +1765,11 @@ Cho \(m(x)=5-(x-2)^2\) nhưng chỉ xét \(D=[0,1]\cup[3,4]\). Tìm GTNN và GTL
 
 </details>
 
-**Vai trò:** ứng viên luyện sâu hoặc chuyển giao chưa có một placement tương đương rõ ràng; ID hiện mới là DRAFT.
 
 
-### DRAFT-T1-M3-WR02 — Hai cách đặt dấu | |, hai đồ thị
+### Hai cách đặt dấu | |, hai đồ thị
+
+<!-- AUTHORING_Q15_ID: DRAFT-T1-M3-WR02; OUTCOME: TOP-G10-FUNC-O08; PUBLIC_SEMANTIC: REMEDIATION_NO_NEW_ID; REASON: same-parabola-as-knowledge-two-absolute-graphs; NO_OFFICIAL_RD1; NO_MASTERY -->
 
 Cho \(f(x)=x^2-4x+3\). Xét \(g(x)=|f(x)|\) và \(h(x)=f(|x|)\). (a) Hãy mô tả phần đồ thị thay đổi trong mỗi trường hợp. (b) Tính \(g(2),h(2),g(-2),h(-2)\). (c) Tìm các nghiệm của \(g(x)=0\) và \(h(x)=0\). Kết luận hai đồ thị có giống nhau không và giải thích.
 
@@ -1768,7 +1783,6 @@ Cho \(f(x)=x^2-4x+3\). Xét \(g(x)=|f(x)|\) và \(h(x)=f(|x|)\). (a) Hãy mô t�
 
 ---
 
-**Vai trò:** tự luyện khắc phục/ôn lại một ý đã xuất hiện; không đề xuất cấp ID canonical riêng nếu bài gốc đã đủ.
 
 
 ## Hai bài kết nối M4–M7 · Dùng kiến thức xuyên nhiều mạch
@@ -1776,7 +1790,9 @@ Cho \(f(x)=x^2-4x+3\). Xét \(g(x)=|f(x)|\) và \(h(x)=f(|x|)\). (a) Hãy mô t�
 Những câu SGK riêng lẻ đã đủ luyện từng thao tác, nhưng để đánh giá *khả năng nối kiến thức*, em cần một số tình huống mà **miền, giới hạn, đạo hàm và kết luận về miền cùng xuất hiện trong một lời giải**. Hai bài dưới đây dùng công thức và bối cảnh khác ví dụ \(\log_2x\) của Kiến thức. Chúng là **ứng viên công khai**, chưa cấp ID canonical.
 
 
-### DRAFT-T1-M4M7-XFER01 · Một hàm lôgarit, bốn câu hỏi
+### Một hàm lôgarit, bốn câu hỏi
+
+<!-- AUTHORING_Q15_ID: DRAFT-T1-M4M7-XFER01; OUTCOME: TOP-FUNC-M4-O09; PUBLIC_SEMANTIC: PUBLIC_DISTINCT_CANDIDATE; REASON: joint-M4-M5-M6-M7-log-domain-extrema; NO_OFFICIAL_RD1; NO_MASTERY -->
 
 Một mô hình có quy tắc \(f(x)=\log_2(x+2)\), nhưng chỉ dùng khi \(-2<x\le2\).
 
@@ -1799,7 +1815,9 @@ Một mô hình có quy tắc \(f(x)=\log_2(x+2)\), nhưng chỉ dùng khi \(-2<
 
 </details>
 
-### DRAFT-T1-M4M7-XFER02 · Một mô hình nguội dần có đơn vị
+### Một mô hình nguội dần có đơn vị
+
+<!-- AUTHORING_Q15_ID: DRAFT-T1-M4M7-XFER02; OUTCOME: TOP-FUNC-M4-O06; PUBLIC_SEMANTIC: PUBLIC_DISTINCT_CANDIDATE; REASON: joint-M4-M5-M6-M7-exp-temperature; NO_OFFICIAL_RD1; NO_MASTERY -->
 
 Nhiệt độ của một mẫu vật được mô hình hóa (giả định) trong \(t\ge0\) phút bằng
 \[
