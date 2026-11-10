@@ -18,11 +18,9 @@
 
     ### Thuật ngữ, kiến thức và kỹ năng
 
-    **Thuật ngữ:** Tam thức bậc hai (a
-    e0), biệt thức (Delta), nghiệm đơn, nghiệm kép, bảng xét dấu, bất phương trình bậc hai.
+    **Thuật ngữ:** Tam thức bậc hai với \(a\ne0\), biệt thức \(\Delta\), nghiệm phân biệt, nghiệm kép, bảng xét dấu, bất phương trình bậc hai.
 
-    **Sau bài học, em cần làm được:** Kiểm (a
-    e0), tìm nghiệm và xét dấu theo từng miền; phân biệt tiếp xúc với cắt trục; giải bất phương trình và lọc điều kiện thực tế.
+    **Sau bài học, em cần làm được:** Kiểm tra \(a\ne0\), tìm nghiệm và xét dấu theo từng khoảng; phân biệt parabol cắt trục và tiếp xúc trục \(Ox\); giải bất phương trình và đối chiếu điều kiện thực tế.
 
 === "Kiến thức SGK"
 
@@ -222,6 +220,28 @@
     \]
 
     Suy ra \(\boxed{3\le x\le6}\) (m); các nghiệm thỏa \(0<x<9\).
+
+    ### Khi bất phương trình đi cùng thời gian thực tế
+
+    Với bài toán chuyển động, nghiệm đại số chưa phải câu trả lời cuối cùng: **thời gian không âm**, và mô hình độ cao chỉ áp dụng trong khoảng vật đang bay. Đây là lý do ta phải xác định miền thời gian trước khi chọn tập nghiệm.
+
+    **Ví dụ tự biên soạn.** Một quả bóng được ném lên từ độ cao \(5\) m. Trong thời gian bay, độ cao (m) sau \(t\) giây được mô tả bởi \(h(t)=-5t^2+20t+5\). Hỏi quả bóng ở độ cao **ít nhất \(20\) m** trong khoảng thời gian nào?
+
+    **Bước 1 — điều kiện mô hình.** \(t\ge0\) và quả bóng còn ở trên mặt đất, tức \(h(t)\ge0\). Giải \(h(t)=0\) được \(t=2\pm\sqrt5\), nên thời gian bay theo mô hình là \(0\le t\le2+\sqrt5\) (giây).
+
+    **Bước 2 — chuyển câu hỏi thành bất phương trình.** Cụm từ *ít nhất 20 m* nghĩa là \(h(t)\ge20\), không phải \(h(t)=20\). Ta có
+    \[
+    -5t^2+20t+5\ge20
+    \iff -5(t-1)(t-3)\ge0
+    \iff (t-1)(t-3)\le0.
+    \]
+
+    **Bước 3 — xét dấu và giao miền.** Tích không dương trên \([1;3]\). Khoảng này nằm trọn trong miền bay \(0\le t\le2+\sqrt5\), nên đáp án là **từ giây thứ 1 đến hết giây thứ 3**.
+
+    **Tự kiểm:** \(h(1)=h(3)=20\) m, \(h(2)=25\) m, còn \(h(0)=5\) m. Nhờ đó em kiểm được dấu \(\ge\) phải lấy hai đầu mút và không được chọn mọi thời điểm ngoài khoảng bay.
+
+    **Khi nào dùng cách này?** Khi đại lượng cần đạt một ngưỡng (*ít nhất*, *không vượt quá*, *lớn hơn*…), hãy lập bất phương trình, giải theo dấu tam thức rồi **giao với miền có ý nghĩa** của đại lượng. Không dùng những nghiệm chỉ đúng về đại số nhưng vô nghĩa về vật lí.
+
 
 
     ### Bất phương trình tham số đúng với mọi số thực — hệ số a cố định
