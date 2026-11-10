@@ -21,11 +21,11 @@
 | B07 | IV | `1f1b0976cfcfe6c5d812c056e13df09e561eb89f` | `3766d84af8cbd27d1d84824048c39f974036020b` |
 | B08 | IV | `a7758b4647f28681acdc3f99b8f7f80956deebf1` | `fdf2a7619f1a804a59ede82564a4853cadf6c5f7` |
 | B09 | IV | `84c67363264698fab87db0e76eca5e4561006fa6` | `30cf7ba3fea8e8ebb4212ac5b06840b4ef7d380e` |
-| B10 | IV | `84494e72805d4beb681465595d923bb98a2afb61` | `ff46465388cf3882af931fc181bb635413f7d521` |
-| B11 | IV | `899379e55ce9cc332acb88009c99626dd316f7be` | `6e95cfbca3ce0536929f07b2d11c7b250c8ff45a` |
-| B12 | V | `672ac88b3c36a5abde45b73ab7ad0fb7ff830983` | `68546138e93be2207480f8e6975cd57810593a27` |
-| B13 | V | `b4008a227494ef7165871b67a1a0f255c66c5c6c` | `4a233cc2fdd780ab56ebc64754b84389c83e771f` |
-| B14 | V | `0cb35d210afc9dba136a6b256bc1c8138cb01396` | `8410a941f35584bb2a76af33fe404b32857384a6` |
+| B10 | IV | `84494e72805d4beb681465595d923bb98a2afb61` | `d4e0ad482ef7b8b5374c4e0f4cebea54e8deac82` |
+| B11 | IV | `899379e55ce9cc332acb88009c99626dd316f7be` | `117e35eb3a9d96bd138826f6ed648d857019473c` |
+| B12 | V | `672ac88b3c36a5abde45b73ab7ad0fb7ff830983` | `701ef6224ba101ea06e2f3148dc5f1ee12de7976` |
+| B13 | V | `b4008a227494ef7165871b67a1a0f255c66c5c6c` | `c55d650f5b59c5260960de136e3c7fc26f219cdf` |
+| B14 | V | `0cb35d210afc9dba136a6b256bc1c8138cb01396` | `894c31de396a2f6d6d30912399d6cad39f790130` |
 | B15 | VI | `72ed03b1cb625f157bb49064cf1df2100856e057` | `295b0d032c4d91cc718bf9c556924b4ff9f74da5` |
 | B16 | VI | `a0fc509e1c08b7ee90225dee3994d6b3fa84e21a` | `02d4bd23fd584cee78105e074766cb31f875141d` |
 | B17 | VI | `f94608d832b43e671439afde9c14332bb443ac13` | `38f9683aa332bc713a44616eff1b7e199af3011e` |
@@ -47,6 +47,15 @@
 - Nguồn ứng viên SHA tại bảng trên được cập nhật theo Git blob thực của B07/B08/B09; **các SHA ứng viên cũ không còn là nguồn phát hành hiện tại**. Baseline trên main không đổi.
 - So sánh trước/sau trong từng file: tập biểu thức TeX theo thứ tự, First Try ID, HELP ID **bất biến**. Đây là QA biên tập RELEASE, **không** tự cấp Academic/PED PASS; Q18 đối với các phần nội dung nâng cấp vẫn HOLD.
 - Cần chạy lại exact-head UX795/browser + source-lock và dùng SHA mới nếu lập hồ sơ tự kiểm chứng sau này. Không đổi Core/Practice/Readiness/RD1/Firebase/Mastery, không merge/deploy.
+
+## RELEASE wording and context cleanup — 10/11/2026 (B10–B14)
+
+- **B10:** sửa ký hiệu vectơ trong lời mục tiêu học tập đang bị rơi dấu gạch chéo thành lời Việt dễ đọc; loại chỉ dẫn nội bộ “D2 mới” khỏi bước tự ôn.
+- **B11:** sửa hai chỉ dẫn tự khắc phục vốn lẫn số liệu của bài khác: hai lực **6 N và 6 N** không phải `8+15`; chặn trên độ lớn hợp lực là **12 N**, không phải 23 N. Với góc 120°, \(R^2=6^2+6^2+2\cdot6\cdot6\cos120^\circ=36\), do đó \(R=6\,\mathrm{N}\le12\,\mathrm{N}\). Làm rõ lý do chọn phương pháp, bỏ thuật ngữ QA “D2 WHY/METHOD/LIMIT” và nhãn đánh giá nội bộ khỏi hướng dẫn học sinh.
+- **B12–B13:** bỏ hai đoạn chỉ thị QA nội bộ bị lọt vào trang học sinh. Câu ở B12 nhắc **tứ phân vị/Q2**, ở B13 nhắc **phương sai/hàng rào ngoại lệ**, đều lạc nội dung bài. Không sử dụng các đoạn bị loại làm nguồn trang in SGK/SBT; số trang cần kiểm chứng lại từ S1 trước khi ghi vào receipt chính thức.
+- **B12–B14:** chuẩn hóa tên ví dụ theo câu tiếng Việt cho dễ đọc; không thay nội dung bài toán.
+- Đã so từng trang: **HTML `data-*` attributes, toàn bộ MathJax/TeX tokens và 4 tab cấp 1 bất biến**. Các sửa số học B11 đã kiểm bằng phép tính nêu trên; đây là QA nội bộ của RELEASE, **không là Q18 Academic/PED PASS** và không mở nguồn Q18 theo dự thảo.
+- 5 Git blob SHA ứng viên mới được cập nhật vào bảng trên. Không tác động Core, Practice, Readiness, private RD1, Firebase hoặc Mastery. Exact-head CI/browser phải chạy lại; Q18 HOLD và cấm merge/deploy giữ nguyên.
 
 ## RELEASE QA hiện có
 
