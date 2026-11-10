@@ -33,6 +33,10 @@ jobs:
             'node scripts/test-thpt-static-release.cjs','python check_roadmap_dependencies.py']){
             assert(w.includes(s),'Original production regression guard removed: '+s);
           }
+          const queueStep=w.indexOf('Protect release-queue manifest and REGISTER even on metadata-only main pushes');
+          const classificationStep=w.indexOf('Assert safe push-scope classifier and classify FULL main push');
+          assert(queueStep>0 && classificationStep>queueStep,'Ready/REGISTER guard must run before any no-deploy classification');
+          assert(w.slice(queueStep,classificationStep).includes('node scripts/test-thpt-release-queue.cjs'),'Ready/REGISTER preflight cannot be skipped');
           assert(!w.includes('continue-on-error:'),'No failures may be ignored');
           console.log('PASS deploy safety: all original main release gate signatures present; full push diff and no bypass.');
           NODE
