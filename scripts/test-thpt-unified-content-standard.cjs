@@ -118,9 +118,9 @@ function selfTest(){
      assert(validate(full.replace("OWNER_APPROVED_EFFECTIVE_UPON_GOVERNANCE_MERGE","NO_OWNER_APPROVAL"),"","").failures.some(e=>e.startsWith("UX_PED_V1_2_MISSING_CONTROL")));
  }
  if(/\*\*VERSION:\*\* `2\.0\.0`/.test(full)){
-   assert(validate(full.replace("SELF_QA_EVIDENCE_RECEIPT","EVIDENCE_OMITTED"),"","").failures.some(e=>e.startsWith("Q18_V2_DRAFT_CONTROL_MISSING")));
+   assert(validate(full.replaceAll("SELF_QA_EVIDENCE_RECEIPT","EVIDENCE_OMITTED"),"","").failures.some(e=>e.startsWith("Q18_V2_DRAFT_CONTROL_MISSING")));
    assert(validate(full.replace("## X-C. Đề xuất tự kiểm chứng nội bộ","## X-C. [REMOVED]"),"","").failures.some(e=>e.startsWith("Q18_V2_DRAFT_CONTROL_MISSING")));
-   assert(validate(full.replace("GOVERNANCE_PROPOSAL_OWNER_REVIEW_PENDING","WRONGLY_CLAIMED_EFFECTIVE"),"","").failures.some(e=>e.startsWith("Q18_V2_DRAFT_CONTROL_MISSING")));
+   assert(validate(full.replaceAll("GOVERNANCE_PROPOSAL_OWNER_REVIEW_PENDING","WRONGLY_CLAIMED_EFFECTIVE"),"","").failures.some(e=>e.startsWith("Q18_V2_DRAFT_CONTROL_MISSING")));
  }
  {
    assert(validate(full.replace(/\*\*VERSION:\*\* `\d+\.\d+\.\d+`/,"**VERSION:** `9.9.9`"),"","").failures.includes("VERSION_NOT_LOCKED"));
