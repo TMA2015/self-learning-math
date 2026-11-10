@@ -38,13 +38,14 @@ function validate(source, agents, queue) {
  if(["1.2.0","2.0.0"].includes(version)){
    const required=["## II-B. Diễn giải áp dụng Q03/Q04/Q07/Q08/Q09–Q14/Q17 qua cùng AP1–AP5 — bổ sung v1.2.0",
      "## X-B. Quyết định hợp nhất trải nghiệm tự học — Change Log 04/11/2026",
-     "OWNER_APPROVED_EFFECTIVE_UPON_GOVERNANCE_MERGE",
      "1.1.0 → 1.2.0","LEARNER_EVIDENCE_PENDING",
      "Issue #742", "DELTA_C_ACADEMIC_MATERIAL",
      "Q09", "Q10", "Q11", "Q12", "Q13", "Q14",
      "AP1","AP2","AP3","AP4","AP5",
      "không phát sinh tiêu chí toán mới"];
    for(const token of required)if(!source.includes(token))fail("UX_PED_V1_2_MISSING_CONTROL:"+token);
+   if(version==="1.2.0"&&!source.includes("OWNER_APPROVED_EFFECTIVE_UPON_GOVERNANCE_MERGE"))
+     fail("UX_PED_V1_2_MISSING_CONTROL:OWNER_APPROVED_EFFECTIVE_UPON_GOVERNANCE_MERGE");
  }
  if(!source.includes("GOVERNANCE_PROPOSAL_OWNER_REVIEW_PENDING") &&
     !source.includes("OFFICIAL_OWNER_APPROVED_MAIN") &&
@@ -113,11 +114,13 @@ function selfTest(){
  }
  if(/\*\*VERSION:\*\* `(?:1\.2\.0|2\.0\.0)`/.test(full)){
    assert(validate(full.replace("## II-B. Diễn giải áp dụng", "## II-B. [REMOVED]"),"","").failures.some(e=>e.startsWith("UX_PED_V1_2_MISSING_CONTROL")));
-   assert(validate(full.replace("OWNER_APPROVED_EFFECTIVE_UPON_GOVERNANCE_MERGE","NO_OWNER_APPROVAL"),"","").failures.some(e=>e.startsWith("UX_PED_V1_2_MISSING_CONTROL")));
+   if(/\*\*VERSION:\*\* `1\.2\.0`/.test(full))
+     assert(validate(full.replace("OWNER_APPROVED_EFFECTIVE_UPON_GOVERNANCE_MERGE","NO_OWNER_APPROVAL"),"","").failures.some(e=>e.startsWith("UX_PED_V1_2_MISSING_CONTROL")));
  }
  if(/\*\*VERSION:\*\* `2\.0\.0`/.test(full)){
    assert(validate(full.replace("SELF_QA_EVIDENCE_RECEIPT","EVIDENCE_OMITTED"),"","").failures.some(e=>e.startsWith("Q18_V2_DRAFT_CONTROL_MISSING")));
    assert(validate(full.replace("## X-C. Đề xuất tự kiểm chứng nội bộ","## X-C. [REMOVED]"),"","").failures.some(e=>e.startsWith("Q18_V2_DRAFT_CONTROL_MISSING")));
+   assert(validate(full.replace("GOVERNANCE_PROPOSAL_OWNER_REVIEW_PENDING","WRONGLY_CLAIMED_EFFECTIVE"),"","").failures.some(e=>e.startsWith("Q18_V2_DRAFT_CONTROL_MISSING")));
  }
  {
    assert(validate(full.replace(/\*\*VERSION:\*\* `\d+\.\d+\.\d+`/,"**VERSION:** `9.9.9`"),"","").failures.includes("VERSION_NOT_LOCKED"));
