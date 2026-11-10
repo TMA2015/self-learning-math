@@ -40,6 +40,18 @@ check(16,"S1 quadratic value table and symmetric point pairs",["Bảng giá tr�
  const ys=[0,1,2,3,4].map(f);
  return JSON.stringify(ys)===JSON.stringify([3,0,-1,0,3])&&f(0)===f(4)&&f(1)===f(3)&&f(2)===-1;
 });
+check(16,"recover downward parabola from vertex and off-axis point",[
+ "Khi biết đỉnh và một điểm, làm sao tìm lại công thức?",
+ "I(1;2)", "A(0;0)", "a=-2", "a=0",
+ "không có hàm bậc hai"
+],()=>{
+ const h=1,k=2,px=0,py=0;
+ const a=(py-k)/((px-h)**2);
+ const f=x=>a*(x-h)**2+k;
+ const unique=a===-2&&a!==0&&f(0)===0&&f(1)===2&&f(2)===0&&f(3)===-6;
+ const impossibleSameHeight=(k-k)/((0-h)**2)===0;
+ return unique&&impossibleSameHeight;
+});
 check(16,"projectile maximum within physical domain",["h(t)=19{,}6t-4{,}9t^2","0\\le t\\le4"],()=>{
  const h=t=>19.6*t-4.9*t*t;
  return eq(h(0),0)&&eq(h(4),0)&&eq(h(2),19.6)&&[0,1,2,3,4].every(t=>h(t)<=19.6);
