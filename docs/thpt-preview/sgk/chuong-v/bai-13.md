@@ -125,9 +125,7 @@
 
 
 
-    **SGK KNTT Toán 10 Tập Một trang in 84–88; SBT trang in 78–80.** Giữ nguyên hình D5 , phương sai chia n và hàng rào bất thường dùng dấu nghiêm ngặt. Nội dung  này phải đặt trước công thức/Core , giữ nguyên 9 ví dụ D2 và 27 câu public  đã PASS.
-
-    ### Kiến thức SGK
+        ### Kiến thức SGK
 
     ### Số trung bình, trung vị
     Mẫu \(x_1,\ldots,x_n\) có \(n>0\), số trung bình \(\bar x=(\sum_i x_i)/n\). Nếu \(x_i\) có tần số \(m_i\), \(\bar x=\sum_i m_ix_i/\sum_i m_i\). Phải sắp mẫu không giảm trước khi tìm trung vị \(Q_2\): với \(n\) lẻ lấy giá trị chính giữa; \(n\) chẵn lấy trung bình hai giá trị giữa.
@@ -147,13 +145,13 @@
 
     Trước khi xem lời giải, hãy xác định dữ kiện, điều phải tìm và lý do chọn cách giải. Sau đó kiểm tra lại điều kiện áp dụng và kết quả, thay vì chỉ nhìn phép tính cuối cùng.
 
-    ### Ví dụ 1. một mẫu n lẻ
+    ### Ví dụ 1. Mẫu có số quan sát lẻ
     Mẫu đã sắp \(2,3,3,7,10\): \(\bar x=25/5=5\), \(Q_2=3\), mốt 3; nửa trái \(2,3\) cho \(Q_1=2{,}5\), nửa phải \(7,10\) cho \(Q_3=8{,}5\). Số trung bình cao hơn trung vị vì số 10.
 
-    ### Ví dụ 2. mẫu n chẵn
+    ### Ví dụ 2. Mẫu có số quan sát chẵn
     Mẫu \(2,4,6,10,12,20\): \(Q_2=(6+10)/2=8\); \(Q_1=4\), \(Q_3=12\); \(\bar x=54/6=9\). Cần xếp số trước khi chia nửa.
 
-    ### Ví dụ 3. bảng tần số
+    ### Ví dụ 3. Bảng tần số
     Giá trị 5 có tần số 2, 7 có tần số 3, 9 có tần số 1. \(n=6\), \(\bar x=(10+21+9)/6=20/3\), \(Q_2=7\), mốt 7, \(Q_1=5\), \(Q_3=7\). Không dùng \((5+7+9)/3\).
 
 === "Lỗi thường gặp"
