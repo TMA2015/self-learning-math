@@ -210,7 +210,7 @@
 
     **Kiểm lại.** \(r<R\) trong tam giác này và cả hai cùng đơn vị **độ dài**, không phải diện tích.
 
-    ### Ví dụ 4 — Dùng côsin từ nguồn NotebookLM v1 (khác dữ kiện hình)
+    ### Ví dụ 4 — Dùng côsin với dữ kiện khác hình minh họa
 
     **Đề bài.** Cho \(b=8,c=5,A=60^\circ\). Tính \(a\) và \(S\).
 
@@ -246,5 +246,5 @@
 
     **Học tiếp:** [Core và Luyện tập Chương III](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md) · [Chương IV — Vectơ](../chuong-iv.md).
 
-    <p class="thpt-r4-footnote">Kiến thức đối chiếu theo SGK Toán 10 · Kết nối tri thức · tập 1 · Bài 6 và học liệu SLM hiện hành; chọn lọc lời dẫn từ Gemini, ví dụ SAS từ NotebookLM v1. Hình đo đạc là sơ đồ gốc do SLM dựng có ghi rõ điều kiện.</p>
+    <p class="thpt-r4-footnote">Kiến thức đối chiếu theo SGK Toán 10 · Kết nối tri thức · tập 1 · Bài 6 và học liệu SLM hiện hành; lời giải được đối chiếu theo định lí côsin và điều kiện tam giác. Hình đo đạc là sơ đồ gốc do SLM dựng có ghi rõ điều kiện.</p>
 
