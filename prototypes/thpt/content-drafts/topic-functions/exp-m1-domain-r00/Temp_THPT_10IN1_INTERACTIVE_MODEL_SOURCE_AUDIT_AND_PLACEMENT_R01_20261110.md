@@ -51,8 +51,8 @@
 ## V. Bằng chứng đã triển khai tiếp sau kiểm toán (không phải chỉ kế hoạch)
 
 **Mô hình #4 đã dựng lại thực tế cho Chuyên đề 1 M6:**
-- \`Temp_TOPIC1_M6_TANGENT_DERIVATIVE_TWO_GRAPHS_D5_R00_20261110.html\` — source blob \`65af7b8f8d9d51e1dbce0e3266f71f7b6b3a6b22\` trên AUTHORING PR #801. Hai Canvas f(x), f′(x), cát tuyến/tangent, slider x₀ và |h|, chọn h>0/h<0, hai hàm x³/3−x và x³. **Sửa kết luận f′=0 không đủ cực trị** bằng phản ví dụ.
-- \`Temp_TOPIC1_M6_TANGENT_D5_AUTHORING_QA_R01_20261110.md\` — QA **24/24 mock JS** trên ba viewport, lời dẫn và Vận dụng đã có; \`DELTA_C\` scoped review pending, không sửa R18.
+- \`Temp_TOPIC1_M6_TANGENT_DERIVATIVE_TWO_GRAPHS_D5_R00_20261110.html\` — source blob \`ceaae390bb21fafb99cd5cdcbf7e8dbf497a6123\` trên AUTHORING PR #801. Hai Canvas f(x), f′(x), cát tuyến/tangent, slider x₀ và |h|, chọn h>0/h<0, hai hàm x³/3−x và x³. **Sửa kết luận f′=0 không đủ cực trị** bằng phản ví dụ.
+- \`Temp_TOPIC1_M6_TANGENT_D5_AUTHORING_QA_R01_20261110.md\` — QA **36/36 mock JS** trên ba viewport, lời dẫn và Vận dụng đã có; \`DELTA_C\` scoped review pending, không sửa R18.
 
 **Mô hình #6 đã dựng lại thực tế cho Chuyên đề 2 P03:**
 - \`prototypes/thpt/content-drafts/topic-vector-coordinate/exp-notebook-d5-equivalent/Temp_TOPIC2_VECTOR_DOT_PRODUCT_PROJECTION_LAB_D5_R00_20261110.html\` — source blob \`06ee0ce3e13cbfa92e0201dd2ee634bf1775b18e\` trên AUTHORING PR #793. Có hai vectơ u/v, hình chiếu H mang dấu, hình bình hành/tổng nét mảnh, preset góc 0°/90°/180°, slider độ dài/góc và **kéo điểm bằng pointer**. QA **30/30 mock JS**, xem \`Temp_TOPIC2_P03_DOT_PRODUCT_D5_AUTHORING_QA_R01_20261110.md\`.
