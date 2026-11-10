@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 "use strict";
+const {expectedG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 /* UX795 Model B G10 vector AP source lock: preserve legacy display/dollar
  * mathematical expression sequence exactly while allowing owner-approved
  * narrative Delta C in four independent Level-1 tabs. Not academic PASS.
@@ -16,7 +17,7 @@ const math=s=>[...s.matchAll(/\\\[([\s\S]*?)\\\]|\$([^$]+)\$/g)].map(m=>(m[1]??m
 const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
 for(const c of cases){
  const src=fs.readFileSync(path.join(__dirname,"../docs/thpt-preview/sgk/chuong-iv/bai-"+c.n+".md"),"utf8");
- assert.equal(blob(src),c.sha,"B"+c.n+": pinned Delta C source snapshot changed");
+ assert.equal(blob(src),expectedG10KnowledgeBlob(c.n,c.sha),"B"+c.n+": pinned Delta C source snapshot changed");
  assert.deepEqual([...src.matchAll(/^=== "([^"]+)"$/gm)].map(x=>x[1]),labels,
   "B"+c.n+": exactly four Level-1 tabs required");
  const start=src.indexOf('=== "Kiến thức SGK"'),end=src.indexOf('=== "Ví dụ"',start);
