@@ -22,7 +22,7 @@
 - Chọn \(\displaystyle h(x)=\frac{\sqrt{4-x^2}}{x-1}\): \(D=[-2,1)\cup(1,2]\), \(h(-2)=h(2)=0,\ h(0)=-2\), x=1 và x=3 không hợp lệ.
 - Chọn \(\displaystyle k(x)=1/\sqrt{5-x}\): \(D=(-\infty,5)\); khác căn đứng riêng vốn nhận x=5.
 - Chọn \(\displaystyle p(x)=(x-1)^2+2\): trên \(\mathbb R\) có tập giá trị \([2,+\infty)\), trên \([0,2]\) có tập giá trị \([2,3]\), kiểm đủ giá trị bằng cách chọn \(x=1+\sqrt{y-2}\) cho mọi \(y\in[2,3]\).
-- Kiểm tra 9 mã DRAFT không trùng nhau **trong chính file**, chưa cross-bank canonical Q15.
+- Kiểm tra 8 mã DRAFT không trùng nhau **trong chính file**, chưa cross-bank canonical Q15.
 - HTML không gọi CDN/fetch/external script; SVG có title/desc, không chứa script/foreignObject; các mốc x=−3,−2,0,1,2,3 được đối chiếu bằng hàm số học độc lập.
 - Soát sự trùng họ dạng với R18: câu nhận dạng bảng và bài căn/mẫu có nội dung tương tự \`EX-M1-01/02\` R18; **không được tự đăng ký ID mới** nếu đối soát cho thấy cùng item theo Q15. Ví dụ APP02 đã đổi sang chủ đề rút gọn phân thức và miền gốc để tăng chiều sâu.
 - Chưa có browser/device QA thực của chính file HTML mới, chưa có accessibility audit đầy đủ, chưa có NotebookLM Academic/PED verdict. **Không** được tuyên bố PASS học thuật hay READY.
