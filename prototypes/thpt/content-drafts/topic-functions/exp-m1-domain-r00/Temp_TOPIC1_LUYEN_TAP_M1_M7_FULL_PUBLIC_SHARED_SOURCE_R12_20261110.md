@@ -20,13 +20,13 @@ Mỗi công thức phải đi cùng miền. Em luyện nhận dạng trước, r
 | Outcome | Năng lực cần luyện | Một nguồn bài gốc, nhiều vị trí dùng | Lưu ý để luyện đúng |
 |---|---|---|---|
 | TOP-G10-FUNC-O01 | M1 đơn trị, bảng x lặp, tập giá trị | THPT-G10-B15-C01 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
-| TOP-G10-FUNC-O02 | M1 tập xác định/tập giá trị, giao điều kiện căn+mẫu | THPT-G10-B15-C02 → THPT-G10-B15-P01 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
+| TOP-G10-FUNC-O02 | M1 tập xác định/tập giá trị, giao điều kiện căn+mẫu | THPT-G10-B15-C02 → THPT-G10-B15-P01 → THPT-G10-CHVI-APP-A1 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
 
 **Tự luận liên quan trong thư viện chung:** HPT-G10-CHVI-WRI-15-01 · HPT-G10-CHVI-WRI-15-02
 
 **Bài công khai tự luyện thêm:** DRAFT-T1-M1-APP02 · DRAFT-T1-M1-APP05 · DRAFT-T1-M1-APP06 · DRAFT-T1-M1-WR01 · DRAFT-T1-M1-WR02. Đây là câu trong mục bổ sung phía dưới, không phải bài đánh giá kín.
 
-**Nếu chưa hiểu:** Nếu sai điều kiện căn/mẫu, quay lại Kiến thức M1 và tự thử các đầu mút trước khi xem đáp án.
+**Nếu chưa hiểu:** Nếu sai điều kiện căn/mẫu, quay lại Kiến thức M1 và tự thử các đầu mút trước khi xem đáp án. Bài A1 từ cuối Chương VI giúp em kiểm tra tập xác định cùng ý nghĩa không âm của căn, không phải chỉ thêm câu thay số.
 
 
 ## M2 · Điểm được biết, nhánh và điều kiện
@@ -37,13 +37,13 @@ Một điểm đọc từ bảng không giống giá trị của mô hình đã 
 |---|---|---|---|
 | TOP-G10-FUNC-O03 | M2 giá trị/điểm thuộc đồ thị, giới hạn nội suy | THPT-G10-TOP-FUNC-P01 | Đọc thêm hoạt động ba điểm–hai quy tắc ở M2; chọn bài chuyển giao bên dưới. |
 | TOP-G10-FUNC-O04 | M2 tăng/giảm trên một khoảng, kiểm mọi cặp x | THPT-G10-B15-P03 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
-| TOP-G10-FUNC-O05 | M2 hàm từng đoạn, điều kiện tại điểm nối, miền mô hình | THPT-G10-B15-P02 | *Đã có lời giải ở Kiến thức; dùng ôn lại, không xem như câu mới.* |
+| TOP-G10-FUNC-O05 | M2 hàm từng đoạn, điều kiện tại điểm nối, miền mô hình | THPT-G10-B15-P02 → THPT-G10-B15-P04 | *Đã có lời giải ở Kiến thức; dùng ôn lại, không xem như câu mới.* |
 
 **Tự luận liên quan trong thư viện chung:** HPT-G10-CHVI-WRI-15-01 · HPT-G10-CHVI-WRI-15-02
 
 **Bài công khai tự luyện thêm:** DRAFT-T1-M2-APP05 · DRAFT-T1-M2-APP06 · DRAFT-T1-M2-APP07 · DRAFT-T1-M2-WR01. Đây là câu trong mục bổ sung phía dưới, không phải bài đánh giá kín.
 
-**Nếu chưa hiểu:** Nếu kết luận từ 1–2 điểm hoặc vẽ nối chấm rỗng, quay lại Kiến thức M2: bảng mốc, hai đồ thị cùng điểm, điều kiện tại chỗ đổi nhánh.
+**Nếu chưa hiểu:** Nếu kết luận từ 1–2 điểm hoặc vẽ nối chấm rỗng, quay lại Kiến thức M2: bảng mốc, hai đồ thị cùng điểm, điều kiện tại chỗ đổi nhánh. B15-P02 đã có giải thích ở phần Kiến thức SGK nên dùng **ôn luyện**; B15-P04 thêm vận dụng điều kiện ngưỡng ngân sách.
 
 
 ## M3 · Parabol, biến đổi, tối ưu trên đúng miền
@@ -53,16 +53,16 @@ Hãy xác định đúng a≠0, dạng đỉnh, trục, miền xét rồi mới 
 | Outcome | Năng lực cần luyện | Một nguồn bài gốc, nhiều vị trí dùng | Lưu ý để luyện đúng |
 |---|---|---|---|
 | TOP-G10-FUNC-O06 | M3 nhận biết hàm bậc hai và điều kiện a≠0 | THPT-G10-TOP-FUNC-P02 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
-| TOP-G10-FUNC-O07 | M3 dạng đỉnh, trục đối xứng, hoàn phương | THPT-G10-TOP-FUNC-P03 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
-| TOP-G10-FUNC-O08 | M3 hình dạng, giao trục, delta/đối xứng | THPT-G10-TOP-FUNC-P04 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
+| TOP-G10-FUNC-O07 | M3 dạng đỉnh, trục đối xứng, hoàn phương | THPT-G10-TOP-FUNC-P03 → THPT-G10-CHVI-APP-A2 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
+| TOP-G10-FUNC-O08 | M3 hình dạng, giao trục, delta/đối xứng | THPT-G10-TOP-FUNC-P04 → THPT-G10-CHVI-APP-A2 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
 | TOP-G10-FUNC-O09 | M3 đơn điệu và cực trị trên miền hạn chế | THPT-G10-TOP-FUNC-P05 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
-| TOP-G10-FUNC-O10 | M3 lập mô hình, miền phù hợp, đơn vị/giá trị tối ưu | THPT-G10-TOP-FUNC-P06 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
+| TOP-G10-FUNC-O10 | M3 lập mô hình, miền phù hợp, đơn vị/giá trị tối ưu | THPT-G10-TOP-FUNC-P06 → THPT-G10-CHVI-APP-B3 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
 
 **Tự luận liên quan trong thư viện chung:** HPT-G10-CHVI-WRI-15-01 · HPT-G10-CHVI-WRI-15-02
 
 **Bài công khai tự luyện thêm:** DRAFT-T1-M3-APP07 · DRAFT-T1-M3-APP09 · DRAFT-T1-M3-WR02. Đây là câu trong mục bổ sung phía dưới, không phải bài đánh giá kín.
 
-**Nếu chưa hiểu:** Nếu chọn đỉnh ngoài miền hoặc đổi nhầm |f(x)| với f(|x|), quay lại Kiến thức M3: dạng bình phương, miền và hai máy đầu vào/đầu ra.
+**Nếu chưa hiểu:** Nếu chọn đỉnh ngoài miền hoặc đổi nhầm |f(x)| với f(|x|), quay lại Kiến thức M3: dạng bình phương, miền và hai máy đầu vào/đầu ra. A2 dùng cùng biểu thức với ví dụ đã được giải ở Kiến thức, nên dùng **ôn luyện**; phần giao Ox của A2 là một yêu cầu bổ sung. B3 mới là bài tổng hợp ứng dụng miền, diện tích, cực trị và điều kiện ngưỡng.
 
 
 ## M4 · Lượng giác, mũ và lôgarit
@@ -150,6 +150,12 @@ Gắn bảng dấu, tiệm cận, cực trị với đúng miền được hỏi
 
 **Nếu chưa hiểu:** Nếu ghi vô cực là GTNN/GTLN, nối đồ thị qua điểm loại hoặc tối ưu ngoài miền, quay lại M7.1–M7.5 và M1 về miền khả thi.
 
+
+### Sử dụng bài vận dụng cuối Chương VI ngay trong Chuyên đề
+
+Những bài A1, A2 và B3 nêu trên thuộc **nguồn bài SGK cuối Chương VI** đã có lời giải công khai, không phải bài mới do Chuyên đề viết lại. Khi trang luyện tập được tích hợp, trình hiển thị lấy nguyên câu hỏi từ nguồn SGK cuối chương theo mã gốc, **không tạo một bản đề và một bộ đáp án thứ hai**. Đọc nguồn bài: [Bài tập cuối Chương VI – SGK](../../../../../docs/thpt-preview/sgk/chuong-vi/bai-tap-cuoi-chuong.md).
+
+Với **B3**, em đặt cạnh vuông góc tường là \(x>0\), cạnh còn lại \(40-2x>0\) nên \(0<x<20\); từ đó diện tích \(S(x)=x(40-2x)\). Lúc cần \(S(x)\ge192\), hãy quay lại *Kiến thức M3 – Từ đỉnh parabol đến câu hỏi “đạt ít nhất một mức”*, rồi tự giải trọn bài B3. **Đừng mở ngay lời giải B3 trên trang SGK**: điều cần luyện là tự nối miền, cực trị và ngưỡng đạt được.
 
 ## Tự luận dùng chung · Không tạo một thư viện thứ hai
 
