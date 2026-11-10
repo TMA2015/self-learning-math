@@ -49,7 +49,7 @@
 
         **Lý do:** Hai pháp tuyến (2,-1) và (4,-2) tỉ lệ 2 lần, nhưng nhân toàn phương trình d1 với 2 cho hằng số 2, không phải 3 của d2.
 
-        **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY08` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
     <span id="help-g10-chvii-try08" data-thpt-help-id="HELP-G10-CHVII-TRY08"></span>
@@ -64,7 +64,7 @@
 
         4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-        5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B20-C01` trong phần Core/Luyện tập; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
 
     <a href="../luyen-tap/?item=THPT-G10-B20-C01">Mở câu luyện tập tương ứng để tự luyện</a>
@@ -92,7 +92,7 @@
 
         **Lý do:** n=(1,2) của d, chọn n'=(2,-1) có tích vô hướng 0. Qua P: 2(x-1)-(y+2)=0 ⇒ 2x-y-4=0.
 
-        **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY09` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
     <span id="help-g10-chvii-try09" data-thpt-help-id="HELP-G10-CHVII-TRY09"></span>
@@ -107,7 +107,7 @@
 
         4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-        5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B20-C02` trong phần Core/Luyện tập; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
 
     <a href="../luyen-tap/?item=THPT-G10-B20-C02">Mở câu luyện tập tương ứng để tự luyện</a>
@@ -135,7 +135,7 @@
 
         **Lý do:** Từ 2x-y=1 ⇒ y=2x-1. Thế vào x+2(2x-1)=8 ⇒ x=2, y=3; kiểm 2+6=8, 4-3=1.
 
-        **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY10` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
     <span id="help-g10-chvii-try10" data-thpt-help-id="HELP-G10-CHVII-TRY10"></span>
@@ -150,7 +150,7 @@
 
         4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-        5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B20-P01` trong phần Core/Luyện tập; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
 
     <a href="../luyen-tap/?item=THPT-G10-B20-P01">Mở câu luyện tập tương ứng để tự luyện</a>
@@ -178,7 +178,7 @@
 
         **Lý do:** Tử |3·1+4·2−1|=10, mẫu √(3²+4²)=5, nên khoảng cách bằng 10/5=2.
 
-        **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY11` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
     <span id="help-g10-chvii-try11" data-thpt-help-id="HELP-G10-CHVII-TRY11"></span>
@@ -193,7 +193,7 @@
 
         4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-        5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B20-P02` trong phần Core/Luyện tập; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
 
     <a href="../luyen-tap/?item=THPT-G10-B20-P02">Mở câu luyện tập tương ứng để tự luyện</a>
@@ -221,7 +221,7 @@
 
         **Lý do:** Pháp tuyến n1=(1,0), n2=(1,-1). cosφ=|1|/(1·√2)=1/√2 nên φ=45°.
 
-        **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY12` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
     <span id="help-g10-chvii-try12" data-thpt-help-id="HELP-G10-CHVII-TRY12"></span>
@@ -236,7 +236,7 @@
 
         4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-        5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B20-P03` trong phần Core/Luyện tập; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
 
     <a href="../luyen-tap/?item=THPT-G10-B20-P03">Mở câu luyện tập tương ứng để tự luyện</a>
