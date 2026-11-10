@@ -1,114 +1,14 @@
-# Chuyên đề 1 · Luyện tập bổ sung cho M2–M3
+# AUTHORING · TÀI LIỆU LỊCH SỬ R00/R09 — NỘI DUNG ĐÃ HỢP NHẤT
 
-**AUTHORING R09 UPDATE — CÁC CÂU CHƯA CANONICAL.** Bản này hiện chứa **5 câu áp dụng và 2 bài tự luận Written candidate**; APP07 M2 là ứng viên bổ sung có lý do từ QA khoảng trống bài tương tác. Tất cả thuộc Luyện tập hoặc Vận dụng công khai; không đưa vào Tự kiểm tra RD1, không sinh Mastery. DRAFT ID chỉ là vị trí theo dõi; đối chiếu Q15 với ngân hàng R18/SGK/Topic trước khi tạo item canonical. Có thể tái sử dụng một item đã duyệt bằng nhiều placement/role, không nhân bản một câu chỉ vì chuyển sang Topic.
+**Current content status: SUPERSEDED_BY_R12 / NO SECOND SOURCE.**
 
-## A. Đọc bảng và đồ thị — M2
+Phần bài tập (M2 APP05, APP06, APP07, WR01; M3 APP07, APP09, WR02) đã được hợp nhất (đề, gợi ý, đáp án, giải thích/rubric) vào **một nguồn AUTHORING Luyện tập toàn Chuyên đề 1**:
 
-### DRAFT-T1-M2-APP05 — Nhánh nào nhận đúng tại mốc?
+[Temp_TOPIC1_LUYEN_TAP_M1_M7_FULL_PUBLIC_SHARED_SOURCE_R12_20261110.md](Temp_TOPIC1_LUYEN_TAP_M1_M7_FULL_PUBLIC_SHARED_SOURCE_R12_20261110.md)
 
-Xét \(p(x)=2-x\) khi \(x\le1\) và \(p(x)=x+1\) khi \(x>1\). Hãy tính \(p(0),p(1),p(2)\) rồi cho biết ở \(x=1\), điểm \((1;1)\) hay \((1;2)\) phải được tô đặc.
+- **Current authoring content Git blob:** `20c97d7bd7e1d5699ed186f7d7fbfd15c9d74c92` tại thời điểm khóa R12.
+- **Original R00/R09 Git blob preserved in Git history:** `397f75cba490e47270bc2dd07eabe80efc08aa68`, không xóa dữ liệu lịch sử.
+- Nội dung trùng ví dụ đã được phân loại làm **khắc phục**; các bài khác là **DRAFT candidate**; chưa cấp canonical `item_id` mới, không sử dụng RD1 hoặc ghi Mastery.
+- **DO NOT RENDER THIS REDIRECT AS AN EXERCISE / DO NOT REIMPORT OLD STEM.** Source hiện hành duy nhất là R12 ở đường dẫn trên.
 
-<details><summary>Đối chiếu</summary>
-
-\(p(0)=2\), \(p(1)=2-1=1\) do nhánh thứ nhất **nhận dấu bằng**, \(p(2)=3\) do nhánh thứ hai. Điểm \((1;1)\) tô đặc; \((1;2)\) chỉ là vị trí nhánh bên phải tiến gần khi \(x\) về 1, nên phải là vòng rỗng. Hai nhánh không được tự nối liền.
-
-</details>
-
-### DRAFT-T1-M2-APP06 — Hai nhánh đều tăng, cả hàm có tăng?
-
-Xét \(r(x)=x+1\) khi \(x<0\), và \(r(x)=x-2\) khi \(x\ge0\). Cả hai nhánh đều là đường thẳng có hệ số góc dương. Có được kết luận \(r\) đồng biến nghiêm ngặt trên toàn \(\mathbb R\) không? Hãy kiểm riêng hai đầu vào ở hai phía mốc 0.
-
-<details><summary>Đối chiếu</summary>
-
-**Không.** Chẳng hạn, \(x_1=-0{,}5<x_2=0\) nhưng \(r(-0{,}5)=0{,}5\) trong khi \(r(0)=-2\), tức \(r(x_1)>r(x_2)\). Mỗi nhánh tăng trên khoảng riêng của mình, nhưng có **bước nhảy xuống** tại mốc 0, khiến hàm không tăng trên toàn miền. Cần kiểm cả chỗ chuyển nhánh, không chỉ dấu hệ số góc.
-
-</details>
-
-### DRAFT-T1-M2-APP07 — Ba điểm quan sát có xác định một đồ thị? (ứng viên **tương tác chọn một đáp án**)
-
-**Outcome dự kiến:** \`TOP-G10-FUNC-O03\` · **Dạng:** \`MCQ_SINGLE_CHOICE\` · **Dự kiến role:** \`SHARED_PUBLIC_FORMATIVE\`, placement \`TOPIC_PRACTICE_M2\` (có thể thêm SGK Practice sau đối chiếu; **chưa cấp item_id canonical**).
-
-Một bảng quan sát chỉ ghi các điểm \((-2;4),(0;0),(2;4)\). Hai nhóm đề xuất **hai quy tắc mô hình** trên cùng miền \(D=[-2,2]\):
-\[
-p(x)=x^2,\qquad q(x)=2|x|.
-\]
-**Nhận xét nào chính xác?** Hãy chọn một đáp án và tự giải thích trước khi xem lời giải.
-
-- **A.** Hai mô hình cùng qua ba điểm đã biết, nhưng \(p(1)=1\) và \(q(1)=2\), nên bảng ba điểm không đủ chọn duy nhất một mô hình.
-- **B.** Vì cả hai cùng qua ba điểm nên \(p(x)=q(x)\) với mọi \(x\in[-2,2]\).
-- **C.** Chỉ \(p\) phù hợp, vì một biểu thức có trị tuyệt đối không thể biểu diễn dữ liệu quan sát.
-- **D.** \(x=1\) không thuộc miền mô hình vì không có số liệu quan sát tại \(x=1\).
-
-<details><summary>Gợi ý (chỉ mở khi cần)</summary>
-
-Kiểm lần lượt \(x=-2,0,2\) với cả hai quy tắc. Sau đó thử một \(x\) **không nằm trong ba mốc quan sát** nhưng **thuộc miền mô hình** \(D\), chẳng hạn \(x=1\). Phân biệt: *tập mốc đã quan sát* không đồng nghĩa với *miền của quy tắc đang đề xuất*.
-
-</details>
-
-<details><summary>Đối chiếu sau khi tự làm</summary>
-
-**Chọn A.** Tại \(-2,0,2\) cả \(p,q\) đều nhận đúng \(4,0,4\). Nhưng \(p(1)=1\), còn \(q(1)=2\); chỉ từ ba mốc không thể suy ra chắc chắn kết quả tại \(x=1\). B sai vì hai quy tắc không trùng trên cả \(D\); C sai vì trị tuyệt đối hoàn toàn có thể xác định một hàm số; D nhầm đầu vào chưa đo với đầu vào không hợp lệ của **mô hình**.
-
-**Khắc phục:** Nếu chọn B/C, xem lại M2 “Ba dấu chấm có quyết định được cả nét cong?”; nếu chọn D, quay lại M1 phân biệt miền mô hình và dữ liệu đã quan sát. Không dùng câu đã xem lời giải làm chứng cứ Tự kiểm tra độc lập.
-
-</details>
-
-**Kiểm soát nguồn:** Đây là **ứng viên bài luyện tương tác mới** nhằm chuyển kiến thức R08 về tính không duy nhất của mô hình thành câu *chọn phát biểu đúng*; nó **không thay** M2-WR01 (tự luận về nội suy vận tốc có giả thiết) hay item SGK B15-P01/P02/P03/P04. Cần xét trùng ngữ nghĩa với mọi bank và Q15 trước khi ghi canonical chung; không copy stem/key vào bank khác.
-
-### DRAFT-T1-M2-WR01 — Tách dữ kiện khỏi suy luận
-
-Một bảng chỉ ghi vận tốc của xe tại \(t=0\) là 10 km/h và tại \(t=10\) phút là 20 km/h. Hãy trình bày (a) điều gì biết chắc từ bảng; (b) điều gì chưa thể khẳng định về vận tốc lúc \(t=5\) phút; (c) nếu giả định vận tốc tăng đều theo thời gian, hãy tính vận tốc dự kiến ở phút thứ 5 và nêu giới hạn của kết quả.
-
-<details><summary>Đối chiếu và rubric dự kiến</summary>
-
-(a) Ta biết chính xác **hai giá trị được cho trong bảng** tại hai mốc. (b) Không xác định được vận tốc đúng lúc phút 5 nếu không có dữ liệu hoặc giả định thêm. (c) Dưới giả định vận tốc tăng tuyến tính theo thời gian, \(v(5)=10+(20-10)\cdot5/10=15\) km/h. Đó là kết quả **dự kiến theo mô hình**, không tự trở thành một quan sát có thật.
-
-**Rubric tạm (4 điểm):** 1 điểm nêu đúng hai mốc; 1 điểm giải thích chưa đủ dữ kiện; 1 điểm tính đúng 15 km/h dưới giả định; 1 điểm phân biệt kết quả mô hình với dữ liệu đo.
-
-</details>
-
-## B. Parabol và hai phép biến đổi — M3
-
-### DRAFT-T1-M3-APP07 — Nghiệm âm có được đưa vào |x|?
-
-Cho \(f(x)=x^2+2x-3\). Hãy giải \(|f(x)|=0\) và \(f(|x|)=0\). Khi đặt \(u=|x|\), vì sao phải kiểm tra \(u\ge0\) trước khi suy ra \(x\)?
-
-<details><summary>Đối chiếu</summary>
-
-\(|f(x)|=0\iff f(x)=0\iff (x-1)(x+3)=0\), nên \(x=1\) hoặc \(x=-3\). Với \(f(|x|)=0\), đặt \(u=|x|\ge0\); ta có \(u^2+2u-3=(u-1)(u+3)=0\). Nghiệm \(u=-3\) **không thể** bằng \(|x|\), nên chỉ còn \(u=1\), tức \(x=\pm1\). Không phản chiếu nghiệm âm \(x=-3\) của hàm gốc rồi kết luận sai \(x=\pm3\).
-
-</details>
-
-### DRAFT-T1-M3-APP09 — Miền không liền nhau
-
-Cho \(m(x)=5-(x-2)^2\) nhưng chỉ xét \(D=[0,1]\cup[3,4]\). Tìm GTNN và GTLN trên \(D\). Vì sao không được lấy giá trị 5 tại đỉnh của parabol làm GTLN trong bài?
-
-<details><summary>Đối chiếu</summary>
-
-Đỉnh của parabol là \((2;5)\), nhưng \(x=2\notin D\). Trên \([0,1]\), khi x tăng thì \(m(x)\) tăng từ \(m(0)=1\) tới \(m(1)=4\). Trên \([3,4]\), khi x tăng thì \(m(x)\) giảm từ \(m(3)=4\) xuống \(m(4)=1\). Vậy **GTLN trên D bằng 4** (đạt tại x=1 hoặc x=3) và **GTNN trên D bằng 1** (đạt tại x=0 hoặc x=4). Một miền có hai đoạn rời nhau không cho phép tự nối qua điểm x=2 đã bị loại.
-
-</details>
-
-### DRAFT-T1-M3-WR02 — Hai cách đặt dấu | |, hai đồ thị
-
-Cho \(f(x)=x^2-4x+3\). Xét \(g(x)=|f(x)|\) và \(h(x)=f(|x|)\). (a) Hãy mô tả phần đồ thị thay đổi trong mỗi trường hợp. (b) Tính \(g(2),h(2),g(-2),h(-2)\). (c) Tìm các nghiệm của \(g(x)=0\) và \(h(x)=0\). Kết luận hai đồ thị có giống nhau không và giải thích.
-
-<details><summary>Đối chiếu và rubric dự kiến</summary>
-
-(a) \(g\) phản chiếu phần \(f<0\), tức giữa các nghiệm 1 và 3, lên trên \(Ox\). \(h\) lấy nửa \(x\ge0\) của \(f\) rồi phản chiếu sang trái \(Oy\). (b) \(g(2)=1\), \(h(2)=-1\); \(f(-2)=15\), nên \(g(-2)=15\) nhưng \(h(-2)=f(2)=-1\). (c) \(g(x)=0\) tại \(x=1,3\); \(h(x)=0\) tại \(x=\pm1,\pm3\). Hai đồ thị không trùng nhau.
-
-**Rubric tạm (6 điểm):** 2 điểm mô tả đúng mỗi phép biến đổi và trục phản chiếu; 2 điểm tính đúng bốn giá trị; 1 điểm giải đúng hai tập nghiệm; 1 điểm kết luận khác nhau có căn cứ. Các lời giải này là đối chiếu của bài công khai, **không** dùng làm ngân hàng Tự kiểm tra kín.
-
-</details>
-
----
-
-## Kiểm soát trùng câu, vai trò, và review
-
-| Nhóm | Số bài ứng viên | Mục tiêu năng lực | Trạng thái |
-|---|---:|---|---|
-| M2 · APP05–07 + WR01 | 4 | đọc dữ liệu, điều kiện biên, lập luận đồng biến | DRAFT, cần cross-bank Q15 |
-| M3 · APP07, APP09 + WR02 | 3 | hai phép biến đổi trị tuyệt đối, kiểm điều kiện nghiệm trị tuyệt đối, cực trị có miền | DRAFT, cần cross-bank Q15 |
-| **Tổng** | **7** | PUBLIC PRACTICE / WRITTEN CANDIDATE | **NOT CANONICAL** |
-
-**Không trùng ID nội bộ**, nhưng một số bài cùng họ dạng với ví dụ R18 M2/M3 và gói R00 cũ; phải so sánh **stem, phương án, lời giải, rubric** trên nguồn canonical trước khi đưa vào thư viện chung. Nếu trùng chính câu, thêm placement/role vào một item duy nhất, không phát hành item khác ID. Các câu mới phải được NotebookLM phản biện về Academic/PED và Q01–Q18 đúng phần DELTA_C. Không sử dụng bất kỳ câu này làm chứng cứ RD1 độc lập sau khi đã lộ đáp án trong Practice.
+Không sửa các bài SGK dùng chung và không thay đổi nguồn R18 đã PASS.
