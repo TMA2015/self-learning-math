@@ -5,6 +5,8 @@ on:
     paths:
       - 'mkdocs.thpt-preview.yml'
       - 'mkdocs.yml'
+      - 'hooks/topic_markdown_fixes.py'
+      - 'scripts/test_thpt_knowledge_short_labels.py'
       - 'scripts/test-thpt-static-release.cjs'
       - 'scripts/test-root-program-selector-v1.cjs'
       - 'scripts/test-site-navigation-v1.js'
@@ -200,7 +202,7 @@ jobs:
     runs-on: ubuntu-latest
     # Full THPT+THCS cross-grade browser regression now exceeds 10 minutes;
     # retain ALL mandatory QA steps and allow source-locked preview completion.
-    timeout-minutes: 40 # >25m observed 122-step browser QA; preserve every R4 gate
+    timeout-minutes: 40 # full R4 multi-device QA is ~25 min; no test omitted
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -208,6 +210,8 @@ jobs:
           python-version: '3.12'
       - name: Install MkDocs Material
         run: python -m pip install 'mkdocs-material>=9,<10'
+      - name: Check concise THPT Knowledge titles and protected route scope
+        run: python scripts/test_thpt_knowledge_short_labels.py
       - name: Validate scoped THPT JavaScript syntax
         run: |
           node --check docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js
