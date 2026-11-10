@@ -49,7 +49,7 @@
 
         **Lý do:** IM²=(x+2)²+(y-1)², và R²=3²=9. Cần R=3>0.
 
-        **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY13` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
     <span id="help-g10-chvii-try13" data-thpt-help-id="HELP-G10-CHVII-TRY13"></span>
@@ -64,7 +64,7 @@
 
         4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-        5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B21-C01` trong phần Core/Luyện tập; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
 
     <a href="../luyen-tap/?item=THPT-G10-B21-C01">Mở câu luyện tập tương ứng để tự luyện</a>
@@ -92,7 +92,7 @@
 
         **Lý do:** x²−6x=(x−3)²−9, y²+4y=(y+2)²−4. Suy ra tổng hai bình phương bằng −8+9+4=5>0.
 
-        **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY14` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
     <span id="help-g10-chvii-try14" data-thpt-help-id="HELP-G10-CHVII-TRY14"></span>
@@ -107,7 +107,7 @@
 
         4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-        5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B21-C02` trong phần Core/Luyện tập; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
 
     <a href="../luyen-tap/?item=THPT-G10-B21-C02">Mở câu luyện tập tương ứng để tự luyện</a>
@@ -135,7 +135,7 @@
 
         **Lý do:** IM=(3,4), IM²=9+16=25=R² nên M thuộc đường. Tiếp tuyến: 3(x−4)+4(y−3)=0 ⇒ 3x+4y−24=0.
 
-        **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY15` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
     <span id="help-g10-chvii-try15" data-thpt-help-id="HELP-G10-CHVII-TRY15"></span>
@@ -150,7 +150,7 @@
 
         4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-        5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B21-P02` trong phần Core/Luyện tập; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
 
     <a href="../luyen-tap/?item=THPT-G10-B21-P02">Mở câu luyện tập tương ứng để tự luyện</a>
@@ -178,7 +178,7 @@
 
         **Lý do:** Trung trực AB là x=1; trung trực AC là y=1. IA²=1²+1²=2; thử B và C đều cho tổng bình phương bằng 2.
 
-        **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY16` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
     <span id="help-g10-chvii-try16" data-thpt-help-id="HELP-G10-CHVII-TRY16"></span>
@@ -193,7 +193,7 @@
 
         4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-        5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B21-P04` trong phần Core/Luyện tập; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
 
     <a href="../luyen-tap/?item=THPT-G10-B21-P04">Mở câu luyện tập tương ứng để tự luyện</a>
@@ -221,7 +221,7 @@
 
         **Lý do:** Khoảng cách từ I(1,2) đến y=−1 là |2−(−1)|=3=R. Chân đường vuông góc từ I xuống d là T(1,−1).
 
-        **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY17` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
     <span id="help-g10-chvii-try17" data-thpt-help-id="HELP-G10-CHVII-TRY17"></span>
@@ -236,7 +236,7 @@
 
         4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-        5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B21-P03` trong phần Core/Luyện tập; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
 
     <a href="../luyen-tap/?item=THPT-G10-B21-P03">Mở câu luyện tập tương ứng để tự luyện</a>
