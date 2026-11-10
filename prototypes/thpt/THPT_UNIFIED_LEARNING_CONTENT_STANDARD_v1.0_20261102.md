@@ -1,8 +1,8 @@
-# SELF-LEARNING MATH — TIÊU CHUẨN CHẤT LƯỢNG HỌC LIỆU THPT THỐNG NHẤT v1.2
+# SELF-LEARNING MATH — TIÊU CHUẨN CHẤT LƯỢNG HỌC LIỆU THPT THỐNG NHẤT v2.0 (DỰ THẢO CHỈNH Q18)
 
 **STANDARD_ID:** `SLM-THPT-QUALITY-ONE`  
-**VERSION:** `1.2.0` · **OWNER:** Chủ dự án Self-Learning Math / G Learning  
-**STATUS:** `OWNER_APPROVED_EFFECTIVE_UPON_GOVERNANCE_MERGE` — chủ dự án xác nhận ngày 04/11/2026 việc hợp nhất cách diễn giải và trình bày dưới **cùng Q01–Q18**, đồng ý tiến hành ban hành sau exact-head Governance/Roadmap QA. **v1.2.0 chỉ có hiệu lực khi PR quản trị được merge vào `main`**; trước thời điểm đó v1.1.0 là chuẩn chính thức (PR #726 merge `049fa190b05c3562816670d51defc62965986c31` ngày 03/11/2026). Các snapshot trước vẫn bảo toàn PASS theo đúng nguồn/receipt/phiên bản. Đây là điều chỉnh chuẩn và hướng dẫn kiểm, **không phải quyền sửa/merge/deploy học liệu hay mở Mastery**.  
+**VERSION:** `2.0.0` (GOVERNANCE DRAFT; chưa có hiệu lực) · **OWNER:** Chủ dự án Self-Learning Math / G Learning  
+**STATUS:** `GOVERNANCE_PROPOSAL_OWNER_REVIEW_PENDING` — ngày 10/11/2026 chủ dự án chỉ đạo xem xét bỏ vòng phản biện độc lập lặp lại cho phần cập nhật Kiến thức đã nghiệm thu mà có thể tự kiểm chứng chính xác toán. Đây là **dự thảo nâng Q18 có phiên bản**, chỉ có hiệu lực **sau owner duyệt bản điều khoản chính xác, đồng bộ Source 07/handoff/QA và governance PR merge vào `main`**. V1.2.0 trên main vẫn là baseline trong khi PR này chưa merge; snapshot PASS lịch sử bảo toàn. Không tạo quyền deploy nguồn chưa nghiệm thu hay mở Mastery.  
 **SCOPE:** mọi học liệu Toán THPT 10–12 KNTT theo **SGK_CHAPTER** và **TOPIC**; áp dụng cho cả tác giả, NotebookLM và nhánh phát hành. **Một tiêu chuẩn chất lượng; các cổng kiểm tra phân theo trách nhiệm, không phải hai bộ tiêu chuẩn cạnh tranh.**
 
 ## 0. Luật thống nhất và thứ tự hiệu lực
@@ -18,7 +18,7 @@
 
 - `ACADEMIC_PASS`: reviewer độc lập xác nhận tính đúng toán, độ sâu, nguồn S1, D1–D6, phạm vi và ID **đúng snapshot được xét**.
 - `PED_PASS`: reviewer độc lập xác nhận học sinh chưa biết có thể đi từ động cơ đến khái niệm, ví dụ có suy luận và Tự thử/D6, **theo bài/outcome**, trên đúng snapshot.
-- `CONTENT_READY`: AUTHORING đã có cả Academic + PED PASS, kiểm toán A1–A7 đầy đủ, source & receipt được khóa đúng SHA, manifest canonical trong `ready/` và REGISTER đúng một dòng. **Không** có nghĩa website đã hoạt động hay kiểm tra độc lập tính năng đánh giá.
+- `CONTENT_READY`: AUTHORING đã có Academic + PED reviewer PASS **hoặc** (chỉ sau khi v2.0.0 có hiệu lực) hồ sơ `Q18_OWNER_SELF_VERIFIED_ENRICHMENT` đạt mọi điều kiện dành riêng cho cập nhật Kiến thức SGK đã có bản nghiệm thu trước. Cả hai chế độ phải đủ A1–A7 thích hợp, source/receipt SHA, một manifest `ready/` và REGISTER; hồ sơ tự kiểm **không được mạo danh** `ACADEMIC_PASS`/`PED_PASS` của reviewer. Không có nghĩa website đã hoạt động hay đánh giá được Mastery.
 - `INTEGRATION_CANDIDATE`: RELEASE đã tiếp nhận nguồn chuẩn nhưng cần AP1–AP5, R1–R5 và exact-head QA. Không tự nâng thành `RELEASE_READY`.
 - `PUBLISHED/P1`: nguồn và website thực tế đã deploy được xác minh; `P2` là bằng chứng iPhone/iPad Safari thực, không suy từ viewport mô phỏng.
 - `BLOCKED_BY_AUTHORING`: thiếu hoặc sai nguồn, lý thuyết, outcome, PED, kết quả NotebookLM, ID/rubric, private custody, hoặc source hash. `BLOCKED_BY_RELEASE`: source READY nhưng giao diện, MathJax, tương tác, an toàn Final Submit, CI, quyền deploy hoặc thiết bị thực chưa đạt.
@@ -45,7 +45,7 @@
 | **Q15 ID/Shared bank** | Một `item_id` canonical, đúng `content_version`, `answer_key`, `worked_solution`, `skill_id`; nhiều placement khác role không nhân bản | 1 register, uniqueness, role/placement/provenance, Written/Anchor shared | Nhân bản câu/ghi Mastery kép = HOLD |
 | **Q16 Assessment/exposure** | `SGK_CHAPTER_READINESS` và `TOPIC_READINESS` khác scope; độc lập với câu đã luyện/đã xem; không hint/Tutor/đúng–sai/key trước **Final Submit**; Written free-text không tự chấm bừa | RD1 metadata/hash và nguồn kín, exposure plan, audit no leak; `CLIENT_SELF_CHECK_NO_MASTERY` nếu chỉ tự đối chiếu | RD1 public keys/private stem leak/chấm không có engine = BLOCKER; A7 AUTHORING + RELEASE R3/R4 |
 | **Q17 Dual complete journeys** | SGK tự học đủ theo chương: theory→Core→Practice→Written→tự kiểm tra cuối chương; Chuyên đề tự học đủ với **chỉ 3 mục**: Kiến thức/Luyện tập/Tự kiểm tra; cross-link hỗ trợ không thay kiến thức | 2 outcome/depth matrices riêng, nhãn `LEARNING_PATH`, `RELEASE_SCOPE`; links và role | Gắn Topic PASS nhờ SGK PASS hoặc thiếu kiến thức độc lập = HOLD |
-| **Q18 Review/fidelity** | Academic **và** PED verdict độc lập trên snapshot đúng, P0/P1/P2/MINIMAL_DELTA closed, nguồn Git blob và receipt blob khớp, lịch sử delta bảo toàn | Temp_ source + prompt 3–6 câu theo 06; 5 Permanent THPT v2.1 + S1; scoped review theo 07; A1–A7 V2 | Reviewer PASS sai blob, receipt thiếu hoặc source đổi = HOLD |
+| **Q18 Review/fidelity** | **Hai chế độ cùng một chuẩn**: `Q18_INDEPENDENT_REVIEW` cho bài mới/đổi Core/điều kiện/đáp án/rubric/RD1, hoặc `Q18_OWNER_SELF_VERIFIED_ENRICHMENT` cho *chỉ cập nhật Kiến thức SGK đã nghiệm thu* mà không đổi outcome, Core, định lý/điều kiện, canonical bank, Q15/Q16; P0/P1/P2 và MINIMAL_DELTA đều phải đóng | Chế độ độc lập: Temp_ source/5 Permanent v2.1 + S1, verdict theo snapshot. Chế độ tự kiểm: baseline PASS blob + mapping outcome/Delta, tính lại từng ví dụ/đối chiếu SGK, kiểm hình/đơn vị, PED tự học, `SELF_QA_EVIDENCE_RECEIPT` gắn đúng candidate Git blob, QA browser/assessment tách biệt; chỉ áp dụng sau owner approval + governance migration | Thiếu baseline PASS, sai/không chắc toán, đụng Core/key/RD1, receipt thiếu/lệch SHA hoặc dùng CI render thay toán PASS = HOLD; đẩy sang independent mode đúng outcome nếu cần |
 
 ## II-A. Q01 — phân vai nguồn, học liệu tự biên soạn và độ phủ họ dạng bài (owner approved 03/11/2026)
 
@@ -126,8 +126,8 @@ BLOCKERS: NONE | [exact LESSON/OUTCOME/ITEM + defect + owner]
 | Giai đoạn | Cùng tiêu chí gốc | Chủ trách nhiệm và bằng chứng | Quyền kết luận |
 |---|---|---|---|
 | **AUTHORING A1–A7** | Q01–Q18 theo chương/outcome, D1–D6, PED1–PED6 | SGK/chương trình S1 cho Core, SBT/đề thi/nguồn tin cậy làm tham khảo họ dạng bài; 1 canonical source, ma trận outcome–họ dạng–mức độ–item, D1–D6/PED, RD1 metadata, source parity, `SBT_REFERENCE_GAP_DOCUMENTED` nếu có; Temp_ + prompt | Chỉ `AUTHORING_QA_PASS` về cấu trúc; không tự cấp Academic/PED PASS |
-| **NOTEBOOKLM độc lập** | Cùng Q01–Q18, đặc biệt sự thật toán/độ sâu và PED, theo snapshot | 5 Permanent Sources v2.1, review theo bài/outcome/item, P0–P2, MINIMAL_DELTA, source receipt | Có thể cấp `ACADEMIC_PASS`, `PED_PASS` trong đúng phạm vi xét; không cấp quyền phát hành |
-| **AUTHORING ký V2** | Q01–Q18 nguồn đã PASS độc lập | 1 `release-handoffs/` V2, 1 `ready/PACKET_ID.md`, 1 REGISTER row, source SHA/receipt SHA/delta | `CONTENT_READY` nếu **không blocker nguồn** và V2 CI source-lock PASS |
+| **NOTEBOOKLM độc lập / Q18 self-QA ngoại lệ đã duyệt** | Cùng Q01–Q18; reviewer độc lập mặc định, self-QA chỉ cho Knowledge enrichment đã nghiệm thu theo §X-C | Independent: 5 Permanent v2.1/S1, reviewer receipt. Enrichment: SOURCE baseline đã PASS + tự kiểm toán toán/PED từng delta và asset, `SELF_QA_EVIDENCE_RECEIPT`, không mạo danh review độc lập | Independent có thể cấp ACADEMIC/PED PASS; self-QA có thể cấp `Q18_OWNER_SELF_VERIFIED_ENRICHMENT` theo chuẩn hiệu lực, không cấp quyền phát hành |
+| **AUTHORING ký V2** | Q01–Q18 nguồn đã đạt verdict độc lập **hoặc** self-QA enrichment đã duyệt đúng profile | 1 V2 handoff, 1 `ready/PACKET_ID.md`, 1 REGISTER row, đúng source/receipt SHA/delta và `Q18_VERIFICATION_MODE` (self-QA khác reviewer) | `CONTENT_READY` nếu không blocker, hợp đồng V2 & CI đã tương thích mode, exact-source lock PASS |
 | **RELEASE AP1–AP5** | **Kiểm tra cùng Q** ở sản phẩm học sinh, không thêm luật toán riêng | AP1 ý học rõ; AP2 công thức/MathJax; AP3 hình; AP4 tiến trình tự học; AP5 responsive 390/820/1440 + thiết bị thực khi yêu cầu | `RENDERED_QA_PASS`, không xét lại Academic PASS nếu source nguyên |
 | **RELEASE R1–R5/P1/P2** | Source fidelity Q15/Q18, Q16 assessment, Q17 paths | Receipt chính xác HEAD, no hint/key trước submit, no Mastery trái phép, Golden UI/THCS, owner approval, P1/P2 | `RELEASE_READY` rồi `PUBLISHED` **chỉ sau owner authorization** |
 
@@ -137,7 +137,7 @@ BLOCKERS: NONE | [exact LESSON/OUTCOME/ITEM + defect + owner]
 
 - **Một nguồn canonical** `content-drafts/` có Git blob SHA. `Temp_*.md`/txt là **gói vận chuyển review** (nếu chỉ 1–2 file đưa link từng file, ≥3 file thì `Temp_*.zip`, giải nén trước khi thêm), gửi **cùng prompt 3–6 câu**. Không đưa JSON làm nguồn NotebookLM; không giả định NotebookLM đã đọc GitHub.
 - Reviewer phải xác nhận S1, exact source file/content fingerprint khi có, expected/reviewed IDs, câu/đáp án/độ sâu, PED theo lesson/outcome, P0/P1/P2, MINIMAL_DELTA. Nếu reviewer không có SHA gốc, ghi rõ hạn chế về provenance; đối chiếu nội dung, không khẳng định byte-exact input Studio.
-- `DELTA_A_UI`: chỉ giao diện/nhãn không đổi nghĩa → QA UI. `DELTA_B_SOURCE_EQUIVALENT`: có đối chiếu S1, không đổi đáp án/điều kiện/rubric/outcome → QA và log, không mặc định review lại. `DELTA_C_ACADEMIC_MATERIAL`: thay đổi học thuật/sư phạm thực chất → **NotebookLM chỉ review affected scope**. `DELTA_D_BLOCKER`: sai nghiêm trọng/thiếu nguồn → HOLD đúng phần. Không mở lại nguồn R01/B01/B02 đã PASS nếu bất biến.
+- `DELTA_A_UI`: chỉ giao diện/nhãn không đổi nghĩa → QA UI. `DELTA_B_SOURCE_EQUIVALENT`: có đối chiếu S1, không đổi đáp án/điều kiện/rubric/outcome → QA và log, không mặc định review lại. `DELTA_C_ACADEMIC_MATERIAL`: thay đổi học thuật/sư phạm thực chất → **review độc lập affected scope theo chế độ mặc định**, hoặc **tự kiểm chứng nội bộ Q18 enrichment** chỉ nếu thỏa toàn bộ §X-C, source/asset SHA được khóa và bản chuẩn/hợp đồng đã ban hành; tuyệt đối không hạ Delta C thành A/B để qua gate. `DELTA_D_BLOCKER`: sai nghiêm trọng/thiếu nguồn → HOLD đúng phần. Không mở lại nguồn đã PASS nếu bất biến.
 - Một thay đổi nhỏ có thể vẫn là C/D nếu đảo `<`/`>`, thay mẫu số, ràng buộc hoặc nghiệm. Không phân loại bằng kích thước diff.
 - Mỗi lần chuyển cần `STANDARD_VERSION` trong ledger. Các chapter cũ giữ PASS **snapshot cũ**; chỉ áp tiêu chí mới hồi tố theo kế hoạch và quyết định chủ dự án, không sửa website/hoán đổi source review tùy tiện.
 
@@ -154,7 +154,7 @@ Một chương mới **không gửi NotebookLM** nếu chưa tự kiểm:
 
 ## IX. Checklist PRE-HANDOFF V2 (AUTHORING)
 
-- [ ] `A1` SGK/chương trình S1 Core canonical Git blob, version/commit, trang SGK thực sự đã kiểm; **SBT nguồn tham khảo phải ghi provenance và `SBT_REFERENCE_GAP_DOCUMENTED` nếu thiếu**, không tuyên bố đã đọc trang chưa có; `A2` outcome/scope và độ phủ họ dạng chính xác; `A3` Academic **và** PED reviewer receipts đúng snapshot.
+- [ ] `A1` SGK/chương trình S1 Core canonical Git blob, version/commit, trang SGK thực sự đã kiểm; **SBT nguồn tham khảo phải ghi provenance và `SBT_REFERENCE_GAP_DOCUMENTED` nếu thiếu**, không tuyên bố đã đọc trang chưa có; `A2` outcome/scope và độ phủ họ dạng chính xác; `A3` Academic/PED reviewer receipts đúng snapshot **hoặc** (`Q18_OWNER_SELF_VERIFIED_ENRICHMENT` có hiệu lực và đủ điều kiện §X-C) `SELF_QA_EVIDENCE_RECEIPT` cùng baseline PASS source/receipt.
 - [ ] `A4` LESSON/OUTCOME/ITEM matrix từng ID, role/placement/primary outcome và bằng chứng integrated outcome; `A5` D1–D6 + PED1–6 per outcome, câu/mức/dạng thật; `A6` delta log đóng hết thay đổi C/D; `A7` RD1 private custody count/hash, exposure mode trung thực.
 - [ ] Một handoff V2, một manifest `ready/PACKET_ID.md`, đúng một REGISTER row, exact blob hash, `BLOCKERS:NONE`; chạy source-lock CI ở đúng HEAD. Không tự merge nguồn tác giả.
 - [ ] `R1–R5`, AP1–AP5 và P1/P2 **chưa tick** nếu chưa có release QA/owner; không công bố demo là scoring thật.
@@ -181,6 +181,16 @@ Một chương mới **không gửi NotebookLM** nếu chưa tự kiểm:
 - `OWNER_APPROVED_SCOPE=GOVERNANCE_ONLY`: cập nhật chuẩn gốc + chỉ dẫn/QA, **không cấp quyền rewrite học liệu SGK, PR RELEASE website, Firebase, Gemini, Mastery hoặc deploy học liệu**.
 - `PILOT_EVIDENCE`: G12 B01 nghiên cứu từ source Git blob `7fc40081bb3f1e104e38e2c86a5bc1e8217e77cc`, 6 OUTCOME_ID chính thức, thử nghiệm A/B cô lập ở #743; **browser QA là bằng chứng kỹ thuật**, chưa chứng minh hiệu quả học tập thực tế (`LEARNER_EVIDENCE_PENDING`).
 - `EFFECTIVE_VERSION_GATE`: bản này chỉ có hiệu lực sau chủ dự án cho phép, governance và Roadmap CI exact HEAD PASS, **merge**; phiên bản trước và verdict của snapshot cũ bất biến. Nếu nội dung mới cho AUTHORING phải thay sư phạm đáng kể thì `DELTA_C` review affected scope, không hồi tố đại trà.
+
+
+## X-C. Đề xuất tự kiểm chứng nội bộ cho cập nhật Kiến thức SGK đã nghiệm thu — Change Log 10/11/2026 (DỰ THẢO)
+
+- `STANDARD_CHANGE_REQUEST`: [Q18 enrichment self-verification](standard-changes/STANDARD_CHANGE_REQUEST_Q18_ENRICHMENT_SELF_VERIFICATION_20261110.md). `OWNER_DIRECTION=2026-11-10`: không buộc review độc lập lặp lại cho ví dụ/lời dẫn/hình có thể tự kiểm chứng trong Knowledge đã nghiệm thu; `EXACT_AMENDMENT_APPROVAL=PENDING` cho đến khi chủ dự án duyệt quy tắc và bản chuẩn chính xác.
+- `CHANGE_CLASS=MAJOR`, đề xuất `1.2.0 → 2.0.0` vì bổ sung chế độ bằng chứng thay cho reviewer độc lập trong phạm vi hẹp; **không thay Q01–Q17** và không mở một bộ chuẩn khác.
+- `Q18_INDEPENDENT_REVIEW`: mặc định cho học liệu mới, đổi Core/outcome/điều kiện/đáp án/rubric/RD1, không có baseline PASS, sai toán/nguồn chưa giải quyết. Reviewer Q18 theo hiện hành.
+- `Q18_OWNER_SELF_VERIFIED_ENRICHMENT`: chỉ cho cải tiến trang Kiến thức **đã có baseline Academic/PED PASS**, không đổi Core/outcome, điều kiện định lý, ngân hàng câu, Final Submit hoặc Mastery. AUTHORING kiểm S1 và **tính lại từng ví dụ mới**, kiểm hình/đơn vị/nhãn, PED theo outcome; `SELF_QA_EVIDENCE_RECEIPT` ghi từng `DELTA_ID`, baseline+candidate Git blob, P0/P1/P2 và đường khắc phục. RELEASE chỉ kiểm fidelity/QA triển khai. Không coi kết quả browser hoặc checksum là chứng cứ toán PASS.
+- `COMPATIBILITY_HOLD`: Source 07 v1.1 còn ghi DELTA_C phải review NotebookLM; V2/handoff/CI còn chỉ nhận reviewer PASS. **Trước khi owner phê duyệt và đồng bộ văn bản/hợp đồng cùng QA, vẫn `STANDARD_CONFLICT_HOLD`, không cấp CONTENT_READY/merge/deploy từ chế độ mới.** Bảo toàn PASS lịch sử đúng snapshot.
+- `G10_SCOPE`: PR #797 27 trang Knowledge và 11 SVG, owner đã cho phép phát hành **khi các cổng đã cập nhật hợp lệ đạt**; không tự suy quyền áp dụng sang Topic/học liệu chưa nghiệm thu hoặc thay đổi đánh giá G11/G12.
 
 ## XI. Truy vết nguồn → điều khoản và phân công
 
