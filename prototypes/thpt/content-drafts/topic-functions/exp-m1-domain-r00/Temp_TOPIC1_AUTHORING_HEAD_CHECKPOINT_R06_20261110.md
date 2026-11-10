@@ -61,3 +61,16 @@ Canonical R18 PUBLIC M1–M7 vẫn nguyên Git blob **\`2340ea4975b37a457363eea5
 - Exact browser QA **candidate only**: Chromium viewport 390/820/1440, 10/10 Canvas each, 0 JS errors including fast tab navigation, no horizontal overflow; 64 dot-product random / 36 Bayes random property checks, drag vector/3D/chart interactions. **No** real-device Safari/offline KaTeX or independent Academic/PED PASS.
 - [Dedicated R02 GitHub receipt](Temp_NOTEBOOK_10MODELS_CANDIDATE_REPAIR_CHROMIUM_QA_RECEIPT_R02_20261110.md), blob **\`4e1a1e79c9c210f0f5b61dc59afe6015c173429a\`**. Candidate code distributed through conversation only, kept out of current topic canonical source tree. This is NOT a third curriculum journey.
 - **R06 ONE SOURCE blob \`1d3d3852aa38ab90ed282349bfc769c02aac3ea3\` unchanged**, baseline R18 blob \`2340ea4975b37a457363eea59dd617070934983c\` unchanged. Q15 11 DRAFT, independent targeted Academic/PED, Q07 existing Topic module browser/device QA, issue #790 and \`CONTENT_READY=NO\` remain HOLD.
+
+
+## 7. M3 R07 — dẫn dắt lý thuyết trước hình, không tạo nguồn review mới
+
+**Chỉ đạo owner hiện hành:** AUTHORING tận dụng trực tiếp nội dung/diễn giải/mô hình Notebook và Gemini để nâng cấp phần **Kiến thức**, giữ ba mục **Kiến thức/Luyện tập/Tự kiểm tra**. Chỉ dùng Notebook review khi cần giải quyết nghi vấn học thuật thực chất; không tự thêm bước review đầu vào Notebook mặc nhiên. R18 và Topic2 R02 đã PASS giữ nguyên, không viết lại chỉ để có thay đổi.
+
+**Đã thực thi trên M3:**
+- Thêm hoạt động \`Tự thử → Đối chiếu\` trước công thức \`|f(x)|\`, \`f(|x|)\`; câu chuyện hai máy xử lý đầu ra/đầu vào, hình mới. **Theory new blob** \`b3efdf2cf0b50725da02a0dcd0510c75f3d17c67\` (old \`c46a5f0a0ce88b4e4128f15836fce0215900bcd9\`).
+- **SVG new blob** \`dbdda801c2d02169521db2ae974c00d567dd660a\`; font lớn, bố cục dọc, có \`title/desc\`, không external asset/script.
+- **HTML D5 new blob** \`5bc8204f8bd024f30a73230231857210f1ce2123\` (old \`6c150da0406f559e13a1ae9d0eca3f5565790247\`): mặc định chỉ đồ thị f(x), học sinh dự đoán rồi bật từng phép biến đổi; readout không lộ kết quả trước.
+- [Parity & static QA receipt](Temp_TOPIC1_M3_PED_GUIDED_VISUAL_EQUIVALENCE_QA_R07_20261110.md) blob \`393a69db53df4d24512a7febc556ad808ebfe69f\`. **6/6** số mẫu và **201/201** thuộc tính toán đạt, HTML JS syntax PASS, SVG accessibility structure PASS. **Real-browser exact branch/device vẫn PENDING.**
+- \`DELTA_B_SOURCE_EQUIVALENT + DELTA_A_UI\` cho đoạn trình bày M3, **không thêm item/đáp án/rubric/giả thiết mới**; không thêm một reviewer packet mới. R06 ONE_SOURCE \`1d3d3852aa38ab90ed282349bfc769c02aac3ea3\` còn nguyên như **snapshot R06 lịch sử**, **không** được mô tả là manifest current 23/23 sau hai file M3 đổi SHA. Cần ghi nhật ký delta khi chốt handoff, Q15 11 DRAFT vẫn HOLD.
+- \`CONTENT_READY=NO\`, không merge/deploy, không thay Topic2/RELEASE, không yêu cầu review Notebook cho chính công việc Notebook đã biên soạn chỉ vì nguồn gốc nó là Notebook.
