@@ -212,11 +212,14 @@
     </tbody></table></div>
 
     **Bước 2 — giải thích phương trình.** Vì cả hai cùng xuất phát và phải đến cùng lúc, ta **cho hai thời gian bằng nhau**:
+
     \[
     \frac{\sqrt{x^2+9}}5=\frac{8-x}4
     \iff4\sqrt{x^2+9}=5(8-x).
     \]
+
     Trong miền \(0\le x\le8\), hai vế đều không âm, nên có thể bình phương:
+
     \[
     16(x^2+9)=25(8-x)^2
     \iff9x^2-400x+1456=0
