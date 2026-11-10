@@ -22,7 +22,7 @@ function sameIDs(actual,expected,where){
 }
 (async()=>{
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
- let pages=0,foldsOpened=0,imagesDecoded=0;
+ let pages=0,foldsOpened=0,keyboardFolds=0,imagesDecoded=0;
  try{
   for(const width of widths){
    const page=await browser.newPage({viewport:{width,height:width===390?844:width===820?1180:900}});
@@ -64,11 +64,16 @@ function sameIDs(actual,expected,where){
        assert((await fold.getAttribute("open"))!==null,location+" learner explicitly opens first-try answer");
        await fold.locator("summary").click();
        assert((await fold.getAttribute("open"))===null,location+" learner closes answer again");
-       opened=true;foldsOpened++;
+       await fold.locator("summary").focus();
+       await page.keyboard.press("Enter");
+       assert((await fold.getAttribute("open"))!==null,location+" keyboard Enter opens deliberate First Try reveal");
+       await page.keyboard.press("Space");
+       assert((await fold.getAttribute("open"))===null,location+" keyboard Space closes deliberate First Try reveal");
+       opened=true;foldsOpened++;keyboardFolds++;
       }
       const images=groups.nth(i).locator("figure img");
-      if(!figured && await images.count()){
-       const figure=images.first();
+      for(const figure of await images.all()){
+       assert((await figure.getAttribute("alt"))?.trim(),location+" every educational SVG requires descriptive alt text");
        await figure.scrollIntoViewIfNeeded();
        await figure.evaluate(async img=>{
         if(!img.complete) await new Promise((resolve,reject)=>{
@@ -77,7 +82,7 @@ function sameIDs(actual,expected,where){
         });
         if(img.decode) await img.decode();
        });
-       assert(await figure.evaluate(img=>img.naturalWidth>0),location+" educational figure loads and decodes");
+       assert(await figure.evaluate(img=>img.naturalWidth>0),location+" every educational SVG must decode");
        figured=true;imagesDecoded++;
       }
      }
@@ -99,8 +104,11 @@ function sameIDs(actual,expected,where){
    }finally{await page.close();}
   }
   assert.equal(pages,81,"Expected 27 lessons at three viewports");
-  assert.equal(foldsOpened,81,"All 81 cases need voluntary reveal/close");
-  assert.equal(imagesDecoded,81,"All 81 cases need a decoded knowledge illustration");
-  console.log("PASS UX795 G10 real browser 27/27 × 390/820/1440 = 81 checks; source Q18 still HOLD, NO DEPLOY");
+  assert.equal(foldsOpened,81,"All 81 cases need voluntary mouse reveal/close");
+  assert.equal(keyboardFolds,81,"All 81 cases need keyboard Enter/Space reveal/close");
+  assert(imagesDecoded>=81,"All 81 cases need every SVG decoded, not only the first per lesson");
+  console.log("PASS UX795 G10 real browser 27/27 × 390/820/1440 = 81 checks; "+
+    imagesDecoded+" SVG image decodes and descriptive alt text, 81 keyboard disclosures; "+
+    "source Q18 still HOLD, NO DEPLOY");
  }finally{await browser.close();}
 })().catch(e=>{console.error(e.stack||e);process.exitCode=1;});
