@@ -10,6 +10,7 @@ on:
       - 'prototypes/thpt/standard-changes/Q18_SELF_QA_EVIDENCE_TEMPLATE_DRAFT_20261110.md'
       - 'prototypes/thpt/standard-changes/STANDARD_CHANGE_REQUEST_Q18_ENRICHMENT_SELF_VERIFICATION_20261110.md'
       - 'prototypes/thpt/standard-changes/07_THPT_NOTEBOOKLM_BATCH_AND_DELTA_REVIEW_POLICY_v1.2_DRAFT_20261110.md'
+      - 'prototypes/thpt/standard-changes/07_THPT_NOTEBOOKLM_BATCH_AND_DELTA_REVIEW_POLICY_v1.2_20261110.md'
       - 'prototypes/thpt/standard-changes/Q18_G10_BASELINE_APPROVAL_SCOPE_AUDIT_R01_20261110.md'
       - 'prototypes/thpt/THPT_TWO_LANE_SOURCE_LOCKED_HANDOFF_CONTRACT_v2_20261102.md'
       - 'AGENTS.md'
@@ -29,7 +30,7 @@ jobs:
         run: |
           node --check scripts/test-thpt-unified-content-standard.cjs
           node scripts/test-thpt-unified-content-standard.cjs --self-test
-      - name: Validate draft-only self-QA receipt schema with negative fixtures
+      - name: Preserve rejected draft receipt fixtures as negative tests (not release authority)
         run: |
           node --check scripts/test-thpt-q18-self-qa-draft.cjs
           node scripts/test-thpt-q18-self-qa-draft.cjs --self-test
