@@ -47,57 +47,18 @@ function validate(source, agents, queue) {
    if(version==="1.2.0"&&!source.includes("OWNER_APPROVED_EFFECTIVE_UPON_GOVERNANCE_MERGE"))
      fail("UX_PED_V1_2_MISSING_CONTROL:OWNER_APPROVED_EFFECTIVE_UPON_GOVERNANCE_MERGE");
  }
- if(!source.includes("GOVERNANCE_PROPOSAL_OWNER_REVIEW_PENDING") &&
-    !source.includes("OFFICIAL_OWNER_APPROVED_MAIN") &&
-    !source.includes("OWNER_APPROVED_Q01_REVISION_PENDING_GOVERNANCE_QA_MERGE") &&
-    !source.includes("OWNER_APPROVED_EFFECTIVE_UPON_GOVERNANCE_MERGE"))fail("OWNER_APPROVAL_RECEIPT_MISSING");
-
+ const approvalStatus=(source.match(/^\*\*STATUS:\*\*\s*\x60([A-Z0-9_]+)\x60/m)||[])[1];
  if(version==="2.0.0"){
-   // Fail closed while drafted: V2 READY gate MUST still require independent
-   // Academic/PED source receipts until owner-approved migration is complete.
+   if(approvalStatus!=="OWNER_APPROVED_EFFECTIVE")fail("Q18_V2_OWNER_EFFECTIVE_STATUS_REQUIRED");
    const contract=fs.readFileSync(path.join(ROOT,"prototypes/thpt/THPT_TWO_LANE_SOURCE_LOCKED_HANDOFF_CONTRACT_v2_20261102.md"),"utf8");
-   const policy07=fs.readFileSync(path.join(ROOT,
-     "prototypes/thpt/standard-changes/07_THPT_NOTEBOOKLM_BATCH_AND_DELTA_REVIEW_POLICY_v1.2_DRAFT_20261110.md"),"utf8");
-   const policyControls=[
-     "Toán THPT v1.2 · DỰ THẢO",
-     "Ngày hiệu lực:** CHƯA CÓ",
-     "DELTA_C_ACADEMIC_MATERIAL",
-     "Q18_OWNER_SELF_VERIFIED_ENRICHMENT",
-     "SELF_QA_EVIDENCE_RECEIPT",
-     "STANDARD_CONFLICT_HOLD / NO_MERGE_NO_DEPLOY"
-   ];
-   for(const token of policyControls)if(!policy07.includes(token))
-     fail("PROJECT_SOURCE_07_V1_2_DRAFT_NOT_ALIGNED:"+token);
-
-   const gate=fs.readFileSync(path.join(ROOT,"scripts/test-thpt-handoff-gate-v2.cjs"),"utf8");
-   if(!contract.includes("Q18 ENRICHMENT V2.1 PROPOSED") ||
-      !contract.includes("GOVERNANCE_DRAFT_ONLY / STANDARD_CONFLICT_HOLD"))
-       fail("Q18_DRAFT_V2_CONTRACT_NOT_HELD");
-   if(gate.includes("OWNER_SELF_VERIFIED_ENRICHMENT") ||
-      !gate.includes('field(data, "ACADEMIC_VERDICT"), "PASS_ON_LOCKED_SNAPSHOT"') ||
-      !gate.includes('field(data, "PEDAGOGICAL_VERDICT"), "PASS_ON_LOCKED_SNAPSHOT"'))
-       fail("Q18_DRAFT_V2_GATE_PREMATURELY_OPENED");
-   // Version 2 is a draft major change. A GREEN schema test does not activate
-   // a self-QA route until the owner approves, V2/Source07 are aligned and
-   // governance actually merges into main.
-   const required=[
-     "GOVERNANCE_PROPOSAL_OWNER_REVIEW_PENDING",
-     "## X-C. Đề xuất tự kiểm chứng nội bộ cho cập nhật Kiến thức SGK đã nghiệm thu",
-     "STANDARD_CHANGE_REQUEST_Q18_ENRICHMENT_SELF_VERIFICATION_20261110.md",
-     "Q18_INDEPENDENT_REVIEW",
-     "Q18_OWNER_SELF_VERIFIED_ENRICHMENT",
-     "SELF_QA_EVIDENCE_RECEIPT",
-     "STANDARD_CONFLICT_HOLD",
-     "không đổi Core/outcome",
-     "Q15/Q16",
-     "RD1",
-     "không được mạo danh",
-     "Source 07 v1.1",
-     "Q18_VERIFICATION_MODE",
-     "OWNER_APPROVAL",
-   ];
-   for(const token of required)if(!source.includes(token))fail("Q18_V2_DRAFT_CONTROL_MISSING:"+token);
- }
+   const policy07=fs.readFileSync(path.join(ROOT,"prototypes/thpt/standard-changes/07_THPT_NOTEBOOKLM_BATCH_AND_DELTA_REVIEW_POLICY_v1.2_20261110.md"),"utf8");
+   for(const token of ["OWNER APPROVED Q18 v2.0 OPERATIONAL SUPERSESSION","ENRICHMENT_DELTA_RECEIPT","TOPIC"])
+     if(!contract.includes(token))fail("V2_OWNER_STAGE_NOT_ALIGNED:"+token);
+   for(const token of ["OWNER APPROVED","DELTA_C_ACADEMIC_MATERIAL","ENRICHMENT_DELTA_RECEIPT","CONTENT_MATH_PED_SOURCE","ASSESSMENT_DATA_SAFETY","RENDER_RELEASE_QA"])
+     if(!policy07.includes(token))fail("SOURCE07_V1_2_NOT_ALIGNED:"+token);
+   for(const token of ["## X-C. Quyết định có hiệu lực","ENRICHMENT_DELTA_RECEIPT","Q18_INDEPENDENT_REVIEW","Q18_OWNER_SELF_VERIFIED_ENRICHMENT","CONTENT_MATH_PED_SOURCE","ASSESSMENT_DATA_SAFETY","RENDER_RELEASE_QA","OWNER_APPROVED_EFFECTIVE"])
+     if(!source.includes(token))fail("Q18_V2_EFFECTIVE_CONTROL_MISSING:"+token);
+ }else if(!source.includes("OFFICIAL_OWNER_APPROVED_MAIN")&&!source.includes("OWNER_APPROVED_EFFECTIVE_UPON_GOVERNANCE_MERGE")&&!source.includes("OWNER_APPROVED_Q01_REVISION_PENDING_GOVERNANCE_QA_MERGE"))fail("OWNER_APPROVAL_RECEIPT_MISSING");
  for(const heading of REQUIRED_SECTIONS)if(!source.includes(heading))fail("MISSING_SECTION:"+heading);
  const tableStart=source.indexOf("## II. Ma trận chuẩn chất lượng duy nhất Q01–Q18");
  const tableEnd=source.indexOf("## III.",tableStart);
@@ -141,11 +102,11 @@ function selfTest(){
    if(/\*\*VERSION:\*\* `1\.2\.0`/.test(full))
      assert(validate(full.replace("OWNER_APPROVED_EFFECTIVE_UPON_GOVERNANCE_MERGE","NO_OWNER_APPROVAL"),"","").failures.some(e=>e.startsWith("UX_PED_V1_2_MISSING_CONTROL")));
  }
- if(/\*\*VERSION:\*\* `2\.0\.0`/.test(full)){
-   assert(validate(full.replaceAll("SELF_QA_EVIDENCE_RECEIPT","EVIDENCE_OMITTED"),"","").failures.some(e=>e.startsWith("Q18_V2_DRAFT_CONTROL_MISSING")));
-   assert(validate(full.replace("## X-C. Đề xuất tự kiểm chứng nội bộ","## X-C. [REMOVED]"),"","").failures.some(e=>e.startsWith("Q18_V2_DRAFT_CONTROL_MISSING")));
-   assert(validate(full.replaceAll("GOVERNANCE_PROPOSAL_OWNER_REVIEW_PENDING","WRONGLY_CLAIMED_EFFECTIVE"),"","").failures.some(e=>e.startsWith("Q18_V2_DRAFT_CONTROL_MISSING")));
- }
+ if(/\*\*VERSION:\*\* \x602\.0\.0\x60/.test(full)){
+    assert(validate(full.replace("**STATUS:** \x60OWNER_APPROVED_EFFECTIVE\x60","**STATUS:** \x60GOVERNANCE_PROPOSAL_OWNER_REVIEW_PENDING\x60"),"","").failures.includes("Q18_V2_OWNER_EFFECTIVE_STATUS_REQUIRED"));
+    assert(validate(full.replace("## X-C. Quyết định có hiệu lực","## X-C. [REMOVED]"),"","").failures.some(e=>e.startsWith("Q18_V2_EFFECTIVE_CONTROL_MISSING")));
+    assert(validate(full.replaceAll("ENRICHMENT_DELTA_RECEIPT","EVIDENCE_OMITTED"),"","").failures.some(e=>e.startsWith("Q18_V2_EFFECTIVE_CONTROL_MISSING")));
+  }
  {
    assert(validate(full.replace(/\*\*VERSION:\*\* `\d+\.\d+\.\d+`/,"**VERSION:** `9.9.9`"),"","").failures.includes("VERSION_NOT_LOCKED"));
  }
