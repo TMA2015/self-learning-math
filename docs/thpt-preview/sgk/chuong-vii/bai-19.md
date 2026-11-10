@@ -49,7 +49,7 @@
 
         **Lý do:** Tích vô hướng bằng 0 chứng minh u vuông góc với pháp tuyến n, tức song song với đường thẳng d; u không phải vectơ không.
 
-        **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY01` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
     <span id="help-g10-chvii-try01" data-thpt-help-id="HELP-G10-CHVII-TRY01"></span>
@@ -64,7 +64,7 @@
 
         4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-        5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B19-C01` trong phần Core/Luyện tập; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
 
     <a href="../luyen-tap/?item=THPT-G10-B19-C01">Mở câu luyện tập tương ứng để tự luyện</a>
@@ -92,7 +92,7 @@
 
         **Lý do:** AM=(x-1,y-3), n·AM=2(x-1)-(y-3); thế A được 0. Không tự đảo vai trò n với vectơ chỉ phương.
 
-        **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY02` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
     <span id="help-g10-chvii-try02" data-thpt-help-id="HELP-G10-CHVII-TRY02"></span>
@@ -107,7 +107,7 @@
 
         4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-        5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B19-C02` trong phần Core/Luyện tập; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
 
     <a href="../luyen-tap/?item=THPT-G10-B19-C02">Mở câu luyện tập tương ứng để tự luyện</a>
@@ -135,7 +135,7 @@
 
         **Lý do:** Khi t=0 thu A; khi t=1 thu A+u=(-1,2). Mọi điểm thuộc đường có độ dời t·u.
 
-        **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY03` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
     <span id="help-g10-chvii-try03" data-thpt-help-id="HELP-G10-CHVII-TRY03"></span>
@@ -150,7 +150,7 @@
 
         4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-        5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B19-P01` trong phần Core/Luyện tập; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
 
     <a href="../luyen-tap/?item=THPT-G10-B19-P01">Mở câu luyện tập tương ứng để tự luyện</a>
@@ -178,7 +178,7 @@
 
         **Lý do:** AB=(3,3)≠0, chọn n=(1,-1). Qua A: (x+1)-(y-2)=0 ⇒ x-y+3=0; thế B: 2-5+3=0.
 
-        **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY04` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
     <span id="help-g10-chvii-try04" data-thpt-help-id="HELP-G10-CHVII-TRY04"></span>
@@ -193,7 +193,7 @@
 
         4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-        5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B19-P02` trong phần Core/Luyện tập; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
 
     <a href="../luyen-tap/?item=THPT-G10-B19-P02">Mở câu luyện tập tương ứng để tự luyện</a>
@@ -221,7 +221,7 @@
 
         **Lý do:** Điểm thuộc là nghiệm của phương trình theo cặp tọa độ. Đây là phép thử hai lần độc lập.
 
-        **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY05` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
     <span id="help-g10-chvii-try05" data-thpt-help-id="HELP-G10-CHVII-TRY05"></span>
@@ -236,7 +236,7 @@
 
         4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-        5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B19-P03` trong phần Core/Luyện tập; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
 
     <a href="../luyen-tap/?item=THPT-G10-B19-P03">Mở câu luyện tập tương ứng để tự luyện</a>
@@ -264,7 +264,7 @@
 
         **Lý do:** Cộng hai phương trình được 2x=6 ⇒ x=3, y=1. Pháp tuyến (1,1) và (1,-1) có tích vô hướng 1-1=0.
 
-        **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY06` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
     <span id="help-g10-chvii-try06" data-thpt-help-id="HELP-G10-CHVII-TRY06"></span>
@@ -279,7 +279,7 @@
 
         4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-        5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B19-P06` trong phần Core/Luyện tập; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
 
     <a href="../luyen-tap/?item=THPT-G10-B19-P06">Mở câu luyện tập tương ứng để tự luyện</a>
@@ -307,7 +307,7 @@
 
         **Lý do:** Hệ số góc (9-5)/(2-0)=2, giá trị tại t=0 là 5. Đây là phép ngoại suy t=3, chỉ hợp lý nếu giả thiết tăng đều vẫn đúng.
 
-        **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY07` bên dưới; quay lại câu luyện tập tương ứng khi đã hiểu kiến thức.
+        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
     <span id="help-g10-chvii-try07" data-thpt-help-id="HELP-G10-CHVII-TRY07"></span>
@@ -322,7 +322,7 @@
 
         4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-        5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B19-P04` trong phần Core/Luyện tập; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
 
     <a href="../luyen-tap/?item=THPT-G10-B19-P04">Mở câu luyện tập tương ứng để tự luyện</a>
