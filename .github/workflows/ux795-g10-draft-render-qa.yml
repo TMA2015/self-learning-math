@@ -71,6 +71,7 @@ jobs:
           git -C integration-main rev-parse HEAD
           lesson_count=0
           for lesson in docs/thpt-preview/sgk/chuong-*/bai-*.md; do
+            [[ "$lesson" =~ /bai-[0-9]+\.md$ ]] || continue
             test -f "$lesson"
             cp "$lesson" "integration-main/$lesson"
             lesson_count=$((lesson_count + 1))
