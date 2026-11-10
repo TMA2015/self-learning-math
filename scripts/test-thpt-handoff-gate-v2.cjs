@@ -47,12 +47,27 @@ function verifyBlob(value, file) {
   const actual = runGit("hash-object", "--", file);
   assert.equal(actual, value, "Source/receipt byte mismatch: " + file);
 }
+// Version follows the ONE actual normative source, not a hand-maintained
+// release-gate list. Grandfather ONLY previously effective historical versions.
+// Governance drafts (even when present in a PR checkout) are NOT active modes.
+const historicalVersions=["1.0.0","1.1.0","1.2.0"];
+function acceptedStandardVersions(overrideText) {
+  const raw=overrideText??fs.readFileSync(path.join(root,"prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md"),"utf8");
+  const id=raw.match(/^\*\*STANDARD_ID:\*\*\s*\x60([A-Za-z0-9-]+)\x60/m);
+  const version=raw.match(/^\*\*VERSION:\*\*\s*\x60(\d+\.\d+\.\d+)\x60/m);
+  const status=raw.match(/^\*\*STATUS:\*\*\s*\x60([A-Z0-9_]+)\x60/m);
+  assert(id && id[1]==="SLM-THPT-QUALITY-ONE","Single normative standard identity missing or changed");
+  assert(version&&status,"Canonical standard version/status missing");
+  const approved=/OWNER_APPROVED|EFFECTIVE/.test(status[1])&&!/GOVERNANCE_PROPOSAL|DRAFT|PENDING_OWNER/.test(status[1]);
+  return [...new Set([...historicalVersions,...(approved?[version[1]]:[])])];
+}
+
 // One normative rubric for both branches. Historical V2 packets are grandfathered;
 // enforce on NEW handoffs (and all packets already declaring STANDARD_ID).
 function verifyOneStandardEvidence(data, handoff, initialHandoff) {
   if (!initialHandoff && !data.includes("STANDARD_ID: ")) return;
   const normVersion=field(data,"STANDARD_VERSION");
-  assert(["1.0.0","1.1.0","1.2.0"].includes(normVersion),"Unrecognized standard version");
+  assert(acceptedStandardVersions().includes(normVersion),"Unrecognized or not-yet-effective standard version");
   for (const text of [data, handoff]) {
     assert.equal(field(text,"STANDARD_ID"),"SLM-THPT-QUALITY-ONE","Two competing quality standards are forbidden");
     assert.equal(field(text,"STANDARD_VERSION"),normVersion,"Version mismatch across a source-locked V2 handoff");
@@ -289,6 +304,13 @@ function verifyReadyManifest(rel, initialHandoff) {
 function selfTest() {
   assert.deepEqual(ids("## IDS\n- A\n- B\n", "IDS"), ["A","B"]);
   assert.equal(verifyLaneScope("LEARNING_PATH: SGK_CHAPTER\nRELEASE_SCOPE: FULL_LEARNING_PATH"), "SGK_CHAPTER");
+  const norm=(v,status)=>"**STANDARD_ID:** \x60SLM-THPT-QUALITY-ONE\x60\n**VERSION:** \x60"+v+"\x60\n**STATUS:** \x60"+status+"\x60";
+  assert(acceptedStandardVersions().includes("1.2.0"),"Current normative v1.2.0 must work");
+  assert(!acceptedStandardVersions(norm("2.0.0","GOVERNANCE_PROPOSAL_OWNER_REVIEW_PENDING")).includes("2.0.0"),
+    "Draft Q18 version must NOT become a release version");
+  assert(acceptedStandardVersions(norm("2.0.0","OWNER_APPROVED_EFFECTIVE")).includes("2.0.0"),
+    "Approved future single standard must not need a stale V2 allowlist update");
+  assert.throws(()=>acceptedStandardVersions(norm("2.0.0","OWNER_APPROVED_EFFECTIVE").replace("SLM-THPT-QUALITY-ONE","DIFFERENT-STANDARD")));
   assert.equal(verifyLaneScope("LEARNING_PATH: TOPIC\nRELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH"), "TOPIC");
   assert.throws(() => verifyLaneScope("LEARNING_PATH: TOPIC\nRELEASE_SCOPE: FULL_LEARNING_PATH"));
   assert.throws(() => verifyLaneScope("LEARNING_PATH: SGK_CHAPTER\nRELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH"));
