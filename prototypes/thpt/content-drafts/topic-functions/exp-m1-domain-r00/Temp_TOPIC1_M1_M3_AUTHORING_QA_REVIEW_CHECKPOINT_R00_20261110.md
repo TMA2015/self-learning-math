@@ -7,7 +7,7 @@
 - Chuyên đề 1 canonical R18: \`prototypes/thpt/content-drafts/topic-functions/Temp_TOPIC_FUNCTIONS_FULL_PUBLIC_CANONICAL_SOURCE_R18_20261108.md\`, Git blob **\`2340ea4975b37a457363eea59dd617070934983c\`**, Draft PR #782.
 - Nội dung M1–M7 R18 và private RD1 30 câu đã có independent Academic/PED PASS theo nguồn/receipt cũ, **không** tái tuyên bố PASS cho file R00.
 - Nhánh này phát triển từ nguồn PR #782 và thêm **một thư mục tách biệt** \`exp-m1-domain-r00/\`. Không sửa R18, ngân hàng item, SGK, website, Golden UI hoặc Firebase.
-- S1 trực tiếp được kiểm tra trong các lượt AUTHORING trước: SGK KNTT Toán 10 Tập 2, Bài 15 (in 5–10 / PDF 6–11) cho M1–M2 và Bài 16 (in 13–14 / PDF 14–15) cho M3. Tham khảo NotebookLM 12/22 chỉ là nguồn ý tưởng, không có hiệu lực thay S1.
+- S1 trực tiếp được kiểm tra trong các lượt AUTHORING trước và **kiểm tra lại toàn dải trang ngày 10/11/2026**: SGK KNTT Toán 10 Tập 2, Bài 15 (in 5–10 / PDF 6–11) cho M1–M2 và Bài 16 (in 11–18 / PDF 12–19) cho M3. Tham khảo NotebookLM 12/22 chỉ là nguồn ý tưởng, không có hiệu lực thay S1.
 
 ## B. Sản phẩm thực tế trên nhánh này
 
