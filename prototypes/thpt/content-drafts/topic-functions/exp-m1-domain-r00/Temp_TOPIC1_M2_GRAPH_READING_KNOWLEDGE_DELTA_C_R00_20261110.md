@@ -49,7 +49,7 @@ Một bảng doanh thu theo **số vé** chỉ có đầu vào \(n=1,2,3,\ldots\
 
 ## Vì sao chấm rỗng và chấm đặc có ý nghĩa?
 
-Một số quy tắc thay đổi tại một thời điểm hoặc một mức đầu vào. Xét:
+Khi đã biết công thức hoặc quy tắc, ta còn phải đọc **đúng điều kiện tại điểm đổi nhánh**: một nét nối thêm cho đẹp có thể tạo ra điểm không thuộc hàm. **Trong ví dụ mới này**, ta dùng lại ký hiệu \(f\) cho hàm từng đoạn dưới đây (khác hàm \(f(x)=(x-1)^2\) ở hoạt động ba điểm). Xét:
 
 \[
 f(x)=
