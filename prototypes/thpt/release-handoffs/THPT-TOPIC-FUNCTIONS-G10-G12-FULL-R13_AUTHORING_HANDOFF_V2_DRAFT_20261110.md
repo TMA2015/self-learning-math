@@ -1,4 +1,4 @@
-# AUTHORING R13 · CHUYÊN ĐỀ 1 HÀM SỐ VÀ ĐỒ THỊ — BA PHẦN HOÀN CHỈNH Ở MỨC HỌC LIỆU
+# AUTHORING HANDOFF R13, SOURCE R14 · CHUYÊN ĐỀ 1 — MỘT BẢN HỢP NHẤT BA PHẦN
 
 **Ngày:** 10/11/2026 · **Lane:** AUTHORING only · **Github:** Draft PR #801. Đây là **một gói handoff tổng** cho 3 phần Kiến thức/Luyện tập/Tự kiểm tra. Nguồn R18 đã nghiệm thu được bảo toàn, không dùng nội dung R18 làm lời tuyên bố PASS cho các thay đổi R11/R12.
 
@@ -12,8 +12,10 @@ LESSON_IDS: TOP-FUNC-M1..TOP-FUNC-M7
 OUTCOME_COUNT: 48
 ASSESSMENT_MODE: OWNER_HELD_PRIVATE_TOPIC_READINESS_R01_NOT_DEPLOYED
 PRIVATE_RD1_COUNT: 30
-ACADEMIC_SOURCE_SCHEME: THREE_SHA_LOCKED_PUBLIC_PARTS_DRAFT
-ACADEMIC_SOURCE_SINGLE_BLOB: NOT_SET_PENDING_MULTIPART_V2_CONTRACT_CHECK
+ACADEMIC_SOURCE_SCHEME: SINGLE_PUBLIC_COMPILATION_WITH_THREE_EXACT_PARTS
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic-functions/exp-m1-domain-r00/Temp_TOPIC1_FULL_THREE_PART_PUBLIC_CANONICAL_R14_20261110.md
+ACADEMIC_SOURCE_BLOB: aedd6ec7fa09aa4e1602d7cff8698e33cbcfd96b
+ACADEMIC_SOURCE_PARITY: EXACT_R11_R12_R13_SECTION_TEXT_VERIFIED
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC_FUNCTIONS_FULL_R18_Q18_OWNER_INDEPENDENT_VERDICT_RECEIPT_R01_20261108.md
 REVIEW_RECEIPT_BLOB: d2e86bac887ff04cf41f5cc9a1fa3ca622a9ca63
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic-functions/Temp_TOPIC_FUNCTIONS_FULL_AUTHORING_Q01_Q18_A1_A7_PREFLIGHT_R17_20261107.md
@@ -26,11 +28,13 @@ CONTENT_READY: NO
 PUBLIC_SITE_INTEGRATION: NO
 MASTERY_ACTIVATION: NO
 RELEASE_AUTHORIZATION: NO
-BLOCKERS: R12_TO_PRIVATE_R01_EXPOSURE_AUDIT_PENDING; NEW_PUBLIC_R11_R12_RISK_CLEARANCE; V2_MULTIPART_SOURCE_CONTRACT_PENDING; TOPIC_RELEASE_INTAKE_790; SECURE_FINAL_SUBMIT_RUNTIME_QA_PENDING
+BLOCKERS: R12_TO_PRIVATE_R01_EXPOSURE_AUDIT_PENDING; NEW_PUBLIC_R11_R12_RISK_CLEARANCE; Q15_NEW_PUBLIC_CANDIDATES_9_PENDING; TOPIC_RELEASE_INTAKE_790; SECURE_FINAL_SUBMIT_RUNTIME_QA_PENDING
 
-**Không đưa gói này vào `ready/`, không ghi REGISTER thành CONTENT_READY, không merge/deploy.** Trường `ACADEMIC_SOURCE_SINGLE_BLOB` chưa thể giả vờ là một file đầy đủ khi học liệu AUTHORING mới thực sự gồm ba nguồn khóa SHA. Hợp đồng V2/RELEASE phải chấp nhận hợp pháp kiểu multi-part, hoặc AUTHORING tạo một bản vận chuyển thống nhất có chứng cứ parity và chủ dự án cho phép trước khi phát hành. Không tạo chuẩn Q01–Q18 thứ hai.
+**Không đưa gói này vào `ready/`, không ghi REGISTER thành CONTENT_READY, không merge/deploy.** Đã đóng nút thắt **single-source transport** bằng cách tạo MỘT bản vận chuyển R14 có Git blob `aedd6ec7fa09aa4e1602d7cff8698e33cbcfd96b`; ba phần R11/R12/R13 được chép nguyên văn, có marker BEGIN/END và source SHA. Không thêm chuẩn Q01–Q18. Việc hỗ trợ TOPIC/v1.2.0 của cổng V2, chấp thuận theo thẩm quyền và QA bảo mật vẫn do nhánh RELEASE xử lý.
 
-## 1. Ba phần dành cho học sinh — nguồn nội dung gốc duy nhất mỗi phần
+## 1. Một nguồn vận chuyển V2 và ba phần học sinh được bảo toàn nguyên văn
+
+**ACADEMIC_SOURCE_PATH duy nhất:** `prototypes/thpt/content-drafts/topic-functions/exp-m1-domain-r00/Temp_TOPIC1_FULL_THREE_PART_PUBLIC_CANONICAL_R14_20261110.md`, SHA `aedd6ec7fa09aa4e1602d7cff8698e33cbcfd96b` (bản R14 ghép **đúng nguyên văn** từng body R11/R12/R13; không thay toán, không nhân bản câu). Ba tệp dưới đây là **nguồn provenance**, không phải ba `ACADEMIC_SOURCE_PATH` cạnh tranh trong V2.
 
 | Phần | Path chuẩn ở PR #801 | Git blob trên HEAD |
 |---|---|---|
@@ -89,15 +93,15 @@ BLOCKERS: R12_TO_PRIVATE_R01_EXPOSURE_AUDIT_PENDING; NEW_PUBLIC_R11_R12_RISK_CLE
 
 **R11/R12 khác R18:** các đoạn dẫn, bài mới, hình và luyện mới có thể thuộc `DELTA_C_ACADEMIC_MATERIAL`. Quy định Source 07 v1.1 hiện đòi review affected scope, còn quyết định owner mới nhấn review **khi rủi ro thật sự cần**. R11 QA đã ghi `STANDARD_CHANGE_REQUEST` cần đồng bộ vào **chuẩn gốc** khi được phê duyệt. **Không tự cấp PASS mới** của bản R11/R12 từ chứng cứ R18; chưa xong rà soát theo quy định hiện hành thì ghi `STANDARD_CONFLICT_HOLD` đúng phần, không cản việc soạn học liệu.
 
-**Source-lock V2:** R18 handoff Draft `prototypes/thpt/release-handoffs/THPT-TOPIC-FUNCTIONS-G10-G12-FULL-R18_HANDOFF_V2_DRAFT_20261108.md` (blob `34d286aaad311b660580df580d4b89509c1adbb7`) chỉ đúng snapshot cũ; **R13 là bản handoff đề xuất hiện hành, không tự sửa lịch sử R18**. V2 hiện cần tương thích với `TOPIC / FULL_TOPIC_LEARNING_PATH`, `STANDARD_VERSION=1.2.0`, ba nguồn học liệu khóa SHA và private receipt; Issue #790 chưa đóng, RELEASE Draft PR #799 đang mở. Không được sửa nhãn thành SGK hoặc giảm version để qua gate.
+**Source-lock V2:** Đã có ONE BLOB R14 làm `ACADEMIC_SOURCE_BLOB`, thay thế phương án multi-part chưa chắc được hỗ trợ. R18 handoff Draft `prototypes/thpt/release-handoffs/THPT-TOPIC-FUNCTIONS-G10-G12-FULL-R18_HANDOFF_V2_DRAFT_20261108.md` (blob `34d286aaad311b660580df580d4b89509c1adbb7`) chỉ đúng snapshot cũ; **R13 là handoff đề xuất hiện hành được cập nhật để tham chiếu R14; không tự sửa lịch sử R18**. V2 hiện cần tương thích với `TOPIC / FULL_TOPIC_LEARNING_PATH`, `STANDARD_VERSION=1.2.0`, ba nguồn học liệu khóa SHA và private receipt; Issue #790 chưa đóng, RELEASE Draft PR #799 đang mở. Không được sửa nhãn thành SGK hoặc giảm version để qua gate.
 
 ## 5. QA AUTHORING R13 thực hiện và checkpoint
 
 - Kiểm trực tiếp GitHub **3/3 nguồn hiện hành SHA đúng**, baseline R18 và Q18 receipt giữ bất biến; `48/48` outcome có mặt trong R12, `28/28` Written IDs trong R12, M1–M7 được nhắc trong cả ba phần.
 - R13 student copy có hướng dẫn trước/trong/sau, Final Submit, privacy và fallback; không chứa thân câu/đáp án/rubric hoặc bảng ID kín; soát hành vi UI vẫn PENDING.
 - Q16/18 receipt original có đúng 4 SHA-256 tư nhân và Academic/PED PASS; **không** giả tính hash mới của tệp chưa được cung cấp.
-- **Chưa QA:** runtime bảo mật; private vs 14 public collision; mới 9 candidate Q15; V2 hợp đồng multi-part; review học thuật/PED phần R11/R12 nếu còn yêu cầu có hiệu lực; actual browser/device AP/CI trên HEAD.
+- **Đã đóng:** source transport một file, một Git blob; 3/3 source-body parity (không phải academic review mới). **Chưa QA:** runtime bảo mật; private vs 14 public collision; 9 candidate Q15; cổng Topic/v1.2.0 của RELEASE; review học thuật/PED phần R11/R12 nếu còn yêu cầu hiện hành; actual browser/device AP/CI trên HEAD.
 
-**AUTHORING THREE PARTS SOURCE ASSEMBLED = YES.** **PRIVATE RD1 R01 ACADEMIC/PED PASS PRESERVED = YES.** **OFFICIAL TOPIC SELF-CHECK RUNNING = NO.** **CONTENT_READY = NO.** **MERGE/DEPLOY = NO.**
+**AUTHORING THREE PARTS SOURCE ASSEMBLED = YES.** **ONE PUBLIC ACADEMIC_SOURCE_BLOB = aedd6ec7fa09aa4e1602d7cff8698e33cbcfd96b.** **PRIVATE RD1 R01 ACADEMIC/PED PASS PRESERVED = YES.** **OFFICIAL TOPIC SELF-CHECK RUNNING = NO.** **CONTENT_READY = NO.** **MERGE/DEPLOY = NO.**
 
 Bước tiếp theo không viết lại đề: owner-held private collision audit và chuẩn nguồn, sau đó RELEASE tiếp nhận qua cổng #790 khi hợp đồng đã hợp lệ; không biến phần còn lại thành chuỗi công việc nhỏ thuộc nhánh AUTHORING.
