@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Đạo hàm · Từ cát tuyến đến tiếp tuyến</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:#183b54;background:#fff}
+*{box-sizing:border-box}
+body{margin:0;padding:12px}
+.d5-card{max-width:920px;margin:auto;background:#fff;border:1px solid #c7dfe9;border-radius:16px;overflow:hidden}
+.d5-top{background:#eaf4fa;padding:17px 20px}
+.d5-top h1{font-size:20px;line-height:1.4;margin:0 0 7px}
+.d5-top p{margin:0;line-height:1.7;font-size:15px}
+.d5-main{padding:17px 20px}
+.d5-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.d5-control{min-width:0}
+.d5-control label{display:block;font-size:14px;font-weight:650;margin-bottom:5px}
+.d5-control select{padding:9px;border-radius:8px;border:1px solid #b9d6e5;background:#fff;color:#183b54;max-width:100%;width:100%;font:inherit}
+.d5-control input{width:100%;min-height:35px;accent-color:#1687b4}
+.d5-actions{display:flex;flex-wrap:wrap;gap:8px;margin:13px 0}
+.d5-actions button{padding:8px 13px;border:1px solid #bad5e3;background:white;color:#18516e;font:inherit;border-radius:9px;cursor:pointer}
+.d5-actions button:focus-visible,.d5-control select:focus-visible,.d5-control input:focus-visible{outline:2px solid #1687b4;outline-offset:2px}
+.d5-graphs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.d5-graph{border:1px solid #dceaf2;background:#fbfdff;border-radius:12px;overflow:hidden}
+.d5-graph h2{font-size:15px;margin:0;padding:10px 13px;background:#f1f8fc}
+.d5-graph canvas{display:block;width:100%;height:285px}
+.d5-info{margin-top:13px;background:#f3f9fc;border:1px solid #d7eaf2;border-radius:11px;padding:12px 14px;line-height:1.75;font-size:14px}
+.d5-foot{margin-top:10px;color:#526f81;line-height:1.7;font-size:13px}
+@media(max-width:640px){body{padding:7px}.d5-top,.d5-main{padding:13px}.d5-graphs,.d5-controls{grid-template-columns:1fr}.d5-graph canvas{height:250px}.d5-top h1{font-size:18px}}
+</style></head><body>
+<section class="d5-card" aria-label="Mô hình đạo hàm và tiếp tuyến">
+<header class="d5-top"><h1>Đạo hàm: từ cát tuyến đến tiếp tuyến</h1>
+<p>Chọn một điểm M trên đồ thị, thu hẹp khoảng Δx để so độ dốc của cát tuyến với tiếp tuyến. Đồ thị ở khung bên phải cho biết đạo hàm thay đổi ra sao. Hãy thử cả trường hợp tiếp tuyến nằm ngang <strong>nhưng không có cực trị</strong>.</p></header>
+<main class="d5-main">
+<div class="d5-controls">
+<div class="d5-control"><label for="fn">Chọn hàm số</label>
+<select id="fn"><option value="turn">f(x) = x³/3 − x (có hai cực trị)</option><option value="flat">f(x) = x³ (đạo hàm bằng 0 nhưng không cực trị)</option></select></div>
+<div class="d5-control"><label for="x">Hoành độ tiếp điểm x₀: <output id="xvalue" for="x">0</output></label>
+<input id="x" type="range" min="-2" max="2" step="0.05" value="0"></div>
+<div class="d5-control"><label for="step">Khoảng Δx = h: <output id="hvalue" for="step">1</output></label>
+<input id="step" type="range" min="0.05" max="1.5" step="0.05" value="1"></div>
+</div>
+<div class="d5-actions"><button type="button" data-x="-1">x₀ = −1</button><button type="button" data-x="0">x₀ = 0</button><button type="button" data-x="1">x₀ = 1</button><button type="button" id="reset">Đặt lại</button></div>
+<div class="d5-graphs">
+<div class="d5-graph"><h2>Đồ thị f(x) và hai đường qua M</h2><canvas id="graph" role="img" aria-label="Đồ thị f(x) xanh dương, cát tuyến nét đứt màu cam và tiếp tuyến xanh lá. Nội dung chính xác mô tả trong khung chữ bên dưới."></canvas></div>
+<div class="d5-graph"><h2>Đồ thị f′(x): dấu đạo hàm</h2><canvas id="derivative" role="img" aria-label="Đồ thị đạo hàm với điểm được đánh dấu tại x không. Dấu của đạo hàm được giải thích bằng chữ."></canvas></div>
+</div>
+<div class="d5-info" id="info" role="status" aria-live="polite"></div>
+<p class="d5-foot">Đường xanh dương: f(x). Xanh lá: tiếp tuyến tại M có hệ số góc f′(x₀). Cam nét đứt: cát tuyến qua M và N ứng với Δx = h. Tại một điểm có đạo hàm bằng 0, <strong>chưa thể kết luận có cực trị</strong>; cần quan sát dấu đạo hàm hai phía hoặc lập luận tương đương.</p>
+<p class="d5-foot">Hoạt động công khai trong phần Kiến thức/Vận dụng, không chấm chính thức và không ghi Skill Mastery.</p>
+</main></section>
+<script>
+(function(){
+"use strict";
+const get=id=>document.getElementById(id);
+const mode=get("fn"),x=get("x"),step=get("step"),info=get("info");
+function model(){if(mode.value==="flat")return{f:t=>t*t*t,df:t=>3*t*t,name:"x³"};return{f:t=>t*t*t/3-t,df:t=>t*t-1,name:"x³/3 − x"};}
+function pretty(v){const a=Math.round(v*1000)/1000;return String(Object.is(a,-0)?0:a).replace("-","−").replace(".",",");}
+function setup(canvas){const w=canvas.clientWidth||420,h=canvas.clientHeight||285,dpr=Math.min(window.devicePixelRatio||1,2);canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);const c=canvas.getContext("2d");c.setTransform(dpr,0,0,dpr,0,0);c.fillStyle="#fbfdff";c.fillRect(0,0,w,h);return {c,w,h};}
+function plot(canvas,fun,rangeX,rangeY,curveOptions,extra){
+ const {c,w,h}=setup(canvas),left=39,right=w-15,top=17,bottom=h-28;
+ const xx=t=>left+(t-rangeX[0])/(rangeX[1]-rangeX[0])*(right-left);
+ const yy=t=>bottom-(t-rangeY[0])/(rangeY[1]-rangeY[0])*(bottom-top);
+ c.lineWidth=1;c.strokeStyle="#e1edf4";c.font="12px system-ui,Arial";c.fillStyle="#557286";
+ for(let k=-2;k<=2;k++){const px=xx(k);c.beginPath();c.moveTo(px,top);c.lineTo(px,bottom);c.stroke();c.fillText(String(k),px-4,bottom+17);}
+ for(let k=Math.ceil(rangeY[0]);k<=Math.floor(rangeY[1]);k++){const py=yy(k);c.beginPath();c.moveTo(left,py);c.lineTo(right,py);c.stroke();if(k%2===0)c.fillText(String(k),4,py+4);}
+ c.lineWidth=1.4;c.strokeStyle="#839eb1";c.beginPath();c.moveTo(xx(0),top);c.lineTo(xx(0),bottom);c.moveTo(left,yy(0));c.lineTo(right,yy(0));c.stroke();
+ c.save();c.beginPath();c.rect(left,top,right-left,bottom-top);c.clip();
+ function curve(fn,color,width,dashes=[]){c.strokeStyle=color;c.lineWidth=width;c.setLineDash(dashes);c.beginPath();for(let i=0;i<=320;i++){const t=rangeX[0]+(rangeX[1]-rangeX[0])*i/320;const pos=[xx(t),yy(fn(t))];if(i===0)c.moveTo(...pos);else c.lineTo(...pos);}c.stroke();c.setLineDash([]);}
+ curve(fun,curveOptions.color||"#1687b4",2.6);
+ function dot(px,py,fill){c.beginPath();c.arc(xx(px),yy(py),5.4,0,2*Math.PI);c.fillStyle=fill;c.fill();c.lineWidth=1.3;c.strokeStyle="#fff";c.stroke();}
+ extra({curve,dot,c,xx,yy});c.restore();
+}
+function draw(){
+ const m=model(),x0=Number(x.value),h=Number(step.value),y0=m.f(x0),next=m.f(x0+h),sec=(next-y0)/h,tan=m.df(x0);
+ get("xvalue").textContent=pretty(x0);get("hvalue").textContent=pretty(h);
+ plot(get("graph"),m.f,[-2.6,2.6],[-5,5],{color:"#1687b4"},o=>{
+ o.curve(t=>y0+tan*(t-x0),"#218f73",2.2);
+ o.curve(t=>y0+sec*(t-x0),"#e9922a",2,[6,5]);
+ o.dot(x0,y0,"#e9922a");o.dot(x0+h,next,"#1687b4");
+ });
+ plot(get("derivative"),m.df,[-2.6,2.6],[-2,7.5],{color:"#218f73"},o=>{
+ o.dot(x0,tan,"#e9922a");
+ o.c.beginPath();o.c.moveTo(o.xx(x0),o.yy(0));o.c.lineTo(o.xx(x0),o.yy(tan));o.c.strokeStyle="#e9922a";o.c.setLineDash([4,4]);o.c.lineWidth=1.5;o.c.stroke();o.c.setLineDash([]);
+ });
+ let explanation;
+ if(mode.value==="flat"&&Math.abs(x0)<1e-9)explanation="Tại x₀ = 0, f′(0) = 0 nên tiếp tuyến nằm ngang, nhưng f(x) = x³ vẫn tăng qua 0. Không có cực trị tại đây: đạo hàm không đổi dấu khi đi qua 0.";
+ else if(mode.value==="turn"&&Math.abs(Math.abs(x0)-1)<1e-9)explanation=x0<0?"Đạo hàm đổi từ dương sang âm khi qua −1, nên f đạt cực đại địa phương tại x = −1.":"Đạo hàm đổi từ âm sang dương khi qua 1, nên f đạt cực tiểu địa phương tại x = 1.";
+ else explanation=tan>0?"Tại x₀ đang chọn, đạo hàm dương nên đồ thị tăng ở lân cận x₀ (trong ví dụ này).":tan<0?"Tại x₀ đang chọn, đạo hàm âm nên đồ thị giảm ở lân cận x₀ (trong ví dụ này).":"f′(x₀) = 0. Cần xét dấu ở hai bên để quyết định có cực trị hay không.";
+ info.textContent="f(x) = "+m.name+"; x₀ = "+pretty(x0)+"; f(x₀) = "+pretty(y0)+". Cát tuyến: [f(x₀+h) − f(x₀)]/h = "+pretty(sec)+". Tiếp tuyến: f′(x₀) = "+pretty(tan)+". "+explanation;
+}
+let busy=false;function schedule(){if(busy)return;busy=true;requestAnimationFrame(()=>{busy=false;draw()});}
+[mode,x,step].forEach(el=>el.addEventListener("input",schedule));
+document.querySelectorAll("button[data-x]").forEach(btn=>btn.addEventListener("click",()=>{x.value=btn.dataset.x;draw()}));
+get("reset").addEventListener("click",()=>{mode.value="turn";x.value="0";step.value="1";draw()});
+window.addEventListener("resize",schedule);
+draw();
+})();
+</script></body></html>
