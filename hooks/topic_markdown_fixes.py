@@ -192,7 +192,10 @@ def _short_reveal_title(raw: str, kind: str = "question") -> str:
     value = raw.strip()
     lowered = value.casefold()
     answer_words = ("lời giải", "đáp án", "đối chiếu")
-    if not any(word in lowered for word in answer_words):
+    # Last G10 Knowledge candidate uses “Tự mở kết quả sau khi đã thử”.
+    # It is a user-initiated answer reveal, not an academic new question.
+    result_reveal = lowered.startswith("tự mở kết quả sau khi")
+    if not any(word in lowered for word in answer_words) and not result_reveal:
         return raw
     if not ("mở" in lowered or "em đã" in lowered or "sau khi tự" in lowered):
         return raw
