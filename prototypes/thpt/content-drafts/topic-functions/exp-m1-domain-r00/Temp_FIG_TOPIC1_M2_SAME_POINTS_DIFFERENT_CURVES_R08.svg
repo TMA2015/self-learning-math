@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="480" viewBox="0 0 580 480" role="img" aria-labelledby="ttl desc">
+<title id="ttl">Hai đồ thị khác nhau đi qua cùng ba điểm</title>
+<desc id="desc">Trên đoạn x từ 0 đến 2, parabol f(x) bằng bình phương x trừ 1 và đường chữ V g(x) bằng giá trị tuyệt đối x trừ 1 cùng qua A(0;1), B(1;0), C(2;1). Tại x bằng 0,5, f bằng 0,25 nhưng g bằng 0,5.</desc>
+<rect width="580" height="480" rx="16" fill="#fff"/>
+<text x="24" y="42" fill="#183b54" font-family="system-ui,Arial,sans-serif" font-size="23" font-weight="700">Ba điểm giống nhau, hai đồ thị khác nhau</text>
+<text x="24" y="76" fill="#42677d" font-family="system-ui,Arial,sans-serif" font-size="18">Chỉ xét miền D = [0, 2]</text>
+<rect x="22" y="100" width="536" height="282" rx="12" fill="#fafdff" stroke="#d6e8f1" stroke-width="2"/>
+<g stroke="#dceaf1" stroke-width="1"><path d="M100 130V346 M200 130V346 M300 130V346 M400 130V346 M500 130V346 M82 150H522 M82 240H522 M82 330H522"/></g>
+<g stroke="#849fb2" stroke-width="2"><path d="M88 330H526 M100 344V126"/></g>
+<g font-family="system-ui,Arial,sans-serif" fill="#43677c" font-size="17">
+<text x="91" y="363">0</text><text x="188" y="363">0,5</text><text x="293" y="363">1</text><text x="492" y="363">2</text>
+<text x="65" y="337">0</text><text x="65" y="157">1</text>
+<text x="514" y="348">x</text><text x="89" y="127">y</text>
+</g>
+<path d="M100 150 Q300 510 500 150" fill="none" stroke="#1386b4" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M100 150 L300 330 L500 150" fill="none" stroke="#248565" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<g stroke="#d38d32" stroke-width="2.5" stroke-dasharray="6 5" fill="none"><path d="M200 330V240"/></g>
+<circle cx="200" cy="285" r="6.8" fill="#1386b4" stroke="#fff" stroke-width="2"/>
+<circle cx="200" cy="240" r="6.8" fill="#248565" stroke="#fff" stroke-width="2"/>
+<g fill="#243f55" stroke="#fff" stroke-width="2.4"><circle cx="100" cy="150" r="6.5"/><circle cx="300" cy="330" r="6.5"/><circle cx="500" cy="150" r="6.5"/></g>
+<g font-family="system-ui,Arial,sans-serif" fill="#243f55" font-size="17" font-weight="650">
+<text x="112" y="142">A</text><text x="310" y="319">B</text><text x="511" y="142">C</text>
+</g>
+<g font-family="system-ui,Arial,sans-serif" font-size="18">
+<line x1="28" y1="408" x2="80" y2="408" stroke="#1386b4" stroke-width="4"/>
+<text x="91" y="414" fill="#284f67">f(x) = (x − 1)²</text>
+<line x1="305" y1="408" x2="357" y2="408" stroke="#248565" stroke-width="4"/>
+<text x="368" y="414" fill="#284f67">g(x) = |x − 1|</text>
+<text x="28" y="451" fill="#365d73" font-size="18">Tại x = 0,5: f(0,5) = 0,25; g(0,5) = 0,5.</text>
+</g>
+</svg>
