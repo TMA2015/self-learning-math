@@ -51,7 +51,7 @@
 ## V. Bằng chứng đã triển khai tiếp sau kiểm toán (không phải chỉ kế hoạch)
 
 **Mô hình #4 đã dựng lại thực tế cho Chuyên đề 1 M6:**
-- \`Temp_TOPIC1_M6_TANGENT_DERIVATIVE_TWO_GRAPHS_D5_R00_20261110.html\` — source blob \`ceaae390bb21fafb99cd5cdcbf7e8dbf497a6123\` trên AUTHORING PR #801. Hai Canvas f(x), f′(x), cát tuyến/tangent, slider x₀ và |h|, chọn h>0/h<0, hai hàm x³/3−x và x³. **Sửa kết luận f′=0 không đủ cực trị** bằng phản ví dụ.
+- \`Temp_TOPIC1_M6_TANGENT_DERIVATIVE_TWO_GRAPHS_D5_R00_20261110.html\` — source blob \`ebf1f392dcc77fa5c94a2bfd75f500bd97dd7ae5\` trên AUTHORING PR #801. Hai Canvas f(x), f′(x), cát tuyến/tangent, slider x₀ và |h|, chọn h>0/h<0, hai hàm x³/3−x và x³. **Sửa kết luận f′=0 không đủ cực trị** bằng phản ví dụ.
 - \`Temp_TOPIC1_M6_TANGENT_D5_AUTHORING_QA_R01_20261110.md\` — QA **36/36 mock JS** trên ba viewport, lời dẫn và Vận dụng đã có; \`DELTA_C\` scoped review pending, không sửa R18.
 
 **Mô hình #6 đã dựng lại thực tế cho Chuyên đề 2 P03:**
@@ -61,5 +61,7 @@
 **Mô hình #8** đã tồn tại trên PR #793 từ lượt trước, đã QA logic 48/48 mock trên nhiều trạng thái; không làm bản sao thứ hai.
 
 **Giới hạn chung:** các phép thử là DOM/Canvas **giả lập**, chưa là browser render/thiết bị thật cho các file mới; không tự nhận Academic/PED PASS hoặc CONTENT_READY. Bản HTML 10-in-1 gốc vẫn chỉ dùng làm **nguồn ý tưởng**, không được deploy.
+
+**Kiểm tra M6 bổ sung tại các giá trị biên:** HTML D5 vừa sửa để tự mở rộng thang X/Y khi cát tuyến có điểm N ở x₀+h vượt vùng vẽ mặc định; kết quả mock tọa độ 4 trường hợp × 3 bề rộng = **12/12 điểm M/N nằm trong clip đúng**. Nguồn chính xác hiện tại Git blob \`ebf1f392dcc77fa5c94a2bfd75f500bd97dd7ae5\`. Đã chuẩn bị **một nguồn review targeted R02** \`Temp_TOPIC1_M6_NOTEBOOKLM_SINGLE_REVIEW_SOURCE_R02_20261110.md\` (Git blob \`199468283a11050cb6bd7c527a979d64f1c7412e\`); packet R01 đã xóa khỏi HEAD, không dùng đồng thời.
 
 **Kết luận:** \`SOURCE_READ_AND_BROWSER_INITIALIZED_BUG_VERIFIED\`; \`10_MODELS_CLASSIFIED\`; \`MATH_P0_IDENTIFIED_1_4_7\`; \`MODEL8_REUSE_EXISTING\`; \`10_IN_1_RAW_DO_NOT_PUBLISH\`; \`AUTHORING_ONLY\`.
