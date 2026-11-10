@@ -1,9 +1,11 @@
-# Math App — Quy trình NotebookLM theo cụm bài và xử lý sửa đổi nhỏ · Toán THPT v1.2 · DỰ THẢO
+# Math App — Quy trình NotebookLM theo cụm bài và xử lý sửa đổi nhỏ · Toán THPT v1.2 · CÓ HIỆU LỰC
 
-**Ngày hiệu lực:** 10/11/2026 theo quyết định chủ dự án, **từ commit chuẩn Q18 v2.0.0 và tài liệu này được merge vào main**; bản v1.1 giữ làm lịch sử.  
+**Ngày hiệu lực:** 10/11/2026 theo quyết định chủ dự án; Q18 v2.0.0 đã merge vào main qua governance PR #804. Bản Project Source 07 v1.1 chỉ dùng làm lịch sử sau khi chủ dự án đồng bộ bản đang gắn trong Project.  
 **Loại tài liệu:** Permanent Project Source cho ChatGPT Math App (không phải Batch Source gửi review).  
 **Phạm vi:** Toán THPT lớp 10–12, R4, SGK/SBT Kết nối tri thức.  
 **Phối hợp với:** `06_NOTEBOOKLM_REVIEW_HANDOFF_PROTOCOL_v1.0.md` (quy tắc bàn giao file và prompt, vẫn bắt buộc).
+
+**Trạng thái sử dụng:** Điều VIII và chuẩn gốc v2.0.0 §X-C quyết định phạm vi đang có hiệu lực; điều VII là lịch sử đề xuất đã được giải quyết, không phải một HOLD mới. Ngoại lệ tự kiểm Knowledge SGK **không** áp mặc định cho AUTHORING Topic mới. Khi tiến hành NotebookLM review thật, áp Source 06, năm Permanent Sources THPT v2.1 và một lần review đúng Delta chịu ảnh hưởng.
 
 **OWNER APPROVED — SINGLE SOURCE:** Bản v1.2 thay quy tắc Delta vận hành cũ kể từ khi Q18 v2.0.0 merged vào main; không phải chuẩn thứ hai hoặc Permanent Source NotebookLM thứ sáu.
 
