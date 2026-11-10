@@ -186,7 +186,7 @@ function test(){
    r.replace("BASELINE_PED_REVIEW_STATUS: NOT_LOCATED","BASELINE_PED_REVIEW_STATUS: UNVERIFIED"),
    r.replace("PED_CURRENT_OUTCOME_SELF_CHECK: PASS","PED_CURRENT_OUTCOME_SELF_CHECK: HOLD"),
    r.replace("OUTCOME_SCOPE: G10-O02","OUTCOME_SCOPE: G10-O02,G10-O03"),
-   r.replace("BASELINE_REVIEW_RECEIPT_BLOB: "+d,"BASELINE_REVIEW_RECEIPT_BLOB: "+a)
+   r.replace("BASELINE_REVIEW_RECEIPT_BLOB: "+"d".repeat(40),"BASELINE_REVIEW_RECEIPT_BLOB: "+"a".repeat(40))
  ];
  bad.forEach((text,i)=>assert.equal(validateReceipt(text,{sourceBlobOf:p=>map[p]}).status,"HOLD","Negative case "+i));
  assert.equal(validateReceipt(r,{sourceBlobOf:p=>"e".repeat(40)}).status,"HOLD","Source blob must match actual bytes");
