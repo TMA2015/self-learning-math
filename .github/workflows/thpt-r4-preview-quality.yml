@@ -5,6 +5,8 @@ on:
     paths:
       - 'mkdocs.thpt-preview.yml'
       - 'mkdocs.yml'
+      - 'hooks/topic_markdown_fixes.py'
+      - 'scripts/test_thpt_knowledge_short_labels.py'
       - 'scripts/test-thpt-static-release.cjs'
       - 'scripts/test-root-program-selector-v1.cjs'
       - 'scripts/test-site-navigation-v1.js'
