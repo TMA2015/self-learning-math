@@ -30,6 +30,10 @@ Cổng V2 chấp nhận `TOPIC/FULL_TOPIC_LEARNING_PATH` trên **cùng** `SLM-TH
 - File review/handoff AUTHORING sau tương thích chỉ cần **Delta B metadata/source-equivalence có chứng cứ**, không ép NotebookLM review lại toán không đổi. Khi chuyển READY phải thay trạng thái blocker/assessment metadata thành sự thật, tạo đúng 1 manifest `ready/` + 1 REGISTER row; chỉ qua kiểm tra V2 trên HEAD thật mới tính `CONTENT_READY`. Không chuyển `OWNER_HELD_PRIVATE_TOPIC_READINESS_NOT_DEPLOYED` thành chức năng đã phát hành; public static client chỉ `CLIENT_SELF_CHECK_NO_MASTERY`.
 - Việc sửa CI không cấp quyền merge, deploy, RD1 chính thức, Mastery hoặc Topic publish. R1–R5/AP1–AP5/Q16, owner permission, P1/P2 vẫn độc lập.
 
+### RELEASE intake độc lập cho Topic (10/11/2026)
+
+Hướng dẫn xử lý nút thắt đã phân loại tại [TOPIC_INTAKE_UNBLOCK_AND_ISOLATION_R01_20261110.md](TOPIC_INTAKE_UNBLOCK_AND_ISOLATION_R01_20261110.md). PR #799 thêm `THPT Topic V2 Intake and Source-Scope QA (no deploy)`: phân biệt `TOPIC_CANDIDATE`, `SGK_CANDIDATE`, `MIXED_TOPIC_AND_SGK` và thay đổi Q16 dùng chung; không tự gán Academic/PED PASS hay CONTENT_READY. V2 lấy phiên bản chuẩn **được duyệt và có hiệu lực** từ một nguồn Q01–Q18, không bị nghẽn khi nâng phiên bản; phiên bản Q18 Draft chưa được chấp nhận. SGK Knowledge PR #797 có lối Q18 nâng cấp riêng sau governance, **không bắt Topic reviewer lại nguồn đã PASS chỉ vì snapshot SGK cũ đổi**, và không lấy Topic reviewer PASS để cấp tự kiểm cho SGK.
+
 ## Handoff V2 sau quyết định chủ dự án 02/11/2026
 
 Trước khi nhận gói học liệu mới, cả hai nhánh **bắt buộc** đọc [THPT two-lane source-locked contract v2](../THPT_TWO_LANE_SOURCE_LOCKED_HANDOFF_CONTRACT_v2_20261102.md) và `AGENTS.md`. Nhánh A = học thuật (đầy đủ SGK/SBT, D1–D6, PED1–PED6, NotebookLM Academic + Pedagogical PASS đúng snapshot, danh sách ID, delta); nhánh B = tích hợp, AP1–AP5 trên UI, Final Submit, R1–R5, P1/P2. Hai nhánh trao đổi bằng một handoff canonical trong `release-handoffs/`, một manifest `ready/PACKET_ID.md` và REGISTER một dòng; biên bản NotebookLM không tự biến thành manifest.
