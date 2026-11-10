@@ -37,6 +37,10 @@ jobs:
           const classificationStep=w.indexOf('Assert safe push-scope classifier and classify FULL main push');
           assert(queueStep>0 && classificationStep>queueStep,'Ready/REGISTER guard must run before any no-deploy classification');
           assert(w.slice(queueStep,classificationStep).includes('node scripts/test-thpt-release-queue.cjs'),'Ready/REGISTER preflight cannot be skipped');
+          const v2Step=w.indexOf('Enforce V2 source/receipt SHA of any new READY packet even when no site deployment');
+          assert(v2Step>queueStep && v2Step<classificationStep,'V2 source lock must precede metadata-only deploy skip');
+          assert(w.slice(v2Step,classificationStep).includes('node scripts/test-thpt-handoff-gate-v2.cjs'),'New V2 READY receipt SHA cannot be skipped');
+
           assert(!w.includes('continue-on-error:'),'No failures may be ignored');
           console.log('PASS deploy safety: all original main release gate signatures present; full push diff and no bypass.');
           NODE
