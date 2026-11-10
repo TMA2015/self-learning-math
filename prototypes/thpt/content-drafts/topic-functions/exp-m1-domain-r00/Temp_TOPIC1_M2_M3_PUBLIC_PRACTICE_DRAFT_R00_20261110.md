@@ -1,18 +1,8 @@
 # Chuyên đề 1 · Luyện tập bổ sung cho M2–M3
 
-**AUTHORING R00 — CÁC CÂU CHƯA REVIEW, CHƯA CANONICAL.** Bản này chứa **7 câu áp dụng và 2 bài tự luận Written candidate**. Tất cả thuộc Luyện tập hoặc Vận dụng công khai; không đưa vào Tự kiểm tra RD1, không sinh Mastery. DRAFT ID chỉ là vị trí theo dõi; đối chiếu Q15 với ngân hàng R18/SGK/Topic trước khi tạo item canonical. Có thể tái sử dụng một item đã duyệt bằng nhiều placement/role, không nhân bản một câu chỉ vì chuyển sang Topic.
+**AUTHORING R00 — CÁC CÂU CHƯA REVIEW, CHƯA CANONICAL.** Bản này chứa **5 câu áp dụng và 2 bài tự luận Written candidate**. Tất cả thuộc Luyện tập hoặc Vận dụng công khai; không đưa vào Tự kiểm tra RD1, không sinh Mastery. DRAFT ID chỉ là vị trí theo dõi; đối chiếu Q15 với ngân hàng R18/SGK/Topic trước khi tạo item canonical. Có thể tái sử dụng một item đã duyệt bằng nhiều placement/role, không nhân bản một câu chỉ vì chuyển sang Topic.
 
 ## A. Đọc bảng và đồ thị — M2
-
-### DRAFT-T1-M2-APP04 — Dữ liệu đo chưa phải đường nối
-
-Một nhóm học sinh đo nhiệt độ nước tại phút 0 được 20°C, phút 4 được 30°C. Bạn A tuyên bố: “Đúng phút 2, nước chắc chắn 25°C vì ta có thể nối hai dấu chấm bằng đoạn thẳng”. Nhận xét này có căn cứ chắc chắn không? Nếu muốn tính 25°C thì cần nêu thêm giả định nào?
-
-<details><summary>Đối chiếu</summary>
-
-**Không có căn cứ chắc chắn** từ hai số đo riêng lẻ. Đường nối thẳng là một mô hình **nội suy tuyến tính**, không phải dữ liệu đã đo. Nếu giả định nhiệt độ biến thiên đều giữa phút 0 và phút 4, khi ấy mới tính được \(20+(30-20)\cdot2/4=25\)°C. Cần phân biệt phép đo và giả định mô hình.
-
-</details>
 
 ### DRAFT-T1-M2-APP05 — Nhánh nào nhận đúng tại mốc?
 
@@ -47,16 +37,6 @@ Một bảng chỉ ghi vận tốc của xe tại \(t=0\) là 10 km/h và tại 
 </details>
 
 ## B. Parabol và hai phép biến đổi — M3
-
-### DRAFT-T1-M3-APP06 — Trị tuyệt đối tác động ở đâu?
-
-Cho \(f(x)=(x-1)^2-4\). Hãy tính \(|f(-2)|\) và \(f(|-2|)\); giải thích tại sao hai kết quả khác nhau.
-
-<details><summary>Đối chiếu</summary>
-
-\(f(-2)=(-3)^2-4=5\) nên \(|f(-2)|=5\). Còn \(f(|-2|)=f(2)=(1)^2-4=-3\). Một phép lấy trị tuyệt đối **đầu ra**, phép kia đổi **đầu vào** trước khi tính.
-
-</details>
 
 ### DRAFT-T1-M3-APP07 — Nghiệm âm có được đưa vào |x|?
 
@@ -106,8 +86,8 @@ Cho \(f(x)=x^2-4x+3\). Xét \(g(x)=|f(x)|\) và \(h(x)=f(|x|)\). (a) Hãy mô t�
 
 | Nhóm | Số bài ứng viên | Mục tiêu năng lực | Trạng thái |
 |---|---:|---|---|
-| M2 · APP04–06 + WR01 | 4 | đọc dữ liệu, điều kiện biên, lập luận đồng biến | DRAFT, cần cross-bank Q15 |
-| M3 · APP06–09 + WR02 | 5 | hai phép biến đổi trị tuyệt đối, trường hợp a=0, cực trị có miền | DRAFT, cần cross-bank Q15 |
-| **Tổng** | **9** | PUBLIC PRACTICE / WRITTEN CANDIDATE | **NOT CANONICAL** |
+| M2 · APP05–06 + WR01 | 3 | đọc dữ liệu, điều kiện biên, lập luận đồng biến | DRAFT, cần cross-bank Q15 |
+| M3 · APP07–09 + WR02 | 4 | hai phép biến đổi trị tuyệt đối, trường hợp a=0, cực trị có miền | DRAFT, cần cross-bank Q15 |
+| **Tổng** | **7** | PUBLIC PRACTICE / WRITTEN CANDIDATE | **NOT CANONICAL** |
 
 **Không trùng ID nội bộ**, nhưng một số bài cùng họ dạng với ví dụ R18 M2/M3 và gói R00 cũ; phải so sánh **stem, phương án, lời giải, rubric** trên nguồn canonical trước khi đưa vào thư viện chung. Nếu trùng chính câu, thêm placement/role vào một item duy nhất, không phát hành item khác ID. Các câu mới phải được NotebookLM phản biện về Academic/PED và Q01–Q18 đúng phần DELTA_C. Không sử dụng bất kỳ câu này làm chứng cứ RD1 độc lập sau khi đã lộ đáp án trong Practice.
