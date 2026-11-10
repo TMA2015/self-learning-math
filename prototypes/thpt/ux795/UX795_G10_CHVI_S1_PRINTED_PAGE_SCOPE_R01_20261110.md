@@ -31,6 +31,14 @@
 - Knowledge B16 được bổ sung ví dụ độc lập: \(I(1;2)\), \(A(0;0)\), \(y=a(x-1)^2+2\), \(a=-2\), suy ra \(y=-2x^2+4x\). Kiểm tại hai điểm đối xứng \((0;0),(2;0)\), kiểm đỉnh \(I(1;2)\). Nếu \(a=0\) thì không là hàm bậc hai; chỉ biết đỉnh chưa đủ để xác định một parabol duy nhất.
 - Source SHA B16 sau bổ sung: `afe31b484ba60f8f7fed243b29995332a5609826`. S1 chứng minh **họ bài** trong SGK; chính ví dụ mới là nội dung tự biên soạn phải chịu tính toán ngược và PED QA theo Q18. Chưa suy rộng thành S1 đầy đủ từng outcome.
 
+## SBT KNTT Tập 2 — nguồn tham khảo S1 đối chiếu dạng bài
+
+- Đã đọc **Sách bài tập Toán 10 Kết nối tri thức, Tập 2**, bản scan trong chính thư mục Drive SGK lớp 10 của chủ dự án. Tên file `sach-bai-tap-toan-10-tap-2-ket-noi-tri-thuc-voi-cuoc-song.pdf`, **143 trang PDF**, 16.249.440 bytes; SHA-256 `3cb33690e0627b9e8ac467c23625b7feb7d05a8422293db0e1b26e44ca6a78c7`. Không đưa trang ảnh/bản PDF lên GitHub công khai.
+- Đã đối chiếu mục lục (PDF trang 3) với trang in thực tế: **Bài 15 SBT trang in 3–9; Bài 16 trang in 10–15; Bài 17 trang in 16–18; Bài 18 trang in 19–21**. Trong khoảng này, **số trang PDF (đếm từ 1) = trang in + 1**.
+- **SBT Bài 16 trang in 12 (PDF trang 13), Ví dụ 3** giải bài toán xác định hệ số parabol `y=ax²+bx+3` từ **hai điểm**, hoặc **một điểm và trục đối xứng**, hoặc **đỉnh**. Điều này củng cố rằng bài toán tìm ngược công thức từ dữ kiện hình học thuộc họ bài cần luyện; ví dụ mới trên Knowledge dùng số khác, chọn dạng đỉnh để giảm ẩn, không sao chép bài nguyên văn.
+- **SBT Bài 16 trang in 14 (PDF trang 15), các bài 6.12–6.16** có yêu cầu nhận dạng, vẽ và tìm parabol từ dữ kiện/đỉnh/điểm; việc dạy bảng giá trị và công thức dạng đỉnh là nền phù hợp.
+- **SBT Bài 17 trang in 16–18** có xét dấu và bất phương trình, trong đó minh họa mối liên hệ với bảng dấu; **Bài 18 trang in 19–21** triển khai hai dạng phương trình căn và phép thử nghiệm ứng viên. Không suy rộng thành đã đối chiếu từng câu trên toàn bộ 19 outcome.
+
 ## Ranh giới chứng cứ
 
 - Đã xác minh thật **ấn bản, số trang in ↔ trang PDF và outcome mở đầu** của B16–B18; phạm vi B15 từ mục lục và trang đầu.
