@@ -185,6 +185,8 @@ Một chương mới **không gửi NotebookLM** nếu chưa tự kiểm:
 
 ## X-C. Đề xuất tự kiểm chứng nội bộ cho cập nhật Kiến thức SGK đã nghiệm thu — Change Log 10/11/2026 (DỰ THẢO)
 
+**OWNER_APPROVAL_OF_EXACT_AMENDMENT:** `PENDING` — chủ dự án đã chỉ đạo giảm phản biện lặp lại nhưng chưa duyệt nguyên văn chế độ Q18 mới. Không dùng draft này để cấp CONTENT_READY, thay SHA lock hoặc mở quyền deploy.
+
 - `STANDARD_CHANGE_REQUEST`: [Q18 enrichment self-verification](standard-changes/STANDARD_CHANGE_REQUEST_Q18_ENRICHMENT_SELF_VERIFICATION_20261110.md). `OWNER_DIRECTION=2026-11-10`: không buộc review độc lập lặp lại cho ví dụ/lời dẫn/hình có thể tự kiểm chứng trong Knowledge đã nghiệm thu; `EXACT_AMENDMENT_APPROVAL=PENDING` cho đến khi chủ dự án duyệt quy tắc và bản chuẩn chính xác.
 - `CHANGE_CLASS=MAJOR`, đề xuất `1.2.0 → 2.0.0` vì bổ sung chế độ bằng chứng thay cho reviewer độc lập trong phạm vi hẹp; **không thay Q01–Q17** và không mở một bộ chuẩn khác.
 - `Q18_INDEPENDENT_REVIEW`: mặc định cho học liệu mới, đổi Core/outcome/điều kiện/đáp án/rubric/RD1, không có baseline PASS, sai toán/nguồn chưa giải quyết. Reviewer Q18 theo hiện hành.
