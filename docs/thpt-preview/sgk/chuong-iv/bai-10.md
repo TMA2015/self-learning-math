@@ -16,7 +16,7 @@
 
     **Thuật ngữ:** Vectơ tọa độ, vectơ đơn vị trên trục, điểm đầu/điểm cuối, độ dài, cùng phương, tọa độ trung điểm/trọng tâm.
 
-    **Sau bài học, em cần làm được:** Tính (overrightarrow{AB}) bằng tọa độ điểm cuối trừ đầu; cộng, trừ, nhân vectơ theo tọa độ; tính độ dài; kiểm cùng phương và tìm tọa độ trung điểm/trọng tâm.
+    **Sau bài học, em cần làm được:** Tính tọa độ vectơ đi từ A đến B bằng cách lấy tọa độ điểm cuối trừ tọa độ điểm đầu; cộng, trừ, nhân vectơ theo tọa độ; tính độ dài; kiểm cùng phương và tìm tọa độ trung điểm, trọng tâm.
 
 === "Kiến thức SGK"
 
@@ -175,7 +175,7 @@
 
         4. **Tự sửa:** viết `v_bờ,y>0`, áp `t=bề_rộng/v_bờ,y`, đặt `v_bờ,x=0` khi không trôi; kiểm điều kiện căn không âm và v_y dương.
 
-        5. **Luyện lại:** B10-P01/P02 → Tự thử `THPT-G10-CHIV-TRY-RIVER-TR01` mới (đã xem đáp án thì không làm bằng chứng độc lập) → D2 mới.
+        5. **Luyện lại:** Ôn các câu về cộng vectơ và tọa độ trong phần Luyện tập, rồi tự giải một tình huống qua sông tương tự trước khi mở lời giải. Nếu đã xem đáp án, hãy đổi dữ kiện để tự thử lại.
 
 
     ### Kiến thức SGK
