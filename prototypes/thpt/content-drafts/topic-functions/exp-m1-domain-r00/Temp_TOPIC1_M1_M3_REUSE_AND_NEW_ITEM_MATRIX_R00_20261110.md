@@ -27,9 +27,9 @@
 | \`DRAFT-T1-M1-APP02\` | O02 | rút gọn phân thức không phục hồi điểm bị loại | so stem+rubric hiện hành |
 | \`DRAFT-T1-M1-APP03\` | O02 | căn nằm ở mẫu khác căn thường | so item gốc |
 | \`DRAFT-T1-M1-APP04\` | O02 | miền số vé và phí xử lý | so ứng dụng bối cảnh khác |
-| \`DRAFT-T1-M1-APP05\` | O02 | giao hai điều kiện và kiểm biên | **HIGH**: trùng với chính ví dụ bổ sung M1 — không nhân thành hai item |
+| \`DRAFT-T1-M1-APP05\` | O02 | căn \(9-x^2\), mẫu \(x+2\), kiểm bốn giá trị ở biên/điểm loại | cùng họ dạng với M1, nhưng stem khác; vẫn so bank |
 | \`DRAFT-T1-M1-APP06\` | O02 | ba ràng buộc căn/mẫu | so item gốc |
-| \`DRAFT-T1-M1-APP07\` | O02 | tập giá trị thay đổi theo miền | **HIGH**: trùng với chính ví dụ bổ sung M1 — dùng lại placement tự thử |
+| \`DRAFT-T1-M1-APP07\` | O02/O09 | tập giá trị trên đoạn không chứa đỉnh \([-1,1]\) | khác ví dụ M1, vẫn so bank trước canonical |
 | \`DRAFT-T1-M1-WR01\` | O02 | phản biện căn ở mẫu, rubric lý do | so Written đã có |
 | \`DRAFT-T1-M1-WR02\` | O02 | phản biện kết luận miền/bình phương | so Written đã có |
 | \`DRAFT-T1-M2-APP04\` | O03 | dữ liệu đo vs nội suy | so \`THPT-G10-TOP-FUNC-P01\` |
