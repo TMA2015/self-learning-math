@@ -4,7 +4,7 @@
 
 **Activation:** `GOVERNANCE_DRAFT_ONLY` · `STANDARD_CONFLICT_HOLD` until Q18 exact amendment owner-approved, canonical standard merged, Project Source 07 v1.1 reconciled and V2 source gate officially migrated. **Never use this template to change a source-lock expected SHA, mark reviewer PASS, or merge/deploy the G10 content.**
 
-## Required packet metadata — replace all placeholders in an actual authoring receipt
+## Required packet metadata — replace all placeholders in a future effective content-owner receipt
 
 ```text
 PACKET_ID: REPLACE_PACKET
@@ -27,7 +27,8 @@ OPEN_P1: 0
 MATH_SELF_CHECK: REPLACE_HOLD_OR_PASS
 PED_SELF_CHECK: REPLACE_HOLD_OR_PASS
 OWNER_POLICY_APPLICABLE: NO_UNTIL_EFFECTIVE
-AUTHORING_SIGNOFF: REPLACE_AUTHORING_REVIEWER_AND_DATE
+CONTENT_OWNER_LANE: RELEASE
+CONTENT_OWNER_SIGNOFF: REPLACE_KNOWLEDGE_EDITOR_AND_DATE
 ```
 
 ## SOURCE_DELTA_EVIDENCE
@@ -54,10 +55,10 @@ Only **new or materially modified** SVGs. Match figures' own Git blobs to the so
 |---|---|---|---|---|---|---|
 | REPLACE_FIG_ID | REPLACE_LESSON | REPLACE_SVG_PATH | REPLACE_40_HEX | REPLACE_FIGURE_MATH_CHECK | REPLACE_READING_GUIDE | HOLD |
 
-## Authoring self-check and release boundaries
+## Content-owner self-check and separate release gates
 
-**AUTHORING** may sign `MATH_SELF_CHECK=PASS` and `PED_SELF_CHECK=PASS` *only* after filling every relevant row and closing actual P0/P1; unresolved or doubtful S1/math is HOLD and returns to independent reviewer. This is **not** `ACADEMIC_PASS` or `PED_PASS` from NotebookLM. No fake 'owner approval of exact amendment'.
+The **owner-delegated RELEASE Knowledge editor** may sign `MATH_SELF_CHECK=PASS` and `PED_SELF_CHECK=PASS` for a changed SGK Knowledge source *only* after filling every relevant row and closing actual P0/P1; unresolved or doubtful S1/math is HOLD and returns to independent reviewer. This is **not** `ACADEMIC_PASS` or `PED_PASS` from NotebookLM. No fake 'owner approval of exact amendment'.
 
-**RELEASE** checks source/figure SHA identity, stable canonical IDs, Q15, Q16 (Final Submit, private RD1, no Mastery), Q17 routes, AP1–AP5/R1–R5 and live Pages after authorized deployment. It does **not** sign mathematics on behalf of AUTHORING. An eventual migrated handoff must have **one** canonical source/receipt/READY manifest/REGISTER entry as appropriate to the approved scope.
+A **separate RELEASE technical gate** checks source/figure SHA identity, stable canonical IDs, Q15, Q16 (Final Submit, private RD1, no Mastery), Q17 routes, AP1–AP5/R1–R5 and live Pages after authorized deployment. It cannot turn the content editor's arithmetic/PED checks into a NotebookLM reviewer verdict. AUTHORING remains responsible for new Topic/core academic authoring outside this proposed Knowledge enrichment profile. An eventual migrated handoff must have **one** canonical source/receipt/READY manifest/REGISTER entry as appropriate to the approved scope.
 
 **G10 #797 candidate:** 27 changed Knowledge page blobs and 11 SVG candidates identified by [RELEASE intake R01](../ux795/UX795_G10_KNOWLEDGE_RELEASE_SOURCE_INTAKE_R01_20261110.md); 81/81 browser PASS is only rendering evidence. Do not pre-fill this template with academic PASS.
