@@ -106,7 +106,7 @@ check(18,"two-person travel-time intersection; extraneous algebraic candidate",[
  "Vận dụng: hai hành trình gặp nhau cùng thời điểm",
  "\\frac{\\sqrt{x^2+9}}5=\\frac{8-x}4",
  "(x-4)(9x-364)=0",
- "\\frac{364}{9}>8",
+ "\\dfrac{364}{9}>8",
  "điểm gặp cách B đúng"
 ],()=>{
  const polynomial=x=>9*x*x-400*x+1456;
