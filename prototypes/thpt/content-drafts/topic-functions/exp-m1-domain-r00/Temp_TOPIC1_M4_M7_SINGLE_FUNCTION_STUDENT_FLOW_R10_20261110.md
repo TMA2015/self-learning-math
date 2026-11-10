@@ -83,10 +83,10 @@ Các câu sau là **item công khai gốc**, đưa sang Topic bằng **placement
 
 | Mạch | Item gốc nên dùng | Mục tiêu và đường khắc phục |
 |---|---|---|
-| M4 | \`THPT-G11-CHVI-B20-C03\` → \`THPT-G11-CHVI-B20-P01\` | Miền log dịch và giải giá trị log; nếu sai, quay lại M4.5 |
-| M5 | \`THPT-G11-CHV-B16-C01\` → \`THPT-G11-CHV-B16-P07\` | Giới hạn tại lỗ và mức bão hòa của mô hình; M5.1/M5.3 |
-| M6 | \`THPT-G11-CHIX-B31-P08\` → \`THPT-G11-CHIX-B31-P05\` | Tiếp tuyến qua điểm và góc nhọn liên tục nhưng không khả vi; M6.2 |
-| M7 | \`THPT-G12-CHI-B01-P01\` → \`THPT-G12-CHI-B01-C04\` | Dấu đạo hàm trên khoảng hợp lệ và phản ví dụ \(f'(a)=0\) nhưng không cực trị; M7.1/M7.2 |
+| M4 | `THPT-G11-CHVI-B20-C03` → `THPT-G11-CHVI-B20-P01` | Miền log dịch và giải giá trị log; nếu sai, quay lại M4.5 |
+| M5 | `THPT-G11-CHV-B16-C01` → `THPT-G11-CHV-B16-P07` | Giới hạn tại lỗ và mức bão hòa của mô hình; M5.1/M5.3 |
+| M6 | `THPT-G11-CHIX-B31-P08` → `THPT-G11-CHIX-B31-P05` | Tiếp tuyến qua điểm và góc nhọn liên tục nhưng không khả vi; M6.2 |
+| M7 | `THPT-G12-CHI-B01-P01` → `THPT-G12-CHI-B01-C04` | Dấu đạo hàm trên khoảng hợp lệ và phản ví dụ \(f'(a)=0\) nhưng không cực trị; M7.1/M7.2 |
 
 Nếu còn thiếu chiều sâu ở một kỹ năng cụ thể, có thể thêm câu **thực sự khác năng lực cần đo**, không đặt hạn mức và không chỉ đổi số của bài cũ.
 
@@ -94,8 +94,8 @@ Nếu còn thiếu chiều sâu ở một kỹ năng cụ thể, có thể thêm
 
 ### AUTHORING CONTROL — KHÔNG RENDER CHO HỌC SINH
 
-- **Vai trò:** Student-facing knowledge bridge theo owner-approved authoring workflow; không sửa đè R18 blob \`2340ea4975b37a457363eea59dd617070934983c\`. Khi compose, rải đúng các chặng M4–M7 tại vị trí bài tương ứng, không tạo tab thứ tư.
-- **Hình:** \`Temp_FIG_TOPIC1_M4_M7_LOG_ONE_FUNCTION_STORY_R10.svg\`, Git blob \`6e6622388ce07dfcb4473c599a48e59a706def7e\`. Chưa chạy thực tế trên website/iOS/Safari.
-- **Bank source exact:** M4 B20 \`33cf4229baa63ac70b4ca1b640a5be8414ed54c1\`; M5 B16 \`cbe3608a8551b85440e955835706f7046d88ef7d\`; M6 B31 \`eda6fdf74345d93cd23e77008d2dcc9a9f6c7111\`; M7 G12 B01 \`4286fa7ea291ecd9c3f0504156ccb80d6e1baa9a\`. **8/8 ID present and exact source confirmed**. No extra \`item_id\`, no private RD1, no Mastery.
+- **Vai trò:** Student-facing knowledge bridge theo owner-approved authoring workflow; không sửa đè R18 blob `2340ea4975b37a457363eea59dd617070934983c`. Khi compose, rải đúng các chặng M4–M7 tại vị trí bài tương ứng, không tạo tab thứ tư.
+- **Hình:** `Temp_FIG_TOPIC1_M4_M7_LOG_ONE_FUNCTION_STORY_R10.svg`, Git blob `6e6622388ce07dfcb4473c599a48e59a706def7e`. Chưa chạy thực tế trên website/iOS/Safari.
+- **Bank source exact:** M4 B20 `33cf4229baa63ac70b4ca1b640a5be8414ed54c1`; M5 B16 `cbe3608a8551b85440e955835706f7046d88ef7d`; M6 B31 `eda6fdf74345d93cd23e77008d2dcc9a9f6c7111`; M7 G12 B01 `4286fa7ea291ecd9c3f0504156ccb80d6e1baa9a`. **8/8 ID present and exact source confirmed**. No extra `item_id`, no private RD1, no Mastery.
 - **Math QA:** verify special points 1/2,1,2,4; derivative/tangent and domain restrictions, limit/interval extrema. This is author QA, not automatic independent Academic/PED PASS.
-- **State:** \`CONTENT_READY=NO\`, no merge/deploy; independent review only if a material mathematical/pedagogical question remains.
+- **State:** `CONTENT_READY=NO`, no merge/deploy; independent review only if a material mathematical/pedagogical question remains.
