@@ -41,3 +41,14 @@ Canonical R18 PUBLIC M1–M7 vẫn nguyên Git blob **\`2340ea4975b37a457363eea5
 | Merge / deploy / Skill Mastery | NO |
 
 **NEXT:** reviewer độc lập R06 phân loại từng Qxx/outcome/item/model, trả SOURCE_RECEIPT, P0/P1/P2, MINIMAL_DELTA; xử lý phần bị ảnh hưởng, đóng Q15/QA bằng chứng thật và chỉ khi V2 intake được hợp lệ mới xem xét SOURCE_LOCKED handoff/ready/REGISTER. Không yêu cầu owner review lại source R18 đã nghiệm thu.
+
+
+## 5. Bổ sung kiểm toán file Notebook 10 mô hình mới (same R06 review snapshot, không reset source-lock)
+
+**Nguồn owner upload:** \`Trang_Web_Tương_Tác_10_Mô_Hình_Toán_THPT.html\`, SHA-256 \`93b3764dae9a60defa7d2ebe8d353c60f5e4e7edc4523f5a837c00fae05cddc3\`. **AUTHORING độc lập QA Chromium thật** 390/820/1440 px, 10 Canvas khởi tạo nhưng phát hiện lỗi toán P0 tại model #4/#5/#6/#9, race \`CanvasRenderingContext2D.arc(-1.12)\` khi đổi nhanh view, CDN dependency offline, lời hứa drag vectơ/xoay 3D chưa thực thi. Bộ 4×2 tab thuộc catalog tham khảo, không thêm tầng kiến trúc thứ ba cho Topic.
+
+- **Audit chi tiết Git blob** \`cf30368031bbb351d87ec35bc316c8d3fd9cd504\`: \`Temp_NOTEBOOK_NEW_10_MODELS_REAL_BROWSER_MATH_PED_QA_R01_20261110.md\`.
+- **Giữ M6 D5 đã có của Topic1**, hai đồ thị f và f′/phản ví dụ x³; không thay bằng raw model #4 kết luận sai \`f′≈0 ⇒ cực trị\`.
+- **Giữ P03/P07 của Topic2 PR #793** theo một nguồn canonical; đã gửi ghi chú trực tiếp ở PR #793. Ý tưởng Carbon-like/chia control/giải thích có thể reuse nhưng đòi QA/parity và targeted review nếu đổi học thuật.
+- **R06 NotebookLM packet** blob \`1d3d3852aa38ab90ed282349bfc769c02aac3ea3\` và **11 DRAFT** bất biến; không đưa raw 10-model vào nguồn reviewer hiện hành, không lặp review R18/R02 đã PASS, không thay \`CONTENT_READY=NO\`.
+- **D5 browser QA mới chỉ chứng minh tệp Notebook gốc có lỗi**, KHÔNG phải browser QA thực của từng module AUTHORING #801/#793. Những cổng Q07/Academic/PED/Q15 và V2 #790 vẫn HOLD.
