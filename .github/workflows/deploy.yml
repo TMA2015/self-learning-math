@@ -75,6 +75,8 @@ jobs:
           node scripts/test-ux795-g10-chvi-ped-mapping.cjs
           node scripts/test-ux795-g10-chvi-worked-math.cjs
           node scripts/test-ux795-g10-figure-math.cjs
+          node scripts/test-thpt-shared-item-placement.cjs
+          node scripts/test-floating-ai-tutor-v1.js
           node scripts/test-thpt-g10-reviewed-selfcheck-data.cjs
       - name: Validate THPT academic-to-release checklist before deploy
         run: node scripts/test-thpt-release-queue.cjs
