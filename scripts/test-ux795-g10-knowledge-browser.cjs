@@ -48,6 +48,22 @@ function sameIDs(actual,expected,where){
      const observedHelp=await page.locator("[data-thpt-help-id]").evaluateAll(nodes=>nodes.map(n=>n.getAttribute("data-thpt-help-id")));
      sameIDs(observedTry,expectedTry,location+" First Try");
      sameIDs(observedHelp,expectedHelp,location+" D6 HELP");
+     // New G10 B26/B27 learner-facing remediation links retain original
+     // canonical item IDs as query parameters; these remain formative, never
+     // independent readiness or Mastery evidence.
+     if(n===26||n===27){
+      const expected=[...source.matchAll(/href="\.\.\/luyen-tap\/\?item=(THPT-G10-B(?:26|27)-[CP]\d+)"/g)].map(m=>m[1]);
+      assert.equal(expected.length,5,location+" five reviewed cross-links from Knowledge to Practice");
+      assert.equal(new Set(expected).size,expected.length,location+" unique Practice IDs in B26/B27");
+      const live=await page.locator('.md-content a[href*="luyen-tap/?item="]').evaluateAll(nodes=>nodes.map(a=>({
+       item:new URL(a.href).searchParams.get("item"),route:new URL(a.href).pathname
+      })));
+      for(const id of expected){
+       assert(live.some(a=>a.item===id&&a.route==="/thpt-preview/sgk/chuong-ix/luyen-tap/"),
+        location+" canonical Practice deep link must be rendered for "+id);
+      }
+     }
+
      const allFolds=tabs.locator("details.question");
      assert((await allFolds.count())>=expectedTry.length,location+" reviewed formative disclosures present");
      assert.equal(await tabs.locator("details.question[open]").count(),0,location+" no first-try solution shown before learner choice");
