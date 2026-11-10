@@ -230,6 +230,7 @@
     **Bước 1 — điều kiện mô hình.** \(t\ge0\) và quả bóng còn ở trên mặt đất, tức \(h(t)\ge0\). Giải \(h(t)=0\) được \(t=2\pm\sqrt5\), nên thời gian bay theo mô hình là \(0\le t\le2+\sqrt5\) (giây).
 
     **Bước 2 — chuyển câu hỏi thành bất phương trình.** Cụm từ *ít nhất 20 m* nghĩa là \(h(t)\ge20\), không phải \(h(t)=20\). Ta có
+
     \[
     -5t^2+20t+5\ge20
     \iff -5(t-1)(t-3)\ge0
