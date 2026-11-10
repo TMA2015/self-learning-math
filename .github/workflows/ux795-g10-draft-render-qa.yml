@@ -8,6 +8,7 @@ on:
       - "scripts/test-ux795-g10-render-draft.cjs"
       - "scripts/test-ux795-g10-knowledge-browser.cjs"
       - "scripts/test-ux795-g10-source-candidate-lock.cjs"
+      - "scripts/test-ux795-g10-legacy-dual-source-audit.cjs"
       - "scripts/test-ux795-g10-figure-math.cjs"
       - "scripts/test-ux795-g10-chvi-worked-math.cjs"
       - "scripts/test-ux795-g10-chvi-ped-mapping.cjs"
@@ -77,6 +78,8 @@ jobs:
           ref: main
           path: integration-main
           fetch-depth: 1
+      - name: EVIDENCE ONLY - dual-source historic baseline versus current candidate (no gate bypass)
+        run: node scripts/test-ux795-g10-legacy-dual-source-audit.cjs --baseline integration-main
       - name: "DRY RUN - merge 27 G10 Knowledge pages with published main titles, NO DEPLOY"
         run: |
           set -euo pipefail
