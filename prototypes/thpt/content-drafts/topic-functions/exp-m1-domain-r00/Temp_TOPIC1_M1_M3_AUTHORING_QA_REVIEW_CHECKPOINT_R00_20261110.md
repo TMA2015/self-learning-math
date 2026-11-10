@@ -18,12 +18,12 @@
 | M3 · Parabol | một file Markdown: \(|f(x)|\) vs \(f(|x|)\), miền biến đổi, \(a=0\), tối ưu trên miền con | 1 SVG so sánh 2 khung cùng tỉ lệ trục + 1 lab Canvas hệ số a/b/c | 4 APP + 1 WR = **5** |
 | **Tổng** | **3 Markdown kiến thức** | **3 SVG + 3 HTML lab** | **18 DRAFT item** |
 
-Tổng thư mục có 13 file tính cả bản QA M1 giai đoạn trước, bản QA/hồ sơ này. Nội dung student-facing không hiển thị metadata QA và không được dùng làm trang Tự kiểm tra kín. Các câu có đáp án mở \`<details><summary>Đối chiếu</summary>\` chỉ thuộc Kiến thức/Luyện tập.
+Tổng thư mục sau bổ sung ma trận dùng chung có **14 file**, tính cả 2 hồ sơ QA và 1 ma trận existing/reuse. Ma trận được ghi ở \`Temp_TOPIC1_M1_M3_REUSE_AND_NEW_ITEM_MATRIX_R00_20261110.md\`. Nội dung student-facing không hiển thị metadata QA và không được dùng làm trang Tự kiểm tra kín. Các câu có đáp án mở \`<details><summary>Đối chiếu</summary>\` chỉ thuộc Kiến thức/Luyện tập.
 
 ## C. Kết quả QA sơ bộ có chứng cứ
 
 1. **GitHub readback:** đã fetch 12/12 file từ nhánh và xác minh blob SHA từng file. R18 canonical blob **vẫn chính xác** \`2340ea4975b37a457363eea59dd617070934983c\`.
-2. **Q15 sơ bộ:** 18 \`DRAFT-T1-...\` ID trong hai file practice đều **duy nhất nội bộ**; chưa có ID nào trùng dạng chuỗi trong nguồn R18. Đây **không** có nghĩa bài/đề/hướng giải khác nhau về nội dung. Ví dụ dự thảo trùng ngay bài Vận dụng trong học liệu đã được thay bằng bài về bước nhảy tại 0 và miền hai đoạn rời nhau; vẫn phải đối chiếu stem/key/rubric toàn thư viện SGK/Topic.
+2. **Q15 sơ bộ:** 18 \`DRAFT-T1-...\` ID trong hai file practice đều **duy nhất nội bộ**; chưa có ID nào trùng dạng chuỗi trong nguồn R18. Đây **không** có nghĩa bài/đề/hướng giải khác nhau về nội dung. Các ứng viên lặp đúng ví dụ Vận dụng đã được đổi sang bài về bước nhảy tại 0, miền hai đoạn rời nhau, biên căn khác số và tập giá trị khi đỉnh bị loại; vẫn phải đối chiếu stem/key/rubric toàn thư viện SGK/Topic.
 3. **Toán M1:** \(h(x)=\sqrt{4-x^2}/(x-1)\) có \(D=[-2,1)\cup(1,2]\), \(h(-2)=0,\ h(0)=-2,\ h(2)=0\), x=1/3 bị loại. \(p(x)=(x-1)^2+2\) trên \([0,2]\) có tập giá trị \([2,3]\) (chứng minh tính đạt mọi giá trị bằng \(x=1+\sqrt{y-2}\)).
 4. **Toán M2:** \(f(x)=x+1\) khi x<1, bằng 3 khi x≥1: \(f(1)=3\), vòng rỗng \((1;2)\), điểm đặc \((1;3)\). Bài mới \(r(x)=x+1\) khi x<0, \(r(x)=x-2\) khi x≥0: \(r(-0{,}5)=0{,}5>r(0)=-2\) — phản ví dụ cho việc suy tăng toàn miền.
 5. **Toán M3:** với \(f(x)=(x-2)^2-1\), \(f(-2)=15,\ |f(2)|=1,\ f(|-2|)=-1\); \(|f|=0\) có nghiệm 1,3, còn \(f(|x|)=0\) có nghiệm ±1,±3. Nếu \(a=0\) thì không có đỉnh parabol. Với \(m(x)=5-(x-2)^2\), \(D=[0,1]\cup[3,4]\), GTLN là 4 tại x=1 hoặc x=3; GTNN là 1 tại x=0 hoặc x=4.
@@ -35,7 +35,7 @@ Tổng thư mục có 13 file tính cả bản QA M1 giai đoạn trước, bả
 - **Q01–Q02:** kiểm outcome/in-S1 và các ví dụ mở rộng, bảo đảm không đổi phạm vi bắt buộc hay ép khái niệm của lớp cao vào lớp 10. Cả hai hành trình SGK/Topic vẫn độc lập.
 - **Q03–Q08:** nội dung có điều kiện, định nghĩa, lý do chọn cách, ví dụ, D5 SVG/HTML, bài viết mới; cần reviewer xác nhận chiều sâu theo **từng outcome** chứ không chỉ theo số câu.
 - **Q09–Q14:** giải thích đủ lời, hình gắn sát ý, Vận dụng/Đối chiếu tự mở, hỗ trợ lỗi thường gặp. Tên mục đã theo owner UX quyết định 10/11/2026 nhưng đây **không** là thay đổi chuẩn gốc.
-- **Q15:** so trùng ngữ nghĩa đề/đáp án/rubric với R18/SGK/Topic trước khi gán canonical ID. Nếu trùng, thêm placement, không đăng ký câu hai lần.
+- **Q15:** đã dẫn lại **10 outcome và 11 tham chiếu item existing** của M1–M3 từ nguồn R18 trong ma trận `Temp_TOPIC1_M1_M3_REUSE_AND_NEW_ITEM_MATRIX_R00_20261110.md`; đây là danh mục nguồn dùng chung, **không** sao chép câu/rubric. Vẫn phải so trùng ngữ nghĩa đề/đáp án/rubric với R18/SGK/Topic trước khi gán canonical ID. Nếu trùng, thêm placement, không đăng ký câu hai lần.
 - **Q16:** RD1 vẫn kín, không hint/key/đúng-sai trước Final Submit và không ghi Mastery từ Practice, Written tự đối chiếu hoặc lab.
 - **Q17:** ba mục người học \`Kiến thức / Luyện tập / Tự kiểm tra\` được giữ, bản đồ/chặng nằm trong Kiến thức; không thêm Core Topic.
 - **Q18:** nội dung \`DELTA_C\` mới chỉ được khóa snapshot/receipt khi reviewer độc lập chấp nhận Academic+PED theo đúng nguồn và standard; không suy rộng PASS của R18.
