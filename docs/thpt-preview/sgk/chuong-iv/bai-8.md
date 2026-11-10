@@ -26,7 +26,7 @@
 
     Một người đi từ A đến B rồi từ B đến C. Muốn biết độ dời cuối cùng, không cần giữ mọi chặng nếu biết điểm đầu A và điểm cuối C.
 
-    Trước khi tiếp tục, em hãy nhớ lại vectơ có điểm đầu/cuối; hai chặng phải nối đúng B; tổng độ dài hai chặng không nhất thiết bằng độ dài đoạn AC. 
+    Hãy lần theo hai chặng A→B và B→C. Vì chúng nối tại B, vectơ tổng đi thẳng từ A đến C; độ dài AC không nhất thiết bằng tổng độ dài hai chặng. 
 
     Xếp hai mũi tên 'đuôi–đầu': mũi thứ nhất A→B rồi mũi thứ hai B→C. Hướng đi ròng A→C chính là ý nghĩa phép cộng vectơ \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}\).
 
@@ -48,7 +48,7 @@
 
     Hai lực có chung điểm đặt nhưng khác hướng không cho hợp lực bằng cách cộng độ lớn như cộng hai số thường.
 
-    Trước khi tiếp tục, em hãy nhớ lại quy tắc nối mũi tên của phép cộng và hình bình hành ABCD; hai vectơ cùng xuất phát A. 
+    Trong hình bình hành ABCD, hai mũi tên dọc theo AB và AD cùng xuất phát từ A. Đường chéo đi từ A đến C giúp em hình dung cách cộng chúng. 
 
     Dịch chuyển một lực để nối đuôi–đầu không đổi vectơ; dựng hình bình hành cho thấy đường chéo từ điểm chung A chính là kết quả \(\overrightarrow{AB}+\overrightarrow{AD}=\overrightarrow{AC}\).
 
@@ -70,7 +70,7 @@
 
     Nếu biết hai vị trí đích B và C nhìn từ cùng A, muốn đi từ C sang B ta phải 'bù' chặng A→C bằng chiều ngược của nó.
 
-    Trước khi tiếp tục, em hãy nhớ lại vectơ đối là mũi tên quay 180° giữ độ dài; phép cộng ba điểm A→C→B. 
+    Muốn thực hiện phép trừ, hãy nhớ vectơ đối giữ độ dài nhưng đảo chiều. Sau đó nối các mũi tên theo quy tắc ba điểm A→C→B. 
 
     Hiệu \(\vec u-\vec v\) có nghĩa là cộng vectơ ngược \(-\vec v\); vì thế \(\overrightarrow{AB}-\overrightarrow{AC}=\overrightarrow{AB}+\overrightarrow{CA}=\overrightarrow{CB}\).
 
@@ -92,7 +92,7 @@
 
     Đứng ở giữa một đoạn đường, đi tới hai đầu theo hai hướng đối nhau và cùng độ dài; tổng hai vectơ này phải bằng 0.
 
-    Trước khi tiếp tục, em hãy nhớ lại M là trung điểm AB khi MA=MB và M thuộc AB; hướng M→A, M→B đối nhau. 
+    Khi M là trung điểm AB, ta có MA=MB và M nằm trên đoạn AB. Hai mũi tên M→A, M→B vì vậy cùng độ dài nhưng ngược hướng. 
 
     Vì \(\overrightarrow{MA}=-\overrightarrow{MB}\), tổng hai vectơ bằng \(\vec0\). Ngược lại, tổng bằng 0 ép hai độ dời ngược nhau và cùng dài nên M ở giữa A,B (với A≠B).
 
@@ -114,7 +114,7 @@
 
     Đặt điểm G ở trọng tâm một tam giác, ba vectơ hướng từ G đến các đỉnh cân bằng nhau khi cộng theo quy tắc vectơ.
 
-    Trước khi tiếp tục, em hãy nhớ lại M là trung điểm BC và G nằm trên trung tuyến AM với AG:GM=2:1; ở thời điểm này chưa cần tọa độ Oxy (B10). 
+    Với tam giác ABC, M là trung điểm BC và G nằm trên trung tuyến AM, chia AM theo tỉ số AG:GM=2:1. Ta chỉ cần quan hệ hình học ấy, chưa cần dùng tọa độ. 
 
     Từ trung điểm: \(\overrightarrow{GB}+\overrightarrow{GC}=2\overrightarrow{GM}\). Vì G trên AM và AG=2GM nên \(\overrightarrow{GA}=-2\overrightarrow{GM}\); cộng lại được tổng ba vectơ bằng 0.
 
