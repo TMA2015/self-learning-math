@@ -9,6 +9,7 @@ on:
       - "scripts/test-ux795-g10-knowledge-browser.cjs"
       - "scripts/test-ux795-g10-source-candidate-lock.cjs"
       - "scripts/test-ux795-g10-figure-math.cjs"
+      - "scripts/test-ux795-g10-chvi-worked-math.cjs"
       - "prototypes/thpt/ux795/UX795_G10_KNOWLEDGE_RELEASE_SOURCE_INTAKE_R01_20261110.md"
       - "prototypes/thpt/ux795/UX795_G10_FIGURE_MATH_SELF_AUDIT_R01_20261110.md"
       - "scripts/test-ux795-g10-postmerge-headings.cjs"
@@ -39,6 +40,8 @@ jobs:
         run: mkdocs build --config-file mkdocs.thpt-preview.yml --site-dir site-thpt-preview
       - name: Enforce 27 candidate source SHA receipts and protected Knowledge-only scope
         run: node scripts/test-ux795-g10-source-candidate-lock.cjs
+      - name: Mathematical checks of 14 Chapter VI worked examples (B15-B18)
+        run: node scripts/test-ux795-g10-chvi-worked-math.cjs
       - name: Source-pinned mathematical and geometric checks of 11 new educational SVGs
         run: node scripts/test-ux795-g10-figure-math.cjs
       - name: Enforce 27 rendered pages, four tabs, closed self-reveals, MathJax and SVG paths
