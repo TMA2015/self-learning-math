@@ -27,7 +27,7 @@
 | B13 | V | `b4008a227494ef7165871b67a1a0f255c66c5c6c` | `c55d650f5b59c5260960de136e3c7fc26f219cdf` |
 | B14 | V | `0cb35d210afc9dba136a6b256bc1c8138cb01396` | `894c31de396a2f6d6d30912399d6cad39f790130` |
 | B15 | VI | `72ed03b1cb625f157bb49064cf1df2100856e057` | `7b579927e0f6fe4d5a562d5e1127efa8d6deeb96` |
-| B16 | VI | `a0fc509e1c08b7ee90225dee3994d6b3fa84e21a` | `ac26816067fa970bb77845fb8dbc42e8cc975b83` |
+| B16 | VI | `a0fc509e1c08b7ee90225dee3994d6b3fa84e21a` | `55ea62649ba36231c663a85c2f4e87ea0662a8c5` |
 | B17 | VI | `f94608d832b43e671439afde9c14332bb443ac13` | `6302851ed5ce78540a315eec475df7581c321390` |
 | B18 | VI | `0f2c6420f40112018dfd4be1268b0deb83f4452a` | `31ed3e85424d68130fc62a96e031389fc937122c` |
 | B19 | VII | `a4dbf99d12c35f0b3af73fb3df423126aa861add` | `36226f87857499897da3f62aaa9bd6a6f2ec7784` |
@@ -79,6 +79,12 @@
 - B16: hướng dẫn đọc hình parabol bằng chính trục đối xứng `x=1`, đỉnh `I(1;-4)`, hai nghiệm `-1, 3` và chiều biến thiên. Kiểm trực tiếp `(x-1)^2-4` tại các vị trí nêu trong hình.
 - B20: thay chuỗi toán bị rơi MathJax `(H=(12/5,6/5))`, `(MH=6/sqrt5)` bằng hiển thị MathJax chuẩn. Kiểm `2(12/5)+(6/5)=6`, vectơ `MH=(12/5,6/5)` cùng hướng pháp tuyến `(2,1)`, `|MH|=6/√5`.
 - Hai SHA mới đã ghi trong bảng trên; các thuộc tính `data-*` và bốn tab giữ nguyên. Đây là `DELTA_C` về lời diễn giải theo ngữ cảnh hình, không tự cấp `ACADEMIC/PED PASS`. Cần kiểm browser/MathJax trên HEAD mới và nhập đầy đủ delta vào receipt Q18 khi có hiệu lực.
+
+## SOURCE S1 page audit + B16 table outcome (10/11/2026)
+
+- Đã mở chính SGK KNTT Toán 10 Tập 2 dạng scan, khóa SHA256 tài liệu; đối chiếu B16 trang in 11 (PDF trang 12), yêu cầu **thiết lập bảng giá trị hàm số bậc hai**. B16 Knowledge trước đây chưa có bảng \\(x,f(x)\\) cụ thể.
+- Đã bổ sung bảng \\(x=0,1,2,3,4\\) cho \\(f(x)=x^2-4x+3\\), nhận các giá trị \\(3,0,-1,0,3\\); chọn các cặp điểm đối xứng và giải thích cách nối thành parabol. Đây là \\`DELTA_C_ACADEMIC_MATERIAL\\`, không phải chỉ UI.
+- Git blob B16 mới đã cập nhật trong bảng intake. Bằng chứng trang in/phiên bản SGK: [S1 ChVI scope R01](UX795_G10_CHVI_S1_PRINTED_PAGE_SCOPE_R01_20261110.md). Các câu First Try, D6 HELP và Core/Practice/Readiness không đổi. Q18 hiện hành vẫn HOLD.
 
 ## RELEASE QA hiện có
 
