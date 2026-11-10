@@ -21,12 +21,27 @@
 | \`THPT-G10-B15-P03\` | phân tích biến thiên của hàm \(|x+2|\) theo các khoảng | M2 APP06 dùng bước nhảy để phản bác toàn miền | **KHÁC BẢN CHẤT PHẢN VÍ DỤ**, giữ DRAFT |
 | \`THPT-G10-B15-P04\` | xác định miền quãng đường thỏa ngân sách với phí từng đoạn | M1 APP04 miền số vé rời rạc và tập giá trị; M2 APP04/WR01 phân biệt quan sát với mô hình | **KHÁC BỐI CẢNH / OUTCOME**, nhưng cần review ý nghĩa |
 
+## Bổ sung Q15: đã đọc 6 câu gốc Topic G10 ở snapshot bất biến
+
+Đã truy xuất trực tiếp **Git blob \`57eaf0141a5db9bfba91f0e6c863fc7dcc638068\`**, là nguồn Topic G10 R01 lịch sử được reviewer chấp nhận cho đúng snapshot. Xác minh đủ **6 item thực tế** \`THPT-G10-TOP-FUNC-P01..P06\` (bao gồm stem và lời giải trong nguồn gốc), **không sao chép nội dung câu vào tài liệu audit**:
+
+| ID gốc | Năng lực của stem thực | Đối chiếu candidate |
+|---|---|---|
+| \`THPT-G10-TOP-FUNC-P01\` | kiểm giá trị và điểm đồ thị của \`3−|x−1|\` | M2 APP04 nội suy bảng đo là năng lực khác; không suy từ ID |
+| \`THPT-G10-TOP-FUNC-P02\` | điều kiện tham số để hệ số \`x²\` khác 0 | M3 APP08 hỏi tiếp loại hàm & nghiệm khi a=0; có overlap về điều kiện, **giữ formative, không mint ID** |
+| \`THPT-G10-TOP-FUNC-P03\` | hoàn bình phương, đỉnh/trục/GTNN | M3 R00 giải thích phép biến đổi trị tuyệt đối khác yêu cầu của P03 |
+| \`THPT-G10-TOP-FUNC-P04\` | đỉnh/giao trục/chiều mở parabol | M3 APP07 phân tích điều kiện \`u=|x|≥0\`; chỉ là enrichment cần review phạm vi |
+| \`THPT-G10-TOP-FUNC-P05\` | GTLN/GTNN/tập giá trị của parabol khi đỉnh **ngoài đoạn** | M1 APP07 trước đó chỉ đổi hệ số/đoạn, **không tạo giá trị sư phạm đủ mới** → **LOẠI KHỎI DRAFT BANK** |
+| \`THPT-G10-TOP-FUNC-P06\` | tối ưu nhiệt độ trên đoạn có đỉnh và hai đầu mút | M3 APP09 dùng **hai đoạn rời** làm thay đổi phương pháp lựa chọn điểm; giữ ứng viên review |
+
+Như vậy đã đọc trực tiếp **12 stem + lời giải PUBLIC** thuộc hai nguồn gốc B15 (6 item) và Topic G10 R01 (6 item); SHA nguồn gốc được ghi riêng. **Chưa thể đóng Q15 cuối cùng** vì các Written/Anchor aliases, những nguồn SGK khác và quyết định canonical version/placement vẫn phải đối soát trước handoff. **17 item ID DRAFT còn lại** không được tự nhận là 17 câu độc lập đã nghiệm thu.
+
 **Giới hạn kiểm chứng:** bảng trên xác nhận **một phần** Q15 ở nguồn SGK B15; tên item và kết quả so sánh đã lấy từ nội dung thực tế, không chỉ so ID. Nó **không** xác minh 100% ngân hàng Topic/SGK các phiên bản hoặc các bài tập tự luận/Anchor khác.
 
 ## Kiểm tra trùng ngay trong gói mới (Q15 nội bộ)
 
 - M3 \`DRAFT-T1-M3-APP07\` ban đầu giải đúng **cùng hàm** \(x^2-4x+3\) và cùng bộ nghiệm như phần (c) của \`DRAFT-T1-M3-WR02\). Đã thay APP07 bằng bài \(f(x)=x^2+2x-3\), nhằm làm rõ điều kiện \(u=|x|\ge0\): \(|f|=0\) cho \(x=1,-3\), còn \(f(|x|)=0\) chỉ cho \(x=\pm1\).
-- M1 APP05 đã đổi sang \(q(x)=\sqrt{9-x^2}/(x+2)\), M1 APP07 sang \(p(x)=(x-2)^2+1\) trên \([-1,1]\), M2 APP06 sang hai nhánh có bước nhảy xuống tại 0, M3 APP09 sang miền hai đoạn rời. Những thay đổi giúp tránh **chép nguyên bài vận dụng trong lý thuyết** vào luyện tập.
+- M1 APP05 đã đổi sang \(q(x)=\sqrt{9-x^2}/(x+2)\), M1 APP07 đã **loại khỏi danh sách câu ứng viên** sau khi đọc đúng stem/giải của \`THPT-G10-TOP-FUNC-P05\` (cùng bài toán đỉnh ngoài đoạn và tập giá trị), M2 APP06 sang hai nhánh có bước nhảy xuống tại 0, M3 APP09 sang miền hai đoạn rời. Những thay đổi giúp tránh **chép nguyên bài vận dụng trong lý thuyết** vào luyện tập.
 - \`DRAFT-T1-M1-APP01\` vẫn có **mục đích sư phạm tương đồng** với C01; ưu tiên sử dụng như một tình huống đối lập **trong trang Kiến thức**, không đăng ký item canonical mới nếu không có bằng chứng cần thiết.
 - Các cặp APP/WR cùng mạch có thể chia mức giải thích (APP tính/nhận xét, WR phải biện luận đầy đủ), nhưng phải đánh giá reviewer độc lập: **đổi hình thức thành tự luận không tự động là một item mới có giá trị**.
 
