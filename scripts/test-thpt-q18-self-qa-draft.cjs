@@ -40,10 +40,10 @@ function validateReceipt(source,options={}){
   for(const key of [
    "PACKET_ID","STANDARD_ID","STANDARD_VERSION","Q18_VERIFICATION_MODE",
    "LEARNING_PATH","RELEASE_SCOPE","BASELINE_REVIEW_RECEIPT_PATH",
-   "BASELINE_REVIEW_RECEIPT_BLOB","S1_SOURCE","OUTCOME_SCOPE",
+   "BASELINE_REVIEW_RECEIPT_BLOB","BASELINE_PED_REVIEW_STATUS","S1_SOURCE","OUTCOME_SCOPE",
    "ASSESSMENT_MODE","Q15_Q16_DELTA","RD1_CUSTODY_DELTA",
    "FINAL_SUBMIT_DELTA","MASTERY_ACTIVATION","OPEN_P0","OPEN_P1",
-   "MATH_SELF_CHECK","PED_SELF_CHECK","OWNER_POLICY_APPLICABLE","CONTENT_OWNER_LANE","CONTENT_OWNER_SIGNOFF"
+   "MATH_SELF_CHECK","PED_SELF_CHECK","PED_CURRENT_OUTCOME_SELF_CHECK","OWNER_POLICY_APPLICABLE","CONTENT_OWNER_LANE","CONTENT_OWNER_SIGNOFF"
   ])meta[key]=field(source,key);
  }catch(e){errors.push(e.message);return {status:"HOLD",errors}}
  const equals={
@@ -61,12 +61,18 @@ function validateReceipt(source,options={}){
   OPEN_P1:"0",
   MATH_SELF_CHECK:"PASS",
   PED_SELF_CHECK:"PASS",
+   PED_CURRENT_OUTCOME_SELF_CHECK:"PASS",
   OWNER_POLICY_APPLICABLE:"YES_EFFECTIVE",
    CONTENT_OWNER_LANE:"RELEASE"
  };
  for(const [k,v] of Object.entries(equals))check(meta[k]===v,"BOUNDARY_MISMATCH:"+k);
  check(sha.test(meta.BASELINE_REVIEW_RECEIPT_BLOB),"BASELINE_RECEIPT_SHA_INVALID");
- check(/^prototypes\/thpt\/(?:review-packets|release-handoffs)\/[^.][A-Za-z0-9_./-]*\.md$/.test(meta.BASELINE_REVIEW_RECEIPT_PATH)&&!meta.BASELINE_REVIEW_RECEIPT_PATH.includes(".."),"BASELINE_RECEIPT_PATH_INVALID");
+ check(["PASS_MATCHED","SCOPED_PARTIAL","NOT_LOCATED"].includes(meta.BASELINE_PED_REVIEW_STATUS),"BASELINE_PED_STATUS_INVALID");
+ check(/^prototypes\/thpt\/[A-Za-z0-9_./-]+\.md$/.test(meta.BASELINE_REVIEW_RECEIPT_PATH)&&!meta.BASELINE_REVIEW_RECEIPT_PATH.includes(".."),"BASELINE_RECEIPT_PATH_INVALID");
+ if(options.sourceBlobOf && sha.test(meta.BASELINE_REVIEW_RECEIPT_BLOB)){
+  try{check(options.sourceBlobOf(meta.BASELINE_REVIEW_RECEIPT_PATH)===meta.BASELINE_REVIEW_RECEIPT_BLOB,"BASELINE_RECEIPT_BLOB_MISMATCH")}
+  catch{errors.push("BASELINE_RECEIPT_FILE_UNAVAILABLE")}
+ }
  check(meta.S1_SOURCE.includes("KNTT")&&/trang in/i.test(meta.S1_SOURCE),"S1_PRINTED_PAGE_UNVERIFIED");
  check(id.test(meta.PACKET_ID),"PACKET_ID_INVALID");
  check(meta.CONTENT_OWNER_SIGNOFF.length>=18,"CONTENT_OWNER_SIGNOFF_MISSING");
@@ -106,6 +112,8 @@ function validateReceipt(source,options={}){
   check(ped.length>=35&&/vì sao|điều kiện|khi nào|hướng dẫn|cách đọc/i.test(ped),"NO_PED_EVIDENCE:"+deltaId);
   check(status==="PASS","DELTA_NOT_CLOSED:"+deltaId);
  }
+ const pedOutcomes=new Set(delta.map(row=>row[2]));
+ for(const outcome of outcomes)check(pedOutcomes.has(outcome),"PED_OUTCOME_NO_EVIDENCE:"+outcome);
  for(const r of figures){
   const [fig,lesson,src,blob,math,guide,status]=r;
   check(id.test(fig)&&lessonMap.has(lesson),"UNMAPPED_FIGURE:"+fig);
@@ -130,12 +138,12 @@ function makeFixture(){
 "Q18_VERIFICATION_MODE: OWNER_SELF_VERIFIED_ENRICHMENT",
 "LEARNING_PATH: SGK_CHAPTER","RELEASE_SCOPE: SGK_CHAPTER_KNOWLEDGE_UPDATE_ONLY",
 "BASELINE_REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/fixture-not-a-real-receipt.md",
-"BASELINE_REVIEW_RECEIPT_BLOB: "+d,
+"BASELINE_REVIEW_RECEIPT_BLOB: "+d,"BASELINE_PED_REVIEW_STATUS: NOT_LOCATED",
 "S1_SOURCE: SGK KNTT Toán 10, tập một, trang in 10 (SYNTHETIC FIXTURE, NOT VERIFIED)",
 "OUTCOME_SCOPE: G10-O02","ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY",
 "Q15_Q16_DELTA: NONE","RD1_CUSTODY_DELTA: NONE","FINAL_SUBMIT_DELTA: NONE",
 "MASTERY_ACTIVATION: NO","OPEN_P0: 0","OPEN_P1: 0",
-"MATH_SELF_CHECK: PASS","PED_SELF_CHECK: PASS",
+"MATH_SELF_CHECK: PASS","PED_SELF_CHECK: PASS","PED_CURRENT_OUTCOME_SELF_CHECK: PASS",
 "OWNER_POLICY_APPLICABLE: YES_EFFECTIVE",
 "CONTENT_OWNER_LANE: RELEASE","CONTENT_OWNER_SIGNOFF: SYNTHETIC_TEST_ONLY_NOT_REAL",
 "",
@@ -154,7 +162,7 @@ function makeFixture(){
 "|---|---|---|---|---|---|---|",
 "| F02 | G10-B02 | "+fig+" | "+c+" | Kiểm hai tập hợp và các nhãn phần tử đúng với quan hệ. | Hướng dẫn cách đọc hình và nối lại với định nghĩa thuộc/tập con. | PASS |"
 ].join("\n");
- const map={[page]:b,[fig]:c};return{r,map};
+ const map={[page]:b,[fig]:c,["prototypes/thpt/review-packets/fixture-not-a-real-receipt.md"]:d};return{r,map};
 }
 function test(){
  const {r,map}=makeFixture();
@@ -174,7 +182,11 @@ function test(){
   r.replace("| G10-B02 | G10-O02 |","| G10-B02 | NOT_AN_OUTCOME |"),
   r.replace("MASTERY_ACTIVATION: NO","MASTERY_ACTIVATION: YES"),
    r.replace("CONTENT_OWNER_LANE: RELEASE","CONTENT_OWNER_LANE: AUTHORING"),
-   r.replace("CONTENT_OWNER_SIGNOFF: SYNTHETIC_TEST_ONLY_NOT_REAL","CONTENT_OWNER_SIGNOFF: X")
+   r.replace("CONTENT_OWNER_SIGNOFF: SYNTHETIC_TEST_ONLY_NOT_REAL","CONTENT_OWNER_SIGNOFF: X"),
+   r.replace("BASELINE_PED_REVIEW_STATUS: NOT_LOCATED","BASELINE_PED_REVIEW_STATUS: UNVERIFIED"),
+   r.replace("PED_CURRENT_OUTCOME_SELF_CHECK: PASS","PED_CURRENT_OUTCOME_SELF_CHECK: HOLD"),
+   r.replace("OUTCOME_SCOPE: G10-O02","OUTCOME_SCOPE: G10-O02,G10-O03"),
+   r.replace("BASELINE_REVIEW_RECEIPT_BLOB: "+d,"BASELINE_REVIEW_RECEIPT_BLOB: "+a)
  ];
  bad.forEach((text,i)=>assert.equal(validateReceipt(text,{sourceBlobOf:p=>map[p]}).status,"HOLD","Negative case "+i));
  assert.equal(validateReceipt(r,{sourceBlobOf:p=>"e".repeat(40)}).status,"HOLD","Source blob must match actual bytes");
