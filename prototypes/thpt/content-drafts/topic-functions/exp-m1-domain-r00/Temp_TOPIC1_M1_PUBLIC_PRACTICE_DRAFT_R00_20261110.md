@@ -72,16 +72,6 @@ Xét \(\displaystyle r(x)=\frac{\sqrt{x+2}}{(x-1)(x-3)}\). Tìm \(D\), rồi cho
 
 </details>
 
-### DRAFT-T1-M1-APP07 · Tập giá trị khi đỉnh nằm ngoài miền
-
-Cho \(p(x)=(x-2)^2+1\), nhưng chỉ xét \(x\in[-1,1]\). Tìm tập giá trị của hàm trên miền được cho. Vì sao không được lấy 1 làm GTNN trong bài này?
-
-<details><summary>Đối chiếu</summary>
-
-Đỉnh của parabol ở \(x=2\) nằm **ngoài** miền. Trên \([-1,1]\), \(|x-2|\) giảm từ 3 tới 1 khi x tăng, nên \(p\) giảm từ \(p(-1)=10\) tới \(p(1)=2\). Vì vậy tập giá trị là \([2,10]\), không phải \([1,+\infty)\) hay \([1,10]\). Mọi \(y\in[2,10]\) đều đạt được bằng \(x=2-\sqrt{y-1}\in[-1,1]\).
-
-</details>
-
 ### DRAFT-T1-M1-WR01 · Phản biện một kết luận sai
 
 Một bạn viết: “Vì \(\sqrt{x-1}\) xác định khi \(x\ge1\), nên \(\displaystyle\frac1{\sqrt{x-1}}\) cũng xác định khi \(x\ge1\)”. Em hãy giải thích lỗi, tìm tập xác định đúng và đưa ra một giá trị tại biên để kiểm chứng.
@@ -94,15 +84,15 @@ Một bạn viết: “Vì \(\sqrt{x-1}\) xác định khi \(x\ge1\), nên \(\di
 
 </details>
 
-### DRAFT-T1-M1-WR02 · Dùng miền để bác bỏ một dự đoán
+### DRAFT-T1-M1-WR02 · Tập xác định rời rạc có thể cho đầu ra trùng nhau
 
-Một bạn xét \(p(x)=(x-1)^2+2\) và kết luận “giá trị có thể rất lớn vì \(x\) có thể càng lúc càng xa 1”. Hãy đánh giá lời nói khi miền là (a) \(\mathbb R\), (b) \([0,2]\). Trình bày cách tìm tập giá trị trong trường hợp (b).
+Một trò chơi ghi số điểm quy ước theo số lỗi \(n\) bằng \(F(n)=(n-2)^2+1\). Trong trò chơi này, \(n\) chỉ được nhận các giá trị nguyên \(0,1,2,3,4,5\). Hãy xác định tập xác định và tập giá trị của \(F\), cho biết có hai đầu vào khác nhau nhận cùng một đầu ra hay không, rồi giải thích tại sao không được coi \(n=2{,}5\) là một lượt chơi hợp lệ, dù công thức vẫn tính ra số.
 
-<details><summary>Đối chiếu và thang điểm đề xuất</summary>
+<details><summary>Đối chiếu và rubric dự kiến</summary>
 
-Trên \(\mathbb R\), nhận xét đúng vì \((x-1)^2\) có thể lớn tùy ý. Trên \([0,2]\), ta có \(|x-1|\le1\) nên \(0\le(x-1)^2\le1\), dẫn tới \(2\le p(x)\le3\). Tất cả giá trị trong đoạn \([2,3]\) đều đạt được, do đó \(T=[2,3]\). Không được chuyển kết luận về miền \(\mathbb R\) sang miền bị giới hạn.
+Tập xác định là \(D=\{0,1,2,3,4,5\}\). Tính từng đầu ra: \(F(0)=5\), \(F(1)=2\), \(F(2)=1\), \(F(3)=2\), \(F(4)=5\), \(F(5)=10\). Vậy tập giá trị là \(\{1,2,5,10\}\). Hai đầu vào 0 và 4 đều cho 5 (tương tự 1 và 3 đều cho 2), **không vi phạm** định nghĩa hàm số vì mỗi đầu vào vẫn chỉ cho một đầu ra. Giá trị \(n=2{,}5\) không thuộc miền của trò chơi, dù phép thế vào biểu thức đại số thực hiện được.
 
-**Rubric dự kiến (4 điểm, chưa canonical):** 1 điểm nêu đúng trường hợp (a); 1 điểm nêu được ràng buộc \(|x-1|\le1\); 1 điểm suy ra \(2\le p(x)\le3\); 1 điểm xác nhận hai cận và các giá trị trung gian được nhận. Đây là bài tự luyện có thể tự đối chiếu, **không** tạo đánh giá điểm thành thạo.
+**Rubric dự kiến (5 điểm, chưa canonical):** 1 điểm xác định đúng miền số nguyên; 1 điểm liệt kê đúng sáu đầu ra; 1 điểm lập tập giá trị không đếm lặp; 1 điểm giải thích cùng đầu ra không vi phạm tính đơn trị; 1 điểm giải thích vì sao \(n=2{,}5\) ngoài miền. Đây là bài tự luyện công khai, không dùng làm RD1 hoặc ghi Mastery.
 
 </details>
 
@@ -116,9 +106,8 @@ Trên \(\mathbb R\), nhận xét đúng vì \((x-1)^2\) có thể lớn tùy ý.
 | APP02–03 | thông hiểu | miền giữ nguyên khi rút gọn; căn ở mẫu | TOPIC_PRACTICE |
 | APP04 | vận dụng | miền gắn bối cảnh thực tế | TOPIC_PRACTICE |
 | APP05–06 | vận dụng | giao nhiều điều kiện, điểm biên | TOPIC_PRACTICE |
-| APP07 | vận dụng | miền đổi kéo theo tập giá trị | TOPIC_PRACTICE |
 | WR01–WR02 | giải thích | biện luận điều kiện, giới hạn kết luận | TOPIC_PRACTICE / WRITTEN candidate |
 
 **Q15:** Trước khi đăng ký item phải đối chiếu các câu đã có trong R18, mã nguồn câu canonical SGK và thư viện Written/Anchor. Không được tạo câu mới chỉ để nhân bản cùng một câu với ID mới. Nếu trùng, giữ nguyên canonical item, thêm placement/role.
 
-**Q16:** Toàn bộ 9 bài trên là luyện tập công khai, không RD1, không tự ghi Mastery, không hiện đáp án của RD1. **Q18:** SHA/receipt review targeted chưa có, trạng thái HOLD.
+**Q16:** Toàn bộ 8 bài trên là luyện tập công khai, không RD1, không tự ghi Mastery, không hiện đáp án của RD1. **Q18:** SHA/receipt review targeted chưa có, trạng thái HOLD.
