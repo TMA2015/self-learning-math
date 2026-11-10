@@ -1,6 +1,6 @@
 # Chuyên đề 1 · Luyện tập bổ sung cho M2–M3
 
-**AUTHORING R00 — CÁC CÂU CHƯA REVIEW, CHƯA CANONICAL.** Bản này chứa **5 câu áp dụng và 2 bài tự luận Written candidate**. Tất cả thuộc Luyện tập hoặc Vận dụng công khai; không đưa vào Tự kiểm tra RD1, không sinh Mastery. DRAFT ID chỉ là vị trí theo dõi; đối chiếu Q15 với ngân hàng R18/SGK/Topic trước khi tạo item canonical. Có thể tái sử dụng một item đã duyệt bằng nhiều placement/role, không nhân bản một câu chỉ vì chuyển sang Topic.
+**AUTHORING R00 — CÁC CÂU CHƯA REVIEW, CHƯA CANONICAL.** Bản này chứa **4 câu áp dụng và 2 bài tự luận Written candidate**. Tất cả thuộc Luyện tập hoặc Vận dụng công khai; không đưa vào Tự kiểm tra RD1, không sinh Mastery. DRAFT ID chỉ là vị trí theo dõi; đối chiếu Q15 với ngân hàng R18/SGK/Topic trước khi tạo item canonical. Có thể tái sử dụng một item đã duyệt bằng nhiều placement/role, không nhân bản một câu chỉ vì chuyển sang Topic.
 
 ## A. Đọc bảng và đồ thị — M2
 
@@ -48,16 +48,6 @@ Cho \(f(x)=x^2+2x-3\). Hãy giải \(|f(x)|=0\) và \(f(|x|)=0\). Khi đặt \(u
 
 </details>
 
-### DRAFT-T1-M3-APP08 — Trường hợp a bằng 0
-
-Một công cụ hiển thị \(y=ax^2+bx+c\), đặt \(a=0\), \(b=-3\), \(c=2\). Khi ấy đồ thị thuộc loại nào, nghiệm của phương trình \(f(x)=0\) là bao nhiêu và có được dùng hoành độ đỉnh \(-b/(2a)\) không?
-
-<details><summary>Đối chiếu</summary>
-
-Hàm là \(f(x)=-3x+2\), có đồ thị **đường thẳng**, nghiệm \(x=2/3\). Không có đỉnh parabol và công thức \(-b/(2a)\) vô nghĩa vì \(2a=0\). Không được âm thầm đổi \(a=0\) thành một số nhỏ khác 0.
-
-</details>
-
 ### DRAFT-T1-M3-APP09 — Miền không liền nhau
 
 Cho \(m(x)=5-(x-2)^2\) nhưng chỉ xét \(D=[0,1]\cup[3,4]\). Tìm GTNN và GTLN trên \(D\). Vì sao không được lấy giá trị 5 tại đỉnh của parabol làm GTLN trong bài?
@@ -87,7 +77,7 @@ Cho \(f(x)=x^2-4x+3\). Xét \(g(x)=|f(x)|\) và \(h(x)=f(|x|)\). (a) Hãy mô t�
 | Nhóm | Số bài ứng viên | Mục tiêu năng lực | Trạng thái |
 |---|---:|---|---|
 | M2 · APP05–06 + WR01 | 3 | đọc dữ liệu, điều kiện biên, lập luận đồng biến | DRAFT, cần cross-bank Q15 |
-| M3 · APP07–09 + WR02 | 4 | hai phép biến đổi trị tuyệt đối, trường hợp a=0, cực trị có miền | DRAFT, cần cross-bank Q15 |
-| **Tổng** | **7** | PUBLIC PRACTICE / WRITTEN CANDIDATE | **NOT CANONICAL** |
+| M3 · APP07, APP09 + WR02 | 3 | hai phép biến đổi trị tuyệt đối, kiểm điều kiện nghiệm trị tuyệt đối, cực trị có miền | DRAFT, cần cross-bank Q15 |
+| **Tổng** | **6** | PUBLIC PRACTICE / WRITTEN CANDIDATE | **NOT CANONICAL** |
 
 **Không trùng ID nội bộ**, nhưng một số bài cùng họ dạng với ví dụ R18 M2/M3 và gói R00 cũ; phải so sánh **stem, phương án, lời giải, rubric** trên nguồn canonical trước khi đưa vào thư viện chung. Nếu trùng chính câu, thêm placement/role vào một item duy nhất, không phát hành item khác ID. Các câu mới phải được NotebookLM phản biện về Academic/PED và Q01–Q18 đúng phần DELTA_C. Không sử dụng bất kỳ câu này làm chứng cứ RD1 độc lập sau khi đã lộ đáp án trong Practice.
