@@ -175,7 +175,7 @@
 
     **Kiểm lại.** Cả tan và cot là số âm, đúng với hướng góc tù. Hình §2.1 ghi chính các giá trị này.
 
-    ### Ví dụ 2 — Biết sin và biết góc tù (chọn lọc NotebookLM v1)
+    ### Ví dụ 2 — Biết sin và biết góc tù
 
     **Đề bài.** Cho \(\sin\alpha=\frac35\), \(90^\circ<\alpha<180^\circ\). Tính \(\cos\alpha\) và \(\tan\alpha\).
 
@@ -221,5 +221,5 @@
 
     **Học tiếp:** [Core và Luyện tập Chương III](luyen-tap.md) · [Bài 6 — Hệ thức lượng trong tam giác](bai-6.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
-    <p class="thpt-r4-footnote">Kiến thức đối chiếu theo SGK Toán 10 · Kết nối tri thức · tập 1 · Bài 5, học liệu SLM hiện hành; giải thích nguồn NotebookLM v1 được biên tập chọn lọc. Minh họa góc 120° do SLM xây dựng.</p>
+    <p class="thpt-r4-footnote">Kiến thức đối chiếu theo SGK Toán 10 · Kết nối tri thức · tập 1 · Bài 5, học liệu SLM hiện hành; giải thích dựa trên kiến thức SGK đã được biên tập để học sinh tự học. Minh họa góc 120° do SLM xây dựng.</p>
 
