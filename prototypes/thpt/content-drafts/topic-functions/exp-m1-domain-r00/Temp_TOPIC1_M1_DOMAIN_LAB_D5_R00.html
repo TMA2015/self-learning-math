@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>M1 · Phòng thí nghiệm tập xác định</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:#183850;background:#fff}
+*{box-sizing:border-box}
+body{margin:0;padding:16px}
+.lab{width:min(100%,850px);margin:auto;border:1px solid #c7dfea;border-radius:16px;overflow:hidden;background:#fff}
+header{padding:17px 20px;background:#eaf4fa}
+h1{font-size:19px;line-height:1.45;margin:0 0 5px}
+header p{margin:0;font-size:14px;line-height:1.65}
+main{padding:16px 20px}
+label{display:block;font-size:15px;font-weight:600;margin-bottom:8px}
+input[type=range]{width:100%;accent-color:#1687b4;min-height:32px}
+.range-row{display:flex;justify-content:space-between;font-size:12px;color:#536d81}
+figure{margin:14px 0;background:#f9fcfe;border:1px solid #dcebf2;border-radius:12px;padding:6px}
+svg{display:block;width:100%;height:auto}
+.small{font-size:13px;color:#4c697d;line-height:1.65}
+.buttons{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+button{border:1px solid #b6d4e4;background:#fff;color:#15506f;padding:9px 12px;border-radius:9px;font:inherit;cursor:pointer}
+button:hover,button:focus-visible{background:#e7f3fa;outline:2px solid #7cbcdc;outline-offset:1px}
+.result{border:1px solid #d2e9ef;border-radius:12px;padding:14px;background:#f2f8fb;line-height:1.7}
+.ok{color:#176d5a}.bad{color:#b14741}
+strong{font-weight:650}
+@media(max-width:480px){body{padding:8px}header,main{padding:13px}h1{font-size:17px}.buttons button{flex:1 0 25%}}
+</style>
+</head>
+<body>
+<section class="lab" aria-label="Phòng thí nghiệm tập xác định">
+<header>
+<h1>Miền đầu vào của hàm số</h1>
+<p>Chọn một giá trị \(x\) để kiểm tra đồng thời điều kiện dưới căn và điều kiện mẫu số. Bài toán đang xét: <strong>h(x) = √(4 − x²) / (x − 1)</strong>.</p>
+</header>
+<main>
+<label for="xinput">Giá trị x đang xét: <output id="xview" for="xinput">0</output></label>
+<input id="xinput" aria-label="Chọn x từ âm 3 đến 3" type="range" min="-3" max="3" step="0.01" value="0">
+<div class="range-row"><span>−3</span><span>0</span><span>3</span></div>
+<figure>
+<svg role="img" viewBox="0 0 730 160" aria-labelledby="dtitle ddesc" xmlns="http://www.w3.org/2000/svg">
+<title id="dtitle">Trục số với miền nhận đầu vào</title>
+<desc id="ddesc">Các giá trị từ âm 2 đến trước 1 và sau 1 đến 2 được nhận, gồm cả âm 2 và 2. Điểm 1 bị loại. Điểm chọn có màu cam.</desc>
+<rect width="730" height="160" fill="#f9fcfe"/>
+<line x1="52" y1="87" x2="678" y2="87" stroke="#8ba8bc" stroke-width="2"/>
+<line x1="156.33" y1="87" x2="469.33" y2="87" stroke="#1687b4" stroke-width="6"/>
+<line x1="469.33" y1="87" x2="573.67" y2="87" stroke="#1687b4" stroke-width="6"/>
+<circle cx="156.33" cy="87" r="5.5" fill="#1687b4"/>
+<circle cx="469.33" cy="87" r="7" fill="#f9fcfe" stroke="#1687b4" stroke-width="2.7"/>
+<circle cx="573.67" cy="87" r="5.5" fill="#1687b4"/>
+<g stroke="#8ba8bc" stroke-width="1.4">
+<path d="M52 80v14 M156.33 80v14 M260.67 80v14 M365 80v14 M469.33 80v14 M573.67 80v14 M678 80v14" fill="none"/>
+</g>
+<g font-size="13" font-family="system-ui,Arial,sans-serif" text-anchor="middle" fill="#355a75">
+<text x="52" y="116">−3</text><text x="156.33" y="116">−2</text><text x="260.67" y="116">−1</text>
+<text x="365" y="116">0</text><text x="469.33" y="116">1</text><text x="573.67" y="116">2</text><text x="678" y="116">3</text>
+</g>
+<circle id="needle" cx="365" cy="87" r="6" fill="#ed912d" stroke="#fff" stroke-width="1.4"/>
+<text x="365" y="39" font-size="13" text-anchor="middle" font-family="system-ui,Arial,sans-serif" fill="#2c5470">D = [−2, 1) ∪ (1, 2]</text>
+<text x="365" y="149" font-size="12" text-anchor="middle" font-family="system-ui,Arial,sans-serif" fill="#52748c">Chấm đặc: được nhận · Vòng rỗng: bị loại</text>
+</svg>
+</figure>
+<div class="buttons" aria-label="Chọn nhanh tình huống biên">
+<button type="button" data-x="-2">x = −2</button>
+<button type="button" data-x="0">x = 0</button>
+<button type="button" data-x="1">x = 1</button>
+<button type="button" data-x="2">x = 2</button>
+<button type="button" data-x="3">x = 3</button>
+</div>
+<div class="result" id="result" role="status" aria-live="polite"></div>
+<p class="small">Gợi ý quan sát: thử x = −2, 1 và 2. Căn bằng 0 không có vấn đề; mẫu bằng 0 mới làm giá trị không xác định. Hoạt động công khai này không chấm điểm hoặc ghi mức độ thành thạo.</p>
+</main>
+</section>
+<script>
+(function(){
+"use strict";
+const slider=document.getElementById("xinput");
+const xview=document.getElementById("xview");
+const needle=document.getElementById("needle");
+const result=document.getElementById("result");
+function fmt(v){return String(Math.round(v*100)/100).replace(".",",");}
+function draw(){
+ const x=Number(slider.value);
+ const rad=4-x*x, denom=x-1;
+ const a=rad>=-1e-9, b=Math.abs(denom)>1e-9;
+ const permitted=a&&b;
+ xview.textContent=fmt(x);
+ needle.setAttribute("cx",String(52+(x+3)/6*626));
+ const msgRoot=a?"Căn: đủ điều kiện (4 − x² ≥ 0).":"Căn: không đủ điều kiện (4 − x² < 0).";
+ const msgDen=b?"Mẫu: đủ điều kiện (x − 1 ≠ 0).":"Mẫu: không đủ điều kiện (x − 1 = 0).";
+ let resultText;
+ if(permitted){
+   const val=Math.sqrt(Math.max(0,rad))/denom;
+   resultText="x thuộc D. h(x) ≈ "+fmt(val);
+ } else {resultText="x không thuộc D; h(x) không xác định trong tập số thực.";}
+ result.innerHTML="<div>"+msgRoot+"</div><div>"+msgDen+"</div><strong class='"+(permitted?"ok":"bad")+"'>"+resultText+"</strong>";
+ needle.setAttribute("fill",permitted?"#ed912d":"#b65b56");
+}
+slider.addEventListener("input",draw);
+document.querySelectorAll("button[data-x]").forEach(btn=>btn.addEventListener("click",()=>{slider.value=btn.dataset.x;draw();}));
+draw();
+})();
+</script>
+</body>
+</html>
