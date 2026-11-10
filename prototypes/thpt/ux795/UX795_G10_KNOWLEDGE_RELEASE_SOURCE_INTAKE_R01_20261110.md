@@ -30,15 +30,15 @@
 | B16 | VI | `a0fc509e1c08b7ee90225dee3994d6b3fa84e21a` | `9a3c704459803de44dd122b15183d568bfd47d6c` |
 | B17 | VI | `f94608d832b43e671439afde9c14332bb443ac13` | `6302851ed5ce78540a315eec475df7581c321390` |
 | B18 | VI | `0f2c6420f40112018dfd4be1268b0deb83f4452a` | `31ed3e85424d68130fc62a96e031389fc937122c` |
-| B19 | VII | `a4dbf99d12c35f0b3af73fb3df423126aa861add` | `789adbd1dd24d1fe48629fedcff5d2d552791742` |
-| B20 | VII | `489e4d1784e19a896748d83a9e71a9b00ac73a09` | `bbb192caee4914cfd90e24cb4b63b443d8055bf0` |
-| B21 | VII | `361f5ed232e500d7db567ef9ffa8aaca4e5b6fe5` | `070d398ad721b8980ae0029c97a47b0431179d19` |
-| B22 | VII | `fb879e4428998cfd388315b4781810a98637b67b` | `95850cf64bd873abdd3f1d321c74eab3cd07fa5f` |
-| B23 | VIII | `a3adcc4882a58d3ffd5346c65d94821092686cf7` | `0b3cf040be268dc775ab48f968b242d5168538b1` |
-| B24 | VIII | `f0ec9161dc9553fc36b203f63e2d45f212cace89` | `314b0f879994586e56ee6ec856cff3ef36ab94dd` |
-| B25 | VIII | `7fa6775d6da704193e0e0924451abc844873428f` | `8c02911fdcb0d5f8af0b0ef1e270f3a93807c109` |
-| B26 | IX | `74b1ba86a8c3b0ac9a48c6545e28af29792cb734` | `8086d0c0b4fc132d871d5eacf2177defe082381a` |
-| B27 | IX | `80bfadb4a9a3ae91e303f89506eb73e4a0d5bf9f` | `916925f16756c42d11fb633640820256261fae68` |
+| B19 | VII | `a4dbf99d12c35f0b3af73fb3df423126aa861add` | `36226f87857499897da3f62aaa9bd6a6f2ec7784` |
+| B20 | VII | `489e4d1784e19a896748d83a9e71a9b00ac73a09` | `b7dc310b509a3ee8ed1938abf8dbd7aa04b0ba2b` |
+| B21 | VII | `361f5ed232e500d7db567ef9ffa8aaca4e5b6fe5` | `13692ca5f8c0a7d648edccf5f9a7535cfdb1b85d` |
+| B22 | VII | `fb879e4428998cfd388315b4781810a98637b67b` | `aac177881e9e8a1fde9f7fa8213c56793eb966f2` |
+| B23 | VIII | `a3adcc4882a58d3ffd5346c65d94821092686cf7` | `f63524ef47d2990e00799e772a15f7aab1b2d4ca` |
+| B24 | VIII | `f0ec9161dc9553fc36b203f63e2d45f212cace89` | `1d7ac3e42f45ded6023573569c34c6d3d7b753cd` |
+| B25 | VIII | `7fa6775d6da704193e0e0924451abc844873428f` | `eebf2002e558f3c8e2bf049fd9a734bf01cc4f7c` |
+| B26 | IX | `74b1ba86a8c3b0ac9a48c6545e28af29792cb734` | `dafdfcfd801a0873f73e44d42ac102a1b8ffccbe` |
+| B27 | IX | `80bfadb4a9a3ae91e303f89506eb73e4a0d5bf9f` | `633c7cd0aaa70cdd1524fce17bb81cbf5d1b9a6d` |
 
 
 ## RELEASE prose-only refinement — 10/11/2026 (B07–B09)
@@ -65,6 +65,14 @@
 - B18: hướng học sinh trực tiếp thử lại nghiệm, làm rõ điều kiện căn thức, bớt văn phong viết cho reviewer.
 - Kiểm tĩnh từng file: toàn bộ MathJax/TeX token và chuỗi thuộc tính `data-*` giữ nguyên, đủ 4 tabs. Tất cả 4 Git blob ứng viên được khóa lại trong bảng. Không sửa Core/Practice/Readiness/đáp án/RD1/Firebase.
 - **Không biến QA biên tập thành Academic/PED reviewer PASS**. Q18 v2.0 còn ở PR #804 Draft; không merge/deploy trước khi các cổng chính thức và SHA/receipt mới tương thích.
+
+## RELEASE final-chapter self-study wording — G10 B19–B27
+
+- **ChVII B19–B22:** thay 23 lời nhắc `HELP-G10-CHVII-TRYxx` lộ mã kỹ thuật và 23 bước “luyện tiếp” lộ mã item thành hướng dẫn học sinh mở mục tự sửa / dùng **liên kết luyện tập đã có**. Không xóa một `data-thpt-help-id`, câu Tự thử, link hay ID nào.
+- **ChVIII B23–B25:** thay 12 dòng “chứng nhận đánh giá độc lập” ở vùng luyện lại bằng lời nhắc tự thử sau khi xem đối chiếu. Giữ liên kết canonical ngay dưới từng lời nhắc; B25 xóa từ “reviewer” ở một lời nhắc về hệ số khai triển, giữ điều kiện \(n=4,5\) và công thức áp dụng với \(n\) nguyên không âm.
+- **ChIX B26–B27:** biến 10 mã item hiển thị bằng backtick thành **10 liên kết `../luyen-tap/?item=<canonical>`**; giữ nguyên tham số item/nguồn câu, không nhân bản ngân hàng hay bật Mastery. B26 sửa một câu nói ngôi thứ ba thành lời hướng dẫn học sinh.
+- Mọi trang trong nhóm đã qua QA tĩnh **toàn bộ MathJax/TeX token và chuỗi `data-*` không đổi, 4 tab chủ dự án phê duyệt còn nguyên**. B19–25 giữ chính các link hiện có. B26–27 bổ sung link học tập (cần browser/deep-link QA), không sửa quiz engine/assessment.
+- 9 SHA mới đã ghi tại bảng intake. Bản này vẫn **Draft**, chưa có `SELF_QA_EVIDENCE_RECEIPT` có hiệu lực, không tự cấp Academic/PED PASS. Final-head QA vẫn phải đạt trước merge/deploy.
 
 ## RELEASE QA hiện có
 
