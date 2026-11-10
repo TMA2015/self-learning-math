@@ -39,6 +39,14 @@
 - **SBT Bài 16 trang in 14 (PDF trang 15), các bài 6.12–6.16** có yêu cầu nhận dạng, vẽ và tìm parabol từ dữ kiện/đỉnh/điểm; việc dạy bảng giá trị và công thức dạng đỉnh là nền phù hợp.
 - **SBT Bài 17 trang in 16–18** có xét dấu và bất phương trình, trong đó minh họa mối liên hệ với bảng dấu; **Bài 18 trang in 19–21** triển khai hai dạng phương trình căn và phép thử nghiệm ứng viên. Không suy rộng thành đã đối chiếu từng câu trên toàn bộ 19 outcome.
 
+## B17 đối chiếu sâu trực tiếp các trang in SGK/SBT
+
+- Đã xem thực tế **SGK Toán 10 KNTT Tập 2 trang in 19–24** (PDF trang 20–25). Trang 20–21 hình thành dấu tam thức bằng vị trí đồ thị trên/dưới trục hoành và ba trường hợp của \(\Delta\); trang 22–23 chuyển sang bảng xét dấu, bất phương trình và ứng dụng rào vườn; trang in **24, bài 6.18**, kiểm tình huống chuyển động có điều kiện độ cao.
+- Đã xem **SBT Toán 10 Tập 2 trang in 16–18** (PDF trang 17–19). Trang 16–17 có định lí dấu, ví dụ bất phương trình, tham số; trang in **18, bài 6.26** có mô hình quỹ đạo vật phóng. Hai tài liệu cùng hỗ trợ dạy **bất phương trình + miền thực tế** trong B17, nhưng không đòi tái dùng số liệu của sách.
+- Trang Knowledge B17 đã thêm ví dụ do dự án tự xây dựng \(h(t)=-5t^2+20t+5\), giải độ cao ít nhất 20 m và lọc \(0\le t\le2+\sqrt5\); SHA của B17 \`11d63ba7b40dfc75c1964f3bd59585975abaf8e9\`. Bổ sung này nhằm outcome \`B17_OUT_05\` (ứng dụng), không phát hành thêm bài kiểm tra, không thay \`THPT-G10-CHVI-TRY15\`.
+- Đã sửa lỗi hiển thị trong mục thuật ngữ B17: \`a\` và \`e0\` do chuỗi LaTeX bị vỡ dòng, thay bằng MathJax hợp lệ \(a\ne0\). Đây là sửa P1 trình bày có ảnh hưởng đọc hiểu, không được tự nâng lên PED PASS.
+- **Giới hạn:** Mới kiểm trực tiếp S1 *phạm vi và các bài đại diện* trong B17, không kết luận tất cả 5 outcome đều đạt PED/Academic trên snapshot mới. Q18 và chuẩn hiệu lực chưa được chuyển.
+
 ## Ranh giới chứng cứ
 
 - Đã xác minh thật **ấn bản, số trang in ↔ trang PDF và outcome mở đầu** của B16–B18; phạm vi B15 từ mục lục và trang đầu.
