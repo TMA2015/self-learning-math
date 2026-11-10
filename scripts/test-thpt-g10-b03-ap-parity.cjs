@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 "use strict";
+const {expectedG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 /* UX795 Model B, Grade 10 B03 AP1–AP5 Delta C. Previous D1 mathHash
  * 20a9cd2f belongs to historical source snapshot. New study content is
  * source-locked with its own math hash and checks all original outcome roles;
@@ -10,7 +11,7 @@ const src=fs.readFileSync(path.join(__dirname,"../docs/thpt-preview/sgk/chuong-i
 const blob=s=>crypto.createHash("sha1").update("blob "+Buffer.byteLength(s)+"\0").update(s).digest("hex");
 const fnv=s=>{let h=2166136261;for(let i=0;i<s.length;i++)h=Math.imul(h^s.charCodeAt(i),16777619);return(h>>>0).toString(16).padStart(8,"0")};
 const expr=s=>[...s.matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]/g)].map(x=>(x[1]??x[2]).trim());
-assert.equal(blob(src),"d7fab29f7727e1873120c81353d9db0d30ef2c69",
+assert.equal(blob(src),expectedG10KnowledgeBlob(3,"d7fab29f7727e1873120c81353d9db0d30ef2c69"),
  "B03 exact Model B source changed; classify Delta C before updating receipt");
 const labels=[...src.matchAll(/^=== "([^"]+)"$/gm)].map(x=>x[1]);
 assert.deepEqual(labels,["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
