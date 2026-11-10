@@ -25,25 +25,26 @@
 |---|---|---|---|
 | \`DRAFT-T1-M1-APP01\` | O01 | đọc bảng có cùng x | **HIGH**: giống họ dạng EX-M1-01/R18; ưu tiên reuse |
 | \`DRAFT-T1-M1-APP02\` | O02 | rút gọn phân thức không phục hồi điểm bị loại | so stem+rubric hiện hành |
-| \`DRAFT-T1-M1-APP03\` | O02 | căn nằm ở mẫu khác căn thường | so item gốc |
 | \`DRAFT-T1-M1-APP04\` | O02 | miền số vé và phí xử lý | so ứng dụng bối cảnh khác |
 | \`DRAFT-T1-M1-APP05\` | O02 | căn \(9-x^2\), mẫu \(x+2\), kiểm bốn giá trị ở biên/điểm loại | cùng họ dạng với M1, nhưng stem khác; vẫn so bank |
 | \`DRAFT-T1-M1-APP06\` | O02 | ba ràng buộc căn/mẫu | so item gốc |
 | \`DRAFT-T1-M1-WR01\` | O02 | phản biện căn ở mẫu, rubric lý do | so Written đã có |
-| \`DRAFT-T1-M1-WR02\` | O01/O02 | miền đầu vào số nguyên rời rạc, đầu ra trùng và tập giá trị không nhân bản | so Written đã có |
-| \`DRAFT-T1-M2-APP04\` | O03 | dữ liệu đo vs nội suy | so \`THPT-G10-TOP-FUNC-P01\` |
+| \`DRAFT-T1-M1-WR02\` | O02/O03 | rút gọn làm khuyết một điểm trên đồ thị và mất một giá trị trong tập giá trị | so Written, có suy luận sâu hơn APP02 |
 | \`DRAFT-T1-M2-APP05\` | O05 | đổi điều kiện trong hàm từng đoạn | so \`THPT-G10-B15-P02\` |
 | \`DRAFT-T1-M2-APP06\` | O04/O05 | **hai nhánh đều tăng nhưng cả hàm không tăng do bước nhảy xuống** | so O04/O05 |
 | \`DRAFT-T1-M2-WR01\` | O03 | trả lời tự luận phân biệt quan sát và dự báo | so 2 Written G10 B15 |
-| \`DRAFT-T1-M3-APP06\` | **extension M3** | trị tuyệt đối ở đầu vào/đầu ra | kiểm S1 scope/Q02; có thể chỉ làm enrichment |
 | \`DRAFT-T1-M3-APP07\` | **extension M3/O08** | số nghiệm sau hai biến đổi | kiểm S1 scope/Q02 và item bank |
 | \`DRAFT-T1-M3-APP08\` | O06 | a=0 cho hàm bậc nhất | so \`THPT-G10-TOP-FUNC-P02\` |
 | \`DRAFT-T1-M3-APP09\` | O09 | tối ưu trên **hai đoạn rời** | so \`THPT-G10-TOP-FUNC-P05\` |
 | \`DRAFT-T1-M3-WR02\` | **extension M3/O08** | chứng minh khác nhau giữa \(|f|\) và \(f(|x|)\) | so Written hiện có; targeted review |
 
-**Phân loại thận trọng:** 17 DRAFT ID chỉ là *candidates*. Các bài ghi HIGH không được chuyển thành câu mới canonical chỉ vì có mã riêng. Tác giả/reviewer cần quyết định: (i) dùng lại item gốc; (ii) giữ dạng Vận dụng trong Kiến thức mà không đăng ký item Luyện tập; (iii) cho phép một **item mới khác thực sự** khi có lý do chiều sâu và bằng chứng nguồn.
+**Phân loại thận trọng:** 14 DRAFT ID chỉ là *candidates*. Các bài ghi HIGH không được chuyển thành câu mới canonical chỉ vì có mã riêng. Tác giả/reviewer cần quyết định: (i) dùng lại item gốc; (ii) giữ dạng Vận dụng trong Kiến thức mà không đăng ký item Luyện tập; (iii) cho phép một **item mới khác thực sự** khi có lý do chiều sâu và bằng chứng nguồn.
 
-## III. Trước review/CONTENT_READY
+## III. Q15 semantic dedup bổ sung (10/11/2026)
+
+Đã loại khỏi danh sách item mới APP03 M1 (căn ở mẫu chỉ đổi ký hiệu so với WR01), APP04 M2 (cùng bài nội suy tuyến tính với WR01), APP06 M3 (tính `|f(x)|` và `f(|x|)` đã có trong Vận dụng Kiến thức và WR02). Những câu này không được mint `item_id` mới; kiến thức và đối chiếu đã có trong nguồn chung. Còn 14 ứng viên (10 APP, 4 Written); đối chiếu ngữ nghĩa toàn bộ bank SGK/Topic/Written vẫn HOLD.
+
+## IV. Trước review/CONTENT_READY
 
 1. Mỗi câu được giữ lại cần mapping chính thức \`item_id ↔ outcome_id ↔ placement ↔ role ↔ content_version ↔ source SHA\`, đồng bộ một bank đáp án/lời giải/rubric duy nhất.
 2. Các dạng \(|f(x)|\), \(f(|x|)\) trong M3 là **mở rộng sư phạm** trên cơ sở hàm số bậc hai; reviewer phải xác định mức phù hợp với S1, không gọi mọi kiến thức mở rộng là Core bắt buộc.
