@@ -23,7 +23,7 @@
 
 === "Kiến thức SGK"
 
-    **Cách đọc hình.** Quan sát nhãn, hướng và vị trí trên hình; đối chiếu từng chi tiết với khái niệm đang học.
+    **Cách đọc hình.** Đường nét đứt \(x=1\) đi qua đỉnh \(I(1;-4)\), nơi parabol đạt giá trị nhỏ nhất. Đọc từ trái sang phải: đồ thị đi xuống trước \(x=1\), rồi đi lên sau \(x=1\). Hai giao điểm với trục \(Ox\) là \((-1;0)\) và \((3;0)\).
 
     <figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="../../../../assets/images/thpt/G10_B16_PARABOLA_VERTEX_R02.svg" loading="lazy" alt="Parabol y=(x-1)²-4 có đỉnh I(1,-4), trục x=1 và hai giao điểm với Ox là -1, 3"><figcaption>Hình do SLM vẽ cho \(y=(x-1)^2-4\). Đỉnh \(I(1,-4)\) và trục \(x=1\) giúp đọc các khoảng tăng, giảm. Không dùng bộ tọa độ này cho mọi parabol.</figcaption></figure>
 
