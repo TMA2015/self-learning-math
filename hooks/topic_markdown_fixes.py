@@ -159,8 +159,76 @@ def _interactive_only_pilot(markdown: str, src_path: str) -> str:
 """
 
 
+
+# Release UX labels: this is presentation-only Markdown rendering, not an edit
+# to reviewed academic source, scores, answer keys, item IDs, or learner data.
+# Restrict the transform to Knowledge lessons; SGK Core/Practice/Readiness and
+# the THCS Golden UI remain byte-for-byte unchanged in the source and output.
+_THPT_SGK_KNOWLEDGE = re.compile(
+    r"^thpt-preview/sgk/(?:chuong-[^/]+|lop-\d+/chuong-[^/]+)/bai-\d+\.md$"
+)
+_THPT_FOLD = re.compile(
+    r'(?m)^([ \t]*\?\?\?\s+(question|note|tip)\s+")([^"\n]+)(")'
+)
+_THPT_SUMMARY = re.compile(r"(<summary>)([^<\n]*)(</summary>)")
+_THPT_APPLICATION = re.compile(r"(?m)^([ \t]*(?:\*\*|#{2,6}\s+))Em vận dụng(?=[\s.、:—–-])")
+
+
+def _is_thpt_knowledge_page(src_path: str) -> bool:
+    if _THPT_SGK_KNOWLEDGE.fullmatch(src_path):
+        return True
+    # Future Topic pages share one editorial vocabulary but must preserve
+    # Topic Practice/Readiness and independent Final Submit untouched.
+    normalized = "/" + src_path
+    if not src_path.startswith("thpt-preview/"):
+        return False
+    if "/chuyen-de/" not in normalized and "/topic/" not in normalized:
+        return False
+    leaf = src_path.rsplit("/", 1)[-1]
+    return leaf in ("kien-thuc.md", "index.md") or "/kien-thuc/" in normalized
+
+
+def _short_reveal_title(raw: str, kind: str = "question") -> str:
+    value = raw.strip()
+    lowered = value.casefold()
+    answer_words = ("lời giải", "đáp án", "đối chiếu")
+    if not any(word in lowered for word in answer_words):
+        return raw
+    if not ("mở" in lowered or "em đã" in lowered or "sau khi tự" in lowered):
+        return raw
+    # First Try is formative, voluntary and unscored; the answer stays in the
+    # original default-closed fold. Only its label is shortened.
+    if kind == "question":
+        return "Đối chiếu"
+    if "đối chiếu" in lowered:
+        return "Đối chiếu"
+    return "Lời giải"
+
+
+def _short_thpt_knowledge_labels(markdown: str) -> str:
+    def fold_repl(match: re.Match[str]) -> str:
+        return (
+            match.group(1)
+            + _short_reveal_title(match.group(3), match.group(2))
+            + match.group(4)
+        )
+
+    def summary_repl(match: re.Match[str]) -> str:
+        # The source has a separate First Try marker; never open or change
+        # details, IDs, questions, feedback, solutions, or reveal timing.
+        return match.group(1) + _short_reveal_title(match.group(2)) + match.group(3)
+
+    markdown = _THPT_FOLD.sub(fold_repl, markdown)
+    markdown = _THPT_SUMMARY.sub(summary_repl, markdown)
+    markdown = _THPT_APPLICATION.sub(lambda m: m.group(1) + "Vận dụng", markdown)
+    return markdown
+
+
+
 def on_page_markdown(markdown, page, config, files):
     src_path = getattr(getattr(page, "file", None), "src_path", "") or ""
+    if _is_thpt_knowledge_page(src_path):
+        return _short_thpt_knowledge_labels(markdown)
     if src_path == "kien-thuc/01-ban-do-chuong-trinh/bai-tap.md":
         return _roadmap_topic_intro()
     if src_path in _PILOT_PRACTICE:
