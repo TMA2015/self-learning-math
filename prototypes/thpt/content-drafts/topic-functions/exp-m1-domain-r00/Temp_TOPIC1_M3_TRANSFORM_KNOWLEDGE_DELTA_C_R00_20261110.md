@@ -2,7 +2,7 @@
 
 **AUTHORING R00 · DELTA_C · CHƯA REVIEW.** Phần bổ sung cho mạch M3 của canonical R18; **không sửa hoặc sao chép đè** các định nghĩa, ví dụ và item đã PASS. Phạm vi mới tập trung vào hai phép biến đổi \(y=|f(x)|\), \(y=f(|x|)\), cách giải thích bằng hình và điều kiện \(a\ne0\). Mảng tối ưu chỉ thêm một tình huống làm cầu nối M1–M3.
 
-**Nguồn S1:** SGK Toán 10 Kết nối tri thức tập hai, Bài 16 *Hàm số bậc hai*, trang in 13–14 / trang PDF 14–15, đã đối chiếu số trang in và đồ thị. Hai phép biến đổi với trị tuyệt đối và tình huống vận dụng là nội dung bổ sung do AUTHORING biên soạn, **không tuyên bố là yêu cầu bắt buộc của bài SGK**.
+**Nguồn S1:** SGK Toán 10 Kết nối tri thức tập hai, Bài 16 *Hàm số bậc hai*, trang in **11–18** / trang PDF **12–19** (Bài 16 đầy đủ; các hình và ví dụ trên trang 13–14 chỉ là một phần), đã đối chiếu số trang in và đồ thị. Hai phép biến đổi với trị tuyệt đối và tình huống vận dụng là nội dung bổ sung do AUTHORING biên soạn, **không tuyên bố là yêu cầu bắt buộc của bài SGK**.
 
 ---
 
@@ -145,7 +145,7 @@ Trị tuyệt đối **ngoài** dấu hàm thay đổi **đầu ra** và lật p
 
 ### AUTHORING CONTROL — KHÔNG RENDER CHO HỌC SINH
 
-- S1: SGK Toán 10 KNTT T2, B16 trang in 13–14/PDF14–15. S1 xác nhận hàm bậc hai và tính chất parabol; phép biến đổi có trị tuyệt đối là phần minh họa mở rộng, không tự coi là Core S1.
+- S1: SGK Toán 10 KNTT T2, B16 trang in 11–18/PDF12–19. S1 xác nhận hàm bậc hai và tính chất parabol; phép biến đổi có trị tuyệt đối là phần minh họa mở rộng, không tự coi là Core S1.
 - Canonical preserved: R18 \`Temp_TOPIC_FUNCTIONS_FULL_PUBLIC_CANONICAL_SOURCE_R18_20261108.md\`, blob \`2340ea4975b37a457363eea59dd617070934983c\`, Draft PR #782.
 - Proposed outcomes: đọc và biến đổi đồ thị; phân biệt trị tuyệt đối đầu vào/đầu ra; kiểm miền; biện luận \(a=0\), đọc miền cực trị. Đối chiếu R18 mapping trước khi chính thức gắn \`OUTCOME_ID\`.
 - FIG D5 mới phải review đúng toán. HTML lab chưa được tự tuyên bố AP/Academic PASS. Các câu Vận dụng ở đây là công khai, không thay ngân hàng RD1 độc lập.
