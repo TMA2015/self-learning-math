@@ -83,7 +83,53 @@ Như vậy, không được viết \(f(|x|)=|f(x)|\) nếu chưa có lý do đ�
 
 Mô hình tương tác D5 \`Temp_TOPIC1_M3_GRAPH_TRANSFORM_LAB_D5_R00.html\` cho phép bật từng phép biến đổi. Hãy thử với \(a=1,b=-4,c=3\), sau đó đổi dấu hoặc độ lớn của \(a\) và quan sát. Đừng bật tất cả ngay: nên dự đoán hình dạng trước rồi mới so sánh.
 
-## 3. Vì sao \(a=0\) không còn là parabol?
+## 3. Dấu trừ ở bên trong lại làm đồ thị dịch sang phải?
+
+Một ý tưởng có giá trị từ bộ Notebook 22 chuyên đề là **đọc phép tịnh tiến bằng đầu vào và đầu ra**, thay vì bắt học sinh thuộc lòng câu “trừ là sang phải, cộng là sang trái”. Ta có thể tự suy ra điều đó.
+
+Giả sử em đã biết một điểm \(A(u;f(u))\) thuộc đồ thị gốc \(y=f(x)\). Bây giờ xét hàm
+
+\[
+g(x)=f(x-2)+3.
+\]
+
+Để phần \(f(x-2)\) sử dụng **đúng đầu vào cũ \(u\)**, ta phải chọn \(x-2=u\), tức \(x=u+2\). Khi ấy đầu ra bằng \(f(u)+3\). Như vậy điểm \(A(u;f(u))\) chuyển thành
+
+\[
+A'(u+2;f(u)+3).
+\]
+
+Điều này giải thích được cả hai chiều: **dịch sang phải 2 đơn vị** vì hoành độ mới lớn hơn 2; **dịch lên trên 3 đơn vị** vì tung độ mới lớn hơn 3. Nếu chỉ nhìn thấy dấu trừ trước số 2 rồi đoán “dịch trái”, em đã nhầm giữa giá trị **đưa vào máy tính** và vị trí **điểm trên đồ thị mới**.
+
+### Ví dụ · Miền của đồ thị cũng phải dịch
+
+Xét \(f(u)=(u-1)^2\), nhưng chỉ định nghĩa trên \(D_f=[0,2]\). Đồ thị gốc là **một đoạn parabol** từ \(A(0;1)\), qua đỉnh \(I(1;0)\) đến \(B(2;1)\); đừng vẽ kéo dài toàn bộ hai nhánh vì miền đầu vào đã được giới hạn.
+
+Đặt \(g(x)=f(x-2)+3\). Muốn \(g(x)\) có nghĩa, phải có \(x-2\in[0,2]\), tức
+
+\[
+\boxed{D_g=[2,4].}
+\]
+
+Từ ba điểm gốc, ta nhận \(A'(2;4)\), \(I'(3;3)\), \(B'(4;4)\). Trên miền mới, \(g(x)\) nhận tất cả giá trị từ 3 đến 4, tức \(T_g=[3,4]\). **Đồ thị, tập xác định và tập giá trị đều được xét đúng trong miền được cho**; phép tịnh tiến không làm xuất hiện vô hạn điểm mới ở ngoài đoạn.
+
+![Điểm và miền thay đổi khi tịnh tiến đồ thị](Temp_FIG_TOPIC1_M3_TRANSLATION_AND_DOMAIN_R00.svg)
+
+**Cách đọc hình:** đường xanh dương là **đoạn đồ thị gốc**, đường xanh lá là **đoạn sau khi dịch**. Mũi tên nét đứt chỉ sự chuyển từ đỉnh \(I\) đến \(I'\). Hãy đọc cả các mốc \(x=0,2,4\) trên trục hoành; chỉ nhìn hai đỉnh thôi thì chưa đủ nhận ra miền mới.
+
+### Vận dụng · Tự chuyển một hàm không phải parabol
+
+Giả sử \(f(x)=\sqrt{x}\) chỉ xét trên \([0,4]\). Hãy dự đoán tập xác định và tập giá trị của \(h(x)=f(x+1)-2\) trước khi nhìn phần đối chiếu.
+
+<details><summary>Đối chiếu</summary>
+
+Để \(f(x+1)\) có nghĩa, cần \(x+1\in[0,4]\), nên \(-1\le x\le3\). Vậy \(D_h=[-1,3]\). Vì \(f\) nhận tất cả giá trị trong \([0,2]\) trên miền gốc, sau khi trừ 2 vào **đầu ra**, \(h\) nhận các giá trị \([-2,0]\). Đồ thị dịch **sang trái 1** và **xuống 2**; cách đọc dấu vẫn được giải thích bằng phép thế \(x+1=u\), không cần học thuộc máy móc.
+
+</details>
+
+**Điều kiện quan trọng:** công thức \(f(x-a)+b\) không cho phép bỏ qua tập xác định gốc. Nếu \(f\) chỉ có nghĩa với \(u\in D_f\), miền mới phải là \(\{x:x-a\in D_f\}\), dù hình vẽ được tịnh tiến bằng cách nào. Các phép tịnh tiến này là phần **mở rộng trực quan** của M3; không tự ghi thành Core bắt buộc của SGK Bài 16.
+
+## 4. Vì sao \(a=0\) không còn là parabol?
 
 Hàm bậc hai có dạng \(f(x)=ax^2+bx+c\) với điều kiện bắt buộc **\(a\ne0\)**. Khi \(a=0\), ta chỉ còn \(f(x)=bx+c\): đó là hàm bậc nhất nếu \(b\ne0\), hoặc hàm hằng nếu \(b=0\).
 
@@ -97,7 +143,7 @@ f(x)=a\left(x+\frac{b}{2a}\right)^2+c-\frac{b^2}{4a}
 
 giúp ta tìm trục và đỉnh bằng suy luận từ bình phương. Nếu cần đếm nghiệm của \(f(x)=0\), dùng biệt thức \(\Delta=b^2-4ac\) khi **đúng là** phương trình bậc hai. Đỉnh và nghiệm là hai câu hỏi khác nhau: **đỉnh** nói đến vị trí thấp nhất/cao nhất của parabol trên \(\mathbb R\); **nghiệm** nói tới nơi đồ thị gặp trục \(Ox\).
 
-## 4. Đỉnh đẹp chưa chắc là đáp án đúng của bài toán
+## 5. Đỉnh đẹp chưa chắc là đáp án đúng của bài toán
 
 Giả sử độ cao (m) của một vật theo thời gian \(t\) (giây) được mô phỏng bởi
 
@@ -139,13 +185,13 @@ Tại \(t=0\), \(H=0\); tại \(t=2\), \(H=8\). Trên \([0,2]\), bình phương 
 
 ## Ghi nhớ
 
-Trị tuyệt đối **ngoài** dấu hàm thay đổi **đầu ra** và lật phần đồ thị nằm dưới \(Ox\). Trị tuyệt đối **trong** dấu hàm thay đổi **đầu vào**, dùng nửa bên phải để tạo đối xứng qua \(Oy\) khi miền phù hợp. Cả hai phép biến đổi đều phải tôn trọng tập xác định. Khi có tham số \(a\), cần phân biệt rõ hàm bậc hai với trường hợp \(a=0\). Và khi làm một bài toán thực tế, không được lấy giá trị cực trị trên toàn trục số thay cho cực trị trên miền đề bài.
+Phép \(f(x-a)+b\) thay đổi vị trí **đầu vào** và **đầu ra**: khi có điều kiện miền, cả tập xác định cũng phải đổi tương ứng. Trị tuyệt đối **ngoài** dấu hàm thay đổi **đầu ra** và lật phần đồ thị nằm dưới \(Ox\). Trị tuyệt đối **trong** dấu hàm thay đổi **đầu vào**, dùng nửa bên phải để tạo đối xứng qua \(Oy\) khi miền phù hợp. Cả hai phép biến đổi đều phải tôn trọng tập xác định. Khi có tham số \(a\), cần phân biệt rõ hàm bậc hai với trường hợp \(a=0\). Và khi làm một bài toán thực tế, không được lấy giá trị cực trị trên toàn trục số thay cho cực trị trên miền đề bài.
 
 ---
 
 ### AUTHORING CONTROL — KHÔNG RENDER CHO HỌC SINH
 
-- S1: SGK Toán 10 KNTT T2, B16 trang in 11–18/PDF12–19. S1 xác nhận hàm bậc hai và tính chất parabol; phép biến đổi có trị tuyệt đối là phần minh họa mở rộng, không tự coi là Core S1.
+- S1: SGK Toán 10 KNTT T2, B16 trang in 11–18/PDF12–19. S1 xác nhận hàm bậc hai và tính chất parabol; phép biến đổi có trị tuyệt đối và phép tịnh tiến trên miền giới hạn là phần minh họa mở rộng, không tự coi là Core S1.
 - Canonical preserved: R18 \`Temp_TOPIC_FUNCTIONS_FULL_PUBLIC_CANONICAL_SOURCE_R18_20261108.md\`, blob \`2340ea4975b37a457363eea59dd617070934983c\`, Draft PR #782.
 - Proposed outcomes: đọc và biến đổi đồ thị; phân biệt trị tuyệt đối đầu vào/đầu ra; kiểm miền; biện luận \(a=0\), đọc miền cực trị. Đối chiếu R18 mapping trước khi chính thức gắn \`OUTCOME_ID\`.
 - FIG D5 mới phải review đúng toán. HTML lab chưa được tự tuyên bố AP/Academic PASS. Các câu Vận dụng ở đây là công khai, không thay ngân hàng RD1 độc lập.
