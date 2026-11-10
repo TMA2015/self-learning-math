@@ -179,7 +179,7 @@
 
     **Kiểm lại.** Hợp có 5 phần tử và \(n(A)+n(B)-n(A\cap B)=4+3-2=5\). Hai hiệu khác nhau như đã dự đoán.
 
-    ### Ví dụ 2 — Giao, hợp và hiệu của hai khoảng (chọn lọc NotebookLM v1)
+    ### Ví dụ 2 — Giao, hợp và hiệu của hai khoảng
 
     **Đề bài.** Cho \(A=(-3,2]\), \(B=[0,5)\). Tìm \(A\cap B\), \(A\cup B\) và \(A\setminus B\).
 
