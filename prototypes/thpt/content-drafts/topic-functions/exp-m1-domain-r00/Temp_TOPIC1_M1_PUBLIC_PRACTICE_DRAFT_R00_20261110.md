@@ -52,13 +52,13 @@ Một cửa hàng thu 8 nghìn đồng phí xử lý đơn và 12 nghìn đồng
 
 ## Nhóm B · Kết hợp điều kiện, miền và đồ thị
 
-### DRAFT-T1-M1-APP05 · Hai điều kiện giao nhau
+### DRAFT-T1-M1-APP05 · Đọc đúng điểm biên và điểm loại
 
-Xét \(\displaystyle q(x)=\frac{\sqrt{4-x^2}}{x-1}\). Hãy xác định miền và quyết định có được dùng từng giá trị \(-2,0,1,2,3\) không. Với giá trị hợp lệ, tính kết quả.
+Xét \(q(x)=\dfrac{\sqrt{9-x^2}}{x+2}\). Xác định tập xác định và kiểm các giá trị \(x=-3,-2,0,3\). Với các giá trị hợp lệ, hãy tính \(q(x)\).
 
 <details><summary>Đối chiếu</summary>
 
-\(-2\le x\le2,\ x\ne1\), nên \(D=[-2,1)\cup(1,2]\). \(q(-2)=0\), \(q(0)=-2\), \(q(2)=0\); \(q(1)\) và \(q(3)\) không xác định. Tại 1 lỗi do **mẫu**, tại 3 lỗi do **căn**. Có thể dùng hình SVG và Lab D5 để tự đối chiếu tình huống biên.
+Căn yêu cầu \(9-x^2\ge0\), tức \(-3\le x\le3\). Mẫu yêu cầu \(x+2\ne0\), tức \(x\ne-2\). Do đó \(D=[-3,-2)\cup(-2,3]\). Ta nhận \(-3,0,3\) và loại \(-2\): \(q(-3)=0\), \(q(0)=3/2\), \(q(3)=0\). Đầu mút được nhận vì căn bằng 0 là hợp lệ khi mẫu khác 0. Điểm \(-2\) bị loại dù biểu thức dưới căn dương.
 
 </details>
 
@@ -72,17 +72,15 @@ Xét \(\displaystyle r(x)=\frac{\sqrt{x+2}}{(x-1)(x-3)}\). Tìm \(D\), rồi cho
 
 </details>
 
-### DRAFT-T1-M1-APP07 · Tập giá trị đổi khi miền đổi
+### DRAFT-T1-M1-APP07 · Tập giá trị khi đỉnh nằm ngoài miền
 
-Với \(p(x)=(x-1)^2+2\), hãy tìm tập giá trị nếu (a) \(D=\mathbb R\), (b) \(D=[0,2]\). Giải thích vì sao hai tập khác nhau dù công thức y hệt.
+Cho \(p(x)=(x-2)^2+1\), nhưng chỉ xét \(x\in[-1,1]\). Tìm tập giá trị của hàm trên miền được cho. Vì sao không được lấy 1 làm GTNN trong bài này?
 
 <details><summary>Đối chiếu</summary>
 
-(a) \(T=[2,+\infty)\). (b) Vì \(-1\le x-1\le1\) nên \(0\le(x-1)^2\le1\) và \(T=[2,3]\). Hai cận đạt tại \(x=1\) và \(x=0\) hoặc 2. Mọi \(y\in[2,3]\) đều đạt được bằng cách chọn \(x=1+\sqrt{y-2}\in[1,2]\). Miền bị thu hẹp nên các đầu ra lớn hơn 3 không còn xuất hiện.
+Đỉnh của parabol ở \(x=2\) nằm **ngoài** miền. Trên \([-1,1]\), \(|x-2|\) giảm từ 3 tới 1 khi x tăng, nên \(p\) giảm từ \(p(-1)=10\) tới \(p(1)=2\). Vì vậy tập giá trị là \([2,10]\), không phải \([1,+\infty)\) hay \([1,10]\). Mọi \(y\in[2,10]\) đều đạt được bằng \(x=2-\sqrt{y-1}\in[-1,1]\).
 
 </details>
-
-## Nhóm C · Tự luận giải thích (Written candidate)
 
 ### DRAFT-T1-M1-WR01 · Phản biện một kết luận sai
 
