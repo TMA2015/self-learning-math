@@ -29,7 +29,7 @@
 | B15 | VI | `72ed03b1cb625f157bb49064cf1df2100856e057` | `7b579927e0f6fe4d5a562d5e1127efa8d6deeb96` |
 | B16 | VI | `a0fc509e1c08b7ee90225dee3994d6b3fa84e21a` | `afe31b484ba60f8f7fed243b29995332a5609826` |
 | B17 | VI | `f94608d832b43e671439afde9c14332bb443ac13` | `11d63ba7b40dfc75c1964f3bd59585975abaf8e9` |
-| B18 | VI | `0f2c6420f40112018dfd4be1268b0deb83f4452a` | `31ed3e85424d68130fc62a96e031389fc937122c` |
+| B18 | VI | `0f2c6420f40112018dfd4be1268b0deb83f4452a` | `712694dca594379ae27e49d6c192adf47b2d0d81` |
 | B19 | VII | `a4dbf99d12c35f0b3af73fb3df423126aa861add` | `36226f87857499897da3f62aaa9bd6a6f2ec7784` |
 | B20 | VII | `489e4d1784e19a896748d83a9e71a9b00ac73a09` | `4a704fdbc8ff6eecb932c8c61187b891f40e01ec` |
 | B21 | VII | `361f5ed232e500d7db567ef9ffa8aaca4e5b6fe5` | `13692ca5f8c0a7d648edccf5f9a7535cfdb1b85d` |
@@ -98,6 +98,13 @@
 - Bổ sung **ví dụ tự biên soạn, khác dữ kiện SGK/SBT**: \(h(t)=-5t^2+20t+5\) m, yêu cầu \(h(t)\ge20\); thời gian bay \(0\le t\le2+\sqrt5\), giải \(h(t)\ge20\iff(t-1)(t-3)\le0\), được \(1\le t\le3\) giây. Kiểm \(h(0)=5\), \(h(1)=h(3)=20\), \(h(2)=25\), \(h(2+\sqrt5)=0\).
 - Đồng thời sửa lỗi vỡ công thức \(a\ne0\) thành hai dòng 'a'/'e0' trong tab Khám phá. Giữ nguyên First Try, HELP, các ID canonical và 4 tab; **B17 là DELTA_C phần giải thích/ứng dụng**, không đổi toán hoặc rubric của ngân hàng câu cũ.
 - New candidate B17 Git blob khóa ở bảng; [ChVI S1 source scope R01](UX795_G10_CHVI_S1_PRINTED_PAGE_SCOPE_R01_20261110.md). Không gọi ứng dụng mới là kết quả review độc lập; Q18 hiệu lực vẫn HOLD.
+
+## S1 B18 radical and meeting-time pedagogy — 10/11/2026
+
+- **S1 verified directly:** SGK Toán 10 KNTT Tập 2 pp.25–27 (PDF pp.26–28): both \(\sqrt{A(x)}=\sqrt{B(x)}\), \(\sqrt{A(x)}=B(x)\), trial of squaring candidates, and a real-world equal-travel-time model at printed p.26. SBT Toán 10 Tập 2 pp.19–21 corroborates both forms and sign/domain checks; it is **not** claimed to be the source of the new invented meeting-time numbers. Both private source PDF SHA256 values remain only in [S1 scope R01](UX795_G10_CHVI_S1_PRINTED_PAGE_SCOPE_R01_20261110.md).
+- **Confirmed P1/D6 error:** HELP-G10-CHVI-TRY19 told student to mark *cạnh huyền 5 m* despite the ladder being 13 m, horizontal leg 5 m and vertical leg 12 m. Fixed HTML guidance to **cạnh huyền 13 m / cạnh góc vuông 5 m**. Canonical HELP ID unchanged.
+- **Targeted Knowledge Delta C:** B18_OUT_04 additionally teaches travel-time equality with an original independent two-person example: \(AB=3\), \(BC=8\), \(x=BM\in[0,8]\), speeds 5/4 km/h; \(\sqrt{x^2+9}/5=(8-x)/4\). Squaring gives \((x-4)(9x-364)=0\), reject \(364/9>8\), verify both times exactly 1 hour at \(x=4\). Shows why domain and substituting into **original** time equation matter. No new canonical assessment item, no protected RD1/Final Submit change.
+- Source SHA for B18 re-locked below; source-bound regressions added for both D6 geometry labels and travel model. These are scoped evidence, **not** Q18/Academic/PED PASS. 27-candidate CI/browser must rerun on exact HEAD.
 
 ## RELEASE QA hiện có
 
