@@ -18,6 +18,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: Protect release-queue manifest and REGISTER even on metadata-only main pushes
+        run: node scripts/test-thpt-release-queue.cjs
       - name: Assert safe push-scope classifier and classify FULL main push
         id: scope
         env:
