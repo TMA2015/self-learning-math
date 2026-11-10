@@ -196,6 +196,39 @@
 
     **Liên hệ SGK/SBT:** Những tình huống hình học ở trên giúp luyện cách đặt điều kiện cho căn thức và thử lại nghiệm ứng viên trong phương trình ban đầu.
 
+    ### Vận dụng: hai hành trình gặp nhau cùng thời điểm
+
+    **Vì sao cần bài này?** Khi hai người đi theo hai lộ trình khác nhau, khoảng cách chưa đủ để quyết định điểm gặp. Ta cần đổi từng khoảng cách thành **thời gian = quãng đường / vận tốc**. Đây cũng là lúc phương trình chứa căn xuất hiện tự nhiên: đường đi xiên là cạnh huyền của tam giác vuông.
+
+    **Ví dụ tự biên soạn.** Hai người xuất phát cùng lúc và cần gặp nhau tại điểm \(M\) trên đoạn đường thẳng \(BC\) dài \(8\) km. Người thứ nhất xuất phát tại \(A\), cách \(B\) một đoạn vuông góc \(AB=3\) km, đi thẳng từ \(A\) tới \(M\) với vận tốc \(5\) km/h. Người thứ hai xuất phát tại \(C\), đi dọc đoạn \(CM\) với vận tốc \(4\) km/h. Hỏi phải chọn \(M\) cách \(B\) bao nhiêu kilômét để hai người đến cùng lúc?
+
+    **Bước 1 — hình dung và đặt điều kiện.** Đặt \(x=BM\) (km), \(0\le x\le8\), vì \(M\) nằm trên đoạn \(BC\). Tam giác \(ABM\) vuông tại \(B\), nên \(AM=\sqrt{x^2+3^2}=\sqrt{x^2+9}\), còn \(CM=8-x\).
+
+    <div class="thpt-g10-table-scroll"><table class="thpt-g10-knowledge-table">
+    <thead><tr><th>Lộ trình</th><th>Quãng đường</th><th>Vận tốc</th><th>Thời gian</th></tr></thead>
+    <tbody>
+    <tr><td>\(A\to M\)</td><td>\(\sqrt{x^2+9}\) km</td><td>\(5\) km/h</td><td>\(\dfrac{\sqrt{x^2+9}}5\) giờ</td></tr>
+    <tr><td>\(C\to M\)</td><td>\(8-x\) km</td><td>\(4\) km/h</td><td>\(\dfrac{8-x}4\) giờ</td></tr>
+    </tbody></table></div>
+
+    **Bước 2 — giải thích phương trình.** Vì cả hai cùng xuất phát và phải đến cùng lúc, ta **cho hai thời gian bằng nhau**:
+    \[
+    \frac{\sqrt{x^2+9}}5=\frac{8-x}4
+    \iff4\sqrt{x^2+9}=5(8-x).
+    \]
+    Trong miền \(0\le x\le8\), hai vế đều không âm, nên có thể bình phương:
+    \[
+    16(x^2+9)=25(8-x)^2
+    \iff9x^2-400x+1456=0
+    \iff(x-4)(9x-364)=0.
+    \]
+
+    **Bước 3 — xét từng ứng viên.** Phương trình sau bình phương cho \(x=4\) hoặc \(x=\dfrac{364}{9}\). Giá trị \(\dfrac{364}{9}>8\) nằm ngoài đoạn \(BC\), khiến \(CM=8-x<0\), nên **không phải điểm gặp hợp lệ**.
+
+    **Bước 4 — thử lại điều kiện gặp nhau.** Với \(x=4\), đường xiên \(AM=\sqrt{4^2+3^2}=5\) km; người thứ nhất đi \(5/5=1\) giờ. Người thứ hai đi \(CM=8-4=4\) km, cũng hết \(4/4=1\) giờ. Vậy **điểm gặp cách B đúng \(4\) km**.
+
+    **Tự kiểm khi gặp bài tương tự:** Hãy kiểm lần lượt đoạn đường có tồn tại hay không, vế chứa căn có nghĩa hay không, thời gian có không âm hay không, rồi thay nghiệm vào **hai thời gian ban đầu**. Một nghiệm đúng sau bình phương chưa đủ để khẳng định hai người gặp nhau.
+    
     ### Những sai lầm thường gặp
 
     - **Nhận hết nghiệm sau khi bình phương:** nghiệm ngoại lai có thể được sinh ra.
@@ -274,7 +307,7 @@
         <ol><li><strong>Nhận diện lỗi:</strong> Bỏ điều kiện h&gt;0, nhầm cạnh huyền thành h hoặc nhận nghiệm −12 m.</li>
         <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
         <li><strong>Kiến thức gốc:</strong> Khi một cạnh góc vuông là h&gt;0 và cạnh kia 5 m, cạnh huyền là <span class="arithmatex">\(\sqrt{h^2+25}\)</span>, phải phù hợp chiều dài thang cho trước. Giải căn rồi lọc h&gt;0 không chỉ vì toán căn mà vì <strong>ý nghĩa vật lý</strong> của ẩn.</li>
-        <li><strong>Tự sửa:</strong> Vẽ hình và đánh dấu cạnh huyền 5, viết h&gt;0, thử Pitago với nghiệm tìm được. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
+        <li><strong>Tự sửa:</strong> Vẽ hình và đánh dấu **cạnh huyền 13 m** và **cạnh góc vuông 5 m**, viết h&gt;0, rồi thử lại định lí Pitago với nghiệm tìm được. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
         <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B18-P04">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
 
 
