@@ -4,6 +4,18 @@ const assert=require("node:assert/strict");
 const fs=require("node:fs");
 const {join}=require("node:path");
 const root=join(__dirname,"..");
+const crypto=require("node:crypto");
+function acceptedCandidateSha(lessonCode){
+ const ledgerPath=join(root,"prototypes/thpt/ux795/UX795_G10_KNOWLEDGE_RELEASE_SOURCE_INTAKE_R01_20261110.md");
+ if(!fs.existsSync(ledgerPath))return null; // historical main runs original frozen snapshot checks
+ const ledger=fs.readFileSync(ledgerPath,"utf8");
+ const line=ledger.split(/\r?\n/).find(x=>new RegExp("^\\|\\s*"+lessonCode+"\\s*\\|").test(x));
+ assert(line,"Candidate ledger cannot silently omit "+lessonCode);
+ const hashes=[...line.matchAll(/[a-f0-9]{40}/g)].map(x=>x[0]);
+ assert(hashes.length===2,lessonCode+": need baseline+candidate blobs");
+ return hashes[1];
+}
+const gitBlob=s=>crypto.createHash("sha1").update("blob "+Buffer.byteLength(s,"utf8")+"\0").update(s).digest("hex");
 
 const checks=[
   {
@@ -58,8 +70,10 @@ for(const check of checks){
     assert.equal(new Set(helps).size,2,"G10 B09 duplicate HELP");
     assert.equal((src.match(/^    \?\?\? (question|tip)/gm)||[]).length,7,
       "G10 B09 existing self-reveal/remediation must remain collapsed");
-    assert.equal(fnv(src),"caa5d2b4",
-      "G10 B09 exact Model B source snapshot changed; update receipt after Delta classification");
+    const candidate=acceptedCandidateSha("B09");
+    if(candidate)assert.equal(gitBlob(src),candidate,"G10 B09 candidate SHA must exactly match 27-row ledger");
+    else assert.equal(fnv(src),"caa5d2b4","G10 B09 historical academic source drift");
+
     console.log("PASS G10 B09 UX795: four Level-1 tabs, 30/30 frozen mathematical expressions, 5 tries, 2 HELP, exact snapshot");
     continue;
   }
