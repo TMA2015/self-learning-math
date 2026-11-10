@@ -7,7 +7,7 @@
 ## Source identity
 
 - B15: `7b579927e0f6fe4d5a562d5e1127efa8d6deeb96` — `docs/thpt-preview/sgk/chuong-vi/bai-15.md`
-- B16: `ac26816067fa970bb77845fb8dbc42e8cc975b83` — `docs/thpt-preview/sgk/chuong-vi/bai-16.md`
+- B16: `55ea62649ba36231c663a85c2f4e87ea0662a8c5` — `docs/thpt-preview/sgk/chuong-vi/bai-16.md`
 - B17: `6302851ed5ce78540a315eec475df7581c321390` — `docs/thpt-preview/sgk/chuong-vi/bai-17.md`
 - B18: `31ed3e85424d68130fc62a96e031389fc937122c` — `docs/thpt-preview/sgk/chuong-vi/bai-18.md`
 
@@ -22,7 +22,7 @@
 | B15 | `B15_OUT_05` | Hàm từng đoạn: chọn nhánh theo ranh giới, kiểm đơn vị phí | `THPT-G10-CHVI-TRY05` | `HELP-G10-CHVI-TRY05` | `STRUCTURE_MAPPED` |
 | B16 | `B16_OUT_01` | Nhận diện a≠0 trước khi gọi hàm bậc hai và dùng công thức parabol | `THPT-G10-CHVI-TRY06` | `HELP-G10-CHVI-TRY06` | `STRUCTURE_MAPPED` |
 | B16 | `B16_OUT_02` | Dạng bình phương chỉ ra đỉnh/trục/hướng mở trước công thức tổng quát | `THPT-G10-CHVI-TRY07` | `HELP-G10-CHVI-TRY07` | `STRUCTURE_MAPPED` |
-| B16 | `B16_OUT_03` | Vẽ đồ thị từ đỉnh, trục và điểm kiểm ngược, không đoán giao điểm | `THPT-G10-CHVI-TRY08` | `HELP-G10-CHVI-TRY08` | `STRUCTURE_MAPPED` |
+| B16 | `B16_OUT_03` | Lập bảng giá trị (x,f(x)) từ công thức, dùng các cặp điểm đối xứng cùng đỉnh/trục để dựng parabol, không nối tùy tiện | `THPT-G10-CHVI-TRY08` | `HELP-G10-CHVI-TRY08` | `STRUCTURE_MAPPED` |
 | B16 | `B16_OUT_04` | Khoảng biến thiên/tập giá trị theo dấu a và miền đang xét | `THPT-G10-CHVI-TRY09` | `HELP-G10-CHVI-TRY09` | `STRUCTURE_MAPPED` |
 | B16 | `B16_OUT_05` | Cực trị mô hình phải kiểm miền thực tế, thời điểm và đơn vị | `THPT-G10-CHVI-TRY10` | `HELP-G10-CHVI-TRY10` | `STRUCTURE_MAPPED` |
 | B17 | `B17_OUT_01` | Đọc dấu tam thức từ vị trí parabol so với trục Ox và Δ | `THPT-G10-CHVI-TRY11` | `HELP-G10-CHVI-TRY11` | `STRUCTURE_MAPPED` |
