@@ -102,5 +102,23 @@ check(18,"hypotenuse with radical",["\\sqrt{x^2+16}=2x-1","(3x+5)(x-3)"],()=>{
  const f=x=>Math.sqrt(x*x+16)-(2*x-1);
  return eq(f(3),0)&&f(-5/3)>0;
 });
+check(18,"two-person travel-time intersection; extraneous algebraic candidate",[
+ "Vận dụng: hai hành trình gặp nhau cùng thời điểm",
+ "\\frac{\\sqrt{x^2+9}}5=\\frac{8-x}4",
+ "(x-4)(9x-364)=0",
+ "\\frac{364}{9}>8",
+ "điểm gặp cách B đúng"
+],()=>{
+ const polynomial=x=>9*x*x-400*x+1456;
+ const tA=x=>Math.sqrt(x*x+9)/5,tC=x=>(8-x)/4;
+ const valid=4,invalid=364/9;
+ return eq(polynomial(valid),0)&&eq(polynomial(invalid),0)&&
+        valid>=0&&valid<=8&&eq(tA(valid),1)&&eq(tC(valid),1)&&
+        invalid>8&&tC(invalid)<0&&tA(invalid)>0;
+});
+check(18,"D6 ladder geometry labels must mark 13m hypotenuse rather than 5m",[
+ "<strong>cạnh huyền 13 m</strong>",
+ "<strong>cạnh góc vuông 5 m</strong>"
+],()=>!s[18].includes("đánh dấu cạnh huyền 5")&&5*5+12*12===13*13);
 console.log("PASS: "+cases+" source-bound mathematical checks (B15–B18).");
 console.log("No S1 printed-page/PED/independent-review/Q18 verdict or release certification.");
