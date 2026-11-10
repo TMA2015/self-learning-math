@@ -64,11 +64,22 @@ jobs:
           ref: main
           path: integration-main
           fetch-depth: 1
+      # PR #802 is a separate, owner-approved UI-only title update. Test the
+      # exact UI delta alongside G10 draft without merging either academic
+      # content or unreviewed Markdown into production.
+      - uses: actions/checkout@v4
+        with:
+          ref: de5b2c0d97516acad58da04f75c40791f331e127
+          path: integration-ui-titles
+          fetch-depth: 1
       - name: "DRY RUN - merge 27 G10 Knowledge pages with published main titles, NO DEPLOY"
         run: |
           set -euo pipefail
           echo "Published main baseline for dry run:"
           git -C integration-main rev-parse HEAD
+          test "$(git -C integration-ui-titles rev-parse HEAD)" = "de5b2c0d97516acad58da04f75c40791f331e127"
+          cp integration-ui-titles/hooks/topic_markdown_fixes.py integration-main/hooks/topic_markdown_fixes.py
+          cp integration-ui-titles/scripts/test_thpt_knowledge_short_labels.py integration-main/scripts/test_thpt_knowledge_short_labels.py
           lesson_count=0
           for lesson in docs/thpt-preview/sgk/chuong-*/bai-*.md; do
             [[ "$lesson" =~ /bai-[0-9]+\.md$ ]] || continue
@@ -97,6 +108,7 @@ jobs:
           cp scripts/test-ux795-g10-postmerge-headings.cjs integration-main/scripts/
           (
             cd integration-main
+            python scripts/test_thpt_knowledge_short_labels.py
             mkdocs build --config-file mkdocs.thpt-preview.yml --site-dir site-thpt-preview
             node scripts/test-ux795-g10-postmerge-headings.cjs
           )
