@@ -4,7 +4,7 @@
 
 Em đã học qua bảy mạch kiến thức và có thể tự luyện theo từng kỹ năng. **Tự kiểm tra** giúp em biết mình có thể vận dụng kiến thức **mà không cần xem gợi ý hay lời giải trong lúc làm bài** hay chưa.
 
-Bộ đề Tự kiểm tra đã được chuẩn bị và thẩm định riêng, gồm **30 câu hỏi** để kiểm tra các năng lực trải suốt Chuyên đề 1. Bộ đề này **khác** các câu công khai mà em vừa luyện; nó chỉ được mở khi hệ thống đánh giá chính thức đã sẵn sàng và phiên làm bài hợp lệ.
+Bộ đề Tự kiểm tra đã được chuẩn bị và thẩm định riêng, gồm **30 câu hỏi** để kiểm tra các năng lực trải suốt Chuyên đề 1. Bộ đề này được **quản lý riêng** với các câu luyện tập công khai; nó chỉ được mở khi hệ thống đã kiểm tra tính độc lập với những câu từng được xem, dịch vụ đánh giá bảo mật đã sẵn sàng và phiên làm bài hợp lệ.
 
 ### Những gì em sẽ cần vận dụng
 
