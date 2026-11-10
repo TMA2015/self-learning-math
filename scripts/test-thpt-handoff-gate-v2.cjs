@@ -187,6 +187,8 @@ function verifyTopicPlacementMatrix(matrix, items, outcomes) {
     assert(items.includes(item),"Unregistered Topic canonical ID: "+item);
     assert(outcomes.includes(outcome),"Unknown Topic outcome: "+outcome);
     assert(/^TOPIC_/.test(role),"Invalid Topic role: "+role);
+    assert(!/(READINESS|RD1|PRIVATE|OFFICIAL)/i.test(role),
+      "Private or official assessment role forbidden in public Topic placements: "+role);
     const tuple=[item,outcome,role,placement].join("|");
     assert(!seen.has(tuple),"Duplicate Topic placement tuple: "+tuple);
     seen.add(tuple);covered.add(item);count++;
@@ -329,6 +331,9 @@ function selfTest() {
   assert.throws(() => verifyTopicPlacementMatrix(topicMatrix.replace("TOPIC/UNIT/WRITTEN","TOPIC/UNIT/CORE"), ["ITEM-A","ITEM-B"], ["O1","O2"]));
   const compactTopicMatrix="| item_id | primary_outcome | role | source_type | status |\n| --- | --- | --- | --- | --- |\n| \x60ITEM-A\x60 | \x60O1\x60 | \x60TOPIC_PRACTICE\x60 | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |\n| \x60ITEM-B\x60 | \x60O2\x60 | \x60TOPIC_WRITTEN_SHARED\x60 | TOPIC_NEW_CANDIDATE | PROPOSED_NOT_LIVE |";
   assert.equal(verifyTopicPlacementMatrix(compactTopicMatrix,["ITEM-A","ITEM-B"],["O1","O2"]),2);
+  assert.throws(()=>verifyTopicPlacementMatrix(compactTopicMatrix.replace("TOPIC_WRITTEN_SHARED","TOPIC_READINESS"),["ITEM-A","ITEM-B"],["O1","O2"]));
+  assert.throws(()=>verifyTopicPlacementMatrix(compactTopicMatrix.replace("TOPIC_PRACTICE","TOPIC_PRIVATE_RD1"),["ITEM-A","ITEM-B"],["O1","O2"]));
+  assert.throws(()=>verifyTopicPlacementMatrix(topicMatrix.replace("TOPIC_WRITTEN","TOPIC_OFFICIAL_READINESS"),["ITEM-A","ITEM-B"],["O1","O2"]));
   assert.throws(()=>verifyTopicPlacementMatrix(compactTopicMatrix.replace("TOPIC_NEW_CANDIDATE","PRIVATE_RD1"),["ITEM-A","ITEM-B"],["O1","O2"]));
   assert.throws(()=>verifyTopicPlacementMatrix(compactTopicMatrix.replace("ITEM-B","ITEM-UNREGISTERED"),["ITEM-A","ITEM-B"],["O1","O2"]));
   assert.throws(()=>verifyTopicPlacementMatrix(compactTopicMatrix+"\n"+compactTopicMatrix.split("\n")[2],["ITEM-A","ITEM-B"],["O1","O2"]));
