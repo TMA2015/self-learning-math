@@ -28,7 +28,7 @@ body{margin:0;padding:12px}
 </style></head><body>
 <section class="d5-card" aria-label="Mô hình đạo hàm và tiếp tuyến">
 <header class="d5-top"><h1>Đạo hàm: từ cát tuyến đến tiếp tuyến</h1>
-<p>Chọn một điểm M trên đồ thị, thu hẹp khoảng Δx để so độ dốc của cát tuyến với tiếp tuyến. Đồ thị ở khung bên phải cho biết đạo hàm thay đổi ra sao. Hãy thử cả trường hợp tiếp tuyến nằm ngang <strong>nhưng không có cực trị</strong>.</p></header>
+<p>Chọn một điểm M trên đồ thị, thu hẹp khoảng Δx từ bên trái hoặc bên phải để so độ dốc của cát tuyến với tiếp tuyến. Đồ thị ở khung bên phải cho biết đạo hàm thay đổi ra sao. Hãy thử cả trường hợp tiếp tuyến nằm ngang <strong>nhưng không có cực trị</strong>.</p></header>
 <main class="d5-main">
 <div class="d5-controls">
 <div class="d5-control"><label for="fn">Chọn hàm số</label>
@@ -37,6 +37,7 @@ body{margin:0;padding:12px}
 <input id="x" type="range" min="-2" max="2" step="0.05" value="0"></div>
 <div class="d5-control"><label for="step">Khoảng Δx = h: <output id="hvalue" for="step">1</output></label>
 <input id="step" type="range" min="0.05" max="1.5" step="0.05" value="1"></div>
+<div class="d5-control"><label for="side">Điểm N tiến đến M từ phía nào?</label><select id="side"><option value="1">Từ bên phải (h &gt; 0)</option><option value="-1">Từ bên trái (h &lt; 0)</option></select></div>
 </div>
 <div class="d5-actions"><button type="button" data-x="-1">x₀ = −1</button><button type="button" data-x="0">x₀ = 0</button><button type="button" data-x="1">x₀ = 1</button><button type="button" id="reset">Đặt lại</button></div>
 <div class="d5-graphs">
@@ -51,7 +52,7 @@ body{margin:0;padding:12px}
 (function(){
 "use strict";
 const get=id=>document.getElementById(id);
-const mode=get("fn"),x=get("x"),step=get("step"),info=get("info");
+const mode=get("fn"),x=get("x"),step=get("step"),side=get("side"),info=get("info");
 function model(){if(mode.value==="flat")return{f:t=>t*t*t,df:t=>3*t*t,name:"x³"};return{f:t=>t*t*t/3-t,df:t=>t*t-1,name:"x³/3 − x"};}
 function pretty(v){const a=Math.round(v*1000)/1000;return String(Object.is(a,-0)?0:a).replace("-","−").replace(".",",");}
 function setup(canvas){const w=canvas.clientWidth||420,h=canvas.clientHeight||285,dpr=Math.min(window.devicePixelRatio||1,2);canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);const c=canvas.getContext("2d");c.setTransform(dpr,0,0,dpr,0,0);c.fillStyle="#fbfdff";c.fillRect(0,0,w,h);return {c,w,h};}
@@ -70,7 +71,7 @@ function plot(canvas,fun,rangeX,rangeY,curveOptions,extra){
  extra({curve,dot,c,xx,yy});c.restore();
 }
 function draw(){
- const m=model(),x0=Number(x.value),h=Number(step.value),y0=m.f(x0),next=m.f(x0+h),sec=(next-y0)/h,tan=m.df(x0);
+ const m=model(),x0=Number(x.value),h=Number(step.value)*Number(side.value),y0=m.f(x0),next=m.f(x0+h),sec=(next-y0)/h,tan=m.df(x0);
  get("xvalue").textContent=pretty(x0);get("hvalue").textContent=pretty(h);
  plot(get("graph"),m.f,[-2.6,2.6],[-5,5],{color:"#1687b4"},o=>{
  o.curve(t=>y0+tan*(t-x0),"#218f73",2.2);
@@ -88,9 +89,9 @@ function draw(){
  info.textContent="f(x) = "+m.name+"; x₀ = "+pretty(x0)+"; f(x₀) = "+pretty(y0)+". Cát tuyến: [f(x₀+h) − f(x₀)]/h = "+pretty(sec)+". Tiếp tuyến: f′(x₀) = "+pretty(tan)+". "+explanation;
 }
 let busy=false;function schedule(){if(busy)return;busy=true;requestAnimationFrame(()=>{busy=false;draw()});}
-[mode,x,step].forEach(el=>el.addEventListener("input",schedule));
+[mode,x,step,side].forEach(el=>el.addEventListener("input",schedule));
 document.querySelectorAll("button[data-x]").forEach(btn=>btn.addEventListener("click",()=>{x.value=btn.dataset.x;draw()}));
-get("reset").addEventListener("click",()=>{mode.value="turn";x.value="0";step.value="1";draw()});
+get("reset").addEventListener("click",()=>{mode.value="turn";x.value="0";step.value="1";side.value="1";draw()});
 window.addEventListener("resize",schedule);
 draw();
 })();
