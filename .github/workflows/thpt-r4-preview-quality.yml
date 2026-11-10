@@ -181,6 +181,7 @@ on:
       - 'scripts/test-thpt-g10-sgk-display-ui.cjs'
       - 'scripts/test-thpt-chvi-student-notes.cjs'
       - 'scripts/test-thpt-release-queue.cjs'
+      - 'scripts/test-thpt-handoff-gate-v2.cjs'
       - 'prototypes/thpt/release-queue/**'
       - '.github/workflows/thpt-r4-preview-quality.yml'
 
@@ -324,6 +325,8 @@ jobs:
         run: node scripts/test-thpt-g10-b03-ap-parity.cjs
       - name: Guard AP vector source lock G10 B07/B08/B10 (no deploy)
         run: node scripts/test-thpt-ap-vector-knowledge-parity.cjs
+      - name: Verify Topic/SGK V2 effective normative version and private RD1 compatibility (no deploy)
+        run: node scripts/test-thpt-handoff-gate-v2.cjs --self-test
       - name: Validate THPT academic-to-release checklist (no deploy)
         run: node scripts/test-thpt-release-queue.cjs
       - name: Check THPT no-account static release contract
