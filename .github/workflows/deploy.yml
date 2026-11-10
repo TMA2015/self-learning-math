@@ -9,7 +9,46 @@ permissions:
   contents: write
 
 jobs:
+  release-scope:
+    name: Decide site-impacting push (fail closed, no deployment)
+    runs-on: ubuntu-latest
+    outputs:
+      deploy: ${{ steps.scope.outputs.deploy }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Protect release-queue manifest and REGISTER even on metadata-only main pushes
+        run: node scripts/test-thpt-release-queue.cjs
+      - name: Enforce V2 source/receipt SHA of any new READY packet even when no site deployment
+        env:
+          BASE_SHA: ${{ github.event.before }}
+          HEAD_SHA: ${{ github.sha }}
+        run: node scripts/test-thpt-handoff-gate-v2.cjs
+      - name: Assert safe push-scope classifier and classify FULL main push
+        id: scope
+        env:
+          BEFORE_SHA: ${{ github.event.before }}
+          HEAD_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          node scripts/test-thpt-push-deploy-scope.cjs --self-test
+          node scripts/test-thpt-push-deploy-scope.cjs | tee /tmp/thpt-deploy-scope.txt
+          classification="$(tail -n 1 /tmp/thpt-deploy-scope.txt)"
+          if [[ "$classification" == "DEPLOY_REQUIRED" ]]; then
+            echo "deploy=true" >> "$GITHUB_OUTPUT"
+            echo "Site/runtime or unknown files changed: retain ALL existing deploy gates" >> "$GITHUB_STEP_SUMMARY"
+          elif [[ "$classification" == "NO_DEPLOY_METADATA_ONLY" ]]; then
+            echo "deploy=false" >> "$GITHUB_OUTPUT"
+            echo "Verified QA/governance-only commit: production deployment intentionally skipped" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "UNKNOWN_CLASSIFICATION_HOLD: cannot skip or authorize deployment" >&2
+            exit 1
+          fi
+
   deploy:
+    needs: release-scope
+    if: needs.release-scope.outputs.deploy == 'true'
     runs-on: ubuntu-latest
 
     steps:
