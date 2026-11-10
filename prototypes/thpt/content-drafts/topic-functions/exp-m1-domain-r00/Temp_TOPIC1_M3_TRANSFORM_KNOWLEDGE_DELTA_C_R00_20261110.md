@@ -179,6 +179,32 @@ Trên toàn \(\mathbb R\), biểu thức có giá trị lớn nhất 9 tại \(t
 
 Đây là một bài toán **khác** với việc tìm cực đại trên toàn \(\mathbb R\). Ta phải quyết định miền đầu vào từ đề bài **trước** khi sử dụng thông tin về đỉnh. Điều này nối trực tiếp với M1, và là thói quen quan trọng khi học khảo sát hàm bằng đạo hàm ở các lớp sau.
 
+### Cầu nối · Từ đỉnh parabol đến câu hỏi “đạt ít nhất một mức”
+
+Một bài toán tối ưu không phải lúc nào cũng chỉ hỏi **giá trị lớn nhất**. Đôi khi người ta hỏi: *Những phương án nào đạt ít nhất một mức lợi nhuận hoặc diện tích cho trước?* Bài toán ấy vẫn xuất phát từ chính **dạng đỉnh** em vừa học, không cần đoán nghiệm từ hình.
+
+Giả sử \(F(x)=k-c(x-h)^2\) với \(c>0\), chỉ xét các \(x\) thuộc **miền hợp lệ \(D\)**. Vì \(c(x-h)^2\ge0\), ta đã biết \(F(x)\le k\). Với một ngưỡng \(m\), muốn \(F(x)\ge m\), ta biến đổi:
+
+\[
+k-c(x-h)^2\ge m
+\quad\Longleftrightarrow\quad
+(x-h)^2\le\frac{k-m}{c}.
+\]
+
+- **Nếu \(m>k\):** vế phải âm, còn bình phương không âm ⇒ **không có phương án nào** đạt ngưỡng.
+- **Nếu \(m=k\):** chỉ có ứng viên \(x=h\); nó chỉ là phương án thật khi \(h\in D\).
+- **Nếu \(m<k\):** đặt \(r=\sqrt{(k-m)/c}>0\), bất đẳng thức trở thành \(|x-h|\le r\), hay \(h-r\le x\le h+r\). **Bước cuối cùng** phải lấy giao đoạn này với \(D\); nếu bài đòi số lượng nguyên, chỉ chọn các số nguyên trong giao ấy.
+
+**Tự thử trước khi mở Đối chiếu.** Một mô hình giả định \(Q(t)=16-(t-3)^2\), nhưng chỉ xét \(0\le t\le5\). Trong những thời điểm nào mô hình dự báo \(Q(t)\ge12\)? Hãy dự đoán bằng khoảng cách tới \(t=3\), không cần vẽ hình hoặc học thuộc bảng dấu.
+
+<details><summary>Đối chiếu · Từ ngưỡng quay về miền</summary>
+
+\(16-(t-3)^2\ge12\) tương đương \((t-3)^2\le4\), tức \(|t-3|\le2\), hay \(1\le t\le5\). Giao với miền cho trước \([0,5]\) vẫn là **\([1,5]\)**. Nếu mô hình chỉ được xét đến \(t=4\), đáp án phải đổi thành \([1,4]\). Đó là lý do **miền hợp lệ** luôn đi cùng mỗi kết luận, dù công thức đã biến đổi đúng.
+
+</details>
+
+**Em dùng kiến thức này ở đâu?** Khi gặp bài ứng dụng tính diện tích, chi phí hoặc lợi nhuận có câu “không nhỏ hơn một mức”, hãy thực hiện ba bước: lập hàm và miền → dùng dạng đỉnh để chuyển điều kiện ngưỡng thành \(|x-h|\le r\) (nếu có nghiệm) → **giao với miền và diễn đạt kèm đơn vị**. Cách giải này giúp tự học được bài vận dụng tích hợp; không phải một quy tắc chỉ áp dụng cho mọi parabol ở mọi miền.
+
 ## Vận dụng
 
 **Vận dụng 1.** Với \(f(x)=x^2-4x+3\), hãy tự tính \(|f(2)|\), \(f(|2|)\), \(f(|-2|)\). Từ kết quả, giải thích hai phép biến đổi có tạo cùng đồ thị không.
