@@ -76,6 +76,20 @@ check(17,"parameter condition for positive quadratics",["x^2+2mx+4","8(m-1)"],()
  const f=(x,m)=>x*x+2*m*x+4,g=(x,m)=>x*x-2*(m+1)*x+m*m+3;
  return f(-2,2)===0&&f(2,-2)===0&&f(0,0)>0&&g(1,0)>0&&g(2,1)===0&&g(3,2)<0;
 });
+check(17,"projectile height threshold and physical flight-time intersection",[
+ "Khi bất phương trình đi cùng thời gian thực tế",
+ "h(t)=-5t^2+20t+5",
+ "0\\le t\\le2+\\sqrt5",
+ "(t-1)(t-3)\\le0",
+ "h(1)=h(3)=20"
+],()=>{
+ const h=t=>-5*t*t+20*t+5,impact=2+Math.sqrt(5);
+ const roots=[1,3],before=0,after=4;
+ return eq(h(0),5)&&eq(h(1),20)&&eq(h(2),25)&&eq(h(3),20)&&eq(h(4),5)&&
+        eq(h(impact),0)&&impact>3&&
+        roots.every(t=>t>=0&&t<=impact&&h(t)>=20)&&
+        h(before)<20&&h(after)<20;
+});
 check(18,"radical candidate sign filtering",["\\sqrt{2x+3}=x-1","2\\pm\\sqrt6"],()=>{
  const good=2+Math.sqrt(6),bad=2-Math.sqrt(6);
  return eq(Math.sqrt(2*good+3),good-1)&&bad<1&&bad-1<0;
