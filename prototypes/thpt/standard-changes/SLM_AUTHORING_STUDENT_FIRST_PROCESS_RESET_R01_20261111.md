@@ -80,3 +80,42 @@ Tám câu hỏi này là **cách đọc/kiểm một học liệu**, không ph�
 5. Tất cả quyền an toàn Q15/Q16/RD1/Final Submit/Mastery, RELEASE và owner vẫn được bảo vệ.
 
 **Trạng thái trước duyệt:** CONTENT_AUTHORING_PAUSED · GOVERNANCE_REVIEW_ONLY · PROCESS_PROPOSAL_NOT_EFFECTIVE · NO_CONTENT_CHANGES · NO_MERGE_DEPLOY.
+
+
+## 8. Đồng bộ thiết kế — chuẩn — kiểm thử: một hợp đồng xuyên suốt
+
+**Một thiết kế, một tiêu chuẩn, một hệ thống kiểm thử tương ứng.** Khi sản phẩm dùng **Model B — lời dẫn tự nhiên, liên tục**, AUTHORING chứng minh nội dung toán học và năng lực tự học; RELEASE phải kiểm trên **bản Model B được hiển thị**, không được đòi bố cục Markdown cũ hay nhãn PED lặp để đạt PASS. Không được thay Model B bằng template cũ chỉ để CI xanh.
+
+| Lớp | Nội dung phải kiểm thực sự | Trách nhiệm |
+|---|---|---|
+| **Học liệu SOURCE_MATH_PED** | SGK S1/định nghĩa/điều kiện; lập luận, hình/biểu đồ và chú giải; mạch văn, Tự thử, bài vận dụng chưa xem, đường sửa sai; đủ outcome, chiều sâu Practice và một canonical item | **AUTHORING**; Q01–Q15/Q17/Q18 theo scope, review khi thực sự có thay đổi học thuật cần review |
+| **Fidelity và an toàn đánh giá** | Khớp đúng nguồn được duyệt, ID/version/placement, quyền riêng tư RD1, không lộ đáp án/feedback trước Final Submit, không tự ghi Mastery | AUTHORING bảo toàn nguồn và custody; **RELEASE kiểm runtime** Q15/Q16/dữ liệu |
+| **Hiển thị và hoạt động Model B** | MathJax/SVG đúng, thứ tự ý dễ theo, văn xuôi tự nhiên, bài tập tương tác, self-check, khả dụng trên thiết bị; đúng Golden UI | **RELEASE hoàn toàn** (integration, browser, responsive, QA, deploy) |
+
+**Không đánh đồng:** schema PASS ≠ Academic/PED PASS; source QA ≠ browser QA; Render PASS ≠ học sinh đã hiểu; source hash là danh tính snapshot chứ không phải thước đo sư phạm.
+
+## 9. Danh mục kiểm thử legacy trên GitHub và đường di trú đồng bộ
+
+Đã đọc bốn workflow thực: .github/workflows/qa-pr.yml; thpt-r4-preview-quality.yml; thpt-topic-intake-qa.yml; thpt-unified-content-standard-governance-qa.yml. Các ca cụ thể bên dưới **chưa bị tắt** trong PR AUTHORING; danh mục này để RELEASE xử lý cả pipeline, không phải giao lỗi kỹ thuật cho AUTHORING.
+
+| Nhóm kiểm tra trên main | Chẩn đoán thực tế | Đích đến; chủ sở hữu |
+|---|---|---|
+| scripts/test-thpt-academic-presentation-pilot.cjs | Khóa mathCount, FNV công thức, prefix/suffix và heading kiểu Markdown cũ cho hai bài | **HISTORICAL_SNAPSHOT_ONLY** trên nguồn cũ; thay bằng math/PED/model render QA phù hợp Model B. **RELEASE** |
+| scripts/test-thpt-g10-chi-full-r03-release.cjs | Bắt đúng đầu mục Trước khi học và số lần xuất hiện các nhãn PED/first-try | **HISTORICAL_SNAPSHOT_ONLY** cho R03; kiểm nghĩa toán, thứ tự ý, first-try/HELP và learner-facing Model B cho candidate. **RELEASE** |
+| scripts/test-thpt-g11-chi-ap1-layout-parity.cjs | Bắt đúng 7/8 tiêu đề dạng ### 1.x, FNV của Markdown phục hồi | **HISTORICAL_SNAPSHOT_ONLY** khi chuyển model, không bắt phiên bản mới quay lại kiểu cũ. **RELEASE** |
+| scripts/test_thpt_knowledge_short_labels.py | Kiểm chuyển nhãn và các literal về Đối chiếu, route Knowledge | **REASSESS_BY_DESIGN**: giữ bảo vệ route/tương tác thực, không ép nhãn Markdown nếu Model B không dùng chúng. **RELEASE** |
+| Các script G10/G11/G12 source-locked khác đang gọi trong qa-pr/R4 | Có assertions khác nhau: một số chỉ snapshot cũ, một số bảo vệ ngân hàng/assessment thực; không thể coi tất cả là lỗi thời | RELEASE **inventory tất cả lời gọi**, chia HISTORY / CURRENT_MODEL / SAFETY / FIDELITY / DUPLICATE trước khi đổi workflow |
+| scripts/test-thpt-unified-content-standard.cjs | Kiểm một chuẩn Q01–Q18, version/owner governance | **GIỮ**, không nhầm schema QA với học thuật PASS. **GOVERNANCE** |
+| scripts/test-thpt-handoff-gate-v2.cjs, scripts/test-thpt-release-queue.cjs và Topic Intake | Source/receipt/manifest/REGISTER, Q15/placement/Q16 metadata | **GIỮ bảo vệ**, vận hành một lần khi source đủ điều kiện; không dùng để chấm văn phong. SOURCE AUTHORING, gate RELEASE |
+
+**Nguyên tắc khi FAIL:** trước tiên xác định **EXPECTED_DESIGN / SNAPSHOT_SCOPE / OWNER_LANE / SAFETY_IMPACT / LEARNER_OUTCOME**. Nếu FAIL vì test legacy kiểm heading/hình thức của snapshot cũ trên Model B mới, **RELEASE tự sửa toàn bộ tuyến workflow**; không gửi AUTHORING yêu cầu thêm tiêu đề giả hay review lại toán không đổi. Nếu FAIL do tính đúng toán, điều kiện, diễn giải học sinh không hiểu, trả đúng một **AUTHORING_DEFECT** có Lesson/Outcome/source evidence; sửa trong đơn vị học liệu lớn thích hợp. Nếu lộ đề/đáp án RD1 hoặc Mastery sai, chặn chức năng bị ảnh hưởng và RELEASE sửa khẩn.
+
+**Một đợt migration, không vá từng FAIL:** RELEASE lập inventory đầy đủ tất cả invoked tests trong qa-pr/R4 → phân nhóm rõ đối tượng → chuyển test lịch sử khỏi mandatory gate cho candidate mới, giữ runner lịch sử khi còn giá trị → bổ sung/đổi test Model B trên nội dung/render/safety thật → kiểm negative fixtures + browser/device → xác nhận một HEAD cuối. AUTHORING không thay script/workflow RELEASE. Không loại bỏ hàng loạt test bảo vệ Q15/Q16/RD1.
+
+## 10. Quy trình AUTHORING sau kiện toàn — kết quả học sinh là chính
+
+Đầu ra vẫn **một phần hoặc cả chuyên đề hoàn chỉnh**, không phải 14 gói review/23 checkpoint. Trong một lượt nội bộ, biên soạn trọn nguồn học sinh, thử từ đầu đến cuối, chỉnh tất cả lỗi toán/PED/flow, tận dụng câu SGK/Written, kiểm Tự kiểm tra kín. Sau đó **một** quyết định review theo phần Delta thực sự của Q18 hiệu lực, **một** handoff V2 nếu nội dung đạt. Đổi nhãn/cấu trúc thuần tương đương không sinh vòng phản biện mới. Các sửa đổi thực chất Topic chưa PASS vẫn cần independent reviewer theo phạm vi; không mạo danh PASS.
+
+**Sắp xếp lại cổng quản lý:** AUTHORING chỉ đánh giá nội dung và custody nguồn; RELEASE có trách nhiệm toàn bộ tích hợp Model B, QA website/assessment, và sửa những xung đột kỹ thuật của chính mình. Một mô hình mới không phải đi ngược về Markdown cũ. Chỉ sau owner duyệt quy trình và cho phép mới mở lại biên soạn.
+
+**Trạng thái:** AUTHORING_CONTENT_PAUSED · GOVERNANCE_PR_ONLY · LEGACY_TEST_MIGRATION_RELEASE_OWNED · NO_CONTENT_READY · NO_MERGE_DEPLOY.
