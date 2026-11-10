@@ -1,0 +1,101 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vectơ và tích vô hướng · Phòng thí nghiệm</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:#183b54;background:white}
+*{box-sizing:border-box}body{margin:0;padding:12px}
+.d5-box{max-width:910px;margin:auto;border:1px solid #c7dfe9;border-radius:16px;overflow:hidden;background:white}
+.d5-head{padding:16px 20px;background:#eaf4fa}
+.d5-head h1{margin:0 0 6px;font-size:19px}.d5-head p{margin:0;line-height:1.65}
+.d5-body{padding:16px 20px}.d5-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.d5-controls label{display:block;font-size:14px;font-weight:650;margin-bottom:5px}
+.d5-controls input{width:100%;accent-color:#1687b4;min-height:34px}
+.d5-actions{display:flex;flex-wrap:wrap;gap:8px;margin:13px 0}
+.d5-actions button{padding:8px 12px;border:1px solid #b6d3e4;border-radius:9px;background:#fff;color:#184e69;font:inherit;cursor:pointer}
+.d5-actions button:focus-visible,.d5-controls input:focus-visible{outline:2px solid #1687b4;outline-offset:2px}
+.d5-stage{background:#fbfdff;border:1px solid #dae9f2;border-radius:12px;overflow:hidden}
+.d5-stage canvas{width:100%;height:360px;display:block;touch-action:none;cursor:crosshair}
+.d5-results{margin-top:13px;padding:13px 15px;background:#f3f9fc;border:1px solid #d9eaf2;border-radius:12px;line-height:1.8}
+.d5-note{color:#527186;font-size:13px;line-height:1.7;margin-top:9px}
+@media(max-width:570px){body{padding:6px}.d5-head,.d5-body{padding:12px}.d5-controls{grid-template-columns:1fr}.d5-stage canvas{height:290px}.d5-head h1{font-size:17px}}
+</style></head><body>
+<section class="d5-box" aria-label="Phòng thí nghiệm vectơ và tích vô hướng">
+<header class="d5-head"><h1>Tích vô hướng: góc giữa hai vectơ nói lên điều gì?</h1>
+<p>Kéo đầu mút hai vectơ hoặc điều chỉnh thanh trượt. Quan sát hình chiếu của vectơ v lên hướng u và dấu của tích vô hướng. Tích vô hướng là <strong>một số thực</strong>, không phải một vectơ.</p></header>
+<main class="d5-body">
+<div class="d5-controls">
+<div><label for="angle">Góc giữa u và v: <output id="angleOut" for="angle">60°</output></label><input id="angle" type="range" min="0" max="180" value="60" step="5"></div>
+<div><label for="magU">Độ dài |u|: <output id="uOut" for="magU">4</output></label><input id="magU" type="range" min="1" max="6" value="4" step="0.1"></div>
+<div><label for="magV">Độ dài |v|: <output id="vOut" for="magV">3</output></label><input id="magV" type="range" min="1" max="6" value="3" step="0.1"></div>
+</div>
+<div class="d5-actions"><button type="button" data-a="0">Cùng hướng · 0°</button><button type="button" data-a="90">Vuông góc · 90°</button><button type="button" data-a="180">Ngược hướng · 180°</button><button type="button" id="reset">Đặt lại</button></div>
+<div class="d5-stage"><canvas id="vectors" role="img" aria-label="Hai vectơ cùng gốc O: u xanh dương nằm ngang, v xanh lá quay được. Đường nét đứt biểu diễn hình chiếu vuông góc. Hình bình hành của tổng vectơ có nét mờ. Giá trị số được ghi ở bên dưới."></canvas></div>
+<div id="readout" class="d5-results" role="status" aria-live="polite"></div>
+<p class="d5-note">Hình chiếu có thể nằm phía **trái O** khi góc tù: độ dài hình chiếu có hướng \(|v|\cos α\) lúc đó là số âm. Đường chéo hình bình hành biểu diễn tổng vectơ u + v, nhưng <strong>không</strong> phải tích vô hướng. Dùng thanh trượt nếu không muốn kéo các điểm trên màn hình cảm ứng.</p>
+<p class="d5-note">Hoạt động trong phần Kiến thức/Vận dụng, không chấm điểm hoặc ghi mức thành thạo. Độ dài hai vectơ luôn dương để góc giữa chúng có nghĩa.</p>
+</main></section>
+<script>
+(function(){
+"use strict";
+const g=id=>document.getElementById(id);
+const theta=g("angle"),magU=g("magU"),magV=g("magV"),canvas=g("vectors"),readout=g("readout");
+const fmt=x=>String(Math.round((Math.abs(x)<1e-9?0:x)*1000)/1000).replace("-","−").replace(".",",");
+let geometry=null,drag=null;
+const clamp=(x,a,b)=>Math.min(b,Math.max(a,x));
+function draw(){
+ const a=Number(theta.value)*Math.PI/180,u=Number(magU.value),v=Number(magV.value),dot=u*v*Math.cos(a);
+ const w=canvas.clientWidth||740,h=canvas.clientHeight||360,dpr=Math.min(window.devicePixelRatio||1,2);
+ canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);
+ const c=canvas.getContext("2d");c.setTransform(dpr,0,0,dpr,0,0);
+ c.fillStyle="#fbfdff";c.fillRect(0,0,w,h);
+ const scale=Math.min(w/22,h/10.8,38),ox=w/2,oy=h*0.7;
+ const pt=(x,y)=>[ox+x*scale,oy-y*scale];
+ const U=pt(u,0),V=pt(v*Math.cos(a),v*Math.sin(a)),W=pt(u+v*Math.cos(a),v*Math.sin(a)),H=pt(v*Math.cos(a),0),O=pt(0,0);
+ geometry={ox,oy,scale,U,V};
+ function segment(p,q,color,width=2.4,dash=[]){c.beginPath();c.moveTo(...p);c.lineTo(...q);c.lineWidth=width;c.strokeStyle=color;c.setLineDash(dash);c.stroke();c.setLineDash([]);}
+ function circle(p,color,r=5.2){c.beginPath();c.arc(p[0],p[1],r,0,2*Math.PI);c.fillStyle=color;c.fill();c.lineWidth=1.4;c.strokeStyle="#fff";c.stroke();}
+ function text(t,x,y,color="#365b72"){c.font="14px system-ui,Arial";c.fillStyle=color;c.fillText(t,x,y);}
+ for(let k=-6;k<=6;k+=2){let t=pt(k,0);segment([t[0],18],[t[0],h-20],"#e9f1f6",1);}
+ for(let k=-2;k<=6;k+=2){let t=pt(0,k);segment([12,t[1]],[w-12,t[1]],"#e9f1f6",1);}
+ segment(pt(-6,0),pt(6,0),"#95afbe",1.5);segment(pt(0,-2),pt(0,6),"#95afbe",1.5);
+ segment(U,W,"#b7ccdc",1.6,[5,5]);segment(V,W,"#b7ccdc",1.6,[5,5]);
+ segment(O,W,"#b7ccdc",1.5,[5,5]);
+ segment(V,H,"#d98f2e",1.7,[5,5]);
+ segment(O,U,"#1687b4",2.8);segment(O,V,"#218f73",2.8);
+ function arrow(from,to,color){const dx=to[0]-from[0],dy=to[1]-from[1],angle=Math.atan2(dy,dx),len=10;c.strokeStyle=color;c.lineWidth=2.3;c.beginPath();c.moveTo(to[0]-len*Math.cos(angle-.55),to[1]-len*Math.sin(angle-.55));c.lineTo(...to);c.lineTo(to[0]-len*Math.cos(angle+.55),to[1]-len*Math.sin(angle+.55));c.stroke();}
+ arrow(O,U,"#1687b4");arrow(O,V,"#218f73");circle(U,"#1687b4",5.3);circle(V,"#218f73",5.3);circle(H,"#e9922a",3.8);circle(O,"#55788a",3.5);
+ text("O",ox-18,oy+19);text("u",U[0]+7,U[1]+18,"#156f96");text("v",V[0]+8,V[1]-7,"#1c7b61");
+ text("u + v",W[0]+5,W[1]-7,"#657e91");text("H",H[0]+7,H[1]+16,"#a66e21");
+ g("angleOut").textContent=String(Math.round(Number(theta.value)))+"°";g("uOut").textContent=fmt(u);g("vOut").textContent=fmt(v);
+ const signed=v*Math.cos(a);
+ let meaning;
+ if(Math.abs(dot)<1e-8)meaning="Tích vô hướng bằng 0: hai vectơ khác 0 vuông góc.";
+ else if(dot>0)meaning="Tích vô hướng dương: góc nhọn (hoặc 0°), thành phần chiếu của v cùng chiều u.";
+ else meaning="Tích vô hướng âm: góc tù (hoặc 180°), thành phần chiếu của v ngược chiều u.";
+ readout.textContent="α = "+fmt(Number(theta.value))+"°; hình chiếu có hướng của v lên u = |v|cos α = "+fmt(signed)+". u · v = |u||v|cos α = "+fmt(dot)+". "+meaning;
+}
+let busy=false;function schedule(){if(busy)return;busy=true;requestAnimationFrame(()=>{busy=false;draw()});}
+[theta,magU,magV].forEach(k=>k.addEventListener("input",schedule));
+document.querySelectorAll("button[data-a]").forEach(b=>b.addEventListener("click",()=>{theta.value=b.dataset.a;draw();}));
+g("reset").addEventListener("click",()=>{theta.value="60";magU.value="4";magV.value="3";draw();});
+function pointPosition(e){const r=canvas.getBoundingClientRect();return[e.clientX-r.left,e.clientY-r.top];}
+canvas.addEventListener("pointerdown",e=>{
+ if(!geometry)return;const p=pointPosition(e);const d=q=>Math.hypot(p[0]-q[0],p[1]-q[1]);
+ if(d(geometry.U)<18)drag="u";else if(d(geometry.V)<18)drag="v";else return;
+ canvas.setPointerCapture(e.pointerId);e.preventDefault();
+});
+canvas.addEventListener("pointermove",e=>{
+ if(!drag||!geometry)return;const p=pointPosition(e),ux=(p[0]-geometry.ox)/geometry.scale,uy=(geometry.oy-p[1])/geometry.scale;
+ if(drag==="u"){magU.value=String(Math.round(clamp(ux,1,6)*10)/10);}
+ else{
+  const r=Math.hypot(ux,uy),angle=Math.atan2(Math.max(0,uy),ux)*180/Math.PI;
+  magV.value=String(Math.round(clamp(r,1,6)*10)/10);
+  theta.value=String(Math.round(clamp(angle,0,180)/5)*5);
+ }
+ draw();e.preventDefault();
+});
+function stop(){drag=null}
+canvas.addEventListener("pointerup",stop);canvas.addEventListener("pointercancel",stop);
+window.addEventListener("resize",schedule);
+draw();
+})();
+</script></body></html>
