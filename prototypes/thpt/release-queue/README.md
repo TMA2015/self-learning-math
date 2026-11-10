@@ -18,6 +18,22 @@ Chủ dự án phê duyệt hợp nhất cách diễn giải, nhịp dẫn dắt
 
 **Báo cáo cho chủ dự án:** ngắn gọn theo **lớp/chương đã phát hành – đang QA – blocker cần quyết định – kết quả cần kiểm tra**. PR/CI/SHA chi tiết lưu trong GitHub, chỉ đưa vào tin nhắn khi thật sự cần đối chiếu. Không vì rút gọn báo cáo mà rút gọn QA.
 
+## Cập nhật tương thích RELEASE V2 cho Topic và chuẩn v1.2.0 (09/11/2026)
+
+Cổng V2 chấp nhận `TOPIC/FULL_TOPIC_LEARNING_PATH` trên **cùng** `SLM-THPT-QUALITY-ONE v1.2.0` (vẫn nhận 1.0/1.1 lịch sử), không ép Topic đổi thành SGK hoặc lùi phiên bản. Các Topic public `item_id` được kiểm theo nhiều role/placement hợp lệ nhưng **một canonical source**, không nhân bản đáp án/rubric. Topic chỉ có **Kiến thức / Luyện tập / Tự kiểm tra**; private Topic RD1 chỉ giữ hash/count owner-held, không được đưa raw nội dung vào GitHub, không bật Mastery hay tự nhận chính thức. `CONTENT_READY` cần one handoff/one ready manifest/REGISTER và source+receipt SHA; cần owner cho phép cùng AP1–AP5/R1–R5/Q16 trước khi triển khai. Đây chỉ là DELTA_A vận hành/CI, **không tự tạo manifest READY, không merge SOURCE AUTHORING hoặc deploy Topic**.
+
+### Hai dạng handoff TOPIC V2 có thật và cách chứng minh nguồn
+
+- **Hàm số (#782):** `ITEM_OUTCOME_MATRIX` có số thứ tự và `TOPIC/...` placement rõ; một `item_id` có thể có nhiều placement khác nhau (116 public canonical IDs / 122 placements). Đầy đủ Q01–Q18 trong chính handoff.
+- **Vectơ (#793):** `ITEM_OUTCOME_MATRIX` 5 cột với `role/source_type` (114 public canonical IDs / 114 ánh xạ). Q01–Q18 nằm trong `AUTHOR_A1_A7_PATH` được khóa blob SHA, không bắt buộc nhân bản 18 hàng vào handoff. Biên bản RD1 dùng `PRIVATE_RD1_SHA256` và phần giải thích owner-held thay cho định dạng `PRIVATE_BANK_SHA256`, nhưng vẫn phải có số câu, 64-hex hash, reviewer receipt, owner-only và không public Git.
+- `LESSON_ID`/`OUTCOME_ID` là metadata mapping của hành trình Chuyên đề, không bắt buộc là chuỗi thô trong trang Kiến thức; **mọi PUBLIC `item_id` vẫn phải xuất hiện trong nguồn canonical source-locked**. Mỗi item phải map tới outcome hợp lệ, không có tuple trùng, Topic không có Core thứ tư, không tự công khai private RD1.
+- File review/handoff AUTHORING sau tương thích chỉ cần **Delta B metadata/source-equivalence có chứng cứ**, không ép NotebookLM review lại toán không đổi. Khi chuyển READY phải thay trạng thái blocker/assessment metadata thành sự thật, tạo đúng 1 manifest `ready/` + 1 REGISTER row; chỉ qua kiểm tra V2 trên HEAD thật mới tính `CONTENT_READY`. Không chuyển `OWNER_HELD_PRIVATE_TOPIC_READINESS_NOT_DEPLOYED` thành chức năng đã phát hành; public static client chỉ `CLIENT_SELF_CHECK_NO_MASTERY`.
+- Việc sửa CI không cấp quyền merge, deploy, RD1 chính thức, Mastery hoặc Topic publish. R1–R5/AP1–AP5/Q16, owner permission, P1/P2 vẫn độc lập.
+
+### RELEASE intake độc lập cho Topic (10/11/2026)
+
+Hướng dẫn xử lý nút thắt đã phân loại tại [TOPIC_INTAKE_UNBLOCK_AND_ISOLATION_R01_20261110.md](TOPIC_INTAKE_UNBLOCK_AND_ISOLATION_R01_20261110.md). PR #799 thêm `THPT Topic V2 Intake and Source-Scope QA (no deploy)`: phân biệt `TOPIC_CANDIDATE`, `SGK_CANDIDATE`, `MIXED_TOPIC_AND_SGK` và thay đổi Q16 dùng chung; không tự gán Academic/PED PASS hay CONTENT_READY. V2 lấy phiên bản chuẩn **được duyệt và có hiệu lực** từ một nguồn Q01–Q18, không bị nghẽn khi nâng phiên bản; phiên bản Q18 Draft chưa được chấp nhận. SGK Knowledge PR #797 có lối Q18 nâng cấp riêng sau governance, **không bắt Topic reviewer lại nguồn đã PASS chỉ vì snapshot SGK cũ đổi**, và không lấy Topic reviewer PASS để cấp tự kiểm cho SGK.
+
 ## Handoff V2 sau quyết định chủ dự án 02/11/2026
 
 Trước khi nhận gói học liệu mới, cả hai nhánh **bắt buộc** đọc [THPT two-lane source-locked contract v2](../THPT_TWO_LANE_SOURCE_LOCKED_HANDOFF_CONTRACT_v2_20261102.md) và `AGENTS.md`. Nhánh A = học thuật (đầy đủ SGK/SBT, D1–D6, PED1–PED6, NotebookLM Academic + Pedagogical PASS đúng snapshot, danh sách ID, delta); nhánh B = tích hợp, AP1–AP5 trên UI, Final Submit, R1–R5, P1/P2. Hai nhánh trao đổi bằng một handoff canonical trong `release-handoffs/`, một manifest `ready/PACKET_ID.md` và REGISTER một dòng; biên bản NotebookLM không tự biến thành manifest.
