@@ -154,7 +154,7 @@
 
     Phần trên giúp em nắm các khái niệm. Sau đây là những bài toán cần dùng **định nghĩa, phản ví dụ hoặc chứng minh hai chiều**. Trong mỗi ví dụ, lời giải thích vì sao chọn phương pháp được đặt ngay cùng bài toán.
 
-    ### Ví dụ 1 — Nhận diện mệnh đề và xét đúng/sai (chọn lọc NotebookLM v1)
+    ### Ví dụ 1 — Nhận diện mệnh đề và xét đúng/sai
 
     **Đề bài.** Xét câu “Phương trình \(x^2+1=0\) có hai nghiệm thực phân biệt”. Đây có phải mệnh đề không, và đúng hay sai?
 
