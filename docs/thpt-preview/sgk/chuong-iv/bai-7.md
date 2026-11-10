@@ -26,7 +26,7 @@
 
     Đi từ A đến B rồi đi ngược từ B về A có cùng đoạn đường, nhưng hai lần di chuyển đưa ta về hai hướng trái nhau. Chỉ độ dài AB không đủ mô tả sự di chuyển.
 
-    Trước khi tiếp tục, em hãy nhớ lại đoạn thẳng AB, hai đầu mút và hướng chuyển động trên đường thẳng; ký hiệu A là nơi xuất phát, B là nơi đến. 
+    Hãy bắt đầu từ đoạn thẳng AB với hai đầu mút: A là điểm xuất phát, B là điểm đến. Khi đọc vectơ, điều đầu tiên cần xác định là chiều đi từ điểm nào tới điểm nào. 
 
     Đặt mũi tên đi từ A tới B: đó là độ dời có cả độ lớn lẫn chiều; đổi điểm đầu–cuối làm đổi vectơ, dù độ dài vẫn là AB. Bây giờ mới đặt tên đoạn thẳng có hướng là vectơ \(\overrightarrow{AB}\).
 
@@ -48,7 +48,7 @@
 
     Trên bản đồ, hai người đi 4 km theo các hướng khác nhau đều có quãng di chuyển 4 km, nhưng không có cùng vectơ độ dời.
 
-    Trước khi tiếp tục, em hãy nhớ lại độ dài đoạn thẳng là số không âm; vectơ \(\overrightarrow{AB}\) thể hiện cả chiều A→B. 
+    Độ dài đoạn thẳng là một số không âm. Nhưng vectơ \(\overrightarrow{AB}\) còn cho biết chiều từ A đến B; đừng nhầm hai thông tin này. 
 
     Chỉ bỏ chiều của mũi tên và đo độ dài đoạn nối A-B thì được **độ dài vectơ** \(|\overrightarrow{AB}|=AB\). Phép đo này không 'nhớ' chiều và luôn không âm.
 
@@ -70,12 +70,12 @@
 
     Trên đường hai chiều, hai xe có thể đi trên hai làn song song mà một xe về Đông, xe còn lại về Tây.
 
-    Trước khi tiếp tục, em hãy nhớ lại định nghĩa giá vectơ khác không và hai đường thẳng song song; phải phân biệt đường chạy với chiều chạy. 
+    Hai đường thẳng có thể song song mà các mũi tên trên chúng vẫn chỉ về hai phía trái nhau. Vì thế ta xét phương trước, rồi mới xét chiều. 
 
     **Phương** cho biết mũi tên nằm dọc đường nào; **hướng** cho biết chạy về phía nào trên đường ấy. Hai vectơ khác không cùng phương khi giá song song hoặc trùng; sau đó mới phân biệt cùng hay ngược hướng.
 
 
-    Kiểm tra hai giá trước, tiếp đến dấu chiều; với vectơ-không dùng quy ước S1 riêng, không lấy mũi tên tưởng tượng để suy.
+    Với hai vectơ khác không, hãy xét giá trước, rồi mới xét chiều. Riêng vectơ-không, cần dùng quy ước SGK/SBT nêu ở cuối bài, không tự gán cho nó một mũi tên có chiều.
 
     **Em vận dụng.** Hai vectơ khác không nằm trên hai đường thẳng song song; một mũi tên hướng Đông, một hướng Tây. Chúng cùng phương không? Có cùng hướng không?
 
@@ -92,7 +92,7 @@
 
     Một xe dịch chuyển 2 km về Đông ở Hà Nội và một xe khác dịch chuyển 2 km về Đông ở nơi khác: độ dời mô tả như nhau dù điểm đặt khác.
 
-    Để theo kịp lập luận, em nhớ rằng Đã phân biệt độ dài, phương, hướng; học sinh không được đồng nhất điểm xuất phát với bản thân vectơ tự do. 
+    Ta đã phân biệt độ dài, phương và chiều. Hai mũi tên có thể cùng mô tả một vectơ dù được vẽ ở những vị trí khác nhau; điểm đặt không quyết định chúng có bằng nhau hay không. 
 
     Để mô tả cùng một độ dời, ta có thể tịnh tiến mũi tên mà không xoay hay co giãn: đây là trực giác để có hai vectơ bằng nhau khi **cùng hướng và cùng độ dài**.
 
@@ -114,7 +114,7 @@
 
     Đi một vòng rồi quay lại đúng điểm xuất phát, độ dời cuối cùng bằng 0 dù quãng đường đã đi có thể lớn hơn 0.
 
-    Để theo kịp lập luận, em nhớ rằng Phân biệt độ dời và quãng đường, một điểm A, đoạn AA độ dài 0; nhớ quy ước đặc biệt của SBT KNTT. 
+    Hãy hình dung một hành trình khép kín: em quay lại đúng điểm A nên độ dời ròng bằng 0, dù quãng đường đã đi không nhất thiết bằng 0. Trường hợp này dẫn tới vectơ-không. 
 
     Khi A trùng B, mũi tên co lại thành một điểm: \(\overrightarrow{AA}=\vec0\), độ dài 0. **Theo quy ước SBT KNTT**, vectơ-không cùng phương và cùng hướng với mọi vectơ; đây là quy ước chứ không phải mũi tên vật lý có chiều xác định.
 
