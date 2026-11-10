@@ -9,7 +9,7 @@
 - B15: `7b579927e0f6fe4d5a562d5e1127efa8d6deeb96` — `docs/thpt-preview/sgk/chuong-vi/bai-15.md`
 - B16: `afe31b484ba60f8f7fed243b29995332a5609826` — `docs/thpt-preview/sgk/chuong-vi/bai-16.md`
 - B17: `93cd934ce90cc41d46d07a9af011975d6f930332` — `docs/thpt-preview/sgk/chuong-vi/bai-17.md`
-- B18: `712694dca594379ae27e49d6c192adf47b2d0d81` — `docs/thpt-preview/sgk/chuong-vi/bai-18.md`
+- B18: `f6fee0d64fd5452d8ac00a59e7d21b3d3ba48c6f` — `docs/thpt-preview/sgk/chuong-vi/bai-18.md`
 
 ## Bảng năng lực tự học cần chứng minh (một outcome, một luồng)
 
