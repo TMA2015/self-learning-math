@@ -196,28 +196,28 @@
 
     #### Ví dụ có hướng dẫn — EX-G10-B08-FORCE-TR01
 
-    **Tình huống khác câu tự luận:** Hai dây đồng thời kéo vòng móc với lực 6 N và 6 N, tạo góc 120°. Một dây thứ ba giữ vòng đứng yên. Hãy tìm độ lớn và chiều của lực thứ ba.
+    **Tình huống:** Hai dây đồng thời kéo vòng móc với lực 6 N và 6 N, tạo góc 120°. Một dây thứ ba giữ vòng đứng yên. Hãy tìm độ lớn và chiều của lực thứ ba.
 
     1. **Chọn mô hình:** Cân bằng nghĩa là `F₁+F₂+F₃=0`, vì thế **phải tìm hợp lực** hai dây trước khi tìm F₃.
     2. **Chọn định lí:** Góc 120° không vuông, nên `|F₁+F₂|²=6²+6²+2·6·6·cos120°=72−36=36`; suy ra hợp lực có độ lớn **6 N**.
     3. **Giải thích chiều:** `F₃=−(F₁+F₂)`, nghĩa là **6 N ngược chiều đường chéo hợp lực**; không phải ngược riêng một trong hai dây.
     4. **Kiểm:** Hợp lực bằng 6 N nằm trong `[0,12]` N, phù hợp bất đẳng thức tam giác. Nếu dùng 6+6=12 N là nhầm độ lớn với tổng vectơ.
 
-    **D2 WHY/METHOD/LIMIT:** Không cộng thẳng độ lớn khi lực không cùng phương; dữ kiện hai độ lớn + góc cho **độ lớn**, còn yêu cầu xác định **hướng** cần đọc hướng vectơ hoặc bổ sung hệ trục. Số liệu được chọn để học sinh thấy lực thứ ba cũng có thể bằng độ lớn **một** lực mà không cùng phương lực đó.
+    **Vì sao chọn cách này?** Không thể cộng thẳng độ lớn khi hai lực không cùng phương. Hai độ lớn và góc cho ta **độ lớn hợp lực**; để xác định **hướng**, cần đọc hướng vectơ hoặc lập hệ trục. Điều thú vị là lực thứ ba có thể bằng độ lớn **một** trong hai lực ban đầu dù không cùng phương với lực ấy.
 
     <span id="help-g10-chiv-force-tr01" data-thpt-help-id="HELP-G10-CHIV-FORCE-TR01"></span>
 
     ??? tip "Tự khắc phục trong năm bước"
 
-        1. **Nhận diện:** em đã cộng `8+15`, dùng Pythagoras ở góc 120°, hay lấy F₃ cùng chiều hợp lực?
+        1. **Nhận diện:** Em đã cộng thẳng `6+6`, dùng định lí Pythagore cho góc 120°, hay lấy lực thứ ba cùng chiều với hợp lực?
 
         2. **Chẩn đoán:** vẽ lại hai vectơ xuất phát O và đánh dấu góc **120°**; thử hướng F₃ xem ba mũi tên có khép thành đường gấp khúc không.
 
         3. **Lấp nền:** B08 quy tắc hình bình hành và vectơ đối; B11 `u·v=|u||v|cosθ`.
 
-        4. **Tự sửa:** tính `R²` trước, kiểm `|R|≤23`, rồi đặt `F₃=−R`; kiểm tổng thành phần Ox/Oy bằng 0.
+        4. **Tự sửa:** Tính `R²` trước, kiểm `|R|≤12` N, rồi đặt `F₃=−R`; kiểm tổng hai thành phần theo Ox và Oy bằng 0.
 
-        5. **Luyện lại đúng nguồn:** B08-P06 → B11-P01 → D2 mới; nếu đã xem đáp án D4, **không** tái dùng D4 làm chứng cứ RD1.
+        5. **Luyện lại:** Ôn cách cộng vectơ ở Bài 8, rồi luyện một câu về tích vô hướng trong Bài 11. Nếu đã xem đáp án, hãy chọn câu khác để tự kiểm tra mà không dựa vào lời giải.
 
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
