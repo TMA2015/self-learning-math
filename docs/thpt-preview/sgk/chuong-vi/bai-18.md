@@ -34,7 +34,7 @@
 
     Phép bình phương giúp bỏ căn nhưng căn bậc hai trong số thực chỉ xác định khi biểu thức dưới căn không âm; không thể coi nghiệm đại số là nghiệm thật nếu căn vô nghĩa.
 
-    Nhớ \(\sqrt u\) chỉ xác định khi u≥0 và luôn không âm; biết giải phương trình bậc nhất. Em có thể học các kiến thức tiền đề ngay trong bài.
+    Để giải phương trình chứa căn, hãy nhớ rằng \(\sqrt u\) chỉ xác định khi u≥0 và luôn không âm; em sẽ cần cả kiến thức giải phương trình bậc nhất. Em có thể học các kiến thức tiền đề ngay trong bài.
 
     Với \(\sqrt{A(x)}=\sqrt{B(x)}\), đầu tiên yêu cầu \(A(x)\ge0\) và \(B(x)\ge0\). Sau đó hai căn không âm bằng nhau **khi và chỉ khi** \(A(x)=B(x)\) trong miền; đây là phép đổi tương đương *sau khi* đặt điều kiện.
 
@@ -118,9 +118,9 @@
 
     ### Nghiệm ngoại lai xuất hiện từ phép không tương đương
 
-    Biến đổi đại số đôi khi cho một nghiệm thỏa phương trình mới nhưng không thỏa phương trình ban đầu. Học sinh cần tự đối chứng thay vì tin vào bước bình phương.
+    Biến đổi đại số đôi khi cho một nghiệm thỏa phương trình mới nhưng không thỏa phương trình ban đầu. Vì thế, em cần thử lại từng nghiệm trong phương trình gốc, thay vì tin ngay vào kết quả sau bình phương.
 
-    Nhớ \(\sqrt{u^2}=|u|\), phép bình phương và dấu căn không âm; phân biệt ứng viên với nghiệm hợp lệ. Em có thể học các kiến thức tiền đề ngay trong bài.
+    Đặc biệt, \(\sqrt{u^2}=|u|\): sau khi bình phương, một nghiệm tìm được mới chỉ là ứng viên; phải xét điều kiện để xác định nghiệm hợp lệ. Em có thể học các kiến thức tiền đề ngay trong bài.
 
     Nếu \(A=B^2\) thì chỉ có \(|B|=\sqrt A\), chưa chắc \(\sqrt A=B\). Lý do có nghiệm ngoại lai là phép bình phương làm mất thông tin dấu. Một nghiệm cuối phải thỏa miền và phương trình gốc.
 
