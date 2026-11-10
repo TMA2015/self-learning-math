@@ -24,13 +24,13 @@ Xét \(p(x)=2-x\) khi \(x\le1\) và \(p(x)=x+1\) khi \(x>1\). Hãy tính \(p(0),
 
 </details>
 
-### DRAFT-T1-M2-APP06 — Một nhánh tăng có làm cả hàm tăng?
+### DRAFT-T1-M2-APP06 — Hai nhánh đều tăng, cả hàm có tăng?
 
-Cho \(g(x)=x+1\) khi \(x<1\), \(g(x)=3\) khi \(x\ge1\). Bạn B nói: “\(g\) đồng biến nghiêm ngặt trên \(\mathbb R\) vì nhánh bên trái là đường thẳng đi lên.” Hãy phản biện bằng một cặp đầu vào.
+Xét \(r(x)=x+1\) khi \(x<0\), và \(r(x)=x-2\) khi \(x\ge0\). Cả hai nhánh đều là đường thẳng có hệ số góc dương. Có được kết luận \(r\) đồng biến nghiêm ngặt trên toàn \(\mathbb R\) không? Hãy kiểm riêng hai đầu vào ở hai phía mốc 0.
 
 <details><summary>Đối chiếu</summary>
 
-Chọn \(x_1=1\) và \(x_2=2\). Tuy \(x_1<x_2\) nhưng \(g(1)=g(2)=3\), không thỏa \(g(x_1)<g(x_2)\). Nhánh bên trái tăng không đủ kết luận toàn hàm tăng **nghiêm ngặt**.
+**Không.** Chẳng hạn, \(x_1=-0{,}5<x_2=0\) nhưng \(r(-0{,}5)=0{,}5\) trong khi \(r(0)=-2\), tức \(r(x_1)>r(x_2)\). Mỗi nhánh tăng trên khoảng riêng của mình, nhưng có **bước nhảy xuống** tại mốc 0, khiến hàm không tăng trên toàn miền. Cần kiểm cả chỗ chuyển nhánh, không chỉ dấu hệ số góc.
 
 </details>
 
@@ -78,13 +78,13 @@ Hàm là \(f(x)=-3x+2\), có đồ thị **đường thẳng**, nghiệm \(x=2/3
 
 </details>
 
-### DRAFT-T1-M3-APP09 — Miền quan sát quyết định cực trị
+### DRAFT-T1-M3-APP09 — Miền không liền nhau
 
-Độ cao của vật tính theo giây là \(H(t)=-(t-3)^2+9\). Chỉ xét \(t\in[0,2]\). Hãy tìm độ cao lớn nhất và giải thích vì sao không chọn \(t=3\).
+Cho \(m(x)=5-(x-2)^2\) nhưng chỉ xét \(D=[0,1]\cup[3,4]\). Tìm GTNN và GTLN trên \(D\). Vì sao không được lấy giá trị 5 tại đỉnh của parabol làm GTLN trong bài?
 
 <details><summary>Đối chiếu</summary>
 
-Trong \([0,2]\), \((t-3)^2\) giảm khi \(t\) tăng nên \(H(t)\) tăng. \(H(0)=0\), \(H(2)=8\); do đó GTLN trong miền là 8 tại \(t=2\). Mốc \(t=3\) nằm ngoài khoảng quan sát. Không tự gọi 9 là GTLN trên \([0,2]\).
+Đỉnh của parabol là \((2;5)\), nhưng \(x=2\notin D\). Trên \([0,1]\), khi x tăng thì \(m(x)\) tăng từ \(m(0)=1\) tới \(m(1)=4\). Trên \([3,4]\), khi x tăng thì \(m(x)\) giảm từ \(m(3)=4\) xuống \(m(4)=1\). Vậy **GTLN trên D bằng 4** (đạt tại x=1 hoặc x=3) và **GTNN trên D bằng 1** (đạt tại x=0 hoặc x=4). Một miền có hai đoạn rời nhau không cho phép tự nối qua điểm x=2 đã bị loại.
 
 </details>
 
