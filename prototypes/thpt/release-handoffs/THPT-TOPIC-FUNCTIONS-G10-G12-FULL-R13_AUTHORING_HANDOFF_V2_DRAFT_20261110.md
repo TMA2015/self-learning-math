@@ -555,4 +555,6 @@ RELEASE PR #799 đã merge vào main tại commit `52a049daa78cb1fe9248322771408
 
 **Delta:** Q15 author-screen trên public DONE; việc thêm 8 candidate là `DELTA_C_ACADEMIC_MATERIAL`, theo Project Source 07 v1.1 review targeted phần chịu ảnh hưởng trừ khi quy trình gốc được owner duyệt sửa tương đương. Không tự cấp Academic/PED PASS hoặc `CONTENT_READY`. Tự thử/đối chiếu công khai không là Final Submit/Skill Mastery.
 
+**Affected-scope review request đã chuẩn bị (CHƯA gửi/CHƯA có verdict):** `prototypes/thpt/content-drafts/topic-functions/exp-m1-domain-r00/Temp_TOPIC1_R14_8_PUBLIC_CANDIDATES_NOTEBOOKLM_REVIEW_R00_20261110.md`, Git blob `b1adac834248d341df7acf99e76b6973bf06ea54`, 8/8 bài, có đủ stem/gợi ý/đáp án/rubric công khai, yêu cầu reviewer theo từng outcome. Nguồn review khóa R14 `9ace3710fb09f42142e2da3d6e5c575b319a4d36` và Practice `72ab85d195153a3a2fd26b730f0c1ed8af60383c`; không có dữ liệu RD1 private.
+
 **STATE:** `Q15_PUBLIC_14_OF_14_CLASSIFIED` · `REMEDIATION_6_NO_NEW_ID` · `DISTINCT_PUBLIC_CANDIDATES_8_RESERVATIONS_ONLY` · `PRIVATE_RD1_EXPOSURE_HOLD` · `ACADEMIC_DELTA_C_HOLD` · `NO_READY`.
