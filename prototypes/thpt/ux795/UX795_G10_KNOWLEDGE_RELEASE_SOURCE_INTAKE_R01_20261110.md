@@ -1,0 +1,59 @@
+# RELEASE intake · Toán 10 Kiến thức B01–B27 · candidate source SHA ledger R01
+
+**Ngày:** 10/11/2026. **Nhánh:** `research/thpt-crossgrade-hybrid-ux795-20261108` · **PR:** [#797](https://github.com/TMA2015/self-learning-math/pull/797) · **Issue:** [#795](https://github.com/TMA2015/self-learning-math/issues/795).
+
+**Quyết định chủ dự án:** đồng ý cho PHÁT HÀNH phần Kiến thức Toán 10 cập nhật sau khi đầy đủ cổng chất lượng bắt buộc. Đây là quyền phát hành theo điều kiện; **không** phải Academic/PED PASS, không miễn kiểm Q01–Q18, không bỏ khóa SHA.
+
+## Phạm vi và nguyên tắc
+
+- 27/27 trang Kiến thức ứng viên Model B có thay đổi Git blob so với main hiện tại. Core, Luyện tập, Tự kiểm tra, ngân hàng RD1 kín và dữ liệu học viên không nằm trong phạm vi nội dung thay đổi.
+- Nhãn `Đối chiếu` / `Lời giải` / `Vận dụng` đã phát hành độc lập qua PR #800 ở MkDocs rendering; nên PR #797 phải nhận quy tắc đó từ main mới, không sửa toán để đổi nhãn.
+- Bảng dưới đây khóa **27 Git blob Markdown trên PR #797 hiện hành** để đối chiếu receipt. Các SHA này KHÁC SHA của file nháp R01/R02 riêng dưới prototypes; tài liệu này không phải academic approval.
+
+| Bài | Chương | Git blob main baseline | Git blob PR #797 staged |
+|---|---|---|---|
+| B01 | I | `0ffa4eecff1aa8dd249e8863fccbc7a674a6ddb2` | `3e12aa813e5fa472f7d84b754224ca2159b53935` |
+| B02 | I | `70c77844b0bee75565f8a059ddc4befd3ad9dd2d` | `cc1e78a48967fa681c7739ac2331c332d1f69753` |
+| B03 | II | `a8ca8ff2a354df8cfa0292cf26051d0a8fe8edb0` | `ebc0538582be2ee77313bbda534a1016263c58fc` |
+| B04 | II | `69d4067e31ac714b451e9d1827e6081c8f9f2726` | `8d4fa65c64893ec5e867bc9a1a98eb8eb04b46ed` |
+| B05 | III | `a84ada557f30e484c1b5033238ed3ee6deab366e` | `dd1a9ecaa51a6ad1da0a6d86d6ac39847be68140` |
+| B06 | III | `6a305a9ebcd156809b880365c04a2de3d442d011` | `0806c3f48c0b99109ff1b2531f9a839a3a16ec8c` |
+| B07 | IV | `1f1b0976cfcfe6c5d812c056e13df09e561eb89f` | `76a449bbc3386e7dc244b1e981dc55f454605350` |
+| B08 | IV | `a7758b4647f28681acdc3f99b8f7f80956deebf1` | `9495a09548acffeea2763816336fc22859933890` |
+| B09 | IV | `84c67363264698fab87db0e76eca5e4561006fa6` | `d58826cf4f12a0814a420c5cefb6cb2469129d23` |
+| B10 | IV | `84494e72805d4beb681465595d923bb98a2afb61` | `ff46465388cf3882af931fc181bb635413f7d521` |
+| B11 | IV | `899379e55ce9cc332acb88009c99626dd316f7be` | `6e95cfbca3ce0536929f07b2d11c7b250c8ff45a` |
+| B12 | V | `672ac88b3c36a5abde45b73ab7ad0fb7ff830983` | `68546138e93be2207480f8e6975cd57810593a27` |
+| B13 | V | `b4008a227494ef7165871b67a1a0f255c66c5c6c` | `4a233cc2fdd780ab56ebc64754b84389c83e771f` |
+| B14 | V | `0cb35d210afc9dba136a6b256bc1c8138cb01396` | `8410a941f35584bb2a76af33fe404b32857384a6` |
+| B15 | VI | `72ed03b1cb625f157bb49064cf1df2100856e057` | `295b0d032c4d91cc718bf9c556924b4ff9f74da5` |
+| B16 | VI | `a0fc509e1c08b7ee90225dee3994d6b3fa84e21a` | `02d4bd23fd584cee78105e074766cb31f875141d` |
+| B17 | VI | `f94608d832b43e671439afde9c14332bb443ac13` | `38f9683aa332bc713a44616eff1b7e199af3011e` |
+| B18 | VI | `0f2c6420f40112018dfd4be1268b0deb83f4452a` | `06e97d3685f0dbfb5ef80082622eda185a5dfe7d` |
+| B19 | VII | `a4dbf99d12c35f0b3af73fb3df423126aa861add` | `789adbd1dd24d1fe48629fedcff5d2d552791742` |
+| B20 | VII | `489e4d1784e19a896748d83a9e71a9b00ac73a09` | `bbb192caee4914cfd90e24cb4b63b443d8055bf0` |
+| B21 | VII | `361f5ed232e500d7db567ef9ffa8aaca4e5b6fe5` | `070d398ad721b8980ae0029c97a47b0431179d19` |
+| B22 | VII | `fb879e4428998cfd388315b4781810a98637b67b` | `95850cf64bd873abdd3f1d321c74eab3cd07fa5f` |
+| B23 | VIII | `a3adcc4882a58d3ffd5346c65d94821092686cf7` | `0b3cf040be268dc775ab48f968b242d5168538b1` |
+| B24 | VIII | `f0ec9161dc9553fc36b203f63e2d45f212cace89` | `314b0f879994586e56ee6ec856cff3ef36ab94dd` |
+| B25 | VIII | `7fa6775d6da704193e0e0924451abc844873428f` | `8c02911fdcb0d5f8af0b0ef1e270f3a93807c109` |
+| B26 | IX | `74b1ba86a8c3b0ac9a48c6545e28af29792cb734` | `8086d0c0b4fc132d871d5eacf2177defe082381a` |
+| B27 | IX | `80bfadb4a9a3ae91e303f89506eb73e4a0d5bf9f` | `916925f16756c42d11fb633640820256261fae68` |
+
+## RELEASE QA hiện có
+
+- Candidate commit: `2ea2a8286f7d6f4fe81a9c4b9225c0eb9398280f`; main baseline: `cbd3c86ca8c41f13baf16b37418a89dee8981496`.
+- [UX795 G10 draft render/browser QA #42769677271](https://github.com/TMA2015/self-learning-math/actions/runs/42769677271) SUCCESS: 27/27 HTML, 81/81 trường hợp trình duyệt thật (27 bài × 390/820/1440). Bốn tab, First Try/D6 IDs, đáp án mặc định đóng và tự mở/đóng, hình SVG, MathJax, không tràn ngang.
+- G Learning branding và Skill assessment pilot QA đã PASS ở SHA ứng viên. **Full R4 vẫn FAIL theo đúng khóa SHA B01 cũ**; đó là Delta C/Q18 HOLD, không phải lý do nới kiểm thử.
+- Owner đã cấp quyền phát hành có điều kiện. **0/27 phiên bản nội dung mới đã phát hành**. Không tự khẳng định đã nghiệm thu thiết bị vật lý P2.
+
+## Điều kiện đóng và phân công
+
+1. Kiểm tra độc lập theo S1 SGK/SBT từng bài/outcome bị ảnh hưởng: Academic + PED verdict, P0/P1/P2, MINIMAL_DELTA và SOURCE_RECEIPT cho đúng Git blob hiện hành. Sửa lỗi thực chất đúng phạm vi và kiểm lại SHA; không lấy static/browser QA làm thay review.
+2. Nếu các SHA thay đổi sau phản biện, cập nhật bảng bằng Git thực và review phần ảnh hưởng. Cổng Q01–Q18 + Q15/Q16 + đối chiếu hình/toán phải đạt; nguồn canonical, ngân hàng câu hỏi, private RD1, Mastery được bảo toàn.
+3. Nhận handoff hợp lệ, manifest ready/ và REGISTER theo hợp đồng hiện hành; RELEASE tích hợp trên HEAD mới nhất của main (đã có PR #800); chỉ thay source-lock expectation khi có receipt hợp lệ. Chạy AP1–AP5, R1–R5, Q16, Golden, deep-link, Responsive, CI và nghiệm thu thiết bị thật nếu được yêu cầu.
+4. Khi toàn bộ cổng đạt, sử dụng quyền phát hành đã cấp 10/11/2026 cho đúng gói Kiến thức Toán 10 và xác minh GitHub Pages sau deploy.
+
+**STATUS:** `OWNER_RELEASE_AUTHORIZED_WHEN_READY / SOURCE_SHA_27_INTAKE / BROWSER_81_PASS / ACADEMIC_PED_Q18_HOLD / NO_MERGE_DEPLOY`
+
+Đây là **RELEASE intake metadata**, không cấp CONTENT_READY và không chuyển vai trò sang AUTHORING.
