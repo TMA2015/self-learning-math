@@ -118,7 +118,7 @@ Nhưng nếu **chính quy tắc ấy** được xét trên đoạn \(D=[0,2]\), 
 <details>
 <summary>Đối chiếu</summary>
 
-Trên \(\mathbb R\): \([2,+\infty)\). Trên \([0,2]\): \([2,3]\). Để chứng minh miền thứ hai, dùng \(-1\le x-1\le1\), suy ra \(0\le(x-1)^2\le1\); các giá trị từ 2 đến 3 đều đạt được do biểu thức bình phương biến thiên liên tục trên đoạn.
+Trên \(\mathbb R\): \([2,+\infty)\). Trên \([0,2]\): \([2,3]\). Để chứng minh miền thứ hai, dùng \(-1\le x-1\le1\), suy ra \(0\le(x-1)^2\le1\); các giá trị từ 2 đến 3 đều đạt được: với mỗi \(y\in[2,3]\), chọn \(x=1+\sqrt{y-2}\in[1,2]\) thì \(g(x)=y\).
 
 </details>
 
