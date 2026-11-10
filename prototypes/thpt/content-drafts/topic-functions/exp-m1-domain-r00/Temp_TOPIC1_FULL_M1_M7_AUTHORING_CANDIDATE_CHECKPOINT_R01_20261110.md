@@ -35,6 +35,16 @@
 - Prompt review ngắn 5 câu được nhúng trong phần đầu R02: chỉ review phần mới M1–M3 bằng **đúng 5 Permanent Sources v2.1 + SGK/SBT S1** và chuẩn Q01–Q18. Không yêu cầu reviewer đọc lại M4–M7 bất biến.
 - Bản R02 là **review transport**, không phải nguồn canonical thứ hai và không thay \`item_id\` của bank gốc.
 
+## Bổ sung AUTHORING M6 đã hoàn thiện về nguồn (10/11/2026)
+
+- Đã thêm **học liệu học sinh M6 mới** \`Temp_TOPIC1_M6_DERIVATIVE_LINKED_GRAPHS_KNOWLEDGE_DELTA_C_R01_20261110.md\`, giải thích rõ cát tuyến h âm/dương, đồ thị f và f′, và phản ví dụ **x³ vs x⁴** cho ngộ nhận f′(0)=0 ⇒ có cực trị; **không tạo item_id canonical mới**.
+- Mô hình D5 mới \`Temp_TOPIC1_M6_TANGENT_DERIVATIVE_TWO_GRAPHS_D5_R00_20261110.html\`, blob \`ebf1f392dcc77fa5c94a2bfd75f500bd97dd7ae5\`. Sau sửa, M và N luôn nằm trong khung ở cực biên slider (mock vị trí **12/12 PASS**), logic **36/36 PASS** trên ba cấu hình; **real-browser QA chưa đạt chứng cứ**.
+- Đối chiếu S1/SBT trực tiếp SGK G11 T2 **Bài 31 in 81–87/PDF 82–88**, SBT G11 T2 **Bài 31 in 54–57/PDF 55–58**. Xem \`Temp_TOPIC1_M6_S1_SBT_SOURCE_RECEIPT_R01_20261110.md\` có SHA256 hai PDF và ảnh nguồn đã kiểm. Không phỏng đoán trang.
+- Một nguồn review targeted M6 **R02** \`Temp_TOPIC1_M6_NOTEBOOKLM_SINGLE_REVIEW_SOURCE_R02_20261110.md\`, Git blob \`199468283a11050cb6bd7c527a979d64f1c7412e\`, **4/4 nguồn body và SHA khớp**. Không chọn R01 cũ (đã xóa trên HEAD).
+- Scope Chuyên đề 1 còn **hai khối mới chờ phản biện độc lập**: M1–M3 trong gói review R02 riêng \`7edd6cf9ca4367480f7360f67834ac3789e32185\` và M6 D5 trong gói review R02 trên. M4/M5/M7 và phần M6 R18 cũ giữ PASS snapshot bất biến; không review lại những phần không đổi.
+
+**M6 NEW CONTENT STATUS:** \`S1_VISUAL_RECEIPT_VERIFIED\`; \`MATH_AND_MOCK_QA_PASS_FOR_TESTED_CASES\`; \`INDEPENDENT_DELTA_C_REVIEW_PENDING\`; \`REAL_BROWSER_QA_PENDING\`; \`CONTENT_READY=NO\`.
+
 ## 4. Một bộ Chuyên đề 1 được coi là bàn giao hợp lệ khi nào?
 
 | Điều kiện | Trạng thái hiện tại |
