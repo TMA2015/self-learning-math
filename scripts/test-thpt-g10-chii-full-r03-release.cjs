@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 "use strict";
+const {expectedG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 /* UX795 G10 ChII source-locked model B; Q15/16 + Golden preserved, not independent academic verdict. */
 const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path"),crypto=require("node:crypto");
 const root=path.resolve(__dirname,".."),read=p=>fs.readFileSync(path.join(root,p),"utf8");
@@ -82,7 +83,7 @@ const tabs=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi th�
 const seen=[];
 for(const n of [3,4]){
  const p="docs/thpt-preview/sgk/chuong-ii/bai-"+n+".md",s=read(p);
- assert.equal(shaText(s),snapshot[n],"B"+n+": exact Model B source receipt drift, classify Delta C before updating");
+ assert.equal(shaText(s),expectedG10KnowledgeBlob(n,snapshot[n]),"B"+n+": exact Model B source receipt drift, classify Delta C before updating");
  assert.deepEqual([...s.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]),tabs,"B"+n+": exactly four owner-approved L1 tabs");
  assert(!/^    === "/m.test(s),"B"+n+": no L2 tabs in phase 1");
  const ids=[...s.matchAll(/data-thpt-first-try-id="([^"]+)"/g)].map(m=>m[1]);
