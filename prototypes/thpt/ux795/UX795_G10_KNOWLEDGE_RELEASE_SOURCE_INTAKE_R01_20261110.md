@@ -27,11 +27,11 @@
 | B13 | V | `b4008a227494ef7165871b67a1a0f255c66c5c6c` | `c55d650f5b59c5260960de136e3c7fc26f219cdf` |
 | B14 | V | `0cb35d210afc9dba136a6b256bc1c8138cb01396` | `894c31de396a2f6d6d30912399d6cad39f790130` |
 | B15 | VI | `72ed03b1cb625f157bb49064cf1df2100856e057` | `7b579927e0f6fe4d5a562d5e1127efa8d6deeb96` |
-| B16 | VI | `a0fc509e1c08b7ee90225dee3994d6b3fa84e21a` | `9a3c704459803de44dd122b15183d568bfd47d6c` |
+| B16 | VI | `a0fc509e1c08b7ee90225dee3994d6b3fa84e21a` | `ac26816067fa970bb77845fb8dbc42e8cc975b83` |
 | B17 | VI | `f94608d832b43e671439afde9c14332bb443ac13` | `6302851ed5ce78540a315eec475df7581c321390` |
 | B18 | VI | `0f2c6420f40112018dfd4be1268b0deb83f4452a` | `31ed3e85424d68130fc62a96e031389fc937122c` |
 | B19 | VII | `a4dbf99d12c35f0b3af73fb3df423126aa861add` | `36226f87857499897da3f62aaa9bd6a6f2ec7784` |
-| B20 | VII | `489e4d1784e19a896748d83a9e71a9b00ac73a09` | `b7dc310b509a3ee8ed1938abf8dbd7aa04b0ba2b` |
+| B20 | VII | `489e4d1784e19a896748d83a9e71a9b00ac73a09` | `4a704fdbc8ff6eecb932c8c61187b891f40e01ec` |
 | B21 | VII | `361f5ed232e500d7db567ef9ffa8aaca4e5b6fe5` | `13692ca5f8c0a7d648edccf5f9a7535cfdb1b85d` |
 | B22 | VII | `fb879e4428998cfd388315b4781810a98637b67b` | `aac177881e9e8a1fde9f7fa8213c56793eb966f2` |
 | B23 | VIII | `a3adcc4882a58d3ffd5346c65d94821092686cf7` | `f63524ef47d2990e00799e772a15f7aab1b2d4ca` |
@@ -73,6 +73,12 @@
 - **ChIX B26–B27:** biến 10 mã item hiển thị bằng backtick thành **10 liên kết `../luyen-tap/?item=<canonical>`**; giữ nguyên tham số item/nguồn câu, không nhân bản ngân hàng hay bật Mastery. B26 sửa một câu nói ngôi thứ ba thành lời hướng dẫn học sinh.
 - Mọi trang trong nhóm đã qua QA tĩnh **toàn bộ MathJax/TeX token và chuỗi `data-*` không đổi, 4 tab chủ dự án phê duyệt còn nguyên**. B19–25 giữ chính các link hiện có. B26–27 bổ sung link học tập (cần browser/deep-link QA), không sửa quiz engine/assessment.
 - 9 SHA mới đã ghi tại bảng intake. Bản này vẫn **Draft**, chưa có `SELF_QA_EVIDENCE_RECEIPT` có hiệu lực, không tự cấp Academic/PED PASS. Final-head QA vẫn phải đạt trước merge/deploy.
+
+## Figure-guided learning enhancement — B16/B20 (10/11/2026)
+
+- B16: hướng dẫn đọc hình parabol bằng chính trục đối xứng `x=1`, đỉnh `I(1;-4)`, hai nghiệm `-1, 3` và chiều biến thiên. Kiểm trực tiếp `(x-1)^2-4` tại các vị trí nêu trong hình.
+- B20: thay chuỗi toán bị rơi MathJax `(H=(12/5,6/5))`, `(MH=6/sqrt5)` bằng hiển thị MathJax chuẩn. Kiểm `2(12/5)+(6/5)=6`, vectơ `MH=(12/5,6/5)` cùng hướng pháp tuyến `(2,1)`, `|MH|=6/√5`.
+- Hai SHA mới đã ghi trong bảng trên; các thuộc tính `data-*` và bốn tab giữ nguyên. Đây là `DELTA_C` về lời diễn giải theo ngữ cảnh hình, không tự cấp `ACADEMIC/PED PASS`. Cần kiểm browser/MathJax trên HEAD mới và nhập đầy đủ delta vào receipt Q18 khi có hiệu lực.
 
 ## RELEASE QA hiện có
 
