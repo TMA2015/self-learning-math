@@ -28,7 +28,7 @@ f'(x_0)=\lim_{h\to0} k_h.
 
 Khung bên trái cho thấy đồ thị \(y=f(x)\) (xanh dương), cát tuyến qua M và N (cam nét đứt) và tiếp tuyến tại M (xanh lá). Khung bên phải cho thấy đồ thị \(y=f'(x)\), điểm cam tương ứng với hoành độ \(x_0\) đang chọn. **Đừng chỉ quan sát đường thẳng quay:** hãy so giá trị hệ số góc cát tuyến và đạo hàm hiển thị bên dưới. Khi thu nhỏ \(|h|\), hai số phải tiến gần nhau.
 
-Để hình không che mất những điểm quan trọng, mô hình tự đổi thang tung độ khi chuyển giữa \(f(x)=x^3/3-x\) và \(f(x)=x^3\). Một điểm ra ngoài khung không có nghĩa là hàm không xác định: đó chỉ có thể là lỗi chọn thang hình.
+Mô hình **tự co giãn thang trục khi cần**, để cả hai điểm M và N vẫn nằm trong khung ngay cả khi chọn \(x_0=\pm2\) và \(|h|=1{,}5\). Vì vậy, khi quan sát đồ thị giữa hai trạng thái, hãy đọc lại các mốc trên trục: hình trông dốc hơn chưa chắc hệ số góc đại số lớn hơn. Phép so sánh có giá trị vẫn là các con số \(k_h\) và \(f'(x_0)\) được tính từ cùng công thức.
 
 ## Ví dụ 1 — Đạo hàm bằng 0 và hàm thật sự đổi chiều
 
