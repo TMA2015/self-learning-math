@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 "use strict";
+const {expectedG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 /* Q01–Q18 single-standard preservation during owner-approved UX795 Delta C.
  * Grade 10 ChI model B replaces the six QA-heading layout with four coherent
  * Level-1 tabs. This gate is NOT academic authoring approval; exact source
@@ -20,7 +21,7 @@ const cases=[
 const seen=[];
 for(const c of cases){
   const s=read(c.file);
-  assert.equal(gitBlob(s),c.sha,c.id+": exact source receipt changed; classify Delta before updating lock");
+  assert.equal(gitBlob(s),expectedG10KnowledgeBlob(c.id,c.sha),c.id+": exact source receipt changed; classify Delta before updating lock");
   assert.deepEqual([...s.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]),tabs,
     c.id+": four and only four Level-1 tabs in owner-approved order");
   assert(!/^ {4}=== "/m.test(s),c.id+": no Level-2 tabs in Phase 1");
