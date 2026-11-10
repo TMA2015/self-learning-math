@@ -47,6 +47,14 @@
 - Đã sửa lỗi hiển thị trong mục thuật ngữ B17: \`a\` và \`e0\` do chuỗi LaTeX bị vỡ dòng, thay bằng MathJax hợp lệ \(a\ne0\). Đây là sửa P1 trình bày có ảnh hưởng đọc hiểu, không được tự nâng lên PED PASS.
 - **Giới hạn:** Mới kiểm trực tiếp S1 *phạm vi và các bài đại diện* trong B17, không kết luận tất cả 5 outcome đều đạt PED/Academic trên snapshot mới. Q18 và chuẩn hiệu lực chưa được chuyển.
 
+## B18 — Kiểm trực tiếp SGK/SBT trang in và Delta C ứng dụng
+
+- **SGK KNTT Toán 10 Tập 2, trang in 25–27 (PDF 26–28):** trang 25 trình bày hai phương trình căn \(\sqrt{A}=\sqrt{B}\), \(\sqrt{A}=B\) và yêu cầu **thử ứng viên vào phương trình ban đầu**; trang 26 có ví dụ loại nghiệm vì vế phải âm và vận dụng hai hành trình gặp nhau cùng lúc (mô hình **quãng đường/vận tốc**); trang 27 có bài tập 6.20–6.23 về căn và tình huống hình học/chuyển động.
+- **SBT KNTT Tập 2 trang in 19–21 (PDF 20–22):** ghi chính xác phép bình phương và điều kiện miền căn/vế phải; ví dụ cho thấy loại ứng viên khi biểu thức dưới căn âm hoặc vế không chứa căn âm. Các bài 6.28–6.32 củng cố hai dạng căn và một số điều kiện tham số. SBT **không được trích là có cùng số liệu** với ví dụ gặp nhau tự soạn.
+- **P1 thật tại B18_OUT_04/D6:** mục HELP-G10-CHVI-TRY19 từng hướng dẫn 'đánh dấu cạnh huyền 5', sai vai trò cạnh của thang; phải là **cạnh huyền 13 m, cạnh góc vuông 5 m**, độ cao 12 m. Đã sửa đúng nguồn có ID canonical bất biến.
+- **Delta C tự biên soạn:** thêm ví dụ hai người đến cùng lúc qua đường đi xiên và đường thẳng, điều kiện \(0\le x\le8\), phương trình \(\sqrt{x^2+9}/5=(8-x)/4\); bình phương được \((x-4)(9x-364)=0\). Chỉ \(x=4\) thuộc miền và thỏa thời gian hai bên \(1\) giờ; loại \(x=364/9\) vì ngoài miền, thời gian phía \(C\) âm. Không sao chép bài vận dụng SGK p26. B18 Git blob sau sửa: \`712694dca594379ae27e49d6c192adf47b2d0d81\`.
+- Dữ liệu phép tính đã được tái kiểm bằng máy từ biểu thức đại số, không biến thành Academic/PED reviewer PASS. Còn cần đánh giá khả năng học sinh mới đọc hiểu từng outcome khi hồ sơ Q18 có hiệu lực.
+
 ## Ranh giới chứng cứ
 
 - Đã xác minh thật **ấn bản, số trang in ↔ trang PDF và outcome mở đầu** của B16–B18; phạm vi B15 từ mục lục và trang đầu.
