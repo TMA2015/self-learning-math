@@ -71,7 +71,9 @@ function draw(){
  ["a","b","c"].forEach((id,i)=>document.getElementById("o"+id).textContent=nice([a,b,c][i]));
  let desc;if(Math.abs(a)<1e-9){desc=Math.abs(b)<1e-9?"a = 0 và b = 0: f là hàm hằng, không có đỉnh parabol.":"a = 0: f là hàm bậc nhất, không có đỉnh parabol; không được chia cho 2a.";}
  else{const hx=-b/(2*a),ky=f(a,b,c,hx),delta=b*b-4*a*c;desc="Đỉnh parabol: ("+nice(hx)+"; "+nice(ky)+"). Δ = "+nice(delta)+". "+(delta>1e-8?"Có hai nghiệm thực phân biệt.":Math.abs(delta)<=1e-8?"Có nghiệm kép.":"Không có nghiệm thực.");}
- const probe=f(a,b,c,2);summary.textContent="f(x) = "+nice(a)+"x² + ("+nice(b)+")x + ("+nice(c)+"). "+desc+" Ở x = 2: |f(2)| = "+nice(Math.abs(probe))+"; f(|2|) = "+nice(probe)+".";
+ const probe=f(a,b,c,2);
+ const expression=Math.abs(a)<1e-9?(Math.abs(b)<1e-9?"f(x) = "+nice(c):"f(x) = "+nice(b)+"x + ("+nice(c)+")"):"f(x) = "+nice(a)+"x² + ("+nice(b)+")x + ("+nice(c)+")";
+ summary.textContent=expression+". "+desc+" Ở x = 2: |f(2)| = "+nice(Math.abs(probe))+"; f(|2|) = "+nice(probe)+".";
 }
 let pending=false;function schedule(){if(pending)return;pending=true;requestAnimationFrame(()=>{pending=false;draw()});}
 for(const id of ids)el[id].addEventListener("input",schedule);
