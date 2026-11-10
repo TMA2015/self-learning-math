@@ -25,6 +25,12 @@
 - B16 source Knowledge phải được khóa lại bằng **Git blob mới** trong intake ledger và bản đồ PED. Đây là bổ sung học thuật/sư phạm thực chất (`DELTA_C_ACADEMIC_MATERIAL`) trong scope SGK Knowledge; kiểm công thức, đường cong và logic bảng độc lập, **không tuyên bố reviewer Academic/PED PASS**.
 - B17 ví dụ rào 20 m và B18 các dạng phương trình căn có mạch kết nối đúng chủ đề trong SGK mở đầu. Tuy nhiên, **chưa thể kết luận mọi ví dụ/từng outcome ở B15–B18 đủ S1** chỉ từ mục lục và trang mở đầu; phải xem tiếp chi tiết trang in liên quan khi ký receipt.
 
+## B16 bổ sung đúng họ bài SGK 6.9–6.10 (trang in 16)
+
+- Trang in **16** (trang PDF 17) có Bài tập 6.9, 6.10: xác định hệ số/phương trình parabol từ điểm, trục đối xứng hoặc đỉnh. Đây là chứng cứ về **phạm vi dạng bài**, không sao chép nguyên lời bài tập.
+- Knowledge B16 được bổ sung ví dụ độc lập: \(I(1;2)\), \(A(0;0)\), \(y=a(x-1)^2+2\), \(a=-2\), suy ra \(y=-2x^2+4x\). Kiểm tại hai điểm đối xứng \((0;0),(2;0)\), kiểm đỉnh \(I(1;2)\). Nếu \(a=0\) thì không là hàm bậc hai; chỉ biết đỉnh chưa đủ để xác định một parabol duy nhất.
+- Source SHA B16 sau bổ sung: `afe31b484ba60f8f7fed243b29995332a5609826`. S1 chứng minh **họ bài** trong SGK; chính ví dụ mới là nội dung tự biên soạn phải chịu tính toán ngược và PED QA theo Q18. Chưa suy rộng thành S1 đầy đủ từng outcome.
+
 ## Ranh giới chứng cứ
 
 - Đã xác minh thật **ấn bản, số trang in ↔ trang PDF và outcome mở đầu** của B16–B18; phạm vi B15 từ mục lục và trang đầu.
