@@ -36,7 +36,7 @@ BLOCKERS: R12_TO_PRIVATE_R01_EXPOSURE_AUDIT_PENDING; NEW_PUBLIC_R11_R12_RISK_CLE
 |---|---|---|
 | KIẾN THỨC M1–M7 | `prototypes/thpt/content-drafts/topic-functions/exp-m1-domain-r00/Temp_TOPIC1_KIEN_THUC_M1_M7_FULL_LEARNER_READY_DRAFT_R11_20261110.md` | `25a91f18d6a4a764e3600d12b835b4b58e972b1f` |
 | LUYỆN TẬP M1–M7 | `prototypes/thpt/content-drafts/topic-functions/exp-m1-domain-r00/Temp_TOPIC1_LUYEN_TAP_M1_M7_FULL_PUBLIC_SHARED_SOURCE_R12_20261110.md` | `20c97d7bd7e1d5699ed186f7d7fbfd15c9d74c92` |
-| TỰ KIỂM TRA M1–M7 — chỉ hướng dẫn an toàn, **không có câu RD1** | `prototypes/thpt/content-drafts/topic-functions/exp-m1-domain-r00/Temp_TOPIC1_TU_KIEM_TRA_M1_M7_SAFE_STUDENT_SOURCE_R13_20261110.md` | `ba749eae1d92b510c2e333d9f9edd9fe4690a55c` |
+| TỰ KIỂM TRA M1–M7 — chỉ hướng dẫn an toàn, **không có câu RD1** | `prototypes/thpt/content-drafts/topic-functions/exp-m1-domain-r00/Temp_TOPIC1_TU_KIEM_TRA_M1_M7_SAFE_STUDENT_SOURCE_R13_20261110.md` | `cb1f5aa42e176218b3127711202d5bfd8d06acf0` |
 
 - **Kiến thức R11:** 7 mạch, 25 SVG (tệp thật), 4 lab HTML, 40 Tự thử/Đối chiếu, QA nguồn/toán đã ghi trong R11 QA tại `prototypes/thpt/content-drafts/topic-functions/exp-m1-domain-r00/Temp_TOPIC1_KIEN_THUC_M1_M7_R11_QA_HANDOFF_AND_UPGRADE_PROCESS_20261110.md`. **Không tuyên bố 25 hình/lab đã QA thiết bị thực**.
 - **Luyện tập R12:** 48 outcome, 99 placement tham chiếu **92 item công khai** (= 79 SGK JS/JSON + 10 Topic riêng + 3 ứng dụng cuối ChVI), 28 Written gốc, 14 hoạt động tự luyện thêm. 20/20 kiểm thử toán học tác giả trên 14 hoạt động và ứng dụng mục tiêu. Hai nguồn draft cũ chỉ còn redirect R12, không còn đề cạnh tranh. QA source `prototypes/thpt/content-drafts/topic-functions/exp-m1-domain-r00/Temp_TOPIC1_LUYEN_TAP_M1_M7_R12_QA_HANDOFF_20261110.md`.
@@ -94,7 +94,7 @@ BLOCKERS: R12_TO_PRIVATE_R01_EXPOSURE_AUDIT_PENDING; NEW_PUBLIC_R11_R12_RISK_CLE
 ## 5. QA AUTHORING R13 thực hiện và checkpoint
 
 - Kiểm trực tiếp GitHub **3/3 nguồn hiện hành SHA đúng**, baseline R18 và Q18 receipt giữ bất biến; `48/48` outcome có mặt trong R12, `28/28` Written IDs trong R12, M1–M7 được nhắc trong cả ba phần.
-- R13 student copy có hướng dẫn trước/trong/sau, Final Submit, privacy và fallback; không chứa thân câu/đáp án/rubric hoặc bảng ID kín; soớt UI hành vi vẫn PENDING.
+- R13 student copy có hướng dẫn trước/trong/sau, Final Submit, privacy và fallback; không chứa thân câu/đáp án/rubric hoặc bảng ID kín; soát hành vi UI vẫn PENDING.
 - Q16/18 receipt original có đúng 4 SHA-256 tư nhân và Academic/PED PASS; **không** giả tính hash mới của tệp chưa được cung cấp.
 - **Chưa QA:** runtime bảo mật; private vs 14 public collision; mới 9 candidate Q15; V2 hợp đồng multi-part; review học thuật/PED phần R11/R12 nếu còn yêu cầu có hiệu lực; actual browser/device AP/CI trên HEAD.
 
