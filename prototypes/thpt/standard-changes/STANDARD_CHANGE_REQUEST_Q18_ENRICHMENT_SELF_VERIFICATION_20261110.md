@@ -71,6 +71,10 @@ Chế độ B phải có **hai lớp bằng chứng phân biệt**: RELEASE, v�
 
 **Tính tương thích và lộ trình:** trước khi chủ dự án duyệt và thay Project Source 07 gốc, đoạn trên chỉ là đề xuất, `STANDARD_CONFLICT_HOLD` tiếp tục hiệu lực. Không gửi bộ nguồn NotebookLM v2.0/v2.1 trùng nhau và không tự cập nhật Permanent Sources v2.1. Hợp đồng V2 hiện có phần phụ lục dự thảo trong chính PR #804, song script `test-thpt-handoff-gate-v2.cjs` chưa kích hoạt chế độ mới và nguồn học liệu G10 #797 chưa được phát hành.
 
+### Phụ lục chuyển đổi QA snapshot lịch sử — chưa kích hoạt
+
+Chi tiết xung đột B09/B15 và chuỗi test source-lock downstream, đường kiểm **baseline SHA riêng / candidate SHA riêng / Q18 receipt theo từng bài**, negative tests và thứ tự chuyển giao nằm tại [UX795 Legacy QA Gate Migration Annex R01](UX795_LEGACY_QA_GATE_MIGRATION_ANNEX_R01_20261110.md). Đây là **phụ lục triển khai cùng SCR và cùng chuẩn Q01–Q18**, không phải chuẩn bổ sung hay quyền tự gỡ gate. Không tự cập nhật expected FNV/SHA cũ hoặc đặt bước Legacy QA thành optional; migration chỉ có hiệu lực sau owner exact approval và receipt khớp HEAD.
+
 ## 7. Trạng thái và đề nghị quyết định
 
 **Ghi nhận chủ trương owner:** bỏ vòng reviewer lặp lại đối với cập nhật kiến thức có thể tự kiểm chứng; **không đồng nghĩa** owner đã chấp nhận chính xác chữ nghĩa thay đổi Q18 hoặc miễn mọi trường hợp sai toán.
