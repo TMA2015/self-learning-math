@@ -4,6 +4,9 @@
  * Restrict automatic Pages deployment to pushes with a real site/runtime
  * impact. This does NOT skip a site regression gate: every unsafe/unknown
  * path demands deploy and must pass all existing deployment QA.
+ * Use git diff --no-renames so a LIVE site file moved into a metadata
+ * directory is still seen as a site deletion; default rename detection may
+ * report only the safe new path and accidentally skip deployment.
  * Full push diff from github.event.before to github.sha avoids incorrectly
  * skipping a multi-commit push whose last commit happens to be metadata-only.
  */
@@ -51,6 +54,11 @@ function selfTest(){
    "scripts/assemble-thpt-site.cjs","scripts/new-unknown-release-code.cjs","prototypes/thpt/unknown-runtime.js","AGENTS.md"]){
    assert.equal(decide([...safe,p]).deploy,true,"Must deploy when touched real/unknown site path "+p);
  }
+ // A rename from the live website to metadata must see BOTH deletion and
+ // addition. Git diff --no-renames will report both paths independently.
+ const moved=["docs/thpt-preview/chuyen-de/ham-so/kien-thuc.md",
+   "prototypes/thpt/content-drafts/topic-functions/kien-thuc.md"];
+ assert.equal(decide([...safe,...moved]).deploy,true,"Site-to-metadata relocation must deploy");
  assert.equal(decide([...safe,...safe]).changed,safe.length);
  assert.throws(()=>decide([]));
  assert.equal(decide(["../docs/index.md"]).deploy,true,"Unsafe relative path cannot skip deployment");
@@ -63,7 +71,7 @@ else{
  assert(/^[a-f0-9]{40}$/.test(head||"")&&head!=="0".repeat(40),"Valid HEAD_SHA required");
  const actual=cp.execFileSync("git",["rev-parse","HEAD"],{cwd:root,encoding:"utf8"}).trim();
  assert.equal(actual,head,"Checkout HEAD does not match pushed HEAD");
- const raw=cp.execFileSync("git",["diff","--name-only","-z",before,head],{cwd:root,encoding:"utf8"});
+ const raw=cp.execFileSync("git",["diff","--no-renames","--name-only","-z",before,head],{cwd:root,encoding:"utf8"});
  const files=raw.split("\0").filter(Boolean);
  const result=decide(files);
  console.log("PUSH_DEPLOY_SCOPE "+JSON.stringify(result));
