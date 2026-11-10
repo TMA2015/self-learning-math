@@ -1,6 +1,6 @@
 # Chuyên đề 1 · M1 — Luyện tập bổ sung về miền đầu vào và tập giá trị
 
-**AUTHORING CANDIDATE R00 — NOT REVIEWED — DELTA_C.** Đây là các câu mới hoàn toàn, chỉ dùng ở *Luyện tập* hoặc *Vận dụng công khai*. Các ID \`DRAFT-*\` là tạm thời; **chưa** được đăng ký vào thư viện canonical Q15, chưa rà soát trùng nghĩa với ngân hàng hiện hành. **Không dùng làm Topic Readiness RD1.** Không thay câu/đáp án/rubric đã PASS.
+**AUTHORING CANDIDATE R00 — NOT REVIEWED — DELTA_C.** Đây là các câu ứng viên mới được giữ lại sau kiểm tra trùng nội bộ, chỉ dùng ở *Luyện tập* hoặc *Vận dụng công khai*. Các ID \`DRAFT-*\` là tạm thời; **chưa** được đăng ký vào thư viện canonical Q15, chưa rà soát trùng nghĩa với ngân hàng hiện hành. **Không dùng làm Topic Readiness RD1.** Không thay câu/đáp án/rubric đã PASS.
 
 ## Nhóm A · Hiểu khái niệm trước khi tính
 
@@ -27,16 +27,6 @@ Cho \(f(x)=\dfrac{x^2-1}{x-1}\). Một bạn rút gọn thành \(x+1\), rồi kh
 <details><summary>Đối chiếu</summary>
 
 Từ biểu thức **ban đầu**, mẫu số \(x-1\) yêu cầu \(x\ne1\). Trên miền ấy, \(\dfrac{(x-1)(x+1)}{x-1}=x+1\). Nhưng phép rút gọn chỉ hợp lệ khi \(x-1\ne0\), nên tập xác định của \(f\) vẫn là \(\mathbb R\setminus\{1\}\). Biểu thức mới \(x+1\), nếu được định nghĩa riêng, có miền rộng hơn; nó không tự làm thay đổi miền ban đầu của \(f\).
-
-</details>
-
-### DRAFT-T1-M1-APP03 · Căn bậc hai nằm ở mẫu
-
-So sánh tập xác định của \(\displaystyle g(x)=\frac1{\sqrt{5-x}}\) với \(\displaystyle h(x)=\sqrt{5-x}\). Mỗi tập có nhận \(x=5\) không?
-
-<details><summary>Đối chiếu</summary>
-
-\(g\): \(5-x>0\), nên \(D_g=(-\infty,5)\), loại 5. \(h\): \(5-x\ge0\), nên \(D_h=(-\infty,5]\), nhận 5. Sai lầm thường gặp là dùng dấu \(\ge\) cho căn dù căn đang ở mẫu.
 
 </details>
 
@@ -132,11 +122,11 @@ T_f=[0,+\infty)\setminus\{\sqrt2\}.
 | DRAFT ID | Mức | Outcome candidate | Vai trò đề xuất |
 |---|---|---|---|
 | APP01 | nhận biết | quy tắc đơn trị, bảng giá trị | TOPIC_PRACTICE |
-| APP02–03 | thông hiểu | miền giữ nguyên khi rút gọn; căn ở mẫu | TOPIC_PRACTICE |
+| APP02 | thông hiểu | rút gọn phân thức không phục hồi điểm loại | TOPIC_PRACTICE |
 | APP04 | vận dụng | miền gắn bối cảnh thực tế | TOPIC_PRACTICE |
 | APP05–06 | vận dụng | giao nhiều điều kiện, điểm biên | TOPIC_PRACTICE |
 | WR01–WR02 | giải thích | biện luận điều kiện, giới hạn kết luận | TOPIC_PRACTICE / WRITTEN candidate |
 
 **Q15:** Trước khi đăng ký item phải đối chiếu các câu đã có trong R18, mã nguồn câu canonical SGK và thư viện Written/Anchor. Không được tạo câu mới chỉ để nhân bản cùng một câu với ID mới. Nếu trùng, giữ nguyên canonical item, thêm placement/role.
 
-**Q16:** Toàn bộ 8 bài trên là luyện tập công khai, không RD1, không tự ghi Mastery, không hiện đáp án của RD1. **Q18:** SHA/receipt review targeted chưa có, trạng thái HOLD.
+**Q16:** Toàn bộ 7 bài trên là luyện tập công khai, không RD1, không tự ghi Mastery, không hiện đáp án của RD1. **Q18:** SHA/receipt review targeted chưa có, trạng thái HOLD.
