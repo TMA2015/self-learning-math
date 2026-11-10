@@ -84,17 +84,46 @@ Một bạn viết: “Vì \(\sqrt{x-1}\) xác định khi \(x\ge1\), nên \(\di
 
 </details>
 
-### DRAFT-T1-M1-WR02 · Tập xác định rời rạc có thể cho đầu ra trùng nhau
+### DRAFT-T1-M1-WR02 · Rút gọn có làm mất một điểm trên đồ thị?
 
-Một trò chơi ghi số điểm quy ước theo số lỗi \(n\) bằng \(F(n)=(n-2)^2+1\). Trong trò chơi này, \(n\) chỉ được nhận các giá trị nguyên \(0,1,2,3,4,5\). Hãy xác định tập xác định và tập giá trị của \(F\), cho biết có hai đầu vào khác nhau nhận cùng một đầu ra hay không, rồi giải thích tại sao không được coi \(n=2{,}5\) là một lượt chơi hợp lệ, dù công thức vẫn tính ra số.
+Cho hai hàm số
+
+\[
+f(x)=\frac{(x-1)\sqrt{x+1}}{x-1},
+\qquad
+g(x)=\sqrt{x+1}.
+\]
+
+Một bạn rút gọn \((x-1)\) rồi nói rằng hai hàm số hoàn toàn giống nhau. Em hãy:
+
+(a) tìm tập xác định của từng hàm số;
+
+(b) giải thích vì sao \(f(x)=g(x)\) tại mọi đầu vào thuộc tập xác định của \(f\), nhưng hai hàm số vẫn không bằng nhau với tư cách là hai hàm có miền xác định khác nhau;
+
+(c) mô tả điểm phải bỏ khỏi đồ thị của \(g\) để được đồ thị của \(f\), và xác định **tập giá trị** của mỗi hàm.
 
 <details><summary>Đối chiếu và rubric dự kiến</summary>
 
-Tập xác định là \(D=\{0,1,2,3,4,5\}\). Tính từng đầu ra: \(F(0)=5\), \(F(1)=2\), \(F(2)=1\), \(F(3)=2\), \(F(4)=5\), \(F(5)=10\). Vậy tập giá trị là \(\{1,2,5,10\}\). Hai đầu vào 0 và 4 đều cho 5 (tương tự 1 và 3 đều cho 2), **không vi phạm** định nghĩa hàm số vì mỗi đầu vào vẫn chỉ cho một đầu ra. Giá trị \(n=2{,}5\) không thuộc miền của trò chơi, dù phép thế vào biểu thức đại số thực hiện được.
+Để \(g(x)\) có nghĩa trong số thực, cần \(x+1\ge0\), nên \(D_g=[-1,+\infty)\).
 
-**Rubric dự kiến (5 điểm, chưa canonical):** 1 điểm xác định đúng miền số nguyên; 1 điểm liệt kê đúng sáu đầu ra; 1 điểm lập tập giá trị không đếm lặp; 1 điểm giải thích cùng đầu ra không vi phạm tính đơn trị; 1 điểm giải thích vì sao \(n=2{,}5\) ngoài miền. Đây là bài tự luyện công khai, không dùng làm RD1 hoặc ghi Mastery.
+Để \(f(x)\) có nghĩa, cần đồng thời \(x+1\ge0\) và \(x-1\ne0\), nên
+
+\[
+D_f=[-1,+\infty)\setminus\{1\}=[-1,1)\cup(1,+\infty).
+\]
+
+Khi \(x\in D_f\), ta mới được phép chia cả tử và mẫu cho \(x-1\), suy ra \(f(x)=\sqrt{x+1}=g(x)\). Tại \(x=1\), \(g(1)=\sqrt2\) có nghĩa, còn \(f(1)\) **không xác định** do mẫu bằng 0. Vì vậy hai hàm không có cùng miền và không thể coi là cùng một hàm.
+
+Đồ thị \(f\) là đồ thị \(g\), nhưng **khuyết điểm** \((1;\sqrt2)\) (vòng tròn rỗng). Do căn bậc hai nhận mọi giá trị không âm khi \(x\ge-1\), ta có \(T_g=[0,+\infty)\). Với \(f\), giá trị \(\sqrt2\) không còn nhận được: muốn \(\sqrt{x+1}=\sqrt2\) thì nhất thiết \(x=1\), mà giá trị này bị loại. Mọi đầu ra không âm khác \(\sqrt2\) vẫn đạt được. Vậy
+
+\[
+T_f=[0,+\infty)\setminus\{\sqrt2\}.
+\]
+
+**Rubric dự kiến (6 điểm, chưa canonical):** 1 điểm tìm đúng \(D_g\); 1 điểm tìm đúng \(D_f\); 1 điểm nêu rõ điều kiện hợp lệ của phép rút gọn; 1 điểm nhận diện chính xác chỗ khuyết \((1;\sqrt2)\) trên đồ thị; 1 điểm tìm đúng \(T_g\); 1 điểm suy luận đúng \(T_f\) và vì sao mất giá trị \(\sqrt2\). Bài này là hoạt động tự đối chiếu công khai, không dùng làm RD1 hoặc ghi Mastery.
 
 </details>
+
 
 ---
 
