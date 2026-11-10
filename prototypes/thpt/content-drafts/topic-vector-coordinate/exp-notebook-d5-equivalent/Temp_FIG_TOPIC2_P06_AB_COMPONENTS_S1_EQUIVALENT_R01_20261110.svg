@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 445" width="1000" height="445" role="img" aria-labelledby="title desc">
+<title id="title">Tọa độ vectơ AB và độ dài từ ba độ dời vuông góc</title>
+<desc id="desc">Hai điểm A(1,-2,3) và B(4,0,-1) cho vectơ AB=(3,2,-4). Ba thành phần lần lượt là độ dời cộng 3 theo x, cộng 2 theo y, trừ 4 theo z. Độ dài AB là căn bậc hai của 3 bình phương cộng 2 bình phương cộng âm 4 bình phương, bằng căn 29. Hình biểu diễn độ dời trên các thanh trục riêng, không phải phối cảnh 3D để đo khoảng cách bằng mắt.</desc>
+<rect width="1000" height="445" fill="#fbfdff" rx="16"/>
+<style>
+.t{font:650 21px system-ui,Arial,sans-serif;fill:#173d56}.sub{font:400 15px system-ui,Arial,sans-serif;fill:#3f6179}
+.cap{font:650 16px system-ui,Arial,sans-serif;fill:#27495f}.num{font:650 24px system-ui,Arial,sans-serif;fill:#163b55}
+.note{font:400 14px system-ui,Arial,sans-serif;fill:#527187}
+</style>
+<text x="28" y="38" class="t">Từ hai điểm đến vectơ độ dời trong Oxyz</text>
+<text x="28" y="68" class="sub">A(1; −2; 3) · B(4; 0; −1) — lấy tọa độ điểm cuối trừ điểm đầu, theo từng trục</text>
+<g>
+<rect x="26" y="100" width="300" height="181" rx="12" fill="#edf7fc" stroke="#cfe4ee"/>
+<rect x="350" y="100" width="300" height="181" rx="12" fill="#eff9f5" stroke="#d2e9dd"/>
+<rect x="674" y="100" width="300" height="181" rx="12" fill="#fcf6ea" stroke="#eee1c7"/>
+<text x="47" y="132" class="cap">Trục x</text>
+<text x="371" y="132" class="cap">Trục y</text>
+<text x="695" y="132" class="cap">Trục z</text>
+<text x="47" y="171" class="num">Δx = 4 − 1 = +3</text>
+<text x="371" y="171" class="num">Δy = 0 − (−2) = +2</text>
+<text x="695" y="171" class="num">Δz = −1 − 3 = −4</text>
+<g stroke-width="2" fill="none" stroke-linecap="round">
+<path d="M100 226H251" stroke="#99b4c4"/><path d="M110 226H220" stroke="#1687b4" stroke-width="3.2"/>
+<path d="M220 226l-10 -7m10 7l-10 7" stroke="#1687b4" stroke-width="2.5"/>
+<path d="M424 226H575" stroke="#a4cdbb"/><path d="M433 226H506" stroke="#218f73" stroke-width="3.2"/>
+<path d="M506 226l-10 -7m10 7l-10 7" stroke="#218f73" stroke-width="2.5"/>
+<path d="M747 226H900" stroke="#cab995"/><path d="M881 226H759" stroke="#b7832e" stroke-width="3.2"/>
+<path d="M759 226l10 -7m-10 7l10 7" stroke="#b7832e" stroke-width="2.5"/>
+</g>
+<text x="47" y="262" class="note">Dấu +: dịch theo chiều dương của Ox</text>
+<text x="371" y="262" class="note">Dấu +: dịch theo chiều dương của Oy</text>
+<text x="695" y="262" class="note">Dấu −: dịch ngược chiều dương của Oz</text>
+</g>
+<rect x="26" y="301" width="948" height="90" rx="12" fill="#f3f8fb" stroke="#dbeaf1"/>
+<text x="48" y="334" class="cap">Độ dài AB = √(Δx² + Δy² + Δz²)</text>
+<text x="48" y="368" class="num">= √(3² + 2² + (−4)²) = √29 ≈ 5,385</text>
+<text x="28" y="426" class="note">Ba thanh tách biệt để thấy độ dời theo từng trục; khoảng cách 3D phải tính bằng căn tổng ba bình phương, không cộng các độ dời có dấu.</text>
+</svg>
