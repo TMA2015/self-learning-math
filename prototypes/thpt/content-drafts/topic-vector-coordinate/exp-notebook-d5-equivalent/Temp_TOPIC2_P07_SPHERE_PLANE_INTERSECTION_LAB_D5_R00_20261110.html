@@ -10,7 +10,7 @@ header{background:#eaf4fa;padding:16px 19px}
 h1{font-size:20px;margin:0 0 6px}
 p{line-height:1.65;margin:5px 0}
 main{padding:15px 20px}
-.controls{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:15px;align-items:end}
+.controls{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr) minmax(0,1fr);gap:15px;align-items:end}
 label{font-weight:650;display:block;margin-bottom:5px}
 input[type=range]{width:100%;min-height:30px;accent-color:#1586ac}
 .buttons{display:flex;flex-wrap:wrap;gap:7px;margin:9px 0 14px}
@@ -35,8 +35,10 @@ canvas{display:block;width:100%;height:320px;touch-action:pan-y}
 <input id="height" type="range" min="-6" max="6" step="0.1" value="3" aria-label="Độ cao mặt phẳng từ âm sáu đến sáu">
 </div>
 <div><label for="viewAngle">Xoay góc nhìn: <output id="avalue" for="viewAngle">35°</output></label>
-<input id="viewAngle" type="range" min="0" max="360" step="5" value="35" aria-label="Xoay góc nhìn quanh trục đứng">
+<input id="viewAngle" type="range" min="0" max="360" step="5" value="35" aria-label="Xoay quanh trục đứng của mặt cầu">
 </div>
+<div><label for="viewTilt">Độ nghiêng góc nhìn: <output id="tvalue" for="viewTilt">40°</output></label>
+<input id="viewTilt" type="range" min="15" max="85" step="5" value="40" aria-label="Điều chỉnh góc nhìn từ ngang lên phía trên"></div>
 </div>
 <div class="buttons">
 <button type="button" data-h="0">t = 0: qua tâm</button>
@@ -50,14 +52,14 @@ canvas{display:block;width:100%;height:320px;touch-action:pan-y}
 <div class="panel"><h2>Thiết diện qua tâm (hệ thức Pitago)</h2><canvas id="cross" role="img" aria-label="Đường tròn mặt cắt qua tâm mặt cầu, bán kính 5 và đường thẳng ngang z bằng t; bán kính giao tròn r được tính bằng hệ thức Pitago."></canvas></div>
 </div>
 <div id="status" class="status" role="status" aria-live="polite"></div>
-<p class="help">Cách đọc: bán kính mặt cầu R luôn bằng 5. Khoảng cách tâm O đến mặt phẳng là d = |t|; nếu d &lt; R thì bán kính giao tuyến r = √(R² − d²). Ở d = R, giao tuyến chỉ còn **một điểm tiếp xúc**, không phải đường tròn có bán kính dương. Ở d &gt; R, không có giao điểm thực.</p>
+<p class="help">Cách đọc: bán kính mặt cầu R luôn bằng 5. Khoảng cách tâm O đến mặt phẳng là d = |t|; nếu d &lt; R thì bán kính giao tuyến r = √(R² − d²). Ở d = R, giao tuyến chỉ còn <strong>một điểm tiếp xúc</strong>, không phải đường tròn có bán kính dương. Ở d &gt; R, không có giao điểm thực.</p>
 <p class="help">Hình là mô phỏng hình chiếu, không dùng để đo trực tiếp góc hay độ dài trong Oxyz. Đây là hoạt động Kiến thức/Vận dụng công khai; không chấm điểm, không ghi Skill Mastery hoặc sử dụng làm Tự kiểm tra độc lập.</p>
 </main>
 </section>
 <script>
 (()=>{
 "use strict";
-const R=5, slide=document.getElementById("height"),angle=document.getElementById("viewAngle");
+const R=5, slide=document.getElementById("height"),angle=document.getElementById("viewAngle"),tilt=document.getElementById("viewTilt");
 const status=document.getElementById("status");
 const spat=document.getElementById("spatial"),cross=document.getElementById("cross");
 const val=(v)=>String(Math.round(v*100)/100).replace("-","−").replace(".",",");
@@ -76,17 +78,18 @@ function circle(c,x,y,r,fill,stroke,width=1.5){
  if(stroke){c.strokeStyle=stroke;c.lineWidth=width;c.stroke();}
 }
 function render(){
- const t=Number(slide.value),d=Math.abs(t),deg=Number(angle.value),phi=deg*Math.PI/180;
+ const t=Number(slide.value),d=Math.abs(t),deg=Number(angle.value),phi=deg*Math.PI/180,theta=Number(tilt.value)*Math.PI/180;
  document.getElementById("hvalue").textContent=val(t);
  document.getElementById("avalue").textContent=String(deg)+"°";
+ document.getElementById("tvalue").textContent=String(Math.round(theta*180/Math.PI))+"°";
  const r2=Math.max(0,R*R-t*t),r=d<R?Math.sqrt(r2):0;
  const spatial=context(spat),c=spatial.c,w=spatial.w,h=spatial.h;
  const scale=Math.min(w/13,h/13),cx=w/2,cy=h/2;
- const elevation=0.47;
+ const planeVertical=Math.sin(theta),sphereVertical=Math.cos(theta);
  function project(x,y,z){
   const xr=x*Math.cos(phi)-y*Math.sin(phi);
   const yr=x*Math.sin(phi)+y*Math.cos(phi);
-  return [cx+xr*scale,cy+(yr*0.62-z*0.78)*scale];
+  return [cx+xr*scale,cy+(yr*planeVertical-z*sphereVertical)*scale];
  }
  // Đường bao mặt cầu theo hình chiếu trực giao; lưới chỉ dùng để gợi độ cong.
  circle(c,cx,cy,R*scale,null,"#a6bfcd",2);
@@ -139,7 +142,7 @@ function render(){
  status.textContent="t = "+val(t)+"; d(O,(P)) = "+val(d)+"; R = 5. "+sentence+(t===3?" Với t = 3, phương trình giao tuyến x² + y² = 16, z = 3.":"");
 }
 let scheduled=false;function schedule(){if(scheduled)return;scheduled=true;requestAnimationFrame(()=>{scheduled=false;render();});}
-slide.addEventListener("input",schedule);angle.addEventListener("input",schedule);
+slide.addEventListener("input",schedule);angle.addEventListener("input",schedule);tilt.addEventListener("input",schedule);
 document.querySelectorAll("button[data-h]").forEach(b=>b.addEventListener("click",()=>{slide.value=b.dataset.h;render();}));
 window.addEventListener("resize",schedule);
 render();
