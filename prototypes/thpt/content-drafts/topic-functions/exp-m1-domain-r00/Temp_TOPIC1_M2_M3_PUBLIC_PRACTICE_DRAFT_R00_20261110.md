@@ -1,6 +1,6 @@
 # Chuyên đề 1 · Luyện tập bổ sung cho M2–M3
 
-**AUTHORING R00 — CÁC CÂU CHƯA REVIEW, CHƯA CANONICAL.** Bản này chứa **4 câu áp dụng và 2 bài tự luận Written candidate**. Tất cả thuộc Luyện tập hoặc Vận dụng công khai; không đưa vào Tự kiểm tra RD1, không sinh Mastery. DRAFT ID chỉ là vị trí theo dõi; đối chiếu Q15 với ngân hàng R18/SGK/Topic trước khi tạo item canonical. Có thể tái sử dụng một item đã duyệt bằng nhiều placement/role, không nhân bản một câu chỉ vì chuyển sang Topic.
+**AUTHORING R09 UPDATE — CÁC CÂU CHƯA CANONICAL.** Bản này hiện chứa **5 câu áp dụng và 2 bài tự luận Written candidate**; APP07 M2 là ứng viên bổ sung có lý do từ QA khoảng trống bài tương tác. Tất cả thuộc Luyện tập hoặc Vận dụng công khai; không đưa vào Tự kiểm tra RD1, không sinh Mastery. DRAFT ID chỉ là vị trí theo dõi; đối chiếu Q15 với ngân hàng R18/SGK/Topic trước khi tạo item canonical. Có thể tái sử dụng một item đã duyệt bằng nhiều placement/role, không nhân bản một câu chỉ vì chuyển sang Topic.
 
 ## A. Đọc bảng và đồ thị — M2
 
@@ -23,6 +23,37 @@ Xét \(r(x)=x+1\) khi \(x<0\), và \(r(x)=x-2\) khi \(x\ge0\). Cả hai nhánh �
 **Không.** Chẳng hạn, \(x_1=-0{,}5<x_2=0\) nhưng \(r(-0{,}5)=0{,}5\) trong khi \(r(0)=-2\), tức \(r(x_1)>r(x_2)\). Mỗi nhánh tăng trên khoảng riêng của mình, nhưng có **bước nhảy xuống** tại mốc 0, khiến hàm không tăng trên toàn miền. Cần kiểm cả chỗ chuyển nhánh, không chỉ dấu hệ số góc.
 
 </details>
+
+### DRAFT-T1-M2-APP07 — Ba điểm quan sát có xác định một đồ thị? (ứng viên **tương tác chọn một đáp án**)
+
+**Outcome dự kiến:** \`TOP-G10-FUNC-O03\` · **Dạng:** \`MCQ_SINGLE_CHOICE\` · **Dự kiến role:** \`SHARED_PUBLIC_FORMATIVE\`, placement \`TOPIC_PRACTICE_M2\` (có thể thêm SGK Practice sau đối chiếu; **chưa cấp item_id canonical**).
+
+Một bảng quan sát chỉ ghi các điểm \((-2;4),(0;0),(2;4)\). Hai nhóm đề xuất **hai quy tắc mô hình** trên cùng miền \(D=[-2,2]\):
+\[
+p(x)=x^2,\qquad q(x)=2|x|.
+\]
+**Nhận xét nào chính xác?** Hãy chọn một đáp án và tự giải thích trước khi xem lời giải.
+
+- **A.** Hai mô hình cùng qua ba điểm đã biết, nhưng \(p(1)=1\) và \(q(1)=2\), nên bảng ba điểm không đủ chọn duy nhất một mô hình.
+- **B.** Vì cả hai cùng qua ba điểm nên \(p(x)=q(x)\) với mọi \(x\in[-2,2]\).
+- **C.** Chỉ \(p\) phù hợp, vì một biểu thức có trị tuyệt đối không thể biểu diễn dữ liệu quan sát.
+- **D.** \(x=1\) không thuộc miền mô hình vì không có số liệu quan sát tại \(x=1\).
+
+<details><summary>Gợi ý (chỉ mở khi cần)</summary>
+
+Kiểm lần lượt \(x=-2,0,2\) với cả hai quy tắc. Sau đó thử một \(x\) **không nằm trong ba mốc quan sát** nhưng **thuộc miền mô hình** \(D\), chẳng hạn \(x=1\). Phân biệt: *tập mốc đã quan sát* không đồng nghĩa với *miền của quy tắc đang đề xuất*.
+
+</details>
+
+<details><summary>Đối chiếu sau khi tự làm</summary>
+
+**Chọn A.** Tại \(-2,0,2\) cả \(p,q\) đều nhận đúng \(4,0,4\). Nhưng \(p(1)=1\), còn \(q(1)=2\); chỉ từ ba mốc không thể suy ra chắc chắn kết quả tại \(x=1\). B sai vì hai quy tắc không trùng trên cả \(D\); C sai vì trị tuyệt đối hoàn toàn có thể xác định một hàm số; D nhầm đầu vào chưa đo với đầu vào không hợp lệ của **mô hình**.
+
+**Khắc phục:** Nếu chọn B/C, xem lại M2 “Ba dấu chấm có quyết định được cả nét cong?”; nếu chọn D, quay lại M1 phân biệt miền mô hình và dữ liệu đã quan sát. Không dùng câu đã xem lời giải làm chứng cứ Tự kiểm tra độc lập.
+
+</details>
+
+**Kiểm soát nguồn:** Đây là **ứng viên bài luyện tương tác mới** nhằm chuyển kiến thức R08 về tính không duy nhất của mô hình thành câu *chọn phát biểu đúng*; nó **không thay** M2-WR01 (tự luận về nội suy vận tốc có giả thiết) hay item SGK B15-P01/P02/P03/P04. Cần xét trùng ngữ nghĩa với mọi bank và Q15 trước khi ghi canonical chung; không copy stem/key vào bank khác.
 
 ### DRAFT-T1-M2-WR01 — Tách dữ kiện khỏi suy luận
 
@@ -76,8 +107,8 @@ Cho \(f(x)=x^2-4x+3\). Xét \(g(x)=|f(x)|\) và \(h(x)=f(|x|)\). (a) Hãy mô t�
 
 | Nhóm | Số bài ứng viên | Mục tiêu năng lực | Trạng thái |
 |---|---:|---|---|
-| M2 · APP05–06 + WR01 | 3 | đọc dữ liệu, điều kiện biên, lập luận đồng biến | DRAFT, cần cross-bank Q15 |
+| M2 · APP05–07 + WR01 | 4 | đọc dữ liệu, điều kiện biên, lập luận đồng biến | DRAFT, cần cross-bank Q15 |
 | M3 · APP07, APP09 + WR02 | 3 | hai phép biến đổi trị tuyệt đối, kiểm điều kiện nghiệm trị tuyệt đối, cực trị có miền | DRAFT, cần cross-bank Q15 |
-| **Tổng** | **6** | PUBLIC PRACTICE / WRITTEN CANDIDATE | **NOT CANONICAL** |
+| **Tổng** | **7** | PUBLIC PRACTICE / WRITTEN CANDIDATE | **NOT CANONICAL** |
 
 **Không trùng ID nội bộ**, nhưng một số bài cùng họ dạng với ví dụ R18 M2/M3 và gói R00 cũ; phải so sánh **stem, phương án, lời giải, rubric** trên nguồn canonical trước khi đưa vào thư viện chung. Nếu trùng chính câu, thêm placement/role vào một item duy nhất, không phát hành item khác ID. Các câu mới phải được NotebookLM phản biện về Academic/PED và Q01–Q18 đúng phần DELTA_C. Không sử dụng bất kỳ câu này làm chứng cứ RD1 độc lập sau khi đã lộ đáp án trong Practice.
