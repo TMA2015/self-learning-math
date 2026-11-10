@@ -29,13 +29,13 @@ function validate(source, agents, queue) {
  const fail=x=>failures.push(x);
  if(!source.includes("STANDARD_ID:** `SLM-THPT-QUALITY-ONE`"))fail("STANDARD_ID_NOT_EXPLICIT");
  const version=(source.match(/\*\*VERSION:\*\* `(\d+\.\d+\.\d+)`/)||[])[1];
- if(!["1.0.0","1.1.0","1.2.0"].includes(version))fail("VERSION_NOT_LOCKED");
- if(version==="1.1.0"||version==="1.2.0"){
+ if(!["1.0.0","1.1.0","1.2.0","2.0.0"].includes(version))fail("VERSION_NOT_LOCKED");
+ if(["1.1.0","1.2.0","2.0.0"].includes(version)){
    for(const token of ["SBT_REFERENCE_GAP_DOCUMENTED","SGK_CORE_AUTHORITY","REFERENCE_EXERCISE","ORIGINAL_AUTHORED","STANDARD_CHANGE_REQUEST_Q01_SOURCE_ROLES_20261103"]){
      if(!source.includes(token))fail("Q01_V1_1_MISSING_CONTROL:"+token);
    }
  }
- if(version==="1.2.0"){
+ if(["1.2.0","2.0.0"].includes(version)){
    const required=["## II-B. Diễn giải áp dụng Q03/Q04/Q07/Q08/Q09–Q14/Q17 qua cùng AP1–AP5 — bổ sung v1.2.0",
      "## X-B. Quyết định hợp nhất trải nghiệm tự học — Change Log 04/11/2026",
      "OWNER_APPROVED_EFFECTIVE_UPON_GOVERNANCE_MERGE",
@@ -46,9 +46,33 @@ function validate(source, agents, queue) {
      "không phát sinh tiêu chí toán mới"];
    for(const token of required)if(!source.includes(token))fail("UX_PED_V1_2_MISSING_CONTROL:"+token);
  }
- if(!source.includes("OFFICIAL_OWNER_APPROVED_MAIN") &&
+ if(!source.includes("GOVERNANCE_PROPOSAL_OWNER_REVIEW_PENDING") &&
+    !source.includes("OFFICIAL_OWNER_APPROVED_MAIN") &&
     !source.includes("OWNER_APPROVED_Q01_REVISION_PENDING_GOVERNANCE_QA_MERGE") &&
     !source.includes("OWNER_APPROVED_EFFECTIVE_UPON_GOVERNANCE_MERGE"))fail("OWNER_APPROVAL_RECEIPT_MISSING");
+
+ if(version==="2.0.0"){
+   // Version 2 is a draft major change. A GREEN schema test does not activate
+   // a self-QA route until the owner approves, V2/Source07 are aligned and
+   // governance actually merges into main.
+   const required=[
+     "GOVERNANCE_PROPOSAL_OWNER_REVIEW_PENDING",
+     "## X-C. Đề xuất tự kiểm chứng nội bộ cho cập nhật Kiến thức SGK đã nghiệm thu",
+     "STANDARD_CHANGE_REQUEST_Q18_ENRICHMENT_SELF_VERIFICATION_20261110.md",
+     "Q18_INDEPENDENT_REVIEW",
+     "Q18_OWNER_SELF_VERIFIED_ENRICHMENT",
+     "SELF_QA_EVIDENCE_RECEIPT",
+     "STANDARD_CONFLICT_HOLD",
+     "không đổi Core/outcome",
+     "Q15/Q16",
+     "RD1",
+     "không được mạo danh",
+     "Source 07 v1.1",
+     "Q18_VERIFICATION_MODE",
+     "OWNER_APPROVAL",
+   ];
+   for(const token of required)if(!source.includes(token))fail("Q18_V2_DRAFT_CONTROL_MISSING:"+token);
+ }
  for(const heading of REQUIRED_SECTIONS)if(!source.includes(heading))fail("MISSING_SECTION:"+heading);
  const tableStart=source.indexOf("## II. Ma trận chuẩn chất lượng duy nhất Q01–Q18");
  const tableEnd=source.indexOf("## III.",tableStart);
@@ -87,9 +111,13 @@ function selfTest(){
  if(/\*\*VERSION:\*\* `1\.(?:1|2)\.0`/.test(full)){
    assert(validate(full.replaceAll("SBT_REFERENCE_GAP_DOCUMENTED","SBT_REF_GAP_DELETED"),"","").failures.some(e=>e.startsWith("Q01_V1_1_MISSING_CONTROL")));
  }
- if(/\*\*VERSION:\*\* `1\.2\.0`/.test(full)){
+ if(/\*\*VERSION:\*\* `(?:1\.2\.0|2\.0\.0)`/.test(full)){
    assert(validate(full.replace("## II-B. Diễn giải áp dụng", "## II-B. [REMOVED]"),"","").failures.some(e=>e.startsWith("UX_PED_V1_2_MISSING_CONTROL")));
    assert(validate(full.replace("OWNER_APPROVED_EFFECTIVE_UPON_GOVERNANCE_MERGE","NO_OWNER_APPROVAL"),"","").failures.some(e=>e.startsWith("UX_PED_V1_2_MISSING_CONTROL")));
+ }
+ if(/\*\*VERSION:\*\* `2\.0\.0`/.test(full)){
+   assert(validate(full.replace("SELF_QA_EVIDENCE_RECEIPT","EVIDENCE_OMITTED"),"","").failures.some(e=>e.startsWith("Q18_V2_DRAFT_CONTROL_MISSING")));
+   assert(validate(full.replace("## X-C. Đề xuất tự kiểm chứng nội bộ","## X-C. [REMOVED]"),"","").failures.some(e=>e.startsWith("Q18_V2_DRAFT_CONTROL_MISSING")));
  }
  {
    assert(validate(full.replace(/\*\*VERSION:\*\* `\d+\.\d+\.\d+`/,"**VERSION:** `9.9.9`"),"","").failures.includes("VERSION_NOT_LOCKED"));
