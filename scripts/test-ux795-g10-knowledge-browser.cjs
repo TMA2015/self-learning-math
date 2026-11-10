@@ -52,7 +52,7 @@ function sameIDs(actual,expected,where){
      // canonical item IDs as query parameters; these remain formative, never
      // independent readiness or Mastery evidence.
      if(n===26||n===27){
-      const expected=[...source.matchAll(/href="\.\.\/luyen-tap\/\?item=(THPT-G10-B(?:26|27)-[CP]\d+)"/g)].map(m=>m[1]);
+      const expected=[...source.matchAll(/<p><strong>Luyện tiếp:<\/strong> <a href="\.\.\/luyen-tap\/\?item=(THPT-G10-B(?:26|27)-[CP]\d+)"/g)].map(m=>m[1]);
       assert.equal(expected.length,5,location+" five reviewed cross-links from Knowledge to Practice");
       assert.equal(new Set(expected).size,expected.length,location+" unique Practice IDs in B26/B27");
       const live=await page.locator('.md-content a[href*="luyen-tap/?item="]').evaluateAll(nodes=>nodes.map(a=>({
