@@ -20,6 +20,11 @@ jobs:
           fetch-depth: 0
       - name: Protect release-queue manifest and REGISTER even on metadata-only main pushes
         run: node scripts/test-thpt-release-queue.cjs
+      - name: Enforce V2 source/receipt SHA of any new READY packet even when no site deployment
+        env:
+          BASE_SHA: ${{ github.event.before }}
+          HEAD_SHA: ${{ github.sha }}
+        run: node scripts/test-thpt-handoff-gate-v2.cjs
       - name: Assert safe push-scope classifier and classify FULL main push
         id: scope
         env:
