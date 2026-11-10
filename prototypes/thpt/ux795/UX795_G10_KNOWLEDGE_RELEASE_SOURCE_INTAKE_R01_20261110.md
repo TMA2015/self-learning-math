@@ -18,9 +18,9 @@
 | B04 | II | `69d4067e31ac714b451e9d1827e6081c8f9f2726` | `8d4fa65c64893ec5e867bc9a1a98eb8eb04b46ed` |
 | B05 | III | `a84ada557f30e484c1b5033238ed3ee6deab366e` | `dd1a9ecaa51a6ad1da0a6d86d6ac39847be68140` |
 | B06 | III | `6a305a9ebcd156809b880365c04a2de3d442d011` | `0806c3f48c0b99109ff1b2531f9a839a3a16ec8c` |
-| B07 | IV | `1f1b0976cfcfe6c5d812c056e13df09e561eb89f` | `76a449bbc3386e7dc244b1e981dc55f454605350` |
-| B08 | IV | `a7758b4647f28681acdc3f99b8f7f80956deebf1` | `9495a09548acffeea2763816336fc22859933890` |
-| B09 | IV | `84c67363264698fab87db0e76eca5e4561006fa6` | `d58826cf4f12a0814a420c5cefb6cb2469129d23` |
+| B07 | IV | `1f1b0976cfcfe6c5d812c056e13df09e561eb89f` | `3766d84af8cbd27d1d84824048c39f974036020b` |
+| B08 | IV | `a7758b4647f28681acdc3f99b8f7f80956deebf1` | `fdf2a7619f1a804a59ede82564a4853cadf6c5f7` |
+| B09 | IV | `84c67363264698fab87db0e76eca5e4561006fa6` | `30cf7ba3fea8e8ebb4212ac5b06840b4ef7d380e` |
 | B10 | IV | `84494e72805d4beb681465595d923bb98a2afb61` | `ff46465388cf3882af931fc181bb635413f7d521` |
 | B11 | IV | `899379e55ce9cc332acb88009c99626dd316f7be` | `6e95cfbca3ce0536929f07b2d11c7b250c8ff45a` |
 | B12 | V | `672ac88b3c36a5abde45b73ab7ad0fb7ff830983` | `68546138e93be2207480f8e6975cd57810593a27` |
@@ -39,6 +39,14 @@
 | B25 | VIII | `7fa6775d6da704193e0e0924451abc844873428f` | `8c02911fdcb0d5f8af0b0ef1e270f3a93807c109` |
 | B26 | IX | `74b1ba86a8c3b0ac9a48c6545e28af29792cb734` | `8086d0c0b4fc132d871d5eacf2177defe082381a` |
 | B27 | IX | `80bfadb4a9a3ae91e303f89506eb73e4a0d5bf9f` | `916925f16756c42d11fb633640820256261fae68` |
+
+
+## RELEASE prose-only refinement — 10/11/2026 (B07–B09)
+
+- B07/B08/B09: đã chỉnh **17 câu dẫn/nhắc tiền đề** còn máy móc, chuyển sang lời dẫn trực tiếp với học sinh; không sửa định nghĩa, kết luận, điều kiện, ví dụ, First Try, HELP, MathJax/TeX hay quyền đánh giá.
+- Nguồn ứng viên SHA tại bảng trên được cập nhật theo Git blob thực của B07/B08/B09; **các SHA ứng viên cũ không còn là nguồn phát hành hiện tại**. Baseline trên main không đổi.
+- So sánh trước/sau trong từng file: tập biểu thức TeX theo thứ tự, First Try ID, HELP ID **bất biến**. Đây là QA biên tập RELEASE, **không** tự cấp Academic/PED PASS; Q18 đối với các phần nội dung nâng cấp vẫn HOLD.
+- Cần chạy lại exact-head UX795/browser + source-lock và dùng SHA mới nếu lập hồ sơ tự kiểm chứng sau này. Không đổi Core/Practice/Readiness/RD1/Firebase/Mastery, không merge/deploy.
 
 ## RELEASE QA hiện có
 
