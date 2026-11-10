@@ -168,7 +168,7 @@
 
     Các câu “Em vận dụng” vừa giúp kiểm tra từng khái niệm. Bây giờ em xem những bài toán **trọn vẹn**, chú ý cách chọn phương pháp trước khi làm phép tính.
 
-    ### Ví dụ 1 — Biểu diễn miền nghiệm có lấy biên (chọn lọc NotebookLM v1)
+    ### Ví dụ 1 — Biểu diễn miền nghiệm có lấy biên
 
     **Đề bài.** Biểu diễn miền nghiệm của \(x+2y\le4\).
 
