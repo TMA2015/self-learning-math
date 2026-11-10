@@ -31,10 +31,11 @@ canvas{display:block;width:100%;height:360px}
 <div><label for="c">Hệ số c: <output id="oc">3</output></label><input id="c" type="range" min="-4" max="4" step="0.1" value="3"></div>
 </div>
 <div class="actions">
-<label><input id="absOut" type="checkbox" checked> <span style="color:#126c94">y = |f(x)|</span></label>
+<label><input id="absOut" type="checkbox"> <span style="color:#126c94">y = |f(x)|</span></label>
 <label><input id="absIn" type="checkbox"> <span style="color:#1b795d">y = f(|x|)</span></label>
 <button id="reset" type="button">Đặt lại</button>
 </div>
+<p class="small" id="guide" aria-live="polite">Bước 1: chỉ nhìn đường xám f(x). Trước khi bật đường xanh, hãy đoán điểm nào thay đổi khi lấy |f(x)| và điểm nào đối xứng khi dùng f(|x|). Bước 2: bật từng ô, quan sát rồi giải thích.</p>
 <div class="canvaswrap"><canvas id="graph" role="img" aria-label="Đồ thị f(x), giá trị tuyệt đối đầu ra và giá trị tuyệt đối đầu vào. Đọc chú giải văn bản ở bên dưới." height="360" width="760"></canvas></div>
 <div class="summary" id="summary" role="status" aria-live="polite"></div>
 <p class="small">Đường xám: f(x). Đường xanh dương: |f(x)|. Đường xanh lá: f(|x|). Nét vẽ thống nhất; không tô những mảng màu đặc. Cửa sổ đang hiển thị x từ −4 đến 4 và y từ −6 đến 12; đường có thể tiếp tục bên ngoài vùng này.</p>
@@ -73,12 +74,16 @@ function draw(){
  else{const hx=-b/(2*a),ky=f(a,b,c,hx),delta=b*b-4*a*c;desc="Đỉnh parabol: ("+nice(hx)+"; "+nice(ky)+"). Δ = "+nice(delta)+". "+(delta>1e-8?"Có hai nghiệm thực phân biệt.":Math.abs(delta)<=1e-8?"Có nghiệm kép.":"Không có nghiệm thực.");}
  const probe=f(a,b,c,2);
  const expression=Math.abs(a)<1e-9?(Math.abs(b)<1e-9?"f(x) = "+nice(c):"f(x) = "+nice(b)+"x + ("+nice(c)+")"):"f(x) = "+nice(a)+"x² + ("+nice(b)+")x + ("+nice(c)+")";
- summary.textContent=expression+". "+desc+" Ở x = 2: |f(2)| = "+nice(Math.abs(probe))+"; f(|2|) = "+nice(probe)+".";
+ let reveal="Chỉ hiện đồ thị gốc. Hãy dự đoán trước khi bật một trong hai phép biến đổi.";
+ if(out.checked && inside.checked)reveal="Ở x = 2: |f(2)| = "+nice(Math.abs(probe))+"; f(|2|) = "+nice(probe)+". Hai cách xử lý đầu vào/đầu ra không luôn giống nhau.";
+ else if(out.checked)reveal="Đã bật |f(x)|: phần tung độ âm của f bị lật qua trục Ox. Ở x = 2, |f(2)| = "+nice(Math.abs(probe))+". Hãy dự đoán f(|2|) rồi mới bật đường xanh lá.";
+ else if(inside.checked)reveal="Đã bật f(|x|): phía x < 0 lấy đúng giá trị từ đầu vào |x|. Ở x = −2, f(|−2|) = f(2) = "+nice(probe)+". Hãy dự đoán |f(2)| rồi mới bật đường xanh dương.";
+ summary.textContent=expression+". "+desc+" "+reveal;
 }
 let pending=false;function schedule(){if(pending)return;pending=true;requestAnimationFrame(()=>{pending=false;draw()});}
 for(const id of ids)el[id].addEventListener("input",schedule);
 out.addEventListener("change",schedule);inside.addEventListener("change",schedule);
-document.getElementById("reset").addEventListener("click",()=>{el.a.value=1;el.b.value=-4;el.c.value=3;out.checked=true;inside.checked=false;draw()});
+document.getElementById("reset").addEventListener("click",()=>{el.a.value=1;el.b.value=-4;el.c.value=3;out.checked=false;inside.checked=false;draw()});
 window.addEventListener("resize",schedule);draw();
 })();
 </script></body></html>
