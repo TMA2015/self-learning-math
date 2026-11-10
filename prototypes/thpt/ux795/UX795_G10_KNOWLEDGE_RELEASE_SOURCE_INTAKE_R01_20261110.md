@@ -27,7 +27,7 @@
 | B13 | V | `b4008a227494ef7165871b67a1a0f255c66c5c6c` | `c55d650f5b59c5260960de136e3c7fc26f219cdf` |
 | B14 | V | `0cb35d210afc9dba136a6b256bc1c8138cb01396` | `894c31de396a2f6d6d30912399d6cad39f790130` |
 | B15 | VI | `72ed03b1cb625f157bb49064cf1df2100856e057` | `7b579927e0f6fe4d5a562d5e1127efa8d6deeb96` |
-| B16 | VI | `a0fc509e1c08b7ee90225dee3994d6b3fa84e21a` | `55ea62649ba36231c663a85c2f4e87ea0662a8c5` |
+| B16 | VI | `a0fc509e1c08b7ee90225dee3994d6b3fa84e21a` | `afe31b484ba60f8f7fed243b29995332a5609826` |
 | B17 | VI | `f94608d832b43e671439afde9c14332bb443ac13` | `6302851ed5ce78540a315eec475df7581c321390` |
 | B18 | VI | `0f2c6420f40112018dfd4be1268b0deb83f4452a` | `31ed3e85424d68130fc62a96e031389fc937122c` |
 | B19 | VII | `a4dbf99d12c35f0b3af73fb3df423126aa861add` | `36226f87857499897da3f62aaa9bd6a6f2ec7784` |
@@ -85,6 +85,12 @@
 - Đã mở chính SGK KNTT Toán 10 Tập 2 dạng scan, khóa SHA256 tài liệu; đối chiếu B16 trang in 11 (PDF trang 12), yêu cầu **thiết lập bảng giá trị hàm số bậc hai**. B16 Knowledge trước đây chưa có bảng \\(x,f(x)\\) cụ thể.
 - Đã bổ sung bảng \\(x=0,1,2,3,4\\) cho \\(f(x)=x^2-4x+3\\), nhận các giá trị \\(3,0,-1,0,3\\); chọn các cặp điểm đối xứng và giải thích cách nối thành parabol. Đây là \\`DELTA_C_ACADEMIC_MATERIAL\\`, không phải chỉ UI.
 - Git blob B16 mới đã cập nhật trong bảng intake. Bằng chứng trang in/phiên bản SGK: [S1 ChVI scope R01](UX795_G10_CHVI_S1_PRINTED_PAGE_SCOPE_R01_20261110.md). Các câu First Try, D6 HELP và Core/Practice/Readiness không đổi. Q18 hiện hành vẫn HOLD.
+
+## S1 B16 reversible parabola modeling — 10/11/2026
+
+- Đối chiếu trực tiếp SGK Toán 10 KNTT Tập 2 trang in **16**, bài 6.9–6.10: có dạng **xác định hàm số bậc hai từ thông tin hình học** (điểm, trục, đỉnh). Nguồn Knowledge cũ B16 chưa dạy rõ quy trình đi ngược từ đỉnh + điểm về công thức.
+- Đã bổ sung ví dụ tự biên soạn: đỉnh \(I(1;2)\), đi qua \(A(0;0)\), chọn dạng đỉnh \(y=a(x-1)^2+2\), suy ra \(a=-2\), kiểm ngược tại \(x=0,1,2\); cảnh báo tính duy nhất và điều kiện \(a\ne0\). Đây là `DELTA_C_ACADEMIC_MATERIAL` thuộc Knowledge, không thay outcome, First Try, HELP, Core, Practice, ngân hàng hay Readiness.
+- SHA mới của B16 được re-lock tại hàng B16; bộ kiểm toán ví dụ ChVI có thêm một trường hợp. Chưa gọi S1/PED toàn chương PASS; chưa kích hoạt Q18 self-QA mode hoặc merge/deploy.
 
 ## RELEASE QA hiện có
 
