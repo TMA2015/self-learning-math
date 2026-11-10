@@ -7,7 +7,7 @@
 | Cổng | Khóa lịch sử được dùng | Điều đã xác minh trên ứng viên | Kết luận |
 |---|---|---|---|
 | R4, scripts/test-thpt-academic-presentation-pilot.cjs, B09 | FNV-32 caa5d2b4 trên Git blob lịch sử d58826cf4f12a0814a420c5cefb6cb2469129d23 | B09 mới: blob 30cf7ba3fea8e8ebb4212ac5b06840b4ef7d380e, FNV fb249205. **30 biểu thức toán gốc liên tiếp giữ đúng thứ tự**, 5 First Try, 2 HELP, 4 tab | Khóa toàn văn cũ không phải một verdict toán học mới; snapshot lịch sử này cũng KHÔNG phải main hiện hành |
-| Roadmap, scripts/test-thpt-chvi-math-block-render.cjs, B15 | blob 295b0d032c4d91cc718bf9c556924b4ff9f74da5; 1 display và 205 inline | blob mới 7b579927e0f6fe4d5a562d5e1127efa8d6deebf96; nội dung đã đổi; kiểm cũ fail ngay tại SHA | Khóa số lượng và toàn văn của phiên bản trước |
+| Roadmap, scripts/test-thpt-chvi-math-block-render.cjs, B15 | blob 295b0d032c4d91cc718bf9c556924b4ff9f74da5; 1 display và 205 inline | blob mới 7b579927e0f6fe4d5a562d5e1127efa8d6deeb96; nội dung đã đổi; kiểm cũ fail ngay tại SHA | Khóa số lượng và toàn văn của phiên bản trước |
 | Roadmap cùng script, B16 | blob 02d4bd23fd584cee78105e074766cb31f875141d; 4 display / 148 inline | ứng viên có 4 display / 193 inline, thêm bảng giá trị + tìm ngược parabol theo SGK/SBT | Công thức mới hợp lệ sẽ làm sai bộ đếm cũ |
 | Roadmap cùng script, B17 | blob 38f9683aa332bc713a44616eff1b7e199af3011e; 4 display / 220 inline | ứng viên có 5 display / 241 inline, thêm mô hình thời gian bay | Khóa số lượng không phân biệt thêm đúng/sai |
 | Roadmap cùng script, B18 | blob 06e97d3685f0dbfb5ef80082622eda185a5dfe7d; 8 display / 118 inline | ứng viên có 10 display / 160 inline, thêm mô hình hai người gặp nhau và sửa D6 | Khóa số lượng không phân biệt thêm đúng/sai |
