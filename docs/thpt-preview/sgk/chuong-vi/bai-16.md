@@ -185,7 +185,7 @@
 
     **Bước 3 — kết luận và tự kiểm.** Vậy \(y=-2(x-1)^2+2=-2x^2+4x\). Thay lại \(x=0\) được \(y=0\), đúng với điểm \(A\). Thêm nữa, \(f(2)=0=f(0)\), nên hai điểm \((0;0)\) và \((2;0)\) đối xứng nhau qua trục \(x=1\); hệ số âm cho biết parabol mở xuống và đỉnh là điểm cao nhất.
 
-    **Giới hạn cần nhớ:** Chỉ biết đỉnh \(I(1;2)\) thì vẫn có vô số parabol \(y=a(x-1)^2+2\) với \(a\ne0\). Ta cần thêm một điểm **có hoành độ khác 1** để tìm duy nhất \(a\). Nếu điểm bổ sung cũng có hoành độ \(x=1\), nó không xác định được độ mở; nếu tung độ của nó khác 2 thì dữ kiện còn mâu thuẫn. Đây là cách tự kiểm xem đề bài có đủ thông tin hay không.
+    **Giới hạn cần nhớ:** Chỉ biết đỉnh \(I(1;2)\) thì vẫn có vô số parabol \(y=a(x-1)^2+2\) với \(a\ne0\). Ta cần thêm một điểm **có hoành độ khác 1** để xác định \(a\), rồi phải kiểm \(a\ne0\). Nếu điểm bổ sung có hoành độ khác 1 nhưng tung độ vẫn bằng 2, phép tính cho \(a=0\) nên **không có hàm bậc hai** thỏa đề. Nếu điểm bổ sung cũng có hoành độ \(x=1\), nó không xác định được độ mở; nếu tung độ của nó khác 2 thì dữ kiện còn mâu thuẫn. Đây là cách tự kiểm xem đề bài có đủ thông tin hay không.
 
 
 === "Ví dụ"
