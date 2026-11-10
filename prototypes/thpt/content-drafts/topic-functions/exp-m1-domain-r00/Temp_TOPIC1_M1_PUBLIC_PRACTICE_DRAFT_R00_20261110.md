@@ -4,22 +4,6 @@
 
 ## Nhóm A · Hiểu khái niệm trước khi tính
 
-### DRAFT-T1-M1-APP01 · Một đầu vào có thể xuất hiện hai lần?
-
-Bảng sau ghi lại các cặp \((x,y)\) của một quy tắc.
-
-| x | 0 | 2 | 2 | 4 |
-|---|---:|---:|---:|---:|
-| y | 1 | 5 | 5 | 9 |
-
-Bảng có thể biểu diễn một hàm số theo \(x\) không? Nếu thay một số 5 ở cột \(x=2\) thành 7, câu trả lời thay đổi ra sao?
-
-<details><summary>Đối chiếu</summary>
-
-Bảng ban đầu **có thể** biểu diễn hàm số: cùng \(x=2\) luôn cho \(y=5\), và các đầu vào còn lại cũng chỉ có một đầu ra. Sau khi thay một giá trị thành 7, đầu vào 2 vừa cho 5 vừa cho 7 nên bảng mới **không thể** là bảng giá trị của một hàm số \(y\) theo \(x\). Không được kết luận rằng hai đầu vào khác nhau phải có hai đầu ra khác nhau.
-
-</details>
-
 ### DRAFT-T1-M1-APP02 · Rút gọn rồi có được nhận điểm bị loại?
 
 Cho \(f(x)=\dfrac{x^2-1}{x-1}\). Một bạn rút gọn thành \(x+1\), rồi khẳng định tập xác định là \(\mathbb R\). Em hãy phản biện và nêu điều gì đúng, điều gì sai trong lời giải ấy.
@@ -29,18 +13,6 @@ Cho \(f(x)=\dfrac{x^2-1}{x-1}\). Một bạn rút gọn thành \(x+1\), rồi kh
 Từ biểu thức **ban đầu**, mẫu số \(x-1\) yêu cầu \(x\ne1\). Trên miền ấy, \(\dfrac{(x-1)(x+1)}{x-1}=x+1\). Nhưng phép rút gọn chỉ hợp lệ khi \(x-1\ne0\), nên tập xác định của \(f\) vẫn là \(\mathbb R\setminus\{1\}\). Biểu thức mới \(x+1\), nếu được định nghĩa riêng, có miền rộng hơn; nó không tự làm thay đổi miền ban đầu của \(f\).
 
 </details>
-
-### DRAFT-T1-M1-APP04 · Công thức toán và điều kiện thực tế
-
-Một cửa hàng thu 8 nghìn đồng phí xử lý đơn và 12 nghìn đồng cho mỗi vé. Mỗi đơn phải có ít nhất một vé và tối đa 6 vé, chỉ nhận số vé nguyên. Viết tập xác định và tập giá trị của \(C(n)=8+12n\). Có được thay \(n=2{,}5\) để dự báo chi phí mua 2,5 vé hay không?
-
-<details><summary>Đối chiếu</summary>
-
-\(D=\{1,2,3,4,5,6\}\); \(T=\{20,32,44,56,68,80\}\) (nghìn đồng). Về đại số tính \(C(2{,}5)=38\) được, nhưng đầu vào đó **không thuộc bài toán** đã mô tả nên không dùng làm câu trả lời thực tế.
-
-</details>
-
-## Nhóm B · Kết hợp điều kiện, miền và đồ thị
 
 ### DRAFT-T1-M1-APP05 · Đọc đúng điểm biên và điểm loại
 
@@ -121,12 +93,10 @@ T_f=[0,+\infty)\setminus\{\sqrt2\}.
 
 | DRAFT ID | Mức | Outcome candidate | Vai trò đề xuất |
 |---|---|---|---|
-| APP01 | nhận biết | quy tắc đơn trị, bảng giá trị | TOPIC_PRACTICE |
 | APP02 | thông hiểu | rút gọn phân thức không phục hồi điểm loại | TOPIC_PRACTICE |
-| APP04 | vận dụng | miền gắn bối cảnh thực tế | TOPIC_PRACTICE |
 | APP05–06 | vận dụng | giao nhiều điều kiện, điểm biên | TOPIC_PRACTICE |
 | WR01–WR02 | giải thích | biện luận điều kiện, giới hạn kết luận | TOPIC_PRACTICE / WRITTEN candidate |
 
 **Q15:** Trước khi đăng ký item phải đối chiếu các câu đã có trong R18, mã nguồn câu canonical SGK và thư viện Written/Anchor. Không được tạo câu mới chỉ để nhân bản cùng một câu với ID mới. Nếu trùng, giữ nguyên canonical item, thêm placement/role.
 
-**Q16:** Toàn bộ 7 bài trên là luyện tập công khai, không RD1, không tự ghi Mastery, không hiện đáp án của RD1. **Q18:** SHA/receipt review targeted chưa có, trạng thái HOLD.
+**Q16:** Toàn bộ 5 bài trên là luyện tập công khai, không RD1, không tự ghi Mastery, không hiện đáp án của RD1. **Q18:** SHA/receipt review targeted chưa có, trạng thái HOLD.
