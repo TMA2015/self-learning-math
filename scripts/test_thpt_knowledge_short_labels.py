@@ -36,6 +36,10 @@ sample = """
         Đây là lời giải.
     ??? note "Mở lời giải"
         Đây là ví dụ mẫu.
+    ??? question "Tự mở kết quả sau khi đã thử"
+        Lời giải chỉ mở khi người học chọn.
+    ??? question "Kiến thức mở rộng: tâm sai"
+        Đây là tiêu đề khái niệm, không phải lời giải.
     ??? question "Luyện tập mở rộng và chuyên sâu"
         Không phải câu cần đổi nhãn.
     **Em vận dụng.** Hãy tính toán.
@@ -45,9 +49,10 @@ sample = """
 """
 
 rendered = run(sample, lesson)
-assert rendered.count("Đối chiếu") == 5, rendered
+assert rendered.count("Đối chiếu") == 6, rendered
 assert '<summary>Đối chiếu</summary>' in rendered
 assert '??? note "Lời giải"' in rendered
+assert '??? question "Kiến thức mở rộng: tâm sai"' in rendered
 assert '??? question "Luyện tập mở rộng và chuyên sâu"' in rendered
 assert "**Vận dụng.**" in rendered
 assert "**Vận dụng — giao và hợp.**" in rendered
@@ -77,4 +82,4 @@ assert run(sample, "thpt-preview/chuyen-de/ham-so/kien-thuc.md") == rendered
 
 # Idempotence matters for multiple MkDocs build variants and source-lock QA.
 assert module._short_thpt_knowledge_labels(rendered) == rendered
-print("PASS short THPT Knowledge headings: five reveals, Vận dụng, scope & Q16 boundaries")
+print("PASS short THPT Knowledge headings: six reveals (including mở kết quả), Vận dụng, scope & Q16 boundaries")
