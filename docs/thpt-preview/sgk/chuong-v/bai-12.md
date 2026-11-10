@@ -105,9 +105,7 @@
 
 
 
-    **SGK KNTT Toán 10 Tập Một trang in 78–83; SBT trang in 74–77.** Giữ nguyên hình D5  về tứ phân vị, theo đúng quy ước n lẻ loại Q2 của SGK KNTT. Nội dung  này phải đặt trước công thức/Core , giữ nguyên 9 ví dụ D2 và 27 câu public  đã PASS.
-
-    ### Kiến thức SGK
+        ### Kiến thức SGK
 
     ### Đúng/gần đúng và số quy tròn
     Theo kí hiệu SGK/SBT KNTT, **\(a\) là số gần đúng**, còn **\(\bar a\) là số đúng** (có thể chưa biết). Số gần đúng \(a\) thay cho số đúng \(\bar a\); viết \(a\approx\bar a\). Không phải mọi chữ số thập phân được hiển thị đều là chữ số đáng tin cậy; độ chính xác phụ thuộc phép đo/quy trình. Làm tròn một giá trị theo hàng yêu cầu để có số quy tròn. Quy tròn tới hàng phần mười, phần trăm, hàng chục… phải xác định rõ hàng làm tròn.
@@ -130,13 +128,13 @@
 
     Trước khi xem lời giải, hãy xác định dữ kiện, điều phải tìm và lý do chọn cách giải. Sau đó kiểm tra lại điều kiện áp dụng và kết quả, thay vì chỉ nhìn phép tính cuối cùng.
 
-    ### Ví dụ 1. phân biệt sai số thực / ước lượng
+    ### Ví dụ 1. Phân biệt sai số thực và độ chính xác
     Biết số đúng \(\bar a=12{,}347\), số gần đúng \(a=12{,}35\). \(\Delta_a=0{,}003\), \(\delta_a=0{,}003/12{,}35\approx0{,}0243\%\). Phải dùng **12,35 ở mẫu số** theo SGK KNTT. Nếu chỉ biết \(\Delta_a\le0{,}003\) thì chỉ có cận \(\delta_a\le0{,}003/12{,}35\).
 
-    ### Ví dụ 2. giới hạn sai số
+    ### Ví dụ 2. Giới hạn sai số
     Ghi chiều dài gần đúng \(a=20{,}0\,\mathrm{cm}\) với độ chính xác \(d=0{,}1\,\mathrm{cm}\). Số đúng \(\bar a\in[19{,}9;20{,}1]\,\mathrm{cm}\). Không xác định được chính xác \(\Delta\) nếu không biết giá trị đúng.
 
-    ### Ví dụ 3. quy tròn
+    ### Ví dụ 3. Quy tròn
     Làm tròn \(3{,}14159\) tới hàng phần trăm được \(3{,}14\). Sai số tuyệt đối của phép làm tròn \(0{,}00159\le0{,}005\). Nói rõ hàng phần trăm là 2 chữ số thập phân.
 
 === "Lỗi thường gặp"
