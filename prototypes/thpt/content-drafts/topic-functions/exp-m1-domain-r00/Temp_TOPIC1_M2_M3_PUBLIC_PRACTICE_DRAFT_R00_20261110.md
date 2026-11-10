@@ -58,13 +58,13 @@ Cho \(f(x)=(x-1)^2-4\). Hãy tính \(|f(-2)|\) và \(f(|-2|)\); giải thích t�
 
 </details>
 
-### DRAFT-T1-M3-APP07 — Số giao điểm với trục Ox sau biến đổi
+### DRAFT-T1-M3-APP07 — Nghiệm âm có được đưa vào |x|?
 
-Với \(f(x)=x^2-4x+3\), hãy tìm nghiệm của \(|f(x)|=0\) và của \(f(|x|)=0\). Vì sao số nghiệm có thể khác nhau?
+Cho \(f(x)=x^2+2x-3\). Hãy giải \(|f(x)|=0\) và \(f(|x|)=0\). Khi đặt \(u=|x|\), vì sao phải kiểm tra \(u\ge0\) trước khi suy ra \(x\)?
 
 <details><summary>Đối chiếu</summary>
 
-\(|f(x)|=0\) tương đương \(f(x)=0\), nên \(x=1\) hoặc \(x=3\): **hai nghiệm**. Với \(f(|x|)=0\), đặt \(u=|x|\ge0\). Khi ấy \(u^2-4u+3=(u-1)(u-3)=0\), suy ra \(|x|=1\) hoặc \(|x|=3\), nên \(x=\pm1,\pm3\): **bốn nghiệm**. Đồ thị \(f(|x|)\) sao đối xứng các giao điểm thuộc nửa \(x\ge0\) sang nửa trái.
+\(|f(x)|=0\iff f(x)=0\iff (x-1)(x+3)=0\), nên \(x=1\) hoặc \(x=-3\). Với \(f(|x|)=0\), đặt \(u=|x|\ge0\); ta có \(u^2+2u-3=(u-1)(u+3)=0\). Nghiệm \(u=-3\) **không thể** bằng \(|x|\), nên chỉ còn \(u=1\), tức \(x=\pm1\). Không phản chiếu nghiệm âm \(x=-3\) của hàm gốc rồi kết luận sai \(x=\pm3\).
 
 </details>
 
