@@ -57,7 +57,7 @@
         <p><strong>Bước 3:</strong> Thử trường hợp nhỏ: hai ô 1,2 và một đồng xu cho bốn cặp (1,N),(1,S),(2,N),(2,S).</p>
         <p><strong>Bước 4:</strong> Trở lại bảng 3×2; tự điền từng ô rồi mới mở lời giải của Tự thử để đối chiếu.</p>
         <p><strong>Bước 5:</strong> Luyện đúng kỹ năng mô tả Ω với câu luyện tập liên quan; giữ kết quả hoàn chỉnh trước khi đếm.</p>
-        <p><strong>Nơi luyện tiếp:</strong> `THPT-G10-B26-C01` — đường học SGK B26, Core/Luyện tập đã có trong phần Luyện tập; câu mới chỉ là câu tự đối chiếu, không tính điểm thành thạo.</p>
+        <p><strong>Luyện tiếp:</strong> <a href="../luyen-tap/?item=THPT-G10-B26-C01">Mở câu luyện cùng kiến thức</a>. Nếu đã xem lời giải, hãy chọn thêm câu khác để tự làm không có gợi ý.</p>
 
 
 
@@ -94,7 +94,7 @@
         <p><strong>Bước 3:</strong> Thử trên các số 1 đến 4: tập số nguyên tố chỉ là {2,3}, không gồm 1.</p>
         <p><strong>Bước 4:</strong> Gạch chân từng số nguyên tố trong Ω bảy phần tử, kiểm đã đếm đúng bốn kết quả rồi tự mở đối chiếu.</p>
         <p><strong>Bước 5:</strong> Luyện tiếp đã có THPT-G10-B26-P02 để phân biệt Ω và biến cố trong phép thử nhiều bước.</p>
-        <p><strong>Nơi luyện tiếp:</strong> `THPT-G10-B26-P02` — đường học SGK B26, Core/Luyện tập đã có trong phần Luyện tập; câu mới chỉ là câu tự đối chiếu, không tính điểm thành thạo.</p>
+        <p><strong>Luyện tiếp:</strong> <a href="../luyen-tap/?item=THPT-G10-B26-P02">Mở câu luyện cùng kiến thức</a>. Nếu đã xem lời giải, hãy chọn thêm câu khác để tự làm không có gợi ý.</p>
 
 
 
@@ -131,7 +131,7 @@
         <p><strong>Bước 3:</strong> Thử ba thẻ X₁, X₂, Y₁ chọn đều: xác suất X là 2/3 chứ không phải 1/2.</p>
         <p><strong>Bước 4:</strong> Với 10 thẻ, đếm bốn X trên tổng mười; mở lời giải khi đã tự chọn Ω và n(A).</p>
         <p><strong>Bước 5:</strong> Ôn đã có THPT-G10-B26-C02 (vòng quay có nhãn màu lặp) để luyện chọn đúng kết quả sơ cấp.</p>
-        <p><strong>Nơi luyện tiếp:</strong> `THPT-G10-B26-C02` — đường học SGK B26, Core/Luyện tập đã có trong phần Luyện tập; câu mới chỉ là câu tự đối chiếu, không tính điểm thành thạo.</p>
+        <p><strong>Luyện tiếp:</strong> <a href="../luyen-tap/?item=THPT-G10-B26-C02">Mở câu luyện cùng kiến thức</a>. Nếu đã xem lời giải, hãy chọn thêm câu khác để tự làm không có gợi ý.</p>
 
 
 
@@ -168,7 +168,7 @@
         <p><strong>Bước 3:</strong> Trên Ω={1,…,6}, nhóm bội 3 là {3,6}; phần không chia hết có 4 phần tử.</p>
         <p><strong>Bước 4:</strong> Liệt kê bốn bội 3 trong 1–12, trừ khỏi tổng; chỉ sau đó mở lời giải Tự thử.</p>
         <p><strong>Bước 5:</strong> luyện câu liên quan trong phần Luyện tập để củng cố phép tính biến cố đối.</p>
-        <p><strong>Nơi luyện tiếp:</strong> `THPT-G10-B26-P01` — đường học SGK B26, Core/Luyện tập đã có trong phần Luyện tập; câu mới chỉ là câu tự đối chiếu, không tính điểm thành thạo.</p>
+        <p><strong>Luyện tiếp:</strong> <a href="../luyen-tap/?item=THPT-G10-B26-P01">Mở câu luyện cùng kiến thức</a>. Nếu đã xem lời giải, hãy chọn thêm câu khác để tự làm không có gợi ý.</p>
 
 
 
@@ -205,7 +205,7 @@
         <p><strong>Bước 3:</strong> Xét thuật toán khác: chọn A với xác suất 1/2, B và C mỗi cái 1/4; vẫn ngẫu nhiên nhưng không đều.</p>
         <p><strong>Bước 4:</strong> Trở lại (a) tìm giả thiết đồng khả năng còn thiếu; với (b) nêu 200 vé đồng khả năng, đúng một kết quả thuận lợi, soát <span class="arithmatex">\(1/200&gt;0\)</span>, rồi tự mở đối chiếu.</p>
         <p><strong>Bước 5:</strong> Ôn đã có THPT-G10-B26-P05 để luyện phát hiện giả thiết đồng khả năng còn thiếu.</p>
-        <p><strong>Nơi luyện tiếp:</strong> `THPT-G10-B26-P05` — đường học SGK B26, Core/Luyện tập đã có trong phần Luyện tập; câu mới chỉ là câu tự đối chiếu, không tính điểm thành thạo.</p>
+        <p><strong>Luyện tiếp:</strong> <a href="../luyen-tap/?item=THPT-G10-B26-P05">Mở câu luyện cùng kiến thức</a>. Nếu đã xem lời giải, hãy chọn thêm câu khác để tự làm không có gợi ý.</p>
 
 
     ### Kiến thức SGK — khái niệm và điều kiện
@@ -223,7 +223,7 @@
 
     ### 26.2. Biến cố là tập con của Ω
 
-    Một **biến cố A** được biểu diễn bằng tập những kết quả làm A xảy ra, nên A⊆Ω. Ví dụ với Ω={1,2,3,4,5,6}, biến cố “xuất hiện số lớn hơn 4” là A={5,6}; biến cố không thể là ∅, biến cố chắc chắn là Ω. Học sinh phải phân biệt phát biểu bằng lời với tập kết quả thuận lợi và tránh đếm trùng.
+    Một **biến cố A** được biểu diễn bằng tập những kết quả làm A xảy ra, nên A⊆Ω. Ví dụ với Ω={1,2,3,4,5,6}, biến cố “xuất hiện số lớn hơn 4” là A={5,6}; biến cố không thể là ∅, biến cố chắc chắn là Ω. Em cần phân biệt cách nói về biến cố với tập các kết quả thuận lợi, đồng thời tránh đếm trùng.
 
     ### 26.3. Biến cố đối
 
