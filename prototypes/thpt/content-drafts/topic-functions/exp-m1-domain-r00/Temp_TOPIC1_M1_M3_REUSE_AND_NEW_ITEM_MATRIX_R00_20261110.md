@@ -31,7 +31,7 @@
 | \`DRAFT-T1-M1-APP06\` | O02 | ba ràng buộc căn/mẫu | so item gốc |
 | \`DRAFT-T1-M1-APP07\` | O02/O09 | tập giá trị trên đoạn không chứa đỉnh \([-1,1]\) | khác ví dụ M1, vẫn so bank trước canonical |
 | \`DRAFT-T1-M1-WR01\` | O02 | phản biện căn ở mẫu, rubric lý do | so Written đã có |
-| \`DRAFT-T1-M1-WR02\` | O02 | phản biện kết luận miền/bình phương | so Written đã có |
+| \`DRAFT-T1-M1-WR02\` | O01/O02 | miền đầu vào số nguyên rời rạc, đầu ra trùng và tập giá trị không nhân bản | so Written đã có |
 | \`DRAFT-T1-M2-APP04\` | O03 | dữ liệu đo vs nội suy | so \`THPT-G10-TOP-FUNC-P01\` |
 | \`DRAFT-T1-M2-APP05\` | O05 | đổi điều kiện trong hàm từng đoạn | so \`THPT-G10-B15-P02\` |
 | \`DRAFT-T1-M2-APP06\` | O04/O05 | **hai nhánh đều tăng nhưng cả hàm không tăng do bước nhảy xuống** | so O04/O05 |
@@ -42,7 +42,7 @@
 | \`DRAFT-T1-M3-APP09\` | O09 | tối ưu trên **hai đoạn rời** | so \`THPT-G10-TOP-FUNC-P05\` |
 | \`DRAFT-T1-M3-WR02\` | **extension M3/O08** | chứng minh khác nhau giữa \(|f|\) và \(f(|x|)\) | so Written hiện có; targeted review |
 
-**Phân loại thận trọng:** 18 DRAFT ID chỉ là *candidates*. Các bài ghi HIGH không được chuyển thành câu mới canonical chỉ vì có mã riêng. Tác giả/reviewer cần quyết định: (i) dùng lại item gốc; (ii) giữ dạng Vận dụng trong Kiến thức mà không đăng ký item Luyện tập; (iii) cho phép một **item mới khác thực sự** khi có lý do chiều sâu và bằng chứng nguồn.
+**Phân loại thận trọng:** 17 DRAFT ID chỉ là *candidates*. Các bài ghi HIGH không được chuyển thành câu mới canonical chỉ vì có mã riêng. Tác giả/reviewer cần quyết định: (i) dùng lại item gốc; (ii) giữ dạng Vận dụng trong Kiến thức mà không đăng ký item Luyện tập; (iii) cho phép một **item mới khác thực sự** khi có lý do chiều sâu và bằng chứng nguồn.
 
 ## III. Trước review/CONTENT_READY
 
