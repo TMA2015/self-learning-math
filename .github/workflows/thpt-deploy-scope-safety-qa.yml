@@ -25,8 +25,8 @@ jobs:
           node - <<'NODE'
           const fs=require('node:fs'),assert=require('node:assert/strict');
           const w=fs.readFileSync('.github/workflows/deploy.yml','utf8');
-          assert(w.includes('BEFORE_SHA: ${{ github.event.before }}'),'Full main push base required');
-          assert(w.includes('HEAD_SHA: ${{ github.sha }}'),'Full main push head required');
+          assert(/BEFORE_SHA:\s*\$\{\{\s*github\.event\.before\s*\}\}/.test(w),'Full main push base required');
+          assert(/HEAD_SHA:\s*\$\{\{\s*github\.sha\s*\}\}/.test(w),'Full main push head required');
           assert(w.includes("if: needs.release-scope.outputs.deploy == 'true'"),'No unscoped automatic publish');
           for(const s of ['scripts/test-thpt-release-queue.cjs','scripts/test-thpt-g10-chvi-full-r04-release.cjs',
             'scripts/test-thpt-g10-chiv-full-r04-release.cjs','scripts/test-thpt-g12-chvi-release-source.cjs',
