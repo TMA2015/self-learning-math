@@ -35,6 +35,11 @@ check(16,"vertex/roots",["f(x)=(x-1)^2-4","I(1;-4)","(3;0)"],()=>{
  const f=x=>(x-1)**2-4;
  return f(1)===-4&&f(-1)===0&&f(3)===0&&[-2,0,1,3,7].every(x=>f(x)>=-4);
 });
+check(16,"S1 quadratic value table and symmetric point pairs",["Bảng giá trị giúp em kiểm tra","f(x)=x^2-4x+3","<td>3</td><td>0</td><td>−1</td><td>0</td><td>3</td>"],()=>{
+ const f=x=>x*x-4*x+3;
+ const ys=[0,1,2,3,4].map(f);
+ return JSON.stringify(ys)===JSON.stringify([3,0,-1,0,3])&&f(0)===f(4)&&f(1)===f(3)&&f(2)===-1;
+});
 check(16,"projectile maximum within physical domain",["h(t)=19{,}6t-4{,}9t^2","0\\le t\\le4"],()=>{
  const h=t=>19.6*t-4.9*t*t;
  return eq(h(0),0)&&eq(h(4),0)&&eq(h(2),19.6)&&[0,1,2,3,4].every(t=>h(t)<=19.6);
