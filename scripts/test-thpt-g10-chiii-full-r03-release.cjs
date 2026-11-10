@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 "use strict";
+const {expectedG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 /* UX795 G10 ChIII: approved four-tab Delta C learner presentation.
  * The original source/AUTHORING receipts remain historical, immutable;
  * revised Knowledge requires new exact Git snapshots and Q01–Q18 gates.
@@ -16,7 +17,7 @@ const lessons=[
 const all=[];
 for(const c of lessons){
  const p="docs/thpt-preview/sgk/chuong-iii/bai-"+c.n+".md",txt=read(p);
- assert.equal(sha1(txt),c.sha,"B"+c.n+": exact Delta C source changed; lock Q18 receipt before accepting");
+ assert.equal(sha1(txt),expectedG10KnowledgeBlob(c.n,c.sha),"B"+c.n+": exact Delta C source changed; lock Q18 receipt before accepting");
  assert.deepEqual([...txt.matchAll(/^=== "([^"]+)"$/gm)].map(x=>x[1]),labels,
   "B"+c.n+": four L1 tabs, no nested L2 tabs");
  assert(!/^    === "/m.test(txt),"B"+c.n+": no Level 2 tabs during Phase 1");
