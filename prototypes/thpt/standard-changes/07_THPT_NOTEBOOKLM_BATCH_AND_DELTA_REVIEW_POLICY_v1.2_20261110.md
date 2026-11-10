@@ -12,12 +12,14 @@
 ## I. Quy mô review theo giai đoạn
 
 - **Chưa nghiệm thu Golden UI:** Review đơn lẻ từng bài hoặc chuyên đề mẫu để xác nhận kiến trúc học, trình bày, tương tác và học thuật.
-- **Sau khi nghiệm thu Golden UI:** Mặc định tổ chức review theo **cụm bài cùng chương**, hoặc **cả chương** nếu khối lượng vừa phải và NotebookLM có thể kiểm tra đầy đủ từng outcome và từng item.
-- Không bắt buộc một số bài cứng. Với chương lớn, chia thành các cụm có nội dung liên quan (thường khoảng 3–5 bài, tùy số lượng câu, đồ thị và độ phức tạp); với chương ngắn, có thể review toàn chương.
-- Chuyên đề xuyên lớp cần review theo các cụm kiến thức tự đủ, có liên kết tiền đề rõ. Một bài mẫu PASS không chứng minh toàn bộ chuyên đề/chương PASS.
+- **Đơn vị công việc AUTHORING theo định hướng mới:** mặc định **biên soạn và kiểm trọn một phần (Kiến thức / Luyện tập / Tự kiểm tra) của chuyên đề, hoặc trọn chuyên đề**; với SGK là trọn chương/cụm bài tự đủ nếu thật sự quá dài. Chỉ review **sau khi nội dung của đơn vị đó đã được soạn, tự kiểm toán toán/PED và sửa nhất quán**, không gửi lẻ một đoạn/một hình rồi phát sinh nhiều checkpoint.
+- **Quy mô review** có thể là toàn đơn vị; chỉ chia thành batch kỹ thuật nếu nguồn quá dài để reviewer xét đủ từng outcome/item. Khi chia, bắt buộc ma trận coverage toàn đơn vị và chốt một verdict/handoff ở mức phần/chuyên đề; **không có mặc định quota 3–5 bài, không nhân bản nguồn chính, không suy PASS từng batch thành PASS toàn phần**.
+- **Chuyên đề xuyên lớp** phải dẫn kiến thức liền mạch, tự đủ trong ba phần. Sử dụng diễn đạt và ý tưởng hình của Notebook/Gemini có chọn lọc, kiểm nội dung sai/thiếu trước khi dùng; đây là nguồn biên tập, không đồng nghĩa đã có reviewer Academic/PED PASS.
 - Mỗi batch phải cung cấp danh mục `LESSON_ID`, `OUTCOME_ID`, `ITEM_ID`, đáp án, lời giải, nguồn SGK/SBT và phạm vi bài/chương. NotebookLM phải trả verdict theo **từng bài, từng outcome và từng item**, đồng thời đối chiếu số mục đã review/thiếu/lặp.
 
 ## II. Quyền chủ động sửa sau khi nhận NotebookLM review
+
+**Trải nghiệm tự học được đánh giá trên dòng đọc thật:** WHY, tiền đề, bản chất, suy luận, Tự thử/D6 là các yêu cầu chất lượng **ẩn trong lời dẫn tự nhiên**, không bắt buộc ghi thành bảy heading/card Markdown. Không dùng biểu thức FNV/hash/số công thức của snapshot cũ để chấm ứng viên Model B; nhưng vẫn kiểm điều kiện toán thật, nguồn S1, Q15/Q16 và reviewer đúng mode Q18. Việc chuyển và thử hệ thống Model B thuộc RELEASE, không yêu cầu AUTHORING viết lại theo cấu trúc Markdown cũ.
 
 Đánh giá **rủi ro thực chất**, không dựa vào số dòng sửa hoặc chỉ tên P0/P1/P2.
 
@@ -34,7 +36,7 @@ Nếu NotebookLM đã chỉ định một sửa đổi **đơn trị, có căn c
 
 ## III. Nhật ký sửa đổi và các cổng nghiệm thu
 
-Ghi gọn trong PR/checkpoint sau mỗi đợt sửa:
+Ghi gọn trong **một PR/checkpoint cho cả đơn vị học liệu** khi QA/review đến mốc cần lưu; không tạo file/biên bản mới cho từng sửa câu, hình hoặc nhãn:
 
 - `BASE_ACADEMIC_PACKET` và verdict; `CHANGESET_COMMIT`; `AFFECTED_LESSON_IDS` và `AFFECTED_ITEM_IDS`.
 - `DELTA_CLASS`, mô tả thay đổi, chứng cứ SGK/reviewer; đánh dấu có/không đổi ý nghĩa toán, đáp án/rubric, mục tiêu.
