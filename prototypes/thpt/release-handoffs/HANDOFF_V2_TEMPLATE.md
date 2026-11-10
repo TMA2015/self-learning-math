@@ -2,6 +2,8 @@
 
 **Important:** This is a template only; never mark this document CONTENT_READY, never select it as NotebookLM source, and never place it in `release-queue/ready/`. Fill all concrete evidence in a separate chapter-specific file under `release-handoffs/`.
 
+**Student-first workflow:** Complete and actually audit one coherent SGK chapter or one whole Topic section/full Topic **before** filling this V2 handoff. This file is metadata for cross-lane intake, never learner-facing content. Model B uses natural prose with meaningful mathematics-first section breaks; there is **no requirement** to expose seven WHY/PED headings or reproduce old Markdown structure. Math/source/reviewer evidence belongs to AUTHORING; compatibility with rendered Model B and conversion of historical-only release tests belong to RELEASE. Do not generate another handoff merely because an author fixes a phrase or diagram.
+
 PACKET_ID: REPLACE_WITH_REAL_PACKET_ID
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: REPLACE_WITH_EFFECTIVE_STANDARD_VERSION
@@ -66,3 +68,5 @@ Author signoff after completing a **whole unit of learning** (SGK chapter or Top
 
 ## RELEASE_ACCEPTANCE
 Release must validate this against the canonical `ready/PACKET_ID.md` and run live learner/technical QA; this document alone is NOT CONTENT_READY and never grants release permission.
+
+**Design/test alignment:** On a Model B release candidate, do not demand old `## 1. Kiến thức SGK`, `## 2. Ví dụ`, fixed PED labels, FNV or formula counts as proof of good teaching. Such checks may remain scoped to the historical source snapshot only. RELEASE owns a coordinated workflow migration to verify mathematics/S1, meaningful explanation, the actual rendered user journey, protected assessment, Firebase/learner data and actual device QA. Report back to AUTHORING only a real content/source defect tied to lesson/outcome and evidence, not a technical Markdown-test contradiction.
