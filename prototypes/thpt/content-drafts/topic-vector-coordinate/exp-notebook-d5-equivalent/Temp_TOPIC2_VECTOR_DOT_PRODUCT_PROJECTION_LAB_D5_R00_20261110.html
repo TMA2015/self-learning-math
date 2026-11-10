@@ -30,7 +30,7 @@
 <div class="d5-actions"><button type="button" data-a="0">Cùng hướng · 0°</button><button type="button" data-a="90">Vuông góc · 90°</button><button type="button" data-a="180">Ngược hướng · 180°</button><button type="button" id="reset">Đặt lại</button></div>
 <div class="d5-stage"><canvas id="vectors" role="img" aria-label="Hai vectơ cùng gốc O: u xanh dương nằm ngang, v xanh lá quay được. Đường nét đứt biểu diễn hình chiếu vuông góc. Hình bình hành của tổng vectơ có nét mờ. Giá trị số được ghi ở bên dưới."></canvas></div>
 <div id="readout" class="d5-results" role="status" aria-live="polite"></div>
-<p class="d5-note">Hình chiếu có thể nằm phía **trái O** khi góc tù: độ dài hình chiếu có hướng \(|v|\cos α\) lúc đó là số âm. Đường chéo hình bình hành biểu diễn tổng vectơ u + v, nhưng <strong>không</strong> phải tích vô hướng. Dùng thanh trượt nếu không muốn kéo các điểm trên màn hình cảm ứng.</p>
+<p class="d5-note">Hình chiếu có thể nằm phía <strong>trái O</strong> khi góc tù: độ dài hình chiếu có hướng \(|v|\cos α\) lúc đó là số âm. Đường chéo hình bình hành biểu diễn tổng vectơ u + v, nhưng <strong>không</strong> phải tích vô hướng. Dùng thanh trượt nếu không muốn kéo các điểm trên màn hình cảm ứng.</p>
 <p class="d5-note">Hoạt động trong phần Kiến thức/Vận dụng, không chấm điểm hoặc ghi mức thành thạo. Độ dài hai vectơ luôn dương để góc giữa chúng có nghĩa.</p>
 </main></section>
 <script>
@@ -47,7 +47,7 @@ function draw(){
  canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);
  const c=canvas.getContext("2d");c.setTransform(dpr,0,0,dpr,0,0);
  c.fillStyle="#fbfdff";c.fillRect(0,0,w,h);
- const scale=Math.min(w/22,h/10.8,38),ox=w/2,oy=h*0.7;
+ const scale=Math.min(w/26,h/10.8,38),ox=w/2,oy=h*0.7;
  const pt=(x,y)=>[ox+x*scale,oy-y*scale];
  const U=pt(u,0),V=pt(v*Math.cos(a),v*Math.sin(a)),W=pt(u+v*Math.cos(a),v*Math.sin(a)),H=pt(v*Math.cos(a),0),O=pt(0,0);
  geometry={ox,oy,scale,U,V};
