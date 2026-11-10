@@ -53,6 +53,17 @@ function validate(source, agents, queue) {
     !source.includes("OWNER_APPROVED_EFFECTIVE_UPON_GOVERNANCE_MERGE"))fail("OWNER_APPROVAL_RECEIPT_MISSING");
 
  if(version==="2.0.0"){
+   // Fail closed while drafted: V2 READY gate MUST still require independent
+   // Academic/PED source receipts until owner-approved migration is complete.
+   const contract=fs.readFileSync(path.join(ROOT,"prototypes/thpt/THPT_TWO_LANE_SOURCE_LOCKED_HANDOFF_CONTRACT_v2_20261102.md"),"utf8");
+   const gate=fs.readFileSync(path.join(ROOT,"scripts/test-thpt-handoff-gate-v2.cjs"),"utf8");
+   if(!contract.includes("Q18 ENRICHMENT V2.1 PROPOSED") ||
+      !contract.includes("GOVERNANCE_DRAFT_ONLY / STANDARD_CONFLICT_HOLD"))
+       fail("Q18_DRAFT_V2_CONTRACT_NOT_HELD");
+   if(gate.includes("OWNER_SELF_VERIFIED_ENRICHMENT") ||
+      !gate.includes('field(data, "ACADEMIC_VERDICT"), "PASS_ON_LOCKED_SNAPSHOT"') ||
+      !gate.includes('field(data, "PEDAGOGICAL_VERDICT"), "PASS_ON_LOCKED_SNAPSHOT"'))
+       fail("Q18_DRAFT_V2_GATE_PREMATURELY_OPENED");
    // Version 2 is a draft major change. A GREEN schema test does not activate
    // a self-QA route until the owner approves, V2/Source07 are aligned and
    // governance actually merges into main.
