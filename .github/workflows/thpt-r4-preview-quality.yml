@@ -199,7 +199,7 @@ jobs:
     runs-on: ubuntu-latest
     # Full THPT+THCS cross-grade browser regression now exceeds 10 minutes;
     # retain ALL mandatory QA steps and allow source-locked preview completion.
-    timeout-minutes: 25
+    timeout-minutes: 40 # >25m observed 122-step browser QA; preserve every R4 gate
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
