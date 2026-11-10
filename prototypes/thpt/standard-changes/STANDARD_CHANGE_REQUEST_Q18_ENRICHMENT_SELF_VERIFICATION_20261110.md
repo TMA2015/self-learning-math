@@ -1,0 +1,70 @@
+# STANDARD_CHANGE_REQUEST — Q18: tự kiểm chứng có bằng chứng cho cập nhật cách giảng SGK đã nghiệm thu
+
+REQUEST_ID: STANDARD_CHANGE_REQUEST_Q18_ENRICHMENT_SELF_VERIFICATION_20261110
+STANDARD_ID: SLM-THPT-QUALITY-ONE
+BASE_VERSION_IN_MAIN: 1.2.0
+PROPOSED_VERSION: 2.0.0
+CHANGE_CLASS: MAJOR
+OWNER_DIRECTION: 2026-11-10 — không tạo vòng phản biện độc lập lặp lại chỉ vì bổ sung diễn giải/ví dụ/hình có thể tự xác minh; tránh bottleneck G10–G12
+OWNER_APPROVAL_OF_EXACT_AMENDMENT: PENDING
+PROPOSED_SCOPE: SGK_CHAPTER_KNOWLEDGE_G10_G11_G12_ALREADY_APPROVED
+CONFLICT_STATUS_UNTIL_GOVERNANCE_MERGE: STANDARD_CONFLICT_HOLD
+AUTHORING_RESPONSIBILITY: mathematical/pedagogical self-QA + evidence
+RELEASE_RESPONSIBILITY: intake fidelity, UI/assessment safety, final HEAD QA, deploy authorization
+ASSESSMENT_PROTECTION: Q15_Q16_RD1_UNCHANGED
+
+## 1. Vấn đề phải giải quyết
+
+- [PR #797](https://github.com/TMA2015/self-learning-math/pull/797) thay đổi 27 trang **Kiến thức** của SGK Toán 10 đã có nguồn cũ nghiệm thu, theo mẫu 4 tab B; nội dung Core/Luyện tập/Tự kiểm tra và ngân hàng đánh giá bất biến. Ví dụ/hình/lời dẫn mới được thêm ở một số bài; [QA render 27 × 3](https://github.com/TMA2015/self-learning-math/actions/runs/42783520977) SUCCESS, nhưng R4 vẫn FAIL đúng tại khóa SHA nguồn B01 vì Q18 đang yêu cầu Academic/PED verdict độc lập cho mọi thay đổi `DELTA_C`.
+- Chủ dự án ngày 10/11/2026 cho rằng phần bổ sung có thể **tự kiểm chứng tính đúng toán**, không bắt buộc review độc lập để tránh vòng lặp tốn thời gian, đồng thời mong quy trình áp dụng được cho các cải tiến Kiến thức lớp 11–12.
+- Chuẩn đang ở `main` ghi `SLM-THPT-QUALITY-ONE 1.2.0`, Q18 bắt buộc reviewer độc lập và Source 07 v1.1 ghi DELTA_C review affected scope. Đây là **mâu thuẫn giữa quyết định chủ dự án mới và văn bản hiện tại**; phải xử lý bằng thay đổi chuẩn có phiên bản, không đổi SHA test để giả vờ nội dung cũ bất biến.
+
+## 2. Giải pháp đề xuất: hai cơ chế Q18 thuộc MỘT chuẩn, không sinh chuẩn thứ hai
+
+**Chế độ A — `Q18_INDEPENDENT_REVIEW` (giữ mặc định hiện hành)** nếu là học liệu ban đầu chưa nghiệm thu, chương/outcome Core mới, thay định nghĩa/định lý hoặc điều kiện, thay câu hỏi/đáp án/lời giải/rubric có ảnh hưởng đánh giá, thay RD1/Final Submit, nguồn S1 mâu thuẫn, lỗi toán P0/P1 chưa giải quyết, hoặc chưa thể chứng minh thay đổi đủ điều kiện chế độ B. Vẫn NotebookLM độc lập theo phạm vi chịu ảnh hưởng, đúng 5 Permanent Sources v2.1 và S1.
+
+**Chế độ B — `Q18_OWNER_SELF_VERIFIED_ENRICHMENT`** cho **trang Kiến thức SGK đã có snapshot học thuật nghiệm thu trước**, khi chỉ cập nhật cách diễn giải, tổ chức bài, ví dụ minh họa hoặc hình/dữ kiện **tự biên soạn**, mà không thay Core/outcome, định lý, điều kiện tổng quát, bài tập canonical, key/rubric, Q15/Q16, RD1 hay hai hành trình học. Có thể vẫn là `DELTA_C_ACADEMIC_MATERIAL` (không đánh tráo thành DELTA_A hoặc DELTA_B), nhưng **không yêu cầu một lượt NotebookLM/independent reviewer riêng** nếu đủ hồ sơ tự kiểm toán dưới đây và chủ dự án duyệt cơ chế này.
+
+### Hồ sơ bắt buộc chế độ B (một kiểm tra nội bộ gọn, không review lại toàn chương)
+
+1. **Bản gốc được nghiệm thu:** `LESSON_ID`, `OUTCOME_ID`, SGK KNTT S1 (đúng tập/trang in có bằng chứng), `BASELINE_SOURCE_BLOB` và receipt PASS lịch sử. Xác nhận bài mới không làm mất outcome/kiến thức bắt buộc.
+2. **Danh sách thay đổi thực chất:** mỗi đoạn/ví dụ/hình mới có `DELTA_ID`, `LESSON/OUTCOME`, `CHANGE_KIND` và nguyên nhân; phân biệt thuần trình bày với ví dụ toán mới. Không đưa toàn bộ 27 bài vào review lại chỉ do source hash thay đổi.
+3. **Tự kiểm toán toán học:** từng ví dụ mới có giả thiết, phép tính/suy luận, điều kiện, kết luận và cách kiểm ngược (tính lại, phản ví dụ, chương trình/đối chiếu độc lập khi phù hợp). Từng SVG mới có nhãn, tỷ lệ khi cần, đơn vị và phép kiểm gắn với ví dụ; ghi phát hiện/sửa sai. Chứng cứ **thực**, không lấy 81 browser PASS làm toán PASS.
+4. **Kiểm tra sư phạm nội bộ:** giải thích WHY→tiền đề→bản chất→điều kiện→ví dụ→Tự thử/D6 theo từng outcome ảnh hưởng; lưu các trường hợp sai dễ mắc và đường khắc phục. Nếu bài khó tự học hoặc không thể chứng minh đúng S1 thì HOLD đúng đoạn, không tự ký.
+5. **Toàn vẹn kỹ thuật:** `CANDIDATE_SOURCE_BLOB` và asset blob SHA, canonical First Try/HELP/item IDs không mất/nhân đôi, Q15/Q16 Final Submit/RD1/Mastery bất biến, AP1–AP5 và R1–R5 kiểm trên HEAD cuối.
+6. **Ký nhận trung thực:** AUTHORING xuất `SELF_QA_EVIDENCE_RECEIPT` gồm `STANDARD_VERSION`, phạm vi, lesson/outcome/delta ID, baseline + candidate blob SHA, `MATH_SELF_CHECK=PASS`, `PED_SELF_CHECK=PASS`, P0/P1/P2, các ngoại lệ và `OWNER_SELF_VERIFICATION_POLICY`. Đây **không phải** `ACADEMIC_PASS`/`PED_PASS` do reviewer độc lập; không gán nhãn NotebookLM PASS khi không chạy.
+
+Chế độ B phải có **cổng độc lập về kỹ thuật và toàn vẹn do RELEASE kiểm**; không giao RELEASE kết luận tính đúng toán nếu chưa có hồ sơ nội bộ của AUTHORING. Nếu lỗi có nguy cơ sai toán, thiếu S1, thay scope hoặc nghi ngờ lời giải, **hạ cấp sang chế độ A/HOLD đúng bài/outcome**, không cố làm PASS.
+
+## 3. Phạm vi và tính tương thích
+
+- **Có hiệu lực tương lai** cho các cập nhật trang Kiến thức **đã nghiệm thu** lớp 10, 11, 12 sau khi chuẩn được owner duyệt và merge. Không tự áp cho học liệu/chuyên đề ban đầu chưa được nghiệm thu, không cho phép RELEASE tự sửa toán.
+- **Q01–Q17 giữ nguyên:** đúng SGK S1, đủ outcome và lý do học, hình/toán đúng; Q15 canonical ID, Q16 đánh giá/Final Submit/private RD1, Q17 hai hành trình độc lập. Giữ Golden THCS/THPT, Firebase, deep links và dữ liệu học sinh.
+- **Q18 thay đổi có kiểm soát:** bổ sung chế độ B như **ngoại lệ theo hồ sơ có chứng cứ**; source/asset blob SHA + delta log vẫn bắt buộc. Không suy từ `BROWSER_PASS` thành `SELF_QA_PASS`.
+- **Hợp đồng V2/ready/REGISTER:** đề nghị thêm cờ `Q18_VERIFICATION_MODE` và `SELF_QA_EVIDENCE_RECEIPT` cho bản cập nhật Knowledge. `CONTENT_READY` theo chế độ B chỉ hợp lệ sau khi thay đổi chuẩn/hợp đồng được ban hành; trước đó vẫn `BLOCKED_BY_AUTHORING`.
+- **Source 07 v1.1:** bắt buộc ghi rõ phụ lục/sửa phiên bản chính thức để `DELTA_C` chế độ B không còn xung đột với yêu cầu NotebookLM affected-scope. Không âm thầm sửa/giả nhận 5 Permanent Sources v2.1 đã đồng bộ; không thêm nguồn thứ sáu.
+- **Không hồi tố:** các snapshot PASS cũ giữ trạng thái cũ, không review lại toàn bộ vì đổi quy trình. `DELTA_A_UI` và `DELTA_B_SOURCE_EQUIVALENT` tiếp tục theo cách đã nghiệm thu.
+
+## 4. Ca kiểm chứng bắt buộc khi nghiệm thu chuẩn
+
+- **PASS-B:** G10 B02 bổ sung phép ví von hộp `A={2,4}, B={2}`, có chứng minh `2∈A`, `B⊆A`, `B∉A` trong tập đang xét, hình SVG đúng, không đổi key/điều kiện canonical, receipt nguồn và tự kiểm toán đầy đủ.
+- **PASS-B:** G10 B06 bổ sung ví dụ tam giác vuông cân `AB=20√2`, `A=B=45°`, `AC=BC=20`, `CH=10√2`, diện tích `200`; có suy luận, kiểm ngược và hình đúng đơn vị.
+- **HOLD-A:** Ví dụ mới dùng nhầm luật phủ định lượng từ, đảo chiều bất đẳng thức/điều kiện, sai đáp số, thiếu giả thiết hoặc SVG mâu thuẫn đoạn văn.
+- **HOLD-A:** Bất kỳ thay đổi trắc nghiệm chính thức, đáp án/rubric, Core/outcome, ngân hàng RD1, exposure plan, đánh giá Final Submit, thiếu receipt S1 hoặc chưa có baseline Academic/PED PASS.
+- **HOLD-CONFLICT:** Test source SHA cũ không khớp source mới nhưng chưa có `SELF_QA_EVIDENCE_RECEIPT`; KHÔNG cập nhật expected SHA chỉ để xanh CI.
+
+## 5. Kế hoạch migration
+
+1. **GOVERNANCE DRAFT:** mở PR riêng, đề xuất nâng **cùng file chuẩn gốc** `1.2.0 → 2.0.0` (major vì thay cơ chế nghiệm thu Q18); OWNER phê duyệt chính xác hai chế độ, phạm vi và hồ sơ tối thiểu; QA governance exact HEAD rồi merge. Không sửa learning-content PR trong bước này.
+2. **Đồng bộ chính sách/hợp đồng:** cập nhật Source 07 và hợp đồng V2/CI theo cùng quyết định, phiên bản, không tạo chuẩn thứ hai. Nguồn Permanent v2.1 đã cài vào NotebookLM không được tự thay mà phải theo kế hoạch thay nguồn được chủ dự án xác nhận.
+3. **Áp dụng G10 trước:** AUTHORING tự kiểm toán chính các `DELTA_ID` của 27 trang PR #797, 11 SVG và bài toán/ví dụ mới, ghi self-QA receipt theo từng lesson/outcome; 137 First Try + 115 HELP đã có parity, CI browser đã qua. Nếu phát hiện lỗi toán/sư phạm, sửa đúng đoạn và kiểm lại SHA.
+4. **RELEASE:** chỉ sau source receipt hợp lệ mới cập nhật test source-lock theo đúng mode, đồng bộ PR #797 lên main hiện hành (có PR #800/#802), chạy R4/Roadmap/Golden/P2/Q15/Q16 exact HEAD, merge/deploy theo **quyền chủ dự án đã cấp cho G10**. Không xin phát hành lại.
+5. **G11/G12:** áp dụng khi cải tiến bài Kiến thức đã được nghiệm thu; không đặt một quy trình phản biện toàn chương mới. Chương/chuyên đề mới chưa được nghiệm thu vẫn giữ chế độ A cho đến khi chủ dự án quyết định thêm.
+
+## 6. Trạng thái và đề nghị quyết định
+
+**Ghi nhận chủ trương owner:** bỏ vòng reviewer lặp lại đối với cập nhật kiến thức có thể tự kiểm chứng; **không đồng nghĩa** owner đã chấp nhận chính xác chữ nghĩa thay đổi Q18 hoặc miễn mọi trường hợp sai toán.
+
+**STATUS:** `GOVERNANCE_PROPOSAL / STANDARD_CONFLICT_HOLD_UNTIL_OWNER_APPROVAL_AND_MERGE / PR797_RELEASE_HOLD / NO_WEBSITE_DEPLOY`.
+
+**Đề nghị owner quyết định:** chấp thuận bản nâng chuẩn `SLM-THPT-QUALITY-ONE v2.0.0` với hai chế độ Q18 trên, rồi cho phép governance PR merge sau exact-head QA. Quyền phát hành học liệu G10 đã cấp vẫn được bảo lưu với điều kiện kiểm soát mới.
