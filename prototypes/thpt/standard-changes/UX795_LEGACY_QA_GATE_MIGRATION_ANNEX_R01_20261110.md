@@ -44,4 +44,19 @@ Trong Draft PR #797 có scripts/test-ux795-g10-legacy-dual-source-audit.cjs. Wor
 4. Toàn bộ cấu hình chính thức phải fail-closed nếu Q18 chưa có hiệu lực, receipt sai SHA, thiếu bản gốc hoặc ID/key/rubric bất biến không khớp. Không đổi source test trên main khi chưa có owner exact approval.
 5. Chủ dự án đã cho phép phát hành gói G10 **có điều kiện**: sau khi Q18/Source07/V2/CI hợp lệ và mọi gate actual HEAD PASS, RELEASE triển khai đúng scope; không dùng PR Draft để suy ra đã deploy.
 
+## 6. Cách ly phát hành Chuyên đề khỏi xung đột SGK (Q17/Q18 cùng chuẩn)
+
+**Phân biệt blocker theo nguồn:** Q18 Knowledge enrichment của PR #797 liên quan các source snapshot cũ B09/B15 và toàn 27 Knowledge; nó **không** làm mất độc lập Academic/PED PASS đúng snapshot của Topic Hàm số R18 (PR #782) hay Topic Vectơ/tọa độ R02 (PR #793). Theo owner Issue #787, không bắt NotebookLM xét lại nguồn đã PASS chỉ vì metadata/filename/handoff không thay học thuật. Đối với Topic có Delta C mới như PR #801 R10, cần xử lý đúng phần học thuật mới bị ảnh hưởng theo Q18 **đang hiệu lực**, không kế thừa PASS R18 và không được dùng ngoại lệ tự kiểm dành riêng SGK Knowledge.
+
+**Nút thắt V2 có nhánh sửa độc lập:** [PR #799](https://github.com/TMA2015/self-learning-math/pull/799) tiếp nhận đúng TOPIC/FULL_TOPIC_LEARNING_PATH, standard v1.2.0, canonical multi-placement (116 IDs/122 placements Hàm số; 114/114 Vectơ), private RD1 count/hash và public no Mastery. Script phân loại nguồn, workflow Topic V2 intake riêng, version gate chỉ đọc chuẩn Q01–Q18 **đã được duyệt** (không tự nhận v2.0.0 Draft) được staged trong PR #799. Đây là compatibility/QA, không là Academic PASS mới hoặc CONTENT_READY tự động.
+
+**Chuỗi phụ thuộc độc lập:**
+
+1. **Topic intake:** PR #799 đạt exact-head QA rồi được owner cho phép hợp nhất code-compat; AUTHORING mới chuyển handoff qua ready/REGISTER đúng V2. **Không cần đợi PR #804** self-QA SGK Knowledge có hiệu lực vì Topic mới sử dụng Q18 independent hiện hành.
+2. **SGK Knowledge upgrade:** PR #804 cần chấp thuận chuẩn chính xác, Source 07/V2/CI migration và receipt theo outcome; sau đó PR #797 mới đóng gate R4/Roadmap. Không chuyển quyền Q18 self-QA sang Topic.
+3. **Shared runtime/site:** cả hai phải chạy Q15/Q16/RD1/Final Submit/Golden/AP/P2 và source SHA; Topic có đúng ba trang, không Core thứ tư. Metadata Q18/source PASS của Topic không có nghĩa tính năng đánh giá chính thức đã hoạt động.
+4. Production deploy.yml chạy trên **mọi push main**, kể cả code-only. Không tự merge các PR vận hành/học liệu khi chưa đủ cổng và quyền chủ dự án, tránh deploy ngoài ý muốn. Nếu muốn merge code-only không phát hành phải có giải pháp deploy-trigger được owner duyệt riêng.
+
+Không đóng HOLD của Topic vì SGK Q18 đang Draft; chỉ ghi những blocker thực của chính Topic (V2 compatibility chưa có hiệu lực ở main, thiếu ready/REGISTER, integration/assessment/QA chưa đạt). Mỗi blocker ghi lane và source SHA, không bắt AUTHORING review lại chỉ vì old SGK full-text lock.
+
 **Checkpoint:** LEGACY_SOURCE_LOCK_COLLISION_MAPPED / DUAL_SNAPSHOT_EVIDENCE_PASS / GOVERNANCE_DRAFT / STANDARD_CONFLICT_HOLD / NO_MERGE_NO_DEPLOY.
