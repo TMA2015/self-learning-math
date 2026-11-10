@@ -56,6 +56,19 @@ function validate(source, agents, queue) {
    // Fail closed while drafted: V2 READY gate MUST still require independent
    // Academic/PED source receipts until owner-approved migration is complete.
    const contract=fs.readFileSync(path.join(ROOT,"prototypes/thpt/THPT_TWO_LANE_SOURCE_LOCKED_HANDOFF_CONTRACT_v2_20261102.md"),"utf8");
+   const policy07=fs.readFileSync(path.join(ROOT,
+     "prototypes/thpt/standard-changes/07_THPT_NOTEBOOKLM_BATCH_AND_DELTA_REVIEW_POLICY_v1.2_DRAFT_20261110.md"),"utf8");
+   const policyControls=[
+     "Toán THPT v1.2 · DỰ THẢO",
+     "Ngày hiệu lực:** CHƯA CÓ",
+     "DELTA_C_ACADEMIC_MATERIAL",
+     "Q18_OWNER_SELF_VERIFIED_ENRICHMENT",
+     "SELF_QA_EVIDENCE_RECEIPT",
+     "STANDARD_CONFLICT_HOLD / NO_MERGE_NO_DEPLOY"
+   ];
+   for(const token of policyControls)if(!policy07.includes(token))
+     fail("PROJECT_SOURCE_07_V1_2_DRAFT_NOT_ALIGNED:"+token);
+
    const gate=fs.readFileSync(path.join(ROOT,"scripts/test-thpt-handoff-gate-v2.cjs"),"utf8");
    if(!contract.includes("Q18 ENRICHMENT V2.1 PROPOSED") ||
       !contract.includes("GOVERNANCE_DRAFT_ONLY / STANDARD_CONFLICT_HOLD"))
