@@ -48,4 +48,18 @@
 - **QA tách bạch:** AUTHORING kiểm đúng định nghĩa/công thức, biên, đầu vào, minh họa đúng; browser thật test các mốc quan trọng ở mobile/desktop; RELEASE sau này chịu AP1–AP5/responsive/performance/CSP, Golden UI và tích hợp khi có handoff hợp lệ.
 - **Gates:** R18 của Topic 1 và R02 của Topic 2 bất biến, đang tồn tại blocker V2 TOPIC intake #790; không tự merge/deploy hay gắn \`CONTENT_READY\` từ tài liệu nghiên cứu.
 
+## V. Bằng chứng đã triển khai tiếp sau kiểm toán (không phải chỉ kế hoạch)
+
+**Mô hình #4 đã dựng lại thực tế cho Chuyên đề 1 M6:**
+- \`Temp_TOPIC1_M6_TANGENT_DERIVATIVE_TWO_GRAPHS_D5_R00_20261110.html\` — source blob \`65af7b8f8d9d51e1dbce0e3266f71f7b6b3a6b22\` trên AUTHORING PR #801. Hai Canvas f(x), f′(x), cát tuyến/tangent, slider x₀ và |h|, chọn h>0/h<0, hai hàm x³/3−x và x³. **Sửa kết luận f′=0 không đủ cực trị** bằng phản ví dụ.
+- \`Temp_TOPIC1_M6_TANGENT_D5_AUTHORING_QA_R01_20261110.md\` — QA **24/24 mock JS** trên ba viewport, lời dẫn và Vận dụng đã có; \`DELTA_C\` scoped review pending, không sửa R18.
+
+**Mô hình #6 đã dựng lại thực tế cho Chuyên đề 2 P03:**
+- \`prototypes/thpt/content-drafts/topic-vector-coordinate/exp-notebook-d5-equivalent/Temp_TOPIC2_VECTOR_DOT_PRODUCT_PROJECTION_LAB_D5_R00_20261110.html\` — source blob \`06ee0ce3e13cbfa92e0201dd2ee634bf1775b18e\` trên AUTHORING PR #793. Có hai vectơ u/v, hình chiếu H mang dấu, hình bình hành/tổng nét mảnh, preset góc 0°/90°/180°, slider độ dài/góc và **kéo điểm bằng pointer**. QA **30/30 mock JS**, xem \`Temp_TOPIC2_P03_DOT_PRODUCT_D5_AUTHORING_QA_R01_20261110.md\`.
+- Hai module mới dùng **màu sáng cùng hệ thống**, không copy dark UI của tệp 10-in-1, không yêu cầu tab 2 cấp hoặc phụ thuộc CDN.
+
+**Mô hình #8** đã tồn tại trên PR #793 từ lượt trước, đã QA logic 48/48 mock trên nhiều trạng thái; không làm bản sao thứ hai.
+
+**Giới hạn chung:** các phép thử là DOM/Canvas **giả lập**, chưa là browser render/thiết bị thật cho các file mới; không tự nhận Academic/PED PASS hoặc CONTENT_READY. Bản HTML 10-in-1 gốc vẫn chỉ dùng làm **nguồn ý tưởng**, không được deploy.
+
 **Kết luận:** \`SOURCE_READ_AND_BROWSER_INITIALIZED_BUG_VERIFIED\`; \`10_MODELS_CLASSIFIED\`; \`MATH_P0_IDENTIFIED_1_4_7\`; \`MODEL8_REUSE_EXISTING\`; \`10_IN_1_RAW_DO_NOT_PUBLISH\`; \`AUTHORING_ONLY\`.
