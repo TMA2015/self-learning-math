@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="330" viewBox="0 0 920 330" role="img" aria-labelledby="title desc">
+<title id="title">Tập xác định của căn thức trên mẫu số</title>
+<desc id="desc">Điều kiện căn 4 trừ x bình phương không âm cho đoạn từ âm 2 đến 2; điều kiện mẫu x trừ 1 khác không loại điểm 1. Giao là đoạn từ âm 2 đến trước 1 hợp đoạn sau 1 đến 2, nhận hai đầu mút âm 2 và 2.</desc>
+<rect width="920" height="330" rx="18" fill="#fbfdff"/>
+<style>
+  .title{font:600 22px system-ui,Arial,sans-serif;fill:#153a54}
+  .lab{font:500 17px system-ui,Arial,sans-serif;fill:#2b4e66}
+  .small{font:400 14px system-ui,Arial,sans-serif;fill:#44657c}
+  .axis{stroke:#8da6b9;stroke-width:1.8;fill:none}
+  .tick{stroke:#8da6b9;stroke-width:1.6}
+  .point{stroke-width:2;stroke-linecap:round}
+</style>
+<text class="title" x="34" y="37">Hai điều kiện phải đúng đồng thời</text>
+<text class="lab" x="34" y="86">Căn: −2 ≤ x ≤ 2</text>
+<text class="lab" x="34" y="160">Mẫu: x ≠ 1</text>
+<text class="lab" x="34" y="238">Giao: D</text>
+<g transform="translate(0 2)">
+  <rect x="440" y="56" width="280" height="22" rx="11" fill="#d6eddf"/>
+  <path d="M344 100H816 M344 177H816 M344 254H816" class="axis"/>
+  <g class="small" text-anchor="middle">
+    <text x="440" y="120">−2</text>
+    <text x="510" y="120">−1</text>
+    <text x="580" y="120">0</text>
+    <text x="650" y="120">1</text>
+    <text x="720" y="120">2</text>
+    <text x="440" y="273">−2</text>
+    <text x="580" y="273">0</text>
+    <text x="650" y="273">1</text>
+    <text x="720" y="273">2</text>
+  </g>
+  <path d="M440 95V105 M510 95V105 M580 95V105 M650 95V105 M720 95V105 M440 250V260 M580 250V260 M650 250V260 M720 250V260" class="tick"/>
+  <path d="M344 177H816" stroke="#abc4d8" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="650" cy="177" r="8" stroke="#c65c4f" stroke-width="3" fill="#fbfdff"/>
+  <path d="M440 254H650 M650 254H720" stroke="#1687b4" stroke-width="9" fill="none"/>
+  <circle cx="440" cy="254" r="6" fill="#1687b4"/>
+  <circle cx="650" cy="254" r="8" stroke="#1687b4" stroke-width="3" fill="#fbfdff"/>
+  <circle cx="720" cy="254" r="6" fill="#1687b4"/>
+  <circle cx="440" cy="100" r="5" fill="#2e9b70"/>
+  <circle cx="720" cy="100" r="5" fill="#2e9b70"/>
+</g>
+<text class="small" x="341" y="298">Chấm đặc: nhận điểm · Vòng rỗng: loại điểm</text>
+<text class="small" x="34" y="318">D = [−2, 1) ∪ (1, 2]</text>
+</svg>
