@@ -59,3 +59,27 @@ Run pause stays in force. **Reactivation requires a new owner decision** after p
 - Automations `Phát hành Toán THPT` disabled; Issue #698 has pause/analysis. `main` at the time: `1cb772558e82d212ad0539565fd1660039058e04`. No new G11 learning content deployed.
 - G11 ChI integration PR #697 Draft/HOLD; technical CI success on `7185ce0b...` **does not** close targeted PED Delta_C, AP, Final Submit or ready manifest. G11 authoring source PRs #681/#683/#685/#688/#690/#692/#693/#694/#695 not equivalent to site release.
 - Academic proofs must be returned by AUTHORING, not invented by RELEASE. G11 ChI is the pilot to close the exact source-custody gap.
+
+
+---
+
+## Q18 ENRICHMENT V2.1 PROPOSED — chưa có hiệu lực (10/11/2026)
+
+**STATUS: `GOVERNANCE_DRAFT_ONLY / STANDARD_CONFLICT_HOLD`.** Đính kèm đề xuất [STANDARD_CHANGE_REQUEST Q18](standard-changes/STANDARD_CHANGE_REQUEST_Q18_ENRICHMENT_SELF_VERIFICATION_20261110.md) tại [PR #804](https://github.com/TMA2015/self-learning-math/pull/804). Phần hợp đồng V2 hiện hành phía trên **vẫn bắt buộc** cho đến khi owner duyệt điều khoản, Source 07 v1.1 được đồng bộ theo thẩm quyền và CI có test trên đúng HEAD rồi merge. Không tự mở quyền phát hành hay đổi quy tắc chấm.
+
+### Trường hợp đủ điều kiện cơ chế tự kiểm (chỉ SGK Knowledge đã có PASS gốc)
+
+- Cùng `SLM-THPT-QUALITY-ONE` Q01–Q18; `Q18_VERIFICATION_MODE: OWNER_SELF_VERIFIED_ENRICHMENT` và `STANDARD_VERSION: 2.0.0` **chỉ hợp lệ sau ngày hiệu lực**; không tự nhận `ACADEMIC_VERDICT: PASS` hoặc `PEDAGOGICAL_VERDICT: PASS` từ reviewer độc lập khi reviewer không tồn tại.
+- Học liệu gốc phải có `BASELINE_SOURCE_BLOB` và `BASELINE_REVIEW_RECEIPT_BLOB` thực sự PASS; tệp Kiến thức mới có `ACADEMIC_SOURCE_BLOB` (Git SHA của đúng tệp), hình mới có `FIG_ASSET_BLOB`, tất cả đối chiếu được byte thực tế.
+- Có một `SELF_QA_EVIDENCE_RECEIPT_PATH` và `SELF_QA_EVIDENCE_RECEIPT_BLOB` bất biến, chứa mọi `LESSON_ID`, `OUTCOME_ID`, `DELTA_ID`, ví dụ/hình thay đổi, giả thiết và lời giải/tính kiểm ngược, chứng cứ S1, PED, P0/P1/P2 và chứng cứ đóng lỗi. Reviewer truyền thống không bắt buộc với phần tự kiểm đạt; lỗi chưa rõ, đổi Core/đáp án/rubric, Q15/Q16/RD1 phải chuyển sang independent review.
+- `ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY`, `OFFICIAL_READINESS: NOT_CLAIMED`, `MASTERY_ACTIVATION: NO`, `RELEASE_AUTHORIZATION: NO` trong **handoff**. Quyền phát hành G10 đã được owner chấp thuận riêng khi đầy đủ QA; không viết quyền triển khai vào hồ sơ nguồn.
+- Handoff cần một manifest `ready/` và REGISTER row theo scope SGK Knowledge update; **không giả là `FULL_LEARNING_PATH` mới hoặc thành `TOPIC_READY`**. Hợp đồng hiện tại `scripts/test-thpt-handoff-gate-v2.cjs` chưa chấp nhận profile này, phải có bản nâng cấp có kiểm thử âm trước khi phát hành.
+
+### Cổng không được bỏ khi chuyển cơ chế
+
+1. Bằng chứng self-QA là **việc kiểm tra tính đúng toán thực**, không phải chỉ metadata/hash hoặc render PASS; script CI chỉ xác minh schema/fidelity và không cấp Academic PASS.
+2. Không nới khóa `SOURCE_BLOB` cũ: đóng source-lock trên bản mới **chỉ sau khi receipt mới khớp SHA, phiên bản chuẩn đã được duyệt và hợp đồng V2 được nâng cấp chính thức**.
+3. Dù thay đổi Knowledge, vẫn chạy nguyên AP1–AP5, R1–R5, Q15/Q16 (Final Submit, RD1 private, không ghi Mastery trái phép), THCS/THPT Golden, responsive và deep links trên HEAD cuối.
+4. Bất kỳ `STANDARD_CONFLICT_HOLD`, lỗi P0/P1 chưa giải quyết hoặc thiếu owner authorization của phạm vi release nào cũng dừng đúng phần; **không tự merge/deploy**.
+
+**Migration order:** chuẩn Q18 chính thức → đồng bộ Source 07 v1.1 theo quyết định owner → nâng hợp đồng/handoff template và CI âm/dương trên nhánh riêng → AUTHORING tự kiểm có receipt từng delta → RELEASE kiểm nguồn và QA → phát hành đúng quyền owner. Snapshot cũ giữ PASS lịch sử.
