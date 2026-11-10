@@ -8,7 +8,7 @@
 
 ## Vì sao một dấu giá trị tuyệt đối có thể đổi hẳn hình đồ thị?
 
-Ở M1, em đã biết phải xem đầu vào nào được nhận. Ở M2, em học cách đọc điểm thuộc đồ thị, điểm bị loại và cách một đường biểu diễn biến đổi. Bây giờ, chúng ta thử đặt một thay đổi **rất nhỏ trong cách viết công thức** và xem đồ thị thay đổi ra sao.
+Ở M1, em đã biết phải xem **đầu vào nào được nhận**. Ở M2, em học cách phân biệt **điểm đo được, đồ thị do công thức xác định** và điểm thuộc miền hay bị loại; em còn thấy hai đường khác nhau có thể cùng đi qua ba mốc. Bây giờ ta thử thay đổi vị trí **một dấu trị tuyệt đối** và xem nó tác động đến đầu vào, đầu ra và đồ thị như thế nào.
 
 Xét hàm số
 
@@ -107,6 +107,8 @@ Mô hình tương tác D5 \`Temp_TOPIC1_M3_GRAPH_TRANSFORM_LAB_D5_R00.html\` cho
 
 Một ý tưởng có giá trị từ bộ Notebook 22 chuyên đề là **đọc phép tịnh tiến bằng đầu vào và đầu ra**, thay vì bắt học sinh thuộc lòng câu “trừ là sang phải, cộng là sang trái”. Ta có thể tự suy ra điều đó.
 
+**Nối với M2:** Em còn nhớ ba điểm \((0;1)\), \((1;0)\), \((2;1)\) cùng nằm trên parabol và đồ thị chữ V không? Nếu đề chỉ cho ba điểm, em **chưa được tự chọn** đường nào để dịch. Nhưng khi đề xác định rõ hàm \(f(u)=(u-1)^2\) trên \(D=[0,2]\), ta đã biết **chính xác đoạn parabol phải dịch**. Ví dụ ở mục này dùng lại hàm \(f\) ấy của M2; đây là **hàm mới so với \(f(x)=x^2-4x+3\)** trong hai phép trị tuyệt đối ở phía trên.
+
 Giả sử em đã biết một điểm \(A(u;f(u))\) thuộc đồ thị gốc \(y=f(x)\). Bây giờ xét hàm
 
 \[
@@ -123,7 +125,7 @@ A'(u+2;f(u)+3).
 
 ### Ví dụ · Miền của đồ thị cũng phải dịch
 
-Xét \(f(u)=(u-1)^2\), nhưng chỉ định nghĩa trên \(D_f=[0,2]\). Đồ thị gốc là **một đoạn parabol** từ \(A(0;1)\), qua đỉnh \(I(1;0)\) đến \(B(2;1)\); đừng vẽ kéo dài toàn bộ hai nhánh vì miền đầu vào đã được giới hạn.
+Ta xét đúng \(f(u)=(u-1)^2\) của M2, **với tập xác định \(D_f=[0,2]\)**. Đồ thị gốc là **một đoạn parabol** từ \(A(0;1)\), qua đỉnh \(I(1;0)\) đến \(B(2;1)\); đừng vẽ kéo dài toàn bộ hai nhánh vì miền đầu vào đã được giới hạn.
 
 Đặt \(g(x)=f(x-2)+3\). Muốn \(g(x)\) có nghĩa, phải có \(x-2\in[0,2]\), tức
 
