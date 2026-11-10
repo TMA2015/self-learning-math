@@ -52,3 +52,12 @@ Canonical R18 PUBLIC M1–M7 vẫn nguyên Git blob **\`2340ea4975b37a457363eea5
 - **Giữ P03/P07 của Topic2 PR #793** theo một nguồn canonical; đã gửi ghi chú trực tiếp ở PR #793. Ý tưởng Carbon-like/chia control/giải thích có thể reuse nhưng đòi QA/parity và targeted review nếu đổi học thuật.
 - **R06 NotebookLM packet** blob \`1d3d3852aa38ab90ed282349bfc769c02aac3ea3\` và **11 DRAFT** bất biến; không đưa raw 10-model vào nguồn reviewer hiện hành, không lặp review R18/R02 đã PASS, không thay \`CONTENT_READY=NO\`.
 - **D5 browser QA mới chỉ chứng minh tệp Notebook gốc có lỗi**, KHÔNG phải browser QA thực của từng module AUTHORING #801/#793. Những cổng Q07/Academic/PED/Q15 và V2 #790 vẫn HOLD.
+
+
+## 6. Standalone Notebook QA repair candidate receipt — NOT a review change
+
+- **Research-only** candidate from owner upload \`Trang_Web_Tương_Tác_10_Mô_Hình_Toán_THPT.html\` source SHA256 \`93b3764dae9a60defa7d2ebe8d353c60f5e4e7edc4523f5a837c00fae05cddc3\`.
+- Local repaired **conversation attachment**, **not committed as canonical source**, \`Temp_NOTEBOOK_10_MODELS_QA_REPAIR_CANDIDATE_R01_20261110.html\` SHA256 **\`b25949c157507b47ed7da4e113319699761ca40805b98025b55a930ade52584d\`**, 141586 bytes, 59 targeted edits.
+- Exact browser QA **candidate only**: Chromium viewport 390/820/1440, 10/10 Canvas each, 0 JS errors including fast tab navigation, no horizontal overflow; 64 dot-product random / 36 Bayes random property checks, drag vector/3D/chart interactions. **No** real-device Safari/offline KaTeX or independent Academic/PED PASS.
+- [Dedicated R02 GitHub receipt](Temp_NOTEBOOK_10MODELS_CANDIDATE_REPAIR_CHROMIUM_QA_RECEIPT_R02_20261110.md), blob **\`4e1a1e79c9c210f0f5b61dc59afe6015c173429a\`**. Candidate code distributed through conversation only, kept out of current topic canonical source tree. This is NOT a third curriculum journey.
+- **R06 ONE SOURCE blob \`1d3d3852aa38ab90ed282349bfc769c02aac3ea3\` unchanged**, baseline R18 blob \`2340ea4975b37a457363eea59dd617070934983c\` unchanged. Q15 11 DRAFT, independent targeted Academic/PED, Q07 existing Topic module browser/device QA, issue #790 and \`CONTENT_READY=NO\` remain HOLD.
