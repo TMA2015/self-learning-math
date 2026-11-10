@@ -28,7 +28,7 @@
 
     Trong một ứng dụng dự báo nhiệt độ, cùng một thời điểm không thể đồng thời được gán hai nhiệt độ khác nhau trong *cùng một mô hình xác định*. Vì vậy ta cần nhận ra khi nào mối liên hệ có thể gọi là hàm số.
 
-    Nhớ khái niệm cặp có thứ tự \((x;y)\), đọc bảng giá trị, phân biệt “một giá trị \(x\) xuất hiện hai dòng” với “một giá trị \(x\) có hai đầu ra **khác nhau**”. Em có thể học các kiến thức tiền đề ngay trong bài.
+    Khi đọc bảng giá trị, hãy nhớ ý nghĩa của cặp có thứ tự \((x;y)\) và phân biệt “một giá trị \(x\) xuất hiện hai dòng” với “một giá trị \(x\) có hai đầu ra **khác nhau**”. Em có thể học các kiến thức tiền đề ngay trong bài.
 
     Một quy tắc là hàm số trên tập \(D\) nếu mỗi đầu vào \(x\in D\) có **đúng một** giá trị đầu ra \(y\). Hai dòng trùng hệt \((x;y)\) không phá điều kiện; nhưng \((x;y_1)\) và \((x;y_2)\) với \(y_1\ne y_2\) thì phá. Sau trực giác ấy mới dùng kí hiệu \(y=f(x)\).
 
@@ -65,7 +65,7 @@
 
     Máy tính không thể lấy căn bậc hai của số âm trong tập số thực; muốn nhập \(x\) hợp lệ, ta phải biết miền **đầu vào**. Nhưng các kết quả **đầu ra** mà máy cho được có thể là tập khác.
 
-    Nhớ điều kiện \(\sqrt t\) có nghĩa trong số thực khi \(t\ge0\), và \(\sqrt t\ge0\); biết xét bất phương trình bậc nhất. Em có thể học các kiến thức tiền đề ngay trong bài.
+    Với căn bậc hai trong tập số thực, biểu thức \(\sqrt t\) chỉ có nghĩa khi \(t\ge0\), và khi ấy \(\sqrt t\ge0\). Em cũng sẽ dùng kiến thức giải bất phương trình bậc nhất. Em có thể học các kiến thức tiền đề ngay trong bài.
 
     Tập xác định \(D\) là những \(x\) **được phép thay vào** biểu thức; tập giá trị \(T\) gồm mọi \(y\) thực sự **đạt được** sau khi thay \(x\in D\). Ví dụ căn thức vừa giới hạn đầu vào, vừa làm mọi đầu ra không âm; không lấy \(D=T\) chỉ vì có cùng kí hiệu tập.
 
@@ -134,7 +134,7 @@
 
     Một dịch vụ gửi hàng thu phí cơ bản cho 2 km đầu và thu thêm theo mỗi km tiếp theo; cùng đầu vào vẫn phải được tính đúng một mức phí, kể cả ngay ranh giới 2 km.
 
-    Nhớ cách so \(x\le2\) với \(x>2\), đơn vị kilomet và nghìn đồng, và giá trị hàm số tại điểm x. Em có thể học các kiến thức tiền đề ngay trong bài.
+    Khi tính phí theo quãng đường, hãy chú ý mốc \(x\le2\) và \(x>2\), đơn vị kilomet, nghìn đồng và giá trị hàm số tại quãng đường đang xét. Em có thể học các kiến thức tiền đề ngay trong bài.
 
     Hàm từng đoạn dùng **những công thức khác nhau trên những miền không chồng mâu thuẫn**. Giá trị tại x=2 phải theo nhánh chứa dấu bằng; nếu chọn nhầm, chi phí tại ranh giới và dự đoán tiếp theo đều sai.
 
