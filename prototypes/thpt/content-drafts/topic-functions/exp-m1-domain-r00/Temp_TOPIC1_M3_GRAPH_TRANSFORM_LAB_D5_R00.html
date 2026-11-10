@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>M3 · Parabol và hai phép biến đổi đồ thị</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:#183b54;background:#fff}
+*{box-sizing:border-box}body{margin:0;padding:12px}
+.lab{max-width:880px;margin:auto;border:1px solid #c8dee9;border-radius:15px;overflow:hidden;background:#fff}
+header{padding:15px 20px;background:#eaf5fb}h1{font-size:19px;margin:0 0 5px}
+p{margin:6px 0;line-height:1.6}
+main{padding:15px 20px}.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin:8px 0 13px}
+label{font-size:14px;font-weight:650}
+input[type=range]{width:100%;min-height:28px;accent-color:#1687b4}
+.actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-bottom:10px}
+.actions label{display:flex;align-items:center;gap:6px;cursor:pointer}
+input[type=checkbox]{accent-color:#1687b4;width:16px;height:16px}
+button{font:inherit;background:#fff;border:1px solid #bad4e1;border-radius:9px;color:#174a66;padding:8px 11px;cursor:pointer}
+button:focus-visible{outline:2px solid #1687b4;outline-offset:2px}
+.canvaswrap{border:1px solid #deecf3;background:#fafdff;border-radius:12px;overflow:hidden}
+canvas{display:block;width:100%;height:360px}
+.summary{margin-top:10px;padding:11px 13px;border:1px solid #d5e9f2;background:#f5fafd;border-radius:11px;line-height:1.7;font-size:14px}
+.small{font-size:13px;color:#557185}
+@media(max-width:540px){body{padding:6px}header,main{padding:12px}.controls{gap:8px}h1{font-size:17px}canvas{height:315px}.actions{gap:9px}}
+</style></head><body>
+<section class="lab" aria-label="Mô hình Parabol và trị tuyệt đối">
+<header><h1>Parabol và hai phép biến đổi đồ thị</h1>
+<p>Quan sát từng phép biến đổi trước khi bật cùng lúc. Trị tuyệt đối <strong>bên ngoài</strong> thay đổi đầu ra; trị tuyệt đối <strong>bên trong</strong> thay đổi đầu vào.</p></header>
+<main>
+<div class="controls">
+<div><label for="a">Hệ số a: <output id="oa">1</output></label><input id="a" type="range" min="-2" max="2" step="0.1" value="1"></div>
+<div><label for="b">Hệ số b: <output id="ob">−4</output></label><input id="b" type="range" min="-4" max="4" step="0.1" value="-4"></div>
+<div><label for="c">Hệ số c: <output id="oc">3</output></label><input id="c" type="range" min="-4" max="4" step="0.1" value="3"></div>
+</div>
+<div class="actions">
+<label><input id="absOut" type="checkbox" checked> <span style="color:#126c94">y = |f(x)|</span></label>
+<label><input id="absIn" type="checkbox"> <span style="color:#1b795d">y = f(|x|)</span></label>
+<button id="reset" type="button">Đặt lại</button>
+</div>
+<div class="canvaswrap"><canvas id="graph" role="img" aria-label="Đồ thị f(x), giá trị tuyệt đối đầu ra và giá trị tuyệt đối đầu vào. Đọc chú giải văn bản ở bên dưới." height="360" width="760"></canvas></div>
+<div class="summary" id="summary" role="status" aria-live="polite"></div>
+<p class="small">Đường xám: f(x). Đường xanh dương: |f(x)|. Đường xanh lá: f(|x|). Nét vẽ thống nhất; không tô những mảng màu đặc. Cửa sổ đang hiển thị x từ −4 đến 4 và y từ −6 đến 12; đường có thể tiếp tục bên ngoài vùng này.</p>
+<p class="small">Đây là hoạt động công khai để hiểu bài, không phải bài Tự kiểm tra và không ghi điểm thành thạo.</p>
+</main></section>
+<script>
+(()=>{"use strict";
+const ids=["a","b","c"],el=Object.fromEntries(ids.map(id=>[id,document.getElementById(id)]));
+const canvas=document.getElementById("graph"),ctx=canvas.getContext("2d");
+const summary=document.getElementById("summary"),out=document.getElementById("absOut"),inside=document.getElementById("absIn");
+const xmin=-4,xmax=4,ymin=-6,ymax=12;
+function nice(v){const n=Math.round(v*1000)/1000;return String(Object.is(n,-0)?0:n).replace("-","−").replace(".",",");}
+function coef(){return ids.map(id=>Number(el[id].value));}
+function f(a,b,c,x){return (a*x+b)*x+c;}
+function draw(){
+ const [a,b,c]=coef(),w=canvas.clientWidth||760,h=canvas.clientHeight||360,dpr=Math.min(window.devicePixelRatio||1,2);
+ canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);
+ ctx.fillStyle="#fafdff";ctx.fillRect(0,0,w,h);
+ const left=44,right=w-17,top=18,bottom=h-33,plotW=right-left,plotH=bottom-top;
+ const X=x=>left+(x-xmin)/(xmax-xmin)*plotW,Y=y=>top+(ymax-y)/(ymax-ymin)*plotH;
+ ctx.lineWidth=1;ctx.strokeStyle="#e3edf3";ctx.font="12px system-ui,Arial";ctx.fillStyle="#557185";
+ for(let x=-4;x<=4;x++){const xx=X(x);ctx.beginPath();ctx.moveTo(xx,top);ctx.lineTo(xx,bottom);ctx.stroke();if(x%2===0)ctx.fillText(String(x),xx-4,bottom+18)}
+ for(let y=-6;y<=12;y+=3){const yy=Y(y);ctx.beginPath();ctx.moveTo(left,yy);ctx.lineTo(right,yy);ctx.stroke();ctx.fillText(String(y),3,yy+4)}
+ ctx.strokeStyle="#91a9ba";ctx.lineWidth=1.4;ctx.beginPath();ctx.moveTo(X(0),top);ctx.lineTo(X(0),bottom);ctx.moveTo(left,Y(0));ctx.lineTo(right,Y(0));ctx.stroke();
+ ctx.save();ctx.beginPath();ctx.rect(left,top,plotW,plotH);ctx.clip();
+ function curve(fn,color,width,dash){ctx.beginPath();ctx.strokeStyle=color;ctx.lineWidth=width;ctx.setLineDash(dash||[]);
+  const n=Math.max(250,Math.round(plotW));
+  for(let i=0;i<=n;i++){const x=xmin+(xmax-xmin)*i/n,y=fn(x),xx=X(x),yy=Y(y);if(i===0)ctx.moveTo(xx,yy);else ctx.lineTo(xx,yy);}ctx.stroke();ctx.setLineDash([]);
+ }
+ curve(x=>f(a,b,c,x),"#8196a8",2,[]);
+ if(out.checked)curve(x=>Math.abs(f(a,b,c,x)),"#1687b4",2.8,[]);
+ if(inside.checked)curve(x=>f(a,b,c,Math.abs(x)),"#218f73",2.8,[]);
+ ctx.restore();
+ ["a","b","c"].forEach((id,i)=>document.getElementById("o"+id).textContent=nice([a,b,c][i]));
+ let desc;if(Math.abs(a)<1e-9){desc=Math.abs(b)<1e-9?"a = 0 và b = 0: f là hàm hằng, không có đỉnh parabol.":"a = 0: f là hàm bậc nhất, không có đỉnh parabol; không được chia cho 2a.";}
+ else{const hx=-b/(2*a),ky=f(a,b,c,hx),delta=b*b-4*a*c;desc="Đỉnh parabol: ("+nice(hx)+"; "+nice(ky)+"). Δ = "+nice(delta)+". "+(delta>1e-8?"Có hai nghiệm thực phân biệt.":Math.abs(delta)<=1e-8?"Có nghiệm kép.":"Không có nghiệm thực.");}
+ const probe=f(a,b,c,2);summary.textContent="f(x) = "+nice(a)+"x² + ("+nice(b)+")x + ("+nice(c)+"). "+desc+" Ở x = 2: |f(2)| = "+nice(Math.abs(probe))+"; f(|2|) = "+nice(probe)+".";
+}
+let pending=false;function schedule(){if(pending)return;pending=true;requestAnimationFrame(()=>{pending=false;draw()});}
+for(const id of ids)el[id].addEventListener("input",schedule);
+out.addEventListener("change",schedule);inside.addEventListener("change",schedule);
+document.getElementById("reset").addEventListener("click",()=>{el.a.value=1;el.b.value=-4;el.c.value=3;out.checked=true;inside.checked=false;draw()});
+window.addEventListener("resize",schedule);draw();
+})();
+</script></body></html>
