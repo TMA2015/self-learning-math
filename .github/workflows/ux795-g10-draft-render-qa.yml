@@ -6,6 +6,7 @@ on:
       - "docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"
       - "docs/assets/images/thpt/**"
       - "scripts/test-ux795-g10-render-draft.cjs"
+      - "scripts/test-ux795-g10-knowledge-browser.cjs"
       - "scripts/test-thpt-chvi-math-block-render.cjs"
       - "scripts/test-thpt-chvi-student-notes.cjs"
       - ".github/workflows/ux795-g10-draft-render-qa.yml"
@@ -21,7 +22,7 @@ jobs:
   render-model-b:
     name: Build and inspect G10 all 27 Knowledge pages
     runs-on: ubuntu-latest
-    timeout-minutes: 14
+    timeout-minutes: 35 # Full 27 x 3 viewport browser AP QA; no skipped lesson
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -33,3 +34,23 @@ jobs:
         run: mkdocs build --config-file mkdocs.thpt-preview.yml --site-dir site-thpt-preview
       - name: Enforce 27 rendered pages, four tabs, closed self-reveals, MathJax and SVG paths
         run: node scripts/test-ux795-g10-render-draft.cjs
+      - name: Install isolated Chromium for real browser QA
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install chromium
+      - name: Real browser AP smoke: all 27 G10 Knowledge x 390/820/1440 (NO DEPLOY)
+        run: |
+          python -m http.server 8765 --bind 127.0.0.1 --directory site-thpt-preview > /tmp/ux795-g10-browser-http.log 2>&1 &
+          python - <<'PY'
+          import time, urllib.request
+          url="http://127.0.0.1:8765/thpt-preview/sgk/chuong-i/bai-1/"
+          for _ in range(40):
+              try:
+                  with urllib.request.urlopen(url, timeout=3) as r:
+                      if r.status==200: break
+              except Exception:
+                  time.sleep(.5)
+          else:
+              raise SystemExit("UX795 preview test server did not start")
+          PY
+          node scripts/test-ux795-g10-knowledge-browser.cjs
