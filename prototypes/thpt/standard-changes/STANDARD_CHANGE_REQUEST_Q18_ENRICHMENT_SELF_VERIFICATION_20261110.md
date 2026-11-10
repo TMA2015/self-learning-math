@@ -6,9 +6,9 @@ BASE_VERSION_IN_MAIN: 1.2.0
 PROPOSED_VERSION: 2.0.0
 CHANGE_CLASS: MAJOR
 OWNER_DIRECTION: 2026-11-10 — không tạo vòng phản biện độc lập lặp lại chỉ vì bổ sung diễn giải/ví dụ/hình có thể tự xác minh; tránh bottleneck G10–G12
-OWNER_APPROVAL_OF_EXACT_AMENDMENT: PENDING
+OWNER_APPROVAL_OF_EXACT_AMENDMENT: APPROVED_2026-11-10
 PROPOSED_SCOPE: SGK_CHAPTER_KNOWLEDGE_G10_G11_G12_ALREADY_APPROVED
-CONFLICT_STATUS_UNTIL_GOVERNANCE_MERGE: STANDARD_CONFLICT_HOLD
+CONFLICT_STATUS_UNTIL_GOVERNANCE_MERGE: RESOLVED_BY_OWNER_APPROVAL_AND_EFFECTIVE_MAIN_MERGE
 AUTHORING_RESPONSIBILITY: new Topic learning materials, new academic Core/outcome content and independent-review handoffs; no mandatory re-authoring of owner-delegated SGK Knowledge upgrades
 RELEASE_RESPONSIBILITY: owner-delegated SGK Knowledge enrichment, source/S1/math/PED delta self-verification and evidence custody; independent technical/UI/assessment QA, final HEAD gates and conditional deployment
 ASSESSMENT_PROTECTION: Q15_Q16_RD1_UNCHANGED
@@ -18,6 +18,16 @@ ASSESSMENT_PROTECTION: Q15_Q16_RD1_UNCHANGED
 - [PR #797](https://github.com/TMA2015/self-learning-math/pull/797) thay đổi 27 trang **Kiến thức** của SGK Toán 10 đã có nguồn cũ nghiệm thu, theo mẫu 4 tab B; nội dung Core/Luyện tập/Tự kiểm tra và ngân hàng đánh giá bất biến. Ví dụ/hình/lời dẫn mới được thêm ở một số bài; [QA render 27 × 3](https://github.com/TMA2015/self-learning-math/actions/runs/42783520977) SUCCESS, nhưng R4 vẫn FAIL đúng tại khóa SHA nguồn B01 vì Q18 đang yêu cầu Academic/PED verdict độc lập cho mọi thay đổi `DELTA_C`.
 - Chủ dự án ngày 10/11/2026 cho rằng phần bổ sung có thể **tự kiểm chứng tính đúng toán**, không bắt buộc review độc lập để tránh vòng lặp tốn thời gian, đồng thời mong quy trình áp dụng được cho các cải tiến Kiến thức lớp 11–12.
 - Chuẩn đang ở `main` ghi `SLM-THPT-QUALITY-ONE 1.2.0`, Q18 bắt buộc reviewer độc lập và Source 07 v1.1 ghi DELTA_C review affected scope. Đây là **mâu thuẫn giữa quyết định chủ dự án mới và văn bản hiện tại**; phải xử lý bằng thay đổi chuẩn có phiên bản, không đổi SHA test để giả vờ nội dung cũ bất biến.
+
+## 1-A. QUYẾT ĐỊNH CHỦ DỰ ÁN — phê duyệt thay đổi và loại bỏ over-gating (10/11/2026)
+
+**OWNER_DECISION:** phê duyệt ban hành v2.0.0 trên `main` khi QA của chính chuẩn đạt; **không cần xin phê duyệt lại cơ chế Q18**. Đã có quyền triển khai Knowledge gói #797 có điều kiện; không đồng nghĩa tự bỏ qua kiểm chất lượng toán học hay an toàn website.
+
+**Quy tắc được duyệt, có tính ưu tiên hơn các câu draft bên dưới:**
+- Knowledge SGK đã phát hành, không sửa chương trình, điều kiện định lý, Core, item/key/rubric/RD1/Final Submit: chủ biên RELEASE kiểm toán **Delta mới** và ghi 1 `ENRICHMENT_DELTA_RECEIPT` cho cả gói (mapping từng bài/outcome). Bằng chứng baseline là **Git blob của trang đang phát hành**; thiếu reviewer Academic/PED cũ không được tự động chặn nâng cấp. Nếu có receipt cũ thì giữ đúng snapshot.
+- Không yêu cầu toàn bộ Knowledge mới giống các file SHA/FNV/đếm công thức lịch sử. Các khóa đó chỉ kiểm lại bản lịch sử; candidate phải kiểm SHA riêng và toán/PED/S1 hiện tại, ID/assessment bất biến. Không tạo một gate độc lập khác cho cùng chứng cứ.
+- Học liệu Topic mới hoặc đổi điều kiện/đáp án/Core vẫn reviewer Academic/PED độc lập theo đúng phần thay đổi; không suy reviewer PASS từ UI/QA. SGK/Topic có đường release độc lập. 3 cổng: `CONTENT_MATH_PED_SOURCE`, `ASSESSMENT_DATA_SAFETY`, `RENDER_RELEASE_QA`.
+- Các mô tả ở các mục bên dưới còn chữ 'PENDING', 'baseline reviewer PASS mandatory', '27 ready manifests' hoặc 'owner must approve exact wording' là **lịch sử đề xuất**, đã được điều khoản này và chuẩn v2.0 §X-C thay thế. Không dùng chúng làm cổng chặn mới.
 
 ## 2. Giải pháp đề xuất: hai cơ chế Q18 thuộc MỘT chuẩn, không sinh chuẩn thứ hai
 
