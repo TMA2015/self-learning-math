@@ -20,13 +20,13 @@ Bảng ban đầu **có thể** biểu diễn hàm số: cùng \(x=2\) luôn cho
 
 </details>
 
-### DRAFT-T1-M1-APP02 · Một phép toán có nghĩa chưa đủ
+### DRAFT-T1-M1-APP02 · Rút gọn rồi có được nhận điểm bị loại?
 
-Tìm tập xác định của \(\displaystyle f(x)=\frac{\sqrt{x+3}}{x-2}\). Kiểm tra riêng \(x=-3\) và \(x=2\).
+Cho \(f(x)=\dfrac{x^2-1}{x-1}\). Một bạn rút gọn thành \(x+1\), rồi khẳng định tập xác định là \(\mathbb R\). Em hãy phản biện và nêu điều gì đúng, điều gì sai trong lời giải ấy.
 
 <details><summary>Đối chiếu</summary>
 
-Phải có \(x+3\ge0\) và \(x-2\ne0\). Do đó \(D=[-3,+\infty)\setminus\{2\}\). Tại \(-3\), tử bằng 0 và mẫu bằng \(-5\), nên **nhận** \(-3\) và \(f(-3)=0\). Tại 2, mẫu bằng 0, phải loại.
+Từ biểu thức **ban đầu**, mẫu số \(x-1\) yêu cầu \(x\ne1\). Trên miền ấy, \(\dfrac{(x-1)(x+1)}{x-1}=x+1\). Nhưng phép rút gọn chỉ hợp lệ khi \(x-1\ne0\), nên tập xác định của \(f\) vẫn là \(\mathbb R\setminus\{1\}\). Biểu thức mới \(x+1\), nếu được định nghĩa riêng, có miền rộng hơn; nó không tự làm thay đổi miền ban đầu của \(f\).
 
 </details>
 
@@ -78,7 +78,7 @@ Với \(p(x)=(x-1)^2+2\), hãy tìm tập giá trị nếu (a) \(D=\mathbb R\), 
 
 <details><summary>Đối chiếu</summary>
 
-(a) \(T=[2,+\infty)\). (b) Vì \(-1\le x-1\le1\) nên \(0\le(x-1)^2\le1\) và \(T=[2,3]\). Các cận được đạt tại \(x=1\) và \(x=0\) hoặc 2; các giá trị trung gian được nhận bởi tính liên tục của bình phương. Miền bị thu hẹp nên các đầu ra lớn hơn 3 không còn xuất hiện.
+(a) \(T=[2,+\infty)\). (b) Vì \(-1\le x-1\le1\) nên \(0\le(x-1)^2\le1\) và \(T=[2,3]\). Hai cận đạt tại \(x=1\) và \(x=0\) hoặc 2. Mọi \(y\in[2,3]\) đều đạt được bằng cách chọn \(x=1+\sqrt{y-2}\in[1,2]\). Miền bị thu hẹp nên các đầu ra lớn hơn 3 không còn xuất hiện.
 
 </details>
 
@@ -115,7 +115,7 @@ Trên \(\mathbb R\), nhận xét đúng vì \((x-1)^2\) có thể lớn tùy ý.
 | DRAFT ID | Mức | Outcome candidate | Vai trò đề xuất |
 |---|---|---|---|
 | APP01 | nhận biết | quy tắc đơn trị, bảng giá trị | TOPIC_PRACTICE |
-| APP02–03 | thông hiểu | điều kiện căn và mẫu | TOPIC_PRACTICE |
+| APP02–03 | thông hiểu | miền giữ nguyên khi rút gọn; căn ở mẫu | TOPIC_PRACTICE |
 | APP04 | vận dụng | miền gắn bối cảnh thực tế | TOPIC_PRACTICE |
 | APP05–06 | vận dụng | giao nhiều điều kiện, điểm biên | TOPIC_PRACTICE |
 | APP07 | vận dụng | miền đổi kéo theo tập giá trị | TOPIC_PRACTICE |
