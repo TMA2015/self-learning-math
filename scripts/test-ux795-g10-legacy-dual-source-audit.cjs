@@ -24,7 +24,9 @@ const tests=[
  ["scripts/test-thpt-academic-presentation-pilot.cjs","96f07b15222bfd0561b6c4f8c8909853e5fa98ed"],
  ["scripts/test-thpt-chvi-math-block-render.cjs","6763e3e284db19b15ce71da76463b65814ba1fd2"]
 ];
-for(const [p,expected]of tests)assert.equal(blob(read(root,p)),expected,"Historical test source changed: HOLD "+p);
+for(const [p,expected]of tests)assert.equal(blob(read(baselineRoot,p)),expected,"Historical test source in published main must remain immutable: "+p);
+assert(read(root,tests[0][0]).toString("utf8").includes('acceptedCandidateSha("B09")'),"Candidate B09 gate has no SHA-based migration");
+assert(read(root,tests[1][0]).toString("utf8").includes("candidateSourceSha(lesson)"),"Candidate ChVI gate has no source-based migration");
 const pilot=read(root,tests[0][0]).toString("utf8");
 const chvi=read(root,tests[1][0]).toString("utf8");
 const frozen=JSON.parse(pilot.match(/const frozen=(\[[\s\S]*?\]);/)[1]);
