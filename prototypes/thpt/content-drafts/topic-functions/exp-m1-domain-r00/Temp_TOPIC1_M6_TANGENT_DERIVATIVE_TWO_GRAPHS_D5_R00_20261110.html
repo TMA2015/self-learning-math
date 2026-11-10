@@ -45,7 +45,7 @@ body{margin:0;padding:12px}
 <div class="d5-graph"><h2>Đồ thị f′(x): dấu đạo hàm</h2><canvas id="derivative" role="img" aria-label="Đồ thị đạo hàm với điểm được đánh dấu tại x không. Dấu của đạo hàm được giải thích bằng chữ."></canvas></div>
 </div>
 <div class="d5-info" id="info" role="status" aria-live="polite"></div>
-<p class="d5-foot">Đường xanh dương: f(x). Xanh lá: tiếp tuyến tại M có hệ số góc f′(x₀). Cam nét đứt: cát tuyến qua M và N ứng với Δx = h. Tại một điểm có đạo hàm bằng 0, <strong>chưa thể kết luận có cực trị</strong>; cần quan sát dấu đạo hàm hai phía hoặc lập luận tương đương.</p>
+<p class="d5-foot">Đường xanh dương: f(x). Xanh lá: tiếp tuyến tại M có hệ số góc f′(x₀). Cam nét đứt: cát tuyến qua M và N ứng với Δx = h. Khi kéo tới gần biên, thang trục có thể tự co dãn để luôn nhìn được M và N. Tại một điểm có đạo hàm bằng 0, <strong>chưa thể kết luận có cực trị</strong>; cần quan sát dấu đạo hàm hai phía hoặc lập luận tương đương.</p>
 <p class="d5-foot">Hoạt động công khai trong phần Kiến thức/Vận dụng, không chấm chính thức và không ghi Skill Mastery.</p>
 </main></section>
 <script>
@@ -61,8 +61,9 @@ function plot(canvas,fun,rangeX,rangeY,curveOptions,extra){
  const xx=t=>left+(t-rangeX[0])/(rangeX[1]-rangeX[0])*(right-left);
  const yy=t=>bottom-(t-rangeY[0])/(rangeY[1]-rangeY[0])*(bottom-top);
  c.lineWidth=1;c.strokeStyle="#e1edf4";c.font="12px system-ui,Arial";c.fillStyle="#557286";
- for(let k=-2;k<=2;k++){const px=xx(k);c.beginPath();c.moveTo(px,top);c.lineTo(px,bottom);c.stroke();c.fillText(String(k),px-4,bottom+17);}
- for(let k=Math.ceil(rangeY[0]);k<=Math.floor(rangeY[1]);k++){const py=yy(k);c.beginPath();c.moveTo(left,py);c.lineTo(right,py);c.stroke();if(k%2===0)c.fillText(String(k),4,py+4);}
+ for(let k=Math.ceil(rangeX[0]);k<=Math.floor(rangeX[1]);k++){const px=xx(k);c.beginPath();c.moveTo(px,top);c.lineTo(px,bottom);c.stroke();c.fillText(String(k),px-4,bottom+17);}
+ const tickStep=Math.max(1,Math.ceil((rangeY[1]-rangeY[0])/12));
+ for(let k=Math.ceil(rangeY[0]/tickStep)*tickStep;k<=Math.floor(rangeY[1]);k+=tickStep){const py=yy(k);c.beginPath();c.moveTo(left,py);c.lineTo(right,py);c.stroke();c.fillText(String(k),4,py+4);}
  c.lineWidth=1.4;c.strokeStyle="#839eb1";c.beginPath();c.moveTo(xx(0),top);c.lineTo(xx(0),bottom);c.moveTo(left,yy(0));c.lineTo(right,yy(0));c.stroke();
  c.save();c.beginPath();c.rect(left,top,right-left,bottom-top);c.clip();
  function curve(fn,color,width,dashes=[]){c.strokeStyle=color;c.lineWidth=width;c.setLineDash(dashes);c.beginPath();for(let i=0;i<=320;i++){const t=rangeX[0]+(rangeX[1]-rangeX[0])*i/320;const pos=[xx(t),yy(fn(t))];if(i===0)c.moveTo(...pos);else c.lineTo(...pos);}c.stroke();c.setLineDash([]);}
@@ -73,7 +74,10 @@ function plot(canvas,fun,rangeX,rangeY,curveOptions,extra){
 function draw(){
  const m=model(),x0=Number(x.value),h=Number(step.value)*Number(side.value),y0=m.f(x0),next=m.f(x0+h),sec=(next-y0)/h,tan=m.df(x0);
  get("xvalue").textContent=pretty(x0);get("hvalue").textContent=pretty(h);
- plot(get("graph"),m.f,[-2.6,2.6],mode.value==="flat"?[-10,10]:[-5,5],{color:"#1687b4"},o=>{
+ const xN=x0+h;
+ const graphRangeX=[Math.min(-2.6,xN-0.35),Math.max(2.6,xN+0.35)];
+ const graphYBound=Math.ceil(Math.max(mode.value==="flat"?10:5,Math.abs(y0)*1.18,Math.abs(next)*1.18));
+ plot(get("graph"),m.f,graphRangeX,[-graphYBound,graphYBound],{color:"#1687b4"},o=>{
  o.curve(t=>y0+tan*(t-x0),"#218f73",2.2);
  o.curve(t=>y0+sec*(t-x0),"#e9922a",2,[6,5]);
  o.dot(x0,y0,"#e9922a");o.dot(x0+h,next,"#1687b4");
