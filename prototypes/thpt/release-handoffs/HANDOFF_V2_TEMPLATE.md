@@ -2,18 +2,22 @@
 
 **Important:** This is a template only; never mark this document CONTENT_READY, never select it as NotebookLM source, and never place it in `release-queue/ready/`. Fill all concrete evidence in a separate chapter-specific file under `release-handoffs/`.
 
-PACKET_ID: REPLACE_WITH_G11_SGK_CHI
+PACKET_ID: REPLACE_WITH_REAL_PACKET_ID
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 1.0.0
-STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 1.0.0
+STANDARD_VERSION: REPLACE_WITH_EFFECTIVE_STANDARD_VERSION
+HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
+LEARNING_PATH: REPLACE_WITH_SGK_CHAPTER_OR_TOPIC
+RELEASE_SCOPE: REPLACE_WITH_APPROVED_SCOPE
+ACADEMIC_SOURCE_PATH: REPLACE_WITH_CANONICAL_PUBLIC_SOURCE_PATH
 ACADEMIC_SOURCE_BLOB: REPLACE_WITH_40_HEX
+REVIEW_RECEIPT_PATH: REPLACE_WITH_REAL_RECEIPT_PATH
 REVIEW_RECEIPT_BLOB: REPLACE_WITH_40_HEX
-ACADEMIC_VERDICT: PENDING
-PEDAGOGICAL_VERDICT: PENDING
+QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
+ACADEMIC_VERDICT: PENDING_NOT_INHERITED
+PEDAGOGICAL_VERDICT: PENDING_NOT_INHERITED
+Q18_VERIFICATION_MODE: REPLACE_WITH_MODE_ALLOWED_FOR_SCOPE
+ASSESSMENT_MODE: REPLACE_WITH_OWNER_APPROVED_MODE
 BLOCKERS: OPEN
-ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
-RELEASE_SCOPE: FULL_LEARNING_PATH
 
 ## S1_SGK_SBT_SOURCE
 Official KNTT SGK/SBT edition, volume, chapter, *verified* page ranges, RD0 coverage and source evidence. Do not invent pages.
@@ -36,40 +40,29 @@ Official KNTT SGK/SBT edition, volume, chapter, *verified* page ranges, RD0 cove
 Actual source locations per lesson/outcome for concepts, distinct worked examples, Core/Practice/Application, Written/Anchor, authentic/source evidence, D6 remediation.
 
 ## PED1_PED6_EVIDENCE
-Exact evidence for motivation, prerequisite terms, mathematical meaning before formula/algorithm, informative SVG/table, why-based solution, independent first attempt and remediation. Provide separate independent pedagogical verdict on this snapshot.
+Provide outcome-scoped evidence for a **natural, continuous teaching narrative**, prerequisite help in context, mathematical meaning before formulas, relevant figure reading, reasoned examples, purposeful first-try/reveal and effective remediation. Do not require mechanical learner-facing WHY/PED headings. Verify Academic/PED via the Q18 mode effective for this scope and exact snapshot.
 
 ## QUALITY_Q01_Q18_EVIDENCE
 
-**ONE normative standard only:** `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md` defines Q01–Q18. This chapter table is an **evidence map**, not a new academic rubric. Each Q must have specific lesson/outcome/source pointers; `NOT_APPLICABLE` needs precise reason and cannot hide a mandatory learning objective.
+**Chỉ có một chuẩn:** prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md, dùng **VERSION thực hiệu lực trên main** (tên đường dẫn lịch sử không phản ánh version hiện hành). Đây là bảng **chứng cứ QA nội bộ** theo bài/outcome, không phải bảng nội dung học sinh đọc. Điền **đủ đúng 18 dòng Q01–Q18** và chỉ ra nguồn chứng minh toán/PED, reuse, assessment và review đúng mode/snapshot. Khi cổng V2 cho phép bảng Topic compact, dùng đúng nguồn A1–A7 có blob, không chép lại bảng thứ hai.
 
-| Q_ID | AFFECTED_LESSON_OUTCOME_IDS | SOURCE_EVIDENCE_POINTERS | INDEPENDENT_REVIEW_RECEIPT | RELEASE_RECHECK_MAPPING |
+| Q_ID | LESSON_OUTCOME_IDS | AUTHORING_EVIDENCE | INDEPENDENT_OR_APPROVED_MODE_RECEIPT | RELEASE_RECHECK |
 | --- | --- | --- | --- | --- |
-| Q01 | REPLACE_WITH_EXACT_SCOPE | REPLACE_WITH_S1_SOURCE | REPLACE_WITH_REVIEW | REPLACE_WITH_R_AP_STEP |
-| Q02 | REPLACE_WITH_EXACT_SCOPE | REPLACE_WITH_OUTCOME_MATRIX | REPLACE_WITH_REVIEW | REPLACE_WITH_R_AP_STEP |
-<!-- Fill one non-placeholder row each for Q03 through Q18 before CONTENT_READY. New V2 CI requires exactly Q01..Q18, no duplicates. Never claim self-authored PASS from this map. -->
-
-## QUALITY_Q01_Q18_EVIDENCE
-
-Single normative source: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`. This is a traceability register, not a second quality standard. Provide a concrete lesson/outcome/source evidence pointer and independent reviewer receipt for **each** of Q01..Q18; RELEASE checks the same criterion in the rendered product, not mathematics again.
-
-| Q_ID | LESSON_OUTCOME_IDS | AUTHORING_EVIDENCE | INDEPENDENT_REVIEW_RECEIPT | RELEASE_RECHECK |
-| --- | --- | --- | --- | --- |
-| Q01 | REPLACE_SCOPE | REPLACE_S1 | REPLACE_RECEIPT | REPLACE_R_AP |
-| Q02 | REPLACE_SCOPE | REPLACE_MATRIX | REPLACE_RECEIPT | REPLACE_R_AP |
-
-<!-- Complete Q03 through Q18 with real evidence before CONTENT_READY. Template cannot be passed as a ready packet. -->
+| Q01 | REPLACE_WITH_SCOPE | REPLACE_WITH_REAL_S1_AND_OUTCOME_EVIDENCE | REPLACE_WITH_SCOPE_VERDICT | REPLACE_WITH_RECHECK |
+| Q02 | REPLACE_WITH_SCOPE | REPLACE_WITH_REAL_DEPTH_AND_ITEM_EVIDENCE | REPLACE_WITH_SCOPE_VERDICT | REPLACE_WITH_RECHECK |
+<!-- Bổ sung Q03–Q18 đúng thứ tự, không trùng dòng và không dùng placeholder khi muốn READY. Không thêm điều Q19. -->
 
 ## REVIEW_SOURCE_RECEIPT
-For all newly standardized packets, independent NotebookLM receipt must explicitly cite `SLM-THPT-QUALITY-ONE`, effective `STANDARD_VERSION: 1.0.0`, and exact academic source SHA. Reviewer packet IDs, exact selected Permanent Sources v2.0, SGK/SBT S1, expected/reviewed lesson/outcome/item reconciliation, P0/P1/P2, Academic + PED verdicts, proof that aliases map to canonical source. **The separate immutable REVIEW_RECEIPT_PATH file must explicitly contain the exact ACADEMIC_SOURCE_BLOB string**; all IDs listed above must actually appear in the frozen academic source file.
+Use the **current effective standard VERSION** and the exact source blob. For new Topic, new questions/outcomes/conditions/keys/rubrics/RD1, Q18 independent Academic + PED review remains required per scoped delta; where a formally approved alternative Q18 mode exists, record its exact evidence and limits (current v2.0 only grants SGK Knowledge enrichment with owner-delegated self-verification, not new Topic). If NotebookLM independent review is actually requested, use **exactly five Permanent Sources THPT v2.1** and S1, and deliver a real Temp_ Markdown/TXT file plus short prompt per Source 06. Preserve reviewer P0/P1/P2, expected/reviewed IDs, and exact source/receipt. Do not call an internal SHA check a reviewer PASS.
 
 ## DELTA_LEDGER
-Class A/B/C/D, affected IDs, corrections, reviewer re-review when C/D, source equivalence proof when B; `NONE` only if no changes.
+Class A/B/C/D for the **whole authored unit**, with affected lesson/outcomes, real math/PED source proofs, and **review only affected Delta C per the effective Q18 mode**; A/B are source-equivalent and do not automatically require another NotebookLM round. Keep one ledger per completed section/topic, not one QA file for every sentence or image.
 
 ## PRIVATE_RD1_CUSTODY_METADATA
 Private bank item COUNT, SHA-256, custody/accessibility, assessment outcome mapping, exposure plan. **Never paste private stems, answer keys, rubrics or full private bank into GitHub.** Release lane must authorize any public self-check variant separately.
 
 ## AUTHOR_SIGNOFF
-Author source commit, handoff date, exact immutable public source path/blob, receipt path/blob, declared scope FULL_LEARNING_PATH vs PUBLIC_FORMATIVE_ONLY, known remaining blockers (must be NONE to hand off).
+Author signoff after completing a **whole unit of learning** (SGK chapter or Topic section/full topic): exact immutable public source and approved review scope/mode, outcome/item register, Q01–Q18 evidence, receipt and private custody metadata. Only CONTENT_READY when academic/PED and data-safety blockers are truly closed; no merge/deploy permission is conferred.
 
 ## RELEASE_ACCEPTANCE
 Release must validate this against the canonical `ready/PACKET_ID.md` and run live learner/technical QA; this document alone is NOT CONTENT_READY and never grants release permission.
