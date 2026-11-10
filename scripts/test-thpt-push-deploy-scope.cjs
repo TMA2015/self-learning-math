@@ -13,8 +13,21 @@ const path=require("node:path");
 const root=path.resolve(__dirname,"..");
 function isNonSiteFile(p) {
  if(typeof p!=="string"||!p||p.startsWith("/")||p.includes("..")||p.includes("\\"))return false;
+ const nonSiteThptMetadata=[
+   "prototypes/thpt/release-queue/",
+   "prototypes/thpt/release-handoffs/",
+   "prototypes/thpt/review-packets/",
+   "prototypes/thpt/content-drafts/",
+   "prototypes/thpt/standard-changes/",
+   "prototypes/thpt/notebooklm-permanent-sources/"
+ ];
+ const normativeDocs=[
+   "prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md",
+   "prototypes/thpt/THPT_TWO_LANE_SOURCE_LOCKED_HANDOFF_CONTRACT_v2_20261102.md"
+ ];
  return p.startsWith(".github/")||
-   p.startsWith("prototypes/thpt/")||
+   nonSiteThptMetadata.some(dir=>p.startsWith(dir))||
+   normativeDocs.includes(p)||
    p.startsWith("review-packets/")||
    /^scripts\/test-[^/]+\.(?:js|cjs|py)$/.test(p);
 }
@@ -35,7 +48,7 @@ function selfTest(){
  for(const p of ["docs/thpt-preview/sgk/chuong-vi/bai-18.md","docs/thpt-preview/chuyen-de/ham-so/kien-thuc.md",
    "docs/assets/javascripts/firebase-gemini-v1.js","docs/assets/data/thpt-g10-readiness/CHVI.json",
    "mkdocs.yml","mkdocs.thpt-preview.yml","hooks/topic_markdown_fixes.py",
-   "scripts/assemble-thpt-site.cjs","scripts/new-unknown-release-code.cjs","AGENTS.md"]){
+   "scripts/assemble-thpt-site.cjs","scripts/new-unknown-release-code.cjs","prototypes/thpt/unknown-runtime.js","AGENTS.md"]){
    assert.equal(decide([...safe,p]).deploy,true,"Must deploy when touched real/unknown site path "+p);
  }
  assert.equal(decide([...safe,...safe]).changed,safe.length);
