@@ -20,4 +20,8 @@ function expectedG10KnowledgeBlob(lesson,legacy){
  assert.notEqual(blobs[0],blobs[1],name+" Knowledge delta must not silently change baseline identity");
  return blobs[1];
 }
-module.exports={expectedG10KnowledgeBlob};
+function candidateG10KnowledgeBlob(lesson){
+ const sentinel="0".repeat(40),result=expectedG10KnowledgeBlob(lesson,sentinel);
+ return result===sentinel?null:result;
+}
+module.exports={expectedG10KnowledgeBlob,candidateG10KnowledgeBlob};
