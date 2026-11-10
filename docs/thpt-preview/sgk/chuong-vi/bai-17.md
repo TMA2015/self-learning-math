@@ -54,7 +54,7 @@
         <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
         <li><strong>Kiến thức gốc:</strong> Tam thức bậc hai là <span class="arithmatex">\(f(x)=ax^2+bx+c\)</span> với a≠0. Dấu của f(x) tại x chính là vị trí đồ thị so với trục Ox; nghiệm f(x)=0 là chỗ giao/tiếp xúc Ox. Số nghiệm được quyết định bởi <span class="arithmatex">\(\Delta\)</span>, còn hướng mở theo a.</li>
         <li><strong>Tự sửa:</strong> Viết hai ô: a dương/âm và Δ âm/bằng 0/dương, rồi mới kết luận theo hình và công thức. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
-        <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B17-C01">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
+        <li><strong>Luyện lại:</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B17-C01">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
 
 
     ### Tam thức bậc hai
@@ -96,7 +96,7 @@
         <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
         <li><strong>Kiến thức gốc:</strong> Với <span class="arithmatex">\(\Delta=0\)</span>, tam thức viết được dưới dạng <span class="arithmatex">\(a(x-x_0)^2\)</span>. Nó bằng 0 tại x0, có dấu của a ở mọi điểm khác; vì bình phương không âm nên không có sự đổi dấu khi đi qua nghiệm kép.</li>
         <li><strong>Tự sửa:</strong> Tô đậm điểm x0=2, thay x0 vào f được 0, xét số âm nhân bình phương ở hai phía. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
-        <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B17-C02">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
+        <li><strong>Luyện lại:</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B17-C02">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
 
 
     ### Định lí về dấu của tam thức bậc hai
@@ -166,7 +166,7 @@
         <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
         <li><strong>Kiến thức gốc:</strong> Nghiệm của <span class="arithmatex">\(f(x)=0\)</span> chia trục số thành những khoảng có dấu cố định. Để giải <span class="arithmatex">\(f(x)\le0\)</span>, ta chọn những khoảng mà f âm và <strong>lấy cả các nghiệm bằng 0</strong>; với dấu &lt; thì bỏ các đầu mút.</li>
         <li><strong>Tự sửa:</strong> Đặt dấu +−+ qua hai mốc x=2,3, lấy vùng âm cùng hai vị trí bằng 0. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
-        <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B17-P01">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
+        <li><strong>Luyện lại:</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B17-P01">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
 
 
     ### Bất phương trình bậc hai
@@ -209,7 +209,7 @@
         <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
         <li><strong>Kiến thức gốc:</strong> Với 20 m dây rào ba cạnh sát tường, đặt x là chiều rộng, chiều dài còn lại <span class="arithmatex">\(20-2x&gt;0\)</span> đòi <span class="arithmatex">\(0&lt;x&lt;10\)</span>. Diện tích <span class="arithmatex">\(S(x)=x(20-2x)\)</span>. Bất phương trình S≥48 cho khoảng x, nhưng phải <strong>giao với miền hình học</strong> trước khi kết luận.</li>
         <li><strong>Tự sửa:</strong> Vẽ ba đoạn lưới, viết 2x+L=20 rồi S=xL; cuối cùng kiểm từng nghiệm biên hợp hình. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
-        <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B17-P04">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
+        <li><strong>Luyện lại:</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B17-P04">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
 
 
 
@@ -228,7 +228,7 @@
 
     Để một thiết kế đảm bảo điều kiện dương với **mọi** x, ta không thể kiểm vài giá trị mẫu mà phải loại hết khả năng biểu thức bằng 0 hoặc âm.
 
-    Ôn \(\Delta=b^2-4ac\), định lí dấu với \(a>0\), \(\Delta<0\) thì tam thức dương mọi x. **Theo S1 đã đính chính**: hệ số bậc hai a cố định khác 0 là phạm vi Core; bài toán a phụ thuộc tham số có thể bằng 0 không tự coi bắt buộc. Em có thể học các kiến thức tiền đề ngay trong bài.
+    Ôn \(\Delta=b^2-4ac\), định lí dấu với \(a>0\), \(\Delta<0\) thì tam thức dương mọi x. **Lưu ý về phạm vi bài học:** Trong các bài toán tam thức bậc hai cơ bản, hệ số a cố định và khác 0; nếu a phụ thuộc tham số và có thể bằng 0 thì đó là trường hợp cần xem xét riêng, không áp dụng ngay bảng dấu của tam thức bậc hai. Em có thể học các kiến thức tiền đề ngay trong bài.
 
     Xét \(f_m(x)=x^2+2mx+4\). Do hệ số trước x² luôn \(1>0\), để \(f_m(x)>0\) với mọi \(x\in\mathbb R\) cần và đủ parabol mở lên **không chạm, không cắt** Ox: \(\Delta<0\). Nếu dấu yêu cầu là ≥0 thì \(\Delta\le0\) cũng được; phân biệt dấu là bản chất.
 
@@ -252,7 +252,7 @@
         <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
         <li><strong>Kiến thức gốc:</strong> Xét <span class="arithmatex">\(f_m(x)=x^2+2mx+4\)</span>. Do hệ số trước x² luôn <span class="arithmatex">\(1&gt;0\)</span>, để <span class="arithmatex">\(f_m(x)&gt;0\)</span> với mọi <span class="arithmatex">\(x\in\mathbb R\)</span> cần và đủ parabol mở lên <strong>không chạm, không cắt</strong> Ox: <span class="arithmatex">\(\Delta&lt;0\)</span>. Nếu dấu yêu cầu là ≥0 thì <span class="arithmatex">\(\Delta\le0\)</span> cũng được; phân biệt dấu là bản chất.</li>
         <li><strong>Tự sửa:</strong> Thử m=2 để thấy nghiệm kép làm f bằng 0; khóa a=1 cố định, giải riêng Δ&lt;0. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
-        <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B17-P03">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
+        <li><strong>Luyện lại:</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B17-P03">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
 
 
 
