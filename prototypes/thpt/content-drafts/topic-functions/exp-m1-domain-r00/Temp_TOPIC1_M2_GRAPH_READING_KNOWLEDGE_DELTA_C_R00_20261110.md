@@ -18,6 +18,29 @@ Ba dấu chấm trên hệ trục thể hiện đúng **ba lần đo**. Nhưng n
 
 Ví dụ tại phút thứ 2, không có dữ liệu đo trực tiếp. Nếu ta **giả định** nhiệt độ tăng đều từ phút 0 đến phút 4, phép nội suy cho \(T(2)=25\)°C. Nhưng con số 25 phụ thuộc vào giả định tăng đều, không suy ra chắc chắn chỉ từ ba lần đo.
 
+### Tự thử — Ba dấu chấm có quyết định được cả nét cong?
+
+Có ba vị trí được ghi trên một tờ giấy: \((0;1)\), \((1;0)\), \((2;1)\). Hai bạn học sinh muốn vẽ đường biểu diễn giữa các mốc. Một bạn chọn \(f(x)=(x-1)^2\), bạn kia chọn \(g(x)=|x-1|\), **cùng chỉ xét \(D=[0,2]\)**.
+
+Hãy tự thay \(x=0,1,2\) vào cả hai công thức: **đường nào đi qua đúng ba điểm?** Rồi dự đoán ở \(x=0{,}5\), hai bạn có vẽ cùng một điểm không. Đừng mở hình khi chưa thử tính.
+
+<details><summary>Đối chiếu và xem hai đường trên cùng hệ trục</summary>
+
+![Hai công thức đi qua cùng ba điểm nhưng khác giá trị giữa các mốc](Temp_FIG_TOPIC1_M2_SAME_POINTS_DIFFERENT_CURVES_R08.svg)
+
+Cả hai công thức đều cho các giá trị lần lượt **1, 0, 1** ở \(x=0,1,2\). Nhưng tại \(x=0{,}5\):
+\[
+f(0{,}5)=(0{,}5-1)^2=0{,}25,\qquad
+g(0{,}5)=|0{,}5-1|=0{,}5.
+\]
+Vì vậy **ba điểm riêng lẻ không xác định duy nhất đường nối giữa chúng**. Hai đường hợp lệ theo đúng ba mốc nhưng mô tả những giá trị ở giữa khác nhau.
+
+</details>
+
+**Điều quyết định nằm ở dữ kiện được cho:** Nếu chỉ biết *ba cặp số*, em không có quyền khẳng định giá trị ở giữa. Nếu bài toán **cho hẳn quy tắc** \(f(x)=(x-1)^2\) và miền \(D=[0,2]\), thì tại mọi \(x\in D\) ta có thể tính \(f(x)\); cả đoạn parabol trong miền ấy được xác định bằng công thức. Nhưng nếu chỉ cho bảng ba điểm, không được tự giả định nó là parabol.
+
+Đây là cầu nối từ M1 sang M2: **M1 xác định đầu vào nào hợp lệ; M2 hỏi những giá trị nào thật sự được dữ kiện hoặc quy tắc xác định.** Ở M3, ta sẽ còn dùng chính đoạn parabol \(f(x)=(x-1)^2\) trên \([0,2]\) để tìm hiểu khi dịch đồ thị, **miền đầu vào cũng phải dịch theo**.
+
 **Điều cần nhớ:** hãy nhìn tên và đơn vị trên hai trục, xem các dấu chấm là **dữ liệu đã đo** hay điểm của **mô hình toán**, rồi mới đọc giá trị ở giữa. Nếu chỉ có bảng với ba mốc, nói “lúc nào nước cũng nóng dần” là kết luận quá mức.
 
 ### Miền rời rạc không phải một nét vẽ liên tục
@@ -104,13 +127,14 @@ Lấy \(x_1=1\), \(x_2=2\). Ta có \(x_1<x_2\), nhưng \(f(x_1)=f(x_2)=3\). Như
 
 ## Ghi nhớ để nối sang M3
 
-Khi đọc đồ thị, hãy tách ba câu hỏi: **đầu vào nào được nhận, điểm nào thật sự thuộc đồ thị, và kết luận đang nói về một điểm, một đoạn hay cả khoảng?** Không dùng một nét vẽ để thay điều kiện toán học. Sang M3, khi khảo sát parabol trên một miền bị giới hạn, ba câu hỏi này vẫn quan trọng như khi đọc hàm từng đoạn.
+Khi đọc đồ thị, hãy tách ba câu hỏi: **đầu vào nào được nhận, điểm nào thật sự thuộc đồ thị, và kết luận đang nói về một điểm, một đoạn hay cả khoảng?** Không dùng một nét vẽ để thay điều kiện toán học. **Hãy nhớ hình hai đường cùng đi qua ba điểm:** khi sang M3, ta chỉ giữ công thức \(f(x)=(x-1)^2\) trên **đúng miền \([0,2]\)**. Một phép dịch đồ thị không cho phép tự nối thêm điểm ngoài miền; em sẽ thấy ba điểm \((0;1)\), \((1;0)\), \((2;1)\) chuyển đi đâu khi dịch sang phải và lên trên.
 
 ---
 
 ### AUTHORING CONTROL — KHÔNG RENDER CHO HỌC SINH
 
 - S1: SGK KNTT Toán 10 Tập 2, B15 in5–10/PDF6–11, đã kiểm ảnh trước đó. Ví dụ \(f,g\) và bảng nhiệt độ là ví dụ do tác giả biên soạn.
+- Ví dụ ba mốc / hai công thức \((x-1)^2\) và \(|x-1|\) cùng SVG đi kèm là **bổ sung minh họa tác giả tự kiểm**, không giả làm tình huống đo đạc SGK; mô hình parabol giới hạn này được **tái sử dụng** ở M3, không tạo item đánh giá độc lập.
 - R18 canonical blob \`2340ea4975b37a457363eea59dd617070934983c\` phải giữ bất biến. M2 cũ đã có một ví dụ hàm từng đoạn với mô hình giá theo thời gian; phần mới có mục đích **chấm rỗng/đặc + phản ví dụ đồng biến trên miền**; QA Q15 phải quyết định có dùng một item đã tồn tại hay phát hành thêm item mới.
 - Câu Vận dụng trong bản kiến thức là hoạt động công khai, **không** dùng RD1 hoặc ghi Mastery.
 - \`DELTA_C_ACADEMIC_MATERIAL\`; chưa NotebookLM Academic/PED PASS, chưa CONTENT_READY. Không thay Golden UI/website.
