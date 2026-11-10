@@ -23,13 +23,13 @@ Tập xác định không nhất thiết là toàn bộ số thực, cũng khôn
 
 ### Ví dụ 1 · Khi công thức đúng nhưng đầu vào không thực tế
 
-Một dịch vụ bán vé thu 8 nghìn đồng phí xử lý đơn và 12 nghìn đồng cho mỗi vé. Nếu mua \(n\) vé, số tiền phải trả (nghìn đồng) là
+Một dịch vụ bán vé thu 8 nghìn đồng phí xử lý đơn và 12 nghìn đồng cho mỗi vé. Nếu mua \(n\) vé, với \(n\) là số nguyên dương, số tiền phải trả (nghìn đồng) là
 
 \[
 C(n)=8+12n.
 \]
 
-Về đại số, ta có thể thay \(n=2{,}5\) và nhận 38. Nhưng khách hàng không thể mua **hai vé rưỡi** theo mô hình đã nêu. Vì vậy, nếu số vé không bị giới hạn trên, miền đầu vào của **bài toán thực tế** là \(D=\{0,1,2,\ldots\}\), không phải \(\mathbb R\). Nếu đơn hàng chỉ được mua tối đa 6 vé, \(D\) thu hẹp thành \(\{0,1,\ldots,6\}\). Khi đó tập giá trị là \(\{8,20,32,44,56,68,80\}\).
+Về đại số, ta có thể thay \(n=2{,}5\) và nhận 38. Nhưng khách hàng không thể mua **hai vé rưỡi** theo mô hình đã nêu. Vì vậy, nếu số vé không bị giới hạn trên, miền đầu vào của **bài toán thực tế** là \(D=\{1,2,3,\ldots\}\), không phải \(\mathbb R\). Nếu đơn hàng chỉ được mua tối đa 6 vé, \(D\) thu hẹp thành \(\{1,2,\ldots,6\}\). Khi đó tập giá trị là \(\{20,32,44,56,68,80\}\).
 
 **Vì sao cần phân biệt?** Một phép tính thực hiện được trên giấy chưa chắc mô tả được một tình huống được phép xảy ra. Khi đổi miền đầu vào, tập giá trị và câu trả lời tối ưu cũng có thể thay đổi.
 
