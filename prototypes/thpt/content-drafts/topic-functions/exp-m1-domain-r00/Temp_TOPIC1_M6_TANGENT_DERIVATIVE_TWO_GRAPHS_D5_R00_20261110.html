@@ -73,12 +73,12 @@ function plot(canvas,fun,rangeX,rangeY,curveOptions,extra){
 function draw(){
  const m=model(),x0=Number(x.value),h=Number(step.value)*Number(side.value),y0=m.f(x0),next=m.f(x0+h),sec=(next-y0)/h,tan=m.df(x0);
  get("xvalue").textContent=pretty(x0);get("hvalue").textContent=pretty(h);
- plot(get("graph"),m.f,[-2.6,2.6],[-5,5],{color:"#1687b4"},o=>{
+ plot(get("graph"),m.f,[-2.6,2.6],mode.value==="flat"?[-10,10]:[-5,5],{color:"#1687b4"},o=>{
  o.curve(t=>y0+tan*(t-x0),"#218f73",2.2);
  o.curve(t=>y0+sec*(t-x0),"#e9922a",2,[6,5]);
  o.dot(x0,y0,"#e9922a");o.dot(x0+h,next,"#1687b4");
  });
- plot(get("derivative"),m.df,[-2.6,2.6],[-2,7.5],{color:"#218f73"},o=>{
+ plot(get("derivative"),m.df,[-2.6,2.6],mode.value==="flat"?[-1,13]:[-2,7.5],{color:"#218f73"},o=>{
  o.dot(x0,tan,"#e9922a");
  o.c.beginPath();o.c.moveTo(o.xx(x0),o.yy(0));o.c.lineTo(o.xx(x0),o.yy(tan));o.c.strokeStyle="#e9922a";o.c.setLineDash([4,4]);o.c.lineWidth=1.5;o.c.stroke();o.c.setLineDash([]);
  });
