@@ -87,6 +87,15 @@ Một `item_id` có thể dùng SGK Core và Topic Practice cơ bản; expected/
 **GATE DESIGN:** chỉ 3 cổng chặn hữu hiệu: `CONTENT_MATH_PED_SOURCE`, `ASSESSMENT_DATA_SAFETY`, `RENDER_RELEASE_QA`. SHA/FNV/số công thức của bản **lịch sử** chỉ replay trên bản lịch sử; với candidate dùng exact SHA và nội dung toán/PED thực theo delta, không bắt giống văn bản cũ. Chuyên đề mới sử dụng V2 đã merge ở PR #799 và độc lập với Q18 Knowledge SGK. Không có gate mới trùng lặp hoặc reviewer giả.
 
 
+## VIII-A. Quyết định owner 11/11/2026 — thực hành kiểm tra ngay khi viết và chốt READY không lặp vòng
+
+**Áp dụng sau khi `SLM-THPT-QUALITY-ONE v3.0.1` hiệu lực trên main.** Tự kiểm Q18 là phần công việc biên soạn, không một chiến dịch đi tìm chứng cứ sau khi viết. Nguồn đã viết, phép tính/điều kiện đã thử, đối chiếu SGK đã thực hiện, ví dụ/hình/rubric/ID và lỗi đã sửa là bằng chứng thực. Một receipt ngắn dẫn đúng các phần đó theo source Git blob SHA; không đòi NotebookLM hay thêm chứng từ ngoài nếu tác giả xác minh được.
+
+- Tài liệu đã **kiểm nội dung** đầy đủ Q01–Q18, A1–A7, không P0/P1 → tác giả **khóa source + ghi receipt + hoàn thiện V2/ready/REGISTER trong cùng lượt chốt** → `AUTHORING_PASS = CONTENT_READY`. Không có lần review lại do thiếu giấy tờ.
+- Chưa kiểm xong một bài/outcome thực chất → `Q18_CONTENT_CHECK_PENDING` nêu phạm vi còn phải làm; phát hiện lỗi/không thể xác minh điều kiện quan trọng → `Q18_SUBSTANTIVE_HOLD` nêu sai sót, cách sửa; nội dung đã QA đạt nhưng chưa hoàn tất định danh/handoff → `HANDOFF_PACKAGING_PENDING`, tác giả tự đóng hồ sơ, không biến thành HOLD toán.
+- SGK Knowledge **đã phát hành** và chỉ enrichment theo owner thì dùng một `ENRICHMENT_DELTA_RECEIPT` mỗi batch, không phải 27 handoff CONTENT_READY. RELEASE vẫn có 3 gate: CONTENT_MATH_PED_SOURCE / ASSESSMENT_DATA_SAFETY / RENDER_RELEASE_QA và quyền phát hành.
+- CI schema và receipt chỉ xác thực tính nhất quán, không tự cho Academic/PED PASS; không tái dùng verdict từ snapshot khác hoặc gửi reviewer vì hình thức.
+
 ## IX. OWNER OVERRIDE — Q18 v3.0.0, 11/11/2026
 
 - **AUTHORING đang PAUSED trong thời gian đồng bộ quy trình.** Sau khi tiêu chuẩn–test–handoff nhất quán, tác giả tiếp tục biên soạn Topic theo từng phần trọn vẹn. Không mở lại AUTHORING trước khi hoàn tất đồng bộ.

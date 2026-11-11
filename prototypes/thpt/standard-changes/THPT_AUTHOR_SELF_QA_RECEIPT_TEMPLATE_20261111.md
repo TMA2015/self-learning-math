@@ -1,12 +1,12 @@
 # THPT — AUTHOR_SELF_QA_RECEIPT · MẪU / KHÔNG PHẢI PASS
 
 **STATUS:** TEMPLATE_ONLY_NOT_CONTENT_READY  
-**Căn cứ:** quyết định owner 11/11/2026, `SLM-THPT-QUALITY-ONE v3.0.0` §X-D **chỉ sau merge governance vào main**. Mẫu này chỉ dành cho đánh giá tự chịu trách nhiệm của tác giả, **không phải** chứng chỉ NotebookLM hoặc quyền phát hành. Giữ đúng một nguồn canonical và một receipt cho **một phần trọn vẹn hoặc một Chuyên đề**, không một receipt sau từng đoạn chỉnh.
+**Căn cứ:** quyết định owner 11/11/2026, `SLM-THPT-QUALITY-ONE v3.0.1` §X-D **chỉ sau merge governance vào main**. Mẫu này chỉ dành cho đánh giá tự chịu trách nhiệm của tác giả, **không phải** chứng chỉ NotebookLM hoặc quyền phát hành. Giữ đúng một nguồn canonical và một receipt cho **một phần trọn vẹn hoặc một Chuyên đề**, không một receipt sau từng đoạn chỉnh.
 
 AUTHOR_SELF_QA_RECEIPT: TEMPLATE_ONLY
 PACKET_ID: REPLACE_PACKET
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.0.0
+STANDARD_VERSION: 3.0.1
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/REPLACE_COMPLETE_SOURCE.md
 SOURCE_BLOB: REPLACE_WITH_40_HEX
@@ -23,6 +23,8 @@ FIGURE_MODEL_QA: REPLACE_WITH_FORMULA_LABELS_DOMAINS_EDGE_CASES_INTERACTION_OFFL
 P0: UNVERIFIED
 P1: UNVERIFIED
 AUTHOR_SIGNOFF: NOT_SIGNED
+
+**HƯỚNG DẪN Q18 v3.0.1 — KHÔNG THÊM VÒNG NGHIỆM THU:** Đây là biên bản ngắn ghi lại phép kiểm toán học/S1/sư phạm/assessment tác giả **đã thực hiện khi biên soạn**, không phải yêu cầu tìm thêm reviewer hoặc lập chứng cứ bên ngoài. Tác giả có thể ghi ma trận ngắn và trỏ chính xác tới từng phần của nguồn/asset/đáp án đã kiểm; tránh chép lại toàn bộ học liệu. Chưa kiểm thực chất = `Q18_CONTENT_CHECK_PENDING`, lỗi/không chắc điều kiện trọng yếu = `Q18_SUBSTANTIVE_HOLD`, đã QA PASS nhưng đang khóa SHA/handoff = `HANDOFF_PACKAGING_PENDING` (hoàn thành **ngay trong cùng lượt**). Q01–Q18 và A1–A7 đạt, P0/P1=0 → ký receipt + source lock + V2 + ready/ + REGISTER **trong một bước AUTHORING PASS = CONTENT_READY**. Không có vòng reviewer tiếp theo. Nội dung SGK Knowledge đã phát hành không đổi Core/outcome/bank dùng receipt enrichment theo batch, không dùng template Topic này.
 
 ## KẾT QUẢ TỪNG OUTCOME — bắt buộc có chứng cứ, không đánh PASS hàng loạt
 

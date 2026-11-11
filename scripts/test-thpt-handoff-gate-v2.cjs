@@ -50,7 +50,7 @@ function verifyBlob(value, file) {
 // Version follows the ONE actual normative source, not a hand-maintained
 // release-gate list. Grandfather ONLY previously effective historical versions.
 // Governance drafts (even when present in a PR checkout) are NOT active modes.
-const historicalVersions=["1.0.0","1.1.0","1.2.0","2.0.0"];
+const historicalVersions=["1.0.0","1.1.0","1.2.0","2.0.0","3.0.0"];
 function acceptedStandardVersions(overrideText) {
   const raw=overrideText??fs.readFileSync(path.join(root,"prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md"),"utf8");
   const id=raw.match(/^\*\*STANDARD_ID:\*\*\s*\x60([A-Za-z0-9-]+)\x60/m);
@@ -76,13 +76,15 @@ function verifyQ18Mode(data,handoff,receipt,sourceBlob,lane) {
   assert.equal(field(data,"PEDAGOGICAL_VERDICT"),state,"Wrong PED mode/verdict pairing");
   if(self) {
     assert(["TOPIC","SGK_CHAPTER"].includes(lane),"Self-QA mode limited to SGK/Topic academic material");
-    assert.equal(field(data,"STANDARD_VERSION"),"3.0.0","Self QA requires effective v3.0 standard");
+    const selfVersion=field(data,"STANDARD_VERSION");
+    assert(["3.0.0","3.0.1"].includes(selfVersion) && acceptedStandardVersions().includes(selfVersion),
+      "Self QA requires owner-effective v3.x, not a prospective standard");
     assert.equal(field(handoff,"Q18_VERIFICATION_MODE"),mode,"Self QA mode mismatch");
     assert.equal(field(handoff,"ACADEMIC_VERDICT"),"SELF_VERIFIED","Never impersonate independent Academic PASS");
     assert.equal(field(handoff,"PEDAGOGICAL_VERDICT"),"SELF_VERIFIED","Never impersonate independent PED PASS");
     const required=[
       "AUTHOR_SELF_QA_RECEIPT","SOURCE_BLOB: "+sourceBlob,
-      "STANDARD_VERSION: 3.0.0","S1_RECEIPT:","OUTCOME_AUDIT:",
+      "STANDARD_VERSION: "+selfVersion,"S1_RECEIPT:","OUTCOME_AUDIT:",
       "MATH_VERIFICATION:","PED_VERIFICATION:","CANONICAL_Q15:",
       "ASSESSMENT_Q16:","P0: 0","P1: 0","AUTHOR_SIGNOFF:"
     ];
@@ -344,11 +346,11 @@ function selfTest() {
   assert.equal(verifyLaneScope("LEARNING_PATH: SGK_CHAPTER\nRELEASE_SCOPE: FULL_LEARNING_PATH"), "SGK_CHAPTER");
   const norm=(v,status)=>"**STANDARD_ID:** \x60SLM-THPT-QUALITY-ONE\x60\n**VERSION:** \x60"+v+"\x60\n**STATUS:** \x60"+status+"\x60";
   assert(acceptedStandardVersions().includes("1.2.0"),"Current normative v1.2.0 must work");
-  assert(!acceptedStandardVersions(norm("3.0.0","GOVERNANCE_PROPOSAL_OWNER_REVIEW_PENDING")).includes("3.0.0"),
+  assert(!acceptedStandardVersions(norm("3.0.1","GOVERNANCE_PROPOSAL_OWNER_REVIEW_PENDING")).includes("3.0.1"),
     "Draft v3 Q18 version must NOT become a release version");
-  assert(acceptedStandardVersions(norm("3.0.0","OWNER_APPROVED_EFFECTIVE")).includes("3.0.0"),
+  assert(acceptedStandardVersions(norm("3.0.1","OWNER_APPROVED_EFFECTIVE")).includes("3.0.1"),
     "Approved future single standard must not need a stale V2 allowlist update");
-  assert.throws(()=>acceptedStandardVersions(norm("3.0.0","OWNER_APPROVED_EFFECTIVE").replace("SLM-THPT-QUALITY-ONE","DIFFERENT-STANDARD")));
+  assert.throws(()=>acceptedStandardVersions(norm("3.0.1","OWNER_APPROVED_EFFECTIVE").replace("SLM-THPT-QUALITY-ONE","DIFFERENT-STANDARD")));
   assert.equal(verifyLaneScope("LEARNING_PATH: TOPIC\nRELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH"), "TOPIC");
   assert.throws(() => verifyLaneScope("LEARNING_PATH: TOPIC\nRELEASE_SCOPE: FULL_LEARNING_PATH"));
   assert.throws(() => verifyLaneScope("LEARNING_PATH: SGK_CHAPTER\nRELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH"));
@@ -388,6 +390,11 @@ function selfTest() {
     "PED_VERIFICATION: student flow audited","CANONICAL_Q15: deduplicated",
     "ASSESSMENT_Q16: private exam guarded","P0: 0","P1: 0","AUTHOR_SIGNOFF: accountable author"].join("\n");
   assert.equal(verifyQ18Mode(selfData,selfHandoff,evidence,sha,"TOPIC"),"AUTHOR_SELF_VERIFIED");
+  const patchSelfData=selfData.replace("STANDARD_VERSION: 3.0.0","STANDARD_VERSION: 3.0.1");
+  const patchSelfReceipt=evidence.replace("STANDARD_VERSION: 3.0.0","STANDARD_VERSION: 3.0.1");
+  assert.equal(verifyQ18Mode(patchSelfData,selfHandoff,patchSelfReceipt,sha,"TOPIC"),"AUTHOR_SELF_VERIFIED");
+  assert.throws(()=>verifyQ18Mode(patchSelfData,selfHandoff,evidence,sha,"TOPIC"),"Wrong-version Q18 receipt must be rejected");
+  assert.throws(()=>verifyQ18Mode(patchSelfData,selfHandoff,patchSelfReceipt.replace("P0: 0","P0: OPEN"),sha,"TOPIC"),"Real P0 blocks READY");
   assert.throws(()=>verifyQ18Mode(selfData,selfHandoff,evidence.replace("P1: 0","P1: UNKNOWN"),sha,"TOPIC"));
   assert.throws(()=>verifyQ18Mode(selfData,selfHandoff,evidence.replace("SOURCE_BLOB: "+sha,"SOURCE_BLOB: "+"b".repeat(40)),sha,"TOPIC"));
   assert.throws(()=>verifyQ18Mode(selfData.replace("SELF_VERIFIED_ON_LOCKED_SNAPSHOT","PASS_ON_LOCKED_SNAPSHOT"),selfHandoff,evidence,sha,"TOPIC"));

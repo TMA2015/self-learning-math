@@ -84,6 +84,8 @@ Chỉ công khai count/hash/custody; private RD1 stems, answers, rubrics, soluti
 ## REVIEW_SOURCE_RECEIPT
 Nếu `AUTHOR_SELF_VERIFIED`: một `AUTHOR_SELF_QA_RECEIPT` có `SOURCE_BLOB`, S1, outcome audit, giải phép toán/điều kiện, hình/lab, item/rubric/exposure, P0/P1=0, chữ ký tác giả. Nếu `INDEPENDENT_REVIEW`: receipt NotebookLM đúng source SHA, 5 Permanent THPT v2.1 và verdict theo phạm vi. Source 06 file Temp_ + prompt chỉ dùng khi thực sự gửi NotebookLM, **không phải bước bắt buộc**.
 
+**OWNER SIMPLIFIED FINALIZATION (Q18 v3.0.1):** Khi nội dung tự kiểm Q01–Q18 + A1–A7 đạt và P0/P1=0, tác giả điền ngay nguồn SHA, receipt SHA, V2 handoff, `ready/PACKET_ID.md` và REGISTER trong **cùng lượt hoàn thành**. `AUTHORING_PASS = CONTENT_READY`; RELEASE không được mở thêm vòng nghiệm thu học thuật. Receipt chỉ tóm lược các phép kiểm đã làm, trỏ source/outcome, không phải chứng nhận bên thứ ba. Chỉ lỗi toán/S1/PED/Q15/Q16 thật mới `Q18_SUBSTANTIVE_HOLD`; chưa QA nội dung = `Q18_CONTENT_CHECK_PENDING`; thiếu kỹ thuật bàn giao sau QA đạt = `HANDOFF_PACKAGING_PENDING` để AUTHORING tự hoàn tất, không chuyển thành reviewer gate.
+
 ## AUTHOR_SIGNOFF
 Người biên soạn xác nhận đã độc lập kiểm toán toàn bộ nguồn, delta và reviewer/self QA theo chế độ Q18; A1–A7 đủ chứng cứ, không private RD1 leak, không còn P0/P1, nguồn/receipt SHA đúng. Không tự tick khi chưa thực tế kiểm.
 
