@@ -28,10 +28,10 @@ AUTHOR_SIGNOFF: SELF_QA_PASS_ON_R03_PUBLIC_SCOPE_AND_HISTORICAL_R02_EQUIVALENCE,
 | Phần | Bài thử / điều kiện | Kết quả đã tính / đối chiếu |
 |---|---|---|
 | 1 | Hai độ dời cùng độ dài nhưng hướng đối nhau | Hai vectơ khác nhau; độ dài riêng vẫn bằng nhau; trường hợp vectơ-không theo quy ước KNTT giữ nguyên R02 |
-| 2 | Đi 4 m Đông, 3 m Bắc | Độ lớn độ dời $\\sqrt{4^2+3^2}=5$ m, không phải 7 m; tổng quãng đường 7 m |
-| 3 | A(−2;3), B(4;−1) | $\\overrightarrow{AB}=(4-(-2);-1-3)=(6;-4)$; đảo AB cho dấu đối |
+| 2 | Đi 4 m Đông, 3 m Bắc | Độ lớn độ dời $\sqrt{4^2+3^2}=5$ m, không phải 7 m; tổng quãng đường 7 m |
+| 3 | A(−2;3), B(4;−1) | $\overrightarrow{AB}=(4-(-2);-1-3)=(6;-4)$; đảo AB cho dấu đối |
 | 4 | Điểm thuộc đường thẳng/đường tròn | Phải thay đúng tọa độ vào phương trình đã xác định và kiểm điều kiện; không đánh tráo phương trình đường với vị trí một điểm |
-| 5 | Cạnh đối AB và CD của một tứ diện | Hai đường chéo nhau vì bốn điểm không đồng phẳng; hình chiếu không tự chứng minh giao/sóng song |
+| 5 | Cạnh đối AB và CD của một tứ diện | Hai đường chéo nhau vì bốn điểm không đồng phẳng; hình chiếu không tự chứng minh giao/song song |
 | 6 | Hai vị trí cùng x,y nhưng z khác nhau | Không trùng điểm; cần bộ ba (x;y;z) và chênh z trong độ dời |
 | 7 | A(1;2;3), u=(1;1;−1), P:x+2y+2z−9=0 | n=(1;2;2), u·n=1≠0; thay A+tu vào P: 2+t=0 ⇒ t=−2, M(−1;0;5) |
 
