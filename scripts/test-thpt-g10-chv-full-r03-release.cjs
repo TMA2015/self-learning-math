@@ -7,7 +7,8 @@
  * composite receipt blob 1b9620cd45172277516b0621cd20f3cb695aceaa.
  * No new private RD1, Mastery, canonical scored item bank, Golden or Firebase change.
  */
-const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path");
+const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path"),crypto=require("node:crypto");
+const {expectedG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 const root=path.resolve(__dirname,".."),read=p=>fs.readFileSync(path.join(root,p),"utf8");
 const fnv=s=>{let h=2166136261;for(let i=0;i<s.length;i++)h=Math.imul(h^s.charCodeAt(i),16777619)>>>0;return h.toString(16).padStart(8,"0")};
 const part="## Trước khi học — hiểu ý nghĩa trước khi nhớ công thức",anchor="## 1. Kiến thức SGK";
@@ -20,6 +21,31 @@ const ids=[];
 const labels=["Vì sao cần học?","Em đã biết gì?","Hiểu bản chất trước công thức","Cách đọc hình và hình dung","Vì sao làm theo cách này?","Tự thử trước Core"];
 for(const {n,count,first,bridge:expectedBridge,suffix:expectedSuffix}of lessons){
  const p="docs/thpt-preview/sgk/chuong-v/bai-"+n+".md",txt=read(p);
+ // Model B candidate: source-locked replacement for historical exact-heading/FNV checks.
+ const tabs=[...txt.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]);
+ if(tabs.length){
+  assert.deepEqual(tabs,["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],"Exact 4 tabs B"+n);
+  const bytes=fs.readFileSync(path.join(root,p));
+  const sha=crypto.createHash("sha1").update(Buffer.from("blob "+bytes.length+"\0")).update(bytes).digest("hex");
+  assert.equal(sha,expectedG10KnowledgeBlob(n,"0".repeat(40)),"G10 B"+n+" candidate source SHA drift");
+  const attempts=[...txt.matchAll(/data-thpt-first-try-id="(THPT-G10-CHV-TRY\d\d)"/g)].map(m=>m[1]);
+  assert.equal(attempts.length,count,"First Try count B"+n);
+  for(let i=0;i<count;i++){
+   const expected="THPT-G10-CHV-TRY"+String(first+i).padStart(2,"0");
+   assert.equal(attempts[i],expected,"Original first try ID/order B"+n);
+   const at=txt.indexOf('data-thpt-first-try-id="'+expected+'"');
+   assert(/^\s*\?\?\? question "/m.test(txt.slice(at,at+350)),"Answer not default-closed "+expected);
+   ids.push(expected);
+  }
+  assert.equal((txt.match(/^    \?\?\? question "/gm)||[]).length,count,"First Try folding B"+n);
+  assert.equal((txt.match(/data-thpt-help-id="HELP-G10-B\d\d-0[12]"/g)||[]).length,2,"Original D6 IDs B"+n);
+  assert.equal((txt.match(/^    \?\?\? tip "/gm)||[]).length,2,"Collapsed D6 tips B"+n);
+  assert.equal((txt.match(/^    ### Ví dụ [123]\./gm)||[]).length,3,"Three worked examples B"+n);
+  assert(txt.includes("### Kiến thức SGK"),"SGK theory B"+n);
+  assert((txt.match(/\?item=THPT-G10-B\d\d-[CP]\d\d/g)||[]).length>=count,"Original Core/Practice references B"+n);
+  assert(!/data-thpt-readiness|data-mastery-credit|data-mastery-write/.test(txt),"No Q16/Mastery leak B"+n);
+  continue;
+ }
  assert.equal(txt.split(part).length,2,"One pre-Knowledge PED section "+p);
  assert.equal(txt.split(anchor).length,2,"Original Knowledge D1–D6 section preserved "+p);
  const pre=txt.slice(txt.indexOf(part),txt.indexOf(anchor)),old=txt.slice(txt.indexOf(anchor));
