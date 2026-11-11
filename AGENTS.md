@@ -4,7 +4,7 @@ Author checks S1, maths, conditions, examples, pedagogy, rubrics, Q15/Q16 and fi
 
 # OWNER OPERATIONAL DECISION — 11/11/2026 · PROCESS RESET (highest current owner instruction)
 
-**AUTHORING IS PAUSED** while a single coordinator updates the ONE quality standard, V2 handoff, tests and workflows. Do **not** continue editing Topic content or promoting packets until the process is approved/merged and validated. This supersedes the earlier #807 comment that AUTHORING could continue concurrently. RELEASE SGK upgrade remains staged, not automatically deployable.
+**AUTHORING IS PAUSED by owner decision until all governance standard/V2/test/workflow checks are completed and the owner explicitly authorizes resumption.** Do **not** continue editing Topic content or promoting packets just because a governance PR passes or merges. This supersedes the earlier #807 comment that AUTHORING could continue concurrently. RELEASE SGK upgrade remains staged, not automatically deployable.
 
 **Future Q18 v3.0 after governance merge:** any Topic (including the two older reviewed Topics, after re-editing, and entirely new Topics) may be academically/pedagogically **self-verified** by the responsible author with genuine S1/source/maths/explanation/items/figures/assessment checks and a source-locked signed `AUTHOR_SELF_QA_RECEIPT`. NotebookLM is optional for uncertain cases, never a mandatory round trip. Don't claim an external reviewer PASS when self-audited. Preserve 18 Q and Q15/Q16/RD1/privacy, Golden, Final Submit, student data.
 
@@ -27,7 +27,7 @@ Owner directs **one existing Gemini floating AI Tutor** on all **PUBLIC learner 
 **Repository:** `TMA2015/self-learning-math`. Apply this file whenever a new development session, branch or conversation works on the repository.
 
 ## ONE OFFICIAL quality standard for both authoring and release (PR #703 merged 02/11/2026)
-The single normative quality rubric is [`SLM-THPT-QUALITY-ONE`](prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md), now **v2.0.0 on main** and **v3.0.0 only after owner-approved PR #808 merges**. Q01–Q18 remains the ONE standard. D1–D6/PED/A1–A7 and AP1–AP5/R1–R5 are evidence/checks, not separate standards. Historical v1.0/#703, v1.1/#726 and v1.2 PED upgrades remain snapshot-scoped. Five NotebookLM Permanent Sources v2.1 are unchanged; do not add a sixth source or force NotebookLM by default. Author Q18 self-verification in v3 requires the signed, source-locked evidence receipt; UI-only FNV/heading historical tests must not block candidate Model B without semantic math/assessment QA.
+The single normative quality rubric is [`SLM-THPT-QUALITY-ONE`](prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md): **v3.0.0 effective on main from merged PR #808; v3.0.1 only after governance PR #809 passes exact-head QA and merges**. Q01–Q18 remains the ONE standard. D1–D6/PED/A1–A7 and AP1–AP5/R1–R5 are evidence/checks, not separate standards. Historical v1.0/#703, v1.1/#726 and v1.2 PED upgrades remain snapshot-scoped. Five NotebookLM Permanent Sources v2.1 are unchanged; do not add a sixth source or force NotebookLM by default. Author Q18 self-verification in v3 requires the signed, source-locked evidence receipt; UI-only FNV/heading historical tests must not block candidate Model B without semantic math/assessment QA.
 
 
 ## Owner reporting style — decision 04/11/2026
