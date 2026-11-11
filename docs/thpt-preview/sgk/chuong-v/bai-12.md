@@ -114,7 +114,7 @@
 
     **Cách đọc hình.** Tìm số gần đúng ở giữa khoảng, rồi nhìn hai biên cách nó một khoảng d. Giá trị đúng có thể nằm bất cứ đâu trong đoạn, không nhất thiết ở biên hoặc trùng tâm.
 
-    <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B12_ERROR_INTERVAL_D5_R02_REVIEWED.svg" loading="lazy" alt="Số gần đúng a bằng 20,0 cm, độ chính xác d bằng 0,1 cm; giá trị đúng a gạch ngang thuộc đoạn 19,9 đến 20,1 cm."><figcaption>Khoảng có thể chứa số đúng · hình minh họa.</figcaption></figure>
+    <figure class="thpt-r4-plot thpt-r4-probability-figure" data-thpt-fig-id="FIG-G10-B12-01"><img src="../../../../assets/images/thpt/THPT_G10_B12_ERROR_INTERVAL_D5_R02_REVIEWED.svg" loading="lazy" alt="Số gần đúng a bằng 20,0 cm, độ chính xác d bằng 0,1 cm; giá trị đúng a gạch ngang thuộc đoạn 19,9 đến 20,1 cm."><figcaption>Khoảng có thể chứa số đúng · hình minh họa.</figcaption></figure>
 
     Sai số tuyệt đối của số gần đúng \(a\) là \(\Delta_a=|a-\bar a|\). Nếu **chưa biết** số đúng \(\bar a\), nhưng \(\Delta_a\le d\), thì \(d\) là **độ chính xác/giới hạn trên**; không được suy \(\Delta_a=d\). Số đúng nằm trong \(a-d\le\bar a\le a+d\). Sai số tuyệt đối cùng đơn vị với đại lượng.
 
