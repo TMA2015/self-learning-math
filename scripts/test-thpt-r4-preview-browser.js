@@ -166,6 +166,11 @@ async function ready(page,path){
     if(await lessonTabs.count()){
       assert.equal(await lessonTabs.count(),4,"Knowledge Model B needs four horizontal level-1 tabs");
       await lessonTabs.filter({hasText:"Lỗi thường gặp"}).click();
+    }else{
+      // MkDocs Material's pymdownx.tabbed renders labels/input rather than
+      // ARIA role=tab. The source uses === "..." and must still be opened.
+      const materialLabels=page.locator("article .tabbed-labels label").filter({hasText:"Lỗi thường gặp"});
+      if(await materialLabels.count()) await materialLabels.first().click();
     }
     const helpCards=page.locator('[data-thpt-help-id^="D6-G10-B19-"]');
     assert.equal(await helpCards.count(),2,"R02 D6 B19 must retain both canonical remedy ids");
