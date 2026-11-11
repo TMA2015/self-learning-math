@@ -144,8 +144,20 @@ Bạn sẽ đi từ mũi tên (vectơ) → phép toán → tọa độ Oxy → h
 
         ### Hai Tự thử trước luyện tập (tự mở sau khi làm)
 
-        - **Tự thử 3A:** A(2;-3), B(-1;1), AB bằng (-3;4) hay (1;-2)? **Đối chiếu:** (-3;4), vì cuối trừ đầu; nếu sai, vẽ hai bước ngang/dọc, thử lại.
-        - **Tự thử 3B:** $\vec u=(2;1)$, $\vec v=(1;-2)$, tích vô hướng bằng 0 hay 4? **Đối chiếu:** $2\cdot1+1\cdot(-2)=0$; cả hai vectơ khác 0 nên vuông góc.
+        - **Tự thử 3A:** A(2;-3), B(-1;1), AB bằng (-3;4) hay (1;-2)?
+
+        <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
+
+        (-3;4), vì cuối trừ đầu; nếu sai, vẽ hai bước ngang/dọc, thử lại.
+
+        </details>
+        - **Tự thử 3B:** $\vec u=(2;1)$, $\vec v=(1;-2)$, tích vô hướng bằng 0 hay 4?
+
+        <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
+
+        $2\cdot1+1\cdot(-2)=0$; cả hai vectơ khác 0 nên vuông góc.
+
+        </details>
 
 
 === "Hình học phẳng và tư duy không gian"
@@ -193,8 +205,20 @@ Bạn sẽ đi từ mũi tên (vectơ) → phép toán → tọa độ Oxy → h
 
         ### Hai Tự thử trước Luyện tập
 
-        1. Đường thẳng qua M(1;2), pháp tuyến (3;1): $3x+y-5=0$ hay $3x+y+5=0$? **Tự mở:** dấu −5 vì thế (1,2) phải được 0.
-        2. $y^2=6x$ thì tiêu điểm nằm ở (3;0) hay (1,5;0)? **Tự mở:** p=3, F=(1,5;0), đường chuẩn x=-1,5. Nếu sai, xem lại hệ số 2p.
+        1. Đường thẳng qua M(1;2), pháp tuyến (3;1): $3x+y-5=0$ hay $3x+y+5=0$?
+
+        <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
+
+        dấu −5 vì thế (1,2) phải được 0.
+
+        </details>
+        2. $y^2=6x$ thì tiêu điểm nằm ở (3;0) hay (1,5;0)?
+
+        <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
+
+        p=3, F=(1,5;0), đường chuẩn x=-1,5. Nếu sai, xem lại hệ số 2p.
+
+        </details>
 
 
     === "5 · Quan hệ hình học trong không gian"
@@ -256,8 +280,20 @@ Bạn sẽ đi từ mũi tên (vectơ) → phép toán → tọa độ Oxy → h
 
         ### Hai Tự thử (tự chọn rồi tự mở)
 
-        - **5A:** Trong tứ diện ABCD, hai cạnh đối AB, CD không giao; chúng song song hay chéo? **Tự mở:** chéo nhau vì không đồng phẳng.
-        - **5B:** d vuông góc một đường a thuộc (P). Có suy d⊥(P) ngay được không? **Tự mở:** không; cần thêm điều kiện như vuông góc hai đường cắt nhau của (P).
+        - **5A:** Trong tứ diện ABCD, hai cạnh đối AB, CD không giao; chúng song song hay chéo?
+
+        <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
+
+        chéo nhau vì không đồng phẳng.
+
+        </details>
+        - **5B:** d vuông góc một đường a thuộc (P). Có suy d⊥(P) ngay được không?
+
+        <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
+
+        không; cần thêm điều kiện như vuông góc hai đường cắt nhau của (P).
+
+        </details>
 
 
 === "Tọa độ không gian Oxyz"
@@ -313,8 +349,20 @@ Bạn sẽ đi từ mũi tên (vectơ) → phép toán → tọa độ Oxy → h
 
         ### Hai Tự thử trước Luyện tập
 
-        - **6A:** A(−2;1;3), B(1;−1;5) có AB bằng (3;−2;2) hay (−3;2;−2)? **Tự mở:** (3;−2;2), vì B−A.
-        - **6B:** u=(1;2;−1), v=(2;−1;0) có vuông góc? **Tự mở:** có vì dot=0 và cả hai khác 0. Nếu thay u=0, không gọi góc giữa hai vectơ là 90°.
+        - **6A:** A(−2;1;3), B(1;−1;5) có AB bằng (3;−2;2) hay (−3;2;−2)?
+
+        <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
+
+        (3;−2;2), vì B−A.
+
+        </details>
+        - **6B:** u=(1;2;−1), v=(2;−1;0) có vuông góc?
+
+        <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
+
+        có vì dot=0 và cả hai khác 0. Nếu thay u=0, không gọi góc giữa hai vectơ là 90°.
+
+        </details>
 
 
     === "7 · Mặt phẳng, đường thẳng, mặt cầu Oxyz"
@@ -379,8 +427,20 @@ Bạn sẽ đi từ mũi tên (vectơ) → phép toán → tọa độ Oxy → h
 
         ### Hai Tự thử trước Luyện tập
 
-        - **7A:** M(1;0;2), n=(2;−1;1), mặt đi qua M có phương trình $2x-y+z-4=0$ hay $2x-y+z+4=0$? **Tự mở:** −4 vì thế (1,0,2) cho 0.
-        - **7B:** u=(1;0;0), pháp tuyến n=(1;0;0) của (P), đường theo u song song mặt hay vuông góc mặt? **Tự mở:** vuông góc mặt vì u cùng phương n; nếu dot=0 mới là hướng song song mặt.
+        - **7A:** M(1;0;2), n=(2;−1;1), mặt đi qua M có phương trình $2x-y+z-4=0$ hay $2x-y+z+4=0$?
+
+        <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
+
+        −4 vì thế (1,0,2) cho 0.
+
+        </details>
+        - **7B:** u=(1;0;0), pháp tuyến n=(1;0;0) của (P), đường theo u song song mặt hay vuông góc mặt?
+
+        <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
+
+        vuông góc mặt vì u cùng phương n; nếu dot=0 mới là hướng song song mặt.
+
+        </details>
 
 
 <!-- TOPIC_KNOWLEDGE_END -->
