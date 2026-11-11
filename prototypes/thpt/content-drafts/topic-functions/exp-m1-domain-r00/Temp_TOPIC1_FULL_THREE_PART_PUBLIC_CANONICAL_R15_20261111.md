@@ -1722,7 +1722,7 @@ Căn yêu cầu \(9-x^2\ge0\), tức \(-3\le x\le3\). Mẫu yêu cầu \(x+2\ne0
 
 ### Ba ràng buộc trong một biểu thức
 
-<!-- AUTHORING_Q15_ID: DRAFT-T1-M1-APP06; OUTCOME: TOP-G10-FUNC-O02; PUBLIC_SEMANTIC: PUBLIC_DISTINCT_CANDIDATE; REASON: three-simultaneous-domain-constraints; NO_OFFICIAL_RD1; NO_MASTERY -->
+<!-- AUTHORING_Q15_ID: THPT-G10-TOP-FUNC-P07; ORIGINAL_AUTHORING_DRAFT_ID: DRAFT-T1-M1-APP06; OUTCOME: TOP-G10-FUNC-O02; PUBLIC_SEMANTIC: PUBLIC_DISTINCT_CANONICAL; PLACEMENT_ROLE: TOPIC_PRACTICE; REASON: three-simultaneous-domain-constraints; NO_OFFICIAL_RD1; NO_MASTERY -->
 
 Xét \(\displaystyle r(x)=\frac{\sqrt{x+2}}{(x-1)(x-3)}\). Tìm \(D\), rồi cho biết \(-2,1,3,4\) có thuộc miền hay không.
 
@@ -1752,7 +1752,7 @@ Một bạn viết: “Vì \(\sqrt{x-1}\) xác định khi \(x\ge1\), nên \(\di
 
 ### Rút gọn có làm mất một điểm trên đồ thị?
 
-<!-- AUTHORING_Q15_ID: DRAFT-T1-M1-WR02; OUTCOME: TOP-G10-FUNC-O02; PUBLIC_SEMANTIC: PUBLIC_DISTINCT_CANDIDATE; REASON: hole-removes-unique-range-value; NO_OFFICIAL_RD1; NO_MASTERY -->
+<!-- AUTHORING_Q15_ID: THPT-G10-TOP-FUNC-W01; ORIGINAL_AUTHORING_DRAFT_ID: DRAFT-T1-M1-WR02; OUTCOME: TOP-G10-FUNC-O02; PUBLIC_SEMANTIC: PUBLIC_DISTINCT_CANONICAL; PLACEMENT_ROLE: TOPIC_WRITTEN_SHARED; REASON: hole-removes-unique-range-value; NO_OFFICIAL_RD1; NO_MASTERY -->
 
 Cho hai hàm số
 
@@ -1813,7 +1813,7 @@ Xét \(p(x)=2-x\) khi \(x\le1\) và \(p(x)=x+1\) khi \(x>1\). Hãy tính \(p(0),
 
 ### Hai nhánh đều tăng, cả hàm có tăng?
 
-<!-- AUTHORING_Q15_ID: DRAFT-T1-M2-APP06; OUTCOME: TOP-G10-FUNC-O04; PUBLIC_SEMANTIC: PUBLIC_DISTINCT_CANDIDATE; REASON: piecewise-increasing-branches-not-global; NO_OFFICIAL_RD1; NO_MASTERY -->
+<!-- AUTHORING_Q15_ID: THPT-G10-TOP-FUNC-P08; ORIGINAL_AUTHORING_DRAFT_ID: DRAFT-T1-M2-APP06; OUTCOME: TOP-G10-FUNC-O04; PUBLIC_SEMANTIC: PUBLIC_DISTINCT_CANONICAL; PLACEMENT_ROLE: TOPIC_PRACTICE; REASON: piecewise-increasing-branches-not-global; NO_OFFICIAL_RD1; NO_MASTERY -->
 
 Xét \(r(x)=x+1\) khi \(x<0\), và \(r(x)=x-2\) khi \(x\ge0\). Cả hai nhánh đều là đường thẳng có hệ số góc dương. Có được kết luận \(r\) đồng biến nghiêm ngặt trên toàn \(\mathbb R\) không? Hãy kiểm riêng hai đầu vào ở hai phía mốc 0.
 
@@ -1860,7 +1860,7 @@ Kiểm lần lượt \(x=-2,0,2\) với cả hai quy tắc. Sau đó thử một
 
 ### Tách dữ kiện khỏi suy luận
 
-<!-- AUTHORING_Q15_ID: DRAFT-T1-M2-WR01; OUTCOME: TOP-G10-FUNC-O03; PUBLIC_SEMANTIC: PUBLIC_DISTINCT_CANDIDATE; REASON: data-vs-model-linear-interpolation-justification; NO_OFFICIAL_RD1; NO_MASTERY -->
+<!-- AUTHORING_Q15_ID: THPT-G10-TOP-FUNC-W02; ORIGINAL_AUTHORING_DRAFT_ID: DRAFT-T1-M2-WR01; OUTCOME: TOP-G10-FUNC-O03; PUBLIC_SEMANTIC: PUBLIC_DISTINCT_CANONICAL; PLACEMENT_ROLE: TOPIC_WRITTEN_SHARED; REASON: data-vs-model-linear-interpolation-justification; NO_OFFICIAL_RD1; NO_MASTERY -->
 
 Một bảng chỉ ghi vận tốc của xe tại \(t=0\) là 10 km/h và tại \(t=10\) phút là 20 km/h. Hãy trình bày (a) điều gì biết chắc từ bảng; (b) điều gì chưa thể khẳng định về vận tốc lúc \(t=5\) phút; (c) nếu giả định vận tốc tăng đều theo thời gian, hãy tính vận tốc dự kiến ở phút thứ 5 và nêu giới hạn của kết quả.
 
@@ -1878,7 +1878,7 @@ Một bảng chỉ ghi vận tốc của xe tại \(t=0\) là 10 km/h và tại 
 
 ### Nghiệm âm có được đưa vào |x|?
 
-<!-- AUTHORING_Q15_ID: DRAFT-T1-M3-APP07; OUTCOME: TOP-G10-FUNC-O08; PUBLIC_SEMANTIC: PUBLIC_DISTINCT_CANDIDATE; REASON: solve-abs-output-vs-input-equations; NO_OFFICIAL_RD1; NO_MASTERY -->
+<!-- AUTHORING_Q15_ID: THPT-G10-TOP-FUNC-P09; ORIGINAL_AUTHORING_DRAFT_ID: DRAFT-T1-M3-APP07; OUTCOME: TOP-G10-FUNC-O08; PUBLIC_SEMANTIC: PUBLIC_DISTINCT_CANONICAL; PLACEMENT_ROLE: TOPIC_PRACTICE; REASON: solve-abs-output-vs-input-equations; NO_OFFICIAL_RD1; NO_MASTERY -->
 
 Cho \(f(x)=x^2+2x-3\). Hãy giải \(|f(x)|=0\) và \(f(|x|)=0\). Khi đặt \(u=|x|\), vì sao phải kiểm tra \(u\ge0\) trước khi suy ra \(x\)?
 
@@ -1892,7 +1892,7 @@ Cho \(f(x)=x^2+2x-3\). Hãy giải \(|f(x)|=0\) và \(f(|x|)=0\). Khi đặt \(u
 
 ### Miền không liền nhau
 
-<!-- AUTHORING_Q15_ID: DRAFT-T1-M3-APP09; OUTCOME: TOP-G10-FUNC-O09; PUBLIC_SEMANTIC: PUBLIC_DISTINCT_CANDIDATE; REASON: extrema-disconnected-domain; NO_OFFICIAL_RD1; NO_MASTERY -->
+<!-- AUTHORING_Q15_ID: THPT-G10-TOP-FUNC-P10; ORIGINAL_AUTHORING_DRAFT_ID: DRAFT-T1-M3-APP09; OUTCOME: TOP-G10-FUNC-O09; PUBLIC_SEMANTIC: PUBLIC_DISTINCT_CANONICAL; PLACEMENT_ROLE: TOPIC_PRACTICE; REASON: extrema-disconnected-domain; NO_OFFICIAL_RD1; NO_MASTERY -->
 
 Cho \(m(x)=5-(x-2)^2\) nhưng chỉ xét \(D=[0,1]\cup[3,4]\). Tìm GTNN và GTLN trên \(D\). Vì sao không được lấy giá trị 5 tại đỉnh của parabol làm GTLN trong bài?
 
@@ -1929,7 +1929,7 @@ Những câu SGK riêng lẻ đã đủ luyện từng thao tác, nhưng để �
 
 ### Một hàm lôgarit, bốn câu hỏi
 
-<!-- AUTHORING_Q15_ID: DRAFT-T1-M4M7-XFER01; OUTCOME: TOP-FUNC-M4-O09; PUBLIC_SEMANTIC: PUBLIC_DISTINCT_CANDIDATE; REASON: joint-M4-M5-M6-M7-log-domain-extrema; NO_OFFICIAL_RD1; NO_MASTERY -->
+<!-- AUTHORING_Q15_ID: THPT-G12-TOP-FUNC-P03; ORIGINAL_AUTHORING_DRAFT_ID: DRAFT-T1-M4M7-XFER01; OUTCOME: TOP-FUNC-M4-O09; PUBLIC_SEMANTIC: PUBLIC_DISTINCT_CANONICAL; PLACEMENT_ROLE: TOPIC_PRACTICE; REASON: joint-M4-M5-M6-M7-log-domain-extrema; NO_OFFICIAL_RD1; NO_MASTERY -->
 
 Một mô hình có quy tắc \(f(x)=\log_2(x+2)\), nhưng chỉ dùng khi \(-2<x\le2\).
 
@@ -1954,7 +1954,7 @@ Một mô hình có quy tắc \(f(x)=\log_2(x+2)\), nhưng chỉ dùng khi \(-2<
 
 ### Một mô hình nguội dần có đơn vị
 
-<!-- AUTHORING_Q15_ID: DRAFT-T1-M4M7-XFER02; OUTCOME: TOP-FUNC-M4-O06; PUBLIC_SEMANTIC: PUBLIC_DISTINCT_CANDIDATE; REASON: joint-M4-M5-M6-M7-exp-temperature; NO_OFFICIAL_RD1; NO_MASTERY -->
+<!-- AUTHORING_Q15_ID: THPT-G12-TOP-FUNC-P04; ORIGINAL_AUTHORING_DRAFT_ID: DRAFT-T1-M4M7-XFER02; OUTCOME: TOP-FUNC-M4-O06; PUBLIC_SEMANTIC: PUBLIC_DISTINCT_CANONICAL; PLACEMENT_ROLE: TOPIC_PRACTICE; REASON: joint-M4-M5-M6-M7-exp-temperature; NO_OFFICIAL_RD1; NO_MASTERY -->
 
 Nhiệt độ của một mẫu vật được mô hình hóa (giả định) trong \(t\ge0\) phút bằng
 \[
@@ -1987,6 +1987,19 @@ T(t)=18+12\cdot2^{-t/3}\quad (^\circ\mathrm C).
 Hãy tự hỏi: (1) Mình có kiểm miền trước khi tính không? (2) Mình có thể nói *vì sao* dùng cách giải ấy không? (3) Mình đã xét điểm loại, mốc ghép và đơn vị chưa? (4) Lời giải có sử dụng một giả định ngoài đề không? (5) Mình có thể giải lại một bài **khác tình huống**, không chỉ thay số không?
 
 Nếu vướng, chọn đúng một điều chưa chắc và quay về **mục Kiến thức tương ứng trong cùng Chuyên đề**; rồi luyện lại bằng một item khác chưa xem lời giải. Khi đã sẵn sàng, chuyển sang phần **Tự kiểm tra**, với đề và cách nộp bài độc lập. Không có câu hỏi hoặc đáp án của Tự kiểm tra trong file này.
+<!-- AUTHORING_Q15_CANONICAL_NEW_PUBLIC_EXERCISES:
+The eight IDs below are the ONLY newly authored public standalone items in this Topic source.
+Single canonical stem + single solution or Written self-compare rubric reside inline at their AUTHORING_Q15_ID marker; never duplicate stems/keys on SGK pages.
+The six DRAFT-T1 remediation examples remain embedded learner practice with NO_NEW_ID, not assessment bank entries.
+CANONICAL_NEW_PUBLIC_ITEM: THPT-G10-TOP-FUNC-P07 | TOP-G10-FUNC-O02 | TOPIC_PRACTICE | SELF_CHECK_NO_MASTERY | SOURCE_R15_SINGLE
+CANONICAL_NEW_PUBLIC_ITEM: THPT-G10-TOP-FUNC-W01 | TOP-G10-FUNC-O02 | TOPIC_WRITTEN_SHARED | SELF_CHECK_NO_MASTERY | SOURCE_R15_SINGLE
+CANONICAL_NEW_PUBLIC_ITEM: THPT-G10-TOP-FUNC-P08 | TOP-G10-FUNC-O04 | TOPIC_PRACTICE | SELF_CHECK_NO_MASTERY | SOURCE_R15_SINGLE
+CANONICAL_NEW_PUBLIC_ITEM: THPT-G10-TOP-FUNC-W02 | TOP-G10-FUNC-O03 | TOPIC_WRITTEN_SHARED | SELF_CHECK_NO_MASTERY | SOURCE_R15_SINGLE
+CANONICAL_NEW_PUBLIC_ITEM: THPT-G10-TOP-FUNC-P09 | TOP-G10-FUNC-O08 | TOPIC_PRACTICE | SELF_CHECK_NO_MASTERY | SOURCE_R15_SINGLE
+CANONICAL_NEW_PUBLIC_ITEM: THPT-G10-TOP-FUNC-P10 | TOP-G10-FUNC-O09 | TOPIC_PRACTICE | SELF_CHECK_NO_MASTERY | SOURCE_R15_SINGLE
+CANONICAL_NEW_PUBLIC_ITEM: THPT-G12-TOP-FUNC-P03 | TOP-FUNC-M4-O09 | TOPIC_PRACTICE | SELF_CHECK_NO_MASTERY | SOURCE_R15_SINGLE
+CANONICAL_NEW_PUBLIC_ITEM: THPT-G12-TOP-FUNC-P04 | TOP-FUNC-M4-O06 | TOPIC_PRACTICE | SELF_CHECK_NO_MASTERY | SOURCE_R15_SINGLE
+-->
 <!-- SLM_PART_END:PRACTICE -->
 
 <!-- SLM_PART_BEGIN:SELF_CHECK_PUBLIC -->
