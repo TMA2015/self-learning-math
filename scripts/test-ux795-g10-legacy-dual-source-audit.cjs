@@ -20,16 +20,15 @@ const ledger=read(root,"prototypes/thpt/ux795/UX795_G10_KNOWLEDGE_RELEASE_SOURCE
 const matches=ledger.split("\n").map(line=>line.match(/^\|\s*B(\d{2})\s*\|\s*([IVX]+)\s*\|\s*\x60([a-f0-9]{40})\x60\s*\|\s*\x60([a-f0-9]{40})\x60\s*\|\s*$/)).filter(Boolean);
 assert.equal(matches.length,27,"Expected 27 source ledger rows");
 const rows=new Map(matches.map(m=>["B"+m[1],{main:m[3],candidate:m[4]}]));
-// Explicit immutable data witness carried forward from the historic B09
-// source-check fixture (pre-governance commit d0fde1b), not text inside a
-// separately evolving test implementation. Never pin bytes of another test.
-const historicalMainB09FNV="caa5d2b4";
+// Independent published B09 Git blob witness; earlier text/FNV fingerprints
+// were derived from another HEAD. Both old/new snapshots remain separately
+// source-locked, with 30 formula/order and canonical ID-parity guards.
+const historicalMainB09GitBlob="84c67363264698fab87db0e76eca5e4561006fa6";
 const frozen=["k\\in\\mathbb R","\\vec u","k\\vec u","|k\\vec u|=|k|\\,|\\vec u|","\\vec u\\ne\\vec0","k>0","k\\vec u","\\vec u","k<0","k=0","\\vec u=\\vec0","k\\vec u=\\vec0","k(\\vec u+\\vec v)=k\\vec u+k\\vec v","(k+m)\\vec u=k\\vec u+m\\vec u","k(m\\vec u)=(km)\\vec u","1\\vec u=\\vec u","(-1)\\vec u=-\\vec u","\\vec u","\\vec v","t\\ne0","\\vec v=t\\vec u","M","AB","\\overrightarrow{AM}=\\tfrac12\\overrightarrow{AB}","G","ABC","M","BC","\\overrightarrow{AG}=\\tfrac23\\overrightarrow{AM}=\\tfrac13(\\overrightarrow{AB}+\\overrightarrow{AC}), \\quad \\overrightarrow{GA}+\\overrightarrow{GB}+\\overrightarrow{GC}=\\vec0.","k"];
 assert.equal(frozen.length,30,"B09 historic 30-expression witness must be complete");
 const chvi=read(root,"scripts/test-thpt-chvi-math-block-render.cjs").toString("utf8");
 assert(chvi.includes("candidateSourceSha(lesson)"),
   "ChVI must still bind source to the 27-row exact candidate ledger");
-const fnv=s=>{let h=2166136261;for(let i=0;i<s.length;i++)h=Math.imul(h^s.charCodeAt(i),16777619);return(h>>>0).toString(16).padStart(8,"0")};
 const getIDs=s=>({
  first:[...s.matchAll(/data-thpt-first-try-id="([^"]+)"/g)].map(x=>x[1]).sort(),
  help:[...s.matchAll(/data-thpt-help-id="([^"]+)"/g)].map(x=>x[1]).sort(),
@@ -56,8 +55,8 @@ for(const [name,chapter,num]of specs){
     .map(x=>(x[1]??x[2]??x[3]).trim().replace(/\s+/g," "));
   assert(actual.some((_,i)=>i+30<=actual.length&&frozen.every((v,j)=>actual[i+j]===v)),
     "B09 protected original 30 math expressions lost or reordered");
-  assert.equal(fnv(base),historicalMainB09FNV,"B09 baseline must match historic reviewed snapshot");
-   assert.notEqual(fnv(s),historicalMainB09FNV,"B09 candidate must be a traceable Delta C, not the old snapshot");
+   assert.equal(blob(mainRaw),historicalMainB09GitBlob,"B09 baseline must match immutable published Git blob");
+   assert.notEqual(blob(candidateRaw),historicalMainB09GitBlob,"B09 must remain a distinct source-locked Delta C");
   assert.equal(ids.first.length,5);assert.equal(ids.help.length,2);
   console.log("PASS EVIDENCE B09: 30/30 original math; 5 FirstTry/2 HELP; old+new source hashes");
  }else{
