@@ -1,76 +1,91 @@
-> **Owner clarification 11/11/2026:** This is a historic V2 structural template, not a fixed reviewer-only standard. Under v3.0 a new Topic may use `AUTHOR_SELF_VERIFIED` with a content-rich `AUTHOR_SELF_QA_RECEIPT` (never fake an independent verdict). Replace all placeholders and supply one handoff when the entire unit is QA-complete. For PUBLIC Topic self-check reuse canonical items only with `CLIENT_SELF_CHECK_NO_MASTERY`; private official RD1 must remain held-out. AUTHORING paused until owner process reset is integrated.
+# THPT — ONE HANDOFF V2 TEMPLATE · Q01–Q18 v3.0
 
-# THPT ACADEMIC HANDOFF V2 — TEMPLATE (NOT AN APPROVED PACKET)
+> **TEMPLATE_ONLY / NOT_CONTENT_READY.** Dùng cho một đơn vị học liệu hoàn chỉnh sau self-QA hoặc reviewer độc lập đúng mode Q18. Tránh nhiều handoff/checkpoint cho mỗi đoạn; đừng chọn mẫu này làm nguồn NotebookLM hoặc đặt trong `ready/`. SOURCE và receipt phải tồn tại thật, có Git blob SHA chính xác.
 
-**Important:** This is a template only; never mark this document CONTENT_READY, never select it as NotebookLM source, and never place it in `release-queue/ready/`. Fill all concrete evidence in a separate chapter-specific file under `release-handoffs/`.
-
-PACKET_ID: REPLACE_WITH_G11_SGK_CHI
+PACKET_ID: REPLACE_PACKET_ID
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: EFFECTIVE_ON_MAIN_AT_HANDOFF
-Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED | INDEPENDENT_REVIEW
-ACADEMIC_SOURCE_BLOB: REPLACE_WITH_40_HEX
-REVIEW_RECEIPT_BLOB: REPLACE_WITH_40_HEX  # Independent review OR author self-QA receipt; mode-specific content required
-ACADEMIC_VERDICT: SELF_VERIFIED | PASS
-PEDAGOGICAL_VERDICT: SELF_VERIFIED | PASS
-BLOCKERS: OPEN
+STANDARD_VERSION: REPLACE_EFFECTIVE_VERSION_ON_MAIN
+LEARNING_PATH: TOPIC
+RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
+Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/REPLACE_SOURCE.md
+ACADEMIC_SOURCE_BLOB: REPLACE_40_HEX
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/REPLACE_Q18_RECEIPT.md
+REVIEW_RECEIPT_BLOB: REPLACE_40_HEX
+ACADEMIC_VERDICT: SELF_VERIFIED
+PEDAGOGICAL_VERDICT: SELF_VERIFIED
+BLOCKERS: REPLACE_WITH_NONE_ONLY_WHEN_VERIFIED
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
-RELEASE_SCOPE: FULL_LEARNING_PATH
+OFFICIAL_READINESS: NOT_CLAIMED
+MASTERY_ACTIVATION: NO
+RELEASE_AUTHORIZATION: NO
+PRIVATE_RD1_COUNT: REPLACE_REAL_PRIVATE_COUNT
+PRIVATE_RD1_SHA256: REPLACE_REAL_PRIVATE_SHA256_OR_NON_APPLICABLE
+AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/REPLACE_A1_A7.md
+AUTHOR_A1_A7_BLOB: REPLACE_40_HEX
 
-## S1_SGK_SBT_SOURCE
-Official KNTT SGK/SBT edition, volume, chapter, *verified* page ranges, RD0 coverage and source evidence. Do not invent pages.
+**Mode pairing:** nếu `Q18_VERIFICATION_MODE: INDEPENDENT_REVIEW`, ghi `ACADEMIC_VERDICT: PASS` + `PEDAGOGICAL_VERDICT: PASS` đúng reviewer receipt. Nếu `AUTHOR_SELF_VERIFIED` thì giữ `SELF_VERIFIED`, không mạo danh Academic/PED reviewer PASS. Manifest `ready/` dùng `SELF_VERIFIED_ON_LOCKED_SNAPSHOT` cho mode tác giả hoặc `PASS_ON_LOCKED_SNAPSHOT` cho mode reviewer. Chế độ tự nghiệm thu mới chỉ hợp lệ từ Q18 v3.0 sau merge main.
 
 ## LESSON_IDS
-- REPLACE_LESSON_ID
+- REPLACE_ID
 
 ## OUTCOME_IDS
-- REPLACE_OUTCOME_ID
+- REPLACE_ID
 
 ## PUBLIC_ITEM_IDS
-- REPLACE_ITEM_ID
+- REPLACE_CANONICAL_ID
 
-## ITEM_OUTCOME_MATRIX
-| ITEM_ID | OUTCOME_ID | role / placement | D3/D4/Written |
-| --- | --- | --- | --- |
-| REPLACE_ITEM_ID | REPLACE_OUTCOME_ID | REPLACE_ROLE | REPLACE_D |
+## S1_SGK_SBT_SOURCE
+Điền sách SGK KNTT / lớp / tập / ấn bản / trang **in** đúng nguồn; phân biệt trang PDF index, điều kiện và phương pháp toán. SBT/đề thi chỉ là nguồn tham khảo họ dạng; ghi GAP nếu chưa đọc, không giả nhận đã xem.
 
 ## D1_D6_EVIDENCE
-Actual source locations per lesson/outcome for concepts, distinct worked examples, Core/Practice/Application, Written/Anchor, authentic/source evidence, D6 remediation.
+Từng outcome chứng minh: lý thuyết/điều kiện, ví dụ chọn phương pháp, đa dạng Practice/Application, Written/rubric, đồ thị/bảng/lab, lộ trình lỗi/khắc phục. Không dùng quota công thức/hình/câu thay chiều sâu.
 
 ## PED1_PED6_EVIDENCE
-Exact evidence for motivation, prerequisite terms, mathematical meaning before formula/algorithm, informative SVG/table, why-based solution, independent first attempt and remediation. Provide separate independent pedagogical verdict on this snapshot.
-
-## QUALITY_Q01_Q18_EVIDENCE
-
-**ONE normative standard only:** `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md` defines Q01–Q18. This chapter table is an **evidence map**, not a new academic rubric. Each Q must have specific lesson/outcome/source pointers; `NOT_APPLICABLE` needs precise reason and cannot hide a mandatory learning objective.
-
-| Q_ID | AFFECTED_LESSON_OUTCOME_IDS | SOURCE_EVIDENCE_POINTERS | INDEPENDENT_REVIEW_RECEIPT | RELEASE_RECHECK_MAPPING |
-| --- | --- | --- | --- | --- |
-| Q01 | REPLACE_WITH_EXACT_SCOPE | REPLACE_WITH_S1_SOURCE | REPLACE_WITH_REVIEW | REPLACE_WITH_R_AP_STEP |
-| Q02 | REPLACE_WITH_EXACT_SCOPE | REPLACE_WITH_OUTCOME_MATRIX | REPLACE_WITH_REVIEW | REPLACE_WITH_R_AP_STEP |
-<!-- Fill one non-placeholder row each for Q03 through Q18 before CONTENT_READY. New V2 CI requires exactly Q01..Q18, no duplicates. Never claim self-authored PASS from this map. -->
-
-## QUALITY_Q01_Q18_EVIDENCE
-
-Single normative source: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`. This is a traceability register, not a second quality standard. Provide a concrete lesson/outcome/source evidence pointer and independent reviewer receipt for **each** of Q01..Q18; RELEASE checks the same criterion in the rendered product, not mathematics again.
-
-| Q_ID | LESSON_OUTCOME_IDS | AUTHORING_EVIDENCE | INDEPENDENT_REVIEW_RECEIPT | RELEASE_RECHECK |
-| --- | --- | --- | --- | --- |
-| Q01 | REPLACE_SCOPE | REPLACE_S1 | REPLACE_RECEIPT | REPLACE_R_AP |
-| Q02 | REPLACE_SCOPE | REPLACE_MATRIX | REPLACE_RECEIPT | REPLACE_R_AP |
-
-<!-- Complete Q03 through Q18 with real evidence before CONTENT_READY. Template cannot be passed as a ready packet. -->
-
-## REVIEW_SOURCE_RECEIPT
-For all newly standardized packets, independent NotebookLM receipt must explicitly cite `SLM-THPT-QUALITY-ONE`, effective `STANDARD_VERSION: 1.0.0`, and exact academic source SHA. Reviewer packet IDs, exact selected Permanent Sources v2.0, SGK/SBT S1, expected/reviewed lesson/outcome/item reconciliation, P0/P1/P2, Academic + PED verdicts, proof that aliases map to canonical source. **The separate immutable REVIEW_RECEIPT_PATH file must explicitly contain the exact ACADEMIC_SOURCE_BLOB string**; all IDs listed above must actually appear in the frozen academic source file.
+Mạch học sinh: khám phá → hiểu ý nghĩa/bản chất → kiến thức → ví dụ/dạng toán → Vận dụng → Đối chiếu → sửa sai; tự kiểm hiệu quả học tập theo outcome. **Không ép heading PED** vào UI học sinh. Với Topic dài cần tab ngang mảng kiến thức theo Adaptive Knowledge Tabs v2.
 
 ## DELTA_LEDGER
-Class A/B/C/D, affected IDs, corrections, reviewer re-review when C/D, source equivalence proof when B; `NONE` only if no changes.
+Baseline reviewed source SHA (nếu có), candidate SHA, loại Delta, affected lesson/outcome/item, math/PED/figure change, quyết định self-QA hay review độc lập, P0/P1=0 và các điểm còn HOLD.
 
 ## PRIVATE_RD1_CUSTODY_METADATA
-Private bank item COUNT, SHA-256, custody/accessibility, assessment outcome mapping, exposure plan. **Never paste private stems, answer keys, rubrics or full private bank into GitHub.** Release lane must authorize any public self-check variant separately.
+Chỉ công khai count/hash/custody; private RD1 stems, answers, rubrics, solutions phải owner-held OFF GitHub. Public Topic self-check có thể reuse SGK canonical Practice nhưng bắt buộc `CLIENT_SELF_CHECK_NO_MASTERY`, không gọi `TOPIC_READINESS` độc lập. Không lộ hint/key/đúng sai trước Final Submit.
+
+## ITEM_OUTCOME_MATRIX
+| item_id | primary_outcome | role | source_type | status |
+|---|---|---|---|---|
+| REPLACE_ID | REPLACE_OUTCOME | TOPIC_PRACTICE | SGK_CANONICAL_REUSE | VERIFIED |
+
+**Q15:** một canonical ID / một answer/solution/rubric, nhiều placement theo role; các ứng viên mới phải được đăng ký và soát duplicate semantic, test nghiệm toán trước READY.
+
+## QUALITY_Q01_Q18_EVIDENCE
+**Một chuẩn duy nhất:** `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`. Cột `Q18_MODE_EVIDENCE` phải trỏ đúng `REVIEW_RECEIPT_PATH` và `ACADEMIC_SOURCE_BLOB`, không được ghi reviewer PASS khi self-QA.
+
+| Q_ID | LESSON/OUTCOME/S1 SOURCE | AUTHOR_MATH_PED_QA | Q18_MODE_EVIDENCE | RELEASE_AP_R_MAPPING |
+|---|---|---|---|---|
+| Q01 | REPLACE | REPLACE | REPLACE | REPLACE |
+| Q02 | REPLACE | REPLACE | REPLACE | REPLACE |
+| Q03 | REPLACE | REPLACE | REPLACE | REPLACE |
+| Q04 | REPLACE | REPLACE | REPLACE | REPLACE |
+| Q05 | REPLACE | REPLACE | REPLACE | REPLACE |
+| Q06 | REPLACE | REPLACE | REPLACE | REPLACE |
+| Q07 | REPLACE | REPLACE | REPLACE | REPLACE |
+| Q08 | REPLACE | REPLACE | REPLACE | REPLACE |
+| Q09 | REPLACE | REPLACE | REPLACE | REPLACE |
+| Q10 | REPLACE | REPLACE | REPLACE | REPLACE |
+| Q11 | REPLACE | REPLACE | REPLACE | REPLACE |
+| Q12 | REPLACE | REPLACE | REPLACE | REPLACE |
+| Q13 | REPLACE | REPLACE | REPLACE | REPLACE |
+| Q14 | REPLACE | REPLACE | REPLACE | REPLACE |
+| Q15 | REPLACE | REPLACE | REPLACE | REPLACE |
+| Q16 | REPLACE | REPLACE | REPLACE | REPLACE |
+| Q17 | REPLACE | REPLACE | REPLACE | REPLACE |
+| Q18 | REPLACE | REPLACE | REPLACE | REPLACE |
+
+## REVIEW_SOURCE_RECEIPT
+Nếu `AUTHOR_SELF_VERIFIED`: một `AUTHOR_SELF_QA_RECEIPT` có `SOURCE_BLOB`, S1, outcome audit, giải phép toán/điều kiện, hình/lab, item/rubric/exposure, P0/P1=0, chữ ký tác giả. Nếu `INDEPENDENT_REVIEW`: receipt NotebookLM đúng source SHA, 5 Permanent THPT v2.1 và verdict theo phạm vi. Source 06 file Temp_ + prompt chỉ dùng khi thực sự gửi NotebookLM, **không phải bước bắt buộc**.
 
 ## AUTHOR_SIGNOFF
-Author source commit, handoff date, exact immutable public source path/blob, receipt path/blob, declared scope FULL_LEARNING_PATH vs PUBLIC_FORMATIVE_ONLY, known remaining blockers (must be NONE to hand off).
+Người biên soạn xác nhận đã độc lập kiểm toán toàn bộ nguồn, delta và reviewer/self QA theo chế độ Q18; A1–A7 đủ chứng cứ, không private RD1 leak, không còn P0/P1, nguồn/receipt SHA đúng. Không tự tick khi chưa thực tế kiểm.
 
 ## RELEASE_ACCEPTANCE
-Release must validate this against the canonical `ready/PACKET_ID.md` and run live learner/technical QA; this document alone is NOT CONTENT_READY and never grants release permission.
+RELEASE lấy duy nhất nguồn và receipt SHA này cùng `ready/PACKET_ID.md` và 1 REGISTER row. Kiểm AP1–AP5, R1–R5, responsive/MathJax/hình/lab, Q15/Q16/Final Submit/Firebase, THCS/THPT Golden, exact-final-HEAD CI; owner approval và P1/P2 mới cho phép công bố. HTML mẫu không là website đã phát hành.
