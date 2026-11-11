@@ -48,10 +48,32 @@ const url="http://127.0.0.1:8765/thpt-preview/sgk/chuong-ii/bai-3/";
           const r=el.getBoundingClientRect();
           return r.width>0&&(r.left < -5||r.right > innerWidth+5);
         });
-        return {overflow:document.documentElement.scrollWidth-innerWidth,mathOutside:outside.length};
+        const inaccessible=outside.filter(el=>{
+          // An expression may exceed the phone viewport if its enclosing
+          // formula/table has a working LOCAL horizontal scroll. In that case
+          // all symbols remain reachable; it is not clipped or page overflow.
+          for(let node=el.parentElement;node&&node!==panel;node=node.parentElement){
+            const style=getComputedStyle(node);
+            if(!/^(auto|scroll)$/.test(style.overflowX))continue;
+            if(node.scrollWidth<=node.clientWidth+1)continue;
+            const before=node.scrollLeft;
+            node.scrollLeft=Math.max(1,node.scrollWidth-node.clientWidth);
+            const moves=node.scrollLeft>before+0.5;
+            node.scrollLeft=before;
+            if(moves)return false;
+          }
+          return true;
+        });
+        return {overflow:document.documentElement.scrollWidth-innerWidth,
+          wideMath:outside.length,inaccessible:inaccessible.map(el=>({
+            tex:el.getAttribute("aria-label"),text:el.textContent?.slice(0,100)
+          }))};
       });
       assert(geometry.overflow<=20,"B03 horizontal page overflow "+width+": "+geometry.overflow);
-      assert.equal(geometry.mathOutside,0,"B03 Model B knowledge MathJax clipping "+width);
+      assert.deepEqual(geometry.inaccessible,[],"B03 inaccessible Knowledge MathJax at "+width+
+        ": "+JSON.stringify(geometry.inaccessible));
+      if(geometry.wideMath)console.log("PASS B03 "+width+"px: "+geometry.wideMath+
+        " wide MathJax expression(s) reachable through local horizontal scrolling");
       assert.equal(await page.locator("[data-thpt-help-id]").count(),2,"B03 original D6 source IDs preserved");
       assert.equal(await page.locator("[data-thpt-first-try-id]").count(),5,"B03 original 5 self-attempts preserved");
       assert.equal(await page.locator("details.question[open]").count(),0,"B03 must not expose answers");
