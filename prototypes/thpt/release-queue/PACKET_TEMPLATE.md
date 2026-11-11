@@ -17,7 +17,7 @@ CURRENT_PR: CHUA_CO
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 # New packets use the effective version on main only after governance merge.
-STANDARD_VERSION: 3.0.0
+STANDARD_VERSION: 3.0.1
 QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/REPLACE_PACKET_HANDOFF.md
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/REPLACE_SOURCE.md
@@ -34,6 +34,8 @@ ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 # OFFICIAL_READINESS: NOT_CLAIMED, MASTERY_ACTIVATION: NO, RELEASE_AUTHORIZATION: NO.
 # Do not publish private RD1 stems, keys, solutions or rubrics. Public self-check is not Topic Readiness.
 BLOCKERS: OPEN_UNTIL_SOURCE_VERIFIED
+
+> **Q18 v3.0.1:** Manifest này chỉ là hợp đồng nguồn cho 1 packet hoàn chỉnh, KHÔNG phải vòng xác nhận thứ hai. Sau kiểm toán học liệu trong khi viết: `AUTHORING_PASS = CONTENT_READY` khi receipt/source/V2/ready/REGISTER được đóng **cùng lượt**. Pending kiểm thực chất khác với lỗi nội dung `Q18_SUBSTANTIVE_HOLD`; metadata chưa hoàn tất là `HANDOFF_PACKAGING_PENDING` để tự sửa. Reviewer độc lập không bắt buộc khi đã tự kiểm được.
 
 ## A — biên soạn/review
 - [ ] A1_SOURCE_SNAPSHOT — chứng cứ snapshot/SGK/NotebookLM/ID/delta tương ứng
