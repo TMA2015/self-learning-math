@@ -7,7 +7,7 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.0.1
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic-probability/Temp_TOPIC_PROBABILITY_G10_G12_FULL_PUBLIC_R02_20261111.md
-SOURCE_BLOB: 6b49c1e4e3b9a4e68b1a64ee5c65bed8235220f9
+SOURCE_BLOB: 1258a2748c01ba288b706a08c79af237de799cf3
 PUBLIC_BASELINE_INDEX: prototypes/thpt/shared-items/Temp_TOPIC_PROBABILITY_G10_G12_CANONICAL_PUBLIC_SOURCE_INDEX_R01_20261111.md
 PUBLIC_BASELINE_INDEX_BLOB: c4e472d628165f4b14281843436697202977a875
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC_PROBABILITY_G10_G12_PUBLIC_EXTENSION_12ITEM_R02_20261111.md
@@ -96,7 +96,7 @@ AUTHOR_SIGNOFF: Q18_AUTHOR_SELF_VERIFIED_R02_PUBLIC_LEARNING_SCOPE; no release a
 - **Q15 / A4:** 3 file original (16+10+12) theo đúng Git blob, 12 câu bổ sung mới một file; 50 item IDs/mapping; năm Written chỉ có một bản canonical, Anchor chỉ là nhãn. Không nhân bản key/rubric trên trang luyện.
 - **Q16 / A7:** Chín public placements là **tự đối chiếu**, không độc lập. Gói R02 **không** nhập 12 RD1 owner-held cũ; private historical snapshot reviewer PASS vẫn ở ngoài Git, không điền SHA256 giả, không tuyên bố official TOPIC_READINESS. Không hint/Tutor/answer/correctness trước Final Submit trong runtime do RELEASE phải chứng minh; trong source giữ boundary no-Mastery.
 - **Q17:** chỉ `Kiến thức / Luyện tập / Tự kiểm tra`, không trang Core; các khái niệm bắt buộc đều có mặt trong Topic Knowledge, SGK chỉ là provenance không bắt học sinh đọc thêm nhánh SGK.
-- **Q18 / A3:** source blob `6b49c1e4e3b9a4e68b1a64ee5c65bed8235220f9`, extension blob `eafc0164beee72111bc27f0ddbd84f26b601698f`, 38-baseline index blob `c4e472d628165f4b14281843436697202977a875`; R02 author self-QA trên nội dung mới, reviewer old R0 PASS giữ bất biến ở `a50675...`. Không gán reviewer độc lập cho R02.
+- **Q18 / A3:** source blob `1258a2748c01ba288b706a08c79af237de799cf3`, extension blob `eafc0164beee72111bc27f0ddbd84f26b601698f`, 38-baseline index blob `c4e472d628165f4b14281843436697202977a875`; R02 author self-QA trên nội dung mới, reviewer old R0 PASS giữ bất biến ở `a50675...`. Không gán reviewer độc lập cho R02.
 
 ## Delta và ranh giới triển khai
 
