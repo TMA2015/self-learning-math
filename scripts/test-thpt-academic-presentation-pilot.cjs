@@ -34,7 +34,7 @@ for(const check of checks){
   // Old math-count/FNV locks protect the historical source only. When a
   // Q18-evidenced Model B candidate arrives, check the real learner structure.
   if(src.includes('=== "Khám phá kiến thức"')){
-    const names=[...src.matchAll(/^===\\s*"([^"]+)"\\s*$/gm)].map(x=>x[1]);
+    const names=[...src.matchAll(/^===\s*"([^"]+)"\s*$/gm)].map(x=>x[1]);
     assert.deepEqual(names,["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
       check.file+": invalid Model B 4-tab structure");
     assert(!src.includes("REVIEW_RECEIPT:"),check.file+": internal metadata leaked");
