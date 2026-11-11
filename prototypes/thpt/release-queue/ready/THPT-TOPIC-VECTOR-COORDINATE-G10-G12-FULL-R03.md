@@ -32,7 +32,7 @@ RELEASE_AUTHORIZATION: NO
 
 - [x] A1_SOURCE_SNAPSHOT — Source R03 blob b79c4c3e3a21c31a44a581dc5d5bd60f619ba207 và receipt 9f5aa33b9e6a49398b77132b26750c4536cbc47f khóa một phiên bản; R02 reviewer source tồn tại độc lập, bất biến.
 - [x] A2_SGK_SBT_SCOPE — SGK/SBT KNTT G10–12 theo R02 provenance có trang in/PDF; SBT G12 T2 thiếu trang in 25 được giữ caveat, không tự dựng nội dung.
-- [x] A3_Q18_VERIFICATION_RECEIPT — Q18 AUTHOR_SELF_VERIFIED v3.0.1, một receipt có bảy phép kiểm dẫn nhập, ma trận outcome, PED/Q15/Q16; không giả có NotebookLM R03 PASS.
+- [x] A3_NOTEBOOKLM_VERDICT — Nhãn tương thích checklist lịch sử; thực chất Q18 AUTHOR_SELF_VERIFIED v3.0.1 trên receipt R03 (7 kiểm toán toán + 56 outcomes + PED/Q15/Q16), tuyệt đối KHÔNG tuyên bố NotebookLM đã chấm R03.
 - [x] A4_ITEM_OUTCOME_IDS — 7 phần, 56/56 outcome, 114/114 canonical public ID, 114/114 mapping hợp lệ; 14 voluntary self-check placements không tăng số câu duy nhất.
 - [x] A5_D1_D6_SCOPE — 39 ví dụ R02 giữ nguyên, mạch ý 7 tab con, 15 Tự thử có đối chiếu, hình giải thích, bảy đường D6, Written/rubric dùng chung.
 - [x] A6_DELTA_RESOLVED — Biên tập R03 có tự kiểm toán toán/PED/source ngay khi tạo theo v3.0.1; P0=0, P1=0 ở SOURCE authoring; không xét AP/browser/RELEASE như Academic.
