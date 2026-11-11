@@ -1,0 +1,242 @@
+# AUTHORING CONTENT_READY — Xác suất G10–G12 · V2 R02 source-locked handoff
+
+**Vai trò:** SOURCE AUTHORING duy nhất, `SLM-THPT-QUALITY-ONE v3.0.1`. “Xác suất” là gói thứ ba của chuỗi biên soạn thực tế, **không** tự nhận `PLAN22-03`, vì kế hoạch 22 nghiên cứu 09/11 đặt Xác suất ở 20/21 và chưa owner-lock taxonomy. Gói học thuật sẵn để RELEASE nhận theo **chủ đề**, không tự gán route/nhóm hay mã tiến độ website. Không merge/deploy.
+
+PACKET_ID: THPT-TOPIC-PROBABILITY-G10-G12-FULL-R02
+HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
+STANDARD_ID: SLM-THPT-QUALITY-ONE
+STANDARD_VERSION: 3.0.1
+LEARNING_PATH: TOPIC
+RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
+Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic-probability/Temp_TOPIC_PROBABILITY_G10_G12_FULL_PUBLIC_R02_20261111.md
+ACADEMIC_SOURCE_BLOB: 1258a2748c01ba288b706a08c79af237de799cf3
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC_PROBABILITY_G10_G12_R02_AUTHOR_SELF_QA_RECEIPT_20261111.md
+REVIEW_RECEIPT_BLOB: a9d8c5254c7a84130404b6faedae2632ec76ac1f
+PUBLIC_BASELINE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC_PROBABILITY_G10_G12_CANONICAL_PUBLIC_SOURCE_INDEX_R01_20261111.md
+PUBLIC_BASELINE_INDEX_BLOB: c4e472d628165f4b14281843436697202977a875
+PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC_PROBABILITY_G10_G12_PUBLIC_EXTENSION_12ITEM_R02_20261111.md
+PUBLIC_EXTENSION_BLOB: eafc0164beee72111bc27f0ddbd84f26b601698f
+ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
+PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
+CONTENT_STATE: CONTENT_READY
+BLOCKERS: NONE
+ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
+OFFICIAL_READINESS: NOT_CLAIMED
+PRIVATE_RD1_COUNT: 0
+PRIVATE_RD1_SHA256: N_A_NOT_IN_CURRENT_HANDOFF
+HISTORICAL_OWNER_HELD_RD1_COUNT: 12
+HISTORICAL_PRIVATE_RD1_SOURCE_STATUS: EXCLUDED_FROM_THIS_PUBLIC_CONTENT_HANDOFF
+HISTORICAL_RD1_RAW_SHA256: NOT_AVAILABLE_DO_NOT_INVENT
+MASTERY_ACTIVATION: NO
+RELEASE_AUTHORIZATION: NO
+RELEASE_TOPIC_ID: UNASSIGNED_OWNER_DECISION
+
+## LESSON_IDS
+
+- TOPIC-PROB-M01
+- TOPIC-PROB-M02
+- TOPIC-PROB-M03
+- TOPIC-PROB-M04
+- TOPIC-PROB-M05
+- TOPIC-PROB-M06
+- TOPIC-PROB-M07
+- TOPIC-PROB-M08
+- TOPIC-PROB-M09
+- TOPIC-PROB-M10
+- TOPIC-PROB-M11
+- TOPIC-PROB-M12
+- TOPIC-PROB-M13
+
+## OUTCOME_IDS
+
+- G10-B26-EXPERIMENT_SAMPLE_SPACE
+- G10-B26-EVENT_SUBSET
+- G10-B26-CLASSICAL_RATIO
+- G10-B26-COMPLEMENT
+- G10-B26-SCOPE_SMALL_PROBABILITY
+- G10-B27-EQUIPROBABLE_MODELLING
+- G10-B27-COUNTING_OUTCOMES
+- G10-B27-COMPLEMENT_PROBABILITY
+- G10-B27-TREE_SEQUENCE
+- G10-B27-MULTISTEP_CONTEXT
+- G11-B28-EVENT_UNION_INTERSECTION
+- G11-B28-INDEPENDENT_EVENTS
+- G11-B28-DISJOINT_EVENTS
+- G11-B29-ADDITION_GENERAL
+- G11-B29-ADDITION_DISJOINT
+- G11-B30-MULTIPLICATION_INDEPENDENT
+- G11-B30-COMBINED_RULES
+- G12-B18-CONDITIONAL_INTERPRETATION
+- G12-B18-CONDITIONAL_FORMULA
+- G12-B18-GENERAL_MULTIPLICATION
+- G12-B18-INDEPENDENCE_CONNECTION
+- G12-B19-TOTAL_PROBABILITY
+- G12-B19-BAYES_REVERSE
+- G12-B19-TREE_MODEL
+- G12-B19-BASE_RATE_REASONING
+
+## PUBLIC_ITEM_IDS
+
+- THPT-G10-B26-C01
+- THPT-G10-B26-P02
+- THPT-G10-B26-C02
+- THPT-G10-B26-P01
+- THPT-G10-B26-P03
+- THPT-G10-B26-P04
+- THPT-G10-B26-P05
+- THPT-G10-B27-P05
+- THPT-G10-B27-C01
+- THPT-G10-B27-P01
+- THPT-G10-B27-P02
+- THPT-G10-B27-P03
+- THPT-G10-B27-C02
+- THPT-G10-B27-P04
+- THPT-G10-CHIX-W26-01
+- THPT-G10-CHIX-W27-ANCHOR-01
+- THPT-G11-B28-P01
+- THPT-G11-B28-P02
+- THPT-G11-B28-P03
+- THPT-G11-B29-P01
+- THPT-G11-B29-P02
+- THPT-G11-B29-P03
+- THPT-G11-B30-P01
+- THPT-G11-B30-P02
+- THPT-G11-B30-P03
+- THPT-G11-CHVIII-W30-ANCHOR-01
+- THPT-G12-B18-P01
+- THPT-G12-B18-P02
+- THPT-G12-B18-P03
+- THPT-G12-B18-P04
+- THPT-G12-B18-P05
+- THPT-G12-CHVI-W18-01
+- THPT-G12-B19-P01
+- THPT-G12-B19-P02
+- THPT-G12-B19-P03
+- THPT-G12-B19-P04
+- THPT-G12-B19-P05
+- THPT-G12-CHVI-W19-ANCHOR-01
+- THPT-G10-TOPPROB-ADD01
+- THPT-G10-TOPPROB-ADD02
+- THPT-G10-TOPPROB-ADD03
+- THPT-G10-TOPPROB-ADD04
+- THPT-G11-TOPPROB-ADD05
+- THPT-G11-TOPPROB-ADD06
+- THPT-G11-TOPPROB-ADD07
+- THPT-G11-TOPPROB-ADD08
+- THPT-G12-TOPPROB-ADD09
+- THPT-G12-TOPPROB-ADD10
+- THPT-G12-TOPPROB-ADD11
+- THPT-G12-TOPPROB-ADD12
+
+## ITEM_OUTCOME_MATRIX
+
+Một `item_id` duy nhất/đề/đáp án/lời giải/rubric, `role/placement` không tạo bản sao. G10 20 (16 historical+4 new), G11 14 (10+4), G12 16 (12+4) = 50. Năm Written (2+1+2) giữ rubric/Anchor nguồn gốc; 12 câu mới đều là PUBLIC practice không là RD1.
+
+| item_id | outcome_id | placement_role | provenance |
+|---|---|---|---|
+| `THPT-G10-B26-C01` | `G10-B26-EXPERIMENT_SAMPLE_SPACE` | TOPIC_PRACTICE | SGK_REUSE |
+| `THPT-G10-B26-P02` | `G10-B26-EVENT_SUBSET` | TOPIC_PRACTICE | SGK_REUSE |
+| `THPT-G10-B26-C02` | `G10-B26-CLASSICAL_RATIO` | TOPIC_PRACTICE | SGK_REUSE |
+| `THPT-G10-B26-P01` | `G10-B26-COMPLEMENT` | TOPIC_PRACTICE | SGK_REUSE |
+| `THPT-G10-B26-P03` | `G10-B26-CLASSICAL_RATIO` | TOPIC_PRACTICE | SGK_REUSE |
+| `THPT-G10-B26-P04` | `G10-B26-SCOPE_SMALL_PROBABILITY` | TOPIC_PRACTICE | SGK_REUSE |
+| `THPT-G10-B26-P05` | `G10-B27-EQUIPROBABLE_MODELLING` | TOPIC_PRACTICE | SGK_REUSE |
+| `THPT-G10-B27-P05` | `G10-B27-EQUIPROBABLE_MODELLING` | TOPIC_PRACTICE | SGK_REUSE |
+| `THPT-G10-B27-C01` | `G10-B27-COUNTING_OUTCOMES` | TOPIC_PRACTICE | SGK_REUSE |
+| `THPT-G10-B27-P01` | `G10-B27-COUNTING_OUTCOMES` | TOPIC_PRACTICE | SGK_REUSE |
+| `THPT-G10-B27-P02` | `G10-B27-COMPLEMENT_PROBABILITY` | TOPIC_PRACTICE | SGK_REUSE |
+| `THPT-G10-B27-P03` | `G10-B27-TREE_SEQUENCE` | TOPIC_PRACTICE | SGK_REUSE |
+| `THPT-G10-B27-C02` | `G10-B27-TREE_SEQUENCE` | TOPIC_PRACTICE | SGK_REUSE |
+| `THPT-G10-B27-P04` | `G10-B27-MULTISTEP_CONTEXT` | TOPIC_PRACTICE | SGK_REUSE |
+| `THPT-G10-CHIX-W26-01` | `G10-B26-EVENT_SUBSET` | TOPIC_WRITTEN | SGK_REUSE |
+| `THPT-G10-CHIX-W27-ANCHOR-01` | `G10-B27-MULTISTEP_CONTEXT` | TOPIC_WRITTEN | SGK_REUSE |
+| `THPT-G11-B28-P01` | `G11-B28-EVENT_UNION_INTERSECTION` | TOPIC_PRACTICE | REVIEWED_AUTHORING_CANDIDATE |
+| `THPT-G11-B28-P02` | `G11-B28-INDEPENDENT_EVENTS` | TOPIC_PRACTICE | REVIEWED_AUTHORING_CANDIDATE |
+| `THPT-G11-B28-P03` | `G11-B28-DISJOINT_EVENTS` | TOPIC_PRACTICE | REVIEWED_AUTHORING_CANDIDATE |
+| `THPT-G11-B29-P01` | `G11-B29-ADDITION_GENERAL` | TOPIC_PRACTICE | REVIEWED_AUTHORING_CANDIDATE |
+| `THPT-G11-B29-P02` | `G11-B29-ADDITION_DISJOINT` | TOPIC_PRACTICE | REVIEWED_AUTHORING_CANDIDATE |
+| `THPT-G11-B29-P03` | `G11-B29-ADDITION_GENERAL` | TOPIC_PRACTICE | REVIEWED_AUTHORING_CANDIDATE |
+| `THPT-G11-B30-P01` | `G11-B30-MULTIPLICATION_INDEPENDENT` | TOPIC_PRACTICE | REVIEWED_AUTHORING_CANDIDATE |
+| `THPT-G11-B30-P02` | `G11-B30-MULTIPLICATION_INDEPENDENT` | TOPIC_PRACTICE | REVIEWED_AUTHORING_CANDIDATE |
+| `THPT-G11-B30-P03` | `G11-B30-COMBINED_RULES` | TOPIC_PRACTICE | REVIEWED_AUTHORING_CANDIDATE |
+| `THPT-G11-CHVIII-W30-ANCHOR-01` | `G11-B30-COMBINED_RULES` | TOPIC_WRITTEN | REVIEWED_AUTHORING_CANDIDATE |
+| `THPT-G12-B18-P01` | `G12-B18-CONDITIONAL_INTERPRETATION` | TOPIC_PRACTICE | REVIEWED_AUTHORING_CANDIDATE |
+| `THPT-G12-B18-P02` | `G12-B18-CONDITIONAL_FORMULA` | TOPIC_PRACTICE | REVIEWED_AUTHORING_CANDIDATE |
+| `THPT-G12-B18-P03` | `G12-B18-GENERAL_MULTIPLICATION` | TOPIC_PRACTICE | REVIEWED_AUTHORING_CANDIDATE |
+| `THPT-G12-B18-P04` | `G12-B18-INDEPENDENCE_CONNECTION` | TOPIC_PRACTICE | REVIEWED_AUTHORING_CANDIDATE |
+| `THPT-G12-B18-P05` | `G12-B18-GENERAL_MULTIPLICATION` | TOPIC_PRACTICE | REVIEWED_AUTHORING_CANDIDATE |
+| `THPT-G12-CHVI-W18-01` | `G12-B18-CONDITIONAL_FORMULA` | TOPIC_WRITTEN | REVIEWED_AUTHORING_CANDIDATE |
+| `THPT-G12-B19-P01` | `G12-B19-TOTAL_PROBABILITY` | TOPIC_PRACTICE | REVIEWED_AUTHORING_CANDIDATE |
+| `THPT-G12-B19-P02` | `G12-B19-BAYES_REVERSE` | TOPIC_PRACTICE | REVIEWED_AUTHORING_CANDIDATE |
+| `THPT-G12-B19-P03` | `G12-B19-TREE_MODEL` | TOPIC_PRACTICE | REVIEWED_AUTHORING_CANDIDATE |
+| `THPT-G12-B19-P04` | `G12-B19-BASE_RATE_REASONING` | TOPIC_PRACTICE | REVIEWED_AUTHORING_CANDIDATE |
+| `THPT-G12-B19-P05` | `G12-B19-TOTAL_PROBABILITY` | TOPIC_PRACTICE | REVIEWED_AUTHORING_CANDIDATE |
+| `THPT-G12-CHVI-W19-ANCHOR-01` | `G12-B19-BAYES_REVERSE` | TOPIC_WRITTEN | REVIEWED_AUTHORING_CANDIDATE |
+| `THPT-G10-TOPPROB-ADD01` | `G10-B26-EXPERIMENT_SAMPLE_SPACE` | TOPIC_PRACTICE | AUTHORING_PUBLIC_EXTENSION_R02 |
+| `THPT-G10-TOPPROB-ADD02` | `G10-B26-COMPLEMENT` | TOPIC_PRACTICE | AUTHORING_PUBLIC_EXTENSION_R02 |
+| `THPT-G10-TOPPROB-ADD03` | `G10-B26-SCOPE_SMALL_PROBABILITY` | TOPIC_PRACTICE | AUTHORING_PUBLIC_EXTENSION_R02 |
+| `THPT-G10-TOPPROB-ADD04` | `G10-B27-COMPLEMENT_PROBABILITY` | TOPIC_PRACTICE | AUTHORING_PUBLIC_EXTENSION_R02 |
+| `THPT-G11-TOPPROB-ADD05` | `G11-B28-EVENT_UNION_INTERSECTION` | TOPIC_PRACTICE | AUTHORING_PUBLIC_EXTENSION_R02 |
+| `THPT-G11-TOPPROB-ADD06` | `G11-B28-INDEPENDENT_EVENTS` | TOPIC_PRACTICE | AUTHORING_PUBLIC_EXTENSION_R02 |
+| `THPT-G11-TOPPROB-ADD07` | `G11-B28-DISJOINT_EVENTS` | TOPIC_PRACTICE | AUTHORING_PUBLIC_EXTENSION_R02 |
+| `THPT-G11-TOPPROB-ADD08` | `G11-B29-ADDITION_DISJOINT` | TOPIC_PRACTICE | AUTHORING_PUBLIC_EXTENSION_R02 |
+| `THPT-G12-TOPPROB-ADD09` | `G12-B18-CONDITIONAL_INTERPRETATION` | TOPIC_PRACTICE | AUTHORING_PUBLIC_EXTENSION_R02 |
+| `THPT-G12-TOPPROB-ADD10` | `G12-B18-INDEPENDENCE_CONNECTION` | TOPIC_PRACTICE | AUTHORING_PUBLIC_EXTENSION_R02 |
+| `THPT-G12-TOPPROB-ADD11` | `G12-B19-TREE_MODEL` | TOPIC_PRACTICE | AUTHORING_PUBLIC_EXTENSION_R02 |
+| `THPT-G12-TOPPROB-ADD12` | `G12-B19-BASE_RATE_REASONING` | TOPIC_PRACTICE | AUTHORING_PUBLIC_EXTENSION_R02 |
+
+## QUALITY_Q01_Q18_EVIDENCE
+
+**Một chuẩn:** `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md` (v3.0.1), 18 điều, không có Q19 hay chuẩn RELEASE riêng.
+
+| Q | Evidence | AUTHORING Q18 | RELEASE independent gate |
+|---|---|---|---|
+| Q01 | KNTT S1 printed G10 B26–27/G11 B28–30/G12 B18–19 | AUTHOR_SELF_VERIFIED_S1_WITH_HISTORICAL_REVIEWED_RECEIPTS | S1 page refs in R02 receipt; no invented PDF re-read |
+| Q02 | 25 outcomes/G10=10,G11=7,G12=8 | AUTHOR_SELF_VERIFIED_25_OF_25 | 2 public items and M01–M13 knowledge links for each outcome |
+| Q03 | 13 concept modules; conditions and exceptions | AUTHOR_SELF_VERIFIED_D1 | Equiprobable/finite, disjoint/independent, denominator>0 |
+| Q04 | 7 explicit worked examples+within-module demonstrations | AUTHOR_SELF_VERIFIED_D2 | Why/when/when not, solutions computed and checked in receipt |
+| Q05 | 50 public canonical practice entries of two families/outcome | AUTHOR_SELF_VERIFIED_D3 | 38 old original snapshot plus 12 new selfQA original items |
+| Q06 | 5 shared Written IDs and one anchor-tag policy | AUTHOR_SELF_VERIFIED_D4 | Never clone rubric, no false auto scoring of free text |
+| Q07 | 2 accessible mathematical SVGs with guide text | AUTHOR_SELF_VERIFIED_D5 | Venn count and tree Bayes math QA; browser render RELEASE |
+| Q08 | 13 error->prerequisite->retry passages | AUTHOR_SELF_VERIFIED_D6 | D6 immediately after 13 first tries |
+| Q09 | Why learn: trials, overlap, independence, Bayes | AUTHOR_SELF_VERIFIED_PED1 | Motivation before formulas in all modules |
+| Q10 | G10 foundation before G11 event rules before G12 conditions | AUTHOR_SELF_VERIFIED_PED2 | No mandatory SGK page branching |
+| Q11 | Meaning before formula and counterexample | AUTHOR_SELF_VERIFIED_PED3 | Model/concept conditions explicitly grounded |
+| Q12 | Venn and tree reading guidance | AUTHOR_SELF_VERIFIED_PED4 | Show overlap, branch product and total-prob sum |
+| Q13 | Seven worked models explain method selection and limits | AUTHOR_SELF_VERIFIED_PED5 | Wrong method and conditions stated |
+| Q14 | 13 first tries gated on deliberate reveal | AUTHOR_SELF_VERIFIED_PED6 | Self Check voluntary answer reveal after Final Submit runtime |
+| Q15 | 50 IDs / one canonical key/rubric per stem; 9 reused selfcheck placements | AUTHOR_SELF_VERIFIED_Q15 | Original three Git blobs and one new extension source, no duplicate |
+| Q16 | 0 protected RD1 in this handoff; 12 historical owner-held excluded | AUTHOR_SELF_VERIFIED_PUBLIC_ASSESSMENT | No hint/key/Tutor before Final Submit; NO_MASTERY; official RD1 NOT_CLAIMED |
+| Q17 | 3 complete independent Topic pages | AUTHOR_SELF_VERIFIED_Q17 | Knowledge / Practice / Self Check, no Topic Core |
+| Q18 | one SOURCE_BLOB + one author QA receipt | AUTHOR_SELF_VERIFIED_Q18 | Old Notebook reviewer PASS is snapshot-specific only |
+
+## S1_SGK_SBT_SOURCE
+
+Theo historical reviewer receipts 28/10: SGK/SBT KNTT Toán 10 tập 2 B26–B27 (SGK trang in 77–89/SBT 60–74), Toán 11 tập 2 B28–B30 (SGK 63–82/SBT 42–55), Toán 12 tập 2 B18–B19 (SGK 42–58/SBT 40–64). Không tạo nguồn sách mới từ S2. Source R02 biên soạn lại lời dẫn/13 mô-đun theo nguồn học thuật đã đọc; 12 câu bổ sung giải độc lập trong R02 receipt, không sao chép nguyên đề/đáp án SGK.
+
+## D1_D6_EVIDENCE
+
+13 mảng kiến thức tự học (G10 5/G11 4/G12 4), 7 ví dụ giải mẫu đa bước, 13 first tries cùng D6, 2 SVG Venn/Bayes đã kiểm toán số liệu. 50 practice items từ 3 historical source files + 1 original extension; năm Written dùng chung; toàn bộ 25 outcomes có ít nhất hai public items và cách ôn sửa lỗi. One student learning route không đòi nhảy sang SGK để bù kiến thức.
+
+## PED1_PED6_EVIDENCE
+
+Mạch động cơ→tiền đề→bản chất→giả thiết/formula→lý do phương pháp→đọc hình→tự thử trước mở lời giải→D6. Thể hiện trong R02 source qua 3 mảng lớn, 13 tab con; danh mục/receipt/ID nằm ngoài UI học sinh. Không bật AI Tutor trên public selfcheck/Final Submit trong bất cứ giai đoạn nào.
+
+## AUTHORING_A1_A7_EVIDENCE
+
+A1 one source blob `1258a2748c01ba288b706a08c79af237de799cf3` (plus 1 immutable new practice bank blob `eafc0164beee72111bc27f0ddbd84f26b601698f` and 3 historical original bank blobs pinned by index `c4e472d628165f4b14281843436697202977a875`); A2 primary source receipt printed page ranges for 3 grade sections; A3 self-audited R02 Q18 receipt `a9d8c5254c7a84130404b6faedae2632ec76ac1f`; A4 25 outcomes/50 IDs with matrix; A5 D1–D6/PED1–PED6, two figures and five Written; A6 authored new items and examples were directly calculated/checked, P0/P1=0; A7 only public self-check, protected RD1 **out of scope**, no leaks, zero auto mastery.
+
+## HISTORICAL_PRIVATE_ASSESSMENT_BOUNDARY
+
+External history: 12 owner-held original `THPT-TOPIC-PROB-RD01..RD12` reviewer PASS on locked 28/10 snapshot; no private stems/keys/solutions/rubrics are included in this packet or public Git, and original raw private source SHA256 is **not independently available**. The count 0 above is **count imported into R02**, not denial that 12 candidates existed historically. Future activation requires a separate owner-held exact-source custody, server-only key and exposure verification; **never** treat exposed self-check IDs or client scores as held-out Readiness.
+
+## DELTA_LEDGER_AND_REVIEW_SCOPES
+
+- Original 38 public reviewed source items preserved at exact 3 Git blobs (G10 `c6be192d33f3741992d57988d94bc49c5f07650b`, G11 `bb6010e7718e71885a49440e63692a62ccc2a2e8`, G12 `156061dd3bb240ddac21183df21a12637e1b5b09`). Original academic/PED PASS per original 28/10 source only.
+- R02 material D1/PED and 12 new item additions are **self-verified** on R02 via v3.0.1 Q18; 25-outcome evidence and 25/25 math/structure checks. No author asserts NotebookLM reviewed new R02.
+- 9 public selfcheck placements reuse exposed original practice IDs, `CLIENT_SELF_CHECK_NO_MASTERY`; not independently eligible.
+
+## RELEASE_INTAKE_CHECKS_NOT_CLAIMED
+
+Release receives one packet by SHA (do not merge this Draft merely to import). Verify cross-source 38 old + 12 new IDs and original solutions/rubrics, render 3 pages under owner-approved Topic taxonomy only; AP1–AP5, R1–R5, source-lock exact-head CI, Adaptive Knowledge Tabs v2, SVG/MathJax, optional Gemini only in PUBLIC study, no Tutor in Self Check, Final Submit no early key, no student/Firebase regression, owner merge/deploy authorization, P1 and real-device P2. This V2 record is **not** proof of site implementation or owner approval.
