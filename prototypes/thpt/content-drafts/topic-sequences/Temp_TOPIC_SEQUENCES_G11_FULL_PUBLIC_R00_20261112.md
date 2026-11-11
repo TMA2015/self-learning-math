@@ -97,6 +97,88 @@ Hành trình gồm 9 mô-đun: định nghĩa dãy số, truy hồi/đơn điệ
 
         **D6:** Hãy ghi dãy chỉ số 2→3→4→5→6 để thấy chỉ có bốn bước, không phải sáu. Sau đó làm bài canonical tương ứng, không ghi Mastery.
 
+=== "II · Cấp số cộng và bước sang cấp số nhân"
+
+    === "04. Ba số hạng liền nhau và tổng cấp số cộng"
+
+        #### M04 · Ba số hạng liền nhau và tổng cấp số cộng
+
+        **WHY:** Nếu có hàng trăm hàng ghế, cộng từng hàng rất mất công; vì sao có thể ghép cặp hai đầu để tính tổng nhanh?
+
+        **MEANING / DERIVATION BEFORE FORMULA:** Ba số CSC liền nhau \(a,b,c\) thỏa \(b-a=c-b\), nên \(2b=a+c\). Viết tổng \(S_n=u_1+\cdots+u_n\) từ đầu và lại từ cuối: mỗi cột có \(u_1+u_n\). Do đó \(2S_n=n(u_1+u_n)\) và \(S_n=n(u_1+u_n)/2=\frac n2[2u_1+(n-1)d]\).
+
+        **WORKED EXAMPLE:** CSC u₁=5,d=3. u₈=5+7·3=26, S₈=8(5+26)/2=124. Ghép (5,26),(8,23),(11,20),(14,17) cho bốn cặp có tổng 31, tổng đúng bằng 124. **Hướng dẫn đọc SVG Gauss:** các cặp đầu-cuối cộng bằng nhau, không phải đồ họa trang trí.
+
+        **LIMIT:** Công thức tổng CSC không dùng cho dãy có tỉ số cố định nhưng hiệu thay đổi; n phải là số số hạng đang cộng.
+
+        **Hướng dẫn cho từng outcome:**
+
+        - **G11-B06-AP-THREE-TERMS:** Ba số hạng liên tiếp thỏa 2b=a+c, phải là ba chỉ số liền nhau.
+
+        - **G11-B06-AP-SUM:** S_n=n(u₁+u_n)/2 suy từ hai lượt ghép cặp, không là tổng CSN.
+
+        **Tự thử trước Core (M04-TRY01):** Ba số x−2,x,x+2 có là ba số hạng liên tiếp của một CSC không? Với u₁=1,d=2 tính S₆.
+
+        <details markdown="1"><summary>Đối chiếu — chỉ mở sau khi tự giải</summary>
+
+        Hai hiệu bằng 2 nên tạo 3 số liên tiếp CSC. u₆=11; S₆=6(1+11)/2=36.
+
+        </details>
+
+        **D6:** Nếu quên chia 2, viết lại hai tổng tiến/ngược để thấy mỗi số bị đếm hai lần. Tự quay lại bài canonical cùng outcome, không ghi Mastery.
+
+    === "05. Ứng dụng cấp số cộng theo hàng hoặc tầng"
+
+        #### M05 · Ứng dụng cấp số cộng theo hàng hoặc tầng
+
+        **WHY:** Để tính tổng sức chứa hoặc số sản phẩm trên các tầng, không thể lấy số ở tầng cuối nhân số tầng.
+
+        **MODEL / METHOD:** Hàng đầu 12 ghế, mỗi hàng thêm 3. Số ghế hàng n là \(u_n=12+3(n-1)\). Có 8 hàng thì \(u_8=33\), \(S_8=8(12+33)/2=180\) ghế. Mô hình phù hợp vì **hiệu giữa hai hàng liên tiếp không đổi**.
+
+        **LIMIT & UNIT:** Số hàng là n nguyên dương. Nếu hàng thứ 6 đổi quy luật thêm ghế, cần tách giai đoạn; không áp một d cho toàn bộ. Số cuối có đơn vị ghế/hàng, tổng có đơn vị ghế.
+
+        **Hướng dẫn cho từng outcome:**
+
+        - **G11-B06-AP-APPLICATION:** Chọn mô hình có hiệu không đổi và giải thích đơn vị cùng điều kiện ngoại suy.
+
+        **Tự thử trước Core (M05-TRY01):** Tầng 1 có 10 sản phẩm; mỗi tầng trên thêm 4; tất cả 6 tầng. Số sản phẩm ở tầng cuối và tổng bao nhiêu?
+
+        <details markdown="1"><summary>Đối chiếu — chỉ mở sau khi tự giải</summary>
+
+        u₆=10+5·4=30 sản phẩm; S₆=6(10+30)/2=120 sản phẩm.
+
+        </details>
+
+        **D6:** Liệt kê 10,14,18,22,26,30 để thấy phép lấy 6·30 sẽ đếm sai các tầng đầu. Tự quay lại bài canonical cùng outcome, không ghi Mastery.
+
+    === "06. Công bội và số hạng tổng quát của cấp số nhân"
+
+        #### M06 · Công bội và số hạng tổng quát của cấp số nhân
+
+        **WHY:** Một quá trình sau mỗi chu kỳ gấp đôi cần dùng phép *nhân cùng tỉ lệ*, không phải cộng một lượng.
+
+        **MEANING:** CSN được định nghĩa bởi \(u_{n+1}=q u_n\) cho cùng q mọi n. Khi \(u_n\ne0\), tỉ số \(u_{n+1}/u_n=q\); không chia cho 0. Từ số thứ nhất đến thứ n có n−1 lần nhân nên \(u_n=u_1q^{n-1}\). q có thể âm và dãy sẽ đổi dấu. q=1 là dãy hằng; q=0 thì từ số thứ hai bằng 0, phải xem \(u_1\) riêng để tránh hiểu sai 0⁰.
+
+        **WORKED EXAMPLE:** u₁=3,q=−2: các số 3,−6,12,−24,48,...; u₅=3(−2)⁴=48. Ta **không** coi hiệu giữa 3 và −6 là công sai vì hiệu kế tiếp khác.
+
+        **LIMIT:** CSN q âm không nhất thiết tăng/giảm và không nhất thiết có tất cả số hạng dương.
+
+        **Hướng dẫn cho từng outcome:**
+
+        - **G11-B07-GP-DEFINITION:** Chọn truy hồi nhân q cố định, không lấy tỉ số khi số trước bằng 0.
+
+        - **G11-B07-GP-NTH:** u_n=u₁q^(n−1), n−1 bước; q âm đổi dấu, q=0 xét khởi đầu.
+
+        **Tự thử trước Core (M06-TRY01):** CSN u₁=2, q=−3. Tìm u₂,u₃,u₄; dãy có tăng không?
+
+        <details markdown="1"><summary>Đối chiếu — chỉ mở sau khi tự giải</summary>
+
+        u₂=−6,u₃=18,u₄=−54. Dãy không tăng/giảm đơn điệu vì đổi dấu.
+
+        </details>
+
+        **D6:** Viết từng phép nhân q âm và kiểm (u_2>u_1) rồi (u_3>u_2); đừng dựa vào chữ “cấp số nhân” để đoán tăng. Tự quay lại bài canonical cùng outcome, không ghi Mastery.
+
 <!-- MODULES_INSERT -->
 
 ![Dãy số truy hồi từng bước](assets/Temp_TOPIC_SEQ_RECURSION_R00_20261112.svg)
