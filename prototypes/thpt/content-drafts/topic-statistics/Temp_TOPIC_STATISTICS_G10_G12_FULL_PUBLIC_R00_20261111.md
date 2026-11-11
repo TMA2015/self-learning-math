@@ -247,7 +247,19 @@ Dùng một thư viện canonical công khai, **không nhân bản** câu, key h
 | G11 | M06–M09 | Cận trái đóng/phải mở, trung điểm có trọng số, tích lũy, nội suy, nhóm mốt |
 | G12 | M10–M13 | R/IQR và phương sai ghép nhóm đều là ước lượng, so sánh cùng đơn vị và cách ghép |
 
-Các outcome chỉ có một câu nguồn cần được bổ sung họ dạng mới sau khi QA toán; **107 câu không tự động bảo đảm sâu 39 outcome**. Luyện tập không tự ghi Skill Mastery.
+**Bổ sung đúng bảy outcome mỏng:** ngoài 107 câu của ba nguồn gốc, có thêm **7 câu PUBLIC canonical mới** theo file `prototypes/thpt/shared-items/Temp_TOPIC_STATISTICS_G10_G12_PUBLIC_EXTENSION_07ITEM_R00_20261111.md` (blob `c222f9c8ef2c3b34caf4f6d6c33fa88f960471c3`). Các câu này tạo thêm dạng/giải thích khác cho bảy mục tiêu trước chỉ có một câu, không tự suy rằng tăng số lượng đồng nghĩa đạt đủ PED.
+
+| Outcome bổ sung | Câu canonical mới |
+|---|---|
+| `G10-B12-APPROX_CONCEPT` | `THPT-G10-TOPSTAT-ADD01` |
+| `G10-B13-MODE` | `THPT-G10-TOPSTAT-ADD02` |
+| `G10-B13-MEDIAN` | `THPT-G10-TOPSTAT-ADD03` |
+| `G10-B14-OUTLIERS` | `THPT-G10-TOPSTAT-ADD04` |
+| `G10-B14-COMPARISON` | `THPT-G10-TOPSTAT-ADD05` |
+| `G11-B09-REPRESENTATIVE` | `THPT-G11-TOPSTAT-ADD06` |
+| `G11-B09-INTERPRETATION` | `THPT-G11-TOPSTAT-ADD07` |
+
+**Tổng nguồn gói này:** 114 câu canonical công khai, 39 outcome, theo bốn file bank bất biến; không dùng làm đánh giá Mastery, không nhân bản lời giải trong bài học.
 
 <!-- TOPIC_PRACTICE_END -->
 
@@ -275,7 +287,10 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC_STATISTICS_G10_G12_CANONICAL_SOURCE_INDEX_R00_20261111.md
 SOURCE_INDEX_BLOB: 51a6e99587187838aea61c5c72108adae7874d1d
-PUBLIC_ITEM_COUNT: 107
+PUBLIC_ITEM_COUNT: 114
+PUBLIC_ORIGINAL_SOURCE_ITEMS: 107
+PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC_STATISTICS_G10_G12_PUBLIC_EXTENSION_07ITEM_R00_20261111.md
+PUBLIC_EXTENSION_BLOB: c222f9c8ef2c3b34caf4f6d6c33fa88f960471c3
 OUTCOMES: 39
 MODULES: 13
 FIRST_TRIES: 13
@@ -442,11 +457,23 @@ TOPIC_ID: UNASSIGNED_OWNER_DECISION
 | `THPT-G12-B10-P12` | `G12-CHIII-B10-O06` | TOPIC_PRACTICE | `4e8e462a5c2243583be8c71625a9be3095e48c7b` |
 | `THPT-G12-B10-W06` | `G12-CHIII-B10-O06` | TOPIC_WRITTEN | `4e8e462a5c2243583be8c71625a9be3095e48c7b` |
 
+## Seven original extension canonical records (not duplicate body)
+
+| item_id | outcome_id | role | source blob |
+|---|---|---|---|
+| `THPT-G10-TOPSTAT-ADD01` | `G10-B12-APPROX_CONCEPT` | TOPIC_PRACTICE | `c222f9c8ef2c3b34caf4f6d6c33fa88f960471c3` |
+| `THPT-G10-TOPSTAT-ADD02` | `G10-B13-MODE` | TOPIC_PRACTICE | `c222f9c8ef2c3b34caf4f6d6c33fa88f960471c3` |
+| `THPT-G10-TOPSTAT-ADD03` | `G10-B13-MEDIAN` | TOPIC_PRACTICE | `c222f9c8ef2c3b34caf4f6d6c33fa88f960471c3` |
+| `THPT-G10-TOPSTAT-ADD04` | `G10-B14-OUTLIERS` | TOPIC_PRACTICE | `c222f9c8ef2c3b34caf4f6d6c33fa88f960471c3` |
+| `THPT-G10-TOPSTAT-ADD05` | `G10-B14-COMPARISON` | TOPIC_PRACTICE | `c222f9c8ef2c3b34caf4f6d6c33fa88f960471c3` |
+| `THPT-G11-TOPSTAT-ADD06` | `G11-B09-REPRESENTATIVE` | TOPIC_PRACTICE | `c222f9c8ef2c3b34caf4f6d6c33fa88f960471c3` |
+| `THPT-G11-TOPSTAT-ADD07` | `G11-B09-INTERPRETATION` | TOPIC_PRACTICE | `c222f9c8ef2c3b34caf4f6d6c33fa88f960471c3` |
+
 ## Q18 DRAFT AUDIT
 
 - G10 S1 B12–B14 source R01 was NOT NotebookLM-reviewed on same material; do not inherit G11/G12 review. G11 R03 and G12 R00 keep their respective historic source-scoped verdicts.
 - R00 pedagogy, thirteen Tự thử, math checks and two SVGs are DELTA_C material needing scoped Q18 author verification on the exact current source. P0/P1 verdict still NOT_ISSUED.
-- Q15 107 original canonical items remain at three source SHA files; this file references IDs/outcomes only. Written/Anchor share one library, no duplicate.
+- Q15 107 original canonical items remain at three source SHA files; this file references IDs/outcomes only. Seven new original PUBLIC canonical items have one separate source file and answer/rubric; Written/Anchor share one library, no duplicate.
 - Q16 public self-check is a voluntary comparison, no official RD1, no Mastery; Final Submit must be tested separately by RELEASE on the browser.
 - Q17 exactly three Topic pages; no Core. Q18 source/receipt/V2/ready/REGISTER cannot be declared until all academic blockers closed.
 - No merge/deploy, no website or learner/Firebase data changed.
