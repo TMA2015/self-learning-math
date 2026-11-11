@@ -1,0 +1,119 @@
+/* UX795 · RELEASE draft · Grade 10 SGK Knowledge Model B, phase 1 only.
+ * Deliberately confined to grade-10 lesson pages (class mounted by the existing
+ * thpt-sgk-lesson-nav-v1.js). Does not affect THCS, G11/G12 or topics.
+ */
+.md-typeset.thpt-g10-knowledge-ap1 > .tabbed-set {
+  margin: 1.2rem 0 2rem;
+  --slm-g10-line: var(--md-default-fg-color--lightest);
+}
+.md-typeset.thpt-g10-knowledge-ap1 > .tabbed-set > .tabbed-labels {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+  border-bottom: 2px solid var(--slm-g10-line);
+  gap: .2rem;
+}
+.md-typeset.thpt-g10-knowledge-ap1 > .tabbed-set > .tabbed-labels > label {
+  flex: 0 0 auto;
+  min-height: 2.8rem;
+  display: inline-flex;
+  align-items: center;
+  padding: .6rem .9rem;
+  font-size: .83rem;
+  line-height: 1.35;
+  font-weight: 700;
+  letter-spacing: normal;
+  white-space: nowrap;
+  text-transform: none;
+}
+.md-typeset.thpt-g10-knowledge-ap1 > .tabbed-set > .tabbed-content {
+  padding-top: .55rem;
+  max-width: 100%;
+  min-width: 0;
+}
+.md-typeset.thpt-g10-knowledge-ap1 > .tabbed-set > .tabbed-content .tabbed-block {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+.md-typeset.thpt-g10-knowledge-ap1 .tabbed-block h3 {
+  margin-top: 1.25rem;
+  padding-bottom: .42rem;
+  border-bottom: 1px solid var(--slm-g10-line);
+  line-height: 1.43;
+}
+.md-typeset.thpt-g10-knowledge-ap1 .tabbed-block p,
+.md-typeset.thpt-g10-knowledge-ap1 .tabbed-block li {line-height:1.79}
+.md-typeset.thpt-g10-knowledge-ap1 .thpt-r4-knowledge-conclusion {
+  border-left: 4px solid #c49b35;
+  background: var(--md-code-bg-color);
+  padding: .72rem .95rem;
+  border-radius: .3rem;
+  margin: 1rem 0 1.25rem;
+  line-height: 1.7;
+}
+.md-typeset.thpt-g10-knowledge-ap1 .thpt-g10-table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--slm-g10-line);
+  border-radius: .4rem;
+  margin: 1rem 0 1.35rem;
+}
+.md-typeset.thpt-g10-knowledge-ap1 .thpt-g10-knowledge-table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 24rem;
+  margin: 0;
+  font-size: .87rem;
+}
+.md-typeset.thpt-g10-knowledge-ap1 .thpt-g10-knowledge-table th,
+.md-typeset.thpt-g10-knowledge-ap1 .thpt-g10-knowledge-table td {
+  padding: .55rem .72rem;
+  border-bottom: 1px solid var(--slm-g10-line);
+  vertical-align: top;
+  line-height: 1.6;
+}
+.md-typeset.thpt-g10-knowledge-ap1 .thpt-g10-knowledge-table th {
+  background: var(--md-code-bg-color);
+  font-weight: 700;
+}
+.md-typeset.thpt-g10-knowledge-ap1 figure.thpt-r4-concept-figure {
+  max-width: min(100%, 48rem);
+  margin: 1.15rem auto 1.35rem;
+  border: 1px solid var(--slm-g10-line);
+  border-radius: .5rem;
+  padding: .55rem;
+  background: var(--md-default-bg-color);
+}
+.md-typeset.thpt-g10-knowledge-ap1 figure.thpt-r4-concept-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.md-typeset.thpt-g10-knowledge-ap1 figure.thpt-r4-concept-figure figcaption {
+  margin: .5rem .4rem .2rem;
+  font-size: .81rem;
+  line-height: 1.65;
+  color: var(--md-default-fg-color--light);
+}
+.md-typeset.thpt-g10-knowledge-ap1 .tabbed-block details.question,
+.md-typeset.thpt-g10-knowledge-ap1 .tabbed-block details.tip {
+  margin: .7rem 0 1rem;
+  border-radius: .48rem;
+}
+.md-typeset.thpt-g10-knowledge-ap1 .tabbed-block details summary {
+  font-weight: 650;
+  cursor: pointer;
+}
+@media(max-width:600px) {
+  .md-typeset.thpt-g10-knowledge-ap1 > .tabbed-set > .tabbed-labels > label {
+    min-height: 2.75rem;
+    padding: .58rem .7rem;
+    font-size: .79rem;
+  }
+  .md-typeset.thpt-g10-knowledge-ap1 .thpt-g10-knowledge-table {
+    font-size: .79rem;
+  }
+}
