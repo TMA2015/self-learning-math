@@ -466,7 +466,6 @@ async function ready(page,path){
   assert.equal((await page.locator('a.math-library-entry[href*="core"]').count()),0,"B16 SGK lesson still links to old standalone Core page");
   const inlineCore=page.locator('[data-thpt-open-quiz="b16-core"]');
   assert.equal((await inlineCore.count()),1,"SGK B16 must open its Core in the new modal");
-  const b16Route=page.url();
    // Model B exposes the single canonical B16 Core action inside the "Ví dụ"
    // tab. Exercise the actual learner tab switch before opening the modal.
    const b16ExampleTab=page.locator(".tabbed-set").first().locator(".tabbed-labels label")
@@ -474,6 +473,7 @@ async function ready(page,path){
    assert.equal(await b16ExampleTab.count(),1,"B16 must render exactly one Ví dụ tab label");
    assert(await b16ExampleTab.isVisible(),"B16 Ví dụ tab must be visible and interactive");
    await b16ExampleTab.click();
+   const b16Route=page.url(); // Material tabs legitimately set #__tabbed_1_3
    assert(await inlineCore.isVisible(),"B16 Core button must become visible in Ví dụ tab");
    await inlineCore.click();
   const b16Modal=page.locator("dialog.thpt-r4-practice-dialog");
