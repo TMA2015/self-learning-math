@@ -263,6 +263,7 @@ extra_css:
   - assets/stylesheets/math-knowledge-r21-final-polish.css
   - assets/stylesheets/math-knowledge-r30-consistency.css
   - assets/stylesheets/thpt-r4-preview.css
+  - assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css
   - assets/stylesheets/thpt-g11-supplement-p99-p109-r00.css
   - assets/stylesheets/thpt-g12-golden-formative-modal-v1.css
   - assets/stylesheets/thpt-g12-chi-b01-b05-r00.css
