@@ -2064,5 +2064,5 @@ Hãy dùng những nhận xét đã được xác nhận để trở lại đún
 
 ---
 
-*Đây là nội dung học sinh được xem khi tích hợp hợp lệ. Website phải lấy câu hỏi từ đúng nguồn được phép, khóa lời giải tới sau Final Submit và xác nhận nộp thực sự. Nội dung AUTHORING này chưa có nghĩa chức năng Tự kiểm tra đã hoạt động.*
+*Đây là nội dung học sinh được xem khi tích hợp hợp lệ. Website phải lấy câu hỏi từ đúng nguồn được phép, khóa lời giải tới sau Final Submit và xác nhận nộp thực sự. Lời hướng dẫn này không có nghĩa là chức năng Tự kiểm tra đã được phát hành.*
 <!-- SLM_PART_END:SELF_CHECK_PUBLIC -->
