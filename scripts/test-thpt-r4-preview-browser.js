@@ -778,7 +778,6 @@ async function ready(page,path){
        assert.equal(await tips.count(),tipCount,"B"+lesson+" every D6 remediation disclosure must render");
        assert.equal(await article.locator("details.question[open], details.tip[open]").count(),0,
          "B"+lesson+" all answer/remediation disclosures must start closed");
-         "B"+lesson+" all answer/remediation disclosures must start closed");
        const knowledgeTab=article.locator(".tabbed-set").first().locator(".tabbed-labels label")
          .filter({hasText:/^Kiến thức SGK$/});
        assert.equal(await knowledgeTab.count(),1,"B"+lesson+" must expose Kiến thức SGK");
