@@ -16,7 +16,7 @@ ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic-probability/Temp_TOPI
 ACADEMIC_SOURCE_BLOB: 1258a2748c01ba288b706a08c79af237de799cf3
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC_PROBABILITY_G10_G12_R02_AUTHOR_SELF_QA_RECEIPT_20261111.md (AUTHOR_SELF_QA_RECEIPT on R02, NOT NotebookLM new snapshot review)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC_PROBABILITY_G10_G12_R02_AUTHOR_SELF_QA_RECEIPT_20261111.md
-REVIEW_RECEIPT_BLOB: a9d8c5254c7a84130404b6faedae2632ec76ac1f
+REVIEW_RECEIPT_BLOB: c41ca2024c05c7b9758c0953c0c9fde136211a77
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC-PROBABILITY-G10-G12-FULL-R02_HANDOFF_V2_20261111.md
 PUBLIC_SOURCE_INDEX: prototypes/thpt/shared-items/Temp_TOPIC_PROBABILITY_G10_G12_CANONICAL_PUBLIC_SOURCE_INDEX_R01_20261111.md
 PUBLIC_SOURCE_INDEX_BLOB: c4e472d628165f4b14281843436697202977a875
@@ -28,7 +28,7 @@ BLOCKERS: NONE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
-PRIVATE_RD1_SHA256: N_A_NO_PRIVATE_ASSESSMENT_IN_R02_PACKET
+PRIVATE_RD1_SHA256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 HISTORICAL_PRIVATE_RD1_OWNER_HELD_COUNT: 12
 HISTORICAL_PRIVATE_RD1_IMPORTED: NO
 MASTERY_ACTIVATION: NO
@@ -38,9 +38,9 @@ AUTHORING_ORDER: THIRD_PACKET_ONLY_NOT_PLAN22_03
 
 ## AUTHORING A1–A7 — kiểm thật trên nguồn PUBLIC
 
-- [x] A1_SOURCE_SNAPSHOT — One R02 Knowledge/Practice/Selfcheck source blob `1258a2748c01ba288b706a08c79af237de799cf3`; one R02 author receipt `a9d8c5254c7a84130404b6faedae2632ec76ac1f`; one original public source index and one 12-item public extension at exact blobs. Không clone bank gốc.
+- [x] A1_SOURCE_SNAPSHOT — One R02 Knowledge/Practice/Selfcheck source blob `1258a2748c01ba288b706a08c79af237de799cf3`; one R02 author receipt `c41ca2024c05c7b9758c0953c0c9fde136211a77`; one original public source index and one 12-item public extension at exact blobs. Không clone bank gốc.
 - [x] A2_SGK_SBT_SCOPE — KNTT Toán 10 tập 2 B26–B27, 11 tập 2 B28–B30, 12 tập 2 B18–B19 theo reviewer receipts ngày 28/10 (SGK/SBT trang in: 77–89/60–74; 63–82/42–55; 42–58/40–64); không tự tuyên bố đọc lại mọi trang PDF trong lượt này.
-- [x] A3_NOTEBOOKLM_VERDICT — **LEGACY CHECKLIST KEY ONLY**: V3.0.1 Q18 `AUTHOR_SELF_VERIFIED`, one R02 source-locked author QA receipt `a9d8c5254c7a84130404b6faedae2632ec76ac1f`, 25 real direct checks, per-outcome matrix, P0=P1=0. Reviewer NotebookLM historical PASS chỉ đúng snapshot 28/10, KHÔNG có reviewer verdict mới trên R02.
+- [x] A3_NOTEBOOKLM_VERDICT — **LEGACY CHECKLIST KEY ONLY**: V3.0.1 Q18 `AUTHOR_SELF_VERIFIED`, one R02 source-locked author QA receipt `c41ca2024c05c7b9758c0953c0c9fde136211a77`, 25 real direct checks, per-outcome matrix, P0=P1=0. Reviewer NotebookLM historical PASS chỉ đúng snapshot 28/10, KHÔNG có reviewer verdict mới trên R02.
 - [x] A4_ITEM_OUTCOME_IDS — **25/25 outcome** G10=10/G11=7/G12=8, **50 unique PUBLIC IDs** (38 unchanged original+12 new), every outcome 2 different canonical items with table in V2, and 9 selfcheck placements just reuse.
 - [x] A5_D1_D6_SCOPE — 13 Knowledge sections with meaning/conditions, 7 multi-step worked examples, 13 first-tries with opt-in reveals, 2 mathematical SVGs and 13 targeted D6 routes, 5 shared Written including Anchor tag, no Topic Core page.
 - [x] A6_DELTA_RESOLVED — 12 novel public practice items and 7 new learner-first worked explanations independently calculated and conditions verified; frozen original 38 item stems/keys unchanged; material delta self-QA Q18 v3.0.1, zero known authoring P0/P1. No re-review default for unchanged historical source.
@@ -67,7 +67,7 @@ AUTHORING_ORDER: THIRD_PACKET_ONLY_NOT_PLAN22_03
 - [ ] AP3_FIGURE_READABILITY — Hai SVG tại chỗ, guide text/alt responsive và a11y.
 - [ ] AP4_SELF_STUDY_CLARITY — First try reveal, luyện tập đa dạng và D6 đúng tab, không duplicate questions.
 - [ ] AP5_RESPONSIVE_VISUAL — 390/820/1440 và thiết bị thật theo quy trình RELEASE.
-- [ ] P1_DEPLOY_RECEIPT — Chưa deploy.
-- [ ] P2_DEVICE_UAT — Chưa owner UAT iPhone/iPad thực.
+- [ ] P1_DEPLOY_RECEIPT — Chưa có bằng chứng merge, production Pages deployment hay so khớp SHA của website; cấm tự nhận P1.
+- [ ] P2_DEVICE_UAT — Chưa có nghiệm thu thực tế của chủ dự án trên iPhone/iPad Safari; viewport giả lập không thay P2.
 
 **Định nghĩa:** `AUTHORING_PASS = CONTENT_READY` chỉ chứng minh hồ sơ nội dung PUBLIC source-locked. Không bao gồm private RD1 official activation, website, learner scoring, MASTERy, merge/deploy. Kế hoạch 22 ngày 09/11 là nghiên cứu; “thứ ba” chỉ là trình tự sản xuất, không tự thay đổi catalog.
