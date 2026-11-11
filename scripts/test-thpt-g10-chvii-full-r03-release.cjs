@@ -7,6 +7,7 @@
  * SVG geometry RELEASE-owned, equivalent to D5 design spec a2ee2b226780b3aeff379ccb7d5eae0bde0156b5.
  */
 const assert=require("node:assert/strict"),fs=require("node:fs"),crypto=require("node:crypto"),path=require("node:path");
+const {expectedG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 const root=path.resolve(__dirname,".."),read=p=>fs.readFileSync(path.join(root,p),"utf8");
 const shaText=s=>{const b=Buffer.from(s);return crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+b.length+"\0"),b])).digest("hex")};
 const gitblob=p=>shaText(read(p));
@@ -178,6 +179,34 @@ const names=["Vì sao cần học","Kiến thức tiền đề","Bản chất tr
 const answers=["Đáp án","Lý do","Nếu chưa đúng"],all=[];
 for(const n of [19,20,21,22]){
  const s=read("docs/thpt-preview/sgk/chuong-vii/bai-"+n+".md");
+  // Owner Model B: source/learning path is different, but the 23 reviewed
+  // canonical placements and each D6 route must be identical to old evidence.
+  const modelTabs=[...s.matchAll(/^=== "([^"]+)"$/gm)].map(x=>x[1]);
+  if(modelTabs.length){
+   assert.deepEqual(modelTabs,["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
+     "B"+n+": owner four-tab Knowledge model");
+   assert.equal(shaText(s),expectedG10KnowledgeBlob(n,original[n]),"B"+n+": candidate Git source SHA");
+   const refs=historical.filter(x=>x.lesson===n);
+   const spans=[...s.matchAll(/data-thpt-first-try-id="([^"]+)" data-outcome-id="([^"]+)" data-thpt-help-ref="([^"]+)"/g)];
+   const originalSpans=spans.filter(m=>/^THPT-G10-CHVII-TRY\d\d$/.test(m[1]));
+   assert.equal(originalSpans.length,refs.length,"B"+n+": all reviewed original Q15 placements");
+   originalSpans.forEach((m,i)=>{
+    const rec=refs[i];assert.equal(m[1],rec.id,"B"+n+": canonical ID changed");
+    assert.equal(m[2],rec.outcome,"B"+n+": outcome mapping changed");
+    assert.equal(m[3],rec.help,"B"+n+": HELP reference changed");
+    assert(!all.includes(rec.id),"B"+n+": duplicated original First Try");all.push(rec.id);
+    const at=s.indexOf('data-thpt-first-try-id="'+rec.id+'"');
+    const next=i+1<refs.length?s.indexOf('data-thpt-first-try-id="'+refs[i+1].id+'"',at+1):s.length;
+    assert(at>=0&&next>at&&/^\s*\?\?\? question "/m.test(s.slice(at,next)),
+      "B"+n+": source-locked First Try lacks closed answer "+rec.id);
+    const hx=s.indexOf('data-thpt-help-id="'+rec.help+'"');
+    assert(hx>=0&&/^\s*\?\?\? tip "/m.test(s.slice(hx,hx+1300)),
+      "B"+n+": source-locked D6 not collapsed "+rec.help);
+   });
+   assert(!/data-thpt-readiness|data-mastery-credit|data-mastery-write/.test(s),
+     "B"+n+": Knowledge must not claim assessment or Mastery");
+   continue;
+  }
  const range=/<!-- G10_CHVII_FULL_R03_ALL_BEGIN -->[\s\S]*?<!-- G10_CHVII_FULL_R03_ALL_END -->\n\n/g;
  assert.equal([...s.matchAll(range)].length,1,"One full reviewed narrative section B"+n);
  assert.equal(shaText(s.replace(range,"")),original[n],"Original full S1 Knowledge, D2, D5, D6 source modified B"+n);
@@ -203,6 +232,20 @@ for(const n of [19,20,21,22]){
 assert.equal(all.length,23);
 const b22=read("docs/thpt-preview/sgk/chuong-vii/bai-22.md");
 for(const tag of ["ELLIPSE","HYPERBOLA"]){
+  if(b22.includes('=== "Khám phá kiến thức"')){
+    const id="THPT-G10-CHVII-TRY-"+tag+"-TR01";
+    const help="HELP-G10-CHVII-"+tag+"-TR01",ex="EX-G10-B22-"+tag+"-TR01";
+    assert(b22.includes('data-thpt-first-try-id="'+id+'"')&&b22.includes('data-thpt-help-ref="'+help+'"')&&b22.includes('data-thpt-help-id="'+help+'"'),
+      "Transfer Q15/D6 source identity "+tag);
+    assert(b22.includes("#### Ví dụ giải có hướng dẫn — "+ex),"Transfer D2 reasoning "+tag);
+    const sourceSVG="THPT_G10_CHVII_"+tag+"_TRANSFER_D5_R00.svg";
+    assert(b22.includes(sourceSVG),"Transfer D5 diagram preserved "+tag);
+    const hx=b22.indexOf('data-thpt-help-id="'+help+'"');
+    assert(hx>=0&&/^\s*\?\?\? tip "/m.test(b22.slice(hx,hx+1300)),
+      "Transfer D6 must remain folded "+tag);
+    assert(!all.includes(id),"Transfer Q15 identity duplicate "+tag);all.push(id);
+    continue;
+  }
  const begin="<!-- G10_CHVII_TRANSFER_BEGIN:"+tag+" -->",end="<!-- G10_CHVII_TRANSFER_END:"+tag+" -->";
  const part=b22.split(begin).length===2&&b22.split(end).length===2?b22.split(begin)[1].split(end)[0]:null;
  assert(part,"Missing reviewed transfer module "+tag);
