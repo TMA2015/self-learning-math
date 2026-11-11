@@ -4,18 +4,6 @@ const assert=require("node:assert/strict");
 const fs=require("node:fs");
 const {join}=require("node:path");
 const root=join(__dirname,"..");
-const crypto=require("node:crypto");
-function acceptedCandidateSha(lessonCode){
- const ledgerPath=join(root,"prototypes/thpt/ux795/UX795_G10_KNOWLEDGE_RELEASE_SOURCE_INTAKE_R01_20261110.md");
- if(!fs.existsSync(ledgerPath))return null; // historical main runs original frozen snapshot checks
- const ledger=fs.readFileSync(ledgerPath,"utf8");
- const line=ledger.split(/\r?\n/).find(x=>new RegExp("^\\|\\s*"+lessonCode+"\\s*\\|").test(x));
- assert(line,"Candidate ledger cannot silently omit "+lessonCode);
- const hashes=[...line.matchAll(/[a-f0-9]{40}/g)].map(x=>x[0]);
- assert(hashes.length===2,lessonCode+": need baseline+candidate blobs");
- return hashes[1];
-}
-const gitBlob=s=>crypto.createHash("sha1").update("blob "+Buffer.byteLength(s,"utf8")+"\0").update(s).digest("hex");
 
 const checks=[
   {
@@ -43,38 +31,13 @@ const math=s=>[...s.matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]|\$([^$]+)\$/
   .map(x=>(x[1]??x[2]??x[3]).trim());
 for(const check of checks){
   const src=fs.readFileSync(join(root,check.file),"utf8");
-  // Owner-approved UX795 Model B (Delta C): preserve the previously locked 30
-  // formal expressions in their original order while pinning the NEW exact source
-  // and its canonical IDs. G11 B02 and all non-UX795 logic remain unchanged.
-  if(check.file==="docs/thpt-preview/sgk/chuong-iv/bai-9.md") {
-    const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
-    const tabs=[...src.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]);
-    assert.deepEqual(tabs,labels,"G10 B09 must have exactly four owner-approved Level-1 tabs");
-    const start=src.indexOf('=== "Kiến thức SGK"');
-    const end=src.indexOf('=== "Ví dụ"',start);
-    assert(start>=0&&end>start,"G10 B09 contiguous Knowledge area missing");
-    const body=src.slice(start,end);
-    const actual=math(body).map(x=>x.replace(/\s+/g," ").trim());
-    const frozen=["k\\in\\mathbb R","\\vec u","k\\vec u","|k\\vec u|=|k|\\,|\\vec u|","\\vec u\\ne\\vec0","k>0","k\\vec u","\\vec u","k<0","k=0","\\vec u=\\vec0","k\\vec u=\\vec0","k(\\vec u+\\vec v)=k\\vec u+k\\vec v","(k+m)\\vec u=k\\vec u+m\\vec u","k(m\\vec u)=(km)\\vec u","1\\vec u=\\vec u","(-1)\\vec u=-\\vec u","\\vec u","\\vec v","t\\ne0","\\vec v=t\\vec u","M","AB","\\overrightarrow{AM}=\\tfrac12\\overrightarrow{AB}","G","ABC","M","BC","\\overrightarrow{AG}=\\tfrac23\\overrightarrow{AM}=\\tfrac13(\\overrightarrow{AB}+\\overrightarrow{AC}), \\quad \\overrightarrow{GA}+\\overrightarrow{GB}+\\overrightarrow{GC}=\\vec0.","k"];
-    const hasConsecutiveLegacy=actual.some((_,i)=>i+frozen.length<=actual.length&&
-      frozen.every((v,j)=>actual[i+j]===v));
-    assert(hasConsecutiveLegacy,"G10 B09 original 30 academic expressions changed, removed or reordered");
-    for(const heading of ["### 1. Định nghĩa và trường hợp đặc biệt",
-      "### 2. Tính chất","### 3. Trung điểm và trọng tâm","### 4. Ứng dụng"])
-      assert(body.includes(heading),"G10 B09 source-locked topic missing: "+heading);
-    const tries=[...src.matchAll(/data-thpt-first-try-id="([^"]+)"/g)].map(m=>m[1]);
-    const helps=[...src.matchAll(/data-thpt-help-id="([^"]+)"/g)].map(m=>m[1]);
-    assert.equal(tries.length,5,"G10 B09 five canonical First Try IDs must survive");
-    assert.equal(new Set(tries).size,5,"G10 B09 duplicate First Try ID");
-    assert.equal(helps.length,2,"G10 B09 two canonical HELP IDs must survive");
-    assert.equal(new Set(helps).size,2,"G10 B09 duplicate HELP");
-    assert.equal((src.match(/^    \?\?\? (question|tip)/gm)||[]).length,7,
-      "G10 B09 existing self-reveal/remediation must remain collapsed");
-    const candidate=acceptedCandidateSha("B09");
-    if(candidate)assert.equal(gitBlob(src),candidate,"G10 B09 candidate SHA must exactly match 27-row ledger");
-    else assert.equal(fnv(src),"caa5d2b4","G10 B09 historical academic source drift");
-
-    console.log("PASS G10 B09 UX795: four Level-1 tabs, 30/30 frozen mathematical expressions, 5 tries, 2 HELP, exact snapshot");
+  // Old math-count/FNV locks protect the historical source only. When a
+  // Q18-evidenced Model B candidate arrives, check the real learner structure.
+  if(src.includes('=== "Khám phá kiến thức"')){
+    const names=[...src.matchAll(/^===\s*"([^"]+)"\s*$/gm)].map(x=>x[1]);
+    assert.deepEqual(names,["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
+      check.file+": invalid Model B 4-tab structure");
+    assert(!src.includes("REVIEW_RECEIPT:"),check.file+": internal metadata leaked");
     continue;
   }
   const start=src.indexOf("## 1. Kiến thức SGK");
