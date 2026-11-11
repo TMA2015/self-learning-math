@@ -265,6 +265,8 @@ One canonical ID/stem/key/solution/rubric, regardless of role. 64 original SGK p
 
 Only one standard SLM-THPT-QUALITY-ONE v3.0.1; Q01–Q18 with A/PED checks all part of same standard, not second approval.
 
+Nguồn quy phạm DUY NHẤT: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`; các bộ A1–A7 và PED1–PED6 là bằng chứng của cùng Q01–Q18, không phải chuẩn thứ hai.
+
 | Q | Evidence | AUTHORING signoff | Known limit | RELEASE verification |
 |---|---|---|---|---|
 | Q01 | Correct S1 G10 B05–B06 and G11 B01–B04 printed SGK/SBT source receipts | AUTHOR_SELF_VERIFIED_SOURCE_SCOPE | Historic reviewer PASS only old SHA; website unchecked | RELEASE_AP_R_EXACT_HEAD_OWNER_GATE |
