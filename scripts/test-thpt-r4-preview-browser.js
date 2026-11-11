@@ -783,10 +783,12 @@ async function ready(page,path){
        assert.equal(await knowledgeTab.count(),1,"B"+lesson+" must expose Kiến thức SGK");
        await knowledgeTab.click();
        const disclosure=questions.first();
+       const collapsedText=await disclosure.innerText();
        await disclosure.locator("summary").click();
        assert(await disclosure.evaluate(el=>el.open),"B"+lesson+" learner can open answer");
-       assert(await disclosure.locator("p,li").first().isVisible(),
-         "B"+lesson+" opened explanation must be visible");
+       const expandedText=await disclosure.innerText();
+       assert(expandedText.trim().length>=collapsedText.trim().length+30,
+         "B"+lesson+" expanded disclosure must reveal readable explanation beyond the summary");
        await disclosure.locator("summary").click();
        assert(!(await disclosure.evaluate(el=>el.open)),"B"+lesson+" answer can close again");
      }else{
