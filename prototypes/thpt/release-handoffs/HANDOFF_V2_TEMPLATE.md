@@ -1,16 +1,17 @@
+> **Owner clarification 11/11/2026:** This is a historic V2 structural template, not a fixed reviewer-only standard. Under v3.0 a new Topic may use `AUTHOR_SELF_VERIFIED` with a content-rich `AUTHOR_SELF_QA_RECEIPT` (never fake an independent verdict). Replace all placeholders and supply one handoff when the entire unit is QA-complete. For PUBLIC Topic self-check reuse canonical items only with `CLIENT_SELF_CHECK_NO_MASTERY`; private official RD1 must remain held-out. AUTHORING paused until owner process reset is integrated.
+
 # THPT ACADEMIC HANDOFF V2 — TEMPLATE (NOT AN APPROVED PACKET)
 
 **Important:** This is a template only; never mark this document CONTENT_READY, never select it as NotebookLM source, and never place it in `release-queue/ready/`. Fill all concrete evidence in a separate chapter-specific file under `release-handoffs/`.
 
 PACKET_ID: REPLACE_WITH_G11_SGK_CHI
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 1.0.0
-STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 1.0.0
+STANDARD_VERSION: EFFECTIVE_ON_MAIN_AT_HANDOFF
+Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED | INDEPENDENT_REVIEW
 ACADEMIC_SOURCE_BLOB: REPLACE_WITH_40_HEX
-REVIEW_RECEIPT_BLOB: REPLACE_WITH_40_HEX
-ACADEMIC_VERDICT: PENDING
-PEDAGOGICAL_VERDICT: PENDING
+REVIEW_RECEIPT_BLOB: REPLACE_WITH_40_HEX  # Independent review OR author self-QA receipt; mode-specific content required
+ACADEMIC_VERDICT: SELF_VERIFIED | PASS
+PEDAGOGICAL_VERDICT: SELF_VERIFIED | PASS
 BLOCKERS: OPEN
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 RELEASE_SCOPE: FULL_LEARNING_PATH
