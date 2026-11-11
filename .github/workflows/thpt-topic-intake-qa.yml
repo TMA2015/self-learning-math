@@ -8,6 +8,7 @@ on:
       - 'prototypes/thpt/release-handoffs/THPT-TOPIC-*.md'
       - 'prototypes/thpt/release-queue/**'
       - 'scripts/test-thpt-handoff-gate-v2.cjs'
+      - 'scripts/test-thpt-topic-knowledge-tabs-v3.cjs'
       - 'scripts/test-thpt-release-queue.cjs'
       - 'scripts/test-thpt-release-scope-isolation.cjs'
       - '.github/workflows/thpt-topic-intake-qa.yml'
@@ -36,13 +37,19 @@ jobs:
           node scripts/test-thpt-release-scope-isolation.cjs --self-test
           node scripts/test-thpt-release-scope-isolation.cjs
 
-      - name: Enforce one source-locked V2 contract and independent Topic Q18 / Q15-Q16 metadata
+      - name: Enforce one V2 contract and Q18 independent or signed-author Topic verification / Q15–Q16 metadata
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
           HEAD_SHA: ${{ github.event.pull_request.head.sha }}
         run: |
           node scripts/test-thpt-handoff-gate-v2.cjs --self-test
           node scripts/test-thpt-handoff-gate-v2.cjs
+
+      - name: Topic 3-page navigation and horizontal subtopic Knowledge UX (no Academic PASS)
+        run: |
+          node --check scripts/test-thpt-topic-knowledge-tabs-v3.cjs
+          node scripts/test-thpt-topic-knowledge-tabs-v3.cjs --self-test
+          node scripts/test-thpt-topic-knowledge-tabs-v3.cjs
 
       - name: Enforce real ready manifests, REGISTER, A1-A7/R1-R5/P1-P2 without faking CONTENT_READY
         run: node scripts/test-thpt-release-queue.cjs

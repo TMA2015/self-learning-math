@@ -1,6 +1,6 @@
-# Math App — Quy trình NotebookLM theo cụm bài và xử lý sửa đổi nhỏ · Toán THPT v1.2 · DỰ THẢO
+# Math App — Quy trình NotebookLM theo cụm bài và xử lý sửa đổi nhỏ · Toán THPT v1.3 · OWNER-APPROVED GOVERNANCE
 
-**Ngày hiệu lực:** 10/11/2026 theo quyết định chủ dự án, **từ commit chuẩn Q18 v2.0.0 và tài liệu này được merge vào main**; bản v1.1 giữ làm lịch sử.  
+**Ngày áp dụng:** 11/11/2026 theo quyết định chủ dự án, **sau khi v3.0.0 và chính sách này merge main**; v1.1/v1.2 là lịch sử, giữ bảo toàn verdict đúng snapshot.  
 **Loại tài liệu:** Permanent Project Source cho ChatGPT Math App (không phải Batch Source gửi review).  
 **Phạm vi:** Toán THPT lớp 10–12, R4, SGK/SBT Kết nối tri thức.  
 **Phối hợp với:** `06_NOTEBOOKLM_REVIEW_HANDOFF_PROTOCOL_v1.0.md` (quy tắc bàn giao file và prompt, vẫn bắt buộc).
@@ -10,8 +10,8 @@
 ## I. Quy mô review theo giai đoạn
 
 - **Chưa nghiệm thu Golden UI:** Review đơn lẻ từng bài hoặc chuyên đề mẫu để xác nhận kiến trúc học, trình bày, tương tác và học thuật.
-- **Sau khi nghiệm thu Golden UI:** Mặc định tổ chức review theo **cụm bài cùng chương**, hoặc **cả chương** nếu khối lượng vừa phải và NotebookLM có thể kiểm tra đầy đủ từng outcome và từng item.
-- Không bắt buộc một số bài cứng. Với chương lớn, chia thành các cụm có nội dung liên quan (thường khoảng 3–5 bài, tùy số lượng câu, đồ thị và độ phức tạp); với chương ngắn, có thể review toàn chương.
+- **Sau Golden UI:** mặc định biên tập **trọn phần hoặc trọn Chuyên đề/chương**, một lượt QA tổng hợp; NotebookLM chỉ dùng khi tác giả chưa thể chắc chắn hoặc chủ dự án yêu cầu. Không bắt buộc một vòng Notebook theo mỗi bài/batch khi đủ chứng cứ tự kiểm v3.
+- Chỉ chia batch review theo năng lực thực của reviewer và giới hạn nguồn, không ép cỡ batch 3–5 bài; không chia nội dung học sinh thành nhiều heading vì metadata.
 - Chuyên đề xuyên lớp cần review theo các cụm kiến thức tự đủ, có liên kết tiền đề rõ. Một bài mẫu PASS không chứng minh toàn bộ chuyên đề/chương PASS.
 - Mỗi batch phải cung cấp danh mục `LESSON_ID`, `OUTCOME_ID`, `ITEM_ID`, đáp án, lời giải, nguồn SGK/SBT và phạm vi bài/chương. NotebookLM phải trả verdict theo **từng bài, từng outcome và từng item**, đồng thời đối chiếu số mục đã review/thiếu/lặp.
 
@@ -23,7 +23,7 @@
 |---|---|---|
 | `DELTA_A_UI` | Chính tả không đổi nghĩa, giao diện, CSS, responsive, nhãn, liên kết và hiển thị hình nhưng không thay đổi toán học | ChatGPT tự sửa, tự QA, **không cần NotebookLM review lại** |
 | `DELTA_B_SOURCE_EQUIVALENT` | Chỉnh nhỏ có chỉ dẫn nguồn/reviewer rõ ràng, tương đương nghĩa toán học, không thay đổi điều kiện, đáp án, rubric hay mục tiêu | ChatGPT được chủ động sửa, kiểm chứng và ghi log; **không bắt buộc review lại** |
-| `DELTA_C_ACADEMIC_MATERIAL` | Thêm/bớt outcome, đổi phát biểu/điều kiện toán, công thức, đáp án, phương pháp trọng yếu, rubric, phân tầng Core/Practice/Readiness, thêm nhóm item; hoặc bổ sung ví dụ/lời giảng/hình có nội dung toán đáng kể | **Mặc định review độc lập phần chịu ảnh hưởng**, không review lại toàn chương. **Ngoại lệ có điều kiện:** chỉ cập nhật trang Kiến thức SGK đã nghiệm thu, không đổi Core/outcome/định lý/điều kiện/câu hỏi canonical/đáp án/rubric/Q15/Q16/RD1, đã tự kiểm S1, toán từng ví dụ/hình, PED và khóa `SELF_QA_EVIDENCE_RECEIPT` theo đúng mode Q18 đã được phê duyệt; khi đó không bắt buộc NotebookLM mới. Nếu thiếu một điều kiện, HOLD/review phần ảnh hưởng. |
+| `DELTA_C_ACADEMIC_MATERIAL` | Thay học thuật thực chất: outcome, định nghĩa/điều kiện, ví dụ/hình có toán, phương pháp, đáp án/rubric, Core/Practice/RD1 hoặc nhóm item mới | **Q18 v3.0 sau merge:** tác giả có thể tự kiểm chứng bằng `AUTHOR_SELF_QA_RECEIPT` đủ S1, phép giải/điều kiện, PED, outcome, bank/Q15/Q16, P0/P1=0, source SHA rồi ký V2; NotebookLM/reviewer độc lập **không bắt buộc** nhưng phải yêu cầu review targeted hoặc HOLD nếu còn nghi ngờ quan trọng. Knowledge SGK đã phát hành dùng `ENRICHMENT_DELTA_RECEIPT` theo §X-C. Không đổi Delta C thành A/B, không tự cấp Mastery/deploy. |
 | `DELTA_D_BLOCKER` | Sai toán nghiêm trọng, sai chấm, mâu thuẫn SGK hoặc thiếu nguồn không giải quyết được | Chặn nghiệm thu phần liên quan, xử lý nguồn và review lại |
 
 **Cảnh báo:** Một thay đổi rất ngắn nhưng đảo dấu `>`, `<`, `≠`, đổi điều kiện xác định hoặc đáp án luôn có thể là thay đổi học thuật nghiêm trọng. Khi không chắc, phân loại C/D. Không dùng việc tự kiểm toán nội bộ như một phép đổi nhãn giả tạo từ Delta C thành A/B; cũng không dùng CI render/đếm công thức thay cho chứng minh toán.
@@ -85,3 +85,13 @@ Một `item_id` có thể dùng SGK Core và Topic Practice cơ bản; expected/
 - `DELTA_D_BLOCKER`: sai toán/S1 hoặc vi phạm bảo vệ đánh giá → HOLD **đúng phần**, có điều kiện đóng; không kéo toàn bộ gói khác đã đủ chứng cứ vào HOLD không liên quan.
 
 **GATE DESIGN:** chỉ 3 cổng chặn hữu hiệu: `CONTENT_MATH_PED_SOURCE`, `ASSESSMENT_DATA_SAFETY`, `RENDER_RELEASE_QA`. SHA/FNV/số công thức của bản **lịch sử** chỉ replay trên bản lịch sử; với candidate dùng exact SHA và nội dung toán/PED thực theo delta, không bắt giống văn bản cũ. Chuyên đề mới sử dụng V2 đã merge ở PR #799 và độc lập với Q18 Knowledge SGK. Không có gate mới trùng lặp hoặc reviewer giả.
+
+
+## IX. OWNER OVERRIDE — Q18 v3.0.0, 11/11/2026
+
+- **AUTHORING đang PAUSED trong thời gian đồng bộ quy trình.** Sau khi tiêu chuẩn–test–handoff nhất quán, tác giả tiếp tục biên soạn Topic theo từng phần trọn vẹn. Không mở lại AUTHORING trước khi hoàn tất đồng bộ.
+- **Chế độ tự nghiệm thu học liệu mới và Topic:** `Q18_AUTHOR_SELF_VERIFIED`; một `AUTHOR_SELF_QA_RECEIPT`/gói với nguồn S1, lesson/outcome/item, công thức–điều kiện–ví dụ–rubric–hình–tương tác–độ sâu/PED, lỗi P0/P1=0, canonical Q15 và Q16 private; có thể đưa vào V2 khi đủ. NotebookLM không bắt buộc cho hai Topic cũ sau biên tập hoặc Topic mới. Không tuyên bố reviewer PASS nếu chỉ có self-QA.
+- **Lúc thiếu khả năng kiểm chứng chắc chắn:** `TARGETED_INDEPENDENT_REVIEW_REQUIRED` hoặc `DELTA_D_BLOCKER` đúng outcome/item, tuyệt đối không đổi tên Delta C thành A để qua gate.
+- **SGK Knowledge đã phát hành:** dùng một `ENRICHMENT_DELTA_RECEIPT`/batch theo §X-C chuẩn, không đòi review độc lập lại lý thuyết/Practice không đổi.
+- **Tự kiểm tra Topic:** reuse canonical đã xem hợp lệ cho `CLIENT_SELF_CHECK_NO_MASTERY` (đáp án/feedback chỉ sau Final Submit); độc lập `TOPIC_READINESS`/Mastery phải giữ held-out, riêng tư và không dùng câu đã lộ.
+- **Quản trị:** 06 chỉ áp dụng khi thực sự gửi NotebookLM. 07 là quy tắc tác nghiệp của cùng Q01–Q18, không tạo tiêu chuẩn thứ hai. Mọi mô tả reviewer bắt buộc trong các mục lịch sử của file này **đã được supersede** bởi mục IX khi v3.0 trên main.

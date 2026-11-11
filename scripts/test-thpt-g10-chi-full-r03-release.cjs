@@ -13,7 +13,21 @@ const chapters=[
 ];
 const all=[];
 for(const c of chapters){
- const x=read(c.file),head=x.split("## 1. Kiến thức SGK")[0],tail=x.split("## 1. Kiến thức SGK")[1];
+ const x=read(c.file);
+  if(x.includes('=== "Khám phá kiến thức"')){
+    const names=[...x.matchAll(/^===\s*"([^"]+)"\s*$/gm)].map(z=>z[1]);
+    assert.deepEqual(names,["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
+      c.lesson+": Model B 4-tab mismatch");
+    const ids=[...x.matchAll(/data-thpt-first-try-id="([^"]+)"/g)].map(z=>z[1]);
+    const expected=Array.from({length:c.expected},(_,i)=>"THPT-G10-CHI-TRY"+String(c.start+i).padStart(2,"0"));
+    assert.deepEqual(ids,expected,c.lesson+": source item identity/regression");
+    assert(x.includes('href="../luyen-tap/"') && x.includes('href="../tu-kiem-tra-chuong/"'),
+      c.lesson+": Golden Core/self-check routes lost");
+    assert(!x.includes("REVIEW_RECEIPT:")&&!x.includes("CONTENT_READY:"),c.lesson+": audit metadata exposed");
+    all.push(...ids);
+    continue;
+  }
+  const head=x.split("## 1. Kiến thức SGK")[0],tail=x.split("## 1. Kiến thức SGK")[1];
  assert.equal(x.split("## 1. Kiến thức SGK").length,2,c.lesson+": one original reviewed D1 section");
  assert(head.includes("Trước khi học — hiểu ý nghĩa trước khi nhớ quy tắc"),"Concept-first before formula");
  for(const label of ["Vì sao cần học?","Em đã biết gì?","Hiểu bản chất trước công thức","Quy tắc và điều kiện áp dụng","Vì sao làm theo cách này?","Tự thử trước Core"])

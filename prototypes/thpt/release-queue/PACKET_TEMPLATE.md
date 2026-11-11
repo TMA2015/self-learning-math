@@ -1,3 +1,6 @@
+<!-- TEMPLATE ONLY, not a Ready packet -->
+> **Q18 v3.0 11/11/2026:** Self-QA may sign a complete NEW/revised Topic after actual S1/math/PED/item/figure/rubric checks. Independent reviewer PASS remains valid for legacy source-scoped packets. Reused public items in Topic self-check are `CLIENT_SELF_CHECK_NO_MASTERY`; official held-out Readiness/private RD1 cannot reuse exposed questions.
+
 # Mẫu manifest — sao chép vào inventory/ rồi đổi PACKET_ID
 
 PACKET_ID: G10-SGK-NEW
@@ -13,15 +16,19 @@ CURRENT_PR: CHUA_CO
 # BẮT BUỘC với gói READY tạo mới từ 02/11/2026; chưa áp dụng ngược packet lịch sử
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 1.2.0
+# New packets use the effective version on main only after governance merge.
+STANDARD_VERSION: 3.0.0
 QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/REPLACE_PACKET_HANDOFF.md
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/REPLACE_SOURCE.md
 ACADEMIC_SOURCE_BLOB: REPLACE_WITH_REAL_GIT_BLOB_SHA
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/REPLACE_NOTEBOOKLM_RECEIPT.md
+# Choose exactly one Q18 mode: AUTHOR_SELF_VERIFIED or INDEPENDENT_REVIEW
+Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/REPLACE_Q18_SOURCE_RECEIPT.md
 REVIEW_RECEIPT_BLOB: REPLACE_WITH_REAL_GIT_BLOB_SHA
-ACADEMIC_VERDICT: PASS_ON_LOCKED_SNAPSHOT
-PEDAGOGICAL_VERDICT: PASS_ON_LOCKED_SNAPSHOT
+# If INDEPENDENT_REVIEW, both verdict values must be PASS_ON_LOCKED_SNAPSHOT
+ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
+PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 # NEW TOPIC V2 manifests additionally require PRIVATE_RD1_COUNT: <verified count>,
 # OFFICIAL_READINESS: NOT_CLAIMED, MASTERY_ACTIVATION: NO, RELEASE_AUTHORIZATION: NO.
@@ -31,7 +38,7 @@ BLOCKERS: OPEN_UNTIL_SOURCE_VERIFIED
 ## A — biên soạn/review
 - [ ] A1_SOURCE_SNAPSHOT — chứng cứ snapshot/SGK/NotebookLM/ID/delta tương ứng
 - [ ] A2_SGK_SBT_SCOPE — chứng cứ snapshot/SGK/NotebookLM/ID/delta tương ứng
-- [ ] A3_NOTEBOOKLM_VERDICT — chứng cứ snapshot/SGK/NotebookLM/ID/delta tương ứng
+- [ ] A3_Q18_VERIFICATION_RECEIPT — chứng cứ snapshot/SGK/NotebookLM/ID/delta tương ứng
 - [ ] A4_ITEM_OUTCOME_IDS — chứng cứ snapshot/SGK/NotebookLM/ID/delta tương ứng
 - [ ] A5_D1_D6_SCOPE — chứng cứ snapshot/SGK/NotebookLM/ID/delta tương ứng
 - [ ] A6_DELTA_RESOLVED — chứng cứ snapshot/SGK/NotebookLM/ID/delta tương ứng
@@ -44,7 +51,7 @@ BLOCKERS: OPEN_UNTIL_SOURCE_VERIFIED
 - [ ] PED4_EXPLAINED_VISUAL — SVG/bảng/đồ thị có hướng dẫn đọc và lý do sử dụng
 - [ ] PED5_REASONED_EXAMPLES — Ví dụ giải thích lựa chọn cách làm, ràng buộc và lỗi thường gặp
 - [ ] PED6_FIRST_TRY_REMEDIATION — Tự thử có đích, D6 khắc phục theo tiền đề
-**Lưu ý:** PED reviewer độc lập PASS đúng source khóa và receipt đối chiếu trong AUTHOR_HANDOFF; checklist tick không tự chứng minh. Bằng chứng PED lưu cùng source; các manifest lịch sử giữ scope cũ.
+**Lưu ý:** theo v3, PED được tác giả tự kiểm chứng thực chất hoặc reviewer độc lập (tùy Q18 mode). Checklist tick hoặc CI xanh không tự chứng minh chất lượng. Bản SOURCE_BLOB + self-QA receipt Git blob vẫn bắt buộc. Bằng chứng PED lưu cùng source; các manifest lịch sử giữ scope cũ.
 
 ## R — phát hành
 - [ ] R1_INTEGRATED_CURRENT_MAIN — chứng cứ QA exact commit, UI, assessment và quyền owner

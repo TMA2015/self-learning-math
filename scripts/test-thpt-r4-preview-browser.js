@@ -159,11 +159,26 @@ async function ready(page,path){
         "B"+lesson+" missing source-backed worked example");
     }
     await ready(page,"sgk/chuong-vii/bai-19/");
+    // Model B retains the same canonical D6 ids on hidden metadata spans,
+    // while the readable remedy panel is an adjacent <details>. The older
+    // locator incorrectly looked for <summary> INSIDE the hidden span.
+    const lessonTabs=page.locator('.slm-level1-tabs [role="tab"]');
+    if(await lessonTabs.count()){
+      assert.equal(await lessonTabs.count(),4,"Knowledge Model B needs four horizontal level-1 tabs");
+      await lessonTabs.filter({hasText:"Lỗi thường gặp"}).click();
+    }else{
+      // MkDocs Material's pymdownx.tabbed renders labels/input rather than
+      // ARIA role=tab. The source uses === "..." and must still be opened.
+      const materialLabels=page.locator("article .tabbed-labels label").filter({hasText:"Lỗi thường gặp"});
+      if(await materialLabels.count()) await materialLabels.first().click();
+    }
     const helpCards=page.locator('[data-thpt-help-id^="D6-G10-B19-"]');
-    assert.equal(await helpCards.count(),2,"R02 D6 B19 must have two optional help cards");
-    assert.equal(await page.locator('[data-thpt-help-id][open]').count(),0,"D6 should start collapsed");
-    await helpCards.first().locator("summary").click();
-    const d6Link=helpCards.first().locator('[data-thpt-formative-id="THPT-G10-B19-C01"]');
+    assert.equal(await helpCards.count(),2,"R02 D6 B19 must retain both canonical remedy ids");
+    const helpCard=page.locator("details").filter({hasText:"Nhầm vectơ pháp tuyến/chỉ phương"}).first();
+    assert.equal(await helpCard.count(),1,"Visible B19 D6 remedy panel missing");
+    assert(!await helpCard.evaluate(node=>node.open),"D6 should start collapsed");
+    await helpCard.locator("summary").click();
+    const d6Link=helpCard.locator('[data-thpt-formative-id="THPT-G10-B19-C01"]');
     assert.equal(await d6Link.count(),1,"D6 must link to an existing canonical item");
     await d6Link.click();
     const focusedModal=page.locator("dialog.thpt-r4-practice-dialog");
