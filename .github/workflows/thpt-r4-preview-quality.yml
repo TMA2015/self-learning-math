@@ -185,6 +185,7 @@ on:
       - 'scripts/test-thpt-chvi-student-notes.cjs'
       - 'scripts/test-thpt-release-queue.cjs'
       - 'scripts/test-thpt-handoff-gate-v2.cjs'
+      - 'scripts/test-thpt-topic-knowledge-tabs-v3.cjs'
       - 'prototypes/thpt/release-queue/**'
       - '.github/workflows/thpt-r4-preview-quality.yml'
 
@@ -216,6 +217,11 @@ jobs:
           node --check scripts/test-thpt-knowledge-model-v3.cjs
           node scripts/test-thpt-knowledge-model-v3.cjs --self-test
           node scripts/test-thpt-knowledge-model-v3.cjs
+      - name: Topic 3-page navigation, horizontal Knowledge tabs and negative UX fixtures
+        run: |
+          node --check scripts/test-thpt-topic-knowledge-tabs-v3.cjs
+          node scripts/test-thpt-topic-knowledge-tabs-v3.cjs --self-test
+          node scripts/test-thpt-topic-knowledge-tabs-v3.cjs
       - name: Check concise THPT Knowledge titles and protected route scope
         run: python scripts/test_thpt_knowledge_short_labels.py
       - name: Validate scoped THPT JavaScript syntax
