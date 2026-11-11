@@ -28,10 +28,9 @@ Bạn sẽ đi từ mũi tên (vectơ) → phép toán → tọa độ Oxy → h
         **Trường hợp đặc biệt S1:** $\vec0=\overrightarrow{AA}$ có độ dài 0. **Theo quy ước SBT KNTT 10 B07 trang in 45, vectơ-không cùng phương và cùng hướng với mọi vectơ.** Vì mũi tên có độ dài 0 không có chiều nhìn thấy, cần phân biệt **quy ước toán trong SGK/SBT** với trực giác vật lý; tuyệt đối không dạy phủ định quy ước này. Mọi vectơ-không bằng nhau.
 
         **Ba điểm thẳng hàng và nằm giữa:** Với A,B,C đôi một phân biệt, A,B,C thẳng hàng ⇔ $\overrightarrow{AB}$ và $\overrightarrow{AC}$ cùng phương (hai giá đều qua A). Với A,M,B phân biệt, M **nằm giữa** A,B ⇔ $\overrightarrow{MA}$ và $\overrightarrow{MB}$ ngược hướng. Chỉ biết $\overrightarrow{AB},\overrightarrow{AM}$ cùng hướng **chưa đủ** vì M có thể nằm quá B.
+**Hướng dẫn đọc hình:** Đọc từ đuôi đến đầu mũi tên, rồi mới so sánh phương, hướng và độ dài. Trong hình bình hành ABCD, $\overrightarrow{AB}=\overrightarrow{DC}$ và $\overrightarrow{AD}=\overrightarrow{BC}$; trái lại $\overrightarrow{CD}$ ngược hướng $\overrightarrow{AB}$. Hãy tự vẽ A–M–B để nhìn hai vectơ $\overrightarrow{MA}$ và $\overrightarrow{MB}$ đi về hai phía.
 
-        **Hướng dẫn đọc hình:** Đọc đuôi mũi tên → đầu mũi tên trước khi so phương, hướng, độ dài. Trong hình bình hành ABCD theo thứ tự, $\overrightarrow{AB}=\overrightarrow{DC}$ và $\overrightarrow{AD}=\overrightarrow{BC}$; trái lại $\overrightarrow{CD}$ ngược hướng $\overrightarrow{AB}$. Giữa A–M–B trên cùng đường thẳng, hai mũi tên xuất phát từ M hướng về hai phía. Hình nguồn SGK `FIG-G10-B07-01` được tham chiếu **nguyên vẹn**; sơ đồ riêng tại Draft PR #793 chỉ minh họa vị trí nằm giữa, không biến thành câu hỏi kiểm tra kín.
-
-        **Ví dụ có suy luận:** (1) Hai cạnh đối của hình bình hành: xét **cả** độ dài và hướng mới kết luận vectơ bằng nhau. (2) Hai vectơ $\overrightarrow{AA},\overrightarrow{BB}$ đều là $\vec0$, không thể xét theo chiều hình học nhìn thấy. (3) Tàu đi 6 km Đông, 8 km Bắc: quãng đường 14 km, độ dài độ dời 10 km; dùng Pythagore vì hai hướng vuông góc, không cộng 6+8 để tính độ dời. Ba ví dụ dùng chung `EX-G10-B07-01` đến `EX-G10-B07-03` trong nguồn SGK; không clone.
+        **Ví dụ có suy luận:** (1) Hai cạnh đối của hình bình hành: xét **cả** độ dài và hướng mới kết luận vectơ bằng nhau. (2) Hai vectơ $\overrightarrow{AA},\overrightarrow{BB}$ đều là $\vec0$, không thể xét theo chiều hình học nhìn thấy. (3) Tàu đi 6 km Đông, 8 km Bắc: quãng đường 14 km, độ dài độ dời 10 km; dùng Pythagore vì hai hướng vuông góc, không cộng 6+8 để tính độ dời.
 
         ### Tự thử trước luyện tập
 
@@ -76,7 +75,7 @@ Bạn sẽ đi từ mũi tên (vectơ) → phép toán → tọa độ Oxy → h
 
         **Trung điểm/trọng tâm dùng nhân số:** $\overrightarrow{AM}=\tfrac12\overrightarrow{AB}$; $\overrightarrow{AG}=\tfrac23\overrightarrow{AM}=\tfrac13(\overrightarrow{AB}+\overrightarrow{AC})$ với M trung điểm BC, G trọng tâm tam giác ABC. Hệ số 1/3 xuất phát từ $2/3$ × $1/2$, không là công thức phải nhớ vô cớ.
 
-        ### Sáu ví dụ D2 chung SGK và lý do chọn cách
+        ### Vì sao chọn các cách giải sau?
 
         - `EX-G10-B08-01`: AB+BC+CD → AD; dùng chuỗi đầu–đuôi, kiểm chiều.
         - `EX-G10-B08-02`: AB+AD = AC trong hình bình hành, AC−AB = AD; chọn đường chéo vì hai vectơ chung gốc.
@@ -84,8 +83,7 @@ Bạn sẽ đi từ mũi tên (vectơ) → phép toán → tọa độ Oxy → h
         - `EX-G10-B09-01`: $\vec v=-3\vec u$ với $|\vec u|=5$ cm ⇒ $|\vec v|=15$ cm và ngược hướng; độ dài không âm.
         - `EX-G10-B09-02`: M trung điểm AB=12 cm, AM/MB cùng hướng AB và đều bằng $\tfrac12 AB$ theo vectơ; MA ngược chiều.
         - `EX-G10-B09-03`: quan hệ G trọng tâm ⇒ AG = (AB+AC)/3 bằng vectơ; giải qua trung tuyến trước.
-
-        **Hình D5** tham chiếu bất biến `FIG-G10-B08-01` (tam giác, hình bình hành) và `FIG-G10-B09-01` (nhân hệ số dương/âm); đọc chiều mũi tên trước khi đọc công thức. Không nhân bản XML nguồn SGK.
+**Cách đọc hình:** Ở quy tắc tam giác, nối mũi tên theo kiểu đầu–đuôi; ở hình bình hành, tìm đường chéo xuất phát từ cùng gốc. Khi nhân vectơ với số âm, mũi tên đảo hướng, không đổi quy tắc tính độ dài bằng giá trị tuyệt đối.
 
         ### Tự thử trước luyện tập
 
@@ -111,7 +109,6 @@ Bạn sẽ đi từ mũi tên (vectơ) → phép toán → tọa độ Oxy → h
 
         **Khám phá.** Trên lưới tọa độ, A(−2;3) và B(4;−1). Từ A tới B phải dịch bao nhiêu ô theo mỗi trục? Hãy dự đoán rồi tự kiểm bằng $\overrightarrow{AB}=(6;−4)$. **Điều cần nhận ra:** tọa độ vectơ là độ biến thiên, không phải vị trí riêng của B.
 
-        **Nguồn S1:** SGK Toán 10 KNTT tập 1, Bài 10 trang in 60–65/PDF 61–66 và Bài 11 trang in 66–70/PDF 67–71; SBT Bài 10 trang in 55–58/PDF 56–59 và Bài 11 trang in 59–65/PDF 60–66. Bản PDF SGK/SBT đã mở tại các mốc bài; canonical SGK gốc `a9f6fab8...` giữ nguyên. 
 
         ## Kiến thức: từ hình mũi tên sang con số có nghĩa
 
@@ -130,10 +127,9 @@ Bạn sẽ đi từ mũi tên (vectơ) → phép toán → tọa độ Oxy → h
         $$\vec u\cdot\vec v=ac+bd,\quad \cos\theta=\frac{\vec u\cdot\vec v}{|\vec u||\vec v|},\qquad \vec u,\vec v\ne\vec0.$$
 
         **Điều kiện và dấu:** Nếu tích vô hướng dương thì góc nhọn, bằng 0 thì vuông góc (với **cả hai vectơ khác 0**), âm thì góc tù. Góc không xác định khi một vectơ bằng 0; đừng thay tích vô hướng bằng tích hai độ dài. Trong bài thực tế, công của lực không đổi $W=\vec F\cdot\vec s$ và có thể âm, còn độ lớn mỗi vectơ không âm.
+**Cách đọc hình:** Trên mặt phẳng tọa độ, đi theo hướng x rồi y; mũi tên từ A đến B mang độ dời theo mỗi trục. Khi hai vectơ tạo góc tù, hãy liên hệ dấu âm của tích vô hướng với $\cos\theta<0$, không chỉ đo góc bằng mắt.
 
-        **Đọc hình D5:** Dùng chung `FIG-G10-B10-01` (vectơ tọa độ) và `FIG-G10-B11-01` (hai vectơ tạo góc tù) từ nguồn canonical. Trên hình tọa độ, đi theo hướng x trước rồi y; trên hình góc tù, quan sát góc lớn 90° để giải thích tại sao tích vô hướng âm. Hai hình không thay phép chứng minh, không sao chép XML.
-
-        ### Ví dụ D2 có lý do chọn phương pháp
+        ### Ví dụ: chọn đúng phương pháp
 
         1. **Từ điểm sang vectơ.** A(-1;2), B(3;-4): $\overrightarrow{AB}=(4;-6)$. Chọn "cuối trừ đầu" vì câu hỏi là độ dời, không phải tọa độ của B; kiểm lại bằng $A+AB=B$ theo từng thành phần.
         2. **Độ dài và cùng phương.** $\vec u=(3;-4)$ có độ dài 5; $\vec v=(-6;8)=-2\vec u$ nên cùng phương, ngược hướng, độ dài 10. Không lấy tỉ số thành phần nếu mẫu 0.
@@ -168,7 +164,6 @@ Bạn sẽ đi từ mũi tên (vectơ) → phép toán → tọa độ Oxy → h
 
         **Khám phá.** Một điểm có tọa độ (x;y). Làm sao biết nó có nằm trên con đường thẳng hoặc đường tròn đã cho? Hãy thử thay tọa độ vào phương trình. **Điều cần nhận ra:** phương trình mô tả tập hợp điểm thỏa điều kiện hình học, không phải chỉ là biểu thức để tính.
 
-        **Nguồn S1:** SGK Toán 10 KNTT Tập Hai, Chương VII B19–B22 **trang in 30–56 (PDF #31–57)**, cuối chương 57–59 (PDF #58–60). Các mốc đã xem trực tiếp: B19 bắt đầu trang in 30/PDF31; B21 đường tròn trang in 43/PDF44; B22 ba đường conic trang in 48/PDF49. SBT Toán 10 Tập Hai ChVII được cung cấp nguyên bản; **không gán số trang bài SBT chưa đối chiếu từng tờ**, yêu cầu reviewer S1 kiểm sâu những dạng còn nghi vấn. Các câu dưới đây do tác giả biên soạn, không chép nguyên bài SGK/SBT.
 
         ## Kiến thức: hình học được diễn tả bằng điều kiện tọa độ
 
@@ -191,8 +186,7 @@ Bạn sẽ đi từ mũi tên (vectơ) → phép toán → tọa độ Oxy → h
         - **Parabola** chuẩn $y^2=2px$, p>0. Tiêu điểm $F(p/2;0)$, đường chuẩn $x=-p/2$; mỗi M trên parabol cách đều F và đường chuẩn. Đừng nhầm p với hoành độ tiêu điểm.
 
         **Ranh giới:** Các đường conic học ở đây là dạng chính tắc với trục song song hệ trục và tham số thỏa điều kiện; không suy rằng mọi phương trình bậc hai hai ẩn đều là ellipse, hyperbola hoặc parabola. Bài toán thực tế phải kiểm ý nghĩa vật lý, miền chấp nhận và đơn vị.
-
-        **Hướng dẫn đọc hình D5:** Đường thẳng: nhận pháp tuyến vuông góc đường, nhìn dấu khoảng cách. Đường tròn: đặt tâm và so bán kính. Conic: đánh dấu tiêu điểm, đỉnh và trục đối xứng, đọc dạng dấu cộng/trừ trong phương trình, không lấy tỷ lệ ảnh làm chứng cứ độ dài thật. Sử dụng figure gốc SGK ChVII sau khi kiểm exact blob; chưa tuyên bố hình đã chạy trên Topic website.
+**Cách đọc hình:** Với đường thẳng, tìm vectơ pháp tuyến và mối liên hệ vuông góc. Với đường tròn, đánh dấu tâm rồi so bán kính; với conic, nhận tiêu điểm, đỉnh, trục đối xứng và dấu trong phương trình. Đừng dùng tỷ lệ nét vẽ thay điều kiện hình học.
 
         ### Sáu ví dụ có lựa chọn phương pháp và giới hạn
 
@@ -227,7 +221,6 @@ Bạn sẽ đi từ mũi tên (vectơ) → phép toán → tọa độ Oxy → h
 
         **Khám phá.** Hai cạnh vẽ trên tờ giấy có vẻ không cắt nhau; liệu trong không gian chúng có thể chéo nhau? Hãy hình dung một hình tứ diện và xét khả năng đồng phẳng trước khi kết luận. **Điều cần nhận ra:** hình chiếu trên giấy không tự chứng minh quan hệ không gian.
 
-        **S1:** SGK Toán 11 Tập Một Chương IV **70–103** (PDF trang 71–104), SBT Tập Một 53–74 (PDF 54–75), trọng tâm quan hệ điểm–đường–mặt, song song, phép chiếu song song; SGK Toán 11 Tập Hai Chương VII B22–B26 **27–60** (PDF 28–61), bài V thể tích B27 61–63 khi cần hiểu chiều cao; SBT Tập Hai B22–B26 in24–37/PDF25–38, B27 in38–40/PDF39–41. Bản scan đã xem ở các mốc nguồn; bài này là **tiền đề hình học độc lập**, không đưa Oxyz vào trước khi học sinh biết tại sao phải dùng tọa độ.
 
         ## Kiến thức — Vì sao cần nhìn hình đúng trước khi giải tọa độ?
 
@@ -266,8 +259,7 @@ Bạn sẽ đi từ mũi tên (vectơ) → phép toán → tọa độ Oxy → h
         - Hai mặt phẳng song song: khoảng cách giữa hai điểm chiếu theo phương vuông góc chung.
         - Hai đường chéo nhau: khoảng cách bằng **độ dài đoạn vuông góc chung** nối hai đường (khi tồn tại, là duy nhất); không lấy một cạnh bất kỳ làm khoảng cách nếu chưa chứng minh vuông góc với cả hai.
         - Chiều cao lăng trụ/chóp là khoảng cách vuông góc giữa đáy và đỉnh/mặt đáy, không nhất thiết là cạnh bên xiên. Đây là cầu nối với bài toán thể tích, **không** lập phần thể tích riêng vượt trục của Chuyên đề.
-
-        **D5 đọc hình:** Dùng figure SGK gốc G11 ChIV/ChVII bằng **placement**: tứ diện để chỉ đường chéo nhau, hình chóp có đường cao và mặt phẳng đáy, hình hộp để phân biệt giao nhau/chéo nhau, sơ đồ điểm A và hình chiếu H. Các tọa độ dựng ở Phần 6 chỉ là cách kiểm chứng, không thay đọc hình học không gian. Chưa ghi AP3/browser PASS.
+**Cách đọc hình không gian:** Nhận các đỉnh tứ diện, đường cao của hình chóp, các cạnh khuất của hình hộp, chân đường vuông góc từ điểm đến mặt. Nét đứt chỉ là cách vẽ vật thể, không đủ để suy ra song song, vuông góc hoặc khoảng cách.
 
         ### Sáu ví dụ có giải thích chọn phương pháp
 
@@ -304,7 +296,6 @@ Bạn sẽ đi từ mũi tên (vectơ) → phép toán → tọa độ Oxy → h
 
         **Khám phá.** Hai điểm của một drone có cùng hình chiếu trên bản đồ nhưng độ cao khác nhau. Tọa độ (x;y) có đủ không? **Điều cần nhận ra:** trục z bổ sung vị trí theo chiều cao, mọi phép toán vectơ vẫn cùng bản chất.
 
-        **S1:** SGK Toán 12 KNTT Tập Một Chương II B06–B08 **trang in 45–72 ↔ PDF 47–74 (1-based)**; SBT Tập Một **trang in 38–54 ↔ PDF 36–52**, lưu ý **hai PDF có offset khác nhau**. SGK B06 vectơ không gian p45–59, B07 hệ tọa độ p60–66, B08 biểu thức tọa độ p67–72; trích từ nguồn gốc và canonical SGK blob `856a37bd16d2746ffc2e12906de18d1f4338a3b6` (SGK PASS chỉ đúng snapshot SGK). Không nhân bản các câu gốc khi đặt sang Topic.
 
         ## Kiến thức — khi hai chiều không đủ
 
@@ -335,10 +326,9 @@ Bạn sẽ đi từ mũi tên (vectơ) → phép toán → tọa độ Oxy → h
         ### Liên hệ với thực tế và giới hạn
 
         Chọn gốc/tọa độ/đơn vị trước khi tính. Một tọa độ âm chỉ vị trí theo **hướng âm của trục**, không phải "độ dài âm". Nếu hình cho đơn vị mét mà đáp án tính km, phải đổi đơn vị. Khi dùng góc/độ dài, nhớ điều kiện vectơ khác không. Không suy tất cả vật thể 3D có thể mô tả đúng chỉ bằng khoảng cách: hướng và tham chiếu cũng cần thiết.
+**Cách đọc hình tọa độ:** Từ gốc O, nhận ba chiều dương Ox, Oy, Oz. Hình phối cảnh có thể làm các góc trên giấy trông không vuông; kiểm tọa độ $\overrightarrow{AB}$ bằng B−A thay vì đo đếm từ bản vẽ.
 
-        **D5 đọc hình:** Hình nguồn SGK B06–B08 có quy tắc hình hộp và ba trục; dùng lại bằng `placement`, không sao chép ảnh cũ. Nhận O và hướng dương Ox/Oy/Oz, phân biệt hình chiếu của một điểm theo phương từng trục; kiểm công thức AB bằng B−A thay vì đọc con số trên phối cảnh.
-
-        ### Sáu ví dụ D2 với lựa chọn phương pháp
+        ### Ví dụ: lập luận và kiểm nghiệm
 
         1. A(1;−2;3), B(4;0;−1) ⇒ AB=(3;2;−4); thử cộng vectơ AB vào tọa độ A cho đúng B.
         2. Độ dài AB ở ví dụ trên là $\sqrt{3^2+2^2+(-4)^2}=\sqrt{29}$. Kết quả luôn không âm, không cộng đại số 3+2−4.
@@ -371,7 +361,6 @@ Bạn sẽ đi từ mũi tên (vectơ) → phép toán → tọa độ Oxy → h
 
         **Khám phá.** Một đường bay đi qua A(1;2;3) theo hướng (1;1;−1) có cắt mặt phẳng x+2y+2z−9=0 không? Trước khi tính, hãy đặt câu hỏi: đường bay được cho bằng điểm và hướng, mặt phẳng được cho bằng pháp tuyến. **Điều cần nhận ra:** thay tham số vào phương trình để kiểm điều kiện giao.
 
-        **Nguồn S1:** SGK Toán 12 KNTT Tập Hai, Chương V **B14–B17, trang in 29–60 ↔ PDF 31–62**, cuối chương 61–63/PDF 63–65. SBT Tập Hai B14–B17 trang in 22–34 nhưng **thiếu hẳn trang SBT in25** trong scan: in22–24 tương ứng PDF21–23; tiếp theo PDF24 đã là in26, các trang B15–B17 tiếp nối tới in34/PDF32. Reviewer không được tưởng trang 25 đã được quan sát; không dựa vào câu 5.6–5.7 để coi Q01 tự PASS. Nguồn gốc SGK canonical `11eb2834cfdb4a24685157f84666c2bb0767970a`, lịch sử targeted Q01 và rubric đã lưu tại manifest SGK, **không** chuyển tự động PASS sang Topic.
 
         ## Kiến thức — từ câu hỏi "hình gì?" tới phương trình 3D
 
@@ -413,10 +402,9 @@ Bạn sẽ đi từ mũi tên (vectơ) → phép toán → tọa độ Oxy → h
         Tập điểm cách đều I(a;b;c) một khoảng R>0 có phương trình $(x-a)^2+(y-b)^2+(z-c)^2=R^2$. **Không** nhầm mặt cầu (bề mặt) với **khối cầu** (cả bên trong). Một điểm M thuộc mặt cầu khi bình phương khoảng cách đến I bằng R². Với mặt phẳng (P), nếu khoảng cách từ I đến (P) là h: h>R thì không cắt, h=R tiếp xúc, h<R cắt theo đường tròn bán kính $\sqrt{R^2-h^2}$ (nếu h=0 là đường tròn lớn). **Chỉ xem đây là ứng dụng tích hợp sau khi đã học xong B17**, không biến nó thành một outcome bắt buộc của bài mặt phẳng B14 trước B17.
 
         **Điều kiện và kiểm nghiệm:** Một phương trình đúng có thể tạo ra nghiệm toán học không phù hợp dữ liệu thực tế (chẳng hạn t âm khi t biểu diễn thời gian sau lúc bắt đầu). Luôn nêu hệ trục, đơn vị, phạm vi t và kiểm lại nghiệm vào phương trình gốc.
+**Cách đọc hình phương trình không gian:** Nhận hướng của đường, pháp tuyến của mặt và tâm–bán kính của mặt cầu. Khi suy luận về góc, khoảng cách và vị trí tương đối, ưu tiên điều kiện đại số đã xác minh thay vì cảm giác từ một hình phối cảnh.
 
-        **D5:** Dùng nguyên sáu hình PNG đã reviewer xem trong nguồn SGK ChV (ảnh hình học/mặt/cầu/pháp tuyến) qua placement, không tự tuyên bố đã tái bản đúng trên website. Đọc nhãn trục, góc, phương pháp tuyến/chỉ phương; hình nghiêng không quyết định dấu các tích vô hướng. Sơ đồ ví dụ dưới có lời dẫn bằng chữ, học sinh không phải rời sang SGK để nắm công thức bắt buộc.
-
-        ### Sáu ví dụ D2 — suy luận trước công thức
+        ### Ví dụ: suy luận trước khi tính
 
         1. **Mặt phẳng qua A có n:** A(1;2;3), n=(2;−1;1). Từ dot $2(x-1)-(y-2)+(z-3)=0$ suy ra **2x−y+z−3=0**. Thế A:2−2+3−3=0 kiểm đúng.
         2. **Khoảng cách điểm–mặt:** P(1;2;3) tới x+2y+2z−9=0: $|1+4+6-9|/3=2/3$. Không bỏ mẫu norm n=3.
@@ -781,6 +769,18 @@ Các `ITEM_ID` hoàn chỉnh tương ứng có tiền tố `THPT-TOPIC-VEC-P03-`
 - S1: SGK/SBT KNTT 10–12, tham chiếu trang in/PDF và nguồn SBT 12 tập 2 thiếu trang in 25 được khóa trong R02; không tạo nội dung từ trang bị thiếu.
 - Những câu hỏi 14 ID ở Tự kiểm tra là **placement khác của cùng 14 canonical ID**, không cộng thêm 14 vào số câu duy nhất. Không dùng điểm self-check làm `Skill Mastery`.
 - AUTHORING chỉ cung cấp nội dung và hợp đồng thể hiện. AP1–AP5, R1–R5, render MathJax/SVG, keyboard/390–820–1440, Final Submit, P1/P2 và quyền merge/deploy thuộc RELEASE.
+
+## Dẫn chứng nguồn S1 từng phần giữ từ R02 (authoring-only)
+
+1. **Nguồn S1:** SGK Toán 10 KNTT tập 1, Bài 10 trang in 60–65/PDF 61–66 và Bài 11 trang in 66–70/PDF 67–71; SBT Bài 10 trang in 55–58/PDF 56–59 và Bài 11 trang in 59–65/PDF 60–66. Bản PDF SGK/SBT đã mở tại các mốc bài; canonical SGK gốc `a9f6fab8...` giữ nguyên.
+
+2. **Nguồn S1:** SGK Toán 10 KNTT Tập Hai, Chương VII B19–B22 **trang in 30–56 (PDF #31–57)**, cuối chương 57–59 (PDF #58–60). Các mốc đã xem trực tiếp: B19 bắt đầu trang in 30/PDF31; B21 đường tròn trang in 43/PDF44; B22 ba đường conic trang in 48/PDF49. SBT Toán 10 Tập Hai ChVII được cung cấp nguyên bản; **không gán số trang bài SBT chưa đối chiếu từng tờ**, yêu cầu reviewer S1 kiểm sâu những dạng còn nghi vấn. Các câu dưới đây do tác giả biên soạn, không chép nguyên bài SGK/SBT.
+
+3. **S1:** SGK Toán 11 Tập Một Chương IV **70–103** (PDF trang 71–104), SBT Tập Một 53–74 (PDF 54–75), trọng tâm quan hệ điểm–đường–mặt, song song, phép chiếu song song; SGK Toán 11 Tập Hai Chương VII B22–B26 **27–60** (PDF 28–61), bài V thể tích B27 61–63 khi cần hiểu chiều cao; SBT Tập Hai B22–B26 in24–37/PDF25–38, B27 in38–40/PDF39–41. Bản scan đã xem ở các mốc nguồn; bài này là **tiền đề hình học độc lập**, không đưa Oxyz vào trước khi học sinh biết tại sao phải dùng tọa độ.
+
+4. **S1:** SGK Toán 12 KNTT Tập Một Chương II B06–B08 **trang in 45–72 ↔ PDF 47–74 (1-based)**; SBT Tập Một **trang in 38–54 ↔ PDF 36–52**, lưu ý **hai PDF có offset khác nhau**. SGK B06 vectơ không gian p45–59, B07 hệ tọa độ p60–66, B08 biểu thức tọa độ p67–72; trích từ nguồn gốc và canonical SGK blob `856a37bd16d2746ffc2e12906de18d1f4338a3b6` (SGK PASS chỉ đúng snapshot SGK). Không nhân bản các câu gốc khi đặt sang Topic.
+
+5. **Nguồn S1:** SGK Toán 12 KNTT Tập Hai, Chương V **B14–B17, trang in 29–60 ↔ PDF 31–62**, cuối chương 61–63/PDF 63–65. SBT Tập Hai B14–B17 trang in 22–34 nhưng **thiếu hẳn trang SBT in25** trong scan: in22–24 tương ứng PDF21–23; tiếp theo PDF24 đã là in26, các trang B15–B17 tiếp nối tới in34/PDF32. Reviewer không được tưởng trang 25 đã được quan sát; không dựa vào câu 5.6–5.7 để coi Q01 tự PASS. Nguồn gốc SGK canonical `11eb2834cfdb4a24685157f84666c2bb0767970a`, lịch sử targeted Q01 và rubric đã lưu tại manifest SGK, **không** chuyển tự động PASS sang Topic.
 
 ## Ma trận nguồn, provenance và bộ ID gốc (R02 đóng băng)
 
