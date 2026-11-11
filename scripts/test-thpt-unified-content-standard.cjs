@@ -19,7 +19,7 @@ const REQUIRED_SECTIONS=[
  "## V. Một chương SGK độc lập và một chuyên đề độc lập",
  "## VI. Một luồng nghiệm thu duy nhất và ranh giới hai nhánh",
  "## VII. Snapshot + NotebookLM + Delta: bảo toàn kết quả hợp lệ",
- "## VIII. Checklist PRE-REVIEW (AUTHORING — không thể tự cấp PASS)",
+ "## VIII. Checklist PRE-Q18 (AUTHORING — tự QA có chứng cứ, không mạo danh reviewer PASS)",
  "## IX. Checklist PRE-HANDOFF V2 (AUTHORING)",
  "## X. Quản trị thay đổi và bảo đảm “một chuẩn”",
  "## XI. Truy vết nguồn → điều khoản và phân công"
