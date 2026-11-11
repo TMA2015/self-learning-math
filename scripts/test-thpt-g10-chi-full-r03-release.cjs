@@ -25,9 +25,9 @@ for(const c of chapters){
     // to the SAME final Golden routes as historic href="../.../" links.
     // Check both real source targets and their existence; never weaken Q16.
     for(const [target,label] of [["luyen-tap.md","Core/Practice"],["tu-kiem-tra-chuong.md","Final Submit"]]){
-      const markdownTarget=new RegExp('\\]\\((?:\\./)?'+target.replace(/\\.md$/,"\\.md")+'(?:[?#][^)]*)?\\)');
-      const legacyHref=target.replace(/\\.md$/,"");
-      assert(markdownTarget.test(x)||x.includes('href="../'+legacyHref+'/"'),
+      const mdLink=x.includes(']('+target+')')||x.includes(']('+target+'?')||x.includes(']('+target+'#');
+      const legacyHref=target.slice(0,-3);
+      assert(mdLink||x.includes('href="../'+legacyHref+'/"'),
         c.lesson+": missing "+label+" learner navigation target");
       assert(fs.existsSync(path.join(root,path.dirname(c.file),target)),
         c.lesson+": broken "+label+" target "+target);
