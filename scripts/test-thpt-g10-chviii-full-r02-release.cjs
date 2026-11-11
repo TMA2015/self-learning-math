@@ -120,8 +120,9 @@ for(const n of [23,24,25]){
     assert.equal(ids[i].outcome,k.outcome,"B"+n+": changed original outcome mapping");
     assert(!all.includes(k.id),"B"+n+": repeated canonical first try"); all.push(k.id);
     const ix=source.indexOf('data-thpt-first-try-id="'+k.id+'"');
-    assert(/^\s*\?\?\? question "/m.test(source.slice(ix,ix+950)),
-      "B"+n+": first-attempt solution must be collapsed "+k.id);
+    const next=i+1<set.length?source.indexOf('data-thpt-first-try-id="'+set[i+1].id+'"',ix+1):source.length;
+    assert(ix>=0&&next>ix&&/^\s*\?\?\? question "/m.test(source.slice(ix,next)),
+      "B"+n+": each original First Try has a default-closed solution "+k.id);
     const helpAt=source.indexOf('data-thpt-help-id="'+k.help+'"');
     assert(helpAt>=0 && /^\s*\?\?\? tip "/m.test(source.slice(helpAt,helpAt+1100)),
       "B"+n+": original reviewed D6 must remain a closed disclosure "+k.help);
