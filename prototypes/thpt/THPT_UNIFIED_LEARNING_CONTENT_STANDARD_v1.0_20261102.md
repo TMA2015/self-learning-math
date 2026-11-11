@@ -197,23 +197,6 @@ Một chương mới **không gửi NotebookLM** nếu chưa tự kiểm:
 - **Phạm vi G10 PR #797:** owner đã cấp quyền phát hành có điều kiện cho 27 Knowledge và 11 SVG; ngay khi source delta receipt đủ chứng cứ toán/PED S1 và 2 cổng an toàn/kỹ thuật đạt, được chuyển release mà **không** yêu cầu reviewer NotebookLM lặp lại hoặc test toàn văn cũ. Có thể giữ HOLD đúng bài/delta thiếu chứng cứ, không khóa cả chương không liên quan.
 - **Không ảnh hưởng quyền riêng tư:** chính sách không công khai đề/đáp án/rubric RD1, không tiết lộ key/hint trước Final Submit, không tự ghi Mastery hoặc thay dữ liệu học sinh. Chỉ chủ dự án quyết định scope/site deployment; merge tài liệu/code-only không tự phát hành học liệu.
 
-## XI. Truy vết nguồn → điều khoản và phân công
-
-| Nguồn quyết định/kiểm toán | Điều chuẩn Qxx | Cổng AUTHORING | Cổng RELEASE |
-|---|---|---|---|
-| S1 SGK/chương trình + SBT/nguồn bài tập tham khảo + Project 08 | Q01,Q02,Q03,Q05,Q17 | A1,A2,A4,A5 | R1 fidelity |
-| Phạm vi học thuật D1–D6, SBT Core/Practice, Written | Q03–Q08,Q15 | A4,A5,A7 | R1, AP1–AP3 |
-| Chủ dự án #691 / concept-first v1 | Q09–Q14 | PED1–PED6, A5, NotebookLM PED | AP1,AP4 |
-| 5 Permanent THPT v2.1 + Source 06 | Q01–Q18 | A3/Q18 review packets | No forged PASS |
-| Source 07 delta v1.2 được chủ dự án phê duyệt 10/11 | Q18 (mọi nội dung) | A6 | DELTA_A QA / affected C return |
-| Source 08 two-path design | Q15,Q16,Q17 | A4,A7 | R3,R4, AP4 |
-| Source-locked handoff V2 PR #699 | Q01,Q02,Q15,Q18 | A1–A7+READY | R1–R5 |
-| Issue #655 AP1–AP5; Golden R4 | Q03,Q07,Q09–Q14,Q16,Q17 (in rendered view) | Evidence before handoff | AP1–AP5, P2 |
-| Issue #742 nâng cấp diễn giải, #691 concept-first, #655 trình bày (v1.2.0) | Q03,Q04,Q07,Q08,Q09–Q14,Q17, Q18 | PED1–PED6 evidence theo outcome, giữ nguyên source/review | AP1–AP5 trên bản hiển thị, không phát sinh tiêu chí toán mới |
-| Issue #662 Final Submit and #675 program sequencing | Q16–Q18 | RD1 custody, source honesty | R3,R4,R5,P1/P2 |
-
-**NO_UNRESOLVED_DUPLICATE_STANDARD:** This file is the owner-approved single normative definition of THPT learning-content quality; any older academic/pedagogic contract/checklist is **source history or implementation guidance only** unless a higher-authority owner/S1/08/06/07 decision remains binding. This does **not** auto-amend the five existing NotebookLM Permanent Sources or create PASS for old lessons.
-
 ## X-D. OWNER DECISION 11/11/2026 — thống nhất Q18 theo chứng cứ, mở cửa biên soạn nhưng giữ chất lượng
 
 **Quan hệ phiên bản:** mục này là bản sửa **MAJOR v3.0.0** của cùng `SLM-THPT-QUALITY-ONE`, có hiệu lực **sau governance merge**. §X-C v2.0 về Knowledge SGK tiếp tục là một cách tự kiểm hợp lệ, nhưng câu cũ “Topic mới bắt buộc independent NotebookLM” được thay bằng lựa chọn có chứng cứ ở đây. Quyết định này không tạo Q19.
@@ -231,3 +214,20 @@ Một chương mới **không gửi NotebookLM** nếu chưa tự kiểm:
 11. **Độc lập kết quả:** `AUTHOR_SELF_VERIFIED` chỉ cấp quyền chuẩn bị `CONTENT_READY` khi A1–A7, Q01–Q18, SHA/receipt và private Q16 hoàn tất; `RELEASE_READY` và `PUBLISHED` vẫn cần AP1–AP5/R1–R5, exact-head CI, quyền chủ dự án, P1/P2 thực tế. Không merge/deploy từ một bản demo hoặc QA metadata.
 
 **Historical citations:** các đoạn trước trong file mô tả review independent **mặc định v1.0–v2.0**; sau khi v3.0 có hiệu lực, dùng ưu tiên mục X-D cho quyết định Q18 hiện hành, không tái kích hoạt veto cũ.
+
+## XI. Truy vết nguồn → điều khoản và phân công
+
+| Nguồn quyết định/kiểm toán | Điều chuẩn Qxx | Cổng AUTHORING | Cổng RELEASE |
+|---|---|---|---|
+| S1 SGK/chương trình + SBT/nguồn bài tập tham khảo + Project 08 | Q01,Q02,Q03,Q05,Q17 | A1,A2,A4,A5 | R1 fidelity |
+| Phạm vi học thuật D1–D6, SBT Core/Practice, Written | Q03–Q08,Q15 | A4,A5,A7 | R1, AP1–AP3 |
+| Chủ dự án #691 / concept-first v1 | Q09–Q14 | PED1–PED6, A5, NotebookLM PED | AP1,AP4 |
+| 5 Permanent THPT v2.1 + Source 06 | Q01–Q18 | A3/Q18 review packets | No forged PASS |
+| Source 07 delta v1.2 được chủ dự án phê duyệt 10/11 | Q18 (mọi nội dung) | A6 | DELTA_A QA / affected C return |
+| Source 08 two-path design | Q15,Q16,Q17 | A4,A7 | R3,R4, AP4 |
+| Source-locked handoff V2 PR #699 | Q01,Q02,Q15,Q18 | A1–A7+READY | R1–R5 |
+| Issue #655 AP1–AP5; Golden R4 | Q03,Q07,Q09–Q14,Q16,Q17 (in rendered view) | Evidence before handoff | AP1–AP5, P2 |
+| Issue #742 nâng cấp diễn giải, #691 concept-first, #655 trình bày (v1.2.0) | Q03,Q04,Q07,Q08,Q09–Q14,Q17, Q18 | PED1–PED6 evidence theo outcome, giữ nguyên source/review | AP1–AP5 trên bản hiển thị, không phát sinh tiêu chí toán mới |
+| Issue #662 Final Submit and #675 program sequencing | Q16–Q18 | RD1 custody, source honesty | R3,R4,R5,P1/P2 |
+
+**NO_UNRESOLVED_DUPLICATE_STANDARD:** This file is the owner-approved single normative definition of THPT learning-content quality; any older academic/pedagogic contract/checklist is **source history or implementation guidance only** unless a higher-authority owner/S1/08/06/07 decision remains binding. This does **not** auto-amend the five existing NotebookLM Permanent Sources or create PASS for old lessons.
