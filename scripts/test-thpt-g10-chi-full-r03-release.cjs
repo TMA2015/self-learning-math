@@ -15,7 +15,7 @@ const all=[];
 for(const c of chapters){
  const x=read(c.file);
   if(x.includes('=== "Khám phá kiến thức"')){
-    const names=[...x.matchAll(/^===\\s*"([^"]+)"\\s*$/gm)].map(z=>z[1]);
+    const names=[...x.matchAll(/^===\s*"([^"]+)"\s*$/gm)].map(z=>z[1]);
     assert.deepEqual(names,["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
       c.lesson+": Model B 4-tab mismatch");
     const ids=[...x.matchAll(/data-thpt-first-try-id="([^"]+)"/g)].map(z=>z[1]);
