@@ -1,6 +1,6 @@
 # SLM — PROJECT SOURCE SYNC INDEX · 11/11/2026
 
-**STATUS:** GOVERNANCE_DRAFT_PENDING_MAIN_MERGE · **không phải tiêu chuẩn thứ hai**. Mục đích: ngăn ChatGPT Project attachments mang bản 07 v1.1/09 v1.0 cũ áp dụng phủ quyết chuẩn Q18 mới. Các nguồn độc lập của NotebookLM **vẫn đúng 5 Permanent THPT v2.1**, không bổ sung file thứ sáu.
+**STATUS:** OWNER_PROJECT_SOURCES_07_09_PREPARED · GOVERNANCE_DRAFT_PENDING_MAIN_MERGE · **không phải tiêu chuẩn thứ hai**. Mục đích: ngăn ChatGPT Project attachments mang bản 07 v1.1/09 v1.0 cũ áp dụng phủ quyết chuẩn Q18 mới. Các nguồn độc lập của NotebookLM **vẫn đúng 5 Permanent THPT v2.1**, không bổ sung file thứ sáu.
 
 | Nguồn | File hiệu lực sau PR #808 merge | Hướng dẫn Project attachments |
 |---|---|---|
@@ -21,7 +21,9 @@
 
 ## Điều kiện xác nhận đồng bộ
 
+**Checkpoint Source Sync:** việc owner upload 07/09 đã hoàn thành, còn **kích hoạt quy phạm** phải chờ PR #808 merge main và kiểm bản hiệu lực. Nguồn 07/09 là dự kiến, không tự ghi đè v2 main trước merge.
+
 1. Chuẩn **v3.0.0 và Source 07 nội dung v1.3** đã có trên `main`, không chỉ Draft PR.
 2. Test governance, Topic Intake, Safe Deploy, Roadmap và R4 trên exact final HEAD đạt, không tắt Q15/Q16.
-3. Project Sources 07 & 09 trong ChatGPT Project được chủ dự án thay/điều chỉnh (Project attachments không tự cập nhật khi GitHub merge). Source 06/08 và 5 NotebookLM Permanent v2.1 giữ.
+3. **OWNER CONFIRMED PREPARED (11/11/2026):** Chủ dự án đã cập nhật hai file `Temp_07_THPT_DELTA_AND_NOTEBOOK_REVIEW_POLICY_v1.3_PROJECT_SOURCE.md` và `Temp_09_THPT_Q01_Q18_v3_PROJECT_REFERENCE.md` vào nguồn Project SLM. Hai file đều mang `PREPARED_PENDING_PR808_MERGE`, vì thế **không phải v3 đã có hiệu lực** trước GitHub main merge. Sau khi merge, so khớp version/hash và xác nhận activation; **không yêu cầu chủ dự án upload lại**. Source 06/08 và 5 NotebookLM Permanent v2.1 giữ.
 4. AUTHORING chỉ mở lại sau các điều kiện này; không suy CI xanh là nội dung Topic mới Academic/PED đã được tự kiểm thực.
