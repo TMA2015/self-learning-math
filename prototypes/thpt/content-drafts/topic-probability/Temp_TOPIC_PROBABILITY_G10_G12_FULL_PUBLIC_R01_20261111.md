@@ -1,6 +1,6 @@
-# Xác suất — ứng viên Chuyên đề 3 xuyên lớp 10–12 · AUTHORING R01
+# Xác suất và các quy tắc tính xác suất — hành trình TOPIC G10–G12 · AUTHORING R02
 
-> **Lưu ý quy hoạch:** Tên/mã thứ tự **“Chuyên đề 3” chưa được chủ dự án khóa trong danh mục 22 chuyên đề THPT**. Đây là gói nội dung Topic Xác suất hiện hữu được biên tập tiếp, không phải quyết định đổi taxonomy hoặc gắn tuyến/URL website. Nguồn gốc 2026-10-28 có reviewer PASS theo **snapshot cũ** và vẫn giữ nguyên.
+> **Lưu ý quy hoạch:** Tên/mã thứ tự **Mã PLAN22-03 của danh mục nghiên cứu 22 chuyên đề (09/11) không phải Xác suất**; Xác suất nằm trong các gợi ý PLAN22-20/21. Đây là **gói thứ ba trong trình tự AUTHORING đang thực hiện**, không phải một số thứ tự TOPIC_ID chính thức. Tách việc phân loại taxonomy khỏi việc xác minh học liệu. Nguồn gốc 2026-10-28 có reviewer PASS theo **snapshot cũ** và vẫn giữ nguyên.
 
 **Mục tiêu:** Học sinh đi từ “kết quả nào có thể xảy ra?” tới “khi có thông tin mới, xác suất thay đổi thế nào?” bằng một lộ trình tự học độc lập: **Kiến thức / Luyện tập / Tự kiểm tra**. Không có Core riêng. Học sinh không cần phải mở bài SGK khác để hiểu khái niệm bắt buộc.
 
@@ -145,11 +145,11 @@ Ba chặng xây trên nhau: mô hình ngẫu nhiên → kết hợp biến cố 
 
         **Hướng dẫn đọc hình:** Nhìn vùng chỉ thuộc A, chỉ thuộc B, vùng chồng nhau và vùng ở ngoài cả hai. Đếm vùng chồng **một lần** khi tìm hợp.
 
-        **Tự thử trước khi xem lời giải** (TOPIC-PROB-M06-TRY01): Chọn đều một số từ 1 đến 12; A chia hết cho 3, B chẵn. Giao có mấy phần tử? Hợp có mấy?
+        **Tự thử trước khi xem lời giải** (TOPIC-PROB-M06-TRY01): Chọn đều một số từ 1 đến 15; A chia hết cho 3, B chẵn. Giao có mấy phần tử? Hợp có mấy?
 
         <details markdown="1"><summary>Đối chiếu</summary>
 
-        Giao {6,12} có 2; hợp có 4+6−2=8 phần tử. Hợp không đếm giao hai lần.
+        Giao {6,12} có 2; trong 1 đến 15 có 5 bội của 3 và 7 số chẵn nên hợp có 5+7−2=10 phần tử. Hợp không đếm giao hai lần.
 
         </details>
 
@@ -176,11 +176,11 @@ Ba chặng xây trên nhau: mô hình ngẫu nhiên → kết hợp biến cố 
 
         **Giới hạn:** Không suy độc lập chỉ vì hai biến cố có thể đồng thời xảy ra; phải xem mô hình hoặc kiểm công thức.
 
-        **Tự thử trước khi xem lời giải** (TOPIC-PROB-M07-TRY01): Hai lần tung đồng xu công bằng độc lập. Biến cố “xu đầu ngửa” và “xu sau ngửa” có độc lập không?
+        **Tự thử trước khi xem lời giải** (TOPIC-PROB-M07-TRY01): Chọn đều số trong 1 đến 6. Biến cố A là “số chẵn”, B là “chia hết cho 3”. Có độc lập không?
 
         <details markdown="1"><summary>Đối chiếu</summary>
 
-        Có. P(A∩B)=1/4=P(A)P(B); việc biết xu đầu không đổi xác suất xu sau.
+        Có. P(A)=3/6=1/2, P(B)=2/6=1/3, P(A∩B)=1/6=(1/2)(1/3). Chỉ có số 6 thuộc cả hai.
 
         </details>
 
@@ -228,11 +228,11 @@ Ba chặng xây trên nhau: mô hình ngẫu nhiên → kết hợp biến cố 
 
         **Giới hạn:** Khi rút liên tiếp không hoàn lại hoặc có quan hệ nguyên nhân, không tự nhân hai xác suất biên; sang mảng Xác suất có điều kiện để giải quyết đúng.
 
-        **Tự thử trước khi xem lời giải** (TOPIC-PROB-M09-TRY01): Hai thiết bị độc lập, xác suất hỏng 1/5 và 1/4. P(ít nhất một thiết bị hoạt động)?
+        **Tự thử trước khi xem lời giải** (TOPIC-PROB-M09-TRY01): Hai thiết bị độc lập, xác suất hỏng 1/4 và 1/3. P(ít nhất một thiết bị hoạt động)?
 
         <details markdown="1"><summary>Đối chiếu</summary>
 
-        1−(1/5)(1/4)=19/20. Lấy biến cố đối của “cả hai hỏng”.
+        1−(1/4)(1/3)=11/12. Lấy biến cố đối của “cả hai hỏng” và dùng giả thiết độc lập.
 
         </details>
 
@@ -280,11 +280,11 @@ Ba chặng xây trên nhau: mô hình ngẫu nhiên → kết hợp biến cố 
 
         **Chống nhầm lẫn:** Hai biến cố xung khắc có xác suất dương thì không độc lập. Sự độc lập không được kết luận chỉ vì hai biến cố được phát biểu bằng hai câu khác nhau.
 
-        **Tự thử trước khi xem lời giải** (TOPIC-PROB-M11-TRY01): Hộp 3 thẻ đỏ, 2 thẻ xanh; rút hai thẻ không hoàn lại. P(lần 1 đỏ và lần 2 xanh)?
+        **Tự thử trước khi xem lời giải** (TOPIC-PROB-M11-TRY01): Hộp có 4 thẻ đỏ, 3 thẻ xanh; rút hai thẻ không hoàn lại. P(lần 1 đỏ và lần 2 xanh)?
 
         <details markdown="1"><summary>Đối chiếu</summary>
 
-        (3/5)×(2/4)=3/10; lượt thứ hai có điều kiện sau khi đã rút đỏ.
+        (4/7)×(3/6)=2/7; lượt thứ hai có điều kiện sau khi đã rút đỏ.
 
         </details>
 
@@ -305,11 +305,11 @@ Ba chặng xây trên nhau: mô hình ngẫu nhiên → kết hợp biến cố 
 
         **Vận dụng mở rộng:** Với nhiều nhánh \(B_1,\ldots,B_n\) tạo thành phân hoạch của \(\Omega\) và các nhánh có xác suất dương, \(P(A)=\sum_i P(B_i)P(A\mid B_i)\). Đây là cách mở rộng mô hình hai nhánh; hãy thành thạo trường hợp hai nhánh trước khi xử lí nhiều nhóm.
 
-        **Tự thử trước khi xem lời giải** (TOPIC-PROB-M12-TRY01): Chọn nguồn A 60%, nguồn B 40%; xác suất lỗi theo nguồn lần lượt 5% và 10%. P(hàng lỗi)?
+        **Tự thử trước khi xem lời giải** (TOPIC-PROB-M12-TRY01): Chọn nguồn A 30%, nguồn B 70%; xác suất lỗi lần lượt 4% và 2%. P(hàng lỗi)?
 
         <details markdown="1"><summary>Đối chiếu</summary>
 
-        (3/5)(1/20)+(2/5)(1/10)=7/100. Hai nhánh nguồn là một phân hoạch và phải cộng.
+        (3/10)(4/100)+(7/10)(2/100)=26/1000=13/500. Hai nguồn phải tạo thành một phân hoạch, và ta cộng xác suất các nhánh lỗi.
 
         </details>
 
@@ -332,16 +332,76 @@ Ba chặng xây trên nhau: mô hình ngẫu nhiên → kết hợp biến cố 
 
         **Tự kiểm tra lý luận:** Các nhánh thực sự phủ hết trường hợp chưa? Xác suất có điều kiện nào cần mẫu số dương? Nếu câu hỏi đổi từ \(P(A\mid B)\) sang \(P(B\mid A)\), đã nhân đúng tỉ lệ nền chưa? Kết quả có thuộc \([0,1]\) và có ý nghĩa theo tình huống không?
 
-        **Tự thử trước khi xem lời giải** (TOPIC-PROB-M13-TRY01): Chọn X với xác suất 1/3 (đỏ 2/5) hoặc Y với xác suất 2/3 (đỏ 3/4). Biết đã rút đỏ, P(Y|đỏ)?
+        **Tự thử trước khi xem lời giải** (TOPIC-PROB-M13-TRY01): Chọn X với xác suất 1/4 (đỏ 1/2) hoặc Y với xác suất 3/4 (đỏ 2/3). Biết đã rút đỏ, P(Y|đỏ)?
 
         <details markdown="1"><summary>Đối chiếu</summary>
 
-        P(đỏ)=2/15+1/2=19/30; P(Y và đỏ)=1/2; kết quả (1/2)/(19/30)=15/19.
+        P(đỏ)=1/8+1/2=5/8; P(Y và đỏ)=1/2; kết quả (1/2)/(5/8)=4/5.
 
         </details>
 
         **Khi sai cần làm gì?** Quên tỷ lệ nền ở Bayes → Tính từng xác suất đường đi từ nguyên nhân đến kết quả, cộng toàn phần rồi mới đảo. Sau đó tự giải lại một câu cùng mục tiêu khác dữ kiện, không tự nhận đã đạt kiểm tra độc lập.
 
+
+
+
+## Ví dụ có suy luận: chọn công cụ đúng tình huống
+
+### 1. Kiểm tra độc lập thay vì đoán bằng trực giác
+
+**Bài toán:** Chọn đều một số trong tập \(\{1,2,\ldots,10\}\). Biến cố \(A\): số chẵn; \(B\): số chia hết cho 3. Hai biến cố có độc lập không?
+
+**Vì sao chọn phương pháp?** Đề hỏi “độc lập” nên không chỉ đếm giao; phải so sánh \(P(A\cap B)\) với \(P(A)P(B)\).
+
+**Lời giải:** \(A=\{2,4,6,8,10\}\), \(B=\{3,6,9\}\), \(A\cap B=\{6\}\). Do đó \(P(A)=1/2\), \(P(B)=3/10\), \(P(A\cap B)=1/10\). Trong khi \(P(A)P(B)=3/20\ne1/10\), nên \(A,B\) **không độc lập**. Hai biến cố có giao không có nghĩa là độc lập.
+
+### 2. Cộng hai biến cố có phần chung
+
+**Bài toán:** Trong nhóm 50 người được chọn ngẫu nhiên đều, 30 người thích hoạt động A, 25 người thích hoạt động B, 10 người thích cả hai. Tính xác suất người được chọn thích ít nhất một hoạt động.
+
+**Vì sao chọn phương pháp?** “Ít nhất một” là hợp; 10 người chung bị đếm hai lần khi cộng nên phải trừ đúng một lần.
+
+**Lời giải:** Có \(30+25-10=45\) người thuộc hợp. Xác suất là \(45/50=9/10\). Không cần giả định hai sở thích độc lập.
+
+### 3. Nhân cho biến cố độc lập và lấy biến cố đối
+
+**Bài toán:** Hai hệ thống hoạt động độc lập với xác suất \(4/5\) và \(2/3\). Tính xác suất cả hai làm việc và ít nhất một làm việc.
+
+**Vì sao chọn phương pháp?** “Cả hai” là giao hai biến cố độc lập, dùng phép nhân. “Ít nhất một” khó đếm trực tiếp hơn “không hệ thống nào làm việc”.
+
+**Lời giải:** Xác suất cả hai hoạt động là \((4/5)(2/3)=8/15\). Xác suất cả hai hỏng là \((1/5)(1/3)=1/15\). Vậy ít nhất một hoạt động với xác suất \(1-1/15=14/15\). Nếu bỏ giả thiết độc lập, không được nhân hai xác suất biên.
+
+### 4. Đổi điều kiện là đổi mẫu số
+
+**Bài toán:** Nhóm 30 học sinh gồm 18 nữ và 12 nam; trong số đó có 10 nữ và 3 nam đi xe buýt. Đặt \(A\): “đi xe buýt”, \(B\): “là nữ”. Tính \(P(A\mid B)\) và \(P(B\mid A)\).
+
+**Vì sao chọn phương pháp?** Phải nhận diện nhóm *đã biết* trước khi đếm. Mẫu số của \(P(A\mid B)\) là nhóm nữ, còn mẫu số của \(P(B\mid A)\) là nhóm đi xe buýt.
+
+**Lời giải:** \(P(A\mid B)=10/18=5/9\), còn \(P(B\mid A)=10/(10+3)=10/13\). Hai xác suất khác nhau; không đảo vị trí ký hiệu tùy ý.
+
+### 5. Rút không hoàn lại: công thức nhân tổng quát
+
+**Bài toán:** Có 3 thẻ đỏ và 2 thẻ xanh, rút hai thẻ liên tiếp không hoàn lại. Tính xác suất lượt đầu đỏ và lượt sau xanh.
+
+**Vì sao chọn phương pháp?** Lượt đầu làm thay đổi số thẻ ở lượt sau; hai biến cố không được tự coi là độc lập.
+
+**Lời giải:** \(P(\text{đỏ lượt 1})=3/5\), \(P(\text{xanh lượt 2}\mid\text{đỏ lượt 1})=2/4\). Do đó \(P(\text{đỏ rồi xanh})=(3/5)(2/4)=3/10\).
+
+### 6. Xác suất toàn phần: cộng các đường đi
+
+**Bài toán:** Dây chuyền lấy 60% sản phẩm từ nguồn A và 40% từ nguồn B; xác suất lỗi theo từng nguồn lần lượt là 5% và 10%. Tính xác suất sản phẩm bất kỳ bị lỗi.
+
+**Vì sao chọn phương pháp?** Một sản phẩm lỗi có thể đến từ A **hoặc** B; hai nguồn là một phân hoạch, không thể lấy trung bình đơn giản của 5% và 10%.
+
+**Lời giải:** \(P(\text{lỗi})=(3/5)(1/20)+(2/5)(1/10)=3/100+4/100=7/100\). Kiểm tra: 7% nằm giữa hai tỉ lệ lỗi nguồn.
+
+### 7. Bayes: đi thuận rồi đảo chiều
+
+**Bài toán:** Chọn hộp X xác suất \(1/3\), hộp Y xác suất \(2/3\). Hộp X có 2 thẻ đỏ/5 thẻ, hộp Y có 3 thẻ đỏ/4 thẻ. Biết đã rút được đỏ, tính xác suất đã chọn Y.
+
+**Vì sao chọn phương pháp?** Đã quan sát được **kết quả** (đỏ) và muốn hỏi ngược **nguyên nhân** (hộp Y): phải tính xác suất các đường đi đến đỏ trước rồi mới đảo.
+
+**Lời giải:** \(P(\text{đỏ})=(1/3)(2/5)+(2/3)(3/4)=19/30\). \(P(Y\cap\text{đỏ})=(2/3)(3/4)=1/2\). Vậy \(P(Y\mid\text{đỏ})=(1/2)/(19/30)=15/19\). Không nhầm kết quả \(15/19\) với \(P(\text{đỏ}\mid Y)=3/4\).
 
 
 ## Ví dụ kết nối các mảng kiến thức
@@ -444,7 +504,7 @@ Ba chặng xây trên nhau: mô hình ngẫu nhiên → kết hợp biến cố 
 <!-- AUTHOR_ONLY_METADATA_BEGIN -->
 # Phụ lục tác giả (KHÔNG HIỂN THỊ cho học sinh)
 
-**Phiên bản:** `SLM-THPT-QUALITY-ONE v3.0.1`; `LEARNING_PATH=TOPIC`; `RELEASE_SCOPE=FULL_TOPIC_LEARNING_PATH`; `AUTHORING_R01`; `TOPIC_SEQUENCE=PROVISIONAL_3`.
+**Phiên bản:** `SLM-THPT-QUALITY-ONE v3.0.1`; `LEARNING_PATH=TOPIC`; `RELEASE_SCOPE=FULL_TOPIC_LEARNING_PATH`; `AUTHORING_R02`; `AUTHORING_SEQUENCE=THIRD_PACKET_ONLY`; `RUNTIME_TOPIC_ID=UNASSIGNED`.
 
 **S1 scope theo receipt học thuật 2026-10-28:** Toán 10 KNTT T2 B26–B27 (SGK trang in 77–89, SBT 60–74), Toán 11 T2 B28–B30 (SGK 63–82, SBT 42–55), Toán 12 T2 B18–B19 (SGK 42–58, SBT 40–64). Đây là **trích dẫn từ receipt reviewer**, không phải lời tuyên bố đã tự mở lại toàn bộ trang scan S1 trong lượt này.
 
@@ -523,7 +583,7 @@ Ba chặng xây trên nhau: mô hình ngẫu nhiên → kết hợp biến cố 
 | G12 | `G12-B19-TREE_MODEL` |
 | G12 | `G12-B19-BASE_RATE_REASONING` |
 
-**D5:** hai SVG nguyên bản của AUTHORING (Venn 12 kết quả và cây X/Y Bayes); phải kiểm tiếp browser/touch/MathJax và fallback khi RELEASE tiếp nhận. **D6:** 13 đường lỗi→tiền đề→thử lại đã đặt sát từng tab. **Q15:** 38 câu gốc, 38 mapping item–outcome chính; chín placement public self-check không tạo item mới. **Q16:** private RD1 chỉ count/metadata, không public stems/keys/rubrics.
+**Q15 provenance:** 38 item canonical được khóa trong `prototypes/thpt/shared-items/Temp_TOPIC_PROBABILITY_G10_G12_CANONICAL_PUBLIC_SOURCE_INDEX_R01_20261111.md` (3 Git blob lịch sử, 38 exact item anchors, 5 Written dùng chung; không clone đề/key/rubric). **D5:** hai SVG nguyên bản của AUTHORING (Venn 12 kết quả và cây X/Y Bayes); phải kiểm tiếp browser/touch/MathJax và fallback khi RELEASE tiếp nhận. **D6:** 13 đường lỗi→tiền đề→thử lại đã đặt sát từng tab. **Q15:** 38 câu gốc, 38 mapping item–outcome chính; chín placement public self-check không tạo item mới. **Q16:** private RD1 chỉ count/metadata, không public stems/keys/rubrics.
 
-**Trạng thái:** `Q18_CONTENT_CHECK_PENDING` cho kiểm thử sâu toàn bộ R01 và hoàn tất custody SHA/hash của private RD1, và `TOPIC_03_TAXONOMY_PROVISIONAL`; **không tuyên bố CONTENT_READY, RELEASEREADY hoặc deploy** trong nguồn này. Có thể tự nghiệm thu sau khi kiểm tất cả kết quả/toán/PED/S1 ảnh hưởng và đóng one receipt/V2/ready/REGISTER. Chủ dự án là người khóa thứ tự Chuyên đề.
+**Trạng thái:** `Q18_CONTENT_CHECK_PENDING` cho kiểm thử sâu bản R02, khóa provenance của 38 item, custody dữ liệu private RD1 chỉ nếu chủ dự án chọn dùng official RD1, và hoàn thiện one receipt/V2/ready/REGISTER; **không tuyên bố CONTENT_READY, RELEASE_READY hoặc deploy** khi còn kiểm chứng quan trọng. Có thể tự nghiệm thu sau khi kiểm tất cả kết quả/toán/PED/S1 ảnh hưởng và đóng one receipt/V2/ready/REGISTER. Chủ dự án là người khóa thứ tự Chuyên đề.
 <!-- AUTHOR_ONLY_METADATA_END -->
