@@ -1639,10 +1639,19 @@ Những bài A1, A2 và B3 nêu trên thuộc **nguồn bài SGK cuối Chương
 
 Với **B3**, em đặt cạnh vuông góc tường là \(x>0\), cạnh còn lại \(40-2x>0\) nên \(0<x<20\); từ đó diện tích \(S(x)=x(40-2x)\). Lúc cần \(S(x)\ge192\), hãy quay lại *Kiến thức M3 – Từ đỉnh parabol đến câu hỏi “đạt ít nhất một mức”*, rồi tự giải trọn bài B3. **Đừng mở ngay lời giải B3 trên trang SGK**: điều cần luyện là tự nối miền, cực trị và ngưỡng đạt được.
 
-## Tự luận dùng chung · Không tạo một thư viện thứ hai
+## Tự luận · Trình bày lời giải để người khác hiểu
 
-Em chọn bài tự luận theo mục tiêu đang luyện. Viết cách lập luận thành câu đầy đủ, tự ghi miền, đơn vị và các bước chuyển đổi. Chỉ **sau khi làm xong** mới xem lời giải/rubric ở thư viện chung. Một bài được gắn nhãn Anchor vẫn là **cùng một bài**, không phải câu hỏi mới. Mã bài là liên kết dữ liệu khi xây dựng website, không phải yêu cầu học sinh chép mã.
+Một lời giải tốt không chỉ có đáp số. Em hãy ghi điều kiện ngay từ đầu, giải thích vì sao từng phép biến đổi hợp lệ và kiểm kết luận trên đúng miền. Hãy làm trên giấy hoặc ô nhập tự luận trước khi mở **lời giải và thang đánh giá dùng chung**. Một bài gắn nhãn Anchor vẫn là bài đã có, không tạo thêm đề mới.
 
+| Khi luyện đến | Em cần giải thích được |
+|---|---|
+| **M1–M3** | Miền hợp lệ, cách đọc bảng/đồ thị, điểm ghép và cực trị trên miền |
+| **M4** | Điều kiện lượng giác, cơ số, chu kỳ và ý nghĩa mô hình |
+| **M5** | Giới hạn khác giá trị tại điểm và giả thiết liên tục khi kết luận có nghiệm |
+| **M6** | Quy tắc đạo hàm, miền khả vi, độ dốc và phương trình tiếp tuyến |
+| **M7** | Bảng dấu, cực trị, tiệm cận, đơn vị và giới hạn của bài tối ưu |
+
+<!-- AUTHORING_WRITTEN_CANONICAL_REGISTER: 28 source-verified Written IDs and one shared rubric library. Hide this register from learners.
 | Mạch | Item Written gốc | Năng lực trọng tâm | Loại sử dụng |
 |---|---|---|---|
 | G10 | HPT-G10-CHVI-WRI-15-01 | TABLE_GRAPH_READING | Written |
@@ -1673,8 +1682,9 @@ Em chọn bài tự luận theo mục tiêu đang luyện. Viết cách lập lu
 | M7 | THPT-G12-CHI-B04-W02 | G12-B04-FUNCTION_WRITTEN | Written · Anchor label |
 | M7 | THPT-G12-CHI-B05-W01 | G12-B05-FUNCTION_WRITTEN | Written |
 | M7 | THPT-G12-CHI-B05-W02 | G12-B05-FUNCTION_WRITTEN | Written · Anchor label |
+-->
 
-**Lưu ý:** Hai mã G10 bắt đầu bằng HPT- được giữ nguyên theo nguồn lịch sử. Không đổi thành THPT- chỉ để tên trông đồng nhất. Nếu đọc lời giải có chỗ chưa hiểu, quay lại phần Kiến thức cùng mạch, rồi tự làm một câu khác chưa xem trước.
+Nếu một câu tự luận chưa làm được, hãy xác định chính xác chỗ vướng — điều kiện, phương pháp, phép tính hay kết luận — rồi trở lại đoạn Kiến thức liên quan. Sau đó thử một bài khác chưa xem đáp án.
 
 ## Bài luyện bổ sung · Chỉ khi cần đào sâu hoặc khắc phục lỗi
 
@@ -1982,11 +1992,33 @@ Nếu vướng, chọn đúng một điều chưa chắc và quay về **mục K
 <!-- SLM_PART_BEGIN:SELF_CHECK_PUBLIC -->
 # Chuyên đề 1 · Hàm số và đồ thị
 
-## TỰ KIỂM TRA CUỐI CHUYÊN ĐỀ
+## Tự kiểm tra cuối Chuyên đề
 
 Em đã học qua bảy mạch kiến thức và có thể tự luyện theo từng kỹ năng. **Tự kiểm tra** giúp em biết mình có thể vận dụng kiến thức **mà không cần xem gợi ý hay lời giải trong lúc làm bài** hay chưa.
 
-Bộ đề Tự kiểm tra đã được chuẩn bị và thẩm định riêng, gồm **30 câu hỏi** để kiểm tra các năng lực trải suốt Chuyên đề 1. Bộ đề này được **quản lý riêng** với các câu luyện tập công khai; nó chỉ được mở khi hệ thống đã kiểm tra tính độc lập với những câu từng được xem, dịch vụ đánh giá bảo mật đã sẵn sàng và phiên làm bài hợp lệ.
+Em có thể gặp **Tự kiểm tra công khai** để tự đối chiếu những kỹ năng đã luyện; kết quả không tạo mức thành thạo chính thức. Khi có dịch vụ đánh giá độc lập, bộ **30 câu hỏi được quản lý riêng** chỉ mở trong phiên bảo mật hợp lệ và sau khi kiểm soát tính độc lập với những câu đã xem. Không chế độ nào cho xem lời giải trước khi nộp.
+
+### Tự đối chiếu công khai khác gì đánh giá độc lập?
+
+Ở chế độ tự kiểm tra công khai, một số câu có thể đã xuất hiện trong Luyện tập. Em vẫn cần làm bài nghiêm túc, tự rà soát và **nộp bài cuối cùng** trước khi xem đáp án được phép. Những câu ấy giúp em nhận ra lỗ hổng nhưng **không chứng minh mức thành thạo độc lập**.
+
+Đánh giá độc lập dùng câu hỏi chưa công bố trong bài học và phải kiểm tra quyền, phiên và nguồn đề bảo mật. Em không cần tải đề, đáp án hay tài liệu riêng ở ngoài website.
+
+<!-- AUTHORING_Q16_PUBLIC_SELF_CHECK_BLUEPRINT
+ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
+PUBLIC_CANONICAL_ITEM_COUNT: 14
+FINAL_SUBMIT: REQUIRED_BEFORE_ANSWER_FEEDBACK
+OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
+SINGLE_CANONICAL_STEM_KEY_SOLUTION_RUBRIC
+| M1 | `THPT-G10-B15-C01` | `THPT-G10-B15-P01` | PUBLIC_FORMATIVE_NO_MASTERY |
+| M2 | `THPT-G10-B15-P03` | `THPT-G10-B15-P04` | PUBLIC_FORMATIVE_NO_MASTERY |
+| M3 | `THPT-G10-TOP-FUNC-P03` | `THPT-G10-TOP-FUNC-P04` | PUBLIC_FORMATIVE_NO_MASTERY |
+| M4 | `THPT-G11-B03-P04` | `THPT-G11-CHVI-B20-P01` | PUBLIC_FORMATIVE_NO_MASTERY |
+| M5 | `THPT-G11-CHV-B16-P06` | `THPT-G11-CHV-B17-P07` | PUBLIC_FORMATIVE_NO_MASTERY |
+| M6 | `THPT-G11-CHIX-B31-P01` | `THPT-G11-CHIX-B31-P05` | PUBLIC_FORMATIVE_NO_MASTERY |
+| M7 | `THPT-G12-CHI-B01-P02` | `THPT-G12-CHI-B01-C04` | PUBLIC_FORMATIVE_NO_MASTERY |
+RELEASE owns canonical item rendering, safe submit and actual browser QA. This is NOT an operational official assessment or private RD1 material.
+-->
 
 ### Những gì em sẽ cần vận dụng
 
@@ -2004,7 +2036,7 @@ Bộ đề Tự kiểm tra đã được chuẩn bị và thẩm định riêng,
 
 ### Trước khi bắt đầu
 
-Hãy chuẩn bị giấy nháp nếu cần. Em có thể xem lại **Kiến thức** và **Luyện tập** trước khi mở bài kiểm tra; nhưng **khi đang thực hiện phiên Tự kiểm tra chính thức**, em sẽ không nhận gợi ý, lời giải, phản hồi đúng/sai hoặc hỗ trợ từ AI Tutor cho câu hỏi đang làm.
+Hãy chuẩn bị giấy nháp nếu cần. Em có thể xem lại **Kiến thức** và **Luyện tập** trước khi mở bài kiểm tra; nhưng **khi đang thực hiện bất kỳ phiên Tự kiểm tra nào**, em sẽ không nhận gợi ý, lời giải, phản hồi đúng/sai hoặc hỗ trợ từ AI Tutor cho câu hỏi đang làm.
 
 Bài có thể có những câu cần trình bày lập luận. Đừng chỉ ghi một kết quả cuối cùng nếu đề yêu cầu giải thích; hãy nêu điều kiện, phương pháp và cách kiểm tra kết quả.
 
@@ -2012,7 +2044,7 @@ Bài có thể có những câu cần trình bày lập luận. Đừng chỉ gh
 
 Mỗi câu cần được xử lý bằng suy luận của chính em. Em có thể rà soát và điều chỉnh phần trả lời **trước khi xác nhận nộp bài cuối cùng**, trong phạm vi chức năng hệ thống cho phép.
 
-Màn hình chỉ được cho em biết các thao tác kỹ thuật cần thiết, chẳng hạn nội dung đã được lưu hoặc còn câu chưa trả lời. **Không hiển thị điểm, đáp án, lời giải, dấu hiệu đúng/sai, gợi ý, phản hồi học thuật hoặc AI Tutor trước Final Submit.** Nếu kết nối bị ngắt, hãy kiểm tra trạng thái phiên từ hệ thống; không coi một thao tác trên trình duyệt là đã lưu thành công khi chưa có xác nhận.
+Màn hình chỉ được cho em biết các thao tác kỹ thuật cần thiết, chẳng hạn nội dung đã được lưu hoặc còn câu chưa trả lời. **Không hiển thị điểm, đáp án, lời giải, dấu hiệu đúng/sai, gợi ý, phản hồi học thuật hoặc AI Tutor trước Final Submit**, kể cả khi làm bài tự đối chiếu công khai. Nếu kết nối bị ngắt, hãy kiểm tra trạng thái phiên từ hệ thống; không coi một thao tác trên trình duyệt là đã lưu thành công khi chưa có xác nhận.
 
 ### Khi đã làm xong
 
@@ -2022,15 +2054,15 @@ Chỉ khi hệ thống xác nhận nộp thành công, em mới nhận thông b�
 
 ### Sau Tự kiểm tra
 
-Hãy dùng những nhận xét đã được xác nhận để trở lại đúng nội dung còn chưa vững: **Kiến thức → Luyện tập → Tự kiểm tra**. Việc mở lời giải ở phần Luyện tập hoặc tự chấm một bài Written **không tự tạo kết quả Skill Mastery chính thức**.
+Hãy dùng những nhận xét đã được xác nhận để trở lại đúng nội dung còn chưa vững: **Kiến thức → Luyện tập → Tự kiểm tra**. Việc mở lời giải ở phần Luyện tập hoặc tự chấm một bài Written **không tự tạo kết quả thành thạo chính thức**.
 
 ### Nếu bài Tự kiểm tra chính thức chưa khả dụng
 
-**Thông báo dự phòng:** “Bài Tự kiểm tra cuối Chuyên đề hiện chưa thể mở ở chế độ đánh giá chính thức. Em vẫn có thể học Kiến thức và luyện các bài công khai. Những hoạt động tự đối chiếu không được ghi là kết quả Tự kiểm tra chính thức.”
+**Thông báo dự phòng:** “Chế độ đánh giá độc lập chưa khả dụng. Em có thể học Kiến thức và Luyện tập; nếu Tự kiểm tra công khai đã được bật, hãy dùng để tự đối chiếu sau khi nộp, không coi đó là điểm chính thức.”
 
-*Thông báo dự phòng chỉ xuất hiện khi dịch vụ đánh giá bảo mật chưa hoạt động hoặc không cấp được phiên hợp lệ. Không hiển thị nút bắt đầu giả, không tự thay bằng câu Practice/đề demo và không khẳng định hệ thống đã chấm điểm.*
+*Nếu cả hai chế độ chưa được tích hợp hoặc chưa cấp phiên hợp lệ, hiển thị thông báo rõ ràng và cho học sinh tiếp tục học Kiến thức/Luyện tập. Không hiển thị nút bắt đầu giả, tự chấm client hay khẳng định đã phát hành tính năng.*
 
 ---
 
-*Chỉ dẫn này là nội dung học sinh có thể nhìn thấy khi được tích hợp hợp lệ. Bộ 30 câu hỏi, đáp án, hướng dẫn giải, rubric và định danh câu kín **không nằm trong tệp công khai này**; chúng chỉ được sử dụng qua cơ chế bảo mật được phép. Trang AUTHORING chưa tự khẳng định tính năng Tự kiểm tra đã hoạt động.*
+*Đây là nội dung học sinh được xem khi tích hợp hợp lệ. Website phải lấy câu hỏi từ đúng nguồn được phép, khóa lời giải tới sau Final Submit và xác nhận nộp thực sự. Nội dung AUTHORING này chưa có nghĩa chức năng Tự kiểm tra đã hoạt động.*
 <!-- SLM_PART_END:SELF_CHECK_PUBLIC -->
