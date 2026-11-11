@@ -20,7 +20,7 @@ S1_RECEIPT: G10 Toán KNTT tập 1 ChV B12 SGK printed73–77/SBT72–73, B13 SG
 OUTCOME_AUDIT: 39/39 (14 G10,13 G11,12 G12), each has one of 13 pedagogy modules, dedicated per-outcome concept/condition explanation, D6 path and ≥2 PUBLIC canonical item refs (exact 114 total).
 MATH_VERIFICATION: Original G10 27/27 manually recomputed source item keys/solutions including three Written; 7/7 author-new item keys/solutions recomputed; G11 32/32 and G12 48/48 exactly matched unique original source heading with stem/answer/solution and written rubric presence; source G11/12 math covered only by old snapshot-scoped independent PASS, no new reviewer claim; 13 original first-try arithmetic, two SVG numeric models verified.
 PED_VERIFICATION: 13 student-first knowledge modules, 39 outcome-specific why/method/limit explanations, 13 first tries with deliberate reveal, 13 D6 routes, two SVG with title/desc and figure reading instructions. Three outer pages only, no Topic Core. Per-outcome instructional content reviewed for meaningful self-sufficiency and actual method constraints (rather than formula count).
-CANONICAL_Q15: 107 old source IDs exact three blobs (G10 27 incl 3 Written, G11 32 incl 4 Written, G12 48 incl 12 Written) + 7 new (G10 5/G11 2), total 114 unique. Five-source? **No**: three frozen banks plus one new extension; index only points, does not duplicate source. 19 original Written IDs (3+4+12), Anchor tag not duplicate. Nine voluntary public self-check placements reuse existing IDs.
+CANONICAL_Q15: 107 old source IDs exact three blobs (G10 27 incl 3 Written, G11 32 incl 4 Written, G12 48 incl 12 Written) + 7 new (G10 5/G11 2), total 114 unique. Ba bank SGK gốc + một file extension mới; index chỉ dẫn tham chiếu, không tạo nguồn thứ năm hoặc bản sao. 19 original Written IDs (3+4+12), Anchor tag not duplicate. Nine voluntary public self-check placements reuse existing IDs.
 ASSESSMENT_Q16: PUBLIC CLIENT_SELF_CHECK_NO_MASTERY only; private RD1 imported=0; historical original Chapter RD1 held-out not copied, no answer/key/rubric private anywhere in Topic source; public user can compare after Final Submit but never independent Official Readiness or Skill Mastery.
 P0: 0
 P1: 0
@@ -51,7 +51,7 @@ REVIEW_METHOD: R01 author self audit v3.0.1, source-locked on Git blob 4f4dc4abc
 | Q17 | Three independent Topic pages, no Core, SGK reused via source rather than mandatory cross-link |
 | Q18 | Source 4f4dc4abcf671479fe0650595e9b67f745738b9a; one author QA receipt; source-index/extension/SVG checks, reviewer old snapshots not falsely upgraded |
 
-**A1–A7 cross-check:** A1 source+SHA, A2 three historical source receipts with explicit limitations, A3 Q18 author self-QA, A4 39/114 ID/outcome matrix, A5 D1–D6/PED1–PED6/two visual/five? **19 Written exactly**, A6 old/new math QA and privacy checks, A7 protected bank not imported. No independent reviewer verdict invented.
+**A1–A7 cross-check:** A1 source+SHA, A2 three historical source receipts with explicit limitations, A3 Q18 author self-QA, A4 39/114 ID/outcome matrix, A5 D1–D6/PED1–PED6/hai hình SVG/**19 Written đúng nguồn**, A6 old/new math QA and privacy checks, A7 protected bank not imported. No independent reviewer verdict invented.
 
 ## 27/27 original G10 canonical items — substantive mathematical answer verification
 
