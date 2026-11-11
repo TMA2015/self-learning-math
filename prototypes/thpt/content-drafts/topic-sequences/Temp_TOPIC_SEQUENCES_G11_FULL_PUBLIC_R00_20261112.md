@@ -179,7 +179,91 @@ Hành trình gồm 9 mô-đun: định nghĩa dãy số, truy hồi/đơn điệ
 
         **D6:** Viết từng phép nhân q âm và kiểm (u_2>u_1) rồi (u_3>u_2); đừng dựa vào chữ “cấp số nhân” để đoán tăng. Tự quay lại bài canonical cùng outcome, không ghi Mastery.
 
-<!-- MODULES_INSERT -->
+=== "III · Tổng CSN, ứng dụng và so sánh"
+
+    === "07. Ba số hạng và tổng hữu hạn cấp số nhân"
+
+        #### M07 · Ba số hạng và tổng hữu hạn cấp số nhân
+
+        **WHY:** Dãy tăng theo tỉ lệ không có hiệu không đổi, vì vậy công thức tổng CSC không phù hợp.
+
+        **MEANING:** Ba số hạng CSN liên tiếp \(a,b,c\) thỏa \(b=qa,c=qb\), nên \(b^2=ac\). Tuy nhiên đây là điều kiện cần; vẫn phải kiểm \(u_{n+1}=qu_n\), nhất là khi có số 0.
+
+        **DERIVATION:** \(S_n=u_1(1+q+\cdots+q^{n-1})\). Nhân q rồi trừ: \((1-q)S_n=u_1(1-q^n)\). Với \(q\ne1\), \(S_n=u_1(1-q^n)/(1-q)\); **riêng q=1**, \(S_n=nu_1\). Nếu q âm, giữ dấu của từng lũy thừa; n là số số hạng đầu.
+
+        **WORKED EXAMPLE:** u₁=3,q=−2 cho 3,−6,12,−24. Tổng bốn số bằng −15. Công thức \(3[1-(-2)^4]/[1-(-2)]=-15\), phù hợp cộng trực tiếp.
+
+        **WHEN NOT:** Không chia cho 1−q tại q=1; không áp tổng vô hạn nếu không có điều kiện hội tụ.
+
+        **Hướng dẫn riêng theo outcome:**
+
+        - **G11-B07-GP-THREE-TERMS:** b²=ac là hệ quả, chưa đủ khi chưa kiểm định nghĩa và số 0.
+
+        - **G11-B07-GP-SUM:** q≠1 dùng công thức hữu hạn; q=1 dùng n u₁; dấu q âm phải giữ.
+
+        **Tự thử trước khi đối chiếu M07-TRY01:** Với CSN u₁=5,q=2, tìm u₄,S₄. Nếu cùng u₁ nhưng q=1 thì S₄ bằng bao nhiêu?
+
+        <details markdown="1"><summary>Đối chiếu — chỉ mở sau khi tự thử</summary>
+
+        u₄=5×2³=40; S₄=5(2⁴−1)/(2−1)=75. Với q=1, S₄=4×5=20.
+
+        </details>
+
+        **D6:** Liệt kê 5,10,20,40 để sửa sai lệch số mũ và dùng nhánh riêng q=1. Luyện thêm một câu canonical đúng outcome; xem lời giải không ghi Mastery.
+
+    === "08. Lãi kép và giới hạn của mô hình nhân"
+
+        #### M08 · Lãi kép và giới hạn của mô hình nhân
+
+        **WHY:** Khi lãi được nhập vào gốc, số tiền kỳ sau nhân với cùng một hệ số nếu lãi suất không đổi.
+
+        **MODEL:** Với khoản tiền ban đầu P tại thời điểm 0, r là lãi suất mỗi kỳ, không nộp/rút thêm, phí hoặc thuế: \(A_0=P,\ A_{n+1}=(1+r)A_n\), nên sau n kỳ \(A_n=P(1+r)^n\). Đếm đúng n **số kỳ**; không nhầm chỉ số \(A_0\) với số hạng \(u_1\) của các bài trước.
+
+        **WORKED EXAMPLE:** P=10.000.000 đồng, r=1%/tháng; 3 tháng: \(A_3=10\,000\,000(1.01)^3=10\,303\,010\) đồng, vì mỗi tháng nhân 1.01.
+
+        **WHEN NOT:** Nếu cuối mỗi kỳ thêm D, \(A_{n+1}=(1+r)A_n+D\) không là CSN thuần nữa. Nếu r thay đổi, không dùng một q cố định. Mô hình không là cam kết thị trường.
+
+        **Hướng dẫn riêng theo outcome:**
+
+        - **G11-B07-GP-APPLICATION:** Lãi kép theo kỳ chỉ là CSN thuần khi không có khoản nộp/rút và r cố định.
+
+        **Tự thử trước khi đối chiếu M08-TRY01:** 2.000.000 đồng tăng 5% mỗi kỳ không nộp/rút. Sau 2 kỳ là bao nhiêu? Nếu nộp thêm 100.000 cuối mỗi kỳ còn dùng công thức cũ không?
+
+        <details markdown="1"><summary>Đối chiếu — chỉ mở sau khi tự thử</summary>
+
+        A₂=2.000.000×1.05²=2.205.000 đồng. Có khoản nộp thêm thì truy hồi Aₙ₊₁=1.05Aₙ+100.000; không dùng công thức CSN thuần ban đầu.
+
+        </details>
+
+        **D6:** Viết A₀,A₁,A₂ để đếm đúng kỳ; có khoản thêm cần mô hình truy hồi mới. Luyện thêm một câu canonical đúng outcome; xem lời giải không ghi Mastery.
+
+    === "09. So sánh bản chất CSC và CSN"
+
+        #### M09 · So sánh bản chất CSC và CSN
+
+        **WHY:** Hai dãy có số đầu giống nhau có thể khác biệt rất lớn; chọn công thức từ bản chất hiệu không đổi hay tỉ số không đổi.
+
+        **MEANING:** CSC có \(u_{n+1}-u_n=d\) cố định; CSN thỏa \(u_{n+1}=qu_n\) với q cố định, phép chia tỉ số chỉ khi \(u_n\ne0\). Dãy hằng \(u_n\equiv5\) vừa CSC d=0 vừa CSN q=1. Dãy \(3,-3,3,-3,\ldots\) là CSN q=−1 nhưng không CSC; với dãy toàn 0, phép chia 0/0 không xác định.
+
+        **WORKED EXAMPLE:** A từ 4 cộng 3: 4,7,10,13,16, tổng 50. B từ 4 nhân 2: 4,8,16,32,64, tổng 124. Các điểm trên SVG là rời rạc tại n nguyên, không gán giá trị cho n=2.5. ADD01 kiểm quy luật và tổng; ADD02 kiểm ngoại lệ hằng và q âm.
+
+        **LIMIT:** Ba số đầu tình cờ giống một CSC/CSN không đủ để chứng minh toàn dãy vô hạn thuộc loại đó khi không có giả thiết mọi n.
+
+        **Hướng dẫn riêng theo outcome:**
+
+        - **G11-CHII-STRUCTURAL-COMPARISON:** Chọn hiệu hoặc tỉ số, nhận diện ngoại lệ dãy hằng và công bội âm.
+
+        **Tự thử trước khi đối chiếu M09-TRY01:** A bắt đầu 3, mỗi bước cộng 3; B bắt đầu 3, mỗi bước nhân 3. Tìm số thứ tư và giải thích vì sao B không CSC.
+
+        <details markdown="1"><summary>Đối chiếu — chỉ mở sau khi tự thử</summary>
+
+        A: 3,6,9,12 ⇒ a₄=12; B: 3,9,27,81 ⇒ b₄=81. Hiệu B là 6,18,54 không cố định.
+
+        </details>
+
+        **D6:** Nếu nhầm cả hai là CSC vì đều tăng, lập bảng hiệu/tỉ số. Nếu là dãy hằng, kiểm cả d=0 và q=1. Luyện thêm một câu canonical đúng outcome; xem lời giải không ghi Mastery.
+
+
 
 ![Dãy số truy hồi từng bước](assets/Temp_TOPIC_SEQ_RECURSION_R00_20261112.svg)
 
