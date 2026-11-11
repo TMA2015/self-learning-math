@@ -7,11 +7,11 @@ for(const [lesson,expectedHash,expectedSections] of [[3,"ceeb82fb",7],[4,"520176
  const file="docs/thpt-preview/sgk/lop-11/chuong-i/bai-"+lesson+".md";
  const text=fs.readFileSync(file,"utf8");
   if(text.includes('=== "Khám phá kiến thức"')){
-    const names=[...text.matchAll(/^===\\s*"([^"]+)"\\s*$/gm)].map(x=>x[1]);
+    const names=[...text.matchAll(/^===\s*"([^"]+)"\s*$/gm)].map(x=>x[1]);
     assert.deepEqual(names,["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
       file+": incorrect level-1 Knowledge layout");
     // Historical byte/FNV parity is replayable only on original snapshot.
-    assert(text.includes("\\\\(")||text.includes("\\\\["),file+": missing math expressions");
+    assert(text.includes("\\(")||text.includes("\\["),file+": missing math expressions");
     continue;
   }
  const a=text.indexOf("## 1. Kiến thức SGK"),b=text.indexOf("## 2. Ví dụ",a);
