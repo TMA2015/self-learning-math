@@ -22,22 +22,47 @@ const cases=[
        "Never display D1.x audit labels as lesson headings");
      const figures=page.locator(".thpt-r4-probability-figure img");
      assert(await figures.count()>=1,"Missing original reviewed SVG figure");
-     // SVG figures are lazy-loaded. Scroll each actual figure into view and
-     // verify that its image decodes; don't mistake an off-screen lazy image for a broken asset.
-     for(let idx=0;idx<await figures.count();idx++){
-      const figure=figures.nth(idx);
-      await figure.scrollIntoViewIfNeeded();
-      await figure.evaluate(async img=>img.decode());
-      assert(await figure.evaluate(img=>img.complete&&img.naturalWidth>0),
-        "SVG asset failed to render B"+item.lesson+" figure "+idx+" @"+width);
+     const modelB=page.locator(".md-content__inner .tabbed-set").first();
+     const labels=modelB.locator(".tabbed-labels > label");
+     const isModelB=await modelB.count()>0;
+     if(isModelB){
+       const actual=(await labels.allInnerTexts()).map(s=>s.trim());
+       assert.deepEqual(actual,["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
+         "G10 B"+item.lesson+" exact Model B learner tabs");
+       assert.equal(await modelB.locator(".tabbed-content > .tabbed-block").count(),4,
+         "G10 B"+item.lesson+" four independent lesson panels");
      }
-     const status=await page.evaluate(()=>{
-      const d=document.documentElement;
-      const images=[...document.querySelectorAll(".thpt-r4-probability-figure img")];
-      return {overflow:d.scrollWidth-window.innerWidth,figures:images.map(i=>({img:i.getBoundingClientRect().width,parent:i.parentElement.getBoundingClientRect().width}))};
-     });
-     assert(status.overflow<=12,"Page horizontal overflow B"+item.lesson+" at "+width+": "+status.overflow);
-     assert(status.figures.every(x=>x.img<=x.parent+2),"Figure too wide B"+item.lesson+" at "+width);
+     // In Model B a mathematically correct original SVG can live inside a
+     // deliberately HIDDEN tab. Open the actual owning tab before checking
+     // that the image becomes visible, loads, decodes, and fits. Never skip it.
+     const measurements=[];
+     for(let idx=0;idx<await figures.count();idx++){
+       const figure=figures.nth(idx);
+       if(isModelB){
+         const panel=await figure.evaluate(img=>{
+           const tabset=img.closest(".tabbed-set"),block=img.closest(".tabbed-block");
+           if(!tabset||!block)return -1;
+           return [...tabset.querySelectorAll(":scope > .tabbed-content > .tabbed-block")].indexOf(block);
+         });
+         assert(panel>=0&&panel<4,"B"+item.lesson+" figure "+idx+" must belong to one of four Model B panels");
+         await labels.nth(panel).click();
+       }
+       assert(await figure.isVisible(),"B"+item.lesson+" original SVG figure "+idx+" must be visible in selected tab");
+       await figure.scrollIntoViewIfNeeded();
+       await figure.evaluate(async img=>{if(img.decode)await img.decode()});
+       const dims=await figure.evaluate(img=>({
+         loaded:img.complete&&img.naturalWidth>0,
+         img:img.getBoundingClientRect().width,
+         parent:img.parentElement.getBoundingClientRect().width
+       }));
+       assert(dims.loaded,"SVG asset failed to render B"+item.lesson+" figure "+idx+" @"+width);
+       assert(dims.img>0&&dims.parent>0&&dims.img<=dims.parent+2,
+         "Original SVG figure "+idx+" too wide or invisible B"+item.lesson+" @"+width);
+       measurements.push(dims);
+     }
+     const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth);
+     assert(overflow<=12,"Page horizontal overflow B"+item.lesson+" at "+width+": "+overflow);
+     assert.equal(measurements.length,await figures.count(),"Every source-locked SVG must be physically checked");
     }
    }finally{await page.close()}
   }
