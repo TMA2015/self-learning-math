@@ -31,6 +31,15 @@ const math=s=>[...s.matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]|\$([^$]+)\$/
   .map(x=>(x[1]??x[2]??x[3]).trim());
 for(const check of checks){
   const src=fs.readFileSync(join(root,check.file),"utf8");
+  // Old math-count/FNV locks protect the historical source only. When a
+  // Q18-evidenced Model B candidate arrives, check the real learner structure.
+  if(src.includes('=== "Khám phá kiến thức"')){
+    const names=[...src.matchAll(/^===\\s*"([^"]+)"\\s*$/gm)].map(x=>x[1]);
+    assert.deepEqual(names,["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
+      check.file+": invalid Model B 4-tab structure");
+    assert(!src.includes("REVIEW_RECEIPT:"),check.file+": internal metadata leaked");
+    continue;
+  }
   const start=src.indexOf("## 1. Kiến thức SGK");
   const end=src.indexOf("## 2. Ví dụ",start);
   assert(start>=0&&end>start,check.file+": knowledge section missing");
