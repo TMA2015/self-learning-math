@@ -50,7 +50,7 @@ function verifyBlob(value, file) {
 // Version follows the ONE actual normative source, not a hand-maintained
 // release-gate list. Grandfather ONLY previously effective historical versions.
 // Governance drafts (even when present in a PR checkout) are NOT active modes.
-const historicalVersions=["1.0.0","1.1.0","1.2.0"];
+const historicalVersions=["1.0.0","1.1.0","1.2.0","2.0.0"];
 function acceptedStandardVersions(overrideText) {
   const raw=overrideText??fs.readFileSync(path.join(root,"prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md"),"utf8");
   const id=raw.match(/^\*\*STANDARD_ID:\*\*\s*\x60([A-Za-z0-9-]+)\x60/m);
@@ -60,6 +60,39 @@ function acceptedStandardVersions(overrideText) {
   assert(version&&status,"Canonical standard version/status missing");
   const approved=/OWNER_APPROVED|EFFECTIVE/.test(status[1])&&!/GOVERNANCE_PROPOSAL|DRAFT|PENDING_OWNER/.test(status[1]);
   return [...new Set([...historicalVersions,...(approved?[version[1]]:[])])];
+}
+
+
+// Owner decision 11/11/2026: a signed AUTHOR_SELF_VERIFIED Topic/SGK source
+// is audited via the SAME Q18; never call it an independent reviewer PASS.
+// Old packets without Q18_VERIFICATION_MODE retain their original review path.
+function verifyQ18Mode(data,handoff,receipt,sourceBlob,lane) {
+  const mode=data.includes("Q18_VERIFICATION_MODE: ")?
+    field(data,"Q18_VERIFICATION_MODE"):"INDEPENDENT_REVIEW";
+  assert(["INDEPENDENT_REVIEW","AUTHOR_SELF_VERIFIED"].includes(mode),"Unknown Q18 verification mode");
+  const self=mode==="AUTHOR_SELF_VERIFIED";
+  const state=self?"SELF_VERIFIED_ON_LOCKED_SNAPSHOT":"PASS_ON_LOCKED_SNAPSHOT";
+  assert.equal(field(data,"ACADEMIC_VERDICT"),state,"Wrong academic mode/verdict pairing");
+  assert.equal(field(data,"PEDAGOGICAL_VERDICT"),state,"Wrong PED mode/verdict pairing");
+  if(self) {
+    assert(["TOPIC","SGK_CHAPTER"].includes(lane),"Self-QA mode limited to SGK/Topic academic material");
+    assert.equal(field(data,"STANDARD_VERSION"),"3.0.0","Self QA requires effective v3.0 standard");
+    assert.equal(field(handoff,"Q18_VERIFICATION_MODE"),mode,"Self QA mode mismatch");
+    assert.equal(field(handoff,"ACADEMIC_VERDICT"),"SELF_VERIFIED","Never impersonate independent Academic PASS");
+    assert.equal(field(handoff,"PEDAGOGICAL_VERDICT"),"SELF_VERIFIED","Never impersonate independent PED PASS");
+    const required=[
+      "AUTHOR_SELF_QA_RECEIPT","SOURCE_BLOB: "+sourceBlob,
+      "STANDARD_VERSION: 3.0.0","S1_RECEIPT:","OUTCOME_AUDIT:",
+      "MATH_VERIFICATION:","PED_VERIFICATION:","CANONICAL_Q15:",
+      "ASSESSMENT_Q16:","P0: 0","P1: 0","AUTHOR_SIGNOFF:"
+    ];
+    for(const token of required) assert(receipt.includes(token),"Self QA evidence missing: "+token);
+    assert(!/ACADEMIC_REVIEWER_PASS:\s*(YES|PASS)/i.test(receipt),
+      "Self QA must not claim independent reviewer PASS");
+    assert(!/PED_REVIEWER_PASS:\s*(YES|PASS)/i.test(receipt),
+      "Self QA must not claim independent PED reviewer PASS");
+  }
+  return mode;
 }
 
 // One normative rubric for both branches. Historical V2 packets are grandfathered;
@@ -102,7 +135,11 @@ function verifyOneStandardEvidence(data, handoff, initialHandoff) {
     for(const cell of cells.slice(1)) assert(cell.length>4 &&
       !(compact?/REPLACE_|CHUA_CO|TBD/i:/REPLACE_|PENDING|CHUA_CO|TBD/i).test(cell),
       "Placeholder or empty Q evidence "+expected[i]);
-    if(compact) assert(/REVIEW_PASS/i.test(cells[2]),"Missing signed scoped review "+expected[i]);
+    if(compact) {
+      const mode=data.includes("Q18_VERIFICATION_MODE: ")?field(data,"Q18_VERIFICATION_MODE"):"INDEPENDENT_REVIEW";
+      const signal=mode==="AUTHOR_SELF_VERIFIED"?/AUTHOR_QA_PASS|SELF_QA_PASS/i:/REVIEW_PASS/i;
+      assert(signal.test(cells[2]),"Missing signed scoped Q18 evidence "+expected[i]);
+    }
   });
 }
 
@@ -223,8 +260,6 @@ function verifyReadyManifest(rel, initialHandoff) {
   if (initialHandoff) assert.equal(state, "CONTENT_READY", "New handoff cannot skip R gates");
   const lane = verifyLaneScope(data);
   assert.equal(field(data, "ASSESSMENT_MODE"), "CLIENT_SELF_CHECK_NO_MASTERY");
-  assert.equal(field(data, "ACADEMIC_VERDICT"), "PASS_ON_LOCKED_SNAPSHOT");
-  assert.equal(field(data, "PEDAGOGICAL_VERDICT"), "PASS_ON_LOCKED_SNAPSHOT");
   assert.equal(field(data, "BLOCKERS"), "NONE");
 
   const sourceRel = field(data, "ACADEMIC_SOURCE_PATH");
@@ -246,13 +281,16 @@ function verifyReadyManifest(rel, initialHandoff) {
   }
   const handoffRel = field(data, "AUTHOR_HANDOFF");
   const handoff = fs.readFileSync(safeRepoFile(handoffRel, ["prototypes/thpt/release-handoffs/"]), "utf8");
+  const q18mode=verifyQ18Mode(data,handoff,reviewText,sourceBlob,lane);
   verifyOneStandardEvidence(data, handoff, initialHandoff);
   if (lane === "TOPIC") verifyTopicSafety(data, handoff);
   else if (lane !== "SGK_CHAPTER") verifySupplementSafety(data, handoff, lane);
   for (const [k,v] of [
     ["PACKET_ID", id], ["ACADEMIC_SOURCE_BLOB", sourceBlob],
-    ["REVIEW_RECEIPT_BLOB", reviewBlob], ["ACADEMIC_VERDICT", "PASS"],
-    ["PEDAGOGICAL_VERDICT", "PASS"], ["BLOCKERS", "NONE"],
+    ["REVIEW_RECEIPT_BLOB", reviewBlob],
+    ["ACADEMIC_VERDICT", q18mode==="AUTHOR_SELF_VERIFIED"?"SELF_VERIFIED":"PASS"],
+    ["PEDAGOGICAL_VERDICT", q18mode==="AUTHOR_SELF_VERIFIED"?"SELF_VERIFIED":"PASS"],
+    ["BLOCKERS", "NONE"],
     ["ASSESSMENT_MODE", "CLIENT_SELF_CHECK_NO_MASTERY"],
     ["RELEASE_SCOPE", field(data, "RELEASE_SCOPE")]
   ]) assert.equal(field(handoff, k), v, "Handoff mismatch " + k);
@@ -306,11 +344,11 @@ function selfTest() {
   assert.equal(verifyLaneScope("LEARNING_PATH: SGK_CHAPTER\nRELEASE_SCOPE: FULL_LEARNING_PATH"), "SGK_CHAPTER");
   const norm=(v,status)=>"**STANDARD_ID:** \x60SLM-THPT-QUALITY-ONE\x60\n**VERSION:** \x60"+v+"\x60\n**STATUS:** \x60"+status+"\x60";
   assert(acceptedStandardVersions().includes("1.2.0"),"Current normative v1.2.0 must work");
-  assert(!acceptedStandardVersions(norm("2.0.0","GOVERNANCE_PROPOSAL_OWNER_REVIEW_PENDING")).includes("2.0.0"),
-    "Draft Q18 version must NOT become a release version");
-  assert(acceptedStandardVersions(norm("2.0.0","OWNER_APPROVED_EFFECTIVE")).includes("2.0.0"),
+  assert(!acceptedStandardVersions(norm("3.0.0","GOVERNANCE_PROPOSAL_OWNER_REVIEW_PENDING")).includes("3.0.0"),
+    "Draft v3 Q18 version must NOT become a release version");
+  assert(acceptedStandardVersions(norm("3.0.0","OWNER_APPROVED_EFFECTIVE")).includes("3.0.0"),
     "Approved future single standard must not need a stale V2 allowlist update");
-  assert.throws(()=>acceptedStandardVersions(norm("2.0.0","OWNER_APPROVED_EFFECTIVE").replace("SLM-THPT-QUALITY-ONE","DIFFERENT-STANDARD")));
+  assert.throws(()=>acceptedStandardVersions(norm("3.0.0","OWNER_APPROVED_EFFECTIVE").replace("SLM-THPT-QUALITY-ONE","DIFFERENT-STANDARD")));
   assert.equal(verifyLaneScope("LEARNING_PATH: TOPIC\nRELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH"), "TOPIC");
   assert.throws(() => verifyLaneScope("LEARNING_PATH: TOPIC\nRELEASE_SCOPE: FULL_LEARNING_PATH"));
   assert.throws(() => verifyLaneScope("LEARNING_PATH: SGK_CHAPTER\nRELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH"));
@@ -341,6 +379,20 @@ function selfTest() {
   assert.throws(()=>verifyOneStandardEvidence(
     "STANDARD_ID: SLM-THPT-QUALITY-ONE\nSTANDARD_VERSION: 1.1.0\nQUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE",
     "STANDARD_ID: SLM-THPT-QUALITY-ONE\nSTANDARD_VERSION: 1.0.0\n"+bad,true));
+  const selfData="LEARNING_PATH: TOPIC\nSTANDARD_VERSION: 3.0.0\nQ18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED\nACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT\nPEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT";
+  const selfHandoff="Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED\nACADEMIC_VERDICT: SELF_VERIFIED\nPEDAGOGICAL_VERDICT: SELF_VERIFIED";
+  const sha="a".repeat(40);
+  const evidence=["AUTHOR_SELF_QA_RECEIPT","SOURCE_BLOB: "+sha,
+    "STANDARD_VERSION: 3.0.0","S1_RECEIPT: checked book",
+    "OUTCOME_AUDIT: all items assessed","MATH_VERIFICATION: solved independently",
+    "PED_VERIFICATION: student flow audited","CANONICAL_Q15: deduplicated",
+    "ASSESSMENT_Q16: private exam guarded","P0: 0","P1: 0","AUTHOR_SIGNOFF: accountable author"].join("\n");
+  assert.equal(verifyQ18Mode(selfData,selfHandoff,evidence,sha,"TOPIC"),"AUTHOR_SELF_VERIFIED");
+  assert.throws(()=>verifyQ18Mode(selfData,selfHandoff,evidence.replace("P1: 0","P1: UNKNOWN"),sha,"TOPIC"));
+  assert.throws(()=>verifyQ18Mode(selfData,selfHandoff,evidence.replace("SOURCE_BLOB: "+sha,"SOURCE_BLOB: "+"b".repeat(40)),sha,"TOPIC"));
+  assert.throws(()=>verifyQ18Mode(selfData.replace("SELF_VERIFIED_ON_LOCKED_SNAPSHOT","PASS_ON_LOCKED_SNAPSHOT"),selfHandoff,evidence,sha,"TOPIC"));
+  assert.throws(()=>verifyQ18Mode(selfData,selfHandoff,evidence+"\nACADEMIC_REVIEWER_PASS: YES",sha,"TOPIC"));
+  assert.throws(()=>verifyQ18Mode(selfData.replace("Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED","Q18_VERIFICATION_MODE: BYPASS"),selfHandoff,evidence,sha,"TOPIC"));
   const topicMeta="ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY\nOFFICIAL_READINESS: NOT_CLAIMED\nMASTERY_ACTIVATION: NO\nRELEASE_AUTHORIZATION: NO\nPRIVATE_RD1_COUNT: 30";
   const topicHandoff="LEARNING_PATH: TOPIC\nRELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH\nASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY\nMASTERY_ACTIVATION: NO\nRELEASE_AUTHORIZATION: NO\nPRIVATE_RD1_COUNT: 30\n## PRIVATE_RD1_CUSTODY_METADATA\nRD1_PRIVATE_COUNT = 30, PRIVATE_OWNER_HELD = YES, PRIVATE_GIT_CONTENT = NONE, PRIVATE_BANK_SHA256 = " + "a".repeat(64);
   assert.doesNotThrow(() => verifyTopicSafety(topicMeta, topicHandoff));
@@ -361,7 +413,7 @@ function selfTest() {
   assert.throws(()=>verifyTopicPlacementMatrix(compactTopicMatrix+"\n"+compactTopicMatrix.split("\n")[2],["ITEM-A","ITEM-B"],["O1","O2"]));
   const evidence12="## QUALITY_Q01_Q18_EVIDENCE\nTHPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md\n"+Array.from({length:18},(_,i)=>"| Q"+String(i+1).padStart(2,"0")+" | outcome proof | author evidence | independent receipt | rendered check |").join("\n");
   assert.doesNotThrow(() => verifyOneStandardEvidence("STANDARD_ID: SLM-THPT-QUALITY-ONE\nSTANDARD_VERSION: 1.2.0\nQUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE","STANDARD_ID: SLM-THPT-QUALITY-ONE\nSTANDARD_VERSION: 1.2.0\n"+evidence12,true));
-  console.log("PASS handoff V2 parser: SGK, TOPIC multi-placement, supplements; version 1.2, Q16 private custody, negative pairing/safety checks");
+  console.log("PASS handoff V2 parser: SGK, Topic, supplements, v3 self-QA and negative Q15/Q16 checks");
 }
 if (process.argv.includes("--self-test")) selfTest();
 else {
