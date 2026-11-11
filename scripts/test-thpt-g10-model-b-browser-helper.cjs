@@ -6,7 +6,7 @@ const fs=require("node:fs");
 const crypto=require("node:crypto");
 const {expectedG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
-async function verifyModelBLesson(page,{n,chapter,tries,helps,images}){
+async function verifyModelBLesson(page,{n,chapter,tries,helps,images,questions=tries}){
  const article=page.locator("article.md-content__inner");
  const group=article.locator(".tabbed-set").first();
  if(await group.count()===0)return false;
@@ -30,7 +30,8 @@ async function verifyModelBLesson(page,{n,chapter,tries,helps,images}){
   sourceTries,"B"+n+" first try IDs in actual HTML must match pinned source/order");
  assert.deepEqual(await helpMarkers.evaluateAll(nodes=>nodes.map(n=>n.getAttribute("data-thpt-help-id"))),
   sourceHelps,"B"+n+" D6 IDs in actual HTML must match pinned source/order");
- assert.equal(await article.locator("details.question").count(),tries,
+ assert.equal((source.match(/^    \?\?\? question "/gm)||[]).length,questions,"B"+n+" source question/disclosure count");
+ assert.equal(await article.locator("details.question").count(),questions,
   "B"+n+" one default-closed First Try per canonical placement");
  assert.equal(await article.locator("details.tip").count(),helps,
   "B"+n+" one default-closed D6 per canonical helper");
