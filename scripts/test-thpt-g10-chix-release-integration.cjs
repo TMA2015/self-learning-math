@@ -1,6 +1,8 @@
 "use strict";
 const assert=require("node:assert/strict");
 const fs=require("node:fs");
+const crypto=require("node:crypto");
+const {expectedG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 require("./test-thpt-g10-chix-reviewed-stage3.cjs");
 const base="docs/thpt-preview/sgk/chuong-ix/";
 const bank=fs.readFileSync("docs/assets/javascripts/thpt-chix-reviewed-formative-v1.js","utf8");
@@ -15,6 +17,24 @@ let linked=0,writtenLinks=0;
 const written=fs.readFileSync("docs/thpt-preview/thu-vien/tu-luan-chuong-ix.md","utf8");
 for(const n of [26,27]){
  const src=fs.readFileSync(base+"bai-"+n+".md","utf8");
+ const tabs=[...src.matchAll(/^=== "([^"]+)"$/gm)].map(x=>x[1]);
+ if(tabs.length){
+  assert.deepEqual(tabs,["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
+    "B"+n+" exact Model B tabs");
+  const b=Buffer.from(src);
+  const sha=crypto.createHash("sha1").update(Buffer.from("blob "+b.length+"\0")).update(b).digest("hex");
+  assert.equal(sha,expectedG10KnowledgeBlob(n,"0".repeat(40)),"B"+n+" source receipt mismatch");
+  for(const seq of ["01","02"]){
+   const id="D6-G10-B"+n+"-"+seq,pos=src.indexOf('data-thpt-help-id="'+id+'"');
+   assert(pos>=0&&/^\s*\?\?\? tip "/m.test(src.slice(pos,pos+420)),
+     "B"+n+": original D6 disclosure must remain closed "+id);
+   const end=seq==="01"?src.indexOf('data-thpt-help-id="D6-G10-B'+n+'-02"',pos+1):src.length;
+   assert(end>pos,"B"+n+" D6 scope "+id);
+   const body=src.slice(pos,end);
+   for(const k of ["Dấu hiệu sai","Bản chất toán và điều kiện","Tự sửa theo bước","Kiến thức cần ôn","Luyện lại câu đã có"])
+    assert(body.includes(k),"B"+n+" original reviewed HELP missing "+k+" "+id);
+  }
+ }else{
  for(const seq of ["01","02"]){
   const id="D6-G10-B"+n+"-"+seq;
   const start=src.indexOf('<details class="thpt-r4-pedagogical-note" data-thpt-help-id="'+id+'">');
@@ -22,6 +42,7 @@ for(const n of [26,27]){
   assert(start>=0&&end>start,"Missing D6 R01 learner card "+id);
   assert.equal(fnv(src.slice(start,end+10)),expected[id],"Reviewed D6 R01 text/link drift "+id);
  }
+ } // Historical R01 D6 exact-text branch only
  for(const m of src.matchAll(/data-thpt-formative-id="(THPT-G10-B\d{2}-[CP]\d\d)" href="\.\.\/luyen-tap\/\?item=([^"]+)"/g)){
   assert.equal(m[1],m[2],"Formative link points to other ID");
   assert(ids.includes(m[1]),"Missing linked canonical formative "+m[1]);linked++;
