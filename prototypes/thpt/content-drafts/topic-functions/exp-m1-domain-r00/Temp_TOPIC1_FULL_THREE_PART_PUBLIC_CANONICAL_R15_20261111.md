@@ -1,4 +1,4 @@
-<!-- AUTHORING: Source R15; Topic student-facing Model B narrative revision for all M1–M7. Editorial only: 984 original LaTeX tokens preserved, 25 SVG, 4 labs, 40 self-reveals; Practice and public self-check retained verbatim from R14. Q18 v3.0.1 requires real author audit; not a RELEASE approval. -->
+<!-- AUTHORING: Source R15; Topic student-facing Model B narrative revision for all M1–M7. Editor-reviewed whole Topic: original math in Knowledge/Practice preserved, administrative item tables hidden for learner-facing text; 25 SVG, 4 labs, 40 first tries. Public Self-check to be completed under current Q16 mode. Q18 v3.0.1 requires real author audit; not a RELEASE approval. -->
 <!-- SLM_PART_BEGIN:KNOWLEDGE -->
 # CHUYÊN ĐỀ 1 · HÀM SỐ VÀ ĐỒ THỊ
 <!-- AUTHORING_MODEL_B: Topic outer pages Kiến thức/Luyện tập/Tự kiểm tra; Adaptive Knowledge Tabs v2 suggested group M1–M3, M4–M5, M6–M7; preserve seven conceptual lesson modules; RELEASE owns responsive tab rendering, do not show this comment to learners. -->
@@ -13,7 +13,7 @@ Một đồ thị có thể kể nhiều điều: đầu vào nào hợp lệ, m
 
 Một thiết bị tính tiền trả \(y=8x\) nghìn đồng cho \(x\) vé. Nếu x là **số vé thực bán**, các giá trị hợp lệ là \(D=\{0,1,2,\ldots\}\); 2,5 vé không phải một đầu vào được phép. Nếu coi \(y=8x\) đơn thuần như biểu thức đại số thì có thể tính ở x=2,5, nhưng kết quả **không mô tả đúng việc bán nguyên vé**. Hàm số phải gắn quy tắc với tập xác định.
 
-**Khái niệm hình thành:** Một hàm số \(f:D\to\mathbb R\) gán cho **mỗi** \(x\in D\) **đúng một** số thực \(f(x)\). Không yêu cầu hai x khác nhau phải cho hai kết quả khác nhau. \(\mathrm{Range}(f)=\{f(x):x\in D\}\) là tập giá trị **đầu ra thật nhận được**; không nhầm với tập tất cả số thực hay tập đích ký hiệu khi định nghĩa.
+Từ ví dụ ấy, ta có định nghĩa chính xác: Một hàm số \(f:D\to\mathbb R\) gán cho **mỗi** \(x\in D\) **đúng một** số thực \(f(x)\). Không yêu cầu hai x khác nhau phải cho hai kết quả khác nhau. \(\mathrm{Range}(f)=\{f(x):x\in D\}\) là tập giá trị **đầu ra thật nhận được**; không nhầm với tập tất cả số thực hay tập đích ký hiệu khi định nghĩa.
 
 <!-- EXAMPLE_SOURCE_ID: EX-M1-01 -->
 **Ví dụ — Bảng có x lặp, tại sao vẫn là hàm?**
@@ -50,7 +50,7 @@ Cần \(5-x\ge0\Rightarrow x\le5\), và \(x\ne1\). Vậy \(D=(-\infty,1)\cup(1,5
 
 **M1 · Tự khám phá miền và tập giá trị bằng hình**
 
-### · Nhìn hình để lấy giao các điều kiện
+### Nhìn hình để lấy giao các điều kiện
 
 Ta thử xét
 
@@ -461,14 +461,14 @@ k-c(x-h)^2\ge m
 
 | Biểu hiện người học | Lỗi bản chất | Đường sửa ngay trên trang |
 |---|---|---|
-| Gọi bảng có hai x khác nhau cùng y là không phải hàm | Nhầm đơn trị với một-một | M1 EX01 + TRY T01 |
-| Quên x=−2 được nhận trong căn hoặc quên x=1 bị loại ở mẫu | Không lấy giao điều kiện, nhầm dấu căn | M1 EX02 + TRY T02 |
+| Gọi bảng có hai x khác nhau cùng y là không phải hàm | Nhầm đơn trị với một-một | M1 EX01 + bài Vận dụng liên quan |
+| Quên x=−2 được nhận trong căn hoặc quên x=1 bị loại ở mẫu | Không lấy giao điều kiện, nhầm dấu căn | M1 EX02 + bài Vận dụng liên quan |
 | Dự đoán số đo giữa hai mốc như chắc chắn | Nhầm nội suy mô hình với dữ kiện đã quan sát | M2 lời dẫn + EX01; phải hỏi nguồn chứng cứ |
-| Nói hàm tăng từ hai điểm hay nối qua điểm loại | Chưa kiểm “mọi cặp x” trên một khoảng | M2 EX02 + TRY T01; HELP-G10-B15-02 |
-| Thay nhánh sai ở điểm nối | Bỏ điều kiện \(<,\le\) | M2 EX03 + TRY T02; HELP-G10-B15-02 |
-| Đưa đỉnh/parabol ra ngoài miền mô hình | Quên miền khả thi | M3 EX03/04 + TRY T02; HELP-G10-B16-02 |
-| Bảo parabol nào cũng cắt Ox | Nhầm chiều mở với vị trí so trục | M3 EX02; HELP-G10-B16-02 |
-| Nhầm dấu a, trục x=h, hoặc bình phương hoàn chỉnh | Không hiểu vì sao có đỉnh | M3 EX01 + TRY T01/T03; HELP-G10-B16-01 |
+| Nói hàm tăng từ hai điểm hay nối qua điểm loại | Chưa kiểm “mọi cặp x” trên một khoảng | M2 EX02 + bài Vận dụng liên quan; phần khắc phục ngay trong Chuyên đề |
+| Thay nhánh sai ở điểm nối | Bỏ điều kiện \(<,\le\) | M2 EX03 + bài Vận dụng liên quan; phần khắc phục ngay trong Chuyên đề |
+| Đưa đỉnh/parabol ra ngoài miền mô hình | Quên miền khả thi | M3 EX03/04 + bài Vận dụng liên quan; phần khắc phục ngay trong Chuyên đề |
+| Bảo parabol nào cũng cắt Ox | Nhầm chiều mở với vị trí so trục | M3 EX02; phần khắc phục ngay trong Chuyên đề |
+| Nhầm dấu a, trục x=h, hoặc bình phương hoàn chỉnh | Không hiểu vì sao có đỉnh | M3 EX01 + bài Vận dụng liên quan/T03; phần khắc phục ngay trong Chuyên đề |
 
 
 
@@ -486,7 +486,7 @@ Em đã biết bảng giá trị và đồ thị có thể cho biết đại lư
 
 Để chọn đúng cách mô tả, em hỏi ba điều: *đại lượng lặp lại hay tích lũy? đầu vào được phép là gì? nhìn đồ thị có thể kết luận gì và chưa thể kết luận gì?* Phần này học ngay trong Chuyên đề, không yêu cầu mở bài SGK nào trước.
 
-**Kiến thức chuẩn bị ngay tại đây.** Góc có thể đo bằng radian: một vòng tròn là \(2\pi\) radian, nửa vòng là \(\pi\), một phần tư vòng là \(\pi/2\). Trên đường tròn đơn vị, điểm \(M\) ứng với góc \(x\) có hoành độ \(\cos x\) và tung độ \(\sin x\); từ đó \(\cos^2x+\sin^2x=1\). Em không cần thuộc một danh sách giá trị trước khi xem bảng điểm mốc ở M4.2.
+Để theo dõi chuyển động quay, em chỉ cần nhớ điều này: Góc có thể đo bằng radian: một vòng tròn là \(2\pi\) radian, nửa vòng là \(\pi\), một phần tư vòng là \(\pi/2\). Trên đường tròn đơn vị, điểm \(M\) ứng với góc \(x\) có hoành độ \(\cos x\) và tung độ \(\sin x\); từ đó \(\cos^2x+\sin^2x=1\). Em không cần thuộc một danh sách giá trị trước khi xem bảng điểm mốc ở phần đồ thị lượng giác.
 
 ### Trước khi nhìn dạng cong: Đồ thị có đối xứng hay lặp lại không?
 
@@ -645,7 +645,7 @@ Một bạn nói: “\(2^0=1\), vậy chắc \(\log_2 0=1\).” Em hãy phản b
 
 <details><summary>Đối chiếu M4 · Điều kiện không phải một quy định tùy ý</summary>
 
-\(\log_2x=y\) có nghĩa \(2^y=x\). Vì \(2^y>0\) với mọi \(y\in\mathbb R\), không có số mũ thực nào cho đầu ra bằng 0. Do đó **\(D_f=(0,+\infty)\)**. Bốn ô lần lượt là **−1, 0, 1, 2**. Hai hàm \(y=2^x\) và \(y=\log_2x\) đổi chỗ đầu vào và đầu ra, nên các điểm tương ứng phản xạ qua \(y=x\). Nếu nhầm, quay lại M4.5 để giải thích “lôgarit là số mũ cần tìm”.
+\(\log_2x=y\) có nghĩa \(2^y=x\). Vì \(2^y>0\) với mọi \(y\in\mathbb R\), không có số mũ thực nào cho đầu ra bằng 0. Do đó **\(D_f=(0,+\infty)\)**. Bốn ô lần lượt là **−1, 0, 1, 2**. Hai hàm \(y=2^x\) và \(y=\log_2x\) đổi chỗ đầu vào và đầu ra, nên các điểm tương ứng phản xạ qua \(y=x\). Nếu nhầm, quay lại phần lôgarit để giải thích “lôgarit là số mũ cần tìm”.
 
 </details>
 
@@ -687,13 +687,13 @@ Miền \(x>-4\); đồ thị là đồ thị \(\log_2 x\) dịch sang trái 4 đ
 
 | Tình huống | Dấu hiệu quan sát | Sửa lỗi theo ý nghĩa, ví dụ và đường quay lại |
 |---|---|---|
-| Đối xứng và miền | Gọi hàm lẻ chỉ vì đi qua gốc, hoặc quên miền đối xứng | Quay lại M4.1; viết D, thay \(-x\), so \(f(-x)\) với \(f(x)\) và \(-f(x)\); thử phản ví dụ \(f(x)=x^2+x\) |
-| Điểm loại của tan/cot | Tính tan/cot tại chỗ mẫu bằng 0, nối đồ thị qua nhánh đứt | Quay lại M4.2; xác định sin/cos ở mẫu, gạch điểm loại trên trục x, dùng FIG tan/cot và giải ví dụ miền trước |
-| Chu kỳ và biên độ | Nhầm biên độ với chu kỳ, hoặc đổi đơn vị thời gian | Quay lại M4.3; chỉ rõ trục dọc mức lệch, trục ngang khoảng lặp; làm lại câu Vận dụng về chu kỳ và biên độ |
-| Cơ số và chiều biến thiên | Nói mọi \(a^x\) tăng hoặc coi \(x^2\) là hàm mũ | Quay lại M4.4, lập bảng x=0,1,2 cho cơ số >1 và giữa 0–1; kiểm biến nằm ở vị trí nào |
-| Điều kiện lôgarit | Lấy log số âm hoặc quên miền của log trong căn | Quay lại M4.5, viết \(a^y=x>0\) và lấy giao tất cả điều kiện trước khi giải |
-| Đồ thị hàm ngược | Hiểu hàm ngược là đổi dấu hoặc phản xạ qua Oy | Quay lại M4.5 và hình hình hàm mũ và lôgarit; viết cặp đầu vào/đầu ra \((p,q)\to(q,p)\) |
-| Miền thời gian của mô hình | Coi số kỳ nguyên thành thời gian liên tục mà không nói giả định | Quay lại M4.4 và ví dụ về tăng theo tỉ lệ; viết rõ tập đầu vào mô hình, kiểm dữ kiện có cho nội suy hay không |
+| Đối xứng và miền | Gọi hàm lẻ chỉ vì đi qua gốc, hoặc quên miền đối xứng | Quay lại phần đối xứng và miền; viết D, thay \(-x\), so \(f(-x)\) với \(f(x)\) và \(-f(x)\); thử phản ví dụ \(f(x)=x^2+x\) |
+| Điểm loại của tan/cot | Tính tan/cot tại chỗ mẫu bằng 0, nối đồ thị qua nhánh đứt | Quay lại phần đồ thị lượng giác; xác định sin/cos ở mẫu, gạch điểm loại trên trục x, dùng FIG tan/cot và giải ví dụ miền trước |
+| Chu kỳ và biên độ | Nhầm biên độ với chu kỳ, hoặc đổi đơn vị thời gian | Quay lại phần biên độ và chu kỳ; chỉ rõ trục dọc mức lệch, trục ngang khoảng lặp; làm lại câu Vận dụng về chu kỳ và biên độ |
+| Cơ số và chiều biến thiên | Nói mọi \(a^x\) tăng hoặc coi \(x^2\) là hàm mũ | Quay lại phần hàm mũ, lập bảng x=0,1,2 cho cơ số >1 và giữa 0–1; kiểm biến nằm ở vị trí nào |
+| Điều kiện lôgarit | Lấy log số âm hoặc quên miền của log trong căn | Quay lại phần lôgarit, viết \(a^y=x>0\) và lấy giao tất cả điều kiện trước khi giải |
+| Đồ thị hàm ngược | Hiểu hàm ngược là đổi dấu hoặc phản xạ qua Oy | Quay lại phần lôgarit và hình hàm mũ và lôgarit; viết cặp đầu vào/đầu ra \((p,q)\to(q,p)\) |
+| Miền thời gian của mô hình | Coi số kỳ nguyên thành thời gian liên tục mà không nói giả định | Quay lại phần hàm mũ và ví dụ về tăng theo tỉ lệ; viết rõ tập đầu vào mô hình, kiểm dữ kiện có cho nội suy hay không |
 
 
 
@@ -715,7 +715,7 @@ Bảng không phải chứng minh tổng quát; bước biến đổi đại s�
 \]
 Ký hiệu \(\lim\) đọc là “giới hạn”; dòng trên nói về các đầu vào **đang tiến sát 2**, không đòi đầu vào thực sự bằng 2. Vì thế **có giới hạn** không có nghĩa **có giá trị tại điểm**, càng không có nghĩa **liên tục**.
 
-**Cách đọc hình:** xem FIG-G11-B16-01_R01.svg, nguồn hình chuẩn. Trục hoành là x, trục tung là y. Hãy nhìn đường thẳng đi gần \((2,4)\) từ hai bên; vòng tròn rỗng nhắc rằng điểm (2,4) **không thuộc đồ thị của hàm gốc**. Không vẽ chấm đặc ở đó vì chưa có \(f(2)\). Hình chỉ minh họa, bước kiểm toán dùng định nghĩa/biến đổi và miền xác định.
+**Cách đọc hình:** xem hình minh họa_R01.svg, nguồn hình chuẩn. Trục hoành là x, trục tung là y. Hãy nhìn đường thẳng đi gần \((2,4)\) từ hai bên; vòng tròn rỗng nhắc rằng điểm (2,4) **không thuộc đồ thị của hàm gốc**. Không vẽ chấm đặc ở đó vì chưa có \(f(2)\). Hình chỉ minh họa, bước kiểm toán dùng định nghĩa/biến đổi và miền xác định.
 
 ![Đồ thị có lỗ tại x bằng 2 nhưng có giới hạn bằng 4](../../../../../docs/assets/images/thpt/FIG-G11-B16-01_R01.svg)
 
@@ -784,7 +784,7 @@ Các giá trị là **−1, −2, −3, −4**. Tổng quát, \(x=2^{-n}\to0^+\)
 \[
 \lim_{x\to0^+}\log_2x=-\infty.
 \]
-Đây là xu thế không bị chặn từ **phía phải**, không phải giá trị \(f(0)\). Trục \(x=0\) là một **tiệm cận đứng**. Nếu gặp “lỗ đồ thị” có giới hạn hữu hạn ở M5.1, hãy phân biệt nó với tình huống này.
+Đây là xu thế không bị chặn từ **phía phải**, không phải giá trị \(f(0)\). Trục \(x=0\) là một **tiệm cận đứng**. Nếu gặp “lỗ đồ thị” có giới hạn hữu hạn ở phần giới hạn tại điểm, hãy phân biệt nó với tình huống này.
 
 </details>
 
@@ -825,7 +825,7 @@ Một hàm liên tục ở một điểm a khi giá trị **đúng ở a** khớ
 
 **Bớt một điều đều có thể sai.** Với \(f(x)=(x^2-4)/(x-2)\) khi x≠2, giới hạn bằng 4 nhưng không có f(2); cần “vá” bằng cách định nghĩa \(f(2)=4\). Nếu cố định \(f(2)=9\), đường cong gần điểm vẫn tiến tới 4 nhưng chấm đặc lại ở độ cao 9 nên **gián đoạn**.
 
-**Hình cần đọc tại Topic:** FIG-G11-B17-01_R01.svg, nguồn hình chuẩn. Chú ý **vòng tròn rỗng** thể hiện giá trị tiến gần (không nhận) và **chấm đặc** cho biết giá trị thật. Đọc tọa độ cụ thể của các ký hiệu theo hình; không mặc định mọi vòng tròn rỗng đều là “tiệm cận đứng”. Đọc hình trước; ba điều kiện ở trên là căn cứ kết luận.
+**Hình cần đọc tại Topic:** hình minh họa_R01.svg, nguồn hình chuẩn. Chú ý **vòng tròn rỗng** thể hiện giá trị tiến gần (không nhận) và **chấm đặc** cho biết giá trị thật. Đọc tọa độ cụ thể của các ký hiệu theo hình; không mặc định mọi vòng tròn rỗng đều là “tiệm cận đứng”. Đọc hình trước; ba điều kiện ở trên là căn cứ kết luận.
 
 ![Điểm rỗng và điểm đặc dùng để xét tính liên tục](../../../../../docs/assets/images/thpt/FIG-G11-B17-01_R01.svg)
 
@@ -879,7 +879,7 @@ f\text{ liên tục trên }[a,b],\quad f(a)f(b)<0
 **Giới hạn áp dụng quan trọng:** định lí cho biết **tồn tại**, không tự cho biết nghiệm duy nhất hay chính xác c bằng số mấy. Nếu hàm không liên tục trên cả đoạn, hai giá trị trái dấu **không đủ** để suy có nghiệm.
 
 <!-- EXAMPLE_SOURCE_ID: EX-M5-07 -->
-**Ví dụ — Tại sao nghiệm phải xuất hiện?** \(p(x)=x^3+2x-4\). Đây là đa thức, liên tục trên [1,2]. \(p(1)=1+2-4=-1<0\), \(p(2)=8+4-4=8>0\). Do đó tồn tại ít nhất một nghiệm trong (1,2). Không cần biến đổi giải phương trình bậc ba để kết luận sự tồn tại. Bằng luận điểm dấu đầu mút alone, **chưa được nói duy nhất**.
+**Ví dụ — Tại sao nghiệm phải xuất hiện?** \(p(x)=x^3+2x-4\). Đây là đa thức, liên tục trên [1,2]. \(p(1)=1+2-4=-1<0\), \(p(2)=8+4-4=8>0\). Do đó tồn tại ít nhất một nghiệm trong (1,2). Không cần biến đổi giải phương trình bậc ba để kết luận sự tồn tại. Chỉ từ hai giá trị trái dấu ở hai đầu mút, **chưa thể kết luận nghiệm là duy nhất**.
 
 <!-- EXAMPLE_SOURCE_ID: EX-M5-08 -->
 **Ví dụ — Khi bỏ mất điều kiện, kết luận sai.** Đặt \(q(x)=-1\) khi x<0 và \(q(x)=1\) khi x≥0. Trên [-1,1] có \(q(-1)=-1\), \(q(1)=1\) trái dấu, nhưng q không nhận giá trị 0 tại bất kỳ x nào: hàm **bị nhảy** ở 0, không liên tục tại 0. Vậy dấu trái nhau mà thiếu liên tục không chứng minh có nghiệm.
@@ -894,10 +894,10 @@ u là đa thức liên tục trên [1,2], u(1)=−1 và u(2)=2 nên có ít nh�
 
 | Dấu hiệu em đang gặp | Quay lại đúng ý cần học |
 |---|---|
-| Tưởng giới hạn là giá trị tại điểm | M5.1: phân biệt điểm rỗng với giá trị tiến sát |
-| Quên xét giới hạn trái và phải | M5.2: so hai phía ở chỗ đổi nhánh |
-| Không chắc hàm liên tục tại điểm nối | M5.5: kiểm giá trị thực tại điểm và hai giới hạn một phía |
-| Áp dụng định lí đổi dấu cho hàm bị nhảy | M5.7: kiểm liên tục trên cả đoạn trước khi kết luận có nghiệm |
+| Tưởng giới hạn là giá trị tại điểm | phần giới hạn tại điểm: phân biệt điểm rỗng với giá trị tiến sát |
+| Quên xét giới hạn trái và phải | phần giới hạn một phía: so hai phía ở chỗ đổi nhánh |
+| Không chắc hàm liên tục tại điểm nối | phần liên tục tại điểm: kiểm giá trị thực tại điểm và hai giới hạn một phía |
+| Áp dụng định lí đổi dấu cho hàm bị nhảy | phần định lí nghiệm: kiểm liên tục trên cả đoạn trước khi kết luận có nghiệm |
 
 Sau phần Kiến thức, em có thể chọn bài **tự luận dùng chung** trong thư viện Luyện tập; hãy thử làm ra giấy trước khi mở rubric và chỉ dùng kết quả để tự điều chỉnh cách học.
 
@@ -951,12 +951,12 @@ y-f(a)=f'(a)(x-a).
 
 **Vì sao không viết luôn y=f'(a)x?** Vì tiếp tuyến phải đi qua điểm P đã biết, chứ không nhất thiết đi qua gốc O.
 
-**Quan sát hình:** FIG-G11-CHIX-B31-01_R00.svg, nguồn hình chuẩn. Đọc điểm P(1,1) và Q(1,8;3,24) trên y=x²; độ dốc cát tuyến là 2,8. Khi Q trượt dần đến P, độ dốc tiến 2. Tiếp tuyến tại P là y−1=2(x−1), tức y=2x−1. Không dùng một hình chụp cát tuyến cố định như chứng minh giới hạn.
+**Quan sát hình:** hình minh họa_R00.svg, nguồn hình chuẩn. Đọc điểm P(1,1) và Q(1,8;3,24) trên y=x²; độ dốc cát tuyến là 2,8. Khi Q trượt dần đến P, độ dốc tiến 2. Tiếp tuyến tại P là y−1=2(x−1), tức y=2x−1. Không dùng một hình chụp cát tuyến cố định như chứng minh giới hạn.
 
 ![Cát tuyến tiến dần thành tiếp tuyến tại điểm trên parabol](../../../../../docs/assets/images/thpt/FIG-G11-CHIX-B31-01_R00.svg)
 
 
-**Liên tục có đủ để có đạo hàm không?** Không. Hàm y=|x| liên tục tại 0 nhưng thương |h|/h bằng −1 với h<0 và +1 với h>0; hai giới hạn một phía khác nhau. Vì thế không có đạo hàm tại góc nhọn. **Có đạo hàm thì liên tục**, còn chiều đảo lại là sai. Hình FIG-G11-CHIX-B31-02_R00.svg: đọc hai nhánh gặp nhau ở O nhưng độ dốc −1 và +1, không gộp chúng thành một tiếp tuyến.
+**Liên tục có đủ để có đạo hàm không?** Không. Hàm y=|x| liên tục tại 0 nhưng thương |h|/h bằng −1 với h<0 và +1 với h>0; hai giới hạn một phía khác nhau. Vì thế không có đạo hàm tại góc nhọn. **Có đạo hàm thì liên tục**, còn chiều đảo lại là sai. Hình minh họa_R00.svg: đọc hai nhánh gặp nhau ở O nhưng độ dốc −1 và +1, không gộp chúng thành một tiếp tuyến.
 
 ![Đồ thị giá trị tuyệt đối có góc nhọn không khả vi tại gốc](../../../../../docs/assets/images/thpt/FIG-G11-CHIX-B31-02_R00.svg)
 
@@ -1019,7 +1019,7 @@ Với \(q(x)=x^4\), \(q(x)\ge0=q(0)\) với mọi x; vì vậy \(x=0\) là đi�
 
 </details>
 
-**Nếu em đang nhầm:** Nếu chưa phân biệt độ dốc cát tuyến với tiếp tuyến, quay lại M6.1 và giảm dần \(|h|\). Nếu chưa rõ điều kiện cực trị, đọc lại M7.1 về dấu đạo hàm trước và sau điểm đang xét. Hoạt động Vận dụng này **công khai, tự đối chiếu**, không dùng làm câu Tự kiểm tra độc lập hoặc ghi Skill Mastery.
+**Nếu em đang nhầm:** Nếu chưa phân biệt độ dốc cát tuyến với tiếp tuyến, quay lại phần thương sai phân và giảm dần \(|h|\). Nếu chưa rõ điều kiện cực trị, đọc lại phần dấu đạo hàm về dấu đạo hàm trước và sau điểm đang xét. Hoạt động Vận dụng này **công khai, tự đối chiếu**, không dùng làm câu Tự kiểm tra độc lập hoặc ghi Skill Mastery.
 
 ### Tại sao cần bảng đạo hàm? Quy tắc là hệ quả của thay đổi
 
@@ -1034,12 +1034,12 @@ Nếu u(x), v(x) khả vi tại điểm đang xét:
 (uv)'=u'v+uv',\qquad (u/v)'=\frac{u'v-uv'}{v^2}\quad(v\ne0).
 \]
 
-**Bản chất quy tắc tích:** diện tích hình chữ nhật có hai cạnh u và v. Khi chúng đổi thêm Δu, Δv, diện tích tăng vΔu+uΔv+ΔuΔv. Khi chia cho Δx rồi cho Δx→0, nếu u,v khả vi, hạng chéo bậc hai mất đi; còn hai đóng góp vu'+uv'. **Hình minh họa:** FIG-G11-CHIX-B32-01_R00.svg, đọc vùng uv cũ, hai dải bổ sung và góc chéo nhỏ.
+**Bản chất quy tắc tích:** diện tích hình chữ nhật có hai cạnh u và v. Khi chúng đổi thêm Δu, Δv, diện tích tăng vΔu+uΔv+ΔuΔv. Khi chia cho Δx rồi cho Δx→0, nếu u,v khả vi, hạng chéo bậc hai mất đi; còn hai đóng góp vu'+uv'. **Hình minh họa:** hình minh họa_R00.svg, đọc vùng uv cũ, hai dải bổ sung và góc chéo nhỏ.
 
 ![Diện tích hình chữ nhật minh họa quy tắc đạo hàm tích](../../../../../docs/assets/images/thpt/FIG-G11-CHIX-B32-01_R00.svg)
 
 
-**Bản chất quy tắc dây chuyền:** f(x)=g(u(x)): trước hết x làm u thay, sau đó u làm g thay. Vì vậy f'=g'(u(x))u'(x) trên những điểm các đạo hàm phù hợp tồn tại. Hình FIG-G11-CHIX-B32-02_R00.svg, đọc hai mũi tên x→u→g(u), không bỏ đạo hàm tầng trong.
+**Bản chất quy tắc dây chuyền:** f(x)=g(u(x)): trước hết x làm u thay, sau đó u làm g thay. Vì vậy f'=g'(u(x))u'(x) trên những điểm các đạo hàm phù hợp tồn tại. Hình hình minh họa_R00.svg, đọc hai mũi tên x→u→g(u), không bỏ đạo hàm tầng trong.
 
 ![Sơ đồ hai tầng đầu vào hàm trong và hàm ngoài của quy tắc dây chuyền](../../../../../docs/assets/images/thpt/FIG-G11-CHIX-B32-02_R00.svg)
 
@@ -1119,7 +1119,7 @@ Tại x=2, \(f'(2)=1/(2\ln2)\approx0{,}72135\). Tiếp tuyến qua C(2;1) là
 \[
 y-1=\frac{1}{2\ln2}(x-2).
 \]
-Không được viết \(y=f'(2)x\): cách ấy quên điểm \((2,1)\). Cũng không được lấy đạo hàm tại x=0 vì chính hàm f chưa xác định ở đó. Để phân biệt **liên tục** với **khả vi**, quay lại góc nhọn của \(y=|x|\) trong M6.2.
+Không được viết \(y=f'(2)x\): cách ấy quên điểm \((2,1)\). Cũng không được lấy đạo hàm tại x=0 vì chính hàm f chưa xác định ở đó. Để phân biệt **liên tục** với **khả vi**, quay lại góc nhọn của \(y=|x|\) trong phần tiếp tuyến và góc nhọn.
 
 </details>
 
@@ -1133,7 +1133,7 @@ v(t)=12-6t,\qquad a(t)=-6\ {\rm m/s^2}.
 \]
 Tại t=1, v=+6 và a=−6, trái dấu: tốc độ |v| đang giảm. Tại t=3, v=−6 và a=−6, cùng dấu: vật chuyển động theo chiều âm nhưng tốc độ |v| đang tăng. Tại t=2, v=0, xét hai khoảng lân cận thay vì gọi “nhanh/chậm” bằng quy tắc dấu đúng tại điểm dừng.
 
-**Quan sát hình:** FIG-G11-CHIX-B33-01_R00.svg, có chuỗi quan hệ vị trí→vận tốc→gia tốc. Hướng dẫn đọc: xem tên đại lượng và đơn vị trên từng trục, rồi đối chiếu dấu v,a theo từng khoảng.
+**Quan sát hình:** hình minh họa_R00.svg, có chuỗi quan hệ vị trí→vận tốc→gia tốc. Hướng dẫn đọc: xem tên đại lượng và đơn vị trên từng trục, rồi đối chiếu dấu v,a theo từng khoảng.
 
 ![Chuỗi mối liên hệ từ vị trí đến vận tốc và gia tốc](../../../../../docs/assets/images/thpt/FIG-G11-CHIX-B33-01_R00.svg)
 
@@ -1158,14 +1158,14 @@ Không. f''(x)=12x² dương ở cả hai phía của 0, nên không có đổi 
 
 | Lỗi cụ thể | Bản chất bị bỏ quên | Cách sửa ngay tại Topic |
 |---|---|---|
-| Thế h=0 trước khi rút gọn | Thương sai phân chỉ định nghĩa khi h khác 0 | Quay lại M6.1 và TRY T01; khai triển rồi lấy giới hạn |
-| Nói mọi hàm liên tục đều khả vi | Góc nhọn có hai độ dốc khác nhau | Quay lại hình B31-02 và TRY T02 |
-| Viết y=f'(a)x | Tiếp tuyến còn phải qua (a,f(a)) | Dùng công thức y−f(a)=f'(a)(x−a) ở M6.2 |
-| (uv)'=u'v' | Hai thừa số cùng tạo thay đổi | M6.3, hình hai dải diện tích, TRY T03 |
-| Quên đạo hàm tầng trong | Hàm hợp thay qua hai tầng | M6.3–4, hình B32-02, TRY T04 |
-| Công thức hợp lệ nhưng vượt miền | Mẫu/log/căn loại điểm đầu vào | M6.4, viết miền trước công thức |
-| Gia tốc âm luôn chậm dần | Cần cả dấu vận tốc và gia tốc | M6.5, so t=1 và t=3 |
-| f''(a)=0 suy ngay điểm uốn | Không đủ chứng cứ đổi chiều lõm | M6.5, x⁴ và TRY T06 |
+| Thế h=0 trước khi rút gọn | Thương sai phân chỉ định nghĩa khi h khác 0 | Quay lại phần thương sai phân và bài Vận dụng liên quan; khai triển rồi lấy giới hạn |
+| Nói mọi hàm liên tục đều khả vi | Góc nhọn có hai độ dốc khác nhau | Quay lại hình B31-02 và bài Vận dụng liên quan |
+| Viết y=f'(a)x | Tiếp tuyến còn phải qua (a,f(a)) | Dùng công thức y−f(a)=f'(a)(x−a) ở phần tiếp tuyến và góc nhọn |
+| (uv)'=u'v' | Hai thừa số cùng tạo thay đổi | phần quy tắc đạo hàm, hình hai dải diện tích, bài Vận dụng liên quan |
+| Quên đạo hàm tầng trong | Hàm hợp thay qua hai tầng | các phần quy tắc đạo hàm và kiểm điều kiện, hình B32-02, bài Vận dụng liên quan |
+| Công thức hợp lệ nhưng vượt miền | Mẫu/log/căn loại điểm đầu vào | phần kiểm điều kiện khi đạo hàm, viết miền trước công thức |
+| Gia tốc âm luôn chậm dần | Cần cả dấu vận tốc và gia tốc | phần vận tốc và gia tốc, so t=1 và t=3 |
+| f''(a)=0 suy ngay điểm uốn | Không đủ chứng cứ đổi chiều lõm | phần vận tốc và gia tốc, x⁴ và bài Vận dụng liên quan |
 
 ---
 
@@ -1222,7 +1222,7 @@ Một **cực đại địa phương** chỉ so với những điểm **ở gầ
 
 **Trái lại, trên khoảng mở \((0,1)\)**, \(x^2\) luôn dương và nhỏ hơn 1, nhưng **không đạt** 0 hoặc 1 trong miền; do đó **không có GTLN hay GTNN** trên khoảng này, dù có cận trên/cận dưới. Câu “có giới hạn bằng 1 khi x→1⁻” không làm cho x=1 trở thành một điểm trong miền.
 
-**Đọc hình:** \`G12_B02_FIG01_GLOBAL_MIN_MAX_CLOSED_INTERVAL_R00.svg\` minh họa **một hàm khác** \(y=x^2-4x+1\) trên [0,5], **không phải đồ thị của \(q=x^2\)**. Học sinh hãy đọc: f(0)=1, f(2)=−3 (thấp nhất), f(5)=6 (cao nhất); xác định các điểm có/không nằm trong đoạn. Không ghép nhầm lời giải EX-M7-02 vào hình B02.
+**Đọc hình:** \`G12_B02_FIG01_GLOBAL_MIN_MAX_CLOSED_INTERVAL_R00.svg\` minh họa **một hàm khác** \(y=x^2-4x+1\) trên [0,5], **không phải đồ thị của \(q=x^2\)**. Học sinh hãy đọc: f(0)=1, f(2)=−3 (thấp nhất), f(5)=6 (cao nhất); xác định các điểm có/không nằm trong đoạn. Không ghép nhầm lời giải ví dụ cực trị trên đoạn vào hình B02.
 
 ![Parabol với giá trị lớn nhất nhỏ nhất trên đoạn kín](../../../../../docs/assets/images/thpt/G12_B02_FIG01_GLOBAL_MIN_MAX_CLOSED_INTERVAL_R00.svg)
 
@@ -1244,7 +1244,7 @@ Em có ba kết luận: \(D=(0,+\infty)\); khi \(x\to0^+\) thì f tiến ra \(-\
 
 Trên \((0,+\infty)\), f tăng, có giới hạn \(-\infty\) khi \(x\to0^+\), và tiến \(+\infty\) khi \(x\to+\infty\). **Không có GTNN và GTLN** trên toàn miền. Không có giá trị hàm tại tiệm cận x=0.
 
-Trên \([1/2,4]\), f liên tục và tăng; **GTNN = −1** tại \(x=1/2\), **GTLN = 2** tại \(x=4\). Cả hai đầu mút thuộc miền con nên hai giá trị này **được đạt**. Nếu nhận vô cực làm giá trị lớn nhất/nhỏ nhất trên đoạn, quay lại M1 (miền) và M7.2 (phân biệt cận với giá trị đạt được).
+Trên \([1/2,4]\), f liên tục và tăng; **GTNN = −1** tại \(x=1/2\), **GTLN = 2** tại \(x=4\). Cả hai đầu mút thuộc miền con nên hai giá trị này **được đạt**. Nếu nhận vô cực làm giá trị lớn nhất/nhỏ nhất trên đoạn, quay lại M1 (miền) và phần cực trị trên miền (phân biệt cận với giá trị đạt được).
 
 </details>
 
@@ -1376,22 +1376,22 @@ C'=1−16/x² đổi từ âm sang dương tại x=4; C(4)=8 là GTNN. C→+∞ 
 <!-- FIRST_TRY_SOURCE_ID: TỰ THỬ M7-T07 -->
 **Vận dụng.** Với \(K(q)=100+3q+0{,}02q^2\), tại q=0, đạo hàm bằng bao nhiêu? Nếu q là số sản phẩm nguyên, em có thể gọi \(K'(0)\) là tiền tăng **chính xác** khi làm sản phẩm đầu tiên không?
 <details><summary>Đã thử? Mở đối chiếu</summary>
-\(K'(0)=3\) nghìn đồng/sản phẩm theo mô hình liên tục. Mức tăng đúng \(K(1)-K(0)=3{,}02\) nghìn đồng, khác 3. Đạo hàm là tốc độ thay đổi cục bộ của mô hình, không tự thay thế hiệu trên một bước nguyên. Nếu lẫn, quay lại thương sai phân M6.1.
+\(K'(0)=3\) nghìn đồng/sản phẩm theo mô hình liên tục. Mức tăng đúng \(K(1)-K(0)=3{,}02\) nghìn đồng, khác 3. Đạo hàm là tốc độ thay đổi cục bộ của mô hình, không tự thay thế hiệu trên một bước nguyên. Nếu lẫn, quay lại thương sai phân phần thương sai phân.
 </details>
 
 **Nếu kết luận sai, hãy tìm lại tiền đề**
 
 | Dấu hiệu người học gặp | Chẩn đoán ý nghĩa bị thiếu | Hướng khắc phục trực tiếp trong Topic |
 |---|---|---|
-| \(f'(a)=0\Rightarrow\) cực trị | Điều kiện cần ở điểm khả vi không đủ; cần dấu hai phía hoặc lập luận khác | M7.1, phản ví dụ x³, TRY T01 |
-| Cực đại địa phương = GTLN | Địa phương chỉ so gần, không so toàn miền | M7.2, bảng giá trị tại đầu mút và TRY T02 |
-| Mọi giới hạn hữu hạn tại điểm loại là tiệm cận đứng | Lỗ không chạy ra vô cực | M7.3, rút gọn (x²−9)/(x−3), TRY T03 |
-| \(f'<0\) nên giảm “trên R” dù có điểm loại | Dấu chỉ kiểm trên từng khoảng trong miền | M7.1, M7.4, TRY T04 |
-| Chỉ dùng bảng đạo hàm để vẽ hình | Quên giao trục, giới hạn, điểm loại, tiệm cận, hình đối xứng | M7.4, đọc hai hình B04 |
-| Nghiệm \(V'=0\) nằm ngoài miền vẫn chọn | Quên ràng buộc thực tế, đơn vị, đầu mút | M7.5, hình hộp và TRY T05 |
-| Tối ưu trên khoảng mở mà tự nhận GTLN/GTTN ở biên không thuộc miền | Nhầm cận với giá trị đạt được | M7.2/M7.5, TRY T02/T06 |
-| Gia tốc âm thì tốc độ luôn giảm | Cần cả dấu vận tốc và gia tốc | Quay lại M6.5 rồi tiếp M7.1 (không xem SGK bắt buộc) |
-| Chi phí cận biên bằng đúng chi phí thêm một sản phẩm | Nhầm đạo hàm của mô hình liên tục với hiệu trên một bước rời rạc | M7.6, EX-M7-09 và TRY T07 |
+| \(f'(a)=0\Rightarrow\) cực trị | Điều kiện cần ở điểm khả vi không đủ; cần dấu hai phía hoặc lập luận khác | phần dấu đạo hàm, phản ví dụ x³, bài Vận dụng liên quan |
+| Cực đại địa phương = GTLN | Địa phương chỉ so gần, không so toàn miền | phần cực trị trên miền, bảng giá trị tại đầu mút và bài Vận dụng liên quan |
+| Mọi giới hạn hữu hạn tại điểm loại là tiệm cận đứng | Lỗ không chạy ra vô cực | phần tiệm cận, rút gọn (x²−9)/(x−3), bài Vận dụng liên quan |
+| \(f'<0\) nên giảm “trên R” dù có điểm loại | Dấu chỉ kiểm trên từng khoảng trong miền | phần dấu đạo hàm, phần khảo sát đồ thị, bài Vận dụng liên quan |
+| Chỉ dùng bảng đạo hàm để vẽ hình | Quên giao trục, giới hạn, điểm loại, tiệm cận, hình đối xứng | phần khảo sát đồ thị, đọc hai hình B04 |
+| Nghiệm \(V'=0\) nằm ngoài miền vẫn chọn | Quên ràng buộc thực tế, đơn vị, đầu mút | phần tối ưu có miền khả thi, hình hộp và bài Vận dụng liên quan |
+| Tối ưu trên khoảng mở mà tự nhận GTLN/GTTN ở biên không thuộc miền | Nhầm cận với giá trị đạt được | các phần cực trị và tối ưu, bài Vận dụng liên quan/T06 |
+| Gia tốc âm thì tốc độ luôn giảm | Cần cả dấu vận tốc và gia tốc | Quay lại phần vận tốc và gia tốc rồi tiếp phần dấu đạo hàm (không xem SGK bắt buộc) |
+| Chi phí cận biên bằng đúng chi phí thêm một sản phẩm | Nhầm đạo hàm của mô hình liên tục với hiệu trên một bước rời rạc | phần tốc độ thay đổi có đơn vị, ví dụ chi phí cận biên và bài Vận dụng liên quan |
 
 ---
 
@@ -1399,12 +1399,16 @@ C'=1−16/x² đổi từ âm sang dương tại x=4; C(4)=8 là GTNN. C→+∞ 
 
 Những câu sau thuộc **một ngân hàng gốc**, không sao chép đề hoặc đáp án. Trong Luyện tập, em tự làm trước, sau đó mới dùng gợi ý hoặc đối chiếu. Những câu đã xem lời giải là bài ôn luyện, không phải câu kiểm tra độc lập.
 
+<!-- AUTHORING_KNOWLEDGE_SHARED_BANK_PLACEMENTS (hidden from learner; source IDs are routed to the single canonical SGK/Topic bank)
 | Mạch | Item gốc nên dùng | Mục tiêu và đường khắc phục |
 |---|---|---|
-| M4 | `THPT-G11-CHVI-B20-C03` → `THPT-G11-CHVI-B20-P01` | Miền log dịch và giải giá trị log; nếu sai, quay lại M4.5 |
-| M5 | `THPT-G11-CHV-B16-C01` → `THPT-G11-CHV-B16-P07` | Giới hạn tại lỗ và mức bão hòa của mô hình; M5.1/M5.3 |
-| M6 | `THPT-G11-CHIX-B31-P08` → `THPT-G11-CHIX-B31-P05` | Tiếp tuyến qua điểm và góc nhọn liên tục nhưng không khả vi; M6.2 |
-| M7 | `THPT-G12-CHI-B01-P01` → `THPT-G12-CHI-B01-C04` | Dấu đạo hàm trên khoảng hợp lệ và phản ví dụ \(f'(a)=0\) nhưng không cực trị; M7.1/M7.2 |
+| M4 | `THPT-G11-CHVI-B20-C03` → `THPT-G11-CHVI-B20-P01` | Miền log dịch và giải giá trị log; nếu sai, quay lại phần lôgarit |
+| M5 | `THPT-G11-CHV-B16-C01` → `THPT-G11-CHV-B16-P07` | Giới hạn tại lỗ và mức bão hòa của mô hình; phần giới hạn tại điểm/phần giới hạn khi đầu vào rất lớn |
+| M6 | `THPT-G11-CHIX-B31-P08` → `THPT-G11-CHIX-B31-P05` | Tiếp tuyến qua điểm và góc nhọn liên tục nhưng không khả vi; phần tiếp tuyến và góc nhọn |
+| M7 | `THPT-G12-CHI-B01-P01` → `THPT-G12-CHI-B01-C04` | Dấu đạo hàm trên khoảng hợp lệ và phản ví dụ \(f'(a)=0\) nhưng không cực trị; phần dấu đạo hàm/phần cực trị trên miền |
+-->
+
+Trong Luyện tập, em sẽ lần lượt thực hành đọc miền của hàm mũ và lôgarit, phân biệt giới hạn với giá trị tại điểm, tìm tiếp tuyến rồi sử dụng dấu đạo hàm để khảo sát và tối ưu. Hãy bắt đầu bằng câu vừa sức, tự giải thích lý do chọn phương pháp, sau đó thử một bài có tình huống khác trước khi mở lời giải.
 
 Nếu còn thiếu chiều sâu ở một kỹ năng cụ thể, có thể thêm câu **thực sự khác năng lực cần đo**, không đặt hạn mức và không chỉ đổi số của bài cũ.
 
@@ -1422,11 +1426,11 @@ Phần **Tự kiểm tra** là bài đánh giá riêng bao quát toàn Chuyên �
 
 <!-- SLM_PART_BEGIN:PRACTICE -->
 # CHUYÊN ĐỀ 1 · HÀM SỐ VÀ ĐỒ THỊ
-## LUYỆN TẬP · M1–M7 · BẢN HỢP NHẤT AUTHORING
+## Luyện tập
 
 **Cách học phần này:** Em đã có Kiến thức M1–M7. Bây giờ hãy chọn kỹ năng mình cần luyện, trả lời **trước khi mở gợi ý hoặc lời giải**, sau đó xác định mình sai ở điều kiện, phương pháp hay cách diễn đạt. Nếu một câu đã xuất hiện trong Kiến thức, em vẫn có thể dùng để ôn lại, nhưng đừng coi đó là bài kiểm tra bất ngờ.
 
-**Một câu hỏi, một nguồn gốc:** Mã bài trong các bảng là vị trí tham chiếu tới bài tập SGK/Chuyên đề hoặc thư viện tự luận đã có; ở website, bộ hiển thị sẽ lấy nội dung và lời giải từ **đúng nguồn chung**, không tạo hai câu trùng nhau. Không nhất thiết làm theo thứ tự mã số. Câu nào quá dễ, có thể chuyển sang bài vận dụng hoặc tự luận.
+Những câu hỏi tương tác và bài tự luận được lấy từ **kho bài tập dùng chung** với hành trình SGK. Em không cần nhớ mã bài: chỉ cần đọc đề, làm trước khi mở đáp án và thử một câu có yêu cầu khác nếu đã quá quen với dạng cũ.
 
 ### Ba lượt luyện cho mỗi kỹ năng
 
@@ -1440,39 +1444,58 @@ Các bài công khai dưới đây **không phải** bộ Tự kiểm tra cuối
 
 Mỗi công thức phải đi cùng miền. Em luyện nhận dạng trước, rồi ghép nhiều điều kiện và giải thích vì sao một điểm bị loại.
 
+<!-- AUTHORING_SHARED_BANK_MATRIX_M1: one canonical item source, multiple topic placement roles; RELEASE renders actual question bodies from common bank, never display this table to learners.
 | Outcome | Năng lực cần luyện | Một nguồn bài gốc, nhiều vị trí dùng | Lưu ý để luyện đúng |
 |---|---|---|---|
 | TOP-G10-FUNC-O01 | M1 đơn trị, bảng x lặp, tập giá trị | THPT-G10-B15-C01 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
 | TOP-G10-FUNC-O02 | M1 tập xác định/tập giá trị, giao điều kiện căn+mẫu | THPT-G10-B15-C02 → THPT-G10-B15-P01 → THPT-G10-CHVI-APP-A1 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
+-->
 
-**Tự luận liên quan trong thư viện chung:** HPT-G10-CHVI-WRI-15-01 · HPT-G10-CHVI-WRI-15-02
+Một bài tốt ở phần này không chỉ yêu cầu thay số. Em sẽ xác định đầu vào hợp lệ, giải thích vì sao phải lấy giao các điều kiện căn và mẫu, rồi xét tập giá trị khi có điểm bị loại.
 
-**Bài công khai tự luyện thêm:** DRAFT-T1-M1-APP02 · DRAFT-T1-M1-APP05 · DRAFT-T1-M1-APP06 · DRAFT-T1-M1-WR01 · DRAFT-T1-M1-WR02. Đây là câu trong mục bổ sung phía dưới, không phải bài đánh giá kín.
 
-**Nếu chưa hiểu:** Nếu sai điều kiện căn/mẫu, quay lại Kiến thức M1 và tự thử các đầu mút trước khi xem đáp án. Bài A1 từ cuối Chương VI giúp em kiểm tra tập xác định cùng ý nghĩa không âm của căn, không phải chỉ thêm câu thay số.
+<!-- AUTHORING_WRITTEN_SHARED_IDS: HPT-G10-CHVI-WRI-15-01 · HPT-G10-CHVI-WRI-15-02 -->
+
+**Tự luận.** Em hãy trình bày đầy đủ điều kiện và lý do giải trên giấy, sau đó tự đối chiếu với lời giải hoặc rubric của thư viện dùng chung.
+
+<!-- AUTHORING_PUBLIC_EXTRA_EXERCISE_IDS: DRAFT-T1-M1-APP02 · DRAFT-T1-M1-APP05 · DRAFT-T1-M1-APP06 · DRAFT-T1-M1-WR01 · DRAFT-T1-M1-WR02. Đây là câu trong mục bổ sung phía dưới, không phải bài đánh giá kín. -->
+
+Những bài luyện sâu hơn nằm ở phần **Luyện bổ sung** bên dưới; em chỉ cần chọn khi muốn thử một cách lập luận khác hoặc khắc phục đúng lỗi vừa gặp.
+
+Nếu sai điều kiện căn/mẫu, quay lại Kiến thức M1 và tự thử các đầu mút trước khi xem đáp án. Bài A1 từ cuối Chương VI giúp em kiểm tra tập xác định cùng ý nghĩa không âm của căn, không phải chỉ thêm câu thay số.
 
 
 ## M2 · Điểm được biết, nhánh và điều kiện
 
 Một điểm đọc từ bảng không giống giá trị của mô hình đã giả định. Em tập đọc chấm rỗng/đặc, kiểm một kết luận tăng/giảm trên cả miền và diễn giải bằng lời.
 
+<!-- AUTHORING_SHARED_BANK_MATRIX_M2: one canonical item source, multiple topic placement roles; RELEASE renders actual question bodies from common bank, never display this table to learners.
 | Outcome | Năng lực cần luyện | Một nguồn bài gốc, nhiều vị trí dùng | Lưu ý để luyện đúng |
 |---|---|---|---|
 | TOP-G10-FUNC-O03 | M2 giá trị/điểm thuộc đồ thị, giới hạn nội suy | THPT-G10-TOP-FUNC-P01 | Đọc thêm hoạt động ba điểm–hai quy tắc ở M2; chọn bài chuyển giao bên dưới. |
 | TOP-G10-FUNC-O04 | M2 tăng/giảm trên một khoảng, kiểm mọi cặp x | THPT-G10-B15-P03 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
 | TOP-G10-FUNC-O05 | M2 hàm từng đoạn, điều kiện tại điểm nối, miền mô hình | THPT-G10-B15-P02 → THPT-G10-B15-P04 | *Đã có lời giải ở Kiến thức; dùng ôn lại, không xem như câu mới.* |
+-->
 
-**Tự luận liên quan trong thư viện chung:** HPT-G10-CHVI-WRI-15-01 · HPT-G10-CHVI-WRI-15-02
+Hãy đọc các điểm trên bảng và đồ thị, chỉ ra chỗ nào là dữ liệu thật và chỗ nào chỉ là cách nối mô hình; cuối cùng kiểm xem kết luận tăng/giảm có đúng trên cả miền hay không.
 
-**Bài công khai tự luyện thêm:** DRAFT-T1-M2-APP05 · DRAFT-T1-M2-APP06 · DRAFT-T1-M2-APP07 · DRAFT-T1-M2-WR01. Đây là câu trong mục bổ sung phía dưới, không phải bài đánh giá kín.
 
-**Nếu chưa hiểu:** Nếu kết luận từ 1–2 điểm hoặc vẽ nối chấm rỗng, quay lại Kiến thức M2: bảng mốc, hai đồ thị cùng điểm, điều kiện tại chỗ đổi nhánh. B15-P02 đã có giải thích ở phần Kiến thức SGK nên dùng **ôn luyện**; B15-P04 thêm vận dụng điều kiện ngưỡng ngân sách.
+<!-- AUTHORING_WRITTEN_SHARED_IDS: HPT-G10-CHVI-WRI-15-01 · HPT-G10-CHVI-WRI-15-02 -->
+
+**Tự luận.** Em hãy trình bày đầy đủ điều kiện và lý do giải trên giấy, sau đó tự đối chiếu với lời giải hoặc rubric của thư viện dùng chung.
+
+<!-- AUTHORING_PUBLIC_EXTRA_EXERCISE_IDS: DRAFT-T1-M2-APP05 · DRAFT-T1-M2-APP06 · DRAFT-T1-M2-APP07 · DRAFT-T1-M2-WR01. Đây là câu trong mục bổ sung phía dưới, không phải bài đánh giá kín. -->
+
+Những bài luyện sâu hơn nằm ở phần **Luyện bổ sung** bên dưới; em chỉ cần chọn khi muốn thử một cách lập luận khác hoặc khắc phục đúng lỗi vừa gặp.
+
+Nếu kết luận từ 1–2 điểm hoặc vẽ nối chấm rỗng, quay lại Kiến thức M2: bảng mốc, hai đồ thị cùng điểm, điều kiện tại chỗ đổi nhánh. B15-P02 đã có giải thích ở phần Kiến thức SGK nên dùng **ôn luyện**; B15-P04 thêm vận dụng điều kiện ngưỡng ngân sách.
 
 
 ## M3 · Parabol, biến đổi, tối ưu trên đúng miền
 
 Hãy xác định đúng a≠0, dạng đỉnh, trục, miền xét rồi mới kết luận cực trị hoặc tối ưu. Phân biệt phép lấy trị tuyệt đối ở đầu vào và đầu ra.
 
+<!-- AUTHORING_SHARED_BANK_MATRIX_M3: one canonical item source, multiple topic placement roles; RELEASE renders actual question bodies from common bank, never display this table to learners.
 | Outcome | Năng lực cần luyện | Một nguồn bài gốc, nhiều vị trí dùng | Lưu ý để luyện đúng |
 |---|---|---|---|
 | TOP-G10-FUNC-O06 | M3 nhận biết hàm bậc hai và điều kiện a≠0 | THPT-G10-TOP-FUNC-P02 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
@@ -1480,18 +1503,27 @@ Hãy xác định đúng a≠0, dạng đỉnh, trục, miền xét rồi mới 
 | TOP-G10-FUNC-O08 | M3 hình dạng, giao trục, delta/đối xứng | THPT-G10-TOP-FUNC-P04 → THPT-G10-CHVI-APP-A2 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
 | TOP-G10-FUNC-O09 | M3 đơn điệu và cực trị trên miền hạn chế | THPT-G10-TOP-FUNC-P05 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
 | TOP-G10-FUNC-O10 | M3 lập mô hình, miền phù hợp, đơn vị/giá trị tối ưu | THPT-G10-TOP-FUNC-P06 → THPT-G10-CHVI-APP-B3 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
+-->
 
-**Tự luận liên quan trong thư viện chung:** HPT-G10-CHVI-WRI-15-01 · HPT-G10-CHVI-WRI-15-02
+Đưa parabol về dạng đỉnh, kiểm giao trục và miền bài toán; sau đó thử cực trị trên miền bị giới hạn và phân biệt trị tuyệt đối ở đầu vào với đầu ra.
 
-**Bài công khai tự luyện thêm:** DRAFT-T1-M3-APP07 · DRAFT-T1-M3-APP09 · DRAFT-T1-M3-WR02. Đây là câu trong mục bổ sung phía dưới, không phải bài đánh giá kín.
 
-**Nếu chưa hiểu:** Nếu chọn đỉnh ngoài miền hoặc đổi nhầm |f(x)| với f(|x|), quay lại Kiến thức M3: dạng bình phương, miền và hai máy đầu vào/đầu ra. A2 dùng cùng biểu thức với ví dụ đã được giải ở Kiến thức, nên dùng **ôn luyện**; phần giao Ox của A2 là một yêu cầu bổ sung. B3 mới là bài tổng hợp ứng dụng miền, diện tích, cực trị và điều kiện ngưỡng.
+<!-- AUTHORING_WRITTEN_SHARED_IDS: HPT-G10-CHVI-WRI-15-01 · HPT-G10-CHVI-WRI-15-02 -->
+
+**Tự luận.** Em hãy trình bày đầy đủ điều kiện và lý do giải trên giấy, sau đó tự đối chiếu với lời giải hoặc rubric của thư viện dùng chung.
+
+<!-- AUTHORING_PUBLIC_EXTRA_EXERCISE_IDS: DRAFT-T1-M3-APP07 · DRAFT-T1-M3-APP09 · DRAFT-T1-M3-WR02. Đây là câu trong mục bổ sung phía dưới, không phải bài đánh giá kín. -->
+
+Những bài luyện sâu hơn nằm ở phần **Luyện bổ sung** bên dưới; em chỉ cần chọn khi muốn thử một cách lập luận khác hoặc khắc phục đúng lỗi vừa gặp.
+
+Nếu chọn đỉnh ngoài miền hoặc đổi nhầm |f(x)| với f(|x|), quay lại Kiến thức M3: dạng bình phương, miền và hai máy đầu vào/đầu ra. A2 dùng cùng biểu thức với ví dụ đã được giải ở Kiến thức, nên dùng **ôn luyện**; phần giao Ox của A2 là một yêu cầu bổ sung. B3 mới là bài tổng hợp ứng dụng miền, diện tích, cực trị và điều kiện ngưỡng.
 
 
 ## M4 · Lượng giác, mũ và lôgarit
 
 Tự giải thích cơ số, miền và chu kỳ trước khi tính. Với mỗi đồ thị, đọc chỗ không xác định và đơn vị góc/thời gian, tránh học thuộc chiều cong.
 
+<!-- AUTHORING_SHARED_BANK_MATRIX_M4: one canonical item source, multiple topic placement roles; RELEASE renders actual question bodies from common bank, never display this table to learners.
 | Outcome | Năng lực cần luyện | Một nguồn bài gốc, nhiều vị trí dùng | Lưu ý để luyện đúng |
 |---|---|---|---|
 | TOP-FUNC-M4-O01 | Xét chẵn/lẻ qua miền và \(f(-x)\) | THPT-G11-B03-C02 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
@@ -1504,16 +1536,23 @@ Tự giải thích cơ số, miền và chu kỳ trước khi tính. Với mỗi
 | TOP-FUNC-M4-O08 | Hiểu lôgarit là hàm ngược, miền/range/chiều biến thiên | THPT-G11-CHVI-B20-C04 → THPT-G11-CHVI-B20-C03 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
 | TOP-FUNC-M4-O09 | Giải toán miền/điểm đồ thị log, đặc biệt phép dịch | THPT-G11-CHVI-B20-C03 → THPT-G11-CHVI-B20-P01 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
 | TOP-FUNC-M4-O10 | Biết giới hạn của mô hình tăng trưởng/dao động và chuyển đổi đầu vào | THPT-G11-CHVI-B20-P04 → THPT-G11-B03-P08 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
+-->
 
-**Tự luận liên quan trong thư viện chung:** THPT-G11-CHI-W03 · THPT-G11-CHVI-B20-W01 · THPT-G11-CHVI-B20-W02-ANCHOR
+Hãy phân biệt đối xứng với chu kỳ, đọc từng nhánh của các đồ thị lượng giác, rồi chuyển sang hàm mũ và lôgarit để giải bài toán tiến và bài toán ngược.
 
-**Nếu chưa hiểu:** Nếu quên điều kiện cơ số, quên điểm loại tan/cot hoặc nhầm chu kỳ với biên độ, quay lại M4.2–M4.5 rồi tự đọc đồ thị.
+
+<!-- AUTHORING_WRITTEN_SHARED_IDS: THPT-G11-CHI-W03 · THPT-G11-CHVI-B20-W01 · THPT-G11-CHVI-B20-W02-ANCHOR -->
+
+**Tự luận.** Em hãy trình bày đầy đủ điều kiện và lý do giải trên giấy, sau đó tự đối chiếu với lời giải hoặc rubric của thư viện dùng chung.
+
+Nếu quên điều kiện cơ số, quên điểm loại tan/cot hoặc nhầm chu kỳ với biên độ, quay lại M4.2–M4.5 rồi tự đọc đồ thị.
 
 
 ## M5 · Giới hạn và tính liên tục
 
 Tập tách giá trị thực tại điểm khỏi giới hạn hai phía; kiểm khả năng liên tục trước khi dùng định lí về nghiệm, không suy duy nhất từ đổi dấu.
 
+<!-- AUTHORING_SHARED_BANK_MATRIX_M5: one canonical item source, multiple topic placement roles; RELEASE renders actual question bodies from common bank, never display this table to learners.
 | Outcome | Năng lực cần luyện | Một nguồn bài gốc, nhiều vị trí dùng | Lưu ý để luyện đúng |
 |---|---|---|---|
 | TOP-FUNC-M5-O01 | Khác biệt giá trị tại a / giới hạn gần a, TRY01, EX01, P07 | THPT-G11-CHV-B16-C01 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
@@ -1525,16 +1564,23 @@ Tập tách giá trị thực tại điểm khỏi giới hạn hai phía; kiể
 | TOP-FUNC-M5-O07 | Liên tục trên khoảng/đoạn, đầu mút, TRY05, EX05–06, P11 | THPT-G11-CHV-B17-C03 → THPT-G11-CHV-B17-P05 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
 | TOP-FUNC-M5-O08 | Giải thích định lí đổi dấu và giới hạn kết luận, TRY06, EX07–08, P09 | THPT-G11-CHV-B17-P03 → THPT-G11-CHV-B17-P07 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
 | TOP-FUNC-M5-O09 | Đọc đồ thị có lỗ/bậc nhảy/tiệm cận và không ngoại suy mô hình, P07/09/10 | THPT-G11-CHV-B16-P07 → THPT-G11-CHV-B17-C02 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
+-->
 
-**Tự luận liên quan trong thư viện chung:** THPT-G11-CHV-B16-W01 · THPT-G11-CHV-B16-W02-ANCHOR · THPT-G11-CHV-B17-W01 · THPT-G11-CHV-B17-W02-ANCHOR
+Từ một điểm có lỗ hoặc bước nhảy, hãy xét giới hạn hai phía và liên tục; khi dùng định lí về nghiệm, em cần nói rõ những điều kiện khiến kết luận có cơ sở.
 
-**Nếu chưa hiểu:** Nếu nhầm f(a) với giới hạn, quên xét hai phía hoặc áp dụng định lí không đủ giả thiết, quay lại M5.1–M5.7 theo lỗi đã gặp.
+
+<!-- AUTHORING_WRITTEN_SHARED_IDS: THPT-G11-CHV-B16-W01 · THPT-G11-CHV-B16-W02-ANCHOR · THPT-G11-CHV-B17-W01 · THPT-G11-CHV-B17-W02-ANCHOR -->
+
+**Tự luận.** Em hãy trình bày đầy đủ điều kiện và lý do giải trên giấy, sau đó tự đối chiếu với lời giải hoặc rubric của thư viện dùng chung.
+
+Nếu nhầm f(a) với giới hạn, quên xét hai phía hoặc áp dụng định lí không đủ giả thiết, quay lại M5.1–M5.7 theo lỗi đã gặp.
 
 
 ## M6 · Đạo hàm, tiếp tuyến và tốc độ tức thời
 
 Đặt câu hỏi về đại lượng cần đo (độ dốc, tốc độ hay gia tốc), kiểm miền trước khi đạo hàm, và luôn dùng đúng điểm tiếp xúc trong phương trình tiếp tuyến.
 
+<!-- AUTHORING_SHARED_BANK_MATRIX_M6: one canonical item source, multiple topic placement roles; RELEASE renders actual question bodies from common bank, never display this table to learners.
 | Outcome | Năng lực cần luyện | Một nguồn bài gốc, nhiều vị trí dùng | Lưu ý để luyện đúng |
 |---|---|---|---|
 | TOP-FUNC-M6-O01 | average→instantaneous | THPT-G11-CHIX-B31-C01 → THPT-G11-CHIX-B31-P01 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
@@ -1546,16 +1592,23 @@ Tập tách giá trị thực tại điểm khỏi giới hạn hai phía; kiể
 | TOP-FUNC-M6-O07 | second derivative and curvature clue | THPT-G11-CHIX-B33-C01 → THPT-G11-CHIX-B33-P03 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
 | TOP-FUNC-M6-O08 | velocity vs acceleration and signs/units | THPT-G11-CHIX-B31-C09 → THPT-G11-CHIX-B33-P05 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
 | TOP-FUNC-M6-O09 | choose method/limits and self-remediate | THPT-G11-CHIX-CHIX-C01 → THPT-G11-CHIX-CHIX-P01 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
+-->
 
-**Tự luận liên quan trong thư viện chung:** THPT-G11-CHIX-B31-W01 · THPT-G11-CHIX-B31-W02 · THPT-G11-CHIX-B31-W03 · THPT-G11-CHIX-B32-W01 · THPT-G11-CHIX-B32-W02 · THPT-G11-CHIX-B32-W03 · THPT-G11-CHIX-B33-W01 · THPT-G11-CHIX-B33-W02 · THPT-G11-CHIX-B33-W03
+Thử ước lượng độ dốc từ cát tuyến, lập phương trình tiếp tuyến qua đúng điểm, phân biệt khả vi với liên tục, rồi sử dụng đạo hàm để nói về tốc độ và gia tốc.
 
-**Nếu chưa hiểu:** Nếu dùng đạo hàm ngoài miền, coi f′=0 luôn là cực trị hay quên điểm tiếp tuyến, quay lại M6.2–M6.4 và thử cát tuyến hai phía.
+
+<!-- AUTHORING_WRITTEN_SHARED_IDS: THPT-G11-CHIX-B31-W01 · THPT-G11-CHIX-B31-W02 · THPT-G11-CHIX-B31-W03 · THPT-G11-CHIX-B32-W01 · THPT-G11-CHIX-B32-W02 · THPT-G11-CHIX-B32-W03 · THPT-G11-CHIX-B33-W01 · THPT-G11-CHIX-B33-W02 · THPT-G11-CHIX-B33-W03 -->
+
+**Tự luận.** Em hãy trình bày đầy đủ điều kiện và lý do giải trên giấy, sau đó tự đối chiếu với lời giải hoặc rubric của thư viện dùng chung.
+
+Nếu dùng đạo hàm ngoài miền, coi f′=0 luôn là cực trị hay quên điểm tiếp tuyến, quay lại M6.2–M6.4 và thử cát tuyến hai phía.
 
 
 ## M7 · Khảo sát, cực trị và tối ưu
 
 Gắn bảng dấu, tiệm cận, cực trị với đúng miền được hỏi. Khi tối ưu mô hình, phân biệt x liên tục, x nguyên, đầu mút thuộc hay không thuộc miền.
 
+<!-- AUTHORING_SHARED_BANK_MATRIX_M7: one canonical item source, multiple topic placement roles; RELEASE renders actual question bodies from common bank, never display this table to learners.
 | Outcome | Năng lực cần luyện | Một nguồn bài gốc, nhiều vị trí dùng | Lưu ý để luyện đúng |
 |---|---|---|---|
 | TOP-FUNC-M7-O01 | sign of f' and monotonicity | THPT-G12-CHI-B01-C02 → THPT-G12-CHI-B01-P02 → THPT-G12-TOP-FUNC-P01 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
@@ -1568,10 +1621,16 @@ Gắn bảng dấu, tiệm cận, cực trị với đúng miền được hỏi
 | TOP-FUNC-M7-O08 | optimize on feasible continuous interval | THPT-G12-CHI-B05-C04 → THPT-G12-CHI-B05-P04 → THPT-G12-CHI-B05-P05 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
 | TOP-FUNC-M7-O09 | distinguish discrete and continuous optima | THPT-G12-CHI-B05-P04 → THPT-G12-CHI-B05-C04 → THPT-G12-TOP-FUNC-P02 | So thêm nghiệm nguyên với tối ưu trên biến liên tục. |
 | TOP-FUNC-M7-O10 | explain meaning of derivative rate in units | THPT-G12-CHI-B05-C01 → THPT-G12-CHI-B05-C03 → THPT-G12-CHI-B05-P03 | Trước khi mở lời giải, nêu lý do chọn phương pháp. |
+-->
 
-**Tự luận liên quan trong thư viện chung:** THPT-G12-CHI-B01-W01 · THPT-G12-CHI-B01-W02 · THPT-G12-CHI-B02-W01 · THPT-G12-CHI-B02-W02 · THPT-G12-CHI-B03-W01 · THPT-G12-CHI-B03-W02 · THPT-G12-CHI-B04-W01 · THPT-G12-CHI-B04-W02 · THPT-G12-CHI-B05-W01 · THPT-G12-CHI-B05-W02
+Đọc dấu đạo hàm trên từng khoảng trong miền, xác định cực trị, tiệm cận và giá trị lớn nhất/nhỏ nhất; cuối cùng giải một tình huống tối ưu có giới hạn thực tế.
 
-**Nếu chưa hiểu:** Nếu ghi vô cực là GTNN/GTLN, nối đồ thị qua điểm loại hoặc tối ưu ngoài miền, quay lại M7.1–M7.5 và M1 về miền khả thi.
+
+<!-- AUTHORING_WRITTEN_SHARED_IDS: THPT-G12-CHI-B01-W01 · THPT-G12-CHI-B01-W02 · THPT-G12-CHI-B02-W01 · THPT-G12-CHI-B02-W02 · THPT-G12-CHI-B03-W01 · THPT-G12-CHI-B03-W02 · THPT-G12-CHI-B04-W01 · THPT-G12-CHI-B04-W02 · THPT-G12-CHI-B05-W01 · THPT-G12-CHI-B05-W02 -->
+
+**Tự luận.** Em hãy trình bày đầy đủ điều kiện và lý do giải trên giấy, sau đó tự đối chiếu với lời giải hoặc rubric của thư viện dùng chung.
+
+Nếu ghi vô cực là GTNN/GTLN, nối đồ thị qua điểm loại hoặc tối ưu ngoài miền, quay lại M7.1–M7.5 và M1 về miền khả thi.
 
 
 ### Sử dụng bài vận dụng cuối Chương VI ngay trong Chuyên đề
