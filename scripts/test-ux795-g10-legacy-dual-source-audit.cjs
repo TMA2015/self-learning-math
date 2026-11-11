@@ -20,21 +20,16 @@ const ledger=read(root,"prototypes/thpt/ux795/UX795_G10_KNOWLEDGE_RELEASE_SOURCE
 const matches=ledger.split("\n").map(line=>line.match(/^\|\s*B(\d{2})\s*\|\s*([IVX]+)\s*\|\s*\x60([a-f0-9]{40})\x60\s*\|\s*\x60([a-f0-9]{40})\x60\s*\|\s*$/)).filter(Boolean);
 assert.equal(matches.length,27,"Expected 27 source ledger rows");
 const rows=new Map(matches.map(m=>["B"+m[1],{main:m[3],candidate:m[4]}]));
-const tests=[
- ["scripts/test-thpt-academic-presentation-pilot.cjs","96f07b15222bfd0561b6c4f8c8909853e5fa98ed"],
- ["scripts/test-thpt-chvi-math-block-render.cjs","6763e3e284db19b15ce71da76463b65814ba1fd2"]
-];
-// Source TEST scripts evolve by design; their historical code SHA is not an academic-content gate.
-// Preserve baseline/candidate LESSON Git blobs, the canonical IDs and math; do not pin whole test-script bytes.
-for(const [p] of tests)assert(read(baselineRoot,p).length>100,"Baseline test script unavailable: "+p);
-assert(read(root,tests[0][0]).toString("utf8").includes('acceptedCandidateSha("B09")'),"Candidate B09 gate has no SHA-based migration");
-assert(read(root,tests[1][0]).toString("utf8").includes("candidateSourceSha(lesson)"),"Candidate ChVI gate has no source-based migration");
-const pilot=read(root,tests[0][0]).toString("utf8");
-const chvi=read(root,tests[1][0]).toString("utf8");
-const frozen=JSON.parse(pilot.match(/const frozen=(\[[\s\S]*?\]);/)[1]);
-assert.equal(frozen.length,30);
-const oldFNV=pilot.match(/assert\.equal\(fnv\(src\),"([a-f0-9]{8})"/)[1];
-const fnv=s=>{let h=2166136261;for(let i=0;i<s.length;i++)h=Math.imul(h^s.charCodeAt(i),16777619);return (h>>>0).toString(16).padStart(8,"0")};
+// Explicit immutable data witness carried forward from the historic B09
+// source-check fixture (pre-governance commit d0fde1b), not text inside a
+// separately evolving test implementation. Never pin bytes of another test.
+const historicalMainB09FNV="caa5d2b4";
+const frozen=["k\\in\\mathbb R","\\vec u","k\\vec u","|k\\vec u|=|k|\\,|\\vec u|","\\vec u\\ne\\vec0","k>0","k\\vec u","\\vec u","k<0","k=0","\\vec u=\\vec0","k\\vec u=\\vec0","k(\\vec u+\\vec v)=k\\vec u+k\\vec v","(k+m)\\vec u=k\\vec u+m\\vec u","k(m\\vec u)=(km)\\vec u","1\\vec u=\\vec u","(-1)\\vec u=-\\vec u","\\vec u","\\vec v","t\\ne0","\\vec v=t\\vec u","M","AB","\\overrightarrow{AM}=\\tfrac12\\overrightarrow{AB}","G","ABC","M","BC","\\overrightarrow{AG}=\\tfrac23\\overrightarrow{AM}=\\tfrac13(\\overrightarrow{AB}+\\overrightarrow{AC}), \\quad \\overrightarrow{GA}+\\overrightarrow{GB}+\\overrightarrow{GC}=\\vec0.","k"];
+assert.equal(frozen.length,30,"B09 historic 30-expression witness must be complete");
+const chvi=read(root,"scripts/test-thpt-chvi-math-block-render.cjs").toString("utf8");
+assert(chvi.includes("candidateSourceSha(lesson)"),
+  "ChVI must still bind source to the 27-row exact candidate ledger");
+const fnv=s=>{let h=2166136261;for(let i=0;i<s.length;i++)h=Math.imul(h^s.charCodeAt(i),16777619);return(h>>>0).toString(16).padStart(8,"0")};
 const getIDs=s=>({
  first:[...s.matchAll(/data-thpt-first-try-id="([^"]+)"/g)].map(x=>x[1]).sort(),
  help:[...s.matchAll(/data-thpt-help-id="([^"]+)"/g)].map(x=>x[1]).sort(),
@@ -61,7 +56,8 @@ for(const [name,chapter,num]of specs){
     .map(x=>(x[1]??x[2]??x[3]).trim().replace(/\s+/g," "));
   assert(actual.some((_,i)=>i+30<=actual.length&&frozen.every((v,j)=>actual[i+j]===v)),
     "B09 protected original 30 math expressions lost or reordered");
-  assert.notEqual(fnv(s),oldFNV,"B09 not changed; migration not applicable");
+  assert.equal(fnv(base),historicalMainB09FNV,"B09 baseline must match historic reviewed snapshot");
+   assert.notEqual(fnv(s),historicalMainB09FNV,"B09 candidate must be a traceable Delta C, not the old snapshot");
   assert.equal(ids.first.length,5);assert.equal(ids.help.length,2);
   console.log("PASS EVIDENCE B09: 30/30 original math; 5 FirstTry/2 HELP; old+new source hashes");
  }else{
@@ -79,5 +75,5 @@ for(const [name,chapter,num]of specs){
  assert.notDeepEqual(getIDs(mutated),getIDs(base),name+" negative canonical-ID mutation must be caught");
  assert.notEqual(blob(Buffer.from(s+" ","utf8")),row.candidate,name+" negative source-drift mutation must be caught");
 }
-console.log("PASS DRAFT DUAL-SOURCE EVIDENCE: 5/5 lessons; 27-row ledger; original baseline + current candidate immutable; legacy tests unchanged.");
+console.log("PASS DUAL-SOURCE MATH EVIDENCE: five lessons, 27-row SHA ledger, B09 historic 30 expressions, immutable source and canonical IDs; no obsolete test-file textual gate.");
 console.log("NOT an Academic/PED PASS, NOT authorized Q18 self-QA, NOT a substitute for official R4/Roadmap; NO DEPLOY.");
