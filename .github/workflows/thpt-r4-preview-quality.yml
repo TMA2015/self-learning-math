@@ -74,6 +74,7 @@ on:
       - 'review-packets/thpt-g10-b16-r4/**'
       - 'scripts/serve-thpt-r4-lan-preview.ps1'
       - 'scripts/test-thpt-r4-preview-browser.js'
+      - 'scripts/test-thpt-knowledge-model-v3.cjs'
       - 'scripts/test-thpt-g10-chvii-reviewed-stage1.cjs'
       - 'scripts/test-thpt-g10-chviii-reviewed-stage2.cjs'
       - 'scripts/test-thpt-g10-d6-release-integration.cjs'
@@ -183,9 +184,8 @@ on:
       - 'scripts/test-thpt-g10-sgk-display-ui.cjs'
       - 'scripts/test-thpt-chvi-student-notes.cjs'
       - 'scripts/test-thpt-release-queue.cjs'
-      - 'scripts/test-ux795-g10-*.cjs'
-      - 'scripts/test-thpt-q18-release-test-router.cjs'
       - 'scripts/test-thpt-handoff-gate-v2.cjs'
+      - 'scripts/test-thpt-topic-knowledge-tabs-v3.cjs'
       - 'prototypes/thpt/release-queue/**'
       - '.github/workflows/thpt-r4-preview-quality.yml'
 
@@ -210,22 +210,18 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Route G10 legacy vs Model B QA by exact Q18 candidate source (fail closed)
-        id: g10_route
-        run: |
-          node scripts/test-thpt-q18-release-test-router.cjs --self-test
-          node scripts/test-thpt-q18-release-test-router.cjs
-      - name: Model B 27-page source, 19 math/outcome and 11 SVG checks (replaces obsolete G10 source layout gates)
-        if: steps.g10_route.outputs.candidate == 'true'
-        run: |
-          node scripts/test-ux795-g10-source-candidate-lock.cjs
-          node scripts/test-ux795-g10-chvi-ped-mapping.cjs
-          node scripts/test-ux795-g10-chvi-worked-math.cjs
-          node scripts/test-ux795-g10-figure-math.cjs
-          node scripts/test-thpt-shared-item-placement.cjs
-          node scripts/test-floating-ai-tutor-v1.js
       - name: Install MkDocs Material
         run: python -m pip install 'mkdocs-material>=9,<10'
+      - name: Check Model B 4-tab learner Knowledge source and negative layout fixtures
+        run: |
+          node --check scripts/test-thpt-knowledge-model-v3.cjs
+          node scripts/test-thpt-knowledge-model-v3.cjs --self-test
+          node scripts/test-thpt-knowledge-model-v3.cjs
+      - name: Topic 3-page navigation, horizontal Knowledge tabs and negative UX fixtures
+        run: |
+          node --check scripts/test-thpt-topic-knowledge-tabs-v3.cjs
+          node scripts/test-thpt-topic-knowledge-tabs-v3.cjs --self-test
+          node scripts/test-thpt-topic-knowledge-tabs-v3.cjs
       - name: Check concise THPT Knowledge titles and protected route scope
         run: python scripts/test_thpt_knowledge_short_labels.py
       - name: Validate scoped THPT JavaScript syntax
@@ -308,7 +304,6 @@ jobs:
           node scripts/test-self-learning-math-rename-preflight.cjs
           for js in             docs/assets/javascripts/sticky-nav-v1.js             docs/assets/javascripts/anchor-library-v1.js             docs/assets/javascripts/anchor-topic-related-v1.js             docs/assets/javascripts/model-examples-library-v1.js             docs/assets/javascripts/written-exercise-library-v1.js             docs/assets/javascripts/topic25-exam-engine-v1.js             docs/assets/javascripts/route-module-loader-v1.js             docs/assets/javascripts/route-module-loader-v2.js; do node --check "$js"; done
       - name: Guard AP presentation pilot source math and teaching content (no deploy)
-        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-academic-presentation-pilot.cjs
       - name: Guard G11 all SGK learner headings, numbering and math UI — existing and future chapters (no deploy)
         run: node scripts/test-thpt-g11-learner-presentation-source.cjs
@@ -343,10 +338,8 @@ jobs:
       - name: Guard G11 B01 source-locked Knowledge presentation (no deploy)
         run: node scripts/test-thpt-g11-b01-ap-parity.cjs
       - name: Guard G10 B03 Knowledge AP source parity (no deploy)
-        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-g10-b03-ap-parity.cjs
       - name: Guard AP vector source lock G10 B07/B08/B10 (no deploy)
-        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-ap-vector-knowledge-parity.cjs
       - name: Verify Topic/SGK V2 effective normative version and private RD1 compatibility (no deploy)
         run: node scripts/test-thpt-handoff-gate-v2.cjs --self-test
@@ -357,71 +350,55 @@ jobs:
       - name: Guard one Golden VII chapter overview across all published SGK chapters
         run: node scripts/test-thpt-chapter-overview-golden-vii.cjs
       - name: Guard G10 SGK example headings and display math source
-        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-g10-sgk-display-ui.cjs
       - name: Guard ChVII–VIII scoped public formative bank and reviewed R02 recovery
-        if: steps.g10_route.outputs.candidate != 'true'
         run: |
           node scripts/test-thpt-g10-chvii-reviewed-stage1.cjs
           node scripts/test-thpt-g10-chviii-reviewed-stage2.cjs
           node scripts/test-thpt-g10-d6-release-integration.cjs
       - name: Guard G10 ChI B01–B02 reviewed canonical, D5/D6 and private-assessment boundary
-        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-g10-chi-release-integration.cjs
       - name: Guard G10 ChII original MCQ and D5/D6/Written
-        if: steps.g10_route.outputs.candidate != 'true'
         run: |
           node scripts/test-thpt-g10-chii-release-integration.cjs
           node scripts/test-thpt-r4-public-formative-interaction.cjs
       - name: Guard G10 ChIII B05/B06 source-locked MCQ and short-answer, D5/D6/Written
-        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-g10-chiii-release-integration.cjs
       - name: Guard G10 ChIV B07/B08 source-locked original items, SVG, Written and D6
-        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-g10-chiv-b07-b08-release-integration.cjs
       - name: Guard G10 ChIV B09–B11 exact source and canonical uniqueness
-        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-g10-chiv-b09-b11-release-integration.cjs
       - name: Guard G10 ChV B12 R02 academic source, exact SVG, 8 canonical, 2 HELP
-        if: steps.g10_route.outputs.candidate != 'true'
         run: |
           node --check docs/assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js
           node --check scripts/test-thpt-g10-chv-b12-reviewed-r02-integration.cjs
           node scripts/test-thpt-g10-chv-b12-reviewed-r02-integration.cjs
       - name: Guard G10 ChV B13-B14 source parity · 16 canonical, 2 SVG, 2 Written, 4 D6
-        if: steps.g10_route.outputs.candidate != 'true'
         run: |
           node --check docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js
           node --check scripts/test-thpt-g10-chv-b13-b14-release-integration.cjs
           node scripts/test-thpt-g10-chv-b13-b14-release-integration.cjs
       - name: Guard G10 ChV FULL R03 exactly 14 reviewed pedagogical outcomes, First Try / D6 and unchanged R01/R02
-        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-g10-chv-full-r03-release.cjs
       - name: Guard G10 ChVI FULL R04 19 concept-first, original four S1 lessons, two SVG and 20 Q16 public selfchecks
-        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-g10-chvi-full-r04-release.cjs
       - name: Guard G10 ChVIII FULL R02 12 source-verbatim First Try/D6 and unchanged 3 SGK lessons/banks
-        if: steps.g10_route.outputs.candidate != 'true'
         run: |
           node --check scripts/test-thpt-g10-chviii-full-r02-release.cjs
           node scripts/test-thpt-g10-chviii-full-r02-release.cjs
       - name: Guard G10 ChIX FULL R02 10 source-verbatim PED First Try/D6 and original 2 SGK lessons/banks
-        if: steps.g10_route.outputs.candidate != 'true'
         run: |
           node --check scripts/test-thpt-g10-chix-full-r02-release.cjs
           node scripts/test-thpt-g10-chix-full-r02-release.cjs
       - name: Guard G10 ChII FULL R03 10 reviewed First Try shared D6 and exact unchanged 14 Q16
-        if: steps.g10_route.outputs.candidate != 'true'
         run: |
           node --check scripts/test-thpt-g10-chii-full-r03-release.cjs
           node scripts/test-thpt-g10-chii-full-r03-release.cjs
       - name: Guard G10 ChVII FULL R03 23 old +2 transfer pedagogy, 2 Written/D5 and frozen Q16
-        if: steps.g10_route.outputs.candidate != 'true'
         run: |
           node --check scripts/test-thpt-g10-chvii-full-r03-release.cjs
           node scripts/test-thpt-g10-chvii-full-r03-release.cjs
       - name: Guard G10 ChIV FULL R04 24 source-approved PED +2 transfer, corrected R01 D5 and 21 frozen Q16
-        if: steps.g10_route.outputs.candidate != 'true'
         run: |
           node --check scripts/test-thpt-g10-chiv-full-r04-release.cjs
           node scripts/test-thpt-g10-chiv-full-r04-release.cjs
@@ -458,12 +435,10 @@ jobs:
           node --check scripts/test-thpt-sgk-selfcheck-p2-browser.cjs
           node scripts/test-thpt-sgk-owner-p2-ui-source.cjs
       - name: Guard G10 ChIX source-locked public formative and reviewed D5/D6
-        if: steps.g10_route.outputs.candidate != 'true'
         run: |
           node scripts/test-thpt-g10-chix-reviewed-stage3.cjs
           node scripts/test-thpt-g10-chix-release-integration.cjs
       - name: Guard Chapter VI academic-snapshot scope and shared canonical items
-        if: steps.g10_route.outputs.candidate != 'true'
         run: |
           node scripts/test-thpt-chvi-review-receipt.cjs
           node scripts/test-thpt-chvi-reviewed-formative.cjs
@@ -513,26 +488,20 @@ jobs:
           mkdocs build --strict
           node scripts/assemble-thpt-site.cjs
           node scripts/test-thpt-chapter-overview-golden-vii.cjs --built
-          if [[ "${{ steps.g10_route.outputs.candidate }}" == "true" ]]; then
-            node scripts/test-ux795-g10-render-draft.cjs
-          else
-              node scripts/test-thpt-chvi-math-block-render.cjs --built
-              node scripts/test-thpt-g10-sgk-display-ui.cjs --built
-              node scripts/test-thpt-g10-chiv-b09-b11-release-integration.cjs --built
-              node scripts/test-thpt-g10-chv-b13-b14-release-integration.cjs --built
-              node scripts/test-thpt-g10-chv-b12-reviewed-r02-integration.cjs --built
-              node scripts/test-thpt-g10-chv-full-r03-release.cjs --built
-              node scripts/test-thpt-g10-chvi-full-r04-release.cjs --built
-              node scripts/test-thpt-g10-chviii-full-r02-release.cjs --built
-              node scripts/test-thpt-g10-chix-full-r02-release.cjs --built
-              node scripts/test-thpt-g10-chii-full-r03-release.cjs --built
-              node scripts/test-thpt-g10-chvii-full-r03-release.cjs --built
-              node scripts/test-thpt-g10-chiv-full-r04-release.cjs --built
-          fi
+          node scripts/test-thpt-chvi-math-block-render.cjs --built
+          node scripts/test-thpt-g10-sgk-display-ui.cjs --built
+          node scripts/test-thpt-g10-chiv-b09-b11-release-integration.cjs --built
+          node scripts/test-thpt-g10-chv-b13-b14-release-integration.cjs --built
+          node scripts/test-thpt-g10-chv-b12-reviewed-r02-integration.cjs --built
+          node scripts/test-thpt-g10-chv-full-r03-release.cjs --built
+          node scripts/test-thpt-g10-chvi-full-r04-release.cjs --built
+          node scripts/test-thpt-g10-chviii-full-r02-release.cjs --built
+          node scripts/test-thpt-g10-chix-full-r02-release.cjs --built
+          node scripts/test-thpt-g10-chii-full-r03-release.cjs --built
+          node scripts/test-thpt-g10-chvii-full-r03-release.cjs --built
+          node scripts/test-thpt-g10-chiv-full-r04-release.cjs --built
           node scripts/test-thpt-g11-chi-b01-b02-release-integration.cjs --built
-          if [[ "${{ steps.g10_route.outputs.candidate }}" != "true" ]]; then
-            node scripts/test-thpt-chvi-student-notes.cjs --built
-          fi
+          node scripts/test-thpt-chvi-student-notes.cjs --built
       - name: Guard G11 ChI protected RD1 exclusion in both built clients
         run: node scripts/test-thpt-g11-chi-public-private-boundary.cjs
       - name: Verify combined build has no backend
@@ -563,9 +532,6 @@ jobs:
           python -m http.server 8765 --directory site > /tmp/thpt-r4-combined-http.log 2>&1 &
           sleep 2
           node scripts/test-thpt-r4-preview-browser.js
-      - name: Q18 Model B browser regression — 27 Knowledge pages x phone/tablet/desktop
-        if: steps.g10_route.outputs.candidate == 'true'
-        run: node scripts/test-ux795-g10-knowledge-browser.cjs
       - name: G10 all 9 chapters Core and Self-check math · 390 / 820 / 1440 · no Q16 leak
         run: node scripts/test-thpt-g10-all9-math-presentation-browser.cjs
       - name: Shared AI Tutor launcher G10/G11/G12 · 390 / 820 / 1440 · no Q16 leak
@@ -581,49 +547,34 @@ jobs:
           node scripts/test-thpt-formative-actions-ui-browser.cjs
           node scripts/test-thpt-interactive-compact-browser.cjs
       - name: ChVI D6 Academic PASS source lock and formative modal QA · desktop/mobile emulation
-        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-chvi-d6-browser-smoke.cjs
       - name: ChI B01/B02 original canonical/D6/D5 browser QA · mobile / iPad / desktop
-        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-g10-chi-browser-smoke.cjs
       - name: ChII B03/B04 browser QA mobile / iPad / desktop
-        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-g10-chii-browser-smoke.cjs
       - name: ChIII B05/B06 browser QA mobile / iPad / desktop
-        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-g10-chiii-browser-smoke.cjs
       - name: ChIV B07/B08 browser QA mobile / iPad / desktop
-        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-g10-chiv-b07-b08-browser-smoke.cjs
       - name: ChIV B09/B10/B11 browser QA mobile / iPad / desktop
-        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-g10-chiv-b09-b11-browser-smoke.cjs
       - name: G10 ChV B12 R02 reviewed SVG and canonical browser QA · 390 820 1440
-        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-g10-chv-b12-reviewed-r02-browser.cjs
       - name: G10 ChV B13/B14 reviewed browser QA · 390 820 1440
-        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-g10-chv-b13-b14-browser-smoke.cjs
       - name: G10 ChV FULL R03 14 source-locked First Try and original Golden/Q16 browser · 390 820 1440
-        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-g10-chv-full-r03-browser.cjs
       - name: G10 ChVI FULL R04 19 First Try 2 SVG 2 new Written post-Final browser · 390 820 1440
-        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-g10-chvi-full-r04-browser.cjs
       - name: G10 ChVIII FULL R02 12 Golden First Try/D6 and 14 Q16 original · 390 820 1440
-        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-g10-chviii-full-r02-browser.cjs
       - name: G10 ChIX FULL R02 10 canonical First Try/D6 and original 6 Q16 · 390 820 1440
-        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-g10-chix-full-r02-browser.cjs
       - name: G10 ChII FULL R03 10 First Try share four D6 and original 14 Q16 · 390 820 1440
-        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-g10-chii-full-r03-browser.cjs
       - name: G10 ChVII FULL R03 25 First Try, 2 D5/Written, original 22 Q16 · 390 820 1440
-        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-g10-chvii-full-r03-browser.cjs
       - name: G10 ChIV FULL R04 26 First Try, 2 corrected R01 D5, 2 new Written/21 Q16 · 390 820 1440
-        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-g10-chiv-full-r04-browser.cjs
       - name: G11 ChI B01/B02 browser QA mobile / tablet / desktop
         run: node scripts/test-thpt-g11-chi-b01-b02-browser-smoke.cjs
