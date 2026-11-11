@@ -1,3 +1,15 @@
+# OWNER OPERATIONAL DECISION — 11/11/2026 · PROCESS RESET (highest current owner instruction)
+
+**AUTHORING IS PAUSED** while a single coordinator updates the ONE quality standard, V2 handoff, tests and workflows. Do **not** continue editing Topic content or promoting packets until the process is approved/merged and validated. This supersedes the earlier #807 comment that AUTHORING could continue concurrently. RELEASE SGK upgrade remains staged, not automatically deployable.
+
+**Future Q18 v3.0 after governance merge:** any Topic (including the two older reviewed Topics, after re-editing, and entirely new Topics) may be academically/pedagogically **self-verified** by the responsible author with genuine S1/source/maths/explanation/items/figures/assessment checks and a source-locked signed `AUTHOR_SELF_QA_RECEIPT`. NotebookLM is optional for uncertain cases, never a mandatory round trip. Don't claim an external reviewer PASS when self-audited. Preserve 18 Q and Q15/Q16/RD1/privacy, Golden, Final Submit, student data.
+
+**UX:** G10 B06 HTML preview's 4 horizontal level-1 tabs are SGK Knowledge model for all 79 lessons; Topic has three independent learner pages, with horizontal Adaptive Knowledge Tabs for subtopics on the long Knowledge page and natural discovery→concept→worked families→mistakes prose. Pilot Topic may use existing authored HTML as a base; review after first Topic release. Shared canonical SGK/Topic Practice+Written and PUBLIC client self-check are allowed; reused exposed items cannot prove held-out independent Readiness/Mastery.
+
+**Release order after workflow synchronization:** G10→G11→G12 SGK Knowledge upgrades first; then Topic website deployment. Content authoring resumes only after the process gate is explicitly closed. No governance PR changes student data or grants merge/deploy on its own. See master Issue #807; canonical v3.0 section X-D is effective only once merged on `main`.
+
+---
+
 
 ## G12 SGK experience supplement — owner operational V2 approval 03/11/2026
 The **one** Q01–Q18 standard covers original SGK experiential units via signed `SGK_EXPERIENCE_SUPPLEMENT / SGK_EXPERIENCE_SUPPLEMENT` V2 intake, with exactly one immutable canonical source, independent receipt, handoff, `ready/` manifest and REGISTER. Public END is `CLIENT_SELF_CHECK_NO_MASTERY`, reusing original Application IDs. No private RD1 or official Readiness; approval to extend AUTHORING handoff is not approval to merge or deploy the site. RELEASE owns AP1–AP5/R1–R5, explicit owner authorization and P1/P2 evidence. Do not merge AUTHORING Draft #733 merely to import its source.
