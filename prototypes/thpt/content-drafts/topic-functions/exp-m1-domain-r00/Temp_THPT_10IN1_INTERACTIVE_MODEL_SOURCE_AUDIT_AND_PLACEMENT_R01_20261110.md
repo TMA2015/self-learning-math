@@ -1,0 +1,67 @@
+# AUTHORING · Kiểm toán 10 mô hình toán HTML5 và phương án sử dụng trong học liệu THPT
+
+**Ngày:** 10/11/2026 · **Tệp chủ dự án cung cấp:** \`mo-hinh-toan-hoc-10-in-1.html\` · **SHA-256 bản gốc:** \`b303b6ed23c47f79f6f49bbb5d42288bebd5c66a6f11e509bed16dce754848db\` · **Phạm vi:** đánh giá nguồn, xác minh toán, lựa chọn mô hình, lập yêu cầu D5. **Không** đưa nguyên bộ lên website hoặc sửa nguồn canonical đã PASS.
+
+## I. Quyết định kiến trúc
+
+**Đưa từng mô hình trực tiếp vào đúng nơi học một kiến thức trong trang \`Kiến thức\`.** Phía người học vẫn duy nhất ba mục **Kiến thức / Luyện tập / Tự kiểm tra**. Các bản đồ/chặng có thể nằm trong trang Kiến thức. **Không đặt một “cổng 10 mô hình” hai tầng tab làm nhánh hành trình thứ ba**, không bắt người học rời bài hiện tại để tìm lại công thức. Nếu sau này muốn có thư viện tra cứu chéo, đó là bổ trợ/tùy chọn, không thay vị trí mô hình ở bài chính.
+
+**Một mô hình canonical, nhiều placement:** HTML/SVG của cùng mô hình được quản lý một \`FIG_ID/MODEL_ID\` và \`source_sha\` duy nhất; nơi học SGK hoặc chuyên đề có thể reuse bằng placement. Bài SGK và Topic phải tự đủ học độc lập. Nội dung của mô hình phải có lời giải thích ngắn về mục đích, cách đọc trục/hình, **dự đoán → tương tác → quan sát → giải thích → Vận dụng → Đối chiếu**. Các bước này là **cấu phần linh hoạt bên trong trang Kiến thức**, không phải template cứng cho mọi bài.
+
+**Giao diện thống nhất:** nền trắng \`#fff\`, header xanh cực nhạt \`#eaf4fa\`, bề mặt mô hình \`#fafdff\`, viền \`#c7dfe9\`, chữ \`#183b54\`, xanh đồ thị chính \`#1687b4\`, xanh thứ hai \`#218f73\`, cam cho một điểm được chọn \`#e9922a\`. Ưu tiên stroke đồ thị khoảng 2,5–2,8 px ở kích thước CSS, điểm bán kính 5–6 px, nét gióng mảnh/dashed; hạn chế tô đặc/đen. Dùng \`system-ui / Segoe UI\` theo website, điều khiển keyboard + touch, focus hiển thị, canvas DPI phù hợp, lời giải thích văn bản độc lập canvas, nội dung offline/no CDN nếu có thể. Tiêu đề \`Vận dụng\`, nút \`Đối chiếu\`. Phần diễn giải lý thuyết phải **đầy đủ, rõ ý, không nén thành khẩu hiệu**.
+
+**Lưu ý tên:** Mã “1–10” trong file này là **số mô hình**, không phải \`TOPIC_ID\` canonical của hai chuyên đề AUTHORING đang mở, cũng không mặc nhiên trùng số thứ tự của bộ Notebook 22 chuyên đề. Placement sẽ được gắn theo \`LESSON_ID/OUTCOME_ID\` thật khi nhập thư viện.
+
+## II. Kết quả kiểm thử file HTML gốc
+
+Đã **thực thi bằng Chromium headless thật**, nạp nguyên HTML qua \`page.set_content\` và thử ở viewport 390, 820, 1440 px. **Lỗi khởi tạo ở cả ba viewport:** \`Cannot read properties of undefined (reading 'add')\` trong \`selectModel\` bởi sử dụng biến \`event\` ngầm; lần tải đầu, khung \`m1_info\` rỗng và canvas ban đầu chưa vẽ. Tab cấp 2 mất trạng thái \`active\` khi chuyển tab cấp 1; điều hướng hiện tại không đạt QA. Giao diện hiện **dark #0f172a / #1e293b**, không cùng hướng Golden light. Biểu thức dạng \`$...$\` là chữ thô trong HTML offline vì không có cơ chế MathJax/MathML được nạp; một số ký tự \`\\frac\` trong JS template string không được escape đúng. Canvas kích thước và nhãn ở mobile cần thiết kế lại. **Không phát hành file gốc dù Chromium có thể vẽ được một số tab khi click thủ công.**
+
+## III. Đánh giá từng mô hình (ưu tiên toán trước thẩm mỹ)
+
+| # | Mô hình từ nguồn gốc | Học liệu đích theo outcome, không theo số tên Notebook | Quyết định | Lỗi/hành động Q01–Q18 |
+|---:|---|---|---|---|
+| 1 | Hệ BPT hai ẩn + mục tiêu tuyến tính | Miền nghiệm, tối ưu tuyến tính và mô hình hóa lớp 10 | **REBUILD_P0** | Đoạn mã lấy \`A=(0,b2/2)\`, \`B=(b1/2,0)\` không luôn thỏa **cả hai** BPT; clip giao C âm về gốc cũng sai. Phải tìm giao tất cả nửa mặt phẳng rồi dựng đa giác khả thi thực, chỉ đánh giá tại **đỉnh khả thi**. “Tối ưu luôn ở đỉnh” chỉ bảo đảm có đỉnh tối ưu cho **đa giác khác rỗng, đóng và bị chặn** với hàm tuyến tính; nếu mô hình bánh bán theo số nguyên thì phải phân biệt tối ưu liên tục với nghiệm nguyên. |
+| 2 | Hàm mũ và log đối xứng qua y=x | Hàm mũ/log, hàm ngược, miền và tính đơn điệu | **ADAPT** | Tại \`a=1\` log cơ số 1 không tồn tại; hiện \`drawM2\` return âm thầm, không thay phần giải thích. Khóa \`0<a≠1\` với 2 nhánh trượt hoặc thông báo rõ; x>0 cho log, bảo đảm đối xứng hai đồ thị cùng hệ trục. |
+| 3 | Đường tròn lượng giác ↔ sóng sin/cos | Chuyên đề lượng giác: radian, sin, cos, chu kỳ | **ADAPT** | Code hiện chỉ vẽ **sin**, không có nút vẽ đường cos như mô tả. Cần hiển thị góc theo **độ và radian**, gióng đúng tung độ sin/hoành độ cos, hai chu kỳ 0..4π/720°, trục/điểm cắt rõ khi mobile. |
+| 4 | Đạo hàm, tiếp tuyến, đồ thị đạo hàm | Chuyên đề 1 hiện hành, M6; có thể reuse vào SGK đạo hàm | **REBUILD_P0** | Phần chữ nguồn viết “\`f'(x_0)=0\` ⇒ cực trị”, **sai nói chung**: \`f(x)=x³\` tại 0 là phản ví dụ. Code **không vẽ đồ thị f'(x)** như phần giới thiệu hứa. Dùng hình secant→tangent, đồ thị f' dưới/ở cạnh, so dấu hai phía; các điều kiện chứng minh cực trị phải đúng. |
+| 5 | Đĩa Riemann cho thể tích tròn xoay | Nguyên hàm–tích phân và ứng dụng thể tích | **REBUILD_PED** | Code vẽ ellipse nhưng **không tính tổng thể tích các đĩa**; chỉ hiển thị đáp án đúng \`8π\`. Với \`f(x)=√x\` trên [0,4], \`f(x)^2=x\` nên tổng Riemann trung điểm **bằng chính xác 8π với mọi n**, không thể minh họa sự *tiệm cận khi n tăng*. Đổi hàm/điểm lấy mẫu và hiển thị \`V_n\`, \`V\`, sai số, giới hạn n→∞; kiểm \`f≥0\` hoặc dùng bán kính \`|f|\` đúng nghĩa. |
+| 6 | Vectơ + tích vô hướng | Chuyên đề 2 hiện hành, phần vectơ phẳng và tích vô hướng | **ADAPT** | Giá trị \(|u||v|\cos α\) trong code đúng khi hai vectơ không-zero, nhưng code chỉ trượt góc/độ dài; **chưa kéo tự do hai đầu vectơ, chưa dựng hình bình hành** như phần mô tả. Giữ trực giác về dấu tích vô hướng (dương, zero, âm), bổ sung thành phần chiếu và điều kiện độ dài khác 0. |
+| 7 | Khoảng cách tới mặt (SBC) khối chóp | Hình học không gian, đường vuông góc chung/chân chiếu | **HOLD_P0_MATH** | Hình gốc gán H bằng trung bình vị trí ba điểm và viết \`AH⊥SB⇒AH⊥(SBC)\` dù chỉ có \`SA⊥(ABC)\`. Thiếu điều kiện như \`AB⊥BC\` để suy \`BC⊥(SAB)\`; H cũng **không được dựng bằng phép chiếu** thực và slider góc xoay **không được dùng**. Bỏ nguyên hình khỏi học liệu; dựng tọa độ 3D thực có đủ giả thiết rồi tính chân đường vuông góc và kiểm dot-product trước khi dùng. |
+| 8 | Mặt cầu cắt mặt phẳng | Chuyên đề 2 hiện hành, **sau B17**, phần 7/7 | **REUSE_REBUILT_MODEL** | File nguồn nhóm \`d=R\` chung với \`d>R\`, làm mờ ranh giới **tiếp xúc một điểm** và **không giao**. **Đã có mô hình AUTHORING độc lập** \`Temp_TOPIC2_P07_SPHERE_PLANE_INTERSECTION_LAB_D5_R00_20261110.html\` tại PR #793 (R=5, mặt z=t, t=−6..6, trượt góc nhìn, cả ba trạng thái). **Không** clone thêm mô hình #8; chỉ QA và dùng \`MODEL_ID\` chung sau duyệt. |
+| 9 | Bayes xét nghiệm | Chuyên đề xác suất có điều kiện/Bayes | **REBUILD_CONTEXT** | Mặc định \`P(B)=1%, sensitivity=95%, false-positive=5%\` cho \`P(B|T+)\approx16,1%\` **đúng toán**, nhưng slider chỉ điều chỉnh độ nhạy, **khóa false-positive ở 5%**, phần giải thích dùng chữ “xét nghiệm chính xác 95%” mơ hồ. Cần slider độ đặc hiệu hoặc dương tính giả, sơ đồ đủ **4 nhánh** và bảng số người kỳ vọng trong 10.000 người; đây chỉ là mô hình xác suất minh họa, không suy kết luận y khoa cá nhân. |
+| 10 | Thống kê ghép nhóm | Thống kê mô tả, số đặc trưng và ngoại lệ | **REBUILD_SCOPE** | Code chỉ tính **trung bình từ trung điểm lớp**; **không tính hoặc hiển thị trung vị, Q1/Q2/Q3** dù phần giới thiệu hứa. Phải ghi rõ các đặc trưng từ bảng ghép nhóm là **ước lượng theo quy ước SGK**, không phải trung vị/tứ phân vị chính xác của dữ liệu gốc; tạo cột tần số tích lũy, vị trí nhóm chứa Q, giải thích lệch/phân phối. |
+
+### Kiểm toán số độc lập cho các điểm nguy hiểm
+
+1. **#1 phản ví dụ:** b1=4, b2=12 ⇒ điểm A code gán (0,6), nhưng \(2·0+6=6>4\), **không thuộc miền nghiệm**; b1=12, b2=4 ⇒ B code gán (6,0), nhưng \(6+2·0=6>4\). Không được tối ưu tại hai điểm đó.
+2. **#4 phản ví dụ:** \(f(x)=x^3\), \(f'(0)=0\), nhưng x³ tăng nghiêm ngặt qua 0 nên 0 **không** là cực trị.
+3. **#5:** \(\Delta x=4/n\), mẫu trung điểm \(x_i=(i+\tfrac12)\Delta x\); \(V_n=\sum\pi (\sqrt{x_i})^2\Delta x=8\pi\) với n=2,4,10,40 đều chính xác; kéo slider **không minh họa hội tụ số** như dự định.
+4. **#7 phản ví dụ hình học:** A=(0,0,0), B=(2,0,0), C=(3,1,0), S=(0,0,4). Dù SA⊥(ABC), H là hình chiếu thật của A lên SB có H=(1,6;0;0,8), \(\vec{AH}=(1,6;0;0,8)\), \(\vec{BC}=(1;1;0)\), tích vô hướng **1,6≠0**, nên \(AH\) **không vuông góc** mặt (SBC).
+5. **#9:** \(0,01·0,95/(0,01·0,95+0,99·0,05)\approx0,1610169\), tức 16,1%, **đúng** khi phân biệt rõ sensitivity và false-positive. Không gắn thông điệp y khoa ngoài tình huống giả định.
+
+## IV. Tiến trình triển khai trong AUTHORING (không sửa RELEASE)
+
+- **Ưu tiên hoàn tất hai chuyên đề đang mở:** trước hết mô hình #4 cho M6 Hàm số & đồ thị và #6 cho mạch vectơ; #8 **reuse** mô hình mặt cầu đã có; #7 **HOLD cho đến khi sửa toán**. #2/#3/#5/#9/#10 sẽ chỉ đưa vào các chuyên đề tương ứng khi đến mạch; tránh làm dàn trải và tự mở chuyên đề mới ngoài phạm vi.
+- **Gói mỗi mô hình:** file HTML/SVG nguồn canonical tự chứa; \`MODEL_ID\`, \`PLACEMENT/OUTCOME_ID\`, giả thiết/mục tiêu học tập, lời dẫn, cách sử dụng, nhãn trục/đơn vị, phép thử các mốc/bất thường, lời Vận dụng và Đối chiếu; chứng cứ QA và Git blob. Một câu hỏi có một \`item_id\`, nếu dùng lại ở SGK/Topic thì thêm placement/role, không nhân bản.
+- **Học thuật:** các SVG/HTML chỉ thay cách hiển thị toán **tương đương snapshot PASS** có thể xét \`DELTA_B\` sau chứng cứ parity. Mô hình có **lời giải thích/đề luyện mới có ý nghĩa sư phạm** thuộc \`DELTA_C\`, cần independent review **chỉ phần chịu ảnh hưởng**, đúng Q01–Q18 và 5 Permanent THPT v2.1. Không dùng số lượng 10 mô hình để suy đã đủ Q07/D5.
+- **Đánh giá:** \`PUBLIC_FORMATIVE_ONLY\`; không hiện đề/key/rubric RD1, không ghi Skill Mastery từ kéo slider hoặc tự xem lời giải. Không tạo Core riêng trong Topic và không phát sinh tab cấp 1/2 trong kiến trúc người học.
+- **QA tách bạch:** AUTHORING kiểm đúng định nghĩa/công thức, biên, đầu vào, minh họa đúng; browser thật test các mốc quan trọng ở mobile/desktop; RELEASE sau này chịu AP1–AP5/responsive/performance/CSP, Golden UI và tích hợp khi có handoff hợp lệ.
+- **Gates:** R18 của Topic 1 và R02 của Topic 2 bất biến, đang tồn tại blocker V2 TOPIC intake #790; không tự merge/deploy hay gắn \`CONTENT_READY\` từ tài liệu nghiên cứu.
+
+## V. Bằng chứng đã triển khai tiếp sau kiểm toán (không phải chỉ kế hoạch)
+
+**Mô hình #4 đã dựng lại thực tế cho Chuyên đề 1 M6:**
+- \`Temp_TOPIC1_M6_TANGENT_DERIVATIVE_TWO_GRAPHS_D5_R00_20261110.html\` — source blob \`ebf1f392dcc77fa5c94a2bfd75f500bd97dd7ae5\` trên AUTHORING PR #801. Hai Canvas f(x), f′(x), cát tuyến/tangent, slider x₀ và |h|, chọn h>0/h<0, hai hàm x³/3−x và x³. **Sửa kết luận f′=0 không đủ cực trị** bằng phản ví dụ.
+- \`Temp_TOPIC1_M6_TANGENT_D5_AUTHORING_QA_R01_20261110.md\` — QA **36/36 mock JS** trên ba viewport, lời dẫn và Vận dụng đã có; \`DELTA_C\` scoped review pending, không sửa R18.
+
+**Mô hình #6 đã dựng lại thực tế cho Chuyên đề 2 P03:**
+- \`prototypes/thpt/content-drafts/topic-vector-coordinate/exp-notebook-d5-equivalent/Temp_TOPIC2_VECTOR_DOT_PRODUCT_PROJECTION_LAB_D5_R00_20261110.html\` — source blob \`06ee0ce3e13cbfa92e0201dd2ee634bf1775b18e\` trên AUTHORING PR #793. Có hai vectơ u/v, hình chiếu H mang dấu, hình bình hành/tổng nét mảnh, preset góc 0°/90°/180°, slider độ dài/góc và **kéo điểm bằng pointer**. QA **30/30 mock JS**, xem \`Temp_TOPIC2_P03_DOT_PRODUCT_D5_AUTHORING_QA_R01_20261110.md\`.
+- Hai module mới dùng **màu sáng cùng hệ thống**, không copy dark UI của tệp 10-in-1, không yêu cầu tab 2 cấp hoặc phụ thuộc CDN.
+
+**Mô hình #8** đã tồn tại trên PR #793 từ lượt trước, đã QA logic 48/48 mock trên nhiều trạng thái; không làm bản sao thứ hai.
+
+**Giới hạn chung:** các phép thử là DOM/Canvas **giả lập**, chưa là browser render/thiết bị thật cho các file mới; không tự nhận Academic/PED PASS hoặc CONTENT_READY. Bản HTML 10-in-1 gốc vẫn chỉ dùng làm **nguồn ý tưởng**, không được deploy.
+
+**Kiểm tra M6 bổ sung tại các giá trị biên:** HTML D5 vừa sửa để tự mở rộng thang X/Y khi cát tuyến có điểm N ở x₀+h vượt vùng vẽ mặc định; kết quả mock tọa độ 4 trường hợp × 3 bề rộng = **12/12 điểm M/N nằm trong clip đúng**. Nguồn chính xác hiện tại Git blob \`ebf1f392dcc77fa5c94a2bfd75f500bd97dd7ae5\`. Đã chuẩn bị **một nguồn review targeted R02** \`Temp_TOPIC1_M6_NOTEBOOKLM_SINGLE_REVIEW_SOURCE_R02_20261110.md\` (Git blob \`199468283a11050cb6bd7c527a979d64f1c7412e\`); packet R01 đã xóa khỏi HEAD, không dùng đồng thời.
+
+**Kết luận:** \`SOURCE_READ_AND_BROWSER_INITIALIZED_BUG_VERIFIED\`; \`10_MODELS_CLASSIFIED\`; \`MATH_P0_IDENTIFIED_1_4_7\`; \`MODEL8_REUSE_EXISTING\`; \`10_IN_1_RAW_DO_NOT_PUBLISH\`; \`AUTHORING_ONLY\`.

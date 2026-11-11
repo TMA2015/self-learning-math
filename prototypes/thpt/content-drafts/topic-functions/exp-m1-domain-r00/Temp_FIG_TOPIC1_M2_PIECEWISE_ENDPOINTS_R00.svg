@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 440" width="840" height="440" role="img" aria-labelledby="title desc">
+<title id="title">Đồ thị hàm số từng đoạn: điểm rỗng và điểm đặc tại x bằng 1</title>
+<desc id="desc">Hàm y=x+1 với x nhỏ hơn 1 tăng theo đường xanh dương và kết thúc bằng vòng rỗng tại điểm (1,2); hàm y=3 với x lớn hơn hoặc bằng 1 là đường xanh lá nằm ngang, nhận điểm (1,3) được tô đặc. Trục x nằm ngang, trục y thẳng đứng. Không có nét nối giữa hai điểm mốc.</desc>
+<rect x="0" y="0" width="840" height="440" rx="16" fill="#fbfdff"/>
+<style>
+text{font-family:system-ui,Arial,sans-serif;fill:#25465e}.title{font-size:20px;font-weight:650}.lab{font-size:15px;font-weight:600}.hint{font-size:13px}.grid{stroke:#e1ecf2;stroke-width:1}.axis{stroke:#8da8bc;stroke-width:1.7}
+</style>
+<text x="28" y="32" class="title">Tại x = 1, nhánh nào được phép lấy?</text>
+<g class="grid">
+<path d="M165 68V350 M250 68V350 M335 68V350 M420 68V350 M505 68V350 M590 68V350 M675 68V350 M760 68V350"/>
+<path d="M80 80H760 M80 125H760 M80 170H760 M80 215H760 M80 260H760 M80 305H760 M80 350H760"/>
+</g>
+<path class="axis" d="M335 68V360 M75 305H770" fill="none"/>
+<g class="hint" text-anchor="middle">
+<text x="165" y="371">−2</text><text x="250" y="371">−1</text><text x="335" y="371">0</text>
+<text x="420" y="371">1</text><text x="505" y="371">2</text><text x="590" y="371">3</text><text x="675" y="371">4</text><text x="760" y="371">5</text>
+</g>
+<g class="hint" text-anchor="end">
+<text x="68" y="354">−1</text><text x="68" y="309">0</text><text x="68" y="264">1</text>
+<text x="68" y="219">2</text><text x="68" y="174">3</text><text x="68" y="129">4</text><text x="68" y="84">5</text>
+</g>
+<path d="M165 350L420 215" stroke="#1484ac" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+<path d="M420 170H760" stroke="#218f73" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+<path d="M420 80V350" stroke="#b4c7d6" stroke-width="1.2" stroke-dasharray="4 5"/>
+<circle cx="420" cy="215" r="5.5" fill="#fbfdff" stroke="#1484ac" stroke-width="2.5"/>
+<circle cx="420" cy="170" r="5.5" fill="#218f73" stroke="#fbfdff" stroke-width="1.1"/>
+<text x="399" y="234" class="lab" text-anchor="end" style="fill:#146c8b">(1; 2) không thuộc</text>
+<text x="438" y="155" class="lab" style="fill:#1b745f">(1; 3) thuộc</text>
+<text x="170" y="205" class="lab" style="fill:#146c8b">y = x + 1, x &lt; 1</text>
+<text x="535" y="197" class="lab" style="fill:#1b745f">y = 3, x ≥ 1</text>
+<text x="28" y="411" class="hint">Vòng rỗng: điểm không thuộc đồ thị · Chấm đặc: điểm thuộc đồ thị</text>
+</svg>
