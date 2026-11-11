@@ -41,8 +41,8 @@ for(const [chapter,nums] of Object.entries(listed))for(const num of nums){
  }
  if(built){
    const html=read("site/"+base+"/index.html");
-   assert(/class="tabbed-set"/.test(html),"B"+num+": built page missing horizontal tab container");
-   assert(/class="tabbed-labels"/.test(html),"B"+num+": built page missing selectable tabs");
+   assert(/class="tabbed-set(?: [^"]+)?"/.test(html),"B"+num+": built page missing horizontal tab container");
+   assert(/class="tabbed-labels(?: [^"]+)?"/.test(html),"B"+num+": built page missing selectable tabs");
    for(const label of labels)assert(html.includes(label),"B"+num+": missing tab label "+label);
    assert(!html.includes("??? question")&&!html.includes("??? tip"),
      "B"+num+": raw disclosure syntax leaked into HTML");
