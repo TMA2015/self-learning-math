@@ -776,9 +776,13 @@ async function ready(page,path){
        const questions=article.locator("details.question"),tips=article.locator("details.tip");
        assert.equal(await questions.count(),qCount,"B"+lesson+" every First Try and scope disclosure must render");
        assert.equal(await tips.count(),tipCount,"B"+lesson+" every D6 remediation disclosure must render");
-       const all=article.locator("details.question, details.tip");
-       assert.equal(await all.locator(":scope[open]").count(),0,
+       assert.equal(await article.locator("details.question[open], details.tip[open]").count(),0,
          "B"+lesson+" all answer/remediation disclosures must start closed");
+         "B"+lesson+" all answer/remediation disclosures must start closed");
+       const knowledgeTab=article.locator(".tabbed-set").first().locator(".tabbed-labels label")
+         .filter({hasText:/^Kiến thức SGK$/});
+       assert.equal(await knowledgeTab.count(),1,"B"+lesson+" must expose Kiến thức SGK");
+       await knowledgeTab.click();
        const disclosure=questions.first();
        await disclosure.locator("summary").click();
        assert(await disclosure.evaluate(el=>el.open),"B"+lesson+" learner can open answer");
@@ -827,6 +831,12 @@ async function ready(page,path){
   await ready(page,"sgk/chuong-vi/bai-16/");
   assert(!(await page.locator("article").textContent()).includes("ACADEMIC_CLEARANCE"),"B16 shows internal QA approval");
   await ready(page,"sgk/chuong-vi/bai-17/");
+   if(fs.readFileSync("docs/thpt-preview/sgk/chuong-vi/bai-17.md","utf8").includes('=== "Kiến thức SGK"')){
+     const tab=page.locator("article .tabbed-set").first().locator(".tabbed-labels label")
+       .filter({hasText:/^Kiến thức SGK$/});
+     assert.equal(await tab.count(),1,"B17 optional-scope tab must exist");
+     await tab.click();
+   }
    const scope=page.locator('article details:has(> summary:text-is("Lưu ý về phạm vi Core và mở rộng của bài toán tham số"))');
   assert.equal(await scope.count(),1,"B17 should offer one compact optional extension note");
   assert(!(await scope.evaluate(el=>el.open)),"B17 scope note must begin collapsed");
