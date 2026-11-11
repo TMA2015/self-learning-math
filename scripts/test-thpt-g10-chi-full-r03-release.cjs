@@ -21,8 +21,17 @@ for(const c of chapters){
     const ids=[...x.matchAll(/data-thpt-first-try-id="([^"]+)"/g)].map(z=>z[1]);
     const expected=Array.from({length:c.expected},(_,i)=>"THPT-G10-CHI-TRY"+String(c.start+i).padStart(2,"0"));
     assert.deepEqual(ids,expected,c.lesson+": source item identity/regression");
-    assert(x.includes('href="../luyen-tap/"') && x.includes('href="../tu-kiem-tra-chuong/"'),
-      c.lesson+": Golden Core/self-check routes lost");
+    // Model B authoring uses Markdown links; MkDocs resolves sibling .md
+    // to the SAME final Golden routes as historic href="../.../" links.
+    // Check both real source targets and their existence; never weaken Q16.
+    for(const [target,label] of [["luyen-tap.md","Core/Practice"],["tu-kiem-tra-chuong.md","Final Submit"]]){
+      const mdLink=x.includes(']('+target+')')||x.includes(']('+target+'?')||x.includes(']('+target+'#');
+      const legacyHref=target.slice(0,-3);
+      assert(mdLink||x.includes('href="../'+legacyHref+'/"'),
+        c.lesson+": missing "+label+" learner navigation target");
+      assert(fs.existsSync(path.join(root,path.dirname(c.file),target)),
+        c.lesson+": broken "+label+" target "+target);
+    }
     assert(!x.includes("REVIEW_RECEIPT:")&&!x.includes("CONTENT_READY:"),c.lesson+": audit metadata exposed");
     all.push(...ids);
     continue;
