@@ -1,5 +1,7 @@
 "use strict";
 const assert=require("node:assert/strict"),{chromium}=require("playwright");
+const {verifyModelBLesson}=require("./test-thpt-g10-model-b-browser-helper.cjs");
+
 (async()=>{
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
  try{
@@ -10,7 +12,8 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
     for(const n of [9,10,11]){
      const response=await page.goto(base+"bai-"+n+"/",{waitUntil:"domcontentloaded"});
      assert(response?.ok(),"B"+n+" route");
-     assert.equal(await page.locator('[data-thpt-help-id^="HELP-G10-B"]').count(),2,"Preserve exactly two historic reviewed D6 per lesson");
+     if(!(await verifyModelBLesson(page,{n,chapter:"iv",tries:n===10?6:5,helps:n>=10?3:2,images:n===9?["THPT_G10_B09_SCALAR_MULTIPLE_VECTORS_D5_R01.svg"]:n===10?["THPT_G10_B10_COORDINATES_DIFFERENCE_D5_R01.svg","THPT_G10_CHIV_RIVER_TRANSFER_D5_R01_CORRECTED.svg"]:["THPT_G10_B11_DOT_PRODUCT_OBTUSE_D5_R01.svg","THPT_G10_CHIV_FORCE_TRANSFER_D5_R01_CORRECTED.svg"]}))){
+assert.equal(await page.locator('[data-thpt-help-id^="HELP-G10-B"]').count(),2,"Preserve exactly two historic reviewed D6 per lesson");
      const image=page.locator(".thpt-r4-probability-figure:not([data-thpt-reviewed-d5]) img");
      assert.equal(await image.count(),1);
      await image.scrollIntoViewIfNeeded();
@@ -19,7 +22,9 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
      assert(dim.w<=dim.p+2,"SVG overflow B"+n);
      await page.locator('[data-thpt-help-id^="HELP-G10-B"] summary').first().click();
      assert(await page.locator('[data-thpt-help-id^="HELP-G10-B"]').first().getAttribute("open")!==null);
-     const id="THPT-G10-B"+String(n).padStart(2,"0")+(n===11?"-C02":"-C01");
+     
+}
+const id="THPT-G10-B"+String(n).padStart(2,"0")+(n===11?"-C02":"-C01");
      const quiz=await page.goto(base+"luyen-tap/?item="+id,{waitUntil:"domcontentloaded"});
      assert(quiz?.ok());
      const dlg=page.locator("dialog.thpt-r4-practice-dialog");
