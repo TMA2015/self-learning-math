@@ -19,7 +19,7 @@ Ba chặng xây trên nhau: mô hình ngẫu nhiên → kết hợp biến cố 
 
         Một **biến cố** \(A\) là tập con \(A\subseteq\Omega\): chỉ gồm những kết quả khiến câu phát biểu của \(A\) đúng. \(A=\varnothing\) là biến cố không thể, \(A=\Omega\) là biến cố chắc chắn.
 
-        **Ví dụ hướng dẫn (không có ID câu hỏi chấm điểm):** Rút đều một thẻ trong bảy thẻ mang số \(1,2,\ldots,7\). Khi đó \(\Omega=\{1,2,3,4,5,6,7\}\). Biến cố “lấy được số nguyên tố” có tập kết quả \(\{2,3,5,7\}\); biến cố đối là \(\{1,4,6\}\). Không được gọi “số nguyên tố” là một kết quả sơ cấp duy nhất.
+        **Ví dụ hướng dẫn:** Rút đều một thẻ trong bảy thẻ mang số \(1,2,\ldots,7\). Khi đó \(\Omega=\{1,2,3,4,5,6,7\}\). Biến cố “lấy được số nguyên tố” có tập kết quả \(\{2,3,5,7\}\); biến cố đối là \(\{1,4,6\}\). Không được gọi “số nguyên tố” là một kết quả sơ cấp duy nhất.
 
         **Tự chốt kiến thức:** Hãy luôn viết \(\Omega\) trước khi đếm; một cặp có thứ tự \((a,b)\) khác cặp không thứ tự \(\{a,b\}\).
 
@@ -303,7 +303,7 @@ Ba chặng xây trên nhau: mô hình ngẫu nhiên → kết hợp biến cố 
 
         **Cách làm bài:** (1) xác định đúng các nhánh \(B,\bar B\); (2) đọc xác suất chọn nhánh; (3) đọc xác suất A khi biết từng nhánh; (4) nhân trên mỗi nhánh; (5) cộng các nhánh rời nhau.
 
-        **Mở rộng cần phân tầng theo nguồn:** Với nhiều nhánh \(B_1,\ldots,B_n\) tạo thành phân hoạch của \(\Omega\) và các nhánh có xác suất dương, \(P(A)=\sum_i P(B_i)P(A\mid B_i)\). Nếu SGK/SBT chỉ yêu cầu hai nhánh ở Core, để mô hình nhiều nhánh ở phần luyện tập nâng cao, không tự gắn bắt buộc.
+        **Vận dụng mở rộng:** Với nhiều nhánh \(B_1,\ldots,B_n\) tạo thành phân hoạch của \(\Omega\) và các nhánh có xác suất dương, \(P(A)=\sum_i P(B_i)P(A\mid B_i)\). Đây là cách mở rộng mô hình hai nhánh; hãy thành thạo trường hợp hai nhánh trước khi xử lí nhiều nhóm.
 
         **Tự thử trước khi xem lời giải** (TOPIC-PROB-M12-TRY01): Chọn nguồn A 60%, nguồn B 40%; xác suất lỗi theo nguồn lần lượt 5% và 10%. P(hàng lỗi)?
 
@@ -346,11 +346,11 @@ Ba chặng xây trên nhau: mô hình ngẫu nhiên → kết hợp biến cố 
 
 ## Ví dụ kết nối các mảng kiến thức
 
-**G10 – mô hình đúng trước phép chia.** Rút đều một thẻ trong 8 thẻ vật lí, nhãn A xuất hiện hai lần, nhãn B ba lần, nhãn C ba lần. Xác suất nhãn B là $3/8$, không phải $1/3$ vì ba *nhãn* không đồng khả năng. Khi đếm 2 thẻ đồng thời không hoàn lại, xác định rõ có/không thứ tự trước khi dùng tổ hợp.
+**Mô hình đúng trước phép chia.** Rút đều một thẻ trong 8 thẻ vật lí, nhãn A xuất hiện hai lần, nhãn B ba lần, nhãn C ba lần. Xác suất nhãn B là $3/8$, không phải $1/3$ vì ba *nhãn* không đồng khả năng. Khi đếm 2 thẻ đồng thời không hoàn lại, xác định rõ có/không thứ tự trước khi dùng tổ hợp.
 
-**G11 – kiểm độc lập bằng phép tính.** Chọn số đều trong $\{1,2,\ldots,10\}$. A là số chẵn, B chia hết cho 3. $P(A)=1/2$, $P(B)=3/10$, $P(A\cap B)=1/10\ne3/20$: không độc lập. Dù hai biến cố có giao, điều đó chưa đủ kết luận.
+**Kiểm độc lập bằng phép tính.** Chọn số đều trong $\{1,2,\ldots,10\}$. A là số chẵn, B chia hết cho 3. $P(A)=1/2$, $P(B)=3/10$, $P(A\cap B)=1/10\ne3/20$: không độc lập. Dù hai biến cố có giao, điều đó chưa đủ kết luận.
 
-**G12 – Bayes cần tỷ lệ nền.** Chọn hộp X xác suất $1/3$ với tỷ lệ đỏ $2/5$, hộp Y xác suất $2/3$ với tỷ lệ đỏ $3/4$. Khi biết đã rút đỏ, xác suất chọn Y là $15/19$, vì phải tính cả đường dẫn đến đỏ từ X và Y. Đây là ví dụ gốc có reviewer xác minh lại trên đúng source, không đổi dữ liệu.
+**Bayes cần tỉ lệ nền.** Chọn hộp X xác suất $1/3$ với tỷ lệ đỏ $2/5$, hộp Y xác suất $2/3$ với tỷ lệ đỏ $3/4$. Khi biết đã rút đỏ, xác suất chọn Y là $15/19$, vì phải tính cả đường dẫn đến đỏ từ X và Y. Kiểm lại bằng cách thay kết quả vào công thức và xác nhận giá trị nằm trong khoảng từ 0 đến 1.
 
 ![Cây xác suất chọn hộp rồi rút thẻ đỏ hoặc xanh](assets/Temp_TOPIC3_PROBABILITY_BAYES_TREE_G12_R01_20261111.svg)
 
