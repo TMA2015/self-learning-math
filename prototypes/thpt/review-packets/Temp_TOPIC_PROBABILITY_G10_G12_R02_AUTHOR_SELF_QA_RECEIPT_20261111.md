@@ -14,6 +14,12 @@ PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC_PROBABILITY_G10_G
 PUBLIC_EXTENSION_BLOB: eafc0164beee72111bc27f0ddbd84f26b601698f
 HISTORICAL_REVIEW_RECEIPT_PATH: prototypes/thpt/content-drafts/THPT_TOPIC_PROBABILITY_G10_G12_NOTEBOOKLM_TWO_PACKETS_ACADEMIC_PASS_RECEIPT_20261028.md
 HISTORICAL_REVIEW_RECEIPT_BLOB: a50675f8899aa317d8f02c63ea5b53bbf2d6ccb2
+S1_RECEIPT: Verified historical S1 KNTT printed page receipts for Toán G10 T2 B26–B27 (SGK 77–89/SBT 60–74), G11 T2 B28–B30 (SGK 63–82/SBT 42–55), G12 T2 B18–B19 (SGK 42–58/SBT 40–64); NOT a claim of direct scanned-PDF reread this turn.
+OUTCOME_AUDIT: 25/25 G10–12 canonical outcomes, each linked to one Knowledge module/first-try/D6 and **exactly two** of 50 unique public canonical item IDs; full 25-row item–outcome matrix below.
+MATH_VERIFICATION: 12/12 newly authored Practice solutions independently recomputed (conditional/independent/Bayes/combinations), 7 reasoned worked examples and 13 first-tries checked; 25/25 source/structure/math/identity checks PASS; explicit numerical evidence table below.
+PED_VERIFICATION: 13 concept-first modules, three knowledge area tabs, seven WHY-explained examples, 13 self-try→self-reveal→D6 loops, two mathematically verified SVGs and learner-readable guidance; no extra Core page.
+CANONICAL_Q15: 50 unique public IDs (38 historical original frozen at 3 Git blobs + 12 new at one extension blob); five old Written/Anchor IDs, no duplicated keys or rubrics; 9 public self-check references reused by placement only.
+ASSESSMENT_Q16: PUBLIC CLIENT_SELF_CHECK_NO_MASTERY only, 9 reused public IDs, no official independent assessment activation; this packet imports zero protected RD1, old 12 owner-held private items remain external with raw SHA unknown and no Git key/stem/rubric. Empty imported bank SHA256 (zero-byte canonical stream): e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855, explicitly NOT the hash of historical private 12 items.
 S1_SOURCE_SCOPE: SGK/SBT KNTT G10 T2 B26–B27 (printed SGK 77–89/SBT 60–74); G11 T2 B28–B30 (SGK 63–82/SBT 42–55); G12 T2 B18–B19 (SGK 42–58/SBT 40–64). These are independently reviewed **historical S1 receipts**, not a claim that every scanned page was reopened this turn.
 PUBLIC_ITEM_COUNT: 50 (38 original reviewed source records + 12 new independently checked authoring source records)
 UNIQUE_OUTCOMES: 25 (10+7+8); every outcome has **exactly two** public items and an actual knowledge module.
