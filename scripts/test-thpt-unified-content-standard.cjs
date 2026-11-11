@@ -69,7 +69,9 @@ function validate(source, agents, queue) {
     const contractV3=fs.readFileSync(path.join(ROOT,"prototypes/thpt/THPT_TWO_LANE_SOURCE_LOCKED_HANDOFF_CONTRACT_v2_20261102.md"),"utf8");
     if(!contractV3.includes("OWNER APPROVED 11/11/2026"))fail("V2_V3_OWNER_UPDATE_MISSING");
     const agentsV3=fs.readFileSync(path.join(ROOT,"AGENTS.md"),"utf8");
-    if(!agentsV3.includes("AUTHORING IS PAUSED"))fail("AUTHORING_PAUSE_MISSING");
+    if(!agentsV3.includes("OWNER OPERATIONAL DECISION"))fail("OWNER_DECISION_TRACE_MISSING");
+    // The temporary AUTHORING pause may later be lifted by the owner; do NOT
+    // hard-code PAUSED as a permanent quality-schema requirement.
   }
   if(!["2.0.0","3.0.0"].includes(version) && !source.includes("OFFICIAL_OWNER_APPROVED_MAIN")&&!source.includes("OWNER_APPROVED_EFFECTIVE_UPON_GOVERNANCE_MERGE")&&!source.includes("OWNER_APPROVED_Q01_REVISION_PENDING_GOVERNANCE_QA_MERGE"))fail("OWNER_APPROVAL_RECEIPT_MISSING");
  for(const heading of REQUIRED_SECTIONS)if(!source.includes(heading))fail("MISSING_SECTION:"+heading);
