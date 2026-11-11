@@ -34,6 +34,7 @@ jobs:
         run: |
           node --check scripts/test-thpt-q18-self-qa-draft.cjs
           node scripts/test-thpt-q18-self-qa-draft.cjs --self-test
+          node scripts/test-thpt-handoff-gate-v2.cjs --self-test
       - name: Validate one normative Q matrix and shared pointers
         run: node scripts/test-thpt-unified-content-standard.cjs
       - name: Guard - governance QA is not academic PASS or website release
