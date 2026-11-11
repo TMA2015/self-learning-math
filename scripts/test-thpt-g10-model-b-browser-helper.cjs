@@ -63,12 +63,14 @@ async function verifyModelBLesson(page,{n,chapter,tries,helps,images}){
   const img=article.locator('img[src$="'+asset+'"]');
   assert.equal(await img.count(),1,"B"+n+" reviewed D5 asset missing "+asset);
   let visible=false;
+  // Lazy SVG may be zero-size until scrolled; select its visible figure/caption.
+  const figure=img.locator("xpath=..");
   for(const name of tabsExpected){
    await select(name);
-   if(await img.isVisible()){visible=true;break;}
+   if(await figure.isVisible()){visible=true;break;}
   }
-  assert(visible,"B"+n+" D5 image is not viewable in any Knowledge tab "+asset);
-  await img.scrollIntoViewIfNeeded();
+  assert(visible,"B"+n+" reviewed D5 figure inaccessible under four tabs "+asset);
+  await figure.scrollIntoViewIfNeeded();
   await img.evaluate(async x=>{if(typeof x.decode==="function")await x.decode()});
   const measure=await img.evaluate(x=>({loaded:x.complete&&x.naturalWidth>0,w:x.getBoundingClientRect().width,p:x.parentElement.getBoundingClientRect().width}));
   assert(measure.loaded&&measure.w<=measure.p+2,"B"+n+" D5 missing/overflow "+asset);
