@@ -1,8 +1,8 @@
-# SELF-LEARNING MATH — TIÊU CHUẨN CHẤT LƯỢNG HỌC LIỆU THPT THỐNG NHẤT v3.0
+# SELF-LEARNING MATH — TIÊU CHUẨN CHẤT LƯỢNG HỌC LIỆU THPT THỐNG NHẤT v3.0.1
 
 **STANDARD_ID:** `SLM-THPT-QUALITY-ONE`  
-**VERSION:** `3.0.0` · **OWNER:** Chủ dự án Self-Learning Math / G Learning  
-**STATUS:** `OWNER_APPROVED_EFFECTIVE` — quyết định chủ dự án 11/11/2026 thống nhất một đầu mối AUTHORING/RELEASE, cho phép tự đánh giá cả học liệu mới và hai Chuyên đề đã biên soạn; **quy phạm v3.0.0 chỉ có hiệu lực trên main sau khi PR governance được merge và QA tương ứng PASS**. Trước đó main v2.0.0 áp dụng. AUTHORING **PAUSED cho đến khi quy trình mới được đồng bộ**; không tự mở lại nội dung chỉ vì PR quản trị được tạo.
+**VERSION:** `3.0.1` · **OWNER:** Chủ dự án Self-Learning Math / G Learning  
+**STATUS:** `OWNER_APPROVED_EFFECTIVE` cho bản v3.0.0 đã merge trên `main` qua PR #808, commit `e1976f47b13d20faf0cd68f3c862a97ac43d57f4`. Bản làm rõ **v3.0.1 §X-E** được chủ dự án phê duyệt 11/11/2026, chỉ trở thành phiên bản hiệu lực khi PR governance v3.0.1 đạt QA và merge vào `main`. AUTHORING vẫn **PAUSED cho đến khi chủ dự án cho phép mở lại**; merge governance không tự bật biên soạn hoặc website release.
 **SCOPE:** mọi học liệu Toán THPT 10–12 KNTT theo **SGK_CHAPTER** và **TOPIC**; áp dụng cho cả tác giả, NotebookLM và nhánh phát hành. **Một tiêu chuẩn chất lượng; các cổng kiểm tra phân theo trách nhiệm, không phải hai bộ tiêu chuẩn cạnh tranh.**
 
 ## 0. Luật thống nhất và thứ tự hiệu lực
@@ -87,7 +87,7 @@
 **Bản kiểm theo outcome** tối thiểu:
 ```text
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 1.1.0
+STANDARD_VERSION: 3.0.1
 LEARNING_PATH: SGK_CHAPTER | TOPIC
 PACKET_ID: ...
 ACADEMIC_SOURCE_BLOB: 40-hex
@@ -211,9 +211,22 @@ Trước khi **tự ký Q18_AUTHOR_SELF_VERIFIED hoặc gửi NotebookLM khi th�
 8. **Tương tác:** khuyến khích mô hình toán học của NotebookLM/Gemini khi có giá trị; viết lại phù hợp Golden UI, không ghép CSS/JS/CDN không kiểm chứng. Kiểm miền/điểm biên, điều kiện, đồ thị, bàn phím/chạm, responsive, MathJax, hiệu năng, fallback; không đặt mô hình có hint/đáp án trong RD1 kín.
 9. **Tái dùng ngân hàng câu:** một `item_id` canonical có thể xuất hiện ở SGK Core/Practice, Topic Practice, Written và **Tự kiểm tra công khai chế độ `CLIENT_SELF_CHECK_NO_MASTERY`** theo placement khác nhau; thêm câu khi thiếu **họ dạng/độ sâu**. Câu đã luyện/đã xem không thể coi là `TOPIC_READINESS` **độc lập** hoặc bằng chứng cấp Mastery; muốn kiểm tra chính thức dùng held-out RD1 riêng, bảo mật, không lộ key/hint/đúng-sai trước Final Submit.
 10. **Bỏ rào cản cũ:** ngừng áp tiêu chí số công thức, FNV, byte-equal bản lịch sử hoặc heading PED làm phép chặn **bản layout mới**; test cũ chỉ replay historical snapshot. Thay bằng test ngữ nghĩa/math/điều kiện, tab & keyboard, MathJax/SVG, deep link, Q15/Q16/no-leak/Golden/assessment. Giữ ba cổng `CONTENT_MATH_PED_SOURCE`, `ASSESSMENT_DATA_SAFETY`, `RENDER_RELEASE_QA` không thêm gate trùng.
-11. **Độc lập kết quả:** `AUTHOR_SELF_VERIFIED` chỉ cấp quyền chuẩn bị `CONTENT_READY` khi A1–A7, Q01–Q18, SHA/receipt và private Q16 hoàn tất; `RELEASE_READY` và `PUBLISHED` vẫn cần AP1–AP5/R1–R5, exact-head CI, quyền chủ dự án, P1/P2 thực tế. Không merge/deploy từ một bản demo hoặc QA metadata.
+11. **Độc lập kết quả:** `AUTHOR_SELF_VERIFIED` cùng Q01–Q18/A1–A7, P0/P1=0 và nguồn/receipt/V2/ready/REGISTER khóa trong **cùng lượt** chính là `AUTHORING_PASS = CONTENT_READY` theo §X-E, không mở vòng academic approval tiếp. `RELEASE_READY` và `PUBLISHED` vẫn cần AP1–AP5/R1–R5, exact-head CI, quyền chủ dự án, P1/P2 thực tế. Không merge/deploy từ bản demo hoặc QA metadata.
 
 **Historical citations:** các đoạn trước trong file mô tả review independent **mặc định v1.0–v2.0**; sau khi v3.0 có hiệu lực, dùng ưu tiên mục X-D cho quyết định Q18 hiện hành, không tái kích hoạt veto cũ.
+
+## X-E. OWNER CLARIFICATION 11/11/2026 — tự kiểm trong khi biên soạn, CONTENT_READY ngay sau AUTHORING PASS (PATCH v3.0.1)
+
+**Quyết định chủ dự án:** Chỉnh cách vận hành Q18, **không thêm Q19/gate reviewer hay chuẩn học thuật thứ hai**. Giữ đủ Q01–Q18, A1–A7, S1/điều kiện toán, Q15/Q16 và bảo toàn lịch sử. §X-E làm rõ §III, §VIII–IX, §X-D và các hợp đồng V2 cũ; không thay nguồn đã PASS hoặc quyền phát hành.
+
+1. **Kiểm tra là một phần của hành động viết.** ChatGPT tác giả tự kiểm đối chiếu SGK S1 của phần dạy, phép tính/công thức/điều kiện/ví dụ/hình/bài giải/rubric và tính dễ tự học **ngay trong quá trình biên soạn**. “Chứng cứ Q18” **không phải thư xác nhận từ NotebookLM/Gemini hoặc vòng đi tìm hồ sơ bên ngoài**. Chứng cứ tối thiểu chính là nguồn bài đã viết và kiểm, phép tính/điểm biên đã thử, đối chiếu S1 thực sự đã xem, ID/câu/rubric và lỗi đã sửa; ghi ngắn gọn bằng **một receipt tổng hợp gắn SHA**, dẫn tới đúng đoạn nguồn/LESSON/OUTCOME khi cần. Không viết lại nội dung hay lập nhiều biểu mẫu chỉ để đạt quota.
+2. **Q18 là kết quả tự chịu trách nhiệm**, `AUTHOR_SELF_VERIFIED` có hiệu lực với Topic cũ sau biên tập, Topic mới và phạm vi SGK được owner cho phép. Tự QA không phải “đánh giá độc lập”, không ghi `REVIEWER_PASS` giả, không bắt NotebookLM. Khi không thể tự xác định một sai lệch trọng yếu S1/toán/điều kiện/rubric hoặc Q16 thì HOLD đúng phần và có thể nhờ reviewer *targeted*; không lấy render CI xanh hoặc dấu tick làm thay kiểm nội dung.
+3. **Phân loại trạng thái không lạm dụng HOLD:** `Q18_CONTENT_CHECK_PENDING` = tác giả **chưa thực sự kiểm xong** nội dung/phần mới, ghi LESSON/OUTCOME cần làm (ví dụ 27 bài SGK ứng viên). `Q18_SUBSTANTIVE_HOLD` = **đã xác định** lỗi sai, nguồn SGK bắt buộc không xác minh được, nghi ngờ học thuật/đánh giá chưa giải quyết, P0/P1 hoặc lộ Q16; nêu lỗi và cách đóng. `HANDOFF_PACKAGING_PENDING` = nội dung **đã tự QA PASS** nhưng đang hoàn thiện SHA/receipt/handoff/REGISTER; **không đánh tráo trạng thái này thành Q18 Academic/PED HOLD** và phải chốt hồ sơ trong cùng lượt, không bắt review lại. Nếu chỉ sai cú pháp/thiếu trường kỹ thuật, sửa chính hồ sơ.
+4. **Định nghĩa kết thúc AUTHORING duy nhất:** biên soạn đủ đơn vị học độc lập → tác giả tự kiểm Q01–Q18/A1–A7 đạt, không P0/P1 → **khóa canonical SOURCE_BLOB, ký một Q18 receipt, một V2 handoff, một `ready/PACKET_ID.md` + đúng một REGISTER row trong chính lượt kết thúc** → **`AUTHORING_PASS = CONTENT_READY`**. Không tồn tại vòng nghiệm thu học thuật khác ở giữa, không yêu cầu chủ dự án duyệt lại học thuật/NotebookLM khi mode self-QA hợp lệ. Thiếu SHA/handoff thật thì chưa được ghi READY, nhưng AUTHORING **tự xử lý việc đóng gói** thay vì tạo một approval queue mới.
+5. **Ranh giới phát hành:** `CONTENT_READY` chỉ là gói nguồn sẵn cho RELEASE. AP1–AP5, R1–R5, Golden, browser, Q16/Final Submit, exact-HEAD CI, quyền owner và P1/P2 thuộc RELEASE. RELEASE trả lại AUTHORING chỉ khi chỉ được **lỗi Qxx thực tế ở nội dung**; không tự đặt thêm academic review gate. Với **SGK Knowledge đã phát hành** chỉ làm enrichment không đổi Core/outcome/bank, dùng một `ENRICHMENT_DELTA_RECEIPT` theo batch và QA RELEASE; **không** tạo 27 gói Topic/Chapter READY giả.
+6. **Bảo toàn nghiệm thu:** receipt/chứng cứ cũ giữ giá trị theo nguồn bất biến. Thay đổi chuẩn này không tự chuyển 27 bài Toán 10 hoặc Topic bất kỳ từ PENDING/HOLD thành PASS; tác giả phải hoàn tất phần toán/PED thực sự chưa kiểm, sau đó kết thúc Q18 và đóng gói ngay.
+
+**Kiểm tra tự động chỉ giữ ba nhóm trách nhiệm:** `CONTENT_MATH_PED_SOURCE` (nội dung tác giả tự QA), `ASSESSMENT_DATA_SAFETY` (Q15/Q16/private), `RENDER_RELEASE_QA` (website). Metadata/receipt là dấu vết truy xuất và hợp đồng chuyển giao **không phải cổng học thuật lần thứ hai**.
 
 ## XI. Truy vết nguồn → điều khoản và phân công
 
