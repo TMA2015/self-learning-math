@@ -42,8 +42,23 @@ const eqHref=(actual,expected)=>assert.equal(new URL(actual,site).pathname,expec
      else assert.equal(await nav.locator('span[aria-disabled]').count(),1,"Final lesson has no unpublished next");
      if(grade===10){
       assert.equal(await page.locator(".md-content__inner.thpt-g10-knowledge-ap1").count(),1);
-      const section=page.locator(".thpt-g10-knowledge-ap1>h2").first();
-      assert(await section.count()>0,"G10 AP1 knowledge heading exists B"+lesson);
+      const modelB=page.locator(".md-content__inner .tabbed-set").first();
+      const isModelB=await modelB.count()>0;
+      if(isModelB){
+       // Model B uses MkDocs tabs and ### headings, not the historical direct h2.
+       // Verify actual learner tab labels and a meaningful concept-first heading;
+       // never satisfy AP1 merely by the presence of a generic tab container.
+       const expectedTabs=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
+       const labels=(await modelB.locator(".tabbed-labels label").allTextContents()).map(s=>s.trim());
+       assert.deepEqual(labels,expectedTabs,"G10 B"+lesson+" exact Model B learning tabs");
+       assert.equal(await modelB.locator(".tabbed-content > .tabbed-block").count(),4,
+        "G10 B"+lesson+" four learner content panels");
+       assert(await modelB.locator(".tabbed-content > .tabbed-block").first().locator("h3").count()>0,
+        "G10 B"+lesson+" AP1 concept-first heading inside Model B");
+      }else{
+       const section=page.locator(".thpt-g10-knowledge-ap1>h2").first();
+       assert(await section.count()>0,"G10 AP1 historical knowledge heading exists B"+lesson);
+      }
      }else assert.equal(await page.locator(".md-content__inner.thpt-g10-knowledge-ap1").count(),0,"G10 CSS not applied cross-grade");
      const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);
      assert(overflow<=20,"Horizontal overflow "+grade+" B"+lesson+" @"+viewport.width+" "+overflow);
