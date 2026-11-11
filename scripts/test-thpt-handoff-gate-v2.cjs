@@ -50,7 +50,7 @@ function verifyBlob(value, file) {
 // Version follows the ONE actual normative source, not a hand-maintained
 // release-gate list. Grandfather ONLY previously effective historical versions.
 // Governance drafts (even when present in a PR checkout) are NOT active modes.
-const historicalVersions=["1.0.0","1.1.0","1.2.0","2.0.0"];
+const historicalVersions=["1.0.0","1.1.0","1.2.0","2.0.0","3.0.0"];
 function acceptedStandardVersions(overrideText) {
   const raw=overrideText??fs.readFileSync(path.join(root,"prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md"),"utf8");
   const id=raw.match(/^\*\*STANDARD_ID:\*\*\s*\x60([A-Za-z0-9-]+)\x60/m);
@@ -76,13 +76,15 @@ function verifyQ18Mode(data,handoff,receipt,sourceBlob,lane) {
   assert.equal(field(data,"PEDAGOGICAL_VERDICT"),state,"Wrong PED mode/verdict pairing");
   if(self) {
     assert(["TOPIC","SGK_CHAPTER"].includes(lane),"Self-QA mode limited to SGK/Topic academic material");
-    assert.equal(field(data,"STANDARD_VERSION"),"3.0.0","Self QA requires effective v3.0 standard");
+    const selfVersion=field(data,"STANDARD_VERSION");
+    assert(["3.0.0","3.0.1"].includes(selfVersion) && acceptedStandardVersions().includes(selfVersion),
+      "Self QA requires owner-effective v3.x, not a prospective standard");
     assert.equal(field(handoff,"Q18_VERIFICATION_MODE"),mode,"Self QA mode mismatch");
     assert.equal(field(handoff,"ACADEMIC_VERDICT"),"SELF_VERIFIED","Never impersonate independent Academic PASS");
     assert.equal(field(handoff,"PEDAGOGICAL_VERDICT"),"SELF_VERIFIED","Never impersonate independent PED PASS");
     const required=[
       "AUTHOR_SELF_QA_RECEIPT","SOURCE_BLOB: "+sourceBlob,
-      "STANDARD_VERSION: 3.0.0","S1_RECEIPT:","OUTCOME_AUDIT:",
+      "STANDARD_VERSION: "+selfVersion,"S1_RECEIPT:","OUTCOME_AUDIT:",
       "MATH_VERIFICATION:","PED_VERIFICATION:","CANONICAL_Q15:",
       "ASSESSMENT_Q16:","P0: 0","P1: 0","AUTHOR_SIGNOFF:"
     ];
