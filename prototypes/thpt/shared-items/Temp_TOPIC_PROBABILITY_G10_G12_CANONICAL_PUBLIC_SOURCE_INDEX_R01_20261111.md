@@ -63,7 +63,7 @@ PRIVATE_RD1: OWNER_HELD_EXTERNAL_12_CANDIDATES_NOT_PART_OF_PUBLIC_BANK
 
 - 3 original bank files loaded from exact historical `BASELINE_COMMIT`, not inferred from names or current main.
 - Heading check yields 16+10+12=38 unique public stem/solution records, and all 38 mapped item IDs appear once each in source file headings; per-ID answer/solution markers present. R01 practice references match these 38 IDs.
-- 4 Written IDs (G10 two, G11 one, G12 two actually **five** records; see primary count below) share their own canonical rubric and Anchor is a **tag** on the same item. Written count is `2+1+2=5`; not an extra Anchor record. Any previously asserted “4 Written” in older Draft V2 Q06 evidence is an error to correct in final handoff.
+- **5 Written IDs** (G10 hai, G11 một, G12 hai) có một rubric canonical cho mỗi câu. Anchor chỉ là nhãn của cùng một bản ghi, không tạo câu thứ sáu. `WRITTEN_TOTAL=5`. Any previously asserted “4 Written” in older Draft V2 Q06 evidence is an error to correct in final handoff.
 - Student-facing Practice may render original item bodies through the one bank; this file is provenance and integration instruction **only**, not a fourth learner page. If source is moved/converted, preserve item ID, original math/key/rubric and source equivalence ledger, and check no accidental Mastery on public Practice.
 
 **Assessment:** Public items used after exposure may appear in voluntary self-check but never independently prove `TOPIC_READINESS`. Twelve owner-held historic held-outs are not imported into GitHub or frontend.
