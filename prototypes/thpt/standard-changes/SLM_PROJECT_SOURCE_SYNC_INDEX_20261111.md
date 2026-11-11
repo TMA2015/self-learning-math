@@ -1,6 +1,6 @@
 # SLM — PROJECT SOURCE SYNC INDEX · 11/11/2026
 
-**STATUS:** OWNER_PROJECT_SOURCES_07_09_INSTALLED · V3_0_MAIN_EFFECTIVE · V3_0_1_Q18_PATCH_PENDING_MERGE · **không phải tiêu chuẩn thứ hai**. Mục đích: ngăn ChatGPT Project attachments mang bản 07 v1.1/09 v1.0 cũ áp dụng phủ quyết chuẩn Q18 mới. Các nguồn độc lập của NotebookLM **vẫn đúng 5 Permanent THPT v2.1**, không bổ sung file thứ sáu.
+**STATUS:** OWNER_PROJECT_SOURCES_07_09_INSTALLED · V3_0_MAIN_EFFECTIVE · V3_0_1_Q18_PATCH_PENDING_MERGE · **không phải tiêu chuẩn thứ hai**. Mục đích: không cho Project Sources 07/09 bản tham khảo cũ phủ quyết điều khoản hiệu lực trên GitHub. Các nguồn độc lập của NotebookLM **vẫn đúng 5 Permanent THPT v2.1**, không bổ sung file thứ sáu.
 
 | Nguồn | File hiệu lực sau PR #808 merge | Hướng dẫn Project attachments |
 |---|---|---|
@@ -25,5 +25,5 @@
 
 1. Đã xác minh chuẩn **v3.0.0 + Source 07 v1.3** có trên `main` tại merge #808; v3.0.1 §X-E sẽ có hiệu lực khi governance patch được merge và kiểm SHA.
 2. Test governance, Topic Intake, Safe Deploy, Roadmap và R4 trên exact final HEAD đạt, không tắt Q15/Q16.
-3. **OWNER CONFIRMED PREPARED (11/11/2026):** Chủ dự án đã cập nhật hai file `Temp_07_THPT_DELTA_AND_NOTEBOOK_REVIEW_POLICY_v1.3_PROJECT_SOURCE.md` và `Temp_09_THPT_Q01_Q18_v3_PROJECT_REFERENCE.md` vào nguồn Project SLM. Hai file đều mang `PREPARED_PENDING_PR808_MERGE`, vì thế **không phải v3 đã có hiệu lực** trước GitHub main merge. Sau khi merge, so khớp version/hash và xác nhận activation; **không yêu cầu chủ dự án upload lại**. Source 06/08 và 5 NotebookLM Permanent v2.1 giữ.
+3. **OWNER SOURCES CONFIRMED INSTALLED:** Chủ dự án đã cập nhật `Temp_07_THPT_DELTA_AND_NOTEBOOK_REVIEW_POLICY_v1.3_PROJECT_SOURCE.md` và `Temp_09_THPT_Q01_Q18_v3_PROJECT_REFERENCE.md`. Dòng `PREPARED_PENDING_PR808_MERGE` trong bản attachment là **dấu mốc lịch sử**, điều kiện đã thỏa khi PR #808 merge; hiện GitHub main v3.0.0 là quy phạm, sau #809 merge thì §X-E v3.0.1 là quy phạm. **Không đòi upload lại 07/09 để mở AUTHORING hoặc chốt READY**. Sources 06/08 và đúng 5 NotebookLM Permanent v2.1 giữ nguyên.
 4. Lệnh tạm dừng AUTHORING chỉ do chủ dự án quyết định cho phép mở lại; không suy CI xanh là Academic/PED PASS. Khi tác giả kiểm xong và ký đúng nguồn thì **AUTHORING_PASS = CONTENT_READY trong cùng lượt**, không reviewer thứ hai.
