@@ -2,7 +2,7 @@
 
 **STANDARD_ID:** `SLM-THPT-QUALITY-ONE`  
 **VERSION:** `3.0.1` · **OWNER:** Chủ dự án Self-Learning Math / G Learning  
-**STATUS:** `OWNER_APPROVED_EFFECTIVE` — quyết định chủ dự án 11/11/2026 thống nhất một đầu mối AUTHORING/RELEASE, cho phép tự đánh giá cả học liệu mới và hai Chuyên đề đã biên soạn; **quy phạm v3.0.0 chỉ có hiệu lực trên main sau khi PR governance được merge và QA tương ứng PASS**. Trước đó main v2.0.0 áp dụng. AUTHORING **PAUSED cho đến khi quy trình mới được đồng bộ**; không tự mở lại nội dung chỉ vì PR quản trị được tạo.
+**STATUS:** `OWNER_APPROVED_EFFECTIVE` cho bản v3.0.0 đã merge trên `main` qua PR #808, commit `e1976f47b13d20faf0cd68f3c862a97ac43d57f4`. Bản làm rõ **v3.0.1 §X-E** được chủ dự án phê duyệt 11/11/2026, chỉ trở thành phiên bản hiệu lực khi PR governance v3.0.1 đạt QA và merge vào `main`. AUTHORING vẫn **PAUSED cho đến khi chủ dự án cho phép mở lại**; merge governance không tự bật biên soạn hoặc website release.
 **SCOPE:** mọi học liệu Toán THPT 10–12 KNTT theo **SGK_CHAPTER** và **TOPIC**; áp dụng cho cả tác giả, NotebookLM và nhánh phát hành. **Một tiêu chuẩn chất lượng; các cổng kiểm tra phân theo trách nhiệm, không phải hai bộ tiêu chuẩn cạnh tranh.**
 
 ## 0. Luật thống nhất và thứ tự hiệu lực
@@ -211,7 +211,7 @@ Trước khi **tự ký Q18_AUTHOR_SELF_VERIFIED hoặc gửi NotebookLM khi th�
 8. **Tương tác:** khuyến khích mô hình toán học của NotebookLM/Gemini khi có giá trị; viết lại phù hợp Golden UI, không ghép CSS/JS/CDN không kiểm chứng. Kiểm miền/điểm biên, điều kiện, đồ thị, bàn phím/chạm, responsive, MathJax, hiệu năng, fallback; không đặt mô hình có hint/đáp án trong RD1 kín.
 9. **Tái dùng ngân hàng câu:** một `item_id` canonical có thể xuất hiện ở SGK Core/Practice, Topic Practice, Written và **Tự kiểm tra công khai chế độ `CLIENT_SELF_CHECK_NO_MASTERY`** theo placement khác nhau; thêm câu khi thiếu **họ dạng/độ sâu**. Câu đã luyện/đã xem không thể coi là `TOPIC_READINESS` **độc lập** hoặc bằng chứng cấp Mastery; muốn kiểm tra chính thức dùng held-out RD1 riêng, bảo mật, không lộ key/hint/đúng-sai trước Final Submit.
 10. **Bỏ rào cản cũ:** ngừng áp tiêu chí số công thức, FNV, byte-equal bản lịch sử hoặc heading PED làm phép chặn **bản layout mới**; test cũ chỉ replay historical snapshot. Thay bằng test ngữ nghĩa/math/điều kiện, tab & keyboard, MathJax/SVG, deep link, Q15/Q16/no-leak/Golden/assessment. Giữ ba cổng `CONTENT_MATH_PED_SOURCE`, `ASSESSMENT_DATA_SAFETY`, `RENDER_RELEASE_QA` không thêm gate trùng.
-11. **Độc lập kết quả:** `AUTHOR_SELF_VERIFIED` chỉ cấp quyền chuẩn bị `CONTENT_READY` khi A1–A7, Q01–Q18, SHA/receipt và private Q16 hoàn tất; `RELEASE_READY` và `PUBLISHED` vẫn cần AP1–AP5/R1–R5, exact-head CI, quyền chủ dự án, P1/P2 thực tế. Không merge/deploy từ một bản demo hoặc QA metadata.
+11. **Độc lập kết quả:** `AUTHOR_SELF_VERIFIED` cùng Q01–Q18/A1–A7, P0/P1=0 và nguồn/receipt/V2/ready/REGISTER khóa trong **cùng lượt** chính là `AUTHORING_PASS = CONTENT_READY` theo §X-E, không mở vòng academic approval tiếp. `RELEASE_READY` và `PUBLISHED` vẫn cần AP1–AP5/R1–R5, exact-head CI, quyền chủ dự án, P1/P2 thực tế. Không merge/deploy từ bản demo hoặc QA metadata.
 
 **Historical citations:** các đoạn trước trong file mô tả review independent **mặc định v1.0–v2.0**; sau khi v3.0 có hiệu lực, dùng ưu tiên mục X-D cho quyết định Q18 hiện hành, không tái kích hoạt veto cũ.
 
