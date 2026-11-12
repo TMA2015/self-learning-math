@@ -61,12 +61,14 @@ function sameIDs(actual,expected,where){
      assert(await outline.evaluate(el=>el.open),location+" learner can expand subsection list");
      const partLinks=outline.locator("ol li a");
      assert.equal(await partLinks.count(),actualH3,location+" every actual subsection must have one link");
-     const displayedTitles=(await partLinks.allInnerTexts()).map(x=>x.replace(/\\s+/g," ").trim());
+     const displayedTitles=(await partLinks.allInnerTexts()).map(x=>x.trim());
      originalSectionTitles.forEach((title,index)=>{
-      // MathJax may typeset original TeX spans in H3 and matching index links.
-      // Assert their native H3 targets separately; exact prose still matches.
-      if(!/\\\\\\(|\\\\\\[/.test(title))
-       assert.equal(displayedTitles[index],title,location+" original prose section title "+index);
+      // MathJax may convert original TeX spans into rendered mathematical labels.
+      // Compare untouched prose titles exactly, and check TeX titles by link target.
+      const hasMath=title.includes(String.fromCharCode(92)+"(")||
+       title.includes(String.fromCharCode(92)+"[");
+      if(!hasMath)
+       assert.equal(displayedTitles[index],title,location+" source subsection "+index);
       else assert(displayedTitles[index].length>3,location+" math subsection label absent "+index);
      });
      assert(await partLinks.evaluateAll(nodes=>nodes.every(a=>{
