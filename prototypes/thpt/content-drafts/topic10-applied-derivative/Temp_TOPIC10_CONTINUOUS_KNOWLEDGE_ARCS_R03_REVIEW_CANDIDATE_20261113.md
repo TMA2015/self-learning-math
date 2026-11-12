@@ -11,6 +11,8 @@
 - **Exact immutable SGK canonical source:** `prototypes/thpt/content-drafts/G12_SGK_CHI_B01_B05_FULL_CHAPTER_PUBLIC_CANONICAL_R00_SOURCE_CANDIDATE.md`, blob `f0862dcdab21dec136e43969f45c42638e7c7574`. Historical independent NotebookLM v2.1 SGK Academic/PED PASS (36 outcomes,78 public items,24 worked examples,6 SVG,36 D6) composite receipt `prototypes/thpt/review-packets/G12_SGK_CHI_B01_B05_R00_INDEPENDENT_NOTEBOOKLM_ACADEMIC_PED_PASS_SOURCE_RECEIPT_20261102.md`, blob `8fef1c7dbd9b404881ff40cec8147c9ae89ef473`. Original SGK **PASS is only original immutable SGK scope**, not Topic author PASS.
 - **Division of concepts:** CĐ09 explains derivative at point and computation rules; here CĐ10 fully restates needed derivative sign meanings and requirements. B01–B05 covers monotonicity, extreme values, asymptotes, graph survey and optimization; do not insert non-S1 new SGK Core. Data applications are explicitly *assumed mathematical models*, not measured facts.
 
+# Kiến thức
+
 ## Vì sao cần học CĐ10?
 
 Biết tính f'(x) chưa cho phép tự trả lời 'hàm tăng ở đâu?', 'đỉnh nào cao nhất?', 'đồ thị đi đâu khi x rất lớn?' hay 'làm chiếc hộp thể tích lớn nhất thế nào?'. CĐ10 đi từ so sánh giá trị tới dấu đạo hàm, so cực trị có điều kiện, giới hạn/tiệm cận và bảng biến thiên, rồi dùng cùng một phương pháp tìm lời giải tối ưu trong miền thực tế. Học sinh phải giải thích vì sao các ứng viên hợp lệ, chứ không chỉ tìm nghiệm f'(x)=0.
