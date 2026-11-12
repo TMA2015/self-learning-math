@@ -22,20 +22,18 @@ Một góc không chỉ là độ mở mà còn mang chiều quay và có thể 
 
 ### Góc lượng giác và radian
 
-<!-- LESSON_ID=TOP06-M01; OUTCOME_ID=TOP06-O01 -->
+<!-- LESSON_ID: TOP06-M01 · OUTCOME_ID: TOP06-O01 · connected prose R02 -->
 
-Một góc quay có thể vượt 360° hay quay ngược; chỉ số độ không cho thấy trực tiếp chiều dài cung. Để hiểu, ta dựa vào độ và radian; một vòng tròn chia 360 phần bằng nhau. Góc lượng giác lưu cả chiều quay: dương ngược kim đồng hồ, âm thuận kim đồng hồ. Một vòng là 360°=2π rad; hai góc cùng tia cuối chênh 2kπ, nhưng số vòng thực hiện không nhất thiết bằng nhau.
+Khi quay một chiếc kim, ta có thể quay theo hoặc ngược chiều kim đồng hồ, quay chưa hết một vòng hay nhiều vòng. Một góc lượng giác vì thế không chỉ ghi **độ mở**, mà còn ghi **chiều quay**: chiều ngược kim đồng hồ được quy ước dương, chiều thuận kim đồng hồ là âm. Đơn vị radian giúp gắn góc với độ dài cung tròn: một vòng ứng với \(360^\circ=2\pi\) radian. Hai góc chênh nhau \(2k\pi\) có cùng tia cuối nhưng không nhất thiết cùng số vòng quay.
 
-Xét trường hợp sau. Quay −450°: −450×π/180=−5π/2; cùng tia cuối với −π/2 nhưng đã quay hơn một vòng theo chiều âm. Lựa chọn phép đổi đơn vị trước khi xét vị trí giúp không lẫn −5π/2 với +π/2.
+Chẳng hạn, quay \(-450^\circ\) nghĩa là quay một vòng và thêm \(90^\circ\) theo chiều âm. Đổi sang radian: \(-450\cdot\pi/180=-5\pi/2\). Điểm cuối của góc này trùng điểm cuối \(-\pi/2\), nhưng phép quay đầu tiên thực hiện thêm một vòng. Vì vậy khi gặp yêu cầu tính độ dài cung hoặc số vòng, không thể tùy ý thay mọi góc bằng góc cùng tia cuối nếu mất thông tin về chuyển động.
 
-**Em tự thử:** −150° bằng bao nhiêu radian?
+**Em tự thử:** Đổi \(-150^\circ\) sang radian, rồi cho biết góc quay mang dấu gì.
 
 <details class="slm-topic-first-try" markdown="1">
-<summary>Em đã thử? Mở lời giải và đường khắc phục</summary>
+<summary>Em đã tự làm? Mở phần đối chiếu</summary>
 
-−5π/6; dấu âm giữ chiều quay.
-
-Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và lý do chọn phương pháp. Vẽ chiều quay; nếu làm mất dấu, thử −90° với +90°. Luyện THPT-G11-B01-C01 và THPT-TOP06-P01.
+\(-150^\circ=-150\pi/180=-5\pi/6\) radian. Dấu âm cho biết chiều quay thuận kim đồng hồ. Nếu em làm mất dấu, hãy so vị trí cuối của \(+90^\circ\) và \(-90^\circ\) trên đường tròn.
 
 </details>
 
