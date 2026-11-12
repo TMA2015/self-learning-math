@@ -11,6 +11,8 @@
 - **Nguồn SGK canonical public 88 ID/22 outcome**, source snapshot `prototypes/thpt/content-drafts/G12_SGK_CHIV_B11_B13_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md`, Git blob `45722cd386a498f3e0e96a09928c85565af56d1b`; independent original reviewer Academic/PED PASS v2.1 tại `prototypes/thpt/review-packets/G12_CHIV_R00_INDEPENDENT_ACADEMIC_PED_SOURCE_RECEIPT_20261103.md`, Git blob `feabeeeef262e7f6b28c898cdf77e6aa4194da24`. **SGK PASS cũ chỉ cho source SGK cũ**, không tự áp sang Topic mới.
 - **D5 media source distinction:** sáu hình có mặt trong gói NotebookLM SGK gốc là **PNG**, đã khớp SHA, **không có SVG gốc trong ZIP review**. Nếu vẽ SVG mới cho Topic CĐ11, đó là vật liệu mới được AUTHORING tự QA, không trình bày là nguyên bản SVG đã review. Các item gốc 88 ID tham chiếu-only (không copy stem/key/rubric); 26 protected SGK RD1 không được đưa công khai.
 
+# Kiến thức
+
 ## Vì sao học CĐ11?
 
 Đạo hàm trả lời *đại lượng biến đổi nhanh thế nào?*; nguyên hàm giúp khôi phục đại lượng từ tốc độ biến đổi. Khi biết biến thiên trên cả một khoảng, tích phân cộng dồn những phần nhỏ để cho độ thay đổi ròng, diện tích hay thể tích. Quan trọng nhất: cùng một biểu thức tích phân nhưng **tích phân đại số có dấu** khác **diện tích không âm**, và việc tính **thể tích** còn đòi hỏi biết hình dạng thiết diện hoặc trục quay. Vì vậy ta phát triển ý nghĩa trước công thức, kiểm miền, dấu và đơn vị trước phép tính.
