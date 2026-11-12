@@ -57,6 +57,13 @@ function sameIDs(actual,expected,where){
       location+" visible subsection summary must match original source H3 count");
      await choices.nth(1).click();
      assert(await knowledge.isVisible(),location+" Knowledge SGK panel must open");
+     // Originally these 13 reviewed figures immediately FOLLOWED their
+     // reading cues. They now must appear before the same cue on screen.
+     const existingFiguresAbove={7:1,8:1,9:1,11:2,12:1,13:1,14:1,15:1,16:2,17:1,18:1};
+     const expectedPlaced=existingFiguresAbove[n]||0;
+     const placed=knowledge.locator('figure[data-g10-figure-before-guide]');
+     assert.equal(await placed.count(),expectedPlaced,
+      location+" original reviewed figure relocation B07–B18");
      await outline.locator("summary").click();
      assert(await outline.evaluate(el=>el.open),location+" learner can expand subsection list");
      const partLinks=outline.locator("ol li a");
