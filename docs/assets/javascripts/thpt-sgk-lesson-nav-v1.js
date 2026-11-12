@@ -169,7 +169,7 @@ const run=()=>{
  if(!article)return;
  if(grade===10){
   article.classList.add("thpt-g10-knowledge-ap1");
-  if(lesson<=6){numberG10FirstSix(article);polishG10FirstSix(article);restoreG10FirstSixGolden(article);}
+  if(lesson<=6){article.classList.add("thpt-g10-first-six-golden");numberG10FirstSix(article);polishG10FirstSix(article);restoreG10FirstSixGolden(article);}
  }
  if(article.querySelector("[data-sgk-lesson-nav]"))return;
  const root=match[1]+(grade===10?"":"lop-"+grade+"/");
