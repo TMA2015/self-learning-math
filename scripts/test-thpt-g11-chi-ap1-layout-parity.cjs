@@ -11,7 +11,10 @@ for(const [lesson,expectedHash,expectedSections] of [[3,"ceeb82fb",7],[4,"520176
     assert.deepEqual(names,["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
       file+": incorrect level-1 Knowledge layout");
     // Historical byte/FNV parity is replayable only on original snapshot.
-    assert(text.includes("\\(")||text.includes("\\["),file+": missing math expressions");
+    const concept=text.slice(text.indexOf('=== "Kiến thức SGK"'),text.indexOf('=== "Ví dụ"'));
+    const required=lesson===3?["y=sin x","y=cos x","y=tan x","y=cot x"]:["sin x=m","cos x=m","tan x=m","cot x=m"];
+    for(const expression of required)assert(concept.includes(expression),file+": reviewed mathematical expression missing: "+expression);
+    assert(text.includes("### Ví dụ trực quan")&&text.includes("data-ped-first-try"),file+": pedagogical example and independent-first student try must remain");
     continue;
   }
  const a=text.indexOf("## 1. Kiến thức SGK"),b=text.indexOf("## 2. Ví dụ",a);
