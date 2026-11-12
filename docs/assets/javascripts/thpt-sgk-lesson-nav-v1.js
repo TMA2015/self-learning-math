@@ -208,6 +208,75 @@ const restoreG10FirstSixGolden=(article)=>{
  article.dataset.g10GoldenRestored="true";
 };
 
+
+/* G10 Chapter IV B07–B11: presentation-only extension of owner's accepted
+ * B01–B06 Golden. The real S1/Q18 reordering candidate stays in authoring
+ * Draft PR #825; do NOT move any first tries or pedagogical paragraphs here. */
+const polishG10ChapterIV=(article)=>{
+ if(article.dataset.g10ChivGolden==="true")return;
+ const set=article.querySelector(".tabbed-set");
+ const labels=[...(set?.querySelectorAll(":scope > .tabbed-labels > label")||[])];
+ const blocks=[...(set?.querySelectorAll(":scope > .tabbed-content > .tabbed-block")||[])];
+ const names=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
+ if(labels.length!==4||blocks.length!==4||
+   !labels.every((l,i)=>l.textContent.trim()===names[i]))return;
+ article.classList.add("thpt-g10-chiv-golden");
+ const section=["1. Khám phá kiến thức","2. Kiến thức SGK","3. Ví dụ",
+   "4. Lỗi thường gặp và cách tự khắc phục"];
+ blocks.forEach((block,i)=>{
+  const h=document.createElement("h2");
+  h.className="thpt-g10-section-heading";
+  h.textContent=section[i];block.prepend(h);
+ });
+ // Number only existing visible discovery/example/remediation labels. Source
+ // SGK concept headings in tab 2 are untouched pending S1 editorial review.
+ [...blocks[0].querySelectorAll(":scope > h3")].forEach((h,i)=>{
+  h.textContent="1."+(i+1)+". "+h.textContent.trim();
+ });
+ [...blocks[2].querySelectorAll(":scope > h3")].forEach((h,i)=>{
+  h.textContent="3."+(i+1)+". "+h.textContent.trim();
+ });
+ [...blocks[3].querySelectorAll(":scope > details.tip > summary")].forEach((h,i)=>{
+  h.textContent="4."+(i+1)+". "+h.textContent.trim();
+ });
+ // Golden example solution panel. MkDocs may render Đề/Giải/Tự kiểm as
+ // three strong labels in ONE paragraph; split its EXISTING DOM nodes without
+ // altering a single answer, formula, punctuation mark or example ID.
+ for(const h of blocks[2].querySelectorAll(":scope > h3")){
+  const p=h.nextElementSibling;
+  if(!p||p.tagName!=="P")continue;
+  const children=[...p.childNodes];
+  const strong=(node,re)=>node.nodeType===1&&node.tagName==="STRONG"&&re.test(node.textContent.trim());
+  const start=children.findIndex(n=>strong(n,/^Giải\s*:/iu));
+  const end=children.findIndex((n,i)=>i>start&&strong(n,/^(?:Điểm cần tự kiểm|Tự kiểm)\s*:/iu));
+  if(start<=0||end<=start)continue;
+  const oldText=p.textContent;
+  const box=document.createElement("div");box.className="thpt-g10-example-solution";
+  box.setAttribute("role","group");box.setAttribute("aria-label","Lời giải ví dụ");
+  const solve=document.createElement("p");box.append(solve);
+  const check=document.createElement("p");
+  for(const n of children.slice(start,end))solve.append(n);
+  for(const n of children.slice(end))check.append(n);
+  p.after(box);box.after(check);
+  if(oldText.replace(/\s+/g," ").trim()!==
+    (p.textContent+solve.textContent+check.textContent).replace(/\s+/g," ").trim()){
+   // Fail-safe: never leave an incomplete worked mathematical answer.
+   for(const n of [...solve.childNodes,...check.childNodes])p.append(n);
+   box.remove();check.remove();
+  }
+ }
+ blocks[1].querySelectorAll("details.question > summary").forEach(summary=>{
+  summary.textContent="Đối chiếu";
+ });
+ article.querySelectorAll(".thpt-r4-screen .thpt-r4-lead").forEach(p=>p.remove());
+ const inputs=[...set.querySelectorAll(":scope > input[type=radio]")];
+ const sync=()=>labels.forEach((l,i)=>l.classList.toggle("slm-g10-active-tab",Boolean(inputs[i]?.checked)));
+ set.addEventListener("change",sync);
+ sync();
+ bindG10CrossTabToc(article,set,labels,blocks);
+ article.dataset.g10ChivGolden="true";
+};
+
 const run=()=>{
  const path=location.pathname;
  const match=path.match(/^(.*\/thpt-preview\/sgk\/)(?:(lop-(11|12))\/)?chuong-([ivx]+)\/bai-(\d+)\/?$/);
@@ -222,6 +291,7 @@ const run=()=>{
  if(grade===10){
   article.classList.add("thpt-g10-knowledge-ap1");
   if(lesson<=6){article.classList.add("thpt-g10-first-six-golden");numberG10FirstSix(article);polishG10FirstSix(article);restoreG10FirstSixGolden(article);}
+  else if(chapter==="iv"&&lesson<=11)polishG10ChapterIV(article);
  }
  if(article.querySelector("[data-sgk-lesson-nav]"))return;
  const root=match[1]+(grade===10?"":"lop-"+grade+"/");
