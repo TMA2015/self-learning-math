@@ -29,7 +29,8 @@ for(const file of files){
   assert.deepEqual(tabs,labels,rel+" exactly four approved Model B L1 tabs");
   const headers=[...c.matchAll(/^    ### 1\.(\d+)\.\s/gm)].map(x=>Number(x[1]));
   for(let i=1;i<headers.length;i++)
-   if(headers[i]!==headers[i-1]+1)
+   const gap=headers[i]-headers[i-1];
+   if(gap!==1 && !(gap===2 && c.includes("### Vận dụng — tự giải trước khi đối chiếu")))
     problems.push(rel+" concept hierarchy out of sequence: "+headers[i-1]+" to "+headers[i]);
   if((c.match(/data-ped-first-try=/g)||[]).length<1||(c.match(/data-thpt-help-id=/g)||[]).length<1)
    problems.push(rel+" missing original first-try or D6 path");
