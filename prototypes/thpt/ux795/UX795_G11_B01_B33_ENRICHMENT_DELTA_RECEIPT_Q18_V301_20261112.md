@@ -6,13 +6,20 @@ Q18_VERIFICATION_MODE: `Q18_OWNER_SELF_VERIFIED_ENRICHMENT`
 RESPONSIBLE_LANE: `RELEASE`
 AUTHOR_SELF_QA_SIGNOFF: `ChatGPT · 12/11/2026`
 SOURCE_BASELINE: `main 92d05d3b3939b385123495d7237d19995c3ea505`
-TRANSFORMATION_SOURCE_BLOB: `4eb5c85af5de4c44a0b9f5bbeb54fc9002b92828`
+TRANSFORMATION_SOURCE_BLOB: `083035ab4820dc913334e9ff8dc8c1489dba9411`
 MATH_PED_DELTA_STATUS: `SELF_QA_PASS_SCOPED_NEW_EXPLANATION_B01_B33`
 P0_P1_FOUND_IN_CHECKED_DELTA: `0 / 0`
 INDEPENDENT_NOTEBOOKLM_NEW_SNAPSHOT_VERDICT: `NOT_CLAIMED`
 ASSESSMENT_DATA_SAFETY: `EXACT_FINAL_HEAD_Q15_Q16_GATE_PENDING`
 RENDER_RELEASE_QA: `EXACT_FINAL_HEAD_BROWSER_QA_PENDING`
 PUBLISHED_P1: `NOT_YET`
+
+## Q18 targeted B01 pedagogical correction · 12/11/2026
+
+- `Q18_OWNER_SELF_VERIFIED_ENRICHMENT`, `DELTA_C_ACADEMIC_MATERIAL`, scope **G11-B01 / discovery example wording only**. Prior wording falsely contrasted uniform versus non-uniform rotation speed as if it implied different turning direction and total angle; that inference is invalid.
+- Revised proof by explicit counterfactual rotations from one starting ray: counterclockwise **+2π rad** (one positive full turn) and clockwise **−6π rad** (three negative turns) end on the same ray because they differ by an integer multiple of **2π**; directed total angle and number/direction of turns differ. The new student sentence states only these verified facts.
+- Baseline source and its reviewer receipt remain unchanged. The B01 candidate blob and deterministic transformation blob are relocked above, using the same independently checked original SGK content. No changes to Core, Practice, Written, canonical IDs, formulas, answer keys, Final Submit, RD1, Gemini, Firebase or Mastery. Other **32 candidate blobs unchanged**. Targeted self-QA correction closes the identified P1 wording issue within this Q18 scope; it is **not** an independent NotebookLM PASS.
+- `AUTHOR_SELF_QA_SIGNOFF=ChatGPT · 12/11/2026 · G11-B01-EXAMPLE-CORRECTION`; rerun all mandatory release QA on the new exact PR HEAD. Do not publish before checks pass.
 
 ## Phạm vi biên soạn và tự kiểm
 
@@ -24,7 +31,7 @@ Bản nâng cấp gồm: 4 tab L1 `Khám phá kiến thức / Kiến thức SGK 
 
 | LESSON_ID / outcome family được diễn giải thêm | DELTA_ID | Baseline Git blob → candidate Git blob | SGK/SBT S1 V2 original scope | MATH_VERIFICATION thực chất | PED_VERIFICATION (vì sao → bản chất → phương pháp) | P0/P1 |
 |---|---|---|---|---|---|---|
-| G11-B01 · góc có hướng, radian, đường tròn lượng giác, điều kiện của tang/côtang | G11-KNOWLEDGE-B01 | `9605eaf510f9f873751e20bef29f4aac848609a3` → `edb2ad3564118b28336ded4722e4eda194103aeb` | SGK KNTT Toán 11 Bài 1; [V2 source](../release-queue/ready/G11-SGK-CHI-B01-B04.md) | Quay một vòng rưỡi theo chiều dương cho góc 3π rad; vị trí cuối trùng với góc π rad, nhưng vành bánh xe bán kính 2 cm đã đi cung 6π cm, không phải 2π cm. | Bánh xe quay đúng một vòng và không quay đều có cùng tia cuối. Điểm khác nhau là chiều và tổng góc quay; vì thế cần số đo góc có hướng chứ không chỉ góc giữa hai tia. **Năng lực:** đổi độ–radian, tìm đúng dấu sin/cos và dùng góc quay thực tế khi tính cung | 0 / 0 |
+| G11-B01 · góc có hướng, radian, đường tròn lượng giác, điều kiện của tang/côtang | G11-KNOWLEDGE-B01 | `9605eaf510f9f873751e20bef29f4aac848609a3` → `4f82140f675abba2c9d588496aab699653a22b1c` | SGK KNTT Toán 11 Bài 1; [V2 source](../release-queue/ready/G11-SGK-CHI-B01-B04.md) | Quay một vòng rưỡi theo chiều dương cho góc 3π rad; vị trí cuối trùng với góc π rad, nhưng vành bánh xe bán kính 2 cm đã đi cung 6π cm, không phải 2π cm. | Cùng một bánh xe, nếu quay một vòng ngược chiều kim đồng hồ (2π rad) hoặc ba vòng theo chiều kim đồng hồ (−6π rad), tia cuối đều trùng tia đầu. Tuy nhiên, chiều quay và số đo góc tích lũy khác nhau; vì thế phải ghi góc có hướng và số vòng quay, không chỉ vị trí cuối. **Năng lực:** đổi độ–radian, tìm đúng dấu sin/cos và dùng góc quay thực tế khi tính cung | 0 / 0 |
 | G11-B02 · công thức cộng, nhân đôi, tích thành tổng, tổng thành tích | G11-KNOWLEDGE-B02 | `15c4de731bfbaf5b8a141a54d9b5493e7895c752` → `7fff8992e06660ac4a72a362ea082b48428eef72` | SGK KNTT Toán 11 Bài 2; [V2 source](../release-queue/ready/G11-SGK-CHI-B01-B04.md) | Với hai góc 30° và 30°, sin(60°)=√3/2, trong khi sin(30°)+sin(30°)=1. Sai khác này cho thấy phải dùng công thức cộng có đủ sin và cos. | Khi ghép hai góc quay liên tiếp, tọa độ điểm cuối thay đổi theo cả hai góc. Vì vậy sin của tổng không thể tính bằng cách cộng hai giá trị sin riêng rẽ. **Năng lực:** nhận dạng dạng biểu thức, chọn công thức phù hợp và kiểm dấu ở góc đặc biệt | 0 / 0 |
 | G11-B03 · hàm sin, cos, tan, cot, chu kì, miền xác định, tập giá trị | G11-KNOWLEDGE-B03 | `a8a3592c661b06fae94aad386b991f23a6718957` → `a2dcdac36dedc9e7402460cde31cabf8c27a2bef` | SGK KNTT Toán 11 Bài 3; [V2 source](../release-queue/ready/G11-SGK-CHI-B01-B04.md) | Hàm y=sin x nhận giá trị 0 tại x=0 và x=π, đạt 1 tại π/2 và lặp lại sau 2π. Hai điểm cùng độ cao chưa chắc là cùng pha của chuyển động. | Nhiệt độ theo ngày hay độ cao con lắc có tính lặp lại. Đồ thị lượng giác giúp diễn tả một chu kì hoàn chỉnh và dự đoán thời điểm lặp, nhưng mỗi hàm lại có miền và giá trị khác nhau. **Năng lực:** đọc đồ thị theo trục và đơn vị radian, kiểm tiệm cận của tan/cot trước khi kết luận | 0 / 0 |
 | G11-B04 · phương trình sin, cos, tan, cot; họ nghiệm; điều kiện xác định | G11-KNOWLEDGE-B04 | `71271b2035bfe289ac3ccf6f384d8f41ec55aefb` → `04559872dce69111e29e3ad8ed5e193421481826` | SGK KNTT Toán 11 Bài 4; [V2 source](../release-queue/ready/G11-SGK-CHI-B01-B04.md) | sin x=0 có nghiệm x=kπ với k nguyên, vì trên một vòng có hai hướng trục hoành rồi lặp lại ở các vòng tiếp theo. Chỉ ghi x=0 sẽ bỏ vô số nghiệm. | Nếu biết một vị trí của điểm trên đường tròn thì thường có nhiều góc quay đi tới đó. Giải phương trình lượng giác là tìm mọi góc phù hợp, không chỉ góc mà máy tính hiện lên. **Năng lực:** chọn họ nghiệm theo đồ thị, kiểm chu kì, kiểm miền và nghiệm trên đoạn | 0 / 0 |

@@ -20,7 +20,7 @@
 
     ### Ví dụ trực quan
 
-    Bánh xe quay đúng một vòng và không quay đều có cùng tia cuối. Điểm khác nhau là chiều và tổng góc quay; vì thế cần số đo góc có hướng chứ không chỉ góc giữa hai tia.
+    Cùng một bánh xe, nếu quay một vòng ngược chiều kim đồng hồ (2π rad) hoặc ba vòng theo chiều kim đồng hồ (−6π rad), tia cuối đều trùng tia đầu. Tuy nhiên, chiều quay và số đo góc tích lũy khác nhau; vì thế phải ghi góc có hướng và số vòng quay, không chỉ vị trí cuối.
 
     **Quan sát bằng số liệu:** Quay một vòng rưỡi theo chiều dương cho góc 3π rad; vị trí cuối trùng với góc π rad, nhưng vành bánh xe bán kính 2 cm đã đi cung 6π cm, không phải 2π cm.
 
