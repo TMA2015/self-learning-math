@@ -8,9 +8,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_FUNCTION_GRAPH_TRANSFORM_FULL_PUBLIC_R01_20261112.md
-ACADEMIC_SOURCE_BLOB: 9323df37ff8333f6c8c20fefbd68111051eee773
+ACADEMIC_SOURCE_BLOB: d075cbcb6443d0c9a17de9acd0fcbf8c1bab114e
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC05_GRAPH_TRANSFORMS_R01_AUTHOR_SELF_QA_RECEIPT_20261112.md
-REVIEW_RECEIPT_BLOB: dc21091e2d8dca79346e67c6cb1a8344595922d3
+REVIEW_RECEIPT_BLOB: e1e11466a279bf451b724b33077e9e0cc5a67b2c
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC05_GRAPH_TRANSFORMS_NEW38_PUBLIC_CANONICAL_R01_20261112.md
 PUBLIC_CANONICAL_BANK_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39
 CATALOG_TOPIC_ID: CD05
@@ -205,6 +205,8 @@ One item ID, one canonical bank; compact source_type is TOPIC_NEW_CANDIDATE; no 
 
 ## S1_SGK_SBT_SOURCE
 
+**CĐ05 S1 bổ sung phạm vi chẵn/lẻ, tuần hoàn:** SGK KNTT Toán 11 Tập 1 B03 trang in 22–30, PDF 1-based 23–31; SHA256 bản scan nguồn đã xác minh trong owner receipt ngày 07/11/2026: `4492122eb2c9df626582d37b5c3d0e6513d66ca68d80d8a1e69577aa8b706828`. Chỉ dùng nguồn khái niệm/định nghĩa, phần lượng giác đầy đủ thuộc CĐ06; không nhận đã mở lại bản scan trong lượt này. Không thay bài tập/đáp án đã khóa.
+
 Chứng cứ owner original SGK/SBT KNTT Toán 10 tập 2 đã đọc ảnh gốc và kiểm SHA256 07/11/2026 thuộc Draft #782; **lượt này chỉ đọc lại receipt**, không tuyên bố quét PDF mới. SGK B15 Hàm số trang in4–10/PDF one-based5–11, B16 Hàm số bậc hai in11–18/PDF12–19, PDF SHA256 `ee8a00392e1c9fc5b213e574666cf1f8487548737e138573f28a988c640fafe6`. SBT B15 in3–9/PDF4–10, B16 in10–15/PDF11–16, SHA256 `3cb33690e0627b9e8ac467c23625b7feb7d05a8422293db0e1b26e44ca6a78c7`. Original owner S1 image receipts Git blobs `001a9dd34cf8af83e787fd28d760431fe63e1f24` và `50f667cdfa3fa1aedf5a38c0bc7f80650a6835bf` của #782. S1 dùng xác thực nền hàm số, miền/tập giá trị, điểm/đồ thị, parabol và mô hình; tổng quát phép dịch/co giãn là học liệu Topic tự biên soạn, **không** nhận chúng xuất hiện nguyên văn trong SGK B15/B16. Không sao chép bài SBT có bản quyền.
 
 ## D1_D6_EVIDENCE
@@ -217,7 +219,7 @@ PED1 17 WHY từ data/đơn vị/nhìn đồ thị; PED2 17 tiền đề trong c
 
 ## AUTHORING_A1_A7
 
-A1 exact source blob `9323df37ff8333f6c8c20fefbd68111051eee773`, Q18 self receipt blob `dc21091e2d8dca79346e67c6cb1a8344595922d3`, canonical bank blob `ab878f1a18dea87872449a79c27b75a612d81b39`. A2 đã có original S1 PDF SHA+image/pagination receipt ngày 07/11, không giả direct PDF lượt này. A3 Academic/PED của pilot M1–M7 R18 #782 được bảo toàn theo source cũ, **không được suy thành PASS độc lập CĐ05**; CĐ05 tự kiểm 110/110 phép kiểm. A4 17 outcome và 38 item ID, 4 Written /7; 17 public selfchecks reuse. A5 D1–D6/PED1–PED6, ba hình SVG, hai mô hình đặc tả. A6 new CĐ05 modules/questions/figures = DELTA_C_ACADEMIC_MATERIAL author-verified v3.0.1, P0/P1=0; không chạm source cũ. A7 0 private RD1 imported, Final Submit/no feedback trước nộp runtime RELEASE; không ghi Mastery từ public selfcheck.
+A1 exact source blob `d075cbcb6443d0c9a17de9acd0fcbf8c1bab114e`, Q18 self receipt blob `e1e11466a279bf451b724b33077e9e0cc5a67b2c`, canonical bank blob `ab878f1a18dea87872449a79c27b75a612d81b39`. A2 đã có original S1 PDF SHA+image/pagination receipt ngày 07/11, không giả direct PDF lượt này. A3 Academic/PED của pilot M1–M7 R18 #782 được bảo toàn theo source cũ, **không được suy thành PASS độc lập CĐ05**; CĐ05 tự kiểm 110/110 phép kiểm. A4 17 outcome và 38 item ID, 4 Written /7; 17 public selfchecks reuse. A5 D1–D6/PED1–PED6, ba hình SVG, hai mô hình đặc tả. A6 new CĐ05 modules/questions/figures = DELTA_C_ACADEMIC_MATERIAL author-verified v3.0.1, P0/P1=0; không chạm source cũ. A7 0 private RD1 imported, Final Submit/no feedback trước nộp runtime RELEASE; không ghi Mastery từ public selfcheck.
 
 ## DELTA_LEDGER
 
