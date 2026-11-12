@@ -4,7 +4,7 @@
 const assert=require("node:assert/strict");
 const fs=require("node:fs");
 const crypto=require("node:crypto");
-const {expectedG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
+const {expectedG10KnowledgeBlob,chivEditorialReceiptRows}=require("./thpt-q18-g10-source-receipt.cjs");
 const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
 async function verifyModelBLesson(page,{n,chapter,tries,helps,images,questions=tries}){
  const article=page.locator("article.md-content__inner");
@@ -48,9 +48,14 @@ async function verifyModelBLesson(page,{n,chapter,tries,helps,images,questions=t
    "B"+n+" missing exact expected tab "+expected[index]);
   await t.click();
  };
- await select("Kiến thức SGK");
+ // S1 editorial Golden (owner §X-F): First Try belongs in Discovery.
+ // Original, independently frozen versions without the ChIV receipt retain
+ // the previous Knowledge placement. Never remove disclosure/Q15 assertions.
+ const isChivEditorial=chivEditorialReceiptRows().has("B"+String(n).padStart(2,"0"));
+ const formativeTab=isChivEditorial?"Khám phá kiến thức":"Kiến thức SGK";
+ await select(formativeTab);
  const answer=article.locator("details.question:visible").first();
- assert(await answer.count()===1,"B"+n+" First Try must be visible to learner in Knowledge tab");
+ assert(await answer.count()===1,"B"+n+" First Try must be visible in "+formativeTab);
  const before=await answer.innerText();
  await answer.locator("summary").click();
  assert(await answer.evaluate(x=>x.open),"B"+n+" student cannot open First Try");

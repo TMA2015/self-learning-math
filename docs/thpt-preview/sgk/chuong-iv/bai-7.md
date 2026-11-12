@@ -12,17 +12,11 @@
 
     Trong bài này, em sẽ bắt đầu từ những mũi tên quen thuộc, rồi lần lượt nhận ra khi nào chúng cùng phương, cùng hướng, bằng nhau và vì sao vectơ-không là một trường hợp đặc biệt cần quy ước.
 
-    ### Thuật ngữ, kiến thức và kỹ năng
-
-    **Thuật ngữ:** Vectơ, giá vectơ, điểm đầu/điểm cuối, độ dài, cùng phương, cùng/ngược hướng, vectơ bằng nhau, vectơ-không.
-
-    **Sau bài học, em cần làm được:** Chỉ đúng điểm đầu–cuối; xét phương rồi chiều rồi độ dài; đọc hình bình hành; phân biệt quãng đường với độ dài độ dời.
-
-=== "Kiến thức SGK"
+    ### Ví dụ trực quan
 
     <span id="thpt-g10-chiv-try01" data-thpt-first-try-id="THPT-G10-CHIV-TRY01" data-outcome-id="G10-B07-DEFINITION" data-thpt-help-ref="HELP-G10-B07-01"></span>
 
-    ### Vectơ là gì và tại sao phải có chiều?
+    #### Vectơ là gì và tại sao phải có chiều?
 
     Đi từ A đến B rồi đi ngược từ B về A có cùng đoạn đường, nhưng hai lần di chuyển đưa ta về hai hướng trái nhau. Chỉ độ dài AB không đủ mô tả sự di chuyển.
 
@@ -44,7 +38,7 @@
 
     <span id="thpt-g10-chiv-try02" data-thpt-first-try-id="THPT-G10-CHIV-TRY02" data-outcome-id="G10-B07-LENGTH" data-thpt-help-ref="HELP-G10-B07-02"></span>
 
-    ### Độ lớn không phải là hướng
+    #### Độ lớn không phải là hướng
 
     Trên bản đồ, hai người đi 4 km theo các hướng khác nhau đều có quãng di chuyển 4 km, nhưng không có cùng vectơ độ dời.
 
@@ -66,7 +60,7 @@
 
     <span id="thpt-g10-chiv-try03" data-thpt-first-try-id="THPT-G10-CHIV-TRY03" data-outcome-id="G10-B07-DIRECTION" data-thpt-help-ref="HELP-G10-B07-02"></span>
 
-    ### Cùng phương khác cùng hướng
+    #### Cùng phương khác cùng hướng
 
     Trên đường hai chiều, hai xe có thể đi trên hai làn song song mà một xe về Đông, xe còn lại về Tây.
 
@@ -88,7 +82,7 @@
 
     <span id="thpt-g10-chiv-try04" data-thpt-first-try-id="THPT-G10-CHIV-TRY04" data-outcome-id="G10-B07-EQUALITY" data-thpt-help-ref="HELP-G10-B07-02"></span>
 
-    ### Khi nào hai mũi tên ở nơi khác nhau là một vectơ?
+    #### Khi nào hai mũi tên ở nơi khác nhau là một vectơ?
 
     Một xe dịch chuyển 2 km về Đông ở Hà Nội và một xe khác dịch chuyển 2 km về Đông ở nơi khác: độ dời mô tả như nhau dù điểm đặt khác.
 
@@ -110,7 +104,7 @@
 
     <span id="thpt-g10-chiv-try05" data-thpt-first-try-id="THPT-G10-CHIV-TRY05" data-outcome-id="G10-B07-ZERO" data-thpt-help-ref="HELP-G10-B07-02"></span>
 
-    ### Không di chuyển vẫn cần một vectơ
+    #### Không di chuyển vẫn cần một vectơ
 
     Đi một vòng rồi quay lại đúng điểm xuất phát, độ dời cuối cùng bằng 0 dù quãng đường đã đi có thể lớn hơn 0.
 
@@ -119,7 +113,7 @@
     Khi A trùng B, mũi tên co lại thành một điểm: \(\overrightarrow{AA}=\vec0\), độ dài 0. **Theo quy ước SBT KNTT**, vectơ-không cùng phương và cùng hướng với mọi vectơ; đây là quy ước chứ không phải mũi tên vật lý có chiều xác định.
 
 
-    Dùng \(\vec0\) để cộng, trừ và biểu diễn độ dời ròng bằng 0. Đừng dùng góc giữa hai vectơ khi có vectơ-không (B11 sẽ có điều kiện khác không).
+    Dùng \(\vec0\) để cộng, trừ và biểu diễn độ dời ròng bằng 0. Không suy ra một góc xác định duy nhất khi có vectơ-không; Bài 11 sẽ giới thiệu quy ước riêng của SGK về góc và tính vuông góc.
 
     **Em vận dụng.** Bạn đi từ A đến B rồi trở về A. Vectơ độ dời từ điểm đầu đến điểm cuối là gì? Có bằng tổng độ dài hai chặng không?
 
@@ -129,10 +123,15 @@
 
         **Vì sao:** Độ dời chỉ quan tâm vị trí đầu/cuối; đi rồi quay lại cho vectơ-không. Quãng đường vẫn là số dương nếu có di chuyển.
 
+    ### Thuật ngữ, kiến thức và kỹ năng
 
-    ### Kiến thức SGK
+    **Thuật ngữ:** Vectơ, giá vectơ, điểm đầu/điểm cuối, độ dài, cùng phương, cùng/ngược hướng, vectơ bằng nhau, vectơ-không.
 
-    ### 1. Vectơ và độ dài
+    **Sau bài học, em cần làm được:** Chỉ đúng điểm đầu–cuối; xét phương rồi chiều rồi độ dài; đọc hình bình hành; phân biệt quãng đường với độ dài độ dời.
+
+=== "Kiến thức SGK"
+
+    ### 2.1. Khái niệm vectơ
 
     **Khái niệm:** Vectơ là đoạn thẳng có hướng. Kí hiệu $\overrightarrow{AB}$ gồm điểm đầu **A**, điểm cuối **B**; độ dài $|\overrightarrow{AB}|=AB\ge0$.
 
@@ -140,13 +139,19 @@
 
     **Phân biệt:** Mũi tên biểu diễn hướng di chuyển từ A sang B, nhưng quãng đường đã đi không luôn bằng độ dài độ dời.
 
-    ### 2. Phương và hướng
+    #### Vectơ-không
 
-     Với hai vectơ khác không, chúng **cùng phương** nếu hai giá song song hoặc trùng nhau; cùng phương có thể **cùng hướng** hoặc **ngược hướng**.
+    $\overrightarrow{AA}=\vec0$ với mọi điểm A và $|\vec0|=0$. **Theo quy ước SBT KNTT lớp 10 Bài 7**, vectơ-không được xem là cùng phương và cùng hướng với mọi vectơ.
+
+    **Lưu ý về quy ước:** Điều này là quy ước toán học cho trường hợp đặc biệt, không mô tả một đoạn có chiều vật lí khác 0.
+
+    ### 2.2. Hai vectơ cùng phương, cùng hướng, bằng nhau
+
+    Với hai vectơ khác không, chúng **cùng phương** nếu hai giá song song hoặc trùng nhau; cùng phương có thể **cùng hướng** hoặc **ngược hướng**.
 
     **Lưu ý:** Cùng phương không suy ra cùng hướng; cùng hướng không suy ra cùng độ dài.
 
-    ### 3. Bằng nhau và ngược hướng
+    #### Hai vectơ bằng nhau và ngược hướng
 
     **Quan sát hình.** Đọc hình bình hành theo thứ tự: chọn cạnh AB, đối chiếu mũi tên DC và CD, rồi kiểm chiều của từng mũi tên trước khi kết luận bằng nhau. Hai cạnh đối bằng độ dài chưa đủ để hai vectơ cùng bằng nhau.
 
@@ -156,15 +161,9 @@
 
     **Liên hệ:** Tên gọi vectơ đối cùng kí hiệu âm của vectơ được giải thích ở Bài 8.
 
-    ### 4. Vectơ-không theo SGK/SBT
+    #### Vận dụng
 
-     $\overrightarrow{AA}=\vec0$ với mọi điểm A và $|\vec0|=0$. **Theo quy ước SBT KNTT lớp 10 Bài 7**, vectơ-không được xem là cùng phương và cùng hướng với mọi vectơ.
-
-    **Lưu ý về quy ước:** Điều này là quy ước toán học cho trường hợp đặc biệt, không mô tả một đoạn có chiều vật lí khác 0.
-
-    ### 5. Ứng dụng
-
-     Lực, vận tốc, độ dời có thể dùng vectơ vì đồng thời chứa độ lớn và hướng; quãng đường đi theo hai chặng có thể lớn hơn độ dài vectơ độ dời từ đầu đến cuối. Luôn ghi đơn vị thích hợp.
+    Lực, vận tốc, độ dời có thể dùng vectơ vì đồng thời chứa độ lớn và hướng; quãng đường đi theo hai chặng có thể lớn hơn độ dài vectơ độ dời từ đầu đến cuối. Luôn ghi đơn vị thích hợp.
 
 === "Ví dụ"
 

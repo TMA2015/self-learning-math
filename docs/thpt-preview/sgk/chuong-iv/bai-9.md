@@ -12,17 +12,11 @@
 
     Đừng vội học thuộc các tính chất rời rạc. Mỗi lần xuất hiện hệ số âm, số 0 hoặc tổng hai vectơ, hãy thử hình dung sự phóng to, thu nhỏ, đổi chiều hoặc ghép mũi tên.
 
-    ### Thuật ngữ, kiến thức và kỹ năng
-
-    **Thuật ngữ:** Tích của số với vectơ, độ dài, đổi hướng theo dấu hệ số, tính phân phối, cùng phương, trung điểm/trọng tâm.
-
-    **Sau bài học, em cần làm được:** Tìm hướng và độ dài của \(k\vec u\); nhận biết hai vectơ cùng phương; biến đổi tổng và tích; kiểm các trường hợp \(k=0\) và \(k<0\).
-
-=== "Kiến thức SGK"
+    ### Ví dụ trực quan
 
     <span id="thpt-g10-chiv-try11" data-thpt-first-try-id="THPT-G10-CHIV-TRY11" data-outcome-id="G10-B09-SCALAR_DEFINITION" data-thpt-help-ref="HELP-G10-B09-01"></span>
 
-    ### Nhân vectơ với số: phóng to, thu nhỏ, đổi chiều
+    #### Nhân vectơ với số: phóng to, thu nhỏ, đổi chiều
 
     Trên bản đồ, một mũi tên dịch chuyển có thể được kéo dài gấp đôi hay đảo chiều mà vẫn nằm theo cùng phương; số nhân mô tả phép biến đổi này.
 
@@ -44,7 +38,7 @@
 
     <span id="thpt-g10-chiv-try12" data-thpt-first-try-id="THPT-G10-CHIV-TRY12" data-outcome-id="G10-B09-LENGTH_DIRECTION" data-thpt-help-ref="HELP-G10-B09-01"></span>
 
-    ### Dấu k quyết định chiều, |k| quyết định độ lớn
+    #### Dấu k quyết định chiều, |k| quyết định độ lớn
 
     Khi một robot quay trở lại theo đúng đường vừa đi nhưng gấp đôi độ dời, độ lớn tăng còn chiều đổi ngược.
 
@@ -66,7 +60,7 @@
 
     <span id="thpt-g10-chiv-try13" data-thpt-first-try-id="THPT-G10-CHIV-TRY13" data-outcome-id="G10-B09-DISTRIBUTION" data-thpt-help-ref="HELP-G10-B09-01"></span>
 
-    ### Phóng to cả chuyển động tổng cộng hoặc từng chặng
+    #### Phóng to cả chuyển động tổng cộng hoặc từng chặng
 
     Đi hai chặng rồi phóng to toàn bộ lộ trình theo một tỉ lệ cho cùng độ dời ròng như phóng to từng chặng rồi cộng.
 
@@ -88,7 +82,7 @@
 
     <span id="thpt-g10-chiv-try14" data-thpt-first-try-id="THPT-G10-CHIV-TRY14" data-outcome-id="G10-B09-COLLINEAR" data-thpt-help-ref="HELP-G10-B09-01"></span>
 
-    ### Một đường chuyển động, nhiều vectơ
+    #### Một đường chuyển động, nhiều vectơ
 
     Các mũi tên cùng nằm trên một đường có thể dài ngắn khác nhau và ngược chiều; vẫn cùng phương.
 
@@ -110,7 +104,7 @@
 
     <span id="thpt-g10-chiv-try15" data-thpt-first-try-id="THPT-G10-CHIV-TRY15" data-outcome-id="G10-B09-MIDPOINT_CENTROID" data-thpt-help-ref="HELP-G10-B09-02"></span>
 
-    ### Tỉ lệ trung tuyến dẫn tới tỉ lệ vectơ
+    #### Tỉ lệ trung tuyến dẫn tới tỉ lệ vectơ
 
     Biết điểm M ở chính giữa AB hay G chia trung tuyến AM theo tỉ lệ 2:1 giúp tìm vị trí chỉ bằng phép nhân vectơ với số.
 
@@ -129,12 +123,15 @@
 
         **Vì sao:** G nằm giữa A và M, AG:GM=2:1 nên AM gồm 3 phần, AG chiếm 2 phần. Hai vectơ A→G, A→M cùng hướng.
 
+    ### Thuật ngữ, kiến thức và kỹ năng
 
-    ### Kiến thức SGK
+    **Thuật ngữ:** Tích của số với vectơ, độ dài, đổi hướng theo dấu hệ số, tính phân phối, cùng phương, trung điểm/trọng tâm.
 
-    <span class="thpt-ap-knowledge-pilot" hidden aria-hidden="true"></span>
+    **Sau bài học, em cần làm được:** Tìm hướng và độ dài của \(k\vec u\); nhận biết hai vectơ cùng phương; biến đổi tổng và tích; kiểm các trường hợp \(k=0\) và \(k<0\).
 
-    ### 1. Định nghĩa và trường hợp đặc biệt
+=== "Kiến thức SGK"
+
+    ### 2.1. Tích của một vectơ với một số
 
     **Quan sát hình.** Quan sát mũi tên gốc, các bội dương và âm: độ dài đổi theo (|k|), còn chiều quay ngược khi (k<0). Chú ý (k=0) tạo vectơ-không.
 
@@ -150,7 +147,7 @@
 
     **Lưu ý:** Với vectơ-không, SGK/SBT KNTT có quy ước riêng về phương/hướng; không suy ra vectơ-không có một mũi tên vật lí khác 0.
 
-    ### 2. Tính chất
+    ### 2.2. Các tính chất của phép nhân vectơ với một số
 
     **Các quy tắc cơ bản:**
 
@@ -162,7 +159,7 @@
 
     Nếu $\vec u$ và $\vec v$ **đều khác không**, chúng cùng phương khi và chỉ khi tồn tại $t\ne0$ sao cho $\vec v=t\vec u$. Trường hợp vectơ không phải kiểm riêng theo quy ước, không chia cho độ dài 0.
 
-    ### 3. Trung điểm và trọng tâm
+    #### Hệ quả: trung điểm và trọng tâm
 
     **Trung điểm:** Nếu $M$ là trung điểm $AB$ thì $\overrightarrow{AM}=\tfrac12\overrightarrow{AB}$; ngược lại, đẳng thức này xác định trung điểm. 
 
@@ -175,7 +172,7 @@
 
     Đây là liên hệ vận dụng từ Bài 8 (cộng vectơ) sang nhân với một số, không tạo item trùng với Bài 8.
 
-    ### 4. Ứng dụng
+    #### Vận dụng
 
     Khi các vectơ biểu diễn dịch chuyển hay lực, $k$ thay đổi độ lớn và có thể đổi chiều. Không ghi độ dài âm hoặc cộng độ dài thay cho tổng vectơ khi các hướng khác nhau.
 

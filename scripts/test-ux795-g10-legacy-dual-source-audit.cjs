@@ -10,6 +10,7 @@ const fs=require("node:fs");
 const path=require("node:path");
 const crypto=require("node:crypto");
 const root=path.resolve(__dirname,"..");
+const {candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 const index=process.argv.indexOf("--baseline");
 assert(index>=0&&process.argv[index+1],"--baseline DIR required: use a pristine main checkout");
 const baselineRoot=path.resolve(root,process.argv[index+1]);
@@ -46,7 +47,7 @@ for(const [name,chapter,num]of specs){
  // replacement. No arbitrary source drift is accepted.
  const baselineSha=blob(mainRaw);
  assert([row.main,row.candidate].includes(baselineSha),name+" unknown main baseline source drift");
- assert.equal(blob(candidateRaw),row.candidate,name+" staged candidate source drift");
+ assert.equal(blob(candidateRaw),candidateG10KnowledgeBlob(num)||row.candidate,name+" exact approved historical/editorial source drift");
  const base=mainRaw.toString("utf8"),s=candidateRaw.toString("utf8");
  assert.deepEqual(getIDs(s),getIDs(base),name+" original First Try/HELP/outcome IDs changed");
  assert.deepEqual([...s.matchAll(/^=== "([^"]+)"$/gm)].map(x=>x[1]),tabs,name+" changed owner Model B tabs");
@@ -77,7 +78,7 @@ for(const [name,chapter,num]of specs){
  }
  const mutated=s.replace('data-thpt-first-try-id="','data-thpt-first-try-id="CORRUPTED-');
  assert.notDeepEqual(getIDs(mutated),getIDs(base),name+" negative canonical-ID mutation must be caught");
- assert.notEqual(blob(Buffer.from(s+" ","utf8")),row.candidate,name+" negative source-drift mutation must be caught");
+ assert.notEqual(blob(Buffer.from(s+" ","utf8")),candidateG10KnowledgeBlob(num)||row.candidate,name+" negative source-drift mutation must be caught");
 }
 console.log("PASS DUAL-SOURCE MATH EVIDENCE: five lessons, 27-row SHA ledger, B09 historic 30 expressions, immutable source and canonical IDs; no obsolete test-file textual gate.");
 console.log("NOT an Academic/PED PASS, NOT authorized Q18 self-QA, NOT a substitute for official R4/Roadmap; NO DEPLOY.");

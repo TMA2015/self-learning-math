@@ -1,10 +1,15 @@
-name: G10 ChIV B07–B11 Golden UI QA (Delta A, no deploy)
+name: G10 ChIV B07–B11 S1 editorial + Golden QA (Q18 self-verified, no deploy)
 on:
   pull_request:
     paths:
       - "docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js"
       - "docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"
       - "scripts/test-g10-chiv-golden-browser.cjs"
+      - "scripts/test-g10-chiv-editorial-source.cjs"
+      - "scripts/thpt-q18-g10-source-receipt.cjs"
+      - "scripts/test-thpt-q18-release-test-router.cjs"
+      - "prototypes/thpt/ux795/G10_CHIV_B07_B11_SGK_S1_Q18_EDITORIAL_RECEIPT_20261112.md"
+      - "docs/thpt-preview/sgk/chuong-iv/bai-*.md"
       - "scripts/test-g10-b01-b06-editorial-numbering-browser.cjs"
       - ".github/workflows/g10-chiv-golden-qa.yml"
 permissions:
@@ -19,6 +24,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Verify original answers, source SHA and S1 2.x section mapping
+        run: |
+          git fetch --no-tags --depth=3 origin 045b15ecc402acf9a081a35bd4a7fb36d6325188
+          node scripts/test-g10-chiv-editorial-source.cjs
+          node scripts/test-thpt-q18-release-test-router.cjs
       - name: Build preview with original site config
         run: |
           python -m pip install --disable-pip-version-check mkdocs-material

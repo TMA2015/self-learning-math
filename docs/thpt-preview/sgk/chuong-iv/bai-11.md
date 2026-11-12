@@ -12,17 +12,11 @@
 
     Khi đưa vectơ lên hệ trục, tích vô hướng còn tính được bằng tổng tích hai thành phần tương ứng. Điều này giúp kiểm vuông góc bằng phép tính thay vì chỉ quan sát hình, đồng thời là cơ sở để tính công của lực.
 
-    ### Thuật ngữ, kiến thức và kỹ năng
-
-    **Thuật ngữ:** Tích vô hướng, góc giữa hai vectơ, dấu của cos góc nhọn/tù, vuông góc, tích vô hướng theo tọa độ, công của lực.
-
-    **Sau bài học, em cần làm được:** Chọn đúng góc giữa hai vectơ; tính tích vô hướng theo hình học hoặc tọa độ; suy góc vuông từ tích bằng 0 với vectơ khác không; giải thích ý nghĩa dấu trong ứng dụng.
-
-=== "Kiến thức SGK"
+    ### Ví dụ trực quan
 
     <span id="thpt-g10-chiv-try21" data-thpt-first-try-id="THPT-G10-CHIV-TRY21" data-outcome-id="G10-B11-GEOMETRIC_DOT" data-thpt-help-ref="HELP-G10-B11-02"></span>
 
-    ### Tích vô hướng mô tả mức độ cùng hướng
+    #### Tích vô hướng mô tả mức độ cùng hướng
 
     **Cách đọc hình.** Quan sát góc tù giữa hai vectơ trong hình: cos âm nên tích vô hướng âm, dù độ dài hai vectơ đều dương.
 
@@ -33,7 +27,7 @@
 
     Nhớ độ dài vectơ, góc giữa hai vectơ khác không thuộc 0°–180° và cos góc nhọn/vuông/tù. 
 
-    Tích vô hướng đo tích hai độ lớn có xét thành phần cùng hướng bằng cos: \(\vec u\cdot\vec v=|\vec u||\vec v|\cos\theta\). Nếu vuông góc tích 0, nếu ngược hướng tích âm; góc chỉ định nghĩa khi cả hai khác 0.
+    Tích vô hướng đo tích hai độ lớn có xét thành phần cùng hướng bằng cos: \(\vec u\cdot\vec v=|\vec u||\vec v|\cos\theta\). Nếu vuông góc tích 0, nếu ngược hướng tích âm; góc xác định duy nhất khi cả hai khác $\vec0$; SGK quy ước góc với vectơ-không được chọn tùy ý và coi vectơ-không vuông góc với mọi vectơ.
 
 
     Chọn định nghĩa hình học nếu biết hai độ dài và góc giữa vectơ; nếu một vectơ bằng 0, tích là 0 theo đại số nhưng không gán góc thường.
@@ -49,7 +43,7 @@
 
     <span id="thpt-g10-chiv-try22" data-thpt-first-try-id="THPT-G10-CHIV-TRY22" data-outcome-id="G10-B11-COORDINATE_DOT" data-thpt-help-ref="HELP-G10-B11-01"></span>
 
-    ### Tại sao tích vô hướng có thể tính bằng hai cặp số?
+    #### Tại sao tích vô hướng có thể tính bằng hai cặp số?
 
     **Cách đọc hình.** Đọc hướng hợp lực/lực giữ cân bằng và đối chiếu hai hướng tác dụng trên hình; khi tính công chỉ dùng thành phần lực theo hướng chuyển dời.
 
@@ -76,7 +70,7 @@
 
     <span id="thpt-g10-chiv-try23" data-thpt-first-try-id="THPT-G10-CHIV-TRY23" data-outcome-id="G10-B11-PERPENDICULAR" data-thpt-help-ref="HELP-G10-B11-01"></span>
 
-    ### Vuông góc có thể kiểm bằng số
+    #### Vuông góc có thể kiểm bằng số
 
     Thay vì đo góc trên hình vẽ không chuẩn tỉ lệ, ta có thể dùng tích vô hướng bằng 0 để nhận biết hai vectơ vuông góc.
 
@@ -98,7 +92,7 @@
 
     <span id="thpt-g10-chiv-try24" data-thpt-first-try-id="THPT-G10-CHIV-TRY24" data-outcome-id="G10-B11-APPLICATION" data-thpt-help-ref="HELP-G10-B11-02"></span>
 
-    ### Công của lực: độ lớn không đủ
+    #### Công của lực: độ lớn không đủ
 
     Đẩy một vật 3 m cùng chiều lực khác với kéo vật theo chiều ngược hoặc vuông góc lực, dù độ lớn lực và quãng dịch chuyển giống nhau.
 
@@ -117,22 +111,53 @@
 
         **Vì sao:** Cos180°=−1, cos90°=0. Công là vô hướng có dấu, khác với độ lớn lực hay quãng đường.
 
+    ### Thuật ngữ, kiến thức và kỹ năng
 
-    ### Kiến thức SGK
+    **Thuật ngữ:** Tích vô hướng, góc giữa hai vectơ, dấu của cos góc nhọn/tù, vuông góc, tích vô hướng theo tọa độ, công của lực.
 
-    **D1.1 Góc hai vectơ.** Với $\vec u,\vec v\ne\vec0$, góc $\theta$ giữa chúng thuộc $[0^\circ,180^\circ]$. Khi $\theta$ nhọn, cos dương; khi vuông, cos bằng 0; khi tù, cos âm. **Không định nghĩa góc thông thường giữa một vectơ-không và vectơ khác không.**
+    **Sau bài học, em cần làm được:** Chọn đúng góc giữa hai vectơ; tính tích vô hướng theo hình học hoặc tọa độ; suy góc vuông từ tích bằng 0 với vectơ khác không; giải thích ý nghĩa dấu trong ứng dụng.
 
-    **D1.2 Tích vô hướng.** Với $\vec u,\vec v\ne\vec0$:
+=== "Kiến thức SGK"
+
+    ### 2.1. Góc giữa hai vectơ
+
+    **Định nghĩa (SGK, trang 66).** Với hai vectơ $\vec u,\vec v$ **đều khác $\vec0$**, lấy điểm $A$ bất kì và dựng $\overrightarrow{AB}=\vec u$, $\overrightarrow{AC}=\vec v$. Góc $\widehat{BAC}$ được gọi là góc giữa $\vec u$ và $\vec v$, kí hiệu $(\vec u,\vec v)$; số đo thuộc $[0^\circ,180^\circ]$.
+
+    **Chú ý – quy ước về vectơ-không trong SGK (trang 66):** Góc giữa $\vec u$ và $\vec0$ **có thể nhận một giá trị tùy ý từ $0^\circ$ đến $180^\circ$**, không phải một góc xác định duy nhất theo cách dựng hai vectơ khác không. **Vectơ $\vec0$ được coi là vuông góc với mọi vectơ.** Khi hai vectơ khác không có góc $90^\circ$, chúng vuông góc với nhau.
+
+    **Ghi nhớ:** Hai vectơ khác không cùng hướng thì góc bằng $0^\circ$; ngược hướng thì góc bằng $180^\circ$. Góc nhọn có $\cos\theta>0$, góc vuông có $\cos\theta=0$, góc tù có $\cos\theta<0$.
+
+    ### 2.2. Tích vô hướng của hai vectơ
+
+    **Định nghĩa (SGK, trang 67).** Với $\vec u,\vec v$ **đều khác $\vec0$**, tích vô hướng là một **số thực**:
 
     \[
-    \vec u\cdot\vec v=|\vec u|\,|\vec v|\cos\theta.
+    \vec u\cdot\vec v=|\vec u|\,|\vec v|\cos(\vec u,\vec v).
     \]
 
-    Khi một vectơ bằng $\vec0$, tích vô hướng **bằng 0 theo quy ước**, không đòi xác định $\theta$. Tính chất: $\vec u\cdot\vec v=\vec v\cdot\vec u$, $(\vec u+\vec v)\cdot\vec w=\vec u\cdot\vec w+\vec v\cdot\vec w$, $(t\vec u)\cdot\vec v=t(\vec u\cdot\vec v)$; $\vec u\cdot\vec u=|\vec u|^2$. Hệ thức $|\vec u\pm\vec v|^2=|\vec u|^2+|\vec v|^2\pm2\vec u\cdot\vec v$ là hệ quả của phân phối.
+    Nếu có một vectơ bằng $\vec0$, tích vô hướng bằng $0$. Khi đó không cần và không được suy ra một góc duy nhất từ phép chia cho tích các độ dài.
 
-    **D1.3 Biểu thức tọa độ và vuông góc.** Với $\vec u=(a;b)$, $\vec v=(c;d)$, $\vec u\cdot\vec v=ac+bd$. Nếu **cả hai khác không**, $\vec u\perp\vec v\iff\vec u\cdot\vec v=0$. Khi tích khác 0, có thể tính $\cos\theta=(ac+bd)/(\sqrt{a^2+b^2}\sqrt{c^2+d^2})$; không áp dụng phép chia nếu một độ dài bằng 0.
+    **Vận dụng – công của lực (SGK, trang 67).** Với lực không đổi $\vec F$ (newton) và độ dời $\vec s$ (mét), công $W=\vec F\cdot\vec s$ (joule). Khi cả hai khác $\vec0$, ta dùng $W=|\vec F|\,|\vec s|\cos(\vec F,\vec s)$; khi một vectơ bằng $\vec0$, công bằng $0$. Dấu của công phụ thuộc hướng lực so với độ dời.
 
-    **D1.4 Ứng dụng công của lực.** Nếu lực $\vec F$ (newton) không đổi tác dụng trên độ dời $\vec s$ (mét), công $W=\vec F\cdot\vec s=|\vec F||\vec s|\cos\theta$ (joule). Dấu của công phản ánh lực thuận/ngược độ dời; không nhầm công vô hướng với độ lớn của lực.
+    ### 2.3. Biểu thức tọa độ và tính chất của tích vô hướng
+
+    **Công thức tọa độ (SGK, trang 68).** Với $\vec u=(a;b)$, $\vec v=(c;d)$:
+
+    \[
+    \vec u\cdot\vec v=ac+bd.
+    \]
+
+    **Tính chất:** $\vec u\cdot\vec v=\vec v\cdot\vec u$; $(\vec u+\vec v)\cdot\vec w=\vec u\cdot\vec w+\vec v\cdot\vec w$; $(t\vec u)\cdot\vec v=t(\vec u\cdot\vec v)$; $\vec u\cdot\vec u=|\vec u|^2$.
+
+    **Hệ quả:** $|\vec u\pm\vec v|^2=|\vec u|^2+|\vec v|^2\pm2\vec u\cdot\vec v$.
+
+    **Điều kiện sử dụng:** Khi **cả hai vectơ khác $\vec0$**, $\vec u\perp\vec v\iff\vec u\cdot\vec v=0$ và
+
+    \[
+    \cos(\vec u,\vec v)=\frac{ac+bd}{\sqrt{a^2+b^2}\sqrt{c^2+d^2}}.
+    \]
+
+    Công thức cos dùng được cả khi tích vô hướng bằng $0$, miễn là **hai độ dài đều dương**. Nếu có vectơ-không, không chia cho $0$; giữ quy ước SGK rằng $\vec0$ vuông góc với mọi vectơ.
 
 === "Ví dụ"
 
@@ -162,7 +187,7 @@
 
     ??? tip "Nhầm tích vô hướng với tích độ dài; bỏ điều kiện khác 0"
 
-        <ul><li>Điểm nghẽn: Dùng công thức cos/điều kiện vuông góc khi một vectơ không.</li><li>Bản chất cần sửa: Dot là số; tọa độ dot = ac+bd; góc/cos chỉ định nghĩa khi hai độ dài dương.</li><li>Quy trình 5 bước: 1. Kiểm hai vectơ khác 0. 2. Tính dot. 3. Tính độ dài. 4. Chỉ chia khi mẫu &gt;0. 5. Luyện B11-P03.</li><li>Liên kết item có sẵn: B11-C02, B11-P02, B11-P03. Không clone câu hoặc giải vào HELP_ID.</li><li>Assessment safety: hỗ trợ chỉ tại Knowledge/Practice, không hiển thị trong phiên Tự kiểm tra trước Final Submit.</li></ul><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
+        <ul><li>Điểm nghẽn: Dùng công thức cos khi có vectơ-không, hoặc bỏ quên quy ước vuông góc của SGK.</li><li>Bản chất cần sửa: Tích vô hướng là số; SGK coi vectơ-không vuông góc với mọi vectơ, nhưng phép chia tính cos chỉ hợp lệ khi hai độ dài dương.</li><li>Cách kiểm: 1. Xét trường hợp vectơ-không. 2. Khi có vectơ-không, tích bằng 0 và vuông góc theo quy ước SGK. 3. Với hai vectơ khác không, tính tích vô hướng. 4. Chỉ tính cos bằng phép chia khi mẫu dương. 5. Luyện B11-P03.</li><li>Liên kết item có sẵn: B11-C02, B11-P02, B11-P03. Không clone câu hoặc giải vào HELP_ID.</li><li>Assessment safety: hỗ trợ chỉ tại Knowledge/Practice, không hiển thị trong phiên Tự kiểm tra trước Final Submit.</li></ul><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
 
     <span data-thpt-help-id="HELP-G10-B11-02" hidden></span>
 
