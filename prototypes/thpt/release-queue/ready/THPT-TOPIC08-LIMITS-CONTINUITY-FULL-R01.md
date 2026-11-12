@@ -19,7 +19,7 @@ REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC08_LIMITS_CONTINUITY_R0
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC08_LIMITS_CONTINUITY_R01_AUTHOR_SELF_QA_RECEIPT_20261112.md
 REVIEW_RECEIPT_BLOB: f5d61555b7f8bcdad97dd799d46795f8beb48c3f
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC08-LIMITS-CONTINUITY-FULL-R01_HANDOFF_V2_20261112.md
-AUTHOR_HANDOFF_BLOB: b37c747cd17e091b21555936cbc468035ab3ca0e
+AUTHOR_HANDOFF_BLOB: 49a7870ed37cde3cd21df179a681634ed67604b7
 PUBLIC_ORIGINAL36_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC08_LIMITS_CONTINUITY_ORIGINAL36_SGK_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_ORIGINAL36_INDEX_BLOB: 7ac532a2c6d9368bf4f991c90092d327c07ea842
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC08_LIMITS_CONTINUITY_NEW22_PUBLIC_CANONICAL_R01_20261112.md
@@ -46,7 +46,7 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — exact source Git blob b83be2d9a970e9cfe1a6390593354f92d9a20d37, Q18 signed receipt blob f5d61555b7f8bcdad97dd799d46795f8beb48c3f, original36 index blob 7ac532a2c6d9368bf4f991c90092d327c07ea842, new22 bank blob 53351f63ad8dbc7bc18f2f519eb731e773c33a62, V2 handoff blob b37c747cd17e091b21555936cbc468035ab3ca0e.
+- [x] A1_SOURCE_SNAPSHOT — exact source Git blob b83be2d9a970e9cfe1a6390593354f92d9a20d37, Q18 signed receipt blob f5d61555b7f8bcdad97dd799d46795f8beb48c3f, original36 index blob 7ac532a2c6d9368bf4f991c90092d327c07ea842, new22 bank blob 53351f63ad8dbc7bc18f2f519eb731e773c33a62, V2 handoff blob 49a7870ed37cde3cd21df179a681634ed67604b7.
 - [x] A2_SGK_SBT_SCOPE — SGK KNTT Toán11 T1 ChV B15 printed104–110,B16 111–118,B17 119–122,end123; historical original publisher SBT direct scan B15 75–78,B16 79–83,B17 84–86,end87–90. No new scan claimed; source/extension boundary recorded.
 - [x] A3_NOTEBOOKLM_VERDICT — current Q18 `AUTHOR_SELF_VERIFIED v3.1.0` with real math/PED/source Q01–Q18 evidence, 56/56 author checks, no new NotebookLM report or fabricated independent PASS; historical original SGK ChV reviewer retained only for source R02/03.
 - [x] A4_ITEM_OUTCOME_IDS — 18 lesson IDs/outcomes and 58 public canonical unique IDs in full single V2 matrix (36 SGK source pointers + 22 NEW); 18 Self Check placements refer back to P01–P18 without item duplication.
