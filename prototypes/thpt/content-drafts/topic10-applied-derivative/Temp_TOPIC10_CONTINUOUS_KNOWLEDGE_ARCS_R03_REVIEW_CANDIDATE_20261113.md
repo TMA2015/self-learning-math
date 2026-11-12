@@ -403,7 +403,7 @@ Xét ví dụ: f=(2x+1)/(x−1)=2+3/(x−1) nên tâm I(1,2); TCD x=1, TCN y=2. 
 
 Bảng biến thiên cho ta đọc cực trị và chiều biến thiên. Một bảng mũi tên lên/xuống có thể cho biết GTLN, cực trị và khoảng tăng không? Ta bắt đầu từ ý nghĩa mũi tên, điểm tách miền, giới hạn ở biên. Bảng biến thiên chứa điểm phân chia, dấu f', giá trị tại điểm và giới hạn. Mũi tên giảm→tăng tại c∈D gợi cực tiểu, nhưng muốn GTNN toàn miền phải so mọi nhánh và biên. Điểm đứng đôi biểu diễn loại khỏi miền không phải nơi đạt cực trị.
 
-Chẳng hạn, Nếu f' âm trên (−∞,1), dương trên (1,∞) và f(1)=−3, f liên tục trong ℝ, thì f có cực tiểu ở (1,−3). Nếu f' không có trên nhánh bị loại, không gắn nhãn cực tiểu ở đó.
+Chẳng hạn, nếu f' âm trên (−∞,1), dương trên (1,∞) và f(1)=−3, f liên tục trong ℝ, thì f có cực tiểu ở (1,−3). Nếu f' không có trên nhánh bị loại, không gắn nhãn cực tiểu ở đó.
 
 <!-- LESSON_ID: TOP10-M25; OUTCOME_ID: TOP10-O25 -->
 
@@ -414,7 +414,7 @@ Chẳng hạn, f=1/x, D=ℝ\{0}, f'=−1/x²<0 trên từng nhánh. Nhưng −1<
 ### Vận dụng và tự đối chiếu
 
 <!-- First Try TOP10-M19; formative only -->
-**1.** f=x², thứ tự cơ bản cho hình?
+**1.** Khảo sát \(f(x)=x^2\) trên \(\mathbb R\): tìm miền, đạo hàm, khoảng tăng giảm, cực trị và mô tả hình dạng đồ thị theo đúng thứ tự.
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu sau khi tự làm</summary>
@@ -474,12 +474,12 @@ Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và
 </details>
 
 <!-- First Try TOP10-M24; formative only -->
-**6.** Bảng f' dấu + trước2, − sau2 với f(2)=5: loại cực trị?
+**6.** Cho \(f\) liên tục tại \(x=2\), khả vi ở hai phía gần 2, \(f'(x)>0\) khi \(x<2\) và \(f'(x)<0\) khi \(x>2\), \(f(2)=5\). Điểm \((2,5)\) là cực trị nào?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu sau khi tự làm</summary>
 
-Cực đại địa phương tại (2,5), miễn f đủ liên tục/khả vi phù hợp.
+Do f liên tục tại 2 và tăng trước2, giảm sau2 theo dấu đạo hàm, f đạt cực đại địa phương ở (2,5). Điều kiện liên tục tại 2 rất quan trọng; chỉ biết dấu đạo hàm hai phía và f(2) thì chưa đủ.
 
 Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và lý do chọn phương pháp. Nếu tưởng min, nhớ +→− là đi lên rồi đi xuống.
 
@@ -659,7 +659,7 @@ Chẳng hạn, Giả sử R(q)=12q và C(q)=q²+2q+5 (nghìn đồng), q∈[0,8]
 
 Tự rà điều kiện, dấu, biên và đơn vị trước kết luận. Khi nhìn một lời giải 'đúng công thức', cần kiểm những sai sót nào? Để xác định điều đó, cần xét s1 B01–B05: domain, f', giới hạn, max/min, mô hình. Kiểm danh sách: D có đủ? bảng dấu bị nối qua điểm cấm không? f'=0 có đổi dấu không? giá trị biên có thuộc D không? TCD đã xét một phía chưa? lỗ khử có gọi nhầm đứng không? mục tiêu tối ưu có đúng/đơn vị? Biện luận rõ sẽ tránh các kết luận hấp dẫn nhưng sai.
 
-Chẳng hạn, Với f=1/x trên D=ℝ\{0}, f'<0 ở hai nhánh. Lời giải 'f nghịch biến trên D' là sai theo định nghĩa so mọi cặp: x₁=−1<x₂=1 nhưng f(x₁)=−1<f(x₂)=1. Sửa: nghịch biến trên từng khoảng (−∞,0),(0,∞).
+Chẳng hạn, với f=1/x trên D=ℝ\{0}, f'<0 ở hai nhánh. Lời giải 'f nghịch biến trên D' là sai theo định nghĩa so mọi cặp: x₁=−1<x₂=1 nhưng f(x₁)=−1<f(x₂)=1. Sửa: nghịch biến trên từng khoảng (−∞,0),(0,∞).
 
 ### Vận dụng và tự đối chiếu
 
