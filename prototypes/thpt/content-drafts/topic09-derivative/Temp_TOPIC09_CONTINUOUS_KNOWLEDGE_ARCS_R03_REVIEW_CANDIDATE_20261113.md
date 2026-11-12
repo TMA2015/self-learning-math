@@ -29,15 +29,15 @@ Xét \(s(t)=2t^2\) (m) trong khoảng từ \(t=1\) đến \(t=3\) giây. Tọa �
 
 <!-- LESSON_ID: TOP09-M02; OUTCOME_ID: TOP09-O02 -->
 
-Để thấy tốc độ tức thời, ta cho hai điểm trên đồ thị tiến sát nhau. Đường thẳng qua hai điểm tiến gần nhau có thể tiết lộ độ nghiêng của đồ thị tại một điểm? Trước hết, ta xuất phát từ p(a,f(a)), Q(a+h,f(a+h)), giới hạn h→0 từ hai phía. Cát tuyến PQ có hệ số góc [f(a+h)−f(a)]/h với h≠0. Nếu thương có giới hạn hữu hạn khi h→0 từ cả hai phía thuộc miền, ta có độ dốc tiếp tuyến; không thế h=0 trước khi rút. 'Cát tuyến' là qua hai điểm phân biệt, 'tiếp tuyến' là giới hạn vị trí/hệ số góc.
+Để thấy tốc độ tức thời, ta cho hai điểm trên đồ thị tiến sát nhau. Đường thẳng qua hai điểm tiến gần nhau có thể tiết lộ độ nghiêng của đồ thị tại một điểm? Ta đã biết p(a,f(a)), Q(a+h,f(a+h)), giới hạn h→0 từ hai phía. Cát tuyến PQ có hệ số góc [f(a+h)−f(a)]/h với h≠0. Nếu thương có giới hạn hữu hạn khi h→0 từ cả hai phía thuộc miền, ta có độ dốc tiếp tuyến; không thế h=0 trước khi rút. 'Cát tuyến' là qua hai điểm phân biệt, 'tiếp tuyến' là giới hạn vị trí/hệ số góc.
 
-Một ví dụ giúp kiểm chứng điều đó. f(x)=x², a=1: thương [(1+h)²−1]/h=2+h, h≠0; khi h→0 thu 2. Chọn khai triển vì thương ban đầu cho 0/0.
+Chẳng hạn, f(x)=x², a=1: thương [(1+h)²−1]/h=2+h, h≠0; khi h→0 thu 2. Chọn khai triển vì thương ban đầu cho 0/0.
 
 <!-- LESSON_ID: TOP09-M03; OUTCOME_ID: TOP09-O03 -->
 
-Giới hạn thương sai phân đưa ta tới định nghĩa đạo hàm. Vì sao một đạo hàm là một giới hạn chứ không chỉ là bảng công thức? Điểm tựa cho suy luận là giới hạn hàm số CĐ08 và f(a), f(a+h) thuộc miền. f'(a)=lim_{h→0}[f(a+h)−f(a)]/h nếu giới hạn hữu hạn hai phía tồn tại. Một điểm bên trong miền có lân cận đủ ở hai phía; nếu chỉ biết một phía, chưa có đạo hàm thông thường. Tính bằng định nghĩa giúp kiểm công thức có áp dụng hay không.
+Giới hạn thương sai phân đưa ta tới định nghĩa đạo hàm. Vì sao một đạo hàm là một giới hạn chứ không chỉ là bảng công thức? Ta sử dụng giới hạn hàm số CĐ08 và f(a), f(a+h) thuộc miền. f'(a)=lim_{h→0}[f(a+h)−f(a)]/h nếu giới hạn hữu hạn hai phía tồn tại. Một điểm bên trong miền có lân cận đủ ở hai phía; nếu chỉ biết một phía, chưa có đạo hàm thông thường. Tính bằng định nghĩa giúp kiểm công thức có áp dụng hay không.
 
-Hãy theo dõi cách giải này. f=x³ tại a=2: (2+h)³−8=12h+6h²+h³, chia h→12. Chọn khai triển vì yêu cầu định nghĩa, không dùng ngay quy tắc 3x².
+Xét ví dụ: f=x³ tại a=2: (2+h)³−8=12h+6h²+h³, chia h→12. Chọn khai triển vì yêu cầu định nghĩa, không dùng ngay quy tắc 3x².
 
 ![Cát tuyến tiến gần tiếp tuyến của hàm bậc hai](../../visuals/THPT_TOPIC09_SECANT_TANGENT_R01.svg)
 
@@ -45,19 +45,19 @@ Hãy theo dõi cách giải này. f=x³ tại a=2: (2+h)³−8=12h+6h²+h³, chi
 
 <!-- LESSON_ID: TOP09-M04; OUTCOME_ID: TOP09-O04 -->
 
-Khả vi tại một điểm và trên cả khoảng là hai yêu cầu khác nhau. Một hàm có đạo hàm tại x=2 có nghĩa có đạo hàm tại mọi x? Ta có thể bắt đầu bằng phân biệt tại điểm, trên khoảng, một phía ở đầu miền. f có đạo hàm trên (a,b) nếu đạo hàm hữu hạn tại mọi điểm trong khoảng đó. Đạo hàm f' là một hàm mới trên miền các điểm khả vi; nó không bắt buộc có nghĩa tại mọi điểm mà f xác định. Với căn bậc hai chỉ có đạo hàm hữu hạn tại x>0; tại biên x=0 không có đạo hàm hai phía.
+Khả vi tại một điểm và trên cả khoảng là hai yêu cầu khác nhau. Một hàm có đạo hàm tại x=2 có nghĩa có đạo hàm tại mọi x? Ta bắt đầu từ phân biệt tại điểm, trên khoảng, một phía ở đầu miền. f có đạo hàm trên (a,b) nếu đạo hàm hữu hạn tại mọi điểm trong khoảng đó. Đạo hàm f' là một hàm mới trên miền các điểm khả vi; nó không bắt buộc có nghĩa tại mọi điểm mà f xác định. Với căn bậc hai chỉ có đạo hàm hữu hạn tại x>0; tại biên x=0 không có đạo hàm hai phía.
 
-Thử vận dụng vào một tình huống. f(x)=√x xác định x≥0; với x>0 f'(x)=1/(2√x), suy được bằng nhân liên hợp. Tại x=0, không thể lấy đạo hàm hai phía trên ℝ và thương phải→+∞; không ghi f'(0)=∞ như đạo hàm hữu hạn.
+Chẳng hạn, f(x)=√x xác định x≥0; với x>0 f'(x)=1/(2√x), suy được bằng nhân liên hợp. Tại x=0, không thể lấy đạo hàm hai phía trên ℝ và thương phải→+∞; không ghi f'(0)=∞ như đạo hàm hữu hạn.
 
 <!-- LESSON_ID: TOP09-M05; OUTCOME_ID: TOP09-O05 -->
 
-Có đạo hàm kéo theo liên tục, nhưng điều ngược lại chưa chắc đúng. Có thể đồ thị liên tục vẫn có một góc gãy không? Những điều đã biết ở đây là tiêu chuẩn liên tục tại điểm và giới hạn h→0. Nếu f'(a) hữu hạn tồn tại, f(a+h)−f(a)=h·[(f(a+h)−f(a))/h]→0, nên f liên tục tại a. Chiều ngược sai: |x| liên tục tại0 nhưng thương từ trái −1, phải+1. Không coi mọi đường không đứt đều khả vi.
+Có đạo hàm kéo theo liên tục, nhưng điều ngược lại chưa chắc đúng. Có thể đồ thị liên tục vẫn có một góc gãy không? Cần nhớ tiêu chuẩn liên tục tại điểm và giới hạn h→0. Nếu f'(a) hữu hạn tồn tại, f(a+h)−f(a)=h·[(f(a+h)−f(a))/h]→0, nên f liên tục tại a. Chiều ngược sai: |x| liên tục tại0 nhưng thương từ trái −1, phải+1. Không coi mọi đường không đứt đều khả vi.
 
-Từ lập luận vừa rồi, ta xét: Xét |x−1| tại1: f liên tục vì |x−1|→0; đạo hàm trái−1, phải+1 nên không khả vi. Chọn xét thương để bác bỏ mệnh đề đảo.
+Chẳng hạn, Xét |x−1| tại1: f liên tục vì |x−1|→0; đạo hàm trái−1, phải+1 nên không khả vi. Chọn xét thương để bác bỏ mệnh đề đảo.
 
 <!-- LESSON_ID: TOP09-M06; OUTCOME_ID: TOP09-O06 -->
 
-Góc nhọn cho thấy hai đạo hàm một phía có thể khác nhau. Một tiếp tuyến duy nhất có độ dốc hữu hạn có hình thành tại điểm gấp khúc? Để hiểu, ta dựa vào hàm trị tuyệt đối và xét dấu h. Để có đạo hàm thông thường tại a, hai giới hạn thương sai phân một phía phải hữu hạn và bằng nhau. Tại góc nhọn |x−a| chúng thường trái dấu. Có thể có đạo hàm một phía nhưng không có đạo hàm hai phía; không gộp hai độ dốc thành 0.
+Góc nhọn cho thấy hai đạo hàm một phía có thể khác nhau. Một tiếp tuyến duy nhất có độ dốc hữu hạn có hình thành tại điểm gấp khúc? Để xác định điều đó, cần xét hàm trị tuyệt đối và xét dấu h. Để có đạo hàm thông thường tại a, hai giới hạn thương sai phân một phía phải hữu hạn và bằng nhau. Tại góc nhọn |x−a| chúng thường trái dấu. Có thể có đạo hàm một phía nhưng không có đạo hàm hai phía; không gộp hai độ dốc thành 0.
 
 Chẳng hạn, f(x)=|x−3| tại 3: [|h|−0]/h=−1 khi h<0, +1 khi h>0. Chọn xét dấu tuyệt đối trước, nên không có f'(3).
 
@@ -139,27 +139,27 @@ Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và
 
 <!-- LESSON_ID: TOP09-M07; OUTCOME_ID: TOP09-O07 -->
 
-Vì sao biết tọa độ P chưa nói được đường tiếp tuyến nghiêng bao nhiêu? Trước hết, ta xuất phát từ định nghĩa hệ số góc đường thẳng và đạo hàm. Đạo hàm f'(a) là hệ số góc của tiếp tuyến nếu tồn tại, còn f(a) là tung độ điểm tiếp xúc. Đây là hai số thường khác nhau, có thể một số 0 còn số kia không. Khi đồ thị tăng tại điểm, tiếp tuyến có độ dốc dương; một độ dốc âm không đồng nghĩa tung độ âm.
+Vì sao biết tọa độ P chưa nói được đường tiếp tuyến nghiêng bao nhiêu? Ta đã biết định nghĩa hệ số góc đường thẳng và đạo hàm. Đạo hàm f'(a) là hệ số góc của tiếp tuyến nếu tồn tại, còn f(a) là tung độ điểm tiếp xúc. Đây là hai số thường khác nhau, có thể một số 0 còn số kia không. Khi đồ thị tăng tại điểm, tiếp tuyến có độ dốc dương; một độ dốc âm không đồng nghĩa tung độ âm.
 
-Một ví dụ giúp kiểm chứng điều đó. y=x²+1 tại x=1: P(1,2) và f'(1)=2. Tiếp tuyến có độ dốc2, tung độ tại điểm2; hai giá trị trùng do bài này ngẫu nhiên, không phải quy tắc. Ở x=0 có f(0)=1 nhưng f'(0)=0.
+Chẳng hạn, y=x²+1 tại x=1: P(1,2) và f'(1)=2. Tiếp tuyến có độ dốc2, tung độ tại điểm2; hai giá trị trùng do bài này ngẫu nhiên, không phải quy tắc. Ở x=0 có f(0)=1 nhưng f'(0)=0.
 
 <!-- LESSON_ID: TOP09-M08; OUTCOME_ID: TOP09-O08 -->
 
-Khi có độ dốc, ta viết phương trình tiếp tuyến. Một độ dốc có đủ để viết đường tiếp tuyến không? Điểm tựa cho suy luận là dạng đường thẳng y−y₀=m(x−x₀), giá trị f(a). Tiếp tuyến nếu đạo hàm hữu hạn tại a có phương trình y−f(a)=f'(a)(x−a). Phải lấy đúng cả tọa độ điểm và hệ số góc, không thay f'' hay f(a) làm độ dốc. Nên kiểm đường đã tìm đi qua P.
+Khi có độ dốc, ta viết phương trình tiếp tuyến. Một độ dốc có đủ để viết đường tiếp tuyến không? Ta sử dụng dạng đường thẳng y−y₀=m(x−x₀), giá trị f(a). Tiếp tuyến nếu đạo hàm hữu hạn tại a có phương trình y−f(a)=f'(a)(x−a). Phải lấy đúng cả tọa độ điểm và hệ số góc, không thay f'' hay f(a) làm độ dốc. Nên kiểm đường đã tìm đi qua P.
 
-Hãy theo dõi cách giải này. Với f=x² tại a=2, P(2,4), m=4 ⇒ y−4=4(x−2) ⇒ y=4x−4. Chọn điểm-hệ số góc để tránh sai hằng số.
+Xét ví dụ: Với f=x² tại a=2, P(2,4), m=4 ⇒ y−4=4(x−2) ⇒ y=4x−4. Chọn điểm-hệ số góc để tránh sai hằng số.
 
 <!-- LESSON_ID: TOP09-M09; OUTCOME_ID: TOP09-O09 -->
 
-Trong chuyển động, độ dốc ấy là vận tốc có hướng. Vật có thể có vận tốc −2 m/s mà tốc độ vẫn dương không? Ta có thể bắt đầu bằng tọa độ có dấu và đơn vị s(t) theo mét/giây. Khi s(t) là tọa độ theo thời gian t, v(t)=s'(t) là vận tốc tức thời (có dấu), đơn vị m/s. Tốc độ bằng |v(t)| và không âm. s'(t)<0 chỉ cho biết chiều chuyển động, không tự nói vật chậm dần.
+Trong chuyển động, độ dốc ấy là vận tốc có hướng. Vật có thể có vận tốc −2 m/s mà tốc độ vẫn dương không? Ta bắt đầu từ tọa độ có dấu và đơn vị s(t) theo mét/giây. Khi s(t) là tọa độ theo thời gian t, v(t)=s'(t) là vận tốc tức thời (có dấu), đơn vị m/s. Tốc độ bằng |v(t)| và không âm. s'(t)<0 chỉ cho biết chiều chuyển động, không tự nói vật chậm dần.
 
-Thử vận dụng vào một tình huống. s(t)=t²−6t (m), t≥0: v(t)=2t−6; tại t=2, v=−2 m/s, tốc độ2 m/s. Chọn trị tuyệt đối chỉ sau khi xác định vận tốc có hướng.
+Chẳng hạn, s(t)=t²−6t (m), t≥0: v(t)=2t−6; tại t=2, v=−2 m/s, tốc độ2 m/s. Chọn trị tuyệt đối chỉ sau khi xác định vận tốc có hướng.
 
 <!-- LESSON_ID: TOP09-M10; OUTCOME_ID: TOP09-O10 -->
 
-Đơn vị của đạo hàm tùy đại lượng đầu vào và đầu ra. Đạo hàm của nhiệt độ theo phút có phải nhiệt độ hay tốc độ nhiệt độ đang thay đổi? Những điều đã biết ở đây là đơn vị, tỷ số Δđầu ra/Δđầu vào. f'(a) có đơn vị [f]/[x]. Nhiệt độ T(t) tính °C, t phút ⇒ T'(t) °C/phút; độ cao s(t) mét và t giây ⇒ s' m/s. Có thể nói đạo hàm dương/âm và mức biến thiên tức thời trong phạm vi mô hình, không dùng giá trị hàm thay tốc độ.
+Đơn vị của đạo hàm tùy đại lượng đầu vào và đầu ra. Đạo hàm của nhiệt độ theo phút có phải nhiệt độ hay tốc độ nhiệt độ đang thay đổi? Cần nhớ đơn vị, tỷ số Δđầu ra/Δđầu vào. f'(a) có đơn vị [f]/[x]. Nhiệt độ T(t) tính °C, t phút ⇒ T'(t) °C/phút; độ cao s(t) mét và t giây ⇒ s' m/s. Có thể nói đạo hàm dương/âm và mức biến thiên tức thời trong phạm vi mô hình, không dùng giá trị hàm thay tốc độ.
 
-Từ lập luận vừa rồi, ta xét: T(t)=15+2t−0,5t² °C; T'(t)=2−t, tại t=1 là +1 °C/phút. Chọn tốc độ biến thiên thay vì tính T(1)=16,5 °C.
+Chẳng hạn, T(t)=15+2t−0,5t² °C; T'(t)=2−t, tại t=1 là +1 °C/phút. Chọn tốc độ biến thiên thay vì tính T(1)=16,5 °C.
 
 ### Vận dụng và tự đối chiếu
 
@@ -217,27 +217,27 @@ Quy tắc lũy thừa, tổng, tích, thương và hàm hợp phản ánh cách 
 
 <!-- LESSON_ID: TOP09-M11; OUTCOME_ID: TOP09-O11 -->
 
-Có thể tìm đạo hàm của đa thức nhanh mà vẫn hiểu vì sao hệ số n xuất hiện? Để hiểu, ta dựa vào hằng số và phép khai triển (x+h)^n (n nguyên dương). Từ định nghĩa và khai triển, [ (x+h)^n−x^n]/h có hạng đầu n x^{n−1}, các hạng khác chứa h và về0. Do đó (x^n)'=n x^{n−1} (n nguyên dương), (c)'=0. Không áp quy tắc đa thức cho cơ số a^x mà không phân biệt biến nằm ở đâu.
+Có thể tìm đạo hàm của đa thức nhanh mà vẫn hiểu vì sao hệ số n xuất hiện? Để xác định điều đó, cần xét hằng số và phép khai triển (x+h)^n (n nguyên dương). Từ định nghĩa và khai triển, [ (x+h)^n−x^n]/h có hạng đầu n x^{n−1}, các hạng khác chứa h và về0. Do đó (x^n)'=n x^{n−1} (n nguyên dương), (c)'=0. Không áp quy tắc đa thức cho cơ số a^x mà không phân biệt biến nằm ở đâu.
 
 Chẳng hạn, y=3x⁴−2: đạo hàm 3·4x³=12x³ và đạo hàm hằng−2 bằng0. Chọn tính từng hạng sau khi đã hiểu giới hạn khai triển.
 
 <!-- LESSON_ID: TOP09-M12; OUTCOME_ID: TOP09-O12 -->
 
-Hàm căn nhắc ta công thức luôn gắn với miền. Có giá trị √0=0 nhưng vì sao vẫn không có công thức f'(0) hữu hạn? Trước hết, ta xuất phát từ căn không âm, nhân liên hợp và giới hạn một phía. √x được định nghĩa trên x≥0. Trên x>0, thương sai phân nhân liên hợp dẫn (√x)'=1/(2√x). Tại 0, thương phải √h/h=1/√h→+∞, nên không có đạo hàm hữu hạn (và thiếu phía trái). Với √(g(x)), chỉ trên nơi g>0 mới được áp chain trơn theo công thức chuẩn.
+Hàm căn nhắc ta công thức luôn gắn với miền. Có giá trị √0=0 nhưng vì sao vẫn không có công thức f'(0) hữu hạn? Ta đã biết căn không âm, nhân liên hợp và giới hạn một phía. √x được định nghĩa trên x≥0. Trên x>0, thương sai phân nhân liên hợp dẫn (√x)'=1/(2√x). Tại 0, thương phải √h/h=1/√h→+∞, nên không có đạo hàm hữu hạn (và thiếu phía trái). Với √(g(x)), chỉ trên nơi g>0 mới được áp chain trơn theo công thức chuẩn.
 
-Một ví dụ giúp kiểm chứng điều đó. f=√(x+4): miền x≥−4, f'(x)=1/(2√(x+4)) với x>−4. Chọn xét miền trước khi áp bảng vì tại biên mẫu sẽ bằng0.
+Chẳng hạn, f=√(x+4): miền x≥−4, f'(x)=1/(2√(x+4)) với x>−4. Chọn xét miền trước khi áp bảng vì tại biên mẫu sẽ bằng0.
 
 <!-- LESSON_ID: TOP09-M13; OUTCOME_ID: TOP09-O13 -->
 
-Tổng, hiệu và hệ số hằng có cách lấy đạo hàm tương ứng. Đạo hàm của tổng thay đổi thế nào khi từng thành phần thay đổi? Điểm tựa cho suy luận là tính tuyến tính giới hạn, đạo hàm cơ bản. Nếu u,v khả vi, (u±v)'=u'±v' và (c u)'=c u'. Đạo hàm của hằng số bằng0; không giữ hạng hằng. Lý do là thương sai phân của tổng bằng tổng các thương, có thể lấy giới hạn từng phần khi chúng tồn tại.
+Tổng, hiệu và hệ số hằng có cách lấy đạo hàm tương ứng. Đạo hàm của tổng thay đổi thế nào khi từng thành phần thay đổi? Ta sử dụng tính tuyến tính giới hạn, đạo hàm cơ bản. Nếu u,v khả vi, (u±v)'=u'±v' và (c u)'=c u'. Đạo hàm của hằng số bằng0; không giữ hạng hằng. Lý do là thương sai phân của tổng bằng tổng các thương, có thể lấy giới hạn từng phần khi chúng tồn tại.
 
-Hãy theo dõi cách giải này. y=4x³−3x+6 ⇒ y'=12x²−3; hằng6 biến mất. Chọn phân rã vì phép cộng không lồng hàm hay tạo tích cần công thức khác.
+Xét ví dụ: y=4x³−3x+6 ⇒ y'=12x²−3; hằng6 biến mất. Chọn phân rã vì phép cộng không lồng hàm hay tạo tích cần công thức khác.
 
 <!-- LESSON_ID: TOP09-M14; OUTCOME_ID: TOP09-O14 -->
 
-Với tích, không thể chỉ nhân hai đạo hàm. Tại sao (uv)' không phải chỉ bằng u'v'? Ta có thể bắt đầu bằng đạo hàm u,v và phép khai triển Δ(uv). Khi u tăng Δu và v tăng Δv, độ tăng tích =vΔu+uΔv+ΔuΔv. Chia cho Δx và lấy giới hạn khi u,v khả vi, hạng bậc hai không đóng góp: (uv)'=u'v+uv'. Hai dải diện tích trong hình chữ nhật giải thích hai hạng. Chỉ dùng khi cả u,v khả vi tại điểm.
+Với tích, không thể chỉ nhân hai đạo hàm. Tại sao (uv)' không phải chỉ bằng u'v'? Ta bắt đầu từ đạo hàm u,v và phép khai triển Δ(uv). Khi u tăng Δu và v tăng Δv, độ tăng tích =vΔu+uΔv+ΔuΔv. Chia cho Δx và lấy giới hạn khi u,v khả vi, hạng bậc hai không đóng góp: (uv)'=u'v+uv'. Hai dải diện tích trong hình chữ nhật giải thích hai hạng. Chỉ dùng khi cả u,v khả vi tại điểm.
 
-Thử vận dụng vào một tình huống. f=x(x²+3): f'=1·(x²+3)+x·2x=3x²+3. Chọn quy tắc tích vì hai thừa số biến theo x. Kiểm rút gọn trước cũng được x³+3x→3x²+3.
+Chẳng hạn, f=x(x²+3): f'=1·(x²+3)+x·2x=3x²+3. Chọn quy tắc tích vì hai thừa số biến theo x. Kiểm rút gọn trước cũng được x³+3x→3x²+3.
 
 ![Hai dải và một góc nhỏ khi hai cạnh hình chữ nhật cùng thay đổi](../../visuals/THPT_TOPIC09_PRODUCT_RULE_AREA_R01.svg)
 
@@ -245,13 +245,13 @@ Thử vận dụng vào một tình huống. f=x(x²+3): f'=1·(x²+3)+x·2x=3x�
 
 <!-- LESSON_ID: TOP09-M15; OUTCOME_ID: TOP09-O15 -->
 
-Với thương, phải giữ điều kiện mẫu khác không. Tại sao tử và mẫu đều có đạo hàm nhưng hàm thương vẫn có điểm bị loại? Những điều đã biết ở đây là mẫu số phải khác0, u/v trên miền chung. (u/v)'=(u'v−uv')/v² khi u,v khả vi và v≠0. Dấu trừ bắt nguồn từ đạo hàm 1/v=−v'/v². Mọi kết quả đạo hàm phải ghi miền nguyên gốc; phép rút gọn không tự nối lỗ hổng ở mẫu.
+Với thương, phải giữ điều kiện mẫu khác không. Tại sao tử và mẫu đều có đạo hàm nhưng hàm thương vẫn có điểm bị loại? Cần nhớ mẫu số phải khác0, u/v trên miền chung. (u/v)'=(u'v−uv')/v² khi u,v khả vi và v≠0. Dấu trừ bắt nguồn từ đạo hàm 1/v=−v'/v². Mọi kết quả đạo hàm phải ghi miền nguyên gốc; phép rút gọn không tự nối lỗ hổng ở mẫu.
 
-Từ lập luận vừa rồi, ta xét: f=(x+1)/(x−2) có miền x≠2, f'=[1(x−2)−(x+1)·1]/(x−2)²=−3/(x−2)². Chọn quy tắc thương trước khi đơn giản hóa.
+Chẳng hạn, f=(x+1)/(x−2) có miền x≠2, f'=[1(x−2)−(x+1)·1]/(x−2)²=−3/(x−2)². Chọn quy tắc thương trước khi đơn giản hóa.
 
 <!-- LESSON_ID: TOP09-M16; OUTCOME_ID: TOP09-O16 -->
 
-Hàm hợp cần tính cả sự thay đổi của biểu thức bên trong. Vì sao đạo hàm của (2x+1)^5 phải thêm nhân 2? Để hiểu, ta dựa vào phân biệt biến trong u=g(x) và hàm ngoài f(u). Nếu y=F(g(x)) với g khả vi tại x và F khả vi tại g(x), y'=F'(g(x))g'(x). Đạo hàm biến thiên của đầu ra theo đầu vào bên trong rồi nhân tốc độ thay đổi của đầu vào bên trong; không chỉ đạo hàm lớp ngoài.
+Hàm hợp cần tính cả sự thay đổi của biểu thức bên trong. Vì sao đạo hàm của (2x+1)^5 phải thêm nhân 2? Để xác định điều đó, cần xét phân biệt biến trong u=g(x) và hàm ngoài f(u). Nếu y=F(g(x)) với g khả vi tại x và F khả vi tại g(x), y'=F'(g(x))g'(x). Đạo hàm biến thiên của đầu ra theo đầu vào bên trong rồi nhân tốc độ thay đổi của đầu vào bên trong; không chỉ đạo hàm lớp ngoài.
 
 Chẳng hạn, y=(2x+1)^5: u=2x+1, u'=2, F'(u)=5u⁴ ⇒ y'=10(2x+1)^4. Chọn tách lớp để không quên nhân 2.
 
@@ -335,51 +335,51 @@ Lượng giác, hàm mũ và logarit có công thức đạo hàm khác nhau, nh
 
 <!-- LESSON_ID: TOP09-M17; OUTCOME_ID: TOP09-O17 -->
 
-Vì sao trong công thức đạo hàm lượng giác lại phải biết đơn vị góc? Trước hết, ta xuất phát từ hàm sin/cos liên tục và giới hạn sin h / h khi h đo radian. Với x đo **radian**, (sin x)'=cos x, (cos x)'=−sin x. Nếu tham số nhập độ thì đạo hàm có thêm π/180, không thể dùng công thức radian trực tiếp. Điều kiện về radian là một phần nội dung toán, không phải chi tiết trình bày.
+Vì sao trong công thức đạo hàm lượng giác lại phải biết đơn vị góc? Ta đã biết hàm sin/cos liên tục và giới hạn sin h / h khi h đo radian. Với x đo **radian**, (sin x)'=cos x, (cos x)'=−sin x. Nếu tham số nhập độ thì đạo hàm có thêm π/180, không thể dùng công thức radian trực tiếp. Điều kiện về radian là một phần nội dung toán, không phải chi tiết trình bày.
 
-Một ví dụ giúp kiểm chứng điều đó. f=3sin x+cos x (radian): f'=3cos x−sin x. Dấu âm của cos xuất hiện từ giới hạn sai phân trig.
+Chẳng hạn, f=3sin x+cos x (radian): f'=3cos x−sin x. Dấu âm của cos xuất hiện từ giới hạn sai phân trig.
 
 <!-- LESSON_ID: TOP09-M18; OUTCOME_ID: TOP09-O18 -->
 
-Tan và cot có điểm cấm phải loại trước. Vì sao tan/cot có chỗ không thể lấy đạo hàm dù sin/cos trơn? Điểm tựa cho suy luận là tan x=sin x/cos x, cot x=cos x/sin x. Với x radian, (tan x)'=1/cos²x khi cos x≠0, (cot x)'=−1/sin²x khi sin x≠0. Dấu và điều kiện theo quy tắc thương; khi mẫu bằng0 hàm gốc không xác định, đạo hàm không thể được báo ở đó.
+Tan và cot có điểm cấm phải loại trước. Vì sao tan/cot có chỗ không thể lấy đạo hàm dù sin/cos trơn? Ta sử dụng tan x=sin x/cos x, cot x=cos x/sin x. Với x radian, (tan x)'=1/cos²x khi cos x≠0, (cot x)'=−1/sin²x khi sin x≠0. Dấu và điều kiện theo quy tắc thương; khi mẫu bằng0 hàm gốc không xác định, đạo hàm không thể được báo ở đó.
 
-Hãy theo dõi cách giải này. tan x ở x=π/2 không xác định vì cos π/2=0. Ở x=0: (tan x)'=1 và (cot x)' không có do sin0=0. Chọn phân biệt miền cho từng hàm.
+Xét ví dụ: tan x ở x=π/2 không xác định vì cos π/2=0. Ở x=0: (tan x)'=1 và (cot x)' không có do sin0=0. Chọn phân biệt miền cho từng hàm.
 
 <!-- LESSON_ID: TOP09-M19; OUTCOME_ID: TOP09-O19 -->
 
-Hàm lượng giác hợp dùng tiếp quy tắc dây chuyền. Một góc u(x)=3x² thay đổi nhanh hơn x, vậy đạo hàm sin u khác gì? Ta có thể bắt đầu bằng dây chuyền và biến góc radian. Nếu u(x) khả vi, [sin u]'=u' cos u, [cos u]'=−u' sin u; tan u, cot u theo công thức cộng u' và điều kiện cos u hoặc sin u khác0. Quy tắc dây chuyền cho cả hàm ngoài và góc trong; không quên miền trig.
+Hàm lượng giác hợp dùng tiếp quy tắc dây chuyền. Một góc u(x)=3x² thay đổi nhanh hơn x, vậy đạo hàm sin u khác gì? Ta bắt đầu từ dây chuyền và biến góc radian. Nếu u(x) khả vi, [sin u]'=u' cos u, [cos u]'=−u' sin u; tan u, cot u theo công thức cộng u' và điều kiện cos u hoặc sin u khác0. Quy tắc dây chuyền cho cả hàm ngoài và góc trong; không quên miền trig.
 
-Thử vận dụng vào một tình huống. y=cos(3x²) ⇒ u=3x², u'=6x, y'=−6x sin(3x²). Chọn xác định hàm ngoài cos và trong đa thức trước.
+Chẳng hạn, y=cos(3x²) ⇒ u=3x², u'=6x, y'=−6x sin(3x²). Chọn xác định hàm ngoài cos và trong đa thức trước.
 
 <!-- LESSON_ID: TOP09-M20; OUTCOME_ID: TOP09-O20 -->
 
-Đạo hàm của hàm mũ liên hệ với giá trị chính nó. Tại sao e^x tự là đạo hàm của nó mà 2^x cần thêm ln2? Những điều đã biết ở đây là lũy thừa x^n khác hàm mũ a^x, log tự nhiên. Với cơ số a>0 và a≠1, (a^x)'=a^x ln a; riêng e^x vì ln e=1 nên đạo hàm bằng chính e^x. Đây không phải (x^n)'=n x^{n−1}, vì biến đứng ở số mũ. Với cơ số a=1, hàm hằng bằng1 và đạo hàm0, xử lý riêng.
+Đạo hàm của hàm mũ liên hệ với giá trị chính nó. Tại sao e^x tự là đạo hàm của nó mà 2^x cần thêm ln2? Cần nhớ lũy thừa x^n khác hàm mũ a^x, log tự nhiên. Với cơ số a>0 và a≠1, (a^x)'=a^x ln a; riêng e^x vì ln e=1 nên đạo hàm bằng chính e^x. Đây không phải (x^n)'=n x^{n−1}, vì biến đứng ở số mũ. Với cơ số a=1, hàm hằng bằng1 và đạo hàm0, xử lý riêng.
 
-Từ lập luận vừa rồi, ta xét: f=5^x tại x=0: f'(x)=5^x ln5, f'(0)=ln5. Chọn công thức mũ vì x là số mũ, không phải cơ số.
+Chẳng hạn, f=5^x tại x=0: f'(x)=5^x ln5, f'(0)=ln5. Chọn công thức mũ vì x là số mũ, không phải cơ số.
 
 <!-- LESSON_ID: TOP09-M21; OUTCOME_ID: TOP09-O21 -->
 
-Hàm logarit còn đòi hỏi xét miền của đối số. Khi lấy đạo hàm ln x, tại sao phải giữ x>0 ngay cả khi 1/x có nghĩa với x<0? Để hiểu, ta dựa vào miền của logarit và đạo hàm 1/x. (ln x)'=1/x với x>0; [log_a x]'=1/(x ln a) với a>0,a≠1 và x>0. Công thức đạo hàm không mở rộng miền logarit gốc sang x<0. Với ln|x| có miền x≠0 và derivative1/x nhưng đó là hàm khác (không tự đồng nhất với ln x).
+Hàm logarit còn đòi hỏi xét miền của đối số. Khi lấy đạo hàm ln x, tại sao phải giữ x>0 ngay cả khi 1/x có nghĩa với x<0? Để xác định điều đó, cần xét miền của logarit và đạo hàm 1/x. (ln x)'=1/x với x>0; [log_a x]'=1/(x ln a) với a>0,a≠1 và x>0. Công thức đạo hàm không mở rộng miền logarit gốc sang x<0. Với ln|x| có miền x≠0 và derivative1/x nhưng đó là hàm khác (không tự đồng nhất với ln x).
 
 Chẳng hạn, f=log₂ x, x>0: f'=1/(x ln2). Đơn vị ln2 là hằng dương, không là biến.
 
 <!-- LESSON_ID: TOP09-M22; OUTCOME_ID: TOP09-O22 -->
 
-Khi mũ/log chứa biểu thức, quy tắc dây chuyền xuất hiện. Vì sao ln(g(x)) chỉ lấy đạo hàm tại nơi g(x)>0? Trước hết, ta xuất phát từ dây chuyền và miền ln, cơ số a>0. [ln g]'=g'/g trên g>0; [a^{g}]'=a^{g} ln a ·g' với a>0,a≠1; [log_a g]'=g'/(g ln a) trên g>0. Cần kiểm g khả vi và miền của hàm ngoài. Không dùng công thức ở g≤0 dù biểu thức g'/g có vẻ tồn tại.
+Khi mũ/log chứa biểu thức, quy tắc dây chuyền xuất hiện. Vì sao ln(g(x)) chỉ lấy đạo hàm tại nơi g(x)>0? Ta đã biết dây chuyền và miền ln, cơ số a>0. [ln g]'=g'/g trên g>0; [a^{g}]'=a^{g} ln a ·g' với a>0,a≠1; [log_a g]'=g'/(g ln a) trên g>0. Cần kiểm g khả vi và miền của hàm ngoài. Không dùng công thức ở g≤0 dù biểu thức g'/g có vẻ tồn tại.
 
-Một ví dụ giúp kiểm chứng điều đó. f=ln(x²+1) xác định mọi x, f'=2x/(x²+1). Chọn chain vì đối số là x²+1; đối số dương mọi x nên không phải loại điểm.
+Chẳng hạn, f=ln(x²+1) xác định mọi x, f'=2x/(x²+1). Chọn chain vì đối số là x²+1; đối số dương mọi x nên không phải loại điểm.
 
 <!-- LESSON_ID: TOP09-M23; OUTCOME_ID: TOP09-O23 -->
 
-Miền cần kiểm cả trước và sau lấy đạo hàm. Công thức đạo hàm có thể làm mình 'quên' một điểm hàm gốc không xác định không? Điểm tựa cho suy luận là điều kiện căn, mẫu, log và mẫu trig. Bước 1 giải miền xác định của biểu thức gốc. Bước 2 chọn công thức đạo hàm trên các khoảng nội điểm miền có thể lấy đạo hàm. Bước 3 so miền đạo hàm và miền gốc, đặc biệt đầu mút căn và điểm loại mẫu. Một biểu thức đại số sau rút không được tự dùng ở điểm gốc cấm.
+Miền cần kiểm cả trước và sau lấy đạo hàm. Công thức đạo hàm có thể làm mình 'quên' một điểm hàm gốc không xác định không? Ta sử dụng điều kiện căn, mẫu, log và mẫu trig. Bước 1 giải miền xác định của biểu thức gốc. Bước 2 chọn công thức đạo hàm trên các khoảng nội điểm miền có thể lấy đạo hàm. Bước 3 so miền đạo hàm và miền gốc, đặc biệt đầu mút căn và điểm loại mẫu. Một biểu thức đại số sau rút không được tự dùng ở điểm gốc cấm.
 
-Hãy theo dõi cách giải này. f=√(x−3)/(x−4) có miền x≥3, x≠4. Công thức derivative theo tích/thương chỉ áp ở x>3, x≠4. Tại x=3 hàm có giá trị0 nhưng không có đạo hàm hữu hạn hai phía.
+Xét ví dụ: f=√(x−3)/(x−4) có miền x≥3, x≠4. Công thức derivative theo tích/thương chỉ áp ở x>3, x≠4. Tại x=3 hàm có giá trị0 nhưng không có đạo hàm hữu hạn hai phía.
 
 <!-- LESSON_ID: TOP09-M24; OUTCOME_ID: TOP09-O24 -->
 
-Cấu trúc biểu thức quyết định thứ tự quy tắc. Một biểu thức có tích và hàm hợp nên khai triển hay lấy đạo hàm trực tiếp? Ta có thể bắt đầu bằng tích, hợp, tổng, thương. Nhìn cấu trúc ngoài cùng của biểu thức trước: tổng thì tách; tích thì 2 hạng; thương thì dấu trừ/mẫu bình phương; hàm hợp thì đạo hàm ngoài nhân đạo hàm trong; thường phải kết hợp nhiều quy tắc theo thứ tự. Không có 'đạo hàm của tích = tích đạo hàm'.
+Cấu trúc biểu thức quyết định thứ tự quy tắc. Một biểu thức có tích và hàm hợp nên khai triển hay lấy đạo hàm trực tiếp? Ta bắt đầu từ tích, hợp, tổng, thương. Nhìn cấu trúc ngoài cùng của biểu thức trước: tổng thì tách; tích thì 2 hạng; thương thì dấu trừ/mẫu bình phương; hàm hợp thì đạo hàm ngoài nhân đạo hàm trong; thường phải kết hợp nhiều quy tắc theo thứ tự. Không có 'đạo hàm của tích = tích đạo hàm'.
 
-Thử vận dụng vào một tình huống. f=x e^{2x}: ngoài cùng tích, f'=e^{2x}+x·2e^{2x}=e^{2x}(1+2x). Chọn tích trước, sau đó chain cho thừa số mũ.
+Chẳng hạn, f=x e^{2x}: ngoài cùng tích, f'=e^{2x}+x·2e^{2x}=e^{2x}(1+2x). Chọn tích trước, sau đó chain cho thừa số mũ.
 
 ### Vận dụng và tự đối chiếu
 
@@ -485,33 +485,33 @@ Khi đã biết vận tốc là đạo hàm của vị trí, đạo hàm tiếp 
 
 <!-- LESSON_ID: TOP09-M25; OUTCOME_ID: TOP09-O25 -->
 
-Từ s(t) làm sao biết chiều chuyển động tại thời điểm t? Những điều đã biết ở đây là miền thời gian t≥0, quy tắc đạo hàm và dấu. Vận tốc có hướng v(t)=s'(t), speed=|v(t)|. Dùng đạo hàm trong miền mô hình, không kéo mô hình toán ra thời gian âm nếu không được định nghĩa. v=0 là đứng yên tức thời nhưng chưa tự nói dừng mãi, v đổi dấu thì có đổi chiều.
+Từ s(t) làm sao biết chiều chuyển động tại thời điểm t? Cần nhớ miền thời gian t≥0, quy tắc đạo hàm và dấu. Vận tốc có hướng v(t)=s'(t), speed=|v(t)|. Dùng đạo hàm trong miền mô hình, không kéo mô hình toán ra thời gian âm nếu không được định nghĩa. v=0 là đứng yên tức thời nhưng chưa tự nói dừng mãi, v đổi dấu thì có đổi chiều.
 
-Từ lập luận vừa rồi, ta xét: s(t)=t²−4t, t≥0: v=2t−4; t=1 vận tốc−2 m/s, t=3 +2 m/s, chỉ hướng chuyển động ngược nhau. Chọn dấu của v thay vì dấu của tọa độ s.
+Chẳng hạn, s(t)=t²−4t, t≥0: v=2t−4; t=1 vận tốc−2 m/s, t=3 +2 m/s, chỉ hướng chuyển động ngược nhau. Chọn dấu của v thay vì dấu của tọa độ s.
 
 <!-- LESSON_ID: TOP09-M26; OUTCOME_ID: TOP09-O26 -->
 
-Đạo hàm của đạo hàm là đạo hàm cấp hai. Một tốc độ biến đổi có thể chính nó biến thiên không? Để hiểu, ta dựa vào f' tồn tại trên khoảng và có thể tiếp tục lấy đạo hàm. Nếu f' khả vi, f''=(f')'. Đây là phép lấy đạo hàm **hai lần**, không phải bình phương (f')². Nếu f' chỉ tồn tại tại một điểm nhưng không tồn tại trong lân cận, cần xem định nghĩa f'' cẩn thận. f'' có thể là 0 với hàm bậc nhất.
+Đạo hàm của đạo hàm là đạo hàm cấp hai. Một tốc độ biến đổi có thể chính nó biến thiên không? Để xác định điều đó, cần xét f' tồn tại trên khoảng và có thể tiếp tục lấy đạo hàm. Nếu f' khả vi, f''=(f')'. Đây là phép lấy đạo hàm **hai lần**, không phải bình phương (f')². Nếu f' chỉ tồn tại tại một điểm nhưng không tồn tại trong lân cận, cần xem định nghĩa f'' cẩn thận. f'' có thể là 0 với hàm bậc nhất.
 
 Chẳng hạn, f=x³: f'=3x², f''=6x. Chọn lấy đạo hàm lại vì ta muốn tốc độ biến thiên của độ dốc.
 
 <!-- LESSON_ID: TOP09-M27; OUTCOME_ID: TOP09-O27 -->
 
-Với đa thức, tính đạo hàm cấp hai qua hai bước. Vì sao bậc của đa thức giảm sau mỗi lượt đạo hàm? Trước hết, ta xuất phát từ (x^n)'=n x^{n−1} và đạo hàm tổng. Lấy đạo hàm bậc nhất từng hạng rồi áp lần thứ hai; với đa thức n≥2, (x^n)''=n(n−1)x^{n−2}. Hằng và hạng tuyến tính có đạo hàm cấp hai bằng0. Kiểm cả kết quả f' lẫn f'' thay vì nhảy thẳng dễ thiếu hệ số.
+Với đa thức, tính đạo hàm cấp hai qua hai bước. Vì sao bậc của đa thức giảm sau mỗi lượt đạo hàm? Ta đã biết (x^n)'=n x^{n−1} và đạo hàm tổng. Lấy đạo hàm bậc nhất từng hạng rồi áp lần thứ hai; với đa thức n≥2, (x^n)''=n(n−1)x^{n−2}. Hằng và hạng tuyến tính có đạo hàm cấp hai bằng0. Kiểm cả kết quả f' lẫn f'' thay vì nhảy thẳng dễ thiếu hệ số.
 
-Một ví dụ giúp kiểm chứng điều đó. f=3x⁴−2x²+1: f'=12x³−4x, f''=36x²−4. Chọn hai bước để không bỏ hệ số.
+Chẳng hạn, f=3x⁴−2x²+1: f'=12x³−4x, f''=36x²−4. Chọn hai bước để không bỏ hệ số.
 
 <!-- LESSON_ID: TOP09-M28; OUTCOME_ID: TOP09-O28 -->
 
-Hàm mũ và lượng giác cũng có đạo hàm cấp hai. Tại sao đạo hàm lần hai của sin(2x) lại xuất hiện bình phương hệ số 2? Điểm tựa cho suy luận là chain rule và sin/cos radian, hàm mũ. Nếu f=sin(kx) thì f'=k cos(kx), f''=−k² sin(kx); nếu f=e^{kx}, f'=k e^{kx}, f''=k² e^{kx}. Hệ số k nhân mỗi lần do dây chuyền, không phải do bình phương f'. Giữ đúng dấu đạo hàm cos.
+Hàm mũ và lượng giác cũng có đạo hàm cấp hai. Tại sao đạo hàm lần hai của sin(2x) lại xuất hiện bình phương hệ số 2? Ta sử dụng chain rule và sin/cos radian, hàm mũ. Nếu f=sin(kx) thì f'=k cos(kx), f''=−k² sin(kx); nếu f=e^{kx}, f'=k e^{kx}, f''=k² e^{kx}. Hệ số k nhân mỗi lần do dây chuyền, không phải do bình phương f'. Giữ đúng dấu đạo hàm cos.
 
-Hãy theo dõi cách giải này. f=cos(3x): f'=−3sin(3x), f''=−9cos(3x). Chọn đạo hàm hai lần với chain ở cả hai.
+Xét ví dụ: f=cos(3x): f'=−3sin(3x), f''=−9cos(3x). Chọn đạo hàm hai lần với chain ở cả hai.
 
 <!-- LESSON_ID: TOP09-M29; OUTCOME_ID: TOP09-O29 -->
 
-Trong chuyển động, đạo hàm vận tốc là gia tốc. Vật có thể đang chuyển động nhưng gia tốc bằng 0 đúng lúc đó không? Ta có thể bắt đầu bằng vận tốc v=s' và đơn vị m/s, thời gian s. Từ tọa độ s(t), v(t)=s'(t), a(t)=v'(t)=s''(t). Đơn vị a là m/s²; dấu của a cho biết **vận tốc có hướng** đang tăng hay giảm, không phải trực tiếp tốc độ |v|. Muốn nói nhanh/chậm cần kết hợp dấu v và a.
+Trong chuyển động, đạo hàm vận tốc là gia tốc. Vật có thể đang chuyển động nhưng gia tốc bằng 0 đúng lúc đó không? Ta bắt đầu từ vận tốc v=s' và đơn vị m/s, thời gian s. Từ tọa độ s(t), v(t)=s'(t), a(t)=v'(t)=s''(t). Đơn vị a là m/s²; dấu của a cho biết **vận tốc có hướng** đang tăng hay giảm, không phải trực tiếp tốc độ |v|. Muốn nói nhanh/chậm cần kết hợp dấu v và a.
 
-Thử vận dụng vào một tình huống. s(t)=t³−3t²+2t: v=3t²−6t+2, a=6t−6; tại t=1, a=0 nhưng v=−1 m/s. Chọn lấy đạo hàm lần hai thay vì kết luận từ s(t).
+Chẳng hạn, s(t)=t³−3t²+2t: v=3t²−6t+2, a=6t−6; tại t=1, a=0 nhưng v=−1 m/s. Chọn lấy đạo hàm lần hai thay vì kết luận từ s(t).
 
 ![Đồ thị vận tốc và gia tốc theo thời gian](../../visuals/THPT_TOPIC09_VELOCITY_ACCELERATION_R01.svg)
 
@@ -519,21 +519,21 @@ Thử vận dụng vào một tình huống. s(t)=t³−3t²+2t: v=3t²−6t+2, 
 
 <!-- LESSON_ID: TOP09-M30; OUTCOME_ID: TOP09-O30 -->
 
-Dấu gia tốc phải đọc cùng dấu vận tốc. Gia tốc âm có nhất thiết khiến vật chậm đi? Những điều đã biết ở đây là tốc độ |v| và dấu của hai hàm v,a. Khi v≠0, đạo hàm tốc độ |v| bằng sign(v)·a: v,a cùng dấu → tốc độ tăng; trái dấu → giảm. Nếu v=0 phải xét riêng; a âm chỉ nói v có hướng đang giảm. Đây là ý nghĩa cơ học, không phải bài tối ưu CĐ10.
+Dấu gia tốc phải đọc cùng dấu vận tốc. Gia tốc âm có nhất thiết khiến vật chậm đi? Cần nhớ tốc độ |v| và dấu của hai hàm v,a. Khi v≠0, đạo hàm tốc độ |v| bằng sign(v)·a: v,a cùng dấu → tốc độ tăng; trái dấu → giảm. Nếu v=0 phải xét riêng; a âm chỉ nói v có hướng đang giảm. Đây là ý nghĩa cơ học, không phải bài tối ưu CĐ10.
 
-Từ lập luận vừa rồi, ta xét: s(t)=−t², t>0: v=−2t<0, a=−2<0. Vì cùng dấu, |v|=2t đang tăng dù gia tốc âm. Chọn xét tích v·a để không suy từ dấu gia tốc riêng.
+Chẳng hạn, s(t)=−t², t>0: v=−2t<0, a=−2<0. Vì cùng dấu, |v|=2t đang tăng dù gia tốc âm. Chọn xét tích v·a để không suy từ dấu gia tốc riêng.
 
 <!-- LESSON_ID: TOP09-M31; OUTCOME_ID: TOP09-O31 -->
 
-Tổng hợp quy tắc cần kiểm cả miền và đơn vị. Một đề có f, f', f'' yêu cầu những thông tin khác nhau như thế nào? Để hiểu, ta dựa vào tích, chain, giá trị tại điểm, phương trình tiếp tuyến. Đối chiếu yêu cầu: f(a) là tung độ, f'(a) là độ dốc/tốc độ thay đổi, f''(a) là tốc độ thay đổi của độ dốc. Tính đạo hàm đúng với miền rồi dùng f'(a) chứ không dùng f''(a) để lập tiếp tuyến. Đây là bước tổng hợp, không chuyển sang khảo sát cực trị CĐ10.
+Tổng hợp quy tắc cần kiểm cả miền và đơn vị. Một đề có f, f', f'' yêu cầu những thông tin khác nhau như thế nào? Để xác định điều đó, cần xét tích, chain, giá trị tại điểm, phương trình tiếp tuyến. Đối chiếu yêu cầu: f(a) là tung độ, f'(a) là độ dốc/tốc độ thay đổi, f''(a) là tốc độ thay đổi của độ dốc. Tính đạo hàm đúng với miền rồi dùng f'(a) chứ không dùng f''(a) để lập tiếp tuyến. Đây là bước tổng hợp, không chuyển sang khảo sát cực trị CĐ10.
 
 Chẳng hạn, f=x e^x: f'=e^x(1+x), f''=e^x(2+x); tại x=0 f=0, f'=1, f''=2, tiếp tuyến y=x. Chọn khai triển từng bước và kiểm qua (0,0).
 
 <!-- LESSON_ID: TOP09-M32; OUTCOME_ID: TOP09-O32 -->
 
-Tốc độ tức thời còn dùng để xấp xỉ sự thay đổi rất nhỏ. Khi đầu vào đổi rất nhỏ, có cần tính lại toàn bộ giá trị hàm mới để dự đoán đầu ra không? Trước hết, ta xuất phát từ giới hạn đạo hàm f'(a), ký hiệu Δx, đại số bình phương. Nếu f khả vi tại a, f(a+Δx)−f(a)=f'(a)Δx+o(Δx) khi Δx→0. Phần tuyến tính dy=f'(a)dx với dx=Δx gọi là **vi phân**; với bước đủ nhỏ, Δy≈dy, KHÔNG luôn bằng nhau. Vi phân là công cụ xấp xỉ cục bộ, không nên gọi là toàn bộ 'độ tăng'. Đây là **mở rộng Topic CĐ09**, không gán là định nghĩa/bài SGK ChIX Core.
+Tốc độ tức thời còn dùng để xấp xỉ sự thay đổi rất nhỏ. Khi đầu vào đổi rất nhỏ, có cần tính lại toàn bộ giá trị hàm mới để dự đoán đầu ra không? Ta đã biết giới hạn đạo hàm f'(a), ký hiệu Δx, đại số bình phương. Nếu f khả vi tại a, f(a+Δx)−f(a)=f'(a)Δx+o(Δx) khi Δx→0. Phần tuyến tính dy=f'(a)dx với dx=Δx gọi là **vi phân**; với bước đủ nhỏ, Δy≈dy, KHÔNG luôn bằng nhau. Vi phân là công cụ xấp xỉ cục bộ, không nên gọi là toàn bộ 'độ tăng'. Đây là **mở rộng Topic CĐ09**, không gán là định nghĩa/bài SGK ChIX Core.
 
-Một ví dụ giúp kiểm chứng điều đó. f=x²,a=3,dx=0,02: f'(3)=6 nên dy=0,12; Δy=(3,02)²−9=0,1204, sai lệch0,0004=(dx)². Chọn vi phân để ước lượng nhanh và định lượng phần dư, không hứa chính xác cho bước lớn.
+Chẳng hạn, f=x²,a=3,dx=0,02: f'(3)=6 nên dy=0,12; Δy=(3,02)²−9=0,1204, sai lệch0,0004=(dx)². Chọn vi phân để ước lượng nhanh và định lượng phần dư, không hứa chính xác cho bước lớn.
 
 ![Xấp xỉ tuyến tính và độ tăng thực của hàm](../../visuals/THPT_TOPIC09_LINEAR_DIFFERENTIAL_R01.svg)
 
@@ -637,18 +637,9 @@ Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và
 
 </details>
 
-## D5 — Hướng dẫn đọc hình và tính toán
 
-- **SVG01** `prototypes/thpt/visuals/THPT_TOPIC09_SECANT_TANGENT_R01.svg`: đồ thị y=x², P(1,1), Q(1+h,(1+h)²) với h=1 (hoặc nhỏ dần); hệ số góc cát tuyến 2+h, giới hạn 2. Đường tiếp tuyến qua P có y=2x−1; phân biệt h≠0 khi tính cát tuyến và h→0 khi lấy giới hạn.
-- **SVG02** `prototypes/thpt/visuals/THPT_TOPIC09_PRODUCT_RULE_AREA_R01.svg`: một hình chữ nhật có hai cạnh u,v đều tăng; hình tăng thêm gồm vΔu và uΔv, cộng góc ΔuΔv. Sau chia Δx và lấy giới hạn khi u,v khả vi, góc ΔuΔv/Δx→0, vì vậy có hai hạng u'v và uv'.
-- **SVG03** `prototypes/thpt/visuals/THPT_TOPIC09_VELOCITY_ACCELERATION_R01.svg`: theo t=0…4 với s=t³−6t²+9t, v(t)=3(t−1)(t−3), a(t)=6(t−2); đánh dấu t=1,2,3, bảng dấu theo các khoảng và sự khác biệt giữa dấu a với tăng/giảm tốc độ.
-- **SVG04** `prototypes/thpt/visuals/THPT_TOPIC09_LINEAR_DIFFERENTIAL_R01.svg`: tại a=2 với f=x², Δx=0,1, tuyến tính dự đoán dy=0,4 trong khi thực Δy=0,41, sai số0,01. Hai độ tăng không đồng nhất; xấp xỉ chỉ là cục bộ khi bước nhỏ, phần mở rộng Topic.
+<!-- AUTHORING_ONLY: source-locked figure custody and interaction SPEC_ONLY notes preserved in original R02 blob e7a4d74c142597b1d27d94f90a6f3abacb83ab59. The learner text already places verified SVG inline. -->
 
-## Đặc tả mô hình tương tác (SPEC_ONLY, chưa có runtime)
-
-1. **Cát tuyến tiến tới tiếp tuyến:** điều chỉnh h>0 rồi h<0 trong khoảng không chạm 0, hiển thị P,Q, thương sai phân và m=f'(a) khi có đạo hàm hai phía. Với |x| tại0 phải cảnh báo trái/phải không bằng nhau. Đây là đặc tả, không phải widget đã chạy trên website.
-2. **Quy tắc tích qua diện tích:** chọn u,v có giá trị dương, Δu,Δv để nhìn hai dải và góc nhỏ; số hạng góc sau chia Δx tiến0 trong giả thiết khả vi. Với các giá trị âm, minh họa hình học diện tích chỉ là mô hình trực quan; công thức đạo hàm vẫn đúng đại số khi u,v khả vi.
-3. **Chuyển động:** hiện tọa độ, v=s', a=s'', tốc độ |v| và dấu v·a theo t; kiểm tại v=0 và a=0 không gán kết luận tăng/giảm một cách máy móc. SPEC_ONLY, chưa kiểm Safari.
 
 # Luyện tập
 
