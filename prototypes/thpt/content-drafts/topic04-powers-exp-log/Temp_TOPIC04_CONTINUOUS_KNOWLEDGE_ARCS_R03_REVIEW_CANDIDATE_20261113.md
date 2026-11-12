@@ -116,7 +116,7 @@ Chẳng hạn, log₂(1/8)=−3 vì 2^(−3)=1/8. Dấu âm nằm ở **số mũ
 
 Nhưng phép tính ngược ấy chỉ có nghĩa khi đối số và cơ số thỏa điều kiện. Nếu biến đổi log tích thành tổng log mà chưa xét miền, có thể đánh mất nghiệm hợp lệ. Để xác định điều đó, cần xét dấu tích hai nhân tử và bất phương trình bậc hai của tiền đề đã giải thích lại ở đây. Để log_a[F(x)] tồn tại trên ℝ cần a>0, a≠1 và F(x)>0. Quy tắc log_a(uv)=log_a u+log_a v đòi **u>0 và v>0**, mạnh hơn uv>0. Vì vậy với log_a[(x−1)(x−4)], miền x<1 hoặc x>4, nhưng chỉ tách thành tổng log thực trên x>4.
 
-Chẳng hạn, Với x=0: (x−1)(x−4)=4>0 nên log₂4 có nghĩa, còn log₂(−1) và log₂(−4) không. Hình dung hai điểm âm nhân lại dương không làm log từng số âm có nghĩa.
+Chẳng hạn, với x=0: (x−1)(x−4)=4>0 nên log₂4 có nghĩa, còn log₂(−1) và log₂(−4) không. Hình dung hai điểm âm nhân lại dương không làm log từng số âm có nghĩa.
 
 <!-- LESSON_ID: TOP04-M07; OUTCOME_ID: TOP04-O07 -->
 
@@ -375,14 +375,12 @@ Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và
 </details>
 
 <!-- First Try TOP04-M18: knowledge, not canonical Readiness -->
-**2.** Giải log₂(x−2)+log₂(x+2)=3 và kiểm miền.
+**2.** Giải \(\log_3(x-1)=1+\log_3(5-x)\). Hãy nêu miền trước khi dùng quy tắc logarit.
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu sau khi tự làm</summary>
 
-Miền x>2, bình phương cho x=±2√3; chỉ nhận x=2√3. Thử tích (x−2)(x+2)=8.
-
-Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và lý do chọn phương pháp. Nếu mắc lỗi gộp log tích không có điều kiện, quay M06; nếu đảo dấu sai, quay M10/M16; dùng câu P22 khác để luyện.
+Điều kiện \(x-1>0\), \(5-x>0\), tức \(1<x<5\). Vì \(1=\log_3 3\), ta có \(\log_3(x-1)=\log_3[3(5-x)]\). Hai đối số dương và cơ số 3 hợp lệ nên \(x-1=15-3x\), suy ra \(x=4\). Thử: \(\log_3 3=1+\log_3 1=1\). Nếu em bỏ điều kiện và nhận nghiệm ngoài (1,5), quay lại bước xác định miền trước khi giải.
 
 </details>
 
