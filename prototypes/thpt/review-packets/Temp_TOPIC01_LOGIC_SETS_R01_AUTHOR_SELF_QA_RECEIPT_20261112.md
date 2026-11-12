@@ -35,6 +35,13 @@ P1: 0
 P2: 0
 AUTHOR_VERDICT: CONTENT_MATH_PED_SOURCE_SELF_VERIFIED
 RELEASE_AUTHORIZATION: NO
+S1_RECEIPT: Historical directly scanned SGK KNTT Toán 10 tập 1 B01 printed 5–11, B02 12–19, end 20–21; SBT B01 5–7, B02 8–11, end 12–15, per immutable author+owner review. No fresh original PDF scan claimed in this Topic pass.
+OUTCOME_AUDIT: 11/11 Topic-first CĐ01 outcomes, 11 modules and 24 distinct canonical PUBLIC IDs; >=2 primary item references per outcome; one self-check placement per outcome.
+MATH_VERIFICATION: 40/40 static/source/logic/arithmetic/privacy checks PASS; 6 new problems with complete reasoned solutions; old original 18/18 independently reviewer-scoped PASS unchanged.
+PED_VERIFICATION: 11 meaning-first motivations, 11 prerequisite bridges, 11 worked examples, 11 first-tries with voluntary comparison and 11 D6 remediation; two existing original accessible SVGs read with explanation.
+CANONICAL_Q15: 18 original source-locked immutable public items in single original blob, 6 new unique public items in one extension, 2 written one original rubric each, 11 reuse-only public selfcheck placements.
+ASSESSMENT_Q16: 0 private RD1 imported, no held-out Topic Readiness claimed, CLIENT_SELF_CHECK_NO_MASTERY; no hints/answer/correctness/Tutor pre-Final Submit and no Mastery writes in RELEASE.
+AUTHOR_SIGNOFF: Q18 AUTHOR_SELF_VERIFIED v3.0.1 on exact Git content with P0=0/P1=0; not fresh NotebookLM reviewer PASS, not deployment authority.
 
 ## Nguồn và giới hạn reviewer
 
