@@ -200,7 +200,7 @@ role: TOPIC_PRACTICE
 difficulty_band: UNDERSTAND
 problem_family_id: TOP08-CLOSED_INTERVAL_ENDPOINT
 content_version: 1
-**Đề:** Xét f(x)=√[x(4−x)] trên miền [0,4]. Hàm có liên tục trên đoạn [0,4] theo nghĩa tương đối không? Giá trị ở hai đầu là gì?
+**Đề:** Xét f(x)=√(x(4−x)) trên miền [0,4]. Hàm có liên tục trên đoạn [0,4] theo nghĩa tương đối không? Giá trị ở hai đầu là gì?
 **Đáp án:** Có; f(0)=f(4)=0.
 **Lời giải có suy luận:** Biểu thức x(4−x)≥0 đúng trên [0,4]; đa thức và căn bậc hai liên tục trên miền thích hợp, nên hàm liên tục bên trong. Tại 0 dùng giới hạn phải bằng f(0)=0; tại 4 dùng giới hạn trái bằng f(4)=0. Không cần giới hạn từ ngoài miền.
 **D6 tự khắc phục:** Ở đầu mút, dùng đúng giới hạn một phía phía trong miền thay vì đòi hai phía ngoài miền.
