@@ -28,10 +28,11 @@ for(const file of files){
   const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
   assert.deepEqual(tabs,labels,rel+" exactly four approved Model B L1 tabs");
   const headers=[...c.matchAll(/^    ### 1\.(\d+)\.\s/gm)].map(x=>Number(x[1]));
-  for(let i=1;i<headers.length;i++)
+  for(let i=1;i<headers.length;i++){
    const gap=headers[i]-headers[i-1];
    if(gap!==1 && !(gap===2 && c.includes("### Vận dụng — tự giải trước khi đối chiếu")))
     problems.push(rel+" concept hierarchy out of sequence: "+headers[i-1]+" to "+headers[i]);
+  }
   if((c.match(/data-ped-first-try=/g)||[]).length<1||(c.match(/data-thpt-help-id=/g)||[]).length<1)
    problems.push(rel+" missing original first-try or D6 path");
   if(!c.includes("### Ví dụ trực quan")||!c.includes("### Thuật ngữ và kiến thức, kỹ năng"))
