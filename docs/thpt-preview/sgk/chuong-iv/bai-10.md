@@ -4,7 +4,7 @@
 
 === "Khám phá kiến thức"
 
-    ### Cùng tìm hiểu
+### Cùng tìm hiểu
 
     Một mũi tên trên bản đồ có thể được mô tả bằng hai điều: đi **bao nhiêu đơn vị theo chiều ngang** và **bao nhiêu đơn vị theo chiều dọc**. Nếu một người đi từ \(A(1,2)\) đến \(B(5,5)\), họ đã dịch chuyển \(4\) đơn vị theo phương ngang và \(3\) đơn vị theo phương đứng. Vì thế, tọa độ của vectơ độ dời được tính bằng **điểm cuối trừ điểm đầu**: \(\overrightarrow{AB}=(4,3)\).
 
@@ -12,17 +12,11 @@
 
     Bài học cũng giải thích vì sao độ dài vectơ phải dùng căn của **tổng bình phương** hai tọa độ, cách kiểm hai vectơ cùng phương và cách tìm trung điểm, trọng tâm từ tọa độ các đỉnh.
 
-    ### Thuật ngữ, kiến thức và kỹ năng
+    ### Ví dụ trực quan
 
-    **Thuật ngữ:** Vectơ tọa độ, vectơ đơn vị trên trục, điểm đầu/điểm cuối, độ dài, cùng phương, tọa độ trung điểm/trọng tâm.
+<span id="thpt-g10-chiv-try16" data-thpt-first-try-id="THPT-G10-CHIV-TRY16" data-outcome-id="G10-B10-VECTOR_COORDS" data-thpt-help-ref="HELP-G10-B10-01"></span>
 
-    **Sau bài học, em cần làm được:** Tính tọa độ vectơ đi từ A đến B bằng cách lấy tọa độ điểm cuối trừ tọa độ điểm đầu; cộng, trừ, nhân vectơ theo tọa độ; tính độ dài; kiểm cùng phương và tìm tọa độ trung điểm, trọng tâm.
-
-=== "Kiến thức SGK"
-
-    <span id="thpt-g10-chiv-try16" data-thpt-first-try-id="THPT-G10-CHIV-TRY16" data-outcome-id="G10-B10-VECTOR_COORDS" data-thpt-help-ref="HELP-G10-B10-01"></span>
-
-    ### Vì sao lấy điểm cuối trừ điểm đầu?
+    #### Vì sao lấy điểm cuối trừ điểm đầu?
 
     Trên bản đồ tọa độ, muốn biết bạn đã dịch chuyển bao xa theo Đông–Tây và Bắc–Nam từ A đến B, chỉ cần nhìn sự thay đổi tọa độ.
 
@@ -44,7 +38,7 @@
 
     <span id="thpt-g10-chiv-try17" data-thpt-first-try-id="THPT-G10-CHIV-TRY17" data-outcome-id="G10-B10-OPERATIONS" data-thpt-help-ref="HELP-G10-B10-01"></span>
 
-    ### Tọa độ giữ phép cộng vectơ dễ tính
+    #### Tọa độ giữ phép cộng vectơ dễ tính
 
     Từ hai lần dịch chuyển đã mô tả bằng (ngang; dọc), ta muốn ghép chúng mà không phải vẽ lại từng mũi tên.
 
@@ -66,7 +60,7 @@
 
     <span id="thpt-g10-chiv-try18" data-thpt-first-try-id="THPT-G10-CHIV-TRY18" data-outcome-id="G10-B10-NORM_DISTANCE" data-thpt-help-ref="HELP-G10-B10-01"></span>
 
-    ### Khoảng cách là độ dài mũi tên, không phải tổng hai ô
+    #### Khoảng cách là độ dài mũi tên, không phải tổng hai ô
 
     Đi 3 ô sang Đông và 4 ô lên Bắc có quãng đường theo lưới 7 ô nhưng khoảng cách thẳng chỉ 5 ô.
 
@@ -88,7 +82,7 @@
 
     <span id="thpt-g10-chiv-try19" data-thpt-first-try-id="THPT-G10-CHIV-TRY19" data-outcome-id="G10-B10-COLLINEAR_COORDS" data-thpt-help-ref="HELP-G10-B10-02"></span>
 
-    ### Hai cặp số có cùng hướng hình học khi nào?
+    #### Hai cặp số có cùng hướng hình học khi nào?
 
     Trong bản đồ, (2 ô Đông,1 ô Bắc) và (6 ô Đông,3 ô Bắc) cùng đường đi nhưng khác độ dài.
 
@@ -110,7 +104,7 @@
 
     <span id="thpt-g10-chiv-try20" data-thpt-first-try-id="THPT-G10-CHIV-TRY20" data-outcome-id="G10-B10-MIDPOINT_CENTROID" data-thpt-help-ref="HELP-G10-B10-02"></span>
 
-    ### Tọa độ điểm cân bằng là trung bình các đỉnh
+    #### Tọa độ điểm cân bằng là trung bình các đỉnh
 
     Trung điểm đoạn thẳng nằm cân giữa hai đầu, trọng tâm tam giác nằm cân giữa ba đỉnh khi xét tọa độ theo mỗi trục.
 
@@ -132,7 +126,7 @@
 
     <span id="thpt-g10-chiv-try-river-tr01" data-thpt-first-try-id="THPT-G10-CHIV-TRY-RIVER-TR01" data-outcome-id="G10-B10-OPERATIONS" data-thpt-help-ref="HELP-G10-CHIV-RIVER-TR01"></span>
 
-    ### Ứng dụng: Ca nô: vận tốc theo bờ và điều kiện không trôi
+    #### Ứng dụng: Ca nô: vận tốc theo bờ và điều kiện không trôi
 
     Mũi thuyền đang hướng Bắc nhưng dòng nước kéo sang Đông: **hướng mũi thuyền không trùng quỹ đạo theo bờ**. Muốn cập đúng điểm đối diện, phải chủ động hướng thuyền ngược dòng.
 
@@ -177,12 +171,17 @@
 
         5. **Luyện lại:** Ôn các câu về cộng vectơ và tọa độ trong phần Luyện tập, rồi tự giải một tình huống qua sông tương tự trước khi mở lời giải. Nếu đã xem đáp án, hãy đổi dữ kiện để tự thử lại.
 
+### Thuật ngữ, kiến thức và kỹ năng
 
-    ### Kiến thức SGK
+    **Thuật ngữ:** Vectơ tọa độ, vectơ đơn vị trên trục, điểm đầu/điểm cuối, độ dài, cùng phương, tọa độ trung điểm/trọng tâm.
 
-    ### 1. Hệ tọa độ và vectơ
+    **Sau bài học, em cần làm được:** Tính tọa độ vectơ đi từ A đến B bằng cách lấy tọa độ điểm cuối trừ tọa độ điểm đầu; cộng, trừ, nhân vectơ theo tọa độ; tính độ dài; kiểm cùng phương và tìm tọa độ trung điểm, trọng tâm.
 
-    **Cách đọc hình.** Đọc mũi tên từ điểm A đến B; lấy hoành độ và tung độ điểm cuối trừ điểm đầu, rồi đối chiếu chiều chuyển động trên trục.
+=== "Kiến thức SGK"
+
+    ### 2.1. Tọa độ của vectơ
+
+**Cách đọc hình.** Đọc mũi tên từ điểm A đến B; lấy hoành độ và tung độ điểm cuối trừ điểm đầu, rồi đối chiếu chiều chuyển động trên trục.
 
     <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B10_COORDINATES_DIFFERENCE_D5_R01.svg" loading="lazy" alt="Tọa độ vectơ AB bằng tọa độ điểm cuối trừ điểm đầu"><figcaption>Tọa độ vectơ AB bằng tọa độ điểm cuối trừ điểm đầu.</figcaption></figure>
 
@@ -195,9 +194,9 @@
 
     **Lưu ý:** Tọa độ vectơ $\overrightarrow{AB}$ **không phải** tọa độ điểm $B$ trừ khi $A=O$.
 
-    ### 2. Các phép toán tọa độ
+    ### 2.2. Biểu thức tọa độ của các phép toán vectơ
 
-     Với $\vec u=(a;b)$, $\vec v=(c;d)$, $t\in\mathbb R$:
+Với $\vec u=(a;b)$, $\vec v=(c;d)$, $t\in\mathbb R$:
 
     \[
     \vec u+\vec v=(a+c;b+d),\quad \vec u-\vec v=(a-c;b-d),\quad t\vec u=(ta;tb).
@@ -207,9 +206,9 @@
 
     **Điều kiện cùng phương:** Hai vectơ **khác không** cùng phương khi $ad-bc=0$; với vectơ không cần nêu quy ước KNTT riêng.
 
-    ### 3. Tọa độ trung điểm và trọng tâm
+    #### Hệ quả: tọa độ trung điểm và trọng tâm
 
-     $M$ là trung điểm $AB$ khi
+$M$ là trung điểm $AB$ khi
 
     \[
     M\left(\frac{x_A+x_B}{2};\frac{y_A+y_B}{2}\right).
@@ -223,9 +222,9 @@
 
     **Điều kiện:** Chỉ dùng công thức trọng tâm khi $ABC$ là tam giác không suy biến. Kiểm tra lại bằng $\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0$.
 
-    ### 4. Ứng dụng
+    #### Vận dụng
 
-    **Cách đọc hình.** Đọc vectơ vận tốc theo bờ như tổng hai chuyển động của ca nô và dòng nước. Phân biệt trục dọc bờ với trục qua sông; kiểm điều kiện không trôi bằng thành phần ngang.
+**Cách đọc hình.** Đọc vectơ vận tốc theo bờ như tổng hai chuyển động của ca nô và dòng nước. Phân biệt trục dọc bờ với trục qua sông; kiểm điều kiện không trôi bằng thành phần ngang.
 
     <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_CHIV_RIVER_TRANSFER_D5_R01_CORRECTED.svg" alt="Hai trường hợp hướng mũi ca nô; lái Bắc thì trôi Đông, lái chếch Tây Bắc thì đi Bắc không trôi" loading="lazy"><figcaption>Hai bờ song song: thời gian phụ thuộc thành phần Bắc của vận tốc theo bờ.</figcaption></figure>
 

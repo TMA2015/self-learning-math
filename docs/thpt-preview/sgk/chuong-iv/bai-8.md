@@ -4,7 +4,7 @@
 
 === "Khám phá kiến thức"
 
-    ### Cùng tìm hiểu
+### Cùng tìm hiểu
 
     Một người đi từ A đến B rồi tiếp tục từ B đến C. Nếu em chỉ muốn biết **độ dời từ điểm xuất phát đến điểm kết thúc**, không cần kể hai chặng riêng lẻ: mũi tên \(\overrightarrow{AC}\) chính là kết quả của hai mũi tên nối tiếp.
 
@@ -12,17 +12,11 @@
 
     Phép trừ cũng có hình học của nó: muốn lấy vectơ này trừ vectơ kia, ta **cộng với vectơ đối**. Em sẽ thấy vì sao trung điểm và trọng tâm tạo ra những tổng vectơ đặc biệt bằng vectơ-không, chứ không cần học thuộc công thức riêng rẽ.
 
-    ### Thuật ngữ, kiến thức và kỹ năng
+    ### Ví dụ trực quan
 
-    **Thuật ngữ:** Tổng vectơ, quy tắc ba điểm, quy tắc hình bình hành, vectơ đối, hiệu, trung điểm, trọng tâm.
+<span id="thpt-g10-chiv-try06" data-thpt-first-try-id="THPT-G10-CHIV-TRY06" data-outcome-id="G10-B08-TRIANGLE" data-thpt-help-ref="HELP-G10-B08-01"></span>
 
-    **Sau bài học, em cần làm được:** Nối đúng điểm đầu–cuối; vẽ đường chéo hình bình hành; đổi phép trừ thành cộng vectơ đối; dùng các quan hệ trung điểm/trọng tâm.
-
-=== "Kiến thức SGK"
-
-    <span id="thpt-g10-chiv-try06" data-thpt-first-try-id="THPT-G10-CHIV-TRY06" data-outcome-id="G10-B08-TRIANGLE" data-thpt-help-ref="HELP-G10-B08-01"></span>
-
-    ### Cộng hai lần di chuyển nối tiếp
+    #### Cộng hai lần di chuyển nối tiếp
 
     Một người đi từ A đến B rồi từ B đến C. Muốn biết độ dời cuối cùng, không cần giữ mọi chặng nếu biết điểm đầu A và điểm cuối C.
 
@@ -44,7 +38,7 @@
 
     <span id="thpt-g10-chiv-try07" data-thpt-first-try-id="THPT-G10-CHIV-TRY07" data-outcome-id="G10-B08-PARALLELOGRAM" data-thpt-help-ref="HELP-G10-B08-02"></span>
 
-    ### Hai tác động cùng lúc và hợp lực
+    #### Hai tác động cùng lúc và hợp lực
 
     Hai lực có chung điểm đặt nhưng khác hướng không cho hợp lực bằng cách cộng độ lớn như cộng hai số thường.
 
@@ -66,7 +60,7 @@
 
     <span id="thpt-g10-chiv-try08" data-thpt-first-try-id="THPT-G10-CHIV-TRY08" data-outcome-id="G10-B08-OPPOSITE-SUBTRACTION" data-thpt-help-ref="HELP-G10-B08-01"></span>
 
-    ### Vì sao trừ phải đổi chiều?
+    #### Vì sao trừ phải đổi chiều?
 
     Nếu biết hai vị trí đích B và C nhìn từ cùng A, muốn đi từ C sang B ta phải 'bù' chặng A→C bằng chiều ngược của nó.
 
@@ -88,7 +82,7 @@
 
     <span id="thpt-g10-chiv-try09" data-thpt-first-try-id="THPT-G10-CHIV-TRY09" data-outcome-id="G10-B08-MIDPOINT" data-thpt-help-ref="HELP-G10-B08-02"></span>
 
-    ### Trung điểm làm hai độ dời triệt tiêu
+    #### Trung điểm làm hai độ dời triệt tiêu
 
     Đứng ở giữa một đoạn đường, đi tới hai đầu theo hai hướng đối nhau và cùng độ dài; tổng hai vectơ này phải bằng 0.
 
@@ -110,7 +104,7 @@
 
     <span id="thpt-g10-chiv-try10" data-thpt-first-try-id="THPT-G10-CHIV-TRY10" data-outcome-id="G10-B08-CENTROID" data-thpt-help-ref="HELP-G10-B08-02"></span>
 
-    ### Ba độ dời cân bằng tại trọng tâm
+    #### Ba độ dời cân bằng tại trọng tâm
 
     Đặt điểm G ở trọng tâm một tam giác, ba vectơ hướng từ G đến các đỉnh cân bằng nhau khi cộng theo quy tắc vectơ.
 
@@ -129,18 +123,23 @@
 
         **Vì sao:** AG=2GM trên cùng trung tuyến, hai vectơ G→A và G→M ngược chiều. Đây là cân bằng vectơ, không phải cộng ba khoảng cách.
 
+### Thuật ngữ, kiến thức và kỹ năng
 
-    ### Kiến thức SGK
+    **Thuật ngữ:** Tổng vectơ, quy tắc ba điểm, quy tắc hình bình hành, vectơ đối, hiệu, trung điểm, trọng tâm.
 
-    ### 1. Quy tắc ba điểm (quy tắc tam giác)
+    **Sau bài học, em cần làm được:** Nối đúng điểm đầu–cuối; vẽ đường chéo hình bình hành; đổi phép trừ thành cộng vectơ đối; dùng các quan hệ trung điểm/trọng tâm.
 
-     Với A,B,C tùy ý: $\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}$.
+=== "Kiến thức SGK"
+
+    ### 2.1. Tổng của hai vectơ
+
+Với A,B,C tùy ý: $\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}$.
 
     **Lưu ý:** Điểm cuối của vectơ thứ nhất B là điểm đầu của vectơ thứ hai; đảo BC thành CB có thể làm đổi kết quả.
 
-    ### 2. Quy tắc hình bình hành
+    #### Quy tắc hình bình hành
 
-    **Quan sát hình.** Hãy đọc hai cách cộng trên hình: ở quy tắc tam giác, nối đuôi mũi tên; ở quy tắc hình bình hành, dựng hai cạnh chung gốc rồi lấy đường chéo. Không cộng độ dài như cộng vectơ.
+**Quan sát hình.** Hãy đọc hai cách cộng trên hình: ở quy tắc tam giác, nối đuôi mũi tên; ở quy tắc hình bình hành, dựng hai cạnh chung gốc rồi lấy đường chéo. Không cộng độ dài như cộng vectơ.
 
     <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B08_TRIANGLE_PARALLELOGRAM_SUM_D5_R01.svg" loading="lazy" alt="Vectơ và quy tắc ba điểm, hình bình hành"><figcaption>Vectơ và quy tắc ba điểm, hình bình hành.</figcaption></figure>
 
@@ -150,27 +149,27 @@
 
     **Tính chất:** Phép cộng vectơ có giao hoán, kết hợp, phần tử không.
 
-    ### 3. Vectơ đối và hiệu
+    #### Vận dụng: hợp lực
 
-     $-\overrightarrow{AB}=\overrightarrow{BA}$ và $\vec u-\vec v=\vec u+(-\vec v)$. 
+Nếu hai lực có cùng điểm đặt, hợp lực là đường chéo hình bình hành tạo bởi hai vectơ lực. Độ lớn hợp lực không bằng tổng các độ lớn nếu hai lực không cùng hướng. Bài toán hai lực vuông góc có thể dùng định lí Pitago.
+
+    ### 2.2. Hiệu của hai vectơ
+
+$-\overrightarrow{AB}=\overrightarrow{BA}$ và $\vec u-\vec v=\vec u+(-\vec v)$. 
 
     **Hệ quả:** Quy tắc ba điểm suy ra $\overrightarrow{AB}-\overrightarrow{AC}=\overrightarrow{CB}$; phép trừ vectơ nói chung **không giao hoán**.
 
     **Phần tử không và vectơ đối:** $\vec a+\vec0=\vec a$, $\vec a+(-\vec a)=\vec0$.
 
-    ### 4. Trung điểm và trọng tâm
+    #### Hệ quả: trung điểm và trọng tâm
 
-     M là trung điểm AB khi và chỉ khi $\overrightarrow{MA}+\overrightarrow{MB}=\vec0$.
+M là trung điểm AB khi và chỉ khi $\overrightarrow{MA}+\overrightarrow{MB}=\vec0$.
 
     **Trọng tâm:** G là trọng tâm tam giác ABC thì $\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0$.
 
     **Hệ quả trung điểm:** Đối với M trung điểm BC và E bất kì: $\overrightarrow{EB}+\overrightarrow{EC}=\overrightarrow{EM}+\overrightarrow{EM}$.
 
     **Liên hệ:** Chú ý đây là quan hệ cộng vectơ đã có trong bài, không xây thêm phần Core riêng.
-
-    ### 5. Ứng dụng hợp lực
-
-     Nếu hai lực có cùng điểm đặt, hợp lực là đường chéo hình bình hành tạo bởi hai vectơ lực. Độ lớn hợp lực không bằng tổng các độ lớn nếu hai lực không cùng hướng. Bài toán hai lực vuông góc có thể dùng định lí Pitago.
 
 === "Ví dụ"
 
