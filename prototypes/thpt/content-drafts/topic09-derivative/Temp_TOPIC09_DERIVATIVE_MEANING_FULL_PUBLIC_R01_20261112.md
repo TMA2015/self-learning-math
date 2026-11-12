@@ -414,7 +414,7 @@ Thấy một vật đi được 8 mét trong hai giây chưa cho biết nó đi 
 
 # Luyện tập
 
-**Một thư viện canonical mới duy nhất:** `prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_NEW36_PUBLIC_CANONICAL_R01_20261112.md` chứa 32 Practice P01–P32 và 5 Written W01–W05 (mỗi rubric 7 điểm). **71 PUBLIC SGK original references** ở `prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_ORIGINAL71_SGK_CANONICAL_INDEX_R01_20261112.md`, không clone đề, lời giải hay rubric. Có cả chứng minh từ định nghĩa, góc gãy, miền của căn/log/tan/cot, chain và hỗn hợp, vận tốc/gia tốc, vi phân xấp xỉ; có câu xử lý điều kiện bên cạnh bài tính.
+**Một thư viện canonical mới duy nhất:** `prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_NEW37_PUBLIC_CANONICAL_R01_20261112.md` chứa 32 Practice P01–P32 và 5 Written W01–W05 (mỗi rubric 7 điểm). **71 PUBLIC SGK original references** ở `prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_ORIGINAL71_SGK_CANONICAL_INDEX_R01_20261112.md`, không clone đề, lời giải hay rubric. Có cả chứng minh từ định nghĩa, góc gãy, miền của căn/log/tan/cot, chain và hỗn hợp, vận tốc/gia tốc, vi phân xấp xỉ; có câu xử lý điều kiện bên cạnh bài tính.
 
 | outcome | mạch kiến thức | item Practice | Written có rubric |
 |---|---|---|---|
