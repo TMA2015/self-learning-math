@@ -7,6 +7,18 @@
 const fs=require("node:fs"),path=require("node:path"),assert=require("node:assert/strict");
 const root=path.resolve(__dirname,"..");
 const ledger="prototypes/thpt/ux795/UX795_G10_KNOWLEDGE_RELEASE_SOURCE_INTAKE_R01_20261110.md";
+const editorReceipt="prototypes/thpt/ux795/G10_CHIV_B07_B11_SGK_S1_Q18_EDITORIAL_RECEIPT_20261112.md";
+function chivEditorialReceiptRows(){
+ const file=path.join(root,editorReceipt);
+ if(!fs.existsSync(file))return new Map();
+ const source=fs.readFileSync(file,"utf8");
+ const matches=[...source.matchAll(/^\\| B(0[7-9]|1[01]) \\| \\x60([a-f0-9]{40})\\x60 \\| \\x60([a-f0-9]{40})\\x60 \\| (\\d+) \\|/gm)];
+ assert.equal(matches.length,5,"ChIV S1/Q18 editorial receipt requires five source rows");
+ const rows=new Map(matches.map(m=>["B"+m[1],{baseline:m[2],candidate:m[3],moved:Number(m[4])}]));
+ assert.equal(rows.size,5,"ChIV editorial source rows must be unique");
+ return rows;
+}
+
 function expectedG10KnowledgeBlob(lesson,legacy){
  assert(/^[a-f0-9]{40}$/.test(legacy),"Historical source SHA malformed");
  const name="B"+String(lesson).replace(/^B/,"").padStart(2,"0");
@@ -18,10 +30,18 @@ function expectedG10KnowledgeBlob(lesson,legacy){
  const blobs=[...matches[0].matchAll(/[a-f0-9]{40}/g)].map(x=>x[0]);
  assert.equal(blobs.length,2,name+" must carry baseline AND candidate Git blob");
  assert.notEqual(blobs[0],blobs[1],name+" Knowledge delta must not silently change baseline identity");
+
+ const row=chivEditorialReceiptRows().get(name);
+ if(row){
+  assert.equal(row.baseline,blobs[1],name+" immutable S1/Q18 baseline must match ledger candidate");
+  assert.notEqual(row.candidate,row.baseline,name+" editorial source must be distinct");
+  assert.equal(row.moved,({B07:5,B08:5,B09:5,B10:6,B11:4})[name],name+" moved First Try count");
+  return row.candidate;
+ }
  return blobs[1];
 }
 function candidateG10KnowledgeBlob(lesson){
  const sentinel="0".repeat(40),result=expectedG10KnowledgeBlob(lesson,sentinel);
  return result===sentinel?null:result;
 }
-module.exports={expectedG10KnowledgeBlob,candidateG10KnowledgeBlob};
+module.exports={expectedG10KnowledgeBlob,candidateG10KnowledgeBlob,chivEditorialReceiptRows};
