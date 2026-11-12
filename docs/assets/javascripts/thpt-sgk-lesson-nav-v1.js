@@ -53,6 +53,52 @@ const numberG10FirstSix=(article)=>{
  mistakes.forEach((node,i)=>node.textContent="4."+(i+1)+". "+node.textContent.trim());
  article.dataset.g10B01B06EditorialNumbered="true";
 };
+/* G10 B01-B06 DELTA_A_UI: align numeric columns and visually group only
+ * the existing worked solution in example tab. No mathematical text changes.
+ * Keep full solution content (MathJax, diagrams, tables) together. */
+const polishG10FirstSix=(article)=>{
+ if(article.dataset.g10B01B06EditorialNumbered!=="true")return;
+ const set=article.querySelector(".tabbed-set");
+ const blocks=[...(set?.querySelectorAll(":scope > .tabbed-content > .tabbed-block")||[])];
+ if(blocks.length!==4)return; // fail closed outside the approved Golden layout
+ for(const table of article.querySelectorAll("table.thpt-g10-knowledge-table")){
+  const rows=[...table.querySelectorAll("tbody tr")];
+  const header=table.querySelector("thead tr");
+  if(!header||!rows.length)continue;
+  [...header.cells].forEach((cell,column)=>{
+   // Explanatory prose is left-aligned in both header and values;
+   // compact numbers, coordinates, symbols and formulas are centred.
+   const prose=rows.some(row=>{
+    const value=row.cells[column]?.textContent.replace(/\\s+/g," ").trim()||"";
+    return value.length>24 && /\\p{L}{3,}\\s+\\p{L}{2,}/u.test(value);
+   });
+   for(const row of [header,...rows]){
+    row.cells[column]?.classList.toggle("thpt-g10-table-prose",prose);
+   }
+  });
+ }
+ const isLead=(node,pattern)=>node?.tagName==="P" &&
+  node.firstElementChild?.tagName==="STRONG" &&
+  pattern.test(node.firstElementChild.textContent.trim());
+ for(const title of blocks[2].querySelectorAll(":scope > h3")){
+  let current=title.nextElementSibling;
+  while(current && current.tagName!=="H3" && !isLead(current,/^Lời giải(?:\\s+theo vùng)?\\./iu))
+   current=current.nextElementSibling;
+  if(!current||current.tagName==="H3")continue;
+  const box=document.createElement("div");
+  box.className="thpt-g10-example-solution";
+  box.setAttribute("role","group");
+  box.setAttribute("aria-label","Lời giải ví dụ");
+  current.before(box);
+  while(current && current.tagName!=="H3" &&
+        !isLead(current,/^(?:Kiểm lại|Kết luận)\\./iu)){
+   const next=current.nextElementSibling;
+   box.append(current);
+   current=next;
+  }
+ }
+ article.dataset.g10B01B06SolutionPolished="true";
+};
 const run=()=>{
  const path=location.pathname;
  const match=path.match(/^(.*\/thpt-preview\/sgk\/)(?:(lop-(11|12))\/)?chuong-([ivx]+)\/bai-(\d+)\/?$/);
@@ -66,7 +112,7 @@ const run=()=>{
  if(!article)return;
  if(grade===10){
   article.classList.add("thpt-g10-knowledge-ap1");
-  if(lesson<=6)numberG10FirstSix(article);
+  if(lesson<=6){numberG10FirstSix(article);polishG10FirstSix(article);}
  }
  if(article.querySelector("[data-sgk-lesson-nav]"))return;
  const root=match[1]+(grade===10?"":"lop-"+grade+"/");
