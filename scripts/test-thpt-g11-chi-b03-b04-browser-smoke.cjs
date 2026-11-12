@@ -1,4 +1,5 @@
 "use strict";
+const {revealModelBFigure}=require("./test-thpt-g11-modelb-figure-tab.cjs");
 const assert=require("node:assert/strict"),{chromium}=require("playwright");
 (async()=>{
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
@@ -23,7 +24,7 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
      const imgs=page.locator(".thpt-r4-probability-figure img");
      assert.equal(await imgs.count(),lesson===3?4:0,"G11 B03 figures vs B04 text-only explanation");
      for(let i=0;i<await imgs.count();i++){
-      const image=imgs.nth(i);await image.scrollIntoViewIfNeeded();
+      const image=imgs.nth(i);await revealModelBFigure(page,image);await image.scrollIntoViewIfNeeded();
       await page.waitForFunction((n)=>{const el=document.querySelectorAll(".thpt-r4-probability-figure img")[n];return !!el&&el.complete&&el.naturalWidth>0},i,{timeout:20000});
       const dim=await image.evaluate(el=>({child:el.getBoundingClientRect().width,parent:el.parentElement.getBoundingClientRect().width}));
       assert(dim.child<=dim.parent+2,"G11 figure overflow at "+viewport.width);

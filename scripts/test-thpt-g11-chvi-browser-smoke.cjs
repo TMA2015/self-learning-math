@@ -1,4 +1,5 @@
 "use strict";
+const {revealModelBFigure}=require("./test-thpt-g11-modelb-figure-tab.cjs");
 // G11 ChVI Golden R4 browser learner/AP/Q16 QA. Real physical Safari P2 remains OPEN.
 const assert=require("node:assert/strict"),{chromium}=require("playwright");
 (async()=>{
@@ -21,7 +22,7 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
      assert.equal(await page.locator("[data-thpt-help-id]").count(),2,"Two D6 B"+n);
      const fig=page.locator(".thpt-r4-probability-figure img");
      assert.equal(await fig.count(),1,"One source SVG B"+n);
-     await fig.scrollIntoViewIfNeeded();
+     await revealModelBFigure(page,fig);await fig.scrollIntoViewIfNeeded();
      await page.waitForFunction(el=>el.complete&&el.naturalWidth>0,await fig.elementHandle(),{timeout:20000});
      const widths=await fig.evaluate(el=>[el.getBoundingClientRect().width,el.parentElement.getBoundingClientRect().width]);
      assert(widths[0]<=widths[1]+2,"Figure overflow B"+n+" "+viewport.width);

@@ -1,4 +1,5 @@
 "use strict";
+const {revealModelBFigure}=require("./test-thpt-g11-modelb-figure-tab.cjs");
 // RELEASE candidate browser regression only: emulated viewports are NOT physical Safari P2.
 const assert=require("node:assert/strict"),{chromium}=require("playwright");
 (async()=>{
@@ -35,7 +36,7 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
      }
      const image=page.locator(".thpt-r4-probability-figure img");
      assert.equal(await image.count(),1,"One source-locked D5 SVG per lesson");
-     await image.scrollIntoViewIfNeeded();
+     await revealModelBFigure(page,image);await image.scrollIntoViewIfNeeded();
      await page.waitForFunction(()=>{const el=document.querySelector(".thpt-r4-probability-figure img");return !!el&&el.complete&&el.naturalWidth>0},null,{timeout:20000});
      const dims=await image.evaluate(el=>({child:el.getBoundingClientRect().width,parent:el.parentElement.getBoundingClientRect().width}));
      assert(dims.child<=dims.parent+2,"SVG must fit "+viewport.width);

@@ -1,4 +1,5 @@
 "use strict";
+const {revealModelBFigure}=require("./test-thpt-g11-modelb-figure-tab.cjs");
 // RELEASE Chromium viewport smoke; physical iPhone/iPad Safari P2 is separate.
 const assert=require("node:assert/strict"),{chromium}=require("playwright");
 (async()=>{
@@ -19,7 +20,7 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
      response=await page.goto(base+"bai-"+lesson+"/",{waitUntil:"networkidle"});
      assert(response?.ok(),"B0"+lesson+" lesson");
      if(lesson===9){
-      const localHeads=(await page.locator("h3").allTextContents()).slice(0,6).map(x=>x.trim());
+      const localHeads=(await page.locator("h3").allTextContents()).map(x=>x.trim()).filter(x=>x.startsWith("1."));
       assert.deepEqual(localHeads,["1.1. Giá trị đại diện và trung bình","1.2. Tần số tích lũy","1.3. Trung vị (nội suy)","1.4. Tứ phân vị","1.5. Mốt (nội suy, điều kiện SGK)","1.6. Kiểm tra ngữ cảnh"],"B09 six learner-visible headings start at 1 and appear separately");
      }
      const first=page.locator('[data-ped-first-try="1"]');
@@ -29,7 +30,7 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
      const img=page.locator(".thpt-r4-probability-figure img");
      assert.equal(await img.count(),lesson===8?1:2);
      for(let i=0;i<await img.count();i++){
-      const el=img.nth(i);await el.scrollIntoViewIfNeeded();
+      const el=img.nth(i);await revealModelBFigure(page,el);await el.scrollIntoViewIfNeeded();
       await page.waitForFunction(element=>element.complete&&element.naturalWidth>0,await el.elementHandle(),{timeout:20000});
       const [width,parent]=await el.evaluate(element=>[element.getBoundingClientRect().width,element.parentElement.getBoundingClientRect().width]);
       assert(width<=parent+2,"SVG fits "+viewport.width);
