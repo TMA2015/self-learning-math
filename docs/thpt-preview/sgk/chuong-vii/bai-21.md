@@ -37,7 +37,7 @@
 
     **Bản chất trước công thức:** Phương trình đường tròn chỉ là phát biểu IM=R viết bằng tọa độ. Bình phương hai vế thu điều kiện khoảng cách, không phải công thức xuất hiện từ đâu đó.
 
-    **Hướng dẫn đọc hình:** Trên hình đánh dấu tâm I, bán kính IM tới một điểm bất kỳ M trên vành; đổi M quanh vành thì IM luôn giữ nguyên.
+    **Tự phác hình minh họa:** Trên hình đánh dấu tâm I, bán kính IM tới một điểm bất kỳ M trên vành; đổi M quanh vành thì IM luôn giữ nguyên.
 
     Biết tâm I(a,b), R>0, viết (x-a)²+(y-b)²=R². Kiểm tâm khi thế vào vế trái cho 0 và điều kiện R>0; không nhầm R với R².
 
@@ -80,7 +80,7 @@
 
     **Bản chất trước công thức:** Hoàn thành bình phương chuyển điều kiện đại số thành khoảng cách tới một tâm. Nếu kết quả R²≤0 thì không tạo được đường tròn bán kính dương.
 
-    **Hướng dẫn đọc hình:** Đặt tâm I lên trục tọa độ sau khi hoàn thành bình phương; so sánh hai tình huống R²>0 (vành tròn) và R²=0 (một điểm).
+    **Tự phác hình minh họa:** Đặt tâm I lên trục tọa độ sau khi hoàn thành bình phương; so sánh hai tình huống R²>0 (vành tròn) và R²=0 (một điểm).
 
     Nhóm x²+Dx và y²+Ey, thêm bớt bình phương nửa hệ số rồi kiểm R²>0 trước khi lấy căn. Với R²<0 phương trình vô nghiệm thực.
 
@@ -123,7 +123,9 @@
 
     **Bản chất trước công thức:** Tại M trên đường tròn, bán kính IM vuông góc tiếp tuyến; vì vậy chính IM là một pháp tuyến của tiếp tuyến. Điều kiện 'M nằm trên đường tròn' là bắt buộc.
 
-    **Hướng dẫn đọc hình:** Trên hình vẽ tròn tâm I, bán kính IM và đường thẳng chạm tại M; góc IM với tiếp tuyến là 90°.
+    <figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="../../../../assets/images/thpt/G10_B21_CIRCLE_TANGENT_R02.svg" loading="lazy" alt="Đường tròn (x-2)²+(y-1)²=9 tâm I(2,1), tiếp tuyến x=5 tại T(5,1)"><figcaption>Đường tròn \((x-2)^2+(y-1)^2=9\) có tâm \(I(2,1)\), bán kính 3. Điểm \(T(5,1)\) nằm trên đường tròn và tiếp tuyến tại \(T\) là \(x=5\).</figcaption></figure>
+
+    **Tự phác hình minh họa:** Trên hình vẽ tròn tâm I, bán kính IM và đường thẳng chạm tại M; góc IM với tiếp tuyến là 90°.
 
     Bước 1 thử IM²=R²; bước 2 lấy n=IM khác 0; bước 3 viết n·MX=0 rồi kiểm khoảng cách từ I đến đường bằng R.
 
@@ -166,7 +168,7 @@
 
     **Bản chất trước công thức:** Tâm đường tròn cách đều các điểm đã cho. Giao hai đường trung trực cho tâm nếu ba điểm không thẳng hàng; khi ba điểm thẳng hàng thì không có đường tròn đi qua cả ba.
 
-    **Hướng dẫn đọc hình:** Vẽ tam giác ABC và hai đường trung trực AB, AC; điểm giao của hai đường là tâm I có IA=IB=IC.
+    **Tự phác hình minh họa:** Vẽ tam giác ABC và hai đường trung trực AB, AC; điểm giao của hai đường là tâm I có IA=IB=IC.
 
     Kiểm ba điểm không thẳng hàng; tìm giao hai đường trung trực rồi tính R từ một điểm. Không chọn tùy ý một tâm chỉ dựa hai điểm.
 
@@ -209,7 +211,7 @@
 
     **Bản chất trước công thức:** Nếu h=d(I,d)>R thì lối đi ở ngoài vùng; h=R thì chạm một điểm; h<R thì cắt đường tròn tại hai điểm. Không cần giải hệ khi chỉ hỏi số giao điểm.
 
-    **Hướng dẫn đọc hình:** Vẽ ba đường ở khoảng cách tâm lớn hơn, bằng, nhỏ hơn bán kính; đếm số giao điểm lần lượt 0,1,2.
+    **Tự phác hình minh họa:** Vẽ ba đường ở khoảng cách tâm lớn hơn, bằng, nhỏ hơn bán kính; đếm số giao điểm lần lượt 0,1,2.
 
     Tính h=|axI+byI+c|/√(a²+b²), so với R. Phải biết đường có n khác 0 và đường tròn R>0.
 
@@ -261,7 +263,6 @@
 
     **Cách đọc hình.** Chỉ I(2,1), đoạn IT dài 3 nằm ngang và tiếp tuyến tại T(5,1) thẳng đứng; bán kính vuông góc tiếp tuyến. Hình có cùng phương trình đường tròn được ghi ở chú thích.
 
-    <figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="../../../../assets/images/thpt/G10_B21_CIRCLE_TANGENT_R02.svg" loading="lazy" alt="Đường tròn (x-2)²+(y-1)²=9 tâm I(2,1), tiếp tuyến x=5 tại T(5,1)"><figcaption>Đường tròn \((x-2)^2+(y-1)^2=9\) có tâm \(I(2,1)\), bán kính 3. Điểm \(T(5,1)\) nằm trên đường tròn và tiếp tuyến tại \(T\) là \(x=5\).</figcaption></figure>
 
 
     Tại điểm \(M(x_M;y_M)\) **thuộc đường tròn**, tiếp tuyến vuông góc với bán kính \(IM\):

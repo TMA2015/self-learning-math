@@ -34,7 +34,9 @@
 
     Quy tắc cộng đếm các khả năng thay thế nhau: thực hiện cách A HOẶC cách B. Chỉ cộng số cách khi hai nhánh không có phương án trùng nhau, nếu có phải loại phần giao.
 
-    **Hướng dẫn đọc hình/sơ đồ:** Vẽ sơ đồ một nút 'Chọn phương tiện' tách thành nhánh 3 tuyến buýt và nhánh 4 tuyến tàu; mỗi lựa chọn kết thúc ở đúng một nhánh.
+    <figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="../../../../assets/images/thpt/G10_B23_ADD_MULTIPLY_CHOICES_R02.svg" loading="lazy" alt="Chọn một môn giữa nhóm 4 và nhóm 3 có 7 cách; chọn một môn ở mỗi nhóm có 12 cặp"><figcaption>Quy tắc cộng \(4+3=7\) áp dụng cho hai nhóm lựa chọn rời nhau. Quy tắc nhân \(4\cdot3=12\) áp dụng khi một kết quả phải hoàn tất cả hai bước.</figcaption></figure>
+
+    **Tự dựng sơ đồ minh họa:** Vẽ sơ đồ một nút 'Chọn phương tiện' tách thành nhánh 3 tuyến buýt và nhánh 4 tuyến tàu; mỗi lựa chọn kết thúc ở đúng một nhánh.
 
     **Lý do chọn phương pháp, điều kiện và giới hạn:** Kiểm xem các nhóm có giao nhau không; nếu không, lấy m+n. Nếu có, dùng m+n−phần giao hoặc chia thành nhóm rời.
 
@@ -74,7 +76,7 @@
 
     Quy tắc nhân đếm các đường đi hoàn chỉnh qua nhiều bước: mỗi lựa chọn của bước trước có số lựa chọn tiếp theo tương ứng; khi cùng số cách, tổng số là tích.
 
-    **Hướng dẫn đọc hình/sơ đồ:** Vẽ cây 4 nhánh loại bánh, mỗi nhánh rẽ ra 3 loại nhân; đếm 12 lá cuối của 12 suất ăn.
+    **Tự dựng sơ đồ minh họa:** Vẽ cây 4 nhánh loại bánh, mỗi nhánh rẽ ra 3 loại nhân; đếm 12 lá cuối của 12 suất ăn.
 
     **Lý do chọn phương pháp, điều kiện và giới hạn:** Tìm các bước 'và' phải làm đủ; ghi số khả năng mỗi bước, kiểm xem chúng có phụ thuộc lựa chọn trước không, rồi nhân nếu cố định.
 
@@ -114,7 +116,7 @@
 
     Đếm một số là hoàn tất hai bước hàng chục → hàng đơn vị; điều kiện 'không lặp' làm số lựa chọn bước thứ hai phụ thuộc chữ số đã chọn, nhưng còn đúng một số lượng bằng nhau cho mọi chọn ở bước đầu.
 
-    **Hướng dẫn đọc hình/sơ đồ:** Vẽ cây hàng chục có nhánh 1,2,3; từ mỗi nhánh ghi những chữ số hàng đơn vị chưa dùng trong 0,1,2,3.
+    **Tự dựng sơ đồ minh họa:** Vẽ cây hàng chục có nhánh 1,2,3; từ mỗi nhánh ghi những chữ số hàng đơn vị chưa dùng trong 0,1,2,3.
 
     **Lý do chọn phương pháp, điều kiện và giới hạn:** Chọn hàng chục trước (loại 0), rồi hàng đơn vị (loại chữ số đã chọn); nhân số cách. Nếu bài có điều kiện chẵn/lẻ, cần chia nhánh theo chữ số tận cùng trước.
 
@@ -154,7 +156,7 @@
 
     Nếu đếm số chẵn tạo từ các chữ số cho trước, chữ số hàng đơn vị quyết định các lựa chọn ở hàng chục; chia thành những trường hợp không giao nhau rồi cộng kết quả của từng nhánh.
 
-    **Hướng dẫn đọc hình/sơ đồ:** Vẽ cây 'hàng đơn vị=0' và 'hàng đơn vị=2'; trên mỗi nhánh ghi các hàng chục hợp lệ để thấy số lựa chọn 3 và 2 khác nhau.
+    **Tự dựng sơ đồ minh họa:** Vẽ cây 'hàng đơn vị=0' và 'hàng đơn vị=2'; trên mỗi nhánh ghi các hàng chục hợp lệ để thấy số lựa chọn 3 và 2 khác nhau.
 
     **Lý do chọn phương pháp, điều kiện và giới hạn:** Chọn điều kiện khóa trước (ví dụ chữ số cuối của số chẵn), tách trường hợp rời nhau, nhân trong mỗi trường hợp rồi cộng các nhánh. Không nhân máy móc một số lượng cố định nếu phụ thuộc.
 
@@ -188,7 +190,6 @@
 
     **Cách đọc hình.** Bên trái chọn **một** môn từ hai nhóm không trùng: 4+3. Bên phải chọn **một môn mỗi nhóm**: một kết quả là một cặp, nên 4×3.
 
-    <figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="../../../../assets/images/thpt/G10_B23_ADD_MULTIPLY_CHOICES_R02.svg" loading="lazy" alt="Chọn một môn giữa nhóm 4 và nhóm 3 có 7 cách; chọn một môn ở mỗi nhóm có 12 cặp"><figcaption>Quy tắc cộng \(4+3=7\) áp dụng cho hai nhóm lựa chọn rời nhau. Quy tắc nhân \(4\cdot3=12\) áp dụng khi một kết quả phải hoàn tất cả hai bước.</figcaption></figure>
 
 
     **Quy tắc cộng.** Nếu một lựa chọn được thực hiện theo đúng một trong các trường hợp A1,...,Ak **đôi một không giao nhau**, số cách là \(m_1+\cdots+m_k\). Khi các trường hợp chồng lấn, cần loại trùng hoặc chia lại thành các trường hợp rời nhau; không cộng máy móc.

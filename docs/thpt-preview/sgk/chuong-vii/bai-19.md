@@ -37,7 +37,9 @@
 
     **Bản chất trước công thức:** Vectơ chỉ phương nằm dọc đường; pháp tuyến vuông góc đường. Cùng một đường thẳng có vô số vectơ cùng phương hoặc pháp tuyến khác nhau bởi bội khác 0.
 
-    **Hướng dẫn đọc hình:** Hãy tưởng tượng một mũi tên chạy dọc đường thẳng và một mũi tên dựng vuông góc với nó; chỉ ra trên hình cái nào giữ hướng, cái nào đo độ lệch khỏi đường.
+    <figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="../../../../assets/images/thpt/G10_B19_LINE_NORMAL_R02.svg" loading="lazy" alt="Đường 2x+y=6 qua P(1,4), vectơ chỉ phương (1,-2) và pháp tuyến (2,1)"><figcaption>Đường thẳng \(d:2x+y=6\) có một vectơ chỉ phương \((1,-2)\) và một pháp tuyến \((2,1)\). Hai vectơ vuông góc vì tích vô hướng bằng 0.</figcaption></figure>
+
+    **Tự phác hình minh họa:** Hãy tưởng tượng một mũi tên chạy dọc đường thẳng và một mũi tên dựng vuông góc với nó; chỉ ra trên hình cái nào giữ hướng, cái nào đo độ lệch khỏi đường.
 
     Muốn đổi giữa hai loại vectơ, xoay tọa độ 90 độ: n=(a,b) khác 0 thì u=(-b,a). Kiểm tra n·u=0, không dùng vectơ (0,0).
 
@@ -80,7 +82,7 @@
 
     **Bản chất trước công thức:** M thuộc đường qua A có pháp tuyến n khi độ dịch chuyển AM không có thành phần theo n: n·AM=0. Đây là nguồn gốc phương trình, không phải một công thức học thuộc.
 
-    **Hướng dẫn đọc hình:** Hướng dẫn đọc đường qua A: M chạy dọc đường, còn n luôn dựng vuông góc; hình chiếu của AM lên n bằng 0.
+    **Tự phác hình minh họa:** Hướng dẫn đọc đường qua A: M chạy dọc đường, còn n luôn dựng vuông góc; hình chiếu của AM lên n bằng 0.
 
     Từ điểm A(x0,y0), n=(a,b)≠0, viết a(x-x0)+b(y-y0)=0 rồi khai triển. Kiểm lại điểm A và độ dài pháp tuyến khác 0.
 
@@ -123,7 +125,7 @@
 
     **Bản chất trước công thức:** Điểm trên đường thẳng có dạng M=A+t·u với t thực. Tham số t không nhất thiết là thời gian; nó chỉ là hệ số quét các vị trí.
 
-    **Hướng dẫn đọc hình:** Tưởng tượng trượt từ A theo mũi tên u: t=0 đứng ở A, t=1 tiến một u, t âm đi ngược chiều.
+    **Tự phác hình minh họa:** Tưởng tượng trượt từ A theo mũi tên u: t=0 đứng ở A, t=1 tiến một u, t âm đi ngược chiều.
 
     Chọn một điểm A và một vectơ chỉ phương u≠0, đặt x=xA+tux, y=yA+tuy. Kiểm t=0 và t=1, tránh nhầm t là một tọa độ.
 
@@ -166,7 +168,7 @@
 
     **Bản chất trước công thức:** Hai điểm phân biệt xác định một hướng AB không bằng 0; từ đó chọn được pháp tuyến và viết được phương trình.
 
-    **Hướng dẫn đọc hình:** Đặt A và B trên hình; chỉ vectơ AB chạy dọc đường, còn pháp tuyến dựng ngang với nó.
+    **Tự phác hình minh họa:** Đặt A và B trên hình; chỉ vectơ AB chạy dọc đường, còn pháp tuyến dựng ngang với nó.
 
     Kiểm A≠B, tính AB, chọn n vuông góc, viết n·AM=0 và thử cả A,B. Nếu A=B thì dữ kiện không xác định một đường duy nhất.
 
@@ -209,7 +211,7 @@
 
     **Bản chất trước công thức:** Phương trình đường thẳng là điều kiện ràng buộc tọa độ; 'thuộc' không dựa vào nhìn gần đúng mà là thỏa chính xác điều kiện.
 
-    **Hướng dẫn đọc hình:** Với hai điểm trên mặt phẳng, thử điểm được đánh dấu trên đường và điểm lệch đường; khoảng cách thị giác chỉ gợi ý, phép thế quyết định.
+    **Tự phác hình minh họa:** Với hai điểm trên mặt phẳng, thử điểm được đánh dấu trên đường và điểm lệch đường; khoảng cách thị giác chỉ gợi ý, phép thế quyết định.
 
     Thế (xM,yM) vào ax+by+c; bằng 0 thì M thuộc, khác 0 thì không. Không chia hay chuyển vế làm mất dấu.
 
@@ -252,7 +254,7 @@
 
     **Bản chất trước công thức:** Giao điểm phải thỏa đồng thời hai phương trình; vuông góc là quan hệ hướng, không phụ thuộc vị trí giao.
 
-    **Hướng dẫn đọc hình:** Vẽ hai đường cắt nhau và đánh dấu giao điểm; phân biệt tính giao điểm và kiểm góc vuông của hai hướng.
+    **Tự phác hình minh họa:** Vẽ hai đường cắt nhau và đánh dấu giao điểm; phân biệt tính giao điểm và kiểm góc vuông của hai hướng.
 
     Giải hệ trước để có tọa độ giao; kiểm bằng cách thế lại cả hai. Sau đó dùng tích vô hướng hai pháp tuyến để kết luận vuông góc.
 
@@ -295,7 +297,7 @@
 
     **Bản chất trước công thức:** Một quan hệ y=mx+b mô tả mỗi khi x tăng một đơn vị, y tăng m đơn vị; b là giá trị tại x=0. Mô hình chỉ đáng tin trong miền dữ liệu phù hợp.
 
-    **Hướng dẫn đọc hình:** Trên hệ trục có hai chấm dữ liệu, giải thích m là 'độ tăng đứng / độ tăng ngang'; cần ghi đơn vị trên cả hai trục.
+    **Tự phác hình minh họa:** Trên hệ trục có hai chấm dữ liệu, giải thích m là 'độ tăng đứng / độ tăng ngang'; cần ghi đơn vị trên cả hai trục.
 
     Tính m=(y2-y1)/(x2-x1) khi x2≠x1; thay một điểm để tìm b, sau đó kiểm điểm còn lại và ghi miền ứng dụng.
 
@@ -331,7 +333,6 @@
 
     **Cách đọc hình.** Quan sát vectơ chỉ phương \(\vec u=(1,-2)\) đi dọc đường \(2x+y=6\), còn \(\vec n=(2,1)\) vuông góc với đường. Điểm \(P(1,4)\) nằm trên đường vì \(2\cdot1+4=6\).
 
-    <figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="../../../../assets/images/thpt/G10_B19_LINE_NORMAL_R02.svg" loading="lazy" alt="Đường 2x+y=6 qua P(1,4), vectơ chỉ phương (1,-2) và pháp tuyến (2,1)"><figcaption>Đường thẳng \(d:2x+y=6\) có một vectơ chỉ phương \((1,-2)\) và một pháp tuyến \((2,1)\). Hai vectơ vuông góc vì tích vô hướng bằng 0.</figcaption></figure>
 
 
     Đường thẳng \(\Delta\) nhận **vectơ pháp tuyến** \(\vec n=(a;b)\ne(0;0)\) khi \(\vec n\) vuông góc với đường thẳng. Đường thẳng nhận **vectơ chỉ phương** \(\vec u=(u_1;u_2)\ne(0;0)\) khi \(\vec u\) song song với đường thẳng.

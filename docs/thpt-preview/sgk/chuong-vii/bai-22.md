@@ -37,7 +37,7 @@
 
     **Bản chất trước công thức:** Tổng MF1+MF2=2a tạo ra elip. Với dạng x²/a²+y²/b²=1 có a>b>0, hai tiêu điểm cách tâm c với c²=a²−b², nên c<a.
 
-    **Hướng dẫn đọc hình:** Vẽ elip dẹt theo trục Ox, đánh dấu hai đỉnh (±a,0), hai tiêu điểm (±c,0) nằm bên trong đường bao; phân biệt c và b.
+    **Tự phác hình minh họa:** Vẽ elip dẹt theo trục Ox, đánh dấu hai đỉnh (±a,0), hai tiêu điểm (±c,0) nằm bên trong đường bao; phân biệt c và b.
 
     Đọc mẫu lớn hơn là a² khi trục lớn nằm trên Ox, tìm b², tính c²=a²−b² rồi viết tiêu điểm. **Tâm sai e=c/a là phần nâng cao, không dùng làm Core thay cho mục tiêu tiêu điểm/trục.**
 
@@ -80,7 +80,7 @@
 
     **Bản chất trước công thức:** Dạng x²/a²−y²/b²=1 có hai nhánh mở theo ±Ox; c²=a²+b² nên tiêu điểm xa tâm hơn các đỉnh (c>a).
 
-    **Hướng dẫn đọc hình:** Trên hình đánh dấu hai nhánh mở trái và phải, các đỉnh ±a và tiêu điểm ±c xa hơn; không nối hai nhánh thành oval như elip.
+    **Tự phác hình minh họa:** Trên hình đánh dấu hai nhánh mở trái và phải, các đỉnh ±a và tiêu điểm ±c xa hơn; không nối hai nhánh thành oval như elip.
 
     Đọc đúng dấu trừ và vị trí mẫu dưới x²: a² ở mẫu số hạng dương; b² mẫu số hạng âm; tìm c> a từ a²+b².
 
@@ -123,7 +123,7 @@
 
     **Bản chất trước công thức:** Khi |x| lớn, hệ thức y²=(b²/a²)(x²−a²) cho |y/x| tiến gần b/a. Hai đường y=±(b/a)x là tiệm cận, không phải các nhánh thực của hypebol.
 
-    **Hướng dẫn đọc hình:** Vẽ hai đường chéo qua O và hai nhánh hypebol tiến sát chúng nhưng không chạm ở vùng xa; nhấn mạnh tiệm cận không phải trục đối xứng x/y.
+    **Tự phác hình minh họa:** Vẽ hai đường chéo qua O và hai nhánh hypebol tiến sát chúng nhưng không chạm ở vùng xa; nhấn mạnh tiệm cận không phải trục đối xứng x/y.
 
     Chỉ áp dụng công thức y=±(b/a)x cho dạng chính tắc tâm O, trục thực Ox. Trường hợp tịnh tiến/đổi trục cần biến đổi trước.
 
@@ -166,7 +166,9 @@
 
     **Bản chất trước công thức:** Điểm M trên parabol có MF bằng khoảng cách vuông góc từ M đến đường chuẩn. Với y²=2px, p>0, tiêu điểm F(p/2,0) và đường chuẩn x=−p/2; **không** lấy F(p,0).
 
-    **Hướng dẫn đọc hình:** Vẽ đỉnh O, tiêu điểm F ở bên phải và đường chuẩn ở bên trái cách O cùng p/2; từ M trên đường cong, so hai đoạn dài bằng nhau.
+    <figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="../../../../assets/images/thpt/G10_B22_PARABOLA_FOCUS_R02.svg" loading="lazy" alt="Parabol y bình phương bằng 4x, tiêu điểm F(1,0), đường chuẩn x=-1, đỉnh O(0,0)"><figcaption>Với \(y^2=4x\) và quy ước \(y^2=2px\), ta có \(p=2\), tiêu điểm \(F(1,0)\) và đường chuẩn \(x=-1\). Hình chỉ minh họa phương trình này.</figcaption></figure>
+
+    **Tự phác hình minh họa:** Vẽ đỉnh O, tiêu điểm F ở bên phải và đường chuẩn ở bên trái cách O cùng p/2; từ M trên đường cong, so hai đoạn dài bằng nhau.
 
     Từ hệ số của x suy 2p, tính p rồi lấy p/2 cho tiêu điểm và đường chuẩn. Phải dùng đúng một quy ước công thức cho cả hai.
 
@@ -209,7 +211,7 @@
 
     **Bản chất trước công thức:** Giao điểm là nghiệm chung; số nghiệm thực phụ thuộc vị trí, chứ không được kết luận luôn có hai giao điểm.
 
-    **Hướng dẫn đọc hình:** Vẽ elip và trục Oy đi qua hai điểm trên và dưới; so với đường ngoài elip có thể không có giao điểm.
+    **Tự phác hình minh họa:** Vẽ elip và trục Oy đi qua hai điểm trên và dưới; so với đường ngoài elip có thể không có giao điểm.
 
     Thế phương trình đường vào conic, giải phương trình còn lại và kiểm từng nghiệm thực. Nghiệm hình học phải thỏa tất cả điều kiện.
 
@@ -252,7 +254,7 @@
 
     **Bản chất trước công thức:** Tại một hoành độ x≥0, hai điểm biên của parabol có tung độ ±√(2px); độ rộng theo phương vuông góc trục là hiệu hai tung độ, bằng 2√(2px).
 
-    **Hướng dẫn đọc hình:** Vẽ parabol mở phải, đoạn thẳng đứng tại x=5 giao hai nhánh; chiều rộng là khoảng cách từ y âm đến y dương, không phải chỉ một tung độ.
+    **Tự phác hình minh họa:** Vẽ parabol mở phải, đoạn thẳng đứng tại x=5 giao hai nhánh; chiều rộng là khoảng cách từ y âm đến y dương, không phải chỉ một tung độ.
 
     Giải y²=2px tại x cụ thể, lấy cả ±y rồi trừ hai tung độ. Gắn đơn vị và chỉ dùng trong phạm vi mô hình thực tế phù hợp.
 
@@ -295,7 +297,7 @@
 
     **Bản chất trước công thức:** Lấy tâm nền làm O, Ox dọc nền, Oy thẳng đứng. Mái **nửa trên** elip có `y≥0`, chiều rộng toàn phần `2a_x`, cao tại tâm `b_y`. Công thức tính trục theo hướng x/y là `x²/a_x²+y²/b_y²=1`; với chiều cao ở vị trí x, chỉ chọn **nghiệm y≥0**. Với thiết bị hình chữ nhật đặt giữa, cần kiểm độ cao tại **hai mép trên** chứ không chỉ tại tâm.  
 
-    **Hướng dẫn đọc hình:** Vẽ hai chân mái tại `(-a_x;0)` và `(a_x;0)`, đỉnh `(0;b_y)`; hình chữ nhật có mép x=±w/2, chiều cao h. Độ hở tối thiểu đo theo Oy từ đỉnh hai góc của vật lên mái. Đồ thị nửa elip thấp dần khi |x| tăng trong `[0,a_x]`.  
+    **Tự phác hình minh họa:** Vẽ hai chân mái tại `(-a_x;0)` và `(a_x;0)`, đỉnh `(0;b_y)`; hình chữ nhật có mép x=±w/2, chiều cao h. Độ hở tối thiểu đo theo Oy từ đỉnh hai góc của vật lên mái. Đồ thị nửa elip thấp dần khi |x| tăng trong `[0,a_x]`.  
 
     **Vì sao chọn phương pháp và giới hạn:** Dựng **trục theo số đo vật lý trước**, dùng phương trình elip để tính mái tại mép; kiểm `|x|≤a_x`, `y≥0` và yêu cầu an toàn. Mô hình giả sử mặt cắt phẳng, đối xứng và vật đặt chính giữa; không suy tính an toàn 3D nếu dữ kiện chỉ có mặt cắt.  
 
@@ -343,7 +345,7 @@
 
     **Bản chất trước công thức:** Với trạm A và B cùng truyền với tốc độ v tại cùng thời điểm, nếu tín hiệu B đến trước A một khoảng Δt>0 thì **`PA−PB=vΔt>0`**. Mỗi điểm trên nhánh phía B **gần B hơn**; việc chọn nhánh không được suy từ dấu “−” trong phương trình chính tắc (phương trình chứa cả hai nhánh).  
 
-    **Hướng dẫn đọc hình:** O trung điểm AB; đặt A bên trái x<0, B bên phải x>0. Hai đỉnh `(±a,0)` nằm trong hai tiêu điểm `(±c,0)` vì `0<a<c`. Nhánh phải là phía gần B; không nối hai nhánh thành oval.  
+    **Tự phác hình minh họa:** O trung điểm AB; đặt A bên trái x<0, B bên phải x>0. Hai đỉnh `(±a,0)` nằm trong hai tiêu điểm `(±c,0)` vì `0<a<c`. Nhánh phải là phía gần B; không nối hai nhánh thành oval.  
 
     **Vì sao chọn phương pháp và giới hạn:** Dùng thời gian→hiệu quãng đường **trước** khi lập hypebol; phải kiểm **`0<vΔt<AB`** để hypebol không suy biến và có vị trí phù hợp. Một cặp trạm chỉ cho **một nhánh quỹ tích**, không xác định duy nhất điểm nhận; cần dữ liệu thêm để định vị.  
 
@@ -405,7 +407,6 @@
 
     **Cách đọc hình.** Trên parabol y²=4x, đỉnh là O, F(1,0), đường chuẩn x=-1; điểm trên đường cách đều tiêu điểm và đường chuẩn.
 
-    <figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="../../../../assets/images/thpt/G10_B22_PARABOLA_FOCUS_R02.svg" loading="lazy" alt="Parabol y bình phương bằng 4x, tiêu điểm F(1,0), đường chuẩn x=-1, đỉnh O(0,0)"><figcaption>Với \(y^2=4x\) và quy ước \(y^2=2px\), ta có \(p=2\), tiêu điểm \(F(1,0)\) và đường chuẩn \(x=-1\). Hình chỉ minh họa phương trình này.</figcaption></figure>
 
 
     Parabol có đỉnh \(O(0;0)\), tiêu điểm \(F(p/2;0)\), đường chuẩn \(x=-p/2\). Mọi điểm \(M\) trên parabol có khoảng cách đến tiêu điểm bằng khoảng cách đến đường chuẩn.
