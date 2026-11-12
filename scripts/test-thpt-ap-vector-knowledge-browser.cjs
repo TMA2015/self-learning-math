@@ -2,6 +2,8 @@
 "use strict";
 const assert=require("node:assert/strict");
 const {chromium}=require("playwright");
+const {chivEditorialReceiptRows}=require("./thpt-q18-g10-source-receipt.cjs");
+const latest=chivEditorialReceiptRows();
 const cases=[
  {lesson:7,headings:["1. Vectơ và độ dài","2. Phương và hướng","3. Bằng nhau và ngược hướng","4. Vectơ-không theo SGK/SBT","5. Ứng dụng"]},
  {lesson:8,headings:["1. Quy tắc ba điểm (quy tắc tam giác)","2. Quy tắc hình bình hành","3. Vectơ đối và hiệu","4. Trung điểm và trọng tâm","5. Ứng dụng hợp lực"]},
@@ -17,7 +19,19 @@ const cases=[
      const res=await page.goto("http://127.0.0.1:8765/thpt-preview/sgk/chuong-iv/bai-"+item.lesson+"/",{waitUntil:"networkidle"});
      assert(res?.ok(),"Page B"+item.lesson+" not available");
      const headers=await page.locator(".md-content__inner h3").allInnerTexts();
-     for(const h of item.headings)assert(headers.some(x=>x.trim().startsWith(h)),"B"+item.lesson+" heading: "+h);
+     const corrected={
+       7:["2.1. Khái niệm vectơ","2.2. Hai vectơ cùng phương, cùng hướng, bằng nhau"],
+       8:["2.1. Tổng của hai vectơ","2.2. Hiệu của hai vectơ"],
+       10:["2.1. Tọa độ của vectơ","2.2. Biểu thức tọa độ của các phép toán vectơ"]
+     };
+     if(latest.has("B"+String(item.lesson).padStart(2,"0"))){
+       assert.deepEqual((await page.locator(".tabbed-content > .tabbed-block").nth(1)
+         .locator(":scope > h3").allInnerTexts()).map(x=>x.trim()),corrected[item.lesson],
+         "B"+item.lesson+" exact SGK original section headings after owner editorial correction");
+       assert.equal(await page.locator(".tabbed-content > .tabbed-block").nth(1)
+         .locator("details.question").count(),0,"No formative First Try in formal SGK");
+     }else for(const h of item.headings)
+       assert(headers.some(x=>x.trim().startsWith(h)),"B"+item.lesson+" historical heading: "+h);
      assert.equal(await page.locator(".md-content__inner h3").filter({hasText:"D1."}).count(),0,
        "Never display D1.x audit labels as lesson headings");
      const figures=page.locator(".thpt-r4-probability-figure img");
