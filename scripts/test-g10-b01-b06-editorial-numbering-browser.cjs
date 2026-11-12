@@ -17,7 +17,7 @@ const SHA={
 "docs/thpt-preview/sgk/chuong-iii/bai-6.md":"3a2f4392357b0a7155488ba2427fbb2dde0dde81"
 };
 const STYLES={
-"docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css":"515bd13d966a63ab4e22ee144a6c16de5af3cc6a",
+"docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css":"6f7a1266fc4b87f9df469e9d56540f18c13cc891",
 "docs/assets/stylesheets/site-design-system.css":"cede51cfff25ef4f6c612c894c81f4639625c32b",
 "docs/assets/stylesheets/thpt-r4-preview.css":"f46b7280965c226039093c408dc7f8e3e78001fa",
 "docs/assets/stylesheets/thpt-sgk-lesson-nav-v1.css":"4bf16bba1cd144f0a69c932d8ead24dd4534f4cb",
@@ -32,7 +32,7 @@ function checkSHA(){
  for(const [p,sha] of Object.entries({...SHA,...STYLES}))
   assert.equal(hash(fs.readFileSync(path.join(root,p))),sha,"DELTA_A violation, non-UI source/theme changed: "+p);
 }
-const names=["Khám phá kiến thức","Kiến thức sách giáo khoa","Ví dụ","Lỗi thường gặp"];
+const names=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
 const ch=n=>n<=2?"i":n<=4?"ii":"iii";
 const widths=[390,820,1440];
 (async()=>{
@@ -51,7 +51,7 @@ const widths=[390,820,1440];
      await page.waitForFunction(()=>document.querySelector(".md-content__inner")?.dataset.g10B01B06EditorialNumbered==="true",{timeout:15000});
      const tabs=page.locator(".md-content__inner .tabbed-set").first();
      const labels=tabs.locator(":scope > .tabbed-labels > label");
-     assert.deepEqual((await labels.allInnerTexts()).map(t=>t.trim()),names.map((v,i)=>(i+1)+". "+v),loc+" four section titles");
+     assert.deepEqual((await labels.allInnerTexts()).map(t=>t.trim()),names,loc+" four section titles");
      const groups=tabs.locator(":scope > .tabbed-content > .tabbed-block");
      assert.equal(await groups.count(),4,loc+" EXACT four original tab blocks");
      const discovery=groups.nth(0).locator("h3");
@@ -106,7 +106,7 @@ const widths=[390,820,1440];
        notesLast:sections[3].querySelectorAll("p.thpt-r4-footnote").length,
        noteText:[...root.querySelectorAll("p.thpt-r4-footnote")].map(p=>p.textContent).join(" "),
        disclosure:[...root.querySelectorAll("details.question")].every(d=>
-        d.querySelector("summary")?.textContent.trim()==="Mở đối chiếu sau khi tự làm" &&
+        d.querySelector("summary")?.textContent.trim()==="Đối chiếu" &&
         getComputedStyle(d).backgroundColor==="rgb(248, 250, 255)"),
        tip:[...root.querySelectorAll("details.tip")].every(d=>
         getComputedStyle(d).backgroundColor==="rgb(248, 250, 255)"),
@@ -114,7 +114,7 @@ const widths=[390,820,1440];
       };
      });
      assert.deepEqual(golden.fourHeadings,[
-      "1. Khám phá kiến thức","2. Kiến thức sách giáo khoa","3. Ví dụ",
+      "1. Khám phá kiến thức","2. Kiến thức SGK","3. Ví dụ",
       "4. Lỗi thường gặp và cách tự khắc phục"
      ],loc+" Golden HTML section bars and numbering");
      assert(golden.headers,loc+" numbered headings have pale background and blue border");
@@ -125,6 +125,55 @@ const widths=[390,820,1440];
       loc+" no redundant self-check disclaimer");
      assert(golden.disclosure&&golden.tip,loc+" subdued reference disclosure styling");
      assert.equal(golden.firstTabBg,"rgb(40, 77, 181)",loc+" HTML blue active tab styling");
+
+     // Match owner HTML Golden, not Material's smaller table/disclosure fonts.
+     const fontAudit=await page.evaluate(()=>{
+      const article=document.querySelector(".md-content__inner");
+      const reference=article.querySelector(".tabbed-block p");
+      const px=el=>el?parseFloat(getComputedStyle(el).fontSize):null;
+      const body=px(reference);
+      const cells=[...article.querySelectorAll(".tabbed-block table th,.tabbed-block table td")].map(px);
+      const folds=[...article.querySelectorAll(".tabbed-block details.question")];
+      const summaries=folds.map(d=>px(d.querySelector("summary")));
+      const inside=folds.flatMap(d=>[...d.querySelectorAll("p")].map(px));
+      const callouts=[...article.querySelectorAll(".thpt-r4-knowledge-conclusion")].map(x=>({
+       background:getComputedStyle(x).backgroundColor,
+       left:getComputedStyle(x).borderLeftColor
+      }));
+      const labels=[...article.querySelectorAll(".tabbed-set > .tabbed-labels > label")];
+      return {body,cells,summaries,inside,callouts,
+       buttons:labels.map(l=>({height:l.getBoundingClientRect().height,font:px(l),width:l.getBoundingClientRect().width}))};
+     });
+     assert(fontAudit.body>0,loc+" normal text reference measurable");
+     assert(fontAudit.cells.every(px=>Math.abs(px-fontAudit.body)<.6),loc+" all table fonts match normal text");
+     assert(fontAudit.summaries.every(px=>Math.abs(px-fontAudit.body)<.6),
+      loc+" Đối chiếu label same normal-text size");
+     assert(fontAudit.inside.every(px=>Math.abs(px-fontAudit.body)<.6),
+      loc+" revealed answer text same normal-text size");
+     assert(fontAudit.callouts.length>0&&fontAudit.callouts.every(c=>c.background==="rgb(255, 243, 213)"),
+      loc+" yellow-cream memory box from HTML reference");
+     assert(fontAudit.buttons.every(b=>b.height>=42&&b.height<=52),
+      loc+" compact original-HTML tab height");
+     // Actual TOC interaction (including hidden sidebar at phone width):
+     // click a heading of tab 2 while tab 3 is active, then reverse.
+     const sgkId=await groups.nth(1).locator("h3[id]").first().getAttribute("id");
+     const exId=await groups.nth(2).locator("h3[id]").first().getAttribute("id");
+     for(const [from,to,id] of [[2,1,sgkId],[1,2,exId]]){
+      await labels.nth(from).click();
+      const link=page.locator('.md-sidebar--secondary a[href="#'+id+'"]').first();
+      assert.equal(await link.count(),1,loc+" TOC anchor "+id+" exists");
+      await link.evaluate(a=>a.click()); // works when mobile TOC is collapsed
+      await page.waitForFunction(x=>{
+       const target=document.getElementById(x);
+       return !!target&&target.getBoundingClientRect().height>0;
+      },id);
+      assert(await groups.nth(to).isVisible(),loc+" TOC navigates to hidden tab "+(to+1));
+      assert.equal(new URL(page.url()).hash,"#"+id,loc+" TOC maintains deep-link history");
+     }
+     // Direct #deep-links and browser back must restore the correct tab.
+     await page.evaluate(id=>{window.location.hash="#"+id;},sgkId);
+     await page.waitForFunction(id=>document.getElementById(id)?.getBoundingClientRect().height>0,sgkId);
+     assert(await groups.nth(1).isVisible(),loc+" hashchange activates Knowledge tab");
      const mistakes=groups.nth(3).locator(":scope > details.tip > summary");
      assert((await mistakes.count())>=2,loc+" original remediation folds");
      const mistakeTitles=(await mistakes.allInnerTexts()).map(x=>x.trim());
@@ -144,7 +193,7 @@ const widths=[390,820,1440];
      const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>window.innerWidth+3);
      assert(!overflow,loc+" whole-page overflow");
      passed++;
-     console.log("PASS "+loc+" four numbered HTML tabs, framed headings, quiet disclosures, single footer, source/answer safety");
+     console.log("PASS "+loc+" four compact HTML tabs, framed headings, quiet disclosures, single footer, source/answer safety");
     }
    }finally{await page.close();}
   }

@@ -43,7 +43,7 @@ function sameIDs(actual,expected,where){
      const found=(await choices.allInnerTexts()).map(x=>x.replace(/\s+/g," ").trim());
      // Owner PR #823 numbered only the six already-published SGK tabs.
      // Keep B07-B27 candidate wording unchanged while enforcing both layouts.
-     const expectedLabels=n<=6?labels.map((name,i)=>(i+1)+". "+(i===1?"Kiến thức sách giáo khoa":name)):labels;
+     const expectedLabels=labels;
      assert.deepEqual(found,expectedLabels,location+" owner-approved tab vocabulary and order");
      const groups=tabs.locator(".tabbed-content > .tabbed-block");
      assert.equal(await groups.count(),4,location+" four content groups");

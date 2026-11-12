@@ -104,6 +104,56 @@ const polishG10FirstSix=(article)=>{
  article.dataset.g10B01B06SolutionPolished="true";
 };
 
+
+/* G10 B01-B06: restore native right TOC links across four hidden tab panes.
+ * Works for same-page clicks, initial #deep-links and browser back/forward.
+ * Never touches heading IDs, math/source contents, or unrelated routes. */
+let g10TocController=null;
+const bindG10CrossTabToc=(article,set,labels,blocks)=>{
+ g10TocController?.abort();
+ const controller=new AbortController();
+ g10TocController=controller;
+ const choose=(hash,scroll)=>{
+  if(!hash||hash[0]!=="#")return false;
+  let key;
+  try{key=decodeURIComponent(hash.slice(1));}catch{return false;}
+  const target=document.getElementById(key);
+  if(!target||!article.contains(target))return false;
+  const pane=target.closest(".tabbed-block");
+  const index=blocks.indexOf(pane);
+  if(index<0)return false;
+  const inputs=[...set.querySelectorAll(":scope > input[type=radio]")];
+  if(!inputs[index]?.checked)labels[index].click();
+  if(scroll)requestAnimationFrame(()=>requestAnimationFrame(()=>{
+   if(target.isConnected)target.scrollIntoView({block:"start",behavior:"instant"});
+  }));
+  return true;
+ };
+ document.addEventListener("click",event=>{
+  const node=event.target instanceof Element?event.target:null;
+  const anchor=node?.closest(".md-sidebar--secondary a[href]");
+  if(!anchor)return;
+  let to;
+  try{to=new URL(anchor.href,location.href);}catch{return;}
+  if(to.origin!==location.origin||to.pathname!==location.pathname||!to.hash)return;
+  const id=decodeURIComponent(to.hash.slice(1));
+  const target=document.getElementById(id);
+  if(!target||!article.contains(target))return;
+  const index=blocks.indexOf(target.closest(".tabbed-block"));
+  if(index<0)return;
+  const inputs=[...set.querySelectorAll(":scope > input[type=radio]")];
+  // Same-tab links already behave correctly through MkDocs Material.
+  if(inputs[index]?.checked)return;
+  event.preventDefault();
+  event.stopPropagation();
+  if(location.hash!==to.hash)history.pushState(null,"",to.hash);
+  choose(to.hash,true);
+ },{capture:true,signal:controller.signal});
+ window.addEventListener("hashchange",()=>choose(location.hash,true),{signal:controller.signal});
+ window.addEventListener("popstate",()=>choose(location.hash,true),{signal:controller.signal});
+ if(location.hash)requestAnimationFrame(()=>choose(location.hash,true));
+};
+
 /* Owner 12/11 Golden HTML restoration: presentation-only, six published G10
  * lessons. Keep numbered tab text, canonical SGK source and every hidden answer
  * byte-identical. Move a single existing provenance note to the last tab. */
@@ -116,8 +166,9 @@ const restoreG10FirstSixGolden=(article)=>{
  if(labels.length!==4||blocks.length!==4)return;
  // The source tab uses "Kiến thức SGK"; the owner wants the unabbreviated
  // learner label. The section heading is presentation, not a source rewrite.
- labels[1].textContent="2. Kiến thức sách giáo khoa";
- const sectionNames=["1. Khám phá kiến thức","2. Kiến thức sách giáo khoa",
+ const displayLabels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
+ labels.forEach((label,i)=>label.textContent=displayLabels[i]);
+ const sectionNames=["1. Khám phá kiến thức","2. Kiến thức SGK",
   "3. Ví dụ","4. Lỗi thường gặp và cách tự khắc phục"];
  blocks.forEach((block,i)=>{
   if(block.querySelector(":scope > h2.thpt-g10-section-heading"))return;
@@ -138,7 +189,7 @@ const restoreG10FirstSixGolden=(article)=>{
  // Both public First Try and D6 use the subdued HTML reference treatment.
  // Only the voluntary disclosure LABEL changes; answer bodies remain closed.
  for(const node of blocks[1].querySelectorAll("details.question > summary")){
-  node.textContent="Mở đối chiếu sau khi tự làm";
+  node.textContent="Đối chiếu";
  }
  // Source notes were displayed outside the tab set (all four tabs), plus a
  // duplicate in tab 4. Keep the detailed SGK/SBT receipt ONCE in tab 4.
@@ -153,6 +204,7 @@ const restoreG10FirstSixGolden=(article)=>{
   for(const note of sourceNotes)if(note!==selected)note.remove();
   blocks[3].append(selected);
  }
+ bindG10CrossTabToc(article,set,labels,blocks);
  article.dataset.g10GoldenRestored="true";
 };
 

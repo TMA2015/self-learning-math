@@ -300,3 +300,77 @@
     padding: .6rem .7rem;
   }
 }
+
+
+/* G10 B01–B06 owner 95%→Golden polish, source-pinned HTML reference:
+ * compact four unnumbered buttons, SAME readable body size for table and
+ * voluntarily revealed text, and the original warm memory callout. */
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden > .tabbed-set > .tabbed-labels {
+  gap: 8px;
+  padding: 12px 2px;
+  border-bottom: 1px solid #cfdaee;
+}
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden > .tabbed-set > .tabbed-labels > label {
+  font-size: 15px;
+  line-height: 1.45;
+  padding: 9px 13px;
+  min-height: 44px;
+  border-radius: 9px;
+}
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden .tabbed-block :is(table,.thpt-g10-knowledge-table) {
+  font-size: inherit;
+}
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden .tabbed-block table :is(th,td) {
+  font-size: inherit;
+  line-height: 1.65;
+}
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden .tabbed-block details:is(.question,.tip) {
+  font-size: inherit;
+}
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden .tabbed-block details:is(.question,.tip) > :is(p,ul,ol,div) {
+  font-size: inherit;
+}
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden .tabbed-block details:is(.question,.tip) > summary {
+  font-size: 1em;
+  line-height: 1.4;
+  padding: .45rem .8rem .45rem 1.9rem;
+  min-height: 2rem;
+}
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden .tabbed-block details:is(.question,.tip) > summary::before {
+  top: .55rem;
+  left: .76rem;
+}
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden .thpt-r4-knowledge-conclusion {
+  background: #fff3d5;
+  border: 1px solid #eacb7c;
+  border-left: 4px solid #c49a37;
+  border-radius: 8px;
+  padding: 13px 16px;
+  color: #27344f;
+  font-size: inherit;
+  line-height: 1.7;
+  margin: 14px 0;
+}
+[data-md-color-scheme="slate"] .md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden .thpt-r4-knowledge-conclusion {
+  color: #fff3d5;
+  background: #4a3a25;
+  border-color: #9e7d39;
+  border-left-color: #d6aa49;
+}
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden .tabbed-block :is(h2,h3,h4)[id] {
+  scroll-margin-top: 5.4rem;
+}
+@media(max-width:640px) {
+  .md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden > .tabbed-set > .tabbed-labels > label {
+    font-size: 14px;
+    padding: 8px 10px;
+    min-height: 44px;
+  }
+}
+
+/* Material tab labels add padding to min-height unless explicitly border-box. */
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden > .tabbed-set > .tabbed-labels > label {
+  box-sizing: border-box;
+  height: 44px;
+  min-height: 44px;
+}
