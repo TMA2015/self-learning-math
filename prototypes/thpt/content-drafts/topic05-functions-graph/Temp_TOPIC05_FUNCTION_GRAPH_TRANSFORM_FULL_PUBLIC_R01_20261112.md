@@ -161,3 +161,207 @@ Một đại lượng phụ thuộc một đại lượng khác thông qua **hà
 **D6 đường khắc phục:** Nếu kết luận co ngang, giữ x=4 và so hai tung độ; luyện P23/P24.
 **Câu luyện:** `THPT-TOP05-P23`, `THPT-TOP05-P24`.
 
+
+## TOP05-M13 · Co giãn ngang: hệ số trong đối số
+
+**Outcome TOP05-O13:** hiểu bản chất, lựa chọn phương pháp và giới hạn áp dụng.
+**Vì sao cần học?** Khi đầu vào chạy nhanh gấp đôi, cùng một tung độ xuất hiện sớm hơn.
+**Nhắc tiền đề tại chỗ:** Đặt u=kx (k khác0), điểm gốc(u,f(u)).
+**Hình thành bản chất trước công thức:** g(x)=f(kx) biến (u,f(u)) thành(u/k,f(u)); độ rộng ngang nhân1/|k|. |k|>1 là co ngang, 0<|k|<1 là dãn ngang; k<0 còn phản xạ Oy. Miền D_g={x:kx∈D_f}, khác phép g=kf(x).
+**Ví dụ giải có lý do chọn cách:** f=|x|, g=f(2x)=2|x|: cùng y=4, f đạt x=±4 còn g đạt x=±2. Vẻ dốc hơn là kết quả co ngang theo đối số.
+**Tự thử trước khi xem đối chiếu:** f=√x, g=f(3x): D và x khi g(x)=2?
+**Tự mở đối chiếu:** D=[0,+∞), 3x=4 ⇒ x=4/3, so f đạt y=2 ở x=4.
+**D6 đường khắc phục:** Nếu nhận giãn ngang3, dùng u=3x ⇒ x=u/3; luyện P25/P26.
+**Câu luyện:** `THPT-TOP05-P25`, `THPT-TOP05-P26`.
+
+## TOP05-M14 · Hai phép giá trị tuyệt đối khác nhau
+
+**Outcome TOP05-O14:** hiểu bản chất, lựa chọn phương pháp và giới hạn áp dụng.
+**Vì sao cần học?** Dấu |.| bên ngoài f và bên trong đối số thay hai nửa đồ thị khác nhau.
+**Nhắc tiền đề tại chỗ:** |t|≥0, |t|=t khi t≥0, =−t nếu t<0.
+**Hình thành bản chất trước công thức:** |f(x)| giữ phần y≥0, phản xạ phần y<0 lên Ox; miền không đổi. f(|x|) lấy nửa đồ thị f trên x≥0 rồi phản xạ sang x≤0; miền mới {x:|x|∈D_f}. Không thể coi chúng giống nhau.
+**Ví dụ giải có lý do chọn cách:** f=x−1: |f(x)|=|x−1| có đỉnh(1,0), còn f(|x|)=|x|−1 có đỉnh(0,−1). Điểm x=0 cho hai giá trị khác.
+**Tự thử trước khi xem đối chiếu:** f=x²−1, tính |f(0)| và f(|0|).
+**Tự mở đối chiếu:** |−1|=1, còn f(0)=−1.
+**D6 đường khắc phục:** Nếu gán hai hàm bằng nhau mọi x, dùng x=0 làm phản ví dụ; luyện P27/P28.
+**Câu luyện:** `THPT-TOP05-P27`, `THPT-TOP05-P28`.
+
+## TOP05-M15 · Kết hợp dịch, lật và tỉ lệ
+
+**Outcome TOP05-O15:** hiểu bản chất, lựa chọn phương pháp và giới hạn áp dụng.
+**Vì sao cần học?** Nhìn dấu cộng trừ mà bỏ qua thứ tự thao tác có thể sai miền và đỉnh.
+**Nhắc tiền đề tại chỗ:** Đổi điểm(u,f(u)) theo u=k(x−h).
+**Hình thành bản chất trước công thức:** Với g(x)=c f(k(x−h))+v, c,k≠0, điểm(u,f(u)) thành(h+u/k, c f(u)+v). Đây là phép đổi tọa độ có chứng minh, không phải 'dịch đoán'. Luôn kiểm f đã xác định ở k(x−h) trước khi tính.
+**Ví dụ giải có lý do chọn cách:** f=x², g=2f(x−1)+3 có đỉnh (1,3), g(0)=5. Viết dạng đỉnh trực tiếp cho thấy miền ℝ và cực tiểu3.
+**Tự thử trước khi xem đối chiếu:** g=−f(x+2)+1 với f=x² có đỉnh và hướng mở?
+**Tự mở đối chiếu:** g=−(x+2)²+1, đỉnh(−2,1), mở xuống.
+**D6 đường khắc phục:** Nếu đọc x+2 là dịch phải, tìm x làm x+2=0; luyện P29/P30/W02.
+**Câu luyện:** `THPT-TOP05-P29`, `THPT-TOP05-P30`.
+
+## TOP05-M16 · Hàm từng đoạn: dấu bằng tại điểm nối
+
+**Outcome TOP05-O16:** hiểu bản chất, lựa chọn phương pháp và giới hạn áp dụng.
+**Vì sao cần học?** Hai công thức giá theo thời gian có thể gặp nhau hoặc tạo bước nhảy tại mốc đổi giá.
+**Nhắc tiền đề tại chỗ:** Phân biệt x<c, x≤c, x≥c; chấm rỗng/đặc.
+**Hình thành bản chất trước công thức:** Tại x=c, **nhánh có dấu bằng** xác định f(c). Nhìn độ cao của hai nhánh sát c: khác nhau tạo bước nhảy, bằng nhau có thể nối khi điểm được nhận. Đây là cách đọc hình trực quan, không thay nội dung định nghĩa/định lý giới hạn và liên tục chính thức ở CĐ08.
+**Ví dụ giải có lý do chọn cách:** f=x nếu x<1, f=2x−1 nếu x≥1. Tại1 dùng nhánh sau được1; phía trái cũng tới1, hai nhánh nối tại (1,1).
+**Tự thử trước khi xem đối chiếu:** f=0 nếu x≤0, f=x+2 nếu x>0 có bước nhảy ở 0 không?
+**Tự mở đối chiếu:** Có: chấm đặc(0,0) và chấm rỗng(0,2) thuộc nhánh bên phải.
+**D6 đường khắc phục:** Nếu tính f(0)=2, bạn đã dùng nhầm nhánh x>0; luyện P31/P32/W03.
+**Câu luyện:** `THPT-TOP05-P31`, `THPT-TOP05-P32`.
+
+## TOP05-M17 · Mô hình và tối ưu trên miền hợp lệ
+
+**Outcome TOP05-O17:** hiểu bản chất, lựa chọn phương pháp và giới hạn áp dụng.
+**Vì sao cần học?** Một đỉnh đẹp trên toàn ℝ có thể không có ý nghĩa vì sản phẩm chỉ nhận giá trị nguyên và còn ràng buộc.
+**Nhắc tiền đề tại chỗ:** Biến q nguyên, đơn vị, miền quyết định D.
+**Hình thành bản chất trước công thức:** Đặt biến, **đơn vị và miền khả thi trước**; từ đó tính hàm và ứng viên, kiểm ứng viên trong D. Khi ràng buộc đổi, quyết định tối ưu có thể đổi dù công thức không đổi. Với bậc hai sơ cấp dùng hoàn phương; khảo sát cực trị bằng đạo hàm thuộc CĐ10.
+**Ví dụ giải có lý do chọn cách:** P(q)=−(q−4)²+16 (triệu) với q∈{5,6}. Đỉnh q=4 không khả thi; P(5)=15, P(6)=12 ⇒ chọn q=5.
+**Tự thử trước khi xem đối chiếu:** Q(t)=(t−3)²+2 trên t∈[5,7], giá trị min?
+**Tự mở đối chiếu:** t≥5, nên min Q(5)=6; không chọn Q(3)=2 vì ngoài miền.
+**D6 đường khắc phục:** Nếu vẫn chọn đỉnh không hợp lệ, viết lại tập khả thi và thử các biên; luyện P33/P34/W04.
+**Câu luyện:** `THPT-TOP05-P33`, `THPT-TOP05-P34`.
+
+
+## Hình đồ thị và hướng dẫn đọc — 3 SVG thật, không phải mô hình chạy
+
+- [Tịnh tiến parabol](../../visuals/THPT_TOPIC05_GRAPH_TRANSLATION_R01.svg) — Git blob `e73c9c7a076de103edebf65cae0ed3529449ad06`: so đỉnh(0,0) y=x² và (2,1) y=(x−2)²+1; dịch phải2, lên1.
+- [Phản xạ và co giãn đứng](../../visuals/THPT_TOPIC05_REFLECTION_VERTICAL_SCALE_R01.svg) — Git blob `0f20dc39c3432be8a8fe0af6e86df7207ffdcaa7`: so f(x)=|x| và h(x)=−2|x|+3, điểm (2,2)→(2,−1); phản xạ Ox, kéo đứng2, lên3.
+- [Chấm rỗng/đặc tại điểm nối](../../visuals/THPT_TOPIC05_PIECEWISE_ENDPOINTS_R01.svg) — Git blob `77f9345af366a64a3fba4a35c3d8d6b84a5d845e`: f(x)=2 cho x≤1 có điểm đặc(1,2), x+3 cho x>1 có điểm rỗng(1,4), có bước nhảy.
+
+## Mô hình tương tác — đặc tả, chưa triển khai
+
+- `TOP05_GRAPH_TRANSFORM_LAB_SPEC_ONLY`: kéo tham số h,k,c,v của c·f(k(x−h))+v, theo dõi điểm/miền và nhắc k,c=0 không khả nghịch; yêu cầu bảng tọa độ thay đồ thị, bàn phím/touch và trợ năng. **Chưa có mã runtime**.
+- `TOP05_DOMAIN_RANGE_SEGMENT_LAB_SPEC_ONLY`: tự đánh dấu chấm mốc của đồ thị từng đoạn và chọn miền/tập giá trị trước tự mở đối chiếu. **Chưa có mã runtime**.
+
+# Luyện tập
+
+**38 `item_id` canonical PUBLIC mới** trong một nguồn duy nhất: **34 Practice và 4 Written** rubric **7 điểm**. Không sao chép 116 ID hoặc câu/đáp án của thí điểm #782; phần source/Academic/PED PASS R18 cũ bảo toàn đúng snapshot riêng. Mỗi outcome có ít nhất 2 câu chủ đích và một vòng Tự thử → D6 trước Luyện tập.
+
+| Outcome | Họ dạng | 1 canonical ID cho mỗi câu |
+|---|---|---|
+| `TOP05-O01` | Phương pháp `TOP05-M01` | `THPT-TOP05-P01`; `THPT-TOP05-P02` |
+| `TOP05-O02` | Phương pháp `TOP05-M02` | `THPT-TOP05-P03`; `THPT-TOP05-P04` |
+| `TOP05-O03` | Phương pháp `TOP05-M03` | `THPT-TOP05-P05`; `THPT-TOP05-P06`; `THPT-TOP05-W01` |
+| `TOP05-O04` | Phương pháp `TOP05-M04` | `THPT-TOP05-P07`; `THPT-TOP05-P08` |
+| `TOP05-O05` | Phương pháp `TOP05-M05` | `THPT-TOP05-P09`; `THPT-TOP05-P10` |
+| `TOP05-O06` | Phương pháp `TOP05-M06` | `THPT-TOP05-P11`; `THPT-TOP05-P12` |
+| `TOP05-O07` | Phương pháp `TOP05-M07` | `THPT-TOP05-P13`; `THPT-TOP05-P14` |
+| `TOP05-O08` | Phương pháp `TOP05-M08` | `THPT-TOP05-P15`; `THPT-TOP05-P16` |
+| `TOP05-O09` | Phương pháp `TOP05-M09` | `THPT-TOP05-P17`; `THPT-TOP05-P18` |
+| `TOP05-O10` | Phương pháp `TOP05-M10` | `THPT-TOP05-P19`; `THPT-TOP05-P20` |
+| `TOP05-O11` | Phương pháp `TOP05-M11` | `THPT-TOP05-P21`; `THPT-TOP05-P22` |
+| `TOP05-O12` | Phương pháp `TOP05-M12` | `THPT-TOP05-P23`; `THPT-TOP05-P24` |
+| `TOP05-O13` | Phương pháp `TOP05-M13` | `THPT-TOP05-P25`; `THPT-TOP05-P26` |
+| `TOP05-O14` | Phương pháp `TOP05-M14` | `THPT-TOP05-P27`; `THPT-TOP05-P28` |
+| `TOP05-O15` | Phương pháp `TOP05-M15` | `THPT-TOP05-P29`; `THPT-TOP05-P30`; `THPT-TOP05-W02` |
+| `TOP05-O16` | Phương pháp `TOP05-M16` | `THPT-TOP05-P31`; `THPT-TOP05-P32`; `THPT-TOP05-W03` |
+| `TOP05-O17` | Phương pháp `TOP05-M17` | `THPT-TOP05-P33`; `THPT-TOP05-P34`; `THPT-TOP05-W04` |
+
+**Written/rubric:** `THPT-TOP05-W01` miền và đối xứng của nửa đường tròn, `W02` chuỗi phép biến đổi parabol, `W03` điểm nối từng đoạn, `W04` tối ưu khi miền số sản phẩm đổi. Mỗi bài tự luận 7 điểm với giải chi tiết/rubric tại bank. Anchor nếu dùng chỉ là nhãn trên cùng ID, không tạo thư viện khác; tự luận tự đối chiếu không ghi Mastery.
+
+# Tự kiểm tra
+
+**17 lượt PUBLIC đã có trong Luyện tập, reuse-only**, một outcome một item, chế độ `CLIENT_SELF_CHECK_NO_MASTERY`. Không phải `TOPIC_READINESS` độc lập, không lấy các câu đã xem lời giải làm điểm chứng nhận; 0 private RD1 nhập từ SGK hay pilot R18.
+
+**Hợp đồng runtime Q16 cho RELEASE:** Không hint/AI Tutor/đúng–sai/key/lời giải/rubric **trước Final Submit**. Sau nộp mới tự đối chiếu và D6. Đây là nội dung Markdown, không phải bằng chứng website engine thực thi. Chưa có Mastery hay bảo mật đề đánh giá chính thức.
+
+| Lượt | TOP05 outcome | PUBLIC reuse item_id | Trở lại khi sai |
+|---:|---|---|---|
+| 1 | `TOP05-O01` | `THPT-TOP05-P01` | `TOP05-M01` |
+| 2 | `TOP05-O02` | `THPT-TOP05-P03` | `TOP05-M02` |
+| 3 | `TOP05-O03` | `THPT-TOP05-P05` | `TOP05-M03` |
+| 4 | `TOP05-O04` | `THPT-TOP05-P07` | `TOP05-M04` |
+| 5 | `TOP05-O05` | `THPT-TOP05-P09` | `TOP05-M05` |
+| 6 | `TOP05-O06` | `THPT-TOP05-P11` | `TOP05-M06` |
+| 7 | `TOP05-O07` | `THPT-TOP05-P13` | `TOP05-M07` |
+| 8 | `TOP05-O08` | `THPT-TOP05-P15` | `TOP05-M08` |
+| 9 | `TOP05-O09` | `THPT-TOP05-P17` | `TOP05-M09` |
+| 10 | `TOP05-O10` | `THPT-TOP05-P19` | `TOP05-M10` |
+| 11 | `TOP05-O11` | `THPT-TOP05-P21` | `TOP05-M11` |
+| 12 | `TOP05-O12` | `THPT-TOP05-P23` | `TOP05-M12` |
+| 13 | `TOP05-O13` | `THPT-TOP05-P25` | `TOP05-M13` |
+| 14 | `TOP05-O14` | `THPT-TOP05-P27` | `TOP05-M14` |
+| 15 | `TOP05-O15` | `THPT-TOP05-P29` | `TOP05-M15` |
+| 16 | `TOP05-O16` | `THPT-TOP05-P31` | `TOP05-M16` |
+| 17 | `TOP05-O17` | `THPT-TOP05-P33` | `TOP05-M17` |
+
+**Đường sửa lỗi:** sai miền/đầu ra → M01–M03; đọc đồ thị/đơn điệu/đỉnh → M04–M06; chẵn–lẻ/chu kỳ → M07–M08; tịnh tiến ngang/đứng → M09–M10; phản xạ và co dãn → M11–M13; |f(x)| vs f(|x|) → M14; kết hợp phép → M15; chấm mở/đặc → M16; ràng buộc bài toán → M17. Sau khi xem lời giải, đổi câu luyện, không tái dùng làm đánh giá độc lập.
+
+## Phụ lục AUTHORING — không hiện cho học sinh
+
+PACKET_ID: THPT-TOPIC05-FUNCTION-GRAPH-TRANSFORMS-FULL-R01
+CATALOG_TOPIC_ID: CD05
+STANDARD_ID: SLM-THPT-QUALITY-ONE
+STANDARD_VERSION: 3.0.1
+LEARNING_PATH: TOPIC
+OUTER_PAGES: KIEN_THUC / LUYEN_TAP / TU_KIEM_TRA
+RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
+SGK_SOURCE_ROLE: S1_REFERENCE_ONLY
+SGK_G10_T2_B15: printed4–10/PDF onebased5–11; original SGK PDF SHA256 ee8a00392e1c9fc5b213e574666cf1f8487548737e138573f28a988c640fafe6
+SGK_G10_T2_B16: printed11–18/PDF onebased12–19; same PDF source
+SBT_G10_T2_B15: printed3–9/PDF onebased4–10; original SBT PDF SHA256 3cb33690e0627b9e8ac467c23625b7feb7d05a8422293db0e1b26e44ca6a78c7
+SBT_G10_T2_B16: printed10–15/PDF onebased11–16; same SBT source
+S1_PAGINATION_VERIFICATION: ORIGINAL_OWNER_VISUAL_RECEIPTS_20261107_NO_NEW_SCAN_THIS_TURN
+PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC05_GRAPH_TRANSFORMS_NEW38_PUBLIC_CANONICAL_R01_20261112.md
+PUBLIC_CANONICAL_BANK_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39
+SVG1_BLOB: e73c9c7a076de103edebf65cae0ed3529449ad06
+SVG2_BLOB: 0f20dc39c3432be8a8fe0af6e86df7207ffdcaa7
+SVG3_BLOB: 77f9345af366a64a3fba4a35c3d8d6b84a5d845e
+PRIOR_IMMUTABLE_R18: PR782 public source Git blob 2340ea4975b37a457363eea59dd617070934983c, 48-outcome reviewed broad pilot; independent Q18 receipt d2e86bac887ff04cf41f5cc9a1fa3ca622a9ca63, no new review or transfer of PASS to CĐ05
+PRIMARY_S1_SGK_VISUAL_RECEIPT: PR782 original Git blob 001a9dd34cf8af83e787fd28d760431fe63e1f24
+PRIMARY_S1_SBT_VISUAL_RECEIPT: PR782 original Git blob 50f667cdfa3fa1aedf5a38c0bc7f80650a6835bf
+KNOWLEDGE_MODULES: 17
+OUTCOMES: 17
+PUBLIC_CANONICAL_IDS: 38
+PUBLIC_PRACTICE: 34
+PUBLIC_WRITTEN: 4
+PUBLIC_SELF_CHECK_REUSE: 17
+ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
+OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
+PRIVATE_RD1_IMPORTED: 0
+INTERACTION_MODELS_IMPLEMENTED: NO
+RELEASE_AUTHORIZATION: NO
+
+| canonical item_id | primary TOP05 outcome | role | exact canonical bank blob |
+|---|---|---|---|
+| `THPT-TOP05-P01` | `TOP05-O01` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P02` | `TOP05-O01` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P03` | `TOP05-O02` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P04` | `TOP05-O02` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P05` | `TOP05-O03` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P06` | `TOP05-O03` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P07` | `TOP05-O04` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P08` | `TOP05-O04` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P09` | `TOP05-O05` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P10` | `TOP05-O05` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P11` | `TOP05-O06` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P12` | `TOP05-O06` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P13` | `TOP05-O07` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P14` | `TOP05-O07` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P15` | `TOP05-O08` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P16` | `TOP05-O08` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P17` | `TOP05-O09` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P18` | `TOP05-O09` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P19` | `TOP05-O10` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P20` | `TOP05-O10` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P21` | `TOP05-O11` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P22` | `TOP05-O11` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P23` | `TOP05-O12` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P24` | `TOP05-O12` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P25` | `TOP05-O13` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P26` | `TOP05-O13` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P27` | `TOP05-O14` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P28` | `TOP05-O14` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P29` | `TOP05-O15` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P30` | `TOP05-O15` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P31` | `TOP05-O16` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P32` | `TOP05-O16` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P33` | `TOP05-O17` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-P34` | `TOP05-O17` | TOPIC_PRACTICE | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-W01` | `TOP05-O03` | TOPIC_WRITTEN | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-W02` | `TOP05-O15` | TOPIC_WRITTEN | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-W03` | `TOP05-O16` | TOPIC_WRITTEN | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+| `THPT-TOP05-W04` | `TOP05-O17` | TOPIC_WRITTEN | `ab878f1a18dea87872449a79c27b75a612d81b39` |
+
+**DELTA:** 17 Topic concept modules, 38 new canonical IDs và 3 SVG là `DELTA_C_ACADEMIC_MATERIAL`, chỉ AUTHOR_SELF_VERIFIED sau khi tự kiểm từng toán/outcome/điều kiện. Pilot R18 #782 (bao gồm CĐ04/06/08/09/10) giữ nguyên Academic/PED và RD1 PASS trên nguồn riêng, không gán 116 ID cũ thành hoàn tất CĐ05. Không sửa SGK, website/Firebase, README Golden UI hay dữ liệu học sinh.
