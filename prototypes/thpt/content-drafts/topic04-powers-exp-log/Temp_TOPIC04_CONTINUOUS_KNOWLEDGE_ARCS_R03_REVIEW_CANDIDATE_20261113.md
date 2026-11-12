@@ -4,6 +4,8 @@
 
 **Hành trình học theo chuyên đề CĐ04/22 — độc lập với hành trình SGK.** Có đúng ba trang **Kiến thức / Luyện tập / Tự kiểm tra**, không sinh Topic Core riêng. Các mục tiêu xây từ ý nghĩa lũy thừa và logarit, liên hệ hàm số và mô hình, không phải thứ tự B18–B21 trong SGK lớp 11.
 
+# Kiến thức
+
 ## Câu hỏi lớn: Một đại lượng được nhân lặp lại thì tìm 'bao nhiêu lần' như thế nào?
 
 Cùng một số tiền hoặc số lượng nếu liên tục tăng theo tỉ lệ sẽ thay đổi theo **lũy thừa**. Muốn tìm số kỳ để đạt ngưỡng, ta cần phép **logarit** — thao tác tìm số mũ. Hai hàm mũ và logarit là hai mặt của cùng một quan hệ; đồ thị giải thích tính tăng giảm và vì sao bất phương trình có thể đổi chiều. Trong CĐ04, học sinh tự học từ khái niệm → điều kiện → suy luận → tự thử → luyện tập → tự đối chiếu.
