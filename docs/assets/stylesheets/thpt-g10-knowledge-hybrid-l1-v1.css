@@ -367,3 +367,10 @@
     min-height: 44px;
   }
 }
+
+/* Material tab labels add padding to min-height unless explicitly border-box. */
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden > .tabbed-set > .tabbed-labels > label {
+  box-sizing: border-box;
+  height: 44px;
+  min-height: 44px;
+}
