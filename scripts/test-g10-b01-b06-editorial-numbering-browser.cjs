@@ -86,6 +86,12 @@ const widths=[390,820,1440];
       });
      }));
      assert(tableResults.every(Boolean),loc+" header/data table alignment");
+     // MkDocs Material animates selection color; assert the settled Golden
+     // reference color, not a transient interpolation during navigation.
+     await page.waitForFunction(()=>{
+      const label=document.querySelector(".md-content__inner .tabbed-labels > label");
+      return !!label&&getComputedStyle(label).backgroundColor==="rgb(40, 77, 181)";
+     },null,{timeout:4500});
      const golden=await page.evaluate(()=>{
       const root=document.querySelector(".md-content__inner");
       const sections=[...root.querySelectorAll(".tabbed-content > .tabbed-block")];
