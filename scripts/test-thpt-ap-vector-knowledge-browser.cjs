@@ -38,6 +38,10 @@ const cases=[
      const measurements=[];
      for(let idx=0;idx<await figures.count();idx++){
        const figure=figures.nth(idx);
+       // A lazy-loaded SVG <img> has no intrinsic dimensions until decoded.
+       // Check its visible FIGURE container (with real figcaption) first,
+       // then scroll it into view and decode/test the actual image below.
+       const frame=figure.locator("xpath=..");
        if(isModelB){
          // Match the already-PASSING chapter Model B browser helper: tab
          // labels are interactive controls, while DOM block indices are not
@@ -48,13 +52,13 @@ const cases=[
            const label=labels.filter({hasText:new RegExp("^"+name+"$")});
            assert.equal(await label.count(),1,"B"+item.lesson+" missing tab "+name);
            await label.click();
-           if(await figure.isVisible()){selected=name;break;}
+           if(await frame.isVisible()){selected=name;break;}
          }
          assert.equal(selected,"Kiến thức SGK",
            "B"+item.lesson+" original D5 SVG figure "+idx+" must be visible when learner selects Knowledge tab");
        }
-       assert(await figure.isVisible(),"B"+item.lesson+" original SVG figure "+idx+" must be visible in selected tab");
-       await figure.scrollIntoViewIfNeeded();
+       assert(await frame.isVisible(),"B"+item.lesson+" original SVG figure container "+idx+" must be visible in selected tab");
+       await frame.scrollIntoViewIfNeeded();
        await figure.evaluate(async img=>{if(img.decode)await img.decode()});
        const dims=await figure.evaluate(img=>({
          loaded:img.complete&&img.naturalWidth>0,
