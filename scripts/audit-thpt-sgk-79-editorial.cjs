@@ -3,7 +3,8 @@
 /*
  * Read-only, source-faithful editorial census for SGK THPT 79 lessons.
  * Does NOT certify academic S1 headings, authoring, AP visual PASS or owner
- * Golden approval. NO writes to source. Only optional report output directory.
+ * approval of the HTML editorial STRUCTURE only is now owner-recorded.
+ * Does NOT certify S1/math or production style rendering. NO learner writes.
  */
 const assert=require("node:assert/strict");
 const fs=require("node:fs"),path=require("node:path"),crypto=require("node:crypto");
@@ -113,14 +114,16 @@ function main(){
   four_tabs:rows.filter(x=>x.tabs.length===4&&x.tabs.every((l,i)=>l===tabLabels[i])).length,
   unique_git_blobs:new Set(rows.map(x=>x.blob)).size,
   structural_flags:counts,
-  owner_gold_sample:"PENDING",
+  owner_gold_sample:"APPROVED_STRUCTURE_ONLY_20261112",
+  owner_production_theme:"PRESERVE_LIVE_G10_B01_B06",
+  normative_candidate:"v3.1.0_DRAFT_NOT_EFFECTIVE",
   s1_verified_count:0
  };
  assert.equal(summary.unique_git_blobs,79,"unexpected duplicate 79 complete source blobs");
  const lines=[
  "# Báo cáo kiểm kê biên tập SGK THPT — 79 bài (baseline)",
  "",
- "STATUS: BASELINE_CENSUS_ONLY / KHÔNG PHẢI S1 PASS / OWNER GOLDEN PENDING / NO MERGE, NO DEPLOY.",
+ "STATUS: BASELINE_CENSUS_ONLY / OWNER GOLDEN STRUCTURE APPROVED 12/11/2026 / LIVE THEME G10 B01-B06 IMMUTABLE / S1 PENDING / NO MERGE, NO DEPLOY.",
  "SOURCE: 79 Git blobs trong commit CI đang kiểm. Không sửa toán, ID, đáp án, RD1.",
  "THAM CHIẾU: SCR-SGK-79-EDITORIAL-20261112 / Golden mẫu đề xuất.",
  "",
@@ -161,7 +164,7 @@ function main(){
  }
  lines.push("","## Phạm vi cần thực hiện sau kiểm kê",
   "",
-  "1. Chốt Golden mẫu với owner, đưa điều khoản vào chuẩn Q01–Q18 đang hiệu lực (không tạo chuẩn khác).",
+  "1. Golden cấu trúc đã owner PASS 12/11/2026. Bản v3.1.0 đã được soạn vào file chuẩn Q01–Q18 duy nhất ở PR #821; chờ QA và owner cho phép governance merge. Màu/font/text-size vẫn giữ nguyên B01–B06.",
   "2. AUTHORING kiểm mapping tên/đầu mục/độ sâu SGK S1 theo từng Bài/Outcome, ghi trang in. RELEASE chỉ hiển thị/QA.",
   "3. Ưu tiên G10 theo từng chương; G11/G12 vẫn HOLD cho đến owner mở phạm vi.",
   "4. Kiểm tất cả biến thể bảng, công thức quan trọng, hộp ghi nhớ, vị trí hình, ví dụ; dùng kiểm trình duyệt 390/820/1440 và thiết bị thật P2 khi yêu cầu.",
@@ -177,6 +180,6 @@ function main(){
  }
  console.log("SGK_EDITORIAL_BASELINE "+JSON.stringify(summary));
  for(const row of rows)console.log("INVENTORY "+row.grade+"-B"+String(row.lesson).padStart(2,"0")+" "+row.blob+" "+row.flags.join(","));
- console.log("REPORT_ONLY: 79/79 sources inspected; owner Golden and S1 mapping still pending. No automatic academic/release PASS.");
+ console.log("REPORT_ONLY: 79/79 inspected; editor Golden STRUCTURE owner approved, production STYLE preserved B01–B06; S1 mapping still pending. No academic/release PASS.");
 }
 main();

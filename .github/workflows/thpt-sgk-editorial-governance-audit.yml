@@ -8,6 +8,8 @@ on:
       - "prototypes/thpt/ux795/Temp_THPT_SGK_79_Editorial_Golden_Review_20261112.html"
       - "scripts/audit-thpt-sgk-79-editorial.cjs"
       - "scripts/test-thpt-sgk-four-tab-golden-contract.cjs"
+      - "scripts/test-thpt-sgk-editorial-theme-preservation.cjs"
+      - "prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md"
       - ".github/workflows/thpt-sgk-editorial-governance-audit.yml"
   workflow_dispatch:
 
@@ -31,6 +33,8 @@ jobs:
         run: node --check scripts/audit-thpt-sgk-79-editorial.cjs
       - name: Assert Golden four-tab editorial preview structure and negative regressions
         run: node scripts/test-thpt-sgk-four-tab-golden-contract.cjs
+      - name: Fail-closed owner G10 B01-B06 production theme/source immutability
+        run: node scripts/test-thpt-sgk-editorial-theme-preservation.cjs
       - name: Audit 79 source blobs, section numbering and tab structure
         run: node scripts/audit-thpt-sgk-79-editorial.cjs --out editorial-inventory
       - name: Verify report counts and owner gate remain explicit
@@ -42,7 +46,9 @@ jobs:
           assert.equal(r.summary.lesson_count,79);
           assert.deepEqual(r.summary.classes,{"10":27,"11":33,"12":19});
           assert.equal(r.rows.length,79);
-          assert.equal(r.summary.owner_gold_sample,"PENDING");
+          assert.equal(r.summary.owner_gold_sample,"APPROVED_STRUCTURE_ONLY_20261112");
+          assert.equal(r.summary.owner_production_theme,"PRESERVE_LIVE_G10_B01_B06");
+          assert.equal(r.summary.normative_candidate,"v3.1.0_DRAFT_NOT_EFFECTIVE");
           assert.equal(r.summary.s1_verified_count,0);
           assert.equal(r.summary.unique_git_blobs,79);
           for(const row of r.rows)assert(/^[0-9a-f]{40}$/.test(row.blob));
@@ -50,13 +56,13 @@ jobs:
           for(const label of ["1. Khám phá kiến thức","2. Kiến thức SGK","3. Ví dụ","4. Lỗi thường gặp"])
             assert(sample.includes(label),"Missing label "+label);
           assert(!sample.includes("firebase.initializeApp")&&!sample.includes("mastery.write"));
-          console.log("PASS governance INVENTORY, 79 real SHA, GOLDEN = OWNER_PENDING, no academic or deployment assertions");
+          console.log("PASS governance INVENTORY 79 SHA + OWNER EDITORIAL GOLDEN PASS + PROD G10 THEME LOCK; S1/ACADEMIC/RELEASE not approved");
           NODE
       # Keep the 79-lesson report visible in CI logs/step summary, but do not
       # upload artifacts or consume shared GitHub Actions artifact/cache quota.
       - name: Publish report in the job summary (no artifact/cache upload)
         shell: bash
         run: |
-          echo "## SGK THPT 79 — editorial baseline (NOT owner Golden PASS)" >> "$GITHUB_STEP_SUMMARY"
+          echo "## SGK THPT 79 — owner Golden STRUCTURE PASS, S1/RELEASE PENDING" >> "$GITHUB_STEP_SUMMARY"
           cat editorial-inventory/Temp_THPT_SGK_79_Editorial_Inventory_20261112.md >> "$GITHUB_STEP_SUMMARY"
           test -s editorial-inventory/Temp_THPT_SGK_79_Editorial_Inventory_20261112.json

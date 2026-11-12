@@ -2,7 +2,7 @@
 
 **TRACK:** RELEASE/UI-GOVERNANCE, chỉ lập chuẩn/mẫu/kiểm kê. AUTHORING nguồn SGK quyết định tên đề mục và điều kiện toán.  
 **STANDARD:** `SLM-THPT-QUALITY-ONE v3.0.1`; đề xuất v3.1.0 tại `SCR-SGK-79-EDITORIAL-20261112` **chưa có hiệu lực**.  
-**OWNER GOLDEN:** `PENDING`. **MERGE/DEPLOY:** `HOLD`. **G11:** `PAUSED`. **G12:** `NOT OPENED`.  
+**OWNER GOLDEN STRUCTURE:** `PASS 12/11/2026`; **PRODUCTION VISUAL:** `PRESERVE G10 B01–B06 palette/font/text-size/spacing, demo CSS NOT approved`. **NORMATIVE:** `v3.1.0 X-F in Draft PR #821, not yet effective`. **MERGE/DEPLOY:** `HOLD`. **G11:** `PAUSED`. **G12:** `NOT OPENED`.  
 **MAIN SOURCE:** `92d05d3b3939b385123495d7237d19995c3ea505`. **Baseline audit:** `43186769722`.
 
 ## Kế hoạch 24 chương / 79 bài SGK
@@ -38,8 +38,8 @@ Danh sách dưới đây là **danh sách thực**, không phải lịch phát h
 
 ## Cổng bắt buộc theo đúng thứ tự
 
-1. **G0 — OWNER_GOLDEN:** owner kiểm trực tiếp bốn tab, các đầu mục 1.x/2.x/3.x/4.x, form bảng, khung công thức/định nghĩa/ghi nhớ và ví dụ; sửa mẫu nếu cần. Chưa đánh PASS trước khi owner xác nhận.
-2. **G1 — NORMATIVE:** sau G0, bổ sung chuẩn biên tập vào **đúng file chuẩn Q01–Q18 hiện hành**, version 3.1.0 và quyết định owner; CI governance PASS; không tạo chuẩn song song.
+1. **G0 — OWNER_GOLDEN: PASS cấu trúc 12/11/2026.** Owner đã duyệt trực tiếp mẫu bốn tab, 1.x/2.x/3.x/4.x, khung công thức/định nghĩa/ghi nhớ và ví dụ. **Không phê duyệt màu/font/cỡ chữ/CSS demo**; production giữ đúng G10 B01–B06.
+2. **G1 — NORMATIVE: X-F soạn trên Draft PR #821, chưa hiệu lực.** Đã sửa đúng file chuẩn Q01–Q18 duy nhất, version 3.1.0; cần CI trên HEAD và quyền owner merge governance, không tạo chuẩn song song.
 3. **G2 — SOURCE S1:** mỗi chương kiểm SGK KNTT **trang in**, Bài→đầu mục SGK→outcome→công thức/định nghĩa/điều kiện; không tự đoán tiêu đề bằng script. Nếu thiếu S1, giữ `STANDARD_CONFLICT_HOLD` hoặc `AUTHORING_DEFECT` đúng nơi.
 4. **G3 — AUTHORING/PED:** chuyển phần khám phá sang 1.x, kiến thức SGK liền mạch 2.x, ví dụ giải 3.x, D6 4.x; chỉnh Delta A/B/C theo mức ảnh hưởng. Bảo toàn toán/First Try/IDs và receipt SHA; review theo phần thay đổi đáng kể.
 5. **G4 — RELEASE/QA:** kiểm source lock Q18, các nhãn 4 tab/đầu mục, bảng/hình/MathJax, AP1–AP5, responsive 390/820/1440, R1–R5/Final Submit/Q15/Q16/RD1/Mastery, THCS/Topic/Gemini/Firebase unaffected. Không dùng green CI làm S1 PASS.

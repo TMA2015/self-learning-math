@@ -1,11 +1,17 @@
-# Golden Editorial SGK THPT 10–12 — MẪU CẦN OWNER NGHIỆM THU
+# Golden Editorial SGK THPT 10–12 — MẪU ĐÃ DUYỆT CẤU TRÚC
 
-**DESIGN_STATUS:** \`OWNER_REVIEW_PENDING\`  
-**EFFECTIVE_STANDARD:** \`SLM-THPT-QUALITY-ONE v3.0.1\` (không sửa chuẩn trên main)  
-**CANDIDATE:** \`SCR-SGK-79-EDITORIAL-20261112 / proposed v3.1.0\`  
-**REFERENCE:** G10 B01–B06 đã phát hành, cùng các lỗi được owner gửi 12/11/2026.  
+**DESIGN_STATUS:** `OWNER_EDITORIAL_STRUCTURE_APPROVED_20261112 / STANDALONE_DEMO_STYLE_NOT_APPROVED`  
+**CURRENT_MAIN_STANDARD:** `SLM-THPT-QUALITY-ONE v3.0.1`; candidate X-F v3.1.0 đã soạn trong PR #821, chưa hiệu lực cho tới governance merge  
+**CANDIDATE:** `SCR-SGK-79-EDITORIAL-20261112 / proposed v3.1.0`  
+**REFERENCE:** G10 B01–B06 đã phát hành làm **mốc giao diện màu/font/text-size/spacing**, cùng các lỗi được owner gửi 12/11/2026; owner duyệt mẫu HTML về **biên tập và cấu trúc**.  
 **AUDIENCE:** Học sinh tự học SGK Kết nối tri thức; chỉ cho các trang SGK 10–12.  
 **NOT AN ACADEMIC SOURCE:** Văn bản ví dụ dưới đây là đoạn demo bố cục, không xác nhận tên đề mục/trang in của từng SGK. Không đưa mẫu demo vào gói học liệu như nguồn toán chính thức.
+
+## Quyết định chủ dự án 12/11/2026
+
+**ĐÃ DUYỆT:** cấu trúc bốn tab 1–4, số 1.x–4.x, vai trò mỗi tab, khung định nghĩa/công thức/ghi nhớ có điều kiện, bảng/hình và cách hiển thị ví dụ.
+
+**KHÔNG DUYỆT:** bảng màu, font chữ, cỡ chữ, spacing, chrome/headbar, CSS của file HTML demo. **Phải giữ nguyên style và theme của G10 Bài 1–6 hiện hữu**; không copy/import CSS demo vào production. Trên từng chương, QA browser phải so ảnh/độ rộng/typography thực theo AP1–AP5, không chỉ tìm selector.
 
 ## 1. Hợp đồng bố cục một bài
 
@@ -113,15 +119,15 @@ Cho phản ví dụ → tự thử bác bỏ chiều đảo → dẫn tới bài
 
 | Gate | Cách kiểm | Hiện tại |
 |---|---|---|
-| OWNER-1 | Đọc rõ 1.x, 2.x, 3.x, 4.x; không lặp heading cấp 1 trong tab | PENDING |
-| OWNER-2 | Tab 2 mở bằng mục 2.1, mạch kiến thức bám SGK, không checklist PED xen giữa | PENDING |
-| OWNER-3 | Định nghĩa, công thức, ghi nhớ có nhấn thích hợp, nhất quán | PENDING |
-| OWNER-4 | Bảng, hình, SVG và ví dụ đồng kiểu, mobile 390/iPad 820/desktop 1440 | PENDING |
-| OWNER-5 | Không mất First Try, D6, câu giải/đáp án, Final Submit/RD1/Mastery | PENDING |
+| OWNER-1 | Đọc rõ 1.x, 2.x, 3.x, 4.x; không lặp heading cấp 1 trong tab | **OWNER APPROVED — cấu trúc** |
+| OWNER-2 | Tab 2 mở bằng mục 2.1, mạch kiến thức bám SGK, không checklist PED xen giữa | **OWNER APPROVED — bố cục; S1 từng bài chưa đối chiếu** |
+| OWNER-3 | Định nghĩa, công thức, ghi nhớ có nhấn thích hợp, nhất quán | **OWNER APPROVED — nguyên tắc; UI thực cần QA** |
+| OWNER-4 | Bảng, hình, SVG và ví dụ đồng kiểu, mobile 390/iPad 820/desktop 1440 | **OWNER APPROVED — cấu trúc; UI theme giữ G10 B01–B06; browser QA pending** |
+| OWNER-5 | Không mất First Try, D6, câu giải/đáp án, Final Submit/RD1/Mastery | **CONTRACT REQUIRED — cần QA khi tích hợp** |
 
 ## 5. Bàn giao sau duyệt
 
-1. Bản mẫu **owner approved** trở thành dẫn chứng để cập nhật **chính chuẩn gốc Q01–Q18** theo SCR, không lập chuẩn mới.
+1. Cấu trúc mẫu đã **owner approved**, là dẫn chứng cập nhật **chính chuẩn gốc Q01–Q18** mục X-F trong PR #821, không lập chuẩn mới; CSS demo vẫn chỉ là minh họa.
 2. AUTHORING phụ trách đối chiếu đề mục SGK in + nội dung, cung cấp source/receipt khi thay cấu trúc học liệu có ý nghĩa.
 3. RELEASE áp CSS/JS/HTML và QA theo từng chương đã đủ source Q18, báo lỗi AUTHORING nếu thiếu kiểm chứng toán/S1.
 4. Khóa snapshot/chapter; R4, Roadmap, THPT Golden, responsive, Q15/Q16, P1/P2 và quyền merge/deploy phải PASS độc lập.

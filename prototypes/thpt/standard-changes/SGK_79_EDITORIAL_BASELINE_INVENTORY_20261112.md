@@ -4,7 +4,8 @@ SOURCE_CI: `https://github.com/TMA2015/self-learning-math/actions/runs/431867697
 SOURCE_CI_HEAD: `35191edf29d6a031455a05abdb5a2c3f6ba396ff`  
 MAIN_SNAPSHOT: `92d05d3b3939b385123495d7237d19995c3ea505`  
 STANDARD: `SLM-THPT-QUALITY-ONE v3.0.1`  
-OWNER_GOLDEN_APPROVAL: `PENDING`  
+OWNER_GOLDEN_APPROVAL_AT_AUDIT: `PENDING`  
+OWNER_GOLDEN_SUBSEQUENT_DECISION: `APPROVED_EDITORIAL_STRUCTURE_ONLY_20261112; PRODUCTION_STYLE_REMAINS_G10_B01_B06`  
 ACADEMIC_S1_ALIGNMENT: `NOT_ASSESSED_BY_THIS_AUTOMATED_AUDIT`  
 RELEASE: `NO MERGE / NO DEPLOY`
 
@@ -118,9 +119,9 @@ RELEASE: `NO MERGE / NO DEPLOY`
 | 12 | 18 | `c5e96be714ed2b3d440c37c5507ddc79314bf087` | F01_NO_FOUR_TABS | M02_KEY_FORMULA_EMPHASIS_REVIEW · M03_NEED_MEMORY_BOX_REVIEW · S1_SECTION_MAPPING_NOT_YET_VERIFIED |
 | 12 | 19 | `e9588ca5fcdb107aa62990dc2e36635ef01085c0` | F01_NO_FOUR_TABS | M02_KEY_FORMULA_EMPHASIS_REVIEW · M03_NEED_MEMORY_BOX_REVIEW · S1_SECTION_MAPPING_NOT_YET_VERIFIED |
 
-## Thứ tự xử lý sau OWNER GOLDEN PASS
+## Thứ tự xử lý sau OWNER GOLDEN STRUCTURE PASS (đã đạt 12/11/2026)
 
-1. Chốt mẫu 4 tab và bản thay đổi chuẩn gốc v3.1.0 sau khi owner duyệt.
+1. Mẫu cấu trúc bốn tab đã owner PASS, điều X-F v3.1.0 đã đưa vào file chuẩn gốc trong Draft PR #821; chờ governance QA và quyền owner merge. Giao diện màu/font/text size/spacing giữ G10 B01–B06, không dùng CSS demo.
 2. Đối chiếu SGK S1 theo từng chương/bài: tên đề mục, thứ tự, điều kiện, công thức, ví dụ và outcome; nhập chứng cứ thay vì suy từ regex.
 3. Chuyển đúng nội dung giữa Khám phá / Kiến thức SGK / Ví dụ / Lỗi theo từng chương Toán 10 trước; xử lý Delta theo tác động, giữ nguồn Q18 và Q15/Q16.
 4. Kiểm trang thực (MathJax, bảng, SVG, đếm cấp mục, khung ghi nhớ, điểm nhấn công thức, mobile 390/iPad 820/desktop 1440, P2 vật lý khi cần).

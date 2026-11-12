@@ -4,8 +4,8 @@ REQUEST_ID: `SCR-SGK-79-EDITORIAL-20261112`
 STANDARD_ID: `SLM-THPT-QUALITY-ONE`  
 CURRENT_VERSION: `v3.0.1`  
 PROPOSED_VERSION: `v3.1.0` (MINOR — biên tập/trình bày, không thêm Q19)  
-OWNER_PROCESS_APPROVAL: `12/11/2026 — đồng ý triển khai 7 bước; duyệt nội dung Golden mẫu vẫn PENDING`  
-STATUS: `DRAFT_FOR_OWNER_EDITORIAL_SIGNOFF — NOT_EFFECTIVE`  
+OWNER_PROCESS_APPROVAL: `12/11/2026 — APPROVED: 7-step workflow + Golden HTML editorial structure only; demo typography/colors/css NOT approved`  
+STATUS: `OWNER_GOLDEN_EDITORIAL_STRUCTURE_PASS / NORMATIVE_DRAFT_v3.1.0_PENDING_GOVERNANCE_QA_MERGE`  
 PATH_SCOPE: `SGK_CHAPTER / Knowledge lessons, G10 27 + G11 33 + G12 19 = 79`  
 EXCLUDES: `THCS Golden, Topic/Chuyên đề, official Readiness/RD1, Firebase, Gemini, student progress`  
 RELEASE_AUTHORIZATION: `NONE / HOLD #819 and #816`  
@@ -16,7 +16,7 @@ Các trang SGK THPT đã triển khai không theo cùng một ngôn ngữ biên 
 
 ## 2. Đề xuất cập nhật **vào chính chuẩn duy nhất Q01–Q18**
 
-Sau khi owner nghiệm thu mẫu, thêm một tiểu mục riêng mang tên **SGK Editorial Presentation Contract — áp dụng AP1–AP5/PED/Q03–Q14, không phải chuẩn chất lượng thứ hai** vào tài liệu chuẩn gốc `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`, cập nhật VERSION thành 3.1.0. Không sửa hay tự mở rộng yêu cầu Q15/Q16. Quy tắc đề xuất:
+Owner đã nghiệm thu phần **cấu trúc biên tập** của mẫu HTML ngày 12/11/2026; **giữ nguyên màu/font/text-size/spacing/thanh điều hướng của Bài 1–6 Toán 10 trên production**, không sao chép CSS demo. Đã đề xuất bổ sung tiểu mục X-F vào file chuẩn hiện hành trong PR #821. Sau khi governance PR được phép merge, điều khoản này mới có hiệu lực. Cụ thể, thêm một tiểu mục riêng mang tên **SGK Editorial Presentation Contract — áp dụng AP1–AP5/PED/Q03–Q14, không phải chuẩn chất lượng thứ hai** vào tài liệu chuẩn gốc `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`, cập nhật VERSION thành 3.1.0. Không sửa hay tự mở rộng yêu cầu Q15/Q16. Quy tắc đề xuất:
 
 ### E01. Bốn tab = bốn mục lớn của một bài
 
@@ -53,7 +53,7 @@ Sau khi owner nghiệm thu mẫu, thêm một tiểu mục riêng mang tên **SG
 
 ## 3. Hai cổng quyết định không thể thay bằng CI
 
-**GATE A — OWNER_GOLDEN_EDITORIAL_APPROVAL:** owner xem và duyệt **một mẫu minh họa đầy đủ bốn tab**, gồm khung công thức, định nghĩa/kiến thức cần nhớ, ví dụ, bảng, hình và responsive. *Các ví dụ trong mẫu là minh họa, không phải S1 PASS.*
+**GATE A — OWNER_GOLDEN_EDITORIAL_APPROVAL = PASS (12/11/2026, cấu trúc):** owner đã xem file HTML, xác nhận cách đánh số bốn tab, phân vai nội dung, công thức/định nghĩa, hình/bảng và ví dụ. *Màu sắc, font, cỡ chữ, khoảng trắng và CSS demo không được duyệt — phải giữ Golden B01–B06 thực tế*. Các ví dụ trong mẫu vẫn chỉ là minh họa, không phải S1 PASS.
 
 **GATE B — S1_SECTION_MAPPING_PER_LESSON:** tác giả nguồn thẩm tra đề mục chính thức SGK KNTT theo bài và điền chứng cứ trang in/đầu mục; RELEASE không tự nhận từ tên heading đã là S1. Mỗi chương hoàn tất rồi mới chuyển tiếp.
 
@@ -67,6 +67,6 @@ Sau hai cổng mới được mở thay nguồn học liệu từng chương, th
 
 ## 5. Trạng thái 12/11/2026
 
-`SCR_DRAFT / GOLDEN_OWNER_REVIEW_PENDING / INVENTORY_79_START / AUTHORING_CONTENT_PAUSED / PR819_HOLD / PR816_HOLD / NO_MERGE_NO_DEPLOY`.
+`OWNER_EDITORIAL_GOLDEN_PASS / NORMATIVE_XF_WRITTEN_IN_PR821 / FORMAL_GOVERNANCE_QA_PENDING / S1_79_PENDING / AUTHORING_CONTENT_PAUSED / PR819_HOLD / PR816_HOLD / NO_MERGE_NO_DEPLOY`.
 
 Không tự nhận việc owner nói “Đồng ý triển khai ngay” là nghiệm thu thiết kế mẫu chưa nhìn thấy.
