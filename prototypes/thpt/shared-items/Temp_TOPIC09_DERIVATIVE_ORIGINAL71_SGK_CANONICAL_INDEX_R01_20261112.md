@@ -51,6 +51,8 @@ ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 | TOP09-O30 | `G11-B33-SIGN_INTERPRET` | 3 |
 | TOP09-O31 | `G11-CHIX-INTEGRATED` | 2 |
 
+**CĐ09 bổ sung `TOP09-O32` Vi phân tuyến tính / xấp xỉ bậc nhất như một Topic extension (không có item SGK gốc; NEW `THPT-TOP09-P32`).** Điều này KHÔNG được đổi nhãn B31–B33 thành có 'vi phân' chính thức trong SGK Core.
+
 ## One-to-one original public item IDs
 
 | item_id | TOPIC outcome_id | Topic role | original SGK role | original skill_id |
