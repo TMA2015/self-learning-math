@@ -33,7 +33,33 @@ const run=()=>{
  if(chapters[chapterIndex]!==chapter)return; // fail closed on unexpected source mapping
  const article=document.querySelector(".md-content__inner");
  if(!article)return;
- if(grade===10)article.classList.add("thpt-g10-knowledge-ap1");
+ if(grade===10){
+  article.classList.add("thpt-g10-knowledge-ap1");
+  // Presentation-only: expose the actual source h3 sections in every B01-B27
+  // Knowledge tab. Never synthesize mathematical headings or alter source IDs.
+  const knowledge=article.querySelector(":scope > .tabbed-set > .tabbed-content > .tabbed-block:nth-child(2)");
+  if(knowledge&&!knowledge.querySelector("[data-g10-knowledge-sections]")){
+   const headings=[...knowledge.querySelectorAll("h3")];
+   if(headings.length>=3){
+    const outline=document.createElement("details");
+    outline.className="thpt-g10-knowledge-sections";
+    outline.dataset.g10KnowledgeSections=String(headings.length);
+    const summary=document.createElement("summary");
+    summary.textContent="Nội dung Kiến thức SGK · "+headings.length+" mục (bấm để chọn mục)";
+    const list=document.createElement("ol");
+    for(const [index,heading] of headings.entries()){
+     if(!heading.id)heading.id="g10-knowledge-part-"+(index+1);
+     const item=document.createElement("li");
+     const anchor=document.createElement("a");
+     anchor.href="#"+heading.id;
+     anchor.textContent=heading.textContent.trim();
+     item.append(anchor);list.append(item);
+    }
+    outline.append(summary,list);
+    knowledge.prepend(outline);
+   }
+  }
+ }
  if(article.querySelector("[data-sgk-lesson-nav]"))return;
  const root=match[1]+(grade===10?"":"lop-"+grade+"/");
  const lessonUrl=n=>root+"chuong-"+chapters[ends.findIndex(end=>n<=end)]+"/bai-"+n+"/";

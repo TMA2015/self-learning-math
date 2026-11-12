@@ -131,3 +131,47 @@
     font-size: .79rem;
   }
 }
+
+
+/* G10 B01-B27: the four L1 tabs remain unchanged. Give actual Knowledge SGK
+ * subsections an explicit, uniform rhythm; no fabricated section text. */
+.md-typeset.thpt-g10-knowledge-ap1 > .tabbed-set > .tabbed-content > .tabbed-block:nth-child(2) h3 {
+  margin: 1.7rem 0 .85rem;
+  padding: .65rem .8rem;
+  border-left: 3px solid var(--md-primary-fg-color);
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  background: var(--md-code-bg-color);
+  border-radius: 0 .32rem .32rem 0;
+  scroll-margin-top: 6rem;
+}
+.md-typeset.thpt-g10-knowledge-ap1 .thpt-g10-knowledge-sections {
+  margin: .65rem 0 1.25rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: .45rem;
+  background: var(--md-code-bg-color);
+  padding: .35rem .65rem;
+}
+.md-typeset.thpt-g10-knowledge-ap1 .thpt-g10-knowledge-sections summary {
+  cursor: pointer;
+  font-weight: 700;
+  padding: .3rem 0;
+}
+.md-typeset.thpt-g10-knowledge-ap1 .thpt-g10-knowledge-sections ol {
+  margin: .6rem 0 .6rem 1.1rem;
+  padding: 0;
+  columns: 2;
+  column-gap: 1.35rem;
+}
+.md-typeset.thpt-g10-knowledge-ap1 .thpt-g10-knowledge-sections li {
+  break-inside: avoid;
+  margin: .25rem 0;
+  line-height: 1.5;
+  font-size: .84rem;
+}
+@media(max-width: 720px) {
+ .md-typeset.thpt-g10-knowledge-ap1 .thpt-g10-knowledge-sections ol {columns: 1}
+ .md-typeset.thpt-g10-knowledge-ap1 > .tabbed-set > .tabbed-content > .tabbed-block:nth-child(2) h3 {
+  margin-top: 1.35rem;
+  padding: .5rem .55rem;
+ }
+}
