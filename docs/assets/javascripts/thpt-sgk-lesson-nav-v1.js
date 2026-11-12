@@ -46,10 +46,23 @@ const run=()=>{
     const marker=p.querySelector("strong");
     const label=marker?.textContent?.trim()||"";
     if(!/^(?:Cách đọc hình|Quan sát hình|Đọc hình)/.test(label))continue;
-    const next=p.nextElementSibling;
-    if(next?.tagName!=="FIGURE")continue;
-    p.parentElement.insertBefore(next,p);
-    next.dataset.g10FigureBeforeGuide="true";
+    // MkDocs emits some source <figure> as <p><figure>...</figure></p>.
+    // HTML5's parser may create an empty <p> before that figure. Skip only
+    // these empty wrappers, never reorder ordinary text or unrelated figures.
+    let next=p.nextElementSibling,figure=null;
+    for(let hop=0;hop<3&&next;hop++){
+     if(next.tagName==="FIGURE"){figure=next;break;}
+     if(next.tagName==="P"&&next.querySelector(":scope > figure")){
+      figure=next.querySelector(":scope > figure");break;
+     }
+     if(next.tagName==="P"&&!next.textContent.trim()&&!next.children.length){
+      next=next.nextElementSibling;continue;
+     }
+     break;
+    }
+    if(!figure)continue;
+    p.before(figure);
+    figure.dataset.g10FigureBeforeGuide="true";
    }
    const headings=[...knowledge.querySelectorAll("h3")];
    if(headings.length>=3){
