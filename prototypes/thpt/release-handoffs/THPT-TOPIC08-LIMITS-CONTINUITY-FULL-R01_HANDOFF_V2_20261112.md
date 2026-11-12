@@ -291,7 +291,7 @@ Exactly 18 reuse-only placements for P01–P18. Already-public Practice content 
 
 ## PRIVATE_RD1_CUSTODY_METADATA
 
-0 private items imported; SHA256 above is empty-file sentinel for NO private bank, not a SHA of owner-held 17 private ChV RD1 questions. Any official independent Topic readiness requires a separate owner-controlled private bank off public GitHub and its own review. Public reuse-only Self Check cannot award Mastery.
+0 held-out private items are included in this CĐ08 AUTHORING packet. Any future official independent Topic RD1 must be owner-held only and NOT on GitHub. SHA256 above is the empty-file sentinel for NO private bank, not a SHA of the 17 owner-held SGK ChV private RD1 questions. Any official independent Topic readiness requires a separate owner-controlled private bank off public GitHub and its own review. Public reuse-only Self Check cannot award Mastery.
 
 ## RELEASE_AND_OWNER_GATE
 
