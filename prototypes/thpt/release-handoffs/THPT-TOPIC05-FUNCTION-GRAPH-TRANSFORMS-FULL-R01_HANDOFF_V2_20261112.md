@@ -202,3 +202,36 @@ One item ID, one canonical bank; compact source_type is TOPIC_NEW_CANDIDATE; no 
 | Q16 | 0 imported confidential RD1 and no Mastery from exposed public selfcheck; Final Submit runtime safety separate | AUTHOR_SELF_VERIFIED | SOURCE_9323df37ff_RECEIPT_dc21091e2d | RELEASE_SEPARATE_NO_DEPLOY |
 | Q17 | 3 complete Topic pages independent of SGK and other planned CĐ04/06/08/09/10 | AUTHOR_SELF_VERIFIED | SOURCE_9323df37ff_RECEIPT_dc21091e2d | RELEASE_SEPARATE_NO_DEPLOY |
 | Q18 | Git blobs exact source/bank/3 SVG; historic pilot independent PASS stays original snapshot, author self-QA 110 checks | AUTHOR_SELF_VERIFIED | SOURCE_9323df37ff_RECEIPT_dc21091e2d | RELEASE_SEPARATE_NO_DEPLOY |
+
+## S1_SGK_SBT_SOURCE
+
+Chứng cứ owner original SGK/SBT KNTT Toán 10 tập 2 đã đọc ảnh gốc và kiểm SHA256 07/11/2026 thuộc Draft #782; **lượt này chỉ đọc lại receipt**, không tuyên bố quét PDF mới. SGK B15 Hàm số trang in4–10/PDF one-based5–11, B16 Hàm số bậc hai in11–18/PDF12–19, PDF SHA256 `ee8a00392e1c9fc5b213e574666cf1f8487548737e138573f28a988c640fafe6`. SBT B15 in3–9/PDF4–10, B16 in10–15/PDF11–16, SHA256 `3cb33690e0627b9e8ac467c23625b7feb7d05a8422293db0e1b26e44ca6a78c7`. Original owner S1 image receipts Git blobs `001a9dd34cf8af83e787fd28d760431fe63e1f24` và `50f667cdfa3fa1aedf5a38c0bc7f80650a6835bf` của #782. S1 dùng xác thực nền hàm số, miền/tập giá trị, điểm/đồ thị, parabol và mô hình; tổng quát phép dịch/co giãn là học liệu Topic tự biên soạn, **không** nhận chúng xuất hiện nguyên văn trong SGK B15/B16. Không sao chép bài SBT có bản quyền.
+
+## D1_D6_EVIDENCE
+
+D1: 17 mô-đun giải thích WHY/định nghĩa/điều kiện/giới hạn áp dụng, kể cả miền sau biến đổi và điểm rỗng/đặc. D2: 17 ví dụ đã giải có lý do chọn phương pháp, không chỉ công thức. D3: 38 ID canonical public mới (34 Practice,4 Written) trải 17 outcome với ≥2 ID/outcome, đa dạng miền/đồ thị/phép biến đổi/mô hình. D4: bốn tự luận có rubric 7 điểm nguyên gốc cùng một bank, Anchor chỉ là nhãn. D5: ba SVG thật (parabol dịch, phản xạ/kéo dãn, chấm đoạn) có title/desc, tác giả giải thích cách đọc; lab tương tác SPEC_ONLY không hoạt động. D6: 17 Tự thử có tự mở đối chiếu + hướng khắc phục và chuyển câu.
+
+## PED1_PED6_EVIDENCE
+
+PED1 17 WHY từ data/đơn vị/nhìn đồ thị; PED2 17 tiền đề trong chuyên đề, học sinh không buộc quay SGK; PED3 từ quy tắc đơn trị và phép đổi tọa độ đến công thức; PED4 ba SVG có hướng dẫn đọc số và biên; PED5 17 ví dụ vì sao dùng so hiệu, hoàn phương, đổi điểm và kiểm giới hạn c/k≠0; PED6 17 Tự thử trước đối chiếu, 17 D6 nguyên nhân–kiến thức–tự luyện lại.
+
+## AUTHORING_A1_A7
+
+A1 exact source blob `9323df37ff8333f6c8c20fefbd68111051eee773`, Q18 self receipt blob `dc21091e2d8dca79346e67c6cb1a8344595922d3`, canonical bank blob `ab878f1a18dea87872449a79c27b75a612d81b39`. A2 đã có original S1 PDF SHA+image/pagination receipt ngày 07/11, không giả direct PDF lượt này. A3 Academic/PED của pilot M1–M7 R18 #782 được bảo toàn theo source cũ, **không được suy thành PASS độc lập CĐ05**; CĐ05 tự kiểm 110/110 phép kiểm. A4 17 outcome và 38 item ID, 4 Written /7; 17 public selfchecks reuse. A5 D1–D6/PED1–PED6, ba hình SVG, hai mô hình đặc tả. A6 new CĐ05 modules/questions/figures = DELTA_C_ACADEMIC_MATERIAL author-verified v3.0.1, P0/P1=0; không chạm source cũ. A7 0 private RD1 imported, Final Submit/no feedback trước nộp runtime RELEASE; không ghi Mastery từ public selfcheck.
+
+## DELTA_LEDGER
+
+Bộ thí điểm R18 #782 (48 outcome nối G10–12, 116 public selected IDs, private 30 câu nguồn owner) Academic/PED/RD1 PASS theo snapshot riêng: Git original student source `2340ea4975b37a457363eea59dd617070934983c`, receipt `d2e86bac887ff04cf41f5cc9a1fa3ca622a9ca63`. CĐ05 theo danh mục 22 tập trung function/graph transforms, không giả toàn bộ pilot bao phủ CĐ05 và không tái dụng đề private cũ. Nội dung CĐ05 hoàn toàn mới 17 module/38 public item/3 SVG nguồn riêng, Delta C tác giả trực tiếp tự kiểm theo owner v3.0.1; 116 item pilot và chuẩn SGK giữ nguyên.
+
+## PRIVATE_RD1_CUSTODY_METADATA
+
+RD1_PRIVATE_COUNT = 0
+PRIVATE_OWNER_HELD = YES_IF_FUTURE_OFFICIAL_TOPIC_READINESS
+PRIVATE_GIT_CONTENT = NONE
+PRIVATE_BANK_SHA256 = e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+
+Chuỗi SHA256 trên là **0 bytes private được nhập**, không phải hash 30 câu private pilot hoặc một owner-held CĐ05 RD1 hiện hữu. Câu đã luyện và xem đáp án chỉ được làm CLIENT_SELF_CHECK_NO_MASTERY, tuyệt đối không suy thành TOPIC_READINESS độc lập.
+
+## RELEASE_AND_OWNER_GATE
+
+RELEASE chưa tích hợp website, chưa test AP1–AP5, R1–R5, P1–P2 trên HEAD runtime. Cần bảo vệ Golden R4 5+1 / Adaptive Knowledge Tabs v2, responsive MathJax và SVG, keyboard/touch, canonical version và đúng 3 Topic pages. Trước Final Submit không key, feedback, AI Tutor, hint, rubric; sau nộp mới tự đối chiếu. Chủ dự án chưa cấp phép merge/deploy, branch SOURCE ONLY không tác động SGK, THCS, Firebase, Gemini, dữ liệu học sinh. Runtime Topic ID phải được chủ dự án phê duyệt; các lab SPEC_ONLY không mạo nhận tính năng chạy.
