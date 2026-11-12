@@ -1,0 +1,55 @@
+name: G10 B01-B06 Golden Editorial Numbering QA (Delta A · no deploy)
+on:
+  pull_request:
+    paths:
+      - "docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js"
+      - "scripts/test-g10-b01-b06-editorial-numbering-browser.cjs"
+      - ".github/workflows/g10-b01-b06-editorial-numbering-qa.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: g10-b01-b06-editorial-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  six-lesson-render:
+    name: Preserve six original SGK source blobs & theme, run 18 browser cases
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate JavaScript syntax (fail-closed)
+        run: |
+          node --check docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js
+          node --check scripts/test-g10-b01-b06-editorial-numbering-browser.cjs
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build preview without modifying production
+        run: |
+          python -m pip install --disable-pip-version-check mkdocs-material
+          mkdocs build --config-file mkdocs.thpt-preview.yml --site-dir site-thpt-preview
+      - name: Install isolated Chromium
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install chromium
+      - name: "18 real browser cases: B01–B06 × 390/820/1440; source+CSS SHA unchanged"
+        shell: bash
+        run: |
+          python -m http.server 8765 --bind 127.0.0.1 --directory site-thpt-preview > /tmp/g10-numbering-preview.log 2>&1 &
+          python - <<'PY'
+          import time, urllib.request
+          for i in range(50):
+              try:
+                  with urllib.request.urlopen("http://127.0.0.1:8765/thpt-preview/sgk/chuong-i/bai-1/",timeout=3) as result:
+                      if result.status==200:
+                          break
+              except Exception:
+                  time.sleep(.4)
+          else:
+              raise SystemExit("Preview HTTP server not ready")
+          PY
+          node scripts/test-g10-b01-b06-editorial-numbering-browser.cjs

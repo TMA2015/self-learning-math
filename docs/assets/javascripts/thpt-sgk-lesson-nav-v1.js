@@ -22,6 +22,37 @@ const unavailable=label=>{
  node.setAttribute("aria-disabled","true");
  return node;
 };
+// OWNER 12/11: G10 B01–B06 are layout-ready; ONLY add the existing
+// editorial 1.x–4.x labels in the rendered DOM. Source Markdown, mathematical
+// headings in tab 2 (already 2.x), canonical IDs, figure URLs and link anchors
+// remain byte-for-byte unchanged. No new CSS/theme; G10 B01–B06 live Golden.
+const numberG10FirstSix=(article)=>{
+ const set=article.querySelector(".tabbed-set");
+ if(!set)return;
+ const labels=[...set.querySelectorAll(":scope > .tabbed-labels > label")];
+ const blocks=[...set.querySelectorAll(":scope > .tabbed-content > .tabbed-block")];
+ const names=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
+ if(labels.length!==4||blocks.length!==4)return;
+ if(labels.every((node,i)=>node.textContent.trim()===(i+1)+". "+names[i]))return;
+ if(!labels.every((node,i)=>node.textContent.trim()===names[i]))return;
+ const discovery=[...blocks[0].querySelectorAll("h3")];
+ const original=["Cùng tìm hiểu","Ví dụ trực quan","Thuật ngữ và kiến thức, kỹ năng"];
+ if(discovery.length!==3||!discovery.every((node,i)=>node.textContent.trim()===original[i]))return;
+ // The existing 2.1–2.n titles are ALREADY numbered correctly in the
+ // original published SGK source: do not rewrite their content or IDs.
+ const knowledge=[...blocks[1].querySelectorAll("h3")];
+ if(!knowledge.length||!knowledge.every((node,i)=>node.textContent.trim().startsWith("2."+(i+1)+". ")))return;
+ const examples=[...blocks[2].querySelectorAll("h3")];
+ if(!examples.length||!examples.every((node,i)=>node.textContent.trim().startsWith("Ví dụ "+(i+1)+" —")))return;
+ const mistakes=[...blocks[3].querySelectorAll(":scope > details.tip > summary")];
+ if(!mistakes.length||mistakes.some(node=>!node.textContent.trim()))return;
+ labels.forEach((node,i)=>node.textContent=(i+1)+". "+names[i]);
+ const titles=["Cùng tìm hiểu","Ví dụ trực quan","Thuật ngữ, kiến thức và kỹ năng"];
+ discovery.forEach((node,i)=>node.textContent="1."+(i+1)+". "+titles[i]);
+ examples.forEach((node,i)=>node.textContent="3."+(i+1)+". "+node.textContent.trim());
+ mistakes.forEach((node,i)=>node.textContent="4."+(i+1)+". "+node.textContent.trim());
+ article.dataset.g10B01B06EditorialNumbered="true";
+};
 const run=()=>{
  const path=location.pathname;
  const match=path.match(/^(.*\/thpt-preview\/sgk\/)(?:(lop-(11|12))\/)?chuong-([ivx]+)\/bai-(\d+)\/?$/);
@@ -33,7 +64,10 @@ const run=()=>{
  if(chapters[chapterIndex]!==chapter)return; // fail closed on unexpected source mapping
  const article=document.querySelector(".md-content__inner");
  if(!article)return;
- if(grade===10)article.classList.add("thpt-g10-knowledge-ap1");
+ if(grade===10){
+  article.classList.add("thpt-g10-knowledge-ap1");
+  if(lesson<=6)numberG10FirstSix(article);
+ }
  if(article.querySelector("[data-sgk-lesson-nav]"))return;
  const root=match[1]+(grade===10?"":"lop-"+grade+"/");
  const lessonUrl=n=>root+"chuong-"+chapters[ends.findIndex(end=>n<=end)]+"/bai-"+n+"/";
