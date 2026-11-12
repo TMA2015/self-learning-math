@@ -11,6 +11,8 @@
 - **Ranh giới Topic:** mạch cơ bản từ góc định hướng đến đồ thị, phương trình và mô hình. Chuyên đề Hàm số/Đồ thị tổng quát thuộc CĐ05; giới hạn, đạo hàm, khảo sát tối ưu không nằm trong CĐ06. Các bài căn hàm sin, mô hình tổng hợp là mở rộng tự chọn, không nâng thành Core SGK.
 - **Điều kiện:** mọi nghiệm phương trình có k∈ℤ; tan loại cos=0, cot loại sin=0; nghiệm trên khoảng phải lọc đầu mút; người học có thể đi trọn Chuyên đề mà không cần mở SGK. Toàn bộ số liệu ví dụ là ví dụ tự biên soạn.
 
+# Kiến thức
+
 ## Vì sao cần lượng giác?
 
 Một vòng quay được mô tả bằng một góc có hướng. Chiếu điểm quay lên hai trục, ta thu được hai hàm số sin và cos; từ hình học đó xuất hiện công thức, sóng tuần hoàn và những phương trình có nhiều họ nghiệm. Không bắt đầu bằng bảng công thức: mỗi mảng dưới đây gắn tình huống, tiền đề, bản chất, ví dụ giải có lý do, tự thử và đường khắc phục.
