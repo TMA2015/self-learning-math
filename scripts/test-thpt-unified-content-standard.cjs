@@ -50,7 +50,7 @@ function validate(source, agents, queue) {
  const approvalStatus=(source.match(/^\*\*STATUS:\*\*\s*\x60([A-Z0-9_]+)\x60/m)||[])[1];
  if(["2.0.0","3.0.0","3.0.1","3.1.0"].includes(version)){
    if(version==="3.1.0"){
-     if(!["OWNER_APPROVED_SGK_EDITORIAL_STRUCTURE","OWNER_APPROVED_EFFECTIVE"].includes(approvalStatus))
+     if(approvalStatus!=="OWNER_APPROVED_EFFECTIVE")
        fail("SGK_V3_1_OWNER_EDITORIAL_APPROVAL_STATUS_REQUIRED");
    }else if(approvalStatus!=="OWNER_APPROVED_EFFECTIVE")fail("Q18_V2_OWNER_EFFECTIVE_STATUS_REQUIRED");
    const contract=fs.readFileSync(path.join(ROOT,"prototypes/thpt/THPT_TWO_LANE_SOURCE_LOCKED_HANDOFF_CONTRACT_v2_20261102.md"),"utf8");
@@ -89,6 +89,7 @@ function validate(source, agents, queue) {
   }
   if(version==="3.1.0"){
     const required=["## X-F. OWNER DECISION 12/11/2026",
+     "AFTER_GOVERNANCE_PR_821_MERGE_INTO_MAIN",
      "OWNER_GOLDEN_EDITORIAL_STRUCTURE = PASS",
      "OWNER_GOLDEN_PRODUCTION_STYLE = PRESERVE_EXISTING_G10_B01_B06",
      "1. Khám phá kiến thức","2. Kiến thức SGK","3. Ví dụ","4. Lỗi thường gặp",
@@ -155,7 +156,7 @@ function selfTest(){
  if(/\*\*VERSION:\*\* `3\.1\.0`/.test(full)){
     assert(validate(full.replace("## X-F. OWNER DECISION 12/11/2026","## X-F. [REMOVED]"),"","")
       .failures.some(e=>e.startsWith("SGK_EDITORIAL_V3_1_MISSING_CONTROL")));
-    assert(validate(full.replace("OWNER_APPROVED_SGK_EDITORIAL_STRUCTURE","GOVERNANCE_PROPOSAL_OWNER_REVIEW_PENDING"),"","")
+    assert(validate(full.replace("**STATUS:** `OWNER_APPROVED_EFFECTIVE`","**STATUS:** `GOVERNANCE_PROPOSAL_OWNER_REVIEW_PENDING`"),"","")
       .failures.includes("SGK_V3_1_OWNER_EDITORIAL_APPROVAL_STATUS_REQUIRED"));
     assert(validate(full.replace("Không duyệt giao diện màu sắc, cỡ chữ","Demo colors falsely approved"),"","")
       .failures.some(e=>e.startsWith("SGK_EDITORIAL_V3_1_MISSING_CONTROL")));
