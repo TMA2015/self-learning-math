@@ -70,7 +70,7 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 - [ ] AP3_FIGURE_READABILITY — title/desc + reading notes responsive/keyboard/touch.
 - [ ] AP4_SELF_STUDY_CLARITY — clarity Why→concept→method→firsttry→D6.
 - [ ] AP5_RESPONSIVE_VISUAL — real QA no report yet.
-- [ ] P1_DEPLOY_RECEIPT — not deployed.
-- [ ] P2_DEVICE_UAT — not accepted.
+- [ ] P1_DEPLOY_RECEIPT — Chưa có phát hành production, biên bản deploy và source/asset hash phải do RELEASE chứng minh sau khi được chủ dự án cho phép.
+- [ ] P2_DEVICE_UAT — Chưa kiểm tra nghiệm thu trên thiết bị thật; cần browser, Safari và quyết định nghiệm thu của chủ dự án ở nhánh RELEASE.
 
 **Ranh giới:** Có Kiến thức + Luyện tập + Tự kiểm tra công khai trong source. Tự kiểm tra chỉ là self-check 11 public reuse placements, KHÔNG đánh giá độc lập chính thức, KHÔNG Mastery. Phần tương tác là specification chưa triển khai. Không nhập RD1 private; SHA empty trên là digest 0 bytes đã nhập, không đại diện bank kín. Nhánh SGK, Firebase, học sinh, website và Golden UI không thay đổi.
