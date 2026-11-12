@@ -129,7 +129,8 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
      await page.waitForFunction(id=>document.getElementById(id)?.getBoundingClientRect().height>0,tocId);
      assert(await blocks.nth(1).isVisible(),where+" right TOC activates hidden Knowledge tab");
      assert.equal(new URL(page.url()).hash,"#"+tocId,where+" right TOC updates the URL");
-     const first=blocks.nth(1).locator("details.question").first();
+     await labels.nth(0).click(); // Voluntary First Try now lives in Discovery (owner S1 contract).
+     const first=blocks.nth(0).locator("details.question").first();
      await first.locator("summary").click();
      assert((await first.getAttribute("open"))!==null,where+" voluntary answer can be opened");
      await first.locator("summary").click();
