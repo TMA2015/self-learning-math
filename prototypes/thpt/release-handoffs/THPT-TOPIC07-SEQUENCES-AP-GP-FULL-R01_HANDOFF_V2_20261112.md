@@ -264,7 +264,7 @@ Same normative source: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v
 | Q10 | PED2 prerequisites each module | AUTHOR_QA_PASS: Integer indexing, inequalities, powers | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_BLOB_14174A_RECEIPT_52E67E |
 | Q11 | PED3 meaning before formula | AUTHOR_QA_PASS: Repeated differences versus ratios | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_BLOB_14174A_RECEIPT_52E67E |
 | Q12 | PED4 diagram reading guidance | AUTHOR_QA_PASS: Discrete graph / growth / timeline | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_BLOB_14174A_RECEIPT_52E67E |
-| Q13 | PED5 reason for method and limitations | AUTHOR_QA_PASS: q=0/1, |q|<1, r=0 | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_BLOB_14174A_RECEIPT_52E67E |
+| Q13 | PED5 reason for method and limitations | AUTHOR_QA_PASS: q equals zero or one, abs(q) below 1, r equals zero | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_BLOB_14174A_RECEIPT_52E67E |
 | Q14 | PED6 first try then voluntary compare + D6 | AUTHOR_QA_PASS: 18 self-guided checks | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_BLOB_14174A_RECEIPT_52E67E |
 | Q15 | Q15 exact 69 unique original+new, no clone | AUTHOR_QA_PASS: 47 references +22 new canonical | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_BLOB_14174A_RECEIPT_52E67E |
 | Q16 | Q16 protected private absence / public replay self-check | AUTHOR_QA_PASS: No official RD1 or Mastery | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_BLOB_14174A_RECEIPT_52E67E |
