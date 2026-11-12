@@ -20,12 +20,21 @@ for(const [lesson,anchor] of Object.entries(pedagogical)){
   assert(!banned.test(article),"B"+lesson+" published student article leaks review metadata");
   assert(!article.includes('class="admonition warning"'),"B"+lesson+" student page still has large admin warning");
   if(lesson==="17"){
-   const matches=[...article.matchAll(/<details class="thpt-r4-pedagogical-note"([^>]*)>/g)].filter(m=>!m[1].includes("data-ped-first-try")&&!m[1].includes("data-thpt-help-id"));
-   assert.equal(matches.length,1,"B17 original S1 fixed-a extension note must remain exactly once beside 5 new First Tries and 5 new D6");
-   assert(!/\bopen\b/.test(matches[0][1]),"B17 note must begin collapsed");
-   const noteStart=article.indexOf(matches[0][0]);
-   const noteEnd=article.indexOf("</details>",noteStart);
-   assert(noteStart>=0&&noteEnd>noteStart,"B17 approved R02 note missing");
+   // Model B uses the native MkDocs question/tip <details> wrapper instead
+   // of the prior custom-class wrapper. Identify this exact S1 scope note by
+   // its UNIQUE learner-visible summary, then verify its full original text.
+   const label="Lưu ý về phạm vi Core và mở rộng của bài toán tham số";
+   const summaries=[...article.matchAll(/<summary[^>]*>([\s\S]*?)<\/summary>/g)]
+     .filter(m=>m[1].includes(label));
+   assert.equal(summaries.length,1,
+     "B17 original S1 fixed-a extension note must remain exactly once beside 5 First Tries and 5 D6");
+   const noteStart=article.lastIndexOf("<details",summaries[0].index);
+   const opening=article.slice(noteStart,article.indexOf(">",noteStart)+1);
+   assert(noteStart>=0&&/class="[^"]*(?:question|tip)[^"]*"/.test(opening),
+     "B17 reviewed note must render as a native default-closed details box");
+   assert(!/<details\b[^>]*\sopen(?:\s|=|>)/.test(opening),"B17 note must begin collapsed");
+   const noteEnd=article.indexOf("</details>",summaries[0].index);
+   assert(noteEnd>summaries[0].index,"B17 approved R02 note missing");
    const note=article.slice(noteStart,noteEnd);
    assert(note.includes("hệ số bậc hai a cố định khác 0")
        &&note.includes("thuộc phạm vi vận dụng kiến thức Core"),

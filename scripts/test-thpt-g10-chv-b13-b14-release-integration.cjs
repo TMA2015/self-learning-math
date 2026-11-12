@@ -35,8 +35,17 @@ for(const n of [13,14]){
  assert(begin>6&&end>begin);
  assert.equal(read("docs/assets/images/thpt/"+figName),figureSource.slice(begin,end).trim()+"\n","D5 SVG differs from original R01");
  const page=read("docs/thpt-preview/sgk/chuong-v/bai-"+n+".md");
- assert(page.includes("## 1. Kiến thức SGK")&&page.includes("## 2. Ví dụ")&&page.includes(figName));
- assert.equal((page.match(/^### Ví dụ [123]\./gm)||[]).length,3);
+ const tabs=[...page.matchAll(/^=== "([^"]+)"$/gm)].map(x=>x[1]);
+ if(tabs.length){
+  assert.deepEqual(tabs,["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
+   "B"+n+" must keep exact Model B four horizontal tabs");
+  assert(page.includes(figName),"B"+n+" original D5 SVG missing");
+  assert.equal((page.match(/^    ### Ví dụ [123]\./gm)||[]).length,3,
+   "B"+n+" must keep the three full worked examples in Ví dụ tab");
+ }else{
+  assert(page.includes("## 1. Kiến thức SGK")&&page.includes("## 2. Ví dụ")&&page.includes(figName));
+  assert.equal((page.match(/^### Ví dụ [123]\./gm)||[]).length,3);
+ }
  assert.equal((page.match(/data-thpt-help-id=/g)||[]).length,2);
  for(const role of ["core","practice"])assert(read("docs/thpt-preview/sgk/chuong-v/luyen-tap.md").includes('data-thpt-open-quiz="b'+n+'-'+role+'"'));
  assert.equal(bank.forLesson(n,"core").length,2);

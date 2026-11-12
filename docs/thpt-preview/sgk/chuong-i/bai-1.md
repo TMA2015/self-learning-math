@@ -1,181 +1,225 @@
-# Bài 1. Mệnh đề
+# Toán 10 · Bài 1. Mệnh đề
 
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG I · KIẾN THỨC SGK KNTT</p>
 <p class="thpt-r4-lead">Học kiến thức, xem ví dụ và hình minh họa rồi tự luyện. Gợi ý/lời giải chỉ mở khi em chọn; không ghi điểm thành thạo.</p>
-<nav class="thpt-r4-lesson-tabs"><a href="../">Tổng quan chương</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav>
+
 </div>
 
-## Trước khi học — hiểu ý nghĩa trước khi nhớ quy tắc
+=== "Khám phá kiến thức"
 
-Em hãy đọc tình huống, nhớ lại kiến thức cũ và tự trả lời từng câu **Tự thử**. Chỉ mở lời giải sau khi tự làm. Sau đó tiếp tục với **Kiến thức SGK**, **Ví dụ** rồi **Core/Luyện tập**. Hoạt động này không chấm điểm hay ghi mức độ thành thạo.
+    ### Cùng tìm hiểu
 
-### Mệnh đề và mệnh đề chứa biến
+    Khi nghe một câu nói, đôi khi em có thể kiểm tra được câu đó **đúng hay sai**, nhưng cũng có những câu không thể đem ra kiểm tra theo cách ấy. Chẳng hạn, “14 chia hết cho 7” là một khẳng định đúng; “14 là số lẻ” là một khẳng định sai. Còn “Bạn đã làm bài tập chưa?” là một **câu hỏi**, không khẳng định điều gì đúng hay sai.
 
-**Vì sao cần học?** Khi đọc thông báo, ta cần biết câu nào có thể kiểm chứng đúng hoặc sai; câu hỏi và câu chưa xác định giá trị biến chưa thể đem ra kết luận.
+    Toán học gọi những câu khẳng định có thể xác định **đúng hoặc sai** như hai câu đầu là **mệnh đề**. Một mệnh đề có thể sai mà vẫn là mệnh đề: điều quan trọng là nó có giá trị đúng hoặc sai xác định, chứ không phải ta muốn nó đúng.
 
-**Em đã biết gì?** Nhớ khái niệm câu khẳng định, câu hỏi, số tự nhiên; một chữ như k có thể thay bằng nhiều giá trị.
+    Bây giờ hãy xét “\(n+2=7\)”. Nếu chưa biết \(n\) bằng bao nhiêu thì em chưa thể nói cả câu đúng hay sai. Nhưng khi thay \(n=5\), câu trở thành \(5+2=7\), là một mệnh đề đúng; thay \(n=4\), câu trở thành \(4+2=7\), là một mệnh đề sai. Đây là một **mệnh đề chứa biến**: ta phải xác định biến hoặc phát biểu thêm điều kiện thì mới xét được giá trị đúng sai.
 
-**Hiểu bản chất trước công thức** Mệnh đề là câu khẳng định có thể gắn đúng hoặc sai. “k+2=7” chưa được quyết định nếu chưa biết k. Đừng đánh giá đúng/sai từ cảm giác.
+    Một điều thú vị khác là **chỉ một trường hợp** cũng có thể làm thay đổi kết luận. Nếu ai đó nói “Tất cả học sinh trong một đội đều biết bơi”, thì để bác bỏ câu này, em chỉ cần tìm được **một thành viên không biết bơi**. Em không cần chứng minh rằng không ai biết bơi. Đó là ý tưởng của *phủ định* và *phản ví dụ*.
 
-**Quy tắc và điều kiện áp dụng** Trong một miền D, câu P(k) chứa biến chỉ cho ra một mệnh đề xác định khi đã thay k bằng giá trị thuộc D, hoặc đóng bằng lượng từ.
+    ### Ví dụ trực quan
 
-**Vì sao làm theo cách này?** Trước hết xác định loại câu, rồi nếu là khẳng định mới xét miền và kiểm tra. Không được gán “sai” cho một câu hỏi hoặc câu chứa biến chưa xác định.
+    Một học sinh nêu: “Nếu một số nguyên chia hết cho 6 thì nó chia hết cho 3”. Đúng, vì số ấy viết được dưới dạng \(6k=3(2k)\) với \(k\in\mathbb Z\). Nhưng nếu đổi chiều thành “Nếu một số nguyên chia hết cho 3 thì nó chia hết cho 6”, câu mới lại sai: số 3 là phản ví dụ.
 
-**Tự thử trước Core** Trong ba câu sau, câu nào là mệnh đề và câu nào là mệnh đề chứa biến hoặc câu hỏi? (a) “14 chia hết cho 7”. (b) “Bạn đã hoàn thành bài chưa?”. (c) “k+2=7”, với k chưa được gán giá trị.
+    Hai câu nghe gần giống nhau nhưng **không cùng ý nghĩa**. Bởi vậy, trong toán học, một câu “nếu … thì …” phải luôn được đọc đúng chiều; muốn có “khi và chỉ khi”, ta cần đúng ở **cả hai chiều**.
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY01" markdown="1">
-<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+    ### Thuật ngữ và kiến thức, kỹ năng
 
-(a) là mệnh đề **đúng**, vì 14=7×2. (b) là câu hỏi, không phải mệnh đề. (c) là mệnh đề chứa biến; khi k=5 nó đúng, khi k=4 nó sai, vì vậy chưa thể đánh giá khi không biết k.
+    **Thuật ngữ:** mệnh đề, giá trị đúng/sai, mệnh đề chứa biến, phủ định, mệnh đề kéo theo, mệnh đề đảo, điều kiện cần và đủ, mệnh đề tương đương, lượng từ “với mọi” và “tồn tại”, phản ví dụ.
 
-</details>
+    **Sau bài học, em cần làm được:** phân biệt mệnh đề với câu hỏi và mệnh đề chứa biến; viết phủ định đúng phạm vi; xác định chiều của \(P\Rightarrow Q\) và chiều đảo; biết khi nào cần chứng minh hai chiều; đọc, viết và phủ định các phát biểu với \(\forall\), \(\exists\).
 
-**Nếu chưa làm được:** Đánh đồng câu chưa xác định k với một mệnh đề sai. Trở lại định nghĩa ở phần Kiến thức SGK bên dưới và phần hỗ trợ tự khắc phục ở cuối bài.
+=== "Kiến thức SGK"
 
-### Phủ định phát biểu
+    ### 2.1. Mệnh đề và mệnh đề chứa biến
 
-**Vì sao cần học?** Muốn bác bỏ tuyên bố “mọi thành viên đều ...”, không cần chứng minh cả nhóm sai; chỉ một phản ví dụ đã đủ.
+    **Mệnh đề** là một câu khẳng định có giá trị **đúng** hoặc **sai**, không đồng thời cả hai. “\(2+3=5\)” là mệnh đề đúng; “\(5>10\)” là mệnh đề sai; câu “Em có thích toán không?” không phải mệnh đề.
 
-**Em đã biết gì?** Nhận biết tập những người đang nói đến và phân biệt “mọi người” với “có ít nhất một người”.
+    Một phát biểu như \(P(x):x+2=7\) chứa biến \(x\). Nếu không gán \(x\) và cũng không có lượng từ quy định phạm vi, ta chưa có một mệnh đề với giá trị đúng/sai xác định. Thay \(x=5\) cho mệnh đề đúng; thay \(x=4\) cho mệnh đề sai.
 
-**Hiểu bản chất trước công thức** Phủ định phải đúng chính khi phát biểu gốc sai; không được đổi tùy tiện chủ ngữ, phạm vi hay dữ kiện.
+    Trong một câu có biến, phải chú ý **miền đang xét**. Chẳng hạn, câu “\(n\) chia hết cho 2” thường được hiểu với \(n\in\mathbb Z\); còn bài toán dùng số thực phải nói rõ miền là \(\mathbb R\). Đổi miền có thể làm thay đổi cả ý nghĩa và giá trị của phát biểu.
 
-**Quy tắc và điều kiện áp dụng** Phủ định của “mọi x∈D đều có P(x)” là “tồn tại x∈D không có P(x)”. Phủ định x≥a là x<a trên cùng miền.
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ:</strong> Sai vẫn có thể là một <em>mệnh đề</em>. Câu hỏi không phải mệnh đề; phát biểu chứa biến chưa gán giá trị cần xác định biến hoặc miền và lượng từ trước khi kết luận.</div>
 
-**Vì sao làm theo cách này?** Tìm lượng từ và điều kiện trước; đổi “mọi” ↔ “tồn tại”, đổi P thành không-P. Nếu có dấu, phủ định cả dấu gồm biên. Không dùng “mọi người đều không” để phủ định “mọi người đều có”.
+    **Em vận dụng.** Trong ba câu sau, câu nào là mệnh đề và câu nào là mệnh đề chứa biến hoặc câu hỏi? (a) “14 chia hết cho 7”. (b) “Bạn đã hoàn thành bài chưa?”. (c) “\(k+2=7\)”, với \(k\) chưa được gán giá trị.
 
-**Tự thử trước Core** Phủ định chính xác câu “Tất cả các thành viên đội bóng đều biết bơi” là phát biểu nào: (A) “Không ai biết bơi”; (B) “Có ít nhất một thành viên không biết bơi”? Giải thích.
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY01" hidden></span>
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY02" markdown="1">
-<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+    ??? question "Em đã tự làm? Mở lời giải để đối chiếu"
 
-Chọn **(B)**. Chỉ cần một thành viên không biết bơi thì câu “tất cả đều biết bơi” sai; (A) mạnh hơn mức cần thiết và không phải phủ định tương đương.
+        (a) là mệnh đề **đúng**, vì \(14=7\times2\). (b) là câu hỏi, không phải mệnh đề. (c) là mệnh đề chứa biến; khi \(k=5\) nó đúng, khi \(k=4\) nó sai, vì vậy chưa thể đánh giá khi không biết \(k\).
 
-</details>
 
-**Nếu chưa làm được:** Dùng “không ai” để phủ định “tất cả”. Tự kiểm một nhóm ba người có hai người biết bơi rồi quay về phần Kiến thức SGK bên dưới / phần hỗ trợ tự khắc phục ở cuối bài.
+    ### 2.2. Phủ định một mệnh đề
 
-### Kéo theo, đảo, điều kiện đủ/cần
+    Nếu \(P\) là một mệnh đề, phủ định của \(P\), ký hiệu \(\neg P\) hoặc \(\overline{P}\), là phát biểu **đúng khi \(P\) sai và sai khi \(P\) đúng**. Ví dụ, phủ định của “\(7\) là số chẵn” là “\(7\) không phải số chẵn”.
 
-**Vì sao cần học?** Một điều kiện đủ để được cấp quyền không nhất thiết là điều kiện bắt buộc; nhầm chiều suy luận sẽ làm bài chứng minh sai.
+    <div class="thpt-g10-table-scroll"><table class="thpt-g10-knowledge-table">
+    <thead><tr><th>\(P\)</th><th>\(\neg P\)</th></tr></thead>
+    <tbody>
+    <tr><td>Đúng</td><td>Sai</td></tr>
+    <tr><td>Sai</td><td>Đúng</td></tr>
+    </tbody></table></div>
 
-**Em đã biết gì?** Biết số nguyên chia hết cho 4, chia hết cho 8 và khái niệm phản ví dụ.
+    Nếu phủ định liên quan đến một bất đẳng thức, hãy đổi cả phần **dấu bằng**: phủ định của \(x\ge a\) là \(x<a\), phủ định của \(x>a\) là \(x\le a\). Với câu có từ “mọi”, chỉ cần **một trường hợp không thỏa** là đã bác bỏ toàn bộ câu, chứ không phải chứng minh tất cả đều không thỏa.
 
-**Hiểu bản chất trước công thức** P kéo theo Q nghĩa là khi P đúng, Q cũng phải đúng. Chiều Q kéo theo P là câu khác, cần chứng minh riêng.
+    Giả sử \(P\) là “Tất cả thành viên đội bóng đều biết bơi”. Câu phủ định đúng là “Có **ít nhất một** thành viên đội bóng không biết bơi”. Câu “Không ai biết bơi” có thể mạnh hơn nhiều và không tương đương với phủ định của \(P\).
 
-**Quy tắc và điều kiện áp dụng** P⇒Q sai duy nhất khi P đúng và Q sai; P là điều kiện đủ cho Q, Q là điều kiện cần cho P.
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ:</strong> Phủ định phải đảo đúng/sai, nhưng vẫn giữ nguyên phạm vi đối tượng. Với “tất cả”, phủ định thường bắt đầu bằng “có ít nhất một … không …”.</div>
 
-**Vì sao làm theo cách này?** Chứng minh chiều thuận theo định nghĩa bội số. Để bác bỏ chiều đảo, tìm một số thỏa Q nhưng không thỏa P; hình FIG-G10-B01-01 chỉ cho trực giác, không thay chứng minh.
+    **Em vận dụng.** Phủ định chính xác câu “Tất cả các thành viên đội bóng đều biết bơi” là phát biểu nào: (A) “Không ai biết bơi”; (B) “Có ít nhất một thành viên không biết bơi”? Giải thích.
 
-**Tự thử trước Core** Với n∈ℤ: (P) “n chia hết cho 8”, (Q) “n chia hết cho 4”. P⇒Q đúng hay sai? Mệnh đề đảo Q⇒P đúng hay sai? Hãy chỉ ra một phản ví dụ nếu có.
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY02" hidden></span>
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY03" markdown="1">
-<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+    ??? question "Em đã tự làm? Mở lời giải để đối chiếu"
 
-P⇒Q **đúng**, vì n=8t=4(2t). Q⇒P **sai**: n=4 chia hết cho 4 nhưng không chia hết cho 8.
+        Chọn **(B)**. Chỉ cần một thành viên không biết bơi thì câu “tất cả đều biết bơi” sai; (A) mạnh hơn mức cần thiết và không phải phủ định tương đương.
 
-</details>
 
-**Nếu chưa làm được:** Suy ngược chỉ vì hai điều kiện có liên quan. Tự vẽ hai tập bội số theo chiều bao hàm rồi đối chiếu phần hỗ trợ tự khắc phục ở cuối bài.
+    ### 2.3. Mệnh đề kéo theo, đảo và tương đương
 
-### Tương đương và chứng minh hai chiều
+    Mệnh đề **“Nếu \(P\) thì \(Q\)”**, viết \(P\Rightarrow Q\), có nghĩa là: bất cứ khi nào \(P\) đúng thì \(Q\) cũng phải đúng. Mệnh đề này **chỉ sai** trong trường hợp \(P\) đúng nhưng \(Q\) sai. Các trường hợp còn lại được xem là đúng theo quy ước giá trị chân lý.
 
-**Vì sao cần học?** “Khi và chỉ khi” là khẳng định mạnh: phải đi được cả chiều đi và chiều về, không thể chỉ thấy vài ví dụ đúng là kết luận.
+    <div class="thpt-g10-table-scroll"><table class="thpt-g10-knowledge-table">
+    <thead><tr><th>\(P\)</th><th>\(Q\)</th><th>\(P\Rightarrow Q\)</th></tr></thead>
+    <tbody>
+    <tr><td>Đúng</td><td>Đúng</td><td>Đúng</td></tr>
+    <tr><td>Đúng</td><td>Sai</td><td><strong>Sai</strong></td></tr>
+    <tr><td>Sai</td><td>Đúng</td><td>Đúng</td></tr>
+    <tr><td>Sai</td><td>Sai</td><td>Đúng</td></tr>
+    </tbody></table></div>
 
-**Em đã biết gì?** Biết số chẵn có dạng 2m với m∈ℤ và cộng/trừ số chẵn vẫn giữ tính chẵn.
+    Trong \(P\Rightarrow Q\), ta gọi \(P\) là **điều kiện đủ** để có \(Q\), còn \(Q\) là **điều kiện cần** để có \(P\). Hai cách gọi không có nghĩa là hai mệnh đề giống nhau.
 
-**Hiểu bản chất trước công thức** P và Q tương đương khi điều kiện P bảo đảm Q và Q cũng bảo đảm P. Hai phát biểu cùng đúng trên vài giá trị chưa đủ.
+    Câu **đảo** của \(P\Rightarrow Q\) là \(Q\Rightarrow P\). Chiều đảo phải được kiểm chứng riêng, không tự suy từ chiều thuận. Hãy quan sát hình: các số chia hết cho 6 đều chia hết cho 3; nhưng số 3 nằm ngoài nhóm số chia hết cho 6.
 
-**Quy tắc và điều kiện áp dụng** P⇔Q nghĩa là (P⇒Q) và (Q⇒P) đều đúng trên cùng miền.
+    <figure class="thpt-r4-plot thpt-r4-concept-figure">
+    <img src="../../../../assets/images/thpt/THPT_G10_B01_IMPLICATION_DIVISIBILITY_D5_R01.svg" loading="lazy" alt="Nhóm các số nguyên chia hết cho 6 nằm trong nhóm chia hết cho 3; số 3 là phản ví dụ cho mệnh đề đảo">
+    <figcaption>Đọc hình: tập bội của 6 nằm trong tập bội của 3. Đây là trực giác về chiều kéo theo; để chứng minh tổng quát, viết \(n=6k=3(2k)\). Muốn bác bỏ chiều đảo, lấy \(n=3\).</figcaption>
+    </figure>
 
-**Vì sao làm theo cách này?** Chứng minh lần lượt hai chiều. Nếu một chiều không đúng thì dùng phản ví dụ, không kết luận tương đương.
+    Nếu cả \(P\Rightarrow Q\) **và** \(Q\Rightarrow P\) đều đúng trên cùng miền, ta viết \(P\Leftrightarrow Q\) và đọc là **“\(P\) khi và chỉ khi \(Q\)”**. Khi chứng minh tương đương, phải chứng minh **hai chiều**, hoặc lập luận bằng các phép biến đổi tương đương hợp lệ.
 
-**Tự thử trước Core** Với n∈ℤ, “n chẵn khi và chỉ khi n+2 chẵn” có đúng không? Hãy trình bày riêng hai chiều.
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ:</strong> \(P\Rightarrow Q\) không tự cho phép đổi chiều; \(P\Leftrightarrow Q\) đòi hỏi chứng minh cả hai chiều. Kiểm bằng phản ví dụ khi nghi ngờ chiều đảo.</div>
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY04" markdown="1">
-<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+    **Em vận dụng — chiều kéo theo.** Với \(n\in\mathbb Z\): \(P\): “\(n\) chia hết cho 8”, \(Q\): “\(n\) chia hết cho 4”. \(P\Rightarrow Q\) đúng hay sai? Mệnh đề đảo \(Q\Rightarrow P\) đúng hay sai? Hãy chỉ ra một phản ví dụ nếu có.
 
-**Đúng.** Nếu n=2m thì n+2=2(m+1) chẵn. Nếu n+2=2k thì n=2(k−1) cũng chẵn. Cả hai chiều đúng trên ℤ.
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY03" hidden></span>
 
-</details>
+    ??? question "Em đã tự làm? Mở lời giải để đối chiếu"
 
-**Nếu chưa làm được:** Chỉ chứng minh chiều n chẵn ⇒ n+2 chẵn rồi dừng; trở lại khái niệm P⇔Q và phần hỗ trợ tự khắc phục ở cuối bài.
+        \(P\Rightarrow Q\) **đúng**, vì \(n=8t=4(2t)\). \(Q\Rightarrow P\) **sai**: \(n=4\) chia hết cho 4 nhưng không chia hết cho 8.
 
-### Lượng từ mọi / tồn tại và phủ định
 
-**Vì sao cần học?** Một mệnh đề nói về mọi trường hợp đòi hỏi lập luận tổng quát, nhưng một trường hợp thất bại đủ bác bỏ; câu “tồn tại” chỉ cần một chứng cứ.
+    **Em vận dụng — hai chiều.** Với \(n\in\mathbb Z\), “\(n\) chẵn khi và chỉ khi \(n+2\) chẵn” có đúng không? Hãy trình bày riêng hai chiều.
 
-**Em đã biết gì?** Biết ℤ gồm số âm, 0, số dương; bình phương của 0 bằng 0.
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY04" hidden></span>
 
-**Hiểu bản chất trước công thức** “Mọi” khẳng định không có ngoại lệ trong miền; “tồn tại” khẳng định có ít nhất một trường hợp.
+    ??? question "Em đã tự làm? Mở lời giải để đối chiếu"
 
-**Quy tắc và điều kiện áp dụng** ¬(∀n∈ℤ P(n)) ⇔ ∃n∈ℤ ¬P(n). Khi phủ định n²>0 phải viết n²≤0.
+        **Đúng.** Nếu \(n=2m\) thì \(n+2=2(m+1)\) chẵn. Nếu \(n+2=2k\) thì \(n=2(k-1)\) cũng chẵn. Cả hai chiều đúng trên \(\mathbb Z\).
 
-**Vì sao làm theo cách này?** Kiểm một ví dụ phản bác khi xét “mọi”; nếu tìm được, viết phủ định bằng ∃ và giữ nguyên miền. Không đổi miền ℤ sang ℝ giữa chừng.
 
-**Tự thử trước Core** Xét “Với mọi số nguyên n, n²>0”. Câu này đúng hay sai? Viết phủ định có lượng từ và chỉ ra một chứng cứ.
+    ### 2.4. Lượng từ “với mọi” và “tồn tại”
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY05" markdown="1">
-<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+    Câu “Mọi số nguyên đều có bình phương không âm” nói về **tất cả** các số nguyên. Ta viết \(\forall n\in\mathbb Z,\ n^2\ge0\). Muốn chứng minh phát biểu với \(\forall\), ta cần một lập luận đúng cho **mọi phần tử trong miền**.
 
-**Sai** vì n=0 cho n²=0 không lớn hơn 0. Phủ định: “Tồn tại số nguyên n sao cho n²≤0”, với n=0 là chứng cứ.
+    Ngược lại, câu “Có một số nguyên có bình phương bằng 0” chỉ cần **một ví dụ**: \(n=0\). Ký hiệu \(\exists\) mang nghĩa “tồn tại ít nhất một”.
 
-</details>
+    Phủ định của “mọi \(x\) thuộc \(D\) đều có tính chất \(P(x)\)” là “tồn tại ít nhất một \(x\) trong \(D\) không có tính chất đó”. Tương tự, phủ định của “tồn tại \(x\) có \(P(x)\)” là “mọi \(x\) đều không có \(P(x)\)”. Viết gọn:
 
-**Nếu chưa làm được:** Bỏ qua 0 trong ℤ hoặc đổi “>” thành “<” thay vì “≤”. Xem D1 lượng từ và phần hỗ trợ tự khắc phục ở cuối bài.
+    \[
+    \neg(\forall x\in D,\ P(x))\ \Leftrightarrow\ \exists x\in D,\ \neg P(x),
+    \]
 
----
+    \[
+    \neg(\exists x\in D,\ P(x))\ \Leftrightarrow\ \forall x\in D,\ \neg P(x).
+    \]
 
-## 1. Kiến thức SGK
+    Đừng đổi miền \(D\) khi phủ định. Nếu câu gốc là \(n^2>0\), phủ định đúng là \(n^2\le0\), **không phải** chỉ \(n^2<0\), bởi vì còn trường hợp bằng 0.
 
-### 1.1. Mệnh đề và mệnh đề chứa biến
-- **Mệnh đề** là câu khẳng định có giá trị đúng hoặc sai, không đồng thời cả hai. Câu hỏi/câu cảm thán không phải mệnh đề. Mệnh đề chứa biến P(x) có giá trị chân lý khi thay x bằng một giá trị xác định trong miền đang xét; nếu x chưa được gán, phải có lượng từ cùng miền xét mới thành mệnh đề xác định.
-- **Miền xét (domain)** cần được ghi rõ: “n chia hết cho 2” có nghĩa khi n là số nguyên; P(x) với x∈ℝ khác P(n) với n∈ℕ.
-### 1.2. Phủ định
-- Ký hiệu phủ định `¬P` hoặc `\overline P`. Nếu P đúng thì ¬P sai và ngược lại. Phủ định “x≥a” là “x<a”, phủ định “A⊆B” là tồn tại phần tử thuộc A mà không thuộc B.
-### 1.3. Kéo theo, đảo và tương đương
-- `P⇒Q` chỉ sai khi P đúng và Q sai; các trường hợp khác được xem là đúng theo quy ước giá trị chân lý. **Không** tự suy từ P⇒Q ra Q⇒P. Với P⇒Q, P là điều kiện **đủ** cho Q, còn Q là điều kiện **cần** cho P.
-- `P⇔Q` đúng khi hai chiều P⇒Q và Q⇒P đều đúng. Khi chứng minh một phát biểu “khi và chỉ khi”, phải chứng minh đủ hai chiều (hoặc dùng lập luận tương đương logic).
-### 1.4. Lượng từ
-- `∀x∈D, P(x)` nghĩa là mọi phần tử x trong D thỏa P(x); chỉ cần **một phản ví dụ** để bác bỏ. `∃x∈D, P(x)` chỉ cần một chứng cứ thỏa. Phủ định: `¬(∀x∈D, P(x)) ⇔ ∃x∈D, ¬P(x)` và `¬(∃x∈D, P(x)) ⇔ ∀x∈D, ¬P(x)`.
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ:</strong> Để bác bỏ “với mọi”, chỉ cần **một phản ví dụ**. Để chứng minh “tồn tại”, chỉ cần **một trường hợp thỏa mãn**. Khi phủ định, đổi lượng từ, phủ định điều kiện và giữ nguyên miền xét.</div>
 
+    **Em vận dụng.** Xét “Với mọi số nguyên \(n\), \(n^2>0\)”. Câu này đúng hay sai? Viết phủ định có lượng từ và chỉ ra một chứng cứ.
 
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY05" hidden></span>
 
-## 2. Ví dụ
+    ??? question "Em đã tự làm? Mở lời giải để đối chiếu"
 
-**Ví dụ 01.** “12 là số nguyên tố” là mệnh đề sai; “n+1=5” là mệnh đề chứa biến nếu n chưa có giá trị. Giải thích bằng sự tồn tại giá trị chân lý độc lập với biến chưa xác định.
+        **Sai** vì \(n=0\) cho \(n^2=0\) không lớn hơn 0. Phủ định: “Tồn tại số nguyên \(n\) sao cho \(n^2\le0\)”, với \(n=0\) là chứng cứ.
 
-**Ví dụ 02.** Với n∈ℤ, P:“n chia hết cho 6”, Q:“n chia hết cho 3”. Chứng minh P⇒Q vì n=6k=3(2k). Q⇒P sai; n=3 là phản ví dụ. Minh họa FIG-G10-B01-01 là hình tập con, không thay chứng minh.
 
-**Ví dụ 03.** Phủ định của “∀x∈ℝ, x²≥0” là “∃x∈ℝ: x²<0”; do x² không âm nên phủ định sai. Luôn đổi ∀ thành ∃ và đổi bất đẳng thức tương ứng.
+=== "Ví dụ"
 
-**Ví dụ 04.** Với n∈ℤ, “n chẵn ⇔ n² chẵn”: nếu n=2k thì n²=4k² chẵn; nếu n lẻ thì n² lẻ, nên nếu n² chẵn thì n chẵn.
+    Phần trên giúp em nắm các khái niệm. Sau đây là những bài toán cần dùng **định nghĩa, phản ví dụ hoặc chứng minh hai chiều**. Trong mỗi ví dụ, lời giải thích vì sao chọn phương pháp được đặt ngay cùng bài toán.
 
-## 3. Hình minh họa và hỗ trợ tự khắc phục
+    ### Ví dụ 1 — Nhận diện mệnh đề và xét đúng/sai
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B01_IMPLICATION_DIVISIBILITY_D5_R01.svg" loading="lazy" alt="Sơ đồ bội 6 nằm trong bội 3 và phản ví dụ cho chiều đảo"><figcaption>Quan hệ kéo theo và mệnh đề đảo: cần chứng minh, không suy từ riêng hình.</figcaption></figure>
+    **Đề bài.** Xét câu “Phương trình \(x^2+1=0\) có hai nghiệm thực phân biệt”. Đây có phải mệnh đề không, và đúng hay sai?
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-B01-01">
-<summary>Nhầm mệnh đề với mệnh đề chứa biến</summary>
-<p><strong>Dấu hiệu:</strong> Thấy x+2=5 thì khẳng định đúng/sai dù x chưa xác định.</p>
-<p><strong>Bản chất:</strong> Một mệnh đề cần chân lý xác định; phát biểu có biến phải nêu x hoặc miền x và lượng từ.</p>
-<p><strong>Tự sửa:</strong> Hỏi: phát biểu có biến nào chưa định? Gán hai giá trị x khác nhau để thử. Nếu đúng/sai đổi theo x, đó là P(x) chưa phải mệnh đề xác định.</p>
-<p><strong>Tiền đề:</strong> EX-G10-B01-01</p>
-<p><strong>Luyện lại:</strong> <a data-thpt-formative-id="THPT-G10-B01-C01" href="../luyen-tap/?item=THPT-G10-B01-C01">B01-C01</a></p>
-</details>
+    **Vì sao chọn cách này?** Trước tiên phân loại câu: đó là **một khẳng định rõ ràng**, nên có thể xét đúng/sai. Sau đó dùng tính chất của bình phương số thực, không cần giải bằng công thức nghiệm.
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-B01-02">
-<summary>Nhầm chiều kéo theo, đảo và lượng từ</summary>
-<p><strong>Dấu hiệu:</strong> Từ P⇒Q kết luận Q⇒P, hoặc phủ định “mọi” thành “mọi không”.</p>
-<p><strong>Bản chất:</strong> P⇒Q không đảm bảo Q⇒P; phủ định ∀ là ∃ với mệnh đề phủ định.</p>
-<p><strong>Tự sửa:</strong> Viết P,Q rõ bằng lời; chứng minh chiều có cơ sở; thử tìm phản ví dụ cho chiều đảo; khi phủ định ∀, chỉ cần một trường hợp không đạt.</p>
-<p><strong>Tiền đề:</strong> EX-G10-B01-02/03</p>
-<p><strong>Luyện lại:</strong> <a data-thpt-formative-id="THPT-G10-B01-P03" href="../luyen-tap/?item=THPT-G10-B01-P03">B01-P03</a> · <a data-thpt-formative-id="THPT-G10-B01-P05" href="../luyen-tap/?item=THPT-G10-B01-P05">B01-P05</a></p>
-</details>
+    **Lời giải.** Với mọi \(x\in\mathbb R\), \(x^2\ge0\) nên \(x^2+1\ge1>0\). Phương trình \(x^2+1=0\) **không có nghiệm thực**. Vậy đây là **một mệnh đề sai**.
 
-## 4. Tiếp tục học
+    **Kiểm lại.** “Sai” không đồng nghĩa với “không phải mệnh đề”.
 
-[Luyện tập Bài 1](luyen-tap.md) · [Tự luận Chương I](../../thu-vien/tu-luan-chuong-i.md)
+    ### Ví dụ 2 — Phủ định câu có “với mọi”
+
+    **Đề bài.** Phủ định của \(P\): “Mọi số thực \(x\) đều thỏa \(x^2\ge0\)” là gì? Mệnh đề phủ định đúng hay sai?
+
+    **Vì sao chọn cách này?** Câu gốc chứa “mọi”, nên để phủ định cần đổi thành “tồn tại” và đồng thời phủ định \(x^2\ge0\) thành \(x^2<0\).
+
+    **Lời giải.** Mệnh đề phủ định là: “Tồn tại số thực \(x\) sao cho \(x^2<0\)”. Mệnh đề này **sai** vì bình phương của số thực luôn không âm. Do đó \(P\) là mệnh đề đúng.
+
+    **Kiểm lại.** Phủ định của dấu \(\ge\) là \(<\), không phải \(\le\).
+
+    ### Ví dụ 3 — Chứng minh chiều thuận và tìm phản ví dụ cho chiều đảo
+
+    **Đề bài.** Với \(n\in\mathbb Z\), cho \(P\): “\(n\) chia hết cho 6”, \(Q\): “\(n\) chia hết cho 3”. Xét \(P\Rightarrow Q\) và \(Q\Rightarrow P\).
+
+    **Vì sao chọn cách này?** Để chứng minh chiều thuận, dùng định nghĩa chia hết với biến nguyên. Để bác bỏ chiều đảo, chỉ cần tìm một số chia hết cho 3 nhưng không chia hết cho 6.
+
+    **Lời giải.** Nếu \(n=6k\), \(k\in\mathbb Z\), thì \(n=3(2k)\), suy ra \(n\) chia hết cho 3: \(P\Rightarrow Q\) **đúng**. Chiều đảo **sai** vì \(n=3\) chia hết cho 3 nhưng không chia hết cho 6.
+
+    **Kiểm lại.** Hình ở phần 2.3 giúp hình dung tập bội số, nhưng **không thay** chứng minh với \(k\in\mathbb Z\).
+
+    ### Ví dụ 4 — Chứng minh hai chiều của một mệnh đề tương đương
+
+    **Đề bài.** Với \(n\in\mathbb Z\), chứng minh “\(n\) chẵn khi và chỉ khi \(n^2\) chẵn”.
+
+    **Vì sao chọn cách này?** Đây là mệnh đề **khi và chỉ khi**, nên cần đủ hai chiều. Chiều thuận dùng định nghĩa số chẵn; chiều ngược dùng phản chứng thông qua tính lẻ.
+
+    **Lời giải.** Nếu \(n=2k\), thì \(n^2=4k^2=2(2k^2)\), nên \(n^2\) chẵn. Ngược lại, nếu \(n\) lẻ thì \(n=2k+1\), suy ra \(n^2=4k(k+1)+1\) lẻ. Vậy \(n^2\) chẵn thì \(n\) không thể lẻ, nên \(n\) chẵn.
+
+    **Kết luận.** Cả hai chiều đều đúng; do đó \(n\) chẵn \(\Leftrightarrow n^2\) chẵn.
+
+=== "Lỗi thường gặp"
+
+    <span data-thpt-help-id="HELP-G10-B01-01" hidden></span>
+
+    ??? tip "Nhầm mệnh đề với mệnh đề chứa biến"
+
+        **Dấu hiệu:** Thấy \(x+2=5\) rồi kết luận ngay đúng hoặc sai dù chưa biết \(x\).
+
+        **Vì sao sai?** Phát biểu còn phụ thuộc biến chưa được gán. Hai giá trị \(x\) khác nhau có thể cho hai kết quả khác nhau.
+
+        **Tự sửa:** Trở lại mục 2.1. Thay \(x=3\) và \(x=4\) để so sánh, rồi xác định miền và lượng từ nếu cần. [Luyện lại câu Core](luyen-tap.md?item=THPT-G10-B01-C01).
+
+
+    <span data-thpt-help-id="HELP-G10-B01-02" hidden></span>
+
+    ??? tip "Nhầm chiều kéo theo hoặc phủ định sai lượng từ"
+
+        **Dấu hiệu:** Từ \(P\Rightarrow Q\) suy ngay \(Q\Rightarrow P\); hoặc phủ định “mọi” thành “mọi … không”.
+
+        **Vì sao sai?** Đảo chiều là một phát biểu khác cần chứng minh; phủ định “mọi” chỉ cần một trường hợp không thỏa.
+
+        **Tự sửa:** Viết \(P\), \(Q\) bằng lời; thử tìm phản ví dụ của chiều đảo. Với lượng từ, giữ nguyên miền xét và đổi “mọi” thành “tồn tại … không”. [Luyện chiều đảo](luyen-tap.md?item=THPT-G10-B01-P03) · [Luyện lượng từ](luyen-tap.md?item=THPT-G10-B01-P05).
+
+
+    **Tiếp tục học:** [Core và Luyện tập Chương I](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
+
+    <p class="thpt-r4-footnote">Nguồn kiến thức: SGK Toán 10 · Kết nối tri thức với cuộc sống · tập một · Bài 1. Lời giảng và ví dụ hỗ trợ tự học được SLM biên tập từ nguồn học liệu đã có.</p>
 
 <p class="thpt-r4-footnote">Nguồn: SGK Toán 10 KNTT tập 1, Bài 1 trang 5–11; SBT Bài 1 trang 5–7. Học liệu tự luyện không dùng làm bài đánh giá độc lập.</p>

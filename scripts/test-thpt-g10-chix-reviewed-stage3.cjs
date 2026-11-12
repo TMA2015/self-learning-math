@@ -17,7 +17,13 @@ for(const n of [26,27]){
  assert.equal(subset.filter(x=>x.role==="APPLICATION").length,1);
  assert.equal(subset.filter(x=>x.role==="CORE").length,2);
  const knowledge=read("docs/thpt-preview/sgk/chuong-ix/bai-"+n+".md");
- assert(knowledge.includes("## 1.")&&knowledge.includes("## 2.")&&knowledge.includes("EX-G10-B"+n+"-"),"Knowledge/explanation source not integrated B"+n);
+ const tabs=[...knowledge.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]);
+ if(tabs.length){
+  assert.deepEqual(tabs,["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],"B"+n+" exact four Knowledge tabs");
+  assert(knowledge.includes("EX-G10-B"+n+"-"),"B"+n+" original worked example identity missing");
+ }else{
+  assert(knowledge.includes("## 1.")&&knowledge.includes("## 2.")&&knowledge.includes("EX-G10-B"+n+"-"),"Knowledge/explanation source not integrated B"+n);
+ }
  assert(knowledge.includes("SBT")&&knowledge.includes("../luyen-tap/"));
 }
 assert.equal(bank.records.filter(x=>/B26-P04|B26-P05/.test(x.item_id)&&x.stem.includes("xác suất")).length,2,"Small probability/equiprobability distinctions must remain");

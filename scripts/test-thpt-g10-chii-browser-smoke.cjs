@@ -1,14 +1,19 @@
 "use strict";
 const assert=require("node:assert/strict"),{chromium}=require("playwright");
+const {verifyModelBLesson}=require("./test-thpt-g10-model-b-browser-helper.cjs");
+
 (async()=>{const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});try{for(const [width,height] of [[390,844],[820,1180],[1440,900]]){const page=await browser.newPage({viewport:{width,height}});try{for(const n of [3,4]){
  const response=await page.goto("http://127.0.0.1:8765/thpt-preview/sgk/chuong-ii/bai-"+n+"/",{waitUntil:"networkidle"});assert(response?.ok());
- assert.equal(await page.locator("[data-thpt-help-id]").count(),2);
+ if(!(await verifyModelBLesson(page,{n,chapter:"ii",tries:5,helps:2,images:n===3?["THPT_G10_B03_HALFPLANES_D5_R01.svg"]:["THPT_G10_B04_FEASIBLE_POLYGON_D5_R01.svg"]}))){
+assert.equal(await page.locator("[data-thpt-help-id]").count(),2);
  const image=page.locator(".thpt-r4-probability-figure img");assert.equal(await image.count(),1);
  await image.scrollIntoViewIfNeeded();
  await page.waitForFunction(()=>[...document.querySelectorAll(".thpt-r4-probability-figure img")].every(el=>el.complete&&el.naturalWidth>0),{timeout:15000});
  const i=await image.evaluate(el=>({loaded:el.complete&&el.naturalWidth>0,w:el.getBoundingClientRect().width,parent:el.parentElement.getBoundingClientRect().width}));assert(i.loaded&&i.w<=i.parent+1,"D5 SVG failed responsive check after visible load");
  await page.locator("[data-thpt-help-id] summary").first().click();assert(await page.locator("[data-thpt-help-id]").first().getAttribute("open")!==null);
- const id="THPT-G10-B0"+n+"-C01";const res=await page.goto("http://127.0.0.1:8765/thpt-preview/sgk/chuong-ii/luyen-tap/?item="+id,{waitUntil:"networkidle"});assert(res?.ok());
+ 
+}
+const id="THPT-G10-B0"+n+"-C01";const res=await page.goto("http://127.0.0.1:8765/thpt-preview/sgk/chuong-ii/luyen-tap/?item="+id,{waitUntil:"networkidle"});assert(res?.ok());
  const dlg=page.locator("dialog.thpt-r4-practice-dialog");await dlg.waitFor({state:"visible"});
  assert.equal(await dlg.locator("[data-thpt-canonical-item]").first().getAttribute("data-thpt-canonical-item"),id);
  const options=dlg.locator(".thpt-r4-formative-choice-group label");assert.equal(await options.count(),4,"MCQ must offer four selectable A–D radio options");

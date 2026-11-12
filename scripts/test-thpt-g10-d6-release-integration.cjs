@@ -1,4 +1,6 @@
 "use strict";
+const crypto=require("node:crypto");
+const {candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 // Technical integrity only: no Academic PASS or deployment authorization.
 const assert=require("node:assert/strict");
 const fs=require("node:fs");
@@ -33,12 +35,30 @@ for(let lesson=19;lesson<=25;lesson++){
  const md=fs.readFileSync(f,"utf8");
  const ids=[...md.matchAll(/data-thpt-help-id="(D6-G10-B\d{2}-\d{2})"/g)].map(x=>x[1]);
  assert.deepEqual(ids,["D6-G10-B"+lesson+"-01","D6-G10-B"+lesson+"-02"],"Exactly two reviewed R02 cards per lesson in "+f);
+ const candidate=candidateG10KnowledgeBlob(lesson);
+ if(candidate){
+  const pinned=crypto.createHash("sha1").update("blob "+Buffer.byteLength(md)+"\0").update(md).digest("hex");
+  assert.equal(pinned,candidate,"B"+lesson+": candidate source not pinned to Q18 ledger");
+ }
  for(const id of ids){
   const open='<details class="thpt-r4-pedagogical-note" data-thpt-help-id="'+id+'">';
-  const start=md.indexOf(open), stop=md.indexOf("</details>",start);
-  assert(start>=0&&stop>start,"R02 help card cannot be missing/unterminated: "+id);
-  const actual=md.slice(start,stop+"</details>".length);
-  assert.equal(hash32(actual),approvedHelpHashes[id],"R02 approved source text/links changed for "+id);
+  const start=md.indexOf(open);
+  if(start>=0){
+   const stop=md.indexOf("</details>",start);
+   assert(stop>start,"Historical D6 help card unterminated "+id);
+   assert.equal(hash32(md.slice(start,stop+"</details>".length)),approvedHelpHashes[id],
+     "Historical R02 help card changed "+id);
+  }else{
+   assert(candidate,"New D6 tip layout requires Q18 candidate source receipt "+id);
+   const marker='<span data-thpt-help-id="'+id+'" hidden></span>',at=md.indexOf(marker);
+   assert(at>=0&&md.indexOf(marker,at+1)<0,"Candidate D6 marker missing/duplicated "+id);
+   const tail=md.slice(at+marker.length);
+   assert(/^\s*\?\?\? tip "/.test(tail),"D6 answer must remain default-closed "+id);
+   const untilNext=tail.search(/\n\s*(?:<span data-thpt-help-id=|=== ")/);
+   const card=untilNext<0?tail:tail.slice(0,untilNext);
+   for(const term of ["Dấu hiệu:","Bản chất toán:","Tự sửa:","Kiến thức cần ôn:"])
+    assert(card.includes(term),"Missing substantive D6 pedagogy "+term+" in "+id);
+  }
  }
  helpCount+=ids.length;
  for(const s of ["Dấu hiệu:","Bản chất toán:","Tự sửa:","Kiến thức cần ôn:"]){

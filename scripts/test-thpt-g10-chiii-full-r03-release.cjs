@@ -1,54 +1,53 @@
 #!/usr/bin/env node
 "use strict";
-/* G10 ChIII FULL R03 RELEASE-only learner UI guard.
- * Academic: AUTHORING #749 immutable composite source Git blob
- * 9d186b2eb8d1c8250a716014beae3021625a6f6c;
- * independent component reviewer receipt blob
- * aeae036a487ffd8e30f1fd4bc65c655f7724e8f1.
- * No new item, private RD1, new standard, Gemini or Mastery change.
+const {expectedG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
+/* UX795 G10 ChIII: approved four-tab Delta C learner presentation.
+ * The original source/AUTHORING receipts remain historical, immutable;
+ * revised Knowledge requires new exact Git snapshots and Q01–Q18 gates.
+ * This checks Q15/16 and mathematical scope, not an independent PED verdict.
  */
-const assert=require("node:assert/strict");
-const fs=require("node:fs"),path=require("node:path");
+const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path"),crypto=require("node:crypto");
 const root=path.resolve(__dirname,".."),read=p=>fs.readFileSync(path.join(root,p),"utf8");
-const fnv=s=>{let h=2166136261;for(let i=0;i<s.length;i++)h=Math.imul(h^s.charCodeAt(i),16777619)>>>0;return h.toString(16).padStart(8,"0")};
+const sha1=s=>crypto.createHash("sha1").update("blob "+Buffer.byteLength(s)+"\0").update(s).digest("hex");
+const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
 const lessons=[
- {n:5,expectedOriginalFNV:"d2a9f02b",start:1},
- {n:6,expectedOriginalFNV:"74763784",start:6}
+ {n:5,start:1,sha:"dd1a9ecaa51a6ad1da0a6d86d6ac39847be68140",helps:["HELP-G10-B05-01","HELP-G10-B05-02"],figs:1, concepts:["\\sin","\\cos","\\tan","\\cot","180"]},
+ {n:6,start:6,sha:"0806c3f48c0b99109ff1b2531f9a839a3a16ec8c",helps:["HELP-G10-B06-01","HELP-G10-B06-02"],figs:2,concepts:["\\cos","\\sin","Heron","diện tích","bán kính"]}
 ];
-const ids=[];
-for(const {n,start,expectedOriginalFNV} of lessons){
- const p="docs/thpt-preview/sgk/chuong-iii/bai-"+n+".md",txt=read(p);
- const anchor="## 1. Kiến thức";
- assert.equal(txt.split(anchor).length,2,"One original D1/D2 section "+p);
- const before=txt.slice(0,txt.indexOf(anchor)),after=txt.slice(txt.indexOf(anchor));
- assert.equal(fnv(after),expectedOriginalFNV,"Original reviewed D1/D2/SVG/D6 must remain byte-identical "+p);
- assert(before.includes("Trước khi học — hiểu ý nghĩa trước khi nhớ quy tắc"),"Concept-first before formulas "+p);
- for(const l of ["Vì sao cần học?","Em đã biết gì?","Hiểu bản chất trước công thức","Cách đọc hình và hình dung","Vì sao làm theo cách này?","Tự thử trước Core"]){
-  assert.equal(before.split("**"+l+"**").length-1,5,"Five outcomes must each include "+l+" in "+p);
- }
- const matches=[...before.matchAll(/<details class="thpt-r4-pedagogical-note" markdown="1" data-ped-first-try="1" data-thpt-first-try-id="(THPT-G10-CHIII-TRY\d\d)">/g)];
- assert.equal(matches.length,5,"Expected five voluntary First Try disclosures in "+p);
- assert.equal((before.match(/<summary>Em đã tự thử\? Mở lời giải để đối chiếu<\/summary>/g)||[]).length,5);
- assert.equal((before.match(/<\/details>/g)||[]).length,5,"All voluntary responses must close");
- matches.forEach((m,i)=>{
-  const id="THPT-G10-CHIII-TRY"+String(start+i).padStart(2,"0");
-  assert.equal(m[1],id,"Canonical First Try order changed");
-  ids.push(id);
- });
- assert(!/(?:PED1|PED2|PED3|PED4|PED5|PED6) ·/.test(before),"Authoring labels exposed to student");
- assert(!/REVIEW_RECEIPT|NOTEBOOKLM_PENDING|CONTENT_READY:/i.test(before),"Review/internal metadata leaked");
- assert(!/\bR0[1-9]\b|HELP-G10-B0\d-\d\d|Hình hình/u.test(before),"Internal author labels or typo exposed to learner "+p);
- assert(txt.includes('href="../luyen-tap/"')&&txt.includes('href="../tu-kiem-tra-chuong/"'),"Original learner routes missing");
- assert.equal((after.match(/data-thpt-help-id="/g)||[]).length,2,"Original D6 must be unchanged");
- assert(after.includes("## 2. Ví dụ")&&after.includes("## 3. Hình minh họa"),"Academic D2/D5 not present");
+const all=[];
+for(const c of lessons){
+ const p="docs/thpt-preview/sgk/chuong-iii/bai-"+c.n+".md",txt=read(p);
+ assert.equal(sha1(txt),expectedG10KnowledgeBlob(c.n,c.sha),"B"+c.n+": exact Delta C source changed; lock Q18 receipt before accepting");
+ assert.deepEqual([...txt.matchAll(/^=== "([^"]+)"$/gm)].map(x=>x[1]),labels,
+  "B"+c.n+": four L1 tabs, no nested L2 tabs");
+ assert(!/^    === "/m.test(txt),"B"+c.n+": no Level 2 tabs during Phase 1");
+ const ids=[...txt.matchAll(/data-thpt-first-try-id="([^"]+)"/g)].map(x=>x[1]);
+ const expected=Array.from({length:5},(_,i)=>"THPT-G10-CHIII-TRY"+String(c.start+i).padStart(2,"0"));
+ assert.deepEqual(ids,expected,"B"+c.n+": exact five canonical First Try IDs, Q15");
+ all.push(...ids);
+ const helps=[...txt.matchAll(/data-thpt-help-id="([^"]+)"/g)].map(x=>x[1]);
+ assert.deepEqual(helps,c.helps,"B"+c.n+": D6 HELP IDs unchanged, Q15");
+ assert.equal((txt.match(/^    \?\?\? (?:question|tip) "/gm)||[]).length,7,
+  "B"+c.n+": seven self-reveal/remediation blocks must be collapsed");
+ assert.equal((txt.match(/<figure\b/g)||[]).length,c.figs,"B"+c.n+": mathematically matched SVG figure count");
+ for(const term of c.concepts)assert(txt.includes(term),"B"+c.n+": mathematical concept absent: "+term);
+ assert.equal((txt.match(/\\\(/g)||[]).length,(txt.match(/\\\)/g)||[]).length,"B"+c.n+": inline TeX delimiters");
+ assert.equal((txt.match(/\\\[/g)||[]).length,(txt.match(/\\\]/g)||[]).length,"B"+c.n+": block TeX delimiters");
+ assert(!/PREREQUISITE_CONFIRMED|NOTEBOOKLM_PENDING|REVIEW_RECEIPT|CONTENT_READY:/.test(txt),
+  "B"+c.n+": no QA vocabulary leaked to learner");
+ assert(txt.includes("luyen-tap.md")&&txt.includes("tu-kiem-tra-chuong.md"),
+  "B"+c.n+": Core/Final Submit links must resolve from actual Markdown location");
 }
-assert.equal(new Set(ids).size,10,"Each First Try has one canonical item ID");
+assert.equal(all.length,10);assert.equal(new Set(all).size,10);
 const b06=read("docs/thpt-preview/sgk/chuong-iii/bai-6.md");
-assert(/b=6,\s*c=8/.test(b06)&&b06.includes("A=30°")&&b06.includes("A=150°")&&b06.includes("=12"),"Original reviewed TRY08 area-transfer case changed");
-assert(b06.includes("(3,4,5)")&&b06.includes("(2,3,6)")&&b06.includes("không"),"Original reviewed TRY09 triangle-validity case changed");
+for(const key of ["b=6","c=8","30^\\circ","150^\\circ","(3,4,5)","(2,3,6)","10\\sqrt2"])
+  assert(b06.includes(key),"B06 critical original/transfer outcome lost: "+key);
 const practice=read("docs/thpt-preview/sgk/chuong-iii/luyen-tap.md");
-const check=read("docs/thpt-preview/sgk/chuong-iii/tu-kiem-tra-chuong.md");
-assert(practice.includes("data-thpt-practice-hub")&&practice.includes("data-thpt-open-quiz"),"Golden practice not preserved");
-assert(check.includes('data-g10-chapter-selfcheck="CHIII"')&&check.includes("Final Submit"),"Q16 self-check changed");
-assert(!check.includes("data-mastery-credit=")&&!practice.includes("data-mastery-credit="),"No new Mastery credit");
-console.log("PASS G10 ChIII FULL R03: 10 unique source-locked First Tries, PED1–PED6, original D1/D2/D5/D6 byte parity, TRY08/09, Golden/Q16 stable.");
+const self=read("docs/thpt-preview/sgk/chuong-iii/tu-kiem-tra-chuong.md");
+assert(practice.includes("data-thpt-practice-hub")&&practice.includes("data-thpt-open-quiz"),
+ "Golden practice and quiz mount must remain unchanged");
+assert(self.includes('data-g10-chapter-selfcheck="CHIII"')&&self.includes("Final Submit"),
+ "Q16 independent final-submission route must survive");
+assert(!self.includes("data-mastery-credit=")&&!practice.includes("data-mastery-credit="),
+ "No formative Mastery credit");
+console.log("PASS G10 ChIII UX795: exact B05/B06 SHA, four tabs, 10 canonical First Try, 4 HELP, 3 SVG and protected Core/Q16.");

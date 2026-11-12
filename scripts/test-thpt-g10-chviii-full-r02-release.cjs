@@ -7,6 +7,7 @@
  * answer and all five remediation steps; no second assessment item source.
  */
 const fs=require("node:fs"),path=require("node:path"),crypto=require("node:crypto"),assert=require("node:assert/strict");
+const {expectedG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 const root=path.resolve(__dirname,"..");
 const read=p=>fs.readFileSync(path.join(root,p),"utf8");
 const gitblob=p=>{const b=fs.readFileSync(path.join(root,p));return crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+b.length+"\0"),b])).digest("hex")};
@@ -102,6 +103,36 @@ assert.equal(records.length,12);
 const all=[];
 for(const n of [23,24,25]){
  const file="docs/thpt-preview/sgk/chuong-viii/bai-"+n+".md",source=read(file);
+  // Candidate Model B is separately source-locked: preserve the 12 canonical
+  // First Try/outcome/D6 mappings without forcing historical comment wrappers.
+  const tabs=[...source.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]);
+  if(tabs.length){
+   assert.deepEqual(tabs,["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
+     "B"+n+": four exact Model B tabs");
+   assert.equal(gitblob(file),expectedG10KnowledgeBlob(n,original[n]),"B"+n+": candidate SHA mismatch");
+   const set=records.filter(x=>x.lesson===n);
+   const ids=[...source.matchAll(/data-thpt-first-try-id="([^"]+)" data-outcome-id="([^"]+)"/g)]
+      .map(m=>({id:m[1],outcome:m[2]}));
+   assert.equal(ids.length,4,"B"+n+": four original First Try items");
+   for(let i=0;i<set.length;i++){
+    const k=set[i];
+    assert.equal(ids[i].id,k.id,"B"+n+": changed canonical item/order");
+    assert.equal(ids[i].outcome,k.outcome,"B"+n+": changed original outcome mapping");
+    assert(!all.includes(k.id),"B"+n+": repeated canonical first try"); all.push(k.id);
+    const ix=source.indexOf('data-thpt-first-try-id="'+k.id+'"');
+    const next=i+1<set.length?source.indexOf('data-thpt-first-try-id="'+set[i+1].id+'"',ix+1):source.length;
+    assert(ix>=0&&next>ix&&/^\s*\?\?\? question "/m.test(source.slice(ix,next)),
+      "B"+n+": each original First Try has a default-closed solution "+k.id);
+    const helpAt=source.indexOf('data-thpt-help-id="'+k.help+'"');
+    assert(helpAt>=0 && /^\s*\?\?\? tip "/m.test(source.slice(helpAt,helpAt+1100)),
+      "B"+n+": original reviewed D6 must remain a closed disclosure "+k.help);
+   }
+   assert((source.match(/^    \?\?\? question "/gm)||[]).length>=4,
+     "B"+n+": minimum four closed first attempts");
+   assert(!/data-thpt-readiness|data-mastery-credit|data-mastery-write/.test(source),
+     "B"+n+": no official Readiness/Mastery in Knowledge");
+   continue;
+  }
  const start="<!-- G10_CHVIII_FULL_R02_ALL_BEGIN -->",finish="<!-- G10_CHVIII_FULL_R02_ALL_END -->";
  assert(source.includes(start)&&source.includes(finish),"Missing bounded approved pedagogical additions B"+n);
  const restored=source.replace(/<!-- G10_CHVIII_FULL_R02_ALL_BEGIN -->[\s\S]*?<!-- G10_CHVIII_FULL_R02_ALL_END -->\n\n/,"");
@@ -148,8 +179,14 @@ if(process.argv.includes("--built")){
   const html=read("site/thpt-preview/sgk/chuong-viii/bai-"+n+"/index.html");
   assert.equal((html.match(/data-thpt-first-try-id=/g)||[]).length,4,"Four built First Tries B"+n);
   assert.equal((html.match(/data-thpt-help-id="HELP-G10-CHVIII-TRY\d\d"/g)||[]).length,4,"Four NEW reviewed D6 identities B"+n);
-  assert.equal((html.match(/<details class="question"/g)||[]).length,4,"Answer disclosure rendered, B"+n);
-  assert.equal((html.match(/<details class="tip"/g)||[]).length,4,"D6 disclosure rendered, B"+n);
+   const src=read("docs/thpt-preview/sgk/chuong-viii/bai-"+n+".md");
+   const modelB=src.includes('=== "Khám phá kiến thức"');
+   const expectedQuestions=modelB?(src.match(/^    \?\?\? question "/gm)||[]).length:4;
+   const expectedTips=modelB?(src.match(/^    \?\?\? tip "/gm)||[]).length:4;
+   assert.equal((html.match(/<details class="question"/g)||[]).length,expectedQuestions,
+     "All source-locked First Try/folded questions rendered B"+n);
+   assert.equal((html.match(/<details class="tip"/g)||[]).length,expectedTips,
+     "All source-locked D6/remediation disclosures rendered B"+n);
   assert(!html.includes("??? question"),"Raw unrendered disclosure in B"+n);
  }
 }

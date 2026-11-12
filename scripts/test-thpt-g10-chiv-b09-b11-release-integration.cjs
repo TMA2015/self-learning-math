@@ -41,8 +41,11 @@ for(const [name,hash] of figures){
 for(const n of [9,10,11]){
  assert.equal(bank.forLesson(n,"core").length,2);assert.equal(bank.forLesson(n,"practice").length,6);
  const p=text("docs/thpt-preview/sgk/chuong-iv/bai-"+n+".md");
- assert(p.includes("## 1. Kiến thức SGK")&&p.includes("## 2. Ví dụ"));
- assert.equal((p.match(/^### Ví dụ \d+\./gm)||[]).length,3);
+ assert.deepEqual([...p.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]),
+  ["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
+  "B"+n+": exactly four owner-approved Model B tabs required");
+ assert.equal((p.match(/^    ### Ví dụ \d+\./gm)||[]).length,3,
+  "B"+n+": three worked examples remain in the new Ví dụ tab");
  assert.equal((p.match(new RegExp('data-thpt-help-id="HELP-G10-B'+String(n).padStart(2,"0")+'-0[12]"',"g"))||[]).length,2,"Original reviewer R01 D6 IDs remain untouched; transfer D6 guarded separately");
  for(const kind of ["core","practice"])assert(text("docs/thpt-preview/sgk/chuong-iv/luyen-tap.md").includes('data-thpt-open-quiz="b'+n+'-'+kind+'"'));
 }

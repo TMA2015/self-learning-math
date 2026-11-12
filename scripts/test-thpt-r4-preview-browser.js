@@ -466,8 +466,16 @@ async function ready(page,path){
   assert.equal((await page.locator('a.math-library-entry[href*="core"]').count()),0,"B16 SGK lesson still links to old standalone Core page");
   const inlineCore=page.locator('[data-thpt-open-quiz="b16-core"]');
   assert.equal((await inlineCore.count()),1,"SGK B16 must open its Core in the new modal");
-  const b16Route=page.url();
-  await inlineCore.click();
+   // Model B exposes the single canonical B16 Core action inside the "Ví dụ"
+   // tab. Exercise the actual learner tab switch before opening the modal.
+   const b16ExampleTab=page.locator(".tabbed-set").first().locator(".tabbed-labels label")
+     .filter({hasText:/^Ví dụ$/});
+   assert.equal(await b16ExampleTab.count(),1,"B16 must render exactly one Ví dụ tab label");
+   assert(await b16ExampleTab.isVisible(),"B16 Ví dụ tab must be visible and interactive");
+   await b16ExampleTab.click();
+   const b16Route=page.url(); // Material tabs legitimately set #__tabbed_1_3
+   assert(await inlineCore.isVisible(),"B16 Core button must become visible in Ví dụ tab");
+   await inlineCore.click();
   const b16Modal=page.locator("dialog.thpt-r4-practice-dialog");
   await b16Modal.locator('[data-thpt-core] input[value="-3"]').waitFor();
   await b16Modal.locator('[data-thpt-core] input[value="-3"]').check();
@@ -746,27 +754,62 @@ async function ready(page,path){
   const chapterActions=page.locator(".thpt-r4-lesson-tabs");
   assert.equal(await chapterActions.locator('a[href="luyen-tap/"]').count(),1);
   assert.equal(await chapterActions.locator('a[href="tu-kiem-tra-chuong/"]').count(),1);
-  // Full-page B17/B18 rendering QA: exact 130/59 original +66/48 independently reviewed PED math spans, plus original 4/8 displays; no raw TeX.
-  for(const [lesson,inlineCount,displayCount] of [["17",196,4],["18",107,8]]){
-    await ready(page,"sgk/chuong-vi/bai-"+lesson+"/");
-    const article=page.locator("article.md-content__inner");
-    assert.equal(await article.locator("span.arithmatex").count(),inlineCount,
-      "B"+lesson+" entire lesson must have all inline math wrappers");
-    assert.equal(await article.locator("div.arithmatex").count(),displayCount,
-      "B"+lesson+" entire lesson must render all display math");
-    const details=article.locator("details:not(.thpt-r4-pedagogical-note)");
-    assert.equal(await details.count(),1,"B"+lesson+" hidden solution preserved separately from extension note");
-    assert(!(await details.evaluate(el=>el.open)),"B"+lesson+" self-check must be collapsed by default");
-    assert.equal(await details.locator("span.arithmatex").count(),9,
-      "B"+lesson+" hidden solution requires all nine math wrappers");
-    await details.locator("summary").click();
-    assert(await details.evaluate(el=>el.open),"B"+lesson+" student can expand full explanation");
-    assert(await details.locator("li").first().isVisible(),"B"+lesson+" hidden answer becomes visible");
-    await details.locator("summary").click();
-    assert(!(await details.evaluate(el=>el.open)),"B"+lesson+" answers can collapse again");
-    const bounds=await page.evaluate(()=>({w:document.documentElement.scrollWidth,v:innerWidth}));
-    assert(bounds.w<=bounds.v+20,"B"+lesson+" math overflows narrow viewport");
-  }
+   // Model B changes the complete learner source and introduces extra voluntary
+   // disclosures. Use pinned source/render parity rather than historical FNV or
+   // hard-coded count; leave the exact legacy snapshot test below for old pages.
+   for(const [lesson,legacyInline,legacyDisplay] of [["17",196,4],["18",107,8]]){
+     await ready(page,"sgk/chuong-vi/bai-"+lesson+"/");
+     const article=page.locator("article.md-content__inner");
+     const src=fs.readFileSync("docs/thpt-preview/sgk/chuong-vi/bai-"+lesson+".md","utf8");
+     const tabs=[...src.matchAll(/^=== "([^"]+)"$/gm)].map(x=>x[1]);
+     if(tabs.length){
+       assert.deepEqual(tabs,["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
+         "B"+lesson+" exact owner Model B tabs");
+       const expectedInline=[...src.matchAll(/\\\(([\s\S]*?)\\\)/g)].length;
+       const expectedDisplay=[...src.matchAll(/^    \\\[$/gm)].length;
+       assert((await article.locator("span.arithmatex").count())>=expectedInline,
+         "B"+lesson+" must render every source-pinned inline TeX formula (dynamic HTML may add more)");
+       assert((await article.locator("div.arithmatex").count())>=expectedDisplay,
+         "B"+lesson+" must render the current source-pinned display math");
+       const qCount=(src.match(/^    \?\?\? question "/gm)||[]).length;
+       const tipCount=(src.match(/^    \?\?\? tip "/gm)||[]).length;
+       const questions=article.locator("details.question"),tips=article.locator("details.tip");
+       assert.equal(await questions.count(),qCount,"B"+lesson+" every First Try and scope disclosure must render");
+       assert.equal(await tips.count(),tipCount,"B"+lesson+" every D6 remediation disclosure must render");
+       assert.equal(await article.locator("details.question[open], details.tip[open]").count(),0,
+         "B"+lesson+" all answer/remediation disclosures must start closed");
+       const knowledgeTab=article.locator(".tabbed-set").first().locator(".tabbed-labels label")
+         .filter({hasText:/^Kiến thức SGK$/});
+       assert.equal(await knowledgeTab.count(),1,"B"+lesson+" must expose Kiến thức SGK");
+       await knowledgeTab.click();
+       const disclosure=questions.first();
+       const collapsedText=await disclosure.innerText();
+       await disclosure.locator("summary").click();
+       assert(await disclosure.evaluate(el=>el.open),"B"+lesson+" learner can open answer");
+       const expandedText=await disclosure.innerText();
+       assert(expandedText.trim().length>=collapsedText.trim().length+30,
+         "B"+lesson+" expanded disclosure must reveal readable explanation beyond the summary");
+       await disclosure.locator("summary").click();
+       assert(!(await disclosure.evaluate(el=>el.open)),"B"+lesson+" answer can close again");
+     }else{
+       assert.equal(await article.locator("span.arithmatex").count(),legacyInline,
+         "B"+lesson+" historical inline math wrappers changed");
+       assert.equal(await article.locator("div.arithmatex").count(),legacyDisplay,
+         "B"+lesson+" historical display math changed");
+       const details=article.locator("details:not(.thpt-r4-pedagogical-note)");
+       assert.equal(await details.count(),1,"B"+lesson+" historical hidden solution");
+       assert(!(await details.evaluate(el=>el.open)),"B"+lesson+" historical self-check begins closed");
+       assert.equal(await details.locator("span.arithmatex").count(),9,
+         "B"+lesson+" historical hidden answer has nine math formulas");
+       await details.locator("summary").click();
+       assert(await details.evaluate(el=>el.open),"B"+lesson+" historical answer opens");
+       assert(await details.locator("li").first().isVisible(),"B"+lesson+" historical answer visible");
+       await details.locator("summary").click();
+       assert(!(await details.evaluate(el=>el.open)),"B"+lesson+" historical answer closes");
+     }
+     const bounds=await page.evaluate(()=>({w:document.documentElement.scrollWidth,v:innerWidth}));
+     assert(bounds.w<=bounds.v+20,"B"+lesson+" MathJax overflows narrow viewport");
+   }
   for(const [lesson,title] of [
     ["15","Hàm số"],["17","Dấu của tam thức bậc hai"],
     ["18","Phương trình quy về phương trình bậc hai"]
@@ -789,7 +832,13 @@ async function ready(page,path){
   await ready(page,"sgk/chuong-vi/bai-16/");
   assert(!(await page.locator("article").textContent()).includes("ACADEMIC_CLEARANCE"),"B16 shows internal QA approval");
   await ready(page,"sgk/chuong-vi/bai-17/");
-  const scope=page.locator('details.thpt-r4-pedagogical-note:has(> summary:text-is("Lưu ý về phạm vi Core và mở rộng của bài toán tham số"))');
+   if(fs.readFileSync("docs/thpt-preview/sgk/chuong-vi/bai-17.md","utf8").includes('=== "Kiến thức SGK"')){
+     const tab=page.locator("article .tabbed-set").first().locator(".tabbed-labels label")
+       .filter({hasText:/^Kiến thức SGK$/});
+     assert.equal(await tab.count(),1,"B17 optional-scope tab must exist");
+     await tab.click();
+   }
+   const scope=page.locator('article details:has(> summary:text-is("Lưu ý về phạm vi Core và mở rộng của bài toán tham số"))');
   assert.equal(await scope.count(),1,"B17 should offer one compact optional extension note");
   assert(!(await scope.evaluate(el=>el.open)),"B17 scope note must begin collapsed");
   await scope.locator("summary").click();

@@ -30,7 +30,13 @@ const bank13=ctx13.window.THPT_CHV_B13_B14_REVIEWED_FORMATIVE;
 assert(bank13.validate().valid);
 assert.equal(new Set([...bank.records,...bank13.records].map(x=>x.item_id)).size,24,"Canonical collision B12 vs B13/14");
 const page=read("docs/thpt-preview/sgk/chuong-v/bai-12.md");
-assert.equal((page.match(/^### Ví dụ [123]\./gm)||[]).length,3);
+// Model B nests worked examples under the exact Level-1 "Ví dụ" tab.
+const level1Tabs=[...page.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]);
+if(level1Tabs.length)assert.deepEqual(level1Tabs,
+ ["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
+ "B12 must retain four owner-approved horizontal Knowledge tabs");
+const workedPattern=level1Tabs.length?/^    ### Ví dụ [123]\./gm:/^### Ví dụ [123]\./gm;
+assert.equal((page.match(workedPattern)||[]).length,3,"B12 must retain exactly three worked examples");
 for(const name of ["Đúng/gần đúng và số quy tròn","Sai số tuyệt đối, độ chính xác","Sai số tương đối","Giới hạn độ chính xác và quy tròn"])assert(page.includes(name),"missing theory "+name);
 const fig="docs/assets/images/thpt/THPT_G10_B12_ERROR_INTERVAL_D5_R02_REVIEWED.svg";
 assert.equal(blob(fig),"fede1bb23334ff7bd66a6f5a6adc39cf856c5d52","Source locked FIG01 R02 differs");

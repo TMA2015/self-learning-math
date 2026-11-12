@@ -3,6 +3,7 @@
  * public selfchecks are client self-compare, never official protected RD1/Mastery.
  */
 const assert=require("node:assert/strict"),{chromium}=require("playwright");
+const {verifyModelBLesson}=require("./test-thpt-g10-model-b-browser-helper.cjs");
 const base="http://127.0.0.1:8765/thpt-preview/";
 (async()=>{
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
@@ -15,7 +16,26 @@ const base="http://127.0.0.1:8765/thpt-preview/";
      const response=await page.goto(base+"sgk/chuong-vii/bai-"+n+"/",{waitUntil:"networkidle",timeout:90000});
      assert(response?.ok(),"Missing G10 ChVII B"+n+" "+width);
      const article=page.locator("article.md-content__inner");
-     const first=article.locator('[data-thpt-first-try-id^="THPT-G10-CHVII-TRY"]');
+     if(await verifyModelBLesson(page,{n,chapter:"vii",tries:count,helps:count+2,
+       questions:n===22?count+1:count,
+       images:n===19?["G10_B19_LINE_NORMAL_R02.svg"]:
+              n===20?["G10_B20_POINT_LINE_DISTANCE_R02.svg"]:
+              n===21?["G10_B21_CIRCLE_TANGENT_R02.svg"]:
+                       ["THPT_G10_CHVII_ELLIPSE_TRANSFER_D5_R00.svg",
+                        "THPT_G10_CHVII_HYPERBOLA_TRANSFER_D5_R00.svg",
+                        "G10_B22_PARABOLA_FOCUS_R02.svg"]})){
+       const first=article.locator('[data-thpt-first-try-id^="THPT-G10-CHVII-TRY"]');
+       const extra=article.locator('[data-thpt-first-try-id^="THPT-G10-CHVII-TRY-"]');
+       assert.equal(await first.count(),count,"B"+n+" original canonical and transfer First Try coverage");
+       assert.equal(await extra.count(),n===22?2:0,"B"+n+" Q15 transfer placement count");
+       for(let k=0;k<count;k++){
+        const it=first.nth(k);
+        const id=await it.getAttribute("data-thpt-first-try-id"),help=await it.getAttribute("data-thpt-help-ref");
+        assert(id&&help&&await article.locator('[data-thpt-help-id="'+help+'"]').count()===1,
+          "B"+n+" source-locked First Try/outcome/D6 return "+id);
+       }
+      }else{
+const first=article.locator('[data-thpt-first-try-id^="THPT-G10-CHVII-TRY"]');
      const helps=article.locator('[data-thpt-help-id^="HELP-G10-CHVII-TRY"],[data-thpt-help-id^="HELP-G10-CHVII-ELLIPSE"],[data-thpt-help-id^="HELP-G10-CHVII-HYPERBOLA"]');
      const answer=article.locator("details.question"),tips=article.locator("details.tip");
      assert.equal(await first.count(),count,"Canonical First Try placements B"+n);
@@ -46,7 +66,9 @@ const base="http://127.0.0.1:8765/thpt-preview/";
        assert(sz.img<=sz.parent+2,"Reviewed D5 SVG not responsive "+width);
       }
      }
-     assert((await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth))<=20,"Horizontal overflow B"+n+" @"+width);
+     
+      }
+      assert((await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth))<=20,"Horizontal overflow B"+n+" @"+width);
      assert(!/NOTEBOOKLM_PENDING|CONTENT_READY|SOURCE_RECEIPT|RELEASE_AUTHORIZATION/.test(await article.innerText()),"Academic authoring metadata leaked");
     }
     const writtenResponse=await page.goto(base+"thu-vien/tu-luan-chuong-vii/",{waitUntil:"networkidle",timeout:90000});

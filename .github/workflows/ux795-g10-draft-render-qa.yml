@@ -1,0 +1,134 @@
+name: UX795 G10 Draft Render QA (no deploy)
+on:
+  pull_request:
+    paths:
+      - "docs/thpt-preview/sgk/chuong-*/bai-*.md"
+      - "docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"
+      - "docs/assets/images/thpt/**"
+      - "scripts/test-ux795-g10-render-draft.cjs"
+      - "scripts/test-ux795-g10-knowledge-browser.cjs"
+      - "scripts/test-ux795-g10-source-candidate-lock.cjs"
+      - "scripts/test-ux795-g10-legacy-dual-source-audit.cjs"
+      - "scripts/test-ux795-g10-figure-math.cjs"
+      - "scripts/test-ux795-g10-chvi-worked-math.cjs"
+      - "scripts/test-ux795-g10-chvi-ped-mapping.cjs"
+      - "prototypes/thpt/ux795/UX795_G10_CHVI_PED_OUTCOME_MAPPING_R01_20261110.md"
+      - "prototypes/thpt/ux795/UX795_G10_CHVI_S1_PRINTED_PAGE_SCOPE_R01_20261110.md"
+      - "prototypes/thpt/ux795/UX795_G10_KNOWLEDGE_RELEASE_SOURCE_INTAKE_R01_20261110.md"
+      - "prototypes/thpt/ux795/UX795_G10_FIGURE_MATH_SELF_AUDIT_R01_20261110.md"
+      - "scripts/test-ux795-g10-postmerge-headings.cjs"
+      - "scripts/test-thpt-chvi-math-block-render.cjs"
+      - "scripts/test-thpt-chvi-student-notes.cjs"
+      - ".github/workflows/ux795-g10-draft-render-qa.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ux795-g10-preview-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  render-model-b:
+    name: Build and inspect G10 all 27 Knowledge pages
+    runs-on: ubuntu-latest
+    timeout-minutes: 35 # Full 27 x 3 viewport browser AP QA; no skipped lesson
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install MkDocs Material
+        run: python -m pip install --disable-pip-version-check mkdocs-material
+      - name: Build draft THPT with full original MkDocs config, no deploy
+        run: mkdocs build --config-file mkdocs.thpt-preview.yml --site-dir site-thpt-preview
+      - name: Enforce 27 candidate source SHA receipts and protected Knowledge-only scope
+        run: node scripts/test-ux795-g10-source-candidate-lock.cjs
+      - name: Structural coverage of 19 G10 ChVI outcome-first-try-D6 paths
+        run: node scripts/test-ux795-g10-chvi-ped-mapping.cjs
+      - name: Mathematical checks of 19 Chapter VI worked examples (B15-B18)
+        run: node scripts/test-ux795-g10-chvi-worked-math.cjs
+      - name: Source-pinned mathematical and geometric checks of 11 new educational SVGs
+        run: node scripts/test-ux795-g10-figure-math.cjs
+      - name: Enforce 27 rendered pages, four tabs, closed self-reveals, MathJax and SVG paths
+        run: node scripts/test-ux795-g10-render-draft.cjs
+      - name: Install isolated Chromium for real browser QA
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install chromium
+      - name: "Real browser AP smoke - G10 27 lessons x 390/820/1440 (NO DEPLOY)"
+        run: |
+          python -m http.server 8765 --bind 127.0.0.1 --directory site-thpt-preview > /tmp/ux795-g10-browser-http.log 2>&1 &
+          python - <<'PY'
+          import time, urllib.request
+          url="http://127.0.0.1:8765/thpt-preview/sgk/chuong-i/bai-1/"
+          for _ in range(40):
+              try:
+                  with urllib.request.urlopen(url, timeout=3) as r:
+                      if r.status==200: break
+              except Exception:
+                  time.sleep(.5)
+          else:
+              raise SystemExit("UX795 preview test server did not start")
+          PY
+          node scripts/test-ux795-g10-knowledge-browser.cjs
+
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          path: integration-main
+          fetch-depth: 1
+      - name: EVIDENCE ONLY - dual-source historic baseline versus current candidate (no gate bypass)
+        run: node scripts/test-ux795-g10-legacy-dual-source-audit.cjs --baseline integration-main
+      - name: "DRY RUN - merge 27 G10 Knowledge pages with published main titles, NO DEPLOY"
+        run: |
+          set -euo pipefail
+          echo "Published main baseline for dry run:"
+          git -C integration-main rev-parse HEAD
+          lesson_count=0
+          for lesson in docs/thpt-preview/sgk/chuong-*/bai-*.md; do
+            [[ "$lesson" =~ /bai-[0-9]+\.md$ ]] || continue
+            test -f "$lesson"
+            cp "$lesson" "integration-main/$lesson"
+            lesson_count=$((lesson_count + 1))
+          done
+          test "$lesson_count" -eq 27
+          # Candidate MkDocs config MUST differ from published main only by
+          # this scoped CSS line. Abort instead of replacing navigation, hooks,
+          # scripts, authentication, or other established site configuration.
+          python - <<'PY'
+          from pathlib import Path
+          css = "  - assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css\n"
+          for name in ("mkdocs.yml", "mkdocs.thpt-preview.yml"):
+              candidate = Path(name).read_text(encoding="utf-8")
+              live_file = Path("integration-main") / name
+              published = live_file.read_text(encoding="utf-8")
+              if candidate.count(css) != 1 or candidate.replace(css, "", 1) != published:
+                  raise SystemExit(f"STANDARD_CONFLICT_HOLD: {name} has non-CSS differences against current main")
+              # Verified equivalent to inserting only the scoped CSS line.
+              live_file.write_text(candidate, encoding="utf-8")
+              print(f"PASS current main {name}: only G10 Knowledge CSS inserted")
+          PY
+          cp docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css integration-main/docs/assets/stylesheets/
+          for name in \
+            G10_B02_MEMBERSHIP_SUBSET_R01.svg \
+            G10_B06_SURVEY_RIGHT_TRIANGLE_R01.svg \
+            G10_B16_PARABOLA_VERTEX_R02.svg \
+            G10_B17_QUADRATIC_SIGN_R02.svg \
+            G10_B19_LINE_NORMAL_R02.svg \
+            G10_B20_POINT_LINE_DISTANCE_R02.svg \
+            G10_B21_CIRCLE_TANGENT_R02.svg \
+            G10_B22_PARABOLA_FOCUS_R02.svg \
+            G10_B23_ADD_MULTIPLY_CHOICES_R02.svg \
+            G10_B24_ORDER_VS_COMBINATION_R02.svg \
+            G10_B25_PASCAL_TRIANGLE_R02.svg; do
+            cp "docs/assets/images/thpt/$name" "integration-main/docs/assets/images/thpt/$name"
+          done
+          cp scripts/test-ux795-g10-postmerge-headings.cjs integration-main/scripts/
+          (
+            cd integration-main
+            python scripts/test_thpt_knowledge_short_labels.py
+            mkdocs build --config-file mkdocs.thpt-preview.yml --site-dir site-thpt-preview
+            node scripts/test-ux795-g10-postmerge-headings.cjs
+          )
+          echo "main+candidate integration smoke PASS; no deployment or academic approval"
