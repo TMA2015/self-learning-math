@@ -7,6 +7,7 @@ on:
       - "prototypes/thpt/ux795/THPT_SGK_79_EDITORIAL_GOLDEN_OWNER_REVIEW_20261112.md"
       - "prototypes/thpt/ux795/Temp_THPT_SGK_79_Editorial_Golden_Review_20261112.html"
       - "scripts/audit-thpt-sgk-79-editorial.cjs"
+      - "scripts/test-thpt-sgk-four-tab-golden-contract.cjs"
       - ".github/workflows/thpt-sgk-editorial-governance-audit.yml"
   workflow_dispatch:
 
@@ -28,6 +29,8 @@ jobs:
           fetch-depth: 1
       - name: Check auditor syntax without editing learner pages
         run: node --check scripts/audit-thpt-sgk-79-editorial.cjs
+      - name: Assert Golden four-tab editorial preview structure and negative regressions
+        run: node scripts/test-thpt-sgk-four-tab-golden-contract.cjs
       - name: Audit 79 source blobs, section numbering and tab structure
         run: node scripts/audit-thpt-sgk-79-editorial.cjs --out editorial-inventory
       - name: Verify report counts and owner gate remain explicit
