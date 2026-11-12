@@ -11,6 +11,8 @@
 - **Nguồn tham chiếu 47 canonical PUBLIC:** 42 ID cũ từ G11 ChII R03 blob `2101e2a248e0cf53ee11847b913b937cebcd0806`, 5 ID B15 ChV R03 blob `7934757ed06de4ae4b63dbc351ef524fc054e0d0`, chỉ trỏ nguồn, không clone đề/đáp án/rubric. PASS SGK trước đây bảo toàn đúng snapshot, không chuyển thành PASS Topic.
 - **Tách scope:** Số hạng, truy hồi, CSC/CSN, tổng hữu hạn là SGK ChII; tổng lùi vô hạn dựa phần kiến thức SGK ChV B15 nhưng nội dung giải thích tạo cầu nối ngay trong Topic; bài gửi góp/trả góp định kỳ là ví dụ Topic mở rộng, **không** gắn nhãn SGK Core hoặc tư vấn tài chính. Các giới hạn tổng quát thuộc CĐ08, không chuyển qua Topic07. Không cần sang SGK để học kiến thức bắt buộc ở đây.
 
+# Kiến thức
+
 ## Vì sao cần học dãy số thay vì chỉ học công thức?
 
 Đếm số khách theo ngày, theo dõi tiền tích lũy sau từng kỳ hoặc số ghế tăng theo hàng là những dữ liệu có **thứ tự theo chỉ số nguyên**. Ta bắt đầu bằng ý nghĩa của mỗi chỉ số, phân biệt cộng cùng lượng với nhân cùng tỷ lệ, rồi mới tính số hạng, tổng và ứng dụng. Mỗi mục gồm điều kiện, lý do chọn phương pháp, ví dụ giải, Tự thử và đường sửa lỗi ngay tại Chuyên đề.
