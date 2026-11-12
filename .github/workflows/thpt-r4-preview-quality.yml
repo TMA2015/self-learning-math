@@ -207,6 +207,8 @@ jobs:
     timeout-minutes: 40 # full R4 multi-device QA is ~25 min; no test omitted
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Required to verify actual published Q18 Git blob, not just final hash
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
