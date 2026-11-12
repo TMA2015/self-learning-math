@@ -271,7 +271,7 @@
 
 # Tự kiểm tra
 
-**Public Self Check (16+2 = 18 lượt đặt câu):** đúng 18 `item_id` P01–P18 được đặt lại từ luyện tập, không tạo đề mới. `ASSESSMENT_MODE=CLIENT_SELF_CHECK_NO_MASTERY`; đây là demo/tự đối chiếu không có bằng chứng độc lập và không chấm Skill Mastery. Không thêm RD1 kín vào public GitHub.
+**Public Self Check (18 lượt đặt câu):** đúng 18 `item_id` P01–P18 được đặt lại từ luyện tập, không tạo đề mới. `ASSESSMENT_MODE=CLIENT_SELF_CHECK_NO_MASTERY`; đây là demo/tự đối chiếu không có bằng chứng độc lập và không chấm Skill Mastery. Không thêm RD1 kín vào public GitHub.
 
 Trong giao diện thực tế, người học phải nhấn **Final Submit** rồi mới được thấy đúng/sai, lời giải, gợi ý hay đáp án; kiểm thử hành vi đó thuộc RELEASE, học liệu Markdown này **không** chứng nhận runtime. Sau tự đối chiếu, người học xem outcome mắc lỗi và quay về giải thích/D6, không được dùng câu đã thấy đáp án để tuyên bố độc lập TOPIC_READINESS.
 
@@ -369,4 +369,4 @@ NEW22_BANK_BLOB: 3bf3ab77d89497b39ae50ac54f71b81eccddc14c
 - THPT-TOP07-W03
 - THPT-TOP07-W04
 
-END_AUTHOR_SOURCE: Q18_SOURCE_LOCK_PENDING_EXACT_BLOB
+END_AUTHOR_SOURCE: CANONICAL_SOURCE_R01_LOCKED_FOR_Q18
