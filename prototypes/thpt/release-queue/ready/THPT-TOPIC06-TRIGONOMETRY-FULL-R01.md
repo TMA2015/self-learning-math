@@ -45,11 +45,11 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
 - [x] A1_SOURCE_SNAPSHOT — CĐ06 learner source blob c5fc856cdc..., Q18 self QA receipt blob 9afafbad..., one canonical new bank f83b285f... and original SGK index d8279df3...
 - [x] A2_SGK_SBT_SCOPE — SGK KNTT G11 T1 B01–B04 printed 5–39, end 40–41; SBT original receipts printed B01 4–7, B02 8–10, B03 11–18, B04 19–24; historically visually verified not newly PDF-scanned in this turn.
-- [x] A3_Q18_PROVENANCE — `AUTHOR_SELF_VERIFIED` v3.1.0 on new exact source; prior SGK ChI independent reviewer only for historic SGK snapshot, no fresh NotebookLM claim.
-- [x] A4_OUTCOME_ITEM — 16 Topic modules/outcomes mapped to 66 canonical public IDs (46 references+20 originals) with 16 reuse-only public check placements.
-- [x] A5_D1_D6_PED — 16 WHY/prerequisite/meaning/examples/first tries/D6, 3 source math SVG, 4 new Written/rubric /7, two labs SPEC_ONLY.
-- [x] A6_PRIVATE_Q16 — Zero private RD1 imported, no independent TOPIC_READINESS or Skill Mastery; Final Submit runtime enforcement belongs to RELEASE.
-- [x] A7_ONE_V2_HANDOFF — one signed Q18 receipt, one V2 handoff, one manifest ready and one REGISTER row; repository CI needed on exact HEAD, no separate academic approval.
+- [x] A3_NOTEBOOKLM_VERDICT — `AUTHOR_SELF_VERIFIED` v3.1.0 on new exact source; prior SGK ChI independent reviewer only for historic SGK snapshot, no fresh NotebookLM claim.
+- [x] A4_ITEM_OUTCOME_IDS — 16 Topic modules/outcomes mapped to 66 canonical public IDs (46 references+20 originals) with 16 reuse-only public check placements.
+- [x] A5_D1_D6_SCOPE — 16 WHY/prerequisite/meaning/examples/first tries/D6, 3 source math SVG, 4 new Written/rubric /7, two labs SPEC_ONLY.
+- [x] A6_DELTA_RESOLVED — Zero private RD1 imported, no independent TOPIC_READINESS or Skill Mastery; Final Submit runtime enforcement belongs to RELEASE.
+- [x] A7_PUBLIC_PRIVATE_BOUNDARY — one signed Q18 receipt, one V2 handoff, one manifest ready and one REGISTER row; repository CI needed on exact HEAD, no separate academic approval.
 
 ## PED1–PED6 / Q09–Q14
 
@@ -66,3 +66,15 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 - R2–R5 and AP1–AP5 browser/render/responsiveness/Final Submit/private no-leak/production checks are not yet certified.
 - P1 not published; P2 real-device Safari not verified. Owner release permission still must cover exact candidate; no merge/deploy from AUTHORING.
 - Topic self check is **public, reused, formative**; never count as independent held-out TOPIC_READINESS or write Mastery.
+## R1–R5 RELEASE gating — chưa thực hiện (RELEASE độc lập)
+
+- [ ] R1_INTEGRATED_CURRENT_MAIN — No runtime integration into current production main, canonical original 46 are references only.
+- [ ] R2_EXACT_HEAD_CI — AUTHORING source-lock and queue checks are not the same as release exact-final-HEAD CI in integration branch.
+- [ ] R3_CLEAN_STUDENT_UI — Student browser typography/MathJax/SVG responsiveness/Golden UI acceptance not tested in RELEASE.
+- [ ] R4_ASSESSMENT_SAFETY — Final Submit, hidden keys/hints/correctness, private RD1 and no-Mastery writes require browser negative QA.
+- [ ] R5_OWNER_APPROVAL — Owner release permission must apply to the actual integrated release scope and tested HEAD.
+
+## P1/P2 production/real device — chưa thực hiện
+
+- [ ] P1_DEPLOY_RECEIPT — No merge/deploy from this AUTHORING Draft, no published site or Pages receipt claimed.
+- [ ] P2_DEVICE_UAT — No real iPhone/iPad Safari owner UAT evidenced for the CĐ06 student experience.
