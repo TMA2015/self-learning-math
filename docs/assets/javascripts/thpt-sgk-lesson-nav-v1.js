@@ -34,6 +34,7 @@ const run=()=>{
  const article=document.querySelector(".md-content__inner");
  if(!article)return;
  if(grade===10)article.classList.add("thpt-g10-knowledge-ap1");
+ if(grade===11 && article.querySelector(".tabbed-set"))article.classList.add("thpt-g11-knowledge-modelb");
  if(article.querySelector("[data-sgk-lesson-nav]"))return;
  const root=match[1]+(grade===10?"":"lop-"+grade+"/");
  const lessonUrl=n=>root+"chuong-"+chapters[ends.findIndex(end=>n<=end)]+"/bai-"+n+"/";

@@ -274,6 +274,7 @@ extra_css:
   - assets/stylesheets/thpt-g10-reviewed-selfcheck-v1.css
   - assets/stylesheets/thpt-sgk-lesson-nav-v1.css
   - assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css
+  - assets/stylesheets/thpt-g11-knowledge-modelb-v1.css
   - assets/stylesheets/thpt-g12-exp01-exp02-r01.css
   - assets/stylesheets/thpt-g12-yearend-r00.css
 extra_javascript:
