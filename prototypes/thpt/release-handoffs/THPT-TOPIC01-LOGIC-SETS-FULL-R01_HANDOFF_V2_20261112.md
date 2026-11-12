@@ -12,7 +12,7 @@ Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_LOGIC_SETS_FULL_PUBLIC_R01_20261112.md
 ACADEMIC_SOURCE_BLOB: 98d3a1df4a644089338d574fc6ad0e0fd596df0f
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC01_LOGIC_SETS_R01_AUTHOR_SELF_QA_RECEIPT_20261112.md
-REVIEW_RECEIPT_BLOB: 5a3731b9b0fc1d702ff5f8f984b827a1a5356459
+REVIEW_RECEIPT_BLOB: 3a7779e5bbd7bcc4c0a16672d8cad45894049899
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_CANONICAL_SOURCE_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 09d36b0d289ebc54cc4ee51805503cf7f6e714f2
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_PUBLIC_EXTENSION_06ITEM_R01_20261112.md
@@ -24,8 +24,8 @@ ORIGINAL_SVG1_PATH: prototypes/thpt/visuals/THPT_G10_B01_IMPLICATION_DIVISIBILIT
 ORIGINAL_SVG1_BLOB: 40b53b26deb48a7cfdff91be5fe01d12a67bebeb
 ORIGINAL_SVG2_PATH: prototypes/thpt/visuals/THPT_G10_B02_VENN_TWO_CLUBS_D5_R01.svg
 ORIGINAL_SVG2_BLOB: ea84ee68187e83aa4bc6b14e49a965b3d7da5a11
-ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
-PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
+ACADEMIC_VERDICT: SELF_VERIFIED
+PEDAGOGICAL_VERDICT: SELF_VERIFIED
 CONTENT_STATE: CONTENT_READY
 BLOCKERS: NONE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
@@ -143,28 +143,30 @@ CATALOG_TOPIC_ID: CD01
 
 ## QUALITY_Q01_Q18_EVIDENCE
 
-| Qxx | Evidence from exact CĐ01 AUTHORING source and receipt | Reviewer scope |
-|---|---|---|
-| Q01 | S1 verified from owner historical original exact receipt, KNTT 10 T1 B01 5–11, B02 12–19, SBT B01 5–7/B02 8–11; source original 95a55...; no new direct PDF scan claim. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT |
-| Q02 | CĐ01 original proposal anchors 11 independently specified Topic outcomes TOP01-O01–O11; all 11 have standalone knowledge paragraphs, practice and a public self-check placement. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT |
-| Q03 | 11 concept-first explanations, truth conditions, quantifier domain, sufficient/necessary, subset types, Venn count and interval endpoints. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT |
-| Q04 | 11 worked examples with reason and check; e.g. m even iff m² even, x∈Z versus R, 40 pupils Venn arithmetic. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT |
-| Q05 | 24 unique PUBLIC IDs: 18 original immutable SGK source references + 6 own worked original items; every outcome maps >=2 primary IDs, depth by reasoning not a quota. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT |
-| Q06 | 2 original Written canonical W01 and W02-ANCHOR; rubric /7 exactly once in historical immutable source, no separate Anchor copy. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT |
-| Q07 | two original source SVG refs with exact SHA, title+desc and explicit image-reading prompts; 2 interactive models are SPEC_ONLY. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT |
-| Q08 | 11 specific D6 remediation paths first-try -> voluntary reveal -> original practice item, not a generic help label. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT |
-| Q09 | Each M01–M11 starts by a mathematical or real-life reason to care before the formula or definition. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT |
-| Q10 | 11 at-point prerequisites, a self-contained integer/real number/delimiters recap; no dependency on SGK study path. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT |
-| Q11 | Pedagogical meaning before formal notation (valid proposition, set type, universal/existential, circles Venn). | SELF_VERIFIED_ON_LOCKED_SNAPSHOT |
-| Q12 | Two SVG: divisibility is a subset, 4 Venn regions 11/12/13/4; exact text alternative and learner readings. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT |
-| Q13 | Methods explicitly selected from stem features: ∀/∃, if/then, iff, intervals, union/intersection, Venn; limits of reversed implication stated. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT |
-| Q14 | 11 self-tries before explicit voluntary reveal plus 11 D6 routes and follow-up practice. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT |
-| Q15 | one canonical record per ID; 18 original stems/keys/solutions in historical SHA, 6 new in one extension; 11 self-check placements reuse IDs. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT |
-| Q16 | no private RD1 imported; Self Check public CLIENT_SELF_CHECK_NO_MASTERY only; RELEASE must test Final Submit before answer/key/correctness/hint/AI Tutor and prevent Mastery writes. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT |
-| Q17 | one CĐ01 Topic fully self-contained as three top pages, independently valid without SGK page links; no Topic Core page. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT |
-| Q18 | source/index/extension SVG/original review SHA, 40 named QA checks on locked snapshot, no false independent reviewer result for new Topic. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT |
+One normative source only: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md` currently owner-effective `SLM-THPT-QUALITY-ONE v3.0.1`. Q01–Q18 is one rubric, not new Topic/Release criteria.
 
-## AUTHORING A1–A7 PED1–PED6
+| Qxx | Academic outcome / source evidence | Scope verdict | Git/source trace | RELEASE boundary |
+|---|---|---|---|---|
+| Q01 | S1 verified from owner historical original exact receipt, KNTT 10 T1 B01 5–11, B02 12–19, SBT B01 5–7/B02 8–11; source original 95a55...; no new direct PDF scan claim. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT | SOURCE_LOCKED_3a7779e5 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q02 | CĐ01 original proposal anchors 11 independently specified Topic outcomes TOP01-O01–O11; all 11 have standalone knowledge paragraphs, practice and a public self-check placement. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT | SOURCE_LOCKED_3a7779e5 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q03 | 11 concept-first explanations, truth conditions, quantifier domain, sufficient/necessary, subset types, Venn count and interval endpoints. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT | SOURCE_LOCKED_3a7779e5 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q04 | 11 worked examples with reason and check; e.g. m even iff m² even, x∈Z versus R, 40 pupils Venn arithmetic. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT | SOURCE_LOCKED_3a7779e5 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q05 | 24 unique PUBLIC IDs: 18 original immutable SGK source references + 6 own worked original items; every outcome maps >=2 primary IDs, depth by reasoning not a quota. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT | SOURCE_LOCKED_3a7779e5 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q06 | 2 original Written canonical W01 and W02-ANCHOR; rubric /7 exactly once in historical immutable source, no separate Anchor copy. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT | SOURCE_LOCKED_3a7779e5 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q07 | two original source SVG refs with exact SHA, title+desc and explicit image-reading prompts; 2 interactive models are SPEC_ONLY. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT | SOURCE_LOCKED_3a7779e5 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q08 | 11 specific D6 remediation paths first-try -> voluntary reveal -> original practice item, not a generic help label. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT | SOURCE_LOCKED_3a7779e5 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q09 | Each M01–M11 starts by a mathematical or real-life reason to care before the formula or definition. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT | SOURCE_LOCKED_3a7779e5 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q10 | 11 at-point prerequisites, a self-contained integer/real number/delimiters recap; no dependency on SGK study path. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT | SOURCE_LOCKED_3a7779e5 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q11 | Pedagogical meaning before formal notation (valid proposition, set type, universal/existential, circles Venn). | SELF_VERIFIED_ON_LOCKED_SNAPSHOT | SOURCE_LOCKED_3a7779e5 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q12 | Two SVG: divisibility is a subset, 4 Venn regions 11/12/13/4; exact text alternative and learner readings. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT | SOURCE_LOCKED_3a7779e5 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q13 | Methods explicitly selected from stem features: ∀/∃, if/then, iff, intervals, union/intersection, Venn; limits of reversed implication stated. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT | SOURCE_LOCKED_3a7779e5 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q14 | 11 self-tries before explicit voluntary reveal plus 11 D6 routes and follow-up practice. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT | SOURCE_LOCKED_3a7779e5 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q15 | one canonical record per ID; 18 original stems/keys/solutions in historical SHA, 6 new in one extension; 11 self-check placements reuse IDs. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT | SOURCE_LOCKED_3a7779e5 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q16 | no private RD1 imported; Self Check public CLIENT_SELF_CHECK_NO_MASTERY only; RELEASE must test Final Submit before answer/key/correctness/hint/AI Tutor and prevent Mastery writes. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT | SOURCE_LOCKED_3a7779e5 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q17 | one CĐ01 Topic fully self-contained as three top pages, independently valid without SGK page links; no Topic Core page. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT | SOURCE_LOCKED_3a7779e5 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q18 | source/index/extension SVG/original review SHA, 40 named QA checks on locked snapshot, no false independent reviewer result for new Topic. | SELF_VERIFIED_ON_LOCKED_SNAPSHOT | SOURCE_LOCKED_3a7779e5 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+
+## AUTHORING_A1_A7
 
 A1 exact source blob 98d3a1df4a644089338d574fc6ad0e0fd596df0f and receipt blob 5a3731b9b0fc1d702ff5f8f984b827a1a5356459; one index, one extension, one V2. A2 historical S1 original KNTT G10 pages verified via historic receipt, no new PDF rescan. A3 historic independent original 18/18 PASS scoped to immutable SGK only; CĐ01 Delta C 40/40 AUTHOR_SELF_VERIFIED, no fabricated independent NotebookLM reviewer. A4 11/11 outcomes, 24 canonical public, two original Written, 11 public selfchecks. A5 11 concept-first/worked/firsttry/D6, two original unchanged SVGs, two model specs only. A6 six novel math-checked formative problems, P0=P1=0 in public author scope. A7 0 private RD1, no Mastery activation.
 
@@ -179,6 +181,17 @@ PRIVATE_BANK_SHA256 = e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b78
 
 Empty SHA is only zero imported private bytes, NOT any owner-held bank SHA. No private official Topic Readiness questions/answers/solutions/rubrics present.
 
+## S1_SGK_SBT_SOURCE
+
+Direct owner-history source: SGK Kết nối tri thức Toán 10 tập 1 printed B01 p5–11, B02 p12–19, end p20–21; SBT B01 p5–7, B02 p8–11, chapter end p12–15. Original snapshot and original independent NotebookLM receipt exact Git SHA are frozen; no fresh source PDF read claimed. CĐ01 catalog is the organizing root; SGK only grounds required mathematics.
+
+## D1_D6_EVIDENCE
+
+D1 eleven concept-first mathematical explanations. D2 eleven fully reasoned worked examples with condition/counterexample. D3 18 original public plus six new public practice, 24 unique across 11 outcomes. D4 two one-source original Written/Anchor rubrics /7. D5 two exact original SVG accessible title/desc and reader guidance. D6 eleven self-try + reveal + targeted error repair paths. No separate Topic Core.
+
+## PED1_PED6_EVIDENCE
+
+PED1 Why learn each concept; PED2 prerequisite at each unit and self-contained number recap; PED3 intuition before notation; PED4 how to read implication and Venn diagrams; PED5 method rationale, false converse and quantifier/domain limitations; PED6 first-try before voluntary self-open answer and remediation. Interaction models are author design specifications only, not executable website features.
 ## DELTA_LEDGER
 
 Original 18 PUBLIC canonical stems, keys, solutions and rubrics plus two SVGs unchanged at source blobs. New CĐ01 meaning-first 11 modules, first-tries and D6, selfcheck placements, six own public problems and two interaction concept specs are Delta C self-verified under v3.0.1. Old reviewer PASS remains source-scoped only.
