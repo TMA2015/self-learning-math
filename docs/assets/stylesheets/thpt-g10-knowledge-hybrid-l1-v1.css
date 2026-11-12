@@ -131,3 +131,172 @@
     font-size: .79rem;
   }
 }
+
+/* Owner visual consistency fix 12/11/2026: G10 B01-B06 only.
+ * Match header/body horizontal alignment, centre mathematical cells,
+ * retain left alignment for explanatory prose, and vertically centre rows. */
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden .thpt-g10-knowledge-table :is(th, td) {
+  text-align: center;
+  vertical-align: middle;
+}
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden .thpt-g10-knowledge-table :is(th, td).thpt-g10-table-prose {
+  text-align: left;
+}
+
+/* Existing 'Lời giải' paragraphs, formula blocks and tables are grouped at
+ * render time. No SGK Markdown or mathematical expression is rewritten. */
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden .thpt-g10-example-solution {
+  margin: .65rem 0 .9rem;
+  padding: .8rem 1rem;
+  background: color-mix(in srgb, var(--md-primary-fg-color) 5%, var(--md-default-bg-color));
+  border-radius: .5rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden .thpt-g10-example-solution > :first-child {
+  margin-top: 0;
+}
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden .thpt-g10-example-solution > :last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 600px) {
+  .md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden .thpt-g10-example-solution {
+    padding: .68rem .75rem;
+  }
+}
+
+/* Owner's original UX795 HTML Golden (B01–B06 only).  Preserve the numbered
+ * tab labels 1–4 while restoring the blue rounded button layout of the HTML. */
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden > .tabbed-set > .tabbed-labels {
+  gap: .45rem;
+  padding: .55rem .1rem .7rem;
+  border-bottom: 1px solid #cfdaee;
+  background: var(--md-default-bg-color);
+}
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden > .tabbed-set > .tabbed-labels > label {
+  border: 1px solid #cdd8ec;
+  border-radius: .55rem;
+  background: #edf2fb;
+  color: #2d426f;
+  padding: .55rem .8rem;
+  min-height: 2.75rem;
+  font-weight: 700;
+  box-shadow: none;
+  font-size: .85rem;
+  line-height: 1.35;
+}
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden > .tabbed-set > .tabbed-labels > label.slm-g10-active-tab {
+  background: #284db5;
+  border-color: #284db5;
+  color: #fff;
+}
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden > .tabbed-set > .tabbed-labels > label:focus-visible {
+  outline: 3px solid #dfaa3a;
+  outline-offset: 2px;
+}
+/* Section title and 1.x/2.x/3.x titles match the reference HTML's
+ * left blue stripe and pale background, rather than plain underlines. */
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden .tabbed-block > h2.thpt-g10-section-heading,
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden .tabbed-block > h3 {
+  border-left: 4px solid #345bd2;
+  border-bottom: 0;
+  background: linear-gradient(90deg, #f0f5ff, #fff);
+  border-radius: .5rem;
+  padding: .68rem .9rem;
+  color: #14213d;
+  line-height: 1.4;
+}
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden .tabbed-block > h2.thpt-g10-section-heading {
+  margin: 1rem 0 1.05rem;
+  font-size: 1.18rem;
+}
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden .tabbed-block > h3 {
+  margin: 1.5rem 0 .85rem;
+  font-size: 1.02rem;
+}
+/* One quiet, accessible disclosure design for formative "Đối chiếu" and
+ * mistake recovery; no neon green or legacy tip/quiz icons. */
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden .tabbed-block details:is(.tip,.question) {
+  background: #f8faff;
+  border: 1px solid #d9e4f4;
+  border-radius: .62rem;
+  box-shadow: none;
+  color: #243753;
+  overflow: hidden;
+}
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden .tabbed-block details:is(.tip,.question) > summary {
+  color: #263e73;
+  background: transparent;
+  border-radius: .62rem;
+  border: none;
+  font-weight: 700;
+  font-size: .88rem;
+  padding: .7rem .85rem .7rem 2.15rem;
+  line-height: 1.45;
+}
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden .tabbed-block details:is(.tip,.question) > summary::before {
+  -webkit-mask: none;
+  mask: none;
+  background: none;
+  content: "▶";
+  display: block;
+  color: #263e73;
+  width: .85rem;
+  height: auto;
+  font-size: .72rem;
+  top: .76rem;
+  left: .88rem;
+  transform: none;
+}
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden .tabbed-block details:is(.tip,.question)[open] > summary::before {
+  transform: rotate(90deg);
+}
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden .tabbed-block details:is(.tip,.question) > summary::after {
+  display: none;
+}
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden .tabbed-block details:is(.tip,.question) > summary:focus-visible {
+  outline: 2px solid #6c8adb;
+  outline-offset: -2px;
+}
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden .tabbed-block .thpt-r4-footnote {
+  margin-top: 1.25rem;
+  font-size: .82rem;
+  line-height: 1.65;
+  color: var(--md-default-fg-color--light);
+}
+/* Native Material dark-mode palette must remain readable. */
+[data-md-color-scheme="slate"] .md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden > .tabbed-set > .tabbed-labels > label {
+  color: #e6edff;
+  background: #263753;
+  border-color: #455b83;
+}
+[data-md-color-scheme="slate"] .md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden > .tabbed-set > .tabbed-labels > label.slm-g10-active-tab {
+  color: #fff;
+  background: #3457bd;
+  border-color: #5976d9;
+}
+[data-md-color-scheme="slate"] .md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden .tabbed-block > :is(h2.thpt-g10-section-heading,h3) {
+  color: #f0f4ff;
+  background: linear-gradient(90deg,#283b61,#1c273e);
+}
+[data-md-color-scheme="slate"] .md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden .tabbed-block details:is(.tip,.question) {
+  color: #dce6fc;
+  background: #202e48;
+  border-color: #465978;
+}
+[data-md-color-scheme="slate"] .md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden .tabbed-block details:is(.tip,.question) > summary {
+  color: #e2ebff;
+}
+[data-md-color-scheme="slate"] .md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden .tabbed-block details:is(.tip,.question) > summary::before {
+  color: #e2ebff;
+}
+@media(max-width:600px) {
+  .md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden > .tabbed-set > .tabbed-labels > label {
+    font-size: .82rem;
+    padding: .5rem .65rem;
+  }
+  .md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden .tabbed-block > h3 {
+    padding: .6rem .7rem;
+  }
+}

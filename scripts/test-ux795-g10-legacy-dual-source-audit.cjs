@@ -40,7 +40,12 @@ for(const [name,chapter,num]of specs){
  const row=rows.get(name);assert(row,"Missing source ledger "+name);
  const rel="docs/thpt-preview/sgk/chuong-"+chapter+"/bai-"+num+".md";
  const mainRaw=read(baselineRoot,rel),candidateRaw=read(root,rel);
- assert.equal(blob(mainRaw),row.main,name+" main baseline source drift");
+ // The 27 candidate sources were published on 12/11 (commit 92d05d3b).
+ // The historic source remains pinned in the immutable intake ledger, while
+ // current main must equal EITHER the old published blob or its exact approved
+ // replacement. No arbitrary source drift is accepted.
+ const baselineSha=blob(mainRaw);
+ assert([row.main,row.candidate].includes(baselineSha),name+" unknown main baseline source drift");
  assert.equal(blob(candidateRaw),row.candidate,name+" staged candidate source drift");
  const base=mainRaw.toString("utf8"),s=candidateRaw.toString("utf8");
  assert.deepEqual(getIDs(s),getIDs(base),name+" original First Try/HELP/outcome IDs changed");
@@ -55,7 +60,7 @@ for(const [name,chapter,num]of specs){
     .map(x=>(x[1]??x[2]??x[3]).trim().replace(/\s+/g," "));
   assert(actual.some((_,i)=>i+30<=actual.length&&frozen.every((v,j)=>actual[i+j]===v)),
     "B09 protected original 30 math expressions lost or reordered");
-   assert.equal(blob(mainRaw),historicalMainB09GitBlob,"B09 baseline must match immutable published Git blob");
+   assert.equal(row.main,historicalMainB09GitBlob,"B09 ledger must retain immutable historic published Git blob");
    assert.notEqual(blob(candidateRaw),historicalMainB09GitBlob,"B09 must remain a distinct source-locked Delta C");
   assert.equal(ids.first.length,5);assert.equal(ids.help.length,2);
   console.log("PASS EVIDENCE B09: 30/30 original math; 5 FirstTry/2 HELP; old+new source hashes");

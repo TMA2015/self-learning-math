@@ -15,7 +15,7 @@ const url="http://127.0.0.1:8765/thpt-preview/sgk/chuong-ii/bai-3/";
     const modelB=page.locator(".md-content .tabbed-set").first();
     if(await modelB.count()){
       const labels=(await modelB.locator(".tabbed-labels > label").allInnerTexts()).map(x=>x.trim());
-      assert.deepEqual(labels,["1. Khám phá kiến thức","2. Kiến thức SGK","3. Ví dụ","4. Lỗi thường gặp"],
+      assert.deepEqual(labels,["1. Khám phá kiến thức","2. Kiến thức sách giáo khoa","3. Ví dụ","4. Lỗi thường gặp"],
         "B03 exact owner-approved Model B L1 vocabulary");
       const blocks=modelB.locator(".tabbed-content > .tabbed-block");
       assert.equal(await blocks.count(),4,"B03 exactly four student panels");

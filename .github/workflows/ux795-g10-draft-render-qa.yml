@@ -93,9 +93,12 @@ jobs:
             lesson_count=$((lesson_count + 1))
           done
           test "$lesson_count" -eq 27
-          # Candidate MkDocs config MUST differ from published main only by
-          # this scoped CSS line. Abort instead of replacing navigation, hooks,
-          # scripts, authentication, or other established site configuration.
+          # The CSS was first added when all 27 G10 lessons were published.
+          # Accept exactly TWO source-locked states:
+          # (1) previous main without the single approved CSS line, OR
+          # (2) current published main with the line already present.
+          # In both cases reject ANY other MkDocs config difference. This is
+          # a post-publication test migration, not a relaxation of source gates.
           python - <<'PY'
           from pathlib import Path
           css = "  - assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css\n"
@@ -103,11 +106,15 @@ jobs:
               candidate = Path(name).read_text(encoding="utf-8")
               live_file = Path("integration-main") / name
               published = live_file.read_text(encoding="utf-8")
-              if candidate.count(css) != 1 or candidate.replace(css, "", 1) != published:
-                  raise SystemExit(f"STANDARD_CONFLICT_HOLD: {name} has non-CSS differences against current main")
-              # Verified equivalent to inserting only the scoped CSS line.
+              if candidate.count(css) != 1:
+                  raise SystemExit(f"STANDARD_CONFLICT_HOLD: {name} must register exactly one scoped G10 CSS")
+              if published == candidate:
+                  print(f"PASS current published {name}: exactly identical, original G10 CSS already present")
+              elif candidate.replace(css, "", 1) == published:
+                  print(f"PASS historical {name}: only the G10 Knowledge CSS was added")
+              else:
+                  raise SystemExit(f"STANDARD_CONFLICT_HOLD: {name} has unapproved config differences")
               live_file.write_text(candidate, encoding="utf-8")
-              print(f"PASS current main {name}: only G10 Knowledge CSS inserted")
           PY
           cp docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css integration-main/docs/assets/stylesheets/
           for name in \

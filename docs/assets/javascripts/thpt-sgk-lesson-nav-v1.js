@@ -33,7 +33,11 @@ const numberG10FirstSix=(article)=>{
  const blocks=[...set.querySelectorAll(":scope > .tabbed-content > .tabbed-block")];
  const names=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
  if(labels.length!==4||blocks.length!==4)return;
- if(labels.every((node,i)=>node.textContent.trim()===(i+1)+". "+names[i]))return;
+ const displayNames=["Khám phá kiến thức","Kiến thức sách giáo khoa","Ví dụ","Lỗi thường gặp"];
+ if(labels.every((node,i)=>node.textContent.trim()===(i+1)+". "+displayNames[i])){
+  article.dataset.g10B01B06EditorialNumbered="true";
+  return;
+ }
  if(!labels.every((node,i)=>node.textContent.trim()===names[i]))return;
  const discovery=[...blocks[0].querySelectorAll("h3")];
  const original=["Cùng tìm hiểu","Ví dụ trực quan","Thuật ngữ và kiến thức, kỹ năng"];
@@ -46,13 +50,112 @@ const numberG10FirstSix=(article)=>{
  if(!examples.length||!examples.every((node,i)=>node.textContent.trim().startsWith("Ví dụ "+(i+1)+" —")))return;
  const mistakes=[...blocks[3].querySelectorAll(":scope > details.tip > summary")];
  if(!mistakes.length||mistakes.some(node=>!node.textContent.trim()))return;
- labels.forEach((node,i)=>node.textContent=(i+1)+". "+names[i]);
+ labels.forEach((node,i)=>node.textContent=(i+1)+". "+displayNames[i]);
  const titles=["Cùng tìm hiểu","Ví dụ trực quan","Thuật ngữ, kiến thức và kỹ năng"];
  discovery.forEach((node,i)=>node.textContent="1."+(i+1)+". "+titles[i]);
  examples.forEach((node,i)=>node.textContent="3."+(i+1)+". "+node.textContent.trim());
  mistakes.forEach((node,i)=>node.textContent="4."+(i+1)+". "+node.textContent.trim());
  article.dataset.g10B01B06EditorialNumbered="true";
 };
+/* G10 B01-B06 DELTA_A_UI: align numeric columns and visually group only
+ * the existing worked solution in example tab. No mathematical text changes.
+ * Keep full solution content (MathJax, diagrams, tables) together. */
+const polishG10FirstSix=(article)=>{
+ if(article.dataset.g10B01B06EditorialNumbered!=="true")return;
+ const set=article.querySelector(".tabbed-set");
+ const blocks=[...(set?.querySelectorAll(":scope > .tabbed-content > .tabbed-block")||[])];
+ if(blocks.length!==4)return; // fail closed outside the approved Golden layout
+ for(const table of article.querySelectorAll("table.thpt-g10-knowledge-table")){
+  const rows=[...table.querySelectorAll("tbody tr")];
+  const header=table.querySelector("thead tr");
+  if(!header||!rows.length)continue;
+  [...header.cells].forEach((cell,column)=>{
+   // Explanatory prose is left-aligned in both header and values;
+   // compact numbers, coordinates, symbols and formulas are centred.
+   const prose=rows.some(row=>{
+    const value=row.cells[column]?.textContent.replace(/\s+/g," ").trim()||"";
+    return value.length>24 && /\p{L}{3,}\s+\p{L}{2,}/u.test(value);
+   });
+   for(const row of [header,...rows]){
+    row.cells[column]?.classList.toggle("thpt-g10-table-prose",prose);
+   }
+  });
+ }
+ const isLead=(node,pattern)=>node?.tagName==="P" &&
+  node.firstElementChild?.tagName==="STRONG" &&
+  pattern.test(node.firstElementChild.textContent.trim());
+ for(const title of blocks[2].querySelectorAll(":scope > h3")){
+  let current=title.nextElementSibling;
+  while(current && current.tagName!=="H3" && !isLead(current,/^Lời giải(?:\s+theo vùng)?\./iu))
+   current=current.nextElementSibling;
+  if(!current||current.tagName==="H3")continue;
+  const box=document.createElement("div");
+  box.className="thpt-g10-example-solution";
+  box.setAttribute("role","group");
+  box.setAttribute("aria-label","Lời giải ví dụ");
+  current.before(box);
+  while(current && current.tagName!=="H3" &&
+        !isLead(current,/^(?:Kiểm lại|Kết luận)\./iu)){
+   const next=current.nextElementSibling;
+   box.append(current);
+   current=next;
+  }
+ }
+ article.dataset.g10B01B06SolutionPolished="true";
+};
+
+/* Owner 12/11 Golden HTML restoration: presentation-only, six published G10
+ * lessons. Keep numbered tab text, canonical SGK source and every hidden answer
+ * byte-identical. Move a single existing provenance note to the last tab. */
+const restoreG10FirstSixGolden=(article)=>{
+ if(article.dataset.g10B01B06EditorialNumbered!=="true")return;
+ if(article.dataset.g10GoldenRestored==="true")return;
+ const set=article.querySelector(".tabbed-set");
+ const labels=[...(set?.querySelectorAll(":scope > .tabbed-labels > label")||[])];
+ const blocks=[...(set?.querySelectorAll(":scope > .tabbed-content > .tabbed-block")||[])];
+ if(labels.length!==4||blocks.length!==4)return;
+ // The source tab uses "Kiến thức SGK"; the owner wants the unabbreviated
+ // learner label. The section heading is presentation, not a source rewrite.
+ labels[1].textContent="2. Kiến thức sách giáo khoa";
+ const sectionNames=["1. Khám phá kiến thức","2. Kiến thức sách giáo khoa",
+  "3. Ví dụ","4. Lỗi thường gặp và cách tự khắc phục"];
+ blocks.forEach((block,i)=>{
+  if(block.querySelector(":scope > h2.thpt-g10-section-heading"))return;
+  const h=document.createElement("h2");
+  h.className="thpt-g10-section-heading";
+  h.textContent=sectionNames[i];
+  block.prepend(h);
+ });
+ const inputs=[...set.querySelectorAll(":scope > input[type=radio]")];
+ const syncSelected=()=>labels.forEach((l,i)=>{
+  l.classList.toggle("slm-g10-active-tab",Boolean(inputs[i]?.checked));
+ });
+ set.addEventListener("change",syncSelected);
+ syncSelected();
+ // Decorative lead paragraph is not curricular content; the scoped Knowledge
+ // page already identifies its class, chapter and SGK source in the eyebrow.
+ article.querySelectorAll(".thpt-r4-screen .thpt-r4-lead").forEach(el=>el.remove());
+ // Both public First Try and D6 use the subdued HTML reference treatment.
+ // Only the voluntary disclosure LABEL changes; answer bodies remain closed.
+ for(const node of blocks[1].querySelectorAll("details.question > summary")){
+  node.textContent="Mở đối chiếu sau khi tự làm";
+ }
+ // Source notes were displayed outside the tab set (all four tabs), plus a
+ // duplicate in tab 4. Keep the detailed SGK/SBT receipt ONCE in tab 4.
+ const sourceNotes=[...article.querySelectorAll("p.thpt-r4-footnote")];
+ const selected=sourceNotes.find(n=>/Nguồn:\s*SGK Toán 10/i.test(n.textContent))||
+  sourceNotes.find(n=>/Kiến thức đối chiếu theo SGK/i.test(n.textContent))||
+  sourceNotes.at(-1);
+ if(selected){
+  const text=selected.textContent.replace(
+   /\s*(?:Luyện tập tự đối chiếu không phải Tự kiểm tra độc lập|Học liệu tự luyện không dùng làm bài đánh giá độc lập)\.?\s*$/iu,"").trim();
+  selected.textContent=text;
+  for(const note of sourceNotes)if(note!==selected)note.remove();
+  blocks[3].append(selected);
+ }
+ article.dataset.g10GoldenRestored="true";
+};
+
 const run=()=>{
  const path=location.pathname;
  const match=path.match(/^(.*\/thpt-preview\/sgk\/)(?:(lop-(11|12))\/)?chuong-([ivx]+)\/bai-(\d+)\/?$/);
@@ -66,7 +169,7 @@ const run=()=>{
  if(!article)return;
  if(grade===10){
   article.classList.add("thpt-g10-knowledge-ap1");
-  if(lesson<=6)numberG10FirstSix(article);
+  if(lesson<=6){article.classList.add("thpt-g10-first-six-golden");numberG10FirstSix(article);polishG10FirstSix(article);restoreG10FirstSixGolden(article);}
  }
  if(article.querySelector("[data-sgk-lesson-nav]"))return;
  const root=match[1]+(grade===10?"":"lop-"+grade+"/");
