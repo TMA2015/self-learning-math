@@ -69,8 +69,8 @@ const polishG10FirstSix=(article)=>{
    // Explanatory prose is left-aligned in both header and values;
    // compact numbers, coordinates, symbols and formulas are centred.
    const prose=rows.some(row=>{
-    const value=row.cells[column]?.textContent.replace(/\\s+/g," ").trim()||"";
-    return value.length>24 && /\\p{L}{3,}\\s+\\p{L}{2,}/u.test(value);
+    const value=row.cells[column]?.textContent.replace(/\s+/g," ").trim()||"";
+    return value.length>24 && /\p{L}{3,}\s+\p{L}{2,}/u.test(value);
    });
    for(const row of [header,...rows]){
     row.cells[column]?.classList.toggle("thpt-g10-table-prose",prose);
@@ -82,7 +82,7 @@ const polishG10FirstSix=(article)=>{
   pattern.test(node.firstElementChild.textContent.trim());
  for(const title of blocks[2].querySelectorAll(":scope > h3")){
   let current=title.nextElementSibling;
-  while(current && current.tagName!=="H3" && !isLead(current,/^Lời giải(?:\\s+theo vùng)?\\./iu))
+  while(current && current.tagName!=="H3" && !isLead(current,/^Lời giải(?:\s+theo vùng)?\./iu))
    current=current.nextElementSibling;
   if(!current||current.tagName==="H3")continue;
   const box=document.createElement("div");
@@ -91,7 +91,7 @@ const polishG10FirstSix=(article)=>{
   box.setAttribute("aria-label","Lời giải ví dụ");
   current.before(box);
   while(current && current.tagName!=="H3" &&
-        !isLead(current,/^(?:Kiểm lại|Kết luận)\\./iu)){
+        !isLead(current,/^(?:Kiểm lại|Kết luận)\./iu)){
    const next=current.nextElementSibling;
    box.append(current);
    current=next;
