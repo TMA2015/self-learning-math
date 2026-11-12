@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 "use strict";
+require("./thpt-g11-historical-source-replay.cjs")();
 // RELEASE ChVII immutable source/receipt and original public formative/assessment checks.
 // Structural safety QA does NOT itself confer historical Academic/PED or physical Safari PASS.
 const assert=require("node:assert/strict"),fs=require("node:fs"),crypto=require("node:crypto"),vm=require("node:vm");

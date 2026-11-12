@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 "use strict";
+require("./thpt-g11-historical-source-replay.cjs")();
 // Source-locked G11 ChVIII RELEASE integrity guard (no independent readiness or Mastery).
 const assert=require("node:assert/strict"),fs=require("node:fs"),crypto=require("node:crypto"),vm=require("node:vm");
 const rd=p=>fs.readFileSync(p,"utf8");

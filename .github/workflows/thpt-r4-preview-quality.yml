@@ -207,6 +207,8 @@ jobs:
     timeout-minutes: 40 # full R4 multi-device QA is ~25 min; no test omitted
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Read immutable G11 baseline Git blobs for historical-source tests
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'

@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 "use strict";
+require("./thpt-g11-historical-source-replay.cjs")();
 // RELEASE ChIX source-lock safety; academic verdict belongs to independent reviewer receipt.
 const assert=require("node:assert/strict"),fs=require("node:fs"),crypto=require("node:crypto"),vm=require("node:vm");
 const read=p=>fs.readFileSync(p,"utf8");

@@ -1,4 +1,5 @@
 "use strict";
+require("./thpt-g11-historical-source-replay.cjs")();
 const fs=require("node:fs"),vm=require("node:vm"),crypto=require("node:crypto"),assert=require("node:assert/strict");
 const read=p=>fs.readFileSync(p,"utf8");
 const blobHash=b=>crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+b.length+"\0"),b])).digest("hex");

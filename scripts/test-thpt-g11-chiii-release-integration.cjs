@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 "use strict";
+require("./thpt-g11-historical-source-replay.cjs")();
 // RELEASE-only exact academic source custody, public bank parity and Q16 source/placement guards.
 // This is not independent academic review nor an assessment Mastery claim.
 const assert=require("node:assert/strict");

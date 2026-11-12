@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 "use strict";
+require("./thpt-g11-historical-source-replay.cjs")();
 // RELEASE-only ChV exact Git blob/source, original public question answers and Q16 placement guards.
 const assert=require("node:assert/strict"),fs=require("node:fs"),crypto=require("node:crypto"),vm=require("node:vm");
 const rd=p=>fs.readFileSync(p,"utf8");

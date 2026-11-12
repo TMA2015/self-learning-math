@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 "use strict";
+require("./thpt-g11-historical-source-replay.cjs")();
 // Release-gate guard: source-locked academic correctness is NOT PED or runtime readiness.
 const assert=require("node:assert/strict"),fs=require("node:fs"),vm=require("node:vm");
 const read=p=>fs.readFileSync(p,"utf8");
