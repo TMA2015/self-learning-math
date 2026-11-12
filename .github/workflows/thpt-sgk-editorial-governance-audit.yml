@@ -49,11 +49,11 @@ jobs:
           assert(!sample.includes("firebase.initializeApp")&&!sample.includes("mastery.write"));
           console.log("PASS governance INVENTORY, 79 real SHA, GOLDEN = OWNER_PENDING, no academic or deployment assertions");
           NODE
-      - name: Upload reproducible report (draft evidence, no deploy)
-        uses: actions/upload-artifact@v4
-        with:
-          name: thpt-sgk-79-editorial-inventory-${{ github.sha }}
-          path: |
-            editorial-inventory/Temp_THPT_SGK_79_Editorial_Inventory_20261112.md
-            editorial-inventory/Temp_THPT_SGK_79_Editorial_Inventory_20261112.json
-          retention-days: 30
+      # Keep the 79-lesson report visible in CI logs/step summary, but do not
+      # upload artifacts or consume shared GitHub Actions artifact/cache quota.
+      - name: Publish report in the job summary (no artifact/cache upload)
+        shell: bash
+        run: |
+          echo "## SGK THPT 79 — editorial baseline (NOT owner Golden PASS)" >> "$GITHUB_STEP_SUMMARY"
+          cat editorial-inventory/Temp_THPT_SGK_79_Editorial_Inventory_20261112.md >> "$GITHUB_STEP_SUMMARY"
+          test -s editorial-inventory/Temp_THPT_SGK_79_Editorial_Inventory_20261112.json
