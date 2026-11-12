@@ -1,12 +1,12 @@
-# CĐ09 — 36 NEW PUBLIC canonical questions: 31 Practice + 5 Written/7
+# CĐ09 — 37 NEW PUBLIC canonical questions: 32 Practice + 5 Written/7
 
 Mỗi câu đúng một item_id trong file này, đủ đề/đáp án/lời giải/D6; Written/Anchor dùng cùng một rubric, không nhân ngân hàng. 71 SGK PUBLIC original items chỉ tham chiếu bằng index source-locked. Tất cả đều PUBLIC, 0 private RD1; self-check replay Practice không cấp mastery.
 
 PACKET_ID: THPT-TOPIC09-DERIVATIVE-MEANING-FULL-R01
 CATALOG_TOPIC_ID: CD09
-PUBLIC_NEW_PRACTICE: 31
+PUBLIC_NEW_PRACTICE: 32
 PUBLIC_NEW_WRITTEN: 5
-PUBLIC_NEW_TOTAL: 36
+PUBLIC_NEW_TOTAL: 37
 PRIVATE_RD1_IMPORTED: 0
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 
@@ -523,6 +523,20 @@ content_version: 1
 7. Khoảng giảm tốc độ và lưu ý điểm biên đúng (1đ)
 **D6:** Tăng tốc là |v| tăng, không đồng nghĩa a>0; v/a cùng dấu mới tăng tốc độ khi v≠0.
 
+## THPT-TOP09-P32 · TOP09-O32
+
+item_id: THPT-TOP09-P32
+outcome_id: TOP09-O32
+role: TOPIC_PRACTICE
+difficulty_band: TRANSFER
+problem_family_id: TOP09-DIFFERENTIAL_LINEAR_APPROX
+content_version: 1
+source_scope: TOPIC_EXTENSION_NOT_SGK_CORE
+**Đề:** f(x)=x², x ban đầu a=2 và tăng Δx=0,1. Tính vi phân tuyến tính dy=f'(a)Δx, độ tăng thật Δy=f(2,1)−f(2), sai lệch |Δy−dy|; phát biểu điều kiện khi dùng xấp xỉ.
+**Đáp án:** dy=0,4; Δy=0,41; sai lệch=0,01.
+**Lời giải có suy luận:** f'(x)=2x nên f'(2)=4. Vi phân tại a=2 ứng với dx=0,1 là dy=4·0,1=0,4. Độ tăng thực là 2,1²−2²=4,41−4=0,41. Với f=x², Δy=2aΔx+(Δx)² nên Δy−dy=(Δx)²=0,01; vì hàm khả vi tại a và Δx nhỏ, dy là xấp xỉ bậc nhất, không phải đẳng thức Δy=dy. Nếu bước thay đổi lớn, phần dư có thể đáng kể.
+**D6:** Không coi dy=Δy luôn đúng; khai triển f(a+Δx)−f(a) để thấy phần dư bậc hai.
+
 ## Q15/Q16
 
-Chỉ có 36 item_id canonical NEW; 71 item_id SGK giữ nguồn cũ và chỉ mục riêng. 31 self-check PUBLIC placement dùng lại P01–P31, không thêm item_id. Không giữ hay công khai 31 SGK private RD1, không chấm chính thức hoặc ghi Skill Mastery.
+Chỉ có 37 item_id canonical NEW; 71 item_id SGK giữ nguồn cũ và chỉ mục riêng. 32 self-check PUBLIC placement dùng lại P01–P32, không thêm item_id. Không giữ hay công khai 31 SGK private RD1, không chấm chính thức hoặc ghi Skill Mastery.
