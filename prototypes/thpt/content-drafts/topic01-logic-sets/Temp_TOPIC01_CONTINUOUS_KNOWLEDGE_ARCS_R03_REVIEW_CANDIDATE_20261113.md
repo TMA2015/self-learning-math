@@ -219,16 +219,9 @@ Chỉ bóng đá: \(32-10=22\); chỉ bóng rổ: \(28-10=18\); cả hai: 10; í
 
 </details>
 
-## Đọc hình — hai hình toán học gốc đã kiểm chứng
 
-1. **FIG-G10-B01-01:** [Các bội của 6 nằm trong các bội của 3](../../visuals/THPT_G10_B01_IMPLICATION_DIVISIBILITY_D5_R01.svg). Đọc vòng lớn “chia hết cho 3”, vùng nằm trong “chia hết cho 6”, rồi chỉ ra số 3 ở vùng lớn nhưng ngoài vùng nhỏ. Hình chỉ cho trực giác về chiều đảo sai, không phải chứng minh hết số nguyên. Source SVG Git blob `40b53b26deb48a7cfdff91be5fe01d12a67bebeb`.
-2. **FIG-G10-B02-01:** [Sơ đồ Venn của 40 học sinh](../../visuals/THPT_G10_B02_VENN_TWO_CLUBS_D5_R01.svg). Đọc bốn vùng 11, 12, 13, 4 và kiểm tổng 40; xác định 12 là vùng giao cần trừ khi cộng 23+25. Source SVG Git blob `ea84ee68187e83aa4bc6b14e49a965b3d7da5a11`.
+<!-- AUTHORING_ONLY: source-locked figure custody and interaction SPEC_ONLY notes preserved in original R02 blob 1edc9b33f28b7c07ad91a7aac091b1aa8e048540. The learner text already places verified SVG inline. -->
 
-## Mô hình tương tác khám phá — đặc tả học thuật, KHÔNG phải mã đã chạy
-
-- **Thẻ logic:** người học lần lượt chọn giá trị Đúng/Sai cho P,Q; mô hình cần hiển thị bốn trường hợp và giá trị P⇒Q, đánh dấu riêng P đúng/Q sai là duy nhất làm kéo theo sai. Sau mỗi lần chọn, giải thích tại sao bảng chân lý không đồng nghĩa nhân quả.
-- **Sơ đồ Venn bốn vùng:** cho người học điền giao trước, sau đó chỉ A, chỉ B, ngoài U; không cho tổng bốn vùng vượt số toàn thể. Ví dụ dữ liệu 40/23/25/12; quy tắc kiểm 11+12+13+4=40. Điều khiển phải dùng được bằng phím, cảm ứng, có văn bản tương đương và không phụ thuộc màu.
-- Đây là **CONCEPT_INTERACTION_SPEC_ONLY** để nhánh RELEASE xem xét theo Golden UI; chưa triển khai, chưa nhận QA trình duyệt, không được dùng trong đề kín hoặc tuyên bố là chức năng hoạt động.
 
 # Luyện tập
 
