@@ -19,7 +19,7 @@ REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC07_SEQUENCES_R01_AUTHOR
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC07_SEQUENCES_R01_AUTHOR_SELF_QA_RECEIPT_20261112.md
 REVIEW_RECEIPT_BLOB: 52e67e991298140410559dcd00d5468038c54e71
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC07-SEQUENCES-AP-GP-FULL-R01_HANDOFF_V2_20261112.md
-AUTHOR_HANDOFF_BLOB: 5ec40c62a669971ce0c18418659adae53dfdf761
+AUTHOR_HANDOFF_BLOB: 27a052550292a75c7bbabce2dca6226035066ef4
 PUBLIC_ORIGINAL47_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC07_SEQUENCES_ORIGINAL47_SGK_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_ORIGINAL47_INDEX_BLOB: 6500dc26b7ae21eb99b964f675023babdd881663
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC07_SEQUENCES_NEW22_PUBLIC_CANONICAL_R01_20261112.md
@@ -47,7 +47,7 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — canonical source Git blob 14174ab648c76f458881d0baf11413608968e3b5; original47 index 6500dc26b7ae21eb99b964f675023babdd881663, NEW22 3bf3ab77d89497b39ae50ac54f71b81eccddc14c; signed Q18 receipt 52e67e991298140410559dcd00d5468038c54e71; handoff 5ec40c62a669971ce0c18418659adae53dfdf761.
+- [x] A1_SOURCE_SNAPSHOT — canonical source Git blob 14174ab648c76f458881d0baf11413608968e3b5; original47 index 6500dc26b7ae21eb99b964f675023babdd881663, NEW22 3bf3ab77d89497b39ae50ac54f71b81eccddc14c; signed Q18 receipt 52e67e991298140410559dcd00d5468038c54e71; handoff 27a052550292a75c7bbabce2dca6226035066ef4.
 - [x] A2_SGK_SBT_SCOPE — archived publisher S1: SGK G11 Tập1 B05 42–47, B06 48–51, B07 52–55, B15 104–110, SBT direct original PDF printed B05 31–34, B06 35–36, B07 37–39 and B15 75–78; Topic-only finance enriched scope labelled.
 - [x] A3_NOTEBOOKLM_VERDICT — Q18 AUTHOR_SELF_VERIFIED v3.1.0 signed author receipt with 49/49 direct checks; no new independent NotebookLM PASS asserted, original SGK ChII/ChV PASS retained source-scoped.
 - [x] A4_ITEM_OUTCOME_IDS — 18 lesson IDs/outcome IDs, 69 unique canonical PUBLIC IDs, 69 item→outcome→role mappings; 18 public self-check repeat placements do not add IDs.
