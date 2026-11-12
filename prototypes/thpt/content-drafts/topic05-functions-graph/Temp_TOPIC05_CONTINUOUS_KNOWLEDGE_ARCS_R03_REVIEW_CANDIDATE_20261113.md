@@ -24,25 +24,19 @@ Xét bảng các cặp \((0,2),(1,4),(1,4)\). Dù \(x=1\) được ghi hai lần
 
 <!-- LESSON_ID: TOP05-M02; OUTCOME_ID: TOP05-O02 -->
 
-Để có một hàm số, trước hết cần biết những đầu vào nào biểu thức cho phép.
-
-Căn số học và mẫu số tạo ra điểm bị loại; dấu ≥ của căn không được biến thành >. Trước hết, ta xuất phát từ căn √u đòi u≥0, mẫu v≠0. Với √A(x)/B(x) cần đồng thời A(x)≥0 và B(x)≠0, nên D là **giao** các miền; luôn xét biểu thức ban đầu trước khi rút gọn. Ở đầu mút căn bằng0 là hợp lệ nếu mẫu khác0.
+Để có một hàm số, trước hết cần biết những đầu vào nào biểu thức cho phép. Căn số học và mẫu số tạo ra điểm bị loại; dấu ≥ của căn không được biến thành >. Trước hết, ta xuất phát từ căn √u đòi u≥0, mẫu v≠0. Với √A(x)/B(x) cần đồng thời A(x)≥0 và B(x)≠0, nên D là **giao** các miền; luôn xét biểu thức ban đầu trước khi rút gọn. Ở đầu mút căn bằng0 là hợp lệ nếu mẫu khác0.
 
 Một ví dụ giúp kiểm chứng điều đó. √(x+1)/(x−2): cần x≥−1, x≠2 ⇒ D=[−1,2)∪(2,+∞). Nhận x=−1 vì căn bằng0, mẫu−3.
 
 <!-- LESSON_ID: TOP05-M03; OUTCOME_ID: TOP05-O03 -->
 
-Miền đầu vào chưa nói hết các giá trị đầu ra mà hàm có thể nhận.
-
-Một biểu thức có thể cho rất nhiều giá trị trên ℝ, nhưng trên số sản phẩm nguyên chỉ có ít đầu ra. Điểm tựa cho suy luận là phép thế số và tập số nguyên/đoạn. T={f(x):x∈D} là tập **các y thật nhận được**, khác tập xác định D và tập đích ℝ. Miền rời rạc dẫn tới tập giá trị rời rạc, không tự nối thành khoảng.
+Miền đầu vào chưa nói hết các giá trị đầu ra mà hàm có thể nhận. Một biểu thức có thể cho rất nhiều giá trị trên ℝ, nhưng trên số sản phẩm nguyên chỉ có ít đầu ra. Điểm tựa cho suy luận là phép thế số và tập số nguyên/đoạn. T={f(x):x∈D} là tập **các y thật nhận được**, khác tập xác định D và tập đích ℝ. Miền rời rạc dẫn tới tập giá trị rời rạc, không tự nối thành khoảng.
 
 Hãy theo dõi cách giải này. f(x)=x² trên D={−2,0,1} cho T={0,1,4}. Với D=[−2,1] thì T=[0,4]. Cùng công thức nhưng miền khác nhau làm tập giá trị khác.
 
 <!-- LESSON_ID: TOP05-M04; OUTCOME_ID: TOP05-O04 -->
 
-Khi đã biết miền và tập giá trị, đồ thị cho phép quan sát quy luật.
-
-Nối một vài điểm đo thành đường cong có thể là giả định, không phải dữ kiện chắc chắn. Ta có thể bắt đầu bằng hệ trục Oxy; điểm A(a,b). Γ={(x,f(x)):x∈D}. A(a,b) thuộc đồ thị khi a∈D và b=f(a). Chấm đặc biểu thị điểm thuộc, chấm rỗng không thuộc; đường thẳng đứng x=c gặp hai y thì quan hệ không là đồ thị y=f(x).
+Khi đã biết miền và tập giá trị, đồ thị cho phép quan sát quy luật. Nối một vài điểm đo thành đường cong có thể là giả định, không phải dữ kiện chắc chắn. Ta có thể bắt đầu bằng hệ trục Oxy; điểm A(a,b). Γ={(x,f(x)):x∈D}. A(a,b) thuộc đồ thị khi a∈D và b=f(a). Chấm đặc biểu thị điểm thuộc, chấm rỗng không thuộc; đường thẳng đứng x=c gặp hai y thì quan hệ không là đồ thị y=f(x).
 
 Thử vận dụng vào một tình huống. f(x)=|x−2|+1: A(1,2) thuộc vì f(1)=2, B(3,3) không thuộc vì f(3)=2. Thay vào công thức là lý do kiểm nhanh chính xác.
 
@@ -106,25 +100,19 @@ Từ lập luận vừa rồi, ta xét: f(x)=−3x+2: f(x₂)−f(x₁)=−3(x�
 
 <!-- LESSON_ID: TOP05-M06; OUTCOME_ID: TOP05-O06 -->
 
-Với parabol, vị trí đỉnh cho biết cực trị trong miền được phép.
-
-Đỉnh của parabol có thể nằm ngoài miền khả thi nên không phải đáp án cực trị. Để hiểu, ta dựa vào bình phương không âm, khoảng/đoạn đóng và số nguyên. Hoàn phương ax²+bx+c=a(x−h)²+k (a≠0), h=−b/(2a), k=f(h). Đỉnh(h,k), trục đối xứng x=h. Khi tìm GTLN/GTNN trên D, luôn kiểm h có ở D không, so biên và các giá trị nguyên khả thi; không cần vội dùng đạo hàm.
+Với parabol, vị trí đỉnh cho biết cực trị trong miền được phép. Đỉnh của parabol có thể nằm ngoài miền khả thi nên không phải đáp án cực trị. Để hiểu, ta dựa vào bình phương không âm, khoảng/đoạn đóng và số nguyên. Hoàn phương ax²+bx+c=a(x−h)²+k (a≠0), h=−b/(2a), k=f(h). Đỉnh(h,k), trục đối xứng x=h. Khi tìm GTLN/GTNN trên D, luôn kiểm h có ở D không, so biên và các giá trị nguyên khả thi; không cần vội dùng đạo hàm.
 
 Chẳng hạn, f(x)=−(x−1)²+8 trên [2,5]: đỉnh ở1 bị loại. Hàm giảm trên miền, max f(2)=7, min f(5)=−8. Chọn kiểm miền trước công thức cực trị.
 
 <!-- LESSON_ID: TOP05-M07; OUTCOME_ID: TOP05-O07 -->
 
-Đồ thị cũng có thể giữ nguyên hình dạng khi phản xạ qua trục hoặc qua gốc.
-
-Phỏng đoán một hình đối xứng không thay được chứng minh với mọi x. Trước hết, ta xuất phát từ miền D đối xứng qua0; so f(−x) và f(x). Chẵn khi D đối xứng và f(−x)=f(x), đồ thị đối xứng trục Oy. Lẻ khi D đối xứng và f(−x)=−f(x), đồ thị đối xứng gốc O. Miền không đối xứng thì không suy chẵn/lẻ chỉ từ công thức.
+Đồ thị cũng có thể giữ nguyên hình dạng khi phản xạ qua trục hoặc qua gốc. Phỏng đoán một hình đối xứng không thay được chứng minh với mọi x. Trước hết, ta xuất phát từ miền D đối xứng qua0; so f(−x) và f(x). Chẵn khi D đối xứng và f(−x)=f(x), đồ thị đối xứng trục Oy. Lẻ khi D đối xứng và f(−x)=−f(x), đồ thị đối xứng gốc O. Miền không đối xứng thì không suy chẵn/lẻ chỉ từ công thức.
 
 Một ví dụ giúp kiểm chứng điều đó. f(x)=x⁴−2x² chẵn do f(−x)=f(x); x³ lẻ do f(−x)=−f(x). Tính trực tiếp đáng tin hơn nhìn sơ đồ phác.
 
 <!-- LESSON_ID: TOP05-M08; OUTCOME_ID: TOP05-O08 -->
 
-Một loại đối xứng khác xuất hiện khi giá trị lặp lại theo chu kỳ.
-
-Quan sát số liệu lặp chưa đủ chứng minh hàm tuần hoàn trên mọi đầu vào. Điểm tựa cho suy luận là t>0, phép dịch đầu vào x↦x+T. T là chu kỳ khi f(x+T)=f(x) với mọi x trong miền mà các điểm dịch hợp lệ và miền bảo toàn qua phép dịch. Chu kỳ cơ bản là chu kỳ dương nhỏ nhất nếu tồn tại. Không lẫn chu kỳ trên Ox với độ cao/biên độ trên Oy. Công thức chi tiết lượng giác thuộc CĐ06.
+Một loại đối xứng khác xuất hiện khi giá trị lặp lại theo chu kỳ. Quan sát số liệu lặp chưa đủ chứng minh hàm tuần hoàn trên mọi đầu vào. Điểm tựa cho suy luận là t>0, phép dịch đầu vào x↦x+T. T là chu kỳ khi f(x+T)=f(x) với mọi x trong miền mà các điểm dịch hợp lệ và miền bảo toàn qua phép dịch. Chu kỳ cơ bản là chu kỳ dương nhỏ nhất nếu tồn tại. Không lẫn chu kỳ trên Ox với độ cao/biên độ trên Oy. Công thức chi tiết lượng giác thuộc CĐ06.
 
 Hãy theo dõi cách giải này. Nếu f(x+5)=f(x) và f(2)=−1, thì f(12)=f(2+2·5)=−1. Chọn dùng định nghĩa, không cần biết hàm là sin hay cos.
 
@@ -190,41 +178,39 @@ Thử vận dụng vào một tình huống. f(x)=|x−1|, g(x)=f(x)+4 có đỉ
 
 <!-- LESSON_ID: TOP05-M10; OUTCOME_ID: TOP05-O10 -->
 
-Khi dịch theo phương ngang, dấu bên trong đối số dễ gây nhầm.
-
-Dời thời điểm bắt đầu của hiện tượng có thể dời cả miền hợp lệ. Những điều đã biết ở đây là đặt u=x−h; miền gốc D_f. g(x)=f(x−h) xác định khi x−h∈D_f, nên D_g=D_f+h; điểm (u,f(u)) thành(u+h,f(u)). h>0 là dịch **phải** h; f(x+h) dịch trái h. Không đoán chiều dịch chỉ theo dấu trừ cộng nếu chưa xét tọa độ.
+Khi dịch theo phương ngang, dấu bên trong đối số dễ gây nhầm. Dời thời điểm bắt đầu của hiện tượng có thể dời cả miền hợp lệ. Những điều đã biết ở đây là đặt u=x−h; miền gốc D_f. g(x)=f(x−h) xác định khi x−h∈D_f, nên D_g=D_f+h; điểm (u,f(u)) thành(u+h,f(u)). h>0 là dịch **phải** h; f(x+h) dịch trái h. Không đoán chiều dịch chỉ theo dấu trừ cộng nếu chưa xét tọa độ.
 
 Từ lập luận vừa rồi, ta xét: f(x)=√x có D=[0,+∞); g(x)=√(x−3) có D=[3,+∞) và điểm đầu (3,0): dịch phải3.
 
+![Parabol gốc và parabol được tịnh tiến](../../visuals/THPT_TOPIC05_GRAPH_TRANSLATION_R01.svg)
+
+*Quan sát hình:* Theo một điểm cố định khi cộng hằng bên ngoài hoặc trong đối số; đọc chiều dịch theo trục trước khi kết luận.
+
 <!-- LESSON_ID: TOP05-M11; OUTCOME_ID: TOP05-O11 -->
 
-Sau phép dịch, phép phản xạ tạo đồ thị mới mà không cần vẽ lại.
-
-Đổi dấu đầu ra khác hoàn toàn việc đổi hướng đầu vào. Để hiểu, ta dựa vào điểm (x,y), đổi dấu x hoặc y. −f(x) phản xạ Ox: (x,y)→(x,−y), miền giữ. f(−x) phản xạ Oy: (x,y)→(−x,y), miền thành −D_f. Với f chẵn, phản xạ Oy không làm đổi hình; với f lẻ cả hai cho cùng biểu thức.
+Sau phép dịch, phép phản xạ tạo đồ thị mới mà không cần vẽ lại. Đổi dấu đầu ra khác hoàn toàn việc đổi hướng đầu vào. Để hiểu, ta dựa vào điểm (x,y), đổi dấu x hoặc y. −f(x) phản xạ Ox: (x,y)→(x,−y), miền giữ. f(−x) phản xạ Oy: (x,y)→(−x,y), miền thành −D_f. Với f chẵn, phản xạ Oy không làm đổi hình; với f lẻ cả hai cho cùng biểu thức.
 
 Chẳng hạn, f=x²+x: −f=−x²−x trong khi f(−x)=x²−x. Tại x=1 được −2 và0, chứng minh hai phép khác nhau.
 
 <!-- LESSON_ID: TOP05-M12; OUTCOME_ID: TOP05-O12 -->
 
-Nhân toàn bộ giá trị hàm làm độ cao thay đổi, khác tác động lên đối số.
-
-Phóng to đơn vị tung độ làm đường cong cao hơn nhưng giữ vị trí đầu vào. Trước hết, ta xuất phát từ nhân một tung độ y với hệ số c. g(x)=c f(x): (x,y)→(x,cy). |c|>1 dãn đứng, 0<|c|<1 co đứng, c<0 còn phản xạ Ox. c=0 đưa hình về Ox nhưng không là phép giãn khả nghịch. Nếu c≠0 thì tập nghiệm f(x)=0 giữ nguyên.
+Nhân toàn bộ giá trị hàm làm độ cao thay đổi, khác tác động lên đối số. Phóng to đơn vị tung độ làm đường cong cao hơn nhưng giữ vị trí đầu vào. Trước hết, ta xuất phát từ nhân một tung độ y với hệ số c. g(x)=c f(x): (x,y)→(x,cy). |c|>1 dãn đứng, 0<|c|<1 co đứng, c<0 còn phản xạ Ox. c=0 đưa hình về Ox nhưng không là phép giãn khả nghịch. Nếu c≠0 thì tập nghiệm f(x)=0 giữ nguyên.
 
 Một ví dụ giúp kiểm chứng điều đó. f=x², g=−3x²: điểm(1,1) thành(1,−3), đỉnh(0,0) giữ; đồ thị lật Ox và dãn đứng ba lần.
 
+![Phản xạ và co giãn tung độ của đồ thị](../../visuals/THPT_TOPIC05_REFLECTION_VERTICAL_SCALE_R01.svg)
+
+*Quan sát hình:* Điểm (x,y) của đồ thị gốc được đưa tới (x,ay); a âm đảo qua Ox, trị tuyệt đối a điều khiển mức co giãn đứng.
+
 <!-- LESSON_ID: TOP05-M13; OUTCOME_ID: TOP05-O13 -->
 
-Nếu nhân biến bên trong đối số, khoảng cách theo trục hoành biến đổi.
-
-Khi đầu vào chạy nhanh gấp đôi, cùng một tung độ xuất hiện sớm hơn. Điểm tựa cho suy luận là đặt u=kx (k khác0), điểm gốc(u,f(u)). g(x)=f(kx) biến (u,f(u)) thành(u/k,f(u)); độ rộng ngang nhân1/|k|. |k|>1 là co ngang, 0<|k|<1 là dãn ngang; k<0 còn phản xạ Oy. Miền D_g={x:kx∈D_f}, khác phép g=kf(x).
+Nếu nhân biến bên trong đối số, khoảng cách theo trục hoành biến đổi. Khi đầu vào chạy nhanh gấp đôi, cùng một tung độ xuất hiện sớm hơn. Điểm tựa cho suy luận là đặt u=kx (k khác0), điểm gốc(u,f(u)). g(x)=f(kx) biến (u,f(u)) thành(u/k,f(u)); độ rộng ngang nhân1/|k|. |k|>1 là co ngang, 0<|k|<1 là dãn ngang; k<0 còn phản xạ Oy. Miền D_g={x:kx∈D_f}, khác phép g=kf(x).
 
 Hãy theo dõi cách giải này. f=|x|, g=f(2x)=2|x|: cùng y=4, f đạt x=±4 còn g đạt x=±2. Vẻ dốc hơn là kết quả co ngang theo đối số.
 
 <!-- LESSON_ID: TOP05-M14; OUTCOME_ID: TOP05-O14 -->
 
-Giá trị tuyệt đối có hai hiệu ứng khác nhau khi đặt ngoài hay trong hàm.
-
-Dấu |.| bên ngoài f và bên trong đối số thay hai nửa đồ thị khác nhau. Ta có thể bắt đầu bằng |t|≥0, |t|=t khi t≥0, =−t nếu t<0. |f(x)| giữ phần y≥0, phản xạ phần y<0 lên Ox; miền không đổi. f(|x|) lấy nửa đồ thị f trên x≥0 rồi phản xạ sang x≤0; miền mới {x:|x|∈D_f}. Không thể coi chúng giống nhau.
+Giá trị tuyệt đối có hai hiệu ứng khác nhau khi đặt ngoài hay trong hàm. Dấu |.| bên ngoài f và bên trong đối số thay hai nửa đồ thị khác nhau. Ta có thể bắt đầu bằng |t|≥0, |t|=t khi t≥0, =−t nếu t<0. |f(x)| giữ phần y≥0, phản xạ phần y<0 lên Ox; miền không đổi. f(|x|) lấy nửa đồ thị f trên x≥0 rồi phản xạ sang x≤0; miền mới {x:|x|∈D_f}. Không thể coi chúng giống nhau.
 
 Thử vận dụng vào một tình huống. f=x−1: |f(x)|=|x−1| có đỉnh(1,0), còn f(|x|)=|x|−1 có đỉnh(0,−1). Điểm x=0 cho hai giá trị khác.
 
@@ -314,17 +300,17 @@ Từ lập luận vừa rồi, ta xét: f=x², g=2f(x−1)+3 có đỉnh (1,3), 
 
 <!-- LESSON_ID: TOP05-M16; OUTCOME_ID: TOP05-O16 -->
 
-Với hàm từng đoạn, điểm nối và dấu bằng có thể làm thay đổi đồ thị.
-
-Hai công thức giá theo thời gian có thể gặp nhau hoặc tạo bước nhảy tại mốc đổi giá. Để hiểu, ta dựa vào phân biệt x<c, x≤c, x≥c; chấm rỗng/đặc. Tại x=c, **nhánh có dấu bằng** xác định f(c). Nhìn độ cao của hai nhánh sát c: khác nhau tạo bước nhảy, bằng nhau có thể nối khi điểm được nhận. Đây là cách đọc hình trực quan, không thay nội dung định nghĩa/định lý giới hạn và liên tục chính thức ở CĐ08.
+Với hàm từng đoạn, điểm nối và dấu bằng có thể làm thay đổi đồ thị. Hai công thức giá theo thời gian có thể gặp nhau hoặc tạo bước nhảy tại mốc đổi giá. Để hiểu, ta dựa vào phân biệt x<c, x≤c, x≥c; chấm rỗng/đặc. Tại x=c, **nhánh có dấu bằng** xác định f(c). Nhìn độ cao của hai nhánh sát c: khác nhau tạo bước nhảy, bằng nhau có thể nối khi điểm được nhận. Đây là cách đọc hình trực quan, không thay nội dung định nghĩa/định lý giới hạn và liên tục chính thức ở CĐ08.
 
 Chẳng hạn, f=x nếu x<1, f=2x−1 nếu x≥1. Tại1 dùng nhánh sau được1; phía trái cũng tới1, hai nhánh nối tại (1,1).
 
+![Điểm đầu rỗng và đặc ở hàm số từng đoạn](../../visuals/THPT_TOPIC05_PIECEWISE_ENDPOINTS_R01.svg)
+
+*Quan sát hình:* Tại điểm nối, dấu < hoặc ≤ cho biết giá trị của nhánh nào được lấy; điểm rỗng không phải là một phần của đồ thị.
+
 <!-- LESSON_ID: TOP05-M17; OUTCOME_ID: TOP05-O17 -->
 
-Mọi phép biến đổi phải quay về miền hợp lệ của mô hình.
-
-Một đỉnh đẹp trên toàn ℝ có thể không có ý nghĩa vì sản phẩm chỉ nhận giá trị nguyên và còn ràng buộc. Trước hết, ta xuất phát từ biến q nguyên, đơn vị, miền quyết định D. Đặt biến, **đơn vị và miền khả thi trước**; từ đó tính hàm và ứng viên, kiểm ứng viên trong D. Khi ràng buộc đổi, quyết định tối ưu có thể đổi dù công thức không đổi. Với bậc hai sơ cấp dùng hoàn phương; khảo sát cực trị bằng đạo hàm thuộc CĐ10.
+Mọi phép biến đổi phải quay về miền hợp lệ của mô hình. Một đỉnh đẹp trên toàn ℝ có thể không có ý nghĩa vì sản phẩm chỉ nhận giá trị nguyên và còn ràng buộc. Trước hết, ta xuất phát từ biến q nguyên, đơn vị, miền quyết định D. Đặt biến, **đơn vị và miền khả thi trước**; từ đó tính hàm và ứng viên, kiểm ứng viên trong D. Khi ràng buộc đổi, quyết định tối ưu có thể đổi dù công thức không đổi. Với bậc hai sơ cấp dùng hoàn phương; khảo sát cực trị bằng đạo hàm thuộc CĐ10.
 
 Một ví dụ giúp kiểm chứng điều đó. P(q)=−(q−4)²+16 (triệu) với q∈{5,6}. Đỉnh q=4 không khả thi; P(5)=15, P(6)=12 ⇒ chọn q=5.
 
