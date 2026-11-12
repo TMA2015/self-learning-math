@@ -131,3 +131,37 @@
     font-size: .79rem;
   }
 }
+
+/* Owner visual consistency fix 12/11/2026: G10 B01-B06 only.
+ * Match header/body horizontal alignment, centre mathematical cells,
+ * retain left alignment for explanatory prose, and vertically centre rows. */
+.md-typeset.thpt-g10-knowledge-ap1 .thpt-g10-knowledge-table :is(th, td) {
+  text-align: center;
+  vertical-align: middle;
+}
+.md-typeset.thpt-g10-knowledge-ap1 .thpt-g10-knowledge-table :is(th, td).thpt-g10-table-prose {
+  text-align: left;
+}
+
+/* Existing 'Lời giải' paragraphs, formula blocks and tables are grouped at
+ * render time. No SGK Markdown or mathematical expression is rewritten. */
+.md-typeset.thpt-g10-knowledge-ap1 .thpt-g10-example-solution {
+  margin: .65rem 0 .9rem;
+  padding: .8rem 1rem;
+  background: color-mix(in srgb, var(--md-primary-fg-color) 5%, var(--md-default-bg-color));
+  border-radius: .5rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+.md-typeset.thpt-g10-knowledge-ap1 .thpt-g10-example-solution > :first-child {
+  margin-top: 0;
+}
+.md-typeset.thpt-g10-knowledge-ap1 .thpt-g10-example-solution > :last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 600px) {
+  .md-typeset.thpt-g10-knowledge-ap1 .thpt-g10-example-solution {
+    padding: .68rem .75rem;
+  }
+}
