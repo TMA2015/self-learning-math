@@ -12,7 +12,10 @@ async function verifyModelBLesson(page,{n,chapter,tries,helps,images,questions=t
  if(await group.count()===0)return false;
  const labels=group.locator(".tabbed-labels label");
  const actual=(await labels.allTextContents()).map(x=>x.trim());
- assert.deepEqual(actual,tabsExpected,"B"+n+" four Golden horizontal Model B tabs");
+ const expected=n<=6?tabsExpected.map((name,i)=>(i+1)+". "+name):tabsExpected;
+ assert.deepEqual(actual,expected,"B"+n+" four Golden horizontal Model B tabs: numbered G10 B01-B06, unchanged B07+");
+ if(n<=6)assert.equal(await article.getAttribute("data-g10-b01-b06-editorial-numbered"),"true",
+   "B"+n+" numbering must be mounted on approved B01–B06 DOM only");
  const rel="docs/thpt-preview/sgk/chuong-"+chapter+"/bai-"+n+".md";
  const bytes=fs.readFileSync(rel);
  const sha=crypto.createHash("sha1").update(Buffer.from("blob "+bytes.length+"\0")).update(bytes).digest("hex");
@@ -38,8 +41,11 @@ async function verifyModelBLesson(page,{n,chapter,tries,helps,images,questions=t
  assert.equal(await article.locator("details.question[open], details.tip[open]").count(),0,
   "B"+n+" no pre-attempt solution/remediation may be open");
  const select=async name=>{
-  const t=labels.filter({hasText:new RegExp("^"+name+"$")});
-  assert.equal(await t.count(),1,"B"+n+" missing tab "+name);
+  const index=tabsExpected.indexOf(name);
+  assert(index>=0,"Unknown Golden tab request "+name);
+  const t=labels.nth(index);
+  assert.equal((await t.textContent()).trim(),expected[index],
+   "B"+n+" missing exact expected tab "+expected[index]);
   await t.click();
  };
  await select("Kiến thức SGK");
