@@ -95,9 +95,8 @@ jobs:
             lesson_count=$((lesson_count + 1))
           done
           test "$lesson_count" -eq 27
-          # Candidate MkDocs config MUST differ from published main only by
-          # this scoped CSS line. Abort instead of replacing navigation, hooks,
-          # scripts, authentication, or other established site configuration.
+          # Post-#797 baseline already includes G10 CSS. Demand exact current
+          # main MkDocs config parity, never downgrade or replace site hooks.
           python - <<'PY'
           from pathlib import Path
           css = "  - assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css\n"
@@ -105,13 +104,13 @@ jobs:
               candidate = Path(name).read_text(encoding="utf-8")
               live_file = Path("integration-main") / name
               published = live_file.read_text(encoding="utf-8")
-              if candidate.count(css) != 1 or candidate.replace(css, "", 1) != published:
-                  raise SystemExit(f"STANDARD_CONFLICT_HOLD: {name} has non-CSS differences against current main")
-              # Verified equivalent to inserting only the scoped CSS line.
+              if candidate.count(css) != 1 or published.count(css) != 1 or candidate != published:
+                  raise SystemExit(f"STANDARD_CONFLICT_HOLD: {name} must equal already-published main with exactly one G10 CSS entry")
               live_file.write_text(candidate, encoding="utf-8")
-              print(f"PASS current main {name}: only G10 Knowledge CSS inserted")
+              print(f"PASS current main {name}: exact config parity; G10 CSS already present")
           PY
           cp docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css integration-main/docs/assets/stylesheets/
+          cp docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js integration-main/docs/assets/javascripts/
           for name in \
             G10_B02_MEMBERSHIP_SUBSET_R01.svg \
             G10_B06_SURVEY_RIGHT_TRIANGLE_R01.svg \

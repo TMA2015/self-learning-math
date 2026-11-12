@@ -9,6 +9,7 @@ const assert=require("node:assert/strict");
 const fs=require("node:fs");
 const path=require("node:path");
 const crypto=require("node:crypto");
+const cp=require("node:child_process");
 const root=path.resolve(__dirname,"..");
 const index=process.argv.indexOf("--baseline");
 assert(index>=0&&process.argv[index+1],"--baseline DIR required: use a pristine main checkout");
@@ -40,9 +41,14 @@ for(const [name,chapter,num]of specs){
  const row=rows.get(name);assert(row,"Missing source ledger "+name);
  const rel="docs/thpt-preview/sgk/chuong-"+chapter+"/bai-"+num+".md";
  const mainRaw=read(baselineRoot,rel),candidateRaw=read(root,rel);
- assert.equal(blob(mainRaw),row.main,name+" main baseline source drift");
- assert.equal(blob(candidateRaw),row.candidate,name+" staged candidate source drift");
- const base=mainRaw.toString("utf8"),s=candidateRaw.toString("utf8");
+ const mainSHA=blob(mainRaw);
+ assert(mainSHA===row.main||mainSHA===row.candidate,name+" must use frozen historic or published Model B source, never a third snapshot");
+ assert.equal(blob(candidateRaw),row.candidate,name+" current candidate must keep immutable reviewed Model B source");
+ // After #797 merged, main contains Model B. Compare against its PREVIOUS
+ // Git blob, still verifiable in full history, not against a false assumption.
+ const historic=mainSHA===row.main?mainRaw:cp.execFileSync("git",["cat-file","blob",row.main],{maxBuffer:3*1024*1024});
+ assert.equal(blob(historic),row.main,name+" original historical source Git blob missing");
+ const base=historic.toString("utf8"),s=candidateRaw.toString("utf8");
  assert.deepEqual(getIDs(s),getIDs(base),name+" original First Try/HELP/outcome IDs changed");
  assert.deepEqual([...s.matchAll(/^=== "([^"]+)"$/gm)].map(x=>x[1]),tabs,name+" changed owner Model B tabs");
  const ids=getIDs(s);
@@ -55,7 +61,7 @@ for(const [name,chapter,num]of specs){
     .map(x=>(x[1]??x[2]??x[3]).trim().replace(/\s+/g," "));
   assert(actual.some((_,i)=>i+30<=actual.length&&frozen.every((v,j)=>actual[i+j]===v)),
     "B09 protected original 30 math expressions lost or reordered");
-   assert.equal(blob(mainRaw),historicalMainB09GitBlob,"B09 baseline must match immutable published Git blob");
+   assert.equal(blob(historic),historicalMainB09GitBlob,"B09 original baseline must match immutable historical Git blob");
    assert.notEqual(blob(candidateRaw),historicalMainB09GitBlob,"B09 must remain a distinct source-locked Delta C");
   assert.equal(ids.first.length,5);assert.equal(ids.help.length,2);
   console.log("PASS EVIDENCE B09: 30/30 original math; 5 FirstTry/2 HELP; old+new source hashes");
