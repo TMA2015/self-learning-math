@@ -29,8 +29,8 @@ def assert_model_b_knowledge(page, lesson, numbered=5):
     assert len(section_heads)==numbered,(lesson,section_heads)
     for i in range(1,numbered+1):
         assert any(x.startswith(f"1.{i}.") for x in section_heads),f"B{lesson}: lost section 1.{i}"
-    assert any("Vận dụng" in x for x in panels.nth(2).locator("h3").all_inner_texts()),(
-        lesson,"original 1.6 self-try must be accessible in the Examples panel"
+    assert any("Vận dụng" in x for x in panels.nth(1).locator("h3").all_inner_texts()),(
+        lesson,"original 1.6 self-try must be accessible within SGK Knowledge"
     )
     attempts=page.locator("details[data-ped-first-try]")
     assert attempts.count()>=1,f"B{lesson}: original self-try missing"
