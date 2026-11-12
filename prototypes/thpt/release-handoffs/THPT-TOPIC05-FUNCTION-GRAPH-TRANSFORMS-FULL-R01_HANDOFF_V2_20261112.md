@@ -152,3 +152,53 @@ One item ID, one canonical bank; compact source_type is TOPIC_NEW_CANDIDATE; no 
 | `THPT-TOP05-W02` | `TOP05-O15` | `TOPIC_WRITTEN` | TOPIC_NEW_CANDIDATE | PROPOSED_NOT_LIVE |
 | `THPT-TOP05-W03` | `TOP05-O16` | `TOPIC_WRITTEN` | TOPIC_NEW_CANDIDATE | PROPOSED_NOT_LIVE |
 | `THPT-TOP05-W04` | `TOP05-O17` | `TOPIC_WRITTEN` | TOPIC_NEW_CANDIDATE | PROPOSED_NOT_LIVE |
+
+
+## SELF_CHECK_PUBLIC_PLACEMENTS
+
+17 lượt công khai dùng lại item đã xuất hiện ở Practice, KHÔNG tạo ID mới hoặc official TOPIC_READINESS. CLIENT_SELF_CHECK_NO_MASTERY, no Skill Mastery.
+
+| outcome_id | reused_public_item_id | assessment_mode |
+|---|---|---|
+| `TOP05-O01` | `THPT-TOP05-P01` | CLIENT_SELF_CHECK_NO_MASTERY |
+| `TOP05-O02` | `THPT-TOP05-P03` | CLIENT_SELF_CHECK_NO_MASTERY |
+| `TOP05-O03` | `THPT-TOP05-P05` | CLIENT_SELF_CHECK_NO_MASTERY |
+| `TOP05-O04` | `THPT-TOP05-P07` | CLIENT_SELF_CHECK_NO_MASTERY |
+| `TOP05-O05` | `THPT-TOP05-P09` | CLIENT_SELF_CHECK_NO_MASTERY |
+| `TOP05-O06` | `THPT-TOP05-P11` | CLIENT_SELF_CHECK_NO_MASTERY |
+| `TOP05-O07` | `THPT-TOP05-P13` | CLIENT_SELF_CHECK_NO_MASTERY |
+| `TOP05-O08` | `THPT-TOP05-P15` | CLIENT_SELF_CHECK_NO_MASTERY |
+| `TOP05-O09` | `THPT-TOP05-P17` | CLIENT_SELF_CHECK_NO_MASTERY |
+| `TOP05-O10` | `THPT-TOP05-P19` | CLIENT_SELF_CHECK_NO_MASTERY |
+| `TOP05-O11` | `THPT-TOP05-P21` | CLIENT_SELF_CHECK_NO_MASTERY |
+| `TOP05-O12` | `THPT-TOP05-P23` | CLIENT_SELF_CHECK_NO_MASTERY |
+| `TOP05-O13` | `THPT-TOP05-P25` | CLIENT_SELF_CHECK_NO_MASTERY |
+| `TOP05-O14` | `THPT-TOP05-P27` | CLIENT_SELF_CHECK_NO_MASTERY |
+| `TOP05-O15` | `THPT-TOP05-P29` | CLIENT_SELF_CHECK_NO_MASTERY |
+| `TOP05-O16` | `THPT-TOP05-P31` | CLIENT_SELF_CHECK_NO_MASTERY |
+| `TOP05-O17` | `THPT-TOP05-P33` | CLIENT_SELF_CHECK_NO_MASTERY |
+
+## QUALITY_Q01_Q18_EVIDENCE
+
+**Chuẩn duy nhất**: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md` — SLM-THPT-QUALITY-ONE v3.0.1. Q01–Q18 là tiêu chuẩn chung, D/PED/A/AP/R là chứng cứ/cổng khác nhau. Nhánh AUTHORING không giả reviewer NotebookLM PASS hoặc runtime RELEASE PASS.
+
+| Qxx | Source-locked author evidence | Verdict | Exact source and receipt binding | Release boundary |
+|---|---|---|---|---|
+| Q01 | SGK/SBT G10 T2 B15/B16 owner original PDF visual receipts, page printed/PDF index SHA ground; general transformations labeled Topic authored | AUTHOR_SELF_VERIFIED | SOURCE_9323df37ff_RECEIPT_dc21091e2d | RELEASE_SEPARATE_NO_DEPLOY |
+| Q02 | 17 outcomes on real input-output, graph reading and transformations; >=2 unique canonical items per outcome | AUTHOR_SELF_VERIFIED | SOURCE_9323df37ff_RECEIPT_dc21091e2d | RELEASE_SEPARATE_NO_DEPLOY |
+| Q03 | 17 concept-first valid-domain theoretical modules, boundary exceptions and restrictions | AUTHOR_SELF_VERIFIED | SOURCE_9323df37ff_RECEIPT_dc21091e2d | RELEASE_SEPARATE_NO_DEPLOY |
+| Q04 | 17 worked examples with reasoned method selection before Tự thử | AUTHOR_SELF_VERIFIED | SOURCE_9323df37ff_RECEIPT_dc21091e2d | RELEASE_SEPARATE_NO_DEPLOY |
+| Q05 | 38 public IDs authored, 34 Practice with basic/understand/apply and 4 Written synthesis, multiple distinct problem families | AUTHOR_SELF_VERIFIED | SOURCE_9323df37ff_RECEIPT_dc21091e2d | RELEASE_SEPARATE_NO_DEPLOY |
+| Q06 | 4 Written one rubric /7 each, self-check not auto-scored, no second Anchor library | AUTHOR_SELF_VERIFIED | SOURCE_9323df37ff_RECEIPT_dc21091e2d | RELEASE_SEPARATE_NO_DEPLOY |
+| Q07 | 3 source-locked original SVG diagrams on translation/reflection/piecewise endpoints with title/desc | AUTHOR_SELF_VERIFIED | SOURCE_9323df37ff_RECEIPT_dc21091e2d | RELEASE_SEPARATE_NO_DEPLOY |
+| Q08 | 17 D6 causes, source concept and return to different practice item | AUTHOR_SELF_VERIFIED | SOURCE_9323df37ff_RECEIPT_dc21091e2d | RELEASE_SEPARATE_NO_DEPLOY |
+| Q09 | 17 motivations WHY mathematical/data/real-world before formula | AUTHOR_SELF_VERIFIED | SOURCE_9323df37ff_RECEIPT_dc21091e2d | RELEASE_SEPARATE_NO_DEPLOY |
+| Q10 | 17 prerequisite bridges for domain, square root, inequalities, coordinate graph | AUTHOR_SELF_VERIFIED | SOURCE_9323df37ff_RECEIPT_dc21091e2d | RELEASE_SEPARATE_NO_DEPLOY |
+| Q11 | meaning of one-output, range, transform through point mapping before algebra shortcuts | AUTHOR_SELF_VERIFIED | SOURCE_9323df37ff_RECEIPT_dc21091e2d | RELEASE_SEPARATE_NO_DEPLOY |
+| Q12 | 3 SVG explain reading coordinates, shift directions, open/closed endpoints and jump | AUTHOR_SELF_VERIFIED | SOURCE_9323df37ff_RECEIPT_dc21091e2d | RELEASE_SEPARATE_NO_DEPLOY |
+| Q13 | 17 examples explain how/why method works and limits such as restricted D and noninvertible c/k zero | AUTHOR_SELF_VERIFIED | SOURCE_9323df37ff_RECEIPT_dc21091e2d | RELEASE_SEPARATE_NO_DEPLOY |
+| Q14 | 17 first tries before voluntary comparison and D6 remediation | AUTHOR_SELF_VERIFIED | SOURCE_9323df37ff_RECEIPT_dc21091e2d | RELEASE_SEPARATE_NO_DEPLOY |
+| Q15 | 38 canonical unique items in one bank with unique IDs, no duplicate key/answer/rubric, 17 reuse placements | AUTHOR_SELF_VERIFIED | SOURCE_9323df37ff_RECEIPT_dc21091e2d | RELEASE_SEPARATE_NO_DEPLOY |
+| Q16 | 0 imported confidential RD1 and no Mastery from exposed public selfcheck; Final Submit runtime safety separate | AUTHOR_SELF_VERIFIED | SOURCE_9323df37ff_RECEIPT_dc21091e2d | RELEASE_SEPARATE_NO_DEPLOY |
+| Q17 | 3 complete Topic pages independent of SGK and other planned CĐ04/06/08/09/10 | AUTHOR_SELF_VERIFIED | SOURCE_9323df37ff_RECEIPT_dc21091e2d | RELEASE_SEPARATE_NO_DEPLOY |
+| Q18 | Git blobs exact source/bank/3 SVG; historic pilot independent PASS stays original snapshot, author self-QA 110 checks | AUTHOR_SELF_VERIFIED | SOURCE_9323df37ff_RECEIPT_dc21091e2d | RELEASE_SEPARATE_NO_DEPLOY |
