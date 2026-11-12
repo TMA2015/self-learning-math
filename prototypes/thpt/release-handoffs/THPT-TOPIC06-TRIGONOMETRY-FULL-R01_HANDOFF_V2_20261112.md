@@ -238,24 +238,24 @@ One normative source `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.
 
 | Q | AUTHORING evidence | verification | RELEASE boundary | source lock |
 |---|---|---|---|---|
-| Q01 | S1 KNTT SGK/SBT ChI đúng phạm vi; receipt historical | AUTHOR_QA_PASS: B01–B04 printed mapping, receipts retained | RELEASE_PENDING_AP_R_Q16 | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
-| Q02 | 16 Topic outcomes độc lập | AUTHOR_QA_PASS: 16 modules with meaning, examples and bank | RELEASE_PENDING_AP_R_Q16 | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
-| Q03 | Điều kiện tan/cot/căn/khử mẫu | AUTHOR_QA_PASS: Module M02/M04/M08/M11/M14 | RELEASE_PENDING_AP_R_Q16 | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
-| Q04 | 16 examples with rationale | AUTHOR_QA_PASS: M01–M16: worked method/why | RELEASE_PENDING_AP_R_Q16 | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
-| Q05 | 46 old references +16 new practice | AUTHOR_QA_PASS: 66 distinct in matrix, 4 Written | RELEASE_PENDING_AP_R_Q16 | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
-| Q06 | 4 Written/Anchor single rubric | AUTHOR_QA_PASS: NEW20 W01–W04 /7 | RELEASE_PENDING_AP_R_Q16 | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
-| Q07 | 3 SVG explained; 2 labs SPEC_ONLY | AUTHOR_QA_PASS: No runtime claims | RELEASE_PENDING_AP_R_Q16 | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
-| Q08 | 16 D6 remedies | AUTHOR_QA_PASS: Each M01–M16 D6 | RELEASE_PENDING_AP_R_Q16 | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
-| Q09 | WHY before knowledge | AUTHOR_QA_PASS: Each module motivation | RELEASE_PENDING_AP_R_Q16 | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
-| Q10 | Prerequisites local | AUTHOR_QA_PASS: Each module prerequisites | RELEASE_PENDING_AP_R_Q16 | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
-| Q11 | Meaning before formula | AUTHOR_QA_PASS: Each module concept development | RELEASE_PENDING_AP_R_Q16 | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
-| Q12 | Read circle/graph/asymptote | AUTHOR_QA_PASS: SVG 01–03 guidance | RELEASE_PENDING_AP_R_Q16 | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
-| Q13 | Method choice and domain | AUTHOR_QA_PASS: Trigonometric equations with guard | RELEASE_PENDING_AP_R_Q16 | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
-| Q14 | 16 first tries and voluntary compare | AUTHOR_QA_PASS: Pre-answer check in Knowledge | RELEASE_PENDING_AP_R_Q16 | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
-| Q15 | Canonical ID and shared bank | AUTHOR_QA_PASS: 46+20 unique; reuse placement only | RELEASE_PENDING_AP_R_Q16 | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
-| Q16 | RD1 no leak, no Mastery | AUTHOR_QA_PASS: 0 private imported, Final Submit RELEASE | RELEASE_PENDING_AP_R_Q16 | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
-| Q17 | Topic 3 pages, no Core | AUTHOR_QA_PASS: Knowledge/Practice/Public Check | RELEASE_PENDING_AP_R_Q16 | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
-| Q18 | Q18 author source-locked receipt | AUTHOR_QA_PASS: Review receipt 9afafbad with signoff | RELEASE_PENDING_AP_R_Q16 | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
+| Q01 | S1 KNTT SGK/SBT ChI đúng phạm vi; receipt historical | AUTHOR_QA_PASS: B01–B04 printed mapping, receipts retained | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
+| Q02 | 16 Topic outcomes độc lập | AUTHOR_QA_PASS: 16 modules with meaning, examples and bank | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
+| Q03 | Điều kiện tan/cot/căn/khử mẫu | AUTHOR_QA_PASS: Module M02/M04/M08/M11/M14 | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
+| Q04 | 16 examples with rationale | AUTHOR_QA_PASS: M01–M16: worked method/why | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
+| Q05 | 46 old references +16 new practice | AUTHOR_QA_PASS: 66 distinct in matrix, 4 Written | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
+| Q06 | 4 Written/Anchor single rubric | AUTHOR_QA_PASS: NEW20 W01–W04 /7 | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
+| Q07 | 3 SVG explained; 2 labs SPEC_ONLY | AUTHOR_QA_PASS: No runtime claims | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
+| Q08 | 16 D6 remedies | AUTHOR_QA_PASS: Each M01–M16 D6 | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
+| Q09 | WHY before knowledge | AUTHOR_QA_PASS: Each module motivation | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
+| Q10 | Prerequisites local | AUTHOR_QA_PASS: Each module prerequisites | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
+| Q11 | Meaning before formula | AUTHOR_QA_PASS: Each module concept development | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
+| Q12 | Read circle/graph/asymptote | AUTHOR_QA_PASS: SVG 01–03 guidance | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
+| Q13 | Method choice and domain | AUTHOR_QA_PASS: Trigonometric equations with guard | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
+| Q14 | 16 first tries and voluntary compare | AUTHOR_QA_PASS: Pre-answer check in Knowledge | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
+| Q15 | Canonical ID and shared bank | AUTHOR_QA_PASS: 46+20 unique; reuse placement only | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
+| Q16 | RD1 no leak, no Mastery | AUTHOR_QA_PASS: 0 private imported, Final Submit RELEASE | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
+| Q17 | Topic 3 pages, no Core | AUTHOR_QA_PASS: Knowledge/Practice/Public Check | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
+| Q18 | Q18 author source-locked receipt | AUTHOR_QA_PASS: Review receipt 9afafbad with signoff | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_SHA_C5FC_RECEIPT_SHA_9AFA |
 
 ## S1_SGK_SBT_SOURCE
 
