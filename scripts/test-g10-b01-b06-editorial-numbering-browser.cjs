@@ -17,7 +17,7 @@ const SHA={
 "docs/thpt-preview/sgk/chuong-iii/bai-6.md":"3a2f4392357b0a7155488ba2427fbb2dde0dde81"
 };
 const STYLES={
-"docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css":"6f7a1266fc4b87f9df469e9d56540f18c13cc891",
+"docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css":"44442773ac31eb1a46f0cab699a7d2c7974a5f37",
 "docs/assets/stylesheets/site-design-system.css":"cede51cfff25ef4f6c612c894c81f4639625c32b",
 "docs/assets/stylesheets/thpt-r4-preview.css":"f46b7280965c226039093c408dc7f8e3e78001fa",
 "docs/assets/stylesheets/thpt-sgk-lesson-nav-v1.css":"4bf16bba1cd144f0a69c932d8ead24dd4534f4cb",
