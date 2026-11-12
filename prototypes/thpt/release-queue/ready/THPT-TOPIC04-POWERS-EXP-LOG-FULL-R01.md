@@ -17,9 +17,9 @@ ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp
 ACADEMIC_SOURCE_BLOB: 383ef263b930604a30bad57b7d95d83d13896b20
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC04_POWERS_EXP_LOG_R01_AUTHOR_SELF_QA_RECEIPT_20261112.md (AUTHOR_SELF_QA, no new independent Topic NotebookLM PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC04_POWERS_EXP_LOG_R01_AUTHOR_SELF_QA_RECEIPT_20261112.md
-REVIEW_RECEIPT_BLOB: 95621352172556be7776c6f525083cd9a76993d0
+REVIEW_RECEIPT_BLOB: 267e420b18fd5b0f8cce616cabc9a6325765ce6b
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC04-POWERS-EXP-LOG-FULL-R01_HANDOFF_V2_20261112.md
-AUTHOR_HANDOFF_BLOB: f51d10cdc03af7baaed1c8b42fe229a40349e944
+AUTHOR_HANDOFF_BLOB: d6bb860bcbb51caac2a923a8062df2c687bbdd97
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC04_POWERS_LOG_ORIGINAL49_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 7d257edda0a2d29ba063987a51c61980558dbab6
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC04_POWERS_LOG_NEW26_PUBLIC_CANONICAL_R01_20261112.md
@@ -46,7 +46,7 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — Canonical Topic source Git blob 383ef263b930604a30bad57b7d95d83d13896b20, Q18 signed receipt 95621352172556be7776c6f525083cd9a76993d0, one 49-old index, one 26-new bank and one handoff V2 exact source.
+- [x] A1_SOURCE_SNAPSHOT — Canonical Topic source Git blob 383ef263b930604a30bad57b7d95d83d13896b20, Q18 signed receipt 267e420b18fd5b0f8cce616cabc9a6325765ce6b, one 49-old index, one 26-new bank and one handoff V2 exact source.
 - [x] A2_SGK_SBT_SCOPE — KNTT G11 tập 2 S1 Core: SGK B18–B21, printed SGK p4–24/SBT p4–19; owner original PDF SHA+visual printed-page index receipt 02/11/2026. SBT solutions p73–85, not old 117–134; SBT reference, no copyright copying.
 - [x] A3_NOTEBOOKLM_VERDICT — G11 ChVI original public reviewed 49 items historical independent NotebookLM PASS limited to original R01 source and two Delta B decimal corrections; 18 new Topic modules/26 original questions/1 SVG AUTHOR_SELF_VERIFIED Q18 with 113 direct checks, **not new NotebookLM PASS**.
 - [x] A4_ITEM_OUTCOME_IDS — 18 outcomes, 75 unique canonical PUBLIC IDs (49 references+26 new), 3–7 mapped to each; 12 Written one canonical library (8 old rubric 4 pts,4 new rubric 7 pts), 18 public reuse selfchecks no new IDs.
