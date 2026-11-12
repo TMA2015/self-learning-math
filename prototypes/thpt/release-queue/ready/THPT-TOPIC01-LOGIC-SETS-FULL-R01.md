@@ -19,14 +19,18 @@ REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC01_LOGIC_SETS_R01_AUTHO
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC01_LOGIC_SETS_R01_AUTHOR_SELF_QA_RECEIPT_20261112.md
 REVIEW_RECEIPT_BLOB: 5a3731b9b0fc1d702ff5f8f984b827a1a5356459
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC01-LOGIC-SETS-FULL-R01_HANDOFF_V2_20261112.md
-AUTHOR_HANDOFF_BLOB: 768ecf8a79af70dd5e375fb89b4093fa03e7ba77
+AUTHOR_HANDOFF_BLOB: 5b527a3694cf75d3a68caed1178a89abb593cd26
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_CANONICAL_SOURCE_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 09d36b0d289ebc54cc4ee51805503cf7f6e714f2
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_PUBLIC_EXTENSION_06ITEM_R01_20261112.md
+ORIGINAL_SVG1_PATH: prototypes/thpt/visuals/THPT_G10_B01_IMPLICATION_DIVISIBILITY_D5_R01.svg
+ORIGINAL_SVG1_BLOB: 40b53b26deb48a7cfdff91be5fe01d12a67bebeb
+ORIGINAL_SVG2_PATH: prototypes/thpt/visuals/THPT_G10_B02_VENN_TWO_CLUBS_D5_R01.svg
+ORIGINAL_SVG2_BLOB: ea84ee68187e83aa4bc6b14e49a965b3d7da5a11
 PUBLIC_EXTENSION_BLOB: 89ae1cd2338f2c5c48b9af874a8b52b1306c8acd
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
-BLOCKERS: NONE_IN_PUBLIC_AUTHORING_SCOPE
+BLOCKERS: NONE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
@@ -39,11 +43,11 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
 - [x] A1_SOURCE_SNAPSHOT — new CĐ01 student-first source `98d3a1df4a644089338d574fc6ad0e0fd596df0f`, QA receipt `5a3731b9b0fc1d702ff5f8f984b827a1a5356459`, 18 immutable original + six newly authored PUBLIC formative canonical questions, single V2 handoff.
 - [x] A2_SGK_SBT_SCOPE — S1 source *reference only*, prior independent original receipt KNTT G10 T1 B01 printed SGK 5–11/SBT5–7; B02 SGK12–19/SBT8–11. Catalog CĐ01/22 is the organizing unit, not SGK chapters.
-- [x] A3_REVIEW_SCOPE — original 18 SGK public bank academic NotebookLM PASS on historic frozen source SHA `95a554e31a613b8e215679fe6790738473d598df` only; CĐ01 new Delta C assessed Q18 AUTHOR_SELF_VERIFIED 40/40, NO claim of new independent reviewer PASS.
+- [x] A3_NOTEBOOKLM_VERDICT — original 18 SGK public bank academic NotebookLM PASS on historic frozen source SHA `95a554e31a613b8e215679fe6790738473d598df` only; CĐ01 new Delta C assessed Q18 AUTHOR_SELF_VERIFIED 40/40, NO claim of new independent reviewer PASS.
 - [x] A4_ITEM_OUTCOME_IDS — 11/11 Topic outcomes, 24 distinct PUBLIC canonical IDs (18 previous/6 original new), 2 original Written with single rubric, 11 reused public selfcheck placements NO_MASTERY.
-- [x] A5_PEDAGOGY — 11 concept-first modules, 11 worked examples, 11 first-tries with opt-in comparison, 11 D6 routes, 2 immutable SVG assets. Two interaction models are design specs only, not working frontend.
-- [x] A6_DELTA — six new public practice worked solutions independently author checked in scope, 18 old stems/keys/rubrics unmodified; P0=0/P1=0 in public AUTHORING.
-- [x] A7_PRIVACY — 0 private RD1 imported and 0 official Readiness items; Final Submit safe runtime and Mastery require separate RELEASE.
+- [x] A5_D1_D6_SCOPE — 11 concept-first modules, 11 worked examples, 11 first-tries with opt-in comparison, 11 D6 routes, 2 immutable SVG assets. Two interaction models are design specs only, not working frontend.
+- [x] A6_DELTA_RESOLVED — six new public practice worked solutions independently author checked in scope, 18 old stems/keys/rubrics unmodified; P0=0/P1=0 in public AUTHORING.
+- [x] A7_PUBLIC_PRIVATE_BOUNDARY — 0 private RD1 imported and 0 official Readiness items; Final Submit safe runtime and Mastery require separate RELEASE.
 
 ## PED1–PED6 / Q09–Q14
 
