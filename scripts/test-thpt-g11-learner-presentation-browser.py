@@ -65,8 +65,13 @@ with sync_playwright() as p:
                     audit_learner_headings(page,n)
                     assert page.locator("body.thpt-g11-sgk-readable").count()==1
                     if n==24:
-                        measure=page.locator(".md-content .tabbed-content > .tabbed-block").nth(1).locator("p").first.evaluate("(el)=>el.getBoundingClientRect().width")
-                        assert measure<=min(width,900),f"B24 dense prose overlong at {width}: {measure}"
+                        model_tabs=page.locator(".md-content .tabbed-set")
+                        assert model_tabs.count()==1,"B24 Model B Knowledge must use one tab set"
+                        model_tabs.locator(".tabbed-labels > label").nth(1).click()
+                        knowledge=model_tabs.locator(".tabbed-content > .tabbed-block").nth(1)
+                        assert knowledge.is_visible(),"B24 Knowledge tab did not open"
+                        measure=knowledge.locator("p").first.evaluate("(el)=>el.getBoundingClientRect().width")
+                        assert 0<measure<=min(width,900),f"B24 dense prose overlong or hidden at {width}: {measure}"
                 for n in (28,29,30):
                     visit(page,f"chuong-viii/bai-{n}/")
                     assert_model_b_knowledge(page,n,5)
