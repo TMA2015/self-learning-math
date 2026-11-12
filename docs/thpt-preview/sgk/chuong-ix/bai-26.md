@@ -32,7 +32,7 @@
 
     Ta tạo không gian mẫu bằng cách liệt kê mọi kết quả hoàn chỉnh; mỗi kết quả chứa một lựa chọn ở từng giai đoạn. **Đếm bằng phép nhân là đếm các cặp hoàn chỉnh, không đếm các nhãn đơn lẻ.** Khi từng lựa chọn vật lí đồng đều và hai thao tác độc lập, các cặp mới đồng khả năng.
 
-    **Hướng dẫn đọc hình/bảng:** Vẽ bảng ba hàng ứng với các ô 1,2,3 và hai cột N,S. Mỗi giao điểm là một cặp (ô,mặt xu); quét bảng theo hàng để chắc chắn mỗi cặp xuất hiện đúng một lần.
+    **Tự dựng hình hoặc bảng:** Vẽ bảng ba hàng ứng với các ô 1,2,3 và hai cột N,S. Mỗi giao điểm là một cặp (ô,mặt xu); quét bảng theo hàng để chắc chắn mỗi cặp xuất hiện đúng một lần.
 
     Ưu tiên bảng hoặc cây khi có ít tầng; dùng tích số lựa chọn sau khi xác định đúng phần tử của Ω. Chỉ nói mọi cặp đồng khả năng khi đã có giả thiết ô bằng nhau, đồng xu cân đối và hai thao tác độc lập.
 
@@ -69,7 +69,7 @@
 
     Phép thử quyết định Ω trước, phát biểu biến cố chọn từ Ω **những kết quả thỏa điều kiện**, không thêm phần tử bên ngoài Ω. Khi đã liệt kê đúng A, số phần tử thuận lợi mới dùng được để tính xác suất nếu Ω đồng khả năng.
 
-    **Hướng dẫn đọc hình/bảng:** Viết Ω trên một hàng bảy vị trí. Dùng dấu khoanh vào các vị trí thuộc A; các vị trí còn lại cho thấy A thực sự là tập con của Ω.
+    **Tự dựng hình hoặc bảng:** Viết Ω trên một hàng bảy vị trí. Dùng dấu khoanh vào các vị trí thuộc A; các vị trí còn lại cho thấy A thực sự là tập con của Ω.
 
     Với ít kết quả, liệt kê A minh bạch hơn đếm tắt; với nhiều kết quả dùng tính chất số học nhưng vẫn phải chứng minh thuộc Ω. Chỉ chia \(n(A)/n(\Omega)\) sau khi xác nhận chọn đều.
 
@@ -106,7 +106,7 @@
 
     Định nghĩa cổ điển \(P(A)=n(A)/n(\Omega)\) chỉ đúng với **Ω hữu hạn, không rỗng và các kết quả sơ cấp đồng khả năng**. Có thể nhiều kết quả sơ cấp cùng mang một nhãn; gom nhãn lại không bảo toàn đồng khả năng.
 
-    **Hướng dẫn đọc hình/bảng:** Xếp 10 ô có tên riêng 1–10, tô dấu X lên đúng bốn ô, dấu Y lên sáu ô. Đếm 10 ô vật lí, không lấy mẫu số 2 là hai nhãn.
+    **Tự dựng hình hoặc bảng:** Xếp 10 ô có tên riêng 1–10, tô dấu X lên đúng bốn ô, dấu Y lên sáu ô. Đếm 10 ô vật lí, không lấy mẫu số 2 là hai nhãn.
 
     Chọn Ω là các thẻ phân biệt được rút đều; đếm số thẻ mang X. Nếu đề chỉ nói “ngẫu nhiên” mà không cho chọn đều, phải kiểm mô hình trước khi tính.
 
@@ -143,7 +143,7 @@
 
     A và biến cố đối không thể xảy ra cùng lúc và phủ kín Ω, nên \(P(\bar A)=1-P(A)\). Đây không phải một mẹo trừ số không có căn cứ; chính việc phân hoạch Ω thành hai phần rời nhau làm công thức đúng.
 
-    **Hướng dẫn đọc hình/bảng:** Đánh dấu 12 số 1–12; tô nhóm bội của 3 bằng một kí hiệu, để phần còn lại không tô. Hai phần ghép lại đủ 12 phần tử.
+    **Tự dựng hình hoặc bảng:** Đánh dấu 12 số 1–12; tô nhóm bội của 3 bằng một kí hiệu, để phần còn lại không tô. Hai phần ghép lại đủ 12 phần tử.
 
     Dùng phần bù khi A dễ liệt kê hơn \(\bar A\). Với nhóm số, vẫn kiểm các phần tử bội của 3, không nhân thừa vì trùng số.
 
@@ -180,7 +180,7 @@
 
     Nếu chưa biết quy tắc chọn hoặc tần suất/mô hình, không thể tự gán \(1/3\) chỉ vì có ba kết quả được đặt tên. Đây là một **giới hạn áp dụng** của định nghĩa cổ điển. Một biến cố có xác suất rất nhỏ vẫn có thể xảy ra, không đồng nghĩa biến cố không thể.
 
-    **Hướng dẫn đọc hình/bảng:** Vẽ ba nhánh A,B,C nhưng để dấu hỏi ở độ rộng/xác suất nhánh; dấu hỏi nhắc rằng chưa có chứng cứ ba nhánh đồng khả năng.
+    **Tự dựng hình hoặc bảng:** Vẽ ba nhánh A,B,C nhưng để dấu hỏi ở độ rộng/xác suất nhánh; dấu hỏi nhắc rằng chưa có chứng cứ ba nhánh đồng khả năng.
 
     Chỉ tính \(n(A)/n(\Omega)\) khi chọn đều từng kết quả sơ cấp đã được nêu. Nếu thiếu giả thiết, kết luận 'không đủ thông tin' và nói rõ cần thêm dữ kiện về cơ chế chọn; không bịa phân bố đều.
 

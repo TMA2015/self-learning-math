@@ -32,7 +32,7 @@
 
     Chọn hai thẻ đồng thời và đều giữa các nhóm làm mỗi nhóm không thứ tự là một kết quả sơ cấp. Tổng hai số lẻ khi và chỉ khi một số lẻ, một số chẵn. Đếm nhóm thuận lợi bằng chọn một từ mỗi loại.
 
-    **Hướng dẫn đọc hình/bảng:** Vẽ sơ đồ hai cột: nhóm lẻ {1,3,5} và nhóm chẵn {2,4}; nối mỗi số lẻ với mỗi số chẵn. Mỗi đoạn nối là một cặp không thứ tự duy nhất.
+    **Tự dựng hình hoặc bảng:** Vẽ sơ đồ hai cột: nhóm lẻ {1,3,5} và nhóm chẵn {2,4}; nối mỗi số lẻ với mỗi số chẵn. Mỗi đoạn nối là một cặp không thứ tự duy nhất.
 
     Dùng tổ hợp ở mẫu số vì đề nói chọn nhóm không phân thứ tự; dùng phép nhân 3×2 ở tử vì mỗi cặp lẻ–chẵn xác định một nhóm khác nhau. Không áp công thức này nếu các nhóm không đồng khả năng.
 
@@ -74,7 +74,7 @@
 
     Với 5 thẻ phân biệt, lượt một có 5 chọn, lượt hai chỉ còn 4; Ω gồm \(5\cdot4=20\) cặp có thứ tự. Đúng một đỏ một xanh tách hai nhánh **đỏ rồi xanh** hoặc **xanh rồi đỏ**, rời nhau.
 
-    **Hướng dẫn đọc hình/bảng:** Vẽ thân cây có 5 nhánh lượt một và từ mỗi nhánh chỉ 4 thẻ khác thẻ đã rút. Tô nhóm đỏ trước–xanh sau và xanh trước–đỏ sau; mỗi lá là một cặp phân biệt.
+    **Tự dựng hình hoặc bảng:** Vẽ thân cây có 5 nhánh lượt một và từ mỗi nhánh chỉ 4 thẻ khác thẻ đã rút. Tô nhóm đỏ trước–xanh sau và xanh trước–đỏ sau; mỗi lá là một cặp phân biệt.
 
     Dùng cặp có thứ tự thay vì tổ hợp khi muốn nhìn rõ hai thứ tự. Đếm 3·2 cặp đỏ trước xanh sau và 2·3 cặp xanh trước đỏ sau; mỗi lá cùng xác suất 1/20 theo giả thiết rút đều không hoàn lại. Không áp cách đếm lá nếu các lựa chọn không đều.
 
@@ -111,7 +111,7 @@
 
     Gọi A là “ít nhất một N”. Biến cố đối \(\bar A\) là “không có N” tức đúng chuỗi SSS. Vì A và \(\bar A\) phân hoạch Ω, xác suất A bằng 1 trừ xác suất duy nhất của SSS.
 
-    **Hướng dẫn đọc hình/bảng:** Vẽ cây ba tầng, mỗi tầng hai nhánh N,S. Tô đúng lá SSS làm phần bù; bảy lá còn lại tương ứng ít nhất một N.
+    **Tự dựng hình hoặc bảng:** Vẽ cây ba tầng, mỗi tầng hai nhánh N,S. Tô đúng lá SSS làm phần bù; bảy lá còn lại tương ứng ít nhất một N.
 
     Chọn phần bù vì chỉ cần đếm một lá thay vì bảy. Trước khi tính, kiểm từng chuỗi ba mặt đồng khả năng do đồng xu cân đối và các lần tung độc lập.
 
@@ -148,7 +148,7 @@
 
     Có hoàn lại thì không gian mẫu gồm 5×5=25 cặp kết quả đồng khả năng, kể cả (2,2). Hai lần đều ra số chẵn có 2×2=4 cặp; xác suất bằng 4/25. Không hoàn lại sẽ cấm cặp lặp nên không dùng cùng mẫu số.
 
-    **Hướng dẫn đọc hình/bảng:** Vẽ bảng 5 hàng x 5 cột; ô (i,j) là kết quả hai lượt. Vì có hoàn lại, đường chéo (i,i) vẫn tồn tại; đánh dấu bốn ô mang hai số chẵn.
+    **Tự dựng hình hoặc bảng:** Vẽ bảng 5 hàng x 5 cột; ô (i,j) là kết quả hai lượt. Vì có hoàn lại, đường chéo (i,i) vẫn tồn tại; đánh dấu bốn ô mang hai số chẵn.
 
     Dùng đếm cặp có thứ tự và giả thiết đồng đều; có thể kiểm bằng tích xác suất \((2/5)(2/5)\) nhờ hoàn lại, nhưng không lạm dụng tính độc lập khi rút không hoàn lại.
 
@@ -185,7 +185,7 @@
 
     Cùng một phép thử, ta phải chọn một mô hình kết quả sơ cấp **đồng khả năng**. Gộp hai thứ tự ở cặp khác số tạo nhóm nặng xác suất gấp đôi nhóm cùng số; vì vậy chia cho 21 sẽ sai dù 21 là số cặp không thứ tự.
 
-    **Hướng dẫn đọc hình/bảng:** Đọc bảng 6×6 có hàng chỉ xúc xắc 1 và cột chỉ xúc xắc 2. Sáu ô đường chéo i=j biểu diễn hai mặt giống nhau; các ô (i,j) và (j,i) ở hai bên đường chéo là hai kết quả phân biệt.
+    **Tự dựng hình hoặc bảng:** Đọc bảng 6×6 có hàng chỉ xúc xắc 1 và cột chỉ xúc xắc 2. Sáu ô đường chéo i=j biểu diễn hai mặt giống nhau; các ô (i,j) và (j,i) ở hai bên đường chéo là hai kết quả phân biệt.
 
     Dùng 36 cặp có thứ tự đồng khả năng. Có sáu kết quả đường chéo thuận lợi; xác suất 6/36=1/6. Nếu chọn nhóm không thứ tự, bắt buộc gán trọng số đúng 1/36 hoặc 2/36 tùy cặp, không được chia số nhóm thuần túy.
 

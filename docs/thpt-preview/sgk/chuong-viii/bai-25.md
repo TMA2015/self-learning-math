@@ -34,7 +34,7 @@
 
     Đơn thức a³b² xuất hiện khi chọn b từ đúng hai trong năm nhân tử; ba nhân tử còn lại chọn a. Có C₅²=10 cách chọn vị trí b.
 
-    **Hướng dẫn đọc hình/sơ đồ:** Vẽ năm ô (a+b), đánh dấu hai ô lấy b, ba ô lấy a; đổi cặp ô đánh dấu cho các tích cùng a³b².
+    **Tự dựng sơ đồ minh họa:** Vẽ năm ô (a+b), đánh dấu hai ô lấy b, ba ô lấy a; đổi cặp ô đánh dấu cho các tích cùng a³b².
 
     **Lý do chọn phương pháp, điều kiện và giới hạn:** Với SGK Core n=4 hoặc n=5, số mũ của a và b cộng bằng n. Hệ số a^(n−k)b^k bằng C(n,k); không dùng n lớn làm nội dung bắt buộc.
 
@@ -74,7 +74,7 @@
 
     Hệ số x^k gồm ba phần: số cách chọn k vị trí là C(n,k), phần số 2^(n−k) từ các vị trí còn lại và dấu (−1)^k. Dấu không tùy ý.
 
-    **Hướng dẫn đọc hình/sơ đồ:** Dùng bốn ô (2−x), đánh dấu ba ô lấy −x và một ô lấy 2; mỗi tích chọn có ba dấu trừ nên kết quả âm.
+    **Tự dựng sơ đồ minh họa:** Dùng bốn ô (2−x), đánh dấu ba ô lấy −x và một ô lấy 2; mỗi tích chọn có ba dấu trừ nên kết quả âm.
 
     **Lý do chọn phương pháp, điều kiện và giới hạn:** Trong n=4 Core, hệ số x³ của (2−x)⁴ là C(4,3)·2¹·(−1)³. Kiểm đúng số mũ x trước khi tính, không mở rộng cấp số tùy chọn n lớn.
 
@@ -114,7 +114,7 @@
 
     Số hạng không chứa x đòi số mũ x bằng 0: lấy 3 ở tất cả bốn nhân tử. Đây là phạm vi SGK Core n=4; biểu thức 1/x hoặc n lớn thuộc phần hỗ trợ/mở rộng, không bắt làm Tự thử bắt buộc.
 
-    **Hướng dẫn đọc hình/sơ đồ:** Vẽ bốn ô (2x+3) và khoanh 3 trong cả bốn ô, thấy tích 3⁴ không có x.
+    **Tự dựng sơ đồ minh họa:** Vẽ bốn ô (2x+3) và khoanh 3 trong cả bốn ô, thấy tích 3⁴ không có x.
 
     **Lý do chọn phương pháp, điều kiện và giới hạn:** Dùng số hạng C(4,k)(2x)^k·3^(4−k), cho k=0; không giải bài có số mũ âm ngoài phạm vi SGK Core.
 
@@ -154,7 +154,7 @@
 
     Thay x=1, tất cả x^k=1 nên giá trị P(1) chính là tổng hệ số. Tách tổng hệ số lẻ/chẵn bằng P(−1) là nhánh mở rộng tự chọn, không thay phần SGK bắt buộc.
 
-    **Hướng dẫn đọc hình/sơ đồ:** Vẽ bảng bậc 0..4 và hệ số tương ứng, rồi cho x=1 để từng hạng đóng góp đúng hệ số của nó.
+    **Tự dựng sơ đồ minh họa:** Vẽ bảng bậc 0..4 và hệ số tương ứng, rồi cho x=1 để từng hạng đóng góp đúng hệ số của nó.
 
     **Lý do chọn phương pháp, điều kiện và giới hạn:** Hỏi tổng mọi hệ số thì tính P(1). Chỉ khi tự chọn học thêm tổng lẻ/chẵn mới dùng (P(1)−P(−1))/2, không dùng bài n=7 nâng cao làm Core.
 
