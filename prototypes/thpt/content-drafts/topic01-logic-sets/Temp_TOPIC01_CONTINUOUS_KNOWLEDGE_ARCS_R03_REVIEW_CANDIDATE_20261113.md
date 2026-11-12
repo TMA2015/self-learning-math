@@ -6,6 +6,8 @@
 
 Đây là một chuyên đề tự học độc lập theo danh mục CĐ01/22. Chuyên đề kết nối cách kiểm tra lời khẳng định với cách tổ chức tập hợp và đếm đúng; KHÔNG chia chương/bài SGK làm lộ trình học. Các mã kỹ thuật phía cuối là metadata dành cho AUTHORING/RELEASE, không hiển thị trong giao diện học sinh.
 
+# Kiến thức
+
 ## Khám phá — Hai câu hỏi dẫn dắt
 
 - Một bạn nói “mọi thành viên CLB Toán đều biết lập trình”. Chỉ một bạn không biết lập trình có đủ bác bỏ câu ấy không? → Em cần phân biệt “mọi”, “tồn tại” và phản ví dụ.
