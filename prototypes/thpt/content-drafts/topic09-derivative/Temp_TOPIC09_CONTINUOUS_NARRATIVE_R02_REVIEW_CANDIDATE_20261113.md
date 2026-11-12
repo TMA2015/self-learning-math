@@ -22,20 +22,18 @@ Hai lần đo chỉ cho ta tốc độ biến đổi trung bình; muốn biết 
 
 ### Tốc độ biến đổi trung bình và đơn vị
 
-<!-- LESSON_ID=TOP09-M01; OUTCOME_ID=TOP09-O01 -->
+<!-- LESSON_ID: TOP09-M01 · OUTCOME_ID: TOP09-O01 · connected prose R02 -->
 
-Một đại lượng có tăng đều giữa hai lần đo không? Tại sao chỉ biết đầu-cuối chưa biết tốc độ ngay tại một thời điểm? Để hiểu, ta dựa vào độ tăng Δy và khoảng thời gian Δx≠0. Tốc độ biến đổi trung bình trên [a,b] là [f(b)−f(a)]/(b−a), đơn vị 'đầu ra/đầu vào'. Với tọa độ theo thời gian, đại lượng có dấu là vận tốc trung bình; không phải tốc độ tức thời. Giữ rõ Δx và miền đo.
+Nếu một chiếc xe đi thêm 16 mét trong 2 giây, ta nói vận tốc trung bình trên khoảng đó là 8 m/s. Nhưng con số 8 chưa nói xe chuyển động nhanh bao nhiêu **đúng tại một thời điểm**. Để hiểu sự khác biệt, hãy bắt đầu với một đại lượng \(s(t)\) biểu diễn tọa độ theo thời gian. Trên khoảng \([a,b]\), vận tốc trung bình có hướng bằng \([s(b)-s(a)]/(b-a)\) với \(a\ne b\); tử số là độ dời, mẫu số là khoảng thời gian và đơn vị là mét trên giây nếu \(s\) đo bằng mét.
 
-Xét trường hợp sau. s(t)=2t² mét, trong 1→3 giây: Δs=18−2=16 m, Δt=2 s, trung bình=8 m/s. Chọn hiệu chia khoảng thời gian, không lấy tỷ số s(3)/3.
+Xét \(s(t)=2t^2\) (m) trong khoảng từ \(t=1\) đến \(t=3\) giây. Tọa độ tăng từ \(s(1)=2\) đến \(s(3)=18\), tức độ dời 16 m trong 2 s. Vận tốc trung bình là \((18-2)/(3-1)=8\) m/s. Ta phải dùng **hiệu hai tọa độ chia hiệu hai thời điểm**, không phải \(s(3)/3\). Ở bước tiếp theo, khi hai thời điểm tiến sát nhau, ý tưởng này sẽ dẫn tới đạo hàm và vận tốc tức thời.
 
-**Em tự thử:** Nếu f(x)=x² trên [0,2], tốc độ biến đổi trung bình là gì?
+**Em tự thử:** Hàm \(f(x)=x^2\) biến đổi trung bình bao nhiêu trên khoảng \([0,2]\)?
 
 <details class="slm-topic-first-try" markdown="1">
-<summary>Em đã thử? Mở lời giải và đường khắc phục</summary>
+<summary>Em đã tự làm? Mở phần đối chiếu</summary>
 
-(4−0)/(2−0)=2 đơn vị y / đơn vị x.
-
-Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và lý do chọn phương pháp. Nếu quên Δx ở mẫu, luôn viết bảng f(a),f(b),b−a.
+\([f(2)-f(0)]/(2-0)=(4-0)/2=2\) đơn vị đầu ra trên một đơn vị đầu vào. Nếu em dùng \(f(2)/2\) ở trường hợp này thì may mắn ra cùng kết quả vì \(f(0)=0\); hãy thử khoảng \([1,3]\) để thấy công thức đúng phải dùng **hai hiệu**.
 
 </details>
 
