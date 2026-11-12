@@ -11,6 +11,8 @@
 - **SGK PUBLIC original canonical:** chính xác 36 `item_id` của G11 ChV R03 Git blob `7934757ed06de4ae4b63dbc351ef524fc054e0d0`, biên bản Academic/PED độc lập lịch sử `2fdc39c755f399b0df81e17a9c8978384612e2f1`; nguồn cũ giữ nguyên, không nhân đề/đáp án/rubric. PASS SGK ChV lịch sử **không cấp** Topic PASS mới.
 - **Ranh giới:** tổng cấp số nhân lùi vô hạn học ở B15 và được giải từ giới hạn tổng riêng trong CĐ08; kỹ thuật dãy CSC/CSN tổng quát thuộc CĐ07. Đạo hàm và tiếp tuyến thuộc CĐ09; tiệm cận/khảo sát hàm số thuộc CĐ10. Có thể nhắc giới hạn vô cực để phân biệt nhưng không dạy khảo sát tiệm cận tại đây. Bisection chỉ là ứng dụng IVT, không giả định học sinh đã biết đạo hàm.
 
+# Kiến thức
+
 ## Vì sao phải học giới hạn và liên tục?
 
 Một dãy có thể tiến gần một số mãi dù chưa hề chạm nó; một hàm số có thể có giới hạn tại điểm mà chính điểm đó bị loại; một phương trình có thể chắc chắn có nghiệm dù ta chưa giải chính xác. Ba ý tưởng này cho phép phân biệt **hành vi gần điểm** với **giá trị tại điểm**, rồi dùng tính liên tục để suy luận về nghiệm. Người học đi từ hình ảnh và sai số tới quy tắc, tự thử trước khi tự mở đối chiếu.
