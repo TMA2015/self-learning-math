@@ -54,6 +54,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # G11 historical source Git blob checks plus new Q18 source-lock
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -78,6 +80,12 @@ jobs:
           node scripts/test-thpt-shared-item-placement.cjs
           node scripts/test-floating-ai-tutor-v1.js
           node scripts/test-thpt-g10-reviewed-selfcheck-data.cjs
+      - name: Verify G11 Knowledge 33/33 Q18 source, unchanged original math and canonical identities
+        run: |
+          if grep -q '^=== "Khám phá kiến thức"' docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md; then
+            node scripts/test-ux795-g11-modelb-source.cjs
+          fi
+
       - name: Validate THPT academic-to-release checklist before deploy
         run: node scripts/test-thpt-release-queue.cjs
       - name: Guard G10 ChV FULL R03 14 source-locked First Try before deploy
@@ -307,6 +315,11 @@ jobs:
       - name: Q18 Model B final built-site verification, all 27 learner pages
         if: steps.g10_route.outputs.candidate == 'true'
         run: node scripts/test-ux795-g10-render-draft.cjs
+      - name: Verify G11 33 rendered Model B learning pages before GitHub Pages publish
+        run: |
+          if grep -q '^=== "Khám phá kiến thức"' docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md; then
+            node scripts/test-ux795-g11-modelb-built.cjs
+          fi
       - name: Guard ChVI display math B15–B18
         run: |
           node scripts/test-thpt-chvi-math-block-render.cjs --built
