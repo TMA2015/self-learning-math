@@ -39,6 +39,18 @@ const run=()=>{
   // Knowledge tab. Never synthesize mathematical headings or alter source IDs.
   const knowledge=article.querySelector(":scope > .tabbed-set > .tabbed-content > .tabbed-block:nth-child(2)");
   if(knowledge&&!knowledge.querySelector("[data-g10-knowledge-sections]")){
+   // Existing source figures in G10 B07–B18 follow their "Cách đọc hình"
+   // paragraph. Place that very same reviewed figure BEFORE the prompt;
+   // do not duplicate, edit, fetch or replace any image or mathematical text.
+   for(const p of knowledge.querySelectorAll("p")){
+    const marker=p.querySelector("strong");
+    const label=marker?.textContent?.trim()||"";
+    if(!/^(?:Cách đọc hình|Quan sát hình|Đọc hình)/.test(label))continue;
+    const next=p.nextElementSibling;
+    if(next?.tagName!=="FIGURE")continue;
+    p.parentElement.insertBefore(next,p);
+    next.dataset.g10FigureBeforeGuide="true";
+   }
    const headings=[...knowledge.querySelectorAll("h3")];
    if(headings.length>=3){
     const outline=document.createElement("details");
