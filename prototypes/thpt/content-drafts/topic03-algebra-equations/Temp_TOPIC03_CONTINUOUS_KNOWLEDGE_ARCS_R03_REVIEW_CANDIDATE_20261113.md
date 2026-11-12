@@ -104,9 +104,9 @@ Chẳng hạn, (x+1)/(x−3)=2, x≠3. Nhân x−3 được x+1=2x−6 ⇒ x=7; 
 
 <!-- LESSON_ID: TOP03-M06; OUTCOME_ID: TOP03-O06; source: candidate R02 -->
 
-Giá trị tuyệt đối cũng yêu cầu chia trường hợp, bởi nó xóa dấu của biểu thức bên trong. Giá trị tuyệt đối luôn không âm; bỏ dấu bằng mắt có thể tạo nghiệm không có trong phương trình gốc. Để hiểu, ta dựa vào giá trị tuyệt đối |u| là khoảng cách đến 0 trên trục số. Nếu |A|=c hằng số: c<0 vô nghiệm; c≥0 giải A=±c (c=0 hai nhánh trùng). Nếu |A(x)|=B(x), cần B(x)≥0 rồi tách A=B hoặc A=−B, **kiểm lại điều kiện trên từng nhánh**. Đây là cầu nối đại số của Topic, không tự nâng thành Core SGK B18.
+Giá trị tuyệt đối cũng yêu cầu chia trường hợp, bởi nó xóa dấu của biểu thức bên trong. Giá trị tuyệt đối luôn không âm; bỏ dấu bằng mắt có thể tạo nghiệm không có trong phương trình gốc. Để xác định điều đó, cần xét giá trị tuyệt đối |u| là khoảng cách đến 0 trên trục số. Nếu |A|=c hằng số: c<0 vô nghiệm; c≥0 giải A=±c (c=0 hai nhánh trùng). Nếu |A(x)|=B(x), cần B(x)≥0 rồi tách A=B hoặc A=−B, **kiểm lại điều kiện trên từng nhánh**. Đây là cầu nối đại số của Topic, không tự nâng thành Core SGK B18.
 
-Xét một trường hợp cụ thể. |x−1|=3 ⇒ x−1=3 hoặc −3 ⇒ x=4 hoặc −2; thử khoảng cách đến 1 đều là 3. Không thể chỉ lấy nghiệm x=4 vì giá trị tuyệt đối xóa dấu.
+Chẳng hạn, |x−1|=3 ⇒ x−1=3 hoặc −3 ⇒ x=4 hoặc −2; thử khoảng cách đến 1 đều là 3. Không thể chỉ lấy nghiệm x=4 vì giá trị tuyệt đối xóa dấu.
 
 ### Vận dụng và tự đối chiếu
 
@@ -226,9 +226,9 @@ Nếu em vẫn còn phân vân, hãy quay lại điều kiện vừa dùng. Nế
 
 <!-- LESSON_ID: TOP03-M11; OUTCOME_ID: TOP03-O11; source: candidate R02 -->
 
-Một phương trình bậc bốn đôi khi trở thành bậc hai nhưng nghiệm ẩn phụ âm không có nghĩa trên ℝ. Để hiểu, ta dựa vào bình phương ≥0 và nghiệm PT bậc hai. Với x⁴+px²+q=0, đặt t=x²≥0. Giải t²+pt+q=0, **lọc t≥0**, rồi giải x²=t: t=0 cho x=0, t>0 cho x=±√t. Đây là *luyện tập mở rộng tự chọn* để hiểu kỹ thuật đổi dạng, không coi là Core bắt buộc của SGK B18.
+Một phương trình bậc bốn đôi khi trở thành bậc hai nhưng nghiệm ẩn phụ âm không có nghĩa trên ℝ. Để xác định điều đó, cần xét bình phương ≥0 và nghiệm PT bậc hai. Với x⁴+px²+q=0, đặt t=x²≥0. Giải t²+pt+q=0, **lọc t≥0**, rồi giải x²=t: t=0 cho x=0, t>0 cho x=±√t. Đây là *luyện tập mở rộng tự chọn* để hiểu kỹ thuật đổi dạng, không coi là Core bắt buộc của SGK B18.
 
-Xét một trường hợp cụ thể. x⁴−10x²+9=0 ⇒ t²−10t+9=(t−1)(t−9)=0 ⇒ t=1 hoặc 9, x=±1 hoặc ±3. Không nhận t âm.
+Chẳng hạn, x⁴−10x²+9=0 ⇒ t²−10t+9=(t−1)(t−9)=0 ⇒ t=1 hoặc 9, x=±1 hoặc ±3. Không nhận t âm.
 
 <!-- LESSON_ID: TOP03-M12; OUTCOME_ID: TOP03-O12; source: candidate R02 -->
 
@@ -262,16 +262,9 @@ Nếu em vẫn còn phân vân, hãy quay lại điều kiện vừa dùng. Nế
 
 </details>
 
-## Cách đọc sơ đồ — không học thuộc hình thay lập luận
 
-- [Biến đổi tương đương ⇔ và chỉ suy ra ⇒](../../visuals/THPT_TOPIC03_EQUIVALENCE_VS_SQUARING_R01.svg): Git blob `abb748c7b13dadc1786ea0de5f489a09dd2fe676`. Đọc mũi tên hai chiều ở phép trừ cùng lượng; mũi tên một chiều khi bình phương, thử x=−2 để phát hiện chiều đảo không đúng.
-- [Miền xác định và hai nghiệm ứng viên](../../visuals/THPT_TOPIC03_RADICAL_DOMAIN_NUMBERLINE_R01.svg): Git blob `7ee7acd819d9f6d8eb66bcc4ac8abebfd7d4521b`. Với √(x²+7x+11)=√(x+3), hai ứng viên −4,−2; điều kiện x≥−3 loại −4, nhận −2. Mốc −3 là **biên miền**, không phải nghiệm.
-- [Sơ đồ giải hai dạng phương trình căn](https://github.com/TMA2015/self-learning-math/blob/main/docs/assets/images/thpt/THPT_G10_CHVI_B18_RADICAL_FLOW_D5_R03.svg): Git blob `57dc5868ca6b726c4936b2b5e5a3419112752930`. Đọc nhánh √A=√B và √A=B, theo mũi tên điều kiện→giải ứng viên→thử lại. Đây là SVG nguồn gốc, trong gói mới chỉ **tái sử dụng**, không sửa.
+<!-- AUTHORING MEDIA/SPEC NOTES: This R03 puts verified figures in the teaching flow. Complete historical SVG custody and SPEC_ONLY interaction notes are preserved in R02 Git blob c4e6d86debcba7b153eadd949d13b1f2df961f09; no live model feature is claimed. -->
 
-## Hai mô hình tương tác cần xây dựng (đặc tả, không giả nhận đã chạy)
-
-- `TOP03_EQUIVALENCE_LAB_SPEC_ONLY`: học sinh chọn phép nhân/chia, bình phương, khử mẫu, hiện trước–sau tập nghiệm và cảnh báo khi phép không hai chiều; cho thử trường hợp nhân với 0, chia cho x−a, x và −x khi bình phương. Yêu cầu keyboard/touch/text alternative; **chưa có code runtime**.
-- `TOP03_ROOT_FILTER_LAB_SPEC_ONLY`: từ √A=√B hoặc √A=B cho học sinh đánh dấu miền trên trục, xét dấu B, bấm xem nghiệm ứng viên, tự loại và thử vào gốc; hiển thị nguyên nhân loại “căn âm”/“vế phải âm”. Mọi đáp án học liệu ở đây là public Practice; mô hình chưa tích hợp website.
 
 # Luyện tập
 
