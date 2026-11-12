@@ -17,7 +17,7 @@ const SHA={
 "docs/thpt-preview/sgk/chuong-iii/bai-6.md":"3a2f4392357b0a7155488ba2427fbb2dde0dde81"
 };
 const STYLES={
-"docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css":"8386b51f0cdb2dbee37148ae9a7b85eb6a9d2881",
+"docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css":"e1278922ad59c47d6b0eaf382ffcbb4a5d0b1cb4",
 "docs/assets/stylesheets/site-design-system.css":"cede51cfff25ef4f6c612c894c81f4639625c32b",
 "docs/assets/stylesheets/thpt-r4-preview.css":"f46b7280965c226039093c408dc7f8e3e78001fa",
 "docs/assets/stylesheets/thpt-sgk-lesson-nav-v1.css":"4bf16bba1cd144f0a69c932d8ead24dd4534f4cb",
@@ -32,7 +32,7 @@ function checkSHA(){
  for(const [p,sha] of Object.entries({...SHA,...STYLES}))
   assert.equal(hash(fs.readFileSync(path.join(root,p))),sha,"DELTA_A violation, non-UI source/theme changed: "+p);
 }
-const names=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
+const names=["Khám phá kiến thức","Kiến thức sách giáo khoa","Ví dụ","Lỗi thường gặp"];
 const ch=n=>n<=2?"i":n<=4?"ii":"iii";
 const widths=[390,820,1440];
 (async()=>{
@@ -86,6 +86,39 @@ const widths=[390,820,1440];
       });
      }));
      assert(tableResults.every(Boolean),loc+" header/data table alignment");
+     const golden=await page.evaluate(()=>{
+      const root=document.querySelector(".md-content__inner");
+      const sections=[...root.querySelectorAll(".tabbed-content > .tabbed-block")];
+      const tabLabels=[...root.querySelectorAll(".tabbed-labels > label")];
+      return {
+       fourHeadings:sections.map(b=>b.querySelector(":scope > h2.thpt-g10-section-heading")?.textContent.trim()||""),
+       headers:[...root.querySelectorAll(".tabbed-block > h3")].every(h=>
+        getComputedStyle(h).borderLeftWidth==="4px" &&
+        getComputedStyle(h).backgroundImage.includes("linear-gradient")),
+       lead:root.querySelectorAll(".thpt-r4-lead").length,
+       notes:root.querySelectorAll("p.thpt-r4-footnote").length,
+       notesLast:sections[3].querySelectorAll("p.thpt-r4-footnote").length,
+       noteText:[...root.querySelectorAll("p.thpt-r4-footnote")].map(p=>p.textContent).join(" "),
+       disclosure:[...root.querySelectorAll("details.question")].every(d=>
+        d.querySelector("summary")?.textContent.trim()==="Mở đối chiếu sau khi tự làm" &&
+        getComputedStyle(d).backgroundColor==="rgb(248, 250, 255)"),
+       tip:[...root.querySelectorAll("details.tip")].every(d=>
+        getComputedStyle(d).backgroundColor==="rgb(248, 250, 255)"),
+       firstTabBg:getComputedStyle(tabLabels[0]).backgroundColor
+      };
+     });
+     assert.deepEqual(golden.fourHeadings,[
+      "1. Khám phá kiến thức","2. Kiến thức sách giáo khoa","3. Ví dụ",
+      "4. Lỗi thường gặp và cách tự khắc phục"
+     ],loc+" Golden HTML section bars and numbering");
+     assert(golden.headers,loc+" numbered headings have pale background and blue border");
+     assert.equal(golden.lead,0,loc+" redundant lead paragraph removed");
+     assert.equal(golden.notes,1,loc+" only one source note for entire lesson");
+     assert.equal(golden.notesLast,1,loc+" source only inside last tab");
+     assert(!/Luyện tập tự đối chiếu không phải|Học liệu tự luyện không dùng/.test(golden.noteText),
+      loc+" no redundant self-check disclaimer");
+     assert(golden.disclosure&&golden.tip,loc+" subdued reference disclosure styling");
+     assert.equal(golden.firstTabBg,"rgb(40, 77, 181)",loc+" HTML blue active tab styling");
      const mistakes=groups.nth(3).locator(":scope > details.tip > summary");
      assert((await mistakes.count())>=2,loc+" original remediation folds");
      const mistakeTitles=(await mistakes.allInnerTexts()).map(x=>x.trim());
@@ -105,7 +138,7 @@ const widths=[390,820,1440];
      const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>window.innerWidth+3);
      assert(!overflow,loc+" whole-page overflow");
      passed++;
-     console.log("PASS "+loc+" 4-tab numbering, headings, FirstTry/D6 and 1-6 original theme");
+     console.log("PASS "+loc+" four numbered HTML tabs, framed headings, quiet disclosures, single footer, source/answer safety");
     }
    }finally{await page.close();}
   }
