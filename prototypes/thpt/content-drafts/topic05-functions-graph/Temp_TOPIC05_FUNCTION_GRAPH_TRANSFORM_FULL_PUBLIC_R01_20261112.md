@@ -64,3 +64,52 @@ Một đại lượng phụ thuộc một đại lượng khác thông qua **hà
 **Câu luyện:** `THPT-TOP05-P07`, `THPT-TOP05-P08`.
 
 
+
+## TOP05-M05 · Đồng biến và nghịch biến theo từng khoảng
+
+**Outcome TOP05-O05:** giải thích khái niệm, chứng minh điều kiện, tự vận dụng.
+**Vì sao cần học?** Một vài điểm tăng không chứng minh cả đồ thị tăng; cần xét mọi cặp trong khoảng.
+**Nhắc tiền đề tại chỗ:** Thứ tự x₁<x₂ và dấu của hiệu f(x₂)−f(x₁).
+**Hình thành bản chất trước công thức:** Hàm đồng biến nghiêm ngặt trên khoảng K khi với mọi x₁<x₂ trong K, f(x₁)<f(x₂); nghịch biến nếu f(x₁)>f(x₂). Với x²: trên x<0 hàm giảm, trên x>0 hàm tăng. Không kết luận trên cả ℝ chỉ vì một nhánh đi lên.
+**Ví dụ giải có lý do chọn cách:** f(x)=−3x+2: f(x₂)−f(x₁)=−3(x₂−x₁)<0 khi x₁<x₂, nên nghịch biến trên ℝ. Chọn cách so hiệu vì không cần đạo hàm.
+**Tự thử trước khi xem đối chiếu:** x² tăng/giảm trên [−5,−2] ra sao?
+**Tự mở đối chiếu:** Giảm; GTLN25 ở−5, GTNN4 ở−2.
+**D6 đường khắc phục:** Nếu chỉ thử x=0,1, hãy giải thích cho x₁,x₂ tùy ý; luyện P09/P10.
+**Câu luyện:** `THPT-TOP05-P09`, `THPT-TOP05-P10`.
+
+## TOP05-M06 · Đỉnh parabol và miền bài toán
+
+**Outcome TOP05-O06:** giải thích khái niệm, chứng minh điều kiện, tự vận dụng.
+**Vì sao cần học?** Đỉnh của parabol có thể nằm ngoài miền khả thi nên không phải đáp án cực trị.
+**Nhắc tiền đề tại chỗ:** Bình phương không âm, khoảng/đoạn đóng và số nguyên.
+**Hình thành bản chất trước công thức:** Hoàn phương ax²+bx+c=a(x−h)²+k (a≠0), h=−b/(2a), k=f(h). Đỉnh(h,k), trục đối xứng x=h. Khi tìm GTLN/GTNN trên D, luôn kiểm h có ở D không, so biên và các giá trị nguyên khả thi; không cần vội dùng đạo hàm.
+**Ví dụ giải có lý do chọn cách:** f(x)=−(x−1)²+8 trên [2,5]: đỉnh ở1 bị loại. Hàm giảm trên miền, max f(2)=7, min f(5)=−8. Chọn kiểm miền trước công thức cực trị.
+**Tự thử trước khi xem đối chiếu:** f(x)=(x+2)²−1 trên [−1,3] có min/max?
+**Tự mở đối chiếu:** Đỉnh−2 ngoài miền; min f(−1)=0, max f(3)=24.
+**D6 đường khắc phục:** Nếu lấy đỉnh vô điều kiện, khoanh D trước khi chọn; luyện P11/P12.
+**Câu luyện:** `THPT-TOP05-P11`, `THPT-TOP05-P12`.
+
+## TOP05-M07 · Hàm chẵn/lẻ và đối xứng
+
+**Outcome TOP05-O07:** giải thích khái niệm, chứng minh điều kiện, tự vận dụng.
+**Vì sao cần học?** Phỏng đoán một hình đối xứng không thay được chứng minh với mọi x.
+**Nhắc tiền đề tại chỗ:** Miền D đối xứng qua0; so f(−x) và f(x).
+**Hình thành bản chất trước công thức:** Chẵn khi D đối xứng và f(−x)=f(x), đồ thị đối xứng trục Oy. Lẻ khi D đối xứng và f(−x)=−f(x), đồ thị đối xứng gốc O. Miền không đối xứng thì không suy chẵn/lẻ chỉ từ công thức.
+**Ví dụ giải có lý do chọn cách:** f(x)=x⁴−2x² chẵn do f(−x)=f(x); x³ lẻ do f(−x)=−f(x). Tính trực tiếp đáng tin hơn nhìn sơ đồ phác.
+**Tự thử trước khi xem đối chiếu:** g(x)=x²+x trên ℝ thuộc loại nào?
+**Tự mở đối chiếu:** g(−x)=x²−x khác g(x) và −g(x), nên không chẵn/lẻ.
+**D6 đường khắc phục:** Nếu chỉ nhìn số mũ cao nhất, thay −x vào **toàn bộ** biểu thức; luyện P13/P14.
+**Câu luyện:** `THPT-TOP05-P13`, `THPT-TOP05-P14`.
+
+## TOP05-M08 · Chu kỳ: quy luật lặp cả miền chứ không phải vài điểm
+
+**Outcome TOP05-O08:** giải thích khái niệm, chứng minh điều kiện, tự vận dụng.
+**Vì sao cần học?** Quan sát số liệu lặp chưa đủ chứng minh hàm tuần hoàn trên mọi đầu vào.
+**Nhắc tiền đề tại chỗ:** T>0, phép dịch đầu vào x↦x+T.
+**Hình thành bản chất trước công thức:** T là chu kỳ khi f(x+T)=f(x) với mọi x trong miền mà các điểm dịch hợp lệ và miền bảo toàn qua phép dịch. Chu kỳ cơ bản là chu kỳ dương nhỏ nhất nếu tồn tại. Không lẫn chu kỳ trên Ox với độ cao/biên độ trên Oy. Công thức chi tiết lượng giác thuộc CĐ06.
+**Ví dụ giải có lý do chọn cách:** Nếu f(x+5)=f(x) và f(2)=−1, thì f(12)=f(2+2·5)=−1. Chọn dùng định nghĩa, không cần biết hàm là sin hay cos.
+**Tự thử trước khi xem đối chiếu:** f(x+3)=f(x), f(1)=4; f(10) là?
+**Tự mở đối chiếu:** 4, vì 10=1+3·3; chưa thể kết luận 3 là chu kỳ **cơ bản**.
+**D6 đường khắc phục:** Nếu từ bốn điểm suy toàn miền tuần hoàn, hãy tách quan sát và định nghĩa; luyện P15/P16.
+**Câu luyện:** `THPT-TOP05-P15`, `THPT-TOP05-P16`.
+
