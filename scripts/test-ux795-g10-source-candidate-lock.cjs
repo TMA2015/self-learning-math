@@ -37,5 +37,8 @@ for(const [index,row] of records.entries()){
    "B"+n+" may not publish official readiness or Mastery");
  totalFirst+=first.length;totalHelp+=help.length;
 }
+// Enforce the Q18 additive correction in every Model B source gate.
+if(fs.existsSync(path.join(root,"prototypes/thpt/ux795/UX795_G10_B10_B19_B27_GUIDANCE_DELTA_Q18_V301_20261112.md")))
+ require("./test-ux795-g10-guidance-correction.cjs");
 console.log("PASS UX795 27/27 staged Git blobs; "+totalFirst+" public First Try; "+
  totalHelp+" D6 HELP; academic/pedagogical Q18 review still required");
