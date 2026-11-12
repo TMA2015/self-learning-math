@@ -19,7 +19,7 @@ REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC11_INTEGRALS_R01_AUTHOR
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC11_INTEGRALS_R01_AUTHOR_SELF_QA_RECEIPT_20261112.md
 REVIEW_RECEIPT_BLOB: baa09c82f4f1d88bbeeaa9f43960f0636f9d2023
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC11-ANTIDERIVATIVE-INTEGRAL-GEOMETRY-FULL-R01_HANDOFF_V2_20261112.md
-AUTHOR_HANDOFF_BLOB: 3f3bb0d4b2d7565738c65ee3958e5d4464c0fca2
+AUTHOR_HANDOFF_BLOB: c07efb99b3cceb4716033e779f7cd599c45af4ad
 PUBLIC_ORIGINAL88_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_ORIGINAL88_SGK_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_ORIGINAL88_INDEX_BLOB: 672fdce0c02ebf4f6ae6b37b331ca59e259d9b5c
 PUBLIC_NEW28_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_NEW28_PUBLIC_CANONICAL_R01_20261112.md
@@ -51,22 +51,22 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — learner SOURCE Git blob 408490d95ab479dca86f86e45a21950fe487a295, Q18 signed receipt baa09c82f4f1d88bbeeaa9f43960f0636f9d2023, original88 immutable-reference index 672fdce0c02ebf4f6ae6b37b331ca59e259d9b5c, NEW28 single bank 1d1de4a1dd2ed07954db7b5dde4b86a9f894ddfe, one V2 handoff 3f3bb0d4b2d7565738c65ee3958e5d4464c0fca2, four NEW SVG with exact Git SHA readback.
+- [x] A1_SOURCE_SNAPSHOT — learner SOURCE Git blob 408490d95ab479dca86f86e45a21950fe487a295, Q18 signed receipt baa09c82f4f1d88bbeeaa9f43960f0636f9d2023, original88 immutable-reference index 672fdce0c02ebf4f6ae6b37b331ca59e259d9b5c, NEW28 single bank 1d1de4a1dd2ed07954db7b5dde4b86a9f894ddfe, one V2 handoff c07efb99b3cceb4716033e779f7cd599c45af4ad, four NEW SVG with exact Git SHA readback.
 - [x] A2_SGK_SBT_SCOPE — KNTT G12 Tập2 ChIV B11 SGK printed4–11/PDF1 6–13, B12 12–18/14–20, B13 19–26/21–28,end27–28/29–30; SBT B11 3–8/2–7, B12 9–13/8–12, B13 14–18/13–17,end19–21/18–20. Owner original publisher scan SHA exact in receipt; no fresh PDF scan claimed.
 - [x] A3_NOTEBOOKLM_VERDICT — Q18 `AUTHOR_SELF_VERIFIED` v3.1.0 with 53/53 direct checks+12/12 stronger numerical integration/error checks, author P0/P1=0, 22 outcome QA. Original SGK v2.1 independent Academic/PED PASS remains only on unchanged SGK R00 source, NOT inherited Topic PASS.
-- [x] A4_ITEM_OUTCOME_IDS —22 lesson IDs,22 outcomes,116 unique PUBLIC canonical IDs and one full V2 item→outcome→role map, 88 original SGK pointer-only+28 new. 22 public Self Check placements reference new P01–P22 only.
-- [x] A5_D1_D6_SCOPE —22 WHY/prereq/meaning/worked/first-try/D6 chains, six Written /7 original rubrics, four NEW accessible math SVG and three prospective lab specs SPEC_ONLY.
+- [x] A4_ITEM_OUTCOME_IDS — 22 lesson IDs,22 outcomes,116 unique PUBLIC canonical IDs and one full V2 item→outcome→role map, 88 original SGK pointer-only+28 new. 22 public Self Check placements reference new P01–P22 only.
+- [x] A5_D1_D6_SCOPE — 22 WHY/prereq/meaning/worked/first-try/D6 chains, six Written /7 original rubrics, four NEW accessible math SVG and three prospective lab specs SPEC_ONLY.
 - [x] A6_DELTA_RESOLVED — new independent CĐ11 Topic content/NEW28 bank/four NEW SVG are `DELTA_C_ACADEMIC_MATERIAL`, exact source Q18 author QA; original SGK academic source/old six PNG reviewed stay immutable, no known author P0/P1.
 - [x] A7_PUBLIC_PRIVATE_BOUNDARY — 26 owner-held old SGK private RD1 never imported. Topic 0 private RD1, no official Readiness or Skill Mastery, owner future independent RD1 held off public GitHub.
 
 ## PED1–PED6 / Q09–Q14
 
-- [x] PED1_MOTIVATION —22 WHY local learning needs motivate inverse derivative and accumulation/area/volume geometry.
+- [x] PED1_MOTIVATION — 22 WHY local learning needs motivate inverse derivative and accumulation/area/volume geometry.
 - [x] PED2_PREREQUISITES — all22 modules include derivative, sign, conditions, intersections, and geometry required before method.
 - [x] PED3_MEANING_FIRST — reversibility of derivative, accumulation as slices, signed integral vs physical area, circle cross-section volume before formula.
 - [x] PED4_EXPLAINED_VISUAL — four NEW math SVG with precise titles/desc and reading guidance; no false claim original SGK reviewed SVG (reviewed images were PNG).
 - [x] PED5_REASONED_EXAMPLES — 22 justified worked solutions with applicability guard for log intervals, Newton–Leibniz, sign splits, sections, washers and units.
-- [x] PED6_FIRST_TRY_REMEDIATION —22 First Try steps before voluntary reveal and targeted D6 paths; no exam answers leaked in public replay runtime claim.
+- [x] PED6_FIRST_TRY_REMEDIATION — 22 First Try steps before voluntary reveal and targeted D6 paths; no exam answers leaked in public replay runtime claim.
 
 ## RELEASE R1–R5 / P1–P2 — UNCHECKED
 
