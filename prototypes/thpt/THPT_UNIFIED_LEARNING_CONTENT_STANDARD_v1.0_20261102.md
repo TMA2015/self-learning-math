@@ -1,8 +1,8 @@
-# SELF-LEARNING MATH — TIÊU CHUẨN CHẤT LƯỢNG HỌC LIỆU THPT THỐNG NHẤT v3.0.1
+# SELF-LEARNING MATH — TIÊU CHUẨN CHẤT LƯỢNG HỌC LIỆU THPT THỐNG NHẤT v3.1.0
 
 **STANDARD_ID:** `SLM-THPT-QUALITY-ONE`  
-**VERSION:** `3.0.1` · **OWNER:** Chủ dự án Self-Learning Math / G Learning  
-**STATUS:** `OWNER_APPROVED_EFFECTIVE` cho bản v3.0.0 đã merge trên `main` qua PR #808, commit `e1976f47b13d20faf0cd68f3c862a97ac43d57f4`. Bản làm rõ **v3.0.1 §X-E** được chủ dự án phê duyệt 11/11/2026, chỉ trở thành phiên bản hiệu lực khi PR governance v3.0.1 đạt QA và merge vào `main`. AUTHORING vẫn **PAUSED cho đến khi chủ dự án cho phép mở lại**; merge governance không tự bật biên soạn hoặc website release.
+**VERSION:** `3.1.0` (SGK editorial amendment, owner-approved structure 12/11/2026; **effective only after governance merge**) · **OWNER:** Chủ dự án Self-Learning Math / G Learning  
+**STATUS:** `OWNER_APPROVED_SGK_EDITORIAL_STRUCTURE / GOVERNANCE_DRAFT_NOT_YET_EFFECTIVE`: chủ dự án **đã xem và duyệt mẫu HTML về cấu trúc/biên tập** ngày 12/11/2026, gồm 4 tab, cách đánh số, phân vai nội dung, khung định nghĩa/công thức, bảng/hình và ví dụ; **không duyệt màu sắc, font, cỡ chữ, spacing hay CSS của mẫu**. Bản v3.1.0 chỉ có hiệu lực sau khi chính governance PR này đạt QA và được merge theo quyền owner. `main` vẫn là **v3.0.1** tại thời điểm soạn; v3.0.0 (PR #808), v3.0.1 (PR #809) là lịch sử đã nghiệm thu. AUTHORING học liệu mới/G11 vẫn **PAUSED**; PR #819 và #816 **HOLD**, không tự merge/deploy.
 **SCOPE:** mọi học liệu Toán THPT 10–12 KNTT theo **SGK_CHAPTER** và **TOPIC**; áp dụng cho cả tác giả, NotebookLM và nhánh phát hành. **Một tiêu chuẩn chất lượng; các cổng kiểm tra phân theo trách nhiệm, không phải hai bộ tiêu chuẩn cạnh tranh.**
 
 ## 0. Luật thống nhất và thứ tự hiệu lực
@@ -87,7 +87,7 @@
 **Bản kiểm theo outcome** tối thiểu:
 ```text
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.0.1
+STANDARD_VERSION: 3.1.0
 LEARNING_PATH: SGK_CHAPTER | TOPIC
 PACKET_ID: ...
 ACADEMIC_SOURCE_BLOB: 40-hex
@@ -228,6 +228,57 @@ Trước khi **tự ký Q18_AUTHOR_SELF_VERIFIED hoặc gửi NotebookLM khi th�
 
 **Kiểm tra tự động chỉ giữ ba nhóm trách nhiệm:** `CONTENT_MATH_PED_SOURCE` (nội dung tác giả tự QA), `ASSESSMENT_DATA_SAFETY` (Q15/Q16/private), `RENDER_RELEASE_QA` (website). Metadata/receipt là dấu vết truy xuất và hợp đồng chuyển giao **không phải cổng học thuật lần thứ hai**.
 
+
+## X-F. OWNER DECISION 12/11/2026 — hợp đồng biên tập SGK 79 bài, Golden mẫu và bảo toàn giao diện (MINOR v3.1.0)
+
+**Quyết định của chủ dự án:** Đã xem và **DUYỆT mô hình biên tập của mẫu HTML** thuộc PR governance #821. Duyệt: đánh số và phân vai nội dung 4 tab, cấu trúc định nghĩa/công thức/kiến thức cần nhớ, bảng/hình, vị trí ví dụ. **Không duyệt giao diện màu sắc, cỡ chữ, font, spacing, header hay CSS độc lập của file HTML mẫu**; những yếu tố này **phải giữ như các bài Toán 10 Bài 1–6 trên website hiện hành**. Mẫu HTML là chỉ dẫn cấu trúc, không phải mã HTML/CSS được phép sao chép trực tiếp sang production. **Phiên bản v3.1.0 là bản cập nhật có kiểm soát của cùng chuẩn Q01–Q18, không sinh thêm Q19 hoặc chuẩn học thuật/phát hành thứ hai.**
+
+**Hiệu lực và phạm vi:** Điều khoản này thuộc **cùng** `SLM-THPT-QUALITY-ONE`, bắt đầu áp dụng khi governance PR được chủ dự án cho phép merge vào `main`; không áp hồi tố tùy tiện làm mất PASS của source blob bất biến. Phạm vi: **đúng 79 bài Học theo SGK** Toán 10 (27), Toán 11 (33), Toán 12 (19). Không đổi hành trình Chuyên đề (Kiến thức/Luyện tập/Tự kiểm tra), THCS Golden UI, Firebase, Gemini, dữ liệu/tiến độ học sinh hoặc kiến trúc website. Việc chủ dự án **duyệt mẫu** không đồng nghĩa mở lại nhánh AUTHORING hoặc cho phép tích hợp, merge/deploy bất kỳ bài học nào.
+
+### X-F.1. Một bài học SGK là bốn phần có thứ tự và số mục thống nhất — Q03/Q04/Q09–Q14, AP1/AP4
+
+| Cấp tab 1 | Cấp đề mục bên trong | Nội dung phải đúng vai trò |
+|---|---|---|
+| **1. Khám phá kiến thức** | **1.1. Cùng tìm hiểu**, **1.2. Ví dụ trực quan**, **1.3. Thuật ngữ, kiến thức và kỹ năng** (các mục tiếp theo khi thực sự có) | Tại sao học; tình huống mở, tiền đề, hình thành bản chất trước công thức, đọc hình có thật, tự thử trước Core và đường phục hồi; không lấy ví dụ giải mẫu đầy đủ tab 3 để nhân bản |
+| **2. Kiến thức SGK** | **2.1, 2.2, 2.3…** theo **tên, thứ tự và kiến thức thực của SGK KNTT S1 đã kiểm chứng** | Trình bày nội dung chính thức dễ tra cứu, liền mạch theo đề mục SGK, không chia nhỏ bằng tên các checklist sư phạm |
+| **3. Ví dụ** | **3.1, 3.2, 3.3…** | Tập trung ví dụ giải toán có phương pháp, lập luận từng bước, điều kiện, kết luận, lý do chọn cách và giới hạn |
+| **4. Lỗi thường gặp** | **4.1, 4.2, 4.3…** | Lỗi thật, lý do sai, cách sửa, gợi ý học lại và đường liên kết Practice/D6; không lộ bài kiểm tra độc lập |
+
+**Chỉ có 4 tab cấp 1**, dùng chính tên/số đã duyệt. Không nhồi thêm một tab con cho các mục 2.x. Số 1.x–4.x nhất quán trong cùng một bài; các đề mục phụ sâu hơn chỉ dùng khi SGK/logic bài đòi hỏi, không tự tạo “mẫu cứng” để đếm đủ. Tên đề mục 2.x là **nội dung S1 có chứng cứ**, không tự thay bằng tiêu đề tùy hứng. **Không hiển thị thêm tiêu đề “Kiến thức SGK” bên trong tab 2** khi nhãn tab đã đủ.
+
+### X-F.2. Kiến thức chính thức đi thẳng vào 2.1, không phải bản checklist PED
+
+Tab 2 **bắt đầu trực tiếp tại 2.1**, không mở bằng đoạn hướng dẫn quy trình học hoặc diễn giải động cơ dài. Kiến thức chính thức gồm định nghĩa, định lí/tính chất, công thức trọng tâm, điều kiện áp dụng, sơ đồ/bảng cần thiết, hình và ghi nhớ. Mọi nội dung bắt buộc phải **đủ theo bài/outcome** và có giải thích ngắn trong mạch văn; “tóm tắt SGK” không có nghĩa rút mất điều kiện, chứng minh/lập luận thiết yếu hoặc năng lực phải đạt.
+
+Những đoạn dẫn dắt như `Kiến thức tiền đề`, `Bản chất trước công thức`, `Tại sao cần học`, các câu quan sát hình tạo động cơ sẽ được **tích hợp tự nhiên vào tab 1 (chủ yếu 1.1)**, không giữ nguyên nhãn kiểm toán ở từng mục 2.x. Chỉ dẫn cần để thực sự hiểu hình/bảng/công thức tại chỗ có thể đứng ngay bên hình hoặc công thức **bằng văn xuôi tự nhiên**; **không được xóa nội dung chỉ để mất nhãn PED**. Phần `Vận dụng` ngắn để tự thử ngay kiến thức có thể ở tab 2, không ghi Mastery chỉ vì tự đối chiếu. **Ví dụ giải bài toán dài có lời giải đầy đủ đưa sang tab 3**, giữ nguyên EX/item canonical, không nhân bản.
+
+### X-F.3. Bộ thành phần toán cần làm nổi bật nhất quán — Q03/Q07/PED4, AP2/AP3
+
+- **Định nghĩa/định lí chính thức:** dùng cùng kiểu nhấn/khung đã chốt từ Bài 1–6 Toán 10, ghi rõ điều kiện và phạm vi. Không tự đóng khung những câu chỉ là nhận xét phụ.
+- **Công thức trọng tâm:** có khung hiển thị tương đương mẫu Bài 6 Toán 10, MathJax không lỗi và không cắt mất vế; không đóng khung mọi phép tính trung gian. Phải xác minh công thức chính xác, điều kiện đủ và đúng nguồn SGK trước khi phân loại là trọng tâm.
+- **Kiến thức cần nhớ:** hộp thống nhất như Bài 1–6 nếu bài thực sự có kiến thức cần chốt; không bắt buộc mọi bài phải có, cũng không làm mất nội dung hiện hữu vì muốn đồng đều hình thức.
+- **Bảng:** nhãn chữ có thể căn trái; số/ký hiệu/công thức căn phù hợp từng cột; tiêu đề cột phải cùng trục với dữ liệu bên dưới, căn dọc và padding thống nhất; mobile phải đọc được đủ hàng/cột, có cuộn trong bảng nếu cần.
+- **Hình, SVG, sơ đồ:** có thật, đúng toán, alt/caption, xuất hiện gần và **trước lời yêu cầu đọc hình**. Nếu học sinh cần **tự vẽ**, chỉ dẫn phải ghi rõ “tự vẽ/tự dựng”, không hứa có hình hoặc bảng mà bài không trình bày.
+- **Ví dụ:** cỡ chữ, tiêu đề, phân đoạn lời giải, phép biến đổi, điều kiện và kết luận đồng bộ; tương ứng `3.1`, `3.2`…; phân biệt ví dụ trực quan ở tab 1 và bài vận dụng ngắn ở tab 2.
+
+### X-F.4. Khóa giao diện sản xuất theo Bài 1–6 Toán 10 — AP1–AP5, R3/R4
+
+**Owner approved CONTENT STRUCTURE ONLY, not HTML demo theme.** Màu chủ đạo, font/cỡ chữ, khoảng cách, thanh điều hướng, cấu trúc header, vị trí tab, typography, các biến CSS và responsive **phải kế thừa website Bài 1–6 Toán 10 đã phát hành**. **Không nhập CSS của `Temp_THPT_SGK_79_Editorial_Golden_Review_20261112.html` vào `mkdocs.yml`, `mkdocs.thpt-preview.yml`, `docs/assets/stylesheets` hay trang học.** Các thay đổi hiển thị số mục/khung/định dạng được làm trong phạm vi các component và biến thiết kế sẵn có; nếu cần thêm style, phải scoped đúng SGK THPT và có browser screenshot/diff so với B01–B06 ở 390/820/1440, không làm đổi THCS/Topic.
+
+**Không đủ nếu chỉ kiểm bằng SHA.** Trước khi nghiệm thu từng chương, QA phải nhìn ở màn hình thực về cỡ chữ, màu, tab/h1–h3, khung/bảng/hình và khoảng cách; so với B01–B06 đang phát hành. Giai đoạn governance này **khóa các file giao diện gốc bằng SHA** và xác nhận không có import CSS demo; giai đoạn rollout phải có visual/regression QA chứ không chỉ kết luận “sau build HTML có bốn tab”.
+
+### X-F.5. Cổng S1, Delta, học liệu và an toàn đánh giá — Q01–Q18/R1–R5
+
+1. **OWNER_GOLDEN_EDITORIAL_STRUCTURE = PASS** (quyết định 12/11/2026; phạm vi duy nhất là cấu trúc); **OWNER_GOLDEN_PRODUCTION_STYLE = PRESERVE_EXISTING_G10_B01_B06**. Không được trình bày rằng chủ dự án đã duyệt bảng màu mới.
+2. **S1_SECTION_MAPPING_PER_LESSON = PENDING** cho đến khi có **SGK nguồn S1/tập/trang in** và ma trận đề mục SGK–LESSON_ID–OUTCOME_ID; RELEASE không tự suy S1 từ headings có sẵn hoặc kết quả regex. Chỉ sau khi kiểm S1 mới được nói từng bài “bám đúng đầu mục SGK”.
+3. Thêm số mục/căn bảng/style không đổi toán = `DELTA_A_UI` nếu không di chuyển/đổi ý nghĩa học liệu; có chứng cứ. Chuyển đoạn khám phá, giải thích, ví dụ, lời giải hoặc thay đổi dẫn dắt học sinh **có thể là `DELTA_C_ACADEMIC_MATERIAL`**; kiểm ảnh hưởng theo bài/outcome, Q18 receipt khóa source Git blob và self-QA/targeted review phù hợp, **không tự giảm thành Delta A**. Giữ nguyên nghiệm thu của snapshot cũ, không yêu cầu review lại toàn chương chỉ do CSS.
+4. Giữ Q15 item canonical, placement/role, D6/First Try, Q16 independent Readiness, Final Submit, RD1/private, Mastery, Golden THCS/Topic, Gemini/Firebase và dữ liệu học sinh. Không đưa câu/đáp án private lên GitHub. Bộ UI không tự chấm Mastery.
+5. Nghiệm thu **G10 theo từng chương trước**; G11/G12 chỉ mở khi chủ dự án cho phép. Mỗi chương cần source/receipt, Academic/PED theo mode Q18 hợp lệ, AP1–AP5/R1–R5, exact HEAD CI, P1/P2 khi được yêu cầu và quyền owner trước merge/deploy. **PR #819 và PR #816 đang HOLD**; owner duyệt Golden không tự giải phóng hai PR.
+6. **QA chống tái diễn:** kiểm bốn tên tab 1–4 và 1.x–4.x, không trùng header SGK, tab 2 mở đúng 2.1, đối chiếu từng 2.x với ma trận S1, tab 3 không phân tán ví dụ giải dài, tab 4 giải thích sửa lỗi; căn bảng, khung công thức/định nghĩa/ghi nhớ, hình trước hướng dẫn, đồng nhất typography và responsive; mọi sai lệch phải trả về đúng AUTHORING/RELEASE với Qxx, LESSON/OUTCOME/ITEM và chứng cứ.
+
+**Quy tắc hiệu lực:** Nội dung trên là cập nhật trong **file chuẩn gốc duy nhất**, không phải chuẩn học thuật bổ sung hoặc Golden UI THCS mới. G10 B01–B06 là **baseline giao diện**, còn cấu trúc 1.x–4.x của chính chúng cũng phải được sửa theo quy trình/chapter snapshot; baseline giao diện **không đồng nghĩa** baseline số mục đã đạt.
+
+
 ## XI. Truy vết nguồn → điều khoản và phân công
 
 | Nguồn quyết định/kiểm toán | Điều chuẩn Qxx | Cổng AUTHORING | Cổng RELEASE |
@@ -240,6 +291,7 @@ Trước khi **tự ký Q18_AUTHOR_SELF_VERIFIED hoặc gửi NotebookLM khi th�
 | Source 08 two-path design | Q15,Q16,Q17 | A4,A7 | R3,R4, AP4 |
 | Source-locked handoff V2 PR #699 | Q01,Q02,Q15,Q18 | A1–A7+READY | R1–R5 |
 | Issue #655 AP1–AP5; Golden R4 | Q03,Q07,Q09–Q14,Q16,Q17 (in rendered view) | Evidence before handoff | AP1–AP5, P2 |
+| **Owner 12/11/2026 · X-F SGK 79 editorial Golden / SCR-SGK-79-EDITORIAL** | **Q01,Q03,Q04,Q07,Q09–Q14,Q15–Q18** (same Qxx) | Source S1 printed-heading mapping, preserve original content/ID, Q18 appropriate Delta C | Four-tab 1.x–4.x, G10 B01–B06 visual theme lock, MathJax/figures/tables, AP1–AP5/R1–R5/P1/P2 |
 | Issue #742 nâng cấp diễn giải, #691 concept-first, #655 trình bày (v1.2.0) | Q03,Q04,Q07,Q08,Q09–Q14,Q17, Q18 | PED1–PED6 evidence theo outcome, giữ nguyên source/review | AP1–AP5 trên bản hiển thị, không phát sinh tiêu chí toán mới |
 | Issue #662 Final Submit and #675 program sequencing | Q16–Q18 | RD1 custody, source honesty | R3,R4,R5,P1/P2 |
 
