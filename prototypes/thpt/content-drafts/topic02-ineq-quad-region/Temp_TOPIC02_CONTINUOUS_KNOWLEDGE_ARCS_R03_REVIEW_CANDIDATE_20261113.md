@@ -68,9 +68,9 @@ Chẳng hạn, (x−2)(x−5)>0 khi x<2 hoặc x>5, <0 khi 2<x<5; đổi a thàn
 
 <!-- LESSON_ID: TOP02-M06; OUTCOME_ID: TOP02-O06; source: candidate R02 -->
 
-Từ ba trường hợp của biệt thức, ta có thể giải bất phương trình bậc hai một cách có căn cứ. Một điều kiện ≥ khác > chính ở các nghiệm biên. Để hiểu, ta dựa vào ba trường hợp Δ và khoảng, đoạn trên ℝ. Đưa về f(x)⋄0, kiểm a≠0, tìm nghiệm, chọn khoảng theo dấu, rồi xét dấu nghiêm/non-nghiêm để lấy/loại đầu mút. Với Δ<0 có thể được ℝ hoặc ∅.
+Từ ba trường hợp của biệt thức, ta có thể giải bất phương trình bậc hai một cách có căn cứ. Một điều kiện ≥ khác > chính ở các nghiệm biên. Để xác định điều đó, cần xét ba trường hợp Δ và khoảng, đoạn trên ℝ. Đưa về f(x)⋄0, kiểm a≠0, tìm nghiệm, chọn khoảng theo dấu, rồi xét dấu nghiêm/non-nghiêm để lấy/loại đầu mút. Với Δ<0 có thể được ℝ hoặc ∅.
 
-Xét một trường hợp cụ thể. x²−5x+6≤0 ⇔ (x−2)(x−3)≤0 ⇒ x∈[2,3]. Chọn nhân tử vì nghiệm là số nguyên.
+Chẳng hạn, x²−5x+6≤0 ⇔ (x−2)(x−3)≤0 ⇒ x∈[2,3]. Chọn nhân tử vì nghiệm là số nguyên.
 
 <!-- LESSON_ID: TOP02-M07; OUTCOME_ID: TOP02-O07; source: candidate R02 -->
 
@@ -188,9 +188,9 @@ Chẳng hạn, Với x−2y>3, (4,0) cho 4>3 đúng; (1,−1) cho 3>3 sai. O cho
 
 <!-- LESSON_ID: TOP02-M11; OUTCOME_ID: TOP02-O11; source: candidate R02 -->
 
-Bản thân đường biên có được lấy hay không phụ thuộc vào dấu bất đẳng thức. Hình vẽ sai nét đường làm kết luận sai với các điểm ở mép. Để hiểu, ta dựa vào bất đẳng thức một ẩn và đường thẳng. ≤/≥ nhận biên (nét liền), </> loại biên (nét đứt). Khi đưa về y⋄mx+n, chia cho hệ số âm phải đảo chiều. Chọn một điểm ngoài biên để xác định phía cần tô.
+Bản thân đường biên có được lấy hay không phụ thuộc vào dấu bất đẳng thức. Hình vẽ sai nét đường làm kết luận sai với các điểm ở mép. Để xác định điều đó, cần xét bất đẳng thức một ẩn và đường thẳng. ≤/≥ nhận biên (nét liền), </> loại biên (nét đứt). Khi đưa về y⋄mx+n, chia cho hệ số âm phải đảo chiều. Chọn một điểm ngoài biên để xác định phía cần tô.
 
-Xét một trường hợp cụ thể. 2x−y<4 ⇔ y>2x−4; phía trên đường nét đứt. O=(0,0) thỏa vì 0<4 và nằm phía tương ứng.
+Chẳng hạn, 2x−y<4 ⇔ y>2x−4; phía trên đường nét đứt. O=(0,0) thỏa vì 0<4 và nằm phía tương ứng.
 
 ![Đường thẳng biên và nửa mặt phẳng nghiệm](../../visuals/THPT_G10_B03_HALFPLANES_D5_R01.svg)
 
@@ -304,9 +304,9 @@ Chẳng hạn, Miền x,y≥0,x+y≤5,2x+y≤7 có đỉnh O,(7/2,0),(2,3),(0,5)
 
 <!-- LESSON_ID: TOP02-M16; OUTCOME_ID: TOP02-O16; source: candidate R02 -->
 
-Nếu đề yêu cầu các biến nguyên, đỉnh tối ưu theo mô hình liên tục chỉ là điểm xuất phát. 2,67 chiếc máy không thể thực hiện nguyên trạng. Để hiểu, ta dựa vào số nguyên không âm và tìm điểm lưới khả thi. Nếu x,y là sản phẩm, chỉ các điểm nguyên trong miền nghiệm mới hợp lệ. Tối ưu liên tục là cận/gợi ý; phải liệt kê hoặc lập luận theo y nguyên để tìm tối ưu nguyên.
+Nếu đề yêu cầu các biến nguyên, đỉnh tối ưu theo mô hình liên tục chỉ là điểm xuất phát. 2,67 chiếc máy không thể thực hiện nguyên trạng. Để xác định điều đó, cần xét số nguyên không âm và tìm điểm lưới khả thi. Nếu x,y là sản phẩm, chỉ các điểm nguyên trong miền nghiệm mới hợp lệ. Tối ưu liên tục là cận/gợi ý; phải liệt kê hoặc lập luận theo y nguyên để tìm tối ưu nguyên.
 
-Xét một trường hợp cụ thể. x+2y≤8,2x+y≤8, x,y nguyên≥0, P=3x+2y. Liên tục max 40/3 ở (8/3,8/3). y nguyên 0..4 cho các max P=12,11,13,12,8 ⇒ tối ưu nguyên 13 ở (3,2).
+Chẳng hạn, x+2y≤8,2x+y≤8, x,y nguyên≥0, P=3x+2y. Liên tục max 40/3 ở (8/3,8/3). y nguyên 0..4 cho các max P=12,11,13,12,8 ⇒ tối ưu nguyên 13 ở (3,2).
 
 ### Vận dụng và tự đối chiếu
 
@@ -334,16 +334,9 @@ Nếu em vẫn còn phân vân, hãy quay lại điều kiện vừa dùng. Nế
 
 </details>
 
-## Đọc hình có suy luận (3 hình thật, có title/desc)
 
-- [Đồ thị x²−4x+3 và bảng dấu Δ>0](../../visuals/THPT_TOPIC02_QUADRATIC_SIGN_R01.svg): blob `809ee7091849592e8312548fb8d916f1f461a77f`. Đọc hai nghiệm 1,3 và đỉnh (2,−1); giải thích dấu tích (x−1)(x−3), không coi hình thay chứng minh.
-- [Nửa mặt phẳng, biên liền/đứt](../../visuals/THPT_G10_B03_HALFPLANES_D5_R01.svg): blob `a69e5ffabce6c77787ba3829471be7da97e21578`. Đọc điểm thử nằm ngoài đường biên, xác định phía tô và dấu nhận/loại biên.
-- [Miền nghiệm đa giác và hàm mục tiêu](../../visuals/THPT_G10_B04_FEASIBLE_POLYGON_D5_R01.svg): blob `64b0ca1142f9cbcb1edebbb220e5bb7a0752ec61`. Ghi các đỉnh O,A,B,C và so sánh F ở đỉnh; ví dụ trên hình là độc lập với M15.
+<!-- AUTHORING MEDIA/SPEC NOTES: This R03 puts verified figures in the teaching flow. Complete historical SVG custody and SPEC_ONLY interaction notes are preserved in R02 Git blob 9bf1628e0c09cf5855cc63eb2e8052481f6a2af9; no live model feature is claimed. -->
 
-## Mô hình tương tác (chỉ đặc tả, KHÔNG phải tính năng đang chạy)
-
-- `TOP02_QUADRATIC_SIGN_INTERACTION_SPEC`: chọn a≠0, b,c, hiển thị Δ, nghiệm, đường cong và khoảng f>0/f<0; kiểm đủ Δ<0/=0/>0 và a âm/dương; có phiên bản chữ và hỗ trợ bàn phím. Chưa có runtime/browser QA.
-- `TOP02_HALFPLANE_INTERACTION_SPEC`: kéo điểm (x,y), chọn điều kiện và dấu, tô giao ràng buộc, chuyển chế độ điểm nguyên; trả lời vì sao điểm nằm trên/ngoài biên. Chỉ mô tả thuật toán/đòi hỏi sư phạm, không tuyên bố đã tích hợp.
 
 # Luyện tập
 
