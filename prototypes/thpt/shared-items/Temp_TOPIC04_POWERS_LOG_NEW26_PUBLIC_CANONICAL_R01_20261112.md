@@ -299,7 +299,7 @@ difficulty_band: SYNTHESIS
 problem_family_id: TOP04-WRITTEN_GROWTH_DISCRETE_THRESHOLD
 **Đề:** Một khoản vốn giả định 100 triệu đồng tăng 8% mỗi năm, nhập lãi vào gốc, không phí, n là số năm nguyên không âm. Tìm năm đầu tiên số tiền **lớn hơn** 125 triệu đồng. Giải thích vì sao phải kiểm hai năm liên tiếp.
 **Đáp án:** Năm đầu tiên là n=3; n=2 có 116,64 triệu, n=3 có 125,9712 triệu.
-**Lời giải có suy luận:** P(n)=100·(1,08)^n triệu. Cần (1,08)^n>1,25 ⇒ n>ln(1,25)/ln(1,08)≈2,8997 vì ln(1,08)>0. Do n nguyên không âm, nhỏ nhất n=3. Kiểm P(2)=100·1,1664=116,64<125, P(3)=100·1,259712=125,9712>125. Mô hình cố định 8%, bỏ qua phí/rủi ro.
+**Lời giải có suy luận:** P(n)=100·(1,08)^n triệu. Cần (1,08)^n>1,25 ⇒ n>ln(1,25)/ln(1,08)≈2,8994 vì ln(1,08)>0. Do n nguyên không âm, nhỏ nhất n=3. Kiểm P(2)=100·1,1664=116,64<125, P(3)=100·1,259712=125,9712>125. Mô hình cố định 8%, bỏ qua phí/rủi ro.
 **Rubric tự đối chiếu:** 7 điểm: mô hình tăng trưởng và đơn vị đúng (2đ); lập bất đẳng thức ‘lớn hơn’ đúng (1đ); dùng log đổi chiều đúng và tính ngưỡng n>2,899… (2đ); chọn n=3 là năm nguyên nhỏ nhất (1đ); kiểm P(2), P(3) và kết luận (1đ).
 **D6 tự khắc phục:** Nếu kết luận n≈2,9 năm là 'năm đầu tiên', nhớ n nguyên. Nếu viết P(3)=124, dùng phép nhân liên tiếp 1,08 ba lần và so ranh giới 125.
 **Chế độ:** Tự luận công khai tự đối chiếu sau khi làm, không chấm chính thức hay ghi Mastery.
