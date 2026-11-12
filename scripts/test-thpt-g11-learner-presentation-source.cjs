@@ -18,11 +18,28 @@ assert(files.length>=30,"Missing already released 30 SGK 11 lessons");
 const ids=new Set(files.map(f=>f.id));
 assert.equal(ids.size,files.length,"Duplicate SGK G11 lesson number");
 for(let n=1;n<=Math.max(...ids);n++)assert(ids.has(n),"Missing G11 B"+n+" in contiguous published curriculum");
-let headings=0,rawPowers=0,inlineMath=0;
+let headings=0,rawPowers=0,inlineMath=0,modelBCount=0;
 const problems=[];
 for(const file of files){
  const rel=path.relative(root,file.path).replaceAll(path.sep,"/");
  const c=fs.readFileSync(file.path,"utf8");
+ const tabs=[...c.matchAll(/^=== "([^"]+)"$/gm)].map(x=>x[1]);
+ if(tabs.length){
+  const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
+  assert.deepEqual(tabs,labels,rel+" exactly four approved Model B L1 tabs");
+  const headers=[...c.matchAll(/^    ### 1\.(\d+)\.\s/gm)].map(x=>Number(x[1]));
+  for(let i=1;i<headers.length;i++)
+   if(headers[i]!==headers[i-1]+1)
+    problems.push(rel+" concept hierarchy out of sequence: "+headers[i-1]+" to "+headers[i]);
+  if((c.match(/data-ped-first-try=/g)||[]).length<1||(c.match(/data-thpt-help-id=/g)||[]).length<1)
+   problems.push(rel+" missing original first-try or D6 path");
+  if(!c.includes("### Ví dụ trực quan")||!c.includes("### Thuật ngữ và kiến thức, kỹ năng"))
+   problems.push(rel+" lesson-specific pedagogical bridge missing");
+  headings+=headers.length;modelBCount++;
+  rawPowers+=(c.match(/\^[A-Za-z0-9({\-+]/g)||[]).length;
+  inlineMath+=(c.match(/\x60[^\x60]*\^[^\x60]*\x60/g)||[]).length;
+  continue;
+ }
  let section=null,next=0;
  for(const [idx,line] of c.split("\n").entries()){
   const where=rel+":"+(idx+1);
@@ -46,7 +63,8 @@ for(const file of files){
  rawPowers+=(c.match(/\^[A-Za-z0-9({\-+]/g)||[]).length;
  inlineMath+=(c.match(/\x60[^\x60]*\^[^\x60]*\x60/g)||[]).length;
 }
-assert(headings>=132,"G11 subheading guard unexpectedly lost existing scope");
+if(modelBCount===0)assert(headings>=132,"G11 historical subheading guard unexpectedly lost existing scope");
+else assert.equal(modelBCount,33,"G11 Model B upgrade must cover all 33 lessons");
 if(problems.length){
  console.error("SGK RELEASE PRESENTATION HOLD: "+problems.length+" problems\n"+problems.join("\n"));
  process.exit(1);

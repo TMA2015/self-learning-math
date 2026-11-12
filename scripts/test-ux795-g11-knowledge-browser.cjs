@@ -28,7 +28,7 @@ const ids=(s,k)=>[...s.matchAll(new RegExp(k+'="([^"]+)"',"g"))].map(x=>x[1]).so
      assert.equal(await panels.count(),4,msg+" four content panels");
      await page.waitForFunction(()=>document.querySelector(".md-content__inner.thpt-g11-knowledge-modelb"),null,{timeout:10000});
      for(const key of ["data-ped-first-try","data-thpt-help-id"]){
-      const actual=await page.locator("["+key+"]").evaluateAll(nodes=>nodes.map(n=>n.getAttribute(key)).sort());
+      const actual=await page.locator("["+key+"]").evaluateAll((nodes,attr)=>nodes.map(n=>n.getAttribute(attr)).sort(),key);
       assert.deepEqual(actual,ids(source,key),msg+" original "+key+" parity");
      }
      assert.equal(await page.locator("details[data-ped-first-try][open]").count(),0,msg+" no self-try answer pre-open");
