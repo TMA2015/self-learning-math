@@ -6,6 +6,7 @@
  */
 const fs=require("node:fs"),path=require("node:path"),assert=require("node:assert/strict");
 const root=path.resolve(__dirname,"..");
+const {readCorrections}=require("./thpt-g10-guidance-correction-v1.cjs");
 const ledger="prototypes/thpt/ux795/UX795_G10_KNOWLEDGE_RELEASE_SOURCE_INTAKE_R01_20261110.md";
 function expectedG10KnowledgeBlob(lesson,legacy){
  assert(/^[a-f0-9]{40}$/.test(legacy),"Historical source SHA malformed");
@@ -18,6 +19,11 @@ function expectedG10KnowledgeBlob(lesson,legacy){
  const blobs=[...matches[0].matchAll(/[a-f0-9]{40}/g)].map(x=>x[0]);
  assert.equal(blobs.length,2,name+" must carry baseline AND candidate Git blob");
  assert.notEqual(blobs[0],blobs[1],name+" Knowledge delta must not silently change baseline identity");
+ const correction=readCorrections(root).get(Number(name.slice(1)));
+ if(correction){
+  assert.equal(correction.old,blobs[1],name+" correction must reference the immutable published candidate");
+  return correction.current;
+ }
  return blobs[1];
 }
 function candidateG10KnowledgeBlob(lesson){

@@ -8,6 +8,7 @@
  */
 const fs=require("node:fs"),path=require("node:path"),assert=require("node:assert/strict"),crypto=require("node:crypto");
 const root=path.resolve(__dirname,"..");
+const {expectedG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 const chapter=n=>n<=2?"i":n<=4?"ii":n<=6?"iii":n<=11?"iv":n<=14?"v":n<=18?"vi":n<=22?"vii":n<=25?"viii":"ix";
 const blob=b=>crypto.createHash("sha1").update(Buffer.from("blob "+b.length+"\0")).update(b).digest("hex");
 const ledgerPath=path.join(root,"prototypes/thpt/ux795/UX795_G10_KNOWLEDGE_RELEASE_SOURCE_INTAKE_R01_20261110.md");
@@ -20,7 +21,7 @@ function detect() {
   const m=rows[i-1];assert.equal(Number(m[1]),i,"B"+i+" missing or out of order");
   const rel="docs/thpt-preview/sgk/chuong-"+chapter(i)+"/bai-"+i+".md";
   const raw=fs.readFileSync(path.join(root,rel));
-  assert.equal(blob(raw),m[4],"B"+i+" candidate source differs from ledger");
+  assert.equal(blob(raw),expectedG10KnowledgeBlob(i,m[3]),"B"+i+" must match published immutable ledger plus Q18 exact correction receipt");
   assert.notEqual(m[3],m[4],"B"+i+" historical SHA conflated with updated SHA");
   const t=raw.toString("utf8");
   assert.deepEqual([...t.matchAll(/^=== "([^"]+)"$/gm)].map(x=>x[1]),requiredTabs,"B"+i+" Model B tabs wrong");
