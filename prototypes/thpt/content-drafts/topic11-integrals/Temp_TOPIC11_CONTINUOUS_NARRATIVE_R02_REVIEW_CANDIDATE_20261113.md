@@ -22,20 +22,18 @@
 
 ### Nguyên hàm là phép đảo của đạo hàm
 
-<!-- LESSON_ID=TOP11-M01; OUTCOME_ID=TOP11-O01 -->
+<!-- LESSON_ID: TOP11-M01 · OUTCOME_ID: TOP11-O01 · R02 prose authored in connected paragraphs -->
 
-Ta thường biết giá trị đầu ra và đi tìm tốc độ, nhưng nếu chỉ có tốc độ ta lấy lại hàm ban đầu ra sao? Để hiểu, ta dựa vào nhớ quy tắc (x^n)'=n x^{n−1}, ý nghĩa hằng số có đạo hàm bằng0 và khoảng xác định. Quan hệ F'=f trên một khoảng mới nói F là nguyên hàm của f. Khi tích phân không có cận, ta tìm **họ các nguyên hàm** F+C, bởi mọi hằng số bị mất khi lấy đạo hàm. Việc kiểm chứng nhanh nhất là đạo hàm ngược kết quả; không được suy độ tăng trên khoảng trước khi có cận.
+Giả sử ta biết một đại lượng thay đổi nhanh thế nào, nhưng lại muốn tìm quy luật của chính đại lượng ấy. Đó là lúc ta đi ngược từ đạo hàm về **nguyên hàm**. Nếu hàm \(F\) có đạo hàm \(F'(x)=f(x)\) trên một khoảng, thì \(F\) là nguyên hàm của \(f\) trên khoảng ấy.
 
-Xét trường hợp sau. f(x)=4x³+2. Ta nhận ra đạo hàm của x⁴ là4x³, đạo hàm 2x là2, nên F=x⁴+2x+C. Tự kiểm F'=4x³+2. Chọn cách đảo từng hạng thay vì nhân với ký hiệu dx như một số.
+Ví dụ, với \(f(x)=4x^3+2\), ta nhận thấy \((x^4)'=4x^3\) và \((2x)'=2\), nên \(F(x)=x^4+2x\) là một nguyên hàm. Nhưng \(x^4+2x+5\) cũng có đạo hàm ấy, bởi đạo hàm của hằng số bằng 0. Vì thế khi hỏi **họ nguyên hàm**, ta phải viết \(F(x)=x^4+2x+C\). Hãy kiểm bằng cách lấy đạo hàm ngược; phép tích phân bất định không phải một phép nhân với ký hiệu \(dx\).
 
-**Em tự thử:** Nếu f=8x³−2, nguyên hàm nào đúng?
+**Em tự thử:** Tìm họ nguyên hàm của \(f(x)=8x^3-2\). Em kiểm lại được bằng đạo hàm không?
 
 <details class="slm-topic-first-try" markdown="1">
-<summary>Em đã thử? Mở lời giải và đường khắc phục</summary>
+<summary>Em đã tự làm? Mở phần đối chiếu</summary>
 
-2x⁴−2x+C, đạo hàm ngược 8x³−2.
-
-Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và lý do chọn phương pháp. Nếu ra một F mà quên C, lấy đạo hàm F+5 để thấy cũng đúng.
+\(F(x)=2x^4-2x+C\). Đạo hàm của biểu thức này là \(8x^3-2\), đúng bằng \(f\). Nếu em quên \(+C\), hãy thử cộng thêm 5 vào nguyên hàm của mình rồi lấy đạo hàm: kết quả vẫn không đổi.
 
 </details>
 
