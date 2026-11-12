@@ -4,7 +4,7 @@
 
 === "Khám phá kiến thức"
 
-### Cùng tìm hiểu
+    ### Cùng tìm hiểu
 
     Một người đi từ A đến B rồi tiếp tục từ B đến C. Nếu em chỉ muốn biết **độ dời từ điểm xuất phát đến điểm kết thúc**, không cần kể hai chặng riêng lẻ: mũi tên \(\overrightarrow{AC}\) chính là kết quả của hai mũi tên nối tiếp.
 
@@ -14,7 +14,7 @@
 
     ### Ví dụ trực quan
 
-<span id="thpt-g10-chiv-try06" data-thpt-first-try-id="THPT-G10-CHIV-TRY06" data-outcome-id="G10-B08-TRIANGLE" data-thpt-help-ref="HELP-G10-B08-01"></span>
+    <span id="thpt-g10-chiv-try06" data-thpt-first-try-id="THPT-G10-CHIV-TRY06" data-outcome-id="G10-B08-TRIANGLE" data-thpt-help-ref="HELP-G10-B08-01"></span>
 
     #### Cộng hai lần di chuyển nối tiếp
 
@@ -123,7 +123,7 @@
 
         **Vì sao:** AG=2GM trên cùng trung tuyến, hai vectơ G→A và G→M ngược chiều. Đây là cân bằng vectơ, không phải cộng ba khoảng cách.
 
-### Thuật ngữ, kiến thức và kỹ năng
+    ### Thuật ngữ, kiến thức và kỹ năng
 
     **Thuật ngữ:** Tổng vectơ, quy tắc ba điểm, quy tắc hình bình hành, vectơ đối, hiệu, trung điểm, trọng tâm.
 
@@ -133,13 +133,13 @@
 
     ### 2.1. Tổng của hai vectơ
 
-Với A,B,C tùy ý: $\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}$.
+    Với A,B,C tùy ý: $\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}$.
 
     **Lưu ý:** Điểm cuối của vectơ thứ nhất B là điểm đầu của vectơ thứ hai; đảo BC thành CB có thể làm đổi kết quả.
 
     #### Quy tắc hình bình hành
 
-**Quan sát hình.** Hãy đọc hai cách cộng trên hình: ở quy tắc tam giác, nối đuôi mũi tên; ở quy tắc hình bình hành, dựng hai cạnh chung gốc rồi lấy đường chéo. Không cộng độ dài như cộng vectơ.
+    **Quan sát hình.** Hãy đọc hai cách cộng trên hình: ở quy tắc tam giác, nối đuôi mũi tên; ở quy tắc hình bình hành, dựng hai cạnh chung gốc rồi lấy đường chéo. Không cộng độ dài như cộng vectơ.
 
     <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B08_TRIANGLE_PARALLELOGRAM_SUM_D5_R01.svg" loading="lazy" alt="Vectơ và quy tắc ba điểm, hình bình hành"><figcaption>Vectơ và quy tắc ba điểm, hình bình hành.</figcaption></figure>
 
@@ -151,11 +151,11 @@ Với A,B,C tùy ý: $\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC
 
     #### Vận dụng: hợp lực
 
-Nếu hai lực có cùng điểm đặt, hợp lực là đường chéo hình bình hành tạo bởi hai vectơ lực. Độ lớn hợp lực không bằng tổng các độ lớn nếu hai lực không cùng hướng. Bài toán hai lực vuông góc có thể dùng định lí Pitago.
+    Nếu hai lực có cùng điểm đặt, hợp lực là đường chéo hình bình hành tạo bởi hai vectơ lực. Độ lớn hợp lực không bằng tổng các độ lớn nếu hai lực không cùng hướng. Bài toán hai lực vuông góc có thể dùng định lí Pitago.
 
     ### 2.2. Hiệu của hai vectơ
 
-$-\overrightarrow{AB}=\overrightarrow{BA}$ và $\vec u-\vec v=\vec u+(-\vec v)$. 
+    $-\overrightarrow{AB}=\overrightarrow{BA}$ và $\vec u-\vec v=\vec u+(-\vec v)$. 
 
     **Hệ quả:** Quy tắc ba điểm suy ra $\overrightarrow{AB}-\overrightarrow{AC}=\overrightarrow{CB}$; phép trừ vectơ nói chung **không giao hoán**.
 
@@ -163,7 +163,7 @@ $-\overrightarrow{AB}=\overrightarrow{BA}$ và $\vec u-\vec v=\vec u+(-\vec v)$.
 
     #### Hệ quả: trung điểm và trọng tâm
 
-M là trung điểm AB khi và chỉ khi $\overrightarrow{MA}+\overrightarrow{MB}=\vec0$.
+    M là trung điểm AB khi và chỉ khi $\overrightarrow{MA}+\overrightarrow{MB}=\vec0$.
 
     **Trọng tâm:** G là trọng tâm tam giác ABC thì $\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0$.
 

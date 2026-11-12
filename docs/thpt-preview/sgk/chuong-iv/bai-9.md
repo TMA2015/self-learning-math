@@ -4,7 +4,7 @@
 
 === "Khám phá kiến thức"
 
-### Cùng tìm hiểu
+    ### Cùng tìm hiểu
 
     Nếu một vectơ biểu diễn bước đi 2 m sang Đông, thì \(3\vec u\) biểu diễn một mũi tên **cùng hướng** dài 6 m. Nhưng \(-3\vec u\) lại dài 6 m về **hướng ngược**. Như vậy, khi nhân vectơ với một số, **giá trị tuyệt đối của số** điều chỉnh độ dài còn **dấu** điều chỉnh hướng.
 
@@ -14,7 +14,7 @@
 
     ### Ví dụ trực quan
 
-<span id="thpt-g10-chiv-try11" data-thpt-first-try-id="THPT-G10-CHIV-TRY11" data-outcome-id="G10-B09-SCALAR_DEFINITION" data-thpt-help-ref="HELP-G10-B09-01"></span>
+    <span id="thpt-g10-chiv-try11" data-thpt-first-try-id="THPT-G10-CHIV-TRY11" data-outcome-id="G10-B09-SCALAR_DEFINITION" data-thpt-help-ref="HELP-G10-B09-01"></span>
 
     #### Nhân vectơ với số: phóng to, thu nhỏ, đổi chiều
 
@@ -123,7 +123,7 @@
 
         **Vì sao:** G nằm giữa A và M, AG:GM=2:1 nên AM gồm 3 phần, AG chiếm 2 phần. Hai vectơ A→G, A→M cùng hướng.
 
-### Thuật ngữ, kiến thức và kỹ năng
+    ### Thuật ngữ, kiến thức và kỹ năng
 
     **Thuật ngữ:** Tích của số với vectơ, độ dài, đổi hướng theo dấu hệ số, tính phân phối, cùng phương, trung điểm/trọng tâm.
 
@@ -133,7 +133,7 @@
 
     ### 2.1. Tích của một vectơ với một số
 
-**Quan sát hình.** Quan sát mũi tên gốc, các bội dương và âm: độ dài đổi theo (|k|), còn chiều quay ngược khi (k<0). Chú ý (k=0) tạo vectơ-không.
+    **Quan sát hình.** Quan sát mũi tên gốc, các bội dương và âm: độ dài đổi theo (|k|), còn chiều quay ngược khi (k<0). Chú ý (k=0) tạo vectơ-không.
 
     <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B09_SCALAR_MULTIPLE_VECTORS_D5_R01.svg" loading="lazy" alt="Nhân một vectơ với số: cùng hướng, ngược hướng và vectơ không"><figcaption>Nhân một vectơ với số: cùng hướng, ngược hướng và vectơ không.</figcaption></figure>
 
@@ -149,7 +149,7 @@
 
     ### 2.2. Các tính chất của phép nhân vectơ với một số
 
-**Các quy tắc cơ bản:**
+    **Các quy tắc cơ bản:**
 
     - $k(\vec u+\vec v)=k\vec u+k\vec v$
     - $(k+m)\vec u=k\vec u+m\vec u$
@@ -161,7 +161,7 @@
 
     #### Hệ quả: trung điểm và trọng tâm
 
-**Trung điểm:** Nếu $M$ là trung điểm $AB$ thì $\overrightarrow{AM}=\tfrac12\overrightarrow{AB}$; ngược lại, đẳng thức này xác định trung điểm. 
+    **Trung điểm:** Nếu $M$ là trung điểm $AB$ thì $\overrightarrow{AM}=\tfrac12\overrightarrow{AB}$; ngược lại, đẳng thức này xác định trung điểm. 
 
     **Trọng tâm:** Nếu $G$ là trọng tâm tam giác $ABC$, $M$ là trung điểm $BC$ thì
 
@@ -174,7 +174,7 @@
 
     #### Vận dụng
 
-Khi các vectơ biểu diễn dịch chuyển hay lực, $k$ thay đổi độ lớn và có thể đổi chiều. Không ghi độ dài âm hoặc cộng độ dài thay cho tổng vectơ khi các hướng khác nhau.
+    Khi các vectơ biểu diễn dịch chuyển hay lực, $k$ thay đổi độ lớn và có thể đổi chiều. Không ghi độ dài âm hoặc cộng độ dài thay cho tổng vectơ khi các hướng khác nhau.
 
 === "Ví dụ"
 

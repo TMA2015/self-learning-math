@@ -4,7 +4,7 @@
 
 === "Khám phá kiến thức"
 
-### Cùng tìm hiểu
+    ### Cùng tìm hiểu
 
     Hai lực có cùng độ lớn chưa chắc tác động như nhau. Khi lực kéo tạo với hướng di chuyển một góc nhọn, nó hỗ trợ chuyển động; khi góc tù, một phần lực có tác dụng cản lại. Ta cần một phép toán có thể biến thông tin **độ lớn và góc giữa hai vectơ** thành một con số có dấu. Phép toán đó là **tích vô hướng**.
 
@@ -14,7 +14,7 @@
 
     ### Ví dụ trực quan
 
-<span id="thpt-g10-chiv-try21" data-thpt-first-try-id="THPT-G10-CHIV-TRY21" data-outcome-id="G10-B11-GEOMETRIC_DOT" data-thpt-help-ref="HELP-G10-B11-02"></span>
+    <span id="thpt-g10-chiv-try21" data-thpt-first-try-id="THPT-G10-CHIV-TRY21" data-outcome-id="G10-B11-GEOMETRIC_DOT" data-thpt-help-ref="HELP-G10-B11-02"></span>
 
     #### Tích vô hướng mô tả mức độ cùng hướng
 
@@ -111,7 +111,7 @@
 
         **Vì sao:** Cos180°=−1, cos90°=0. Công là vô hướng có dấu, khác với độ lớn lực hay quãng đường.
 
-### Thuật ngữ, kiến thức và kỹ năng
+    ### Thuật ngữ, kiến thức và kỹ năng
 
     **Thuật ngữ:** Tích vô hướng, góc giữa hai vectơ, dấu của cos góc nhọn/tù, vuông góc, tích vô hướng theo tọa độ, công của lực.
 
@@ -187,7 +187,7 @@
 
     ??? tip "Nhầm tích vô hướng với tích độ dài; bỏ điều kiện khác 0"
 
-        <ul><li>Điểm nghẽn: Dùng công thức cos/điều kiện vuông góc khi một vectơ không.</li><li>Bản chất cần sửa: Dot là số; tọa độ dot = ac+bd; góc/cos chỉ định nghĩa khi hai độ dài dương.</li><li>Quy trình 5 bước: 1. Kiểm hai vectơ khác 0. 2. Tính dot. 3. Tính độ dài. 4. Chỉ chia khi mẫu &gt;0. 5. Luyện B11-P03.</li><li>Liên kết item có sẵn: B11-C02, B11-P02, B11-P03. Không clone câu hoặc giải vào HELP_ID.</li><li>Assessment safety: hỗ trợ chỉ tại Knowledge/Practice, không hiển thị trong phiên Tự kiểm tra trước Final Submit.</li></ul><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
+        <ul><li>Điểm nghẽn: Dùng công thức cos khi có vectơ-không, hoặc bỏ quên quy ước vuông góc của SGK.</li><li>Bản chất cần sửa: Tích vô hướng là số; SGK coi vectơ-không vuông góc với mọi vectơ, nhưng phép chia tính cos chỉ hợp lệ khi hai độ dài dương.</li><li>Cách kiểm: 1. Xét trường hợp vectơ-không. 2. Khi có vectơ-không, tích bằng 0 và vuông góc theo quy ước SGK. 3. Với hai vectơ khác không, tính tích vô hướng. 4. Chỉ tính cos bằng phép chia khi mẫu dương. 5. Luyện B11-P03.</li><li>Liên kết item có sẵn: B11-C02, B11-P02, B11-P03. Không clone câu hoặc giải vào HELP_ID.</li><li>Assessment safety: hỗ trợ chỉ tại Knowledge/Practice, không hiển thị trong phiên Tự kiểm tra trước Final Submit.</li></ul><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
 
     <span data-thpt-help-id="HELP-G10-B11-02" hidden></span>
 

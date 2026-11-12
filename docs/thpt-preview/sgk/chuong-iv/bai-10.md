@@ -4,7 +4,7 @@
 
 === "Khám phá kiến thức"
 
-### Cùng tìm hiểu
+    ### Cùng tìm hiểu
 
     Một mũi tên trên bản đồ có thể được mô tả bằng hai điều: đi **bao nhiêu đơn vị theo chiều ngang** và **bao nhiêu đơn vị theo chiều dọc**. Nếu một người đi từ \(A(1,2)\) đến \(B(5,5)\), họ đã dịch chuyển \(4\) đơn vị theo phương ngang và \(3\) đơn vị theo phương đứng. Vì thế, tọa độ của vectơ độ dời được tính bằng **điểm cuối trừ điểm đầu**: \(\overrightarrow{AB}=(4,3)\).
 
@@ -14,7 +14,7 @@
 
     ### Ví dụ trực quan
 
-<span id="thpt-g10-chiv-try16" data-thpt-first-try-id="THPT-G10-CHIV-TRY16" data-outcome-id="G10-B10-VECTOR_COORDS" data-thpt-help-ref="HELP-G10-B10-01"></span>
+    <span id="thpt-g10-chiv-try16" data-thpt-first-try-id="THPT-G10-CHIV-TRY16" data-outcome-id="G10-B10-VECTOR_COORDS" data-thpt-help-ref="HELP-G10-B10-01"></span>
 
     #### Vì sao lấy điểm cuối trừ điểm đầu?
 
@@ -171,7 +171,7 @@
 
         5. **Luyện lại:** Ôn các câu về cộng vectơ và tọa độ trong phần Luyện tập, rồi tự giải một tình huống qua sông tương tự trước khi mở lời giải. Nếu đã xem đáp án, hãy đổi dữ kiện để tự thử lại.
 
-### Thuật ngữ, kiến thức và kỹ năng
+    ### Thuật ngữ, kiến thức và kỹ năng
 
     **Thuật ngữ:** Vectơ tọa độ, vectơ đơn vị trên trục, điểm đầu/điểm cuối, độ dài, cùng phương, tọa độ trung điểm/trọng tâm.
 
@@ -181,7 +181,7 @@
 
     ### 2.1. Tọa độ của vectơ
 
-**Cách đọc hình.** Đọc mũi tên từ điểm A đến B; lấy hoành độ và tung độ điểm cuối trừ điểm đầu, rồi đối chiếu chiều chuyển động trên trục.
+    **Cách đọc hình.** Đọc mũi tên từ điểm A đến B; lấy hoành độ và tung độ điểm cuối trừ điểm đầu, rồi đối chiếu chiều chuyển động trên trục.
 
     <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B10_COORDINATES_DIFFERENCE_D5_R01.svg" loading="lazy" alt="Tọa độ vectơ AB bằng tọa độ điểm cuối trừ điểm đầu"><figcaption>Tọa độ vectơ AB bằng tọa độ điểm cuối trừ điểm đầu.</figcaption></figure>
 
@@ -196,7 +196,7 @@
 
     ### 2.2. Biểu thức tọa độ của các phép toán vectơ
 
-Với $\vec u=(a;b)$, $\vec v=(c;d)$, $t\in\mathbb R$:
+    Với $\vec u=(a;b)$, $\vec v=(c;d)$, $t\in\mathbb R$:
 
     \[
     \vec u+\vec v=(a+c;b+d),\quad \vec u-\vec v=(a-c;b-d),\quad t\vec u=(ta;tb).
@@ -208,7 +208,7 @@ Với $\vec u=(a;b)$, $\vec v=(c;d)$, $t\in\mathbb R$:
 
     #### Hệ quả: tọa độ trung điểm và trọng tâm
 
-$M$ là trung điểm $AB$ khi
+    $M$ là trung điểm $AB$ khi
 
     \[
     M\left(\frac{x_A+x_B}{2};\frac{y_A+y_B}{2}\right).
@@ -224,7 +224,7 @@ $M$ là trung điểm $AB$ khi
 
     #### Vận dụng
 
-**Cách đọc hình.** Đọc vectơ vận tốc theo bờ như tổng hai chuyển động của ca nô và dòng nước. Phân biệt trục dọc bờ với trục qua sông; kiểm điều kiện không trôi bằng thành phần ngang.
+    **Cách đọc hình.** Đọc vectơ vận tốc theo bờ như tổng hai chuyển động của ca nô và dòng nước. Phân biệt trục dọc bờ với trục qua sông; kiểm điều kiện không trôi bằng thành phần ngang.
 
     <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_CHIV_RIVER_TRANSFER_D5_R01_CORRECTED.svg" alt="Hai trường hợp hướng mũi ca nô; lái Bắc thì trôi Đông, lái chếch Tây Bắc thì đi Bắc không trôi" loading="lazy"><figcaption>Hai bờ song song: thời gian phụ thuộc thành phần Bắc của vận tốc theo bờ.</figcaption></figure>
 

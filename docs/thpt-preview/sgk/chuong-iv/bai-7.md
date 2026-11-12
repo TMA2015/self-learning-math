@@ -4,7 +4,7 @@
 
 === "Khám phá kiến thức"
 
-### Cùng tìm hiểu
+    ### Cùng tìm hiểu
 
     Một chuyến đi có thể dài 5 km về phía Đông hoặc 5 km về phía Tây. Hai chuyến đi ấy có cùng **độ dài**, nhưng không đưa ta đến cùng vị trí. Để diễn tả sự khác nhau, toán học dùng **vectơ**: một mũi tên vừa cho biết độ lớn, vừa cho biết phương và chiều.
 
@@ -14,7 +14,7 @@
 
     ### Ví dụ trực quan
 
-<span id="thpt-g10-chiv-try01" data-thpt-first-try-id="THPT-G10-CHIV-TRY01" data-outcome-id="G10-B07-DEFINITION" data-thpt-help-ref="HELP-G10-B07-01"></span>
+    <span id="thpt-g10-chiv-try01" data-thpt-first-try-id="THPT-G10-CHIV-TRY01" data-outcome-id="G10-B07-DEFINITION" data-thpt-help-ref="HELP-G10-B07-01"></span>
 
     #### Vectơ là gì và tại sao phải có chiều?
 
@@ -123,7 +123,7 @@
 
         **Vì sao:** Độ dời chỉ quan tâm vị trí đầu/cuối; đi rồi quay lại cho vectơ-không. Quãng đường vẫn là số dương nếu có di chuyển.
 
-### Thuật ngữ, kiến thức và kỹ năng
+    ### Thuật ngữ, kiến thức và kỹ năng
 
     **Thuật ngữ:** Vectơ, giá vectơ, điểm đầu/điểm cuối, độ dài, cùng phương, cùng/ngược hướng, vectơ bằng nhau, vectơ-không.
 
@@ -133,7 +133,7 @@
 
     ### 2.1. Khái niệm vectơ
 
-**Khái niệm:** Vectơ là đoạn thẳng có hướng. Kí hiệu $\overrightarrow{AB}$ gồm điểm đầu **A**, điểm cuối **B**; độ dài $|\overrightarrow{AB}|=AB\ge0$.
+    **Khái niệm:** Vectơ là đoạn thẳng có hướng. Kí hiệu $\overrightarrow{AB}$ gồm điểm đầu **A**, điểm cuối **B**; độ dài $|\overrightarrow{AB}|=AB\ge0$.
 
     **Nhận xét:** Hai vectơ đặt tại vị trí khác nhau có thể bằng nhau. Đường thẳng qua A,B là **giá** của vectơ khác không; vectơ có điểm đầu trùng điểm cuối là vectơ-không $\vec0$.
 
@@ -141,19 +141,19 @@
 
     #### Vectơ-không
 
-$\overrightarrow{AA}=\vec0$ với mọi điểm A và $|\vec0|=0$. **Theo quy ước SBT KNTT lớp 10 Bài 7**, vectơ-không được xem là cùng phương và cùng hướng với mọi vectơ.
+    $\overrightarrow{AA}=\vec0$ với mọi điểm A và $|\vec0|=0$. **Theo quy ước SBT KNTT lớp 10 Bài 7**, vectơ-không được xem là cùng phương và cùng hướng với mọi vectơ.
 
     **Lưu ý về quy ước:** Điều này là quy ước toán học cho trường hợp đặc biệt, không mô tả một đoạn có chiều vật lí khác 0.
 
     ### 2.2. Hai vectơ cùng phương, cùng hướng, bằng nhau
 
-Với hai vectơ khác không, chúng **cùng phương** nếu hai giá song song hoặc trùng nhau; cùng phương có thể **cùng hướng** hoặc **ngược hướng**.
+    Với hai vectơ khác không, chúng **cùng phương** nếu hai giá song song hoặc trùng nhau; cùng phương có thể **cùng hướng** hoặc **ngược hướng**.
 
     **Lưu ý:** Cùng phương không suy ra cùng hướng; cùng hướng không suy ra cùng độ dài.
 
     #### Hai vectơ bằng nhau và ngược hướng
 
-**Quan sát hình.** Đọc hình bình hành theo thứ tự: chọn cạnh AB, đối chiếu mũi tên DC và CD, rồi kiểm chiều của từng mũi tên trước khi kết luận bằng nhau. Hai cạnh đối bằng độ dài chưa đủ để hai vectơ cùng bằng nhau.
+    **Quan sát hình.** Đọc hình bình hành theo thứ tự: chọn cạnh AB, đối chiếu mũi tên DC và CD, rồi kiểm chiều của từng mũi tên trước khi kết luận bằng nhau. Hai cạnh đối bằng độ dài chưa đủ để hai vectơ cùng bằng nhau.
 
     <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B07_PARALLELOGRAM_EQUAL_OPPOSITE_D5_R01.svg" loading="lazy" alt="Hình bình hành ABCD với các vectơ cạnh đối bằng nhau"><figcaption>Hình bình hành ABCD với các vectơ cạnh đối bằng nhau.</figcaption></figure>
 
@@ -163,7 +163,7 @@ Với hai vectơ khác không, chúng **cùng phương** nếu hai giá song son
 
     #### Vận dụng
 
-Lực, vận tốc, độ dời có thể dùng vectơ vì đồng thời chứa độ lớn và hướng; quãng đường đi theo hai chặng có thể lớn hơn độ dài vectơ độ dời từ đầu đến cuối. Luôn ghi đơn vị thích hợp.
+    Lực, vận tốc, độ dời có thể dùng vectơ vì đồng thời chứa độ lớn và hướng; quãng đường đi theo hai chặng có thể lớn hơn độ dài vectơ độ dời từ đầu đến cuối. Luôn ghi đơn vị thích hợp.
 
 === "Ví dụ"
 
