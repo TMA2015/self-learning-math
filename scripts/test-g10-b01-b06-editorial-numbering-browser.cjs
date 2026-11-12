@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 "use strict";
-/* DELTA_A_UI: 6 published source blobs and ALL CSS/main configs unchanged;
- * only rendered headings 1.x,3.x,4.x and tab labels 1-4 are added.
+/* DELTA_A_UI: 6 published academic source blobs and non-target CSS/config unchanged;
+ * only heading labels, table alignment and worked-solution presentation change.
  * This is not S1 approval / not final release or Mastery evidence.
  */
 const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path"),crypto=require("node:crypto");
@@ -17,7 +17,7 @@ const SHA={
 "docs/thpt-preview/sgk/chuong-iii/bai-6.md":"3a2f4392357b0a7155488ba2427fbb2dde0dde81"
 };
 const STYLES={
-"docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css":"4acf8094740835fec618e0f1a45189053b06f387",
+"docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css":"8386b51f0cdb2dbee37148ae9a7b85eb6a9d2881",
 "docs/assets/stylesheets/site-design-system.css":"cede51cfff25ef4f6c612c894c81f4639625c32b",
 "docs/assets/stylesheets/thpt-r4-preview.css":"f46b7280965c226039093c408dc7f8e3e78001fa",
 "docs/assets/stylesheets/thpt-sgk-lesson-nav-v1.css":"4bf16bba1cd144f0a69c932d8ead24dd4534f4cb",
@@ -62,6 +62,30 @@ const widths=[390,820,1440];
      assert(knowledge.length>=4&&knowledge.every((v,i)=>v.startsWith("2."+(i+1)+". ")),loc+" original SGK 2.x preserved");
      const exampleTitles=(await groups.nth(2).locator("h3").allInnerTexts()).map(x=>x.trim());
      assert(exampleTitles.length>=3&&exampleTitles.every((v,i)=>v.startsWith("3."+(i+1)+". Ví dụ "+(i+1)+" —")),loc+" 3.x examples");
+     // Visual consistency: every worked example has one full tinted solution,
+     // and the table's headers and cells share the same column alignment.
+     const solutions=groups.nth(2).locator(".thpt-g10-example-solution");
+     assert.equal(await solutions.count(),exampleTitles.length,loc+" complete worked-solution panels");
+     const solutionState=await solutions.evaluateAll(nodes=>nodes.map(node=>({
+      starts:/^Lời giải(?:\s+theo vùng)?\./iu.test(node.firstElementChild?.textContent.trim()||""),
+      background:getComputedStyle(node).backgroundColor,
+      padding:parseFloat(getComputedStyle(node).paddingTop),
+      originalStrong:node.firstElementChild?.querySelector(":scope > strong")?.textContent.trim()||""
+     })));
+     assert(solutionState.every(x=>x.starts&&x.padding>0&&x.background!=="rgba(0, 0, 0, 0)"),
+      loc+" restored visually boxed solution text");
+     const tableResults=await page.locator(".thpt-g10-knowledge-table").evaluateAll(tables=>tables.map(table=>{
+      const header=table.querySelector("thead tr");
+      const body=table.querySelector("tbody tr");
+      if(!header||!body)return false;
+      return [...header.cells].every((cell,i)=>{
+       const data=body.cells[i];
+       if(!data)return false;
+       return getComputedStyle(cell).textAlign===getComputedStyle(data).textAlign &&
+         getComputedStyle(data).verticalAlign==="middle";
+      });
+     }));
+     assert(tableResults.every(Boolean),loc+" header/data table alignment");
      const mistakes=groups.nth(3).locator(":scope > details.tip > summary");
      assert((await mistakes.count())>=2,loc+" original remediation folds");
      const mistakeTitles=(await mistakes.allInnerTexts()).map(x=>x.trim());
@@ -87,5 +111,5 @@ const widths=[390,820,1440];
   }
  }finally{await browser.close();}
  assert.equal(passed,18);
- console.log("PASS 18/18 real browser cases G10 B01-B06 (390/820/1440). SOURCE/CSS original SHA 12/12. DELTA_A_UI only. No academic source/learner/backend/merge/deploy.");
+ console.log("PASS 18/18 real browser cases G10 B01-B06 (390/820/1440). Academic source and non-target CSS/config source-locked. DELTA_A_UI only. No academic source/learner/backend/merge/deploy.");
 })().catch(e=>{console.error(e);process.exitCode=1});
