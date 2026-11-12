@@ -22,58 +22,52 @@ Biết tính f'(x) chưa cho phép tự trả lời 'hàm tăng ở đâu?', 'đ
 
 ### Hiểu đồng biến, nghịch biến theo thứ tự đầu vào
 
-<!-- LESSON_ID=TOP10-M01; OUTCOME_ID=TOP10-O01 -->
+<!-- LESSON_ID: TOP10-M01 · OUTCOME_ID: TOP10-O01 · R02 prose authored in connected paragraphs -->
 
-Biết giá trị hàm tại vài điểm có đủ khẳng định nó luôn tăng? Để hiểu, ta dựa vào miền xác định, so sánh x₁<x₂ và giá trị f(x). Trên một khoảng I, f đồng biến khi x₁<x₂ kéo theo f(x₁)<f(x₂); nghịch biến khi f(x₁)>f(x₂). Đây là phát biểu trên MỌI cặp điểm, không phải chỉ hai điểm đầu–cuối. Với miền bị tách rời phải xét riêng từng khoảng; không nối kết kết luận qua chỗ không xác định.
+Khi nhìn hai điểm trên đồ thị và thấy điểm phía phải cao hơn, ta mới biết hàm tăng **giữa hai vị trí đó**; chừng ấy chưa đủ để khẳng định hàm tăng trên cả khoảng. Điều cần xét là mọi cặp số \(x_1<x_2\) thuộc cùng một khoảng \(I\). Nếu luôn có \(f(x_1)<f(x_2)\), hàm **đồng biến** trên \(I\); nếu luôn có \(f(x_1)>f(x_2)\), hàm **nghịch biến**. Vì vậy miền xác định và việc hai điểm có thuộc cùng một khoảng là điều kiện phải kiểm trước.
 
-Xét trường hợp sau. f(x)=−2x+5 trên ℝ: nếu x₁<x₂ thì f(x₂)−f(x₁)=−2(x₂−x₁)<0 nên nghịch biến. Ta chọn hiệu hai giá trị để minh chứng bản chất trước dấu đạo hàm.
+Xét \(f(x)=-2x+5\) trên \(\mathbb R\). Với bất kỳ \(x_1<x_2\), ta có \(f(x_2)-f(x_1)=-2(x_2-x_1)<0\). Do đó \(f(x_2)<f(x_1)\) và hàm nghịch biến trên toàn trục số. Ta chọn cách so hiệu hai giá trị để chứng minh trực tiếp định nghĩa, trước khi dùng công cụ đạo hàm.
 
-**Em tự thử:** f(x)=3x−1 đồng biến hay nghịch biến trên ℝ?
+**Em tự thử:** \(f(x)=3x-1\) đồng biến hay nghịch biến trên \(\mathbb R\)? Hãy giải thích bằng hai giá trị \(x_1<x_2\).
 
 <details class="slm-topic-first-try" markdown="1">
-<summary>Em đã thử? Mở lời giải và đường khắc phục</summary>
+<summary>Em đã tự làm? Mở phần đối chiếu</summary>
 
-Đồng biến: f(x₂)−f(x₁)=3(x₂−x₁)>0.
-
-Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và lý do chọn phương pháp. Nếu chỉ xem hai điểm, hãy thử nêu điều kiện đúng với mọi x₁<x₂.
+\(f(x_2)-f(x_1)=3(x_2-x_1)>0\), nên hàm đồng biến trên \(\mathbb R\). Nếu em chỉ thế hai giá trị cụ thể, hãy quay lại điều kiện **với mọi** cặp \(x_1<x_2\) trong khoảng.
 
 </details>
 
 ### Liên hệ dấu đạo hàm và chiều biến thiên
 
-<!-- LESSON_ID=TOP10-M02; OUTCOME_ID=TOP10-O02 -->
+<!-- LESSON_ID: TOP10-M02 · OUTCOME_ID: TOP10-O02 · R02 prose authored in connected paragraphs -->
 
-Tại sao đạo hàm dương báo đồ thị tăng trên một khoảng? Trước hết, ta xuất phát từ đạo hàm là độ dốc cục bộ, liên tục trên đoạn con, định lí giá trị trung bình dưới điều kiện phù hợp. Nếu f liên tục trên mọi đoạn con của I và khả vi trong I, f'(x)>0 khắp I suy f tăng nghiêm ngặt; f'<0 suy giảm. Trường hợp f'≥0 (hoặc ≤0) suy không giảm (không tăng); muốn tăng nghiêm ngặt có thể cho phép vài điểm f'=0 nhưng phải kiểm không có đoạn hằng. Không áp bảng dấu xuyên điểm loại miền.
+Cách so trực tiếp \(f(x_2)-f(x_1)\) có thể rất dài với những hàm phức tạp. Khi hàm liên tục trên mỗi đoạn con của khoảng đang xét và khả vi ở các điểm trong khoảng, **đạo hàm** giúp đọc chiều biến thiên hiệu quả hơn. Theo định lý giá trị trung bình, nếu \(f'(x)>0\) khắp khoảng thì hàm tăng nghiêm ngặt; nếu \(f'(x)<0\) thì giảm nghiêm ngặt. Dấu không âm hoặc không dương bảo đảm lần lượt không giảm hoặc không tăng, nhưng muốn nói **nghiêm ngặt** cần loại trường hợp có đoạn hằng.
 
-Một ví dụ giúp kiểm chứng điều đó. f=x² trên (0,+∞): f'=2x>0 nên tăng. Trên (−∞,0), f'<0 nên giảm. Chọn dấu đạo hàm vì hàm trơn trên từng khoảng.
+Chẳng hạn, \(f(x)=x^2\) có \(f'(x)=2x\). Ở phía trái 0, đạo hàm âm nên đồ thị đi xuống; ở phía phải 0, đạo hàm dương nên đồ thị đi lên. Việc chia tại \(x=0\) cho ta hai khoảng biến thiên và cực tiểu. Trái lại, hàm \(x^3\) có đạo hàm bằng 0 ở 0 nhưng vẫn tăng khi đi qua điểm này: một nghiệm \(f'(x)=0\) chưa đủ kết luận có cực trị.
 
-**Em tự thử:** f=x³ có f'=3x²≥0, tại0 bằng0; hàm có tăng nghiêm ngặt trên ℝ không?
+**Em tự thử:** \(f(x)=x^3\) có tăng nghiêm ngặt trên \(\mathbb R\) không? Vì sao \(f'(0)=0\) không bác bỏ điều đó?
 
 <details class="slm-topic-first-try" markdown="1">
-<summary>Em đã thử? Mở lời giải và đường khắc phục</summary>
+<summary>Em đã tự làm? Mở phần đối chiếu</summary>
 
-Có, vì x³ tăng nghiêm ngặt; một điểm f'=0 không tạo đoạn hằng.
-
-Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và lý do chọn phương pháp. Nếu gọi f'=0 tại một điểm là cực trị, đọc lại trường hợp x³.
+Có. Với \(x_1<x_2\) thì \(x_1^3<x_2^3\); đạo hàm \(3x^2\ge0\) và chỉ bằng 0 tại một điểm, không tạo ra đoạn hằng. Nếu em gán mọi nghiệm \(f'=0\) thành cực trị, hãy lập dấu đạo hàm **hai phía** điểm ấy.
 
 </details>
 
 ### Tìm đúng miền và chia khoảng khi khảo sát
 
-<!-- LESSON_ID=TOP10-M03; OUTCOME_ID=TOP10-O03 -->
+<!-- LESSON_ID: TOP10-M03 · OUTCOME_ID: TOP10-O03 · R02 prose authored in connected paragraphs -->
 
-Một điểm hàm không xác định có được đưa vào khoảng đồng biến không? Điểm tựa cho suy luận là điều kiện mẫu khác 0, căn, log; đạo hàm trên miền mở. Miền D của hàm cần tìm TRƯỚC khi giải f'=0. Chia D theo điểm loại, điểm tới hạn và điểm f' không có nhưng f có. Bảng biến thiên tuyệt đối không nối hai nhánh qua tiệm cận đứng, hoặc dùng một khoảng chứa điểm không thuộc D.
+Đạo hàm chỉ giúp đánh giá chiều biến thiên **nơi hàm số được xác định và đủ điều kiện khả vi**. Chẳng hạn, \(f(x)=\dfrac1{x-2}\) có mẫu bằng 0 tại \(x=2\), nên miền là \(\mathbb R\setminus\{2\}\). Đạo hàm \(f'(x)=-\dfrac1{(x-2)^2}<0\) trên miền, nhưng kết luận đúng phải viết: hàm nghịch biến trên **từng khoảng** \(( -\infty,2)\) và \((2,+\infty)\). Hai nhánh không được nối qua một điểm không thuộc miền.
 
-Hãy theo dõi cách giải này. f=1/(x−2) có D=ℝ\{2}; f'=−1/(x−2)²<0. Nghịch biến trên (−∞,2) và (2,∞) riêng, KHÔNG nói 'nghịch biến trên ℝ\{2}' theo mọi cặp vì qua lỗ có thể f tăng.
+Vì thế, khi khảo sát một hàm số, ta luôn tìm miền trước, rồi mới giải \(f'(x)=0\), xác định điểm đạo hàm không tồn tại trong miền và dựng bảng dấu trên những khoảng hợp lệ. Làm ngược thứ tự dễ dẫn đến ghi một khoảng có chứa điểm cấm hoặc kết luận “nghịch biến trên toàn miền rời” sai theo định nghĩa so mọi cặp.
 
-**Em tự thử:** f(x)=√(x−1) có miền nào?
+**Em tự thử:** \(g(x)=\sqrt{x-1}\) có miền xác định nào? Có thể nói hàm tăng trên miền đó không?
 
 <details class="slm-topic-first-try" markdown="1">
-<summary>Em đã thử? Mở lời giải và đường khắc phục</summary>
+<summary>Em đã tự làm? Mở phần đối chiếu</summary>
 
-D=[1,+∞); khả vi nội miền x>1, và tăng trên [1,+∞) theo nghĩa một phía tại biên.
-
-Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và lý do chọn phương pháp. Nếu kết luận 'toàn ℝ', hãy giải x−1≥0 trước.
+Điều kiện \(x-1\ge0\) cho miền \([1,+\infty)\). Trên \((1,+\infty)\), \(g'(x)=\dfrac1{2\sqrt{x-1}}>0\); từ giá trị ở biên \(x=1\), ta vẫn có thể nói hàm tăng trên \([1,+\infty)\). Nếu em ghi miền \(\mathbb R\), hãy kiểm điều kiện tồn tại của căn trước.
 
 </details>
 
