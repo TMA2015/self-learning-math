@@ -12,7 +12,7 @@ function chivEditorialReceiptRows(){
  const file=path.join(root,editorReceipt);
  if(!fs.existsSync(file))return new Map();
  const source=fs.readFileSync(file,"utf8");
- const matches=[...source.matchAll(/^\\| B(0[7-9]|1[01]) \\| \\x60([a-f0-9]{40})\\x60 \\| \\x60([a-f0-9]{40})\\x60 \\| (\\d+) \\|/gm)];
+ const matches=[...source.matchAll(/^\| B(0[7-9]|1[01]) \| \x60([a-f0-9]{40})\x60 \| \x60([a-f0-9]{40})\x60 \| (\d+) \|/gm)];
  assert.equal(matches.length,5,"ChIV S1/Q18 editorial receipt requires five source rows");
  const rows=new Map(matches.map(m=>["B"+m[1],{baseline:m[2],candidate:m[3],moved:Number(m[4])}]));
  assert.equal(rows.size,5,"ChIV editorial source rows must be unique");
