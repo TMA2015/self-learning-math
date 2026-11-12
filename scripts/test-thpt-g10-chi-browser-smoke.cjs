@@ -11,13 +11,17 @@ const assert=require("node:assert/strict");const {chromium}=require("playwright"
      const isModelB=(await page.locator("article .tabbed-set").count())>0;
      const openTab=async label=>{
        const tabs=page.locator("article .tabbed-set").first().locator(".tabbed-labels label");
-       const tab=tabs.filter({hasText:new RegExp("^"+label+"$")});
-       assert.equal(await tab.count(),1,"B0"+n+" missing exact tab "+label);
+       const tabNames=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
+       const index=tabNames.indexOf(label);
+       assert(index>=0,"Unknown Golden L1 tab request: "+label);
+       const tab=tabs.nth(index);
+       assert.equal((await tab.textContent()).trim(),(index+1)+". "+label,
+         "B0"+n+" needs the OWNER-approved numbered tab "+(index+1));
        await tab.click();
      };
      if(isModelB){
        const labels=(await page.locator("article .tabbed-set").first().locator(".tabbed-labels label").allTextContents()).map(x=>x.trim());
-       assert.deepEqual(labels,["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
+       assert.deepEqual(labels,["1. Khám phá kiến thức","2. Kiến thức SGK","3. Ví dụ","4. Lỗi thường gặp"],
          "B0"+n+" exact Golden Model B horizontal tabs");
        const markers=page.locator('span[data-ped-first-try="1"][data-thpt-first-try-id]');
        assert.equal(await markers.count(),expectedTries,"B0"+n+" original canonical First Try markers");

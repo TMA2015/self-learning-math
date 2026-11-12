@@ -48,7 +48,10 @@ const eqHref=(actual,expected)=>assert.equal(new URL(actual,site).pathname,expec
        // Model B uses MkDocs tabs and ### headings, not the historical direct h2.
        // Verify actual learner tab labels and a meaningful concept-first heading;
        // never satisfy AP1 merely by the presence of a generic tab container.
-       const expectedTabs=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
+       const names=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
+       const expectedTabs=lesson<=6?names.map((v,i)=>(i+1)+". "+v):names;
+       if(lesson<=6)assert.equal(await page.locator(".md-content__inner").getAttribute("data-g10-b01-b06-editorial-numbered"),"true",
+          "G10 B"+lesson+" must mount the owner-approved numbering scope");
        const labels=(await modelB.locator(".tabbed-labels label").allTextContents()).map(s=>s.trim());
        assert.deepEqual(labels,expectedTabs,"G10 B"+lesson+" exact Model B learning tabs");
        assert.equal(await modelB.locator(".tabbed-content > .tabbed-block").count(),4,
