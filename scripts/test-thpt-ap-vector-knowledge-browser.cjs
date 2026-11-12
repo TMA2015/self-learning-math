@@ -39,13 +39,19 @@ const cases=[
      for(let idx=0;idx<await figures.count();idx++){
        const figure=figures.nth(idx);
        if(isModelB){
-         const panel=await figure.evaluate(img=>{
-           const tabset=img.closest(".tabbed-set"),block=img.closest(".tabbed-block");
-           if(!tabset||!block)return -1;
-           return [...tabset.querySelectorAll(":scope > .tabbed-content > .tabbed-block")].indexOf(block);
-         });
-         assert(panel>=0&&panel<4,"B"+item.lesson+" figure "+idx+" must belong to one of four Model B panels");
-         await labels.nth(panel).click();
+         // Match the already-PASSING chapter Model B browser helper: tab
+         // labels are interactive controls, while DOM block indices are not
+         // guaranteed to equal label indices after the Material transformation.
+         // Visit real learner tabs until the actual original SVG is visible.
+         let selected=null;
+         for(const name of ["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"]){
+           const label=labels.filter({hasText:new RegExp("^"+name+"$")});
+           assert.equal(await label.count(),1,"B"+item.lesson+" missing tab "+name);
+           await label.click();
+           if(await figure.isVisible()){selected=name;break;}
+         }
+         assert.equal(selected,"Kiến thức SGK",
+           "B"+item.lesson+" original D5 SVG figure "+idx+" must be visible when learner selects Knowledge tab");
        }
        assert(await figure.isVisible(),"B"+item.lesson+" original SVG figure "+idx+" must be visible in selected tab");
        await figure.scrollIntoViewIfNeeded();
