@@ -9,6 +9,7 @@ const assert=require("node:assert/strict");
 const fs=require("node:fs");
 const path=require("node:path");
 const {chromium}=require("playwright");
+const {SPECS}=require("./thpt-g10-guidance-correction-v1.cjs");
 
 const base=process.env.UX795_BASE_URL||"http://127.0.0.1:8765";
 const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
@@ -44,6 +45,31 @@ function sameIDs(actual,expected,where){
      assert.deepEqual(found,labels,location+" owner-approved tab vocabulary and order");
      const groups=tabs.locator(".tabbed-content > .tabbed-block");
      assert.equal(await groups.count(),4,location+" four content groups");
+     // G10 B01–B27 must display an ACTUAL subsection index based on native
+     // H3, not fabricated headings or another nested tab. Check all viewports.
+     const knowledge=groups.nth(1);
+     const originalKnowledge=source.split(/^=== "([^"]+)"$/gm)[4]||"";
+     const actualH3=(originalKnowledge.match(/^    ### /gm)||[]).length;
+     const outline=knowledge.locator("details.thpt-g10-knowledge-sections");
+     await outline.waitFor({state:"attached",timeout:15000});
+     assert.equal(await outline.getAttribute("data-g10-knowledge-sections"),String(actualH3),
+      location+" visible subsection summary must match original source H3 count");
+     await choices.nth(1).click();
+     assert(await knowledge.isVisible(),location+" Knowledge SGK panel must open");
+     await outline.locator("summary").click();
+     assert(await outline.evaluate(el=>el.open),location+" learner can expand subsection list");
+     const partLinks=outline.locator("ol li a");
+     assert.equal(await partLinks.count(),actualH3,location+" every actual subsection must have one link");
+     assert(await partLinks.evaluateAll(nodes=>nodes.every(a=>{
+      const id=a.getAttribute("href").slice(1);
+      return !!document.getElementById(decodeURIComponent(id));
+     })),location+" all subsection navigation targets must be real H3 IDs");
+     await outline.locator("summary").click();
+     assert(!(await outline.evaluate(el=>el.open)),location+" section outline must close on choice");
+     if(SPECS.has(n)){
+      const count=(await knowledge.innerText()).match(/Tự dựng sơ đồ minh họa:|Tự dựng hình hoặc bảng:|Tự phác hình minh họa:/g)||[];
+      assert.equal(count.length,SPECS.get(n).count,location+" all unsupported read-figure labels corrected in real browser");
+     }
      const observedTry=await page.locator("[data-thpt-first-try-id]").evaluateAll(nodes=>nodes.map(n=>n.getAttribute("data-thpt-first-try-id")));
      const observedHelp=await page.locator("[data-thpt-help-id]").evaluateAll(nodes=>nodes.map(n=>n.getAttribute("data-thpt-help-id")));
      sameIDs(observedTry,expectedTry,location+" First Try");
