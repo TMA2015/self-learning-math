@@ -12,7 +12,7 @@ Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_POWERS_EXP_LOG_FULL_PUBLIC_R01_20261112.md
 ACADEMIC_SOURCE_BLOB: 383ef263b930604a30bad57b7d95d83d13896b20
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC04_POWERS_EXP_LOG_R01_AUTHOR_SELF_QA_RECEIPT_20261112.md
-REVIEW_RECEIPT_BLOB: 95621352172556be7776c6f525083cd9a76993d0
+REVIEW_RECEIPT_BLOB: 267e420b18fd5b0f8cce616cabc9a6325765ce6b
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC04_POWERS_LOG_ORIGINAL49_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 7d257edda0a2d29ba063987a51c61980558dbab6
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC04_POWERS_LOG_NEW26_PUBLIC_CANONICAL_R01_20261112.md
@@ -312,7 +312,7 @@ PED1 18 WHY motivations (repeated multiplication/inverse exponent, graphs, rate 
 
 ## AUTHORING_A1_A7
 
-A1 exact canonical Topic source Git blob 383ef263b930604a30bad57b7d95d83d13896b20, Q18 author receipt 95621352172556be7776c6f525083cd9a76993d0, one original 49 index & one new 26 extension with SHA; one V2 handoff. A2 owner original SGK/SBT PDF SHA and printed-to-PDF visual receipt exact c63ca380fe0416b4ed4214f5192197c7e95d20a6; no fresh scan claim, SBT page delta fixed. A3 historical independent G11 ChVI Academic/PED PASS for reviewer R01 source + narrowly equivalent decimal Delta_B only, 18 new Topic modules +26 new items+SVG are author-Q18 SELF_VERIFIED with **113/113** direct checks, not NotebookLM Topic PASS. A4 18/18 outcome, 75 PUBLIC IDs, 12 Written, 18 public selfcheck refs, >=3 IDs/outcome. A5 D1–D6/PED1–PED6 full Topic, 5 real diagrams and 2 design specs only. A6 new academic material Delta C self-audited, P0/P1/P2=0 in author scope, 49 old item stems/keys/rubrics unchanged. A7 0 private RD1 imported, no official independent Topic Readiness, no Mastery, pre-Final Submit safety contract for RELEASE.
+A1 exact canonical Topic source Git blob 383ef263b930604a30bad57b7d95d83d13896b20, Q18 author receipt 267e420b18fd5b0f8cce616cabc9a6325765ce6b, one original 49 index & one new 26 extension with SHA; one V2 handoff. A2 owner original SGK/SBT PDF SHA and printed-to-PDF visual receipt exact c63ca380fe0416b4ed4214f5192197c7e95d20a6; no fresh scan claim, SBT page delta fixed. A3 historical independent G11 ChVI Academic/PED PASS for reviewer R01 source + narrowly equivalent decimal Delta_B only, 18 new Topic modules +26 new items+SVG are author-Q18 SELF_VERIFIED with **113/113** direct checks, not NotebookLM Topic PASS. A4 18/18 outcome, 75 PUBLIC IDs, 12 Written, 18 public selfcheck refs, >=3 IDs/outcome. A5 D1–D6/PED1–PED6 full Topic, 5 real diagrams and 2 design specs only. A6 new academic material Delta C self-audited, P0/P1/P2=0 in author scope, 49 old item stems/keys/rubrics unchanged. A7 0 private RD1 imported, no official independent Topic Readiness, no Mastery, pre-Final Submit safety contract for RELEASE.
 
 ## PRIVATE_RD1_CUSTODY_METADATA
 
