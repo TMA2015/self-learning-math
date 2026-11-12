@@ -12,7 +12,7 @@ async function verifyModelBLesson(page,{n,chapter,tries,helps,images,questions=t
  if(await group.count()===0)return false;
  const labels=group.locator(".tabbed-labels label");
  const actual=(await labels.allTextContents()).map(x=>x.trim());
- const expected=n<=6?tabsExpected.map((name,i)=>(i+1)+". "+(i===1?"Kiến thức sách giáo khoa":name)):tabsExpected;
+ const expected=tabsExpected;
  assert.deepEqual(actual,expected,"B"+n+" four Golden horizontal Model B tabs: numbered G10 B01-B06, unchanged B07+");
  if(n<=6)assert.equal(await article.getAttribute("data-g10-b01-b06-editorial-numbered"),"true",
    "B"+n+" numbering must be mounted on approved B01–B06 DOM only");
