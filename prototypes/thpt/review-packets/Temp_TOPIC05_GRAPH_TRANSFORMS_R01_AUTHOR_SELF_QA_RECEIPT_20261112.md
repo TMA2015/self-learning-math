@@ -43,3 +43,47 @@ ASSESSMENT_Q16: 0 private RD1 imported, không lấy 30 private owner-held của
 AUTHOR_SIGNOFF: Q18 AUTHOR_SELF_VERIFIED v3.0.1 trên exact CĐ05 source blob 9323df37ff8333f6c8c20fefbd68111051eee773, bank và ba SVG ở trên; P0=0/P1=0/P2=0 trong phạm vi tác giả. Nội dung CĐ05 là DELTA_C_ACADEMIC_MATERIAL được self-QA, không sửa Academic/PED PASS bất biến của #782. RELEASE vẫn cần AP/R/P và quyền chủ dự án; không merge/deploy.
 
 ## Q01–Q18 — một chuẩn thống nhất, áp dụng độc lập cho CĐ05
+| Qxx | Verified author evidence on CĐ05 | AUTHOR VERDICT |
+|---|---|---|
+| Q01 | SGK/SBT G10 T2 B15/B16 owner original PDF visual receipts, page printed/PDF index SHA ground; general transformations labeled Topic authored | AUTHOR_SELF_VERIFIED |
+| Q02 | 17 outcomes on real input-output, graph reading and transformations; >=2 unique canonical items per outcome | AUTHOR_SELF_VERIFIED |
+| Q03 | 17 concept-first valid-domain theoretical modules, boundary exceptions and restrictions | AUTHOR_SELF_VERIFIED |
+| Q04 | 17 worked examples with reasoned method selection before Tự thử | AUTHOR_SELF_VERIFIED |
+| Q05 | 38 public IDs authored, 34 Practice with basic/understand/apply and 4 Written synthesis, multiple distinct problem families | AUTHOR_SELF_VERIFIED |
+| Q06 | 4 Written one rubric /7 each, self-check not auto-scored, no second Anchor library | AUTHOR_SELF_VERIFIED |
+| Q07 | 3 source-locked original SVG diagrams on translation/reflection/piecewise endpoints with title/desc | AUTHOR_SELF_VERIFIED |
+| Q08 | 17 D6 causes, source concept and return to different practice item | AUTHOR_SELF_VERIFIED |
+| Q09 | 17 motivations WHY mathematical/data/real-world before formula | AUTHOR_SELF_VERIFIED |
+| Q10 | 17 prerequisite bridges for domain, square root, inequalities, coordinate graph | AUTHOR_SELF_VERIFIED |
+| Q11 | meaning of one-output, range, transform through point mapping before algebra shortcuts | AUTHOR_SELF_VERIFIED |
+| Q12 | 3 SVG explain reading coordinates, shift directions, open/closed endpoints and jump | AUTHOR_SELF_VERIFIED |
+| Q13 | 17 examples explain how/why method works and limits such as restricted D and noninvertible c/k zero | AUTHOR_SELF_VERIFIED |
+| Q14 | 17 first tries before voluntary comparison and D6 remediation | AUTHOR_SELF_VERIFIED |
+| Q15 | 38 canonical unique items in one bank with unique IDs, no duplicate key/answer/rubric, 17 reuse placements | AUTHOR_SELF_VERIFIED |
+| Q16 | 0 imported confidential RD1 and no Mastery from exposed public selfcheck; Final Submit runtime safety separate | AUTHOR_SELF_VERIFIED |
+| Q17 | 3 complete Topic pages independent of SGK and other planned CĐ04/06/08/09/10 | AUTHOR_SELF_VERIFIED |
+| Q18 | Git blobs exact source/bank/3 SVG; historic pilot independent PASS stays original snapshot, author self-QA 110 checks | AUTHOR_SELF_VERIFIED |
+
+## OUTCOME–problem-family–item evidence
+
+| Outcome | Method and conditions | Public canonical new item IDs |
+|---|---|---|
+| `TOP05-O01` | Function one-to-one input vs output uniqueness | `THPT-TOP05-P01`, `THPT-TOP05-P02` |
+| `TOP05-O02` | Radical/fraction domain intersection | `THPT-TOP05-P03`, `THPT-TOP05-P04` |
+| `TOP05-O03` | Range on finite/restricted domains | `THPT-TOP05-P05`, `THPT-TOP05-P06`, `THPT-TOP05-W01` |
+| `TOP05-O04` | Points and vertical-line test | `THPT-TOP05-P07`, `THPT-TOP05-P08` |
+| `TOP05-O05` | Monotonic intervals without derivatives | `THPT-TOP05-P09`, `THPT-TOP05-P10` |
+| `TOP05-O06` | Quadratic vertex constrained to interval | `THPT-TOP05-P11`, `THPT-TOP05-P12` |
+| `TOP05-O07` | Even/odd function symmetries | `THPT-TOP05-P13`, `THPT-TOP05-P14` |
+| `TOP05-O08` | Period T and proof limits | `THPT-TOP05-P15`, `THPT-TOP05-P16` |
+| `TOP05-O09` | Vertical graph translation | `THPT-TOP05-P17`, `THPT-TOP05-P18` |
+| `TOP05-O10` | Horizontal graph translation and domain shift | `THPT-TOP05-P19`, `THPT-TOP05-P20` |
+| `TOP05-O11` | Reflection Ox vs Oy | `THPT-TOP05-P21`, `THPT-TOP05-P22` |
+| `TOP05-O12` | Vertical stretch/compress and sign | `THPT-TOP05-P23`, `THPT-TOP05-P24` |
+| `TOP05-O13` | Horizontal f(kx) and reciprocal scale | `THPT-TOP05-P25`, `THPT-TOP05-P26` |
+| `TOP05-O14` | Output vs input absolute value | `THPT-TOP05-P27`, `THPT-TOP05-P28` |
+| `TOP05-O15` | Multi-step transform point mapping | `THPT-TOP05-P29`, `THPT-TOP05-P30`, `THPT-TOP05-W02` |
+| `TOP05-O16` | Piecewise endpoint/jump | `THPT-TOP05-P31`, `THPT-TOP05-P32`, `THPT-TOP05-W03` |
+| `TOP05-O17` | Feasible integer model decisions | `THPT-TOP05-P33`, `THPT-TOP05-P34`, `THPT-TOP05-W04` |
+
+**Boundary:** Toàn bộ R18 PR #782 giữ riêng, không sửa hoặc đồng nhất CĐ05 mới với 48-outcome/116-placed-ID nguồn lịch sử; không có đề private RD1 bị công khai.
