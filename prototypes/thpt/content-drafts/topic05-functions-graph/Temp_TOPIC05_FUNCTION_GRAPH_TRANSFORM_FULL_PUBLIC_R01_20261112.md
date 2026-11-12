@@ -300,6 +300,7 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 SGK_SOURCE_ROLE: S1_REFERENCE_ONLY
 SGK_G10_T2_B15: printed4–10/PDF onebased5–11; original SGK PDF SHA256 ee8a00392e1c9fc5b213e574666cf1f8487548737e138573f28a988c640fafe6
 SGK_G10_T2_B16: printed11–18/PDF onebased12–19; same PDF source
+SGK_G11_T1_B03_PARITY_PERIODIC_SOURCE: printed22–30/PDF onebased23–31; SGK KNTT 11 tập 1 original PDF SHA256 4492122eb2c9df626582d37b5c3d0e6513d66ca68d80d8a1e69577aa8b706828; chỉ dùng chứng cứ định nghĩa hàm chẵn/lẻ và tính tuần hoàn, không lấy kỹ thuật lượng giác thuộc CĐ06. Historical owner visual receipt 07/11/2026: original PDF anchored, no scan newly performed this turn.
 SBT_G10_T2_B15: printed3–9/PDF onebased4–10; original SBT PDF SHA256 3cb33690e0627b9e8ac467c23625b7feb7d05a8422293db0e1b26e44ca6a78c7
 SBT_G10_T2_B16: printed10–15/PDF onebased11–16; same SBT source
 S1_PAGINATION_VERIFICATION: ORIGINAL_OWNER_VISUAL_RECEIPTS_20261107_NO_NEW_SCAN_THIS_TURN
