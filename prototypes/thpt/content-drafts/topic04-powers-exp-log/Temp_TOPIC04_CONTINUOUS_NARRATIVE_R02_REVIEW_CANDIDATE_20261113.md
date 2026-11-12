@@ -23,20 +23,18 @@ Số mũ giúp diễn tả gọn việc nhân nhiều lần, nhưng các công t
 
 ### Số mũ nguyên, số 0 và số mũ âm
 
-<!-- LESSON_ID=TOP04-M01; OUTCOME_ID=TOP04-O01 -->
+<!-- LESSON_ID: TOP04-M01 · OUTCOME_ID: TOP04-O01 · connected prose R02 -->
 
-Các số rất lớn hoặc rất nhỏ cần biểu diễn gọn; số mũ âm không có nghĩa là kết quả âm. Để hiểu, ta dựa vào nhân các số cùng cơ số, phân số và phép chia cho 0. Với a≠0, a^0=1 và a^(−n)=1/a^n (n nguyên dương); a^n với n nguyên dương là tích n thừa số. Vì nghịch đảo không thể có mẫu 0, 0^(−n) vô nghĩa. Kí hiệu khoa học có phần hệ số 1≤|c|<10.
+Ta biết \(2^3=2\cdot2\cdot2=8\): số mũ dương đếm số lần nhân cùng một cơ số. Nhưng khi giảm số mũ đi một đơn vị, kết quả phải **chia cho cơ số**, không phải đổi dấu. Vì thế với \(a\ne0\), quy tắc tiếp nối tự nhiên là \(a^0=1\) và \(a^{-n}=1/a^n\) khi \(n\) là số nguyên dương. Điều kiện \(a\ne0\) rất quan trọng: \(0^{-1}\) sẽ là \(1/0\), không xác định.
 
-Xét trường hợp sau. (2/3)^(−2)=(3/2)²=9/4, là số dương. 0,0000075=7,5·10^(−6); không được lẫn 75·10^(−7) có cùng giá trị nhưng không là kí hiệu chuẩn.
+Lấy \((2/3)^{-2}\). Số mũ âm yêu cầu lấy nghịch đảo rồi bình phương: \((3/2)^2=9/4\), vẫn là một số **dương**. Tương tự, số rất nhỏ \(0{,}0000075\) có thể viết thành \(7{,}5\cdot10^{-6}\); dấu trừ thuộc **số mũ**, không phải dấu của số. Trong ký hiệu khoa học chuẩn, phần hệ số phải có trị tuyệt đối từ 1 đến dưới 10.
 
-**Em tự thử:** Tính 5^(−2)·25 và nói 0^(−1) có nghĩa không.
+**Em tự thử:** Tính \(5^{-2}\cdot25\). Biểu thức \(0^{-1}\) có nghĩa không? Vì sao?
 
 <details class="slm-topic-first-try" markdown="1">
-<summary>Em đã thử? Mở lời giải và đường khắc phục</summary>
+<summary>Em đã tự làm? Mở phần đối chiếu</summary>
 
-5^(−2)=1/25, nhân 25 được 1; 0^(−1) không có nghĩa do mẫu 0.
-
-Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và lý do chọn phương pháp. Nếu cho dấu âm trước kết quả, tách −a^n khỏi a^(−n) và viết lại dạng nghịch đảo.
+\(5^{-2}\cdot25=\frac1{25}\cdot25=1\). \(0^{-1}\) không xác định vì dẫn tới phép chia cho 0. Nếu em nhầm dấu âm của số mũ thành dấu âm của giá trị, hãy so \(-2^2=-4\) với \(2^{-2}=1/4\).
 
 </details>
 
