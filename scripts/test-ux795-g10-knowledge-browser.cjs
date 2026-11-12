@@ -41,7 +41,10 @@ function sameIDs(actual,expected,where){
      assert.equal(await page.locator(".md-content .tabbed-set").count(),1,location+" exactly four native Level-1 tabs, no nested tab");
      const choices=tabs.locator(".tabbed-labels > label");
      const found=(await choices.allInnerTexts()).map(x=>x.replace(/\s+/g," ").trim());
-     assert.deepEqual(found,labels,location+" owner-approved tab vocabulary and order");
+     // Owner PR #823 numbered only the six already-published SGK tabs.
+     // Keep B07-B27 candidate wording unchanged while enforcing both layouts.
+     const expectedLabels=n<=6?labels.map((name,i)=>(i+1)+". "+name):labels;
+     assert.deepEqual(found,expectedLabels,location+" owner-approved tab vocabulary and order");
      const groups=tabs.locator(".tabbed-content > .tabbed-block");
      assert.equal(await groups.count(),4,location+" four content groups");
      const observedTry=await page.locator("[data-thpt-first-try-id]").evaluateAll(nodes=>nodes.map(n=>n.getAttribute("data-thpt-first-try-id")));
