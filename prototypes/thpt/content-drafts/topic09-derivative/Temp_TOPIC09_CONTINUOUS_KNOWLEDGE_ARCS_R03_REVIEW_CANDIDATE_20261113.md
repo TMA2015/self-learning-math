@@ -11,6 +11,8 @@
 - **SGK G11 ChIX source canonical PUBLIC 71 ID**, đã có historical independent Academic+PED PASS đúng snapshot blob `3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0` và composite source receipt `4280a1741ccde038bbd5ae22af5def0d8683c7e8`. Bảo toàn original snapshot và 31 private RD1 gốc chỉ owner giữ. Các item SGK chỉ INDEX/placement, không clone stem/key/rubric.
 - **Phạm vi mở rộng có đánh dấu:** `TOP09-O32` giải thích vi phân tuyến tính `dy=f'(a)dx` và độ tăng bậc nhất; KHÔNG tự gọi đây là SGK B31/B32/B33 Core. Tiệm cận/tối ưu/khảo sát thuộc CĐ10; các giới hạn nền thuộc CĐ08, có nhắc lại tại chỗ khi cần. Các công thức lượng giác dùng x đo radian, mẫu/log/căn kiểm miền.
 
+# Kiến thức
+
 ## Vì sao phải học đạo hàm?
 
 Thấy một vật đi được 8 mét trong hai giây chưa cho biết nó đi nhanh thế nào tại đúng giây thứ nhất. Tương tự, một đồ thị có thể nghiêng tại một điểm với độ dốc khác độ biến thiên trên cả đoạn; nhiệt độ có thể đang tăng dù giá trị hiện tại không lớn. Đạo hàm hình thành từ **giới hạn tốc độ biến đổi trung bình** khi khoảng đo co về 0. Bản chất này giải thích lựa chọn công thức, điểm không khả vi, tiếp tuyến, vận tốc và vi phân, thay vì chỉ luyện quy tắc máy móc.
