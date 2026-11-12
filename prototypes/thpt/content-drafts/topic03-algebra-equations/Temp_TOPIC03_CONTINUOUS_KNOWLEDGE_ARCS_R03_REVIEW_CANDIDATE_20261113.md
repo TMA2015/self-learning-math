@@ -4,6 +4,8 @@
 
 **Đơn vị học độc lập CĐ03/22**. Bố cục *duy nhất*: **Kiến thức / Luyện tập / Tự kiểm tra**. Không tạo Topic Core riêng; không chuyển kiến thức bắt buộc sang nhánh SGK. SGK/SBT KNTT là nguồn **xác định Core và tham chiếu kiểm chứng**, không phải thứ tự bài/chương của học liệu.
 
+# Kiến thức
+
 ## Bài toán xuất phát: kết quả giải phương trình có thật sự đúng?
 
 Khi quy về phương trình dễ giải hơn, ta có thể tạo ra **nghiệm ứng viên** không đúng phương trình xuất phát. Việc giải tốt không chỉ là tìm một x làm phương trình sau cùng đúng, mà là giữ được **miền xác định**, biết phép biến đổi nào hai chiều, kiểm dấu khi bình phương, giải thích loại nghiệm và thử nghiệm trong ngữ cảnh. Đường đi: mệnh đề/tập nghiệm → phép biến đổi tương đương → phương trình nền → mẫu và trị tuyệt đối → phương trình chứa căn → đổi ẩn/ứng dụng.
