@@ -4,6 +4,8 @@
 
 **Đây là chuyên đề độc lập thứ 02/22**, không phải một bản chép lại Chương II hoặc VI SGK. Học liệu có ba trang ngoài đúng chuẩn **Kiến thức / Luyện tập / Tự kiểm tra** và không có trang Core riêng. Mỗi outcome tự có giải thích, tiền đề, ví dụ, Tự thử, tự mở đối chiếu và đường D6; không buộc học sinh học theo nhánh SGK.
 
+# Kiến thức
+
 ## Câu hỏi xuất phát: Một phương án có hợp lệ không?
 
 Điều kiện “ít nhất”, “không quá” và “phải dương” tạo ra bất đẳng thức. Với một biến, nghiệm là tập số; với tam thức bậc hai, các mốc nghiệm chia trục số thành vùng dấu; với hai biến, mỗi điều kiện tạo nửa mặt phẳng, còn các điều kiện chung tạo miền khả thi. CĐ02 giúp học sinh **hiểu điều kiện → mô hình miền nghiệm → kiểm tính khả thi → tìm phương án tối ưu**, không chỉ học công thức.
