@@ -279,24 +279,24 @@ The single normative source is `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_ST
 
 | Qxx | Evidence on CĐ04 source/receipt | Author verdict | exact SHA bound | RELEASE separation |
 |---|---|---|---|---|
-| Q01 | Owner source original KNTT G11 T2 SGK/SBT page+PDF-index visual receipt with exact original SHA256; no fresh private PDF access claimed | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_AP_R_P_PENDING |
-| Q02 | 18 integrated Topic learning outcomes and family/conditions per outcome; 75 public IDs, >=3 distinct per outcome | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_AP_R_P_PENDING |
-| Q03 | 18 complete D1 concept-first explanations, a>0/a≠1, b>0, conditional power/log/monotonicity statements | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_AP_R_P_PENDING |
-| Q04 | 18 D2 reasoned examples choosing definitions, log laws, base-change, domain gating, substitution condition and integer modeling | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_AP_R_P_PENDING |
-| Q05 | 75 PUBLIC canonical IDs: 49 old reviewed-scope +26 new (22 practice +4 Written), multi-family depth, all 18 outcomes | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_AP_R_P_PENDING |
-| Q06 | 12 Written one canonical library; 8 original rubric 4/4, 4 new rubric 7/7, 4 original Anchor labels only | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_AP_R_P_PENDING |
-| Q07 | 5 exact accessible SVG Git blobs (4 immutable original and one new log-domain interval), explanation how to read | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_AP_R_P_PENDING |
-| Q08 | 18 D6 learner error→math principle→new item/return module routes | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_AP_R_P_PENDING |
-| Q09 | 18 motivations WHY about repeated multiplication, inverse exponent, graph comparison and real applications | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_AP_R_P_PENDING |
-| Q10 | 18 local prerequisite bridges with exact domain/meaning (no mandatory SGK detour) | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_AP_R_P_PENDING |
-| Q11 | meaning and logic of powers, roots and logs established before memorized formal equations | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_AP_R_P_PENDING |
-| Q12 | 5 figures have title/desc and explicit reading guide; x∈[3,5) new SVG checked by algebra | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_AP_R_P_PENDING |
-| Q13 | 18 examples justify chosen method and limitations; strict positivity of all log inputs | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_AP_R_P_PENDING |
-| Q14 | 18 self-try before voluntary reveal and remediation, public only | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_AP_R_P_PENDING |
-| Q15 | 75 unique item_id primary Topic outcome rows map one canonical source per item, no clone, Anchor only tag | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_AP_R_P_PENDING |
-| Q16 | 0 PRIVATE RD1 imported, public selfcheck 18 reused after Practice no Mastery and Final Submit gating assigned to RELEASE | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_AP_R_P_PENDING |
-| Q17 | three independent Topic pages (Knowledge, Practice, Public Self Check) no separate Core and no SGK chapter navigation | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_AP_R_P_PENDING |
-| Q18 | SHA-locked content/index/new bank/5 SVG, owner S1 receipt and historic Reviewer scope, 20 canonical +65 numerical +28 pedagogical =113 direct checks | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_AP_R_P_PENDING |
+| Q01 | Owner source original KNTT G11 T2 SGK/SBT page+PDF-index visual receipt with exact original SHA256; no fresh private PDF access claimed | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_SEPARATE_NO_DEPLOY |
+| Q02 | 18 integrated Topic learning outcomes and family/conditions per outcome; 75 public IDs, >=3 distinct per outcome | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_SEPARATE_NO_DEPLOY |
+| Q03 | 18 complete D1 concept-first explanations, a>0/a≠1, b>0, conditional power/log/monotonicity statements | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_SEPARATE_NO_DEPLOY |
+| Q04 | 18 D2 reasoned examples choosing definitions, log laws, base-change, domain gating, substitution condition and integer modeling | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_SEPARATE_NO_DEPLOY |
+| Q05 | 75 PUBLIC canonical IDs: 49 old reviewed-scope +26 new (22 practice +4 Written), multi-family depth, all 18 outcomes | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_SEPARATE_NO_DEPLOY |
+| Q06 | 12 Written one canonical library; 8 original rubric 4/4, 4 new rubric 7/7, 4 original Anchor labels only | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_SEPARATE_NO_DEPLOY |
+| Q07 | 5 exact accessible SVG Git blobs (4 immutable original and one new log-domain interval), explanation how to read | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_SEPARATE_NO_DEPLOY |
+| Q08 | 18 D6 learner error→math principle→new item/return module routes | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_SEPARATE_NO_DEPLOY |
+| Q09 | 18 motivations WHY about repeated multiplication, inverse exponent, graph comparison and real applications | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_SEPARATE_NO_DEPLOY |
+| Q10 | 18 local prerequisite bridges with exact domain/meaning (no mandatory SGK detour) | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_SEPARATE_NO_DEPLOY |
+| Q11 | meaning and logic of powers, roots and logs established before memorized formal equations | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_SEPARATE_NO_DEPLOY |
+| Q12 | 5 figures have title/desc and explicit reading guide; x∈[3,5) new SVG checked by algebra | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_SEPARATE_NO_DEPLOY |
+| Q13 | 18 examples justify chosen method and limitations; strict positivity of all log inputs | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_SEPARATE_NO_DEPLOY |
+| Q14 | 18 self-try before voluntary reveal and remediation, public only | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_SEPARATE_NO_DEPLOY |
+| Q15 | 75 unique item_id primary Topic outcome rows map one canonical source per item, no clone, Anchor only tag | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_SEPARATE_NO_DEPLOY |
+| Q16 | 0 PRIVATE RD1 imported, public selfcheck 18 reused after Practice no Mastery and Final Submit gating assigned to RELEASE | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_SEPARATE_NO_DEPLOY |
+| Q17 | three independent Topic pages (Knowledge, Practice, Public Self Check) no separate Core and no SGK chapter navigation | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_SEPARATE_NO_DEPLOY |
+| Q18 | SHA-locked content/index/new bank/5 SVG, owner S1 receipt and historic Reviewer scope, 20 canonical +65 numerical +28 pedagogical =113 direct checks | AUTHOR_SELF_VERIFIED | SOURCE_383ef263b9_RECEIPT_9562135217 | RELEASE_SEPARATE_NO_DEPLOY |
 
 ## S1_SGK_SBT_SOURCE
 
