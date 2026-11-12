@@ -22,20 +22,18 @@ Dãy số mô tả điều gì xảy ra từ bước này sang bước khác. Tr
 
 ### Khái niệm dãy và miền chỉ số
 
-<!-- LESSON_ID=TOP07-M01; OUTCOME_ID=TOP07-O01 -->
+<!-- LESSON_ID: TOP07-M01 · OUTCOME_ID: TOP07-O01 · connected prose R02 -->
 
-Có thể gọi một danh sách số bất kỳ là dãy vô hạn, hay phải biết chỉ số nào được phép? Để hiểu, ta dựa vào số nguyên dương, kí hiệu tập hợp, thứ tự. Dãy số là hàm số có miền chỉ số là một tập số nguyên liên tiếp được xác định (thường N* hoặc {1,…,N}); u_n là số hạng thứ n, không phải biến thực liên tục. Dãy hữu hạn có số phần tử xác định, vô hạn kéo dài theo chỉ số. Công thức không cho phép tự thêm chỉ số ngoài miền đã nêu.
+Một danh sách như 1, 4, 9, 16 có thể được tạo ra từ quy luật \(u_n=n^2\), nhưng để gọi đó là một dãy **đã được xác định**, ta cần biết chỉ số \(n\) được phép nhận những giá trị nào. Có thể đây là dãy hữu hạn với \(n=1,2,3,4\), hoặc một dãy vô hạn với \(n\in\mathbb N^*\). Cùng công thức, hai miền chỉ số khác nhau cho hai dãy khác nhau. Vì thế dãy số là một hàm đặc biệt có đầu vào là những chỉ số nguyên được chỉ định.
 
-Xét trường hợp sau. Dãy hữu hạn u_n=n², n=1,…,4 có 1,4,9,16. Việc biểu thức n² có nghĩa với n=5 không làm u_5 thành số hạng của dãy hữu hạn đã cho; luôn kiểm tập chỉ số trước khi thế.
+Nếu đề cho \(u_n=n^2\) với \(n=1,\dots,4\), ta chỉ có bốn số hạng 1, 4, 9, 16. Biểu thức \(n^2\) vẫn tính được khi \(n=5\), nhưng \(u_5\) **không phải số hạng của dãy hữu hạn đã cho**. Kiểm miền chỉ số trước khi thay số giúp tránh tự kéo dài một quy luật ngoài phạm vi bài toán.
 
-**Em tự thử:** Với u_n=3n, n∈{1,2,3}, có u_0 thuộc dãy không?
+**Em tự thử:** Dãy \(u_n=3n\) được cho với \(n\in\{1,2,3\}\). Dãy có các số hạng nào? Có \(u_0\) không?
 
 <details class="slm-topic-first-try" markdown="1">
-<summary>Em đã thử? Mở lời giải và đường khắc phục</summary>
+<summary>Em đã tự làm? Mở phần đối chiếu</summary>
 
-Không; dãy chỉ có 3,6,9. Biểu thức cho n=0 là phép thế ngoài miền đã định.
-
-Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và lý do chọn phương pháp. Nếu đọc dãy như hàm thực, trở về tập chỉ số n và đếm phần tử trước khi tính.
+Dãy gồm 3, 6, 9 và **không có \(u_0\)** vì 0 không thuộc miền chỉ số. Nếu em tính \(u_0=0\), hãy phân biệt giá trị của biểu thức đại số tại 0 với số hạng thực sự thuộc dãy.
 
 </details>
 
