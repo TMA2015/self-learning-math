@@ -19,20 +19,18 @@ Từ một bảng dữ liệu hay công thức, ta hỏi mỗi đầu vào cho b
 
 ### Hàm số và đầu ra duy nhất
 
-<!-- LESSON_ID=TOP05-M01; OUTCOME_ID=TOP05-O01 -->
+<!-- LESSON_ID: TOP05-M01 · OUTCOME_ID: TOP05-O01 · connected prose R02 -->
 
-Tại sao một bảng có cùng x nhiều lần vẫn có thể là hàm số? Để hiểu, ta dựa vào tập đầu vào D; cặp có thứ tự (x,y). Hàm f:D→ℝ phải gán **mỗi x∈D đúng một y=f(x)**. Các x khác nhau được phép cùng một y; nhầm tính đơn trị với tính một-một khiến bác bỏ sai bảng số liệu. Đồ thị của hàm không có hai tung độ với cùng một hoành độ.
+Hãy hình dung một bảng ghi nhiệt độ ở từng thời điểm. Để bảng thực sự mô tả một quy luật kiểu hàm số, **mỗi đầu vào** phải có **đúng một đầu ra**. Hai thời điểm khác nhau có thể cùng nhiệt độ; điều không được phép là cùng một thời điểm lại có hai nhiệt độ khác nhau trong cùng một quy luật đang xét. Đó là ý nghĩa của hàm \(f:D\to\mathbb R\): mỗi \(x\in D\) nhận đúng một giá trị \(f(x)\).
 
-Xét trường hợp sau. Bảng (0,2),(1,4),(1,4) hợp lệ vì hai lần x=1 đều cho4. Thay một cặp (1,4) bằng (1,7) sẽ không hợp lệ. Kiểm duy nhất đầu ra, không kiểm duy nhất đầu vào.
+Xét bảng các cặp \((0,2),(1,4),(1,4)\). Dù \(x=1\) được ghi hai lần, cả hai lần đều cho 4, nên bảng vẫn phù hợp với một hàm số. Nếu thay một cặp thành \((1,7)\) thì cùng đầu vào 1 sẽ có hai đầu ra khác nhau: bảng không còn định nghĩa một hàm. Trên đồ thị, ta có thể hình dung điều kiện ấy bằng việc mỗi đường thẳng đứng cắt đồ thị tại **không quá một điểm**.
 
-**Em tự thử:** Các cặp (1,3),(2,3),(3,5) là hàm số?
+**Em tự thử:** Các cặp \((1,3),(2,3),(3,5)\) có thể là dữ liệu của một hàm số không? Điều gì quyết định?
 
 <details class="slm-topic-first-try" markdown="1">
-<summary>Em đã thử? Mở lời giải và đường khắc phục</summary>
+<summary>Em đã tự làm? Mở phần đối chiếu</summary>
 
-Có, vì mỗi x chỉ có một y; y=3 có thể ứng với hai x.
-
-Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và lý do chọn phương pháp. Nếu nhầm tính đơn trị với một-một, vẽ mũi tên từ 1 và 2 tới cùng 3; luyện P01/P02.
+Có. Ba đầu vào 1, 2, 3 khác nhau và mỗi đầu vào chỉ có một đầu ra. Việc hai đầu vào cùng cho giá trị 3 không vi phạm định nghĩa. Nếu em nhầm với yêu cầu “mỗi y chỉ đến từ một x”, hãy nhớ đó là tính một-một, không phải điều kiện cơ bản của hàm số.
 
 </details>
 
