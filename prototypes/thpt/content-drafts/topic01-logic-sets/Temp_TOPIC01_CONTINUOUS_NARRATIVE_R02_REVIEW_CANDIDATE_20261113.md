@@ -73,39 +73,35 @@ Chiều thuận đúng vì \(n=8k=4(2k)\). Chiều đảo sai: \(n=4\) chia hế
 
 ### “Khi và chỉ khi” buộc chứng minh cả hai chiều
 
-<!-- LESSON_ID: TOP01-M04 · OUTCOME_ID: TOP01-O04 · canonical details remain in old source-index and new-bank -->
+<!-- LESSON_ID: TOP01-M04 · OUTCOME_ID: TOP01-O04 · editorial R02 -->
 
-Một đặc điểm đôi khi nhận ra được từ kết quả và cũng suy ra được kết quả ấy. Đó là quan hệ tương đương, mạnh hơn kéo theo một chiều. Trước hết, hãy nhớ đã phân biệt P⇒Q với Q⇒P. P⇔Q đúng khi P⇒Q và Q⇒P đều đúng. Khi làm bài chứng minh, có thể chứng minh lần lượt hai chiều hoặc chỉ ra các phép biến đổi tương đương hợp lệ. Một chiều đúng và chiều kia sai thì không có tương đương.
+Ta vừa thấy một mệnh đề kéo theo đúng chưa chắc có chiều đảo đúng. Vậy khi nào hai phát biểu thực sự tương đương? Khi **cả** \(P\Rightarrow Q\) và \(Q\Rightarrow P\) đều đúng, ta viết \(P\Leftrightarrow Q\), đọc là “\(P\) khi và chỉ khi \(Q\)”. Vì thế chứng minh tương đương đòi hỏi hai chiều, hoặc một chuỗi biến đổi mà từng bước đều có thể làm ngược hợp lệ.
 
-Hãy kiểm chứng bằng một tình huống. Với n∈ℤ, “n chẵn ⇔ n² chẵn” đúng: n=2k ⇒ n²=4k² chẵn. Ngược lại, nếu n lẻ thì n=2k+1, n²=4k(k+1)+1 lẻ; vì thế n² chẵn buộc n chẵn. Hai chiều có lý do độc lập.
+Chẳng hạn, với \(n\in\mathbb Z\), “\(n\) chẵn khi và chỉ khi \(n^2\) chẵn” là đúng. Chiều thuận: nếu \(n=2k\) thì \(n^2=4k^2\) chẵn. Chiều ngược: nếu \(n\) lẻ thì \(n=2k+1\), suy ra \(n^2=4k(k+1)+1\) lẻ; do đó \(n^2\) chẵn buộc \(n\) chẵn. Cả hai chiều đều có lập luận, không dựa vào vài phép thử.
 
-**Đến lượt em:** “n chia hết cho 4 ⇔ n² chia hết cho 4” đúng với mọi số nguyên n không?
+**Em tự thử:** Có đúng rằng “\(n\) chia hết cho 4 khi và chỉ khi \(n^2\) chia hết cho 4” với mọi số nguyên \(n\) không?
 
 <details class="slm-topic-first-try" markdown="1">
-<summary>Đã tự thử? Mở lời giải và cách khắc phục</summary>
+<summary>Em đã tự làm? Mở phần đối chiếu</summary>
 
-Sai: n=2 cho n²=4 chia hết cho 4 nhưng n=2 không chia hết cho 4. Chỉ chiều thuận chắc chắn đúng.
-
-Nếu em vẫn còn phân vân, hãy quay lại điều kiện vừa dùng. Nếu chỉ chứng minh n=4k ⇒ n² chia hết cho 4, hãy tìm số n làm chiều đảo sai; luyện THPT-TOP01-ADD02.
+Sai. Chiều thuận đúng, nhưng \(n=2\) cho \(n^2=4\) chia hết cho 4 trong khi \(n\) không chia hết cho 4. Nếu em mới chứng minh một chiều, hãy tìm một phản ví dụ cho chiều còn lại trước khi kết luận tương đương.
 
 </details>
 
 ### “Mọi” và “tồn tại” khác nhau ở lượng bằng chứng
 
-<!-- LESSON_ID: TOP01-M05 · OUTCOME_ID: TOP01-O05 · canonical details remain in old source-index and new-bank -->
+<!-- LESSON_ID: TOP01-M05 · OUTCOME_ID: TOP01-O05 · editorial R02 -->
 
-Một đánh giá “mọi học sinh đều ...” chỉ cần một trường hợp không đạt để bị bác bỏ; “có học sinh ...” chỉ cần một chứng cứ đúng. Nhầm hai lượng từ dễ dẫn đến kết luận sai. Các công cụ đã biết ở đây là mệnh đề chứa biến, miền xét và phủ định. ∀x∈D, P(x) đòi P đúng cho mọi x thuộc D; ∃x∈D, P(x) chỉ cần một giá trị thỏa. Phủ định của ∀ là ∃ kèm ¬P; phủ định của ∃ là ∀ kèm ¬P. Không được bỏ miền D; một phát biểu trên ℤ có thể khác trên ℝ.
+Trong lớp học, câu “Mọi học sinh đều biết bơi” chỉ đúng khi **tất cả** học sinh được xét đều biết bơi. Để bác bỏ, chỉ cần tìm **một** học sinh không biết bơi; còn câu “Có học sinh biết bơi” chỉ cần một trường hợp thỏa. Hai từ “mọi” và “có” vì vậy quy định lượng bằng chứng cần có.
 
-Một ví dụ làm rõ bước suy luận: “∃n∈ℤ: n²=2” là sai vì không có số nguyên nào bình phương bằng 2. Phủ định đúng là “∀n∈ℤ: n²≠2”. Nếu đổi miền thành ℝ, phát biểu tồn tại lại đúng (n=√2). Vì thế miền xét là phần của nội dung mệnh đề.
+Trong ký hiệu toán, \(\forall x\in D,\ P(x)\) yêu cầu \(P\) đúng với từng phần tử của miền \(D\); \(\exists x\in D,\ P(x)\) chỉ cần có một phần tử thỏa. Phủ định của “với mọi” là “tồn tại một trường hợp không”, và ngược lại. Miền xét phải giữ nguyên: “có số nguyên \(n\) sao cho \(n^2=2\)” sai, nhưng thay số nguyên bằng số thực thì câu đúng nhờ \(n=\sqrt2\). Điều kiện về miền không phải chú thích có thể bỏ qua.
 
-**Đến lượt em:** “∀x∈ℝ, x²+1>0” đúng hay sai? Viết phủ định.
+**Em tự thử:** Câu “Với mọi số thực \(x\), \(x^2+1>0\)” đúng hay sai? Viết phủ định của câu ấy.
 
 <details class="slm-topic-first-try" markdown="1">
-<summary>Đã tự thử? Mở lời giải và cách khắc phục</summary>
+<summary>Em đã tự làm? Mở phần đối chiếu</summary>
 
-Đúng vì x²+1≥1>0. Phủ định là “∃x∈ℝ, x²+1≤0”, sai.
-
-Nếu em vẫn còn phân vân, hãy quay lại điều kiện vừa dùng. Nếu phủ định ∀ thành ∀¬, thử một phản ví dụ và so sánh điều kiện để bác bỏ câu “mọi”; luyện THPT-G10-B01-P01/P02.
+Đúng vì \(x^2\ge0\) cho mọi số thực, nên \(x^2+1\ge1>0\). Phủ định là “Tồn tại số thực \(x\) sao cho \(x^2+1\le0\)”, và phát biểu đó sai. Nếu em phủ định “mọi” thành “mọi ... không”, hãy thử nhớ lại chỉ một phản ví dụ đã đủ bác bỏ câu “mọi”.
 
 </details>
 
@@ -115,77 +111,69 @@ Khi đã biết một đối tượng phải thỏa điều kiện nào, ta có 
 
 ### Tập hợp: phần tử không phải tập con
 
-<!-- LESSON_ID: TOP01-M06 · OUTCOME_ID: TOP01-O06 · canonical details remain in old source-index and new-bank -->
+<!-- LESSON_ID: TOP01-M06 · OUTCOME_ID: TOP01-O06 · editorial R02 -->
 
-Khi phân loại đồ vật hay học sinh, cần phân biệt một cá thể nằm trong nhóm và một nhóm nhỏ nằm trong nhóm lớn. Để hiểu, ta dựa vào đọc ký hiệu ∈, ∉, ⊆; biểu diễn liệt kê và tính chất. x∈A nói x là một phần tử của A; A⊆B nói mọi phần tử của A đều thuộc B. Hai tập bằng nhau khi và chỉ khi chứa đúng cùng các phần tử, tương đương A⊆B và B⊆A. Tập rỗng ∅ không có phần tử và là tập con mọi tập. Cần phân biệt 2 với {2}.
+Khi nói một học sinh **thuộc** câu lạc bộ, ta đang xét một cá thể có ở trong nhóm hay không. Khi nói câu lạc bộ Toán là **một nhóm con** của câu lạc bộ học thuật, ta so hai tập hợp với nhau. Toán học phân biệt hai quan hệ ấy bằng ký hiệu \(x\in A\) cho phần tử thuộc tập \(A\), và \(A\subseteq B\) khi **mọi phần tử** của \(A\) đều thuộc \(B\).
 
-Xét một trường hợp cụ thể. Cho A={1,2} và B={x∈ℕ | 1≤x≤2}. Khi ℕ gồm các số tự nhiên, B={1,2}=A. Ta có 2∈A và {2}⊆A, nhưng “2⊆A” không phù hợp loại đối tượng khi 2 là một số, không phải tập. {2} không bằng 2.
+Xét \(A=\{1,2\}\) và \(B=\{x\in\mathbb N:1\le x\le2\}\). Hai cách mô tả cho đúng cùng các phần tử nên \(A=B\); để chứng minh hai tập bằng nhau, ta có thể chứng minh mỗi tập là tập con của tập kia. Trong \(A\), số 2 là một **phần tử**, ký hiệu \(2\in A\), còn \(\{2\}\) là một **tập con**, ký hiệu \(\{2\}\subseteq A\). Số 2 không đồng nhất với tập chỉ chứa số 2. Tập rỗng \(\varnothing\) không có phần tử nhưng vẫn là tập con của mọi tập.
 
-**Đến lượt em:** A={2,4}. Xét 2∈A, {2}⊆A và {2}∈A: phát biểu nào đúng?
+**Em tự thử:** Với \(A=\{2,4\}\), hãy phân biệt đúng sai cho ba phát biểu: \(2\in A\), \(\{2\}\subseteq A\), \(\{2\}\in A\).
 
 <details class="slm-topic-first-try" markdown="1">
-<summary>Đã tự thử? Mở lời giải và cách khắc phục</summary>
+<summary>Em đã tự làm? Mở phần đối chiếu</summary>
 
-Hai phát biểu đầu đúng; {2}∈A sai vì các phần tử của A là 2,4 chứ không phải tập {2}.
-
-Nếu em vẫn còn phân vân, hãy quay lại điều kiện vừa dùng. Nếu lẫn ∈ và ⊆, khoanh đối tượng phía trái là số hay tập rồi kiểm từng phần tử; luyện THPT-G10-B02-C01/P06.
+Hai phát biểu đầu đúng, phát biểu cuối sai: các phần tử của \(A\) là **số** 2 và 4, không phải **tập** \(\{2\}\). Nếu em còn lẫn, xác định đối tượng bên trái ký hiệu là một phần tử hay một tập hợp trước khi so.
 
 </details>
 
 ### Giao là “cùng có”; hợp là “có ít nhất một”
 
-<!-- LESSON_ID: TOP01-M07 · OUTCOME_ID: TOP01-O07 · canonical details remain in old source-index and new-bank -->
+<!-- LESSON_ID: TOP01-M07 · OUTCOME_ID: TOP01-O07 · editorial R02 -->
 
-Một học sinh có thể tham gia cả hai nhóm. Chọn “hoặc” trong toán học không có nghĩa bắt buộc chỉ được tham gia một. Điểm xuất phát là phần tử và tập hợp; đọc sơ đồ Venn cơ bản. A∩B gồm các phần tử thuộc cả A và B; A∪B gồm phần tử thuộc ít nhất một trong hai. Chữ “hoặc” trong hợp là hoặc bao hàm. Mỗi phần tử tập hợp chỉ xuất hiện một lần trong kết quả, dù có mặt ở cả hai tập.
+Giả sử một học sinh có thể tham gia cả câu lạc bộ Toán và câu lạc bộ Anh. Khi hỏi ai tham gia **cả hai**, ta đang lấy **giao** hai tập hợp; khi hỏi ai tham gia **ít nhất một** trong hai, ta đang lấy **hợp**. Chữ “hoặc” trong hợp được hiểu theo nghĩa bao hàm: học sinh tham gia cả hai vẫn được tính, nhưng chỉ tính **một lần**.
 
-Thử áp dụng vào ví dụ sau. A={1,2,3,4}; B={3,4,5}. Phần chung là 3,4 nên A∩B={3,4}. Ghép mọi phần tử không lặp lại được A∪B={1,2,3,4,5}. Nếu gọi 'hoặc' là chỉ một trong hai thì sẽ bỏ nhầm 3,4 khỏi hợp.
+Với \(A=\{1,2,3,4\}\) và \(B=\{3,4,5\}\), các phần tử chung là 3,4 nên \(A\cap B=\{3,4\}\). Gom mọi phần tử xuất hiện trong ít nhất một tập và xóa lặp, ta được \(A\cup B=\{1,2,3,4,5\}\). Không có lý do bỏ 3 và 4 khỏi hợp chỉ vì chúng cùng ở hai tập. Trên biểu đồ Ven, vùng chung nằm trong cả hình của giao lẫn hợp.
 
-**Đến lượt em:** A={−1,0,1,2}, B={0,2,4}. Hãy tìm hợp và giao.
+**Em tự thử:** Cho \(A=\{-1,0,1,2\}\) và \(B=\{0,2,4\}\). Tìm \(A\cap B\) và \(A\cup B\).
 
 <details class="slm-topic-first-try" markdown="1">
-<summary>Đã tự thử? Mở lời giải và cách khắc phục</summary>
+<summary>Em đã tự làm? Mở phần đối chiếu</summary>
 
-A∩B={0,2}; A∪B={−1,0,1,2,4}.
-
-Nếu em vẫn còn phân vân, hãy quay lại điều kiện vừa dùng. Đặt mỗi phần tử vào miền Venn và tự hỏi phần tử ở cả hai nhóm có được tính trong hợp không; luyện THPT-G10-B02-C02/ADD03.
+\(A\cap B=\{0,2\}\), còn \(A\cup B=\{-1,0,1,2,4\}\). Nếu em muốn đếm vùng Ven, hãy đưa 0 và 2 vào phần chung nhưng khi tính tổng mỗi phần tử chỉ xuất hiện một lần.
 
 </details>
 
 ### Hiệu tập hợp phụ thuộc chiều lấy
 
-<!-- LESSON_ID: TOP01-M08 · OUTCOME_ID: TOP01-O08 · canonical details remain in old source-index and new-bank -->
+<!-- LESSON_ID: TOP01-M08 · OUTCOME_ID: TOP01-O08 · editorial R02 -->
 
-“Có trong A nhưng không có trong B” khác với “có trong B nhưng không có trong A”. Khác biệt ấy quyết định kết quả trong các bài lọc dữ liệu. Ta bắt đầu từ hiểu phần giao và hợp. A\B={x∈A | x∉B}; B\A={x∈B | x∉A}. Hiệu thường không giao hoán. Có thể xem A\B là phần riêng của vòng A sau khi bỏ phần giao.
+Một danh sách có thể lọc những người thuộc nhóm A nhưng **không** thuộc nhóm B. Đó là phép **hiệu** \(A\setminus B\). Nếu đổi lại thành “thuộc B nhưng không thuộc A”, kết quả là \(B\setminus A\), thường khác hẳn. Cách viết định nghĩa là \(A\setminus B=\{x\in A:x\notin B\}\): ta **giữ** tập đứng trước dấu trừ và loại những phần tử cũng có trong tập đứng sau.
 
-Từ đó, ta giải thích được ví dụ này. A={1,2,3,4}; B={3,4,5}. A\B={1,2}; B\A={5}. Nếu viết A\B={5} ta đã đổi nhầm thứ tự. Phần giao {3,4} không thuộc một trong hai hiệu.
+Với \(A=\{1,2,3,4\}\), \(B=\{3,4,5\}\), giữ A rồi bỏ phần chung 3,4 cho \(A\setminus B=\{1,2\}\); đổi chiều lại cho \(B\setminus A=\{5\}\). Như vậy hiệu không có tính giao hoán. Trên biểu đồ Ven, \(A\setminus B\) chính là miền chỉ thuộc A, còn miền giao không thuộc hiệu của hai tập theo bất cứ chiều nào.
 
-**Đến lượt em:** A={1,3,5}, B={3,4,5}. Tính A\B và B\A.
+**Em tự thử:** \(A=\{1,3,5\}\), \(B=\{3,4,5\}\). Hãy tính hai hiệu theo hai chiều.
 
 <details class="slm-topic-first-try" markdown="1">
-<summary>Đã tự thử? Mở lời giải và cách khắc phục</summary>
+<summary>Em đã tự làm? Mở phần đối chiếu</summary>
 
-A\B={1}, B\A={4}.
-
-Nếu em vẫn còn phân vân, hãy quay lại điều kiện vừa dùng. Đọc tên tập đứng trước dấu \ như tập đang được giữ; luyện THPT-G10-B02-P01/ADD04.
+\(A\setminus B=\{1\}\), còn \(B\setminus A=\{4\}\). Nếu em đổi nhầm kết quả, hãy đọc lại tên tập **đứng trước dấu \(\setminus\)** và xác định phần tử được giữ.
 
 </details>
 
 ### Phần bù chỉ có nghĩa khi đã chọn vũ trụ
 
-<!-- LESSON_ID: TOP01-M09 · OUTCOME_ID: TOP01-O09 · canonical details remain in old source-index and new-bank -->
+<!-- LESSON_ID: TOP01-M09 · OUTCOME_ID: TOP01-O09 · editorial R02 -->
 
-Đếm “người không tham gia CLB A” chỉ có ý nghĩa nếu biết đang xét toàn trường hay chỉ một lớp. Trước hết, hãy nhớ khái niệm tập con U; hiệu tập hợp. Nếu A⊆U thì phần bù của A trong U là U\A. Thay U có thể đổi kết quả phần bù ngay cả khi A không thay. Khi U là ℝ, phần bù của một khoảng phải xét kỹ đầu mút.
+Câu hỏi “Ai **không** tham gia câu lạc bộ Toán?” chưa đủ rõ nếu ta chưa biết đang hỏi trong **một lớp** hay **toàn trường**. Toán học gọi tập tất cả đối tượng đang xét là **tập vũ trụ** \(U\). Nếu \(A\subseteq U\), phần bù của \(A\) trong \(U\) là \(U\setminus A\). Vì thế thay \(U\) có thể thay kết quả phần bù, dù \(A\) giữ nguyên.
 
-Hãy kiểm chứng bằng một tình huống. U={1,2,3,4,5,6}, A={2,4,6}. U\A={1,3,5}. Nếu U là {0,1,2,3,4,5,6} thì phần bù có thêm 0. Đây là lý do phải ghi U trước khi tính.
+Chẳng hạn, \(U=\{1,2,3,4,5,6\}\) và \(A=\{2,4,6\}\), phần bù là \(\{1,3,5\}\). Nếu mở rộng \(U\) để thêm 0, phần bù cũng có thêm 0. Với các khoảng số thực, xác định vũ trụ cũng giúp ta quyết định đúng đầu mút nào nằm ở phần bù.
 
-**Đến lượt em:** U={1,2,3,4,5,6,7,8}, A={2,3,5,7}. Tìm U\A.
+**Em tự thử:** Trong \(U=\{1,2,3,4,5,6,7,8\}\), lấy \(A=\{2,3,5,7\}\). Tìm phần bù của A.
 
 <details class="slm-topic-first-try" markdown="1">
-<summary>Đã tự thử? Mở lời giải và cách khắc phục</summary>
+<summary>Em đã tự làm? Mở phần đối chiếu</summary>
 
-U\A={1,4,6,8}.
-
-Nếu em vẫn còn phân vân, hãy quay lại điều kiện vừa dùng. Nếu viết phần bù không kèm U, hãy dừng và bổ sung tập vũ trụ; luyện THPT-G10-B02-P02/ADD05.
+\(U\setminus A=\{1,4,6,8\}\). Nếu em chỉ viết “phần bù của A” mà không nêu U, hãy tự hỏi đang loại A khỏi **tập nào**.
 
 </details>
 
@@ -195,42 +183,37 @@ Trục số cho thấy một giá trị ở trong hay ngoài khoảng, còn bi�
 
 ### Khoảng và đoạn là cách viết điều kiện của số thực
 
-<!-- LESSON_ID: TOP01-M10 · OUTCOME_ID: TOP01-O10 · canonical details remain in old source-index and new-bank -->
+<!-- LESSON_ID: TOP01-M10 · OUTCOME_ID: TOP01-O10 · editorial R02 -->
 
-“Từ 1 đến 3” thiếu thông tin có tính cả 1 và 3 hay không. Trong nghiệm bất phương trình, sai một đầu mút sẽ làm sai tập nghiệm. Các công cụ đã biết ở đây là trục số, bất đẳng thức chặt/không chặt. (a,b) nghĩa a<x<b; [a,b] là a≤x≤b; (a,b] là a<x≤b. Với ±∞ luôn dùng ngoặc tròn. Giao của hai khoảng giữ phần thỏa cả hai điều kiện; hợp giữ phần thỏa ít nhất một.
+Một điều kiện như “giữa 1 và 3” cần nói rõ **có lấy** 1 hoặc 3 không. Trên trục số, điều này được thể hiện bằng ngoặc: \((a,b)\) nghĩa \(a<x<b\), còn \([a,b]\) nghĩa \(a\le x\le b\). Khoảng \((a,b]\) bỏ a nhưng nhận b. Với vô cực, luôn dùng ngoặc tròn vì \(\pm\infty\) không phải một số thực có thể lấy làm đầu mút.
 
-Một ví dụ làm rõ bước suy luận: X=(−∞,3], Y=(1,+∞). Để thuộc giao, x≤3 đồng thời x>1, vậy X∩Y=(1,3]. Để thuộc hợp, mọi x≤3 đã ở X và mọi x>3 ở Y, nên X∪Y=ℝ. Tại x=1: thuộc X nhưng không thuộc Y; tại x=3: thuộc cả hai.
+Xét \(X=(-\infty,3]\) và \(Y=(1,+\infty)\). Muốn thuộc **giao**, số phải vừa lớn hơn 1 vừa không vượt 3, nên \(X\cap Y=(1,3]\). Muốn thuộc **hợp**, số chỉ cần thỏa ít nhất một điều kiện: mọi số thực đều nằm ở X hoặc Y, vậy \(X\cup Y=\mathbb R\). Thử riêng \(x=1\) và \(x=3\) giúp ta kiểm dấu ngoặc ở biên.
 
-**Đến lượt em:** X=[−2,2), Y=(0,4]. Tìm giao và hợp.
+**Em tự thử:** Cho \(X=[-2,2)\), \(Y=(0,4]\). Tìm hợp và giao, giải thích việc lấy hay bỏ hai đầu 0,2.
 
 <details class="slm-topic-first-try" markdown="1">
-<summary>Đã tự thử? Mở lời giải và cách khắc phục</summary>
+<summary>Em đã tự làm? Mở phần đối chiếu</summary>
 
-X∩Y=(0,2), X∪Y=[−2,4].
-
-Nếu em vẫn còn phân vân, hãy quay lại điều kiện vừa dùng. Nếu nhầm dấu ngoặc, thử từng đầu mút 0,2,4 bằng điều kiện bất đẳng thức; luyện THPT-G10-B02-P03/P04.
+\(X\cap Y=(0,2)\), còn \(X\cup Y=[-2,4]\). Trong giao, 0 bị Y loại và 2 bị X loại; trong hợp, hai điểm ấy vẫn được nhận bởi ít nhất một tập.
 
 </details>
 
 ### Bốn miền Venn để không đếm trùng
 
-<!-- LESSON_ID: TOP01-M11 · OUTCOME_ID: TOP01-O11 · canonical details remain in old source-index and new-bank -->
+<!-- LESSON_ID: TOP01-M11 · OUTCOME_ID: TOP01-O11 · editorial R02 -->
 
-Khi một người tham gia hai câu lạc bộ, phép cộng số lượng hai nhóm đã đếm người ấy hai lần. Mô hình bốn miền giúp giữ nguyên tổng cộng. Để hiểu, ta dựa vào giao, hợp, hiệu và tập vũ trụ hữu hạn. Với tập hữu hạn, |A∪B|=|A|+|B|−|A∩B|. Venn hai nhóm có đúng bốn vùng: chỉ A, cả hai, chỉ B, ngoài cả hai. Điền số vùng giao trước; sau đó lấy số mỗi nhóm trừ giao; cuối cùng lấy tổng vũ trụ trừ hợp.
+Một học sinh tham gia hai câu lạc bộ sẽ được tính **hai lần** nếu ta chỉ cộng số học sinh của từng câu lạc bộ. Vì vậy với hai tập hữu hạn, ta phải trừ một lần phần đã đếm trùng: \(|A\cup B|=|A|+|B|-|A\cap B|\). Hình Ven hai nhóm chia vũ trụ thành bốn vùng: chỉ A, cả hai, chỉ B và ngoài cả hai. Ta điền vùng giao trước rồi mới tính các vùng riêng.
 
-Xét một trường hợp cụ thể. Lớp có 40 bạn; 23 học Anh (A), 25 học Toán (B), 12 học cả hai. Chỉ Anh=23−12=11; chỉ Toán=25−12=13; giao=12; hợp=11+12+13=36; ngoài=40−36=4. Kiểm tổng 11+12+13+4=40. Hình Venn minh họa đúng bốn vùng, không thay phép tính.
+Giả sử lớp có 40 bạn: 23 bạn học Anh, 25 bạn học Toán, 12 bạn học cả hai. Vùng chỉ Anh có \(23-12=11\) bạn, chỉ Toán có \(25-12=13\), vùng cả hai 12. Vậy số bạn học ít nhất một môn là \(11+12+13=36\); còn \(40-36=4\) bạn không học môn nào trong hai. Kiểm lại \(11+12+13+4=40\) cho thấy không có vùng nào bị tính thiếu hoặc trùng.
 
-**Đến lượt em:** Trong 60 học sinh: 32 chơi bóng đá, 28 chơi bóng rổ, 10 chơi cả hai. Tính chỉ bóng đá, chỉ bóng rổ, ít nhất một, không chơi môn nào.
+**Em tự thử:** Trong 60 học sinh, 32 bạn chơi bóng đá, 28 bạn chơi bóng rổ, 10 bạn chơi cả hai. Tìm số chỉ chơi từng môn, chơi ít nhất một môn và không chơi môn nào.
 
 <details class="slm-topic-first-try" markdown="1">
-<summary>Đã tự thử? Mở lời giải và cách khắc phục</summary>
+<summary>Em đã tự làm? Mở phần đối chiếu</summary>
 
-Chỉ bóng đá=22; chỉ bóng rổ=18; hợp=50; ngoài=10. Tổng 22+10+18+10=60.
-
-Nếu em vẫn còn phân vân, hãy quay lại điều kiện vừa dùng. Nếu tính hợp bằng 32+28=60, chỉ ra 10 bạn bị đếm hai lần và trừ giao; luyện THPT-G10-B02-P05, W02 hoặc ADD06.
+Chỉ bóng đá: \(32-10=22\); chỉ bóng rổ: \(28-10=18\); cả hai: 10; ít nhất một: \(22+10+18=50\); không chơi: \(60-50=10\). Kiểm tổng bốn vùng: \(22+10+18+10=60\). Nếu em cộng \(32+28\) mà quên trừ 10, hãy tô riêng vùng giao để thấy nó đã bị đếm hai lần.
 
 </details>
-
 
 ## Đọc hình — hai hình toán học gốc đã kiểm chứng
 
