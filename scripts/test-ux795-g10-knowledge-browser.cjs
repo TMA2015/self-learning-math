@@ -49,7 +49,8 @@ function sameIDs(actual,expected,where){
      // H3, not fabricated headings or another nested tab. Check all viewports.
      const knowledge=groups.nth(1);
      const originalKnowledge=source.split(/^=== "([^"]+)"$/gm)[4]||"";
-     const actualH3=(originalKnowledge.match(/^    ### /gm)||[]).length;
+     const originalSectionTitles=[...originalKnowledge.matchAll(/^ {4,}### (.+)$/gm)].map(m=>m[1].trim());
+     const actualH3=originalSectionTitles.length;
      const outline=knowledge.locator("details.thpt-g10-knowledge-sections");
      await outline.waitFor({state:"attached",timeout:15000});
      assert.equal(await outline.getAttribute("data-g10-knowledge-sections"),String(actualH3),
@@ -60,6 +61,8 @@ function sameIDs(actual,expected,where){
      assert(await outline.evaluate(el=>el.open),location+" learner can expand subsection list");
      const partLinks=outline.locator("ol li a");
      assert.equal(await partLinks.count(),actualH3,location+" every actual subsection must have one link");
+     assert.deepEqual((await partLinks.allInnerTexts()).map(x=>x.trim()),originalSectionTitles,
+      location+" section outline must use exactly the original Knowledge heading titles in order");
      assert(await partLinks.evaluateAll(nodes=>nodes.every(a=>{
       const id=a.getAttribute("href").slice(1);
       return !!document.getElementById(decodeURIComponent(id));
