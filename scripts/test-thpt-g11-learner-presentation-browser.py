@@ -25,7 +25,7 @@ def assert_model_b_knowledge(page, lesson, numbered=5):
     panels=tabs.locator(".tabbed-content > .tabbed-block")
     assert panels.count()==4,f"B{lesson}: missing or nested Model B panel"
     hs=tabs.locator("h3").all_inner_texts()
-    section_heads=[x for x in hs if re.match(r"^1\\.\\d+\\.",x)]
+    section_heads=[x for x in hs if re.match(r"^1\.\d+\.",x)]
     assert len(section_heads)==numbered,(lesson,section_heads)
     for i in range(1,numbered+1):
         assert any(x.startswith(f"1.{i}.") for x in section_heads),f"B{lesson}: lost section 1.{i}"
