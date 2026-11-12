@@ -34,15 +34,25 @@ const {chromium}=require("playwright");
      const fig=page.locator(".thpt-r4-probability-figure img");
      assert.equal(await fig.count(),1,"Missing D5 teaching SVG B"+lesson);
      await selectTab("Kiến thức SGK");
-     assert(await fig.isVisible(),"B"+lesson+" reviewed D5 figure should be accessible in Knowledge panel");
-     await fig.scrollIntoViewIfNeeded();
+     // Lazy SVG can have zero intrinsic dimensions until scrolled to.
+     // Its educational FIGURE/figcaption must be reachable first.
+     const figure=fig.locator("xpath=..");
+     assert(await figure.isVisible(),"B"+lesson+" reviewed D5 figure should be accessible in Knowledge panel");
+     await figure.scrollIntoViewIfNeeded();
      await fig.evaluate(el=>el.decode());
      const check=await fig.evaluate(el=>({loaded:el.complete&&el.naturalWidth>0,imgWidth:el.getBoundingClientRect().width,boxWidth:el.parentElement.getBoundingClientRect().width}));
      assert(check.loaded,"Broken D5 SVG image link B"+lesson+" at "+width);
      assert(check.imgWidth<=check.boxWidth+1,"SVG overflows container B"+lesson+" at "+width);
      await selectTab("Lỗi thường gặp");
-     await page.locator('[data-thpt-help-id="D6-G10-B'+lesson+'-01"]').locator("summary").click();
-     assert(await page.locator('[data-thpt-help-id="D6-G10-B'+lesson+'-01"]').getAttribute("open")!==null,"D6 card cannot expand");
+     // Canonical D6 marker is a hidden SPAN immediately preceding the
+     // public MkDocs details.tip; it is not itself a details element.
+     const d6Marker=page.locator('[data-thpt-help-id="D6-G10-B'+lesson+'-01"]');
+     assert.equal(await d6Marker.count(),1,"B"+lesson+" canonical D6 marker missing");
+     const d6=d6Marker.locator('xpath=following::details[contains(concat(" ",normalize-space(@class)," ")," tip ")][1]');
+     assert.equal(await d6.count(),1,"B"+lesson+" D6 details must follow source-locked marker");
+     assert(!(await d6.evaluate(el=>el.open)),"B"+lesson+" no D6 solution pre-open");
+     await d6.locator("summary").click();
+     assert(await d6.evaluate(el=>el.open),"B"+lesson+" D6 card cannot expand");
     }
     const firstId="THPT-G10-B27-C01";
     await page.locator('[data-thpt-formative-id="'+firstId+'"]').first().click();
