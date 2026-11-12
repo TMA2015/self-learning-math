@@ -321,9 +321,9 @@ role: TOPIC_PRACTICE
 difficulty_band: APPLY
 problem_family_id: TOP10-_OC_BANG_BIEN_THIEN_E_SUY_TINH_CHAT
 content_version: 2
-**Đề:** f' âm trước0 dương sau0, f(0)=4: loại cực trị?
+**Đề:** Cho f liên tục trên một khoảng chứa 0, khả vi ở các điểm khác 0 gần 0, f'(x)<0 với x<0 và f'(x)>0 với x>0, f(0)=4. Xác định cực trị tại x=0.
 **Đáp án:** Cực tiểu địa phương tại (0,4).
-**Lời giải có suy luận và điều kiện:** Theo giả thiết f' âm khi x<0 và dương khi x>0; nếu f liên tục tại 0 và đạt f(0)=4, hàm giảm tới 0 rồi tăng, nên (0,4) là điểm cực tiểu địa phương. Không đủ dữ kiện khẳng định đây là GTNN của toàn miền nếu còn nhánh khác.
+**Lời giải có suy luận và điều kiện:** Theo giả thiết f' âm khi x<0 và dương khi x>0; vì f liên tục tại 0 và f(0)=4, hàm giảm tới 0 rồi tăng, nên (0,4) là điểm cực tiểu địa phương. Không đủ dữ kiện khẳng định đây là GTNN của toàn miền nếu còn nhánh khác.
 **D6 khắc phục:** Bảng dấu âm→dương nghĩa là đồ thị đi xuống rồi đi lên. Kiểm giả thiết liên tục ở điểm chuyển dấu.
 
 ## THPT-TOP10-P25 · TOP10-O25
