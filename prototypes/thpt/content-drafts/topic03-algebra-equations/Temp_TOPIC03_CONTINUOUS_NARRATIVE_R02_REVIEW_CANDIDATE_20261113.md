@@ -21,20 +21,18 @@ Mỗi bước giải đều có ý nghĩa về tập nghiệm: liệu nó giữ 
 
 ### Phương trình, tập nghiệm và phép tương đương
 
-<!-- LESSON_ID: TOP03-M01 · OUTCOME_ID: TOP03-O01 · canonical details remain in old source-index and new-bank -->
+<!-- LESSON_ID: TOP03-M01 · OUTCOME_ID: TOP03-O01 · connected prose R02 -->
 
-Tìm một số x chưa đủ: mỗi bước giải phải giữ nguyên những giá trị thực sự làm phương trình đúng. Để hiểu, ta dựa vào mệnh đề bằng nhau, tập hợp nghiệm, phép cộng/trừ/chia cho số khác 0. Phương trình P(x)=Q(x) hỏi những x trong **miền xác định chung** làm P=Q. Phép cộng cùng biểu thức đã xác định vào hai vế, hay nhân/chia **số khác 0**, giữ tập nghiệm; bình phương hai vế chỉ có một chiều suy ra nếu không kiểm soát dấu. Phép ‘chia hai vế cho (x−a)’ có nguy cơ loại nghiệm x=a. Kết quả cuối phải thay được vào phương trình đầu.
+Giải phương trình không chỉ là tìm một con số trông có vẻ đúng. Ta cần tìm **tất cả** giá trị trong miền xác định chung làm hai vế bằng nhau, đồng thời không để phép biến đổi nào làm mất hoặc sinh thêm nghiệm. Nếu hai phương trình có đúng cùng tập nghiệm, ta gọi chúng **tương đương** và viết dấu \(\Leftrightarrow\).
 
-Xét một trường hợp cụ thể. x+5=12 ⇔ x=7 do trừ 5 hai vế. Thử 7+5=12. Còn x=3 ⇒ x²=9 nhưng ngược lại sai vì x=−3 cũng thỏa x²=9; đó là lí do không dùng kí hiệu ⇔ tùy tiện.
+Với \(x+5=12\), trừ cùng 5 ở hai vế cho \(x=7\); làm ngược lại bằng cách cộng 5 sẽ khôi phục phương trình ban đầu, nên đây là biến đổi tương đương. Nhưng từ \(x=3\) suy ra \(x^2=9\) chỉ là một chiều: phương trình sau còn có \(x=-3\), vốn không thỏa câu đầu. Cùng lý do đó, khi giải phương trình chứa căn và phải bình phương, ta phải giữ điều kiện và **thử nghiệm trở lại đề gốc**.
 
-**Đến lượt em:** Giải 3x+2=11; mỗi bước có tương đương không?
+**Em tự thử:** Giải \(3x+2=11\). Vì sao hai bước chuyển vế và chia cho 3 không làm đổi tập nghiệm?
 
 <details class="slm-topic-first-try" markdown="1">
-<summary>Đã tự thử? Mở lời giải và cách khắc phục</summary>
+<summary>Em đã tự làm? Mở phần đối chiếu</summary>
 
-3x=9 ⇒ x=3; trừ 2 và chia 3≠0 đều đảo ngược được.
-
-Nếu em vẫn còn phân vân, hãy quay lại điều kiện vừa dùng. Nếu bỏ bước thử hoặc dùng ⇔ cho bình phương, thử một nghiệm âm của phương trình mới để thấy sai; luyện ADD01, ADD02.
+Trừ 2 ở hai vế được \(3x=9\); chia cho \(3\ne0\) được \(x=3\). Cả hai bước đều có phép ngược hợp lệ. Thử lại: \(3\cdot3+2=11\). Nếu em dùng dấu tương đương cho phép bình phương mà không kiểm điều kiện, hãy so trường hợp \(x=3\) và \(x=-3\) ở ví dụ trên.
 
 </details>
 
