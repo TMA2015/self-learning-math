@@ -22,20 +22,18 @@ Một dãy số có thể không bao giờ chạm số đích mà vẫn tiến s
 
 ### Giới hạn hữu hạn của dãy số và ý nghĩa tiến gần
 
-<!-- LESSON_ID=TOP08-M01; OUTCOME_ID=TOP08-O01 -->
+<!-- LESSON_ID: TOP08-M01 · OUTCOME_ID: TOP08-O01 · connected prose R02 -->
 
-Số hạng nào cũng khác 2 nhưng ta vẫn có thể nói dãy tiến đến 2 không? Để hiểu, ta dựa vào chỉ số n∈N*, khoảng cách giữa hai số thực. Ta gọi u_n tiến đến L khi với mọi sai số ε>0, cuối cùng |u_n−L|<ε đối với mọi n đủ lớn. Điều này không nói L bắt buộc là số hạng của dãy. Với u_n=L+c/n (n≥1), khoảng cách |c|/n giảm về 0. Trong học phổ thông, dùng biểu thức khoảng cách và các giới hạn cơ bản để nhận ra xu hướng.
+Ta xét dãy \(u_n=2+1/n\) với \(n\) nguyên dương. Mọi số hạng đều lớn hơn 2, nên không số hạng nào bằng 2. Tuy vậy, khi \(n\) tăng, khoảng cách \(|u_n-2|=1/n\) nhỏ dần và có thể nhỏ hơn **bất kỳ độ sai lệch dương nào** nếu \(n\) đủ lớn. Đó là ý nghĩa của câu “dãy tiến tới giới hạn 2”: không đòi chạm giá trị đích ở một chỉ số hữu hạn.
 
-Xét trường hợp sau. u_n=2+1/n: |u_n−2|=1/n. Với ε>0 bất kỳ, chọn N>1/ε thì n≥N kéo theo khoảng cách dưới ε; vì vậy lim u_n=2, dù u_n>2 với mọi n. Lý do chọn định nghĩa sai số là để phân biệt 'tiến sát' với 'bằng'.
+Nói chính xác, \(u_n\to L\) nếu với mọi \(\varepsilon>0\), từ một chỉ số đủ lớn trở đi luôn có \(|u_n-L|<\varepsilon\). Trong ví dụ, chỉ cần chọn \(N>1/\varepsilon\) và \(n\ge N\), ta được \(1/n<\varepsilon\). Việc chứng minh bằng khoảng cách cho thấy công thức giới hạn không chỉ là phép thế \(n=\infty\), mà là một khẳng định về mọi mức sai số.
 
-**Em tự thử:** u_n=1+3/n tiến đến đâu?
+**Em tự thử:** Với \(v_n=1+3/n\), \(n\ge1\), dãy tiến tới số nào? Giải thích bằng khoảng cách.
 
 <details class="slm-topic-first-try" markdown="1">
-<summary>Em đã thử? Mở lời giải và đường khắc phục</summary>
+<summary>Em đã tự làm? Mở phần đối chiếu</summary>
 
-1, vì u_n−1=3/n→0.
-
-Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và lý do chọn phương pháp. Nếu cho rằng 1 phải xuất hiện trong dãy, hãy giải 1+3/n=1 để thấy không có n hữu hạn.
+Giới hạn bằng 1 vì \(|v_n-1|=3/n\to0\). Nếu em cho rằng giới hạn phải là một số hạng, hãy thử giải \(1+3/n=1\) để thấy không có \(n\) hữu hạn nào thỏa, dù dãy vẫn tiến tới 1.
 
 </details>
 
