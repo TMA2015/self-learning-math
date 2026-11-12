@@ -4,6 +4,8 @@
 
 **LEARNING_PATH: TOPIC** — hành trình chuyên đề độc lập với SGK, đúng **Kiến thức / Luyện tập / Tự kiểm tra**; không tạo Core riêng. Tổ chức theo mục tiêu học tập và phương pháp hình học của đồ thị, không theo bài SGK lớp nào.
 
+# Kiến thức
+
 ## Vì sao cần học đồ thị và phép biến đổi đồ thị?
 
 Một đại lượng phụ thuộc một đại lượng khác thông qua **hàm số có miền đầu vào**. Hình đồ thị giúp thấy xu hướng, đầu mút, thay đổi do đổi đơn vị hoặc dời mốc; muốn hiểu đúng phải giải thích mỗi phép biến đổi bằng tọa độ. Ta học khái niệm trước quy tắc, thử trước khi mở đối chiếu và tìm đường tự sửa ngay tại chuyên đề.
