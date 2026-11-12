@@ -7,7 +7,7 @@ function transformG11(source,n){
  const first=source.search(/^## /m);if(first<0)throw Error("no sections "+n);
  const prefix=source.slice(0,first).trimEnd();
  const slices=source.slice(first).split(/\n(?=## )/).map(s=>s.trim()).filter(Boolean);
- const blocks={disco:[],kn:[],ex:[],mist:[],next:[]}; const observed=[];
+ const blocks={disco:[],kn:[],tries:[],ex:[],mist:[],next:[]}; const observed=[];
  const strip=s=>s.slice(s.indexOf("\n")+1).trim();
  for(const part of slices){
   const title=part.split("\n")[0].replace(/^## /,"").trim();
@@ -46,7 +46,7 @@ function transformG11(source,n){
     blocks.kn.push("### Đọc hình và đối chiếu khái niệm\n\n"+body);continue;
   }
   if(/^(?:\d+\. )?Tự thử/.test(title)){
-    blocks.kn.push("### Vận dụng — tự thử rồi mở đối chiếu\n\n"+body);continue;
+    blocks.tries.push("### Vận dụng — tự thử rồi mở đối chiếu\n\n"+body);continue;
   }
   if(/^(?:\d+\. )?(?:Tự khắc phục|Lỗi thường gặp)/.test(title)){
     blocks.mist.push(body);continue;
@@ -65,7 +65,7 @@ function transformG11(source,n){
  "\n\n### Ví dụ trực quan\n\n"+E[0]+"\n\n**Quan sát bằng số liệu:** "+E[1]+
  "\n\n### Thuật ngữ và kiến thức, kỹ năng\n\n**Thuật ngữ:** "+E[2]+
  ".\n\n**Sau bài học, em cần:** "+E[3]+".";
- const knowledge=cleaned(blocks.kn.join("\n\n"));
+ const knowledge=cleaned(blocks.kn.concat(blocks.tries).join("\n\n"));
  const examples=blocks.ex.join("\n\n");
  const mistakes=blocks.mist.join("\n\n")+"\n\n### Học tiếp\n\n"+blocks.next.join("\n\n");
  const render=(label,text)=>'=== "'+label+'"\n\n'+text.trim().split("\n").map(line=>line?"    "+line:"").join("\n")+"\n";
