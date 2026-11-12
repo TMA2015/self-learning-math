@@ -17,20 +17,18 @@ Một bất phương trình không chỉ hỏi một số bằng bao nhiêu mà 
 
 ### Bất đẳng thức và phép đổi chiều
 
-<!-- LESSON_ID: TOP02-M01 · OUTCOME_ID: TOP02-O01 · canonical details remain in old source-index and new-bank -->
+<!-- LESSON_ID: TOP02-M01 · OUTCOME_ID: TOP02-O01 · connected prose R02 -->
 
-Phân biệt “ít nhất” và “không quá” để không nhận phương án sai. Để hiểu, ta dựa vào dấu ≤/≥ và phép nhân số âm. Cộng một lượng vào cả hai vế giữ chiều; nhân/chia số dương giữ chiều; số âm đảo chiều. Không nhân biểu thức chứa biến chưa biết dấu mà bỏ điều kiện.
+Khi kiểm tra một phương án có hợp lệ hay không, ta thường phải biết một đại lượng **lớn hơn**, **nhỏ hơn** hoặc **ít nhất** một mức nào đó. Khác với phương trình tìm giá trị bằng nhau, bất phương trình chọn ra **tập các giá trị thỏa điều kiện**. Mỗi phép biến đổi vì thế phải giữ đúng tập này. Cộng cùng một số vào hai vế không đổi chiều bất đẳng thức; nhân hoặc chia cho một số dương cũng vậy, nhưng khi nhân hoặc chia cho **số âm**, ta phải đảo chiều. Nếu nhân một biểu thức chứa biến chưa biết dấu, cần xét dấu trước.
 
-Xét một trường hợp cụ thể. −4x+1>9 ⇔ −4x>8 ⇔ x<−2 do chia −4 phải đổi dấu. Thử x=−3 đúng, x=−1 sai.
+Chẳng hạn, từ \(-4x+1>9\) suy ra \(-4x>8\). Chia cho \(-4\) khiến dấu đổi thành \(x<-2\). Ta có thể tự kiểm bằng cách chọn \(x=-3\): vế trái \(13>9\) đúng; còn \(x=-1\) cho \(5>9\) sai. Phép thử không thay thế chứng minh, nhưng giúp phát hiện sai dấu ngay khi tính.
 
-**Đến lượt em:** Giải −3(x−2)≥6.
+**Em tự thử:** Giải \(-3(x-2)\ge6\). Hãy giải thích bước nào buộc đổi chiều dấu bất đẳng thức.
 
 <details class="slm-topic-first-try" markdown="1">
-<summary>Đã tự thử? Mở lời giải và cách khắc phục</summary>
+<summary>Em đã tự làm? Mở phần đối chiếu</summary>
 
-−3x≥0 ⇒ x≤0, có nhận x=0.
-
-Nếu em vẫn còn phân vân, hãy quay lại điều kiện vừa dùng. Nếu giữ nguyên chiều sau chia −3, thử x=1 trong đề gốc để phát hiện sai.
+Khai triển \(-3x+6\ge6\), suy ra \(-3x\ge0\). Chia cho \(-3<0\), ta được \(x\le0\), kể cả \(x=0\) vì dấu ban đầu có bằng. Nếu em viết \(x\ge0\), hãy thử \(x=1\) trong đề gốc để thấy kết luận sai.
 
 </details>
 
