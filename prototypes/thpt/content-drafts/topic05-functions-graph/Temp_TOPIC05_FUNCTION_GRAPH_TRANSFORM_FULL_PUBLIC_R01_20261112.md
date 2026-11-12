@@ -113,3 +113,51 @@ Một đại lượng phụ thuộc một đại lượng khác thông qua **hà
 **D6 đường khắc phục:** Nếu từ bốn điểm suy toàn miền tuần hoàn, hãy tách quan sát và định nghĩa; luyện P15/P16.
 **Câu luyện:** `THPT-TOP05-P15`, `THPT-TOP05-P16`.
 
+## TOP05-M09 · Tịnh tiến đứng: cộng ngoài hàm
+
+**Outcome TOP05-O09:** xác định phép biến đổi, điều kiện và kiểm điểm đối ứng.
+**Vì sao cần học?** Một mức phí cố định cộng vào mọi hóa đơn, không đổi lượng đầu vào.
+**Nhắc tiền đề tại chỗ:** Điểm (x,f(x)) và phép cộng số k.
+**Hình thành bản chất trước công thức:** g(x)=f(x)+k có D_g=D_f, mọi điểm (x,y)→(x,y+k). k>0 dịch lên, k<0 dịch xuống. Số cộng nằm **ngoài** f làm đổi tung độ, không đổi hoành độ.
+**Ví dụ giải có lý do chọn cách:** f(x)=|x−1|, g(x)=f(x)+4 có đỉnh(1,4), g(0)=5. Chọn xem điểm đỉnh và một điểm kiểm.
+**Tự thử trước khi xem đối chiếu:** Từ f=x², g=f−2 có đỉnh đâu?
+**Tự mở đối chiếu:** (0,−2), và điểm (1,1) thành (1,−1).
+**D6 đường khắc phục:** Nếu nói dịch ngang, hãy xem x có bị thay trong f không; luyện P17/P18.
+**Câu luyện:** `THPT-TOP05-P17`, `THPT-TOP05-P18`.
+
+## TOP05-M10 · Tịnh tiến ngang: dấu đối số ngược chiều dịch
+
+**Outcome TOP05-O10:** xác định phép biến đổi, điều kiện và kiểm điểm đối ứng.
+**Vì sao cần học?** Dời thời điểm bắt đầu của hiện tượng có thể dời cả miền hợp lệ.
+**Nhắc tiền đề tại chỗ:** Đặt u=x−h; miền gốc D_f.
+**Hình thành bản chất trước công thức:** g(x)=f(x−h) xác định khi x−h∈D_f, nên D_g=D_f+h; điểm (u,f(u)) thành(u+h,f(u)). h>0 là dịch **phải** h; f(x+h) dịch trái h. Không đoán chiều dịch chỉ theo dấu trừ cộng nếu chưa xét tọa độ.
+**Ví dụ giải có lý do chọn cách:** f(x)=√x có D=[0,+∞); g(x)=√(x−3) có D=[3,+∞) và điểm đầu (3,0): dịch phải3.
+**Tự thử trước khi xem đối chiếu:** g(x)=(x+2)² dịch parabol x² thế nào?
+**Tự mở đối chiếu:** Trái2, đỉnh(−2,0), vì x+2=0 tại−2.
+**D6 đường khắc phục:** Nếu dịch phải vì dấu+, tìm x để đối số bằng0; luyện P19/P20.
+**Câu luyện:** `THPT-TOP05-P19`, `THPT-TOP05-P20`.
+
+## TOP05-M11 · Phản xạ đồ thị qua Ox và Oy
+
+**Outcome TOP05-O11:** xác định phép biến đổi, điều kiện và kiểm điểm đối ứng.
+**Vì sao cần học?** Đổi dấu đầu ra khác hoàn toàn việc đổi hướng đầu vào.
+**Nhắc tiền đề tại chỗ:** Điểm (x,y), đổi dấu x hoặc y.
+**Hình thành bản chất trước công thức:** −f(x) phản xạ Ox: (x,y)→(x,−y), miền giữ. f(−x) phản xạ Oy: (x,y)→(−x,y), miền thành −D_f. Với f chẵn, phản xạ Oy không làm đổi hình; với f lẻ cả hai cho cùng biểu thức.
+**Ví dụ giải có lý do chọn cách:** f=x²+x: −f=−x²−x trong khi f(−x)=x²−x. Tại x=1 được −2 và0, chứng minh hai phép khác nhau.
+**Tự thử trước khi xem đối chiếu:** Với f=x²−2x, f(−x) là gì?
+**Tự mở đối chiếu:** x²+2x, là ảnh qua trục Oy.
+**D6 đường khắc phục:** Nếu đổi dấu toàn biểu thức, đó là phản xạ Ox; luyện P21/P22.
+**Câu luyện:** `THPT-TOP05-P21`, `THPT-TOP05-P22`.
+
+## TOP05-M12 · Co giãn đứng và phản xạ do hệ số âm
+
+**Outcome TOP05-O12:** xác định phép biến đổi, điều kiện và kiểm điểm đối ứng.
+**Vì sao cần học?** Phóng to đơn vị tung độ làm đường cong cao hơn nhưng giữ vị trí đầu vào.
+**Nhắc tiền đề tại chỗ:** Nhân một tung độ y với hệ số c.
+**Hình thành bản chất trước công thức:** g(x)=c f(x): (x,y)→(x,cy). |c|>1 dãn đứng, 0<|c|<1 co đứng, c<0 còn phản xạ Ox. c=0 đưa hình về Ox nhưng không là phép giãn khả nghịch. Nếu c≠0 thì tập nghiệm f(x)=0 giữ nguyên.
+**Ví dụ giải có lý do chọn cách:** f=x², g=−3x²: điểm(1,1) thành(1,−3), đỉnh(0,0) giữ; đồ thị lật Ox và dãn đứng ba lần.
+**Tự thử trước khi xem đối chiếu:** g=(1/2)|x| tại x=4 so với f=|x|?
+**Tự mở đối chiếu:** g(4)=2, f(4)=4, co đứng một nửa.
+**D6 đường khắc phục:** Nếu kết luận co ngang, giữ x=4 và so hai tung độ; luyện P23/P24.
+**Câu luyện:** `THPT-TOP05-P23`, `THPT-TOP05-P24`.
+
