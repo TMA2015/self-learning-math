@@ -22,58 +22,52 @@
 
 ### Khi nào một câu có thể đúng hoặc sai?
 
-<!-- LESSON_ID: TOP01-M01 · OUTCOME_ID: TOP01-O01 · canonical details remain in old source-index and new-bank -->
+<!-- LESSON_ID: TOP01-M01 · OUTCOME_ID: TOP01-O01 · R02 prose authored in connected paragraphs -->
 
-Một câu như “x+2=7” có thể đúng với người này và sai với người khác vì chưa biết x. Muốn lập luận chính xác, trước hết phải biết mình đang khẳng định điều gì. Để hiểu, ta dựa vào biết thay số vào biểu thức; phân biệt câu khẳng định với câu hỏi. Mệnh đề là câu khẳng định có giá trị chân lý xác định: đúng hoặc sai. Mệnh đề chứa biến P(x) chưa nhận giá trị chân lý khi x chưa gán; muốn kiểm chứng cần miền xét, giá trị cụ thể hoặc lượng từ. “8 là số chẵn” là mệnh đề đúng; “n là số chẵn” là phát biểu có biến nếu chưa xác định n.
+Khi nghe một câu nói, không phải lúc nào ta cũng có thể kết luận ngay câu đó đúng hay sai. “13 là số nguyên tố” là một khẳng định đúng vì 13 chỉ có hai ước dương là 1 và 13; “13 là số chẵn” là khẳng định sai. Cả hai đều là **mệnh đề**, bởi mỗi câu có một giá trị đúng hoặc sai xác định. Câu hỏi “13 có phải số nguyên tố không?” thì khác: nó yêu cầu trả lời, chứ chưa khẳng định điều gì.
 
-Xét một trường hợp cụ thể. Xét (a) 13 là số nguyên tố; (b) n+1=4 với n nguyên. (a) đúng vì 13 chỉ có hai ước dương 1 và 13. (b) với n=3 thì đúng, n=4 thì sai; không thể gán một giá trị chân lý cho phát biểu có biến chưa xác định. Đó là lý do cần hỏi rõ biến và miền xét.
+Bây giờ xét câu \(n+1=4\) với \(n\) là số nguyên. Nếu thay \(n=3\), đẳng thức đúng; thay \(n=4\), đẳng thức sai. Ta không thể gán cho phát biểu ban đầu một giá trị đúng–sai độc lập với \(n\). Đây là **mệnh đề chứa biến**. Để kiểm chứng một phát biểu như vậy, phải biết biến thuộc miền nào và đã được gán giá trị hay lượng từ nào chưa. Chính sự phân biệt này giúp việc chứng minh sau này không bị mơ hồ.
 
-**Đến lượt em:** “2k+1 là số lẻ”, k∈ℤ, đã là mệnh đề xác định chưa? Khi viết “Với mọi k∈ℤ, 2k+1 là số lẻ” thì sao?
+**Em tự thử:** “\(2k+1\) là số lẻ”, với \(k\in\mathbb Z\), là mệnh đề hay phát biểu chứa biến? Nếu viết “Với mọi \(k\in\mathbb Z\), \(2k+1\) là số lẻ”, em có thể kết luận gì?
 
 <details class="slm-topic-first-try" markdown="1">
-<summary>Đã tự thử? Mở lời giải và cách khắc phục</summary>
+<summary>Em đã tự làm? Mở phần đối chiếu</summary>
 
-Câu đầu là phát biểu chứa biến; câu thứ hai là mệnh đề đúng vì 2k+1 luôn có dạng số lẻ.
-
-Nếu em vẫn còn phân vân, hãy quay lại điều kiện vừa dùng. Nếu vẫn nhầm, thay k=0 và k=2 rồi phân biệt kết quả thay số với lời khẳng định cho mọi k; luyện THPT-G10-B01-C01.
+Câu đầu còn chứa biến \(k\) chưa được lượng hóa. Câu thứ hai là một mệnh đề đúng: mọi số nguyên \(k\) đều cho biểu thức \(2k+1\) có dạng số lẻ. Nếu em vẫn phân vân, thử \(k=0\) và \(k=2\), rồi phân biệt việc kiểm vài giá trị với một lời khẳng định cho **mọi** số nguyên.
 
 </details>
 
 ### Phủ định là phát biểu chính xác phần ngược lại
 
-<!-- LESSON_ID: TOP01-M02 · OUTCOME_ID: TOP01-O02 · canonical details remain in old source-index and new-bank -->
+<!-- LESSON_ID: TOP01-M02 · OUTCOME_ID: TOP01-O02 · R02 prose authored in connected paragraphs -->
 
-Muốn kiểm tra một thông tin sai, ta cần biết phát biểu nào thực sự bác bỏ nó. “Không đúng rằng ...” phải đổi đúng giá trị chân lý, không chỉ đổi một con số. Điểm xuất phát là hiểu mệnh đề đã có đúng/sai; biết dấu >, ≥, <, ≤. Phủ định ¬P đúng khi P sai, sai khi P đúng. Với x là số thực, phủ định của x≥3 là x<3, không phải x≤3. Nếu phát biểu gồm “và”, phủ định có nghĩa “ít nhất một thành phần không đúng”; nếu gồm “hoặc”, phủ định yêu cầu cả hai đều không đúng.
+Một mệnh đề có thể đúng hoặc sai; **phủ định** là phát biểu đổi giá trị đúng–sai ấy. Nếu \(P\) là “7 là số chẵn” thì \(\neg P\) là “7 không phải số chẵn”. Khi \(P\) sai, phủ định đúng, và ngược lại. Với bất đẳng thức, phải đảo đúng cả dấu bằng: phủ định của \(x\ge3\) là \(x<3\), chứ không phải \(x\le3\), bởi tại \(x=3\) hai câu sau không đối lập đúng–sai.
 
-Thử áp dụng vào ví dụ sau. P: “Mọi số thực x đều có x²≥0”. Muốn phủ định, không thể chỉ viết “mọi x có x²<0”. Phải viết “tồn tại số thực x sao cho x²<0”; phát biểu này sai, vì bình phương số thực không âm. Giá trị sai của phủ định xác nhận P đúng.
+Điều này càng quan trọng khi câu chứa lượng từ. Xét \(P\): “Mọi số thực \(x\) đều thỏa \(x^2\ge0\)”. Để bác bỏ \(P\), ta cần **ít nhất một** số thực làm \(x^2<0\); vì không tồn tại số ấy, phủ định là sai và \(P\) đúng. Như vậy, phủ định của “mọi” không phải “mọi phần tử đều không”, mà là “tồn tại ít nhất một phần tử không”.
 
-**Đến lượt em:** Phủ định của “t≥5” và “t<−1” lần lượt là gì?
+**Em tự thử:** Hãy phủ định hai phát biểu “\(t\ge5\)” và “\(t<-1\)”, với \(t\in\mathbb R\).
 
 <details class="slm-topic-first-try" markdown="1">
-<summary>Đã tự thử? Mở lời giải và cách khắc phục</summary>
+<summary>Em đã tự làm? Mở phần đối chiếu</summary>
 
-t<5 và t≥−1; dấu bằng phải đổi theo ranh giới.
-
-Nếu em vẫn còn phân vân, hãy quay lại điều kiện vừa dùng. Nếu đổi ≥ thành ≤, thử t=5 để thấy P và phát biểu mới cùng đúng, nên đó không phải phủ định; làm THPT-G10-B01-C02 và P05.
+Hai phủ định lần lượt là \(t<5\) và \(t\ge-1\). Nếu em viết \(t\le5\), hãy thử ngay \(t=5\): cả phát biểu gốc và câu mới đều đúng, nên đó không thể là phép phủ định.
 
 </details>
 
 ### Một chiều suy luận khác hai chiều
 
-<!-- LESSON_ID: TOP01-M03 · OUTCOME_ID: TOP01-O03 · canonical details remain in old source-index and new-bank -->
+<!-- LESSON_ID: TOP01-M03 · OUTCOME_ID: TOP01-O03 · R02 prose authored in connected paragraphs -->
 
-Từ “đủ điều kiện để vào câu lạc bộ” không thể suy ngược rằng “ai vào câu lạc bộ cũng đúng duy nhất điều kiện ấy”. Phải tách điều kiện đủ và cần. Ta bắt đầu từ phép chia hết của số nguyên và cách tìm một phản ví dụ. P⇒Q nói rằng mỗi khi P đúng thì Q đúng. P là điều kiện đủ cho Q; Q là điều kiện cần cho P. Mệnh đề đảo Q⇒P là một phát biểu mới, không tự động đúng. Theo bảng chân lý của kéo theo hình thức, chỉ trường hợp P đúng và Q sai mới làm P⇒Q sai; quy ước này không đồng nghĩa với quan hệ nhân quả trong ngôn ngữ đời thường.
+Giả sử một số nguyên chia hết cho 6. Vì số ấy viết được \(n=6k=3(2k)\), nó chắc chắn cũng chia hết cho 3. Ta diễn đạt: “Nếu \(n\) chia hết cho 6 thì \(n\) chia hết cho 3”, ký hiệu \(P\Rightarrow Q\). Khi đó \(P\) là **điều kiện đủ** để có \(Q\), còn \(Q\) là **điều kiện cần** để có \(P\).
 
-Từ đó, ta giải thích được ví dụ này. Với n∈ℤ, P: n chia hết cho 6; Q: n chia hết cho 3. Nếu P đúng thì n=6k=3(2k), do đó Q đúng. Chiều đảo sai bởi n=3 chia hết cho 3 nhưng không chia hết cho 6. Hình tập bội 6 nằm trong tập bội 3 chỉ giúp nhìn thấy quan hệ; phép viết n=6k mới là chứng minh.
+Nhưng một kết luận đúng theo chiều thuận chưa cho phép đọc ngược. Số 3 chia hết cho 3 mà không chia hết cho 6, nên câu đảo \(Q\Rightarrow P\) sai. Một phản ví dụ đủ bác bỏ một mệnh đề kéo theo nếu tiền đề đúng mà kết luận sai. Về logic hình thức, \(P\Rightarrow Q\) chỉ sai khi \(P\) đúng và \(Q\) sai; quy tắc này không có nghĩa mọi câu “nếu...thì...” là một quan hệ nguyên nhân trong đời sống.
 
-**Đến lượt em:** “n chia hết cho 8 ⇒ n chia hết cho 4” và mệnh đề đảo có đúng không, với n∈ℤ?
+**Em tự thử:** Với \(n\in\mathbb Z\), “Nếu \(n\) chia hết cho 8 thì \(n\) chia hết cho 4” đúng không? Chiều đảo có đúng không?
 
 <details class="slm-topic-first-try" markdown="1">
-<summary>Đã tự thử? Mở lời giải và cách khắc phục</summary>
+<summary>Em đã tự làm? Mở phần đối chiếu</summary>
 
-Chiều thuận đúng vì 8k=4(2k); chiều đảo sai khi n=4.
-
-Nếu em vẫn còn phân vân, hãy quay lại điều kiện vừa dùng. Nếu hay đảo sai chiều, vẽ hai nhóm số và kiểm tra phần tử như n=3; trở lại THPT-G10-B01-P03 hoặc tự luận W01.
+Chiều thuận đúng vì \(n=8k=4(2k)\). Chiều đảo sai: \(n=4\) chia hết cho 4 nhưng không chia hết cho 8. Muốn chứng minh hai chiều, phải có hai lập luận riêng hoặc phép biến đổi tương đương hợp lệ.
 
 </details>
 
