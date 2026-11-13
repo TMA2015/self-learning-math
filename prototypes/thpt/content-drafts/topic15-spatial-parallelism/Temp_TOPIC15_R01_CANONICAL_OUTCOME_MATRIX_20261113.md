@@ -3,7 +3,7 @@
 `STANDARD_ID=SLM-THPT-QUALITY-ONE` · `STANDARD_VERSION=3.1.0` · `TOPIC_ID=PLAN22-15_PROVISIONAL`
 
 **Nguồn SGK**: G11 ChIV B10–B14 R03, Git blob `e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b`, 40 original canonical questions retained by pointer only.
-**Nguồn Topic R01**: `Temp_TOPIC15_SPATIAL_PARALLELISM_R01_FULL_22_OUTCOMES_20261113.md` (source Git blob filled by custody check after commit).
+**Nguồn Topic R01**: `Temp_TOPIC15_SPATIAL_PARALLELISM_R01_FULL_22_OUTCOMES_20261113.md` (Git blob `03476cc0305a980aa97a571b2f86a91dfc11813b`).
 **TOTAL_PUBLIC_UNIQUE_ID_COUNT**: 89 = 40 old SGK + 22 Topic First Try + 22 Topic Practice +5 Written. Public Self Check 8 reuses = **0 extra IDs**. No RD1 bank imported.
 
 ## Ma trận 22 outcome và chứng cứ
@@ -134,3 +134,9 @@
 - 40 SGK original stems/keys/solutions/rubrics **không sao chép** vào source Topic hoặc index.
 - R00 original seven question IDs and body/solution blocks byte-identical in R01 (tested).
 - Q18 still **not signed**; index is source bookkeeping, not reviewer or author PASS.
+## Exact Git source custody (13/11/2026)
+
+- `ACADEMIC_SOURCE_BLOB=03476cc0305a980aa97a571b2f86a91dfc11813b`
+- `INTERACTIVE_MODEL_BLOB=3f3c75765b6cddcaa53994027c45e79701d4d840`
+- `MODEL_ID=SLM-TOP15-LINE-PLANE-R00` (source version R01; no duplicated model ID)
+- `HANDOFF_STATUS=NOT_CREATED` / `READY_MANIFEST=NOT_CREATED` / `REGISTER=UNCHANGED` pending full source Q18
