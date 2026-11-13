@@ -306,6 +306,46 @@ const polishG10ChapterV=(article)=>{
  article.dataset.g10ChvGolden="preview";
 };
 
+/* G10 ChVI B15–B18: reuse the published owner Golden B01–B14 theme.
+ * All source-level 19 First Try and 19 D6 placements are locked by the
+ * additive S1/Q18 §X-F receipt, not moved or redefined by JavaScript.
+ * Group each existing full worked explanation in the prior Golden solution
+ * panel without changing the mathematical text or any canonical identifier. */
+const polishG10ChapterVI=(article)=>{
+ if(article.dataset.g10ChviGolden==="true")return;
+ const set=article.querySelector(".tabbed-set");
+ const labels=[...(set?.querySelectorAll(":scope > .tabbed-labels > label")||[])];
+ const panes=[...(set?.querySelectorAll(":scope > .tabbed-content > .tabbed-block")||[])];
+ const names=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
+ if(labels.length!==4||panes.length!==4||
+   !labels.every((x,i)=>x.textContent.trim()===names[i]))return;
+ const formal=[...panes[1].querySelectorAll(":scope > h3")];
+ if(formal.length<2||formal.some((x,i)=>!x.textContent.trim().startsWith("2."+(i+1)+". ")))return;
+ polishG10ChapterIV(article);
+ if(article.dataset.g10ChivGolden!=="true")return;
+ // The source already provides concise public voluntary labels. This is
+ // presentation parity only, never a correctness indicator or Mastery write.
+ panes[0].querySelectorAll("details.question > summary").forEach(summary=>{
+  summary.textContent="Đối chiếu";
+ });
+ for(const h of panes[2].querySelectorAll(":scope > h3")){
+  const first=h.nextElementSibling;
+  if(!first||first.tagName==="H3")continue;
+  const panel=document.createElement("div");
+  panel.className="thpt-g10-example-solution";
+  panel.setAttribute("role","group");
+  panel.setAttribute("aria-label","Ví dụ và lời giải minh họa");
+  h.after(panel);
+  let node=first;
+  while(node&&node.tagName!=="H3"){
+   const next=node.nextElementSibling;
+   panel.append(node);node=next;
+  }
+ }
+ article.classList.add("thpt-g10-chvi-golden");
+ article.dataset.g10ChviGolden="preview";
+};
+
 const run=()=>{
  const path=location.pathname;
  const match=path.match(/^(.*\/thpt-preview\/sgk\/)(?:(lop-(11|12))\/)?chuong-([ivx]+)\/bai-(\d+)\/?$/);
@@ -322,6 +362,7 @@ const run=()=>{
   if(lesson<=6){article.classList.add("thpt-g10-first-six-golden");numberG10FirstSix(article);polishG10FirstSix(article);restoreG10FirstSixGolden(article);}
   else if(chapter==="iv"&&lesson<=11)polishG10ChapterIV(article);
   else if(chapter==="v"&&lesson>=12&&lesson<=14)polishG10ChapterV(article);
+  else if(chapter==="vi"&&lesson>=15&&lesson<=18)polishG10ChapterVI(article);
  }
  if(article.querySelector("[data-sgk-lesson-nav]"))return;
  const root=match[1]+(grade===10?"":"lop-"+grade+"/");
