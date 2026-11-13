@@ -789,7 +789,7 @@ async function ready(page,path){
        const editorial=chviEditorialReceiptRows().get("B"+lesson);
        if(editorial){
          const bytes=fs.readFileSync("docs/thpt-preview/sgk/chuong-vi/bai-"+lesson+".md");
-         const digest=crypto.createHash("sha1").update("blob "+bytes.length+"\\0").update(bytes).digest("hex");
+         const digest=crypto.createHash("sha1").update("blob "+bytes.length+"\0").update(bytes).digest("hex");
          assert.equal(digest,editorial.candidate,"B"+lesson+" Q18 source-locked First Try relocation");
          const tabset=article.locator(".tabbed-set").first();
          const discoveryTab=tabset.locator(".tabbed-labels label").filter({hasText:/^Khám phá kiến thức$/});
