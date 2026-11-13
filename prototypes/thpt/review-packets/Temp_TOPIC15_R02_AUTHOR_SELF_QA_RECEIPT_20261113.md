@@ -7,10 +7,10 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_SPATIAL_PARALLELISM_R02_FULL_22_OUTCOMES_20261113.md
-ACADEMIC_SOURCE_BLOB: 26df1a4e60765dd65aebded95d7bd43e9eda63f9
-SOURCE_BLOB: 26df1a4e60765dd65aebded95d7bd43e9eda63f9
+ACADEMIC_SOURCE_BLOB: ab4bd6a9f40b4925da35b725ccf396cd3c4eae9b
+SOURCE_BLOB: ab4bd6a9f40b4925da35b725ccf396cd3c4eae9b
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_R02_AUTHORING_METADATA_20261113.md
-AUTHOR_METADATA_BLOB: f5dfb94b45999543defa7ef12d3e43d4d264583a
+AUTHOR_METADATA_BLOB: 169af8f64300bb53c6c778809e97eeee9cafe4dd
 ORIGINAL_SGK_SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b
 INTERACTIVE_MODEL_BLOB: 3f3c75765b6cddcaa53994027c45e79701d4d840
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
@@ -24,6 +24,14 @@ OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
 MASTERY_ACTIVATION: NO
 RELEASE_AUTHORIZATION: NO
+
+
+S1_RECEIPT: Owner-authored verified G11 KNTT Tập1 ChIV S1 source receipt in PR #705 / original SGK blob e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; printed SGK B10 70–77, B11 78–83, B12 84–87, B13 88–94, B14 95–101; SBT B10–B14 and chapter end 53–74; not a fresh PDF read
+OUTCOME_AUDIT: 22/22 TOP15-O01..O22 concept, assumptions, conditions, example, first try, local remedy reviewed one by one; evidence table below
+MATH_VERIFICATION: 53/53 independent Sympy/analytic/geometry boundary assertions PASS and manual 22 first tries / 22 Practice / five Written explanations and rubric /4 checked on source blob ab4bd6a9f40b4925da35b725ccf396cd3c4eae9b
+PED_VERIFICATION: five connected arcs, geometric meaning before optional Oxyz coordinate helper, five original source-equivalent SVG with guided captions, 22 opt-in firsttries / D6 and one 2D xOz interactive model; no extra Topic Core
+CANONICAL_Q15: 89 unique public IDs: 40 unchanged original SGK canonical source POINTERS in hidden R02 metadata + 22 new firsttries +22 Practice +5 Written; eight public selfcheck placements reuse Practice IDs only; R00/R01 superseded source deleted active tree
+ASSESSMENT_Q16: CLIENT_SELF_CHECK_NO_MASTERY; no private RD1 data imported; browser RELEASE must gate keys, correctness, hints, rubric and AI Tutor until Final Submit; public replays never count as independent readiness or Skill Mastery
 
 ## Thẩm quyền và Q18 mode
 
