@@ -1,4 +1,4 @@
-# CĐ17 — Khoảng cách & Thể tích · R00 canonical matrix and scope custody · AUTHORING CANDIDATE
+# CĐ17 — Khoảng cách & Thể tích · R00 canonical matrix and scope custody · AUTHORING CONTENT_READY (source-only)
 
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
@@ -6,8 +6,8 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 CATALOG_TOPIC_ID: CD17
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
-STATE: AUTHORING_CANDIDATE
-Q18_VERIFICATION_MODE: NOT_YET_SIGNED
+STATE: AUTHORING_CONTENT_READY_SOURCE_ONLY
+Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R00_FULL_12_OUTCOMES_20261113.md
 ACADEMIC_SOURCE_BLOB: baa6c6c575a4cf79187b2aebd2047b1cf872b983
 ORIGINAL_G11_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
@@ -111,5 +111,5 @@ Use old accessible NotebookLM author DRAFT `Temp_TOPIC_10_QUAN_HE_VUONG_GOC_VA_K
 
 - 22 original G11 SGK canonical IDs referenced, never copied stems/keys/rubrics. 27 new Topic canonical items (12 FirstTry,12 Practice,3 Written/4) from one R00 source; 8 selfcheck placements reuse prior public Practice only.
 - 2 source-equivalent original G11 B26/B27 SVGs with actual guided read and fallback, original public standalone responsive volume-comparison model with 6/6 DOM unit assertions (including k=0 true apex collapse, k=1 prism, reset), JS parser PASS; physical Safari/not live-embedded NOT TESTED.
-- `Q18_AUTHOR_SELF_QA_RECEIPT` not yet signed; needs full 12 outcome/item audit, rubric review, source/SVG, MathJax, numerical and pedagogy quality. Do **not** call CONTENT_READY or write ready/REGISTER before closure.
+- `Q18 AUTHOR_SELF_QA_RECEIPT was signed on immutable source after 12 outcome and 27 new item math/PED review, 18 numerical and 6 model DOM checks, P0/P1=0 in author scope; this does NOT confer website/RELEASE readiness.
 - Zero newly imported private RD1, no official TOPIC_READINESS or Mastery writes; RELEASE Final Submit guards still independent, no site/merge/deploy.
