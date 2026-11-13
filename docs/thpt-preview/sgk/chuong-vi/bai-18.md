@@ -174,7 +174,9 @@
 
     **Lời giải.** Điều kiện gộp \(x\ge1\). Bình phương: \(x+1=(x-1)^2=x^2-2x+1\), hay \(x^2-3x=0\), suy ra \(x=0\) hoặc \(x=3\). \(x=0\) không đạt điều kiện và không thỏa gốc. Với \(x=3\), \(\sqrt4=2=3-1\), nên nghiệm duy nhất là \(x=3\).
 
-    **Tự kiểm:** Nếu chỉ ghi hai nghiệm \(\{0,3\}\), em đã giải phương trình sau bình phương chứ chưa giải xong phương trình ban đầu.
+   
+
+   **Tự kiểm:** Nếu chỉ ghi hai nghiệm \(\{0,3\}\), em đã giải phương trình sau bình phương chứ chưa giải xong phương trình ban đầu.
 
     **Tự luyện thêm.** Ba câu sau giúp em kiểm tra điều kiện và nghiệm ngoại lai; hãy tự làm trước khi mở lời giải.
 
