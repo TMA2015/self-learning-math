@@ -27,6 +27,13 @@ PRIVATE_RD1_COUNT: 0
 RELEASE_AUTHORIZATION: NO
 AUTHOR_SIGNOFF: TOP12_R01_Q18_MATH_PED_Q15_Q16_SOURCE_LOCK
 
+S1_RECEIPT: Original owner/reviewer-checked SGK Toán10 KNTT T1 B05 printed pp33–37, B06 pp38–43, SBT B05 pp29–33/B06 pp34–39, source Git 6320aeaa89bd51c514b07461e01fad5e3aca833f and original reviewer Git 3fb823c4353d368ae5a9c14f03c7309933d47e6f; no fresh PDF scan claimed.
+OUTCOME_AUDIT: TOP12-O01..TOP12-O12 each tied to continuous learner module, first try/opt-in solution and source-specific remediation; item→outcome mappings in source-locked author metadata.
+MATH_VERIFICATION: 16 new item stems/answers/explanations and 12 teaching modules checked for signs, sine/cosine applicability, SSA 0/1/2 cases, Heron, measurement units, endpoint/degenerate triangle conditions, plus two original SGK math SVGs.
+PED_VERIFICATION: Motivation before formulas, prerequisites at point of need, method choices and counterexamples, 12 student Vận dụng and optional Đối chiếu/D6; no PED-card wall or Topic Core.
+CANONICAL_Q15: 34 unique public IDs (18 unchanged SGK canonical reuse pointers, 12 new Practice, 4 new Written/rubrics), 12 public Self Check placements reuse existing IDs only; no repeated source body.
+ASSESSMENT_Q16: CLIENT_SELF_CHECK_NO_MASTERY, zero private RD1, no official independent TOPIC_READINESS or Skill Mastery; RELEASE must guard key/hint/feedback/AI before Final Submit.
+
 ## S1 / giới hạn xác minh
 
 - Phạm vi: SGK Toán 10 **Kết nối tri thức** Tập 1, Chương III Bài 5 (trang in 33–37), Bài 6 (38–43), ôn tập (44–45); SBT Bài 5 (29–33), Bài 6 (34–39), cuối chương (40–44).
