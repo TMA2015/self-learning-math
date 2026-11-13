@@ -1,6 +1,6 @@
-# CHUYÊN ĐỀ 18 — PHƯƠNG PHÁP TỌA ĐỘ TRONG KHÔNG GIAN (Oxyz) · FULL 40-OUTCOME AUTHORING CANDIDATE R01
+# Chuyên đề 18 — Phương pháp tọa độ trong không gian (Oxyz)
 
-> **Trạng thái: AUTHORING_DRAFT_Q18_PENDING — CHƯA CONTENT_READY.** Một chuẩn `SLM-THPT-QUALITY-ONE v3.1.0` Q01–Q18, nguồn SGK/SBT KNTT S1 ưu tiên. CĐ18 theo danh mục nghiên cứu `PLAN22-18`, chưa được chủ dự án khóa `RUNTIME_TOPIC_ID`. Đang HOLD nguồn gốc SBT lớp 12 Tập Hai B14 trang in 25, ảnh PNG cần kiểm thực khi đưa lên giao diện, và cần kiểm toán độc lập trên đúng bản candidate này trước khi ký.
+<!-- AUTHOR_ONLY_STATUS: AUTHORING_DRAFT_Q18_PENDING; NOT_CONTENT_READY; STANDARD=SLM-THPT-QUALITY-ONE v3.1.0 Q01-Q18; PLAN22-18_STUDY_ONLY; RUNTIME_TOPIC_ID=UNASSIGNED_OWNER_DECISION; B14_SBT_PRINTED_P25_SOURCE_GAP; G12_CHV_PNG_VISUAL_LABEL_QA_PENDING. -->
 
 <!-- AUTHOR_ONLY_SOURCE_CUSTODY:
 G12 KNTT CHII source public Git blob 856a37bd16d2746ffc2e12906de18d1f4338a3b6 (16 S1 outcomes, 64 SGK canonical pointers).
@@ -16,7 +16,7 @@ AUTHOR_ONLY_SOURCE_CUSTODY_END -->
 
 ## 1. Kiến thức
 
-— Phần A: từ độ dời đến tọa độ Oxyz
+### Phần A — Từ độ dời đến tọa độ Oxyz
 
 ### Chặng A1 — Mũi tên tự do và quy tắc ghép đường đi
 
@@ -901,7 +901,7 @@ Tiếp xúc một điểm (0,0,4), vì d=R.
 
 ## 2. Luyện tập
 
-— Phần A: tự giải và tự mở đối chiếu
+### Phần A — Vectơ và tọa độ Oxyz
 
 Hãy nêu lí do chọn phép toán (cộng vectơ, nhân số, tích vô hướng hay độ dài) trước khi xem đáp án. Đọc lại đúng outcome nếu chưa hiểu.
 
@@ -1129,7 +1129,7 @@ M=(2,−1,4)+2(1,2,−1)=(4,3,2) km.
 
 </details>
 
-— Phần B (suy luận trước phép tính)
+### Phần B — Hình học bằng tọa độ
 
 Trước mỗi bài, viết một dòng về đối tượng cần dựng và điều kiện để dùng công thức. Giải xong nên kiểm ngược bằng thế tọa độ/điều kiện. Đối chiếu tự mở không phải đánh giá chính thức.
 
