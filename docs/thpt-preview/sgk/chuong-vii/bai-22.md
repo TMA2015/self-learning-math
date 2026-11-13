@@ -21,9 +21,15 @@
 
     <span id="thpt-g10-chvii-try18" data-thpt-first-try-id="THPT-G10-CHVII-TRY18" data-outcome-id="G10-B22-ELLIPSE_PARAMETERS" data-thpt-help-ref="HELP-G10-CHVII-TRY18"></span>
 
-    Một đường elip có thể được nhận ra bằng tổng khoảng cách đến hai điểm cố định F₁,F₂: với mọi điểm M trên đường, \(MF_1+MF_2=2a\) không đổi. Nhắc lại cách tính khoảng cách hai điểm, ta thấy đây là một điều kiện hình học trước khi là một phương trình đại số. Với elip chính tắc \(\frac{x^2}{a^2}+\frac{y^2}{b^2}=1\) và \(a>b>0\), trục lớn nằm trên Ox, các đỉnh ở \((\pm a,0)\) còn hai tiêu điểm ở \((\pm c,0)\), với \(c^2=a^2-b^2\).
+    Hãy cố định hai chiếc đinh tại \(F_1,F_2\), buộc hai đầu của một sợi dây lần lượt vào hai đinh, rồi dùng đầu bút kéo dây căng và di chuyển trên mặt giấy. Khi bút ở \(M\), hai đoạn từ bút đến đinh luôn có tổng độ dài bằng nhau: \(MF_1+MF_2=2a\). Vì thế đường bút vẽ ra là tập hợp các điểm có **tổng khoảng cách đến hai tiêu điểm không đổi**: một elip.
 
-    Hãy hình dung đường bao dẹt theo phương ngang; hai tiêu điểm nằm trong đường bao vì \(c<a\). Khi đọc phương trình, mẫu lớn hơn dưới x² cho biết \(a^2\), mẫu còn lại cho \(b^2\); từ đó tính c rồi xác định tiêu điểm. Tâm sai \(e=c/a\) mô tả độ dẹt của elip, nhưng trước hết cần phân biệt đúng a, b và c. Các công thức này đi cùng điều kiện trục lớn là Ox, không áp máy móc khi trục lớn theo hướng khác.
+    Nếu hai đinh cách nhau \(2c>0\), muốn vẽ được **một elip không suy biến** thì độ dài dây cần thỏa \(2a>2c\): bút phải có chỗ di chuyển ngoài đoạn nối hai đinh. Ví dụ, hai tiêu điểm ở \((-5,0)\), \((5,0)\) và tổng dây \(26\) đơn vị, ta có \(a=13,\ c=5\), rồi \(b^2=a^2-c^2=144\), suy ra \(b=12\). Phương trình elip trục lớn Ox là
+    \[
+    \frac{x^2}{169}+\frac{y^2}{144}=1.
+    \]
+    Hãy nhìn vị trí hai tiêu điểm trong hình trước khi đọc hệ số. Nếu hai đinh trùng nhau hoặc chiều dài dây không lớn hơn khoảng cách giữa chúng, mô hình elip không suy biến cần được xét lại.
+
+    <figure class="thpt-r4-plot thpt-r4-concept-figure" data-chvii-r02-diagram="TRY18"><img src="../../../../assets/images/thpt/G10_CHVII_R02_B22_TRY18_ELLIPSE.svg" loading="lazy" alt="Hai tiêu điểm và dây căng tạo elip, tổng hai khoảng cách bằng 2a lớn hơn 2c."><figcaption>Khi đầu bút kéo dây căng, tổng khoảng cách từ đầu bút đến hai tiêu điểm không đổi.</figcaption></figure>
 
     **Em vận dụng.** Với elip x²/25+y²/16=1, tìm a, b, c và hai tiêu điểm.
 
@@ -43,9 +49,7 @@
 
     <span id="thpt-g10-chvii-try19" data-thpt-first-try-id="THPT-G10-CHVII-TRY19" data-outcome-id="G10-B22-HYPERBOLA_PARAMETERS" data-thpt-help-ref="HELP-G10-CHVII-TRY19"></span>
 
-    Từ elip, hãy đổi câu hỏi: thay vì giữ tổng hai khoảng cách đến hai tiêu điểm không đổi, ta xét độ lớn của hiệu hai khoảng cách không đổi. Quỹ tích thu được là hypebol gồm hai nhánh tách rời. Trong dạng chính tắc \(\frac{x^2}{a^2}-\frac{y^2}{b^2}=1\) với \(a,b>0\), hai nhánh mở sang trái và phải theo Ox, các đỉnh ở \((\pm a,0)\).
-
-    So với hệ thức \(c^2=a^2-b^2\) của elip có trục lớn Ox, hypebol có \(c^2=a^2+b^2\), nên \(c>a\): hai tiêu điểm \((\pm c,0)\) nằm xa tâm hơn các đỉnh. Khi hình dung hình vẽ, không nối hai nhánh thành một đường kín. Dấu dương trước \(x^2\) xác định trục thực, còn dấu trừ trước \(y^2\) giúp phân biệt phương trình hypebol với phương trình elip.
+    Nếu elip giữ **tổng** hai khoảng cách không đổi, hãy thử giữ **độ lớn của hiệu** không đổi: \(|MF_1-MF_2|=2a\), với hai tiêu điểm \(F_1,F_2\) cách nhau \(2c\) và \(0<a<c\). Tập điểm thu được chia thành **hai nhánh**: ở nhánh gần \(F_1\), khoảng cách đến \(F_1\) nhỏ hơn; ở nhánh gần \(F_2\), điều ngược lại xảy ra. Vì \(c>a\), quan hệ các thông số là \(b^2=c^2-a^2\), hay \(c^2=a^2+b^2\). Hình thành hai nhánh từ hiệu khoảng cách giúp em không nhầm với đường elip kín.
 
     **Em vận dụng.** Hypebol x²/16−y²/9=1 có các đỉnh và hai tiêu điểm tọa độ nào?
 
@@ -65,9 +69,11 @@
 
     <span id="thpt-g10-chvii-try20" data-thpt-first-try-id="THPT-G10-CHVII-TRY20" data-outcome-id="G10-B22-HYPERBOLA_ASYMPTOTES" data-thpt-help-ref="HELP-G10-CHVII-TRY20"></span>
 
-    Hai nhánh của một hypebol kéo dài ra vô hạn nhưng càng ra xa, chúng càng tiến sát hai đường thẳng đi qua tâm. Những đường này được gọi là tiệm cận, giúp ta phác được hướng của nhánh mà không cần vẽ đến vô tận. Từ \(\frac{x^2}{a^2}-\frac{y^2}{b^2}=1\), suy ra \(y^2=\frac{b^2}{a^2}(x^2-a^2)\). Khi \(|x|\) rất lớn so với a, tỉ số \(\left|\frac{y}{x}\right|\) tiến gần \(b/a\).
+    **Mở rộng có hướng dẫn · Không bắt buộc trong kiến thức SGK Bài 22.** Em có thể khám phá tiệm cận sau khi hiểu hai nhánh hypebol.
 
-    Vì vậy, với hypebol chính tắc tâm O và trục thực Ox, hai tiệm cận có phương trình \(y=\pm\frac{b}{a}x\). Hãy hình dung hai đường chéo đi qua O và hai nhánh tiến sát chúng về phía xa; đường tiệm cận không phải chính nhánh hypebol. Nếu phương trình đã bị tịnh tiến hoặc đổi trục, phải đưa về dạng phù hợp trước khi dùng công thức này.
+    Vẽ một hình chữ nhật tâm \(O\) có các đỉnh \((\pm a,\pm b)\). Hai đường chéo đi qua tâm của nó có phương trình \(y=\pm(b/a)x\). Với hypebol \(\frac{x^2}{a^2}-\frac{y^2}{b^2}=1\), khi \(|x|\) ngày càng lớn, hai nhánh tiến ngày càng gần hai hướng đường chéo ấy. Đó là lý do ta gọi chúng là **tiệm cận**. Ví dụ, nếu \(a=3,\ b=2\), hai đường chéo có hệ số góc \(\pm2/3\). Không thể suy tiệm cận chỉ bằng cách đổi dấu một phương trình elip; trước hết cần xác định đúng trục thực và hình chữ nhật cơ sở.
+
+    <figure class="thpt-r4-plot thpt-r4-concept-figure" data-chvii-r02-diagram="TRY20"><img src="../../../../assets/images/thpt/G10_CHVII_R02_B22_TRY20_ASYMPTOTE.svg" loading="lazy" alt="Hypebol mở rộng với hình chữ nhật cơ sở 2a nhân 2b, hai đường chéo là tiệm cận."><figcaption>Mở rộng: hai nhánh hypebol tiến dần tới hai đường chéo của hình chữ nhật cơ sở.</figcaption></figure>
 
     **Em vận dụng.** Hypebol x²/25−y²/4=1 có hai đường tiệm cận nào?
 
@@ -87,9 +93,16 @@
 
     <span id="thpt-g10-chvii-try21" data-thpt-first-try-id="THPT-G10-CHVII-TRY21" data-outcome-id="G10-B22-PARABOLA_FOCUS" data-thpt-help-ref="HELP-G10-CHVII-TRY21"></span>
 
-    Trong hình học, parabol không chỉ là đường cong có một phương trình quen thuộc. Mỗi điểm M trên parabol cách một điểm cố định F (tiêu điểm) đúng bằng khoảng cách vuông góc từ M đến một đường thẳng cố định (đường chuẩn). Hãy nhớ hai cách tính khoảng cách: từ điểm đến điểm và từ điểm đến đường thẳng. So sánh hai khoảng cách đó sẽ dẫn đến phương trình của parabol.
+    Một parabol gồm các điểm \(M\) có khoảng cách đến **tiêu điểm** \(F\) bằng khoảng cách vuông góc đến **đường chuẩn** \(\Delta\). Chọn đỉnh ở \(O(0,0)\), tiêu điểm \(F(p/2,0)\) và đường chuẩn \(x=-p/2\), với \(p>0\). Nếu \(M(x,y)\), ta có \(MF^2=(x-p/2)^2+y^2\), còn bình phương khoảng cách từ M đến đường chuẩn là \((x+p/2)^2\).
 
-    Với quy ước \(y^2=2px\) và \(p>0\), đỉnh là O, tiêu điểm \(F(p/2,0)\) nằm bên phải đỉnh, còn đường chuẩn \(x=-p/2\) nằm bên trái; cả hai cách đỉnh một khoảng \(p/2\). Nếu một hình vẽ biểu diễn điểm M trên đường cong, hai đoạn khoảng cách tương ứng phải bằng nhau. Khi đọc hệ số trước x, tìm \(2p\) rồi chia đôi để suy \(p\); tuyệt đối không nhầm tiêu điểm thành \(F(p,0)\), vốn thuộc quy ước phương trình khác.
+    Hai khoảng cách bằng nhau nên
+    \[
+    (x-p/2)^2+y^2=(x+p/2)^2
+    \quad\Longrightarrow\quad y^2=2px.
+    \]
+    Vậy công thức không xuất hiện từ một phép đoán: nó là cách viết điều kiện **hai khoảng cách bằng nhau**. Với phương trình \(y^2=2px\), tiêu điểm ở \(p/2\), không phải \(p\). Khi đổi hướng mở sang Oy thì cần đặt lại trục và dùng dạng phương trình phù hợp.
+
+    <figure class="thpt-r4-plot thpt-r4-concept-figure" data-chvii-r02-diagram="TRY21"><img src="../../../../assets/images/thpt/G10_CHVII_R02_B22_TRY21_PARABOLA.svg" loading="lazy" alt="Parabol có MF bằng MN, N là chân vuông góc từ M xuống đường chuẩn, F là tiêu điểm."><figcaption>Mỗi điểm M trên parabol cách đều tiêu điểm F và đường chuẩn.</figcaption></figure>
 
     **Em vận dụng.** Cho parabol y²=8x với x≥0. Xác định tiêu điểm, đường chuẩn; M(2,4) có thuộc parabol không?
 
@@ -131,9 +144,7 @@
 
     <span id="thpt-g10-chvii-try23" data-thpt-first-try-id="THPT-G10-CHVII-TRY23" data-outcome-id="G10-B22-CONIC_MODEL" data-thpt-help-ref="HELP-G10-CHVII-TRY23"></span>
 
-    Một máng phản xạ có mặt cắt parabol thường cần được đo độ rộng tại một vị trí nhất định. Với dạng \(y^2=2px\), \(p>0\), trục đối xứng là Ox nên tại cùng hoành độ \(x\ge0\), hai điểm trên hai nhánh có tung độ đối nhau: \(y=\sqrt{2px}\) và \(y=-\sqrt{2px}\).
-
-    Nếu vẽ một đoạn thẳng đứng tại hoành độ đang xét, độ rộng cần tìm là khoảng cách từ nhánh dưới lên nhánh trên, tức \(2\sqrt{2px}\), chứ không phải chỉ một tung độ dương. Khi thay x cụ thể, hãy lấy đủ hai giá trị \(\pm y\), tính hiệu và ghi đơn vị. Mô hình chỉ áp dụng khi mặt cắt thực tế phù hợp với phương trình đã chọn.
+    Nếu mặt cắt của một máng có dạng \(y^2=12x\) (đơn vị cm), thì tại vị trí \(x=3\) ta có \(y^2=36\), nghĩa là **hai** điểm trên mặt cắt có tung độ \(y=6\) và \(y=-6\). Độ rộng giữa hai mép máng là \(6-(-6)=12\) cm, không phải 6 cm. Trên hình, đó là một đoạn thẳng vuông góc trục Ox nối cả hai nhánh. Khi dùng mô hình trong đời thực, phải kiểm đơn vị, vị trí đặt trục và việc mặt cắt có thực sự phù hợp với một parabol hay không.
 
     **Em vận dụng.** Mặt cắt một máng giả sử có dạng y²=20x (x,y tính bằng cm). Bề rộng của máng tại x=5 cm là bao nhiêu?
 
@@ -179,9 +190,9 @@
 
     <span id="thpt-g10-chvii-try-hyperbola-tr01" data-thpt-first-try-id="THPT-G10-CHVII-TRY-HYPERBOLA-TR01" data-outcome-id="G10-B22-HYPERBOLA_PARAMETERS" data-thpt-help-ref="HELP-G10-CHVII-HYPERBOLA-TR01"></span>
 
-    Giả sử hai trạm A và B phát cùng lúc một tín hiệu với vận tốc v. Nếu người nhận P nghe từ B sớm hơn A một khoảng \(\Delta t>0\), tín hiệu từ B đã đi quãng đường ngắn hơn: \(PA-PB=v\Delta t>0\). Nhớ rằng hypebol được định nghĩa bởi giá trị tuyệt đối của hiệu khoảng cách đến hai tiêu điểm không đổi; điều kiện thời gian vì thế cho một nhánh hypebol chứ không chỉ một con số vị trí.
+    Nếu hai trạm phát cách nhau \(AB=2c\), tín hiệu truyền với tốc độ \(v\) và tới máy thu lệch nhau một khoảng thời gian \(\Delta t\), thì độ chênh độ dài quãng đường là \(v|\Delta t|=|PA-PB|=2a\). Bất đẳng thức tam giác cho biết \(|PA-PB|\le AB\): chênh lệch hai quãng đường **không thể lớn hơn** khoảng cách giữa hai trạm. Để được một **hypebol không suy biến**, cần điều kiện chặt \(0<2a<2c\). Nếu \(2a>2c\) thì dữ kiện không thể xảy ra; nếu \(2a=2c\), quỹ tích suy biến thành các tia thẳng hàng chứ không phải hai nhánh hypebol; nếu \(2a=0\), các vị trí cách đều hai trạm nằm trên đường trung trực.
 
-    Đặt O là trung điểm AB, trạm A ở phía \(x<0\), B ở phía \(x>0\) và \(2c=AB\). Với \(2a=v\Delta t\), cần kiểm \(0<2a<2c\) để có hypebol không suy biến; khi ấy \(c^2=a^2+b^2\) và \(0<a<c\). Nhánh phía B là nhánh gần B hơn, không thể suy ra nhánh chỉ từ dấu trừ trong phương trình chính tắc vốn chứa cả hai nhánh. Hãy hình dung hai tiêu điểm xa tâm hơn các đỉnh và hai nhánh tách rời. Một cặp trạm chỉ xác định được nhánh quỹ tích vị trí; phải có dữ liệu bổ sung mới định vị được P.
+    Từ \(|PA-PB|\) ta mới biết **hai nhánh khả dĩ**. Chỉ khi biết tín hiệu nào tới sớm hơn mới chọn được một nhánh; một cặp trạm không xác định duy nhất vị trí người nhận. Khi tính, cần nhất quán đơn vị chiều dài, vận tốc và thời gian.
 
     **Em vận dụng.** Hai trạm cách nhau 60 km, phát tín hiệu đồng thời; sóng truyền 100.000 km/s. Chênh thời gian tới máy thu là 0,0002 s. Tính `2a`, `c`, `b²` cho hypebol tương ứng và kiểm điều kiện có nghiệm hình học, rồi mở đối chiếu.
 
