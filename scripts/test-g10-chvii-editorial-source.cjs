@@ -88,7 +88,7 @@ for(const [lessonStr,info]of Object.entries(specs)){
   assert(rendered.every(z=>!z[1].includes("\\(")),item+" nested inline MathJax");
   if(!proseOnly.has(item))assert(start>0,item+" math-bearing narrative lacks MathJax delimiters");
  }
- const reviewDiagrams=[...d.matchAll(/<img[^>]+src="([^"]+\\.svg)"/g)].map(x=>x[1]);
+ const reviewDiagrams=[...d.matchAll(/<img[^>]+src="([^"]+\.svg)"/g)].map(x=>x[1]);
  for(const ref of reviewDiagrams.filter(x=>x.includes("G10_CHVII_R02_"))){
   const filename=path.basename(ref),where=path.join(root,"docs/assets/images/thpt",filename);
   assert(fs.existsSync(where),name+" missing concept diagram "+filename);
@@ -99,7 +99,7 @@ for(const [lessonStr,info]of Object.entries(specs)){
  if(n===19)assert(d.includes("Mở rộng có hướng dẫn · Học sau Bài 20"),name+" TRY06 should be guided");
  if(n===21)assert(d.includes("Vận dụng liên bài B20–B21"),name+" TRY17 interlesson");
  if(n===22){
-  assert(!/tâm sai|e=c\\/a/i.test(d),name+" unapproved compulsory eccentricity");
+  assert(!/tâm sai|e=c\/a/i.test(d),name+" unapproved compulsory eccentricity");
   assert(d.includes("Mở rộng có hướng dẫn · Không bắt buộc"),name+" TRY20 guided extension");
  }
  assert(!/Hãy tự giải từng câu Tự thử trước khi mở Đối chiếu/.test(d),name+" redundant global First Try instruction remains");
