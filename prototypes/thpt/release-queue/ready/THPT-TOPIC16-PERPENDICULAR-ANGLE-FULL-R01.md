@@ -20,7 +20,7 @@ REVIEW_RECEIPT_BLOB: 0d0d4c8035215f8664cdc31678c289e236dddb2c
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_R01_SCOPE_CANONICAL_OUTCOME_MATRIX_20261113.md
 AUTHOR_A1_A7_BLOB: 2ff49ff7e9623821068ec0a2953942156989d6e7
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC16-PERPENDICULAR-ANGLE-FULL-R01_HANDOFF_V2_20261113.md
-AUTHOR_HANDOFF_BLOB: d17a440ead9bb6d86ec21051a27873807321673c
+AUTHOR_HANDOFF_BLOB: e5666050262255a39655d56117b809f1641acfe8
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_THPT_TOPIC16_RAMP_ANGLE_R01_SCOPE_CORRECTED_20261113.html
 INTERACTIVE_MODEL_BLOB: e14ee4c6ec6c851f228352656b0cd8e2fc3a2a06
@@ -45,7 +45,7 @@ CURRENT_PR: DRAFT_AUTHORING_NOT_MERGED
 
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — 21-outcome immutable R01 source 0e934389ebfe239ace19cc23c5dedf9c23d8ebdc, signed author Q18 receipt 0d0d4c8035215f8664cdc31678c289e236dddb2c, one 86-ID V2 d17a440ead9bb6d86ec21051a27873807321673c and 86-row matrix blob 2ff49ff7e9623821068ec0a2953942156989d6e7.
+- [x] A1_SOURCE_SNAPSHOT — 21-outcome immutable R01 source 0e934389ebfe239ace19cc23c5dedf9c23d8ebdc, signed author Q18 receipt 0d0d4c8035215f8664cdc31678c289e236dddb2c, one 86-ID V2 e5666050262255a39655d56117b809f1641acfe8 and 86-row matrix blob 2ff49ff7e9623821068ec0a2953942156989d6e7.
 - [x] A2_SGK_SBT_SCOPE — KNTT G11 T2 SGK ChVII B22 pp27–30 B23 pp31–37 B24 pp38–43 B25 pp44–53 and SBT pp24–34 from source receipt G11 ChVII original SHA afc8ec039213b87b4930f2d34d48c28d1fc6277f; no new PDF scan claim.
 - [x] A3_NOTEBOOKLM_VERDICT — Legacy label A3 fulfilled by signed owner-effective Q18 AUTHOR_SELF_VERIFIED academic+PED receipt, not an independent NotebookLM review of the new Topic, with cited old NotebookLM pedagogical DRAFT source and explicit excluded source errors.
 - [x] A4_ITEM_OUTCOME_IDS — Exactly 21 canonical Topic outcome IDs, 86 public unique item IDs with 86 V2 placement mappings (41 unchanged SGK pointers, 45 new questions), 8 verified Topic-only semantic mappings of original skill tags and no ID clones.
