@@ -7,10 +7,10 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_TRIANGLE_TRIG_SOLVING_FULL_R01_20261113.md
-SOURCE_BLOB: 8f93f8272627bdd14234b1cd5b703715dc98ae93
-ACADEMIC_SOURCE_BLOB: 8f93f8272627bdd14234b1cd5b703715dc98ae93
+SOURCE_BLOB: b93611eaaf0dbc03908a4836f1db7f70fd8df108
+ACADEMIC_SOURCE_BLOB: b93611eaaf0dbc03908a4836f1db7f70fd8df108
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R01_AUTHORING_ONLY_METADATA_20261113.md
-AUTHOR_METADATA_BLOB: e1502a340219842fea7093deef2d5cc8d2af5aac
+AUTHOR_METADATA_BLOB: 0bf300392f59d649a99c99bd29541b25c5a5072a
 ORIGINAL_SGK_SOURCE_BLOB: 6320aeaa89bd51c514b07461e01fad5e3aca833f
 ORIGINAL_SGK_REVIEW_RECEIPT_BLOB: 3fb823c4353d368ae5a9c14f03c7309933d47e6f
 ORIGINAL_SGK_CANONICAL_REGISTER_BLOB: 456018726168a5c65496bd0628bd9b2f410d0e62
@@ -40,7 +40,7 @@ ASSESSMENT_Q16: CLIENT_SELF_CHECK_NO_MASTERY, zero private RD1, no official inde
 - Các trang này **kế thừa receipt S1/SGK và biên bản NotebookLM của packet SGK B05–B06** có source Git blob `6320aeaa89bd51c514b07461e01fad5e3aca833f` và receipt `3fb823...`. **Không có bản quét PDF mới được đọc lại trong lượt CĐ12**, không tự gán chỉ số PDF.
 - Academic/PED PASS 18 item **chỉ thuộc snapshot SGK B05–B06 cũ**. Bản CĐ12 này có nguồn riêng, đánh giá bằng `AUTHOR_SELF_VERIFIED`; không tự nâng reviewer PASS từ SGK sang Topic.
 
-**DELTA_A_UI_LABELS_RECHECK:** Revision from prior source db515766b4247276f00925c160f2d6125dc23d87 to 8f93f8272627bdd14234b1cd5b703715dc98ae93 changes only student-visible technical item codes/labels and authored SGK item roster presentation; all 16 Topic exercise stems, mathematical keys and worked solutions/rubrics remain mathematically identical, and 34 IDs persist in invisible HTML comments. This receipt supersedes prior metadata hashes; student-facing text now hides canonical technical IDs while Q15 source anchoring remains exact.
+**DELTA_A_UI_LABELS_AND_ASSESSMENT_COPY_RECHECK:** Revision from prior source db515766b4247276f00925c160f2d6125dc23d87 to b93611eaaf0dbc03908a4836f1db7f70fd8df108 changes only student-visible technical item codes/labels and authored SGK item roster presentation; all 16 Topic exercise stems, mathematical keys and worked solutions/rubrics remain mathematically identical; self-check now describes Q16 rules in learner language while full client metadata stays in HTML comments, and 34 IDs persist in invisible HTML comments. This receipt supersedes prior metadata hashes; student-facing text now hides canonical technical IDs while Q15 source anchoring remains exact.
 
 ## Kiểm 12 outcome trên nguồn học sinh R01
 
@@ -93,7 +93,7 @@ ASSESSMENT_Q16: CLIENT_SELF_CHECK_NO_MASTERY, zero private RD1, no official inde
 - **Q15:** 34 ID duy nhất; 18 nguồn SGK không nhân bản stem/key, 16 nguồn Topic mới; map id→outcome→role trong sidecar và handoff V2.
 - **Q16:** public replay self-check chỉ `CLIENT_SELF_CHECK_NO_MASTERY`; trước Final Submit không hint/key/correctness/AI Tutor trong tương tác tương lai; không ghi Skill Mastery; chưa có backend/UI claim.
 - **Q17:** Topic ba trang Kiến thức/Luyện tập/Tự kiểm tra, không phụ thuộc đọc SGK riêng để hiểu phần bắt buộc.
-- **Q18:** self QA trên `8f93f8272627bdd14234b1cd5b703715dc98ae93`, source/receipt và V2 phải cùng SHA, P0/P1=0; không independent NotebookLM claim.
+- **Q18:** self QA trên `b93611eaaf0dbc03908a4836f1db7f70fd8df108`, source/receipt và V2 phải cùng SHA, P0/P1=0; không independent NotebookLM claim.
 - **A1–A7:** A1 source snapshot; A2 S1 provenance thật; A3 chế độ author-self receipt; A4 canonical matrix; A5 D1–D6/PED; A6 Delta C new Topic đã tự kiểm; A7 private and assessment guard. Hoàn tất cơ học source/receipt/V2/ready/REGISTER cùng lượt.
 
 ## Giới hạn và trách nhiệm RELEASE
