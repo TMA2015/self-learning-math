@@ -18,22 +18,12 @@
 
     ### Ví dụ trực quan
 
-    Hãy tự giải từng câu Tự thử trước khi mở Đối chiếu. Nếu vướng, hãy đọc phần tự khắc phục và tự làm lại một bài tương tự.
-
 
     <span id="thpt-g10-chvii-try08" data-thpt-first-try-id="THPT-G10-CHVII-TRY08" data-outcome-id="G10-B20-RELATIVE_POSITION" data-thpt-help-ref="HELP-G10-CHVII-TRY08"></span>
 
-    #### Song song, trùng, cắt
+    Hai con đường có thể cùng hướng nhưng nằm ở hai vị trí khác nhau; vì thế, chỉ nhìn độ nghiêng của chúng thì chưa thể kết luận là song song phân biệt hay trùng nhau. Với các đường có phương trình a₁x+b₁y+c₁=0 và a₂x+b₂y+c₂=0, ta nhớ rằng cặp hệ số (a,b) tạo một pháp tuyến. Nếu a₁b₂−a₂b₁ khác 0, các pháp tuyến không cùng phương nên hai đường cắt nhau.
 
-    Hai con đường có cùng hướng chưa chắc là cùng một đường; xác định vị trí tương đối cần xét cả nơi chúng đi qua.
-
-    **Kiến thức tiền đề:** Ôn pháp tuyến của ax+by+c=0; khi hai cặp pháp tuyến tỉ lệ, hai đường có cùng hướng.
-
-    **Bản chất trước công thức:** Định thức a1b2-a2b1 khác 0 thì hai đường cắt nhau. Bằng 0 chỉ nói cùng hướng: xét thêm c để phân biệt song song khác nhau và trùng nhau.
-
-    **Hướng dẫn đọc hình:** Đặt cạnh nhau ba hình cắt, song song phân biệt, trùng; hai hình sau có cùng hướng nhưng khác vị trí.
-
-    Kiểm pháp tuyến khác 0; kiểm định thức; nếu bằng 0, so sánh đủ bộ ba hệ số, tránh chia cho hệ số 0.
+    Nếu a₁b₂−a₂b₁ bằng 0, hai đường mới chỉ được xác nhận cùng hướng. Lúc này phải xem cả các hằng số c để phân biệt hai đường trùng hẳn nhau với hai đường song song phân biệt. Hình dung ba hình cắt, song song và trùng: hai hình cuối có cùng hướng nhưng khác nhau về vị trí. Hãy kiểm mỗi pháp tuyến khác vectơ không và so sánh bộ hệ số bằng phép nhân chéo, tránh chia cho hệ số có thể bằng 0.
 
     **Em vận dụng.** d1: 2x-y+1=0, d2: 4x-2y+3=0 là song song phân biệt hay trùng nhau?
 
@@ -53,17 +43,9 @@
 
     <span id="thpt-g10-chvii-try09" data-thpt-first-try-id="THPT-G10-CHVII-TRY09" data-outcome-id="G10-B20-PERPENDICULAR" data-thpt-help-ref="HELP-G10-CHVII-TRY09"></span>
 
-    #### Đường thẳng vuông góc qua điểm
+    Giả sử ta cần dựng một con đường mới vuông góc với đường cũ và đi qua điểm P. Hai điều kiện này đảm nhận hai việc khác nhau: hướng vuông góc quyết định phương của đường mới, còn P cố định vị trí của nó. Ta đã biết hai đường vuông góc thì hai vectơ pháp tuyến tương ứng cũng vuông góc, bởi cả hai đều được quay một góc vuông so với hướng đường.
 
-    Khi dựng một lối đi cắt tuyến đường cũ theo góc vuông, ta phải kiểm cả hướng lẫn vị trí đi qua điểm đã cho.
-
-    **Kiến thức tiền đề:** Ôn pháp tuyến của đường thẳng và điều kiện hai pháp tuyến vuông góc khi tích vô hướng bằng 0.
-
-    **Bản chất trước công thức:** Nếu hai đường vuông góc thì hai pháp tuyến của chúng cũng vuông góc (đều bị quay cùng 90 độ so với đường). Điểm quyết định tịnh tiến đường mới.
-
-    **Hướng dẫn đọc hình:** Vẽ đường d và đường qua P vuông góc với d; chỉ ra vì sao đường qua P có thể di chuyển song song mà vẫn vuông góc.
-
-    Chọn n' vuông góc với n của d, rồi dùng n'·PM=0; kiểm P thuộc đường mới và n·n'=0.
+    Vì vậy, nếu pháp tuyến của đường cũ là n, hãy chọn pháp tuyến n′ khác 0 sao cho n·n′=0. Đường mới qua P được xác định bởi điều kiện n′·PM=0. Có thể tưởng tượng tịnh tiến một đường vuông góc song song với chính nó: góc vuông vẫn giữ nguyên, nhưng chỉ một vị trí đi qua P. Thế tọa độ P và kiểm lại tích vô hướng để chắc chắn thỏa cả hai yêu cầu.
 
     **Em vận dụng.** Qua P(1,-2) viết đường vuông góc với d: x+2y-5=0.
 
@@ -83,17 +65,9 @@
 
     <span id="thpt-g10-chvii-try10" data-thpt-first-try-id="THPT-G10-CHVII-TRY10" data-outcome-id="G10-B20-INTERSECTION" data-thpt-help-ref="HELP-G10-CHVII-TRY10"></span>
 
-    #### Tọa độ giao hai đường
+    Khi hai con đường cắt nhau, chỗ gặp nhau không phải là nghiệm riêng của từng phương trình mà là một cặp tọa độ thỏa đồng thời cả hai. Đây chính là ý nghĩa hình học của việc giải hệ hai phương trình bậc nhất. Ta có thể dùng phép thế hoặc khử để tìm nghiệm, rồi thay tọa độ vừa tìm được trở lại cả hai phương trình.
 
-    Tìm chỗ hai tuyến đường gặp nhau tương đương tìm một cặp tọa độ thỏa đồng thời hai điều kiện.
-
-    **Kiến thức tiền đề:** Nhắc giải hệ hai phương trình bậc nhất và phép thế kiểm nghiệm.
-
-    **Bản chất trước công thức:** Một giao điểm là nghiệm chung của hai phương trình; giải từng phương trình riêng không đủ.
-
-    **Hướng dẫn đọc hình:** Vẽ hai đường giao nhau; đánh dấu giao và thử nhận xét vì sao một điểm nằm riêng trên d1 chưa chắc thuộc d2.
-
-    Lập hệ đúng hai phương trình, giải bằng thế/khử, kiểm tọa độ cuối ở cả hai. Nếu hệ vô nghiệm, không được bịa giao điểm.
+    Trên một hình vẽ, một điểm nằm ở đường thứ nhất vẫn chưa chắc thuộc đường thứ hai; chỉ điểm cùng thuộc cả hai mới là giao điểm. Nếu hệ vô nghiệm, hai đường không có giao điểm. Cách kiểm bằng thế giúp phát hiện lỗi dấu hoặc phép biến đổi ngay cả khi đáp số trông có vẻ hợp lý.
 
     **Em vận dụng.** Tìm giao điểm của x+2y=8 và 2x-y=1.
 
@@ -113,17 +87,9 @@
 
     <span id="thpt-g10-chvii-try11" data-thpt-first-try-id="THPT-G10-CHVII-TRY11" data-outcome-id="G10-B20-DISTANCE" data-thpt-help-ref="HELP-G10-CHVII-TRY11"></span>
 
-    #### Khoảng cách điểm đến đường
+    Muốn đo từ một điểm M đến đường thẳng d, ta chọn đoạn ngắn nhất, tức đoạn vuông góc với d, chứ không chọn một đoạn xiên bất kỳ. Trong phương trình d: ax+by+c=0, biểu thức ax_M+by_M+c cho biết độ lệch có dấu theo hướng pháp tuyến (a,b). Độ dài pháp tuyến là căn bậc hai của a²+b²; chia độ lệch cho độ dài này sẽ đưa kết quả về đúng đơn vị khoảng cách.
 
-    Khoảng cách ngắn nhất từ một vị trí đến con đường là độ dài đoạn vuông góc, không phải độ dài đến một điểm tùy ý trên đường.
-
-    **Kiến thức tiền đề:** Ôn độ dài vectơ pháp tuyến (a,b) và giá trị tuyệt đối của số thực.
-
-    **Bản chất trước công thức:** Biểu thức axM+byM+c đo độ lệch có dấu theo pháp tuyến chưa chuẩn hóa; chia √(a²+b²) đổi thành độ dài thật và lấy trị tuyệt đối.
-
-    **Hướng dẫn đọc hình:** Chỉ đoạn vuông góc ngắn nhất từ M tới d, phân biệt với đoạn xiên đến một điểm khác trên d; dấu của biểu thức đổi khi M ở hai phía.
-
-    Kiểm (a,b)≠(0,0), tính |axM+byM+c|/√(a²+b²). Kết quả phải ≥0; nếu M nằm trên d thì khoảng cách 0.
+    Vì khoảng cách không âm và điểm có thể nằm ở bất kỳ phía nào của đường, ta lấy giá trị tuyệt đối ở tử số: d(M,d)=|ax_M+by_M+c|/√(a²+b²), với (a,b) khác vectơ không. Hình dung một đoạn vuông góc ngắn nhất và một đoạn xiên dài hơn; khi M thuộc d thì tử số bằng 0, nên khoảng cách bằng 0. Đó cũng là hai phép kiểm nhanh sau khi tính.
 
     **Em vận dụng.** Tính khoảng cách từ M(1,2) đến d: 3x+4y-1=0.
 
@@ -143,17 +109,9 @@
 
     <span id="thpt-g10-chvii-try12" data-thpt-first-try-id="THPT-G10-CHVII-TRY12" data-outcome-id="G10-B20-ANGLE" data-thpt-help-ref="HELP-G10-CHVII-TRY12"></span>
 
-    #### Góc nhỏ giữa hai đường
+    Giữa hai đường thẳng, ta lấy góc nhỏ trong khoảng từ 0° đến 90°, không phụ thuộc việc chọn chiều nào cho mỗi đường. Nhớ rằng tích vô hướng giữa hai vectơ khác 0 liên hệ với cosin của góc tạo bởi chúng. Nếu đảo chiều một pháp tuyến, góc giữa các mũi tên có thể chuyển từ nhọn sang tù, nhưng góc nhỏ giữa hai đường không đổi.
 
-    Hai tuyến đường không vuông góc vẫn cần một thước đo góc độc lập với việc chúng ta chọn mũi tên hướng nào.
-
-    **Kiến thức tiền đề:** Ôn tích vô hướng, độ dài vectơ và cosin góc giữa hai vectơ khác 0.
-
-    **Bản chất trước công thức:** Góc nhỏ giữa hai đường nằm từ 0 đến 90 độ; đổi hướng một pháp tuyến không làm đổi góc nhỏ nên lấy trị tuyệt đối tích vô hướng.
-
-    **Hướng dẫn đọc hình:** So sánh góc nhọn với góc tù bù nhau do đảo chiều mũi tên; góc giữa đường là góc nhỏ nên không phụ thuộc chiều vectơ.
-
-    Dùng |n1·n2|/(||n1||||n2||) và kiểm 0≤cosφ≤1. Đừng nhầm góc tù giữa hai vectơ với góc nhỏ giữa hai đường.
+    Do đó, với hai pháp tuyến khác vectơ không n₁,n₂, ta tính cos φ=|n₁·n₂|/(||n₁||·||n₂||). Giá trị tuyệt đối loại bỏ ảnh hưởng của chiều mũi tên; kết quả phải nằm từ 0 đến 1. Khi nhìn hình, hãy phân biệt góc tù giữa các vectơ có hướng với góc nhỏ giữa hai đường không có chiều.
 
     **Em vận dụng.** Góc nhỏ giữa d1: x=0 và d2: x-y=0 bằng bao nhiêu?
 

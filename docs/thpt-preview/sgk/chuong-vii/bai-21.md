@@ -18,22 +18,12 @@
 
     ### Ví dụ trực quan
 
-    Hãy tự giải từng câu Tự thử trước khi mở Đối chiếu. Nếu vướng, hãy đọc phần tự khắc phục và tự làm lại một bài tương tự.
-
 
     <span id="thpt-g10-chvii-try13" data-thpt-first-try-id="THPT-G10-CHVII-TRY13" data-outcome-id="G10-B21-CIRCLE_STANDARD" data-thpt-help-ref="HELP-G10-CHVII-TRY13"></span>
 
-    #### Đường tròn là tập hợp điểm cách tâm một khoảng cố định
+    Một trạm phát sóng có tầm phủ cố định tạo ra một vùng hình tròn. Trên đường biên của vùng đó, mọi vị trí M cách trạm I đúng một khoảng R. Điều này gợi lại công thức khoảng cách giữa hai điểm: nếu I(a,b), thì IM²=(x−a)²+(y−b)². Đặt IM=R và bình phương hai vế, ta có phương trình (x−a)²+(y−b)²=R², với R>0.
 
-    Bản đồ một trạm phát sóng có tầm phủ bán kính cố định: đường biên vùng phủ gồm mọi vị trí cách trạm đúng một khoảng.
-
-    **Kiến thức tiền đề:** Nhắc lại công thức khoảng cách hai điểm: IM²=(x-a)²+(y-b)². Bán kính R phải dương để thực sự có đường tròn.
-
-    **Bản chất trước công thức:** Phương trình đường tròn chỉ là phát biểu IM=R viết bằng tọa độ. Bình phương hai vế thu điều kiện khoảng cách, không phải công thức xuất hiện từ đâu đó.
-
-    **Hướng dẫn đọc hình:** Trên hình đánh dấu tâm I, bán kính IM tới một điểm bất kỳ M trên vành; đổi M quanh vành thì IM luôn giữ nguyên.
-
-    Biết tâm I(a,b), R>0, viết (x-a)²+(y-b)²=R². Kiểm tâm khi thế vào vế trái cho 0 và điều kiện R>0; không nhầm R với R².
+    Hãy hình dung một đoạn bán kính từ tâm I đến điểm M trên đường tròn; khi M chạy quanh đường biên, độ dài đoạn đó luôn giữ nguyên. Chính điều kiện khoảng cách không đổi làm nên đường tròn, chứ không phải chỉ hình thức của một biểu thức chứa bình phương. Sau khi viết phương trình, cần phân biệt bán kính R với R²; nếu thay tọa độ tâm vào vế trái thì giá trị bằng 0, không phải R².
 
     **Em vận dụng.** Đường tròn có tâm I(-2,1) và bán kính 3 có phương trình nào?
 
@@ -53,17 +43,9 @@
 
     <span id="thpt-g10-chvii-try14" data-thpt-first-try-id="THPT-G10-CHVII-TRY14" data-outcome-id="G10-B21-CIRCLE_GENERAL" data-thpt-help-ref="HELP-G10-CHVII-TRY14"></span>
 
-    #### Từ phương trình tổng quát suy tâm, bán kính
+    Nếu phương trình đường tròn đã được khai triển thành các hạng tử x², y², x và y, ta phải tìm ngược tâm và bán kính. Bí quyết nằm ở hằng đẳng thức (x−a)²=x²−2ax+a²: gom các hạng tử theo x, theo y rồi thêm bớt bình phương nửa hệ số để đưa phương trình về tổng hai bình phương.
 
-    Một bài toán thường cho phương trình dưới dạng đã khai triển; muốn biết vị trí và kích thước đường tròn phải 'mở ngược' các bình phương.
-
-    **Kiến thức tiền đề:** Nhớ hằng đẳng thức (x-a)²=x²-2ax+a²; một tổng hai bình phương không thể âm.
-
-    **Bản chất trước công thức:** Hoàn thành bình phương chuyển điều kiện đại số thành khoảng cách tới một tâm. Nếu kết quả R²≤0 thì không tạo được đường tròn bán kính dương.
-
-    **Hướng dẫn đọc hình:** Đặt tâm I lên trục tọa độ sau khi hoàn thành bình phương; so sánh hai tình huống R²>0 (vành tròn) và R²=0 (một điểm).
-
-    Nhóm x²+Dx và y²+Ey, thêm bớt bình phương nửa hệ số rồi kiểm R²>0 trước khi lấy căn. Với R²<0 phương trình vô nghiệm thực.
+    Khi ấy phương trình đã cho trở thành điều kiện một điểm cách tâm một khoảng có bình phương R². Nếu R²>0, đó là một đường tròn thực sự; nếu R²=0, tập nghiệm chỉ là một điểm; nếu R²<0, không có điểm thực nào thỏa mãn vì tổng hai bình phương không âm. Trên hình, vị trí của tâm được xác định bởi các hằng số sau khi hoàn thành bình phương, còn R quyết định kích thước đường biên.
 
     **Em vận dụng.** Phương trình x²+y²−6x+4y+8=0 biểu diễn đường tròn nào?
 
@@ -83,17 +65,9 @@
 
     <span id="thpt-g10-chvii-try15" data-thpt-first-try-id="THPT-G10-CHVII-TRY15" data-outcome-id="G10-B21-CIRCLE_TANGENT" data-thpt-help-ref="HELP-G10-CHVII-TRY15"></span>
 
-    #### Tiếp tuyến tại một điểm thuộc đường tròn
+    Từ đường tròn, ta có thể dựng đường thẳng chỉ chạm đường tròn tại một điểm M. Bán kính IM vuông góc với tiếp tuyến tại M; bởi vậy, IM đồng thời là một vectơ pháp tuyến của đường tiếp tuyến. Đây là lý do ta có thể dùng cách viết phương trình đường thẳng qua một điểm và có pháp tuyến đã học ở Bài 19.
 
-    Một tuyến đi men theo vành tròn ngay tại một điểm chỉ chạm vào vành tại đó; hướng tuyến phải vuông góc với bán kính.
-
-    **Kiến thức tiền đề:** Ôn bán kính IM và điều kiện điểm M thuộc đường tròn; pháp tuyến của đường thẳng là vectơ vuông góc đường.
-
-    **Bản chất trước công thức:** Tại M trên đường tròn, bán kính IM vuông góc tiếp tuyến; vì vậy chính IM là một pháp tuyến của tiếp tuyến. Điều kiện 'M nằm trên đường tròn' là bắt buộc.
-
-    **Hướng dẫn đọc hình:** Trên hình vẽ tròn tâm I, bán kính IM và đường thẳng chạm tại M; góc IM với tiếp tuyến là 90°.
-
-    Bước 1 thử IM²=R²; bước 2 lấy n=IM khác 0; bước 3 viết n·MX=0 rồi kiểm khoảng cách từ I đến đường bằng R.
+    Điều kiện quan trọng phải kiểm trước là M thực sự nằm trên đường tròn, tức IM²=R² với R>0. Khi đó IM khác vectơ không; đường tiếp tuyến qua M có điều kiện IM·MX=0. Trong hình vẽ, bán kính đi từ tâm ra điểm tiếp xúc, còn tiếp tuyến tạo với nó góc 90°. Sau cùng có thể kiểm khoảng cách từ I đến tiếp tuyến bằng R.
 
     **Em vận dụng.** Đường tròn tâm I(1,−1), bán kính 5; M(4,3). Viết tiếp tuyến tại M.
 
@@ -113,17 +87,9 @@
 
     <span id="thpt-g10-chvii-try16" data-thpt-first-try-id="THPT-G10-CHVII-TRY16" data-outcome-id="G10-B21-CIRCLE_THROUGH_POINTS" data-thpt-help-ref="HELP-G10-CHVII-TRY16"></span>
 
-    #### Đường tròn đi qua ba điểm không thẳng hàng
+    Hai mốc A và B chưa đủ xác định một đường tròn, vì có nhiều vị trí tâm cùng cách đều hai mốc. Những tâm ấy nằm trên đường trung trực của đoạn AB. Nếu thêm mốc C không thẳng hàng với A,B, tâm phải đồng thời cách đều A,B và A,C; vì vậy nó là giao điểm của hai đường trung trực tương ứng.
 
-    Ba mốc phân biệt không cùng đường thẳng có thể xác định một đường tròn duy nhất qua cả ba; chỉ hai mốc thì còn vô số cách đặt tâm.
-
-    **Kiến thức tiền đề:** Ôn đường trung trực đoạn thẳng: mọi điểm trên đường trung trực cách hai đầu mút bằng nhau.
-
-    **Bản chất trước công thức:** Tâm đường tròn cách đều các điểm đã cho. Giao hai đường trung trực cho tâm nếu ba điểm không thẳng hàng; khi ba điểm thẳng hàng thì không có đường tròn đi qua cả ba.
-
-    **Hướng dẫn đọc hình:** Vẽ tam giác ABC và hai đường trung trực AB, AC; điểm giao của hai đường là tâm I có IA=IB=IC.
-
-    Kiểm ba điểm không thẳng hàng; tìm giao hai đường trung trực rồi tính R từ một điểm. Không chọn tùy ý một tâm chỉ dựa hai điểm.
+    Hãy tưởng tượng tam giác ABC cùng hai đường trung trực của AB và AC: giao điểm I thỏa IA=IB=IC, từ đó lấy R=IA để viết đường tròn. Trước khi dựng phải kiểm ba điểm không thẳng hàng. Nếu chúng thẳng hàng, không có đường tròn hữu hạn nào qua cả ba; nếu chỉ biết hai điểm, ta vẫn chưa chọn được tâm duy nhất.
 
     **Em vận dụng.** Đường tròn qua A(0,0), B(2,0), C(0,2) có tâm, bán kính và phương trình gì?
 
@@ -143,17 +109,9 @@
 
     <span id="thpt-g10-chvii-try17" data-thpt-first-try-id="THPT-G10-CHVII-TRY17" data-outcome-id="G10-B21-LINE_CIRCLE_POSITION" data-thpt-help-ref="HELP-G10-CHVII-TRY17"></span>
 
-    #### Đường thẳng cắt, tiếp xúc hoặc không gặp đường tròn
+    Để biết một đường thẳng d có cắt đường tròn tâm I bán kính R hay không, đôi khi không cần giải hệ phương trình. Hãy nhìn đoạn vuông góc ngắn nhất từ I đến d, có độ dài h=d(I,d). Nếu h lớn hơn R, toàn bộ đường nằm ngoài đường tròn; nếu h bằng R, d tiếp xúc tại một điểm; nếu h nhỏ hơn R, d cắt đường tròn tại hai điểm.
 
-    Để biết một lối đi thẳng có đi qua vùng tròn, chỉ cần so sánh khoảng cách gần nhất từ tâm đến lối đi với bán kính.
-
-    **Kiến thức tiền đề:** Nhắc khoảng cách từ điểm I đến đường d và bán kính R>0; đoạn vuông góc là ngắn nhất.
-
-    **Bản chất trước công thức:** Nếu h=d(I,d)>R thì lối đi ở ngoài vùng; h=R thì chạm một điểm; h<R thì cắt đường tròn tại hai điểm. Không cần giải hệ khi chỉ hỏi số giao điểm.
-
-    **Hướng dẫn đọc hình:** Vẽ ba đường ở khoảng cách tâm lớn hơn, bằng, nhỏ hơn bán kính; đếm số giao điểm lần lượt 0,1,2.
-
-    Tính h=|axI+byI+c|/√(a²+b²), so với R. Phải biết đường có n khác 0 và đường tròn R>0.
+    Ba vị trí ấy có thể được hình dung bằng cách dịch chuyển một đường thẳng song song với chính nó về phía tâm. Với d: ax+by+c=0 và (a,b) khác vectơ không, ta tính h=|ax_I+by_I+c|/√(a²+b²) rồi so với R>0. Phép so sánh khoảng cách giải thích trực tiếp số giao điểm, tránh các bước đại số không cần thiết.
 
     **Em vận dụng.** Đường tròn tâm I(1,2), R=3 và đường d: y=−1 có quan hệ nào?
 

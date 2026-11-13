@@ -34,6 +34,17 @@ if(chviiReceipt)assert.equal(chviiRows.length,4,"ChVII must have all four signed
 const chvii=new Map(chviiRows.map(m=>[Number(m[1]),{
  baseline:m[2],candidate:m[3],tries:Number(m[4]),helps:Number(m[5]),examples:Number(m[6])}]));
 
+const chviiNarrativeReceiptPath=path.join(root,
+ "prototypes/thpt/ux795/G10_CHVII_B19_B22_CONTINUOUS_EXPLANATION_Q18_DELTA_RECEIPT_20261113.md");
+const chviiNarrativeReceipt=fs.existsSync(chviiNarrativeReceiptPath)?
+ fs.readFileSync(chviiNarrativeReceiptPath,"utf8"):"";
+const chviiNarrativeRows=[...chviiNarrativeReceipt.matchAll(/^\| B(19|20|21|22) \| \x60([a-f0-9]{40})\x60 \| \x60([a-f0-9]{40})\x60 \| (\d+) \| (\d+) \| (\d+) \|/gm)];
+if(chviiNarrativeReceipt)assert.equal(chviiNarrativeRows.length,4,
+ "ChVII continuous-explanation follow-on receipt needs exactly four signed rows");
+const chviiNarrative=new Map(chviiNarrativeRows.map(m=>[Number(m[1]),{
+ baseline:m[2],candidate:m[3],tries:Number(m[4]),helps:Number(m[5]),examples:Number(m[6])}]));
+if(chviiNarrativeReceipt)assert.equal(chviiNarrative.size,4,"ChVII additive receipt lesson duplication");
+
 const htmlSelfPractice=/<summary[^>]*>\s*Xem lời giải ba câu tự luyện\s*<\/summary>/g;
 const blob=raw=>crypto.createHash("sha1")
  .update(Buffer.from("blob "+raw.length+"\0")).update(raw).digest("hex");
@@ -54,10 +65,17 @@ for(let n=1;n<=27;n++){
   const source=fs.readFileSync(path.join(root,"docs",route+".md"));
   assert.equal(blob(source),followon.candidate,"B"+n+" source SHA must match signed UX receipt");
  }
- const signedVII=chvii.get(n);
+ const signedVII=chvii.get(n),amendedVII=chviiNarrative.get(n);
  if(signedVII){
   const source=fs.readFileSync(path.join(root,"docs",route+".md"));
-  assert.equal(blob(source),signedVII.candidate,"B"+n+" ChVII Q18 source receipt drift");
+  if(amendedVII){
+   assert.equal(amendedVII.baseline,signedVII.candidate,"B"+n+" follow-on Q18 baseline must match published Chapter VII signed source");
+   assert.equal(amendedVII.tries,signedVII.tries,"B"+n+" FirstTry count altered in narrative receipt");
+   assert.equal(amendedVII.helps,signedVII.helps,"B"+n+" HELP count altered in narrative receipt");
+   assert.equal(amendedVII.examples,signedVII.examples,"B"+n+" D2 example count altered in narrative receipt");
+  }
+  assert.equal(blob(source),amendedVII?amendedVII.candidate:signedVII.candidate,
+   "B"+n+" ChVII source must match latest signed Q18 source-chain receipt");
   assert.equal(ids.length,signedVII.tries,"B"+n+" original ChVII FirstTry count");
   assert.equal([...markdown.matchAll(/data-thpt-help-id="([^"]+)"/g)].length,signedVII.helps,
    "B"+n+" ChVII D6 source receipt drift");

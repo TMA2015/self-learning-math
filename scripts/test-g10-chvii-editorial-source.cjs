@@ -6,7 +6,7 @@
 const fs=require("node:fs"),path=require("node:path"),cp=require("node:child_process"),
  crypto=require("node:crypto"),assert=require("node:assert/strict");
 const root=path.resolve(__dirname,".."),published="bfc15b552a1ea697edb1327f0a48d7a95bbb73ed";
-const {chviiEditorialReceiptRows,candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
+const {chviiEditorialReceiptRows,chviiContinuousReceiptRows,candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 const blob=data=>{const raw=Buffer.isBuffer(data)?data:Buffer.from(data);return crypto.createHash("sha1").update("blob "+raw.length+"\0").update(raw).digest("hex");};
 const ids=(s,k)=>[...s.matchAll(new RegExp(k+'="([^"]+)"',"g"))].map(m=>m[1]).sort();
 const tex=s=>[...s.matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]/g)].map(m=>(m[1]||m[2]).trim().replace(/\s+/g," "));
@@ -32,20 +32,25 @@ const specs={
  21:{count:5,helps:7,figures:1,examples:2,book:["2.1. Phương trình đường tròn","2.2. Phương trình tiếp tuyến của đường tròn"]},
  22:{count:8,helps:10,figures:3,examples:3,book:["2.1. Elip","2.2. Hypebol","2.3. Parabol","2.4. Một số ứng dụng của ba đường conic"]}
 };
-const rows=chviiEditorialReceiptRows();
-assert.equal(rows.size,4,"Exactly four signed Chapter VII rows required");
+const rows=chviiEditorialReceiptRows(),followOn=chviiContinuousReceiptRows();
+assert.equal(rows.size,4,"Exactly four signed Chapter VII original rows required");
+assert.equal(followOn.size,4,"Exactly four source-locked continuous-explanation follow-on rows required");
 let allTry=0,allHelp=0,allFigures=0,allExamples=0;
 for(const [lessonStr,info]of Object.entries(specs)){
- const n=Number(lessonStr),name="B"+n,row=rows.get(name);
- assert(row,"Missing signed receipt "+name);
+ const n=Number(lessonStr),name="B"+n,row=rows.get(name),delta=followOn.get(name);
+ assert(row&&delta,"Missing signed original or follow-on receipt "+name);
+ assert.equal(delta.baseline,row.candidate,name+" follow-on baseline must equal immutable approved #842 candidate");
+ assert.equal(delta.moved,info.count,name+" revised canonical Vận dụng count");
+ assert.equal(delta.helps,info.helps,name+" revised HELP count");
+ assert.equal(delta.examples,info.examples,name+" revised D2 count");
  const rel="docs/thpt-preview/sgk/chuong-vii/bai-"+n+".md";
  const bytes=fs.readFileSync(path.join(root,rel)),s=bytes.toString("utf8");
  const old=cp.spawnSync("git",["show",published+":"+rel],{cwd:root,encoding:"utf8"});
  assert.equal(old.status,0,"Original published Git source inaccessible "+rel+" "+old.stderr);
  const baseline=old.stdout;
  assert.equal(blob(baseline),row.baseline,name+" published source baseline SHA mismatch");
- assert.equal(blob(bytes),row.candidate,name+" changed Markdown differs from exact receipt");
- assert.equal(candidateG10KnowledgeBlob(n),row.candidate,name+" canonical source router not signed");
+ assert.equal(blob(bytes),delta.candidate,name+" continuous candidate Markdown differs from additive receipt");
+ assert.equal(candidateG10KnowledgeBlob(n),delta.candidate,name+" canonical source router must use latest signed narrative delta");
  assert.equal(row.moved,info.count,name+" 25 First Try count source receipt");
  assert.equal(row.helps,info.helps,name+" 33 HELP source receipt");
  assert.equal(row.examples,info.examples,name+" example count source receipt");
@@ -62,6 +67,11 @@ for(const [lessonStr,info]of Object.entries(specs)){
  assert.deepEqual([...s.matchAll(/^=== "([^"]+)"$/gm)].map(x=>x[1]),
   ["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],name+" tab identity");
  const d=s.slice(now,k),knowledge=s.slice(k,e),examples=s.slice(e,m),rem=s.slice(m);
+ assert(d.split("\n").slice(1).every(line=>!line.trim()||line.startsWith("    ")),name+" unindented narrative terminates MkDocs Golden tabbed block");
+ assert(!/Hãy tự giải từng câu Tự thử trước khi mở Đối chiếu/.test(d),name+" redundant global First Try instruction remains");
+ const learning=d.slice(d.indexOf("### Ví dụ trực quan"),d.indexOf("### Thuật ngữ, kiến thức và kỹ năng"));
+ assert(!/^    #### /m.test(learning),name+" discovery still fragmented into mini subheadings");
+ assert(!/\*\*(?:Kiến thức tiền đề|Bản chất trước công thức|Hướng dẫn đọc hình|Vì sao chọn phương pháp và giới hạn|Tại sao là D2 mới):\*\*/.test(learning),name+" internal PED labels still rendered to learners");
  assert.deepEqual([...d.matchAll(/^    ### ([^\n]+)/gm)].map(x=>x[1]),
   ["Cùng tìm hiểu","Ví dụ trực quan","Thuật ngữ, kiến thức và kỹ năng"],name+" Discovery stages");
  assert.deepEqual([...knowledge.matchAll(/^    ### ([^\n]+)/gm)].map(x=>x[1]),info.book,
@@ -83,7 +93,7 @@ for(const [lessonStr,info]of Object.entries(specs)){
  assert(!/^\s{4}\?\?\? question "Tự mở đáp án sau khi đã tự làm"/m.test(s),name+" non-Golden reveal label");
  assert.notDeepEqual(ids(s.replace('data-thpt-first-try-id="','data-thpt-first-try-id="CORRUPTED-'),"data-thpt-first-try-id"),
   ids(baseline,"data-thpt-first-try-id"),name+" negative item-id mutation failed");
- assert.notEqual(blob(s+" "),row.candidate,name+" negative source SHA mutation failed");
+ assert.notEqual(blob(s+" "),delta.candidate,name+" negative source SHA mutation failed");
  assert.notDeepEqual([...knowledge.replace(info.book[0],"WRONG_S1_TITLE").matchAll(/^    ### ([^\n]+)/gm)].map(x=>x[1]),
   info.book,name+" negative SGK title mutation failed");
  allTry+=info.count;allHelp+=info.helps;allFigures+=info.figures;allExamples+=info.examples;
