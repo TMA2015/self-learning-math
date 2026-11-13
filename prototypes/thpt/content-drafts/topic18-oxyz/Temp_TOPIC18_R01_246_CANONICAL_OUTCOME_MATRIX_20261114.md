@@ -11,7 +11,7 @@ CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: NOT_YET_SIGNED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R01_FULL_40_OUTCOMES_20261114.md
-ACADEMIC_SOURCE_BLOB: fb23f4b600fccef3d018d513a0f598f914cc75a2
+ACADEMIC_SOURCE_BLOB: b0a801dfc2168342e2f6ad5aaac14884dfdb33b6
 ORIGINAL_S1_CROSSWALK_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R01_S1_40_OUTCOME_160_SGK_CANONICAL_CROSSWALK_20261114.md
 ORIGINAL_S1_CROSSWALK_BLOB: 7cba588cfe60d3675df99d8aa7e4b9275da9690e
 S1_G12_CHII_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
@@ -322,7 +322,7 @@ RELEASE_AUTHORIZATION: NO
 
 ## Assessment and source scope
 
-- New 86 item bodies/keys/solutions/rubrics live **only** in R01 learner source SHA `fb23f4b600fccef3d018d513a0f598f914cc75a2`; original 160 SGK public item bodies/keys/rubrics are never duplicated in Topic, and remain immutable at original SGK source blob SHAs.
+- New 86 item bodies/keys/solutions/rubrics live **only** in R01 learner source SHA `b0a801dfc2168342e2f6ad5aaac14884dfdb33b6`; original 160 SGK public item bodies/keys/rubrics are never duplicated in Topic, and remain immutable at original SGK source blob SHAs.
 - Original Topic source map `7cba588cfe60d3675df99d8aa7e4b9275da9690e` preserves exact 160 source `ITEM_ID–OUTCOME_ID` relationships. No remapping of original SGK outcome was applied without semantic review in this R01; if a future mapping is judged wrong, create a scoped Delta B/C with stem evidence, not silent rewrite.
 - `TOP18-O23` corresponding to `G12-CHV-B14-O07` is a **non-mandatory integrated application after B17** (sphere–plane section). Its T23, P23 and original SGK C/P/A/W references are correctly linked for provenance but cannot be used as a B14 Core prerequisite or pre-B17 readiness gate.
 - The original G12 SBT B14 p25 missing source concerns exercises 5.6–5.7; exact affected assignment in this new bank is **unresolved** pending source/receipt. Hold just that source-dependent part under `DELTA_D_SOURCE_GAP`, without treating third-party solutions as S1 or annulling original frozen SGK PASS for unrelated items.
