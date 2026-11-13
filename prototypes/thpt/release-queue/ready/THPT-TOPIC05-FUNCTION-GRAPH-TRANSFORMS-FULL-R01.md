@@ -1,25 +1,25 @@
-# CĐ05 — Hàm số, Đồ thị và Phép biến đổi đồ thị · AUTHORING CONTENT_READY · R01
+# CĐ05 — Hàm số, đồ thị và phép biến đổi · AUTHORING CONTENT_READY R04 (stable packet R01)
 
 PACKET_ID: THPT-TOPIC05-FUNCTION-GRAPH-TRANSFORMS-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.0.1
+STANDARD_VERSION: 3.1.0
 QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 55cd4f7aba1196d233b042579632b79b6d34f50e
+SOURCE_COMMIT: e93cf5844878bc068110d0d2eabe4444d01f45fb
 AUTHOR_PR: 824
 CURRENT_PR: #824 Draft AUTHORING, not merged/deployed
 CATALOG_TOPIC_ID: CD05
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_FUNCTION_GRAPH_TRANSFORM_FULL_PUBLIC_R01_20261112.md
-ACADEMIC_SOURCE_BLOB: d075cbcb6443d0c9a17de9acd0fcbf8c1bab114e
-REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC05_GRAPH_TRANSFORMS_R01_AUTHOR_SELF_QA_RECEIPT_20261112.md (author Q18 SELF_VERIFIED, no new independent NotebookLM PASS)
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC05_GRAPH_TRANSFORMS_R01_AUTHOR_SELF_QA_RECEIPT_20261112.md
-REVIEW_RECEIPT_BLOB: e1e11466a279bf451b724b33077e9e0cc5a67b2c
-AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC05-FUNCTION-GRAPH-TRANSFORMS-FULL-R01_HANDOFF_V2_20261112.md
-AUTHOR_HANDOFF_BLOB: 513205b64a891fa18402673fd9c2d5ce42ee3a1b
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_CONTINUOUS_KNOWLEDGE_ARCS_R04_REVIEW_CANDIDATE_20261113.md
+ACADEMIC_SOURCE_BLOB: 04f532661d014ee011e5d2f61a3dca9578a101d4
+REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC05_CONTINUOUS_R04_AUTHOR_SELF_QA_RECEIPT_20261113.md (author Q18 SELF_VERIFIED, no new independent NotebookLM PASS)
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC05_CONTINUOUS_R04_AUTHOR_SELF_QA_RECEIPT_20261113.md
+REVIEW_RECEIPT_BLOB: 82a7c3dd772ce6e0751291e71a17cf28f4cb56b6
+AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC05-FUNCTION-GRAPH-TRANSFORMS-FULL-R04_HANDOFF_V2_20261113.md
+AUTHOR_HANDOFF_BLOB: 8e9960067eed5fb73fca4c5532c0434d3adaf287
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC05_GRAPH_TRANSFORMS_NEW38_PUBLIC_CANONICAL_R01_20261112.md
 PUBLIC_CANONICAL_BANK_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39
 HISTORIC_IMMUTABLE_R18_BLOB: 2340ea4975b37a457363eea59dd617070934983c
@@ -45,7 +45,7 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — CĐ05 canonical student source Git blob d075cbcb6443d0c9a17de9acd0fcbf8c1bab114e, receipt author Q18 e1e11466a279bf451b724b33077e9e0cc5a67b2c, one NEW38 bank blob ab878f1a18dea87872449a79c27b75a612d81b39 and exactly one V2 handoff 513205b64a891fa18402673fd9c2d5ce42ee3a1b; original PR #782 unchanged.
+- [x] A1_SOURCE_SNAPSHOT — CĐ05 canonical student source Git blob 04f532661d014ee011e5d2f61a3dca9578a101d4, receipt author Q18 82a7c3dd772ce6e0751291e71a17cf28f4cb56b6, one NEW38 bank blob ab878f1a18dea87872449a79c27b75a612d81b39 and exactly one V2 handoff 8e9960067eed5fb73fca4c5532c0434d3adaf287; original PR #782 unchanged.
 - [x] A2_SGK_SBT_SCOPE — KNTT S1: SGK G10 T2 B15 printed4–10/PDF5–11, B16 printed11–18/PDF12–19; SBT G10 T2 B15 printed3–9/PDF4–10, B16 printed10–15/PDF11–16. G11 T1 B03 printed22–30/PDF23–31 anchors parity/periodicity. Owner historical original visual SHA receipts 07/11, no new PDF scan; general graph transforms are Topic enrichment.
 - [x] A3_NOTEBOOKLM_VERDICT — Original broad R18 #782 48-outcome academic/PED and owner-held RD1 historic PASS scoped to source SHA 2340ea4975b37a457363eea59dd617070934983c. New CĐ05 17 modules/38 PUBLIC items and three figures Q18 AUTHOR_SELF_VERIFIED 110/110 documented; not a new independent NotebookLM PASS.
 - [x] A4_ITEM_OUTCOME_IDS — 17 independent Topic learning outcomes and 38 new unique PUBLIC item IDs (34 Practice+4 Written), min2 IDs/outcome; 4 new Written 7 point rubrics unique per ID, 17 Self Check PUBLIC reuse placements do not duplicate questions.
@@ -69,7 +69,7 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 - [ ] R3_CLEAN_STUDENT_UI — Before publishing, RELEASE must strip internal author source SHA/Q18/custody metadata from three learner pages.
 - [ ] R4_ASSESSMENT_SAFETY — RELEASE negative-tests no pre-Final Submit hint/AI Tutor/key/feedback/rubric; public self-check cannot confer Mastery.
 - [ ] R5_OWNER_APPROVAL — Draft #824 is authoring only. Owner has not authorized merge or deploy.
-- [ ] AP1_IDEA_HIERARCHY — RELEASE verifies 17 concept modules in learner-friendly graph topic order, not cross-grade SGK list.
+- [ ] AP1_IDEA_HIERARCHY — RELEASE verifies four connected arcs across 17 outcomes in learner-friendly graph topic order, not cross-grade SGK list.
 - [ ] AP2_FORMULA_VISIBILITY — RELEASE verifies radicals, inequalities, graph formulas, interval endpoints and subscripts MathJax or equivalent.
 - [ ] AP3_FIGURE_READABILITY — RELEASE checks 3 accessible SVG diagrams with responsive / keyboard / touch and proper point/end-domain conventions.
 - [ ] AP4_SELF_STUDY_CLARITY — RELEASE independently tests WHY–pre–worked–firsttry–D6 learning progression with no required SGK detours.
