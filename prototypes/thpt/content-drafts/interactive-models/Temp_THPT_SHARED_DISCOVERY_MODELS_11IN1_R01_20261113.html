@@ -64,7 +64,7 @@ document.title="SLM · "+S.title;
 ["title","intro","predict","apply","reason"].forEach(function(k){document.getElementById(k).textContent=(k==="title"?S.title:k==="intro"?S.intro:k==="predict"?"Dự đoán: "+S.predict.replace(/^Dự đoán:\s*/,""):k==="apply"?S.apply:S.reason)});
 var host=document.getElementById("controls"),el={};
 S.sliders.forEach(function(c){var div=document.createElement("div");div.className="control";var label=document.createElement("label");label.htmlFor=c[0];label.textContent=c[1]+": ";var out=document.createElement("output");out.id="o-"+c[0];label.appendChild(out);var input=document.createElement("input");input.type="range";input.id=c[0];input.min=c[2];input.max=c[3];input.step=c[4];input.value=c[5];input.setAttribute("aria-label",c[1]);div.appendChild(label);div.appendChild(input);var limits=document.createElement("div");limits.className="limits";var a=document.createElement("span"),b=document.createElement("span");a.textContent=String(c[2]);b.textContent=String(c[3]);limits.appendChild(a);limits.appendChild(b);div.appendChild(limits);host.appendChild(div);el[c[0]]={input:input,out:out,initial:c[5]};});
-var canvas=document.getElementById("plot"),ctx=canvas.getContext("2d"),result=document.getElementById("readout"),dims={w:0,h:0},pending=false;
+var canvas=document.getElementById("plot"),ctx=canvas.getContext("2d"),result=document.getElementById("readout"),dims={w:0,h:0},pending=false,interacted=false;
 function val(k){return Number(el[k].input.value)}
 function fmt(v){if(!Number.isFinite(v))return "không xác định";var n=Math.abs(v)<1e-10?0:Math.round(v*1000)/1000;return String(n).replace("-","−").replace(".",",")}
 function out(k,v){if(el[k])el[k].out.textContent=fmt(v===undefined?val(k):v)}
@@ -110,10 +110,11 @@ setText("A=30°, a=8, b="+fmt(b)+". Số tam giác không suy biến: "+roots.le
 case "SLM-TOP14-PARABOLA-01":
 p=val("p");x=val("x");y=Math.sqrt(2*p*x);g=graph(-3.5,7,-7,7);curve(g,function(t){return Math.sqrt(2*p*t)},0,7,C.blue);curve(g,function(t){return -Math.sqrt(2*p*t)},0,7,C.blue);line(g.X(-p/2),g.Y(-7),g.X(-p/2),g.Y(7),C.green,2,[6,5]);dot(g.X(p/2),g.Y(0),C.orange);dot(g.X(x),g.Y(y),C.orange);dot(g.X(x),g.Y(-y),C.orange);g.end();var dist=x+p/2;setText("p="+fmt(p)+"; F=("+fmt(p/2)+",0); đường chuẩn x="+fmt(-p/2)+". Tại x="+fmt(x)+", y=±"+fmt(y)+". Khoảng cách từ điểm trên parabol đến F và tới đường chuẩn đều bằng "+fmt(dist)+".");break;
 }
+if(!interacted){result.textContent="Hãy dự đoán kết quả trước, sau đó thay đổi ít nhất một thanh trượt hoặc bấm giá trị bằng bàn phím để quan sát."}
 }
-function schedule(){if(pending)return;pending=true;window.requestAnimationFrame(function(){pending=false;draw()})}
+function schedule(){interacted=true;if(pending)return;pending=true;window.requestAnimationFrame(function(){pending=false;draw()})}
 Object.keys(el).forEach(function(k){el[k].input.addEventListener("input",schedule);el[k].input.addEventListener("change",schedule)});
-document.getElementById("reset").addEventListener("click",function(){Object.keys(el).forEach(function(k){el[k].input.value=el[k].initial});document.getElementById("compare").open=false;draw()});
+document.getElementById("reset").addEventListener("click",function(){Object.keys(el).forEach(function(k){el[k].input.value=el[k].initial});document.getElementById("compare").open=false;interacted=false;draw()});
 window.addEventListener("resize",schedule);draw();
 })();
 </script>
