@@ -270,7 +270,7 @@ Có hai nhóm câu SGK đã học: **giá trị lượng giác của góc 0°–
 
 # Tự kiểm tra
 
-**Chế độ công khai hỗ trợ tự học:** `CLIENT_SELF_CHECK_NO_MASTERY`, **không phải** `TOPIC_READINESS` độc lập. Mỗi lượt chọn các câu public đã có trong ngân hàng, dùng lại **cùng item_id** ở placement khác; không tạo câu mới hoặc ngân hàng bí mật giả. Trong giao diện triển khai, nút **Final Submit** là ranh giới: *không hiển thị gợi ý, lời giải, đáp án, đúng/sai hoặc AI Tutor trước khi học sinh bấm nộp cuối*. Sau Final Submit có thể tự đối chiếu đáp án public, nhưng **không ghi Skill Mastery, không tự chấm rubric free-text**.
+**Tự kiểm tra để biết mình cần ôn gì:** Những câu ở đây đã xuất hiện trong lúc Luyện tập, vì vậy kết quả chỉ giúp em tự đối chiếu, **không phải một bài thi độc lập**. Trước khi bấm **Nộp bài**, em sẽ không thấy gợi ý, lời giải, đáp án hay nhận xét đúng/sai. Sau khi nộp, em có thể xem cách làm và xác định phần cần ôn; lượt này không tự động cộng điểm thành thạo.
 
 Một lượt ôn tự kiểm có 12 nhiệm vụ: dấu góc tù, miền xác định, cạnh/góc đối diện, hai nghiệm SSA, dữ kiện vô nghiệm, diện tích, bán kính và khoảng cách. Các câu lấy từ bài công khai đã học, nên đây là lượt **tự đối chiếu**, không phải đề thi độc lập.
 
