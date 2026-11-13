@@ -46,7 +46,7 @@ el("prism").textContent=fmt(vp)+" cm³";el("pyramid").textContent=fmt(vpy)+" cm�
 el("proof").textContent="S="+fmt(S)+" cm², S′="+fmt(S2)+" cm², √(SS′)="+fmt(mid)+" cm²; V="+fmt(H)+"("+fmt(S)+"+"+fmt(S2)+"+"+fmt(mid)+")/3 = "+fmt(vf)+" cm³.";
 el("reason").textContent=K===0?"k=0: chóp cụt tiến về chóp, V=Sh/3.":K===1?"k=1: hai đáy bằng nhau, V=Sh.":"Hai đáy hình vuông đồng dạng, song song; h luôn là khoảng cách vuông góc.";
 var x=55+A*8,u=x*K,yt=164-H*8;
-var b=[[180-x/2,205],[180+x/2,205],[205+x/2,178],[205-x/2,178]],t=[[180-u/2,yt+24],[180+u/2,yt+24],[205+u/2,yt],[205-u/2,yt]];
+var b=[[180-x/2,205],[180+x/2,205],[205+x/2,178],[205-x/2,178]],t=[[180-u/2,yt+24],[180+u/2,yt+24],[180+25*K+u/2,yt+24-28*K],[180+25*K-u/2,yt+24-28*K]];
 poly("base",b);poly("front",[b[0],b[1],t[1],t[0]]);poly("right",[b[1],b[2],t[2],t[1]]);poly("top",t);
 el("altitude").setAttribute("d","M180 190 V"+Math.round(yt+12));
 el("desc").textContent="Đáy lớn cạnh "+fmt(A)+" cm, đáy nhỏ cạnh "+fmt(A*K)+" cm, cao vuông góc "+fmt(H)+" cm; V="+fmt(vf)+" cm³."; }
