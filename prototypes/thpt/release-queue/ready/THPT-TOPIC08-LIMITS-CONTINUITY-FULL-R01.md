@@ -8,18 +8,18 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 2dc8d712c696c79b7e11bafdf24088f6cbb4420b
+SOURCE_COMMIT: c1a1fe1e5e461b16e2d1cfc07109ce4b260f2a31
 AUTHOR_PR: 829
 CURRENT_PR: https://github.com/TMA2015/self-learning-math/pull/829 — DRAFT AUTHORING, not merged/deployed
 CATALOG_TOPIC_ID: CD08
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic08-limits-continuity/Temp_TOPIC08_LIMITS_CONTINUITY_FULL_PUBLIC_R01_20261112.md
-ACADEMIC_SOURCE_BLOB: b83be2d9a970e9cfe1a6390593354f92d9a20d37
-REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC08_LIMITS_CONTINUITY_R01_AUTHOR_SELF_QA_RECEIPT_20261112.md (Q18 AUTHOR_SELF_VERIFIED, not independent NotebookLM PASS)
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC08_LIMITS_CONTINUITY_R01_AUTHOR_SELF_QA_RECEIPT_20261112.md
-REVIEW_RECEIPT_BLOB: f5d61555b7f8bcdad97dd799d46795f8beb48c3f
-AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC08-LIMITS-CONTINUITY-FULL-R01_HANDOFF_V2_20261112.md
-AUTHOR_HANDOFF_BLOB: 12a77a4ee397318d8bf1c7e95e54de5f9e54c40b
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic08-limits-continuity/Temp_TOPIC08_CONTINUOUS_KNOWLEDGE_ARCS_R04_REVIEW_CANDIDATE_20261113.md
+ACADEMIC_SOURCE_BLOB: 8fd1c9d223ccab794ae20fc8f0206df32f0671c4
+REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC08_CONTINUOUS_R04_AUTHOR_SELF_QA_RECEIPT_20261113.md (Q18 AUTHOR_SELF_VERIFIED, not independent NotebookLM PASS)
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC08_CONTINUOUS_R04_AUTHOR_SELF_QA_RECEIPT_20261113.md
+REVIEW_RECEIPT_BLOB: c3cfa8ca4ec9c05710fed4ab2428f3d2814eec07
+AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC08-LIMITS-CONTINUITY-FULL-R04_HANDOFF_V2_20261113.md
+AUTHOR_HANDOFF_BLOB: cd18380d72b41d09cb0b6ba241e6089644b7aeeb
 PUBLIC_ORIGINAL36_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC08_LIMITS_CONTINUITY_ORIGINAL36_SGK_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_ORIGINAL36_INDEX_BLOB: 7ac532a2c6d9368bf4f991c90092d327c07ea842
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC08_LIMITS_CONTINUITY_NEW22_PUBLIC_CANONICAL_R01_20261112.md
@@ -46,7 +46,7 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — exact source Git blob b83be2d9a970e9cfe1a6390593354f92d9a20d37, Q18 signed receipt blob f5d61555b7f8bcdad97dd799d46795f8beb48c3f, original36 index blob 7ac532a2c6d9368bf4f991c90092d327c07ea842, new22 bank blob 53351f63ad8dbc7bc18f2f519eb731e773c33a62, V2 handoff blob 12a77a4ee397318d8bf1c7e95e54de5f9e54c40b.
+- [x] A1_SOURCE_SNAPSHOT — exact source Git blob 8fd1c9d223ccab794ae20fc8f0206df32f0671c4, Q18 signed receipt blob c3cfa8ca4ec9c05710fed4ab2428f3d2814eec07, original36 index blob 7ac532a2c6d9368bf4f991c90092d327c07ea842, new22 bank blob 53351f63ad8dbc7bc18f2f519eb731e773c33a62, V2 handoff blob cd18380d72b41d09cb0b6ba241e6089644b7aeeb.
 - [x] A2_SGK_SBT_SCOPE — SGK KNTT Toán11 T1 ChV B15 printed104–110,B16 111–118,B17 119–122,end123; historical original publisher SBT direct scan B15 75–78,B16 79–83,B17 84–86,end87–90. No new scan claimed; source/extension boundary recorded.
 - [x] A3_NOTEBOOKLM_VERDICT — current Q18 `AUTHOR_SELF_VERIFIED v3.1.0` with real math/PED/source Q01–Q18 evidence, 56/56 author checks, no new NotebookLM report or fabricated independent PASS; historical original SGK ChV reviewer retained only for source R02/03.
 - [x] A4_ITEM_OUTCOME_IDS — 18 lesson IDs/outcomes and 58 public canonical unique IDs in full single V2 matrix (36 SGK source pointers + 22 NEW); 18 Self Check placements refer back to P01–P18 without item duplication.
