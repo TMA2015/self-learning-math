@@ -12,11 +12,11 @@
 
 ### Chặng 1 — Khoảng cách: vì sao không đo theo đường xiên?
 
-**Đọc hình B26 — hình học về “ngắn nhất”.** 
+**Đọc hình B26 — vì sao đoạn vuông góc ngắn nhất?** 
 
 ![Các đường đo khoảng cách: đoạn vuông góc từ điểm/mặt và đoạn nối hai đường chéo nhau](../../../../docs/assets/images/thpt/FIG-G11-CHVII-B26-01_R00.svg)
 
-Trong hình, hãy chỉ điểm đứng ngoài mặt và **chân vuông góc**; một đường xiên có thể trông ngắn trên giấy nhưng dài hơn trong không gian. Với hai đường chéo nhau, chọn đoạn có hai đầu mút trên đúng hai đường và vuông góc với **cả hai**. Vì sao phải đủ hai điều kiện này? Nếu chỉ vuông góc một đường, dịch đầu còn lại dọc đường kia có thể làm đoạn ngắn hơn.
+Trong hình, hãy chỉ rõ **M** ở ngoài (P), **H** là chân MH⊥(P) và **K** là điểm khác ở mặt phẳng. Đọc đẳng thức **MK²=MH²+HK²** để thấy MK dài hơn MH nếu K≠H. Hình này **minh họa khoảng cách điểm–mặt**, không phải một hình dựng hai đường chéo nhau. Với hai đường chéo nhau ở mục 1.5, tự vẽ hình mới và kiểm tra hai đầu của đoạn vuông góc chung đều thuộc hai đường, đồng thời đoạn ấy vuông góc với cả hai phương.
 
 <!-- AUTHOR_ONLY_SVG_SOURCE: docs/assets/images/thpt/FIG-G11-CHVII-B26-01_R00.svg; BLOB: 26fb51f3af65ba7d86a2907f0eaff808d2d87532 -->
 
@@ -30,7 +30,7 @@ Trong hình, hãy chỉ điểm đứng ngoài mặt và **chân vuông góc**; 
 
 **Ví dụ có giải thích cách chọn phương pháp:** Điểm A nằm cách đường d 3 cm theo phương vuông góc; lấy X khác H thì tam giác AHX vuông H cho AX²=AH²+HX²>AH².
 
-**Tự thử trước khi xem lời giải:** AH⊥d, AH=3 cm. d(A,d) bằng bao nhiêu?
+**Tự thử trước khi xem lời giải:** H∈d, AH⊥d, AH=3 cm. d(A,d) bằng bao nhiêu?
 
 <!-- ITEM_ID: THPT-TOP17-T01; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP17-O01 -->
 
@@ -155,7 +155,7 @@ Có, vì khoảng cách đường song song mặt phẳng không đổi theo đi
 
 ### Chặng 2 — Thể tích: từ lớp cắt bằng nhau đến khối thu nhỏ
 
-**Đọc hình B27 — so sánh ba khối.**
+**Đọc hình B27 — so sánh công thức qua cùng chiều cao.**
 
 ![Lăng trụ, chóp và chóp cụt có đáy và chiều cao minh họa](../../../../docs/assets/images/thpt/FIG-G11-CHVII-B27-01_R00.svg)
 
@@ -251,6 +251,10 @@ Hãy tìm cùng một **diện tích đáy S** và **chiều cao vuông góc h**
 
 </details>
 
+
+**Tự khám phá trên mô hình:** Giữ cạnh đáy lớn \`a=6\` cm và chiều cao vuông góc \`h=4\` cm, thay đổi tỉ lệ cạnh đáy nhỏ \(k\) từ \(0\) đến \(1\). Hãy tự dự đoán \(V\) trước khi thay thanh trượt: khi \(k=0\), khối giới hạn là chóp; khi \(k=1\), giới hạn là lăng trụ. Với \(k=1/2\), \(S=36\), \(S'=9\), căn \(\sqrt{SS'}=18\), nên \(V=84\,\mathrm{cm}^3\). Từ ba trường hợp, em có thể phát hiện lỗi gõ công thức nào?
+
+<!-- AUTHOR_ONLY_MODEL_REFERENCE: SLM-TOP17-FRUSTUM-VOLUME-R00; FILE: Temp_THPT_TOPIC17_FRUSTUM_VOLUME_MODEL_R00_20261113.html; PUBLIC_DISCOVERY_NO_MASTERY -->
 #### 2.5. Trong bài toán ứng dụng, phải phân loại khối, đổi đơn vị, xác định chiều cao **vuông góc**, rồi mới thay số; kết quả thể tích không thể là mét vuông
 
 **Bài toán thực tế bắt đầu từ phân loại khối.** Một thùng hàng hình hộp, một mái chóp hay một phễu chóp cụt không cùng công thức. Hãy làm theo thứ tự: nhận dạng hình, xác định đáy, vẽ chiều cao vuông góc, đổi đơn vị, rồi thay số. Một đáp án “60 m²” cho thể tích là dấu hiệu sai ngay cả khi phép nhân đúng; và lấy cạnh xiên làm h có thể khiến đáp án quá lớn.
@@ -304,7 +308,7 @@ Chỉ sau khi đã hiểu đoạn vuông góc, hình chiếu và chiều cao, h�
 
 <!-- ITEM_ID: THPT-TOP17-P01; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP17-O01 -->
 
-AH⊥d, AH=5, HX=12 với X∈d. Tính AX và d(A,d).
+H,X∈d, AH⊥d tại H, AH=5, HX=12. Tính AX và d(A,d).
 
 <details><summary>Tự mở đáp án và lí giải</summary>
 
@@ -318,7 +322,7 @@ AX=13 theo Pitago, còn d(A,d)=AH=5. Không nhầm đoạn xiên AX với khoả
 
 <!-- ITEM_ID: THPT-TOP17-P02; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP17-O02 -->
 
-AH⊥(P), AH=8 cm. Một đoạn xiên AM=10 cm (M∈P). Tính khoảng cách A đến (P).
+H∈(P) là chân vuông góc, AH⊥(P), AH=8 cm. Một đoạn xiên AM=10 cm (M∈(P)). Tính khoảng cách từ A đến (P).
 
 <details><summary>Tự mở đáp án và lí giải</summary>
 
@@ -346,7 +350,7 @@ AH⊥(P), AH=8 cm. Một đoạn xiên AM=10 cm (M∈P). Tính khoảng cách A 
 
 <!-- ITEM_ID: THPT-TOP17-P04; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP17-O04 -->
 
-(P)∥(Q), A∈(P), AH⊥(Q), AH=6 cm. Tính d((P),(Q)).
+(P)∥(Q), A∈(P), H∈(Q), AH⊥(Q) tại H, AH=6 cm. Tính d((P),(Q)).
 
 <details><summary>Tự mở đáp án và lí giải</summary>
 
