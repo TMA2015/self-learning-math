@@ -22,7 +22,7 @@ RELEASE_AUTHORIZATION: NO
 
 - S1 G10 KNTT SGK tập 1 ChIV: B07 trang in46–50, B08 51–54, B09 55–59, B10 60–65, B11 66–70, cuối71–72; SBT B07 45–47, B08 48–50, B09 51–54, B10 55–58, B11 59–65, cuối66–71. Git reviewed R03 composite `96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9`; hai R01 base blobs `42b206e31421b33860a1bf697d2d04b7aba992cf` và `a9f6fab820559a8da98a5a42cd9902dbf9891f34`. Historical R02 table page discrepancy is recorded in G10 wrapper; do **not** silently reinterpret its pages.
 - S1 G12 KNTT SGK tập 1 ChII: B06 printed45–59/PDF47–61, B07 printed60–66/PDF62–68, B08 printed67–72/PDF69–74, end73–74/PDF75–76; SBT B06 printed38–45/PDF36–43, B07 46–49/PDF44–47, B08 50–54/PDF48–52, end55–58/PDF53–56. Reviewed original R00 source wrapper blob `856a37bd16d2746ffc2e12906de18d1f4338a3b6`. Original reviewer checked PDF scans; this Topic turn did **not** reopen SGK/SBT scans.
-- The broad historical approved [PR #793] Topic Vectơ và phương pháp tọa độ had 7-part scope including Oxy/Oxyz geometric equations. CĐ13 is a **narrower PLAN22-13 study unit**, no plane/line/conic/sphere equations and no clone of PR #793 questions. Academic PASS of G10/G12 SGK is **not** a new reviewer PASS of Topic13.
+- The broader historical Draft PR #793 Topic Vectơ và phương pháp tọa độ had 7-part scope including Oxy/Oxyz geometric equations. CĐ13 is a **narrower PLAN22-13 study unit**, no plane/line/conic/sphere equations and no clone of PR #793 questions. Academic PASS of G10/G12 SGK is **not** a new reviewer PASS of Topic13.
 
 ## OUTCOME_IDS
 
