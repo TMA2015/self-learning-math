@@ -56,14 +56,21 @@ const blob=data=>{
       context+" original IDs retained in original tab, S1 layout pending");
      assert.equal(await blocks.nth(2).locator(":scope > h3").count(),3,
       context+" three historical worked examples still present");
+     assert.equal(await blocks.nth(2).locator(".thpt-g10-example-solution").count(),3,
+      context+" all three original examples grouped in Golden panels");
      const render=await article.evaluate(root=>{
       const body=getComputedStyle(root.querySelector(".tabbed-block p")).fontSize;
       const labels=[...root.querySelectorAll(":scope > .tabbed-set > .tabbed-labels > label")];
       const closed=[...root.querySelectorAll(".tabbed-block details.question")];
+      const tips=[...root.querySelectorAll(".tabbed-block details.tip")];
+      const worked=[...root.querySelectorAll(".tabbed-block .thpt-g10-example-solution")];
       return {
        heights:labels.map(e=>e.getBoundingClientRect().height),
        closed:closed.every(e=>!e.open),
        summaries:closed.map(e=>e.querySelector("summary")?.textContent.trim()),
+       tipsClosed:tips.every(e=>!e.open),
+       tipsCount:tips.length,
+       worked:worked.map(e=>({text:e.textContent.trim(),color:getComputedStyle(e).backgroundColor})),
        overflow:document.documentElement.scrollWidth-window.innerWidth,
        body
       };
@@ -73,6 +80,10 @@ const blob=data=>{
      assert.equal(render.summaries.length,ids[lesson],context+" original voluntary answer controls");
      assert(render.summaries.every(t=>t==="Đối chiếu"),context+" concise optional reveal");
      assert(render.overflow<=3,context+" no horizontal page overflow");
+     assert(render.tipsClosed&&render.tipsCount>=2,context+" all D6 remediation stays closed");
+     assert.equal(render.worked.length,3,context+" all original worked paragraphs retained");
+     assert(render.worked.every(x=>x.text.length>=55&&x.color!=="rgba(0, 0, 0, 0)"),
+      context+" each example has unchanged readable source and a visible Golden panel");
      assert.equal(await article.locator("[data-g10-chapter-selfcheck]").count(),0,
       context+" no independent Readiness exposed");
      // The cross-tab TOC must open the hidden source tab, preserving URL anchors.
