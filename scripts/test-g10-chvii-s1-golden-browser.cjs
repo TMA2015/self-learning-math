@@ -62,7 +62,7 @@ const specs={
      if(n===21)assert(discoveryText.includes("Vận dụng liên bài B20–B21"),
        tag+" B21 TRY17 should use B20 distance as interlesson reasoning");
      if(n===22){
-       assert(!/tâm sai|e=c\\/a/i.test(discoveryText),tag+" compulsory eccentricity returned");
+       assert(!/tâm sai|e=c\/a/i.test(discoveryText),tag+" compulsory eccentricity returned");
        assert(discoveryText.includes("Mở rộng có hướng dẫn · Không bắt buộc"),tag+" B22 TRY20 optional");
      }
      if(n===20){
