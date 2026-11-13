@@ -6,7 +6,7 @@
 const fs=require("node:fs"),path=require("node:path"),cp=require("node:child_process"),
  crypto=require("node:crypto"),assert=require("node:assert/strict");
 const root=path.resolve(__dirname,".."),published="bfc15b552a1ea697edb1327f0a48d7a95bbb73ed";
-const {chviiEditorialReceiptRows,chviiContinuousReceiptRows,chviiAp2ReceiptRows,candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
+const {chviiEditorialReceiptRows,chviiContinuousReceiptRows,chviiAp2ReceiptRows,chviiR02ReceiptRows,candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 const blob=data=>{const raw=Buffer.isBuffer(data)?data:Buffer.from(data);return crypto.createHash("sha1").update("blob "+raw.length+"\0").update(raw).digest("hex");};
 const ids=(s,k)=>[...s.matchAll(new RegExp(k+'="([^"]+)"',"g"))].map(m=>m[1]).sort();
 const tex=s=>[...s.matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]/g)].map(m=>(m[1]||m[2]).trim().replace(/\s+/g," "));
@@ -27,19 +27,24 @@ function revealed(s){
  return out.sort();
 }
 const specs={
- 19:{count:7,helps:9,figures:1,examples:2,book:["2.1. Phương trình tổng quát của đường thẳng","2.2. Phương trình tham số của đường thẳng"]},
- 20:{count:5,helps:7,figures:1,examples:2,book:["2.1. Vị trí tương đối giữa hai đường thẳng","2.2. Góc giữa hai đường thẳng","2.3. Khoảng cách từ một điểm đến một đường thẳng"]},
- 21:{count:5,helps:7,figures:1,examples:2,book:["2.1. Phương trình đường tròn","2.2. Phương trình tiếp tuyến của đường tròn"]},
- 22:{count:8,helps:10,figures:3,examples:3,book:["2.1. Elip","2.2. Hypebol","2.3. Parabol","2.4. Một số ứng dụng của ba đường conic"]}
+ 19:{count:7,helps:9,figures:2,examples:2,book:["2.1. Phương trình tổng quát của đường thẳng","2.2. Phương trình tham số của đường thẳng"]},
+ 20:{count:5,helps:7,figures:3,examples:2,book:["2.1. Vị trí tương đối giữa hai đường thẳng","2.2. Góc giữa hai đường thẳng","2.3. Khoảng cách từ một điểm đến một đường thẳng"]},
+ 21:{count:5,helps:7,figures:3,examples:2,book:["2.1. Phương trình đường tròn","2.2. Phương trình tiếp tuyến của đường tròn"]},
+ 22:{count:8,helps:10,figures:6,examples:3,book:["2.1. Elip","2.2. Hypebol","2.3. Parabol","2.4. Một số ứng dụng của ba đường conic"]}
 };
-const rows=chviiEditorialReceiptRows(),followOn=chviiContinuousReceiptRows(),ap2=chviiAp2ReceiptRows();
+const rows=chviiEditorialReceiptRows(),followOn=chviiContinuousReceiptRows(),ap2=chviiAp2ReceiptRows(),r02=chviiR02ReceiptRows();
 assert.equal(rows.size,4,"Exactly four signed Chapter VII original rows required");
 assert.equal(followOn.size,4,"Exactly four source-locked continuous-explanation follow-on rows required");
 assert.equal(ap2.size,4,"Exactly four AP2 TeX-normalization source rows required");
+assert.equal(r02.size,4,"Four reviewed R02 lesson rows required");
 let allTry=0,allHelp=0,allFigures=0,allExamples=0;
 for(const [lessonStr,info]of Object.entries(specs)){
- const n=Number(lessonStr),name="B"+n,row=rows.get(name),delta=followOn.get(name),display=ap2.get(name);
- assert(row&&delta&&display,"Missing signed editorial, narrative, or AP2 receipt "+name);
+ const n=Number(lessonStr),name="B"+n,row=rows.get(name),delta=followOn.get(name),display=ap2.get(name),teaching=r02.get(name);
+ assert(row&&delta&&display&&teaching,"Missing original→AP2→R02 source chain "+name);
+ assert.equal(teaching.baseline,display.candidate,name+" R02 starts at exact AP2 source");
+ assert.equal(teaching.moved,info.count,name+" R02 item count");
+ assert.equal(teaching.helps,info.helps,name+" R02 HELP count");
+ assert.equal(teaching.examples,info.examples,name+" R02 worked-example count");
  assert.equal(display.baseline,delta.candidate,name+" AP2 origin must equal exact reviewed PR845 blob");
  assert.equal(display.moved,info.count,name+" 25 preserved questions in AP2 receipt");
  assert.equal(display.helps,info.helps,name+" 33 unchanged HELP in AP2 receipt");
@@ -53,8 +58,8 @@ for(const [lessonStr,info]of Object.entries(specs)){
  assert.equal(old.status,0,"Original published Git source inaccessible "+rel+" "+old.stderr);
  const baseline=old.stdout;
  assert.equal(blob(baseline),row.baseline,name+" published source baseline SHA mismatch");
- assert.equal(blob(bytes),display.candidate,name+" new equivalent-TeX Markdown differs from signed AP2 receipt");
- assert.equal(candidateG10KnowledgeBlob(n),display.candidate,name+" canonical source router must use latest signed AP2 source");
+ assert.equal(blob(bytes),teaching.candidate,name+" R02 PASS candidate differs from source");
+ assert.equal(candidateG10KnowledgeBlob(n),teaching.candidate,name+" canonical source router must point to R02");
  assert.equal(row.moved,info.count,name+" 25 First Try count source receipt");
  assert.equal(row.helps,info.helps,name+" 33 HELP source receipt");
  assert.equal(row.examples,info.examples,name+" example count source receipt");
@@ -83,6 +88,20 @@ for(const [lessonStr,info]of Object.entries(specs)){
   assert(rendered.every(z=>!z[1].includes("\\(")),item+" nested inline MathJax");
   if(!proseOnly.has(item))assert(start>0,item+" math-bearing narrative lacks MathJax delimiters");
  }
+ const reviewDiagrams=[...d.matchAll(/<img[^>]+src="([^"]+\\.svg)"/g)].map(x=>x[1]);
+ for(const ref of reviewDiagrams.filter(x=>x.includes("G10_CHVII_R02_"))){
+  const filename=path.basename(ref),where=path.join(root,"docs/assets/images/thpt",filename);
+  assert(fs.existsSync(where),name+" missing concept diagram "+filename);
+  const svg=fs.readFileSync(where,"utf8");
+  assert(svg.includes("<svg")&&svg.includes("<title>")&&svg.includes("<desc>"),name+" inaccessible concept SVG "+filename);
+  assert(!/<script|<foreignObject|onload=|onerror=/i.test(svg),name+" executable SVG "+filename);
+ }
+ if(n===19)assert(d.includes("Mở rộng có hướng dẫn · Học sau Bài 20"),name+" TRY06 should be guided");
+ if(n===21)assert(d.includes("Vận dụng liên bài B20–B21"),name+" TRY17 interlesson");
+ if(n===22){
+  assert(!/tâm sai|e=c\\/a/i.test(d),name+" unapproved compulsory eccentricity");
+  assert(d.includes("Mở rộng có hướng dẫn · Không bắt buộc"),name+" TRY20 guided extension");
+ }
  assert(!/Hãy tự giải từng câu Tự thử trước khi mở Đối chiếu/.test(d),name+" redundant global First Try instruction remains");
  const learning=d.slice(d.indexOf("### Ví dụ trực quan"),d.indexOf("### Thuật ngữ, kiến thức và kỹ năng"));
  assert(!/^    #### /m.test(learning),name+" discovery still fragmented into mini subheadings");
@@ -95,7 +114,9 @@ for(const [lessonStr,info]of Object.entries(specs)){
  assert.equal(ids(knowledge+examples+rem,"data-thpt-first-try-id").length,0,name+" cloned First Try outside Discovery");
  assert.equal(ids(rem,"data-thpt-help-id").length,info.helps,name+" all HELPs in remediation tab");
  assert.equal(ids(d+knowledge+examples,"data-thpt-help-id").length,0,name+" HELP outside remediation");
- assert.equal((s.match(/<figure/g)||[]).length,info.figures,name+" original D5 figures lost");
+ assert.equal((s.match(/<figure/g)||[]).length,info.figures,name+" original D5 plus R02 diagrams");
+ assert.equal((s.match(/data-chvii-r02-diagram=/g)||[]).length,info.figures-(baseline.match(/<figure/g)||[]).length,
+ name+" R02 diagrams must be near matching outcome");
  assert.equal([...examples.matchAll(/^    ### /gm)].length,info.examples,name+" worked example sections incorrect");
  assert.equal([...examples.matchAll(/\*\*Lời giải\.\*\*/g)].length,info.examples,
   name+" missing one clear source-level solution for every example");
@@ -108,14 +129,14 @@ for(const [lessonStr,info]of Object.entries(specs)){
  assert(!/^\s{4}\?\?\? question "Tự mở đáp án sau khi đã tự làm"/m.test(s),name+" non-Golden reveal label");
  assert.notDeepEqual(ids(s.replace('data-thpt-first-try-id="','data-thpt-first-try-id="CORRUPTED-'),"data-thpt-first-try-id"),
   ids(baseline,"data-thpt-first-try-id"),name+" negative item-id mutation failed");
- assert.notEqual(blob(s+" "),display.candidate,name+" negative source SHA mutation failed");
+ assert.notEqual(blob(s+" "),teaching.candidate,name+" negative source SHA mutation failed");
  assert.notDeepEqual([...knowledge.replace(info.book[0],"WRONG_S1_TITLE").matchAll(/^    ### ([^\n]+)/gm)].map(x=>x[1]),
   info.book,name+" negative SGK title mutation failed");
  allTry+=info.count;allHelp+=info.helps;allFigures+=info.figures;allExamples+=info.examples;
  console.log("PASS "+name+" true S1 sections "+info.book.length+", FirstTry "+info.count+", HELP "+info.helps+
   ", figures "+info.figures+", worked problems "+info.examples+", original math and source SHA");
 }
-assert.deepEqual([allTry,allHelp,allFigures,allExamples],[25,33,6,9]);
+assert.deepEqual([allTry,allHelp,allFigures,allExamples],[25,33,14,9]);
 const eq=(x,y)=>Math.abs(x-y)<1e-10;
 assert(eq(2*1+4-6,0),"B19 line normal example");
 assert(eq(6/Math.sqrt(5),Math.hypot(12/5,6/5)),"B20 perpendicular distance example");
