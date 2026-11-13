@@ -21,9 +21,11 @@
 
     <span id="thpt-g10-chvii-try08" data-thpt-first-try-id="THPT-G10-CHVII-TRY08" data-outcome-id="G10-B20-RELATIVE_POSITION" data-thpt-help-ref="HELP-G10-CHVII-TRY08"></span>
 
-    Hai con đường có thể cùng hướng nhưng nằm ở hai vị trí khác nhau; vì thế, chỉ nhìn độ nghiêng của chúng thì chưa thể kết luận là song song phân biệt hay trùng nhau. Với các đường có phương trình \(a_1x+b_1y+c_1=0\) và \(a_2x+b_2y+c_2=0\), ta nhớ rằng cặp hệ số \((a,b)\) tạo một pháp tuyến. Nếu \(a_1b_2-a_2b_1\) khác 0, các pháp tuyến không cùng phương nên hai đường cắt nhau.
+    Khi nhìn hai đường thẳng trên giấy, em có thể đoán chúng cắt nhau hay song song. Nhưng nếu hai nét vẽ gần sát nhau thì mắt thường không đủ chắc chắn. Hãy đổi câu hỏi “hai đường ở vị trí nào?” thành câu hỏi “có điểm nào **cùng thuộc cả hai** không?”. Với \(d_1:x+y=2\) và \(d_2:x-y=0\), một điểm chung phải thỏa cả hai điều kiện. Cộng hai phương trình được \(2x=2\), nên \(x=1,\ y=1\): hai đường **cắt tại \((1,1)\)**.
 
-    Nếu \(a_1b_2-a_2b_1\) bằng 0, hai đường mới chỉ được xác nhận cùng hướng. Lúc này phải xem cả các hằng số c để phân biệt hai đường trùng hẳn nhau với hai đường song song phân biệt. Hình dung ba hình cắt, song song và trùng: hai hình cuối có cùng hướng nhưng khác nhau về vị trí. Hãy kiểm mỗi pháp tuyến khác vectơ không và so sánh bộ hệ số bằng phép nhân chéo, tránh chia cho hệ số có thể bằng 0.
+    Nếu thay đường thứ hai bằng \(x+y=4\), sẽ không có cặp tọa độ nào cùng làm tổng \(x+y\) vừa bằng 2 vừa bằng 4: hai đường **song song phân biệt**. Còn \(2x+2y=4\) thực ra mô tả đúng cùng một tập điểm với \(x+y=2\): hai đường **trùng nhau**. Vậy số nghiệm chung giúp phân biệt ba tình huống trước khi ta học cách kiểm nhanh bằng vectơ pháp tuyến. Khi dùng hệ số để kiểm, cần xét đủ cả hệ số tự do và tránh chia cho hệ số có thể bằng 0.
+
+    <figure class="thpt-r4-plot thpt-r4-concept-figure" data-chvii-r02-diagram="TRY08"><picture><source media="(max-width: 600px)" srcset="../../../../assets/images/thpt/G10_CHVII_R02_B20_TRY08_LINES_MOBILE.svg"><img src="../../../../assets/images/thpt/G10_CHVII_R02_B20_TRY08_LINES.svg" loading="lazy" alt="Ba trường hợp hai đường thẳng cắt, song song, trùng ứng với hệ một nghiệm, vô nghiệm, vô số nghiệm."></picture><figcaption>Số nghiệm chung của hệ cho biết số giao điểm của hai đường thẳng.</figcaption></figure>
 
     **Em vận dụng.** d1: 2x-y+1=0, d2: 4x-2y+3=0 là song song phân biệt hay trùng nhau?
 
@@ -87,9 +89,17 @@
 
     <span id="thpt-g10-chvii-try11" data-thpt-first-try-id="THPT-G10-CHVII-TRY11" data-outcome-id="G10-B20-DISTANCE" data-thpt-help-ref="HELP-G10-CHVII-TRY11"></span>
 
-    Muốn đo từ một điểm M đến đường thẳng d, ta chọn đoạn ngắn nhất, tức đoạn vuông góc với d, chứ không chọn một đoạn xiên bất kỳ. Trong phương trình \(d:\ ax+by+c=0\), biểu thức \(ax_M+by_M+c\) cho biết độ lệch có dấu theo hướng pháp tuyến \((a,b)\). Độ dài pháp tuyến là căn bậc hai của \(a^2+b^2\); chia độ lệch cho độ dài này sẽ đưa kết quả về đúng đơn vị khoảng cách.
+    Từ một điểm \(M_0\) đến đường thẳng \(d\), có thể vẽ rất nhiều đoạn nối. Đoạn ngắn nhất luôn là đoạn \(M_0H\) **vuông góc** với đường, trong đó \(H\) là chân đường vuông góc. Nếu \(d:ax+by+c=0\), vectơ pháp tuyến \(\vec n=(a,b)\ne\vec 0\) chỉ đúng hướng của đoạn \(HM_0\).
 
-    Vì khoảng cách không âm và điểm có thể nằm ở bất kỳ phía nào của đường, ta lấy giá trị tuyệt đối ở tử số: \(d(M,d)=\frac{|ax_M+by_M+c|}{\sqrt{a^2+b^2}}\), với \((a,b)\) khác vectơ không. Hình dung một đoạn vuông góc ngắn nhất và một đoạn xiên dài hơn; khi M thuộc d thì tử số bằng 0, nên khoảng cách bằng 0. Đó cũng là hai phép kiểm nhanh sau khi tính.
+    Vì \(H\) thuộc đường nên \(ax_H+by_H+c=0\). Lấy tích vô hướng \(\vec n\cdot\overrightarrow{HM_0}\), ta được \(a(x_0-x_H)+b(y_0-y_H)=ax_0+by_0+c\). Do \(\overrightarrow{HM_0}\) song song với pháp tuyến, độ lớn tích vô hướng cũng bằng \(\|\vec n\|\cdot M_0H\). Bởi thế
+
+    \[
+    d(M_0,d)=M_0H=\frac{|ax_0+by_0+c|}{\sqrt{a^2+b^2}}.
+    \]
+
+    Dấu giá trị tuyệt đối làm khoảng cách không âm; căn ở mẫu chia cho **độ dài pháp tuyến**, nên kết quả là độ dài thật, không phụ thuộc việc ta nhân cả phương trình đường thẳng với cùng một số khác 0. Ví dụ, với \(d:3x+4y-5=0\) và \(O(0,0)\), khoảng cách là \(5/\sqrt{3^2+4^2}=1\). Chân vuông góc \(H=(3/5,4/5)\) nằm trên đường và đúng cách \(O\) một đơn vị.
+
+    <figure class="thpt-r4-plot thpt-r4-concept-figure" data-chvii-r02-diagram="TRY11"><img src="../../../../assets/images/thpt/G10_CHVII_R02_B20_TRY11_DISTANCE.svg" loading="lazy" alt="Chân vuông góc H từ M0 đến đường Delta và pháp tuyến n cùng phương với HM0."><figcaption>Đoạn ngắn nhất từ điểm tới đường là đoạn vuông góc; chân H nằm trên đường.</figcaption></figure>
 
     **Em vận dụng.** Tính khoảng cách từ M(1,2) đến d: 3x+4y-1=0.
 
