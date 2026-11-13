@@ -6,11 +6,11 @@ TOPIC_ID: CD08
 TARGET_OUTCOME_ID: TOP08-O13
 TARGET_KNOWLEDGE_SECTION: Giới hạn hai phía và giá trị hàm tại điểm
 MODEL_ID: SLM-TOP08-LIMIT-01
-MODEL_VERSION: MODEL_R02_AUTHORING_CANDIDATE
+MODEL_VERSION: MODEL_R03_AUTHORING_CANDIDATE
 MODEL_SOURCE_TYPE: NEW_SHARED_RUNTIME
 MODEL_SOURCE_BRANCH: authoring/thpt-interactive-models-cd01-cd14-r01-20261113
 MODEL_SOURCE_PATH: prototypes/thpt/content-drafts/interactive-models/Temp_THPT_SHARED_DISCOVERY_MODELS_11IN1_R01_20261113.html
-MODEL_SOURCE_BLOB: 7cb825f867f2ff69287536f5ad0a333bed9ce5c2
+MODEL_SOURCE_BLOB: e71afeafd6c12fad6bb5e44a7ba1268b1211c191
 MODEL_QUERY_PARAMETER: ?model=SLM-TOP08-LIMIT-01
 ORIGINAL_TOPIC_BRANCH: authoring/topic08-limits-continuity-r01-20261112
 ORIGINAL_TOPIC_LEARNER_SOURCE_BLOB: 8fd1c9d223ccab794ae20fc8f0206df32f0671c4
@@ -32,9 +32,11 @@ OWNER_MERGE_DEPLOY_APPROVAL: NO
 
 **Model R02 source delta:** source SHA updated after SSA b=16 double-root numerical fix and k<0 quadratic-sign support; 11 models continue to share one canonical runtime. No change to the Topic source or Q18 old receipt; model scope remains targeted QA.
 
+**Delta A UI labels R03:** shared runtime now has numeric axis labels (x/y) and geometric endpoint/focus labels. Mathematics/data unchanged since R02. This placement follows one canonical Git blob; actual browser readability remains an open gate.
+
 ## Chứng cứ và điều kiện chốt
 
-- Giữ nguyên file học liệu R04/R02 và receipt/manifest nguồn Q18 trước đó; mục này là **model-only addendum**. Source canonical mô hình nằm ở Git blob 7cb825f867f2ff69287536f5ad0a333bed9ce5c2, **không copy JavaScript vào câu SGK**, không nhân bản MODEL_ID khi đặt ở SGK/Topic.
+- Giữ nguyên file học liệu R04/R02 và receipt/manifest nguồn Q18 trước đó; mục này là **model-only addendum**. Source canonical mô hình nằm ở Git blob e71afeafd6c12fad6bb5e44a7ba1268b1211c191, **không copy JavaScript vào câu SGK**, không nhân bản MODEL_ID khi đặt ở SGK/Topic.
 - Để đưa trực tiếp vào trang kiến thức, nhánh tích hợp cần có model source khả dụng qua một asset path thật, renderer giải được `MODEL_ID` rồi kiểm HTML trên desktop/mobile; không dùng placeholder như thể đã chạy.
 - **Chưa mở lại Academic/PED verdict của các phần toán cũ**. Thay đổi mô hình có giả thiết, biểu đồ, văn bản quan sát và ảnh hưởng học tập là Delta C đúng phạm vi: phải QA toán, kiểm 390/820/1440, keyboard/touch, MathJax/Golden, không lỗi runtime và ghi receipt. Nếu sai toán: `MODEL_DELTA_HOLD` mô hình này, không làm mất PASS snapshot gốc.
 - Thư viện mô hình chung chỉ là phương án hậu CĐ22, chưa tạo trang/menu website.
