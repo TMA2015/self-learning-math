@@ -292,6 +292,14 @@ const run=()=>{
   article.classList.add("thpt-g10-knowledge-ap1");
   if(lesson<=6){article.classList.add("thpt-g10-first-six-golden");numberG10FirstSix(article);polishG10FirstSix(article);restoreG10FirstSixGolden(article);}
   else if(chapter==="iv"&&lesson<=11)polishG10ChapterIV(article);
+  else if(chapter==="v"&&lesson>=12&&lesson<=14){
+   // B12–B14 UI PREVIEW ONLY: reuse the existing ChIV Golden visual class
+   // and source-preserving DOM polish; no SGK heading/content reshuffle.
+   // The legacy CSS class name is kept for byte-identical CSS regression.
+   // Do not release these lessons until S1/Q18 content layout is verified.
+   polishG10ChapterIV(article);
+   if(article.dataset.g10ChivGolden==="true")article.dataset.g10ChvGolden="preview";
+  }
  }
  if(article.querySelector("[data-sgk-lesson-nav]"))return;
  const root=match[1]+(grade===10?"":"lop-"+grade+"/");
