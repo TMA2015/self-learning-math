@@ -89,7 +89,7 @@
 
     Muốn đo từ một điểm M đến đường thẳng d, ta chọn đoạn ngắn nhất, tức đoạn vuông góc với d, chứ không chọn một đoạn xiên bất kỳ. Trong phương trình \(d:\ ax+by+c=0\), biểu thức \(ax_M+by_M+c\) cho biết độ lệch có dấu theo hướng pháp tuyến \((a,b)\). Độ dài pháp tuyến là căn bậc hai của \(a^2+b^2\); chia độ lệch cho độ dài này sẽ đưa kết quả về đúng đơn vị khoảng cách.
 
-    Vì khoảng cách không âm và điểm có thể nằm ở bất kỳ phía nào của đường, ta lấy giá trị tuyệt đối ở tử số: \(d(M,d)=\frac{|\(ax_M+by_M+c\)|}{\sqrt{a^2+b^2}}\), với \((a,b)\) khác vectơ không. Hình dung một đoạn vuông góc ngắn nhất và một đoạn xiên dài hơn; khi M thuộc d thì tử số bằng 0, nên khoảng cách bằng 0. Đó cũng là hai phép kiểm nhanh sau khi tính.
+    Vì khoảng cách không âm và điểm có thể nằm ở bất kỳ phía nào của đường, ta lấy giá trị tuyệt đối ở tử số: \(d(M,d)=\frac{|ax_M+by_M+c|}{\sqrt{a^2+b^2}}\), với \((a,b)\) khác vectơ không. Hình dung một đoạn vuông góc ngắn nhất và một đoạn xiên dài hơn; khi M thuộc d thì tử số bằng 0, nên khoảng cách bằng 0. Đó cũng là hai phép kiểm nhanh sau khi tính.
 
     **Em vận dụng.** Tính khoảng cách từ M(1,2) đến d: 3x+4y-1=0.
 
