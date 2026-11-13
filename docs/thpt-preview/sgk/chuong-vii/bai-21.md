@@ -223,9 +223,17 @@
 
     **Vì sao chọn cách này?** Bán kính tới tiếp điểm luôn **vuông góc** tiếp tuyến; vì vậy vectơ \(\overrightarrow{IT}=(3,0)\) là một pháp tuyến.
 
-    **Giải.** \(I=(2,1)\), \(R=3\). \(IT=3\), nên T thuộc đường tròn. Tiếp tuyến qua T nhận pháp tuyến \((3,0)\): \(3(x-5)=0\), tức \(x=5\). **Kiểm lại:** đường thẳng đứng vuông góc đoạn bán kính nằm ngang.
+    **Lời giải.** \(I=(2,1)\), \(R=3\). \(IT=3\), nên T thuộc đường tròn. Tiếp tuyến qua T nhận pháp tuyến \((3,0)\): \(3(x-5)=0\), tức \(x=5\). 
 
-    Với \(x^2+y^2-4x+6y-12=0\), hoàn thành bình phương:
+    **Kiểm lại:** đường thẳng đứng vuông góc đoạn bán kính nằm ngang.
+
+    ### Ví dụ 2 — Từ phương trình tổng quát tới tiếp tuyến
+
+    **Đề bài.** Với \(x^2+y^2-4x+6y-12=0\), xác định tâm, bán kính của đường tròn và tiếp tuyến tại \(M(5;1)\).
+
+    **Vì sao chọn cách này?** Hoàn thành bình phương để đọc tâm, bán kính; xác nhận tiếp điểm thuộc đường tròn trước khi dùng bán kính làm pháp tuyến.
+
+    **Lời giải.** Hoàn thành bình phương:
 
     \[
     (x-2)^2+(y+3)^2=25.
@@ -338,4 +346,4 @@
 
     <p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 10 Kết nối tri thức với cuộc sống và học liệu SLM hiện hành. Lời giảng được biên tập nhằm hỗ trợ tự học độc lập.</p>
 
-<small>Nguồn đối chiếu: SGK KNTT tập 2, trang in 43–47; SBT trang 39–41. Ví dụ do dự án biên soạn.</small>
+<small>Nguồn đối chiếu: SGK KNTT tập 2, trang in 43–47; SBT trang 39–41. </small>
