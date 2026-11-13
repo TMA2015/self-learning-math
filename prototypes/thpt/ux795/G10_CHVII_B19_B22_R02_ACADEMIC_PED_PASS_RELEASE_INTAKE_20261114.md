@@ -6,10 +6,10 @@
 
 | Bài | AP2-ready reviewed baseline blob | R02 integrated candidate blob | Canonical Vận dụng | HELP | Worked SGK examples |
 | --- | --- | --- | ---: | ---: | ---: |
-| B19 | `119cbabec7bfd67edb03462f93f740f670ff01f3` | `9944998f59212afbe657a42fbc5a728c5c8ea64b` | 7 | 9 | 2 |
+| B19 | `119cbabec7bfd67edb03462f93f740f670ff01f3` | `f79bafef3c200ec05c236834b77baa26d50519d5` | 7 | 9 | 2 |
 | B20 | `148932c76eb1a958506575f9cb50f40e77fe05f5` | `a4671a8f5365d7fdb75494805310aea699038edd` | 5 | 7 | 2 |
-| B21 | `27b9910b575607b123130b4e4a7ac443562215ac` | `a3d6b621792322c6bd3136aeafca88b809f30936` | 5 | 7 | 2 |
-| B22 | `f8ee2df8754fd6a6d4fd2d941ea47700b8a0b9f0` | `953466d25392e1fffc8832435110857284923200` | 8 | 10 | 3 |
+| B21 | `27b9910b575607b123130b4e4a7ac443562215ac` | `09ba9cb99d02f668dca8dd0509e74e50cffa52c8` | 5 | 7 | 2 |
+| B22 | `f8ee2df8754fd6a6d4fd2d941ea47700b8a0b9f0` | `41a4c8f23d627053e198b970361f77ae5f78938b` | 8 | 10 | 3 |
 
 **Placement role recorded:** Source metadata for TRY06 and TRY20 uses `data-learning-role="guided-extension"`; TRY17 uses `data-learning-role="interlesson-application"`, in addition to the same user-visible scope label. These are unscored placements and do not grant Mastery.
 
