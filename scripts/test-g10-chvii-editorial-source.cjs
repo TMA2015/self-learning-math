@@ -14,7 +14,7 @@ function revealed(s){
  const lines=s.split("\n"),out=[];let capture=null;
  for(let i=0;i<lines.length;i++){
   const line=lines[i];
-  if(/^    \?\?\? question "(?:Tự mở đáp án sau khi đã tự làm|Đối chiếu)"$/.test(line)){
+  if(/^    \?\?\? question "(?:Tự mở đáp án sau khi đã tự làm|Tự mở kết quả sau khi đã thử|Đối chiếu)"$/.test(line)){
    if(capture)out.push(capture.join("\n").trimEnd());
    capture=[];continue;
   }
