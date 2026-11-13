@@ -67,6 +67,7 @@ for(const [lessonStr,info]of Object.entries(specs)){
  assert.deepEqual([...s.matchAll(/^=== "([^"]+)"$/gm)].map(x=>x[1]),
   ["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],name+" tab identity");
  const d=s.slice(now,k),knowledge=s.slice(k,e),examples=s.slice(e,m),rem=s.slice(m);
+ assert(d.split("\n").slice(1).every(line=>!line.trim()||line.startsWith("    ")),name+" unindented narrative terminates MkDocs Golden tabbed block");
  assert(!/Hãy tự giải từng câu Tự thử trước khi mở Đối chiếu/.test(d),name+" redundant global First Try instruction remains");
  const learning=d.slice(d.indexOf("### Ví dụ trực quan"),d.indexOf("### Thuật ngữ, kiến thức và kỹ năng"));
  assert(!/^    #### /m.test(learning),name+" discovery still fragmented into mini subheadings");
