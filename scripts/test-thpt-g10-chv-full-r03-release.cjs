@@ -8,7 +8,7 @@
  * No new private RD1, Mastery, canonical scored item bank, Golden or Firebase change.
  */
 const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path"),crypto=require("node:crypto");
-const {expectedG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
+const {expectedG10KnowledgeBlob,chvEditorialReceiptRows}=require("./thpt-q18-g10-source-receipt.cjs");
 const root=path.resolve(__dirname,".."),read=p=>fs.readFileSync(path.join(root,p),"utf8");
 const fnv=s=>{let h=2166136261;for(let i=0;i<s.length;i++)h=Math.imul(h^s.charCodeAt(i),16777619)>>>0;return h.toString(16).padStart(8,"0")};
 const part="## Trước khi học — hiểu ý nghĩa trước khi nhớ công thức",anchor="## 1. Kiến thức SGK";
@@ -41,7 +41,22 @@ for(const {n,count,first,bridge:expectedBridge,suffix:expectedSuffix}of lessons)
   assert.equal((txt.match(/data-thpt-help-id="HELP-G10-B\d\d-0[12]"/g)||[]).length,2,"Original D6 IDs B"+n);
   assert.equal((txt.match(/^    \?\?\? tip "/gm)||[]).length,2,"Collapsed D6 tips B"+n);
   assert.equal((txt.match(/^    ### Ví dụ [123]\./gm)||[]).length,3,"Three worked examples B"+n);
-  assert(txt.includes("### Kiến thức SGK"),"SGK theory B"+n);
+  if(chvEditorialReceiptRows().has("B"+n)){
+   const content=txt.slice(txt.indexOf('=== "Kiến thức SGK"'),txt.indexOf('=== "Ví dụ"'));
+   const actual=[...content.matchAll(/^    ### (.*)$/gm)].map(m=>m[1]);
+   const expected={
+    12:["2.1. Số gần đúng","2.2. Sai số tuyệt đối và sai số tương đối","2.3. Quy tròn số gần đúng"],
+    13:["2.1. Số trung bình và trung vị","2.2. Tứ phân vị","2.3. Mốt"],
+    14:["2.1. Khoảng biến thiên và khoảng tứ phân vị","2.2. Phương sai và độ lệch chuẩn",
+     "2.3. Phát hiện số liệu bất thường hoặc không chính xác bằng biểu đồ hộp"]
+   }[n];
+   assert.deepEqual(actual,expected,"B"+n+" S1 section headings must match signed Q18");
+   const discovery=txt.slice(txt.indexOf('=== "Khám phá kiến thức"'),txt.indexOf('=== "Kiến thức SGK"'));
+   assert.equal((discovery.match(/data-thpt-first-try-id=/g)||[]).length,count,
+    "B"+n+" First Tries must be in Discovery");
+   assert.equal((content.match(/data-thpt-first-try-id=/g)||[]).length,0,
+    "B"+n+" SGK must not contain First Try answers");
+  }else assert(txt.includes("### Kiến thức SGK"),"Historical SGK theory B"+n);
   assert((txt.match(/\?item=THPT-G10-B\d\d-[CP]\d\d/g)||[]).length>=count,"Original Core/Practice references B"+n);
   assert(!/data-thpt-readiness|data-mastery-credit|data-mastery-write/.test(txt),"No Q16/Mastery leak B"+n);
   continue;
