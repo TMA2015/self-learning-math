@@ -1,6 +1,8 @@
 "use strict";
 const assert=require("node:assert/strict");
 const fs=require("node:fs");
+const crypto=require("node:crypto");
+const {chviEditorialReceiptRows}=require("./thpt-q18-g10-source-receipt.cjs");
 const {chromium}=require("playwright");
 // Run the same no-duplicate / assessment-exposure contract on every THPT QA run.
 require("./test-thpt-shared-item-placement.cjs").run();
@@ -781,8 +783,24 @@ async function ready(page,path){
        const knowledgeTab=article.locator(".tabbed-set").first().locator(".tabbed-labels label")
          .filter({hasText:/^Kiến thức SGK$/});
        assert.equal(await knowledgeTab.count(),1,"B"+lesson+" must expose Kiến thức SGK");
-       await knowledgeTab.click();
+       // Q18 §X-F: only a source-signed ChVI layout relocates First Try
+       // to Discovery. Verify that exact Git blob before switching tabs;
+       // historical unreviewed layouts keep the previous R4 tab assertion.
+       const editorial=chviEditorialReceiptRows().get("B"+lesson);
+       if(editorial){
+         const bytes=fs.readFileSync("docs/thpt-preview/sgk/chuong-vi/bai-"+lesson+".md");
+         const digest=crypto.createHash("sha1").update("blob "+bytes.length+"\0").update(bytes).digest("hex");
+         assert.equal(digest,editorial.candidate,"B"+lesson+" Q18 source-locked First Try relocation");
+         const tabset=article.locator(".tabbed-set").first();
+         const discoveryTab=tabset.locator(".tabbed-labels label").filter({hasText:/^Khám phá kiến thức$/});
+         assert.equal(await discoveryTab.count(),1,"B"+lesson+" must provide approved Discovery tab");
+         assert.equal(await tabset.locator(".tabbed-content > .tabbed-block").nth(1)
+           .locator("[data-thpt-first-try-id]").count(),0,
+           "B"+lesson+" no First Try may remain in formal SGK Knowledge");
+         await discoveryTab.click();
+       }else await knowledgeTab.click();
        const disclosure=questions.first();
+       assert(await disclosure.isVisible(),"B"+lesson+" first voluntary answer must be visible in the selected source-signed tab");
        const collapsedText=await disclosure.innerText();
        await disclosure.locator("summary").click();
        assert(await disclosure.evaluate(el=>el.open),"B"+lesson+" learner can open answer");
@@ -818,7 +836,21 @@ async function ready(page,path){
     assert((await page.locator("h1").first().textContent()).includes(title),"Wrong draft heading B"+lesson);
     const body=await page.locator("article").textContent();
     assert(!/NOTEBOOKLM|ACADEMIC_CLEARANCE|TÍCH HỢP ĐANG QA/.test(body),"B"+lesson+" exposes internal review metadata");
-    assert((await page.locator(".thpt-r4-lead").first().textContent()).length<190,"B"+lesson+" has verbose admin preface");
+    // Published Golden §X-F removes the generic R4 lead (not academic
+    // knowledge). Only apply this expectation to an exact Q18 source SHA.
+    const candidate=chviEditorialReceiptRows().get("B"+lesson);
+    if(candidate){
+      const raw=fs.readFileSync("docs/thpt-preview/sgk/chuong-vi/bai-"+lesson+".md");
+      const sourceSha=crypto.createHash("sha1").update("blob "+raw.length+"\0").update(raw).digest("hex");
+      assert.equal(sourceSha,candidate.candidate,"B"+lesson+" signed Golden lead expectation");
+      assert.equal(await page.locator("article .thpt-r4-screen .thpt-r4-lead").count(),0,
+        "B"+lesson+" source-signed Golden must suppress redundant introduction");
+      assert.equal(await page.locator("article[data-g10-chvi-golden='preview']").count(),1,
+        "B"+lesson+" signed scoped Golden presentation not enabled");
+    }else{
+      assert((await page.locator(".thpt-r4-lead").first().textContent()).length<190,
+        "B"+lesson+" historical admin preface unexpectedly verbose");
+    }
     assert((await page.locator("[data-thpt-readiness]").count())===0,"Academic PASS must not activate learner mastery readiness inside lesson B"+lesson);
     const w=await page.evaluate(()=>({document:document.documentElement.scrollWidth,viewport:innerWidth}));
     assert(w.document<=w.viewport+20,"Draft B"+lesson+" horizontal overflow");
@@ -833,10 +865,25 @@ async function ready(page,path){
   assert(!(await page.locator("article").textContent()).includes("ACADEMIC_CLEARANCE"),"B16 shows internal QA approval");
   await ready(page,"sgk/chuong-vi/bai-17/");
    if(fs.readFileSync("docs/thpt-preview/sgk/chuong-vi/bai-17.md","utf8").includes('=== "Kiến thức SGK"')){
-     const tab=page.locator("article .tabbed-set").first().locator(".tabbed-labels label")
-       .filter({hasText:/^Kiến thức SGK$/});
-     assert.equal(await tab.count(),1,"B17 optional-scope tab must exist");
-     await tab.click();
+     const signed=chviEditorialReceiptRows().get("B17");
+     const tabset=page.locator("article .tabbed-set").first();
+     if(signed){
+       const bytes=fs.readFileSync("docs/thpt-preview/sgk/chuong-vi/bai-17.md");
+       const actual=crypto.createHash("sha1").update("blob "+bytes.length+"\0").update(bytes).digest("hex");
+       assert.equal(actual,signed.candidate,"B17 source-locked optional-extension placement");
+       const examples=tabset.locator(".tabbed-labels label").filter({hasText:/^Ví dụ$/});
+       assert.equal(await examples.count(),1,"B17 source-signed Example tab missing");
+       const blocks=tabset.locator(".tabbed-content > .tabbed-block");
+       assert.equal(await blocks.nth(1).locator('details:has(> summary:text-is("Lưu ý về phạm vi Core và mở rộng của bài toán tham số"))').count(),0,
+         "B17 optional parameter extension must not be presented as core SGK heading");
+       assert.equal(await blocks.nth(2).locator('details:has(> summary:text-is("Lưu ý về phạm vi Core và mở rộng của bài toán tham số"))').count(),1,
+         "B17 optional parameter extension missing from examples");
+       await examples.click();
+     }else{
+       const knowledge=tabset.locator(".tabbed-labels label").filter({hasText:/^Kiến thức SGK$/});
+       assert.equal(await knowledge.count(),1,"B17 historical scope tab must exist");
+       await knowledge.click();
+     }
    }
    const scope=page.locator('article details:has(> summary:text-is("Lưu ý về phạm vi Core và mở rộng của bài toán tham số"))');
   assert.equal(await scope.count(),1,"B17 should offer one compact optional extension note");

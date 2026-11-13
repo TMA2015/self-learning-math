@@ -1,0 +1,56 @@
+name: G10 ChVI B15-B18 S1/Q18 editorial + Golden QA (no deploy)
+on:
+  pull_request:
+    paths:
+      - "docs/thpt-preview/sgk/chuong-vi/bai-*.md"
+      - "docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js"
+      - "prototypes/thpt/ux795/G10_CHVI_B15_B18_S1_Q18_EDITORIAL_RECEIPT_20261113.md"
+      - "scripts/thpt-q18-g10-source-receipt.cjs"
+      - "scripts/test-ux795-g10-chvi-ped-mapping.cjs"
+      - "scripts/test-thpt-chvi-math-block-render.cjs"
+      - "scripts/test-g10-chvi-editorial-source.cjs"
+      - "scripts/test-g10-chvi-s1-golden-browser.cjs"
+      - ".github/workflows/g10-chvi-s1-editorial-golden-qa.yml"
+permissions:
+  contents: read
+jobs:
+  chvi-s1-golden:
+    name: Source-locked ChVI four lessons, Golden browser 12 cases and 27 G10 regressions
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Q18 exact old/new math, 19 canonical ID/D6, S1 mapping and negative tests
+        run: |
+          git fetch --no-tags --depth=3 origin bb6d7a92308d78628761a3284264fa7b55d6c912
+          node scripts/test-g10-chvi-editorial-source.cjs
+          node scripts/test-ux795-g10-chvi-ped-mapping.cjs
+          node scripts/test-thpt-chvi-math-block-render.cjs
+          node scripts/test-ux795-g10-chvi-worked-math.cjs
+          node scripts/test-thpt-q18-release-test-router.cjs
+      - name: Build actual THPT candidate site, no deploy
+        run: |
+          python -m pip install --disable-pip-version-check mkdocs-material
+          mkdocs build --config-file mkdocs.thpt-preview.yml --site-dir site-thpt-preview
+      - name: Install real Chromium test dependency
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install chromium
+      - name: AP1–AP5 and Q15/Q16 ChVI, 12 cases + 81 G10 regression (no deploy)
+        run: |
+          python -m http.server 8765 --bind 127.0.0.1 --directory site-thpt-preview >/tmp/g10-chvi-http.log 2>&1 &
+          python - <<'PY'
+          import time,urllib.request
+          url="http://127.0.0.1:8765/thpt-preview/sgk/chuong-vi/bai-15/"
+          for _ in range(50):
+              try:
+                  with urllib.request.urlopen(url,timeout=2) as response:
+                      if response.status==200: break
+              except Exception: time.sleep(.5)
+          else: raise SystemExit("ChVI candidate HTTP preview cannot start")
+          PY
+          node scripts/test-g10-chvi-s1-golden-browser.cjs
+          node scripts/test-ux795-g10-knowledge-browser.cjs

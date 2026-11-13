@@ -14,20 +14,15 @@
 
     Nếu hệ số của bình phương đổi thành âm, parabol mở xuống và đỉnh cho giá trị lớn nhất. Khi áp dụng vào độ cao hoặc thời gian, luôn kiểm điều kiện thực tế: đỉnh có nằm trong khoảng đang xét hay không. Như vậy, toán học không chỉ cho một con số mà còn cho biết **con số đó có phù hợp tình huống không**.
 
-    ### Thuật ngữ, kiến thức và kỹ năng
-
-    **Thuật ngữ:** Hàm số bậc hai (a
-    e0), parabol, đỉnh, trục đối xứng, khoảng tăng/giảm, cực trị và tập giá trị.
-
-    **Sau bài học, em cần làm được:** Tìm đỉnh/trục và khoảng biến thiên; kiểm đồ thị bằng điểm phù hợp; tìm nghiệm và ứng dụng cực trị có điều kiện.
-
-=== "Kiến thức SGK"
-
-    **Cách đọc hình.** Đường nét đứt \(x=1\) đi qua đỉnh \(I(1;-4)\), nơi parabol đạt giá trị nhỏ nhất. Đọc từ trái sang phải: đồ thị đi xuống trước \(x=1\), rồi đi lên sau \(x=1\). Hai giao điểm với trục \(Ox\) là \((-1;0)\) và \((3;0)\).
+    ### Ví dụ trực quan
 
     <figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="../../../../assets/images/thpt/G10_B16_PARABOLA_VERTEX_R02.svg" loading="lazy" alt="Parabol y=(x-1)²-4 có đỉnh I(1,-4), trục x=1 và hai giao điểm với Ox là -1, 3"><figcaption>Hình do SLM vẽ cho \(y=(x-1)^2-4\). Đỉnh \(I(1,-4)\) và trục \(x=1\) giúp đọc các khoảng tăng, giảm. Không dùng bộ tọa độ này cho mọi parabol.</figcaption></figure>
 
-    ### Bậc hai cần hệ số bậc hai thực sự khác 0
+    **Cách đọc hình.** Đường nét đứt \(x=1\) đi qua đỉnh \(I(1;-4)\), nơi parabol đạt giá trị nhỏ nhất. Đọc từ trái sang phải: đồ thị đi xuống trước \(x=1\), rồi đi lên sau \(x=1\). Hai giao điểm với trục \(Ox\) là \((-1;0)\) và \((3;0)\).
+
+
+
+    #### Bậc hai cần hệ số bậc hai thực sự khác 0
 
     Quỹ đạo phóng vật có thể uốn cong thành hình parabol, khác đường thẳng. Không phải cứ biểu thức viết có \(x^2\) thì chắc chắn là hàm bậc hai nếu hệ số x² bằng 0.
 
@@ -42,24 +37,15 @@
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHVI-TRY06" data-outcome-id="B16_OUT_01" hidden></span>
 
-    ??? question "Em đã tự thử? Mở đáp án để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> Chỉ <span class="arithmatex">\(g(x)\)</span> là bậc hai (a=−1); <span class="arithmatex">\(f(x)=2x+1\)</span> là bậc nhất.</p><p><strong>Vì sao:</strong> Hệ số x² của f bằng 0 nên hạng tử bậc hai biến mất; của g bằng −1 khác 0.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
 
 
 
-    ### Khái niệm
-
-    Một **hàm số bậc hai** có dạng
-
-    \[
-    y=ax^2+bx+c,\qquad a,b,c\in\mathbb{R},\ a\ne 0.
-    \]
-
-    Tập xác định là \(\mathbb{R}\). Điều kiện \(a\ne 0\) là bắt buộc; nếu \(a=0\) thì biểu thức không còn là hàm bậc hai.
 
 
-    ### Đỉnh là điểm đổi chiều tăng/giảm của parabol
+    #### Đỉnh là điểm đổi chiều tăng/giảm của parabol
 
     Khi mô hình độ cao có dạng parabol, ta cần biết thời điểm lên cao nhất chứ không muốn thử vô hạn giá trị. Đỉnh chứa vị trí cực trị và trục đối xứng.
 
@@ -74,34 +60,15 @@
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHVI-TRY07" data-outcome-id="B16_OUT_02" hidden></span>
 
-    ??? question "Em đã tự thử? Mở đáp án để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> Đỉnh <span class="arithmatex">\(I(2;-3)\)</span>, trục <span class="arithmatex">\(x=2\)</span>, parabol mở lên.</p><p><strong>Vì sao:</strong> Vì hệ số của bình phương là 1&gt;0 và <span class="arithmatex">\((x-2)^2\ge0\)</span>, giá trị nhỏ nhất −3 nhận tại x=2.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
 
 
 
-    ### Đồ thị và tính chất
-
-    **Cách đọc hình.** Quan sát đỉnh (1,-4), trục x=1, các giao điểm (-1,0), (3,0); kiểm tính đối xứng của hai nghiệm và chiều mở lên.
-
-    <figure class="thpt-r4-plot" data-thpt-quadratic-plot>
-    <svg viewBox="0 0 640 360" role="img" aria-label="Đồ thị y bằng x bình phương trừ 4x cộng 3, đỉnh I(2;−1), trục nét đứt x=2, cắt Ox ở (1;0) và (3;0), cắt Oy ở (0;3)">
-    <title>Parabol y = x² − 4x + 3</title>
-    <text x="20" y="28">y = x² − 4x + 3 · Đỉnh I(2;−1), nghiệm 1 và 3</text>
-    </svg>
-    <figcaption>Đồ thị được dựng từ chính hàm số của ví dụ, không phải ảnh trang trí hoặc hình chép từ SGK.</figcaption>
-    </figure>
 
 
-    Đồ thị là một **parabol**. Ta viết dưới dạng đỉnh:
-
-    \[
-    y=a(x-h)^2+k,\qquad h=-\frac{b}{2a},\quad k=f(h)=-\frac{\Delta}{4a},\qquad \Delta=b^2-4ac.
-    \]
-
-    - Đỉnh \(I(h;k)\), trục đối xứng \(x=h\).
-
-    ### Khoảng tăng/giảm và tập giá trị đến từ hình mở lên/xuống
+    #### Khoảng tăng/giảm và tập giá trị đến từ hình mở lên/xuống
 
     Độ cao theo thời gian của một vật có thể tăng tới đỉnh rồi giảm; không thể kết luận hàm này đồng biến trên cả trục số. Biết chiều parabol cho ta suy quy luật biến thiên.
 
@@ -116,7 +83,7 @@
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHVI-TRY09" data-outcome-id="B16_OUT_04" hidden></span>
 
-    ??? question "Em đã tự thử? Mở đáp án để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> GTLN 8 tại x=−1, <span class="arithmatex">\(T=(-\infty;8]\)</span>; đồng biến trên <span class="arithmatex">\((-\infty;-1)\)</span>, nghịch biến trên <span class="arithmatex">\((-1;+\infty)\)</span>.</p><p><strong>Vì sao:</strong> Vì −2(x+1)²≤0. Trục x=−1 là ranh giới đổi chiều, parabol mở xuống; mọi y≤8 đều đạt được.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
 
@@ -135,7 +102,9 @@
     </tbody></table></div>
 
 
-    ### Vẽ parabol cần các điểm nhất quán, không phỏng đoán
+
+
+    #### Vẽ parabol cần các điểm nhất quán, không phỏng đoán
 
     Hai parabol có cùng hướng mở nhưng đặt lệch vị trí sẽ mô tả các bài toán rất khác nhau. Muốn vẽ đúng, phải có điểm đỉnh, trục và các điểm kiểm chứng.
 
@@ -158,13 +127,83 @@
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHVI-TRY08" data-outcome-id="B16_OUT_03" hidden></span>
 
-    ??? question "Em đã tự thử? Mở đáp án để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> Đỉnh <span class="arithmatex">\(I(1;-4)\)</span>, trục <span class="arithmatex">\(x=1\)</span>; giao Ox tại <span class="arithmatex">\((-1;0)\)</span> và <span class="arithmatex">\((3;0)\)</span>; giao Oy <span class="arithmatex">\((0;-3)\)</span>. Mở lên.</p><p><strong>Vì sao:</strong> Cho y=0: <span class="arithmatex">\((x-1)^2=4\Rightarrow x=1\pm2=-1,3\)</span>. Thay x=0 được y=1−4=−3. Hai giao Ox đối xứng quanh x=1.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
 
 
 
-    ### Bốn bước vẽ đồ thị parabol
+
+
+    #### Cực trị trong mô hình thực tế phải gắn điều kiện
+
+    Một vật bay lên rồi rơi xuống theo mô hình độ cao parabol; giá trị cực đại toán học chỉ có ý nghĩa khi thời điểm đó nằm trong giai đoạn vật còn bay.
+
+    Biết t là thời gian không âm, tính bình phương hoàn chỉnh và đọc đơn vị m, s. Em có thể học các kiến thức tiền đề ngay trong bài.
+
+    Mô hình \(h(t)\) là hàm bậc hai theo t với miền thực tế t≥0 và h≥0 trong giai đoạn bay. Đỉnh cho độ cao tối đa nếu thời điểm đỉnh thuộc miền đó. Không được áp cực trị trên toàn \(\mathbb R\) rồi kết luận cho t âm.
+
+
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHVI-TRY10" data-outcome-id="B16_OUT_05" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        <div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> <span class="arithmatex">\(h(t)=-5(t-2)^2+20\)</span>, đạt lớn nhất <span class="arithmatex">\(20\,\mathrm{m}\)</span> tại <span class="arithmatex">\(t=2\,\mathrm{s}\)</span>.</p><p><strong>Vì sao:</strong> Vì <span class="arithmatex">\(-(t-2)^2\le0\)</span> và 2∈[0;4]. Hai đầu t=0,4 có h=0; đây là mô hình giả định với thời gian không âm.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
+
+
+
+
+
+    Hàm số bậc hai có thể biểu diễn diện tích hình chữ nhật khi chu vi được giữ cố định. [Xem bài tự luận mỏ neo mẫu](../../thu-vien/tu-luan.md).
+
+    ### Thuật ngữ, kiến thức và kỹ năng
+
+    **Thuật ngữ:** Hàm số bậc hai \(a\ne0\), parabol, đỉnh, trục đối xứng, khoảng tăng/giảm, cực trị và tập giá trị.
+
+    **Sau bài học, em cần làm được:** Tìm đỉnh/trục và khoảng biến thiên; kiểm đồ thị bằng điểm phù hợp; tìm nghiệm và ứng dụng cực trị có điều kiện.
+
+=== "Kiến thức SGK"
+
+    ### 2.1. Khái niệm hàm số bậc hai
+
+    Một **hàm số bậc hai** có dạng
+
+    \[
+    y=ax^2+bx+c,\qquad a,b,c\in\mathbb{R},\ a\ne 0.
+    \]
+
+    Tập xác định là \(\mathbb{R}\). Điều kiện \(a\ne 0\) là bắt buộc; nếu \(a=0\) thì biểu thức không còn là hàm bậc hai.
+
+
+
+
+    ### 2.2. Đồ thị của hàm số bậc hai
+
+
+    <figure class="thpt-r4-plot" data-thpt-quadratic-plot>
+    <svg viewBox="0 0 640 360" role="img" aria-label="Đồ thị y bằng x bình phương trừ 4x cộng 3, đỉnh I(2;−1), trục nét đứt x=2, cắt Ox ở (1;0) và (3;0), cắt Oy ở (0;3)">
+    <title>Parabol y = x² − 4x + 3</title>
+    <text x="20" y="28">y = x² − 4x + 3 · Đỉnh I(2;−1), nghiệm 1 và 3</text>
+    </svg>
+    <figcaption>Đồ thị được dựng từ chính hàm số của ví dụ, không phải ảnh trang trí hoặc hình chép từ SGK.</figcaption>
+    </figure>
+
+    **Cách đọc hình.** Quan sát đỉnh (1,-4), trục x=1, các giao điểm (-1,0), (3,0); kiểm tính đối xứng của hai nghiệm và chiều mở lên.
+
+
+    Đồ thị là một **parabol**. Ta viết dưới dạng đỉnh:
+
+    \[
+    y=a(x-h)^2+k,\qquad h=-\frac{b}{2a},\quad k=f(h)=-\frac{\Delta}{4a},\qquad \Delta=b^2-4ac.
+    \]
+
+    - Đỉnh \(I(h;k)\), trục đối xứng \(x=h\).
+
+    **Tính chất theo dấu hệ số.** Nếu \(a>0\), parabol mở lên, hàm **nghịch biến trên \((-\infty;h)\)**, **đồng biến trên \((h;+\infty)\)** và có tập giá trị \([k;+\infty)\). Nếu \(a<0\), parabol mở xuống, hàm **đồng biến trên \((-\infty;h)\)**, **nghịch biến trên \((h;+\infty)\)** và có tập giá trị \((-\infty;k]\). Các kết luận xét trên \(\mathbb R\); với miền thực tế phải giao với miền ấy.
+
+
+
+    #### Bốn bước vẽ đồ thị parabol
 
     1. **Xác định đỉnh** \(I\left(-\frac{b}{2a};-\frac{\Delta}{4a}\right)\).
     2. **Vẽ trục đối xứng** \(x=-\frac{b}{2a}\) và nhận biết chiều mở qua dấu \(a\).
@@ -173,24 +212,7 @@
 
     *Lưu ý:* Nếu \(\Delta<0\), parabol không cắt \(Ox\); nếu \(\Delta=0\), parabol tiếp xúc \(Ox\) tại đỉnh. Không được tự giả định luôn có hai giao điểm.
 
-    ### Khi biết đỉnh và một điểm, làm sao tìm lại công thức?
-
-    Đôi khi bài toán cho **hình dạng hoặc các điểm của parabol**, chứ chưa cho công thức hàm số. Khi đó ta cần tìm ngược hệ số của hàm bậc hai. Nếu đề đã biết đỉnh \(I(h;k)\), **vì sao nên chọn dạng** \(y=a(x-h)^2+k\)? Vì hai tọa độ đỉnh đã được đưa trực tiếp vào công thức, chỉ còn một ẩn \(a\), thay vì phải tìm cả ba hệ số \(a,b,c\).
-
-    **Ví dụ tự biên soạn.** Một parabol có đỉnh \(I(1;2)\) và đi qua \(A(0;0)\). Tìm hàm số bậc hai có đồ thị là parabol đó.
-
-    **Bước 1 — dùng dữ kiện đỉnh.** Viết \(y=a(x-1)^2+2\), với \(a\ne0\).
-
-    **Bước 2 — dùng điểm thuộc đồ thị.** Vì \(A(0;0)\) nằm trên parabol, thay \(x=0,y=0\) được \(0=a(0-1)^2+2\), suy ra \(a=-2\).
-
-    **Bước 3 — kết luận và tự kiểm.** Vậy \(y=-2(x-1)^2+2=-2x^2+4x\). Thay lại \(x=0\) được \(y=0\), đúng với điểm \(A\). Thêm nữa, \(f(2)=0=f(0)\), nên hai điểm \((0;0)\) và \((2;0)\) đối xứng nhau qua trục \(x=1\); hệ số âm cho biết parabol mở xuống và đỉnh là điểm cao nhất.
-
-    **Giới hạn cần nhớ:** Chỉ biết đỉnh \(I(1;2)\) thì vẫn có vô số parabol \(y=a(x-1)^2+2\) với \(a\ne0\). Ta cần thêm một điểm **có hoành độ khác 1** để xác định \(a\), rồi phải kiểm \(a\ne0\). Nếu điểm bổ sung có hoành độ khác 1 nhưng tung độ vẫn bằng 2, phép tính cho \(a=0\) nên **không có hàm bậc hai** thỏa đề. Nếu điểm bổ sung cũng có hoành độ \(x=1\), nó không xác định được độ mở; nếu tung độ của nó khác 2 thì dữ kiện còn mâu thuẫn. Đây là cách tự kiểm xem đề bài có đủ thông tin hay không.
-
-
 === "Ví dụ"
-
-    Trước khi xem lời giải, hãy xác định dữ kiện, điều phải tìm và lý do chọn cách giải. Sau đó kiểm tra lại điều kiện áp dụng và kết quả, thay vì chỉ nhìn phép tính cuối cùng.
 
     ### Ví dụ — Tìm đỉnh trước khi vẽ
 
@@ -219,34 +241,7 @@
     **Tiếp tục rèn luyện:** [Luyện tập và Vận dụng Chương VI](luyen-tap.md) · [Tự kiểm tra cuối Chương VI](tu-kiem-tra-chuong.md).
 
 
-    ### Cực trị trong mô hình thực tế phải gắn điều kiện
 
-    Một vật bay lên rồi rơi xuống theo mô hình độ cao parabol; giá trị cực đại toán học chỉ có ý nghĩa khi thời điểm đó nằm trong giai đoạn vật còn bay.
-
-    Biết t là thời gian không âm, tính bình phương hoàn chỉnh và đọc đơn vị m, s. Em có thể học các kiến thức tiền đề ngay trong bài.
-
-    Mô hình \(h(t)\) là hàm bậc hai theo t với miền thực tế t≥0 và h≥0 trong giai đoạn bay. Đỉnh cho độ cao tối đa nếu thời điểm đỉnh thuộc miền đó. Không được áp cực trị trên toàn \(\mathbb R\) rồi kết luận cho t âm.
-
-
-    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHVI-TRY10" data-outcome-id="B16_OUT_05" hidden></span>
-
-    ??? question "Em đã tự thử? Mở đáp án để đối chiếu"
-
-        <div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> <span class="arithmatex">\(h(t)=-5(t-2)^2+20\)</span>, đạt lớn nhất <span class="arithmatex">\(20\,\mathrm{m}\)</span> tại <span class="arithmatex">\(t=2\,\mathrm{s}\)</span>.</p><p><strong>Vì sao:</strong> Vì <span class="arithmatex">\(-(t-2)^2\le0\)</span> và 2∈[0;4]. Hai đầu t=0,4 có h=0; đây là mô hình giả định với thời gian không âm.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
-
-
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY10" hidden></span>
-
-    ??? tip "Gợi ý khắc phục khi chưa làm được — 5 bước"
-
-        <ol><li><strong>Nhận diện lỗi:</strong> Chỉ lấy −b/(2a) mà không kiểm miền thời gian hoặc quên đơn vị.</li>
-        <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
-        <li><strong>Kiến thức gốc:</strong> Mô hình <span class="arithmatex">\(h(t)\)</span> là hàm bậc hai theo t với miền thực tế t≥0 và h≥0 trong giai đoạn bay. Đỉnh cho độ cao tối đa nếu thời điểm đỉnh thuộc miền đó. Không được áp cực trị trên toàn <span class="arithmatex">\(\mathbb R\)</span> rồi kết luận cho t âm.</li>
-        <li><strong>Tự sửa:</strong> Viết 0≤t≤4 ngay dưới bài, kiểm t đỉnh có thuộc miền, rồi báo cả giá trị và đơn vị. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
-        <li><strong>Luyện lại:</strong> Quay lại phần kiến thức liên quan ngay trong bài và thử giải thích phương pháp trước khi xem lại kết quả.</li></ol>
-
-
-    Hàm số bậc hai có thể biểu diễn diện tích hình chữ nhật khi chu vi được giữ cố định. [Xem bài tự luận mỏ neo mẫu](../../thu-vien/tu-luan.md).
 
     ### Mở rộng mô hình thực tế từ phần cuối Bài 16
 
@@ -273,7 +268,33 @@
 
     Hai ví dụ củng cố cách tìm giá trị lớn nhất, nhỏ nhất từ dạng đỉnh của parabol. Khi vận dụng mô hình thực tế, cần kiểm tra **điều kiện và đơn vị** của các đại lượng.
 
+
+
+    ### Ví dụ mở rộng — Khi biết đỉnh và một điểm, làm sao tìm lại công thức?
+
+    Đôi khi bài toán cho **hình dạng hoặc các điểm của parabol**, chứ chưa cho công thức hàm số. Khi đó ta cần tìm ngược hệ số của hàm bậc hai. Nếu đề đã biết đỉnh \(I(h;k)\), **vì sao nên chọn dạng** \(y=a(x-h)^2+k\)? Vì hai tọa độ đỉnh đã được đưa trực tiếp vào công thức, chỉ còn một ẩn \(a\), thay vì phải tìm cả ba hệ số \(a,b,c\).
+
+    **Ví dụ tự biên soạn.** Một parabol có đỉnh \(I(1;2)\) và đi qua \(A(0;0)\). Tìm hàm số bậc hai có đồ thị là parabol đó.
+
+    **Bước 1 — dùng dữ kiện đỉnh.** Viết \(y=a(x-1)^2+2\), với \(a\ne0\).
+
+    **Bước 2 — dùng điểm thuộc đồ thị.** Vì \(A(0;0)\) nằm trên parabol, thay \(x=0,y=0\) được \(0=a(0-1)^2+2\), suy ra \(a=-2\).
+
+    **Bước 3 — kết luận và tự kiểm.** Vậy \(y=-2(x-1)^2+2=-2x^2+4x\). Thay lại \(x=0\) được \(y=0\), đúng với điểm \(A\). Thêm nữa, \(f(2)=0=f(0)\), nên hai điểm \((0;0)\) và \((2;0)\) đối xứng nhau qua trục \(x=1\); hệ số âm cho biết parabol mở xuống và đỉnh là điểm cao nhất.
+
+    **Giới hạn cần nhớ:** Chỉ biết đỉnh \(I(1;2)\) thì vẫn có vô số parabol \(y=a(x-1)^2+2\) với \(a\ne0\). Ta cần thêm một điểm **có hoành độ khác 1** để xác định \(a\), rồi phải kiểm \(a\ne0\). Nếu điểm bổ sung có hoành độ khác 1 nhưng tung độ vẫn bằng 2, phép tính cho \(a=0\) nên **không có hàm bậc hai** thỏa đề. Nếu điểm bổ sung cũng có hoành độ \(x=1\), nó không xác định được độ mở; nếu tung độ của nó khác 2 thì dữ kiện còn mâu thuẫn. Đây là cách tự kiểm xem đề bài có đủ thông tin hay không.
+
 === "Lỗi thường gặp"
+
+    <span data-thpt-help-id="HELP-G10-CHVI-TRY10" hidden></span>
+
+    ??? tip "Gợi ý khắc phục khi chưa làm được — 5 bước"
+
+        <ol><li><strong>Nhận diện lỗi:</strong> Chỉ lấy −b/(2a) mà không kiểm miền thời gian hoặc quên đơn vị.</li>
+        <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
+        <li><strong>Kiến thức gốc:</strong> Mô hình <span class="arithmatex">\(h(t)\)</span> là hàm bậc hai theo t với miền thực tế t≥0 và h≥0 trong giai đoạn bay. Đỉnh cho độ cao tối đa nếu thời điểm đỉnh thuộc miền đó. Không được áp cực trị trên toàn <span class="arithmatex">\(\mathbb R\)</span> rồi kết luận cho t âm.</li>
+        <li><strong>Tự sửa:</strong> Viết 0≤t≤4 ngay dưới bài, kiểm t đỉnh có thuộc miền, rồi báo cả giá trị và đơn vị. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
+        <li><strong>Luyện lại:</strong> Quay lại phần kiến thức liên quan ngay trong bài và thử giải thích phương pháp trước khi xem lại kết quả.</li></ol>
 
     <span data-thpt-help-id="HELP-G10-CHVI-TRY06" hidden></span>
 

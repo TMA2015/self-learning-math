@@ -8,6 +8,7 @@ const fs=require("node:fs");
 const path=require("node:path");
 const crypto=require("node:crypto");
 const root=path.resolve(__dirname,"..");
+const {chviEditorialReceiptRows,candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 const mapping=fs.readFileSync(path.join(root,"prototypes/thpt/ux795/UX795_G10_CHVI_PED_OUTCOME_MAPPING_R01_20261110.md"),"utf8");
 const rows=mapping.split("\n").filter(line=>/^\| B(?:15|16|17|18) \| \x60B\d{2}_OUT_\d{2}\x60 \|/.test(line));
 assert.equal(rows.length,19,"Expected 19 G10 ChVI mappings");
@@ -18,7 +19,13 @@ for(const n of [15,16,17,18]){
  const raw=fs.readFileSync(path.join(root,rel));
  const source=raw.toString("utf8");
  const blob=crypto.createHash("sha1").update(Buffer.from("blob "+raw.length+"\0")).update(raw).digest("hex");
- assert(mapping.includes("- B"+n+": "+tick+blob+tick),"B"+n+" candidate Git blob drift");
+ const historic=(mapping.match(new RegExp("- B"+n+": "+tick+"([a-f0-9]{40})"+tick))||[])[1];
+ assert(historic,"B"+n+" immutable 19-outcome mapping must keep historical source");
+ const editorial=chviEditorialReceiptRows().get("B"+n);
+ if(editorial)assert.equal(editorial.baseline,historic,"B"+n+" S1 editorial source chain must start from original PED map");
+ assert.equal(blob,editorial?editorial.candidate:historic,
+  "B"+n+" candidate SHA must equal signed S1/Q18 editorial or original PED map");
+ assert.equal(blob,candidateG10KnowledgeBlob(n),"B"+n+" Q18 router disagrees with source");
  const local=rows.filter(line=>line.startsWith("| B"+n+" |"));
  assert.equal(local.length,n===18?4:5,"B"+n+" missing/extra outcomes");
  for(const line of local){
