@@ -3,7 +3,7 @@
 **New narrow PLAN22-13 unit:** exactly three independent student pages Kiến thức / Luyện tập / Tự kiểm tra, no Topic Core and no SGK body duplication. This is a source-locked A1–A7 authoring handoff, not a released site feature or new independent NotebookLM verdict.
 
 PACKET_ID: THPT-TOPIC13-PLANAR-SPATIAL-VECTORS-FULL-R01
-CONTENT_REVISION: R01
+CONTENT_REVISION: R02
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
@@ -13,13 +13,13 @@ CATALOG_TOPIC_ID: CD13
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_PLANAR_SPATIAL_VECTORS_FULL_R01_20261113.md
-ACADEMIC_SOURCE_BLOB: d8a544101788e07fb33961fbe38f9c20827bcec4
+ACADEMIC_SOURCE_BLOB: d351c5aec660d6482f6694becbd3e2567a14edbf
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC13_PLANAR_SPATIAL_R01_AUTHOR_SELF_QA_RECEIPT_20261113.md
-REVIEW_RECEIPT_BLOB: 0e992be1a1baa100b17aefde59a58d7946f74a1f
+REVIEW_RECEIPT_BLOB: d0d0fcf79149c67fa0e033b9588cd8b15d60b1f5
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R01_AUTHORING_ONLY_METADATA_20261113.md
-AUTHOR_A1_A7_BLOB: 0661419665ca0e0dc9339571d398088db6450c45
+AUTHOR_A1_A7_BLOB: 74ee0dd083b1773211885d7fd77756da2c3ebcf0
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R01_AUTHORING_ONLY_METADATA_20261113.md
-AUTHOR_METADATA_BLOB: 0661419665ca0e0dc9339571d398088db6450c45
+AUTHOR_METADATA_BLOB: 74ee0dd083b1773211885d7fd77756da2c3ebcf0
 ORIGINAL_G10_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/Temp_G10_SGK_CHIV_FULL_R03_CONSOLIDATED_SOURCE_20261105.md
 ORIGINAL_G10_SGK_SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9
 ORIGINAL_G12_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md
@@ -152,7 +152,9 @@ D1: 16 concept-first explanations from displacement/zero-vector convention throu
 
 ## DELTA_LEDGER
 
-- `DELTA_C_ACADEMIC_MATERIAL`: new CĐ13 source `d8a544101788e07fb33961fbe38f9c20827bcec4`, 16 outcome explanations/16 new P/4 new Written with unique answer & rubric, source-locked Q18 self-QA receipt `0e992be1a1baa100b17aefde59a58d7946f74a1f`, P0/P1=0 after 25 numerical+structural checks and targeted PED audit.
+- `DELTA_C_R02_DEEPER_TRANSFER`: after author pedagogical audit, 17 new Practice/Written item numerical parameters/stems/solutions were revised to avoid exact repetition of their worked examples. Canonical IDs, item–outcome roles and old SGK source pointers are unchanged; all 17 revised bodies and four rubrics were recalculated with 30 mathematical/structural assertions, signed by new Q18 source receipt. No claim of reviewer PASS for R02.
+
+- `DELTA_C_ACADEMIC_MATERIAL`: new CĐ13 source `d351c5aec660d6482f6694becbd3e2567a14edbf`, 16 outcome explanations/16 new P/4 new Written with unique answer & rubric, source-locked Q18 self-QA receipt `d0d0fcf79149c67fa0e033b9588cd8b15d60b1f5`, P0/P1=0 after 30 numerical+structural checks and targeted PED audit.
 - `DELTA_B_SOURCE_EQUIVALENT`: 20 G10 and12 G12 unchanged SGK canonical IDs referenced only; each original answer/rubric remains in its original source bank, not copied into Topic.
 - Four original SVGs unchanged with SHA; no new image generation or false browser rendering evidence.
 - Historical broad Draft PR #793 covers more geometry/analytic Oxy/Oxyz, but **CĐ13** remains a narrower independent PLAN22-13. Do not assume this Topic reviewed because original SGK or #793 was reviewed. Old SGK source branches need source-resolution check at RELEASE integration.
@@ -230,28 +232,28 @@ One authoritative source: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDAR
 
 | Q_ID | LESSON/OUTCOME/S1 SOURCE | AUTHOR_MATH_PED_QA | Q18_MODE_EVIDENCE | RELEASE_AP_R_MAPPING |
 |---|---|---|---|---|
-| Q01 | Toán10 ChIV B07–B11 + Toán12 ChII B06–B08; source printed pages inherited with disclosure | SGK scope + source receipts reviewed; original bytes remain unchanged | AUTHOR_SELF_VERIFIED; SOURCE d8a544101788; RECEIPT 0e992be1a1ba | RELEASE_AP_R_UNTESTED_AUTHORING |
-| Q02 | 16 TOP13-O01..O16, 3 student pages and one outcome→item→remedy map | Each outcome independently backed by lesson, selftry and item | AUTHOR_SELF_VERIFIED; SOURCE d8a544101788; RECEIPT 0e992be1a1ba | RELEASE_AP_R_UNTESTED_AUTHORING |
-| Q03 | definitions, nonzero assumptions, zero-vector convention, dot-angle validity | No division by zero; coordinate frames and lengths explicit | AUTHOR_SELF_VERIFIED; SOURCE d8a544101788; RECEIPT 0e992be1a1ba | RELEASE_AP_R_UNTESTED_AUTHORING |
-| Q04 | 16 worked examples from displacement to plane/space dot and drone | Each example justifies method, step, conditions and final unit | AUTHOR_SELF_VERIFIED; SOURCE d8a544101788; RECEIPT 0e992be1a1ba | RELEASE_AP_R_UNTESTED_AUTHORING |
-| Q05 | 20 SGK G10+12 SGK G12 reused, 16 new Topic Practice | Differentiated basic, transfer and applied math | AUTHOR_SELF_VERIFIED; SOURCE d8a544101788; RECEIPT 0e992be1a1ba | RELEASE_AP_R_UNTESTED_AUTHORING |
-| Q06 | 4 new Written with 7-point each rubric, no new Anchor bank | One answer and rubric per canonical Written | AUTHOR_SELF_VERIFIED; SOURCE d8a544101788; RECEIPT 0e992be1a1ba | RELEASE_AP_R_UNTESTED_AUTHORING |
-| Q07 | 4 original accessible math SVG, source hashes and fig-reading guidance | No website or phone claim; SVG same original assets | AUTHOR_SELF_VERIFIED; SOURCE d8a544101788; RECEIPT 0e992be1a1ba | RELEASE_AP_R_UNTESTED_AUTHORING |
-| Q08 | 16 local D6 error→concept→retake routes | Signs, zero vector, Chasles, metric/gauge, dot conditions | AUTHOR_SELF_VERIFIED; SOURCE d8a544101788; RECEIPT 0e992be1a1ba | RELEASE_AP_R_UNTESTED_AUTHORING |
-| Q09 | motivations: directional displacement, force, robot, drone | WHY before formulas for each outcome | AUTHOR_SELF_VERIFIED; SOURCE d8a544101788; RECEIPT 0e992be1a1ba | RELEASE_AP_R_UNTESTED_AUTHORING |
-| Q10 | explicit prerequisites: Pythagoras, geometry, ratios, coordinate systems | Prereq taught in-place; independent Topic path | AUTHOR_SELF_VERIFIED; SOURCE d8a544101788; RECEIPT 0e992be1a1ba | RELEASE_AP_R_UNTESTED_AUTHORING |
-| Q11 | concept-first Chasles, dot, norm, triangle/box before formulas | Students can explain meaning before calculating | AUTHOR_SELF_VERIFIED; SOURCE d8a544101788; RECEIPT 0e992be1a1ba | RELEASE_AP_R_UNTESTED_AUTHORING |
-| Q12 | guided fig readings: parallelogram, box, Oxyz point, vector components | Never infer true geometry from projection distortion | AUTHOR_SELF_VERIFIED; SOURCE d8a544101788; RECEIPT 0e992be1a1ba | RELEASE_AP_R_UNTESTED_AUTHORING |
-| Q13 | choose geometry, components, dot or Pitago by known data | Scope and limits of zero vector and nonorthogonal box | AUTHOR_SELF_VERIFIED; SOURCE d8a544101788; RECEIPT 0e992be1a1ba | RELEASE_AP_R_UNTESTED_AUTHORING |
-| Q14 | 16 first tries with voluntary reveal, D6 actual target | Students attempt before solution, then remediation | AUTHOR_SELF_VERIFIED; SOURCE d8a544101788; RECEIPT 0e992be1a1ba | RELEASE_AP_R_UNTESTED_AUTHORING |
-| Q15 | 52 unique IDs, 32 immutable SGK source pointers +20 new bodies | One canonical body, roles and repeat placements do not clone | AUTHOR_SELF_VERIFIED; SOURCE d8a544101788; RECEIPT 0e992be1a1ba | RELEASE_AP_R_UNTESTED_AUTHORING |
-| Q16 | 0 private RD1, 16 public replay selfchecks, no mastery activation | Release must protect Final Submit and no hint/key before | AUTHOR_SELF_VERIFIED; SOURCE d8a544101788; RECEIPT 0e992be1a1ba | RELEASE_AP_R_UNTESTED_AUTHORING |
-| Q17 | Exactly Kiến thức/Luyện tập/Tự kiểm tra with no Topic Core | Fully standalone learning content, cross-link only optional | AUTHOR_SELF_VERIFIED; SOURCE d8a544101788; RECEIPT 0e992be1a1ba | RELEASE_AP_R_UNTESTED_AUTHORING |
-| Q18 | AUTHOR_SELF_VERIFIED v3.1.0 source and Q18 receipt locked | Old SGK/Topic2 independent PASS is not new Topic13 PASS | AUTHOR_SELF_VERIFIED; SOURCE d8a544101788; RECEIPT 0e992be1a1ba | RELEASE_AP_R_UNTESTED_AUTHORING |
+| Q01 | Toán10 ChIV B07–B11 + Toán12 ChII B06–B08; source printed pages inherited with disclosure | SGK scope + source receipts reviewed; original bytes remain unchanged | AUTHOR_SELF_VERIFIED; SOURCE d351c5aec660; RECEIPT d0d0fcf79149 | RELEASE_AP_R_UNTESTED_AUTHORING |
+| Q02 | 16 TOP13-O01..O16, 3 student pages and one outcome→item→remedy map | Each outcome independently backed by lesson, selftry and item | AUTHOR_SELF_VERIFIED; SOURCE d351c5aec660; RECEIPT d0d0fcf79149 | RELEASE_AP_R_UNTESTED_AUTHORING |
+| Q03 | definitions, nonzero assumptions, zero-vector convention, dot-angle validity | No division by zero; coordinate frames and lengths explicit | AUTHOR_SELF_VERIFIED; SOURCE d351c5aec660; RECEIPT d0d0fcf79149 | RELEASE_AP_R_UNTESTED_AUTHORING |
+| Q04 | 16 worked examples from displacement to plane/space dot and drone | Each example justifies method, step, conditions and final unit | AUTHOR_SELF_VERIFIED; SOURCE d351c5aec660; RECEIPT d0d0fcf79149 | RELEASE_AP_R_UNTESTED_AUTHORING |
+| Q05 | 20 SGK G10+12 SGK G12 reused, 16 new Topic Practice | Differentiated basic, transfer and applied math | AUTHOR_SELF_VERIFIED; SOURCE d351c5aec660; RECEIPT d0d0fcf79149 | RELEASE_AP_R_UNTESTED_AUTHORING |
+| Q06 | 4 new Written with 7-point each rubric, no new Anchor bank | One answer and rubric per canonical Written | AUTHOR_SELF_VERIFIED; SOURCE d351c5aec660; RECEIPT d0d0fcf79149 | RELEASE_AP_R_UNTESTED_AUTHORING |
+| Q07 | 4 original accessible math SVG, source hashes and fig-reading guidance | No website or phone claim; SVG same original assets | AUTHOR_SELF_VERIFIED; SOURCE d351c5aec660; RECEIPT d0d0fcf79149 | RELEASE_AP_R_UNTESTED_AUTHORING |
+| Q08 | 16 local D6 error→concept→retake routes | Signs, zero vector, Chasles, metric/gauge, dot conditions | AUTHOR_SELF_VERIFIED; SOURCE d351c5aec660; RECEIPT d0d0fcf79149 | RELEASE_AP_R_UNTESTED_AUTHORING |
+| Q09 | motivations: directional displacement, force, robot, drone | WHY before formulas for each outcome | AUTHOR_SELF_VERIFIED; SOURCE d351c5aec660; RECEIPT d0d0fcf79149 | RELEASE_AP_R_UNTESTED_AUTHORING |
+| Q10 | explicit prerequisites: Pythagoras, geometry, ratios, coordinate systems | Prereq taught in-place; independent Topic path | AUTHOR_SELF_VERIFIED; SOURCE d351c5aec660; RECEIPT d0d0fcf79149 | RELEASE_AP_R_UNTESTED_AUTHORING |
+| Q11 | concept-first Chasles, dot, norm, triangle/box before formulas | Students can explain meaning before calculating | AUTHOR_SELF_VERIFIED; SOURCE d351c5aec660; RECEIPT d0d0fcf79149 | RELEASE_AP_R_UNTESTED_AUTHORING |
+| Q12 | guided fig readings: parallelogram, box, Oxyz point, vector components | Never infer true geometry from projection distortion | AUTHOR_SELF_VERIFIED; SOURCE d351c5aec660; RECEIPT d0d0fcf79149 | RELEASE_AP_R_UNTESTED_AUTHORING |
+| Q13 | choose geometry, components, dot or Pitago by known data | Scope and limits of zero vector and nonorthogonal box | AUTHOR_SELF_VERIFIED; SOURCE d351c5aec660; RECEIPT d0d0fcf79149 | RELEASE_AP_R_UNTESTED_AUTHORING |
+| Q14 | 16 first tries with voluntary reveal, D6 actual target | Students attempt before solution, then remediation | AUTHOR_SELF_VERIFIED; SOURCE d351c5aec660; RECEIPT d0d0fcf79149 | RELEASE_AP_R_UNTESTED_AUTHORING |
+| Q15 | 52 unique IDs, 32 immutable SGK source pointers +20 new bodies | One canonical body, roles and repeat placements do not clone | AUTHOR_SELF_VERIFIED; SOURCE d351c5aec660; RECEIPT d0d0fcf79149 | RELEASE_AP_R_UNTESTED_AUTHORING |
+| Q16 | 0 private RD1, 16 public replay selfchecks, no mastery activation | Release must protect Final Submit and no hint/key before | AUTHOR_SELF_VERIFIED; SOURCE d351c5aec660; RECEIPT d0d0fcf79149 | RELEASE_AP_R_UNTESTED_AUTHORING |
+| Q17 | Exactly Kiến thức/Luyện tập/Tự kiểm tra with no Topic Core | Fully standalone learning content, cross-link only optional | AUTHOR_SELF_VERIFIED; SOURCE d351c5aec660; RECEIPT d0d0fcf79149 | RELEASE_AP_R_UNTESTED_AUTHORING |
+| Q18 | AUTHOR_SELF_VERIFIED v3.1.0 source and Q18 receipt locked | Old SGK/Topic2 independent PASS is not new Topic13 PASS | AUTHOR_SELF_VERIFIED; SOURCE d351c5aec660; RECEIPT d0d0fcf79149 | RELEASE_AP_R_UNTESTED_AUTHORING |
 
 ## REVIEW_SOURCE_RECEIPT
 
-Actual learner `ACADEMIC_SOURCE_BLOB=d8a544101788e07fb33961fbe38f9c20827bcec4`, author metadata `0661419665ca0e0dc9339571d398088db6450c45`, signed author self-QA `0e992be1a1baa100b17aefde59a58d7946f74a1f` are distinct source-locked Git blobs. 52 canonical IDs, 16 outcomes, exactly 16 public replay selfcheck placements. 20 new items have their only answer and rubric body in student academic source; original 32 SGK item bodies only at original unchanged canonical source. Cross-field mapping is the one `ITEM_OUTCOME_MATRIX` above. Additional outcome PED trace in author metadata:
+Actual learner `ACADEMIC_SOURCE_BLOB=d351c5aec660d6482f6694becbd3e2567a14edbf`, author metadata `74ee0dd083b1773211885d7fd77756da2c3ebcf0`, signed author self-QA `d0d0fcf79149c67fa0e033b9588cd8b15d60b1f5` are distinct source-locked Git blobs. 52 canonical IDs, 16 outcomes, exactly 16 public replay selfcheck placements. 20 new items have their only answer and rubric body in student academic source; original 32 SGK item bodies only at original unchanged canonical source. Cross-field mapping is the one `ITEM_OUTCOME_MATRIX` above. Additional outcome PED trace in author metadata:
 
 ## OUTCOME_SOURCE_AND_PED_TRACE
 
@@ -277,7 +279,7 @@ Actual learner `ACADEMIC_SOURCE_BLOB=d8a544101788e07fb33961fbe38f9c20827bcec4`, 
 
 ## AUTHOR_SIGNOFF
 
-Author Q01–Q18, A1–A7, PED1–PED6 on locked SHA, 25 independent math/structural assertions and source-specific detailed outcome QA in Q18 receipt; no open author P0/P1, no private RD1 or Mastery activation. SOURCE/receipt/handoff/READY/REGISTER must be SHA-consistent at handoff. No staged or deployed student UI is claimed.
+Author Q01–Q18, A1–A7, PED1–PED6 on locked SHA, 30 computational/structural assertions and source-specific detailed outcome QA in Q18 receipt; no open author P0/P1, no private RD1 or Mastery activation. SOURCE/receipt/handoff/READY/REGISTER must be SHA-consistent at handoff. No staged or deployed student UI is claimed.
 
 ## RELEASE_ACCEPTANCE
 
