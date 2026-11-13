@@ -1,8 +1,8 @@
 # CĐ18 · QA CHECKPOINT R01 — 14/11/2026 · NOT Q18 SIGNOFF
 
 **Checkpoint AUTHORING có bằng chứng kỹ thuật nhưng chưa nghiệm thu học thuật.** One standard `SLM-THPT-QUALITY-ONE v3.1.0` Q01–Q18. Exact GitHub snapshots verified at checkpoint:
-- Academic learner source: `prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R01_FULL_40_OUTCOMES_20261114.md`, **Git blob `fb23f4b600fccef3d018d513a0f598f914cc75a2`**.
-- 246-item exact Q15 source mapping: `prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R01_246_CANONICAL_OUTCOME_MATRIX_20261114.md`, Git blob `c6203eb735b40d587c210bc9cab95cea09017cb9`.
+- Academic learner source: `prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R01_FULL_40_OUTCOMES_20261114.md`, **Git blob `b0a801dfc2168342e2f6ad5aaac14884dfdb33b6`**.
+- 246-item exact Q15 source mapping: `prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R01_246_CANONICAL_OUTCOME_MATRIX_20261114.md`, Git blob `7b29ed1780239a9323550f7e2e9d0500e5d6bdbc`.
 - Original S1 outcome/SGK reference crosswalk: `prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R01_S1_40_OUTCOME_160_SGK_CANONICAL_CROSSWALK_20261114.md`, Git blob `7cba588cfe60d3675df99d8aa7e4b9275da9690e`.
 - Original SGK G12 ChII blob `856a37bd16d2746ffc2e12906de18d1f4338a3b6`; G12 ChV blob `11eb2834cfdb4a24685157f84666c2bb0767970a`.
 - Catalog ID CĐ18/PLAN22-18 study only, runtime `TOPIC_ID` owner-unassigned. Original NotebookLM Topic09 draft read as prose inspiration, not Q01/Academic/PED authority. [Editorial guidance Issue #851](https://github.com/TMA2015/self-learning-math/issues/851) inside Q09–Q14, not a new standard.
@@ -85,4 +85,13 @@
 - Evidence preserved privately at the author working session as rendered snapshots of PDF p23/p24; no book PDF or private source bytes copied into the public Git repository. Original SBT Git/source SHA256 known but PDF blob contents not changed.
 
 **Delta decision:** `DELTA_D_SOURCE_GAP` remains OPEN and is **strictly scoped to G12 SBT B14 printed p25 and exercises whose full original stems are missing**. A new download under another filename is not new source evidence; independent original page or owner-accepted genuine receipt is required to close. Preserve unaffected original G12 S1 review snapshots and Topic candidate math QA separately.
+
+
+## 14/11/2026 — Second author item-level pass (Delta C P01 correction)
+
+- Re-opened all 40 canonical new First Try `T01..T40`, 40 Practice `P01..P40` and six Written `W01..W06` from exact source and visually compared question/answer/solution text (separate from the earlier 40 numerical tests). This is an author's mathematical/pedagogical pass, **not** independent NotebookLM certification.
+- Found **one genuine mathematical condition omission**: original `THPT-TOP18-P01` had `PQ=3, QR=2` with all P,Q,R "on one ray" but did **not** establish **Q lies between P and R**; PR=5 was not a necessary consequence. Fixed the stem to explicitly state **order P–Q–R** and both the answer/reasoning. This is a **Delta C** in one new Topic item; no immutable SGK original item changed. R01 canonical source blob now `b0a801dfc2168342e2f6ad5aaac14884dfdb33b6`.
+- W06 learner scenario wording "đường dây bay" was nonsensical; changed to "đường bay" without changing any mathematics or rubric. W04 complementary-angle fix remains in locked source (60° vs 30°).
+- Re-synchronized `246` canonical outcome/role/placement metadata blob `7b29ed1780239a9323550f7e2e9d0500e5d6bdbc`. Original 160 SGK `item_id` references and 40 source outcome map unchanged; no candidate `CONTENT_READY` raised. After source revision, all previously generated QA verdicts are scoped to this new source SHA by targeted delta review only.
+- **Still HOLD:** missing original B14 SBT printed p25, six original ChV PNG diagram-content/labels not visually inspected, and full Q18 per-outcome PED depth/conditions audit still needed before author signoff.
 
