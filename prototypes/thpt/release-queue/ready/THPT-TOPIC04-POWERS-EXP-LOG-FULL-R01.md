@@ -1,25 +1,25 @@
-# CĐ04 — Lũy thừa, Mũ và Lôgarit · AUTHORING CONTENT_READY · R01
+# CĐ04 — Lũy thừa, mũ và lôgarit · AUTHORING CONTENT_READY current R04 (stable packet R01)
 
 PACKET_ID: THPT-TOPIC04-POWERS-EXP-LOG-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.0.1
+STANDARD_VERSION: 3.1.0
 QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 0a2b1dbe4e8ab44c7598f1879d67349e76ca5015
+SOURCE_COMMIT: 5530b4a9659f4b1b7db428411ccedfa1a737236c
 AUTHOR_PR: 822
 CURRENT_PR: #822 Draft AUTHORING, not merged/deployed
 CATALOG_TOPIC_ID: CD04
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_POWERS_EXP_LOG_FULL_PUBLIC_R01_20261112.md
-ACADEMIC_SOURCE_BLOB: 383ef263b930604a30bad57b7d95d83d13896b20
-REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC04_POWERS_EXP_LOG_R01_AUTHOR_SELF_QA_RECEIPT_20261112.md (AUTHOR_SELF_QA, no new independent Topic NotebookLM PASS)
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC04_POWERS_EXP_LOG_R01_AUTHOR_SELF_QA_RECEIPT_20261112.md
-REVIEW_RECEIPT_BLOB: 267e420b18fd5b0f8cce616cabc9a6325765ce6b
-AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC04-POWERS-EXP-LOG-FULL-R01_HANDOFF_V2_20261112.md
-AUTHOR_HANDOFF_BLOB: 4ee4aa0db0048980022a366ae665a08063c0dfbf
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_CONTINUOUS_KNOWLEDGE_ARCS_R04_REVIEW_CANDIDATE_20261113.md
+ACADEMIC_SOURCE_BLOB: 1f51b01357f87359b689131fd6afcc1ad998209d
+REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC04_CONTINUOUS_R04_AUTHOR_SELF_QA_RECEIPT_20261113.md (AUTHOR_SELF_QA, no new independent Topic NotebookLM PASS)
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC04_CONTINUOUS_R04_AUTHOR_SELF_QA_RECEIPT_20261113.md
+REVIEW_RECEIPT_BLOB: ed93d742a34245953f03712c75c66a50c1b29f30
+AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC04-POWERS-EXP-LOG-FULL-R04_HANDOFF_V2_20261113.md
+AUTHOR_HANDOFF_BLOB: b6177cd57ce32ff3b373be6087f7416d444c211a
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC04_POWERS_LOG_ORIGINAL49_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 7d257edda0a2d29ba063987a51c61980558dbab6
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC04_POWERS_LOG_NEW26_PUBLIC_CANONICAL_R01_20261112.md
@@ -46,12 +46,12 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — Canonical Topic source Git blob 383ef263b930604a30bad57b7d95d83d13896b20, Q18 signed receipt 267e420b18fd5b0f8cce616cabc9a6325765ce6b, one 49-old index, one 26-new bank and one handoff V2 exact source.
+- [x] A1_SOURCE_SNAPSHOT — Canonical Topic source Git blob 1f51b01357f87359b689131fd6afcc1ad998209d, Q18 signed receipt ed93d742a34245953f03712c75c66a50c1b29f30, one 49-old index, one 26-new bank and one handoff V2 exact source.
 - [x] A2_SGK_SBT_SCOPE — KNTT G11 tập 2 S1 Core: SGK B18–B21, printed SGK p4–24/SBT p4–19; owner original PDF SHA+visual printed-page index receipt 02/11/2026. SBT solutions p73–85, not old 117–134; SBT reference, no copyright copying.
 - [x] A3_NOTEBOOKLM_VERDICT — G11 ChVI original public reviewed 49 items historical independent NotebookLM PASS limited to original R01 source and two Delta B decimal corrections; 18 new Topic modules/26 original questions/1 SVG AUTHOR_SELF_VERIFIED Q18 with 113 direct checks, **not new NotebookLM PASS**.
 - [x] A4_ITEM_OUTCOME_IDS — 18 outcomes, 75 unique canonical PUBLIC IDs (49 references+26 new), 3–7 mapped to each; 12 Written one canonical library (8 old rubric 4 pts,4 new rubric 7 pts), 18 public reuse selfchecks no new IDs.
 - [x] A5_D1_D6_SCOPE — 18 WHY/PRE/meaning-first/worked-reasoning/Tự thử/voluntary reveal/D6, 5 accessible actual SVGs, 2 lab specs only (not implemented), full Topic path independent.
-- [x] A6_DELTA_RESOLVED — New 18 modules+26 items+1 diagram Delta C mathematics and PED checked 20 canonical, 65 math, 28 structural/PED/S1 SVG =113/113 PASS; original 49 item bodies/keys/rubrics immutable; author P0=P1=0.
+- [x] A6_DELTA_RESOLVED — New five coherent conceptual arcs spanning 18 outcomes+26 items+1 diagram Delta C mathematics and PED checked 20 canonical, 65 math, 28 structural/PED/S1 SVG =18 outcome +26 new solution source-locked PASS; original 49 item bodies/keys/rubrics immutable; author P0=P1=0.
 - [x] A7_PUBLIC_PRIVATE_BOUNDARY — 0 private RD1 imported from SGK, no official TOPIC_READINESS, no Mastery and no protected stem/key. 18 public selfcheck placements must gate feedback until true Final Submit in RELEASE.
 
 ## PED1–PED6 / Q09–Q14
