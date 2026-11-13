@@ -340,12 +340,12 @@ Nếu đếm chu kỳ sai, so pha ở t=0 và t=12; nếu viết t<0 ngoài ph�
 
 # Luyện tập
 
-Mỗi outcome trỏ tới các câu ORIGINAL SGK trong index liên kết, cùng một nguồn answer/rubric được khóa; các câu mới `THPT-TOP06-P01…P16` và Written `THPT-TOP06-W01…W04` nằm duy nhất ở `prototypes/thpt/shared-items/Temp_TOPIC06_TRIGONOMETRY_NEW20_PUBLIC_CANONICAL_R01_20261112.md`. Các câu tự biên soạn là phần luyện tập công khai, không gắn lại SGK Core.
+Em hãy bắt đầu với bài tập **góc và đường tròn**: đổi radian, xác định góc phần tư và giải thích dấu của sin, cos trước khi bấm máy. Sau đó chuyển sang **công thức**: chứng minh một đẳng thức, đổi tổng thành tích và kiểm điều kiện xác định thay vì chỉ thay số vào công thức. Khi đã quen, luyện **đọc hàm tuần hoàn và đồ thị** để tìm chu kỳ, biên độ, các điểm cấm và ảnh hưởng của phép dịch pha. Cuối cùng, luyện **phương trình lượng giác**: viết đủ các họ nghiệm theo \(k\in\mathbb Z\), rồi lọc đúng khoảng, biên và các điểm không xác định; bài tự luận yêu cầu trình bày đầy đủ lý do chọn cách giải.
 
-Người học làm bài trên giấy hoặc tương tác luyện tập, tự mở lời giải theo nhu cầu, đối chiếu chỗ sai và trở về mục Kiến thức tương ứng. Hình và ví dụ hỗ trợ riêng cho từng outcome; không cần đi sang đường học SGK.
+Bộ bài thực hành của bốn nhóm lấy từ cùng một ngân hàng câu hỏi đã kiểm toán: các câu nền tảng SGK được sử dụng lại theo vai trò luyện tập, cùng các câu vận dụng và tự luận mới. Khi học trên website, các đề, hình và lời giải của ngân hàng canonical phải được **hiển thị tại đây** theo nhóm, không buộc em chuyển sang đường học SGK hay đi tìm tệp kỹ thuật. Sau khi làm, em tự mở phần Đối chiếu, xác định sai ở góc, miền, công thức hay họ nghiệm rồi quay về đoạn Kiến thức tương ứng.
 
 # Tự kiểm tra
 
-**Tự kiểm tra công khai:** dùng lại 16 `THPT-TOP06-P01…P16`, mỗi outcome một placement, không tạo `item_id` thứ hai. Toàn bộ đề phải được hiển thị và người học bấm **Final Submit** trước khi có đúng/sai, đáp án, gợi ý hoặc lời giải; sự bảo vệ thật sự trên website thuộc RELEASE. Tự kiểm tra này có `ASSESSMENT_MODE=CLIENT_SELF_CHECK_NO_MASTERY`, không phải held-out `TOPIC_READINESS`, không cấp Skill Mastery, không dùng RD1 riêng tư.
+**Tự kiểm tra công khai:** gồm 16 câu lấy từ chính ngân hàng đã luyện, phân bố trên toàn bộ 16 mục tiêu của chuyên đề. Bộ này dùng để tự đối chiếu sau khi nộp, không phải bài đánh giá độc lập. Toàn bộ đề phải được hiển thị và người học bấm **Final Submit** trước khi có đúng/sai, đáp án, gợi ý hoặc lời giải; sự bảo vệ thật sự trên website thuộc RELEASE. Phần này chỉ giúp em phát hiện chỗ cần ôn; kết quả không phải bằng chứng chấm năng lực độc lập hay điểm thành thạo chính thức. Đề tự kiểm tra chính thức nếu được triển khai sẽ là một hệ thống riêng.
 
-Sau Submit: người học tự so lời giải và rubric, xác định outcome mắc lỗi, quay lại mục kiến thức/D6 và làm câu khác. Không suy ra một điểm kiểm tra độc lập từ các câu đã có thể xem trong Practice.
+Sau khi nộp: người học tự so lời giải và rubric, xác định outcome mắc lỗi, quay lại mục kiến thức/D6 và làm câu khác. Không suy ra một điểm kiểm tra độc lập từ các câu đã có thể xem trong Practice.
