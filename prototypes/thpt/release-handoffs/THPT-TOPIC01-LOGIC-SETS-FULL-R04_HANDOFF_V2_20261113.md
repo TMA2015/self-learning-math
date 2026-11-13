@@ -11,9 +11,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_CONTINUOUS_KNOWLEDGE_ARCS_R04_REVIEW_CANDIDATE_20261113.md
-ACADEMIC_SOURCE_BLOB: 7337777c7cd81e2c7aaef8d71170a3fef7469591
+ACADEMIC_SOURCE_BLOB: 07bfe5bd55b860c2cc78b17c7c78e2132b8693f8
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC01_CONTINUOUS_R04_AUTHOR_SELF_QA_RECEIPT_20261113.md
-REVIEW_RECEIPT_BLOB: d740fde2f80cb22e7ff9e01cab703be7e49a8b2f
+REVIEW_RECEIPT_BLOB: 9fc40240c9fbf0083c6a98f1fe75b3da2901b9f4
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R04_AUTHORING_ONLY_CUSTODY_METADATA_20261113.md
 AUTHOR_METADATA_BLOB: 0bf738b497b1b893ac90c3b82f758f661c0cf05c
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_CANONICAL_SOURCE_INDEX_R01_20261112.md
@@ -141,7 +141,7 @@ CATALOG_TOPIC_ID: CD01
 
 ## QUALITY_Q01_Q18_EVIDENCE
 
-One normative source: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md` (effective `SLM-THPT-QUALITY-ONE v3.1.0`). The R04 author receipt is `d740fde2f80cb22e7ff9e01cab703be7e49a8b2f`; new learner text blob `7337777c7cd81e2c7aaef8d71170a3fef7469591`.
+One normative source: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md` (effective `SLM-THPT-QUALITY-ONE v3.1.0`). The R04 author receipt is `9fc40240c9fbf0083c6a98f1fe75b3da2901b9f4`; new learner text blob `07bfe5bd55b860c2cc78b17c7c78e2132b8693f8`.
 
 | Qxx | Source/outcome-specific academic and PED evidence | Scope verdict | Source trace | Release boundary |
 |---|---|---|---|---|
@@ -166,7 +166,7 @@ One normative source: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1
 
 ## AUTHORING_A1_A7
 
-- A1: learner R04 SHA 7337777c7cd81e2c7aaef8d71170a3fef7469591; new Q18 self-QA receipt d740fde2f80cb22e7ff9e01cab703be7e49a8b2f and one V2 canonical packet.
+- A1: learner R04 SHA 07bfe5bd55b860c2cc78b17c7c78e2132b8693f8; new Q18 self-QA receipt 9fc40240c9fbf0083c6a98f1fe75b3da2901b9f4 and one V2 canonical packet.
 - A2: S1 comes from the immutable owner-PDF-scanned SGK source receipt B01/B02; do not claim a fresh SGK PDF rescan.
 - A3: R04 self-verified Q18 actual math+PED by author; original source reviewer PASS remains limited to original 18 SGK items/2 SVG.
 - A4: TOP01-M01..M11, outcomes O01..O11, unique 24 public IDs and 11 public self-check references cross-reconciled.
