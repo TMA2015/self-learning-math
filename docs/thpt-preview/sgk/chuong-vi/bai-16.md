@@ -222,7 +222,7 @@
 
     **Lời giải.** Đỉnh \(I(1,-4)\), trục đối xứng \(x=1\), tập giá trị \([-4,+\infty)\). Giải \((x-1)^2=4\) được \(x=-1\) hoặc \(x=3\).
 
-   **Kiểm lại:** hai nghiệm đối xứng qua \(x=1\) và đồ thị không xuống dưới \(-4\).
+    **Kiểm lại:** hai nghiệm đối xứng qua \(x=1\) và đồ thị không xuống dưới \(-4\).
 
     ### Ví dụ — Vẽ parabol từ biểu thức đã cho
 
