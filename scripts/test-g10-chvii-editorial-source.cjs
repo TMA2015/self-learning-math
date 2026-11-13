@@ -78,7 +78,9 @@ for(const [lessonStr,info]of Object.entries(specs)){
  for(const match of discoveryChunks){
   const item=match[1],block=match[2],start=(block.match(/\\\(/g)||[]).length,end=(block.match(/\\\)/g)||[]).length;
   assert.equal(start,end,item+" unbalanced inline TeX");
-  assert(!/\\\([^]*?\\\([^]*?\\\)/.test(block),item+" nested inline MathJax");
+  const rendered=[...block.matchAll(/\\\(([\s\S]*?)\\\)/g)];
+  assert.equal(rendered.length,start,item+" TeX delimiters cannot overlap or nest");
+  assert(rendered.every(z=>!z[1].includes("\\(")),item+" nested inline MathJax");
   if(!proseOnly.has(item))assert(start>0,item+" math-bearing narrative lacks MathJax delimiters");
  }
  assert(!/Hãy tự giải từng câu Tự thử trước khi mở Đối chiếu/.test(d),name+" redundant global First Try instruction remains");
