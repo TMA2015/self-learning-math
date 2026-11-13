@@ -874,9 +874,9 @@ async function ready(page,path){
        const examples=tabset.locator(".tabbed-labels label").filter({hasText:/^Ví dụ$/});
        assert.equal(await examples.count(),1,"B17 source-signed Example tab missing");
        const blocks=tabset.locator(".tabbed-content > .tabbed-block");
-       assert.equal(await blocks.nth(1).locator('details:has(> summary:text-is("Lưu ý về phạm vi Core và mở rộng của bài toán tham số"))').count(),0,
+       assert.equal(await blocks.nth(1).locator('details:has(> summary:text-is("Nếu hệ số bậc hai cũng phụ thuộc tham số thì sao?"))').count(),0,
          "B17 optional parameter extension must not be presented as core SGK heading");
-       assert.equal(await blocks.nth(2).locator('details:has(> summary:text-is("Lưu ý về phạm vi Core và mở rộng của bài toán tham số"))').count(),1,
+       assert.equal(await blocks.nth(2).locator('details:has(> summary:text-is("Nếu hệ số bậc hai cũng phụ thuộc tham số thì sao?"))').count(),1,
          "B17 optional parameter extension missing from examples");
        await examples.click();
      }else{
@@ -885,8 +885,12 @@ async function ready(page,path){
        await knowledge.click();
      }
    }
-   const scope=page.locator('article details:has(> summary:text-is("Lưu ý về phạm vi Core và mở rộng của bài toán tham số"))');
+   const scope=page.locator('article details:has(> summary:text-is("Nếu hệ số bậc hai cũng phụ thuộc tham số thì sao?"))');
   assert.equal(await scope.count(),1,"B17 should offer one compact optional extension note");
+  assert(!(await scope.textContent()).includes("outcome Core") &&
+   !(await scope.textContent()).includes("SGK trang 24"),
+   "B17 should give students a mathematical condition rather than internal Core administration");
+
   assert(!(await scope.evaluate(el=>el.open)),"B17 scope note must begin collapsed");
   await scope.locator("summary").click();
   assert(await scope.evaluate(el=>el.open),"B17 scope note should open on student choice");
