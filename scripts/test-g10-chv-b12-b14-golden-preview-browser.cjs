@@ -11,9 +11,9 @@ const {chromium}=require("playwright");
 const root=path.resolve(__dirname,"..");
 const base=process.env.SLM_CHV_URL||"http://127.0.0.1:8765";
 const expectedSources={
- 12:"625e8223f036c53284eaada6d62a2d770768b0a1",
- 13:"4555cb41808de199b440dbdcb58d1427ea76b004",
- 14:"12e52c62e254326d24c91dc3c050d6f05e2d9234"
+ 12:"386a8d46bb4960bbab4934a5891fad89406ac7a5",
+ 13:"0459b67858246cb6136cf9a2cf9e7a7d18bd27be",
+ 14:"21c1ef59277f742b45a27900b173fac031a4a04f"
 };
 const ids={12:4,13:5,14:5};
 const names=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
