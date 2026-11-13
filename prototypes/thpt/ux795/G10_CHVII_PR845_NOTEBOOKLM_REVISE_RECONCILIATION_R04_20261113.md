@@ -2,7 +2,7 @@
 
 **Role:** RELEASE evidence intake and source/metadata reconciliation, not AUTHORING rework or NotebookLM reviewer correction. **Single standard:** \`SLM-THPT-QUALITY-ONE\` **v3.1.0** on \`main\` (file \`prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md\`, blob \`5a80b20ce99be3179d03d56a73fa57b6f4882fd8\`). Existing PR #845 is **Draft / NOT MERGED**, reviewed HEAD \`38f01ecc401bf420b39a7a4ae6c71187bfe3b1f4\`.
 
-**External reviewer material received:** owner-pasted NotebookLM report \`TEMP-G10-CHVII-B19-B22-REVIEW-20261113\`, exact local text **SHA-256 \`08d0ed4066fbef90ddca00d1165527d0dacbfe904c066d325e21aba87fd4c8e1\`**, 14,? text bytes (see user-provided source; do not rehost copyrighted SGK/RD1). Reviewer says \`ACADEMIC_VERDICT=REVISE\`, \`PED_VERDICT=REVISE\`, \`P0=0\`, \`TARGETED_CLEARANCE=NO\`, \`RELEASE_AUTHORIZATION=NO\`, \`MASTERY_ACTIVATION=NO\`. **These restrictions stand regardless of metadata errors.** This memo reports source mismatches for a *targeted reviewer metadata reconcilation*, not permission to relabel verdict as PASS.
+**External reviewer material received:** owner-pasted NotebookLM report \`TEMP-G10-CHVII-B19-B22-REVIEW-20261113\`, exact local text **SHA-256 \`08d0ed4066fbef90ddca00d1165527d0dacbfe904c066d325e21aba87fd4c8e1\`**, 15,622 original UTF-8 bytes (see user-provided source; do not rehost copyrighted SGK/RD1). Reviewer says \`ACADEMIC_VERDICT=REVISE\`, \`PED_VERDICT=REVISE\`, \`P0=0\`, \`TARGETED_CLEARANCE=NO\`, \`RELEASE_AUTHORIZATION=NO\`, \`MASTERY_ACTIVATION=NO\`. **These restrictions stand regardless of metadata errors.** This memo reports source mismatches for a *targeted reviewer metadata reconcilation*, not permission to relabel verdict as PASS.
 
 ## 1. Exact snapshot matched
 
