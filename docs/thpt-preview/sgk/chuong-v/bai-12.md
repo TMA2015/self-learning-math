@@ -27,7 +27,7 @@
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY01" hidden></span>
 
-    ??? question "Em đã tự thử? Mở lời giải để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> \(a=0{,}33\) là số gần đúng; \(\bar a=1/3\) là số đúng; viết \(0{,}33\approx1/3\), không viết bằng.</p>
@@ -51,7 +51,7 @@
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY02" hidden></span>
 
-    ??? question "Em đã tự thử? Mở lời giải để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> \(\bar a\in[8{,}1;8{,}7]\,\mathrm{cm}\). Chỉ chắc \(\Delta_a\le0{,}3\,\mathrm{cm}\), không chắc bằng.</p>
@@ -73,7 +73,7 @@
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY03" hidden></span>
 
-    ??? question "Em đã tự thử? Mở lời giải để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> \(\delta_a\le3/150=0{,}02=2\%\), không thể kết luận \(\delta_a=2\%\).</p>
@@ -95,7 +95,7 @@
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY04" hidden></span>
 
-    ??? question "Em đã tự thử? Mở lời giải để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> Số quy tròn là \(7{,}35\); sai số là \(|7{,}35-7{,}346|=0{,}004\).</p>
