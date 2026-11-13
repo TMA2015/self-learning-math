@@ -7,10 +7,10 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic07-sequences/Temp_TOPIC07_CONTINUOUS_KNOWLEDGE_ARCS_R04_REVIEW_CANDIDATE_20261113.md
-SOURCE_BLOB: 1bd22047d50f9abf4f4cae4e80f6d90f229cb2b9
-ACADEMIC_SOURCE_BLOB: 1bd22047d50f9abf4f4cae4e80f6d90f229cb2b9
+SOURCE_BLOB: 238813098845ee8b7bc525174febb16ef6f70d70
+ACADEMIC_SOURCE_BLOB: 238813098845ee8b7bc525174febb16ef6f70d70
 IMMUTABLE_R03_BLOB: 0635fcf41384970e2148b0d53542a2b93c53adf2
-AUTHOR_METADATA_BLOB: a1c7f8d0cce76fffa80811dd70574693727c1f9a
+AUTHOR_METADATA_BLOB: 7064134a938047838ccc44d712f581ab527ad14d
 ORIGINAL47_INDEX_BLOB: 6500dc26b7ae21eb99b964f675023babdd881663
 NEW22_CANONICAL_BLOB: 3bf3ab77d89497b39ae50ac54f71b81eccddc14c
 VISUAL_DISCRETE_BLOB: 259ba93ec3036b32dd796ea1c06d8c8df7633f06
@@ -85,6 +85,6 @@ ASSESSMENT_Q16: Zero private RD1 copied, CLIENT_SELF_CHECK_NO_MASTERY only, no i
 
 ## Three Q07 figure/source corrections — DELTA_C_ACADEMIC_MATERIAL
 
-R03 example beside the discrete SVG used n² but real SVG is u_n=2n−1 on n=1..6. R04 teaches exactly the six points before a separate n² example. Original growth SVG shows additive +10 and multiplicative 10% (100/110/120/130 versus 100/110/121/133.1), not R03 +5 and +5%. Original end-period cash-flow SVG depicts **100** deposits in periods 1,2,3 with total **331**, not prior R03 50/165.5. R04 aligns every nearby worked example with figure values, all three immutable SVG blobs unchanged.
+R03 example beside the discrete SVG used n² but real SVG is u_n=2n−1 on n=1..6. R04 teaches exactly the six points before a separate n² example and provides an exercise-selection narrative on Practice instead of exposing Git file paths. Original growth SVG shows additive +10 and multiplicative 10% (100/110/120/130 versus 100/110/121/133.1), not R03 +5 and +5%. Original end-period cash-flow SVG depicts **100** deposits in periods 1,2,3 with total **331**, not prior R03 50/165.5. R04 aligns every nearby worked example with figure values, all three immutable SVG blobs unchanged.
 
 Q01–Q02 scoped S1 and 18 outcomes; Q03–Q08 mathematically conditioned teaching, 69 items, four new Written rubrics, three diagrams and targeted D6; Q09–Q14 concept-first continuous arguments and independent self-try before reveal; Q15–Q17 single canonical item bank, zero RD1, no official Mastery, Topic independent; Q18 exact source/receipt immutable author self-QA. `AUTHORING_CONTENT_PASS: YES` for this snapshot; V2 handoff, ready manifest and REGISTER must match source and receipt before claiming ready. No integration, merge or deploy.
