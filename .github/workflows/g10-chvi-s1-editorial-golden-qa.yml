@@ -5,6 +5,7 @@ on:
       - "docs/thpt-preview/sgk/chuong-vi/bai-*.md"
       - "docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js"
       - "prototypes/thpt/ux795/G10_CHVI_B15_B18_S1_Q18_EDITORIAL_RECEIPT_20261113.md"
+      - "prototypes/thpt/ux795/G10_CHVI_B15_B18_EXAMPLE_UX_Q18_DELTA_RECEIPT_20261113.md"
       - "scripts/thpt-q18-g10-source-receipt.cjs"
       - "scripts/test-ux795-g10-chvi-ped-mapping.cjs"
       - "scripts/test-thpt-chvi-math-block-render.cjs"
@@ -26,6 +27,7 @@ jobs:
       - name: Q18 exact old/new math, 19 canonical ID/D6, S1 mapping and negative tests
         run: |
           git fetch --no-tags --depth=3 origin bb6d7a92308d78628761a3284264fa7b55d6c912
+          git fetch --no-tags --depth=3 origin f23f22bdb0a01c35d73f21a6fe6ec9d1de0f9160
           node scripts/test-g10-chvi-editorial-source.cjs
           node scripts/test-ux795-g10-chvi-ped-mapping.cjs
           node scripts/test-thpt-chvi-math-block-render.cjs
