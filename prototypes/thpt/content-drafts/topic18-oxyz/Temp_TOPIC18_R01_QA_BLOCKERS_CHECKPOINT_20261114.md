@@ -74,3 +74,15 @@
 **State:** `AUTHORING_CANDIDATE_R01 / Q18_PENDING / CONTENT_READY_BLOCKED_BY_AUTHORING`. No signed `AUTHOR_SELF_QA_RECEIPT`, no V2/ready/REGISTER, no Topic official Readiness, no imported private RD1 or Skill Mastery, no website/merge/deploy.
 
 **Next:** resolve or precisely quarantine SBT p25 impacts, inspect PNG visual/conditions, complete stem-level independent author math/PED audit on exact R01 SHA; only then decide Academic/PED self sign and handoff V2. Preserve one canonical source, unchanged SGK SHA and Topic16/17 existing Draft PASS snapshots.
+
+
+## Verified original S1 scan page-gap receipt — two Drive PDFs, 14/11/2026
+
+**Direct PDF-image inspection was performed, no OCR-based conjecture:**
+- Two distinct Google Drive items titled `SBT TOÁN LỚP 12 - TẬP 2 - KNTT.pdf` and `Sách bài tập toán 12 - kết nối tri thức tập 2.pdf` were fetched as authentic stored PDF bytes. **Both are bit-identical SHA-256 `823b013adeb487639e55493b4a7c09edb9a21daabc058ea53e6fe92f7a0352f1`**, 23,668,797 bytes, **117 PDF pages**. This exactly matches original G12 ChV historical SBT S1 receipt. The alternate title **does not** provide a new copy of p25.
+- Visually rendered PDF **page 23 (1-based)** has bottom printed page **24**; page 24 contains SGK B14 exercises 5.1–5.4 and **5.5(a)** beginning at bottom.
+- Visually rendered PDF **page 24 (1-based)** has bottom printed page **26**, already within B15 sections of parametric/symmetric equations; there is **no scanned printed p25** in either identical file. Thus the missing page could include continuation of exercise **5.5**, not just exercises **5.6–5.7** reported in old source commentary. We do **not** guess the exact unseen exercise text or answer from the neighboring pages.
+- Evidence preserved privately at the author working session as rendered snapshots of PDF p23/p24; no book PDF or private source bytes copied into the public Git repository. Original SBT Git/source SHA256 known but PDF blob contents not changed.
+
+**Delta decision:** `DELTA_D_SOURCE_GAP` remains OPEN and is **strictly scoped to G12 SBT B14 printed p25 and exercises whose full original stems are missing**. A new download under another filename is not new source evidence; independent original page or owner-accepted genuine receipt is required to close. Preserve unaffected original G12 S1 review snapshots and Topic candidate math QA separately.
+
