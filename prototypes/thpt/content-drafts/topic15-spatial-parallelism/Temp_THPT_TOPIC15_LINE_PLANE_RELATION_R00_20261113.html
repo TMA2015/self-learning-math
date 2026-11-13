@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Khám phá đường thẳng và mặt phẳng</title>
+  <!-- MODEL_ID: SLM-TOP15-LINE-PLANE-R00; MODE: PUBLIC_DISCOVERY_NO_MASTERY; AUTHORING ONLY -->
+  <style>
+    :root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#17364a;background:#fff;line-height:1.55}
+    *{box-sizing:border-box}body{margin:0;padding:1rem}.lab{max-width:920px;margin:auto;border:1px solid #c6dce6;border-radius:14px;overflow:hidden;background:#fff}
+    header{padding:1.1rem 1.25rem;background:#eaf4fa}h1{margin:0;font-size:1.3rem}h2{font-size:1rem;margin:.2rem 0 .5rem}
+    p{margin:.35rem 0}.main{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(230px,1fr);gap:1rem;padding:1rem}
+    canvas{width:100%;height:340px;border:1px solid #c6dce6;background:#fafdff;border-radius:10px;display:block}
+    .controls{display:grid;gap:1rem}.field{background:#f6fafc;border:1px solid #dce8ef;border-radius:10px;padding:.9rem}
+    label{display:block;font-weight:600;margin-bottom:.4rem}input[type=range]{display:block;width:100%;min-height:40px;accent-color:#176b9f}
+    .value{font-variant-numeric:tabular-nums;color:#005a88}button{border:0;background:#145f87;color:#fff;border-radius:8px;padding:.6rem 1rem;cursor:pointer;font-weight:600}
+    button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #ec9c2f;outline-offset:2px}
+    .result{border-left:4px solid #145f87;padding:.6rem .8rem;margin:1rem;background:#f2f8fb}
+    .guide{padding:0 1.25rem 1.2rem}.guide ol{padding-left:1.3rem}.guide li{margin:.4rem 0}details{background:#f5f9fc;padding:.7rem;border:1px solid #d5e4ec;border-radius:8px}
+    .note{font-size:.86rem;color:#506476}.formula{font-family:ui-monospace,Consolas,monospace;overflow-wrap:anywhere}
+    @media(max-width:680px){.main{grid-template-columns:1fr}canvas{height:285px}}
+  </style>
+</head>
+<body>
+  <article class="lab" aria-labelledby="title">
+    <header>
+      <h1 id="title">Khi nào đường thẳng song song với mặt phẳng?</h1>
+      <p>Trước khi kéo các thanh, hãy dự đoán điều gì xảy ra nếu đường thẳng nằm ngang nhưng cao hơn mặt phẳng.</p>
+    </header>
+    <div class="main">
+      <div><canvas id="plot" role="img" aria-label="Mặt cắt xOz, mặt phẳng P là z=0, đường thẳng d có độ cao h và góc alpha"></canvas><p class="note">Hình là mặt cắt xOz: (P) có phương trình z=0; d nằm trong xOz. Điểm giao có thể ngoài khung; trạng thái luôn tính theo phương trình, không suy theo hình.</p></div>
+      <div class="controls">
+        <div class="field"><label for="h">Độ cao ban đầu h = <span class="value" id="hv">1.00</span></label><input id="h" type="range" min="-2" max="2" step="0.25" value="1"><small>Thử h = 0 và h khác 0</small></div>
+        <div class="field"><label for="angle">Góc nghiêng α = <span class="value" id="av">0°</span></label><input id="angle" type="range" min="-70" max="70" step="5" value="0"><small>Góc có dấu trong mặt xOz, tránh ±90°</small></div>
+        <button type="button" id="reset">Đặt lại</button>
+      </div>
+    </div>
+    <section class="result" aria-live="polite" aria-atomic="true">
+      <strong id="classification">Đường thẳng song song với mặt phẳng.</strong>
+      <p id="equation" class="formula"></p>
+      <p id="explanation"></p>
+    </section>
+    <div class="guide">
+      <h2>Tự khám phá</h2>
+      <ol>
+        <li><strong>Dự đoán:</strong> giữ α = 0°, thay h từ 1 về 0. Hai trạng thái khác nhau thế nào?</li>
+        <li><strong>Thao tác:</strong> cho h = 1, α = 45°; dự đoán vị trí đường d gặp mặt (P).</li>
+        <li><strong>Quan sát:</strong> đối chiếu trạng thái và tọa độ giao điểm hiển thị. Kéo α đổi dấu; giao điểm chạy sang phía nào?</li>
+        <li><strong>Giải thích:</strong> từ z = h + x·tanα, giải phương trình z=0. Khi tanα = 0, phải phân biệt h=0 và h≠0.</li>
+        <li><strong>Vận dụng:</strong> với h=−1, α=45°, điểm giao có x bằng mấy?</li>
+      </ol>
+      <details><summary>Đối chiếu bài Vận dụng</summary><p>tan45°=1, nên −1+x=0, tức x=1. Nếu em viết x=−1, hãy kiểm tra lại dấu khi chuyển h sang vế phải.</p></details>
+      <p class="note">Mô hình khám phá không chấm điểm, không ghi Mastery, không chứa câu hỏi RD1. Mọi trường hợp được chứng minh bằng phương trình, không kết luận từ giao nhau trên hình chiếu.</p>
+    </div>
+  </article>
+  <script>
+    (()=>{
+      const canvas=document.getElementById('plot');
+      const hInput=document.getElementById('h'),aInput=document.getElementById('angle');
+      const eps=1e-10;let W=0,H=0;
+      const fmt=v=>Math.abs(v)<eps?'0':Number(v).toFixed(2);
+      function compute(h,deg){
+        const slope=Math.tan(deg*Math.PI/180);
+        if(Math.abs(slope)<eps) return {kind:Math.abs(h)<eps?'contained':'parallel',slope,xi:null};
+        return {kind:'intersection',slope,xi:-h/slope};
+      }
+      function draw(){
+        const h=Number(hInput.value),deg=Number(aInput.value),r=compute(h,deg);
+        document.getElementById('hv').textContent=fmt(h);
+        document.getElementById('av').textContent=`${deg}°`;
+        document.getElementById('equation').textContent=`(P): z=0; d: (x,y,z)=(t,0,${fmt(h)} + ${fmt(r.slope)}t)`;
+        const name=document.getElementById('classification'),desc=document.getElementById('explanation');
+        if(r.kind==='contained'){name.textContent='d nằm trong (P).';desc.textContent='Với mọi x, z=0: toàn bộ đường thuộc mặt phẳng.';}
+        else if(r.kind==='parallel'){name.textContent='d song song (P), không có điểm chung.';desc.textContent=`Với mọi x, z=${fmt(h)} khác 0; cùng hướng không có nghĩa là nằm trong mặt.`;}
+        else{name.textContent='d cắt (P) tại đúng một điểm.';desc.textContent=`Giải h+x·tanα=0 được giao điểm (${fmt(r.xi)}, 0, 0). ${Math.abs(r.xi)>4.3?'Giao điểm nằm ngoài vùng hình đang hiển thị.':''}`;}
+        const ctx=canvas.getContext('2d'); if(!ctx)return;
+        ctx.clearRect(0,0,W,H);const ox=W/2,oy=H/2,s=Math.min(W/9,H/6.5);
+        const X=x=>ox+x*s,Z=z=>oy-z*s;
+        ctx.strokeStyle='#e0edf3';ctx.lineWidth=1;
+        for(let i=-4;i<=4;i++){ctx.beginPath();ctx.moveTo(X(i),0);ctx.lineTo(X(i),H);ctx.stroke();}
+        for(let i=-3;i<=3;i++){ctx.beginPath();ctx.moveTo(0,Z(i));ctx.lineTo(W,Z(i));ctx.stroke();}
+        ctx.strokeStyle='#145f87';ctx.lineWidth=3;
+        ctx.beginPath();ctx.moveTo(0,Z(0));ctx.lineTo(W,Z(0));ctx.stroke();
+        ctx.fillStyle='#145f87';ctx.font='13px system-ui';ctx.fillText('(P): z=0',12,Z(0)-10);
+        ctx.strokeStyle='#db7824';ctx.lineWidth=3;
+        ctx.beginPath();ctx.moveTo(X(-5),Z(h-5*r.slope));ctx.lineTo(X(5),Z(h+5*r.slope));ctx.stroke();
+        ctx.fillStyle='#ad5210';ctx.fillText('d',X(3.6),Math.min(H-8,Math.max(15,Z(h+3.6*r.slope)-10)));
+        if(r.kind==='intersection'&&r.xi>=-4.5&&r.xi<=4.5){ctx.fillStyle='#148247';ctx.beginPath();ctx.arc(X(r.xi),Z(0),5,0,Math.PI*2);ctx.fill();}
+        ctx.strokeStyle='#71899b';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(X(0),0);ctx.lineTo(X(0),H);ctx.stroke();
+        ctx.fillStyle='#42647a';ctx.fillText('x',W-16,Z(0)+17);ctx.fillText('z',X(0)+8,15);
+      }
+      function resize(){const rect=canvas.getBoundingClientRect();const ratio=Math.min(window.devicePixelRatio||1,2);W=rect.width;H=rect.height;canvas.width=Math.round(W*ratio);canvas.height=Math.round(H*ratio);const ctx=canvas.getContext('2d');if(ctx)ctx.setTransform(ratio,0,0,ratio,0,0);draw();}
+      hInput.addEventListener('input',draw);aInput.addEventListener('input',draw);
+      document.getElementById('reset').addEventListener('click',()=>{hInput.value='1';aInput.value='0';draw();});
+      if(typeof ResizeObserver!=='undefined')new ResizeObserver(resize).observe(canvas);else window.addEventListener('resize',resize);
+      resize();
+    })();
+  </script>
+</body>
+</html>
