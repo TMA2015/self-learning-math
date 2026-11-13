@@ -67,7 +67,7 @@
     <a href="../luyen-tap/?item=THPT-G10-B22-C02">Mở câu luyện tập tương ứng để tự luyện</a>
 
 
-    <span id="thpt-g10-chvii-try20" data-thpt-first-try-id="THPT-G10-CHVII-TRY20" data-learning-role="guided-extension" data-outcome-id="G10-B22-HYPERBOLA_ASYMPTOTES" data-thpt-help-ref="HELP-G10-CHVII-TRY20"></span>
+    <span id="thpt-g10-chvii-try20" data-thpt-first-try-id="THPT-G10-CHVII-TRY20" data-outcome-id="G10-B22-HYPERBOLA_ASYMPTOTES" data-thpt-help-ref="HELP-G10-CHVII-TRY20" data-learning-role="guided-extension"></span>
 
     **Mở rộng có hướng dẫn · Không bắt buộc trong kiến thức SGK Bài 22.** Em có thể khám phá tiệm cận sau khi hiểu hai nhánh hypebol.
 
