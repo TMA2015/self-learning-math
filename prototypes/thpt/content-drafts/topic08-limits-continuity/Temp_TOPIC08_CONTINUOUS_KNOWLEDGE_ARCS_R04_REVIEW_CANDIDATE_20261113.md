@@ -64,7 +64,7 @@ Giới hạn bằng 1 vì \(|v_n-1|=3/n\to0\). Nếu em cho rằng giới hạn 
 
 +∞, vì n vượt mọi căn của ngưỡng dương.
 
-Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và lý do chọn phương pháp. Nếu viết 'vô hạn' cho (−1)^n, hãy liệt kê các số hạng chẵn và lẻ rồi xét giới hạn từng dãy con.
+Nếu viết 'vô hạn' cho (−1)^n, hãy liệt kê các số hạng chẵn và lẻ rồi xét giới hạn từng dãy con.
 
 </details>
 
@@ -76,7 +76,7 @@ Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và
 
 +∞ vì 3/2>1 và lũy thừa tăng không bị chặn.
 
-Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và lý do chọn phương pháp. Nếu nhầm q âm với không hội tụ, so (−1/4)^n và (−1)^n qua |q|.
+Nếu nhầm q âm với không hội tụ, so (−1/4)^n và (−1)^n qua |q|.
 
 </details>
 
@@ -88,7 +88,7 @@ Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và
 
 2, vì chia cho n cho (4+3/n)/(2−1/n)→2.
 
-Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và lý do chọn phương pháp. Nếu thế 'n=∞', hãy thực hiện phép chia n^k để chuyển sang giới hạn có thể tính.
+Nếu thế 'n=∞', hãy thực hiện phép chia n^k để chuyển sang giới hạn có thể tính.
 
 </details>
 
@@ -100,7 +100,7 @@ Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và
 
 9, vì q=1/3 và S=6/(1−1/3)=9.
 
-Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và lý do chọn phương pháp. Nếu dùng công thức khi q=1 hoặc −1, hãy xét giới hạn của số hạng trước: nó không về 0.
+Nếu dùng công thức khi q=1 hoặc −1, hãy xét giới hạn của số hạng trước: nó không về 0.
 
 </details>
 
@@ -160,7 +160,7 @@ Chẳng hạn, lim(x→+∞)[√(x²+6x)−x] = lim(6x)/[√(x²+6x)+x]=lim 6/[�
 
 −4 do biểu thức rút còn x−4 trên miền x≠0.
 
-Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và lý do chọn phương pháp. Nếu gọi 0/0 là giới hạn, xem hai hàm (x−2)/(x−2) và 2(x−2)/(x−2), cùng thế 0/0 nhưng có giới hạn 1 và 2.
+Nếu gọi 0/0 là giới hạn, xem hai hàm (x−2)/(x−2) và 2(x−2)/(x−2), cùng thế 0/0 nhưng có giới hạn 1 và 2.
 
 </details>
 
@@ -172,7 +172,7 @@ Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và
 
 −1 và +1, nên giới hạn hai phía không tồn tại.
 
-Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và lý do chọn phương pháp. Nếu chỉ thế nhánh x≥0 tại 0, hãy vẽ hai mũi tên tiến vào 0 từ hai phía.
+Nếu chỉ thế nhánh x≥0 tại 0, hãy vẽ hai mũi tên tiến vào 0 từ hai phía.
 
 </details>
 
@@ -184,7 +184,7 @@ Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và
 
 +∞ vì 3−x tiến 0 từ phía dương.
 
-Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và lý do chọn phương pháp. Nếu cứ thấy mẫu 0 là +∞, đặt x=4,99 và 5,01 để kiểm dấu mẫu.
+Nếu cứ thấy mẫu 0 là +∞, đặt x=4,99 và 5,01 để kiểm dấu mẫu.
 
 </details>
 
@@ -196,7 +196,7 @@ Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và
 
 −3; chia cả tử/mẫu cho x³.
 
-Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và lý do chọn phương pháp. Nếu giữ dấu 'x âm' ở mọi hạng, tách x² và x³ ra để so dấu của từng lũy thừa.
+Nếu giữ dấu 'x âm' ở mọi hạng, tách x² và x³ ra để so dấu của từng lũy thừa.
 
 </details>
 
@@ -208,7 +208,7 @@ Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và
 
 12, vì tử=(x−6)(x+6) và x≠6.
 
-Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và lý do chọn phương pháp. Nếu viết 0/0 hoặc giá trị hàm tại x=3, trở lại định nghĩa lân cận loại điểm.
+Nếu viết 0/0 hoặc giá trị hàm tại x=3, trở lại định nghĩa lân cận loại điểm.
 
 </details>
 
@@ -220,7 +220,7 @@ Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và
 
 1/10, vì bằng 1/(√(x+25)+5) gần x=0.
 
-Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và lý do chọn phương pháp. Nếu căn khiến bạn 'bình phương cả phân thức', thử nhân liên hợp đúng dạng và giữ điều kiện x+c≥0.
+Nếu căn khiến bạn 'bình phương cả phân thức', thử nhân liên hợp đúng dạng và giữ điều kiện x+c≥0.
 
 </details>
 
@@ -232,7 +232,7 @@ Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và
 
 4, bằng 8/[√(1+8/x)+1]→4.
 
-Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và lý do chọn phương pháp. Nếu quên dấu x, thay x=−10 để thấy √(x²)=10 chứ không phải −10.
+Nếu quên dấu x, thay x=−10 để thấy √(x²)=10 chứ không phải −10.
 
 </details>
 
@@ -282,7 +282,7 @@ Chẳng hạn, f(x)=(x²+1)/(x−1) có miền ℝ\{1} nên liên tục trên (�
 
 c=0 vì lim(x→0)sin x=0, bằng giá trị ở điểm.
 
-Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và lý do chọn phương pháp. Nếu quên hàm phải được định nghĩa tại a, so 'hole' và 'point f(a)=...' trên đồ thị.
+Nếu quên hàm phải được định nghĩa tại a, so 'hole' và 'point f(a)=...' trên đồ thị.
 
 </details>
 
@@ -294,7 +294,7 @@ Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và
 
 Khử được: lim(x→1)g(x)=2 nhưng g(1)=3; đổi g(1)=2 thì liên tục.
 
-Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và lý do chọn phương pháp. Nếu gọi tất cả lỗ bằng vô cực, kiểm có khử được nhân tử chung hay không.
+Nếu gọi tất cả lỗ bằng vô cực, kiểm có khử được nhân tử chung hay không.
 
 </details>
 
@@ -306,7 +306,7 @@ Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và
 
 Có; trong đoạn biểu thức trong căn không âm và liên tục, tại −4 chỉ cần giới hạn phải, tại 4 chỉ cần trái.
 
-Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và lý do chọn phương pháp. Nếu hỏi giới hạn trái của √x ở 0 trong ℝ và nói 'không liên tục', hãy trở về định nghĩa liên tục trên miền [0,9].
+Nếu hỏi giới hạn trái của √x ở 0 trong ℝ và nói 'không liên tục', hãy trở về định nghĩa liên tục trên miền [0,9].
 
 </details>
 
@@ -318,7 +318,7 @@ Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và
 
 x≥−2 và x≠−1; liên tục trên [−2,−1) và (−1,∞) theo miền.
 
-Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và lý do chọn phương pháp. Nếu kiểm căn x+2≥0 nhưng bỏ mẫu x+1≠0, hãy ghi hai điều kiện bằng dấu 'và'.
+Nếu kiểm căn x+2≥0 nhưng bỏ mẫu x+1≠0, hãy ghi hai điều kiện bằng dấu 'và'.
 
 </details>
 
@@ -354,7 +354,7 @@ Xét ví dụ: Với g(x)=x²−2 trên [1,2], g(1)=−1,g(2)=2. Bước 1 m=1,5
 
 Có; f(1)=−2<0, f(2)=1>0 và đa thức liên tục.
 
-Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và lý do chọn phương pháp. Nếu viết 'duy nhất do IVT', thử g(x)=x(x−1)(x+1) trên [−2,2] có nhiều nghiệm mặc dù đổi dấu hai đầu.
+Nếu viết 'duy nhất do IVT', thử g(x)=x(x−1)(x+1) trên [−2,2] có nhiều nghiệm mặc dù đổi dấu hai đầu.
 
 </details>
 
@@ -366,7 +366,7 @@ Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và
 
 g(1,5)=−0,75, g(2)=1 nên giữ [1,5; 2]; g vẫn đổi dấu.
 
-Nếu cách làm của em chưa đúng, hãy kiểm tra lại điều kiện và lý do chọn phương pháp. Nếu chọn nửa không trái dấu, viết bảng f(a),f(m),f(b) và tìm cặp tích âm trước khi loại nửa còn lại.
+Nếu chọn nửa không trái dấu, viết bảng f(a),f(m),f(b) và tìm cặp tích âm trước khi loại nửa còn lại.
 
 </details>
 
