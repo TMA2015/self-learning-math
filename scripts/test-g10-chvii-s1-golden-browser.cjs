@@ -25,8 +25,19 @@ const specs={
      const res=await page.goto(base+"bai-"+n+"/",{waitUntil:"networkidle",timeout:90000});
      assert(res?.ok(),tag+" page route HTTP");
      const article=page.locator("article.md-content__inner");
-     assert.equal(await article.getAttribute("data-g10-chvii-golden"),"preview",
-      tag+" scoped Golden ChVII script missing");
+     const golden=await article.getAttribute("data-g10-chvii-golden");
+     if(golden!=="preview"){
+      const diagnostic=await article.evaluate(el=>({
+       classes:el.className,
+       nativeTabs:el.querySelectorAll(".tabbed-set").length,
+       sourceLabels:[...el.querySelectorAll(".tabbed-set > .tabbed-labels > label")].map(x=>x.textContent.trim()),
+       sourcePanels:el.querySelectorAll(".tabbed-set > .tabbed-content > .tabbed-block").length,
+       formalHeadings:[...el.querySelectorAll(".tabbed-block")][1]?[...[...el.querySelectorAll(".tabbed-block")][1].querySelectorAll(":scope > h3")].map(x=>x.textContent.trim()):[],
+       jsScriptLoaded:[...document.scripts].some(x=>(x.src||"").includes("thpt-sgk-lesson-nav-v1.js")),
+       path:location.pathname
+      }));
+      throw new Error(tag+" scoped Golden mount missing; "+JSON.stringify(diagnostic));
+     }
      assert.equal(await article.locator(".tabbed-set").count(),1,tag+" native four tabs not duplicated");
      const tabs=article.locator(".tabbed-set").first();
      const t=tabs.locator(".tabbed-labels > label"),blocks=tabs.locator(".tabbed-content > .tabbed-block");
