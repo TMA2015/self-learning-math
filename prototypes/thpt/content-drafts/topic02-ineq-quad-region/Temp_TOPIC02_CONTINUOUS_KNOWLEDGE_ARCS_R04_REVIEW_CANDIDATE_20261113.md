@@ -1,5 +1,5 @@
-<!-- AUTHORING SOURCE R04. Q18 source-locked verification must reference current blob; old R03 unchanged (2b30cec2fee3afb87c20b89c1a3131214a9fc952). Not merged or deployed. -->
-<!-- STANDARD_ID=SLM-THPT-QUALITY-ONE; STANDARD_VERSION=3.1.0; LEARNING_PATH=TOPIC; OUTER_PAGES=Kiến thức|Luyện tập|Tự kiểm tra; SOURCE_VERSION=R04_AUTHORING_CANDIDATE; AUTHORING_ONLY_METADATA=prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R04_AUTHORING_ONLY_CUSTODY_METADATA_20261113.md -->
+<!-- AUTHORING CURRENT R04: source-locked Q18 AUTHOR_SELF_VERIFIED source; exact SHA stored in current receipt/V2 ready packet. Original R03 source blob 2b30cec2fee3afb87c20b89c1a3131214a9fc952 remains immutable. No website integration, merge or deployment. -->
+<!-- STANDARD_ID=SLM-THPT-QUALITY-ONE; STANDARD_VERSION=3.1.0; LEARNING_PATH=TOPIC; OUTER_PAGES=Kiến thức|Luyện tập|Tự kiểm tra; SOURCE_VERSION=R04_AUTHORING_READY; AUTHORING_ONLY_METADATA=prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R04_AUTHORING_ONLY_CUSTODY_METADATA_20261113.md -->
 # CĐ02 — Bất đẳng thức, dấu tam thức bậc hai và miền nghiệm
 
 # Kiến thức
