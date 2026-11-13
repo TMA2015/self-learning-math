@@ -55,20 +55,20 @@ AUTHOR_SIGNOFF: TOP12_R01_Q18_MATH_PED_Q15_Q16_SOURCE_LOCK
 34 PUBLIC canonical item IDs trong matrix, trong đó 18 SGK source-pointer-only, 16 item Topic mới có một thân câu và lời giải trong **Luyện tập** (12 Practice + 4 Written rubric 7 điểm). Mỗi câu mới chỉ có **một** ID và một bộ key/solution; Anchor SGK là vai trò Written, không thêm câu thứ hai. Tự kiểm tra sử dụng lại 12 canonical ID, không tạo item hoặc hidden RD1 mới.
 
 - THPT-TOP12-P01: cos=-5/13 và góc tù ⇒ sin=12/13, tan=-12/5, không lấy sin âm
-- THPT-TOP12-P02: sin120°=sin60°, cos120°=-cos60°, tổng cos góc bù bằng 0
-- THPT-TOP12-P03: b=5,c=6,A=120° ⇒ a²=25+36+30=91, a=√91
-- THPT-TOP12-P04: A=30°, B=45°, a=6 ⇒ b=6√2, C=105°, c=3(√6+√2)
-- THPT-TOP12-P05: cạnh 5,12,13 ⇒ S30, r2, R13/2
+- THPT-TOP12-P02: sin150°=1/2 và cos120°=-1/2 ⇒ tổng 0; dùng hai cặp góc bù 150°/30° và 120°/60°
+- THPT-TOP12-P03: b=4,c=7,A=120° ⇒ a²=16+49+28=93, a=√93
+- THPT-TOP12-P04: A=30°,B=75°,a=6 ⇒ C=75°, b=c=12 sin75°=3(√6+√2), c=3(√6+√2)
+- THPT-TOP12-P05: cạnh 6,8,10 ⇒ góc đối cạnh 10=90°, S24, r2, R5
 - THPT-TOP12-P06: trường hợp SSA thuận điều kiện ⇒ 2 tam giác; kiểm trực tiếp cả góc B và 180°−B
 - THPT-TOP12-P07: sinB=7/6>1 ⇒ dữ kiện không tồn tại
-- THPT-TOP12-P08: b=5,c=6,A=150° ⇒ S=15/2
+- THPT-TOP12-P08: b=6,c=10,A=150° ⇒ S=(1/2)·6·10·(1/2)=15
 - THPT-TOP12-P09: cạnh 7,8,9 ⇒ S12√5, r=√5, R=21√5/10
-- THPT-TOP12-P10: đối chiếu quy tắc sin từ hai góc quan sát (chú ý góc C và góc đối cạnh)
+- THPT-TOP12-P10: AB=80m,A=30°,B=45° ⇒ C=105°, BC=40(√6−√2)m, AC=80(√3−1)m
 - THPT-TOP12-P11: cạnh 2,3,6 vi phạm 2+3>6 ⇒ không phải tam giác
 - THPT-TOP12-P12: A=0° hoặc180° không là góc trong tam giác không suy biến
 - THPT-TOP12-W01: 5,12,13 ⇒ S30, r2, R13/2; rubric 7đ kiểm từng bước
-- THPT-TOP12-W02: bài khảo sát 2 hướng; kiểm sin của góc lớn và đơn vị, rubric 7đ
-- THPT-TOP12-W03: hai nghiệm SSA; arcsin và góc bù, kiểm góc thứ ba, rubric 7đ
+- THPT-TOP12-W02: AB120m,A45°,B75° ⇒ C60°, BC40√6m, AC=60(√6+√2)/√3m, rubric 7đ
+- THPT-TOP12-W03: A30°,a8,b10 ⇒ sinB=5/8, B₁=arcsin(5/8), B₂=180°−B₁, cả hai C>0, rubric 7đ
 - THPT-TOP12-W04: 5,6,120° ⇒ a=√91, S=15√3/2, R=√273/3, rubric 7đ
 
 - Tự kiểm lại các câu sai số/điểm biên: `sin B>1` phải vô nghiệm, không được bấm arcsin; SSA có hai góc bù nhưng phải loại phương án khiến tổng góc ≥180°; ba cạnh cần bất đẳng thức tam giác nghiêm ngặt. `sin 0°=0` không biện minh tam giác có góc trong 0°.
