@@ -291,7 +291,7 @@ Một điểm: chân giao d∩(P).
 
 **Ví dụ có giải thích cách chọn phương pháp:** AH⊥(P), B,H∈(P) và c⊂(P) đi qua H với c⊥BH. Vì vectơ AB gồm thành phần AH thẳng đứng và HB trong (P), c vuông góc cả hai nên c⊥AB.
 
-**Tự thử trước khi xem lời giải:** AH⊥(P), c⊂(P), c⊥BH. Có thể kết luận c⊥AB không (B∈(P))?
+**Tự thử trước khi xem lời giải:** AH⊥(P), B∈(P) và B≠H nên BH là một đường thẳng trên (P). Nếu c⊂(P), c⊥BH, có thể kết luận c⊥AB không?
 
 <!-- ITEM_ID: THPT-TOP16-T12; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP16-O12 -->
 
@@ -664,11 +664,11 @@ Trong lăng trụ đứng ABC.A′B′C′, ảnh của đoạn B′C′ lên (A
 
 <!-- ITEM_ID: THPT-TOP16-P12; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP16-O12 -->
 
-AH⊥(P), B,H∈(P), c⊂(P) và c⊥AB. Hỏi c⊥BH không?
+AH⊥(P), B,H∈(P), B≠H, c⊂(P) và c⊥AB. Hỏi c⊥BH không?
 
 <details><summary>Tự mở đáp án và lí giải</summary>
 
-Có, vì c đã vuông góc AH (do c⊂(P)) và AB; suy c vuông góc thành phần hình chiếu BH. Nếu B=H thì ảnh là điểm, phải nói riêng.
+Có. Vì AH⊥(P) nên c⊥AH. Mặt khác, theo giả thiết c⊥AB. Hình chiếu của đường xiên AB lên (P) là đường BH **không suy biến vì B≠H**; theo định lí ba đường vuông góc suy c⊥BH. Nếu bỏ điều kiện B≠H, BH chỉ là một điểm nên không thể viết c⊥BH.
 
 **D6 nếu sai:** Trước khi dùng định lí, xác định chân H và đảm bảo BH thật sự là hình chiếu AB. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.
 
@@ -805,7 +805,7 @@ Chóp cụt đều có hai đáy là tam giác đều cạnh 8 và 4. Tỉ số 
 
 <!-- ITEM_ID: THPT-TOP16-W01; ROLE: TOPIC_WRITTEN; PRIMARY_OUTCOME: TOP16-O02; RUBRIC_MAX: 4 -->
 
-Trong lập phương ABCD.A′B′C′D′ cạnh 5 cm, chứng minh AB và DD′ là hai đường chéo nhau vuông góc; sau đó qua A dựng một đường song song DD′ và xác định góc của hai đường từ đường vừa dựng.
+Trong lập phương ABCD.A′B′C′D′, chứng minh AB và DD′ là hai đường chéo nhau vuông góc; sau đó qua A dựng một đường song song DD′ và xác định góc của hai đường từ đường vừa dựng.
 
 <details><summary>Tự mở lời giải và rubric /4</summary>
 
