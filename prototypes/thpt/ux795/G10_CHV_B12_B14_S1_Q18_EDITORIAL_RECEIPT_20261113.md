@@ -27,9 +27,9 @@ Outcome IDs đối chiếu với nguồn V2 AUTHORING bất biến ở [PR #755]
 
 | LESSON | PUBLISHED_BASELINE_BLOB | EDITED_SOURCE_BLOB | FIRST_TRY_MOVED_TO_DISCOVERY | Three public worked examples | Two HELP |
 |---|---|---|---:|---:|---:|
-| B12 | `23b11a7263661ae6f6e2a06029307b490b145dfb` | `625e8223f036c53284eaada6d62a2d770768b0a1` | 4 | 3 | 2 |
-| B13 | `c55d650f5b59c5260960de136e3c7fc26f219cdf` | `4555cb41808de199b440dbdcb58d1427ea76b004` | 5 | 3 | 2 |
-| B14 | `894c31de396a2f6d6d30912399d6cad39f790130` | `12e52c62e254326d24c91dc3c050d6f05e2d9234` | 5 | 3 | 2 |
+| B12 | `23b11a7263661ae6f6e2a06029307b490b145dfb` | `386a8d46bb4960bbab4934a5891fad89406ac7a5` | 4 | 3 | 2 |
+| B13 | `c55d650f5b59c5260960de136e3c7fc26f219cdf` | `0459b67858246cb6136cf9a2cf9e7a7d18bd27be` | 5 | 3 | 2 |
+| B14 | `894c31de396a2f6d6d30912399d6cad39f790130` | `21c1ef59277f742b45a27900b173fac031a4a04f` | 5 | 3 | 2 |
 
 - **Q15 lock:** `THPT-G10-CHV-TRY01` đến `TRY14` xuất hiện đúng 1 lần mỗi câu; 14 **answer/body** `thpt-r4-first-try-answer` vẫn nguyên byte so với baseline, được so bởi script; 6 `HELP-G10-B12/13/14-01/02` bất biến; tab 3 giữ 9 ví dụ, tab 4 giữ sáu D6. Không có canonical item mới. Các prompt hiển thị thêm trước câu Tự thử là cách dẫn dắt nguồn S1 tương đương với đáp án đã duyệt, không thay đáp án.
 - **Golden 1.x/2.x/3.x/4.x:** Tab 1 gồm Cùng tìm hiểu → Ví dụ trực quan (đưa 14 First Try/chuỗi WHY-PED đã có từ tab 2 sang) → thuật ngữ/outcome; tab 2 đi thẳng vào `2.1`, đúng ba đề mục chính thức, không lặp `Kiến thức SGK`; tab 3/4 vẫn cùng source. JS chỉ trang trí chủ đề Golden giống B01–B11, không thay nguồn toán.
