@@ -16,6 +16,7 @@
 
 **Ví dụ có giải thích:** Đường \(2x-y+3=0\) có pháp tuyến (2,−1), chỉ phương (1,2), vì tích vô hướng 2·1−1·2=0.
 
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-T01; PRIMARY_OUTCOME: TOP14-O01; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_FIRST_TRY -->
 **Tự thử trước luyện tập:** Đường \(3x+2y-1=0\) có một vectơ chỉ phương nào?
 
 <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
@@ -34,6 +35,7 @@ Có thể chọn (−2,3), vì (3,2)·(−2,3)=0.
 
 **Ví dụ có giải thích:** Qua P(1,−2), n=(2,3): \(2(x-1)+3(y+2)=0\), hay \(2x+3y+4=0\). Thế P vào được 0.
 
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-T02; PRIMARY_OUTCOME: TOP14-O02; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_FIRST_TRY -->
 **Tự thử trước luyện tập:** Qua P(2,3), có pháp tuyến n=(1,−2). Viết phương trình đường thẳng.
 
 <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
@@ -52,6 +54,7 @@ Có thể chọn (−2,3), vì (3,2)·(−2,3)=0.
 
 **Ví dụ có giải thích:** A(−1,2), u=(3,−2) cho x=−1+3t, y=2−2t. Khi t=2, ta được (5,−2), thuộc đường.
 
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-T03; PRIMARY_OUTCOME: TOP14-O03; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_FIRST_TRY -->
 **Tự thử trước luyện tập:** Qua A(1,−1), u=(2,3), tìm tọa độ điểm ứng với t=2.
 
 <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
@@ -70,6 +73,7 @@ M=(5,5). Dùng cùng t=2 ở cả hai tọa độ.
 
 **Ví dụ có giải thích:** A(1,1),B(3,5): u=(2,4), chọn n=(2,−1), từ A có \(2(x-1)-(y-1)=0\), tức \(2x-y-1=0\). Cả A và B cùng thỏa.
 
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-T04; PRIMARY_OUTCOME: TOP14-O04; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_FIRST_TRY -->
 **Tự thử trước luyện tập:** Qua A(0,2), B(2,0), viết phương trình đường.
 
 <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
@@ -88,6 +92,7 @@ M=(5,5). Dùng cùng t=2 ở cả hai tọa độ.
 
 **Ví dụ có giải thích:** Với d:2x+y−5=0, M(2,1) thuộc d vì 4+1−5=0; N(1,1) không thuộc vì 2+1−5≠0.
 
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-T05; PRIMARY_OUTCOME: TOP14-O05; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_FIRST_TRY -->
 **Tự thử trước luyện tập:** Điểm (−1,3) có thuộc \(x+2y-5=0\) không?
 
 <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
@@ -106,6 +111,7 @@ Có, vì −1+6−5=0.
 
 **Ví dụ có giải thích:** Giao của x+y=4 và x−y=0 là (2,2); đường qua đó song song 2x−3y=0 có 2x−3y+2=0.
 
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-T06; PRIMARY_OUTCOME: TOP14-O06; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_FIRST_TRY -->
 **Tự thử trước luyện tập:** Qua giao của x+y=6 và x−y=2, song song \(3x+y-1=0\). Tìm phương trình.
 
 <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
@@ -124,6 +130,7 @@ Giao là (4,2). Đường có 3x+y+c=0, nên c=−14, thu được \(3x+y-14=0\)
 
 **Ví dụ có giải thích:** Một bể có thể tích V(0)=3 lít, V(2)=7 lít khi đổ đều: m=(7−3)/2=2 lít/phút, V=2t+3 trong khoảng đổ hợp lệ.
 
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-T07; PRIMARY_OUTCOME: TOP14-O07; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_FIRST_TRY -->
 **Tự thử trước luyện tập:** Ban đầu bể có 5 lít, sau 3 phút có 11 lít khi đổ đều. Sau 4 phút có mấy lít?
 
 <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
@@ -144,6 +151,7 @@ Mức tăng 2 lít/phút, V(t)=2t+5 nên V(4)=13 lít, nếu chưa tràn bể.
 
 **Ví dụ có giải thích:** 2x−y+1=0 và 4x−2y−3=0 có pháp tuyến cùng phương nhưng c không cùng tỉ lệ, nên song song khác nhau.
 
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-T08; PRIMARY_OUTCOME: TOP14-O08; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_FIRST_TRY -->
 **Tự thử trước luyện tập:** Hai đường x+2y=3 và 2x+4y=6 có trùng không?
 
 <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
@@ -162,6 +170,7 @@ Trùng nhau: toàn bộ phương trình thứ hai bằng 2 lần thứ nhất.
 
 **Ví dụ có giải thích:** Qua P(2,−1), vuông góc d:2x+y−3=0. Dùng pháp tuyến mới (1,−2), được x−2y−4=0.
 
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-T09; PRIMARY_OUTCOME: TOP14-O09; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_FIRST_TRY -->
 **Tự thử trước luyện tập:** Qua P(1,2), vuông góc \(x-3y+1=0\). Viết đường thẳng.
 
 <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
@@ -184,6 +193,7 @@ Phương trình \(3x+y-5=0\), vì có pháp tuyến (3,1) vuông góc với (1,�
 
 **Ví dụ có giải thích:** x+y=5, x−y=1 có nghiệm (3,2), thỏa tổng 5 và hiệu 1. Hai đường cắt nhau vì định thức khác 0.
 
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-T10; PRIMARY_OUTCOME: TOP14-O10; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_FIRST_TRY -->
 **Tự thử trước luyện tập:** Tìm giao của x+2y=7 và x−y=1.
 
 <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
@@ -202,6 +212,7 @@ Từ x=y+1, thế được 3y=6, y=2,x=3. Giao (3,2).
 
 **Ví dụ có giải thích:** P(1,2), d:3x+4y−10=0 ⇒ d(P,d)=|3+8−10|/5=1/5.
 
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-T11; PRIMARY_OUTCOME: TOP14-O11; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_FIRST_TRY -->
 **Tự thử trước luyện tập:** P(2,1), d:3x+4y−20=0. Tính khoảng cách.
 
 <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
@@ -220,6 +231,7 @@ Từ x=y+1, thế được 3y=6, y=2,x=3. Giao (3,2).
 
 **Ví dụ có giải thích:** d₁:x−y=0,d₂:x+y=0 có pháp tuyến (1,−1),(1,1), tích 0 ⇒ góc nhỏ 90°.
 
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-T12; PRIMARY_OUTCOME: TOP14-O12; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_FIRST_TRY -->
 **Tự thử trước luyện tập:** Góc nhỏ giữa trục Oy (x=0) và đường y=x là bao nhiêu?
 
 <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
@@ -240,6 +252,7 @@ Từ x=y+1, thế được 3y=6, y=2,x=3. Giao (3,2).
 
 **Ví dụ có giải thích:** I(2,−1),R=3 ⇒ (x−2)²+(y+1)²=9. M(5,−1) thuộc vì IM=3.
 
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-T13; PRIMARY_OUTCOME: TOP14-O13; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_FIRST_TRY -->
 **Tự thử trước luyện tập:** Viết đường tròn tâm (−1,3), bán kính 2.
 
 <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
@@ -258,6 +271,7 @@ Từ x=y+1, thế được 3y=6, y=2,x=3. Giao (3,2).
 
 **Ví dụ có giải thích:** x²+y²−4x+6y−12=0 ⇒ (x−2)²+(y+3)²=25, tâm (2,−3), R=5.
 
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-T14; PRIMARY_OUTCOME: TOP14-O14; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_FIRST_TRY -->
 **Tự thử trước luyện tập:** x²+y²+2x−4y+1=0 là đường tròn tâm nào, bán kính bao nhiêu?
 
 <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
@@ -280,6 +294,7 @@ Từ x=y+1, thế được 3y=6, y=2,x=3. Giao (3,2).
 
 **Ví dụ có giải thích:** Đường tròn tâm (1,2), R=3 có P(4,2) trên đường tròn; tiếp tuyến tại P là x=4.
 
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-T15; PRIMARY_OUTCOME: TOP14-O15; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_FIRST_TRY -->
 **Tự thử trước luyện tập:** Đường tròn tâm O, R=5, P(3,4). Viết tiếp tuyến tại P.
 
 <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
@@ -298,6 +313,7 @@ Từ x=y+1, thế được 3y=6, y=2,x=3. Giao (3,2).
 
 **Ví dụ có giải thích:** A(0,0),B(4,0),C(0,6) tạo tam giác vuông tại A, tâm ngoại tiếp là trung điểm BC=(2,3), R=√13.
 
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-T16; PRIMARY_OUTCOME: TOP14-O16; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_FIRST_TRY -->
 **Tự thử trước luyện tập:** Qua A(0,0),B(6,0),C(0,8), tìm tâm và bán kính.
 
 <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
@@ -316,6 +332,7 @@ Tâm trung điểm cạnh huyền BC=(3,4), R=5.
 
 **Ví dụ có giải thích:** Đường tròn x²+y²=25 và đường y=3: δ=3<5, giao tại (−4,3),(4,3).
 
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-T17; PRIMARY_OUTCOME: TOP14-O17; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_FIRST_TRY -->
 **Tự thử trước luyện tập:** Đường tròn x²+y²=25 và x=5 có mấy điểm chung? Điểm nào?
 
 <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
@@ -336,6 +353,7 @@ Tâm trung điểm cạnh huyền BC=(3,4), R=5.
 
 **Ví dụ có giải thích:** x²/25+y²/9=1 có a=5,b=3,c=4; hai tiêu điểm (−4,0),(4,0), trục lớn dài 10.
 
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-T18; PRIMARY_OUTCOME: TOP14-O18; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_FIRST_TRY -->
 **Tự thử trước luyện tập:** Với elip x²/25+y²/16=1, tìm hai tiêu điểm.
 
 <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
@@ -354,6 +372,7 @@ c²=25−16=9⇒c=3, F₁(−3,0),F₂(3,0).
 
 **Ví dụ có giải thích:** x²/9−y²/16=1 có a=3,b=4,c=5, tiêu điểm (±5,0). Trục thực dài 6.
 
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-T19; PRIMARY_OUTCOME: TOP14-O19; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_FIRST_TRY -->
 **Tự thử trước luyện tập:** Với x²/16−y²/9=1, hai tiêu điểm ở đâu?
 
 <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
@@ -372,6 +391,7 @@ c²=16+9=25, c=5, tiêu điểm (−5,0),(5,0).
 
 **Ví dụ có giải thích:** x²/9−y²/4=1, a=3,b=2 ⇒ tiệm cận y=±(2/3)x.
 
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-T20; PRIMARY_OUTCOME: TOP14-O20; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_FIRST_TRY -->
 **Tự thử trước luyện tập:** Với x²/25−y²/9=1, viết phương trình hai tiệm cận.
 
 <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
@@ -394,6 +414,7 @@ c²=16+9=25, c=5, tiêu điểm (−5,0),(5,0).
 
 **Ví dụ có giải thích:** y²=8x ⇒ 2p=8, p=4, F(2,0), đường chuẩn x=−2.
 
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-T21; PRIMARY_OUTCOME: TOP14-O21; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_FIRST_TRY -->
 **Tự thử trước luyện tập:** y²=6x có tiêu điểm và đường chuẩn nào?
 
 <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
@@ -412,6 +433,7 @@ p=3, F(3/2,0), đường chuẩn x=−3/2.
 
 **Ví dụ có giải thích:** Elip x²/9+y²/4=1 gặp x=0 tại y=±2, hai giao (0,2),(0,−2).
 
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-T22; PRIMARY_OUTCOME: TOP14-O22; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_FIRST_TRY -->
 **Tự thử trước luyện tập:** Parabol y²=4x và đường x=1 có bao nhiêu giao điểm?
 
 <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
@@ -430,6 +452,7 @@ Có hai giao (1,2),(1,−2).
 
 **Ví dụ có giải thích:** Nếu nguồn thu ở tiêu điểm cách đỉnh 2 cm, f=2 cm nên phương trình theo cm là y²=8x, đường chuẩn x=−2 cm.
 
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-T23; PRIMARY_OUTCOME: TOP14-O23; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_FIRST_TRY -->
 **Tự thử trước luyện tập:** Nguồn thu ở tiêu điểm cách đỉnh 3 cm; với trục Ox và đơn vị cm, phương trình mặt cắt?
 
 <details markdown="1"><summary>Đối chiếu sau khi tự thử</summary>
