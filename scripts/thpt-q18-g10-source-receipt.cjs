@@ -24,7 +24,7 @@ function chvEditorialReceiptRows(){
  const file=path.join(root,chvReceipt);
  if(!fs.existsSync(file))return new Map();
  const source=fs.readFileSync(file,"utf8");
- const matches=[...source.matchAll(/^\\| B(1[234]) \\| \\x60([a-f0-9]{40})\\x60 \\| \\x60([a-f0-9]{40})\\x60 \\| (\\d+) \\|/gm)];
+ const matches=[...source.matchAll(/^\| B(1[234]) \| \x60([a-f0-9]{40})\x60 \| \x60([a-f0-9]{40})\x60 \| (\d+) \|/gm)];
  assert.equal(matches.length,3,"ChV S1/Q18 editorial receipt requires exactly three source rows");
  const rows=new Map(matches.map(m=>["B"+m[1],{baseline:m[2],candidate:m[3],moved:Number(m[4])}]));
  assert.equal(rows.size,3,"ChV source rows must be unique");
