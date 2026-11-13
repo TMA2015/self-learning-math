@@ -1,25 +1,25 @@
-# CĐ02 — Bất đẳng thức, Dấu tam thức bậc hai và Miền nghiệm · AUTHORING CONTENT_READY R01
+# CĐ02 — Bất đẳng thức, dấu tam thức bậc hai và miền nghiệm · AUTHORING CONTENT_READY R04 (stable R01 packet)
 
 PACKET_ID: THPT-TOPIC02-INEQ-QUAD-REGION-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.0.1
+STANDARD_VERSION: 3.1.0
 QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 7d0b3fe0090c72bf72f8c15d6e093b40bcde1842
+SOURCE_COMMIT: 439a8c8d1228d38cd35dccfd56c65bd6c46fd1de
 AUTHOR_PR: 818
 CURRENT_PR: #818 Draft AUTHORING; no merge or deploy
 CATALOG_TOPIC_ID: CD02
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_INEQ_QUAD_REGION_FULL_PUBLIC_R01_20261112.md
-ACADEMIC_SOURCE_BLOB: 46593df2f3cfc8a0e22d32587fb35a18608c244d
-REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC02_INEQ_QUAD_REGION_R01_AUTHOR_SELF_QA_RECEIPT_20261112.md (AUTHOR_SELF_QA only, not a new independent reviewer PASS)
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC02_INEQ_QUAD_REGION_R01_AUTHOR_SELF_QA_RECEIPT_20261112.md
-REVIEW_RECEIPT_BLOB: 256af9440d06e71f9c5b345b8200ff5acd3d0fcb
-AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC02-INEQ-QUAD-REGION-FULL-R01_HANDOFF_V2_20261112.md
-AUTHOR_HANDOFF_BLOB: 6524691ab646922e174006efc1e824e15efab357
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_CONTINUOUS_KNOWLEDGE_ARCS_R04_REVIEW_CANDIDATE_20261113.md
+ACADEMIC_SOURCE_BLOB: 907af796ff6f61dee518f7d25e5ff99cb23467f1
+REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC02_CONTINUOUS_R04_AUTHOR_SELF_QA_RECEIPT_20261113.md (AUTHOR_SELF_QA only, not a new independent reviewer PASS)
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC02_CONTINUOUS_R04_AUTHOR_SELF_QA_RECEIPT_20261113.md
+REVIEW_RECEIPT_BLOB: 284e9376145fd1c0a08c66c19120e96db867d656
+AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC02-INEQ-QUAD-REGION-FULL-R04_HANDOFF_V2_20261113.md
+AUTHOR_HANDOFF_BLOB: 14383ee10efb31f57f105d2b5de12368b4be8717
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC02_INEQ_QUAD_REGION_ORIGINAL18_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 6412d01a5d2c9b04c6f97d5b6a41c43e85d1c2df
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC02_INEQ_QUAD_REGION_ORIGINAL20_EXTENSION_R01_20261112.md
@@ -45,20 +45,20 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — Một Topic source 46593df2f3cfc8a0e22d32587fb35a18608c244d, receipt 256af9440d06e71f9c5b345b8200ff5acd3d0fcb, 18 bank index +20 extension + một V2 handoff; source SHA đúng mọi file.
+- [x] A1_SOURCE_SNAPSHOT — Một Topic source 907af796ff6f61dee518f7d25e5ff99cb23467f1, receipt 284e9376145fd1c0a08c66c19120e96db867d656, 18 bank index +20 extension + một V2 handoff; source SHA đúng mọi file.
 - [x] A2_SGK_SBT_SCOPE — CĐ02 gốc theo danh mục 22; KNTT G10 T1 B03 SGK 22–25/SBT16–18, B04 SGK26–30/SBT19–23; B17 G10 T2 SGK19–24/SBT16–18, no new scan claim.
-- [x] A3_NOTEBOOKLM_VERDICT — Original 18 immutable G10 ChII reviewed independent 18/18 PASS on old SHA only; new Topic Delta C Q18 AUTHOR_SELF_VERIFIED 52 direct checks; no invented NotebookLM Topic PASS.
+- [x] A3_NOTEBOOKLM_VERDICT — Original 18 immutable G10 ChII reviewed independent 18/18 PASS on old SHA only; new R04 Topic Delta C Q18 AUTHOR_SELF_VERIFIED 16 outcome + 20 novel item solution checks; no invented NotebookLM Topic PASS.
 - [x] A4_ITEM_OUTCOME_IDS — 16/16 outcome IDs, 38 distinct PUBLIC canonical IDs (18 old+20 new), 4 Written (2 old+2 new), each one rubric/7, 16 public selfcheck reuses no IDs minted.
-- [x] A5_D1_D6_SCOPE — 16 meaning-first modules, 16 worked, 16 first-try voluntary reveals, 16 D6 recovery routes and 3 exact SVG; two interaction models described as SPEC_ONLY.
-- [x] A6_DELTA_RESOLVED — New 16 Topic modules, 20 new public practice/written with full proof and one quadratic SVG are Delta C author QA 52/52; old 18 canonical stems/keys/rubrics frozen.
+- [x] A5_D1_D6_SCOPE — four connected teaching arcs, 16 reasoned outcomes/first tries/voluntary reveals, 16 D6 recovery routes and 3 exact SVG; two interaction models described as SPEC_ONLY.
+- [x] A6_DELTA_RESOLVED — Current R04 coherent mathematical arcs, 20 new formative/Written cases and 3 figure-example alignment corrections have exact source-locked self-QA; old 18 canonical stems/keys/rubrics frozen.
 - [x] A7_PUBLIC_PRIVATE_BOUNDARY — 0 private RD1 imported; no independent TOPIC_READINESS; no key/hint/correctness/Tutor before Final Submit and no public practice/selfcheck Mastery.
 
 ## PED1–PED6 / Q09–Q14
 
-- [x] PED1_MOTIVATION — Each of 16 modules starts with practical/mathematical WHY on feasible constraints before symbols and calculations.
+- [x] PED1_MOTIVATION — A real feasibility question leads naturally from one-variable inequality through quadratic sign, half-plane systems and optimization.
 - [x] PED2_PREREQUISITES — Each module has local prerequisite bridge for real numbers, inequality rules, polynomial factorization and Oxy coordinates; Topic is independent.
 - [x] PED3_MEANING_FIRST — Concept explanations of sign/roots/boundary/feasibility precede formulas and algorithms in all 16 modules.
-- [x] PED4_EXPLAINED_VISUAL — Three real SVGs with exact hash, title and desc plus instructions reading quadratic sign, half-plane boundary and feasible polygon.
+- [x] PED4_EXPLAINED_VISUAL — Three exact SVGs have mathematical values explicitly matching adjacent examples (quadratic roots 1/3; half-planes with c=4/1; polygon F max14), with title/desc and reading guidance boundary and feasible polygon.
 - [x] PED5_REASONED_EXAMPLES — Sixteen worked solutions explain why discriminant, factoring, point test, region intersection or integer enumeration applies and its limits.
 - [x] PED6_FIRST_TRY_REMEDIATION — Sixteen first tries before voluntary comparison plus 16 concrete D6 error routes to prerequisite and different practice item.
 
