@@ -51,7 +51,9 @@ for(const [lessonStr,info]of Object.entries(specs)){
  assert.equal(row.examples,info.examples,name+" example count source receipt");
  for(const id of ["data-thpt-first-try-id","data-thpt-help-id","data-outcome-id","data-thpt-help-ref","data-thpt-fig-id"]){
   assert.deepEqual(ids(s,id),ids(baseline,id),name+" canonical data ID drift: "+id);
-  assert.equal(new Set(ids(s,id)).size,ids(s,id).length,name+" duplicated "+id);
+  if(id!=="data-outcome-id")assert.equal(new Set(ids(s,id)).size,ids(s,id).length,name+" duplicated canonical "+id);
+  // Q15: multiple distinct item_ids may target the SAME outcome_id. Do not
+  // misclassify original B22 shared ellipse/hyperbola outcomes as duplicate items.
  }
  assert.deepEqual(revealed(s),revealed(baseline),name+" original canonical voluntary answer text changed");
  assert.equal(revealed(s).length,info.count,name+" original First Try answer-body count");
