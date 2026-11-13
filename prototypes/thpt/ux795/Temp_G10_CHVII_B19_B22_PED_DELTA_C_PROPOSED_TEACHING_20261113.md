@@ -150,3 +150,7 @@
 4. Trả kết luận Academic/PED cho **phần Delta C đã sửa**; nếu còn lỗi, nêu đúng đoạn/bài/outcome và sửa tới khi đủ khả năng tự học. RELEASE nhận source đã duyệt rồi kiểm MathJax, Golden, responsive, Q15/Q16, chính sách Final Submit; không dùng CI làm Academic PASS.
 
 **Status:** PROPOSED_PEDAGOGICAL_DELTA / SOURCE_S1_GROUNDED / ACADEMIC_PED_REVIEW_REQUIRED / ORIGINAL_CANONICAL_UNCHANGED / NO_RELEASE.
+
+## Prompt NotebookLM — chỉ phản biện học liệu (4 câu)
+
+Hãy đọc các đoạn lời giảng và ý tưởng hình minh họa đề xuất trong file này, đối chiếu với SGK/SBT Toán 10 KNTT Chương VII và đúng 5 Permanent Sources THPT v2.1, rồi đánh giá **học sinh lần đầu học có tự hiểu bản chất và tự giải được một bài tương tự không**. Với từng đoạn B19–B22, chỉ ra lỗi toán, điều kiện còn thiếu, cách dẫn chưa tự nhiên, ví dụ/hình chưa giúp hiểu hoặc phần vượt phạm vi kiến thức SGK bắt buộc; giữ nguyên mã câu canonical đang có. Đề nghị chỉnh trực tiếp câu văn hoặc bước suy luận cần sửa để đạt Academic/PED PASS cho **phần chịu ảnh hưởng**, không chỉ trả nhận xét “cần bổ sung”. Không yêu cầu kiểm SHA, dung lượng file, quản trị GitHub hay lặp lại một đợt review toàn chương chỉ vì metadata; nếu học liệu đã đủ tốt, kết luận PASS theo chuẩn đang có.
