@@ -37,6 +37,13 @@ const specs={
      assert.deepEqual((await blocks.nth(0).locator(":scope > h3").allInnerTexts()).map(x=>x.trim()),
       ["1.1. Cùng tìm hiểu","1.2. Ví dụ trực quan","1.3. Thuật ngữ, kiến thức và kỹ năng"],
       tag+" 1.x independent discovery");
+     const discoveryText=await blocks.nth(0).innerText();
+     assert(!/Hãy tự giải từng câu Tự thử trước khi mở Đối chiếu/.test(discoveryText),
+      tag+" redundant instruction returned to learner view");
+     assert.equal(await blocks.nth(0).locator("h4").count(),0,
+      tag+" Discovery explanation still split into per-outcome headings");
+     assert(!/(Kiến thức tiền đề:|Bản chất trước công thức:|Hướng dẫn đọc hình:|Tại sao là D2 mới:)/.test(discoveryText),
+      tag+" learner-facing PED/checklist labels returned");
      assert.equal(await blocks.nth(0).locator("[data-thpt-first-try-id]").count(),s.tries,
       tag+" original First Try missing from Discovery");
      assert.equal(await blocks.nth(0).locator("details.question").count(),s.tries,
