@@ -30,7 +30,7 @@ Prior published blobs are the exact candidate column of the 27-row canonical UX7
 | B19 | `36226f87857499897da3f62aaa9bd6a6f2ec7784` | `8fc4efaafcf2b896430f8cfa0ab18d7118fefc9c` | 7 | 9 | 2 |
 | B20 | `4a704fdbc8ff6eecb932c8c61187b891f40e01ec` | `510f79eb61930e9b0d7795d4b0288fd29ccb0675` | 5 | 7 | 2 |
 | B21 | `13692ca5f8c0a7d648edccf5f9a7535cfdb1b85d` | `0af5e4d9e2348575f2be7de57f81acd00098bc55` | 5 | 7 | 2 |
-| B22 | `aac177881e9e8a1fde9f7fa8213c56793eb966f2` | `77e4ca9e2b68b057d69bc6f3c997bd09a8c592d3` | 8 | 10 | 3 |
+| B22 | `aac177881e9e8a1fde9f7fa8213c56793eb966f2` | `34288f6ed32a0bf100edbf2ef495a4d9cec3ad2a` | 8 | 10 | 3 |
 
 **Golden JS baseline:** `53be8f8e427a4d813651d8352f9fde4b98a2de1e`. **Scoped ChVII candidate:** `f1e19da9e6629d267010ba055f29482daaaecd59`. Reuses owner Golden shared CSS *unchanged* and correct ChIV/chV/ChVI behavior unchanged. All 9 ChVII examples have **exactly one** `.thpt-g10-example-solution`, wrapping **only** worked `Lời giải.` and its calculation steps. No entire-example narrative exception in B19–B22; prompt, justification, self-check and student tip remain *outside*.
 
