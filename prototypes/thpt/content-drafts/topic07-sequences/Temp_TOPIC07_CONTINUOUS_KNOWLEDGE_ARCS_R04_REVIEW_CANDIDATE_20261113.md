@@ -376,30 +376,9 @@ Nếu nhân cả hai khoản với 1,1², vẽ trục kỳ 0–1–2 và đánh 
 
 # Luyện tập
 
-18 câu tự biên soạn `THPT-TOP07-P01…P18`, 4 Written `THPT-TOP07-W01…W04` (rubric 7 điểm/câu) có **duy nhất** đề, đáp án, lời giải và D6 tại `prototypes/thpt/shared-items/Temp_TOPIC07_SEQUENCES_NEW22_PUBLIC_CANONICAL_R01_20261112.md`. 47 item nguồn G11 ChII/B15 chỉ được dẫn bằng `item_id` tại chỉ mục `prototypes/thpt/shared-items/Temp_TOPIC07_SEQUENCES_ORIGINAL47_SGK_CANONICAL_INDEX_R01_20261112.md`. Không tạo một ngân hàng đáp án thứ hai.
+Ở chặng **dãy số**, em hãy viết rõ miền chỉ số, tính số hạng và chứng minh tăng, giảm hoặc bị chặn bằng một lập luận áp dụng cho mọi chỉ số được phép. Sang **cấp số cộng**, em nhận ra công sai qua hiệu hai số liên tiếp, dùng số bước từ số hạng đầu tới số hạng cần tìm, rồi suy tổng bằng cách ghép cặp đầu–cuối. Với **cấp số nhân**, hãy so tỉ số, kiểm dấu và trường hợp công bội bằng 1 trước khi dùng công thức; tổng vô hạn chỉ được xét khi công bội có trị tuyệt đối nhỏ hơn 1.
 
-**Thứ tự tự học:** làm ví dụ → tự thử → chọn 1–2 bài luyện trên outcome → mở đối chiếu sau khi làm → quay lại D6 nếu sai; luyện tập và Written có thể sử dụng hint theo phạm vi PUBLIC nhưng không ghi Skill Mastery.
-
-| Outcome | Chủ đề | Câu mới | Written có rubric |
-|---|---|---|---|
-| TOP07-O01 | Khái niệm dãy và miền chỉ số | THPT-TOP07-P01 | — |
-| TOP07-O02 | Số hạng tổng quát và sự khác nhau giữa quy luật/đoán mò | THPT-TOP07-P02 | — |
-| TOP07-O03 | Hệ thức truy hồi và cách đổi biến | THPT-TOP07-P03 | THPT-TOP07-W01 |
-| TOP07-O04 | Tính tăng, giảm: chứng minh trên mọi n | THPT-TOP07-P04 | — |
-| TOP07-O05 | Bị chặn và giá trị không đạt | THPT-TOP07-P05 | — |
-| TOP07-O06 | Nhận diện cấp số cộng từ cùng một lượng tăng | THPT-TOP07-P06 | — |
-| TOP07-O07 | Số hạng n của cấp số cộng | THPT-TOP07-P07 | — |
-| TOP07-O08 | Suy ngược công sai từ hai số hạng | THPT-TOP07-P08 | — |
-| TOP07-O09 | Tổng hữu hạn của cấp số cộng và ghép cặp | THPT-TOP07-P09 | THPT-TOP07-W02 |
-| TOP07-O10 | Mô hình tăng đều và tổng theo kỳ | THPT-TOP07-P10 | — |
-| TOP07-O11 | Nhận diện cấp số nhân, dấu và số 0 | THPT-TOP07-P11 | — |
-| TOP07-O12 | Số hạng thứ n của cấp số nhân | THPT-TOP07-P12 | — |
-| TOP07-O13 | Suy ngược công bội và trung bình nhân | THPT-TOP07-P13 | — |
-| TOP07-O14 | Tổng n số hạng cấp số nhân và trường hợp q=1 | THPT-TOP07-P14 | — |
-| TOP07-O15 | Tổng cấp số nhân lùi vô hạn và sai số phần dư | THPT-TOP07-P15 | THPT-TOP07-W03 |
-| TOP07-O16 | Nhận diện tăng cộng đều và tăng theo phần trăm | THPT-TOP07-P16 | — |
-| TOP07-O17 | Lãi kép: số kỳ, lãi suất kỳ và giới hạn mô hình | THPT-TOP07-P17 | — |
-| TOP07-O18 | Gửi góp cuối kỳ, trả góp cuối kỳ và dòng tiền | THPT-TOP07-P18 | THPT-TOP07-W04 |
+Ở phần **vận dụng**, em cần viết trục thời gian theo kỳ, cho biết tiền gửi đầu hay cuối kỳ và phân biệt lượng tăng tuyệt đối với phần trăm trên số dư. Làm từng bài và các câu tự luận trước khi mở hướng dẫn đối chiếu. Khi sai, hãy trở lại chặng kiến thức liên quan, giải thích vì sao chọn phương pháp rồi mới tính lại. Ngân hàng bài tập công khai gồm các câu căn bản SGK được tái sử dụng cùng 18 bài luyện và 4 bài tự luận riêng của Chuyên đề; các câu phải được hiển thị ngay trong trang học, không buộc em tự tìm tệp nguồn.
 
 # Tự kiểm tra
 
