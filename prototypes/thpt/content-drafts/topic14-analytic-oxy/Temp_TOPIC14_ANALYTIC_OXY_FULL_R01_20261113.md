@@ -450,10 +450,466 @@ Có **59 câu public** từ SGK Toán 10 Kết nối tri thức Chương VII, ba
 
 ## Bài luyện và tự luận CĐ14
 
-<!-- AUTHORING: exercise bank TO BE COMPLETED before V2, no content ready until 23 Practice + 5 Written signed on locked source -->
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-P01; PRIMARY_OUTCOME: TOP14-O01; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
+### Bài luyện 1 · Từ pháp tuyến sang chỉ phương
+
+**Đề:** Đường thẳng d:−2x+5y+4=0. Nêu một vectơ pháp tuyến và một vectơ chỉ phương, rồi kiểm chúng vuông góc.
+
+<details markdown="1"><summary>Đối chiếu lời giải</summary>
+
+n=(−2,5), u=(5,2). n·u=−10+10=0, n≠0, u≠0.
+
+**Đường sửa lỗi:** Quay về mục Kiến thức 1 rồi thử một lượt không xem đáp án.
+
+</details>
+
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-P02; PRIMARY_OUTCOME: TOP14-O02; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
+### Bài luyện 2 · Qua điểm theo pháp tuyến
+
+**Đề:** Viết đường thẳng qua P(−1,2), có vectơ pháp tuyến n=(3,−2).
+
+<details markdown="1"><summary>Đối chiếu lời giải</summary>
+
+3(x+1)−2(y−2)=0 ⇒ 3x−2y+7=0. Kiểm P: −3−4+7=0.
+
+**Đường sửa lỗi:** Quay về mục Kiến thức 2 rồi thử một lượt không xem đáp án.
+
+</details>
+
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-P03; PRIMARY_OUTCOME: TOP14-O03; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
+### Bài luyện 3 · Một tham số dùng cho hai tọa độ
+
+**Đề:** Đường qua A(2,−3), chỉ phương u=(−1,4). Viết tham số và tìm điểm ứng với t=−2.
+
+<details markdown="1"><summary>Đối chiếu lời giải</summary>
+
+x=2−t, y=−3+4t (t∈ℝ); tại t=−2 có (4,−11).
+
+**Đường sửa lỗi:** Quay về mục Kiến thức 3 rồi thử một lượt không xem đáp án.
+
+</details>
+
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-P04; PRIMARY_OUTCOME: TOP14-O04; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
+### Bài luyện 4 · Đường đi qua hai vị trí
+
+**Đề:** Dựng phương trình tổng quát đường thẳng qua A(−2,1), B(2,3).
+
+<details markdown="1"><summary>Đối chiếu lời giải</summary>
+
+AB=(4,2), chọn n=(1,−2). Qua A: (x+2)−2(y−1)=0 ⇒ x−2y+4=0; thử cả hai điểm.
+
+**Đường sửa lỗi:** Quay về mục Kiến thức 4 rồi thử một lượt không xem đáp án.
+
+</details>
+
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-P05; PRIMARY_OUTCOME: TOP14-O05; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
+### Bài luyện 5 · Kiểm điểm thuộc đường
+
+**Đề:** Đường d:x−3y−7=0. Điểm M(4,−1) và N(3,0) có thuộc d không?
+
+<details markdown="1"><summary>Đối chiếu lời giải</summary>
+
+M:4+3−7=0 nên thuộc; N:3−0−7=−4 nên không thuộc.
+
+**Đường sửa lỗi:** Quay về mục Kiến thức 5 rồi thử một lượt không xem đáp án.
+
+</details>
+
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-P06; PRIMARY_OUTCOME: TOP14-O06; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
+### Bài luyện 6 · Qua giao điểm và song song đường khác
+
+**Đề:** Tìm đường thẳng qua giao của 2x+y=7 và x−y=2, song song 3x−y+2=0.
+
+<details markdown="1"><summary>Đối chiếu lời giải</summary>
+
+Giao (3,1). Đường cần tìm 3x−y+c=0, thế (3,1) ⇒c=−8. Kết quả 3x−y−8=0.
+
+**Đường sửa lỗi:** Quay về mục Kiến thức 6 rồi thử một lượt không xem đáp án.
+
+</details>
+
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-P07; PRIMARY_OUTCOME: TOP14-O07; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
+### Bài luyện 7 · Tốc độ thay đổi và điều kiện mô hình
+
+**Đề:** Bể có 10 lít lúc t=0 và 26 lít lúc t=4 phút, được đổ đều. Viết V(t) và tính V(6), nếu bể chưa tràn.
+
+<details markdown="1"><summary>Đối chiếu lời giải</summary>
+
+Độ tăng 16/4=4 lít/phút; V(t)=10+4t, V(6)=34 lít. Mô hình chỉ đúng trong thời gian đổ đều và chưa tràn.
+
+**Đường sửa lỗi:** Quay về mục Kiến thức 7 rồi thử một lượt không xem đáp án.
+
+</details>
+
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-P08; PRIMARY_OUTCOME: TOP14-O08; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
+### Bài luyện 8 · Song song hay trùng nhau?
+
+**Đề:** Phân loại d₁:x−2y+1=0 và d₂:2x−4y+3=0.
+
+<details markdown="1"><summary>Đối chiếu lời giải</summary>
+
+Pháp tuyến cùng phương, nhưng hệ số tự do không tỉ lệ (2·1≠3), nên hai đường song song **phân biệt**.
+
+**Đường sửa lỗi:** Quay về mục Kiến thức 8 rồi thử một lượt không xem đáp án.
+
+</details>
+
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-P09; PRIMARY_OUTCOME: TOP14-O09; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
+### Bài luyện 9 · Dựng đường vuông góc
+
+**Đề:** Qua P(−2,3), dựng đường vuông góc d:2x−3y+1=0.
+
+<details markdown="1"><summary>Đối chiếu lời giải</summary>
+
+Đường cần có chỉ phương (2,−3), chọn pháp tuyến (3,2). Qua P:3(x+2)+2(y−3)=0 ⇒3x+2y=0.
+
+**Đường sửa lỗi:** Quay về mục Kiến thức 9 rồi thử một lượt không xem đáp án.
+
+</details>
+
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-P10; PRIMARY_OUTCOME: TOP14-O10; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
+### Bài luyện 10 · Giải giao điểm và thử lại
+
+**Đề:** Tìm giao hai đường 3x+y=7, x−y=1.
+
+<details markdown="1"><summary>Đối chiếu lời giải</summary>
+
+Từ y=x−1, thế 3x+x−1=7 ⇒x=2,y=1. Kiểm 3·2+1=7,2−1=1.
+
+**Đường sửa lỗi:** Quay về mục Kiến thức 10 rồi thử một lượt không xem đáp án.
+
+</details>
+
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-P11; PRIMARY_OUTCOME: TOP14-O11; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
+### Bài luyện 11 · Khoảng cách điểm đến đường
+
+**Đề:** Cho P(−1,2) và d:5x+12y−6=0. Tính d(P,d).
+
+<details markdown="1"><summary>Đối chiếu lời giải</summary>
+
+|5(−1)+12·2−6|/√(5²+12²)=|13|/13=1.
+
+**Đường sửa lỗi:** Quay về mục Kiến thức 11 rồi thử một lượt không xem đáp án.
+
+</details>
+
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-P12; PRIMARY_OUTCOME: TOP14-O12; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
+### Bài luyện 12 · Góc nhỏ giữa hai đường
+
+**Đề:** Tính góc nhỏ giữa d₁:x=0 và d₂:x+√3 y=0.
+
+<details markdown="1"><summary>Đối chiếu lời giải</summary>
+
+Pháp tuyến n₁=(1,0), n₂=(1,√3). cosθ=|1|/(1·2)=1/2 ⇒θ=60°.
+
+**Đường sửa lỗi:** Quay về mục Kiến thức 12 rồi thử một lượt không xem đáp án.
+
+</details>
+
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-P13; PRIMARY_OUTCOME: TOP14-O13; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
+### Bài luyện 13 · Dựng đường tròn từ tâm, bán kính
+
+**Đề:** Viết phương trình đường tròn tâm I(−2,1), R=4. Kiểm P(2,1) có nằm trên đường tròn không.
+
+<details markdown="1"><summary>Đối chiếu lời giải</summary>
+
+(x+2)²+(y−1)²=16; tại P có (2+2)²=16 nên P thuộc đường tròn.
+
+**Đường sửa lỗi:** Quay về mục Kiến thức 13 rồi thử một lượt không xem đáp án.
+
+</details>
+
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-P14; PRIMARY_OUTCOME: TOP14-O14; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
+### Bài luyện 14 · Hoàn chỉnh bình phương
+
+**Đề:** Xác định tâm, bán kính của x²+y²−6x+2y+1=0.
+
+<details markdown="1"><summary>Đối chiếu lời giải</summary>
+
+(x−3)²+(y+1)²=9. Tâm I(3,−1), R=3>0 nên là đường tròn thực.
+
+**Đường sửa lỗi:** Quay về mục Kiến thức 14 rồi thử một lượt không xem đáp án.
+
+</details>
+
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-P15; PRIMARY_OUTCOME: TOP14-O15; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
+### Bài luyện 15 · Tiếp tuyến theo bán kính
+
+**Đề:** Đường tròn tâm I(−1,2) đi qua P(1,6). Viết phương trình tiếp tuyến tại P.
+
+<details markdown="1"><summary>Đối chiếu lời giải</summary>
+
+IP=(2,4) là pháp tuyến; 2(x−1)+4(y−6)=0 ⇒x+2y−13=0. P thật sự thuộc đường tròn bán kính √20.
+
+**Đường sửa lỗi:** Quay về mục Kiến thức 15 rồi thử một lượt không xem đáp án.
+
+</details>
+
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-P16; PRIMARY_OUTCOME: TOP14-O16; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
+### Bài luyện 16 · Đường tròn qua ba đỉnh
+
+**Đề:** Cho A(0,0),B(8,0),C(0,6). Xác định tâm và bán kính đường tròn ngoại tiếp tam giác.
+
+<details markdown="1"><summary>Đối chiếu lời giải</summary>
+
+Tam giác vuông tại A, tâm là trung điểm BC=(4,3), R=√(4²+3²)=5.
+
+**Đường sửa lỗi:** Quay về mục Kiến thức 16 rồi thử một lượt không xem đáp án.
+
+</details>
+
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-P17; PRIMARY_OUTCOME: TOP14-O17; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
+### Bài luyện 17 · Đường thẳng và đường tròn
+
+**Đề:** Đường tròn (x−1)²+(y+2)²=9 và đường y=1 có bao nhiêu giao điểm? Nêu tọa độ.
+
+<details markdown="1"><summary>Đối chiếu lời giải</summary>
+
+I(1,−2),R=3; khoảng cách tới y=1 bằng3 nên tiếp xúc tại (1,1), đúng một giao điểm.
+
+**Đường sửa lỗi:** Quay về mục Kiến thức 17 rồi thử một lượt không xem đáp án.
+
+</details>
+
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-P18; PRIMARY_OUTCOME: TOP14-O18; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
+### Bài luyện 18 · Tìm tiêu điểm elip
+
+**Đề:** Elip x²/36+y²/20=1 có hai tiêu điểm nào?
+
+<details markdown="1"><summary>Đối chiếu lời giải</summary>
+
+a²=36,b²=20,c²=36−20=16 ⇒ c=4; F₁(−4,0),F₂(4,0).
+
+**Đường sửa lỗi:** Quay về mục Kiến thức 18 rồi thử một lượt không xem đáp án.
+
+</details>
+
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-P19; PRIMARY_OUTCOME: TOP14-O19; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
+### Bài luyện 19 · Tìm tiêu điểm hypebol
+
+**Đề:** Hypebol x²/25−y²/24=1 có tiêu điểm nào?
+
+<details markdown="1"><summary>Đối chiếu lời giải</summary>
+
+a²=25,b²=24,c²=25+24=49 ⇒ c=7, F₁(−7,0),F₂(7,0).
+
+**Đường sửa lỗi:** Quay về mục Kiến thức 19 rồi thử một lượt không xem đáp án.
+
+</details>
+
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-P20; PRIMARY_OUTCOME: TOP14-O20; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
+### Bài luyện 20 · Tiệm cận không phải đường đỉnh
+
+**Đề:** Tìm hai tiệm cận của x²/16−y²/25=1.
+
+<details markdown="1"><summary>Đối chiếu lời giải</summary>
+
+a=4,b=5 ⇒ y=±(5/4)x. Hai đường x=±4 là vị trí đỉnh, không phải tiệm cận.
+
+**Đường sửa lỗi:** Quay về mục Kiến thức 20 rồi thử một lượt không xem đáp án.
+
+</details>
+
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-P21; PRIMARY_OUTCOME: TOP14-O21; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
+### Bài luyện 21 · Nhận dạng quy ước parabol
+
+**Đề:** Parabol y²=10x có tiêu điểm và đường chuẩn nào theo y²=2px (p>0)?
+
+<details markdown="1"><summary>Đối chiếu lời giải</summary>
+
+2p=10,p=5 ⇒ F(5/2,0), đường chuẩn x=−5/2.
+
+**Đường sửa lỗi:** Quay về mục Kiến thức 21 rồi thử một lượt không xem đáp án.
+
+</details>
+
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-P22; PRIMARY_OUTCOME: TOP14-O22; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
+### Bài luyện 22 · Giao đường thẳng với elip
+
+**Đề:** Tìm các giao điểm của elip x²/16+y²/9=1 và đường y=0.
+
+<details markdown="1"><summary>Đối chiếu lời giải</summary>
+
+Đặt y=0 ⇒x²/16=1 ⇒x=±4; giao (−4,0),(4,0).
+
+**Đường sửa lỗi:** Quay về mục Kiến thức 22 rồi thử một lượt không xem đáp án.
+
+</details>
+
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-P23; PRIMARY_OUTCOME: TOP14-O23; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_PRACTICE -->
+### Bài luyện 23 · Ước lượng miệng ăng-ten parabol
+
+**Đề:** Mặt cắt ăng-ten có trục Ox, đỉnh O, tiêu điểm cách đỉnh 4 cm. Viết phương trình; tại độ sâu x=9 cm, khoảng cách giữa hai mép theo phương y bao nhiêu?
+
+<details markdown="1"><summary>Đối chiếu lời giải</summary>
+
+f=4 ⇒ y²=4fx=16x (tọa độ cm). Tại x=9, y²=144 nên y=±12 cm; bề rộng miệng là 24 cm.
+
+**Đường sửa lỗi:** Quay về mục Kiến thức 23 rồi thử một lượt không xem đáp án.
+
+</details>
+
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-W01; PRIMARY_OUTCOME: TOP14-O04; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_WRITTEN -->
+### Tự luận 1 · Lập phương trình đường theo hai dạng
+
+**Đề:** Qua A(−1,2),B(3,4): (a) tìm chỉ phương; (b) lập tổng quát; (c) lập tham số; (d) kiểm P(1,3) có thuộc đường không.
+
+<details markdown="1"><summary>Đối chiếu lời giải và rubric 7 điểm</summary>
+
+AB=(4,2) (2đ); chọn n=(1,−2), x−2y+5=0 (2đ); x=−1+4t,y=2+2t (2đ); P(1,3) thỏa 1−6+5=0, hoặc t=1/2 (1đ). Tổng 7đ.
+
+**Đường sửa lỗi:** Quay về mục Kiến thức 4 rồi thử một lượt không xem đáp án.
+
+</details>
+
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-W02; PRIMARY_OUTCOME: TOP14-O10; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_WRITTEN -->
+### Tự luận 2 · Giao, khoảng cách và phân loại
+
+**Đề:** Cho d₁:2x+y−7=0, d₂:x−y−2=0, d₃:3x+4y−10=0. (a) tìm giao d₁,d₂; (b) tính khoảng cách giao điểm tới d₃; (c) giải thích vì sao d₁,d₂ cắt nhau duy nhất.
+
+<details markdown="1"><summary>Đối chiếu lời giải và rubric 7 điểm</summary>
+
+Giải hệ được M(3,1) (3đ); d(M,d₃)=|9+4−10|/5=3/5 (3đ); định thức pháp tuyến 2·(−1)−1·1=−3≠0 (1đ). Tổng 7đ.
+
+**Đường sửa lỗi:** Quay về mục Kiến thức 10 rồi thử một lượt không xem đáp án.
+
+</details>
+
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-W03; PRIMARY_OUTCOME: TOP14-O16; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_WRITTEN -->
+### Tự luận 3 · Đường tròn qua ba điểm và tiếp tuyến
+
+**Đề:** Cho A(0,0),B(6,0),C(0,8). (a) tìm tâm; (b) bán kính và phương trình; (c) tiếp tuyến tại A; (d) kiểm A thuộc đường tròn.
+
+<details markdown="1"><summary>Đối chiếu lời giải và rubric 7 điểm</summary>
+
+Tâm I(3,4) (2đ); R=5, (x−3)²+(y−4)²=25 (2đ); IA=(−3,−4), tiếp tuyến 3x+4y=0 (2đ); A thỏa 9+16=25 (1đ). Tổng 7đ.
+
+**Đường sửa lỗi:** Quay về mục Kiến thức 16 rồi thử một lượt không xem đáp án.
+
+</details>
+
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-W04; PRIMARY_OUTCOME: TOP14-O20; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_WRITTEN -->
+### Tự luận 4 · So sánh elip và hypebol
+
+**Đề:** Xét (E):x²/25+y²/9=1 và (H):x²/9−y²/16=1. (a) tiêu điểm E; (b) tiêu điểm H; (c) hai tiệm cận H; (d) giải thích vì sao không dùng một công thức c² cho cả hai.
+
+<details markdown="1"><summary>Đối chiếu lời giải và rubric 7 điểm</summary>
+
+E: c²=25−9=16, tiêu điểm (±4,0) (2đ); H: c²=9+16=25, tiêu điểm (±5,0) (2đ); tiệm cận y=±(4/3)x (2đ); E là tổng khoảng cách không đổi còn H là hiệu trị tuyệt đối, hai dạng dẫn đến dấu khác nhau trong c² (1đ). Tổng 7đ.
+
+**Đường sửa lỗi:** Quay về mục Kiến thức 20 rồi thử một lượt không xem đáp án.
+
+</details>
+
+<!-- CANONICAL_ITEM_ID: THPT-TOP14-W05; PRIMARY_OUTCOME: TOP14-O23; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_WRITTEN -->
+### Tự luận 5 · Mặt cắt parabol và giao đường
+
+**Đề:** Mặt cắt parabol y²=12x (đơn vị cm). (a) tìm tiêu điểm và đường chuẩn; (b) tìm giao với đường x=3; (c) độ rộng mặt cắt tại x=3 và giải thích ý nghĩa.
+
+<details markdown="1"><summary>Đối chiếu lời giải và rubric 7 điểm</summary>
+
+2p=12⇒p=6,F(3,0), đường chuẩn x=−3 (2đ); x=3⇒y²=36, giao (3,−6),(3,6) (2đ); bề rộng=12 cm (2đ); đây là độ rộng mặt cắt tại x=3, không phải tiêu cự/chiều sâu (1đ). Tổng 7đ.
+
+**Đường sửa lỗi:** Quay về mục Kiến thức 23 rồi thử một lượt không xem đáp án.
+
+</details>
+
+
 
 # Tự kiểm tra
 
 Hãy giải một lượt câu đã học về phương trình đường thẳng, giao điểm/khoảng cách, đường tròn, elip, hypebol, parabol và mô hình. Đây là **tự đối chiếu câu công khai**, không phải đánh giá độc lập. Trước **Nộp bài cuối**, không thấy gợi ý, kết quả đúng/sai, đáp án, lời giải hay AI Tutor; sau nộp mới được tự mở đối chiếu và xem cần quay lại bài nào. Không tự động ghi điểm thành thạo.
 
 <!-- AUTHORING: PUBLIC replay only, CLIENT_SELF_CHECK_NO_MASTERY; no independent RD1, no official readiness. -->
+
+<!-- AUTHORING ONLY: original G10 ChVII full R02 reviewed SGK canonical 59 IDs, pointer-only; no duplicated stem/key/rubric.
+SOURCE_GIT_BLOB: c5c222af88b0e932f9b60df059d8ffd4da5f0f26
+- THPT-G10-B19-C01
+- THPT-G10-B19-C02
+- THPT-G10-B19-P01
+- THPT-G10-B19-P02
+- THPT-G10-B19-P03
+- THPT-G10-B19-P04
+- THPT-G10-B20-C01
+- THPT-G10-B20-C02
+- THPT-G10-B20-P01
+- THPT-G10-B20-P02
+- THPT-G10-B20-P03
+- THPT-G10-B20-P04
+- THPT-G10-B21-C01
+- THPT-G10-B21-C02
+- THPT-G10-B21-P01
+- THPT-G10-B21-P02
+- THPT-G10-B21-P03
+- THPT-G10-B21-P04
+- THPT-G10-B22-C01
+- THPT-G10-B22-C02
+- THPT-G10-B22-P01
+- THPT-G10-B22-P02
+- THPT-G10-B22-P03
+- THPT-G10-B22-P04
+- THPT-G10-B19-P05
+- THPT-G10-B19-P06
+- THPT-G10-B20-P05
+- THPT-G10-B20-P06
+- THPT-G10-B21-P05
+- THPT-G10-B21-P06
+- THPT-G10-B22-P05
+- THPT-G10-B22-P06
+- THPT-G10-CHVII-W19-01
+- THPT-G10-CHVII-W20-01
+- THPT-G10-CHVII-W21-ANCHOR-01
+- THPT-G10-CHVII-W22-01
+- THPT-G10-CHVII-TRY01
+- THPT-G10-CHVII-TRY02
+- THPT-G10-CHVII-TRY03
+- THPT-G10-CHVII-TRY04
+- THPT-G10-CHVII-TRY05
+- THPT-G10-CHVII-TRY06
+- THPT-G10-CHVII-TRY07
+- THPT-G10-CHVII-TRY08
+- THPT-G10-CHVII-TRY09
+- THPT-G10-CHVII-TRY10
+- THPT-G10-CHVII-TRY11
+- THPT-G10-CHVII-TRY12
+- THPT-G10-CHVII-TRY13
+- THPT-G10-CHVII-TRY14
+- THPT-G10-CHVII-TRY15
+- THPT-G10-CHVII-TRY16
+- THPT-G10-CHVII-TRY17
+- THPT-G10-CHVII-TRY18
+- THPT-G10-CHVII-TRY19
+- THPT-G10-CHVII-TRY20
+- THPT-G10-CHVII-TRY21
+- THPT-G10-CHVII-TRY22
+- THPT-G10-CHVII-TRY23
+-->
+<!-- AUTHORING ONLY: optional 23 public-replay selfcheck placement IDs, no independent hidden test
+- THPT-TOP14-P01
+- THPT-TOP14-P02
+- THPT-TOP14-P03
+- THPT-TOP14-P04
+- THPT-TOP14-P05
+- THPT-TOP14-P06
+- THPT-TOP14-P07
+- THPT-TOP14-P08
+- THPT-TOP14-P09
+- THPT-TOP14-P10
+- THPT-TOP14-P11
+- THPT-TOP14-P12
+- THPT-TOP14-P13
+- THPT-TOP14-P14
+- THPT-TOP14-P15
+- THPT-TOP14-P16
+- THPT-TOP14-P17
+- THPT-TOP14-P18
+- THPT-TOP14-P19
+- THPT-TOP14-P20
+- THPT-TOP14-P21
+- THPT-TOP14-P22
+- THPT-TOP14-P23
+ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
+OFFICIAL_READINESS: NOT_CLAIMED
+PRIVATE_RD1_COUNT: 0
+MASTERY_ACTIVATION: NO
+-->
