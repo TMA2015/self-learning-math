@@ -223,9 +223,17 @@
 
     **Vì sao chọn cách này?** Đường đã ở dạng tổng quát, nên có thể dùng trực tiếp công thức khoảng cách thay vì tự đo trên hình.
 
-    **Giải.** \(d=\frac{|2\cdot0+0-6|}{\sqrt{2^2+1^2}}=\frac6{\sqrt5}\). Mẫu \(\sqrt5>0\) là độ dài pháp tuyến. Hình bên cạnh minh họa đoạn vuông góc từ M đến đường. **Kiểm lại:** khoảng cách không âm và có đơn vị độ dài.
+    **Lời giải.** \(d=\frac{|2\cdot0+0-6|}{\sqrt{2^2+1^2}}=\frac6{\sqrt5}\). Mẫu \(\sqrt5>0\) là độ dài pháp tuyến. Hình bên cạnh minh họa đoạn vuông góc từ M đến đường. 
 
-    Xét \(d_1:x-y-1=0\) và \(d_2:x+y-5=0\).
+    **Kiểm lại:** khoảng cách không âm và có đơn vị độ dài.
+
+    ### Ví dụ 2 — Giao điểm, vuông góc và khoảng cách của hai đường thẳng
+
+    **Đề bài.** Xét \(d_1:x-y-1=0\) và \(d_2:x+y-5=0\). Hãy xác định vị trí tương đối, giao điểm, quan hệ vuông góc và khoảng cách từ \(O(0;0)\) tới \(d_1\).
+
+    **Vì sao chọn cách này?** Dùng định thức của hai vectơ pháp tuyến để nhận biết hai đường cắt nhau, giải hệ tìm giao điểm và dùng tích vô hướng kiểm tra vuông góc.
+
+    **Lời giải.**
 
     1. Định thức hệ số bằng \(1\cdot1-1\cdot(-1)=2\ne0\), vậy hai đường cắt nhau.
     2. Giải hệ \(x-y=1,\ x+y=5\) được \(I(3;2)\).
@@ -333,4 +341,4 @@
 
     <p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 10 Kết nối tri thức với cuộc sống và học liệu SLM hiện hành. Lời giảng được biên tập nhằm hỗ trợ tự học độc lập.</p>
 
-<small>Nguồn đối chiếu: SGK Toán 10 KNTT tập 2, trang in 36–42; SBT trang 32–38. Ví dụ do dự án biên soạn.</small>
+<small>Nguồn đối chiếu: SGK Toán 10 KNTT tập 2, trang in 36–42; SBT trang 32–38. </small>
