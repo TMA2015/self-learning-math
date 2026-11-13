@@ -1,25 +1,25 @@
-# CĐ03 — Phương trình đại số và Kỹ thuật chuyển đổi dạng · AUTHORING CONTENT_READY R01
+# CĐ03 — Phương trình đại số và kỹ thuật chuyển đổi dạng · AUTHORING CONTENT_READY R04 (stable packet R01)
 
 PACKET_ID: THPT-TOPIC03-ALGEBRA-EQUATIONS-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.0.1
+STANDARD_VERSION: 3.1.0
 QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 1efec7bcc405b5c497dc54b93c6fcbe106201feb
+SOURCE_COMMIT: a58f53d915d41e194d6e93361c29d240cdc51def
 AUTHOR_PR: 820
 CURRENT_PR: #820 Draft AUTHORING, no merge/deploy
 CATALOG_TOPIC_ID: CD03
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_ALGEBRA_EQUATIONS_FULL_PUBLIC_R01_20261112.md
-ACADEMIC_SOURCE_BLOB: 23ae132ea12104442fe5ffd8ef722d571ccdf51f
-REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC03_ALGEBRA_EQUATIONS_R01_AUTHOR_SELF_QA_RECEIPT_20261112.md (AUTHOR_SELF_QA, no new independent NotebookLM PASS)
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC03_ALGEBRA_EQUATIONS_R01_AUTHOR_SELF_QA_RECEIPT_20261112.md
-REVIEW_RECEIPT_BLOB: cec080a7b7a21d78c323a109c3fbb36b080ee819
-AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC03-ALGEBRA-EQUATIONS-FULL-R01_HANDOFF_V2_20261112.md
-AUTHOR_HANDOFF_BLOB: e545bf21b6ec2c7786a9a597996d67444fadef4c
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_CONTINUOUS_KNOWLEDGE_ARCS_R04_REVIEW_CANDIDATE_20261113.md
+ACADEMIC_SOURCE_BLOB: e94bbe37339f7002bd8e29bdf60e0c86fae0aa95
+REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC03_CONTINUOUS_R04_AUTHOR_SELF_QA_RECEIPT_20261113.md (AUTHOR_SELF_QA, no new independent NotebookLM PASS)
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC03_CONTINUOUS_R04_AUTHOR_SELF_QA_RECEIPT_20261113.md
+REVIEW_RECEIPT_BLOB: 53fa40ee7efc98de49d2c0319aa431094b68e065
+AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC03-ALGEBRA-EQUATIONS-FULL-R04_HANDOFF_V2_20261113.md
+AUTHOR_HANDOFF_BLOB: 0d552897d628989d3f4fc381b92b6cb2c616fa2d
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_ORIGINAL08_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: b2e79a6cda5fdcc82dbd281e4273577ca637895e
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_NEW23_PUBLIC_CANONICAL_R01_20261112.md
@@ -46,12 +46,12 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — Nguồn CĐ03 trọn ba trang đã khóa SHA 23ae132ea12104442fe5ffd8ef722d571ccdf51f, receipt Q18 cec080a7b7a21d78c323a109c3fbb36b080ee819, một original index 8 ID, một new 23 bank và một handoff V2, bản chính xác kiểm được.
+- [x] A1_SOURCE_SNAPSHOT — Nguồn CĐ03 R04 ba trang/liền mạch đã khóa SHA e94bbe37339f7002bd8e29bdf60e0c86fae0aa95, receipt Q18 53fa40ee7efc98de49d2c0319aa431094b68e065, một original index 8 ID, một new 23 bank và một handoff V2, bản chính xác kiểm được.
 - [x] A2_SGK_SBT_SCOPE — CĐ03 theo đề xuất 22 chủ dự án cho phép triển khai; SGK KNTT Toán 10 T2 B18 trang in 25–27, SBT trang 19–21 xác thực từ receipt S1 lịch sử, không tuyên bố scan PDF mới.
-- [x] A3_NOTEBOOKLM_VERDICT — B18 historical NotebookLM PASS chỉ cho snapshot 5 Temp_ gốc, 8 ID thuộc reviewer scope; CĐ03 12 modules/23 câu mới độc lập Q18 AUTHOR_SELF_VERIFIED 85/85, không giả reviewer PASS mới.
+- [x] A3_NOTEBOOKLM_VERDICT — B18 historical NotebookLM PASS chỉ cho snapshot 5 Temp_ gốc, 8 ID thuộc reviewer scope; CĐ03 R04 12 outcomes/23 new item math solution checks source-bound Q18 AUTHOR_SELF_VERIFIED, not inherited R01 counts, không giả reviewer PASS mới.
 - [x] A4_ITEM_OUTCOME_IDS — 12 outcome, 31 unique PUBLIC IDs (8 reused +23 new), >=2 item mỗi outcome; 4 Written có rubric đúng source gốc 5/6 điểm, mới 7/7; 12 reuse-only Self Check NO_MASTERY.
-- [x] A5_D1_D6_SCOPE — 12 concept-first modules, 12 worked, 12 Tự thử/tự mở/D6, 3 accessible SVG (1 old+2 new). Hai interaction labs SPEC_ONLY, chưa viết code chạy.
-- [x] A6_DELTA_RESOLVED — 23 PUBLIC new exercise and 2 new SVG are Delta C, direct 85/85 source/math/logic/condition QA; P0=P1=P2=0 in author source. Eight original stems/keys/rubrics preserved.
+- [x] A5_D1_D6_SCOPE — four explanatory arcs covering 12 outcomes and worked examples, 12 Tự thử/tự mở/D6, 3 accessible SVG (1 old+2 new). Two interaction labs SPEC_ONLY, chưa viết code chạy.
+- [x] A6_DELTA_RESOLVED — R04 continuous explanation and exact-domain SVG pairing are Delta C; 23 new original items and 3 SVG source blobs checked, no blanket old 85/85 claim; P0=P1=P2=0 in author source. Eight original stems/keys/rubrics preserved.
 - [x] A7_PUBLIC_PRIVATE_BOUNDARY — 0 private RD1 imported; public selfcheck isn't independent Readiness; no scoring/Mastery, RELEASE must prove Final Submit lock against hints/key/correctness/Tutor.
 
 ## PED1–PED6 / Q09–Q14
