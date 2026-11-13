@@ -9,8 +9,11 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 STATE: AUTHORING_CANDIDATE
 Q18_VERIFICATION_MODE: NOT_YET_SIGNED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R00_FULL_12_OUTCOMES_20261113.md
-ACADEMIC_SOURCE_BLOB: 9d3906aadd2a5aee6bbf103467cd14f1cf03caa2
+ACADEMIC_SOURCE_BLOB: 1f8dcc98593fbc4ee8f4d36a08a6272e2dba4d0d
 ORIGINAL_G11_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
+INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_THPT_TOPIC17_FRUSTUM_VOLUME_MODEL_R00_20261113.html
+INTERACTIVE_MODEL_BLOB: 727c05896a9d9bf95385b54559faa22917f1510e
+MODEL_ID: SLM-TOP17-FRUSTUM-VOLUME-R00
 NO_PRIVATE_RD1_IMPORTED: YES
 NO_MASTERY: YES
 RELEASE_AUTHORIZATION: NO
@@ -107,6 +110,6 @@ Use old accessible NotebookLM author DRAFT `Temp_TOPIC_10_QUAN_HE_VUONG_GOC_VA_K
 ## Assessment and remaining gates
 
 - 22 original G11 SGK canonical IDs referenced, never copied stems/keys/rubrics. 27 new Topic canonical items (12 FirstTry,12 Practice,3 Written/4) from one R00 source; 8 selfcheck placements reuse prior public Practice only.
-- 2 source-equivalent original G11 B26/B27 SVGs with actual guided read and fallback, model NOT YET ADDRESSED.
+- 2 source-equivalent original G11 B26/B27 SVGs with actual guided read and fallback, original public standalone responsive volume-comparison model with 6/6 DOM unit assertions (including k=0 true apex collapse, k=1 prism, reset), JS parser PASS; physical Safari/not live-embedded NOT TESTED.
 - `Q18_AUTHOR_SELF_QA_RECEIPT` not yet signed; needs full 12 outcome/item audit, rubric review, source/SVG, MathJax, numerical and pedagogy quality. Do **not** call CONTENT_READY or write ready/REGISTER before closure.
 - Zero newly imported private RD1, no official TOPIC_READINESS or Mastery writes; RELEASE Final Submit guards still independent, no site/merge/deploy.
