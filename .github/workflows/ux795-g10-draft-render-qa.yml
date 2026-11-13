@@ -21,6 +21,8 @@ on:
       - "prototypes/thpt/ux795/G10_CHVII_B19_B22_S1_Q18_GOLDEN_ENRICHMENT_RECEIPT_20261113.md"
       - "prototypes/thpt/ux795/G10_CHVII_B19_B22_CONTINUOUS_EXPLANATION_Q18_DELTA_RECEIPT_20261113.md"
       - "prototypes/thpt/ux795/G10_CHVII_B19_B22_AP2_EQUIVALENT_MATHJAX_DELTA_RECEIPT_20261113.md"
+      - "prototypes/thpt/ux795/G10_CHVII_B19_B22_R02_ACADEMIC_PED_PASS_RELEASE_INTAKE_20261114.md"
+      - "docs/assets/images/thpt/G10_CHVII_R02_*.svg"
       - "scripts/test-thpt-chvi-math-block-render.cjs"
       - "scripts/test-thpt-chvi-student-notes.cjs"
       - ".github/workflows/ux795-g10-draft-render-qa.yml"
@@ -139,6 +141,9 @@ jobs:
             G10_B25_PASCAL_TRIANGLE_R02.svg; do
             cp "docs/assets/images/thpt/$name" "integration-main/docs/assets/images/thpt/$name"
           done
+          for asset in docs/assets/images/thpt/G10_CHVII_R02_*.svg; do
+            cp "$asset" "integration-main/docs/assets/images/thpt/$(basename "$asset")"
+          done
           # The follow-on Q18 UX receipt is optional for historical PRs.
           # If present, copy the exact signed source identities into this
           # isolated postmerge dry-run (not main / not production).
@@ -155,6 +160,7 @@ jobs:
           if [[ -f prototypes/thpt/ux795/G10_CHVII_B19_B22_AP2_EQUIVALENT_MATHJAX_DELTA_RECEIPT_20261113.md ]]; then
             cp prototypes/thpt/ux795/G10_CHVII_B19_B22_AP2_EQUIVALENT_MATHJAX_DELTA_RECEIPT_20261113.md integration-main/prototypes/thpt/ux795/
           fi
+          cp prototypes/thpt/ux795/G10_CHVII_B19_B22_R02_ACADEMIC_PED_PASS_RELEASE_INTAKE_20261114.md integration-main/prototypes/thpt/ux795/
           cp scripts/test-ux795-g10-postmerge-headings.cjs integration-main/scripts/
           (
             cd integration-main
