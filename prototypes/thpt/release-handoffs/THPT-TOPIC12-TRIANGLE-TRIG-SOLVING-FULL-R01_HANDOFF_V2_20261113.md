@@ -11,13 +11,13 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_TRIANGLE_TRIG_SOLVING_FULL_R01_20261113.md
-ACADEMIC_SOURCE_BLOB: 8f93f8272627bdd14234b1cd5b703715dc98ae93
+ACADEMIC_SOURCE_BLOB: b93611eaaf0dbc03908a4836f1db7f70fd8df108
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC12_TRIANGLE_R01_AUTHOR_SELF_QA_RECEIPT_20261113.md
-REVIEW_RECEIPT_BLOB: 9655508b526296db6cf370aecb7d3b4dafc40cdc
+REVIEW_RECEIPT_BLOB: 9482550bea9b9ef222f2fb685f72079b0e32656e
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R01_AUTHORING_ONLY_METADATA_20261113.md
-AUTHOR_A1_A7_BLOB: e1502a340219842fea7093deef2d5cc8d2af5aac
+AUTHOR_A1_A7_BLOB: 0bf300392f59d649a99c99bd29541b25c5a5072a
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R01_AUTHORING_ONLY_METADATA_20261113.md
-AUTHOR_METADATA_BLOB: e1502a340219842fea7093deef2d5cc8d2af5aac
+AUTHOR_METADATA_BLOB: 0bf300392f59d649a99c99bd29541b25c5a5072a
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/THPT_G10_CHIII_B05_B06_D1D6_AUTHORING_R01_SNAPSHOT.md
 ORIGINAL_SGK_SOURCE_BLOB: 6320aeaa89bd51c514b07461e01fad5e3aca833f
 ORIGINAL_SGK_REVIEW_RECEIPT_PATH: prototypes/thpt/content-drafts/THPT_G10_CHIII_B05_B06_NOTEBOOKLM_D1D6_R01_PASS_RECEIPT_20261029.md
@@ -129,9 +129,9 @@ Concept-first continuity được thể hiện tại 12 mục học: lý do cầ
 
 ## DELTA_LEDGER
 
-- `DELTA_A_UI`: technical item ID labels were removed from learner-visible headings and practice table; exact 34 item IDs retained in HTML comments/authoring metadata and all 16 new stems/keys/explanations/4 rubrics remain unchanged. Learner source Q18 rechecked; version/source SHA updated in all custody records.
+- `DELTA_A_UI`: technical item ID labels and internal Q16 assessment names were removed from learner-visible headings, practice table and self-check prose; exact 34 item IDs retained in HTML comments/authoring metadata and all 16 new stems/keys/explanations/4 rubrics remain unchanged. Learner source Q18 rechecked; version/source SHA updated in all custody records.
 
-- `DELTA_C_ACADEMIC_MATERIAL`: Topic CĐ12 mới với 12 learner modules, 12 new Practice và 4 Written/rubric; toán và lời giải Q18 tác giả tự kiểm, source SHA `8f93f8272627bdd14234b1cd5b703715dc98ae93`, receipt `9655508b526296db6cf370aecb7d3b4dafc40cdc`, P0/P1=0.
+- `DELTA_C_ACADEMIC_MATERIAL`: Topic CĐ12 mới với 12 learner modules, 12 new Practice và 4 Written/rubric; toán và lời giải Q18 tác giả tự kiểm, source SHA `b93611eaaf0dbc03908a4836f1db7f70fd8df108`, receipt `9482550bea9b9ef222f2fb685f72079b0e32656e`, P0/P1=0.
 - `DELTA_B_SOURCE_EQUIVALENT`: 18 public canonical item SGK B05/B06 cũ được **reuse bằng ID** tại placement Topic, giữ nguyên original SGK content/key/rubric. Không copy thân câu.
 - Original historical SGK independent reviewer PASS 18/18 **không** được biến thành new Topic independent PASS; hai SVG là reused original reference media.
 - Cross-PR REGISTER edit at same insertion point is a **RELEASE reconciliation procedure**, not an AUTHORING academic defect. Release must preserve union of all Topic rows after combining on actual latest main.
@@ -167,22 +167,22 @@ No private Topic RD1 created/imported; count=0, SHA256 of empty set recorded. Pu
 | `THPT-G10-B06-P05` | `TOP12-O11` | TOPIC_PRACTICE | SGK_CANONICAL_REUSE | `6320aeaa89bd51c514b07461e01fad5e3aca833f` |
 | `THPT-G10-B06-P06` | `TOP12-O07` | TOPIC_PRACTICE | SGK_CANONICAL_REUSE | `6320aeaa89bd51c514b07461e01fad5e3aca833f` |
 | `THPT-G10-CHIII-W06-ANCHOR` | `TOP12-O11` | TOPIC_WRITTEN | SGK_CANONICAL_REUSE | `6320aeaa89bd51c514b07461e01fad5e3aca833f` |
-| `THPT-TOP12-P01` | `TOP12-O04` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `8f93f8272627bdd14234b1cd5b703715dc98ae93` |
-| `THPT-TOP12-P02` | `TOP12-O02` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `8f93f8272627bdd14234b1cd5b703715dc98ae93` |
-| `THPT-TOP12-P03` | `TOP12-O05` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `8f93f8272627bdd14234b1cd5b703715dc98ae93` |
-| `THPT-TOP12-P04` | `TOP12-O06` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `8f93f8272627bdd14234b1cd5b703715dc98ae93` |
-| `THPT-TOP12-P05` | `TOP12-O07` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `8f93f8272627bdd14234b1cd5b703715dc98ae93` |
-| `THPT-TOP12-P06` | `TOP12-O08` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `8f93f8272627bdd14234b1cd5b703715dc98ae93` |
-| `THPT-TOP12-P07` | `TOP12-O08` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `8f93f8272627bdd14234b1cd5b703715dc98ae93` |
-| `THPT-TOP12-P08` | `TOP12-O09` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `8f93f8272627bdd14234b1cd5b703715dc98ae93` |
-| `THPT-TOP12-P09` | `TOP12-O10` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `8f93f8272627bdd14234b1cd5b703715dc98ae93` |
-| `THPT-TOP12-P10` | `TOP12-O11` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `8f93f8272627bdd14234b1cd5b703715dc98ae93` |
-| `THPT-TOP12-P11` | `TOP12-O12` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `8f93f8272627bdd14234b1cd5b703715dc98ae93` |
-| `THPT-TOP12-P12` | `TOP12-O12` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `8f93f8272627bdd14234b1cd5b703715dc98ae93` |
-| `THPT-TOP12-W01` | `TOP12-O10` | TOPIC_WRITTEN | TOPIC_NEW_CANDIDATE | `8f93f8272627bdd14234b1cd5b703715dc98ae93` |
-| `THPT-TOP12-W02` | `TOP12-O11` | TOPIC_WRITTEN | TOPIC_NEW_CANDIDATE | `8f93f8272627bdd14234b1cd5b703715dc98ae93` |
-| `THPT-TOP12-W03` | `TOP12-O08` | TOPIC_WRITTEN | TOPIC_NEW_CANDIDATE | `8f93f8272627bdd14234b1cd5b703715dc98ae93` |
-| `THPT-TOP12-W04` | `TOP12-O05` | TOPIC_WRITTEN | TOPIC_NEW_CANDIDATE | `8f93f8272627bdd14234b1cd5b703715dc98ae93` |
+| `THPT-TOP12-P01` | `TOP12-O04` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `b93611eaaf0dbc03908a4836f1db7f70fd8df108` |
+| `THPT-TOP12-P02` | `TOP12-O02` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `b93611eaaf0dbc03908a4836f1db7f70fd8df108` |
+| `THPT-TOP12-P03` | `TOP12-O05` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `b93611eaaf0dbc03908a4836f1db7f70fd8df108` |
+| `THPT-TOP12-P04` | `TOP12-O06` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `b93611eaaf0dbc03908a4836f1db7f70fd8df108` |
+| `THPT-TOP12-P05` | `TOP12-O07` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `b93611eaaf0dbc03908a4836f1db7f70fd8df108` |
+| `THPT-TOP12-P06` | `TOP12-O08` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `b93611eaaf0dbc03908a4836f1db7f70fd8df108` |
+| `THPT-TOP12-P07` | `TOP12-O08` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `b93611eaaf0dbc03908a4836f1db7f70fd8df108` |
+| `THPT-TOP12-P08` | `TOP12-O09` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `b93611eaaf0dbc03908a4836f1db7f70fd8df108` |
+| `THPT-TOP12-P09` | `TOP12-O10` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `b93611eaaf0dbc03908a4836f1db7f70fd8df108` |
+| `THPT-TOP12-P10` | `TOP12-O11` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `b93611eaaf0dbc03908a4836f1db7f70fd8df108` |
+| `THPT-TOP12-P11` | `TOP12-O12` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `b93611eaaf0dbc03908a4836f1db7f70fd8df108` |
+| `THPT-TOP12-P12` | `TOP12-O12` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `b93611eaaf0dbc03908a4836f1db7f70fd8df108` |
+| `THPT-TOP12-W01` | `TOP12-O10` | TOPIC_WRITTEN | TOPIC_NEW_CANDIDATE | `b93611eaaf0dbc03908a4836f1db7f70fd8df108` |
+| `THPT-TOP12-W02` | `TOP12-O11` | TOPIC_WRITTEN | TOPIC_NEW_CANDIDATE | `b93611eaaf0dbc03908a4836f1db7f70fd8df108` |
+| `THPT-TOP12-W03` | `TOP12-O08` | TOPIC_WRITTEN | TOPIC_NEW_CANDIDATE | `b93611eaaf0dbc03908a4836f1db7f70fd8df108` |
+| `THPT-TOP12-W04` | `TOP12-O05` | TOPIC_WRITTEN | TOPIC_NEW_CANDIDATE | `b93611eaaf0dbc03908a4836f1db7f70fd8df108` |
 
 
 ## QUALITY_Q01_Q18_EVIDENCE
@@ -212,7 +212,7 @@ Normative source: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_2
 
 ## REVIEW_SOURCE_RECEIPT
 
-Git source `8f93f8272627bdd14234b1cd5b703715dc98ae93` and author-only metadata `e1502a340219842fea7093deef2d5cc8d2af5aac`, receipt `9655508b526296db6cf370aecb7d3b4dafc40cdc` are immutable input SHA for this handoff. Author self-QA P0/P1=0; original independent NotebookLM is S1 SGK support only. 34 unique public item IDs; 12 voluntary Self Check placement refs reuse originals/new without clone. Matrix from author metadata:
+Git source `b93611eaaf0dbc03908a4836f1db7f70fd8df108` and author-only metadata `0bf300392f59d649a99c99bd29541b25c5a5072a`, receipt `9482550bea9b9ef222f2fb685f72079b0e32656e` are immutable input SHA for this handoff. Author self-QA P0/P1=0; original independent NotebookLM is S1 SGK support only. 34 unique public item IDs; 12 voluntary Self Check placement refs reuse originals/new without clone. Matrix from author metadata:
 
 ## OUTCOME_SOURCE_AND_PED_TRACE
 
