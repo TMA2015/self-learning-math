@@ -7,8 +7,8 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_CONTINUOUS_KNOWLEDGE_ARCS_R04_REVIEW_CANDIDATE_20261113.md
-SOURCE_BLOB: a3fda0a1c59d04cebe0e47259d04aa037105f71a
-ACADEMIC_SOURCE_BLOB: a3fda0a1c59d04cebe0e47259d04aa037105f71a
+SOURCE_BLOB: 9fee274efababcf7ffd91c78c7e39e89191f17c0
+ACADEMIC_SOURCE_BLOB: 9fee274efababcf7ffd91c78c7e39e89191f17c0
 R03_IMMUTABLE_BLOB: aadc6923d5380407ea8bacaa513c68977b77c219
 AUTHOR_METADATA_BLOB: a11a8023df5081e062865282a22fb055ddb051f2
 ORIGINAL_G11_CHI_PUBLIC_BLOB: 256ceb5edc5e02aec320e83e99c8e08e035654f3
@@ -28,6 +28,7 @@ ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 RELEASE_AUTHORIZATION: NO
 
 S1_RECEIPT: Historical owner-checked printed-page/PDF-index source receipt: KNTT G11 T1 ChI SGK B01 p5–16, B02 17–21, B03 22–30, B04 31–39, chapter p40–41; SBT B01 4–7,B02 8–10,B03 11–18,B04 19–24, chapter 25–30. Original approved Chapter I SOURCE_BLOB 256ceb5edc5e02aec320e83e99c8e08e035654f3 scoped 46 PUBLIC originals. New R04 self-audit uses historical receipt, **no claim of a fresh direct PDF page scan**. Optional sine modelling is not a new SGK core requirement.
+CANONICAL_SOURCE_LOCK_COMMENT: 66 PUBLIC item_id references inserted as invisible metadata in R04; does not clone stems/keys or show IDs to learner. This is DELTA_B equivalent to the already author-verified mathematical R04 prose; only source identity changed.
 OUTCOME_AUDIT: TOP06-O01..O16 (16/16), four continuous learner arcs, 16 Tự thử and 16 voluntary Đối chiếu, one Practice route with original 46 + new20 unique canonical items and 16 public self-check placements. The 46 original are referenced from one ORIGINAL46 index; new20 (16 Practice+4 Written rubric/7) from one extension; unique 66 IDs and bank answer keys. Student-facing Practice must render those canonical exercises from the bank in RELEASE, never show Git paths as a substitute.
 MATH_VERIFICATION: Verified 16 theoretical outcomes: oriented angles, 2π mod full turns, coordinates cos/sin and quadrant signs, tan/cot exclusions, trigonometric identities, sin/cos/tan period changes, all k∈Z families, interval filtering and phase-model endpoints. Independently recalculated 20 new keys/solutions in table below; direct checks sin135°=√2/2, cos135°=−√2/2, sine graph critical points at π/2,π,3π/2,2π and tan x tiệm cận ±π/2. Three SVGs match adjacent **exact** formula/example after R04.
 PED_VERIFICATION: One natural flow from rotation→coordinate signs→identities→wave graphs→families of solutions, with 16 meaningful worked examples/first tries and 16 targeted D6 recoveries. R03 generic repeated help and technical S1/receipt header moved into author-only metadata; student pages contain no A/B/C PED checklist and no internal bank file paths.
