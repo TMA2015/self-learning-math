@@ -172,15 +172,17 @@
 
     **Vì sao chọn cách này?** Căn thức không âm, nên trước hết cần \(x+1\ge0\) và **\(x-1\ge0\)**; khi đó mới bình phương hai vế an toàn.
 
-    **Giải.** Điều kiện gộp \(x\ge1\). Bình phương: \(x+1=(x-1)^2=x^2-2x+1\), hay \(x^2-3x=0\), suy ra \(x=0\) hoặc \(x=3\). \(x=0\) không đạt điều kiện và không thỏa gốc. Với \(x=3\), \(\sqrt4=2=3-1\), nên nghiệm duy nhất là \(x=3\).
+    **Lời giải.** Điều kiện gộp \(x\ge1\). Bình phương: \(x+1=(x-1)^2=x^2-2x+1\), hay \(x^2-3x=0\), suy ra \(x=0\) hoặc \(x=3\). \(x=0\) không đạt điều kiện và không thỏa gốc. Với \(x=3\), \(\sqrt4=2=3-1\), nên nghiệm duy nhất là \(x=3\).
 
     **Tự kiểm:** Nếu chỉ ghi hai nghiệm \(\{0,3\}\), em đã giải phương trình sau bình phương chứ chưa giải xong phương trình ban đầu.
+
+    **Tự luyện thêm.** Ba câu sau giúp em kiểm tra điều kiện và nghiệm ngoại lai; hãy tự làm trước khi mở lời giải.
 
     1. Giải \(\sqrt{x+2}=x\).
     2. Giải \(\sqrt{x+5}=\sqrt{2x+1}\).
     3. Cho \(\sqrt{x^2+2x+5}=x+1\). Phương trình có nghiệm thực hay không? Giải thích.
 
-    ??? question "Đối chiếu"
+    ??? question "Xem lời giải ba câu tự luyện"
 
         <ol>
         <li><span class="arithmatex">\(x\ge0\)</span>. Bình phương <span class="arithmatex">\(x+2=x^2\iff (x-2)(x+1)=0\)</span>; chỉ <span class="arithmatex">\(x=2\)</span> đạt điều kiện.</li>
@@ -191,15 +193,15 @@
 
 
 
-    ### Ví dụ mở rộng — Ví dụ 3 — Hai căn thức và nghiệm ngoại lai (tự soạn)
+    ### Ví dụ mở rộng — Hai căn thức và nghiệm ngoại lai
 
-    Xét
+    **Đề bài.** Giải phương trình
 
     \[
     \sqrt{x^2+7x+11}=\sqrt{x+3}.
     \]
 
-    Bình phương hai vế và rút gọn:
+    **Lời giải.** Bình phương hai vế và rút gọn:
 
     \[
     x^2+7x+11=x+3 \iff x^2+6x+8=0
@@ -208,16 +210,16 @@
 
     Hai nghiệm ứng viên là \(x=-2\), \(x=-4\). Tuy nhiên, \(x=-4\) làm \(x+3=-1<0\), **không thuộc miền xác định**; còn \(x=-2\) cho cả hai vế bằng \(1\). Vì vậy \(\boxed{S=\{-2\}}\).
 
-    *Bài học:* Không phải cứ bình phương rồi giải phương trình đại số là thu được các nghiệm của phương trình chứa căn.
+    **Điều cần nhớ.** Không phải cứ bình phương rồi giải phương trình đại số là thu được các nghiệm của phương trình chứa căn.
 
 
 
 
-    ### Ví dụ mở rộng — Ví dụ 4 — Ứng dụng độ dài trong hình học (tự soạn)
+    ### Ví dụ mở rộng — Ứng dụng độ dài trong hình học
 
-    Một tam giác vuông có hai cạnh góc vuông dài \(x\) m và \(4\) m, với \(x>0\). Tìm \(x\) nếu cạnh huyền dài \(2x-1\) m.
+    **Đề bài.** Một tam giác vuông có hai cạnh góc vuông dài \(x\) m và \(4\) m, với \(x>0\). Tìm \(x\) nếu cạnh huyền dài \(2x-1\) m.
 
-    Theo định lí Pythagore:
+    **Lời giải.** Theo định lí Pythagore:
 
     \[
     \sqrt{x^2+16}=2x-1.
@@ -233,7 +235,7 @@
 
     Hai nghiệm ứng viên là \(x=3\) và \(x=-\frac53\). Chỉ \(x=3\) đạt điều kiện. Thử lại: \(\sqrt{3^2+4^2}=5=2\cdot3-1\). Vậy cạnh góc vuông cần tìm dài \(\boxed{3\text{ m}}\).
 
-    **Liên hệ SGK/SBT:** Những tình huống hình học ở trên giúp luyện cách đặt điều kiện cho căn thức và thử lại nghiệm ứng viên trong phương trình ban đầu.
+    **Điều cần nhớ.** Những bài hình học như thế này giúp em luyện cách đặt điều kiện cho căn thức và thử lại nghiệm ứng viên trong phương trình ban đầu.
 
 
 
@@ -241,7 +243,9 @@
 
     **Vì sao cần bài này?** Khi hai người đi theo hai lộ trình khác nhau, khoảng cách chưa đủ để quyết định điểm gặp. Ta cần đổi từng khoảng cách thành **thời gian = quãng đường / vận tốc**. Đây cũng là lúc phương trình chứa căn xuất hiện tự nhiên: đường đi xiên là cạnh huyền của tam giác vuông.
 
-    **Ví dụ tự biên soạn.** Hai người xuất phát cùng lúc và cần gặp nhau tại điểm \(M\) trên đoạn đường thẳng \(BC\) dài \(8\) km. Người thứ nhất xuất phát tại \(A\), cách \(B\) một đoạn vuông góc \(AB=3\) km, đi thẳng từ \(A\) tới \(M\) với vận tốc \(5\) km/h. Người thứ hai xuất phát tại \(C\), đi dọc đoạn \(CM\) với vận tốc \(4\) km/h. Hỏi phải chọn \(M\) cách \(B\) bao nhiêu kilômét để hai người đến cùng lúc?
+    **Đề bài.** Hai người xuất phát cùng lúc và cần gặp nhau tại điểm \(M\) trên đoạn đường thẳng \(BC\) dài \(8\) km. Người thứ nhất xuất phát tại \(A\), cách \(B\) một đoạn vuông góc \(AB=3\) km, đi thẳng từ \(A\) tới \(M\) với vận tốc \(5\) km/h. Người thứ hai xuất phát tại \(C\), đi dọc đoạn \(CM\) với vận tốc \(4\) km/h. Hỏi phải chọn \(M\) cách \(B\) bao nhiêu kilômét để hai người đến cùng lúc?
+
+    **Lời giải.**
 
     **Bước 1 — hình dung và đặt điều kiện.** Đặt \(x=BM\) (km), \(0\le x\le8\), vì \(M\) nằm trên đoạn \(BC\). Tam giác \(ABM\) vuông tại \(B\), nên \(AM=\sqrt{x^2+3^2}=\sqrt{x^2+9}\), còn \(CM=8-x\).
 
