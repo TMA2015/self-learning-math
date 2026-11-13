@@ -11,9 +11,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_CONTINUOUS_KNOWLEDGE_ARCS_R04_REVIEW_CANDIDATE_20261113.md
-ACADEMIC_SOURCE_BLOB: a3fda0a1c59d04cebe0e47259d04aa037105f71a
+ACADEMIC_SOURCE_BLOB: 9fee274efababcf7ffd91c78c7e39e89191f17c0
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC06_CONTINUOUS_R04_AUTHOR_SELF_QA_RECEIPT_20261113.md
-REVIEW_RECEIPT_BLOB: 60bf94f4b42b337b78aafd12ab517d70080286b8
+REVIEW_RECEIPT_BLOB: e1bc155ebed00b787313ccdeb9d765d5771ff96e
 PUBLIC_ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHI_B01_B04_CONCEPT_FIRST_PED_R03_SOURCE_CANDIDATE_20261102.md
 PUBLIC_ORIGINAL_SGK_SOURCE_BLOB: 256ceb5edc5e02aec320e83e99c8e08e035654f3
 PUBLIC_ORIGINAL_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC06_TRIGONOMETRY_ORIGINAL46_CANONICAL_INDEX_R01_20261112.md
@@ -237,28 +237,28 @@ RELEASE_AUTHORIZATION: NO
 
 ## QUALITY_Q01_Q18_EVIDENCE
 
-One canonical `SLM-THPT-QUALITY-ONE v3.1.0` source `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`. Q18 author receipt SHA 60bf94f4b42b337b78aafd12ab517d70080286b8 on exact R04 learner SHA a3fda0a1c59d04cebe0e47259d04aa037105f71a.
+One canonical `SLM-THPT-QUALITY-ONE v3.1.0` source `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`. Q18 author receipt SHA e1bc155ebed00b787313ccdeb9d765d5771ff96e on exact R04 learner SHA 9fee274efababcf7ffd91c78c7e39e89191f17c0.
 
 | Qxx | Scope and mathematical/PED evidence | Verdict | Source SHA trace | Release gate |
 |---|---|---|---|---|
-| Q01 | Owner historical SGK G11 T1 B01–B04 ChI printed pages and SBT receipt, scoped original46 source 256ceb5e, not rescan. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_a3fda0a1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q02 | All 16 TOP06-O01..O16 explained by continuous angular geometry→identities→periodic graphs→general solution. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_a3fda0a1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q03 | Angle orientation and radii, tan/cot point exclusions, trig identities/periods, all k∈Z solution families. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_a3fda0a1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q04 | Worked examples and counterexamples include −450°, sin135°/cos135°, sin wave critical points, tan asymptotes and filtrations. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_a3fda0a1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q05 | 46 original G11 public canonical and 20 new topic canonical, total 66 unique bank IDs and 16 public assessment placements. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_a3fda0a1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q06 | Original Written in shared source and 4 new Written with original one rubric/7 each, Anchor only role label. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_a3fda0a1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q07 | 3 immutable real SVG math aligned with exact 135° unit circle, y=sin x, y=tan x instead of mismatched advanced examples. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_a3fda0a1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q08 | 16 targeted D6 self-tries and 66 public practice items from one bank; no generic correction prompts. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_a3fda0a1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q09 | Why trig: a turning wheel, signed rotation and its coordinate projections, periodic physical signals. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_a3fda0a1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q10 | Degree/radian conversion, circle coordinates, sin/cos ratio, domain of tan/cot locally explained. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_a3fda0a1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q11 | Circle geometry leads to trig relations and identities before symbol manipulation; wave as projected rotation. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_a3fda0a1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q12 | All three SVG have title/desc and near-by precise point-value reading instructions. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_a3fda0a1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q13 | Why cos determines tan domain, why 2π family needed, why periodic waveform changes with phase, how to filter interval. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_a3fda0a1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q14 | 16 voluntary FirstTry and 16 opt-in Đối chiếu with real domain/endpoint correction and return path. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_a3fda0a1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q15 | 66 unique IDs from original46 +new20, no duplicates across SGK/topic; a common Written/rubric source. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_a3fda0a1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q16 | No private RD1 imported, public CLIENT_SELF_CHECK_NO_MASTERY only, Final Submit safety and no Mastery are RELEASE checks. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_a3fda0a1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q17 | Topic three learner pages with Practice instruction to render all canonical items, no requirement to navigate SGK. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_a3fda0a1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q18 | R04 exact source a3fda0a1 and author receipt 60bf94f4 v3.1.0, 16 outcomes and 20 new answer checks; historic reviewer only original. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_a3fda0a1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q01 | Owner historical SGK G11 T1 B01–B04 ChI printed pages and SBT receipt, scoped original46 source 256ceb5e, not rescan. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_9fee274e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q02 | All 16 TOP06-O01..O16 explained by continuous angular geometry→identities→periodic graphs→general solution. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_9fee274e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q03 | Angle orientation and radii, tan/cot point exclusions, trig identities/periods, all k∈Z solution families. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_9fee274e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q04 | Worked examples and counterexamples include −450°, sin135°/cos135°, sin wave critical points, tan asymptotes and filtrations. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_9fee274e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q05 | 46 original G11 public canonical and 20 new topic canonical, total 66 unique bank IDs and 16 public assessment placements. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_9fee274e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q06 | Original Written in shared source and 4 new Written with original one rubric/7 each, Anchor only role label. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_9fee274e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q07 | 3 immutable real SVG math aligned with exact 135° unit circle, y=sin x, y=tan x instead of mismatched advanced examples. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_9fee274e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q08 | 16 targeted D6 self-tries and 66 public practice items from one bank; no generic correction prompts. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_9fee274e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q09 | Why trig: a turning wheel, signed rotation and its coordinate projections, periodic physical signals. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_9fee274e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q10 | Degree/radian conversion, circle coordinates, sin/cos ratio, domain of tan/cot locally explained. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_9fee274e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q11 | Circle geometry leads to trig relations and identities before symbol manipulation; wave as projected rotation. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_9fee274e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q12 | All three SVG have title/desc and near-by precise point-value reading instructions. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_9fee274e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q13 | Why cos determines tan domain, why 2π family needed, why periodic waveform changes with phase, how to filter interval. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_9fee274e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q14 | 16 voluntary FirstTry and 16 opt-in Đối chiếu with real domain/endpoint correction and return path. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_9fee274e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q15 | 66 unique IDs from original46 +new20, no duplicates across SGK/topic; a common Written/rubric source. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_9fee274e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q16 | No private RD1 imported, public CLIENT_SELF_CHECK_NO_MASTERY only, Final Submit safety and no Mastery are RELEASE checks. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_9fee274e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q17 | Topic three learner pages with Practice instruction to render all canonical items, no requirement to navigate SGK. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_9fee274e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q18 | R04 exact source 9fee274e and author receipt e1bc155e v3.1.0, 16 outcomes and 20 new answer checks; historic reviewer only original. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_9fee274e | RELEASE_QA_SEPARATE_NO_DEPLOY |
 
 ## S1_SGK_SBT_SOURCE
 
@@ -284,7 +284,7 @@ SGK KNTT Toán 11 tập 1 ChI B01 printed 5–16, B02 17–21, B03 22–30, B04 
 
 ## AUTHORING_A1_A7
 
-A1 source a3fda0a1c59d04cebe0e47259d04aa037105f71a and receipt 60bf94f4b42b337b78aafd12ab517d70080286b8 one V2 pack; A2 owner historic S1 SGK/SBT ChI B01–B04 direct visual page receipt original46; A3 R04 author QA (not independent NotebookLM), P0/P1=0; A4 16 outcomes and 66 unique bank IDs (46 original+20 new), 16 selfcheck placements; A5 four coherent arcs and 16 open comparisons, 3 math-correct SVG and D6; A6 20 new solutions/direct trig computation and SVG mismatch fixes verified; A7 private RD1=0, no actual Topic Readiness/Mastery, release security scope protected.
+A1 source 9fee274efababcf7ffd91c78c7e39e89191f17c0 and receipt e1bc155ebed00b787313ccdeb9d765d5771ff96e one V2 pack; A2 owner historic S1 SGK/SBT ChI B01–B04 direct visual page receipt original46; A3 R04 author QA (not independent NotebookLM), P0/P1=0; A4 16 outcomes and 66 unique bank IDs (46 original+20 new), 16 selfcheck placements; A5 four coherent arcs and 16 open comparisons, 3 math-correct SVG and D6; A6 20 new solutions/direct trig computation and SVG mismatch fixes verified; A7 private RD1=0, no actual Topic Readiness/Mastery, release security scope protected.
 
 ## DELTA_LEDGER
 
