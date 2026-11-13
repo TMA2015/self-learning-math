@@ -19,6 +19,18 @@ function chivEditorialReceiptRows(){
  return rows;
 }
 
+const chvReceipt="prototypes/thpt/ux795/G10_CHV_B12_B14_S1_Q18_EDITORIAL_RECEIPT_20261113.md";
+function chvEditorialReceiptRows(){
+ const file=path.join(root,chvReceipt);
+ if(!fs.existsSync(file))return new Map();
+ const source=fs.readFileSync(file,"utf8");
+ const matches=[...source.matchAll(/^\\| B(1[234]) \\| \\x60([a-f0-9]{40})\\x60 \\| \\x60([a-f0-9]{40})\\x60 \\| (\\d+) \\|/gm)];
+ assert.equal(matches.length,3,"ChV S1/Q18 editorial receipt requires exactly three source rows");
+ const rows=new Map(matches.map(m=>["B"+m[1],{baseline:m[2],candidate:m[3],moved:Number(m[4])}]));
+ assert.equal(rows.size,3,"ChV source rows must be unique");
+ return rows;
+}
+
 function expectedG10KnowledgeBlob(lesson,legacy){
  assert(/^[a-f0-9]{40}$/.test(legacy),"Historical source SHA malformed");
  const name="B"+String(lesson).replace(/^B/,"").padStart(2,"0");
@@ -31,11 +43,14 @@ function expectedG10KnowledgeBlob(lesson,legacy){
  assert.equal(blobs.length,2,name+" must carry baseline AND candidate Git blob");
  assert.notEqual(blobs[0],blobs[1],name+" Knowledge delta must not silently change baseline identity");
 
- const row=chivEditorialReceiptRows().get(name);
+ const chiv=chivEditorialReceiptRows().get(name);
+ const chv=chvEditorialReceiptRows().get(name);
+ assert(!(chiv&&chv),name+" duplicate editorial receipts");
+ const row=chiv||chv;
  if(row){
   assert.equal(row.baseline,blobs[1],name+" immutable S1/Q18 baseline must match ledger candidate");
   assert.notEqual(row.candidate,row.baseline,name+" editorial source must be distinct");
-  assert.equal(row.moved,({B07:5,B08:5,B09:5,B10:6,B11:4})[name],name+" moved First Try count");
+  assert.equal(row.moved,({B07:5,B08:5,B09:5,B10:6,B11:4,B12:4,B13:5,B14:5})[name],name+" moved First Try count");
   return row.candidate;
  }
  return blobs[1];
@@ -44,4 +59,4 @@ function candidateG10KnowledgeBlob(lesson){
  const sentinel="0".repeat(40),result=expectedG10KnowledgeBlob(lesson,sentinel);
  return result===sentinel?null:result;
 }
-module.exports={expectedG10KnowledgeBlob,candidateG10KnowledgeBlob,chivEditorialReceiptRows};
+module.exports={expectedG10KnowledgeBlob,candidateG10KnowledgeBlob,chivEditorialReceiptRows,chvEditorialReceiptRows};
