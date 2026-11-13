@@ -145,10 +145,10 @@
 
     Với mẫu tăng dần: \(Q_2\) là trung vị; \(Q_1\) là trung vị **nửa dưới** và \(Q_3\) là trung vị **nửa trên**. Khi \(n\) lẻ, **loại chính \(Q_2\)** khỏi cả hai nửa; khi \(n\) chẵn, chia dãy thành hai nửa bằng nhau. Mỗi trường hợp cần ghi thao tác, không dùng máy tính có quy ước percentile khác làm bằng chứng thay SGK.
 
-    **Không có mốt:** theo nhận xét của SGK (trang 82), khi mọi giá trị phân biệt trong mẫu có cùng tần số thì mẫu không có mốt, kể cả khi tần số chung lớn hơn 1; không chỉ riêng trường hợp mỗi giá trị xuất hiện một lần.
-
     ### 2.3. Mốt
     Mốt là giá trị xuất hiện nhiều lần nhất (tần số cao nhất); có thể có nhiều giá trị đồng mốt. Theo ví dụ SGK khi tất cả giá trị có tần số 1, mẫu được coi **không có mốt**. Số trung bình có thể bị kéo về phía giá trị rất lớn/nhỏ, trong khi trung vị ít nhạy hơn, nên việc chọn số đặc trưng phải theo tình huống.
+
+    **Không có mốt:** theo nhận xét của SGK (trang 82), khi mọi giá trị phân biệt trong mẫu có cùng tần số thì mẫu không có mốt, kể cả khi tần số chung lớn hơn 1; không chỉ riêng trường hợp mỗi giá trị xuất hiện một lần.
 
 === "Ví dụ"
 
