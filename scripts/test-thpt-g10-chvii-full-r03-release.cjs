@@ -7,7 +7,7 @@
  * SVG geometry RELEASE-owned, equivalent to D5 design spec a2ee2b226780b3aeff379ccb7d5eae0bde0156b5.
  */
 const assert=require("node:assert/strict"),fs=require("node:fs"),crypto=require("node:crypto"),path=require("node:path");
-const {expectedG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
+const {expectedG10KnowledgeBlob,chviiEditorialReceiptRows}=require("./thpt-q18-g10-source-receipt.cjs");
 const root=path.resolve(__dirname,".."),read=p=>fs.readFileSync(path.join(root,p),"utf8");
 const shaText=s=>{const b=Buffer.from(s);return crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+b.length+"\0"),b])).digest("hex")};
 const gitblob=p=>shaText(read(p));
@@ -237,7 +237,18 @@ for(const tag of ["ELLIPSE","HYPERBOLA"]){
     const help="HELP-G10-CHVII-"+tag+"-TR01",ex="EX-G10-B22-"+tag+"-TR01";
     assert(b22.includes('data-thpt-first-try-id="'+id+'"')&&b22.includes('data-thpt-help-ref="'+help+'"')&&b22.includes('data-thpt-help-id="'+help+'"'),
       "Transfer Q15/D6 source identity "+tag);
-    assert(b22.includes("#### Ví dụ giải có hướng dẫn — "+ex),"Transfer D2 reasoning "+tag);
+    const editor=chviiEditorialReceiptRows().get("B22");
+    if(editor){
+     assert.equal(gitblob("docs/thpt-preview/sgk/chuong-vii/bai-22.md"),editor.candidate,
+       "B22 approved S1 Q18 source required for learner-facing transfer headings");
+     const learnerTitle=tag==="ELLIPSE"?"#### Minh họa — Kiểm tra độ hở của mái nửa elip":
+       "#### Minh họa — Hai trạm phát tín hiệu";
+     assert(b22.includes(learnerTitle),"Transfer D2 learner-facing reasoning still required "+tag);
+     assert(!b22.includes("#### Ví dụ giải có hướng dẫn — "+ex),
+       "B22 reviewed internal EX identifier must not leak in learner interface");
+    }else{
+     assert(b22.includes("#### Ví dụ giải có hướng dẫn — "+ex),"Transfer D2 historical title "+tag);
+    }
     const sourceSVG="THPT_G10_CHVII_"+tag+"_TRANSFER_D5_R00.svg";
     assert(b22.includes(sourceSVG),"Transfer D5 diagram preserved "+tag);
     const hx=b22.indexOf('data-thpt-help-id="'+help+'"');
