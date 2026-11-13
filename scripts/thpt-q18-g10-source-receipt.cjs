@@ -79,6 +79,18 @@ function chviiContinuousReceiptRows(){
  return rows;
 }
 
+const chviiAp2Receipt="prototypes/thpt/ux795/G10_CHVII_B19_B22_AP2_EQUIVALENT_MATHJAX_DELTA_RECEIPT_20261113.md";
+function chviiAp2ReceiptRows(){
+ const file=path.join(root,chviiAp2Receipt);
+ if(!fs.existsSync(file))return new Map();
+ const source=fs.readFileSync(file,"utf8");
+ const matches=[...source.matchAll(/^\| B(19|20|21|22) \| \x60([a-f0-9]{40})\x60 \| \x60([a-f0-9]{40})\x60 \| (\d+) \| (\d+) \|/gm)];
+ assert.equal(matches.length,4,"ChVII AP2 source-lock requires four exact lesson blobs");
+ const rows=new Map(matches.map(m=>["B"+m[1],{baseline:m[2],candidate:m[3],moved:Number(m[4]),helps:Number(m[5])}]));
+ assert.equal(rows.size,4,"ChVII AP2 rows must not duplicate lesson IDs");
+ return rows;
+}
+
 function expectedG10KnowledgeBlob(lesson,legacy){
  assert(/^[a-f0-9]{40}$/.test(legacy),"Historical source SHA malformed");
  const name="B"+String(lesson).replace(/^B/,"").padStart(2,"0");
@@ -123,6 +135,14 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    assert.equal(narrative.moved,chvii.moved,name+" canonical First Try count drift");
    assert.equal(narrative.helps,chvii.helps,name+" HELP count drift");
    assert.equal(narrative.examples,chvii.examples,name+" example count drift");
+   const mathjax=chviiAp2ReceiptRows().get(name);
+   if(mathjax){
+    assert.equal(mathjax.baseline,narrative.candidate,name+" AP2 source chain must follow reviewed PR845 SHA");
+    assert.notEqual(mathjax.candidate,mathjax.baseline,name+" AP2 candidate must be a new blob");
+    assert.equal(mathjax.moved,narrative.moved,name+" AP2 must preserve canonical questions");
+    assert.equal(mathjax.helps,narrative.helps,name+" AP2 must preserve D6 HELP");
+    return mathjax.candidate;
+   }
    return narrative.candidate;
   }
   return row.candidate;
@@ -133,4 +153,4 @@ function candidateG10KnowledgeBlob(lesson){
  const sentinel="0".repeat(40),result=expectedG10KnowledgeBlob(lesson,sentinel);
  return result===sentinel?null:result;
 }
-module.exports={expectedG10KnowledgeBlob,candidateG10KnowledgeBlob,chivEditorialReceiptRows,chvEditorialReceiptRows,chviEditorialReceiptRows,chviExampleUxReceiptRows,chviiEditorialReceiptRows,chviiContinuousReceiptRows};
+module.exports={expectedG10KnowledgeBlob,candidateG10KnowledgeBlob,chivEditorialReceiptRows,chvEditorialReceiptRows,chviEditorialReceiptRows,chviExampleUxReceiptRows,chviiEditorialReceiptRows,chviiContinuousReceiptRows,chviiAp2ReceiptRows};
