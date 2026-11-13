@@ -39,3 +39,5 @@ jobs:
           else: raise SystemExit("Preview HTTP did not start")
           PY
           node scripts/test-g10-chv-b12-b14-golden-preview-browser.cjs
+          node scripts/test-thpt-g10-chv-full-r03-browser.cjs
+          node scripts/test-ux795-g10-knowledge-browser.cjs
