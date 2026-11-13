@@ -12,14 +12,14 @@ SOURCE_COMMIT: d6e792e8c4c3c31eaff5413566b0394dbb805621
 CATALOG_TOPIC_ID: CD12
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_TRIANGLE_TRIG_SOLVING_FULL_R01_20261113.md
-ACADEMIC_SOURCE_BLOB: db515766b4247276f00925c160f2d6125dc23d87
+ACADEMIC_SOURCE_BLOB: 8f93f8272627bdd14234b1cd5b703715dc98ae93
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC12_TRIANGLE_R01_AUTHOR_SELF_QA_RECEIPT_20261113.md (self-QA, not independent Topic NotebookLM review)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC12_TRIANGLE_R01_AUTHOR_SELF_QA_RECEIPT_20261113.md
-REVIEW_RECEIPT_BLOB: a2f86dba9703fe635b2775c1e337e832e4abdd58
+REVIEW_RECEIPT_BLOB: 9655508b526296db6cf370aecb7d3b4dafc40cdc
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC12-TRIANGLE-TRIG-SOLVING-FULL-R01_HANDOFF_V2_20261113.md
-AUTHOR_HANDOFF_BLOB: dc4231ffe6259d573511adf556063ba1be46282d
+AUTHOR_HANDOFF_BLOB: a6fea10316bff240446403ae186ba42e495000d4
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R01_AUTHORING_ONLY_METADATA_20261113.md
-AUTHOR_A1_A7_BLOB: 5409b46e3361d56ae1fdf0898900841c7e470fb6
+AUTHOR_A1_A7_BLOB: e1502a340219842fea7093deef2d5cc8d2af5aac
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/THPT_G10_CHIII_B05_B06_D1D6_AUTHORING_R01_SNAPSHOT.md
 ORIGINAL_SGK_SOURCE_BLOB: 6320aeaa89bd51c514b07461e01fad5e3aca833f
 ORIGINAL_SGK_REVIEW_RECEIPT_BLOB: 3fb823c4353d368ae5a9c14f03c7309933d47e6f
@@ -44,7 +44,7 @@ CURRENT_PR: DRAFT_AUTHORING_NOT_MERGED
 
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — CĐ12 source Git blob db515766b4247276f00925c160f2d6125dc23d87, Q18 self QA receipt blob a2f86dba9703fe635b2775c1e337e832e4abdd58, one V2 handoff blob dc4231ffe6259d573511adf556063ba1be46282d, canonical sidecar blob 5409b46e3361d56ae1fdf0898900841c7e470fb6.
+- [x] A1_SOURCE_SNAPSHOT — CĐ12 source Git blob 8f93f8272627bdd14234b1cd5b703715dc98ae93, Q18 self QA receipt blob 9655508b526296db6cf370aecb7d3b4dafc40cdc, one V2 handoff blob a6fea10316bff240446403ae186ba42e495000d4, canonical sidecar blob e1502a340219842fea7093deef2d5cc8d2af5aac.
 - [x] A2_SGK_SBT_SCOPE — SGK Toán10 KNTT Tập1 B05 printed33–37, B06 38–43, cuối44–45; SBT B05 29–33, B06 34–39, cuối40–44, **kế thừa verified original SGK receipt**, no new first-party PDF scan claimed.
 - [x] A3_NOTEBOOKLM_VERDICT — historical CI checklist label; **current Q18 mode is AUTHOR_SELF_VERIFIED**, not new NotebookLM verdict. Author math/PED receipt source-locked; original independent reviewer verified only SGK source 6320aeaa...
 - [x] A4_ITEM_OUTCOME_IDS — 12 Lesson IDs, 12 Outcome IDs, 34 unique public canonical IDs with one matrix source→outcome→role in V2, 18 original SGK reuse and16 new Topic. Self Check reuses12 existing ID without clone.
