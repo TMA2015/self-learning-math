@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Self-Learning Math · Khám phá mô hình toán THPT</title>
+<style>
+:root{color-scheme:light;font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:#183b54;background:#fff}
+*{box-sizing:border-box}html{font-size:16px}body{margin:0;padding:10px}
+.lab{max-width:920px;margin:auto;border:1px solid #c7dfe9;border-radius:16px;overflow:hidden;background:#fff}
+header{background:#eaf4fa;padding:17px 20px}h1{font-size:20px;line-height:1.4;margin:0 0 6px}p{line-height:1.65;margin:7px 0}
+main{padding:17px 20px}.sub{font-size:14px;color:#4e6a7d}
+.controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:14px;margin:16px 0}
+.control label{display:block;font-weight:600;font-size:14px;margin-bottom:5px}
+input[type=range]{width:100%;min-height:32px;accent-color:#1687b4}
+output{font-variant-numeric:tabular-nums;color:#126b90}
+.limits{display:flex;justify-content:space-between;font-size:12px;color:#637f90}
+.canvaswrap{border:1px solid #dcebf2;background:#fafdff;border-radius:12px;overflow:hidden}
+canvas{width:100%;height:350px;display:block;touch-action:pan-y}
+.result{margin-top:12px;border:1px solid #d3e7f1;border-radius:11px;background:#f3f9fc;padding:12px 14px;line-height:1.65;min-height:65px}
+button{font:inherit;border:1px solid #b8d7e6;background:#fff;color:#15506f;border-radius:10px;padding:9px 14px;cursor:pointer}
+button:hover{background:#ecf7fc}button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #1687b4;outline-offset:3px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin:12px 0}details{margin-top:14px;border:1px solid #d6e5ed;border-radius:10px;padding:10px 13px}
+summary{font-weight:600;cursor:pointer;color:#15506f;line-height:1.5}
+.small{font-size:13px;color:#4b6678}.legend{display:flex;gap:13px;flex-wrap:wrap;font-size:13px;margin-top:8px}
+.legend span:before{content:"";display:inline-block;width:13px;height:3px;vertical-align:middle;margin-right:6px;background:#1687b4}
+.legend .second:before{background:#218f73}.legend .marker:before{background:#e9922a}
+@media(max-width:530px){body{padding:5px}header,main{padding:13px}h1{font-size:18px}canvas{height:290px}.controls{gap:8px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<section class="lab" aria-label="Mô hình khám phá toán học THPT">
+<header><h1 id="title">Mô hình toán học</h1><p id="intro"></p><p class="sub">Tự dự đoán trước · Thao tác bằng thanh trượt · Quan sát hình và các giá trị · Giải thích kết quả</p></header>
+<main>
+<p id="predict"></p>
+<div class="controls" id="controls" aria-label="Thông số mô hình"></div>
+<div class="canvaswrap"><canvas id="plot" role="img" aria-label="Hình toán học thay đổi theo điều khiển. Nội dung kết quả luôn được mô tả bằng văn bản dưới hình."></canvas></div>
+<div class="legend"><span>Đường chính</span><span class="second">Đường so sánh</span><span class="marker">Điểm/tham số đang chọn</span></div>
+<div class="result" id="readout" aria-live="polite" role="status"></div>
+<div class="actions"><button id="reset" type="button">Đặt lại</button></div>
+<p id="apply"></p>
+<details id="compare"><summary>Đối chiếu · Vì sao có kết quả này?</summary><p id="reason"></p></details>
+<p class="small">Hoạt động khám phá công khai, không phải đề Tự kiểm tra độc lập. Không ghi điểm, không cập nhật Skill Mastery và không chứa đề/đáp án RD1 kín. Chỉ một mô hình trên mỗi vị trí học, không có tab hành trình mới.</p>
+</main></section>
+<script>
+(function(){"use strict";
+var C={blue:"#1687b4",green:"#218f73",orange:"#e9922a",gray:"#94aab8",grid:"#e0edf3",ink:"#183b54",red:"#b64b41"};
+var specs={
+"SLM-TOP01-TRUTH-01":{title:"Mệnh đề: bảng chân trị có thể thử",intro:"Thay đổi giá trị đúng/sai của p, q để kiểm tra phép 'và', 'hoặc' và kéo theo.",predict:"Dự đoán: với p đúng và q sai, mệnh đề p ⇒ q có đúng không?",apply:"Vận dụng: tìm trường hợp duy nhất mà p ⇒ q sai, rồi giải thích bằng một phản ví dụ.",reason:"Phép p ⇒ q chỉ sai khi tiền đề p đúng mà kết luận q sai. Phép p ∧ q chỉ đúng nếu cả hai đúng; phép p ∨ q đúng khi có ít nhất một đúng.",sliders:[["p","Mệnh đề p",0,1,1,1],["q","Mệnh đề q",0,1,1,0]]},
+"SLM-TOP02-QUADRATIC-01":{title:"Đổi dấu tam thức và các miền nghiệm",intro:"Đồ thị f(x)=x²−k, so sánh vị trí điểm chọn với trục Ox và dấu f(x).",predict:"Dự đoán: k tăng từ 1 lên 4 thì hai nghiệm thực tách xa hay tiến gần nhau?",apply:"Vận dụng: với k=4, tìm toàn bộ x để f(x)≤0, rồi kiểm x=−2 và x=2.",reason:"Nếu k>0, f(x)=0 tại ±√k, f(x)≤0 trong đoạn [−√k,√k]. k=0 có nghiệm kép; k<0 thì f(x)>0 trên ℝ.",sliders:[["k","Giá trị k",-3,6,.5,4],["x","Điểm x đang xét",-3,3,.25,1]]},
+"SLM-TOP03-SQUARING-01":{title:"Bình phương có thể tạo nghiệm ngoại lai",intro:"So sánh √(x+2)=x với phương trình bình phương x+2=x².",predict:"Dự đoán: cả x=−1 và x=2 đều giải phương trình sau bình phương. Giá trị nào còn đúng phương trình gốc?",apply:"Vận dụng: giải √(x+2)=x bằng bình phương rồi thử lại cả hai giá trị.",reason:"Điều kiện trước khi bình phương: x+2≥0 và x≥0. Phương trình sau bình phương có nghiệm −1,2 nhưng −1 bị loại vì √1=1 không bằng −1; nghiệm duy nhất là x=2.",sliders:[["x","Điểm thử x",-2,4,.25,-1]]},
+"SLM-TOP04-EXPLOG-01":{title:"Đổi cơ số để quan sát hàm mũ và logarit",intro:"Vẽ y=a^x và y=logₐ(x), đối xứng qua y=x, với a>0 và a≠1.",predict:"Dự đoán: khi chuyển a từ lớn hơn 1 sang nhỏ hơn 1, hai đường tăng hay giảm?",apply:"Vận dụng: so sánh log₂(4) và log₀․₅(4), nêu miền xác định.",reason:"Với a>1 hai hàm tăng; với 0<a<1 cả hai giảm. Logₐ(x) chỉ nhận x>0; a=1 không được phép. Hai hàm là hàm ngược, đối xứng qua y=x.",sliders:[["ai","Lựa chọn cơ số",0,4,1,3]]},
+"SLM-TOP06-UNIT-CIRCLE-01":{title:"Vòng tròn lượng giác và sóng sin",intro:"Kéo góc α để nhìn sin α trên đường tròn đơn vị và cùng điểm trên đồ thị hình sin từ 0° đến 720°.",predict:"Dự đoán: tại 90°, 180°, 270° thì dấu và giá trị sin như thế nào?",apply:"Vận dụng: tìm hai góc trong [0°,360°] có sin α=1/2.",reason:"Điểm trên đường tròn có tọa độ (cos α,sin α); sin α là tung độ. Một vòng 360° ứng với 2π rad và chu kỳ của sin là 360°; 30° và 150° cùng sin=1/2.",sliders:[["a","Góc α (độ)",0,720,5,90]]},
+"SLM-TOP07-SEQUENCE-01":{title:"Cấp số cộng hay cấp số nhân tăng nhanh hơn?",intro:"So sánh uₙ=2+(n−1)d và vₙ=2rⁿ⁻¹ với số hạng nguyên n, không nối thành hàm liên tục.",predict:"Dự đoán: nếu d=2 và r=1,5, lúc đầu dãy nào lớn hơn và khi n tăng thì sao?",apply:"Vận dụng: chọn n=8 và giải thích khác biệt giữa cộng cố định và nhân theo tỉ lệ.",reason:"CSC tăng thêm d qua mỗi bước; CSN nhân r. Số hạng n chỉ nhận n nguyên dương. Hệ số r>1 khiến tốc độ tăng theo tỉ lệ, nhưng không bảo đảm lớn hơn CSC tại mọi n.",sliders:[["n","Số hạng n",1,10,1,6],["d","Công sai d",0,4,.5,2],["r","Công bội r",1,2,.1,1.5]]},
+"SLM-TOP08-LIMIT-01":{title:"Hai giới hạn một bên và tính liên tục",intro:"Hàm từng đoạn: f(x)=x+2 khi x<0; f(x)=2x+b khi x≥0.",predict:"Dự đoán: muốn hàm liên tục ở 0 thì phải chọn b bao nhiêu?",apply:"Vận dụng: chọn b=1 rồi b=2; so giới hạn trái, giới hạn phải và giá trị f(0).",reason:"Giới hạn trái tại 0 luôn là 2; giới hạn phải và f(0) đều bằng b. Hàm liên tục tại 0 khi b=2. Vòng tròn rỗng là điểm không lấy trên nhánh trái.",sliders:[["b","Tham số b",0,3,.25,1],["x","Điểm x đang xét",-2,2,.1,-.5]]},
+"SLM-TOP10-BOX-01":{title:"Cắt góc tấm vuông: thể tích thay đổi",intro:"Tấm vuông cạnh 12 cm cắt bốn góc cạnh x; gấp thành hộp không nắp với V(x)=x(12−2x)².",predict:"Dự đoán: tăng x mãi có làm thể tích luôn tăng không?",apply:"Vận dụng: tìm x cho thể tích lớn nhất khi 0<x<6 và giải thích vì sao x→6 không tối ưu.",reason:"V'(x)=(12−2x)(12−6x). Trong 0<x<6, điểm cực đại nội x=2 cho V=128 cm³; khi x tiến 0 hoặc 6, thể tích về 0.",sliders:[["x","Cạnh góc cắt x (cm)",.1,5.9,.1,2]]},
+"SLM-TOP11-RIEMANN-01":{title:"Xấp xỉ diện tích bằng hình chữ nhật",intro:"Tính ∫₀²x² dx bằng tổng Riemann trung điểm với n hình chữ nhật, so với 8/3.",predict:"Dự đoán: tăng n từ 2 lên 24 thì tổng gần 8/3 ra sao?",apply:"Vận dụng: giải thích vì sao sai số trung điểm giảm khi chia nhỏ khoảng [0,2].",reason:"Tổng trung điểm là 8/3−2/(3n²), nhỏ hơn tích phân chính xác 8/3 với n hữu hạn. Khác trường hợp tích phân f(x)²=x khiến quy tắc trung điểm tình cờ chính xác cho mọi n.",sliders:[["n","Số hình chữ nhật n",2,30,1,6]]},
+"SLM-TOP12-SSA-01":{title:"Dữ kiện cạnh–cạnh–góc có thể có 0, 1 hoặc 2 tam giác",intro:"Giữ A=30°, a=BC=8 và thay cạnh b=AC. Đỉnh B có thể nằm ở hai vị trí trên một tia.",predict:"Dự đoán: khi b=12 có bao nhiêu tam giác; khi b>16 thì còn tam giác nào không?",apply:"Vận dụng: phân loại số nghiệm với b=7, b=8, b=12, b=16, b=18.",reason:"B thuộc tia xuất phát từ A tạo góc 30° với AC và cách C đúng 8. Giao của tia với đường tròn tâm C, bán kính 8 cho 0/1/2 vị trí hợp lệ. Không lấy nghiệm có AB=0 vì tam giác suy biến.",sliders:[["b","Cạnh b=AC",4,20,.25,12]]},
+"SLM-TOP14-PARABOLA-01":{title:"Parabol: tiêu điểm và đường chuẩn",intro:"Dạng SGK y²=2px, p>0; F(p/2,0), đường chuẩn x=−p/2.",predict:"Dự đoán: khi tăng p, tiêu điểm dịch chuyển và parabol mở rộng hay thu hẹp?",apply:"Vận dụng: với p=4, tính tiêu điểm, đường chuẩn và hai điểm trên đường tại x=2.",reason:"Mỗi điểm M(x,±√(2px)) có khoảng cách tới F bằng x+p/2, cũng bằng khoảng cách vuông góc tới đường chuẩn x=−p/2. Nếu dùng dạng y²=4fx thì f=p/2; không trộn hai quy ước.",sliders:[["p","Tham số p",.5,6,.5,4],["x","Hoành độ x≥0",0,6,.5,2]]}
+};
+var id=new URLSearchParams(window.location.search).get("model")||"SLM-TOP01-TRUTH-01",S=specs[id];
+if(!S){document.getElementById("title").textContent="Không có mô hình với MODEL_ID này";document.getElementById("intro").textContent="Kiểm tra lại nguồn MODEL_ID canonical trong bản ghi placement.";document.querySelector("main").hidden=true;return}
+document.title="SLM · "+S.title;
+["title","intro","predict","apply","reason"].forEach(function(k){document.getElementById(k).textContent=(k==="title"?S.title:k==="intro"?S.intro:k==="predict"?"Dự đoán: "+S.predict.replace(/^Dự đoán:\s*/,""):k==="apply"?S.apply:S.reason)});
+var host=document.getElementById("controls"),el={};
+S.sliders.forEach(function(c){var div=document.createElement("div");div.className="control";var label=document.createElement("label");label.htmlFor=c[0];label.textContent=c[1]+": ";var out=document.createElement("output");out.id="o-"+c[0];label.appendChild(out);var input=document.createElement("input");input.type="range";input.id=c[0];input.min=c[2];input.max=c[3];input.step=c[4];input.value=c[5];input.setAttribute("aria-label",c[1]);div.appendChild(label);div.appendChild(input);var limits=document.createElement("div");limits.className="limits";var a=document.createElement("span"),b=document.createElement("span");a.textContent=String(c[2]);b.textContent=String(c[3]);limits.appendChild(a);limits.appendChild(b);div.appendChild(limits);host.appendChild(div);el[c[0]]={input:input,out:out,initial:c[5]};});
+var canvas=document.getElementById("plot"),ctx=canvas.getContext("2d"),result=document.getElementById("readout"),dims={w:0,h:0},pending=false,interacted=false;
+function val(k){return Number(el[k].input.value)}
+function fmt(v){if(!Number.isFinite(v))return "không xác định";var n=Math.abs(v)<1e-10?0:Math.round(v*1000)/1000;return String(n).replace("-","−").replace(".",",")}
+function out(k,v){if(el[k])el[k].out.textContent=fmt(v===undefined?val(k):v)}
+function setText(t){result.textContent=t}
+function init(){var dpr=Math.min(window.devicePixelRatio||1,2),w=canvas.clientWidth||720,h=canvas.clientHeight||350;dims={w:w,h:h};canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);ctx.fillStyle="#fafdff";ctx.fillRect(0,0,w,h)}
+function line(ax,ay,bx,by,color,width,dash){ctx.beginPath();ctx.strokeStyle=color||C.blue;ctx.lineWidth=width||2.5;ctx.setLineDash(dash||[]);ctx.moveTo(ax,ay);ctx.lineTo(bx,by);ctx.stroke();ctx.setLineDash([])}
+function dot(px,py,color,r,open){ctx.beginPath();ctx.arc(px,py,r||5.5,0,Math.PI*2);ctx.fillStyle=open?"#fafdff":color;ctx.fill();ctx.lineWidth=2;ctx.strokeStyle=color;ctx.stroke()}
+function label(s,x,y,color){ctx.fillStyle=color||C.ink;ctx.font="12px system-ui,Arial";ctx.fillText(s,x,y)}
+function graph(xmin,xmax,ymin,ymax){var w=dims.w,h=dims.h,left=44,right=w-20,top=15,bottom=h-35;function X(x){return left+(x-xmin)/(xmax-xmin)*(right-left)}function Y(y){return top+(ymax-y)/(ymax-ymin)*(bottom-top)}ctx.strokeStyle=C.grid;ctx.lineWidth=1;for(var k=0;k<=8;k++){var xx=left+k*(right-left)/8,yy=top+k*(bottom-top)/8;line(xx,top,xx,bottom,C.grid,1);line(left,yy,right,yy,C.grid,1)}if(xmin<=0&&xmax>=0)line(X(0),top,X(0),bottom,C.gray,1.5);if(ymin<=0&&ymax>=0)line(left,Y(0),right,Y(0),C.gray,1.5);label(fmt(xmin),left,bottom+17);label(fmt(xmax),right-48,bottom+17);label("x",right-7,bottom+17);label(fmt(ymax),4,top+10);label(fmt(ymin),4,bottom);label("y",left-13,top-2);ctx.save();ctx.beginPath();ctx.rect(left,top,right-left,bottom-top);ctx.clip();return {X:X,Y:Y,end:function(){ctx.restore()},left:left,right:right,top:top,bottom:bottom}}
+function curve(g,f,a,b,color,width){ctx.beginPath();ctx.strokeStyle=color||C.blue;ctx.lineWidth=width||2.5;var active=false;for(var i=0;i<=300;i++){var x=a+(b-a)*i/300,y=f(x);if(!Number.isFinite(y)||Math.abs(y)>10000){active=false;continue}var px=g.X(x),py=g.Y(y);if(!active){ctx.moveTo(px,py);active=true}else ctx.lineTo(px,py)}ctx.stroke()}
+function draw(){init();var x,k,g,i,y,z,n,b,p,alpha,r,t,sol,roots,theta,dx,estimate,exact,ns;Object.keys(el).forEach(function(key){out(key)});
+switch(id){
+case "SLM-TOP01-TRUTH-01":
+var pv=val("p")===1,qv=val("q")===1,cols=["p","q","p ∧ q","p ∨ q","p ⇒ q"];var truth=[[1,1,1,1,1],[1,0,0,1,0],[0,1,0,1,1],[0,0,0,0,1]],left=12,cw=Math.max(52,(dims.w-24)/5),rh=45;
+label("BẢNG CHÂN TRỊ (hàng đang chọn tô nền)",16,22);for(i=0;i<5;i++)label(cols[i],left+i*cw+5,48);
+for(i=0;i<4;i++){var row=truth[i],chosen=row[0]===Number(pv)&&row[1]===Number(qv);if(chosen){ctx.fillStyle="#eaf4fa";ctx.fillRect(left,56+i*rh,dims.w-24,rh-2)}for(k=0;k<5;k++)label(row[k]?"Đ":"S",left+k*cw+8,80+i*rh,chosen?C.orange:C.ink)}
+setText("p="+(pv?"Đúng":"Sai")+", q="+(qv?"Đúng":"Sai")+". p∧q="+(pv&&qv?"Đúng":"Sai")+", p∨q="+(pv||qv?"Đúng":"Sai")+", p⇒q="+(!pv||qv?"Đúng":"Sai")+".");break;
+case "SLM-TOP02-QUADRATIC-01":
+x=val("x");k=val("k");g=graph(-3.5,3.5,-5,9);curve(g,function(t){return t*t-k},-3.5,3.5,C.blue);dot(g.X(x),g.Y(x*x-k),C.orange);g.end();setText("f("+fmt(x)+") = "+fmt(x*x-k)+". "+(x*x-k>1e-8?"Dương":Math.abs(x*x-k)<1e-8?"Bằng 0":"Âm")+". Nghiệm f=0: "+(k>0?"x=±"+fmt(Math.sqrt(k)):k===0?"x=0 (nghiệm kép)":"không có nghiệm thực")+".");break;
+case "SLM-TOP03-SQUARING-01":
+x=val("x");g=graph(-2.5,4.5,-2,5);curve(g,function(t){return t>=-2?Math.sqrt(t+2):NaN},-2,4.5,C.blue);curve(g,function(t){return t},-2.5,4.5,C.green);if(x>=-2)dot(g.X(x),g.Y(Math.sqrt(x+2)),C.orange);g.end();var squareOk=Math.abs(x*x-x-2)<1e-8,sourceOk=x>=0&&Math.abs(Math.sqrt(x+2)-x)<1e-8;setText("x="+fmt(x)+": sau bình phương "+(squareOk?"đúng":"chưa đúng")+"; phương trình gốc "+(sourceOk?"đúng":"không đúng")+". Nghiệm sau bình phương: −1 và 2. Nghiệm gốc: chỉ 2.");break;
+case "SLM-TOP04-EXPLOG-01":
+var bases=[.5,.7,1.3,2,3],base=bases[val("ai")];out("ai",base);g=graph(-4,4,-4,4);curve(g,function(t){return Math.pow(base,t)},-4,4,C.blue);curve(g,function(t){return t>0?Math.log(t)/Math.log(base):NaN},.02,4,C.green);line(g.X(-4),g.Y(-4),g.X(4),g.Y(4),C.orange,1.5,[5,5]);g.end();setText("Cơ số a="+fmt(base)+" (hợp lệ). y=aˣ và y=logₐ(x) là hai hàm ngược, đối xứng qua y=x. Cả hai "+(base>1?"đồng biến":"nghịch biến")+". Logarit chỉ xác định với x>0.");break;
+case "SLM-TOP06-UNIT-CIRCLE-01":
+alpha=val("a")*Math.PI/180;var cx=Math.min(dims.w*.22,135),cy=dims.h*.48,R=Math.min(95,dims.w*.16,dims.h*.31),px=cx+R*Math.cos(alpha),py=cy-R*Math.sin(alpha);
+line(cx-R-10,cy,cx+R+10,cy,C.gray,1.3);line(cx,cy-R-10,cx,cy+R+10,C.gray,1.3);ctx.beginPath();ctx.arc(cx,cy,R,0,Math.PI*2);ctx.strokeStyle=C.blue;ctx.lineWidth=2;ctx.stroke();line(cx,cy,px,py,C.orange,2.5);dot(px,py,C.orange);line(px,py,cx,py,C.green,1.4,[5,4]);
+var L=dims.w*.44,RR=dims.w-20,T=22,BB=dims.h-43;line(L,T,L,BB,C.gray,1);line(L,(T+BB)/2,RR,(T+BB)/2,C.gray,1);ctx.beginPath();ctx.strokeStyle=C.blue;ctx.lineWidth=2.5;for(i=0;i<=300;i++){var ang=i/300*4*Math.PI,xx=L+(RR-L)*i/300,yy=(T+BB)/2-(BB-T)*.39*Math.sin(ang);i?ctx.lineTo(xx,yy):ctx.moveTo(xx,yy)}ctx.stroke();dot(L+(RR-L)*val("a")/720,(T+BB)/2-(BB-T)*.39*Math.sin(alpha),C.orange);label("sin α",L+5,15);label("0°",L,BB+17);label("720°",RR-27,BB+17);setText("α="+fmt(val("a"))+"° = "+fmt(alpha/Math.PI)+"π rad; cos α="+fmt(Math.cos(alpha))+"; sin α="+fmt(Math.sin(alpha))+". Điểm cam trên đồ thị sin có cùng tung độ sin với điểm trên đường tròn.");break;
+case "SLM-TOP07-SEQUENCE-01":
+n=val("n");var d=val("d"),ratio=val("r"),ap=j=>2+(j-1)*d,gp=j=>2*Math.pow(ratio,j-1),topVal=Math.max(ap(10),gp(10),3)*1.12;g=graph(.5,10.5,0,topVal);
+for(i=1;i<=10;i++){if(i>1){line(g.X(i-1),g.Y(ap(i-1)),g.X(i),g.Y(ap(i)),C.blue,1.5,[3,4]);line(g.X(i-1),g.Y(gp(i-1)),g.X(i),g.Y(gp(i)),C.green,1.5,[3,4])}dot(g.X(i),g.Y(ap(i)),i===n?C.orange:C.blue,3.7);dot(g.X(i),g.Y(gp(i)),i===n?C.orange:C.green,3.7)}
+g.end();setText("n="+n+": cấp số cộng uₙ="+fmt(ap(n))+"; cấp số nhân vₙ="+fmt(gp(n))+". Dấu chấm tương ứng các số hạng nguyên, nét đứt chỉ giúp nối mắt, không cho phép n không nguyên.");break;
+case "SLM-TOP08-LIMIT-01":
+b=val("b");x=val("x");g=graph(-2.5,2.5,-2,7);curve(g,function(t){return t+2},-2.5,0,C.blue);curve(g,function(t){return 2*t+b},0,2.5,C.green);dot(g.X(0),g.Y(2),C.blue,6,true);dot(g.X(0),g.Y(b),C.green);dot(g.X(x),g.Y(x<0?x+2:2*x+b),C.orange);g.end();setText("Giới hạn trái tại 0: 2; giới hạn phải tại 0: "+fmt(b)+"; f(0)="+fmt(b)+". Hàm "+(Math.abs(b-2)<1e-8?"liên tục":"không liên tục")+" tại 0. f("+fmt(x)+")="+fmt(x<0?x+2:2*x+b)+".");break;
+case "SLM-TOP10-BOX-01":
+x=val("x");g=graph(0,6,0,140);curve(g,function(t){return t*Math.pow(12-2*t,2)},0,6,C.blue);dot(g.X(x),g.Y(x*(12-2*x)*(12-2*x)),C.orange);line(g.X(2),g.Y(0),g.X(2),g.Y(128),C.green,1.5,[5,5]);g.end();setText("x="+fmt(x)+" cm; đáy hộp cạnh "+fmt(12-2*x)+" cm; cao "+fmt(x)+" cm; thể tích V="+fmt(x*(12-2*x)*(12-2*x))+" cm³. Điểm cực đại: x=2 cm cho 128 cm³.");break;
+case "SLM-TOP11-RIEMANN-01":
+n=val("n");g=graph(0,2,0,4.3);dx=2/n;for(i=0;i<n;i++){var mid=(i+.5)*dx,height=mid*mid,ax=g.X(i*dx),bx=g.X((i+1)*dx),h=g.Y(height);ctx.fillStyle="rgba(33,143,115,.18)";ctx.fillRect(ax,h,bx-ax,g.Y(0)-h);ctx.strokeStyle=C.green;ctx.lineWidth=1;ctx.strokeRect(ax,h,bx-ax,g.Y(0)-h)}curve(g,function(t){return t*t},0,2,C.blue);g.end();estimate=8/3-2/(3*n*n);exact=8/3;setText("n="+n+" hình; tổng trung điểm Sₙ="+fmt(estimate)+"; tích phân chính xác 8/3≈"+fmt(exact)+"; sai số="+fmt(exact-estimate)+". Khi n tăng, sai số dương giảm về 0.");break;
+case "SLM-TOP12-SSA-01":
+b=val("b");alpha=Math.PI/6;var discr=64-b*b*Math.sin(alpha)*Math.sin(alpha);if(Math.abs(discr)<1e-8)discr=0;roots=[];
+if(discr>=-1e-9){var rad=Math.sqrt(Math.max(0,discr));[b*Math.cos(alpha)-rad,b*Math.cos(alpha)+rad].forEach(function(ab){if(ab>1e-7&&!roots.some(function(y){return Math.abs(y-ab)<1e-7}))roots.push(ab)})}
+g=graph(-1,21,-1,20);var P={x:0,y:0},Cpt={x:b,y:0};line(g.X(0),g.Y(0),g.X(b),g.Y(0),C.gray,2);roots.forEach(function(ab,i){var bx=ab*Math.cos(alpha),by=ab*Math.sin(alpha);line(g.X(0),g.Y(0),g.X(bx),g.Y(by),i?C.green:C.blue,2.7);line(g.X(bx),g.Y(by),g.X(b),g.Y(0),i?C.green:C.blue,2.7);dot(g.X(bx),g.Y(by),i?C.green:C.orange);label("B"+(i+1),g.X(bx)+5,g.Y(by)-4)});dot(g.X(0),g.Y(0),C.orange);dot(g.X(b),g.Y(0),C.gray);label("A",g.X(0)+7,g.Y(0)-7);label("C",g.X(b)+7,g.Y(0)-7);g.end();
+setText("A=30°, a=8, b="+fmt(b)+". Số tam giác không suy biến: "+roots.length+". "+(roots.length?roots.map(function(t,i){return "AB"+(i+1)+"="+fmt(t)}).join("; "):"Không có vị trí B trên tia thỏa BC=8")+". Điều kiện AB>0 loại nghiệm suy biến.");break;
+case "SLM-TOP14-PARABOLA-01":
+p=val("p");x=val("x");y=Math.sqrt(2*p*x);g=graph(-3.5,7,-7,7);curve(g,function(t){return Math.sqrt(2*p*t)},0,7,C.blue);curve(g,function(t){return -Math.sqrt(2*p*t)},0,7,C.blue);line(g.X(-p/2),g.Y(-7),g.X(-p/2),g.Y(7),C.green,2,[6,5]);dot(g.X(p/2),g.Y(0),C.orange);dot(g.X(x),g.Y(y),C.orange);dot(g.X(x),g.Y(-y),C.orange);label("F",g.X(p/2)+7,g.Y(0)-10);label("Đường chuẩn",g.X(-p/2)+4,g.Y(6.2));g.end();var dist=x+p/2;setText("p="+fmt(p)+"; F=("+fmt(p/2)+",0); đường chuẩn x="+fmt(-p/2)+". Tại x="+fmt(x)+", y=±"+fmt(y)+". Khoảng cách từ điểm trên parabol đến F và tới đường chuẩn đều bằng "+fmt(dist)+".");break;
+}
+if(!interacted){result.textContent="Hãy dự đoán kết quả trước, sau đó thay đổi ít nhất một thanh trượt hoặc bấm giá trị bằng bàn phím để quan sát."}
+}
+function schedule(){interacted=true;if(pending)return;pending=true;window.requestAnimationFrame(function(){pending=false;draw()})}
+Object.keys(el).forEach(function(k){el[k].input.addEventListener("input",schedule);el[k].input.addEventListener("change",schedule)});
+document.getElementById("reset").addEventListener("click",function(){Object.keys(el).forEach(function(k){el[k].input.value=el[k].initial});document.getElementById("compare").open=false;interacted=false;draw()});
+window.addEventListener("resize",schedule);draw();
+})();
+</script>
+</body></html>
