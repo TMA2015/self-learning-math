@@ -13,7 +13,7 @@ Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_TRIANGLE_TRIG_SOLVING_FULL_R01_20261113.md
 ACADEMIC_SOURCE_BLOB: db515766b4247276f00925c160f2d6125dc23d87
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC12_TRIANGLE_R01_AUTHOR_SELF_QA_RECEIPT_20261113.md
-REVIEW_RECEIPT_BLOB: e16a0b4df36b3b487ee5981a3fe8b86a1f1ad5fa
+REVIEW_RECEIPT_BLOB: a2f86dba9703fe635b2775c1e337e832e4abdd58
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R01_AUTHORING_ONLY_METADATA_20261113.md
 AUTHOR_A1_A7_BLOB: 5409b46e3361d56ae1fdf0898900841c7e470fb6
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R01_AUTHORING_ONLY_METADATA_20261113.md
@@ -129,12 +129,17 @@ Concept-first continuity được thể hiện tại 12 mục học: lý do cầ
 
 ## DELTA_LEDGER
 
-- `DELTA_C_ACADEMIC_MATERIAL`: Topic CĐ12 mới với 12 learner modules, 12 new Practice và 4 Written/rubric; toán và lời giải Q18 tác giả tự kiểm, source SHA `db515766b4247276f00925c160f2d6125dc23d87`, receipt `e16a0b4df36b3b487ee5981a3fe8b86a1f1ad5fa`, P0/P1=0.
+- `DELTA_C_ACADEMIC_MATERIAL`: Topic CĐ12 mới với 12 learner modules, 12 new Practice và 4 Written/rubric; toán và lời giải Q18 tác giả tự kiểm, source SHA `db515766b4247276f00925c160f2d6125dc23d87`, receipt `a2f86dba9703fe635b2775c1e337e832e4abdd58`, P0/P1=0.
 - `DELTA_B_SOURCE_EQUIVALENT`: 18 public canonical item SGK B05/B06 cũ được **reuse bằng ID** tại placement Topic, giữ nguyên original SGK content/key/rubric. Không copy thân câu.
 - Original historical SGK independent reviewer PASS 18/18 **không** được biến thành new Topic independent PASS; hai SVG là reused original reference media.
 - Cross-PR REGISTER edit at same insertion point is a **RELEASE reconciliation procedure**, not an AUTHORING academic defect. Release must preserve union of all Topic rows after combining on actual latest main.
 
 ## PRIVATE_RD1_CUSTODY_METADATA
+
+RD1_PRIVATE_COUNT = 0
+PRIVATE_OWNER_HELD = YES
+PRIVATE_GIT_CONTENT = NONE
+PRIVATE_BANK_SHA256 = e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 
 No private Topic RD1 created/imported; count=0, SHA256 of empty set recorded. Public selfcheck reuses 12 canonical public IDs and carries `CLIENT_SELF_CHECK_NO_MASTERY`; never label independent TOPIC_READINESS, no Skill Mastery or early key/hint. RELEASE owns Final Submit runtime and validation.
 
@@ -160,50 +165,52 @@ No private Topic RD1 created/imported; count=0, SHA256 of empty set recorded. Pu
 | `THPT-G10-B06-P05` | `TOP12-O11` | TOPIC_PRACTICE | SGK_CANONICAL_REUSE | `6320aeaa89bd51c514b07461e01fad5e3aca833f` |
 | `THPT-G10-B06-P06` | `TOP12-O07` | TOPIC_PRACTICE | SGK_CANONICAL_REUSE | `6320aeaa89bd51c514b07461e01fad5e3aca833f` |
 | `THPT-G10-CHIII-W06-ANCHOR` | `TOP12-O11` | TOPIC_WRITTEN | SGK_CANONICAL_REUSE | `6320aeaa89bd51c514b07461e01fad5e3aca833f` |
-| `THPT-TOP12-P01` | `TOP12-O04` | TOPIC_PRACTICE | TOPIC_NEW_R01 | `db515766b4247276f00925c160f2d6125dc23d87` |
-| `THPT-TOP12-P02` | `TOP12-O02` | TOPIC_PRACTICE | TOPIC_NEW_R01 | `db515766b4247276f00925c160f2d6125dc23d87` |
-| `THPT-TOP12-P03` | `TOP12-O05` | TOPIC_PRACTICE | TOPIC_NEW_R01 | `db515766b4247276f00925c160f2d6125dc23d87` |
-| `THPT-TOP12-P04` | `TOP12-O06` | TOPIC_PRACTICE | TOPIC_NEW_R01 | `db515766b4247276f00925c160f2d6125dc23d87` |
-| `THPT-TOP12-P05` | `TOP12-O07` | TOPIC_PRACTICE | TOPIC_NEW_R01 | `db515766b4247276f00925c160f2d6125dc23d87` |
-| `THPT-TOP12-P06` | `TOP12-O08` | TOPIC_PRACTICE | TOPIC_NEW_R01 | `db515766b4247276f00925c160f2d6125dc23d87` |
-| `THPT-TOP12-P07` | `TOP12-O08` | TOPIC_PRACTICE | TOPIC_NEW_R01 | `db515766b4247276f00925c160f2d6125dc23d87` |
-| `THPT-TOP12-P08` | `TOP12-O09` | TOPIC_PRACTICE | TOPIC_NEW_R01 | `db515766b4247276f00925c160f2d6125dc23d87` |
-| `THPT-TOP12-P09` | `TOP12-O10` | TOPIC_PRACTICE | TOPIC_NEW_R01 | `db515766b4247276f00925c160f2d6125dc23d87` |
-| `THPT-TOP12-P10` | `TOP12-O11` | TOPIC_PRACTICE | TOPIC_NEW_R01 | `db515766b4247276f00925c160f2d6125dc23d87` |
-| `THPT-TOP12-P11` | `TOP12-O12` | TOPIC_PRACTICE | TOPIC_NEW_R01 | `db515766b4247276f00925c160f2d6125dc23d87` |
-| `THPT-TOP12-P12` | `TOP12-O12` | TOPIC_PRACTICE | TOPIC_NEW_R01 | `db515766b4247276f00925c160f2d6125dc23d87` |
-| `THPT-TOP12-W01` | `TOP12-O10` | TOPIC_WRITTEN | TOPIC_NEW_R01 | `db515766b4247276f00925c160f2d6125dc23d87` |
-| `THPT-TOP12-W02` | `TOP12-O11` | TOPIC_WRITTEN | TOPIC_NEW_R01 | `db515766b4247276f00925c160f2d6125dc23d87` |
-| `THPT-TOP12-W03` | `TOP12-O08` | TOPIC_WRITTEN | TOPIC_NEW_R01 | `db515766b4247276f00925c160f2d6125dc23d87` |
-| `THPT-TOP12-W04` | `TOP12-O05` | TOPIC_WRITTEN | TOPIC_NEW_R01 | `db515766b4247276f00925c160f2d6125dc23d87` |
+| `THPT-TOP12-P01` | `TOP12-O04` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `db515766b4247276f00925c160f2d6125dc23d87` |
+| `THPT-TOP12-P02` | `TOP12-O02` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `db515766b4247276f00925c160f2d6125dc23d87` |
+| `THPT-TOP12-P03` | `TOP12-O05` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `db515766b4247276f00925c160f2d6125dc23d87` |
+| `THPT-TOP12-P04` | `TOP12-O06` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `db515766b4247276f00925c160f2d6125dc23d87` |
+| `THPT-TOP12-P05` | `TOP12-O07` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `db515766b4247276f00925c160f2d6125dc23d87` |
+| `THPT-TOP12-P06` | `TOP12-O08` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `db515766b4247276f00925c160f2d6125dc23d87` |
+| `THPT-TOP12-P07` | `TOP12-O08` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `db515766b4247276f00925c160f2d6125dc23d87` |
+| `THPT-TOP12-P08` | `TOP12-O09` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `db515766b4247276f00925c160f2d6125dc23d87` |
+| `THPT-TOP12-P09` | `TOP12-O10` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `db515766b4247276f00925c160f2d6125dc23d87` |
+| `THPT-TOP12-P10` | `TOP12-O11` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `db515766b4247276f00925c160f2d6125dc23d87` |
+| `THPT-TOP12-P11` | `TOP12-O12` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `db515766b4247276f00925c160f2d6125dc23d87` |
+| `THPT-TOP12-P12` | `TOP12-O12` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | `db515766b4247276f00925c160f2d6125dc23d87` |
+| `THPT-TOP12-W01` | `TOP12-O10` | TOPIC_WRITTEN | TOPIC_NEW_CANDIDATE | `db515766b4247276f00925c160f2d6125dc23d87` |
+| `THPT-TOP12-W02` | `TOP12-O11` | TOPIC_WRITTEN | TOPIC_NEW_CANDIDATE | `db515766b4247276f00925c160f2d6125dc23d87` |
+| `THPT-TOP12-W03` | `TOP12-O08` | TOPIC_WRITTEN | TOPIC_NEW_CANDIDATE | `db515766b4247276f00925c160f2d6125dc23d87` |
+| `THPT-TOP12-W04` | `TOP12-O05` | TOPIC_WRITTEN | TOPIC_NEW_CANDIDATE | `db515766b4247276f00925c160f2d6125dc23d87` |
 
 
 ## QUALITY_Q01_Q18_EVIDENCE
 
+Normative source: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md` (one Q01–Q18 standard, not another authoring/RELEASE rubric). Every row records author Q18 self-check, not independent reviewer PASS.
+
 | Q_ID | LESSON/OUTCOME/S1 SOURCE | AUTHOR_MATH_PED_QA | Q18_MODE_EVIDENCE | RELEASE_AP_R_MAPPING |
 |---|---|---|---|---|
-| Q01 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | SGK10 T1 ChIII B05–B06 nguồn lịch sử đã kiểm, không bịa lần đọc PDF mới | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE AP/R/Q16: PENDING |
-| Q02 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | TOP12-O01..O12 gồm giá trị lượng giác 0°–180°, sin/côsin, giải tam giác, Heron, SSA và đo đạc | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE AP/R/Q16: PENDING |
-| Q03 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | điều kiện tam giác không suy biến, mẫu sin/cos khác 0, góc SSA và hiệu lực các định lí | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE AP/R/Q16: PENDING |
-| Q04 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | 12 mô-đun có ví dụ tính và lý do chọn công cụ; từng kết quả SSS/SAS/AAS/SSA kiểm biên | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE AP/R/Q16: PENDING |
-| Q05 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | 18 câu SGK reuse +12 câu Topic mới và 4 tự luận, 34 canonical, độ khó theo outcome | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE AP/R/Q16: PENDING |
-| Q06 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | 4 Written mới có lời giải/rubric 7 điểm, 2 Written SGK giữ nguyên canonical | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE AP/R/Q16: PENDING |
-| Q07 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | 2 hình SGK gốc cùng lời dẫn cách đọc; SVG SHA xác minh, browser QA chưa có | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE AP/R/Q16: PENDING |
-| Q08 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | 12 lộ trình sai→xem lại đúng mục kiến thức→câu Practice | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE AP/R/Q16: PENDING |
-| Q09 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | đo đạc bờ sông giải thích vì sao cần học trước công thức | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE AP/R/Q16: PENDING |
-| Q10 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | nửa đường tròn, dấu góc tù, hình tam giác, góc đối cạnh, tiên đề tam giác tại chỗ | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE AP/R/Q16: PENDING |
-| Q11 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | giải thích trực giác Pitago→côsin và chiều cao→diện tích trước công thức | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE AP/R/Q16: PENDING |
-| Q12 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | hình 120° và tam giác 60° được mô tả bằng lời, không tách thành gallery | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE AP/R/Q16: PENDING |
-| Q13 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | giải thích chọn sin/côsin/Heron theo kiểu dữ kiện và hạn chế SSA | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE AP/R/Q16: PENDING |
-| Q14 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | 12 Vận dụng trước nút Đối chiếu tự mở lời giải và D6 | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE AP/R/Q16: PENDING |
-| Q15 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | một canonical item_id / một stem+key+rubric, 18 reuse pointer +16 Topic mới | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE AP/R/Q16: PENDING |
-| Q16 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | CLIENT_SELF_CHECK_NO_MASTERY replay 12 ID, không hint/key trước Final Submit, không private RD1 | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE AP/R/Q16: PENDING |
-| Q17 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | Kiến thức/Luyện tập/Tự kiểm tra; độc lập SGK, không Topic Core | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE AP/R/Q16: PENDING |
-| Q18 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | AUTHOR_SELF_VERIFIED trên đúng source blob, reviewer SGK cũ không tự thành reviewer Topic | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE AP/R/Q16: PENDING |
+| Q01 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | SGK10 T1 ChIII B05–B06 nguồn lịch sử đã kiểm, không bịa lần đọc PDF mới | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE_AP_R_Q16_NOT_TESTED_BY_AUTHORING |
+| Q02 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | TOP12-O01..O12 gồm giá trị lượng giác 0°–180°, sin/côsin, giải tam giác, Heron, SSA và đo đạc | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE_AP_R_Q16_NOT_TESTED_BY_AUTHORING |
+| Q03 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | điều kiện tam giác không suy biến, mẫu sin/cos khác 0, góc SSA và hiệu lực các định lí | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE_AP_R_Q16_NOT_TESTED_BY_AUTHORING |
+| Q04 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | 12 mô-đun có ví dụ tính và lý do chọn công cụ; từng kết quả SSS/SAS/AAS/SSA kiểm biên | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE_AP_R_Q16_NOT_TESTED_BY_AUTHORING |
+| Q05 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | 18 câu SGK reuse +12 câu Topic mới và 4 tự luận, 34 canonical, độ khó theo outcome | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE_AP_R_Q16_NOT_TESTED_BY_AUTHORING |
+| Q06 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | 4 Written mới có lời giải/rubric 7 điểm, 2 Written SGK giữ nguyên canonical | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE_AP_R_Q16_NOT_TESTED_BY_AUTHORING |
+| Q07 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | 2 hình SGK gốc cùng lời dẫn cách đọc; SVG SHA xác minh, browser QA chưa có | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE_AP_R_Q16_NOT_TESTED_BY_AUTHORING |
+| Q08 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | 12 lộ trình sai→xem lại đúng mục kiến thức→câu Practice | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE_AP_R_Q16_NOT_TESTED_BY_AUTHORING |
+| Q09 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | đo đạc bờ sông giải thích vì sao cần học trước công thức | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE_AP_R_Q16_NOT_TESTED_BY_AUTHORING |
+| Q10 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | nửa đường tròn, dấu góc tù, hình tam giác, góc đối cạnh, tiên đề tam giác tại chỗ | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE_AP_R_Q16_NOT_TESTED_BY_AUTHORING |
+| Q11 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | giải thích trực giác Pitago→côsin và chiều cao→diện tích trước công thức | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE_AP_R_Q16_NOT_TESTED_BY_AUTHORING |
+| Q12 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | hình 120° và tam giác 60° được mô tả bằng lời, không tách thành gallery | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE_AP_R_Q16_NOT_TESTED_BY_AUTHORING |
+| Q13 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | giải thích chọn sin/côsin/Heron theo kiểu dữ kiện và hạn chế SSA | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE_AP_R_Q16_NOT_TESTED_BY_AUTHORING |
+| Q14 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | 12 Vận dụng trước nút Đối chiếu tự mở lời giải và D6 | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE_AP_R_Q16_NOT_TESTED_BY_AUTHORING |
+| Q15 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | một canonical item_id / một stem+key+rubric, 18 reuse pointer +16 Topic mới | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE_AP_R_Q16_NOT_TESTED_BY_AUTHORING |
+| Q16 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | CLIENT_SELF_CHECK_NO_MASTERY replay 12 ID, không hint/key trước Final Submit, không private RD1 | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE_AP_R_Q16_NOT_TESTED_BY_AUTHORING |
+| Q17 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | Kiến thức/Luyện tập/Tự kiểm tra; độc lập SGK, không Topic Core | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE_AP_R_Q16_NOT_TESTED_BY_AUTHORING |
+| Q18 | TOP12-O01..O12; SGK G10 ChIII B05/B06 | AUTHOR_SELF_VERIFIED trên đúng source blob, reviewer SGK cũ không tự thành reviewer Topic | AUTHOR_SELF receipt e16a0b4df36b / source db515766b424 | RELEASE_AP_R_Q16_NOT_TESTED_BY_AUTHORING |
 
 ## REVIEW_SOURCE_RECEIPT
 
-Git source `db515766b4247276f00925c160f2d6125dc23d87` and author-only metadata `5409b46e3361d56ae1fdf0898900841c7e470fb6`, receipt `e16a0b4df36b3b487ee5981a3fe8b86a1f1ad5fa` are immutable input SHA for this handoff. Author self-QA P0/P1=0; original independent NotebookLM is S1 SGK support only. 34 unique public item IDs; 12 voluntary Self Check placement refs reuse originals/new without clone. Matrix from author metadata:
+Git source `db515766b4247276f00925c160f2d6125dc23d87` and author-only metadata `5409b46e3361d56ae1fdf0898900841c7e470fb6`, receipt `a2f86dba9703fe635b2775c1e337e832e4abdd58` are immutable input SHA for this handoff. Author self-QA P0/P1=0; original independent NotebookLM is S1 SGK support only. 34 unique public item IDs; 12 voluntary Self Check placement refs reuse originals/new without clone. Matrix from author metadata:
 
 ## OUTCOME_SOURCE_AND_PED_TRACE
 
