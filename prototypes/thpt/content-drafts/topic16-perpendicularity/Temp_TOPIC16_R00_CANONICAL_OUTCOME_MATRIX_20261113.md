@@ -205,3 +205,25 @@ KNTT SGK Toán 11 Tập 2 ChVII B22–B27 printed pp27–65 and SBT pp24–43. O
 - `135` unique canonical IDs in R00 candidate, `8` public selfcheck replay placements to existing Practice IDs; no independent Topic Readiness, no protected RD1 exposed.
 - `MODEL_ID` is discovery artifact, not an `ITEM_ID`; no separate Core page. Model uses slider heights and horizontal run with degenerate case warning, no network/CDN.
 - `NO_READY_CLAIM`: pending 33 outcome substantive A1–A7/Q18 and browser/mobile model QA. The Q15 map does not itself prove pedagogy or key correctness.
+
+## TARGETED_Q15_TOPIC_PLACEMENT_SEMANTIC_AUDIT_R00 — HOLD (13 original SGK skill tags)
+
+These 13 original SGK canonical stems have historical `skill_id` tags that appear inconsistent with their actual question intent. The original SGK stems/answers/source IDs are **immutable**; this is a proposed different `TOPIC` placement/outcome only. It is **NOT** an edit to the original SGK canonical bank or its prior PASS. Each proposed remap requires author academic check before final V2. The baseline 135 IDs remain unique.
+
+| original canonical item_id | preliminary Topic primary outcome from historical skill | suggested Topic outcome based on stem | exact semantic evidence / expected corrective scope |
+|---|---|---|---|
+| `THPT-G11-CHVII-B22-P02` | `TOP16-O02` | `TOP16-O03` | Hai cạnh AB và D′C′ song song nên góc 0°, thuộc chuyển phương song song, không hỏi hai đường chéo vuông góc |
+| `THPT-G11-CHVII-B22-P03` | `TOP16-O03` | `TOP16-O02` | Phản ví dụ hai đường chéo nhau vuông góc, không phải tính chất thay đường bằng đường song song |
+| `THPT-G11-CHVII-B23-P01` | `TOP16-O05` | `TOP16-O07` | Đường vuông góc P chuyển sang mặt Q song song, khác định nghĩa cơ bản d⊥P |
+| `THPT-G11-CHVII-B23-P03` | `TOP16-O07` | `TOP16-O08` | Hai đường vuông góc cùng mặt không thể cắt riêng biệt, là tính chất pháp tuyến |
+| `THPT-G11-CHVII-B24-P01` | `TOP16-O10` | `TOP16-O13` | Đổi góc đường–nền 35° thành góc với pháp tuyến 55°, không phải tìm hình chiếu một điểm |
+| `THPT-G11-CHVII-B24-P03` | `TOP16-O12` | `TOP16-O10` | Phân biệt đoạn hình chiếu nằm trên nền với độ cao vuông góc AH, không phải ba đường vuông góc |
+| `THPT-G11-CHVII-B25-P02` | `TOP16-O16` | `TOP16-O20` | Chóp đều có cạnh bên xiên, chỉ đường cao từ đỉnh đến tâm đáy vuông góc, không hỏi góc nhị diện |
+| `THPT-G11-CHVII-B25-P03` | `TOP16-O17` | `TOP16-O19` | Lăng trụ đứng đáy hình thang bất kì không phải lăng trụ đều, không hỏi hai mặt vuông góc |
+| `THPT-G11-CHVII-B26-P01` | `TOP16-O22` | `TOP16-O27` | Đường xiên 17 và hình chiếu ngang 15 tính chiều cao 8, dạng chiều cao ứng dụng |
+| `THPT-G11-CHVII-B26-P03` | `TOP16-O24` | `TOP16-O26` | Hai đường chéo nhau cố định luôn cách nhau dương, không phải đường song song mặt |
+| `THPT-G11-CHVII-B27-P01` | `TOP16-O28` | `TOP16-O29` | Đề hỏi thể tích CHÓP, 12×9/3, không phải lăng trụ |
+| `THPT-G11-CHVII-B27-P02` | `TOP16-O29` | `TOP16-O31` | Đề hỏi thể tích CHÓP CỤT, không phải chóp đặc |
+| `THPT-G11-CHVII-B27-P03` | `TOP16-O30` | `TOP16-O32` | Phê bình dùng cạnh xiên làm chiều cao trong tính thể tích, là ứng dụng chọn h đúng |
+
+**Q15 gate:** `SOURCE_ORIGINAL_SKILL_PRESERVED`; `TOPIC_PLACEMENT_13_REMAP_CANDIDATE`; `NOT_AUTHOR_SIGNED`; `NO_MASTER_Y_ACTION`. Review the question and solution semantics, update **Topic-only placement** after verification and record `DELTA_B` or `DELTA_C` according to actual math change. Do **not** silently amend the original SGK source. This issue is not closed simply because the 135-ID count passes CI.
