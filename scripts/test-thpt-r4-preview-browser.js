@@ -1,6 +1,8 @@
 "use strict";
 const assert=require("node:assert/strict");
 const fs=require("node:fs");
+const crypto=require("node:crypto");
+const {chviEditorialReceiptRows}=require("./thpt-q18-g10-source-receipt.cjs");
 const {chromium}=require("playwright");
 // Run the same no-duplicate / assessment-exposure contract on every THPT QA run.
 require("./test-thpt-shared-item-placement.cjs").run();
@@ -781,8 +783,24 @@ async function ready(page,path){
        const knowledgeTab=article.locator(".tabbed-set").first().locator(".tabbed-labels label")
          .filter({hasText:/^Kiến thức SGK$/});
        assert.equal(await knowledgeTab.count(),1,"B"+lesson+" must expose Kiến thức SGK");
-       await knowledgeTab.click();
+       // Q18 §X-F: only a source-signed ChVI layout relocates First Try
+       // to Discovery. Verify that exact Git blob before switching tabs;
+       // historical unreviewed layouts keep the previous R4 tab assertion.
+       const editorial=chviEditorialReceiptRows().get("B"+lesson);
+       if(editorial){
+         const bytes=fs.readFileSync("docs/thpt-preview/sgk/chuong-vi/bai-"+lesson+".md");
+         const digest=crypto.createHash("sha1").update("blob "+bytes.length+"\\0").update(bytes).digest("hex");
+         assert.equal(digest,editorial.candidate,"B"+lesson+" Q18 source-locked First Try relocation");
+         const tabset=article.locator(".tabbed-set").first();
+         const discoveryTab=tabset.locator(".tabbed-labels label").filter({hasText:/^Khám phá kiến thức$/});
+         assert.equal(await discoveryTab.count(),1,"B"+lesson+" must provide approved Discovery tab");
+         assert.equal(await tabset.locator(".tabbed-content > .tabbed-block").nth(1)
+           .locator("[data-thpt-first-try-id]").count(),0,
+           "B"+lesson+" no First Try may remain in formal SGK Knowledge");
+         await discoveryTab.click();
+       }else await knowledgeTab.click();
        const disclosure=questions.first();
+       assert(await disclosure.isVisible(),"B"+lesson+" first voluntary answer must be visible in the selected source-signed tab");
        const collapsedText=await disclosure.innerText();
        await disclosure.locator("summary").click();
        assert(await disclosure.evaluate(el=>el.open),"B"+lesson+" learner can open answer");
