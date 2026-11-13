@@ -21,9 +21,13 @@
 
     <span id="thpt-g10-chvii-try01" data-thpt-first-try-id="THPT-G10-CHVII-TRY01" data-outcome-id="G10-B19-NORMAL_DIRECTION" data-thpt-help-ref="HELP-G10-CHVII-TRY01"></span>
 
-    Khi nhìn một tuyến đường trên bản đồ, chỉ biết một điểm mà đường đi qua thì chưa đủ; ta còn phải biết đường đi theo hướng nào. Vectơ chỉ phương nằm dọc tuyến đường, còn vectơ pháp tuyến hướng vuông góc với tuyến đường. Hai hướng này có thể được nhận ra bằng tích vô hướng: với hai vectơ khác vectơ không, tích vô hướng bằng 0 chính là dấu hiệu chúng vuông góc. Một đường thẳng có thể nhận nhiều vectơ chỉ phương hoặc pháp tuyến, miễn là chúng cùng hướng tương ứng và không bằng vectơ không.
+    Khi đi dọc một đường thẳng, mũi tên chỉ phương \(\vec u\) cho ta biết hướng chuyển động. Một mũi tên khác dựng vuông góc với đường được gọi là vectơ pháp tuyến \(\vec n\). Nếu chọn \(\vec n=(a,b)\ne(0,0)\) thì \(\vec u=(-b,a)\) nằm vuông góc với nó, vì
+    \[
+    \vec n\cdot\vec u=a(-b)+b a=0.
+    \]
+    Ngược lại, một vectơ khác vectơ không vuông góc với \(\vec n\) có thể dùng làm chỉ phương. Vậy trước khi viết công thức đường thẳng, em đã biết hai cách nhìn cùng một hướng: **đi dọc đường** và **vuông góc với đường**.
 
-    Hãy hình dung một mũi tên chạy theo đường và một mũi tên dựng vuông góc với nó. Nếu pháp tuyến là \(n=(a,b)\ne(0,0)\), ta có thể chọn chỉ phương \(u=(-b,a)\): tích vô hướng \(n\cdot u=a(-b)+ba=0\). Như vậy, cách đổi vectơ xuất phát từ quan hệ vuông góc, không phải từ một quy tắc đổi dấu học thuộc.
+    <figure class="thpt-r4-plot thpt-r4-concept-figure" data-chvii-r02-diagram="TRY01"><img src="../../../../assets/images/thpt/G10_CHVII_R02_B19_TRY01_VECTOR.svg" loading="lazy" alt="Vectơ pháp tuyến n vuông góc với vectơ chỉ phương u, minh họa n·u bằng 0."><figcaption>Một đường thẳng có hướng dọc theo vectơ chỉ phương và hướng vuông góc theo vectơ pháp tuyến.</figcaption></figure>
 
     **Em vận dụng.** Cho n=(2,3) là pháp tuyến của d. Vectơ u=(-3,2) có phải một chỉ phương của d không? Nêu phép kiểm.
 
@@ -43,9 +47,11 @@
 
     <span id="thpt-g10-chvii-try02" data-thpt-first-try-id="THPT-G10-CHVII-TRY02" data-outcome-id="G10-B19-GENERAL_POINT" data-thpt-help-ref="HELP-G10-CHVII-TRY02"></span>
 
-    Từ hướng vuông góc ấy, ta có thể viết một điều kiện xác định toàn bộ các điểm trên đường thẳng. Giả sử đường đi qua \(A(x_0,y_0)\) và có pháp tuyến \(n=(a,b)\ne(0,0)\). Với một điểm bất kỳ \(M(x,y)\), vectơ dịch chuyển \(\overrightarrow{AM}=(x-x_0,y-y_0)\) phải vuông góc với \(n\) nếu \(M\) nằm trên đường. Vì thế \(n\cdot\overrightarrow{AM}=0\), hay \(a(x-x_0)+b(y-y_0)=0\).
-
-    Trong hình dung hình học, \(M\) trượt dọc đường qua \(A\), còn \(n\) luôn vuông góc với hướng trượt; hình chiếu của \(\overrightarrow{AM}\) lên \(n\) bằng 0. Khai triển đẳng thức trên cho phương trình tổng quát, rồi thử lại tọa độ \(A\) để kiểm tra. Đừng chọn \(n=(0,0)\), vì khi ấy phương trình không xác định một đường thẳng.
+    Hãy lấy điểm cố định \(A(x_0,y_0)\) trên đường có pháp tuyến \(\vec n=(a,b)\). Một điểm bất kỳ \(M(x,y)\) cũng nằm trên đường khi và chỉ khi \(\overrightarrow{AM}\) vuông góc với \(\vec n\). Vì \(\overrightarrow{AM}=(x-x_0,y-y_0)\), điều kiện đó trở thành
+    \[
+    a(x-x_0)+b(y-y_0)=0.
+    \]
+    Khai triển mới có dạng \(ax+by+c=0\). Chính quan hệ vuông góc sinh ra phương trình, không phải ta tự đặt một mẫu chữ cái để học thuộc. **Điều kiện không thể bỏ:** \((a,b)\ne(0,0)\), vì vectơ không không xác định được hướng vuông góc.
 
     **Em vận dụng.** Đường thẳng qua A(1,3), pháp tuyến n=(2,-1) có phương trình tổng quát nào?
 
@@ -131,9 +137,11 @@
 
     <span id="thpt-g10-chvii-try06" data-thpt-first-try-id="THPT-G10-CHVII-TRY06" data-outcome-id="G10-B19-MULTISTEP" data-thpt-help-ref="HELP-G10-CHVII-TRY06"></span>
 
-    Khi hai tuyến đường gặp nhau, ta cần trả lời hai câu hỏi khác nhau: chúng gặp ở đâu và chúng có vuông góc không? Tọa độ giao điểm phải thỏa đồng thời hai phương trình, vì vậy ta dùng phương pháp giải hệ và thế nghiệm tìm được trở lại cả hai đường. Một điểm chỉ thuộc một trong hai đường thì chưa phải giao điểm.
+    **Mở rộng có hướng dẫn · Học sau Bài 20.** Đây là một vận dụng liên bài về giao điểm và vuông góc, không phải điều kiện hoàn thành Bài 19.
 
-    Còn quan hệ vuông góc là chuyện hướng, không phụ thuộc vào vị trí giao. Mỗi đường có một vectơ pháp tuyến; nếu tích vô hướng hai pháp tuyến bằng 0 thì hai đường vuông góc. Trên hình, hãy phân biệt dấu chấm tại giao điểm với dấu góc vuông: một phép tính tìm vị trí, phép tính còn lại kiểm hướng.
+    Hai phương trình của hai đường thẳng giống như hai điều kiện phải cùng đúng tại điểm giao. Vì vậy, muốn biết chúng gặp nhau ở đâu, ta giải hệ hai phương trình rồi thử kết quả vào cả hai. Còn câu hỏi chúng có vuông góc không lại nói về **hướng**, chứ không phải vị trí giao. Ta chọn một pháp tuyến khác vectơ không cho mỗi đường, tính tích vô hướng: bằng 0 thì hai đường vuông góc. Một câu hỏi tìm **địa điểm gặp**, câu hỏi kia kiểm **góc gặp**; làm riêng từng bước sẽ tránh nhầm.
+
+    Xét \(d_1:x+y=3\), \(d_2:x-y=1\). Cộng hai phương trình ta được \(2x=4\), nên \(x=2,\ y=1\); kiểm lại: \(2+1=3\), \(2-1=1\). Hai pháp tuyến \(\vec n_1=(1,1)\) và \(\vec n_2=(1,-1)\) khác vectơ không, tích vô hướng \(1-1=0\), nên hai đường gặp nhau vuông góc tại \((2,1)\).
 
     **Em vận dụng.** Hai đường d1: x+y=4, d2: x-y=2 gặp nhau ở đâu và có vuông góc không?
 
