@@ -19,7 +19,7 @@ const ids={12:4,13:5,14:5};
 const names=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
 const blob=data=>{
  const bytes=Buffer.isBuffer(data)?data:Buffer.from(data);
- return crypto.createHash("sha1").update(Buffer.from("blob "+bytes.length+"\\0")).update(bytes).digest("hex");
+ return crypto.createHash("sha1").update(Buffer.from("blob "+bytes.length+"\0")).update(bytes).digest("hex");
 };
 (async()=>{
  for(const [lesson,sha] of Object.entries(expectedSources)){
