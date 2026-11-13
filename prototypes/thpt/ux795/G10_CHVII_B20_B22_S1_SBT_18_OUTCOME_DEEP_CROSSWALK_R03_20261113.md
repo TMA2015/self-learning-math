@@ -1,0 +1,90 @@
+# UX795 · G10 B20–B22 — S1/SBT × NotebookLM/Gemini × website: 18 outcome deep crosswalk R03
+
+**Role and evidence:** RELEASE research/triage only; **not** rewritten student text, Q18 Academic/PED PASS, independent NotebookLM verdict or permission to merge/deploy. Applies exactly to **SLM-THPT-QUALITY-ONE Q01–Q18**, Golden + AP1–AP5; no separate norm. Upstream: [ChVII audit R01](G10_CHVII_B19_B22_S1_NOTEBOOK_GEMINI_LEARNING_VALUE_AUDIT_R01_20261113.md) and [B19 seven-outcome R02](G10_CHVII_B19_S1_SBT_7_OUTCOME_DEEP_CROSSWALK_R02_20261113.md), master Issue #795.
+
+## 1. Directly inspected S1, original PDFs (not paraphrased from AI)
+
+- **SGK Toán 10 Kết nối tri thức — Tập 2**, owner Drive \`KNTT TOAN 10\`, \`sach-giao-khoa-toan-10-tap-2-ket-noi-tri-thuc-voi-cuoc-song (2).pdf\`, PDF SHA-256 **\`ee8a00392e1c9fc5b213e574666cf1f8487548737e138573f28a988c640fafe6\`**, 102 pages, image scan. Examined rendered pages **PDF 37–58** covering B20–B22; PDF **59** is *Bài tập cuối Chương VII* at printed p58.
+- **SBT Toán 10 Kết nối tri thức — Tập 2**, owner Drive \`KNTT TOAN 10\`, \`sach-bai-tap-toan-10-tap-2-ket-noi-tri-thuc-voi-cuoc-song.pdf\`, SHA-256 **\`3cb33690e0627b9e8ac467c23625b7feb7d05a8422293db0e1b26e44ca6a78c7\`**, 143 pages image scan. Inspected rendered **PDF 33–47** covering B20–B22 (and immediately preceding p31–32 context).
+- In these verified page ranges, **printed SGK/SBT page = 1-based PDF page − 1**. Actual boundaries confirmed from lesson headers and next lesson/chapter headers:
+
+| Lesson | SGK printed | SGK PDF page numbers | SBT printed | SBT PDF page numbers |
+|---|---|---|---|---|
+| **B20** | **36–42** | 37–43 | **32–38** | 33–39 |
+| **B21** | **43–47** | 44–48 | **39–41** | 40–42 |
+| **B22** | **48–57** | 49–58 | **42–46** | 43–47 |
+
+All page images/PDFs remain private. **No scanned assets or large copyrighted excerpts in GitHub.** Scanned S1 is the only authority for scope/math; SBT supports practice and transfer. Individual on-page illustration claims are based on the rendered scan, not OCR.
+
+## 2. Concrete teaching sequence in S1 (select for value, do not copy)
+
+**B20 printed p36–42:**
+- On **p36**, S1 \`HĐ1\` asks whether a point lies on **both** lines, then students **solve the simultaneous equations** and connect existence/number of solutions to *intersect/parallel/coincident*. The classification is derived from shared points — the best source-driven explanation of position, before matrix/determinant shortcuts.
+- **p37–39**: figures **7.5–7.8**, distinguish line direction, angle with nonzero normals, smaller angle and one actual example where the perpendicular intersection appears. Useful to pair diagram and choice of scalar product.
+- **p39–40**, \`HĐ4\` uses the perpendicular foot **H** of a point on a line, projects \(\overrightarrow{HM}\) onto the normal and obtains \(|ax_0+by_0+c|/\sqrt{a^2+b^2}\); p40 immediately gives an example + coordinate diagram **Hình 7.10**. That geometric derivation is superior to presenting only the distance formula.
+- **p41** contains a rectangular-pond measurement **Vận dụng** and p42 illustrates **GeoGebra verification** (Hình 7.12). Use to demonstrate how to self-check a calculated distance, not as ornamental technology.
+
+**B21 printed p43–47:**
+- **p43**, \`HĐ1\`: radius definition \(IM=R\) + coordinate **Hình 7.13** → equation \((x-a)^2+(y-b)^2=R^2\), followed by worked example. The mathematical **circumference/line**, not the filled disk, is the locus \(IM=R\).
+- **p44**, completion of squares shows \(\;x^2+y^2-2ax-2by+c=0\;\) is a genuine circle only when \(a^2+b^2-c>0\); 0 denotes a singleton and negative denotes no real point. Full worked three-point circle starts p44 and continues p45, using *two perpendicular bisectors* and the three noncollinear points.
+- **p45**, a sports-field circular path/radius contextual application (Hình 7.14–7.15). Use only if the model/quantities are rechecked; do not claim area-of-coverage equals the circumference.
+- **p46**, \`HĐ2\` starts with a tangent/contact point on the circle, links radius \(IM\) with **normal to tangent** and gives explicit point-normal equation plus worked example (Hình 7.16). This provides genuine \`why\` for the chosen method.
+- **p46–47** exercises extend construction/geometry. A separate textbook theorem systematically classifying **line–circle intersection via center distance** was **not located in B21 mandatory 1–2 section text**; any website \`TRY17\` should be labeled/validated as an optional extension rather than silently called a compulsory S1 outcome.
+
+**B22 printed p48–57:**
+- **p48**, \`HĐ1\` physically draws an ellipse with **two fixed pegs, one inextensible string and a pencil** (**Hình 7.18**), student notices \(MF_1+MF_2\) unchanged. \`Why\` is physical geometry, not a memorized \(c^2=a^2-b^2\). p49 establishes canonical equation and focus/axis constraints.
+- **p50–51**, the hyperbola is introduced by **absolute difference of distances** (two islands/circles and locus), with **Hình 7.23–7.26**, then \(x^2/a^2-y^2/b^2=1,\ c^2=a^2+b^2\). Teach *two branches* and why \(c>a\), not a superficial sign-mnemonic.
+- **p52–53**, \`HĐ4–HĐ5\` define the parabola via **point-to-focus = point-to-directrix distance**, then derive the S1 convention \(y^2=2px,\ p>0,\ F(p/2,0)\), directrix \(x=-p/2\). The actual figure Hình 7.27 and locus argument should precede algebra.
+- **p54**, \`Một số ứng dụng của ba đường conic\` draws reflected rays for ellipse, hyperbola and parabola (Figures 7.29–7.31); **p55** includes telescope/reflector context plus original exercises; **p56–57** contains further “Em có biết” extension on conics. This is an invitation to *explain what the ray does* with an original schematic; don't just list appliances.
+- **Scope caution:** the exact student-facing claims \`tâm sai e=c/a\` and **explicit hyperbola asymptote equation \(y=\pm(b/a)x\)** are in PR #845 narrative, but **were not verified as standalone required B22 S1 concepts on inspected printed pages 48–57**. Mark \`Q01_S1_SCOPE_HOLD\` until AUTHORING distinguishes optional extension from mandatory Core. **Do not delete canonical item \`TRY20\` or rewrite graded content in RELEASE.** A centerline diagram is not proof the S1 formally requires the asymptote formula.
+
+## 3. 18 canonical outcome-level findings: separate teaching gain from formatting
+
+Exact #845 candidate Git blobs (read-only): **B20** \`b26f5546a6847907b3d8be414bc308530edfea17\` (5 Vận dụng, 7 HELP, 2 worked examples), **B21** \`dd870973d7e824ee8b81eaaadf7abe8936d7c78a\` (5/7/2), **B22** \`c6253e0a1977728dd1da81448f0d3473d9437be7\` (8/10/3). All canonical IDs below are stable; \`TRY\` means unscored learner self-check, not new item; \`HELP\` remains existing D6.
+
+| Bài / item | Canonical outcome | S1 direct match or candidate scope | What a novice must actually learn / gap | Decision |
+|---|---|---|---|---|
+| **B20 TRY08** | \`RELATIVE_POSITION\` | **SGK p36 HĐ1** shared-point/system and p37 parallel/trùng | Derive *why* system unique/none/infinite produces cut/parallel/coincident; show three line positions. Website starts from proportional normals/determinant without displaying this discovery. | **DELTA_C** teaching sequence/three-picture alternative; keep question and answer |
+| **B20 TRY09** | \`PERPENDICULAR\` | SGK p38–39 normal vectors and perpendicular examples; SBT B20 | Distinguish a **perpendicular direction** from the **additional through-point condition** (orientation vs translation); diagram needed. | DELTA_C new matched illustration/example; only moving verified existing figure = DELTA_A |
+| **B20 TRY10** | \`INTERSECTION\` | SGK p36 HĐ1; SBT p32 onward | Solve two equations, substitute into *both*, read the point in both graphs; handle zero/no solution. Website method concept sound but needs explicit coordinate picture or tiny reasoned worked example before Vận dụng. | DELTA_C |
+| **B20 TRY11** | \`DISTANCE\` | **SGK p39–40 HĐ4, Hình 7.9/7.10** | Rebuild shortest perpendicular segment, projection onto normal, absolute distance rather than merely present the ratio. Website explains normalized signed deviation but matched figure is elsewhere. | Prioritize S1 geometry; DELTA_A relocation of verified figure or DELTA_C new drawing |
+| **B20 TRY12** | \`ANGLE\` | SGK p38–39, Hình 7.7/7.8 | Visually identify acute/90° line angle versus directed normal-vector angle and need for absolute cosine; teach nonzero vector condition. | Same gated split A for placement/C for new content |
+| **B21 TRY13** | \`CIRCLE_STANDARD\` | **SGK p43 HĐ1, Hình 7.13** | Separate \(IM=R\) **on circle** from \(IM<R\) **inside disk** and \(IM>R\) outside. **Current opening sentence says coverage region is all points at exactly 3 km:** incorrect as a full area. | **P1 Q03/PED3 targeted AUTHORING_DEFECT / DELTA_C**; don't touch canonical answer |
+| **B21 TRY14** | \`CIRCLE_GENERAL\` | SGK p44 + worked example | Completing square is a **change of geometric description**. Check \(\rho^2=a^2+b^2-c\) >0/0/<0, not assume every equation gives a circle. | Keep logic; DELTA_C only if adding independent example |
+| **B21 TRY15** | \`CIRCLE_TANGENT\` | SGK p46 HĐ2, Hình 7.16 | Verify \(M\in(C)\) before using \(\overrightarrow{IM}\) as a nonzero normal; teach why tangent has one contact. | Prioritize diagram next to rationale; DELTA_A vs C by actual meaning |
+| **B21 TRY16** | \`CIRCLE_THROUGH_POINTS\` | SGK worked three-point example p44–45; SBT B21 | Geometric **intersection of perpendicular bisectors** is easier to understand than three simultaneous unknown coefficients without scaffold. Must check three points noncollinear. | DELTA_C worked guided example, unchanged item |
+| **B21 TRY17** | \`LINE_CIRCLE_POSITION\` | S1 B21 p43–47 **not explicitly confirmed as mandatory section**; may be mathematical transfer from B20 distance + B21 radius | Explain \(h<R\) (2), \(h=R\) (1), \(h>R\) (0) geometrically; label as supporting *application* unless S1 section/approved outcome requires it. | **Q01_SCOPE_RECHECK / DELTA_C** if added/reclassified |
+| **B22 TRY18** | \`ELLIPSE_PARAMETERS\` | **SGK p48–49 HĐ1 string-and-pegs and equation** | Start with string experiment and why distance sum is constant, then show foci, \(a>b>0\), \(c^2=a^2-b^2\). Existing prose says result but doesn't build it visually. **Eccentricity \`e=c/a\` not verified in required S1**. | **Q01_SCOPE_HOLD** eccentricity; DELTA_C original graphical experiment |
+| **B22 TRY19** | \`HYPERBOLA_PARAMETERS\` | **SGK p50–51 islands/equal-difference locus; Hình 7.23–26** | Contrast \(|MF_1-MF_2|=2a\) with ellipse sum; two independent branches, \(c>a\) from plus sign. | DELTA_C original map/locus reasoning |
+| **B22 TRY20** | \`HYPERBOLA_ASYMPTOTES\` | **Explicit asymptote formula not independently established in SGK B22 p48–57** | Before formula, ask why points go off to two branches, but **do not present as mandatory SGK theorem until S1 or owner-approved enrichment**. | **Q01_SCOPE_HOLD**; AUTHORING decide canonical placement/role, retain ID |
+| **B22 TRY21** | \`PARABOLA_FOCUS\` | **SGK p52–53 HĐ4/HĐ5 and Hình 7.27** | Explain equality to *perpendicular distance from directrix*, derive \(y^2=2px\), focus \(F(p/2,0)\), distinguish convention \(y^2=4ax\). Website numeric question sound. | DELTA_C if adding original locus drawing/experiment |
+| **B22 TRY22** | \`CONIC_INTERSECTION\` | Cross-lesson algebraic intersection, SGK p55 exercises/application context; not a distinct formal 2.x section | A point must satisfy *both* equations. Show substitution, which real roots count and tangency/no-intersection. | **Q01_EXTENSION_CHECK**; keep as transfer unless AUTHORING confirms mandatory |
+| **B22 TRY23** | \`CONIC_MODEL\` | SGK p54–55 applied conics and parabolic cross-section | Width means difference of **two symmetric y-values**; in model \(y^2=20x\) at \(x=5\), \(y=\pm10\), width **20 cm**. Tie to labeled original drawing, don't infer actual reflector mechanics from 2D cross-section. | DELTA_C contextual derivation; current answer recheck for \(\pm\) |
+| **B22 TRY-ELLIPSE-TR01** | \`ELLIPSE_PARAMETERS\` transfer | SGK p48–49 ellipse properties; roof scenario is **project-authored**, not copied S1 | For roof width 12 m & height 4 m: \(a=6,b=4\), upper \(y=4\sqrt{1-x^2/36}\), \(|x|\le6\), at \(x=3\), \(y=2\sqrt3\) m. Clarify *centered* rectangular clearance and cross-section limits. | DELTA_C academic PED reviewer; private canonical preserved |
+| **B22 TRY-HYPERBOLA-TR01** | \`HYPERBOLA_PARAMETERS\` transfer | SGK p50–51 focus difference; radio-arrival-time scenario is **project-authored**, not literal S1 | Stations 60 km apart, \(v=10^5\) km/s, \(\Delta t=0.0002\)s: difference 20km, \(2a=20\), \(c=30\), \(b^2=900-100=800\), \(0<20<60\). Correct **branch** depends on which signal arrives first; a pair of stations does not determine a unique location. | DELTA_C applied model reviewer |
+
+## 4. NotebookLM/Gemini selection after actual comparison (not automatic import)
+
+- **NotebookLM original** \`bai-hoc-chi-tiet-toan-10-kntt.md\` in owner Drive (file ID \`1Ickwg2M_9XghU5C602k-w5wqargqOadT\`) includes **B20** a concrete point-to-line distance worked calculation with separate numerator/denominator; **B21** circle through three points and negative-sign-of-center trap; **B22** ellipse from its canonical equation plus explicit *ellipse vs hyperbola focus identity* confusion. These are **possible examples of reasoning and predictable mistakes**, but not substitutes for the richer S1 geometry/locus and diagrams. Do not blindly use its ratio tests for parallel lines with zero denominators.
+- **NotebookLM v2** \`bai-hoc-chi-tiet-toan-10-kntt-v2.md\` (ID \`1hSRMBffR_mQozAEJz_WtfMMu8XroJcx1\`) is mostly generic unfilled wording in these lessons; **REJECT as ready learner prose**. It may inform the instructional workflow (worked solution, recovery) but not factual example bodies.
+- **Gemini** \`lớp 10-bài 18,9,20,21,22.docx\` (ID \`1MT_1bQ8iGwpjDGiy3BhGYJD4v-J2nt82\`) offers map/roads for B20, coverage/radar for B21, planets/lights/conics for B22 and 5-step problem–method–solve–error–transfer shape. Its DOCX text export **drops numerous numerical/math fields**, so literal equations/answers cannot be validated from that text alone; treat Gemini merely as a scene/pedagogic candidate and re-derive math from S1/independent checks.
+- **Selection rule:** A source fragment is good only if it helps explain a particular \(OUTCOME_ID\) better than existing website while remaining exact to S1 constraints. Reject generic story repetition, false coverage area claims, formulas outside S1 presented as mandatory, and placeholders. No new public SGK images from book scans.
+
+## 5. P1 and blocker register; Q18 handoff requirement
+
+| Blocker | Scope | Reason | Correct owner |
+|---|---|---|---|
+| \`G10_CHVII_AP2_P1\` | B20–B22 new explanatory passages (and B19 earlier) | 24/25 narrative blocks in #845 lack genuine \`\\(\` delimiters for numerous math expressions; current 7/7 CI did not check typesetting of the mathematical prose | **RELEASE DELTA_A** equivalent TeX only, source hash + DOM + MathJax + responsive re-QA; **not** semantic rewrite |
+| \`B21_Q03_BOUNDARY_VS_DISK\` | \`G10-B21-CIRCLE_STANDARD\` opening | “vùng phủ được mô tả bằng mọi điểm cách trạm đúng 3 km” confuses full disk and boundary; S1 p43 requires \(IM=R\) for the *circle* | **AUTHORING DELTA_C/P1**, signed source & independent scoped review |
+| \`B22_Q01_ASYMPTOTE_ECCENTRICITY\` | \`TRY18\`, \`TRY20\` | \(e=c/a\) and \(y=\pm (b/a)x\) not verified as required formulas in the inspected S1 B22 section, though they can be mathematically valid enrichment | **AUTHORING Q01_S1_SCOPE_HOLD**; decide optional vs canonical role, no silent removal |
+| \`B21_Q01_LINE_CIRCLE_TRANSFER\` | \`TRY17\` | Line–circle center-distance classification not confirmed as mandatory section within B21 despite mathematical coherence | AUTHORING scope/role check |
+| \`B22_Q01_CROSS_LESSON_TRANSFER\` | \`TRY22\`, \`TRY23\`, 2 transfer items | Applied cross-lesson methods and 2D physics need clear conditions and optional classification | AUTHORING Q01/Q02/Q07/PED/D6 targeted review |
+| \`CHVII_PED9_14_LEARNER_EVIDENCE\` | 25 canonical outcomes | CI PASS proves source/UI integrity, **not** that a first-time learner can reconstruct math and solve an unseen analogous case | Academic/PED Q18 targeted independent review, then owner learner validation |
+
+**Strict RELEASE/AUTHORING boundary:** REL fixes presentation equivalently and may align *existing* verified figures/containers without changing math; any new explanatory story, new illustration with math, reclassification of an \`item_id\`, change to problem/answer/rubric or addition to knowledge is **DELTA_C** to AUTHORING. AUTHORING checks **S1 per lesson/outcome**, uses **exact five Permanent NotebookLM THPT sources v2.1**, signs \`SOURCE_RECEIPT\`/minimal delta and affected academic/PED verdict, then returns one canonical ready snapshot/handoff. **No new source becomes CONTENT_READY because 7/7 CI is green.**
+
+## 6. Checkpoint
+
+\`B20_B21_B22_SGK_ALL_PRINTED_PAGES_INSPECTED / SBT_B20_B22_SECTION_PAGES_INSPECTED / 18_ITEM_OUTCOME_CROSSWALK_R03 / OWNER_NOTEBOOK_GEMINI_COMPARED / S1_OPTIONAL_SCOPE_HOLDS / AP2_P1_OPEN / AUTHORING_DELTA_C_PENDING / DRAFT_ONLY / NO_WEBSITE_CHANGE / NO_MERGE / NO_DEPLOY\`.
+
+**Next sequence:** collect the original plus approved math diagrams/examples as an exact-target Temp_ review pack for AUTHORING; retain old and new hash receipts, prioritizing B21 boundary and B22 scope. Upon AUTHORING approval, RELEASE receives the exact reviewed file(s), then runs AP/UI on final Git HEAD before any P1 publication. Only after closing G10 ChVII should G10 ChVIII B23–25 start, then ChIX B26–27, G11 then G12, chapter by chapter.
