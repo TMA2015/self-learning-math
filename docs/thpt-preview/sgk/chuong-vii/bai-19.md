@@ -135,7 +135,7 @@
     <a href="../luyen-tap/?item=THPT-G10-B19-P03">Mở câu luyện tập tương ứng để tự luyện</a>
 
 
-    <span id="thpt-g10-chvii-try06" data-thpt-first-try-id="THPT-G10-CHVII-TRY06" data-learning-role="guided-extension" data-outcome-id="G10-B19-MULTISTEP" data-thpt-help-ref="HELP-G10-CHVII-TRY06"></span>
+    <span id="thpt-g10-chvii-try06" data-thpt-first-try-id="THPT-G10-CHVII-TRY06" data-outcome-id="G10-B19-MULTISTEP" data-thpt-help-ref="HELP-G10-CHVII-TRY06" data-learning-role="guided-extension"></span>
 
     **Mở rộng có hướng dẫn · Học sau Bài 20.** Đây là một vận dụng liên bài về giao điểm và vuông góc, không phải điều kiện hoàn thành Bài 19.
 
