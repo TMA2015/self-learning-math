@@ -365,6 +365,55 @@ const polishG10ChapterVI=(article)=>{
  article.dataset.g10ChviGolden="preview";
 };
 
+/* G10 ChVII B19–B22: lesson Golden v3.1 §X-F, no global CSS or
+ * assessment writes. Only a verified 'Lời giải.' paragraph plus
+ * subsequent mathematical steps enter the solution box; all other
+ * student-facing problem, method, self-check and disclosure stay outside.
+ * Unlike ChVI, ChVII has zero full-box narrative exceptions. */
+const polishG10ChapterVII=(article)=>{
+ if(article.dataset.g10ChviiGolden==="preview")return;
+ const set=article.querySelector(".tabbed-set");
+ const labels=[...(set?.querySelectorAll(":scope > .tabbed-labels > label")||[])];
+ const panes=[...(set?.querySelectorAll(":scope > .tabbed-content > .tabbed-block")||[])];
+ const names=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
+ if(labels.length!==4||panes.length!==4||
+  !labels.every((x,i)=>x.textContent.trim()===names[i]))return;
+ const formal=[...panes[1].querySelectorAll(":scope > h3")];
+ if(formal.length<2||formal.some((x,i)=>!x.textContent.trim().startsWith("2."+(i+1)+". ")))return;
+ polishG10ChapterIV(article);
+ if(article.dataset.g10ChivGolden!=="true")return;
+ panes[0].querySelectorAll("details.question > summary").forEach(summary=>{
+  summary.textContent="Đối chiếu";
+ });
+ const isLead=(node,re)=>node?.tagName==="P"&&
+  node.firstElementChild?.tagName==="STRONG"&&re.test(node.firstElementChild.textContent.trim());
+ const stop=/^(?:Vì sao|Kiểm lại|Tự kiểm|Tự luyện thêm|Tự mở rộng|Lưu ý|Điều cần nhớ|Giới hạn|Bài học|Nhớ kiểm tra|Tự nhớ)(?:[.:\s?]|\b)/iu;
+ let sections=0,boxes=0;
+ for(const h of panes[2].querySelectorAll(":scope > h3")){
+  sections++;
+  let node=h.nextElementSibling;
+  while(node&&node.tagName!=="H3"&&!isLead(node,/^Lời giải\./iu))
+   node=node.nextElementSibling;
+  if(!node||node.tagName==="H3")continue; // browser QA fails closed
+  const div=document.createElement("div");
+  div.className="thpt-g10-example-solution";
+  div.setAttribute("role","group");
+  div.setAttribute("aria-label","Lời giải ví dụ");
+  node.before(div);
+  while(node&&node.tagName!=="H3"&&
+   !node.classList.contains("admonition")&&
+   node.tagName!=="DETAILS"&&!isLead(node,stop)){
+   const next=node.nextElementSibling;
+   div.append(node);node=next;
+  }
+  boxes++;
+ }
+ article.classList.add("thpt-g10-chvii-golden");
+ article.dataset.g10ChviiExampleSections=String(sections);
+ article.dataset.g10ChviiExampleBoxes=String(boxes);
+ article.dataset.g10ChviiGolden="preview";
+};
+
 const run=()=>{
  const path=location.pathname;
  const match=path.match(/^(.*\/thpt-preview\/sgk\/)(?:(lop-(11|12))\/)?chuong-([ivx]+)\/bai-(\d+)\/?$/);
@@ -382,6 +431,7 @@ const run=()=>{
   else if(chapter==="iv"&&lesson<=11)polishG10ChapterIV(article);
   else if(chapter==="v"&&lesson>=12&&lesson<=14)polishG10ChapterV(article);
   else if(chapter==="vi"&&lesson>=15&&lesson<=18)polishG10ChapterVI(article);
+  else if(chapter==="vii"&&lesson>=19&&lesson<=22)polishG10ChapterVII(article);
  }
  if(article.querySelector("[data-sgk-lesson-nav]"))return;
  const root=match[1]+(grade===10?"":"lop-"+grade+"/");
