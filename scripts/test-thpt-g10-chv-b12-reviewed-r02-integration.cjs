@@ -37,7 +37,18 @@ if(level1Tabs.length)assert.deepEqual(level1Tabs,
  "B12 must retain four owner-approved horizontal Knowledge tabs");
 const workedPattern=level1Tabs.length?/^    ### Ví dụ [123]\./gm:/^### Ví dụ [123]\./gm;
 assert.equal((page.match(workedPattern)||[]).length,3,"B12 must retain exactly three worked examples");
-for(const name of ["Đúng/gần đúng và số quy tròn","Sai số tuyệt đối, độ chính xác","Sai số tương đối","Giới hạn độ chính xác và quy tròn"])assert(page.includes(name),"missing theory "+name);
+const {chvEditorialReceiptRows}=require("./thpt-q18-g10-source-receipt.cjs");
+if(chvEditorialReceiptRows().has("B12")){
+ const titles=[...page.slice(page.indexOf('=== "Kiến thức SGK"'),page.indexOf('=== "Ví dụ"'))
+  .matchAll(/^    ### ([^\\n]+)/gm)].map(x=>x[1]);
+ assert.deepEqual(titles,["2.1. Số gần đúng","2.2. Sai số tuyệt đối và sai số tương đối",
+  "2.3. Quy tròn số gần đúng"],"B12 revised S1 headings must match exact signed Q18 receipt");
+ assert(page.includes("Máy tính cầm tay giúp"),"B12 SGK calculator outcome must be taught");
+}else{
+ for(const name of ["Đúng/gần đúng và số quy tròn","Sai số tuyệt đối, độ chính xác",
+  "Sai số tương đối","Giới hạn độ chính xác và quy tròn"])
+  assert(page.includes(name),"missing historical theory "+name);
+}
 const fig="docs/assets/images/thpt/THPT_G10_B12_ERROR_INTERVAL_D5_R02_REVIEWED.svg";
 assert.equal(blob(fig),"fede1bb23334ff7bd66a6f5a6adc39cf856c5d52","Source locked FIG01 R02 differs");
 const svg=read(fig);
