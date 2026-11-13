@@ -53,6 +53,14 @@ if(chviiAp2Text)assert.equal(chviiAp2Matches.length,4,"AP2 exact rows for all fo
 const chviiAp2=new Map(chviiAp2Matches.map(m=>[Number(m[1]),{
  baseline:m[2],candidate:m[3],tries:Number(m[4]),helps:Number(m[5])}]));
 
+const chviiR02Path=path.join(root,
+ "prototypes/thpt/ux795/G10_CHVII_B19_B22_R02_ACADEMIC_PED_PASS_RELEASE_INTAKE_20261114.md");
+const chviiR02Text=fs.existsSync(chviiR02Path)?fs.readFileSync(chviiR02Path,"utf8"):"";
+const chviiR02Matches=[...chviiR02Text.matchAll(/^\| B(19|20|21|22) \| \x60([a-f0-9]{40})\x60 \| \x60([a-f0-9]{40})\x60 \| (\d+) \| (\d+) \| (\d+) \|/gm)];
+if(chviiR02Text)assert.equal(chviiR02Matches.length,4,"R02 academic intake requires four signed lesson rows");
+const chviiR02=new Map(chviiR02Matches.map(m=>[Number(m[1]),{
+ baseline:m[2],candidate:m[3],tries:Number(m[4]),helps:Number(m[5]),examples:Number(m[6])}]));
+
 const htmlSelfPractice=/<summary[^>]*>\s*Xem lời giải ba câu tự luyện\s*<\/summary>/g;
 const blob=raw=>crypto.createHash("sha1")
  .update(Buffer.from("blob "+raw.length+"\0")).update(raw).digest("hex");
@@ -73,7 +81,7 @@ for(let n=1;n<=27;n++){
   const source=fs.readFileSync(path.join(root,"docs",route+".md"));
   assert.equal(blob(source),followon.candidate,"B"+n+" source SHA must match signed UX receipt");
  }
- const signedVII=chvii.get(n),amendedVII=chviiNarrative.get(n),ap2=chviiAp2.get(n);
+ const signedVII=chvii.get(n),amendedVII=chviiNarrative.get(n),ap2=chviiAp2.get(n),r02=chviiR02.get(n);
  if(signedVII){
   const source=fs.readFileSync(path.join(root,"docs",route+".md"));
   if(amendedVII){
@@ -88,7 +96,14 @@ for(let n=1;n<=27;n++){
    assert.equal(ap2.tries,signedVII.tries,"B"+n+" AP2 preserves canonical questions");
    assert.equal(ap2.helps,signedVII.helps,"B"+n+" AP2 preserves HELP");
   }
-  assert.equal(blob(source),ap2?ap2.candidate:(amendedVII?amendedVII.candidate:signedVII.candidate),
+  if(r02){
+   assert(ap2,"B"+n+" R02 teaching must follow independently reviewed AP2 base");
+   assert.equal(r02.baseline,ap2.candidate,"B"+n+" exact R02 baseline");
+   assert.equal(r02.tries,signedVII.tries,"B"+n+" canonical item total");
+   assert.equal(r02.helps,signedVII.helps,"B"+n+" D6 count");
+   assert.equal(r02.examples,signedVII.examples,"B"+n+" unchanged worked SGK examples");
+  }
+  assert.equal(blob(source),r02?r02.candidate:(ap2?ap2.candidate:(amendedVII?amendedVII.candidate:signedVII.candidate)),
    "B"+n+" ChVII source must match latest signed Q18 source-chain receipt");
   assert.equal(ids.length,signedVII.tries,"B"+n+" original ChVII FirstTry count");
   assert.equal([...markdown.matchAll(/data-thpt-help-id="([^"]+)"/g)].length,signedVII.helps,
