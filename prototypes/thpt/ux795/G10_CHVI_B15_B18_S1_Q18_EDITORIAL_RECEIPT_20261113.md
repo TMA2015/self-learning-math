@@ -28,7 +28,7 @@ Secondary transcription supports headings but is not a replacement for the S1 sc
 | LESSON | PUBLISHED_BASELINE_BLOB | EDITED_SOURCE_BLOB | FIRST_TRY_MOVED_TO_DISCOVERY | Original HELP in mistakes tab |
 |---|---|---|---:|---:|
 | B15 | `7b579927e0f6fe4d5a562d5e1127efa8d6deeb96` | `1db49afc587c8c736e1c870851d431d0bca0d6a6` | 5 | 5 |
-| B16 | `afe31b484ba60f8f7fed243b29995332a5609826` | `15eff8a5de7b06cf31851df1d18f21e9fa535717` | 5 | 5 |
+| B16 | `afe31b484ba60f8f7fed243b29995332a5609826` | `5ead550c6d590e781b2cff55e15e0bfcb3a73b83` | 5 | 5 |
 | B17 | `93cd934ce90cc41d46d07a9af011975d6f930332` | `7f2b4ecdd3245b03924220b700668dde775722d2` | 5 | 5 |
 | B18 | `f6fee0d64fd5452d8ac00a59e7d21b3d3ba48c6f` | `a392c81f8c80270a97db142edf1cca6e37fccf71` | 4 | 4 |
 
