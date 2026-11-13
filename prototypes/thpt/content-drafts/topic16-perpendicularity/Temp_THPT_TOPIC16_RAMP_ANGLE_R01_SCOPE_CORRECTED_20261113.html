@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Khám phá hình chiếu, góc dốc và chiều cao</title>
+<!-- MODEL_ID: SLM-TOP16-RAMP-ANGLE-R00; OUTCOME: TOP16-O13,TOP16-O14; ROLE: PUBLIC_DISCOVERY_NO_MASTERY; NO_RD1; NO_EXTERNAL_ASSETS -->
+<style>
+:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f7fbff;font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:#183048;line-height:1.6}main{max-width:920px;margin:auto;padding:clamp(14px,3vw,28px)}h1{font-size:clamp(1.25rem,2.5vw,1.75rem);margin:0 0 8px}p{margin:8px 0}section{background:#fff;border:1px solid #cadaec;border-radius:16px;padding:16px;margin:14px 0}.layout{display:grid;grid-template-columns:minmax(0,1fr) 235px;gap:18px;align-items:start}.layout>*{min-width:0}canvas{display:block;width:100%;height:auto;aspect-ratio:8/5;border-radius:12px;background:#f4f9fd;border:1px solid #d6e4f2}.controls label{display:block;font-weight:600;margin:0 0 12px}.controls input{display:block;width:100%;min-height:32px;accent-color:#286ba6}.controls output{display:inline-block;min-width:38px;text-align:right}button{min-height:42px;padding:8px 16px;background:#e8f3fc;border:1px solid #8db9db;border-radius:10px;color:#183d60;font:inherit;font-weight:650;cursor:pointer}button:focus-visible,input:focus-visible{outline:3px solid #2780cd;outline-offset:2px}.stats{padding:12px;background:#eff7fe;border-radius:12px}strong{font-weight:700}.screen{font-size:1.05rem;min-height:52px}small{color:#46586b}details{border-top:1px solid #dbe7f1;padding-top:10px;margin-top:12px}summary{cursor:pointer;font-weight:650}ul{padding-left:22px}@media(max-width:600px){.layout{grid-template-columns:1fr}.controls{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}.controls button{grid-column:1/-1}section{padding:12px}}
+</style>
+</head>
+<body><main>
+<h1>Đường dốc: hình chiếu, góc và độ dài</h1>
+<p>Hãy dự đoán: khi tăng độ cao nhưng giữ nguyên khoảng ngang, góc nghiêng và chiều dài đường dốc thay đổi thế nào? Kéo hai thanh điều khiển, rồi dùng tam giác vuông để giải thích.</p>
+<section class="layout" aria-label="Mô hình hình chiếu của đường xiên">
+<div><canvas id="graph" width="640" height="400" role="img" aria-label="Sơ đồ tam giác vuông với cạnh ngang, chiều cao vuông góc và đường xiên, thay đổi theo hai thanh điều khiển"></canvas><p class="screen" id="status" aria-live="polite"></p><p><small>Hình biểu diễn là thiết diện hai chiều vuông góc nền, không thay thế mô hình góc tùy ý giữa đường thẳng và mặt phẳng ba chiều.</small></p></div>
+<div class="controls"><label>Khoảng ngang <output id="outR" for="run">4</output> m<input aria-label="Khoảng ngang" id="run" type="range" min="0" max="10" step="0.5" value="4"></label><label>Chiều cao vuông góc <output id="outH" for="rise">3</output> m<input aria-label="Chiều cao vuông góc" id="rise" type="range" min="0" max="10" step="0.5" value="3"></label><button id="reset" type="button">Đặt lại 3–4–5</button></div>
+</section>
+<section><p><strong>Quan sát và lí giải:</strong> <span id="math"></span></p><p>Vì sao góc nghiêng với nền phải được xác định qua hình chiếu của đường dốc, chứ không qua đường thẳng đứng?</p><details><summary>Tự mở Đối chiếu</summary><p>Hình chiếu của đường xiên lên mặt phẳng nền là cạnh ngang. Hai cạnh ngang và cao vuông góc tạo thành tam giác vuông; do đó độ dài nghiêng <strong>L = √(r²+h²)</strong>, góc giữa đường và nền khi r,h không đồng thời bằng 0 là <strong>θ = atan2(h,r)</strong>, sinθ=h/L và tanθ=h/r khi r&gt;0. Góc đường–mặt luôn lấy góc giữa đường xiên và hình chiếu của nó lên mặt nền (hoặc 90° khi chiếu suy biến thành điểm).</p><p>Nếu r=0,h&gt;0 thì đường thẳng vuông góc nền, θ=90° và hình chiếu thu thành điểm. Nếu h=0,r&gt;0 thì đường nằm trên nền, θ=0°. Nếu cả hai cùng bằng 0, không có đoạn thẳng/không định nghĩa góc.</p></details></section>
+</main>
+<script>
+(()=>{'use strict';
+ const run=document.getElementById('run'), rise=document.getElementById('rise'), canvas=document.getElementById('graph'), status=document.getElementById('status'), math=document.getElementById('math'),rout=document.getElementById('outR'),hout=document.getElementById('outH');
+ const ctx=canvas.getContext('2d');const fmt=v=>Number.isFinite(v)?(+v.toFixed(2)).toLocaleString('vi-VN'):'không xác định';
+ function draw(){const r=Number(run.value),h=Number(rise.value),L=Math.hypot(r,h),deg=(L>0?Math.atan2(h,r)*180/Math.PI:null);rout.value=String(r);hout.value=String(h);
+ const rect=canvas.getBoundingClientRect(),dpr=Math.min(2.5,window.devicePixelRatio||1),w=Math.max(320,rect.width||640),hh=w*5/8;canvas.width=Math.round(w*dpr);canvas.height=Math.round(hh*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,w,hh);
+ const x0=w*.15,y0=hh*.82,s=Math.min(w*.68/10,hh*.64/10),x1=x0+r*s,y1=y0-h*s;
+ const line=(a,b,c,d,color,width=3,dash=[])=>{ctx.beginPath();ctx.moveTo(a,b);ctx.lineTo(c,d);ctx.strokeStyle=color;ctx.lineWidth=width;ctx.setLineDash(dash);ctx.stroke();ctx.setLineDash([])};
+ line(x0-22,y0,x0+Math.max(100,10*s),y0,'#8eacc1',2);
+ if(L>0){line(x0,y0,x1,y0,'#40836c',3);line(x1,y0,x1,y1,'#c87532',3);line(x0,y0,x1,y1,'#276aa6',4);if(r>0&&h>0){ctx.strokeStyle='#9fa4a8';ctx.lineWidth=2;ctx.strokeRect(x1-11,y0-11,11,11);}}
+ else{ctx.beginPath();ctx.arc(x0,y0,5,0,2*Math.PI);ctx.fillStyle='#276aa6';ctx.fill();}
+ ctx.font=`${Math.max(13,w*.023)}px system-ui, sans-serif`;ctx.fillStyle='#254b69';ctx.fillText('Nền (P)',x0+Math.min(8*s+28,w*.70),y0+23);
+ if(L>0){ctx.fillStyle='#276aa6';ctx.fillText('Đường xiên L = '+fmt(L)+' m',Math.max(8,x0+(x1-x0)/2-28),Math.max(25,y1+(y0-y1)/2-16));ctx.fillStyle='#40836c';ctx.fillText('r = '+fmt(r)+' m',x0+(x1-x0)/2,Math.min(hh-8,y0+27));ctx.fillStyle='#b36430';ctx.fillText('h = '+fmt(h)+' m',Math.min(w-110,x1+11),y1+(y0-y1)/2);}
+ status.textContent=L===0?'Hai tham số đều bằng 0: đoạn thẳng suy biến, góc không xác định.':`Chiều dài L = ${fmt(L)} m; góc với nền θ = ${fmt(deg)}°. ${r===0?'Hình chiếu chỉ là một điểm.':h===0?'Đường nằm trong mặt nền.':'Hình chiếu có độ dài '+fmt(r)+' m.'}`;
+ math.textContent=L===0?'Không áp dụng lượng giác khi đoạn thẳng suy biến.':`L = √(${fmt(r)}² + ${fmt(h)}²) = ${fmt(L)} m; sinθ = ${fmt(h)}/${fmt(L)} = ${fmt(h/L)}${r>0?`; tanθ = ${fmt(h/r)}`:'; tanθ không xác định tại góc 90°'}.`;
+ }
+ run.addEventListener('input',draw);rise.addEventListener('input',draw);document.getElementById('reset').addEventListener('click',()=>{run.value='4';rise.value='3';draw();});window.addEventListener('resize',draw);draw();
+})();
+</script>
+</body></html>
