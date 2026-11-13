@@ -164,7 +164,7 @@
         Bán trục ngang 6, bán trục đứng 4: `x²/36+y²/16=1`, **y≥0**, |x|≤6. Tại x=3, `y=4√(1−9/36)=2√3≈3,464 m`. Không lấy y âm hoặc dùng a=12. Nếu sai, xem `HELP-G10-CHVII-ELLIPSE-TR01`.
 
 
-    #### Minh họa — Kiểm tra độ hở của mái nửa elip
+    Ta có thể kiểm nghiệm thêm cách đọc hoành độ qua một mái che có số đo khác.
 
     **Tình huống tự vận dụng:** Một mái che nửa elip có bề rộng **30 m**, cao tại tâm **10 m**. Người đứng cách chân mái bên phải **6 m về phía trong**. Tính độ cao mái ở vị trí đó.
 
@@ -173,7 +173,7 @@
     3. **Tìm chiều cao:** `y=10√(1−81/225)=10√(144/225)=8 m`.
     4. **Kiểm:** y=8 m nằm giữa 0 và 10m; càng đi từ chân vào giữa, chiều cao phải tăng. Nếu ra chiều cao lớn hơn 10 thì đã đọc sai trục/công thức.
 
-    **Tại sao là D2 mới:** Điểm khó nằm ở **dịch điều kiện thực tế “cách chân mái” thành hoành độ** và giới hạn nửa elip; cách dựng từ tiêu điểm trong `THPT-G10-B22-P01` không tự thay chuỗi này.
+    Điều quan trọng nhất ở bài toán này là đổi đúng cụm “cách chân mái” thành hoành độ tính từ tâm, đồng thời chỉ xét nửa elip phía trên. Không thể bỏ qua bước đặt trục rồi áp dụng ngay công thức tìm tiêu điểm.
 
 
 
@@ -190,7 +190,7 @@
         Hiệu quãng đường `vΔt=100000·0,0002=20 km`, nên `2a=20`, `a=10 km`, `2c=60`, `c=30 km`, `b²=c²−a²=900−100=800 km²`. Vì `0<20<60`, dữ kiện hình học phù hợp hypebol. **Chưa đủ thông tin trạm nào nhận trước** nên chưa thể chọn nhánh. Nếu quên điều kiện này, xem `HELP-G10-CHVII-HYPERBOLA-TR01`.
 
 
-    #### Minh họa — Hai trạm phát tín hiệu
+    Tương tự, khi đã hiểu vì sao chênh lệch thời gian dẫn đến hypebol, ta xét thêm tình huống đủ dữ kiện để xác định nhánh của quỹ tích.
 
     **Tình huống tự vận dụng — Hai trạm tín hiệu:** Trạm A ở `(-40;0)` km, trạm B ở `(40;0)` km, đồng phát tín hiệu tốc độ **100.000 km/s**. Máy thu P nhận từ **A sớm hơn từ B** 0,0004 s. Xác định phương trình quỹ tích và nhánh.
 
