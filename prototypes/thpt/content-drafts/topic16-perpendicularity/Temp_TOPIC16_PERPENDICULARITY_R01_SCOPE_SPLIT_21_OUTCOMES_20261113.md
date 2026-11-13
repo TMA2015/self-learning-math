@@ -2,9 +2,10 @@
 
 > **AUTHORING_REVIEW_CANDIDATE / KHÔNG CONTENT_READY.** `SLM-THPT-QUALITY-ONE v3.1.0` Q01–Q18. Mã CD16 chỉ là *thứ tự nghiên cứu* từ đề xuất lịch sử 22 chuyên đề, **không** tự phê duyệt TOPIC_ID/runtime route. Nguồn học liệu R00 trước đó gộp B26/B27 (Khoảng cách & Thể tích); từ R01, phần ấy thuộc hướng nghiên cứu CĐ17 riêng và không được coi là đã hoàn tất hay review cho CĐ17.
 
-**S1 và custody:** SGK Toán 11 Kết nối tri thức Tập Hai, Chương VII **B22–B25** (trang in SGK 27–53; SBT B22–B25 trang 24–34, theo Git source receipt đã có), nguồn SGK public blob `afc8ec039213b87b4930f2d34d48c28d1fc6277f`. `41` public SGK canonical item ID được tham chiếu một lần trong metadata, không sao chép đề/đáp án/rubric gốc; không suy rộng SGK NotebookLM PASS sang Topic R01. PDF S1 không được quét lại ở lượt này.
-
-**Editorial narrative provenance:** Tham khảo bản NotebookLM `Temp_TOPIC_10_QUAN_HE_VUONG_GOC_VA_KHOANG_CACH_TRONG_HINH_HO.md` (Drive, DRAFT_NOT_REVIEWED; bản cũ gộp cả Khoảng cách/Thể tích và gán sai Chương VIII). Chỉ tiếp nhận nhịp diễn giải cột điện → kiểm hai phương cắt nhau, mái dốc → hình chiếu, nhị diện → dựng thiết diện; kiểm toán độc lập mọi định lí/ví dụ theo S1 đã khóa, không trích dẫn bản nháp làm học thuật chính thức. **Giữ văn phong tự nhiên, liên kết bản chất trước kĩ thuật**, không bắt học sinh đọc nhãn WHY/PED/rubric metadata.
+<!-- AUTHOR_ONLY_PROVENANCE_START
+S1: SGK Toán 11 KNTT Tập 2 ChVII B22–B25, printed pp27–53; SBT B22–B25 pp24–34 from original G11 SGK receipt, public blob afc8ec039213b87b4930f2d34d48c28d1fc6277f; not newly scanned. Forty-one SGK canonical ID pointers, no duplicated bodies. Historical SGK Academic/PED does not confer Topic PASS.
+NOTEBOOKLM_EDITORIAL_REFERENCE: Temp_TOPIC_10_QUAN_HE_VUONG_GOC_VA_KHOANG_CACH_TRONG_HINH_HO.md, Drive draft (DRAFT_NOT_REVIEWED). Old source incorrectly labeled ChVIII and mixed B26/B27; reject source scope, pages and grading from it. Only select mathematically independently validated explanation bridges (two intersecting directions, roof projection, cross-section of dihedral angle). The R01 language is editorially adapted, not a verbatim independent-review-approved source.
+AUTHOR_ONLY_PROVENANCE_END -->
 
 **Cách học:** Hành trình độc lập gồm đúng **Kiến thức / Luyện tập / Tự kiểm tra**, không Core tab. Học đến ví dụ, tự thử chưa xem lời giải, sau đó tự mở Đối chiếu và D6. Mọi câu đã xem trong luyện tập chỉ là tự kiểm tra ôn tập công khai, không có tính độc lập của đề Readiness; không ghi Mastery.
 
@@ -22,7 +23,9 @@
 
 Quan sát đường **a** và **b** ở hai vị trí không cắt nhau; đừng cố nối đầu mút để lấy góc. Theo các dấu **a′∥a**, **b′∥b**, đưa hai phương về điểm **O** và đọc góc tại O. Nếu thay O bằng điểm khác thì hai phương không đổi, nên góc không đổi.
 
-<small>Hình nguồn SGK public bất biến: `docs/assets/images/thpt/FIG-G11-CHVII-B22-01_R00.svg`, Git blob `5f2d23adb6f947064312d04d67ce5a5bb2d1ff48`. Đọc nhãn và giả thiết; không suy độ dài bằng đo phối cảnh. Nếu không hiển thị SVG, lời dẫn ở trên vẫn tự đủ để lập luận.</small>
+*Nếu không hiển thị hình, hãy đọc lại mô tả bằng lời ở trên và tự dựng quan hệ theo giả thiết; không suy góc hay độ dài từ nét phối cảnh.*
+
+<!-- AUTHOR_ONLY_SVG_SOURCE: docs/assets/images/thpt/FIG-G11-CHVII-B22-01_R00.svg; BLOB: 5f2d23adb6f947064312d04d67ce5a5bb2d1ff48 -->
 
 #### 1.1. Góc giữa hai đường trong không gian là góc nhỏ giữa hai đường cùng đi qua một điểm và lần lượt song song với hai đường đã cho; vì thế góc luôn trong [0°,90°]
 
@@ -117,7 +120,9 @@ Chưa; cần chứng cứ hình học về phương hoặc góc thật.
 
 Chỉ hai cạnh **AB** và **AD** trong mặt **(P)**, chúng cắt nhau tại **A**. Cột **AH** vuông góc với cả hai: không phải “hai góc vuông là đủ” một cách máy móc, mà vì AB,AD tạo hai hướng không song song cùng nằm trong một mặt. Nếu hai cạnh kiểm tra song song thì không được suy AH⊥(P).
 
-<small>Hình nguồn SGK public bất biến: `docs/assets/images/thpt/FIG-G11-CHVII-B23-01_R00.svg`, Git blob `b53b65704f9830e1c97b533bac0e79a0b56761b6`. Đọc nhãn và giả thiết; không suy độ dài bằng đo phối cảnh. Nếu không hiển thị SVG, lời dẫn ở trên vẫn tự đủ để lập luận.</small>
+*Nếu không hiển thị hình, hãy đọc lại mô tả bằng lời ở trên và tự dựng quan hệ theo giả thiết; không suy góc hay độ dài từ nét phối cảnh.*
+
+<!-- AUTHOR_ONLY_SVG_SOURCE: docs/assets/images/thpt/FIG-G11-CHVII-B23-01_R00.svg; BLOB: b53b65704f9830e1c97b533bac0e79a0b56761b6 -->
 
 #### 2.1. Đường d vuông góc mặt phẳng (P) nghĩa là d vuông góc **mọi đường thẳng** nằm trong (P)
 
@@ -230,9 +235,13 @@ Chưa; cần thêm một đường cắt AB trong nền (ví dụ AD).
 
 Tìm **A** ở cao, **H** là chân AH⊥(P), **M** ở nền. Đường xiên **AM** chiếu thành **HM**, do đó góc cần đo là **AMH tại M**, không phải góc ở A. Tam giác AHM vuông tại H nên khi biết AH,AM có thể dùng sin(góc AMH)=AH/AM; không lấy nét vẽ phối cảnh làm phép đo.
 
-<small>Hình nguồn SGK public bất biến: `docs/assets/images/thpt/FIG-G11-CHVII-B24-01_R00.svg`, Git blob `c98d7df30b87c339336636e00322816a4099681b`. Đọc nhãn và giả thiết; không suy độ dài bằng đo phối cảnh. Nếu không hiển thị SVG, lời dẫn ở trên vẫn tự đủ để lập luận.</small>
+*Nếu không hiển thị hình, hãy đọc lại mô tả bằng lời ở trên và tự dựng quan hệ theo giả thiết; không suy góc hay độ dài từ nét phối cảnh.*
 
-**Khám phá tương tác:** Mô hình `SLM-TOP16-RAMP-ANGLE-R00` (nguồn HTML R01 `Temp_THPT_TOPIC16_RAMP_ANGLE_R01_SCOPE_CORRECTED_20261113.html`, chỉ là PUBLIC_DISCOVERY_NO_MASTERY) điều khiển độ cao và khoảng ngang của tam giác vuông. Dự đoán góc/độ dài trước khi kéo, quan sát hình thay đổi rồi kiểm bằng Pitago và sin/tan. Mô hình không thay chứng minh định lí ba đường vuông góc.
+<!-- AUTHOR_ONLY_SVG_SOURCE: docs/assets/images/thpt/FIG-G11-CHVII-B24-01_R00.svg; BLOB: c98d7df30b87c339336636e00322816a4099681b -->
+
+**Khám phá tương tác:** Mô hình **Đường dốc, hình chiếu và góc** điều khiển độ cao và khoảng ngang của tam giác vuông. Dự đoán góc/độ dài trước khi kéo, quan sát hình thay đổi rồi kiểm bằng Pitago và sin/tan. Mô hình không thay chứng minh định lí ba đường vuông góc.
+
+<!-- AUTHOR_ONLY_MODEL_REFERENCE: SLM-TOP16-RAMP-ANGLE-R00; FILE: Temp_THPT_TOPIC16_RAMP_ANGLE_R01_SCOPE_CORRECTED_20261113.html; PUBLIC_DISCOVERY_NO_MASTERY -->
 
 #### 3.1. Hình chiếu vuông góc H của A trên (P) là chân duy nhất của AH⊥(P)
 
@@ -347,7 +356,9 @@ Có: BH là hình chiếu của AB lên (P); dùng định lí ba đường vuô
 
 Trước hết chỉ **giao tuyến Δ**, sau đó xem hai tia **OU, OV** cùng vuông góc Δ tại **O** nhưng nằm trên hai mặt khác nhau. **UOV** là góc phẳng của nhị diện đã chọn, có thể tù. Khi câu hỏi nói góc **giữa hai mặt phẳng**, lấy góc không tù giữa hai đường thẳng chứa OU và OV, không tùy tiện giữ góc nhị diện lớn hơn 90°.
 
-<small>Hình nguồn SGK public bất biến: `docs/assets/images/thpt/FIG-G11-CHVII-B25-01_R00.svg`, Git blob `3f6112a7b12f1829ee2249b979d45f1f5370fc66`. Đọc nhãn và giả thiết; không suy độ dài bằng đo phối cảnh. Nếu không hiển thị SVG, lời dẫn ở trên vẫn tự đủ để lập luận.</small>
+*Nếu không hiển thị hình, hãy đọc lại mô tả bằng lời ở trên và tự dựng quan hệ theo giả thiết; không suy góc hay độ dài từ nét phối cảnh.*
+
+<!-- AUTHOR_ONLY_SVG_SOURCE: docs/assets/images/thpt/FIG-G11-CHVII-B25-01_R00.svg; BLOB: 3f6112a7b12f1829ee2249b979d45f1f5370fc66 -->
 
 #### 4.1. Góc giữa hai **mặt phẳng** được đo bằng góc nhỏ của hai đường lần lượt nằm trong hai mặt và cùng vuông góc giao tuyến; kết quả thuộc [0°,90°] khi xét mặt phẳng không định hướng
 
@@ -435,7 +446,7 @@ Có, theo định lí hai mặt phẳng vuông góc. a phải nằm trong (P) v�
 
 **Hình thành kiến thức:** Lăng trụ đứng có cạnh bên vuông góc hai đáy; chiều cao chính là cạnh bên. Lăng trụ đều có đáy đa giác đều và là lăng trụ đứng. Hộp chữ nhật/lập phương là các trường hợp đặc biệt.
 
-**Ví dụ có giải thích cách chọn phương pháp:** Lăng trụ đứng đáy diện tích 12 cm², cạnh bên 5 cm thì h=5 cm và thể tích 60 cm³; lăng trụ xiên không được lấy cạnh bên làm chiều cao.
+**Ví dụ có giải thích cách chọn phương pháp:** Một lăng trụ đứng có cạnh bên dài 5 cm thì cạnh bên là đoạn vuông góc nối hai mặt đáy song song, nên chiều cao đúng bằng 5 cm. Lăng trụ xiên vẫn có hai đáy song song nhưng cạnh bên nghiêng, vì vậy không được tự lấy cạnh bên làm chiều cao. Ở đây ta chỉ xác định quan hệ vuông góc; phép tính thể tích được học trong mạch Khoảng cách & Thể tích riêng.
 
 **Tự thử trước khi xem lời giải:** Lăng trụ đứng có cạnh bên 7 cm, chiều cao bao nhiêu?
 
@@ -798,7 +809,7 @@ Trong lập phương ABCD.A′B′C′D′ cạnh 5 cm, chứng minh AB và DD�
 
 <details><summary>Tự mở lời giải và rubric /4</summary>
 
-Trong hình lập phương, AB thuộc mặt đáy, DD′ là cạnh đứng không thuộc mặt đáy; AB và DD′ không cắt, không song song và không đồng phẳng nên chéo nhau. Vì DD′∥AA′ và AB⊥AA′, ta dựng qua A đường AA′ cùng phương DD′. Khi hai đường đại diện cùng đi qua A, góc giữa AB và DD′ chính là góc BAA′ = 90°. Dời phương, không dựa vào nét vẽ phối cảnh.
+Trong lập phương, AB và D cùng nằm ở mặt đáy (ABCD) nhưng D không thuộc AB. Nếu có mặt phẳng nào chứa cả AB và DD′ thì nó phải chứa A, B, D, tức chính là mặt đáy (ABCD); điều này không thể xảy ra vì D′ không nằm ở đáy. Vậy AB và DD′ không đồng phẳng (và không song song), nên chéo nhau. Qua A, đường AA′ song song DD′; vì AB⊥AA′, góc giữa AB và DD′ bằng góc BAA′ = 90°. Đó là cách dời *phương* về cùng điểm để đo góc, không dựa trên hình phối cảnh.
 
 **Rubric 4 điểm:**
 - Nêu đúng hai phương vuông góc — **1 điểm**.
