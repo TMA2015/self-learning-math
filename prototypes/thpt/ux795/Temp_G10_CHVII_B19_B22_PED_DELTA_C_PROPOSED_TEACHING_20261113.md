@@ -91,7 +91,7 @@
 
 **Lời giảng dự kiến:**
 
-> Hãy cố định hai chiếc đinh tại \(F_1,F_2\), buộc một vòng dây có tổng độ dài cố định rồi dùng bút kéo căng dây và di chuyển trên mặt giấy. Khi bút ở \(M\), hai đoạn từ bút đến đinh luôn có tổng độ dài bằng nhau: \(MF_1+MF_2=2a\). Vì thế đường bút vẽ ra là tập hợp các điểm có **tổng khoảng cách đến hai tiêu điểm không đổi**: một elip.
+> Hãy cố định hai chiếc đinh tại \(F_1,F_2\), buộc hai đầu của một sợi dây lần lượt vào hai đinh, rồi dùng đầu bút kéo dây căng và di chuyển trên mặt giấy. Khi bút ở \(M\), hai đoạn từ bút đến đinh luôn có tổng độ dài bằng nhau: \(MF_1+MF_2=2a\). Vì thế đường bút vẽ ra là tập hợp các điểm có **tổng khoảng cách đến hai tiêu điểm không đổi**: một elip.
 >
 > Nếu hai đinh cách nhau \(2c>0\), muốn vẽ được **một elip không suy biến** thì độ dài dây cần thỏa \(2a>2c\): bút phải có chỗ di chuyển ngoài đoạn nối hai đinh. Ví dụ, hai tiêu điểm ở \((-5,0)\), \((5,0)\) và tổng dây \(26\) đơn vị, ta có \(a=13,\ c=5\), rồi \(b^2=a^2-c^2=144\), suy ra \(b=12\). Phương trình elip trục lớn Ox là
 > \[
