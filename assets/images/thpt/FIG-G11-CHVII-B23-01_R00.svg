@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" role="img" aria-labelledby="title desc" width="900" height="500">
+<title id="title">FIG-G11-CHVII-B23-01: Hai đường cắt nhau đủ xác định pháp tuyến</title><desc id="desc">Cột AH vuông góc hai đường AB và AD cắt nhau ở A trong mặt P, nên AH vuông góc cả mặt P.</desc>
+<rect width="900" height="500" fill="#f8fafc" rx="18"/>
+<text x="450" y="42" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#0f172a">Hai đường cắt nhau đủ xác định pháp tuyến</text>
+<polygon points="210,355 590,355 710,225 330,225" fill="#dbeafe" fill-opacity="0.75" stroke="#64748b" stroke-width="3"/><text x="650" y="340" font-family="Arial" font-size="24" fill="#1d4ed8">(P)</text><path d="M335 275 L335 88" stroke="#dc2626" stroke-width="7"/><circle cx="335" cy="275" r="6" fill="#111827"/><text x="319" y="82" font-size="21">H</text><text x="310" y="302" font-size="21">A</text><path d="M335 275 L572 275" stroke="#1d4ed8" stroke-width="6"/><path d="M335 275 L255 344" stroke="#059669" stroke-width="6"/><text x="578" y="282" font-size="19">B</text><text x="236" y="360" font-size="19">D</text><path d="M350 276 V259 H335" fill="none" stroke="#dc2626" stroke-width="3"/><text x="82" y="406" font-size="19">AH ⟂ AB và AH ⟂ AD</text>
+<text x="450" y="476" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#475569">Sơ đồ phương và quan hệ; không suy độ dài/góc từ phối cảnh.</text>
+</svg>

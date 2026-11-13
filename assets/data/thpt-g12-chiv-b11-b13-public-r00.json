@@ -1,0 +1,1552 @@
+{
+  "packet_id": "G12-SGK-CHIV-B11-B13-R00",
+  "source_blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+  "receipt_blob": "feabeeeef262e7f6b28c898cdf77e6aa4194da24",
+  "mode": "CLIENT_SELF_CHECK_NO_MASTERY",
+  "items": [
+    {
+      "item_id": "THPT-G12-B11-C01",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O01",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "F(x)=2x^3-5x+7 có là nguyên hàm của f(x)=6x^2-5 trên R không?",
+      "answer": "Có.",
+      "solution": "F'(x)=6x^2-5=f(x) trên R. Giải thích chọn cách: Đạo hàm đáp án ứng viên để kiểm đúng f; không kiểm bằng cách thay một giá trị x."
+    },
+    {
+      "item_id": "THPT-G12-B11-P01",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O01",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Kiểm tra G(x)=x^3/3+x có phải nguyên hàm của g(x)=x^2+1.",
+      "answer": "Có.",
+      "solution": "G'(x)=x^2+1 trên R. Giải thích chọn cách: Đạo hàm đáp án ứng viên để kiểm đúng f; không kiểm bằng cách thay một giá trị x."
+    },
+    {
+      "item_id": "THPT-G12-B11-A01",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O01",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Mô hình vị trí s(t)=t^3+2t (m) với t>=0. Viết vận tốc v(t).",
+      "answer": "v(t)=3t^2+2 (m/s).",
+      "solution": "Lấy đạo hàm vị trí theo thời gian; v(t)=s'(t)=3t^2+2, t>=0."
+    },
+    {
+      "item_id": "THPT-G12-B11-W01",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O01",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Viết lời giải kiểm tra hai hàm F(x)=x^3-2x và G(x)=x^3-2x+6 có cùng là nguyên hàm của f(x)=3x^2-2 không.",
+      "answer": "Cả hai đúng; G-F=6.",
+      "solution": "F'=G'=3x^2-2; cùng trên R; G-F=hằng số 6.",
+      "rubric": [
+        "2đ tính đúng hai đạo hàm; 1đ đối chiếu f; 1đ xét chung khoảng R; 1đ kết luận hai hàm chênh hằng số."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B11-C02",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O02",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "Viết họ nguyên hàm của 4x trên R.",
+      "answer": "2x^2+C.",
+      "solution": "Vì (2x^2)'=4x nên họ là 2x^2+C."
+    },
+    {
+      "item_id": "THPT-G12-B11-P02",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O02",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "F'(x)=2x, F(2)=9. Tìm F.",
+      "answer": "F(x)=x^2+5.",
+      "solution": "F=x^2+C; 4+C=9 nên C=5. Giải thích chọn cách: Tích phân được F+C; thay x0 vào F+C; giải C; kiểm lại đạo hàm và điều kiện đầu."
+    },
+    {
+      "item_id": "THPT-G12-B11-A02",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O02",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Một vật có v(t)=4t (m/s), s(0)=6m. Viết vị trí s(t) cho t>=0.",
+      "answer": "s(t)=2t^2+6.",
+      "solution": "Từ s'=4t có s=2t^2+C; điều kiện s(0)=6 cho C=6."
+    },
+    {
+      "item_id": "THPT-G12-B11-W02",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O02",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Tìm F nếu F'(x)=6x và F(-1)=1; kiểm lại đầy đủ.",
+      "answer": "F(x)=3x^2-2.",
+      "solution": "F=3x^2+C; F(-1)=3+C=1 nên C=-2; đạo hàm 6x và giá trị tại -1 bằng 1.",
+      "rubric": [
+        "2đ lấy đúng họ nguyên hàm; 1đ lập điều kiện; 1đ giải C; 1đ kiểm lại cả hai điều kiện."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B11-C03",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O03",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "Tính ∫6x^2 dx.",
+      "answer": "2x^3+C.",
+      "solution": "Dùng n=2: 6·x^3/3=2x^3. Giải thích chọn cách: Tách đa thức thành các hạng tử, nâng số mũ một đơn vị, chia số mũ mới, rồi lấy đạo hàm kiểm."
+    },
+    {
+      "item_id": "THPT-G12-B11-P03",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O03",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Tính ∫(5x^4−4x+3)dx.",
+      "answer": "x^5−2x^2+3x+C.",
+      "solution": "Tách ba hạng tử, áp công thức lũy thừa và tuyến tính."
+    },
+    {
+      "item_id": "THPT-G12-B11-A03",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O03",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Một đại lượng có q'(t)=3t^2+2, q(0)=4. Viết q(t).",
+      "answer": "q(t)=t^3+2t+4.",
+      "solution": "Nguyên hàm t^3+2t+C, từ q(0)=4 được C=4."
+    },
+    {
+      "item_id": "THPT-G12-B11-W03",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O03",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "anchor_tag": true,
+      "level": "3",
+      "stem": "Giải đầy đủ ∫(2x^3+6x−2)dx và kiểm bằng đạo hàm.",
+      "answer": "x^4/2+3x^2−2x+C.",
+      "solution": "Từng hạng tử cho x^4/2,3x^2,−2x; lấy đạo hàm khôi phục 2x^3+6x−2.",
+      "rubric": [
+        "1đ nêu tuyến tính; 2đ tính ba hạng tử; 1đ +C; 1đ kiểm đạo hàm."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B11-C04",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O04",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "Tính ∫2/x dx trên x<0.",
+      "answer": "2ln|x|+C.",
+      "solution": "Dùng nguyên hàm ln|x| hợp lệ trên (−∞,0)."
+    },
+    {
+      "item_id": "THPT-G12-B11-P04",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O04",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Tính ∫(1/x+2x)dx trên x>0.",
+      "answer": "ln x+x^2+C.",
+      "solution": "Tính từng phần và ghi x>0. Giải thích chọn cách: Nhận diện 1/x, tách tuyến tính các hạng khác, ghi điều kiện x≠0 và lấy đạo hàm kiểm."
+    },
+    {
+      "item_id": "THPT-G12-B11-A04",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O04",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Biết F'(x)=3/x trên x>0, F(1)=2. Tính F(x).",
+      "answer": "3ln x+2.",
+      "solution": "F=3ln x+C; ln1=0 => C=2. Giải thích chọn cách: Nhận diện 1/x, tách tuyến tính các hạng khác, ghi điều kiện x≠0 và lấy đạo hàm kiểm."
+    },
+    {
+      "item_id": "THPT-G12-B11-W04",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O04",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Tính ∫(4/x−x^(−2))dx trên mỗi khoảng không chứa 0; kiểm đạo hàm.",
+      "answer": "4ln|x|+1/x+C.",
+      "solution": "∫−x^(−2)dx=+1/x; đạo hàm của 1/x là −1/x².",
+      "rubric": [
+        "1đ điều kiện x≠0; 2đ log và lũy thừa; 1đ +C; 1đ đạo hàm kiểm."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B11-C05",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O05",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "Tính ∫e^x dx.",
+      "answer": "e^x+C.",
+      "solution": "Vì đạo hàm e^x là e^x. Giải thích chọn cách: Tách hệ số rồi chia ln a nếu cơ số a không phải e."
+    },
+    {
+      "item_id": "THPT-G12-B11-P05",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O05",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Tính ∫2^x dx.",
+      "answer": "2^x/ln2+C.",
+      "solution": "(2^x)'=2^x ln2, vì vậy chia ln2."
+    },
+    {
+      "item_id": "THPT-G12-B11-A05",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O05",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Lượng chất có q'(t)=3e^t và q(0)=5. Viết q(t).",
+      "answer": "q(t)=3e^t+2.",
+      "solution": "q=3e^t+C; 3+C=5 => C=2. Giải thích chọn cách: Tách hệ số rồi chia ln a nếu cơ số a không phải e."
+    },
+    {
+      "item_id": "THPT-G12-B11-W05",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O05",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Giải ∫(2^x+3e^x)dx và kiểm đạo hàm.",
+      "answer": "2^x/ln2+3e^x+C.",
+      "solution": "Tách tuyến tính, phần 2^x phải chia ln2; kiểm bằng đạo hàm.",
+      "rubric": [
+        "1đ nêu a>0,a≠1; 2đ hai nguyên hàm đúng; 1đ hằng số; 1đ kiểm đạo hàm."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B11-C06",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O06",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "Tính ∫2cos x dx.",
+      "answer": "2sin x+C.",
+      "solution": "(2sin x)'=2cos x. Giải thích chọn cách: Tách hệ số, ghi dấu âm chính xác ở nguyên hàm sin, kiểm bằng đạo hàm lượng giác."
+    },
+    {
+      "item_id": "THPT-G12-B11-P06",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O06",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Tính ∫(3sin x−2cos x)dx.",
+      "answer": "−3cos x−2sin x+C.",
+      "solution": "Từng hạng tử; đạo hàm của −3cos x là +3sin x."
+    },
+    {
+      "item_id": "THPT-G12-B11-A06",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O06",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Vận tốc v(t)=2cos t, 0<=t<=π/2, vị trí s(0)=0. Viết s(t).",
+      "answer": "s(t)=2sin t.",
+      "solution": "s=2sin t+C; s(0)=0=>C=0. Giải thích chọn cách: Tách hệ số, ghi dấu âm chính xác ở nguyên hàm sin, kiểm bằng đạo hàm lượng giác."
+    },
+    {
+      "item_id": "THPT-G12-B11-W06",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O06",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "anchor_tag": true,
+      "level": "3",
+      "stem": "Tính ∫(1/cos²x+2sin x)dx trên khoảng cosx≠0; kiểm bằng đạo hàm.",
+      "answer": "tan x−2cos x+C.",
+      "solution": "Dùng (tan x)'=sec²x và d(−2cos x)=2sin x.",
+      "rubric": [
+        "1đ điều kiện cosx≠0; 2đ hai nguyên hàm; 1đ +C; 1đ kiểm đạo hàm."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B11-C07",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O07",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "Cho s'(t)=6t và s(0)=3, tìm s(t).",
+      "answer": "s(t)=3t²+3.",
+      "solution": "Nguyên hàm 6t là 3t²+C, C=3. Giải thích chọn cách: Đọc đúng đạo hàm, nguyên hàm, chọn C theo trạng thái ban đầu, kiểm thứ nguyên."
+    },
+    {
+      "item_id": "THPT-G12-B11-P07",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O07",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Cho v(t)=4t³ và s(1)=5. Tìm s(t).",
+      "answer": "s(t)=t⁴+4.",
+      "solution": "s=t⁴+C; 1+C=5 => C=4. Giải thích chọn cách: Đọc đúng đạo hàm, nguyên hàm, chọn C theo trạng thái ban đầu, kiểm thứ nguyên."
+    },
+    {
+      "item_id": "THPT-G12-B11-A07",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O07",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Một vật có a(t)=6t, v(0)=2, s(0)=1. Viết v(t), s(t).",
+      "answer": "v(t)=3t²+2; s(t)=t³+2t+1.",
+      "solution": "Hai lần nguyên hàm; mỗi lần dùng điều kiện đầu riêng."
+    },
+    {
+      "item_id": "THPT-G12-B11-W07",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O07",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Lợi nhuận biên P'(x)=12x²−4, P(0)=100. Tìm P(x), nêu đơn vị phù hợp nếu P tính bằng nghìn đồng.",
+      "answer": "P(x)=4x³−4x+100 (nghìn đồng).",
+      "solution": "P=4x³−4x+C; C=100; P' đúng, P(0)=100.",
+      "rubric": [
+        "1đ đọc P' đúng; 2đ nguyên hàm; 1đ điều kiện đầu; 1đ kiểm đơn vị và đạo hàm."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B12-C01",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O01",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "Tính ∫_0^2 2x dx.",
+      "answer": "4.",
+      "solution": "F=x²; F(2)−F(0)=4. Giải thích chọn cách: Tìm nguyên hàm F, thế cận b trước a, rút gọn; kiểm bằng ước lượng dấu."
+    },
+    {
+      "item_id": "THPT-G12-B12-P01",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O01",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Tính ∫_1^3 x² dx.",
+      "answer": "26/3.",
+      "solution": "F=x³/3; F(3)−F(1)=9−1/3=26/3. Giải thích chọn cách: Tìm nguyên hàm F, thế cận b trước a, rút gọn; kiểm bằng ước lượng dấu."
+    },
+    {
+      "item_id": "THPT-G12-B12-A01",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O01",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Vận tốc v(t)=3t² m/s, 0<=t<=2. Tính độ dời.",
+      "answer": "8 m.",
+      "solution": "∫_0^2 3t²dt=[t³]_0²=8 m; vận tốc không âm nên bằng quãng đường."
+    },
+    {
+      "item_id": "THPT-G12-B12-W01",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O01",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Tính ∫_{−1}^2 (2x+1)dx và giải thích vì sao kết quả không có +C.",
+      "answer": "6.",
+      "solution": "F=x²+x; F(2)=6; F(−1)=0; tích phân xác định là số 6.",
+      "rubric": [
+        "1đ chọn F đúng; 1đ ghi F(b)−F(a); 2đ thế cận và tính; 1đ nêu không có +C."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B12-C02",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O02",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "Tính ∫_0^1 (2x+3)dx.",
+      "answer": "4.",
+      "solution": "F=x²+3x; F(1)−F(0)=4. Giải thích chọn cách: Phân phối rồi dùng nguyên hàm từng hạng tử, chỉ thế cận một lần khi đã tổng hợp F."
+    },
+    {
+      "item_id": "THPT-G12-B12-P02",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O02",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Tính ∫_0^2 (3x²−2)dx.",
+      "answer": "4.",
+      "solution": "F=x³−2x; tại 2 cho 8−4=4. Giải thích chọn cách: Phân phối rồi dùng nguyên hàm từng hạng tử, chỉ thế cận một lần khi đã tổng hợp F."
+    },
+    {
+      "item_id": "THPT-G12-B12-A02",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O02",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Nhu cầu r(t)=4+2t đơn vị/giờ, 0<=t<=1. Lượng tích lũy?",
+      "answer": "5 đơn vị.",
+      "solution": "∫_0^1 (4+2t)dt=[4t+t²]_0^1=5. Giải thích chọn cách: Phân phối rồi dùng nguyên hàm từng hạng tử, chỉ thế cận một lần khi đã tổng hợp F."
+    },
+    {
+      "item_id": "THPT-G12-B12-W02",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O02",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Giải ∫_1^2 (6x²−4x+1)dx bằng tính tuyến tính; kiểm kết quả.",
+      "answer": "9.",
+      "solution": "F=2x³−2x²+x, F(2)=10 và F(1)=1 =>9.",
+      "rubric": [
+        "1đ nêu tính tuyến tính; 2đ F đúng; 1đ thế hai cận; 1đ kiểm phép tính."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B12-C03",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O03",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "Biết ∫_1^3 f=5 và ∫_3^5 f=−2. Tính ∫_1^5 f.",
+      "answer": "3.",
+      "solution": "Ghép đoạn: 5+(−2)=3. Giải thích chọn cách: Vẽ trục cận theo thứ tự, ghép hoặc trừ đúng lượng, kiểm chiều dấu."
+    },
+    {
+      "item_id": "THPT-G12-B12-P03",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O03",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Biết ∫_0^2 f=7 và ∫_0^5 f=9. Tính ∫_2^5 f.",
+      "answer": "2.",
+      "solution": "∫_2^5=∫_0^5−∫_0^2=9−7=2. Giải thích chọn cách: Vẽ trục cận theo thứ tự, ghép hoặc trừ đúng lượng, kiểm chiều dấu."
+    },
+    {
+      "item_id": "THPT-G12-B12-A03",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O03",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Độ dời 0–2 s là 4 m, 2–4 s là −6 m. Tính độ dời tổng và ý nghĩa dấu.",
+      "answer": "−2 m.",
+      "solution": "Cộng đại số 4−6=−2: vị trí cuối lùi 2m so với đầu."
+    },
+    {
+      "item_id": "THPT-G12-B12-W03",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O03",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "anchor_tag": true,
+      "level": "3",
+      "stem": "Cho ∫_{−1}^1 f=5 và ∫_1^4 f=−3. Tính ∫_4^{−1} f.",
+      "answer": "−2.",
+      "solution": "∫_{−1}^4 f=5−3=2; đảo cận được −2.",
+      "rubric": [
+        "1đ ghép hai đoạn; 1đ cộng đúng dấu; 1đ dùng đảo cận; 1đ kết quả; 1đ giải thích dấu."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B12-C04",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O04",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "Diện tích dưới y=x trên [0,2] là bao nhiêu?",
+      "answer": "2 đơn vị².",
+      "solution": "Hàm không âm; S=∫_0^2 xdx=[x²/2]_0²=2."
+    },
+    {
+      "item_id": "THPT-G12-B12-P04",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O04",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Tính diện tích dưới y=2−x trên [0,2].",
+      "answer": "2 đơn vị².",
+      "solution": "2−x≥0, S=[2x−x²/2]_0²=4−2=2. Giải thích chọn cách: Kiểm dấu hàm trước khi tích phân; dựng hình/thấy giao điểm với Ox, lấy cận đúng."
+    },
+    {
+      "item_id": "THPT-G12-B12-A04",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O04",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Độ cao y=1+x (m) và bề rộng biến x∈[0,2] (m). Tính diện tích phần dưới đồ thị.",
+      "answer": "4 m².",
+      "solution": "S=∫_0²(1+x)dx=[x+x²/2]_0²=4. Giải thích chọn cách: Kiểm dấu hàm trước khi tích phân; dựng hình/thấy giao điểm với Ox, lấy cận đúng."
+    },
+    {
+      "item_id": "THPT-G12-B12-W04",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O04",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Tính diện tích giữa y=4−x² và Ox từ x=0 đến x=2, kèm kiểm dấu.",
+      "answer": "16/3 đơn vị².",
+      "solution": "4−x²≥0 trên [0,2], S=[4x−x³/3]_0²=8−8/3=16/3.",
+      "rubric": [
+        "1đ chứng minh không âm; 1đ viết tích phân; 2đ nguyên hàm và cận; 1đ đơn vị/kết luận."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B12-C05",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O05",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "Tính diện tích giữa y=x và trục Ox trên [−2,2].",
+      "answer": "4 đơn vị².",
+      "solution": "Chia tại x=0: ∫_{−2}^0(−x)dx+∫_0^2 xdx=2+2=4."
+    },
+    {
+      "item_id": "THPT-G12-B12-P05",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O05",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Diện tích giữa y=x−1 và Ox trên [0,2]?",
+      "answer": "1 đơn vị².",
+      "solution": "Chia tại x=1: hai tam giác mỗi diện tích 1/2, tổng 1."
+    },
+    {
+      "item_id": "THPT-G12-B12-A05",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O05",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Vật có v(t)=t−2 m/s, t∈[0,4]. Tính độ dời và quãng đường.",
+      "answer": "Độ dời 0 m; quãng đường 4 m.",
+      "solution": "∫_0⁴(t−2)dt=0; chia tại t=2, ∫|t−2|=2+2=4."
+    },
+    {
+      "item_id": "THPT-G12-B12-W05",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O05",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Diện tích giữa y=x²−1 và Ox trên [−2,2] là bao nhiêu?",
+      "answer": "4 đơn vị².",
+      "solution": "Nghiệm ±1; hai vùng ngoài tổng 8/3, vùng giữa 4/3; S=4.",
+      "rubric": [
+        "1đ nghiệm và bảng dấu; 1đ chia tích phân; 2đ tính từng phần; 1đ cộng và phân biệt tích phân có dấu."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B12-C06",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O06",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "Tính ∫_0^{ln 2} e^x dx.",
+      "answer": "1.",
+      "solution": "[e^x]_0^{ln2}=2−1=1. Giải thích chọn cách: Giữ π, e, ln2 dạng chính xác đến kết quả cuối; không tự quy đổi radian thành độ."
+    },
+    {
+      "item_id": "THPT-G12-B12-P06",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O06",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Tính ∫_0^π cos x dx.",
+      "answer": "0.",
+      "solution": "[sin x]_0^π=0. Giải thích chọn cách: Giữ π, e, ln2 dạng chính xác đến kết quả cuối; không tự quy đổi radian thành độ."
+    },
+    {
+      "item_id": "THPT-G12-B12-A06",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O06",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Tốc độ r(t)=2e^t đơn vị/giờ trên [0,ln2]. Lượng tăng?",
+      "answer": "2 đơn vị.",
+      "solution": "∫_0^{ln2}2e^tdt=2(2−1)=2. Giải thích chọn cách: Giữ π, e, ln2 dạng chính xác đến kết quả cuối; không tự quy đổi radian thành độ."
+    },
+    {
+      "item_id": "THPT-G12-B12-W06",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O06",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "anchor_tag": true,
+      "level": "3",
+      "stem": "Tính ∫_0^{π/2}(2cos x+sin x)dx bằng nguyên hàm; giải rõ cận.",
+      "answer": "3.",
+      "solution": "F=2sin x−cos x; F(π/2)=2, F(0)=−1 =>3.",
+      "rubric": [
+        "1đ nêu điều kiện liên tục; 2đ nguyên hàm; 1đ thế cận; 1đ kết quả/chính xác."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B12-C07",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O07",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "Vận tốc v(t)=2t+1 m/s trong 0≤t≤3. Tính độ dời.",
+      "answer": "12 m.",
+      "solution": "∫_0³(2t+1)dt=[t²+t]_0³=9+3=12."
+    },
+    {
+      "item_id": "THPT-G12-B12-P07",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O07",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Vận tốc v=t² trên [1,2] s. Tính quãng đường.",
+      "answer": "7/3 m (nếu v đo m/s).",
+      "solution": "v≥0 nên ∫_1² t²dt=(8−1)/3=7/3."
+    },
+    {
+      "item_id": "THPT-G12-B12-A07",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O07",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Sản lượng tăng với q'(t)=4+3t² (sản phẩm/giờ), t=0..2 giờ. Lượng tăng?",
+      "answer": "16 sản phẩm.",
+      "solution": "∫_0²(4+3t²)dt=[4t+t³]_0²=8+8=16."
+    },
+    {
+      "item_id": "THPT-G12-B12-W07",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O07",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "a(t)=4m/s², v(0)=−3m/s, s(0)=2m. Tìm độ dời trong [0,2]s, giải thích tại sao không được coi là quãng đường.",
+      "answer": "Độ dời 2m.",
+      "solution": "v(t)=4t−3; ∫_0²vdt=[2t²−3t]_0²=8−6=2m. Vì v đổi dấu ở t=3/4 nên quãng đường >|2m|.",
+      "rubric": [
+        "1đ tìm v(t); 1đ tìm thời điểm đổi dấu; 2đ tính tích phân; 1đ nêu phân biệt độ dời và quãng đường."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B13-C01",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O01",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "Diện tích dưới y=x² trên [0,2]?",
+      "answer": "8/3 đơn vị².",
+      "solution": "S=∫_0²x²dx=8/3. Giải thích chọn cách: Kiểm dấu, ghi miền hình, lập cận, tích phân và nêu đơn vị."
+    },
+    {
+      "item_id": "THPT-G12-B13-P01",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O01",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Diện tích dưới y=3x trên [0,2]?",
+      "answer": "6 đơn vị².",
+      "solution": "S=[3x²/2]_0²=6. Giải thích chọn cách: Kiểm dấu, ghi miền hình, lập cận, tích phân và nêu đơn vị."
+    },
+    {
+      "item_id": "THPT-G12-B13-A01",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O01",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Một mép đất có chiều cao y=2+x (m) trên x từ 0 tới 3 (m). Diện tích dưới mép?",
+      "answer": "21/2 m².",
+      "solution": "∫_0³(2+x)dx=6+9/2=21/2. Giải thích chọn cách: Kiểm dấu, ghi miền hình, lập cận, tích phân và nêu đơn vị."
+    },
+    {
+      "item_id": "THPT-G12-B13-W01",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O01",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Tính diện tích hình giới hạn bởi y=9−x², Ox, x=0 và x=3; kiểm dấu.",
+      "answer": "18 đơn vị².",
+      "solution": "9−x²≥0 trên [0,3]; S=[9x−x³/3]_0³=27−9=18.",
+      "rubric": [
+        "1đ chứng minh dấu; 1đ mô tả hình/cận; 2đ tích phân; 1đ đơn vị/kết luận."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B13-C02",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O02",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "Tính diện tích giữa y=x và Ox trên [−2,2].",
+      "answer": "4 đơn vị².",
+      "solution": "Hai tam giác hai bên mỗi diện tích2; tổng4."
+    },
+    {
+      "item_id": "THPT-G12-B13-P02",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O02",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Tính diện tích giữa y=x−2 và Ox trên [0,4].",
+      "answer": "4 đơn vị².",
+      "solution": "Chia tại x=2, mỗi tam giác có diện tích2."
+    },
+    {
+      "item_id": "THPT-G12-B13-A02",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O02",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Diện tích giữa y=2x−2 và Ox trên [0,2]?",
+      "answer": "2 đơn vị².",
+      "solution": "Chia tại x=1: hai tam giác mỗi1."
+    },
+    {
+      "item_id": "THPT-G12-B13-W02",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O02",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Diện tích giữa y=x²−4 và Ox trên [−3,3] là bao nhiêu?",
+      "answer": "46/3 đơn vị².",
+      "solution": "Nghiệm ±2; ngoài [−3,−2],[2,3] mỗi phần7/3; giữa [−2,2] là32/3; tổng46/3.",
+      "rubric": [
+        "1đ nghiệm/đổi dấu; 1đ chia ba đoạn; 2đ tích phân mỗi vùng; 1đ cộng kết quả đúng."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B13-C03",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O03",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "Diện tích giữa y=2x và y=x trên [0,2]?",
+      "answer": "2 đơn vị².",
+      "solution": "Lấy trên−dưới=x; ∫_0²x dx=2. Giải thích chọn cách: Lấy hiệu độ cao (trên−dưới), tích phân theo x, kiểm S≥0."
+    },
+    {
+      "item_id": "THPT-G12-B13-P03",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O03",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Diện tích giữa y=4 và y=x² trên [−2,2]?",
+      "answer": "32/3 đơn vị².",
+      "solution": "4≥x², S=∫_{−2}²(4−x²)dx=16−16/3=32/3."
+    },
+    {
+      "item_id": "THPT-G12-B13-A03",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O03",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Hai biên y=3x+1 và y=x+1, x từ0 đến3. Tính diện tích giữa chúng.",
+      "answer": "9 đơn vị².",
+      "solution": "Hiệu 2x≥0; ∫_0³2x dx=9. Giải thích chọn cách: Lấy hiệu độ cao (trên−dưới), tích phân theo x, kiểm S≥0."
+    },
+    {
+      "item_id": "THPT-G12-B13-W03",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O03",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "anchor_tag": true,
+      "level": "3",
+      "stem": "Diện tích giữa y=x+3 và y=x²+1 trên [0,2]?",
+      "answer": "10/3 đơn vị².",
+      "solution": "Hiệu trên−dưới=−x²+x+2≥0 trong [0,2]; tích phân [−x³/3+x²/2+2x]_0²=10/3.",
+      "rubric": [
+        "1đ nhận diện đường trên; 1đ kiểm hiệu≥0; 2đ tích phân; 1đ đơn vị/kết luận."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B13-C04",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O04",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "Diện tích giữa y=x và y=x² trên [0,1]?",
+      "answer": "1/6 đơn vị².",
+      "solution": "S=∫_0¹(x−x²)dx=1/6. Giải thích chọn cách: Giải giao điểm, sắp xếp cận, thử dấu từng khoảng rồi tích phân phần dương."
+    },
+    {
+      "item_id": "THPT-G12-B13-P04",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O04",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Diện tích giữa y=2x và y=x² trên [0,2]?",
+      "answer": "4/3 đơn vị².",
+      "solution": "2x≥x²; ∫_0²(2x−x²)dx=4−8/3=4/3."
+    },
+    {
+      "item_id": "THPT-G12-B13-A04",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O04",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Tính diện tích giữa y=x² và y=2−x² trên [−1,1].",
+      "answer": "8/3 đơn vị².",
+      "solution": "Hai đồ thị giao ở ±1, trên là 2−x²; S=∫_{−1}¹(2−2x²)dx=8/3."
+    },
+    {
+      "item_id": "THPT-G12-B13-W04",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O04",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Tính diện tích giữa y=x và y=x³ từ x=−1 đến1; chỉ rõ đoạn đổi thứ tự.",
+      "answer": "1/2 đơn vị².",
+      "solution": "Giao tại −1,0,1; trên [-1,0] x³≥x, trên [0,1] x≥x³; mỗi vùng1/4, tổng1/2.",
+      "rubric": [
+        "1đ giao điểm; 1đ thứ tự theo đoạn; 2đ hai tích phân; 1đ tổng S."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B13-C05",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O05",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "Độ cao y=x+1 cm, 0≤x≤2 cm. Diện tích dưới đồ thị?",
+      "answer": "4 cm².",
+      "solution": "S=∫_0²(x+1)dx=4; đơn vị cm². Giải thích chọn cách: Nêu biến x và đơn vị, mô tả hai cận, xét h≥0, rồi tính số và thứ nguyên."
+    },
+    {
+      "item_id": "THPT-G12-B13-P05",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O05",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Một miền có chiều cao y=2x−1 m và x từ0 tới1 m. Tính diện tích hình học (không phải tích phân có dấu).",
+      "answer": "1/2 m².",
+      "solution": "Cắt trục ở x=1/2; hai tam giác mỗi có diện tích1/4, tổng1/2."
+    },
+    {
+      "item_id": "THPT-G12-B13-A05",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O05",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Độ cao bờ đất h(x)=100−10x m, 0≤x≤5 m. Diện tích mặt cắt?",
+      "answer": "375 m².",
+      "solution": "S=∫_0⁵(100−10x)dx=[100x−5x²]_0⁵=500−125=375m²."
+    },
+    {
+      "item_id": "THPT-G12-B13-W05",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O05",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Một đoạn đất có biên y=√x (m) từ x=0 đến4 (m). Tính diện tích, nêu công thức và đơn vị.",
+      "answer": "16/3 m².",
+      "solution": "h≥0; S=∫_0⁴√x dx=[(2/3)x^(3/2)]_0⁴=(2/3)·8=16/3 m².",
+      "rubric": [
+        "1đ nêu biến/cận đơn vị; 1đ h≥0; 2đ nguyên hàm; 1đ kết luận m²."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B13-C06",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O06",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "Khối có S(x)=x² cm², x∈[0,3] cm. Tính V.",
+      "answer": "9 cm³.",
+      "solution": "V=∫_0³x²dx=[x³/3]_0³=9. Giải thích chọn cách: Xác định hình cắt, tính S(x) đúng hình học, tích phân theo chiều dài."
+    },
+    {
+      "item_id": "THPT-G12-B13-P06",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O06",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Khối có mặt cắt S(x)=2+x m² từ0 tới2m. Thể tích?",
+      "answer": "6 m³.",
+      "solution": "V=∫_0²(2+x)dx=4+2=6. Giải thích chọn cách: Xác định hình cắt, tính S(x) đúng hình học, tích phân theo chiều dài."
+    },
+    {
+      "item_id": "THPT-G12-B13-A06",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O06",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Vật có mặt cắt S(x)=4−x² cm², 0≤x≤2cm. Tính V.",
+      "answer": "16/3 cm³.",
+      "solution": "S≥0; V=∫_0²(4−x²)dx=8−8/3=16/3."
+    },
+    {
+      "item_id": "THPT-G12-B13-W06",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O06",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "anchor_tag": true,
+      "level": "3",
+      "stem": "Các lát cắt vuông góc Ox là hình vuông cạnh (x+1) cm với x∈[0,2] cm. Tính V.",
+      "answer": "26/3 cm³.",
+      "solution": "S(x)=(x+1)² cm²; V=∫_0²(x+1)²dx=[(x+1)³/3]_0²=(27−1)/3=26/3.",
+      "rubric": [
+        "1đ mô tả lát cắt; 1đ biểu thức S đúng; 2đ tích phân; 1đ đơn vị/kết luận."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B13-C07",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O07",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "Lát cắt tròn có r(x)=x (cm) với0≤x≤1. Tính V.",
+      "answer": "π/3 cm³.",
+      "solution": "S=πx²; V=π[x³/3]_0¹=π/3. Giải thích chọn cách: Đổi đường kính→bán kính nếu cần, bình phương r trước khi tích phân; giữ π chính xác."
+    },
+    {
+      "item_id": "THPT-G12-B13-P07",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O07",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Lát cắt tròn có r=2x cm trên[0,2]cm. Tính V.",
+      "answer": "32π/3 cm³.",
+      "solution": "V=π∫_0²4x²dx=4π·8/3=32π/3. Giải thích chọn cách: Đổi đường kính→bán kính nếu cần, bình phương r trước khi tích phân; giữ π chính xác."
+    },
+    {
+      "item_id": "THPT-G12-B13-A07",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O07",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Khối có r(x)=√x cm, x∈[0,4]cm. Tính thể tích.",
+      "answer": "8π cm³.",
+      "solution": "r²=x; V=π∫_0⁴x dx=8π. Giải thích chọn cách: Đổi đường kính→bán kính nếu cần, bình phương r trước khi tích phân; giữ π chính xác."
+    },
+    {
+      "item_id": "THPT-G12-B13-W07",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O07",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Lát cắt có đường kính d(x)=2x+2 (cm), x∈[0,1] cm. Tính V, nêu kiểm tra đổi đường kính.",
+      "answer": "7π/3 cm³.",
+      "solution": "r=d/2=x+1; V=π∫_0¹(x+1)²dx=7π/3.",
+      "rubric": [
+        "1đ đổi d thành r; 1đ S=πr²; 2đ tích phân; 1đ đơn vị/kết luận."
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B13-C08",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O08",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "Quay miền dưới y=x, x∈[0,2] quanh Ox. Tính V.",
+      "answer": "8π/3 đơn vị³.",
+      "solution": "V=π∫_0²x²dx=8π/3. Giải thích chọn cách: Xác định trục quay, bán kính tại x là |f(x)|, tính π∫f², kiểm thể tích không âm."
+    },
+    {
+      "item_id": "THPT-G12-B13-P08",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O08",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Quay miền dưới y=√x, x∈[0,4] quanh Ox. Tính V.",
+      "answer": "8π đơn vị³.",
+      "solution": "V=π∫_0⁴x dx=8π. Giải thích chọn cách: Xác định trục quay, bán kính tại x là |f(x)|, tính π∫f², kiểm thể tích không âm."
+    },
+    {
+      "item_id": "THPT-G12-B13-A08",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O08",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Miền dưới y=2x trên[0,1] quay quanh Ox. Tính thể tích.",
+      "answer": "4π/3 đơn vị³.",
+      "solution": "V=π∫_0¹4x²dx=4π/3. Giải thích chọn cách: Xác định trục quay, bán kính tại x là |f(x)|, tính π∫f², kiểm thể tích không âm."
+    },
+    {
+      "item_id": "THPT-G12-B13-W08",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O08",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Quay miền dưới y=√(4−x²) từ x=0 tới2 quanh Ox. Tính V và nêu ý nghĩa hình học.",
+      "answer": "16π/3 đơn vị³.",
+      "solution": "V=π∫_0²(4−x²)dx=π(8−8/3)=16π/3; là nửa thể tích khối cầu bán kính2.",
+      "rubric": [
+        "1đ xác định r(x); 1đ công thức π∫r²; 2đ tích phân; 1đ nhận xét hình học và đơn vị."
+      ]
+    }
+  ],
+  "help": [
+    {
+      "help_id": "HELP-G12-B11-01",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O01",
+      "steps": [
+        "**Nhận ra lỗi:** Đạo hàm nhầm x^3 thành 3x hoặc kiểm thử tại một điểm rồi kết luận mọi x.",
+        "**Trở về tiền đề:** Đạo hàm đa thức, quy tắc đạo hàm tổng và tích với hằng số.",
+        "**Ví dụ sửa nhỏ:** Bài chữa nhanh: d(x^5-2x)/dx=5x^4-2; tự kiểm d(3x^2+1)/dx=6x, sau đó quay lại CORE C01. Lỗi cần tránh sau khi tự sửa: Đạo hàm nhầm x^3 thành 3x hoặc kiểm thử tại một điểm rồi kết luận mọi x.",
+        "**Làm lại có dẫn:** tự nói lại phương pháp: Đạo hàm đáp án ứng viên để kiểm đúng f; không kiểm bằng cách thay một giá trị x.",
+        "**Quay về cùng outcome:** làm lại `THPT-G12-B11-C01` hoặc bài `THPT-G12-B11-P01`, không nhận PASS chỉ vì đã xem lời giải."
+      ],
+      "return_item": "THPT-G12-B11-C01",
+      "practice_item": "THPT-G12-B11-P01"
+    },
+    {
+      "help_id": "HELP-G12-B11-02",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O02",
+      "steps": [
+        "**Nhận ra lỗi:** Quên +C hoặc xem mọi nguyên hàm đều bằng đúng F không có độ dịch.",
+        "**Trở về tiền đề:** Đạo hàm hằng số bằng 0; nghiệm phương trình tuyến tính đơn giản.",
+        "**Ví dụ sửa nhỏ:** Ví dụ chữa: G'=2x, G(0)=5 => G=x^2+5; tự thử H'=4x,H(0)=3 => H=2x^2+3; quay lại C02. Lỗi cần tránh sau khi tự sửa: Quên +C hoặc xem mọi nguyên hàm đều bằng đúng F không có độ dịch.",
+        "**Làm lại có dẫn:** tự nói lại phương pháp: Tích phân được F+C; thay x0 vào F+C; giải C; kiểm lại đạo hàm và điều kiện đầu.",
+        "**Quay về cùng outcome:** làm lại `THPT-G12-B11-C02` hoặc bài `THPT-G12-B11-P02`, không nhận PASS chỉ vì đã xem lời giải."
+      ],
+      "return_item": "THPT-G12-B11-C02",
+      "practice_item": "THPT-G12-B11-P02"
+    },
+    {
+      "help_id": "HELP-G12-B11-03",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O03",
+      "steps": [
+        "**Nhận ra lỗi:** Áp quy tắc lũy thừa n=-1 gây chia 0; quên chia cho số mũ mới.",
+        "**Trở về tiền đề:** Đạo hàm x^(n+1)=(n+1)x^n, phép biến đổi tổng.",
+        "**Ví dụ sửa nhỏ:** Chữa nhanh ∫4x^3dx=x^4+C (vì đạo hàm x^4=4x^3); thử ∫2x dx=x^2+C; về C03. Lỗi cần tránh sau khi tự sửa: Áp quy tắc lũy thừa n=-1 gây chia 0; quên chia cho số mũ mới.",
+        "**Làm lại có dẫn:** tự nói lại phương pháp: Tách đa thức thành các hạng tử, nâng số mũ một đơn vị, chia số mũ mới, rồi lấy đạo hàm kiểm.",
+        "**Quay về cùng outcome:** làm lại `THPT-G12-B11-C03` hoặc bài `THPT-G12-B11-P03`, không nhận PASS chỉ vì đã xem lời giải."
+      ],
+      "return_item": "THPT-G12-B11-C03",
+      "practice_item": "THPT-G12-B11-P03"
+    },
+    {
+      "help_id": "HELP-G12-B11-04",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O04",
+      "steps": [
+        "**Nhận ra lỗi:** Viết ln x cho x âm hoặc áp 1/(n+1) với n=−1.",
+        "**Trở về tiền đề:** Đạo hàm ln|x|=1/x khi x≠0.",
+        "**Ví dụ sửa nhỏ:** Chữa: (ln|x|)'=1/x (x≠0); (−1/x)'=1/x². Thử ∫(1/x−1/x²)dx=ln|x|+1/x+C, về C04. Lỗi cần tránh sau khi tự sửa: Viết ln x cho x âm hoặc áp 1/(n+1) với n=−1.",
+        "**Làm lại có dẫn:** tự nói lại phương pháp: Nhận diện 1/x, tách tuyến tính các hạng khác, ghi điều kiện x≠0 và lấy đạo hàm kiểm.",
+        "**Quay về cùng outcome:** làm lại `THPT-G12-B11-C04` hoặc bài `THPT-G12-B11-P04`, không nhận PASS chỉ vì đã xem lời giải."
+      ],
+      "return_item": "THPT-G12-B11-C04",
+      "practice_item": "THPT-G12-B11-P04"
+    },
+    {
+      "help_id": "HELP-G12-B11-05",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O05",
+      "steps": [
+        "**Nhận ra lỗi:** Nhầm ∫2^x dx=2^x+C (thiếu 1/ln2).",
+        "**Trở về tiền đề:** (e^x)'=e^x, (a^x)'=a^x ln a.",
+        "**Ví dụ sửa nhỏ:** Chữa: d(5^x/ln5)/dx=5^x; tự thử ∫3^x dx=3^x/ln3+C rồi về C05. Lỗi cần tránh sau khi tự sửa: Nhầm ∫2^x dx=2^x+C (thiếu 1/ln2).",
+        "**Làm lại có dẫn:** tự nói lại phương pháp: Tách hệ số rồi chia ln a nếu cơ số a không phải e.",
+        "**Quay về cùng outcome:** làm lại `THPT-G12-B11-C05` hoặc bài `THPT-G12-B11-P05`, không nhận PASS chỉ vì đã xem lời giải."
+      ],
+      "return_item": "THPT-G12-B11-C05",
+      "practice_item": "THPT-G12-B11-P05"
+    },
+    {
+      "help_id": "HELP-G12-B11-06",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O06",
+      "steps": [
+        "**Nhận ra lỗi:** Quên dấu âm của nguyên hàm sin hoặc viết tan x trên đoạn đi qua cosx=0.",
+        "**Trở về tiền đề:** (sin x)'=cos x, (cos x)'=−sin x, (tan x)'=1/cos²x.",
+        "**Ví dụ sửa nhỏ:** Chữa: (−cosx)'=sinx; (tanx)'=1/cos²x; thử ∫sinx dx=−cosx+C rồi về C06. Lỗi cần tránh sau khi tự sửa: Quên dấu âm của nguyên hàm sin hoặc viết tan x trên đoạn đi qua cosx=0.",
+        "**Làm lại có dẫn:** tự nói lại phương pháp: Tách hệ số, ghi dấu âm chính xác ở nguyên hàm sin, kiểm bằng đạo hàm lượng giác.",
+        "**Quay về cùng outcome:** làm lại `THPT-G12-B11-C06` hoặc bài `THPT-G12-B11-P06`, không nhận PASS chỉ vì đã xem lời giải."
+      ],
+      "return_item": "THPT-G12-B11-C06",
+      "practice_item": "THPT-G12-B11-P06"
+    },
+    {
+      "help_id": "HELP-G12-B11-07",
+      "lesson_id": "B11",
+      "outcome_id": "G12-CHIV-B11-O07",
+      "steps": [
+        "**Nhận ra lỗi:** Dùng gia tốc trực tiếp làm vị trí hoặc quên hai điều kiện đầu khi tích phân hai lần.",
+        "**Trở về tiền đề:** Vận tốc s'=v, gia tốc v'=a, đơn vị thời gian và điều kiện đầu.",
+        "**Ví dụ sửa nhỏ:** Chữa: nếu a(t)=2, v(0)=3, s(0)=5 thì v=2t+3, s=t²+3t+5. Tự kiểm đạo hàm hai lần; về C07. Lỗi cần tránh sau khi tự sửa: Dùng gia tốc trực tiếp làm vị trí hoặc quên hai điều kiện đầu khi tích phân hai lần.",
+        "**Làm lại có dẫn:** tự nói lại phương pháp: Đọc đúng đạo hàm, nguyên hàm, chọn C theo trạng thái ban đầu, kiểm thứ nguyên.",
+        "**Quay về cùng outcome:** làm lại `THPT-G12-B11-C07` hoặc bài `THPT-G12-B11-P07`, không nhận PASS chỉ vì đã xem lời giải."
+      ],
+      "return_item": "THPT-G12-B11-C07",
+      "practice_item": "THPT-G12-B11-P07"
+    },
+    {
+      "help_id": "HELP-G12-B12-01",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O01",
+      "steps": [
+        "**Nhận ra lỗi:** Tính F(a)−F(b) (đảo dấu) hoặc giữ +C ở kết quả xác định.",
+        "**Trở về tiền đề:** Hàm liên tục trên đoạn và nguyên hàm F trên đoạn.",
+        "**Ví dụ sửa nhỏ:** Chữa: ∫_0^1 4x dx=[2x²]_0^1=2; tự thử ∫_1^2 2x dx=3, rồi về C01. Lỗi cần tránh sau khi tự sửa: Tính F(a)−F(b) (đảo dấu) hoặc giữ +C ở kết quả xác định.",
+        "**Làm lại có dẫn:** tự nói lại phương pháp: Tìm nguyên hàm F, thế cận b trước a, rút gọn; kiểm bằng ước lượng dấu.",
+        "**Quay về cùng outcome:** làm lại `THPT-G12-B12-C01` hoặc bài `THPT-G12-B12-P01`, không nhận PASS chỉ vì đã xem lời giải."
+      ],
+      "return_item": "THPT-G12-B12-C01",
+      "practice_item": "THPT-G12-B12-P01"
+    },
+    {
+      "help_id": "HELP-G12-B12-02",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O02",
+      "steps": [
+        "**Nhận ra lỗi:** Tách ∫(f+g) rồi quên một hệ số hoặc dùng hai cận khác nhau.",
+        "**Trở về tiền đề:** Tính tuyến tính nguyên hàm và Newton–Leibniz.",
+        "**Ví dụ sửa nhỏ:** Chữa: ∫_0^1 (x+2)dx=1/2+2=5/2; thử ∫_0^1(2x+1)dx=2; về C02. Lỗi cần tránh sau khi tự sửa: Tách ∫(f+g) rồi quên một hệ số hoặc dùng hai cận khác nhau.",
+        "**Làm lại có dẫn:** tự nói lại phương pháp: Phân phối rồi dùng nguyên hàm từng hạng tử, chỉ thế cận một lần khi đã tổng hợp F.",
+        "**Quay về cùng outcome:** làm lại `THPT-G12-B12-C02` hoặc bài `THPT-G12-B12-P02`, không nhận PASS chỉ vì đã xem lời giải."
+      ],
+      "return_item": "THPT-G12-B12-C02",
+      "practice_item": "THPT-G12-B12-P02"
+    },
+    {
+      "help_id": "HELP-G12-B12-03",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O03",
+      "steps": [
+        "**Nhận ra lỗi:** Xem tích phân như độ dài tuyệt đối nên luôn dương; khi đảo cận quên dấu trừ.",
+        "**Trở về tiền đề:** Số có dấu, cộng đại số, định nghĩa tích phân xác định.",
+        "**Ví dụ sửa nhỏ:** Chữa: nếu ∫_1^2 f=−3 thì ∫_2^1 f=+3; tự thử ∫_0^2=3, ∫_2^3=4 => ∫_3^0=−7; về C03. Lỗi cần tránh sau khi tự sửa: Xem tích phân như độ dài tuyệt đối nên luôn dương; khi đảo cận quên dấu trừ.",
+        "**Làm lại có dẫn:** tự nói lại phương pháp: Vẽ trục cận theo thứ tự, ghép hoặc trừ đúng lượng, kiểm chiều dấu.",
+        "**Quay về cùng outcome:** làm lại `THPT-G12-B12-C03` hoặc bài `THPT-G12-B12-P03`, không nhận PASS chỉ vì đã xem lời giải."
+      ],
+      "return_item": "THPT-G12-B12-C03",
+      "practice_item": "THPT-G12-B12-P03"
+    },
+    {
+      "help_id": "HELP-G12-B12-04",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O04",
+      "steps": [
+        "**Nhận ra lỗi:** Tự động gắn S=∫ f cho f âm hoặc qua chỗ cắt trục.",
+        "**Trở về tiền đề:** Hình thang cong với f liên tục không âm, trục Ox và hai đường x=a,b.",
+        "**Ví dụ sửa nhỏ:** Chữa: y=2x trên [0,1] không âm nên S=∫_0¹2xdx=1; tự thử f=−x trên [0,1] cần lấy −f nếu muốn diện tích; về C04.",
+        "**Làm lại có dẫn:** tự nói lại phương pháp: Kiểm dấu hàm trước khi tích phân; dựng hình/thấy giao điểm với Ox, lấy cận đúng.",
+        "**Quay về cùng outcome:** làm lại `THPT-G12-B12-C04` hoặc bài `THPT-G12-B12-P04`, không nhận PASS chỉ vì đã xem lời giải."
+      ],
+      "return_item": "THPT-G12-B12-C04",
+      "practice_item": "THPT-G12-B12-P04"
+    },
+    {
+      "help_id": "HELP-G12-B12-05",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O05",
+      "steps": [
+        "**Nhận ra lỗi:** Lấy |∫f| thay cho ∫|f| hoặc nghĩ đồ thị âm tạo “diện tích âm”.",
+        "**Trở về tiền đề:** Giải phương trình f(x)=0 và chia đoạn theo dấu.",
+        "**Ví dụ sửa nhỏ:** Chữa: ∫_{−1}¹ xdx=0 nhưng ∫_{−1}¹|x|dx=1. Tự thử y=x trên [−3,3] có diện tích 9; về C05. Lỗi cần tránh sau khi tự sửa: Lấy |∫f| thay cho ∫|f| hoặc nghĩ đồ thị âm tạo “diện tích âm”.",
+        "**Làm lại có dẫn:** tự nói lại phương pháp: Lập bảng dấu, chia cận, đổi dấu trên vùng âm, cộng phần diện tích dương.",
+        "**Quay về cùng outcome:** làm lại `THPT-G12-B12-C05` hoặc bài `THPT-G12-B12-P05`, không nhận PASS chỉ vì đã xem lời giải."
+      ],
+      "return_item": "THPT-G12-B12-C05",
+      "practice_item": "THPT-G12-B12-P05"
+    },
+    {
+      "help_id": "HELP-G12-B12-06",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O06",
+      "steps": [
+        "**Nhận ra lỗi:** Nhầm sinπ=1 hoặc quên dấu khi ∫sinx dx=−cosx.",
+        "**Trở về tiền đề:** Nguyên hàm e^x, sin, cos; π và ln là giá trị chính xác.",
+        "**Ví dụ sửa nhỏ:** Chữa: ∫_0^{π/2} cosx dx=1; tự thử ∫_0^π sinx dx=2; về C06. Lỗi cần tránh sau khi tự sửa: Nhầm sinπ=1 hoặc quên dấu khi ∫sinx dx=−cosx.",
+        "**Làm lại có dẫn:** tự nói lại phương pháp: Giữ π, e, ln2 dạng chính xác đến kết quả cuối; không tự quy đổi radian thành độ.",
+        "**Quay về cùng outcome:** làm lại `THPT-G12-B12-C06` hoặc bài `THPT-G12-B12-P06`, không nhận PASS chỉ vì đã xem lời giải."
+      ],
+      "return_item": "THPT-G12-B12-C06",
+      "practice_item": "THPT-G12-B12-P06"
+    },
+    {
+      "help_id": "HELP-G12-B12-07",
+      "lesson_id": "B12",
+      "outcome_id": "G12-CHIV-B12-O07",
+      "steps": [
+        "**Nhận ra lỗi:** Đổi vận tốc âm thành dương trước khi tính độ dời hoặc bỏ qua đơn vị phút/giờ.",
+        "**Trở về tiền đề:** Đơn vị rate × thời gian; phân biệt độ dời và quãng đường khi rate có dấu.",
+        "**Ví dụ sửa nhỏ:** Chữa: nếu q'=2 lít/phút trong 5 phút thì Δq=∫_0⁵2dt=10 lít; tự thử q'=3t trên [0,2] =>6 lít; về C07.",
+        "**Làm lại có dẫn:** tự nói lại phương pháp: Lập tích phân từ đầu đến cuối, tính và kiểm thứ nguyên/kịch bản sign.",
+        "**Quay về cùng outcome:** làm lại `THPT-G12-B12-C07` hoặc bài `THPT-G12-B12-P07`, không nhận PASS chỉ vì đã xem lời giải."
+      ],
+      "return_item": "THPT-G12-B12-C07",
+      "practice_item": "THPT-G12-B12-P07"
+    },
+    {
+      "help_id": "HELP-G12-B13-01",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O01",
+      "steps": [
+        "**Nhận ra lỗi:** Tính F(a)−F(b) hoặc không kiểm hàm âm trên miền hình.",
+        "**Trở về tiền đề:** Giới hạn hình bởi y=f(x), Ox, x=a,b; kiểm f không âm.",
+        "**Ví dụ sửa nhỏ:** Chữa: diện tích dưới y=2 trên [0,3] là 6 (hình chữ nhật); tự thử y=x trên [0,1] là 1/2; về C01.",
+        "**Làm lại có dẫn:** tự nói lại phương pháp: Kiểm dấu, ghi miền hình, lập cận, tích phân và nêu đơn vị.",
+        "**Quay về cùng outcome:** làm lại `THPT-G12-B13-C01` hoặc bài `THPT-G12-B13-P01`, không nhận PASS chỉ vì đã xem lời giải."
+      ],
+      "return_item": "THPT-G12-B13-C01",
+      "practice_item": "THPT-G12-B13-P01"
+    },
+    {
+      "help_id": "HELP-G12-B13-02",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O02",
+      "steps": [
+        "**Nhận ra lỗi:** Lấy tích phân có dấu trực tiếp khi hình cắt trục, làm các vùng triệt tiêu.",
+        "**Trở về tiền đề:** Nghiệm f=0, bảng xét dấu và tích phân từng đoạn.",
+        "**Ví dụ sửa nhỏ:** Chữa: y=x trên [−1,1] có ∫x=0 nhưng diện tích1; tự thử y=x−1 từ0 tới2 có diện tích1; về C02. Lỗi cần tránh sau khi tự sửa: Lấy tích phân có dấu trực tiếp khi hình cắt trục, làm các vùng triệt tiêu.",
+        "**Làm lại có dẫn:** tự nói lại phương pháp: Tìm nghiệm, phân vùng, trên vùng âm dùng −f, tính tổng.",
+        "**Quay về cùng outcome:** làm lại `THPT-G12-B13-C02` hoặc bài `THPT-G12-B13-P02`, không nhận PASS chỉ vì đã xem lời giải."
+      ],
+      "return_item": "THPT-G12-B13-C02",
+      "practice_item": "THPT-G12-B13-P02"
+    },
+    {
+      "help_id": "HELP-G12-B13-03",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O03",
+      "steps": [
+        "**Nhận ra lỗi:** Lấy hàm dưới trừ trên cho diện tích âm hoặc bỏ mất đường biên/cận.",
+        "**Trở về tiền đề:** Hai hàm liên tục f,g và xét thứ tự đồ thị trên [a,b].",
+        "**Ví dụ sửa nhỏ:** Chữa: nếu f=5, g=3 trên [0,2], S=(5−3)·2=4; tự thử giữa 3x và x trên [0,1] có S=1; về C03. Lỗi cần tránh sau khi tự sửa: Lấy hàm dưới trừ trên cho diện tích âm hoặc bỏ mất đường biên/cận.",
+        "**Làm lại có dẫn:** tự nói lại phương pháp: Lấy hiệu độ cao (trên−dưới), tích phân theo x, kiểm S≥0.",
+        "**Quay về cùng outcome:** làm lại `THPT-G12-B13-C03` hoặc bài `THPT-G12-B13-P03`, không nhận PASS chỉ vì đã xem lời giải."
+      ],
+      "return_item": "THPT-G12-B13-C03",
+      "practice_item": "THPT-G12-B13-P03"
+    },
+    {
+      "help_id": "HELP-G12-B13-04",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O04",
+      "steps": [
+        "**Nhận ra lỗi:** Quên giao điểm giữa khoảng và để các vùng triệt dấu.",
+        "**Trở về tiền đề:** Giải f(x)=g(x), khảo sát dấu hiệu f−g.",
+        "**Ví dụ sửa nhỏ:** Chữa: hiệu h=x−x²≥0 trên (0,1); tự thử giao điểm y=x và y=x² là0,1; về C04. Lỗi cần tránh sau khi tự sửa: Quên giao điểm giữa khoảng và để các vùng triệt dấu.",
+        "**Làm lại có dẫn:** tự nói lại phương pháp: Giải giao điểm, sắp xếp cận, thử dấu từng khoảng rồi tích phân phần dương.",
+        "**Quay về cùng outcome:** làm lại `THPT-G12-B13-C04` hoặc bài `THPT-G12-B13-P04`, không nhận PASS chỉ vì đã xem lời giải."
+      ],
+      "return_item": "THPT-G12-B13-C04",
+      "practice_item": "THPT-G12-B13-P04"
+    },
+    {
+      "help_id": "HELP-G12-B13-05",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O05",
+      "steps": [
+        "**Nhận ra lỗi:** Nhìn thấy tích phân rồi gọi kết quả m³ thay vì m², hoặc quên kiểm miền vật lý.",
+        "**Trở về tiền đề:** Đơn vị trục Ox/Oy và mô hình biểu thức f(x).",
+        "**Ví dụ sửa nhỏ:** Chữa: hình chữ nhật rộng2m và cao3m có S=6m²=∫_0²3dx; thử cao x+1 trên [0,1] được3/2m²; về C05.",
+        "**Làm lại có dẫn:** tự nói lại phương pháp: Nêu biến x và đơn vị, mô tả hai cận, xét h≥0, rồi tính số và thứ nguyên.",
+        "**Quay về cùng outcome:** làm lại `THPT-G12-B13-C05` hoặc bài `THPT-G12-B13-P05`, không nhận PASS chỉ vì đã xem lời giải."
+      ],
+      "return_item": "THPT-G12-B13-C05",
+      "practice_item": "THPT-G12-B13-P05"
+    },
+    {
+      "help_id": "HELP-G12-B13-06",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O06",
+      "steps": [
+        "**Nhận ra lỗi:** Nhầm tích phân cạnh hình vuông với tích phân diện tích (quên bình phương).",
+        "**Trở về tiền đề:** Diện tích mặt cắt S(x) theo một trục dài, tổng thể tích các lát mỏng.",
+        "**Ví dụ sửa nhỏ:** Chữa: mặt cắt vuông cạnh2cm thì S=4cm²; dày3cm thể tích12cm³. Thử S=x² trên [0,1] =>1/3cm³; về C06.",
+        "**Làm lại có dẫn:** tự nói lại phương pháp: Xác định hình cắt, tính S(x) đúng hình học, tích phân theo chiều dài.",
+        "**Quay về cùng outcome:** làm lại `THPT-G12-B13-C06` hoặc bài `THPT-G12-B13-P06`, không nhận PASS chỉ vì đã xem lời giải."
+      ],
+      "return_item": "THPT-G12-B13-C06",
+      "practice_item": "THPT-G12-B13-P06"
+    },
+    {
+      "help_id": "HELP-G12-B13-07",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O07",
+      "steps": [
+        "**Nhận ra lỗi:** Bình phương đường kính thay vì bán kính, làm kết quả lớn gấp4.",
+        "**Trở về tiền đề:** Diện tích hình tròn πr², r(x)≥0.",
+        "**Ví dụ sửa nhỏ:** Chữa: đường kính 6cm => r=3cm, S=9π cm², không phải36π; thử d(x)=2x trên[0,1] =>V=π/3; về C07. Lỗi cần tránh sau khi tự sửa: Bình phương đường kính thay vì bán kính, làm kết quả lớn gấp4.",
+        "**Làm lại có dẫn:** tự nói lại phương pháp: Đổi đường kính→bán kính nếu cần, bình phương r trước khi tích phân; giữ π chính xác.",
+        "**Quay về cùng outcome:** làm lại `THPT-G12-B13-C07` hoặc bài `THPT-G12-B13-P07`, không nhận PASS chỉ vì đã xem lời giải."
+      ],
+      "return_item": "THPT-G12-B13-C07",
+      "practice_item": "THPT-G12-B13-P07"
+    },
+    {
+      "help_id": "HELP-G12-B13-08",
+      "lesson_id": "B13",
+      "outcome_id": "G12-CHIV-B13-O08",
+      "steps": [
+        "**Nhận ra lỗi:** Nhầm V=π∫f dx hoặc quên bình phương bán kính; dùng diện tích m² làm thể tích m³.",
+        "**Trở về tiền đề:** Diện tích đĩa πr² và tích phân theo chiều dài.",
+        "**Ví dụ sửa nhỏ:** Chữa: quay y=1 trên x∈[0,2] quanh Ox thành trụ V=2π; thử y=x trên [0,1] =>π/3; về C08. Lỗi cần tránh sau khi tự sửa: Nhầm V=π∫f dx hoặc quên bình phương bán kính; dùng diện tích m² làm thể tích m³.",
+        "**Làm lại có dẫn:** tự nói lại phương pháp: Xác định trục quay, bán kính tại x là |f(x)|, tính π∫f², kiểm thể tích không âm.",
+        "**Quay về cùng outcome:** làm lại `THPT-G12-B13-C08` hoặc bài `THPT-G12-B13-P08`, không nhận PASS chỉ vì đã xem lời giải."
+      ],
+      "return_item": "THPT-G12-B13-C08",
+      "practice_item": "THPT-G12-B13-P08"
+    }
+  ],
+  "end_references": [
+    {
+      "placement_id": "G12-CHIV-END-B11-01",
+      "item_id": "THPT-G12-B11-A01",
+      "outcome_id": "G12-CHIV-B11-O01"
+    },
+    {
+      "placement_id": "G12-CHIV-END-B11-02",
+      "item_id": "THPT-G12-B11-A02",
+      "outcome_id": "G12-CHIV-B11-O02"
+    },
+    {
+      "placement_id": "G12-CHIV-END-B11-03",
+      "item_id": "THPT-G12-B11-A03",
+      "outcome_id": "G12-CHIV-B11-O03"
+    },
+    {
+      "placement_id": "G12-CHIV-END-B11-04",
+      "item_id": "THPT-G12-B11-A04",
+      "outcome_id": "G12-CHIV-B11-O04"
+    },
+    {
+      "placement_id": "G12-CHIV-END-B11-05",
+      "item_id": "THPT-G12-B11-A05",
+      "outcome_id": "G12-CHIV-B11-O05"
+    },
+    {
+      "placement_id": "G12-CHIV-END-B11-06",
+      "item_id": "THPT-G12-B11-A06",
+      "outcome_id": "G12-CHIV-B11-O06"
+    },
+    {
+      "placement_id": "G12-CHIV-END-B11-07",
+      "item_id": "THPT-G12-B11-A07",
+      "outcome_id": "G12-CHIV-B11-O07"
+    },
+    {
+      "placement_id": "G12-CHIV-END-B12-01",
+      "item_id": "THPT-G12-B12-A01",
+      "outcome_id": "G12-CHIV-B12-O01"
+    },
+    {
+      "placement_id": "G12-CHIV-END-B12-02",
+      "item_id": "THPT-G12-B12-A02",
+      "outcome_id": "G12-CHIV-B12-O02"
+    },
+    {
+      "placement_id": "G12-CHIV-END-B12-03",
+      "item_id": "THPT-G12-B12-A03",
+      "outcome_id": "G12-CHIV-B12-O03"
+    },
+    {
+      "placement_id": "G12-CHIV-END-B12-04",
+      "item_id": "THPT-G12-B12-A04",
+      "outcome_id": "G12-CHIV-B12-O04"
+    },
+    {
+      "placement_id": "G12-CHIV-END-B12-05",
+      "item_id": "THPT-G12-B12-A05",
+      "outcome_id": "G12-CHIV-B12-O05"
+    },
+    {
+      "placement_id": "G12-CHIV-END-B12-06",
+      "item_id": "THPT-G12-B12-A06",
+      "outcome_id": "G12-CHIV-B12-O06"
+    },
+    {
+      "placement_id": "G12-CHIV-END-B12-07",
+      "item_id": "THPT-G12-B12-A07",
+      "outcome_id": "G12-CHIV-B12-O07"
+    },
+    {
+      "placement_id": "G12-CHIV-END-B13-01",
+      "item_id": "THPT-G12-B13-A01",
+      "outcome_id": "G12-CHIV-B13-O01"
+    },
+    {
+      "placement_id": "G12-CHIV-END-B13-02",
+      "item_id": "THPT-G12-B13-A02",
+      "outcome_id": "G12-CHIV-B13-O02"
+    },
+    {
+      "placement_id": "G12-CHIV-END-B13-03",
+      "item_id": "THPT-G12-B13-A03",
+      "outcome_id": "G12-CHIV-B13-O03"
+    },
+    {
+      "placement_id": "G12-CHIV-END-B13-04",
+      "item_id": "THPT-G12-B13-A04",
+      "outcome_id": "G12-CHIV-B13-O04"
+    },
+    {
+      "placement_id": "G12-CHIV-END-B13-05",
+      "item_id": "THPT-G12-B13-A05",
+      "outcome_id": "G12-CHIV-B13-O05"
+    },
+    {
+      "placement_id": "G12-CHIV-END-B13-06",
+      "item_id": "THPT-G12-B13-A06",
+      "outcome_id": "G12-CHIV-B13-O06"
+    },
+    {
+      "placement_id": "G12-CHIV-END-B13-07",
+      "item_id": "THPT-G12-B13-A07",
+      "outcome_id": "G12-CHIV-B13-O07"
+    },
+    {
+      "placement_id": "G12-CHIV-END-B13-08",
+      "item_id": "THPT-G12-B13-A08",
+      "outcome_id": "G12-CHIV-B13-O08"
+    }
+  ]
+}

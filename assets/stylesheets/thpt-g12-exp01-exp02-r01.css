@@ -1,0 +1,78 @@
+/* G12 EXP01/EXP02 Golden R4 public SGK supplementary UI (source-locked). */
+.g12-xp-original-figure{margin:1.4rem 0 1.8rem;padding:.65rem;border:1px solid var(--md-default-fg-color--lightest);border-radius:12px;background:var(--md-default-bg-color)}
+.g12-xp-original-figure img{display:block;width:auto;max-width:100%;height:auto;max-height:min(70vh,650px);object-fit:contain;margin:auto}
+.g12-xp-original-figure figcaption{font-size:.83rem;line-height:1.6;color:var(--md-default-fg-color--light);padding:.65rem .4rem .2rem}
+.g12-xp-nav{display:flex;flex-wrap:wrap;align-items:center;gap:.45rem;margin-top:1rem}
+.g12-xp-nav span[aria-disabled]{opacity:.48;padding:.56rem .8rem;border:1px solid var(--md-default-fg-color--lightest);border-radius:8px;font-size:.82rem}
+.g12-xp-lesson-group{margin:1rem 0 1.5rem}
+.g12-xp-lesson-group>h2{font-size:1.3rem}
+.g12-xp-card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.g12-xp-role-card{display:flex;flex-direction:column;align-items:flex-start;gap:8px;min-height:154px;padding:20px;border:1px solid var(--md-default-fg-color--lightest);border-radius:14px;background:var(--md-default-bg-color);color:var(--md-default-fg-color);font:inherit;text-align:left;cursor:pointer}
+.g12-xp-role-card:hover,.g12-xp-role-card:focus-visible{border-color:var(--md-primary-fg-color);box-shadow:0 3px 16px #0001}
+.g12-xp-role-card strong{font-size:1.2rem;color:var(--md-primary-fg-color)}
+.g12-xp-role-card small{color:var(--md-default-fg-color--light);line-height:1.5}
+.g12-xp-role-open{margin-top:auto;font-weight:650;color:var(--md-primary-fg-color)}
+.g12-xp-role-number{font-weight:700;font-size:.9rem}
+.g12-xp-dialog{box-sizing:border-box;width:min(94vw,950px);max-width:950px;max-height:calc(100dvh - 24px);padding:0;border:0;border-radius:20px;box-shadow:0 15px 60px #0004;color:var(--md-default-fg-color);background:var(--md-default-bg-color);overflow-y:auto}
+.g12-xp-dialog::backdrop{background:#13203b9c}
+.g12-xp-modal-head{display:flex;justify-content:space-between;align-items:flex-start;gap:15px;padding:22px 25px 18px;background:var(--md-code-bg-color);border-top:5px solid var(--md-primary-fg-color);border-bottom:1px solid var(--md-default-fg-color--lightest)}
+.g12-xp-modal-head h2{margin:0;font-size:1.35rem;line-height:1.4}
+.g12-xp-counter,.g12-xp-end-progress{font-weight:700;color:var(--md-default-fg-color--light)}
+.g12-xp-close{border:1px solid var(--md-default-fg-color--lightest);background:var(--md-default-bg-color);color:var(--md-default-fg-color);border-radius:7px;padding:10px 12px;cursor:pointer}
+.g12-xp-jump,.g12-xp-end-nav{display:flex;flex-wrap:wrap;gap:6px;padding:14px 24px;border-bottom:1px solid var(--md-default-fg-color--lightest)}
+.g12-xp-jump-button{font:inherit;font-size:.86rem;min-width:42px;min-height:42px;padding:7px 10px;border:1px solid var(--md-default-fg-color--lightest);border-radius:8px;background:var(--md-code-bg-color);color:var(--md-default-fg-color);cursor:pointer}
+.g12-xp-jump-button.is-current{border-color:#00bca9;background:var(--md-default-bg-color);font-weight:700}
+.g12-xp-stage{padding:20px 25px 6px}
+.g12-xp-question-stem{font-size:1.13rem;line-height:1.65;margin:12px 0 18px;overflow-wrap:anywhere}
+.g12-xp-question-number{font-size:.8rem;color:var(--md-default-fg-color--light)}
+.g12-xp-label{display:block;margin:12px 0 9px;font-weight:700}
+.g12-xp-input,.g12-xp-end-input{display:block;box-sizing:border-box;width:100%;max-width:100%;min-height:130px;padding:12px;font:inherit;font-size:.97rem;line-height:1.6;border:1px solid var(--md-default-fg-color--lightest);border-radius:9px;color:var(--md-default-fg-color);background:var(--md-default-bg-color)}
+.g12-xp-input:focus,.g12-xp-end-input:focus{outline:2px solid var(--md-primary-fg-color);outline-offset:1px}
+.g12-xp-submit{display:inline-flex;justify-content:center;align-items:center;min-height:44px;border:none;border-radius:9px;padding:10px 18px;background:#00bda8;color:#fff;font:inherit;font-weight:700;cursor:pointer;margin-top:12px}
+.g12-xp-submit:disabled{opacity:.55;cursor:default}
+.g12-xp-help{margin:16px 0;padding:12px;border:1px solid var(--md-default-fg-color--lightest);border-radius:9px}
+.g12-xp-help summary{cursor:pointer;font-weight:650}
+.g12-xp-help-list{line-height:1.75;padding-left:24px}
+.g12-xp-reveal,.g12-xp-end-answer{margin:15px 0;padding:13px 17px;border-left:3px solid #00bda8;background:var(--md-code-bg-color);border-radius:8px}
+.g12-xp-reveal:empty{display:none}
+.g12-xp-reveal h4,.g12-xp-end-answer h4{margin:8px 0}
+.g12-xp-paragraph{line-height:1.7;overflow-wrap:anywhere}
+.g12-xp-foot,.g12-xp-end-controls{display:flex;justify-content:space-between;gap:10px;padding:14px 25px 20px}
+/* The single existing floating Gemini launcher lives inside a native public modal.
+   Reserve its bottom-right touch footprint; never cover the learner's Next control. */
+.g12-xp-dialog .g12-xp-foot{padding-right:104px;box-sizing:border-box;}
+.g12-xp-prev,.g12-xp-next{border:1px solid var(--md-default-fg-color--lightest);border-radius:8px;min-height:42px;padding:8px 15px;background:var(--md-code-bg-color);color:var(--md-default-fg-color);font:inherit;cursor:pointer}
+.g12-xp-prev:disabled,.g12-xp-next:disabled{opacity:.4;cursor:default}
+.g12-xp-end-progress{margin:14px 0 4px}
+.g12-xp-end-nav{padding:8px 0 16px}
+.g12-xp-end-card{border:1px solid var(--md-default-fg-color--lightest);border-radius:12px;margin:18px 0;padding:18px;overflow-wrap:anywhere}
+.g12-xp-end-controls{padding:8px 0 15px;flex-wrap:wrap;justify-content:flex-start}
+.g12-xp-end-controls .g12-xp-submit{margin-top:0}
+.g12-xp-end-message{font-weight:600}
+.g12-xp-return{display:inline-block;margin-top:.6rem}
+.g12-xp-original-figure,.g12-xp-lesson-group,.g12-xp-dialog,.g12-xp-end-card{min-width:0}
+@media(max-width:590px){
+ .g12-xp-card-grid{grid-template-columns:1fr}
+ .g12-xp-role-card{min-height:122px;padding:15px}
+ .g12-xp-dialog{width:96vw;max-height:calc(100dvh - 12px);border-radius:14px}
+ .g12-xp-modal-head{padding:15px}
+ .g12-xp-modal-head h2{font-size:1.1rem}
+ .g12-xp-jump{padding:12px 15px}
+ .g12-xp-stage{padding:13px}
+ .g12-xp-foot{padding:13px 104px 13px 13px}
+ .g12-xp-end-card{padding:12px}
+ .g12-xp-end-controls{gap:8px}
+ .g12-xp-end-controls .g12-xp-submit{flex:1 1 100%}
+}
+
+
+/* Dialogs are mounted under body, outside .md-typeset: prevent tiny UA font. */
+.g12-xp-dialog{font-family:var(--md-text-font-family,sans-serif);font-size:16px;line-height:1.65}
+.g12-xp-dialog .g12-xp-counter{font-size:14px;line-height:1.5}
+.g12-xp-dialog .g12-xp-modal-head h2{font-size:clamp(20px,2.2vw,25px);line-height:1.35}
+.g12-xp-dialog .g12-xp-question-stem{font-size:clamp(18px,2vw,21px);line-height:1.65}
+.g12-xp-dialog .g12-xp-question-number{font-size:14px}
+.g12-xp-dialog .g12-xp-label{font-size:15px}
+.g12-xp-dialog .g12-xp-jump-button{font-size:15px}
+.g12-xp-dialog .g12-xp-submit,.g12-xp-dialog .g12-xp-prev,.g12-xp-dialog .g12-xp-next{font-size:15px}
+.g12-xp-dialog .g12-xp-reveal,.g12-xp-dialog .g12-xp-end-message{font-size:16px}

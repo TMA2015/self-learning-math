@@ -1,0 +1,1842 @@
+{
+  "packet_id": "G12-SGK-CHV-B14-B17-R01",
+  "source_blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+  "receipt_blob": "a07070119259bd0133535fc3250d008cd78d8195",
+  "mode": "CLIENT_SELF_CHECK_NO_MASTERY",
+  "optional_extension": {
+    "outcome_id": "G12-CHV-B14-O07",
+    "display_after_lesson": "B17",
+    "nonmandatory_core": true,
+    "first_try_id": "B14-T02"
+  },
+  "items": [
+    {
+      "item_id": "THPT-G12-B14-C01",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O01",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 1,
+      "stem": "Mặt phẳng x−2y+3z−4=0 có pháp tuyến nào?",
+      "answer": "(1,-2,3)",
+      "solution": "Đọc hệ số x,y,z; (1,-2,3) khác 0."
+    },
+    {
+      "item_id": "THPT-G12-B14-P01",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O01",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 2,
+      "stem": "Tìm một n vuông góc với u=(1,2,0),v=(0,1,2).",
+      "answer": "(4,-2,1)",
+      "solution": "u×v=(4,-2,1); hai tích vô hướng lần lượt 4-4 và -2+2 đều 0."
+    },
+    {
+      "item_id": "THPT-G12-B14-A01",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O01",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Hai mép mái có hướng (1,0,1) và (0,2,1). Tìm hướng vuông góc mái.",
+      "answer": "(-2,-1,2)",
+      "solution": "Tích có hướng (-2,-1,2), kiểm trực giao với cả hai mép."
+    },
+    {
+      "item_id": "THPT-G12-B14-W01",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O01",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Giải thích vì sao u=(1,1,0),v=(2,2,0) không đủ để xác định pháp tuyến duy nhất bằng tích có hướng.",
+      "answer": "u×v=0, vì u và v cùng phương.",
+      "solution": "v=2u nên tích có hướng bằng 0. Cần hướng thứ hai không cùng phương; không được lấy n=0 làm pháp tuyến.",
+      "rubric": [
+        "2đ chỉ ra v=2u, hai vectơ cùng phương/phụ thuộc tuyến tính nên không tạo cặp hướng độc lập; 1đ tính hoặc chứng minh u×v=(0,0,0); 1đ giải thích vectơ không không được dùng làm vectơ pháp tuyến; 1đ nêu cách khắc phục: chọn hướng thứ hai không cùng phương với u rồi mới tính tích có hướng."
+      ],
+      "rubric_label": "Rubric Written /5 (chấm theo từng bước) — R01 đã review DELTA_C /5"
+    },
+    {
+      "item_id": "THPT-G12-B14-C02",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O02",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 1,
+      "stem": "Qua M(0,1,-1), n=(1,2,3) viết mặt phẳng.",
+      "answer": "x+2y+3z+1=0",
+      "solution": "x+2(y−1)+3(z+1)=0 ⇒ x+2y+3z+1=0."
+    },
+    {
+      "item_id": "THPT-G12-B14-P02",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O02",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 2,
+      "stem": "Qua M(2,0,1), n=(1,-2,2), viết (P).",
+      "answer": "x−2y+2z−4=0",
+      "solution": "(x−2)−2y+2(z−1)=0 ⇒ x−2y+2z−4=0."
+    },
+    {
+      "item_id": "THPT-G12-B14-A02",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O02",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Mặt sàn ngang qua điểm A(1,2,4). Viết phương trình của sàn.",
+      "answer": "z=4",
+      "solution": "Mặt ngang có pháp tuyến (0,0,1); đi qua z=4 nên z−4=0."
+    },
+    {
+      "item_id": "THPT-G12-B14-W02",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O02",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Qua M(-1,2,0) có pháp tuyến n=(2,3,-1). Viết phương trình và kiểm tại M.",
+      "answer": "2x+3y−z−4=0",
+      "solution": "2(x+1)+3(y−2)−z=0 ⇒ 2x+3y−z−4=0; tại M: -2+6-4=0.",
+      "rubric": [
+        "2đ lập đúng dạng điểm–pháp tuyến; 1đ triển khai hệ số tự do; 1đ thử lại điểm M; 1đ ghi điều kiện n khác 0."
+      ],
+      "rubric_label": "Rubric Written /5 (chấm theo từng bước) /5"
+    },
+    {
+      "item_id": "THPT-G12-B14-C03",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O03",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 1,
+      "stem": "A(1,0,0),B(1,1,0),C(1,0,1). Viết (ABC).",
+      "answer": "x=1",
+      "solution": "AB=(0,1,0),AC=(0,0,1) ⇒ n=(1,0,0); qua A ⇒ x−1=0."
+    },
+    {
+      "item_id": "THPT-G12-B14-P03",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O03",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 2,
+      "stem": "A(0,0,0),B(1,1,0),C(0,0,1). Tìm mặt phẳng.",
+      "answer": "x−y=0",
+      "solution": "AB=(1,1,0), AC=(0,0,1), n=(1,-1,0) theo hệ số khác 0; qua O ⇒ x−y=0."
+    },
+    {
+      "item_id": "THPT-G12-B14-A03",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O03",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Ba đỉnh tường (4,0,0),(0,4,0),(4,0,2). Viết mặt phẳng tường.",
+      "answer": "x+y−4=0",
+      "solution": "Hai vectơ trong tường (-4,4,0),(0,0,2) có pháp tuyến cùng phương (1,1,0); qua (4,0,0)."
+    },
+    {
+      "item_id": "THPT-G12-B14-W03",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O03",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Viết mặt phẳng qua A(1,0,0),B(0,1,0),C(0,0,1) và chứng minh ba điểm không thẳng hàng.",
+      "answer": "x+y+z−1=0",
+      "solution": "AB=(-1,1,0), AC=(-1,0,1), tích có hướng khác 0; ba điểm đều thỏa x+y+z=1.",
+      "rubric": [
+        "2đ lập AB, AC và kiểm không thẳng hàng; 1đ xác định pháp tuyến; 1đ viết phương trình và thử đủ ba điểm; 1đ nêu tính duy nhất."
+      ],
+      "rubric_label": "Rubric Written /5 (chấm theo từng bước) /5"
+    },
+    {
+      "item_id": "THPT-G12-B14-C04",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O04",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 1,
+      "stem": "Qua (2,1,0) song song Ox và Oz. Viết mặt phẳng.",
+      "answer": "y=1",
+      "solution": "Có 2 hướng (1,0,0),(0,0,1), pháp tuyến (0,1,0); qua điểm cho trước ⇒ y=1."
+    },
+    {
+      "item_id": "THPT-G12-B14-P04",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O04",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 2,
+      "stem": "Mặt phẳng chứa trục Oy và điểm (1,0,2). Viết phương trình.",
+      "answer": "2x−z=0",
+      "solution": "Hai hướng Oy=(0,1,0) và (1,0,2), n=(2,0,-1); qua O."
+    },
+    {
+      "item_id": "THPT-G12-B14-A04",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O04",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Mái qua P(0,0,2), song song hai hướng (1,1,0),(0,1,1). Viết mặt mái.",
+      "answer": "x−y+z−2=0",
+      "solution": "n=(1,-1,1); qua P ⇒ x−y+z−2=0."
+    },
+    {
+      "item_id": "THPT-G12-B14-W04",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O04",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Mặt phẳng qua O chứa Ox và điểm B(0,2,1); lập phương trình.",
+      "answer": "y−2z=0",
+      "solution": "Hai hướng Ox và OB=(0,2,1), n=(0,-1,2) hay (0,1,-2); thay B được 0.",
+      "rubric": [
+        "2đ nhận đúng hai hướng của mặt; 1đ tìm pháp tuyến; 1đ lập và thử phương trình; 1đ giải thích điều kiện chứa trục so với song song trục."
+      ],
+      "rubric_label": "Rubric Written /5 (chấm theo từng bước) /5"
+    },
+    {
+      "item_id": "THPT-G12-B14-C05",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O05",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 1,
+      "stem": "x−2y+z=1 và 2x−4y+2z=5 có vị trí gì?",
+      "answer": "Song song phân biệt",
+      "solution": "Hai pháp tuyến tỉ lệ 2, nhưng nếu nhân cả phương trình đầu với 2 có vế phải 2 khác 5."
+    },
+    {
+      "item_id": "THPT-G12-B14-P05",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O05",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 2,
+      "stem": "Hai mặt 2x+y−z=0 và x−2y=0 có vuông góc?",
+      "answer": "Có",
+      "solution": "n1=(2,1,-1), n2=(1,-2,0), dot=2−2+0=0."
+    },
+    {
+      "item_id": "THPT-G12-B14-A05",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O05",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Mặt sàn z=0 và tường x=0 có vuông góc?",
+      "answer": "Có",
+      "solution": "Pháp tuyến (0,0,1) và (1,0,0) có dot=0."
+    },
+    {
+      "item_id": "THPT-G12-B14-W05",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O05",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Chứng minh (P):x+y−z=0 song song (Q):2x+2y−2z+1=0 và vuông góc (R):x−y=0.",
+      "answer": "P∥Q phân biệt; P⊥R",
+      "solution": "nQ=2nP nhưng hai phương trình không trùng; nP·nR=1−1=0.",
+      "rubric": [
+        "2đ xác định hai cặp pháp tuyến; 1đ so sánh tỉ lệ/dot; 1đ kiểm hằng số để phân biệt trùng/song song; 1đ kết luận hai quan hệ rõ ràng."
+      ],
+      "rubric_label": "Rubric Written /5 (chấm theo từng bước) /5"
+    },
+    {
+      "item_id": "THPT-G12-B14-C06",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O06",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 1,
+      "stem": "Khoảng cách O tới x+2y+2z−3=0?",
+      "answer": "1",
+      "solution": "Tử |−3|=3, mẫu √9=3."
+    },
+    {
+      "item_id": "THPT-G12-B14-P06",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O06",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 2,
+      "stem": "M(2,-1,1), P:2x+y+2z−1=0. Tính d.",
+      "answer": "4/3",
+      "solution": "Tử |4−1+2−1|=4, mẫu 3."
+    },
+    {
+      "item_id": "THPT-G12-B14-A06",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O06",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Hai mặt sàn z=0 và trần z=3 có khoảng cách bao nhiêu mét nếu tọa độ mét?",
+      "answer": "3m",
+      "solution": "Chọn điểm O thuộc sàn, d(O,z−3=0)=3m."
+    },
+    {
+      "item_id": "THPT-G12-B14-W06",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O06",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Tính khoảng cách M(1,1,2) đến 2x−2y+z−4=0. Viết đủ tử, mẫu và kết luận.",
+      "answer": "2/3",
+      "solution": "Tử |2−2+2−4|=2; mẫu √(4+4+1)=3 nên d=2/3.",
+      "rubric": [
+        "2đ thế tọa độ vào tử số và tính chuẩn n; 1đ sử dụng trị tuyệt đối; 1đ kết quả khoảng cách đúng; 1đ giải thích đơn vị và không âm."
+      ],
+      "rubric_label": "Rubric Written /5 (chấm theo từng bước) /5"
+    },
+    {
+      "item_id": "THPT-G12-B14-C07",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O07",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "curriculum_scope": "SGK_APPLICATION_INTEGRATED_AFTER_B17",
+      "optional_after_b17": true,
+      "level": 1,
+      "stem": "C(0,0,2),R=3; sàn z=0. Bán kính giao?",
+      "answer": "√5",
+      "solution": "r=√(3²−2²)=√5."
+    },
+    {
+      "item_id": "THPT-G12-B14-P07",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O07",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "curriculum_scope": "SGK_APPLICATION_INTEGRATED_AFTER_B17",
+      "optional_after_b17": true,
+      "level": 2,
+      "stem": "C(1,2,1),R=2; sàn z=0. Bán kính giao?",
+      "answer": "√3",
+      "solution": "h=1, r=√(4−1)=√3."
+    },
+    {
+      "item_id": "THPT-G12-B14-A07",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O07",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "curriculum_scope": "SGK_APPLICATION_INTEGRATED_AFTER_B17",
+      "optional_after_b17": true,
+      "level": 3,
+      "stem": "Bóng phủ của nguồn cầu đặt cao 6m, bán kính 10m trên nền ngang có bán kính?",
+      "answer": "8m",
+      "solution": "h=6<R=10 nên r=√(100−36)=8m."
+    },
+    {
+      "item_id": "THPT-G12-B14-W07",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O07",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "curriculum_scope": "SGK_APPLICATION_INTEGRATED_AFTER_B17",
+      "optional_after_b17": true,
+      "level": 3,
+      "stem": "Giải thích ba trường hợp giao của cầu tâm cách mặt phẳng h và bán kính R.",
+      "answer": "h<R: hình tròn; h=R: tiếp xúc; h>R: không giao.",
+      "solution": "Dùng vuông góc tâm–mặt phẳng và r²=R²−h² khi vế phải không âm.",
+      "rubric": [
+        "2đ xác định khoảng cách tâm–mặt và điều kiện h so R; 1đ lập r²+h²=R²; 1đ tính bán kính/3 trường hợp; 1đ giải thích ý nghĩa vật lý."
+      ],
+      "rubric_label": "Rubric Written /5 (chấm theo từng bước) /5"
+    },
+    {
+      "item_id": "THPT-G12-B15-C01",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O01",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 1,
+      "stem": "Đường thẳng qua O hướng (1,0,2)?",
+      "answer": "(t,0,2t)",
+      "solution": "M=(0,0,0)+t(1,0,2)."
+    },
+    {
+      "item_id": "THPT-G12-B15-P01",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O01",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 2,
+      "stem": "Qua (-1,0,4), hướng (3,2,-1), viết tham số.",
+      "answer": "(-1+3t,2t,4−t)",
+      "solution": "Cùng một t nhân từng thành phần của u."
+    },
+    {
+      "item_id": "THPT-G12-B15-A01",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O01",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Drone xuất phát (0,2,1), bay thẳng theo tốc độ (1,-1,2) m/s. Vị trí sau t giây?",
+      "answer": "(t,2−t,1+2t)",
+      "solution": "Vị trí=điểm đầu+t·v, điều kiện vật lý t≥0; đường thẳng hình học có t∈R."
+    },
+    {
+      "item_id": "THPT-G12-B15-W01",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O01",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Qua P(2,1,-1), hướng (-1,3,2). Viết tham số và tìm tọa độ khi t=2.",
+      "answer": "(2−t,1+3t,−1+2t); khi t=2 là (0,7,3)",
+      "solution": "Thay t=0 thu P; cùng t=2 vào cả ba dòng: (0,7,3).",
+      "rubric": [
+        "2đ xác định M0 và hướng u khác 0; 1đ viết một tham số chung t; 1đ tính tọa độ kiểm theo t; 1đ phân biệt đường thẳng t∈R với chuyển động t≥0."
+      ],
+      "rubric_label": "Rubric Written /5 (chấm theo từng bước) /5"
+    },
+    {
+      "item_id": "THPT-G12-B15-C02",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O02",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 1,
+      "stem": "Qua A(0,0,0), B(2,0,1).",
+      "answer": "(2t,0,t)",
+      "solution": "AB=(2,0,1), t=0→A,t=1→B."
+    },
+    {
+      "item_id": "THPT-G12-B15-P02",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O02",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 2,
+      "stem": "Qua A(1,2,0),B(1,5,3).",
+      "answer": "(1,2+3t,3t)",
+      "solution": "AB=(0,3,3) không phải vectơ 0."
+    },
+    {
+      "item_id": "THPT-G12-B15-A02",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O02",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Cáp căng từ (0,0,4) tới (4,2,0). Viết quỹ đạo cáp.",
+      "answer": "(4t,2t,4−4t)",
+      "solution": "AB=(4,2,-4), đoạn vật lý 0≤t≤1; đường thẳng kéo dài t∈R."
+    },
+    {
+      "item_id": "THPT-G12-B15-W02",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O02",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Viết tham số qua P(2,-1,0),Q(0,3,2) và kiểm Q.",
+      "answer": "(2−2t,−1+4t,2t)",
+      "solution": "PQ=(-2,4,2). t=1 cho Q; P khác Q nên đường thẳng xác định.",
+      "rubric": [
+        "2đ lấy đúng hiệu B−A khác 0; 1đ viết đủ ba phương trình cùng t; 1đ kiểm t=0,1; 1đ giải thích đoạn thẳng 0≤t≤1."
+      ],
+      "rubric_label": "Rubric Written /5 (chấm theo từng bước) /5"
+    },
+    {
+      "item_id": "THPT-G12-B15-C03",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O03",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 1,
+      "stem": "Qua O, hướng (1,2,3). Viết chính tắc.",
+      "answer": "x/1=y/2=z/3",
+      "solution": "Khử tham số từ (t,2t,3t)."
+    },
+    {
+      "item_id": "THPT-G12-B15-P03",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O03",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 2,
+      "stem": "Qua (1,2,0), hướng (0,1,-2). Viết dạng không chia cho 0.",
+      "answer": "x=1; y−2=z/(−2)",
+      "solution": "x là hằng, chỉ khử tham số từ y=2+t và z=−2t."
+    },
+    {
+      "item_id": "THPT-G12-B15-A03",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O03",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Đường trục thẳng đứng qua (2,3,0) theo hướng Oz có phương trình?",
+      "answer": "x=2, y=3, z=t",
+      "solution": "Hướng (0,0,1); không tạo x/0 hoặc y/0."
+    },
+    {
+      "item_id": "THPT-G12-B15-W03",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O03",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Qua (-1,1,2),u=(2,0,3). Viết cả tham số và dạng chính tắc đúng.",
+      "answer": "(-1+2t,1,2+3t); y=1, (x+1)/2=(z−2)/3",
+      "solution": "Do thành phần y của hướng bằng 0 nên y phải cố định bằng 1; kiểm ngược bằng t.",
+      "rubric": [
+        "2đ xét chính xác thành phần hướng bằng 0; 1đ viết dạng chính tắc/chuyển đúng; 1đ kiểm dạng tham số; 1đ nói rõ vì sao không chia 0."
+      ],
+      "rubric_label": "Rubric Written /5 (chấm theo từng bước) /5"
+    },
+    {
+      "item_id": "THPT-G12-B15-C04",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O04",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 1,
+      "stem": "d=(t,2t,3). Điểm M(2,4,3) thuộc d?",
+      "answer": "Có",
+      "solution": "t=2 thỏa x=2,y=4,z cố định 3."
+    },
+    {
+      "item_id": "THPT-G12-B15-P04",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O04",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 2,
+      "stem": "d=(1+2t,3−t,0). M(5,1,0) thuộc d?",
+      "answer": "Có",
+      "solution": "t=2 thỏa x=5,y=1,z=0."
+    },
+    {
+      "item_id": "THPT-G12-B15-A04",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O04",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Vị trí p(t)=(1+t,2+t,3−t). Tại t=3 drone ở đâu?",
+      "answer": "(4,5,0)",
+      "solution": "Thay cùng t=3 cho ba tọa độ."
+    },
+    {
+      "item_id": "THPT-G12-B15-W04",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O04",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "d=(2−t,1+2t,3t). Kiểm M(0,5,6) và N(0,5,5).",
+      "answer": "M thuộc d, N không",
+      "solution": "M yêu cầu t=2: x=0,y=5,z=6; N cùng x,y đòi t=2 nhưng z phải là 6 khác 5.",
+      "rubric": [
+        "2đ giải tham số t từ tọa độ có hệ số khác 0; 1đ kiểm tọa độ thứ hai; 1đ kiểm tọa độ thứ ba và kết luận; 1đ nêu quy tắc cùng một t."
+      ],
+      "rubric_label": "Rubric Written /5 (chấm theo từng bước) /5"
+    },
+    {
+      "item_id": "THPT-G12-B15-C05",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O05",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 1,
+      "stem": "u=(1,2,0),v=(2,4,0). Hai hướng?",
+      "answer": "Cùng phương",
+      "solution": "v=2u."
+    },
+    {
+      "item_id": "THPT-G12-B15-P05",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O05",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 2,
+      "stem": "u=(1,0,1),v=(1,0,-1). Hai hướng?",
+      "answer": "Vuông góc",
+      "solution": "u·v=1−1=0."
+    },
+    {
+      "item_id": "THPT-G12-B15-A05",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O05",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Hai hành lang có hướng (2,1,0),(-1,2,0). Các hướng vuông góc?",
+      "answer": "Có",
+      "solution": "Tích vô hướng −2+2=0."
+    },
+    {
+      "item_id": "THPT-G12-B15-W05",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O05",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Chứng minh u=(1,2,-1) vuông góc v=(2,-1,0) và song song w=(3,6,-3).",
+      "answer": "u·v=0 và w=3u",
+      "solution": "u·v=2−2+0=0; w=3u. Cần thêm giao điểm để gọi hai đường thẳng vuông góc hình học.",
+      "rubric": [
+        "2đ tính dot và kiểm cùng phương đúng; 1đ kết luận hướng vuông góc; 1đ kết luận hướng song song; 1đ phân biệt hướng với quan hệ giao nhau hình học."
+      ],
+      "rubric_label": "Rubric Written /5 (chấm theo từng bước) /5"
+    },
+    {
+      "item_id": "THPT-G12-B15-C06",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O06",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 1,
+      "stem": "d1=(t,0,0), d2=(0,s,0). Có giao?",
+      "answer": "Cắt tại O",
+      "solution": "x,y buộc t=s=0, z đều 0; hai hướng không cùng phương."
+    },
+    {
+      "item_id": "THPT-G12-B15-P06",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O06",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 2,
+      "stem": "d1=(t,1,0), d2=(0,s,1). Quan hệ?",
+      "answer": "Chéo nhau",
+      "solution": "Không thể giao vì z luôn là 0 và 1; hai hướng độc lập."
+    },
+    {
+      "item_id": "THPT-G12-B15-A06",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O06",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Hai cáp d1=(t,0,2),d2=(0,s,2). Chúng giao đâu?",
+      "answer": "(0,0,2)",
+      "solution": "Từ x=y=0 t=s=0; cùng cao độ z=2."
+    },
+    {
+      "item_id": "THPT-G12-B15-W06",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O06",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Chứng minh d1=(1+t,t,0), d2=(0,s,1) chéo nhau.",
+      "answer": "Không giao và khác hướng",
+      "solution": "Mọi điểm d1 có z=0, d2 có z=1 nên không giao; hướng (1,1,0) và (0,1,0) không cùng phương.",
+      "rubric": [
+        "2đ lập hệ giao với hai tham số t,s; 1đ xét hai tọa độ; 1đ kiểm tọa độ còn lại và khác hướng; 1đ kết luận chéo/giao có căn cứ."
+      ],
+      "rubric_label": "Rubric Written /5 (chấm theo từng bước) /5"
+    },
+    {
+      "item_id": "THPT-G12-B15-C07",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O07",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 1,
+      "stem": "d=(1+t,0,1), P:x=3. Tìm giao.",
+      "answer": "(3,0,1)",
+      "solution": "1+t=3 ⇒ t=2."
+    },
+    {
+      "item_id": "THPT-G12-B15-P07",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O07",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 2,
+      "stem": "d=(1+2t,t,3−t), P:x+y+z=8. Tìm giao.",
+      "answer": "(5,2,1)",
+      "solution": "Tổng 4+2t=8 ⇒ t=2; điểm (5,2,1)."
+    },
+    {
+      "item_id": "THPT-G12-B15-A07",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O07",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Quỹ đạo drone (2t,0,5−t), t≥0, chạm mặt đất z=0 ở đâu?",
+      "answer": "(10,0,0) khi t=5",
+      "solution": "Giải 5−t=0 ⇒ t=5; tọa độ (10,0,0)."
+    },
+    {
+      "item_id": "THPT-G12-B15-W07",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O07",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Tìm giao d=(1+t,2−t,3+2t) với P:x−2y+z=10, kiểm kết quả.",
+      "answer": "(3,0,7)",
+      "solution": "Thế vào vế trái: 1+t−2(2−t)+3+2t=5t ⇒ t=2, điểm (3,0,7), 3+0+7=10.",
+      "rubric": [
+        "2đ thế đúng ba tham số vào phương trình mặt phẳng; 1đ giải t; 1đ viết và kiểm giao điểm; 1đ nêu trường hợp 0/1/vô số nghiệm."
+      ],
+      "rubric_label": "Rubric Written /5 (chấm theo từng bước) /5"
+    },
+    {
+      "item_id": "THPT-G12-B16-C01",
+      "lesson_id": "B16",
+      "outcome_id": "G12-CHV-B16-O01",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 1,
+      "stem": "u=(1,0,0),v=(0,1,0). Góc?",
+      "answer": "90°",
+      "solution": "Dot=0 nên cosθ=0."
+    },
+    {
+      "item_id": "THPT-G12-B16-P01",
+      "lesson_id": "B16",
+      "outcome_id": "G12-CHV-B16-O01",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 2,
+      "stem": "u=(1,1,0),v=(1,-1,0). Góc?",
+      "answer": "90°",
+      "solution": "Dot=1−1=0."
+    },
+    {
+      "item_id": "THPT-G12-B16-A01",
+      "lesson_id": "B16",
+      "outcome_id": "G12-CHV-B16-O01",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Hai hướng (1,0,0) và (1,1,0) tạo góc mấy độ?",
+      "answer": "45°",
+      "solution": "Cosθ=1/√2, góc45°."
+    },
+    {
+      "item_id": "THPT-G12-B16-W01",
+      "lesson_id": "B16",
+      "outcome_id": "G12-CHV-B16-O01",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Góc giữa u=(1,1,1) và v=(1,1,-1). Tính cos góc, giải thích trị tuyệt đối.",
+      "answer": "cosθ=1/3; θ=arccos(1/3)",
+      "solution": "dot=1+1−1=1; hai chuẩn √3, cos=|1|/3. Đảo chiều v không đổi góc đường thẳng.",
+      "rubric": [
+        "2đ tìm đúng hai vectơ hướng và tích vô hướng; 1đ tính hai chuẩn; 1đ lấy trị tuyệt đối và kết luận cos/góc; 1đ giải thích góc đường thẳng không tù."
+      ],
+      "rubric_label": "Rubric Written /5 (chấm theo từng bước) /5"
+    },
+    {
+      "item_id": "THPT-G12-B16-C02",
+      "lesson_id": "B16",
+      "outcome_id": "G12-CHV-B16-O02",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 1,
+      "stem": "u=(1,0,0) và mặt z=0 tạo góc?",
+      "answer": "0°",
+      "solution": "u·n=0 nên sinθ=0."
+    },
+    {
+      "item_id": "THPT-G12-B16-P02",
+      "lesson_id": "B16",
+      "outcome_id": "G12-CHV-B16-O02",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 2,
+      "stem": "u=(0,0,1) và mặt z=0 tạo góc?",
+      "answer": "90°",
+      "solution": "|u·n|/(|u||n|)=1."
+    },
+    {
+      "item_id": "THPT-G12-B16-A02",
+      "lesson_id": "B16",
+      "outcome_id": "G12-CHV-B16-O02",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Đường dốc hướng (3,0,4) so với nền z=0 có góc?",
+      "answer": "arcsin(4/5) ≈53.13°",
+      "solution": "Độ tăng theo pháp tuyến z là4 trên quãng dài5, sinθ=4/5."
+    },
+    {
+      "item_id": "THPT-G12-B16-W02",
+      "lesson_id": "B16",
+      "outcome_id": "G12-CHV-B16-O02",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "u=(1,2,2), (P):z=0. Tìm sin và góc đường–mặt.",
+      "answer": "sinθ=2/3; θ=arcsin(2/3)",
+      "solution": "n=(0,0,1), |u|=3, dot=2 nên sinθ=2/3.",
+      "rubric": [
+        "2đ nhận hướng u và pháp tuyến n; 1đ tính tích vô hướng và chuẩn; 1đ dùng đúng sin để tìm góc; 1đ kiểm trường hợp song song/vuông góc."
+      ],
+      "rubric_label": "Rubric Written /5 (chấm theo từng bước) /5"
+    },
+    {
+      "item_id": "THPT-G12-B16-C03",
+      "lesson_id": "B16",
+      "outcome_id": "G12-CHV-B16-O03",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 1,
+      "stem": "Hai mặt z=0 và x=0 tạo góc?",
+      "answer": "90°",
+      "solution": "Pháp tuyến vuông góc."
+    },
+    {
+      "item_id": "THPT-G12-B16-P03",
+      "lesson_id": "B16",
+      "outcome_id": "G12-CHV-B16-O03",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 2,
+      "stem": "Hai mặt x+y=0 và x−y=0 tạo góc?",
+      "answer": "90°",
+      "solution": "n1·n2=1−1=0."
+    },
+    {
+      "item_id": "THPT-G12-B16-A03",
+      "lesson_id": "B16",
+      "outcome_id": "G12-CHV-B16-O03",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Mái z=x và nền z=0 tạo góc?",
+      "answer": "45°",
+      "solution": "n_mái=(-1,0,1),n_nền=(0,0,1), cos=1/√2."
+    },
+    {
+      "item_id": "THPT-G12-B16-W03",
+      "lesson_id": "B16",
+      "outcome_id": "G12-CHV-B16-O03",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Góc giữa P:x+2y+2z=0 và Q:z=0?",
+      "answer": "cosθ=2/3, θ=arccos(2/3)",
+      "solution": "nP=(1,2,2), |nP|=3, nQ=(0,0,1), cos=2/3.",
+      "rubric": [
+        "2đ tìm đúng pháp tuyến của cả hai mặt; 1đ tính dot/chuẩn; 1đ dùng cos trị tuyệt đối; 1đ so sánh với công thức góc đường–mặt."
+      ],
+      "rubric_label": "Rubric Written /5 (chấm theo từng bước) /5"
+    },
+    {
+      "item_id": "THPT-G12-B16-C04",
+      "lesson_id": "B16",
+      "outcome_id": "G12-CHV-B16-O04",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 1,
+      "stem": "u=(0,0,1), mặt z=0. Quan hệ hướng?",
+      "answer": "Đường vuông góc mặt",
+      "solution": "u cùng phương n=(0,0,1), góc90°."
+    },
+    {
+      "item_id": "THPT-G12-B16-P04",
+      "lesson_id": "B16",
+      "outcome_id": "G12-CHV-B16-O04",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 2,
+      "stem": "u=(1,0,0), mặt z=0. Góc?",
+      "answer": "0°",
+      "solution": "u·n=0, hướng song song mặt."
+    },
+    {
+      "item_id": "THPT-G12-B16-A04",
+      "lesson_id": "B16",
+      "outcome_id": "G12-CHV-B16-O04",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Thang máy đi theo hướng Oz; sàn nằm z=2. Góc đường với sàn?",
+      "answer": "90°",
+      "solution": "Oz cùng phương pháp tuyến mặt sàn."
+    },
+    {
+      "item_id": "THPT-G12-B16-W04",
+      "lesson_id": "B16",
+      "outcome_id": "G12-CHV-B16-O04",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "u=(1,1,0) và P:x−y=0. Chứng minh góc0 và cho biết điều kiện để đường nằm trọn trong P.",
+      "answer": "u·n=0; phải có điểm xuất phát nằm trong P",
+      "solution": "n=(1,-1,0); u·n=1−1=0. Nếu M0∈P thì mọi M0+t u∈P, ngược lại song song phân biệt.",
+      "rubric": [
+        "2đ tính dot u·n; 1đ phân biệt u·n=0 và u∥n; 1đ kiểm điểm gốc để nói nằm trong hay song song; 1đ kết luận góc đúng."
+      ],
+      "rubric_label": "Rubric Written /5 (chấm theo từng bước) /5"
+    },
+    {
+      "item_id": "THPT-G12-B16-C05",
+      "lesson_id": "B16",
+      "outcome_id": "G12-CHV-B16-O05",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 1,
+      "stem": "Đường có hướng (1,0,1) so với nền ngang?",
+      "answer": "45°",
+      "solution": "Độ cao1 trên độ dài√2."
+    },
+    {
+      "item_id": "THPT-G12-B16-P05",
+      "lesson_id": "B16",
+      "outcome_id": "G12-CHV-B16-O05",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 2,
+      "stem": "Pháp tuyến mái n=(0,3,4); mặt đất n0=(0,0,1). Góc hai mặt?",
+      "answer": "arccos(4/5) ≈36.87°",
+      "solution": "Cos góc giữa pháp tuyến =4/5."
+    },
+    {
+      "item_id": "THPT-G12-B16-A05",
+      "lesson_id": "B16",
+      "outcome_id": "G12-CHV-B16-O05",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Một mái có n=(0,3,4) và nền z=0; độ nghiêng?",
+      "answer": "≈36.87°",
+      "solution": "Lấy arccos(|n·n0|/(|n||n0|))=arccos(4/5)."
+    },
+    {
+      "item_id": "THPT-G12-B16-W05",
+      "lesson_id": "B16",
+      "outcome_id": "G12-CHV-B16-O05",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Một thanh chống có hướng (6,0,8) dài 10m. Tính sin góc với nền và độ cao tăng sau đoạn đó.",
+      "answer": "sinθ=4/5, độ cao8m",
+      "solution": "Chuẩn u=10, thành phần z=8; sinθ=8/10=4/5, độ cao tăng8m.",
+      "rubric": [
+        "2đ xác định độ dài dốc và thành phần độ cao; 1đ thiết lập sinθ=Δh/L; 1đ kết quả góc/độ cao; 1đ kiểm đơn vị và ý nghĩa thực tiễn."
+      ],
+      "rubric_label": "Rubric Written /5 (chấm theo từng bước) /5"
+    },
+    {
+      "item_id": "THPT-G12-B17-C01",
+      "lesson_id": "B17",
+      "outcome_id": "G12-CHV-B17-O01",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 1,
+      "stem": "Tâm O, bán kính2, phương trình?",
+      "answer": "x²+y²+z²=4",
+      "solution": "M cách O đúng2 nên OM²=4."
+    },
+    {
+      "item_id": "THPT-G12-B17-P01",
+      "lesson_id": "B17",
+      "outcome_id": "G12-CHV-B17-O01",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 2,
+      "stem": "C(2,0,-1),R=3. Viết phương trình.",
+      "answer": "(x−2)²+y²+(z+1)²=9",
+      "solution": "Trừ đúng tọa độ tâm, R²=9."
+    },
+    {
+      "item_id": "THPT-G12-B17-A01",
+      "lesson_id": "B17",
+      "outcome_id": "G12-CHV-B17-O01",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Bộ phát sóng tâm (0,0,5), bán kính 10m. Biên phủ 3D?",
+      "answer": "x²+y²+(z−5)²=100",
+      "solution": "Mặt cầu bán kính10m quanh tâm; vùng phủ là bất đẳng thức ≤100 chứ không phải phương trình bề mặt."
+    },
+    {
+      "item_id": "THPT-G12-B17-W01",
+      "lesson_id": "B17",
+      "outcome_id": "G12-CHV-B17-O01",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "C(-1,2,0), R=√5. Lập phương trình mặt cầu và chứng minh R>0.",
+      "answer": "(x+1)²+(y−2)²+z²=5",
+      "solution": "Thế tâm cho vế trái0; R²=5 dương, dùng công thức chuẩn.",
+      "rubric": [
+        "2đ xác định tâm C và bán kính R>0; 1đ lập ba hiệu bình phương; 1đ ghi chính xác R²; 1đ phân biệt bề mặt cầu với khối cầu."
+      ],
+      "rubric_label": "Rubric Written /5 (chấm theo từng bước) /5"
+    },
+    {
+      "item_id": "THPT-G12-B17-C02",
+      "lesson_id": "B17",
+      "outcome_id": "G12-CHV-B17-O02",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 1,
+      "stem": "x²+y²+z²−2x=0 có tâm và bán kính?",
+      "answer": "C(1,0,0), R=1",
+      "solution": "(x−1)²+y²+z²=1."
+    },
+    {
+      "item_id": "THPT-G12-B17-P02",
+      "lesson_id": "B17",
+      "outcome_id": "G12-CHV-B17-O02",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 2,
+      "stem": "x²+y²+z²+2x−4y+6z+5=0 có tâm, R?",
+      "answer": "C(-1,2,-3), R=3",
+      "solution": "Hoàn chỉnh: (x+1)²+(y−2)²+(z+3)²=1+4+9−5=9."
+    },
+    {
+      "item_id": "THPT-G12-B17-A02",
+      "lesson_id": "B17",
+      "outcome_id": "G12-CHV-B17-O02",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "x²+y²+z²+4=0 có là mặt cầu thực?",
+      "answer": "Không",
+      "solution": "Tổng ba bình phương ≥0 nên không thể bằng −4; R²<0."
+    },
+    {
+      "item_id": "THPT-G12-B17-W02",
+      "lesson_id": "B17",
+      "outcome_id": "G12-CHV-B17-O02",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Hoàn chỉnh và phân loại x²+y²+z²−4x+2y−2z+1=0.",
+      "answer": "C(2,-1,1), R=√5",
+      "solution": "Chuyển về (x−2)²+(y+1)²+(z−1)²=5; R²=4+1+1−1=5>0.",
+      "rubric": [
+        "2đ hoàn chỉnh ba bình phương; 1đ tìm đúng tâm; 1đ tính R² và R; 1đ xét điều kiện R²>0 và trường hợp suy biến."
+      ],
+      "rubric_label": "Rubric Written /5 (chấm theo từng bước) /5"
+    },
+    {
+      "item_id": "THPT-G12-B17-C03",
+      "lesson_id": "B17",
+      "outcome_id": "G12-CHV-B17-O03",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 1,
+      "stem": "C=O,R=3,P(1,1,1). Vị trí?",
+      "answer": "Trong khối cầu",
+      "solution": "OP²=3<9."
+    },
+    {
+      "item_id": "THPT-G12-B17-P03",
+      "lesson_id": "B17",
+      "outcome_id": "G12-CHV-B17-O03",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 2,
+      "stem": "C(1,0,0),R=2,P(4,0,0). Vị trí?",
+      "answer": "Ngoài khối cầu",
+      "solution": "CP²=(4−1)²=9>4."
+    },
+    {
+      "item_id": "THPT-G12-B17-A03",
+      "lesson_id": "B17",
+      "outcome_id": "G12-CHV-B17-O03",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Mặt cầu tâm (0,0,3), R=5 cắt nền z=0 theo vòng tròn bán kính?",
+      "answer": "4m",
+      "solution": "Khoảng cách tâm-nền3; r²=25−9=16 nên r=4."
+    },
+    {
+      "item_id": "THPT-G12-B17-W03",
+      "lesson_id": "B17",
+      "outcome_id": "G12-CHV-B17-O03",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "C(1,2,2),R=3. Phân loại P(4,2,2), Q(1,2,0), Z(1,2,6).",
+      "answer": "P trên; Q trong; Z ngoài",
+      "solution": "CP²=9, CQ²=4, CZ²=16, so với R²=9.",
+      "rubric": [
+        "2đ tính ba khoảng cách bình phương so với tâm; 1đ so với R²; 1đ phân loại đủ từng điểm; 1đ phân biệt trong khối cầu và trên mặt cầu."
+      ],
+      "rubric_label": "Rubric Written /5 (chấm theo từng bước) /5"
+    },
+    {
+      "item_id": "THPT-G12-B17-C04",
+      "lesson_id": "B17",
+      "outcome_id": "G12-CHV-B17-O04",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 1,
+      "stem": "A=(0,0,0),B=(2,0,0). Mặt cầu?",
+      "answer": "(x−1)²+y²+z²=1",
+      "solution": "Tâm (1,0,0), R=1."
+    },
+    {
+      "item_id": "THPT-G12-B17-P04",
+      "lesson_id": "B17",
+      "outcome_id": "G12-CHV-B17-O04",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 2,
+      "stem": "A(1,1,1), B(3,1,1). Mặt cầu?",
+      "answer": "(x−2)²+(y−1)²+(z−1)²=1",
+      "solution": "Trung điểm(2,1,1), R=1."
+    },
+    {
+      "item_id": "THPT-G12-B17-A04",
+      "lesson_id": "B17",
+      "outcome_id": "G12-CHV-B17-O04",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Cáp đối diện A(0,0,0),B(0,6,8). Tâm và bán kính mặt cầu đường kính AB?",
+      "answer": "C(0,3,4), R=5",
+      "solution": "AB=10, trung điểm (0,3,4), R=5."
+    },
+    {
+      "item_id": "THPT-G12-B17-W04",
+      "lesson_id": "B17",
+      "outcome_id": "G12-CHV-B17-O04",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "A(-1,0,2),B(3,2,0) là hai đầu đường kính. Viết mặt cầu và kiểm A,B.",
+      "answer": "(x−1)²+(y−1)²+(z−1)²=6",
+      "solution": "C=(1,1,1), AB²=4²+2²+(−2)²=24 nên R²=6. CA²=CB²=6.",
+      "rubric": [
+        "2đ tính đúng trung điểm AB; 1đ tính AB² và chia 4; 1đ lập phương trình; 1đ kiểm cả A và B trên mặt cầu."
+      ],
+      "rubric_label": "Rubric Written /5 (chấm theo từng bước) /5"
+    },
+    {
+      "item_id": "THPT-G12-B17-C05",
+      "lesson_id": "B17",
+      "outcome_id": "G12-CHV-B17-O05",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 1,
+      "stem": "C=O, R=3, mặt z=3 phân loại?",
+      "answer": "Tiếp xúc",
+      "solution": "h=3=R."
+    },
+    {
+      "item_id": "THPT-G12-B17-P05",
+      "lesson_id": "B17",
+      "outcome_id": "G12-CHV-B17-O05",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 2,
+      "stem": "C(0,0,1),R=5, mặt z=0 cắt theo vòng tròn bán kính?",
+      "answer": "2√6",
+      "solution": "h=1<5, r=√(25−1)=√24=2√6."
+    },
+    {
+      "item_id": "THPT-G12-B17-A05",
+      "lesson_id": "B17",
+      "outcome_id": "G12-CHV-B17-O05",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Vùng phát sóng tâm (0,0,10),R=6m có chạm nền z=0 không?",
+      "answer": "Không",
+      "solution": "h=10>R=6, không có điểm chung."
+    },
+    {
+      "item_id": "THPT-G12-B17-W05",
+      "lesson_id": "B17",
+      "outcome_id": "G12-CHV-B17-O05",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "C(1,-2,3), R=4, P:2x−y+2z+2=0. Chứng minh tiếp xúc và tìm tiếp điểm.",
+      "answer": "Tiếp xúc tại H(-5/3,-2/3,1/3)",
+      "solution": "h=|2+2+6+2|/3=12/3=4; pháp tuyến n=(2,-1,2); H=C−(12/9)n=(-5/3,-2/3,1/3), H∈P.",
+      "rubric": [
+        "2đ tính khoảng cách h từ tâm tới mặt phẳng; 1đ so với R; 1đ tìm bán kính thiết diện hoặc tiếp điểm; 1đ kiểm kết luận và điều kiện h<R/h=R/h>R."
+      ],
+      "rubric_label": "Rubric Written /5 (chấm theo từng bước) /5"
+    }
+  ],
+  "help": [
+    {
+      "help_id": "HELP-G12-B14-01",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O01",
+      "optional_after_b17": false,
+      "steps": [
+        "**Nhận ra lỗi:** Lấy chính vectơ nằm trong mặt phẳng làm pháp tuyến hoặc quên kiểm tích có hướng khác 0.",
+        "**Quay lại tiền đề:** Tích vô hướng bằng 0, tích có hướng và định nghĩa hai vectơ không cùng phương.",
+        "**Ví dụ chữa nhỏ:** Tính u·n với u=(1,2,0),n=(2,-1,0). → 0. Giải thích cơ sở: Hai hướng độc lập trong mặt phẳng xác định một pháp tuyến; không chọn tích có hướng bằng 0.",
+        "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Tính tích có hướng rồi thử lại hai tích vô hướng bằng 0.",
+        "**Quay lại cùng outcome:** làm lại `THPT-G12-B14-C01` rồi `THPT-G12-B14-P01`; xem đáp án/HELP không tự tạo Mastery."
+      ],
+      "return_item": "THPT-G12-B14-C01",
+      "practice_item": "THPT-G12-B14-P01"
+    },
+    {
+      "help_id": "HELP-G12-B14-02",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O02",
+      "optional_after_b17": false,
+      "steps": [
+        "**Nhận ra lỗi:** Đổi dấu nhầm hệ số tự do hoặc viết pháp tuyến bằng vectơ chỉ phương.",
+        "**Quay lại tiền đề:** Tích vô hướng; tọa độ hiệu M−M0.",
+        "**Ví dụ chữa nhỏ:** Thay (1,2,3) vào x+2y−z−2. → 0. Giải thích cơ sở: M nằm trên (P) khi vectơ M0M vuông góc n; nhân vô hướng bằng 0 tạo phương trình bậc nhất.",
+        "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Thế đúng điểm đã cho vào phương trình cuối để kiểm hệ số tự do.",
+        "**Quay lại cùng outcome:** làm lại `THPT-G12-B14-C02` rồi `THPT-G12-B14-P02`; xem đáp án/HELP không tự tạo Mastery."
+      ],
+      "return_item": "THPT-G12-B14-C02",
+      "practice_item": "THPT-G12-B14-P02"
+    },
+    {
+      "help_id": "HELP-G12-B14-03",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O03",
+      "optional_after_b17": false,
+      "steps": [
+        "**Nhận ra lỗi:** Dùng tích vô hướng của AB và AC thay cho tích có hướng hoặc quên xét thẳng hàng.",
+        "**Quay lại tiền đề:** Hiệu tọa độ, hai hướng AB, AC, tích có hướng.",
+        "**Ví dụ chữa nhỏ:** Kiểm A(0,0,1),B(1,0,1),C(0,1,1) thuộc z=1. → Đều đúng. Giải thích cơ sở: Hai vectơ AB và AC không song song nằm trên cùng mặt phẳng; AB×AC là pháp tuyến.",
+        "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Tìm hai hướng, tích có hướng, dùng công thức điểm–pháp tuyến và thử B,C.",
+        "**Quay lại cùng outcome:** làm lại `THPT-G12-B14-C03` rồi `THPT-G12-B14-P03`; xem đáp án/HELP không tự tạo Mastery."
+      ],
+      "return_item": "THPT-G12-B14-C03",
+      "practice_item": "THPT-G12-B14-P03"
+    },
+    {
+      "help_id": "HELP-G12-B14-04",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O04",
+      "optional_after_b17": false,
+      "steps": [
+        "**Nhận ra lỗi:** Hiểu nhầm mặt phẳng chứa Oy thì nhất thiết y=0.",
+        "**Quay lại tiền đề:** Hai vectơ không cùng phương, pháp tuyến, định nghĩa chứa một trục.",
+        "**Ví dụ chữa nhỏ:** Vectơ n=(0,1,-2) có vuông góc Ox? → Có. Giải thích cơ sở: Mặt phẳng chứa mọi dịch chuyển theo hai hướng độc lập; n vuông góc cả hai.",
+        "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Chuyển điều kiện song song/chứa trục thành hai hướng trước khi viết phương trình.",
+        "**Quay lại cùng outcome:** làm lại `THPT-G12-B14-C04` rồi `THPT-G12-B14-P04`; xem đáp án/HELP không tự tạo Mastery."
+      ],
+      "return_item": "THPT-G12-B14-C04",
+      "practice_item": "THPT-G12-B14-P04"
+    },
+    {
+      "help_id": "HELP-G12-B14-05",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O05",
+      "optional_after_b17": false,
+      "steps": [
+        "**Nhận ra lỗi:** Thấy hai phương trình khác dấu rồi vội kết luận chúng cắt nhau.",
+        "**Quay lại tiền đề:** Hai pháp tuyến và tích vô hướng.",
+        "**Ví dụ chữa nhỏ:** n=(1,2,3),m=(2,4,6) có cùng phương? → Có. Giải thích cơ sở: Góc giữa hai mặt phẳng được đo qua góc nhọn của hai pháp tuyến; pháp tuyến cùng phương là hai mặt phẳng song song/trùng.",
+        "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: So sánh n trước; kiểm một điểm nếu hai n cùng phương; dùng dot=0 để kết luận vuông góc.",
+        "**Quay lại cùng outcome:** làm lại `THPT-G12-B14-C05` rồi `THPT-G12-B14-P05`; xem đáp án/HELP không tự tạo Mastery."
+      ],
+      "return_item": "THPT-G12-B14-C05",
+      "practice_item": "THPT-G12-B14-P05"
+    },
+    {
+      "help_id": "HELP-G12-B14-06",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O06",
+      "optional_after_b17": false,
+      "steps": [
+        "**Nhận ra lỗi:** Bỏ dấu trị tuyệt đối hoặc quên căn dưới mẫu.",
+        "**Quay lại tiền đề:** Trị tuyệt đối, căn bậc hai, vectơ pháp tuyến.",
+        "**Ví dụ chữa nhỏ:** Chuẩn của n=(2,-2,1) bằng bao nhiêu? → 3. Giải thích cơ sở: Giá trị Ax0+By0+Cz0+D đo độ lệch có dấu; chia độ dài n để ra khoảng cách không âm.",
+        "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Thay số → lấy trị tuyệt đối → chia chuẩn pháp tuyến; kiểm đơn vị và liệu điểm có nằm trên mặt.",
+        "**Quay lại cùng outcome:** làm lại `THPT-G12-B14-C06` rồi `THPT-G12-B14-P06`; xem đáp án/HELP không tự tạo Mastery."
+      ],
+      "return_item": "THPT-G12-B14-C06",
+      "practice_item": "THPT-G12-B14-P06"
+    },
+    {
+      "help_id": "HELP-G12-B14-07",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O07",
+      "optional_after_b17": true,
+      "steps": [
+        "**Nhận ra lỗi:** Dùng R trực tiếp làm bán kính vùng phủ trên sàn dù tâm ở trên cao.",
+        "**Quay lại tiền đề:** Khoảng cách từ tâm tới mặt phẳng và hệ thức Pythagoras trong tam giác vuông.",
+        "**Ví dụ chữa nhỏ:** Nếu R=5 và h=4, r bằng bao nhiêu? → 3. Giải thích cơ sở: Mặt phẳng cách tâm cầu h nhỏ hơn R sẽ tạo đường tròn bán kính r bởi r²+h²=R².",
+        "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Tính khoảng cách tâm tới mặt phẳng trước, không đồng nhất R của cầu với r của thiết diện.",
+        "**Quay lại cùng outcome:** làm lại `THPT-G12-B14-C07` rồi `THPT-G12-B14-P07`; xem đáp án/HELP không tự tạo Mastery."
+      ],
+      "return_item": "THPT-G12-B14-C07",
+      "practice_item": "THPT-G12-B14-P07"
+    },
+    {
+      "help_id": "HELP-G12-B15-01",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O01",
+      "optional_after_b17": false,
+      "steps": [
+        "**Nhận ra lỗi:** Dùng ba tham số t khác nhau cho ba tọa độ, vô tình tạo mặt phẳng.",
+        "**Quay lại tiền đề:** Cộng vectơ và tọa độ điểm M0+t u.",
+        "**Ví dụ chữa nhỏ:** Tại t=0, M0+t u bằng gì? → M0. Giải thích cơ sở: Tham số t đo bao nhiêu lần vectơ hướng được cộng vào vị trí ban đầu.",
+        "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Chọn M0 và u rồi viết đủ ba tọa độ theo cùng một t.",
+        "**Quay lại cùng outcome:** làm lại `THPT-G12-B15-C01` rồi `THPT-G12-B15-P01`; xem đáp án/HELP không tự tạo Mastery."
+      ],
+      "return_item": "THPT-G12-B15-C01",
+      "practice_item": "THPT-G12-B15-P01"
+    },
+    {
+      "help_id": "HELP-G12-B15-02",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O02",
+      "optional_after_b17": false,
+      "steps": [
+        "**Nhận ra lỗi:** Lấy hiệu tọa độ sai hoặc hai điểm trùng nhau vẫn nói xác định một đường thẳng duy nhất.",
+        "**Quay lại tiền đề:** Trừ tọa độ hai điểm và phương trình tham số.",
+        "**Ví dụ chữa nhỏ:** AB nếu A=(1,2,3),B=(2,3,4)? → (1,1,1). Giải thích cơ sở: Hai điểm phân biệt tạo hướng AB, mọi điểm đường thẳng có dạng A+tAB.",
+        "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Tính AB rồi viết tham số; kiểm A ở t=0 và B ở t=1.",
+        "**Quay lại cùng outcome:** làm lại `THPT-G12-B15-C02` rồi `THPT-G12-B15-P02`; xem đáp án/HELP không tự tạo Mastery."
+      ],
+      "return_item": "THPT-G12-B15-C02",
+      "practice_item": "THPT-G12-B15-P02"
+    },
+    {
+      "help_id": "HELP-G12-B15-03",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O03",
+      "optional_after_b17": false,
+      "steps": [
+        "**Nhận ra lỗi:** Viết (x−1)/0 vì tưởng công thức luôn có ba phân số.",
+        "**Quay lại tiền đề:** Quy tắc chia và ý nghĩa tham số x−x0=a t.",
+        "**Ví dụ chữa nhỏ:** Có thể chia cho 0 trong chính tắc không? → Không. Giải thích cơ sở: Khử chung t chỉ khi thành phần hướng được đem chia khác 0; nếu một thành phần bằng 0, tọa độ đó là hằng.",
+        "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Kiểm hướng trước khi chuyển; giữ một t chung hoặc điều kiện tọa độ cố định.",
+        "**Quay lại cùng outcome:** làm lại `THPT-G12-B15-C03` rồi `THPT-G12-B15-P03`; xem đáp án/HELP không tự tạo Mastery."
+      ],
+      "return_item": "THPT-G12-B15-C03",
+      "practice_item": "THPT-G12-B15-P03"
+    },
+    {
+      "help_id": "HELP-G12-B15-04",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O04",
+      "optional_after_b17": false,
+      "steps": [
+        "**Nhận ra lỗi:** Chỉ kiểm được x rồi bỏ qua y,z.",
+        "**Quay lại tiền đề:** Nghiệm phương trình bậc nhất và tính nhất quán ba tọa độ.",
+        "**Ví dụ chữa nhỏ:** Để M=(2,4,3) thuộc d=(t,2t,3) thì t? → 2. Giải thích cơ sở: Thuộc đường thẳng khi có một giá trị t duy nhất (hoặc phù hợp) thỏa đồng thời cả ba phương trình.",
+        "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Giải t từ một tọa độ có hệ số khác 0 rồi thay vào hai tọa độ còn lại.",
+        "**Quay lại cùng outcome:** làm lại `THPT-G12-B15-C04` rồi `THPT-G12-B15-P04`; xem đáp án/HELP không tự tạo Mastery."
+      ],
+      "return_item": "THPT-G12-B15-C04",
+      "practice_item": "THPT-G12-B15-P04"
+    },
+    {
+      "help_id": "HELP-G12-B15-05",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O05",
+      "optional_after_b17": false,
+      "steps": [
+        "**Nhận ra lỗi:** Từ u·v=0 kết luận ngay hai đường thẳng luôn cắt nhau trong không gian.",
+        "**Quay lại tiền đề:** Tích vô hướng và vectơ cùng phương.",
+        "**Ví dụ chữa nhỏ:** (1,0,1)·(1,0,-1)=? → 0. Giải thích cơ sở: Điều kiện song song của hướng khác với vị trí hình học của hai đường thẳng; hướng vuông góc không đủ khẳng định hai đường thẳng cắt nhau.",
+        "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Phân biệt xét hướng và xét vị trí; nêu rõ kết luận đang dùng.",
+        "**Quay lại cùng outcome:** làm lại `THPT-G12-B15-C05` rồi `THPT-G12-B15-P05`; xem đáp án/HELP không tự tạo Mastery."
+      ],
+      "return_item": "THPT-G12-B15-C05",
+      "practice_item": "THPT-G12-B15-P05"
+    },
+    {
+      "help_id": "HELP-G12-B15-06",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O06",
+      "optional_after_b17": false,
+      "steps": [
+        "**Nhận ra lỗi:** Thấy đường vẽ cắt trên giấy rồi kết luận thật sự giao trong không gian.",
+        "**Quay lại tiền đề:** Giải hệ ba tọa độ với hai tham số t,s và xét hướng.",
+        "**Ví dụ chữa nhỏ:** d1 có z=0, d2 có z=1 có giao không? → Không. Giải thích cơ sở: Hai đường không cùng phương mà không có nghiệm chung trong ba phương trình thì chéo nhau; hình chiếu 2D không đủ.",
+        "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Viết hai t,s khác nhau, giải hai tọa độ rồi bắt buộc kiểm tọa độ thứ ba.",
+        "**Quay lại cùng outcome:** làm lại `THPT-G12-B15-C06` rồi `THPT-G12-B15-P06`; xem đáp án/HELP không tự tạo Mastery."
+      ],
+      "return_item": "THPT-G12-B15-C06",
+      "practice_item": "THPT-G12-B15-P06"
+    },
+    {
+      "help_id": "HELP-G12-B15-07",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O07",
+      "optional_after_b17": false,
+      "steps": [
+        "**Nhận ra lỗi:** Tìm giao chỉ qua một tọa độ hoặc quên kiểm trường hợp hệ số t bằng 0.",
+        "**Quay lại tiền đề:** Thế phương trình tham số vào phương trình mặt phẳng.",
+        "**Ví dụ chữa nhỏ:** (t,1,2t) thuộc x+z=6 khi t=? → 2. Giải thích cơ sở: Giao điểm tương ứng giá trị t thỏa cùng lúc điều kiện mặt phẳng và đường thẳng.",
+        "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Thế đủ ba tọa độ, giải t, thay lại cả hai phương trình.",
+        "**Quay lại cùng outcome:** làm lại `THPT-G12-B15-C07` rồi `THPT-G12-B15-P07`; xem đáp án/HELP không tự tạo Mastery."
+      ],
+      "return_item": "THPT-G12-B15-C07",
+      "practice_item": "THPT-G12-B15-P07"
+    },
+    {
+      "help_id": "HELP-G12-B16-01",
+      "lesson_id": "B16",
+      "outcome_id": "G12-CHV-B16-O01",
+      "optional_after_b17": false,
+      "steps": [
+        "**Nhận ra lỗi:** Quên |dot| nên có góc 120° giữa hai đường thẳng theo định nghĩa góc nhọn.",
+        "**Quay lại tiền đề:** Tích vô hướng và chuẩn Euclid của vectơ.",
+        "**Ví dụ chữa nhỏ:** |(1,0,0)·(-1,0,0)|=? → 1. Giải thích cơ sở: Góc giữa hai đường thẳng là góc không tù của hai hướng, nên dùng trị tuyệt đối tích vô hướng.",
+        "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Tính dot, hai chuẩn rồi lấy arccos; kiểm góc trong [0°,90°].",
+        "**Quay lại cùng outcome:** làm lại `THPT-G12-B16-C01` rồi `THPT-G12-B16-P01`; xem đáp án/HELP không tự tạo Mastery."
+      ],
+      "return_item": "THPT-G12-B16-C01",
+      "practice_item": "THPT-G12-B16-P01"
+    },
+    {
+      "help_id": "HELP-G12-B16-02",
+      "lesson_id": "B16",
+      "outcome_id": "G12-CHV-B16-O02",
+      "optional_after_b17": false,
+      "steps": [
+        "**Nhận ra lỗi:** Dùng cos thay vì sin khiến đường song song mặt bị tính là 90°.",
+        "**Quay lại tiền đề:** Pháp tuyến mặt phẳng và vectơ chỉ phương đường thẳng.",
+        "**Ví dụ chữa nhỏ:** sin góc đường–mặt khi u·n=0? → 0. Giải thích cơ sở: Góc đường–mặt là góc phụ (tổng 90°) với góc nhọn giữa đường thẳng và pháp tuyến; vì vậy dùng sin chứ không dùng cos.",
+        "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Tách hướng của đường và pháp tuyến của mặt; áp dụng sin và kiểm giới hạn.",
+        "**Quay lại cùng outcome:** làm lại `THPT-G12-B16-C02` rồi `THPT-G12-B16-P02`; xem đáp án/HELP không tự tạo Mastery."
+      ],
+      "return_item": "THPT-G12-B16-C02",
+      "practice_item": "THPT-G12-B16-P02"
+    },
+    {
+      "help_id": "HELP-G12-B16-03",
+      "lesson_id": "B16",
+      "outcome_id": "G12-CHV-B16-O03",
+      "optional_after_b17": false,
+      "steps": [
+        "**Nhận ra lỗi:** Dùng sin thay cos đối với hai mặt phẳng.",
+        "**Quay lại tiền đề:** Pháp tuyến của mỗi mặt và tích vô hướng.",
+        "**Ví dụ chữa nhỏ:** Góc hai mặt khi pháp tuyến vuông góc? → 90°. Giải thích cơ sở: Góc nhọn giữa hai mặt phẳng bằng góc nhọn giữa các pháp tuyến, khác với góc đường–mặt.",
+        "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Đọc hệ số của hai phương trình mặt phẳng rồi dùng cos chuẩn có trị tuyệt đối.",
+        "**Quay lại cùng outcome:** làm lại `THPT-G12-B16-C03` rồi `THPT-G12-B16-P03`; xem đáp án/HELP không tự tạo Mastery."
+      ],
+      "return_item": "THPT-G12-B16-C03",
+      "practice_item": "THPT-G12-B16-P03"
+    },
+    {
+      "help_id": "HELP-G12-B16-04",
+      "lesson_id": "B16",
+      "outcome_id": "G12-CHV-B16-O04",
+      "optional_after_b17": false,
+      "steps": [
+        "**Nhận ra lỗi:** Nhầm u·n=0 thành đường vuông góc mặt.",
+        "**Quay lại tiền đề:** Quan hệ u·n=0 và u∥n.",
+        "**Ví dụ chữa nhỏ:** Đường u song song mặt khi u·n=? → 0. Giải thích cơ sở: u·n=0 nghĩa là hướng đường song song mặt (hoặc nằm trong mặt); u∥n nghĩa là đường vuông góc mặt.",
+        "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Vẽ sơ đồ hướng và pháp tuyến, dùng dot và kiểm điểm khi cần.",
+        "**Quay lại cùng outcome:** làm lại `THPT-G12-B16-C04` rồi `THPT-G12-B16-P04`; xem đáp án/HELP không tự tạo Mastery."
+      ],
+      "return_item": "THPT-G12-B16-C04",
+      "practice_item": "THPT-G12-B16-P04"
+    },
+    {
+      "help_id": "HELP-G12-B16-05",
+      "lesson_id": "B16",
+      "outcome_id": "G12-CHV-B16-O05",
+      "optional_after_b17": false,
+      "steps": [
+        "**Nhận ra lỗi:** Lấy cos = độ cao/độ dốc rồi diễn giải thành góc với nền ngang.",
+        "**Quay lại tiền đề:** Tam giác vuông, độ cao so với đoạn đường, pháp tuyến sàn.",
+        "**Ví dụ chữa nhỏ:** Đường hướng (6,0,8) dài mấy? → 10. Giải thích cơ sở: Độ cao là thành phần vuông góc sàn, nên sinθ=độ tăng cao/độ dài đường dốc.",
+        "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Dùng độ tăng cao thay cho thành phần ngang, và kiểm sin≤1.",
+        "**Quay lại cùng outcome:** làm lại `THPT-G12-B16-C05` rồi `THPT-G12-B16-P05`; xem đáp án/HELP không tự tạo Mastery."
+      ],
+      "return_item": "THPT-G12-B16-C05",
+      "practice_item": "THPT-G12-B16-P05"
+    },
+    {
+      "help_id": "HELP-G12-B17-01",
+      "lesson_id": "B17",
+      "outcome_id": "G12-CHV-B17-O01",
+      "optional_after_b17": false,
+      "steps": [
+        "**Nhận ra lỗi:** Dùng vế phải R thay vì R² hoặc nhầm dấu của tọa độ tâm.",
+        "**Quay lại tiền đề:** Khoảng cách giữa hai điểm và chuẩn vectơ.",
+        "**Ví dụ chữa nhỏ:** R=3 thì R² bằng mấy? → 9. Giải thích cơ sở: Mặt cầu gồm các điểm M cách tâm C đúng R; bình phương hai vế là phương trình ba bình phương.",
+        "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Viết bình phương khoảng cách CM=R và kiểm lại tâm, R.",
+        "**Quay lại cùng outcome:** làm lại `THPT-G12-B17-C01` rồi `THPT-G12-B17-P01`; xem đáp án/HELP không tự tạo Mastery."
+      ],
+      "return_item": "THPT-G12-B17-C01",
+      "practice_item": "THPT-G12-B17-P01"
+    },
+    {
+      "help_id": "HELP-G12-B17-02",
+      "lesson_id": "B17",
+      "outcome_id": "G12-CHV-B17-O02",
+      "optional_after_b17": false,
+      "steps": [
+        "**Nhận ra lỗi:** Lấy R bằng R² hoặc bỏ qua trường hợp R² âm.",
+        "**Quay lại tiền đề:** Hằng đẳng thức hoàn chỉnh bình phương.",
+        "**Ví dụ chữa nhỏ:** (x−2)² triển khai thành gì? → x²−4x+4. Giải thích cơ sở: Hoàn chỉnh mỗi bình phương để đưa phương trình thành tổng bình phương bằng R².",
+        "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Nhóm theo biến, hoàn chỉnh bình phương và kiểm dấu/radius trước khi kết luận.",
+        "**Quay lại cùng outcome:** làm lại `THPT-G12-B17-C02` rồi `THPT-G12-B17-P02`; xem đáp án/HELP không tự tạo Mastery."
+      ],
+      "return_item": "THPT-G12-B17-C02",
+      "practice_item": "THPT-G12-B17-P02"
+    },
+    {
+      "help_id": "HELP-G12-B17-03",
+      "lesson_id": "B17",
+      "outcome_id": "G12-CHV-B17-O03",
+      "optional_after_b17": false,
+      "steps": [
+        "**Nhận ra lỗi:** Nói điểm ở trong mặt cầu khi CM=R, lẫn biên và miền trong.",
+        "**Quay lại tiền đề:** Khoảng cách hai điểm, bình phương số dương.",
+        "**Ví dụ chữa nhỏ:** R²=9 và CM²=4 thì M ở đâu? → Trong. Giải thích cơ sở: So sánh CM² với R² tránh khai căn không cần thiết.",
+        "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Tính CM² và so với R²; kết luận đúng từ.",
+        "**Quay lại cùng outcome:** làm lại `THPT-G12-B17-C03` rồi `THPT-G12-B17-P03`; xem đáp án/HELP không tự tạo Mastery."
+      ],
+      "return_item": "THPT-G12-B17-C03",
+      "practice_item": "THPT-G12-B17-P03"
+    },
+    {
+      "help_id": "HELP-G12-B17-04",
+      "lesson_id": "B17",
+      "outcome_id": "G12-CHV-B17-O04",
+      "optional_after_b17": false,
+      "steps": [
+        "**Nhận ra lỗi:** Dùng A làm tâm hoặc đặt R=AB²/2.",
+        "**Quay lại tiền đề:** Trung điểm và khoảng cách giữa hai điểm.",
+        "**Ví dụ chữa nhỏ:** Trung điểm của (0,0,0) và (2,4,0)? → (1,2,0). Giải thích cơ sở: Tâm là trung điểm đoạn AB, bán kính bằng nửa AB.",
+        "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Tính trung điểm, tính AB² rồi chia 4 để được R², lập phương trình.",
+        "**Quay lại cùng outcome:** làm lại `THPT-G12-B17-C04` rồi `THPT-G12-B17-P04`; xem đáp án/HELP không tự tạo Mastery."
+      ],
+      "return_item": "THPT-G12-B17-C04",
+      "practice_item": "THPT-G12-B17-P04"
+    },
+    {
+      "help_id": "HELP-G12-B17-05",
+      "lesson_id": "B17",
+      "outcome_id": "G12-CHV-B17-O05",
+      "optional_after_b17": false,
+      "steps": [
+        "**Nhận ra lỗi:** Thấy phương trình mặt phẳng có nghiệm rồi kết luận luôn là cát tuyến của mặt cầu.",
+        "**Quay lại tiền đề:** Khoảng cách từ điểm đến mặt phẳng và Pythagoras.",
+        "**Ví dụ chữa nhỏ:** Nếu h>R, mặt phẳng cắt cầu không? → Không. Giải thích cơ sở: So sánh khoảng cách h từ tâm đến mặt phẳng với R: h<R cắt theo đường tròn, h=R tiếp xúc, h>R không giao.",
+        "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Tính h từ pháp tuyến và tâm; so sánh với R, rồi mới tính bán kính thiết diện nếu cần.",
+        "**Quay lại cùng outcome:** làm lại `THPT-G12-B17-C05` rồi `THPT-G12-B17-P05`; xem đáp án/HELP không tự tạo Mastery."
+      ],
+      "return_item": "THPT-G12-B17-C05",
+      "practice_item": "THPT-G12-B17-P05"
+    }
+  ],
+  "end_references": [
+    {
+      "placement_id": "END-CHV-14-01",
+      "item_id": "THPT-G12-B14-A01",
+      "outcome_id": "G12-CHV-B14-O01"
+    },
+    {
+      "placement_id": "END-CHV-14-02",
+      "item_id": "THPT-G12-B14-A02",
+      "outcome_id": "G12-CHV-B14-O02"
+    },
+    {
+      "placement_id": "END-CHV-14-03",
+      "item_id": "THPT-G12-B14-A03",
+      "outcome_id": "G12-CHV-B14-O03"
+    },
+    {
+      "placement_id": "END-CHV-14-04",
+      "item_id": "THPT-G12-B14-A04",
+      "outcome_id": "G12-CHV-B14-O04"
+    },
+    {
+      "placement_id": "END-CHV-14-05",
+      "item_id": "THPT-G12-B14-A05",
+      "outcome_id": "G12-CHV-B14-O05"
+    },
+    {
+      "placement_id": "END-CHV-14-06",
+      "item_id": "THPT-G12-B14-A06",
+      "outcome_id": "G12-CHV-B14-O06"
+    },
+    {
+      "placement_id": "END-CHV-14-07",
+      "item_id": "THPT-G12-B14-A07",
+      "outcome_id": "G12-CHV-B14-O07"
+    },
+    {
+      "placement_id": "END-CHV-15-01",
+      "item_id": "THPT-G12-B15-A01",
+      "outcome_id": "G12-CHV-B15-O01"
+    },
+    {
+      "placement_id": "END-CHV-15-02",
+      "item_id": "THPT-G12-B15-A02",
+      "outcome_id": "G12-CHV-B15-O02"
+    },
+    {
+      "placement_id": "END-CHV-15-03",
+      "item_id": "THPT-G12-B15-A03",
+      "outcome_id": "G12-CHV-B15-O03"
+    },
+    {
+      "placement_id": "END-CHV-15-04",
+      "item_id": "THPT-G12-B15-A04",
+      "outcome_id": "G12-CHV-B15-O04"
+    },
+    {
+      "placement_id": "END-CHV-15-05",
+      "item_id": "THPT-G12-B15-A05",
+      "outcome_id": "G12-CHV-B15-O05"
+    },
+    {
+      "placement_id": "END-CHV-15-06",
+      "item_id": "THPT-G12-B15-A06",
+      "outcome_id": "G12-CHV-B15-O06"
+    },
+    {
+      "placement_id": "END-CHV-15-07",
+      "item_id": "THPT-G12-B15-A07",
+      "outcome_id": "G12-CHV-B15-O07"
+    },
+    {
+      "placement_id": "END-CHV-16-01",
+      "item_id": "THPT-G12-B16-A01",
+      "outcome_id": "G12-CHV-B16-O01"
+    },
+    {
+      "placement_id": "END-CHV-16-02",
+      "item_id": "THPT-G12-B16-A02",
+      "outcome_id": "G12-CHV-B16-O02"
+    },
+    {
+      "placement_id": "END-CHV-16-03",
+      "item_id": "THPT-G12-B16-A03",
+      "outcome_id": "G12-CHV-B16-O03"
+    },
+    {
+      "placement_id": "END-CHV-16-04",
+      "item_id": "THPT-G12-B16-A04",
+      "outcome_id": "G12-CHV-B16-O04"
+    },
+    {
+      "placement_id": "END-CHV-16-05",
+      "item_id": "THPT-G12-B16-A05",
+      "outcome_id": "G12-CHV-B16-O05"
+    },
+    {
+      "placement_id": "END-CHV-17-01",
+      "item_id": "THPT-G12-B17-A01",
+      "outcome_id": "G12-CHV-B17-O01"
+    },
+    {
+      "placement_id": "END-CHV-17-02",
+      "item_id": "THPT-G12-B17-A02",
+      "outcome_id": "G12-CHV-B17-O02"
+    },
+    {
+      "placement_id": "END-CHV-17-03",
+      "item_id": "THPT-G12-B17-A03",
+      "outcome_id": "G12-CHV-B17-O03"
+    },
+    {
+      "placement_id": "END-CHV-17-04",
+      "item_id": "THPT-G12-B17-A04",
+      "outcome_id": "G12-CHV-B17-O04"
+    },
+    {
+      "placement_id": "END-CHV-17-05",
+      "item_id": "THPT-G12-B17-A05",
+      "outcome_id": "G12-CHV-B17-O05"
+    }
+  ]
+}

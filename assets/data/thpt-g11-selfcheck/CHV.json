@@ -1,0 +1,30 @@
+{
+  "schema": "thpt-g11-reviewed-selfcheck-v1",
+  "scope": "SGK_CHAPTER_SELF_CHECK",
+  "chapter": "CHV",
+  "chapter_label": "V",
+  "original_public_source_blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+  "original_public_bank_version": "THPT-G11-CHV-B15-B17-R03",
+  "review_chain": "R02 original independent Academic+PED+source fidelity PASS, R03 S1 pagination Delta_B only",
+  "mode": "PUBLIC_CANONICAL_REFERENCE_ONLY",
+  "assessment_note": "13 original PUBLIC Practice/Application IDs representing 13 distinct published skills, voluntary manual self-comparison after Final Submit. Not 17 independent private RD1; no official Readiness or Skill Mastery.",
+  "mastery_credit": false,
+  "independent_readiness_credit": false,
+  "persist_results": false,
+  "public_client_answer_keys": true,
+  "item_refs": [
+    "THPT-G11-CHV-B15-P01",
+    "THPT-G11-CHV-B15-P02",
+    "THPT-G11-CHV-B15-P05",
+    "THPT-G11-CHV-B15-P06",
+    "THPT-G11-CHV-B16-P01",
+    "THPT-G11-CHV-B16-P03",
+    "THPT-G11-CHV-B16-P04",
+    "THPT-G11-CHV-B16-P06",
+    "THPT-G11-CHV-B16-P07",
+    "THPT-G11-CHV-B17-P01",
+    "THPT-G11-CHV-B17-P02",
+    "THPT-G11-CHV-B17-P03",
+    "THPT-G11-CHV-B17-P05"
+  ]
+}

@@ -1,0 +1,35 @@
+/* DELTA_A_UI: same Golden R4 cards/modal for all G12 chapter Core/Practice. */
+.thpt-g12-golden-card{--thpt-grade-accent:#8751c7;--thpt-grade-border:#d9c5f4;--thpt-grade-soft:#f5edfd}
+.thpt-g12-golden-card .thpt-r4-practice-open{min-height:44px}
+.thpt-g12-golden-dialog{border-top:4px solid #8650d0}
+.thpt-g12-golden-dialog .thpt-r4-modal-lesson-badge{background:#8650d0;color:white}
+.thpt-g12-golden-dialog .thpt-r4-modal-main{min-width:0;overflow-wrap:anywhere}
+/* Use the SAME disclosed-answer control layout as approved G10/G11 R4. */
+.thpt-g12-golden-dialog .thpt-r4-formative-actions details.thpt-g12-golden-solution{
+ background:transparent;border:0;border-radius:0;margin:0;padding:0;white-space:normal;
+}
+.thpt-g12-golden-dialog .thpt-r4-formative-actions details.thpt-g12-golden-d6{
+ background:transparent;border:0;border-radius:0;margin:0;padding:0;white-space:normal;
+}
+.thpt-g12-golden-dialog .thpt-g12-golden-d6[open]{flex:1 0 100%}
+.thpt-g12-golden-dialog .thpt-g12-golden-d6-body{
+ margin:8px 0 0;padding:12px 14px;border:1px solid var(--md-default-fg-color--lightest);
+ border-radius:8px;background:var(--md-code-bg-color);line-height:1.6;overflow-wrap:anywhere;
+}
+.thpt-g12-golden-dialog .thpt-g12-golden-d6-steps{padding-left:1.3rem;margin:10px 0}
+.thpt-g12-golden-dialog .thpt-g12-golden-d6-steps>li{margin:0 0 7px}
+.thpt-g12-golden-dialog .thpt-g12-golden-d6-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.thpt-g12-golden-dialog .thpt-g12-golden-d6-link{
+ min-height:44px;padding:7px 12px;border:1px solid var(--md-default-fg-color--lightest);
+ border-radius:8px;background:var(--md-default-bg-color);color:var(--md-primary-fg-color);cursor:pointer;
+}
+.thpt-g12-golden-dialog .thpt-g12-golden-d6-link:focus-visible{outline:2px solid var(--md-accent-fg-color);outline-offset:2px}
+.thpt-g12-golden-d6-intro{margin:6px 0 12px;font-size:.92rem;line-height:1.5;color:var(--md-default-fg-color--light)}
+
+.thpt-g12-golden-dialog .thpt-r4-modal-question-nav button{min-height:44px}
+@media(max-width:680px){.thpt-g12-golden-dialog{width:calc(100vw - 16px);max-height:95vh}.thpt-g12-golden-dialog .thpt-r4-modal-main{max-height:calc(95vh - 85px)}}
+
+/* AP2 formula parity: reuse reviewed ChIV safe text/math rendering in the modal. */
+.thpt-g12-golden-dialog .thpt-g12-golden-math-display{overflow-x:auto;max-width:100%}
+.thpt-g12-golden-dialog .thpt-g12-golden-math-inline{overflow-wrap:anywhere}
+.thpt-g12-golden-dialog sup,.thpt-g12-golden-dialog sub{font-size:.75em;line-height:0}

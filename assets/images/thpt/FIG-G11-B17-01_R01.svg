@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="440" viewBox="0 0 800 440" role="img" aria-labelledby="title desc">
+<title id="title">FIG-G11-B17-01: Giới hạn khác giá trị tại điểm: gián đoạn</title>
+<desc id="desc">Đồ thị y=x+1 khi x khác 1, có vòng tròn rỗng ở (1,2) và chấm đặc ở (1,0). Vì giới hạn tại x=1 bằng 2 nhưng giá trị f(1)=0, hàm không liên tục tại điểm đó.</desc>
+<rect width="800" height="440" rx="20" fill="#f8fafc"/>
+<text x="400" y="42" fill="#172554" text-anchor="middle" font-size="23" font-family="Arial" font-weight="700">Giới hạn khác giá trị tại điểm: gián đoạn</text>
+<line x1="80" y1="350" x2="690" y2="350" stroke="#0f172a" stroke-width="2.5"/>
+<path d="M690 350 l-12 -6 v12 z" fill="#0f172a"/>
+<line x1="220" y1="370" x2="220" y2="70" stroke="#0f172a" stroke-width="2.5"/>
+<path d="M220 70 l-6 12 h12 z" fill="#0f172a"/>
+<text x="702" y="357" font-size="17" fill="#0f172a">x</text><text x="202" y="63" font-size="17" fill="#0f172a">y</text><text x="205" y="370" font-size="15">0</text><line x1="120" y1="340.83" x2="650" y2="97.92" stroke="#2563eb" stroke-width="4"/>
+<line x1="340" y1="350" x2="340" y2="240" stroke="#64748b" stroke-width="1.5" stroke-dasharray="6 7"/>
+<circle cx="340" cy="240" r="10" fill="#f8fafc" stroke="#2563eb" stroke-width="4"/>
+<circle cx="340" cy="350" r="7" fill="#dc2626" stroke="#fff" stroke-width="2"/>
+<text x="328" y="370" font-size="16" fill="#0f172a">1</text>
+<text x="197" y="245" font-size="15" fill="#0f172a">2</text>
+<text x="367" y="236" font-size="16" fill="#1d4ed8">Giới hạn = 2 (điểm rỗng)</text>
+<text x="370" y="336" font-size="16" fill="#b91c1c">f(1)=0 (chấm đặc)</text>
+<text x="400" y="420" text-anchor="middle" font-family="Arial" font-size="13" fill="#334155">Minh họa theo tọa độ và điều kiện đã ghi; không đo độ dài trực tiếp từ ảnh.</text>
+</svg>

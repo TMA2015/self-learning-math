@@ -1,0 +1,121 @@
+/* G11 SGK supplement, scoped. Keeps Golden R4, THCS untouched. */
+[data-g11-supp-view]{min-width:0;max-width:100%;overflow-wrap:anywhere}
+.g11-supp-topic{margin:24px 0 32px;padding:20px;border:1px solid var(--md-default-fg-color--lightest);border-radius:14px;background:var(--md-default-bg-color);min-width:0;scroll-margin-top:6rem}
+.g11-supp-topic h2,.g11-supp-topic h3{overflow-wrap:anywhere}
+.g11-supp-first-try{padding:14px 16px;border-left:3px solid var(--md-accent-fg-color);background:var(--md-code-bg-color)}
+.g11-supp-example{padding:12px 16px;margin:10px 0;border:1px solid var(--md-default-fg-color--lightest);border-radius:9px}
+.g11-supp-help{margin:10px 0;padding:10px 14px;border:1px solid var(--md-default-fg-color--lightest);border-radius:9px}
+.g11-supp-help summary{cursor:pointer;font-weight:650}
+.g11-supp-help li{margin:7px 0}
+.g11-supp-figure{max-width:100%;overflow:auto}
+.g11-supp-figure img{max-width:100%;height:auto;display:block;margin:auto}
+.g11-supp-exercise{padding:16px;margin:18px 0;border:1px solid var(--md-default-fg-color--lightest);border-radius:12px;scroll-margin-top:6rem}
+.g11-supp-answer{width:100%;min-height:92px;max-width:100%;resize:vertical;display:block;margin:12px 0;padding:12px;border:1px solid var(--md-default-fg-color--lighter);border-radius:8px;background:var(--md-default-bg-color);color:var(--md-default-fg-color);font:inherit;font-size:16px}
+.g11-supp-submit,.g11-supp-link{display:inline-flex;align-items:center;min-height:44px;padding:10px 15px;margin:8px 0;border:1px solid var(--md-accent-fg-color);border-radius:9px;background:var(--md-accent-fg-color);color:var(--md-default-bg-color)!important;font-weight:700;cursor:pointer;text-decoration:none!important}
+.g11-supp-submit:disabled{opacity:.55;cursor:default}
+.g11-supp-solution{margin:10px 0;padding:14px;background:var(--md-code-bg-color);border:1px solid var(--md-default-fg-color--lightest);border-radius:9px}
+.g11-supp-solution[hidden]{display:none!important}
+.g11-supp-feedback{font-size:.88rem}
+.g11-supp-math-inline{white-space:normal}
+.g11-supp-math-display{overflow:auto}
+@media (max-width:640px){.g11-supp-topic{padding:12px}.g11-supp-exercise{padding:12px}.g11-supp-submit,.g11-supp-link{width:100%;justify-content:center}}
+
+.g11-supp-paragraph,.g11-supp-first-try,.g11-supp-solution p{white-space:pre-line}
+
+/* Learner-first 2026-11-04 UI delta: in-topic activities, one PUBLIC bank. */
+.g11-supp-local-nav{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 24px}
+.g11-supp-local-nav a{display:inline-flex;align-items:center;min-height:42px;padding:8px 11px;border:1px solid var(--md-default-fg-color--lightest);border-radius:8px;text-decoration:none!important;font-weight:650;font-size:.85rem}
+.g11-supp-learning-guide{padding:14px 18px;margin-bottom:20px;background:var(--md-code-bg-color);border-radius:12px;border-left:3px solid var(--md-primary-fg-color)}
+.g11-supp-learning-guide h3{margin-top:0}
+.g11-supp-learning-guide ol{padding-left:22px;margin-bottom:0}
+.g11-supp-learning-guide li{margin:5px 0}
+.g11-supp-learning-stage{margin-top:22px;padding-top:8px;border-top:1px solid var(--md-default-fg-color--lightest)}
+.g11-supp-learning-stage>h3{font-size:1.12rem;margin-bottom:8px}
+.g11-supp-learning-stage .g11-supp-exercise{margin:12px 0}
+.g11-supp-next{display:inline-flex;min-height:44px;align-items:center;margin:12px 0;padding:10px 14px;border:1px solid var(--md-accent-fg-color);border-radius:8px;font-weight:700;text-decoration:none!important}
+.g11-supp-overview>h2{margin-top:34px}
+@media(max-width:640px){.g11-supp-local-nav a{flex:1 1 140px;justify-content:center}.g11-supp-learning-guide{padding:12px}.g11-supp-topic{margin:18px 0 24px}.g11-supp-learning-stage .g11-supp-exercise{padding:12px}}
+
+
+/* Owner P2 DELTA_A_UI: compact one-question navigation for original public
+   Core, Luyện tập, Tự luận and final self-check. No source content changes. */
+.g11-supp-deck-top{margin:12px 0 16px;max-width:100%;min-width:0}
+.g11-supp-deck-progress{margin:0 0 10px;font-weight:700;color:var(--md-default-fg-color)}
+.g11-supp-deck-jump{display:flex;flex-wrap:wrap;gap:6px;max-width:100%}
+.g11-supp-deck-number,.g11-supp-deck-step{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-width:40px;min-height:42px;padding:8px 10px;
+  border:1px solid var(--md-default-fg-color--lightest);
+  border-radius:7px;background:var(--md-code-bg-color);
+  color:var(--md-default-fg-color);font:inherit;font-size:.87rem;cursor:pointer
+}
+.g11-supp-deck-number.is-current{
+  border-color:var(--md-accent-fg-color);background:var(--md-default-bg-color);
+  font-weight:700;box-shadow:inset 0 0 0 1px var(--md-accent-fg-color)
+}
+.g11-supp-deck-number:focus-visible,.g11-supp-deck-step:focus-visible{
+  outline:3px solid var(--md-accent-fg-color);outline-offset:2px
+}
+.g11-supp-deck-step:disabled{opacity:.45;cursor:default}
+.g11-supp-deck-controls{display:flex;justify-content:space-between;gap:10px;margin:12px 0 18px}
+[data-g11-supp-deck] > .g11-supp-exercise[hidden]{display:none!important}
+@media(max-width:480px){
+ .g11-supp-deck-jump{gap:5px}
+ .g11-supp-deck-number{min-width:38px;min-height:40px;padding:7px 9px}
+ .g11-supp-deck-step{flex:1 1 45%;min-height:44px}
+}
+
+/* Reuse regular grade-11 green Golden R4 practice cards. */
+.g11-supp-golden-lesson{margin:20px 0 28px}
+.g11-supp-golden-lesson .thpt-r4-practice-card-grid{align-items:stretch}
+.g11-supp-role-panel{padding:12px 16px 18px;border-top:1px solid var(--md-default-fg-color--lightest);min-width:0}
+.g11-supp-role-panel[hidden]{display:none!important}
+.g11-supp-role-panel .g11-supp-deck-jump{flex-wrap:nowrap;overflow-x:auto;max-width:100%;padding:3px 2px 12px}
+.g11-supp-role-panel .g11-supp-deck-number{flex:0 0 auto}
+.g11-supp-role-panel .g11-supp-exercise{margin:10px 0}
+.g11-supp-return{display:inline-flex;align-items:center;min-height:44px;padding:9px 16px;margin:0 16px 15px;border:1px solid var(--thpt-grade-border,#addbcf);border-radius:9px;color:var(--thpt-grade-accent,#148477);font-weight:700;text-decoration:none!important}
+.g11-supp-path-grid{padding:16px}
+.g11-supp-overview .thpt-r4-practice-lesson{margin:22px 0}
+@media(max-width:640px){.g11-supp-role-panel{padding:10px}.g11-supp-path-grid{padding:12px}}
+
+
+/* Owner screenshot repair: actual Golden dialog + one active horizontal topic. */
+.g11-supp-dialog{box-sizing:border-box;width:min(95vw,960px);max-width:960px;max-height:min(92dvh,900px);padding:0;overflow:hidden;
+ font-family:var(--md-text-font-family,sans-serif);font-size:16px;line-height:1.65}
+.g11-supp-dialog::backdrop{background:rgba(5,15,35,.68)}
+.g11-supp-modal-head h2{margin:0!important;font-size:22px!important;line-height:1.4}
+.g11-supp-modal-head .thpt-r4-modal-meta{font-size:13px}
+.g11-supp-modal-close{min-height:42px;white-space:nowrap;border:1px solid var(--md-default-fg-color--lightest);border-radius:8px;
+ background:var(--md-code-bg-color);color:inherit;padding:8px 14px;cursor:pointer;font:inherit;font-size:14px}
+.g11-supp-modal-main{max-height:calc(min(92dvh,900px) - 94px);overflow-y:auto;padding:18px 24px}
+.g11-supp-dialog .g11-supp-role-panel{padding:0;border:0}
+.g11-supp-dialog .g11-supp-deck-jump{display:flex;flex-wrap:nowrap;overflow-x:auto}
+.g11-supp-dialog .g11-supp-exercise{font-size:16px;line-height:1.7}
+.g11-supp-dialog .g11-supp-exercise h4{font-size:19px}
+.g11-supp-dialog .g11-supp-answer{font-size:16px}
+.g11-supp-dialog .g11-supp-submit{font-size:15px}
+.g11-supp-topic-tabs{display:flex;gap:8px;overflow-x:auto;max-width:100%;padding:8px 2px 14px;margin:14px 0 22px;
+ scrollbar-width:thin;scroll-snap-type:x proximity}
+.g11-supp-topic-tab{flex:0 0 auto;max-width:260px;min-height:44px;scroll-snap-align:start;padding:9px 14px;
+ border:1px solid var(--md-default-fg-color--lightest);border-radius:9px;background:var(--md-code-bg-color);
+ color:var(--md-default-fg-color);font:inherit;font-size:14px;font-weight:650;cursor:pointer}
+.g11-supp-topic-tab.is-active,.g11-supp-topic-tab[aria-selected="true"]{border-color:#148477;
+ background:#e9f7f3;color:#12695f;font-weight:750}
+.g11-supp-topic-tab:focus-visible{outline:3px solid #148477;outline-offset:2px}
+[data-g11-supp-view] .g11-supp-topic[hidden],
+[data-g11-supp-view] .g11-supp-golden-lesson[hidden]{display:none!important}
+@media(max-width:590px){
+ .g11-supp-dialog{width:96vw;max-height:calc(100dvh - 12px);border-radius:13px}
+ .g11-supp-modal-head{padding:12px 15px}
+ .g11-supp-modal-head h2{font-size:19px!important}
+ .g11-supp-modal-main{padding:12px;max-height:calc(100dvh - 95px)}
+ .g11-supp-topic-tabs{gap:6px}
+ .g11-supp-topic-tab{max-width:205px;font-size:13px;padding:8px 11px}
+}
+
+.g11-supp-dialog .g11-supp-question-stem{font-size:20px;line-height:1.65;overflow-wrap:anywhere;font-weight:700}
+@media(max-width:590px){.g11-supp-dialog .g11-supp-question-stem{font-size:18px}}
+
+.g11-supp-dialog .g11-supp-deck-number,.g11-supp-dialog .g11-supp-deck-step{font-size:15px}
+.g11-supp-dialog .thpt-r4-eyebrow{font-size:13px}
+.g11-supp-dialog .g11-supp-deck-progress,.g11-supp-dialog .g11-supp-feedback{font-size:14px}

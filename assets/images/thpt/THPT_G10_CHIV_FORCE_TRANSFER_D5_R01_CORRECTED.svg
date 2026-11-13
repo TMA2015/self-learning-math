@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="t d">
+<title id="t">Hợp lực hai lực tại góc 120 độ và lực cân bằng đối vectơ</title>
+<desc id="d">Trục Ox hướng Đông, Oy hướng Bắc. Tại O, F1 bằng 8 N sang phải, F2 bằng 15 N theo hướng 120 độ ngược chiều kim đồng hồ, nên hợp lực R gần thẳng lên có độ dài 13 N. F3 là vectơ ngược R, hướng gần thẳng xuống dài 13 N. Mũi tên của từng vectơ đặt đúng tại điểm cuối tương ứng, không đảo chiều.</desc>
+<defs><marker id="a1" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0 0L8 3L0 6Z" fill="#1e6196"/></marker><marker id="a2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0 0L8 3L0 6Z" fill="#ae5a1e"/></marker><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0 0L8 3L0 6Z" fill="#168477"/></marker><marker id="a3" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0 0L8 3L0 6Z" fill="#b43c48"/></marker></defs>
+<rect width="960" height="600" fill="#ffffff"/>
+<g stroke="#3c4a59" stroke-width="2"><path d="M95 310H877 M465 545V68" fill="none"/></g>
+<path d="M877 310l-12 -6v12z M465 68l-6 12h12z" fill="#3c4a59"/>
+<path d="M585 310L472.5 115.14M352.5 115.14L472.5 115.14" fill="none" stroke="#98a4af" stroke-width="2" stroke-dasharray="7 6"/>
+<path d="M465 310L585 310" stroke="#1e6196" stroke-width="4.5" marker-end="url(#a1)"/>
+<path d="M465 310L352.5 115.14" stroke="#ae5a1e" stroke-width="4.5" marker-end="url(#a2)"/>
+<path d="M465 310L472.5 115.14" stroke="#168477" stroke-width="5" marker-end="url(#ar)"/>
+<path d="M465 310L457.5 504.86" stroke="#b43c48" stroke-width="5" marker-end="url(#a3)"/>
+<path d="M522 310A57 57 0 0 0 436.5 260.64" fill="none" stroke="#58677b" stroke-width="2"/>
+<circle cx="465" cy="310" r="4" fill="#263442"/>
+<g fill="#263442" font-family="Arial,sans-serif" font-size="21">
+<text x="445" y="339">O</text><text x="882" y="336">+Ox</text><text x="480" y="75">+Oy</text>
+<text x="601" y="293" fill="#1e6196">F₁ = 8 N</text>
+<text x="192.5" y="123.14" fill="#9b4b12">F₂ = 15 N</text>
+<text x="500.5" y="120.14" fill="#146e64">R = 13 N</text>
+<text x="483.5" y="488.86" fill="#b43c48">F₃ = −R, 13 N</text>
+<text x="368" y="265">120°</text>
+<text x="625" y="98" font-size="19">F₁ = (8; 0) N</text>
+<text x="625" y="126" font-size="19">F₂ = (−15/2; 15√3/2) N</text>
+<text x="625" y="154" font-size="19">R = (1/2; 15√3/2) N</text>
+<text x="625" y="182" font-size="19" fill="#b43c48">F₃ = (−1/2; −15√3/2) N</text>
+<text x="480" y="577" text-anchor="middle" font-size="18">Đường chéo hình bình hành là hợp lực; lực cân bằng ngược chiều hợp lực.</text>
+</g></svg>

@@ -1,0 +1,603 @@
+{
+  "packet_id": "G12-SGK-YEAREND-REVIEW-R00",
+  "source_git_blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
+  "review_receipt_blob": "3b5b7f70e3b68895fd976a265ae6f454f774e1cc",
+  "learning_path": "SGK_YEAR_END_REVIEW_SUPPLEMENT",
+  "mode": "CLIENT_SELF_CHECK_NO_MASTERY",
+  "private_rd1_count": 0,
+  "official_readiness": false,
+  "mastery_activation": false,
+  "stations": [
+    {
+      "outcome_id": "G12-SGK-YE-O01",
+      "title": "Biến thiên, cực trị và tối ưu hàm số"
+    },
+    {
+      "outcome_id": "G12-SGK-YE-O02",
+      "title": "Nguyên hàm và tích phân xác định"
+    },
+    {
+      "outcome_id": "G12-SGK-YE-O03",
+      "title": "Ứng dụng tích phân: chuyển động, diện tích, khối tròn xoay"
+    },
+    {
+      "outcome_id": "G12-SGK-YE-O04",
+      "title": "Vectơ, hình học Oxyz và kiểm mô hình hình chiếu"
+    },
+    {
+      "outcome_id": "G12-SGK-YE-O05",
+      "title": "Thống kê mẫu số liệu ghép nhóm"
+    },
+    {
+      "outcome_id": "G12-SGK-YE-O06",
+      "title": "Xác suất có điều kiện và Bayes"
+    }
+  ],
+  "items": [
+    {
+      "item_id": "THPT-G12-YE-M01",
+      "outcome_id": "G12-SGK-YE-O01",
+      "role": "MCQ_CORE",
+      "stem": "Cho $f(x)=x^3-3x^2-9x+4$. Trên khoảng nào $f$ nghịch biến?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$(-\\infty,-1)$"
+        },
+        {
+          "letter": "B",
+          "text": "$(-1,3)$"
+        },
+        {
+          "letter": "C",
+          "text": "$(3,+\\infty)$"
+        },
+        {
+          "letter": "D",
+          "text": "$(-\\infty,3)$"
+        }
+      ],
+      "answer": "B.",
+      "solution": "$f\\prime(x)=3x^2-6x-9=3(x+1)(x-3)$. Đạo hàm âm đúng khi $-1<x<3$; do đó đáp án B.",
+      "trap": "Không bỏ dấu ở khoảng giữa hai nghiệm đạo hàm."
+    },
+    {
+      "item_id": "THPT-G12-YE-M02",
+      "outcome_id": "G12-SGK-YE-O01",
+      "role": "MCQ_PRACTICE",
+      "stem": "Tìm giá trị lớn nhất của $g(x)=x^2-6x+12$ trên $[1,5]$.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$3$"
+        },
+        {
+          "letter": "B",
+          "text": "$5$"
+        },
+        {
+          "letter": "C",
+          "text": "$7$"
+        },
+        {
+          "letter": "D",
+          "text": "$9$"
+        }
+      ],
+      "answer": "C.",
+      "solution": "$g\\prime(x)=2(x-3)$. So sánh $g(1)=7$, $g(3)=3$, $g(5)=7$ nên giá trị lớn nhất là $7$ tại hai đầu mút.",
+      "trap": "Điểm cực tiểu $x=3$ không cho GTLN trên đoạn."
+    },
+    {
+      "item_id": "THPT-G12-YE-M03",
+      "outcome_id": "G12-SGK-YE-O01",
+      "role": "MCQ_PRACTICE",
+      "stem": "Đồ thị $y=(2x^2+1)/(x^2-4)$ có bao nhiêu đường tiệm cận phân biệt?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1$"
+        },
+        {
+          "letter": "B",
+          "text": "$2$"
+        },
+        {
+          "letter": "C",
+          "text": "$3$"
+        },
+        {
+          "letter": "D",
+          "text": "$4$"
+        }
+      ],
+      "answer": "C.",
+      "solution": "Mẫu bằng $0$ tại $x=\\pm2$, tử đều bằng $9\\ne0$: hai tiệm cận đứng $x=2$ và $x=-2$. Bậc tử và mẫu bằng nhau, tỉ số hệ số cao nhất bằng $2$: tiệm cận ngang $y=2$. Tổng là $3$.",
+      "trap": "Không đếm hai nhánh của cùng một tiệm cận thành hai đường."
+    },
+    {
+      "item_id": "THPT-G12-YE-M04",
+      "outcome_id": "G12-SGK-YE-O01",
+      "role": "MCQ_APPLICATION",
+      "stem": "Một hàm khả vi có bảng dấu $f\\prime>0$ trên $(-\\infty,0)$ và $(2,+\\infty)$, $f\\prime<0$ trên $(0,2)$, với $f(0)=3$, $f(2)=-1$. Điểm cực tiểu là điểm nào?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$(0,3)$"
+        },
+        {
+          "letter": "B",
+          "text": "$(2,-1)$"
+        },
+        {
+          "letter": "C",
+          "text": "$(0,-1)$"
+        },
+        {
+          "letter": "D",
+          "text": "$(2,3)$"
+        }
+      ],
+      "answer": "B.",
+      "solution": "Tại $x=2$ đạo hàm đổi dấu âm sang dương, nên $x=2$ là cực tiểu và tọa độ điểm là $(2,-1)$.",
+      "trap": "Xét đổi dấu của đạo hàm, không đoán theo độ lớn của hai giá trị."
+    },
+    {
+      "item_id": "THPT-G12-YE-M05",
+      "outcome_id": "G12-SGK-YE-O02",
+      "role": "MCQ_CORE",
+      "stem": "Với $x>0$, họ nguyên hàm của $3x^2-4/x$ là",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$x^3-4x+C$"
+        },
+        {
+          "letter": "B",
+          "text": "$x^3-4\\ln x+C$"
+        },
+        {
+          "letter": "C",
+          "text": "$6x-4\\ln x+C$"
+        },
+        {
+          "letter": "D",
+          "text": "$x^3+4\\ln x+C$"
+        }
+      ],
+      "answer": "B.",
+      "solution": "Vì $(x^3)\\prime=3x^2$ và $(\\ln x)\\prime=1/x$ khi $x>0$, họ nguyên hàm là $x^3-4\\ln x+C$.",
+      "trap": "Điều kiện $x>0$ cho phép dùng $\\ln x$ thay vì $\\ln|x|$."
+    },
+    {
+      "item_id": "THPT-G12-YE-M06",
+      "outcome_id": "G12-SGK-YE-O02",
+      "role": "MCQ_PRACTICE",
+      "stem": "Giá trị $\\int_0^2(3x^2-2x)\\,dx$ là",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$0$"
+        },
+        {
+          "letter": "B",
+          "text": "$2$"
+        },
+        {
+          "letter": "C",
+          "text": "$4$"
+        },
+        {
+          "letter": "D",
+          "text": "$8$"
+        }
+      ],
+      "answer": "C.",
+      "solution": "Nguyên hàm $x^3-x^2$. Tích phân bằng $(8-4)-0=4$.",
+      "trap": "Tích phân có dấu, không thay bằng diện tích tuyệt đối nếu hàm đổi dấu."
+    },
+    {
+      "item_id": "THPT-G12-YE-M07",
+      "outcome_id": "G12-SGK-YE-O02",
+      "role": "MCQ_APPLICATION",
+      "stem": "Diện tích giữa $y=x-1$, trục $Ox$ và hai đường $x=0$, $x=3$ là",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$3/2$"
+        },
+        {
+          "letter": "B",
+          "text": "$2$"
+        },
+        {
+          "letter": "C",
+          "text": "$7/2$"
+        },
+        {
+          "letter": "D",
+          "text": "$5/2$"
+        }
+      ],
+      "answer": "D.",
+      "solution": "Hàm đổi dấu tại $x=1$. Diện tích $S=\\int_0^1(1-x)dx+\\int_1^3(x-1)dx=1/2+2=5/2$.",
+      "trap": "Không được lấy giá trị tích phân có dấu $\\int_0^3(x-1)dx$ làm diện tích."
+    },
+    {
+      "item_id": "THPT-G12-YE-M08",
+      "outcome_id": "G12-SGK-YE-O03",
+      "role": "MCQ_APPLICATION",
+      "stem": "Quay miền dưới đồ thị $y=\\sqrt{3x}$, phía trên $Ox$, $0\\le x\\le3$ quanh $Ox$; thể tích bằng",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$9\\pi$"
+        },
+        {
+          "letter": "B",
+          "text": "$27\\pi/2$"
+        },
+        {
+          "letter": "C",
+          "text": "$27\\pi$"
+        },
+        {
+          "letter": "D",
+          "text": "$9\\pi/2$"
+        }
+      ],
+      "answer": "B.",
+      "solution": "Bán kính đĩa tại $x$ là $\\sqrt{3x}$, nên $V=\\pi\\int_0^3(\\sqrt{3x})^2dx=3\\pi(9/2)=27\\pi/2$.",
+      "trap": "Dùng bình phương bán kính khi quay quanh $Ox$."
+    },
+    {
+      "item_id": "THPT-G12-YE-M09",
+      "outcome_id": "G12-SGK-YE-O04",
+      "role": "MCQ_CORE",
+      "stem": "Cho năm điểm $A_1,\\dots,A_5$ trong không gian và $G$ thỏa $\\sum_{i=1}^5\\overrightarrow{GA_i}=\\vec0$. Với điểm $M$ bất kì, tổng $\\sum_{i=1}^5\\overrightarrow{MA_i}$ bằng",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\overrightarrow{MG}$"
+        },
+        {
+          "letter": "B",
+          "text": "$2\\overrightarrow{MG}$"
+        },
+        {
+          "letter": "C",
+          "text": "$4\\overrightarrow{MG}$"
+        },
+        {
+          "letter": "D",
+          "text": "$5\\overrightarrow{MG}$"
+        }
+      ],
+      "answer": "D.",
+      "solution": "Vì $\\overrightarrow{MA_i}=\\overrightarrow{MG}+\\overrightarrow{GA_i}$ và $\\sum_i\\overrightarrow{GA_i}=0$, tổng là $5\\overrightarrow{MG}$.",
+      "trap": "Vẫn phải cộng vectơ, không cộng độ dài."
+    },
+    {
+      "item_id": "THPT-G12-YE-M10",
+      "outcome_id": "G12-SGK-YE-O04",
+      "role": "MCQ_PRACTICE",
+      "stem": "Cho $\\vec a=(2,-1,3)$ và $\\vec b=(-1,4,2)$. Kết luận nào đúng?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$\\vec a\\perp\\vec b$"
+        },
+        {
+          "letter": "B",
+          "text": "$\\vec a$ cùng phương $\\vec b$"
+        },
+        {
+          "letter": "C",
+          "text": "Góc giữa hai vectơ tù"
+        },
+        {
+          "letter": "D",
+          "text": "Hai vectơ bằng nhau"
+        }
+      ],
+      "answer": "A.",
+      "solution": "Tích vô hướng $\\vec a\\cdot\\vec b=2(-1)+(-1)4+3(2)=0$. Hai vectơ đều khác $0$, nên vuông góc.",
+      "trap": "Tính tích vô hướng từ ba cặp tọa độ tương ứng, không xét từng dấu riêng."
+    },
+    {
+      "item_id": "THPT-G12-YE-M11",
+      "outcome_id": "G12-SGK-YE-O04",
+      "role": "MCQ_PRACTICE",
+      "stem": "Đường thẳng có vectơ chỉ phương $(1,2,2)$; mặt phẳng có vectơ pháp tuyến $(2,-1,2)$. Nếu $\\alpha$ là góc nhọn giữa đường và mặt phẳng thì $\\sin\\alpha$ bằng",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$4/9$"
+        },
+        {
+          "letter": "B",
+          "text": "$2/3$"
+        },
+        {
+          "letter": "C",
+          "text": "$\\sqrt5/9$"
+        },
+        {
+          "letter": "D",
+          "text": "$8/9$"
+        }
+      ],
+      "answer": "A.",
+      "solution": "$|\\vec u\\cdot\\vec n|=|2-2+4|=4$, $\\|\\vec u\\|=3$, $\\|\\vec n\\|=3$. Do đó $\\sin\\alpha=4/9$; góc đường–mặt phẳng không dùng công thức cos giữa đường và pháp tuyến.",
+      "trap": "Góc đường với pháp tuyến là góc phụ của góc đường–mặt phẳng."
+    },
+    {
+      "item_id": "THPT-G12-YE-M12",
+      "outcome_id": "G12-SGK-YE-O04",
+      "role": "MCQ_APPLICATION",
+      "stem": "Mặt phẳng đi qua $A(1,0,-2)$ và có pháp tuyến $(2,-1,3)$ có phương trình nào?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$2x-y+3z-4=0$"
+        },
+        {
+          "letter": "B",
+          "text": "$2x+y+3z+4=0$"
+        },
+        {
+          "letter": "C",
+          "text": "$2x-y+3z+4=0$"
+        },
+        {
+          "letter": "D",
+          "text": "$x-2y+3z+4=0$"
+        }
+      ],
+      "answer": "C.",
+      "solution": "$2(x-1)-y+3(z+2)=0$ rút gọn thành $2x-y+3z+4=0$. Thử thế tọa độ $A$ để kiểm.",
+      "trap": "Hằng số phải được xác định bằng tọa độ điểm, không sao chép pháp tuyến tùy ý."
+    },
+    {
+      "item_id": "THPT-G12-YE-M13",
+      "outcome_id": "G12-SGK-YE-O05",
+      "role": "MCQ_PRACTICE",
+      "stem": "Một bảng tần số ghép nhóm có các khoảng $[4,8)$, $[8,12)$, $[12,16)$. Khoảng biến thiên theo biên lớp của mẫu này là",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$8$"
+        },
+        {
+          "letter": "B",
+          "text": "$12$"
+        },
+        {
+          "letter": "C",
+          "text": "$16$"
+        },
+        {
+          "letter": "D",
+          "text": "$3$"
+        }
+      ],
+      "answer": "B.",
+      "solution": "Khoảng biến thiên xấp xỉ theo biên lớp là biên trên lớp cuối trừ biên dưới lớp đầu: $16-4=12$.",
+      "trap": "Không lấy số nhóm hay tổng tần số làm khoảng biến thiên."
+    },
+    {
+      "item_id": "THPT-G12-YE-M14",
+      "outcome_id": "G12-SGK-YE-O06",
+      "role": "MCQ_PRACTICE",
+      "stem": "Tung hai xúc xắc cân đối, phân biệt xúc xắc thứ nhất/thứ hai. Biết tổng hai mặt lớn hơn $9$, xác suất cả hai mặt đều chẵn là",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1/4$"
+        },
+        {
+          "letter": "B",
+          "text": "$1/3$"
+        },
+        {
+          "letter": "C",
+          "text": "$1/2$"
+        },
+        {
+          "letter": "D",
+          "text": "$2/3$"
+        }
+      ],
+      "answer": "C.",
+      "solution": "Có 6 kết quả có thứ tự với tổng $10,11,12$: $(4,6),(5,5),(6,4),(5,6),(6,5),(6,6)$. Chỉ $(4,6),(6,4),(6,6)$ có hai mặt chẵn: $P(\\text{cả hai chẵn}|\\text{tổng}>9)=3/6=1/2$.",
+      "trap": "Điều kiện tổng lớn hơn $9$ thu hẹp mẫu còn 6 cặp có thứ tự; không chia cho 36."
+    },
+    {
+      "item_id": "THPT-G12-YE-M15",
+      "outcome_id": "G12-SGK-YE-O06",
+      "role": "MCQ_APPLICATION",
+      "stem": "Chọn hộp $A$ với xác suất $2/5$, hộp $B$ với xác suất $3/5$. Xác suất lấy bi đỏ tương ứng là $3/4$ từ $A$ và $1/2$ từ $B$. Biết đã lấy bi đỏ, xác suất hộp được chọn là $A$ bằng",
+      "options": [
+        {
+          "letter": "A",
+          "text": "$1/2$"
+        },
+        {
+          "letter": "B",
+          "text": "$2/5$"
+        },
+        {
+          "letter": "C",
+          "text": "$3/4$"
+        },
+        {
+          "letter": "D",
+          "text": "$3/5$"
+        }
+      ],
+      "answer": "A.",
+      "solution": "$P(A|R)=\\frac{(2/5)(3/4)}{(2/5)(3/4)+(3/5)(1/2)}=\\frac{3/10}{3/10+3/10}=1/2$.",
+      "trap": "Phải đảo điều kiện bằng Bayes, không lấy $P(R|A)=3/4$."
+    },
+    {
+      "item_id": "THPT-G12-YE-W01",
+      "outcome_id": "G12-SGK-YE-O01",
+      "role": "WRITTEN",
+      "stem": "Khảo sát chiều biến thiên của $f(x)=x^3-3x^2-9x+5$, xác định và phân biệt hai điểm cực trị. Vẽ phác đồ thị dựa trên kết quả.",
+      "solution": "1. Miền xác định là $\\mathbb R$; $f\\prime(x)=3x^2-6x-9=3(x+1)(x-3)$.\n2. Đạo hàm dương khi $x<-1$ hoặc $x>3$, âm khi $-1<x<3$.\n3. Do đó $f$ tăng trên $(-\\infty,-1)$, giảm trên $(-1,3)$ rồi tăng trên $(3,+\\infty)$.\n4. $f(-1)=10$ là cực đại, $f(3)=-22$ là cực tiểu (không đồng nghĩa lớn/nhỏ nhất toàn trục).\n5. Phác đồ thị bậc ba từ trái xuống phải lên qua $(-1,10)$ và $(3,-22)$; kiểm định hình dáng bằng đạo hàm.",
+      "rubric": "- **1 điểm:** Tìm đúng miền và đạo hàm.\n- **1 điểm:** Giải đúng hai điểm dừng.\n- **1 điểm:** Suy ra đúng ba khoảng biến thiên.\n- **1 điểm:** Tính và phân loại hai cực trị.\n- **1 điểm:** Phác đồ thị phù hợp với bảng dấu và tọa độ."
+    },
+    {
+      "item_id": "THPT-G12-YE-W02",
+      "outcome_id": "G12-SGK-YE-O01",
+      "role": "WRITTEN",
+      "stem": "Tìm GTLN, GTNN của $g(x)=(x^2+1)/(x-1)$ trên đoạn $[2,4]$, chỉ rõ tại đâu đạt từng giá trị.",
+      "solution": "1. Hàm liên tục trên $[2,4]$ vì $x-1\\ne0$ trên đoạn.\n2. Viết $g(x)=x+1+2/(x-1)$, suy ra $g\\prime(x)=1-2/(x-1)^2$.\n3. Điểm dừng trong đoạn là $x=1+\\sqrt2$; $x=1-\\sqrt2$ ngoài đoạn.\n4. So sánh $g(2)=5$, $g(4)=17/3$, $g(1+\\sqrt2)=2+2\\sqrt2$ (xấp xỉ $4.828$).\n5. GTNN $2+2\\sqrt2$ tại $1+\\sqrt2$; GTLN $17/3$ tại $x=4$.",
+      "rubric": "- **1 điểm:** Kiểm tra liên tục/điều kiện trên đoạn.\n- **1 điểm:** Tính đạo hàm chính xác.\n- **1 điểm:** Chọn đủ điểm dừng thuộc đoạn.\n- **1 điểm:** Tính ba giá trị cần so sánh.\n- **1 điểm:** Kết luận đúng GTLN/GTNN và điểm đạt."
+    },
+    {
+      "item_id": "THPT-G12-YE-W03",
+      "outcome_id": "G12-SGK-YE-O02",
+      "role": "WRITTEN",
+      "stem": "Tính $I=\\int_1^e(2x+1/x)dx$. Giải thích lý do dùng $\\ln x$ thay vì $\\ln|x|$ trên đoạn lấy tích phân.",
+      "solution": "1. Đoạn $[1,e]$ thuộc $(0,+\\infty)$, nên $1/x$ liên tục và $\\ln x$ xác định.\n2. Nguyên hàm của $2x$ là $x^2$, nguyên hàm của $1/x$ là $\\ln x$ khi $x>0$.\n3. Chọn $F(x)=x^2+\\ln x$, thỏa $F\\prime(x)=2x+1/x$.\n4. Áp dụng Newton–Leibniz: $I=F(e)-F(1)=e^2+1-(1+0)=e^2$.\n5. Điều kiện $x>0$ cho phép dùng $\\ln x$; nếu miền qua $0$ thì không áp dụng công thức này trực tiếp.",
+      "rubric": "- **1 điểm:** Nêu điều kiện miền của tích phân.\n- **1 điểm:** Tìm nguyên hàm từng thành phần.\n- **1 điểm:** Kiểm tra nguyên hàm bằng đạo hàm.\n- **1 điểm:** Thế đúng cận và tính $e^2$.\n- **1 điểm:** Giải thích điều kiện $\\ln x$."
+    },
+    {
+      "item_id": "THPT-G12-YE-W04",
+      "outcome_id": "G12-SGK-YE-O02",
+      "role": "WRITTEN",
+      "stem": "Tính diện tích vùng giữa đồ thị $y=x$, trục $Ox$ và hai đường $x=-1$ và $x=2$. Giải thích vì sao không dùng ngay tích phân có dấu.",
+      "solution": "1. Đồ thị $y=x$ cắt $Ox$ tại $x=0$ nằm trong $[-1,2]$.\n2. $x<0$ trên $[-1,0)$ và $x>0$ trên $(0,2]$; diện tích bằng $\\int_{-1}^2|x|dx$.\n3. Tách $S=\\int_{-1}^0(-x)dx+\\int_0^2 xdx$.\n4. Tính hai phần lần lượt $1/2$ và $2$.\n5. Kết luận $S=5/2$ đơn vị diện tích; $\\int_{-1}^{2}x\\,dx=3/2$ không phải diện tích.",
+      "rubric": "- **1 điểm:** Xác định đúng điểm đổi dấu.\n- **1 điểm:** Nêu công thức diện tích dùng trị tuyệt đối.\n- **1 điểm:** Tách và viết hai tích phân đúng dấu.\n- **1 điểm:** Tính đúng giá trị từng phần.\n- **1 điểm:** Kết luận và phân biệt diện tích với tích phân có dấu."
+    },
+    {
+      "item_id": "THPT-G12-YE-W05",
+      "outcome_id": "G12-SGK-YE-O03",
+      "role": "WRITTEN",
+      "stem": "Trong $0\\le t\\le4$ (giây), vận tốc một vật là $v(t)=6t-t^2$ (m/s). Tính quãng đường và tốc độ trung bình trong khoảng thời gian đó; xác nhận dấu của vận tốc.",
+      "solution": "1. Viết $v(t)=t(6-t)\\ge0$ trên $[0,4]$, nên quãng đường bằng tích phân vận tốc.\n2. $S=\\int_0^4(6t-t^2)dt$.\n3. Một nguyên hàm là $3t^2-t^3/3$.\n4. $S=(3\\cdot16-64/3)-0=80/3$ m.\n5. Tốc độ trung bình $S/4=20/3$ m/s; nếu $v$ đổi dấu thì phải tích phân $|v|$ để lấy quãng đường.",
+      "rubric": "- **1 điểm:** Xét dấu $v(t)$ trước khi tính.\n- **1 điểm:** Dựng đúng tích phân quãng đường.\n- **1 điểm:** Tính đúng nguyên hàm.\n- **1 điểm:** Tính quãng đường $80/3$ m.\n- **1 điểm:** Tính tốc độ TB $20/3$ m/s và nêu giới hạn khi đổi dấu."
+    },
+    {
+      "item_id": "THPT-G12-YE-W06",
+      "outcome_id": "G12-SGK-YE-O03",
+      "role": "WRITTEN",
+      "stem": "Tìm diện tích hình phẳng kẹp giữa hai parabol–đường thẳng $y=x^2$ và $y=3x$ trên $0\\le x\\le3$.",
+      "solution": "1. Giải phương trình giao $x^2=3x$, có nghiệm $x=0$ và $x=3$.\n2. Trên $(0,3)$ có $3x>x^2$, vì $x(3-x)>0$.\n3. Diện tích $S=\\int_0^3(3x-x^2)dx$.\n4. Nguyên hàm là $3x^2/2-x^3/3$.\n5. Suy ra $S=27/2-9=9/2$ đơn vị diện tích; phải lấy đồ thị trên trừ dưới.",
+      "rubric": "- **1 điểm:** Tìm đúng giao điểm.\n- **1 điểm:** Xác định đồ thị trên/dưới.\n- **1 điểm:** Viết đúng công thức diện tích.\n- **1 điểm:** Tích phân chính xác.\n- **1 điểm:** Kết luận $9/2$ cùng điều kiện."
+    },
+    {
+      "item_id": "THPT-G12-YE-W07",
+      "outcome_id": "G12-SGK-YE-O03",
+      "role": "WRITTEN",
+      "stem": "Miền phẳng dưới cung $y=\\sqrt{4-x^2}$ phía trên trục $Ox$, $0\\le x\\le2$, quay quanh trục $Ox$. Tính thể tích, nêu hình học tương ứng.",
+      "solution": "1. Trên $[0,2]$, hàm không âm; tiết diện vuông góc $Ox$ là hình tròn bán kính $r(x)=\\sqrt{4-x^2}$.\n2. Dùng phương pháp đĩa: $V=\\pi\\int_0^2r(x)^2dx$.\n3. Vậy $V=\\pi\\int_0^2(4-x^2)dx$.\n4. Thế cận: $\\pi[4x-x^3/3]_0^2=\\pi(8-8/3)=16\\pi/3$.\n5. Đây là nửa khối cầu bán kính $2$; kiểm bằng $\\frac12\\cdot\\frac43\\pi 2^3=16\\pi/3$.",
+      "rubric": "- **1 điểm:** Miền/bán kính chính xác.\n- **1 điểm:** Chọn đúng công thức đĩa.\n- **1 điểm:** Thiết lập tích phân đúng.\n- **1 điểm:** Tính đúng $16\\pi/3$.\n- **1 điểm:** Đối chiếu nửa khối cầu/đơn vị thể tích."
+    },
+    {
+      "item_id": "THPT-G12-YE-W08",
+      "outcome_id": "G12-SGK-YE-O04",
+      "role": "WRITTEN",
+      "stem": "Cho tứ diện $ABCD$ với $A(0,0,0)$, $B(2,0,0)$, $C(0,3,0)$, $D(0,0,4)$. Viết phương trình mặt phẳng $(BCD)$, khoảng cách $d(A,(BCD))$ và thể tích tứ diện.",
+      "solution": "1. Vì $B,C,D$ là ba giao điểm trục, $(BCD):x/2+y/3+z/4=1$, tương đương $6x+4y+3z-12=0$.\n2. Pháp tuyến là $(6,4,3)$, có độ dài $\\sqrt{61}$.\n3. Khoảng cách từ $A$ đến mặt phẳng là $|{-12}|/\\sqrt{61}=12/\\sqrt{61}$.\n4. $\\vec{AB}=(2,0,0)$, $\\vec{AC}=(0,3,0)$, $\\vec{AD}=(0,0,4)$ nên $|\\det|=24$.\n5. Thể tích $V=|\\det(\\vec{AB},\\vec{AC},\\vec{AD})|/6=4$; thay vào $V=\\frac13S_{BCD}h$ với $S_{BCD}=\\sqrt{61}$ để kiểm.",
+      "rubric": "- **1 điểm:** Dựng đúng mặt phẳng và hệ số.\n- **1 điểm:** Lấy đúng pháp tuyến/norm.\n- **1 điểm:** Tính đúng khoảng cách.\n- **1 điểm:** Tính đúng định thức/vectơ.\n- **1 điểm:** Kết luận $V=4$ và đối chiếu thể tích."
+    },
+    {
+      "item_id": "THPT-G12-YE-W09",
+      "outcome_id": "G12-SGK-YE-O04",
+      "role": "WRITTEN",
+      "stem": "Đường thẳng $d:(x,y,z)=(1,2,0)+t(2,-1,1)$ và mặt phẳng $(P):x+y+z=6$. Tìm giao điểm và giải thích vì sao duy nhất.",
+      "solution": "1. Vectơ chỉ phương của $d$ là $\\vec u=(2,-1,1)$; pháp tuyến của $(P)$ là $\\vec n=(1,1,1)$.\n2. $\\vec u\\cdot\\vec n=2\\ne0$ nên $d$ cắt $(P)$ tại một điểm duy nhất.\n3. Thế $x=1+2t$, $y=2-t$, $z=t$ vào phương trình: $3+2t=6$.\n4. Giải $t=3/2$, từ đó $M=(4,1/2,3/2)$.\n5. Kiểm $4+1/2+3/2=6$ và tọa độ thỏa tham số đường thẳng.",
+      "rubric": "- **1 điểm:** Chỉ ra vectơ và pháp tuyến.\n- **1 điểm:** Chứng minh tính duy nhất bằng tích vô hướng.\n- **1 điểm:** Lập phương trình tham số giao.\n- **1 điểm:** Tìm đúng tham số và giao điểm.\n- **1 điểm:** Thế lại để kiểm hai điều kiện."
+    },
+    {
+      "item_id": "THPT-G12-YE-W10",
+      "outcome_id": "G12-SGK-YE-O04",
+      "role": "WRITTEN",
+      "stem": "Cho $P(2,-1,5)$ và mặt phẳng $(\\alpha):z=1$. Tìm hình chiếu vuông góc $H$ của $P$ lên $(\\alpha)$ và khoảng cách từ $P$ tới mặt phẳng.",
+      "solution": "1. Pháp tuyến của mặt phẳng $z=1$ là $\\vec n=(0,0,1)$.\n2. Đường qua $P$ theo pháp tuyến có $x=2$, $y=-1$, $z=5+t$.\n3. Để nằm trên mặt phẳng cần $5+t=1$, suy ra $t=-4$.\n4. Chân chiếu $H=(2,-1,1)$ và $\\overrightarrow{PH}=(0,0,-4)$ vuông góc mặt phẳng.\n5. Khoảng cách $PH=4$ đơn vị; tránh lấy độ dài $OP$ làm khoảng cách.",
+      "rubric": "- **1 điểm:** Xác định đúng pháp tuyến.\n- **1 điểm:** Viết đường vuông góc từ $P$.\n- **1 điểm:** Tìm tham số giao mặt phẳng.\n- **1 điểm:** Tìm đúng chân chiếu và kiểm góc vuông.\n- **1 điểm:** Tính đúng khoảng cách và đơn vị."
+    },
+    {
+      "item_id": "THPT-G12-YE-W11",
+      "outcome_id": "G12-SGK-YE-O04",
+      "role": "WRITTEN",
+      "stem": "Hai đường thẳng trong không gian có vectơ chỉ phương $\\vec a=(1,1,0)$ và $\\vec b=(1,0,1)$. Tính góc nhỏ hơn hoặc bằng $90^\\circ$ giữa hai đường và giải thích công thức.",
+      "solution": "1. Công thức góc giữa hai đường dùng $\\cos\\theta=|\\vec a\\cdot\\vec b|/(\\|\\vec a\\|\\|\\vec b\\|)$.\n2. $\\vec a\\cdot\\vec b=1$.\n3. $\\|\\vec a\\|=\\sqrt2$ và $\\|\\vec b\\|=\\sqrt2$.\n4. Vì thế $\\cos\\theta=1/2$, góc nhọn $\\theta=60^\\circ$.\n5. Dấu trị tuyệt đối chọn góc không lớn hơn $90^\\circ$ theo định nghĩa góc giữa hai đường.",
+      "rubric": "- **1 điểm:** Chọn đúng công thức và ý nghĩa trị tuyệt đối.\n- **1 điểm:** Tính tích vô hướng.\n- **1 điểm:** Tính đủ hai độ dài.\n- **1 điểm:** Suy ra góc $60^\\circ$.\n- **1 điểm:** Nêu đúng quy ước chọn góc giữa hai đường."
+    },
+    {
+      "item_id": "THPT-G12-YE-W12",
+      "outcome_id": "G12-SGK-YE-O04",
+      "role": "WRITTEN",
+      "stem": "Một nguồn sáng điểm tại $S(0,0,6)$ chiếu đoạn thẳng nối $A(2,0,2)$ và $B(2,4,3)$ xuống sàn $(Oxy):z=0$. Tìm bóng $A\\prime,B\\prime$ trên sàn và tính độ dài bóng đoạn $AB$.",
+      "solution": "1. Bóng nằm trên tia qua nguồn $S$ đến điểm của đoạn, có dạng $S+\\lambda(X-S)$ và cắt $z=0$.\n2. Với $A$: $(x,y,z)=(2\\lambda,0,6-4\\lambda)$, nên $\\lambda=3/2$ và $A\\prime=(3,0,0)$.\n3. Với $B$: $(x,y,z)=(2\\lambda,4\\lambda,6-3\\lambda)$, nên $\\lambda=2$ và $B\\prime=(4,8,0)$.\n4. $\\overrightarrow{A\\prime B\\prime}=(1,8,0)$, độ dài $\\sqrt{1^2+8^2}=\\sqrt{65}$.\n5. $\\lambda>1$ ở cả hai điểm: bóng nằm dưới điểm tương ứng; ảnh chiếu chỉ đúng khi sàn là $z=0$ và nguồn sáng được coi là điểm.",
+      "rubric": "- **1 điểm:** Chọn mô hình tia chiếu từ $S$.\n- **1 điểm:** Tìm đúng bóng của $A$.\n- **1 điểm:** Tìm đúng bóng của $B$.\n- **1 điểm:** Tính đúng $\\sqrt{65}$.\n- **1 điểm:** Giải thích điều kiện hình học của mô hình chiếu."
+    },
+    {
+      "item_id": "THPT-G12-YE-W13",
+      "outcome_id": "G12-SGK-YE-O04",
+      "role": "WRITTEN",
+      "stem": "Cho tứ diện $ABCD$. Gọi $G$ là trọng tâm tam giác $BCD$. Chứng minh $\\overrightarrow{AB}+\\overrightarrow{AC}+\\overrightarrow{AD}=3\\overrightarrow{AG}$. Sau đó với $A(1,0,0)$, $B(0,1,0)$, $C(0,0,1)$, $D(0,0,0)$, hãy tính $AG$.",
+      "solution": "1. Theo định nghĩa trọng tâm tam giác, $\\overrightarrow{GB}+\\overrightarrow{GC}+\\overrightarrow{GD}=\\vec0$.\n2. Tách $\\overrightarrow{AB}=\\overrightarrow{AG}+\\overrightarrow{GB}$, tương tự $AC,AD$.\n3. Cộng ba đẳng thức: $\\overrightarrow{AB}+\\overrightarrow{AC}+\\overrightarrow{AD}=3\\overrightarrow{AG}$.\n4. Với dữ liệu cho trước, $G=(B+C+D)/3=(0,1/3,1/3)$ và $\\overrightarrow{AG}=(-1,1/3,1/3)$.\n5. Độ dài $AG=\\sqrt{1+1/9+1/9}=\\sqrt{11}/3$; cùng kết quả nếu lấy tổng ba vectơ rồi chia $3$.",
+      "rubric": "- **1 điểm:** Phát biểu tính chất trọng tâm.\n- **1 điểm:** Phân tích ba vectơ qua $G$.\n- **1 điểm:** Chứng minh được đẳng thức vectơ.\n- **1 điểm:** Tìm đúng tọa độ $G$ và $AG$.\n- **1 điểm:** Tính đúng độ dài $\\sqrt{11}/3$."
+    },
+    {
+      "item_id": "THPT-G12-YE-W14",
+      "outcome_id": "G12-SGK-YE-O05",
+      "role": "WRITTEN",
+      "stem": "Mẫu số liệu ghép nhóm có các lớp $[0,2)$, $[2,4)$, $[4,6)$, $[6,8)$ với tần số lần lượt $2,6,8,4$. Tính trung bình, phương sai chia $N$ và độ lệch chuẩn xấp xỉ của mẫu theo giá trị đại diện lớp.",
+      "solution": "1. Các giá trị đại diện lớp là $1,3,5,7$ và tổng tần số $N=2+6+8+4=20$.\n2. Trung bình xấp xỉ $\\bar x=(2\\cdot1+6\\cdot3+8\\cdot5+4\\cdot7)/20=88/20=4.4$.\n3. Trung bình bình phương xấp xỉ $\\overline{x^2}=(2\\cdot1^2+6\\cdot3^2+8\\cdot5^2+4\\cdot7^2)/20=452/20=22.6$.\n4. Phương sai theo quy ước mẫu SGK: $s^2=\\overline{x^2}-\\bar x^2=22.6-4.4^2=3.24$.\n5. Độ lệch chuẩn $s=\\sqrt{3.24}=1.8$. Các giá trị là **ước lượng theo điểm giữa lớp**, không phải thống kê chính xác từ dữ liệu gốc.",
+      "rubric": "- **1 điểm:** Chọn đúng điểm giữa và $N$.\n- **1 điểm:** Tính đúng trung bình 4.4.\n- **1 điểm:** Tính đúng trung bình bình phương 22.6.\n- **1 điểm:** Tính đúng phương sai 3.24 với mẫu số $N$.\n- **1 điểm:** Tính $s=1.8$ và ghi giới hạn phép xấp xỉ."
+    },
+    {
+      "item_id": "THPT-G12-YE-W15",
+      "outcome_id": "G12-SGK-YE-O06",
+      "role": "WRITTEN",
+      "stem": "Một thiết bị đánh dấu dương tính với xác suất $0.9$ khi sản phẩm thực sự lỗi và với xác suất $0.2$ khi sản phẩm tốt. Trong lô có $10\\%$ sản phẩm lỗi. Nếu thấy dấu dương tính, xác suất sản phẩm thực sự lỗi là bao nhiêu? Giải thích vì sao không bằng $0.9$.",
+      "solution": "1. Gọi $D$ là lỗi, $+$ là dương tính. Dữ kiện $P(D)=0.1$, $P(+|D)=0.9$, $P(+|\\bar D)=0.2$.\n2. Theo công thức xác suất toàn phần $P(+)=0.1\\cdot0.9+0.9\\cdot0.2=0.09+0.18=0.27$.\n3. Theo Bayes, $P(D|+)=P(+|D)P(D)/P(+)$.\n4. Do đó $P(D|+)=0.09/0.27=1/3$.\n5. $P(+|D)=0.9$ khác $P(D|+)=1/3$ vì đã đổi biến cố điều kiện; tỷ lệ lỗi ban đầu chỉ 10\\%.",
+      "rubric": "- **1 điểm:** Định nghĩa đúng hai biến cố và số liệu.\n- **1 điểm:** Tính đúng xác suất toàn phần 0.27.\n- **1 điểm:** Viết công thức Bayes có điều kiện.\n- **1 điểm:** Tính đúng xác suất hậu nghiệm $1/3$.\n- **1 điểm:** Giải thích được vì sao không phải 0.9."
+    },
+    {
+      "item_id": "THPT-G12-YE-W16",
+      "outcome_id": "G12-SGK-YE-O06",
+      "role": "WRITTEN",
+      "stem": "Hộp có $4$ thẻ đỏ và $3$ thẻ xanh. Lấy liên tiếp hai thẻ không hoàn lại. Tính $P(\\text{thẻ 2 đỏ}|\\text{thẻ 1 xanh})$ và $P(\\text{thẻ 2 đỏ})$; cho biết hai biến cố tương ứng có độc lập không.",
+      "solution": "1. Biết thẻ đầu xanh, còn 6 thẻ với 4 thẻ đỏ, nên $P(R_2|B_1)=4/6=2/3$.\n2. Không điều kiện, tính $P(R_2)$ bằng tính đối xứng hoặc xác suất toàn phần.\n3. $P(R_2)=(4/7)(3/6)+(3/7)(4/6)=12/42+12/42=4/7$.\n4. So sánh $P(R_2|B_1)=2/3$ với $P(R_2)=4/7$, hai số không bằng nhau.\n5. Hai biến cố không độc lập: rút không hoàn lại làm mẫu số và cơ cấu màu thay đổi sau thẻ thứ nhất.",
+      "rubric": "- **1 điểm:** Tính đúng xác suất có điều kiện $2/3$.\n- **1 điểm:** Nhận dạng không hoàn lại/phân hoạch theo màu đầu.\n- **1 điểm:** Dựng đúng xác suất toàn phần.\n- **1 điểm:** Tính đúng $P(R_2)=4/7$.\n- **1 điểm:** So sánh hai giá trị và kết luận không độc lập."
+    }
+  ],
+  "help": [
+    {
+      "help_id": "HELP-G12-SGK-YE-O01",
+      "outcome_id": "G12-SGK-YE-O01",
+      "text": "**Khi mắc lỗi:** Nhầm cực trị và GTLN.\n**Chẩn đoán → trở về tiền đề → kiểm bằng ví dụ → tự thử → vận dụng:** Quay lại D1 dấu đạo hàm; đánh dấu nghiệm và biên đoạn; thực hành `TRY-G12-SGK-YE-O01`; làm lại `THPT-G12-YE-M02`, rồi W02; nếu không liên tục trên đoạn, sửa miền trước."
+    },
+    {
+      "help_id": "HELP-G12-SGK-YE-O02",
+      "outcome_id": "G12-SGK-YE-O02",
+      "text": "**Khi mắc lỗi:** Quên +C, dùng tích phân có dấu làm diện tích.\n**Chẩn đoán → trở về tiền đề → kiểm bằng ví dụ → tự thử → vận dụng:** Xác định nguyên hàm hay tích phân xác định trước; xem hình FIG-O02 và ví dụ Newton–Leibniz; chia miền theo nghiệm dấu; làm M05, M07 rồi W04."
+    },
+    {
+      "help_id": "HELP-G12-SGK-YE-O03",
+      "outcome_id": "G12-SGK-YE-O03",
+      "text": "**Khi mắc lỗi:** Nhầm độ dời/quãng đường hoặc thiếu bình phương bán kính.\n**Chẩn đoán → trở về tiền đề → kiểm bằng ví dụ → tự thử → vận dụng:** Viết đại lượng với đơn vị, chọn |v| nếu cần quãng đường, chọn πr² cho thể tích; tự thử v=-2 rồi làm M08, W05, W07."
+    },
+    {
+      "help_id": "HELP-G12-SGK-YE-O04",
+      "outcome_id": "G12-SGK-YE-O04",
+      "text": "**Khi mắc lỗi:** Nhầm vectơ chỉ phương và pháp tuyến, suy từ hình chiếu ra giao 3D.\n**Chẩn đoán → trở về tiền đề → kiểm bằng ví dụ → tự thử → vận dụng:** Định danh đường = điểm+hướng, mặt = điểm+pháp tuyến; kiểm dot trước khi tìm giao; xem FIG-O04; làm M11/M12 rồi W09/W12."
+    },
+    {
+      "help_id": "HELP-G12-SGK-YE-O05",
+      "outcome_id": "G12-SGK-YE-O05",
+      "text": "**Khi mắc lỗi:** Lấy tần số thay trung điểm lớp, quên giới hạn xấp xỉ.\n**Chẩn đoán → trở về tiền đề → kiểm bằng ví dụ → tự thử → vận dụng:** Tạo cột midpoint m_i trước; tổng số N; tính Σn_i m_i, Σn_i m_i²; xem FIG-O05, làm M13 rồi W14; luôn ghi đang dùng xấp xỉ."
+    },
+    {
+      "help_id": "HELP-G12-SGK-YE-O06",
+      "outcome_id": "G12-SGK-YE-O06",
+      "text": "**Khi mắc lỗi:** Đảo sai điều kiện hoặc coi rút không hoàn lại là độc lập.\n**Chẩn đoán → trở về tiền đề → kiểm bằng ví dụ → tự thử → vận dụng:** Đặt điều kiện ở mẫu, vẽ hai nhánh P(A),P(B); dùng xác suất toàn phần; làm M14–M15 rồi W15–W16; so sánh P(A|B) với P(B|A)."
+    }
+  ]
+}

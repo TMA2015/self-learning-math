@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="440" viewBox="0 0 800 440" role="img" aria-labelledby="title desc">
+<title id="title">FIG-G11-B15-01: Dãy u_n = 1/n tiến gần 0</title>
+<desc id="desc">Đồ thị các điểm có hoành độ n bằng 1 đến 8 và tung độ 1/n. Tất cả nằm phía trên trục ngang u_n=0, giảm dần tiến gần đường 0 nhưng không chạm 0; thể hiện ý nghĩa tiến gần chứ không phải số hạng cuối.</desc>
+<rect width="800" height="440" rx="20" fill="#f8fafc"/>
+<text x="400" y="42" fill="#172554" text-anchor="middle" font-size="23" font-family="Arial" font-weight="700">Dãy u_n = 1/n tiến gần 0</text>
+<line x1="90" y1="350" x2="690" y2="350" stroke="#0f172a" stroke-width="2.5"/>
+<path d="M690 350 l-12 -6 v12 z" fill="#0f172a"/>
+<line x1="120" y1="365" x2="120" y2="70" stroke="#0f172a" stroke-width="2.5"/>
+<path d="M120 70 l-6 12 h12 z" fill="#0f172a"/>
+<text x="703" y="356" font-size="17" fill="#0f172a">n</text>
+<text x="100" y="67" font-size="17" fill="#0f172a">u_n</text>
+<text x="102" y="370" font-size="15" fill="#334155">0</text><circle cx="140" cy="120.00" r="6" fill="#2563eb"/><text x="140" y="370" text-anchor="middle" font-size="15" fill="#334155">1</text><circle cx="205" cy="235.00" r="6" fill="#2563eb"/><text x="205" y="370" text-anchor="middle" font-size="15" fill="#334155">2</text><circle cx="270" cy="273.33" r="6" fill="#2563eb"/><text x="270" y="370" text-anchor="middle" font-size="15" fill="#334155">3</text><circle cx="335" cy="292.50" r="6" fill="#2563eb"/><text x="335" y="370" text-anchor="middle" font-size="15" fill="#334155">4</text><circle cx="400" cy="304.00" r="6" fill="#2563eb"/><text x="400" y="370" text-anchor="middle" font-size="15" fill="#334155">5</text><circle cx="465" cy="311.67" r="6" fill="#2563eb"/><text x="465" y="370" text-anchor="middle" font-size="15" fill="#334155">6</text><circle cx="530" cy="317.14" r="6" fill="#2563eb"/><text x="530" y="370" text-anchor="middle" font-size="15" fill="#334155">7</text><circle cx="595" cy="321.25" r="6" fill="#2563eb"/><text x="595" y="370" text-anchor="middle" font-size="15" fill="#334155">8</text><line x1="120" y1="350" x2="670" y2="350" stroke="#059669" stroke-width="3" stroke-dasharray="8 8"/>
+<text x="493" y="385" font-size="14" fill="#047857">Đường tham chiếu u_n = 0</text>
+<text x="190" y="110" font-size="15" fill="#1d4ed8">Càng về sau, 1/n càng nhỏ</text>
+<text x="400" y="420" text-anchor="middle" font-family="Arial" font-size="13" fill="#334155">Minh họa theo tọa độ và điều kiện đã ghi; không đo độ dài trực tiếp từ ảnh.</text>
+</svg>
