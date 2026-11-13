@@ -55,6 +55,18 @@ function chviExampleUxReceiptRows(){
  return rows;
 }
 
+const chviiReceipt="prototypes/thpt/ux795/G10_CHVII_B19_B22_S1_Q18_GOLDEN_ENRICHMENT_RECEIPT_20261113.md";
+function chviiEditorialReceiptRows(){
+ const file=path.join(root,chviiReceipt);
+ if(!fs.existsSync(file))return new Map();
+ const source=fs.readFileSync(file,"utf8");
+ const matches=[...source.matchAll(/^\| B(19|20|21|22) \| \x60([a-f0-9]{40})\x60 \| \x60([a-f0-9]{40})\x60 \| (\d+) \| (\d+) \| (\d+) \|/gm)];
+ assert.equal(matches.length,4,"ChVII Q18 receipt must contain exactly four source rows");
+ const rows=new Map(matches.map(m=>["B"+m[1],{baseline:m[2],candidate:m[3],moved:Number(m[4]),helps:Number(m[5]),examples:Number(m[6])}]));
+ assert.equal(rows.size,4,"ChVII Q18 editorial source IDs must be unique");
+ return rows;
+}
+
 function expectedG10KnowledgeBlob(lesson,legacy){
  assert(/^[a-f0-9]{40}$/.test(legacy),"Historical source SHA malformed");
  const name="B"+String(lesson).replace(/^B/,"").padStart(2,"0");
@@ -72,11 +84,17 @@ function expectedG10KnowledgeBlob(lesson,legacy){
  assert(!(chiv&&chv),name+" duplicate editorial receipts");
  const chvi=chviEditorialReceiptRows().get(name);
  assert(!(chvi&&(chiv||chv)),name+" overlapping editorial source receipts");
- const row=chiv||chv||chvi;
+ const chvii=chviiEditorialReceiptRows().get(name);
+ assert(!(chvii&&(chiv||chv||chvi)),name+" overlapping ChVII source receipt");
+ const row=chiv||chv||chvi||chvii;
  if(row){
   assert.equal(row.baseline,blobs[1],name+" immutable S1/Q18 baseline must match ledger candidate");
   assert.notEqual(row.candidate,row.baseline,name+" editorial source must be distinct");
-  assert.equal(row.moved,({B07:5,B08:5,B09:5,B10:6,B11:4,B12:4,B13:5,B14:5,B15:5,B16:5,B17:5,B18:4})[name],name+" moved First Try count");
+  assert.equal(row.moved,({B07:5,B08:5,B09:5,B10:6,B11:4,B12:4,B13:5,B14:5,B15:5,B16:5,B17:5,B18:4,B19:7,B20:5,B21:5,B22:8})[name],name+" moved First Try count");
+  if(chvii){
+   assert.equal(chvii.helps,({B19:9,B20:7,B21:7,B22:10})[name],name+" exact total HELP count");
+   assert.equal(chvii.examples,({B19:2,B20:2,B21:2,B22:3})[name],name+" anti-ChVI Golden worked-example count");
+  }
   const ux=chviExampleUxReceiptRows().get(name);
   if(ux){
    assert(chvi&&!chiv&&!chv,name+" UX follow-on restricted to published Chapter VI source");
@@ -93,4 +111,4 @@ function candidateG10KnowledgeBlob(lesson){
  const sentinel="0".repeat(40),result=expectedG10KnowledgeBlob(lesson,sentinel);
  return result===sentinel?null:result;
 }
-module.exports={expectedG10KnowledgeBlob,candidateG10KnowledgeBlob,chivEditorialReceiptRows,chvEditorialReceiptRows,chviEditorialReceiptRows,chviExampleUxReceiptRows};
+module.exports={expectedG10KnowledgeBlob,candidateG10KnowledgeBlob,chivEditorialReceiptRows,chvEditorialReceiptRows,chviEditorialReceiptRows,chviExampleUxReceiptRows,chviiEditorialReceiptRows};

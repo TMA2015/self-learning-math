@@ -26,6 +26,14 @@ const uxRows=[...uxReceipt.matchAll(/^\| B(1[5-8]) \| \x60([a-f0-9]{40})\x60 \| 
 if(uxReceipt)assert.equal(uxRows.length,4,"ChVI UX receipt must have four immutable lessons");
 const ux=new Map(uxRows.map(m=>[Number(m[1]),{baseline:m[2],candidate:m[3],examples:Number(m[4])}]));
 if(uxReceipt)assert.equal(ux.size,4,"ChVI UX receipt duplicate lesson");
+const chviiReceiptPath=path.join(root,
+ "prototypes/thpt/ux795/G10_CHVII_B19_B22_S1_Q18_GOLDEN_ENRICHMENT_RECEIPT_20261113.md");
+const chviiReceipt=fs.existsSync(chviiReceiptPath)?fs.readFileSync(chviiReceiptPath,"utf8"):"";
+const chviiRows=[...chviiReceipt.matchAll(/^\| B(19|20|21|22) \| \x60([a-f0-9]{40})\x60 \| \x60([a-f0-9]{40})\x60 \| (\d+) \| (\d+) \| (\d+) \|/gm)];
+if(chviiReceipt)assert.equal(chviiRows.length,4,"ChVII must have all four signed first-try/HELP/example receipts");
+const chvii=new Map(chviiRows.map(m=>[Number(m[1]),{
+ baseline:m[2],candidate:m[3],tries:Number(m[4]),helps:Number(m[5]),examples:Number(m[6])}]));
+
 const htmlSelfPractice=/<summary[^>]*>\s*Xem lời giải ba câu tự luyện\s*<\/summary>/g;
 const blob=raw=>crypto.createHash("sha1")
  .update(Buffer.from("blob "+raw.length+"\0")).update(raw).digest("hex");
@@ -46,6 +54,17 @@ for(let n=1;n<=27;n++){
   const source=fs.readFileSync(path.join(root,"docs",route+".md"));
   assert.equal(blob(source),followon.candidate,"B"+n+" source SHA must match signed UX receipt");
  }
+ const signedVII=chvii.get(n);
+ if(signedVII){
+  const source=fs.readFileSync(path.join(root,"docs",route+".md"));
+  assert.equal(blob(source),signedVII.candidate,"B"+n+" ChVII Q18 source receipt drift");
+  assert.equal(ids.length,signedVII.tries,"B"+n+" original ChVII FirstTry count");
+  assert.equal([...markdown.matchAll(/data-thpt-help-id="([^"]+)"/g)].length,signedVII.helps,
+   "B"+n+" ChVII D6 source receipt drift");
+  assert.equal([...markdown.slice(markdown.indexOf('=== "Ví dụ"'),markdown.indexOf('=== "Lỗi thường gặp"')).matchAll(/^    ### /gm)].length,
+   signedVII.examples,"B"+n+" worked-example solution count must be source locked");
+ }
+
  if(followon&&[15,17,18].includes(n)){
   const self=(html.match(htmlSelfPractice)||[]).length;
   assert.equal(self,1,"B"+n+" one descriptive solution reveal for exactly three voluntary self-practice questions");

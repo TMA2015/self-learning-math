@@ -4,6 +4,7 @@
  */
 const assert=require("node:assert/strict"),{chromium}=require("playwright");
 const {verifyModelBLesson}=require("./test-thpt-g10-model-b-browser-helper.cjs");
+const {chviiEditorialReceiptRows}=require("./thpt-q18-g10-source-receipt.cjs");
 const base="http://127.0.0.1:8765/thpt-preview/";
 (async()=>{
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
@@ -17,7 +18,10 @@ const base="http://127.0.0.1:8765/thpt-preview/";
      assert(response?.ok(),"Missing G10 ChVII B"+n+" "+width);
      const article=page.locator("article.md-content__inner");
      if(await verifyModelBLesson(page,{n,chapter:"vii",tries:count,helps:count+2,
-       questions:n===22?count+1:count,
+       // B22 original source had a separate optional disclosure.
+       // Signed ChVII §X-F Golden source removes that admin disclosure and
+       // keeps eight original canonical First Try answer disclosures.
+       questions:n===22&&!chviiEditorialReceiptRows().has("B22")?count+1:count,
        images:n===19?["G10_B19_LINE_NORMAL_R02.svg"]:
               n===20?["G10_B20_POINT_LINE_DISTANCE_R02.svg"]:
               n===21?["G10_B21_CIRCLE_TANGENT_R02.svg"]:

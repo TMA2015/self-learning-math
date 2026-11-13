@@ -1,0 +1,51 @@
+name: G10 ChVII B19-B22 S1/Q18 Golden and anti-ChVI UX QA (no deploy)
+on:
+  pull_request:
+    paths:
+      - "docs/thpt-preview/sgk/chuong-vii/bai-*.md"
+      - "docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js"
+      - "prototypes/thpt/ux795/G10_CHVII_B19_B22_S1_Q18_GOLDEN_ENRICHMENT_RECEIPT_20261113.md"
+      - "scripts/thpt-q18-g10-source-receipt.cjs"
+      - "scripts/test-g10-chvii-editorial-source.cjs"
+      - "scripts/test-g10-chvii-s1-golden-browser.cjs"
+      - ".github/workflows/g10-chvii-s1-golden-qa.yml"
+permissions:
+  contents: read
+jobs:
+  chvii-s1-golden:
+    name: Signed S1 ChVII four lessons, 25 first-tries, 33 D6 and 12 real-browser Golden cases
+    runs-on: ubuntu-latest
+    timeout-minutes: 28
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Exact Q18 old-new source and math, 25 canonical answers/33 HELP and negative mutations
+        run: |
+          git fetch --no-tags --depth=3 origin bfc15b552a1ea697edb1327f0a48d7a95bbb73ed
+          node scripts/test-g10-chvii-editorial-source.cjs
+          node scripts/test-thpt-q18-release-test-router.cjs
+      - name: Build real candidate website, no deployment
+        run: |
+          python -m pip install --disable-pip-version-check mkdocs-material
+          mkdocs build --config-file mkdocs.thpt-preview.yml --site-dir site-thpt-preview
+      - name: Install actual Chromium QA runtime
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install chromium
+      - name: ChVII Golden 12 cases and all 27 G10 Knowledge regressions (no deploy)
+        run: |
+          python -m http.server 8765 --bind 127.0.0.1 --directory site-thpt-preview >/tmp/g10-chvii-http.log 2>&1 &
+          python - <<'PY'
+          import time,urllib.request
+          url="http://127.0.0.1:8765/thpt-preview/sgk/chuong-vii/bai-19/"
+          for _ in range(50):
+              try:
+                  with urllib.request.urlopen(url,timeout=2) as response:
+                      if response.status==200: break
+              except Exception: time.sleep(.5)
+          else: raise SystemExit("ChVII preview HTTP did not start")
+          PY
+          node scripts/test-g10-chvii-s1-golden-browser.cjs
+          node scripts/test-ux795-g10-knowledge-browser.cjs
