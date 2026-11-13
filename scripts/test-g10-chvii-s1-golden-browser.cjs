@@ -67,6 +67,15 @@ const specs={
      assert.equal(await article.locator("details.question[open],details.tip[open]").count(),0,
       tag+" any answer/help exposed before user action");
      await t.nth(0).click();
+     await page.waitForFunction(()=>{
+       const tab=document.querySelector("article.md-content__inner .tabbed-block");
+       return !!tab&&tab.querySelectorAll("mjx-container,.katex").length>0;
+     },null,{timeout:20000});
+     const rendered=await blocks.nth(0).locator("mjx-container,.katex").count();
+     assert(rendered>=({19:12,20:8,21:10,22:12})[n],
+       tag+" AP2 formulas not actually typeset in Discovery; rendered math nodes: "+rendered);
+     assert.equal(await blocks.nth(0).locator("mjx-merror,.katex-error").count(),0,
+       tag+" broken mathematical notation in learner Discovery");
      const first=blocks.nth(0).locator("details.question").first(),smy=first.locator("summary");
      assert.equal((await smy.innerText()).trim(),"Đối chiếu",tag+" canonical reveal label");
      await smy.focus();await page.keyboard.press("Enter");
