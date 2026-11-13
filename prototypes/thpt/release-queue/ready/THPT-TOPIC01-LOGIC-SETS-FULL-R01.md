@@ -8,18 +8,18 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 6d7613b90c492f5c76b144f50da2ad729485c796
+SOURCE_COMMIT: def510525ceb3c57470900f848265792db86ad3c
 AUTHOR_PR: 817
 CURRENT_PR: #817 Draft AUTHORING, no merge/deploy
 CATALOG_TOPIC_ID: CD01
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_CONTINUOUS_KNOWLEDGE_ARCS_R04_REVIEW_CANDIDATE_20261113.md
-ACADEMIC_SOURCE_BLOB: 7337777c7cd81e2c7aaef8d71170a3fef7469591
+ACADEMIC_SOURCE_BLOB: 07bfe5bd55b860c2cc78b17c7c78e2132b8693f8
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC01_CONTINUOUS_R04_AUTHOR_SELF_QA_RECEIPT_20261113.md (AUTHOR_SELF_QA, no fresh independent NotebookLM PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC01_CONTINUOUS_R04_AUTHOR_SELF_QA_RECEIPT_20261113.md
-REVIEW_RECEIPT_BLOB: d740fde2f80cb22e7ff9e01cab703be7e49a8b2f
+REVIEW_RECEIPT_BLOB: 9fc40240c9fbf0083c6a98f1fe75b3da2901b9f4
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC01-LOGIC-SETS-FULL-R04_HANDOFF_V2_20261113.md
-AUTHOR_HANDOFF_BLOB: 98f2498eaa612eacb75042554f3a676c299cd359
+AUTHOR_HANDOFF_BLOB: 97642950b1c6b5869dbdc76b67a85eef145f5cb2
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_CANONICAL_SOURCE_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 09d36b0d289ebc54cc4ee51805503cf7f6e714f2
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_PUBLIC_EXTENSION_06ITEM_R01_20261112.md
@@ -41,7 +41,7 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — new CĐ01 student-first source `7337777c7cd81e2c7aaef8d71170a3fef7469591`, QA receipt `d740fde2f80cb22e7ff9e01cab703be7e49a8b2f`, 18 immutable original + six newly authored PUBLIC formative canonical questions, single V2 handoff.
+- [x] A1_SOURCE_SNAPSHOT — new CĐ01 student-first source `07bfe5bd55b860c2cc78b17c7c78e2132b8693f8`, QA receipt `9fc40240c9fbf0083c6a98f1fe75b3da2901b9f4`, 18 immutable original + six newly authored PUBLIC formative canonical questions, single V2 handoff.
 - [x] A2_SGK_SBT_SCOPE — S1 source *reference only*, prior independent original receipt KNTT G10 T1 B01 printed SGK 5–11/SBT5–7; B02 SGK12–19/SBT8–11. Catalog CĐ01/22 is the organizing unit, not SGK chapters.
 - [x] A3_NOTEBOOKLM_VERDICT — original 18 SGK public bank academic NotebookLM PASS on historic frozen source SHA `95a554e31a613b8e215679fe6790738473d598df` only; CĐ01 R04 continuous-arc Delta C verified by Q18 author receipt on 11/11 outcomes and six new canonical source solutions, NO claim of new independent reviewer PASS.
 - [x] A4_ITEM_OUTCOME_IDS — 11/11 Topic outcomes, 24 distinct PUBLIC canonical IDs (18 previous/6 original new), 2 original Written with single rubric, 11 reused public selfcheck placements NO_MASTERY.
