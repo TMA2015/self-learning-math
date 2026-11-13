@@ -117,6 +117,10 @@ jobs:
               live_file.write_text(candidate, encoding="utf-8")
           PY
           cp docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css integration-main/docs/assets/stylesheets/
+          # Overlay approved source-locked ChV visual dependencies in the
+          # isolated integration checkout, never in production.
+          cp docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js integration-main/docs/assets/javascripts/
+          cp docs/assets/images/thpt/G10_B14_BOXPLOT_S1_Q18_ENRICHMENT_20261113.svg integration-main/docs/assets/images/thpt/
           for name in \
             G10_B02_MEMBERSHIP_SUBSET_R01.svg \
             G10_B06_SURVEY_RIGHT_TRIANGLE_R01.svg \

@@ -277,6 +277,35 @@ const polishG10ChapterIV=(article)=>{
  article.dataset.g10ChivGolden="true";
 };
 
+/* G10 ChV B12–B14 Golden PREVIEW: wrap the three published example
+ * paragraphs in the pre-existing Golden solution panel. Move DOM nodes
+ * intact: do not invent/split example math, solutions or rubrics.
+ * Academic S1 section reshuffling and First Try placements are NOT done here. */
+const polishG10ChapterV=(article)=>{
+ polishG10ChapterIV(article);
+ if(article.dataset.g10ChivGolden!=="true")return;
+ const blocks=[...(article.querySelector(".tabbed-set")?.
+  querySelectorAll(":scope > .tabbed-content > .tabbed-block")||[])];
+ if(blocks.length!==4)return;
+ // First Try was moved to Discovery under the source-locked ChV §X-F
+ // editorial receipt. Keep voluntary answers closed; change label only.
+ blocks[0].querySelectorAll("details.question > summary").forEach(summary=>{
+  summary.textContent="Đối chiếu";
+ });
+ for(const title of blocks[2].querySelectorAll(":scope > h3")){
+  const paragraph=title.nextElementSibling;
+  if(!paragraph||paragraph.tagName!=="P"||paragraph.closest(".thpt-g10-example-solution"))continue;
+  const panel=document.createElement("div");
+  panel.className="thpt-g10-example-solution";
+  panel.setAttribute("role","group");
+  panel.setAttribute("aria-label","Ví dụ và lời giải minh họa");
+  paragraph.before(panel);
+  panel.append(paragraph);
+ }
+ article.classList.add("thpt-g10-chv-golden");
+ article.dataset.g10ChvGolden="preview";
+};
+
 const run=()=>{
  const path=location.pathname;
  const match=path.match(/^(.*\/thpt-preview\/sgk\/)(?:(lop-(11|12))\/)?chuong-([ivx]+)\/bai-(\d+)\/?$/);
@@ -292,6 +321,7 @@ const run=()=>{
   article.classList.add("thpt-g10-knowledge-ap1");
   if(lesson<=6){article.classList.add("thpt-g10-first-six-golden");numberG10FirstSix(article);polishG10FirstSix(article);restoreG10FirstSixGolden(article);}
   else if(chapter==="iv"&&lesson<=11)polishG10ChapterIV(article);
+  else if(chapter==="v"&&lesson>=12&&lesson<=14)polishG10ChapterV(article);
  }
  if(article.querySelector("[data-sgk-lesson-nav]"))return;
  const root=match[1]+(grade===10?"":"lop-"+grade+"/");

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 395" role="img" aria-labelledby="title desc">
+  <title id="title">Bài 14: Biểu đồ hộp đọc tứ phân vị và giá trị bất thường</title>
+  <desc id="desc">Mẫu đã sắp 1, 2, 3, 4, 5, 6, 7, 8, 20. Hộp từ Q1 bằng 2,5 đến Q3 bằng 7,5, vạch trung vị Q2 bằng 5. Hai râu tới 1 và 8; điểm 20 nằm vượt hàng rào trên 15 nên là giá trị bất thường.</desc>
+  <rect x="1" y="1" width="958" height="393" rx="18" fill="#f7fbff" stroke="#b8cad9"/>
+  <g font-family="DejaVu Sans,Arial,sans-serif" fill="#173b57">
+    <text x="35" y="47" font-size="25" font-weight="700">Biểu đồ hộp: phần giữa và giá trị bất thường</text>
+    <text x="35" y="79" font-size="17">Mẫu đã sắp: 1, 2, 3, 4, 5, 6, 7, 8, 20</text>
+    <text x="35" y="107" font-size="17">Q₁ = 2,5 · Q₂ = 5 · Q₃ = 7,5 · ΔQ = 5 · hàng rào trên = 15</text>
+  </g>
+  <line x1="140" y1="300" x2="832" y2="300" stroke="#45667e" stroke-width="2"/>
+  <path d="M832 300 l-8 -5 v10 z" fill="#45667e"/>
+  <g stroke="#7691a8" stroke-width="1.4" font-size="15" font-family="DejaVu Sans,Arial,sans-serif" fill="#405b72">
+    <line x1="140" y1="294" x2="140" y2="306"/><text x="140" y="327" text-anchor="middle" stroke="none">0</text>
+    <line x1="222.5" y1="294" x2="222.5" y2="306"/><text x="222.5" y="327" text-anchor="middle" stroke="none">2,5</text>
+    <line x1="305" y1="294" x2="305" y2="306"/><text x="305" y="327" text-anchor="middle" stroke="none">5</text>
+    <line x1="387.5" y1="294" x2="387.5" y2="306"/><text x="387.5" y="327" text-anchor="middle" stroke="none">7,5</text>
+    <line x1="470" y1="294" x2="470" y2="306"/><text x="470" y="327" text-anchor="middle" stroke="none">10</text>
+    <line x1="635" y1="294" x2="635" y2="306"/><text x="635" y="327" text-anchor="middle" stroke="none">15</text>
+    <line x1="800" y1="294" x2="800" y2="306"/><text x="800" y="327" text-anchor="middle" stroke="none">20</text>
+  </g>
+  <line x1="173" y1="216" x2="222.5" y2="216" stroke="#23638d" stroke-width="4"/>
+  <line x1="387.5" y1="216" x2="404" y2="216" stroke="#23638d" stroke-width="4"/>
+  <line x1="173" y1="188" x2="173" y2="244" stroke="#23638d" stroke-width="4"/>
+  <line x1="404" y1="188" x2="404" y2="244" stroke="#23638d" stroke-width="4"/>
+  <rect x="222.5" y="173" width="165" height="86" fill="#dceef6" stroke="#23638d" stroke-width="3"/>
+  <line x1="305" y1="173" x2="305" y2="259" stroke="#14384f" stroke-width="4"/>
+  <line x1="635" y1="143" x2="635" y2="276" stroke="#cc7340" stroke-width="2.5" stroke-dasharray="7 7"/>
+  <circle cx="800" cy="216" r="9" fill="#d75037" stroke="#fff" stroke-width="2"/>
+  <g font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#173b57" text-anchor="middle">
+    <text x="173" y="167">1</text><text x="222.5" y="155">Q₁</text>
+    <text x="305" y="155">Q₂</text><text x="387.5" y="155">Q₃</text>
+    <text x="404" y="282">8</text><text x="635" y="129" fill="#9b4b2f">ngưỡng 15</text>
+    <text x="800" y="180" fill="#b33d2b" font-weight="700">ngoại lệ 20</text>
+  </g>
+  <text x="35" y="368" fill="#375b74" font-size="16" font-family="DejaVu Sans,Arial,sans-serif">Râu: 1 đến 8 · Hộp: 50% số liệu giữa · 20 &gt; 15 nên nằm ngoài râu</text>
+</svg>

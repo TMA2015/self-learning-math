@@ -1,0 +1,55 @@
+name: G10 ChV B12–B14 S1/Q18 editorial + Golden QA (no deploy)
+on:
+  pull_request:
+    paths:
+      - "docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js"
+      - "scripts/test-g10-chv-b12-b14-golden-preview-browser.cjs"
+      - "docs/thpt-preview/sgk/chuong-v/bai-*.md"
+      - "docs/assets/images/thpt/G10_B14_BOXPLOT_S1_Q18_ENRICHMENT_20261113.svg"
+      - "prototypes/thpt/ux795/G10_CHV_B12_B14_S1_Q18_EDITORIAL_RECEIPT_20261113.md"
+      - "scripts/test-g10-chv-editorial-source.cjs"
+      - "scripts/thpt-q18-g10-source-receipt.cjs"
+      - "scripts/test-thpt-g10-model-b-browser-helper.cjs"
+      - "scripts/test-thpt-g10-chv-full-r03-browser.cjs"
+      - ".github/workflows/g10-chv-golden-preview-qa.yml"
+permissions:
+  contents: read
+jobs:
+  chv-preview:
+    name: Three immutable ChV sources, Golden browser 9 cases (NO RELEASE)
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify Q18 exact final source SHAs, S1 mathematics, unchanged answers and negative mutations
+        run: |
+          git fetch --no-tags --depth=3 origin 95c111b313886283bd8245babcc9ffdbfcc7c54f
+          node scripts/test-g10-chv-editorial-source.cjs
+          node scripts/test-thpt-q18-release-test-router.cjs
+      - name: Build actual site
+        run: |
+          python -m pip install --disable-pip-version-check mkdocs-material
+          mkdocs build --config-file mkdocs.thpt-preview.yml --site-dir site-thpt-preview
+      - name: Install Chromium
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install chromium
+      - name: Source-lock, tab behavior, Q16, TOC and 390/820/1440 checks
+        run: |
+          python -m http.server 8765 --bind 127.0.0.1 --directory site-thpt-preview >/tmp/g10-chv-http.log 2>&1 &
+          python - <<'PY'
+          import time,urllib.request
+          url="http://127.0.0.1:8765/thpt-preview/sgk/chuong-v/bai-12/"
+          for i in range(50):
+              try:
+                  with urllib.request.urlopen(url,timeout=2) as r:
+                      if r.status==200: break
+              except Exception: time.sleep(.5)
+          else: raise SystemExit("Preview HTTP did not start")
+          PY
+          node scripts/test-g10-chv-b12-b14-golden-preview-browser.cjs
+          node scripts/test-thpt-g10-chv-full-r03-browser.cjs
+          node scripts/test-ux795-g10-knowledge-browser.cjs

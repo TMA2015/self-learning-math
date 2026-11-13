@@ -12,15 +12,9 @@
 
     Bài học cũng giúp em hiểu vì sao quy tròn phải gắn với độ chính xác. Không phải cứ viết thêm nhiều chữ số là thông tin tự nhiên chính xác hơn.
 
-    ### Thuật ngữ, kiến thức và kỹ năng
+    ### Ví dụ trực quan
 
-    **Thuật ngữ:** Số đúng, số gần đúng, sai số tuyệt đối, độ chính xác, sai số tương đối, quy tròn và chữ số đáng tin cậy.
-
-    **Sau bài học, em cần làm được:** Viết đúng dấu gần bằng; phân biệt sai số thực với độ chính xác; xác định khoảng chứa giá trị đúng; tính sai số tương đối khi đủ điều kiện; quy tròn phù hợp độ chính xác.
-
-=== "Kiến thức SGK"
-
-    ### Vì sao cần nói số gần đúng?
+    #### Vì sao cần nói số gần đúng?
 
     Một phần ba chiếc bánh là một lượng chính xác, nhưng máy chỉ hiển thị đến hai chữ số thập phân. Số hiện trên máy giúp sử dụng thuận tiện nhưng không còn biểu diễn chính xác toàn bộ lượng đó.
 
@@ -29,9 +23,11 @@
     Khi giới hạn độ dài biểu diễn, ta phải chọn một số hữu hạn chữ số để **thay cho** giá trị đúng: kí hiệu trong bài dùng \(a\) là số gần đúng và \(\bar a\) là số đúng. Dấu \(\approx\) nói hai số gần nhau, không phải luôn bằng nhau.
 
 
+    **Em tự thử.** Cho số đúng \(\bar a=1/3\), dùng số gần đúng \(a=0{,}33\). Em viết quan hệ bằng kí hiệu nào, và vì sao không viết dấu bằng?
+
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY01" hidden></span>
 
-    ??? question "Em đã tự thử? Mở lời giải để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> \(a=0{,}33\) là số gần đúng; \(\bar a=1/3\) là số đúng; viết \(0{,}33\approx1/3\), không viết bằng.</p>
@@ -40,7 +36,7 @@
         </div>
 
 
-    ### Độ chính xác không phải sai số thực
+    #### Độ chính xác không phải sai số thực
 
     Một thước báo 'sai lệch không quá 0,3 cm' không có nghĩa mọi lần đo đều lệch đúng 0,3 cm.
 
@@ -55,7 +51,7 @@
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY02" hidden></span>
 
-    ??? question "Em đã tự thử? Mở lời giải để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> \(\bar a\in[8{,}1;8{,}7]\,\mathrm{cm}\). Chỉ chắc \(\Delta_a\le0{,}3\,\mathrm{cm}\), không chắc bằng.</p>
@@ -64,7 +60,7 @@
         </div>
 
 
-    ### Sai số lớn hay nhỏ còn phụ thuộc cỡ đại lượng
+    #### Sai số lớn hay nhỏ còn phụ thuộc cỡ đại lượng
 
     Sai 3 m khi đo 150 m thường nhẹ hơn sai 3 m khi đo một đoạn 10 m. Cần so sánh sai số với quy mô con số đang dùng.
 
@@ -73,9 +69,11 @@
     Để đánh giá mức sai số so với cỡ số gần đúng, ta lấy độ lệch tuyệt đối **chia cho \(|a|\)** theo KNTT. Nếu chỉ biết \(\Delta_a\le d\), chỉ có cận trên tỉ lệ chứ chưa biết tỉ lệ thực. Điều này giải thích cả mẫu số lẫn dấu bất đẳng thức.
 
 
+    **Em tự thử.** Đo quãng đường \(a=150\,\mathrm m\), sai số tuyệt đối không vượt quá \(d=3\,\mathrm m\). Hãy tính cận trên của sai số tương đối và phân biệt dấu \(=\) với \(\le\).
+
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY03" hidden></span>
 
-    ??? question "Em đã tự thử? Mở lời giải để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> \(\delta_a\le3/150=0{,}02=2\%\), không thể kết luận \(\delta_a=2\%\).</p>
@@ -84,7 +82,7 @@
         </div>
 
 
-    ### Cắt bớt chữ số nhưng phải biết mức chênh
+    #### Cắt bớt chữ số nhưng phải biết mức chênh
 
     Khi ghi giá tiền hay chiều dài, ta thường không cần mọi chữ số; quy tròn giúp trình bày gọn nhưng có thể làm đổi giá trị.
 
@@ -93,9 +91,11 @@
     Làm tròn đến một hàng là chọn giá trị gần số ban đầu nhất theo bội của đơn vị hàng đó; chênh lệch là cái giá của sự giản lược. Nếu số ban đầu **được biết chính xác** và làm tròn gần nhất tới bước h, sai số quy tròn không vượt quá h/2; điều đó không biến thành độ chính xác của một phép đo khác.
 
 
+    **Em tự thử.** Làm tròn số đúng \(7{,}346\) tới hàng phần trăm. Tìm số quy tròn và sai số tuyệt đối của phép làm tròn.
+
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY04" hidden></span>
 
-    ??? question "Em đã tự thử? Mở lời giải để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> Số quy tròn là \(7{,}35\); sai số là \(|7{,}35-7{,}346|=0{,}004\).</p>
@@ -103,25 +103,33 @@
         <p><strong>Nếu chưa làm được:</strong> Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó <a href="../luyen-tap/?item=THPT-G10-B12-P02">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
         </div>
 
+    ### Thuật ngữ, kiến thức và kỹ năng
 
+    **Thuật ngữ:** Số đúng, số gần đúng, sai số tuyệt đối, độ chính xác, sai số tương đối, quy tròn và chữ số đáng tin cậy.
 
-        ### Kiến thức SGK
+    **Sau bài học, em cần làm được:** Viết đúng dấu gần bằng; phân biệt sai số thực với độ chính xác; xác định khoảng chứa giá trị đúng; tính sai số tương đối khi đủ điều kiện; quy tròn phù hợp độ chính xác; sử dụng máy tính cầm tay để tính và ghi số gần đúng.
 
-    ### Đúng/gần đúng và số quy tròn
+=== "Kiến thức SGK"
+
+    ### 2.1. Số gần đúng
     Theo kí hiệu SGK/SBT KNTT, **\(a\) là số gần đúng**, còn **\(\bar a\) là số đúng** (có thể chưa biết). Số gần đúng \(a\) thay cho số đúng \(\bar a\); viết \(a\approx\bar a\). Không phải mọi chữ số thập phân được hiển thị đều là chữ số đáng tin cậy; độ chính xác phụ thuộc phép đo/quy trình. Làm tròn một giá trị theo hàng yêu cầu để có số quy tròn. Quy tròn tới hàng phần mười, phần trăm, hàng chục… phải xác định rõ hàng làm tròn.
 
-    ### Sai số tuyệt đối, độ chính xác
 
-    **Cách đọc hình.** Tìm số gần đúng ở giữa khoảng, rồi nhìn hai biên cách nó một khoảng d. Giá trị đúng có thể nằm bất cứ đâu trong đoạn, không nhất thiết ở biên hoặc trùng tâm.
+    **Máy tính cầm tay giúp tìm số gần đúng, không tự chứng minh độ chính xác.** Với biểu thức chứa căn hoặc \(\pi\), em nhập đúng biểu thức, quan sát kết quả thập phân, rồi làm tròn theo yêu cầu. Ví dụ máy cho \(\sqrt2\approx1{,}41421356\ldots\); lấy \(a=1{,}414\) với độ chính xác \(d=0{,}0005\) là hợp lệ vì \(1{,}4135^2<2<1{,}4145^2\), nên \(|\sqrt2-1{,}414|<0{,}0005\). Chỉ đọc nhiều chữ số trên màn hình không có nghĩa mọi chữ số đều đáng tin cậy.
+
+    ### 2.2. Sai số tuyệt đối và sai số tương đối
+
 
     <figure class="thpt-r4-plot thpt-r4-probability-figure" data-thpt-fig-id="FIG-G10-B12-01"><img src="../../../../assets/images/thpt/THPT_G10_B12_ERROR_INTERVAL_D5_R02_REVIEWED.svg" loading="lazy" alt="Số gần đúng a bằng 20,0 cm, độ chính xác d bằng 0,1 cm; giá trị đúng a gạch ngang thuộc đoạn 19,9 đến 20,1 cm."><figcaption>Khoảng có thể chứa số đúng · hình minh họa.</figcaption></figure>
 
+    **Cách đọc hình.** Tìm số gần đúng ở giữa khoảng, rồi nhìn hai biên cách nó một khoảng d. Giá trị đúng có thể nằm bất cứ đâu trong đoạn, không nhất thiết ở biên hoặc trùng tâm.
+
     Sai số tuyệt đối của số gần đúng \(a\) là \(\Delta_a=|a-\bar a|\). Nếu **chưa biết** số đúng \(\bar a\), nhưng \(\Delta_a\le d\), thì \(d\) là **độ chính xác/giới hạn trên**; không được suy \(\Delta_a=d\). Số đúng nằm trong \(a-d\le\bar a\le a+d\). Sai số tuyệt đối cùng đơn vị với đại lượng.
 
-    ### Sai số tương đối
+    #### b. Sai số tương đối
     Với số gần đúng **\(a\ne0\)** và số đúng \(\bar a\) đã biết, \(\delta_a=\Delta_a/|a|\) (thường viết theo %): **mẫu số là số gần đúng \(a\) theo KNTT**, không phải số đúng. Khi chỉ có \(a\ne0\) và \(\Delta_a\le d\), chỉ suy ra **cận trên** \(\delta_a\le d/|a|\), không được viết đẳng thức \(\delta_a=d/|a|\) nếu chưa biết sai số thực. Không chia cho 0, không nhầm tỷ lệ với %.
 
-    ### Giới hạn độ chính xác và quy tròn
+    ### 2.3. Quy tròn số gần đúng
     Khi làm tròn một số đúng tới đơn vị của hàng \(h>0\), sai số làm tròn thông thường không quá \(h/2\) nếu áp dụng quy tắc làm tròn gần nhất. Không tự khẳng định mọi phép đo tới hàng đó có cùng sai số tối đa: còn phụ thuộc độ chính xác đo ban đầu. Khi một số gần đúng \(a\) được cho với độ chính xác \(d\) nhưng không nêu hàng quy tròn, cần kiểm đúng quy tắc SGK/SBT về **hàng thấp nhất có một đơn vị lớn hơn d** trước khi chọn hàng.
 
 === "Ví dụ"

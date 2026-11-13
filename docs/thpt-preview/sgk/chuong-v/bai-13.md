@@ -12,15 +12,9 @@
 
     Mỗi chỉ số phải đi cùng **cách sắp xếp dữ liệu và quy ước xác định**. Khi số quan sát là lẻ hoặc chẵn, cách tìm trung vị và tứ phân vị có những bước cần kiểm đúng; không đoán từ vị trí trên hình.
 
-    ### Thuật ngữ, kiến thức và kỹ năng
+    ### Ví dụ trực quan
 
-    **Thuật ngữ:** Số trung bình cộng, trung vị, tứ phân vị (Q_1,Q_2,Q_3), mốt, bảng tần số, giá trị đại diện.
-
-    **Sau bài học, em cần làm được:** Sắp xếp dữ liệu; tìm trung bình/trung vị/mốt; áp dụng đúng quy ước tứ phân vị KNTT; giải thích khi nào trung vị phù hợp hơn trung bình.
-
-=== "Kiến thức SGK"
-
-    ### Tìm một giá trị đại diện cho toàn nhóm
+    #### Tìm một giá trị đại diện cho toàn nhóm
 
     Một lớp có điểm số thay đổi từng người. Muốn tính mức điểm bình quân của cả lớp, cần chia tổng điểm cho số người chứ không chọn đại một bạn.
 
@@ -29,9 +23,11 @@
     Giả sử dàn đều tổng số điểm cho mọi người sao cho tổng không đổi; lượng mỗi người nhận chính là **trung bình**. Với bảng tần số, nhóm các phần tử giống nhau thành giá trị nhân số lần xuất hiện, không làm mất người nào.
 
 
+    **Em tự thử.** Mẫu số liệu \(2,4,4,10\) gồm bốn quan sát. Tính số trung bình cộng, không bỏ giá trị lớn nhất.
+
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY05" hidden></span>
 
-    ??? question "Em đã tự thử? Mở lời giải để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> \(\bar x=(2+4+4+10)/4=5\).</p>
@@ -40,7 +36,7 @@
         </div>
 
 
-    ### Điểm giữa không bị một giá trị rất lớn kéo đi
+    #### Điểm giữa không bị một giá trị rất lớn kéo đi
 
     Để biết người đứng ở vị trí giữa trong hàng người có chiều cao khác nhau, phải xếp thứ tự, không cần cộng tất cả chiều cao.
 
@@ -49,9 +45,11 @@
     Trung vị nhìn vào **vị trí** sau sắp xếp chứ không dàn đều tổng. Với n chẵn có hai vị trí giữa, trung vị là trung bình hai giá trị đó; với n lẻ lấy một giá trị ở giữa.
 
 
+    **Em tự thử.** Mẫu chưa sắp xếp \(9,2,12,5\). Hãy sắp xếp rồi tìm trung vị \(Q_2\).
+
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY06" hidden></span>
 
-    ??? question "Em đã tự thử? Mở lời giải để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> Sắp thành \(2,5,9,12\). Trung vị \(Q_2=(5+9)/2=7\).</p>
@@ -60,7 +58,7 @@
         </div>
 
 
-    ### Chia mẫu dữ liệu thành bốn phần
+    #### Chia mẫu dữ liệu thành bốn phần
 
     Hai lớp có cùng trung vị vẫn có thể khác nhau ở phần thấp và phần cao. Ta cần mốc để nhìn nửa dưới và nửa trên của mẫu.
 
@@ -75,7 +73,7 @@
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY07" hidden></span>
 
-    ??? question "Em đã tự thử? Mở lời giải để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> \(Q_2=4\), nửa dưới \(1,2,3\) cho \(Q_1=2\), nửa trên \(5,6,7\) cho \(Q_3=6\).</p>
@@ -84,7 +82,7 @@
         </div>
 
 
-    ### Giá trị lặp lại nhiều nhất mới là mốt
+    #### Giá trị lặp lại nhiều nhất mới là mốt
 
     Trong cửa hàng bán áo, chủ cửa hàng quan tâm cỡ áo bán nhiều nhất chứ không phải số trung bình của mã cỡ.
 
@@ -93,9 +91,11 @@
     Mốt là giá trị (hoặc các giá trị) có tần số cao nhất. Khi nhiều giá trị cùng đứng đầu, mẫu có nhiều mốt; theo quy ước minh họa SGK KNTT, nếu mỗi giá trị chỉ xuất hiện một lần thì coi là không có mốt.
 
 
+    **Em tự thử.** Trong mẫu \(2,2,3,3,5\), giá trị nào là mốt? Có thể có hơn một mốt không?
+
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY08" hidden></span>
 
-    ??? question "Em đã tự thử? Mở lời giải để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> Có hai mốt là 2 và 3, mỗi số xuất hiện hai lần.</p>
@@ -104,7 +104,7 @@
         </div>
 
 
-    ### Vì sao đôi khi trung vị nói đúng hơn trung bình?
+    #### Vì sao đôi khi trung vị nói đúng hơn trung bình?
 
     Một khoản thu rất lớn xuất hiện trong mẫu có thể làm số bình quân cao dù phần lớn quan sát còn thấp. Khi muốn tả người 'điển hình', không nên chỉ nhìn một con số.
 
@@ -113,9 +113,11 @@
     Trung bình dùng mọi giá trị nên nhạy với cực trị; trung vị là điểm giữa theo vị trí nên thường ổn định hơn khi chỉ một giá trị thay đổi rất mạnh. Cả hai đều là số mô tả nhưng cần chọn tùy câu hỏi.
 
 
+    **Em tự thử.** Mẫu \(4,5,6,7,28\). Tính trung bình và trung vị; chỉ ra đại lượng nào ít bị số 28 chi phối hơn.
+
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY09" hidden></span>
 
-    ??? question "Em đã tự thử? Mở lời giải để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> Trung bình \((4+5+6+7+28)/5=50/5=10\); trung vị 6; trung vị ít bị 28 chi phối hơn.</p>
@@ -123,23 +125,30 @@
         <p><strong>Nếu chưa làm được:</strong> Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó <a href="../luyen-tap/?item=THPT-G10-B13-P06">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
         </div>
 
+    ### Thuật ngữ, kiến thức và kỹ năng
 
+    **Thuật ngữ:** Số trung bình cộng, trung vị, tứ phân vị (Q_1,Q_2,Q_3), mốt, bảng tần số, giá trị đại diện.
 
-        ### Kiến thức SGK
+    **Sau bài học, em cần làm được:** Sắp xếp dữ liệu; tìm trung bình/trung vị/mốt; áp dụng đúng quy ước tứ phân vị KNTT; giải thích khi nào trung vị phù hợp hơn trung bình.
 
-    ### Số trung bình, trung vị
+=== "Kiến thức SGK"
+
+    ### 2.1. Số trung bình và trung vị
     Mẫu \(x_1,\ldots,x_n\) có \(n>0\), số trung bình \(\bar x=(\sum_i x_i)/n\). Nếu \(x_i\) có tần số \(m_i\), \(\bar x=\sum_i m_ix_i/\sum_i m_i\). Phải sắp mẫu không giảm trước khi tìm trung vị \(Q_2\): với \(n\) lẻ lấy giá trị chính giữa; \(n\) chẵn lấy trung bình hai giá trị giữa.
 
-    ### Tứ phân vị theo KNTT
+    ### 2.2. Tứ phân vị
 
-    **Cách đọc hình.** Sắp xếp dữ liệu từ bé đến lớn trước khi nhìn Q1, Q2, Q3. Các mốc chia nhóm quan sát đã sắp xếp, không chia khoảng giá trị thành những đoạn bằng nhau.
 
     <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B13_QUARTILES_D5_R01.svg" loading="lazy" alt="Mẫu đã sắp và cách lấy tứ phân vị khi có năm giá trị"><figcaption>Mẫu đã sắp và cách lấy tứ phân vị khi có năm giá trị.</figcaption></figure>
 
+    **Cách đọc hình.** Sắp xếp dữ liệu từ bé đến lớn trước khi nhìn Q1, Q2, Q3. Các mốc chia nhóm quan sát đã sắp xếp, không chia khoảng giá trị thành những đoạn bằng nhau.
+
     Với mẫu tăng dần: \(Q_2\) là trung vị; \(Q_1\) là trung vị **nửa dưới** và \(Q_3\) là trung vị **nửa trên**. Khi \(n\) lẻ, **loại chính \(Q_2\)** khỏi cả hai nửa; khi \(n\) chẵn, chia dãy thành hai nửa bằng nhau. Mỗi trường hợp cần ghi thao tác, không dùng máy tính có quy ước percentile khác làm bằng chứng thay SGK.
 
-    ### Mốt và diễn giải
+    ### 2.3. Mốt
     Mốt là giá trị xuất hiện nhiều lần nhất (tần số cao nhất); có thể có nhiều giá trị đồng mốt. Theo ví dụ SGK khi tất cả giá trị có tần số 1, mẫu được coi **không có mốt**. Số trung bình có thể bị kéo về phía giá trị rất lớn/nhỏ, trong khi trung vị ít nhạy hơn, nên việc chọn số đặc trưng phải theo tình huống.
+
+    **Không có mốt:** theo nhận xét của SGK (trang 82), khi mọi giá trị phân biệt trong mẫu có cùng tần số thì mẫu không có mốt, kể cả khi tần số chung lớn hơn 1; không chỉ riêng trường hợp mỗi giá trị xuất hiện một lần.
 
 === "Ví dụ"
 

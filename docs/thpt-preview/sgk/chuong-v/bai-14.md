@@ -12,15 +12,9 @@
 
     Khi gặp một giá trị bất thường, đừng loại nó theo cảm giác. Hãy so với quy tắc định lượng và đọc trong bối cảnh thực tế.
 
-    ### Thuật ngữ, kiến thức và kỹ năng
+    ### Ví dụ trực quan
 
-    **Thuật ngữ:** Khoảng biến thiên, khoảng tứ phân vị, phương sai, độ lệch chuẩn, giá trị bất thường, đơn vị đo.
-
-    **Sau bài học, em cần làm được:** So sánh độ phân tán của hai mẫu; tính trung bình và bình phương độ lệch; tìm IQR; xét ngoại lệ theo quy tắc; diễn giải đại lượng và đơn vị.
-
-=== "Kiến thức SGK"
-
-    ### Hai cách nhìn độ trải rộng của dữ liệu
+    #### Hai cách nhìn độ trải rộng của dữ liệu
 
     Hai lớp có thể có trung bình gần nhau nhưng lớp có bạn quá cao hay quá thấp làm khoảng từ min đến max rộng hơn.
 
@@ -35,7 +29,7 @@
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY10" hidden></span>
 
-    ??? question "Em đã tự thử? Mở lời giải để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> \(R=10-2=8\); \(Q_2=6\), \(Q_1=3\), \(Q_3=9\) nên \(\Delta_Q=9-3=6\).</p>
@@ -44,7 +38,7 @@
         </div>
 
 
-    ### Độ lệch có thể bù dấu, nên phải bình phương
+    #### Độ lệch có thể bù dấu, nên phải bình phương
 
     Các giá trị thấp hơn và cao hơn trung bình có độ lệch âm/dương bù nhau; cộng chênh lệch có dấu cho 0 dù dữ liệu rất phân tán.
 
@@ -53,9 +47,11 @@
     Muốn đo 'xa trung bình bao nhiêu', hãy bình phương các khoảng lệch để không bị bù dấu rồi lấy trung bình các bình phương. **Theo SGK KNTT ở mục này chia cho n**, không tự dùng mẫu số n−1; kết quả là phương sai và có đơn vị bình phương.
 
 
+    **Em tự thử.** Với mẫu \(2,4,6\), tính số trung bình và phương sai \(s^2\) theo mẫu số \(n=3\).
+
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY11" hidden></span>
 
-    ??? question "Em đã tự thử? Mở lời giải để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> \(\bar x=4\); \(s^2=[(2-4)^2+(4-4)^2+(6-4)^2]/3=8/3\).</p>
@@ -64,7 +60,7 @@
         </div>
 
 
-    ### Vì sao độ lệch chuẩn dễ đọc hơn phương sai?
+    #### Vì sao độ lệch chuẩn dễ đọc hơn phương sai?
 
     Nếu đo chiều dài bằng cm thì phương sai mang đơn vị cm², khó so trực tiếp với chiều dài vài cm; cần số đo trở lại cùng đơn vị.
 
@@ -73,9 +69,11 @@
     Lấy căn bậc hai phương sai giúp đưa mức phân tán về **cùng đơn vị với dữ liệu gốc**. Độ lệch chuẩn không cho biết từng quan sát lệch đúng bằng s, mà tóm tắt mức lệch điển hình.
 
 
+    **Em tự thử.** Bốn độ dài đo được (đơn vị cm) là \(2,2,6,6\). Tính số trung bình, phương sai và độ lệch chuẩn, ghi đúng đơn vị.
+
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY12" hidden></span>
 
-    ??? question "Em đã tự thử? Mở lời giải để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> Trung bình 4 cm; \(s^2=[4+4+4+4]/4=4\,\mathrm{cm}^2\), \(s=2\,\mathrm{cm}\).</p>
@@ -84,7 +82,7 @@
         </div>
 
 
-    ### Một giá trị xa trung tâm cần được nhận diện bằng quy tắc
+    #### Một giá trị xa trung tâm cần được nhận diện bằng quy tắc
 
     Một ngày ghi doanh số quá lớn có thể là thật hoặc nhập sai. Trước khi kết luận, ta cần tiêu chí định lượng để đánh dấu giá trị khác xa số còn lại.
 
@@ -93,9 +91,11 @@
     Đặt hai hàng rào quanh phần giữa: dưới \(Q_1-1{,}5\Delta_Q\) và trên \(Q_3+1{,}5\Delta_Q\). Giá trị **nhỏ hơn** rào dưới hoặc **lớn hơn** rào trên được gắn cờ bất thường; bằng rào không bị gắn theo dấu chặt.
 
 
+    **Em tự thử.** Xét mẫu đã sắp \(1,2,3,4,5,6,20\). Tìm \(Q_1,Q_2,Q_3\), hai hàng rào và giá trị bất thường.
+
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY13" hidden></span>
 
-    ??? question "Em đã tự thử? Mở lời giải để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> \(Q_2=4\), \(Q_1=2\), \(Q_3=6\), \(\Delta_Q=4\); hàng rào dưới −4, hàng rào trên 12. Chỉ giá trị 20 là bất thường.</p>
@@ -104,7 +104,7 @@
         </div>
 
 
-    ### Cùng trung bình không có nghĩa phân tán giống nhau
+    #### Cùng trung bình không có nghĩa phân tán giống nhau
 
     Hai nhóm đều đạt trung bình 4 điểm, nhưng một nhóm tập trung quanh 4, nhóm khác có điểm rất thấp và rất cao. Chỉ trung bình không đủ mô tả chất lượng phân bố.
 
@@ -119,7 +119,7 @@
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY14" hidden></span>
 
-    ??? question "Em đã tự thử? Mở lời giải để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> Cả hai trung bình 4; \(s_A^2=8/3\), \(s_B^2=32/3\), nên B phân tán hơn.</p>
@@ -127,22 +127,39 @@
         <p><strong>Nếu chưa làm được:</strong> Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó <a href="../luyen-tap/?item=THPT-G10-B14-P04">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
         </div>
 
+    ### Thuật ngữ, kiến thức và kỹ năng
 
-    ### Kiến thức SGK
+    **Thuật ngữ:** Khoảng biến thiên, khoảng tứ phân vị, phương sai, độ lệch chuẩn, giá trị bất thường, biểu đồ hộp, đơn vị đo.
 
-    ### Khoảng biến thiên và khoảng tứ phân vị
+    **Sau bài học, em cần làm được:** So sánh độ phân tán của hai mẫu; tính trung bình và bình phương độ lệch; tìm IQR; xét ngoại lệ theo quy tắc; diễn giải đại lượng, đọc biểu đồ hộp và đơn vị.
 
-    **Cách đọc hình.** Quan sát hai tập dữ liệu có thể cùng trung bình nhưng độ trải rộng và vùng giữa khác nhau. Nhìn trục và các mốc tứ phân vị trước khi đánh giá mức phân tán.
+=== "Kiến thức SGK"
+
+    ### 2.1. Khoảng biến thiên và khoảng tứ phân vị
+
 
     <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B14_DISPERSION_D5_R01.svg" loading="lazy" alt="Hai mẫu có cùng trung bình nhưng mức phân tán khác nhau"><figcaption>Hai mẫu có cùng trung bình nhưng mức phân tán khác nhau.</figcaption></figure>
 
+    **Cách đọc hình.** Quan sát hai tập dữ liệu có thể cùng trung bình nhưng độ trải rộng và vùng giữa khác nhau. Nhìn trục và các mốc tứ phân vị trước khi đánh giá mức phân tán.
+
     Khoảng biến thiên \(R=x_{\max}-x_{\min}\ge0\). Khoảng tứ phân vị \(\Delta_Q=Q_3-Q_1\ge0\), được xác định từ **cách lấy tứ phân vị của SGK**. R rất nhạy với giá trị quá lớn/quá nhỏ, \(\Delta_Q\) nhìn vào phần 50% số liệu giữa.
 
-    ### Phương sai / độ lệch chuẩn theo dãy đang mô tả
+    ### 2.2. Phương sai và độ lệch chuẩn
     \(s^2=\frac1n\sum_{i=1}^{n}(x_i-\bar x)^2\), **chia cho n** như SGK chứ không tự thay bằng \(n-1\). \(s=\sqrt{s^2}\). Nếu dữ liệu gốc tính bằng kg thì phương sai tính kg² và độ lệch chuẩn tính kg. Với bảng tần số, tính \(\sum m_i(x_i-\bar x)^2/n\).
 
-    ### Giá trị bất thường
+    **Chú ý đúng SGK (trang 86):** ngoài phương sai \(s^2\) vừa định nghĩa với mẫu số \(n\), sách còn *giới thiệu* đại lượng \(\hat{s}^{\,2}=\frac{\sum_{i=1}^{n}(x_i-\bar x)^2}{n-1}\) khi \(n>1\). Đây là hai đại lượng khác nhau. Nếu đề yêu cầu \(s^2\) theo định nghĩa chính ở bài này, phải chia cho \(n\); không được tự đổi sang \(n-1\). Mẫu số \(n-1\) không áp dụng khi \(n=1\).
+
+
+
+    ### 2.3. Phát hiện số liệu bất thường hoặc không chính xác bằng biểu đồ hộp
     Theo quy tắc của SGK, giá trị \(x<Q_1-1{,}5\Delta_Q\) hoặc \(x>Q_3+1{,}5\Delta_Q\) được coi là giá trị bất thường. Dấu ở đây **nghiêm ngặt** (<, >); bằng ngưỡng không bị liệt kê. Không tự động loại những giá trị đó khỏi dữ liệu khi tính toán nếu đề bài không yêu cầu.
+
+
+    **Biểu đồ hộp dùng các tứ phân vị để đọc mức phân tán và phát hiện giá trị bất thường.** Từ mẫu đã sắp \(1,2,3,4,5,6,7,8,20\), ta có \(Q_2=5\), \(Q_1=(2+3)/2=2{,}5\), \(Q_3=(7+8)/2=7{,}5\), do đó \(\Delta_Q=5\). Hai hàng rào là \(Q_1-1{,}5\Delta_Q=-5\) và \(Q_3+1{,}5\Delta_Q=15\). Giá trị \(20>15\) là bất thường; các giá trị từ 1 đến 8 không vượt rào.
+
+    <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/G10_B14_BOXPLOT_S1_Q18_ENRICHMENT_20261113.svg" loading="lazy" alt="Biểu đồ hộp của mẫu 1,2,3,4,5,6,7,8,20: hộp từ Q1 bằng 2,5 đến Q3 bằng 7,5, trung vị Q2 bằng 5; râu từ 1 tới 8; 20 vượt hàng rào trên 15."><figcaption>Biểu đồ hộp minh họa: vạch giữa là trung vị; hộp là 50% số liệu giữa; điểm 20 nằm ngoài râu.</figcaption></figure>
+
+    **Cách đọc hình.** Trước tiên đọc trục và ba mốc \(Q_1,Q_2,Q_3\). Hộp nối \(Q_1\) tới \(Q_3\), vạch trong hộp là trung vị. Trong minh họa này hai râu dừng ở các giá trị quan sát không bất thường nhỏ/lớn nhất (1 và 8); đường đứt chỉ hàng rào trên 15; điểm 20 được đánh dấu riêng. **Hàng rào không nhất thiết trùng đầu râu**. Giá trị bị gắn cờ cần được kiểm tra bối cảnh, không tự kết luận chắc chắn dữ liệu sai.
 
 === "Ví dụ"
 
