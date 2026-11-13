@@ -349,3 +349,72 @@ Bộ bài thực hành của bốn nhóm lấy từ cùng một ngân hàng câu
 **Tự kiểm tra công khai:** gồm 16 câu lấy từ chính ngân hàng đã luyện, phân bố trên toàn bộ 16 mục tiêu của chuyên đề. Bộ này dùng để tự đối chiếu sau khi nộp, không phải bài đánh giá độc lập. Toàn bộ đề phải được hiển thị và người học bấm **Final Submit** trước khi có đúng/sai, đáp án, gợi ý hoặc lời giải; sự bảo vệ thật sự trên website thuộc RELEASE. Phần này chỉ giúp em phát hiện chỗ cần ôn; kết quả không phải bằng chứng chấm năng lực độc lập hay điểm thành thạo chính thức. Đề tự kiểm tra chính thức nếu được triển khai sẽ là một hệ thống riêng.
 
 Sau khi nộp: người học tự so lời giải và rubric, xác định outcome mắc lỗi, quay lại mục kiến thức/D6 và làm câu khác. Không suy ra một điểm kiểm tra độc lập từ các câu đã có thể xem trong Practice.
+
+<!-- SOURCE-LOCK-ONLY canonical public item ID references; render stems/solutions from one shared bank by placement, do not show metadata to learner.
+- THPT-G11-B01-C01
+- THPT-G11-B01-C02
+- THPT-G11-B01-P01
+- THPT-G11-B01-P02
+- THPT-G11-B01-P03
+- THPT-G11-B01-P04
+- THPT-G11-B02-C01
+- THPT-G11-B02-C02
+- THPT-G11-B02-P01
+- THPT-G11-B02-P02
+- THPT-G11-B02-P03
+- THPT-G11-B02-P04
+- THPT-G11-B02-P05
+- THPT-G11-B02-P06
+- THPT-G11-B01-P05
+- THPT-G11-B02-P07
+- THPT-G11-CHI-W01
+- THPT-G11-CHI-W02-ANCHOR
+- THPT-G11-B03-C01
+- THPT-G11-B03-C02
+- THPT-G11-B03-C03
+- THPT-G11-B03-C04
+- THPT-G11-B03-P01
+- THPT-G11-B03-P02
+- THPT-G11-B03-P03
+- THPT-G11-B03-P04
+- THPT-G11-B03-P05
+- THPT-G11-B03-P06
+- THPT-G11-B03-P07
+- THPT-G11-B03-P08
+- THPT-G11-B04-C01
+- THPT-G11-B04-C02
+- THPT-G11-B04-C03
+- THPT-G11-B04-C04
+- THPT-G11-B04-P01
+- THPT-G11-B04-P02
+- THPT-G11-B04-P03
+- THPT-G11-B04-P04
+- THPT-G11-B04-P05
+- THPT-G11-B04-P06
+- THPT-G11-B04-P07
+- THPT-G11-B04-P08
+- THPT-G11-B04-P09
+- THPT-G11-B04-P10
+- THPT-G11-CHI-W03
+- THPT-G11-CHI-W04-ANCHOR
+- THPT-TOP06-P01
+- THPT-TOP06-P02
+- THPT-TOP06-P03
+- THPT-TOP06-P04
+- THPT-TOP06-P05
+- THPT-TOP06-P06
+- THPT-TOP06-P07
+- THPT-TOP06-P08
+- THPT-TOP06-P09
+- THPT-TOP06-P10
+- THPT-TOP06-P11
+- THPT-TOP06-P12
+- THPT-TOP06-P13
+- THPT-TOP06-P14
+- THPT-TOP06-P15
+- THPT-TOP06-P16
+- THPT-TOP06-W01
+- THPT-TOP06-W02
+- THPT-TOP06-W03
+- THPT-TOP06-W04
+-->
