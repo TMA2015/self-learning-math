@@ -52,15 +52,15 @@ for(const [name,chapter,num]of specs){
  const editorial=chivEditorialReceiptRows().get(name);
  if(editorial)assert.equal(editorial.baseline,row.candidate,
    name+" ChIV editorial baseline must equal the historic 27-lesson candidate");
- const chvi=chviEditorialReceiptRows().get(name);
- if(chvi)assert.equal(chvi.baseline,row.candidate,name+" ChVI Q18 must extend only historical candidate");
+ const chviReceiptRow=chviEditorialReceiptRows().get(name);
+ if(chviReceiptRow)assert.equal(chviReceiptRow.baseline,row.candidate,name+" ChVI Q18 must extend only historical candidate");
  const ux=chviExampleUxReceiptRows().get(name);
  if(ux){
-  assert(chvi,name+" UX receipt without original ChVI editorial");
-  assert.equal(ux.baseline,chvi.candidate,name+" UX follows published original source, never replaces it");
+  assert(chviReceiptRow,name+" UX receipt without original ChVI editorial");
+  assert.equal(ux.baseline,chviReceiptRow.candidate,name+" UX follows published original source, never replaces it");
  }
  const approvedSources=[row.main,row.candidate,...(editorial?[editorial.candidate]:[]),
-  ...(chvi?[chvi.candidate]:[]),...(ux?[ux.candidate]:[])];
+  ...(chviReceiptRow?[chviReceiptRow.candidate]:[]),...(ux?[ux.candidate]:[])];
  assert(approvedSources.includes(baselineSha),
    name+" unknown main baseline source drift outside immutable 27-row/Q18 chain");
  assert.equal(blob(candidateRaw),candidateG10KnowledgeBlob(num)||row.candidate,name+" exact approved historical/editorial source drift");
