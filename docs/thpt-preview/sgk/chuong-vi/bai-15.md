@@ -230,13 +230,15 @@
 
     **Vì sao chọn cách này?** Phân thức có mẫu số nên phải kiểm điều kiện trước khi thay tọa độ.
 
-    **Giải.** \(x-2\ne0\), do đó \(D=\mathbb R\setminus\{2\}\). \(f(3)=1\), nên \(M\) thuộc đồ thị. \(N\) không thuộc vì hoành độ 2 ngoài tập xác định. **Tự kiểm:** Sự tồn tại của một điểm trong mặt phẳng không có nghĩa điểm đó thuộc mọi đồ thị.
+    **Lời giải.** \(x-2\ne0\), do đó \(D=\mathbb R\setminus\{2\}\). \(f(3)=1\), nên \(M\) thuộc đồ thị. \(N\) không thuộc vì hoành độ 2 ngoài tập xác định. **Tự kiểm:** Sự tồn tại của một điểm trong mặt phẳng không có nghĩa điểm đó thuộc mọi đồ thị.
+
+    **Tự luyện thêm.** Ba câu dưới đây là bài em tự làm sau khi xem ví dụ; chỉ mở lời giải khi đã thử xong.
 
     1. Tìm tập xác định của \(h(x)=\sqrt{5-2x}\).
     2. Với \(p(x)=x^2-4\), hãy kiểm tra điểm \(A(3;5)\) có thuộc đồ thị hay không.
     3. Hàm \(q(x)=-3x+7\) đồng biến hay nghịch biến trên \(\mathbb{R}\)? Giải thích theo định nghĩa.
 
-    ??? question "Đối chiếu"
+    ??? question "Xem lời giải ba câu tự luyện"
 
         <ol><li><span class="arithmatex">\(5-2x\ge0\iff x\le\frac52\)</span>. Vậy <span class="arithmatex">\(D=(-\infty;\frac52]\)</span>.</li>
         <li><span class="arithmatex">\(p(3)=9-4=5\)</span>, do đó <span class="arithmatex">\(A(3;5)\)</span> thuộc đồ thị.</li>
