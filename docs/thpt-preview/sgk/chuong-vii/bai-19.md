@@ -23,7 +23,7 @@
 
     Khi nhìn một tuyến đường trên bản đồ, chỉ biết một điểm mà đường đi qua thì chưa đủ; ta còn phải biết đường đi theo hướng nào. Vectơ chỉ phương nằm dọc tuyến đường, còn vectơ pháp tuyến hướng vuông góc với tuyến đường. Hai hướng này có thể được nhận ra bằng tích vô hướng: với hai vectơ khác vectơ không, tích vô hướng bằng 0 chính là dấu hiệu chúng vuông góc. Một đường thẳng có thể nhận nhiều vectơ chỉ phương hoặc pháp tuyến, miễn là chúng cùng hướng tương ứng và không bằng vectơ không.
 
-    Hãy hình dung một mũi tên chạy theo đường và một mũi tên dựng vuông góc với nó. Nếu pháp tuyến là (n=(a,b)≠(0,0)), ta có thể chọn chỉ phương (u=(-b,a)): tích vô hướng (n· u=a(-b)+ba=0). Như vậy, cách đổi vectơ xuất phát từ quan hệ vuông góc, không phải từ một quy tắc đổi dấu học thuộc.
+    Hãy hình dung một mũi tên chạy theo đường và một mũi tên dựng vuông góc với nó. Nếu pháp tuyến là \(n=(a,b)\ne(0,0)\), ta có thể chọn chỉ phương \(u=(-b,a)\): tích vô hướng \(n\cdot u=a(-b)+ba=0\). Như vậy, cách đổi vectơ xuất phát từ quan hệ vuông góc, không phải từ một quy tắc đổi dấu học thuộc.
 
     **Em vận dụng.** Cho n=(2,3) là pháp tuyến của d. Vectơ u=(-3,2) có phải một chỉ phương của d không? Nêu phép kiểm.
 
@@ -43,9 +43,9 @@
 
     <span id="thpt-g10-chvii-try02" data-thpt-first-try-id="THPT-G10-CHVII-TRY02" data-outcome-id="G10-B19-GENERAL_POINT" data-thpt-help-ref="HELP-G10-CHVII-TRY02"></span>
 
-    Từ hướng vuông góc ấy, ta có thể viết một điều kiện xác định toàn bộ các điểm trên đường thẳng. Giả sử đường đi qua (A(x_0,y_0)) và có pháp tuyến (n=(a,b)≠(0,0)). Với một điểm bất kỳ (M(x,y)), vectơ dịch chuyển (AM=(x-x_0,y-y_0)) phải vuông góc với (n) nếu (M) nằm trên đường. Vì thế (n· AM=0), hay (a(x-x_0)+b(y-y_0)=0).
+    Từ hướng vuông góc ấy, ta có thể viết một điều kiện xác định toàn bộ các điểm trên đường thẳng. Giả sử đường đi qua \(A(x_0,y_0)\) và có pháp tuyến \(n=(a,b)\ne(0,0)\). Với một điểm bất kỳ \(M(x,y)\), vectơ dịch chuyển \(\overrightarrow{AM}=(x-x_0,y-y_0)\) phải vuông góc với \(n\) nếu \(M\) nằm trên đường. Vì thế \(n\cdot\overrightarrow{AM}=0\), hay \(a(x-x_0)+b(y-y_0)=0\).
 
-    Trong hình dung hình học, (M) trượt dọc đường qua (A), còn (n) luôn vuông góc với hướng trượt; hình chiếu của (AM) lên (n) bằng 0. Khai triển đẳng thức trên cho phương trình tổng quát, rồi thử lại tọa độ (A) để kiểm tra. Đừng chọn (n=(0,0)), vì khi ấy phương trình không xác định một đường thẳng.
+    Trong hình dung hình học, \(M\) trượt dọc đường qua \(A\), còn \(n\) luôn vuông góc với hướng trượt; hình chiếu của \(\overrightarrow{AM}\) lên \(n\) bằng 0. Khai triển đẳng thức trên cho phương trình tổng quát, rồi thử lại tọa độ \(A\) để kiểm tra. Đừng chọn \(n=(0,0)\), vì khi ấy phương trình không xác định một đường thẳng.
 
     **Em vận dụng.** Đường thẳng qua A(1,3), pháp tuyến n=(2,-1) có phương trình tổng quát nào?
 
@@ -65,9 +65,9 @@
 
     <span id="thpt-g10-chvii-try03" data-thpt-first-try-id="THPT-G10-CHVII-TRY03" data-outcome-id="G10-B19-PARAMETRIC" data-thpt-help-ref="HELP-G10-CHVII-TRY03"></span>
 
-    Một cách khác để mô tả đường thẳng là xuất phát từ (A), rồi đi những đoạn dài ngắn tùy ý theo một vectơ chỉ phương (u≠(0,0)). Nhân vectơ với số thực (t) tạo độ dời (t u), nên vị trí mới có dạng (M=A+t u). Khi (t=0), ta ở (A); khi (t=1), ta đi thêm một vectơ (u); với (t<0), ta đi ngược hướng.
+    Một cách khác để mô tả đường thẳng là xuất phát từ \(A\), rồi đi những đoạn dài ngắn tùy ý theo một vectơ chỉ phương \(u\ne(0,0)\). Nhân vectơ với số thực \(t\) tạo độ dời \(tu\), nên vị trí mới có dạng \(M=A+tu\). Khi \(t=0\), ta ở \(A\); khi \(t=1\), ta đi thêm một vectơ \(u\); với \(t<0\), ta đi ngược hướng.
 
-    Đó là ý nghĩa của phương trình tham số (x=x_A+t u_x, y=y_A+t u_y) với (t∈ℝ). Chữ (t) chỉ là một tham số quét các vị trí trên đường, không nhất thiết là thời gian và cũng không phải một tọa độ. Khi lập phương trình, thử hai giá trị (t=0,1) là cách kiểm nhanh điểm xuất phát và hướng đi.
+    Đó là ý nghĩa của phương trình tham số \(x=x_A+tu_x,\ y=y_A+tu_y\) với \(t\in\mathbb R\). Chữ \(t\) chỉ là một tham số quét các vị trí trên đường, không nhất thiết là thời gian và cũng không phải một tọa độ. Khi lập phương trình, thử hai giá trị \(t=0,1\) là cách kiểm nhanh điểm xuất phát và hướng đi.
 
     **Em vận dụng.** Viết phương trình tham số đường thẳng qua A(1,-1), chỉ phương u=(-2,3).
 
@@ -87,9 +87,9 @@
 
     <span id="thpt-g10-chvii-try04" data-thpt-first-try-id="THPT-G10-CHVII-TRY04" data-outcome-id="G10-B19-TWO_POINTS" data-thpt-help-ref="HELP-G10-CHVII-TRY04"></span>
 
-    Nếu bản đồ cho hai điểm (A) và (B) phân biệt, ta chưa cần đo góc hay đo độ dài để tìm hướng: vectơ (AB=(x_B-x_A,y_B-y_A)) đã nằm dọc đường cần dựng. Do (A≠ B), vectơ này khác 0 và có thể dùng làm chỉ phương. Chọn một vectơ pháp tuyến vuông góc với (AB), rồi dùng điều kiện (n· AM=0) để xác định đường qua (A).
+    Nếu bản đồ cho hai điểm \(A\) và \(B\) phân biệt, ta chưa cần đo góc hay đo độ dài để tìm hướng: vectơ \(\overrightarrow{AB}=(x_B-x_A,y_B-y_A)\) đã nằm dọc đường cần dựng. Do \(A\ne B\), vectơ này khác 0 và có thể dùng làm chỉ phương. Chọn một vectơ pháp tuyến vuông góc với \(\overrightarrow{AB}\), rồi dùng điều kiện \(n\cdot\overrightarrow{AM}=0\) để xác định đường qua \(A\).
 
-    Có thể hình dung mũi tên (AB) nối hai mốc và pháp tuyến dựng vuông góc với mũi tên ấy. Sau khi viết phương trình, hãy thế tọa độ cả (A) lẫn (B) để kiểm tra. Nếu hai điểm trùng nhau, không có hướng (AB) khác 0; một điểm duy nhất không xác định được một đường thẳng duy nhất.
+    Có thể hình dung mũi tên \(\overrightarrow{AB}\) nối hai mốc và pháp tuyến dựng vuông góc với mũi tên ấy. Sau khi viết phương trình, hãy thế tọa độ cả \(A\) lẫn \(B\) để kiểm tra. Nếu hai điểm trùng nhau, không có hướng \(\overrightarrow{AB}\) khác 0; một điểm duy nhất không xác định được một đường thẳng duy nhất.
 
     **Em vận dụng.** Cho A(-1,2), B(2,5). Viết một phương trình tổng quát của đường AB.
 
@@ -109,7 +109,7 @@
 
     <span id="thpt-g10-chvii-try05" data-thpt-first-try-id="THPT-G10-CHVII-TRY05" data-outcome-id="G10-B19-MEMBERSHIP" data-thpt-help-ref="HELP-G10-CHVII-TRY05"></span>
 
-    Khi đã có phương trình (ax+by+c=0), ta không cần nhìn hình để đoán xem một địa điểm có nằm trên đường hay không. Phương trình chính là điều kiện mà tọa độ mọi điểm thuộc đường phải thỏa. Với (M(x_M,y_M)), chỉ cần tính (ax_M+by_M+c): kết quả bằng 0 thì (M) thuộc đường, còn khác 0 thì không.
+    Khi đã có phương trình \(ax+by+c=0\), ta không cần nhìn hình để đoán xem một địa điểm có nằm trên đường hay không. Phương trình chính là điều kiện mà tọa độ mọi điểm thuộc đường phải thỏa. Với \(M(x_M,y_M)\), chỉ cần tính \(ax_M+by_M+c\): kết quả bằng 0 thì \(M\) thuộc đường, còn khác 0 thì không.
 
     Trên một hình phác, một điểm nằm sát nét vẽ vẫn có thể không thuộc đường; phép thế mới cho kết luận chính xác. Hãy giữ nguyên dấu của từng hạng tử khi thay tọa độ, và thử riêng từng điểm thay vì suy từ cảm giác gần hay xa.
 
@@ -153,9 +153,9 @@
 
     <span id="thpt-g10-chvii-try07" data-thpt-first-try-id="THPT-G10-CHVII-TRY07" data-outcome-id="G10-B19-LINEAR_MODEL" data-thpt-help-ref="HELP-G10-CHVII-TRY07"></span>
 
-    Hai cặp số liệu cũng có thể xác định một mô hình đường thẳng, chẳng hạn giá trị (V) thay đổi theo thời gian (t). Nhớ rằng hệ số góc mô tả mức tăng của đại lượng đứng khi đại lượng ngang tăng một đơn vị. Qua hai điểm \((x_1,y_1)\), \((x_2,y_2)\) với \(x_1\ne x_2\), ta tìm \(m=(y_2-y_1)/(x_2-x_1)\), rồi dùng một điểm để xác định \(b\) trong \(y=mx+b\).
+    Hai cặp số liệu cũng có thể xác định một mô hình đường thẳng, chẳng hạn giá trị \(V\) thay đổi theo thời gian \(t\). Nhớ rằng hệ số góc mô tả mức tăng của đại lượng đứng khi đại lượng ngang tăng một đơn vị. Qua hai điểm \((x_1,y_1)\), \((x_2,y_2)\) với \(x_1\ne x_2\), ta tìm \(m=(y_2-y_1)/(x_2-x_1)\), rồi dùng một điểm để xác định \(b\) trong \(y=mx+b\).
 
-    Trên biểu đồ, (m) tương ứng với độ tăng theo trục đứng chia cho độ tăng theo trục ngang; mỗi trục cần ghi đúng đơn vị. Giá trị (b) là mức dự đoán khi (x=0). Mô hình đường thẳng chỉ là một giả thiết phù hợp trong miền xét, nên sau khi kiểm lại hai điểm dữ liệu, cần nói rõ giới hạn của việc dự đoán xa hơn.
+    Trên biểu đồ, \(m\) tương ứng với độ tăng theo trục đứng chia cho độ tăng theo trục ngang; mỗi trục cần ghi đúng đơn vị. Giá trị \(b\) là mức dự đoán khi \(x=0\). Mô hình đường thẳng chỉ là một giả thiết phù hợp trong miền xét, nên sau khi kiểm lại hai điểm dữ liệu, cần nói rõ giới hạn của việc dự đoán xa hơn.
 
     **Em vận dụng.** Giá trị V theo thời gian t (t≥0) đi qua (0,5) và (2,9), giả sử tuyến tính. Lập V(t) và tính V(3).
 
