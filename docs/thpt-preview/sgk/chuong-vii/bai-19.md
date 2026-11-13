@@ -153,8 +153,7 @@
 
     <span id="thpt-g10-chvii-try07" data-thpt-first-try-id="THPT-G10-CHVII-TRY07" data-outcome-id="G10-B19-LINEAR_MODEL" data-thpt-help-ref="HELP-G10-CHVII-TRY07"></span>
 
-    Hai cặp số liệu cũng có thể xác định một mô hình đường thẳng, chẳng hạn giá trị (V) thay đổi theo thời gian (t). Nhớ rằng hệ số góc mô tả mức tăng của đại lượng đứng khi đại lượng ngang tăng một đơn vị. Qua hai điểm ((x_1,y_1)), ((x_2,y_2)) với (x_1
-e x_2), ta tìm (m=(y_2-y_1)/(x_2-x_1)), rồi dùng một điểm để xác định (b) trong (y=mx+b).
+    Hai cặp số liệu cũng có thể xác định một mô hình đường thẳng, chẳng hạn giá trị (V) thay đổi theo thời gian (t). Nhớ rằng hệ số góc mô tả mức tăng của đại lượng đứng khi đại lượng ngang tăng một đơn vị. Qua hai điểm \((x_1,y_1)\), \((x_2,y_2)\) với \(x_1\ne x_2\), ta tìm \(m=(y_2-y_1)/(x_2-x_1)\), rồi dùng một điểm để xác định \(b\) trong \(y=mx+b\).
 
     Trên biểu đồ, (m) tương ứng với độ tăng theo trục đứng chia cho độ tăng theo trục ngang; mỗi trục cần ghi đúng đơn vị. Giá trị (b) là mức dự đoán khi (x=0). Mô hình đường thẳng chỉ là một giả thiết phù hợp trong miền xét, nên sau khi kiểm lại hai điểm dữ liệu, cần nói rõ giới hạn của việc dự đoán xa hơn.
 
