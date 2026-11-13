@@ -45,6 +45,14 @@ const chviiNarrative=new Map(chviiNarrativeRows.map(m=>[Number(m[1]),{
  baseline:m[2],candidate:m[3],tries:Number(m[4]),helps:Number(m[5]),examples:Number(m[6])}]));
 if(chviiNarrativeReceipt)assert.equal(chviiNarrative.size,4,"ChVII additive receipt lesson duplication");
 
+const chviiAp2Path=path.join(root,
+ "prototypes/thpt/ux795/G10_CHVII_B19_B22_AP2_EQUIVALENT_MATHJAX_DELTA_RECEIPT_20261113.md");
+const chviiAp2Text=fs.existsSync(chviiAp2Path)?fs.readFileSync(chviiAp2Path,"utf8"):"";
+const chviiAp2Matches=[...chviiAp2Text.matchAll(/^\| B(19|20|21|22) \| \x60([a-f0-9]{40})\x60 \| \x60([a-f0-9]{40})\x60 \| (\d+) \| (\d+) \|/gm)];
+if(chviiAp2Text)assert.equal(chviiAp2Matches.length,4,"AP2 exact rows for all four ChVII lessons");
+const chviiAp2=new Map(chviiAp2Matches.map(m=>[Number(m[1]),{
+ baseline:m[2],candidate:m[3],tries:Number(m[4]),helps:Number(m[5])}]));
+
 const htmlSelfPractice=/<summary[^>]*>\s*Xem lời giải ba câu tự luyện\s*<\/summary>/g;
 const blob=raw=>crypto.createHash("sha1")
  .update(Buffer.from("blob "+raw.length+"\0")).update(raw).digest("hex");
@@ -65,7 +73,7 @@ for(let n=1;n<=27;n++){
   const source=fs.readFileSync(path.join(root,"docs",route+".md"));
   assert.equal(blob(source),followon.candidate,"B"+n+" source SHA must match signed UX receipt");
  }
- const signedVII=chvii.get(n),amendedVII=chviiNarrative.get(n);
+ const signedVII=chvii.get(n),amendedVII=chviiNarrative.get(n),ap2=chviiAp2.get(n);
  if(signedVII){
   const source=fs.readFileSync(path.join(root,"docs",route+".md"));
   if(amendedVII){
@@ -74,7 +82,13 @@ for(let n=1;n<=27;n++){
    assert.equal(amendedVII.helps,signedVII.helps,"B"+n+" HELP count altered in narrative receipt");
    assert.equal(amendedVII.examples,signedVII.examples,"B"+n+" D2 example count altered in narrative receipt");
   }
-  assert.equal(blob(source),amendedVII?amendedVII.candidate:signedVII.candidate,
+  if(ap2){
+   assert(amendedVII,"B"+n+" AP2 cannot skip reviewed narrative source");
+   assert.equal(ap2.baseline,amendedVII.candidate,"B"+n+" AP2 SHA must follow reviewed PR845 candidate");
+   assert.equal(ap2.tries,signedVII.tries,"B"+n+" AP2 preserves canonical questions");
+   assert.equal(ap2.helps,signedVII.helps,"B"+n+" AP2 preserves HELP");
+  }
+  assert.equal(blob(source),ap2?ap2.candidate:(amendedVII?amendedVII.candidate:signedVII.candidate),
    "B"+n+" ChVII source must match latest signed Q18 source-chain receipt");
   assert.equal(ids.length,signedVII.tries,"B"+n+" original ChVII FirstTry count");
   assert.equal([...markdown.matchAll(/data-thpt-help-id="([^"]+)"/g)].length,signedVII.helps,
