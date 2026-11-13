@@ -1,6 +1,6 @@
 # AUTHORING-only metadata — CĐ13 Vectơ hình học phẳng và không gian R01
 
-**Scope:** one self-sufficient Topic in three learner pages, 16 modules/outcomes, 16 self-tries, 16 new Practice and 4 Written rubrics /7; source d8a544101788e07fb33961fbe38f9c20827bcec4. Internal IDs/receipts are not learner-visible.
+**Scope:** one self-sufficient Topic in three learner pages, 16 modules/outcomes, 16 self-tries, 16 new Practice and 4 Written rubrics /7; source d351c5aec660d6482f6694becbd3e2567a14edbf. Internal IDs/receipts are not learner-visible.
 
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
@@ -8,8 +8,8 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_PLANAR_SPATIAL_VECTORS_FULL_R01_20261113.md
-ACADEMIC_SOURCE_BLOB: d8a544101788e07fb33961fbe38f9c20827bcec4
-SOURCE_BLOB: d8a544101788e07fb33961fbe38f9c20827bcec4
+ACADEMIC_SOURCE_BLOB: d351c5aec660d6482f6694becbd3e2567a14edbf
+SOURCE_BLOB: d351c5aec660d6482f6694becbd3e2567a14edbf
 ORIGINAL_G10_SGK_SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9
 ORIGINAL_G12_SGK_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
@@ -134,26 +134,26 @@ RELEASE_AUTHORIZATION: NO
 | `THPT-G12-B08-P01` | `TOP13-O15` | TOPIC_PRACTICE | SGK_CANONICAL_REUSE | G12_II_R00_856a37bd |
 | `THPT-G12-B08-C03` | `TOP13-O16` | TOPIC_PRACTICE | SGK_CANONICAL_REUSE | G12_II_R00_856a37bd |
 | `THPT-G12-B08-P05` | `TOP13-O16` | TOPIC_PRACTICE | SGK_CANONICAL_REUSE | G12_II_R00_856a37bd |
-| `THPT-TOP13-P01` | `TOP13-O02` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d8a54410 |
-| `THPT-TOP13-P02` | `TOP13-O01` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d8a54410 |
-| `THPT-TOP13-P03` | `TOP13-O03` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d8a54410 |
-| `THPT-TOP13-P04` | `TOP13-O04` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d8a54410 |
-| `THPT-TOP13-P05` | `TOP13-O05` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d8a54410 |
-| `THPT-TOP13-P06` | `TOP13-O06` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d8a54410 |
-| `THPT-TOP13-P07` | `TOP13-O07` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d8a54410 |
-| `THPT-TOP13-P08` | `TOP13-O08` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d8a54410 |
-| `THPT-TOP13-P09` | `TOP13-O09` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d8a54410 |
-| `THPT-TOP13-P10` | `TOP13-O10` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d8a54410 |
-| `THPT-TOP13-P11` | `TOP13-O11` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d8a54410 |
-| `THPT-TOP13-P12` | `TOP13-O12` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d8a54410 |
-| `THPT-TOP13-P13` | `TOP13-O13` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d8a54410 |
-| `THPT-TOP13-P14` | `TOP13-O14` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d8a54410 |
-| `THPT-TOP13-P15` | `TOP13-O15` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d8a54410 |
-| `THPT-TOP13-P16` | `TOP13-O16` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d8a54410 |
-| `THPT-TOP13-W01` | `TOP13-O06` | TOPIC_WRITTEN | TOPIC_NEW_CANDIDATE | TOP13_R01_d8a54410 |
-| `THPT-TOP13-W02` | `TOP13-O10` | TOPIC_WRITTEN | TOPIC_NEW_CANDIDATE | TOP13_R01_d8a54410 |
-| `THPT-TOP13-W03` | `TOP13-O11` | TOPIC_WRITTEN | TOPIC_NEW_CANDIDATE | TOP13_R01_d8a54410 |
-| `THPT-TOP13-W04` | `TOP13-O16` | TOPIC_WRITTEN | TOPIC_NEW_CANDIDATE | TOP13_R01_d8a54410 |
+| `THPT-TOP13-P01` | `TOP13-O02` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d351c5ae |
+| `THPT-TOP13-P02` | `TOP13-O01` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d351c5ae |
+| `THPT-TOP13-P03` | `TOP13-O03` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d351c5ae |
+| `THPT-TOP13-P04` | `TOP13-O04` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d351c5ae |
+| `THPT-TOP13-P05` | `TOP13-O05` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d351c5ae |
+| `THPT-TOP13-P06` | `TOP13-O06` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d351c5ae |
+| `THPT-TOP13-P07` | `TOP13-O07` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d351c5ae |
+| `THPT-TOP13-P08` | `TOP13-O08` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d351c5ae |
+| `THPT-TOP13-P09` | `TOP13-O09` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d351c5ae |
+| `THPT-TOP13-P10` | `TOP13-O10` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d351c5ae |
+| `THPT-TOP13-P11` | `TOP13-O11` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d351c5ae |
+| `THPT-TOP13-P12` | `TOP13-O12` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d351c5ae |
+| `THPT-TOP13-P13` | `TOP13-O13` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d351c5ae |
+| `THPT-TOP13-P14` | `TOP13-O14` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d351c5ae |
+| `THPT-TOP13-P15` | `TOP13-O15` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d351c5ae |
+| `THPT-TOP13-P16` | `TOP13-O16` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | TOP13_R01_d351c5ae |
+| `THPT-TOP13-W01` | `TOP13-O06` | TOPIC_WRITTEN | TOPIC_NEW_CANDIDATE | TOP13_R01_d351c5ae |
+| `THPT-TOP13-W02` | `TOP13-O10` | TOPIC_WRITTEN | TOPIC_NEW_CANDIDATE | TOP13_R01_d351c5ae |
+| `THPT-TOP13-W03` | `TOP13-O11` | TOPIC_WRITTEN | TOPIC_NEW_CANDIDATE | TOP13_R01_d351c5ae |
+| `THPT-TOP13-W04` | `TOP13-O16` | TOPIC_WRITTEN | TOPIC_NEW_CANDIDATE | TOP13_R01_d351c5ae |
 
 ## OUTCOME_SOURCE_AND_PED_TRACE
 
@@ -180,7 +180,7 @@ RELEASE_AUTHORIZATION: NO
 
 - **Q15:** exactly 52 unique PUBLIC ID =20 G10 SGK source pointers +12 G12 SGK source pointers +16 new Topic Practice +4 Topic Written. Original SGK canonical item bodies are not recopied. New 20 item bodies occur only in learner source R01; one stem/solution/rubric per ID. Some original Topic2 PR #793 placements reuse these original IDs; reuse by role is allowed, semantic duplication of new item bodies is not authorized.
 - **Q16:** optional Self Check replays 16 existing public Practice IDs. It is `CLIENT_SELF_CHECK_NO_MASTERY`, never `TOPIC_READINESS`; no private RD1 exam content in public files, no independent grade claim. Before Final Submit no hint/key/correctness/AI tutor; after submit self-comparison may guide revision, no Skill Mastery writes.
-- **DELTA_C:** new CĐ13 learner source, 16 concept-first explanations, 16 practice + 4 Written/rubrics with 3D extensions require author Q18 on exact Git blob. Original G10/G12 SGK source and its independent reviewer receipt remain unchanged, not promoted across Topic boundary. SVG are four unchanged original file references (one G10, three G12); UI release must test actual render.
+- **DELTA_C:** R02 source revision repaired 17 new Practice/Written item data to prevent copying exact numerical worked examples; 30 new computational/structural checks PASS, same canonical IDs and 16 learning outcomes. New CĐ13 learner source, 16 concept-first explanations, 16 practice + 4 Written/rubrics with 3D extensions require author Q18 on exact Git blob. Original G10/G12 SGK source and its independent reviewer receipt remain unchanged, not promoted across Topic boundary. SVG are four unchanged original file references (one G10, three G12); UI release must test actual render.
 - **RELEASE REGISTER GUARD:** all Topic PRs append rows near same place in REGISTER.md. RELEASE must reconcile the union from latest main rather than accept this branch's snapshot as the complete integrated register; no silently dropped older rows; no runtime integration/merge/deploy by AUTHORING.
 
 ## SOURCE_RECEIPT_BOUNDARY
@@ -189,4 +189,4 @@ Original SGK sources are third-party reviewer-verified *within their old snapsho
 
 ## SIGNOFF_PRECHECK
 
-16 concept–worked–First Try–D6 chains, 52 source-anchored canonical IDs, 4 SVG references with math meanings, no new private RD1; final Q18 receipt must independently verify stems/answers/rubrics and exact source SHA before READY. This metadata alone does not confer an Academic/PED verdict.
+16 concept–worked–First Try–D6 chains, 52 source-anchored canonical IDs, 4 SVG references with math meanings, no new private RD1; final Q18 author self-QA receipt must verify revised stems/answers/rubrics and exact source SHA before READY. This metadata alone does not confer an Academic/PED verdict.
