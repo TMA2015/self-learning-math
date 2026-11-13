@@ -31,6 +31,18 @@ function chvEditorialReceiptRows(){
  return rows;
 }
 
+const chviReceipt="prototypes/thpt/ux795/G10_CHVI_B15_B18_S1_Q18_EDITORIAL_RECEIPT_20261113.md";
+function chviEditorialReceiptRows(){
+ const file=path.join(root,chviReceipt);
+ if(!fs.existsSync(file))return new Map();
+ const source=fs.readFileSync(file,"utf8");
+ const matches=[...source.matchAll(/^\| B(1[5-8]) \| \x60([a-f0-9]{40})\x60 \| \x60([a-f0-9]{40})\x60 \| (\d+) \|/gm)];
+ assert.equal(matches.length,4,"ChVI S1/Q18 editorial receipt requires four source rows");
+ const rows=new Map(matches.map(m=>["B"+m[1],{baseline:m[2],candidate:m[3],moved:Number(m[4])}]));
+ assert.equal(rows.size,4,"ChVI editorial source rows must be unique");
+ return rows;
+}
+
 function expectedG10KnowledgeBlob(lesson,legacy){
  assert(/^[a-f0-9]{40}$/.test(legacy),"Historical source SHA malformed");
  const name="B"+String(lesson).replace(/^B/,"").padStart(2,"0");
@@ -46,11 +58,13 @@ function expectedG10KnowledgeBlob(lesson,legacy){
  const chiv=chivEditorialReceiptRows().get(name);
  const chv=chvEditorialReceiptRows().get(name);
  assert(!(chiv&&chv),name+" duplicate editorial receipts");
- const row=chiv||chv;
+ const chvi=chviEditorialReceiptRows().get(name);
+ assert(!(chvi&&(chiv||chv)),name+" overlapping editorial source receipts");
+ const row=chiv||chv||chvi;
  if(row){
   assert.equal(row.baseline,blobs[1],name+" immutable S1/Q18 baseline must match ledger candidate");
   assert.notEqual(row.candidate,row.baseline,name+" editorial source must be distinct");
-  assert.equal(row.moved,({B07:5,B08:5,B09:5,B10:6,B11:4,B12:4,B13:5,B14:5})[name],name+" moved First Try count");
+  assert.equal(row.moved,({B07:5,B08:5,B09:5,B10:6,B11:4,B12:4,B13:5,B14:5,B15:5,B16:5,B17:5,B18:4})[name],name+" moved First Try count");
   return row.candidate;
  }
  return blobs[1];
@@ -59,4 +73,4 @@ function candidateG10KnowledgeBlob(lesson){
  const sentinel="0".repeat(40),result=expectedG10KnowledgeBlob(lesson,sentinel);
  return result===sentinel?null:result;
 }
-module.exports={expectedG10KnowledgeBlob,candidateG10KnowledgeBlob,chivEditorialReceiptRows,chvEditorialReceiptRows};
+module.exports={expectedG10KnowledgeBlob,candidateG10KnowledgeBlob,chivEditorialReceiptRows,chvEditorialReceiptRows,chviEditorialReceiptRows};
