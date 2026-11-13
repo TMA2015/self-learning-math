@@ -1,5 +1,5 @@
-<!-- AUTHORING: R04 candidate on immutable R03 blob 9a7b56db14e65f480f793de2e3aebf1a8f1cb9d6; academic/pedagogic DELTA_C; not RELEASE source and not CONTENT_READY until new source-locked Q18 checks and V2 packaging. -->
-<!-- LEARNING_PATH=TOPIC; STANDARD_ID=SLM-THPT-QUALITY-ONE; STANDARD_VERSION=3.1.0; OUTER_PAGES=Kiến thức|Luyện tập|Tự kiểm tra; SOURCE_VERSION=R04_CANDIDATE; AUTHORING_ONLY_METADATA=prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R04_AUTHORING_ONLY_CUSTODY_METADATA_20261113.md -->
+<!-- AUTHORING CURRENT R04: self-verified learner content on exact Git blob via current Q18 receipt and V2 ready packet. Not website-integrated, merged, or deployed. R03 immutable predecessor blob: 9a7b56db14e65f480f793de2e3aebf1a8f1cb9d6. -->
+<!-- LEARNING_PATH=TOPIC; STANDARD_ID=SLM-THPT-QUALITY-ONE; STANDARD_VERSION=3.1.0; OUTER_PAGES=Kiến thức|Luyện tập|Tự kiểm tra; SOURCE_VERSION=R04_AUTHORING_READY; AUTHORING_ONLY_METADATA=prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R04_AUTHORING_ONLY_CUSTODY_METADATA_20261113.md -->
 # CĐ01 — Mệnh đề, tập hợp và tư duy logic toán học
 
 Khi học một khái niệm toán, điều quan trọng không chỉ là nhớ ký hiệu mà là biết mình đang khẳng định điều gì, dựa vào đâu để kết luận và có bỏ sót trường hợp nào không. Chuyên đề này đưa em đi từ việc kiểm tra một câu nói đến việc mô tả các nhóm đối tượng bằng tập hợp, rồi dùng chính các tập hợp ấy để giải quyết bài toán đếm.
