@@ -29,7 +29,7 @@
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY10" hidden></span>
 
-    ??? question "Em đã tự thử? Mở lời giải để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> \(R=10-2=8\); \(Q_2=6\), \(Q_1=3\), \(Q_3=9\) nên \(\Delta_Q=9-3=6\).</p>
@@ -51,7 +51,7 @@
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY11" hidden></span>
 
-    ??? question "Em đã tự thử? Mở lời giải để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> \(\bar x=4\); \(s^2=[(2-4)^2+(4-4)^2+(6-4)^2]/3=8/3\).</p>
@@ -73,7 +73,7 @@
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY12" hidden></span>
 
-    ??? question "Em đã tự thử? Mở lời giải để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> Trung bình 4 cm; \(s^2=[4+4+4+4]/4=4\,\mathrm{cm}^2\), \(s=2\,\mathrm{cm}\).</p>
@@ -95,7 +95,7 @@
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY13" hidden></span>
 
-    ??? question "Em đã tự thử? Mở lời giải để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> \(Q_2=4\), \(Q_1=2\), \(Q_3=6\), \(\Delta_Q=4\); hàng rào dưới −4, hàng rào trên 12. Chỉ giá trị 20 là bất thường.</p>
@@ -119,7 +119,7 @@
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY14" hidden></span>
 
-    ??? question "Em đã tự thử? Mở lời giải để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> Cả hai trung bình 4; \(s_A^2=8/3\), \(s_B^2=32/3\), nên B phân tán hơn.</p>
