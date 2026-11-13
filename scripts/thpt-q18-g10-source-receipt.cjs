@@ -67,6 +67,18 @@ function chviiEditorialReceiptRows(){
  return rows;
 }
 
+const chviiContinuousReceipt="prototypes/thpt/ux795/G10_CHVII_B19_B22_CONTINUOUS_EXPLANATION_Q18_DELTA_RECEIPT_20261113.md";
+function chviiContinuousReceiptRows(){
+ const file=path.join(root,chviiContinuousReceipt);
+ if(!fs.existsSync(file))return new Map();
+ const source=fs.readFileSync(file,"utf8");
+ const matches=[...source.matchAll(/^\| B(19|20|21|22) \| `([a-f0-9]{40})` \| `([a-f0-9]{40})` \| (\d+) \| (\d+) \| (\d+) \|/gm)];
+ assert.equal(matches.length,4,"ChVII follow-on Q18 continuous-narrative receipt requires four source rows");
+ const rows=new Map(matches.map(m=>["B"+m[1],{baseline:m[2],candidate:m[3],moved:Number(m[4]),helps:Number(m[5]),examples:Number(m[6])}]));
+ assert.equal(rows.size,4,"ChVII narrative rows must be unique");
+ return rows;
+}
+
 function expectedG10KnowledgeBlob(lesson,legacy){
  assert(/^[a-f0-9]{40}$/.test(legacy),"Historical source SHA malformed");
  const name="B"+String(lesson).replace(/^B/,"").padStart(2,"0");
@@ -103,6 +115,16 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    assert.equal(ux.examples,({B15:1,B16:4,B17:4,B18:4})[name],name+" explicit Golden example section count");
    return ux.candidate;
   }
+  const narrative=chviiContinuousReceiptRows().get(name);
+  if(narrative){
+   assert(chvii&&!chiv&&!chv&&!chvi,name+" narrative receipt outside Chapter VII");
+   assert.equal(narrative.baseline,chvii.candidate,name+" follow-on source chain must start at approved published ChVII Git blob");
+   assert.notEqual(narrative.candidate,narrative.baseline,name+" meaningful narrative delta expected");
+   assert.equal(narrative.moved,chvii.moved,name+" canonical First Try count drift");
+   assert.equal(narrative.helps,chvii.helps,name+" HELP count drift");
+   assert.equal(narrative.examples,chvii.examples,name+" example count drift");
+   return narrative.candidate;
+  }
   return row.candidate;
  }
  return blobs[1];
@@ -111,4 +133,4 @@ function candidateG10KnowledgeBlob(lesson){
  const sentinel="0".repeat(40),result=expectedG10KnowledgeBlob(lesson,sentinel);
  return result===sentinel?null:result;
 }
-module.exports={expectedG10KnowledgeBlob,candidateG10KnowledgeBlob,chivEditorialReceiptRows,chvEditorialReceiptRows,chviEditorialReceiptRows,chviExampleUxReceiptRows,chviiEditorialReceiptRows};
+module.exports={expectedG10KnowledgeBlob,candidateG10KnowledgeBlob,chivEditorialReceiptRows,chvEditorialReceiptRows,chviEditorialReceiptRows,chviExampleUxReceiptRows,chviiEditorialReceiptRows,chviiContinuousReceiptRows};
