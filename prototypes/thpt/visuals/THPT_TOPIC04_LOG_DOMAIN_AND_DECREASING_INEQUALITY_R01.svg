@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="540" viewBox="0 0 1120 540" role="img" aria-labelledby="t04DomainTitle t04DomainDesc">
+<title id="t04DomainTitle">Lôgarit cơ số một phần hai: điều kiện và miền nghiệm của bất phương trình</title>
+<desc id="t04DomainDesc">Minh họa log cơ số một phần hai của x trừ 1 nhỏ hơn hoặc bằng log cơ số một phần hai của 5 trừ x. Điều kiện hai đối số dương là 1 nhỏ hơn x nhỏ hơn 5. Vì cơ số một phần hai nhỏ hơn 1 nên hàm log giảm và bất phương trình tương đương x trừ 1 lớn hơn hoặc bằng 5 trừ x, nghĩa là x lớn hơn hoặc bằng 3. Giao điều kiện cho miền nghiệm từ 3 lấy đến 5 không lấy. Trục số đánh dấu 1 và 5 tròn rỗng, 3 tròn đặc, đoạn nghiệm 3 đến 5 tô đậm.</desc>
+<rect x="0" y="0" width="1120" height="540" rx="20" fill="#f8fafc"/>
+<text x="48" y="56" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#0f172a">Miền xác định trước — đảo chiều vì hàm log giảm</text>
+<text x="49" y="110" font-family="Arial,sans-serif" font-size="26" fill="#164e63">log₍₁∕₂₎(x−1) ≤ log₍₁∕₂₎(5−x)</text>
+<rect x="50" y="142" width="1020" height="125" rx="14" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+<text x="76" y="182" font-family="Arial,sans-serif" font-size="22" fill="#0c4a6e">1. Miền log: x−1 &gt; 0 và 5−x &gt; 0 ⇔ 1 &lt; x &lt; 5</text>
+<text x="76" y="223" font-family="Arial,sans-serif" font-size="22" fill="#0c4a6e">2. 0 &lt; a=1/2 &lt; 1: log giảm → x−1 ≥ 5−x ⇔ x ≥ 3</text>
+<line x1="110" y1="348" x2="1010" y2="348" stroke="#334155" stroke-width="4"/>
+<path d="M1010 348 L989 337 L989 359 Z" fill="#334155"/>
+<line x1="315" y1="336" x2="315" y2="361" stroke="#475569" stroke-width="3"/>
+<line x1="575" y1="336" x2="575" y2="361" stroke="#475569" stroke-width="3"/>
+<line x1="835" y1="336" x2="835" y2="361" stroke="#475569" stroke-width="3"/>
+<line x1="315" y1="348" x2="835" y2="348" stroke="#94a3b8" stroke-width="9" stroke-linecap="round"/>
+<line x1="575" y1="348" x2="835" y2="348" stroke="#047857" stroke-width="11" stroke-linecap="round"/>
+<circle cx="315" cy="348" r="12" fill="#f8fafc" stroke="#64748b" stroke-width="4"/>
+<circle cx="575" cy="348" r="12" fill="#047857" stroke="#047857" stroke-width="3"/>
+<circle cx="835" cy="348" r="12" fill="#f8fafc" stroke="#047857" stroke-width="4"/>
+<g font-family="Arial,sans-serif" font-size="24" fill="#0f172a" text-anchor="middle">
+<text x="315" y="396">1 (loại)</text>
+<text x="575" y="396">3 (lấy)</text>
+<text x="835" y="396">5 (loại)</text>
+</g>
+<rect x="195" y="434" width="790" height="65" rx="12" fill="#dcfce7"/>
+<text x="560" y="474" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#166534">Kết quả: x ∈ [3; 5)</text>
+</svg>
