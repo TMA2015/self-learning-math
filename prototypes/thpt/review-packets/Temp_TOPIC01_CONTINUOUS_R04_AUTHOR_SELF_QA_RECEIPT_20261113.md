@@ -24,6 +24,12 @@ P0: 0
 P1: 0
 P2: 0
 RELEASE_AUTHORIZATION: NO
+S1_RECEIPT: Owner's source-locked PDF check in original SGK R01 receipt: G10 KNTT T1 B01 printed 5–11, B02 12–19; SBT B01 5–7, B02 8–11. No new PDF scan asserted.
+OUTCOME_AUDIT: 11/11 Topic outcomes TOP01-O01..O11 with connected teaching passages, 24/24 canonical public placements and 11 public self-check refs.
+MATH_VERIFICATION: 11/11 illustrative mathematical claims and first tries checked, plus six original extension problems; finite-set, quantifier, implication, interval, Venn values recalculated.
+PED_VERIFICATION: three coherent arcs, 11 concept-first outcome paragraphs, 11 opt-in Đối chiếu, 11 targeted D6 recoveries, two contextualized original SVG.
+CANONICAL_Q15: 18 immutable original SGK item IDs plus six new unique items in one extension; 2 original Written rubric refs, 11 reused public self-check placements.
+ASSESSMENT_Q16: CLIENT_SELF_CHECK_NO_MASTERY; 0 private RD1; no official TOPIC_READINESS claims; RELEASE must enforce no pre-Final Submit disclosure and no Mastery writes.
 AUTHOR_SIGNOFF: AUTHORING_SELF_QA_20261113_CĐ01_R04_EXACT_BLOB
 
 ## S1, tính độc lập và thay đổi so với bản trước
