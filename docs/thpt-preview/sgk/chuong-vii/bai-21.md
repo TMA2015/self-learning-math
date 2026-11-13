@@ -21,9 +21,15 @@
 
     <span id="thpt-g10-chvii-try13" data-thpt-first-try-id="THPT-G10-CHVII-TRY13" data-outcome-id="G10-B21-CIRCLE_STANDARD" data-thpt-help-ref="HELP-G10-CHVII-TRY13"></span>
 
-    Một trạm phát sóng có tầm phủ cố định tạo ra một vùng hình tròn. Trên đường biên của vùng đó, mọi vị trí M cách trạm I đúng một khoảng R. Điều này gợi lại công thức khoảng cách giữa hai điểm: nếu I(a,b), thì \(IM^2=(x-a)^2+(y-b)^2\). Đặt \(IM=R\) và bình phương hai vế, ta có phương trình \((x-a)^2+(y-b)^2=R^2\), với \(R>0\).
+    Một trạm phát tín hiệu ở \(I\) có tầm xa lý tưởng \(R\). Nếu chỉ xét khoảng cách, **toàn bộ vùng phủ** gồm những vị trí \(M\) với \(IM\le R\): ở gần trạm vẫn nhận được tín hiệu. Nhưng **ranh giới ngoài** của vùng đó mới là đường tròn, gồm những vị trí cách trạm **đúng** \(R\), tức \(IM=R\).
 
-    Hãy hình dung một đoạn bán kính từ tâm I đến điểm M trên đường tròn; khi M chạy quanh đường biên, độ dài đoạn đó luôn giữ nguyên. Chính điều kiện khoảng cách không đổi làm nên đường tròn, chứ không phải chỉ hình thức của một biểu thức chứa bình phương. Sau khi viết phương trình, cần phân biệt bán kính R với R²; nếu thay tọa độ tâm vào vế trái thì giá trị bằng 0, không phải R².
+    Gọi \(I(a,b)\) và \(M(x,y)\). Từ công thức khoảng cách hai điểm, \(IM^2=(x-a)^2+(y-b)^2\). Trên đường biên, \(IM=R>0\), nên
+    \[
+    (x-a)^2+(y-b)^2=R^2.
+    \]
+    Nếu \(IM<R\), điểm nằm **bên trong**, không nằm trên đường tròn; nếu \(IM>R\), điểm nằm **ngoài**. Nhờ vậy em biết rõ phương trình đang mô tả **đường biên**, không phải toàn bộ hình tròn. Đừng nhầm bán kính \(R\) với bình phương \(R^2\).
+
+    <figure class="thpt-r4-plot thpt-r4-concept-figure" data-chvii-r02-diagram="TRY13"><img src="../../../../assets/images/thpt/G10_CHVII_R02_B21_TRY13_CIRCLE.svg" loading="lazy" alt="Phân biệt đường tròn biên IM bằng R và hình tròn chứa các điểm IM nhỏ hơn hoặc bằng R."><figcaption>Đường tròn là đường biên; hình tròn gồm cả phần bên trong.</figcaption></figure>
 
     **Em vận dụng.** Đường tròn có tâm I(-2,1) và bán kính 3 có phương trình nào?
 
@@ -43,9 +49,14 @@
 
     <span id="thpt-g10-chvii-try14" data-thpt-first-try-id="THPT-G10-CHVII-TRY14" data-outcome-id="G10-B21-CIRCLE_GENERAL" data-thpt-help-ref="HELP-G10-CHVII-TRY14"></span>
 
-    Nếu phương trình đường tròn đã được khai triển thành các hạng tử \(x^2,y^2\), x và y, ta phải tìm ngược tâm và bán kính. Bí quyết nằm ở hằng đẳng thức \((x-a)^2=x^2-2ax+a^2\): gom các hạng tử theo x, theo y rồi thêm bớt bình phương nửa hệ số để đưa phương trình về tổng hai bình phương.
+    Có những phương trình nhìn ban đầu chẳng thấy tâm hay bán kính. Hãy nhớ \((x-a)^2=x^2-2ax+a^2\): ta có thể biến các hạng tử bậc hai và bậc nhất thành **bình phương khoảng cách tới một điểm**. Ví dụ, \(x^2+y^2-4x+2y+1=0\) viết lại thành
+    \[
+    (x^2-4x+4)+(y^2+2y+1)=4,
+    \quad (x-2)^2+(y+1)^2=4.
+    \]
+    Bây giờ mới nhìn ra tâm \(I(2,-1)\) và bán kính \(R=2\).
 
-    Khi ấy phương trình đã cho trở thành điều kiện một điểm cách tâm một khoảng có bình phương \(R^2\). Nếu \(R^2>0\), đó là một đường tròn thực sự; nếu \(R^2=0\), tập nghiệm chỉ là một điểm; nếu \(R^2<0\), không có điểm thực nào thỏa mãn vì tổng hai bình phương không âm. Trên hình, vị trí của tâm được xác định bởi các hằng số sau khi hoàn thành bình phương, còn R quyết định kích thước đường biên.
+    Tổng hai bình phương không thể âm. Vì vậy với dạng \(x^2+y^2-2ax-2by+c=0\), sau khi chuyển thành \((x-a)^2+(y-b)^2=a^2+b^2-c\), ta có một đường tròn thật sự chỉ khi **\(a^2+b^2-c>0\)**. Bằng 0 chỉ còn một điểm; âm thì không có điểm thực nào thỏa mãn. Đây là điều kiện hình học, không phải mẹo nhớ ba dấu.
 
     **Em vận dụng.** Phương trình x²+y²−6x+4y+8=0 biểu diễn đường tròn nào?
 
@@ -65,9 +76,11 @@
 
     <span id="thpt-g10-chvii-try15" data-thpt-first-try-id="THPT-G10-CHVII-TRY15" data-outcome-id="G10-B21-CIRCLE_TANGENT" data-thpt-help-ref="HELP-G10-CHVII-TRY15"></span>
 
-    Từ đường tròn, ta có thể dựng đường thẳng chỉ chạm đường tròn tại một điểm M. Bán kính IM vuông góc với tiếp tuyến tại M; bởi vậy, IM đồng thời là một vectơ pháp tuyến của đường tiếp tuyến. Đây là lý do ta có thể dùng cách viết phương trình đường thẳng qua một điểm và có pháp tuyến đã học ở Bài 19.
+    Một tiếp tuyến chạm đường tròn tại điểm \(M\). Ngay tại điểm chạm, bán kính \(IM\) vuông góc với tiếp tuyến. Vì thế nếu biết \(I\) và \(M\), ta đã biết **một pháp tuyến của tiếp tuyến**: chính là \(\overrightarrow{IM}\). Nhưng trước hết phải kiểm \(M\) thực sự nằm trên đường tròn.
 
-    Điều kiện quan trọng phải kiểm trước là M thực sự nằm trên đường tròn, tức \(IM^2=R^2\) với \(R>0\). Khi đó IM khác vectơ không; đường tiếp tuyến qua M có điều kiện \(\overrightarrow{IM}\cdot\overrightarrow{MX}=0\). Trong hình vẽ, bán kính đi từ tâm ra điểm tiếp xúc, còn tiếp tuyến tạo với nó góc \(90^\circ\). Sau cùng có thể kiểm khoảng cách từ I đến tiếp tuyến bằng R.
+    Chẳng hạn, đường tròn tâm \(I(2,1)\), bán kính \(\sqrt5\), có điểm \(M(3,3)\) vì \(IM^2=1^2+2^2=5\). Vectơ \(\overrightarrow{IM}=(1,2)\) là pháp tuyến của tiếp tuyến tại \(M\), nên phương trình qua \(M\) là \((x-3)+2(y-3)=0\), tức \(x+2y-9=0\). Như vậy, ta chọn cách viết phương trình **qua điểm và pháp tuyến** vì biết rõ điểm chạm và hướng vuông góc, không phải vì học thuộc một công thức tiếp tuyến riêng.
+
+    <figure class="thpt-r4-plot thpt-r4-concept-figure" data-chvii-r02-diagram="TRY15"><img src="../../../../assets/images/thpt/G10_CHVII_R02_B21_TRY15_TANGENT.svg" loading="lazy" alt="Bán kính IM0 vuông góc với tiếp tuyến tại điểm M0; pháp tuyến của tiếp tuyến là IM0."><figcaption>Tiếp tuyến đi qua tiếp điểm và nhận bán kính tại đó làm vectơ pháp tuyến.</figcaption></figure>
 
     **Em vận dụng.** Đường tròn tâm I(1,−1), bán kính 5; M(4,3). Viết tiếp tuyến tại M.
 
@@ -109,9 +122,11 @@
 
     <span id="thpt-g10-chvii-try17" data-thpt-first-try-id="THPT-G10-CHVII-TRY17" data-outcome-id="G10-B21-LINE_CIRCLE_POSITION" data-thpt-help-ref="HELP-G10-CHVII-TRY17"></span>
 
-    Để biết một đường thẳng d có cắt đường tròn tâm I bán kính R hay không, đôi khi không cần giải hệ phương trình. Hãy nhìn đoạn vuông góc ngắn nhất từ I đến d, có độ dài \(h=d(I,d)\). Nếu h lớn hơn R, toàn bộ đường nằm ngoài đường tròn; nếu h bằng R, d tiếp xúc tại một điểm; nếu h nhỏ hơn R, d cắt đường tròn tại hai điểm.
+    **Vận dụng liên bài B20–B21.** Em sử dụng thêm công thức khoảng cách đã học ở Bài 20.
 
-    Ba vị trí ấy có thể được hình dung bằng cách dịch chuyển một đường thẳng song song với chính nó về phía tâm. Với \(d:\ ax+by+c=0\) và \((a,b)\) khác vectơ không, ta tính \(h=\frac{|ax_I+by_I+c|}{\sqrt{a^2+b^2}}\) rồi so với \(R>0\). Phép so sánh khoảng cách giải thích trực tiếp số giao điểm, tránh các bước đại số không cần thiết.
+    Từ Bài 20, ta đã biết cách đo khoảng cách \(h=d(I,d)\) từ tâm \(I\) đến một đường thẳng \(d\). Từ Bài 21, ta biết mỗi điểm trên đường tròn cách \(I\) đúng bán kính \(R\). Hãy so sánh hai độ dài ấy: nếu \(h>R\), đường thẳng ở ngoài và không gặp đường tròn; nếu \(h=R\), có đúng một điểm chạm; nếu \(h<R\), có hai giao điểm.
+
+    Em không cần giải hệ ngay để biết **số** giao điểm; nhưng muốn biết **tọa độ**, em vẫn phải giải hai phương trình. Đây là một vận dụng liên bài, không thay kiến thức bắt buộc về phương trình đường tròn và tiếp tuyến.
 
     **Em vận dụng.** Đường tròn tâm I(1,2), R=3 và đường d: y=−1 có quan hệ nào?
 
