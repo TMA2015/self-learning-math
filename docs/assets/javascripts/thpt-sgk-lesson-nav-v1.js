@@ -287,6 +287,11 @@ const polishG10ChapterV=(article)=>{
  const blocks=[...(article.querySelector(".tabbed-set")?.
   querySelectorAll(":scope > .tabbed-content > .tabbed-block")||[])];
  if(blocks.length!==4)return;
+ // First Try was moved to Discovery under the source-locked ChV §X-F
+ // editorial receipt. Keep voluntary answers closed; change label only.
+ blocks[0].querySelectorAll("details.question > summary").forEach(summary=>{
+  summary.textContent="Đối chiếu";
+ });
  for(const title of blocks[2].querySelectorAll(":scope > h3")){
   const paragraph=title.nextElementSibling;
   if(!paragraph||paragraph.tagName!=="P"||paragraph.closest(".thpt-g10-example-solution"))continue;
