@@ -8,7 +8,7 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: d6e792e8c4c3c31eaff5413566b0394dbb805621
+SOURCE_COMMIT: 6396a1c59e81adaa84fb59ad9b157c5c4fab9075
 CATALOG_TOPIC_ID: CD12
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_TRIANGLE_TRIG_SOLVING_FULL_R01_20261113.md
@@ -38,7 +38,7 @@ PRIVATE_RD1_SHA256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852
 MASTERY_ACTIVATION: NO
 RELEASE_AUTHORIZATION: NO
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
-CURRENT_PR: DRAFT_AUTHORING_NOT_MERGED
+CURRENT_PR: https://github.com/TMA2015/self-learning-math/pull/840 — DRAFT AUTHORING, not merged/deployed
 
 **Scope:** independent three-page Topic Knowledge / Practice / Self Check, 12 concept-first modules/outcomes, 12 voluntary First Try, 34 unique public canonical IDs (18 SGK reused references only +12 Topic Practice +4 Topic Written each rubric /7), two original referenced SGK SVG, no Topic Core and no official independent RD1. Historical SGK B05–B06 independent PASS is specific to original SGK source, **not** a reviewer PASS on CĐ12.
 
