@@ -5,7 +5,7 @@
 const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path"),
  cp=require("node:child_process"),crypto=require("node:crypto");
 const root=path.resolve(__dirname,".."),baseline="bb6d7a92308d78628761a3284264fa7b55d6c912";
-const {chviEditorialReceiptRows,candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
+const {chviEditorialReceiptRows,chviExampleUxReceiptRows,candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 const blob=b=>{b=Buffer.isBuffer(b)?b:Buffer.from(b);return crypto.createHash("sha1").update("blob "+b.length+"\0").update(b).digest("hex")};
 const ids=(s,k)=>[...s.matchAll(new RegExp(k+'="([^"]+)"',"g"))].map(m=>m[1]).sort();
 const answers=s=>[...s.matchAll(/<div class="thpt-r4-first-try-answer">[\s\S]*?<\/div>/g)].map(m=>m[0]).sort();
@@ -19,8 +19,10 @@ const titles={
  18:["2.1. Phương trình dạng \\(\\sqrt{A(x)}=\\sqrt{B(x)}\\)",
      "2.2. Phương trình dạng \\(\\sqrt{A(x)}=B(x)\\)"]
 };
-const tries={15:5,16:5,17:5,18:4},figs={15:1,16:2,17:1,18:1},examples={15:1,16:3,17:4,18:4};
+const tries={15:5,16:5,17:5,18:4},figs={15:1,16:2,17:1,18:1},examples={15:1,16:4,17:4,18:4};
 const rows=chviEditorialReceiptRows();assert.equal(rows.size,4,"4 signed source rows required");
+const ux=chviExampleUxReceiptRows();assert.equal(ux.size,4,"4 immutable follow-on example UX delta rows required");
+const published="f23f22bdb0a01c35d73f21a6fe6ec9d1de0f9160";
 let total=0;
 for(const n of [15,16,17,18]){
  const row=rows.get("B"+n);assert(row,"Missing B"+n+" receipt row");
@@ -29,9 +31,15 @@ for(const n of [15,16,17,18]){
  const base=cp.spawnSync("git",["show",baseline+":"+file],{cwd:root,encoding:"utf8"});
  assert.equal(base.status,0,"Cannot read immutable B"+n+" baseline "+base.stderr);
  const old=base.stdout;
- assert.equal(blob(old),row.baseline,"B"+n+" published baseline SHA");
- assert.equal(blob(bytes),row.candidate,"B"+n+" current candidate SHA");
- assert.equal(candidateG10KnowledgeBlob(n),row.candidate,"B"+n+" Q18 routing mismatch");
+ const uxrow=ux.get("B"+n);assert(uxrow,"B"+n+" missing scoped UX row");
+ const prior=cp.spawnSync("git",["show",published+":"+file],{cwd:root,encoding:"utf8"});
+ assert.equal(prior.status,0,"Cannot read immutable released G10 ChVI source "+prior.stderr);
+ assert.equal(blob(old),row.baseline,"B"+n+" historical S1 baseline SHA");
+ assert.equal(blob(prior.stdout),row.candidate,"B"+n+" original P1 source unchanged");
+ assert.equal(uxrow.baseline,row.candidate,"B"+n+" original receipt → UX delta chain");
+ assert.equal(blob(bytes),uxrow.candidate,"B"+n+" current user-approved UX candidate not locked");
+ assert.equal(candidateG10KnowledgeBlob(n),uxrow.candidate,"B"+n+" current router must match last Q18 receipt");
+ assert.equal(uxrow.examples,examples[n],"B"+n+" UX example count changed");
  assert.equal(row.moved,tries[n],"B"+n+" historical First Try count");
  for(const key of ["data-thpt-first-try-id","data-thpt-help-id","data-outcome-id","data-thpt-fig-id"]){
   assert.deepEqual(ids(s,key),ids(old,key),"B"+n+" immutable canonical "+key);
@@ -64,7 +72,7 @@ for(const n of [15,16,17,18]){
  assert.notDeepEqual(ids(s.replace('data-thpt-first-try-id="','data-thpt-first-try-id="BROKEN-'),"data-thpt-first-try-id"),
   ids(old,"data-thpt-first-try-id"),"B"+n+" ID mutation must fail");
  assert.notDeepEqual([...k.replace(titles[n][0],"WRONG_S1").matchAll(/^    ### (.*)$/gm)].map(z=>z[1]),titles[n],"B"+n+" S1 negative test");
- assert.notEqual(blob(s+" "),row.candidate,"B"+n+" SHA corruption negative test");
+ assert.notEqual(blob(s+" "),uxrow.candidate,"B"+n+" SHA corruption negative test");
  total+=tries[n];console.log("PASS B"+n+" S1 "+titles[n].length+" titles; "+tries[n]+" canonical First Try and HELP original bodies; math/figures/IDs preserved");
 }
 assert.equal(total,19);
@@ -79,4 +87,4 @@ const area=x=>x*(18-2*x);assert(area(3)===36&&area(6)===36&&area(4)>36&&area(2)<
 assert(Math.abs(Math.sqrt(4*4+9)/5-(8-4)/4)<1e-12&&((8-364/9)/4)<0,"B18 filtered root");
 const b16=fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-vi/bai-16.md"),"utf8");
 assert(b16.includes("Tính chất theo dấu hệ số")&&b16.includes("Hàm số bậc hai \\(a\\ne0\\)")&&!b16.includes("Hàm số bậc hai (a\n    e0)"),"B16 a!=0 and full formal monotonicity");
-console.log("PASS G10 ChVI Q18 source parity: 19/19 First Try, 19 D6, 5 original figures, 12 example sections; no official scoring, NO DEPLOY.");
+console.log("PASS G10 ChVI Q18 original→P1→example UX source chain: 19/19 First Try, 19 D6, 5 original figures, 13 example sections; NO DEPLOY.");

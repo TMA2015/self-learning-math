@@ -10,7 +10,7 @@ const fs=require("node:fs");
 const path=require("node:path");
 const crypto=require("node:crypto");
 const root=path.resolve(__dirname,"..");
-const {candidateG10KnowledgeBlob,chivEditorialReceiptRows}=require("./thpt-q18-g10-source-receipt.cjs");
+const {candidateG10KnowledgeBlob,chivEditorialReceiptRows,chviEditorialReceiptRows,chviExampleUxReceiptRows}=require("./thpt-q18-g10-source-receipt.cjs");
 const index=process.argv.indexOf("--baseline");
 assert(index>=0&&process.argv[index+1],"--baseline DIR required: use a pristine main checkout");
 const baselineRoot=path.resolve(root,process.argv[index+1]);
@@ -52,7 +52,15 @@ for(const [name,chapter,num]of specs){
  const editorial=chivEditorialReceiptRows().get(name);
  if(editorial)assert.equal(editorial.baseline,row.candidate,
    name+" ChIV editorial baseline must equal the historic 27-lesson candidate");
- const approvedSources=[row.main,row.candidate,...(editorial?[editorial.candidate]:[])];
+ const chviReceiptRow=chviEditorialReceiptRows().get(name);
+ if(chviReceiptRow)assert.equal(chviReceiptRow.baseline,row.candidate,name+" ChVI Q18 must extend only historical candidate");
+ const ux=chviExampleUxReceiptRows().get(name);
+ if(ux){
+  assert(chviReceiptRow,name+" UX receipt without original ChVI editorial");
+  assert.equal(ux.baseline,chviReceiptRow.candidate,name+" UX follows published original source, never replaces it");
+ }
+ const approvedSources=[row.main,row.candidate,...(editorial?[editorial.candidate]:[]),
+  ...(chviReceiptRow?[chviReceiptRow.candidate]:[]),...(ux?[ux.candidate]:[])];
  assert(approvedSources.includes(baselineSha),
    name+" unknown main baseline source drift outside immutable 27-row/Q18 chain");
  assert.equal(blob(candidateRaw),candidateG10KnowledgeBlob(num)||row.candidate,name+" exact approved historical/editorial source drift");

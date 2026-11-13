@@ -43,6 +43,18 @@ function chviEditorialReceiptRows(){
  return rows;
 }
 
+const chviExampleUxReceipt="prototypes/thpt/ux795/G10_CHVI_B15_B18_EXAMPLE_UX_Q18_DELTA_RECEIPT_20261113.md";
+function chviExampleUxReceiptRows(){
+ const file=path.join(root,chviExampleUxReceipt);
+ if(!fs.existsSync(file))return new Map();
+ const source=fs.readFileSync(file,"utf8");
+ const matches=[...source.matchAll(/^\| B(1[5-8]) \| \x60([a-f0-9]{40})\x60 \| \x60([a-f0-9]{40})\x60 \| (\d+) \|/gm)];
+ assert.equal(matches.length,4,"ChVI example UX follow-on receipt requires four exact rows");
+ const rows=new Map(matches.map(m=>["B"+m[1],{baseline:m[2],candidate:m[3],examples:Number(m[4])}]));
+ assert.equal(rows.size,4,"ChVI UX lesson rows must be unique");
+ return rows;
+}
+
 function expectedG10KnowledgeBlob(lesson,legacy){
  assert(/^[a-f0-9]{40}$/.test(legacy),"Historical source SHA malformed");
  const name="B"+String(lesson).replace(/^B/,"").padStart(2,"0");
@@ -65,6 +77,14 @@ function expectedG10KnowledgeBlob(lesson,legacy){
   assert.equal(row.baseline,blobs[1],name+" immutable S1/Q18 baseline must match ledger candidate");
   assert.notEqual(row.candidate,row.baseline,name+" editorial source must be distinct");
   assert.equal(row.moved,({B07:5,B08:5,B09:5,B10:6,B11:4,B12:4,B13:5,B14:5,B15:5,B16:5,B17:5,B18:4})[name],name+" moved First Try count");
+  const ux=chviExampleUxReceiptRows().get(name);
+  if(ux){
+   assert(chvi&&!chiv&&!chv,name+" UX follow-on restricted to published Chapter VI source");
+   assert.equal(ux.baseline,row.candidate,name+" immutable source chain: original ChVI receipt → UX delta");
+   assert.notEqual(ux.candidate,ux.baseline,name+" follow-on UX candidate SHA must change");
+   assert.equal(ux.examples,({B15:1,B16:4,B17:4,B18:4})[name],name+" explicit Golden example section count");
+   return ux.candidate;
+  }
   return row.candidate;
  }
  return blobs[1];
@@ -73,4 +93,4 @@ function candidateG10KnowledgeBlob(lesson){
  const sentinel="0".repeat(40),result=expectedG10KnowledgeBlob(lesson,sentinel);
  return result===sentinel?null:result;
 }
-module.exports={expectedG10KnowledgeBlob,candidateG10KnowledgeBlob,chivEditorialReceiptRows,chvEditorialReceiptRows,chviEditorialReceiptRows};
+module.exports={expectedG10KnowledgeBlob,candidateG10KnowledgeBlob,chivEditorialReceiptRows,chvEditorialReceiptRows,chviEditorialReceiptRows,chviExampleUxReceiptRows};

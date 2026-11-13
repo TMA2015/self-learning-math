@@ -8,7 +8,7 @@ const fs=require("node:fs");
 const path=require("node:path");
 const crypto=require("node:crypto");
 const root=path.resolve(__dirname,"..");
-const {chviEditorialReceiptRows,candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
+const {chviEditorialReceiptRows,chviExampleUxReceiptRows,candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 const mapping=fs.readFileSync(path.join(root,"prototypes/thpt/ux795/UX795_G10_CHVI_PED_OUTCOME_MAPPING_R01_20261110.md"),"utf8");
 const rows=mapping.split("\n").filter(line=>/^\| B(?:15|16|17|18) \| \x60B\d{2}_OUT_\d{2}\x60 \|/.test(line));
 assert.equal(rows.length,19,"Expected 19 G10 ChVI mappings");
@@ -23,8 +23,10 @@ for(const n of [15,16,17,18]){
  assert(historic,"B"+n+" immutable 19-outcome mapping must keep historical source");
  const editorial=chviEditorialReceiptRows().get("B"+n);
  if(editorial)assert.equal(editorial.baseline,historic,"B"+n+" S1 editorial source chain must start from original PED map");
- assert.equal(blob,editorial?editorial.candidate:historic,
-  "B"+n+" candidate SHA must equal signed S1/Q18 editorial or original PED map");
+ const ux=chviExampleUxReceiptRows().get("B"+n);
+ if(ux)assert.equal(ux.baseline,editorial.candidate,"B"+n+" follow-on UX cannot rewrite historical PED/S1 source");
+ assert.equal(blob,ux?ux.candidate:(editorial?editorial.candidate:historic),
+  "B"+n+" candidate must equal exact signed Q18 source chain");
  assert.equal(blob,candidateG10KnowledgeBlob(n),"B"+n+" Q18 router disagrees with source");
  const local=rows.filter(line=>line.startsWith("| B"+n+" |"));
  assert.equal(local.length,n===18?4:5,"B"+n+" missing/extra outcomes");

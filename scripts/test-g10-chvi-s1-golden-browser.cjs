@@ -7,7 +7,7 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
 const base=process.env.CHVI_BASE_URL||"http://127.0.0.1:8765/thpt-preview/sgk/chuong-vi/";
 const specs=[
  {n:15,tries:5,helps:5,books:["2.1. Khái niệm hàm số","2.2. Đồ thị của hàm số","2.3. Sự đồng biến, nghịch biến của hàm số"],ex:1,figures:1},
- {n:16,tries:5,helps:5,books:["2.1. Khái niệm hàm số bậc hai","2.2. Đồ thị của hàm số bậc hai"],ex:3,figures:2},
+ {n:16,tries:5,helps:5,books:["2.1. Khái niệm hàm số bậc hai","2.2. Đồ thị của hàm số bậc hai"],ex:4,figures:2},
  {n:17,tries:5,helps:5,books:["2.1. Dấu của tam thức bậc hai","2.2. Bất phương trình bậc hai"],ex:4,figures:1},
  {n:18,tries:4,helps:4,books:["2.1. Phương trình dạng","2.2. Phương trình dạng"],ex:4,figures:1}
 ];
@@ -61,12 +61,68 @@ const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi t
      await page.keyboard.press("Space");
      assert(!(await first.evaluate(el=>el.open)),where+" keyboard closes voluntarily opened answer");
      await lab.nth(2).click();
-     assert.equal(await blocks.nth(2).locator(":scope > h3").count(),item.ex,where+" 3.x example sections");
-     assert.equal(await blocks.nth(2).locator(":scope > h3 + .thpt-g10-example-solution").count(),item.ex,
-      where+" all original worked explanations grouped in Golden panels");
-     for(let k=0;k<item.ex;k++){
-      const panel=blocks.nth(2).locator(":scope > h3 + .thpt-g10-example-solution").nth(k);
-      assert((await panel.textContent()).trim().length>55,where+" example solution inexplicably empty");
+     const exTab=blocks.nth(2);
+     assert.equal(await exTab.locator(":scope > h3").count(),item.ex,where+" 3.x example sections");
+     assert.equal(await exTab.locator(":scope > .thpt-g10-example-solution").count(),item.ex,
+      where+" one solution box per worked example; no whole-example auto wrapping");
+     assert.equal(await article.getAttribute("data-g10-chvi-example-sections"),String(item.ex),
+      where+" exact scoped example section count in Golden DOM");
+     assert.equal(await article.getAttribute("data-g10-chvi-example-boxes"),String(item.ex),
+      where+" no partial or missing example solution wrappers");
+     const expNarrative=item.n===16?1:0;
+     assert.equal(await article.getAttribute("data-g10-chvi-narrative-exception"),String(expNarrative),
+      where+" one and only one B16 conceptual two-model example may be fully boxed");
+     const arrangement=await exTab.evaluate(el=>{
+      const nodes=[...el.children];
+      const headings=nodes.filter(x=>x.tagName==="H3");
+      return headings.map((h,i)=>{
+       const next=headings[i+1],scope=[];
+       for(let item=h.nextElementSibling;item&&item!==next;item=item.nextElementSibling)scope.push(item);
+       const panels=scope.filter(x=>x.classList.contains("thpt-g10-example-solution"));
+       const p=panels[0],outside=scope.filter(x=>!x.classList.contains("thpt-g10-example-solution"));
+       return {title:h.textContent.trim(),
+        panels:panels.length,
+        firstStrong:p?.firstElementChild?.querySelector("strong")?.textContent.trim()||"",
+        panelText:p?.textContent.trim()||"",
+        outsideText:outside.map(x=>x.textContent||"").join(" "),
+        totalText:scope.map(x=>x.textContent||"").join(" ")};
+      });
+     });
+     assert.equal(arrangement.length,item.ex,where+" original 3.x example grouping");
+     for(const block of arrangement){
+      assert.equal(block.panels,1,where+" example missing or double boxed");
+      assert(block.panelText.length>55,where+" solution panel has no useful worked reasoning");
+      if(block.title.includes("Mở rộng mô hình thực tế từ phần cuối Bài 16")){
+       assert.equal(item.n,16,where+" narrative exemption must belong to B16");
+       assert(block.panelText.includes("Ví dụ bổ sung A")&&block.panelText.includes("Ví dụ bổ sung B"),
+        where+" B16 conceptual two-model comparison must remain together");
+      }else{
+       assert(block.firstStrong.startsWith("Lời giải."),where+" boxed content must BEGIN at the worked solution");
+       assert(block.outsideText.includes("Đề bài."),where+" problem statement must remain outside solution panel");
+       assert(!block.panelText.includes("Đề bài."),where+" full worked example boxed rather than solution only");
+       for(const disallowed of ["Tự luyện thêm.","Giới hạn cần nhớ:","Điều cần nhớ.","Tự mở rộng.",
+         "Tự kiểm:","Kiểm lại:","Khi nào dùng cách này?","Xem lời giải ba câu tự luyện"])
+        assert(!block.panelText.includes(disallowed),where+" learner follow-up incorrectly boxed: "+disallowed);
+      }
+     }
+     assert.equal(await exTab.locator(".thpt-g10-example-solution details.question").count(),0,
+      where+" voluntary student self-practice must not sit inside worked solution");
+     if([15,17,18].includes(item.n)){
+      const practice=exTab.locator('details.question > summary:text-is("Xem lời giải ba câu tự luyện")');
+      assert.equal(await practice.count(),1,where+" three student exercises must have meaningful answer label");
+      const fold=practice.locator("xpath=..");
+      assert(!(await fold.evaluate(el=>el.open)),where+" additional exercises must stay closed");
+      await practice.click();
+      assert(await fold.evaluate(el=>el.open),where+" student cannot opt into answer reveal");
+      await practice.click();
+      assert(!(await fold.evaluate(el=>el.open)),where+" student cannot close voluntary answer");
+     }
+     assert(!/Ví dụ tự biên soạn|do dự án tự soạn|outcome Core|Lưu ý về phạm vi Core/.test(await exTab.innerText()),
+      where+" administrative author notes exposed in learner examples");
+     if(item.n===17){
+      const optional=exTab.locator('details.question > summary:text-is("Nếu hệ số bậc hai cũng phụ thuộc tham số thì sao?")');
+      assert.equal(await optional.count(),1,where+" learner-oriented coefficient condition note missing");
+      assert(!(await optional.locator("xpath=..").evaluate(el=>el.open)),where+" extension unexpectedly revealed");
      }
      await lab.nth(3).click();
      const tip=blocks.nth(3).locator("details.tip").first();

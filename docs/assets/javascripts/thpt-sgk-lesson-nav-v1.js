@@ -306,13 +306,14 @@ const polishG10ChapterV=(article)=>{
  article.dataset.g10ChvGolden="preview";
 };
 
-/* G10 ChVI B15–B18: reuse the published owner Golden B01–B14 theme.
- * All source-level 19 First Try and 19 D6 placements are locked by the
- * additive S1/Q18 §X-F receipt, not moved or redefined by JavaScript.
- * Group each existing full worked explanation in the prior Golden solution
- * panel without changing the mathematical text or any canonical identifier. */
+/* G10 Chapter VI B15–B18 · owner UX correction.
+ * Keep each example's prompt/reason/learner check OUTSIDE the solution panel.
+ * One approved exception: the B16 two-model explanatory comparison has no
+ * standalone problem/solution and therefore remains wholly grouped.
+ * DOM nodes (including math/figures/links) are MOVED intact, never cloned,
+ * scored, exposed or written to Mastery. Q18 source fixes stay in Markdown. */
 const polishG10ChapterVI=(article)=>{
- if(article.dataset.g10ChviGolden==="true")return;
+ if(article.dataset.g10ChviGolden==="preview")return;
  const set=article.querySelector(".tabbed-set");
  const labels=[...(set?.querySelectorAll(":scope > .tabbed-labels > label")||[])];
  const panes=[...(set?.querySelectorAll(":scope > .tabbed-content > .tabbed-block")||[])];
@@ -323,26 +324,44 @@ const polishG10ChapterVI=(article)=>{
  if(formal.length<2||formal.some((x,i)=>!x.textContent.trim().startsWith("2."+(i+1)+". ")))return;
  polishG10ChapterIV(article);
  if(article.dataset.g10ChivGolden!=="true")return;
- // The source already provides concise public voluntary labels. This is
- // presentation parity only, never a correctness indicator or Mastery write.
  panes[0].querySelectorAll("details.question > summary").forEach(summary=>{
   summary.textContent="Đối chiếu";
  });
- for(const h of panes[2].querySelectorAll(":scope > h3")){
-  const first=h.nextElementSibling;
-  if(!first||first.tagName==="H3")continue;
+ const isStrongLead=(node,pattern)=>node?.tagName==="P" &&
+  node.firstElementChild?.tagName==="STRONG" &&
+  pattern.test(node.firstElementChild.textContent.trim());
+ const stop=/^(?:Tự luyện thêm|Tự kiểm|Tự củng cố|Tự mở rộng|Kiểm lại|Giới hạn cần nhớ|Điều cần nhớ|Khi nào dùng cách này|Tiếp tục rèn luyện)(?:[.:]|\b)/iu;
+ let sections=0,boxes=0,exception=0;
+ for(const heading of panes[2].querySelectorAll(":scope > h3")){
+  sections++;
+  const name=heading.textContent.replace(/^3\.\d+\.\s*/,"").trim();
+  const allNarrative=name==="Mở rộng mô hình thực tế từ phần cuối Bài 16";
+  let current=heading.nextElementSibling;
+  if(!allNarrative){
+   while(current&&current.tagName!=="H3"&&!isStrongLead(current,/^Lời giải\./iu))
+    current=current.nextElementSibling;
+   if(!current||current.tagName==="H3")continue; // strict browser QA detects a missing solution
+  }else{
+   if(!current||current.tagName==="H3")continue;
+   exception++;
+  }
   const panel=document.createElement("div");
   panel.className="thpt-g10-example-solution";
   panel.setAttribute("role","group");
-  panel.setAttribute("aria-label","Ví dụ và lời giải minh họa");
-  h.after(panel);
-  let node=first;
-  while(node&&node.tagName!=="H3"){
-   const next=node.nextElementSibling;
-   panel.append(node);node=next;
+  panel.setAttribute("aria-label",allNarrative?"Minh họa hai mô hình thực tế":"Lời giải ví dụ");
+  current.before(panel);
+  while(current&&current.tagName!=="H3"&&
+    (allNarrative||!isStrongLead(current,stop))){
+   const next=current.nextElementSibling;
+   panel.append(current);
+   current=next;
   }
+  boxes++;
  }
  article.classList.add("thpt-g10-chvi-golden");
+ article.dataset.g10ChviExampleSections=String(sections);
+ article.dataset.g10ChviExampleBoxes=String(boxes);
+ article.dataset.g10ChviNarrativeException=String(exception);
  article.dataset.g10ChviGolden="preview";
 };
 

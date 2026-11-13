@@ -224,11 +224,13 @@
 
     **Kiểm lại:** Thử \(x=2\) được \((2-1)(2-3)=1\cdot(-1)=-1\le0\), nên 2 thuộc tập nghiệm. Thử \(x=0\) được \((-1)(-3)=3>0\), nên 0 không thuộc tập nghiệm. Hai phép thử phù hợp với bảng dấu.
 
+    **Tự luyện thêm.** Em tự giải ba câu dưới đây bằng quy tắc xét dấu, sau đó mới mở lời giải để kiểm tra.
+
     1. Xét dấu \(h(x)=2x^2+3x+5\) trên \(\mathbb R\).
     2. Giải \(x^2-5x+6<0\).
     3. Giải \(-(x-2)^2\le0\).
 
-    ??? question "Đối chiếu"
+    ??? question "Xem lời giải ba câu tự luyện"
 
         <ol>
         <li><span class="arithmatex">\(\Delta=9-40=-31<0\)</span>, <span class="arithmatex">\(a=2>0\)</span> nên <span class="arithmatex">\(h(x)>0\)</span> với mọi <span class="arithmatex">\(x\in\mathbb R\)</span>.</li>
@@ -241,7 +243,9 @@
 
     ### Ví dụ — Rào vườn 18 m
 
-    **Ví dụ 4 (thực tế do dự án tự soạn).** Dùng \(18\) m lưới rào ba cạnh một hình chữ nhật sát bức tường. Gọi \(x\) (m) là chiều rộng vuông góc tường, \(0<x<9\); chiều còn lại là \(18-2x\). Diện tích \(S(x)=x(18-2x)\). Muốn \(S(x)\ge36\), ta giải
+    **Đề bài.** Dùng \(18\) m lưới rào ba cạnh một hình chữ nhật sát bức tường. Gọi \(x\) (m) là chiều rộng vuông góc tường, \(0<x<9\); chiều còn lại là \(18-2x\). Diện tích \(S(x)=x(18-2x)\). Hãy tìm các giá trị của \(x\) để diện tích \(S(x)\ge36\) m².
+
+    **Lời giải.** Từ điều kiện về diện tích, ta giải
 
     \[
     -2x^2+18x-36\ge0
@@ -257,7 +261,9 @@
 
     Với bài toán chuyển động, nghiệm đại số chưa phải câu trả lời cuối cùng: **thời gian không âm**, và mô hình độ cao chỉ áp dụng trong khoảng vật đang bay. Đây là lý do ta phải xác định miền thời gian trước khi chọn tập nghiệm.
 
-    **Ví dụ tự biên soạn.** Một quả bóng được ném lên từ độ cao \(5\) m. Trong thời gian bay, độ cao (m) sau \(t\) giây được mô tả bởi \(h(t)=-5t^2+20t+5\). Hỏi quả bóng ở độ cao **ít nhất \(20\) m** trong khoảng thời gian nào?
+    **Đề bài.** Một quả bóng được ném lên từ độ cao \(5\) m. Trong thời gian bay, độ cao (m) sau \(t\) giây được mô tả bởi \(h(t)=-5t^2+20t+5\). Hỏi quả bóng ở độ cao **ít nhất \(20\) m** trong khoảng thời gian nào?
+
+    **Lời giải.**
 
     **Bước 1 — điều kiện mô hình.** \(t\ge0\) và quả bóng còn ở trên mặt đất, tức \(h(t)\ge0\). Giải \(h(t)=0\) được \(t=2\pm\sqrt5\), nên thời gian bay theo mô hình là \(0\le t\le2+\sqrt5\) (giây).
 
@@ -283,13 +289,15 @@
 
     Đối với một tam thức \(f(x)=ax^2+bx+c\) có \(a>0\), điều kiện để \(f(x)>0\) với **mọi** \(x\in\mathbb R\) là \(\Delta<0\). Nếu chỉ yêu cầu \(f(x)\ge0\) với mọi \(x\), điều kiện là \(\Delta\le0\). Khi \(a<0\), các mệnh đề tương tự áp dụng cho dấu \(<0\) hoặc \(\le0\).
 
-    **Ví dụ 5 (tự soạn).** Tìm \(m\) để
+    **Đề bài.** Tìm \(m\) để
 
     \[
     x^2-2(m+1)x+m^2+3>0
     \]
 
-    đúng với mọi \(x\in\mathbb R\). Vì \(a=1>0\), ta cần
+    đúng với mọi \(x\in\mathbb R\).
+
+    **Lời giải.** Vì \(a=1>0\), ta cần
 
     \[
     \Delta=[-2(m+1)]^2-4(m^2+3)=8(m-1)<0.
@@ -297,9 +305,11 @@
 
     Suy ra \(\boxed{m<1}\). Nếu \(m=1\), tam thức có nghiệm kép và bằng \(0\) tại một điểm nên **không** thỏa dấu \(>\).
 
-    ??? question "Lưu ý về phạm vi Core và mở rộng của bài toán tham số"
+    **Tự mở rộng.** Nếu hệ số bậc hai cũng phụ thuộc tham số, hãy thử nghĩ điều gì xảy ra khi hệ số đó bằng 0.
 
-        <p>Tìm tham số để tam thức bậc hai luôn dương/không âm (hoặc luôn âm/không dương) trên ℝ <strong>khi hệ số bậc hai a cố định khác 0</strong> thuộc phạm vi vận dụng kiến thức Core của Bài 17 (SGK trang 24, bài 6.17; SBT trang 17 Ví dụ 3 và trang 18 bài 6.24). Cần xét dấu của a và Δ (hoặc Δ′) phù hợp. Nếu a phụ thuộc tham số và có thể bằng 0, phải xét thêm trường hợp biểu thức không còn là tam thức bậc hai; nội dung này được đặt ở phần nâng cao, không yêu cầu như một outcome Core bắt buộc.</p>
+    ??? question "Nếu hệ số bậc hai cũng phụ thuộc tham số thì sao?"
+
+        <p>Quy tắc xét dấu tam thức bậc hai chỉ dùng khi <strong>hệ số của x² khác 0</strong>. Nếu hệ số này phụ thuộc tham số m, trước tiên hãy xét riêng các giá trị m khiến nó bằng 0. Khi ấy biểu thức trở thành bậc nhất hoặc hằng số, cần xử lý riêng; với các giá trị m còn lại, mới áp dụng dấu của hệ số bậc hai và biệt thức Δ. Đây là cách kiểm tra điều kiện áp dụng phương pháp.</p>
 
 
     [Chuyển đến Luyện tập và Vận dụng Chương VI](luyen-tap.md) để làm bài củng cố. Bạn có thể mở gợi ý và lời giải sau khi tự làm.

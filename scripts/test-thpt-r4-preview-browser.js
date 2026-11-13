@@ -2,7 +2,15 @@
 const assert=require("node:assert/strict");
 const fs=require("node:fs");
 const crypto=require("node:crypto");
-const {chviEditorialReceiptRows}=require("./thpt-q18-g10-source-receipt.cjs");
+const {chviEditorialReceiptRows,chviExampleUxReceiptRows}=require("./thpt-q18-g10-source-receipt.cjs");
+function signedChviBlob(name){
+ const original=chviEditorialReceiptRows().get(name);
+ const next=chviExampleUxReceiptRows().get(name);
+ if(!next)return original?.candidate;
+ assert(original,name+" UX delta without signed original S1 receipt");
+ assert.equal(next.baseline,original.candidate,name+" published → Golden UX delta identity chain");
+ return next.candidate;
+}
 const {chromium}=require("playwright");
 // Run the same no-duplicate / assessment-exposure contract on every THPT QA run.
 require("./test-thpt-shared-item-placement.cjs").run();
@@ -790,7 +798,7 @@ async function ready(page,path){
        if(editorial){
          const bytes=fs.readFileSync("docs/thpt-preview/sgk/chuong-vi/bai-"+lesson+".md");
          const digest=crypto.createHash("sha1").update("blob "+bytes.length+"\0").update(bytes).digest("hex");
-         assert.equal(digest,editorial.candidate,"B"+lesson+" Q18 source-locked First Try relocation");
+         assert.equal(digest,signedChviBlob("B"+lesson),"B"+lesson+" Q18 source-locked First Try relocation");
          const tabset=article.locator(".tabbed-set").first();
          const discoveryTab=tabset.locator(".tabbed-labels label").filter({hasText:/^Khám phá kiến thức$/});
          assert.equal(await discoveryTab.count(),1,"B"+lesson+" must provide approved Discovery tab");
@@ -842,7 +850,7 @@ async function ready(page,path){
     if(candidate){
       const raw=fs.readFileSync("docs/thpt-preview/sgk/chuong-vi/bai-"+lesson+".md");
       const sourceSha=crypto.createHash("sha1").update("blob "+raw.length+"\0").update(raw).digest("hex");
-      assert.equal(sourceSha,candidate.candidate,"B"+lesson+" signed Golden lead expectation");
+      assert.equal(sourceSha,signedChviBlob("B"+lesson),"B"+lesson+" signed Golden lead expectation");
       assert.equal(await page.locator("article .thpt-r4-screen .thpt-r4-lead").count(),0,
         "B"+lesson+" source-signed Golden must suppress redundant introduction");
       assert.equal(await page.locator("article[data-g10-chvi-golden='preview']").count(),1,
@@ -870,13 +878,13 @@ async function ready(page,path){
      if(signed){
        const bytes=fs.readFileSync("docs/thpt-preview/sgk/chuong-vi/bai-17.md");
        const actual=crypto.createHash("sha1").update("blob "+bytes.length+"\0").update(bytes).digest("hex");
-       assert.equal(actual,signed.candidate,"B17 source-locked optional-extension placement");
+       assert.equal(actual,signedChviBlob("B17"),"B17 source-locked optional-extension placement");
        const examples=tabset.locator(".tabbed-labels label").filter({hasText:/^Ví dụ$/});
        assert.equal(await examples.count(),1,"B17 source-signed Example tab missing");
        const blocks=tabset.locator(".tabbed-content > .tabbed-block");
-       assert.equal(await blocks.nth(1).locator('details:has(> summary:text-is("Lưu ý về phạm vi Core và mở rộng của bài toán tham số"))').count(),0,
+       assert.equal(await blocks.nth(1).locator('details:has(> summary:text-is("Nếu hệ số bậc hai cũng phụ thuộc tham số thì sao?"))').count(),0,
          "B17 optional parameter extension must not be presented as core SGK heading");
-       assert.equal(await blocks.nth(2).locator('details:has(> summary:text-is("Lưu ý về phạm vi Core và mở rộng của bài toán tham số"))').count(),1,
+       assert.equal(await blocks.nth(2).locator('details:has(> summary:text-is("Nếu hệ số bậc hai cũng phụ thuộc tham số thì sao?"))').count(),1,
          "B17 optional parameter extension missing from examples");
        await examples.click();
      }else{
@@ -885,8 +893,12 @@ async function ready(page,path){
        await knowledge.click();
      }
    }
-   const scope=page.locator('article details:has(> summary:text-is("Lưu ý về phạm vi Core và mở rộng của bài toán tham số"))');
+   const scope=page.locator('article details:has(> summary:text-is("Nếu hệ số bậc hai cũng phụ thuộc tham số thì sao?"))');
   assert.equal(await scope.count(),1,"B17 should offer one compact optional extension note");
+  assert(!(await scope.textContent()).includes("outcome Core") &&
+   !(await scope.textContent()).includes("SGK trang 24"),
+   "B17 should give students a mathematical condition rather than internal Core administration");
+
   assert(!(await scope.evaluate(el=>el.open)),"B17 scope note must begin collapsed");
   await scope.locator("summary").click();
   assert(await scope.evaluate(el=>el.open),"B17 scope note should open on student choice");

@@ -220,9 +220,15 @@
 
     **Vì sao chọn cách này?** Dạng bình phương cho luôn \(f(x)\ge-4\).
 
-    **Giải.** Đỉnh \(I(1,-4)\), trục đối xứng \(x=1\), tập giá trị \([-4,+\infty)\). Giải \((x-1)^2=4\) được \(x=-1\) hoặc \(x=3\). **Kiểm lại:** hai nghiệm đối xứng qua \(x=1\) và đồ thị không xuống dưới \(-4\).
+    **Lời giải.** Đỉnh \(I(1,-4)\), trục đối xứng \(x=1\), tập giá trị \([-4,+\infty)\). Giải \((x-1)^2=4\) được \(x=-1\) hoặc \(x=3\).
 
-    Xét \(f(x)=x^2-4x+3=(x-2)^2-1\). Do đó:
+    **Kiểm lại:** hai nghiệm đối xứng qua \(x=1\) và đồ thị không xuống dưới \(-4\).
+
+    ### Ví dụ — Vẽ parabol từ biểu thức đã cho
+
+    **Đề bài.** Xét \(f(x)=x^2-4x+3=(x-2)^2-1\). Hãy xác định đỉnh, các giao điểm với hai trục, sự biến thiên và các bước vẽ đồ thị.
+
+    **Lời giải.** Từ dạng bình phương, ta có:
 
     - Đỉnh \(I(2;-1)\), trục \(x=2\).
     - Hệ số \(a=1>0\), nên hàm có giá trị nhỏ nhất \(-1\).
@@ -274,7 +280,9 @@
 
     Đôi khi bài toán cho **hình dạng hoặc các điểm của parabol**, chứ chưa cho công thức hàm số. Khi đó ta cần tìm ngược hệ số của hàm bậc hai. Nếu đề đã biết đỉnh \(I(h;k)\), **vì sao nên chọn dạng** \(y=a(x-h)^2+k\)? Vì hai tọa độ đỉnh đã được đưa trực tiếp vào công thức, chỉ còn một ẩn \(a\), thay vì phải tìm cả ba hệ số \(a,b,c\).
 
-    **Ví dụ tự biên soạn.** Một parabol có đỉnh \(I(1;2)\) và đi qua \(A(0;0)\). Tìm hàm số bậc hai có đồ thị là parabol đó.
+    **Đề bài.** Một parabol có đỉnh \(I(1;2)\) và đi qua \(A(0;0)\). Tìm hàm số bậc hai có đồ thị là parabol đó.
+
+    **Lời giải.**
 
     **Bước 1 — dùng dữ kiện đỉnh.** Viết \(y=a(x-1)^2+2\), với \(a\ne0\).
 
