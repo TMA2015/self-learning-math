@@ -279,24 +279,24 @@ THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md — ONE effective normat
 
 | Qxx | evidence scoped to frozen R01 source | Author Q18 verification | academic custody | RELEASE runtime |
 |---|---|---|---|---|
-| Q01 | G11 KNTT S1 B22–B25 original immutable source and printed pages, 21 original lesson skills; CD17 not mixed | AUTHOR_QA_PASS | Q01 original S1+R01 Q18 | RELEASE AP/R/P pending |
-| Q02 | 21 original G11 B22–B25 outcomes each a separate explanation/example/firsttry and practice | AUTHOR_QA_PASS | Q02 original S1+R01 Q18 | RELEASE AP/R/P pending |
-| Q03 | four natural meaning-first arcs from direction to floor normals, projection and dihedral | AUTHOR_QA_PASS | Q03 original S1+R01 Q18 | RELEASE AP/R/P pending |
-| Q04 | 21 reasoned examples plus 21 independently checked firsttries and 21 practice keys | AUTHOR_QA_PASS | Q04 original S1+R01 Q18 | RELEASE AP/R/P pending |
-| Q05 | four difficulty types: identify, prove, inverse condition/counterexample, slope/angle application | AUTHOR_QA_PASS | Q05 original S1+R01 Q18 | RELEASE AP/R/P pending |
-| Q06 | three new Written W01–W03 solve proof with 4×1 analytic rubric and selfcomparison | AUTHOR_QA_PASS | Q06 original S1+R01 Q18 | RELEASE AP/R/P pending |
-| Q07 | four source-equivalent SVGs with exact labels/geometry, alt and localized reading, plus one public model | AUTHOR_QA_PASS | Q07 original S1+R01 Q18 | RELEASE AP/R/P pending |
-| Q08 | 21 target-specific D6 remedies, incl degenerate BH and false picture-angle inference | AUTHOR_QA_PASS | Q08 original S1+R01 Q18 | RELEASE AP/R/P pending |
-| Q09 | narrative asks what engineering/geometry problem requires the idea | AUTHOR_QA_PASS | Q09 original S1+R01 Q18 | RELEASE AP/R/P pending |
-| Q10 | geometry prerequisite embedded, no mandatory Oxyz or external Topic to understand | AUTHOR_QA_PASS | Q10 original S1+R01 Q18 | RELEASE AP/R/P pending |
-| Q11 | definition/meaning and condition appear before method/formula | AUTHOR_QA_PASS | Q11 original S1+R01 Q18 | RELEASE AP/R/P pending |
-| Q12 | four exact-original SVGs and accessible reading; model 2D section limitation | AUTHOR_QA_PASS | Q12 original S1+R01 Q18 | RELEASE AP/R/P pending |
-| Q13 | proof choice by 2 intersecting directions and cross-section; when not to use and edge cases | AUTHOR_QA_PASS | Q13 original S1+R01 Q18 | RELEASE AP/R/P pending |
-| Q14 | 21 voluntary FirstTry/details/recovery before practice and independent of hidden exams | AUTHOR_QA_PASS | Q14 original S1+R01 Q18 | RELEASE AP/R/P pending |
-| Q15 | 86 unique canonical IDs, 41 unchanged SGK pointers, 45 new, 8 semantic Topic-only placements and 8 replay reuse | AUTHOR_QA_PASS | Q15 original S1+R01 Q18 | RELEASE AP/R/P pending |
-| Q16 | public replay only; 0 imported private RD1; no official score/Mastery before protected RELEASE QA | AUTHOR_QA_PASS | Q16 original S1+R01 Q18 | RELEASE AP/R/P pending |
-| Q17 | exact 3 independent Topic pages, CĐ16/17 split as historical plan not automatic runtime ID | AUTHOR_QA_PASS | Q17 original S1+R01 Q18 | RELEASE AP/R/P pending |
-| Q18 | signed author selfQA on immutable source Git SHA, 21 outcome proofs, 20 math checks and source/visual locks | AUTHOR_QA_PASS | Q18 original S1+R01 Q18 | RELEASE AP/R/P pending |
+| Q01 | G11 KNTT S1 B22–B25 original immutable source and printed pages, 21 original lesson skills; CD17 not mixed | AUTHOR_QA_PASS | Q01 original S1+R01 Q18 | RELEASE_NOT_TESTED |
+| Q02 | 21 original G11 B22–B25 outcomes each a separate explanation/example/firsttry and practice | AUTHOR_QA_PASS | Q02 original S1+R01 Q18 | RELEASE_NOT_TESTED |
+| Q03 | four natural meaning-first arcs from direction to floor normals, projection and dihedral | AUTHOR_QA_PASS | Q03 original S1+R01 Q18 | RELEASE_NOT_TESTED |
+| Q04 | 21 reasoned examples plus 21 independently checked firsttries and 21 practice keys | AUTHOR_QA_PASS | Q04 original S1+R01 Q18 | RELEASE_NOT_TESTED |
+| Q05 | four difficulty types: identify, prove, inverse condition/counterexample, slope/angle application | AUTHOR_QA_PASS | Q05 original S1+R01 Q18 | RELEASE_NOT_TESTED |
+| Q06 | three new Written W01–W03 solve proof with 4×1 analytic rubric and selfcomparison | AUTHOR_QA_PASS | Q06 original S1+R01 Q18 | RELEASE_NOT_TESTED |
+| Q07 | four source-equivalent SVGs with exact labels/geometry, alt and localized reading, plus one public model | AUTHOR_QA_PASS | Q07 original S1+R01 Q18 | RELEASE_NOT_TESTED |
+| Q08 | 21 target-specific D6 remedies, incl degenerate BH and false picture-angle inference | AUTHOR_QA_PASS | Q08 original S1+R01 Q18 | RELEASE_NOT_TESTED |
+| Q09 | narrative asks what engineering/geometry problem requires the idea | AUTHOR_QA_PASS | Q09 original S1+R01 Q18 | RELEASE_NOT_TESTED |
+| Q10 | geometry prerequisite embedded, no mandatory Oxyz or external Topic to understand | AUTHOR_QA_PASS | Q10 original S1+R01 Q18 | RELEASE_NOT_TESTED |
+| Q11 | definition/meaning and condition appear before method/formula | AUTHOR_QA_PASS | Q11 original S1+R01 Q18 | RELEASE_NOT_TESTED |
+| Q12 | four exact-original SVGs and accessible reading; model 2D section limitation | AUTHOR_QA_PASS | Q12 original S1+R01 Q18 | RELEASE_NOT_TESTED |
+| Q13 | proof choice by 2 intersecting directions and cross-section; when not to use and edge cases | AUTHOR_QA_PASS | Q13 original S1+R01 Q18 | RELEASE_NOT_TESTED |
+| Q14 | 21 voluntary FirstTry/details/recovery before practice and independent of hidden exams | AUTHOR_QA_PASS | Q14 original S1+R01 Q18 | RELEASE_NOT_TESTED |
+| Q15 | 86 unique canonical IDs, 41 unchanged SGK pointers, 45 new, 8 semantic Topic-only placements and 8 replay reuse | AUTHOR_QA_PASS | Q15 original S1+R01 Q18 | RELEASE_NOT_TESTED |
+| Q16 | public replay only; 0 imported private RD1; no official score/Mastery before protected RELEASE QA | AUTHOR_QA_PASS | Q16 original S1+R01 Q18 | RELEASE_NOT_TESTED |
+| Q17 | exact 3 independent Topic pages, CĐ16/17 split as historical plan not automatic runtime ID | AUTHOR_QA_PASS | Q17 original S1+R01 Q18 | RELEASE_NOT_TESTED |
+| Q18 | signed author selfQA on immutable source Git SHA, 21 outcome proofs, 20 math checks and source/visual locks | AUTHOR_QA_PASS | Q18 original S1+R01 Q18 | RELEASE_NOT_TESTED |
 
 ## S1_SGK_SBT_SOURCE
 
