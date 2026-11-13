@@ -13,14 +13,14 @@ CATALOG_TOPIC_ID: CD15
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_SPATIAL_PARALLELISM_R02_FULL_22_OUTCOMES_20261113.md
-ACADEMIC_SOURCE_BLOB: 26df1a4e60765dd65aebded95d7bd43e9eda63f9
+ACADEMIC_SOURCE_BLOB: ab4bd6a9f40b4925da35b725ccf396cd3c4eae9b
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC15_R02_AUTHOR_SELF_QA_RECEIPT_20261113.md (author-self; NOT an independent NotebookLM verdict)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC15_R02_AUTHOR_SELF_QA_RECEIPT_20261113.md
-REVIEW_RECEIPT_BLOB: bcfc39a963622c7d3d69cbb18a2a0a5d33088325
+REVIEW_RECEIPT_BLOB: 62f198b39af5e471332de6063bf14dc4f4f05371
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_R02_AUTHORING_METADATA_20261113.md
-AUTHOR_A1_A7_BLOB: f5dfb94b45999543defa7ef12d3e43d4d264583a
+AUTHOR_A1_A7_BLOB: 169af8f64300bb53c6c778809e97eeee9cafe4dd
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC15-SPATIAL-PARALLELISM-FULL-R02_HANDOFF_V2_20261113.md
-AUTHOR_HANDOFF_BLOB: ef9102c02e951e5d4fedc7be440506f0fbacda18
+AUTHOR_HANDOFF_BLOB: f18b7b147d58bfb2a25156615fb2c131cdaee6cb
 ORIGINAL_SGK_SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_THPT_TOPIC15_LINE_PLANE_RELATION_R01_20261113.html
 INTERACTIVE_MODEL_BLOB: 3f3c75765b6cddcaa53994027c45e79701d4d840
@@ -33,7 +33,7 @@ ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
-BLOCKERS: NONE_AUTHORING
+BLOCKERS: NONE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
@@ -46,25 +46,32 @@ CURRENT_PR: DRAFT_AUTHORING_NOT_MERGED
 
 ## AUTHORING A1–A7 / Q18
 
-- [x] A1 source Git blob 26df1a4e60765dd65aebded95d7bd43e9eda63f9; selfQA receipt bcfc39a963622c7d3d69cbb18a2a0a5d33088325; metadata f5dfb94b45999543defa7ef12d3e43d4d264583a; handoff ef9102c02e951e5d4fedc7be440506f0fbacda18.
-- [x] A2 S1 provenance original Toán 11 KNTT T1 ChIV B10 pp70–77/B11 78–83/B12 84–87/B13 88–94/B14 95–101; SBT pp53–74 (original owner verification receipt PR #705, no new PDF scan claimed).
-- [x] A3 Q18 `AUTHOR_SELF_VERIFIED` under v3.1.0, 22-outcome/53-math-check author signoff; **not a new independent NotebookLM CĐ15 PASS**.
-- [x] A4 22 outcome / 89 unique public IDs, R00 seven original question bodies immutable, exactly one active Topic R02 source and canonical metadata.
-- [x] A5 22 examples and 22 opt-in Tự thử, 22 D6, 22 new Practice with worked comparisons, five new Written with rubric /4; five original source-equivalent SVG with alt/guided reading; Canvas interactive model at TOP15-O11.
-- [x] A6 R02 Delta C targeted concepts/visuals and coordinates-optional primer; author math/PED verified with no identified P0/P1.
-- [x] A7 No private RD1 imported, no client practice/mastery writes or protected scoring; 8 public replays have no official readiness claim.
+- [x] A1_SOURCE_SNAPSHOT — Academic source blob ab4bd6a9f40b4925da35b725ccf396cd3c4eae9b, receipt 62f198b39af5e471332de6063bf14dc4f4f05371, and one source-locked V2 handoff.
+- [x] A2_SGK_SBT_SCOPE — Verified historical Toán 11 KNTT Tập1 ChIV B10–B14 printed pages SGK 70–103 and SBT 53–74 from original S1 receipt PR #705; no fresh PDF reading claimed.
+- [x] A3_NOTEBOOKLM_VERDICT — Legacy A3 label is fulfilled by owner-effective Q18 AUTHOR_SELF_VERIFIED receipt with author signoff; NOT an independent new NotebookLM verdict.
+- [x] A4_ITEM_OUTCOME_IDS — 22 outcome IDs and 89 unique public canonical IDs, 40 old SGK pointer refs and 49 new fully solved item bodies; exact item–outcome–role matrix in V2.
+- [x] A5_D1_D6_SCOPE — 22 concept-first modules, 22 worked examples, 22 First Try and D6, 22 Practice and 5 Written /4; five original source-equivalent SVG assets and one dynamic model.
+- [x] A6_DELTA_RESOLVED — R02 Delta C author recheck covers concept bridge, figure placement, optional coordinate primer, 53 math/edge checks and old-seven item immutability; no found P0/P1.
+- [x] A7_PUBLIC_PRIVATE_BOUNDARY — Exactly zero private Topic RD1 questions imported, only 8 public practice replay placements CLIENT_SELF_CHECK_NO_MASTERY; Final Submit and Mastery protection reserved for RELEASE.
 
 ## PED1–PED6 / Q09–Q14
 
-Five coherent motives; prerequisites geometric first, coordinate verification optional; real SVG visual with guided reading and edge cases; reasoned proof choices; 22 First Try before voluntarily opening comparison, 22 D6 remediation. Q01–Q18 granular verdict table and 89 mapping are in V2 at exact SHA above.
+- [x] PED1_MOTIVATION — Five learning arcs begin from drawings, spatial relations, cut sections, projection limits and real conceptual questions.
+- [x] PED2_PREREQUISITES — Geometric line/plane prerequisites taught directly, with optional Oxyz bridge explained for G11 learners not yet introduced to coordinate geometry.
+- [x] PED3_MEANING_FIRST — Existence and geometric meaning precede parallel/perpendicular tests, examples and formula applications, without premature calculation-first prompts.
+- [x] PED4_EXPLAINED_VISUAL — Five original mathematically checked SVGs placed near the relevant explanation with guided reading, plus optional interactive 2D slice model.
+- [x] PED5_REASONED_EXAMPLES — Worked examples show why to select a proof/condition, disallow skew-as-parallel and account for collapsed projections and other exceptional cases.
+- [x] PED6_FIRST_TRY_REMEDIATION — All 22 outcomes include a voluntary First Try before comparison, diagnosis of a common error and precise D6 recovery route.
 
 ## RELEASE R1–R5 / P1–P2 — NOT TESTED
 
-- [ ] R1 Integrate into actual website runtime with owner-selected Topic catalog/route. CD15 is production order, runtime ID **unassigned**.
-- [ ] R2 Verify exact combined HEAD CI, canonical source/receipt/manifest↔REGISTER and no private RD1 exposure.
-- [ ] R3 Golden R4/Adaptive Knowledge Tabs v2, MathJax/SVG/Canvas responsive, actual Safari/touch and accessibility.
-- [ ] R4 Final Submit enforcement: no pre-submit key/hint/correctness/rubric/AI Tutor; no unauthorized Skill Mastery. Public 8-item replays must not be misrepresented as independent assessment.
-- [ ] R5 Owner permission for production merge/deploy and subsequent P1/P2.
+- [ ] R1_INTEGRATED_CURRENT_MAIN — No production website integration or owner-approved runtime Topic route; branch is AUTHORING source only.
+- [ ] R2_EXACT_HEAD_CI — RELEASE must re-validate exact combined integration HEAD, source/receipt SHA, Q15/Q16 and shared REGISTER reconciliation.
+- [ ] R3_CLEAN_STUDENT_UI — Golden R4/AP1–AP5/Adaptive Knowledge Tabs, MathJax, SVG/Canvas and real Safari phone/tablet UAT remain untested in release.
+- [ ] R4_ASSESSMENT_SAFETY — Final Submit must suppress answer, hint, correctness and AI Tutor before submission, with zero unofficial mastery writes.
+- [ ] R5_OWNER_APPROVAL — No owner permission to merge or deploy this new Topic source; production publication remains excluded.
+- [ ] P1_DEPLOY_RECEIPT — No deployed production build, URL or verified source/version parity exists for this authoring packet.
+- [ ] P2_DEVICE_UAT — No production iPhone/iPad Safari real-device receipt; headless viewports do not substitute for P2.
 
 **Cross-PR REGISTER rule:** this AUTHORING branch holds only its own additional row. RELEASE must reconcile the union from all active AUTHORING Drafts with latest main on exact integrated HEAD; do **not** overwrite or regard old rows as removed.
 
