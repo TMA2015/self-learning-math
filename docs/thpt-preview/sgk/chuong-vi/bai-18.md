@@ -176,7 +176,7 @@
 
    
 
-   **Tự kiểm:** Nếu chỉ ghi hai nghiệm \(\{0,3\}\), em đã giải phương trình sau bình phương chứ chưa giải xong phương trình ban đầu.
+    **Tự kiểm:** Nếu chỉ ghi hai nghiệm \(\{0,3\}\), em đã giải phương trình sau bình phương chứ chưa giải xong phương trình ban đầu.
 
     **Tự luyện thêm.** Ba câu sau giúp em kiểm tra điều kiện và nghiệm ngoại lai; hãy tự làm trước khi mở lời giải.
 
