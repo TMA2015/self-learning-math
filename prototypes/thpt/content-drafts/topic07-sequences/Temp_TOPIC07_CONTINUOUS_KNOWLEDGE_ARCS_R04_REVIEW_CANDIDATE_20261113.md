@@ -382,9 +382,9 @@ Nếu nhân cả hai khoản với 1,1², vẽ trục kỳ 0–1–2 và đánh 
 
 # Tự kiểm tra
 
-**Public Self Check (18 lượt đặt câu):** đúng 18 `item_id` P01–P18 được đặt lại từ luyện tập, không tạo đề mới. `ASSESSMENT_MODE=CLIENT_SELF_CHECK_NO_MASTERY`; đây là demo/tự đối chiếu không có bằng chứng độc lập và không chấm Skill Mastery. Không thêm RD1 kín vào public GitHub.
+Cuối chuyên đề, em tự giải 18 câu đại diện cho 18 mục tiêu, trải từ chỉ số dãy, cấp số cộng và cấp số nhân tới các tình huống tiền gửi theo kỳ. Hãy trình bày kết quả trước khi nhấn **Final Submit**. Chỉ sau khi nộp, em mới tự mở đối chiếu đúng/sai, đáp án và giải thích để xác định chỗ cần ôn.
 
-Trong giao diện thực tế, người học phải nhấn **Final Submit** rồi mới được thấy đúng/sai, lời giải, gợi ý hay đáp án; kiểm thử hành vi đó thuộc RELEASE, học liệu Markdown này **không** chứng nhận runtime. Sau tự đối chiếu, người học xem outcome mắc lỗi và quay về giải thích/D6, không được dùng câu đã thấy đáp án để tuyên bố độc lập TOPIC_READINESS.
+Các câu này được dùng lại từ phần Luyện tập, nên kết quả chỉ có ý nghĩa **tự phát hiện lỗ hổng**, không phải bài kiểm tra độc lập hay điểm thành thạo chính thức. Em hãy quay về đoạn giải thích tương ứng, làm lại một bài khác và tự đánh giá điều đã hiểu, không ghi nhận điểm Mastery từ việc xem lời giải.
 
 <!-- AUTHORING SOURCE-LOCK POINTERS ONLY; these are existing canonical source item IDs, NOT question copies, NOT learner UI.
 - THPT-G11-B05-C01
