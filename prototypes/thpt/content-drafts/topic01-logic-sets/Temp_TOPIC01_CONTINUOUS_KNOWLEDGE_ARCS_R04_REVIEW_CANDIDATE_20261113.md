@@ -10,7 +10,7 @@ Khi học một khái niệm toán, điều quan trọng không chỉ là nhớ 
 
 Một bạn nói: “Mọi thành viên câu lạc bộ Toán đều biết lập trình”. Nếu tìm được một thành viên không biết lập trình, ta có thể bác bỏ câu ấy ngay; nhưng vài bạn biết lập trình chưa đủ chứng minh lời khẳng định đúng. Hai cách kiểm chứng ấy dẫn đến những ý tưởng nền tảng của logic toán học: mệnh đề, phủ định, phản ví dụ và lượng từ.
 
-Trước khi tiếp tục, chỉ cần nhớ: các số nguyên \\(\\mathbb Z\\) gồm \\(\\ldots,-2,-1,0,1,2,\\ldots\\); các số thực \\(\\mathbb R\\) là những số biểu diễn được trên trục số; \\(n\\) chia hết cho \\(k\\ne0\\) nghĩa là tồn tại số nguyên \\(t\\) sao cho \\(n=kt\\). Ký hiệu \\(\\le\\) bao gồm cả trường hợp bằng. Các kiến thức này sẽ được dùng ngay trong những ví dụ dưới đây.
+Trước khi tiếp tục, chỉ cần nhớ: các số nguyên \(\mathbb Z\) gồm \(\ldots,-2,-1,0,1,2,\ldots\); các số thực \(\mathbb R\) là những số biểu diễn được trên trục số; \(n\) chia hết cho \(k\ne0\) nghĩa là tồn tại số nguyên \(t\) sao cho \(n=kt\). Ký hiệu \(\le\) bao gồm cả trường hợp bằng. Các kiến thức này sẽ được dùng ngay trong những ví dụ dưới đây.
 
 Để lập luận đúng, ta phải hiểu câu nào có thể xét đúng–sai, câu nào còn phụ thuộc vào biến và cách bác bỏ một nhận định. Những ý tưởng về phủ định, kéo theo, tương đương và lượng từ sẽ lần lượt xuất hiện từ chính câu hỏi ấy.
 
@@ -81,12 +81,12 @@ Chiều thuận đúng vì \(n=8k=4(2k)\). Chiều đảo sai: \(n=4\) chia hế
 </details>
 
 <!-- First Try for TOP01-M04; noncanonical knowledge question -->
-**4.** Với \\(x\\in\\mathbb R\\), bạn An viết: “\\(x^2=9\\) khi và chỉ khi \\(x=3\\)”. Em có đồng ý không? Nếu chỉ xét \\(x\\ge0\\), kết luận thay đổi thế nào?
+**4.** Với \(x\in\mathbb R\), bạn An viết: “\(x^2=9\) khi và chỉ khi \(x=3\)”. Em có đồng ý không? Nếu chỉ xét \(x\ge0\), kết luận thay đổi thế nào?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu sau khi tự làm</summary>
 
-Trên \\(\\mathbb R\\), phát biểu **sai**. Từ \\(x=3\\) suy ra \\(x^2=9\\), nhưng chiều ngược sai vì \\(x=-3\\) cũng có bình phương bằng 9. Nếu biết thêm \\(x\\ge0\\), phương trình \\(x^2=9\\) chỉ nhận \\(x=3\\), nên hai chiều đều đúng. Khi kiểm tra “khi và chỉ khi”, em cần đọc cả **miền xét** và chứng minh hai hướng.
+Trên \(\mathbb R\), phát biểu **sai**. Từ \(x=3\) suy ra \(x^2=9\), nhưng chiều ngược sai vì \(x=-3\) cũng có bình phương bằng 9. Nếu biết thêm \(x\ge0\), phương trình \(x^2=9\) chỉ nhận \(x=3\), nên hai chiều đều đúng. Khi kiểm tra “khi và chỉ khi”, em cần đọc cả **miền xét** và chứng minh hai hướng.
 
 </details>
 
