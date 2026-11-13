@@ -8,10 +8,10 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
 const base=process.env.CHVII_BASE_URL||"http://127.0.0.1:8765/thpt-preview/sgk/chuong-vii/";
 const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
 const specs={
- 19:{tries:7,help:9,fig:1,ex:2,book:["2.1. Phương trình tổng quát của đường thẳng","2.2. Phương trình tham số của đường thẳng"]},
- 20:{tries:5,help:7,fig:1,ex:2,book:["2.1. Vị trí tương đối giữa hai đường thẳng","2.2. Góc giữa hai đường thẳng","2.3. Khoảng cách từ một điểm đến một đường thẳng"]},
- 21:{tries:5,help:7,fig:1,ex:2,book:["2.1. Phương trình đường tròn","2.2. Phương trình tiếp tuyến của đường tròn"]},
- 22:{tries:8,help:10,fig:3,ex:3,book:["2.1. Elip","2.2. Hypebol","2.3. Parabol","2.4. Một số ứng dụng của ba đường conic"]}
+ 19:{tries:7,help:9,fig:2,ex:2,book:["2.1. Phương trình tổng quát của đường thẳng","2.2. Phương trình tham số của đường thẳng"]},
+ 20:{tries:5,help:7,fig:3,ex:2,book:["2.1. Vị trí tương đối giữa hai đường thẳng","2.2. Góc giữa hai đường thẳng","2.3. Khoảng cách từ một điểm đến một đường thẳng"]},
+ 21:{tries:5,help:7,fig:3,ex:2,book:["2.1. Phương trình đường tròn","2.2. Phương trình tiếp tuyến của đường tròn"]},
+ 22:{tries:8,help:10,fig:6,ex:3,book:["2.1. Elip","2.2. Hypebol","2.3. Parabol","2.4. Một số ứng dụng của ba đường conic"]}
 };
 (async()=>{
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
@@ -55,6 +55,22 @@ const specs={
       tag+" Discovery explanation still split into per-outcome headings");
      assert(!/(Kiến thức tiền đề:|Bản chất trước công thức:|Hướng dẫn đọc hình:|Tại sao là D2 mới:)/.test(discoveryText),
       tag+" learner-facing PED/checklist labels returned");
+     const newConceptFigures=await blocks.nth(0).locator("figure[data-chvii-r02-diagram]").count();
+     assert.equal(newConceptFigures,({19:1,20:2,21:2,22:3})[n],tag+" R02 image must accompany the correct discovery");
+     if(n===19)assert(discoveryText.includes("Mở rộng có hướng dẫn · Học sau Bài 20"),
+       tag+" B19 TRY06 must not be framed as compulsory before B20");
+     if(n===21)assert(discoveryText.includes("Vận dụng liên bài B20–B21"),
+       tag+" B21 TRY17 should use B20 distance as interlesson reasoning");
+     if(n===22){
+       assert(!/tâm sai|e=c\\/a/i.test(discoveryText),tag+" compulsory eccentricity returned");
+       assert(discoveryText.includes("Mở rộng có hướng dẫn · Không bắt buộc"),tag+" B22 TRY20 optional");
+     }
+     if(n===20){
+       const img=blocks.nth(0).locator('figure[data-chvii-r02-diagram="TRY08"] img');
+       const src=await img.evaluate(el=>el.currentSrc);
+       assert(src.includes(width===390?"G10_CHVII_R02_B20_TRY08_LINES_MOBILE.svg":"G10_CHVII_R02_B20_TRY08_LINES.svg"),
+         tag+" mobile/desktop comparison diagram mismatch: "+src);
+     }
      assert.equal(await blocks.nth(0).locator("[data-thpt-first-try-id]").count(),s.tries,
       tag+" original First Try missing from Discovery");
      assert.equal(await blocks.nth(0).locator("details.question").count(),s.tries,
