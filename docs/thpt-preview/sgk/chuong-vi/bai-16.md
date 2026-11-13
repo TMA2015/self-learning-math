@@ -203,7 +203,7 @@
 
 
 
-    #### Các bước vẽ parabol
+    #### Bốn bước vẽ đồ thị parabol
 
     1. **Xác định đỉnh** \(I\left(-\frac{b}{2a};-\frac{\Delta}{4a}\right)\).
     2. **Vẽ trục đối xứng** \(x=-\frac{b}{2a}\) và nhận biết chiều mở qua dấu \(a\).
