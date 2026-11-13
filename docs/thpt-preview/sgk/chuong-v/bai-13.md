@@ -27,7 +27,7 @@
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY05" hidden></span>
 
-    ??? question "Em đã tự thử? Mở lời giải để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> \(\bar x=(2+4+4+10)/4=5\).</p>
@@ -49,7 +49,7 @@
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY06" hidden></span>
 
-    ??? question "Em đã tự thử? Mở lời giải để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> Sắp thành \(2,5,9,12\). Trung vị \(Q_2=(5+9)/2=7\).</p>
@@ -73,7 +73,7 @@
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY07" hidden></span>
 
-    ??? question "Em đã tự thử? Mở lời giải để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> \(Q_2=4\), nửa dưới \(1,2,3\) cho \(Q_1=2\), nửa trên \(5,6,7\) cho \(Q_3=6\).</p>
@@ -95,7 +95,7 @@
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY08" hidden></span>
 
-    ??? question "Em đã tự thử? Mở lời giải để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> Có hai mốt là 2 và 3, mỗi số xuất hiện hai lần.</p>
@@ -117,7 +117,7 @@
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY09" hidden></span>
 
-    ??? question "Em đã tự thử? Mở lời giải để đối chiếu"
+    ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> Trung bình \((4+5+6+7+28)/5=50/5=10\); trung vị 6; trung vị ít bị 28 chi phối hơn.</p>
