@@ -7,7 +7,7 @@
  * SVG geometry RELEASE-owned, equivalent to D5 design spec a2ee2b226780b3aeff379ccb7d5eae0bde0156b5.
  */
 const assert=require("node:assert/strict"),fs=require("node:fs"),crypto=require("node:crypto"),path=require("node:path");
-const {expectedG10KnowledgeBlob,chviiEditorialReceiptRows,chviiContinuousReceiptRows}=require("./thpt-q18-g10-source-receipt.cjs");
+const {expectedG10KnowledgeBlob,chviiEditorialReceiptRows,chviiContinuousReceiptRows,chviiAp2ReceiptRows}=require("./thpt-q18-g10-source-receipt.cjs");
 const root=path.resolve(__dirname,".."),read=p=>fs.readFileSync(path.join(root,p),"utf8");
 const shaText=s=>{const b=Buffer.from(s);return crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+b.length+"\0"),b])).digest("hex")};
 const gitblob=p=>shaText(read(p));
@@ -243,9 +243,11 @@ for(const tag of ["ELLIPSE","HYPERBOLA"]){
      if(newer){
       assert.equal(newer.baseline,editor.candidate,
         "B22 owner narrative amendment must start at original published S1 Q18 blob");
-      assert.equal(gitblob("docs/thpt-preview/sgk/chuong-vii/bai-22.md"),newer.candidate,
-        "B22 continuous narrative source must match exact signed follow-on Q18 receipt");
-      const bridge=tag==="ELLIPSE"?"Ta có thể kiểm nghiệm thêm cách đọc hoành độ qua một mái che":
+      const mathjax=chviiAp2ReceiptRows().get("B22");
+       if(mathjax)assert.equal(mathjax.baseline,newer.candidate,"B22 AP2 source must match exact reviewed owner narrative blob");
+       assert.equal(gitblob("docs/thpt-preview/sgk/chuong-vii/bai-22.md"),mathjax?mathjax.candidate:newer.candidate,
+         "B22 source must match latest exact Q18 source after equivalent TeX conversion");
+       const bridge=tag==="ELLIPSE"?"Ta có thể kiểm nghiệm thêm cách đọc hoành độ qua một mái che":
         "Tương tự, khi đã hiểu vì sao chênh lệch thời gian dẫn đến hypebol";
       assert(b22.includes(bridge),"Transfer D2 reasoning must survive as natural exposition "+tag);
       assert(!b22.includes("#### Minh họa — ")&&!b22.includes("**Tại sao là D2 mới:**"),

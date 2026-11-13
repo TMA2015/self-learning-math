@@ -6,7 +6,7 @@
 const fs=require("node:fs"),path=require("node:path"),cp=require("node:child_process"),
  crypto=require("node:crypto"),assert=require("node:assert/strict");
 const root=path.resolve(__dirname,".."),published="bfc15b552a1ea697edb1327f0a48d7a95bbb73ed";
-const {chviiEditorialReceiptRows,chviiContinuousReceiptRows,candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
+const {chviiEditorialReceiptRows,chviiContinuousReceiptRows,chviiAp2ReceiptRows,candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 const blob=data=>{const raw=Buffer.isBuffer(data)?data:Buffer.from(data);return crypto.createHash("sha1").update("blob "+raw.length+"\0").update(raw).digest("hex");};
 const ids=(s,k)=>[...s.matchAll(new RegExp(k+'="([^"]+)"',"g"))].map(m=>m[1]).sort();
 const tex=s=>[...s.matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]/g)].map(m=>(m[1]||m[2]).trim().replace(/\s+/g," "));
@@ -32,13 +32,17 @@ const specs={
  21:{count:5,helps:7,figures:1,examples:2,book:["2.1. Phương trình đường tròn","2.2. Phương trình tiếp tuyến của đường tròn"]},
  22:{count:8,helps:10,figures:3,examples:3,book:["2.1. Elip","2.2. Hypebol","2.3. Parabol","2.4. Một số ứng dụng của ba đường conic"]}
 };
-const rows=chviiEditorialReceiptRows(),followOn=chviiContinuousReceiptRows();
+const rows=chviiEditorialReceiptRows(),followOn=chviiContinuousReceiptRows(),ap2=chviiAp2ReceiptRows();
 assert.equal(rows.size,4,"Exactly four signed Chapter VII original rows required");
 assert.equal(followOn.size,4,"Exactly four source-locked continuous-explanation follow-on rows required");
+assert.equal(ap2.size,4,"Exactly four AP2 TeX-normalization source rows required");
 let allTry=0,allHelp=0,allFigures=0,allExamples=0;
 for(const [lessonStr,info]of Object.entries(specs)){
- const n=Number(lessonStr),name="B"+n,row=rows.get(name),delta=followOn.get(name);
- assert(row&&delta,"Missing signed original or follow-on receipt "+name);
+ const n=Number(lessonStr),name="B"+n,row=rows.get(name),delta=followOn.get(name),display=ap2.get(name);
+ assert(row&&delta&&display,"Missing signed editorial, narrative, or AP2 receipt "+name);
+ assert.equal(display.baseline,delta.candidate,name+" AP2 origin must equal exact reviewed PR845 blob");
+ assert.equal(display.moved,info.count,name+" 25 preserved questions in AP2 receipt");
+ assert.equal(display.helps,info.helps,name+" 33 unchanged HELP in AP2 receipt");
  assert.equal(delta.baseline,row.candidate,name+" follow-on baseline must equal immutable approved #842 candidate");
  assert.equal(delta.moved,info.count,name+" revised canonical Vận dụng count");
  assert.equal(delta.helps,info.helps,name+" revised HELP count");
@@ -49,8 +53,8 @@ for(const [lessonStr,info]of Object.entries(specs)){
  assert.equal(old.status,0,"Original published Git source inaccessible "+rel+" "+old.stderr);
  const baseline=old.stdout;
  assert.equal(blob(baseline),row.baseline,name+" published source baseline SHA mismatch");
- assert.equal(blob(bytes),delta.candidate,name+" continuous candidate Markdown differs from additive receipt");
- assert.equal(candidateG10KnowledgeBlob(n),delta.candidate,name+" canonical source router must use latest signed narrative delta");
+ assert.equal(blob(bytes),display.candidate,name+" new equivalent-TeX Markdown differs from signed AP2 receipt");
+ assert.equal(candidateG10KnowledgeBlob(n),display.candidate,name+" canonical source router must use latest signed AP2 source");
  assert.equal(row.moved,info.count,name+" 25 First Try count source receipt");
  assert.equal(row.helps,info.helps,name+" 33 HELP source receipt");
  assert.equal(row.examples,info.examples,name+" example count source receipt");
@@ -68,6 +72,17 @@ for(const [lessonStr,info]of Object.entries(specs)){
   ["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],name+" tab identity");
  const d=s.slice(now,k),knowledge=s.slice(k,e),examples=s.slice(e,m),rem=s.slice(m);
  assert(d.split("\n").slice(1).every(line=>!line.trim()||line.startsWith("    ")),name+" unindented narrative terminates MkDocs Golden tabbed block");
+ const discoveryChunks=[...d.matchAll(/data-thpt-first-try-id="([^"]+)"[^>]*><\/span>([\s\S]*?)(?=    \*\*Em vận dụng\.\*\*)/g)];
+ assert.equal(discoveryChunks.length,info.count,name+" AP2 blocks must keep original canonical Vận dụng identity");
+ const proseOnly=new Set(["THPT-G10-CHVII-TRY06","THPT-G10-CHVII-TRY10","THPT-G10-CHVII-TRY22"]);
+ for(const match of discoveryChunks){
+  const item=match[1],block=match[2],start=(block.match(/\\\(/g)||[]).length,end=(block.match(/\\\)/g)||[]).length;
+  assert.equal(start,end,item+" unbalanced inline TeX");
+  const rendered=[...block.matchAll(/\\\(([\s\S]*?)\\\)/g)];
+  assert.equal(rendered.length,start,item+" TeX delimiters cannot overlap or nest");
+  assert(rendered.every(z=>!z[1].includes("\\(")),item+" nested inline MathJax");
+  if(!proseOnly.has(item))assert(start>0,item+" math-bearing narrative lacks MathJax delimiters");
+ }
  assert(!/Hãy tự giải từng câu Tự thử trước khi mở Đối chiếu/.test(d),name+" redundant global First Try instruction remains");
  const learning=d.slice(d.indexOf("### Ví dụ trực quan"),d.indexOf("### Thuật ngữ, kiến thức và kỹ năng"));
  assert(!/^    #### /m.test(learning),name+" discovery still fragmented into mini subheadings");
@@ -93,7 +108,7 @@ for(const [lessonStr,info]of Object.entries(specs)){
  assert(!/^\s{4}\?\?\? question "Tự mở đáp án sau khi đã tự làm"/m.test(s),name+" non-Golden reveal label");
  assert.notDeepEqual(ids(s.replace('data-thpt-first-try-id="','data-thpt-first-try-id="CORRUPTED-'),"data-thpt-first-try-id"),
   ids(baseline,"data-thpt-first-try-id"),name+" negative item-id mutation failed");
- assert.notEqual(blob(s+" "),delta.candidate,name+" negative source SHA mutation failed");
+ assert.notEqual(blob(s+" "),display.candidate,name+" negative source SHA mutation failed");
  assert.notDeepEqual([...knowledge.replace(info.book[0],"WRONG_S1_TITLE").matchAll(/^    ### ([^\n]+)/gm)].map(x=>x[1]),
   info.book,name+" negative SGK title mutation failed");
  allTry+=info.count;allHelp+=info.helps;allFigures+=info.figures;allExamples+=info.examples;

@@ -20,6 +20,7 @@ on:
       - "prototypes/thpt/ux795/G10_CHVI_B15_B18_EXAMPLE_UX_Q18_DELTA_RECEIPT_20261113.md"
       - "prototypes/thpt/ux795/G10_CHVII_B19_B22_S1_Q18_GOLDEN_ENRICHMENT_RECEIPT_20261113.md"
       - "prototypes/thpt/ux795/G10_CHVII_B19_B22_CONTINUOUS_EXPLANATION_Q18_DELTA_RECEIPT_20261113.md"
+      - "prototypes/thpt/ux795/G10_CHVII_B19_B22_AP2_EQUIVALENT_MATHJAX_DELTA_RECEIPT_20261113.md"
       - "scripts/test-thpt-chvi-math-block-render.cjs"
       - "scripts/test-thpt-chvi-student-notes.cjs"
       - ".github/workflows/ux795-g10-draft-render-qa.yml"
@@ -150,6 +151,9 @@ jobs:
           # Carry forward the exact additive follow-on source receipt, not merely the historical #842 row.
           if [[ -f prototypes/thpt/ux795/G10_CHVII_B19_B22_CONTINUOUS_EXPLANATION_Q18_DELTA_RECEIPT_20261113.md ]]; then
             cp prototypes/thpt/ux795/G10_CHVII_B19_B22_CONTINUOUS_EXPLANATION_Q18_DELTA_RECEIPT_20261113.md integration-main/prototypes/thpt/ux795/
+          fi
+          if [[ -f prototypes/thpt/ux795/G10_CHVII_B19_B22_AP2_EQUIVALENT_MATHJAX_DELTA_RECEIPT_20261113.md ]]; then
+            cp prototypes/thpt/ux795/G10_CHVII_B19_B22_AP2_EQUIVALENT_MATHJAX_DELTA_RECEIPT_20261113.md integration-main/prototypes/thpt/ux795/
           fi
           cp scripts/test-ux795-g10-postmerge-headings.cjs integration-main/scripts/
           (
