@@ -26,7 +26,7 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/chuong-v/";
         "THPT-G10-CHV-TRY"+String(first+i).padStart(2,"0")),
         "B"+n+" canonical original First Try ID/placement/order");
       const tab=article.locator(".tabbed-set").first().locator(".tabbed-labels label")
-        .filter({hasText:/^Kiến thức SGK$/});
+        .filter({hasText:/^Khám phá kiến thức$/});
       await tab.click();
       const answers=article.locator("details.question");
       assert.equal(await answers.count(),count,"B"+n+" one reviewed voluntary answer per First Try");
