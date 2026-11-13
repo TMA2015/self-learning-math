@@ -5,7 +5,7 @@
 ## Nguồn và tính bất biến
 
 - SGK Toán 11 Tập Một ChIV B10–B14 source S1 receipt from PR #705 (source blob `e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b`), SBT source references inherited, no claim of new physical PDF review.
-- Topic R01 learner source: `Temp_TOPIC15_SPATIAL_PARALLELISM_R01_FULL_22_OUTCOMES_20261113.md`; model source R01 `Temp_THPT_TOPIC15_LINE_PLANE_RELATION_R01_20261113.html` — source blobs to be confirmed after GitHub commit.
+- Topic R01 learner source: `Temp_TOPIC15_SPATIAL_PARALLELISM_R01_FULL_22_OUTCOMES_20261113.md`; model source R01 `Temp_THPT_TOPIC15_LINE_PLANE_RELATION_R01_20261113.html` — actual Git blobs `03476cc0305a980aa97a571b2f86a91dfc11813b` (learner) / `3f3c75765b6cddcaa53994027c45e79701d4d840` (model).
 - Academic reviewer history of SGK **not automatically granted** to new Topic R01. Self-review is not external NotebookLM PASS.
 
 ## QA đã thực thi trên bản làm việc
@@ -56,3 +56,9 @@
 - Không có quyền merge/deploy/đổi website/Firebase/student data; private RD1 giữ riêng.
 
 **NEXT:** hoàn thiện Q18 author audit theo 22 outcome và xác nhận taxonomy CĐ15; khi P0/P1=0 và source-lock thật thì AUTHORING_PASS=CONTENT_READY cùng một pass V2/ready/REGISTER, sau đó dừng tại handoff.
+## Exact Git source custody (13/11/2026)
+
+- `ACADEMIC_SOURCE_BLOB=03476cc0305a980aa97a571b2f86a91dfc11813b`
+- `INTERACTIVE_MODEL_BLOB=3f3c75765b6cddcaa53994027c45e79701d4d840`
+- `MODEL_ID=SLM-TOP15-LINE-PLANE-R00` (source version R01; no duplicated model ID)
+- `HANDOFF_STATUS=NOT_CREATED` / `READY_MANIFEST=NOT_CREATED` / `REGISTER=UNCHANGED` pending full source Q18
