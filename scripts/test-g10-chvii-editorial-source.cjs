@@ -70,7 +70,7 @@ for(const [lessonStr,info]of Object.entries(specs)){
  assert(!/Hãy tự giải từng câu Tự thử trước khi mở Đối chiếu/.test(d),name+" redundant global First Try instruction remains");
  const learning=d.slice(d.indexOf("### Ví dụ trực quan"),d.indexOf("### Thuật ngữ, kiến thức và kỹ năng"));
  assert(!/^    #### /m.test(learning),name+" discovery still fragmented into mini subheadings");
- assert(!/\\*\\*(?:Kiến thức tiền đề|Bản chất trước công thức|Hướng dẫn đọc hình|Vì sao chọn phương pháp và giới hạn|Tại sao là D2 mới):\\*\\*/.test(learning),name+" internal PED labels still rendered to learners");
+ assert(!/\*\*(?:Kiến thức tiền đề|Bản chất trước công thức|Hướng dẫn đọc hình|Vì sao chọn phương pháp và giới hạn|Tại sao là D2 mới):\*\*/.test(learning),name+" internal PED labels still rendered to learners");
  assert.deepEqual([...d.matchAll(/^    ### ([^\n]+)/gm)].map(x=>x[1]),
   ["Cùng tìm hiểu","Ví dụ trực quan","Thuật ngữ, kiến thức và kỹ năng"],name+" Discovery stages");
  assert.deepEqual([...knowledge.matchAll(/^    ### ([^\n]+)/gm)].map(x=>x[1]),info.book,
