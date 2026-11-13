@@ -909,11 +909,11 @@ Hãy nêu lí do chọn phép toán (cộng vectơ, nhân số, tích vô hướ
 
 <!-- ITEM_ID: THPT-TOP18-P01; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP18-O01 -->
 
-Cho ba điểm P,Q,R với PQ=3 cm và QR=2 cm cùng trên một tia. Độ dài PR? Nếu P=Q, vectơ PQ có được xem là vectơ đơn vị không?
+Cho ba điểm P, Q, R thẳng hàng **theo thứ tự P–Q–R** (Q nằm giữa P và R), PQ=3 cm và QR=2 cm. Tính PR. Trong trường hợp riêng P=Q, vectơ PQ có phải vectơ đơn vị không?
 
 <details><summary>Tự mở lời giải</summary>
 
-PR=5 cm nhờ cùng hướng; vectơ PQ là vectơ-không nên không có độ dài 1, không phải vectơ đơn vị.
+Vì Q nằm giữa P và R nên PR=PQ+QR=3+2=5 cm. Ở trường hợp riêng P=Q thì vectơ PQ là vectơ-không, độ dài bằng 0 nên không phải vectơ đơn vị.
 
 **D6:** Không suy hướng từ nét vẽ, kiểm điểm đầu/cuối; vectơ-không không được đưa vào công thức góc.
 
@@ -1567,7 +1567,7 @@ Tâm C=(1,2,0), AB=√(4+16)=2√5, R=√5. Phương trình (x−1)²+(y−2)²+
 
 <!-- ITEM_ID: THPT-TOP18-W06; ROLE: TOPIC_WRITTEN; PRIMARY_OUTCOME: TOP18-O22; RUBRIC_MAX: 4 -->
 
-Đường dây bay theo d(t)=(2+t,−1,t), t thực, cắt mặt phẳng P:x+y+z=3. Tìm giao điểm và tính khoảng cách từ điểm M=(0,0,0) đến P.
+Một đường bay được mô tả bởi d(t)=(2+t,−1,t), t thực; nó cắt mặt phẳng P:x+y+z=3. Tìm giao điểm và tính khoảng cách từ điểm M=(0,0,0) đến P.
 
 <details><summary>Tự mở lời giải và rubric /4</summary>
 
