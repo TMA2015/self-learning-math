@@ -65,7 +65,7 @@ One fully independent Topic CĐ14 with exactly **Kiến thức / Luyện tập /
 - [ ] R3_CLEAN_STUDENT_UI — Golden R4, tabs, MathJax and three SVG actual browser/mobile not QAed.
 - [ ] R4_ASSESSMENT_SAFETY — final-submit gating, no key/hint/correctness/AI before Final Submit, no Mastery writes must be runtime QAed.
 - [ ] R5_OWNER_APPROVAL — owner has not authorized merged/deployed CĐ14 exact candidate.
-- [ ] P1_DEPLOY_RECEIPT — no site deploy.
+- [ ] P1_DEPLOY_RECEIPT — No website deployment performed by AUTHORING; no production deploy receipt or P1 authorization exists for CĐ14.
 - [ ] P2_DEVICE_UAT — no real iPhone/iPad Safari testing.
 
 ## AP — RELEASE ONLY
