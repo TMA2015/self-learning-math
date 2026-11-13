@@ -6,6 +6,7 @@ on:
       - "docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js"
       - "prototypes/thpt/ux795/G10_CHVII_B19_B22_S1_Q18_GOLDEN_ENRICHMENT_RECEIPT_20261113.md"
       - "prototypes/thpt/ux795/G10_CHVII_B19_B22_CONTINUOUS_EXPLANATION_Q18_DELTA_RECEIPT_20261113.md"
+      - "prototypes/thpt/ux795/G10_CHVII_B19_B22_AP2_EQUIVALENT_MATHJAX_DELTA_RECEIPT_20261113.md"
       - "scripts/thpt-q18-g10-source-receipt.cjs"
       - "scripts/test-g10-chvii-editorial-source.cjs"
       - "scripts/test-g10-chvii-s1-golden-browser.cjs"
