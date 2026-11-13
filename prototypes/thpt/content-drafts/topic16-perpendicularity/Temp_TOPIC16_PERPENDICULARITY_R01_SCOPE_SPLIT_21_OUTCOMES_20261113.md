@@ -16,7 +16,13 @@
 
 ### 1. B22 · Hai đường thẳng vuông góc
 
-**Đọc hình:** Dùng hình G11 ChVII B22 cùng nguồn SGK `docs/assets/images/thpt/FIG-G11-CHVII-B22-01_R00.svg` (Git blob `5f2d23adb6f947064312d04d67ce5a5bb2d1ff48`). Hình cho thấy mối liên hệ phương–giao tuyến–đường chiếu; nét khuất chỉ biểu diễn vật thể, không chứng minh góc hoặc độ dài. Nếu không tải được hình, dựa vào tên các điểm và giả thiết được phát biểu ngay trong ví dụ.
+**Đọc hình — B22:**
+
+![Hai đường a,b chéo nhau; tại O dựng a′ song song a và b′ song song b, góc giữa hai phương bằng 90°](../../../../docs/assets/images/thpt/FIG-G11-CHVII-B22-01_R00.svg)
+
+Quan sát đường **a** và **b** ở hai vị trí không cắt nhau; đừng cố nối đầu mút để lấy góc. Theo các dấu **a′∥a**, **b′∥b**, đưa hai phương về điểm **O** và đọc góc tại O. Nếu thay O bằng điểm khác thì hai phương không đổi, nên góc không đổi.
+
+<small>Hình nguồn SGK public bất biến: `docs/assets/images/thpt/FIG-G11-CHVII-B22-01_R00.svg`, Git blob `5f2d23adb6f947064312d04d67ce5a5bb2d1ff48`. Đọc nhãn và giả thiết; không suy độ dài bằng đo phối cảnh. Nếu không hiển thị SVG, lời dẫn ở trên vẫn tự đủ để lập luận.</small>
 
 #### 1.1. Góc giữa hai đường trong không gian là góc nhỏ giữa hai đường cùng đi qua một điểm và lần lượt song song với hai đường đã cho; vì thế góc luôn trong [0°,90°]
 
@@ -105,7 +111,13 @@ Chưa; cần chứng cứ hình học về phương hoặc góc thật.
 
 ### 2. B23 · Đường thẳng vuông góc mặt phẳng
 
-**Đọc hình:** Dùng hình G11 ChVII B23 cùng nguồn SGK `docs/assets/images/thpt/FIG-G11-CHVII-B23-01_R00.svg` (Git blob `b53b65704f9830e1c97b533bac0e79a0b56761b6`). Hình cho thấy mối liên hệ phương–giao tuyến–đường chiếu; nét khuất chỉ biểu diễn vật thể, không chứng minh góc hoặc độ dài. Nếu không tải được hình, dựa vào tên các điểm và giả thiết được phát biểu ngay trong ví dụ.
+**Đọc hình — B23:**
+
+![Cột AH vuông góc hai đường AB,AD cắt tại A trong mặt P nên AH vuông góc mặt P](../../../../docs/assets/images/thpt/FIG-G11-CHVII-B23-01_R00.svg)
+
+Chỉ hai cạnh **AB** và **AD** trong mặt **(P)**, chúng cắt nhau tại **A**. Cột **AH** vuông góc với cả hai: không phải “hai góc vuông là đủ” một cách máy móc, mà vì AB,AD tạo hai hướng không song song cùng nằm trong một mặt. Nếu hai cạnh kiểm tra song song thì không được suy AH⊥(P).
+
+<small>Hình nguồn SGK public bất biến: `docs/assets/images/thpt/FIG-G11-CHVII-B23-01_R00.svg`, Git blob `b53b65704f9830e1c97b533bac0e79a0b56761b6`. Đọc nhãn và giả thiết; không suy độ dài bằng đo phối cảnh. Nếu không hiển thị SVG, lời dẫn ở trên vẫn tự đủ để lập luận.</small>
 
 #### 2.1. Đường d vuông góc mặt phẳng (P) nghĩa là d vuông góc **mọi đường thẳng** nằm trong (P)
 
@@ -212,9 +224,15 @@ Chưa; cần thêm một đường cắt AB trong nền (ví dụ AD).
 
 ### 3. B24 · Phép chiếu vuông góc và góc đường–mặt
 
-**Đọc hình:** Dùng hình G11 ChVII B24 cùng nguồn SGK `docs/assets/images/thpt/FIG-G11-CHVII-B24-01_R00.svg` (Git blob `c98d7df30b87c339336636e00322816a4099681b`). Hình cho thấy mối liên hệ phương–giao tuyến–đường chiếu; nét khuất chỉ biểu diễn vật thể, không chứng minh góc hoặc độ dài. Nếu không tải được hình, dựa vào tên các điểm và giả thiết được phát biểu ngay trong ví dụ.
+**Đọc hình — B24:**
 
-**Khám phá tương tác:** Mô hình `SLM-TOP16-RAMP-ANGLE-R00` (nguồn HTML đi kèm, chỉ là PUBLIC_DISCOVERY_NO_MASTERY) điều khiển độ cao và khoảng ngang của tam giác vuông. Dự đoán góc/độ dài trước khi kéo, quan sát hình thay đổi rồi kiểm bằng Pitago và sin/tan. Mô hình không thay chứng minh định lí ba đường vuông góc.
+![Đoạn AM dốc, AH vuông góc nền P, HM là hình chiếu; góc AMH là góc đường với nền](../../../../docs/assets/images/thpt/FIG-G11-CHVII-B24-01_R00.svg)
+
+Tìm **A** ở cao, **H** là chân AH⊥(P), **M** ở nền. Đường xiên **AM** chiếu thành **HM**, do đó góc cần đo là **AMH tại M**, không phải góc ở A. Tam giác AHM vuông tại H nên khi biết AH,AM có thể dùng sin(góc AMH)=AH/AM; không lấy nét vẽ phối cảnh làm phép đo.
+
+<small>Hình nguồn SGK public bất biến: `docs/assets/images/thpt/FIG-G11-CHVII-B24-01_R00.svg`, Git blob `c98d7df30b87c339336636e00322816a4099681b`. Đọc nhãn và giả thiết; không suy độ dài bằng đo phối cảnh. Nếu không hiển thị SVG, lời dẫn ở trên vẫn tự đủ để lập luận.</small>
+
+**Khám phá tương tác:** Mô hình `SLM-TOP16-RAMP-ANGLE-R00` (nguồn HTML R01 `Temp_THPT_TOPIC16_RAMP_ANGLE_R01_SCOPE_CORRECTED_20261113.html`, chỉ là PUBLIC_DISCOVERY_NO_MASTERY) điều khiển độ cao và khoảng ngang của tam giác vuông. Dự đoán góc/độ dài trước khi kéo, quan sát hình thay đổi rồi kiểm bằng Pitago và sin/tan. Mô hình không thay chứng minh định lí ba đường vuông góc.
 
 #### 3.1. Hình chiếu vuông góc H của A trên (P) là chân duy nhất của AH⊥(P)
 
@@ -323,7 +341,13 @@ Có: BH là hình chiếu của AB lên (P); dùng định lí ba đường vuô
 
 ### 4. B25 · Hai mặt phẳng vuông góc và hình khối đặc biệt
 
-**Đọc hình:** Dùng hình G11 ChVII B25 cùng nguồn SGK `docs/assets/images/thpt/FIG-G11-CHVII-B25-01_R00.svg` (Git blob `3f6112a7b12f1829ee2249b979d45f1f5370fc66`). Hình cho thấy mối liên hệ phương–giao tuyến–đường chiếu; nét khuất chỉ biểu diễn vật thể, không chứng minh góc hoặc độ dài. Nếu không tải được hình, dựa vào tên các điểm và giả thiết được phát biểu ngay trong ví dụ.
+**Đọc hình — B25:**
+
+![Hai nửa mặt phẳng chung bờ Delta, tiết diện tạo hai tia OU và OV vuông góc Delta, góc UOV đo nhị diện](../../../../docs/assets/images/thpt/FIG-G11-CHVII-B25-01_R00.svg)
+
+Trước hết chỉ **giao tuyến Δ**, sau đó xem hai tia **OU, OV** cùng vuông góc Δ tại **O** nhưng nằm trên hai mặt khác nhau. **UOV** là góc phẳng của nhị diện đã chọn, có thể tù. Khi câu hỏi nói góc **giữa hai mặt phẳng**, lấy góc không tù giữa hai đường thẳng chứa OU và OV, không tùy tiện giữ góc nhị diện lớn hơn 90°.
+
+<small>Hình nguồn SGK public bất biến: `docs/assets/images/thpt/FIG-G11-CHVII-B25-01_R00.svg`, Git blob `3f6112a7b12f1829ee2249b979d45f1f5370fc66`. Đọc nhãn và giả thiết; không suy độ dài bằng đo phối cảnh. Nếu không hiển thị SVG, lời dẫn ở trên vẫn tự đủ để lập luận.</small>
 
 #### 4.1. Góc giữa hai **mặt phẳng** được đo bằng góc nhỏ của hai đường lần lượt nằm trong hai mặt và cùng vuông góc giao tuyến; kết quả thuộc [0°,90°] khi xét mặt phẳng không định hướng
 
