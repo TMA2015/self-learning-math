@@ -1,4 +1,4 @@
-# CĐ09 — Đạo hàm và Ý nghĩa vi phân · AUTHORING CONTENT_READY R01
+# CĐ09 — Đạo hàm và Ý nghĩa vi phân · AUTHORING CONTENT_READY R04 (PACKET_ID R01)
 
 PACKET_ID: THPT-TOPIC09-DERIVATIVE-MEANING-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -51,7 +51,7 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
 - [x] A1_SOURCE_SNAPSHOT — learner source Git blob 68fe5b8a3ded75b6f774b4685655487d9b4bdff9, signed Q18 author receipt bc2aa70ad7c46d678889f0ed750c79201b16dc58, original71 index 3c025ce2dfb8e16743873ac2b3f35bfb37c27ef8, NEW37 bank d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a, one V2 handoff 496c9a66c75f8cd103b58b2f747956e72eafa518, four SVG exact readback SHA.
 - [x] A2_SGK_SBT_SCOPE — archived original scanned publisher SGK KNTT G11 Tập2 ChIX B31 printed81–87, B32 88–94, B33 95–96, end97–98; SBT B31 54–57, B32 58–60, B33 61–62, end63–65, answers111–116; O32 differential formally labelled Topic extension, not SGK Core.
-- [x] A3_NOTEBOOKLM_VERDICT — Q18 `AUTHOR_SELF_VERIFIED` v3.1.0 direct 62 QA assertions+7 strengthened math guards; **NOT independent NEW Topic NotebookLM PASS**, historical independent SGK R00 only for unchanged source, P0/P1=0 in AUTHORING scope.
+- [x] A3_Q18_AUTHOR_SELF_QA — R04 `AUTHOR_SELF_VERIFIED` theo chuẩn Q01–Q18 v3.1.0: source `68fe5b8a3ded75b6f774b4685655487d9b4bdff9`, receipt `bc2aa70ad7c46d678889f0ed750c79201b16dc58`, kiểm 32/32 outcome, 37/37 câu mới (bao gồm P23 sửa đúng tập xác định), bốn SVG và D6; P0/P1=0 theo phạm vi AUTHORING. NotebookLM độc lập chỉ từng review nguồn SGK G11 ChIX lịch sử, không cấp PASS cho R04.
 - [x] A4_ITEM_OUTCOME_IDS — 32 lesson IDs, 32 outcome IDs, 108 unique PUBLIC item IDs in single item-outcome-role V2 matrix, 32 PUBLIC Self Check placements reuse new P01–P32 rather than adding IDs.
 - [x] A5_D1_D6_SCOPE — 32 WHY/prerequisites/meaning/reasoned worked/first-try/D6 units, five original Written /7 with detailed rubrics, four original SVG title/desc and guided reading, three lab proposals SPEC_ONLY.
 - [x] A6_DELTA_RESOLVED — new CĐ09 complete Topic/NEW37 bank is DELTA_C_ACADEMIC_MATERIAL self-Q18 verified on locked SHA. Original reviewed G11 SGK ChIX source unchanged, no P0/P1 author blocker.
