@@ -23,10 +23,9 @@
 
     Khi nhìn một tuyến đường trên bản đồ, chỉ biết một điểm mà đường đi qua thì chưa đủ; ta còn phải biết đường đi theo hướng nào. Vectơ chỉ phương nằm dọc tuyến đường, còn vectơ pháp tuyến hướng vuông góc với tuyến đường. Hai hướng này có thể được nhận ra bằng tích vô hướng: với hai vectơ khác vectơ không, tích vô hướng bằng 0 chính là dấu hiệu chúng vuông góc. Một đường thẳng có thể nhận nhiều vectơ chỉ phương hoặc pháp tuyến, miễn là chúng cùng hướng tương ứng và không bằng vectơ không.
 
-    Hãy hình dung một mũi tên chạy theo đường và một mũi tên dựng vuông góc với nó. Nếu pháp tuyến là (n=(a,b)
-e(0,0)), ta có thể chọn chỉ phương (u=(-b,a)): tích vô hướng (ncdot u=a(-b)+ba=0). Như vậy, cách đổi vectơ xuất phát từ quan hệ vuông góc, không phải từ một quy tắc đổi dấu học thuộc.
+    Hãy hình dung một mũi tên chạy theo đường và một mũi tên dựng vuông góc với nó. Nếu pháp tuyến là (n=(a,b)≠(0,0)), ta có thể chọn chỉ phương (u=(-b,a)): tích vô hướng (n· u=a(-b)+ba=0). Như vậy, cách đổi vectơ xuất phát từ quan hệ vuông góc, không phải từ một quy tắc đổi dấu học thuộc.
 
-        **Em vận dụng.** Cho n=(2,3) là pháp tuyến của d. Vectơ u=(-3,2) có phải một chỉ phương của d không? Nêu phép kiểm.
+    **Em vận dụng.** Cho n=(2,3) là pháp tuyến của d. Vectơ u=(-3,2) có phải một chỉ phương của d không? Nêu phép kiểm.
 
     ??? question "Đối chiếu"
 
@@ -44,12 +43,11 @@ e(0,0)), ta có thể chọn chỉ phương (u=(-b,a)): tích vô hướng (ncdo
 
     <span id="thpt-g10-chvii-try02" data-thpt-first-try-id="THPT-G10-CHVII-TRY02" data-outcome-id="G10-B19-GENERAL_POINT" data-thpt-help-ref="HELP-G10-CHVII-TRY02"></span>
 
-    Từ hướng vuông góc ấy, ta có thể viết một điều kiện xác định toàn bộ các điểm trên đường thẳng. Giả sử đường đi qua (A(x_0,y_0)) và có pháp tuyến (n=(a,b)
-e(0,0)). Với một điểm bất kỳ (M(x,y)), vectơ dịch chuyển (AM=(x-x_0,y-y_0)) phải vuông góc với (n) nếu (M) nằm trên đường. Vì thế (ncdot AM=0), hay (a(x-x_0)+b(y-y_0)=0).
+    Từ hướng vuông góc ấy, ta có thể viết một điều kiện xác định toàn bộ các điểm trên đường thẳng. Giả sử đường đi qua (A(x_0,y_0)) và có pháp tuyến (n=(a,b)≠(0,0)). Với một điểm bất kỳ (M(x,y)), vectơ dịch chuyển (AM=(x-x_0,y-y_0)) phải vuông góc với (n) nếu (M) nằm trên đường. Vì thế (n· AM=0), hay (a(x-x_0)+b(y-y_0)=0).
 
     Trong hình dung hình học, (M) trượt dọc đường qua (A), còn (n) luôn vuông góc với hướng trượt; hình chiếu của (AM) lên (n) bằng 0. Khai triển đẳng thức trên cho phương trình tổng quát, rồi thử lại tọa độ (A) để kiểm tra. Đừng chọn (n=(0,0)), vì khi ấy phương trình không xác định một đường thẳng.
 
-        **Em vận dụng.** Đường thẳng qua A(1,3), pháp tuyến n=(2,-1) có phương trình tổng quát nào?
+    **Em vận dụng.** Đường thẳng qua A(1,3), pháp tuyến n=(2,-1) có phương trình tổng quát nào?
 
     ??? question "Đối chiếu"
 
@@ -67,12 +65,11 @@ e(0,0)). Với một điểm bất kỳ (M(x,y)), vectơ dịch chuyển (AM=(x-
 
     <span id="thpt-g10-chvii-try03" data-thpt-first-try-id="THPT-G10-CHVII-TRY03" data-outcome-id="G10-B19-PARAMETRIC" data-thpt-help-ref="HELP-G10-CHVII-TRY03"></span>
 
-    Một cách khác để mô tả đường thẳng là xuất phát từ (A), rồi đi những đoạn dài ngắn tùy ý theo một vectơ chỉ phương (u
-e(0,0)). Nhân vectơ với số thực (t) tạo độ dời (t u), nên vị trí mới có dạng (M=A+t u). Khi (t=0), ta ở (A); khi (t=1), ta đi thêm một vectơ (u); với (t<0), ta đi ngược hướng.
+    Một cách khác để mô tả đường thẳng là xuất phát từ (A), rồi đi những đoạn dài ngắn tùy ý theo một vectơ chỉ phương (u≠(0,0)). Nhân vectơ với số thực (t) tạo độ dời (t u), nên vị trí mới có dạng (M=A+t u). Khi (t=0), ta ở (A); khi (t=1), ta đi thêm một vectơ (u); với (t<0), ta đi ngược hướng.
 
-    Đó là ý nghĩa của phương trình tham số (x=x_A+t u_x, y=y_A+t u_y) với (tinmathbb R). Chữ (t) chỉ là một tham số quét các vị trí trên đường, không nhất thiết là thời gian và cũng không phải một tọa độ. Khi lập phương trình, thử hai giá trị (t=0,1) là cách kiểm nhanh điểm xuất phát và hướng đi.
+    Đó là ý nghĩa của phương trình tham số (x=x_A+t u_x, y=y_A+t u_y) với (t∈ℝ). Chữ (t) chỉ là một tham số quét các vị trí trên đường, không nhất thiết là thời gian và cũng không phải một tọa độ. Khi lập phương trình, thử hai giá trị (t=0,1) là cách kiểm nhanh điểm xuất phát và hướng đi.
 
-        **Em vận dụng.** Viết phương trình tham số đường thẳng qua A(1,-1), chỉ phương u=(-2,3).
+    **Em vận dụng.** Viết phương trình tham số đường thẳng qua A(1,-1), chỉ phương u=(-2,3).
 
     ??? question "Đối chiếu"
 
@@ -90,12 +87,11 @@ e(0,0)). Nhân vectơ với số thực (t) tạo độ dời (t u), nên vị t
 
     <span id="thpt-g10-chvii-try04" data-thpt-first-try-id="THPT-G10-CHVII-TRY04" data-outcome-id="G10-B19-TWO_POINTS" data-thpt-help-ref="HELP-G10-CHVII-TRY04"></span>
 
-    Nếu bản đồ cho hai điểm (A) và (B) phân biệt, ta chưa cần đo góc hay đo độ dài để tìm hướng: vectơ (AB=(x_B-x_A,y_B-y_A)) đã nằm dọc đường cần dựng. Do (A
-e B), vectơ này khác 0 và có thể dùng làm chỉ phương. Chọn một vectơ pháp tuyến vuông góc với (AB), rồi dùng điều kiện (ncdot AM=0) để xác định đường qua (A).
+    Nếu bản đồ cho hai điểm (A) và (B) phân biệt, ta chưa cần đo góc hay đo độ dài để tìm hướng: vectơ (AB=(x_B-x_A,y_B-y_A)) đã nằm dọc đường cần dựng. Do (A≠ B), vectơ này khác 0 và có thể dùng làm chỉ phương. Chọn một vectơ pháp tuyến vuông góc với (AB), rồi dùng điều kiện (n· AM=0) để xác định đường qua (A).
 
     Có thể hình dung mũi tên (AB) nối hai mốc và pháp tuyến dựng vuông góc với mũi tên ấy. Sau khi viết phương trình, hãy thế tọa độ cả (A) lẫn (B) để kiểm tra. Nếu hai điểm trùng nhau, không có hướng (AB) khác 0; một điểm duy nhất không xác định được một đường thẳng duy nhất.
 
-        **Em vận dụng.** Cho A(-1,2), B(2,5). Viết một phương trình tổng quát của đường AB.
+    **Em vận dụng.** Cho A(-1,2), B(2,5). Viết một phương trình tổng quát của đường AB.
 
     ??? question "Đối chiếu"
 
@@ -117,7 +113,7 @@ e B), vectơ này khác 0 và có thể dùng làm chỉ phương. Chọn một 
 
     Trên một hình phác, một điểm nằm sát nét vẽ vẫn có thể không thuộc đường; phép thế mới cho kết luận chính xác. Hãy giữ nguyên dấu của từng hạng tử khi thay tọa độ, và thử riêng từng điểm thay vì suy từ cảm giác gần hay xa.
 
-        **Em vận dụng.** Với d: 2x-3y+1=0, M(1,1) và N(2,1) điểm nào thuộc d?
+    **Em vận dụng.** Với d: 2x-3y+1=0, M(1,1) và N(2,1) điểm nào thuộc d?
 
     ??? question "Đối chiếu"
 
@@ -139,7 +135,7 @@ e B), vectơ này khác 0 và có thể dùng làm chỉ phương. Chọn một 
 
     Còn quan hệ vuông góc là chuyện hướng, không phụ thuộc vào vị trí giao. Mỗi đường có một vectơ pháp tuyến; nếu tích vô hướng hai pháp tuyến bằng 0 thì hai đường vuông góc. Trên hình, hãy phân biệt dấu chấm tại giao điểm với dấu góc vuông: một phép tính tìm vị trí, phép tính còn lại kiểm hướng.
 
-        **Em vận dụng.** Hai đường d1: x+y=4, d2: x-y=2 gặp nhau ở đâu và có vuông góc không?
+    **Em vận dụng.** Hai đường d1: x+y=4, d2: x-y=2 gặp nhau ở đâu và có vuông góc không?
 
     ??? question "Đối chiếu"
 
@@ -162,7 +158,7 @@ e x_2), ta tìm (m=(y_2-y_1)/(x_2-x_1)), rồi dùng một điểm để xác đ
 
     Trên biểu đồ, (m) tương ứng với độ tăng theo trục đứng chia cho độ tăng theo trục ngang; mỗi trục cần ghi đúng đơn vị. Giá trị (b) là mức dự đoán khi (x=0). Mô hình đường thẳng chỉ là một giả thiết phù hợp trong miền xét, nên sau khi kiểm lại hai điểm dữ liệu, cần nói rõ giới hạn của việc dự đoán xa hơn.
 
-        **Em vận dụng.** Giá trị V theo thời gian t (t≥0) đi qua (0,5) và (2,9), giả sử tuyến tính. Lập V(t) và tính V(3).
+    **Em vận dụng.** Giá trị V theo thời gian t (t≥0) đi qua (0,5) và (2,9), giả sử tuyến tính. Lập V(t) và tính V(3).
 
     ??? question "Đối chiếu"
 
