@@ -19,7 +19,7 @@ REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC05_CONTINUOUS_R04_AUTHO
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC05_CONTINUOUS_R04_AUTHOR_SELF_QA_RECEIPT_20261113.md
 REVIEW_RECEIPT_BLOB: 82a7c3dd772ce6e0751291e71a17cf28f4cb56b6
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC05-FUNCTION-GRAPH-TRANSFORMS-FULL-R04_HANDOFF_V2_20261113.md
-AUTHOR_HANDOFF_BLOB: 8e9960067eed5fb73fca4c5532c0434d3adaf287
+AUTHOR_HANDOFF_BLOB: c63ac81cde962edad34542f8fae78ee52b51ae1a
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC05_GRAPH_TRANSFORMS_NEW38_PUBLIC_CANONICAL_R01_20261112.md
 PUBLIC_CANONICAL_BANK_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39
 HISTORIC_IMMUTABLE_R18_BLOB: 2340ea4975b37a457363eea59dd617070934983c
@@ -45,7 +45,7 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — CĐ05 canonical student source Git blob 04f532661d014ee011e5d2f61a3dca9578a101d4, receipt author Q18 82a7c3dd772ce6e0751291e71a17cf28f4cb56b6, one NEW38 bank blob ab878f1a18dea87872449a79c27b75a612d81b39 and exactly one V2 handoff 8e9960067eed5fb73fca4c5532c0434d3adaf287; original PR #782 unchanged.
+- [x] A1_SOURCE_SNAPSHOT — CĐ05 canonical student source Git blob 04f532661d014ee011e5d2f61a3dca9578a101d4, receipt author Q18 82a7c3dd772ce6e0751291e71a17cf28f4cb56b6, one NEW38 bank blob ab878f1a18dea87872449a79c27b75a612d81b39 and exactly one V2 handoff c63ac81cde962edad34542f8fae78ee52b51ae1a; original PR #782 unchanged.
 - [x] A2_SGK_SBT_SCOPE — KNTT S1: SGK G10 T2 B15 printed4–10/PDF5–11, B16 printed11–18/PDF12–19; SBT G10 T2 B15 printed3–9/PDF4–10, B16 printed10–15/PDF11–16. G11 T1 B03 printed22–30/PDF23–31 anchors parity/periodicity. Owner historical original visual SHA receipts 07/11, no new PDF scan; general graph transforms are Topic enrichment.
 - [x] A3_NOTEBOOKLM_VERDICT — Original broad R18 #782 48-outcome academic/PED and owner-held RD1 historic PASS scoped to source SHA 2340ea4975b37a457363eea59dd617070934983c. New CĐ05 17 modules/38 PUBLIC items and three figures Q18 AUTHOR_SELF_VERIFIED 110/110 documented; not a new independent NotebookLM PASS.
 - [x] A4_ITEM_OUTCOME_IDS — 17 independent Topic learning outcomes and 38 new unique PUBLIC item IDs (34 Practice+4 Written), min2 IDs/outcome; 4 new Written 7 point rubrics unique per ID, 17 Self Check PUBLIC reuse placements do not duplicate questions.
