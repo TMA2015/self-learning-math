@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CĐ17 · Thể tích ba khối</title>
+<style>
+body{margin:0;background:#f4f7fc;color:#1a3049;font:16px/1.55 system-ui,sans-serif;padding:12px}
+main{max-width:850px;margin:auto;background:white;border:1px solid #c9d7e9;border-radius:12px;padding:18px}
+h1{font-size:1.35rem;margin:0 0 8px}.layout{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{display:block;font-weight:600;margin-top:12px}input{width:100%;accent-color:#2261ab}
+.box{border:1px solid #d1ddeb;border-radius:10px;padding:12px;margin-top:8px}
+.box strong{display:block;color:#1558a5;font-size:1.4rem}
+svg{width:100%;height:auto;background:#f7faff;border-radius:8px}
+button{border:1px solid #a9bad4;border-radius:8px;background:#e9f0fa;padding:9px 12px;margin-top:12px;cursor:pointer}
+small{display:block;color:#3e516a}.note{border-left:3px solid #3670b1;padding-left:12px}
+@media(max-width:650px){.layout{grid-template-columns:1fr}main{padding:12px}}
+</style></head><body><main>
+<h1>CĐ17 · Từ lăng trụ đến chóp và chóp cụt</h1>
+<p class="note">Giữ nguyên diện tích đáy lớn và chiều cao, thay đổi diện tích đáy nhỏ. Khi đáy nhỏ co về một điểm, chóp cụt tiến về chóp; khi hai đáy bằng nhau, nó tiến về lăng trụ.</p>
+<div class="layout">
+<section>
+<label for="a">Cạnh đáy lớn a: <output id="av">6 cm</output></label><input id="a" type="range" min="2" max="10" value="6" step="1">
+<label for="h">Chiều cao vuông góc h: <output id="hv">4 cm</output></label><input id="h" type="range" min="1" max="12" value="4" step="1">
+<label for="k">Tỉ lệ cạnh đáy nhỏ k: <output id="kv">0,50</output></label><input id="k" type="range" min="0" max="1" value=".5" step=".05">
+<button id="reset" type="button">Đặt lại</button>
+<p class="note" id="reason" role="status">Hai đáy đồng dạng và song song; h đo vuông góc.</p>
+</section>
+<section>
+<svg viewBox="0 0 360 240" role="img" aria-labelledby="title desc"><title id="title">Sơ đồ chóp cụt vuông</title><desc id="desc">Hai đáy song song, chiều cao vuông góc. Hình mang tính gợi ý, không dùng để đo chiều dài.</desc>
+<polygon id="base" fill="#dae9fa" stroke="#2671b7" stroke-width="2" points="60,205 275,205 305,176 90,176"/>
+<polygon id="front" fill="#8fb9e9" stroke="#2671b7" stroke-width="2" points="60,205 275,205 240,80 100,80"/>
+<polygon id="right" fill="#5f98d6" stroke="#2671b7" stroke-width="2" points="275,205 305,176 270,60 240,80"/>
+<polygon id="top" fill="#e5f1ff" stroke="#2671b7" stroke-width="2" points="100,80 240,80 270,60 130,60"/>
+<path id="altitude" d="M180 190 V76" stroke="#a85724" stroke-width="2" stroke-dasharray="5 5"/>
+<text x="194" y="136" font-size="18" fill="#8b4419">h</text></svg>
+<div class="box">Lăng trụ V=Sh<strong id="prism">144 cm³</strong></div>
+<div class="box">Chóp V=Sh/3<strong id="pyramid">48 cm³</strong></div>
+<div class="box">Chóp cụt V=h(S+S′+√SS′)/3<strong id="frustum">84 cm³</strong></div>
+</section></div>
+<p id="proof" aria-live="polite">S=36 cm², S′=9 cm², √(SS′)=18 cm².</p>
+<small>Khám phá công khai. Không lưu điểm hoặc Mastery; hình phối cảnh không thay lập luận về chiều cao vuông góc.</small>
+</main><script>
+(function(){"use strict";function el(x){return document.getElementById(x)}var a=el("a"),h=el("h"),k=el("k");
+function fmt(x){return Number(x.toFixed(2)).toLocaleString("vi-VN",{maximumFractionDigits:2})}
+function poly(id,arr){el(id).setAttribute("points",arr.map(function(p){return Math.round(p[0])+","+Math.round(p[1])}).join(" "))}
+function update(){var A=+a.value,H=+h.value,K=+k.value,S=A*A,S2=S*K*K,mid=Math.sqrt(S*S2),vp=S*H,vpy=vp/3,vf=H*(S+S2+mid)/3;
+el("av").textContent=fmt(A)+" cm";el("hv").textContent=fmt(H)+" cm";el("kv").textContent=fmt(K);
+el("prism").textContent=fmt(vp)+" cm³";el("pyramid").textContent=fmt(vpy)+" cm³";el("frustum").textContent=fmt(vf)+" cm³";
+el("proof").textContent="S="+fmt(S)+" cm², S′="+fmt(S2)+" cm², √(SS′)="+fmt(mid)+" cm²; V="+fmt(H)+"("+fmt(S)+"+"+fmt(S2)+"+"+fmt(mid)+")/3 = "+fmt(vf)+" cm³.";
+el("reason").textContent=K===0?"k=0: chóp cụt tiến về chóp, V=Sh/3.":K===1?"k=1: hai đáy bằng nhau, V=Sh.":"Hai đáy hình vuông đồng dạng, song song; h luôn là khoảng cách vuông góc.";
+var x=55+A*8,u=x*K,yt=164-H*8;
+var b=[[180-x/2,205],[180+x/2,205],[205+x/2,178],[205-x/2,178]],t=[[180-u/2,yt+24],[180+u/2,yt+24],[205+u/2,yt],[205-u/2,yt]];
+poly("base",b);poly("front",[b[0],b[1],t[1],t[0]]);poly("right",[b[1],b[2],t[2],t[1]]);poly("top",t);
+el("altitude").setAttribute("d","M180 190 V"+Math.round(yt+12));
+el("desc").textContent="Đáy lớn cạnh "+fmt(A)+" cm, đáy nhỏ cạnh "+fmt(A*K)+" cm, cao vuông góc "+fmt(H)+" cm; V="+fmt(vf)+" cm³."; }
+[a,h,k].forEach(function(x){x.addEventListener("input",update)});el("reset").addEventListener("click",function(){a.value="6";h.value="4";k.value=".5";update()});update()})();
+</script></body></html>
