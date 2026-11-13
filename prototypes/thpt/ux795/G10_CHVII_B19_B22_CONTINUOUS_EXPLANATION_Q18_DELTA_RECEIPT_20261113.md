@@ -10,10 +10,13 @@
 
 | Bài | PUBLISHED baseline #842 Git blob | NEW edited candidate Git blob | Canonical Vận dụng/First Try | D6 HELP | Golden worked examples |
 | --- | --- | --- | ---: | ---: | ---: |
-| B19 | `8fc4efaafcf2b896430f8cfa0ab18d7118fefc9c` | `581b046a40d317dfa3c910a83144f1b73f3cd9ac` | 7 | 9 | 2 |
+| B19 | `8fc4efaafcf2b896430f8cfa0ab18d7118fefc9c` | `d05c315cf75df5fee356f0be66b04d4009fdafe9` | 7 | 9 | 2 |
 | B20 | `510f79eb61930e9b0d7795d4b0288fd29ccb0675` | `b26f5546a6847907b3d8be414bc308530edfea17` | 5 | 7 | 2 |
 | B21 | `0af5e4d9e2348575f2be7de57f81acd00098bc55` | `dd870973d7e824ee8b81eaaadf7abe8936d7c78a` | 5 | 7 | 2 |
 | B22 | `34288f6ed32a0bf100edbf2ef495a4d9cec3ad2a` | `c6253e0a1977728dd1da81448f0d3473d9437be7` | 8 | 10 | 3 |
+
+**Render-side correction:** B19's slope paragraph was rechecked for Markdown tab-indentation and its inline condition \(x_1\
+e x_2\) restored as actual MathJax syntax; the corrected final source blob is the B19 candidate above.
 
 **Canonical preservation checks from same branch:** all 25 First Try `item_id`/outcome/HELP refs and 33 D6 identities are byte-identical; 25 original `??? question "Đối chiếu"` bodies, exact questions and solution/rubric texts unchanged; four original S1 tab-2 Knowledge sections, tab-3 examples, tab-4 remediation, six SVG, original TeX outside affected narrative, right TOC, Golden nav JS and scoped CSS unmodified. No changes to Q15 canonical bank, Core/Practice/Written, Chapter Final Submit, held-out RD1, Mastery, Firebase, Gemini, THCS, G11/G12/Topic or learner data.
 
