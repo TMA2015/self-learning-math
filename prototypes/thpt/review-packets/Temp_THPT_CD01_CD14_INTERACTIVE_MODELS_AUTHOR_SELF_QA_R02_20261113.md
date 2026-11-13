@@ -3,9 +3,9 @@
 **Date:** 13/11/2026 · **Lane:** AUTHORING · **Standard:** SLM-THPT-QUALITY-ONE v3.1.0 Q01–Q18. This receipt is a **targeted MODEL_D5/PED_QA_ONLY**, not an independent NotebookLM verdict, not a new topic Academic/PED verdict on old content, not a browser or production QA receipt.
 
 MODEL_SOURCE_PATH: prototypes/thpt/content-drafts/interactive-models/Temp_THPT_SHARED_DISCOVERY_MODELS_11IN1_R01_20261113.html
-MODEL_SOURCE_BLOB: 7cb825f867f2ff69287536f5ad0a333bed9ce5c2
+MODEL_SOURCE_BLOB: e71afeafd6c12fad6bb5e44a7ba1268b1211c191
 MODEL_DESIGN_PLACEMENT_PATH: prototypes/thpt/content-drafts/interactive-models/Temp_THPT_INTERACTIVE_MODEL_DESIGN_AND_CD01_CD14_PLACEMENT_R01_20261113.md
-MODEL_DESIGN_PLACEMENT_BLOB: 271ca5c6416bd98aed8acc1f715540ed6809f87e
+MODEL_DESIGN_PLACEMENT_BLOB: 36eacf0754973bb457a6a2b64370cf0d7658bccd
 MODEL_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED_SCOPE_MODEL_ONLY
 ACADEMIC_MODEL_MATH_VERDICT: AUTHOR_SELF_CHECK_45_45_PASS
 MODEL_SOURCE_STRUCTURE_VERDICT: AUTHOR_STATIC_GUARDS_10_10_PASS
@@ -17,7 +17,8 @@ OWNER_MASTERY_AUTHORIZATION: NO
 RD1_PRIVATE_COUNT: 0
 Q18_MODEL_P0: 0
 Q18_MODEL_P1: 0
-MODEL_HANDOFF_STATUS: MODEL_AUTHOR_QA_PASS_BROWSER_GATE_OPEN
+MODEL_HANDOFF_STATUS: MODEL_AUTHOR_MATH_AND_STATIC_QA_PASS_BROWSER_GATE_OPEN
+UI_LABEL_SOURCE_REVISION: R03
 
 ## Model source R01 → R02 corrections
 
@@ -36,6 +37,12 @@ MODEL_HANDOFF_STATUS: MODEL_AUTHOR_QA_PASS_BROWSER_GATE_OPEN
   - CĐ09 Tangent + derivative `ebf1f392dcc77fa5c94a2bfd75f500bd97dd7ae5` (PR #801);
   - CĐ13 Dot/projection `06ee0ce3e13cbfa92e0201dd2ee634bf1775b18e` (PR #793).
 - Older 10-in-1 dark prototype and repaired standalone candidate are **research references only**, not canonical replacements for these 14 models.
+
+## R03 displayed figure labels — Delta A, no math change
+
+- Three source-only edits to the same 11-in-1 runtime: generic `graph()` now exposes numerical xmin/xmax/ymin/ymax and visible x/y labels; SSA canvas labels exact triangle points A,C beside B₁/B₂; parabolic canvas labels focus F and directrix.
+- Static source checks PASS for all three label additions. No numerical formula, input domain, exact outcome or canonical MODEL_ID changed since R02's **55/55 independent math/static PASS**.
+- This is **`DELTA_A_UI`** for figure reading, not an invented new math PASS. Browser clipping/contrast/keyboard/touch/Safari remains `NOT_TESTED` until screenshots/render QA on real runtime.
 
 ## UI/PED design contract inspected
 
