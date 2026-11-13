@@ -193,7 +193,7 @@ One canonical `SLM-THPT-QUALITY-ONE v3.1.0` from `prototypes/thpt/THPT_UNIFIED_L
 | Q04 | Worked examples explain graph point transforms, vertex-in-domain, monotonicity without derivative and piecewise jump. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_04f53266 | RELEASE_QA_SEPARATE_NO_DEPLOY |
 | Q05 | 38 original PUBLIC canonical items, 34 Practice+4 Written; no clones and no unverified older R18 set counted. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_04f53266 | RELEASE_QA_SEPARATE_NO_DEPLOY |
 | Q06 | Four written with one original rubric/7 each, no separate new Anchor bank. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_04f53266 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q07 | Three SVG now exactly match their adjacent transformations, including corrected parabolic shift, −2|x|+3, and piecewise jump. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_04f53266 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q07 | Three SVG match adjacent mathematics: translated parabola, absolute-value reflection/stretch plus vertical shift and a discontinuous piecewise jump. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_04f53266 | RELEASE_QA_SEPARATE_NO_DEPLOY |
 | Q08 | 17 first tries/voluntary reveals with task-specific D6 reminders and canonical practice routes. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_04f53266 | RELEASE_QA_SEPARATE_NO_DEPLOY |
 | Q09 | A real fee-vs-distance table motivates a function, graph reading and decision with changing inputs. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_04f53266 | RELEASE_QA_SEPARATE_NO_DEPLOY |
 | Q10 | Explains inputs, outputs, sqrt u requiring u≥0, denominator≠0, intervals and coordinate points at point of use. | AUTHOR_SELF_VERIFIED_R04 | SOURCE_LOCKED_04f53266 | RELEASE_QA_SEPARATE_NO_DEPLOY |
