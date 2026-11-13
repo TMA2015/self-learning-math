@@ -1531,16 +1531,16 @@ Thay tọa độ vào P: (1+t)+(2−t)+t=3+t=4 ⇒ t=1. Khi ấy M(1)=(2,1,1); k
 
 <!-- ITEM_ID: THPT-TOP18-W04; ROLE: TOPIC_WRITTEN; PRIMARY_OUTCOME: TOP18-O32; RUBRIC_MAX: 4 -->
 
-Một đường d có vectơ chỉ phương u=(1,0,1); mặt phẳng P:z=0. Tính góc giữa d và P. Giải thích vì sao kết quả không phải góc giữa u và pháp tuyến n=(0,0,1).
+Một đường d có vectơ chỉ phương u=(1,0,√3); mặt phẳng P:z=0. Tính góc giữa d và P. So sánh với góc giữa u và pháp tuyến n=(0,0,1), giải thích vì sao hai góc khác nhau.
 
 <details><summary>Tự mở lời giải và rubric /4</summary>
 
-u·n=1, |u|=√2, |n|=1 ⇒ sinθ=1/√2, θ=45°. Góc đường–mặt là góc với hình chiếu, phụ với góc nhọn giữa u và n; không dùng công thức cos của u,n để gọi trực tiếp góc đường–mặt (trong trường hợp này hai góc bằng nhau tình cờ).
+u·n=√3, |u|=2, |n|=1 ⇒ sinθ=√3/2, nên góc đường–mặt θ=60°. Góc nhọn giữa u và pháp tuyến là arccos(√3/2)=30°, tức hai góc phụ nhau. Nếu dùng cos của u,n để gọi trực tiếp góc đường–mặt thì sai.
 
 **Rubric 4 điểm (mỗi tiêu chí 1 điểm):**
 - Nhận diện pháp tuyến n=(0,0,1) và hướng u khác không — **1 điểm**.
 - Viết đúng sinθ=|u·n|/(|u||n|) — **1 điểm**.
-- Tính được θ=45° — **1 điểm**.
+- Tính được θ=60° và góc với pháp tuyến 30° — **1 điểm**.
 - Giải thích vì sao dùng sin/hình chiếu và nêu giới hạn công thức — **1 điểm**.
 
 </details>
