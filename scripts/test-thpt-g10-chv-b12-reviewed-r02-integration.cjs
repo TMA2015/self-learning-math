@@ -40,7 +40,7 @@ assert.equal((page.match(workedPattern)||[]).length,3,"B12 must retain exactly t
 const {chvEditorialReceiptRows}=require("./thpt-q18-g10-source-receipt.cjs");
 if(chvEditorialReceiptRows().has("B12")){
  const titles=[...page.slice(page.indexOf('=== "Kiến thức SGK"'),page.indexOf('=== "Ví dụ"'))
-  .matchAll(/^    ### ([^\\n]+)/gm)].map(x=>x[1]);
+  .matchAll(/^    ### (.*)$/gm)].map(x=>x[1]);
  assert.deepEqual(titles,["2.1. Số gần đúng","2.2. Sai số tuyệt đối và sai số tương đối",
   "2.3. Quy tròn số gần đúng"],"B12 revised S1 headings must match exact signed Q18 receipt");
  assert(page.includes("Máy tính cầm tay giúp"),"B12 SGK calculator outcome must be taught");
