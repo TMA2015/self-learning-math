@@ -10,7 +10,7 @@ const fs=require("node:fs");
 const path=require("node:path");
 const crypto=require("node:crypto");
 const root=path.resolve(__dirname,"..");
-const {candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
+const {candidateG10KnowledgeBlob,chivEditorialReceiptRows}=require("./thpt-q18-g10-source-receipt.cjs");
 const index=process.argv.indexOf("--baseline");
 assert(index>=0&&process.argv[index+1],"--baseline DIR required: use a pristine main checkout");
 const baselineRoot=path.resolve(root,process.argv[index+1]);
@@ -46,7 +46,15 @@ for(const [name,chapter,num]of specs){
  // current main must equal EITHER the old published blob or its exact approved
  // replacement. No arbitrary source drift is accepted.
  const baselineSha=blob(mainRaw);
- assert([row.main,row.candidate].includes(baselineSha),name+" unknown main baseline source drift");
+ // The immutable ChIV v3.1.0 Q18 receipt adds the third approved
+ // state for B09 only. Keep the old ledger snapshots and identity chain:
+ // historical main -> Model B candidate -> S1 editorial candidate.
+ const editorial=chivEditorialReceiptRows().get(name);
+ if(editorial)assert.equal(editorial.baseline,row.candidate,
+   name+" ChIV editorial baseline must equal the historic 27-lesson candidate");
+ const approvedSources=[row.main,row.candidate,...(editorial?[editorial.candidate]:[])];
+ assert(approvedSources.includes(baselineSha),
+   name+" unknown main baseline source drift outside immutable 27-row/Q18 chain");
  assert.equal(blob(candidateRaw),candidateG10KnowledgeBlob(num)||row.candidate,name+" exact approved historical/editorial source drift");
  const base=mainRaw.toString("utf8"),s=candidateRaw.toString("utf8");
  assert.deepEqual(getIDs(s),getIDs(base),name+" original First Try/HELP/outcome IDs changed");
