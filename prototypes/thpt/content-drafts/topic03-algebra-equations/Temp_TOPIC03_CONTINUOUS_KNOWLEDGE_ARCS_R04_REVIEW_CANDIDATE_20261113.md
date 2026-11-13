@@ -1,4 +1,4 @@
-<!-- AUTHORING CURRENT R04: exact source Q18 self-review and V2 packaging required; R03 frozen SHA 678b93e92ee5b9b995bee08597a618ff1f536be5. Not website-integrated, merged or deployed. -->
+<!-- AUTHORING CURRENT R04: independently not yet released; source-lock Q18 author self-QA and V2 ready manifest reference exact blob. Historical R03 frozen SHA 678b93e92ee5b9b995bee08597a618ff1f536be5. No website integration, merge or deployment. -->
 <!-- STANDARD_ID=SLM-THPT-QUALITY-ONE; STANDARD_VERSION=3.1.0; LEARNING_PATH=TOPIC; OUTER_PAGES=Kiến thức|Luyện tập|Tự kiểm tra; SOURCE_VERSION=R04_AUTHORING_READY; AUTHORING_ONLY_METADATA=prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R04_AUTHORING_ONLY_CUSTODY_METADATA_20261113.md -->
 # CĐ03 — Phương trình đại số và kỹ thuật chuyển đổi dạng
 
