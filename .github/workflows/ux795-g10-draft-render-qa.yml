@@ -19,6 +19,17 @@ on:
       - "scripts/test-ux795-g10-postmerge-headings.cjs"
       - "prototypes/thpt/ux795/G10_CHVI_B15_B18_EXAMPLE_UX_Q18_DELTA_RECEIPT_20261113.md"
       - "prototypes/thpt/ux795/G10_CHVII_B19_B22_S1_Q18_GOLDEN_ENRICHMENT_RECEIPT_20261113.md"
+      - "prototypes/thpt/ux795/G10_CHVII_B19_B22_CONTINUOUS_EXPLANATION_Q18_DELTA_RECEIPT_20261113.md"
+      - "prototypes/thpt/ux795/G10_CHVII_B19_B22_AP2_EQUIVALENT_MATHJAX_DELTA_RECEIPT_20261113.md"
+      - "prototypes/thpt/ux795/G10_CHVII_B19_B22_R02_ACADEMIC_PED_PASS_RELEASE_INTAKE_20261114.md"
+      - "prototypes/thpt/ux795/G10_CHVII_B19_B22_R02_LEARNER_CLARITY_DELTA_RECEIPT_20261114.md"
+      - "prototypes/thpt/ux795/G10_CHVII_R02_WORK_BROWSER_FOLLOWUP_UX_RECEIPT_20261114.md"
+      - "prototypes/thpt/ux795/G10_CHVII_R02_AP2_STEM_DISPLAY_EQUIVALENT_RECEIPT_20261114.md"
+      - "prototypes/thpt/ux795/G10_CHVII_R02_AP2_COMPARISON_DISPLAY_EQUIVALENT_RECEIPT_20261114.md"
+      - "scripts/test-g10-chvii-ap2-comparisons.cjs"
+      - "scripts/test-g10-chvii-ap2-stems.cjs"
+      - "docs/assets/images/thpt/THPT_G10_CHVII_HYPERBOLA_TRANSFER_D5_R00.svg"
+      - "docs/assets/images/thpt/G10_CHVII_R02_*.svg"
       - "scripts/test-thpt-chvi-math-block-render.cjs"
       - "scripts/test-thpt-chvi-student-notes.cjs"
       - ".github/workflows/ux795-g10-draft-render-qa.yml"
@@ -123,6 +134,7 @@ jobs:
           # isolated integration checkout, never in production.
           cp docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js integration-main/docs/assets/javascripts/
           cp docs/assets/images/thpt/G10_B14_BOXPLOT_S1_Q18_ENRICHMENT_20261113.svg integration-main/docs/assets/images/thpt/
+          cp docs/assets/images/thpt/THPT_G10_CHVII_HYPERBOLA_TRANSFER_D5_R00.svg integration-main/docs/assets/images/thpt/
           for name in \
             G10_B02_MEMBERSHIP_SUBSET_R01.svg \
             G10_B06_SURVEY_RIGHT_TRIANGLE_R01.svg \
@@ -137,6 +149,9 @@ jobs:
             G10_B25_PASCAL_TRIANGLE_R02.svg; do
             cp "docs/assets/images/thpt/$name" "integration-main/docs/assets/images/thpt/$name"
           done
+          for asset in docs/assets/images/thpt/G10_CHVII_R02_*.svg; do
+            cp "$asset" "integration-main/docs/assets/images/thpt/$(basename "$asset")"
+          done
           # The follow-on Q18 UX receipt is optional for historical PRs.
           # If present, copy the exact signed source identities into this
           # isolated postmerge dry-run (not main / not production).
@@ -146,6 +161,18 @@ jobs:
           if [[ -f prototypes/thpt/ux795/G10_CHVII_B19_B22_S1_Q18_GOLDEN_ENRICHMENT_RECEIPT_20261113.md ]]; then
             cp prototypes/thpt/ux795/G10_CHVII_B19_B22_S1_Q18_GOLDEN_ENRICHMENT_RECEIPT_20261113.md integration-main/prototypes/thpt/ux795/
           fi
+          # Carry forward the exact additive follow-on source receipt, not merely the historical #842 row.
+          if [[ -f prototypes/thpt/ux795/G10_CHVII_B19_B22_CONTINUOUS_EXPLANATION_Q18_DELTA_RECEIPT_20261113.md ]]; then
+            cp prototypes/thpt/ux795/G10_CHVII_B19_B22_CONTINUOUS_EXPLANATION_Q18_DELTA_RECEIPT_20261113.md integration-main/prototypes/thpt/ux795/
+          fi
+          if [[ -f prototypes/thpt/ux795/G10_CHVII_B19_B22_AP2_EQUIVALENT_MATHJAX_DELTA_RECEIPT_20261113.md ]]; then
+            cp prototypes/thpt/ux795/G10_CHVII_B19_B22_AP2_EQUIVALENT_MATHJAX_DELTA_RECEIPT_20261113.md integration-main/prototypes/thpt/ux795/
+          fi
+          cp prototypes/thpt/ux795/G10_CHVII_B19_B22_R02_ACADEMIC_PED_PASS_RELEASE_INTAKE_20261114.md integration-main/prototypes/thpt/ux795/
+          cp prototypes/thpt/ux795/G10_CHVII_B19_B22_R02_LEARNER_CLARITY_DELTA_RECEIPT_20261114.md integration-main/prototypes/thpt/ux795/
+          cp prototypes/thpt/ux795/G10_CHVII_R02_WORK_BROWSER_FOLLOWUP_UX_RECEIPT_20261114.md integration-main/prototypes/thpt/ux795/
+          cp prototypes/thpt/ux795/G10_CHVII_R02_AP2_STEM_DISPLAY_EQUIVALENT_RECEIPT_20261114.md integration-main/prototypes/thpt/ux795/
+          cp prototypes/thpt/ux795/G10_CHVII_R02_AP2_COMPARISON_DISPLAY_EQUIVALENT_RECEIPT_20261114.md integration-main/prototypes/thpt/ux795/
           cp scripts/test-ux795-g10-postmerge-headings.cjs integration-main/scripts/
           (
             cd integration-main

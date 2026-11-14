@@ -10,165 +10,134 @@
 
     ### Cùng tìm hiểu
 
-    Một trạm phát sóng có vùng phủ được mô tả bằng mọi điểm cách trạm **đúng 3 km**. Trên bản đồ tọa độ, tập các điểm cách tâm \(I(2,1)\) đúng 3 đơn vị chính là một **đường tròn**.
-
-    Nếu em đã biết khoảng cách giữa hai điểm, công thức đường tròn gần như tự xuất hiện: \(\sqrt{(x-2)^2+(y-1)^2}=3\). Bình phương hai vế (đều không âm) cho \((x-2)^2+(y-1)^2=9\). Thay vì học thuộc bốn chữ số, hãy đọc công thức như câu nói: “khoảng cách từ điểm \((x,y)\) đến tâm I bằng bán kính 3”.
-
-    Một đường thẳng có thể không chạm, cắt tại hai điểm hoặc **tiếp xúc** đường tròn. Tại điểm tiếp xúc, **tiếp tuyến vuông góc bán kính**: đây là cách dựng phương trình tiếp tuyến từ hình học.
+    Một trạm phát sóng có tầm phủ lý tưởng 3 km. Nếu đứng cách trạm 1 km, em vẫn ở **trong vùng phủ**; vậy vì sao ranh giới vùng phủ lại chỉ gồm những điểm cách trạm **đúng 3 km**? Hãy phân biệt **cả hình tròn** với **đường biên** của nó trước khi dùng công thức khoảng cách để tự suy ra phương trình đường tròn.
 
     ### Ví dụ trực quan
-
-    Hãy tự giải từng câu Tự thử trước khi mở Đối chiếu. Nếu vướng, hãy đọc phần tự khắc phục và tự làm lại một bài tương tự.
 
 
     <span id="thpt-g10-chvii-try13" data-thpt-first-try-id="THPT-G10-CHVII-TRY13" data-outcome-id="G10-B21-CIRCLE_STANDARD" data-thpt-help-ref="HELP-G10-CHVII-TRY13"></span>
 
-    #### Đường tròn là tập hợp điểm cách tâm một khoảng cố định
+    Một trạm phát tín hiệu ở \(I\) có tầm xa lý tưởng \(R\). Nếu chỉ xét khoảng cách, **toàn bộ vùng phủ** gồm những vị trí \(M\) với \(IM\le R\): ở gần trạm vẫn nhận được tín hiệu. Nhưng **ranh giới ngoài** của vùng đó mới là đường tròn, gồm những vị trí cách trạm **đúng** \(R\), tức \(IM=R\).
 
-    Bản đồ một trạm phát sóng có tầm phủ bán kính cố định: đường biên vùng phủ gồm mọi vị trí cách trạm đúng một khoảng.
+    Gọi \(I(a,b)\) và \(M(x,y)\). Từ công thức khoảng cách hai điểm, \(IM^2=(x-a)^2+(y-b)^2\). Trên đường biên, \(IM=R>0\), nên
+    \[
+    (x-a)^2+(y-b)^2=R^2.
+    \]
+    Nếu \(IM<R\), điểm nằm **bên trong**, không nằm trên đường tròn; nếu \(IM>R\), điểm nằm **ngoài**. Nhờ vậy em biết rõ phương trình đang mô tả **đường biên**, không phải toàn bộ hình tròn. Đừng nhầm bán kính \(R\) với bình phương \(R^2\).
 
-    **Kiến thức tiền đề:** Nhắc lại công thức khoảng cách hai điểm: IM²=(x-a)²+(y-b)². Bán kính R phải dương để thực sự có đường tròn.
+    <figure class="thpt-r4-plot thpt-r4-concept-figure" data-chvii-r02-diagram="TRY13"><img src="../../../../assets/images/thpt/G10_CHVII_R02_B21_TRY13_CIRCLE.svg" loading="lazy" alt="Phân biệt đường tròn biên IM bằng R và hình tròn chứa các điểm IM nhỏ hơn hoặc bằng R."><figcaption>Đường tròn là đường biên; hình tròn gồm cả phần bên trong.</figcaption></figure>
 
-    **Bản chất trước công thức:** Phương trình đường tròn chỉ là phát biểu IM=R viết bằng tọa độ. Bình phương hai vế thu điều kiện khoảng cách, không phải công thức xuất hiện từ đâu đó.
-
-    **Hướng dẫn đọc hình:** Trên hình đánh dấu tâm I, bán kính IM tới một điểm bất kỳ M trên vành; đổi M quanh vành thì IM luôn giữ nguyên.
-
-    Biết tâm I(a,b), R>0, viết (x-a)²+(y-b)²=R². Kiểm tâm khi thế vào vế trái cho 0 và điều kiện R>0; không nhầm R với R².
-
-    **Em vận dụng.** Đường tròn có tâm I(-2,1) và bán kính 3 có phương trình nào?
+    **Em vận dụng.** Đường tròn có tâm \(I(-2,1)\) và bán kính \(3\) có phương trình nào?
 
     ??? question "Đối chiếu"
 
-        **Đáp án:** (x+2)²+(y-1)²=9.
+        **Đáp án:** \((x+2)^2+(y-1)^2=9\).
 
-        **Lý do:** IM²=(x+2)²+(y-1)², và R²=3²=9. Cần R=3>0.
-
-        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
+        **Lý do:** \(IM^2=(x+2)^2+(y-1)^2\), và \(R^2=3^2=9\). Cần \(R=3>0\).
 
 
 
 
-    <a href="../luyen-tap/?item=THPT-G10-B21-C01">Mở câu luyện tập tương ứng để tự luyện</a>
+
+
+    <a href="../luyen-tap/?item=THPT-G10-B21-C01">Luyện tập thêm</a>
 
 
     <span id="thpt-g10-chvii-try14" data-thpt-first-try-id="THPT-G10-CHVII-TRY14" data-outcome-id="G10-B21-CIRCLE_GENERAL" data-thpt-help-ref="HELP-G10-CHVII-TRY14"></span>
 
-    #### Từ phương trình tổng quát suy tâm, bán kính
+    Có những phương trình nhìn ban đầu chẳng thấy tâm hay bán kính. Hãy nhớ \((x-a)^2=x^2-2ax+a^2\): ta có thể biến các hạng tử bậc hai và bậc nhất thành **bình phương khoảng cách tới một điểm**. Ví dụ, \(x^2+y^2-4x+2y+1=0\) viết lại thành
+    \[
+    (x^2-4x+4)+(y^2+2y+1)=4,
+    \quad (x-2)^2+(y+1)^2=4.
+    \]
+    Bây giờ mới nhìn ra tâm \(I(2,-1)\) và bán kính \(R=2\).
 
-    Một bài toán thường cho phương trình dưới dạng đã khai triển; muốn biết vị trí và kích thước đường tròn phải 'mở ngược' các bình phương.
+    Tổng hai bình phương không thể âm. Vì vậy với dạng \(x^2+y^2-2ax-2by+c=0\), sau khi chuyển thành \((x-a)^2+(y-b)^2=a^2+b^2-c\), ta có một đường tròn thật sự chỉ khi **\(a^2+b^2-c>0\)**. Bằng 0 chỉ còn một điểm; âm thì không có điểm thực nào thỏa mãn. Đây là điều kiện hình học, không phải mẹo nhớ ba dấu.
 
-    **Kiến thức tiền đề:** Nhớ hằng đẳng thức (x-a)²=x²-2ax+a²; một tổng hai bình phương không thể âm.
-
-    **Bản chất trước công thức:** Hoàn thành bình phương chuyển điều kiện đại số thành khoảng cách tới một tâm. Nếu kết quả R²≤0 thì không tạo được đường tròn bán kính dương.
-
-    **Hướng dẫn đọc hình:** Đặt tâm I lên trục tọa độ sau khi hoàn thành bình phương; so sánh hai tình huống R²>0 (vành tròn) và R²=0 (một điểm).
-
-    Nhóm x²+Dx và y²+Ey, thêm bớt bình phương nửa hệ số rồi kiểm R²>0 trước khi lấy căn. Với R²<0 phương trình vô nghiệm thực.
-
-    **Em vận dụng.** Phương trình x²+y²−6x+4y+8=0 biểu diễn đường tròn nào?
+    **Em vận dụng.** Phương trình \(x^2+y^2-6x+4y+8=0\) biểu diễn đường tròn nào?
 
     ??? question "Đối chiếu"
 
-        **Đáp án:** (x−3)²+(y+2)²=5, tâm I(3,−2), bán kính √5.
+        **Đáp án:** \((x-3)^2+(y+2)^2=5\), tâm \(I(3,-2)\), bán kính \(\sqrt5\).
 
-        **Lý do:** x²−6x=(x−3)²−9, y²+4y=(y+2)²−4. Suy ra tổng hai bình phương bằng −8+9+4=5>0.
-
-        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
+        **Lý do:** \(x^2-6x=(x-3)^2-9\), \(y^2+4y=(y+2)^2-4\). Suy ra tổng hai bình phương bằng \(-8+9+4=5>0\).
 
 
 
 
-    <a href="../luyen-tap/?item=THPT-G10-B21-C02">Mở câu luyện tập tương ứng để tự luyện</a>
+
+
+    <a href="../luyen-tap/?item=THPT-G10-B21-C02">Luyện tập thêm</a>
 
 
     <span id="thpt-g10-chvii-try15" data-thpt-first-try-id="THPT-G10-CHVII-TRY15" data-outcome-id="G10-B21-CIRCLE_TANGENT" data-thpt-help-ref="HELP-G10-CHVII-TRY15"></span>
 
-    #### Tiếp tuyến tại một điểm thuộc đường tròn
+    Một tiếp tuyến chạm đường tròn tại điểm \(M\). Ngay tại điểm chạm, bán kính \(IM\) vuông góc với tiếp tuyến. Vì thế nếu biết \(I\) và \(M\), ta đã biết **một pháp tuyến của tiếp tuyến**: chính là \(\overrightarrow{IM}\). Nhưng trước hết phải kiểm \(M\) thực sự nằm trên đường tròn.
 
-    Một tuyến đi men theo vành tròn ngay tại một điểm chỉ chạm vào vành tại đó; hướng tuyến phải vuông góc với bán kính.
+    Chẳng hạn, đường tròn tâm \(I(2,1)\), bán kính \(\sqrt5\), có điểm \(M(3,3)\) vì \(IM^2=1^2+2^2=5\). Vectơ \(\overrightarrow{IM}=(1,2)\) là pháp tuyến của tiếp tuyến tại \(M\), nên phương trình qua \(M\) là \((x-3)+2(y-3)=0\), tức \(x+2y-9=0\). Như vậy, ta chọn cách viết phương trình **qua điểm và pháp tuyến** vì biết rõ điểm chạm và hướng vuông góc, không phải vì học thuộc một công thức tiếp tuyến riêng.
 
-    **Kiến thức tiền đề:** Ôn bán kính IM và điều kiện điểm M thuộc đường tròn; pháp tuyến của đường thẳng là vectơ vuông góc đường.
+    <figure class="thpt-r4-plot thpt-r4-concept-figure" data-chvii-r02-diagram="TRY15"><img src="../../../../assets/images/thpt/G10_CHVII_R02_B21_TRY15_TANGENT.svg" loading="lazy" alt="Bán kính IM0 vuông góc với tiếp tuyến tại điểm M0; pháp tuyến của tiếp tuyến là IM0."><figcaption>Tiếp tuyến đi qua tiếp điểm và nhận bán kính tại đó làm vectơ pháp tuyến.</figcaption></figure>
 
-    **Bản chất trước công thức:** Tại M trên đường tròn, bán kính IM vuông góc tiếp tuyến; vì vậy chính IM là một pháp tuyến của tiếp tuyến. Điều kiện 'M nằm trên đường tròn' là bắt buộc.
-
-    **Hướng dẫn đọc hình:** Trên hình vẽ tròn tâm I, bán kính IM và đường thẳng chạm tại M; góc IM với tiếp tuyến là 90°.
-
-    Bước 1 thử IM²=R²; bước 2 lấy n=IM khác 0; bước 3 viết n·MX=0 rồi kiểm khoảng cách từ I đến đường bằng R.
-
-    **Em vận dụng.** Đường tròn tâm I(1,−1), bán kính 5; M(4,3). Viết tiếp tuyến tại M.
+    **Em vận dụng.** Đường tròn tâm \(I(1,-1)\), bán kính \(5\); \(M(4,3)\). Viết tiếp tuyến tại \(M\).
 
     ??? question "Đối chiếu"
 
-        **Đáp án:** 3x+4y−24=0.
+        **Đáp án:** \(3x+4y-24=0\).
 
-        **Lý do:** IM=(3,4), IM²=9+16=25=R² nên M thuộc đường. Tiếp tuyến: 3(x−4)+4(y−3)=0 ⇒ 3x+4y−24=0.
-
-        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
+        **Lý do:** \(\overrightarrow{IM}=(3,4)\), \(IM^2=9+16=25=R^2\) nên \(M\) thuộc đường. Tiếp tuyến: \(3(x-4)+4(y-3)=0\Rightarrow 3x+4y-24=0\).
 
 
 
 
-    <a href="../luyen-tap/?item=THPT-G10-B21-P02">Mở câu luyện tập tương ứng để tự luyện</a>
+
+
+    <a href="../luyen-tap/?item=THPT-G10-B21-P02">Luyện tập thêm</a>
 
 
     <span id="thpt-g10-chvii-try16" data-thpt-first-try-id="THPT-G10-CHVII-TRY16" data-outcome-id="G10-B21-CIRCLE_THROUGH_POINTS" data-thpt-help-ref="HELP-G10-CHVII-TRY16"></span>
 
-    #### Đường tròn đi qua ba điểm không thẳng hàng
+    Hai mốc A và B chưa đủ xác định một đường tròn, vì có nhiều vị trí tâm cùng cách đều hai mốc. Những tâm ấy nằm trên đường trung trực của đoạn AB. Nếu thêm mốc C không thẳng hàng với A,B, tâm phải đồng thời cách đều A,B và A,C; vì vậy nó là giao điểm của hai đường trung trực tương ứng.
 
-    Ba mốc phân biệt không cùng đường thẳng có thể xác định một đường tròn duy nhất qua cả ba; chỉ hai mốc thì còn vô số cách đặt tâm.
+    Hãy tưởng tượng tam giác ABC cùng hai đường trung trực của AB và AC: giao điểm I thỏa \(IA=IB=IC\), từ đó lấy \(R=IA\) để viết đường tròn. Trước khi dựng phải kiểm ba điểm không thẳng hàng. Nếu chúng thẳng hàng, không có đường tròn hữu hạn nào qua cả ba; nếu chỉ biết hai điểm, ta vẫn chưa chọn được tâm duy nhất.
 
-    **Kiến thức tiền đề:** Ôn đường trung trực đoạn thẳng: mọi điểm trên đường trung trực cách hai đầu mút bằng nhau.
-
-    **Bản chất trước công thức:** Tâm đường tròn cách đều các điểm đã cho. Giao hai đường trung trực cho tâm nếu ba điểm không thẳng hàng; khi ba điểm thẳng hàng thì không có đường tròn đi qua cả ba.
-
-    **Hướng dẫn đọc hình:** Vẽ tam giác ABC và hai đường trung trực AB, AC; điểm giao của hai đường là tâm I có IA=IB=IC.
-
-    Kiểm ba điểm không thẳng hàng; tìm giao hai đường trung trực rồi tính R từ một điểm. Không chọn tùy ý một tâm chỉ dựa hai điểm.
-
-    **Em vận dụng.** Đường tròn qua A(0,0), B(2,0), C(0,2) có tâm, bán kính và phương trình gì?
+    **Em vận dụng.** Đường tròn qua \(A(0,0)\), \(B(2,0)\), \(C(0,2)\) có tâm, bán kính và phương trình gì?
 
     ??? question "Đối chiếu"
 
-        **Đáp án:** Tâm I(1,1), bán kính √2, phương trình (x−1)²+(y−1)²=2.
+        **Đáp án:** Tâm \(I(1,1)\), bán kính \(\sqrt2\), phương trình \((x-1)^2+(y-1)^2=2\).
 
-        **Lý do:** Trung trực AB là x=1; trung trực AC là y=1. IA²=1²+1²=2; thử B và C đều cho tổng bình phương bằng 2.
-
-        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
+        **Lý do:** Trung trực \(AB\) là \(x=1\); trung trực \(AC\) là \(y=1\). \(IA^2=1^2+1^2=2\); thử \(B\) và \(C\) đều cho tổng bình phương bằng 2.
 
 
 
 
-    <a href="../luyen-tap/?item=THPT-G10-B21-P04">Mở câu luyện tập tương ứng để tự luyện</a>
 
 
-    <span id="thpt-g10-chvii-try17" data-thpt-first-try-id="THPT-G10-CHVII-TRY17" data-outcome-id="G10-B21-LINE_CIRCLE_POSITION" data-thpt-help-ref="HELP-G10-CHVII-TRY17"></span>
+    <a href="../luyen-tap/?item=THPT-G10-B21-P04">Luyện tập thêm</a>
 
-    #### Đường thẳng cắt, tiếp xúc hoặc không gặp đường tròn
 
-    Để biết một lối đi thẳng có đi qua vùng tròn, chỉ cần so sánh khoảng cách gần nhất từ tâm đến lối đi với bán kính.
+    <span id="thpt-g10-chvii-try17" data-thpt-first-try-id="THPT-G10-CHVII-TRY17" data-outcome-id="G10-B21-LINE_CIRCLE_POSITION" data-thpt-help-ref="HELP-G10-CHVII-TRY17" data-learning-role="interlesson-application"></span>
 
-    **Kiến thức tiền đề:** Nhắc khoảng cách từ điểm I đến đường d và bán kính R>0; đoạn vuông góc là ngắn nhất.
+    **Vận dụng liên bài B20–B21.** Em sử dụng thêm công thức khoảng cách đã học ở Bài 20.
 
-    **Bản chất trước công thức:** Nếu h=d(I,d)>R thì lối đi ở ngoài vùng; h=R thì chạm một điểm; h<R thì cắt đường tròn tại hai điểm. Không cần giải hệ khi chỉ hỏi số giao điểm.
+    Từ Bài 20, ta đã biết cách đo khoảng cách \(h=d(I,d)\) từ tâm \(I\) đến một đường thẳng \(d\). Từ Bài 21, ta biết mỗi điểm trên đường tròn cách \(I\) đúng bán kính \(R\). Hãy so sánh hai độ dài ấy: nếu \(h>R\), đường thẳng ở ngoài và không gặp đường tròn; nếu \(h=R\), có đúng một điểm chạm; nếu \(h<R\), có hai giao điểm.
 
-    **Hướng dẫn đọc hình:** Vẽ ba đường ở khoảng cách tâm lớn hơn, bằng, nhỏ hơn bán kính; đếm số giao điểm lần lượt 0,1,2.
+    Em không cần giải hệ ngay để biết **số** giao điểm; nhưng muốn biết **tọa độ**, em vẫn phải giải hai phương trình. Đây là một vận dụng liên bài, không thay kiến thức bắt buộc về phương trình đường tròn và tiếp tuyến.
 
-    Tính h=|axI+byI+c|/√(a²+b²), so với R. Phải biết đường có n khác 0 và đường tròn R>0.
-
-    **Em vận dụng.** Đường tròn tâm I(1,2), R=3 và đường d: y=−1 có quan hệ nào?
+    **Em vận dụng.** Đường tròn tâm \(I(1,2)\), \(R=3\) và đường \(d:y=-1\) có quan hệ nào?
 
     ??? question "Đối chiếu"
 
-        **Đáp án:** Tiếp xúc; tiếp điểm T(1,−1).
+        **Đáp án:** Tiếp xúc; tiếp điểm \(T(1,-1)\).
 
-        **Lý do:** Khoảng cách từ I(1,2) đến y=−1 là |2−(−1)|=3=R. Chân đường vuông góc từ I xuống d là T(1,−1).
-
-        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
+        **Lý do:** Khoảng cách từ \(I(1,2)\) đến \(y=-1\) là \(\lvert2-(-1)\rvert=3=R\). Chân đường vuông góc từ \(I\) xuống \(d\) là \(T(1,-1)\).
 
 
 
 
-    <a href="../luyen-tap/?item=THPT-G10-B21-P03">Mở câu luyện tập tương ứng để tự luyện</a>
+
+
+    <a href="../luyen-tap/?item=THPT-G10-B21-P03">Luyện tập thêm</a>
 
     ### Thuật ngữ, kiến thức và kỹ năng
 
@@ -207,15 +176,9 @@
     (x_M-a)(x-x_M)+(y_M-b)(y-y_M)=0.
     \]
 
-    Với đường thẳng \(d\), đặt \(h=d(I,d)\):
-
-    - \(h<R\): hai giao điểm;
-    - \(h=R\): tiếp xúc;
-    - \(h>R\): không giao nhau.
-
 === "Ví dụ"
 
-    Trước khi xem lời giải, hãy xác định dữ kiện, điều phải tìm và lý do chọn cách giải. Sau đó kiểm tra lại điều kiện áp dụng và kết quả, thay vì chỉ nhìn phép tính cuối cùng.
+
 
     ### Ví dụ — Từ tâm và tiếp điểm tìm tiếp tuyến
 
@@ -252,7 +215,7 @@
 
     <span id="help-g10-chvii-try13" data-thpt-help-id="HELP-G10-CHVII-TRY13"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "Phương trình đường tròn: nhầm tâm, bán kính"
 
         1. **Nhận diện lỗi:** Nếu viết vế phải 3 hoặc (x-2)², em nhầm bán kính với bình phương bán kính hoặc nhầm dấu tọa độ tâm.
 
@@ -260,13 +223,13 @@
 
         3. **Tự sửa:** Đặt M=I, vế trái phải bằng 0; chọn M=I+(3,0) thì vế trái bằng 9.
 
-        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+        4. **Tự đối chiếu:** mở tab Khám phá kiến thức, chọn Đối chiếu của câu Vận dụng vừa làm rồi kiểm lại dữ kiện và điều kiện áp dụng.
 
         5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
     <span id="help-g10-chvii-try14" data-thpt-help-id="HELP-G10-CHVII-TRY14"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "Hoàn thành bình phương: sai dấu"
 
         1. **Nhận diện lỗi:** Nếu kết luận bán kính 5 hoặc tâm (−3,2), em chưa đọc đúng dấu trong bình phương.
 
@@ -274,13 +237,13 @@
 
         3. **Tự sửa:** Khai triển lại hai bình phương và kiểm phương trình thu được trùng đúng phương trình gốc.
 
-        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+        4. **Tự đối chiếu:** mở tab Khám phá kiến thức, chọn Đối chiếu của câu Vận dụng vừa làm rồi kiểm lại dữ kiện và điều kiện áp dụng.
 
         5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
     <span id="help-g10-chvii-try15" data-thpt-help-id="HELP-G10-CHVII-TRY15"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "Tiếp tuyến: thiếu điểm chạm hoặc pháp tuyến"
 
         1. **Nhận diện lỗi:** Nếu điểm chưa thuộc đường tròn hoặc dùng IM làm chỉ phương, cách dựng tiếp tuyến đã sai điều kiện.
 
@@ -288,13 +251,13 @@
 
         3. **Tự sửa:** Thử 3²+4²=5² và thế M vào 3x+4y−24=0; kiểm pháp tuyến (3,4).
 
-        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+        4. **Tự đối chiếu:** mở tab Khám phá kiến thức, chọn Đối chiếu của câu Vận dụng vừa làm rồi kiểm lại dữ kiện và điều kiện áp dụng.
 
         5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
     <span id="help-g10-chvii-try16" data-thpt-help-id="HELP-G10-CHVII-TRY16"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "Tâm đường tròn qua ba điểm"
 
         1. **Nhận diện lỗi:** Nếu lấy trung điểm AB làm tâm, em mới dùng hai điểm và chưa bảo đảm cách đều C.
 
@@ -302,13 +265,13 @@
 
         3. **Tự sửa:** Tìm cả hai trung trực rồi thử độ dài IA, IB, IC bằng nhau.
 
-        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+        4. **Tự đối chiếu:** mở tab Khám phá kiến thức, chọn Đối chiếu của câu Vận dụng vừa làm rồi kiểm lại dữ kiện và điều kiện áp dụng.
 
         5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
     <span id="help-g10-chvii-try17" data-thpt-help-id="HELP-G10-CHVII-TRY17"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "Đường thẳng và đường tròn: nhầm tiếp xúc"
 
         1. **Nhận diện lỗi:** Nếu h=R mà nói 'cắt hai điểm', em nhầm trường hợp tiếp xúc với cát tuyến.
 
@@ -316,7 +279,7 @@
 
         3. **Tự sửa:** Vẽ đoạn IT vuông góc d dài 3; các điểm khác T trên d sẽ cách I xa hơn 3.
 
-        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+        4. **Tự đối chiếu:** mở tab Khám phá kiến thức, chọn Đối chiếu của câu Vận dụng vừa làm rồi kiểm lại dữ kiện và điều kiện áp dụng.
 
         5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 

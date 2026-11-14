@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
-<title id="title">Quỹ tích hypebol hai trạm tín hiệu, nhánh phải khi tín hiệu B đến trước</title>
-<desc id="desc">Hai trạm A âm 50 và B dương 50 km. Hypebol x bình phương trên 900 trừ y bình phương trên 1600 bằng 1, đỉnh ở âm 30 và dương 30, hai nhánh. Khi tín hiệu B đến trước, hiệu PA trừ PB bằng 60 km, người thu ở nhánh phải; không xác định duy nhất một điểm.</desc>
+<title id="title">Quỹ tích hypebol hai trạm tín hiệu, nhánh phải khi tín hiệu từ B đến máy thu trước</title>
+<desc id="desc">Hai trạm A âm 50 và B dương 50 km. Hypebol x bình phương trên 900 trừ y bình phương trên 1600 bằng 1, đỉnh ở âm 30 và dương 30, hai nhánh. Khi tín hiệu từ B đến máy thu trước, hiệu PA trừ PB bằng 60 km, người thu ở nhánh phải; không xác định duy nhất một điểm.</desc>
 <rect width="960" height="540" fill="#ffffff"/>
 <line x1="75" y1="270" x2="895" y2="270" stroke="#283341" stroke-width="2.3"/>
 <line x1="480" y1="507" x2="480" y2="35" stroke="#283341" stroke-width="2.3"/>
@@ -21,7 +21,7 @@
 <text x="230" y="293" text-anchor="middle">A (−50)</text><text x="730" y="293" text-anchor="middle">B (+50)</text>
 <text x="330" y="296" text-anchor="middle">−a</text><text x="630" y="296" text-anchor="middle">a</text>
 <text x="723" y="157.61300899000926">P</text>
-<text x="710" y="69" font-weight="bold" fill="#0e7a68">B đến trước A</text>
+<text x="710" y="69" font-weight="bold" fill="#0e7a68">Sóng từ B tới P sớm hơn</text>
 <text x="708" y="93" fill="#0e7a68">PA − PB = 60 km</text>
 <text x="707" y="117" fill="#0e7a68">Nhánh phải x ≥ 30</text>
 <text x="230" y="70" fill="#7b838f">Nhánh trái không chọn</text>

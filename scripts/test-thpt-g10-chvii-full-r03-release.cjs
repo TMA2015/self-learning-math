@@ -7,7 +7,7 @@
  * SVG geometry RELEASE-owned, equivalent to D5 design spec a2ee2b226780b3aeff379ccb7d5eae0bde0156b5.
  */
 const assert=require("node:assert/strict"),fs=require("node:fs"),crypto=require("node:crypto"),path=require("node:path");
-const {expectedG10KnowledgeBlob,chviiEditorialReceiptRows}=require("./thpt-q18-g10-source-receipt.cjs");
+const {expectedG10KnowledgeBlob,chviiEditorialReceiptRows,chviiContinuousReceiptRows,chviiAp2ReceiptRows,chviiR02ReceiptRows,chviiClarityReceiptRows,chviiWorkFollowupReceiptRows,chviiStemReceiptRows,chviiComparisonReceiptRows}=require("./thpt-q18-g10-source-receipt.cjs");
 const root=path.resolve(__dirname,".."),read=p=>fs.readFileSync(path.join(root,p),"utf8");
 const shaText=s=>{const b=Buffer.from(s);return crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+b.length+"\0"),b])).digest("hex")};
 const gitblob=p=>shaText(read(p));
@@ -239,13 +239,50 @@ for(const tag of ["ELLIPSE","HYPERBOLA"]){
       "Transfer Q15/D6 source identity "+tag);
     const editor=chviiEditorialReceiptRows().get("B22");
     if(editor){
-     assert.equal(gitblob("docs/thpt-preview/sgk/chuong-vii/bai-22.md"),editor.candidate,
-       "B22 approved S1 Q18 source required for learner-facing transfer headings");
-     const learnerTitle=tag==="ELLIPSE"?"#### Minh họa — Kiểm tra độ hở của mái nửa elip":
-       "#### Minh họa — Hai trạm phát tín hiệu";
-     assert(b22.includes(learnerTitle),"Transfer D2 learner-facing reasoning still required "+tag);
+     const newer=chviiContinuousReceiptRows().get("B22");
+     if(newer){
+      assert.equal(newer.baseline,editor.candidate,
+        "B22 owner narrative amendment must start at original published S1 Q18 blob");
+      const mathjax=chviiAp2ReceiptRows().get("B22");
+       if(mathjax)assert.equal(mathjax.baseline,newer.candidate,"B22 AP2 source must match exact reviewed owner narrative blob");
+       const teaching=chviiR02ReceiptRows().get("B22");
+       if(teaching)assert.equal(teaching.baseline,mathjax.candidate,"B22 R02 must source-lock after AP2");
+       const clarity=chviiClarityReceiptRows().get("B22");
+       if(clarity)assert.equal(clarity.baseline,teaching.candidate,
+         "B22 final learner clarity must follow independently PASS R02 source");
+       const work=chviiWorkFollowupReceiptRows().get("B22");
+       if(work)assert.equal(work.baseline,clarity.candidate,
+         "B22 Work Browser UX must start from reviewed R02+clarity source");
+       const stems=chviiStemReceiptRows().get("B22");
+       if(stems){
+        assert(work,"B22 AP2 stage needs Work-fixed source");
+        assert.equal(stems.baseline,work.candidate,"B22 AP2 stem baseline not exact Work snapshot");
+        assert.equal(stems.moved,8,"B22 AP2 must keep canonical question count");
+       }
+       const comparisons=chviiComparisonReceiptRows().get("B22");
+       if(comparisons){
+        assert(stems,"B22 AP2 answer display requires signed 25-stem source");
+        assert.equal(comparisons.baseline,stems.candidate,"B22 AP2 answer baseline must match stem candidate");
+        assert.equal(comparisons.moved,8,"B22 AP2 answer display preserves item count");
+        assert.equal(comparisons.lines,14,"B22 AP2 answer display preserves 14 answer lines");
+       }
+       assert.equal(gitblob("docs/thpt-preview/sgk/chuong-vii/bai-22.md"),
+         comparisons?.candidate||stems?.candidate||work?.candidate||clarity?.candidate||teaching?.candidate||mathjax?.candidate||newer.candidate,
+         "B22 source must match latest exact Q18 Academic/PED→AP2 comparisons chain");
+       const bridge=tag==="ELLIPSE"?"Ta có thể kiểm nghiệm thêm cách đọc hoành độ qua một mái che":
+        "Tương tự, khi đã hiểu vì sao chênh lệch thời gian dẫn đến hypebol";
+      assert(b22.includes(bridge),"Transfer D2 reasoning must survive as natural exposition "+tag);
+      assert(!b22.includes("#### Minh họa — ")&&!b22.includes("**Tại sao là D2 mới:**"),
+        "B22 must not reintroduce learner-facing microheadings or internal D2 metadata");
+     }else{
+      assert.equal(gitblob("docs/thpt-preview/sgk/chuong-vii/bai-22.md"),editor.candidate,
+        "B22 original approved S1 Q18 source required");
+      const learnerTitle=tag==="ELLIPSE"?"#### Minh họa — Kiểm tra độ hở của mái nửa elip":
+        "#### Minh họa — Hai trạm phát tín hiệu";
+      assert(b22.includes(learnerTitle),"Historical transfer D2 learner-facing reasoning "+tag);
+     }
      assert(!b22.includes("#### Ví dụ giải có hướng dẫn — "+ex),
-       "B22 reviewed internal EX identifier must not leak in learner interface");
+       "B22 internal EX identifier must not leak in learner interface");
     }else{
      assert(b22.includes("#### Ví dụ giải có hướng dẫn — "+ex),"Transfer D2 historical title "+tag);
     }
