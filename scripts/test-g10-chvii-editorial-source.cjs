@@ -6,7 +6,7 @@
 const fs=require("node:fs"),path=require("node:path"),cp=require("node:child_process"),
  crypto=require("node:crypto"),assert=require("node:assert/strict");
 const root=path.resolve(__dirname,".."),published="bfc15b552a1ea697edb1327f0a48d7a95bbb73ed";
-const {chviiEditorialReceiptRows,chviiContinuousReceiptRows,chviiAp2ReceiptRows,chviiR02ReceiptRows,candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
+const {chviiEditorialReceiptRows,chviiContinuousReceiptRows,chviiAp2ReceiptRows,chviiR02ReceiptRows,chviiClarityReceiptRows,candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 const blob=data=>{const raw=Buffer.isBuffer(data)?data:Buffer.from(data);return crypto.createHash("sha1").update("blob "+raw.length+"\0").update(raw).digest("hex");};
 const ids=(s,k)=>[...s.matchAll(new RegExp(k+'="([^"]+)"',"g"))].map(m=>m[1]).sort();
 const tex=s=>[...s.matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]/g)].map(m=>(m[1]||m[2]).trim().replace(/\s+/g," "));
@@ -32,15 +32,20 @@ const specs={
  21:{count:5,helps:7,figures:3,examples:2,book:["2.1. Phương trình đường tròn","2.2. Phương trình tiếp tuyến của đường tròn"]},
  22:{count:8,helps:10,figures:6,examples:3,book:["2.1. Elip","2.2. Hypebol","2.3. Parabol","2.4. Một số ứng dụng của ba đường conic"]}
 };
-const rows=chviiEditorialReceiptRows(),followOn=chviiContinuousReceiptRows(),ap2=chviiAp2ReceiptRows(),r02=chviiR02ReceiptRows();
+const rows=chviiEditorialReceiptRows(),followOn=chviiContinuousReceiptRows(),ap2=chviiAp2ReceiptRows(),r02=chviiR02ReceiptRows(),clarity=chviiClarityReceiptRows();
 assert.equal(rows.size,4,"Exactly four signed Chapter VII original rows required");
 assert.equal(followOn.size,4,"Exactly four source-locked continuous-explanation follow-on rows required");
 assert.equal(ap2.size,4,"Exactly four AP2 TeX-normalization source rows required");
 assert.equal(r02.size,4,"Four reviewed R02 lesson rows required");
+assert.equal(clarity.size,4,"Four scoped learner-clarity correction rows required");
 let allTry=0,allHelp=0,allFigures=0,allExamples=0;
 for(const [lessonStr,info]of Object.entries(specs)){
- const n=Number(lessonStr),name="B"+n,row=rows.get(name),delta=followOn.get(name),display=ap2.get(name),teaching=r02.get(name);
- assert(row&&delta&&display&&teaching,"Missing original→AP2→R02 source chain "+name);
+ const n=Number(lessonStr),name="B"+n,row=rows.get(name),delta=followOn.get(name),display=ap2.get(name),teaching=r02.get(name),clean=clarity.get(name);
+ assert(row&&delta&&display&&teaching&&clean,"Missing reviewed source→R02→clarity chain "+name);
+ assert.equal(clean.baseline,teaching.candidate,name+" clarity baseline is not the reviewed R02 candidate");
+ assert.equal(clean.moved,info.count,name+" clarity changed canonical count");
+ assert.equal(clean.helps,info.helps,name+" clarity changed HELP count");
+ assert.equal(clean.examples,info.examples,name+" clarity changed worked-example count");
  assert.equal(teaching.baseline,display.candidate,name+" R02 starts at exact AP2 source");
  assert.equal(teaching.moved,info.count,name+" R02 item count");
  assert.equal(teaching.helps,info.helps,name+" R02 HELP count");
@@ -58,8 +63,8 @@ for(const [lessonStr,info]of Object.entries(specs)){
  assert.equal(old.status,0,"Original published Git source inaccessible "+rel+" "+old.stderr);
  const baseline=old.stdout;
  assert.equal(blob(baseline),row.baseline,name+" published source baseline SHA mismatch");
- assert.equal(blob(bytes),teaching.candidate,name+" R02 PASS candidate differs from source");
- assert.equal(candidateG10KnowledgeBlob(n),teaching.candidate,name+" canonical source router must point to R02");
+ assert.equal(blob(bytes),clean.candidate,name+" R02 learner clarity candidate differs from receipt");
+ assert.equal(candidateG10KnowledgeBlob(n),clean.candidate,name+" canonical router must point to final learner source");
  assert.equal(row.moved,info.count,name+" 25 First Try count source receipt");
  assert.equal(row.helps,info.helps,name+" 33 HELP source receipt");
  assert.equal(row.examples,info.examples,name+" example count source receipt");
@@ -102,6 +107,26 @@ for(const [lessonStr,info]of Object.entries(specs)){
   assert(!/tâm sai|e=c\/a/i.test(d),name+" unapproved compulsory eccentricity");
   assert(d.includes("Mở rộng có hướng dẫn · Không bắt buộc"),name+" TRY20 guided extension");
  }
+ assert(!/\*\*Nếu chưa đúng:\*\* Mở hướng dẫn tự sửa ngay bên dưới/.test(d),
+   name+" obsolete directions to nonexistent immediately-below remediation must be removed");
+ assert(!/Mở câu luyện tập tương ứng để tự luyện/.test(d),
+   name+" repeated verbose practice callout remains");
+ assert.equal([...d.matchAll(/>Luyện tập thêm<\/a>/g)].length,({19:7,20:5,21:5,22:6})[n],
+   name+" all real practice links remain with concise labels");
+ assert(!/Trước khi xem lời giải, hãy xác định dữ kiện/.test(examples),
+   name+" inert generic instruction without a solution gate returned");
+ if(n===21){
+  assert(!/vùng phủ được mô tả bằng mọi điểm cách trạm \*\*đúng 3 km\*\*/.test(d),
+    name+" false wireless coverage definition in student opening");
+  assert(!/Với đường thẳng \\\(d\\\), đặt \\\(h=d\\\(I,d\\\)\\\)/.test(knowledge),
+    name+" cross-lesson line-circle shortcut must not be mandatory S1 Core");
+ }
+ if(n===22){
+  assert(!/tiệm cận|asymptote/i.test(knowledge),
+   name+" hyperbola asymptotes appeared as mandatory S1 textbook knowledge");
+  assert(examples.includes("Mở rộng có hướng dẫn — Tiệm cận của hypebol"),
+   name+" optional hyperbola example must be labeled in the Examples tab");
+ }
  assert(!/Hãy tự giải từng câu Tự thử trước khi mở Đối chiếu/.test(d),name+" redundant global First Try instruction remains");
  const learning=d.slice(d.indexOf("### Ví dụ trực quan"),d.indexOf("### Thuật ngữ, kiến thức và kỹ năng"));
  assert(!/^    #### /m.test(learning),name+" discovery still fragmented into mini subheadings");
@@ -129,7 +154,7 @@ for(const [lessonStr,info]of Object.entries(specs)){
  assert(!/^\s{4}\?\?\? question "Tự mở đáp án sau khi đã tự làm"/m.test(s),name+" non-Golden reveal label");
  assert.notDeepEqual(ids(s.replace('data-thpt-first-try-id="','data-thpt-first-try-id="CORRUPTED-'),"data-thpt-first-try-id"),
   ids(baseline,"data-thpt-first-try-id"),name+" negative item-id mutation failed");
- assert.notEqual(blob(s+" "),teaching.candidate,name+" negative source SHA mutation failed");
+ assert.notEqual(blob(s+" "),clean.candidate,name+" negative source SHA mutation failed");
  assert.notDeepEqual([...knowledge.replace(info.book[0],"WRONG_S1_TITLE").matchAll(/^    ### ([^\n]+)/gm)].map(x=>x[1]),
   info.book,name+" negative SGK title mutation failed");
  allTry+=info.count;allHelp+=info.helps;allFigures+=info.figures;allExamples+=info.examples;
