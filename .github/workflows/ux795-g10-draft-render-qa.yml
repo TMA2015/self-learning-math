@@ -23,6 +23,8 @@ on:
       - "prototypes/thpt/ux795/G10_CHVII_B19_B22_AP2_EQUIVALENT_MATHJAX_DELTA_RECEIPT_20261113.md"
       - "prototypes/thpt/ux795/G10_CHVII_B19_B22_R02_ACADEMIC_PED_PASS_RELEASE_INTAKE_20261114.md"
       - "prototypes/thpt/ux795/G10_CHVII_B19_B22_R02_LEARNER_CLARITY_DELTA_RECEIPT_20261114.md"
+      - "prototypes/thpt/ux795/G10_CHVII_R02_WORK_BROWSER_FOLLOWUP_UX_RECEIPT_20261114.md"
+      - "docs/assets/images/thpt/THPT_G10_CHVII_HYPERBOLA_TRANSFER_D5_R00.svg"
       - "docs/assets/images/thpt/G10_CHVII_R02_*.svg"
       - "scripts/test-thpt-chvi-math-block-render.cjs"
       - "scripts/test-thpt-chvi-student-notes.cjs"
@@ -128,6 +130,7 @@ jobs:
           # isolated integration checkout, never in production.
           cp docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js integration-main/docs/assets/javascripts/
           cp docs/assets/images/thpt/G10_B14_BOXPLOT_S1_Q18_ENRICHMENT_20261113.svg integration-main/docs/assets/images/thpt/
+          cp docs/assets/images/thpt/THPT_G10_CHVII_HYPERBOLA_TRANSFER_D5_R00.svg integration-main/docs/assets/images/thpt/
           for name in \
             G10_B02_MEMBERSHIP_SUBSET_R01.svg \
             G10_B06_SURVEY_RIGHT_TRIANGLE_R01.svg \
@@ -163,6 +166,7 @@ jobs:
           fi
           cp prototypes/thpt/ux795/G10_CHVII_B19_B22_R02_ACADEMIC_PED_PASS_RELEASE_INTAKE_20261114.md integration-main/prototypes/thpt/ux795/
           cp prototypes/thpt/ux795/G10_CHVII_B19_B22_R02_LEARNER_CLARITY_DELTA_RECEIPT_20261114.md integration-main/prototypes/thpt/ux795/
+          cp prototypes/thpt/ux795/G10_CHVII_R02_WORK_BROWSER_FOLLOWUP_UX_RECEIPT_20261114.md integration-main/prototypes/thpt/ux795/
           cp scripts/test-ux795-g10-postmerge-headings.cjs integration-main/scripts/
           (
             cd integration-main
