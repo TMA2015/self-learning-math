@@ -23,7 +23,7 @@
 
     <figure class="thpt-r4-plot thpt-r4-concept-figure" data-chvii-r02-diagram="TRY08"><picture><source media="(max-width: 600px)" srcset="../../../../assets/images/thpt/G10_CHVII_R02_B20_TRY08_LINES_MOBILE.svg"><img src="../../../../assets/images/thpt/G10_CHVII_R02_B20_TRY08_LINES.svg" loading="lazy" alt="Ba trường hợp hai đường thẳng cắt, song song, trùng ứng với hệ một nghiệm, vô nghiệm, vô số nghiệm."></picture><figcaption>Số nghiệm chung của hệ cho biết số giao điểm của hai đường thẳng.</figcaption></figure>
 
-    **Em vận dụng.** d1: 2x-y+1=0, d2: 4x-2y+3=0 là song song phân biệt hay trùng nhau?
+    **Em vận dụng.** \(d_1:2x-y+1=0\), \(d_2:4x-2y+3=0\) là song song phân biệt hay trùng nhau?
 
     ??? question "Đối chiếu"
 
@@ -45,7 +45,7 @@
 
     Vì vậy, nếu pháp tuyến của đường cũ là \(n\), hãy chọn pháp tuyến \(n'\ne0\) sao cho \(n\cdot n'=0\). Đường mới qua P được xác định bởi điều kiện \(n'\cdot\overrightarrow{PM}=0\). Có thể tưởng tượng tịnh tiến một đường vuông góc song song với chính nó: góc vuông vẫn giữ nguyên, nhưng chỉ một vị trí đi qua P. Thế tọa độ P và kiểm lại tích vô hướng để chắc chắn thỏa cả hai yêu cầu.
 
-    **Em vận dụng.** Qua P(1,-2) viết đường vuông góc với d: x+2y-5=0.
+    **Em vận dụng.** Qua \(P(1,-2)\) viết đường vuông góc với \(d:x+2y-5=0\).
 
     ??? question "Đối chiếu"
 
@@ -67,7 +67,7 @@
 
     Trên một hình vẽ, một điểm nằm ở đường thứ nhất vẫn chưa chắc thuộc đường thứ hai; chỉ điểm cùng thuộc cả hai mới là giao điểm. Nếu hệ vô nghiệm, hai đường không có giao điểm. Cách kiểm bằng thế giúp phát hiện lỗi dấu hoặc phép biến đổi ngay cả khi đáp số trông có vẻ hợp lý.
 
-    **Em vận dụng.** Tìm giao điểm của x+2y=8 và 2x-y=1.
+    **Em vận dụng.** Tìm giao điểm của \(x+2y=8\) và \(2x-y=1\).
 
     ??? question "Đối chiếu"
 
@@ -97,7 +97,7 @@
 
     <figure class="thpt-r4-plot thpt-r4-concept-figure" data-chvii-r02-diagram="TRY11"><img src="../../../../assets/images/thpt/G10_CHVII_R02_B20_TRY11_DISTANCE.svg" loading="lazy" alt="Chân vuông góc H từ M0 đến đường Delta và pháp tuyến n cùng phương với HM0."><figcaption>Đoạn ngắn nhất từ điểm tới đường là đoạn vuông góc; chân H nằm trên đường.</figcaption></figure>
 
-    **Em vận dụng.** Tính khoảng cách từ M(1,2) đến d: 3x+4y-1=0.
+    **Em vận dụng.** Tính khoảng cách từ \(M(1,2)\) đến \(d:3x+4y-1=0\).
 
     ??? question "Đối chiếu"
 
@@ -119,7 +119,7 @@
 
     Do đó, với hai pháp tuyến khác vectơ không \(n_1,n_2\), ta tính \(\cos\varphi=\frac{|n_1\cdot n_2|}{\|n_1\|\cdot\|n_2\|}\). Giá trị tuyệt đối loại bỏ ảnh hưởng của chiều mũi tên; kết quả phải nằm từ \(0\) đến \(1\). Khi nhìn hình, hãy phân biệt góc tù giữa các vectơ có hướng với góc nhỏ giữa hai đường không có chiều.
 
-    **Em vận dụng.** Góc nhỏ giữa d1: x=0 và d2: x-y=0 bằng bao nhiêu?
+    **Em vận dụng.** Góc nhỏ giữa \(d_1:x=0\) và \(d_2:x-y=0\) bằng bao nhiêu?
 
     ??? question "Đối chiếu"
 
