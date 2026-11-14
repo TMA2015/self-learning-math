@@ -1606,6 +1606,34 @@ Thay d(t) vào P: (2+t)−1+t=1+2t=3 ⇒ t=1, giao điểm (3,−1,1). Pháp tuy
 </details>
 
 
+### Vận dụng tổng hợp — radar và hành trình bay qua một vùng cầu (sau B17)
+
+**Bối cảnh liên thông.** Một radar đặt tại O=(0;0;0), vùng phủ bán kính 5 km. Máy bay tại A=(6;4;0) km và bay theo hướng u=(−1;0;0) km/giờ, chỉ xét thời gian t≥0. Ta muốn biết **nó có đi vào vùng phủ hay không, và vào–ra lúc nào**. Đây là câu chuyện vận dụng nối tọa độ, phương trình tham số và mặt cầu, được biên tập lại từ ý tưởng tình huống radar trong tài liệu NotebookLM, không sao chép một ID câu NotebookLM cũ.
+
+<!-- ITEM_ID: THPT-TOP18-W07; ROLE: TOPIC_WRITTEN; PRIMARY_OUTCOME: TOP18-O38; SECONDARY_OUTCOMES: TOP18-O16,TOP18-O24,TOP18-O36; RUBRIC_MAX: 4; APPLICATION_ONLY_AFTER_B17 -->
+
+**Tự giải:** (a) Viết M(t) của máy bay. (b) Tính khoảng cách ngắn nhất từ radar đến đường bay trong khoảng t≥0. (c) Tìm những thời điểm máy bay nằm đúng biên vùng phủ sóng và kết luận khoảng thời gian máy bay nằm bên trong vùng.
+
+<details><summary>Tự mở lời giải suy luận và rubric /4</summary>
+
+**Bước 1 – biểu diễn hành trình:** M(t)=A+t u=(6−t;4;0), t≥0. Ta không dùng một tham số riêng cho mỗi tọa độ.
+
+**Bước 2 – xác định điểm gần nhất:** OM(t)²=(6−t)²+4²+0²=(t−6)²+16. Vì (t−6)²≥0 và t=6 thỏa t≥0, khoảng cách nhỏ nhất bằng **4 km**, đạt khi M(6)=(0;4;0). Khoảng cách 4<5 nên máy bay có đi vào vùng phủ.
+
+**Bước 3 – tìm hai thời điểm qua biên:** Biên cầu thỏa OM(t)²=5² nên (t−6)²+16=25, tức (t−6)²=9. Suy ra **t=3 giờ** và **t=9 giờ**, lần lượt tại M(3)=(3;4;0) và M(9)=(−3;4;0). Kiểm cả hai điểm: 3²+4²=5².
+
+**Bước 4 – kết luận có điều kiện:** Với **3<t<9**, OM(t)<5, máy bay ở trong vùng cầu; t=3 hoặc t=9 ở đúng biên; t<3 hay t>9 ngoài vùng. Bài giả định máy bay đi đều với đơn vị km/giờ và radar có vùng phủ hình cầu cố định.
+
+**Rubric 4 điểm, mỗi tiêu chí 1 điểm:**
+- Viết đúng M(t)=(6−t;4;0), nêu t≥0 — **1 điểm**.
+- Lập OM(t)²=(t−6)²+16 và tìm đúng khoảng cách nhỏ nhất 4 km tại t=6 — **1 điểm**.
+- Giải đúng phương trình giao biên t=3 và t=9, kiểm lại tọa độ — **1 điểm**.
+- Phân loại trong/ngoài/biên theo t, nêu rõ điều kiện thời gian và đơn vị — **1 điểm**.
+
+</details>
+
+**Nếu gặp lỗ hổng:** chưa viết được đường M(t) thì quay TOP18-O16/O24; nếu chưa nhận ra bình phương không âm thì xem TOP18-O15; nếu nhầm mặt cầu với khối cầu thì xem TOP18-O36/O38. Bài này là luyện tập mở rộng tự đối chiếu, **không đưa vào kiểm tra độc lập nếu học sinh đã xem lời giải**.
+
 ## 3. Tự kiểm tra
 
 **Tự kiểm tra công khai để tự đối chiếu:** Chọn 12 câu đã gặp trong Luyện tập. Các mục này chỉ là `placement` của canonical ID đang có, không sinh nội dung câu, lời giải hay item ID thứ hai. Tại website có cơ chế nộp chính thức, phải ẩn đáp án/gợi ý/đúng-sai/rubric/AI Tutor **trước Final Submit**; nguồn Markdown tự đối chiếu không chứng minh `TOPIC_READINESS`, không ghi `Skill Mastery`.
