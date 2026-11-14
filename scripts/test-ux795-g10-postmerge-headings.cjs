@@ -133,8 +133,8 @@ for(let n=1;n<=27;n++){
    assert.equal(work.helps,signedVII.helps,"B"+n+" D6 HELP count frozen");
    assert.equal(work.examples,signedVII.examples,"B"+n+" worked examples count frozen");
   }
-  assert.equal(blob(source),work?work.candidate:(edited?edited.candidate:(r02?r02.candidate:(ap2?ap2.candidate:(amendedVII?amendedVII.candidate:signedVII.candidate))))
-   "B"+n+" ChVII source must match latest signed Q18 source-chain receipt");
+  const last=work?.candidate||edited?.candidate||r02?.candidate||ap2?.candidate||amendedVII?.candidate||signedVII.candidate;
+  assert.equal(blob(source),last,"B"+n+" ChVII source must match latest signed Q18 source-chain receipt");
   assert.equal(ids.length,signedVII.tries,"B"+n+" original ChVII FirstTry count");
   assert.equal([...markdown.matchAll(/data-thpt-help-id="([^"]+)"/g)].length,signedVII.helps,
    "B"+n+" ChVII D6 source receipt drift");
