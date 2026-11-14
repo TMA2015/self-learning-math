@@ -296,30 +296,32 @@ Muốn x² thì k=2 lần chọn −2. Hệ số C(4,2)(−2)²=6·4=**24**.
 
 **Nối sang bài kế:** Nhớ kiểm chính xác một kết quả cần đếm và điều kiện của nó trước khi dùng công thức.
 
-### 11. Số hạng không chứa x: tìm số mũ bằng 0 (mở rộng)
+### 11. Số hạng không chứa x: từ đa thức đến mở rộng phân thức
 
-<!-- LESSON_ID: TOP19-M11; OUTCOME_ID: TOP19-O11; ORIGINAL_SGK_SKILL: G10-B25-CONSTANT_TERM; S1_LESSON: G10-B25; SOURCE_ROLE: SGK_CORE_AUTHORITY; OPTIONAL_SCOPE -->
+<!-- LESSON_ID: TOP19-M11; OUTCOME_ID: TOP19-O11; ORIGINAL_SGK_SKILL: G10-B25-CONSTANT_TERM; S1_LESSON: G10-B25; SOURCE_ROLE: SGK_CORE_POLYNOMIAL_CONSTANT_WITH_SBT_OPTIONAL_RECIPROCAL -->
 
-**Vì sao cần học?** Một biểu thức như (x+2/x)^4 chứa cả x và 1/x. Không thể chỉ nhìn hệ số Pascal mà biết số hạng nào biến mất x; cần theo dõi **số mũ** của x.
+**Vì sao cần học?** Trong \((3x-2)^5\), hệ số của các số hạng có \(x\) thay đổi theo số lần chọn \(3x\). Nhưng số hạng **không chứa \(x\)** xuất hiện khi không chọn \(3x\) lần nào. Đó là một trường hợp riêng của cách đếm vị trí đã học, không cần một mẹo mới.
 
-**Hiểu bản chất trước công thức.** Trong (x+2/x)^4, nếu chọn 2/x đúng k lần thì số mũ x là (4−k)−k=4−2k. Số hạng tự do khi 4−2k=0→k=2; hệ số C(4,2)2²=24. Đây là **mở rộng/tự chọn** vì có số mũ âm trước khai triển, không tự biến thành Core B25 nếu chưa kiểm gốc.
+**Hiểu bản chất trước công thức.** Trong khai triển \((ax+b)^n\), nếu chọn \(b\) đúng \(k\) lần thì số mũ của \(x\) là \(n-k\) (khi a khác 0). Muốn số hạng tự do, cần \(n-k=0\), tức \(k=n\): chọn \(b\) ở cả \(n\) thừa số, nên số hạng không chứa \(x\) là \(b^n\). Với nhị thức như \((4x-3)^5\), nó bằng \((-3)^5\), **âm**. Đừng nhân thêm \(C(n,1)\) khi chỉ có đúng một cách chọn tất cả các vị trí b: \(C(n,n)=1\).
 
-**Điều kiện và giới hạn:** x≠0 do có 1/x, n=4 cụ thể, k nguyên từ 0 đến 4. Có số hạng tự do chỉ khi tồn tại k nguyên thỏa điều kiện số mũ bằng 0.
+**Điều kiện và giới hạn:** Đây là đa thức theo \(x\), nên không phải loại \(x=0\). Trong trường hợp \(a=0\), toàn bộ nhị thức là hằng số, vẫn có số hạng tự do \(b^n\). Chỉ khi gặp hạng tử dạng \(1/x\) (tham khảo SBT), mới phải kiểm \(x\ne0\), theo dõi số mũ âm và giải phương trình tổng số mũ bằng 0. Bài chứa \(1/x\) là **mở rộng tự chọn**, không coi là SGK Core.
 
-**Ví dụ có suy luận – vì sao chọn phương pháp này?** Với (x+2/x)^4, x≠0, số hạng tổng quát khi chọn 2/x k lần là C(4,k)2^k x^(4−2k). Chỉ k=2 cho số mũ 0 nên số hạng không chứa x là C(4,2)2²=**24**.
+**Ví dụ có suy luận – vì sao chọn phương pháp này?** Tìm số hạng không chứa \(x\) trong \((2x-3)^4\). Nếu chọn \(2x\) ở bất cứ thừa số nào, tích chứa \(x\); do đó để không chứa \(x\) phải chọn \(-3\) ở đủ bốn vị trí. Số hạng cần tìm là \((-3)^4=\mathbf{81}\). Cách đếm vị trí giải thích rõ hơn việc dò năm hạng tử.
 
-**Tự thử trước khi đối chiếu.** Số hạng không chứa x trong (x+1/x)^4, x≠0, là bao nhiêu?
+**Tự thử trước khi đối chiếu.** Trong khai triển \((3x-2)^5\), số hạng không chứa \(x\) là bao nhiêu? Giải thích bằng cách chọn hạng tử từ năm thừa số.
 
 <!-- ITEM_ID: THPT-TOP19-T11; CONTENT_VERSION: TOP19-R02; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP19-O11; ANSWER_REVEAL: OPT_IN_AFTER_TRY; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
 <details><summary>Mở lời giải sau khi tự thử</summary>
 
-Điều kiện 4−2k=0→k=2, hệ số C(4,2)=**6**.
+Chọn \(-2\) từ cả năm thừa số, không chọn \(3x\) ở vị trí nào, nên có duy nhất \(C(5,5)=1\) cách cho hạng tử đó. Hệ số tự do là \((-2)^5=\mathbf{-32}\).
 
-**Nếu chưa đúng (D6):** Nếu ra 4 hoặc 1, em đang chọn nhầm k. Hãy ghi số mũ x là 4−2k rồi giải đúng phương trình bằng 0.
+**Nếu chưa đúng (D6):** Nếu được +32, em đã quên số lần chọn thừa số âm là **5 lần (lẻ)**. Nếu tính \(5\cdot(-2)\), em đã nhầm cộng năm lần với **nhân năm thừa số**. Thử n=2 trước: \((x-2)^2=x^2-4x+4\) có hằng số \((-2)^2=4\).
 
 </details>
 
-**Nối sang bài kế:** Nhớ kiểm chính xác một kết quả cần đếm và điều kiện của nó trước khi dùng công thức.
+**Tự chọn mở rộng sau khi hiểu đa thức:** Với \((x+2/x)^4\), \(x\ne0\), nếu chọn \(2/x\) đúng \(k\) lần thì số mũ \(x\) là \(4-2k\). Số hạng không chứa \(x\) chỉ khi \(4-2k=0\), \(k=2\), được \(C(4,2)\cdot2^2=\mathbf{24}\). Đây là họ dạng tham khảo SBT p57, **không thay câu Tự thử cơ bản**.
+
+**Nối sang bài kế:** Từ đọc từng số hạng, em có thể kiểm toàn bộ hệ số bằng cách thay \(x=1\) nếu biểu thức là đa thức.
 
 ### 12. Tổng hệ số và tam giác Pascal (vận dụng sau khai triển)
 
@@ -521,7 +523,7 @@ Muốn x⁴ thì chọn −2 đúng một lần, 3x bốn lần. Hệ số C(5,1
 
 <!-- ITEM_ID: THPT-TOP19-P11; CONTENT_VERSION: TOP19-R02; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP19-O11; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
 
-Tìm số hạng không chứa x trong (2x+1/x)^4, x≠0.
+**Tự chọn mở rộng SBT (sau phần đa thức):** Tìm số hạng không chứa x trong (2x+1/x)^4, x≠0.
 
 <details><summary>Tự đối chiếu lời giải từng bước</summary>
 
