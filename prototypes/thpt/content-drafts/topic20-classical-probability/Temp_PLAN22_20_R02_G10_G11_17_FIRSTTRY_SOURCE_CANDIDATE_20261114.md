@@ -364,6 +364,308 @@ P=1−P(cả hai hỏng)=1−(1/5)(1/4)=19/20.
 
 Đây là nguồn ứng viên AUTHORING. 34 item đã có trong PR #810 được tham chiếu **chỉ ID** từ đúng hai thư viện canonical G10/G11 và các extension R02, không lấy nội dung câu/correctness/rubric sang đây. Ma trận riêng cần nối chính xác từng `item_id` với 17 outcome G10/G11 và kiểm tra độ sâu mỗi outcome trước Q18; các bản ghi SBT/SGK cũ không tự PASS CĐ20.
 
+### P01 — Luyện tập tương ứng TOP20-O01
+
+<!-- ITEM_ID: THPT-TOP20-P01; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O01; CONTENT_VERSION: TOP20-R02; PUBLIC_FORMATIVE_NO_MASTERY -->
+
+Rút đều một thẻ trong 10 thẻ đánh số 0 đến 9. Viết Ω và biến cố A “số chẵn”.
+
+<details><summary>Mở lời giải sau khi tự làm</summary>
+
+**Giải:** Ω={0,1,2,3,4,5,6,7,8,9}; A={0,2,4,6,8}. A có 5 kết quả.
+
+**D6 – Lỗi cần sửa:** Nếu loại 0 vì không phải số chẵn, hãy nhớ 0 chia hết cho 2.
+
+</details>
+
+### P02 — Luyện tập tương ứng TOP20-O02
+
+<!-- ITEM_ID: THPT-TOP20-P02; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O02; CONTENT_VERSION: TOP20-R02; PUBLIC_FORMATIVE_NO_MASTERY -->
+
+Gieo xúc xắc sáu mặt một lần. Biến cố “kết quả bé hơn 2” gồm những phần tử nào và có chắc chắn không?
+
+<details><summary>Mở lời giải sau khi tự làm</summary>
+
+**Giải:** A={1}, không chắc chắn vì Ω có sáu kết quả, chỉ một kết quả thuận lợi.
+
+**D6 – Lỗi cần sửa:** Phân biệt “bé hơn” với “bé hơn hoặc bằng”; A là một tập con chứ không phải số 1/6.
+
+</details>
+
+### P03 — Luyện tập tương ứng TOP20-O03
+
+<!-- ITEM_ID: THPT-TOP20-P03; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O03; CONTENT_VERSION: TOP20-R02; PUBLIC_FORMATIVE_NO_MASTERY -->
+
+Túi chứa 10 phiếu khác nhau, đúng 3 phiếu có thưởng, rút đều một phiếu. Tính P(trúng).
+
+<details><summary>Mở lời giải sau khi tự làm</summary>
+
+**Giải:** Ba kết quả thuận lợi trong 10 phiếu đồng khả năng, P=3/10.
+
+**D6 – Lỗi cần sửa:** Nếu dùng tỷ số số loại giải thưởng, em đã chọn sai đơn vị kết quả sơ cấp.
+
+</details>
+
+### P04 — Luyện tập tương ứng TOP20-O04
+
+<!-- ITEM_ID: THPT-TOP20-P04; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O04; CONTENT_VERSION: TOP20-R02; PUBLIC_FORMATIVE_NO_MASTERY -->
+
+Trong 12 thẻ khác nhau, có 4 thẻ bị lỗi. Rút đều một thẻ. Tính P(không lỗi) bằng biến cố đối.
+
+<details><summary>Mở lời giải sau khi tự làm</summary>
+
+**Giải:** P=1−4/12=8/12=2/3.
+
+**D6 – Lỗi cần sửa:** Kiểm A và A̅ phủ hết 12 thẻ, không tính 4/12 là không lỗi.
+
+</details>
+
+### P05 — Luyện tập tương ứng TOP20-O05
+
+<!-- ITEM_ID: THPT-TOP20-P05; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O05; CONTENT_VERSION: TOP20-R02; PUBLIC_FORMATIVE_NO_MASTERY -->
+
+Trong 40 vé khác nhau có một vé trúng. Phân biệt xác suất trúng với trường hợp không có vé trúng.
+
+<details><summary>Mở lời giải sau khi tự làm</summary>
+
+**Giải:** Nếu có một vé trúng: P=1/40>0, hiếm nhưng có thể. Nếu không vé trúng: P=0, biến cố không thể trong mô hình này.
+
+**D6 – Lỗi cần sửa:** Đừng dùng chữ “rất khó” thay cho “bằng 0”.
+
+</details>
+
+### P06 — Luyện tập tương ứng TOP20-O06
+
+<!-- ITEM_ID: THPT-TOP20-P06; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O06; CONTENT_VERSION: TOP20-R02; PUBLIC_FORMATIVE_NO_MASTERY -->
+
+Một hộp có 1 phiếu xanh và 5 phiếu đỏ khác nhau. Rút đều một phiếu. Tính P(nhãn đỏ); có được nói 1/2 vì có hai màu không?
+
+<details><summary>Mở lời giải sau khi tự làm</summary>
+
+**Giải:** Không. Ω gồm 6 phiếu vật lí đồng khả năng, P(đỏ)=5/6.
+
+**D6 – Lỗi cần sửa:** Ghi từng phiếu trước, không lấy hai nhãn màu làm hai kết quả bằng nhau.
+
+</details>
+
+### P07 — Luyện tập tương ứng TOP20-O07
+
+<!-- ITEM_ID: THPT-TOP20-P07; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O07; CONTENT_VERSION: TOP20-R02; PUBLIC_FORMATIVE_NO_MASTERY -->
+
+Từ 7 thẻ khác nhau, trong đó có 3 thẻ ghi sao, lấy đều 2 thẻ cùng lúc (không xét thứ tự). Tính P(cả hai sao).
+
+<details><summary>Mở lời giải sau khi tự làm</summary>
+
+**Giải:** Số nhóm C(7,2)=21; nhóm sao C(3,2)=3, nên P=3/21=1/7.
+
+**D6 – Lỗi cần sửa:** Nếu dùng 7×6 ở mẫu mà C(3,2) ở tử, em đã trộn có và không xét thứ tự.
+
+</details>
+
+### P08 — Luyện tập tương ứng TOP20-O08
+
+<!-- ITEM_ID: THPT-TOP20-P08; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O08; CONTENT_VERSION: TOP20-R02; PUBLIC_FORMATIVE_NO_MASTERY -->
+
+Túi có 2 bóng đỏ và 4 bóng xanh khác nhau. Chọn đều 2 bóng cùng lúc. Tính P(ít nhất một bóng đỏ).
+
+<details><summary>Mở lời giải sau khi tự làm</summary>
+
+**Giải:** 1−C(4,2)/C(6,2)=1−6/15=3/5.
+
+**D6 – Lỗi cần sửa:** Biến cố đối là “không có đỏ”, tức cả hai xanh, không phải “đúng một đỏ”.
+
+</details>
+
+### P09 — Luyện tập tương ứng TOP20-O09
+
+<!-- ITEM_ID: THPT-TOP20-P09; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O09; CONTENT_VERSION: TOP20-R02; PUBLIC_FORMATIVE_NO_MASTERY -->
+
+Tung một đồng xu cân đối ba lần độc lập. Xác suất đúng một mặt sấp là bao nhiêu nếu xét các chuỗi có thứ tự?
+
+<details><summary>Mở lời giải sau khi tự làm</summary>
+
+**Giải:** Có 8 chuỗi đồng khả năng; đúng một S là SNN, NSN, NNS (3), P=3/8.
+
+**D6 – Lỗi cần sửa:** Nếu đếm bốn loại “0,1,2,3 sấp” là đồng khả năng, hãy vẽ cây ba tầng.
+
+</details>
+
+### P10 — Luyện tập tương ứng TOP20-O10
+
+<!-- ITEM_ID: THPT-TOP20-P10; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O10; CONTENT_VERSION: TOP20-R02; PUBLIC_FORMATIVE_NO_MASTERY -->
+
+Hộp 5 thẻ khác nhau (2 đỏ, 3 xanh), rút đều liên tiếp 2 thẻ không hoàn lại. Tính P(cả hai đỏ) bằng đếm chuỗi.
+
+<details><summary>Mở lời giải sau khi tự làm</summary>
+
+**Giải:** Tổng 5×4=20 cặp có thứ tự; hai đỏ có 2×1=2 cặp; P=2/20=1/10.
+
+**D6 – Lỗi cần sửa:** Nếu dùng (2/5)², em đã giả sử lượt sau vẫn có 2 đỏ trong 5 thẻ.
+
+</details>
+
+### P11 — Luyện tập tương ứng TOP20-O11
+
+<!-- ITEM_ID: THPT-TOP20-P11; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O11; CONTENT_VERSION: TOP20-R02; PUBLIC_FORMATIVE_NO_MASTERY -->
+
+Gieo xúc xắc: A=ra số lẻ, B=ra số không nhỏ hơn 5. Viết A∩B và A∪B.
+
+<details><summary>Mở lời giải sau khi tự làm</summary>
+
+**Giải:** A={1,3,5}, B={5,6}; A∩B={5}, A∪B={1,3,5,6}.
+
+**D6 – Lỗi cần sửa:** Nếu gộp kết quả 5 hai lần trong hợp, em chưa coi hợp là tập hợp.
+
+</details>
+
+### P12 — Luyện tập tương ứng TOP20-O12
+
+<!-- ITEM_ID: THPT-TOP20-P12; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O12; CONTENT_VERSION: TOP20-R02; PUBLIC_FORMATIVE_NO_MASTERY -->
+
+Hai xúc xắc cân đối độc lập. A: con thứ nhất ra số lớn hơn 4; B: con thứ hai ra số chẵn. Tính P(A∩B).
+
+<details><summary>Mở lời giải sau khi tự làm</summary>
+
+**Giải:** P(A)=2/6=1/3, P(B)=3/6=1/2; độc lập nên P(A∩B)=1/6.
+
+**D6 – Lỗi cần sửa:** Nếu ra 5/6, em đang cộng hai biến cố thay vì lấy giao.
+
+</details>
+
+### P13 — Luyện tập tương ứng TOP20-O13
+
+<!-- ITEM_ID: THPT-TOP20-P13; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O13; CONTENT_VERSION: TOP20-R02; PUBLIC_FORMATIVE_NO_MASTERY -->
+
+Một xúc xắc: A={1,2}, B={3,4}. Chúng có xung khắc và độc lập không?
+
+<details><summary>Mở lời giải sau khi tự làm</summary>
+
+**Giải:** Xung khắc vì giao rỗng. Không độc lập vì P(A∩B)=0 trong khi P(A)P(B)=(2/6)(2/6)=1/9>0.
+
+**D6 – Lỗi cần sửa:** Hai biến cố không cùng xảy ra có xác suất dương thì không độc lập.
+
+</details>
+
+### P14 — Luyện tập tương ứng TOP20-O14
+
+<!-- ITEM_ID: THPT-TOP20-P14; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O14; CONTENT_VERSION: TOP20-R02; PUBLIC_FORMATIVE_NO_MASTERY -->
+
+Gieo xúc xắc. A={1,2,3,4}, B={2,4,6}. Tính P(A∪B) theo quy tắc cộng.
+
+<details><summary>Mở lời giải sau khi tự làm</summary>
+
+**Giải:** Giao {2,4}: P(A∪B)=4/6+3/6−2/6=5/6. Liệt kê hợp {1,2,3,4,6} kiểm lại.
+
+**D6 – Lỗi cần sửa:** Nếu ra 7/6>1, phép cộng đã đếm trùng 2,4.
+
+</details>
+
+### P15 — Luyện tập tương ứng TOP20-O15
+
+<!-- ITEM_ID: THPT-TOP20-P15; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O15; CONTENT_VERSION: TOP20-R02; PUBLIC_FORMATIVE_NO_MASTERY -->
+
+Gieo xúc xắc, A=ra 1 và B=ra 6. Tính P(A∪B) và giải thích vì sao cộng trực tiếp.
+
+<details><summary>Mở lời giải sau khi tự làm</summary>
+
+**Giải:** A∩B=∅ nên P(A∪B)=1/6+1/6=1/3.
+
+**D6 – Lỗi cần sửa:** Nếu gọi A,B độc lập, thử kiểm P(A)P(B)=1/36 khác 0.
+
+</details>
+
+### P16 — Luyện tập tương ứng TOP20-O16
+
+<!-- ITEM_ID: THPT-TOP20-P16; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O16; CONTENT_VERSION: TOP20-R02; PUBLIC_FORMATIVE_NO_MASTERY -->
+
+Tung đồng xu cân đối và gieo xúc xắc cân đối độc lập. P(ngửa và mặt xúc xắc chia hết cho 3)?
+
+<details><summary>Mở lời giải sau khi tự làm</summary>
+
+**Giải:** P=1/2×2/6=1/6; biến cố có mặt xúc xắc 3 hoặc 6.
+
+**D6 – Lỗi cần sửa:** Đừng lấy 1/2+2/6 vì câu hỏi yêu cầu cùng xuất hiện.
+
+</details>
+
+### P17 — Luyện tập tương ứng TOP20-O17
+
+<!-- ITEM_ID: THPT-TOP20-P17; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O17; CONTENT_VERSION: TOP20-R02; PUBLIC_FORMATIVE_NO_MASTERY -->
+
+Gieo hai xúc xắc cân đối độc lập. A: con thứ nhất ra số lẻ, B: con thứ hai không lớn hơn 2. Tính P(A∪B).
+
+<details><summary>Mở lời giải sau khi tự làm</summary>
+
+**Giải:** P(A)=3/6=1/2, P(B)=2/6=1/3, P(A∩B)=1/6. Vậy P(A∪B)=1/2+1/3−1/6=2/3.
+
+**D6 – Lỗi cần sửa:** Nếu kết quả 5/6, em quên trừ phần giao; nếu 1/6 đó là giao chứ không phải hợp.
+
+</details>
+
+
+### Bài tự luận có rubric độc lập
+
+### W01 — Tự luận /4 và lập luận toán học
+
+<!-- ITEM_ID: THPT-TOP20-W01; ROLE: TOPIC_WRITTEN; PRIMARY_OUTCOME: TOP20-O08; CONTENT_VERSION: TOP20-R02; PUBLIC_SELF_SCORED_NO_MASTERY; NOT_PROTECTED_RD1 -->
+
+Có 8 phiếu phân biệt, 3 phiếu đỏ và 5 phiếu xanh. Chọn đều một nhóm 2 phiếu không xét thứ tự. (a) Có bao nhiêu nhóm kết quả? (b) Tính P(cả hai đỏ). (c) Tính P(ít nhất một đỏ) bằng biến cố đối.
+
+<details><summary>Mở lời giải và rubric /4 sau khi tự làm</summary>
+
+**Lời giải:** (a) C(8,2)=28 nhóm. (b) C(3,2)/C(8,2)=3/28. (c) 1−C(5,2)/C(8,2)=1−10/28=18/28=9/14.
+
+**Rubric /4:**
+- Xác định đúng kết quả sơ cấp là nhóm không thứ tự và C(8,2)=28 — **1 điểm**.
+- Đếm nhóm toàn đỏ C(3,2)=3, tính 3/28 — **1 điểm**.
+- Chọn biến cố đối hai phiếu xanh với C(5,2)=10 — **1 điểm**.
+- Tính 1−10/28=9/14 và diễn giải ít nhất một đỏ — **1 điểm**.
+
+**D6:** Nếu sai, trở lại outcome TOP20-O08, tự thử T/P liên quan và chỉ đối chiếu sau khi tự giải. Kết quả tự đối chiếu không ghi Skill Mastery hoặc chính thức xác nhận Readiness.
+
+</details>
+
+### W02 — Tự luận /4 và lập luận toán học
+
+<!-- ITEM_ID: THPT-TOP20-W02; ROLE: TOPIC_WRITTEN; PRIMARY_OUTCOME: TOP20-O14; CONTENT_VERSION: TOP20-R02; PUBLIC_SELF_SCORED_NO_MASTERY; NOT_PROTECTED_RD1 -->
+
+Một lần gieo xúc xắc cân đối. A={2,4,6}, B={2,3,5}. (a) Tìm giao và hợp. (b) Tính xác suất hợp bằng quy tắc cộng. (c) Hai biến cố có độc lập không?
+
+<details><summary>Mở lời giải và rubric /4 sau khi tự làm</summary>
+
+**Lời giải:** A∩B={2}, A∪B={2,3,4,5,6}. P(A∪B)=3/6+3/6−1/6=5/6. P(A∩B)=1/6 nhưng P(A)P(B)=(1/2)(1/2)=1/4, nên không độc lập.
+
+**Rubric /4:**
+- Liệt kê giao {2} và hợp {2,3,4,5,6} — **1 điểm**.
+- Tính đúng P(A)=P(B)=3/6 và P(A∩B)=1/6 — **1 điểm**.
+- Áp dụng cộng tổng quát để được 5/6 — **1 điểm**.
+- So 1/6 với 1/4, kết luận không độc lập và nêu lý do — **1 điểm**.
+
+**D6:** Nếu sai, trở lại outcome TOP20-O14, tự thử T/P liên quan và chỉ đối chiếu sau khi tự giải. Kết quả tự đối chiếu không ghi Skill Mastery hoặc chính thức xác nhận Readiness.
+
+</details>
+
+### W03 — Tự luận /4 và lập luận toán học
+
+<!-- ITEM_ID: THPT-TOP20-W03; ROLE: TOPIC_WRITTEN; PRIMARY_OUTCOME: TOP20-O17; CONTENT_VERSION: TOP20-R02; PUBLIC_SELF_SCORED_NO_MASTERY; NOT_PROTECTED_RD1 -->
+
+Tung đồng xu cân đối và gieo một xúc xắc cân đối, hai phép thử độc lập. A: xu ngửa; B: xúc xắc lớn hơn 4. (a) Tính P(A∩B). (b) Tính P(A∪B). (c) Tính xác suất cả A và B đều không xảy ra.
+
+<details><summary>Mở lời giải và rubric /4 sau khi tự làm</summary>
+
+**Lời giải:** P(A)=1/2, P(B)=2/6=1/3. Vì độc lập nên P(A∩B)=1/6. P(A∪B)=1/2+1/3−1/6=2/3. Cả A,B đều không xảy ra là biến cố đối của hợp, xác suất=1−2/3=1/3.
+
+**Rubric /4:**
+- Nhận đúng P(A)=1/2, P(B)=1/3 và tính độc lập — **1 điểm**.
+- Tính giao bằng phép nhân là 1/6 — **1 điểm**.
+- Tính hợp 1/2+1/3−1/6=2/3 — **1 điểm**.
+- Lấy biến cố đối để được 1/3, giải thích cả hai đều không xảy ra — **1 điểm**.
+
+**D6:** Nếu sai, trở lại outcome TOP20-O17, tự thử T/P liên quan và chỉ đối chiếu sau khi tự giải. Kết quả tự đối chiếu không ghi Skill Mastery hoặc chính thức xác nhận Readiness.
+
+</details>
+
+
 ## 3. Tự kiểm tra — demo công khai, chưa có ngân hàng độc lập
 
 Hiện chỉ quy hoạch public replay không mastery. Không có đề private RD1 hay Final Submit chính thức. Release phải bảo vệ đáp án/gợi ý/Tutor/trạng thái đúng sai trước Submit nếu sau này chủ dự án cấp ngân hàng đánh giá riêng. Không đưa source G12 ChVI hoặc Bayes vào phạm vi bắt buộc CĐ20.
