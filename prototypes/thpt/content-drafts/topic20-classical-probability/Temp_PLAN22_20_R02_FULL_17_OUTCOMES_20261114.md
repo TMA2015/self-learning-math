@@ -44,6 +44,19 @@ Một **biến cố** \(A\) là tập con \(A\subseteq\Omega\): chỉ gồm nh�
 
 
 
+**Vì sao cần xét tập con?** Khi đổi tên một kết quả thành một câu “trúng hay không”, em phải nhận biết **mọi kết quả** làm câu ấy đúng; nếu bỏ sót một phần tử, tử số xác suất sẽ sai. **Bản chất:** A là tập con Ω, kết quả thuộc A thì A xảy ra. **Ví dụ:** xúc xắc chia hết cho 3 có A={3,6}. **Giới hạn:** ∅ là biến cố không thể, Ω là chắc chắn, A không phải một con số xác suất.
+
+**Tự thử bổ sung theo outcome G10-B26-EVENT_SUBSET (phân biệt khỏi câu SGK đã có).** Một vòng quay cân đối có các kết quả ghi 1 đến 6. Biến cố A là “kết quả không lớn hơn 2”. Hãy viết A và nói khi nào A xảy ra.
+
+<!-- ITEM_ID: THPT-TOP20-T10; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O02; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
+<details><summary>Mở lời giải sau khi tự thử</summary>
+
+**Giải:** A={1,2}; A xảy ra nếu lượt quay cho kết quả 1 hoặc 2.
+
+**D6 – Tự khắc phục:** Nếu viết A={2}, em đã bỏ kết quả 1 cũng không lớn hơn 2. Xem từng phần tử Ω={1,…,6}.
+
+</details>
+
 #### Đồng khả năng và cách tính xác suất
 
 Đối với không gian mẫu hữu hạn với **mọi kết quả sơ cấp đồng khả năng**, xác suất của \(A\) là
@@ -71,14 +84,18 @@ Không. Sáu phiếu vật lí đồng khả năng, P(đỏ)=2/6=1/3.
 
 
 
-**Tự thử bổ sung theo outcome G10-B26-EVENT_SUBSET (phân biệt khỏi câu SGK đã có).** Một vòng quay cân đối có các kết quả ghi 1 đến 6. Biến cố A là “kết quả không lớn hơn 2”. Hãy viết A và nói khi nào A xảy ra.
 
-<!-- ITEM_ID: THPT-TOP20-T10; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O02; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
+
+**Vì sao cần chọn đúng mô hình?** Rút 2 vé nhãn A, 3 vé nhãn B thì chọn **vé vật lí** chứ không chọn một trong hai tên nhãn. **Bản chất:** mỗi vé riêng biệt có xác suất 1/5; nhãn A gom 2 kết quả nên có xác suất 2/5. **Ví dụ:** nếu chọn đều 1 trong 5 vé, P(B)=3/5. **Giới hạn:** chỉ coi các phiếu đồng khả năng khi cơ chế rút đều; không gộp nhãn rồi chia 1/2.
+
+**Tự thử bổ sung theo outcome G10-B27-EQUIPROBABLE_MODELLING (phân biệt khỏi câu SGK đã có).** Một túi có 1 phiếu đỏ và 4 phiếu xanh khác nhau. Rút đều một phiếu. Xác suất nhãn “đỏ” có phải là 1/2 vì có hai màu?
+
+<!-- ITEM_ID: THPT-TOP20-T11; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O06; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
 <details><summary>Mở lời giải sau khi tự thử</summary>
 
-**Giải:** A={1,2}; A xảy ra nếu lượt quay cho kết quả 1 hoặc 2.
+**Giải:** Không. Không gian mẫu gồm 5 **phiếu vật lí** đồng khả năng, đúng 1 phiếu đỏ, P(đỏ)=1/5.
 
-**D6 – Tự khắc phục:** Nếu viết A={2}, em đã bỏ kết quả 1 cũng không lớn hơn 2. Xem từng phần tử Ω={1,…,6}.
+**D6 – Tự khắc phục:** Nếu ra 1/2, em lấy **màu** làm kết quả sơ cấp. Đặt tên phiếu R, B1,…,B4 rồi đếm.
 
 </details>
 
@@ -109,16 +126,9 @@ P(không đen)=19/20; P(đen)=1/20>0 nên đen là hiếm, không phải không 
 
 
 
-**Tự thử bổ sung theo outcome G10-B27-EQUIPROBABLE_MODELLING (phân biệt khỏi câu SGK đã có).** Một túi có 1 phiếu đỏ và 4 phiếu xanh khác nhau. Rút đều một phiếu. Xác suất nhãn “đỏ” có phải là 1/2 vì có hai màu?
 
-<!-- ITEM_ID: THPT-TOP20-T11; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O06; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
-<details><summary>Mở lời giải sau khi tự thử</summary>
 
-**Giải:** Không. Không gian mẫu gồm 5 **phiếu vật lí** đồng khả năng, đúng 1 phiếu đỏ, P(đỏ)=1/5.
-
-**D6 – Tự khắc phục:** Nếu ra 1/2, em lấy **màu** làm kết quả sơ cấp. Đặt tên phiếu R, B1,…,B4 rồi đếm.
-
-</details>
+**Vì sao phải phân biệt hiếm và không thể?** Một giải thưởng có ít vé vẫn có thể xuất hiện ở lượt đầu. **Bản chất:** một kết quả thuộc Ω cho xác suất dương khi các kết quả sơ cấp hữu hạn đồng khả năng. **Ví dụ:** 1 vé thưởng trong 50 vé có P=1/50, trong khi không có vé thưởng thì P=0. **Giới hạn:** xác suất nhỏ không dự đoán chính xác số lần xuất hiện của một cuộc chơi ngắn.
 
 **Tự thử bổ sung theo outcome G10-B26-SCOPE_SMALL_PROBABILITY (phân biệt khỏi câu SGK đã có).** Trong 100 vé đồng khả năng chỉ có một vé trúng. Biến cố trúng vé là không thể hay hiếm? Viết xác suất.
 
@@ -157,6 +167,8 @@ Không phân vai có C(6,2)=15 nhóm; phân hai vai có 6×5=30 cặp có thứ 
 
 
 
+**Vì sao dùng biến cố đối cho “ít nhất một”?** Khi chọn 2 trong 5 phiếu, có nhiều cách có ít nhất một phiếu thưởng, còn “không phiếu thưởng” thường chỉ có một họ trường hợp. **Bản chất:** P(ít nhất một)=1−P(không có). **Ví dụ:** nếu 2 đỏ, 3 xanh, nhóm 2 phiếu đồng khả năng, P(ít nhất một đỏ)=1−C(3,2)/C(5,2)=7/10. **Giới hạn:** đừng lấy 1−P(đúng một đỏ) nếu có thể có hai đỏ; cùng dùng **nhóm không thứ tự** ở cả tử lẫn mẫu.
+
 **Tự thử bổ sung theo outcome G10-B27-COMPLEMENT_PROBABILITY (phân biệt khỏi câu SGK đã có).** Từ 5 phiếu khác nhau (1 đỏ, 4 xanh), chọn đều **hai phiếu không xét thứ tự**. Xác suất ít nhất một phiếu đỏ?
 
 <!-- ITEM_ID: THPT-TOP20-T13; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O08; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
@@ -188,6 +200,8 @@ Có 36 cặp có thứ tự; chỉ (6,6) có tổng12 nên P=1/36.
 </details>
 
 
+
+**Vì sao cần sơ đồ cây?** Hai lượt rút có thể tạo AB khác BA và nhánh thứ hai có thể giảm lựa chọn. **Bản chất:** mỗi đường đi hoàn chỉnh là một chuỗi kết quả; chỉ lấy tỉ số số lá nếu các lá **đồng khả năng**. **Ví dụ:** hai lần tung đồng xu cân đối có NN,NS,SN,SS với P(đúng một ngửa)=2/4. **Giới hạn:** rút không hoàn lại khác rút có hoàn lại; không tự nhân xác suất biên như hai lượt độc lập.
 
 **Tự thử bổ sung theo outcome G10-B27-TREE_SEQUENCE (phân biệt khỏi câu SGK đã có).** Tung một đồng xu cân đối ba lần, coi chuỗi có thứ tự. Có mấy kết quả đồng khả năng và xác suất đúng hai mặt ngửa?
 
@@ -271,6 +285,8 @@ P=1/2×3/6=1/4. Hai phép thử độc lập nên số cặp thuận lợi=1×3 
 
 
 
+**Vì sao xung khắc không phải độc lập?** Khi một xúc xắc ra số chẵn, nó không thể đồng thời ra số lẻ, nên biến cố này **loại trừ** nhau. **Bản chất:** xung khắc khi giao rỗng; độc lập lại yêu cầu P(A∩B)=P(A)P(B). **Ví dụ:** A=chẵn và B=lẻ đều có P=1/2 nhưng giao 0≠1/4. **Giới hạn:** nếu một biến cố có P=0 thì vẫn có thể vừa xung khắc vừa độc lập; không áp kết luận không độc lập một cách tuyệt đối.
+
 **Tự thử bổ sung theo outcome G11-B28-DISJOINT_EVENTS (phân biệt khỏi câu SGK đã có).** Gieo một xúc xắc: A=ra 1 và B=ra 6. A,B có xung khắc không? Có độc lập không?
 
 <!-- ITEM_ID: THPT-TOP20-T15; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O13; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
@@ -309,6 +325,19 @@ A={1,3,5}, B={4,5,6}, giao={5}; P(hợp)=3/6+3/6−1/6=5/6.
 
 
 
+**Vì sao công thức cộng có bản rút gọn?** Khi một lần quay chỉ có thể rơi vào ô A **hoặc** ô B, không có ô nào nằm cả hai nhóm nên không đếm trùng. **Bản chất:** A∩B=∅ làm P(A∪B)=P(A)+P(B). **Ví dụ:** xúc xắc A={1}, B={4}, hợp hai kết quả nên P=2/6=1/3. **Giới hạn:** khi có phần giao, phải trở lại công thức tổng quát và trừ P(A∩B), không dùng rút gọn.
+
+**Tự thử bổ sung theo outcome G11-B29-ADDITION_DISJOINT (phân biệt khỏi câu SGK đã có).** Gieo xúc xắc cân đối. A={1,2}, B={5,6}. Tính P(A∪B) và nêu vì sao cộng trực tiếp.
+
+<!-- ITEM_ID: THPT-TOP20-T16; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O15; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
+<details><summary>Mở lời giải sau khi tự thử</summary>
+
+**Giải:** Hai tập rời nhau nên P(A∩B)=0, P(A∪B)=2/6+2/6=4/6=2/3.
+
+**D6 – Tự khắc phục:** Nếu nhân 2/6×2/6, em đã tính giao của biến cố độc lập; ở đây A,B xung khắc và đề hỏi hợp.
+
+</details>
+
 #### Quy tắc nhân độc lập và biến cố đối
 
 **Vì sao cần học?** Với hai hệ thống hoạt động độc lập, đôi khi câu hỏi là “cả hai cùng làm việc”, nhưng đôi khi là “ít nhất một làm việc”. Mỗi câu cần một cách nhìn khác.
@@ -338,16 +367,9 @@ P=1−P(cả hai hỏng)=1−(1/5)(1/4)=19/20.
 
 
 
-**Tự thử bổ sung theo outcome G11-B29-ADDITION_DISJOINT (phân biệt khỏi câu SGK đã có).** Gieo xúc xắc cân đối. A={1,2}, B={5,6}. Tính P(A∪B) và nêu vì sao cộng trực tiếp.
 
-<!-- ITEM_ID: THPT-TOP20-T16; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O15; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
-<details><summary>Mở lời giải sau khi tự thử</summary>
 
-**Giải:** Hai tập rời nhau nên P(A∩B)=0, P(A∪B)=2/6+2/6=4/6=2/3.
-
-**D6 – Tự khắc phục:** Nếu nhân 2/6×2/6, em đã tính giao của biến cố độc lập; ở đây A,B xung khắc và đề hỏi hợp.
-
-</details>
+**Vì sao phải phối hợp quy tắc?** Khi hai biến cố độc lập nhưng vẫn có thể cùng xảy ra, phép nhân giúp tính **giao**, sau đó phép cộng–trừ giao mới cho **hợp**. **Bản chất:** với hai phép thử độc lập P(A∩B)=P(A)P(B), P(A∪B)=P(A)+P(B)−P(A∩B). **Ví dụ:** xu ngửa P=1/2, xúc xắc >4 P=1/3, hợp=1/2+1/3−1/6=2/3. **Giới hạn:** đừng dùng phép nhân giản lược khi không chứng minh độc lập.
 
 **Tự thử bổ sung theo outcome G11-B30-COMBINED_RULES (phân biệt khỏi câu SGK đã có).** Tung đồng xu cân đối và gieo xúc xắc cân đối độc lập. A=đồng xu ngửa, B=xúc xắc chẵn. Tính P(A∪B).
 
