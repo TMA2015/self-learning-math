@@ -145,8 +145,8 @@ for(const [lessonStr,info]of Object.entries(specs)){
  }
  // Work Browser: label every D6 accordion by a distinctive learner error.
  const remediationTitles=[...rem.matchAll(/^    \?\?\? tip "([^"]+)"$/gm)].map(m=>m[1]);
- assert.equal(remediationTitles.length,info.count,name+" one labelled D6 card per voluntary item");
- assert.equal(new Set(remediationTitles).size,info.count,name+" identical D6 titles prevent targeted remediation");
+ assert.equal(remediationTitles.length,info.helps,name+" every D6 HELP has a specific caption");
+ assert.equal(new Set(remediationTitles).size,info.helps,name+" identical D6 titles prevent targeted remediation");
  assert(!remediationTitles.includes("Tự khắc phục theo năm bước"),name+" useless repeated remediation headings remain");
  assert(!/HELP-G10-CHVII-[A-Z0-9-]+`/.test(d),name+" raw HELP IDs leaked into open answer");
  if(n===20)assert(!/Hình bên cạnh/.test(examples),name+" worked example points to a missing figure");
