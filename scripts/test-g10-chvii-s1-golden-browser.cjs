@@ -55,6 +55,23 @@ const specs={
       tag+" Discovery explanation still split into per-outcome headings");
      assert(!/(Kiến thức tiền đề:|Bản chất trước công thức:|Hướng dẫn đọc hình:|Tại sao là D2 mới:)/.test(discoveryText),
       tag+" learner-facing PED/checklist labels returned");
+     assert(!/Mở hướng dẫn tự sửa ngay bên dưới|Mở câu luyện tập tương ứng để tự luyện|Trước khi xem lời giải/.test(discoveryText),
+       tag+" student-facing empty navigation notices were reintroduced");
+     assert.equal(await blocks.nth(0).locator('a:has-text("Luyện tập thêm")').count(),
+       ({19:7,20:5,21:5,22:6})[n],tag+" real deep-linked practice options missing");
+     if(n===21){
+       assert(!/vùng phủ được mô tả bằng mọi điểm cách trạm/.test(discoveryText),
+         tag+" B21 pre-R02 wrong full-disk description returned");
+       const formal=await blocks.nth(1).innerText();
+       assert(!formal.includes("Với đường thẳng d, đặt h=d(I,d)"),
+         tag+" B21 interlesson derivation entered compulsory formal Knowledge");
+     }
+     if(n===22){
+       const formal=await blocks.nth(1).innerText();
+       assert(!/tiệm cận/i.test(formal),tag+" non-S1 hyperbola asymptote entered compulsory formal Knowledge");
+       assert((await blocks.nth(2).innerText()).includes("Mở rộng có hướng dẫn"),
+         tag+" B22 worked hyperbola asymptote example lost optional placement");
+     }
      const newConceptFigures=await blocks.nth(0).locator("figure[data-chvii-r02-diagram]").count();
      assert.equal(newConceptFigures,({19:1,20:2,21:2,22:3})[n],tag+" R02 image must accompany the correct discovery");
      if(n===19)assert(discoveryText.includes("Mở rộng có hướng dẫn · Học sau Bài 20"),
