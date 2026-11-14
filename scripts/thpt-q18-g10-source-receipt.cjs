@@ -139,6 +139,19 @@ function chviiStemReceiptRows(){
  return rows;
 }
 
+const chviiComparisonReceipt="prototypes/thpt/ux795/G10_CHVII_R02_AP2_COMPARISON_DISPLAY_EQUIVALENT_RECEIPT_20261114.md";
+function chviiComparisonReceiptRows(){
+ const file=path.join(root,chviiComparisonReceipt);
+ if(!fs.existsSync(file))return new Map();
+ const data=fs.readFileSync(file,"utf8");
+ const found=[...data.matchAll(/^\| B(19|20|21|22) \| \x60([a-f0-9]{40})\x60 \| \x60([a-f0-9]{40})\x60 \| (\d+) \| (\d+) \|/gm)];
+ assert.equal(found.length,4,"B19–B22 comparison display requires exactly four source receipts");
+ const rows=new Map(found.map(m=>["B"+m[1],{
+  baseline:m[2],candidate:m[3],moved:Number(m[4]),lines:Number(m[5])}]));
+ assert.equal(rows.size,4,"Duplicate comparison receipt");
+ return rows;
+}
+
 function expectedG10KnowledgeBlob(lesson,legacy){
  assert(/^[a-f0-9]{40}$/.test(legacy),"Historical source SHA malformed");
  const name="B"+String(lesson).replace(/^B/,"").padStart(2,"0");
@@ -215,6 +228,15 @@ function expectedG10KnowledgeBlob(lesson,legacy){
         assert.equal(stems.baseline,work.candidate,name+" display-only AP2 must start at exact Work-fixed source");
         assert.equal(stems.moved,work.moved,name+" AP2 must preserve 25 canonical questions");
         assert.notEqual(stems.candidate,stems.baseline,name+" AP2 display must actually change source");
+        const answers=chviiComparisonReceiptRows().get(name);
+        if(answers){
+         assert.equal(answers.baseline,stems.candidate,name+" AP2 comparisons require the exact stem-formatted source");
+         assert.equal(answers.moved,stems.moved,name+" AP2 comparison cannot add/remove canonical items");
+         assert.equal(answers.lines,({B19:14,B20:10,B21:10,B22:14})[name],
+          name+" AP2 comparison line count must remain frozen");
+         assert.notEqual(answers.candidate,answers.baseline,name+" AP2 comparison rendering must change source");
+         return answers.candidate;
+        }
         return stems.candidate;
        }
        return work.candidate;
@@ -235,4 +257,4 @@ function candidateG10KnowledgeBlob(lesson){
  const sentinel="0".repeat(40),result=expectedG10KnowledgeBlob(lesson,sentinel);
  return result===sentinel?null:result;
 }
-module.exports={expectedG10KnowledgeBlob,candidateG10KnowledgeBlob,chivEditorialReceiptRows,chvEditorialReceiptRows,chviEditorialReceiptRows,chviExampleUxReceiptRows,chviiEditorialReceiptRows,chviiContinuousReceiptRows,chviiAp2ReceiptRows,chviiR02ReceiptRows,chviiClarityReceiptRows,chviiWorkFollowupReceiptRows,chviiStemReceiptRows};
+module.exports={expectedG10KnowledgeBlob,candidateG10KnowledgeBlob,chivEditorialReceiptRows,chvEditorialReceiptRows,chviEditorialReceiptRows,chviExampleUxReceiptRows,chviiEditorialReceiptRows,chviiContinuousReceiptRows,chviiAp2ReceiptRows,chviiR02ReceiptRows,chviiClarityReceiptRows,chviiWorkFollowupReceiptRows,chviiStemReceiptRows,chviiComparisonReceiptRows};
