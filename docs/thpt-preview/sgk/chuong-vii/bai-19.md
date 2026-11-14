@@ -77,7 +77,7 @@
 
         **Đáp án:** \(x=1-2t,\ y=-1+3t\) (\(t\in\mathbb R\)).
 
-        **Lý do:** Khi \(t=0\) thu \(A\); khi \(t=1\) thu \(A+\vec u=(-1,2)\). Mọi điểm thuộc đường có độ dời \(t\vec u\).
+        **Lý do:** Khi \(t=0\) thu \(A\); khi \(t=1\) thu \(A+\vec u=(-1,2)\). Mọi điểm thuộc đường có độ dời \(t\cdot\vec u\).
 
 
 
@@ -99,7 +99,7 @@
 
         **Đáp án:** \(x-y+3=0\).
 
-        **Lý do:** \(\overrightarrow{AB}=(3,3)\ne(0,0)\), chọn \(\vec n=(1,-1)\). Qua \(A\): \((x+1)-(y-2)=0\Rightarrow x-y+3=0\); thế \(B\): \(2-5+3=0\).
+        **Lý do:** \(\overrightarrow{AB}=(3,3)\ne0\), chọn \(\vec n=(1,-1)\). Qua \(A\): \((x+1)-(y-2)=0\Rightarrow x-y+3=0\); thế \(B\): \(2-5+3=0\).
 
 
 
