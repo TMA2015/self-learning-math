@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 500" width="840" height="500" role="img" aria-labelledby="title desc">
+<title id="title">Biến cố hợp, giao và hai kết quả đếm trùng khi gieo xúc xắc</title>
+<desc id="desc">Không gian mẫu một xúc xắc cân đối là 1 đến 6. Biến cố A số chẵn gồm 2,4,6; B số lớn hơn 3 gồm 4,5,6. Giao A và B gồm 4,6; chỉ A có 2; chỉ B có 5; ngoài hai biến cố có 1,3. Do đó xác suất hợp A hoặc B bằng 4 phần 6, không phải 6 phần 6.</desc>
+<rect width="840" height="500" rx="12" fill="#ffffff"/>
+<rect x="14" y="14" width="812" height="470" rx="12" fill="none" stroke="#ccdcea" stroke-width="2"/>
+<text x="38" y="53" font-family="Arial,sans-serif" fill="#153f6a" font-size="23" font-weight="bold">Đọc vùng chung trước khi cộng xác suất</text>
+<text x="38" y="85" font-family="Arial,sans-serif" fill="#3b607b" font-size="16">Một lần gieo xúc xắc cân đối, Ω = {1, 2, 3, 4, 5, 6}</text>
+<rect x="60" y="106" width="720" height="285" rx="14" fill="#f7faff" stroke="#b0c5dc" stroke-width="2"/>
+<circle cx="342" cy="243" r="125" fill="#daeafb" fill-opacity="0.76" stroke="#2e73b2" stroke-width="3"/>
+<circle cx="510" cy="243" r="125" fill="#dcf6e9" fill-opacity="0.76" stroke="#298d64" stroke-width="3"/>
+<text x="272" y="136" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#124b88" text-anchor="middle">A: chẵn</text>
+<text x="582" y="136" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#146746" text-anchor="middle">B: &gt; 3</text>
+<g font-family="Arial,sans-serif" font-size="32" text-anchor="middle" font-weight="bold" fill="#153e60">
+<text x="283" y="258">2</text>
+<text x="425" y="226">4</text>
+<text x="425" y="280">6</text>
+<text x="566" y="258">5</text>
+<text x="104" y="338">1</text>
+<text x="746" y="338">3</text>
+</g>
+<text x="420" y="420" font-family="Arial,sans-serif" font-size="17" font-weight="bold" fill="#174d70" text-anchor="middle">A ∩ B = {4,6} · A ∪ B = {2,4,5,6}</text>
+<text x="420" y="453" font-family="Arial,sans-serif" font-size="17" fill="#2b5e77" text-anchor="middle">P(A ∪ B) = 3/6 + 3/6 − 2/6 = 4/6 = 2/3</text>
+</svg>
