@@ -11,6 +11,8 @@ on:
       - "prototypes/thpt/ux795/G10_CHVII_B19_B22_R02_LEARNER_CLARITY_DELTA_RECEIPT_20261114.md"
       - "prototypes/thpt/ux795/G10_CHVII_R02_WORK_BROWSER_FOLLOWUP_UX_RECEIPT_20261114.md"
       - "prototypes/thpt/ux795/G10_CHVII_R02_AP2_STEM_DISPLAY_EQUIVALENT_RECEIPT_20261114.md"
+      - "prototypes/thpt/ux795/G10_CHVII_R02_AP2_COMPARISON_DISPLAY_EQUIVALENT_RECEIPT_20261114.md"
+      - "scripts/test-g10-chvii-ap2-comparisons.cjs"
       - "scripts/test-g10-chvii-ap2-stems.cjs"
       - "docs/assets/images/thpt/THPT_G10_CHVII_HYPERBOLA_TRANSFER_D5_R00.svg"
       - "docs/assets/images/thpt/G10_CHVII_R02_*.svg"
@@ -34,8 +36,10 @@ jobs:
         run: |
           git fetch --no-tags --depth=3 origin bfc15b552a1ea697edb1327f0a48d7a95bbb73ed
           git fetch --no-tags --depth=3 origin 1fd114150a170948d28aaca1abd04f3023af12ed
+          git fetch --no-tags --depth=3 origin fb96ca34e3e4f2787177a5a3834253bda549253b
           node scripts/test-g10-chvii-editorial-source.cjs
           node scripts/test-g10-chvii-ap2-stems.cjs
+          node scripts/test-g10-chvii-ap2-comparisons.cjs
           node scripts/test-thpt-q18-release-test-router.cjs
       - name: Build real candidate website, no deployment
         run: |
