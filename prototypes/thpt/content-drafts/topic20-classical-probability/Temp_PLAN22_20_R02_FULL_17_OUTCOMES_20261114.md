@@ -250,7 +250,7 @@ A={2,4,6}, B={5,6}; giao={6}, hợp={2,4,5,6}.
 
 
 
-    ![Hợp và giao hai biến cố trong không gian 12 kết quả đồng khả năng](assets/Temp_TOPIC3_PROBABILITY_VENN_G11_R01_20261111.svg)
+    **Hình áp dụng:** Dùng sơ đồ Venn nền trắng ngay phía trên để kiểm phần chung {4,6} và hợp {2,4,5,6}; không cần một hình thứ hai có đường dẫn cũ từ gói xác suất kết hợp.
 
     **Đọc hình:** Vùng chồng là giao, gồm 6 và 12; toàn bộ hai hình tròn là hợp (8 kết quả), còn bốn số bên ngoài không thuộc hợp. Hình chỉ minh họa bài toán số 1–12, không mặc định xác suất của mọi tình huống đều đồng khả năng.
 
@@ -350,7 +350,7 @@ Nếu \(A,B\) độc lập thì \(\bar A,\bar B\) cũng độc lập.
 
 **Ví dụ có suy luận.** Hai thiết bị độc lập có xác suất chạy được \(3/4\) và \(4/5\). Cả hai chạy: \((3/4)(4/5)=3/5\). Cả hai hỏng: \((1/4)(1/5)=1/20\). Ít nhất một chạy: \(1-1/20=19/20\). So sánh ba câu hỏi trước khi chọn công thức.
 
-**Giới hạn:** Khi rút liên tiếp không hoàn lại hoặc có quan hệ nguyên nhân, không tự nhân hai xác suất biên; sang mảng Xác suất có điều kiện để giải quyết đúng.
+**Giới hạn:** Khi rút liên tiếp không hoàn lại hoặc hai biến cố phụ thuộc, không nhân hai xác suất ban đầu như thể độc lập. Trong chuyên đề này, em vẫn có thể **đếm các chuỗi kết quả đồng khả năng** để giải tình huống cụ thể; công thức xác suất có điều kiện sẽ được học ở chuyên đề khác, không phải tiền đề bắt buộc ở đây.
 
 **Tự thử trước khi xem lời giải.** Hai thiết bị hoạt động độc lập, xác suất hỏng lần lượt 1/5 và 1/4. Xác suất có ít nhất một thiết bị hoạt động là bao nhiêu?
 
