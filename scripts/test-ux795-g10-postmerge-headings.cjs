@@ -61,6 +61,14 @@ if(chviiR02Text)assert.equal(chviiR02Matches.length,4,"R02 academic intake requi
 const chviiR02=new Map(chviiR02Matches.map(m=>[Number(m[1]),{
  baseline:m[2],candidate:m[3],tries:Number(m[4]),helps:Number(m[5]),examples:Number(m[6])}]));
 
+const clarityPath=path.join(root,
+ "prototypes/thpt/ux795/G10_CHVII_B19_B22_R02_LEARNER_CLARITY_DELTA_RECEIPT_20261114.md");
+const clarityText=fs.existsSync(clarityPath)?fs.readFileSync(clarityPath,"utf8"):"";
+const clarityMatches=[...clarityText.matchAll(/^\| B(19|20|21|22) \| \x60([a-f0-9]{40})\x60 \| \x60([a-f0-9]{40})\x60 \| (\d+) \| (\d+) \| (\d+) \|/gm)];
+if(clarityText)assert.equal(clarityMatches.length,4,"exact four ChVII learner-clarity rows");
+const clarity=new Map(clarityMatches.map(m=>[Number(m[1]),{
+ baseline:m[2],candidate:m[3],tries:Number(m[4]),helps:Number(m[5]),examples:Number(m[6])}]));
+
 const htmlSelfPractice=/<summary[^>]*>\s*Xem lời giải ba câu tự luyện\s*<\/summary>/g;
 const blob=raw=>crypto.createHash("sha1")
  .update(Buffer.from("blob "+raw.length+"\0")).update(raw).digest("hex");
@@ -81,7 +89,7 @@ for(let n=1;n<=27;n++){
   const source=fs.readFileSync(path.join(root,"docs",route+".md"));
   assert.equal(blob(source),followon.candidate,"B"+n+" source SHA must match signed UX receipt");
  }
- const signedVII=chvii.get(n),amendedVII=chviiNarrative.get(n),ap2=chviiAp2.get(n),r02=chviiR02.get(n);
+ const signedVII=chvii.get(n),amendedVII=chviiNarrative.get(n),ap2=chviiAp2.get(n),r02=chviiR02.get(n),edited=clarity.get(n);
  if(signedVII){
   const source=fs.readFileSync(path.join(root,"docs",route+".md"));
   if(amendedVII){
@@ -103,7 +111,14 @@ for(let n=1;n<=27;n++){
    assert.equal(r02.helps,signedVII.helps,"B"+n+" D6 count");
    assert.equal(r02.examples,signedVII.examples,"B"+n+" unchanged worked SGK examples");
   }
-  assert.equal(blob(source),r02?r02.candidate:(ap2?ap2.candidate:(amendedVII?amendedVII.candidate:signedVII.candidate)),
+  if(edited){
+   assert(r02,"B"+n+" clarity receipt must extend independent Academic/PED R02 source");
+   assert.equal(edited.baseline,r02.candidate,"B"+n+" R02 source chain must be exact");
+   assert.equal(edited.tries,signedVII.tries,"B"+n+" canonical First Try must be fixed");
+   assert.equal(edited.helps,signedVII.helps,"B"+n+" HELP must be fixed");
+   assert.equal(edited.examples,signedVII.examples,"B"+n+" D2 worked examples must be fixed");
+  }
+  assert.equal(blob(source),edited?edited.candidate:(r02?r02.candidate:(ap2?ap2.candidate:(amendedVII?amendedVII.candidate:signedVII.candidate))),
    "B"+n+" ChVII source must match latest signed Q18 source-chain receipt");
   assert.equal(ids.length,signedVII.tries,"B"+n+" original ChVII FirstTry count");
   assert.equal([...markdown.matchAll(/data-thpt-help-id="([^"]+)"/g)].length,signedVII.helps,
