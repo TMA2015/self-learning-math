@@ -8,13 +8,13 @@ BRANCH: authoring/topic18-oxyz-r00-source-preflight-20261113
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R02_FULL_40_OUTCOMES_20261114.md
 ACADEMIC_SOURCE_BLOB: f84dee296e2880c2d17fa2306c44458031c057cd
 CANONICAL_MATRIX_BLOB: db9b91dd0143e3b0fd8609cb5c5904bf73b86cec
-SIGNED_AUTHOR_Q18_RECEIPT_BLOB: fff53ada4d2ec2b42d89f70b99c3d60f6793fe6f
+SIGNED_AUTHOR_Q18_RECEIPT_BLOB: f075d4795b28e03e5f437af02f6574ec45772260
 HANDOFF_V2_PATH: prototypes/thpt/release-handoffs/THPT-TOPIC18-OXYZ-FULL-R02_HANDOFF_V2_20261114.md
-HANDOFF_V2_BLOB: f11a8b8af7284326424944b92ab1c0a47a8a97ae
+HANDOFF_V2_BLOB: 3777d898ba24bed05e5eec25577158e782b06a98
 READY_MANIFEST_PATH: prototypes/thpt/release-queue/ready/THPT-TOPIC18-OXYZ-FULL-R02.md
-READY_MANIFEST_BLOB: 91c948469b5f58046376b5db26b097d65934c08d
+READY_MANIFEST_BLOB: 8f784ce7e1841ef336826e52935bba1a135d4929
 REGISTER_PATH: prototypes/thpt/release-queue/REGISTER.md
-REGISTER_BLOB: 353fdcb485ef9e545e297b4741630f5fd4d761a2
+REGISTER_BLOB: 8a84b4bc6954e4fc1c9b4e57b2b434747757da1d
 Q01_AUDIT_BLOB: 052b06ea90d6191f125aef72f42d74dd9a6d86c8
 Q18_OUTCOME_MATH_PED_AUDIT_BLOB: 4785b3be15b49f968de27fad99fc311cb2f8bb1b
 P0: 0
@@ -43,3 +43,7 @@ RELEASE_AUTHORIZATION: NO
 ## Source-only CI metadata compliance repair (after first exact-head workflows)
 
 Initial draft CI ran against R02 source and detected **three metadata-only manifest contract mismatches**, not a math/learner source defect: `BLOCKERS` must literally be `NONE` (SBT p25 P2 note remains separate and truthful); `SOURCE_COMMIT` is required; checklist keys must match exact A1–A7/R1–R5/P1–P2 canonical names. The V2 handoff and manifest were repaired on author branch, and register/handoff SHA re-synchronized as shown above. No learner source, Q01 item mathematical key, Q18 receipt, model or SVG content was modified for this CI repair. Exact-head re-run must be verified before claiming CI PASS.
+
+## Machine-readable Q18 receipt and indexed V2 mapping correction
+
+The next exact-head CI cycle identified missing `S1_RECEIPT:`, `OUTCOME_AUDIT:`, `MATH_VERIFICATION:`, `PED_VERIFICATION:`, `CANONICAL_Q15:`, `ASSESSMENT_Q16:` schema tokens in a signed receipt despite their underlying evidence appearing in paragraphs. These labels were added with the SAME bounded actual KNTT source/math/PED facts (now receipt blob `f075d4795b28e03e5f437af02f6574ec45772260`). Additionally the V2 handoff matrix was converted from a seven-column human-readable original-provenance row to the validator-accepted **indexed six-column Topic placement schema** (247 rows), while the separate canonical 247-ID matrix retains all 7 original-provenance columns. No new or changed learner item, solved key, SVG, model or SGK source. Manifest/REGISTER SHAs were re-synchronized. **Check newly generated exact-head workflows before claiming final CI PASS.**
