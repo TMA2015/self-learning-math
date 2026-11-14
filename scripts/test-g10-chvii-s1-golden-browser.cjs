@@ -120,7 +120,7 @@ const specs={
        tag+" AP2 formulas not actually typeset in Discovery; rendered math nodes: "+rendered);
      assert.equal(await blocks.nth(0).locator("mjx-merror,.katex-error").count(),0,
        tag+" broken mathematical notation in learner Discovery");
-     const prompts=blocks.nth(0).locator("p:has(> strong:text-is('Em vận dụng.'))");
+     const prompts=blocks.nth(0).locator("p:has(> strong)").filter({hasText:/^(?:Em\s+)?Vận dụng\./});
      assert.equal(await prompts.count(),s.tries,tag+" every Vận dụng keeps its own visible question paragraph");
      for(let item=0;item<s.tries;item++){
        const prompt=prompts.nth(item);
