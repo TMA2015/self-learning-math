@@ -7,7 +7,7 @@ LEARNING_PATH: TOPIC
 STANDARD_VERSION: 3.1.0
 STATE: AUTHOR_Q15_MAPPING_VERIFIED_Q18_NOT_YET_SIGNED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOPIC19_COMBINATORICS_BINOMIAL_R02_FULL_13_OUTCOMES_20261114.md
-ACADEMIC_SOURCE_BLOB: 2a09486b21e5deb6e4a86f20ad4103adeedb2485
+ACADEMIC_SOURCE_BLOB: 9f05f9bfc91cad6edf4049baea7ea7dd03eb0c8a
 DIRECT_S1_PDF_RECEIPT_BLOB: 850dd241e60de58ccf032e48e1e13530988436e3
 SGK_PDF_SHA256: ee8a00392e1c9fc5b213e574666cf1f8487548737e138573f28a988c640fafe6
 SBT_PDF_SHA256: 3cb33690e0627b9e8ac467c23625b7feb7d05a8422293db0e1b26e44ca6a78c7
@@ -26,7 +26,7 @@ INTERACTIVE_MODEL_BLOB: f4a078d0a7b4111f6cac483cca6cca65f05c111c
 
 ## Q15 — one canonical definition, many roles and placements
 
-Each SGK `THPT-G10-B2xx-C/Pxx` is defined **only** in existing main JS blob `2ae62fada28913ec336b3507684408a1e05a3232`. This Topic source references its ID once in a placement table, **does not** copy the SGK question's stem, answer, solution, hint or rubric. All 29 new `THPT-TOP19-Txx/Pxx/Wxx` have exactly one authoring definition each in R02 source blob `2a09486b21e5deb6e4a86f20ad4103adeedb2485`. Seven public `TOPIC/TU_KIEM_TRA/REPLAY` placements reuse existing `Pxx` definitions and must not count as independent assessment or create new IDs.
+Each SGK `THPT-G10-B2xx-C/Pxx` is defined **only** in existing main JS blob `2ae62fada28913ec336b3507684408a1e05a3232`. This Topic source references its ID once in a placement table, **does not** copy the SGK question's stem, answer, solution, hint or rubric. All 29 new `THPT-TOP19-Txx/Pxx/Wxx` have exactly one authoring definition each in R02 source blob `9f05f9bfc91cad6edf4049baea7ea7dd03eb0c8a`. Seven public `TOPIC/TU_KIEM_TRA/REPLAY` placements reuse existing `Pxx` definitions and must not count as independent assessment or create new IDs.
 
 | # | item_id | primary_outcome | role | placement | source_type |
 |---|---|---|---|---|---|
