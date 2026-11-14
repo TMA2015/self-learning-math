@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 535" role="img" aria-labelledby="title description">
+<title id="title">Cây xác suất hai nguồn và công thức Bayes</title>
+<desc id="description">Từ gốc chọn X xác suất một phần tư, Y ba phần tư. Ở X, lỗi một phần mười và tốt chín phần mười; ở Y, lỗi một phần ba mươi và tốt hai mươi chín phần ba mươi. Lá X lỗi một phần bốn mươi, X tốt chín phần bốn mươi, Y lỗi một phần bốn mươi, Y tốt hai mươi chín phần bốn mươi. Tổng xác suất lỗi một phần hai mươi, và xác suất Y khi đã biết lỗi một phần hai.</desc>
+<rect x="1" y="1" width="998" height="533" rx="14" fill="#ffffff" stroke="#a8b8ca" stroke-width="2"/>
+<text x="26" y="42" font-family="Arial,sans-serif" font-size="22" font-weight="bold" fill="#173c5e">Nhân trên đường đi · Cộng các lá có cùng kết quả · Đảo bằng Bayes</text>
+<text x="26" y="71" font-family="Arial,sans-serif" font-size="16" fill="#425b74">Hai nguồn X và Y chọn đúng một; “L” là lỗi và “T” là không lỗi</text>
+<g stroke="#617d99" stroke-width="2.8" stroke-linecap="round" fill="none">
+<path d="M150 253 L348 151 M150 253 L348 367"/>
+<path d="M401 151 L686 111 M401 151 L686 202"/>
+<path d="M401 367 L686 327 M401 367 L686 420"/>
+</g>
+<g font-family="Arial,sans-serif" font-weight="bold" fill="#153d5e" text-anchor="middle">
+<rect x="31" y="233" width="130" height="40" rx="10" fill="#e7f1fa" stroke="#688bac"/>
+<text x="96" y="259" font-size="17">Bắt đầu</text>
+<rect x="347" y="131" width="73" height="40" rx="10" fill="#e6f1fb" stroke="#5a8db7"/>
+<text x="384" y="157" font-size="19">X</text>
+<rect x="347" y="347" width="73" height="40" rx="10" fill="#eff6ec" stroke="#7aa577"/>
+<text x="384" y="373" font-size="19">Y</text>
+</g>
+<g font-family="Arial,sans-serif" font-size="17" fill="#1f4668">
+<text x="235" y="177">1/4</text><text x="234" y="347">3/4</text>
+<text x="524" y="110">1/10</text><text x="522" y="194">9/10</text>
+<text x="524" y="320">1/30</text><text x="519" y="421">29/30</text>
+</g>
+<g font-family="Arial,sans-serif" font-size="17" font-weight="bold" fill="#254a6e">
+<rect x="685" y="90" width="286" height="42" rx="9" fill="#fff0ef" stroke="#bd7a74"/>
+<text x="704" y="117">X → L</text><text x="835" y="117">1/40</text>
+<rect x="685" y="181" width="286" height="42" rx="9" fill="#edf6fa" stroke="#8eaabf"/>
+<text x="704" y="208">X → T</text><text x="835" y="208">9/40</text>
+<rect x="685" y="306" width="286" height="42" rx="9" fill="#fff0ef" stroke="#bd7a74"/>
+<text x="704" y="333">Y → L</text><text x="835" y="333">1/40</text>
+<rect x="685" y="399" width="286" height="42" rx="9" fill="#edf6fa" stroke="#8eaabf"/>
+<text x="704" y="426">Y → T</text><text x="835" y="426">29/40</text>
+</g>
+<text x="27" y="478" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#153d5e">P(L)=1/40+1/40=1/20</text>
+<text x="27" y="511" font-family="Arial,sans-serif" font-size="18" fill="#153d5e">P(Y | L)=(1/40)/(2/40)=1/2 · diện tích/độ dài nhánh không biểu thị xác suất</text>
+</svg>
