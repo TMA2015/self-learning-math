@@ -206,6 +206,11 @@ Có 36 cặp có thứ tự; chỉ (6,6) có tổng12 nên P=1/36.
 
 #### Hợp, giao và xung khắc
 
+![Đọc phần giao và phần hợp của hai biến cố khi gieo xúc xắc](../../../../docs/assets/images/thpt/FIG-TOP20-G11-B28-B29_VENN_WHITE_R00.svg)
+
+**Cách đọc hình:** Khung Ω ghi các kết quả 1–6. Bên trái A chứa {2,4,6}, bên phải B chứa {4,5,6}; vùng chồng nhau chỉ có **4 và 6**, vùng chỉ A là 2, vùng chỉ B là 5; 1 và 3 ở ngoài hai tập. Do đó hợp chứa **bốn** kết quả, giao chứa **hai** kết quả: khi tính P(A∪B) phải trừ đi phần giao đã đếm hai lần. Độ lớn/vị trí hình tròn chỉ để hướng dẫn nhìn tập hợp, **không** mang ý nghĩa diện tích xác suất.
+
+
 **Vì sao cần học?** Một người có thể thích cả bóng đá và bóng rổ. Khi hỏi “thích ít nhất một”, ta cần gom hai nhóm nhưng không được đếm một người hai lần. Trong xác suất, mỗi **biến cố** là một tập kết quả.
 
 - **Hợp** \(A\cup B\): xảy ra \(A\) hoặc \(B\) (kể cả cả hai).
