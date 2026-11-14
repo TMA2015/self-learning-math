@@ -101,7 +101,7 @@ function renderXYZ(){
 }
 function renderSphere(){
  var R=+radius.value,d=+distance.value,r=d<R?Math.sqrt(R*R-d*d):0;
- var scale=100/R,cx=200,cy=156,rPx=R*scale,py=cy-d*scale;
+ var scale=96/Math.max(R,d,1),cx=200,cy=156,rPx=R*scale,py=cy-d*scale;
  $("rv").textContent=fmt(R);$("dv").textContent=fmt(d);
  $("sphere-circle").setAttribute("r",String(rPx));
  path("plane-line","M 27,"+py+" L 373,"+py);
