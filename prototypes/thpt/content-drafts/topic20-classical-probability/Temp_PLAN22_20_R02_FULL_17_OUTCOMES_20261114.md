@@ -463,13 +463,13 @@ Trong 40 vé khác nhau có một vé trúng. Phân biệt xác suất trúng v�
 
 <!-- ITEM_ID: THPT-TOP20-P06; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O06; CONTENT_VERSION: TOP20-R02; PUBLIC_FORMATIVE_NO_MASTERY -->
 
-Gieo hai xúc xắc sáu mặt cân đối, phân biệt và độc lập. So sánh xác suất tổng hai mặt bằng 2 với xác suất tổng bằng 7. Có được coi 11 tổng từ 2 đến 12 là các kết quả đồng khả năng không?
+Bốn thẻ phân biệt được ghi 1, 2, 3, 4. Rút lần lượt hai thẻ **không hoàn lại**, mỗi lượt chọn đều trong các thẻ còn lại; chỉ ghi **tổng hai số**. So sánh xác suất tổng bằng 5 và tổng bằng 7. Có được xem các tổng có thể xuất hiện là đồng khả năng không?
 
 <details><summary>Mở lời giải sau khi tự làm</summary>
 
-**Giải:** Không. Mỗi **cặp có thứ tự** của hai xúc xắc là một kết quả sơ cấp; có \(6\cdot6=36\) cặp đồng khả năng. Tổng 2 chỉ có (1,1), nên \(P(S=2)=1/36\). Tổng 7 gồm (1,6),(2,5),(3,4),(4,3),(5,2),(6,1), nên \(P(S=7)=6/36=1/6\). Hai tổng không đồng khả năng.
+**Giải:** Mỗi cặp có thứ tự của hai thẻ khác nhau có xác suất \(1/(4\cdot3)=1/12\). Tổng 5 do bốn cặp (1,4),(4,1),(2,3),(3,2), nên \(P(S=5)=4/12=1/3\). Tổng 7 do hai cặp (3,4),(4,3), nên \(P(S=7)=2/12=1/6\). Các tổng không đồng khả năng dù mỗi lần rút từng thẻ là đều.
 
-**D6 – Lỗi cần sửa:** Nếu nói hai xác suất đều bằng 1/11, em đã gộp nhiều cặp khác nhau thành **nhãn tổng** và ngộ nhận 11 nhãn đồng khả năng. Hãy vẽ bảng 6×6, khoanh từng cặp tạo tổng 2 hoặc 7.
+**D6 – Lỗi cần sửa:** Nếu chia cho 5 vì thấy các tổng 3,4,5,6,7, em đang coi các **nhãn tổng** là kết quả đồng khả năng. Hãy lập bảng cặp có thứ tự \((a,b)\) với \(a\ne b\), khoanh bốn cặp tổng 5 và hai cặp tổng 7. Không tính cặp \((a,a)\) vì rút không hoàn lại.
 
 </details>
 
