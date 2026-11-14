@@ -25,7 +25,7 @@
 
     <figure class="thpt-r4-plot thpt-r4-concept-figure" data-chvii-r02-diagram="TRY01"><img src="../../../../assets/images/thpt/G10_CHVII_R02_B19_TRY01_VECTOR.svg" loading="lazy" alt="Vectơ pháp tuyến n vuông góc với vectơ chỉ phương u, minh họa n·u bằng 0."><figcaption>Một đường thẳng có hướng dọc theo vectơ chỉ phương và hướng vuông góc theo vectơ pháp tuyến.</figcaption></figure>
 
-    **Em vận dụng.** Cho n=(2,3) là pháp tuyến của d. Vectơ u=(-3,2) có phải một chỉ phương của d không? Nêu phép kiểm.
+    **Em vận dụng.** Cho \(\vec n=(2,3)\) là pháp tuyến của \(d\). Vectơ \(\vec u=(-3,2)\) có phải một chỉ phương của \(d\) không? Nêu phép kiểm.
 
     ??? question "Đối chiếu"
 
@@ -49,7 +49,7 @@
     \]
     Khai triển mới có dạng \(ax+by+c=0\). Chính quan hệ vuông góc sinh ra phương trình, không phải ta tự đặt một mẫu chữ cái để học thuộc. **Điều kiện không thể bỏ:** \((a,b)\ne(0,0)\), vì vectơ không không xác định được hướng vuông góc.
 
-    **Em vận dụng.** Đường thẳng qua A(1,3), pháp tuyến n=(2,-1) có phương trình tổng quát nào?
+    **Em vận dụng.** Đường thẳng qua \(A(1,3)\), pháp tuyến \(\vec n=(2,-1)\) có phương trình tổng quát nào?
 
     ??? question "Đối chiếu"
 
@@ -71,7 +71,7 @@
 
     Đó là ý nghĩa của phương trình tham số \(x=x_A+tu_x,\ y=y_A+tu_y\) với \(t\in\mathbb R\). Chữ \(t\) chỉ là một tham số quét các vị trí trên đường, không nhất thiết là thời gian và cũng không phải một tọa độ. Khi lập phương trình, thử hai giá trị \(t=0,1\) là cách kiểm nhanh điểm xuất phát và hướng đi.
 
-    **Em vận dụng.** Viết phương trình tham số đường thẳng qua A(1,-1), chỉ phương u=(-2,3).
+    **Em vận dụng.** Viết phương trình tham số đường thẳng qua \(A(1,-1)\), chỉ phương \(\vec u=(-2,3)\).
 
     ??? question "Đối chiếu"
 
@@ -93,7 +93,7 @@
 
     Có thể hình dung mũi tên \(\overrightarrow{AB}\) nối hai mốc và pháp tuyến dựng vuông góc với mũi tên ấy. Sau khi viết phương trình, hãy thế tọa độ cả \(A\) lẫn \(B\) để kiểm tra. Nếu hai điểm trùng nhau, không có hướng \(\overrightarrow{AB}\) khác 0; một điểm duy nhất không xác định được một đường thẳng duy nhất.
 
-    **Em vận dụng.** Cho A(-1,2), B(2,5). Viết một phương trình tổng quát của đường AB.
+    **Em vận dụng.** Cho \(A(-1,2)\), \(B(2,5)\). Viết một phương trình tổng quát của đường \(AB\).
 
     ??? question "Đối chiếu"
 
@@ -115,7 +115,7 @@
 
     Trên một hình phác, một điểm nằm sát nét vẽ vẫn có thể không thuộc đường; phép thế mới cho kết luận chính xác. Hãy giữ nguyên dấu của từng hạng tử khi thay tọa độ, và thử riêng từng điểm thay vì suy từ cảm giác gần hay xa.
 
-    **Em vận dụng.** Với d: 2x-3y+1=0, M(1,1) và N(2,1) điểm nào thuộc d?
+    **Em vận dụng.** Với \(d:2x-3y+1=0\), \(M(1,1)\) và \(N(2,1)\) điểm nào thuộc \(d\)?
 
     ??? question "Đối chiếu"
 
@@ -139,7 +139,7 @@
 
     Xét \(d_1:x+y=3\), \(d_2:x-y=1\). Cộng hai phương trình ta được \(2x=4\), nên \(x=2,\ y=1\); kiểm lại: \(2+1=3\), \(2-1=1\). Hai pháp tuyến \(\vec n_1=(1,1)\) và \(\vec n_2=(1,-1)\) khác vectơ không, tích vô hướng \(1-1=0\), nên hai đường gặp nhau vuông góc tại \((2,1)\).
 
-    **Em vận dụng.** Hai đường d1: x+y=4, d2: x-y=2 gặp nhau ở đâu và có vuông góc không?
+    **Em vận dụng.** Hai đường \(d_1:x+y=4\), \(d_2:x-y=2\) gặp nhau ở đâu và có vuông góc không?
 
     ??? question "Đối chiếu"
 
@@ -161,7 +161,7 @@
 
     Trên biểu đồ, \(m\) tương ứng với độ tăng theo trục đứng chia cho độ tăng theo trục ngang; mỗi trục cần ghi đúng đơn vị. Giá trị \(b\) là mức dự đoán khi \(x=0\). Mô hình đường thẳng chỉ là một giả thiết phù hợp trong miền xét, nên sau khi kiểm lại hai điểm dữ liệu, cần nói rõ giới hạn của việc dự đoán xa hơn.
 
-    **Em vận dụng.** Giá trị V theo thời gian t (t≥0) đi qua (0,5) và (2,9), giả sử tuyến tính. Lập V(t) và tính V(3).
+    **Em vận dụng.** Giá trị \(V\) theo thời gian \(t\) (\(t\ge0\)) đi qua \((0,5)\) và \((2,9)\), giả sử tuyến tính. Lập \(V(t)\) và tính \(V(3)\).
 
     ??? question "Đối chiếu"
 
