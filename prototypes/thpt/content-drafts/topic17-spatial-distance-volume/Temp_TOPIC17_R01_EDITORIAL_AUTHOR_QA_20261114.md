@@ -29,3 +29,6 @@ RELEASE_INTAKE: NO
 **Interpretation:** These nine checks directly compare the old and new *source content* and source references, not mathematical truth of the new formal classification. The explicit knowledge boxes and any newly formalized wording are `DELTA_C_ACADEMIC_MATERIAL` requiring targeted verification of mathematical conditions against S1, D1–D6/PED1–PED6 and diagram semantics. Even if old Rxx was CONTENT_READY, it remains valid only for original frozen blob `baa6c6c575a4cf79187b2aebd2047b1cf872b983`; new Rxx has **not** signed Q18 and must not silently inherit acceptance. This QA file is not independent NotebookLM PASS, website AP/MathJax render proof, device proof or RELEASE authorization.
 
 **No** V2 handoff update, ready/REGISTER promotion, Mastery, protected RD1 import, merge or deploy.
+
+## Figure-first source correction
+Both original B26/B27 diagram refs are unchanged but moved before their learner `Đọc hình` directions; no new figure invented and no release browser QA claimed. R01 candidate is now exact blob `af08791b4d7104679a3ea3481068266a07c72dce`.
