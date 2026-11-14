@@ -137,6 +137,26 @@ const specs={
      assert((await first.textContent()).length>50,tag+" revealed answer missing worked reasoning");
      await page.keyboard.press("Space");
      assert(!(await first.evaluate(el=>el.open)),tag+" keyboard cannot close answer");
+     // Every canonical First Try answer must remain voluntary and readable.
+     // Test the actual typeset DOM after each learner clicks Đối chiếu.
+     const comparisons=blocks.nth(0).locator("details.question");
+     assert.equal(await comparisons.count(),s.tries,tag+" canonical reveal count changed");
+     for(let item=0;item<s.tries;item++){
+       const detail=comparisons.nth(item),summary=detail.locator("summary");
+       assert(!(await detail.evaluate(el=>el.open)),tag+" answer "+(item+1)+" exposed before learner click");
+       await summary.click();
+       assert(await detail.evaluate(el=>el.open),tag+" answer "+(item+1)+" cannot be opened");
+       await detail.locator("mjx-container,.katex").first().waitFor({state:"attached",timeout:15000});
+       const rendered=await detail.locator("mjx-container,.katex").count();
+       assert(rendered>=1,tag+" answer "+(item+1)+" not rendered as MathJax");
+       assert.equal(await detail.locator("mjx-merror,.katex-error").count(),0,
+         tag+" answer "+(item+1)+" contains MathJax error");
+       const visible=await detail.innerText();
+       assert(!visible.includes("\\(")&&!visible.includes("\\)"),
+         tag+" answer "+(item+1)+" exposes raw TeX source");
+       await summary.click();
+       assert(!(await detail.evaluate(el=>el.open)),tag+" answer "+(item+1)+" cannot close");
+     }
      await t.nth(2).click();
      const ex=blocks.nth(2);
      assert.equal(await ex.locator(":scope > h3").count(),s.ex,tag+" worked examples count");
