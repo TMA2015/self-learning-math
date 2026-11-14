@@ -2,8 +2,8 @@
 
 **PRE-SIGN AUTHORING EVIDENCE, NOT INDEPENDENT NOTEBOOKLM REVIEW, NOT CONTENT_READY.** Unified standard SLM-THPT-QUALITY-ONE v3.1.0 Q01–Q18. These per-outcome records were checked against actual text in the R02 academic source, not derived from item counts alone.
 
-SOURCE_BLOB: d47b4ac89e738a6f44084451e20db50d4d033a04
-CANONICAL_MATRIX_BLOB: a1bb370d74f8102f3aed900c7d4fee8e0c7f5d52
+SOURCE_BLOB: f84dee296e2880c2d17fa2306c44458031c057cd
+CANONICAL_MATRIX_BLOB: db9b91dd0143e3b0fd8609cb5c5904bf73b86cec
 Q01_FAMILY_AUDIT_BLOB: 2e8a1d3e1b5168951e0eec7467b21237246a3d42
 R01_RETAINED_NUMERIC_CHECKPOINT_BLOB: ff8d8407ca9020ac9f2d553559a7eb9fb7aa8fa1
 Q18_VERIFICATION_MODE: NOT_YET_SIGNED
@@ -77,3 +77,5 @@ Every outcome was reopened in its actual displayed order, with O23 (optional int
 - Q01 source family map is in 2e8a1d3e1b5168951e0eec7467b21237246a3d42: original SGK Core B06–B08/B14–B17 locked; missing SBT printed p25 is documented as secondary reference only and does not by itself trigger whole-Topic HOLD under normative §II-A. Do not claim unseen exercises 5.5 continuation/5.6/5.7 read.
 
 **Outstanding:** finalize actual Q01 acceptance/Q18 substantive PED depth verdict on immutable R02 snapshot and any targeted missing-family check. Only then sign AUTHOR_SELF_QA_RECEIPT P0/P1=0 and prepare one V2/ready/REGISTER. No merge/deploy.
+
+<!-- FINAL_SHA_PARITY: R02 academic text body unchanged; final-source amendment only author status metadata. Q01 family/outcome proof assertions and 247-ID map remain byte-equivalent in learner-facing content. -->
