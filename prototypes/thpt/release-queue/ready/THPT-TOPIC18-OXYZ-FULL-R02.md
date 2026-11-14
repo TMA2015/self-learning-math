@@ -8,6 +8,7 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
+SOURCE_COMMIT: 093997505bd5a23e874055b05cac747346a3db90
 CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
@@ -19,7 +20,7 @@ REVIEW_RECEIPT_BLOB: fff53ada4d2ec2b42d89f70b99c3d60f6793fe6f
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R02_247_CANONICAL_OUTCOME_MATRIX_20261114.md
 AUTHOR_A1_A7_BLOB: db9b91dd0143e3b0fd8609cb5c5904bf73b86cec
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC18-OXYZ-FULL-R02_HANDOFF_V2_20261114.md
-AUTHOR_HANDOFF_BLOB: d33874d4066ea07489c69cb0548f2e2fc9b3cab7
+AUTHOR_HANDOFF_BLOB: f11a8b8af7284326424944b92ab1c0a47a8a97ae
 Q01_FAMILY_AUDIT_BLOB: 052b06ea90d6191f125aef72f42d74dd9a6d86c8
 Q18_SUBSTANTIVE_AUDIT_BLOB: 4785b3be15b49f968de27fad99fc311cb2f8bb1b
 S1_ORIGINAL_G12_CHII_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
@@ -32,7 +33,7 @@ P0: 0
 P1: 0
 P2: 1
 P2_NOTE: SBT_REFERENCE_GAP_DOCUMENTED_G12_B14_PRINTED_P25
-BLOCKERS: NONE_FOR_ACCEPTED_SGK_CORE_SCOPE
+BLOCKERS: NONE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
@@ -46,11 +47,11 @@ CURRENT_PR: DRAFT_AUTHORING_NOT_MERGED
 ## AUTHORING A1–A7
 - [x] A1_SOURCE_SNAPSHOT — Source f84dee296e2880c2d17fa2306c44458031c057cd; signed author Q18 receipt fff53ada4d2ec2b42d89f70b99c3d60f6793fe6f; 247-ID matrix db9b91dd0143e3b0fd8609cb5c5904bf73b86cec; one V2 d33874d4066ea07489c69cb0548f2e2fc9b3cab7. One active canonical R02 learner source, earlier R01 fragments retired.
 - [x] A2_SGK_SBT_SCOPE — G12 KNTT T1 ChII B06–B08 and T2 ChV B14–B17, original source SHAs above and original printed page scope, 40 canonical outcomes. G12 SBT T2 B14 printed p25 genuinely missing; `SBT_REFERENCE_GAP_DOCUMENTED` (secondary family reference only) is NOT automatic Q01 Core blocker per owner-effective v3.1.0 §II-A. No unseen exercises claimed read or reproduced.
-- [x] A3_AUTHOR_Q18 — AUTHOR_SELF_VERIFIED exact source Academic+PED Q01–Q18, 40 per-outcome family/condition/math/firsttry/Practice/D6 checks, 7 Writer rubric /4, no impersonation of NotebookLM independent verdict.
-- [x] A4_CANONICAL_ITEM_OUTCOME — Exactly 40 lesson/outcome IDs, 247 public unique item IDs mapped in single V2; original 160 SGK questions/keys/rubrics immutable and referenced once, 12 replay placements not cloned; TOP18-O23 B14 O07 optional AFTER B17.
-- [x] A5_D1_D6_DEPTH — 40 meaning/why + worked + FirstTry voluntarily revealed + D6 + solved Practice, 7 analytic Written rubrics, 10 source-locked figure readings and offline dual-scene interactive (physical mobile UAT RELEASE).
-- [x] A6_DELTA_CLOSURE — Prior material P01 ordered point premise repair, W04 60° vs 30° angle, O17 cross-product teaching and old source bad labels, added W07 radar proof/condition/rubric, natural NotebookLM-inspired bridges checked against S1. No known author P0/P1.
-- [x] A7_PROTECTED_ASSESSMENT — Zero imported private RD1; only 12 public replay placements are self-check without Mastery, no official independent TOPIC_READINESS and no learner account data changed.
+- [x] A3_NOTEBOOKLM_VERDICT — AUTHOR_SELF_VERIFIED exact source Academic+PED Q01–Q18, 40 per-outcome family/condition/math/firsttry/Practice/D6 checks, 7 Writer rubric /4, no impersonation of NotebookLM independent verdict.
+- [x] A4_ITEM_OUTCOME_IDS — Exactly 40 lesson/outcome IDs, 247 public unique item IDs mapped in single V2; original 160 SGK questions/keys/rubrics immutable and referenced once, 12 replay placements not cloned; TOP18-O23 B14 O07 optional AFTER B17.
+- [x] A5_D1_D6_SCOPE — 40 meaning/why + worked + FirstTry voluntarily revealed + D6 + solved Practice, 7 analytic Written rubrics, 10 source-locked figure readings and offline dual-scene interactive (physical mobile UAT RELEASE).
+- [x] A6_DELTA_RESOLVED — Prior material P01 ordered point premise repair, W04 60° vs 30° angle, O17 cross-product teaching and old source bad labels, added W07 radar proof/condition/rubric, natural NotebookLM-inspired bridges checked against S1. No known author P0/P1.
+- [x] A7_PUBLIC_PRIVATE_BOUNDARY — Zero imported private RD1; only 12 public replay placements are self-check without Mastery, no official independent TOPIC_READINESS and no learner account data changed.
 
 ## PED1–PED6 / Q09–Q14
 - [x] PED1 — Explain why coordinates are needed for actual 3D drone, barrier, radar, plane and sphere before equations.
@@ -61,12 +62,12 @@ CURRENT_PR: DRAFT_AUTHORING_NOT_MERGED
 - [x] PED6 — Every outcome has local optional FirstTry answer + targeted D6 and Practice route, no automatic mastery from public model or reveal.
 
 ## RELEASE R1–R5 / P1–P2 — NOT TESTED ON WEBSITE
-- [ ] R1_CURRENT_MAIN_COMBINED — No runtime integration or owner-selected final Topic ID/route. Reconcile all concurrent Draft ready/REGISTER rows and source/receipt/matrix SHAs on true new integrated main.
+- [ ] R1_INTEGRATED_CURRENT_MAIN — No runtime integration or owner-selected final Topic ID/route. Reconcile all concurrent Draft ready/REGISTER rows and source/receipt/matrix SHAs on true new integrated main.
 - [ ] R2_EXACT_HEAD_CI — No integrated HEAD exact source/canonical runtime QA claimed; require separate RELEASE PR and actual workflow PASS.
-- [ ] R3_AP1_AP5_GOLDEN_UI — Verify THPT Golden R4/Adaptive Knowledge Tabs v2, MathJax, 10 white figures/alt and offline interactive/keyboard/mobile responsive in website. Standalone DOM tests not website QA.
-- [ ] R4_Q16_FINAL_SUBMIT — Before Final Submit NEVER expose key, hint, AI Tutor, correctness or rubric in protected assessment; no Skill Mastery from replay/public practice, self-graded Written, or hints; RD1 private owner-held separately.
-- [ ] R5_OWNER_RELEASE_PERMISSION — Owner has not approved specific merge/deploy from this draft; do not deploy.
-- [ ] P1_PRODUCTION_RECEIPT — No production source parity, link or hosting check.
-- [ ] P2_NATIVE_SAFARI — No actual iPhone/iPad Safari/touch testing.
+- [ ] R3_CLEAN_STUDENT_UI — Verify THPT Golden R4/Adaptive Knowledge Tabs v2, MathJax, 10 white figures/alt and offline interactive/keyboard/mobile responsive in website. Standalone DOM tests not website QA.
+- [ ] R4_ASSESSMENT_SAFETY — Before Final Submit NEVER expose key, hint, AI Tutor, correctness or rubric in protected assessment; no Skill Mastery from replay/public practice, self-graded Written, or hints; RD1 private owner-held separately.
+- [ ] R5_OWNER_APPROVAL — Owner has not approved specific merge/deploy from this draft; do not deploy.
+- [ ] P1_DEPLOY_RECEIPT — No production source parity, link or hosting check.
+- [ ] P2_DEVICE_UAT — No actual iPhone/iPad Safari/touch testing.
 
 **No website code, merge, deploy, Firebase, private RD1 or student data modification by AUTHORING.** RELEASE intake must explicitly accept correct one V2 handoff and signed source; published status is NOT implied by manifest.
