@@ -10,11 +10,11 @@ ACADEMIC_SOURCE_BLOB: f84dee296e2880c2d17fa2306c44458031c057cd
 CANONICAL_MATRIX_BLOB: db9b91dd0143e3b0fd8609cb5c5904bf73b86cec
 SIGNED_AUTHOR_Q18_RECEIPT_BLOB: fff53ada4d2ec2b42d89f70b99c3d60f6793fe6f
 HANDOFF_V2_PATH: prototypes/thpt/release-handoffs/THPT-TOPIC18-OXYZ-FULL-R02_HANDOFF_V2_20261114.md
-HANDOFF_V2_BLOB: d33874d4066ea07489c69cb0548f2e2fc9b3cab7
+HANDOFF_V2_BLOB: f11a8b8af7284326424944b92ab1c0a47a8a97ae
 READY_MANIFEST_PATH: prototypes/thpt/release-queue/ready/THPT-TOPIC18-OXYZ-FULL-R02.md
-READY_MANIFEST_BLOB: dad2a72612f82f0507eade3a6636f889e8cb9187
+READY_MANIFEST_BLOB: 91c948469b5f58046376b5db26b097d65934c08d
 REGISTER_PATH: prototypes/thpt/release-queue/REGISTER.md
-REGISTER_BLOB: e45c3e9ad4e2123e06afdbc3c724cdfaaac133d2
+REGISTER_BLOB: 353fdcb485ef9e545e297b4741630f5fd4d761a2
 Q01_AUDIT_BLOB: 052b06ea90d6191f125aef72f42d74dd9a6d86c8
 Q18_OUTCOME_MATH_PED_AUDIT_BLOB: 4785b3be15b49f968de27fad99fc311cb2f8bb1b
 P0: 0
@@ -39,3 +39,7 @@ RELEASE_AUTHORIZATION: NO
 `CONTENT_READY` permits RELEASE to **take source** and run its own integration QA, no website functionality claimed, no official assessment, no deployed HTML, no student-data/Firebase modification. RELEASE needs R1–R5/P1–P2, AP1–AP5 Golden UI, true combined HEAD CI, owner-assigned runtime Topic ID, Q16 protected Final Submit no pre-submit hint/answer/correctness/rubric/AI Tutor, no unapproved Skill Mastery, native iPhone/iPad Safari and explicit owner permission before deploy.
 
 **Previous R01 QA HOLD checkpoint retired from active branch**; its original SBT-p25 observations remain accurately represented above as a P2 reference gap under owner-effective v3.1.0. Histories retained through Git.
+
+## Source-only CI metadata compliance repair (after first exact-head workflows)
+
+Initial draft CI ran against R02 source and detected **three metadata-only manifest contract mismatches**, not a math/learner source defect: `BLOCKERS` must literally be `NONE` (SBT p25 P2 note remains separate and truthful); `SOURCE_COMMIT` is required; checklist keys must match exact A1–A7/R1–R5/P1–P2 canonical names. The V2 handoff and manifest were repaired on author branch, and register/handoff SHA re-synchronized as shown above. No learner source, Q01 item mathematical key, Q18 receipt, model or SVG content was modified for this CI repair. Exact-head re-run must be verified before claiming CI PASS.
