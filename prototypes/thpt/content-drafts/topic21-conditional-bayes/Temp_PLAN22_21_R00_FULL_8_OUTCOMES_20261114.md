@@ -398,7 +398,7 @@ Có 100 hồ sơ H, 9.900 không H. Báo đúng 100×0,8=80; báo nhầm 9.900×
 
 </details>
 
-### Canonical tham chiếu từ nguồn kết hợp #810 (16 ID, không nhân bản câu hỏi)
+### Phụ lục Q15 — 16 ID nguồn kết hợp #810 cách ly, KHÔNG tạo placement học sinh
 
 | item_id nguồn cũ | Outcome CĐ21 | Nguồn |
 |---|---|---|
@@ -419,7 +419,7 @@ Có 100 hồ sơ H, 9.900 không H. Báo đúng 100×0,8=80; báo nhầm 9.900×
 | `THPT-G12-TOPPROB-ADD11` | `TOP21-O07` | `PUBLIC_EXTENSION_R02` |
 | `THPT-G12-TOPPROB-ADD12` | `TOP21-O08` | `PUBLIC_EXTENSION_R02` |
 
-**Ranh giới nguồn:** 16 câu hỏi cũ chỉ được đặt bằng `placement` trỏ đến đúng thư viện canonical và đúng source blob, **không tạo định nghĩa thứ hai**. Các item G10/G11, và cả học liệu CĐ20, không trở thành tiền đề bắt buộc CĐ21. `THPT-G12-B19-P05` là bổ trợ mở rộng (ba nhánh) theo nguồn combined #810, không tự nâng thành Core S1 bắt buộc.
+**BLOCKED_BY_AUTHORING Q15 — CANONICAL_COLLISION_HOLD:** Bảng trên là **kiểm kê nguồn cũ, KHÔNG phải các placement đang kích hoạt**. Phát hiện trên GitHub: có **ít nhất 9 mã bài P01…P04 và P05 của B18, P01…P04 của B19** cùng xuất hiện ở gói SGK G12 ChVI PR #731 nhưng **đề bài khác nhau**. Mã `THPT-G12-B19-P05` cũng xuất hiện cả hai nguồn, hiện chưa đối chiếu được cặp stem bằng cùng phép trích xuất (vẫn phải HOLD). Nguồn cũ gốc Git blob `156061dd3bb240ddac21183df21a12637e1b5b09`; nguồn SGK canonical PR #731 blob `1578efd4d2d46deb9bae064d12752d88fc3747b8`. Hai mã Written `W18-01/W19-ANCHOR-01` và bốn `TOPPROB-ADD09..12` chưa kiểm toán quyền sở hữu/merge liên PR. **Không cộng 16 mã này vào tổng unique ID hợp lệ CĐ21, không nhân bản hay đổi ID của câu SGK/Topic cũ, và không suy Q15 PASS.** Quyết định khóa canonical thuộc chủ dự án sau khi có hồ sơ đối chiếu source/placement; release không tự chọn đáp án theo cùng tên ID. Phần học CĐ21 mới có 19 định nghĩa `THPT-TOP21-*` riêng và tự học được mà **không cần** truy cập 16 mã đang HOLD. Các item G10/G11 và học liệu CĐ20 không trở thành tiền đề bắt buộc CĐ21. `THPT-G12-B19-P05` (ba nhánh) là ứng viên mở rộng trong source #810, không tự nâng thành Core S1.
 
 ## 3. Tự kiểm tra — tự đối chiếu công khai, KHÔNG giả vờ thi độc lập
 
