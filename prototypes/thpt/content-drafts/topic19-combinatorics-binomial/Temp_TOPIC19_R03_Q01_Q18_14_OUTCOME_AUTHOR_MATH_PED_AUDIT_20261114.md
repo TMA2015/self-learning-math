@@ -4,7 +4,7 @@
 
 PACKET_ID: THPT-TOPIC19-COMBINATORICS-BINOMIAL-R03
 SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOPIC19_COMBINATORICS_BINOMIAL_R03_FULL_14_OUTCOMES_20261114.md
-SOURCE_BLOB: a638a2f07abfa743135f46a0faeb7b7ddf65a00e
+SOURCE_BLOB: da067e2cca9761769d4ab4984e29ce66176d01ad
 Q15_MATRIX_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOPIC19_R03_56_CANONICAL_OUTCOME_MATRIX_20261114.md
 Q15_MATRIX_BLOB: 0815082de9e42ad34db5b9fdc10dea0187727ab4
 ORIGINAL_S1_PDF_DIRECT_RECEIPT_BLOB: 850dd241e60de58ccf032e48e1e13530988436e3
@@ -57,6 +57,8 @@ W01 zero-first and odd-last digit; W02 choose group versus choose team with lead
 
 ## Q15–Q18 assessment and code segregation
 
-Exactly 56 unique **PUBLIC** canonical item IDs: 25 frozen original G10 SGK FORMATIVE references defined only in original JS blob `2ae62fada28913ec336b3507684408a1e05a3232`, plus **14 new Try, 14 new Practice, 3 new Written /4** defined once in R03 academic source `a638a2f07abfa743135f46a0faeb7b7ddf65a00e`. Original SGK 25 item bodies/answers/rubrics are not forked. Seven `TOPIC/TU_KIEM_TRA/REPLAY` placements reuse already exposed P items and are **`CLIENT_SELF_CHECK_NO_MASTERY`**, not held-out TOPIC_READINESS. No newly imported protected RD1 or Private Bank uploaded to GitHub. No new scores, no learner Firebase writes, no Mastery activation.
+Exactly 56 unique **PUBLIC** canonical item IDs: 25 frozen original G10 SGK FORMATIVE references defined only in original JS blob `2ae62fada28913ec336b3507684408a1e05a3232`, plus **14 new Try, 14 new Practice, 3 new Written /4** defined once in R03 academic source `da067e2cca9761769d4ab4984e29ce66176d01ad`. Original SGK 25 item bodies/answers/rubrics are not forked. Seven `TOPIC/TU_KIEM_TRA/REPLAY` placements reuse already exposed P items and are **`CLIENT_SELF_CHECK_NO_MASTERY`**, not held-out TOPIC_READINESS. No newly imported protected RD1 or Private Bank uploaded to GitHub. No new scores, no learner Firebase writes, no Mastery activation.
 
 Three independent Topic learner pages exactly Kiến thức/Luyện tập/Tự kiểm tra; **no Topic Core**. Q16 actual protected Final Submit concealment, privately held-out assessment, Q15 runtime source item composition and AP/R/P on real website remain RELEASE gates. Do not infer deployment, integration, or independent NotebookLM PASS from source QA.
+
+<!-- SOURCE_META_ONLY_DELTA: academic learner item stems, math keys, 14 outcomes, W-rubrics and lesson order were unchanged by final Q18 status metadata. New final Git academic blob da067e2cca9761769d4ab4984e29ce66176d01ad supersedes previous pre-sign metadata-only blob. -->
