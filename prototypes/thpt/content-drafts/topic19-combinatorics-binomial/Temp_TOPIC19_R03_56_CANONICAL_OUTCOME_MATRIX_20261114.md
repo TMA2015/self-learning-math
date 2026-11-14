@@ -7,7 +7,7 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOPIC19_COMBINATORICS_BINOMIAL_R03_FULL_14_OUTCOMES_20261114.md
-SOURCE_BLOB: a638a2f07abfa743135f46a0faeb7b7ddf65a00e
+SOURCE_BLOB: da067e2cca9761769d4ab4984e29ce66176d01ad
 S1_PDF_RECEIPT_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOPIC19_R01_DIRECT_S1_SGK_SBT_PDF_VISUAL_RECEIPT_20261114.md
 S1_PDF_RECEIPT_BLOB: 850dd241e60de58ccf032e48e1e13530988436e3
 G10_SGK_ORIGINAL_FORMATIVE_SOURCE: docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js
@@ -120,3 +120,5 @@ The learner reading order is **O01–O08 → O14 → O09→O10→O13 → O11→O
 G10 KNTT SGK Tập Hai original PDF SHA-256 `ee8a00392e1c9fc5b213e574666cf1f8487548737e138573f28a988c640fafe6`; original SBT Tập Hai SHA-256 `3cb33690e0627b9e8ac467c23625b7feb7d05a8422293db0e1b26e44ca6a78c7`. Direct original page render: SGK B23 printed60–65 (PDF indices60–65), B24 66–71, B25 72–75, chapter end76; SBT B23 printed51–53, B24 54–55, B25 56–57, chapter end58–60; one-based PDF page = printed+1. The older main S1 receipt reports different page labels; this exact original-byte receipt supersedes it **only for this Topic's proven source**, without rewriting old source/review history. No separate academic standards or auto-Topic PASS.
 
 **Not a runtime release:** source-only Q15 custody/metadata for AUTHORING, zero protected RD1 in public code, no readiness exposure protection or production browser QA inferred from the source snapshot.
+
+<!-- SOURCE_META_ONLY_DELTA: academic learner item stems, math keys, 14 outcomes, W-rubrics and lesson order were unchanged by final Q18 status metadata. New final Git academic blob da067e2cca9761769d4ab4984e29ce66176d01ad supersedes previous pre-sign metadata-only blob. -->
