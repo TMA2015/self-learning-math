@@ -31,7 +31,7 @@ Một **biến cố** \(A\) là tập con \(A\subseteq\Omega\): chỉ gồm nh�
 
 **Tự thử trước khi xem lời giải.** Gieo một xúc xắc 8 mặt đồng khả năng ghi các số 1–8. Viết Ω và biến cố “ra số chẵn”.
 
-<!-- ITEM_ID: THPT-TOP20-T01; ROLE: TOPIC_FIRST_TRY; CONTENT_VERSION: TOP20-R01; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
+<!-- ITEM_ID: THPT-TOP20-T01; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O01; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
 <details><summary>Mở đối chiếu sau khi tự thử</summary>
 
 Ω={1,2,3,4,5,6,7,8}; A={2,4,6,8}.
@@ -58,7 +58,7 @@ Nếu đề chỉ nói có ba “loại kết quả”, chưa thể kết luận
 
 **Tự thử trước khi xem lời giải.** Hộp có 2 phiếu đỏ và 4 phiếu xanh khác nhau, rút đều một phiếu. P(đỏ) có phải 1/2 vì có hai màu không?
 
-<!-- ITEM_ID: THPT-TOP20-T02; ROLE: TOPIC_FIRST_TRY; CONTENT_VERSION: TOP20-R01; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
+<!-- ITEM_ID: THPT-TOP20-T02; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O03; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
 <details><summary>Mở đối chiếu sau khi tự thử</summary>
 
 Không. Sáu phiếu vật lí đồng khả năng, P(đỏ)=2/6=1/3.
@@ -96,7 +96,7 @@ Cách tính biến cố đối hữu ích khi đếm trực tiếp các trườn
 
 **Tự thử trước khi xem lời giải.** Có 20 thẻ đồng khả năng, đúng 1 thẻ màu đen. Tính P(không đen). Biến cố đen có phải không thể?
 
-<!-- ITEM_ID: THPT-TOP20-T03; ROLE: TOPIC_FIRST_TRY; CONTENT_VERSION: TOP20-R01; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
+<!-- ITEM_ID: THPT-TOP20-T03; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O04; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
 <details><summary>Mở đối chiếu sau khi tự thử</summary>
 
 P(không đen)=19/20; P(đen)=1/20>0 nên đen là hiếm, không phải không thể.
@@ -144,7 +144,7 @@ Có hai kiểu phép thử cần phân biệt:
 
 **Tự thử trước khi xem lời giải.** Từ 6 học sinh chọn một nhóm 2 người không phân vai; so với chọn trưởng rồi phó, có bao nhiêu kết quả mỗi loại?
 
-<!-- ITEM_ID: THPT-TOP20-T04; ROLE: TOPIC_FIRST_TRY; CONTENT_VERSION: TOP20-R01; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
+<!-- ITEM_ID: THPT-TOP20-T04; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O07; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
 <details><summary>Mở đối chiếu sau khi tự thử</summary>
 
 Không phân vai có C(6,2)=15 nhóm; phân hai vai có 6×5=30 cặp có thứ tự.
@@ -178,7 +178,7 @@ Trước khi giải một bài xác suất, học sinh cần tự trả lời: (
 
 **Tự thử trước khi xem lời giải.** Gieo hai xúc xắc phân biệt, cân đối. Có bao nhiêu cặp sơ cấp đồng khả năng và P(tổng số chấm bằng 12)?
 
-<!-- ITEM_ID: THPT-TOP20-T05; ROLE: TOPIC_FIRST_TRY; CONTENT_VERSION: TOP20-R01; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
+<!-- ITEM_ID: THPT-TOP20-T05; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O10; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
 <details><summary>Mở đối chiếu sau khi tự thử</summary>
 
 Có 36 cặp có thứ tự; chỉ (6,6) có tổng12 nên P=1/36.
@@ -208,6 +208,8 @@ Có 36 cặp có thứ tự; chỉ (6,6) có tổng12 nên P=1/36.
 
 ![Đọc phần giao và phần hợp của hai biến cố khi gieo xúc xắc](../../../../docs/assets/images/thpt/FIG-TOP20-G11-B28-B29_VENN_WHITE_R00.svg)
 
+**Khám phá trên mô hình:** [Chọn các mặt thuộc A và B, quan sát hợp/giao và kiểm độc lập](Temp_PLAN22_20_EVENTS_INTERACTIVE_WHITE_R00_20261114.html). Đây là mô hình minh họa công khai, không phải bài Tự kiểm tra và không ghi điểm.
+
 **Cách đọc hình:** Khung Ω ghi các kết quả 1–6. Bên trái A chứa {2,4,6}, bên phải B chứa {4,5,6}; vùng chồng nhau chỉ có **4 và 6**, vùng chỉ A là 2, vùng chỉ B là 5; 1 và 3 ở ngoài hai tập. Do đó hợp chứa **bốn** kết quả, giao chứa **hai** kết quả: khi tính P(A∪B) phải trừ đi phần giao đã đếm hai lần. Độ lớn/vị trí hình tròn chỉ để hướng dẫn nhìn tập hợp, **không** mang ý nghĩa diện tích xác suất.
 
 
@@ -223,7 +225,7 @@ Có 36 cặp có thứ tự; chỉ (6,6) có tổng12 nên P=1/36.
 
 **Tự thử trước khi xem lời giải.** Gieo xúc xắc cân đối. A=ra số chẵn, B=ra số lớn hơn 4. Viết A∩B và A∪B.
 
-<!-- ITEM_ID: THPT-TOP20-T06; ROLE: TOPIC_FIRST_TRY; CONTENT_VERSION: TOP20-R01; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
+<!-- ITEM_ID: THPT-TOP20-T06; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O11; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
 <details><summary>Mở đối chiếu sau khi tự thử</summary>
 
 A={2,4,6}, B={5,6}; giao={6}, hợp={2,4,5,6}.
@@ -256,7 +258,7 @@ P(A\cap B)=P(A)P(B).
 
 **Tự thử trước khi xem lời giải.** Tung một đồng xu cân đối và gieo xúc xắc cân đối độc lập. Xác suất đồng xu ngửa và xúc xắc chẵn là bao nhiêu?
 
-<!-- ITEM_ID: THPT-TOP20-T07; ROLE: TOPIC_FIRST_TRY; CONTENT_VERSION: TOP20-R01; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
+<!-- ITEM_ID: THPT-TOP20-T07; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O12; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
 <details><summary>Mở đối chiếu sau khi tự thử</summary>
 
 P=1/2×3/6=1/4. Hai phép thử độc lập nên số cặp thuận lợi=1×3 trong 12 cặp.
@@ -294,7 +296,7 @@ Công thức đúng cho **mọi** hai biến cố trong cùng mô hình xác su�
 
 **Tự thử trước khi xem lời giải.** Gieo xúc xắc cân đối. A=lẻ, B=lớn hơn 3. Tính P(A∪B) bằng quy tắc cộng.
 
-<!-- ITEM_ID: THPT-TOP20-T08; ROLE: TOPIC_FIRST_TRY; CONTENT_VERSION: TOP20-R01; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
+<!-- ITEM_ID: THPT-TOP20-T08; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O14; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
 <details><summary>Mở đối chiếu sau khi tự thử</summary>
 
 A={1,3,5}, B={4,5,6}, giao={5}; P(hợp)=3/6+3/6−1/6=5/6.
@@ -323,7 +325,7 @@ Nếu \(A,B\) độc lập thì \(\bar A,\bar B\) cũng độc lập.
 
 **Tự thử trước khi xem lời giải.** Hai thiết bị hoạt động độc lập, xác suất hỏng lần lượt 1/5 và 1/4. Xác suất có ít nhất một thiết bị hoạt động là bao nhiêu?
 
-<!-- ITEM_ID: THPT-TOP20-T09; ROLE: TOPIC_FIRST_TRY; CONTENT_VERSION: TOP20-R01; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
+<!-- ITEM_ID: THPT-TOP20-T09; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O16; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
 <details><summary>Mở đối chiếu sau khi tự thử</summary>
 
 P=1−P(cả hai hỏng)=1−(1/5)(1/4)=19/20.
