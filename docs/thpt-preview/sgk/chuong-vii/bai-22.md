@@ -31,9 +31,9 @@
 
     ??? question "Đối chiếu"
 
-        **Đáp án:** a=5, b=4, c=3; F1(−3,0), F2(3,0).
+        **Đáp án:** \(a=5,\ b=4,\ c=3\); \(F_1(-3,0)\), \(F_2(3,0)\).
 
-        **Lý do:** a²=25>b²=16, c²=25−16=9 ⇒ c=3; elip có trục lớn Ox.
+        **Lý do:** \(a^2=25>b^2=16\), \(c^2=25-16=9\Rightarrow c=3\); elip có trục lớn \(Ox\).
 
 
 
@@ -51,9 +51,9 @@
 
     ??? question "Đối chiếu"
 
-        **Đáp án:** Đỉnh A1(−4,0), A2(4,0); tiêu điểm F1(−5,0), F2(5,0).
+        **Đáp án:** Đỉnh \(A_1(-4,0)\), \(A_2(4,0)\); tiêu điểm \(F_1(-5,0)\), \(F_2(5,0)\).
 
-        **Lý do:** a=4, b=3, c²=a²+b²=16+9=25 ⇒ c=5; trục thực Ox.
+        **Lý do:** \(a=4,\ b=3,\ c^2=a^2+b^2=16+9=25\Rightarrow c=5\); trục thực \(Ox\).
 
 
 
@@ -75,9 +75,9 @@
 
     ??? question "Đối chiếu"
 
-        **Đáp án:** y=(2/5)x và y=−(2/5)x.
+        **Đáp án:** \(y=(2/5)x\) và \(y=-(2/5)x\).
 
-        **Lý do:** a²=25 ⇒ a=5; b²=4 ⇒ b=2. Hệ số góc tiệm cận là ±b/a=±2/5.
+        **Lý do:** \(a^2=25\Rightarrow a=5\); \(b^2=4\Rightarrow b=2\). Hệ số góc tiệm cận là \(\pm b/a=\pm2/5\).
 
 
 
@@ -104,9 +104,9 @@
 
     ??? question "Đối chiếu"
 
-        **Đáp án:** p=4; F(2,0), đường chuẩn x=−2; M(2,4) thuộc vì 4²=8·2.
+        **Đáp án:** \(p=4\); \(F(2,0)\), đường chuẩn \(x=-2\); \(M(2,4)\) thuộc vì \(4^2=8\cdot2\).
 
-        **Lý do:** 2p=8 ⇒ p=4, F=(p/2,0)=(2,0), đường chuẩn x=−p/2=−2. M có MF=4 và khoảng cách đến x=−2 là 4.
+        **Lý do:** \(2p=8\Rightarrow p=4\), \(F=(p/2,0)=(2,0)\), đường chuẩn \(x=-p/2=-2\). \(M\) có \(MF=4\) và khoảng cách đến \(x=-2\) là 4.
 
 
 
@@ -126,9 +126,9 @@
 
     ??? question "Đối chiếu"
 
-        **Đáp án:** (0,2) và (0,−2).
+        **Đáp án:** \((0,2)\) và \((0,-2)\).
 
-        **Lý do:** Thế x=0 được y²/4=1 ⇒ y²=4 ⇒ y=±2; cả hai tọa độ thỏa phương trình gốc.
+        **Lý do:** Thế \(x=0\) được \(y^2/4=1\Rightarrow y^2=4\Rightarrow y=\pm2\); cả hai tọa độ thỏa phương trình gốc.
 
 
 
@@ -148,7 +148,7 @@
 
         **Đáp án:** 20 cm.
 
-        **Lý do:** Thế x=5 được y²=100 ⇒ y=±10 cm. Độ rộng là 10−(−10)=20 cm.
+        **Lý do:** Thế \(x=5\) được \(y^2=100\Rightarrow y=\pm10\) cm. Độ rộng là \(10-(-10)=20\) cm.
 
 
 
@@ -172,7 +172,7 @@
 
     ??? question "Đối chiếu"
 
-        Bán trục ngang 6, bán trục đứng 4: `x²/36+y²/16=1`, **y≥0**, |x|≤6. Tại x=3, `y=4√(1−9/36)=2√3≈3,464 m`. Không lấy y âm hoặc dùng a=12. 
+        Bán trục ngang 6, bán trục đứng 4: \(\dfrac{x^2}{36}+\dfrac{y^2}{16}=1\), **\(y\ge0\)**, \(|x|\le6\). Tại \(x=3\), \(y=4\sqrt{1-9/36}=2\sqrt3\approx3,464\) m. Không lấy \(y\) âm hoặc dùng \(a=12\).
 
 
     Ta có thể kiểm nghiệm thêm cách đọc hoành độ qua một mái che có số đo khác.
@@ -202,7 +202,7 @@
 
     ??? question "Đối chiếu"
 
-        Hiệu quãng đường `vΔt=100000·0,0002=20 km`, nên `2a=20`, `a=10 km`, `2c=60`, `c=30 km`, `b²=c²−a²=900−100=800 km²`. Vì `0<20<60`, dữ kiện hình học phù hợp hypebol. **Chưa biết tín hiệu từ trạm A hay B đến máy thu trước**, nên chưa thể chọn nhánh.
+        Hiệu quãng đường \(v\Delta t=100000\cdot0,0002=20\) km, nên \(2a=20\), \(a=10\) km, \(2c=60\), \(c=30\) km, \(b^2=c^2-a^2=900-100=800\) km². Vì \(0<20<60\), dữ kiện hình học phù hợp hypebol. **Chưa biết tín hiệu từ trạm A hay B đến máy thu trước**, nên chưa thể chọn nhánh.
 
 
     Tương tự, khi đã hiểu vì sao chênh lệch thời gian dẫn đến hypebol, ta xét thêm tình huống đủ dữ kiện để xác định nhánh của quỹ tích.
