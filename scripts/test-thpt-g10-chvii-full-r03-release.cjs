@@ -7,7 +7,7 @@
  * SVG geometry RELEASE-owned, equivalent to D5 design spec a2ee2b226780b3aeff379ccb7d5eae0bde0156b5.
  */
 const assert=require("node:assert/strict"),fs=require("node:fs"),crypto=require("node:crypto"),path=require("node:path");
-const {expectedG10KnowledgeBlob,chviiEditorialReceiptRows,chviiContinuousReceiptRows,chviiAp2ReceiptRows,chviiR02ReceiptRows,chviiClarityReceiptRows,chviiWorkFollowupReceiptRows,chviiStemReceiptRows}=require("./thpt-q18-g10-source-receipt.cjs");
+const {expectedG10KnowledgeBlob,chviiEditorialReceiptRows,chviiContinuousReceiptRows,chviiAp2ReceiptRows,chviiR02ReceiptRows,chviiClarityReceiptRows,chviiWorkFollowupReceiptRows,chviiStemReceiptRows,chviiComparisonReceiptRows}=require("./thpt-q18-g10-source-receipt.cjs");
 const root=path.resolve(__dirname,".."),read=p=>fs.readFileSync(path.join(root,p),"utf8");
 const shaText=s=>{const b=Buffer.from(s);return crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+b.length+"\0"),b])).digest("hex")};
 const gitblob=p=>shaText(read(p));
@@ -259,9 +259,16 @@ for(const tag of ["ELLIPSE","HYPERBOLA"]){
         assert.equal(stems.baseline,work.candidate,"B22 AP2 stem baseline not exact Work snapshot");
         assert.equal(stems.moved,8,"B22 AP2 must keep canonical question count");
        }
+       const comparisons=chviiComparisonReceiptRows().get("B22");
+       if(comparisons){
+        assert(stems,"B22 AP2 answer display requires signed 25-stem source");
+        assert.equal(comparisons.baseline,stems.candidate,"B22 AP2 answer baseline must match stem candidate");
+        assert.equal(comparisons.moved,8,"B22 AP2 answer display preserves item count");
+        assert.equal(comparisons.lines,14,"B22 AP2 answer display preserves 14 answer lines");
+       }
        assert.equal(gitblob("docs/thpt-preview/sgk/chuong-vii/bai-22.md"),
-         stems?.candidate||work?.candidate||clarity?.candidate||teaching?.candidate||mathjax?.candidate||newer.candidate,
-         "B22 source must match latest exact Q18 Academic/PED→AP2 display chain");
+         comparisons?.candidate||stems?.candidate||work?.candidate||clarity?.candidate||teaching?.candidate||mathjax?.candidate||newer.candidate,
+         "B22 source must match latest exact Q18 Academic/PED→AP2 comparisons chain");
        const bridge=tag==="ELLIPSE"?"Ta có thể kiểm nghiệm thêm cách đọc hoành độ qua một mái che":
         "Tương tự, khi đã hiểu vì sao chênh lệch thời gian dẫn đến hypebol";
       assert(b22.includes(bridge),"Transfer D2 reasoning must survive as natural exposition "+tag);
