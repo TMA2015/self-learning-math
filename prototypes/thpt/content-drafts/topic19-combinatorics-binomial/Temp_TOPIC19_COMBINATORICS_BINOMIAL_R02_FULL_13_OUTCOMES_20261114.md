@@ -1,6 +1,6 @@
-# Chuyên đề 19 — Đại số tổ hợp và Nhị thức Newton · R02 AUTHORING candidate
+# Chuyên đề 19 — Đại số tổ hợp và Nhị thức Newton · R02 AUTHORING nguồn đã tự kiểm
 
-<!-- AUTHOR_ONLY_SOURCE: TOP19-R02_CANDIDATE; LEARNING_PATH: TOPIC; STANDARD: SLM-THPT-QUALITY-ONE v3.1.0; Q18_MODE: NOT_YET_SIGNED; ACADEMIC_STATE: AUTHORING_MATH_PED_QA_PENDING; NOT_CONTENT_READY; NO_WEBSITE_INTEGRATION. -->
+<!-- AUTHOR_ONLY_SOURCE: TOP19-R02_CANDIDATE; LEARNING_PATH: TOPIC; STANDARD: SLM-THPT-QUALITY-ONE v3.1.0; Q18_MODE: AUTHOR_SELF_VERIFIED_ON_LOCKED_SOURCE; ACADEMIC_STATE: AUTHOR_Q18_SOURCE_VERIFIED_V2_HANDOFF_REQUIRED; NO_WEBSITE_INTEGRATION. -->
 
 **Ba trang học sinh duy nhất:** **Kiến thức / Luyện tập / Tự kiểm tra**. Không tạo Core riêng. Mọi lời giải ở trang Kiến thức/Luyện tập là so sánh tự chọn sau khi tự thử, **không phải đáp án kiểm tra độc lập**. Không tạo đề RD1 hoặc ghi Mastery.
 
@@ -682,6 +682,6 @@ Với đa thức P(x)=(x−2)^5, hãy **(a)** tìm hệ số của x², **(b)** 
 | Bước 6 | THPT-TOP19-P10 | TOP19-O10 | PUBLIC_REPLAY_ONLY / NO_MASTERY |
 | Bước 7 | THPT-TOP19-P13 | TOP19-O13 | PUBLIC_REPLAY_ONLY / NO_MASTERY |
 
-**Đường khắc phục:** Nếu sai bài nào, trở lại đúng `TOP19-Oxx` → đọc “vì sao/bản chất/điều kiện” → làm FirstTry `Txx` → luyện `Pxx`. Đây là lộ trình hỗ trợ thật, không chỉ một câu “ôn lại lý thuyết”.
+**Đường khắc phục:** Nếu sai bài nào, trở lại **mục Kiến thức có cùng nội dung câu hỏi** → đọc lại “vì sao/bản chất/điều kiện” → tự làm phần **Tự thử** rồi sang câu **Luyện tập tương ứng**. Đây là lộ trình hỗ trợ thật, không chỉ một câu “ôn lại lý thuyết” hoặc bắt người học ghi nhớ mã nội bộ.
 
-<!-- AUTHOR_ONLY_HOLD: TOP19_S1_DIRECT_PDF_ORIGINAL_G10_T2_RECEIPT_LOCKED; TOP19_Q18_ALL_13_OUTCOMES_29_NEW_ITEMS_PED_DEPTH_AND_RUBRIC_SELF_VERIFY_REQUIRED; NO_V2_OR_READY_REGISTER; NO_PRODUCTION_MERGE; NO_PRIVATE_RD1 -->
+<!-- AUTHOR_ONLY_BOUNDARY: TOP19_S1_DIRECT_PDF_ORIGINAL_G10_T2_RECEIPT_LOCKED; TOP19_13_OUTCOMES_29_NEW_ITEMS_Q18_AUTHOR_SELF_VERIFIED_SOURCE_ONLY; WAITING_V2_READY_REGISTER_AND_INDEPENDENT_RELEASE_QA; NO_PRODUCTION_MERGE; NO_PRIVATE_RD1 -->
