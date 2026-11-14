@@ -120,6 +120,15 @@ const specs={
        tag+" AP2 formulas not actually typeset in Discovery; rendered math nodes: "+rendered);
      assert.equal(await blocks.nth(0).locator("mjx-merror,.katex-error").count(),0,
        tag+" broken mathematical notation in learner Discovery");
+     const prompts=blocks.nth(0).locator("p:has(> strong:text-is('Em vận dụng.'))");
+     assert.equal(await prompts.count(),s.tries,tag+" every Vận dụng keeps its own visible question paragraph");
+     for(let item=0;item<s.tries;item++){
+       const prompt=prompts.nth(item);
+       const actualMath=await prompt.locator("mjx-container,.katex").count();
+       assert(actualMath>=1,tag+" Vận dụng "+(item+1)+" has unrendered canonical mathematical expression");
+       assert(!/\\\\\(|\\\\\)/.test(await prompt.innerText()),
+         tag+" Vận dụng "+(item+1)+" exposes raw TeX delimiters");
+     }
      const first=blocks.nth(0).locator("details.question").first(),smy=first.locator("summary");
      assert.equal((await smy.innerText()).trim(),"Đối chiếu",tag+" canonical reveal label");
      await smy.focus();await page.keyboard.press("Enter");
