@@ -47,7 +47,7 @@ function selfTest() {
   assert(inspect(drawing, 16).issues.includes('B16_FIGURE_GUIDE_CONFLICT_P1'));
   const duplicateHelp = minimalTabs + '\n??? tip "Gợi ý khắc phục"\n??? tip "Gợi ý khắc phục"';
   assert(inspect(duplicateHelp, 15).issues.includes('D6_REPEAT_TITLE_REVIEW'));
-  console.log('PASS: 6 negative/positive control assertions. Academic/PED review remains human/source-dependent.');
+  console.log('PASS: 7 negative/positive control assertions. Academic/PED review remains human/source-dependent.');
 }
 function report() {
   console.log('| Bài | 4 tab | 2.x | Semantic box | Figure | Inline SVG text-only | HELP | Phát hiện tự động |');
