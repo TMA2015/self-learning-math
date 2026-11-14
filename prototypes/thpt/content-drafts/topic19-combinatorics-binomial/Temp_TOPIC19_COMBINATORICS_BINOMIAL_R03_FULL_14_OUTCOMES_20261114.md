@@ -1,6 +1,6 @@
-# Chuyên đề 19 — Đại số tổ hợp và Nhị thức Newton · R03 AUTHORING candidate
+# Chuyên đề 19 — Đại số tổ hợp và Nhị thức Newton · R03 AUTHORING source-locked
 
-<!-- AUTHOR_ONLY_SOURCE: TOP19-R03_CANDIDATE; LEARNING_PATH: TOPIC; STANDARD: SLM-THPT-QUALITY-ONE v3.1.0; Q18_MODE: NOT_YET_SIGNED; ACADEMIC_STATE: AUTHORING_MATH_PED_QA_PENDING; NOT_CONTENT_READY; NO_WEBSITE_INTEGRATION. -->
+<!-- AUTHOR_ONLY_SOURCE: TOP19-R03_SINGLE_ACTIVE_CANONICAL; LEARNING_PATH: TOPIC; STANDARD: SLM-THPT-QUALITY-ONE v3.1.0; Q18_MODE: AUTHOR_SELF_VERIFIED_SOURCE_ONLY; ACADEMIC_STATE: SOURCE_LOCKED_Q18_AUTHOR_QA; CONTENT_READY_ONLY_AFTER_V2_READY_REGISTER_CI; NO_WEBSITE_INTEGRATION. -->
 
 **Ba trang học sinh duy nhất:** **Kiến thức / Luyện tập / Tự kiểm tra**. Không tạo Core riêng. Mọi lời giải ở trang Kiến thức/Luyện tập là so sánh tự chọn sau khi tự thử, **không phải đáp án kiểm tra độc lập**. Không tạo đề RD1 hoặc ghi Mastery.
 
@@ -723,4 +723,4 @@ Với đa thức P(x)=(x−2)^5, hãy **(a)** tìm hệ số của x², **(b)** 
 
 **Đường khắc phục:** Nếu sai bài nào, trở lại đúng `TOP19-Oxx` → đọc “vì sao/bản chất/điều kiện” → làm FirstTry `Txx` → luyện `Pxx`. Đây là lộ trình hỗ trợ thật, không chỉ một câu “ôn lại lý thuyết”.
 
-<!-- AUTHOR_ONLY_HOLD: TOP19_S1_DIRECT_PDF_ORIGINAL_G10_T2_RECEIPT_LOCKED; TOP19_Q18_ALL_13_OUTCOMES_29_NEW_ITEMS_PED_DEPTH_AND_RUBRIC_SELF_VERIFY_REQUIRED; NO_V2_OR_READY_REGISTER; NO_PRODUCTION_MERGE; NO_PRIVATE_RD1 -->
+<!-- AUTHOR_SCOPE_LOCK: 14_SGK_OUTCOMES_31_NEW_PUBLIC_CANONICAL_25_FROZEN_SGK_POINTERS_4_WHITE_SVG_1_MODEL; Q18_AUTHOR_SELF_VERIFIED; SIGNED_RECEIPT_REQUIRED_FOR_CONTENT_READY; NO_PRODUCTION_MERGE; NO_PRIVATE_RD1; NO_UNAUTHORIZED_MASTERY -->
