@@ -23,10 +23,18 @@ function inspect(source, lesson) {
   if (repeated.length) issues.push('D6_REPEAT_TITLE_REVIEW');
   if (textOnly) issues.push('SVG_TEXT_ONLY_P1_REVIEW');
   // Known G10/B02 S1 completeness probe, not an auto-PASS.
-  if (lesson === 2 && !/các tập hợp số/i.test(source)) issues.push('B02_S1_NUMBER_SETS_MISSING_P1');
+  if (lesson === 2) {
+    if (!/các tập hợp số/i.test(source)) issues.push('B02_S1_NUMBER_SETS_MISSING_P1');
+    // A heading or four set names alone cannot discharge S1/Q01/PED. Human review stays mandatory.
+    issues.push('B02_S1_NUMBER_SETS_SEMANTIC_REVIEW_REQUIRED');
+  }
   // This catches one documented contradiction, not every possible math error.
-  if (lesson === 16 && /I\(2[;,.]?[−-]1\)/.test(source) &&
-      /Cách đọc hình[^\n]*\(1,\s*-4\)/i.test(source)) issues.push('B16_FIGURE_GUIDE_CONFLICT_P1');
+  if (lesson === 16) {
+    // A fake line/path can silence a structural warning: never clear semantic geometry by tag count.
+    issues.push('B16_FIGURE_GEOMETRY_REVIEW_REQUIRED');
+    if (/I\(2[;,.]?[−-]1\)/.test(source) &&
+        /Cách đọc hình[^\n]*\(1,\s*-4\)/i.test(source)) issues.push('B16_FIGURE_GUIDE_CONFLICT_P1');
+  }
   return { tabs, sections, helps: helps.length, repeated,
     conclusions: (source.match(/thpt-r4-knowledge-conclusion/g) || []).length,
     figures: (source.match(/<figure\b/g) || []).length,
@@ -35,8 +43,9 @@ function inspect(source, lesson) {
 function selfTest() {
   const minimalTabs = GOLDEN.map(t => '=== "' + t + '"').join('\n');
   assert(inspect(minimalTabs, 2).issues.includes('B02_S1_NUMBER_SETS_MISSING_P1'));
-  const fixedB02 = minimalTabs + '\n    ### 2.2. Các tập hợp số\n    N, Z, Q, R\n';
-  assert(!inspect(fixedB02, 2).issues.includes('B02_S1_NUMBER_SETS_MISSING_P1'));
+  const headingOnly = minimalTabs + '\n    ### 2.2. Các tập hợp số\n    N, Z, Q, R\n';
+  assert(!inspect(headingOnly, 2).issues.includes('B02_S1_NUMBER_SETS_MISSING_P1'));
+  assert(inspect(headingOnly, 2).issues.includes('B02_S1_NUMBER_SETS_SEMANTIC_REVIEW_REQUIRED'));
   const falseGraph = minimalTabs + '\n<svg><title>Parabol</title><text>I(2;−1)</text></svg>\n' +
     '**Cách đọc hình.** Quan sát đỉnh (1,-4) và trục x=1.\n';
   const defects = inspect(falseGraph, 16).issues;
@@ -45,9 +54,10 @@ function selfTest() {
   const drawing = falseGraph.replace('</svg>', '<path d="M0 0L1 1"/></svg>');
   assert(!inspect(drawing, 16).issues.includes('SVG_TEXT_ONLY_P1_REVIEW'));
   assert(inspect(drawing, 16).issues.includes('B16_FIGURE_GUIDE_CONFLICT_P1'));
+  assert(inspect(drawing, 16).issues.includes('B16_FIGURE_GEOMETRY_REVIEW_REQUIRED'));
   const duplicateHelp = minimalTabs + '\n??? tip "Gợi ý khắc phục"\n??? tip "Gợi ý khắc phục"';
   assert(inspect(duplicateHelp, 15).issues.includes('D6_REPEAT_TITLE_REVIEW'));
-  console.log('PASS: 7 negative/positive control assertions. Academic/PED review remains human/source-dependent.');
+  console.log('PASS: 9 negative/positive control assertions. Academic/PED review remains human/source-dependent.');
 }
 function report() {
   console.log('| Bài | 4 tab | 2.x | Semantic box | Figure | Inline SVG text-only | HELP | Phát hiện tự động |');
