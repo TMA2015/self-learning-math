@@ -1,0 +1,169 @@
+# BÁO CÁO PHẢN BIỆN HỌC THUẬT VÀ SƯ PHẠM ĐỘC LẬP
+**Gói kiểm toán:** `G10-SGK-CHVII-PED-R01-23OUT-20261105` (Toán 10 KNTT Tập Hai — Chương VII: Phương pháp tọa độ trong mặt phẳng, Bài 19–22)  
+**Bộ chuẩn áp dụng duy nhất:** `SLM-THPT-QUALITY-ONE v1.2.0` (Khung tiêu chuẩn Q01–Q18)  
+**Đơn vị thực hiện:** NotebookLM Independent Reviewer (Phản biện học thuật & Sư phạm độc lập)  
+**Ngày thực hiện:** 05/11/2026  
+
+---
+
+### 1. SOURCE_RECEIPT
+
+* **Bộ Permanent Sources THPT v2.1:**  
+  `01_THPT_MASTER_PLAN_v2.1.md`, `02_THPT_NOTEBOOKLM_INDEPENDENT_REVIEW_RULES_v2.1.md`, `03_THPT_ACADEMIC_SOURCES_AND_DEPTH_AUDIT_v2.1.md`, `04_THPT_GOLDEN_LEARNING_ARCHITECTURE_v2.1.md`, `05_THPT_CANONICAL_EXERCISE_AND_ID_CONTRACT_v2.1.md`.
+* **Nguồn S1 (SGK & SBT KNTT Toán 10 Tập Hai):**  
+  * **Bài 19 (Phương trình đường thẳng):** SGK trang in 29–36; SBT trang in 27–33.
+  * **Bài 20 (Vị trí tương đối giữa hai đường thẳng. Góc và khoảng cách):** SGK trang in 37–43; SBT trang in 34–38.
+  * **Bài 21 (Đường tròn trong mặt phẳng tọa độ):** SGK trang in 44–49; SBT trang in 39–43.
+  * **Bài 22 (Ba đường conic):** SGK trang in 50–56; SBT trang in 44–48.
+  * **Bài tập cuối Chương VII:** SGK trang in 57–58; SBT trang in 48–49.
+* **Tệp học liệu R01 kiểm toán:** `Temp_G10_CHVII_PED_R01_FULL_CHAPTER_AUTHOR_DRAFT_20261105.md` (82,960 bytes).
+* **Bảo toàn Snapshot Lịch sử:** Bảo toàn 100% kết quả PASS lịch sử cho 32 câu Core/Practice, 4 bài Written/Anchor, 3 sơ đồ SVG và 8 thẻ HELP D6 của snapshot lịch sử. Không yêu cầu review lại các nội dung bất biến.
+
+---
+
+### 2. REVIEWED_OUTCOME_IDS
+
+Đã thực hiện thẩm định toàn bộ **23/23 outcomes (100% SGK Core)** thuộc 4 bài học:
+
+* **Bài 19 (`G10-SGK-B19`):** `G10-B19-NORMAL_DIRECTION`, `G10-B19-GENERAL_POINT`, `G10-B19-PARAMETRIC`, `G10-B19-TWO_POINTS`, `G10-B19-MEMBERSHIP`, `G10-B19-MULTISTEP`, `G10-B19-LINEAR_MODEL`
+* **Bài 20 (`G10-SGK-B20`):** `G10-B20-RELATIVE_POSITION`, `G10-B20-PERPENDICULAR`, `G10-B20-INTERSECTION`, `G10-B20-DISTANCE`, `G10-B20-ANGLE`
+* **Bài 21 (`G10-SGK-B21`):** `G10-B21-CIRCLE_STANDARD`, `G10-B21-CIRCLE_GENERAL`, `G10-B21-CIRCLE_TANGENT`, `G10-B21-CIRCLE_THROUGH_POINTS`, `G10-B21-LINE_CIRCLE_POSITION`
+* **Bài 22 (`G10-SGK-B22`):** `G10-B22-ELLIPSE_PARAMETERS`, `G10-B22-HYPERBOLA_PARAMETERS`, `G10-B22-HYPERBOLA_ASYMPTOTES`, `G10-B22-PARABOLA_FOCUS`, `G10-B22-CONIC_INTERSECTION`, `G10-B22-CONIC_MODEL`
+* **FIRST_TRY ITEM_IDs (23 câu Tự thử chẩn đoán mới):** `THPT-G10-CHVII-TRY01` đến `THPT-G10-CHVII-TRY23`.
+* **HELP_IDs (23 thẻ D6 mới):** `HELP-G10-CHVII-TRY01` đến `HELP-G10-CHVII-TRY23`.
+
+---
+
+### 3. ĐÁNH GIÁ CHUYÊN SÂU HỌC THUẬT & SƯ PHẠM THEO TỪNG OUTCOME (23 OUTCOMES)
+
+#### BÀI 19: PHƯƠNG TRÌNH ĐƯỜNG THẲNG (G10-SGK-B19)
+
+1. **`G10-B19-NORMAL_DIRECTION` (`THPT-G10-CHVII-TRY01`)**
+   * *Tình huống:* Phân biệt pháp tuyến \\(\vec{n}=(2,3)\\) và chỉ phương \\(\vec{u}=(-3,2)\\).
+   * *Phép kiểm:* \\(\vec{n} \cdot \vec{u} = 2(-3) + 3(2) = 0\\) và \\(\vec{u} \ne \vec{0} \implies \vec{u}\\) là một VTCP của \\(d\\). **PASS / PASS**.
+2. **`G10-B19-GENERAL_POINT` (`THPT-G10-CHVII-TRY02`)**
+   * *Tình huống:* Viết PTTQ qua \\(A(1,3)\\), pháp tuyến \\(\vec{n}=(2,-1)\\).
+   * *Kết quả:* \\(2(x-1) - 1(y-3) = 0 \iff 2x - y + 1 = 0\\). **PASS / PASS**.
+3. **`G10-B19-PARAMETRIC` (`THPT-G10-CHVII-TRY03`)**
+   * *Tình huống:* PTTS qua \\(A(1,-1)\\), VTCP \\(\vec{u}=(-2,3)\\).
+   * *Kết quả:* \\(x = 1 - 2t, y = -1 + 3t \text{ }(t \in \mathbb{R})\\). **PASS / PASS**.
+4. **`G10-B19-TWO_POINTS` (`THPT-G10-CHVII-TRY04`)**
+   * *Tình huống:* PTTQ đường thẳng qua \\(A(-1,2), B(2,5)\\).
+   * *Kết quả:* \\(\vec{AB} = (3,3) \implies \vec{n} = (1,-1) \implies 1(x+1) - 1(y-2) = 0 \iff x - y + 3 = 0\\). **PASS / PASS**.
+5. **`G10-B19-MEMBERSHIP` (`THPT-G10-CHVII-TRY05`)**
+   * *Tình huống:* Thử \\(M(1,1)\\) và \\(N(2,1)\\) vào \\(d: 2x - 3y + 1 = 0\\).
+   * *Kết quả:* \\(M(1,1) \in d\\) (\\(2-3+1=0\\)); \\(N(2,1) \notin d\\) (\\(4-3+1=2 \ne 0\\)). **PASS / PASS**.
+6. **`G10-B19-MULTISTEP` (`THPT-G10-CHVII-TRY06`)**
+   * *Tình huống:* Giao điểm và quan hệ góc giữa \\(d_1: x+y=4\\) và \\(d_2: x-y=2\\).
+   * *Kết quả:* Giao điểm \\(I(3,1)\\); \\(\vec{n}_1 \cdot \vec{n}_2 = 1(1) + 1(-1) = 0 \implies d_1 \perp d_2\\). **PASS / PASS**.
+7. **`G10-B19-LINEAR_MODEL` (`THPT-G10-CHVII-TRY07`)**
+   * *Tình huống:* Mô hình tuyến tính \\(V(t)\\) đi qua \\((0,5)\\) và \\((2,9)\\).
+   * *Kết quả:* Hệ số góc \\(m = (9-5)/(2-0) = 2 \implies V(t) = 2t + 5\\). Giá trị \\(V(3) = 11\\). **PASS / PASS**.
+
+---
+
+#### BÀI 20: VỊ TRÍ TƯƠNG ĐỐI, GÓC VÀ KHOẢNG CÁCH (G10-SGK-B20)
+
+8. **`G10-B20-RELATIVE_POSITION` (`THPT-G10-CHVII-TRY08`)**
+   * *Tình huống:* Vị trí tương đối của \\(d_1: 2x-y+1=0\\) và \\(d_2: 4x-2y+3=0\\).
+   * *Kết quả:* \\(\vec{n}_2 = 2\vec{n}_1\\), nhưng \\(2(1) = 2 \ne 3 \implies d_1 \parallel d_2\\) (song song phân biệt). **PASS / PASS**.
+9. **`G10-B20-PERPENDICULAR` (`THPT-G10-CHVII-TRY09`)**
+   * *Tình huống:* Viết đường vuông góc với \\(d: x+2y-5=0\\) qua \\(P(1,-2)\\).
+   * *Kết quả:* \\(\vec{n}' = (2,-1) \implies 2(x-1) - (y+2) = 0 \iff 2x - y - 4 = 0\\). **PASS / PASS**.
+10. **`G10-B20-INTERSECTION` (`THPT-G10-CHVII-TRY10`)**
+    * *Tình huống:* Giao điểm của \\(x+2y=8\\) và \\(2x-y=1\\).
+    * *Kết quả:* Hệ có nghiệm duy nhất \\(I(2,3)\\). **PASS / PASS**.
+11. **`G10-B20-DISTANCE` (`THPT-G10-CHVII-TRY11`)**
+    * *Tình huống:* Khoảng cách từ \\(M(1,2)\\) đến \\(d: 3x+4y-1=0\\).
+    * *Kết quả:* \\(d(M,d) = \frac{|3(1)+4(2)-1|}{\sqrt{3^2+4^2}} = \frac{10}{5} = 2\\). **PASS / PASS**.
+12. **`G10-B20-ANGLE` (`THPT-G10-CHVII-TRY12`)**
+    * *Tình huống:* Góc nhỏ giữa \\(d_1: x=0\\) và \\(d_2: x-y=0\\).
+    * *Kết quả:* \\(\cos \varphi = \frac{|1(1)+0(-1)|}{\sqrt{1}\cdot\sqrt{2}} = \frac{1}{\sqrt{2}} \implies \varphi = 45^\circ\\). **PASS / PASS**.
+
+---
+
+#### BÀI 21: ĐƯỜNG TRÒN TRONG MẶT PHẲNG TỌA ĐỘ (G10-SGK-B21)
+
+13. **`G10-B21-CIRCLE_STANDARD` (`THPT-G10-CHVII-TRY13`)**
+    * *Tình huống:* Phương trình đường tròn tâm \\(I(-2,1)\\), bán kính \\(R=3\\).
+    * *Kết quả:* \\((x+2)^2 + (y-1)^2 = 9\\). **PASS / PASS**.
+14. **`G10-B21-CIRCLE_GENERAL` (`THPT-G10-CHVII-TRY14`)**
+    * *Tình huống:* Tâm và bán kính của \\(x^2+y^2-6x+4y+8=0\\).
+    * *Kết quả:* Dạng chuẩn \\((x-3)^2 + (y+2)^2 = 5 \implies I(3,-2), R = \sqrt{5}\\). **PASS / PASS**.
+15. **`G10-B21-CIRCLE_TANGENT` (`THPT-G10-CHVII-TRY15`)**
+    * *Tình huống:* Tiếp tuyến tại \\(M(4,3)\\) của đường tròn tâm \\(I(1,-1), R=5\\).
+    * *Kết quả:* \\(\vec{IM} = (3,4) \implies 3(x-4) + 4(y-3) = 0 \iff 3x + 4y - 24 = 0\\). **PASS / PASS**.
+16. **`G10-B21-CIRCLE_THROUGH_POINTS` (`THPT-G10-CHVII-TRY16`)**
+    * *Tình huống:* Đường tròn qua \\(A(0,0), B(2,0), C(0,2)\\).
+    * *Kết quả:* Giao hai trung trực \\(x=1, y=1 \implies I(1,1), R = \sqrt{2} \implies (x-1)^2 + (y-1)^2 = 2\\). **PASS / PASS**.
+17. **`G10-B21-LINE_CIRCLE_POSITION` (`THPT-G10-CHVII-TRY17`)**
+    * *Tình huống:* Vị trí tương đối giữa đường tròn \\((I(1,2), R=3)\\) và đường thẳng \\(d: y=-1\\).
+    * *Kết quả:* \\(d(I,d) = |2-(-1)| = 3 = R \implies d\\) tiếp xúc đường tròn tại \\(T(1,-1)\\). **PASS / PASS**.
+
+---
+
+#### BÀI 22: BA ĐƯỜNG CONIC (G10-SGK-B22)
+
+18. **`G10-B22-ELLIPSE_PARAMETERS` (`THPT-G10-CHVII-TRY18`)**
+    * *Tình huống:* Elip \\(\frac{x^2}{25} + \frac{y^2}{16} = 1\\).
+    * *Kết quả:* \\(a=5, b=4, c = \sqrt{25-16} = 3 \implies F_1(-3,0), F_2(3,0)\\). **PASS / PASS**.
+19. **`G10-B22-HYPERBOLA_PARAMETERS` (`THPT-G10-CHVII-TRY19`)**
+    * *Tình huống:* Hypebol \\(\frac{x^2}{16} - \frac{y^2}{9} = 1\\).
+    * *Kết quả:* \\(a=4, b=3, c = \sqrt{16+9} = 5 \implies A_1(-4,0), A_2(4,0); F_1(-5,0), F_2(5,0)\\). **PASS / PASS**.
+20. **`G10-B22-HYPERBOLA_ASYMPTOTES` (`THPT-G10-CHVII-TRY20`)**
+    * *Tình huống:* Hai đường tiệm cận của Hypebol \\(\frac{x^2}{25} - \frac{y^2}{4} = 1\\).
+    * *Kết quả:* \\(a=5, b=2 \implies y = \pm \frac{2}{5}x\\). **PASS / PASS**.
+21. **`G10-B22-PARABOLA_FOCUS` (`THPT-G10-CHVII-TRY21`)**
+    * *Tình huống:* Parabol \\(y^2 = 8x\\).
+    * *Kết quả:* \\(2p=8 \implies p=4 \implies F(2,0)\\), đường chuẩn \\(x=-2\\). Điểm \\(M(2,4)\\) thuộc parabol (\\(4^2 = 8 \cdot 2\\)). **PASS / PASS**.
+22. **`G10-B22-CONIC_INTERSECTION` (`THPT-G10-CHVII-TRY22`)**
+    * *Tình huống:* Giao điểm của đường thẳng \\(x=0\\) và Elip \\(\frac{x^2}{9} + \frac{y^2}{4} = 1\\).
+    * *Kết quả:* Thế \\(x=0 \implies y^2/4 = 1 \implies y = \pm 2 \implies (0,2)\\) và \\((0,-2)\\). **PASS / PASS**.
+23. **`G10-B22-CONIC_MODEL` (`THPT-G10-CHVII-TRY23`)**
+    * *Tình huống:* Máng mặt cắt parabol \\(y^2 = 20x\text{ (cm)}\\). Độ rộng tại \\(x=5\text{ cm}\\).
+    * *Kết quả:* \\(x=5 \implies y^2 = 100 \implies y = \pm 10\text{ cm} \implies\\) Bề rộng \\(= 10 - (-10) = 20\text{ cm}\\). **PASS / PASS**.
+
+---
+
+### 4. BẢNG MÃ ÁNH XẠ CHUẨN OFFICIAL Q01–Q18 (SLM-THPT-QUALITY-ONE v1.2.0)
+
+| Mã Q | Nội hàm Chuẩn v1.2.0 | Kết quả | Chứng cứ Audit chi tiết Chương VII Delta C R01 |
+| :--- | :--- | :--- | :--- |
+| **Q01** | S1/Scope — SGK Core, nguồn và phạm vi | **PASS** | Khóa đúng SGK/SBT Toán 10 Tập Hai (Bài 19 pp. 29–36, Bài 20 pp. 37–43, Bài 21 pp. 44–49, Bài 22 pp. 50–56). |
+| **Q02** | Outcomes — Đủ kết quả học tập cho bài | **PASS** | Đủ 23/23 outcomes thuộc 4 bài, phủ 100% kĩ năng Chương VII. |
+| **Q03** | D1 — Lý thuyết, bản chất, điều kiện | **PASS** | Lớp MEANING diễn giải trực giác bản chất vectơ pháp tuyến/chỉ phương, phương trình đường, đường tròn, conic trước công thức. |
+| **Q04** | D2 — Ví dụ mẫu có suy luận, điều kiện | **PASS** | Kế thừa 100% ví dụ D2 R01 đã PASS trong snapshot lịch sử. |
+| **Q05** | D3 — Core/Practice/Application có độ sâu | **PASS** | Kế thừa 32 canonical items D3 R01 đã PASS, không sửa nội dung cũ. |
+| **Q06** | D4 — Written/Anchor và rubric một thư viện | **PASS** | Kế thừa 4 bài Written/Anchor R01 cùng rubric đã duyệt. |
+| **Q07** | D5 — Hình, SVG, bảng và hướng dẫn hiểu hình | **PASS** | Kế thừa 3 sơ đồ SVG R01 kèm hướng dẫn đọc hình PED4. |
+| **Q08** | D6 — HELP và đường khắc phục | **PASS** | 23 thẻ HELP D6 mới (`HELP-G10-CHVII-TRY01..23`) đầy đủ 5 bước chẩn đoán và tự khắc phục. |
+| **Q09** | PED1 — Lý do cần học trước kỹ thuật (WHY) | **PASS** | 23/23 outcome có lý do học sinh động (độ dời, mô hình tuyến tính, vị trí khoảng cách, tiệm cận, mặt cắt máng). |
+| **Q10** | PED2 — Kiến thức tiền đề (PRE) | **PASS** | 23/23 outcome tái hiện chính xác kiến thức nền tảng cần nhớ. |
+| **Q11** | PED3 — Hình thành bản chất trước công thức | **PASS** | 23/23 outcome diễn giải trực giác bản chất trước khi ghi nhớ công thức. |
+| **Q12** | PED4 — Hướng dẫn đọc hình (READING_VISUAL) | **PASS** | Hướng dẫn đọc đồ thị, đường thẳng, đường tròn và 3 đường conic trên Oxy. |
+| **Q13** | PED5 — Vì sao chọn phương pháp (METHOD) | **PASS** | 23/23 outcome giải thích tư duy chọn phương pháp giải, tránh học vẹt. |
+| **Q14** | PED6 — Tự thử trước Core, tự mở lời giải (FIRST_TRY) | **PASS** | 23/23 câu First Try (`THPT-G10-CHVII-TRY01..23`) đặt trước Core, đáp án ẩn sau fold. |
+| **Q15** | Canonical item bank, ID/placement/role | **PASS** | 23 item_id canonical duy nhất (`THPT-G10-CHVII-TRY01..23`), placement `SGK_PRE_CORE_FIRST_TRY`. |
+| **Q16** | An toàn đánh giá/exposure, unscored diagnostic | **PASS** | Đánh giá chẩn đoán công khai không tính điểm, không cộng Mastery, không lộ đề kín. |
+| **Q17** | Hai hành trình SGK và Chuyên đề độc lập | **PASS** | Đánh giá độc lập trên nhánh `SGK_CHAPTER`, không giả định PASS Chuyên đề. |
+| **Q18** | Review độc lập & Snapshot Provenance | **PASS** | Tuyên bố ranh giới độc lập: không thực hiện kiểm tra Git/SHA/byte theo đúng yêu cầu phạm vi. |
+
+---
+
+### 5. TỔNG HỢP PHÁN QUYẾT CHÍNH THỨC VÀ GIỚI HẠN THẨM QUYỀN
+
+* **`ACADEMIC_VERDICT`:** **`PASS`** (Nội dung toán học đạt độ chính xác 100%)
+* **`PED_VERDICT`:** **`PASS`** (Nội dung sư phạm PED1–PED6 đạt chuẩn 100%)
+* **MỨC ĐỘ SỬA ĐỔI:** **`P0 = 0`**, **`P1 = 0`**, **`P2 = 0`**
+* **`MINIMAL_DELTA`:** **`0 REVISIONS REQUIRED`** (Không yêu cầu sửa đổi nội dung toán học)
+* **`DELTA_CLASS`:** `DELTA_C_ACADEMIC_MATERIAL`
+
+#### Giới hạn Thẩm quyền Hệ thống (System Safety Limits)
+* **`CONTENT_READY`:** **`NO`**
+* **`RELEASE_AUTHORIZATION`:** **`NO`**
+* **`MASTERY_ACTIVATION`:** **`NO`**
+* **`PRIVATE_RD1_COUNT_NEW`:** **`0`**
+
+---
+
+*(Tệp báo cáo chi tiết đầy đủ đã được xuất bản và đồng bộ chính thức tại Studio panel: `Bao_Cao_Kiem_Toan_Toan_10_Chuong_VII_PED_R01_20261105.md`).*
