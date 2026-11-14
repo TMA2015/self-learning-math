@@ -1,0 +1,23 @@
+# G10 ChVII B19–B22 — R02 learner-clarity correction, same academic intent (14/11/2026)
+
+This **additive source-chain receipt** responds to the owner's instruction to preserve the approved Golden model, use NotebookLM/Gemini teaching material meaningfully, place extensions within their proper learning role and **remove useless notices**. It is not a second academic standard or a replacement for the reviewed R02 verdict.
+
+**Academic basis:** R02 lesson explanations + the original nine diagram concepts independently received **Academic PASS and PED PASS**. The 4-page RELEASE candidate had missed two *pre-existing* wrapper defects that contradicted that same approved R02:
+- B21 old \`1.1 Cùng tìm hiểu\` called a full **coverage region** the points at **exactly 3 km**; this describes the **circle boundary**, not the full disk. New question distinguishes \`IM≤R\` from \`IM=R\` and allows the reviewed R02 \`TRY13\` derivation to answer it (Q03, PED).
+- B22 original formal \`2.2 Hypebol\` and the formula-summary table displayed **asymptotes as mandatory SGK knowledge** while R02 placed \`TRY20\` in **Mở rộng có hướng dẫn**. Formal core now retains \`c²=a²+b²\`, both foci and two branches; the same asymptote example remains in the **Ví dụ** tab clearly headed *Mở rộng có hướng dẫn* and the R02 discovery near TRY20. The unrelated B21 circle-line position formula was removed from compulsory 2.x because the identical concept stays under approved \`TRY17\` *Vận dụng liên bài*.
+- All four \`1.1\` openings now ask a mathematical/concrete question **without presenting the final formula beforehand**; R02 independently reviewed actual explanations remain intact and adjacent to their original diagrams.
+- Removed **23 identical, misleading** \`Nếu chưa đúng: Mở hướng dẫn tự sửa ngay bên dưới...\` notices from already collapsed \`Đối chiếu\` disclosures: remediation remains in original **Lỗi thường gặp** (33 HELP). Preserved all deep links to actual matching practice; concise learner link text \`Luyện tập thêm\`. Removed 4 generic visible \`Trước khi xem lời giải...\` instructions with no corresponding gating control in the **Ví dụ** tab.
+- Did **not** remove the approved three broad \`1.1 Cùng tìm hiểu / 1.2 Ví dụ trực quan / 1.3 Thuật ngữ, kiến thức và kỹ năng\` stages or mandatory SGK \`2.x\` headings, preserving **Golden four tabs** and owner template. No outcome-by-outcome PED/checklist microheadings reintroduced.
+
+**Immutable canonical content:** Original 25 \`item_id\`, \`outcome_id\`, rubric/answer rationale bodies, 33 D6 HELP, original 9 worked examples, formulas for necessary core outcomes, independent First Try placements and question deep-link destinations unchanged. No new hints/answers before Final Submit, RD1 or Firebase writes. All 9 concept SVG source files unchanged. Exercise roles \`TRY06\` and \`TRY20\` Guided Extension, \`TRY17\` B20–B21 transfer, \`TRY18\` core remain visible and correct.
+
+| Bài | Academic/PED R02 previously signed source blob | Learner-clarity candidate blob | Canonical Vận dụng | HELP | SGK worked examples |
+| --- | --- | --- | ---: | ---: | ---: |
+| B19 | `f79bafef3c200ec05c236834b77baa26d50519d5` | `a1bf8d1cc0ae86beb557dbc076ef456d4bf2b59d` | 7 | 9 | 2 |
+| B20 | `a4671a8f5365d7fdb75494805310aea699038edd` | `8df1192bb24a9e8e79657b1373b22a0a9bd7fca7` | 5 | 7 | 2 |
+| B21 | `09ba9cb99d02f668dca8dd0509e74e50cffa52c8` | `f5c01087e5e1c662d8aed1b5759ef964ce195b81` | 5 | 7 | 2 |
+| B22 | `41a4c8f23d627053e198b970361f77ae5f78938b` | `87115113e1a179064cae7b07d7bacbd3718fa773` | 8 | 10 | 3 |
+
+**Change class:** Primarily `DELTA_A_UI` editorial visibility / `DELTA_B_SOURCE_EQUIVALENT` role-aligned source wording, implementing concepts already specifically accepted in R02. B21 previously false **coverage** sentence corrected to the R02-reviewed disk/boundary distinction; B22 compulsory/optional reclassification explicitly reviewed in R02. **No new mathematical example, condition, answer, diagram or rubric**. If later changes alter mathematics, choose `DELTA_C` and request affected-scope academic/PED review rather than claiming blanket R02 PASS.
+
+**Release gate:** Re-run exact-head source/Golden/MathJax/9 SVG/browser 390/820/1440, G10 27 Knowledge, THPT R4/Final Submit/Q16 and Golden regressions. `DRAFT / QA_PENDING / NO_MERGE / NO_DEPLOY`; owner authorization remains separate.
