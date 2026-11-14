@@ -10,11 +10,7 @@
 
     ### Cùng tìm hiểu
 
-    Một trạm phát sóng có vùng phủ được mô tả bằng mọi điểm cách trạm **đúng 3 km**. Trên bản đồ tọa độ, tập các điểm cách tâm \(I(2,1)\) đúng 3 đơn vị chính là một **đường tròn**.
-
-    Nếu em đã biết khoảng cách giữa hai điểm, công thức đường tròn gần như tự xuất hiện: \(\sqrt{(x-2)^2+(y-1)^2}=3\). Bình phương hai vế (đều không âm) cho \((x-2)^2+(y-1)^2=9\). Thay vì học thuộc bốn chữ số, hãy đọc công thức như câu nói: “khoảng cách từ điểm \((x,y)\) đến tâm I bằng bán kính 3”.
-
-    Một đường thẳng có thể không chạm, cắt tại hai điểm hoặc **tiếp xúc** đường tròn. Tại điểm tiếp xúc, **tiếp tuyến vuông góc bán kính**: đây là cách dựng phương trình tiếp tuyến từ hình học.
+    Một trạm phát sóng có tầm phủ lý tưởng 3 km. Nếu đứng cách trạm 1 km, em vẫn ở **trong vùng phủ**; vậy vì sao ranh giới vùng phủ lại chỉ gồm những điểm cách trạm **đúng 3 km**? Hãy phân biệt **cả hình tròn** với **đường biên** của nó trước khi dùng công thức khoảng cách để tự suy ra phương trình đường tròn.
 
     ### Ví dụ trực quan
 
@@ -39,12 +35,12 @@
 
         **Lý do:** IM²=(x+2)²+(y-1)², và R²=3²=9. Cần R=3>0.
 
-        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
 
 
-    <a href="../luyen-tap/?item=THPT-G10-B21-C01">Mở câu luyện tập tương ứng để tự luyện</a>
+
+    <a href="../luyen-tap/?item=THPT-G10-B21-C01">Luyện tập thêm</a>
 
 
     <span id="thpt-g10-chvii-try14" data-thpt-first-try-id="THPT-G10-CHVII-TRY14" data-outcome-id="G10-B21-CIRCLE_GENERAL" data-thpt-help-ref="HELP-G10-CHVII-TRY14"></span>
@@ -66,12 +62,12 @@
 
         **Lý do:** x²−6x=(x−3)²−9, y²+4y=(y+2)²−4. Suy ra tổng hai bình phương bằng −8+9+4=5>0.
 
-        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
 
 
-    <a href="../luyen-tap/?item=THPT-G10-B21-C02">Mở câu luyện tập tương ứng để tự luyện</a>
+
+    <a href="../luyen-tap/?item=THPT-G10-B21-C02">Luyện tập thêm</a>
 
 
     <span id="thpt-g10-chvii-try15" data-thpt-first-try-id="THPT-G10-CHVII-TRY15" data-outcome-id="G10-B21-CIRCLE_TANGENT" data-thpt-help-ref="HELP-G10-CHVII-TRY15"></span>
@@ -90,12 +86,12 @@
 
         **Lý do:** IM=(3,4), IM²=9+16=25=R² nên M thuộc đường. Tiếp tuyến: 3(x−4)+4(y−3)=0 ⇒ 3x+4y−24=0.
 
-        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
 
 
-    <a href="../luyen-tap/?item=THPT-G10-B21-P02">Mở câu luyện tập tương ứng để tự luyện</a>
+
+    <a href="../luyen-tap/?item=THPT-G10-B21-P02">Luyện tập thêm</a>
 
 
     <span id="thpt-g10-chvii-try16" data-thpt-first-try-id="THPT-G10-CHVII-TRY16" data-outcome-id="G10-B21-CIRCLE_THROUGH_POINTS" data-thpt-help-ref="HELP-G10-CHVII-TRY16"></span>
@@ -112,12 +108,12 @@
 
         **Lý do:** Trung trực AB là x=1; trung trực AC là y=1. IA²=1²+1²=2; thử B và C đều cho tổng bình phương bằng 2.
 
-        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
 
 
-    <a href="../luyen-tap/?item=THPT-G10-B21-P04">Mở câu luyện tập tương ứng để tự luyện</a>
+
+    <a href="../luyen-tap/?item=THPT-G10-B21-P04">Luyện tập thêm</a>
 
 
     <span id="thpt-g10-chvii-try17" data-thpt-first-try-id="THPT-G10-CHVII-TRY17" data-outcome-id="G10-B21-LINE_CIRCLE_POSITION" data-thpt-help-ref="HELP-G10-CHVII-TRY17" data-learning-role="interlesson-application"></span>
@@ -136,12 +132,12 @@
 
         **Lý do:** Khoảng cách từ I(1,2) đến y=−1 là |2−(−1)|=3=R. Chân đường vuông góc từ I xuống d là T(1,−1).
 
-        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
 
 
-    <a href="../luyen-tap/?item=THPT-G10-B21-P03">Mở câu luyện tập tương ứng để tự luyện</a>
+
+    <a href="../luyen-tap/?item=THPT-G10-B21-P03">Luyện tập thêm</a>
 
     ### Thuật ngữ, kiến thức và kỹ năng
 
@@ -180,15 +176,9 @@
     (x_M-a)(x-x_M)+(y_M-b)(y-y_M)=0.
     \]
 
-    Với đường thẳng \(d\), đặt \(h=d(I,d)\):
-
-    - \(h<R\): hai giao điểm;
-    - \(h=R\): tiếp xúc;
-    - \(h>R\): không giao nhau.
-
 === "Ví dụ"
 
-    Trước khi xem lời giải, hãy xác định dữ kiện, điều phải tìm và lý do chọn cách giải. Sau đó kiểm tra lại điều kiện áp dụng và kết quả, thay vì chỉ nhìn phép tính cuối cùng.
+
 
     ### Ví dụ — Từ tâm và tiếp điểm tìm tiếp tuyến
 
