@@ -85,6 +85,14 @@ if(stemAP2Text)assert.equal(stemAP2Matches.length,4,"Four signed AP2 stem equiva
 const stemAP2=new Map(stemAP2Matches.map(m=>[Number(m[1]),{
  baseline:m[2],candidate:m[3],tries:Number(m[4])}]));
 
+const comparisonAP2Path=path.join(root,
+ "prototypes/thpt/ux795/G10_CHVII_R02_AP2_COMPARISON_DISPLAY_EQUIVALENT_RECEIPT_20261114.md");
+const comparisonAP2Text=fs.existsSync(comparisonAP2Path)?fs.readFileSync(comparisonAP2Path,"utf8"):"";
+const comparisonAP2Matches=[...comparisonAP2Text.matchAll(/^\| B(19|20|21|22) \| \x60([a-f0-9]{40})\x60 \| \x60([a-f0-9]{40})\x60 \| (\d+) \| (\d+) \|/gm)];
+if(comparisonAP2Text)assert.equal(comparisonAP2Matches.length,4,"All four signed AP2 comparison rows required");
+const comparisonAP2=new Map(comparisonAP2Matches.map(m=>[Number(m[1]),{
+ baseline:m[2],candidate:m[3],tries:Number(m[4]),lines:Number(m[5])}]));
+
 const htmlSelfPractice=/<summary[^>]*>\s*Xem lời giải ba câu tự luyện\s*<\/summary>/g;
 const blob=raw=>crypto.createHash("sha1")
  .update(Buffer.from("blob "+raw.length+"\0")).update(raw).digest("hex");
@@ -105,7 +113,7 @@ for(let n=1;n<=27;n++){
   const source=fs.readFileSync(path.join(root,"docs",route+".md"));
   assert.equal(blob(source),followon.candidate,"B"+n+" source SHA must match signed UX receipt");
  }
- const signedVII=chvii.get(n),amendedVII=chviiNarrative.get(n),ap2=chviiAp2.get(n),r02=chviiR02.get(n),edited=clarity.get(n),work=workFix.get(n),display=stemAP2.get(n);
+ const signedVII=chvii.get(n),amendedVII=chviiNarrative.get(n),ap2=chviiAp2.get(n),r02=chviiR02.get(n),edited=clarity.get(n),work=workFix.get(n),display=stemAP2.get(n),comparison=comparisonAP2.get(n);
  if(signedVII){
   const source=fs.readFileSync(path.join(root,"docs",route+".md"));
   if(amendedVII){
@@ -146,7 +154,13 @@ for(let n=1;n<=27;n++){
    assert.equal(display.baseline,work.candidate,"B"+n+" AP2 stem old source does not match Work receipt");
    assert.equal(display.tries,signedVII.tries,"B"+n+" AP2 must keep all canonical items");
   }
-  const last=display?.candidate||work?.candidate||edited?.candidate||r02?.candidate||ap2?.candidate||amendedVII?.candidate||signedVII.candidate;
+  if(comparison){
+   assert(display,"B"+n+" comparison must extend exact AP2-stem source");
+   assert.equal(comparison.baseline,display.candidate,"B"+n+" comparison must start at stem receipt SHA");
+   assert.equal(comparison.tries,signedVII.tries,"B"+n+" original canonical question count must stay fixed");
+   assert.equal(comparison.lines,({19:14,20:10,21:10,22:14})[n],"B"+n+" answer line count frozen");
+  }
+  const last=comparison?.candidate||display?.candidate||work?.candidate||edited?.candidate||r02?.candidate||ap2?.candidate||amendedVII?.candidate||signedVII.candidate;
   assert.equal(blob(source),last,"B"+n+" ChVII source must match latest signed Q18 source-chain receipt");
   assert.equal(ids.length,signedVII.tries,"B"+n+" original ChVII FirstTry count");
   assert.equal([...markdown.matchAll(/data-thpt-help-id="([^"]+)"/g)].length,signedVII.helps,
