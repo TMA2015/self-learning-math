@@ -187,7 +187,7 @@
 
     **Vì sao chọn cách này?** Đường đã ở dạng tổng quát, nên có thể dùng trực tiếp công thức khoảng cách thay vì tự đo trên hình.
 
-    **Lời giải.** \(d=\frac{|2\cdot0+0-6|}{\sqrt{2^2+1^2}}=\frac6{\sqrt5}\). Mẫu \(\sqrt5>0\) là độ dài pháp tuyến. Hình bên cạnh minh họa đoạn vuông góc từ M đến đường. 
+    **Lời giải.** \(d=\frac{|2\cdot0+0-6|}{\sqrt{2^2+1^2}}=\frac6{\sqrt5}\). Mẫu \(\sqrt5>0\) là độ dài pháp tuyến. Độ dài này là đoạn vuông góc ngắn nhất từ M đến đường. 
 
     **Kiểm lại:** khoảng cách không âm và có đơn vị độ dài.
 
@@ -211,7 +211,7 @@
 
     <span id="help-g10-chvii-try08" data-thpt-help-id="HELP-G10-CHVII-TRY08"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "Song song và trùng: quên hệ số tự do"
 
         1. **Nhận diện lỗi:** Nếu kết luận trùng ngay khi pháp tuyến tỉ lệ, em đã bỏ quên hệ số tự do.
 
@@ -225,7 +225,7 @@
 
     <span id="help-g10-chvii-try09" data-thpt-help-id="HELP-G10-CHVII-TRY09"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "Đường vuông góc: chọn sai pháp tuyến"
 
         1. **Nhận diện lỗi:** Nếu chỉ lấy lại n=(1,2), em sẽ viết đường song song với d chứ không vuông góc.
 
@@ -239,7 +239,7 @@
 
     <span id="help-g10-chvii-try10" data-thpt-help-id="HELP-G10-CHVII-TRY10"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "Giao điểm: chưa kiểm cả hai đường"
 
         1. **Nhận diện lỗi:** Nếu ra một điểm chỉ thỏa một đường, em đã dừng trước bước thử.
 
@@ -253,7 +253,7 @@
 
     <span id="help-g10-chvii-try11" data-thpt-help-id="HELP-G10-CHVII-TRY11"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "Khoảng cách: thiếu trị tuyệt đối hoặc mẫu"
 
         1. **Nhận diện lỗi:** Nếu cho kết quả 10 hoặc -2, em đã quên chuẩn hóa pháp tuyến hoặc trị tuyệt đối.
 
@@ -267,7 +267,7 @@
 
     <span id="help-g10-chvii-try12" data-thpt-help-id="HELP-G10-CHVII-TRY12"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "Góc hai đường: nhầm góc tù"
 
         1. **Nhận diện lỗi:** Nếu kết luận 135°, em đã lấy góc tù theo hướng pháp tuyến thay vì góc nhỏ giữa hai đường.
 
