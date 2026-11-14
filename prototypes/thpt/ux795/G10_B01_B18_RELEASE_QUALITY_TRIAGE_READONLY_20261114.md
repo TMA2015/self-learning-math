@@ -42,7 +42,7 @@ All 18 source pages have the four prescribed Golden tabs. **This is layout evide
 
 ## C. Reproducible *detection*, not fake automatic teaching QA
 
-Run `node scripts/audit-thpt-g10-b01-b18-release-evidence.cjs --self-test` for seven synthetic negative/positive controls (missing B02 section, text-only B16 SVG, conflicting graph reading, duplicate HELP titles); run without arguments against a repository checkout to obtain a Markdown inventory. The probe is **read-only**, not connected to deploy. A clean report can **never** establish Academic/PED PASS: it does not compare source PDF page-by-page or understand all geometry/solutions. Known P1s intentionally remain visible; do not "fix" the test to suppress legitimate findings.
+Run `node scripts/audit-thpt-g10-b01-b18-release-evidence.cjs --self-test` for nine synthetic negative/positive controls (missing B02 section, text-only B16 SVG, conflicting graph reading, duplicate HELP titles); run without arguments against a repository checkout to obtain a Markdown inventory. The probe is **read-only**, not connected to deploy. A lesson named “Các tập hợp số” without actual teaching, or an SVG with one fake `<path>`, **still requires semantic human review**. A clean report can **never** establish Academic/PED PASS: it does not compare source PDF page-by-page or understand all geometry/solutions. Known P1s intentionally remain visible; do not "fix" the test to suppress legitimate findings.
 
 ## D. Owner boundary / next work
 
