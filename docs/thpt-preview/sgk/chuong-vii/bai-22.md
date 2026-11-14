@@ -231,7 +231,7 @@
 
 
 
-    **Cách đọc hình.** Đọc hai tiêu điểm và độ dài các bán trục trong hình elip; điểm trên elip có tổng khoảng cách đến hai tiêu điểm không đổi.
+    Elip có hai tiêu điểm; tổng khoảng cách từ mỗi điểm trên elip đến hai tiêu điểm không đổi.
     Dạng chính tắc \(\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1\), với \(a>b>0\). Đặt \(c^2=a^2-b^2\), hai tiêu điểm là \((\pm c;0)\), các đỉnh \((\pm a;0)\) và \((0;\pm b)\).
 
     **Ví dụ:** \(\dfrac{x^2}{25}+\dfrac{y^2}{9}=1\) có \(a=5\), \(b=3\), \(c=4\), tiêu điểm \((\pm4;0)\); tổng khoảng cách từ một điểm trên elip đến hai tiêu điểm bằng \(2a=10\).
@@ -245,7 +245,7 @@
 
 
 
-    **Cách đọc hình.** Đọc hai nhánh hypebol, hai tiêu điểm và trục thực; đừng tráo công thức c²=a²+b² thành elip.
+    Hypebol có hai nhánh và hai tiêu điểm. Trong dạng trục thực trùng \(Ox\), cần phân biệt quan hệ \(c^2=a^2+b^2\) với elip.
     Dạng chính tắc \(\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1\), \(a,b>0\). Khi đó \(c^2=a^2+b^2\), hai tiêu điểm \((\pm c;0)\), các đỉnh \((\pm a;0)\).
 
     **Ví dụ:** \(\dfrac{x^2}{9}-\dfrac{y^2}{16}=1\): \(a=3,b=4,c=5\), hai tiêu điểm \((\pm5;0)\).
