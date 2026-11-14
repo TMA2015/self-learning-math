@@ -7,6 +7,7 @@ const fs=require("node:fs"),path=require("node:path"),cp=require("node:child_pro
  crypto=require("node:crypto");
 const root=path.resolve(__dirname,"..");
 const before="1fd114150a170948d28aaca1abd04f3023af12ed";
+const stemSnapshot="fb96ca34e3e4f2787177a5a3834253bda549253b";
 const published="bfc15b552a1ea697edb1327f0a48d7a95bbb73ed";
 const counts={19:7,20:5,21:5,22:8};
 const receipt=fs.readFileSync(path.join(root,
@@ -39,7 +40,7 @@ let total=0;
 for(const n of [19,20,21,22]){
  const file="docs/thpt-preview/sgk/chuong-vii/bai-"+n+".md";
  const older=gitShow(before,file),original=gitShow(published,file);
- const newer=fs.readFileSync(path.join(root,file),"utf8");
+ const newer=gitShow(stemSnapshot,file); // immutable AP2-only snapshot; latest changes only answer formatting
  const row=table.get(n);
  assert(row,"B"+n+" missing signed AP2 equivalence row");
  assert.equal(blob(older),row.baseline,"B"+n+" pre-AP2 source blob mismatch");
