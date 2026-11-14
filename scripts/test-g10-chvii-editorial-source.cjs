@@ -6,7 +6,7 @@
 const fs=require("node:fs"),path=require("node:path"),cp=require("node:child_process"),
  crypto=require("node:crypto"),assert=require("node:assert/strict");
 const root=path.resolve(__dirname,".."),published="bfc15b552a1ea697edb1327f0a48d7a95bbb73ed";
-const {chviiEditorialReceiptRows,chviiContinuousReceiptRows,chviiAp2ReceiptRows,chviiR02ReceiptRows,chviiClarityReceiptRows,chviiWorkFollowupReceiptRows,chviiStemReceiptRows,candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
+const {chviiEditorialReceiptRows,chviiContinuousReceiptRows,chviiAp2ReceiptRows,chviiR02ReceiptRows,chviiClarityReceiptRows,chviiWorkFollowupReceiptRows,chviiStemReceiptRows,chviiComparisonReceiptRows,candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 const blob=data=>{const raw=Buffer.isBuffer(data)?data:Buffer.from(data);return crypto.createHash("sha1").update("blob "+raw.length+"\0").update(raw).digest("hex");};
 const ids=(s,k)=>[...s.matchAll(new RegExp(k+'="([^"]+)"',"g"))].map(m=>m[1]).sort();
 const tex=s=>[...s.matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]/g)].map(m=>(m[1]||m[2]).trim().replace(/\s+/g," "));
@@ -29,12 +29,28 @@ function revealed(s){
 // Preserve every canonical answer and explanation byte-for-byte in meaning.
 // The only permitted difference is the fixed, unrelated, misleading navigation sentence.
 const obsoleteAnswerNote="**Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.";
+const normalizeDisplay=s=>s
+ .replace(/\\dfrac\{([A-Za-z])\^2\}\{(\d+)\}/g,"$1²/$2")
+ .replace(/\\overrightarrow\{([A-Z]{2})\}/g,"$1")
+ .replace(/\\vec ([a-z])('|)/g,"$1$2")
+ .replace(/\\mathbb R/g,"ℝ").replace(/\\in/g,"∈").replace(/\\ne/g,"≠")
+ .replace(/\\Rightarrow/g,"⇒").replace(/\\cdot/g,"·").replace(/\\Delta\s*/g,"Δ")
+ .replace(/\\varphi/g,"φ").replace(/\\cos/g,"cos")
+ .replace(/\\lvert|\\rvert/g,"|")
+ .replace(/\\sqrt\{([^{}]+)\}/g,"√($1)").replace(/\\sqrt([0-9])/g,"√$1")
+ .replace(/\\approx/g,"≈").replace(/\\pm/g,"±").replace(/\\ge/g,"≥").replace(/\\le/g,"≤")
+ .replace(/\^\\circ/g,"°").replace(/\\\(|\\\)/g,"").replace(/\\[ ,]/g,x=>x.slice(1))
+ .replace(/([A-Za-z0-9)])\^2/g,(_,x)=>x+"²")
+ .replace(/([AFdn])_(\d)/g,"$1$2").replace(/−/g,"-").replace(/\x60/g,"")
+ .replace(/\s*⇒\s*/g,"⇒").replace(/\s*±\s*/g,"±")
+ .replace(/:\s*/g,": ").replace(/\s+/g," ").trim();
+
 const canonicalAnswerText=parts=>parts.map(block=>block
  .replace("Nếu sai, xem `HELP-G10-CHVII-ELLIPSE-TR01`.","")
  .replace("**Chưa đủ thông tin trạm nào nhận trước** nên chưa thể chọn nhánh. Nếu quên điều kiện này, xem `HELP-G10-CHVII-HYPERBOLA-TR01`.",
  "**Chưa biết tín hiệu từ trạm A hay B đến máy thu trước**, nên chưa thể chọn nhánh.")
  .split("\n")
- .map(line=>line.trim()).filter(line=>line&&line!==obsoleteAnswerNote).join("\n")).sort();
+ .map(line=>normalizeDisplay(line.trim())).filter(line=>line&&line!==obsoleteAnswerNote).join("\n")).sort();
 
 const specs={
  19:{count:7,helps:9,figures:2,examples:2,book:["2.1. Phương trình tổng quát của đường thẳng","2.2. Phương trình tham số của đường thẳng"]},
@@ -42,7 +58,7 @@ const specs={
  21:{count:5,helps:7,figures:3,examples:2,book:["2.1. Phương trình đường tròn","2.2. Phương trình tiếp tuyến của đường tròn"]},
  22:{count:8,helps:10,figures:6,examples:3,book:["2.1. Elip","2.2. Hypebol","2.3. Parabol","2.4. Một số ứng dụng của ba đường conic"]}
 };
-const rows=chviiEditorialReceiptRows(),followOn=chviiContinuousReceiptRows(),ap2=chviiAp2ReceiptRows(),r02=chviiR02ReceiptRows(),clarity=chviiClarityReceiptRows(),work=chviiWorkFollowupReceiptRows(),stems=chviiStemReceiptRows();
+const rows=chviiEditorialReceiptRows(),followOn=chviiContinuousReceiptRows(),ap2=chviiAp2ReceiptRows(),r02=chviiR02ReceiptRows(),clarity=chviiClarityReceiptRows(),work=chviiWorkFollowupReceiptRows(),stems=chviiStemReceiptRows(),comparisons=chviiComparisonReceiptRows();
 assert.equal(rows.size,4,"Exactly four signed Chapter VII original rows required");
 assert.equal(followOn.size,4,"Exactly four source-locked continuous-explanation follow-on rows required");
 assert.equal(ap2.size,4,"Exactly four AP2 TeX-normalization source rows required");
@@ -50,10 +66,14 @@ assert.equal(r02.size,4,"Four reviewed R02 lesson rows required");
 assert.equal(clarity.size,4,"Four scoped learner-clarity correction rows required");
 assert.equal(work.size,4,"Four Work Browser follow-up rows required");
 assert.equal(stems.size,4,"Four AP2 canonical stem display rows required");
+assert.equal(comparisons.size,4,"Four AP2 comparison display rows required");
 let allTry=0,allHelp=0,allFigures=0,allExamples=0;
 for(const [lessonStr,info]of Object.entries(specs)){
- const n=Number(lessonStr),name="B"+n,row=rows.get(name),delta=followOn.get(name),display=ap2.get(name),teaching=r02.get(name),clean=clarity.get(name),workUX=work.get(name),ap2Stems=stems.get(name);
- assert(row&&delta&&display&&teaching&&clean&&workUX&&ap2Stems,"Missing R02→clarity→Work→AP2 stem chain "+name);
+ const n=Number(lessonStr),name="B"+n,row=rows.get(name),delta=followOn.get(name),display=ap2.get(name),teaching=r02.get(name),clean=clarity.get(name),workUX=work.get(name),ap2Stems=stems.get(name),answerDisplay=comparisons.get(name);
+ assert(row&&delta&&display&&teaching&&clean&&workUX&&ap2Stems&&answerDisplay,
+  "Missing R02→clarity→Work→AP2 stem→AP2 comparison chain "+name);
+ assert.equal(answerDisplay.baseline,ap2Stems.candidate,name+" comparisons must start at exact AP2 stem source");
+ assert.equal(answerDisplay.moved,info.count,name+" comparison rendering changes canonical count");
  assert.equal(ap2Stems.baseline,workUX.candidate,name+" AP2 display baseline not exact Work-fixed source");
  assert.equal(ap2Stems.moved,info.count,name+" AP2 display changed canonical question count");
  assert.equal(workUX.baseline,clean.candidate,name+" Work corrections must extend verified learner clarity source");
@@ -81,8 +101,8 @@ for(const [lessonStr,info]of Object.entries(specs)){
  assert.equal(old.status,0,"Original published Git source inaccessible "+rel+" "+old.stderr);
  const baseline=old.stdout;
  assert.equal(blob(baseline),row.baseline,name+" published source baseline SHA mismatch");
- assert.equal(blob(bytes),ap2Stems.candidate,name+" AP2 rendered-question Markdown differs from signed receipt");
- assert.equal(candidateG10KnowledgeBlob(n),ap2Stems.candidate,name+" Q18 router must point to AP2 display candidate");
+ assert.equal(blob(bytes),answerDisplay.candidate,name+" AP2 rendered-comparison Markdown differs from signed receipt");
+ assert.equal(candidateG10KnowledgeBlob(n),answerDisplay.candidate,name+" Q18 router must point to latest comparison candidate");
  assert.equal(row.moved,info.count,name+" 25 First Try count source receipt");
  assert.equal(row.helps,info.helps,name+" 33 HELP source receipt");
  assert.equal(row.examples,info.examples,name+" example count source receipt");
@@ -203,7 +223,7 @@ for(const [lessonStr,info]of Object.entries(specs)){
  assert(!/^\s{4}\?\?\? question "Tự mở đáp án sau khi đã tự làm"/m.test(s),name+" non-Golden reveal label");
  assert.notDeepEqual(ids(s.replace('data-thpt-first-try-id="','data-thpt-first-try-id="CORRUPTED-'),"data-thpt-first-try-id"),
   ids(baseline,"data-thpt-first-try-id"),name+" negative item-id mutation failed");
- assert.notEqual(blob(s+" "),ap2Stems.candidate,name+" negative source SHA mutation failed");
+ assert.notEqual(blob(s+" "),answerDisplay.candidate,name+" negative source SHA mutation failed");
  assert.notDeepEqual([...knowledge.replace(info.book[0],"WRONG_S1_TITLE").matchAll(/^    ### ([^\n]+)/gm)].map(x=>x[1]),
   info.book,name+" negative SGK title mutation failed");
  allTry+=info.count;allHelp+=info.helps;allFigures+=info.figures;allExamples+=info.examples;
