@@ -1,0 +1,95 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CĐ19 · Từ đếm chọn–xếp đến hệ số Newton</title><style>
+:root{color-scheme:light;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:white;color:#16354f}*{box-sizing:border-box}
+body{background:#f7f9fc;margin:0;padding:16px}main{max-width:1000px;margin:auto;background:white;border:1px solid #d7e2f1;border-radius:14px;padding:18px}
+h1{font-size:clamp(1.26rem,2.8vw,1.8rem);margin:3px 0 12px}h2{font-size:1.08rem;margin:5px 0}
+p{line-height:1.6}.muted{color:#49657c}.caps{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;font-weight:750;color:#20609c}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.pane{border:1px solid #d6e1ee;border-radius:12px;padding:14px;min-width:0}
+label{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:11px;font-size:.94rem;font-weight:650}
+input[type=range]{width:100%;accent-color:#2369a8;margin-top:7px}select,button{font:inherit;border:1px solid #9db7d2;border-radius:9px;padding:8px 10px;background:white;color:#1d4c76}
+button{background:#eaf2fc;cursor:pointer;font-weight:650}button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #f3bd42;outline-offset:2px}
+.output{min-height:77px;padding:11px;background:#f4f8ff;border-left:3px solid #286ba8;margin-top:12px;line-height:1.6;overflow-wrap:anywhere}
+.results{min-height:80px;white-space:pre-wrap;color:#315f73;line-height:1.65;overflow-wrap:anywhere}.rule{font-size:.88rem;color:#506981}
+@media(max-width:720px){.grid{grid-template-columns:1fr}body{padding:6px}main{padding:12px}.pane{padding:11px}}
+</style></head><body><main data-model-id="SLM-TOP19-COMBINATORICS-PASCAL-R00" data-assessment-mode="PUBLIC_DISCOVERY_NO_MASTERY">
+<div class="caps">G Learning · Self-Learning Math · Chuyên đề 19</div><h1>Đếm đúng một kết quả — từ chọn nhóm đến nhị thức Newton</h1>
+<p class="muted">Hãy mô tả <strong>một kết quả hoàn chỉnh</strong> trước khi áp dụng công thức. Mô hình này minh họa ví dụ công khai; không phải bài kiểm tra độc lập và không ghi điểm.</p>
+<div class="grid">
+<section class="pane" aria-labelledby="choice-heading"><h2 id="choice-heading">1. “Hoặc” và “và” có nghĩa gì?</h2>
+<p class="rule">Có A lựa chọn nghệ thuật và B lựa chọn thể thao. Các mục trong mỗi nhóm khác nhau, hai nhóm <em>không trùng nhau</em>.</p>
+<label for="a">Số lựa chọn nhóm A <output id="av">4</output></label><input id="a" type="range" min="1" max="5" step="1" value="4">
+<label for="b">Số lựa chọn nhóm B <output id="bv">3</output></label><input id="b" type="range" min="1" max="5" step="1" value="3">
+<label for="countMode">Một kết quả cần chọn</label><select id="countMode"><option value="or">Đúng một từ A hoặc B</option><option value="and">Một từ A và một từ B</option></select>
+<div id="countOutput" class="output" aria-live="polite">4 + 3 = 7 lựa chọn</div>
+<p class="rule">Không dùng dấu cộng nếu cùng một kết quả được kể ở cả A và B. Nếu số cách bước sau phụ thuộc bước trước, hãy tách nhánh trước khi cộng.</p>
+</section>
+<section class="pane" aria-labelledby="order-heading"><h2 id="order-heading">2. Chọn nhóm hay sắp thứ tự?</h2>
+<p class="rule">Từ n người có tên riêng, chọn k người <strong>khác nhau</strong>, không lặp. Đổi chỗ hai người có tạo kết quả mới không?</p>
+<label for="n">Số người n <output id="nv">4</output></label><input id="n" type="range" min="3" max="5" step="1" value="4">
+<label for="k">Số vị trí/người được chọn k <output id="kv">2</output></label><input id="k" type="range" min="1" max="3" step="1" value="2">
+<label for="orderMode">Cách tính</label><select id="orderMode"><option value="group">Chỉ chọn nhóm (không thứ tự)</option><option value="roles">Chọn và phân vai (có thứ tự)</option></select>
+<div id="orderOutput" class="output" aria-live="polite">C(4,2) = 6 nhóm.</div>
+<p id="namesOutput" class="results" aria-live="polite"></p>
+<p class="rule">Có thứ tự: A(n,k) = n!/(n−k)!. Không thứ tự: C(n,k) = A(n,k)/k!. Điều kiện 0 ≤ k ≤ n, các đối tượng phân biệt.</p>
+</section>
+<section class="pane" aria-labelledby="pascal-heading"><h2 id="pascal-heading">3. Vì sao hệ số Newton là tổ hợp?</h2>
+<p class="rule">Khai triển (a+b)<sup>n</sup> với n = 4 hoặc 5. Hãy chọn k trong n vị trí lấy b; các vị trí còn lại lấy a.</p>
+<label for="binomN">Số thừa số n <output id="binomNv">4</output></label><input id="binomN" type="range" min="4" max="5" step="1" value="4">
+<label for="binomK">Số lần lấy b, k <output id="binomKv">2</output></label><input id="binomK" type="range" min="0" max="5" step="1" value="2">
+<div id="binomOutput" class="output" aria-live="polite">Hệ số C(4,2) = 6, hạng tử 6a²b².</div>
+<p id="pascalRows" class="results"></p>
+<p class="rule">Khi b có dấu âm, hệ số còn nhân với (−1)<sup>k</sup>. Mô hình minh họa n=4,5 trong nguồn học này, không ngầm yêu cầu khai triển mũ bất kỳ ở mức SGK.</p>
+</section>
+<section class="pane" aria-labelledby="bridge-heading"><h2 id="bridge-heading">4. Ba câu hỏi tự phân loại</h2>
+<p><strong>Chọn 1 câu lạc bộ</strong> thuộc hai nhóm rời nhau? Đếm các trường hợp bằng cộng.</p>
+<p><strong>Chọn 3 người và phân ba vai</strong>? Thứ tự/vai trò làm kết quả khác nhau, nên chỉnh hợp.</p>
+<p><strong>Chọn vị trí lấy b trong (a+b)⁵</strong>? Thứ tự chọn vị trí không quan trọng, nên dùng tổ hợp để tìm hệ số.</p>
+<p class="rule">Mô hình không thay đáp án tự luận; dùng tay liệt kê n nhỏ để kiểm công thức. Đọc thẳng các kết quả bên dưới, không cần nhìn màu sắc.</p>
+<button type="button" id="reset">Đặt lại mô hình</button>
+</section></div></main><script>
+(function(){"use strict";
+var $=function(id){return document.getElementById(id);};
+var a=$("a"),b=$("b"),countMode=$("countMode"),n=$("n"),k=$("k"),orderMode=$("orderMode"),binomN=$("binomN"),binomK=$("binomK");
+function fact(m){var v=1;for(var i=2;i<=m;i++)v*=i;return v;}
+function choose(m,j){return fact(m)/(fact(j)*fact(m-j));}
+function arrangements(list,num,ordered){
+  var out=[];
+  function dfs(prefix,left){
+    if(prefix.length===num){out.push(prefix.join(""));return;}
+    for(var i=0;i<left.length;i++){
+      if(!ordered&&prefix.length&&left[i]<=prefix[prefix.length-1])continue;
+      dfs(prefix.concat([left[i]]),left.filter(function(_,j){return j!==i;}));
+    }
+  }
+  dfs([],list);return out;
+}
+function renderCounting(){
+ var A=Number(a.value),B=Number(b.value),one=countMode.value==="or";
+ $("av").textContent=String(A);$("bv").textContent=String(B);
+ $("countOutput").textContent=one?A+" + "+B+" = "+(A+B)+" lựa chọn đúng một mục thuộc hai nhóm rời nhau.":A+" × "+B+" = "+(A*B)+" cặp, mỗi cặp có một mục nhóm A và một mục nhóm B.";
+}
+function renderOrder(){
+ var N=Number(n.value),K=Math.min(Number(k.value),N),roles=orderMode.value==="roles";
+ if(Number(k.value)>N)k.value=String(N);
+ $("nv").textContent=String(N);$("kv").textContent=String(K);
+ var count=roles?fact(N)/fact(N-K):choose(N,K);
+ var labels=Array.from({length:N},function(_,i){return String.fromCharCode(65+i);});
+ var examples=arrangements(labels,K,roles);
+ $("orderOutput").textContent=(roles?"A":"C")+"("+N+","+K+") = "+count+(roles?" cách phân vai có thứ tự. AB và BA là hai kết quả khác nhau.":" nhóm không xét thứ tự. AB và BA chỉ là cùng một nhóm.");
+ $("namesOutput").textContent="Liệt kê đúng "+examples.length+" kết quả: "+examples.slice(0,24).join(", ")+(examples.length>24?" … (còn "+(examples.length-24)+" cách).":".");
+}
+function renderBinomial(){
+ var N=Number(binomN.value),K=Math.min(Number(binomK.value),N);
+ if(Number(binomK.value)>N)binomK.value=String(N);
+ $("binomNv").textContent=String(N);$("binomKv").textContent=String(K);
+ var coeff=choose(N,K),powA=N-K;
+ $("binomOutput").textContent="Trong (a+b)^"+N+", chọn b tại "+K+" trong "+N+" vị trí: C("+N+","+K+") = "+coeff+". Hạng tử là "+coeff+"·a^"+powA+"·b^"+K+".";
+ $("pascalRows").textContent=Array.from({length:N+1},function(_,j){return "n="+j+": "+Array.from({length:j+1},function(_,i){return choose(j,i);}).join("   ");}).join("\n");
+}
+[a,b,countMode].forEach(function(el){el.addEventListener("input",renderCounting);});
+[n,k,orderMode].forEach(function(el){el.addEventListener("input",renderOrder);});
+[binomN,binomK].forEach(function(el){el.addEventListener("input",renderBinomial);});
+$("reset").addEventListener("click",function(){a.value=4;b.value=3;countMode.value="or";n.value=4;k.value=2;orderMode.value="group";binomN.value=4;binomK.value=2;renderCounting();renderOrder();renderBinomial();});
+renderCounting();renderOrder();renderBinomial();
+})();
+</script></body></html>
