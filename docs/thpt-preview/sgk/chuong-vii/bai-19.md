@@ -259,7 +259,7 @@
 
         3. **Tự sửa:** Vẽ hai mũi tên dọc/vuông góc; tính lại 2(-3)+3(2) trước khi áp dụng.
 
-        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+        4. **Tự đối chiếu:** mở tab Khám phá kiến thức, chọn Đối chiếu của câu Vận dụng vừa làm rồi kiểm lại dữ kiện và điều kiện áp dụng.
 
         5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
@@ -273,7 +273,7 @@
 
         3. **Tự sửa:** Thay ngay A(1,3) vào phương trình: phải được 0 trước khi luyện tiếp.
 
-        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+        4. **Tự đối chiếu:** mở tab Khám phá kiến thức, chọn Đối chiếu của câu Vận dụng vừa làm rồi kiểm lại dữ kiện và điều kiện áp dụng.
 
         5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
@@ -287,7 +287,7 @@
 
         3. **Tự sửa:** Thử lại t=0, t=1 và vẽ đường nối hai điểm thu được.
 
-        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+        4. **Tự đối chiếu:** mở tab Khám phá kiến thức, chọn Đối chiếu của câu Vận dụng vừa làm rồi kiểm lại dữ kiện và điều kiện áp dụng.
 
         5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
@@ -301,7 +301,7 @@
 
         3. **Tự sửa:** Vẽ đoạn AB, kiểm n·AB=0 và thế từng điểm vào phương trình.
 
-        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+        4. **Tự đối chiếu:** mở tab Khám phá kiến thức, chọn Đối chiếu của câu Vận dụng vừa làm rồi kiểm lại dữ kiện và điều kiện áp dụng.
 
         5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
@@ -315,7 +315,7 @@
 
         3. **Tự sửa:** Lập hai dòng thay tọa độ từng điểm, so với 0 trước khi kết luận.
 
-        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+        4. **Tự đối chiếu:** mở tab Khám phá kiến thức, chọn Đối chiếu của câu Vận dụng vừa làm rồi kiểm lại dữ kiện và điều kiện áp dụng.
 
         5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
@@ -329,7 +329,7 @@
 
         3. **Tự sửa:** Tách làm hai cột: 'I thỏa hai phương trình' và 'n1·n2=0' rồi kiểm riêng.
 
-        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+        4. **Tự đối chiếu:** mở tab Khám phá kiến thức, chọn Đối chiếu của câu Vận dụng vừa làm rồi kiểm lại dữ kiện và điều kiện áp dụng.
 
         5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
@@ -343,7 +343,7 @@
 
         3. **Tự sửa:** Kiểm cả V(0)=5 và V(2)=9 trước khi tính V(3).
 
-        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+        4. **Tự đối chiếu:** mở tab Khám phá kiến thức, chọn Đối chiếu của câu Vận dụng vừa làm rồi kiểm lại dữ kiện và điều kiện áp dụng.
 
         5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
