@@ -10,11 +10,7 @@
 
     ### Cùng tìm hiểu
 
-    Hãy tưởng tượng một con đường thẳng trên bản đồ. Em có thể mô tả nó bằng **một điểm mà đường đi qua** và **một hướng để đi dọc đường**. Đó là ý nghĩa của **vectơ chỉ phương**. Nhưng nếu muốn đo khoảng cách vuông góc từ một ngôi nhà đến con đường, ta cần một hướng **vuông góc với đường** — chính là **vectơ pháp tuyến**.
-
-    Hai vectơ ấy không giống nhau. Chẳng hạn, đường \(2x+y=6\) có pháp tuyến \(\vec n=(2,1)\). Một vectơ chỉ phương của đường là \(\vec u=(1,-2)\), vì \(\vec u\cdot\vec n=2-2=0\). Từ một hình học đơn giản, em có thể suy ra các hệ số trong phương trình mà không cần nhớ máy móc.
-
-    Bài học đi từ hai cách mô tả đường thẳng đến các dạng phương trình: tổng quát dùng pháp tuyến, tham số dùng điểm và chỉ phương. Khi đổi dạng, phải giữ **cùng tập điểm**, không chỉ thay ký hiệu.
+    Trên bản đồ, biết một điểm của con đường vẫn chưa đủ để xác định con đường đó: ta còn cần biết hướng đi. Nếu muốn dựng một đường vuông góc với con đường, ta phải mô tả hướng này như thế nào? Hai kiểu vectơ — **dọc đường** và **vuông góc với đường** — sẽ giúp em tự suy ra phương trình đường thẳng, thay vì chỉ nhớ công thức.
 
     ### Ví dụ trực quan
 
@@ -37,12 +33,12 @@
 
         **Lý do:** Tích vô hướng bằng 0 chứng minh u vuông góc với pháp tuyến n, tức song song với đường thẳng d; u không phải vectơ không.
 
-        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
 
 
-    <a href="../luyen-tap/?item=THPT-G10-B19-C01">Mở câu luyện tập tương ứng để tự luyện</a>
+
+    <a href="../luyen-tap/?item=THPT-G10-B19-C01">Luyện tập thêm</a>
 
 
     <span id="thpt-g10-chvii-try02" data-thpt-first-try-id="THPT-G10-CHVII-TRY02" data-outcome-id="G10-B19-GENERAL_POINT" data-thpt-help-ref="HELP-G10-CHVII-TRY02"></span>
@@ -61,12 +57,12 @@
 
         **Lý do:** AM=(x-1,y-3), n·AM=2(x-1)-(y-3); thế A được 0. Không tự đảo vai trò n với vectơ chỉ phương.
 
-        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
 
 
-    <a href="../luyen-tap/?item=THPT-G10-B19-C02">Mở câu luyện tập tương ứng để tự luyện</a>
+
+    <a href="../luyen-tap/?item=THPT-G10-B19-C02">Luyện tập thêm</a>
 
 
     <span id="thpt-g10-chvii-try03" data-thpt-first-try-id="THPT-G10-CHVII-TRY03" data-outcome-id="G10-B19-PARAMETRIC" data-thpt-help-ref="HELP-G10-CHVII-TRY03"></span>
@@ -83,12 +79,12 @@
 
         **Lý do:** Khi t=0 thu A; khi t=1 thu A+u=(-1,2). Mọi điểm thuộc đường có độ dời t·u.
 
-        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
 
 
-    <a href="../luyen-tap/?item=THPT-G10-B19-P01">Mở câu luyện tập tương ứng để tự luyện</a>
+
+    <a href="../luyen-tap/?item=THPT-G10-B19-P01">Luyện tập thêm</a>
 
 
     <span id="thpt-g10-chvii-try04" data-thpt-first-try-id="THPT-G10-CHVII-TRY04" data-outcome-id="G10-B19-TWO_POINTS" data-thpt-help-ref="HELP-G10-CHVII-TRY04"></span>
@@ -105,12 +101,12 @@
 
         **Lý do:** AB=(3,3)≠0, chọn n=(1,-1). Qua A: (x+1)-(y-2)=0 ⇒ x-y+3=0; thế B: 2-5+3=0.
 
-        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
 
 
-    <a href="../luyen-tap/?item=THPT-G10-B19-P02">Mở câu luyện tập tương ứng để tự luyện</a>
+
+    <a href="../luyen-tap/?item=THPT-G10-B19-P02">Luyện tập thêm</a>
 
 
     <span id="thpt-g10-chvii-try05" data-thpt-first-try-id="THPT-G10-CHVII-TRY05" data-outcome-id="G10-B19-MEMBERSHIP" data-thpt-help-ref="HELP-G10-CHVII-TRY05"></span>
@@ -127,12 +123,12 @@
 
         **Lý do:** Điểm thuộc là nghiệm của phương trình theo cặp tọa độ. Đây là phép thử hai lần độc lập.
 
-        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
 
 
-    <a href="../luyen-tap/?item=THPT-G10-B19-P03">Mở câu luyện tập tương ứng để tự luyện</a>
+
+    <a href="../luyen-tap/?item=THPT-G10-B19-P03">Luyện tập thêm</a>
 
 
     <span id="thpt-g10-chvii-try06" data-thpt-first-try-id="THPT-G10-CHVII-TRY06" data-outcome-id="G10-B19-MULTISTEP" data-thpt-help-ref="HELP-G10-CHVII-TRY06" data-learning-role="guided-extension"></span>
@@ -151,12 +147,12 @@
 
         **Lý do:** Cộng hai phương trình được 2x=6 ⇒ x=3, y=1. Pháp tuyến (1,1) và (1,-1) có tích vô hướng 1-1=0.
 
-        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
 
 
-    <a href="../luyen-tap/?item=THPT-G10-B19-P06">Mở câu luyện tập tương ứng để tự luyện</a>
+
+    <a href="../luyen-tap/?item=THPT-G10-B19-P06">Luyện tập thêm</a>
 
 
     <span id="thpt-g10-chvii-try07" data-thpt-first-try-id="THPT-G10-CHVII-TRY07" data-outcome-id="G10-B19-LINEAR_MODEL" data-thpt-help-ref="HELP-G10-CHVII-TRY07"></span>
@@ -173,12 +169,12 @@
 
         **Lý do:** Hệ số góc (9-5)/(2-0)=2, giá trị tại t=0 là 5. Đây là phép ngoại suy t=3, chỉ hợp lý nếu giả thiết tăng đều vẫn đúng.
 
-        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
 
 
-    <a href="../luyen-tap/?item=THPT-G10-B19-P04">Mở câu luyện tập tương ứng để tự luyện</a>
+
+    <a href="../luyen-tap/?item=THPT-G10-B19-P04">Luyện tập thêm</a>
 
     ### Thuật ngữ, kiến thức và kỹ năng
 
@@ -222,7 +218,7 @@
 
 === "Ví dụ"
 
-    Trước khi xem lời giải, hãy xác định dữ kiện, điều phải tìm và lý do chọn cách giải. Sau đó kiểm tra lại điều kiện áp dụng và kết quả, thay vì chỉ nhìn phép tính cuối cùng.
+
 
     ### Ví dụ — Từ điểm và pháp tuyến đến phương trình
 
