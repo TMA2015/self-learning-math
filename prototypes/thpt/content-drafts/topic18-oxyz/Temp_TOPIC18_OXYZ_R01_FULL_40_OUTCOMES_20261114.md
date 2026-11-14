@@ -1,6 +1,6 @@
 # Chuyên đề 18 — Phương pháp tọa độ trong không gian (Oxyz)
 
-<!-- AUTHOR_ONLY_STATUS: AUTHORING_DRAFT_Q18_PENDING; NOT_CONTENT_READY; STANDARD=SLM-THPT-QUALITY-ONE v3.1.0 Q01-Q18; PLAN22-18_STUDY_ONLY; RUNTIME_TOPIC_ID=UNASSIGNED_OWNER_DECISION; B14_SBT_PRINTED_P25_SOURCE_GAP; G12_CHV_PNG_VISUAL_LABEL_QA_PENDING. -->
+<!-- AUTHOR_ONLY_STATUS: AUTHORING_DRAFT_Q18_PENDING; NOT_CONTENT_READY; STANDARD=SLM-THPT-QUALITY-ONE v3.1.0 Q01-Q18; PLAN22-18_STUDY_ONLY; RUNTIME_TOPIC_ID=UNASSIGNED_OWNER_DECISION; B14_SBT_PRINTED_P25_SOURCE_GAP; G12_CHV_ORIGINAL_PNG_RETAINED_AS_UNVERIFIED_ARCHIVE; TOPIC_WHITE_SVG_GUIDED. -->
 
 <!-- AUTHOR_ONLY_SOURCE_CUSTODY:
 G12 KNTT CHII source public Git blob 856a37bd16d2746ffc2e12906de18d1f4338a3b6 (16 S1 outcomes, 64 SGK canonical pointers).
@@ -393,6 +393,14 @@ M=(1,2,1).
 <!-- LESSON_ID: TOP18-M17; OUTCOME_ID: TOP18-O17; S1_ORIGINAL_OUTCOME: G12-CHV-B14-O01; SCOPE: G12_CHV -->
 
 **Hình thành ý nghĩa.** Một mặt phẳng có vô số hướng nằm trong nó; một vectơ pháp tuyến n khác 0 phải vuông góc với mọi hướng đó. Nếu đã biết hai vectơ chỉ phương u,v **không cùng phương**, tích có hướng u×v là một cách dựng n. Tích có hướng bằng 0 khi u,v cùng phương, khi ấy chưa xác định được pháp tuyến mặt bằng cặp vectơ ấy.
+
+**Cách thực sự tính được pháp tuyến (không cần học thuộc ngay):** Nếu hai hướng là u=(u₁;u₂;u₃), v=(v₁;v₂;v₃) thì có thể tìm n=(a;b;c) bằng cách giải hai điều kiện **a·u₁+b·u₂+c·u₃=0** và **a·v₁+b·v₂+c·v₃=0**, rồi chọn một nghiệm n khác 0. Một cách gọn hơn là công thức tích có hướng
+
+\[
+u\times v=(u_2v_3-u_3v_2;\;u_3v_1-u_1v_3;\;u_1v_2-u_2v_1).
+\]
+
+Từng thành phần được tạo để khi nhân vô hướng lại với u hay v, các hạng tử triệt tiêu nhau, nên n·u=n·v=0. **Điều kiện quan trọng:** u và v phải không cùng phương, nếu không tích có hướng trở thành vectơ-không và không xác định được một pháp tuyến khác 0. Tính xong hãy **thử lại hai tích vô hướng**, không chỉ chép công thức.
 
 **Ví dụ suy luận từng bước.** u=(1,0,1), v=(0,1,1) độc lập. Theo công thức tích có hướng, n=u×v=(−1,−1,1). Kiểm n·u=−1+1=0 và n·v=−1+1=0; vì n≠0, có thể dùng n làm pháp tuyến.
 
