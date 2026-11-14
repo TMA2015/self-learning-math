@@ -1,6 +1,11 @@
 # CĐ19 · Đại số tổ hợp và Nhị thức Newton · SOURCE-ONLY CONTENT_READY R03 · 14/11/2026
 
 PACKET_ID: THPT-TOPIC19-COMBINATORICS-BINOMIAL-R03
+SUPERSEDES_PACKET_ID: THPT-TOPIC19-COMBINATORICS-BINOMIAL-R02
+SUPERSESSION_MODE: DELTA_C_NEW_SNAPSHOT_OLD_R02_PASS_PRESERVED_IN_GIT_HISTORY
+SUPERSEDED_R02_ACADEMIC_SOURCE_BLOB: 65dfdfdd77ee1e3eada982c58cca7b490ea49116
+SUPERSEDED_R02_AUTHOR_Q18_RECEIPT_BLOB: 481026a0463b8ea17722955b8dc7ae0b8695f85c
+SUPERSEDED_R02_HANDOFF_BLOB: d9dd2c6cd6c3d9a2298e69a1adac2be76fcd6e2d
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
@@ -19,7 +24,7 @@ REVIEW_RECEIPT_BLOB: bdd414ad41ca96ccf3a9c35d391cb97432b87121
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOPIC19_R03_56_CANONICAL_OUTCOME_MATRIX_20261114.md
 AUTHOR_A1_A7_BLOB: a0cc2f3b3200928b76ee733b631aa7ed44478acc
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC19-COMBINATORICS-BINOMIAL-R03_HANDOFF_V2_20261114.md
-AUTHOR_HANDOFF_BLOB: fe163e176765dd84ed7d22c6e3c083e3f368d0ef
+AUTHOR_HANDOFF_BLOB: b05adcb6f85613f2fcb4c03e847cc1f76204e563
 S1_DIRECT_ORIGINAL_PDF_RECEIPT_BLOB: 850dd241e60de58ccf032e48e1e13530988436e3
 Q18_OUTCOME_MATH_PED_AUDIT_BLOB: 20c41e446a636b95268d26ddad9e1213d81ec626
 ORIGINAL_G10_SGK_PUBLIC_CANONICAL_SOURCE_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232
@@ -44,7 +49,7 @@ CURRENT_PR: DRAFT_AUTHORING_NOT_MERGED
 
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — Exact source blob da067e2cca9761769d4ab4984e29ce66176d01ad, Q18 author signed receipt bdd414ad41ca96ccf3a9c35d391cb97432b87121, one V2 handoff fe163e176765dd84ed7d22c6e3c083e3f368d0ef, Q15 matrix a0cc2f3b3200928b76ee733b631aa7ed44478acc; only R03 learner canonical active after retiring R01/R02 candidates.
+- [x] A1_SOURCE_SNAPSHOT — Exact source blob da067e2cca9761769d4ab4984e29ce66176d01ad, Q18 author signed receipt bdd414ad41ca96ccf3a9c35d391cb97432b87121, one V2 handoff b05adcb6f85613f2fcb4c03e847cc1f76204e563, Q15 matrix a0cc2f3b3200928b76ee733b631aa7ed44478acc; only R03 learner canonical active after retiring R01/R02 candidates.
 - [x] A2_SGK_SBT_SCOPE — Direct original G10 KNTT Tập Hai SGK scanned PDF SHA256 ee8a00392e1c9fc5b213e574666cf1f8487548737e138573f28a988c640fafe6 and SBT SHA256 3cb33690e0627b9e8ac467c23625b7feb7d05a8422293db0e1b26e44ca6a78c7. Print SGK B23 60–65, B24 66–71, B25 72–75/end76; SBT B23 51–53, B24 54–55, B25 56–57/end58–60, direct page images and 1-based PDF offset +1 verified.
 - [x] A3_NOTEBOOKLM_VERDICT — OWNER_EFFECTIVE AUTHOR_SELF_VERIFIED Q18 signed exactly on the immutable source and item/outcome Math/PED source receipts; no invented independent NotebookLM reviewer PASS or automatic SGK PASS inheritance.
 - [x] A4_ITEM_OUTCOME_IDS — 14 source-locked LESSON/OUTCOME pairs, indexed 56 public canonical IDs mapped once in one V2/Q15, with 25 original G10 SGK IDs reused as pointers and 31 genuinely new Topic items; seven selfcheck placements reuse P IDs without creating new stems.
@@ -72,3 +77,6 @@ CURRENT_PR: DRAFT_AUTHORING_NOT_MERGED
 - [ ] P2_DEVICE_UAT — No physical iPhone/iPad Safari, touchscreen or authenticated student trial performed.
 
 **No website implementation, merge, deploy, student Firebase changes, public protected RD1 or automatic Skill Mastery.** RELEASE intake must confirm every exact Git source/receipt/handoff SHA and owner-selected runtime Topic ID before any acceptance.
+## R02→R03 source-lock supersession
+
+R02 previously reached AUTHORING `CONTENT_READY` on this same Draft branch with independent versioned 13 outcome / 54 public ID source snapshot and self-author Q18. The old R02 source/receipt/manifest and its original PASS remain immutable **in Git history**, not retroactively failed or overwritten. R03 is the only **active new** full CĐ19 Topic handoff: new mandatory original SGK B24 p70 calculator O14 plus targeted Q15/PED correction, independently re-audited 51 mathematical tests and Q18 on new SHA. The old R02 ready manifest/REGISTER row must be retired or replaced in the **active tree**, so RELEASE cannot accept two different revisions for one current Topic scope. Release shall reconcile any previously consumed R02 source before picking R03, with no automatic deploy.
