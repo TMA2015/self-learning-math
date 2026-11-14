@@ -10,11 +10,7 @@
 
     ### Cùng tìm hiểu
 
-    Một điểm di chuyển trên mặt phẳng có thể bị ràng buộc bởi **khoảng cách đến những điểm hoặc đường cố định**. Nếu tổng khoảng cách đến hai điểm cố định không đổi, ta có **elip**; nếu trị tuyệt đối hiệu hai khoảng cách ấy không đổi, ta gặp **hypebol**. Nếu khoảng cách đến một điểm cố định luôn bằng khoảng cách đến một đường thẳng cố định, ta có **parabol**.
-
-    Ba đường đều có thể được mô tả bằng phương trình, nhưng **dấu và mẫu số trong phương trình không thể thay thế cho việc hiểu định nghĩa hình học**. Em cần nhận ra tiêu điểm, trục đối xứng, bán trục và điều kiện tham số trước khi tính. Khi gặp hình của một elip có trục lớn nằm ngang, ta không được tự dùng đúng công thức đó cho một elip quay hoặc đổi trục.
-
-    Bài học sẽ đi từ đặc điểm hình học đến ba phương trình chính tắc đúng quy ước SGK. Các hình minh họa đi cạnh từng loại đường, không gom chung ở cuối để học sinh khỏi so nhầm tiêu điểm hay trục.
+    Khi dùng một sợi dây căng vào hai đinh cố định rồi di chuyển đầu bút, ta có thể vẽ một đường cong. Nếu thay điều kiện **tổng hai khoảng cách** bằng **hiệu hai khoảng cách**, hình sẽ thay đổi ra sao? Còn nếu yêu cầu một điểm cách đều **một tiêu điểm** và **một đường thẳng**, ta thu được đường gì? Ba câu hỏi lần lượt dẫn tới elip, hypebol và parabol.
 
     ### Ví dụ trực quan
 
@@ -39,12 +35,12 @@
 
         **Lý do:** a²=25>b²=16, c²=25−16=9 ⇒ c=3; elip có trục lớn Ox.
 
-        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
 
 
-    <a href="../luyen-tap/?item=THPT-G10-B22-P01">Mở câu luyện tập tương ứng để tự luyện</a>
+
+    <a href="../luyen-tap/?item=THPT-G10-B22-P01">Luyện tập thêm</a>
 
 
     <span id="thpt-g10-chvii-try19" data-thpt-first-try-id="THPT-G10-CHVII-TRY19" data-outcome-id="G10-B22-HYPERBOLA_PARAMETERS" data-thpt-help-ref="HELP-G10-CHVII-TRY19"></span>
@@ -59,12 +55,12 @@
 
         **Lý do:** a=4, b=3, c²=a²+b²=16+9=25 ⇒ c=5; trục thực Ox.
 
-        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
 
 
-    <a href="../luyen-tap/?item=THPT-G10-B22-C02">Mở câu luyện tập tương ứng để tự luyện</a>
+
+    <a href="../luyen-tap/?item=THPT-G10-B22-C02">Luyện tập thêm</a>
 
 
     <span id="thpt-g10-chvii-try20" data-thpt-first-try-id="THPT-G10-CHVII-TRY20" data-outcome-id="G10-B22-HYPERBOLA_ASYMPTOTES" data-thpt-help-ref="HELP-G10-CHVII-TRY20" data-learning-role="guided-extension"></span>
@@ -83,12 +79,12 @@
 
         **Lý do:** a²=25 ⇒ a=5; b²=4 ⇒ b=2. Hệ số góc tiệm cận là ±b/a=±2/5.
 
-        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
 
 
-    <a href="../luyen-tap/?item=THPT-G10-B22-C02">Mở câu luyện tập tương ứng để tự luyện</a>
+
+    <a href="../luyen-tap/?item=THPT-G10-B22-C02">Luyện tập thêm</a>
 
 
     <span id="thpt-g10-chvii-try21" data-thpt-first-try-id="THPT-G10-CHVII-TRY21" data-outcome-id="G10-B22-PARABOLA_FOCUS" data-thpt-help-ref="HELP-G10-CHVII-TRY21"></span>
@@ -112,12 +108,12 @@
 
         **Lý do:** 2p=8 ⇒ p=4, F=(p/2,0)=(2,0), đường chuẩn x=−p/2=−2. M có MF=4 và khoảng cách đến x=−2 là 4.
 
-        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
 
 
-    <a href="../luyen-tap/?item=THPT-G10-B22-P03">Mở câu luyện tập tương ứng để tự luyện</a>
+
+    <a href="../luyen-tap/?item=THPT-G10-B22-P03">Luyện tập thêm</a>
 
 
     <span id="thpt-g10-chvii-try22" data-thpt-first-try-id="THPT-G10-CHVII-TRY22" data-outcome-id="G10-B22-CONIC_INTERSECTION" data-thpt-help-ref="HELP-G10-CHVII-TRY22"></span>
@@ -134,12 +130,12 @@
 
         **Lý do:** Thế x=0 được y²/4=1 ⇒ y²=4 ⇒ y=±2; cả hai tọa độ thỏa phương trình gốc.
 
-        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
 
 
-    <a href="../luyen-tap/?item=THPT-G10-B22-P05">Mở câu luyện tập tương ứng để tự luyện</a>
+
+    <a href="../luyen-tap/?item=THPT-G10-B22-P05">Luyện tập thêm</a>
 
 
     <span id="thpt-g10-chvii-try23" data-thpt-first-try-id="THPT-G10-CHVII-TRY23" data-outcome-id="G10-B22-CONIC_MODEL" data-thpt-help-ref="HELP-G10-CHVII-TRY23"></span>
@@ -154,12 +150,12 @@
 
         **Lý do:** Thế x=5 được y²=100 ⇒ y=±10 cm. Độ rộng là 10−(−10)=20 cm.
 
-        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
 
 
-    <a href="../luyen-tap/?item=THPT-G10-B22-P04">Mở câu luyện tập tương ứng để tự luyện</a>
+
+    <a href="../luyen-tap/?item=THPT-G10-B22-P04">Luyện tập thêm</a>
 
 
     <span id="thpt-g10-chvii-try-ellipse-tr01" data-thpt-first-try-id="THPT-G10-CHVII-TRY-ELLIPSE-TR01" data-outcome-id="G10-B22-ELLIPSE_PARAMETERS" data-thpt-help-ref="HELP-G10-CHVII-ELLIPSE-TR01"></span>
@@ -212,7 +208,7 @@
 
     ### Thuật ngữ, kiến thức và kỹ năng
 
-    **Thuật ngữ:** Elip, hypebol, parabol, tiêu điểm, đường chuẩn, tâm, bán trục, trục thực, tiệm cận và phương trình chính tắc.
+    **Thuật ngữ:** Elip, hypebol, parabol, tiêu điểm, đường chuẩn, tâm, bán trục, trục thực, phương trình chính tắc và tiệm cận (mở rộng).
 
     **Sau bài học, em cần làm được:** Nhận diện loại conic từ điều kiện khoảng cách và phương trình; tìm tiêu điểm/trục đúng tham số; phân biệt c²=a²−b² với c²=a²+b²; đọc tiêu điểm và đường chuẩn parabol theo quy ước y²=2px.
 
@@ -241,10 +237,10 @@
 
 
 
-    **Cách đọc hình.** Đọc hai nhánh hypebol, hai tiêu điểm và đường tiệm cận; đừng tráo công thức c²=a²+b² thành elip.
-    Dạng chính tắc \(\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1\), \(a,b>0\). Khi đó \(c^2=a^2+b^2\), hai tiêu điểm \((\pm c;0)\), các đỉnh \((\pm a;0)\), các tiệm cận \(y=\pm\dfrac ba x\).
+    **Cách đọc hình.** Đọc hai nhánh hypebol, hai tiêu điểm và trục thực; đừng tráo công thức c²=a²+b² thành elip.
+    Dạng chính tắc \(\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1\), \(a,b>0\). Khi đó \(c^2=a^2+b^2\), hai tiêu điểm \((\pm c;0)\), các đỉnh \((\pm a;0)\).
 
-    **Ví dụ:** \(\dfrac{x^2}{9}-\dfrac{y^2}{16}=1\): \(a=3,b=4,c=5\), hai tiệm cận \(y=\pm4x/3\).
+    **Ví dụ:** \(\dfrac{x^2}{9}-\dfrac{y^2}{16}=1\): \(a=3,b=4,c=5\), hai tiêu điểm \((\pm5;0)\).
 
     ### 2.3. Parabol
 
@@ -270,13 +266,13 @@
     <thead><tr><th>Đường conic</th><th>Công thức liên hệ</th><th>Chú ý</th></tr></thead>
     <tbody>
     <tr><td>Elip</td><td>\(c^2=a^2-b^2\)</td><td>\(a&gt;b&gt;0\) trong dạng trục lớn \(Ox\)</td></tr>
-    <tr><td>Hypebol</td><td>\(c^2=a^2+b^2\)</td><td>Tiệm cận \(y=\pm bx/a\)</td></tr>
+    <tr><td>Hypebol</td><td>\(c^2=a^2+b^2\)</td><td>Hai nhánh, \(c>a\)</td></tr>
     <tr><td>Parabol</td><td>\(y^2=2px\)</td><td>Tiêu điểm \((p/2;0)\), không phải \((p;0)\)</td></tr>
     </tbody></table></div>
 
 === "Ví dụ"
 
-    Trước khi xem lời giải, hãy xác định dữ kiện, điều phải tìm và lý do chọn cách giải. Sau đó kiểm tra lại điều kiện áp dụng và kết quả, thay vì chỉ nhìn phép tính cuối cùng.
+
 
     ### Ví dụ 1 — Tính tiêu điểm của elip
 
@@ -286,7 +282,7 @@
 
     **Lời giải.** \(a^2=9,\ b^2=4\), nên \(c^2=a^2-b^2=5\); hai tiêu điểm là \(F_1(-\sqrt5,0)\), \(F_2(\sqrt5,0)\).
 
-    ### Ví dụ 2 — Tiệm cận của hypebol
+    ### Mở rộng có hướng dẫn — Tiệm cận của hypebol
 
     **Đề bài.** Cho \(\frac{x^2}{9}-\frac{y^2}{4}=1\). Tìm tiêu điểm và hai đường tiệm cận.
 
