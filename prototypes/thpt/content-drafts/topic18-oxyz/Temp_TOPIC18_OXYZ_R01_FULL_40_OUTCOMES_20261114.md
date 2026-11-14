@@ -1608,6 +1608,12 @@ Thay d(t) vào P: (2+t)−1+t=1+2t=3 ⇒ t=1, giao điểm (3,−1,1). Pháp tuy
 
 ### Vận dụng tổng hợp — radar và hành trình bay qua một vùng cầu (sau B17)
 
+![Radar tâm O và đường bay qua vùng cầu: vào tại t=3, gần nhất t=6, ra tại t=9](../../../../docs/assets/images/thpt/FIG-TOP18-RADAR-TRAJECTORY-OXYZ-R00.svg)
+
+**Đọc hình nền trắng:** Xem thiết diện Oxy (z=0): đường tròn tâm O bán kính 5, đường bay có tung độ y=4. Mũi tên chỉ chiều bay từ A=(6;4) sang phía x giảm. Hai chấm xanh ở t=3 và t=9 là **giao với biên**; chấm cam ở t=6 là vị trí gần radar nhất, cách O đúng 4 km. Hình biểu diễn đúng tỉ lệ trong mặt phẳng Oxy nhưng **không** thay phép chứng minh bằng bình phương khoảng cách.
+
+<!-- AUTHOR_ORIGINAL_SVG: docs/assets/images/thpt/FIG-TOP18-RADAR-TRAJECTORY-OXYZ-R00.svg; SOURCE_BLOB: c818e636ded54730582b139f4476ce9daa2156b2; ORIGINAL_NEW_FIGURE=YES; WHITE_BACKGROUND=YES; MATH_SCOPE=TOP18-O38/W07 -->
+
 **Bối cảnh liên thông.** Một radar đặt tại O=(0;0;0), vùng phủ bán kính 5 km. Máy bay tại A=(6;4;0) km và bay theo hướng u=(−1;0;0) km/giờ, chỉ xét thời gian t≥0. Ta muốn biết **nó có đi vào vùng phủ hay không, và vào–ra lúc nào**. Đây là câu chuyện vận dụng nối tọa độ, phương trình tham số và mặt cầu, được biên tập lại từ ý tưởng tình huống radar trong tài liệu NotebookLM, không sao chép một ID câu NotebookLM cũ.
 
 <!-- ITEM_ID: THPT-TOP18-W07; ROLE: TOPIC_WRITTEN; PRIMARY_OUTCOME: TOP18-O38; SECONDARY_OUTCOMES: TOP18-O16,TOP18-O24,TOP18-O36; RUBRIC_MAX: 4; APPLICATION_ONLY_AFTER_B17 -->
