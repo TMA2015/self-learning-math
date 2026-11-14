@@ -251,7 +251,7 @@
 
     <span id="help-g10-chvii-try01" data-thpt-help-id="HELP-G10-CHVII-TRY01"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "Pháp tuyến và chỉ phương bị nhầm"
 
         1. **Nhận diện lỗi:** Nếu dùng n làm chỉ phương, em đang nhầm hai vai trò vuông góc.
 
@@ -265,7 +265,7 @@
 
     <span id="help-g10-chvii-try02" data-thpt-help-id="HELP-G10-CHVII-TRY02"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "Viết đường thẳng qua điểm sai dấu"
 
         1. **Nhận diện lỗi:** Nếu phương trình không đi qua A, em đã mất dấu khi trừ tọa độ gốc.
 
@@ -279,7 +279,7 @@
 
     <span id="help-g10-chvii-try03" data-thpt-help-id="HELP-G10-CHVII-TRY03"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "Nhầm vectơ hoặc tham số của đường"
 
         1. **Nhận diện lỗi:** Nếu đảo u thành pháp tuyến hoặc thiếu tham số chung t, hai phương trình không mô tả đúng một đường.
 
@@ -293,7 +293,7 @@
 
     <span id="help-g10-chvii-try04" data-thpt-help-id="HELP-G10-CHVII-TRY04"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "Đường qua hai điểm: chọn sai pháp tuyến"
 
         1. **Nhận diện lỗi:** Nếu lấy AB làm pháp tuyến, đường mới thường vuông góc với AB thay vì đi qua cả A,B.
 
@@ -307,7 +307,7 @@
 
     <span id="help-g10-chvii-try05" data-thpt-help-id="HELP-G10-CHVII-TRY05"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "Thử điểm thuộc đường: sai dấu"
 
         1. **Nhận diện lỗi:** Nếu chỉ nhìn số hạng đầu hoặc bỏ dấu âm của 3y, phép thử có thể sai.
 
@@ -321,7 +321,7 @@
 
     <span id="help-g10-chvii-try06" data-thpt-help-id="HELP-G10-CHVII-TRY06"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "Giao điểm khác điều kiện vuông góc"
 
         1. **Nhận diện lỗi:** Nếu chỉ giải được giao điểm mà suy ra vuông góc, em đã đánh đồng vị trí với góc.
 
@@ -335,7 +335,7 @@
 
     <span id="help-g10-chvii-try07" data-thpt-help-id="HELP-G10-CHVII-TRY07"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "Mô hình tuyến tính: nhầm hệ số góc"
 
         1. **Nhận diện lỗi:** Nếu viết V=5t+2, em đã nhầm hệ số góc với giá trị ban đầu.
 
