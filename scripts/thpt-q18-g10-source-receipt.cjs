@@ -115,6 +115,18 @@ function chviiClarityReceiptRows(){
  return rows;
 }
 
+const chviiWorkFollowupReceipt="prototypes/thpt/ux795/G10_CHVII_R02_WORK_BROWSER_FOLLOWUP_UX_RECEIPT_20261114.md";
+function chviiWorkFollowupReceiptRows(){
+ const file=path.join(root,chviiWorkFollowupReceipt);
+ if(!fs.existsSync(file))return new Map();
+ const source=fs.readFileSync(file,"utf8");
+ const found=[...source.matchAll(/^\| B(19|20|21|22) \| \x60([a-f0-9]{40})\x60 \| \x60([a-f0-9]{40})\x60 \| (\d+) \| (\d+) \| (\d+) \|/gm)];
+ assert.equal(found.length,4,"ChVII Work follow-up must lock four exact source blobs");
+ const rows=new Map(found.map(m=>["B"+m[1],{baseline:m[2],candidate:m[3],moved:Number(m[4]),helps:Number(m[5]),examples:Number(m[6])}]));
+ assert.equal(rows.size,4,"Work follow-up duplicate lesson");
+ return rows;
+}
+
 function expectedG10KnowledgeBlob(lesson,legacy){
  assert(/^[a-f0-9]{40}$/.test(legacy),"Historical source SHA malformed");
  const name="B"+String(lesson).replace(/^B/,"").padStart(2,"0");
@@ -179,6 +191,15 @@ function expectedG10KnowledgeBlob(lesson,legacy){
       assert.equal(clarity.moved,r02.moved,name+" clarity cannot delete canonical exercises");
       assert.equal(clarity.helps,r02.helps,name+" clarity cannot alter D6 HELP");
       assert.equal(clarity.examples,r02.examples,name+" clarity cannot delete worked examples");
+      const work=chviiWorkFollowupReceiptRows().get(name);
+      if(work){
+       assert.equal(work.baseline,clarity.candidate,name+" Work UX patch must derive from reviewed R02 candidate");
+       assert.notEqual(work.candidate,work.baseline,name+" Work UX follow-up must change student-facing source");
+       assert.equal(work.moved,clarity.moved,name+" Work UX patch cannot change question counts");
+       assert.equal(work.helps,clarity.helps,name+" Work UX patch cannot alter HELP counts");
+       assert.equal(work.examples,clarity.examples,name+" Work UX patch cannot change worked examples");
+       return work.candidate;
+      }
       return clarity.candidate;
      }
      return r02.candidate;
@@ -195,4 +216,4 @@ function candidateG10KnowledgeBlob(lesson){
  const sentinel="0".repeat(40),result=expectedG10KnowledgeBlob(lesson,sentinel);
  return result===sentinel?null:result;
 }
-module.exports={expectedG10KnowledgeBlob,candidateG10KnowledgeBlob,chivEditorialReceiptRows,chvEditorialReceiptRows,chviEditorialReceiptRows,chviExampleUxReceiptRows,chviiEditorialReceiptRows,chviiContinuousReceiptRows,chviiAp2ReceiptRows,chviiR02ReceiptRows,chviiClarityReceiptRows};
+module.exports={expectedG10KnowledgeBlob,candidateG10KnowledgeBlob,chivEditorialReceiptRows,chvEditorialReceiptRows,chviEditorialReceiptRows,chviExampleUxReceiptRows,chviiEditorialReceiptRows,chviiContinuousReceiptRows,chviiAp2ReceiptRows,chviiR02ReceiptRows,chviiClarityReceiptRows,chviiWorkFollowupReceiptRows};
