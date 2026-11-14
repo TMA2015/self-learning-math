@@ -648,7 +648,7 @@ Có 8 phiếu phân biệt, 3 phiếu đỏ và 5 phiếu xanh. Chọn đều m�
 - Chọn biến cố đối hai phiếu xanh với C(5,2)=10 — **1 điểm**.
 - Tính 1−10/28=9/14 và diễn giải ít nhất một đỏ — **1 điểm**.
 
-**D6:** Nếu sai, trở lại outcome TOP20-O08, tự thử T/P liên quan và chỉ đối chiếu sau khi tự giải. Kết quả tự đối chiếu không ghi Skill Mastery hoặc chính thức xác nhận Readiness.
+**D6:** Nếu ra 6/56 hoặc 3/56, em đã dùng cặp có thứ tự ở một vế nhưng nhóm không thứ tự ở vế kia. Hãy liệt kê mẫu nhỏ 4 phiếu chọn 2 và phân biệt AB với BA, rồi quay O07 → T07/P07 trước khi làm lại. Nếu tính “ít nhất một đỏ” bằng cách lấy 1−P(đúng một đỏ), hãy viết biến cố đối **không có đỏ** = hai phiếu xanh, tính C(5,2)/C(8,2) rồi đối chiếu O08 → T08/P08.
 
 </details>
 
@@ -668,7 +668,7 @@ Một lần gieo xúc xắc cân đối. A={2,4,6}, B={2,3,5}. (a) Tìm giao và
 - Áp dụng cộng tổng quát để được 5/6 — **1 điểm**.
 - So 1/6 với 1/4, kết luận không độc lập và nêu lý do — **1 điểm**.
 
-**D6:** Nếu sai, trở lại outcome TOP20-O14, tự thử T/P liên quan và chỉ đối chiếu sau khi tự giải. Kết quả tự đối chiếu không ghi Skill Mastery hoặc chính thức xác nhận Readiness.
+**D6:** Nếu P(hợp)=1, em đã cộng P(A)+P(B) mà **chưa trừ giao {2}**; vẽ lại Venn và viết A∩B một lần, rồi giải T08/P14. Nếu kết luận độc lập vì A,B có phần giao, hãy tách hai câu hỏi: giao rỗng là xung khắc, còn độc lập kiểm **1/6 so với (1/2)(1/2)=1/4**; trở lại O12/O13 → T07/T15 rồi tự kiểm.
 
 </details>
 
@@ -688,7 +688,7 @@ Tung đồng xu cân đối và gieo một xúc xắc cân đối, hai phép th�
 - Tính hợp 1/2+1/3−1/6=2/3 — **1 điểm**.
 - Lấy biến cố đối để được 1/3, giải thích cả hai đều không xảy ra — **1 điểm**.
 
-**D6:** Nếu sai, trở lại outcome TOP20-O17, tự thử T/P liên quan và chỉ đối chiếu sau khi tự giải. Kết quả tự đối chiếu không ghi Skill Mastery hoặc chính thức xác nhận Readiness.
+**D6:** Nếu câu (a) ra 5/6, em đã tính hợp thay cho giao; dùng từ **“cả A và B”** để chọn phép nhân trên hai phép thử độc lập (xem O16/T09/P16). Nếu câu (b) ra 1/6, em mới tính giao và quên cộng hai xác suất biên rồi trừ phần chung (xem O14/T08/P14). Nếu câu (c) ra 2/3, em quên lấy biến cố đối của hợp, nên cần viết **không A và không B = (A∪B)̅** trước khi lấy 1−2/3.
 
 </details>
 
