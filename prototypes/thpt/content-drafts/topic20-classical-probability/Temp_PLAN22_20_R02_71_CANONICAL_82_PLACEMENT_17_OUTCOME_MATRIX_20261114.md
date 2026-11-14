@@ -1,6 +1,6 @@
 # PLAN22-20 · R02 candidate 71 unique public canonical / 82 placements · 17 outcome + 3 Written · AUTHORING
 
-**HOLD_AUTHORING_NOT_CONTENT_READY:** S1 per-outcome/source fidelity, D1–D6/PED1–PED6 substantive 17 outcome audit, independent math/rubric review and Q18 author signature pending; previous combined #810 G10–12 snapshot PASS does NOT transfer to this separate G10–11 Topic.
+**HOLD_AUTHORING_NOT_CONTENT_READY:** Revised same R02 candidate fixes Venn reference, W01 ordered-count rubric and diversifies O06/O09 FirstTry/Practice; source blob updated. S1 per-outcome original activity fidelity and complete Q18 author math/PED signoff pending; previous combined #810 G10–12 snapshot PASS does NOT transfer to this separate G10–11 Topic.
 
 PACKET_ID: THPT-TOPIC20-CLASSICAL-PROBABILITY-R02-CANDIDATE
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -9,7 +9,7 @@ LEARNING_PATH: TOPIC
 CATALOG_TOPIC_ID: PLAN22-20
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R02_FULL_17_OUTCOMES_20261114.md
-ACADEMIC_SOURCE_BLOB: 197667afcb3ede4a487785a35f787aaac021d1e2
+ACADEMIC_SOURCE_BLOB: 258c8a7e5f2d00cef5160a8883a4a232bfa6076a
 LEGACY_COMBINED_SOURCE_BLOB: 1258a2748c01ba288b706a08c79af237de799cf3
 LEGACY_38_ITEM_CANONICAL_INDEX_BLOB: c4e472d628165f4b14281843436697202977a875
 LEGACY_12_PUBLIC_EXTENSION_SOURCE_BLOB: eafc0164beee72111bc27f0ddbd84f26b601698f
