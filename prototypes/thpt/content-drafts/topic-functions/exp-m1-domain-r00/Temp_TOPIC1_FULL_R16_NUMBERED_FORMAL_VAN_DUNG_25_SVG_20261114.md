@@ -520,7 +520,7 @@ Em đã biết bảng giá trị và đồ thị có thể cho biết đại lư
 
 > **ĐỊNH NGHĨA — Hàm chẵn/lẻ và tuần hoàn**
 >
-> Trên miền D đối xứng qua 0, f chẵn khi \(f(-x)=f(x)\) mọi x∈D, lẻ khi \(f(-x)=-f(x)\). Hàm tuần hoàn có \(f(x+T)=f(x)\) ở những x mà cả hai đầu vào được phép, với \(T>0\); không suy điều này chỉ từ vài điểm mẫu.
+> Trên miền D đối xứng qua 0, f chẵn khi \(f(-x)=f(x)\) mọi x∈D, lẻ khi \(f(-x)=-f(x)\). Hàm tuần hoàn có chu kì \(T>0\) khi miền xác định bất biến dưới phép dịch T và \(f(x+T)=f(x)\) với mọi x trong miền; không suy điều này chỉ từ vài điểm mẫu.
 
 #### 1.4.1. Trước khi nhìn dạng cong: Đồ thị có đối xứng hay lặp lại không?
 
@@ -1486,15 +1486,23 @@ Phần **Tự kiểm tra** là bài đánh giá riêng bao quát toàn Chuyên �
 
 
 ---
-<!-- SLM_PART_END:KNOWLEDGE -->
-
-<!-- SLM_PART_BEGIN:PRACTICE -->
-# CHUYÊN ĐỀ 1 · HÀM SỐ VÀ ĐỒ THỊ
 
 > **PHƯƠNG PHÁP — Tối ưu trên miền hợp lệ**
 >
 > Kiểm miền có nghĩa, giải \(f'(x)=0\), xét điểm không khả vi và biên, lập bảng dấu/giá trị để chọn kết quả hợp điều kiện. Cực trị địa phương không tự là cực trị tuyệt đối trên miền mô hình.
 
+
+### Nguồn SGK/SBT tham khảo — cuối trang Kiến thức
+
+- **SGK Toán 10 KNTT Tập Hai:** Chương VI B15–B18 (hàm số, parabol, dấu tam thức, mô hình).
+- **SGK Toán 11 KNTT:** Tập Một B03–B04 (lượng giác), Tập Hai B16–B17 (giới hạn/liên tục), B20 (mũ/log), B31–B33 (đạo hàm và ứng dụng).
+- **SGK Toán 12 KNTT Tập Một:** Chương I B01–B05 (đạo hàm, khảo sát và tối ưu).
+- **SBT KNTT:** các chương tương ứng dùng tham khảo họ dạng. Số trang in/PDF và receipt chi tiết được khóa trong Q01/hand-off của nguồn tác giả R15.
+
+<!-- SLM_PART_END:KNOWLEDGE -->
+
+<!-- SLM_PART_BEGIN:PRACTICE -->
+# CHUYÊN ĐỀ 1 · HÀM SỐ VÀ ĐỒ THỊ
 ## 2. Luyện tập
 
 **Cách học phần này:** Em đã có Kiến thức M1–M7. Bây giờ hãy chọn kỹ năng mình cần luyện, trả lời **trước khi mở gợi ý hoặc lời giải**, sau đó xác định mình sai ở điều kiện, phương pháp hay cách diễn đạt. Nếu một câu đã xuất hiện trong Kiến thức, em vẫn có thể dùng để ôn lại, nhưng đừng coi đó là bài kiểm tra bất ngờ.
@@ -2148,12 +2156,5 @@ Hãy dùng những nhận xét đã được xác nhận để trở lại đún
 
 *Đây là nội dung học sinh được xem khi tích hợp hợp lệ. Website phải lấy câu hỏi từ đúng nguồn được phép, khóa lời giải tới sau Final Submit và xác nhận nộp thực sự. Lời hướng dẫn này không có nghĩa là chức năng Tự kiểm tra đã được phát hành.*
 <!-- SLM_PART_END:SELF_CHECK_PUBLIC -->
-
-### Nguồn tài liệu (cuối học liệu)
-
-- **SGK Toán 10 KNTT Tập Hai:** Chương VI B15–B18 (hàm số, parabol, dấu tam thức, mô hình).
-- **SGK Toán 11 KNTT:** Tập Một B03–B04 (lượng giác), Tập Hai B16–B17 (giới hạn/liên tục), B20 (mũ/log), B31–B33 (đạo hàm và ứng dụng).
-- **SGK Toán 12 KNTT Tập Một:** Chương I B01–B05 (đạo hàm, khảo sát và tối ưu).
-- **SBT KNTT:** các chương tương ứng dùng tham khảo họ dạng. Số trang in/PDF và receipt chi tiết được khóa trong Q01/hand-off của nguồn tác giả R15.
 
 <!-- AUTHORING_FIDELITY_R15_BLOB:33dad0505f5e28aa4a23401495dc8198736121c0; 25 original image placements, canonical item IDs/answers protected in original source/ledger, only editorial R16 changed; new formula boxes need targeted Q18. No protected RD1, no release/merge/deploy. -->
