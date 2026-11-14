@@ -984,7 +984,7 @@ tồn tại ở điểm a thuộc **phần trong của miền xác định**, ta
 
 **Lưu ý miền:** ở điểm đầu mút chỉ tiếp cận từ một phía, có thể nói về đạo hàm một phía, nhưng không coi là đạo hàm hai phía trên khoảng. f(x)=√x xác định tại 0; thương bên phải [√h−0]/h=1/√h tiến +∞, không có đạo hàm hữu hạn tại 0.
 
-<!-- FIRST_TRY_SOURCE_ID: Vận dụng M6-T01 -->
+<!-- FIRST_TRY_SOURCE_ID: Tự thử M6-T01 -->
 **Vận dụng.** Tự tính thương sai phân của f(x)=x² tại a=1 rồi giải thích giá trị khi h→0. Vì sao h=0 không phải bước đầu?
 <details><summary>Đã thử xong? Mở đối chiếu</summary>
 Thương bằng ((1+h)²−1)/h=2+h với h≠0; giới hạn bằng 2. h=0 làm mẫu 0 ở phân thức ban đầu. Nếu còn lẫn, quay lại s(t) ở đầu mục.
@@ -1017,7 +1017,7 @@ y-f(a)=f'(a)(x-a).
 
 **Ví dụ có suy luận:** f(x)=x²−2x+3 tại a=2. Ta có f(2)=3, f'(x)=2x−2 nên f'(2)=2. Tiếp tuyến đi qua (2,3) và có hệ số góc 2: y−3=2(x−2), hay y=2x−1. Nếu học sinh viết y=2x, kiểm lại khi x=2 sẽ cho y=4, không đi qua (2,3).
 
-<!-- FIRST_TRY_SOURCE_ID: Vận dụng M6-T02 -->
+<!-- FIRST_TRY_SOURCE_ID: Tự thử M6-T02 -->
 **Vận dụng.** y=|x−2| liên tục tại x=2 không? Hệ số góc trái và phải là gì?
 <details><summary>Đã tự làm? Mở đối chiếu</summary>
 Hàm liên tục, nhận giá trị 0 tại 2 và tiến về 0 từ hai phía. Thương sai phân tại 2 từ trái bằng −1, từ phải +1, nên không khả vi tại 2. Nếu nhầm, quay lại hình góc nhọn.
@@ -1115,7 +1115,7 @@ G'=\frac{2x(x+1)-x^2}{(x+1)^2}
 
 Việc có công thức đơn giản không làm G hay G' nhận thêm giá trị ở x=−1.
 
-<!-- FIRST_TRY_SOURCE_ID: Vận dụng M6-T03 -->
+<!-- FIRST_TRY_SOURCE_ID: Tự thử M6-T03 -->
 **Vận dụng.** Lấy đạo hàm f(x)=x(x²+1) theo tích, rồi khai triển và lấy đạo hàm để kiểm.
 <details><summary>Đã tính? Mở đối chiếu</summary>
 f'=1·(x²+1)+x·2x=3x²+1. Khai triển f=x³+x cũng được 3x²+1. Nếu chỉ có 2x, em đã nhầm (uv)' với u'v'.
@@ -1151,7 +1151,7 @@ Tại ±3, căn bằng 0, mẫu đạo hàm không hợp lệ; không mở rộn
 
 **Ví dụ 6 — mũ cơ số khác e:** N(x)=2^(−x) cho mọi x thực; N'=−2^(−x)ln2 <0. Dấu âm từ đạo hàm −x giải thích hàm giảm.
 
-<!-- FIRST_TRY_SOURCE_ID: Vận dụng M6-T04 -->
+<!-- FIRST_TRY_SOURCE_ID: Tự thử M6-T04 -->
 **Vận dụng.** Tìm miền và đạo hàm f(x)=ln(3x−1). Tại sao lời giải 1/(3x−1) thiếu một bước?
 <details><summary>Đã thử? Mở đối chiếu</summary>
 Miền x>1/3; f'=3/(3x−1) trên miền. Cần nhân đạo hàm tầng trong 3x−1 bằng 3.
@@ -1196,13 +1196,13 @@ Tại t=1, v=+6 và a=−6, trái dấu: tốc độ |v| đang giảm. Tại t=3
 
 **Cảnh báo không được nhầm:** f'(a)=0 là tiếp tuyến ngang, chưa đủ chứng minh cực trị; f''(a)>0 không đồng nghĩa f tăng tại a; gia tốc âm không đồng nghĩa vật luôn chậm dần. Việc khảo sát biến thiên/tối ưu cần dấu đạo hàm trên **các khoảng**, đó là mạch M7 tiếp theo.
 
-<!-- FIRST_TRY_SOURCE_ID: Vận dụng M6-T05 -->
+<!-- FIRST_TRY_SOURCE_ID: Tự thử M6-T05 -->
 **Vận dụng.** Với s(t)=t³−3t, tính vận tốc và gia tốc tại t=2, kể đơn vị nếu s (m), t (s).
 <details><summary>Đã làm? Mở đối chiếu</summary>
 v(t)=3t²−3, a(t)=6t; v(2)=9 m/s, a(2)=12 m/s². Nếu em ghi đơn vị gia tốc m/s, hãy nhớ gia tốc là vận tốc thay đổi theo thời gian.
 </details>
 
-<!-- FIRST_TRY_SOURCE_ID: Vận dụng M6-T06 -->
+<!-- FIRST_TRY_SOURCE_ID: Tự thử M6-T06 -->
 **Vận dụng.** f(x)=x⁴ có f''(0)=0. Có được kết luận x=0 là điểm uốn không?
 <details><summary>Đã giải thích? Mở đối chiếu</summary>
 Không. f''(x)=12x² dương ở cả hai phía của 0, nên không có đổi chiều lõm. Cần thêm điều kiện/kiểm tra, không chỉ thế x=0.
