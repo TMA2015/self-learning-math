@@ -29,3 +29,8 @@ RELEASE_INTAKE: NO
 **Interpretation:** These nine checks directly compare the old and new *source content* and source references, not mathematical truth of the new formal classification. The explicit knowledge boxes and any newly formalized wording are `DELTA_C_ACADEMIC_MATERIAL` requiring targeted verification of mathematical conditions against S1, D1–D6/PED1–PED6 and diagram semantics. Even if old Rxx was CONTENT_READY, it remains valid only for original frozen blob `0e934389ebfe239ace19cc23c5dedf9c23d8ebdc`; new Rxx has **not** signed Q18 and must not silently inherit acceptance. This QA file is not independent NotebookLM PASS, website AP/MathJax render proof, device proof or RELEASE authorization.
 
 **No** V2 handoff update, ready/REGISTER promotion, Mastery, protected RD1 import, merge or deploy.
+
+## Placement/interaction delta on same R02 candidate
+- Four previously source-verified original SVG refs now appear immediately **before** the image-reading guide, with unchanged file paths and model labels. This ensures "Đọc hình" never appears ahead of the actual image in source.
+- The existing actual interactive HTML model `Temp_THPT_TOPIC16_RAMP_ANGLE_R01_SCOPE_CORRECTED_20261113.html` blob `e14ee4c6ec6c851f228352656b0cd8e2fc3a2a06` is explicitly linked from the learner source; no claimed integration with production/browser yet.
+- This amendment pins the exact latest R02 source `60f69d43bfa3f4508e8c7a787bad517141f9b2b2`; original immutable R01 remains unchanged.
