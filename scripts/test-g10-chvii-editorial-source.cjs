@@ -26,6 +26,12 @@ function revealed(s){
  if(capture)out.push(capture.join("\n").trimEnd());
  return out.sort();
 }
+// Preserve every canonical answer and explanation byte-for-byte in meaning.
+// The only permitted difference is the fixed, unrelated, misleading navigation sentence.
+const obsoleteAnswerNote="**Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.";
+const canonicalAnswerText=parts=>parts.map(block=>block.split("\n")
+ .map(line=>line.trim()).filter(line=>line&&line!==obsoleteAnswerNote).join("\n")).sort();
+
 const specs={
  19:{count:7,helps:9,figures:2,examples:2,book:["2.1. Phương trình tổng quát của đường thẳng","2.2. Phương trình tham số của đường thẳng"]},
  20:{count:5,helps:7,figures:3,examples:2,book:["2.1. Vị trí tương đối giữa hai đường thẳng","2.2. Góc giữa hai đường thẳng","2.3. Khoảng cách từ một điểm đến một đường thẳng"]},
@@ -74,7 +80,8 @@ for(const [lessonStr,info]of Object.entries(specs)){
   // Q15: multiple distinct item_ids may target the SAME outcome_id. Do not
   // misclassify original B22 shared ellipse/hyperbola outcomes as duplicate items.
  }
- assert.deepEqual(revealed(s),revealed(baseline),name+" original canonical voluntary answer text changed");
+ assert.deepEqual(canonicalAnswerText(revealed(s)),canonicalAnswerText(revealed(baseline)),
+  name+" canonical answer/rationale changed beyond removing fixed obsolete navigation note");
  assert.equal(revealed(s).length,info.count,name+" original First Try answer-body count");
  const now=Math.max(0,s.indexOf('=== "Khám phá kiến thức"')),k=s.indexOf('=== "Kiến thức SGK"'),e=s.indexOf('=== "Ví dụ"'),m=s.indexOf('=== "Lỗi thường gặp"');
  assert(now>=0&&now<k&&k<e&&e<m,name+" tabs broken");
