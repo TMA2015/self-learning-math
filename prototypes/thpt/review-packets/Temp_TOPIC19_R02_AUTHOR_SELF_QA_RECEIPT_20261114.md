@@ -10,14 +10,14 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOPIC19_COMBINATORICS_BINOMIAL_R02_FULL_13_OUTCOMES_20261114.md
-SOURCE_BLOB: fb00c6289900d697cb1ee88a2af624f3872a6bdc
-ACADEMIC_SOURCE_BLOB: fb00c6289900d697cb1ee88a2af624f3872a6bdc
+SOURCE_BLOB: 65dfdfdd77ee1e3eada982c58cca7b490ea49116
+ACADEMIC_SOURCE_BLOB: 65dfdfdd77ee1e3eada982c58cca7b490ea49116
 CANONICAL_MATRIX_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOPIC19_R02_54_CANONICAL_61_PLACEMENT_OUTCOME_MATRIX_20261114.md
-CANONICAL_MATRIX_BLOB: b7fffd27cf188800ecf3451ea13a44aea07e3de1
+CANONICAL_MATRIX_BLOB: d6f1791b5a2cc1e47ae35ba7597db4224f1de37d
 S1_DIRECT_RECEIPT_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOPIC19_R01_DIRECT_S1_SGK_SBT_PDF_VISUAL_RECEIPT_20261114.md
 S1_DIRECT_RECEIPT_BLOB: 850dd241e60de58ccf032e48e1e13530988436e3
 Q18_MATH_PED_ITEM_AUDIT_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOPIC19_R02_Q18_13_OUTCOME_29_NEW_ITEM_MATH_PED_SOURCE_AUDIT_20261114.md
-Q18_MATH_PED_ITEM_AUDIT_BLOB: 0caf42ceffd38880a60af049fd6f134c56433419
+Q18_MATH_PED_ITEM_AUDIT_BLOB: e60b746afe97e6ad2080694bb802d99bbd9e53de
 ORIGINAL_G10_SGK_PUBLIC_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_THPT_TOPIC19_COUNT_CHOOSE_PASCAL_R00_20261114.html
 INTERACTIVE_MODEL_BLOB: f4a078d0a7b4111f6cac483cca6cca65f05c111c
@@ -37,9 +37,9 @@ RELEASE_AUTHORIZATION: NO
 
 S1_RECEIPT: Owner-connected original scanned SGK KNTT Toán10 TậpHai source SHA256 ee8a00392e1c9fc5b213e574666cf1f8487548737e138573f28a988c640fafe6; SBT SHA256 3cb33690e0627b9e8ac467c23625b7feb7d05a8422293db0e1b26e44ca6a78c7. Original page pixels read directly with printed-page index: SGK B23 60–65/B24 66–71/B25 72–75/end76; SBT B23 51–53/B24 54–55/B25 56–57/end58–60. Original PDF page 1-based = printed+1. New direct receipt blob 850dd241e60de58ccf032e48e1e13530988436e3 supersedes conflicting old historical p59/p65/p78 for THESE original PDF bytes; no old SGK PASS overwritten.
 OUTCOME_AUDIT: 13 distinct outcomes and lesson modules (4 B23 counting,4 B24 arrangements/grouping,5 B25 Newton incl SGK p75 first-two-term growth application O13) each with WHY, meaning, method and exception before formula, worked reasoning, voluntary FirstTry Txx/D6 and solved Practice Pxx/D6. Internal canonical O13 inserted after O10, before optional O11/O12, while learner-facing headings remain sequential 1–13.
-MATH_VERIFICATION: 43/43 independently calculated digit enumeration, factorial/combination, Newton sign/constant/coefficient sum and five-year growth assertions all pass; exact 29 new body/key/solutions read and validated against own question; three Written /4 rubrics each with four explicit one-point criteria and targeted D6. O11 ordinary-polynomial constant before SBT reciprocal, T11 key −32 checked; source audit blob 0caf42ceffd38880a60af049fd6f134c56433419.
+MATH_VERIFICATION: 43/43 independently calculated digit enumeration, factorial/combination, Newton sign/constant/coefficient sum and five-year growth assertions all pass; exact 29 new body/key/solutions read and validated against own question; three Written /4 rubrics each with four explicit one-point criteria and targeted D6. O11 ordinary-polynomial constant before SBT reciprocal, T11 key −32 checked; source audit blob e60b746afe97e6ad2080694bb802d99bbd9e53de.
 PED_VERIFICATION: Q09–Q14 13-outcome lesson-level WHAT/WHY/how/method/limits, bridges from school fair (one choice→multiple sequential choices→digits→ordered roles→unordered groups→choose binomial positions→5-year growth). Four white SVG visuals (3 label/equation-equivalent original source diagrams with only white background edit +1 original 2×3 tree) with alt/reading; one original offline three-scene model 11/11 DOM math edge/reset checks. Optional advanced SBT reciprocal and P(1) explicitly after mandatory SGK p75 growth. Original NotebookLM/Gemini draft consulted for appropriate simple examples only, its generic placeholders not treated as S1.
-CANONICAL_Q15: 25 original public G10 CHVIII formative IDs reused as **pointers** from frozen source Git blob 2ae62fada28913ec336b3507684408a1e05a3232, plus 13 genuinely new T,13 new P,3 new Written canonical IDs =54 unique public item_id; 7 extra PUBLIC_REPLAY placements make 61 tuples, no duplicate stems/keys/solutions and no duplicate Anchor items; exact matrix blob b7fffd27cf188800ecf3451ea13a44aea07e3de1. Original old G10 source review PASS never transferred automatically to Topic.
+CANONICAL_Q15: 25 original public G10 CHVIII formative IDs reused as **pointers** from frozen source Git blob 2ae62fada28913ec336b3507684408a1e05a3232, plus 13 genuinely new T,13 new P,3 new Written canonical IDs =54 unique public item_id; 7 extra PUBLIC_REPLAY placements make 61 tuples, no duplicate stems/keys/solutions and no duplicate Anchor items; exact matrix blob d6f1791b5a2cc1e47ae35ba7597db4224f1de37d. Original old G10 source review PASS never transferred automatically to Topic.
 ASSESSMENT_Q16: No protected private RD1 source imported to public Git; public replay of 7 practiced P IDs remains CLIENT_SELF_CHECK_NO_MASTERY and cannot count as independent TOPIC_READINESS or Skill Mastery. Release must hide hint/key/correctness/rubric/AI Tutor before actual Final Submit, do exact integrated HEAD and native Safari QA. No Firebase, student data or Mastery touched.
 
 ## Q01–Q18 author source evidence
