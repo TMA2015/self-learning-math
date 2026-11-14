@@ -215,7 +215,7 @@
 
     <span id="help-g10-chvii-try13" data-thpt-help-id="HELP-G10-CHVII-TRY13"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "Phương trình đường tròn: nhầm tâm, bán kính"
 
         1. **Nhận diện lỗi:** Nếu viết vế phải 3 hoặc (x-2)², em nhầm bán kính với bình phương bán kính hoặc nhầm dấu tọa độ tâm.
 
@@ -229,7 +229,7 @@
 
     <span id="help-g10-chvii-try14" data-thpt-help-id="HELP-G10-CHVII-TRY14"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "Hoàn thành bình phương: sai dấu"
 
         1. **Nhận diện lỗi:** Nếu kết luận bán kính 5 hoặc tâm (−3,2), em chưa đọc đúng dấu trong bình phương.
 
@@ -243,7 +243,7 @@
 
     <span id="help-g10-chvii-try15" data-thpt-help-id="HELP-G10-CHVII-TRY15"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "Tiếp tuyến: thiếu điểm chạm hoặc pháp tuyến"
 
         1. **Nhận diện lỗi:** Nếu điểm chưa thuộc đường tròn hoặc dùng IM làm chỉ phương, cách dựng tiếp tuyến đã sai điều kiện.
 
@@ -257,7 +257,7 @@
 
     <span id="help-g10-chvii-try16" data-thpt-help-id="HELP-G10-CHVII-TRY16"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "Tâm đường tròn qua ba điểm"
 
         1. **Nhận diện lỗi:** Nếu lấy trung điểm AB làm tâm, em mới dùng hai điểm và chưa bảo đảm cách đều C.
 
@@ -271,7 +271,7 @@
 
     <span id="help-g10-chvii-try17" data-thpt-help-id="HELP-G10-CHVII-TRY17"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "Đường thẳng và đường tròn: nhầm tiếp xúc"
 
         1. **Nhận diện lỗi:** Nếu h=R mà nói 'cắt hai điểm', em nhầm trường hợp tiếp xúc với cát tuyến.
 
