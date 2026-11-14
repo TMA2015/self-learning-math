@@ -507,7 +507,7 @@ Tung đồng xu cân đối và gieo xúc xắc cân đối độc lập. A=đ�
 
 ## 2. Luyện tập
 
-Các bài dưới đây cần chọn mô hình xác suất đúng, giải thích cách đếm rồi tự mở Đối chiếu. Nếu chưa đạt, sử dụng D6 quay về đúng mảng Kiến thức.
+Khi luyện tập, hãy xác định mô hình xác suất, giải thích cách đếm và kiểm tra kết quả. Nếu làm sai, xem hướng dẫn khắc phục trong phần Lời giải rồi quay về đúng mục Kiến thức.
 
 <!-- AUTHOR_ONLY_Q15: 34 historical G10/G11 PR #810 public items are ID-only source pointers; no stems/keys/rubrics replicated. Source custody Q15 HOLD. -->
 
@@ -525,7 +525,7 @@ Rút đều một thẻ trong 10 thẻ đánh số 0 đến 9. Viết Ω và bi�
 
 </details>
 
-### 2.2. Biến cố chắc chắn và không thể
+### 2.2. Mô tả biến cố từ một điều kiện
 
 <!-- ITEM_ID: THPT-TOP20-P02; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O02; CONTENT_VERSION: TOP20-R02; PUBLIC_FORMATIVE_NO_MASTERY -->
 
@@ -768,7 +768,7 @@ Có 8 phiếu phân biệt, 3 phiếu đỏ và 5 phiếu xanh. Chọn đều m�
 - Chọn biến cố đối hai phiếu xanh với C(5,2)=10 — **1 điểm**.
 - Tính 1−10/28=9/14 và diễn giải ít nhất một đỏ — **1 điểm**.
 
-**Khi làm sai:** Nếu ra **3/56** hoặc **6/28**, em đã trộn quy ước đếm: tử số là nhóm không thứ tự còn mẫu số là cặp có thứ tự, hoặc ngược lại. **Chú ý:** \(6/56=3/28\) vẫn là đáp án **đúng**, nếu đếm nhất quán 6 cặp đỏ có thứ tự trong tổng 56 cặp có thứ tự. Hãy thử liệt kê bốn phiếu chọn hai để phân biệt (A,B) với (B,A), rồi ôn đúng năng lực đếm theo nhóm tại O07 → **T04/P07** trước khi làm lại. Nếu tính “ít nhất một đỏ” bằng cách lấy 1−P(đúng một đỏ), hãy viết biến cố đối **không có đỏ** = hai phiếu xanh, tính C(5,2)/C(8,2) rồi đối chiếu O08 → T08/P08.
+**Khi làm sai:** Nếu dùng 3 nhóm đỏ thuận lợi nhưng chia cho 56 cặp có thứ tự, em đã trộn hai cách đếm. Đếm nhất quán theo **nhóm không thứ tự** cho \(3/28\); nếu đếm theo **cặp có thứ tự**, phải dùng \(6/56\), vẫn bằng \(3/28\). Hãy xem lại mục Kiến thức 1.4 và bài Luyện tập 2.7. Với câu “ít nhất một đỏ”, biến cố đối là **cả hai phiếu xanh**, không phải “đúng một đỏ”; xem lại mục Kiến thức 1.3 và bài Luyện tập 2.8.
 
 </details>
 
@@ -788,7 +788,7 @@ Một lần gieo xúc xắc cân đối. A={2,4,6}, B={2,3,5}. (a) Tìm giao và
 - Áp dụng cộng tổng quát để được 5/6 — **1 điểm**.
 - So 1/6 với 1/4, kết luận không độc lập và nêu lý do — **1 điểm**.
 
-**Khi làm sai:** Nếu P(hợp)=1, em đã cộng P(A)+P(B) mà **chưa trừ giao {2}**; vẽ lại Venn và viết A∩B một lần, rồi giải T08/P14. Nếu kết luận độc lập vì A,B có phần giao, hãy tách hai câu hỏi: giao rỗng là xung khắc, còn độc lập kiểm **1/6 so với (1/2)(1/2)=1/4**; trở lại O12/O13 → T07/T15 rồi tự kiểm.
+**Khi làm sai:** Nếu tính \(P(A\cup B)=1\), em đã quên trừ phần giao \(\{2\}\) được đếm hai lần. Hãy xem lại hình Venn ở mục Kiến thức 2.1 và luyện bài 2.14. Nếu kết luận hai biến cố độc lập chỉ vì chúng có kết quả chung, hãy kiểm lại \(P(A\cap B)=1/6\) và \(P(A)P(B)=1/4\): hai giá trị khác nhau. Xem thêm mục Kiến thức 2.2 và bài Luyện tập 2.13.
 
 </details>
 
@@ -808,7 +808,7 @@ Tung đồng xu cân đối và gieo một xúc xắc cân đối, hai phép th�
 - Tính hợp 1/2+1/3−1/6=2/3 — **1 điểm**.
 - Lấy biến cố đối để được 1/3, giải thích cả hai đều không xảy ra — **1 điểm**.
 
-**Khi làm sai:** Nếu câu (a) ra 5/6, em đã tính hợp thay cho giao; dùng từ **“cả A và B”** để chọn phép nhân trên hai phép thử độc lập (xem O16/T09/P16). Nếu câu (b) ra 1/6, em mới tính giao và quên cộng hai xác suất biên rồi trừ phần chung (xem O14/T08/P14). Nếu câu (c) ra 2/3, em quên lấy biến cố đối của hợp, nên cần viết **không A và không B = (A∪B)̅** trước khi lấy 1−2/3.
+**Khi làm sai:** Nếu câu (a) ra \(5/6\), em đã tính hợp thay cho giao. Với yêu cầu “cả A và B”, hãy xem lại phép nhân cho hai biến cố độc lập ở mục Kiến thức 2.4 và bài Luyện tập 2.16. Nếu câu (b) ra \(1/6\), em mới tính giao, chưa tính hợp; trở lại quy tắc cộng ở mục Kiến thức 2.3 và bài Luyện tập 2.14. Nếu câu (c) ra \(2/3\), em quên lấy biến cố đối của hợp: “cả A và B đều không xảy ra” chính là phần còn lại sau “ít nhất một trong hai xảy ra”.
 
 </details>
 
@@ -833,9 +833,6 @@ REPLAY_10|THPT-TOP20-P16|TOP20-O16|CLIENT_SELF_CHECK_NO_MASTERY
 REPLAY_11|THPT-TOP20-P17|TOP20-O17|CLIENT_SELF_CHECK_NO_MASTERY
 END_AUTHORING_ONLY_Q15_Q16_PUBLIC_REPLAY_MAPPING -->
 
-
-
-Các câu này chỉ dùng để **tự đối chiếu**, không đánh giá độc lập và không ghi điểm thành thạo.
 
 <!-- AUTHOR_ONLY_Q16: official protected RD1 and Final Submit not implemented, no owner-controlled private bank on public GitHub; future RELEASE must guard answer disclosure before Final Submit. G12 Bayes/conditional out of scope. -->
 
