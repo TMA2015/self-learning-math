@@ -127,6 +127,18 @@ function chviiWorkFollowupReceiptRows(){
  return rows;
 }
 
+const chviiStemReceipt="prototypes/thpt/ux795/G10_CHVII_R02_AP2_STEM_DISPLAY_EQUIVALENT_RECEIPT_20261114.md";
+function chviiStemReceiptRows(){
+ const file=path.join(root,chviiStemReceipt);
+ if(!fs.existsSync(file))return new Map();
+ const source=fs.readFileSync(file,"utf8");
+ const found=[...source.matchAll(/^\| B(19|20|21|22) \| \x60([a-f0-9]{40})\x60 \| \x60([a-f0-9]{40})\x60 \| (\d+) \|/gm)];
+ assert.equal(found.length,4,"ChVII AP2 stem display receipt must lock four source blobs");
+ const rows=new Map(found.map(m=>["B"+m[1],{baseline:m[2],candidate:m[3],moved:Number(m[4])}]));
+ assert.equal(rows.size,4,"AP2 stem receipt has duplicate lesson");
+ return rows;
+}
+
 function expectedG10KnowledgeBlob(lesson,legacy){
  assert(/^[a-f0-9]{40}$/.test(legacy),"Historical source SHA malformed");
  const name="B"+String(lesson).replace(/^B/,"").padStart(2,"0");
@@ -198,6 +210,13 @@ function expectedG10KnowledgeBlob(lesson,legacy){
        assert.equal(work.moved,clarity.moved,name+" Work UX patch cannot change question counts");
        assert.equal(work.helps,clarity.helps,name+" Work UX patch cannot alter HELP counts");
        assert.equal(work.examples,clarity.examples,name+" Work UX patch cannot change worked examples");
+       const stems=chviiStemReceiptRows().get(name);
+       if(stems){
+        assert.equal(stems.baseline,work.candidate,name+" display-only AP2 must start at exact Work-fixed source");
+        assert.equal(stems.moved,work.moved,name+" AP2 must preserve 25 canonical questions");
+        assert.notEqual(stems.candidate,stems.baseline,name+" AP2 display must actually change source");
+        return stems.candidate;
+       }
        return work.candidate;
       }
       return clarity.candidate;
@@ -216,4 +235,4 @@ function candidateG10KnowledgeBlob(lesson){
  const sentinel="0".repeat(40),result=expectedG10KnowledgeBlob(lesson,sentinel);
  return result===sentinel?null:result;
 }
-module.exports={expectedG10KnowledgeBlob,candidateG10KnowledgeBlob,chivEditorialReceiptRows,chvEditorialReceiptRows,chviEditorialReceiptRows,chviExampleUxReceiptRows,chviiEditorialReceiptRows,chviiContinuousReceiptRows,chviiAp2ReceiptRows,chviiR02ReceiptRows,chviiClarityReceiptRows,chviiWorkFollowupReceiptRows};
+module.exports={expectedG10KnowledgeBlob,candidateG10KnowledgeBlob,chivEditorialReceiptRows,chvEditorialReceiptRows,chviEditorialReceiptRows,chviExampleUxReceiptRows,chviiEditorialReceiptRows,chviiContinuousReceiptRows,chviiAp2ReceiptRows,chviiR02ReceiptRows,chviiClarityReceiptRows,chviiWorkFollowupReceiptRows,chviiStemReceiptRows};
