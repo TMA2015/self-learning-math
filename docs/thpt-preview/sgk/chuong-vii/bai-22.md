@@ -27,7 +27,7 @@
 
     <figure class="thpt-r4-plot thpt-r4-concept-figure" data-chvii-r02-diagram="TRY18"><img src="../../../../assets/images/thpt/G10_CHVII_R02_B22_TRY18_ELLIPSE.svg" loading="lazy" alt="Hai tiêu điểm và dây căng tạo elip, tổng hai khoảng cách bằng 2a lớn hơn 2c."><figcaption>Khi đầu bút kéo dây căng, tổng khoảng cách từ đầu bút đến hai tiêu điểm không đổi.</figcaption></figure>
 
-    **Em vận dụng.** Với elip x²/25+y²/16=1, tìm a, b, c và hai tiêu điểm.
+    **Em vận dụng.** Với elip \(\dfrac{x^2}{25}+\dfrac{y^2}{16}=1\), tìm \(a\), \(b\), \(c\) và hai tiêu điểm.
 
     ??? question "Đối chiếu"
 
@@ -47,7 +47,7 @@
 
     Nếu elip giữ **tổng** hai khoảng cách không đổi, hãy thử giữ **độ lớn của hiệu** không đổi: \(|MF_1-MF_2|=2a\), với hai tiêu điểm \(F_1,F_2\) cách nhau \(2c\) và \(0<a<c\). Tập điểm thu được chia thành **hai nhánh**: ở nhánh gần \(F_1\), khoảng cách đến \(F_1\) nhỏ hơn; ở nhánh gần \(F_2\), điều ngược lại xảy ra. Vì \(c>a\), quan hệ các thông số là \(b^2=c^2-a^2\), hay \(c^2=a^2+b^2\). Hình thành hai nhánh từ hiệu khoảng cách giúp em không nhầm với đường elip kín.
 
-    **Em vận dụng.** Hypebol x²/16−y²/9=1 có các đỉnh và hai tiêu điểm tọa độ nào?
+    **Em vận dụng.** Hypebol \(\dfrac{x^2}{16}-\dfrac{y^2}{9}=1\) có các đỉnh và hai tiêu điểm tọa độ nào?
 
     ??? question "Đối chiếu"
 
@@ -71,7 +71,7 @@
 
     <figure class="thpt-r4-plot thpt-r4-concept-figure" data-chvii-r02-diagram="TRY20"><img src="../../../../assets/images/thpt/G10_CHVII_R02_B22_TRY20_ASYMPTOTE.svg" loading="lazy" alt="Hypebol mở rộng với hình chữ nhật cơ sở 2a nhân 2b, hai đường chéo là tiệm cận."><figcaption>Mở rộng: hai nhánh hypebol tiến dần tới hai đường chéo của hình chữ nhật cơ sở.</figcaption></figure>
 
-    **Em vận dụng.** Hypebol x²/25−y²/4=1 có hai đường tiệm cận nào?
+    **Em vận dụng.** Hypebol \(\dfrac{x^2}{25}-\dfrac{y^2}{4}=1\) có hai đường tiệm cận nào?
 
     ??? question "Đối chiếu"
 
@@ -100,7 +100,7 @@
 
     <figure class="thpt-r4-plot thpt-r4-concept-figure" data-chvii-r02-diagram="TRY21"><img src="../../../../assets/images/thpt/G10_CHVII_R02_B22_TRY21_PARABOLA.svg" loading="lazy" alt="Parabol có MF bằng MN, N là chân vuông góc từ M xuống đường chuẩn, F là tiêu điểm."><figcaption>Mỗi điểm M trên parabol cách đều tiêu điểm F và đường chuẩn.</figcaption></figure>
 
-    **Em vận dụng.** Cho parabol y²=8x với x≥0. Xác định tiêu điểm, đường chuẩn; M(2,4) có thuộc parabol không?
+    **Em vận dụng.** Cho parabol \(y^2=8x\) với \(x\ge0\). Xác định tiêu điểm, đường chuẩn; \(M(2,4)\) có thuộc parabol không?
 
     ??? question "Đối chiếu"
 
@@ -122,7 +122,7 @@
 
     Hình vẽ cho biết điều gì có thể xảy ra: một đường qua elip có thể gặp nó tại hai điểm, tiếp xúc ở một điểm hoặc nằm ngoài không gặp điểm nào. Vì thế, chỉ giữ nghiệm thực và thế lại vào cả hai phương trình; không được mặc định giao điểm luôn có hai nghiệm. Cách giải phụ thuộc chính những điều kiện toán học của từng vị trí.
 
-    **Em vận dụng.** Đường x=0 cắt elip x²/9+y²/4=1 tại những điểm nào?
+    **Em vận dụng.** Đường \(x=0\) cắt elip \(\dfrac{x^2}{9}+\dfrac{y^2}{4}=1\) tại những điểm nào?
 
     ??? question "Đối chiếu"
 
@@ -142,7 +142,7 @@
 
     Nếu mặt cắt của một máng có dạng \(y^2=12x\) (đơn vị cm), thì tại vị trí \(x=3\) ta có \(y^2=36\), nghĩa là **hai** điểm trên mặt cắt có tung độ \(y=6\) và \(y=-6\). Độ rộng giữa hai mép máng là \(6-(-6)=12\) cm, không phải 6 cm. Trên hình, đó là một đoạn thẳng vuông góc trục Ox nối cả hai nhánh. Khi dùng mô hình trong đời thực, phải kiểm đơn vị, vị trí đặt trục và việc mặt cắt có thực sự phù hợp với một parabol hay không.
 
-    **Em vận dụng.** Mặt cắt một máng giả sử có dạng y²=20x (x,y tính bằng cm). Bề rộng của máng tại x=5 cm là bao nhiêu?
+    **Em vận dụng.** Mặt cắt một máng giả sử có dạng \(y^2=20x\) (\(x,y\) tính bằng cm). Bề rộng của máng tại \(x=5\) cm là bao nhiêu?
 
     ??? question "Đối chiếu"
 
@@ -168,7 +168,7 @@
 
     <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_CHVII_ELLIPSE_TRANSFER_D5_R00.svg" alt="Mái nửa elip rộng 20 m và khối rộng 14 m; độ hở nhỏ nhất hai mép khoảng 0,285 m, không đạt 0,8 m" loading="lazy"><figcaption>Hình minh họa độ hở theo phương đứng tại hai mép khối, không chỉ tại tâm.</figcaption></figure>
 
-    **Em vận dụng.** Mái nửa elip rộng **12 m**, cao **4 m** tại tâm. Đặt O ở giữa nền, Ox dọc nền. (a) Viết phương trình elip đầy đủ và điều kiện miền mái. (b) Tại x=3 m, mái cao bao nhiêu? Tự làm rồi mở kết quả.
+    **Em vận dụng.** Mái nửa elip rộng **12 m**, cao **4 m** tại tâm. Đặt \(O\) ở giữa nền, \(Ox\) dọc nền. (a) Viết phương trình elip đầy đủ và điều kiện miền mái. (b) Tại \(x=3\) m, mái cao bao nhiêu? Tự làm rồi mở kết quả.
 
     ??? question "Đối chiếu"
 
@@ -198,7 +198,7 @@
 
     <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_CHVII_HYPERBOLA_TRANSFER_D5_R00.svg" alt="Hypebol từ hai trạm A(-50;0), B(50;0), nhánh phải khi tín hiệu từ B đến máy thu trước; PA trừ PB bằng 60 km" loading="lazy"><figcaption>Hình minh họa hai nhánh: tín hiệu từ B đến máy thu trước thì chọn nhánh gần B, không xác định một điểm duy nhất.</figcaption></figure>
 
-    **Em vận dụng.** Hai trạm cách nhau 60 km, phát tín hiệu đồng thời; sóng truyền 100.000 km/s. Chênh thời gian tới máy thu là 0,0002 s. Tính `2a`, `c`, `b²` cho hypebol tương ứng và kiểm điều kiện có nghiệm hình học, rồi mở đối chiếu.
+    **Em vận dụng.** Hai trạm cách nhau \(60\) km, phát tín hiệu đồng thời; sóng truyền \(100.000\) km/s. Chênh thời gian tới máy thu là \(0,0002\) s. Tính \(2a\), \(c\), \(b^2\) cho hypebol tương ứng và kiểm điều kiện có nghiệm hình học, rồi mở đối chiếu.
 
     ??? question "Đối chiếu"
 
