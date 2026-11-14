@@ -219,7 +219,7 @@
 
         3. **Tự sửa:** Nhân hẳn d1 với hệ số 2 rồi đối chiếu cả ba hệ số của d2.
 
-        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+        4. **Tự đối chiếu:** mở tab Khám phá kiến thức, chọn Đối chiếu của câu Vận dụng vừa làm rồi kiểm lại dữ kiện và điều kiện áp dụng.
 
         5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
@@ -233,7 +233,7 @@
 
         3. **Tự sửa:** Thử n·n'=0 và thay P vào phương trình vừa viết.
 
-        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+        4. **Tự đối chiếu:** mở tab Khám phá kiến thức, chọn Đối chiếu của câu Vận dụng vừa làm rồi kiểm lại dữ kiện và điều kiện áp dụng.
 
         5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
@@ -247,7 +247,7 @@
 
         3. **Tự sửa:** Ghi thành hai dòng kiểm thế tọa độ vào từng phương trình.
 
-        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+        4. **Tự đối chiếu:** mở tab Khám phá kiến thức, chọn Đối chiếu của câu Vận dụng vừa làm rồi kiểm lại dữ kiện và điều kiện áp dụng.
 
         5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
@@ -261,7 +261,7 @@
 
         3. **Tự sửa:** Tách tính tử và mẫu, kiểm mẫu khác 0, kết luận độ dài không âm.
 
-        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+        4. **Tự đối chiếu:** mở tab Khám phá kiến thức, chọn Đối chiếu của câu Vận dụng vừa làm rồi kiểm lại dữ kiện và điều kiện áp dụng.
 
         5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
@@ -275,7 +275,7 @@
 
         3. **Tự sửa:** Lấy trị tuyệt đối tích vô hướng, kiểm φ không vượt 90°.
 
-        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+        4. **Tự đối chiếu:** mở tab Khám phá kiến thức, chọn Đối chiếu của câu Vận dụng vừa làm rồi kiểm lại dữ kiện và điều kiện áp dụng.
 
         5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
