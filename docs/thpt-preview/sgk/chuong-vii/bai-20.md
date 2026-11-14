@@ -10,11 +10,7 @@
 
     ### Cùng tìm hiểu
 
-    Hai đường thẳng trên bản đồ có thể **cắt nhau, song song hoặc trùng nhau**. Nếu ta chỉ nhìn hình vẽ phóng to hoặc thu nhỏ, rất dễ đoán nhầm. Phương pháp tọa độ cho phép đọc đúng quan hệ từ hệ số và các vectơ pháp tuyến.
-
-    Khi cần khoảng cách từ một điểm đến đường thẳng, đường nối bất kỳ không đủ: khoảng cách được đo theo **đoạn vuông góc ngắn nhất**. Công thức khoảng cách trông như một phân số có căn, nhưng thực ra nó đo độ lệch có dấu ở tử số, rồi chia cho độ dài pháp tuyến để đổi thành **độ dài thật**.
-
-    Góc giữa hai đường thẳng cũng có thể tính từ góc giữa các vectơ chỉ phương hoặc pháp tuyến, nhưng cần lấy **góc nhỏ giữa hai đường**, không bê nguyên góc tù giữa hai mũi tên.
+    Hai con đường trên bản đồ có thể cắt nhau, song song hoặc trùng nhau. Thay vì chỉ đoán bằng mắt, ta có thể hỏi: **Có điểm nào cùng nằm trên cả hai đường không?** Khi cần biết một điểm ở cách đường bao xa, ta lại phải tìm đoạn nối **ngắn nhất**. Từ hai câu hỏi hình học này, em sẽ khám phá cách xác định vị trí tương đối và khoảng cách bằng tọa độ.
 
     ### Ví dụ trực quan
 
@@ -35,12 +31,12 @@
 
         **Lý do:** Hai pháp tuyến (2,-1) và (4,-2) tỉ lệ 2 lần, nhưng nhân toàn phương trình d1 với 2 cho hằng số 2, không phải 3 của d2.
 
-        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
 
 
-    <a href="../luyen-tap/?item=THPT-G10-B20-C01">Mở câu luyện tập tương ứng để tự luyện</a>
+
+    <a href="../luyen-tap/?item=THPT-G10-B20-C01">Luyện tập thêm</a>
 
 
     <span id="thpt-g10-chvii-try09" data-thpt-first-try-id="THPT-G10-CHVII-TRY09" data-outcome-id="G10-B20-PERPENDICULAR" data-thpt-help-ref="HELP-G10-CHVII-TRY09"></span>
@@ -57,12 +53,12 @@
 
         **Lý do:** n=(1,2) của d, chọn n'=(2,-1) có tích vô hướng 0. Qua P: 2(x-1)-(y+2)=0 ⇒ 2x-y-4=0.
 
-        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
 
 
-    <a href="../luyen-tap/?item=THPT-G10-B20-C02">Mở câu luyện tập tương ứng để tự luyện</a>
+
+    <a href="../luyen-tap/?item=THPT-G10-B20-C02">Luyện tập thêm</a>
 
 
     <span id="thpt-g10-chvii-try10" data-thpt-first-try-id="THPT-G10-CHVII-TRY10" data-outcome-id="G10-B20-INTERSECTION" data-thpt-help-ref="HELP-G10-CHVII-TRY10"></span>
@@ -79,12 +75,12 @@
 
         **Lý do:** Từ 2x-y=1 ⇒ y=2x-1. Thế vào x+2(2x-1)=8 ⇒ x=2, y=3; kiểm 2+6=8, 4-3=1.
 
-        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
 
 
-    <a href="../luyen-tap/?item=THPT-G10-B20-P01">Mở câu luyện tập tương ứng để tự luyện</a>
+
+    <a href="../luyen-tap/?item=THPT-G10-B20-P01">Luyện tập thêm</a>
 
 
     <span id="thpt-g10-chvii-try11" data-thpt-first-try-id="THPT-G10-CHVII-TRY11" data-outcome-id="G10-B20-DISTANCE" data-thpt-help-ref="HELP-G10-CHVII-TRY11"></span>
@@ -109,12 +105,12 @@
 
         **Lý do:** Tử |3·1+4·2−1|=10, mẫu √(3²+4²)=5, nên khoảng cách bằng 10/5=2.
 
-        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
 
 
-    <a href="../luyen-tap/?item=THPT-G10-B20-P02">Mở câu luyện tập tương ứng để tự luyện</a>
+
+    <a href="../luyen-tap/?item=THPT-G10-B20-P02">Luyện tập thêm</a>
 
 
     <span id="thpt-g10-chvii-try12" data-thpt-first-try-id="THPT-G10-CHVII-TRY12" data-outcome-id="G10-B20-ANGLE" data-thpt-help-ref="HELP-G10-CHVII-TRY12"></span>
@@ -131,12 +127,12 @@
 
         **Lý do:** Pháp tuyến n1=(1,0), n2=(1,-1). cosφ=|1|/(1·√2)=1/√2 nên φ=45°.
 
-        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
 
 
 
-    <a href="../luyen-tap/?item=THPT-G10-B20-P03">Mở câu luyện tập tương ứng để tự luyện</a>
+
+    <a href="../luyen-tap/?item=THPT-G10-B20-P03">Luyện tập thêm</a>
 
     ### Thuật ngữ, kiến thức và kỹ năng
 
@@ -183,7 +179,7 @@
 
 === "Ví dụ"
 
-    Trước khi xem lời giải, hãy xác định dữ kiện, điều phải tìm và lý do chọn cách giải. Sau đó kiểm tra lại điều kiện áp dụng và kết quả, thay vì chỉ nhìn phép tính cuối cùng.
+
 
     ### Ví dụ — Khoảng cách không phải độ dài một đoạn nối tùy ý
 
