@@ -157,6 +157,14 @@ P(lỗi)=(1/4)(1/10)+(3/4)(1/30)=1/40+1/40=1/20.
 </details>
 
 
+#### Sơ đồ cây phải được đọc theo xác suất của từng cạnh
+
+![Cây xác suất hai nguồn X và Y với đầy đủ bốn lá xác suất và cách suy ra Bayes](../../../../docs/assets/images/thpt/FIG-TOP21-BAYES-TWO-SOURCES_TREE_WHITE_R00.svg)
+
+**Đọc hình trước khi áp dụng:** Bắt đầu ở gốc, chọn **X** với xác suất \(1/4\) hoặc **Y** với xác suất \(3/4\). Từ X, nhánh lỗi L có xác suất điều kiện \(1/10\), không lỗi T \(9/10\); từ Y, lần lượt \(1/30\) và \(29/30\). Nhân dọc mỗi đường để có các lá X–L \(1/40\), X–T \(9/40\), Y–L \(1/40\), Y–T \(29/40\); cộng cả bốn lá được 1. Chỉ hai lá **có lỗi** làm L xảy ra nên \(P(L)=1/40+1/40=1/20\). Khi **đã biết L**, phần đến từ Y là \(P(Y\mid L)=(1/40)/(2/40)=1/2\). Hình không dùng kích thước/độ dài đoạn để mã hóa xác suất.
+
+**Lưu ý về tính toán:** Nếu hai nguồn không phủ hết hàng hóa, hoặc tỉ lệ cạnh ở một nút không cộng thành 1, cây chưa phải phân hoạch hợp lệ. Các phân số trên là ví dụ **tự tạo** để đọc hình, không phải đề SGK/SBT chép lại.
+
 ### 6. Bayes: đi từ kết quả quan sát ngược về nguồn
 
 <!-- OUTCOME_ID: TOP21-O06; LEGACY_SGK_SKILL: G12-B19-BAYES_REVERSE; LESSON_ID: G12-SGK-B19 -->
