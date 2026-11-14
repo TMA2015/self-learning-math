@@ -298,7 +298,7 @@ Muốn x² thì k=2 lần chọn −2. Hệ số C(4,2)(−2)²=6·4=**24**.
 
 **Nối sang bài kế:** Nhớ kiểm chính xác một kết quả cần đếm và điều kiện của nó trước khi dùng công thức.
 
-### 13. Nhị thức Newton để ước lượng tăng trưởng: không nhầm gần đúng với chính xác
+### 11. Nhị thức Newton để ước lượng tăng trưởng: không nhầm gần đúng với chính xác
 
 <!-- LESSON_ID: TOP19-M13; OUTCOME_ID: TOP19-O13; ORIGINAL_SGK_SKILL: G10-B25-BINOMIAL_APPROX_APPLICATION; S1_LESSON: G10-B25; S1_PRINT_PAGE: 75; SOURCE_ROLE: SGK_CORE_AUTHORITY; SGK_EXERCISES: 8.15_AND_8.16_ORIGINAL_CONTEXT_NOT_COPIED -->
 
@@ -317,7 +317,7 @@ Muốn x² thì k=2 lần chọn −2. Hệ số C(4,2)(−2)²=6·4=**24**.
 
 r=0,01. Hai số hạng đầu là 1+5r=1,05. Do đó 5 000×1,05=**5 250 bộ** (ước tính). Các hạng bậc 2 trở lên đều dương nên số thực tế mô hình 5 000×1,01^5 lớn hơn 5 250 một ít.
 
-**Nếu chưa đúng (D6):** Nếu tính 5 000(1+0,01) mà bỏ mũ 5, em mới tính tăng một năm. Quay O09 để viết năm thừa số rồi đọc hệ số của r là C(5,1)=5. Nếu viết dấu bằng chính xác, hãy chỉ phần r² còn bị bỏ qua.
+**Nếu chưa đúng (D6):** Nếu tính 5 000(1+0,01) mà bỏ mũ 5, em mới tính tăng một năm. Quay lại mục **Nhị thức Newton: hệ số là số cách chọn vị trí** (T09) để viết đủ năm thừa số rồi đọc hệ số của r là C(5,1)=5. Nếu viết dấu bằng chính xác, hãy chỉ phần r² còn bị bỏ qua.
 
 </details>
 
@@ -326,9 +326,9 @@ r=0,01. Hai số hạng đầu là 1+5r=1,05. Do đó 5 000×1,05=**5 250 bộ**
 
 ### Mở rộng sau mạch SGK bắt buộc (tự chọn)
 
-Hai chặng tiếp theo giúp giải các bài SBT có lũy thừa `1/x` hoặc nhận biết tổng hệ số qua `P(1)`. Đây là phần **mở rộng**, không phải điều kiện tiên quyết để học Bài 25 trong SGK; có thể học sau khi em đã tự thử phần ước lượng ở `TOP19-O13`.
+Hai chặng tiếp theo giúp giải các bài SBT có lũy thừa `1/x` hoặc nhận biết tổng hệ số qua `P(1)`. Đây là phần **mở rộng**, không phải điều kiện tiên quyết để học Bài 25 trong SGK; có thể học sau khi em đã tự thử phần **ước lượng tăng trưởng** ngay trên.
 
-### 11. Số hạng không chứa x: từ đa thức đến mở rộng phân thức
+### 12. Số hạng không chứa x: từ đa thức đến mở rộng phân thức
 
 <!-- LESSON_ID: TOP19-M11; OUTCOME_ID: TOP19-O11; ORIGINAL_SGK_SKILL: G10-B25-CONSTANT_TERM; S1_LESSON: G10-B25; SOURCE_ROLE: SGK_CORE_POLYNOMIAL_CONSTANT_WITH_SBT_OPTIONAL_RECIPROCAL -->
 
@@ -355,7 +355,7 @@ Chọn \(-2\) từ cả năm thừa số, không chọn \(3x\) ở vị trí nà
 
 **Nối sang bài kế:** Từ đọc từng số hạng, em có thể kiểm toàn bộ hệ số bằng cách thay \(x=1\) nếu biểu thức là đa thức.
 
-### 12. Tổng hệ số và tam giác Pascal (vận dụng sau khai triển)
+### 13. Tổng hệ số và tam giác Pascal (vận dụng sau khai triển)
 
 <!-- LESSON_ID: TOP19-M12; OUTCOME_ID: TOP19-O12; ORIGINAL_SGK_SKILL: G10-B25-COEFFICIENT_SUM; S1_LESSON: G10-B25; SOURCE_ROLE: TOPIC_EXTENSION_OPTIONAL; OPTIONAL_SCOPE -->
 
@@ -630,7 +630,7 @@ Với đa thức P(x)=(x−2)^5, hãy **(a)** tìm hệ số của x², **(b)** 
 - Kết luận hệ số x² là −80, giải thích dấu âm — **1 điểm**.
 - Tính P(1)=−1 và nêu lý do tổng hệ số — **1 điểm**.
 
-**D6 — nếu chưa làm được:** Nếu hệ số x² là +80, em đã bỏ dấu của (−2)³. Trước khi thế số, giải **5−k=2 ⇒ k=3**, sau đó ghi ba lần nhân hạng tử âm nên hệ số âm. Nếu tổng hệ số không bằng −1, hãy thay x=1 vào **cả đa thức P(x)** chứ không cộng dấu từng hạng theo cảm tính. Luyện lại T10/P10 về số lần chọn hạng tử âm; tiếp đó kiểm P(1) như O12 rồi giải lại W03. Đáp án đã xem không được dùng làm chứng cứ Tự kiểm tra độc lập.
+**D6 — nếu chưa làm được:** Nếu hệ số x² là +80, em đã bỏ dấu của (−2)³. Trước khi thế số, giải **5−k=2 ⇒ k=3**, sau đó ghi ba lần nhân hạng tử âm nên hệ số âm. Nếu tổng hệ số không bằng −1, hãy thay x=1 vào **cả đa thức P(x)** chứ không cộng dấu từng hạng theo cảm tính. Luyện lại T10/P10 về số lần chọn hạng tử âm; tiếp đó trở lại mục **Tổng hệ số và tam giác Pascal** để kiểm P(1), rồi giải lại W03. Đáp án đã xem không được dùng làm chứng cứ Tự kiểm tra độc lập.
 
 </details>
 
