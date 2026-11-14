@@ -1,0 +1,55 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CĐ20 · Khám phá hợp giao độc lập xung khắc</title><style>
+:root{color-scheme:light;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#12395a;background:white}
+*{box-sizing:border-box}body{margin:0;background:#f7f9fc;padding:13px}main{max-width:860px;margin:auto;border:1px solid #d9e3ef;border-radius:16px;padding:18px;background:white}
+h1{font-size:clamp(1.22rem,2.6vw,1.7rem);line-height:1.25}h2{font-size:1.05rem}.muted{color:#536b83;line-height:1.6}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:14px}.pane{border:1px solid #d2dfec;padding:13px;border-radius:12px}
+.options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:10px}
+label{display:flex;align-items:center;gap:6px;border:1px solid #bfd1e4;padding:9px 7px;border-radius:9px;min-height:40px}
+input{accent-color:#216da8}button{font:inherit;cursor:pointer;padding:8px 13px;border:1px solid #94b1cf;border-radius:8px;background:#eaf3fd;color:#154c7f}
+button:focus-visible,input:focus-visible{outline:3px solid #efbe45;outline-offset:2px}
+.answer{line-height:1.65;padding:13px;margin-top:15px;border-left:4px solid #4d91bf;background:#f3f8ff;min-height:120px}
+dl{display:grid;grid-template-columns:auto 1fr;gap:7px 14px}dt{font-weight:700}dd{margin:0}.small{font-size:.9rem;color:#46647a}
+@media(max-width:610px){.cols{grid-template-columns:1fr}body{padding:6px}main{padding:12px}}
+</style></head><body><main data-model-id="SLM-TOP20-PROB-EVENTS-R00" data-assessment="PUBLIC_EXPLORATION_NO_MASTERY">
+<h1>Hai biến cố trên cùng một xúc xắc</h1><p class="muted">Hãy chọn những mặt thuộc A hoặc B. Mô hình sẽ chỉ ra phần hợp, phần giao và kiểm xem hai biến cố xung khắc hay độc lập. <strong>Chỉ dùng với xúc xắc 6 mặt cân đối</strong>, nên mỗi kết quả 1–6 đồng khả năng.</p>
+<div class="cols">
+<section class="pane" aria-labelledby="aTitle"><h2 id="aTitle">Biến cố A</h2><p class="small">Mặc định: số chẵn {2,4,6}</p><div id="aSet" class="options"></div></section>
+<section class="pane" aria-labelledby="bTitle"><h2 id="bTitle">Biến cố B</h2><p class="small">Mặc định: số lớn hơn 3 {4,5,6}</p><div id="bSet" class="options"></div></section>
+</div>
+<div class="answer" aria-live="polite" id="answer"></div>
+<p class="small">Hai biến cố <strong>xung khắc</strong> khi giao rỗng. Hai biến cố <strong>độc lập</strong> khi P(A∩B)=P(A)·P(B). Nếu một biến cố có xác suất 0, có thể vừa xung khắc vừa độc lập; đừng suy diễn trường hợp đó thành quy luật cho hai biến cố có xác suất dương. Các công thức đang hiển thị là minh họa kiến thức, không phải kiểm tra chính thức.</p>
+<button type="button" id="reset">Trở về ví dụ A chẵn, B lớn hơn 3</button>
+</main><script>
+(function(){"use strict";
+var initialA=[2,4,6],initialB=[4,5,6],A=new Set(initialA),B=new Set(initialB);
+function $(id){return document.getElementById(id);}
+function sorted(s){return Array.from(s).sort(function(x,y){return x-y;});}
+function fmt(s){return "{"+sorted(s).join(",")+"}";}
+function render(){
+ var both=new Set(sorted(A).filter(function(x){return B.has(x);}));
+ var either=new Set(sorted(A).concat(sorted(B)));
+ var pA=A.size,pB=B.size,pAnd=both.size;
+ var disjoint=pAnd===0,independent=6*pAnd===pA*pB;
+ $("answer").textContent="Ω={1,2,3,4,5,6}. A="+fmt(A)+", B="+fmt(B)+". Giao A∩B="+fmt(both)+
+ ". Hợp A∪B="+fmt(either)+". P(A)="+pA+"/6, P(B)="+pB+"/6, P(A∩B)="+pAnd+"/6, P(A∪B)="+either.size+"/6."+
+ " Xung khắc: "+(disjoint?"Có":"Không")+
+ ". Độc lập theo P(A∩B)=P(A)P(B): "+(independent?"Có":"Không")+".";
+}
+function build(host,subset,initial){
+ var parent=$(host);parent.textContent="";
+ for(var i=1;i<=6;i++){
+  var label=document.createElement("label"),box=document.createElement("input"),v=i;
+  box.type="checkbox";box.value=String(v);box.checked=initial.includes(v);box.setAttribute("aria-label","Mặt "+v+" thuộc "+host[0].toUpperCase());
+  box.addEventListener("change",function(){var n=Number(this.value);if(this.checked)subset.add(n);else subset.delete(n);render();});
+  label.appendChild(box);label.appendChild(document.createTextNode("Mặt "+v));parent.appendChild(label);
+ }
+}
+function reset(){
+ A.clear();B.clear();initialA.forEach(function(x){A.add(x);});initialB.forEach(function(x){B.add(x);});
+ build("aSet",A,initialA);build("bSet",B,initialB);render();
+}
+$("reset").addEventListener("click",reset);
+reset();
+})();
+</script></body></html>
