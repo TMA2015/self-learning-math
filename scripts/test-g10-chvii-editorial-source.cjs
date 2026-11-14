@@ -50,7 +50,8 @@ const canonicalAnswerText=parts=>parts.map(block=>block
  .replace("**Chưa đủ thông tin trạm nào nhận trước** nên chưa thể chọn nhánh. Nếu quên điều kiện này, xem `HELP-G10-CHVII-HYPERBOLA-TR01`.",
  "**Chưa biết tín hiệu từ trạm A hay B đến máy thu trước**, nên chưa thể chọn nhánh.")
  .split("\n")
- .map(line=>normalizeDisplay(line.trim())).filter(line=>line&&line!==obsoleteAnswerNote).join("\n")).sort();
+ .map(line=>line.trim()).filter(line=>line&&line!==obsoleteAnswerNote)
+ .map(normalizeDisplay).join("\n")).sort();
 
 const specs={
  19:{count:7,helps:9,figures:2,examples:2,book:["2.1. Phương trình tổng quát của đường thẳng","2.2. Phương trình tham số của đường thẳng"]},
