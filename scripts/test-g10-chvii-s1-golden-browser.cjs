@@ -97,6 +97,17 @@ const specs={
      assert.equal(await blocks.nth(2).locator("[data-thpt-first-try-id], [data-thpt-help-id]").count(),0,
       tag+" cloned canonical item in worked examples");
      assert.equal(await blocks.nth(3).locator("[data-thpt-help-id]").count(),s.help,tag+" lost 5-step HELP");
+     const titles=await blocks.nth(3).locator("details.tip > summary").allInnerTexts();
+     assert.equal(titles.length,s.tries,tag+" one targeted remediation entry per Vận dụng");
+     assert.equal(new Set(titles.map(t=>t.trim())).size,s.tries,tag+" repeat D6 headings hide the relevant learner error");
+     assert(titles.every(t=>!t.includes("Tự khắc phục theo năm bước")),tag+" generic D6 labels returned");
+     assert(!/HELP-G10-CHVII-[A-Z0-9-]+/.test(await blocks.nth(0).innerText()),
+       tag+" machine HELP IDs leaked into learner-facing open comparisons");
+     if(n===20)assert(!/Hình bên cạnh/.test(await blocks.nth(2).innerText()),
+       tag+" worked example refers to nonexistent adjacent picture");
+     if(n===22)assert(!/B nhận trước|trạm nào nhận trước|A đến trước/.test(await blocks.nth(0).innerText()),
+       tag+" incorrect station as receiver wording remains");
+
      assert.equal(await article.locator("details.question[open],details.tip[open]").count(),0,
       tag+" any answer/help exposed before user action");
      await t.nth(0).click();
