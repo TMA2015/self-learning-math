@@ -88,6 +88,8 @@ Buổi hội chợ của lớp cần giải một chuỗi câu hỏi: chọn **m
 
 **Điều kiện và giới hạn:** Cần nêu rõ đây là **số** hay **mã**, chữ số đầu có bị cấm 0 không, có được lặp không, và ba vị trí có khác nhau không.
 
+**Ví dụ bổ trợ để phân biệt mã với số:** Với mã gồm hai kí tự được lấy từ {A,B,C,D} (có thể lặp) rồi một chữ số từ 0–9, kí tự đầu có thể là A và chữ số cuối có thể là 0. Số mã là 4×4×10=160. Đây là **mã**, không phải số tự nhiên có ba chữ số. Điều kiện đầu 0 vì thế không được áp từ bài lập số sang bài mã.
+
 **Ví dụ có suy luận – vì sao chọn phương pháp này?** Từ {0,1,2,3} lập số tự nhiên có **ba chữ số khác nhau**. Hàng trăm chọn từ 1,2,3: 3 cách; hàng chục còn 3 chữ số (có thể có 0): 3; hàng đơn vị còn 2: 2. Có 3×3×2=**18** số. Không tính cả chuỗi bắt đầu bằng 0.
 
 **Tự thử trước khi đối chiếu.** Từ {0,1,2,3,4} lập số tự nhiên có hai chữ số khác nhau. Có bao nhiêu số?
@@ -296,6 +298,36 @@ Muốn x² thì k=2 lần chọn −2. Hệ số C(4,2)(−2)²=6·4=**24**.
 
 **Nối sang bài kế:** Nhớ kiểm chính xác một kết quả cần đếm và điều kiện của nó trước khi dùng công thức.
 
+### 13. Nhị thức Newton để ước lượng tăng trưởng: không nhầm gần đúng với chính xác
+
+<!-- LESSON_ID: TOP19-M13; OUTCOME_ID: TOP19-O13; ORIGINAL_SGK_SKILL: G10-B25-BINOMIAL_APPROX_APPLICATION; S1_LESSON: G10-B25; S1_PRINT_PAGE: 75; SOURCE_ROLE: SGK_CORE_AUTHORITY; SGK_EXERCISES: 8.15_AND_8.16_ORIGINAL_CONTEXT_NOT_COPIED -->
+
+**Vì sao cần học?** Hội chợ muốn ước tính nhanh lượng đơn đặt hàng sau vài đợt tăng trưởng. Nhân lặp (1+r)^5 có thể tính chính xác bằng máy, nhưng đôi khi ta chỉ cần **ước lượng có lý do** và biết mình đang bỏ qua phần nào.
+
+**Hiểu bản chất trước công thức.** Nếu lượng ban đầu N₀ tăng tỉ lệ r (viết dạng số thập phân) ở cuối mỗi năm, sau 5 năm ta có N₅=N₀(1+r)^5. Nhị thức Newton cho (1+r)^5=1+5r+10r²+10r³+5r⁴+r⁵. Khi 0<r≪1, các hạng chứa r²,r³,… nhỏ hơn nhiều so với 5r. **Hai số hạng đầu** cho ước tính N₅≈N₀(1+5r), chứ không phải một đẳng thức chính xác.
+
+**Điều kiện và giới hạn:** r>-1 để hệ số tăng hằng năm không âm theo mô hình thực tế, và chỉ khi |r| nhỏ mới hy vọng bỏ qua các hạng bậc cao mà vẫn gần chính xác. Với r>0, các hạng bỏ đi đều dương, nên dùng hai số hạng đầu **ước lượng thấp hơn** số chính xác. Phải nêu rõ đơn vị số lượng, thời gian và giả thiết tỉ lệ mỗi năm như nhau.
+
+**Ví dụ có suy luận – vì sao chọn phương pháp này?** Một kho có 1 000 bộ dụng cụ, tăng 2% mỗi năm trong 5 năm, giả sử tăng theo hệ số đều. Chuyển 2% thành r=0,02. Ước lượng nhanh bằng hai số hạng đầu: 1000(1+5×0,02)=**1 100 bộ**. Tính cả nhị thức (hoặc máy) cho N₅=1000(1,02)^5≈**1 104,08** bộ; sai lệch ≈4,08 bộ. Giải thích sai lệch: 10r²+10r³+5r⁴+r⁵>0.
+
+**Tự thử trước khi đối chiếu.** Một kho ban đầu có 5 000 bộ dụng cụ, tăng 1% mỗi năm theo cùng tỉ lệ, trong 5 năm. Dùng **hai số hạng đầu** của (1+0,01)^5 để ước tính số bộ cuối kỳ và nêu vì sao đây không phải giá trị đúng tuyệt đối.
+
+<!-- ITEM_ID: THPT-TOP19-T13; CONTENT_VERSION: TOP19-R02; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP19-O13; ANSWER_REVEAL: OPT_IN_AFTER_TRY; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
+<details><summary>Mở lời giải sau khi tự thử</summary>
+
+r=0,01. Hai số hạng đầu là 1+5r=1,05. Do đó 5 000×1,05=**5 250 bộ** (ước tính). Các hạng bậc 2 trở lên đều dương nên số thực tế mô hình 5 000×1,01^5 lớn hơn 5 250 một ít.
+
+**Nếu chưa đúng (D6):** Nếu tính 5 000(1+0,01) mà bỏ mũ 5, em mới tính tăng một năm. Quay O09 để viết năm thừa số rồi đọc hệ số của r là C(5,1)=5. Nếu viết dấu bằng chính xác, hãy chỉ phần r² còn bị bỏ qua.
+
+</details>
+
+**Nối sang toàn Chuyên đề:** Em đã dùng quy tắc nhân trong đếm bước, tổ hợp trong chọn nhóm và chính số tổ hợp làm hệ số để ước lượng một mô hình thực tế. Không thay một ước lượng bằng kết quả chính xác khi đề yêu cầu độ sai số.
+
+
+### Mở rộng sau mạch SGK bắt buộc (tự chọn)
+
+Hai chặng tiếp theo giúp giải các bài SBT có lũy thừa `1/x` hoặc nhận biết tổng hệ số qua `P(1)`. Đây là phần **mở rộng**, không phải điều kiện tiên quyết để học Bài 25 trong SGK; có thể học sau khi em đã tự thử phần ước lượng ở `TOP19-O13`.
+
 ### 11. Số hạng không chứa x: từ đa thức đến mở rộng phân thức
 
 <!-- LESSON_ID: TOP19-M11; OUTCOME_ID: TOP19-O11; ORIGINAL_SGK_SKILL: G10-B25-CONSTANT_TERM; S1_LESSON: G10-B25; SOURCE_ROLE: SGK_CORE_POLYNOMIAL_CONSTANT_WITH_SBT_OPTIONAL_RECIPROCAL -->
@@ -325,7 +357,7 @@ Chọn \(-2\) từ cả năm thừa số, không chọn \(3x\) ở vị trí nà
 
 ### 12. Tổng hệ số và tam giác Pascal (vận dụng sau khai triển)
 
-<!-- LESSON_ID: TOP19-M12; OUTCOME_ID: TOP19-O12; ORIGINAL_SGK_SKILL: G10-B25-COEFFICIENT_SUM; S1_LESSON: G10-B25; SOURCE_ROLE: SGK_CORE_AUTHORITY; OPTIONAL_SCOPE -->
+<!-- LESSON_ID: TOP19-M12; OUTCOME_ID: TOP19-O12; ORIGINAL_SGK_SKILL: G10-B25-COEFFICIENT_SUM; S1_LESSON: G10-B25; SOURCE_ROLE: TOPIC_EXTENSION_OPTIONAL; OPTIONAL_SCOPE -->
 
 **Vì sao cần học?** Khi khai triển dài, cộng từng hệ số là việc nặng. Nhưng tổng hệ số của đa thức P(x) lại có một cách kiểm đơn giản: thay x=1 để mọi x^k trở thành 1.
 
@@ -348,31 +380,6 @@ Thay x=1: (1+2)^5=**243**.
 
 **Nối sang bài kế:** Thử nhìn lại một tình huống thực tế: từ quy tắc nhân tạo kết quả nhiều bước, từ không thứ tự suy ra tổ hợp, rồi tổ hợp trở thành hệ số trong khai triển.
 
-
-### 13. Nhị thức Newton để ước lượng tăng trưởng: không nhầm gần đúng với chính xác
-
-<!-- LESSON_ID: TOP19-M13; OUTCOME_ID: TOP19-O13; ORIGINAL_SGK_SKILL: G10-B25-BINOMIAL_APPROX_APPLICATION; S1_LESSON: G10-B25; S1_PRINT_PAGE: 75; SOURCE_ROLE: SGK_CORE_AUTHORITY; SGK_EXERCISES: 8.15_AND_8.16_ORIGINAL_CONTEXT_NOT_COPIED -->
-
-**Vì sao cần học?** Hội chợ muốn ước tính nhanh lượng đơn đặt hàng sau vài đợt tăng trưởng. Nhân lặp (1+r)^5 có thể tính chính xác bằng máy, nhưng đôi khi ta chỉ cần **ước lượng có lý do** và biết mình đang bỏ qua phần nào.
-
-**Hiểu bản chất trước công thức.** Nếu lượng ban đầu N₀ tăng tỉ lệ r (viết dạng số thập phân) ở cuối mỗi năm, sau 5 năm ta có N₅=N₀(1+r)^5. Nhị thức Newton cho (1+r)^5=1+5r+10r²+10r³+5r⁴+r⁵. Khi 0<r≪1, các hạng chứa r²,r³,… nhỏ hơn nhiều so với 5r. **Hai số hạng đầu** cho ước tính N₅≈N₀(1+5r), chứ không phải một đẳng thức chính xác.
-
-**Điều kiện và giới hạn:** r>-1 để hệ số tăng hằng năm không âm theo mô hình thực tế, và chỉ khi |r| nhỏ mới hy vọng bỏ qua các hạng bậc cao mà vẫn gần chính xác. Với r>0, các hạng bỏ đi đều dương, nên dùng hai số hạng đầu **ước lượng thấp hơn** số chính xác. Phải nêu rõ đơn vị số lượng, thời gian và giả thiết tỉ lệ mỗi năm như nhau.
-
-**Ví dụ có suy luận – vì sao chọn phương pháp này?** Một kho có 1 000 bộ dụng cụ, tăng 2% mỗi năm trong 5 năm, giả sử tăng theo hệ số đều. Chuyển 2% thành r=0,02. Ước lượng nhanh bằng hai số hạng đầu: 1000(1+5×0,02)=**1 100 bộ**. Tính cả nhị thức (hoặc máy) cho N₅=1000(1,02)^5≈**1 104,08** bộ; sai lệch ≈4,08 bộ. Giải thích sai lệch: 10r²+10r³+5r⁴+r⁵>0.
-
-**Tự thử trước khi đối chiếu.** Một kho ban đầu có 5 000 bộ dụng cụ, tăng 1% mỗi năm theo cùng tỉ lệ, trong 5 năm. Dùng **hai số hạng đầu** của (1+0,01)^5 để ước tính số bộ cuối kỳ và nêu vì sao đây không phải giá trị đúng tuyệt đối.
-
-<!-- ITEM_ID: THPT-TOP19-T13; CONTENT_VERSION: TOP19-R02; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP19-O13; ANSWER_REVEAL: OPT_IN_AFTER_TRY; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
-<details><summary>Mở lời giải sau khi tự thử</summary>
-
-r=0,01. Hai số hạng đầu là 1+5r=1,05. Do đó 5 000×1,05=**5 250 bộ** (ước tính). Các hạng bậc 2 trở lên đều dương nên số thực tế mô hình 5 000×1,01^5 lớn hơn 5 250 một ít.
-
-**Nếu chưa đúng (D6):** Nếu tính 5 000(1+0,01) mà bỏ mũ 5, em mới tính tăng một năm. Quay O09 để viết năm thừa số rồi đọc hệ số của r là C(5,1)=5. Nếu viết dấu bằng chính xác, hãy chỉ phần r² còn bị bỏ qua.
-
-</details>
-
-**Nối sang toàn Chuyên đề:** Em đã dùng quy tắc nhân trong đếm bước, tổ hợp trong chọn nhóm và chính số tổ hợp làm hệ số để ước lượng một mô hình thực tế. Không thay một ước lượng bằng kết quả chính xác khi đề yêu cầu độ sai số.
 
 
 ## 2. Luyện tập
@@ -519,6 +526,23 @@ Muốn x⁴ thì chọn −2 đúng một lần, 3x bốn lần. Hệ số C(5,1
 
 </details>
 
+### Luyện tập 13 — Ước lượng hai số hạng đầu trong tăng trưởng
+
+<!-- ITEM_ID: THPT-TOP19-P13; CONTENT_VERSION: TOP19-R02; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP19-O13; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
+
+Một kho ban đầu có 2 000 sản phẩm. Số sản phẩm tăng theo hệ số 2% mỗi năm trong 5 năm. **(a)** Dùng hai số hạng đầu của (1+0,02)^5 để ước lượng số sản phẩm. **(b)** Tính giá trị mô hình chính xác bằng máy (làm tròn đến 2 chữ số thập phân) và nhận xét ước lượng cao hay thấp.
+
+<details><summary>Tự đối chiếu lời giải từng bước</summary>
+
+(a) Với r=0,02, (1+r)^5≈1+5r=1,10; số ước lượng là 2 000×1,10=**2 200** sản phẩm. (b) Giá trị mô hình đầy đủ là 2 000×1,02^5=**2 208,1616064≈2 208,16** sản phẩm. Số ước lượng thấp hơn khoảng 8,16 sản phẩm vì phần bỏ qua 10r²+10r³+5r⁴+r⁵ dương.
+
+**D6 – Khắc phục lỗi thường gặp:** Nếu ra 2040, em chỉ tính 1 năm, cần hệ số 5r cho 5 năm. Nếu trừ 8,16 ra số khác, hãy xác định rõ “ước lượng thấp hơn” nghĩa là 2 200 nhỏ hơn 2 208,16.
+
+</details>
+
+
+**Bài tự chọn / mở rộng sau nội dung SGK:**
+
 ### Luyện tập 11 — Số hạng không chứa x: tìm số mũ bằng 0 (mở rộng)
 
 <!-- ITEM_ID: THPT-TOP19-P11; CONTENT_VERSION: TOP19-R02; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP19-O11; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
@@ -547,20 +571,6 @@ P(1)=(2+1)^4=3⁴=**81**. Kiểm cách khác: hệ số khai triển cộng lạ
 
 </details>
 
-
-### Luyện tập 13 — Ước lượng hai số hạng đầu trong tăng trưởng
-
-<!-- ITEM_ID: THPT-TOP19-P13; CONTENT_VERSION: TOP19-R02; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP19-O13; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
-
-Một kho ban đầu có 2 000 sản phẩm. Số sản phẩm tăng theo hệ số 2% mỗi năm trong 5 năm. **(a)** Dùng hai số hạng đầu của (1+0,02)^5 để ước lượng số sản phẩm. **(b)** Tính giá trị mô hình chính xác bằng máy (làm tròn đến 2 chữ số thập phân) và nhận xét ước lượng cao hay thấp.
-
-<details><summary>Tự đối chiếu lời giải từng bước</summary>
-
-(a) Với r=0,02, (1+r)^5≈1+5r=1,10; số ước lượng là 2 000×1,10=**2 200** sản phẩm. (b) Giá trị mô hình đầy đủ là 2 000×1,02^5=**2 208,1616064≈2 208,16** sản phẩm. Số ước lượng thấp hơn khoảng 8,16 sản phẩm vì phần bỏ qua 10r²+10r³+5r⁴+r⁵ dương.
-
-**D6 – Khắc phục lỗi thường gặp:** Nếu ra 2040, em chỉ tính 1 năm, cần hệ số 5r cho 5 năm. Nếu trừ 8,16 ra số khác, hãy xác định rõ “ước lượng thấp hơn” nghĩa là 2 200 nhỏ hơn 2 208,16.
-
-</details>
 
 ### Tự luận có lời giải và rubric — câu mới thuộc một thư viện canonical chung
 
