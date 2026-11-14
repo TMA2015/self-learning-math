@@ -164,6 +164,10 @@
 
     Hãy hình dung mái đi từ hai chân \((-a_x,0)\), \((a_x,0)\) lên đỉnh \((0,b_y)\); một thiết bị hình chữ nhật đặt giữa có hai mép tại \(x=\pm w/2\) và chiều cao h. Vì độ cao của nửa elip giảm khi \(|x|\) tăng từ 0 đến aₓ, vị trí cần kiểm là hai góc trên của thiết bị, không chỉ tâm. Trước khi tính độ hở, phải kiểm \(|w/2|\le a_x\) và chọn đúng nửa elip; kết luận chỉ nói về mặt cắt phẳng, thiết bị đặt cân giữa, không tự suy ra an toàn không gian ba chiều.
 
+    **Minh họa ứng dụng bằng dữ kiện độc lập:**
+
+    <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_CHVII_ELLIPSE_TRANSFER_D5_R00.svg" alt="Mái nửa elip rộng 20 m và khối rộng 14 m; độ hở nhỏ nhất hai mép khoảng 0,285 m, không đạt 0,8 m" loading="lazy"><figcaption>Hình minh họa độ hở theo phương đứng tại hai mép khối, không chỉ tại tâm.</figcaption></figure>
+
     **Em vận dụng.** Mái nửa elip rộng **12 m**, cao **4 m** tại tâm. Đặt O ở giữa nền, Ox dọc nền. (a) Viết phương trình elip đầy đủ và điều kiện miền mái. (b) Tại x=3 m, mái cao bao nhiêu? Tự làm rồi mở kết quả.
 
     ??? question "Đối chiếu"
@@ -189,6 +193,10 @@
     Nếu hai trạm phát cách nhau \(AB=2c\), tín hiệu truyền với tốc độ \(v\) và tới máy thu lệch nhau một khoảng thời gian \(\Delta t\), thì độ chênh độ dài quãng đường là \(v|\Delta t|=|PA-PB|=2a\). Bất đẳng thức tam giác cho biết \(|PA-PB|\le AB\): chênh lệch hai quãng đường **không thể lớn hơn** khoảng cách giữa hai trạm. Để được một **hypebol không suy biến**, cần điều kiện chặt \(0<2a<2c\). Nếu \(2a>2c\) thì dữ kiện không thể xảy ra; nếu \(2a=2c\), quỹ tích suy biến thành các tia thẳng hàng chứ không phải hai nhánh hypebol; nếu \(2a=0\), các vị trí cách đều hai trạm nằm trên đường trung trực.
 
     Từ \(|PA-PB|\) ta mới biết **hai nhánh khả dĩ**. Chỉ khi biết tín hiệu nào tới sớm hơn mới chọn được một nhánh; một cặp trạm không xác định duy nhất vị trí người nhận. Khi tính, cần nhất quán đơn vị chiều dài, vận tốc và thời gian.
+
+    **Minh họa ứng dụng bằng dữ kiện độc lập:**
+
+    <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_CHVII_HYPERBOLA_TRANSFER_D5_R00.svg" alt="Hypebol từ hai trạm A(-50;0), B(50;0), nhánh phải có B đến trước và PA trừ PB bằng 60 km" loading="lazy"><figcaption>Hình minh họa quỹ tích hai nhánh; B nhận trước chọn nhánh gần B, không phải một điểm duy nhất.</figcaption></figure>
 
     **Em vận dụng.** Hai trạm cách nhau 60 km, phát tín hiệu đồng thời; sóng truyền 100.000 km/s. Chênh thời gian tới máy thu là 0,0002 s. Tính `2a`, `c`, `b²` cho hypebol tương ứng và kiểm điều kiện có nghiệm hình học, rồi mở đối chiếu.
 
@@ -219,7 +227,7 @@
     #### Elip — trục lớn trùng \(Ox\)
 
 
-    <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_CHVII_ELLIPSE_TRANSFER_D5_R00.svg" alt="Mái nửa elip rộng 20 m và khối rộng 14 m; độ hở nhỏ nhất hai mép khoảng 0,285 m, không đạt 0,8 m" loading="lazy"><figcaption>Hình minh họa độ hở theo phương đứng tại hai mép khối, không chỉ tại tâm.</figcaption></figure>
+    
 
 
 
@@ -233,7 +241,7 @@
     #### Hypebol — trục thực trùng \(Ox\)
 
 
-    <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_CHVII_HYPERBOLA_TRANSFER_D5_R00.svg" alt="Hypebol từ hai trạm A(-50;0), B(50;0), nhánh phải có B đến trước và PA trừ PB bằng 60 km" loading="lazy"><figcaption>Hình minh họa quỹ tích hai nhánh; B nhận trước chọn nhánh gần B, không phải một điểm duy nhất.</figcaption></figure>
+    
 
 
 
