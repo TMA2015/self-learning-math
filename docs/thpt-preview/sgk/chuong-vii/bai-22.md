@@ -172,7 +172,7 @@
 
     ??? question "Đối chiếu"
 
-        Bán trục ngang 6, bán trục đứng 4: `x²/36+y²/16=1`, **y≥0**, |x|≤6. Tại x=3, `y=4√(1−9/36)=2√3≈3,464 m`. Không lấy y âm hoặc dùng a=12. Nếu sai, xem `HELP-G10-CHVII-ELLIPSE-TR01`.
+        Bán trục ngang 6, bán trục đứng 4: `x²/36+y²/16=1`, **y≥0**, |x|≤6. Tại x=3, `y=4√(1−9/36)=2√3≈3,464 m`. Không lấy y âm hoặc dùng a=12. 
 
 
     Ta có thể kiểm nghiệm thêm cách đọc hoành độ qua một mái che có số đo khác.
@@ -196,13 +196,13 @@
 
     **Minh họa ứng dụng bằng dữ kiện độc lập:**
 
-    <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_CHVII_HYPERBOLA_TRANSFER_D5_R00.svg" alt="Hypebol từ hai trạm A(-50;0), B(50;0), nhánh phải có B đến trước và PA trừ PB bằng 60 km" loading="lazy"><figcaption>Hình minh họa quỹ tích hai nhánh; B nhận trước chọn nhánh gần B, không phải một điểm duy nhất.</figcaption></figure>
+    <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_CHVII_HYPERBOLA_TRANSFER_D5_R00.svg" alt="Hypebol từ hai trạm A(-50;0), B(50;0), nhánh phải khi tín hiệu từ B đến máy thu trước; PA trừ PB bằng 60 km" loading="lazy"><figcaption>Hình minh họa hai nhánh: tín hiệu từ B đến máy thu trước thì chọn nhánh gần B, không xác định một điểm duy nhất.</figcaption></figure>
 
     **Em vận dụng.** Hai trạm cách nhau 60 km, phát tín hiệu đồng thời; sóng truyền 100.000 km/s. Chênh thời gian tới máy thu là 0,0002 s. Tính `2a`, `c`, `b²` cho hypebol tương ứng và kiểm điều kiện có nghiệm hình học, rồi mở đối chiếu.
 
     ??? question "Đối chiếu"
 
-        Hiệu quãng đường `vΔt=100000·0,0002=20 km`, nên `2a=20`, `a=10 km`, `2c=60`, `c=30 km`, `b²=c²−a²=900−100=800 km²`. Vì `0<20<60`, dữ kiện hình học phù hợp hypebol. **Chưa đủ thông tin trạm nào nhận trước** nên chưa thể chọn nhánh. Nếu quên điều kiện này, xem `HELP-G10-CHVII-HYPERBOLA-TR01`.
+        Hiệu quãng đường `vΔt=100000·0,0002=20 km`, nên `2a=20`, `a=10 km`, `2c=60`, `c=30 km`, `b²=c²−a²=900−100=800 km²`. Vì `0<20<60`, dữ kiện hình học phù hợp hypebol. **Chưa biết tín hiệu từ trạm A hay B đến máy thu trước**, nên chưa thể chọn nhánh.
 
 
     Tương tự, khi đã hiểu vì sao chênh lệch thời gian dẫn đến hypebol, ta xét thêm tình huống đủ dữ kiện để xác định nhánh của quỹ tích.
@@ -211,7 +211,7 @@
 
     1. **Đặt nguồn c:** AB=80km ⇒ c=40km; kiểm đơn vị. Chênh quãng đường `vΔt=100000·0,0004=40 km` ⇒ `2a=40km`, a=20km.
     2. **Kiểm hợp lệ:** 0<40<80, nên tồn tại hypebol thật. `b²=c²−a²=1600−400=1200` km².
-    3. **Phương trình toàn hypebol:** **`x²/400−y²/1200=1`**, gồm hai nhánh. Vì **A đến trước**, P gần A hơn ⇒ P phải ở **nhánh trái, x≤−20**.
+    3. **Phương trình toàn hypebol:** **`x²/400−y²/1200=1`**, gồm hai nhánh. Vì **tín hiệu từ A đến máy thu trước tín hiệu từ B**, P gần A hơn ⇒ P phải ở **nhánh trái, x≤−20**.
     4. **Giới hạn:** Không thể suy một tọa độ P chính xác từ một chênh thời gian; còn vô số điểm trên nhánh này. Hai trạm phải **đồng bộ thời điểm phát** để suy hiệu khoảng cách chỉ từ hiệu thời gian nhận.
 
     ### Thuật ngữ, kiến thức và kỹ năng
@@ -312,7 +312,7 @@
 
     <span id="help-g10-chvii-try18" data-thpt-help-id="HELP-G10-CHVII-TRY18"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "Elip: nhầm quan hệ các bán trục"
 
         1. **Nhận diện lỗi:** Nếu dùng c²=a²+b², em đã nhầm công thức hypebol; hãy ưu tiên xác định đúng các tiêu điểm trước khi tìm hiểu tâm sai.
 
@@ -326,7 +326,7 @@
 
     <span id="help-g10-chvii-try19" data-thpt-help-id="HELP-G10-CHVII-TRY19"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "Hypebol: nhầm công thức với elip"
 
         1. **Nhận diện lỗi:** Nếu lấy c=√7 hoặc vẽ oval kín, em đang áp dụng công thức và hình elip.
 
@@ -340,7 +340,7 @@
 
     <span id="help-g10-chvii-try20" data-thpt-help-id="HELP-G10-CHVII-TRY20"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "Tiệm cận: nhầm tỉ số và đồ thị"
 
         1. **Nhận diện lỗi:** Nếu lấy hệ số ±5/2, em đã đảo tỉ số a/b; nếu vẽ thẳng là đồ thị hypebol, em nhầm tiệm cận với đường cong.
 
@@ -354,7 +354,7 @@
 
     <span id="help-g10-chvii-try21" data-thpt-help-id="HELP-G10-CHVII-TRY21"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "Parabol: nhầm p và p/2"
 
         1. **Nhận diện lỗi:** Nếu đặt F=(4,0), em đã nhầm p với p/2; nếu không thử M, em chỉ kiểm công thức chứ chưa đọc đồ thị.
 
@@ -368,7 +368,7 @@
 
     <span id="help-g10-chvii-try22" data-thpt-help-id="HELP-G10-CHVII-TRY22"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "Parabol giao đường thẳng: thiếu nghiệm"
 
         1. **Nhận diện lỗi:** Nếu chỉ ghi y=2, em bỏ mất nghiệm âm vì căn của bình phương; nếu kết luận hai điểm theo hình mà không tính, chứng cứ chưa đủ.
 
@@ -382,7 +382,7 @@
 
     <span id="help-g10-chvii-try23" data-thpt-help-id="HELP-G10-CHVII-TRY23"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "Độ rộng parabol: quên hai phía"
 
         1. **Nhận diện lỗi:** Nếu đáp 10 cm, em chỉ lấy khoảng cách từ trục đối xứng đến một bên mép mà quên cả hai nhánh.
 
@@ -396,7 +396,7 @@
 
     <span id="help-g10-chvii-ellipse-tr01" data-thpt-help-id="HELP-G10-CHVII-ELLIPSE-TR01"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "Mái nửa elip: kiểm bán trục và độ hở"
 
         1. **Nhận diện:** sai bán trục, sai x mép, quên nửa elip, hay quên yêu cầu an toàn?  
 
@@ -410,7 +410,7 @@
 
     <span id="help-g10-chvii-hyperbola-tr01" data-thpt-help-id="HELP-G10-CHVII-HYPERBOLA-TR01"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "Tín hiệu hai trạm: kiểm chênh lệch và nhánh"
 
         1. **Nhận diện:** nhầm c với a, quên vΔt, sai nhánh hay cố lập hypebol từ chênh quãng đường quá lớn?  
 
