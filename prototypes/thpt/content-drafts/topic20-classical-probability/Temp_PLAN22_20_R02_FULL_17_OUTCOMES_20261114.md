@@ -143,6 +143,11 @@ P(không đen)=19/20; P(đen)=1/20>0 nên đen là hiếm, không phải không 
 
 #### Đếm kết quả bằng tổ hợp và sơ đồ cây
 
+![Sơ đồ cây hai lần tung đồng xu cân đối với bốn kết quả đồng khả năng](../../../../docs/assets/images/thpt/FIG-TOP20-G10-B27_TWO_TOSSES_TREE_WHITE_R00.svg)
+
+**Đọc cây:** Lượt một có N/S, từ mỗi lựa chọn mở thêm hai nhánh N/S của lượt hai. Bốn lá **NN, NS, SN, SS** là bốn kết quả **có thứ tự**, cùng xác suất 1/4 trong mô hình xu cân đối. Biến cố “đúng một ngửa” gồm **NS và SN**, nên P=2/4; không gộp hai đường đi khác nhau chỉ vì cùng số lần ngửa. Cây không khẳng định các lá luôn đồng khả năng khi cơ chế thử khác.
+
+
 Có hai kiểu phép thử cần phân biệt:
 
 - **Chọn đồng thời không xét thứ tự:** chọn \(k\) trong \(n\) vật khác nhau và mọi nhóm đồng khả năng, tổng số kết quả là \(\binom nk\). Số trường hợp thuận lợi phải được đếm cùng kiểu “nhóm” này.
