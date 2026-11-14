@@ -31,9 +31,9 @@
 
     ??? question "Đối chiếu"
 
-        **Đáp án:** (x+2)²+(y-1)²=9.
+        **Đáp án:** \((x+2)^2+(y-1)^2=9\).
 
-        **Lý do:** IM²=(x+2)²+(y-1)², và R²=3²=9. Cần R=3>0.
+        **Lý do:** \(IM^2=(x+2)^2+(y-1)^2\), và \(R^2=3^2=9\). Cần \(R=3>0\).
 
 
 
@@ -58,9 +58,9 @@
 
     ??? question "Đối chiếu"
 
-        **Đáp án:** (x−3)²+(y+2)²=5, tâm I(3,−2), bán kính √5.
+        **Đáp án:** \((x-3)^2+(y+2)^2=5\), tâm \(I(3,-2)\), bán kính \(\sqrt5\).
 
-        **Lý do:** x²−6x=(x−3)²−9, y²+4y=(y+2)²−4. Suy ra tổng hai bình phương bằng −8+9+4=5>0.
+        **Lý do:** \(x^2-6x=(x-3)^2-9\), \(y^2+4y=(y+2)^2-4\). Suy ra tổng hai bình phương bằng \(-8+9+4=5>0\).
 
 
 
@@ -82,9 +82,9 @@
 
     ??? question "Đối chiếu"
 
-        **Đáp án:** 3x+4y−24=0.
+        **Đáp án:** \(3x+4y-24=0\).
 
-        **Lý do:** IM=(3,4), IM²=9+16=25=R² nên M thuộc đường. Tiếp tuyến: 3(x−4)+4(y−3)=0 ⇒ 3x+4y−24=0.
+        **Lý do:** \(\overrightarrow{IM}=(3,4)\), \(IM^2=9+16=25=R^2\) nên \(M\) thuộc đường. Tiếp tuyến: \(3(x-4)+4(y-3)=0\Rightarrow 3x+4y-24=0\).
 
 
 
@@ -104,9 +104,9 @@
 
     ??? question "Đối chiếu"
 
-        **Đáp án:** Tâm I(1,1), bán kính √2, phương trình (x−1)²+(y−1)²=2.
+        **Đáp án:** Tâm \(I(1,1)\), bán kính \(\sqrt2\), phương trình \((x-1)^2+(y-1)^2=2\).
 
-        **Lý do:** Trung trực AB là x=1; trung trực AC là y=1. IA²=1²+1²=2; thử B và C đều cho tổng bình phương bằng 2.
+        **Lý do:** Trung trực \(AB\) là \(x=1\); trung trực \(AC\) là \(y=1\). \(IA^2=1^2+1^2=2\); thử \(B\) và \(C\) đều cho tổng bình phương bằng 2.
 
 
 
@@ -128,9 +128,9 @@
 
     ??? question "Đối chiếu"
 
-        **Đáp án:** Tiếp xúc; tiếp điểm T(1,−1).
+        **Đáp án:** Tiếp xúc; tiếp điểm \(T(1,-1)\).
 
-        **Lý do:** Khoảng cách từ I(1,2) đến y=−1 là |2−(−1)|=3=R. Chân đường vuông góc từ I xuống d là T(1,−1).
+        **Lý do:** Khoảng cách từ \(I(1,2)\) đến \(y=-1\) là \(\lvert2-(-1)\rvert=3=R\). Chân đường vuông góc từ \(I\) xuống \(d\) là \(T(1,-1)\).
 
 
 
