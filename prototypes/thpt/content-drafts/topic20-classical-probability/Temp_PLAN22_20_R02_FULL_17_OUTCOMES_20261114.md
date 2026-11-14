@@ -86,16 +86,16 @@ Không. Sáu phiếu vật lí đồng khả năng, P(đỏ)=2/6=1/3.
 
 
 
-**Vì sao cần chọn đúng mô hình?** Rút 2 vé nhãn A, 3 vé nhãn B thì chọn **vé vật lí** chứ không chọn một trong hai tên nhãn. **Bản chất:** mỗi vé riêng biệt có xác suất 1/5; nhãn A gom 2 kết quả nên có xác suất 2/5. **Ví dụ:** nếu chọn đều 1 trong 5 vé, P(B)=3/5. **Giới hạn:** chỉ coi các phiếu đồng khả năng khi cơ chế rút đều; không gộp nhãn rồi chia 1/2.
+**Vì sao gộp kết quả có thể làm hỏng đồng khả năng?** Hai lần tung đồng xu cân đối, độc lập tạo bốn chuỗi có thứ tự NN, NS, SN, SS đồng khả năng. Khi chỉ ghi **số mặt ngửa**, ta được ba nhãn 0, 1, 2 nhưng chúng tương ứng lần lượt với **1, 2, 1** chuỗi. **Bản chất:** chỉ các chuỗi sơ cấp đã xác nhận đồng khả năng, không phải ba nhãn sau khi gộp. **Ví dụ:** \(P(\text{đúng một ngửa})=2/4=1/2\), không phải 1/3. **Giới hạn:** trước khi dùng tỉ số đếm, phải chứng minh các kết quả sơ cấp được chọn có cùng xác suất.
 
-**Tự thử bổ sung theo outcome G10-B27-EQUIPROBABLE_MODELLING (phân biệt khỏi câu SGK đã có).** Một túi có 1 phiếu đỏ và 4 phiếu xanh khác nhau. Rút đều một phiếu. Xác suất nhãn “đỏ” có phải là 1/2 vì có hai màu?
+**Tự thử bổ sung theo outcome G10-B27-EQUIPROBABLE_MODELLING.** Tung hai đồng xu cân đối và độc lập. Nếu chỉ ghi số mặt ngửa 0, 1, 2 thì ba giá trị ấy có đồng khả năng không? Hãy viết các chuỗi sơ cấp và tính xác suất có đúng một mặt ngửa.
 
 <!-- ITEM_ID: THPT-TOP20-T11; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O06; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
 <details><summary>Mở lời giải sau khi tự thử</summary>
 
-**Giải:** Không. Không gian mẫu gồm 5 **phiếu vật lí** đồng khả năng, đúng 1 phiếu đỏ, P(đỏ)=1/5.
+**Giải:** Không. Không gian mẫu gồm NN, NS, SN, SS, mỗi chuỗi có xác suất 1/4. Số ngửa 0 ứng với SS, số ngửa 1 ứng với NS và SN, số ngửa 2 ứng với NN. Vì vậy ba giá trị **không** đồng khả năng; xác suất đúng một ngửa là \(2/4=1/2\).
 
-**D6 – Tự khắc phục:** Nếu ra 1/2, em lấy **màu** làm kết quả sơ cấp. Đặt tên phiếu R, B1,…,B4 rồi đếm.
+**D6 – Tự khắc phục:** Nếu ra 1/3, em đã đếm ba **nhãn** thay vì bốn chuỗi sơ cấp. Liệt kê đủ NN, NS, SN, SS rồi ghép mỗi chuỗi với số mặt ngửa tương ứng.
 
 </details>
 
@@ -255,9 +255,7 @@ A={2,4,6}, B={5,6}; giao={6}, hợp={2,4,5,6}.
 
 
 
-    **Hình áp dụng:** Dùng sơ đồ Venn nền trắng ngay phía trên để kiểm phần chung {4,6} và hợp {2,4,5,6}; không cần một hình thứ hai có đường dẫn cũ từ gói xác suất kết hợp.
-
-    **Đọc hình:** Vùng chồng là giao, gồm 6 và 12; toàn bộ hai hình tròn là hợp (8 kết quả), còn bốn số bên ngoài không thuộc hợp. Hình chỉ minh họa bài toán số 1–12, không mặc định xác suất của mọi tình huống đều đồng khả năng.
+**Ghi nhớ khi đối chiếu:** Hình Venn ở đây dùng \(\Omega=\{1,2,3,4,5,6\}\), giao \(\{4,6\}\) và hợp \(\{2,4,5,6\}\). Ví dụ chọn số từ 1 đến 12 ở đoạn trên là **mô hình khác**, không được lấy số 6, 12 trong ví dụ đó để đọc thành phần giao của hình xúc xắc.
 
 
 
@@ -465,13 +463,13 @@ Trong 40 vé khác nhau có một vé trúng. Phân biệt xác suất trúng v�
 
 <!-- ITEM_ID: THPT-TOP20-P06; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O06; CONTENT_VERSION: TOP20-R02; PUBLIC_FORMATIVE_NO_MASTERY -->
 
-Một hộp có 1 phiếu xanh và 5 phiếu đỏ khác nhau. Rút đều một phiếu. Tính P(nhãn đỏ); có được nói 1/2 vì có hai màu không?
+Gieo hai xúc xắc sáu mặt cân đối, phân biệt và độc lập. So sánh xác suất tổng hai mặt bằng 2 với xác suất tổng bằng 7. Có được coi 11 tổng từ 2 đến 12 là các kết quả đồng khả năng không?
 
 <details><summary>Mở lời giải sau khi tự làm</summary>
 
-**Giải:** Không. Ω gồm 6 phiếu vật lí đồng khả năng, P(đỏ)=5/6.
+**Giải:** Không. Mỗi **cặp có thứ tự** của hai xúc xắc là một kết quả sơ cấp; có \(6\cdot6=36\) cặp đồng khả năng. Tổng 2 chỉ có (1,1), nên \(P(S=2)=1/36\). Tổng 7 gồm (1,6),(2,5),(3,4),(4,3),(5,2),(6,1), nên \(P(S=7)=6/36=1/6\). Hai tổng không đồng khả năng.
 
-**D6 – Lỗi cần sửa:** Ghi từng phiếu trước, không lấy hai nhãn màu làm hai kết quả bằng nhau.
+**D6 – Lỗi cần sửa:** Nếu nói hai xác suất đều bằng 1/11, em đã gộp nhiều cặp khác nhau thành **nhãn tổng** và ngộ nhận 11 nhãn đồng khả năng. Hãy vẽ bảng 6×6, khoanh từng cặp tạo tổng 2 hoặc 7.
 
 </details>
 
@@ -507,13 +505,13 @@ Túi có 2 bóng đỏ và 4 bóng xanh khác nhau. Chọn đều 2 bóng cùng 
 
 <!-- ITEM_ID: THPT-TOP20-P09; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O09; CONTENT_VERSION: TOP20-R02; PUBLIC_FORMATIVE_NO_MASTERY -->
 
-Tung một đồng xu cân đối ba lần độc lập. Xác suất đúng một mặt sấp là bao nhiêu nếu xét các chuỗi có thứ tự?
+Tung một đồng xu cân đối ba lần độc lập. Vẽ cây ba tầng hoặc liệt kê chuỗi có thứ tự để tính xác suất **lượt đầu và lượt cuối đều ngửa**, không giới hạn lượt ở giữa.
 
 <details><summary>Mở lời giải sau khi tự làm</summary>
 
-**Giải:** Có 8 chuỗi đồng khả năng; đúng một S là SNN, NSN, NNS (3), P=3/8.
+**Giải:** Có \(2^3=8\) chuỗi đồng khả năng. Lượt đầu và cuối ngửa cho **NNN và NSN**, tức 2 chuỗi; xác suất \(2/8=1/4\). Kết quả ở lượt giữa có thể ngửa hoặc sấp.
 
-**D6 – Lỗi cần sửa:** Nếu đếm bốn loại “0,1,2,3 sấp” là đồng khả năng, hãy vẽ cây ba tầng.
+**D6 – Lỗi cần sửa:** Nếu chỉ đếm NNN, em đã tự áp thêm điều kiện “lượt giữa cũng ngửa”. Nếu gộp chuỗi theo số lần ngửa, em mất thông tin về vị trí; hãy giữ cả ba lượt trên mỗi lá cây.
 
 </details>
 
@@ -648,7 +646,7 @@ Có 8 phiếu phân biệt, 3 phiếu đỏ và 5 phiếu xanh. Chọn đều m�
 - Chọn biến cố đối hai phiếu xanh với C(5,2)=10 — **1 điểm**.
 - Tính 1−10/28=9/14 và diễn giải ít nhất một đỏ — **1 điểm**.
 
-**D6:** Nếu ra 6/56 hoặc 3/56, em đã dùng cặp có thứ tự ở một vế nhưng nhóm không thứ tự ở vế kia. Hãy liệt kê mẫu nhỏ 4 phiếu chọn 2 và phân biệt AB với BA, rồi quay O07 → T07/P07 trước khi làm lại. Nếu tính “ít nhất một đỏ” bằng cách lấy 1−P(đúng một đỏ), hãy viết biến cố đối **không có đỏ** = hai phiếu xanh, tính C(5,2)/C(8,2) rồi đối chiếu O08 → T08/P08.
+**D6:** Nếu ra **3/56** hoặc **6/28**, em đã trộn quy ước đếm: tử số là nhóm không thứ tự còn mẫu số là cặp có thứ tự, hoặc ngược lại. **Chú ý:** \(6/56=3/28\) vẫn là đáp án **đúng**, nếu đếm nhất quán 6 cặp đỏ có thứ tự trong tổng 56 cặp có thứ tự. Hãy thử liệt kê bốn phiếu chọn hai để phân biệt (A,B) với (B,A), rồi ôn đúng năng lực đếm theo nhóm tại O07 → **T04/P07** trước khi làm lại. Nếu tính “ít nhất một đỏ” bằng cách lấy 1−P(đúng một đỏ), hãy viết biến cố đối **không có đỏ** = hai phiếu xanh, tính C(5,2)/C(8,2) rồi đối chiếu O08 → T08/P08.
 
 </details>
 
