@@ -29,9 +29,9 @@
 
     ??? question "Đối chiếu"
 
-        **Đáp án:** Có, vì n·u=2(-3)+3(2)=0 và u≠(0,0).
+        **Đáp án:** Có, vì \(\vec n\cdot\vec u=2(-3)+3(2)=0\) và \(\vec u\ne(0,0)\).
 
-        **Lý do:** Tích vô hướng bằng 0 chứng minh u vuông góc với pháp tuyến n, tức song song với đường thẳng d; u không phải vectơ không.
+        **Lý do:** Tích vô hướng bằng 0 chứng minh \(\vec u\) vuông góc với pháp tuyến \(\vec n\), tức song song với đường thẳng \(d\); \(\vec u\) không phải vectơ không.
 
 
 
@@ -53,9 +53,9 @@
 
     ??? question "Đối chiếu"
 
-        **Đáp án:** 2(x-1)-(y-3)=0 hay 2x-y+1=0.
+        **Đáp án:** \(2(x-1)-(y-3)=0\) hay \(2x-y+1=0\).
 
-        **Lý do:** AM=(x-1,y-3), n·AM=2(x-1)-(y-3); thế A được 0. Không tự đảo vai trò n với vectơ chỉ phương.
+        **Lý do:** \(\overrightarrow{AM}=(x-1,y-3)\), \(\vec n\cdot\overrightarrow{AM}=2(x-1)-(y-3)\); thế \(A\) được 0. Không tự đảo vai trò \(\vec n\) với vectơ chỉ phương.
 
 
 
@@ -75,9 +75,9 @@
 
     ??? question "Đối chiếu"
 
-        **Đáp án:** x=1-2t, y=-1+3t (t∈ℝ).
+        **Đáp án:** \(x=1-2t,\ y=-1+3t\) (\(t\in\mathbb R\)).
 
-        **Lý do:** Khi t=0 thu A; khi t=1 thu A+u=(-1,2). Mọi điểm thuộc đường có độ dời t·u.
+        **Lý do:** Khi \(t=0\) thu \(A\); khi \(t=1\) thu \(A+\vec u=(-1,2)\). Mọi điểm thuộc đường có độ dời \(t\vec u\).
 
 
 
@@ -97,9 +97,9 @@
 
     ??? question "Đối chiếu"
 
-        **Đáp án:** x-y+3=0.
+        **Đáp án:** \(x-y+3=0\).
 
-        **Lý do:** AB=(3,3)≠0, chọn n=(1,-1). Qua A: (x+1)-(y-2)=0 ⇒ x-y+3=0; thế B: 2-5+3=0.
+        **Lý do:** \(\overrightarrow{AB}=(3,3)\ne(0,0)\), chọn \(\vec n=(1,-1)\). Qua \(A\): \((x+1)-(y-2)=0\Rightarrow x-y+3=0\); thế \(B\): \(2-5+3=0\).
 
 
 
@@ -119,7 +119,7 @@
 
     ??? question "Đối chiếu"
 
-        **Đáp án:** M thuộc d vì 2-3+1=0; N không thuộc vì 4-3+1=2.
+        **Đáp án:** \(M\) thuộc \(d\) vì \(2-3+1=0\); \(N\) không thuộc vì \(4-3+1=2\).
 
         **Lý do:** Điểm thuộc là nghiệm của phương trình theo cặp tọa độ. Đây là phép thử hai lần độc lập.
 
@@ -143,9 +143,9 @@
 
     ??? question "Đối chiếu"
 
-        **Đáp án:** Giao I(3,1); hai đường vuông góc.
+        **Đáp án:** Giao \(I(3,1)\); hai đường vuông góc.
 
-        **Lý do:** Cộng hai phương trình được 2x=6 ⇒ x=3, y=1. Pháp tuyến (1,1) và (1,-1) có tích vô hướng 1-1=0.
+        **Lý do:** Cộng hai phương trình được \(2x=6\Rightarrow x=3,\ y=1\). Pháp tuyến \((1,1)\) và \((1,-1)\) có tích vô hướng \(1-1=0\).
 
 
 
@@ -165,9 +165,9 @@
 
     ??? question "Đối chiếu"
 
-        **Đáp án:** V(t)=2t+5, V(3)=11.
+        **Đáp án:** \(V(t)=2t+5,\ V(3)=11\).
 
-        **Lý do:** Hệ số góc (9-5)/(2-0)=2, giá trị tại t=0 là 5. Đây là phép ngoại suy t=3, chỉ hợp lý nếu giả thiết tăng đều vẫn đúng.
+        **Lý do:** Hệ số góc \((9-5)/(2-0)=2\), giá trị tại \(t=0\) là 5. Đây là phép ngoại suy \(t=3\), chỉ hợp lý nếu giả thiết tăng đều vẫn đúng.
 
 
 
