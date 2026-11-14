@@ -1,0 +1,251 @@
+# BÁO CÁO PHẢN BIỆN HỌC THUẬT VÀ SƯ PHẠM ĐỘC LẬP
+
+**Gói kiểm toán:** `G10-SGK-CHIII-PED-BRIDGE-R02-20261104` (Toán 10 - Chương III: Giá trị lượng giác của một góc từ $0^\circ$ đến $180^\circ$. Hệ thức lượng trong tam giác)  
+**Bộ chuẩn áp dụng duy nhất:** `SLM-THPT-QUALITY-ONE v1.2.0` (Khung tiêu chuẩn Q01–Q18)  
+**Đơn vị thực hiện:** NotebookLM Independent Reviewer (Phản biện học thuật & Sư phạm độc lập)  
+**Ngày thực hiện:** 04/11/2026  
+
+---
+
+### 1. NGUỒN CƠ SỞ VÀ PHẠM VI AUDIT (SOURCE RECEIPT)
+
+#### 1.1 Bộ Permanent Sources THPT v2.1 (Đã chọn đúng 5 tài liệu v2.1)
+1. `01_THPT_MASTER_PLAN_v2.1.md`
+2. `02_THPT_NOTEBOOKLM_INDEPENDENT_REVIEW_RULES_v2.1.md`
+3. `03_THPT_ACADEMIC_SOURCES_AND_DEPTH_AUDIT_v2.1.md`
+4. `04_THPT_GOLDEN_LEARNING_ARCHITECTURE_v2.1.md`
+5. `05_THPT_CANONICAL_EXERCISE_AND_ID_CONTRACT_v2.1.md`
+
+#### 1.2 Nguồn gốc SGK/SBT S1 (KNTT Toán 10 Tập Một — Chương III)
+* **SGK Toán 10 Tập Một (KNTT):**
+  * **Bài 5 (Giá trị lượng giác của một góc từ \\(0^\circ\\) đến \\(180^\circ\\)):** Trang in 33–37.
+  * **Bài 6 (Hệ thức lượng trong tam giác):** Trang in 38–43.
+  * **Bài tập cuối Chương III:** Trang in 44–45.
+  * *SHA256 PDF SGK:* `3cbb335780dc0f2f4a034a55eb542e3bbe67693412b10a90ca1dffe9ea50eac2`
+* **SBT Toán 10 Tập Một (KNTT):**
+  * **Bài 5:** Trang in 29–33.
+  * **Bài 6:** Trang in 34–39.
+  * **Bài tập cuối Chương III:** Trang in 40–44.
+  * *SHA256 PDF SBT:* `2b1b98665b2c5cccb99f6699a43cbf71b8b2dfc63bdaec759a7b1c51778e2fa1`
+
+#### 1.3 Hồ sơ học liệu R02 đang kiểm toán
+* **Tệp học liệu chính:** `Temp_G10_CHIII_PED_R02_FULL_CHAPTER_REVIEW_20261104.md` (28,959 bytes)
+* **Base R01 Source Frozen Git Blob:** `6320aeaa89bd51c514b07461e01fad5e3aca833f`
+* **Base R01 Review Receipt Blob:** `3fb823c4353d368ae5a9c14f03c7309933d47e6f`
+
+---
+
+### 2. DANH SÁCH MÃ ĐƯỢC REVIEW (REVIEWED_IDS)
+
+* **LESSON_IDs (2 bài):** `G10-SGK-B05`, `G10-SGK-B06`
+* **OUTCOME_IDs (10 outcomes — 100% CORE_KEEP):**
+  * `G10-B05-UNIT_SEMICIRCLE` (`CORE_KEEP`)
+  * `G10-B05-SPECIAL_ANGLES` (`CORE_KEEP`)
+  * `G10-B05-SIGN_DOMAIN` (`CORE_KEEP`)
+  * `G10-B05-SUPPLEMENTARY` (`CORE_KEEP`)
+  * `G10-B05-IDENTITIES` (`CORE_KEEP`)
+  * `G10-B06-COSINE_RULE` (`CORE_KEEP`)
+  * `G10-B06-SINE_RULE` (`CORE_KEEP`)
+  * `G10-B06-AREA_SIN` (`CORE_KEEP`)
+  * `G10-B06-HERON` (`CORE_KEEP`)
+  * `G10-B06-APPLICATION` (`CORE_KEEP`)
+* **FIRST_TRY ITEM_IDs (10 câu Tự thử chẩn đoán mới):**
+  * `THPT-G10-CHIII-TRY01` đến `THPT-G10-CHIII-TRY10`
+* **HELP_IDs kế thừa (4 thẻ HELP D6 R01):**
+  * `HELP-G10-B05-01`, `HELP-G10-B05-02`, `HELP-G10-B06-01`, `HELP-G10-B06-02`
+* **SVG_IDs kế thừa (2 sơ đồ R01):**
+  * `FIG-G10-B05-01` (Nửa đường tròn đơn vị), `FIG-G10-B06-01` (Tam giác và hệ thức lượng)
+
+---
+
+### 3. ĐÁNH GIÁ CHI TIẾT HỌC THUẬT & SƯ PHẠM THEO TỪNG OUTCOME (10 OUTCOMES)
+
+#### BÀI 05: GIÁ TRỊ LƯỢNG GIÁC CỦA MỘT GÓC TỪ 0° ĐẾN 180° (G10-SGK-B05)
+
+##### 1. `G10-B05-UNIT_SEMICIRCLE` (Mô hình nửa đường tròn đơn vị)
+* **Item ID:** `THPT-G10-CHIII-TRY01` | **Placement:** `SGK_PRE_CORE_FIRST_TRY` | **Role:** `PUBLIC_FORMATIVE_DIAGNOSTIC_UNSCORED`
+* **Cầu nối PED1–PED5:**
+  * **WHY (PED1):** Dùng tọa độ \\((x,y)\\) mô tả vị trí đầu bán kính quay trên nửa đường tròn đơn vị thay vì đo mắt.
+  * **PRE (PED2):** Hệ \\(Oxy\\), nửa mặt phẳng \\(y \ge 0\\), đường tròn \\(x^2+y^2=1\\), góc \\(\alpha\\) đo từ \\(Ox\\) dương (\\(0^\circ \le \alpha \le 180^\circ\\)).
+  * **MEANING (PED3):** Hoành độ \\(x = \cos \alpha\\), tung độ \\(y = \sin \alpha\\). Hình chiếu vuông góc giải thích trực giác bản chất lượng giác.
+  * **READING_VISUAL (PED4):** Đọc điểm \\(M\\) ở \\(120^\circ\\) trên `FIG-G10-B05-01` (\\(x<0, y>0\\)). Khi \\(\alpha=180^\circ\\), \\(M \in Ox\\) âm.
+  * **METHOD (PED5):** Nhận diện vị trí và dấu hình chiếu trước khi tính; giới hạn \\(0^\circ \le \alpha \le 180^\circ\\).
+* **Câu Tự thử & Lời giải (PED6):**
+  * *Đề bài:* Trên nửa đường tròn đơn vị, khi \\(\alpha=180^\circ\\), điểm \\(M\\) có tọa độ gì? Tìm \\(\sin 180^\circ, \cos 180^\circ\\).
+  * *Đáp án canonical:* \\(M(-1,0) \implies \sin 180^\circ = 0, \cos 180^\circ = -1\\).
+  * *D6 Remediation:* Trỏ về `HELP-G10-B05-01` và `THPT-G10-B05-C01`.
+* **Đánh giá Toán học & Sư phạm:** `ACADEMIC PASS` | `PEDAGOGICAL PASS`
+
+##### 2. `G10-B05-SPECIAL_ANGLES` (Các góc đặc biệt & tính đối xứng)
+* **Item ID:** `THPT-G10-CHIII-TRY02`
+* **Cầu nối PED1–PED5:**
+  * **WHY (PED1):** Tính đối xứng qua trục \\(Oy\\) giải thích vì sao \\(45^\circ\\) và \\(135^\circ\\) có cùng tung độ nhưng trái dấu hoành độ.
+  * **PRE (PED2):** \\(\sin 45^\circ = \cos 45^\circ = \frac{\sqrt{2}}{2}\\); điểm đối xứng qua \\(Oy\\) có cùng \\(y\\), hoành độ đổi dấu.
+  * **MEANING (PED3):** \\(135^\circ\\) đối xứng \\(45^\circ\\) qua \\(Oy \implies \sin 135^\circ = \sin 45^\circ = \frac{\sqrt{2}}{2}\\), \\(\cos 135^\circ = -\cos 45^\circ = -\frac{\sqrt{2}}{2}\\).
+  * **READING_VISUAL (PED4):** Đọc điểm ứng với góc tù ở bên trái \\(Oy\\) trên `FIG-G10-B05-01`.
+  * **METHOD (PED5):** Quy về góc tham chiếu nhọn (\\(30^\circ, 45^\circ, 60^\circ\\)) và xét dấu theo vùng nửa đường tròn.
+* **Câu Tự thử & Lời giải (PED6):**
+  * *Đề bài:* Không dùng máy tính, tính \\(\sin 135^\circ\\) và \\(\cos 135^\circ\\).
+  * *Đáp án canonical:* \\(\sin 135^\circ = \frac{\sqrt{2}}{2}, \cos 135^\circ = -\frac{\sqrt{2}}{2}\\).
+  * *D6 Remediation:* Trỏ về `HELP-G10-B05-01` và `THPT-G10-B05-P03`.
+* **Đánh giá Toán học & Sư phạm:** `ACADEMIC PASS` | `PEDAGOGICAL PASS`
+
+##### 3. `G10-B05-SIGN_DOMAIN` (Dấu và miền xác định của tan, cot)
+* **Item ID:** `THPT-G10-CHIII-TRY03`
+* **Cầu nối PED1–PED5:**
+  * **WHY (PED1):** Tỉ số \\(\tan \alpha = \sin \alpha / \cos \alpha\\) đòi hỏi mẫu \\(\cos \alpha \ne 0\\); hiểu điều kiện xác định tránh chia cho 0.
+  * **PRE (PED2):** Mẫu số khác 0; trên nửa đường tròn \\(\sin \alpha \ge 0\\), \\(\cos \alpha\\) có thể âm, bằng 0, hoặc dương.
+  * **MEANING (PED3):** \\(\tan \alpha = \frac{\sin \alpha}{\cos \alpha}\\) (\\(\alpha \ne 90^\circ\\)); \\(\cot \alpha = \frac{\cos \alpha}{\sin \alpha}\\) (\\(\alpha \ne 0^\circ, 180^\circ\\)).
+  * **READING_VISUAL (PED4):** \\(M(1,0)\\) tại \\(0^\circ \implies \tan 0^\circ = 0, \cot 0^\circ\\) không xác định; \\(M(0,1)\\) tại \\(90^\circ \implies \tan 90^\circ\\) không xác định, \\(\cot 90^\circ = 0\\).
+  * **METHOD (PED5):** Kiểm tra điều kiện mẫu khác 0 trước khi lập tỉ số.
+* **Câu Tự thử & Lời giải (PED6):**
+  * *Đề bài:* Trong $\tan 0^\circ, \cot 0^\circ, \tan 90^\circ, \cot 90^\circ$, giá trị nào bằng 0, giá trị nào không xác định?
+  * *Đáp án canonical:* $\tan 0^\circ = 0, \cot 90^\circ = 0$; $\cot 0^\circ$ và $\tan 90^\circ$ không xác định (mẫu bằng 0).
+  * *D6 Remediation:* Trỏ về `HELP-G10-B05-02` và `THPT-G10-B05-C02`.
+* **Đánh giá Toán học & Sư phạm:** `ACADEMIC PASS` | `PEDAGOGICAL PASS`
+
+##### 4. `G10-B05-SUPPLEMENTARY` (Giá trị lượng giác của hai góc bù nhau)
+* **Item ID:** `THPT-G10-CHIII-TRY04`
+* **Cầu nối PED1–PED5:**
+  * **WHY (PED1):** Quan hệ giữa góc nhọn $\alpha$ và góc tù bù với nó $180^\circ - \alpha$.
+  * **PRE (PED2):** Tổng hai góc bằng $180^\circ$, đối xứng qua $Oy$.
+  * **MEANING (PED3):** $\sin(180^\circ - \alpha) = \sin \alpha$, $\cos(180^\circ - \alpha) = -\cos \alpha$, $\tan(180^\circ - \alpha) = -\tan \alpha$, $\cot(180^\circ - \alpha) = -\cot \alpha$.
+  * **READING_VISUAL (PED4):** Đọc cặp điểm $40^\circ / 140^\circ$ đối xứng qua $Oy$ trên `FIG-G10-B05-01`.
+  * **METHOD (PED5):** Nhận diện tổng $180^\circ$, giữ nguyên $\sin$, đổi dấu $\cos, \tan, \cot$.
+* **Câu Tự thử & Lời giải (PED6):**
+  * *Đề bài:* So sánh $\sin, \cos, \tan, \cot$ của $40^\circ$ và $140^\circ$.
+  * *Đáp án canonical:* $\sin 140^\circ = \sin 40^\circ, \cos 140^\circ = -\cos 40^\circ, \tan 140^\circ = -\tan 40^\circ, \cot 140^\circ = -\cot 40^\circ$.
+  * *D6 Remediation:* Trỏ về `HELP-G10-B05-01` và `THPT-G10-B05-P01`.
+* **Đánh giá Toán học & Sư phạm:** `ACADEMIC PASS` | `PEDAGOGICAL PASS`
+
+##### 5. `G10-B05-IDENTITIES` (Các hệ thức lượng giác cơ bản)
+* **Item ID:** `THPT-G10-CHIII-TRY05`
+* **Cầu nối PED1–PED5:**
+  * **WHY (PED1):** Tính một giá trị lượng giác khi biết giá trị khác nhờ Pitago $x^2+y^2=1$.
+  * **PRE (PED2):** $\sin^2 \alpha + \cos^2 \alpha = 1$; góc tù ($90^\circ < \alpha < 180^\circ$) có $\sin \alpha > 0$, $\cos \alpha < 0$.
+  * **MEANING (PED3):** Từ $\cos \alpha$, tính $\sin^2 \alpha = 1 - \cos^2 \alpha$, lấy dấu $\sin \alpha > 0$, sau đó tính $\tan \alpha = \sin \alpha / \cos \alpha$.
+  * **READING_VISUAL (PED4):** Tam giác vuông tạo bởi $M$ trên nửa đường tròn đơn vị.
+  * **METHOD (PED5):** Áp dụng Pitago, chọn đúng dấu từ khoảng góc.
+* **Câu Tự thử & Lời giải (PED6):**
+  * *Đề bài:* Cho góc tù $\alpha$ có $\cos \alpha = -5/13$. Tính $\sin \alpha$ và $\tan \alpha$.
+  * *Đáp án canonical:* $\sin^2 \alpha = 1 - 25/169 = 144/169 \implies \sin \alpha = 12/13$ (do $\sin \alpha > 0$); $\tan \alpha = (12/13) / (-5/13) = -12/5$.
+  * *D6 Remediation:* Trỏ về `HELP-G10-B05-02` và `THPT-G10-B05-P02`.
+* **Đánh giá Toán học & Sư phạm:** `ACADEMIC PASS` | `PEDAGOGICAL PASS`
+
+---
+
+#### BÀI 06: HỆ THỨC LƯỢNG TRONG TAM GIÁC (G10-SGK-B06)
+
+##### 6. `G10-B06-COSINE_RULE` (Định lý côsin trong tam giác)
+* **Item ID:** `THPT-G10-CHIII-TRY06`
+* **Cầu nối PED1–PED5:**
+  * **WHY (PED1):** Mở rộng định lý Pitago cho tam giác không vuông: $a^2 = b^2 + c^2 - 2bc \cos A$.
+  * **PRE (PED2):** Tam giác $ABC$ không suy biến ($a,b,c > 0$, $a < b+c$); ôn $\cos$ góc tù âm.
+  * **MEANING (PED3):** Số hạng điều chỉnh $-2bc \cos A$. Khi $A > 90^\circ \implies \cos A < 0 \implies -2bc \cos A > 0$, làm cạnh đối diện dài hơn.
+  * **READING_VISUAL (PED4):** Góc $A$ xen giữa hai cạnh $b,c$, cạnh đối diện $a$ (`FIG-G10-B06-01`).
+  * **METHOD (PED5):** Dùng cho trường hợp SAS (2 cạnh và góc xen giữa) hoặc SSS (3 cạnh tìm góc).
+* **Câu Tự thử & Lời giải (PED6):**
+  * *Đề bài:* Tam giác có $b=c=5, A=120^\circ$. Tính $a$.
+  * *Đáp án canonical:* $a^2 = 25 + 25 - 2(5)(5)\cos 120^\circ = 50 - 50(-1/2) = 75 \implies a = 5\sqrt{3}$.
+  * *D6 Remediation:* Trỏ về `HELP-G10-B06-01` và `THPT-G10-B06-C01`.
+* **Đánh giá Toán học & Sư phạm:** `ACADEMIC PASS` | `PEDAGOGICAL PASS`
+
+##### 7. `G10-B06-SINE_RULE` (Định lý sin và bán kính ngoại tiếp $R$)
+* **Item ID:** `THPT-G10-CHIII-TRY07`
+* **Cầu nối PED1–PED5:**
+  * **WHY (PED1):** Tính cạnh/góc và bán kính $R$ thông qua tỉ số $\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R$.
+  * **PRE (PED2):** Tổng 3 góc bằng $180^\circ$, $\sin A, \sin B, \sin C > 0$, $R > 0$.
+  * **MEANING (PED3):** Tỉ số giữa cạnh và sin góc đối diện không đổi và bằng $2R$.
+  * **READING_VISUAL (PED4):** Nhận diện các cặp cạnh-góc đối diện $A-a, B-b, C-c$.
+  * **METHOD (PED5):** Dùng cho trường hợp ASA, AAS; cẩn trọng với SSA.
+* **Câu Tự thử & Lời giải (PED6):**
+  * *Đề bài:* Tam giác có $A=30^\circ, a=5$. Tính bán kính $R$. Chỉ với $A=30^\circ, a=5$ có xác định duy nhất các góc $B,C$ không?
+  * *Đáp án canonical:* $2R = a / \sin A = 5 / (1/2) = 10 \implies R = 5$. Không xác định duy nhất $B,C$ vì mới chỉ biết $B+C=150^\circ$.
+  * *D6 Remediation:* Trỏ về `HELP-G10-B06-01` và `THPT-G10-B06-P01`.
+* **Đánh giá Toán học & Sư phạm:** `ACADEMIC PASS` | `PEDAGOGICAL PASS`
+
+##### 8. `G10-B06-AREA_SIN` (Các công thức diện tích tam giác)
+* **Item ID:** `THPT-G10-CHIII-TRY08`
+* **Cầu nối PED1–PED5:**
+  * **WHY (PED1):** Tính diện tích tam giác khi không có sẵn đường cao $h_a$.
+  * **PRE (PED2):** $S = \frac{1}{2}bc \sin A = \frac{abc}{4R} = pr$; nửa chu vi $p = (a+b+c)/2$, $r > 0$.
+  * **MEANING (PED3):** Nối các công thức diện tích theo dữ kiện góc, bán kính $R$, $r$.
+  * **READING_VISUAL (PED4):** Đường cao $h_c = b \sin A$ trong tam giác.
+  * **METHOD (PED5):** Chọn công thức phù hợp dữ kiện giả thiết.
+* **Câu Tự thử & Lời giải (PED6):**
+  * *Đề bài:* Tam giác có $a=6, b=8, C=30^\circ$. Tính diện tích $S$. Nếu chu vi là 24, tính $r$.
+  * *Đáp án canonical:* $S = \frac{1}{2}(6)(8)\sin 30^\circ = 12$. Chu vi $24 \implies p = 12 \implies r = S/p = 12/12 = 1$.
+  * *D6 Remediation:* Trỏ về `HELP-G10-B06-02` và `THPT-G10-B06-C02`.
+* **Đánh giá Toán học & Sư phạm:** `ACADEMIC PASS` | `PEDAGOGICAL PASS`
+
+##### 9. `G10-B06-HERON` (Công thức Heron tính diện tích từ ba cạnh)
+* **Item ID:** `THPT-G10-CHIII-TRY09`
+* **Cầu nối PED1–PED5:**
+  * **WHY (PED1):** Tính diện tích tam giác trực tiếp khi biết ba cạnh (SSS) không qua góc.
+  * **PRE (PED2):** Bất đẳng thức tam giác $a+b>c, b+c>a, c+a>b$; $p = (a+b+c)/2 > a,b,c$.
+  * **MEANING (PED3):** $S = \sqrt{p(p-a)(p-b)(p-c)}$. Bất đẳng thức tam giác bảo đảm các thừa số dưới căn dương.
+  * **READING_VISUAL (PED4):** Đọc ba cạnh $a,b,c$ và $p$.
+  * **METHOD (PED5):** Kiểm tra bất đẳng thức tam giác trước, tính $p$, lấy căn sản phẩm $p(p-a)(p-b)(p-c)$.
+* **Câu Tự thử & Lời giải (PED6):**
+  * *Đề bài:* Tam giác có $a=5, b=6, c=7$. Tính $p$ và diện tích $S$.
+  * *Đáp án canonical:* $p = (5+6+7)/2 = 9$. $S = \sqrt{9(9-5)(9-6)(9-7)} = \sqrt{9 \cdot 4 \cdot 3 \cdot 2} = \sqrt{216} = 6\sqrt{6}$.
+  * *D6 Remediation:* Trỏ về `HELP-G10-B06-02` và `THPT-G10-B06-P02`.
+* **Đánh giá Toán học & Sư phạm:** `ACADEMIC PASS` | `PEDAGOGICAL PASS`
+
+##### 10. `G10-B06-APPLICATION` (Giải tam giác và ứng dụng đo đạc thực tế)
+* **Item ID:** `THPT-G10-CHIII-TRY10`
+* **Cầu nối PED1–PED5:**
+  * **WHY (PED1):** Giải quyết bài toán thực tế đo khoảng cách qua vật cản, chiều cao công trình.
+  * **PRE (PED2):** Tổng 3 góc $180^\circ$, tam giác vuông cân có góc $45^\circ$, cạnh huyền $a\sqrt{2}$.
+  * **MEANING (PED3):** Mô hình hóa tình huống thực tế thành tam giác toán học, chọn hệ thức lượng phù hợp.
+  * **READING_VISUAL (PED4):** Sơ đồ tam giác $ABC$ với $CH \perp AB$.
+  * **METHOD (PED5):** Chọn định lý sin/côsin hoặc tỉ số lượng giác tam giác vuông; kiểm tra đơn vị đo.
+* **Câu Tự thử & Lời giải (PED6):**
+  * *Đề bài:* Đo $AB = 20\sqrt{2}\text{ m}$, các góc tại $A,B$ đều bằng $45^\circ$. Tính $AC, BC$ và khoảng cách $CH$ từ $C$ đến $AB$.
+  * *Đáp án canonical:* Góc $C = 90^\circ \implies$ tam giác $ABC$ vuông cân tại $C \implies AC = BC = 20\text{ m}$. $S = \frac{1}{2}(20)(20) = 200\text{ m}^2 \implies CH = 2S / AB = 400 / (20\sqrt{2}) = 10\sqrt{2}\text{ m}$.
+  * *D6 Remediation:* Trỏ về `HELP-G10-B06-01` & `HELP-G10-B06-02`, và `THPT-G10-B06-P05`.
+* **Đánh giá Toán học & Sư phạm:** `ACADEMIC PASS` | `PEDAGOGICAL PASS`
+
+---
+
+### 4. BẢNG MÃ ÁNH XẠ CHUẨN OFFICIAL Q01–Q18 (SLM-THPT-QUALITY-ONE v1.2.0)
+
+| Mã Q | Tên & Nội hàm Chuẩn v1.2.0 | Kết quả | Chứng cứ Audit chi tiết gói ChIII Delta C R02 |
+| :--- | :--- | :--- | :--- |
+| **Q01** | S1/Scope — SGK Core, nguồn và phạm vi | **PASS** | Khóa đúng S1 Toán 10 Tập 1 (Bài 5 pp. 33–37, Bài 6 pp. 38–43). |
+| **Q02** | Outcomes — Đủ kết quả học tập cho bài | **PASS** | Đủ 10/10 outcomes (B05: 5, B06: 5), phủ toàn bộ kĩ năng bài. |
+| **Q03** | D1 — Lý thuyết, bản chất, điều kiện | **PASS** | Bổ sung lớp MEANING giải thích bản chất trước công thức cho 10 outcomes. |
+| **Q04** | D2 — Ví dụ mẫu có suy luận, điều kiện | **PASS** | Kế thừa 6 ví dụ D2 R01 đã PASS (`EX-G10-B05-01..03`, `EX-G10-B06-01..03`). |
+| **Q05** | D3 — Core/Practice/Application có độ sâu | **PASS** | Kế thừa 16 canonical items D3 R01 đã PASS, không sửa nội dung cũ. |
+| **Q06** | D4 — Written/Anchor và rubric một thư viện | **PASS** | Kế thừa 2 bài Written/Anchor R01 cùng rubric đã duyệt. |
+| **Q07** | D5 — Hình, SVG, bảng và hướng dẫn hiểu hình | **PASS** | Kế thừa 2 sơ đồ SVG R01 (`FIG-G10-B05-01`, `FIG-G10-B06-01`) kèm hướng dẫn đọc hình PED4. |
+| **Q08** | D6 — HELP và đường khắc phục | **PASS** | Kế thừa 4 thẻ HELP D6 R01 đã khóa, chỉ dẫn rõ hướng tự sửa sau khi thử. |
+| **Q09** | PED1 — Lý do cần học trước kỹ thuật (WHY) | **PASS** | 10/10 outcome có lý do học gắn liền thực tế góc quay, hướng và đo đạc. |
+| **Q10** | PED2 — Kiến thức tiền đề (PRE) | **PASS** | 10/10 outcome tái hiện chính xác kiến thức nền tảng cần nhớ. |
+| **Q11** | PED3 — Hình thành bản chất trước công thức | **PASS** | 10/10 outcome diễn giải trực giác bản chất hình chiếu/hệ thức lượng. |
+| **Q12** | PED4 — Hướng dẫn đọc hình (READING_VISUAL) | **PASS** | Hướng dẫn đọc hình trực quan cho đường tròn đơn vị và tam giác. |
+| **Q13** | PED5 — Vì sao chọn phương pháp (METHOD) | **PASS** | 10/10 outcome giải thích tư duy chọn phương pháp giải, tránh học vẹt. |
+| **Q14** | PED6 — Tự thử trước Core, tự mở lời giải (FIRST_TRY) | **PASS** | 10/10 câu First Try (`THPT-G10-CHIII-TRY01..10`) đặt trước Core, đáp án ẩn sau fold. |
+| **Q15** | Canonical item bank, ID/placement/role | **PASS** | 10 item_id canonical duy nhất (`THPT-G10-CHIII-TRY01..10`), placement `SGK_PRE_CORE_FIRST_TRY`. |
+| **Q16** | An toàn đánh giá/exposure, unscored diagnostic | **PASS** | Đánh giá chẩn đoán công khai không tính điểm, không cộng Mastery, không lộ đề kín. |
+| **Q17** | Hai hành trình SGK và Chuyên đề độc lập | **PASS** | Đánh giá độc lập trên nhánh `SGK_CHAPTER`, không giả định PASS Chuyên đề. |
+| **Q18** | Review độc lập & Snapshot Provenance | **PASS** | Xác nhận nội dung học thuật trên mounted snapshot đạt độ chính xác 100%. |
+
+---
+
+### 5. TỔNG HỢP PHÁN QUYẾT CHÍNH THỨC VÀ RỜI TỎA GIỚI HẠN
+
+* **`ACADEMIC_VERDICT_NEW`:** **`PASS`** (Nội dung toán học đạt độ chính xác 100%)
+* **`PEDAGOGICAL_VERDICT_NEW`:** **`PASS`** (Nội dung sư phạm PED1–PED6 đạt chuẩn 100%)
+* **MỨC ĐỘ SỬA ĐỔI:** **`P0 = 0`**, **`P1 = 0`**, **`P2 = 0`**
+* **`MINIMAL_DELTA`:** **`0 REVISIONS REQUIRED`** (Không yêu cầu sửa đổi nội dung toán học)
+* **`DELTA_CLASS`:** `DELTA_C_ACADEMIC_MATERIAL`
+
+#### Giới hạn Thẩm quyền Hệ thống (System Safety Limits)
+* **`CONTENT_READY`:** **`NO`**
+* **`RELEASE_AUTHORIZATION`:** **`NO`**
+* **`MASTERY_ACTIVATION`:** **`NO`**
+* **`PRIVATE_RD1_COUNT_NEW`:** **`0`**
+
+---
+*(Báo cáo kiểm toán chi tiết đầy đủ đã được xuất bản và đồng bộ chính thức tại Studio panel với tên tệp: `Bao_Cao_Kiem_Toan_Toan_10_Chuong_III_PED_R02_20261104.md`).*
