@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>SLM · Chuyên đề 18 · Khám phá tọa độ Oxyz và mặt cầu</title>
+<style>
+:root{color-scheme:light;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1c3149;background:#fff}
+*{box-sizing:border-box}body{margin:0;background:#f7f9fd;padding:16px}
+main{max-width:960px;margin:auto;background:white;border:1px solid #cbd7e8;border-radius:16px;padding:20px}
+h1{font-size:clamp(1.25rem,3vw,1.7rem);margin:0 0 8px}.muted{color:#52647e}.lead{line-height:1.6}
+strong{color:#114f91}.pill{font-size:.8rem;color:#245e9e;font-weight:700;letter-spacing:.02em}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+article{border:1px solid #d3deed;border-radius:13px;padding:15px;min-width:0}
+article h2{font-size:1.08rem;margin:0 0 6px}article p{font-size:.94rem;line-height:1.5}
+label{display:flex;align-items:center;justify-content:space-between;gap:12px;font-weight:600;font-size:.93rem;margin-top:11px}
+input[type=range]{width:100%;accent-color:#286ab1;margin:5px 0 6px;cursor:pointer}
+svg{width:100%;height:auto;display:block;margin:8px auto;background:white;border:1px solid #edf1f7;border-radius:10px}
+.output{border-left:3px solid #2875b9;padding:9px 12px;background:#f5f9ff;border-radius:5px;min-height:70px}
+button{background:#eaf1fb;border:1px solid #9bb5d9;color:#194775;border-radius:9px;padding:10px 14px;font-weight:700;cursor:pointer}
+button:focus-visible,input:focus-visible{outline:3px solid #ffbf45;outline-offset:2px}
+.foot{font-size:.84rem;color:#52647e;margin-top:13px}
+@media(max-width:700px){.cards{grid-template-columns:1fr}body{padding:6px}main{padding:12px}article{padding:11px}}
+</style>
+</head>
+<body>
+<main data-model-id="SLM-TOP18-OXYZ-GEOMETRY-R00" data-public-mode="PUBLIC_DISCOVERY_NO_MASTERY">
+<div class="pill">G Learning · SELF-LEARNING MATH · CHUYÊN ĐỀ 18</div>
+<h1>Từ ba tọa độ đến mặt cầu trong không gian</h1>
+<p class="lead">Không cần đo góc hay độ dài trên hình phối cảnh. Hãy dùng <strong>ba tọa độ</strong> để định vị một điểm; với mặt cầu, hãy so <strong>khoảng cách tâm–mặt</strong> với bán kính rồi mới tính đường tròn thiết diện.</p>
+<div class="cards">
+<article>
+<h2>1. Một điểm M có ba tọa độ</h2>
+<p class="muted">Điểm M=(x;y;z), hình chiếu vuông góc xuống Oxy là H=(x;y;0). Thử thay đổi z: H có thay đổi không?</p>
+<label for="x">Hoành độ x <output id="xv">2</output></label><input type="range" id="x" min="-4" max="4" step="1" value="2"/>
+<label for="y">Tung độ y <output id="yv">1</output></label><input type="range" id="y" min="-4" max="4" step="1" value="1"/>
+<label for="z">Cao độ z <output id="zv">3</output></label><input type="range" id="z" min="-4" max="4" step="1" value="3"/>
+<svg id="coordinate-view" viewBox="0 0 400 300" role="img" aria-labelledby="xyztitle xyzdesc">
+<title id="xyztitle">Hệ trục Oxyz và hình chiếu của điểm M xuống Oxy</title>
+<desc id="xyzdesc">M có tọa độ 2,1,3; hình chiếu H là 2,1,0; hình chiếu theo trục z.</desc>
+<path d="M200 154 L353 210 M200 154 L55 212 M200 154 L200 18" fill="none" stroke="#7188a9" stroke-width="2.5"/>
+<path d="M353 210 l-9 -10 m9 10 l-13 -1 M55 212 l11 -10 m-11 10 l13 -1 M200 18 l-7 12 m7 -12 l7 12" stroke="#7188a9" stroke-width="2" fill="none"/>
+<text x="358" y="224" fill="#375675">x</text><text x="39" y="225" fill="#375675">y</text><text x="208" y="23" fill="#375675">z</text><text x="208" y="170" fill="#375675">O</text>
+<path id="xy-leg-x" stroke="#b4c8e0" stroke-width="1.5" stroke-dasharray="5 4" fill="none"/>
+<path id="xy-leg-y" stroke="#b4c8e0" stroke-width="1.5" stroke-dasharray="5 4" fill="none"/>
+<path id="vertical" stroke="#bf5c30" stroke-width="2.5" stroke-dasharray="6 4" fill="none"/>
+<path id="omvector" stroke="#2b6fb9" stroke-width="3" fill="none"/>
+<circle id="point-h" cx="0" cy="0" r="5" fill="#e29f42" stroke="white" stroke-width="1.5"/>
+<circle id="point-m" cx="0" cy="0" r="6" fill="#2065aa" stroke="white" stroke-width="1.5"/>
+<text id="label-h" x="0" y="0" fill="#9c5d11" font-weight="700" font-size="14">H</text>
+<text id="label-m" x="0" y="0" fill="#18578e" font-weight="700" font-size="14">M</text>
+</svg>
+<div class="output" id="point-result" aria-live="polite">M=(2;1;3), H=(2;1;0), MH=3 và OM=√14.</div>
+<p class="foot">Sơ đồ trục chiếu 3D xuống mặt giấy: không dùng để đo độ dài thật. Nếu z=0 thì M=H; độ dài MH bằng |z|, không phải luôn bằng z.</p>
+</article>
+<article>
+<h2>2. Mặt phẳng cắt mặt cầu</h2>
+<p class="muted">Mặt cầu tâm I, bán kính R; mặt phẳng (P) cách I một đoạn d. Hãy dự đoán số điểm chung khi d=R và khi d&gt;R.</p>
+<label for="radius">Bán kính cầu R <output id="rv">5</output></label><input type="range" id="radius" min="1" max="8" step="1" value="5"/>
+<label for="distance">Khoảng cách tâm–mặt d <output id="dv">3</output></label><input type="range" id="distance" min="0" max="10" step="1" value="3"/>
+<svg id="sphere-view" viewBox="0 0 400 300" role="img" aria-labelledby="sptitle spdesc">
+<title id="sptitle">Mặt cắt kinh tuyến qua tâm của mặt cầu và mặt phẳng</title>
+<desc id="spdesc">Mặt cầu bán kính 5, mặt phẳng cách tâm 3, giao theo đường tròn bán kính 4.</desc>
+<circle id="sphere-circle" cx="200" cy="156" r="100" fill="#eff6ff" stroke="#2873b9" stroke-width="3"/>
+<path id="plane-line" stroke="#a26c36" stroke-width="3" fill="none"/>
+<path id="section-chord" stroke="#21816b" stroke-width="6" stroke-linecap="round" fill="none"/>
+<circle id="center-i" cx="200" cy="156" r="5" fill="#155b9e"/>
+<text x="209" y="171" fill="#155b9e" font-size="14" font-weight="700">I</text>
+<path id="normal-segment" stroke="#bc5932" stroke-width="2" stroke-dasharray="5 4" fill="none"/>
+<text id="plane-label" x="314" y="156" fill="#8b5925" font-size="14">(P)</text>
+<text id="radius-label" x="209" y="74" fill="#24669f" font-size="13">R</text>
+</svg>
+<div class="output" id="sphere-result" role="status" aria-live="polite">d=3&lt;R=5: thiết diện là đường tròn bán kính √(25−9)=4.</div>
+<p class="foot">Đây là <strong>mặt cắt kinh tuyến 2D</strong> của hình cầu, không phải ảnh 3D nguyên vẹn. Đoạn màu xanh lá là thiết diện nhìn từ cạnh; bán kính đường tròn giao thực sự được tính bằng Pitago.</p>
+</article>
+</div>
+<p><button id="reset" type="button">Đặt lại hai mô hình</button></p>
+<p class="foot">Mô hình khám phá công khai, dùng cho Kiến thức O08/O15 và O40/O23 sau khi học mặt cầu; không chứa đề RD1, không thu thập dữ liệu, không chấm điểm hay ghi Mastery. Tự kiểm tra có nộp bài thực sự phải khóa đáp án trước Final Submit.</p>
+</main>
+<script>
+(function() {
+"use strict";
+var $=function(id){return document.getElementById(id);};
+var x=$("x"), y=$("y"), z=$("z"), radius=$("radius"), distance=$("distance");
+function fmt(v){return Number(v.toFixed(2)).toLocaleString("vi-VN",{maximumFractionDigits:2});}
+function path(id,d){$(id).setAttribute("d",d);}
+function point(id,p){$(id).setAttribute("cx",String(p[0]));$(id).setAttribute("cy",String(p[1]));}
+function renderXYZ(){
+ var X=+x.value,Y=+y.value,Z=+z.value; var origin=[200,154],sx=[20,7.2],sy=[-18,7],sz=[0,-20];
+ var H=[origin[0]+sx[0]*X+sy[0]*Y,origin[1]+sx[1]*X+sy[1]*Y], M=[H[0]+sz[0]*Z,H[1]+sz[1]*Z];
+ var line=function(a,b){return "M"+a[0]+","+a[1]+" L"+b[0]+","+b[1];};
+ path("xy-leg-x",line([origin[0]+sx[0]*X,origin[1]+sx[1]*X],H));
+ path("xy-leg-y",line([origin[0]+sy[0]*Y,origin[1]+sy[1]*Y],H));
+ path("vertical",line(H,M)); path("omvector",line(origin,M));
+ point("point-h",H);point("point-m",M);
+ $("label-h").setAttribute("x",String(H[0]+8));$("label-h").setAttribute("y",String(H[1]+14));
+ $("label-m").setAttribute("x",String(M[0]+8));$("label-m").setAttribute("y",String(M[1]-6));
+ $("xv").textContent=fmt(X);$("yv").textContent=fmt(Y);$("zv").textContent=fmt(Z);
+ var hyp=X*X+Y*Y+Z*Z;
+ $("point-result").textContent="M=("+fmt(X)+"; "+fmt(Y)+"; "+fmt(Z)+"), H=("+fmt(X)+"; "+fmt(Y)+"; 0). MH=|z|="+fmt(Math.abs(Z))+"; OM=√("+fmt(hyp)+") ≈ "+fmt(Math.sqrt(hyp))+".";
+ $("xyzdesc").textContent="Điểm M="+fmt(X)+","+fmt(Y)+","+fmt(Z)+"; hình chiếu H="+fmt(X)+","+fmt(Y)+",0; MH="+fmt(Math.abs(Z))+". Hình phối cảnh không có tỉ lệ đo.";
+}
+function renderSphere(){
+ var R=+radius.value,d=+distance.value,r=d<R?Math.sqrt(R*R-d*d):0;
+ var scale=100/R,cx=200,cy=156,rPx=R*scale,py=cy-d*scale;
+ $("rv").textContent=fmt(R);$("dv").textContent=fmt(d);
+ $("sphere-circle").setAttribute("r",String(rPx));
+ path("plane-line","M 27,"+py+" L 373,"+py);
+ path("normal-segment","M "+cx+","+cy+" L "+cx+","+py);
+ if(d<R){path("section-chord","M "+(cx+r*scale)+","+py+" L "+(cx-r*scale)+","+py);}
+ else if(d===R){path("section-chord","M "+cx+","+py+" L "+cx+","+py);}
+ else{path("section-chord","");}
+ $("plane-label").setAttribute("y",String(py-8));$("radius-label").textContent="R="+fmt(R);
+ var kind,description;
+ if(d<R){kind="Cắt theo đường tròn";description="d="+fmt(d)+" < R="+fmt(R)+": "+kind+", bán kính r=√("+fmt(R*R)+"−"+fmt(d*d)+") = "+fmt(r)+".";}
+ else if(d===R){kind="Tiếp xúc tại một điểm";description="d=R="+fmt(R)+": "+kind+"; bán kính thiết diện bằng 0.";}
+ else{kind="Không có điểm chung";description="d="+fmt(d)+" > R="+fmt(R)+": "+kind+"; không tính √(R²−d²) trong số thực.";}
+ $("sphere-result").textContent=description;
+ $("spdesc").textContent="Mặt cầu bán kính "+fmt(R)+", khoảng cách đến mặt "+fmt(d)+", "+kind+(d<R?", bán kính giao "+fmt(r):"")+". Đây là tiết diện kinh tuyến 2D.";
+}
+[x,y,z].forEach(function(control){control.addEventListener("input",renderXYZ);});
+[radius,distance].forEach(function(control){control.addEventListener("input",renderSphere);});
+$("reset").addEventListener("click",function(){x.value=2;y.value=1;z.value=3;radius.value=5;distance.value=3;renderXYZ();renderSphere();});
+renderXYZ();renderSphere();
+})();
+</script>
+</body>
+</html>
