@@ -6,9 +6,9 @@
 
 ### Chặng 1 — Khoảng cách: vì sao không đo theo đường xiên?
 
-**Đọc hình B26 — vì sao đoạn vuông góc ngắn nhất?** 
-
 ![Các đường đo khoảng cách: đoạn vuông góc từ điểm/mặt và đoạn nối hai đường chéo nhau](../../../../docs/assets/images/thpt/FIG-G11-CHVII-B26-01_R00.svg)
+
+**Đọc hình B26 — vì sao đoạn vuông góc ngắn nhất?**
 
 Trong hình, hãy chỉ rõ **M** ở ngoài (P), **H** là chân MH⊥(P) và **K** là điểm khác ở mặt phẳng. Đọc đẳng thức **MK²=MH²+HK²** để thấy MK dài hơn MH nếu K≠H. Hình này **minh họa khoảng cách điểm–mặt**, không phải một hình dựng hai đường chéo nhau. Với hai đường chéo nhau ở mục 1.5, tự vẽ hình mới và kiểm tra hai đầu của đoạn vuông góc chung đều thuộc hai đường, đồng thời đoạn ấy vuông góc với cả hai phương.
 
@@ -161,9 +161,9 @@ Có, vì khoảng cách đường song song mặt phẳng không đổi theo đi
 
 ### Chặng 2 — Thể tích: từ lớp cắt bằng nhau đến khối thu nhỏ
 
-**Đọc hình B27 — so sánh công thức qua cùng chiều cao.**
-
 ![Lăng trụ, chóp và chóp cụt có đáy và chiều cao minh họa](../../../../docs/assets/images/thpt/FIG-G11-CHVII-B27-01_R00.svg)
+
+**Đọc hình B27 — so sánh công thức qua cùng chiều cao.**
 
 Hãy tìm cùng một **diện tích đáy S** và **chiều cao vuông góc h** trước khi so sánh: lăng trụ giữ nguyên diện tích lát cắt nên V=Sh; chóp có lát cắt nhỏ dần nên V=Sh/3; chóp cụt có hai đáy song song với diện tích S và S′ và cần thêm căn \(\sqrt{SS'}\). Nét vẽ phối cảnh không chứng minh tỉ lệ 1/3; câu chuyện về các lát cắt giải thích vì sao công thức khác nhau.
 
