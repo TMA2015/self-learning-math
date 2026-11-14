@@ -7,7 +7,7 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER
 SOURCE_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R00_FULL_8_OUTCOMES_20261114.md
-SOURCE_BLOB: 9ea6db1a41ce8a192b1c7e80efa36b3f423d2811
+SOURCE_BLOB: 71daa75d5a3862926ddeedd01adb18a0886d8669
 PUBLIC_NEW_CANONICAL_COUNT: 19
 PUBLIC_ACTIVE_PLACEMENT_COUNT: 27
 PUBLIC_FORMATIVE_REPLAY_COUNT: 8
@@ -90,7 +90,7 @@ Q15: 19 item mới định nghĩa đúng **một lần** trong source R00; 8 pla
 | `THPT-G12-TOPPROB-ADD12` | TOP21-O08 | `SOURCE_CUSTODY_HOLD` |
 
 - Historical combined authoring PR #810 (Draft, unchanged) references original G12 item source blob `156061dd3bb240ddac21183df21a12637e1b5b09`, 12 historical G12 IDs (10 P + 2 Written) and 4 extension IDs in old blob `eafc0164beee72111bc27f0ddbd84f26b601698f`.
-- **Q15 definite collision:** At least **nine** identical `THPT-G12-B18-Pxx / THPT-G12-B19-Pxx` IDs have **different question texts** between old source and original full G12 SGK ChVI author source `1578efd4d2d46deb9bae064d12752d88fc3747b8` in Draft PR #731. A tenth P05 on B19 exists in both but its old stem has not been extracted in the same comparative check: HOLD. Source #731 was independently reviewed for **its own source**; old combined #810 was self-verified for **its own snapshot**. Neither permits silent overwriting when the IDs collide.
+- **Q15 definite collision:** All **ten** identical `THPT-G12-B18-Pxx / THPT-G12-B19-Pxx` IDs have **different question texts** between old source and original full G12 SGK ChVI author source `1578efd4d2d46deb9bae064d12752d88fc3747b8` in Draft PR #731. B19-P05 was also directly checked: old three-route order delivery vs new SGK base-rate detector; both have different question texts. Source #731 was independently reviewed for **its own source**; old combined #810 was self-verified for **its own snapshot**. Neither permits silent overwriting when the IDs collide.
 - Two historical Written and four additions from old PR #810 remain `SOURCE_CUSTODY_HOLD` until cross-PR owner reconciliation. **None of 16 is a student placement in CĐ21 R00**. New `THPT-TOP21-*` IDs avoid this collision. This is **not a request to rename or clone old SGK**; preserve both original immutable sources, report to owner and require one canonical definition before future reuse.
 
 ## 4. Source safety + handoff boundary
