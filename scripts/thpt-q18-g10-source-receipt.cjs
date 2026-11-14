@@ -103,6 +103,18 @@ function chviiR02ReceiptRows(){
  return rows;
 }
 
+const chviiClarityReceipt="prototypes/thpt/ux795/G10_CHVII_B19_B22_R02_LEARNER_CLARITY_DELTA_RECEIPT_20261114.md";
+function chviiClarityReceiptRows(){
+ const p=path.join(root,chviiClarityReceipt);
+ if(!fs.existsSync(p))return new Map();
+ const body=fs.readFileSync(p,"utf8");
+ const found=[...body.matchAll(/^\| B(19|20|21|22) \| \x60([a-f0-9]{40})\x60 \| \x60([a-f0-9]{40})\x60 \| (\d+) \| (\d+) \| (\d+) \|/gm)];
+ assert.equal(found.length,4,"R02 learner clarity receipt must lock B19–B22");
+ const rows=new Map(found.map(m=>["B"+m[1],{baseline:m[2],candidate:m[3],moved:Number(m[4]),helps:Number(m[5]),examples:Number(m[6])}]));
+ assert.equal(rows.size,4,"R02 learner clarity receipt duplicates lesson");
+ return rows;
+}
+
 function expectedG10KnowledgeBlob(lesson,legacy){
  assert(/^[a-f0-9]{40}$/.test(legacy),"Historical source SHA malformed");
  const name="B"+String(lesson).replace(/^B/,"").padStart(2,"0");
@@ -160,6 +172,15 @@ function expectedG10KnowledgeBlob(lesson,legacy){
      assert.equal(r02.moved,mathjax.moved,name+" canonical Vận dụng count must remain fixed");
      assert.equal(r02.helps,mathjax.helps,name+" canonical HELP count must remain fixed");
      assert.equal(r02.examples,chvii.examples,name+" original worked-example count preserved");
+     const clarity=chviiClarityReceiptRows().get(name);
+     if(clarity){
+      assert.equal(clarity.baseline,r02.candidate,name+" learner clarity must extend exact R02 PASS source");
+      assert.notEqual(clarity.candidate,clarity.baseline,name+" clarity patch must actually change source");
+      assert.equal(clarity.moved,r02.moved,name+" clarity cannot delete canonical exercises");
+      assert.equal(clarity.helps,r02.helps,name+" clarity cannot alter D6 HELP");
+      assert.equal(clarity.examples,r02.examples,name+" clarity cannot delete worked examples");
+      return clarity.candidate;
+     }
      return r02.candidate;
     }
     return mathjax.candidate;
@@ -174,4 +195,4 @@ function candidateG10KnowledgeBlob(lesson){
  const sentinel="0".repeat(40),result=expectedG10KnowledgeBlob(lesson,sentinel);
  return result===sentinel?null:result;
 }
-module.exports={expectedG10KnowledgeBlob,candidateG10KnowledgeBlob,chivEditorialReceiptRows,chvEditorialReceiptRows,chviEditorialReceiptRows,chviExampleUxReceiptRows,chviiEditorialReceiptRows,chviiContinuousReceiptRows,chviiAp2ReceiptRows,chviiR02ReceiptRows};
+module.exports={expectedG10KnowledgeBlob,candidateG10KnowledgeBlob,chivEditorialReceiptRows,chvEditorialReceiptRows,chviEditorialReceiptRows,chviExampleUxReceiptRows,chviiEditorialReceiptRows,chviiContinuousReceiptRows,chviiAp2ReceiptRows,chviiR02ReceiptRows,chviiClarityReceiptRows};
