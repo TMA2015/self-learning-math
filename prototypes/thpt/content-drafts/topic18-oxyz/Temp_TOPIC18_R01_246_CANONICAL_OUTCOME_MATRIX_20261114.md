@@ -1,4 +1,4 @@
-# CĐ18 · Oxyz · 246 PUBLIC CANONICAL SOURCE-OUTCOME-ROLE-PLACEMENT MATRIX R01
+# CĐ18 · Oxyz · 247 PUBLIC CANONICAL SOURCE-OUTCOME-ROLE-PLACEMENT MATRIX R01
 
 **AUTHORING_MATH_PED_QA_PENDING / NOT CONTENT_READY**. Standard: one `SLM-THPT-QUALITY-ONE v3.1.0` Q01–Q18. Source page S1 KNTT G12 ChII B06–B08 and G12 ChV B14–B17; G12 SBT ChV B14 printed p25 missing from original PDF; affected SBT exercise IDs 5.6–5.7 require separately verified source. No autonomous source equivalence or independent Topic NotebookLM PASS claimed.
 
@@ -11,11 +11,16 @@ CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: NOT_YET_SIGNED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R01_FULL_40_OUTCOMES_20261114.md
-ACADEMIC_SOURCE_BLOB: b0a801dfc2168342e2f6ad5aaac14884dfdb33b6
+ACADEMIC_SOURCE_BLOB: 02b64168c37f461e832b4849ff37918e8424fada
 ORIGINAL_S1_CROSSWALK_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R01_S1_40_OUTCOME_160_SGK_CANONICAL_CROSSWALK_20261114.md
 ORIGINAL_S1_CROSSWALK_BLOB: 7cba588cfe60d3675df99d8aa7e4b9275da9690e
 S1_G12_CHII_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
 S1_G12_CHV_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a
+INTERACTIVE_MODEL_ID: SLM-TOP18-OXYZ-GEOMETRY-R00
+INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_THPT_TOPIC18_OXYZ_SPHERE_GEOMETRY_R00_20261114.html
+INTERACTIVE_MODEL_BLOB: 1117d351d6818f1b4f7b40b5b42a5263b225849a
+RADAR_SVG_ORIGINAL_PATH: docs/assets/images/thpt/FIG-TOP18-RADAR-TRAJECTORY-OXYZ-R00.svg
+RADAR_SVG_ORIGINAL_BLOB: c818e636ded54730582b139f4476ce9daa2156b2
 SBT_B14_PRINT_P25: MISSING_ORIGINAL_S1_SOURCE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
@@ -63,11 +68,11 @@ RELEASE_AUTHORIZATION: NO
 | TOP18-O35 | G12-CHV-B16-O05 | 4 | 1 | 1 | 0 | AUTHORING_CANDIDATE |
 | TOP18-O36 | G12-CHV-B17-O01 | 4 | 1 | 1 | 0 | AUTHORING_CANDIDATE |
 | TOP18-O37 | G12-CHV-B17-O02 | 4 | 1 | 1 | 0 | AUTHORING_CANDIDATE |
-| TOP18-O38 | G12-CHV-B17-O03 | 4 | 1 | 1 | 0 | AUTHORING_CANDIDATE |
+| TOP18-O38 | G12-CHV-B17-O03 | 4 | 1 | 1 | 1 | AUTHORING_CANDIDATE_INTEGRATED_RADAR_W07 |
 | TOP18-O39 | G12-CHV-B17-O04 | 4 | 1 | 1 | 1 | AUTHORING_CANDIDATE |
 | TOP18-O40 | G12-CHV-B17-O05 | 4 | 1 | 1 | 0 | AUTHORING_CANDIDATE |
 
-**Totals:** 160 frozen SGK original public canonical references (CHII=64, CHV=96), 40 new First Try, 40 new Practice, 6 new Written /4, **246 distinct `item_id`**, 40 outcome-specific learning modules, 9 visual references. Twelve public replay placements reuse existing Practice IDs and create **zero** new questions. These counts do NOT by themselves certify self-learning depth or Q18 review.
+**Totals:** 160 frozen SGK original public canonical references (CHII=64, CHV=96), 40 new First Try, 40 new Practice, 7 new Written /4, **247 distinct `item_id`**, 40 outcome-specific learning modules, 10 visual references (9 S1 + 1 original white radar SVG). Twelve public replay placements reuse existing Practice IDs and create **zero** new questions. These counts do NOT by themselves certify self-learning depth or Q18 review.
 
 ## One canonical ID, many role placements — 246 IDs
 
@@ -319,10 +324,11 @@ RELEASE_AUTHORIZATION: NO
 | THPT-TOP18-W04 | NEW | TOP18-O32 | NEW | TOPIC_WRITTEN | TOPIC/LUYEN_TAP/WRITTEN | TOPIC_NEW_CANDIDATE |
 | THPT-TOP18-W05 | NEW | TOP18-O39 | NEW | TOPIC_WRITTEN | TOPIC/LUYEN_TAP/WRITTEN | TOPIC_NEW_CANDIDATE |
 | THPT-TOP18-W06 | NEW | TOP18-O22 | NEW | TOPIC_WRITTEN | TOPIC/LUYEN_TAP/WRITTEN | TOPIC_NEW_CANDIDATE |
+| THPT-TOP18-W07 | NEW | TOP18-O38 | NEW | TOPIC_WRITTEN | TOPIC/LUYEN_TAP/WRITTEN_INTEGRATED_AFTER_B17 | TOPIC_NEW_CANDIDATE |
 
 ## Assessment and source scope
 
-- New 86 item bodies/keys/solutions/rubrics live **only** in R01 learner source SHA `b0a801dfc2168342e2f6ad5aaac14884dfdb33b6`; original 160 SGK public item bodies/keys/rubrics are never duplicated in Topic, and remain immutable at original SGK source blob SHAs.
+- New 87 item bodies/keys/solutions/rubrics live **only** in R01 learner source SHA `02b64168c37f461e832b4849ff37918e8424fada`; original 160 SGK public item bodies/keys/rubrics are never duplicated in Topic, and remain immutable at original SGK source blob SHAs.
 - Original Topic source map `7cba588cfe60d3675df99d8aa7e4b9275da9690e` preserves exact 160 source `ITEM_ID–OUTCOME_ID` relationships. No remapping of original SGK outcome was applied without semantic review in this R01; if a future mapping is judged wrong, create a scoped Delta B/C with stem evidence, not silent rewrite.
 - `TOP18-O23` corresponding to `G12-CHV-B14-O07` is a **non-mandatory integrated application after B17** (sphere–plane section). Its T23, P23 and original SGK C/P/A/W references are correctly linked for provenance but cannot be used as a B14 Core prerequisite or pre-B17 readiness gate.
 - The original G12 SBT B14 p25 missing source concerns exercises 5.6–5.7; exact affected assignment in this new bank is **unresolved** pending source/receipt. Hold just that source-dependent part under `DELTA_D_SOURCE_GAP`, without treating third-party solutions as S1 or annulling original frozen SGK PASS for unrelated items.
@@ -331,5 +337,5 @@ RELEASE_AUTHORIZATION: NO
 ## Editorial + Q18 next tasks
 
 - NotebookLM/Gemini prose reference is old Drive Topic09 DRAFT_NOT_REVIEWED (natural motivation retained where mathematics verified, incomplete B08/B17 old scope rejected), owner issue #851 defines narrative *within* unified Q09–Q14, not a second standard.
-- Verify 40 new example +40 T keys +40 P keys and 6 Written rubrics with substantive per-outcome math/pedagogical audit, check actual 9 assets (CHII SVG labels and CHV PNG real rendering), path/text fallback, complete independent learning route and SBT p25 quarantine.
+- Verify 40 new example +40 T keys +40 P keys and 7 Written rubrics with substantive per-outcome math/pedagogical audit, check actual 10 assets (3 CHII SVG labels, 6 CHV PNG real rendering, 1 new white radar SVG), path/text fallback, complete independent learning route and SBT p25 quarantine.
 - Q18 author self receipt only after all affected P0/P1 resolved; one V2 / ready / REGISTER only when exact source+receipt SHA and closed gates can truthfully be signed. Draft AUTHORING has **no release/deploy** authority.
