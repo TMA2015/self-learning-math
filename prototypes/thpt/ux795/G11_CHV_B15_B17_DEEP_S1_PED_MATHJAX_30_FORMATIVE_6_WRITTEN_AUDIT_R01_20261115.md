@@ -1,0 +1,84 @@
+# RELEASE — G11 Chương V B15–B17 deep S1/PED/MathJax/30 C-P-A/6 Written audit · R01 · 15/11/2026
+
+**Lane:** RELEASE audit **evidence only**. **State:** `OWNER_QUALITY_HOLD` retained, `G11_CHV_GOLDEN_AP2_S1_SCOPE_HOLD`; **NO STUDENT CONTENT EDIT / NO PR MERGE / NO DEPLOY**. This audit does NOT change the immutable status of any earlier reviewer snapshot, does NOT create an Academic/PED verdict, a new CONTENT_READY packet, browser AP1–AP5 PASS, independent Readiness, protected RD1 clearance, or a production release.
+
+**Canonical authority:** unified `SLM-THPT-QUALITY-ONE v3.1.0 / Q01–Q18`, existing owner-approved four Golden-tab editorial requirement, Golden R4 5+1, AP1–AP5, R1–R5, two independent SGK/Topic journeys, data privacy/RD1, SOURCE_RECEIPT. Source snapshot checked live on GitHub: `main b103cd91cd32a2ff3accd1ae14c24870330ef9a2`, `gh-pages 469e0c6cffde64a9b6ffbe7c65ed97144eb74659`; Draft PR #862 was open/draft, HEAD before new evidence `807d515f2487e948cfe1909c8e93a49ccb4cd8f3`. Issue #795 had no existing B15–B17 deep audit.
+
+## 1. Immutable evidence register — actually opened content
+
+| Component | Exact Git blob SHA1 | Read and checked |
+|---|---|---|
+| [B15 Knowledge](https://github.com/TMA2015/self-learning-math/blob/b103cd91cd32a2ff3accd1ae14c24870330ef9a2/docs/thpt-preview/sgk/lop-11/chuong-v/bai-15.md) | `95bbe5ecdd73b92f88176ae0245e11b1098d8e6e` | 84 lines, four EX, ε-N explanation, 2 HELP, one SVG |
+| [B16 Knowledge](https://github.com/TMA2015/self-learning-math/blob/b103cd91cd32a2ff3accd1ae14c24870330ef9a2/docs/thpt-preview/sgk/lop-11/chuong-v/bai-16.md) | `a2242eeb50ae0f02643182bf10c315c41ce05c3b` | 85 lines, **five** actual EX (heading incorrectly says four), 2 HELP, one SVG |
+| [B17 Knowledge](https://github.com/TMA2015/self-learning-math/blob/b103cd91cd32a2ff3accd1ae14c24870330ef9a2/docs/thpt-preview/sgk/lop-11/chuong-v/bai-17.md) | `36a7c21f3ae2474318c1e857acbcb640680e1326` | 78 lines, 4 EX, 2 HELP, one SVG |
+| [Reviewed public R03 formative bank](https://github.com/TMA2015/self-learning-math/blob/b103cd91cd32a2ff3accd1ae14c24870330ef9a2/docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js) | `cbe3608a8551b85440e955835706f7046d88ef7d` | Parsed all **30 unique** IDs: **9 CORE +17 PRACTICE +4 APPLICATION**, 10/bài; stem/hint/solution/skill/conditions checked |
+| [Practice hub](https://github.com/TMA2015/self-learning-math/blob/b103cd91cd32a2ff3accd1ae14c24870330ef9a2/docs/thpt-preview/sgk/lop-11/chuong-v/luyen-tap.md) | `d30b31f9641f5d23a33ade06eb429e7b65fc07d0` | 3×3 Core and 3×7 Practice+Application; targets and number counts align with bank |
+| [Shared Written/Anchor](https://github.com/TMA2015/self-learning-math/blob/b103cd91cd32a2ff3accd1ae14c24870330ef9a2/docs/thpt-preview/thu-vien/tu-luan-g11-chuong-v.md) | `047f42f1d3cd241d1d5155e6f7ebc3c5bdd20aff` | Six distinct canonical W15/W16/W17 cards, one normal + one Anchor label per lesson, six /4 rubrics, hidden self-comparison |
+| [Self-check entry](https://github.com/TMA2015/self-learning-math/blob/b103cd91cd32a2ff3accd1ae14c24870330ef9a2/docs/thpt-preview/sgk/lop-11/chuong-v/tu-kiem-tra-chuong.md) | `64e6de883cc377fee397c8d889e86fb813668201` | PUBLIC 13-item self-check; no independent official exam |
+| [CHV public refs/config](https://github.com/TMA2015/self-learning-math/blob/b103cd91cd32a2ff3accd1ae14c24870330ef9a2/docs/assets/data/thpt-g11-selfcheck/CHV.json) | `d2aa6c7c1606141e79d9a1471eb45dc9afc87488` | 13 unique Practice/Application refs, independently mapped to **13 unique skill labels** in bank; `mastery_credit=false`, `independent_readiness_credit=false`, `persist_results=false`, mode PUBLIC_CANONICAL_REFERENCE_ONLY |
+| [Final Submit JS](https://github.com/TMA2015/self-learning-math/blob/b103cd91cd32a2ff3accd1ae14c24870330ef9a2/docs/assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js) | `295cc4109943b35d289e816678998568fe7dde74` | Static `submitted=false` until click; answer/solution only under `if(submitted)` (lines 161–175); CHV source/version, 13 refs/exposure/unique skills guarded lines 290–308 |
+
+**Published real static HTML on `gh-pages`** (read all files, article and script references): B15 `2b9e2a62a593b4a22a011d7cd715a4843a051602`; B16 `1da3851f51b5d91b7c649346982d49ac5a671807`; B17 `6ef63bb422ccacbdbe959ae9f5988546fe22744e`; hub `611c63c52ec17aaa73b5928b96b9da6e21d9fbe8`; Written `3dd7afe6e20137d5a55880b501b3ba94bd1a6e7b`; self-check `5866588e2ac4abf606a4c6029c8d83399e4418d8`. Site HTML includes the appropriate reviewed formative bank + G11 Selfcheck scripts. **Static source inspection is not browser runtime click/UA testing.**
+
+### SVG register: positive facts (no missing/wrong figure claim)
+
+- B15 `FIG-G11-B15-01_R01.svg`, blob `632bef51196757f9c71f54c53bb3c7639ce158e0`: **eight** discrete points `(n,1/n)`, n=1..8, above horizontal 0; actual plotted ordinates match 1/n; title/desc/alt; visually referenced **before** ε,N definition at source line **15**.
+- B16 `FIG-G11-B16-01_R01.svg`, blob `d623e8a96c6d5f9723aafb9c62bffe57bdc9aa73`: correct continuous line `y=x+2` with an **open** point at (2,4), no filled point for undefined x=2; source line **19**, before formal concept.
+- B17 `FIG-G11-B17-01_R01.svg`, blob `0cc06960b371bca72ee78da414a04aa56f5e5fbe`: `y=x+1` with open (1,2) and filled (1,0), coherent with f(1)=0 and limit 2; source line **15**, before definition.
+- **PED4 placement is already meaningfully better** than G11 ChIV: SVG comes near discovery, immediately followed by a dedicated “Cách đọc hình”; do not repeat earlier false "all diagrams at end" finding. Still only one example per lesson and no 390/820/1440 visual/mobile/zoom/accessibility browser PASS.
+
+## 2. S1 authority and source limits
+
+**Actual title:** SGK *Toán 11 Kết nối tri thức*, **Tập một**, printed B15 **p104–110**, B16 **p111–118**, B17 **p119–122** (TOC corroborated by [giaokhoaonline](https://giaokhoaonline.com/toan-lop-11-tap-1-ket-noi-tri-thuc/) and [montoan](https://montoan.com.vn/sgk-toan-11-ket-noi-tri-thuc)). Read detailed public **SGK transcription** [B15](https://www.sgkvn.com/lop-11-14/ket-noi-tri-thuc-voi-cuoc-song-3/chuong-v-gioi-han-ham-so-lien-tuc-3448/bai-15-gioi-han-cua-day-so-12663.html), [B16](https://www.sachgiaokhoa.online/lop-11-14/ket-noi-tri-thuc-voi-cuoc-song-3/chuong-v-gioi-han-ham-so-lien-tuc-3448/bai-16-gioi-han-cua-ham-so-12668.html), [B17](https://www.sgkvn.com/lop-11-14/ket-noi-tri-thuc-voi-cuoc-song-3/chuong-v-gioi-han-ham-so-lien-tuc-3448/bai-17-ham-so-lien-tuc-12680.html). B15 SGK four parent sections **(1) giới hạn hữu hạn, (2) định lí giới hạn hữu hạn, (3) tổng cấp số nhân lùi vô hạn, (4) giới hạn vô cực**. B16 SGK three main groups **(1) giới hạn hữu hạn tại một điểm, (2) hữu hạn tại vô cực, (3) vô cực tại một điểm**. B17 SGK three groups **(1) liên tục tại điểm, (2) liên tục trên khoảng/đoạn, (3) một số tính chất cơ bản**.
+
+**Limit:** An original-looking 21MB `NXB GDVN 11/2022 BẢN MẪU` PDF mirror was located and attempted, but the web retrieval returned HTTP 400 “content length too large”; no PDF screenshot / printed-to-PDF index offset, image/page visual, final official publisher edition or full original SBT authenticated in this turn. The three mirrored SGK transcriptions have certain formulae as images / imperfect OCR-like text: **cross-reference rather than final source custody proof**. No `Q01_S1_FINAL_PASS`.
+
+## 3. Targeted findings
+
+### P1 — `G11_CHV_FOUR_GOLDEN_TABS_MISSING` · Q03–Q14/AP1/AP4
+
+All 3 sources still have **continuous vertical** lessons, not the owner-approved **four independent Golden Knowledge tabs**. B15 lines 5–47 (all theory/discovery), line55 EX, line67 HELP, line81 links; B16 lines5–45, line54 EX, line68 HELP, line82 links; B17 lines5–39, line49 EX, line61 HELP, line75 links. Published articles all **zero actual** `tabbed-set` / `data-thpt-golden-tab` / `data-thpt-r4-tab` elements. The three masthead Chapter/Practice/Selfcheck links are **not** the four Knowledge tabs, nor do headings “1. / 2. / 3. / 4.” prove tab-based Golden acceptance. The existing lessons offer real explanatory depth and pre-formula visuals, so the remedy is role-sensitive content + UX reorganization and does **not** justify dropping those explanations. Pedagogical content alteration → `DELTA_C` with AUTHORING/review; same-math CSS/labels can route Delta A where truly unchanged.
+
+### P1 — `G11_CHV_AP2_UNTYPESet_LIMIT_NOTATION` · Q03/Q13/AP2
+
+Despite each published page loading MathJax 3, the actual learner **article HTML has 0 `class="arithmatex"`** on B15/B16/B17. Text contains raw `lim_{n→∞}`, `lim_{x→a}`, `S_n`, ASCII notation `|u_n−a|<ε`, `q^n`, and Unicode math not marked with delimiters, which MathJax does not automatically turn into textbook typeset formulae. Source examples B15 l25–45, l59–65; B16 l25–44 and l58–66; B17 l21–39 and l53–59. Counts article: B15 **0 arithmatex / 2 code**, B16 **0 / 10 code**, B17 **0 / 2 code**; contains a valid MathJax script, so **do not claim MathJax library is absent**. Requires formula-level AP2, semantics/conditions unchanged, after-render QA including responsive and screen reader. Pure typesetting may be equivalent Delta A/B, **changes to mathematical statement must not be hidden as style**.
+
+### P1 — `G11_B15_S1_REPEATING_DECIMAL_TO_FRACTION_UNTAUGHT` · Q01/Q02/Q04/Q05
+
+In B15 SGK **§3** printed **p108**, worked **Ví dụ 5** explicitly teaches converting repeating decimal `2,222... ` into a fraction via geometric sum. Printed **Bài 5.4 p109** asks `1,(12)`, `3,(102)` to be written as fractions. Current B15 full 84-line source covers finite/infinite limits and geometric sums `5+5/4+...`, but **has no specific explanation or exercise for interpreting repeating decimal blocks as an infinite series and converting to a fraction**. Reviewed B15 3C+7P/Applications and two Written have **zero repeating-decimal tasks**. This is a concrete **S1 worked-method/exercise coverage gap** under owner “complete SGK”, NOT proof the whole B15 limit theory is mathematically wrong. A targeted method-and-transfer lesson must be planned by AUTHORING if owner opens scope; preserve the original R03 reviewer snapshot and route any academic material as Delta C.
+
+### P1 — `G11_B17_S1_TRIG_CONTINUITY_OUTCOME_UNTAUGHT` · Q01/Q02/Q03/Q05
+
+SGK B17 **§2 printed p121** explicitly states **polynomials and sin/cos continuous on R; tan/cot and rational functions continuous on their domains**. Existing B17 teaching lines **27–33** explicitly covers polynomials, rational denominators, square root and interval endpoint; however it **never states why/where `sin x`, `cos x`, `tan x`, `cot x` are continuous nor checks tangent/cotangent denominator exceptions**. B17 3C+7P/Application, 2 Written use polynomials, rationals, radicals and piecewise, **no trig continuity exercise**. This matters because Chapter I already taught trig functions and the SGK makes that generalization explicit. Remedy only after source/receipt formalization, not ad hoc RELEASE patch; do not assert existing elementary/rational continuity teaching is missing.
+
+### P2 / S1 alignment — `G11_B15_LIMIT_THEOREM_SCOPE_AND_PARENT_ORDER` · Q01/Q02/Q03
+
+SGK B15 §2 also states nonnegative limit and bound/squeeze observations (e.g. `0≤|u_n|≤v_n→0`); B15 EX02 demonstrates the bound `|(−1)^n/n|≤1/n`, but **does not teach the general comparison/squeeze condition as a reusable named rule with its own independent practice**. §4 gives rules for +∞/−∞ limits, whereas B15 source presents their definitions and `n,−2n` examples, not a full worked rule-selection set. Current learner source chapter 1.4 discusses infinite *before* 1.5 rules and 1.6 geometric sum, diverging from the four S1 parent-section order; no independent four-tab Tab2 S1 outline. **Classify targeted depth/mapping evidence, not “all S1 missing”**; full PDF and item-outcome matrix still needed before a final Q02 blocker decision.
+
+### P1/P2 — `G11_CHV_FORMATIVE_EXPOSURE_AND_PED_FIRST_TRY` · Q05/Q14/Q15
+
+Bank **30/30 unique** canonical IDs, 3C+7P/A each lesson. Some placements repeat **fully disclosed stem/answer**:
+- **B15-C01** `uₙ=7+3/n`, target 7, exactly appears solved in B15 HELP at source **l72**; **B15-P05** `(−1)^n` no limit appears entirely in learner's discovery **l21** and EX02 **l61**.
+- **B16-C01** `(x²−9)/(x−3)` limit 6 is the EXACT preceding `Tự thử` **l48–50** with answer reveal. Thus not independently diagnostic.
+- **B17-P04** `(x²−16)/(x−4)`, m=8 uses precisely the B16 five-step HELP l73 output 8 in the previous lesson, with new continuity follow-up; formative retrieval of prior learning is okay, but **don't call it fresh held-out transfer**.
+Other tasks include genuine changed numbers, negative-q series, ball travel, rationalization and contexts; **do not generalize that all 21 non-Core are clones**. Show progression by outcome; do not re-ID canonical item or turn PUBLIC formative into independent Readiness.
+
+### P2 — `G11_B16_EX_HEADER_WRONG_COUNT_AND_INTERNAL_TEXT` · AP4/Q13
+
+B16 source **l56** calls the section **“Bốn ví dụ độc lập”**, but lists **EX-G11-B16-01 through EX-G11-B16-05** (l58,60,62,64,66): **five** actual worked examples. B15 and B17 accurately have four. A display-label correction is Delta A if source math preserved. All three lessons visibly include `Hình trực quan D5` and `EX-G11-Bxx-...`/technical `THPT-G11-CHV` in student prose/HELP and some Written card headings. All 30 hints are the *same generic sentence per lesson* (10 each), although **two real five-step HELP per lesson exist**; no false D6 absence claim. Enhance actionable diagnosis links/learner-language labels in owner-approved UX; substantive teaching changes Delta C.
+
+## 4. Actual mathematics check (positive and limitations)
+
+**All 30 R03 PUBLIC stems, solutions and conditions read and arithmetic/algebra recomputed**. No incorrect solution/key observed in these public records. Examples: B15 `8−4+2−1+…=16/3` for q=−1/2, bounce height initial 3 and q=1/2 vertical distance `3+2×3=9m`, `lim sqrt(n²+2n)/n=1` for n>0; B16 `lim_{x→0}(sqrt(x+4)−2)/x=1/4`, `lim_{x→−∞} sqrt(x²+4)/x=−1`, `(x²−1)/(x²+x−2)→2/3` at x1, one-sided `(x+1)/(2−x)→+∞` as x→2−; B17 continuity parameter `a=1`, interval `sqrt(9−x²)` on [−3,3], `x³−5` signs −4 and +3 on [1,2] (at least one root). These are **source calculations** NOT a new Academic PASS.
+
+**6 Written/Anchor prompt/solution/rubric recomputed**, two per lesson, **6 unique canonical IDs**, Anchor is a label not duplicated bank: B15 W01 rational limit 2, parity oscillation and 4+2+…=8; W02 first 1.2, next 0.9/0.675, series→4.8; B16 W01 removable limit10, parameter m10, 1/(x+1) one-sided ±∞; W02 conjugate limit 1/6 and `sqrt(x²+1)+x→0⁺` for x→−∞; B17 W01 piecewise k2, polynomial g signs −1 and5; W02 sqrt(x+1) endpoint, matching piecewise limits at 0 then discontinuity after shift. All six have manual /4 rubric and public `<details>`, no machine Written marking or Skill Mastery.
+
+## 5. Q16 privacy/Final Submit (static only)
+
+CHV config `PUBLIC_CANONICAL_REFERENCE_ONLY` refers to **13** existing PUBLIC Practice/Application IDs with **13 unique skill labels**, source blob `7934757ed06de4ae4b63dbc351ef524fc054e0d0`, original bank version `THPT-G11-CHV-B15-B17-R03`; bank header lists original reviewer receipt blob `2fdc39c755f399b0df81e17a9c8978384612e2f1` and comments `17 protected RD1 excluded`. **No direct inspection of protected RD1, SHA receipt custody verification, browser network call or privacy signoff**. Static JS CHV lines290–308 validates bank and public refs; default `submitted=false`, answer and solution shown only inside `if(submitted)`, Final Submit changes state, `FREE_TEXT` manual comparison. `mastery_credit=false`, `independent_readiness_credit=false`, `persist_results=false`. No fresh 13-item assessment bank and no official `SGK_CHAPTER_READINESS`.
+
+## 6. Disposition
+
+All findings route through existing Q01–Q18, not a second RELEASE standard. If owner authorizes academic changes, route B15 repeating-decimal method and B17 trig-continuity bridge to **AUTHORING_DEFECT** with lesson/outcome evidence, **`DELTA_C_ACADEMIC_MATERIAL`**, scoped independent NotebookLM review, canonical `item_id` and source/receipt SHA lock. Preserve prior immutable reviewer PASS scope. Equivalent AP2 MathJax and UI labels require separate Delta A/B verification with no math condition/key change. No simulated browser QA, 390/820/1440, Safari/iPhone, Firebase or protected RD1 verified; `OWNER_QUALITY_HOLD` persists.
+
+**Progress under Issue #795:** G10 27/27; G11 B01–B04 4, B05–B07 3, B08–B09 2, B10–B14 5, **B15–B17 3** → **44/79 SGK THPT deeply SOURCE-audited**, NOT 44 Academic PASS/RELEASE PASS. Next RELEASE-only source audit: **G11 ChVI B18–B21**, after refreshing GitHub HEAD and issue evidence. No merge/deploy/content edits.
