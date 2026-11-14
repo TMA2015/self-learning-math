@@ -8,6 +8,7 @@ on:
       - "prototypes/thpt/ux795/G10_CHVII_B19_B22_CONTINUOUS_EXPLANATION_Q18_DELTA_RECEIPT_20261113.md"
       - "prototypes/thpt/ux795/G10_CHVII_B19_B22_AP2_EQUIVALENT_MATHJAX_DELTA_RECEIPT_20261113.md"
       - "prototypes/thpt/ux795/G10_CHVII_B19_B22_R02_ACADEMIC_PED_PASS_RELEASE_INTAKE_20261114.md"
+      - "prototypes/thpt/ux795/G10_CHVII_B19_B22_R02_LEARNER_CLARITY_DELTA_RECEIPT_20261114.md"
       - "docs/assets/images/thpt/G10_CHVII_R02_*.svg"
       - "scripts/thpt-q18-g10-source-receipt.cjs"
       - "scripts/test-g10-chvii-editorial-source.cjs"
