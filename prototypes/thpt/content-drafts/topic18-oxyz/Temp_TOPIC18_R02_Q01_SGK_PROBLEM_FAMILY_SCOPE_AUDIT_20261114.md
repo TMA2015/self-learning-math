@@ -4,8 +4,8 @@
 
 STATE: Q01_AUTHOR_EVIDENCE_BUILT_WITH_SBT_REFERENCE_GAP_DOCUMENTED
 Q18_SIGNOFF: NOT_YET_SIGNED
-ACADEMIC_SOURCE_BLOB: d47b4ac89e738a6f44084451e20db50d4d033a04
-CANONICAL_MATRIX_BLOB: a1bb370d74f8102f3aed900c7d4fee8e0c7f5d52
+ACADEMIC_SOURCE_BLOB: f84dee296e2880c2d17fa2306c44458031c057cd
+CANONICAL_MATRIX_BLOB: db9b91dd0143e3b0fd8609cb5c5904bf73b86cec
 SGK_SOURCE_G12_CHII_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
 SGK_SOURCE_G12_CHV_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a
 SGK_ORIGINAL_40_OUTCOME_CROSSWALK_BLOB: 7cba588cfe60d3675df99d8aa7e4b9275da9690e
@@ -72,3 +72,5 @@ Q01_CONCLUSION: ORIGINAL_G12_SGK_CORE_40_40_AND_METHOD_FAMILIES_AUDITED; SBT_REF
 ## Next Q18 obligations
 
 By every `TOP18-Oxx`: independently inspect mathematical validity of worked example/T/P/W, D1 meaning/formula limits, D2 why method, D3–D4 difficulty/variants, D5 SVG/alt+model, D6 targeted remedy, PED1 motivation/independent prerequisite, PED2–PED6 full self-study route; confirm no hidden RD1, one canonical ID, assessment Final Submit boundary. **If any specific P0/P1 remains, do not sign.** Only after completing substantive author verification create one signed Q18 receipt, V2, ready manifest and REGISTER; website RELEASE/AP/P remain distinct.
+
+<!-- FINAL_SHA_PARITY: R02 academic text body unchanged; final-source amendment only author status metadata. Q01 family/outcome proof assertions and 247-ID map remain byte-equivalent in learner-facing content. -->
