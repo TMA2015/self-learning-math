@@ -7,7 +7,7 @@
  * SVG geometry RELEASE-owned, equivalent to D5 design spec a2ee2b226780b3aeff379ccb7d5eae0bde0156b5.
  */
 const assert=require("node:assert/strict"),fs=require("node:fs"),crypto=require("node:crypto"),path=require("node:path");
-const {expectedG10KnowledgeBlob,chviiEditorialReceiptRows,chviiContinuousReceiptRows,chviiAp2ReceiptRows,chviiR02ReceiptRows}=require("./thpt-q18-g10-source-receipt.cjs");
+const {expectedG10KnowledgeBlob,chviiEditorialReceiptRows,chviiContinuousReceiptRows,chviiAp2ReceiptRows,chviiR02ReceiptRows,chviiClarityReceiptRows}=require("./thpt-q18-g10-source-receipt.cjs");
 const root=path.resolve(__dirname,".."),read=p=>fs.readFileSync(path.join(root,p),"utf8");
 const shaText=s=>{const b=Buffer.from(s);return crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+b.length+"\0"),b])).digest("hex")};
 const gitblob=p=>shaText(read(p));
@@ -247,8 +247,12 @@ for(const tag of ["ELLIPSE","HYPERBOLA"]){
        if(mathjax)assert.equal(mathjax.baseline,newer.candidate,"B22 AP2 source must match exact reviewed owner narrative blob");
        const teaching=chviiR02ReceiptRows().get("B22");
        if(teaching)assert.equal(teaching.baseline,mathjax.candidate,"B22 R02 must source-lock after AP2");
-       assert.equal(gitblob("docs/thpt-preview/sgk/chuong-vii/bai-22.md"),teaching?teaching.candidate:(mathjax?mathjax.candidate:newer.candidate),
-         "B22 source must match latest exact Q18 source after equivalent TeX conversion");
+       const clarity=chviiClarityReceiptRows().get("B22");
+       if(clarity)assert.equal(clarity.baseline,teaching.candidate,
+         "B22 final learner clarity must follow independently PASS R02 source");
+       assert.equal(gitblob("docs/thpt-preview/sgk/chuong-vii/bai-22.md"),
+         clarity?clarity.candidate:(teaching?teaching.candidate:(mathjax?mathjax.candidate:newer.candidate)),
+         "B22 source must match final Q18 source through learner-clarity correction");
        const bridge=tag==="ELLIPSE"?"Ta có thể kiểm nghiệm thêm cách đọc hoành độ qua một mái che":
         "Tương tự, khi đã hiểu vì sao chênh lệch thời gian dẫn đến hypebol";
       assert(b22.includes(bridge),"Transfer D2 reasoning must survive as natural exposition "+tag);
