@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 435" width="800" height="435" role="img" aria-labelledby="title desc">
+<title id="title">Sơ đồ cây hai lần tung đồng xu cân đối</title>
+<desc id="desc">Lượt một có nhánh N là ngửa và S là sấp; từ mỗi nhánh ở lượt hai có tiếp nhánh N và S. Bốn kết quả chuỗi có thứ tự NN, NS, SN, SS đều đồng khả năng một phần tư. Đúng một lần ngửa có hai chuỗi NS và SN nên xác suất là hai phần tư.</desc>
+<rect width="800" height="435" rx="14" fill="#ffffff"/><rect x="13" y="13" width="774" height="410" rx="12" fill="none" stroke="#cfdeed" stroke-width="2"/>
+<text x="30" y="50" fill="#1c4c77" font-family="Arial,sans-serif" font-size="22" font-weight="bold">Từ đường đi đầy đủ đến không gian mẫu</text>
+<text x="30" y="79" fill="#526c80" font-family="Arial,sans-serif" font-size="15">Tung hai lần cùng một đồng xu cân đối · N = ngửa, S = sấp</text>
+<g stroke="#81a4c4" stroke-width="2.5" fill="none"><path d="M115 232 L330 147 M115 232 L330 310 M355 147 L575 115 M355 147 L575 180 M355 310 L575 277 M355 310 L575 355"/></g>
+<g font-family="Arial,sans-serif" font-weight="bold" font-size="18" text-anchor="middle">
+<rect x="48" y="213" width="107" height="38" rx="9" fill="#eaf2fa" stroke="#8daac4"/><text x="101" y="237" fill="#1b4e7a">Bắt đầu</text>
+<rect x="303" y="127" width="63" height="40" rx="9" fill="#e8f4ff" stroke="#5293ce"/><text x="334" y="153" fill="#235f91">N</text>
+<rect x="303" y="290" width="63" height="40" rx="9" fill="#eef8f0" stroke="#6aaa89"/><text x="334" y="316" fill="#21684b">S</text>
+</g>
+<g font-family="Arial,sans-serif" font-size="16" text-anchor="middle" fill="#175780">
+<rect x="554" y="97" width="171" height="36" rx="8" fill="#eaf6fd" stroke="#86bad9"/><text x="640" y="119">NN · xác suất 1/4</text>
+<rect x="554" y="163" width="171" height="36" rx="8" fill="#e9f7ed" stroke="#86b69b"/><text x="640" y="185">NS · xác suất 1/4</text>
+<rect x="554" y="260" width="171" height="36" rx="8" fill="#e9f7ed" stroke="#86b69b"/><text x="640" y="282">SN · xác suất 1/4</text>
+<rect x="554" y="338" width="171" height="36" rx="8" fill="#eaf6fd" stroke="#86bad9"/><text x="640" y="360">SS · xác suất 1/4</text>
+</g>
+<text x="27" y="407" fill="#2b5774" font-family="Arial,sans-serif" font-size="16">Đúng 1 lần ngửa: NS hoặc SN → P = 2/4 = 1/2; không gộp hai chuỗi thành một kết quả.</text>
+</svg>
