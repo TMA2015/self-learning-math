@@ -10,9 +10,9 @@
 
 ### 1. B22 · Hai đường thẳng vuông góc
 
-**Đọc hình — B22:**
-
 ![Hai đường a,b chéo nhau; tại O dựng a′ song song a và b′ song song b, góc giữa hai phương bằng 90°](../../../../docs/assets/images/thpt/FIG-G11-CHVII-B22-01_R00.svg)
+
+**Đọc hình — B22:**
 
 Quan sát đường **a** và **b** ở hai vị trí không cắt nhau; đừng cố nối đầu mút để lấy góc. Theo các dấu **a′∥a**, **b′∥b**, đưa hai phương về điểm **O** và đọc góc tại O. Nếu thay O bằng điểm khác thì hai phương không đổi, nên góc không đổi.
 
@@ -111,13 +111,13 @@ Chưa; cần chứng cứ hình học về phương hoặc góc thật.
 
 **Từ hai đường đến cả mặt phẳng.** Một chiếc cột nhìn có vẻ đứng thẳng vẫn có thể bị nghiêng về một phía mà ảnh chụp không nhận ra. Nếu chỉ kiểm tra cột vuông góc với **một** đường trên sàn, ta chưa loại trừ được hướng nghiêng khác. Chọn **hai đường cắt nhau** trên cùng mặt sàn thì hai phương độc lập mới đủ kiểm tra cột có vuông góc với toàn bộ sàn hay không. Đây là ý nghĩa của định lí, không phải mẹo ghi nhớ.
 
-**Ví dụ kết nối (đã kiểm toán độc lập với nguồn SGK):** Cho chóp S.ABC, tam giác ABC vuông tại B và SA⊥(ABC). Vì SA⊥BC và AB⊥BC; hai đường SA,AB cắt nhau ở A cùng thuộc (SAB), nên BC⊥(SAB), do đó BC⊥SB. Một kết luận từ “vô số phương” được đưa về hai điều kiện có thể chứng minh.
+**Ví dụ kết nối:** Cho chóp S.ABC, tam giác ABC vuông tại B và SA⊥(ABC). Vì SA⊥BC và AB⊥BC; hai đường SA,AB cắt nhau ở A cùng thuộc (SAB), nên BC⊥(SAB), do đó BC⊥SB. Một kết luận từ “vô số phương” được đưa về hai điều kiện có thể chứng minh.
 
 ### 2. B23 · Đường thẳng vuông góc mặt phẳng
 
-**Đọc hình — B23:**
-
 ![Cột AH vuông góc hai đường AB,AD cắt tại A trong mặt P nên AH vuông góc mặt P](../../../../docs/assets/images/thpt/FIG-G11-CHVII-B23-01_R00.svg)
+
+**Đọc hình — B23:**
 
 Chỉ hai cạnh **AB** và **AD** trong mặt **(P)**, chúng cắt nhau tại **A**. Cột **AH** vuông góc với cả hai: không phải “hai góc vuông là đủ” một cách máy móc, mà vì AB,AD tạo hai hướng không song song cùng nằm trong một mặt. Nếu hai cạnh kiểm tra song song thì không được suy AH⊥(P).
 
@@ -240,9 +240,9 @@ Chưa; cần thêm một đường cắt AB trong nền (ví dụ AD).
 
 ### 3. B24 · Phép chiếu vuông góc và góc đường–mặt
 
-**Đọc hình — B24:**
-
 ![Đoạn AM dốc, AH vuông góc nền P, HM là hình chiếu; góc AMH là góc đường với nền](../../../../docs/assets/images/thpt/FIG-G11-CHVII-B24-01_R00.svg)
+
+**Đọc hình — B24:**
 
 Tìm **A** ở cao, **H** là chân AH⊥(P), **M** ở nền. Đường xiên **AM** chiếu thành **HM**, do đó góc cần đo là **AMH tại M**, không phải góc ở A. Tam giác AHM vuông tại H nên khi biết AH,AM có thể dùng sin(góc AMH)=AH/AM; không lấy nét vẽ phối cảnh làm phép đo.
 
@@ -250,7 +250,7 @@ Tìm **A** ở cao, **H** là chân AH⊥(P), **M** ở nền. Đường xiên *
 
 <!-- AUTHOR_ONLY_SVG_SOURCE: docs/assets/images/thpt/FIG-G11-CHVII-B24-01_R00.svg; BLOB: c98d7df30b87c339336636e00322816a4099681b -->
 
-**Khám phá tương tác:** Mô hình **Đường dốc, hình chiếu và góc** điều khiển độ cao và khoảng ngang của tam giác vuông. Dự đoán góc/độ dài trước khi kéo, quan sát hình thay đổi rồi kiểm bằng Pitago và sin/tan. Mô hình không thay chứng minh định lí ba đường vuông góc.
+**Khám phá tương tác — Đường dốc, hình chiếu và góc:** [Mở mô hình thao tác tại nguồn học liệu](Temp_THPT_TOPIC16_RAMP_ANGLE_R01_SCOPE_CORRECTED_20261113.html). Hãy dự đoán góc và độ dài trước khi điều chỉnh độ cao/khoảng ngang, rồi kiểm bằng Pitago và sin/tan. Mô hình minh họa không thay chứng minh định lí ba đường vuông góc.
 
 <!-- AUTHOR_ONLY_MODEL_REFERENCE: SLM-TOP16-RAMP-ANGLE-R00; FILE: Temp_THPT_TOPIC16_RAMP_ANGLE_R01_SCOPE_CORRECTED_20261113.html; PUBLIC_DISCOVERY_NO_MASTERY -->
 
@@ -371,9 +371,9 @@ Có: BH là hình chiếu của AB lên (P); dùng định lí ba đường vuô
 
 ### 4. B25 · Hai mặt phẳng vuông góc và hình khối đặc biệt
 
-**Đọc hình — B25:**
-
 ![Hai nửa mặt phẳng chung bờ Delta, tiết diện tạo hai tia OU và OV vuông góc Delta, góc UOV đo nhị diện](../../../../docs/assets/images/thpt/FIG-G11-CHVII-B25-01_R00.svg)
+
+**Đọc hình — B25:**
 
 Trước hết chỉ **giao tuyến Δ**, sau đó xem hai tia **OU, OV** cùng vuông góc Δ tại **O** nhưng nằm trên hai mặt khác nhau. **UOV** là góc phẳng của nhị diện đã chọn, có thể tù. Khi câu hỏi nói góc **giữa hai mặt phẳng**, lấy góc không tù giữa hai đường thẳng chứa OU và OV, không tùy tiện giữ góc nhị diện lớn hơn 90°.
 
@@ -545,7 +545,7 @@ Có, theo định lí hai mặt phẳng vuông góc. a phải nằm trong (P) v�
 
 ## 2. Luyện tập
 
-Các bài luyện tập mới theo từng năng lực; học sinh cần nêu giả thiết và giải thích tại sao chọn bước đó trước khi tự mở đáp án. Bài SGK dùng chung chỉ tham chiếu canonical qua metadata; không chép câu/đáp án bản nguồn.
+Các bài luyện tập mới theo từng năng lực; học sinh cần nêu giả thiết và giải thích tại sao chọn bước đó trước khi tự mở đáp án. Khi làm bài dùng chung, mỗi câu giữ một ID và chỉ mở đối chiếu sau khi em đã thử giải.
 
 ### Bài vận dụng 01
 
