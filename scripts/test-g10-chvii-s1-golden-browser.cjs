@@ -126,7 +126,8 @@ const specs={
        const prompt=prompts.nth(item);
        const actualMath=await prompt.locator("mjx-container,.katex").count();
        assert(actualMath>=1,tag+" Vận dụng "+(item+1)+" has unrendered canonical mathematical expression");
-       assert(!/\\\\\(|\\\\\)/.test(await prompt.innerText()),
+       const plainPrompt=await prompt.innerText();
+       assert(!plainPrompt.includes("\\(")&&!plainPrompt.includes("\\)"),
          tag+" Vận dụng "+(item+1)+" exposes raw TeX delimiters");
      }
      const first=blocks.nth(0).locator("details.question").first(),smy=first.locator("summary");
