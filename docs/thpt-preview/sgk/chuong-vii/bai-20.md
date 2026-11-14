@@ -29,7 +29,7 @@
 
         **Đáp án:** Song song phân biệt.
 
-        **Lý do:** Hai pháp tuyến (2,-1) và (4,-2) tỉ lệ 2 lần, nhưng nhân toàn phương trình d1 với 2 cho hằng số 2, không phải 3 của d2.
+        **Lý do:** Hai pháp tuyến \((2,-1)\) và \((4,-2)\) tỉ lệ 2 lần, nhưng nhân toàn phương trình \(d_1\) với 2 cho hằng số 2, không phải 3 của \(d_2\).
 
 
 
@@ -49,9 +49,9 @@
 
     ??? question "Đối chiếu"
 
-        **Đáp án:** 2x-y-4=0.
+        **Đáp án:** \(2x-y-4=0\).
 
-        **Lý do:** n=(1,2) của d, chọn n'=(2,-1) có tích vô hướng 0. Qua P: 2(x-1)-(y+2)=0 ⇒ 2x-y-4=0.
+        **Lý do:** \(\vec n=(1,2)\) của \(d\), chọn \(\vec n'=(2,-1)\) có tích vô hướng 0. Qua \(P\): \(2(x-1)-(y+2)=0\Rightarrow 2x-y-4=0\).
 
 
 
@@ -71,9 +71,9 @@
 
     ??? question "Đối chiếu"
 
-        **Đáp án:** I(2,3).
+        **Đáp án:** \(I(2,3)\).
 
-        **Lý do:** Từ 2x-y=1 ⇒ y=2x-1. Thế vào x+2(2x-1)=8 ⇒ x=2, y=3; kiểm 2+6=8, 4-3=1.
+        **Lý do:** Từ \(2x-y=1\Rightarrow y=2x-1\). Thế vào \(x+2(2x-1)=8\Rightarrow x=2,\ y=3\); kiểm \(2+6=8,\ 4-3=1\).
 
 
 
@@ -101,9 +101,9 @@
 
     ??? question "Đối chiếu"
 
-        **Đáp án:** d(M,d)=2.
+        **Đáp án:** \(d(M,d)=2\).
 
-        **Lý do:** Tử |3·1+4·2−1|=10, mẫu √(3²+4²)=5, nên khoảng cách bằng 10/5=2.
+        **Lý do:** Tử \(\lvert3\cdot1+4\cdot2-1\rvert=10\), mẫu \(\sqrt{3^2+4^2}=5\), nên khoảng cách bằng \(10/5=2\).
 
 
 
@@ -123,9 +123,9 @@
 
     ??? question "Đối chiếu"
 
-        **Đáp án:** 45°.
+        **Đáp án:** \(45^\circ\).
 
-        **Lý do:** Pháp tuyến n1=(1,0), n2=(1,-1). cosφ=|1|/(1·√2)=1/√2 nên φ=45°.
+        **Lý do:** Pháp tuyến \(\vec n_1=(1,0)\), \(\vec n_2=(1,-1)\). \(\cos\varphi=\lvert1\rvert/(1\cdot\sqrt2)=1/\sqrt2\) nên \(\varphi=45^\circ\).
 
 
 
