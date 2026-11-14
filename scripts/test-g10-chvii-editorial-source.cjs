@@ -6,7 +6,7 @@
 const fs=require("node:fs"),path=require("node:path"),cp=require("node:child_process"),
  crypto=require("node:crypto"),assert=require("node:assert/strict");
 const root=path.resolve(__dirname,".."),published="bfc15b552a1ea697edb1327f0a48d7a95bbb73ed";
-const {chviiEditorialReceiptRows,chviiContinuousReceiptRows,chviiAp2ReceiptRows,chviiR02ReceiptRows,chviiClarityReceiptRows,candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
+const {chviiEditorialReceiptRows,chviiContinuousReceiptRows,chviiAp2ReceiptRows,chviiR02ReceiptRows,chviiClarityReceiptRows,chviiWorkFollowupReceiptRows,candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 const blob=data=>{const raw=Buffer.isBuffer(data)?data:Buffer.from(data);return crypto.createHash("sha1").update("blob "+raw.length+"\0").update(raw).digest("hex");};
 const ids=(s,k)=>[...s.matchAll(new RegExp(k+'="([^"]+)"',"g"))].map(m=>m[1]).sort();
 const tex=s=>[...s.matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]/g)].map(m=>(m[1]||m[2]).trim().replace(/\s+/g," "));
@@ -29,7 +29,11 @@ function revealed(s){
 // Preserve every canonical answer and explanation byte-for-byte in meaning.
 // The only permitted difference is the fixed, unrelated, misleading navigation sentence.
 const obsoleteAnswerNote="**Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.";
-const canonicalAnswerText=parts=>parts.map(block=>block.split("\n")
+const canonicalAnswerText=parts=>parts.map(block=>block
+ .replace("Nếu sai, xem `HELP-G10-CHVII-ELLIPSE-TR01`.","")
+ .replace("**Chưa đủ thông tin trạm nào nhận trước** nên chưa thể chọn nhánh. Nếu quên điều kiện này, xem `HELP-G10-CHVII-HYPERBOLA-TR01`.",
+ "**Chưa biết tín hiệu từ trạm A hay B đến máy thu trước**, nên chưa thể chọn nhánh.")
+ .split("\n")
  .map(line=>line.trim()).filter(line=>line&&line!==obsoleteAnswerNote).join("\n")).sort();
 
 const specs={
@@ -38,16 +42,21 @@ const specs={
  21:{count:5,helps:7,figures:3,examples:2,book:["2.1. Phương trình đường tròn","2.2. Phương trình tiếp tuyến của đường tròn"]},
  22:{count:8,helps:10,figures:6,examples:3,book:["2.1. Elip","2.2. Hypebol","2.3. Parabol","2.4. Một số ứng dụng của ba đường conic"]}
 };
-const rows=chviiEditorialReceiptRows(),followOn=chviiContinuousReceiptRows(),ap2=chviiAp2ReceiptRows(),r02=chviiR02ReceiptRows(),clarity=chviiClarityReceiptRows();
+const rows=chviiEditorialReceiptRows(),followOn=chviiContinuousReceiptRows(),ap2=chviiAp2ReceiptRows(),r02=chviiR02ReceiptRows(),clarity=chviiClarityReceiptRows(),work=chviiWorkFollowupReceiptRows();
 assert.equal(rows.size,4,"Exactly four signed Chapter VII original rows required");
 assert.equal(followOn.size,4,"Exactly four source-locked continuous-explanation follow-on rows required");
 assert.equal(ap2.size,4,"Exactly four AP2 TeX-normalization source rows required");
 assert.equal(r02.size,4,"Four reviewed R02 lesson rows required");
 assert.equal(clarity.size,4,"Four scoped learner-clarity correction rows required");
+assert.equal(work.size,4,"Four Work Browser follow-up rows required");
 let allTry=0,allHelp=0,allFigures=0,allExamples=0;
 for(const [lessonStr,info]of Object.entries(specs)){
- const n=Number(lessonStr),name="B"+n,row=rows.get(name),delta=followOn.get(name),display=ap2.get(name),teaching=r02.get(name),clean=clarity.get(name);
- assert(row&&delta&&display&&teaching&&clean,"Missing reviewed source→R02→clarity chain "+name);
+ const n=Number(lessonStr),name="B"+n,row=rows.get(name),delta=followOn.get(name),display=ap2.get(name),teaching=r02.get(name),clean=clarity.get(name),workUX=work.get(name);
+ assert(row&&delta&&display&&teaching&&clean&&workUX,"Missing reviewed R02→clarity→Work UX chain "+name);
+ assert.equal(workUX.baseline,clean.candidate,name+" Work corrections must extend verified learner clarity source");
+ assert.equal(workUX.moved,info.count,name+" Work must preserve item IDs");
+ assert.equal(workUX.helps,info.helps,name+" Work must preserve HELP IDs");
+ assert.equal(workUX.examples,info.examples,name+" Work must preserve worked examples");
  assert.equal(clean.baseline,teaching.candidate,name+" clarity baseline is not the reviewed R02 candidate");
  assert.equal(clean.moved,info.count,name+" clarity changed canonical count");
  assert.equal(clean.helps,info.helps,name+" clarity changed HELP count");
@@ -69,8 +78,8 @@ for(const [lessonStr,info]of Object.entries(specs)){
  assert.equal(old.status,0,"Original published Git source inaccessible "+rel+" "+old.stderr);
  const baseline=old.stdout;
  assert.equal(blob(baseline),row.baseline,name+" published source baseline SHA mismatch");
- assert.equal(blob(bytes),clean.candidate,name+" R02 learner clarity candidate differs from receipt");
- assert.equal(candidateG10KnowledgeBlob(n),clean.candidate,name+" canonical router must point to final learner source");
+ assert.equal(blob(bytes),workUX.candidate,name+" Work Browser corrected Markdown differs from receipt");
+ assert.equal(candidateG10KnowledgeBlob(n),workUX.candidate,name+" canonical router must point to Work corrected candidate");
  assert.equal(row.moved,info.count,name+" 25 First Try count source receipt");
  assert.equal(row.helps,info.helps,name+" 33 HELP source receipt");
  assert.equal(row.examples,info.examples,name+" example count source receipt");
@@ -134,6 +143,17 @@ for(const [lessonStr,info]of Object.entries(specs)){
   assert(examples.includes("Mở rộng có hướng dẫn — Tiệm cận của hypebol"),
    name+" optional hyperbola example must be labeled in the Examples tab");
  }
+ // Work Browser: label every D6 accordion by a distinctive learner error.
+ const remediationTitles=[...rem.matchAll(/^    \?\?\? tip "([^"]+)"$/gm)].map(m=>m[1]);
+ assert.equal(remediationTitles.length,info.count,name+" one labelled D6 card per voluntary item");
+ assert.equal(new Set(remediationTitles).size,info.count,name+" identical D6 titles prevent targeted remediation");
+ assert(!remediationTitles.includes("Tự khắc phục theo năm bước"),name+" useless repeated remediation headings remain");
+ assert(!/HELP-G10-CHVII-[A-Z0-9-]+`/.test(d),name+" raw HELP IDs leaked into open answer");
+ if(n===20)assert(!/Hình bên cạnh/.test(examples),name+" worked example points to a missing figure");
+ if(n===22){
+  assert(!/B nhận trước|trạm nào nhận trước|A đến trước/.test(d),name+" ambiguous source receiver description");
+  assert(d.includes("tín hiệu từ trạm A hay B đến máy thu trước"),name+" receiver must be explicit");
+ }
  assert(!/Hãy tự giải từng câu Tự thử trước khi mở Đối chiếu/.test(d),name+" redundant global First Try instruction remains");
  const learning=d.slice(d.indexOf("### Ví dụ trực quan"),d.indexOf("### Thuật ngữ, kiến thức và kỹ năng"));
  assert(!/^    #### /m.test(learning),name+" discovery still fragmented into mini subheadings");
@@ -180,7 +200,7 @@ for(const [lessonStr,info]of Object.entries(specs)){
  assert(!/^\s{4}\?\?\? question "Tự mở đáp án sau khi đã tự làm"/m.test(s),name+" non-Golden reveal label");
  assert.notDeepEqual(ids(s.replace('data-thpt-first-try-id="','data-thpt-first-try-id="CORRUPTED-'),"data-thpt-first-try-id"),
   ids(baseline,"data-thpt-first-try-id"),name+" negative item-id mutation failed");
- assert.notEqual(blob(s+" "),clean.candidate,name+" negative source SHA mutation failed");
+ assert.notEqual(blob(s+" "),workUX.candidate,name+" negative source SHA mutation failed");
  assert.notDeepEqual([...knowledge.replace(info.book[0],"WRONG_S1_TITLE").matchAll(/^    ### ([^\n]+)/gm)].map(x=>x[1]),
   info.book,name+" negative SGK title mutation failed");
  allTry+=info.count;allHelp+=info.helps;allFigures+=info.figures;allExamples+=info.examples;
