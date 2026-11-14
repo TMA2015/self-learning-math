@@ -54,12 +54,12 @@ CURRENT_PR: DRAFT_AUTHORING_NOT_MERGED
 - [x] A7_PUBLIC_PRIVATE_BOUNDARY — Zero imported private RD1; only 12 public replay placements are self-check without Mastery, no official independent TOPIC_READINESS and no learner account data changed.
 
 ## PED1–PED6 / Q09–Q14
-- [x] PED1 — Explain why coordinates are needed for actual 3D drone, barrier, radar, plane and sphere before equations.
-- [x] PED2 — Self-contained vector→Oxyz→normal/cross product→line/plane/angle/sphere prerequisites; no mandatory prior CĐ13 or Chuyên đề other than this independent path.
-- [x] PED3 — Start intuition and conditions before formal equations, with zero vector, zero normal, skew/intersection, denominator0 and sphere-case limits.
-- [x] PED4 — 3 original reviewed source CHII SVGs and 7 new **white** accurate labeled/svg-alt diagrams; 6 old G12 ChV PNGs kept unchanged as unreviewed historical source, not displayed in learner R02; one original offline HTML two-scene model.
-- [x] PED5 — 40 method/condition family checks per original source, detailed worked examples, additional multidiscipline radar W07 proof with distance minimization and time interval.
-- [x] PED6 — Every outcome has local optional FirstTry answer + targeted D6 and Practice route, no automatic mastery from public model or reveal.
+- [x] PED1_MOTIVATION — Explain why coordinates are needed for actual 3D drone, barrier, radar, plane and sphere before equations.
+- [x] PED2_PREREQUISITES — Self-contained vector→Oxyz→normal/cross product→line/plane/angle/sphere prerequisites; no mandatory prior CĐ13 or Chuyên đề other than this independent path.
+- [x] PED3_MEANING_FIRST — Start intuition and conditions before formal equations, with zero vector, zero normal, skew/intersection, denominator0 and sphere-case limits.
+- [x] PED4_EXPLAINED_VISUAL — 3 original reviewed source CHII SVGs and 7 new **white** accurate labeled/svg-alt diagrams; 6 old G12 ChV PNGs kept unchanged as unreviewed historical source, not displayed in learner R02; one original offline HTML two-scene model.
+- [x] PED5_REASONED_EXAMPLES — 40 method/condition family checks per original source, detailed worked examples, additional multidiscipline radar W07 proof with distance minimization and time interval.
+- [x] PED6_FIRST_TRY_REMEDIATION — Every outcome has local optional FirstTry answer + targeted D6 and Practice route, no automatic mastery from public model or reveal.
 
 ## RELEASE R1–R5 / P1–P2 — NOT TESTED ON WEBSITE
 - [ ] R1_INTEGRATED_CURRENT_MAIN — No runtime integration or owner-selected final Topic ID/route. Reconcile all concurrent Draft ready/REGISTER rows and source/receipt/matrix SHAs on true new integrated main.
