@@ -16,11 +16,11 @@ ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_O
 ACADEMIC_SOURCE_BLOB: f84dee296e2880c2d17fa2306c44458031c057cd
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC18_R02_AUTHOR_SELF_QA_RECEIPT_20261114.md (SIGNED_AUTHOR_SELF_VERIFIED; NOT independent NotebookLM)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_R02_AUTHOR_SELF_QA_RECEIPT_20261114.md
-REVIEW_RECEIPT_BLOB: fff53ada4d2ec2b42d89f70b99c3d60f6793fe6f
+REVIEW_RECEIPT_BLOB: f075d4795b28e03e5f437af02f6574ec45772260
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R02_247_CANONICAL_OUTCOME_MATRIX_20261114.md
 AUTHOR_A1_A7_BLOB: db9b91dd0143e3b0fd8609cb5c5904bf73b86cec
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC18-OXYZ-FULL-R02_HANDOFF_V2_20261114.md
-AUTHOR_HANDOFF_BLOB: f11a8b8af7284326424944b92ab1c0a47a8a97ae
+AUTHOR_HANDOFF_BLOB: 3777d898ba24bed05e5eec25577158e782b06a98
 Q01_FAMILY_AUDIT_BLOB: 052b06ea90d6191f125aef72f42d74dd9a6d86c8
 Q18_SUBSTANTIVE_AUDIT_BLOB: 4785b3be15b49f968de27fad99fc311cb2f8bb1b
 S1_ORIGINAL_G12_CHII_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
@@ -45,7 +45,7 @@ CURRENT_PR: DRAFT_AUTHORING_NOT_MERGED
 **AUTHORING CONTENT_READY (source-only)**: 40 original SGK outcome (G12 ChII B06–B08=16, ChV B14–B17=24), 247 distinct PUBLIC canonical item IDs (160 old frozen SGK pointers; 40 new FirstTry; 40 new Practice; 7 Written /4), only 12 replay selfchecks `CLIENT_SELF_CHECK_NO_MASTERY`. Exactly 3 learner pages **Kiến thức / Luyện tập / Tự kiểm tra**, no Topic Core; one continuous drone–vector–plane–line–angle–sphere–radar teaching flow. 10 correctly attributed SVGs (3 unchanged G12 CHII, 7 new white source-original), 1 offline interactive model with 2 scenes, 10/10 DOM math checks. Historical catalog CD18 NOT an owner-selected runtime route.
 
 ## AUTHORING A1–A7
-- [x] A1_SOURCE_SNAPSHOT — Source f84dee296e2880c2d17fa2306c44458031c057cd; signed author Q18 receipt fff53ada4d2ec2b42d89f70b99c3d60f6793fe6f; 247-ID matrix db9b91dd0143e3b0fd8609cb5c5904bf73b86cec; one V2 d33874d4066ea07489c69cb0548f2e2fc9b3cab7. One active canonical R02 learner source, earlier R01 fragments retired.
+- [x] A1_SOURCE_SNAPSHOT — Source f84dee296e2880c2d17fa2306c44458031c057cd; signed author Q18 receipt f075d4795b28e03e5f437af02f6574ec45772260; 247-ID matrix db9b91dd0143e3b0fd8609cb5c5904bf73b86cec; one V2 d33874d4066ea07489c69cb0548f2e2fc9b3cab7. One active canonical R02 learner source, earlier R01 fragments retired.
 - [x] A2_SGK_SBT_SCOPE — G12 KNTT T1 ChII B06–B08 and T2 ChV B14–B17, original source SHAs above and original printed page scope, 40 canonical outcomes. G12 SBT T2 B14 printed p25 genuinely missing; `SBT_REFERENCE_GAP_DOCUMENTED` (secondary family reference only) is NOT automatic Q01 Core blocker per owner-effective v3.1.0 §II-A. No unseen exercises claimed read or reproduced.
 - [x] A3_NOTEBOOKLM_VERDICT — AUTHOR_SELF_VERIFIED exact source Academic+PED Q01–Q18, 40 per-outcome family/condition/math/firsttry/Practice/D6 checks, 7 Writer rubric /4, no impersonation of NotebookLM independent verdict.
 - [x] A4_ITEM_OUTCOME_IDS — Exactly 40 lesson/outcome IDs, 247 public unique item IDs mapped in single V2; original 160 SGK questions/keys/rubrics immutable and referenced once, 12 replay placements not cloned; TOP18-O23 B14 O07 optional AFTER B17.
