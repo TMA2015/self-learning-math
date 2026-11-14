@@ -590,7 +590,7 @@ Dùng các chữ số {0,1,2,3,4}, lập số tự nhiên **ba chữ số lẻ**
 - Hàng chục còn 3 lựa chọn và không lặp — **1 điểm**.
 - Nhân 2×3×3=18, nêu đây là số có ba chữ số — **1 điểm**.
 
-**D6:** Nếu sai, quay lại phần Kiến thức của TOP19-O04, giải lại câu T/P cùng outcome và chỉ mở lời giải sau khi tự thử. Không sử dụng bài đã xem đáp án làm chứng cứ Tự kiểm tra độc lập.
+**D6 — nếu chưa làm được:** Nếu ra 24, em đang đếm cả chữ số 0 ở hàng trăm hoặc không cố định hàng đơn vị lẻ. Viết ba ô [trăm][chục][đơn vị], đặt đơn vị trước (1 hoặc 3), rồi loại 0 và chữ số đã dùng ở hàng trăm. Làm lại T04 (đuôi 0/2 và giới hạn chữ số đầu) trước khi giải lại W01. Đáp án đã xem không được dùng làm chứng cứ Tự kiểm tra độc lập.
 
 </details>
 
@@ -610,7 +610,7 @@ Có 5 học sinh nữ và 4 học sinh nam. Chọn một nhóm gồm đúng 2 n�
 - Tính 10×6=60 nhóm không phân vai — **1 điểm**.
 - Chọn trưởng trong nhóm 4 cách, ra 240 và phân biệt 60 với 240 — **1 điểm**.
 
-**D6:** Nếu sai, quay lại phần Kiến thức của TOP19-O08, giải lại câu T/P cùng outcome và chỉ mở lời giải sau khi tự thử. Không sử dụng bài đã xem đáp án làm chứng cứ Tự kiểm tra độc lập.
+**D6 — nếu chưa làm được:** Nếu ra 60, em mới chọn nhóm và quên phân vai trưởng; nếu ra 240 ngay khi chỉ hỏi số nhóm, em đã thêm vai không có trong đề. Tách câu trả lời thành hai hàng: 10×6=60 nhóm và **mỗi nhóm 4 chọn trưởng**. Luyện lại T08/P08 để nhớ chỉ dùng tổ hợp khi không phân vai; sau đó giải lại W02. Đáp án đã xem không được dùng làm chứng cứ Tự kiểm tra độc lập.
 
 </details>
 
@@ -630,7 +630,7 @@ Với đa thức P(x)=(x−2)^5, hãy **(a)** tìm hệ số của x², **(b)** 
 - Kết luận hệ số x² là −80, giải thích dấu âm — **1 điểm**.
 - Tính P(1)=−1 và nêu lý do tổng hệ số — **1 điểm**.
 
-**D6:** Nếu sai, quay lại phần Kiến thức của TOP19-O10, giải lại câu T/P cùng outcome và chỉ mở lời giải sau khi tự thử. Không sử dụng bài đã xem đáp án làm chứng cứ Tự kiểm tra độc lập.
+**D6 — nếu chưa làm được:** Nếu hệ số x² là +80, em đã bỏ dấu của (−2)³. Trước khi thế số, giải **5−k=2 ⇒ k=3**, sau đó ghi ba lần nhân hạng tử âm nên hệ số âm. Nếu tổng hệ số không bằng −1, hãy thay x=1 vào **cả đa thức P(x)** chứ không cộng dấu từng hạng theo cảm tính. Luyện lại T10/P10 về số lần chọn hạng tử âm; tiếp đó kiểm P(1) như O12 rồi giải lại W03. Đáp án đã xem không được dùng làm chứng cứ Tự kiểm tra độc lập.
 
 </details>
 
