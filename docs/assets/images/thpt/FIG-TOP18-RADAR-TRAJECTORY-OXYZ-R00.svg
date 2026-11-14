@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="420" viewBox="0 0 780 420" role="img" aria-labelledby="radar-title radar-desc">
+<title id="radar-title">Bài toán radar: đường bay y=4 cắt đường tròn tâm O bán kính 5 trong mặt phẳng Oxy</title>
+<desc id="radar-desc">Đồ thị trên mặt phẳng z bằng 0. O tại gốc; bán kính vùng cầu R=5 km cho tiết diện đường tròn trong Oxy. Đường bay M(t)=(6-t;4;0), t không âm, đi từ A=(6;4) về phía âm của Ox. Máy bay vào biên tại t=3 ở (3;4), gần O nhất tại t=6 ở (0;4), ra biên tại t=9 ở (-3;4). Khoảng cách nhỏ nhất 4 km.</desc>
+<rect width="780" height="420" rx="16" fill="#ffffff"/>
+<rect x="12" y="12" width="756" height="396" rx="13" fill="#ffffff" stroke="#d5e2f0" stroke-width="2"/>
+<text x="34" y="43" fill="#184e81" font-family="Arial, sans-serif" font-size="20" font-weight="700">Đường bay qua vùng phủ radar</text>
+<text x="34" y="66" fill="#4a627c" font-family="Arial, sans-serif" font-size="13">Thiết diện Oxy (z = 0) — hình có tỉ lệ để đọc tọa độ, đơn vị km</text>
+<defs><marker id="arrowL" markerWidth="8" markerHeight="8" refX="4" refY="3" orient="auto"><path d="M7 0 L1 3 L7 6" fill="none" stroke="#2976ba" stroke-width="1.5"/></marker></defs>
+<path d="M70 215 H442 M265 354 V78" fill="none" stroke="#9bacbf" stroke-width="1.7"/>
+<path d="M442 215 l-10 -6 m10 6 l-10 6 M265 78 l-6 10 m6 -10 l6 10" fill="none" stroke="#9bacbf" stroke-width="1.7"/>
+<text x="444" y="232" font-family="Arial, sans-serif" font-size="14" fill="#4a627c">x</text>
+<text x="274" y="82" font-family="Arial, sans-serif" font-size="14" fill="#4a627c">y</text>
+<circle cx="265" cy="215" r="120" fill="#edf6ff" fill-opacity=".7" stroke="#2c76bc" stroke-width="2.8"/>
+<path d="M140 119 H423" stroke="#2a74b5" stroke-width="3" marker-end="url(#arrowL)"/>
+<path d="M337 119 H193" stroke="#20866d" stroke-width="7" stroke-linecap="round"/>
+<path d="M265 215 V119" stroke="#bf6a2e" stroke-width="2.7" stroke-dasharray="6 5"/>
+<path d="M265 215 L385 215" stroke="#2c76bc" stroke-width="2" stroke-dasharray="4 5"/>
+<circle cx="265" cy="215" r="5" fill="#184e81"/>
+<circle cx="409" cy="119" r="5" fill="#1f6aab"/>
+<circle cx="337" cy="119" r="6" fill="#17846c" stroke="white" stroke-width="2"/>
+<circle cx="265" cy="119" r="5.5" fill="#ce7a23" stroke="white" stroke-width="2"/>
+<circle cx="193" cy="119" r="6" fill="#17846c" stroke="white" stroke-width="2"/>
+<text x="276" y="234" font-family="Arial, sans-serif" font-size="14" fill="#1b507a">O(0;0)</text>
+<text x="275" y="171" font-family="Arial, sans-serif" font-size="14" fill="#a35822">d = 4</text>
+<text x="342" y="235" font-family="Arial, sans-serif" font-size="13" fill="#1b609e">R = 5</text>
+<text x="405" y="105" font-family="Arial, sans-serif" font-size="13" fill="#1b609e">A</text>
+<text x="325" y="105" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#136951">t=3</text>
+<text x="250" y="104" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#a35822">t=6</text>
+<text x="177" y="105" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#136951">t=9</text>
+<text x="156" y="275" font-family="Arial, sans-serif" font-size="13" fill="#3470a2">Vòng tròn phủ sóng: x²+y²=25</text>
+<rect x="477" y="96" width="272" height="256" rx="12" fill="#f7faff" stroke="#d1dfef"/>
+<text x="495" y="127" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#154e80">M(t) = (6−t; 4; 0)</text>
+<text x="495" y="154" font-family="Arial, sans-serif" font-size="14" fill="#36546c">t ≥ 0 (giờ)</text>
+<text x="495" y="182" font-family="Arial, sans-serif" font-size="14" fill="#36546c">OM(t)² = (t−6)² + 16</text>
+<text x="495" y="210" font-family="Arial, sans-serif" font-size="14" fill="#aa5a1e">Gần O nhất: 4 km, t=6</text>
+<text x="495" y="241" font-family="Arial, sans-serif" font-size="14" fill="#176d58">Vào biên: t=3 (3;4)</text>
+<text x="495" y="270" font-family="Arial, sans-serif" font-size="14" fill="#176d58">Ra biên: t=9 (−3;4)</text>
+<text x="495" y="304" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#154e80">Trong vùng: 3 &lt; t &lt; 9</text>
+<text x="495" y="326" font-family="Arial, sans-serif" font-size="12" fill="#52677e">Xanh lá: phần đường bay trong vùng.</text>
+<text x="34" y="385" font-family="Arial, sans-serif" font-size="12" fill="#52677e">Sơ đồ gắn với bài Written W07, trực quan hóa dữ kiện đã kiểm; không phải đề đánh giá độc lập.</text>
+</svg>
