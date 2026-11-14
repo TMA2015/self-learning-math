@@ -70,7 +70,20 @@
 
 **Separate omissions:** All **eight public B05 C/P stems** lack a distinct calculator/angle-inverse task; there is no learner exercise to discover the calculator pitfall described by the SGK. Public B06 items cover a broader set of sine/cosine/area/Heron/application methods than B05, though **some repeat the same geometry**.
 
-## 5. No artificial PASS and follow-on
+
+## 5. Chapter III Written / Readiness entrypoints (separate direct source check)
+
+**Chapter public flow:** [`chuong-iii/luyen-tap.md`](https://github.com/TMA2015/self-learning-math/blob/b103cd91cd32a2ff3accd1ae14c24870330ef9a2/docs/thpt-preview/sgk/chuong-iii/luyen-tap.md) blob `d77e74a4f55580cda867c7243a01d42018707bbe` shows **B05 Core 2, Practice 6 and B06 Core 2, Practice 6** with launch buttons, and links to Written and Chapter Self-check. Static markup alone cannot confirm modals/keyboard operation or actual exercise completion. [`chuong-iii/tu-kiem-tra-chuong.md`](https://github.com/TMA2015/self-learning-math/blob/b103cd91cd32a2ff3accd1ae14c24870330ef9a2/docs/thpt-preview/sgk/chuong-iii/tu-kiem-tra-chuong.md) blob `8a850bb64b389038ff82a56a4b17ba78913824b3` announces 14 questions and Final Submit, displays `data-g10-chapter-selfcheck="CHIII"`. **No verified runtime Q16 privacy/Mastery behavior or proof of held-out independence follows from this HTML.** Do not reproduce protected readiness stems/keys in the audit.
+
+**Written self-check library** [`tu-luan-chuong-iii.md`](https://github.com/TMA2015/self-learning-math/blob/b103cd91cd32a2ff3accd1ae14c24870330ef9a2/docs/thpt-preview/thu-vien/tu-luan-chuong-iii.md) blob `271794ec365b038ff09fa7f3a9be47c3a54110d3` contains two visible canonical ID cards, `THPT-G10-CHIII-W05` and `THPT-G10-CHIII-W06-ANCHOR`; both are *formative self-reveal*, explicitly **no automatic Mastery**, not hidden independent assessment.
+
+- **W05 distinct real-world transfer:** Ferris wheel center at 12m, radius 10m, angle 150° → `x=−5√3`m, `y=5`m, height=17m; geometrically correct. This provides *application* even though no calculator task in public C/P.
+- **W06 distinct geometry transfer:** sides 9,10,17 satisfy triangle inequality; `cos A=(100+81−289)/180=−3/5`, `p=18`, Heron `S=36`m², `r=2`m, `R=85/8`m, cost=4,320,000 đồng. All checked values correct. This is a useful different triangle from the Knowledge examples.
+- **P2 Written rubric clarity:** point weights sum to **7** in each Written card; **no explicit “thang 7 điểm” label** in its rubric. This is *not mathematically wrong* and no requirement that every self-check must total 10 was observed; check whether this is an intentional 7-point rubric or incomplete normalization before showing a score. Do not silently rescale scores or modify rubrics.
+
+**Chapter readiness state:** `PUBLIC_FORMATIVE_WRITTEN_SOURCE_REVIEWED` / `SELF_CHECK_ENTRYPOINT_EXISTS` / `Q15_Q16_RUNTIME_NOT_VERIFIED` / `NO_CHAPTER_PASS`.
+
+## 6. No artificial PASS and follow-on
 
 - Four Golden tab shells + two actual SVG source files with primitives **do not** demonstrate readable mobile diagrams or successful self-learning.
 - B05 `P1 S1 CORE_SCOPE_HOLD`; B06 `REWRITE_SECTION`, with specific per-outcome trace; old approved snapshot review history **not erased**.
