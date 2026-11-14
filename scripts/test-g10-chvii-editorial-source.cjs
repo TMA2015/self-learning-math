@@ -154,8 +154,27 @@ for(const [lessonStr,info]of Object.entries(specs)){
   name+" missing one clear source-level solution for every example");
  assert(!/Ví dụ do dự án biên soạn|Ví dụ tự biên soạn|Lưu ý về phạm vi Core|outcome Core|RD1/.test(s),
   name+" review metadata exposed in learner-facing source");
+ // Narrow, owner-requested exceptions: answer-preview math in 1.1 was
+ // removed to let students reason before seeing formulas; B22 asymptotes
+ // remain in the Guided Extension, not the compulsory S1 2.2 section.
+ const editorialOmissions={
+  19:new Set(["2x+y=6","\\vec n=(2,1)","\\vec u=(1,-2)","\\vec u\\cdot\\vec n=2-2=0"]),
+  20:new Set(),
+  21:new Set(["\\sqrt{(x-2)^2+(y-1)^2}=3","(x,y)","(x-2)^2+(y-1)^2=9"]),
+  22:new Set(["y=\\pm\\dfrac ba x","y=\\pm4x/3","y=\\pm bx/a"])
+ }[n];
  const more=new Map();for(const f of tex(s))more.set(f,(more.get(f)||0)+1);
- for(const f of tex(baseline)){const v=more.get(f)||0;assert(v>=1,name+" original math expression missing "+f.slice(0,90));more.set(f,v-1);}
+ for(const formula of tex(baseline)){
+  const v=more.get(formula)||0;
+  if(!v){
+   assert(editorialOmissions.has(formula),
+     name+" unexpected removal of approved mathematical expression "+formula.slice(0,90));
+   continue;
+  }
+  more.set(formula,v-1);
+ }
+ assert.equal(editorialOmissions.size,({19:4,20:0,21:3,22:3})[n],
+   name+" reviewed math exception list drift");
  assert.equal((s.match(/^    \\\[$/gm)||[]).length,(s.match(/^    \\\]$/gm)||[]).length,name+" math display delimiters malformed");
  assert(!/data-mastery-credit|data-mastery-write|data-thpt-readiness/.test(s),name+" official scoring/mastery in Knowledge");
  assert(!/^\s{4}\?\?\? question "Tự mở đáp án sau khi đã tự làm"/m.test(s),name+" non-Golden reveal label");
