@@ -382,11 +382,11 @@ M=(1,2,1).
 **Từ vị trí một vật đến cả một bức tường.** Ở chặng trước, ta biết drone sau t giây ở M(t)=(1+t;1;2+t). Bây giờ xét tấm chắn có phương trình **(P): x+y+z=6**. Phương trình không cho một điểm đơn lẻ: bất cứ điểm nào có tổng ba tọa độ bằng 6 đều nằm trên tấm chắn ấy. Vectơ n=(1;1;1) vuông góc với mặt, nên được gọi là *pháp tuyến*. Hãy thử thế M(0)=(1;1;2): tổng là 4, chưa thuộc tấm chắn. Bao giờ tổng đạt 6? Ta sẽ tìm ngay khi học phương trình đường thẳng.
 
 
-![Hình SGK B14 về pháp tuyến và mặt phẳng trong Oxyz](../../../../docs/assets/images/thpt/Temp_FIG-G12-CHV-B14-R00.png)
+![Mặt phẳng P: M₀, hai hướng u,v và pháp tuyến n](../../../../docs/assets/images/thpt/FIG-TOP18-B14-NORMAL-WHITE-R00.svg)
 
-**Đọc hình:** Hãy phân biệt một hướng nằm trong mặt phẳng và một pháp tuyến vuông góc mặt. Công thức Ax+By+Cz+D=0 dùng pháp tuyến (A,B,C) khác vectơ 0; điều kiện thuộc mặt được kiểm bằng thế tọa độ, không đo góc hình vẽ.
+**Đọc hình:** Chỉ M₀ thuộc (P), hai vectơ u,v không cùng phương và pháp tuyến n khác 0. Kiểm n·u=n·v=0; hình phối cảnh không dùng để đo góc.
 
-<!-- AUTHOR_VISUAL_PROVENANCE: docs/assets/images/thpt/Temp_FIG-G12-CHV-B14-R00.png; EXACT_SOURCE_BLOB: 5763cbd3c555a40e2644e9666611a7b4ecaa4070; ORIGINAL_SOURCE_REUSED_NOT_DUPLICATED; PNG_LABEL_UAT_PENDING -->
+<!-- AUTHOR_TOPIC18_WHITE_SVG: docs/assets/images/thpt/FIG-TOP18-B14-NORMAL-WHITE-R00.svg; NEW_SOURCE_BLOB: 353ab2fb6f070c03e7895706fd68362c73904fc7; WHITE_BACKGROUND=YES; ORIGINAL_SGK_PNG_REFERENCE_ONLY=Temp_FIG-G12-CHV-B14-R00.png; ORIGINAL_PNG_BLOB=5763cbd3c555a40e2644e9666611a7b4ecaa4070; ORIGINAL_PNG_NOT_VISUALLY_QA_VERIFIED -->
 
 #### 17. Vectơ pháp tuyến từ hai vectơ chỉ phương 
 
@@ -513,18 +513,18 @@ Trùng nhau do chia phương trình Q cho 2 thu đúng P.
 **Tiếp tục chuyến bay đã biết.** Drone có điểm xuất phát A=(1;1;2) và hướng v=(1;0;1), do đó đường bay là M(t)=(1+t;1;2+t). Thế vào (P):x+y+z=6, ta được (1+t)+1+(2+t)=6, tức **4+2t=6**; suy ra **t=1 giây**, vị trí gặp tấm chắn **M(1)=(2;1;3)**. Kiểm lại: 2+1+3=6. Một tham số chung cho đủ ba tọa độ chính là cách giữ cho ba phép tính đang nói về *cùng một điểm trên đường bay*.
 
 
-![Hình bổ sung B15 minh họa hai đường chéo nhau](../../../../docs/assets/images/thpt/Temp_FIG-G12-CHV-B151-R00.png)
+![Đường thẳng qua M₀ với hướng u và điểm M(t)](../../../../docs/assets/images/thpt/FIG-TOP18-B15-LINE-WHITE-R00.svg)
 
-**Đọc hình:** Hai đường nhìn như cắt trên phép chiếu có thể không có một cặp tham số t,s thỏa đủ ba tọa độ. Hãy kiểm sự khác nhau của tọa độ z trước khi kết luận cắt hay chéo.
+**Đọc hình:** Xác định M₀, hướng u khác 0; M(t)=M₀+t u có cùng tham số t ở đủ ba tọa độ. Tại t=0 là M₀, tại t=1 là M₀+u.
 
-<!-- AUTHOR_VISUAL_PROVENANCE: docs/assets/images/thpt/Temp_FIG-G12-CHV-B151-R00.png; EXACT_SOURCE_BLOB: 447205394c355531845746ccf3a2474a2e910974; ORIGINAL_SOURCE_REUSED_NOT_DUPLICATED; PNG_LABEL_UAT_PENDING -->
+<!-- AUTHOR_TOPIC18_WHITE_SVG: docs/assets/images/thpt/FIG-TOP18-B15-LINE-WHITE-R00.svg; NEW_SOURCE_BLOB: d99c0dd13170111f1b72aededc843d64c3ada4d8; WHITE_BACKGROUND=YES; ORIGINAL_SGK_PNG_REFERENCE_ONLY=Temp_FIG-G12-CHV-B15-R00.png; ORIGINAL_PNG_BLOB=8991b0aaa4e532c0b7b8284608462b2286035733; ORIGINAL_PNG_NOT_VISUALLY_QA_VERIFIED -->
 
 
-![Hình SGK B15 về đường thẳng với điểm đi qua và vectơ chỉ phương](../../../../docs/assets/images/thpt/Temp_FIG-G12-CHV-B15-R00.png)
+![Hai đường giao hình chiếu Oxy nhưng khác cao độ z](../../../../docs/assets/images/thpt/FIG-TOP18-B15-SKEW-WHITE-R00.svg)
 
-**Đọc hình:** Một đường thẳng được kiểm bởi một điểm và một vectơ chỉ phương khác 0. Nhìn nhãn điểm/hướng trong hình rồi so với M=M0+t u; đừng đọc các góc 3D từ độ nghiêng nét giấy.
+**Đọc hình:** Khung trái chiếu lên Oxy trông có giao; khung phải d₁ có z=0, d₂ có z=2 nên không giao trong không gian. Hai hướng không cùng phương thì chúng chéo nhau.
 
-<!-- AUTHOR_VISUAL_PROVENANCE: docs/assets/images/thpt/Temp_FIG-G12-CHV-B15-R00.png; EXACT_SOURCE_BLOB: 8991b0aaa4e532c0b7b8284608462b2286035733; ORIGINAL_SOURCE_REUSED_NOT_DUPLICATED; PNG_LABEL_UAT_PENDING -->
+<!-- AUTHOR_TOPIC18_WHITE_SVG: docs/assets/images/thpt/FIG-TOP18-B15-SKEW-WHITE-R00.svg; NEW_SOURCE_BLOB: 1683f44f7d159081caca47152c1bf75c16440488; WHITE_BACKGROUND=YES; ORIGINAL_SGK_PNG_REFERENCE_ONLY=Temp_FIG-G12-CHV-B151-R00.png; ORIGINAL_PNG_BLOB=447205394c355531845746ccf3a2474a2e910974; ORIGINAL_PNG_NOT_VISUALLY_QA_VERIFIED -->
 
 #### 24. Vectơ chỉ phương và phương trình tham số đường thẳng 
 
@@ -671,18 +671,18 @@ Tại O=(0,0,0) với t=s=0.
 **Vì sao độ dốc không phải góc với pháp tuyến?** Hướng drone v=(1;0;1) có độ tăng cao 1 m cho mỗi 1 m chuyển dời theo Ox, nên góc giữa đường bay và mặt phẳng sàn Oxy bằng **45°**. Nếu chuyển sang bức tường (P):x+y+z=6, phải dùng pháp tuyến n=(1;1;1): vì v·n=2, |v|=√2, |n|=√3 nên sinθ=2/√6. Góc đổi vì mặt dùng để so đã đổi. Không được dùng cùng một góc chỉ vì mũi tên bay không thay đổi.
 
 
-![Hình bổ sung B16 phân biệt góc hai mặt và góc đường–mặt](../../../../docs/assets/images/thpt/Temp_FIG-G12-CHV-B161-R00.png)
+![Góc đường d với hình chiếu d′ lên mặt phẳng P](../../../../docs/assets/images/thpt/FIG-TOP18-B16-LINE-PLANE-ANGLE-WHITE-R00.svg)
 
-**Đọc hình:** Đọc cặp pháp tuyến n1,n2 để thấy góc hai mặt dùng cos trị tuyệt đối. Khi một đường tạo góc với một mặt, công thức dùng sin do quan hệ với pháp tuyến.
+**Đọc hình:** Đọc d, d′ trong (P), pháp tuyến n và góc θ. Vì góc đường–mặt là với hình chiếu nên dùng sinθ=|u·n|/(|u||n|), không phải góc trực tiếp với n.
 
-<!-- AUTHOR_VISUAL_PROVENANCE: docs/assets/images/thpt/Temp_FIG-G12-CHV-B161-R00.png; EXACT_SOURCE_BLOB: a6d03ef5310ad93ce2cb8cebc03ff6e54bed55fb; ORIGINAL_SOURCE_REUSED_NOT_DUPLICATED; PNG_LABEL_UAT_PENDING -->
+<!-- AUTHOR_TOPIC18_WHITE_SVG: docs/assets/images/thpt/FIG-TOP18-B16-LINE-PLANE-ANGLE-WHITE-R00.svg; NEW_SOURCE_BLOB: dafbebf04cbe7cc740eb6d718bf22b6724411737; WHITE_BACKGROUND=YES; ORIGINAL_SGK_PNG_REFERENCE_ONLY=Temp_FIG-G12-CHV-B16-R00.png; ORIGINAL_PNG_BLOB=4dbe38abdc36744cedf69e4e411c8449d7f0b31d; ORIGINAL_PNG_NOT_VISUALLY_QA_VERIFIED -->
 
 
-![Hình SGK B16 về góc giữa các đường và mặt trong không gian](../../../../docs/assets/images/thpt/Temp_FIG-G12-CHV-B16-R00.png)
+![Hai mặt P,Q với pháp tuyến n₁,n₂ khác 0](../../../../docs/assets/images/thpt/FIG-TOP18-B16-TWO-PLANES-WHITE-R00.svg)
 
-**Đọc hình:** Góc giữa đường và mặt được lấy từ hình chiếu xuống mặt; với hướng u và pháp tuyến n, dùng sin, không nhầm với cos của hai pháp tuyến.
+**Đọc hình:** Chỉ hai mặt (P),(Q) và hai pháp tuyến n₁,n₂ khác 0. Góc hai mặt lấy góc nhỏ nhờ trị tuyệt đối của tích vô hướng chia tích chuẩn; đổi chiều n không đổi kết quả.
 
-<!-- AUTHOR_VISUAL_PROVENANCE: docs/assets/images/thpt/Temp_FIG-G12-CHV-B16-R00.png; EXACT_SOURCE_BLOB: 4dbe38abdc36744cedf69e4e411c8449d7f0b31d; ORIGINAL_SOURCE_REUSED_NOT_DUPLICATED; PNG_LABEL_UAT_PENDING -->
+<!-- AUTHOR_TOPIC18_WHITE_SVG: docs/assets/images/thpt/FIG-TOP18-B16-TWO-PLANES-WHITE-R00.svg; NEW_SOURCE_BLOB: 5eac9686ebce6bef48556067a61dfa71fa41b7a3; WHITE_BACKGROUND=YES; ORIGINAL_SGK_PNG_REFERENCE_ONLY=Temp_FIG-G12-CHV-B161-R00.png; ORIGINAL_PNG_BLOB=a6d03ef5310ad93ce2cb8cebc03ff6e54bed55fb; ORIGINAL_PNG_NOT_VISUALLY_QA_VERIFIED -->
 
 #### 31. Góc giữa hai đường thẳng bằng vectơ chỉ phương 
 
@@ -793,11 +793,11 @@ Tại O=(0,0,0) với t=s=0.
 <!-- AUTHOR_INTERACTIVE_PLACEMENT: MODEL_ID=SLM-TOP18-OXYZ-GEOMETRY-R00; SCENE=SPHERE_PLANE; OUTCOMES=TOP18-O40/TOP18-O23; PUBLIC_DISCOVERY_NO_MASTERY -->
 
 
-![Hình SGK B17 về tâm, bán kính và mặt cầu](../../../../docs/assets/images/thpt/Temp_FIG-G12-CHV-B17-R00.png)
+![Mặt cắt kinh tuyến R=5, d=3, r=4 của cầu và mặt phẳng](../../../../docs/assets/images/thpt/FIG-TOP18-B17-SPHERE-SECTION-WHITE-R00.svg)
 
-**Đọc hình:** Hãy tách bán kính R của mặt cầu và khoảng cách d từ tâm tới một mặt cắt. Chỉ khi d<R mới có đường tròn tiết diện bán kính r=√(R²−d²).
+**Đọc hình:** Chỉ tâm I, khoảng cách vuông góc d=3 từ I tới (P), bán kính cầu R=5, bán kính thiết diện r=4. Pitago r²+d²=R²; d=R tiếp xúc, d>R không có giao.
 
-<!-- AUTHOR_VISUAL_PROVENANCE: docs/assets/images/thpt/Temp_FIG-G12-CHV-B17-R00.png; EXACT_SOURCE_BLOB: 3a87aa63ef68d3c12c170a213f7ea6a4ab719532; ORIGINAL_SOURCE_REUSED_NOT_DUPLICATED; PNG_LABEL_UAT_PENDING -->
+<!-- AUTHOR_TOPIC18_WHITE_SVG: docs/assets/images/thpt/FIG-TOP18-B17-SPHERE-SECTION-WHITE-R00.svg; NEW_SOURCE_BLOB: 258d0059806bdc840e9c5200ca8944168aa62f67; WHITE_BACKGROUND=YES; ORIGINAL_SGK_PNG_REFERENCE_ONLY=Temp_FIG-G12-CHV-B17-R00.png; ORIGINAL_PNG_BLOB=3a87aa63ef68d3c12c170a213f7ea6a4ab719532; ORIGINAL_PNG_NOT_VISUALLY_QA_VERIFIED -->
 
 #### 36. Phương trình mặt cầu tâm và bán kính 
 
