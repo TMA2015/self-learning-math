@@ -3,6 +3,12 @@
 **SOURCE ONLY CONTENT_READY handoff** on owner-effective **SLM-THPT-QUALITY-ONE v3.1.0 Q01–Q18**. Q18 is `AUTHOR_SELF_VERIFIED` Academic/PED with direct original S1 and independent author arithmetic; **NOT** an independent NotebookLM Topic review, real website QA, official mastery, merge or deployment permission.
 
 PACKET_ID: THPT-TOPIC19-COMBINATORICS-BINOMIAL-R03
+SUPERSEDES_PACKET_ID: THPT-TOPIC19-COMBINATORICS-BINOMIAL-R02
+SUPERSEDED_R02_SOURCE_BLOB: 65dfdfdd77ee1e3eada982c58cca7b490ea49116
+SUPERSEDED_R02_AUTHOR_Q18_RECEIPT_BLOB: 481026a0463b8ea17722955b8dc7ae0b8695f85c
+SUPERSEDED_R02_V2_HANDOFF_BLOB: d9dd2c6cd6c3d9a2298e69a1adac2be76fcd6e2d
+SUPERSEDED_R02_READY_MANIFEST_BLOB: 7f099d4bb42c66ae46b30226cc996ba1d2b94dbc
+SUPERSESSION_MODE: DELTA_C_NEW_VERSION_NO_RETROACTIVE_R02_PASS_CHANGE
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -239,6 +245,9 @@ Direct ORIGINAL owner Google Drive PDF bytes, not OCR or third-party answer site
 Single connected student story of school-fair alternatives→multi-step combinations→number vs code and nonrepeat digits→groups/order→using scientific calculator with exact method/multiple device menu support→C(n,k) explains Pascal coefficients→approximation of growth, optional inverse powers and total coefficients after required concepts. Every one of 14 lessons has WHY, required prerequisite, concept derivation, method conditions and worked reasoned example. 4 mathematically sourced white SVGs with alternative text and learner reading instructions: 3 source-equivalent pale-blue G10 UX diagrams only white background modified, fourth original 2×3 counting tree with all 6 leaves; no unverified PNG/slide inserts. White offline 3-scene interactive `SLM-TOP19-COMBINATORICS-PASCAL-R00` 11/11 direct DOM math/edge/reset assertions PASS, but real website embed/iPad/Safari NOT tested. 14 Try before open answer with targeted D6 and 3 differentiated Written remediation. Natural NotebookLM/Gemini tutorial pacing consulted where appropriate, independently S1/math-verified; no independent verdict.
 
 ## DELTA_LEDGER
+
+**Version custody, important:** This branch already had a correctly signed `R02 CONTENT_READY` source snapshot (13 outcomes, 54 IDs) before R03. Preserve the old R02 immutable Git blobs and author PASS history, but **do not run two active CONTENT_READY packets for the same FULL_TOPIC_LEARNING_PATH**. R03 is a genuinely NEW material-authoring `DELTA_C` snapshot with missing original SGK B24 p70 outcome O14/T14/P14 recovered and semantic placement fixes, reviewed under its own source-specific signed Q18. The old R02 manifest/REGISTER active row are replaced with one R03 versioned packet; old R02 remains addressable by SHA/commit history, not silently rewritten or claimed failed.
+
 
 - `DELTA_C_S1_R01_TO_R02`: direct original PDF page verification corrects historical B23 59→60, B24 65→66, B25 72–75 and chapter end76 (no textbook screenshot published), identifies missing SGK B25 printed75 approximate growth mandatory application and adds O13/T13/P13.
 - `DELTA_C_S1_R02_TO_R03`: direct full original B24 PDF printed70 finds omitted mandatory calculator n!,nPr,nCr; adds complete O14/T14/P14 with manual fallback and 2 independently checked numbers. Required O14 and O13 now before optional O11/O12.
