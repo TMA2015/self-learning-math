@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="380" viewBox="0 0 760 380" role="img" aria-labelledby="t d">
+<title id="t">Góc đường–mặt: nhìn hình chiếu, dùng sin</title><desc id="d">Đường xiên qua H có hình chiếu lên mặt phẳng P, pháp tuyến n, góc theta giữa đường xiên và hình chiếu nằm trong mặt phẳng, thuộc 0 đến 90 độ.</desc>
+<rect x="0" y="0" width="760" height="380" rx="14" fill="#ffffff"/>
+<rect x="12" y="12" width="736" height="356" rx="11" fill="#ffffff" stroke="#d3e0ef" stroke-width="2"/>
+<style>text{font-family:Arial,sans-serif;fill:#203f62}.head{font-weight:bold;font-size:20px;fill:#15538d}.sub{font-size:14px;fill:#526781}.key{font-size:16px;font-weight:bold;fill:#14578f}.formula{font-size:18px;font-weight:bold;fill:#1d6c62}</style>
+<text x="32" y="45" class="head">Góc đường–mặt: nhìn hình chiếu, dùng sin</text>
+
+<polygon points="72,270 376,270 475,193 171,193" fill="#e8f3ff" stroke="#3279bc" stroke-width="2.5"/>
+<path d="M239 242 L291 113" stroke="#2a73b6" stroke-width="4"/>
+<path d="M239 242 L355 242" stroke="#26856f" stroke-width="3"/>
+<path d="M239 242 V107" stroke="#bb6432" stroke-width="2.8" stroke-dasharray="5 5"/>
+<circle cx="239" cy="242" r="5" fill="#1b5b93"/>
+<text x="213" y="264" class="key">H</text><text x="300" y="113" class="key">d</text>
+<text x="263" y="136" class="key">n</text>
+<text x="337" y="261" class="key">d′</text>
+<path d="M276 242 A38 38 0 0 0 255 208" fill="none" stroke="#dc8a24" stroke-width="3"/>
+<text x="294" y="223" class="key">θ</text><text x="406" y="275" class="key">(P)</text>
+<text x="506" y="121" class="key">u = hướng của d</text>
+<text x="506" y="163" class="key">n = pháp tuyến (P)</text>
+<text x="506" y="212" class="formula">sin θ = |u·n|</text>
+<text x="568" y="243" class="formula">/ (|u||n|)</text>
+<text x="506" y="296" class="sub">0° ≤ θ ≤ 90°</text>
+
+<text x="34" y="350" class="sub">Sơ đồ giải thích phương và điều kiện; không đo góc hoặc chiều dài bằng hình phối cảnh.</text>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="380" viewBox="0 0 760 380" role="img" aria-labelledby="t d">
+<title id="t">Mặt phẳng: hai hướng và một pháp tuyến</title><desc id="d">Hình phối cảnh của mặt phẳng P với điểm M0, hai hướng u v độc lập trong mặt, pháp tuyến n khác không; n nhân vô hướng với u và v đều bằng không.</desc>
+<rect x="0" y="0" width="760" height="380" rx="14" fill="#ffffff"/>
+<rect x="12" y="12" width="736" height="356" rx="11" fill="#ffffff" stroke="#d3e0ef" stroke-width="2"/>
+<style>text{font-family:Arial,sans-serif;fill:#203f62}.head{font-weight:bold;font-size:20px;fill:#15538d}.sub{font-size:14px;fill:#526781}.key{font-size:16px;font-weight:bold;fill:#14578f}.formula{font-size:18px;font-weight:bold;fill:#1d6c62}</style>
+<text x="32" y="45" class="head">Mặt phẳng: hai hướng và một pháp tuyến</text>
+
+<polygon points="85,275 395,275 485,185 175,185" fill="#e8f3ff" stroke="#3678b7" stroke-width="2.5"/>
+<circle cx="268" cy="228" r="5.5" fill="#1a5789"/><text x="280" y="247" class="key">M₀</text>
+<path d="M268 228 L365 238" stroke="#25816e" stroke-width="4"/><path d="M365 238 l-12 -7 m12 7 l-12 6" fill="none" stroke="#25816e" stroke-width="2.5"/>
+<path d="M268 228 L192 269" stroke="#25816e" stroke-width="4"/><path d="M192 269 l12 -3 m-12 3 l7 -11" fill="none" stroke="#25816e" stroke-width="2.5"/>
+<path d="M268 228 V87" stroke="#b4642f" stroke-width="4"/><path d="M268 87 l-8 14 m8 -14 l8 14" fill="none" stroke="#b4642f" stroke-width="3"/>
+<text x="370" y="242" class="key">u</text><text x="173" y="282" class="key">v</text><text x="282" y="95" class="key">n</text><text x="408" y="271" class="key">(P)</text>
+<text x="510" y="112" class="key">Điểm M₀ ∈ (P)</text>
+<text x="510" y="155" class="formula">n ≠ 0</text>
+<text x="510" y="196" class="formula">n · u = 0</text>
+<text x="510" y="237" class="formula">n · v = 0</text>
+<text x="510" y="289" class="sub">u, v không cùng phương</text>
+
+<text x="34" y="350" class="sub">Sơ đồ giải thích phương và điều kiện; không đo góc hoặc chiều dài bằng hình phối cảnh.</text>
+</svg>

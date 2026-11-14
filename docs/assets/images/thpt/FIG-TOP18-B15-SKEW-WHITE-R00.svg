@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="380" viewBox="0 0 760 380" role="img" aria-labelledby="t d">
+<title id="t">Hai đường chéo nhau: hình chiếu có thể đánh lừa</title><desc id="d">Hai đường khác hướng có hình chiếu trên Oxy nhìn như giao tại O nhưng một đường luôn có z bằng 0 và đường kia luôn có z bằng 2; vì vậy không có điểm chung trong không gian.</desc>
+<rect x="0" y="0" width="760" height="380" rx="14" fill="#ffffff"/>
+<rect x="12" y="12" width="736" height="356" rx="11" fill="#ffffff" stroke="#d3e0ef" stroke-width="2"/>
+<style>text{font-family:Arial,sans-serif;fill:#203f62}.head{font-weight:bold;font-size:20px;fill:#15538d}.sub{font-size:14px;fill:#526781}.key{font-size:16px;font-weight:bold;fill:#14578f}.formula{font-size:18px;font-weight:bold;fill:#1d6c62}</style>
+<text x="32" y="45" class="head">Hai đường chéo nhau: hình chiếu có thể đánh lừa</text>
+
+<rect x="44" y="79" width="320" height="232" rx="10" fill="#f6faff" stroke="#d2e0ef"/>
+<text x="62" y="108" class="key">Hình chiếu Oxy</text>
+<path d="M85 215 H320" stroke="#2876b8" stroke-width="4"/>
+<path d="M201 284 V140" stroke="#bd6b3d" stroke-width="4"/>
+<circle cx="201" cy="215" r="6" fill="#184e81"/>
+<text x="221" y="202" class="sub">trông như giao</text>
+<rect x="388" y="79" width="320" height="232" rx="10" fill="#f6faff" stroke="#d2e0ef"/>
+<text x="407" y="108" class="key">Trong không gian</text>
+<path d="M424 264 H662" stroke="#2876b8" stroke-width="4"/>
+<path d="M532 140 V200" stroke="#bd6b3d" stroke-width="4"/>
+<path d="M532 200 V264" stroke="#bd6b3d" stroke-width="1.5" stroke-dasharray="5 5"/>
+<text x="442" y="282" class="key">d₁: z = 0</text>
+<text x="549" y="152" class="key">d₂: z = 2</text>
+<text x="413" y="332" class="sub">0 ≠ 2 → không có giao điểm</text>
+
+<text x="34" y="350" class="sub">Sơ đồ giải thích phương và điều kiện; không đo góc hoặc chiều dài bằng hình phối cảnh.</text>
+</svg>

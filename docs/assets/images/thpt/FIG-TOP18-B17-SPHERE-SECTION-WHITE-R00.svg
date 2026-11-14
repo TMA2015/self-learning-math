@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="380" viewBox="0 0 760 380" role="img" aria-labelledby="t d">
+<title id="t">Mặt cầu với mặt phẳng: ba trường hợp</title><desc id="d">Mặt cắt kinh tuyến 2D của mặt cầu tâm I, bán kính 5, mặt phẳng P cách tâm 3 cắt theo đường tròn thiết diện bán kính 4 theo tam giác vuông 3,4,5.</desc>
+<rect x="0" y="0" width="760" height="380" rx="14" fill="#ffffff"/>
+<rect x="12" y="12" width="736" height="356" rx="11" fill="#ffffff" stroke="#d3e0ef" stroke-width="2"/>
+<style>text{font-family:Arial,sans-serif;fill:#203f62}.head{font-weight:bold;font-size:20px;fill:#15538d}.sub{font-size:14px;fill:#526781}.key{font-size:16px;font-weight:bold;fill:#14578f}.formula{font-size:18px;font-weight:bold;fill:#1d6c62}</style>
+<text x="32" y="45" class="head">Mặt cầu với mặt phẳng: ba trường hợp</text>
+
+<circle cx="231" cy="227" r="120" fill="#eaf4ff" stroke="#2c76b8" stroke-width="3"/>
+<path d="M58 155 H411" stroke="#af773c" stroke-width="3"/>
+<path d="M135 155 H327" stroke="#208572" stroke-width="7" stroke-linecap="round"/>
+<path d="M231 227 V155" stroke="#bc6034" stroke-width="2.6" stroke-dasharray="6 4"/>
+<path d="M231 227 L327 155" stroke="#236ab1" stroke-width="2.5"/>
+<path d="M231 155 H327" stroke="#208572" stroke-width="2.4"/>
+<circle cx="231" cy="227" r="6" fill="#1b5a91"/>
+<text x="242" y="241" class="key">I</text><text x="244" y="197" class="key">d = 3</text><text x="265" y="147" class="key">r = 4</text>
+<text x="279" y="209" class="key">R = 5</text>
+<text x="394" y="145" class="key">(P)</text>
+<text x="485" y="138" class="formula">r² + d² = R²</text>
+<text x="485" y="185" class="formula">4² + 3² = 5²</text>
+<text x="485" y="235" class="sub">d &lt; R: đường tròn giao</text>
+<text x="485" y="268" class="sub">d = R: một tiếp điểm</text>
+<text x="485" y="301" class="sub">d &gt; R: không có giao</text>
+
+<text x="34" y="350" class="sub">Sơ đồ giải thích phương và điều kiện; không đo góc hoặc chiều dài bằng hình phối cảnh.</text>
+</svg>
