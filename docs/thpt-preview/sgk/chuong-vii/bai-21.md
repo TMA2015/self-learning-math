@@ -27,7 +27,7 @@
 
     <figure class="thpt-r4-plot thpt-r4-concept-figure" data-chvii-r02-diagram="TRY13"><img src="../../../../assets/images/thpt/G10_CHVII_R02_B21_TRY13_CIRCLE.svg" loading="lazy" alt="Phân biệt đường tròn biên IM bằng R và hình tròn chứa các điểm IM nhỏ hơn hoặc bằng R."><figcaption>Đường tròn là đường biên; hình tròn gồm cả phần bên trong.</figcaption></figure>
 
-    **Em vận dụng.** Đường tròn có tâm I(-2,1) và bán kính 3 có phương trình nào?
+    **Em vận dụng.** Đường tròn có tâm \(I(-2,1)\) và bán kính \(3\) có phương trình nào?
 
     ??? question "Đối chiếu"
 
@@ -54,7 +54,7 @@
 
     Tổng hai bình phương không thể âm. Vì vậy với dạng \(x^2+y^2-2ax-2by+c=0\), sau khi chuyển thành \((x-a)^2+(y-b)^2=a^2+b^2-c\), ta có một đường tròn thật sự chỉ khi **\(a^2+b^2-c>0\)**. Bằng 0 chỉ còn một điểm; âm thì không có điểm thực nào thỏa mãn. Đây là điều kiện hình học, không phải mẹo nhớ ba dấu.
 
-    **Em vận dụng.** Phương trình x²+y²−6x+4y+8=0 biểu diễn đường tròn nào?
+    **Em vận dụng.** Phương trình \(x^2+y^2-6x+4y+8=0\) biểu diễn đường tròn nào?
 
     ??? question "Đối chiếu"
 
@@ -78,7 +78,7 @@
 
     <figure class="thpt-r4-plot thpt-r4-concept-figure" data-chvii-r02-diagram="TRY15"><img src="../../../../assets/images/thpt/G10_CHVII_R02_B21_TRY15_TANGENT.svg" loading="lazy" alt="Bán kính IM0 vuông góc với tiếp tuyến tại điểm M0; pháp tuyến của tiếp tuyến là IM0."><figcaption>Tiếp tuyến đi qua tiếp điểm và nhận bán kính tại đó làm vectơ pháp tuyến.</figcaption></figure>
 
-    **Em vận dụng.** Đường tròn tâm I(1,−1), bán kính 5; M(4,3). Viết tiếp tuyến tại M.
+    **Em vận dụng.** Đường tròn tâm \(I(1,-1)\), bán kính \(5\); \(M(4,3)\). Viết tiếp tuyến tại \(M\).
 
     ??? question "Đối chiếu"
 
@@ -100,7 +100,7 @@
 
     Hãy tưởng tượng tam giác ABC cùng hai đường trung trực của AB và AC: giao điểm I thỏa \(IA=IB=IC\), từ đó lấy \(R=IA\) để viết đường tròn. Trước khi dựng phải kiểm ba điểm không thẳng hàng. Nếu chúng thẳng hàng, không có đường tròn hữu hạn nào qua cả ba; nếu chỉ biết hai điểm, ta vẫn chưa chọn được tâm duy nhất.
 
-    **Em vận dụng.** Đường tròn qua A(0,0), B(2,0), C(0,2) có tâm, bán kính và phương trình gì?
+    **Em vận dụng.** Đường tròn qua \(A(0,0)\), \(B(2,0)\), \(C(0,2)\) có tâm, bán kính và phương trình gì?
 
     ??? question "Đối chiếu"
 
@@ -124,7 +124,7 @@
 
     Em không cần giải hệ ngay để biết **số** giao điểm; nhưng muốn biết **tọa độ**, em vẫn phải giải hai phương trình. Đây là một vận dụng liên bài, không thay kiến thức bắt buộc về phương trình đường tròn và tiếp tuyến.
 
-    **Em vận dụng.** Đường tròn tâm I(1,2), R=3 và đường d: y=−1 có quan hệ nào?
+    **Em vận dụng.** Đường tròn tâm \(I(1,2)\), \(R=3\) và đường \(d:y=-1\) có quan hệ nào?
 
     ??? question "Đối chiếu"
 
