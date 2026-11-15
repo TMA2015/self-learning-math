@@ -78,7 +78,7 @@ Nếu chỉ nhận nghiệm dương khi giải x⁴=16, thử số đối; nếu
 
 #### 1.3. Lũy thừa với số mũ thực
 
-Tại sao không thể hiểu (a^{\sqrt2}) là ‘nhân a đúng \(\sqrt2\) lần’?
+Tại sao không thể hiểu \(a^{\sqrt2}\) là ‘nhân \(a\) đúng \(\sqrt2\) lần’?
 
 Từ các số mũ hữu tỉ, ta có thể mở rộng sang số mũ thực khi cơ số phù hợp. Số mũ thực mô tả tăng trưởng theo thời gian không nguyên; không thể chỉ hiểu là ‘nhân số nguyên lần’. Ta sử dụng lũy thừa hữu tỉ của cơ số dương, ý niệm xấp xỉ số thực. Với a>0 và x vô tỉ, a^x được định nghĩa nhất quán từ các lũy thừa hữu tỉ a^r khi r xấp xỉ x, qua giới hạn. Điều này không có nghĩa nhân a đúng ‘√2 lần’. Tính đơn điệu phụ thuộc cơ số a>1 hay 0<a<1; cơ số âm không mặc nhiên có a^x trên mọi x thực.
 
@@ -141,7 +141,7 @@ Từ \(2^3=8\) ta biết cơ số và số mũ để tìm kết quả. Nếu đ�
 
 #### 2.1. Định nghĩa lôgarit qua câu hỏi ngược
 
-Đã biết (5^3=125), nếu muốn tìm ‘mũ nào cho 125’ thì em hỏi thế nào?
+Đã biết \(5^3=125\), nếu muốn tìm ‘mũ nào cho 125’ thì em hỏi thế nào?
 
 Biết số ban đầu và số cuối, ta muốn biết cần bao nhiêu lần nhân theo tỉ lệ a. Cần nhớ hàm mũ cơ số dương, tính đơn ánh của a^x khi a≠1. Với a>0, a≠1 và b>0, log_a b là số y duy nhất sao cho a^y=b. Do đó log_a1=0, log_a a=1; log_a b có thể âm nhưng b **không** thể âm. Đừng học công thức log trước khi hiểu câu hỏi ‘số mũ nào?’.
 
@@ -322,7 +322,7 @@ Nếu luôn giữ dấu so sánh khi bỏ mũ, vẽ hai điểm 0,1 trên đồ 
 
 #### 3.3. Miền và đồ thị hàm lôgarit
 
-Điểm ((1,0)) của đồ thị logarit có nghĩa gì về số mũ?
+Điểm \((1,0)\) của đồ thị lôgarit có nghĩa gì về số mũ?
 
 Nhìn ngược đồ thị ấy, ta hiểu vì sao hàm logarit có miền và tính chất đặc trưng. Nếu hàm mũ biến thời gian thành lượng, logarit giúp biến lượng thành thời gian cần thiết. Để xác định điều đó, cần xét định nghĩa log, cơ số a>0,a≠1 và đường thẳng x=0. Với a>0,a≠1, g(x)=log_a x có miền (0,+∞), giá trị ℝ, qua (1,0) và (a,1); x=0 là tiệm cận đứng. Hàm tăng nếu a>1, giảm nếu 0<a<1. Không có điểm đồ thị với x≤0.
 
@@ -350,7 +350,7 @@ Nếu đặt điểm x=0 lên đồ thị log, hỏi cơ số nào lũy thừa r
 
 #### 3.4. Hàm mũ và lôgarit là hai hàm ngược
 
-Vì sao điểm ((u,v)) của hàm mũ trở thành ((v,u)) trên hàm log?
+Vì sao điểm \((u,v)\) của hàm mũ trở thành \((v,u)\) trên hàm lôgarit?
 
 Hai đồ thị tương ứng phản chiếu qua y=x khi thực sự là hai hàm ngược. Liên kết hai khái niệm thành một thao tác thuận và thao tác ngược để giải phương trình. Ta đã biết khái niệm hàm ngược, tọa độ điểm (x,y). Với a>0,a≠1, f(x)=a^x là một-một từ ℝ đến (0,+∞), g(x)=log_a x là hàm ngược từ (0,+∞) về ℝ. Nếu (u,v) trên f thì (v,u) trên g; đồ thị đối xứng qua y=x. g(f(x))=x với mọi x thực, còn f(g(x))=x chỉ với x>0.
 
@@ -391,7 +391,7 @@ Việc đưa hai vế về cùng cơ số chỉ là một bước kỹ thuật. 
 
 #### 4.1. Phương trình mũ và ẩn phụ dương
 
-Đặt (t=a^x) khi giải phương trình mũ thì t được nhận những giá trị nào?
+Đặt \(t=a^x\) khi giải phương trình mũ thì \(t\) được nhận những giá trị nào?
 
 Muốn tìm thời gian hoặc giá trị x khi lượng a^x đạt ngưỡng, cần giải phương trình mũ chứ không phỏng đoán. Ta sử dụng a>0,a≠1, hàm mũ đơn ánh, giải phương trình bậc hai. a^u=a^v ⇔ u=v với a>0,a≠1. Nếu phải đặt t=a^x, luôn ghi t>0; nghiệm t≤0 phải loại trước khi quay lại x. Đưa về cùng cơ số là phương pháp cơ bản SGK B21; đặt ẩn phụ là **mở rộng có điều kiện của CĐ04**, không gán cho bản SGK review cũ.
 
