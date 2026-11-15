@@ -107,18 +107,30 @@ function validate(source, agents, queue) {
   }
   if(!["2.0.0","3.0.0","3.0.1","3.1.0","3.1.1"].includes(version) && !source.includes("OFFICIAL_OWNER_APPROVED_MAIN")&&!source.includes("OWNER_APPROVED_EFFECTIVE_UPON_GOVERNANCE_MERGE")&&!source.includes("OWNER_APPROVED_Q01_REVISION_PENDING_GOVERNANCE_QA_MERGE"))fail("OWNER_APPROVAL_RECEIPT_MISSING");
   if(version==="3.1.1"){
-   const a=source.indexOf("### VIII.2. Bảng kiểm Q01–Q18 duy nhất"),b=source.indexOf("### VIII.3. Kiểm đối chứng chống tái diễn");
-   if(a<0||b<a)fail("ONE_EXECUTABLE_CHECKLIST_MISSING");
+   const m=source.indexOf("## II. Ma trận chuẩn chất lượng duy nhất Q01–Q18");
+   const n=source.indexOf("## II-A.",m);
+   const a=source.indexOf("### VIII.2. Cách vận hành một ma trận Q01–Q18");
+   const b=source.indexOf("### VIII.3. Kiểm đối chứng chống tái diễn");
+   if(m<0||n<m||a<0||b<a)fail("ONE_EXECUTABLE_CHECKLIST_MISSING");
    else{
-     const rows=[...source.slice(a,b).matchAll(/^\| \*\*Q(\d\d)\b/gm)].map(m=>m[1]);
-     if(JSON.stringify(rows)!==JSON.stringify(Array.from({length:18},(_,i)=>String(i+1).padStart(2,"0"))))fail("EXECUTION_Q01_Q18_ROWS_NOT_ORDERED:"+rows);
-      // Same Q01–Q18 evidence, distinct three-page TOPIC (no separate Core).
-      const q05=source.slice(a,b).split("\n").find(x=>x.startsWith("| **Q05 —"))||"";
-      const q14=source.slice(a,b).split("\n").find(x=>x.startsWith("| **Q14 —"))||"";
-      const q17=source.slice(a,b).split("\n").find(x=>x.startsWith("| **Q17 —"))||"";
-      if(!q05.includes("TOPIC_PRACTICE")||!q05.includes("không đòi trang Core"))fail("TOPIC_Q05_MUST_USE_PRACTICE_NOT_CORE");
-      if(!q14.includes("Chuyên đề")||!q14.includes("trước khi vào Luyện tập chính"))fail("TOPIC_Q14_MUST_BE_BEFORE_PRACTICE");
-      if(!q17.includes("Adaptive Knowledge Tabs v2")||!q17.includes("chỉ ba trang"))fail("TOPIC_Q17_MUST_REMAIN_THREE_PAGE_PATH");
+     const lines=source.slice(m,n).split("\n").filter(x=>/^\| \*\*Q\d\d\b/.test(x));
+     const ids=lines.map(x=>x.match(/^\| \*\*Q(\d\d)\b/)[1]);
+     const expected=Array.from({length:18},(_,i)=>String(i+1).padStart(2,"0"));
+     if(JSON.stringify(ids)!==JSON.stringify(expected))fail("EXECUTION_Q01_Q18_ROWS_NOT_ORDERED:"+ids);
+     for(let i=0;i<lines.length;i++){
+       const line=lines[i];
+       if(line.split("|").length!==6||!line.includes("**Phép kiểm bắt buộc:**")||!line.includes("**Phản chứng chặn PASS giả:**"))
+         fail("QXX_MISSING_DIRECT_EVIDENCE_AND_NEGATIVE_TEST:"+ids[i]);
+     }
+     const repeated=source.slice(a,b);
+     if(/^\|\s*\*\*Q\d\d\b/m.test(repeated))fail("DUPLICATE_EXECUTION_Q_MATRIX");
+     if(!repeated.includes("không lặp tiêu chí"))fail("SINGLE_TABLE_PROCEDURE_LINK_MISSING");
+     const q05=lines.find(x=>x.startsWith("| **Q05 "))||"";
+     const q14=lines.find(x=>x.startsWith("| **Q14 "))||"";
+     const q17=lines.find(x=>x.startsWith("| **Q17 "))||"";
+     if(!q05.includes("TOPIC_PRACTICE")||!q05.includes("không đòi trang Core"))fail("TOPIC_Q05_MUST_USE_PRACTICE_NOT_CORE");
+     if(!q14.includes("Chuyên đề")||!q14.includes("trước khi vào Luyện tập chính"))fail("TOPIC_Q14_MUST_BE_BEFORE_PRACTICE");
+     if(!q17.includes("Adaptive Knowledge Tabs v2")||!q17.includes("chỉ ba trang"))fail("TOPIC_Q17_MUST_REMAIN_THREE_PAGE_PATH");
    }
    for(const token of ["NOT_TESTED","Q18_CONTENT_CHECK_PENDING","Q18_SUBSTANTIVE_HOLD","HANDOFF_PACKAGING_PENDING",
      "G10 B16","G11 ChVII","G12 B17","B14-P04","không có checklist PRE-HANDOFF thứ hai"])
@@ -126,7 +138,7 @@ function validate(source, agents, queue) {
    if(source.includes("## IX. Checklist PRE-HANDOFF V2"))fail("DUPLICATE_PRE_HANDOFF_CHECKLIST");
    if(agents&&!agents.includes("mục VIII ngay trong"))fail("AGENTS_NOT_POINTING_TO_SINGLE_CHECKLIST");
  }
-for(const heading of REQUIRED_SECTIONS)if(!source.includes(heading))fail("MISSING_SECTION:"+heading);
+ for(const heading of REQUIRED_SECTIONS)if(!source.includes(heading))fail("MISSING_SECTION:"+heading);
  const tableStart=source.indexOf("## II. Ma trận chuẩn chất lượng duy nhất Q01–Q18");
  const tableEnd=source.indexOf("## III.",tableStart);
  if(tableStart<0||tableEnd<tableStart)fail("MAIN_MATRIX_MISSING");
@@ -186,12 +198,16 @@ function selfTest(){
       .failures.some(e=>e.startsWith("SGK_EDITORIAL_V3_1_MISSING_CONTROL")));
   }
   if(full.includes("**VERSION:** `3.1.1-CANDIDATE`")){
-   const wrong=full.replace("| **Q15 — Canonical & skill đúng nghĩa**","| **Q14 — Canonical & skill đúng nghĩa**");
+   const wrong=full.replace("| **Q15 ID/Shared bank**","| **Q14 ID/Shared bank**");
    assert(validate(wrong,"","").failures.some(e=>e.startsWith("EXECUTION_Q01_Q18_ROWS_NOT_ORDERED")));
    const noTopic=full.replace("TOPIC_PRACTICE` trong trang **Luyện tập**","TOPIC_CORE` trong trang **Luyện tập**");
    assert(validate(noTopic,"","").failures.includes("TOPIC_Q05_MUST_USE_PRACTICE_NOT_CORE"));
    const wrongTopic=full.replace("Adaptive Knowledge Tabs v2 bên trong Kiến thức","4 tab Golden SGK bên trong Kiến thức");
    assert(validate(wrongTopic,"","").failures.includes("TOPIC_Q17_MUST_REMAIN_THREE_PAGE_PATH"));
+   const ghost=full.replace("### VIII.3. Kiểm đối chứng chống tái diễn","| **Q14 GHOST** | Không được có bảng phụ |\n### VIII.3. Kiểm đối chứng chống tái diễn");
+   assert(validate(ghost,"","").failures.includes("DUPLICATE_EXECUTION_Q_MATRIX"));
+   const noMethod=full.replace("**Phép kiểm bắt buộc:**","[METHOD_OMITTED]");
+   assert(validate(noMethod,"","").failures.some(e=>e.startsWith("QXX_MISSING_DIRECT_EVIDENCE")));
    const noB=full.replace("### VIII.3. Kiểm đối chứng chống tái diễn","### VIII.3. [REMOVED]");
    assert(validate(noB,"","").failures.includes("ONE_EXECUTABLE_CHECKLIST_MISSING"));
    const falseOwner=full.replace("**STATUS:** `GOVERNANCE_DRAFT_OWNER_REVIEW`","**STATUS:** `OWNER_APPROVED_EFFECTIVE`");
