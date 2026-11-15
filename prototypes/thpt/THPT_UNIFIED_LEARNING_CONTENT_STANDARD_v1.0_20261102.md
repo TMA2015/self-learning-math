@@ -1,8 +1,8 @@
-# SELF-LEARNING MATH — TIÊU CHUẨN CHẤT LƯỢNG HỌC LIỆU THPT THỐNG NHẤT v3.1.0
+# SELF-LEARNING MATH — TIÊU CHUẨN CHẤT LƯỢNG HỌC LIỆU THPT THỐNG NHẤT v3.1.1
 
 **STANDARD_ID:** `SLM-THPT-QUALITY-ONE`  
-**VERSION:** `3.1.0` (SGK editorial amendment, owner-approved structure 12/11/2026; **effective only after governance merge**) · **OWNER:** Chủ dự án Self-Learning Math / G Learning  
-**STATUS:** `OWNER_APPROVED_EFFECTIVE` · **ACTIVATION:** `AFTER_GOVERNANCE_PR_821_MERGE_INTO_MAIN` · **PREVIOUS_EFFECTIVE_STANDARD:** `3.0.1 / OWNER_APPROVED_EFFECTIVE`: chủ dự án **đã xem và duyệt mẫu HTML về cấu trúc/biên tập** ngày 12/11/2026, gồm 4 tab, cách đánh số, phân vai nội dung, khung định nghĩa/công thức, bảng/hình và ví dụ; **không duyệt màu sắc, font, cỡ chữ, spacing hay CSS của mẫu**. Chủ dự án đã ủy quyền ngày 12/11/2026 cho phép phát hành **gói đạt đủ điều kiện QA**; riêng PR quản trị này đã được duyệt cấu trúc và QA độc lập. Phiên bản v3.1.0 được xác nhận **hiệu lực kể từ commit merge PR #821 vào `main`**, không từ bản nháp chưa merge. v3.0.0 (PR #808) và v3.0.1 (PR #809) giữ nguyên lịch sử nghiệm thu. Việc phê duyệt chuẩn **không tự nghiệm thu lại** 79 bài; G10 triển khai lần lượt, G11 vẫn PAUSED theo phạm vi đã giao; PR #816 và #819 đã CLOSED UNMERGED.
+**VERSION:** 3.1.1 — PATCH candidate, owner request 15/11/2026, chỉ hiệu lực khi PR governance qua QA và merge main. Phiên bản 3.1.0 vẫn hiệu lực trước merge. **OWNER:** chủ dự án Self-Learning Math / G Learning.
+**STATUS:** OWNER_REQUESTED_CANDIDATE_PENDING_QA_MERGE · PREVIOUS_EFFECTIVE_STANDARD: 3.1.0 (PR #821 merged). Không đổi Q01–Q18, Golden, dữ liệu học sinh, Q15/Q16 hay phát hành.
 **SCOPE:** mọi học liệu Toán THPT 10–12 KNTT theo **SGK_CHAPTER** và **TOPIC**; áp dụng cho cả tác giả, NotebookLM và nhánh phát hành. **Một tiêu chuẩn chất lượng; các cổng kiểm tra phân theo trách nhiệm, không phải hai bộ tiêu chuẩn cạnh tranh.**
 
 ## 0. Luật thống nhất và thứ tự hiệu lực
@@ -143,10 +143,20 @@ BLOCKERS: NONE | [exact LESSON/OUTCOME/ITEM + defect + owner]
 
 ## VIII. Checklist PRE-Q18 (AUTHORING — tự QA có chứng cứ, không mạo danh reviewer PASS)
 
+**Viết liền mạch cho học sinh trước; checklist chỉ để kiểm lại bản đã viết, tuyệt đối không biến checklist thành đề mục học sinh.** Đây là chỉ dẫn đầu tiên của AUTHORING cho mọi Topic và bài SGK. Sử dụng duy nhất ma trận Q01–Q18 và bảng outcome–họ dạng–item đã có ở mục II/II-A/III, không tạo một ma trận hay quy trình thứ hai.
+
+- [ ] **FIRST — VĂN HỌC SINH LIỀN MẠCH (Q03, Q09–Q14, Q17):** Lời mở đầu là văn xuôi dẫn vào vấn đề toán học, tích hợp tự nhiên động cơ, kiến thức tiền đề, hình thành bản chất trước công thức; tiếp theo là ví dụ và tự luyện. Không dùng hàng loạt heading “Vì sao học”, “Tiền đề tại chỗ”, “Mạch xuyên suốt”, “Khám phá và lý do chọn thước đo”, “Định nghĩa, công thức và điều kiện”, “Những kết quả quan trọng” chỉ để điền checklist. Chỉ đánh số theo mảng kiến thức có ý nghĩa (thông thường 1, 1.1, 1.2); không tạo 1.1.1, 1.1.2 chỉ để chia nhãn PED. Cấp sâu hơn chỉ dùng khi thật sự cần về toán. Bối cảnh xuyên suốt có thể sử dụng, không bắt mọi Topic có một heading riêng. Topic đúng ba trang; SGK Knowledge giữ bốn tab của mục X-F.
+- [ ] **FIRST — VÍ DỤ VÀ TỰ THỬ (Q04, Q08, Q13, Q14):** Ví dụ hiển thị thống nhất “Ví dụ” → “Đề bài” → “Lời giải” → “Lưu ý” khi cần. Lời giải có chọn phương pháp, bước tính, điều kiện và kết luận. Câu tự luyện trong Kiến thức mang nhãn “Vận dụng”, lời giải chỉ mở sau khi làm với nhãn “Đối chiếu”. Không hiển thị “Ví dụ giải có lập luận 1”, “Vận dụng M01”, “Đối chiếu Vận dụng M01” hay các mã EX/OUTCOME.
+- [ ] **FIRST — ĐỌC/THỰC LÀM ĐƯỢC (Q05, Q06, Q14, Q17):** Đọc trực tiếp cả ba trang Topic như học sinh lần đầu: Kiến thức có ví dụ và Vận dụng, Luyện tập phải có đề thực sự được hiển thị và lời giải tự mở, Tự kiểm tra có câu hỏi và cơ chế làm/nộp/đối chiếu đúng mode. Được tham chiếu ngân hàng canonical bằng placement nhưng phải có bằng chứng learner projection/render cho đúng item_id và câu; bảng liệt kê 114 ID hoặc câu “ngân hàng dùng chung” không thay một trang Luyện tập. Thiếu chứng cứ này thì ghi Q05/Q17 HOLD, tuyệt đối không nâng CONTENT_READY từ thống kê câu.
+- [ ] **FIRST — METADATA CHỈ DÀNH CHO TÁC GIẢ (Q03, Q15–Q17):** Các nhãn Qxx, PED, D1–D6, RD1, item/outcome/skill ID, canonical, source hash, CLIENT_SELF_CHECK_NO_MASTERY và quy tắc kỹ thuật Mastery/Final Submit phải nằm trong comment không render hoặc receipt/handoff. Không biến metadata thành lời giảng. Rubric tự luận chỉ hiển thị đúng lúc học sinh tự đối chiếu, nếu phù hợp.
+- [ ] **FIRST — MỘT MA TRẬN THEO OUTCOME (Q01–Q18):** Với mỗi outcome, kiểm đoạn lý thuyết thực, ví dụ/lời giải, bài luyện tập làm được, hình và điều kiện toán, mã canonical/role/placement ở metadata, D6 đúng lỗi, source SGK S1. Không lấy số heading, item, công thức, tick hay SHA làm bằng chứng đủ khả năng tự học. Tự làm một câu khác ví dụ và thử một đường khắc phục lỗi.
+
+**Sau năm phép kiểm bản học sinh, tiếp tục toàn bộ checkbox nguồn, toán, Q15/Q16 và Q18 dưới đây; không bỏ tiêu chí cũ.**
+
 Trước khi **tự ký Q18_AUTHOR_SELF_VERIFIED hoặc gửi NotebookLM khi thật sự cần**, AUTHORING phải tự kiểm:
 - [ ] SGK/chương trình S1 đúng tập và đúng phạm vi Core, trang in/PDF index được kiểm; SBT/nguồn bài tập tham khảo ghi rõ phần **thực sự** đã xem, thiếu trang thì `SBT_REFERENCE_GAP_DOCUMENTED`, không tự coi đó là mất Core/outcome.
 - [ ] Từng outcome có Q01–Q18 applicable, D1–D6/PED1–PED6 source pointer và nguồn tiền đề `NEW/PREREQUISITE_CONFIRMED`.
-- [ ] Mỗi bài bắt đầu bằng WHY/BRIDGE/WHAT trước formal; có khi nào dùng/không dùng, ví dụ WHY, first-try, D6 thật.
+- [ ] Mỗi bài có WHY/BRIDGE/WHAT trước formal trong **văn xuôi học sinh liền mạch**, có khi nào dùng/không dùng, ví dụ WHY, Vận dụng/Đối chiếu và D6 thật; các từ WHY/BRIDGE/PED/D6 không được trở thành tiêu đề tự động.
 - [ ] Câu canonical tự biên soạn, không trùng ID, có answer/solution/rubric, level/role/placement/outcome đúng; ma trận **outcome→họ dạng→mức độ→item** từ nhận biết đến vận dụng/tổng hợp, Written/Anchor một thư viện, RD1 private metadata tách; nguồn ngoài chỉ tham khảo và đối chiếu phương pháp, không sao chép đề/đáp án thiếu kiểm chứng.
 - [ ] Hình SVG/bảng/đồ thị được kiểm toán toán học và có lời dẫn; ứng dụng/SBT không mở rộng Core.
 - [ ] Hoàn thiện trọn Chuyên đề/chương hoặc phân đoạn lớn có thể tự học độc lập rồi mới Q18 source QA. **Nếu chọn reviewer NotebookLM**, gửi file `Temp_` thật + prompt Source 06, reviewer trả theo outcome/item và delta ảnh hưởng; không biến Notebook thành vòng bắt buộc.
@@ -154,6 +164,7 @@ Trước khi **tự ký Q18_AUTHOR_SELF_VERIFIED hoặc gửi NotebookLM khi th�
 
 ## IX. Checklist PRE-HANDOFF V2 (AUTHORING)
 
+- [ ] **FIRST — LEARNER-VIEW EVIDENCE**: Trước khi xét SHA/receipt, kiểm bản học sinh thực đọc/làm; nếu Luyện tập chỉ liệt kê canonical item ID mà không có câu thực hiện được (trực tiếp hay projection có chứng cứ), hoặc Tự kiểm tra chỉ mô tả tương lai, thì Q05/Q17 chưa PASS; không ký CONTENT_READY mới.
 - [ ] `A1` SGK/chương trình S1 Core canonical Git blob, version/commit, trang SGK thực sự đã kiểm; **SBT nguồn tham khảo phải ghi provenance và `SBT_REFERENCE_GAP_DOCUMENTED` nếu thiếu**, không tuyên bố đã đọc trang chưa có; `A2` outcome/scope và độ phủ họ dạng chính xác; `A3` Q18 receipt đúng chế độ: reviewer Academic/PED PASS đúng snapshot **hoặc** tác giả tự ký `AUTHOR_SELF_QA_RECEIPT` có chứng cứ theo §X-D v3; Knowledge SGK đã phát hành có thể dùng `ENRICHMENT_DELTA_RECEIPT` theo §X-C, không bắt hồi tố reviewer cũ.
 - [ ] `A4` LESSON/OUTCOME/ITEM matrix từng ID, role/placement/primary outcome và bằng chứng integrated outcome; `A5` D1–D6 + PED1–6 per outcome, câu/mức/dạng thật; `A6` delta log đóng hết thay đổi C/D; `A7` RD1 private custody count/hash, exposure mode trung thực.
 - [ ] Một handoff V2, một manifest `ready/PACKET_ID.md`, đúng một REGISTER row, exact blob hash, `BLOCKERS:NONE`; chạy source-lock CI ở đúng HEAD. Không tự merge nguồn tác giả.
@@ -278,6 +289,12 @@ Những đoạn dẫn dắt như `Kiến thức tiền đề`, `Bản chất tr�
 
 **Quy tắc hiệu lực:** Nội dung trên là cập nhật trong **file chuẩn gốc duy nhất**, không phải chuẩn học thuật bổ sung hoặc Golden UI THCS mới. G10 B01–B06 là **baseline giao diện**, còn cấu trúc 1.x–4.x của chính chúng cũng phải được sửa theo quy trình/chapter snapshot; baseline giao diện **không đồng nghĩa** baseline số mục đã đạt.
 
+
+## X-G. Quyết định 15/11/2026 — sửa trực tiếp checklist hiện có (PATCH 3.1.1 candidate)
+
+Yêu cầu trực tiếp của chủ dự án ngày 15/11/2026, ghi defect tại Issue #865; đây là STANDARD_CHANGE_REQUEST **trong cùng file chuẩn gốc**, không tạo quy trình/ma trận hay chuẩn thứ hai. Điều Q bị ảnh hưởng: Q03–Q06, Q08–Q18; Q01/Q02/Q15/Q16 và an toàn RD1 giữ nguyên. Ví dụ lỗi: CĐ22 dùng heading 1.1.1 lặp checklist, mã outcome và Vận dụng M01 lộ ra, phần Luyện tập liệt kê 114 item nhưng thiếu câu thực học sinh làm. Ví dụ phù hợp hơn: CĐ20 dùng lời mở đầu tự nhiên và các câu luyện tập cụ thể; vẫn phải kiểm toán đầy đủ chứ không cấp PASS bằng giống mẫu.
+
+Kiểm các candidate 22 Topic theo cùng checklist VIII và cùng Q01–Q18, không viết 22 ma trận riêng; khác nhau về nội dung toán học/bối cảnh là hợp lệ. Bảo toàn PASS của snapshot bất biến; sửa DELTA_C đúng phần và tự kiểm source mới. Không áp hồi tố vô điều kiện, không động website/RD1/MASTERy. Bản PATCH chỉ hiệu lực sau QA và owner-authorized merge, không tự tạo CONTENT_READY hay phát hành.
 
 ## XI. Truy vết nguồn → điều khoản và phân công
 
