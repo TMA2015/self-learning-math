@@ -3,6 +3,8 @@
 **STANDARD_ID:** `SLM-THPT-QUALITY-ONE`  
 **VERSION:** `3.1.1` — PATCH candidate, owner request 15/11/2026, chỉ hiệu lực khi PR governance qua QA và merge main. Phiên bản 3.1.0 vẫn hiệu lực trước merge. **OWNER:** chủ dự án Self-Learning Math / G Learning.
 **STATUS:** `GOVERNANCE_PROPOSAL_OWNER_REVIEW_PENDING` · **PREVIOUS_EFFECTIVE_STANDARD:** `3.1.0` (PR #821 merged). PATCH candidate mới chỉ hiệu lực sau exact-head QA và owner-authorized merge; không tự đổi Q01–Q18, Golden, dữ liệu học sinh, Q15/Q16 hay quyền phát hành.
+**HISTORICAL_3_1_0_LOCK:** PR #821 là `AFTER_GOVERNANCE_PR_821_MERGE_INTO_MAIN`, status `OWNER_APPROVED_EFFECTIVE` **cho v3.1.0 đã merge**, không phải cho ứng viên 3.1.1 đang Draft. Chỉ sau QA và chủ dự án cho phép merge mới sửa trạng thái 3.1.1 sang hiệu lực.
+
 **SCOPE:** mọi học liệu Toán THPT 10–12 KNTT theo **SGK_CHAPTER** và **TOPIC**; áp dụng cho cả tác giả, NotebookLM và nhánh phát hành. **Một tiêu chuẩn chất lượng; các cổng kiểm tra phân theo trách nhiệm, không phải hai bộ tiêu chuẩn cạnh tranh.**
 
 ## 0. Luật thống nhất và thứ tự hiệu lực
