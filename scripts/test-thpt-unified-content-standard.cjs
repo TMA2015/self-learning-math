@@ -93,7 +93,7 @@ function validate(source, agents, queue) {
   }
   if(["3.1.0","3.1.1"].includes(version)){
      const required=["## X-F. OWNER DECISION 12/11/2026",
-     "AFTER_GOVERNANCE_PR_821_MERGE_INTO_MAIN",
+     version==="3.1.1"?"ONLY_AFTER_OWNER_APPROVAL_AND_GOVERNANCE_MERGE":"AFTER_GOVERNANCE_PR_821_MERGE_INTO_MAIN",
      "OWNER_GOLDEN_EDITORIAL_STRUCTURE = PASS",
      "OWNER_GOLDEN_PRODUCTION_STYLE = PRESERVE_EXISTING_G10_B01_B06",
      "1. Khám phá kiến thức","2. Kiến thức SGK","3. Ví dụ","4. Lỗi thường gặp",
