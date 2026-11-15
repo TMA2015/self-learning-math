@@ -237,7 +237,7 @@ RELEASE_AUTHORIZATION: NO
 
 ## QUALITY_Q01_Q18_EVIDENCE
 
-One canonical `SLM-THPT-QUALITY-ONE v3.1.0` source `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`. Q18 author receipt SHA 8f4d721ec8ab5b08baaf0a19c7aeaf2aa9cf454f on exact R04 learner SHA dd3af68f681eba9a7b75040d9490815f81efdd6b.
+One canonical `SLM-THPT-QUALITY-ONE v3.1.0` source `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`. Q18 author receipt SHA 8f4d721ec8ab5b08baaf0a19c7aeaf2aa9cf454f on exact R05 learner SHA dd3af68f681eba9a7b75040d9490815f81efdd6b.
 
 | Qxx | Scope and mathematical/PED evidence | Verdict | Source SHA trace | Release gate |
 |---|---|---|---|---|
@@ -284,7 +284,7 @@ SGK KNTT Toán 11 tập 1 ChI B01 printed 5–16, B02 17–21, B03 22–30, B04 
 
 ## AUTHORING_A1_A7
 
-A1 source dd3af68f681eba9a7b75040d9490815f81efdd6b and receipt 8f4d721ec8ab5b08baaf0a19c7aeaf2aa9cf454f one V2 pack; A2 owner historic S1 SGK/SBT ChI B01–B04 direct visual page receipt original46; A3 R04 author QA (not independent NotebookLM), P0/P1=0; A4 16 outcomes and 66 unique bank IDs (46 original+20 new), 16 selfcheck placements; A5 four coherent arcs and 16 open comparisons, 3 math-correct SVG and D6; A6 20 new solutions/direct trig computation and SVG mismatch fixes verified; A7 private RD1=0, no actual Topic Readiness/Mastery, release security scope protected.
+A1 source dd3af68f681eba9a7b75040d9490815f81efdd6b and receipt 8f4d721ec8ab5b08baaf0a19c7aeaf2aa9cf454f one V2 pack; A2 owner historic S1 SGK/SBT ChI B01–B04 direct visual page receipt original46; A3 R05 exact-source author QA (not independent NotebookLM), P0/P1=0; A4 16 outcomes and 66 unique bank IDs (46 original+20 new), 16 selfcheck placements; A5 4 coherent arcs, 16 independently labelled Ví dụ/Đề bài/Lời giải, 16 adjacent Vận dụng/Đối chiếu/D6, 3 math-correct SVG; A6 66/66 unchanged original canonical solutions/rubrics present, 54 direct trigonometry checks verified including corrected checker typo; A7 private RD1=0, no actual Topic Readiness/Mastery, release security scope protected.
 
 ## DELTA_LEDGER
 
