@@ -12,7 +12,7 @@ Thống kê giúp ta mô tả mức điển hình và mức dao động của m�
 
 #### 1.1. Dữ liệu đo và sai số
 
-**Khám phá kiến thức.**
+**Khám phá kiến thức**
 
 Một giá trị đọc từ dụng cụ có thể là **số gần đúng**, không phải số đúng. Khi biết số đúng \(\bar a\) và số ghi \(a\), sai số tuyệt đối \(\Delta=|\bar a-a|\); sai số tương đối theo số gần đúng \(a\ne0\) là \(\delta_a=\Delta/|a|\). Nếu chỉ biết độ chính xác \(d\), ta biết \(\Delta\le d\), **không** biết chắc sai số thực bằng \(d\). Quy tròn đến hàng phần mười theo quy tắc thông thường có chặn sai số \(0{,}05\) đơn vị. Ví dụ giá trị thật \(12{,}47\) mm và bản ghi \(12{,}5\) mm: \(\Delta=0{,}03\) mm, \(\delta_a=0{,}03/12{,}5=0{,}24\%\).
 
@@ -58,7 +58,7 @@ Làm tròn là thay giá trị bởi số thuận tiện hơn ở một hàng x�
 
 #### 1.2. Số trung bình và mốt
 
-**Khám phá kiến thức.**
+**Khám phá kiến thức**
 
 Khi cần mô tả một mẫu, **số trung bình** cho biết mức chia đều: \(\bar x=(x_1+\cdots+x_n)/n\). Bảng tần số dùng \(\bar x=\sum f_iv_i/\sum f_i\). **Mốt** là giá trị xuất hiện nhiều nhất, có thể có nhiều mốt. Với 2,2,3,5,8, số trung bình là \(20/5=4\) nhưng mốt là 2. Chọn mốt khi hỏi giá trị phổ biến, trung bình khi quan tâm tổng mức phân bổ; trung bình nhạy với giá trị lớn bất thường.
 
@@ -98,7 +98,7 @@ Trung bình 4, mốt 3. Năm số có tổng bằng 20.
 
 #### 1.3. Trung vị và tứ phân vị
 
-**Khám phá kiến thức.**
+**Khám phá kiến thức**
 
 Phải **sắp dãy theo thứ tự**. Trung vị là phần tử ở giữa khi \(n\) lẻ, hoặc trung bình của hai phần tử giữa khi \(n\) chẵn. \(Q_2\) là trung vị; theo cách chia nửa mẫu KNTT, khi \(n\) lẻ loại trung vị rồi lấy trung vị của hai nửa để có \(Q_1,Q_3\). Ví dụ dãy 1,2,2,4,5,8,10 có \(Me=4,Q_1=2,Q_3=8\). Đây là phân vị **dữ liệu thô**, không dùng công thức nội suy ghép nhóm.
 
@@ -138,7 +138,7 @@ Có 6 số: \(Me=(6+8)/2=7\); nửa dưới 2,4,6 có \(Q_1=4\), nửa trên 8,1
 
 #### 1.4. Khoảng biến thiên, IQR và ngoại lệ
 
-**Khám phá kiến thức.**
+**Khám phá kiến thức**
 
 Khoảng biến thiên \(R=x_{\max}-x_{\min}\) phản ánh độ trải từ đầu tới cuối nhưng rất nhạy với cực trị. Khoảng tứ phân vị \(IQR=Q_3-Q_1\) tập trung vào nửa giữa. Quy ước hàng rào \(Q_1-1{,}5IQR\) và \(Q_3+1{,}5IQR\) giúp **đánh dấu để xem xét**, không chứng minh dữ liệu sai. Với 1,2,2,4,5,8,30: \(Me=4,Q_1=2,Q_3=8,IQR=6\); hàng rào trên 17, nên 30 là ngoại lệ theo quy tắc này. Trung bình \(52/7\approx7{,}43\) chịu ảnh hưởng mạnh hơn trung vị.
 
@@ -187,7 +187,7 @@ Hàng rào (Q_1-1{,}5IQR) và (Q_3+1{,}5IQR) là quy tắc **phát hiện điể
 
 #### 1.5. Phương sai và độ lệch chuẩn
 
-**Khám phá kiến thức.**
+**Khám phá kiến thức**
 
 Để so sánh hai nhóm có cùng trung bình, xét sai lệch từng giá trị so với \(\bar x\). **Phương sai mô tả** \(s^2=\frac1n\sum_{i=1}^n(x_i-\bar x)^2\), **độ lệch chuẩn** \(s=\sqrt{s^2}\). Dữ liệu đo bằng phút thì \(s\) tính phút, \(s^2\) tính phút bình phương. Ví dụ A=3,4,5 và B=1,4,7 đều có trung bình 4; \(s_A^2=2/3\), \(s_B^2=6\) nên A ổn định hơn. Không tự thay mẫu số \(n\) bằng \(n-1\) trong công thức SGK này.
 
@@ -232,7 +232,7 @@ Trung bình cùng bằng 5; \(s_A^2=2/3\), \(s_B^2=6\). A ít phân tán hơn.
 
 #### 2.1. Ghép nhóm: biên, độ rộng, tần số
 
-**Khám phá kiến thức.**
+**Khám phá kiến thức**
 
 Khi có quá nhiều quan sát, gom thành các khoảng **trái đóng, phải mở** \([a,b)\) để một số ở ranh giới chỉ thuộc **một** nhóm. Độ rộng nhóm \(h=b-a\); tần số \(f_i\) là số phần tử thuộc nhóm, tổng \(\sum f_i=n\). Ví dụ dữ liệu 0,9,10,19,20 ghép \([0,10),[10,20),[20,30)\) có tần số 2,2,1. Sau ghép nhóm, thông tin từng quan sát mất đi: không thể khẳng định mọi số ở nhóm [10,20) đều bằng 15.
 
@@ -281,7 +281,7 @@ Tần số 8 trên tổng 20 nghĩa là 40% mẫu nằm trong khoảng đó. Đi
 
 #### 2.2. Đại diện, trung bình nhóm và tích lũy
 
-**Khám phá kiến thức.**
+**Khám phá kiến thức**
 
 Trung điểm \(c_i=(a_i+b_i)/2\) đại diện nhóm, không phải giá trị đo của từng cá thể. Ước lượng trung bình nhóm \(\bar x_g=\sum f_i c_i/n\); tần số tích lũy \(F_i=\sum_{j\le i}f_j\). Với \([0,10):2,[10,20):3,[20,30):1\), trung điểm 5,15,25, tổng trọng số 80, \(n=6\): \(\bar x_g=80/6=40/3\). Tích lũy 2,5,6. Số trung bình này chỉ là **ước lượng từ bảng nhóm**.
 
@@ -330,7 +330,7 @@ Trung điểm 5,15,25; trung bình (5+30+25)/4=15, tích lũy 1,3,4.
 
 #### 2.3. Nội suy trung vị và tứ phân vị ghép nhóm
 
-**Khám phá kiến thức.**
+**Khám phá kiến thức**
 
 Với bảng nhóm, tìm nhóm chứa vị trí \(p\) từ **tần số tích lũy**, rồi nội suy: \(\mathrm{estimate}=L+(p-F_{\mathrm{trước}})h/f\) khi tần số nhóm \(f>0\). Với trung vị dùng \(p=n/2\), tứ phân vị \(p=n/4,3n/4\). Ví dụ nhóm [0,10):4, [10,20):6, [20,30):8, [30,40):2 có \(n=20\), tích lũy 4,10,18,20. \(Me=20\), \(Q_1=10+(5-4)10/6=35/3\), \(Q_3=20+(15-10)10/8=26{,}25\). Đều là **ước lượng** từ bảng, không là số gốc chính xác.
 
@@ -370,7 +370,7 @@ Tích lũy 5,10,20. \(Me=20,Q_1=10,Q_3=25\).
 
 #### 2.4. Mốt ghép nhóm và giới hạn áp dụng
 
-**Khám phá kiến thức.**
+**Khám phá kiến thức**
 
 Với nhóm **cùng độ rộng**, nhóm tần số lớn nhất là nhóm mốt. Nếu \(f_m\) là tần số nhóm mốt và \(f_-,f_+\) là hai tần số kề, ước lượng \(Mo=L+\frac{f_m-f_-}{(f_m-f_-)+(f_m-f_+)}h\) khi mẫu dương. Khi nhóm mốt ở biên hoặc các khoảng có độ rộng khác nhau, cần kiểm điều kiện mô hình trước khi tính. Nếu nhiều nhóm cùng cực đại, nhóm không đều hoặc thiếu nhóm kề, không dùng máy móc công thức.
 
@@ -420,7 +420,7 @@ Nhóm mốt [10,20); \(Mo=10+(6/(6+4))10=16\).
 
 #### 3.1. Khoảng biến thiên ghép nhóm
 
-**Khám phá kiến thức.**
+**Khám phá kiến thức**
 
 Khi dữ liệu chỉ còn nhóm, ta không biết số nhỏ nhất/lớn nhất thật. Độ rộng phủ nhóm không rỗng từ \([a_1,b_1)\) tới \([a_k,b_k)\) cho ước lượng \(R_g=b_k-a_1\), **không** đồng nhất với khoảng biến thiên thật. Ví dụ [0,10):2,[10,20):4,[20,30):3 cho \(R_g=30\). Đây là khoảng phủ theo biên nhóm; các quan sát có thể nằm cách xa cận.
 
@@ -463,7 +463,7 @@ Chỉ một nhóm cực biên có vài quan sát cũng có thể khiến độ p
 
 #### 3.2. IQR ghép nhóm và so sánh
 
-**Khám phá kiến thức.**
+**Khám phá kiến thức**
 
 Ước lượng \(Q_1,Q_3\) từ tần số tích lũy và nội suy như mảng trước, sau đó \(IQR_g=Q_3-Q_1\). Mẫu nhóm [0,10):4,[10,20):8,[20,30):8 có \(n=20\), tích lũy 4,12,20: \(Q_1=10+(5-4)10/8=11{,}25\), \(Q_3=20+(15-12)10/8=23{,}75\), \(IQR_g=12{,}5\). IQR nhóm là ước lượng, không dùng để xác định chắc chắn cá thể ngoại lệ khi thiếu dữ liệu thô.
 
@@ -506,7 +506,7 @@ Khi so độ ổn định hai mẫu, R cho biết độ phủ từ cực thấp 
 
 #### 3.3. Phương sai và độ lệch chuẩn ghép nhóm
 
-**Khám phá kiến thức.**
+**Khám phá kiến thức**
 
 Dữ liệu gốc đã ẩn nên dùng trung điểm \(c_i\) để ước lượng: \(\bar x_g=\sum f_ic_i/n\), \(s_g^2=\sum f_i(c_i-\bar x_g)^2/n=\sum f_ic_i^2/n-\bar x_g^2\), \(s_g=\sqrt{s_g^2}\). Nếu nhóm [0,10):2,[10,20):2 thì \(c=5,15\), \(\bar x_g=10\), \(s_g^2=(50+50)/4=25\), \(s_g=5\). Phương sai có **bình phương đơn vị**, độ lệch chuẩn có đơn vị gốc. Đây là ước lượng theo trung điểm.
 
@@ -552,7 +552,7 @@ Các trung điểm 5,15,25; \(\bar x_g=15\); \(s_g^2=(100+0+100)/4=50\), \(s_g=5
 
 #### 3.4. So sánh phân phối và giới hạn suy luận
 
-**Khám phá kiến thức.**
+**Khám phá kiến thức**
 
 Hai mẫu có cùng trung bình vẫn có độ ổn định khác nhau. Trên các nhóm [0,10),[10,20),[20,30) với trung điểm 5,15,25: A tần số 1,2,1 và B 2,0,2 cùng \(\bar x_g=15\), nhưng \(s_A^2=50<s_B^2=100\). Vì vậy A ổn định hơn **theo độ phân tán nhóm**, không phải kết luận về mọi biến cố tương lai. Chỉ so sánh khi hai mẫu dùng cùng thang đo, đơn vị và cách nhóm hợp lí.
 
@@ -1499,6 +1499,11 @@ Trình bày bảng [0;5),[5;10),[10;15),[15;20) với f=(0,3,7,0): cỡ mẫu, h
 
 Tổng f=10; loại hai nhóm có f=0; trong các nhóm còn lại không biết từng quan sát cụ thể.
 
+**Các bước tự đối chiếu:**
+- 1 điểm — Tính n
+- 2 điểm — Xác định hai lớp có dữ liệu
+- 2 điểm — Nêu giới hạn suy luận từ bảng ghép nhóm
+
 </details>
 
 <!-- DISPLAY_ONLY: THPT-G12-B09-C02; CANONICAL_BLOB: 4e8e462a5c2243583be8c71625a9be3095e48c7b; NOT_CANONICAL -->
@@ -1546,6 +1551,12 @@ R gốc=47−13=34; nhóm biên có f>0 nên R ghép=50−10=40.
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 Loại các lớp có tần số 0 ở hai biên; lấy cận lớp đầu có dữ liệu là 4 và cận cuối là 10; nêu R chỉ xấp xỉ dữ liệu gốc.
+
+**Các bước tự đối chiếu:**
+- 1 điểm — Chỉ ra nhóm có tần số dương
+- 2 điểm — Chọn đúng hai cận
+- 1 điểm — Tính R=6
+- 1 điểm — Giải thích lỗi 12−2
 
 </details>
 
@@ -1595,6 +1606,12 @@ Một bảng ban đầu có lớp đầu [0;10), lớp cuối [20;30), tần s�
 
 Cùng đầu 0; biên cuối đổi 30→60; IQR cần toàn bộ tần số tích lũy chứ không chỉ hai lớp biên.
 
+**Các bước tự đối chiếu:**
+- 1 điểm — Xác định R trước
+- 1 điểm — Xác định R sau
+- 1 điểm — Xác định tăng 30
+- 2 điểm — Giải thích giới hạn với IQR
+
 </details>
 
 <!-- DISPLAY_ONLY: THPT-G12-B09-C04; CANONICAL_BLOB: 4e8e462a5c2243583be8c71625a9be3095e48c7b; NOT_CANONICAL -->
@@ -1642,6 +1659,12 @@ Bảng tần số 4 nhóm liên tiếp f=(4,8,12,8): lập tần số cộng d�
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 Lập n=32; hai vị trí 8 và 24; dùng cộng dồn nhận đúng lớp. Ở mốc biên trên, nội suy lớp kề cho cùng giá trị nếu lớp liền nhau.
+
+**Các bước tự đối chiếu:**
+- 1 điểm — Tính n
+- 1 điểm — Vị trí hai tứ phân vị
+- 1 điểm — Dãy tích lũy
+- 2 điểm — Chọn lớp và giải thích biên
 
 </details>
 
@@ -1691,6 +1714,13 @@ Bảng [0;20),[20;40),[40;60),[60;80) có f=(5,10,10,5). Xác định Q₁, Q₃
 
 n=30; Q₁ ở lớp 2, Q₁=20+((7,5−5)/10)20=25; Q₃ ở lớp 3, Q₃=40+((22,5−15)/10)20=55; trừ được 30; nội suy từ bảng ghép nên chỉ xấp xỉ.
 
+**Các bước tự đối chiếu:**
+- 1 điểm — Xác định vị trí và nhóm
+- 1 điểm — Tính Q₁
+- 1 điểm — Tính Q₃
+- 1 điểm — IQR
+- 1 điểm — Nêu giới hạn xấp xỉ
+
 </details>
 
 <!-- DISPLAY_ONLY: THPT-G12-B09-C06; CANONICAL_BLOB: 4e8e462a5c2243583be8c71625a9be3095e48c7b; NOT_CANONICAL -->
@@ -1738,6 +1768,13 @@ Các nhóm [0;10),…,[40;50) có A f=(1,9,12,9,1), B f=(0,7,18,7,0). So sánh R
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 Tính 2 R từ cận nhóm dương, n=32 mỗi mẫu; nội suy Q₁ và Q₃ bằng cộng dồn rồi trừ; A lớn hơn B theo cả R và IQR, với giới hạn xấp xỉ.
+
+**Các bước tự đối chiếu:**
+- 1 điểm — Hai khoảng biến thiên
+- 1 điểm — Q₁ của hai mẫu
+- 1 điểm — Q₃ của hai mẫu
+- 1 điểm — Hai IQR
+- 1 điểm — Nhận xét có điều kiện
 
 </details>
 
@@ -1787,6 +1824,13 @@ Bảng [0;10),[10;20),[20;30) có f=(2,3,5). Tìm cỡ mẫu, ba giá trị đ�
 
 n=2+3+5=10; các trung điểm 5,15,25; Σfc=2·5+3·15+5·25=180; x̄=18, phụ thuộc việc đại diện lớp.
 
+**Các bước tự đối chiếu:**
+- 1 điểm — Cỡ mẫu
+- 1 điểm — Ba trung điểm
+- 1 điểm — Tổng fc
+- 1 điểm — Trung bình
+- 1 điểm — Giới hạn xấp xỉ
+
 </details>
 
 <!-- DISPLAY_ONLY: THPT-G12-B10-C02; CANONICAL_BLOB: 4e8e462a5c2243583be8c71625a9be3095e48c7b; NOT_CANONICAL -->
@@ -1834,6 +1878,12 @@ Các nhóm [5;15),[15;25),[25;35) có f=(2,6,2). Tính x̄, s² với mẫu số
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 c=(10,20,30), n=10; x̄=(20+120+60)/10=20; s²=(2·100+6·0+2·100)/10=40; không âm và đơn vị phút².
+
+**Các bước tự đối chiếu:**
+- 1 điểm — Trung điểm và n
+- 1 điểm — Trung bình
+- 2 điểm — Tổng bình phương/10
+- 1 điểm — Đơn vị và tính không âm
 
 </details>
 
@@ -1883,6 +1933,13 @@ Cho c=(1,3,5,7), f=(1,3,3,1). Tính Σfc², x̄, s² bằng công thức rút g�
 
 n=8; Σfc=32, x̄=4; Σfc²=1+27+75+49=152; s²=19−16=3; khớp tổng f(c−4)²/8=3.
 
+**Các bước tự đối chiếu:**
+- 1 điểm — Tính n,Σfc
+- 1 điểm — x̄
+- 1 điểm — Σfc²
+- 1 điểm — s²
+- 1 điểm — Kiểm chéo hai cách
+
 </details>
 
 <!-- DISPLAY_ONLY: THPT-G12-B10-C04; CANONICAL_BLOB: 4e8e462a5c2243583be8c71625a9be3095e48c7b; NOT_CANONICAL -->
@@ -1930,6 +1987,13 @@ Bảng [0;10),[10;20),[20;30),[30;40) có f=(2,6,6,2). Tính n, x̄, s², s và 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 c=(5,15,25,35); Σfc/16=20; Σf(c−20)²=1200; s²=75; s=√75≈8,66 phút.
+
+**Các bước tự đối chiếu:**
+- 1 điểm — Trung điểm và n
+- 1 điểm — x̄
+- 1 điểm — s²
+- 1 điểm — s
+- 1 điểm — Phân biệt đơn vị
 
 </details>
 
@@ -1979,6 +2043,13 @@ Hai máy có cùng mức đo trung bình 20, mẫu A tần số (2,6,2), B (4,2,
 
 Hai trung bình bằng 20; phương sai A=40, B=80; lấy căn; so cùng đơn vị và chỉ nói độ ổn định trong mẫu.
 
+**Các bước tự đối chiếu:**
+- 1 điểm — Hai trung bình
+- 1 điểm — s²_A
+- 1 điểm — s²_B
+- 1 điểm — Hai s
+- 1 điểm — Nhận xét giới hạn
+
 </details>
 
 <!-- DISPLAY_ONLY: THPT-G12-B10-C06; CANONICAL_BLOB: 4e8e462a5c2243583be8c71625a9be3095e48c7b; NOT_CANONICAL -->
@@ -2026,6 +2097,13 @@ Hai phương án thu nhập có x̄_A=30 triệu, s_A=6 triệu; x̄_B=300 tri�
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 Nhận ra trung bình lệch xa; s tuyệt đối 18>6 không đủ kết luận; CV chỉ là công cụ tham khảo SGK: 6/30=0,2, 18/300=0,06; nêu giả định thu nhập dương và cùng bối cảnh.
+
+**Các bước tự đối chiếu:**
+- 1 điểm — Chỉ ra hai trung bình khác xa
+- 1 điểm — Nêu giới hạn so s tuyệt đối
+- 1 điểm — Giới thiệu CV là tham khảo có điều kiện
+- 1 điểm — Tính hai tỷ số
+- 1 điểm — Nhận xét không vượt chứng cứ
 
 </details>
 
