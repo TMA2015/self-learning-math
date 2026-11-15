@@ -178,9 +178,9 @@ Chẳng hạn, y=x²+1 tại x=1: P(1,2) và f'(1)=2. Tiếp tuyến có độ d
 
 **Ví dụ**
 
-**Đề bài:** Cho f(x)=x²−x+3. Tìm tung độ và độ dốc tiếp tuyến tại x=2.
+**Đề bài:** Cho \(f(x)=x^2+4x-5\). Tìm tung độ và hệ số góc tiếp tuyến tại \(x=1\).
 
-**Lời giải:** f(2)=5 là tung độ P(2,5), còn f′(x)=2x−1 nên f′(2)=3 là hệ số góc. Hai đại lượng có vai trò khác nhau.
+**Lời giải:** \(f(1)=1+4-5=0\), nên điểm tiếp xúc là \(P(1,0)\). \(f'(x)=2x+4\), suy ra \(f'(1)=6\) là hệ số góc của tiếp tuyến, không phải tung độ. Bài SGK W01 dùng hàm và điểm khác.
 
 **Vận dụng** f(x)=x²+2 tại x=0, độ dốc và tung độ lần lượt bao nhiêu?
 
@@ -542,9 +542,9 @@ Chẳng hạn, f=log₂ x, x>0: f'=1/(x ln2). Đơn vị ln2 là hằng dương,
 
 **Ví dụ**
 
-**Đề bài:** Tìm miền và đạo hàm của log₄x.
+**Đề bài:** Tìm miền và đạo hàm của \(\log_5 x\), rồi giải thích vì sao kết quả không dùng tại \(x=-2\).
 
-**Lời giải:** D=(0,+∞), (log₄x)′=1/(x ln4). Công thức không mở rộng miền về x âm.
+**Lời giải:** Vì cơ số \(5>0\), \(5\ne1\) và đối số phải dương, miền là \((0,+\infty)\). Trên miền đó, \((\log_5 x)'=1/(x\ln5)\). Dù biểu thức \(1/(x\ln5)\) tính được tại \(x=-2\), hàm gốc \(\log_5(-2)\) không có nghĩa trong tập số thực, nên không thể lấy đạo hàm của nó tại đó.
 
 **Vận dụng** [ln(4x)]' trên x>0 là gì?
 
