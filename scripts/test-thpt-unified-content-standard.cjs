@@ -204,7 +204,7 @@ function selfTest(){
     assert(validate(full.replace("Không duyệt giao diện màu sắc, cỡ chữ","Demo colors falsely approved"),"","")
       .failures.some(e=>e.startsWith("SGK_EDITORIAL_V3_1_MISSING_CONTROL")));
   }
-  if(full.includes("**VERSION:** `3.1.1-CANDIDATE`")){
+  if(/\*\*VERSION:\*\* `3\.1\.1(?:-CANDIDATE)?`/.test(full)){
    const wrong=full.replace("| **Q15 ID/Shared bank**","| **Q14 ID/Shared bank**");
    assert(validate(wrong,"","").failures.some(e=>e.startsWith("EXECUTION_Q01_Q18_ROWS_NOT_ORDERED")));
    const falseCore=full.replace("`TOPIC` không có Core riêng","`TOPIC` phải có Core riêng");
@@ -222,8 +222,17 @@ function selfTest(){
    assert(validate(noMethod,"","").failures.some(e=>e.startsWith("QXX_MISSING_DIRECT_EVIDENCE")));
    const noB=full.replace("### VIII.3. Kiểm đối chứng chống tái diễn","### VIII.3. [REMOVED]");
    assert(validate(noB,"","").failures.includes("ONE_EXECUTABLE_CHECKLIST_MISSING"));
-   const falseOwner=full.replace("**STATUS:** `GOVERNANCE_DRAFT_OWNER_REVIEW`","**STATUS:** `OWNER_APPROVED_EFFECTIVE`");
-   assert(validate(falseOwner,"","").failures.includes("DRAFT_STATUS_MUST_NOT_CLAIM_EFFECTIVE"));
+   if(full.includes("**VERSION:** `3.1.1-CANDIDATE`")){
+     const falseOwner=full.replace("**STATUS:** `GOVERNANCE_DRAFT_OWNER_REVIEW`","**STATUS:** `OWNER_APPROVED_EFFECTIVE`");
+     assert(validate(falseOwner,"","").failures.includes("DRAFT_STATUS_MUST_NOT_CLAIM_EFFECTIVE"));
+   }else{
+     const revoked=full.replace("**STATUS:** `OWNER_APPROVED_EFFECTIVE`","**STATUS:** `GOVERNANCE_DRAFT_OWNER_REVIEW`");
+     assert(validate(revoked,"","").failures.includes("V3_1_1_EFFECTIVE_REQUIRES_OWNER_MERGE"));
+     const candidate=full.replace("**VERSION:** `3.1.1`","**VERSION:** `3.1.1-CANDIDATE`")
+                         .replace("**STATUS:** `OWNER_APPROVED_EFFECTIVE`","**STATUS:** `GOVERNANCE_DRAFT_OWNER_REVIEW`");
+     assert(validate(candidate,"","").status==="STANDARD_SCHEMA_PASS_NOT_ACADEMIC_PASS",
+       "Candidate remains schema-testable, not owner-effective");
+   }
  }
 console.log("PASS governance-only preflight: one standard version, owner decision, Q01 source roles, missing evidence, duplicate Q and negative invalid version (NOT Academic/PED PASS)");
 }
