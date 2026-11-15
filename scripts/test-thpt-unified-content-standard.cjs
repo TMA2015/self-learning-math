@@ -101,7 +101,7 @@ function validate(source, agents, queue) {
       fail("SGK_EDITORIAL_V3_1_MISSING_CONTROL:"+token);
     if(version==="3.1.1"){
       for(const token of ["## X-G. Quyết định 15/11/2026","**FIRST — VĂN HỌC SINH LIỀN MẠCH",
-        "**FIRST — ĐỌC/THỰC LÀM ĐƯỢC","**FIRST — LEARNER-VIEW EVIDENCE**","Viết liền mạch cho học sinh trước"])
+        "**FIRST — ĐỌC/THỰC LÀM ĐƯỢC","**FIRST — LEARNER-VIEW EVIDENCE**","**TRƯỚC KHI VIẾT — ĐỌC NGUỒN THAM CHIẾU ĐÚNG VAI","**SAU KHI VIẾT — KIỂM NGƯỢC THEO LỖI ĐÃ GẶP","Viết liền mạch cho học sinh trước"])
         if(!source.includes(token))fail("V3_1_1_LEARNER_CHECK_MISSING:"+token);
       if(approvalStatus==="GOVERNANCE_PROPOSAL_OWNER_REVIEW_PENDING" && !source.includes("**PREVIOUS_EFFECTIVE_STANDARD:** `3.1.0`"))
         fail("V3_1_1_PREVIOUS_EFFECTIVE_MISSING");
