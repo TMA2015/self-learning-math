@@ -47,11 +47,24 @@ for(const [chapter,nums] of Object.entries(listed))for(const num of nums){
      assert.equal(new Set(ids).size,5,"B01: first-try IDs cannot be duplicated");
      assert(source.includes("### 1.3. “Mọi” và “có ít nhất một”"),
        "B01: preserve original quantifier concept formation before formalization");
-     const receipt=read("prototypes/thpt/ux795/G10_CHI_B01_KNOWLEDGE_ENRICHMENT_DELTA_RECEIPT_R01_20261115.md");
+     const prev=read("prototypes/thpt/ux795/G10_CHI_B01_KNOWLEDGE_ENRICHMENT_DELTA_RECEIPT_R01_20261115.md");
+     const r02=read("prototypes/thpt/ux795/G10_CHI_B01_KNOWLEDGE_OWNER_P2_DELTA_RECEIPT_R02_20261115.md");
      const sourceBlob=require("node:crypto").createHash("sha1")
        .update("blob "+Buffer.byteLength(source)+"\0"+source).digest("hex");
-     assert(receipt.includes("**CANDIDATE_LESSON_GIT_BLOB:** \`"+sourceBlob+"\`"),
-       "B01: candidate source/QA receipt Git blob must match actual bytes");
+     const r01Candidate=prev.match(/^\*\*CANDIDATE_LESSON_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+     const r02Baseline=r02.match(/^\*\*BASELINE_LESSON_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+     const r02Candidate=r02.match(/^\*\*CANDIDATE_LESSON_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+     assert(r01Candidate&&r01Candidate===r02Baseline&&r02Candidate===sourceBlob,
+       "B01 owner P2 source must preserve immutable R01→R02 Git blob chain");
+     assert(!source.includes("Vì sao chọn cách này?"),"B01 owner rejected method-choice label before a method exists");
+     assert.equal((source.match(/\*\*Phân tích\.\*\*/g)||[]).length,4,"B01 four examples must label analysis correctly");
+     assert.equal((source.match(/\*\*Vận dụng\.\*\*/g)||[]).length,5,"B01 all five first tries use Vận dụng");
+     const expectedConcepts=["Mệnh đề:","Mệnh đề chứa biến:","Mệnh đề phủ định:","Mệnh đề kéo theo:","Mệnh đề đảo:","Mệnh đề tương đương:"];
+     for(const concept of expectedConcepts)
+       assert(source.includes("<strong>Khái niệm — "+concept+"</strong>"),"B01 source concept missing boxed label "+concept);
+     assert(source.includes("<strong>Kí hiệu — Lượng từ:</strong>"),"B01 SGK 2.5 must mark notation in box");
+     assert.equal((source.match(/role="note"><strong>(?:Khái niệm|Kí hiệu) — /g)||[]).length,7,
+       "B01 seven canonical S1 concept/notation labels, no duplicate summary boxes");
    }
  }
  if([3,5,6].includes(num)){

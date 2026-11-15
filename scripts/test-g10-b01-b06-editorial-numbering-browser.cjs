@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 "use strict";
-/* DELTA_A_UI: 6 published academic source blobs and non-target CSS/config unchanged;
- * only heading labels, table alignment and worked-solution presentation change.
- * This is not S1 approval / not final release or Mastery evidence.
+/* G10 B01–B06 learner-facing Golden browser QA.
+ * B01 now references owner-corrected R02 source and immutable R01→R02 Q18
+ * receipts; B02–B06 keep exact historic SHA. Golden UI/answer and D6
+ * regressions are checked; this does NOT independently approve Delta C.
  */
 const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path"),crypto=require("node:crypto");
 const {chromium}=require("playwright");
@@ -32,12 +33,16 @@ function checkSHA(){
  for(const [p,sha] of Object.entries({...SHA,...STYLES})){
   const data=fs.readFileSync(path.join(root,p));
   if(p==="docs/thpt-preview/sgk/chuong-i/bai-1.md"){
-   const receipt=fs.readFileSync(path.join(root,
+   const original=fs.readFileSync(path.join(root,
     "prototypes/thpt/ux795/G10_CHI_B01_KNOWLEDGE_ENRICHMENT_DELTA_RECEIPT_R01_20261115.md"),"utf8");
-   const expected=receipt.match(/\*\*CANDIDATE_LESSON_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/);
-   assert(expected&&receipt.includes("**BASELINE_LESSON_GIT_BLOB:** \`"+sha+"\`"),
-    "B01 original source remains locked; enrichment needs real Q18 source receipt");
-   assert.equal(hash(data),expected[1],"B01 enhanced Knowledge source must match receipt blob");
+   const follow=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHI_B01_KNOWLEDGE_OWNER_P2_DELTA_RECEIPT_R02_20261115.md"),"utf8");
+   const oldCandidate=original.match(/^\*\*CANDIDATE_LESSON_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+   const newBaseline=follow.match(/^\*\*BASELINE_LESSON_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+   const newCandidate=follow.match(/^\*\*CANDIDATE_LESSON_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+   assert(oldCandidate&&newBaseline===oldCandidate&&original.includes("**BASELINE_LESSON_GIT_BLOB:** "+String.fromCharCode(96)+sha+String.fromCharCode(96)),
+    "B01 R02 must extend original owner-reviewed R01 / frozen historical SGK baseline");
+   assert.equal(hash(data),newCandidate,"B01 owner P2 source must match exactly R02 Q18 candidate Git blob");
   }else assert.equal(hash(data),sha,"Untouched SGK sibling source/theme drift: "+p);
  }
 }
@@ -74,6 +79,20 @@ const widths=[390,820,1440];
      assert.deepEqual(discoveryTitles,expectedDiscovery,loc+" meaningful concept-first discovery headings");
      const knowledge=(await groups.nth(1).locator("h3").allInnerTexts()).map(x=>x.trim());
      assert(knowledge.length>=4&&knowledge.every((v,i)=>v.startsWith("2."+(i+1)+". ")),loc+" original SGK 2.x preserved");
+     if(n===1){
+      const conceptBoxes=groups.nth(1).locator(".thpt-r4-knowledge-conclusion");
+      assert.equal(await conceptBoxes.count(),7,loc+" B01 canonical boxed definitions and notation");
+      const boxText=(await conceptBoxes.allInnerTexts()).join(" ");
+      for(const key of ["Mệnh đề:","Mệnh đề chứa biến:","Mệnh đề phủ định:",
+          "Mệnh đề kéo theo:","Mệnh đề đảo:","Mệnh đề tương đương:","Kí hiệu — Lượng từ:"])
+        assert(boxText.includes(key),loc+" missing core S1 learner concept "+key);
+      const applications=(await groups.nth(1).locator("p").allInnerTexts()).filter(x=>x.trim().startsWith("Vận dụng."));
+      assert.equal(applications.length,5,loc+" five visually uniform Vận dụng prompts");
+      const analyses=(await groups.nth(2).locator("p").allInnerTexts()).filter(x=>x.trim().startsWith("Phân tích."));
+      assert.equal(analyses.length,4,loc+" four correctly titled analysis paragraphs before solution");
+      assert(!await groups.nth(2).getByText("Vì sao chọn cách này?",{exact:true}).count(),
+        loc+" never render rejected method-choice prompt");
+     }
      const exampleTitles=(await groups.nth(2).locator("h3").allInnerTexts()).map(x=>x.trim());
      assert(exampleTitles.length>=3&&exampleTitles.every((v,i)=>v.startsWith("3."+(i+1)+". Ví dụ "+(i+1)+" —")),loc+" 3.x examples");
      // Visual consistency: every worked example has one full tinted solution,
@@ -213,5 +232,5 @@ const widths=[390,820,1440];
   }
  }finally{await browser.close();}
  assert.equal(passed,18);
- console.log("PASS 18/18 real browser cases G10 B01-B06 (390/820/1440). Academic source and non-target CSS/config source-locked. DELTA_A_UI only. No academic source/learner/backend/merge/deploy.");
+ console.log("PASS 18/18 real browser cases G10 B01-B06 (390/820/1440). B01 owner P2 R02 SHA chain, B02–B06 and CSS/config immutable; no answer-key/backend/deploy mutation.");
 })().catch(e=>{console.error(e);process.exitCode=1});
