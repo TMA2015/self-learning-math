@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 "use strict";
-/* DELTA_A_UI: 6 published academic source blobs and non-target CSS/config unchanged;
- * only heading labels, table alignment and worked-solution presentation change.
- * This is not S1 approval / not final release or Mastery evidence.
+/* G10 B01–B06 learner-facing Golden browser QA.
+ * B01 now references owner-corrected R02 source and immutable R01→R02 Q18
+ * receipts; B02–B06 keep exact historic SHA. Golden UI/answer and D6
+ * regressions are checked; this does NOT independently approve Delta C.
  */
 const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path"),crypto=require("node:crypto");
 const {chromium}=require("playwright");
@@ -231,5 +232,5 @@ const widths=[390,820,1440];
   }
  }finally{await browser.close();}
  assert.equal(passed,18);
- console.log("PASS 18/18 real browser cases G10 B01-B06 (390/820/1440). Academic source and non-target CSS/config source-locked. DELTA_A_UI only. No academic source/learner/backend/merge/deploy.");
+ console.log("PASS 18/18 real browser cases G10 B01-B06 (390/820/1440). B01 owner P2 R02 SHA chain, B02–B06 and CSS/config immutable; no answer-key/backend/deploy mutation.");
 })().catch(e=>{console.error(e);process.exitCode=1});
