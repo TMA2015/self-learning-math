@@ -2,8 +2,7 @@
 "use strict";
 /* Governance-only exact blob guard: owner-approved HTML STRUCTURE is NOT
    authorization to replace colors, font, size, spacings or G10 B01-B06 UI.
-   The 13 SHA locks below come from actual published MAIN
-   92d05d3b3939b385123495d7237d19995c3ea505.
+   The 13 SHA locks below are verified current main b103cd91cd32a2ff3accd1ae14c24870330ef9a2.\n    Two asset blobs changed before this governance PR; this guard locks\n    exact PR baseline, not a visual acceptance or permission for design changes.
    This is a PRE-MIGRATION non-change guard, NOT visual AP1-AP5 acceptance.
 */
 const fs=require("node:fs"),path=require("node:path"),crypto=require("node:crypto"),assert=require("node:assert/strict");
@@ -13,9 +12,9 @@ const baseline={
   "mkdocs.thpt-preview.yml": "a18192415be322da6b3bdea6e6ca462cf1a189b4",
   "docs/assets/stylesheets/site-design-system.css": "cede51cfff25ef4f6c612c894c81f4639625c32b",
   "docs/assets/stylesheets/thpt-r4-preview.css": "f46b7280965c226039093c408dc7f8e3e78001fa",
-  "docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css": "4acf8094740835fec618e0f1a45189053b06f387",
+  "docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css": "44442773ac31eb1a46f0cab699a7d2c7974a5f37",
   "docs/assets/stylesheets/thpt-sgk-lesson-nav-v1.css": "4bf16bba1cd144f0a69c932d8ead24dd4534f4cb",
-  "docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js": "b42d51064b34d55213e99a2f872c7cbef973e128",
+  "docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js": "f1e19da9e6629d267010ba055f29482daaaecd59",
   "docs/thpt-preview/sgk/chuong-i/bai-1.md": "fb4bd72f6101523e30e30cc970d74c23b76228a8",
   "docs/thpt-preview/sgk/chuong-i/bai-2.md": "8a7b90f1768b789429def045e38ebe97e6adbf3a",
   "docs/thpt-preview/sgk/chuong-ii/bai-3.md": "c9ae5104c2f65779f2dd452d3f7775abe2600b7b",
@@ -43,8 +42,12 @@ for(const config of ["mkdocs.yml","mkdocs.thpt-preview.yml"]){
  assert(!text.includes(demo)&&!text.includes("Temp_THPT_SGK_79_Editorial_Golden_Review_20261112"),"Standalone demo must not be imported by production config");
 }
 const standard=fs.readFileSync(path.join(root,"prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md"),"utf8");
-assert(standard.startsWith("# SELF-LEARNING MATH — TIÊU CHUẨN CHẤT LƯỢNG HỌC LIỆU THPT THỐNG NHẤT v3.1.0"),
- "Versioned SAME canonical standard v3.1.0, not a competing standard file");
+assert(/^# SELF-LEARNING MATH — TIÊU CHUẨN CHẤT LƯỢNG HỌC LIỆU THPT THỐNG NHẤT v3\.1\.[01]/.test(standard),
+  "SAME canonical Q01–Q18 standard, not a competing file");
+if(standard.includes("**VERSION:** `3.1.1-CANDIDATE`"))
+  assert(standard.includes("**STATUS:** `GOVERNANCE_DRAFT_OWNER_REVIEW`")
+    &&standard.includes("ONLY_AFTER_OWNER_APPROVAL_AND_GOVERNANCE_MERGE"),
+    "Draft v3.1.1 must not claim owner-effective release");
 assert(standard.includes("## X-F. OWNER DECISION 12/11/2026"),"Missing one Q01–Q18 editorial amendment");
 assert(standard.includes("Không duyệt giao diện màu sắc, cỡ chữ")&&standard.includes("Bài 1–6 Toán 10"),
  "No explicit owner style-preservation agreement in canonical Q01–Q18");
