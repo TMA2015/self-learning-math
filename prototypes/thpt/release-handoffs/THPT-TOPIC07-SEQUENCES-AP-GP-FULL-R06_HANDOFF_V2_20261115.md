@@ -251,16 +251,16 @@ Exactly 18 public placements, each references a NEW Practice ID already accessib
 
 ## QUALITY_Q01_Q18_EVIDENCE
 
-One normative `SLM-THPT-QUALITY-ONE v3.1.0` defined at `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`. Current R04 source blob 22609934f525e6e9c2c8f1513e439c3cd4d54221 and author Q18 receipt 73fc766c9bea00be48e25d0514548e12fa783f60.
+One normative `SLM-THPT-QUALITY-ONE v3.1.0` defined at `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`. Current R06 source blob 22609934f525e6e9c2c8f1513e439c3cd4d54221 and author Q18 receipt 73fc766c9bea00be48e25d0514548e12fa783f60.
 
-| Qxx | Concrete academic and PED evidence on exact R04 | Scope verdict | Trace | Release boundary |
+| Qxx | Concrete academic and PED evidence on exact R06 | Scope verdict | Trace | Release boundary |
 |---|---|---|---|---|
 | Q01 | Historical owner-verified SGK G11 KNTT ChII B05/06/07 and ChV B15 source index47, printed S1 evidence retained. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_22609934 | RELEASE_QA_SEPARATE_NO_DEPLOY |
 | Q02 | Eighteen TOP07-M/O matched learner explanations across the sequence, additive, multiplicative and cashflow arcs. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_22609934 | RELEASE_QA_SEPARATE_NO_DEPLOY |
 | Q03 | Sequence discrete domain, valid index, recurrence initial values, CSC difference, CSN ratio and convergence restrictions. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_22609934 | RELEASE_QA_SEPARATE_NO_DEPLOY |
 | Q04 | Worked proofs of formula/truncation, finite sum pairing, geometric sum, annuity and period counting. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_22609934 | RELEASE_QA_SEPARATE_NO_DEPLOY |
 | Q05 | 69 public original/source-locked canonical IDs: original47 + new22, distinct concept/application/Written structures. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_22609934 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q06 | Four new Written with separate one-source rubrics plus original SGK Written referenced only by ID. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_22609934 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q06 | 11 Written with learner-visible source-exact rubrics: six original ChII /6, one ChV /4 and four new Topic /7. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_22609934 | RELEASE_QA_SEPARATE_NO_DEPLOY |
 | Q07 | Three actual SVG match discrete odd-number sequence, AP plus10 versus GP 10-percent, and deposits100 total331. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_22609934 | RELEASE_QA_SEPARATE_NO_DEPLOY |
 | Q08 | Eighteen opt-in First Try, specific D6 remedial paths, 69 canonical source exercises. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_22609934 | RELEASE_QA_SEPARATE_NO_DEPLOY |
 | Q09 | Motivation from row of seats and periodic account; why indices and different growth patterns matter. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_22609934 | RELEASE_QA_SEPARATE_NO_DEPLOY |
@@ -271,7 +271,7 @@ One normative `SLM-THPT-QUALITY-ONE v3.1.0` defined at `prototypes/thpt/THPT_UNI
 | Q14 | Eighteen first-try before voluntary disclosure, followed by task-specific correction, not scattered PED cards. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_22609934 | RELEASE_QA_SEPARATE_NO_DEPLOY |
 | Q15 | One canonical source for every original47/new22 item, 18 selfcheck placements reuse IDs, no clones. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_22609934 | RELEASE_QA_SEPARATE_NO_DEPLOY |
 | Q16 | 0 private RD1 and CLIENT_SELF_CHECK_NO_MASTERY; Final Submit protection is RELEASE QA. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_22609934 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q17 | Three self-contained Topic pages independent of SGK pathway, no Topic Core; all 69 complete exercises already displayed in Practice. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_22609934 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q17 | Three self-contained Topic pages independent of SGK pathway, no Topic Core; 69 complete actual exercises and 18 public selfcheck prompts already displayed in their learner sections. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_22609934 | RELEASE_QA_SEPARATE_NO_DEPLOY |
 | Q18 | R06 exact learner blob 22609934 plus author receipt 73fc766c, Q01-Q18 source-locked and original history unchanged. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_22609934 | RELEASE_QA_SEPARATE_NO_DEPLOY |
 
 ## S1_SGK_SBT_SOURCE
@@ -300,7 +300,7 @@ One normative `SLM-THPT-QUALITY-ONE v3.1.0` defined at `prototypes/thpt/THPT_UNI
 
 ## AUTHORING_A1_A7
 
-A1: current R04 learner source SHA 22609934f525e6e9c2c8f1513e439c3cd4d54221; Q18 self-QA receipt 73fc766c9bea00be48e25d0514548e12fa783f60 and one V2 packet. A2 historical G11 KNTT ChII/B15 SGK+SBT receipt with printed-page mapping. A3 exact R06 mathematical/PED author self-QA, not NotebookLM R04. A4 18 outcomes, original47+new22=69 unique IDs, 18 reuse-only public Self Checks. A5 four coherent continuous narrative arcs, 18 targeted self-tries, three math-aligned SVG. A6 verified 22 new keys incl strict convergence, 331 end-period cash flow and all visual examples. A7 zero private RD1, no official readiness/Mastery, runtime release safety not yet QA.
+A1: current R06 learner source SHA 22609934f525e6e9c2c8f1513e439c3cd4d54221; Q18 self-QA receipt 73fc766c9bea00be48e25d0514548e12fa783f60 and one V2 packet. A2 historical G11 KNTT ChII/B15 SGK+SBT receipt with printed-page mapping. A3 exact R06 mathematical/PED author self-QA, not a new NotebookLM independent review on R06. A4 18 outcomes, original47+new22=69 unique IDs, 18 reuse-only public Self Checks. A5 four coherent continuous narrative arcs, 18 targeted self-tries, three math-aligned SVG. A6 verified 22 new keys incl strict convergence, 331 end-period cash flow and all visual examples. A7 zero private RD1, no official readiness/Mastery, runtime release safety not yet QA.
 
 ## R06_STUDENT_VIEW_SOURCE_LOCK
 
