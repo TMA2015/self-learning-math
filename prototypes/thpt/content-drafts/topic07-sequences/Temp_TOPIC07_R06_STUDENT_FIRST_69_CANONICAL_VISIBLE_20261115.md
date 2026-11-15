@@ -1,5 +1,5 @@
 <!-- AUTHORING R06 STUDENT-FIRST CANDIDATE 15/11/2026; Q18 pending; historical R04 ready unchanged. -->
-<!-- STANDARD_ID=SLM-THPT-QUALITY-ONE; STANDARD_VERSION=3.1.0; LEARNING_PATH=TOPIC; SOURCE_VERSION=R06_AUTHORING_CANDIDATE_Q18_PENDING; INDEX_BLOB=6500dc26b7ae21eb99b964f675023babdd881663; NEW_BANK_BLOB=3bf3ab77d89497b39ae50ac54f71b81eccddc14c -->
+<!-- STANDARD_ID=SLM-THPT-QUALITY-ONE; STANDARD_VERSION=3.1.0; LEARNING_PATH=TOPIC; SOURCE_VERSION=R06_AUTHORING_CANDIDATE_Q18_PENDING; INDEX_BLOB=6500dc26b7ae21eb99b964f675023babdd881663; NEW_BANK_BLOB=f70e2c961dfcf31825d135b61e301cbb4c322767 -->
 # CĐ07 — Dãy số, cấp số cộng và cấp số nhân
 
 ### 1. Kiến thức
@@ -72,9 +72,9 @@ Xét ví dụ: u_1=3, u_{n+1}=2u_n+1. Đặt v_n=u_n+1, v_{n+1}=2v_n và v_1=4, 
 
 **Ví dụ**
 
-**Đề bài:** Cho \(u_1=2,\ u_{n+1}=3u_n-2\), \(n\ge1\). Tính \(u_2,u_3\) và tìm công thức tường minh.
+**Đề bài:** Cho \(u_1=5\), \(u_{n+1}=2u_n-3\) với \(n\ge1\). Tìm \(u_2,u_3\) và công thức tường minh.
 
-**Lời giải:** \(u_2=4,u_3=10\). Đặt \(v_n=u_n-1\), suy ra \(v_{n+1}=3v_n,\ v_1=1\). Vậy \(v_n=3^{n-1}\), do đó \(u_n=1+3^{n-1}\). Thế \(n=2,3\) để thử.
+**Lời giải:** \(u_2=7\), \(u_3=11\). Đặt \(v_n=u_n-3\) thì \(v_1=2\), \(v_{n+1}=2v_n\), nên \(v_n=2\cdot2^{n-1}\). Do đó \(u_n=3+2^n\). Kiểm \(n=1,2,3\) lần lượt được \(5,7,11\).
 
 **Vận dụng** Cho u_1=2,u_{n+1}=u_n+4. Tính u_3.
 
@@ -178,9 +178,9 @@ Chẳng hạn, u_1=7,d=−2, u_6=7+5(−2)=−3. Ta chọn công thức tổng q
 
 **Ví dụ**
 
-**Đề bài:** Cấp số cộng có \(u_1=-5\), \(d=4\). Tính \(u_{12}\).
+**Đề bài:** CSC có \(u_1=-6\), \(d=5\). Tính \(u_9\), giải thích số bước cộng.
 
-**Lời giải:** Từ chỉ số \(1\) đến \(12\) có \(11\) bước cộng công sai. \(u_{12}=-5+11\cdot4=39\).
+**Lời giải:** Từ chỉ số \(1\) đến \(9\) có \(8\) bước cộng. Vì thế \(u_9=-6+8\cdot5=34\).
 
 **Vận dụng** CSC u_1=10,d=−3: tính u_4.
 
@@ -284,9 +284,9 @@ Chẳng hạn, Dãy 2,−6,18,−54 là CSN q=−3. Dãy 5,0,0,… là CSN q=0; 
 
 **Ví dụ**
 
-**Đề bài:** Dãy \(3,-6,12,-24,\ldots\) được cho bởi quy luật nhân liên tiếp cùng một số. Tìm \(q\) và số tiếp theo.
+**Đề bài:** Dãy \(1,-4,16,-64,\ldots\) được xác định bằng phép nhân cùng một số. Tìm \(q\) và số tiếp theo.
 
-**Lời giải:** Công bội \(q=-2\), số sau là \(48\). Dấu luân phiên không làm mất tính chất CSN; nếu gặp số \(0\), kiểm bằng truy hồi nhân, không chia \(0/0\).
+**Lời giải:** Ta có công bội \(q=-4\), số tiếp là \(256\). Dấu luân phiên vẫn là cấp số nhân; nếu xuất hiện số \(0\), phải kiểm qua truy hồi \(u_{n+1}=qu_n\), không chia cho \(0\).
 
 **Vận dụng** Dãy 4,0,0,0,… có là CSN không?
 
@@ -334,9 +334,9 @@ Xét ví dụ: u_2=6,u_4=24 ⇒ q²=4 nên q=±2. Với q=2 thì u_1=3; q=−2 t
 
 **Ví dụ**
 
-**Đề bài:** Biết \(u_2=12,\ u_4=108\) của một CSN có các số hạng liên quan khác \(0\). Tìm tất cả \(q\) thực và \(u_1\).
+**Đề bài:** Biết \(u_2=16,\ u_4=256\) của một CSN, các số hạng liên quan khác \(0\). Tìm mọi công bội thực và số đầu tương ứng.
 
-**Lời giải:** \(q^2=108/12=9\), nên \(q=3\) hoặc \(-3\). Khi đó \(u_1=4\) hoặc \(-4\) tương ứng. Cả hai cho lại \(u_4=108\). Không tự bỏ nghiệm âm.
+**Lời giải:** \(q^2=u_4/u_2=256/16=16\), nên \(q=4\) hoặc \(q=-4\). Tương ứng \(u_1=16/4=4\) hoặc \(u_1=16/(-4)=-4\). Cả hai cho đúng \(u_4=256\); không tự bỏ dấu âm.
 
 **Vận dụng** Ba số 2,b,18 là CSN với b≠0: b có thể bằng bao nhiêu?
 
@@ -473,9 +473,9 @@ Xét ví dụ đúng với sơ đồ: gửi **100 đơn vị vào cuối mỗi k
 
 **Ví dụ**
 
-**Đề bài:** Gửi \(30\) đơn vị vào cuối mỗi kỳ trong ba kỳ, lãi \(5\%\)/kỳ, không phí/rút. Tính số dư ngay sau kỳ ba.
+**Đề bài:** Gửi \(25\) đơn vị vào cuối mỗi kỳ trong bốn kỳ, lãi cố định \(4\%\)/kỳ, không phí/rút. Tính số dư ngay sau khoản gửi thứ tư.
 
-**Lời giải:** Khoản cuối kỳ 1 được hai kỳ lãi, khoản cuối kỳ 2 một kỳ, khoản cuối kỳ 3 chưa có lãi: \(30[(1{,}05)^2+1{,}05+1]=94{,}575\). Hình minh họa bên trên dùng khoản gửi \(100\), không phải \(30\).
+**Lời giải:** Bốn khoản gửi được hưởng \(3,2,1,0\) kỳ lãi, nên \(FV=25[(1{,}04)^3+(1{,}04)^2+1{,}04+1]=25(1{,}124864+1{,}0816+1{,}04+1)=106{,}1616\). Không tính lãi cho khoản gửi cuối kỳ thứ tư; hình minh họa bên trên có ba khoản \(100\), là dữ liệu khác.
 
 **Vận dụng** Gửi 20 vào cuối hai kỳ với r=10%/kỳ, số dư cuối kỳ 2 là bao nhiêu?
 
@@ -492,25 +492,13 @@ Nếu nhân cả hai khoản với 1,1², vẽ trục kỳ 0–1–2 và đánh 
 
 ## 2. Luyện tập
 
-Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn vị, rồi mới mở **Lời giải**. Với tự luận, hãy so cách trình bày với rubric. Nếu sai, quay lại mục Kiến thức liên quan và tự làm bài khác.
+Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm miền chỉ số, điều kiện, giới hạn áp dụng và đơn vị; với bài tự luận, tự đối chiếu cả phương pháp và rubric. Nếu sai, quay lại đoạn Kiến thức tương ứng trước khi giải lại.
 
 ### 1. Dãy số và tính chất
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B05-P05; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O01; NOT_A_NEW_BANK -->
-
-**Bài 1.** Dãy u_n=(-1)^n (n≥1) có tăng, giảm hay bị chặn không?
-
-<details markdown="1"><summary>Lời giải</summary>
-
-**Đáp án:** Không tăng hoặc giảm; bị chặn bởi -1 và 1.
-
-**Lời giải:** Các giá trị luân phiên −1,1,−1,1...; −1≤u_n≤1.
-
-</details>
-
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B05-C01; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O01; NOT_A_NEW_BANK -->
 
-**Bài 2.** Dãy hữu hạn gồm 5 số chính phương dương đầu tiên là gì?
+**Bài 1.** Dãy hữu hạn gồm 5 số chính phương dương đầu tiên là gì?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -520,23 +508,23 @@ Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P01; ORIGINAL_BLOB: 3bf3ab77d89497b39ae50ac54f71b81eccddc14c; OUTCOME: TOP07-O01; NOT_A_NEW_BANK -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P01; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O01; NOT_A_NEW_BANK -->
 
-**Bài 3.** Cho dãy hữu hạn u_n=2n−1 với n∈{1,2,3,4,5,6}. Liệt kê các số hạng và cho biết vì sao không được viết u_0.
+**Bài 2.** Cho dãy hữu hạn a_n=(−1)^n(2n+1), n∈{0,1,2,3}. Liệt kê các số hạng; có a_4 trong dãy không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 1,3,5,7,9,11; không có u_0 trong miền chỉ số.
+**Đáp án:** a_0=1,a_1=−3,a_2=5,a_3=−7; không có a_4.
 
-**Lời giải có suy luận:** Thế lần lượt n từ 1 đến 6; dãy gồm đúng sáu phần tử có thứ tự. Công thức có thể tính ở n=0 về mặt đại số nhưng ký hiệu dãy đã quy ước chỉ số n∈{1,...,6}, nên u_0 không phải phần tử của dãy đang xét.
+**Lời giải có suy luận:** Thế lần lượt n=0,1,2,3 cho 1,−3,5,−7. Miền chỉ số của dãy có 0 nhưng không có 4; tính biểu thức tại n=4 được 9 không khiến 9 trở thành số hạng thuộc dãy đã cho.
 
-**D6 tự khắc phục:** Nhìn lại tập chỉ số trước khi áp công thức.
+**D6 tự khắc phục:** Viết miền chỉ số trước khi thay số; không mặc định mọi dãy bắt đầu n=1.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B05-P06; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O02; NOT_A_NEW_BANK -->
 
-**Bài 4.** Một khán phòng có hàng ghế thứ n gồm 10+2(n−1) ghế; có 12 hàng. Hỏi hàng cuối có bao nhiêu ghế?
+**Bài 3.** Một khán phòng có hàng ghế thứ n gồm 10+2(n−1) ghế; có 12 hàng. Hỏi hàng cuối có bao nhiêu ghế?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -548,7 +536,7 @@ Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B05-P01; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O02; NOT_A_NEW_BANK -->
 
-**Bài 5.** Dãy u_n=5n+2 (n≥1). Có số hạng nào bằng 87 không? Nếu có là số hạng thứ mấy?
+**Bài 4.** Dãy u_n=5n+2 (n≥1). Có số hạng nào bằng 87 không? Nếu có là số hạng thứ mấy?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -560,7 +548,7 @@ Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B05-C02; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O02; NOT_A_NEW_BANK -->
 
-**Bài 6.** Cho u_n=4n−3 (n≥1). Tìm u_1 và u_6.
+**Bài 5.** Cho u_n=4n−3 (n≥1). Tìm u_1 và u_6.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -570,9 +558,9 @@ Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P02; ORIGINAL_BLOB: 3bf3ab77d89497b39ae50ac54f71b81eccddc14c; OUTCOME: TOP07-O02; NOT_A_NEW_BANK -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P02; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O02; NOT_A_NEW_BANK -->
 
-**Bài 7.** Dãy vô hạn u_n=(n+1)/(2n+1), n≥1. Tính u_4 và xét 1/2 có phải một số hạng hay không.
+**Bài 6.** Dãy vô hạn u_n=(n+1)/(2n+1), n≥1. Tính u_4 và xét 1/2 có phải một số hạng hay không.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -586,7 +574,7 @@ Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHII-W05-02-ANCHOR; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O03; NOT_A_NEW_BANK -->
 
-**Bài 8.** Dãy u_1=1 và u_{n+1}=2u_n+1. Tính 5 số hạng đầu và chứng minh công thức u_n=2^n−1.
+**Bài 7.** Dãy u_1=1 và u_{n+1}=2u_n+1. Tính 5 số hạng đầu và chứng minh công thức u_n=2^n−1.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -604,7 +592,7 @@ Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B05-P07; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O03; NOT_A_NEW_BANK -->
 
-**Bài 9.** Với u_1=4, u_{n+1}=3u_n−2, tính u_3.
+**Bài 8.** Với u_1=4, u_{n+1}=3u_n−2, tính u_3.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -616,7 +604,7 @@ Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B05-P02; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O03; NOT_A_NEW_BANK -->
 
-**Bài 10.** u_1=1,u_{n+1}=2u_n+1. Tìm u_4.
+**Bài 9.** u_1=1,u_{n+1}=2u_n+1. Tìm u_4.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -628,7 +616,7 @@ Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B05-C03; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O03; NOT_A_NEW_BANK -->
 
-**Bài 11.** u_1=2, u_{n+1}=u_n+5. Viết 4 số hạng đầu.
+**Bài 10.** u_1=2, u_{n+1}=u_n+5. Viết 4 số hạng đầu.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -638,9 +626,9 @@ Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P03; ORIGINAL_BLOB: 3bf3ab77d89497b39ae50ac54f71b81eccddc14c; OUTCOME: TOP07-O03; NOT_A_NEW_BANK -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P03; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O03; NOT_A_NEW_BANK -->
 
-**Bài 12.** Dãy u_1=4, u_{n+1}=2u_n−1. Tìm u_2,u_3,u_4 và chứng minh công thức u_n=3·2^{n−1}+1.
+**Bài 11.** Dãy u_1=4, u_{n+1}=2u_n−1. Tìm u_2,u_3,u_4 và chứng minh công thức u_n=3·2^{n−1}+1.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -652,9 +640,9 @@ Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-W01; ORIGINAL_BLOB: 3bf3ab77d89497b39ae50ac54f71b81eccddc14c; OUTCOME: TOP07-O03; NOT_A_NEW_BANK -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-W01; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O03; NOT_A_NEW_BANK -->
 
-**Bài 13.** Dãy u_1=2, u_{n+1}=3u_n−2 (n≥1). (a) Tính u_2,u_3. (b) Đặt v_n=u_n−1 và tìm số hạng tổng quát u_n, chứng minh bằng quy nạp. (c) Chứng minh dãy tăng và tính u_4.
+**Bài 12.** Dãy u_1=2, u_{n+1}=3u_n−2 (n≥1). (a) Tính u_2,u_3. (b) Đặt v_n=u_n−1 và tìm số hạng tổng quát u_n, chứng minh bằng quy nạp. (c) Chứng minh dãy tăng và tính u_4.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -677,7 +665,7 @@ Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHII-W05-01; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O04; NOT_A_NEW_BANK -->
 
-**Bài 14.** Cho u_n=(2n+1)/(n+2), n≥1. Tính u_1,u_2, chứng minh dãy tăng và bị chặn.
+**Bài 13.** Cho u_n=(2n+1)/(n+2), n≥1. Tính u_1,u_2, chứng minh dãy tăng và bị chặn.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -695,7 +683,7 @@ Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B05-P03; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O04; NOT_A_NEW_BANK -->
 
-**Bài 15.** Chứng minh u_n=3/(n+2) giảm với mọi n≥1.
+**Bài 14.** Chứng minh u_n=3/(n+2) giảm với mọi n≥1.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -707,7 +695,7 @@ Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B05-C04; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O04; NOT_A_NEW_BANK -->
 
-**Bài 16.** Dãy u_n=5−2n (n≥1) tăng hay giảm?
+**Bài 15.** Dãy u_n=5−2n (n≥1) tăng hay giảm?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -717,9 +705,9 @@ Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P04; ORIGINAL_BLOB: 3bf3ab77d89497b39ae50ac54f71b81eccddc14c; OUTCOME: TOP07-O04; NOT_A_NEW_BANK -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P04; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O04; NOT_A_NEW_BANK -->
 
-**Bài 17.** Với u_n=3−2/n (n≥1), xét dãy tăng hay giảm bằng hiệu hai số hạng liên tiếp.
+**Bài 16.** Với u_n=3−2/n (n≥1), xét dãy tăng hay giảm bằng hiệu hai số hạng liên tiếp.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -733,13 +721,25 @@ Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B05-P08; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O05; NOT_A_NEW_BANK -->
 
-**Bài 18.** Chứng minh u_n=n/(n+1) (n≥1) bị chặn và tìm một khoảng chứa mọi u_n.
+**Bài 17.** Chứng minh u_n=n/(n+1) (n≥1) bị chặn và tìm một khoảng chứa mọi u_n.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 1/2≤u_n<1.
 
 **Lời giải:** u_n=1−1/(n+1); n≥1 ⇒ 0<1/(n+1)≤1/2; suy ra 1/2≤u_n<1.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-B05-P05; ORIGINAL_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806; OUTCOME: TOP07-O05; NOT_A_NEW_BANK -->
+
+**Bài 18.** Dãy u_n=(-1)^n (n≥1) có tăng, giảm hay bị chặn không?
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** Không tăng hoặc giảm; bị chặn bởi -1 và 1.
+
+**Lời giải:** Các giá trị luân phiên −1,1,−1,1...; −1≤u_n≤1.
 
 </details>
 
@@ -755,7 +755,7 @@ Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P05; ORIGINAL_BLOB: 3bf3ab77d89497b39ae50ac54f71b81eccddc14c; OUTCOME: TOP07-O05; NOT_A_NEW_BANK -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P05; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O05; NOT_A_NEW_BANK -->
 
 **Bài 20.** Cho u_n=(2n+1)/(n+2), n≥1. Chứng minh 1≤u_n<2 và cho biết số hạng nào nhận cận dưới 1.
 
@@ -795,7 +795,7 @@ Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P06; ORIGINAL_BLOB: 3bf3ab77d89497b39ae50ac54f71b81eccddc14c; OUTCOME: TOP07-O06; NOT_A_NEW_BANK -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P06; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O06; NOT_A_NEW_BANK -->
 
 **Bài 23.** Dãy 7,4,1,−2,… có là cấp số cộng? Nêu công sai và u_n.
 
@@ -845,7 +845,7 @@ Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P07; ORIGINAL_BLOB: 3bf3ab77d89497b39ae50ac54f71b81eccddc14c; OUTCOME: TOP07-O07; NOT_A_NEW_BANK -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P07; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O07; NOT_A_NEW_BANK -->
 
 **Bài 27.** CSC có u_1=−4 và d=3. Tính u_{20}.
 
@@ -883,7 +883,7 @@ Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P08; ORIGINAL_BLOB: 3bf3ab77d89497b39ae50ac54f71b81eccddc14c; OUTCOME: TOP07-O08; NOT_A_NEW_BANK -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P08; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O08; NOT_A_NEW_BANK -->
 
 **Bài 30.** CSC có u_5=14 và u_{11}=32. Tìm công sai d và u_1.
 
@@ -951,7 +951,7 @@ Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P09; ORIGINAL_BLOB: 3bf3ab77d89497b39ae50ac54f71b81eccddc14c; OUTCOME: TOP07-O09; NOT_A_NEW_BANK -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P09; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O09; NOT_A_NEW_BANK -->
 
 **Bài 35.** CSC có u_1=3,d=4. Tính tổng 15 số hạng đầu.
 
@@ -965,7 +965,7 @@ Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-W02; ORIGINAL_BLOB: 3bf3ab77d89497b39ae50ac54f71b81eccddc14c; OUTCOME: TOP07-O09; NOT_A_NEW_BANK -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-W02; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O09; NOT_A_NEW_BANK -->
 
 **Bài 36.** Một cấp số cộng thỏa u_4=13 và u_{10}=31. (a) Tìm u_1,d. (b) Tìm u_{20}. (c) Tính S_{20} theo hai cách: cặp đầu–cuối và công thức công sai. Đối chiếu.
 
@@ -1030,7 +1030,7 @@ Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P10; ORIGINAL_BLOB: 3bf3ab77d89497b39ae50ac54f71b81eccddc14c; OUTCOME: TOP07-O10; NOT_A_NEW_BANK -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P10; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O10; NOT_A_NEW_BANK -->
 
 **Bài 40.** Một khán đài có 10 hàng, hàng đầu 12 ghế, mỗi hàng tiếp theo nhiều hơn hàng trước 3 ghế. Tổng số ghế?
 
@@ -1082,7 +1082,7 @@ Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P11; ORIGINAL_BLOB: 3bf3ab77d89497b39ae50ac54f71b81eccddc14c; OUTCOME: TOP07-O11; NOT_A_NEW_BANK -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P11; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O11; NOT_A_NEW_BANK -->
 
 **Bài 44.** Dãy −3,6,−12,24,… có là CSN không? Nêu công bội và số tiếp theo.
 
@@ -1120,7 +1120,7 @@ Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P12; ORIGINAL_BLOB: 3bf3ab77d89497b39ae50ac54f71b81eccddc14c; OUTCOME: TOP07-O12; NOT_A_NEW_BANK -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P12; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O12; NOT_A_NEW_BANK -->
 
 **Bài 47.** CSN u_1=3,q=−2. Tính u_6.
 
@@ -1158,7 +1158,7 @@ Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P13; ORIGINAL_BLOB: 3bf3ab77d89497b39ae50ac54f71b81eccddc14c; OUTCOME: TOP07-O13; NOT_A_NEW_BANK -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P13; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O13; NOT_A_NEW_BANK -->
 
 **Bài 50.** CSN có u_2=6,u_4=54, các số hạng liên quan khác 0. Có bao nhiêu cặp (u_1,q) thực thỏa điều kiện?
 
@@ -1226,7 +1226,7 @@ Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P14; ORIGINAL_BLOB: 3bf3ab77d89497b39ae50ac54f71b81eccddc14c; OUTCOME: TOP07-O14; NOT_A_NEW_BANK -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P14; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O14; NOT_A_NEW_BANK -->
 
 **Bài 55.** CSN u_1=5,q=2. Tính S_6; viết rõ vì sao không dùng công thức q=1.
 
@@ -1304,7 +1304,7 @@ Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P15; ORIGINAL_BLOB: 3bf3ab77d89497b39ae50ac54f71b81eccddc14c; OUTCOME: TOP07-O15; NOT_A_NEW_BANK -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P15; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O15; NOT_A_NEW_BANK -->
 
 **Bài 61.** CSN vô hạn có a_1=9,q=−1/3. Tính tổng S_∞, tổng bốn số hạng đầu S_4 và phần dư S_∞−S_4.
 
@@ -1318,7 +1318,7 @@ Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-W03; ORIGINAL_BLOB: 3bf3ab77d89497b39ae50ac54f71b81eccddc14c; OUTCOME: TOP07-O15; NOT_A_NEW_BANK -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-W03; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O15; NOT_A_NEW_BANK -->
 
 **Bài 62.** CSN có u_1=12,q=−1/2. (a) Viết S_n và lý do được tính tổng vô hạn. (b) Tính S_∞. (c) Tìm số nguyên n nhỏ nhất sao cho |S_∞−S_n|<1/4; chú ý dấu < nghiêm ngặt.
 
@@ -1343,17 +1343,17 @@ Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn 
 
 ### 4. Mô hình và dòng tiền
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P16; ORIGINAL_BLOB: 3bf3ab77d89497b39ae50ac54f71b81eccddc14c; OUTCOME: TOP07-O16; NOT_A_NEW_BANK -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P16; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O16; NOT_A_NEW_BANK -->
 
-**Bài 63.** A có các giá trị 100,110,120,130; B có 100,110,121,133,1. Phân loại CSC/CSN và dự đoán giá trị kế tiếp.
+**Bài 63.** Hai mô hình bắt đầu ở kỳ 0 với 50 đơn vị. A tăng 5 đơn vị mỗi kỳ; B tăng 10% so với kỳ trước. Tính A_3,B_3 và xác định kỳ nguyên k≥0 đầu tiên có B_k−A_k≥1.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** A là CSC d=10, tiếp 140; B là CSN q=1,1, tiếp 146,41.
+**Đáp án:** A_3=65; B_3=66,55; k=3 là kỳ đầu tiên hiệu ít nhất 1.
 
-**Lời giải có suy luận:** A có sai khác đều 10; B có tỉ số đều 1,1: 100·1,1=110, 110·1,1=121, 121·1,1=133,1, rồi 133,1·1,1=146,41.
+**Lời giải có suy luận:** A_k=50+5k; B_k=50·1,1^k. Theo k=0,1,2,3, A lần lượt 50,55,60,65 và B lần lượt 50,55,60,5,66,55. Hiệu B_k−A_k lần lượt 0,0,0,5,1,55; do đó k=3 là chỉ số đầu tiên thỏa ≥1. Dãy bắt đầu ở kỳ 0, không phải số hạng đầu ở kỳ 1.
 
-**D6 tự khắc phục:** Một mức tăng 10% không đồng nghĩa tăng cố định 10 đơn vị.
+**D6 tự khắc phục:** Lập bảng từng kỳ 0→3; giữ nguyên 5 khi cộng nhưng tính 10% trên số dư mới khi nhân.
 
 </details>
 
@@ -1399,7 +1399,7 @@ Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P17; ORIGINAL_BLOB: 3bf3ab77d89497b39ae50ac54f71b81eccddc14c; OUTCOME: TOP07-O17; NOT_A_NEW_BANK -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P17; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O17; NOT_A_NEW_BANK -->
 
 **Bài 67.** Gửi 8 triệu đồng, lãi kép 5% mỗi năm, không nộp/rút giữa kỳ. Sau đúng 2 năm có bao nhiêu triệu?
 
@@ -1413,50 +1413,50 @@ Hãy tự giải mỗi bài, kiểm miền chỉ số, điều kiện và đơn 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P18; ORIGINAL_BLOB: 3bf3ab77d89497b39ae50ac54f71b81eccddc14c; OUTCOME: TOP07-O18; NOT_A_NEW_BANK -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P18; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O18; NOT_A_NEW_BANK -->
 
-**Bài 68.** Nộp 100 đơn vị vào CUỐI mỗi kỳ trong 3 kỳ, lãi 10% một kỳ. Giá trị tích lũy ngay CUỐI kỳ 3 là bao nhiêu? Đồng thời khoản vay ban đầu 210 đơn vị, lãi 10%/kỳ, trả đều CUỐI 2 kỳ thì mỗi kỳ trả bao nhiêu?
+**Bài 68.** Gửi 40 đơn vị vào CUỐI mỗi kỳ của 3 kỳ, lãi cố định 5%/kỳ, không phí. (a) Số dư ngay sau khoản gửi cuối kỳ 3? (b) Nếu gửi 40 vào ĐẦU mỗi kỳ 1,2,3 thì số dư cuối kỳ 3 lớn hơn bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Tích lũy 331; khoản trả đều 121 đơn vị/kỳ.
+**Đáp án:** (a) 126,1; (b) gửi đầu kỳ được 132,405, nhiều hơn 6,305 đơn vị.
 
-**Lời giải có suy luận:** Tiền gửi kỳ 1 tăng lãi hai kỳ thành 100·1,1²=121; kỳ 2 tăng một kỳ thành 110; kỳ 3 vừa nộp 100: tổng 331. Với vay: B_0=210, B_1=1,1·210−A, B_2=1,1B_1−A=0 ⇒ 1,21·210−(1,1+1)A=0 ⇒ A=121. Hai bài khác chiều thời gian nhưng đều là tổng hữu hạn CSN.
+**Lời giải có suy luận:** Gửi cuối kỳ 1,2,3 được hưởng tương ứng 2,1,0 kỳ lãi: FV_cuối=40[(1,05)^2+1,05+1]=126,1. Gửi đầu kỳ 1,2,3 tương ứng thời điểm 0,1,2 nên mỗi khoản sinh lãi thêm một kỳ: FV_đầu=126,1·1,05=132,405. Chênh lệch =6,305. Các mốc thời gian quan trọng hơn tên công thức.
 
-**D6 tự khắc phục:** Vẽ trục thời gian để tách 'cuối kỳ' gửi tiền khỏi thanh toán nợ; không trộn giá trị hiện tại và tương lai.
+**D6 tự khắc phục:** Vẽ các mốc 0–1–2–3 và ghi số kỳ hưởng lãi cho từng khoản trước khi cộng.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-W04; ORIGINAL_BLOB: 3bf3ab77d89497b39ae50ac54f71b81eccddc14c; OUTCOME: TOP07-O18; NOT_A_NEW_BANK -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-W04; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O18; NOT_A_NEW_BANK -->
 
-**Bài 69.** Lãi 10% mỗi kỳ, không phí. (a) Gửi 100 đơn vị vào CUỐI 3 kỳ liên tiếp: tính giá trị tại cuối kỳ 3. (b) Vay 210 đơn vị tại đầu kỳ 1, trả A đơn vị vào CUỐI mỗi kỳ trong 2 kỳ. Lập bảng dư nợ và tìm A để tất toán; giải thích vì sao không nhầm hai loại tổng.
+**Bài 69.** Vay 42 đơn vị tại đầu kỳ 0, lãi 10% mỗi kỳ, trả đều A vào CUỐI hai kỳ 1 và 2, không phí. (a) Lập B_0,B_1,B_2 và tìm A để tất toán. (b) Nếu lãi 0% thì A bằng bao nhiêu? (c) Giải thích thứ tự tính lãi và khoản trả.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** (a) 331 đơn vị; (b) A=121 đơn vị mỗi kỳ, dư nợ: B_0=210, B_1=110, B_2=0.
+**Đáp án:** Lãi 10%: A=24,2 đơn vị/kỳ, B_0=42, B_1=22, B_2=0. Lãi 0%: A=21 đơn vị/kỳ.
 
-**Lời giải đầy đủ:** (a) Cuối kỳ 3: lần gửi kỳ 1 đã có hai lần sinh lãi: 100·1,1²; kỳ2 một lần:100·1,1; kỳ3 chưa lãi:100. Tổng=121+110+100=331. (b) Dư đầu B_0=210; B_1=1,1·210−A=231−A, B_2=1,1(231−A)−A=254,1−2,1A. Đặt B_2=0 ⇒ A=254,1/2,1=121. Khi đó B_1=110 và B_2=0. Tiền gửi nhìn theo tương lai; vay nhìn theo dòng tiền trả dần đến dư nợ 0. Các con số là ví dụ mô hình, không báo giá vay thật.
+**Lời giải đầy đủ:** Từ B_0=42, sau kỳ 1: B_1=1,1·42−A=46,2−A. Sau kỳ 2: B_2=1,1(46,2−A)−A=50,82−2,1A. Đặt B_2=0 cho A=50,82/2,1=24,2; kiểm B_1=22, B_2=1,1·22−24,2=0. Với r=0, A=42/2=21. Mỗi kỳ phải tính lãi trên dư nợ đầu kỳ rồi mới trừ khoản trả cuối kỳ; các con số là mô hình toán, không phải báo giá.
 
 **Rubric tự đối chiếu /7 điểm:**
-1. Xác định thời điểm nộp cuối kỳ (1đ)
-2. Tính đúng ba khoản tích lũy (1đ)
-3. Tính tổng 331 (1đ)
-4. Viết công thức dư nợ hai kỳ (1đ)
-5. Giải A=121 (1đ)
-6. Kiểm bảng B_1=110,B_2=0 (1đ)
-7. Giải thích khác nhau của dòng tiền (1đ)
+1. Đặt mốc thời gian, B_0=42 (1đ)
+2. Viết đúng B_1=46,2−A (1đ)
+3. Lập B_2=50,82−2,1A (1đ)
+4. Tìm A=24,2 từ B_2=0 (1đ)
+5. Kiểm lại B_1=22, B_2=0 (1đ)
+6. Phân biệt r=0 và tính A=21 (1đ)
+7. Giải thích lãi trước – trả sau, điều kiện mô hình (1đ)
 
-**D6 tự khắc phục:** Vẽ timeline 0–1–2–3; lần gửi ngay cuối kỳ 3 không được cộng lãi kỳ 3.
+**D6 tự khắc phục:** Khi không tất toán, kiểm từng dòng theo đúng thứ tự: nhân số dư đầu kỳ với 1,1 rồi trừ khoản trả cuối kỳ.
 
 </details>
 
 ## 3. Tự kiểm tra
 
-Hãy tự làm trọn bộ 18 câu rồi mới đối chiếu kết quả. Cần ghi rõ phương pháp, điều kiện, số kỳ và đơn vị khi có. Đây là những câu công khai đã gặp trong Luyện tập, giúp em tự nhận ra lỗ hổng, **không phải bài đánh giá năng lực độc lập**.
+Hãy tự làm đủ 18 câu trước khi đối chiếu. Trình bày lý do chọn cách giải, điều kiện, số kỳ và đơn vị nếu có. Đây là những câu công khai đã gặp trong Luyện tập, giúp em phát hiện lỗ hổng chứ không phải bài kiểm tra năng lực độc lập.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P01; NO_MASTERY; NOT_RD1 -->
 
-**Câu 1.** Cho dãy hữu hạn u_n=2n−1 với n∈{1,2,3,4,5,6}. Liệt kê các số hạng và cho biết vì sao không được viết u_0.
+**Câu 1.** Cho dãy hữu hạn a_n=(−1)^n(2n+1), n∈{0,1,2,3}. Liệt kê các số hạng; có a_4 trong dãy không?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P02; NO_MASTERY; NOT_RD1 -->
 
@@ -1516,7 +1516,7 @@ Hãy tự làm trọn bộ 18 câu rồi mới đối chiếu kết quả. Cần
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P16; NO_MASTERY; NOT_RD1 -->
 
-**Câu 16.** A có các giá trị 100,110,120,130; B có 100,110,121,133,1. Phân loại CSC/CSN và dự đoán giá trị kế tiếp.
+**Câu 16.** Hai mô hình bắt đầu ở kỳ 0 với 50 đơn vị. A tăng 5 đơn vị mỗi kỳ; B tăng 10% so với kỳ trước. Tính A_3,B_3 và xác định kỳ nguyên k≥0 đầu tiên có B_k−A_k≥1.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P17; NO_MASTERY; NOT_RD1 -->
 
@@ -1524,6 +1524,6 @@ Hãy tự làm trọn bộ 18 câu rồi mới đối chiếu kết quả. Cần
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P18; NO_MASTERY; NOT_RD1 -->
 
-**Câu 18.** Nộp 100 đơn vị vào CUỐI mỗi kỳ trong 3 kỳ, lãi 10% một kỳ. Giá trị tích lũy ngay CUỐI kỳ 3 là bao nhiêu? Đồng thời khoản vay ban đầu 210 đơn vị, lãi 10%/kỳ, trả đều CUỐI 2 kỳ thì mỗi kỳ trả bao nhiêu?
+**Câu 18.** Gửi 40 đơn vị vào CUỐI mỗi kỳ của 3 kỳ, lãi cố định 5%/kỳ, không phí. (a) Số dư ngay sau khoản gửi cuối kỳ 3? (b) Nếu gửi 40 vào ĐẦU mỗi kỳ 1,2,3 thì số dư cuối kỳ 3 lớn hơn bao nhiêu?
 
 Học liệu được xây dựng dựa trên SGK Toán 11, Tập Một, Chương II (Bài 5–7) và Chương V (Bài 15), bộ Kết nối tri thức với cuộc sống. Các mô hình tài chính là tình huống toán học mở rộng tự biên soạn.
