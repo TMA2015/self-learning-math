@@ -136,7 +136,7 @@ function validate(source, agents, queue) {
      "G10 B16","G11 ChVII","G12 B17","B14-P04","không có checklist PRE-HANDOFF thứ hai"])
      if(!source.includes(token))fail("EXECUTION_PROOF_MISSING:"+token);
    if(source.includes("## IX. Checklist PRE-HANDOFF V2"))fail("DUPLICATE_PRE_HANDOFF_CHECKLIST");
-   if(agents&&!agents.includes("mục VIII ngay trong"))fail("AGENTS_NOT_POINTING_TO_SINGLE_CHECKLIST");
+   if(agents&&!(agents.includes("ma trận Q01–Q18 tại mục II")&&agents.includes("quy trình mục VIII")))fail("AGENTS_NOT_POINTING_TO_SINGLE_CHECKLIST");
  }
  for(const heading of REQUIRED_SECTIONS)if(!source.includes(heading))fail("MISSING_SECTION:"+heading);
  const tableStart=source.indexOf("## II. Ma trận chuẩn chất lượng duy nhất Q01–Q18");
@@ -200,9 +200,9 @@ function selfTest(){
   if(full.includes("**VERSION:** `3.1.1-CANDIDATE`")){
    const wrong=full.replace("| **Q15 ID/Shared bank**","| **Q14 ID/Shared bank**");
    assert(validate(wrong,"","").failures.some(e=>e.startsWith("EXECUTION_Q01_Q18_ROWS_NOT_ORDERED")));
-   const noTopic=full.replace("TOPIC_PRACTICE` trong trang **Luyện tập**","TOPIC_CORE` trong trang **Luyện tập**");
+   const noTopic=full.replaceAll("TOPIC_PRACTICE","TOPIC_CORE");
    assert(validate(noTopic,"","").failures.includes("TOPIC_Q05_MUST_USE_PRACTICE_NOT_CORE"));
-   const wrongTopic=full.replace("Adaptive Knowledge Tabs v2 bên trong Kiến thức","4 tab Golden SGK bên trong Kiến thức");
+   const wrongTopic=full.replaceAll("Adaptive Knowledge Tabs v2","4 tab Golden SGK");
    assert(validate(wrongTopic,"","").failures.includes("TOPIC_Q17_MUST_REMAIN_THREE_PAGE_PATH"));
    const ghost=full.replace("### VIII.3. Kiểm đối chứng chống tái diễn","| **Q14 GHOST** | Không được có bảng phụ |\n### VIII.3. Kiểm đối chứng chống tái diễn");
    assert(validate(ghost,"","").failures.includes("DUPLICATE_EXECUTION_Q_MATRIX"));
