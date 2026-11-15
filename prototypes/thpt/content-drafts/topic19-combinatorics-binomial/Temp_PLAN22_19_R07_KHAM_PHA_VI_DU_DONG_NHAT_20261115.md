@@ -331,7 +331,7 @@ Chọn 2 nữ trong 4: C(4,2)=6; chọn 1 nam trong 3: 3. Nhân: **18** nhóm.
 
 </details>
 
-Hãy tự kiểm thử n!, nPr và nCr ở O14 để nhớ khi nào kết quả là một **nhóm** và khi nào là **danh sách có thứ tự**. Sau đó C(n,k) sẽ trở thành hệ số trong khai triển Newton.
+Hãy tự kiểm thử n!, nPr và nCr ở mục Kiến thức 2.5 để nhớ khi nào kết quả là một **nhóm** và khi nào là **danh sách có thứ tự**. Sau đó C(n,k) sẽ trở thành hệ số trong khai triển Newton.
 
 
 #### 2.5. Máy tính cầm tay hỗ trợ tính n!, chỉnh hợp và tổ hợp — và cách tự kiểm kết quả
@@ -365,7 +365,7 @@ Từ 8 ứng viên khác nhau, chọn 3 bạn giữ ba vai trò phân biệt. H�
 
 Ba vai khác nhau, nên dùng **nPr** (chỉnh hợp): A(8,3)=8×7×6=**336** cách. Trên máy có `nPr`, tính `8 nPr 3`; trên máy không có, nhân ba số giảm dần 8·7·6. Không dùng C(8,3) vì đó là chọn **nhóm không phân vai**.
 
-**Khi làm sai:** Nếu kết quả ra 56, em mới chọn hai vai thay vì ba. Nếu ra C(8,3)=56, em quên **ba vai phân biệt**; so A(8,3)=C(8,3)×3!=56×6=336. Quay lại O06/O07 để phân biệt kết quả có thứ tự và không có thứ tự.
+**Khi làm sai:** Nếu kết quả ra 56, em mới chọn hai vai thay vì ba. Nếu ra C(8,3)=56, em quên **ba vai phân biệt**; so A(8,3)=C(8,3)×3!=56×6=336. Quay lại Kiến thức 2.2–2.3 để phân biệt kết quả có thứ tự và không có thứ tự.
 
 </details>
 
@@ -484,7 +484,7 @@ Một kho ban đầu có 5 000 bộ dụng cụ, tăng 1% mỗi năm theo cùng 
 
 r=0,01. Hai số hạng đầu là 1+5r=1,05. Do đó 5 000×1,05=**5 250 bộ** (ước tính). Các hạng bậc 2 trở lên đều dương nên số thực tế mô hình 5 000×1,01^5 lớn hơn 5 250 một ít.
 
-**Khi làm sai:** Nếu tính 5 000(1+0,01) mà bỏ mũ 5, em mới tính tăng một năm. Quay O09 để viết năm thừa số rồi đọc hệ số của r là C(5,1)=5. Nếu viết dấu bằng chính xác, hãy chỉ phần r² còn bị bỏ qua.
+**Khi làm sai:** Nếu tính 5 000(1+0,01) mà bỏ mũ 5, em mới tính tăng một năm. Quay lại Kiến thức 3.1 để viết năm thừa số rồi đọc hệ số của r là C(5,1)=5. Nếu viết dấu bằng chính xác, hãy chỉ phần r² còn bị bỏ qua.
 
 </details>
 
@@ -493,7 +493,7 @@ Em đã dùng quy tắc nhân trong đếm bước, tổ hợp trong chọn nhó
 
 ### Mở rộng sau mạch SGK bắt buộc (tự chọn)
 
-Hai chặng tiếp theo giúp giải các bài SBT có lũy thừa `1/x` hoặc nhận biết tổng hệ số qua `P(1)`. Đây là phần **mở rộng**, không phải điều kiện tiên quyết để học Bài 25 trong SGK; có thể học sau khi em đã tự thử phần ước lượng ở `TOP19-O13`.
+Hai chặng tiếp theo giúp giải các bài SBT có lũy thừa `1/x` hoặc nhận biết tổng hệ số qua `P(1)`. Đây là phần **mở rộng**, không phải điều kiện tiên quyết để học Bài 25 trong SGK; có thể học sau khi em đã làm bài Vận dụng ở Kiến thức 3.3.
 
 #### 3.4. Số hạng không chứa x: từ đa thức đến mở rộng phân thức
 
@@ -795,7 +795,7 @@ Dùng các chữ số {0,1,2,3,4}, lập số tự nhiên **ba chữ số lẻ**
 - Hàng chục còn 3 lựa chọn và không lặp — **1 điểm**.
 - Nhân 2×3×3=18, nêu đây là số có ba chữ số — **1 điểm**.
 
-**Khi làm sai:** Nếu ra 24, em đang đếm cả chữ số 0 ở hàng trăm hoặc không cố định hàng đơn vị lẻ. Viết ba ô [trăm][chục][đơn vị], đặt đơn vị trước (1 hoặc 3), rồi loại 0 và chữ số đã dùng ở hàng trăm. Làm lại T04 (đuôi 0/2 và giới hạn chữ số đầu) trước khi giải lại W01. Đáp án đã xem không được dùng làm chứng cứ Tự kiểm tra độc lập.
+**Khi làm sai:** Nếu ra 24, em đang đếm cả chữ số 0 ở hàng trăm hoặc không cố định hàng đơn vị lẻ. Viết ba ô [trăm][chục][đơn vị], đặt đơn vị trước (1 hoặc 3), rồi loại 0 và chữ số đã dùng ở hàng trăm. Làm lại bài Vận dụng ở Kiến thức 1.4 (đuôi 0/2 và giới hạn chữ số đầu) trước khi giải lại bài tự luận 1. Đáp án đã xem không được dùng làm chứng cứ Tự kiểm tra độc lập.
 
 </details>
 
@@ -815,7 +815,7 @@ Có 5 học sinh nữ và 4 học sinh nam. Chọn một nhóm gồm đúng 2 n�
 - Tính 10×6=60 nhóm không phân vai — **1 điểm**.
 - Chọn trưởng trong nhóm 4 cách, ra 240 và phân biệt 60 với 240 — **1 điểm**.
 
-**Khi làm sai:** Nếu ra 60, em mới chọn nhóm và quên phân vai trưởng; nếu ra 240 ngay khi chỉ hỏi số nhóm, em đã thêm vai không có trong đề. Tách câu trả lời thành hai hàng: 10×6=60 nhóm và **mỗi nhóm 4 chọn trưởng**. Luyện lại T08/P08 để nhớ chỉ dùng tổ hợp khi không phân vai; sau đó giải lại W02. Đáp án đã xem không được dùng làm chứng cứ Tự kiểm tra độc lập.
+**Khi làm sai:** Nếu ra 60, em mới chọn nhóm và quên phân vai trưởng; nếu ra 240 ngay khi chỉ hỏi số nhóm, em đã thêm vai không có trong đề. Tách câu trả lời thành hai hàng: 10×6=60 nhóm và **mỗi nhóm 4 chọn trưởng**. Luyện lại Vận dụng ở Kiến thức 2.4 và Luyện tập 2.8 để nhớ chỉ dùng tổ hợp khi không phân vai; sau đó giải lại bài tự luận 2. Đáp án đã xem không được dùng làm chứng cứ Tự kiểm tra độc lập.
 
 </details>
 
@@ -835,7 +835,7 @@ Với đa thức P(x)=(x−2)^5, hãy **(a)** tìm hệ số của x², **(b)** 
 - Kết luận hệ số x² là −80, giải thích dấu âm — **1 điểm**.
 - Tính P(1)=−1 và nêu lý do tổng hệ số — **1 điểm**.
 
-**Khi làm sai:** Nếu hệ số x² là +80, em đã bỏ dấu của (−2)³. Trước khi thế số, giải **5−k=2 ⇒ k=3**, sau đó ghi ba lần nhân hạng tử âm nên hệ số âm. Nếu tổng hệ số không bằng −1, hãy thay x=1 vào **cả đa thức P(x)** chứ không cộng dấu từng hạng theo cảm tính. Luyện lại T10/P10 về số lần chọn hạng tử âm; tiếp đó kiểm P(1) như O12 rồi giải lại W03. Đáp án đã xem không được dùng làm chứng cứ Tự kiểm tra độc lập.
+**Khi làm sai:** Nếu hệ số x² là +80, em đã bỏ dấu của (−2)³. Trước khi thế số, giải **5−k=2 ⇒ k=3**, sau đó ghi ba lần nhân hạng tử âm nên hệ số âm. Nếu tổng hệ số không bằng −1, hãy thay x=1 vào **cả đa thức P(x)** chứ không cộng dấu từng hạng theo cảm tính. Luyện lại Vận dụng ở Kiến thức 3.2 và Luyện tập 2.11 về số lần chọn hạng tử âm; tiếp đó kiểm P(1) như Kiến thức 3.5 rồi giải lại bài tự luận 3. Đáp án đã xem không được dùng làm chứng cứ Tự kiểm tra độc lập.
 
 </details>
 
@@ -844,7 +844,7 @@ Với đa thức P(x)=(x−2)^5, hãy **(a)** tìm hệ số của x², **(b)** 
 <!-- AUTHOR_ONLY_Q15_SOURCE_PLACEMENTS
 ### Thư viện SGK dùng chung — 25 ID canonical public đã có (chỉ trỏ placement)
 
-<!-- AUTHOR_ONLY_Q15: 25 original G10 SGK reviewed formative item IDs below are public-reuse placements from the frozen canonical JS bank. Learner-facing site should resolve these pointers to the approved canonical exercises, never render this technical table as content. -->
+AUTHOR_ONLY_Q15_NOTE: 25 original G10 SGK PUBLIC canonical pointers belong to the reviewed frozen JS bank; metadata for V2 only, not learner-facing exercises. No cloned stems, keys or rubrics.
 
 | SGK canonical item_id | Topic primary outcome | Topic placement | source role |
 |---|---|---|---|
