@@ -1,5 +1,5 @@
-<!-- AUTHORING R05 STUDENT_FIRST Q18_PENDING 15/11/2026; R04 SOURCE_BLOB 8fd1c9d223ccab794ae20fc8f0206df32f0671c4 and signed R04 ready/receipt stay immutable until R05 Q18. -->
-<!-- STANDARD_ID=SLM-THPT-QUALITY-ONE; STANDARD_VERSION=3.1.0; LEARNING_PATH=TOPIC; OUTER_PAGES=Kiến thức|Luyện tập|Tự kiểm tra; SOURCE_VERSION=R05_AUTHORING_CANDIDATE_Q18_PENDING; ORIGINAL36_INDEX_BLOB=7ac532a2c6d9368bf4f991c90092d327c07ea842; NEW22_BANK_BLOB=2e93db80384de53e208248eaa0396a7f487302ac -->
+<!-- AUTHORING R05 STUDENT_FIRST Q18_REVIEW_SOURCE 15/11/2026; R04 SOURCE_BLOB 8fd1c9d223ccab794ae20fc8f0206df32f0671c4 and signed R04 ready/receipt stay immutable until R05 Q18. -->
+<!-- STANDARD_ID=SLM-THPT-QUALITY-ONE; STANDARD_VERSION=3.1.0; LEARNING_PATH=TOPIC; OUTER_PAGES=Kiến thức|Luyện tập|Tự kiểm tra; SOURCE_VERSION=R05_AUTHORING_REVIEW_SOURCE; ORIGINAL36_INDEX_BLOB=43cbb73bd06e0da6bf8838d925186bc4db4194a7; NEW22_BANK_BLOB=2e93db80384de53e208248eaa0396a7f487302ac -->
 # CĐ08 — Giới hạn và tính liên tục
 
 # Kiến thức
@@ -151,9 +151,9 @@ Chẳng hạn, f(x)=(x²−5x+6)/(x−2) với x≠2. Tử=(x−2)(x−3), rút 
 
 **Ví dụ**
 
-**Đề bài:** Với \(f(x)=\dfrac{x^2-1}{x-1}\), \(x\ne1\), tính \(\lim_{x\to1}f(x)\). Có thể suy \(f(1)=2\) không?
+**Đề bài:** Với \(f(x)=\dfrac{x^2-49}{x-7}\), \(x\ne7\), tính \(\lim_{x\to7}f(x)\). Có tự suy ra \(f(7)=14\) được không?
 
-**Lời giải:** Với \(x\ne1\), \(x^2-1=(x-1)(x+1)\) nên \(f(x)=x+1\), suy ra giới hạn tại \(1\) là \(2\). Hàm gốc **không** xác định ở \(1\); rút gọn trên lân cận bỏ điểm không cho phép tự gán \(f(1)\).
+**Lời giải:** Với \(x\ne7\), \(x^2-49=(x-7)(x+7)\), nên \(f(x)=x+7\). Do đó giới hạn tại \(7\) là \(14\). Tuy vậy \(f(7)\) vẫn không xác định trong hàm gốc, vì phép khử chỉ hợp lệ ở các \(x\ne7\).
 
 **Vận dụng** lim(x→0) [x(x−4)]/x (x≠0) bằng bao nhiêu?
 
@@ -332,9 +332,9 @@ Xét ví dụ: Đặt f(x)=(x²−5x+6)/(x−2) nếu x≠2 và f(2)=k. Như M06
 
 **Ví dụ**
 
-**Đề bài:** Cho \(f(x)=\dfrac{x^2-9}{x-3}\) khi \(x\ne3\), và \(f(3)=k\). Tìm \(k\) để liên tục tại \(3\).
+**Đề bài:** Cho \(f(x)=\dfrac{x^2-64}{x-8}\) khi \(x\ne8\) và \(f(8)=k\). Tìm \(k\) để liên tục tại \(8\).
 
-**Lời giải:** Với \(x\ne3\), \(f(x)=x+3\), nên \(\lim_{x\to3}f(x)=6\). Điều kiện liên tục tại \(3\) yêu cầu \(f(3)=k\) bằng giới hạn, vậy \(k=6\). Nếu \(k\ne6\), đó là gián đoạn có thể khử.
+**Lời giải:** Khi \(x\ne8\), ta có \(f(x)=x+8\). Do đó \(\lim_{x\to8}f(x)=16\), và liên tục tại \(8\) đòi \(f(8)=k=16\). Nếu \(k\ne16\), đó là gián đoạn có thể khử bằng một giá trị đúng tại điểm.
 
 **Vận dụng** Cho f(x)=sin x khi x≠0 và f(0)=c; cần c bằng gì để liên tục?
 
@@ -353,7 +353,7 @@ Nếu quên hàm phải được định nghĩa tại a, so 'hole' và 'point f(
 
 Giới hạn và giá trị tại điểm có thể lệch nhau theo những cách rất khác. Đồ thị 'đứt' có phải lúc nào cũng vá được bằng một điểm mới? Ta bắt đầu từ giới hạn trái/phải và miền xác định. Gián đoạn khử được khi giới hạn hai phía hữu hạn tồn tại nhưng giá trị tại điểm thiếu/khác; có thể đặt lại f(a)=L. Gián đoạn nhảy khi hai giới hạn hữu hạn một phía khác nhau, không thể vá bằng một giá trị. Gián đoạn vô cực khi ít nhất một phía tăng không bị chặn; cần xem chiều và dấu. Nhận dạng dựa vào giới hạn, không chỉ nét đồ thị.
 
-Chẳng hạn, f=|x|/x (x≠0) có giới hạn trái −1, phải +1 ⇒ gián đoạn nhảy tại 0. g=1/x có hai phía ±∞ ⇒ gián đoạn vô cực tại 0. h=(x²−4)/(x−2) nếu x≠2 rút x+2, lim=4 ⇒ hole khử được ở 2. Chọn so một phía trước khi kết luận.
+Chẳng hạn, f=|x|/x (x≠0) có giới hạn trái −1, phải +1 ⇒ gián đoạn nhảy tại 0. g=1/x có hai phía ±∞ ⇒ gián đoạn vô cực tại 0. h=(x²−36)/(x−6) nếu x≠6 rút x+6, lim=12 ⇒ gián đoạn có thể khử ở 6. Chọn so một phía trước khi kết luận.
 
 Ngay tại hình này, ta xét hàm từng đoạn \(f(x)=x+2\) khi \(x<0\), còn \(f(x)=2x+1\) khi \(x\ge0\). Khi \(x\to0^-\), nhánh trái tiến tới 2 nhưng **không lấy** \((0,2)\); khi \(x\to0^+\), nhánh phải tiến tới 1 và có điểm đặc \((0,1)\), nên \(f(0)=1\). Vì 2 khác 1, hàm **không có giới hạn hai phía** ở 0 và không liên tục tại 0. Điều này khác ví dụ \(|x|/x\) ở trên: cả hai là gián đoạn nhảy nhưng độ cao một phía không giống nhau.
 
@@ -388,9 +388,9 @@ Chẳng hạn, f(x)=√x trên [0,9] liên tục bên trong vì căn liên tục
 
 **Ví dụ**
 
-**Đề bài:** Xét \(f(x)=\sqrt{9-x^2}\) với miền \([-3,3]\). Hàm có liên tục trên cả đoạn không?
+**Đề bài:** Xét \(f(x)=\sqrt{16-(x-2)^2}\). Tìm miền xác định và giải thích tính liên tục tại hai đầu mút.
 
-**Lời giải:** Đa thức \(9-x^2\) không âm trên \([-3,3]\); phép căn liên tục trên các giá trị không âm. Bên trong đoạn, hợp hàm liên tục; tại \(-3\) chỉ xét giới hạn từ phải bằng \(0=f(-3)\), tại \(3\) chỉ xét từ trái bằng \(0=f(3)\). Vì vậy hàm liên tục trên đoạn theo miền xác định.
+**Lời giải:** Điều kiện \(16-(x-2)^2\ge0\) tương đương \(|x-2|\le4\), nên miền xác định là \([-2,6]\). Hàm là hợp của đa thức và căn không âm, liên tục bên trong. Tại \(-2\) dùng giới hạn phải và tại \(6\) giới hạn trái, đều bằng \(0\), đúng các giá trị \(f(-2)=f(6)=0\).
 
 **Vận dụng** g(x)=√(16−x²) có liên tục trên [−4,4] không?
 
@@ -444,9 +444,9 @@ Chẳng hạn, g(x)=x³−2 liên tục trên [1,2]; g(1)=−1, g(2)=6, nên t�
 
 **Ví dụ**
 
-**Đề bài:** Chứng minh phương trình \(x^3-5=0\) có ít nhất một nghiệm trong \((1,2)\).
+**Đề bài:** Dùng định lí giá trị trung gian chứng minh \(x^3-7=0\) có ít nhất một nghiệm trong \((1,2)\).
 
-**Lời giải:** Đa thức \(g(x)=x^3-5\) liên tục trên \([1,2]\). Ta có \(g(1)=-4<0\) và \(g(2)=3>0\); theo định lí giá trị trung gian tồn tại \(c\in(1,2)\) với \(g(c)=0\). Chưa thể chỉ từ IVT khẳng định duy nhất.
+**Lời giải:** Đặt \(g(x)=x^3-7\), là đa thức liên tục trên \([1,2]\). Vì \(g(1)=-6<0\), \(g(2)=1>0\), IVT đảm bảo có \(c\in(1,2)\) sao cho \(g(c)=0\). Kết luận **ít nhất một**, không tự nhận duy nhất nếu chưa chứng minh thêm.
 
 **Vận dụng** x²−3 có nghiệm trong (1,2) theo IVT không?
 
@@ -492,7 +492,7 @@ Nếu chọn nửa không trái dấu, viết bảng f(a),f(m),f(b) và tìm c�
 
 # Luyện tập
 
-Em hãy tự giải trước khi mở **Lời giải**. Với giới hạn, nêu miền xác định, hướng tiến đến và dạng vô định; với liên tục, kiểm giá trị tại điểm và hai giới hạn; với IVT, kiểm **liên tục trên đoạn** rồi mới xét dấu ở hai đầu. Khi làm sai, quay lại đúng mục Kiến thức và thử một cách giải khác.
+Em hãy tự giải từng bài, kiểm **điểm tiến tới, hướng tiếp cận và điều kiện miền** trước khi mở Lời giải. Với liên tục, đối chiếu giá trị tại điểm và giới hạn; với IVT, phải chứng minh liên tục rồi so dấu hai đầu. Khi sai, tìm lại đúng khái niệm và sửa cách lập luận trước khi tính lại.
 
 ## 1. Giới hạn của dãy số
 
@@ -572,21 +572,9 @@ Em hãy tự giải trước khi mở **Lời giải**. Với giới hạn, nêu
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHV-B15-C03; SOURCE_BLOB: 7934757ed06de4ae4b63dbc351ef524fc054e0d0; OUTCOME: TOP08-O03; NOT_NEW_ID -->
-
-**Bài 7.** Tổng vô hạn 3+3/5+3/25+… có thể dùng công thức cấp số nhân lùi vô hạn không?
-
-<details markdown="1"><summary>Lời giải</summary>
-
-**Đáp án:** Có; tổng bằng 15/4.
-
-**Lời giải và lời giải thích:** Số hạng đầu 3, công bội 1/5 có trị tuyệt đối nhỏ hơn 1; tổng 3/(1−1/5)=15/4.
-
-</details>
-
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP08-P03; SOURCE_BLOB: 2e93db80384de53e208248eaa0396a7f487302ac; OUTCOME: TOP08-O03; NOT_NEW_ID -->
 
-**Bài 8.** Tính lim(n→∞)(−2/5)^n và cho biết việc luân phiên dấu có ngăn dãy hội tụ không.
+**Bài 7.** Tính lim(n→∞)(−2/5)^n và cho biết việc luân phiên dấu có ngăn dãy hội tụ không.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -600,7 +588,7 @@ Em hãy tự giải trước khi mở **Lời giải**. Với giới hạn, nêu
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHV-B15-W01; SOURCE_BLOB: 7934757ed06de4ae4b63dbc351ef524fc054e0d0; OUTCOME: TOP08-O04; NOT_NEW_ID -->
 
-**Bài 9.** (a) Tính lim(n→∞)(2n²+3n)/(n²+1). (b) Giải thích vì sao dãy vₙ=(−1)ⁿ không có giới hạn hữu hạn. (c) Tính 4+2+1+1/2+… và nêu điều kiện công bội.
+**Bài 8.** (a) Tính lim(n→∞)(2n²+3n)/(n²+1). (b) Giải thích vì sao dãy vₙ=(−1)ⁿ không có giới hạn hữu hạn. (c) Tính 4+2+1+1/2+… và nêu điều kiện công bội.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -616,7 +604,7 @@ Em hãy tự giải trước khi mở **Lời giải**. Với giới hạn, nêu
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHV-B15-P04; SOURCE_BLOB: 7934757ed06de4ae4b63dbc351ef524fc054e0d0; OUTCOME: TOP08-O04; NOT_NEW_ID -->
 
-**Bài 10.** Tính lim(n→∞) √(n²+2n)/n với n nguyên dương.
+**Bài 9.** Tính lim(n→∞) √(n²+2n)/n với n nguyên dương.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -628,7 +616,7 @@ Em hãy tự giải trước khi mở **Lời giải**. Với giới hạn, nêu
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHV-B15-P03; SOURCE_BLOB: 7934757ed06de4ae4b63dbc351ef524fc054e0d0; OUTCOME: TOP08-O04; NOT_NEW_ID -->
 
-**Bài 11.** Tính lim(n→∞) (1−2/n)(4+1/n).
+**Bài 10.** Tính lim(n→∞) (1−2/n)(4+1/n).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -640,7 +628,7 @@ Em hãy tự giải trước khi mở **Lời giải**. Với giới hạn, nêu
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHV-B15-P01; SOURCE_BLOB: 7934757ed06de4ae4b63dbc351ef524fc054e0d0; OUTCOME: TOP08-O04; NOT_NEW_ID -->
 
-**Bài 12.** Tìm lim(n→∞) (5n²+2)/(2n²+n).
+**Bài 11.** Tìm lim(n→∞) (5n²+2)/(2n²+n).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -652,7 +640,7 @@ Em hãy tự giải trước khi mở **Lời giải**. Với giới hạn, nêu
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP08-P04; SOURCE_BLOB: 2e93db80384de53e208248eaa0396a7f487302ac; OUTCOME: TOP08-O04; NOT_NEW_ID -->
 
-**Bài 13.** Tính lim(n→∞)(7n²−3n+1)/(2n²+n) với n≥1.
+**Bài 12.** Tính lim(n→∞)(7n²−3n+1)/(2n²+n) với n≥1.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -666,7 +654,7 @@ Em hãy tự giải trước khi mở **Lời giải**. Với giới hạn, nêu
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP08-W01; SOURCE_BLOB: 2e93db80384de53e208248eaa0396a7f487302ac; OUTCOME: TOP08-O04; NOT_NEW_ID -->
 
-**Bài 14.** Cho u_n=(4n+7)/(n+3), n≥1. (a) Biến đổi về 4−5/(n+3). (b) Tìm cận dưới đạt và cận trên không đạt. (c) Chứng minh tăng. (d) Tính lim u_n và lý giải giới hạn không phải số hạng.
+**Bài 13.** Cho u_n=(4n+7)/(n+3), n≥1. (a) Biến đổi về 4−5/(n+3). (b) Tìm cận dưới đạt và cận trên không đạt. (c) Chứng minh tăng. (d) Tính lim u_n và lý giải giới hạn không phải số hạng.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -689,7 +677,7 @@ Em hãy tự giải trước khi mở **Lời giải**. Với giới hạn, nêu
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHV-B15-W02-ANCHOR; SOURCE_BLOB: 7934757ed06de4ae4b63dbc351ef524fc054e0d0; OUTCOME: TOP08-O05; NOT_NEW_ID -->
 
-**Bài 15.** Một thiết bị trong lần thử đầu tiêu thụ 1,2 đơn vị năng lượng. Mỗi lần thử tiếp theo tiêu thụ 3/4 lần liền trước. (a) Viết ba mức tiêu thụ đầu. (b) Thiết lập tổng n lần thử. (c) Tính tổng lý thuyết vô hạn. (d) Giải thích vì sao công thức không áp dụng với q=1.
+**Bài 14.** Một thiết bị trong lần thử đầu tiêu thụ 1,2 đơn vị năng lượng. Mỗi lần thử tiếp theo tiêu thụ 3/4 lần liền trước. (a) Viết ba mức tiêu thụ đầu. (b) Thiết lập tổng n lần thử. (c) Tính tổng lý thuyết vô hạn. (d) Giải thích vì sao công thức không áp dụng với q=1.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -705,7 +693,7 @@ Em hãy tự giải trước khi mở **Lời giải**. Với giới hạn, nêu
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHV-B15-P07; SOURCE_BLOB: 7934757ed06de4ae4b63dbc351ef524fc054e0d0; OUTCOME: TOP08-O05; NOT_NEW_ID -->
 
-**Bài 16.** Bóng rơi từ độ cao 3 m, mỗi lần bật lên cao bằng 1/2 lần trước; mô hình vô hạn. Tổng quãng đường theo phương thẳng đứng là bao nhiêu?
+**Bài 15.** Bóng rơi từ độ cao 3 m, mỗi lần bật lên cao bằng 1/2 lần trước; mô hình vô hạn. Tổng quãng đường theo phương thẳng đứng là bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -717,13 +705,25 @@ Em hãy tự giải trước khi mở **Lời giải**. Với giới hạn, nêu
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHV-B15-P06; SOURCE_BLOB: 7934757ed06de4ae4b63dbc351ef524fc054e0d0; OUTCOME: TOP08-O05; NOT_NEW_ID -->
 
-**Bài 17.** Tính tổng lý thuyết 8−4+2−1+…; vì sao tổng vẫn hữu hạn dù có vô hạn số hạng?
+**Bài 16.** Tính tổng lý thuyết 8−4+2−1+…; vì sao tổng vẫn hữu hạn dù có vô hạn số hạng?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 16/3.
 
 **Lời giải và lời giải thích:** Đây là cấp số nhân a=8, q=−1/2, |q|<1; tổng bằng 8/(1+1/2)=16/3; số hạng và phần dư tiến về 0.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHV-B15-C03; SOURCE_BLOB: 7934757ed06de4ae4b63dbc351ef524fc054e0d0; OUTCOME: TOP08-O05; NOT_NEW_ID -->
+
+**Bài 17.** Tổng vô hạn 3+3/5+3/25+… có thể dùng công thức cấp số nhân lùi vô hạn không?
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** Có; tổng bằng 15/4.
+
+**Lời giải và lời giải thích:** Số hạng đầu 3, công bội 1/5 có trị tuyệt đối nhỏ hơn 1; tổng 3/(1−1/5)=15/4.
 
 </details>
 
@@ -1227,9 +1227,21 @@ Em hãy tự giải trước khi mở **Lời giải**. Với giới hạn, nêu
 
 </details>
 
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHV-B17-P07; SOURCE_BLOB: 7934757ed06de4ae4b63dbc351ef524fc054e0d0; OUTCOME: TOP08-O17; NOT_NEW_ID -->
+
+**Bài 54.** f(x)=x³−5 liên tục trên [1,2]; f(1) và f(2) trái dấu. Kết luận nào chắc chắn đúng, và có được suy ngay nghiệm duy nhất không?
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** Có ít nhất một nghiệm trong (1,2); chưa thể suy duy nhất chỉ từ định lí đổi dấu.
+
+**Lời giải và lời giải thích:** f(1)=−4<0, f(2)=3>0. Định lí cho sự tồn tại, còn tính duy nhất cần luận cứ khác.
+
+</details>
+
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHV-B17-P03; SOURCE_BLOB: 7934757ed06de4ae4b63dbc351ef524fc054e0d0; OUTCOME: TOP08-O17; NOT_NEW_ID -->
 
-**Bài 54.** Chứng minh f(x)=x²−2 có ít nhất một nghiệm trong (1,2).
+**Bài 55.** Chứng minh f(x)=x²−2 có ít nhất một nghiệm trong (1,2).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1241,7 +1253,7 @@ Em hãy tự giải trước khi mở **Lời giải**. Với giới hạn, nêu
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP08-P17; SOURCE_BLOB: 2e93db80384de53e208248eaa0396a7f487302ac; OUTCOME: TOP08-O17; NOT_NEW_ID -->
 
-**Bài 55.** Chứng minh x³+x−1=0 có ít nhất một nghiệm trong (0,1). Định lí giá trị trung gian đã chứng minh tính duy nhất chưa?
+**Bài 56.** Chứng minh x³+x−1=0 có ít nhất một nghiệm trong (0,1). Định lí giá trị trung gian đã chứng minh tính duy nhất chưa?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1250,18 +1262,6 @@ Em hãy tự giải trước khi mở **Lời giải**. Với giới hạn, nêu
 **Lời giải có suy luận:** g(x)=x³+x−1 là đa thức nên liên tục trên [0,1]. g(0)=−1<0, g(1)=1>0. Theo định lí giá trị trung gian, có c∈(0,1) với g(c)=0. Muốn kết luận duy nhất phải dùng lập luận thêm (chẳng hạn g tăng do x³ và x đều tăng).
 
 **Nếu làm sai:** Không viết 'nghiệm duy nhất theo IVT'; IVT chỉ cho tồn tại khi có liên tục và trái dấu.
-
-</details>
-
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHV-B17-P07; SOURCE_BLOB: 7934757ed06de4ae4b63dbc351ef524fc054e0d0; OUTCOME: TOP08-O18; NOT_NEW_ID -->
-
-**Bài 56.** f(x)=x³−5 liên tục trên [1,2]; f(1) và f(2) trái dấu. Kết luận nào chắc chắn đúng, và có được suy ngay nghiệm duy nhất không?
-
-<details markdown="1"><summary>Lời giải</summary>
-
-**Đáp án:** Có ít nhất một nghiệm trong (1,2); chưa thể suy duy nhất chỉ từ định lí đổi dấu.
-
-**Lời giải và lời giải thích:** f(1)=−4<0, f(2)=3>0. Định lí cho sự tồn tại, còn tính duy nhất cần luận cứ khác.
 
 </details>
 
