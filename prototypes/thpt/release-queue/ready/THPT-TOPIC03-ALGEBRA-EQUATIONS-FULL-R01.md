@@ -1,4 +1,4 @@
-# CĐ03 — Phương trình đại số và kỹ thuật chuyển đổi dạng · AUTHORING CONTENT_READY R04 (stable packet R01)
+# CĐ03 — Phương trình đại số và kỹ thuật chuyển đổi dạng · AUTHORING CONTENT_READY R05 (stable packet R01)
 
 PACKET_ID: THPT-TOPIC03-ALGEBRA-EQUATIONS-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -8,18 +8,18 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: a58f53d915d41e194d6e93361c29d240cdc51def
+SOURCE_COMMIT: e2ba5b26a045895459e6f658eeafe26311700e24
 AUTHOR_PR: 820
 CURRENT_PR: #820 Draft AUTHORING, no merge/deploy
 CATALOG_TOPIC_ID: CD03
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_CONTINUOUS_KNOWLEDGE_ARCS_R04_REVIEW_CANDIDATE_20261113.md
-ACADEMIC_SOURCE_BLOB: e94bbe37339f7002bd8e29bdf60e0c86fae0aa95
-REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC03_CONTINUOUS_R04_AUTHOR_SELF_QA_RECEIPT_20261113.md (AUTHOR_SELF_QA, no new independent NotebookLM PASS)
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC03_CONTINUOUS_R04_AUTHOR_SELF_QA_RECEIPT_20261113.md
-REVIEW_RECEIPT_BLOB: 53fa40ee7efc98de49d2c0319aa431094b68e065
-AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC03-ALGEBRA-EQUATIONS-FULL-R04_HANDOFF_V2_20261113.md
-AUTHOR_HANDOFF_BLOB: 0d552897d628989d3f4fc381b92b6cb2c616fa2d
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R05_FULL_LEARNER_VISIBLE_31_CANONICAL_20261115.md
+ACADEMIC_SOURCE_BLOB: 05e9675a7dca802aa9540a96a46d76d013055d8b
+REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC03_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md (AUTHOR_SELF_QA, no new independent NotebookLM PASS)
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC03_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
+REVIEW_RECEIPT_BLOB: 871edc307cae9e156dab528da6d98653b6686331
+AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC03-ALGEBRA-EQUATIONS-FULL-R05_HANDOFF_V2_20261115.md
+AUTHOR_HANDOFF_BLOB: 6f4eb188b7b9494c3038cd1f92479059b5a1e047
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_ORIGINAL08_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: b2e79a6cda5fdcc82dbd281e4273577ca637895e
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_NEW23_PUBLIC_CANONICAL_R01_20261112.md
@@ -44,9 +44,17 @@ MASTERY_ACTIVATION: NO
 RELEASE_AUTHORIZATION: NO
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
+CURRENT_CONTENT_REVISION: R05
+TOPIC_EDITORIAL_CHECKLIST: Issue #864 original 13 points, no additional standard
+TOPIC_REGRESSION_LEDGER: Issue #865, cross-check L01–L25; new CĐ03 defects to be registered L26–L30
+PREVIOUS_R04_SOURCE_BLOB: e94bbe37339f7002bd8e29bdf60e0c86fae0aa95
+PREVIOUS_R04_RECEIPT_BLOB: 53fa40ee7efc98de49d2c0319aa431094b68e065
+LEARNER_PRACTICE_PROJECTIONS: 31 original canonical stems+solutions, 4 Written rubrics 5/6/7/7
+SELF_CHECK_PUBLIC_REPLAY: 12 question stems only; CLIENT_SELF_CHECK_NO_MASTERY
+
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — Nguồn CĐ03 R04 ba trang/liền mạch đã khóa SHA e94bbe37339f7002bd8e29bdf60e0c86fae0aa95, receipt Q18 53fa40ee7efc98de49d2c0319aa431094b68e065, một original index 8 ID, một new 23 bank và một handoff V2, bản chính xác kiểm được.
+- [x] A1_SOURCE_SNAPSHOT — Nguồn CĐ03 R04 ba trang/liền mạch đã khóa SHA 05e9675a7dca802aa9540a96a46d76d013055d8b, receipt Q18 871edc307cae9e156dab528da6d98653b6686331, một original index 8 ID, một new 23 bank và một handoff V2, bản chính xác kiểm được.
 - [x] A2_SGK_SBT_SCOPE — CĐ03 theo đề xuất 22 chủ dự án cho phép triển khai; SGK KNTT Toán 10 T2 B18 trang in 25–27, SBT trang 19–21 xác thực từ receipt S1 lịch sử, không tuyên bố scan PDF mới.
 - [x] A3_NOTEBOOKLM_VERDICT — B18 historical NotebookLM PASS chỉ cho snapshot 5 Temp_ gốc, 8 ID thuộc reviewer scope; CĐ03 R04 12 outcomes/23 new item math solution checks source-bound Q18 AUTHOR_SELF_VERIFIED, not inherited R01 counts, không giả reviewer PASS mới.
 - [x] A4_ITEM_OUTCOME_IDS — 12 outcome, 31 unique PUBLIC IDs (8 reused +23 new), >=2 item mỗi outcome; 4 Written có rubric đúng source gốc 5/6 điểm, mới 7/7; 12 reuse-only Self Check NO_MASTERY.
