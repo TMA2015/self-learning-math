@@ -294,7 +294,7 @@ A1: source SHA a33d1e6a20dba1dc7861097e231906aff2938c02, Q18 receipt 3285d8d9db6
 
 ## DELTA_LEDGER
 
-R01 original SGK source/reviewer and R03/R05 learner historical snapshots remain immutable. R05 `DELTA_C_ACADEMIC_MATERIAL`: continuous limits→sided graph behavior→continuity→IVT storyline; corrected SVG jump example to exact f=x+2 left and 2x+1 right at 0 with hollow (0,2), solid (0,1); explains eight discrete 2+1/n points and midpoint of x²−2 diagram. Removed generic remedial lead, and replaced technical Practice/Self Check tables with learner prose; same 58 canonical IDs in versioned bank/index, W01/W02 content_version2 and accessible SVG1 corrected; 58 real learner-visible question stems and solutions, pointer IDs in hidden comment. Exact source-locked Q18 self-verification; no merge/deploy.
+R01 original SGK source/reviewer and R03/R04 learner historical snapshots remain immutable; R05 is the new source-locked signed candidate. R05 `DELTA_C_ACADEMIC_MATERIAL`: continuous limits→sided graph behavior→continuity→IVT storyline; corrected SVG jump example to exact f=x+2 left and 2x+1 right at 0 with hollow (0,2), solid (0,1); explains eight discrete 2+1/n points and midpoint of x²−2 diagram. Removed generic remedial lead, and replaced technical Practice/Self Check tables with learner prose; same 58 canonical IDs in versioned bank/index, W01/W02 content_version2 and accessible SVG1 corrected; 58 real learner-visible question stems and solutions, pointer IDs in hidden comment. Exact source-locked Q18 self-verification; no merge/deploy.
 
 ## PRIVATE_RD1_CUSTODY_METADATA
 
