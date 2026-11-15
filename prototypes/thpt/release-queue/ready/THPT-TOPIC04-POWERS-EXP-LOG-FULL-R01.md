@@ -1,4 +1,4 @@
-# CĐ04 — Lũy thừa, mũ và lôgarit · AUTHORING CONTENT_READY current R04 (stable packet R01)
+# CĐ04 — Lũy thừa, mũ và lôgarit · AUTHORING CONTENT_READY current R05 (stable packet R01)
 
 PACKET_ID: THPT-TOPIC04-POWERS-EXP-LOG-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -8,18 +8,18 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 5530b4a9659f4b1b7db428411ccedfa1a737236c
+SOURCE_COMMIT: ad8b0dbab4cae55ad55b29f2eeff05e713ea35d6
 AUTHOR_PR: 822
 CURRENT_PR: #822 Draft AUTHORING, not merged/deployed
 CATALOG_TOPIC_ID: CD04
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_CONTINUOUS_KNOWLEDGE_ARCS_R04_REVIEW_CANDIDATE_20261113.md
-ACADEMIC_SOURCE_BLOB: 1f51b01357f87359b689131fd6afcc1ad998209d
-REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC04_CONTINUOUS_R04_AUTHOR_SELF_QA_RECEIPT_20261113.md (AUTHOR_SELF_QA, no new independent Topic NotebookLM PASS)
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC04_CONTINUOUS_R04_AUTHOR_SELF_QA_RECEIPT_20261113.md
-REVIEW_RECEIPT_BLOB: ed93d742a34245953f03712c75c66a50c1b29f30
-AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC04-POWERS-EXP-LOG-FULL-R04_HANDOFF_V2_20261113.md
-AUTHOR_HANDOFF_BLOB: b6177cd57ce32ff3b373be6087f7416d444c211a
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_R05_STUDENT_FIRST_75_CANONICAL_VISIBLE_20261115.md
+ACADEMIC_SOURCE_BLOB: c948ad9957bbcd55b416ea7ddce96a6dcdf0d799
+REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC04_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md (AUTHOR_SELF_QA, no new independent Topic NotebookLM PASS)
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC04_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
+REVIEW_RECEIPT_BLOB: 436084332b4acc642db3a2a8523d91d980cf566d
+AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC04-POWERS-EXP-LOG-FULL-R05_HANDOFF_V2_20261115.md
+AUTHOR_HANDOFF_BLOB: 2475915a4e46ed2ba3840563f2b9f9f2b33336fd
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC04_POWERS_LOG_ORIGINAL49_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 7d257edda0a2d29ba063987a51c61980558dbab6
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC04_POWERS_LOG_NEW26_PUBLIC_CANONICAL_R01_20261112.md
@@ -44,9 +44,17 @@ MASTERY_ACTIVATION: NO
 RELEASE_AUTHORIZATION: NO
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
+CURRENT_LEARNER_REVISION: R05
+PREVIOUS_R04_SOURCE_BLOB: 1f51b01357f87359b689131fd6afcc1ad998209d
+PREVIOUS_R04_Q18_RECEIPT_BLOB: ed93d742a34245953f03712c75c66a50c1b29f30
+TOPIC_EDITORIAL_CHECKLIST: 13 owner-approved requirements, Issue #864
+TOPIC_DEFECT_LEDGER: Issue #865 (reuse; no second academic standard)
+REAL_PRACTICE_DISPLAY: 75 immutable canonical stems+solutions, 12 original Written rubrics
+SELF_CHECK_PUBLIC_REPLAY: 18 full question stems, no official Readiness/Mastery
+
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — Canonical Topic source Git blob 1f51b01357f87359b689131fd6afcc1ad998209d, Q18 signed receipt ed93d742a34245953f03712c75c66a50c1b29f30, one 49-old index, one 26-new bank and one handoff V2 exact source.
+- [x] A1_SOURCE_SNAPSHOT — Canonical Topic source Git blob c948ad9957bbcd55b416ea7ddce96a6dcdf0d799, Q18 signed receipt 436084332b4acc642db3a2a8523d91d980cf566d, one 49-old index, one 26-new bank and one handoff V2 exact source.
 - [x] A2_SGK_SBT_SCOPE — KNTT G11 tập 2 S1 Core: SGK B18–B21, printed SGK p4–24/SBT p4–19; owner original PDF SHA+visual printed-page index receipt 02/11/2026. SBT solutions p73–85, not old 117–134; SBT reference, no copyright copying.
 - [x] A3_NOTEBOOKLM_VERDICT — G11 ChVI original public reviewed 49 items historical independent NotebookLM PASS limited to original R01 source and two Delta B decimal corrections; 18 new Topic modules/26 original questions/1 SVG AUTHOR_SELF_VERIFIED Q18 with 113 direct checks, **not new NotebookLM PASS**.
 - [x] A4_ITEM_OUTCOME_IDS — 18 outcomes, 75 unique canonical PUBLIC IDs (49 references+26 new), 3–7 mapped to each; 12 Written one canonical library (8 old rubric 4 pts,4 new rubric 7 pts), 18 public reuse selfchecks no new IDs.
