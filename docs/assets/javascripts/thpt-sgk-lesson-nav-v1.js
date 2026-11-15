@@ -39,6 +39,23 @@ const numberG10FirstSix=(article)=>{
   return;
  }
  if(!labels.every((node,i)=>node.textContent.trim()===names[i]))return;
+ // B01 owner's 15/11 source upgrade already carries meaningful 1.x/3.x/4.x
+ // headings and FIVE authentic SGK 2.x sections. Accept the verified DOM
+ // directly; never re-number or compress it to the legacy three-heading shell.
+ // All other five lessons remain on the original display-only branch.
+ if(/\/chuong-i\/bai-1\/?$/.test(location.pathname)){
+  const discovery=[...blocks[0].querySelectorAll("h3")].map(n=>n.textContent.trim());
+  const knowledge=[...blocks[1].querySelectorAll("h3")].map(n=>n.textContent.trim());
+  const examples=[...blocks[2].querySelectorAll("h3")].map(n=>n.textContent.trim());
+  const mistakes=[...blocks[3].querySelectorAll(":scope > details.tip > summary")].map(n=>n.textContent.trim());
+  const ordered=(items,prefix)=>items.every((value,index)=>value.startsWith(prefix+(index+1)+". "));
+  if(discovery.length===4 && knowledge.length===5 && examples.length===4 && mistakes.length===2 &&
+    ordered(discovery,"1.") && ordered(knowledge,"2.") &&
+    ordered(examples,"3.") && ordered(mistakes,"4.")){
+    article.dataset.g10B01B06EditorialNumbered="true";
+    return;
+  }
+ }
  const discovery=[...blocks[0].querySelectorAll("h3")];
  const original=["Cùng tìm hiểu","Ví dụ trực quan","Thuật ngữ và kiến thức, kỹ năng"];
  if(discovery.length!==3||!discovery.every((node,i)=>node.textContent.trim()===original[i]))return;
