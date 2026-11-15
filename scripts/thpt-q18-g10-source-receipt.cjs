@@ -78,7 +78,7 @@ function b01EnrichmentBlob(ledgerCandidate) {
  assert(followBaseline&&followCandidate,"B01 owner P2 R02 requires two exact Git blobs");
  assert.equal(followBaseline[1],candidate[1],"B01 R02 must extend immutable deployed R01 source SHA");
  assert.notEqual(followCandidate[1],followBaseline[1],"B01 R02 candidate must differ from R01");
- for(const marker of ["ENRICHMENT_DELTA_RECEIPT","Q18_OWNER_SELF_VERIFIED_ENRICHMENT","OWNER_P2_CORRECTION","seven source"])
+ for(const marker of ["ENRICHMENT_DELTA_RECEIPT","Q18_OWNER_SELF_VERIFIED_ENRICHMENT","OWNER_P2_CORRECTION","Seven boxed labels:"])
    assert(follow.includes(marker),"B01 R02 source-locked correction receipt missing: "+marker);
  return followCandidate[1];
 }
