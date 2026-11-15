@@ -1,4 +1,4 @@
-# CĐ05 — Hàm số, đồ thị và phép biến đổi · AUTHORING CONTENT_READY R04 (stable packet R01)
+# CĐ05 — Hàm số, đồ thị và phép biến đổi · AUTHORING CONTENT_READY R05 (stable packet R01)
 
 PACKET_ID: THPT-TOPIC05-FUNCTION-GRAPH-TRANSFORMS-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -8,18 +8,18 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: e93cf5844878bc068110d0d2eabe4444d01f45fb
+SOURCE_COMMIT: bc5640441698c1309edd03a51ba54c2fee06f4cb
 AUTHOR_PR: 824
 CURRENT_PR: #824 Draft AUTHORING, not merged/deployed
 CATALOG_TOPIC_ID: CD05
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_CONTINUOUS_KNOWLEDGE_ARCS_R04_REVIEW_CANDIDATE_20261113.md
-ACADEMIC_SOURCE_BLOB: 04f532661d014ee011e5d2f61a3dca9578a101d4
-REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC05_CONTINUOUS_R04_AUTHOR_SELF_QA_RECEIPT_20261113.md (author Q18 SELF_VERIFIED, no new independent NotebookLM PASS)
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC05_CONTINUOUS_R04_AUTHOR_SELF_QA_RECEIPT_20261113.md
-REVIEW_RECEIPT_BLOB: 82a7c3dd772ce6e0751291e71a17cf28f4cb56b6
-AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC05-FUNCTION-GRAPH-TRANSFORMS-FULL-R04_HANDOFF_V2_20261113.md
-AUTHOR_HANDOFF_BLOB: c63ac81cde962edad34542f8fae78ee52b51ae1a
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R05_LEARNER_FIRST_FULL_38_CANONICAL_20261115.md
+ACADEMIC_SOURCE_BLOB: 3052d5f7090f74af2eca7739047c59ed76ccda63
+REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC05_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md (author Q18 SELF_VERIFIED, no new independent NotebookLM PASS)
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC05_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
+REVIEW_RECEIPT_BLOB: 9b3c25de45fc8601f2b5c8c11c6f7dc89b015fbc
+AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC05-FUNCTION-GRAPH-TRANSFORMS-FULL-R05_HANDOFF_V2_20261115.md
+AUTHOR_HANDOFF_BLOB: 69c9445c2db607160ed3047a323b086b7f8a80cf
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC05_GRAPH_TRANSFORMS_NEW38_PUBLIC_CANONICAL_R01_20261112.md
 PUBLIC_CANONICAL_BANK_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39
 HISTORIC_IMMUTABLE_R18_BLOB: 2340ea4975b37a457363eea59dd617070934983c
@@ -43,9 +43,17 @@ MASTERY_ACTIVATION: NO
 RELEASE_AUTHORIZATION: NO
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
+CURRENT_CONTENT_REVISION: R05
+TOPIC_EDITORIAL_CHECKLIST: Issue #864, same 13 approved items
+TOPIC_DEFECT_REGRESSION_LEDGER: Issue #865, check L01–L36 before R05
+PREVIOUS_R04_SOURCE_BLOB: 04f532661d014ee011e5d2f61a3dca9578a101d4
+PREVIOUS_R04_RECEIPT_BLOB: 82a7c3dd772ce6e0751291e71a17cf28f4cb56b6
+DISPLAY_ONLY_PUBLIC_CANONICAL: 38 original question/key/solution projections with 4 original seven-point Written rubrics
+SELF_CHECK_PUBLIC_REPLAY: 17 real stems, not held-out or official Mastery
+
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — CĐ05 canonical student source Git blob 04f532661d014ee011e5d2f61a3dca9578a101d4, receipt author Q18 82a7c3dd772ce6e0751291e71a17cf28f4cb56b6, one NEW38 bank blob ab878f1a18dea87872449a79c27b75a612d81b39 and exactly one V2 handoff c63ac81cde962edad34542f8fae78ee52b51ae1a; original PR #782 unchanged.
+- [x] A1_SOURCE_SNAPSHOT — CĐ05 canonical student source Git blob 3052d5f7090f74af2eca7739047c59ed76ccda63, receipt author Q18 9b3c25de45fc8601f2b5c8c11c6f7dc89b015fbc, one NEW38 bank blob ab878f1a18dea87872449a79c27b75a612d81b39 and exactly one V2 handoff 69c9445c2db607160ed3047a323b086b7f8a80cf; original PR #782 unchanged.
 - [x] A2_SGK_SBT_SCOPE — KNTT S1: SGK G10 T2 B15 printed4–10/PDF5–11, B16 printed11–18/PDF12–19; SBT G10 T2 B15 printed3–9/PDF4–10, B16 printed10–15/PDF11–16. G11 T1 B03 printed22–30/PDF23–31 anchors parity/periodicity. Owner historical original visual SHA receipts 07/11, no new PDF scan; general graph transforms are Topic enrichment.
 - [x] A3_NOTEBOOKLM_VERDICT — Original broad R18 #782 48-outcome academic/PED and owner-held RD1 historic PASS scoped to source SHA 2340ea4975b37a457363eea59dd617070934983c. New CĐ05 17 modules/38 PUBLIC items and three figures Q18 AUTHOR_SELF_VERIFIED 110/110 documented; not a new independent NotebookLM PASS.
 - [x] A4_ITEM_OUTCOME_IDS — 17 independent Topic learning outcomes and 38 new unique PUBLIC item IDs (34 Practice+4 Written), min2 IDs/outcome; 4 new Written 7 point rubrics unique per ID, 17 Self Check PUBLIC reuse placements do not duplicate questions.
