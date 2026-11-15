@@ -129,6 +129,9 @@ function validate(source, agents, queue) {
      const repeated=source.slice(a,b);
      if(/^\|\s*\*\*Q\d\d\b/m.test(repeated))fail("DUPLICATE_EXECUTION_Q_MATRIX");
      if(!repeated.includes("không lặp tiêu chí"))fail("SINGLE_TABLE_PROCEDURE_LINK_MISSING");
+     const q01=lines.find(x=>x.startsWith("| **Q01 "))||"";
+     if(!q01.includes("`SGK_CHAPTER` có SGK Core")||!q01.includes("`TOPIC` không có Core riêng"))
+       fail("TOPIC_Q01_MUST_NOT_REQUIRE_SEPARATE_CORE");
      const q05=lines.find(x=>x.startsWith("| **Q05 "))||"";
      const q14=lines.find(x=>x.startsWith("| **Q14 "))||"";
      const q17=lines.find(x=>x.startsWith("| **Q17 "))||"";
@@ -204,6 +207,8 @@ function selfTest(){
   if(full.includes("**VERSION:** `3.1.1-CANDIDATE`")){
    const wrong=full.replace("| **Q15 ID/Shared bank**","| **Q14 ID/Shared bank**");
    assert(validate(wrong,"","").failures.some(e=>e.startsWith("EXECUTION_Q01_Q18_ROWS_NOT_ORDERED")));
+   const falseCore=full.replace("`TOPIC` không có Core riêng","`TOPIC` phải có Core riêng");
+   assert(validate(falseCore,"","").failures.includes("TOPIC_Q01_MUST_NOT_REQUIRE_SEPARATE_CORE"));
    const noTopic=full.replaceAll("TOPIC_PRACTICE","TOPIC_CORE");
    assert(validate(noTopic,"","").failures.includes("TOPIC_Q05_MUST_USE_PRACTICE_NOT_CORE"));
    const wrongTopic=full.replaceAll("Adaptive Knowledge Tabs v2","4 tab Golden SGK");
