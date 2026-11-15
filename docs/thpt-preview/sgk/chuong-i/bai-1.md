@@ -8,7 +8,7 @@
 
 === "Khám phá kiến thức"
 
-    ### Cùng tìm hiểu
+    ### 1.1. Vì sao toán học cần mệnh đề?
 
     Khi nghe một câu nói, đôi khi em có thể kiểm tra được câu đó **đúng hay sai**, nhưng cũng có những câu không thể đem ra kiểm tra theo cách ấy. Chẳng hạn, “14 chia hết cho 7” là một khẳng định đúng; “14 là số lẻ” là một khẳng định sai. Còn “Bạn đã làm bài tập chưa?” là một **câu hỏi**, không khẳng định điều gì đúng hay sai.
 
@@ -18,13 +18,19 @@
 
     Một điều thú vị khác là **chỉ một trường hợp** cũng có thể làm thay đổi kết luận. Nếu ai đó nói “Tất cả học sinh trong một đội đều biết bơi”, thì để bác bỏ câu này, em chỉ cần tìm được **một thành viên không biết bơi**. Em không cần chứng minh rằng không ai biết bơi. Đó là ý tưởng của *phủ định* và *phản ví dụ*.
 
-    ### Ví dụ trực quan
+    ### 1.2. Đọc đúng chiều của một lời khẳng định
 
-    Một học sinh nêu: “Nếu một số nguyên chia hết cho 6 thì nó chia hết cho 3”. Đúng, vì số ấy viết được dưới dạng \(6k=3(2k)\) với \(k\in\mathbb Z\). Nhưng nếu đổi chiều thành “Nếu một số nguyên chia hết cho 3 thì nó chia hết cho 6”, câu mới lại sai: số 3 là phản ví dụ.
+    Một tứ giác là hình vuông thì nó cũng là hình chữ nhật. Nhưng nếu đảo lại “Hễ là hình chữ nhật thì là hình vuông” thì không đúng: hình chữ nhật có chiều dài 3 cm, chiều rộng 2 cm không phải hình vuông.
 
-    Hai câu nghe gần giống nhau nhưng **không cùng ý nghĩa**. Bởi vậy, trong toán học, một câu “nếu … thì …” phải luôn được đọc đúng chiều; muốn có “khi và chỉ khi”, ta cần đúng ở **cả hai chiều**.
+    Hai phát biểu trông gần giống nhau nhưng hướng suy luận khác nhau. Trong toán học, ta cần phân biệt **“nếu … thì …”** với câu đảo; khi phát biểu **“khi và chỉ khi”**, cả hai chiều đều phải đúng. Tương tự, phủ định không phải chỉ thêm chữ “không” tùy ý: phải bác bỏ chính xác điều câu gốc khẳng định.
 
-    ### Thuật ngữ và kiến thức, kỹ năng
+    ### 1.3. “Mọi” và “có ít nhất một” khác nhau ra sao?
+
+    Giả sử một bạn khẳng định: “Mọi số tự nhiên đều lớn hơn 0”. Chỉ cần lấy \(n=0\) là thấy câu ấy sai. Trong khi đó, câu “Có ít nhất một số tự nhiên lớn hơn 0” là đúng, vì \(n=1\) đã đủ làm chứng.
+
+    Đó là hai cách nói khác nhau: **“mọi”** đòi hỏi tính chất đúng với từng đối tượng trong miền đang xét, còn **“tồn tại”** chỉ cần tìm được một đối tượng thỏa mãn. Khi phủ định “mọi”, ta tìm **ít nhất một** trường hợp không thỏa; khi phủ định “tồn tại”, ta khẳng định **mọi** trường hợp đều không thỏa. Sang mục 2.5, em sẽ viết các câu này gọn bằng \(\forall\) và \(\exists\).
+
+    ### 1.4. Thuật ngữ và điều em cần nhớ
 
     **Thuật ngữ:** mệnh đề, giá trị đúng/sai, mệnh đề chứa biến, phủ định, mệnh đề kéo theo, mệnh đề đảo, điều kiện cần và đủ, mệnh đề tương đương, lượng từ “với mọi” và “tồn tại”, phản ví dụ.
 
@@ -77,7 +83,7 @@
         Chọn **(B)**. Chỉ cần một thành viên không biết bơi thì câu “tất cả đều biết bơi” sai; (A) mạnh hơn mức cần thiết và không phải phủ định tương đương.
 
 
-    ### 2.3. Mệnh đề kéo theo, đảo và tương đương
+    ### 2.3. Mệnh đề kéo theo và mệnh đề đảo
 
     Mệnh đề **“Nếu \(P\) thì \(Q\)”**, viết \(P\Rightarrow Q\), có nghĩa là: bất cứ khi nào \(P\) đúng thì \(Q\) cũng phải đúng. Mệnh đề này **chỉ sai** trong trường hợp \(P\) đúng nhưng \(Q\) sai. Các trường hợp còn lại được xem là đúng theo quy ước giá trị chân lý.
 
@@ -99,9 +105,7 @@
     <figcaption>Đọc hình: tập bội của 6 nằm trong tập bội của 3. Đây là trực giác về chiều kéo theo; để chứng minh tổng quát, viết \(n=6k=3(2k)\). Muốn bác bỏ chiều đảo, lấy \(n=3\).</figcaption>
     </figure>
 
-    Nếu cả \(P\Rightarrow Q\) **và** \(Q\Rightarrow P\) đều đúng trên cùng miền, ta viết \(P\Leftrightarrow Q\) và đọc là **“\(P\) khi và chỉ khi \(Q\)”**. Khi chứng minh tương đương, phải chứng minh **hai chiều**, hoặc lập luận bằng các phép biến đổi tương đương hợp lệ.
-
-    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ:</strong> \(P\Rightarrow Q\) không tự cho phép đổi chiều; \(P\Leftrightarrow Q\) đòi hỏi chứng minh cả hai chiều. Kiểm bằng phản ví dụ khi nghi ngờ chiều đảo.</div>
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ:</strong> Trong \(P\Rightarrow Q\), \(P\) là điều kiện đủ để có \(Q\), còn \(Q\) là điều kiện cần để có \(P\). Đổi chiều tạo ra mệnh đề đảo; phải kiểm riêng, không tự suy ra từ chiều thuận.</div>
 
     **Em vận dụng — chiều kéo theo.** Với \(n\in\mathbb Z\): \(P\): “\(n\) chia hết cho 8”, \(Q\): “\(n\) chia hết cho 4”. \(P\Rightarrow Q\) đúng hay sai? Mệnh đề đảo \(Q\Rightarrow P\) đúng hay sai? Hãy chỉ ra một phản ví dụ nếu có.
 
@@ -112,6 +116,12 @@
         \(P\Rightarrow Q\) **đúng**, vì \(n=8t=4(2t)\). \(Q\Rightarrow P\) **sai**: \(n=4\) chia hết cho 4 nhưng không chia hết cho 8.
 
 
+    ### 2.4. Mệnh đề tương đương
+
+    Nếu cả \(P\Rightarrow Q\) **và** \(Q\Rightarrow P\) đều đúng trên cùng miền, ta viết \(P\Leftrightarrow Q\) và đọc là **“\(P\) khi và chỉ khi \(Q\)”**. Khi chứng minh tương đương, phải chứng minh **hai chiều**, hoặc lập luận bằng các phép biến đổi tương đương hợp lệ.
+
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ:</strong> \(P\Rightarrow Q\) không tự cho phép đổi chiều; \(P\Leftrightarrow Q\) đòi hỏi chứng minh cả hai chiều. Kiểm bằng phản ví dụ khi nghi ngờ chiều đảo.</div>
+
     **Em vận dụng — hai chiều.** Với \(n\in\mathbb Z\), “\(n\) chẵn khi và chỉ khi \(n+2\) chẵn” có đúng không? Hãy trình bày riêng hai chiều.
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY04" hidden></span>
@@ -121,7 +131,7 @@
         **Đúng.** Nếu \(n=2m\) thì \(n+2=2(m+1)\) chẵn. Nếu \(n+2=2k\) thì \(n=2(k-1)\) cũng chẵn. Cả hai chiều đúng trên \(\mathbb Z\).
 
 
-    ### 2.4. Lượng từ “với mọi” và “tồn tại”
+    ### 2.5. Mệnh đề có chứa kí hiệu “với mọi”, “tồn tại”
 
     Câu “Mọi số nguyên đều có bình phương không âm” nói về **tất cả** các số nguyên. Ta viết \(\forall n\in\mathbb Z,\ n^2\ge0\). Muốn chứng minh phát biểu với \(\forall\), ta cần một lập luận đúng cho **mọi phần tử trong miền**.
 
@@ -154,7 +164,7 @@
 
     Phần trên giúp em nắm các khái niệm. Sau đây là những bài toán cần dùng **định nghĩa, phản ví dụ hoặc chứng minh hai chiều**. Trong mỗi ví dụ, lời giải thích vì sao chọn phương pháp được đặt ngay cùng bài toán.
 
-    ### Ví dụ 1 — Nhận diện mệnh đề và xét đúng/sai
+    ### 3.1. Ví dụ 1 — Nhận diện mệnh đề và xét đúng/sai
 
     **Đề bài.** Xét câu “Phương trình \(x^2+1=0\) có hai nghiệm thực phân biệt”. Đây có phải mệnh đề không, và đúng hay sai?
 
@@ -164,7 +174,7 @@
 
     **Kiểm lại.** “Sai” không đồng nghĩa với “không phải mệnh đề”.
 
-    ### Ví dụ 2 — Phủ định câu có “với mọi”
+    ### 3.2. Ví dụ 2 — Phủ định câu có “với mọi”
 
     **Đề bài.** Phủ định của \(P\): “Mọi số thực \(x\) đều thỏa \(x^2\ge0\)” là gì? Mệnh đề phủ định đúng hay sai?
 
@@ -174,17 +184,17 @@
 
     **Kiểm lại.** Phủ định của dấu \(\ge\) là \(<\), không phải \(\le\).
 
-    ### Ví dụ 3 — Chứng minh chiều thuận và tìm phản ví dụ cho chiều đảo
+    ### 3.3. Ví dụ 3 — Phân biệt chiều thuận và chiều đảo
 
-    **Đề bài.** Với \(n\in\mathbb Z\), cho \(P\): “\(n\) chia hết cho 6”, \(Q\): “\(n\) chia hết cho 3”. Xét \(P\Rightarrow Q\) và \(Q\Rightarrow P\).
+    **Đề bài.** Trên miền \(x\in\mathbb R\), xét \(P\): “\(x>3\)” và \(Q\): “\(x>1\)”. Mệnh đề \(P\Rightarrow Q\) và mệnh đề đảo \(Q\Rightarrow P\) đúng hay sai?
 
-    **Vì sao chọn cách này?** Để chứng minh chiều thuận, dùng định nghĩa chia hết với biến nguyên. Để bác bỏ chiều đảo, chỉ cần tìm một số chia hết cho 3 nhưng không chia hết cho 6.
+    **Vì sao chọn cách này?** Với bất đẳng thức, em có thể so sánh trực tiếp các miền giá trị. Muốn chứng minh chiều thuận, xét mọi \(x\) thỏa \(P\); muốn bác bỏ chiều đảo, chỉ cần một \(x\) thỏa \(Q\) nhưng không thỏa \(P\).
 
-    **Lời giải.** Nếu \(n=6k\), \(k\in\mathbb Z\), thì \(n=3(2k)\), suy ra \(n\) chia hết cho 3: \(P\Rightarrow Q\) **đúng**. Chiều đảo **sai** vì \(n=3\) chia hết cho 3 nhưng không chia hết cho 6.
+    **Lời giải.** Nếu \(x>3\) thì chắc chắn \(x>1\), nên \(P\Rightarrow Q\) đúng. Nhưng với \(x=2\), ta có \(x>1\) đúng còn \(x>3\) sai. Do đó \(Q\Rightarrow P\) sai.
 
-    **Kiểm lại.** Hình ở phần 2.3 giúp hình dung tập bội số, nhưng **không thay** chứng minh với \(k\in\mathbb Z\).
+    **Kiểm lại.** Chiều đảo không tự đúng theo chiều thuận. Hình bội số ở mục 2.3 minh họa cùng nguyên tắc bằng một ngữ cảnh số nguyên khác.
 
-    ### Ví dụ 4 — Chứng minh hai chiều của một mệnh đề tương đương
+    ### 3.4. Ví dụ 4 — Chứng minh hai chiều của một mệnh đề tương đương
 
     **Đề bài.** Với \(n\in\mathbb Z\), chứng minh “\(n\) chẵn khi và chỉ khi \(n^2\) chẵn”.
 
@@ -198,7 +208,7 @@
 
     <span data-thpt-help-id="HELP-G10-B01-01" hidden></span>
 
-    ??? tip "Nhầm mệnh đề với mệnh đề chứa biến"
+    ??? tip "4.1. Nhầm mệnh đề với mệnh đề chứa biến"
 
         **Dấu hiệu:** Thấy \(x+2=5\) rồi kết luận ngay đúng hoặc sai dù chưa biết \(x\).
 
@@ -209,7 +219,7 @@
 
     <span data-thpt-help-id="HELP-G10-B01-02" hidden></span>
 
-    ??? tip "Nhầm chiều kéo theo hoặc phủ định sai lượng từ"
+    ??? tip "4.2. Nhầm chiều kéo theo hoặc phủ định sai lượng từ"
 
         **Dấu hiệu:** Từ \(P\Rightarrow Q\) suy ngay \(Q\Rightarrow P\); hoặc phủ định “mọi” thành “mọi … không”.
 
@@ -220,6 +230,4 @@
 
     **Tiếp tục học:** [Core và Luyện tập Chương I](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
-    <p class="thpt-r4-footnote">Nguồn kiến thức: SGK Toán 10 · Kết nối tri thức với cuộc sống · tập một · Bài 1. Lời giảng và ví dụ hỗ trợ tự học được SLM biên tập từ nguồn học liệu đã có.</p>
-
-<p class="thpt-r4-footnote">Nguồn: SGK Toán 10 KNTT tập 1, Bài 1 trang 5–11; SBT Bài 1 trang 5–7. Học liệu tự luyện không dùng làm bài đánh giá độc lập.</p>
+    <p class="thpt-r4-footnote">Đối chiếu SGK Toán 10 · Kết nối tri thức với cuộc sống · tập một, Bài 1 (trang in 5–11). Lời giảng, ví dụ và bài tự đối chiếu được biên tập riêng; không dùng câu tự luyện làm đánh giá độc lập.</p>

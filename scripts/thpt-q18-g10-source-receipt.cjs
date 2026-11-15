@@ -55,6 +55,23 @@ function chviExampleUxReceiptRows(){
  return rows;
 }
 
+// Owner-authorized one-lesson pilot. Keep the frozen 27-lesson ledger intact;
+// promote only B01 when its separate Q18 enrichment receipt proves both blobs.
+const b01Receipt="prototypes/thpt/ux795/G10_CHI_B01_KNOWLEDGE_ENRICHMENT_DELTA_RECEIPT_R01_20261115.md";
+function b01EnrichmentBlob(ledgerCandidate) {
+ const receiptFile=path.join(root,b01Receipt);
+ if(!fs.existsSync(receiptFile))return null;
+ const text=fs.readFileSync(receiptFile,"utf8");
+ const baseline=text.match(/^\*\*BASELINE_LESSON_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m);
+ const candidate=text.match(/^\*\*CANDIDATE_LESSON_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m);
+ assert(baseline&&candidate,"B01 Q18 source-locked enrichment receipt must contain two Git blobs");
+ assert.equal(baseline[1],ledgerCandidate,"B01 receipt must extend exact historic candidate, not overwrite legacy receipt");
+ assert.notEqual(candidate[1],baseline[1],"B01 new revision must differ from historical source");
+ for(const token of ["ENRICHMENT_DELTA_RECEIPT","Q18_OWNER_SELF_VERIFIED_ENRICHMENT","DELTA_C_ACADEMIC_MATERIAL","S1 section parity:"])
+   assert(text.includes(token),"B01 Q18 delta evidence missing: "+token);
+ return candidate[1];
+}
+
 const chviiReceipt="prototypes/thpt/ux795/G10_CHVII_B19_B22_S1_Q18_GOLDEN_ENRICHMENT_RECEIPT_20261113.md";
 function chviiEditorialReceiptRows(){
  const file=path.join(root,chviiReceipt);
@@ -79,6 +96,10 @@ function expectedG10KnowledgeBlob(lesson,legacy){
  assert.equal(blobs.length,2,name+" must carry baseline AND candidate Git blob");
  assert.notEqual(blobs[0],blobs[1],name+" Knowledge delta must not silently change baseline identity");
 
+ if(name==="B01"){
+   const newCandidate=b01EnrichmentBlob(blobs[1]);
+   if(newCandidate)return newCandidate;
+ }
  const chiv=chivEditorialReceiptRows().get(name);
  const chv=chvEditorialReceiptRows().get(name);
  assert(!(chiv&&chv),name+" duplicate editorial receipts");
