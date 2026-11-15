@@ -866,6 +866,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** Cần chia độ biến thiên 16 m cho thời gian 2 s.
 
+
+**Nếu làm sai:** Đọc đúng hai thời điểm và tính Δs, Δt riêng trước khi chia; đáp số phải có đơn vị.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B31-C01; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O01; NOT_NEW_ID -->
@@ -877,6 +880,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $(9-1)/(3-1)=4$.
 
 **Giải thích bản chất và cách chọn phương pháp:** Giá trị này đo trung bình trên cả đoạn, chưa phải đạo hàm tại 1.
+
+
+**Nếu làm sai:** Đọc đúng hai thời điểm và tính Δs, Δt riêng trước khi chia; đáp số phải có đơn vị.
 
 </details>
 
@@ -890,6 +896,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Lời giải có suy luận:** s(1)=1,s(3)=9; Δs/Δt=(9−1)/(3−1)=4 m/s. Đây là giá trị trung bình của cả hai giây, chưa phải v(1).
 
+
+**Nếu làm sai:** Nếu trả 8 m/s, nhớ chia Δs cho Δt=2 s.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B31-P02; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O02; NOT_NEW_ID -->
@@ -901,6 +910,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $[2(1+h)^2-2]/h=4+2h$.
 
 **Giải thích bản chất và cách chọn phương pháp:** Khai triển tử 4h+2h² và chia h khi h≠0.
+
+
+**Nếu làm sai:** Giữ h≠0 trong thương cát tuyến rồi mới lấy giới hạn h→0.
 
 </details>
 
@@ -914,6 +926,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** Đạo hàm là giới hạn *thương* của hai độ thay đổi.
 
+
+**Nếu làm sai:** Giữ h≠0 trong thương cát tuyến rồi mới lấy giới hạn h→0.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P02; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O02; NOT_NEW_ID -->
@@ -925,6 +940,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án:** m_cát=4+h; m_tiếp=4.
 
 **Lời giải có suy luận:** [(2+h)²−2²]/h=(4h+h²)/h=4+h (h≠0). Khi h→0 hai phía, m→4. Phải rút gọn trước khi lấy giới hạn, không cho h=0 vào cát tuyến ban đầu.
+
+
+**Nếu làm sai:** Nếu gặp 0/0, khai triển f(a+h)−f(a) và khử h với h≠0.
 
 </details>
 
@@ -942,6 +960,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 3. Xác định P(2,3), viết phương trình tiếp tuyến — **1 điểm**.
 4. Giải thích đạo hàm là độ dốc cát tuyến giới hạn — **1 điểm**.
 
+
+**Nếu làm sai:** Khai triển f(a+h) và khử h với h≠0; kiểm giới hạn từ cả hai phía.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B31-P03; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O03; NOT_NEW_ID -->
@@ -953,6 +974,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $5$.
 
 **Giải thích bản chất và cách chọn phương pháp:** $f(3+h)-f(3)=5h+h²$, chia h rồi h→0.
+
+
+**Nếu làm sai:** Khai triển f(a+h) và khử h với h≠0; kiểm giới hạn từ cả hai phía.
 
 </details>
 
@@ -966,6 +990,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** Thương tại 0 là $3h+2\to2$.
 
+
+**Nếu làm sai:** Khai triển f(a+h) và khử h với h≠0; kiểm giới hạn từ cả hai phía.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P03; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O03; NOT_NEW_ID -->
@@ -977,6 +1004,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án:** 3.
 
 **Lời giải có suy luận:** f(−1)=−1; f(−1+h)=−1+3h−3h²+h³. Thương sai phân [f(−1+h)−f(−1)]/h=3−3h+h² với h≠0, giới hạn h→0 bằng 3. Đạo hàm tại −1 là 3.
+
+
+**Nếu làm sai:** Khai triển (−1+h)³ đúng dấu h và kiểm giới hạn hai phía.
 
 </details>
 
@@ -990,6 +1020,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** Đây là điểm biên miền; thương phải khi h>0 là 1/√h→+∞.
 
+
+**Nếu làm sai:** Phân biệt miền xác định của hàm với miền đạo hàm hữu hạn tại các điểm trong miền.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B31-C04; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O04; NOT_NEW_ID -->
@@ -1001,6 +1034,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** Không, vì f không xác định tại x=0.
 
 **Giải thích bản chất và cách chọn phương pháp:** Đạo hàm không thể tồn tại tại điểm ngoài miền xác định.
+
+
+**Nếu làm sai:** Phân biệt miền xác định của hàm với miền đạo hàm hữu hạn tại các điểm trong miền.
 
 </details>
 
@@ -1014,6 +1050,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Lời giải có suy luận:** f(0)=0, lim trái của x và phải của x² đều 0 nên liên tục. Thương [f(h)−f(0)]/h bằng 1 nếu h<0, bằng h nếu h>0; các đạo hàm một phía lần lượt 1 và 0, khác nhau ⇒ f'(0) không tồn tại.
 
+
+**Nếu làm sai:** Liên tục chỉ kiểm f(h)→f(0), còn khả vi phải kiểm thương sai phân.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B31-P05; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O05; NOT_NEW_ID -->
@@ -1025,6 +1064,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** Không.
 
 **Giải thích bản chất và cách chọn phương pháp:** Thương trái là -1 và thương phải là +1 tại a=1.
+
+
+**Nếu làm sai:** Kiểm liên tục bằng giới hạn của f; kiểm khả vi bằng hai thương sai phân, không suy ngược.
 
 </details>
 
@@ -1038,6 +1080,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** Nếu thương sai phân có giới hạn hữu hạn thì $f(a+h)-f(a)=h\cdot$ thương →0.
 
+
+**Nếu làm sai:** Kiểm liên tục bằng giới hạn của f; kiểm khả vi bằng hai thương sai phân, không suy ngược.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P05; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O05; NOT_NEW_ID -->
@@ -1049,6 +1094,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án:** Liên tục nhưng không khả vi tại 0.
 
 **Lời giải có suy luận:** |x|→0=|0| khi x→0, nên liên tục. Thương [|h|−0]/h =−1 khi h<0 và +1 khi h>0, không có giới hạn hai phía. Đây là phản ví dụ cho 'liên tục ⇒ có đạo hàm'.
+
+
+**Nếu làm sai:** Đừng lấy đồ thị không đứt làm bằng chứng tiếp tuyến có một độ dốc duy nhất.
 
 </details>
 
@@ -1066,6 +1114,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 3. Tìm hai giới hạn một bên -1 và +1 — **1 điểm**.
 4. Kết luận không đạo hàm dù liên tục — **1 điểm**.
 
+
+**Nếu làm sai:** Xét h<0 và h>0 riêng, đặc biệt khi có dấu giá trị tuyệt đối.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B31-P06; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O06; NOT_NEW_ID -->
@@ -1077,6 +1128,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** Trái -1, phải +1; không có đạo hàm.
 
 **Giải thích bản chất và cách chọn phương pháp:** Dịch góc nhọn |x| sang trái 3 đơn vị, không làm trơn nó.
+
+
+**Nếu làm sai:** Xét h<0 và h>0 riêng, đặc biệt khi có dấu giá trị tuyệt đối.
 
 </details>
 
@@ -1090,6 +1144,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** Đạo hàm hai phía phải cho cùng giới hạn hữu hạn.
 
+
+**Nếu làm sai:** Xét h<0 và h>0 riêng, đặc biệt khi có dấu giá trị tuyệt đối.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P06; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O06; NOT_NEW_ID -->
@@ -1101,6 +1158,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án:** Trái −1, phải +1; không có đạo hàm tại 2.
 
 **Lời giải có suy luận:** f(2)=0. Với h<0: |h|/h=−1; với h>0: |h|/h=+1. Hai giới hạn hữu hạn nhưng khác nhau, nên không tồn tại f'(2).
+
+
+**Nếu làm sai:** Luôn tính từ cả hai phía tại điểm gãy; một phía không đủ.
 
 </details>
 
@@ -1123,6 +1183,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 6. Điều kiện c=0 và kết luận khả vi (1đ)
 7. Tiếp tuyến y=0 khi c=0 (1đ)
 
+
+**Nếu làm sai:** Không dùng chỉ tính liên tục để suy khả vi; bắt buộc xét cả hai thương sai phân.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B31-P07; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O07; NOT_NEW_ID -->
@@ -1134,6 +1197,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $3$.
 
 **Giải thích bản chất và cách chọn phương pháp:** $f'(x)=3x^2$, nên f'(-1)=3, dù f(-1)=-1.
+
+
+**Nếu làm sai:** Viết P(a,f(a)) và f′(a) trên hai dòng; không coi f(a) là độ dốc.
 
 </details>
 
@@ -1147,6 +1213,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** Hệ số góc = đạo hàm, không phải tung độ 7.
 
+
+**Nếu làm sai:** Viết P(a,f(a)) và f′(a) trên hai dòng; không coi f(a) là độ dốc.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P07; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O07; NOT_NEW_ID -->
@@ -1158,6 +1227,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án:** f(2)=0 và f'(2)=2.
 
 **Lời giải có suy luận:** f(2)=4−4=0; f'(x)=2x−2 ⇒ f'(2)=2. Tung độ là 0, độ dốc là 2; không được hoán đổi hai đại lượng.
+
+
+**Nếu làm sai:** Vẽ P(2,0) rồi viết riêng hai dòng f(2) và f'(2).
 
 </details>
 
@@ -1171,6 +1243,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** Điểm (-2,5), đạo hàm -4, rồi viết dạng điểm–hệ số góc.
 
+
+**Nếu làm sai:** Thay đúng cả điểm P và hệ số góc m trong y−f(a)=m(x−a).
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B31-C08; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O08; NOT_NEW_ID -->
@@ -1183,6 +1258,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** Tiếp tuyến đi qua (1,4), có hệ số góc 2.
 
+
+**Nếu làm sai:** Thay đúng cả điểm P và hệ số góc m trong y−f(a)=m(x−a).
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P08; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O08; NOT_NEW_ID -->
@@ -1194,6 +1272,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án:** y=3x−2.
 
 **Lời giải có suy luận:** Điểm tiếp xúc P(1,1), đạo hàm f'=3x² ⇒ hệ số góc 3. Tiếp tuyến y−1=3(x−1) ⇒ y=3x−2. Thay x=1 cho y=1 để kiểm.
+
+
+**Nếu làm sai:** Thiếu (x−a) sẽ khiến đường thẳng không qua điểm P.
 
 </details>
 
@@ -1211,6 +1292,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 3. Tính chính xác v(3)=-1, phân biệt dấu/tốc độ — **1 điểm**.
 4. Viết đúng đơn vị và miền thời gian — **1 điểm**.
 
+
+**Nếu làm sai:** Lấy đạo hàm tọa độ trước, rồi mới lấy giá trị tuyệt đối của vận tốc để ra tốc độ.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B31-P09; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O09; NOT_NEW_ID -->
@@ -1222,6 +1306,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $|12-4\cdot4|=4$ m/s.
 
 **Giải thích bản chất và cách chọn phương pháp:** Vận tốc là -4 m/s, còn tốc độ là trị tuyệt đối.
+
+
+**Nếu làm sai:** Lấy đạo hàm tọa độ trước, rồi mới lấy giá trị tuyệt đối của vận tốc để ra tốc độ.
 
 </details>
 
@@ -1235,6 +1322,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** $v=s'=10t$, thay 2 được 20 (không phải quãng đường 20 m).
 
+
+**Nếu làm sai:** Lấy đạo hàm tọa độ trước, rồi mới lấy giá trị tuyệt đối của vận tốc để ra tốc độ.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P09; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O09; NOT_NEW_ID -->
@@ -1246,6 +1336,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án:** v(2)=−3 m/s; tốc độ=3 m/s.
 
 **Lời giải có suy luận:** v(t)=s'(t)=3t²−12t+9; v(2)=12−24+9=−3. Âm báo chuyển động ngược chiều tọa độ dương, còn tốc độ là |v|=3, không mang dấu.
+
+
+**Nếu làm sai:** Không gọi vận tốc âm là 'tốc độ âm'; dùng trị tuyệt đối khi hỏi tốc độ.
 
 </details>
 
@@ -1268,6 +1361,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 6. Lập đúng tiếp tuyến qua (2,2) (1đ)
 7. Giải thích ý nghĩa và đơn vị vận tốc (1đ)
 
+
+**Nếu làm sai:** Nếu trộn y=s(t) với t hoặc lẫn quãng đường với tọa độ, đặt trục t và ký hiệu độ dốc (m/s).
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B31-P10; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O10; NOT_NEW_ID -->
@@ -1279,6 +1375,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $C'(q)=7+0,2q$, $C'(10)=9$ nghìn đồng/sản phẩm.
 
 **Giải thích bản chất và cách chọn phương pháp:** Chi phí cận biên gần đúng, không phải tổng chi phí 180.
+
+
+**Nếu làm sai:** Viết đơn vị của đầu ra và đầu vào, sau đó chia đơn vị thay vì nhầm f(t) với f′(t).
 
 </details>
 
@@ -1292,6 +1391,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** Đạo hàm bằng độ biến đổi thể tích chia độ biến đổi thời gian.
 
+
+**Nếu làm sai:** Viết đơn vị của đầu ra và đầu vào, sau đó chia đơn vị thay vì nhầm f(t) với f′(t).
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P10; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O10; NOT_NEW_ID -->
@@ -1303,6 +1405,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án:** T'(2)=1 °C/phút, nhiệt độ đang tăng tức thời.
 
 **Lời giải có suy luận:** T'(t)=3−t; tại t=2 tốc độ thay đổi +1 °C trên mỗi phút. Đó không phải nhiệt độ T(2)=24 °C. Đơn vị đạo hàm là đơn vị giá trị chia đơn vị biến.
+
+
+**Nếu làm sai:** Nếu kết luận 24 °C/phút, bạn đã nhầm T(2) với T'(2).
 
 </details>
 
@@ -1318,6 +1423,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** $f'=10x^4-15x^2$, thay 1.
 
+
+**Nếu làm sai:** Phân biệt xⁿ với aˣ; mỗi hạng hằng có đạo hàm bằng 0.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B32-C01; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O11; NOT_NEW_ID -->
@@ -1329,6 +1437,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $6x^5$.
 
 **Giải thích bản chất và cách chọn phương pháp:** Đếm số mũ nguyên dương 6 và giảm số mũ 1.
+
+
+**Nếu làm sai:** Phân biệt xⁿ với aˣ; mỗi hạng hằng có đạo hàm bằng 0.
 
 </details>
 
@@ -1342,6 +1453,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Lời giải có suy luận:** Dùng (x^n)'=n x^{n−1}, hệ số nhân giữ nguyên, hằng 7 có đạo hàm 0. 2·5x⁴−3·2x=10x⁴−6x.
 
+
+**Nếu làm sai:** Nhớ nhân n chứ không chỉ hạ số mũ.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B32-P02; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O12; NOT_NEW_ID -->
@@ -1353,6 +1467,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $5/(2\sqrt4)=5/4$.
 
 **Giải thích bản chất và cách chọn phương pháp:** Miền công thức x>0; kiểm x=4 hợp lệ.
+
+
+**Nếu làm sai:** Viết điều kiện biểu thức dưới căn không âm, sau đó chỉ dùng công thức tại nội điểm phù hợp.
 
 </details>
 
@@ -1366,6 +1483,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** Dùng liên hợp của $\sqrt{x+h}-\sqrt{x}$; mẫu không triệt tại x>0.
 
+
+**Nếu làm sai:** Viết điều kiện biểu thức dưới căn không âm, sau đó chỉ dùng công thức tại nội điểm phù hợp.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P12; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O12; NOT_NEW_ID -->
@@ -1377,6 +1497,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án:** D=[−1,+∞), f'(x)=1/[2√(x+1)] khi x>−1; không có đạo hàm hai phía tại −1.
 
 **Lời giải có suy luận:** Điều kiện căn x+1≥0. Trên x>−1, chain rule cho 1/(2√(x+1)). Tại đầu mút x=−1, thương phải √h/h=1/√h→+∞; bên trái không thuộc miền, không có đạo hàm hữu hạn hai phía.
+
+
+**Nếu làm sai:** Không lầm 'hàm xác định tại −1' với 'có đạo hàm tại −1'.
 
 </details>
 
@@ -1390,6 +1513,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** Dùng tuyến tính và đạo hàm hằng 0.
 
+
+**Nếu làm sai:** Tách tổng, tích với hằng và đạo hàm từng thành phần; bỏ hạng hằng.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B32-C03; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O13; NOT_NEW_ID -->
@@ -1402,6 +1528,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** Hằng số 6 biến mất, đạo hàm từng số hạng.
 
+
+**Nếu làm sai:** Tách tổng, tích với hằng và đạo hàm từng thành phần; bỏ hạng hằng.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P13; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O13; NOT_NEW_ID -->
@@ -1413,6 +1542,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án:** y'=−4+14x.
 
 **Lời giải có suy luận:** (5)'=0, (−4x)'=−4, (7x²)'=14x. Tính tuyến tính cho tổng và hiệu giúp chia bài thành ba hạng.
+
+
+**Nếu làm sai:** Không để lại số 5 trong kết quả đạo hàm.
 
 </details>
 
@@ -1430,6 +1562,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 3. Tính F' gồm đủ hai hạng — **1 điểm**.
 4. Giải thích vì sao tích hai đạo hàm là sai — **1 điểm**.
 
+
+**Nếu làm sai:** Đổi u, v và viết hai hạng u′v+uv′; đối chiếu bằng khai triển nếu được.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B32-P04; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O14; NOT_NEW_ID -->
@@ -1441,6 +1576,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $f'=x^2+4+2x^2=3x^2+4$.
 
 **Giải thích bản chất và cách chọn phương pháp:** Một nhân tử là x, nhân tử kia x²+4; lấy đạo hàm tích.
+
+
+**Nếu làm sai:** Đổi u, v và viết hai hạng u′v+uv′; đối chiếu bằng khai triển nếu được.
 
 </details>
 
@@ -1454,6 +1592,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** Khi cả hai nhân tử biến đổi, có hai độ biến thiên chính.
 
+
+**Nếu làm sai:** Đổi u, v và viết hai hạng u′v+uv′; đối chiếu bằng khai triển nếu được.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P14; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O14; NOT_NEW_ID -->
@@ -1465,6 +1606,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án:** y'=2x sin x+x² cos x.
 
 **Lời giải có suy luận:** u=x², v=sin x; u'=2x, v'=cos x (radian). (uv)'=u'v+uv'=2x sin x+x² cos x. Tích hai đạo hàm 2x cos x bỏ sót hai biến thiên tương ứng.
+
+
+**Nếu làm sai:** Viết đủ hai hạng u'v và uv' trước khi rút gọn.
 
 </details>
 
@@ -1482,6 +1626,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 3. Rút gọn tử -3x²-2x+3 — **1 điểm**.
 4. Tính y'(0)=3 và diễn giải quy tắc — **1 điểm**.
 
+
+**Nếu làm sai:** Loại điểm mẫu bằng 0 ngay từ đầu và giữ dấu trừ của u v′ trong tử.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B32-P05; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O15; NOT_NEW_ID -->
@@ -1493,6 +1640,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $1/(x+1)^2$ với x≠-1.
 
 **Giải thích bản chất và cách chọn phương pháp:** Tử (x+1)-x=1, mẫu không bằng 0.
+
+
+**Nếu làm sai:** Loại điểm mẫu bằng 0 ngay từ đầu và giữ dấu trừ của u v′ trong tử.
 
 </details>
 
@@ -1506,6 +1656,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** Thứ tự phép trừ quan trọng; mẫu là v².
 
+
+**Nếu làm sai:** Loại điểm mẫu bằng 0 ngay từ đầu và giữ dấu trừ của u v′ trong tử.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P15; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O15; NOT_NEW_ID -->
@@ -1517,6 +1670,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án:** D=ℝ\{1}, f'=(x²−2x−1)/(x−1)², f'(0)=−1.
 
 **Lời giải có suy luận:** u=x²+1,u'=2x; v=x−1,v'=1. (u/v)'=[2x(x−1)−(x²+1)]/(x−1)²=(x²−2x−1)/(x−1)², x≠1. Thế x=0 được −1.
+
+
+**Nếu làm sai:** Mẫu v² và dấu trừ uv' đều bắt buộc; không tính tại x=1.
 
 </details>
 
@@ -1539,6 +1695,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 6. Tính f'(0)=−1 và tiếp tuyến (1đ)
 7. Khẳng định điều kiện x≠1 (1đ)
 
+
+**Nếu làm sai:** Chỉ áp (u/v)' khi v khác0; dùng P15 để sửa dấu âm quy tắc thương.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B32-P06; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O16; NOT_NEW_ID -->
@@ -1550,6 +1709,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $x/\sqrt{x^2+1}$ với mọi x thực.
 
 **Giải thích bản chất và cách chọn phương pháp:** Dây chuyền: 1/[2√(x²+1)] nhân 2x.
+
+
+**Nếu làm sai:** Nhận diện lớp trong g(x), lấy g′ rồi nhân với đạo hàm của lớp ngoài.
 
 </details>
 
@@ -1563,6 +1725,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** 3u² nhân u'=2.
 
+
+**Nếu làm sai:** Nhận diện lớp trong g(x), lấy g′ rồi nhân với đạo hàm của lớp ngoài.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P16; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O16; NOT_NEW_ID -->
@@ -1574,6 +1739,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án:** y'=12(3x−1)^3.
 
 **Lời giải có suy luận:** Đặt u=3x−1, đạo hàm ngoài 4u³, đạo hàm trong u'=3; dây chuyền cho y'=4u³·3=12(3x−1)^3.
+
+
+**Nếu làm sai:** Nếu ra 4(3x−1)^3 thì thiếu nhân đạo hàm trong 3.
 
 </details>
 
@@ -1589,6 +1757,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** Trừ 3 cos x, lấy đạo hàm sẽ cộng 3 sin x.
 
+
+**Nếu làm sai:** Kiểm đơn vị góc radian và dấu trừ trong đạo hàm của cos.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B32-C07; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O17; NOT_NEW_ID -->
@@ -1600,6 +1771,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $\cos x$ và $-\sin x$.
 
 **Giải thích bản chất và cách chọn phương pháp:** Dấu âm chỉ xuất hiện ở đạo hàm cos.
+
+
+**Nếu làm sai:** Kiểm đơn vị góc radian và dấu trừ trong đạo hàm của cos.
 
 </details>
 
@@ -1613,6 +1787,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Lời giải có suy luận:** Dùng (sin x)'=cos x, (cos x)'=−sin x. Đạo hàm của −3cos x là +3sin x. Quy tắc với góc radian; nếu x là độ cần đổi về radian.
 
+
+**Nếu làm sai:** Nếu giữ −3sin x, kiểm đạo hàm cos có dấu âm.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B32-P08; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O18; NOT_NEW_ID -->
@@ -1624,6 +1801,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $-4/\sin^2x$ với sin x≠0.
 
 **Giải thích bản chất và cách chọn phương pháp:** Đạo hàm cot âm, rồi nhân 4.
+
+
+**Nếu làm sai:** Ghi miền sin x≠0 và cos x≠0 trước khi chia; kiểm dấu của đạo hàm cot.
 
 </details>
 
@@ -1637,6 +1817,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** Tan không có nghĩa khi cos x=0.
 
+
+**Nếu làm sai:** Ghi miền sin x≠0 và cos x≠0 trước khi chia; kiểm dấu của đạo hàm cot.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P18; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O18; NOT_NEW_ID -->
@@ -1648,6 +1831,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án:** f'=1/cos²x−1/sin²x; D={x: sin x≠0 và cos x≠0}.
 
 **Lời giải có suy luận:** Với tan x cần cos x≠0, với cot x cần sin x≠0. Derivative tan=sec², cot=−csc² trong radian. Không kết luận biểu thức có nghĩa tại các bội π/2.
+
+
+**Nếu làm sai:** Cẩn thận dấu trừ của cot và điều kiện cả hai mẫu.
 
 </details>
 
@@ -1661,6 +1847,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** Tan hợp cần cả chain 2x và miền có nghĩa.
 
+
+**Nếu làm sai:** Đặt u(x) là góc, rồi nhân u′ sau khi lấy đạo hàm lượng giác bên ngoài.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B32-C09; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O19; NOT_NEW_ID -->
@@ -1672,6 +1861,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $-5\sin(5x)$.
 
 **Giải thích bản chất và cách chọn phương pháp:** Đạo hàm cos bên ngoài rồi nhân đạo hàm 5x.
+
+
+**Nếu làm sai:** Đặt u(x) là góc, rồi nhân u′ sau khi lấy đạo hàm lượng giác bên ngoài.
 
 </details>
 
@@ -1685,6 +1877,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Lời giải có suy luận:** Hàm ngoài sin u có đạo hàm cos u; u=2x² có u'=4x. Theo dây chuyền y'=cos(2x²)·4x.
 
+
+**Nếu làm sai:** Không để đạo hàm trong bằng 2x hoặc thiếu hệ số 4.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B32-P10; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O20; NOT_NEW_ID -->
@@ -1696,6 +1891,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $5^x\ln5$.
 
 **Giải thích bản chất và cách chọn phương pháp:** Cơ số 5>0, khác 1, nên nhân ln5.
+
+
+**Nếu làm sai:** Xem biến có ở cơ số hay số mũ; aˣ cho aˣln a với a>0.
 
 </details>
 
@@ -1709,6 +1907,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** Hàm mũ cơ số e có tốc độ biến đổi đúng bằng giá trị của nó.
 
+
+**Nếu làm sai:** Xem biến có ở cơ số hay số mũ; aˣ cho aˣln a với a>0.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P20; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O20; NOT_NEW_ID -->
@@ -1720,6 +1921,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án:** y'=2^x ln2+e^x.
 
 **Lời giải có suy luận:** Với a^x, a>0,a≠1, (a^x)'=a^x ln a. Với e^x, ln e=1. Vì 2>0,2≠1, công thức áp dụng toàn ℝ.
+
+
+**Nếu làm sai:** Không nhầm (2^x)' thành x·2^{x−1}, đó là đạo hàm của x^n chứ không phải a^x.
 
 </details>
 
@@ -1733,6 +1937,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** Đổi cơ số log₄x=ln x/ln4.
 
+
+**Nếu làm sai:** Kiểm x>0 và điều kiện cơ số a>0, a≠1 trước công thức 1/(x ln a).
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B32-C11; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O21; NOT_NEW_ID -->
@@ -1744,6 +1951,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $1/x$ trên x>0.
 
 **Giải thích bản chất và cách chọn phương pháp:** Chỉ x>0 cho đối số log dương, không lấy ln âm.
+
+
+**Nếu làm sai:** Kiểm x>0 và điều kiện cơ số a>0, a≠1 trước công thức 1/(x ln a).
 
 </details>
 
@@ -1757,6 +1967,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Lời giải có suy luận:** Cả ln và log₃ chỉ xác định khi x>0. Đạo hàm ln x=1/x; đạo hàm log_a x=1/(x ln a) với a>0,a≠1. Với a=3, kết quả như trên.
 
+
+**Nếu làm sai:** Không cho x=0 vì công thức đạo hàm có mẫu x; miền log còn nghiêm ngặt x>0.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B32-P12; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O22; NOT_NEW_ID -->
@@ -1768,6 +1981,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $2x/(x^2+4)$ trên mọi x.
 
 **Giải thích bản chất và cách chọn phương pháp:** Đối số luôn ≥4>0, chain nhân 2x.
+
+
+**Nếu làm sai:** Kiểm đối số log dương, sau đó áp dụng dây chuyền cho từng hàm hợp.
 
 </details>
 
@@ -1781,6 +1997,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** Đạo hàm hàm trong 3x-2 là 3.
 
+
+**Nếu làm sai:** Kiểm đối số log dương, sau đó áp dụng dây chuyền cho từng hàm hợp.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P22; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O22; NOT_NEW_ID -->
@@ -1792,6 +2011,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án:** D=(−1/2,∞), y'=2/(2x+1)+2x·3^{x²}ln3.
 
 **Lời giải có suy luận:** Điều kiện ln(2x+1) là 2x+1>0. Chain log: [ln u]'=u'/u=2/(2x+1). Chain mũ: [3^{x²}]'=3^{x²}ln3·(2x). Cộng hai hạng; cơ số 3 hợp lệ.
+
+
+**Nếu làm sai:** Nếu thiếu 2x ở mũ hoặc 2 ở log, ghi u ngoài/u trong riêng từng thành phần.
 
 </details>
 
@@ -1814,6 +2036,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 6. Tính ba số 1,2,6 (1đ)
 7. Giải thích ba ý nghĩa không hoán đổi (1đ)
 
+
+**Nếu làm sai:** Khi đạo hàm 2x/(1+x²), dùng thương; f'' là đạo hàm f', không phải bình phương.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B32-W02; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O23; NOT_NEW_ID -->
@@ -1830,6 +2055,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 3. Tính đạo hàm tại 0 — **1 điểm**.
 4. Chỉ rõ tại x=4 hàm không xác định — **1 điểm**.
 
+
+**Nếu làm sai:** Giải giao điều kiện căn/mẫu/log; đạo hàm có thể không tồn tại tại đầu mút miền.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B32-P13; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O23; NOT_NEW_ID -->
@@ -1841,6 +2069,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $-x/\sqrt{9-x^2}$ với -3<x<3.
 
 **Giải thích bản chất và cách chọn phương pháp:** Căn có nghĩa trên [-3,3] nhưng đạo hàm công thức chỉ trong khoảng mở.
+
+
+**Nếu làm sai:** Giải giao điều kiện căn/mẫu/log; đạo hàm có thể không tồn tại tại đầu mút miền.
 
 </details>
 
@@ -1854,6 +2085,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** Có công thức $f'=(1/(x-2))$ trên x>2, không tại x≤2.
 
+
+**Nếu làm sai:** Giải giao điều kiện căn/mẫu/log; đạo hàm có thể không tồn tại tại đầu mút miền.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P23; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O23; NOT_NEW_ID -->
@@ -1865,6 +2099,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án:** D=[2,∞), có công thức đạo hàm theo quy tắc trên (2,∞); không có đạo hàm hữu hạn hai phía tại x=2.
 
 **Lời giải có suy luận:** √(x−2) đòi x≥2; ln x xác định và khác 0 trên x≥2 (vì ln2>0). Với x>2, y'=[(ln x)/(2√(x−2))−√(x−2)/x]/(ln x)². Tại x=2 hàm định nghĩa bằng0, nhưng thương phải y(2+h)/h≈1/(√h ln2)→+∞, không có đạo hàm hữu hạn.
+
+
+**Nếu làm sai:** Kiểm miền gốc trước khi dùng bảng đạo hàm; căn xác định ở đầu mút chưa chắc khả vi.
 
 </details>
 
@@ -1878,6 +2115,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** Nếu đạo hàm: $[2(x+1)(x-1)-(x+1)^2]/(x-1)^2$.
 
+
+**Nếu làm sai:** Nhận diện phép toán ngoài cùng trước, rồi xử lý dây chuyền bên trong.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B32-C14; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O24; NOT_NEW_ID -->
@@ -1890,6 +2130,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** Tích hai hàm đều phụ thuộc x không lấy đạo hàm từng hàm rồi nhân.
 
+
+**Nếu làm sai:** Nhận diện phép toán ngoài cùng trước, rồi xử lý dây chuyền bên trong.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P24; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O24; NOT_NEW_ID -->
@@ -1901,6 +2144,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án:** y'=e^{3x}(2x+3x²).
 
 **Lời giải có suy luận:** Nhận diện tích u=x² và v=e^{3x}. Đạo hàm u'=2x; v'=3e^{3x} theo dây chuyền. Tích: y'=2x e^{3x}+x²·3e^{3x}=e^{3x}(2x+3x²).
+
+
+**Nếu làm sai:** Không lấy (x²)'·(e^{3x})' vì đó không phải quy tắc tích.
 
 </details>
 
@@ -1916,6 +2162,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** Chain: hệ số 3 của góc trong và 2 ở ngoài.
 
+
+**Nếu làm sai:** Tính v=s′ và dấu v; chỉ sau đó dùng |v| cho tốc độ.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B32-C15; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O25; NOT_NEW_ID -->
@@ -1927,6 +2176,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $h'(1)=18-6=12$ m/s.
 
 **Giải thích bản chất và cách chọn phương pháp:** Vận tốc mang đơn vị m/s; không phải độ cao 15 m.
+
+
+**Nếu làm sai:** Tính v=s′ và dấu v; chỉ sau đó dùng |v| cho tốc độ.
 
 </details>
 
@@ -1940,6 +2192,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Lời giải có suy luận:** v(t)=s'(t)=3t²−6t+2; v(1)=3−6+2=−1 m/s. Vận tốc âm biểu thị chuyển động ngược chiều dương, còn tốc độ |v(1)|=1.
 
+
+**Nếu làm sai:** Nếu đáp án tốc độ −1, lấy trị tuyệt đối vận tốc; không thay s(1) thay v(1).
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B33-P01; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O26; NOT_NEW_ID -->
@@ -1951,6 +2206,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $f'=3x^2$, $f''=6x$.
 
 **Giải thích bản chất và cách chọn phương pháp:** Lần lượt lấy đạo hàm 2 lần.
+
+
+**Nếu làm sai:** Đạo hàm cấp hai là lấy đạo hàm của f′, không phải (f′)².
 
 </details>
 
@@ -1964,6 +2222,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** Không phải bình phương $(f')^2$.
 
+
+**Nếu làm sai:** Đạo hàm cấp hai là lấy đạo hàm của f′, không phải (f′)².
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P26; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O26; NOT_NEW_ID -->
@@ -1975,6 +2236,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án:** f'=3x², f''=6x, f''(2)=12; không phải (3x²)².
 
 **Lời giải có suy luận:** Lấy đạo hàm f một lần được 3x², lấy đạo hàm của hàm mới thêm lần nữa được 6x. Ký hiệu f''=(f')' yêu cầu f' khả vi; không bình phương f'.
+
+
+**Nếu làm sai:** Nếu tính f''=9x⁴, bạn đã bình phương f' thay vì đạo hàm lần hai.
 
 </details>
 
@@ -1988,6 +2252,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** Không thay x=0 vào f' trước khi lấy đạo hàm lần hai.
 
+
+**Nếu làm sai:** Viết rõ f′ rồi mới f″ để không bỏ hệ số và dấu.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B33-C02; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O27; NOT_NEW_ID -->
@@ -2000,6 +2267,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** Đạo hàm cấp hai có thể là một hàm mới của x.
 
+
+**Nếu làm sai:** Viết rõ f′ rồi mới f″ để không bỏ hệ số và dấu.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P27; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O27; NOT_NEW_ID -->
@@ -2011,6 +2281,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án:** f'=8x³−3x²; f''=24x²−6x.
 
 **Lời giải có suy luận:** Từng hạng: f'=8x³−3x²; đạo hàm lại cho 24x²−6x. Hằng 5 mất ở lần đầu, không xuất hiện lại.
+
+
+**Nếu làm sai:** Kiểm bậc đa thức giảm mỗi lần với hạng có hệ số khác0.
 
 </details>
 
@@ -2028,6 +2301,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 3. Tính f''(0)=1 — **1 điểm**.
 4. Giải thích các hệ số chain và dấu âm — **1 điểm**.
 
+
+**Nếu làm sai:** Ở cả hai lượt đạo hàm hàm hợp đều nhân đạo hàm của biểu thức bên trong.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B33-P03; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O28; NOT_NEW_ID -->
@@ -2039,6 +2315,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $e^{-x}$.
 
 **Giải thích bản chất và cách chọn phương pháp:** Lần một -e^{-x}, lần hai +e^{-x}.
+
+
+**Nếu làm sai:** Ở cả hai lượt đạo hàm hàm hợp đều nhân đạo hàm của biểu thức bên trong.
 
 </details>
 
@@ -2052,6 +2331,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** cos→-sin→-cos, hệ số 2 xuất hiện mỗi lần.
 
+
+**Nếu làm sai:** Ở cả hai lượt đạo hàm hàm hợp đều nhân đạo hàm của biểu thức bên trong.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P28; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O28; NOT_NEW_ID -->
@@ -2063,6 +2345,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án:** f''=4e^{2x}−9sin(3x).
 
 **Lời giải có suy luận:** Lần đầu f'=2e^{2x}+3cos(3x). Lần hai lấy đạo hàm của 2e^{2x} được 4e^{2x}, của 3cos(3x) được −9sin(3x); dùng dây chuyền ở cả hai lần.
+
+
+**Nếu làm sai:** Nhớ đạo hàm cos là −sin và nhân hệ số bên trong 3 mỗi lần.
 
 </details>
 
@@ -2083,6 +2368,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 ---
 
+
+**Nếu làm sai:** Viết s, v=s′, a=s″ và đơn vị lần lượt m, m/s, m/s².
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B33-P04; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O29; NOT_NEW_ID -->
@@ -2094,6 +2382,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $v=6t^2-2t$, $a=12t-2$, $a(2)=22$ m/s².
 
 **Giải thích bản chất và cách chọn phương pháp:** Tăng tốc tức thời theo dấu a cần xem cả vận tốc.
+
+
+**Nếu làm sai:** Viết s, v=s′, a=s″ và đơn vị lần lượt m, m/s, m/s².
 
 </details>
 
@@ -2107,6 +2398,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** $v=s'=10t$ m/s, gia tốc là đạo hàm của v.
 
+
+**Nếu làm sai:** Viết s, v=s′, a=s″ và đơn vị lần lượt m, m/s, m/s².
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P29; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O29; NOT_NEW_ID -->
@@ -2118,6 +2412,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án:** a(1)=−6 m/s².
 
 **Lời giải có suy luận:** v(t)=3t²−12t+9 (m/s), a(t)=v'(t)=6t−12 (m/s²). Tại t=1, a=6−12=−6. Gia tốc là đạo hàm vận tốc, không phải s(t) hoặc (s')².
+
+
+**Nếu làm sai:** Đơn vị gia tốc là m/s², khác đơn vị vận tốc m/s.
 
 </details>
 
@@ -2135,6 +2432,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 3. Giải v=0 được t=2 — **1 điểm**.
 4. Phân tích vận tốc/gia tốc cùng-trái dấu hai phía t=2 — **1 điểm**.
 
+
+**Nếu làm sai:** So sánh dấu v và a tại thời điểm; cùng dấu làm |v| tăng khi v≠0.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B33-P05; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O30; NOT_NEW_ID -->
@@ -2146,6 +2446,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** Đang giảm tại thời điểm đó.
 
 **Giải thích bản chất và cách chọn phương pháp:** Vận tốc dương và gia tốc âm trái dấu.
+
+
+**Nếu làm sai:** So sánh dấu v và a tại thời điểm; cùng dấu làm |v| tăng khi v≠0.
 
 </details>
 
@@ -2159,6 +2462,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Giải thích bản chất và cách chọn phương pháp:** Hai dấu cùng nhau làm độ lớn vận tốc tăng theo chiều âm.
 
+
+**Nếu làm sai:** So sánh dấu v và a tại thời điểm; cùng dấu làm |v| tăng khi v≠0.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P30; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O30; NOT_NEW_ID -->
@@ -2170,6 +2476,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án:** t=1 tốc độ giảm, t=3 tốc độ tăng (ở lân cận các thời điểm này).
 
 **Lời giải có suy luận:** v=2t−4,a=2. Khi t=1, v=−2,a=+2 ngược dấu, vận tốc tiến tới0 nên tốc độ giảm. Khi t=3, v=+2,a=+2 cùng dấu, tốc độ tăng. Tại t=2, v=0 vật đổi chiều, không suy 'gia tốc dương luôn nhanh dần' cho mọi t.
+
+
+**Nếu làm sai:** Xét dấu tích v·a tại nơi v≠0: cùng dấu nhanh dần, trái dấu chậm dần.
 
 </details>
 
@@ -2192,6 +2501,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 6. Khoảng tăng tốc độ đúng (1đ)
 7. Khoảng giảm tốc độ và lưu ý điểm biên đúng (1đ)
 
+
+**Nếu làm sai:** Tăng tốc là |v| tăng, không đồng nghĩa a>0; v/a cùng dấu mới tăng tốc độ khi v≠0.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-CHIX-P01; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O31; NOT_NEW_ID -->
@@ -2207,6 +2519,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 ---
 
+
+**Nếu làm sai:** Phân biệt f(a), f′(a), f″(a); tiếp tuyến dùng f′(a) chứ không dùng f″(a).
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-CHIX-C01; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O31; NOT_NEW_ID -->
@@ -2218,6 +2533,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án (chỉ sau khi nộp bài luyện tập formative):** $v=s'=3t^2-6t$ m/s; $a=s''=6t-6$ m/s².
 
 **Giải thích bản chất và cách chọn phương pháp:** Thứ tự: vị trí → đạo hàm một → đạo hàm hai.
+
+
+**Nếu làm sai:** Phân biệt f(a), f′(a), f″(a); tiếp tuyến dùng f′(a) chứ không dùng f″(a).
 
 </details>
 
@@ -2231,6 +2549,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 **Lời giải có suy luận:** Quy tắc tích: f'=e^x(2x+x²+1). Lần hai f''=e^x(2x+x²+1)+e^x(2+2x)=e^x(x²+4x+3). Tại0: f=1,f'=1,f''=3. Tiếp tuyến y−1=1(x−0). Không lấy f'' làm độ dốc tiếp tuyến.
 
+
+**Nếu làm sai:** Lập bảng ba cột f(0),f'(0),f''(0), dùng đúng f' cho độ dốc.
+
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P32; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O32; NOT_NEW_ID -->
@@ -2242,6 +2563,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 **Đáp án:** dy=0,4; Δy=0,41; sai lệch=0,01.
 
 **Lời giải có suy luận:** f'(x)=2x nên f'(2)=4. Vi phân tại a=2 ứng với dx=0,1 là dy=4·0,1=0,4. Độ tăng thực là 2,1²−2²=4,41−4=0,41. Với f=x², Δy=2aΔx+(Δx)² nên Δy−dy=(Δx)²=0,01; vì hàm khả vi tại a và Δx nhỏ, dy là xấp xỉ bậc nhất, không phải đẳng thức Δy=dy. Nếu bước thay đổi lớn, phần dư có thể đáng kể.
+
+
+**Nếu làm sai:** Không coi dy=Δy luôn đúng; khai triển f(a+Δx)−f(a) để thấy phần dư bậc hai.
 
 </details>
 
