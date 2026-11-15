@@ -54,12 +54,16 @@ const historicalVersions=["1.0.0","1.1.0","1.2.0","2.0.0","3.0.0","3.0.1"];
 function acceptedStandardVersions(overrideText) {
   const raw=overrideText??fs.readFileSync(path.join(root,"prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md"),"utf8");
   const id=raw.match(/^\*\*STANDARD_ID:\*\*\s*\x60([A-Za-z0-9-]+)\x60/m);
-  const version=raw.match(/^\*\*VERSION:\*\*\s*\x60(\d+\.\d+\.\d+)\x60/m);
+  const version=raw.match(/^\*\*VERSION:\*\*\s*\x60(\d+\.\d+\.\d+)(-CANDIDATE)?\x60/m);
   const status=raw.match(/^\*\*STATUS:\*\*\s*\x60([A-Z0-9_]+)\x60/m);
-  assert(id && id[1]==="SLM-THPT-QUALITY-ONE","Single normative standard identity missing or changed");
+  assert(id&&id[1]==="SLM-THPT-QUALITY-ONE","Single normative standard identity missing or changed");
   assert(version&&status,"Canonical standard version/status missing");
-  const approved=status[1]==="OWNER_APPROVED_EFFECTIVE"; // Owner-approved Golden editor STRUCTURE is NOT an effective normative version; preserve draft hold.
-  return [...new Set([...historicalVersions,...(approved?[version[1]]:[])])];
+  const effective=status[1]==="OWNER_APPROVED_EFFECTIVE"&&!version[2];
+  // Previously effective source versions must remain accepted by immutable READY packets.
+  // The candidate is never an effective new version merely because CI is green.
+  const previous=version[1]==="3.1.1" && raw.includes("**PREVIOUS_EFFECTIVE_STANDARD:** `3.1.0 / OWNER_APPROVED_EFFECTIVE`")
+    ?["3.1.0"]:[];
+  return [...new Set([...historicalVersions,...previous,...(effective?[version[1]]:[])])];
 }
 
 
@@ -77,7 +81,7 @@ function verifyQ18Mode(data,handoff,receipt,sourceBlob,lane) {
   if(self) {
     assert(["TOPIC","SGK_CHAPTER"].includes(lane),"Self-QA mode limited to SGK/Topic academic material");
     const selfVersion=field(data,"STANDARD_VERSION");
-    assert(["3.0.0","3.0.1","3.1.0"].includes(selfVersion) && acceptedStandardVersions().includes(selfVersion),
+    assert(["3.0.0","3.0.1","3.1.0","3.1.1"].includes(selfVersion) && acceptedStandardVersions().includes(selfVersion),
       "Self QA requires owner-effective v3.x, not a prospective standard");
     assert.equal(field(handoff,"Q18_VERIFICATION_MODE"),mode,"Self QA mode mismatch");
     assert.equal(field(handoff,"ACADEMIC_VERDICT"),"SELF_VERIFIED","Never impersonate independent Academic PASS");
@@ -352,7 +356,13 @@ function selfTest() {
     "Approved Golden structure is NOT effective v3.1.0");
   assert(!acceptedStandardVersions(norm("3.1.0","GOVERNANCE_PROPOSAL_OWNER_REVIEW_PENDING")).includes("3.1.0"),
     "Governance draft must not become an accepted source version");
-  assert(acceptedStandardVersions(norm("3.1.0","OWNER_APPROVED_EFFECTIVE")).includes("3.1.0"),
+  const draft=norm("3.1.1-CANDIDATE","GOVERNANCE_DRAFT_OWNER_REVIEW")+"\n**PREVIOUS_EFFECTIVE_STANDARD:** `3.1.0 / OWNER_APPROVED_EFFECTIVE`";
+   assert(acceptedStandardVersions(draft).includes("3.1.0"),"Previously effective v3.1.0 receipt remains valid");
+   assert(!acceptedStandardVersions(draft).includes("3.1.1"),"Draft v3.1.1 must NOT be accepted for READY");
+   assert(acceptedStandardVersions(norm("3.1.1","OWNER_APPROVED_EFFECTIVE")+
+     "\n**PREVIOUS_EFFECTIVE_STANDARD:** `3.1.0 / OWNER_APPROVED_EFFECTIVE`").includes("3.1.1"),
+     "v3.1.1 must be effective only via official approved standard");
+   assert(acceptedStandardVersions(norm("3.1.0","OWNER_APPROVED_EFFECTIVE")).includes("3.1.0"),
     "Only exact owner-effective status can activate v3.1.0");
   assert.throws(()=>acceptedStandardVersions(norm("3.0.1","OWNER_APPROVED_EFFECTIVE").replace("SLM-THPT-QUALITY-ONE","DIFFERENT-STANDARD")));
   assert.equal(verifyLaneScope("LEARNING_PATH: TOPIC\nRELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH"), "TOPIC");
