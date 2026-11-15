@@ -112,6 +112,13 @@ function validate(source, agents, queue) {
    else{
      const rows=[...source.slice(a,b).matchAll(/^\| \*\*Q(\d\d)\b/gm)].map(m=>m[1]);
      if(JSON.stringify(rows)!==JSON.stringify(Array.from({length:18},(_,i)=>String(i+1).padStart(2,"0"))))fail("EXECUTION_Q01_Q18_ROWS_NOT_ORDERED:"+rows);
+      // Same Q01–Q18 evidence, distinct three-page TOPIC (no separate Core).
+      const q05=source.slice(a,b).split("\n").find(x=>x.startsWith("| **Q05 —"))||"";
+      const q14=source.slice(a,b).split("\n").find(x=>x.startsWith("| **Q14 —"))||"";
+      const q17=source.slice(a,b).split("\n").find(x=>x.startsWith("| **Q17 —"))||"";
+      if(!q05.includes("TOPIC_PRACTICE")||!q05.includes("không đòi trang Core"))fail("TOPIC_Q05_MUST_USE_PRACTICE_NOT_CORE");
+      if(!q14.includes("Chuyên đề")||!q14.includes("trước khi vào Luyện tập chính"))fail("TOPIC_Q14_MUST_BE_BEFORE_PRACTICE");
+      if(!q17.includes("Adaptive Knowledge Tabs v2")||!q17.includes("chỉ ba trang"))fail("TOPIC_Q17_MUST_REMAIN_THREE_PAGE_PATH");
    }
    for(const token of ["NOT_TESTED","Q18_CONTENT_CHECK_PENDING","Q18_SUBSTANTIVE_HOLD","HANDOFF_PACKAGING_PENDING",
      "G10 B16","G11 ChVII","G12 B17","B14-P04","không có checklist PRE-HANDOFF thứ hai"])
@@ -181,6 +188,10 @@ function selfTest(){
   if(full.includes("**VERSION:** `3.1.1-CANDIDATE`")){
    const wrong=full.replace("| **Q15 — Canonical & skill đúng nghĩa**","| **Q14 — Canonical & skill đúng nghĩa**");
    assert(validate(wrong,"","").failures.some(e=>e.startsWith("EXECUTION_Q01_Q18_ROWS_NOT_ORDERED")));
+   const noTopic=full.replace("TOPIC_PRACTICE` trong trang **Luyện tập**","TOPIC_CORE` trong trang **Luyện tập**");
+   assert(validate(noTopic,"","").failures.includes("TOPIC_Q05_MUST_USE_PRACTICE_NOT_CORE"));
+   const wrongTopic=full.replace("Adaptive Knowledge Tabs v2 bên trong Kiến thức","4 tab Golden SGK bên trong Kiến thức");
+   assert(validate(wrongTopic,"","").failures.includes("TOPIC_Q17_MUST_REMAIN_THREE_PAGE_PATH"));
    const noB=full.replace("### VIII.3. Kiểm đối chứng chống tái diễn","### VIII.3. [REMOVED]");
    assert(validate(noB,"","").failures.includes("ONE_EXECUTABLE_CHECKLIST_MISSING"));
    const falseOwner=full.replace("**STATUS:** `GOVERNANCE_DRAFT_OWNER_REVIEW`","**STATUS:** `OWNER_APPROVED_EFFECTIVE`");
