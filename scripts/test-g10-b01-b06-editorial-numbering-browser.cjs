@@ -29,8 +29,17 @@ function hash(buffer){
  return crypto.createHash("sha1").update(Buffer.from("blob "+b.length+"\0")).update(b).digest("hex");
 }
 function checkSHA(){
- for(const [p,sha] of Object.entries({...SHA,...STYLES}))
-  assert.equal(hash(fs.readFileSync(path.join(root,p))),sha,"DELTA_A violation, non-UI source/theme changed: "+p);
+ for(const [p,sha] of Object.entries({...SHA,...STYLES})){
+  const data=fs.readFileSync(path.join(root,p));
+  if(p==="docs/thpt-preview/sgk/chuong-i/bai-1.md"){
+   const receipt=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHI_B01_KNOWLEDGE_ENRICHMENT_DELTA_RECEIPT_R01_20261115.md"),"utf8");
+   const expected=receipt.match(/\\*\\*CANDIDATE_LESSON_GIT_BLOB:\\*\\* \`([a-f0-9]{40})\`/);
+   assert(expected&&receipt.includes("**BASELINE_LESSON_GIT_BLOB:** \`"+sha+"\`"),
+    "B01 original source remains locked; enrichment needs real Q18 source receipt");
+   assert.equal(hash(data),expected[1],"B01 enhanced Knowledge source must match receipt blob");
+  }else assert.equal(hash(data),sha,"Untouched SGK sibling source/theme drift: "+p);
+ }
 }
 const names=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
 const ch=n=>n<=2?"i":n<=4?"ii":"iii";
@@ -55,9 +64,14 @@ const widths=[390,820,1440];
      const groups=tabs.locator(":scope > .tabbed-content > .tabbed-block");
      assert.equal(await groups.count(),4,loc+" EXACT four original tab blocks");
      const discovery=groups.nth(0).locator("h3");
-     assert.deepEqual((await discovery.allInnerTexts()).map(x=>x.trim()),[
-      "1.1. Cùng tìm hiểu","1.2. Ví dụ trực quan","1.3. Thuật ngữ, kiến thức và kỹ năng"
-     ],loc+" discovery headings");
+     const discoveryTitles=(await discovery.allInnerTexts()).map(x=>x.trim());
+     const expectedDiscovery=n===1?
+      ["1.1. Vì sao toán học cần mệnh đề?",
+       "1.2. Đọc đúng chiều của một lời khẳng định",
+       "1.3. “Mọi” và “có ít nhất một” khác nhau ra sao?",
+       "1.4. Thuật ngữ và điều em cần nhớ"]:
+      ["1.1. Cùng tìm hiểu","1.2. Ví dụ trực quan","1.3. Thuật ngữ, kiến thức và kỹ năng"];
+     assert.deepEqual(discoveryTitles,expectedDiscovery,loc+" meaningful concept-first discovery headings");
      const knowledge=(await groups.nth(1).locator("h3").allInnerTexts()).map(x=>x.trim());
      assert(knowledge.length>=4&&knowledge.every((v,i)=>v.startsWith("2."+(i+1)+". ")),loc+" original SGK 2.x preserved");
      const exampleTitles=(await groups.nth(2).locator("h3").allInnerTexts()).map(x=>x.trim());
