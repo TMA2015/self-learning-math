@@ -15,6 +15,7 @@ ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/T
 ACADEMIC_SOURCE_BLOB: 2fa6557286aba05dd0eea972d4c4ac68371842d7
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/TOP21_R04_Q18_AUTHOR_SELF_QA_RECEIPT_20261115.md
 REVIEW_RECEIPT_BLOB: 3dec04e92a96d24b4b77ebda144bc1ca80b8f1f8
+REVIEW_RECEIPT: prototypes/thpt/review-packets/TOP21_R04_Q18_AUTHOR_SELF_QA_RECEIPT_20261115.md — AUTHOR_SELF_VERIFIED exact R04, not independent NotebookLM
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/TOP21-CONDITIONAL-BAYES-R04-20261115_HANDOFF_V2.md
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
@@ -33,7 +34,7 @@ AUTHORING_Q18_MODE: OWNER_20261111_XE_AUTHOR_SELF_VERIFIED
 
 - [x] A1_SOURCE_SNAPSHOT — One exact R04 Git blob `2fa6557286aba05dd0eea972d4c4ac68371842d7`, eight numbered Knowledge units, two real SVGs, 8 Vận dụng, 8 Practice and three Written in a three-part Topic.
 - [x] A2_SGK_SBT_SCOPE — Toán 12 KNTT Tập Hai Ch VI B18–B19 matched against owner-verified original SGK/SBT scope evidenced in previously frozen G12 Chapter VI packet; no claim of new direct S1 PDF inspection.
-- [x] A3_AUTHOR_SELF_Q18 — Source-locked Q18 `AUTHOR_SELF_VERIFIED` receipt `3dec04e92a96d24b4b77ebda144bc1ca80b8f1f8`, 45 independent public formula/probability checks, eight-outcome pedagogical read-through, no found P0/P1; not independent NotebookLM PASS.
+- [x] A3_NOTEBOOKLM_VERDICT — Historical checklist field name only: source-locked Q18 `AUTHOR_SELF_VERIFIED` receipt `3dec04e92a96d24b4b77ebda144bc1ca80b8f1f8`, 45 independent public formula/probability checks, eight-outcome pedagogical read-through, no found P0/P1; not independent NotebookLM PASS.
 - [x] A4_ITEM_OUTCOME_IDS — Exactly eight outcomes and 19 original public canonical IDs (8 FIRST_TRY +8 PRACTICE +3 WRITTEN /4), one source/role/version/key, eight voluntary self-check replay-only placements.
 - [x] A5_D1_D6_SCOPE — Eight coherent `Khám phá kiến thức`, eight self-contained `Ví dụ` with `Đề bài/Lời giải`, two explained SVGS, 19 remediated opt-in public answers and three checked written rubric bodies.
 - [x] A6_DELTA_RESOLVED — R02/R03 substantive content changes and R04 second SVG/positive Bayes denominator were rechecked under effective §X-E owner self-verification; R03->R04 canonical version corrections author-only and all 19 answer bodies remained identical.
