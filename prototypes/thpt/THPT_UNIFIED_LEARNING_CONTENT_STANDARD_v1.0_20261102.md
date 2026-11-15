@@ -1,8 +1,8 @@
 # SELF-LEARNING MATH — TIÊU CHUẨN CHẤT LƯỢNG HỌC LIỆU THPT THỐNG NHẤT v3.1.1
 
 **STANDARD_ID:** `SLM-THPT-QUALITY-ONE`  
-**VERSION:** 3.1.1 — PATCH candidate, owner request 15/11/2026, chỉ hiệu lực khi PR governance qua QA và merge main. Phiên bản 3.1.0 vẫn hiệu lực trước merge. **OWNER:** chủ dự án Self-Learning Math / G Learning.
-**STATUS:** OWNER_REQUESTED_CANDIDATE_PENDING_QA_MERGE · PREVIOUS_EFFECTIVE_STANDARD: 3.1.0 (PR #821 merged). Không đổi Q01–Q18, Golden, dữ liệu học sinh, Q15/Q16 hay phát hành.
+**VERSION:** `3.1.1` — PATCH candidate, owner request 15/11/2026, chỉ hiệu lực khi PR governance qua QA và merge main. Phiên bản 3.1.0 vẫn hiệu lực trước merge. **OWNER:** chủ dự án Self-Learning Math / G Learning.
+**STATUS:** `GOVERNANCE_PROPOSAL_OWNER_REVIEW_PENDING` · **PREVIOUS_EFFECTIVE_STANDARD:** `3.1.0` (PR #821 merged). PATCH candidate mới chỉ hiệu lực sau exact-head QA và owner-authorized merge; không tự đổi Q01–Q18, Golden, dữ liệu học sinh, Q15/Q16 hay quyền phát hành.
 **SCOPE:** mọi học liệu Toán THPT 10–12 KNTT theo **SGK_CHAPTER** và **TOPIC**; áp dụng cho cả tác giả, NotebookLM và nhánh phát hành. **Một tiêu chuẩn chất lượng; các cổng kiểm tra phân theo trách nhiệm, không phải hai bộ tiêu chuẩn cạnh tranh.**
 
 ## 0. Luật thống nhất và thứ tự hiệu lực
