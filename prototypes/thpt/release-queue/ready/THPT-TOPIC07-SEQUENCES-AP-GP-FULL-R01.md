@@ -1,4 +1,4 @@
-# CĐ07 — Dãy số, Cấp số cộng và Cấp số nhân · AUTHORING CONTENT_READY R01
+# CĐ07 — Dãy số, Cấp số cộng và Cấp số nhân · AUTHORING CONTENT_READY R06 (PACKET_ID R01)
 
 PACKET_ID: THPT-TOPIC07-SEQUENCES-AP-GP-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -8,22 +8,22 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: e3dfea0048c2083019c13ea82dca87eb726c6933
+SOURCE_COMMIT: 880e96ad09022f28850a0b91c4390a9be03c862e
 AUTHOR_PR: 828
 CURRENT_PR: https://github.com/TMA2015/self-learning-math/pull/828 — DRAFT AUTHORING, no merge/deploy
 CATALOG_TOPIC_ID: CD07
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic07-sequences/Temp_TOPIC07_CONTINUOUS_KNOWLEDGE_ARCS_R04_REVIEW_CANDIDATE_20261113.md
-ACADEMIC_SOURCE_BLOB: 238813098845ee8b7bc525174febb16ef6f70d70
-REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC07_CONTINUOUS_R04_AUTHOR_SELF_QA_RECEIPT_20261113.md (Q18 author SELF_VERIFIED, no independent NotebookLM PASS)
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC07_CONTINUOUS_R04_AUTHOR_SELF_QA_RECEIPT_20261113.md
-REVIEW_RECEIPT_BLOB: e3cc98d412e2cc387b0348941e08b7b1cd5ba05f
-AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC07-SEQUENCES-AP-GP-FULL-R04_HANDOFF_V2_20261113.md
-AUTHOR_HANDOFF_BLOB: 9ac54faf10c9ce621634fe2c7281da858d781ad3
-PUBLIC_ORIGINAL47_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC07_SEQUENCES_ORIGINAL47_SGK_CANONICAL_INDEX_R01_20261112.md
-PUBLIC_ORIGINAL47_INDEX_BLOB: 6500dc26b7ae21eb99b964f675023babdd881663
-PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC07_SEQUENCES_NEW22_PUBLIC_CANONICAL_R01_20261112.md
-PUBLIC_CANONICAL_BANK_BLOB: 3bf3ab77d89497b39ae50ac54f71b81eccddc14c
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic07-sequences/Temp_TOPIC07_R06_STUDENT_FIRST_69_CANONICAL_VISIBLE_20261115.md
+ACADEMIC_SOURCE_BLOB: 22609934f525e6e9c2c8f1513e439c3cd4d54221
+REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC07_R06_AUTHOR_SELF_QA_RECEIPT_20261115.md (Q18 author SELF_VERIFIED, no independent NotebookLM PASS)
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC07_R06_AUTHOR_SELF_QA_RECEIPT_20261115.md
+REVIEW_RECEIPT_BLOB: 73fc766c9bea00be48e25d0514548e12fa783f60
+AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC07-SEQUENCES-AP-GP-FULL-R06_HANDOFF_V2_20261115.md
+AUTHOR_HANDOFF_BLOB: 4a2b8a7268c0065352f5e8f079782f1f0cf45249
+PUBLIC_ORIGINAL47_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC07_SEQUENCES_ORIGINAL47_SGK_PLACEMENT_INDEX_R06_20261115.md
+PUBLIC_ORIGINAL47_INDEX_BLOB: 01154e0801e77c2e81d56a717c77f7dae5a3515d
+PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC07_SEQUENCES_NEW22_PUBLIC_CANONICAL_R06_20261115.md
+PUBLIC_CANONICAL_BANK_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767
 ORIGINAL_CHII_SOURCE_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806
 ORIGINAL_CHV_SOURCE_BLOB: 7934757ed06de4ae4b63dbc351ef524fc054e0d0
 SVG1_PATH: prototypes/thpt/visuals/THPT_TOPIC07_SEQUENCE_DISCRETE_VS_CONTINUOUS_R01.svg
@@ -45,9 +45,18 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
 **CONTENT_READY chỉ trong phạm vi AUTHORING.** 18 modules/outcomes; 47 old SGK PUBLIC items referenced by immutable source pointers +22 new public (18 Practice, 4 Written/7); total69 unique; 3 original SVG and two interaction labs SPEC_ONLY; 18 public reuse-only self-check, not independent Readiness.
 
+## R06 STUDENT_VIEW_CERTIFICATION
+
+- Học sinh đọc được 18 Ví dụ Đề bài–Lời giải độc lập và 18 Vận dụng–Đối chiếu tự mở ngay sau bài; không còn những khối câu hỏi gom cuối bốn mạch.
+- **69/69** item có đề+đáp án/lời giải từ đúng 47 SGK và 22 Topic R06 canonical; 11/11 rubric gốc với thang điểm lịch sử. Không nhân bản ID hoặc tự đổi vai trò SGK.
+- 18 public selfcheck P01–P18 là câu có đề thực, **không có lời giải/hint/rubric** ngay trong Selfcheck; chỉ `CLIENT_SELF_CHECK_NO_MASTERY`, không official Topic Readiness.
+- Bốn item giữ ID, nâng version2: P01/P16/P18/W04 (tránh trùng/lộ bài từ SVG/Ví dụ); B05-P05 đổi placement tới O05. 3 SVG nguyên gốc, 18 outcome, 0 RD1.
+- Q18 receipt blob `73fc766c9bea00be48e25d0514548e12fa783f60` có 120/120 QA assertions trên exact source R06 `22609934f525e6e9c2c8f1513e439c3cd4d54221`. Không nhận là NotebookLM độc lập hoặc browser RELEASE PASS.
+- R04 source blob `238813098845ee8b7bc525174febb16ef6f70d70` và receipt `e3cc98d412e2cc387b0348941e08b7b1cd5ba05f` được bảo toàn; intake hiện hành chỉ R06, một PACKET_ID.
+
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — canonical source Git blob 238813098845ee8b7bc525174febb16ef6f70d70; original47 index 6500dc26b7ae21eb99b964f675023babdd881663, NEW22 3bf3ab77d89497b39ae50ac54f71b81eccddc14c; signed Q18 receipt e3cc98d412e2cc387b0348941e08b7b1cd5ba05f; handoff 9ac54faf10c9ce621634fe2c7281da858d781ad3.
+- [x] A1_SOURCE_SNAPSHOT — canonical source Git blob 22609934f525e6e9c2c8f1513e439c3cd4d54221; original47 index 01154e0801e77c2e81d56a717c77f7dae5a3515d, NEW22 f70e2c961dfcf31825d135b61e301cbb4c322767; signed Q18 receipt 73fc766c9bea00be48e25d0514548e12fa783f60; handoff 4a2b8a7268c0065352f5e8f079782f1f0cf45249.
 - [x] A2_SGK_SBT_SCOPE — archived publisher S1: SGK G11 Tập1 B05 42–47, B06 48–51, B07 52–55, B15 104–110, SBT direct original PDF printed B05 31–34, B06 35–36, B07 37–39 and B15 75–78; Topic-only finance enriched scope labelled.
 - [x] A3_NOTEBOOKLM_VERDICT — Q18 AUTHOR_SELF_VERIFIED v3.1.0 signed author receipt with 49/49 direct checks; no new independent NotebookLM PASS asserted, original SGK ChII/ChV PASS retained source-scoped.
 - [x] A4_ITEM_OUTCOME_IDS — 18 lesson IDs/outcome IDs, 69 unique canonical PUBLIC IDs, 69 item→outcome→role mappings; 18 public self-check repeat placements do not add IDs.
