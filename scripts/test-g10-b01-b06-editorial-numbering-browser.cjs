@@ -34,7 +34,7 @@ function checkSHA(){
   if(p==="docs/thpt-preview/sgk/chuong-i/bai-1.md"){
    const receipt=fs.readFileSync(path.join(root,
     "prototypes/thpt/ux795/G10_CHI_B01_KNOWLEDGE_ENRICHMENT_DELTA_RECEIPT_R01_20261115.md"),"utf8");
-   const expected=receipt.match(/\\*\\*CANDIDATE_LESSON_GIT_BLOB:\\*\\* \`([a-f0-9]{40})\`/);
+   const expected=receipt.match(/\*\*CANDIDATE_LESSON_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/);
    assert(expected&&receipt.includes("**BASELINE_LESSON_GIT_BLOB:** \`"+sha+"\`"),
     "B01 original source remains locked; enrichment needs real Q18 source receipt");
    assert.equal(hash(data),expected[1],"B01 enhanced Knowledge source must match receipt blob");
