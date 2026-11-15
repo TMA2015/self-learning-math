@@ -138,12 +138,24 @@ function validate(source, agents, queue) {
      if(!q05.includes("TOPIC_PRACTICE")||!q05.includes("không đòi trang Core"))fail("TOPIC_Q05_MUST_USE_PRACTICE_NOT_CORE");
      if(!q14.includes("Chuyên đề")||!q14.includes("trước khi vào Luyện tập chính"))fail("TOPIC_Q14_MUST_BE_BEFORE_PRACTICE");
      if(!q17.includes("Adaptive Knowledge Tabs v2")||!q17.includes("chỉ ba trang"))fail("TOPIC_Q17_MUST_REMAIN_THREE_PAGE_PATH");
+     if(!q17.includes("AUTHORING kiểm ba phần học liệu trong source canonical")||
+        !q17.includes("RELEASE chỉ kiểm ba trang website sau"))
+       fail("Q17_SOURCE_VS_RENDER_RESPONSIBILITY_MISSING");
    }
    for(const token of ["NOT_TESTED","Q18_CONTENT_CHECK_PENDING","Q18_SUBSTANTIVE_HOLD","HANDOFF_PACKAGING_PENDING",
      "G10 B16","G11 ChVII","G12 B17","B14-P04","không có checklist PRE-HANDOFF thứ hai"])
      if(!source.includes(token))fail("EXECUTION_PROOF_MISSING:"+token);
+   if(!source.includes("13 mục do owner duyệt tại [Issue #864]")||
+      !source.includes("[Issue #865]")||
+      !source.includes("không phải checklist chất lượng độc lập"))
+     fail("TOPIC_EDITORIAL_864_865_MUST_MAP_TO_ONE_Q_MATRIX");
+   if(!source.includes("Phạm vi HOLD và quyền AUTHORING đã giao")||
+      !source.includes("không hủy lệnh biên soạn Chuyên đề"))
+     fail("OWNER_SCOPED_TOPIC_AUTHORING_EXCEPTION_MISSING");
    if(source.includes("## IX. Checklist PRE-HANDOFF V2"))fail("DUPLICATE_PRE_HANDOFF_CHECKLIST");
    if(agents&&!(agents.includes("ma trận Q01–Q18 tại mục II")&&agents.includes("quy trình mục VIII")))fail("AGENTS_NOT_POINTING_TO_SINGLE_CHECKLIST");
+   if(agents&&!agents.includes("OWNER-SCOPED AUTHORING EXCEPTION"))
+     fail("AGENTS_MISSING_TOPIC_AUTHORING_SCOPED_EXCEPTION");
  }
  for(const heading of REQUIRED_SECTIONS)if(!source.includes(heading))fail("MISSING_SECTION:"+heading);
  const tableStart=source.indexOf("## II. Ma trận chuẩn chất lượng duy nhất Q01–Q18");
@@ -211,6 +223,10 @@ function selfTest(){
    assert(validate(falseCore,"","").failures.includes("TOPIC_Q01_MUST_NOT_REQUIRE_SEPARATE_CORE"));
    const noTopic=full.replaceAll("TOPIC_PRACTICE","TOPIC_CORE");
    assert(validate(noTopic,"","").failures.includes("TOPIC_Q05_MUST_USE_PRACTICE_NOT_CORE"));
+   const noRole=full.replace("AUTHORING kiểm ba phần học liệu trong source canonical","AUTHORING đòi website URL");
+   assert(validate(noRole,"","").failures.includes("Q17_SOURCE_VS_RENDER_RESPONSIBILITY_MISSING"));
+   const no864=full.replace("13 mục do owner duyệt tại [Issue #864]","13 checklist riêng của RELEASE");
+   assert(validate(no864,"","").failures.includes("TOPIC_EDITORIAL_864_865_MUST_MAP_TO_ONE_Q_MATRIX"));
    const wrongTopic=full.replaceAll("Adaptive Knowledge Tabs v2","4 tab Golden SGK");
    assert(validate(wrongTopic,"","").failures.includes("TOPIC_Q17_MUST_REMAIN_THREE_PAGE_PATH"));
    const ghost=full.replace("### VIII.3. Kiểm đối chứng chống tái diễn","| **Q14 GHOST** | Không được có bảng phụ |\n### VIII.3. Kiểm đối chứng chống tái diễn");
