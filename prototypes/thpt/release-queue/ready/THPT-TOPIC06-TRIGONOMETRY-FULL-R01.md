@@ -18,7 +18,7 @@ REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC06_R05_AUTHOR_SELF_QA_R
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC06_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
 REVIEW_RECEIPT_BLOB: 8f4d721ec8ab5b08baaf0a19c7aeaf2aa9cf454f
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC06-TRIGONOMETRY-FULL-R05_HANDOFF_V2_20261115.md
-AUTHOR_HANDOFF_BLOB: 8b2ff05a38e470d8e656932a60951a4e0d6353ab
+AUTHOR_HANDOFF_BLOB: bdb905f526799efc1c33f028c247535979778e1c
 PUBLIC_ORIGINAL_SGK_SOURCE_BLOB: 256ceb5edc5e02aec320e83e99c8e08e035654f3
 PUBLIC_ORIGINAL_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC06_TRIGONOMETRY_ORIGINAL46_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_ORIGINAL_INDEX_BLOB: d8279df37c9dcd74a0b26f0da389baf7d53ecf64
@@ -51,7 +51,7 @@ SELF_CHECK: 16 real PUBLIC reused question stems; CLIENT_SELF_CHECK_NO_MASTERY, 
 
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — CURRENT R05 learner source blob dd3af68f681eba9a7b75040d9490815f81efdd6b, exact Q18 author receipt blob 8f4d721ec8ab5b08baaf0a19c7aeaf2aa9cf454f, immutable original46 index d8279df3..., original new20 bank f83b285f..., one updated V2 handoff 8b2ff05a38e470d8e656932a60951a4e0d6353ab.
+- [x] A1_SOURCE_SNAPSHOT — CURRENT R05 learner source blob dd3af68f681eba9a7b75040d9490815f81efdd6b, exact Q18 author receipt blob 8f4d721ec8ab5b08baaf0a19c7aeaf2aa9cf454f, immutable original46 index d8279df3..., original new20 bank f83b285f..., one updated V2 handoff bdb905f526799efc1c33f028c247535979778e1c.
 - [x] A2_SGK_SBT_SCOPE — SGK KNTT G11 T1 B01–B04 printed 5–39, end 40–41; SBT original receipts printed B01 4–7, B02 8–10, B03 11–18, B04 19–24; historically visually verified not newly PDF-scanned in this turn.
 - [x] A3_NOTEBOOKLM_VERDICT — `AUTHOR_SELF_VERIFIED` v3.1.0 on new exact source; prior SGK ChI independent reviewer only for historic SGK snapshot, no fresh NotebookLM claim.
 - [x] A4_ITEM_OUTCOME_IDS — 16 outcomes mapped to 66/66 actually visible original canonical Practice questions/solutions (46 SGK +20 Topic), eight original Written rubric /7, and 16 public reuse-only selfcheck questions.
