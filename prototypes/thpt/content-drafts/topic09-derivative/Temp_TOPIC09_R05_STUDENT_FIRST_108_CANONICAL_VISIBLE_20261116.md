@@ -1,5 +1,5 @@
 <!-- AUTHORING R05 STUDENT-FIRST candidate 2026-11-16; R04 source 68fe5b8a3ded75b6f774b4685655487d9b4bdff9 immutable. New Q18 review pending. -->
-<!-- STANDARD_ID=SLM-THPT-QUALITY-ONE; STANDARD_VERSION=3.1.0; LEARNING_PATH=TOPIC; SOURCE_VERSION=R05_AUTHORING_REVIEW_PENDING; SGK71_BLOB=3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; INDEX71_BLOB=3c025ce2dfb8e16743873ac2b3f35bfb37c27ef8; NEW37_BLOB=d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a -->
+<!-- STANDARD_ID=SLM-THPT-QUALITY-ONE; STANDARD_VERSION=3.1.0; LEARNING_PATH=TOPIC; SOURCE_VERSION=R05_AUTHORING_REVIEW_PENDING; SGK71_BLOB=3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; INDEX71_BLOB=3c025ce2dfb8e16743873ac2b3f35bfb37c27ef8; NEW37_BLOB=f249949be3b254a29c8859301b6c4904e636c505 -->
 # CĐ09 — Đạo hàm và ý nghĩa vi phân
 
 # Kiến thức
@@ -886,7 +886,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P01; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O01; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P01; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O01; NOT_NEW_ID -->
 
 **Bài 3.** Vật chuyển động theo s(t)=t² mét (t≥0 giây). Tính vận tốc trung bình trong [1,3] và nêu đơn vị.
 
@@ -931,7 +931,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P02; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O02; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P02; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O02; NOT_NEW_ID -->
 
 **Bài 6.** Trên y=x², cát tuyến qua P(2,4) và Q(2+h,(2+h)²), h≠0, có hệ số góc gì? Khi h→0 được gì?
 
@@ -995,7 +995,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P03; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O03; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P03; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O03; NOT_NEW_ID -->
 
 **Bài 10.** Dùng định nghĩa để tính f'(−1) cho f(x)=x³, không chỉ dẫn quy tắc x³.
 
@@ -1040,7 +1040,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P04; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O04; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P04; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O04; NOT_NEW_ID -->
 
 **Bài 13.** Cho f(x)=x nếu x<0, f(x)=x² nếu x≥0. Hàm có đạo hàm tại 0 không? Có liên tục không?
 
@@ -1085,7 +1085,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P05; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O05; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P05; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O05; NOT_NEW_ID -->
 
 **Bài 16.** f(x)=|x| tại x=0: liên tục? Có đạo hàm? Dùng ví dụ bác bỏ chiều ngược của mệnh đề 'có đạo hàm ⇒ liên tục'.
 
@@ -1149,7 +1149,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P06; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O06; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P06; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O06; NOT_NEW_ID -->
 
 **Bài 20.** Xét f(x)=|x−2| tại x=2. Tính đạo hàm trái và phải; nêu đạo hàm hai phía.
 
@@ -1164,7 +1164,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-W01; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O06; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-W01; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O06; NOT_NEW_ID -->
 
 **Bài 21.** Cho f(x)=x² với x≥0 và f(x)=x²+c x khi x<0. (a) Chứng minh f liên tục tại0 với mọi c. (b) Tính giới hạn thương sai phân trái và phải ở0. (c) Tìm mọi c để f khả vi tại0; (d) viết tiếp tuyến ở0 trong trường hợp ấy.
 
@@ -1218,7 +1218,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P07; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O07; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P07; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O07; NOT_NEW_ID -->
 
 **Bài 24.** Với f(x)=x²−2x, tại x=2 tung độ điểm tiếp xúc và độ dốc tiếp tuyến bằng bao nhiêu?
 
@@ -1263,7 +1263,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P08; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O08; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P08; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O08; NOT_NEW_ID -->
 
 **Bài 27.** Viết tiếp tuyến của y=x³ tại x=1.
 
@@ -1327,7 +1327,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P09; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O09; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P09; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O09; NOT_NEW_ID -->
 
 **Bài 31.** Tọa độ s(t)=t³−6t²+9t (m), t≥0 (s). Tại t=2, vận tốc có hướng và tốc độ bằng bao nhiêu?
 
@@ -1342,7 +1342,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-W02; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O09; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-W02; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O09; NOT_NEW_ID -->
 
 **Bài 32.** Vật chuyển động s(t)=t³−6t²+9t, đơn vị m, t≥0 s. (a) Tính s(2), s(3). (b) Tính vận tốc trung bình [2,3]. (c) Tính v(2) và tốc độ. (d) Viết phương trình đường tiếp tuyến với đồ thị s(t) tại t=2 và giải thích hai vận tốc khác nhau.
 
@@ -1396,7 +1396,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P10; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O10; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P10; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O10; NOT_NEW_ID -->
 
 **Bài 35.** Nhiệt độ T(t)=20+3t−0,5t² (°C), t tính theo phút. T'(2) bằng bao nhiêu, ý nghĩa và đơn vị?
 
@@ -1443,7 +1443,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P11; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O11; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P11; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O11; NOT_NEW_ID -->
 
 **Bài 38.** Tính đạo hàm y=2x⁵−3x²+7.
 
@@ -1488,7 +1488,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P12; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O12; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P12; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O12; NOT_NEW_ID -->
 
 **Bài 41.** f(x)=√(x+1). Tìm miền xác định và công thức f'(x) tại các điểm trong miền; có f'(−1) hữu hạn hai phía không?
 
@@ -1533,7 +1533,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P13; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O13; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P13; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O13; NOT_NEW_ID -->
 
 **Bài 44.** Tính y' nếu y=5−4x+7x², chỉ ra từng hạng đóng góp.
 
@@ -1597,7 +1597,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P14; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O14; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P14; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O14; NOT_NEW_ID -->
 
 **Bài 48.** Tính đạo hàm y=x² sin x (x đo radian). Giải thích vì sao không lấy 2x cos x.
 
@@ -1661,7 +1661,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P15; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O15; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P15; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O15; NOT_NEW_ID -->
 
 **Bài 52.** Cho f(x)=(x²+1)/(x−1). Viết miền xác định và f'(x); tính f'(0).
 
@@ -1676,7 +1676,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-W03; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O15; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-W03; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O15; NOT_NEW_ID -->
 
 **Bài 53.** Cho f(x)=(x²+1)/(x−1). (a) Xác định miền. (b) Dùng quy tắc thương tính f'(x) và rút gọn. (c) Tính f(0), f'(0) và tiếp tuyến tại x=0. (d) Nói rõ vì sao không được áp kết quả tại x=1.
 
@@ -1730,7 +1730,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P16; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O16; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P16; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O16; NOT_NEW_ID -->
 
 **Bài 56.** Tính đạo hàm y=(3x−1)^4.
 
@@ -1777,7 +1777,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P17; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O17; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P17; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O17; NOT_NEW_ID -->
 
 **Bài 59.** Tính đạo hàm y=2sin x−3cos x, x tính radian.
 
@@ -1822,7 +1822,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P18; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O18; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P18; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O18; NOT_NEW_ID -->
 
 **Bài 62.** Tính đạo hàm f(x)=tan x+cot x và nêu miền xác định.
 
@@ -1867,7 +1867,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P19; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O19; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P19; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O19; NOT_NEW_ID -->
 
 **Bài 65.** Tính y' nếu y=sin(2x²), x đo radian.
 
@@ -1912,7 +1912,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P20; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O20; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P20; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O20; NOT_NEW_ID -->
 
 **Bài 68.** Tính đạo hàm y=2^x+e^x và nêu điều kiện cho cơ số.
 
@@ -1957,7 +1957,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P21; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O21; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P21; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O21; NOT_NEW_ID -->
 
 **Bài 71.** Tính y' nếu y=ln x+log₃ x, nêu miền xác định.
 
@@ -2002,7 +2002,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P22; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O22; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P22; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O22; NOT_NEW_ID -->
 
 **Bài 74.** Tính y' và miền xác định của y=ln(2x+1)+3^{x²}.
 
@@ -2017,7 +2017,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-W04; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O22; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-W04; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O22; NOT_NEW_ID -->
 
 **Bài 75.** Với f(x)=ln(1+x²)+e^{2x}. (a) Tìm miền xác định. (b) Tính f'(x). (c) Tính f''(x). (d) Tính f(0), f'(0), f''(0) và diễn giải ba đại lượng khác nhau.
 
@@ -2090,7 +2090,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P23; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O23; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P23; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O23; NOT_NEW_ID -->
 
 **Bài 79.** Với y=√(x−2)/ln x, xác định tập xác định và khoảng có thể tính đạo hàm bằng quy tắc thương.
 
@@ -2135,7 +2135,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P24; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O24; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P24; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O24; NOT_NEW_ID -->
 
 **Bài 82.** Tính đạo hàm y=x²e^{3x}. Chỉ ra thứ tự quy tắc tối ưu.
 
@@ -2182,7 +2182,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P25; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O25; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P25; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O25; NOT_NEW_ID -->
 
 **Bài 85.** Tọa độ s(t)=t³−3t²+2t (m), t≥0 s. Tính v(1) và tốc độ khi đó; nói ý nghĩa dấu.
 
@@ -2227,7 +2227,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P26; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O26; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P26; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O26; NOT_NEW_ID -->
 
 **Bài 88.** f(x)=x³. Tính f', f'' và f''(2); f'' có phải (f')² không?
 
@@ -2272,7 +2272,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P27; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O27; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P27; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O27; NOT_NEW_ID -->
 
 **Bài 91.** Tính f'(x), f''(x) cho f(x)=2x⁴−x³+5.
 
@@ -2336,7 +2336,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P28; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O28; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P28; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O28; NOT_NEW_ID -->
 
 **Bài 95.** Với f(x)=e^{2x}+sin(3x), tính f''(x).
 
@@ -2403,7 +2403,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P29; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O29; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P29; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O29; NOT_NEW_ID -->
 
 **Bài 99.** s(t)=t³−6t²+9t (m), t≥0 s. Tính gia tốc a(1) từ s''.
 
@@ -2467,7 +2467,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P30; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O30; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P30; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O30; NOT_NEW_ID -->
 
 **Bài 103.** Chuyển động s(t)=t²−4t (m), t≥0. Ở t=1 và t=3, vật tăng tốc hay giảm tốc theo nghĩa tốc độ |v|?
 
@@ -2482,7 +2482,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-W05; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O30; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-W05; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O30; NOT_NEW_ID -->
 
 **Bài 104.** Cho s(t)=t³−6t²+9t, 0≤t≤4, đơn vị m và s. (a) Tính v(t), a(t). (b) Xác định dấu v trên (0,1),(1,3),(3,4) và thời điểm đổi chiều. (c) Xác định các khoảng tốc độ đang tăng/giảm dựa dấu v·a (trừ điểm v=0 hoặc a=0).
 
@@ -2539,7 +2539,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P31; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O31; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P31; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O31; NOT_NEW_ID -->
 
 **Bài 107.** Cho f(x)=(x²+1)e^x. Tính f(0), f'(0), f''(0) và tiếp tuyến tại x=0.
 
@@ -2554,7 +2554,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P32; SOURCE_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a; OUTCOME: TOP09-O32; NOT_NEW_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P32; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O32; NOT_NEW_ID -->
 
 **Bài 108.** f(x)=x², x ban đầu a=2 và tăng Δx=0,1. Tính vi phân tuyến tính dy=f'(a)Δx, độ tăng thật Δy=f(2,1)−f(2), sai lệch |Δy−dy|; phát biểu điều kiện khi dùng xấp xỉ.
 
