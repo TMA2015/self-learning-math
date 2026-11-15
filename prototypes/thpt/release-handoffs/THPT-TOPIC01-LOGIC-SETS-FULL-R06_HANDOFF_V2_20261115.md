@@ -13,7 +13,7 @@ Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R06_STUDENT_FIRST_24_CANONICAL_VISIBLE_20261115.md
 ACADEMIC_SOURCE_BLOB: d4eafd811066997ee64de70a49c5da4a7ff26dcd
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC01_R06_AUTHOR_SELF_QA_RECEIPT_20261115.md
-REVIEW_RECEIPT_BLOB: 64c22dabc98cb12f30542fe72f4af2f617fdbdfb
+REVIEW_RECEIPT_BLOB: 12868fe449d32f70fa1caf83f27be9571c4f1aae
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R04_AUTHORING_ONLY_CUSTODY_METADATA_20261113.md
 AUTHOR_METADATA_BLOB: 0bf738b497b1b893ac90c3b82f758f661c0cf05c
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_CANONICAL_SOURCE_INDEX_R01_20261112.md
@@ -141,7 +141,7 @@ CATALOG_TOPIC_ID: CD01
 
 ## QUALITY_Q01_Q18_EVIDENCE
 
-One normative source: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md` (effective `SLM-THPT-QUALITY-ONE v3.1.0`). The R06 author receipt is `64c22dabc98cb12f30542fe72f4af2f617fdbdfb`; new learner text blob `d4eafd811066997ee64de70a49c5da4a7ff26dcd`.
+One normative source: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md` (effective `SLM-THPT-QUALITY-ONE v3.1.0`). The R06 author receipt is `12868fe449d32f70fa1caf83f27be9571c4f1aae`; new learner text blob `d4eafd811066997ee64de70a49c5da4a7ff26dcd`.
 
 | Qxx | Source/outcome-specific academic and PED evidence | Scope verdict | Source trace | Release boundary |
 |---|---|---|---|---|
@@ -166,7 +166,7 @@ One normative source: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1
 
 ## AUTHORING_A1_A7
 
-- A1: learner R06 SHA d4eafd811066997ee64de70a49c5da4a7ff26dcd; new Q18 self-QA receipt 64c22dabc98cb12f30542fe72f4af2f617fdbdfb and one V2 canonical packet.
+- A1: learner R06 SHA d4eafd811066997ee64de70a49c5da4a7ff26dcd; new Q18 self-QA receipt 12868fe449d32f70fa1caf83f27be9571c4f1aae and one V2 canonical packet.
 - A2: S1 comes from the immutable owner-PDF-scanned SGK source receipt B01/B02; do not claim a fresh SGK PDF rescan.
 - A3: R06 self-verified Q18 actual math+PED by author; original source reviewer PASS remains limited to original 18 SGK items/2 SVG.
 - A4: TOP01-M01..M11, outcomes O01..O11, unique 24 public IDs and 11 public self-check references cross-reconciled.
@@ -201,7 +201,7 @@ Historic R01 immutable sources/receipts and R03 candidate stay unchanged. R06 re
 
 ## CURRENT R06 SOURCE AND REGRESSION ANCHOR
 
-Stable PACKET_ID remains THPT-TOPIC01-LOGIC-SETS-FULL-R01. R04 receipt and source retained historically at their original Git commit/blob, not transferred to R05. New R06 academic source blob d4eafd811066997ee64de70a49c5da4a7ff26dcd, signed Q18 AUTHOR_SELF_VERIFIED receipt blob 64c22dabc98cb12f30542fe72f4af2f617fdbdfb; 11 outcomes, 11 self-contained examples/first tries, 24 source-locked original canonical question+solution display-only blocks with both original Written rubrics, 11 public replay stems. S1 original B01/B02 receipt retained and no new PDF rescan claim. The 13-item Topic checklist Issue #864 and existing defect ledger #865 were applied before source lock. No second canonical item bank or private RD1 material. R06 is CONTENT_READY only on exact new SHA; RELEASE holds AP/R/P and owner permission.
+Stable PACKET_ID remains THPT-TOPIC01-LOGIC-SETS-FULL-R01. R04 receipt and source retained historically at their original Git commit/blob, not transferred to R05. New R06 academic source blob d4eafd811066997ee64de70a49c5da4a7ff26dcd, signed Q18 AUTHOR_SELF_VERIFIED receipt blob 12868fe449d32f70fa1caf83f27be9571c4f1aae; 11 outcomes, 11 self-contained examples/first tries, 24 source-locked original canonical question+solution display-only blocks with both original Written rubrics, 11 public replay stems. S1 original B01/B02 receipt retained and no new PDF rescan claim. The 13-item Topic checklist Issue #864 and existing defect ledger #865 were applied before source lock. No second canonical item bank or private RD1 material. R06 is CONTENT_READY only on exact new SHA; RELEASE holds AP/R/P and owner permission.
 
 ## RELEASE_AND_OWNER_GATE
 
