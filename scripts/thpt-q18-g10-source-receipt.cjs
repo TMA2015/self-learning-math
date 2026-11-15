@@ -69,7 +69,18 @@ function b01EnrichmentBlob(ledgerCandidate) {
  assert.notEqual(candidate[1],baseline[1],"B01 new revision must differ from historical source");
  for(const token of ["ENRICHMENT_DELTA_RECEIPT","Q18_OWNER_SELF_VERIFIED_ENRICHMENT","DELTA_C_ACADEMIC_MATERIAL","S1 section parity:"])
    assert(text.includes(token),"B01 Q18 delta evidence missing: "+token);
- return candidate[1];
+ const r02="prototypes/thpt/ux795/G10_CHI_B01_KNOWLEDGE_OWNER_P2_DELTA_RECEIPT_R02_20261115.md";
+ const r02file=path.join(root,r02);
+ if(!fs.existsSync(r02file))return candidate[1]; // original immutable R01
+ const follow=fs.readFileSync(r02file,"utf8");
+ const followBaseline=follow.match(/^\*\*BASELINE_LESSON_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m);
+ const followCandidate=follow.match(/^\*\*CANDIDATE_LESSON_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m);
+ assert(followBaseline&&followCandidate,"B01 owner P2 R02 requires two exact Git blobs");
+ assert.equal(followBaseline[1],candidate[1],"B01 R02 must extend immutable deployed R01 source SHA");
+ assert.notEqual(followCandidate[1],followBaseline[1],"B01 R02 candidate must differ from R01");
+ for(const marker of ["ENRICHMENT_DELTA_RECEIPT","Q18_OWNER_SELF_VERIFIED_ENRICHMENT","OWNER_P2_CORRECTION","seven source"])
+   assert(follow.includes(marker),"B01 R02 source-locked correction receipt missing: "+marker);
+ return followCandidate[1];
 }
 
 const chviiReceipt="prototypes/thpt/ux795/G10_CHVII_B19_B22_S1_Q18_GOLDEN_ENRICHMENT_RECEIPT_20261113.md";
