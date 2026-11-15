@@ -62,8 +62,8 @@ function b01EnrichmentBlob(ledgerCandidate) {
  const receiptFile=path.join(root,b01Receipt);
  if(!fs.existsSync(receiptFile))return null;
  const text=fs.readFileSync(receiptFile,"utf8");
- const baseline=text.match(/^\\*\\*BASELINE_LESSON_GIT_BLOB:\\*\\* \\x60([a-f0-9]{40})\\x60/m);
- const candidate=text.match(/^\\*\\*CANDIDATE_LESSON_GIT_BLOB:\\*\\* \\x60([a-f0-9]{40})\\x60/m);
+ const baseline=text.match(/^\*\*BASELINE_LESSON_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m);
+ const candidate=text.match(/^\*\*CANDIDATE_LESSON_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m);
  assert(baseline&&candidate,"B01 Q18 source-locked enrichment receipt must contain two Git blobs");
  assert.equal(baseline[1],ledgerCandidate,"B01 receipt must extend exact historic candidate, not overwrite legacy receipt");
  assert.notEqual(candidate[1],baseline[1],"B01 new revision must differ from historical source");
