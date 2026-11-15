@@ -1,5 +1,5 @@
 <!-- AUTHORING R06 STUDENT-FIRST CANDIDATE 15/11/2026; Q18 pending; historical R04 ready unchanged. -->
-<!-- STANDARD_ID=SLM-THPT-QUALITY-ONE; STANDARD_VERSION=3.1.0; LEARNING_PATH=TOPIC; SOURCE_VERSION=R06_AUTHORING_CANDIDATE_Q18_PENDING; INDEX_BLOB=6500dc26b7ae21eb99b964f675023babdd881663; NEW_BANK_BLOB=f70e2c961dfcf31825d135b61e301cbb4c322767 -->
+<!-- STANDARD_ID=SLM-THPT-QUALITY-ONE; STANDARD_VERSION=3.1.0; LEARNING_PATH=TOPIC; SOURCE_VERSION=R06_AUTHORING_CANDIDATE_Q18_PENDING; INDEX_BLOB=01154e0801e77c2e81d56a717c77f7dae5a3515d; NEW_BANK_BLOB=f70e2c961dfcf31825d135b61e301cbb4c322767 -->
 # CĐ07 — Dãy số, cấp số cộng và cấp số nhân
 
 ### 1. Kiến thức
@@ -116,7 +116,7 @@ Nếu chỉ nhìn 1,1/2,1/3 thì đó mới là gợi ý; chứng minh dấu cho
 
 <!-- LESSON_ID: TOP07-M05; OUTCOME_ID: TOP07-O05 -->
 
-Một dãy có thể bị chặn bởi giá trị mà nó không bao giờ đạt. Một dãy có thể tiến gần 1 mãi mà không bao giờ bằng 1 không? Cần nhớ dấu phân thức dương, bất đẳng thức. Bị chặn trên nếu tồn tại M sao cho u_n≤M cho mọi n, bị chặn dưới tương tự; chặn không đồng nghĩa giá trị đạt. Dãy tăng và có chặn trên không tự nói giá trị giới hạn bằng cận khi chưa chứng minh; ở đây chỉ xây dựng ranh giới trực giác, giới hạn chi tiết sang CĐ08.
+Một dãy có thể bị chặn bởi giá trị mà nó không bao giờ đạt. Một dãy có thể tiến gần 1 mãi mà không bao giờ bằng 1 không? Cần nhớ dấu phân thức dương, bất đẳng thức. Bị chặn trên nếu tồn tại M sao cho u_n≤M cho mọi n, bị chặn dưới tương tự; chặn không đồng nghĩa giá trị đạt. Dãy tăng và có chặn trên không tự nói giá trị giới hạn bằng cận khi chưa chứng minh. Trong phần này, em cần phân biệt một cận với giá trị mà dãy thực sự đạt.
 
 Chẳng hạn, u_n=1−1/(n+1), n≥1. Vì 0<1/(n+1)≤1/2 nên 1/2≤u_n<1. u_1=1/2 là cận dưới đạt, còn 1 không là một số hạng của dãy. Chọn tách thành 1 trừ số dương để nhìn cận.
 
@@ -198,6 +198,8 @@ Nếu tính thành −2, xem lại từ số hạng 1 đến 4 chỉ có 3 kho�
 <!-- LESSON_ID: TOP07-M08; OUTCOME_ID: TOP07-O08 -->
 
 Ngược lại, hai số hạng cách xa nhau có thể cho biết công sai. Có thể tìm cả u_1 và d khi chỉ biết u_5,u_9 không? Ta sử dụng hiệu hai phương trình tuyến tính. Vì u_m−u_k=(m−k)d, khi m≠k ta tìm d=(u_m−u_k)/(m−k), sau đó u_1=u_k−(k−1)d. Hai giá trị theo hai chỉ số khác nhau đủ xác định một CSC; kiểm điều kiện m≠k.
+
+Nếu đề cho **ba số hạng liên tiếp** \(a,b,c\), cũng dùng cùng ý tưởng hiệu không đổi: \(b-a=c-b\), tương đương \(2b=a+c\). Ngược lại, nếu ba số được cho theo đúng thứ tự và thỏa \(2b=a+c\), thì hai hiệu bằng nhau và chúng có thể là ba số hạng liên tiếp của một cấp số cộng. Với biểu thức chứa ẩn, hãy lập phương trình từ điều kiện này, giải rồi kiểm lại cả hai hiệu.
 
 Xét ví dụ: u_3=5,u_7=21 ⇒ d=(21−5)/(7−3)=4, u_1=5−2·4=−3. Thử u_7=−3+6·4=21. Chọn phép trừ để khử u_1.
 
@@ -378,7 +380,7 @@ Nếu gặp 0 ở mẫu, tách q=1 trước.
 
 <!-- LESSON_ID: TOP07-M15; OUTCOME_ID: TOP07-O15 -->
 
-Nếu trị tuyệt đối công bội nhỏ hơn 1, phần dư của tổng giảm dần. Vì sao có thể cộng vô hạn số hạng mà được một số hữu hạn? Cần nhớ tổng n số hạng CSN và dãy q^n; phần Giới hạn G11 B15. Với \(|q|<1\), \(q^n\to0\); lấy giới hạn của \(S_n=\dfrac{u_1(1-q^n)}{1-q}\) được **\(S_\infty=\dfrac{u_1}{1-q}\)**. Điều kiện |q|<1 là bắt buộc cho cấp số nhân có u_1≠0; q=−1 làm tổng riêng dao động, |q|>1 thường không hội tụ. Phần dư S_∞−S_n=u_1q^n/(1−q); trị tuyệt đối đo sai số.
+Nếu trị tuyệt đối công bội nhỏ hơn 1, phần dư của tổng giảm dần. Vì sao có thể cộng vô hạn số hạng mà được một số hữu hạn? Cần nhớ tổng n số hạng cấp số nhân và xem số hạng \(q^n\) thay đổi như thế nào khi \(n\) tăng mãi. Với \(|q|<1\), \(q^n\to0\); lấy giới hạn của \(S_n=\dfrac{u_1(1-q^n)}{1-q}\) được **\(S_\infty=\dfrac{u_1}{1-q}\)**. Điều kiện |q|<1 là bắt buộc cho cấp số nhân có u_1≠0; q=−1 làm tổng riêng dao động, |q|>1 thường không hội tụ. Phần dư S_∞−S_n=u_1q^n/(1−q); trị tuyệt đối đo sai số.
 
 Chẳng hạn, Với u_1=6,q=1/2, S_n=12[1−(1/2)^n], S_∞=12; sau n=4 phần dư=12/16=3/4. Chọn công thức phần dư khi muốn biết phải cộng bao nhiêu số hạng để đủ chính xác.
 
@@ -438,7 +440,7 @@ Nếu ghi 60, bạn đã cộng 5 cố định và vô tình dùng CSC thay CSN.
 
 <!-- LESSON_ID: TOP07-M17; OUTCOME_ID: TOP07-O17 -->
 
-Trong lãi kép, tỷ lệ theo kỳ làm số kỳ và đơn vị trở nên quan trọng. Vì sao gửi 5%/năm qua nhiều năm không chỉ lấy 5% nhân số năm? Ta đã biết phần trăm, lũy thừa, hợp đồng kỳ hạn. Nếu lãi gộp vào vốn mỗi kỳ với lãi suất r *theo chính kỳ đó*, không nộp/rút/phí, số dư sau n kỳ là P(1+r)^n, P≥0, 1+r>0 (thực tế thường r≥0). Nếu lãi theo tháng thì n phải là số tháng, không dùng lãi năm như lãi tháng; lãi hiệu dụng khác lãi danh nghĩa. KNTT ChII cung cấp CSN; ví dụ tài chính ở đây là mô hình toán tự biên soạn, không phải báo giá.
+Trong lãi kép, tỷ lệ theo kỳ làm số kỳ và đơn vị trở nên quan trọng. Vì sao gửi 5%/năm qua nhiều năm không chỉ lấy 5% nhân số năm? Ta đã biết phần trăm, lũy thừa, hợp đồng kỳ hạn. Nếu lãi gộp vào vốn mỗi kỳ với lãi suất r *theo chính kỳ đó*, không nộp/rút/phí, số dư sau n kỳ là P(1+r)^n, P≥0, 1+r>0 (thực tế thường r≥0). Nếu lãi theo tháng thì n phải là số tháng, không dùng lãi năm như lãi tháng; lãi hiệu dụng khác lãi danh nghĩa. Bài toán tài chính này chỉ là tình huống mô hình hóa dựa trên cấp số nhân, không phải báo giá thực tế.
 
 Chẳng hạn, P=10 triệu, r=6%/năm, hai năm: 10·1,06²=11,236 triệu. Chọn lũy thừa vì tiền lãi năm đầu đã nằm trong số dư sinh lãi năm hai.
 
@@ -518,7 +520,7 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 **Lời giải có suy luận:** Thế lần lượt n=0,1,2,3 cho 1,−3,5,−7. Miền chỉ số của dãy có 0 nhưng không có 4; tính biểu thức tại n=4 được 9 không khiến 9 trở thành số hạng thuộc dãy đã cho.
 
-**D6 tự khắc phục:** Viết miền chỉ số trước khi thay số; không mặc định mọi dãy bắt đầu n=1.
+**Nếu làm sai:** Viết miền chỉ số trước khi thay số; không mặc định mọi dãy bắt đầu n=1.
 
 </details>
 
@@ -568,7 +570,7 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 **Lời giải có suy luận:** Thế n=4 được 5/9. Nếu (n+1)/(2n+1)=1/2 thì 2n+2=2n+1, vô lý; không có chỉ số nguyên dương nào thỏa.
 
-**D6 tự khắc phục:** Không suy từ giới hạn 1/2 thành 'phải có một số hạng đúng bằng 1/2'.
+**Nếu làm sai:** Không suy từ giới hạn 1/2 thành 'phải có một số hạng đúng bằng 1/2'.
 
 </details>
 
@@ -636,7 +638,7 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 **Lời giải có suy luận:** Đặt v_n=u_n−1, khi đó v_{n+1}=2v_n và v_1=3, suy ra v_n=3·2^{n−1}. Hoặc quy nạp: công thức đúng n=1, thay vào truy hồi cho n+1 đúng.
 
-**D6 tự khắc phục:** Nếu nhầm u_{n+1}=2(u_n−1), khai triển và đối chiếu u_2.
+**Nếu làm sai:** Nếu nhầm u_{n+1}=2(u_n−1), khai triển và đối chiếu u_2.
 
 </details>
 
@@ -659,7 +661,7 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 6. Chứng minh tăng mọi n≥1 (1đ)
 7. Tính u_4 và kiểm lại (1đ)
 
-**D6 tự khắc phục:** Nếu nhầm 3u_n−2 thành 3(u_n−2), hãy khai triển; kiểm lại u_2.
+**Nếu làm sai:** Nếu nhầm 3u_n−2 thành 3(u_n−2), hãy khai triển; kiểm lại u_2.
 
 </details>
 
@@ -715,7 +717,7 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 **Lời giải có suy luận:** u_{n+1}−u_n=(3−2/(n+1))−(3−2/n)=2/[n(n+1)]>0 vì n≥1. Kết luận tăng với mọi chỉ số thuộc miền.
 
-**D6 tự khắc phục:** Thử n=1,2 để đoán rồi phải chứng minh dấu tổng quát.
+**Nếu làm sai:** Thử n=1,2 để đoán rồi phải chứng minh dấu tổng quát.
 
 </details>
 
@@ -765,7 +767,7 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 **Lời giải có suy luận:** Biến đổi u_n=2−3/(n+2). Vì n≥1 nên 0<3/(n+2)≤1; do đó 1≤u_n<2; dấu bằng trái tại n=1.
 
-**D6 tự khắc phục:** Đừng đánh đồng cận trên 2 với một giá trị dãy thực sự đạt.
+**Nếu làm sai:** Đừng đánh đồng cận trên 2 với một giá trị dãy thực sự đạt.
 
 </details>
 
@@ -805,7 +807,7 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 **Lời giải có suy luận:** Hiệu mỗi số sau trừ số trước luôn −3. Dãy CSC với số đầu 7, công sai −3 và số thứ n là 7+(n−1)(−3).
 
-**D6 tự khắc phục:** Kiểm dấu hiệu u_{n+1}−u_n không phụ thuộc n.
+**Nếu làm sai:** Kiểm dấu hiệu u_{n+1}−u_n không phụ thuộc n.
 
 </details>
 
@@ -855,7 +857,7 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 **Lời giải có suy luận:** Từ số hạng thứ nhất đến thứ 20 có 19 bước cộng d. u_{20}=−4+19·3=53.
 
-**D6 tự khắc phục:** Không nhầm n bước với n−1 bước.
+**Nếu làm sai:** Không nhầm n bước với n−1 bước.
 
 </details>
 
@@ -893,7 +895,7 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 **Lời giải có suy luận:** Khoảng cách chỉ số là 11−5=6 bước; d=(32−14)/6=3, suy ra u_1=u_5−4d=14−12=2.
 
-**D6 tự khắc phục:** Không chia hiệu giá trị cho 11 hay 5.
+**Nếu làm sai:** Không chia hiệu giá trị cho 11 hay 5.
 
 </details>
 
@@ -961,7 +963,7 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 **Lời giải có suy luận:** u_{15}=3+14·4=59. Ghép số hạng đầu và cuối: S_{15}=15(3+59)/2=465.
 
-**D6 tự khắc phục:** Nếu dùng n/2[2u_1+(n−1)d], bảo đảm n=15 và d=4.
+**Nếu làm sai:** Nếu dùng n/2[2u_1+(n−1)d], bảo đảm n=15 và d=4.
 
 </details>
 
@@ -984,7 +986,7 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 6. Tổng theo công sai (1đ)
 7. Đối chiếu và kết luận (1đ)
 
-**D6 tự khắc phục:** Đếm bước 10−4=6; n=20 có 19 lần tăng d.
+**Nếu làm sai:** Đếm bước 10−4=6; n=20 có 19 lần tăng d.
 
 </details>
 
@@ -1040,7 +1042,7 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 **Lời giải có suy luận:** Số ghế theo hàng là CSC với u_1=12,d=3,n=10. Hàng cuối 12+9·3=39; tổng S_{10}=10(12+39)/2=255. Ghế phải đếm số nguyên không âm.
 
-**D6 tự khắc phục:** Dùng n−1 khoảng tăng cho hàng cuối rồi mới tính tổng.
+**Nếu làm sai:** Dùng n−1 khoảng tăng cho hàng cuối rồi mới tính tổng.
 
 </details>
 
@@ -1092,7 +1094,7 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 **Lời giải có suy luận:** Tỉ số 6/(−3)=(−12)/6=24/(−12)=−2. Công bội âm làm dấu luân phiên; nhân 24 với −2 được −48.
 
-**D6 tự khắc phục:** Không lấy |q|=2 rồi làm mất dấu.
+**Nếu làm sai:** Không lấy |q|=2 rồi làm mất dấu.
 
 </details>
 
@@ -1130,7 +1132,7 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 **Lời giải có suy luận:** u_6=3(−2)^{6−1}=3(−32)=−96. Lũy thừa bậc lẻ của số âm là âm.
 
-**D6 tự khắc phục:** Nhớ số mũ n−1 và giữ dấu trong ngoặc.
+**Nếu làm sai:** Nhớ số mũ n−1 và giữ dấu trong ngoặc.
 
 </details>
 
@@ -1168,7 +1170,7 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 **Lời giải có suy luận:** u_4/u_2=q²=54/6=9 ⇒ q=3 hoặc q=−3. Với u_2=u_1q=6, suy ra u_1=2 khi q=3 và u_1=−2 khi q=−3. Kiểm lại u_4=u_1q³=54 trong cả hai trường hợp.
 
-**D6 tự khắc phục:** Không tự lấy căn q=+3 và bỏ nghiệm âm.
+**Nếu làm sai:** Không tự lấy căn q=+3 và bỏ nghiệm âm.
 
 </details>
 
@@ -1236,7 +1238,7 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 **Lời giải có suy luận:** S_6=5(2^6−1)/(2−1)=5·63=315. Vì q=2≠1 nên áp dụng tổng nhân hữu hạn; nếu q=1 thì phải dùng S_n=nu_1.
 
-**D6 tự khắc phục:** Phân biệt q≠1 với q=1; công thức có mẫu q−1 không dùng được khi q=1.
+**Nếu làm sai:** Phân biệt q≠1 với q=1; công thức có mẫu q−1 không dùng được khi q=1.
 
 </details>
 
@@ -1314,7 +1316,7 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 **Lời giải có suy luận:** |q|=1/3<1 nên S_∞=9/(1+1/3)=27/4. S_4=9[1−(−1/3)^4]/(1+1/3)=20/3. Phần dư=27/4−20/3=(81−80)/12=1/12.
 
-**D6 tự khắc phục:** Tổng vô hạn cần |q|<1; phần dư có dấu khi q âm.
+**Nếu làm sai:** Tổng vô hạn cần |q|<1; phần dư có dấu khi q âm.
 
 </details>
 
@@ -1337,7 +1339,7 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 6. Lập bất đẳng thức sai số (1đ)
 7. Tìm n=6 và loại n=5 (1đ)
 
-**D6 tự khắc phục:** Nếu chọn n=5, phân biệt 'nhỏ hơn' và 'nhỏ hơn hoặc bằng'.
+**Nếu làm sai:** Nếu chọn n=5, phân biệt 'nhỏ hơn' và 'nhỏ hơn hoặc bằng'.
 
 </details>
 
@@ -1353,7 +1355,7 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 **Lời giải có suy luận:** A_k=50+5k; B_k=50·1,1^k. Theo k=0,1,2,3, A lần lượt 50,55,60,65 và B lần lượt 50,55,60,5,66,55. Hiệu B_k−A_k lần lượt 0,0,0,5,1,55; do đó k=3 là chỉ số đầu tiên thỏa ≥1. Dãy bắt đầu ở kỳ 0, không phải số hạng đầu ở kỳ 1.
 
-**D6 tự khắc phục:** Lập bảng từng kỳ 0→3; giữ nguyên 5 khi cộng nhưng tính 10% trên số dư mới khi nhân.
+**Nếu làm sai:** Lập bảng từng kỳ 0→3; giữ nguyên 5 khi cộng nhưng tính 10% trên số dư mới khi nhân.
 
 </details>
 
@@ -1409,7 +1411,7 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 **Lời giải có suy luận:** Mỗi năm nhân số dư với 1,05: 8·1,05²=8·1,1025=8,82 (triệu). Đây là mô hình giả định, chưa trừ thuế/phí nếu có.
 
-**D6 tự khắc phục:** 5% là tỉ lệ theo năm, không phải cộng 0,05 triệu mỗi năm.
+**Nếu làm sai:** 5% là tỉ lệ theo năm, không phải cộng 0,05 triệu mỗi năm.
 
 </details>
 
@@ -1423,7 +1425,7 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 **Lời giải có suy luận:** Gửi cuối kỳ 1,2,3 được hưởng tương ứng 2,1,0 kỳ lãi: FV_cuối=40[(1,05)^2+1,05+1]=126,1. Gửi đầu kỳ 1,2,3 tương ứng thời điểm 0,1,2 nên mỗi khoản sinh lãi thêm một kỳ: FV_đầu=126,1·1,05=132,405. Chênh lệch =6,305. Các mốc thời gian quan trọng hơn tên công thức.
 
-**D6 tự khắc phục:** Vẽ các mốc 0–1–2–3 và ghi số kỳ hưởng lãi cho từng khoản trước khi cộng.
+**Nếu làm sai:** Vẽ các mốc 0–1–2–3 và ghi số kỳ hưởng lãi cho từng khoản trước khi cộng.
 
 </details>
 
@@ -1446,7 +1448,7 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 6. Phân biệt r=0 và tính A=21 (1đ)
 7. Giải thích lãi trước – trả sau, điều kiện mô hình (1đ)
 
-**D6 tự khắc phục:** Khi không tất toán, kiểm từng dòng theo đúng thứ tự: nhân số dư đầu kỳ với 1,1 rồi trừ khoản trả cuối kỳ.
+**Nếu làm sai:** Khi không tất toán, kiểm từng dòng theo đúng thứ tự: nhân số dư đầu kỳ với 1,1 rồi trừ khoản trả cuối kỳ.
 
 </details>
 
