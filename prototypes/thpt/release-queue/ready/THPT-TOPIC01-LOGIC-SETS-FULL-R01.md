@@ -17,9 +17,9 @@ ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOP
 ACADEMIC_SOURCE_BLOB: d4eafd811066997ee64de70a49c5da4a7ff26dcd
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC01_R06_AUTHOR_SELF_QA_RECEIPT_20261115.md (AUTHOR_SELF_QA, no fresh independent NotebookLM PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC01_R06_AUTHOR_SELF_QA_RECEIPT_20261115.md
-REVIEW_RECEIPT_BLOB: 64c22dabc98cb12f30542fe72f4af2f617fdbdfb
+REVIEW_RECEIPT_BLOB: 12868fe449d32f70fa1caf83f27be9571c4f1aae
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC01-LOGIC-SETS-FULL-R06_HANDOFF_V2_20261115.md
-AUTHOR_HANDOFF_BLOB: cdcd2ad40ba8c3991bfe741c4a1184f4ea9b315f
+AUTHOR_HANDOFF_BLOB: f889306cbbf1ae6be48350053be15c4ab5a41532
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_CANONICAL_SOURCE_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 09d36b0d289ebc54cc4ee51805503cf7f6e714f2
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_PUBLIC_EXTENSION_06ITEM_R01_20261112.md
@@ -49,7 +49,7 @@ TOPIC_SELF_CHECK: PUBLIC_REPLAY_11_NO_MASTERY
 
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — new CĐ01 student-first source `d4eafd811066997ee64de70a49c5da4a7ff26dcd`, QA receipt `64c22dabc98cb12f30542fe72f4af2f617fdbdfb`, 18 immutable original + six newly authored PUBLIC formative canonical questions, single V2 handoff.
+- [x] A1_SOURCE_SNAPSHOT — new CĐ01 student-first source `d4eafd811066997ee64de70a49c5da4a7ff26dcd`, QA receipt `12868fe449d32f70fa1caf83f27be9571c4f1aae`, 18 immutable original + six newly authored PUBLIC formative canonical questions, single V2 handoff.
 - [x] A2_SGK_SBT_SCOPE — S1 source *reference only*, prior independent original receipt KNTT G10 T1 B01 printed SGK 5–11/SBT5–7; B02 SGK12–19/SBT8–11. Catalog CĐ01/22 is the organizing unit, not SGK chapters.
 - [x] A3_NOTEBOOKLM_VERDICT — original 18 SGK public bank academic NotebookLM PASS on historic frozen source SHA `95a554e31a613b8e215679fe6790738473d598df` only; CĐ01 R06 complete 11-outcome Delta C verified by exact-source author self-Q18 receipt: 11 standalone examples, 24 displayed original canonical stems/solutions and 2 Written rubrics, NO claim of new independent reviewer PASS.
 - [x] A4_ITEM_OUTCOME_IDS — 11/11 Topic outcomes, 24 distinct PUBLIC canonical IDs (18 previous/6 original new), 2 original Written with single rubric, 11 reused public selfcheck placements NO_MASTERY.
