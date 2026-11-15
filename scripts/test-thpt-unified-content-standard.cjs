@@ -122,6 +122,10 @@ function validate(source, agents, queue) {
        if(line.split("|").length!==6||!line.includes("**Phép kiểm bắt buộc:**")||!line.includes("**Phản chứng chặn PASS giả:**"))
          fail("QXX_MISSING_DIRECT_EVIDENCE_AND_NEGATIVE_TEST:"+ids[i]);
      }
+     // Catch shadow Qxx criterion rows ANYWHERE outside the single §II matrix.
+     const outside=[...source.matchAll(/^\|\s*\*\*(Q\d\d)\b/gm)]
+       .filter(match=>match.index<m||match.index>=n);
+     if(outside.length)fail("DUPLICATE_QXX_ROW_OUTSIDE_CANONICAL_MATRIX:"+outside.map(x=>x[1]).join(","));
      const repeated=source.slice(a,b);
      if(/^\|\s*\*\*Q\d\d\b/m.test(repeated))fail("DUPLICATE_EXECUTION_Q_MATRIX");
      if(!repeated.includes("không lặp tiêu chí"))fail("SINGLE_TABLE_PROCEDURE_LINK_MISSING");
@@ -206,6 +210,9 @@ function selfTest(){
    assert(validate(wrongTopic,"","").failures.includes("TOPIC_Q17_MUST_REMAIN_THREE_PAGE_PATH"));
    const ghost=full.replace("### VIII.3. Kiểm đối chứng chống tái diễn","| **Q14 GHOST** | Không được có bảng phụ |\n### VIII.3. Kiểm đối chứng chống tái diễn");
    assert(validate(ghost,"","").failures.includes("DUPLICATE_EXECUTION_Q_MATRIX"));
+   const shadow=full.replace("| **RELEASE AP1–AP5**","| **Q18 SHADOW** | duplicate definition | shadow evidence | shadow verdict |\n| **RELEASE AP1–AP5**");
+   assert(validate(shadow,"","").failures.some(e=>e.startsWith("DUPLICATE_QXX_ROW_OUTSIDE_CANONICAL_MATRIX")),
+     "A Qxx row in §VI must be rejected even with one valid §II matrix");
    const noMethod=full.replace("**Phép kiểm bắt buộc:**","[METHOD_OMITTED]");
    assert(validate(noMethod,"","").failures.some(e=>e.startsWith("QXX_MISSING_DIRECT_EVIDENCE")));
    const noB=full.replace("### VIII.3. Kiểm đối chứng chống tái diễn","### VIII.3. [REMOVED]");
