@@ -18,7 +18,7 @@ Ta xét dãy \(u_n=2+1/n\) với \(n\) nguyên dương. Mọi số hạng đều
 
 Nói chính xác, \(u_n\to L\) nếu với mọi \(\varepsilon>0\), từ một chỉ số đủ lớn trở đi luôn có \(|u_n-L|<\varepsilon\). Trong ví dụ, chỉ cần chọn \(N>1/\varepsilon\) và \(n\ge N\), ta được \(1/n<\varepsilon\). Việc chứng minh bằng khoảng cách cho thấy công thức giới hạn không chỉ là phép thế \(n=\infty\), mà là một khẳng định về mọi mức sai số.
 
-![Các điểm dãy số tiến gần đường giới hạn L](../../visuals/THPT_TOPIC08_SEQUENCE_LIMIT_R01.svg)
+![Các điểm dãy số tiến gần đường giới hạn L](../../visuals/THPT_TOPIC08_SEQUENCE_LIMIT_R05.svg)
 
 *Đọc hình:* Đồ thị gồm đúng **tám điểm** \((n,2+1/n)\) với \(n=1,\ldots,8\). Từng điểm đều nằm **phía trên** đường ngang \(L=2\) và không chạm đường này; chỉ số \(n\) là số nguyên. Chính khoảng cách \(1/n\) giảm dần mới giải thích giới hạn, không phải việc kéo dài nét vẽ thành một đường liên tục.
 
@@ -363,9 +363,9 @@ Ngay tại hình này, ta xét hàm từng đoạn \(f(x)=x+2\) khi \(x<0\), cò
 
 **Ví dụ**
 
-**Đề bài:** Cho \(h(x)=\dfrac{x^2-1}{x-1}\) nếu \(x\ne1\) và \(h(1)=0\). Phân loại gián đoạn và cách sửa.
+**Đề bài:** Xét \(g(x)=\dfrac1{(x-3)^2}\) khi \(x\ne3\). Phân loại hành vi tại \(x=3\); có thể làm liên tục bằng cách bổ sung duy nhất \(g(3)\) không?
 
-**Lời giải:** Với \(x\ne1\), \(h(x)=x+1\) nên giới hạn hai phía bằng \(2\), trong khi \(h(1)=0\). Đây là **gián đoạn có thể khử**; đổi riêng \(h(1)\) thành \(2\) sẽ liên tục. Khác với hình nhảy ở \(x=0\), nơi hai giới hạn một phía không bằng nhau.
+**Lời giải:** Khi \(x\to3^-\) hoặc \(x\to3^+\), mẫu \((x-3)^2\) luôn dương và tiến \(0^+\), nên cả hai phía \(g(x)\to+\infty\). Đây là gián đoạn vô cực: không có giới hạn hữu hạn ở \(3\), vì vậy không thể sửa tính liên tục chỉ bằng gán một giá trị tại \(3\).
 
 **Vận dụng** Nếu g(x)=(x²−1)/(x−1) với x≠1 và g(1)=3, thuộc kiểu gián đoạn nào?
 
