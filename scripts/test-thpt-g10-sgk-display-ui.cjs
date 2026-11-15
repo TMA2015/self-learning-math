@@ -22,9 +22,37 @@ for(const [chapter,nums] of Object.entries(listed))for(const num of nums){
  assert(!/Ví dụ giải mẫu|Ví dụ đã giải|Ví dụ mẫu có giải thích|Ví dụ từng bước|Ví dụ có kiểm tra/.test(source),
   "B"+num+": redundant example labels are not learner-facing");
  if(num===1||num===2){
-   const subs=[...source.matchAll(/^    ### (2\.\d+)\. /gm)].map(m=>m[1]);
-   assert.deepEqual(subs,["2.1","2.2","2.3","2.4"],
-    "B"+num+": keep four SGK concept subsections and hierarchical numbering");
+   const subs=[...source.matchAll(/^    ### (2\\.\\d+)\\. /gm)].map(m=>m[1]);
+   // SGK KNTT Toán 10 T1 printed pp5–11: B01 has FIVE original source
+   // sections; B02 retains its own separate structure. Never force the
+   // two lessons into an obsolete identical four-section structure.
+   const expected=num===1
+     ?["2.1","2.2","2.3","2.4","2.5"]
+     :["2.1","2.2","2.3","2.4"];
+   assert.deepEqual(subs,expected,
+     "B"+num+": original SGK section parity and hierarchical numbering");
+   if(num===1){
+     const names=[
+       "Mệnh đề và mệnh đề chứa biến",
+       "Phủ định một mệnh đề",
+       "Mệnh đề kéo theo và mệnh đề đảo",
+       "Mệnh đề tương đương",
+       "Mệnh đề có chứa kí hiệu"
+     ];
+     const headings=[...source.matchAll(/^    ### 2\\.\\d+\\. (.+)$/gm)].map(m=>m[1]);
+     for(let i=0;i<names.length;i++)
+       assert(headings[i].includes(names[i]),"B01: S1 content/section "+(i+1)+" changed");
+     const ids=[...source.matchAll(/data-thpt-first-try-id="([^"]+)"/g)].map(m=>m[1]);
+     assert.equal(ids.length,5,"B01: preserve exactly five Q14 first-try hooks");
+     assert.equal(new Set(ids).size,5,"B01: first-try IDs cannot be duplicated");
+     assert(source.includes("### 1.3. “Mọi” và “có ít nhất một”"),
+       "B01: preserve independently reviewed quantifier concept formation before formalization");
+     const receipt=read("prototypes/thpt/ux795/G10_CHI_B01_KNOWLEDGE_ENRICHMENT_DELTA_RECEIPT_R01_20261115.md");
+     const sourceBlob=require("node:crypto").createHash("sha1")
+       .update("blob "+Buffer.byteLength(source)+"\\0"+source).digest("hex");
+     assert(receipt.includes("**CANDIDATE_LESSON_GIT_BLOB:** \`"+sourceBlob+"\`"),
+       "B01: candidate source/QA receipt Git blob must match actual bytes");
+   }
  }
  if([3,5,6].includes(num)){
    const opens=(source.match(/^    \\\[$/gm)||[]).length,closes=(source.match(/^    \\\]$/gm)||[]).length;
