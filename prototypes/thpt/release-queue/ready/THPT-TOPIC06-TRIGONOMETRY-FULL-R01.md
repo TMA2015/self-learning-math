@@ -1,4 +1,4 @@
-# CĐ06 — Lượng giác và phương trình lượng giác · AUTHORING CONTENT_READY R04 (stable R01 packet)
+# CĐ06 — Lượng giác và phương trình lượng giác · AUTHORING CONTENT_READY R05 (stable R01 packet)
 
 PACKET_ID: THPT-TOPIC06-TRIGONOMETRY-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -8,17 +8,17 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 98ab899168799533ac89b11c11d0766349e4e3be
+SOURCE_COMMIT: 1d87b7229fdac4ae49296d9cd4f44c03ac474a6b
 CURRENT_PR: Draft AUTHORING branch authoring/topic06-trigonometry-r01-20261112, not merged/deployed
 CATALOG_TOPIC_ID: CD06
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_CONTINUOUS_KNOWLEDGE_ARCS_R04_REVIEW_CANDIDATE_20261113.md
-ACADEMIC_SOURCE_BLOB: 9fee274efababcf7ffd91c78c7e39e89191f17c0
-REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC06_CONTINUOUS_R04_AUTHOR_SELF_QA_RECEIPT_20261113.md (Q18 AUTHOR_SELF_VERIFIED, not independent NotebookLM PASS)
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC06_CONTINUOUS_R04_AUTHOR_SELF_QA_RECEIPT_20261113.md
-REVIEW_RECEIPT_BLOB: e1bc155ebed00b787313ccdeb9d765d5771ff96e
-AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC06-TRIGONOMETRY-FULL-R04_HANDOFF_V2_20261113.md
-AUTHOR_HANDOFF_BLOB: b1351f9d121257197d2e1a7acdbf2ff2b74aa6df
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R05_STUDENT_FIRST_66_CANONICAL_20261115.md
+ACADEMIC_SOURCE_BLOB: dd3af68f681eba9a7b75040d9490815f81efdd6b
+REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC06_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md (Q18 AUTHOR_SELF_VERIFIED, not independent NotebookLM PASS)
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC06_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
+REVIEW_RECEIPT_BLOB: 8f4d721ec8ab5b08baaf0a19c7aeaf2aa9cf454f
+AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC06-TRIGONOMETRY-FULL-R05_HANDOFF_V2_20261115.md
+AUTHOR_HANDOFF_BLOB: 8b2ff05a38e470d8e656932a60951a4e0d6353ab
 PUBLIC_ORIGINAL_SGK_SOURCE_BLOB: 256ceb5edc5e02aec320e83e99c8e08e035654f3
 PUBLIC_ORIGINAL_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC06_TRIGONOMETRY_ORIGINAL46_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_ORIGINAL_INDEX_BLOB: d8279df37c9dcd74a0b26f0da389baf7d53ecf64
@@ -41,13 +41,21 @@ MASTERY_ACTIVATION: NO
 RELEASE_AUTHORIZATION: NO
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
+CURRENT_CONTENT_REVISION: R05
+PREVIOUS_R04_ACADEMIC_BLOB: 9fee274efababcf7ffd91c78c7e39e89191f17c0
+PREVIOUS_R04_Q18_RECEIPT_BLOB: e1bc155ebed00b787313ccdeb9d765d5771ff96e
+EDITORIAL_CHECKLIST: Issue #864, 13 owner-approved checks within single Q01–Q18
+REGRESSION_LEDGER: Issue #865, check L01–L41 and record new CĐ06 defects
+LEARNER_PRACTICE: 66 original canonical stem/key/solution projections, 8 original /7 Written rubrics
+SELF_CHECK: 16 real PUBLIC reused question stems; CLIENT_SELF_CHECK_NO_MASTERY, official readiness NOT_CLAIMED
+
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — CĐ06 learner source blob c5fc856cdc..., Q18 self QA receipt blob 9afafbad..., one canonical new bank f83b285f... and original SGK index d8279df3...
+- [x] A1_SOURCE_SNAPSHOT — CURRENT R05 learner source blob dd3af68f681eba9a7b75040d9490815f81efdd6b, exact Q18 author receipt blob 8f4d721ec8ab5b08baaf0a19c7aeaf2aa9cf454f, immutable original46 index d8279df3..., original new20 bank f83b285f..., one updated V2 handoff 8b2ff05a38e470d8e656932a60951a4e0d6353ab.
 - [x] A2_SGK_SBT_SCOPE — SGK KNTT G11 T1 B01–B04 printed 5–39, end 40–41; SBT original receipts printed B01 4–7, B02 8–10, B03 11–18, B04 19–24; historically visually verified not newly PDF-scanned in this turn.
 - [x] A3_NOTEBOOKLM_VERDICT — `AUTHOR_SELF_VERIFIED` v3.1.0 on new exact source; prior SGK ChI independent reviewer only for historic SGK snapshot, no fresh NotebookLM claim.
-- [x] A4_ITEM_OUTCOME_IDS — 16 Topic modules/outcomes mapped to 66 canonical public IDs (46 references+20 originals) with 16 reuse-only public check placements.
-- [x] A5_D1_D6_SCOPE — 16 WHY/prerequisite/meaning/examples/first tries/D6, 3 source math SVG, 4 new Written/rubric /7, two labs SPEC_ONLY.
+- [x] A4_ITEM_OUTCOME_IDS — 16 outcomes mapped to 66/66 actually visible original canonical Practice questions/solutions (46 SGK +20 Topic), eight original Written rubric /7, and 16 public reuse-only selfcheck questions.
+- [x] A5_D1_D6_SCOPE — 16 WHY/prerequisite/meaning + 16 independently authored labelled Ví dụ/Đề bài/Lời giải, 16 Vận dụng/Đối chiếu and targeted D6, three real SVG, eight source Written rubrics /7; two optional labs SPEC_ONLY not runtime.
 - [x] A6_DELTA_RESOLVED — Zero private RD1 imported, no independent TOPIC_READINESS or Skill Mastery; Final Submit runtime enforcement belongs to RELEASE.
 - [x] A7_PUBLIC_PRIVATE_BOUNDARY — one signed Q18 receipt, one V2 handoff, one manifest ready and one REGISTER row; repository CI needed on exact HEAD, no separate academic approval.
 
