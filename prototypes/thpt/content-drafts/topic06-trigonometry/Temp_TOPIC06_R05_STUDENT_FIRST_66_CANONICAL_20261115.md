@@ -54,9 +54,9 @@ Chẳng hạn, tại góc \(135^\circ\) (góc phần tư II) trên hình, \(\cos
 
 **Ví dụ**
 
-**Đề bài.** Biết \(\cos\alpha=-5/13\), góc \(\alpha\) thuộc phần tư II. Tính \(\sin\alpha,\tan\alpha\).
+**Đề bài.** Biết \(\cos\alpha=-12/13\), góc \(\alpha\) thuộc phần tư II. Tính \(\sin\alpha,\tan\alpha\).
 
-**Lời giải.** \(\sin^2\alpha=1-25/169=144/169\). Phần tư II sin dương nên \(\sin\alpha=12/13\); cos khác 0 nên \(\tan\alpha=-12/5\). Chọn dấu theo phần tư trước khi lấy căn.
+**Lời giải.** \(\sin^2\alpha=1-144/169=25/169\). Phần tư II sin dương nên \(\sin\alpha=5/13\); cos khác 0 nên \(\tan\alpha=-5/12\). Chọn dấu theo góc phần tư trước khi lấy căn.
 
 **Vận dụng**
 
@@ -366,9 +366,9 @@ Chẳng hạn, Sin(2x)=√3/2: 2x=π/3+2kπ hoặc 2π/3+2kπ ⇒ x=π/6+kπ ho�
 
 **Ví dụ**
 
-**Đề bài.** Giải \(\cos3x=-1/2\) trên \(\mathbb R\).
+**Đề bài.** Giải \(\cos(2x)=\sqrt2/2\) trên \(\mathbb R\).
 
-**Lời giải.** \(3x=\pm2\pi/3+2k\pi\), suy ra \(x=\pm2\pi/9+2k\pi/3\), \(k\in\mathbb Z\). Dấu \(\pm\) là hai họ khác nhau, không chỉ một góc.
+**Lời giải.** \(\cos\theta=\sqrt2/2\) khi \(\theta=\pm\pi/4+2k\pi\). Đặt \(\theta=2x\) và chia hai vế cho 2, được \(x=\pm\pi/8+k\pi\), \(k\in\mathbb Z\). Hai dấu cho hai họ; kiểm lại bằng \(\cos(\pm\pi/4+2k\pi)=\sqrt2/2\).
 
 **Vận dụng**
 
@@ -394,9 +394,9 @@ Xét ví dụ: Tan(x+π/4)=−1 ⇒ x+π/4=−π/4+kπ ⇒ x=−π/2+kπ. Thế 
 
 **Ví dụ**
 
-**Đề bài.** Giải \(\cot2x=1\) trên \(\mathbb R\).
+**Đề bài.** Giải \(\tan(3x)=\sqrt3\) trên \(\mathbb R\).
 
-**Lời giải.** \(\cot\theta=1\) khi \(\theta=\pi/4+k\pi\). Vậy \(x=\pi/8+k\pi/2\), \(k\in\mathbb Z\); mọi nghiệm có \(\sin2x\ne0\), thỏa điều kiện cot.
+**Lời giải.** Điều kiện \(\cos(3x)\ne0\). Từ \(\tan\theta=\sqrt3\) suy ra \(\theta=\pi/3+k\pi\), nên \(x=\pi/9+k\pi/3\), \(k\in\mathbb Z\). Tại mọi nghiệm \(\cos(3x)=\pm1/2\ne0\), các nghiệm đều hợp lệ.
 
 **Vận dụng**
 
