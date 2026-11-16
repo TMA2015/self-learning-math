@@ -1,4 +1,4 @@
-# CĐ02 — Bất đẳng thức, dấu tam thức bậc hai và miền nghiệm · AUTHORING CONTENT_READY R05 (stable R01 packet)
+# CĐ02 — Bất đẳng thức, dấu tam thức bậc hai và miền nghiệm · AUTHORING CONTENT_READY R05 (stable R06 packet)
 
 PACKET_ID: THPT-TOPIC02-INEQ-QUAD-REGION-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -8,18 +8,18 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: e2cef311e310306a2542378356dc892cd236b5a7
+SOURCE_COMMIT: b798a47f8cb9e2f16708c5f3ae732f56c1b393db
 AUTHOR_PR: 818
 CURRENT_PR: #818 Draft AUTHORING; no merge or deploy
 CATALOG_TOPIC_ID: CD02
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R05_FULL_LEARNER_VISIBLE_38_CANONICAL_20261115.md
-ACADEMIC_SOURCE_BLOB: eb5a01b50262dc4b151b3915f5a5e4b436432374
-REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC02_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md (AUTHOR_SELF_QA only, not a new independent reviewer PASS)
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC02_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
-REVIEW_RECEIPT_BLOB: 19a8ce12552d94add042dc2127a054d20cd29027
-AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC02-INEQ-QUAD-REGION-FULL-R05_HANDOFF_V2_20261115.md
-AUTHOR_HANDOFF_BLOB: 712a1334c992abef507688f7e96719288051db42
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R06_NUMBERING_CONSISTENT_20261116.md
+ACADEMIC_SOURCE_BLOB: 41a3d0497057217368ba63fecfa43d118f3e4519
+REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC02_R06_NUMBERING_DELTA_A_Q18_20261116.md (AUTHOR_SELF_QA only, not a new independent reviewer PASS)
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC02_R06_NUMBERING_DELTA_A_Q18_20261116.md
+REVIEW_RECEIPT_BLOB: 09ad994ded632d4f9951f4bb53e3872e64e82db3
+AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC02-INEQ-QUAD-REGION-FULL-R06_HANDOFF_V2_NUMBERING_20261116.md
+AUTHOR_HANDOFF_BLOB: 32c07c5d01ec498aea930bf5bfa3591fdfe2872e
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC02_INEQ_QUAD_REGION_ORIGINAL18_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 6412d01a5d2c9b04c6f97d5b6a41c43e85d1c2df
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC02_INEQ_QUAD_REGION_ORIGINAL20_EXTENSION_R01_20261112.md
@@ -53,7 +53,7 @@ PUBLIC_SELF_CHECK: 16 public replay questions, no Mastery/heldout score
 
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — Một Topic source eb5a01b50262dc4b151b3915f5a5e4b436432374, receipt 19a8ce12552d94add042dc2127a054d20cd29027, 18 bank index +20 extension + một V2 handoff; source SHA đúng mọi file.
+- [x] A1_SOURCE_SNAPSHOT — Một Topic source 41a3d0497057217368ba63fecfa43d118f3e4519, receipt 09ad994ded632d4f9951f4bb53e3872e64e82db3, 18 bank index +20 extension + một V2 handoff; source SHA đúng mọi file.
 - [x] A2_SGK_SBT_SCOPE — CĐ02 gốc theo danh mục 22; KNTT G10 T1 B03 SGK 22–25/SBT16–18, B04 SGK26–30/SBT19–23; B17 G10 T2 SGK19–24/SBT16–18, no new scan claim.
 - [x] A3_NOTEBOOKLM_VERDICT — Original 18 immutable G10 ChII reviewed independent 18/18 PASS on old SHA only; new R04 Topic Delta C Q18 AUTHOR_SELF_VERIFIED 16 outcome + 20 novel item solution checks; no invented NotebookLM Topic PASS.
 - [x] A4_ITEM_OUTCOME_IDS — 16/16 outcome IDs, 38 distinct PUBLIC canonical IDs (18 old+20 new), 4 Written (2 old+2 new), each one rubric/7, 16 public selfcheck reuses no IDs minted.
@@ -86,3 +86,9 @@ PUBLIC_SELF_CHECK: 16 public replay questions, no Mastery/heldout score
 - [ ] P2_DEVICE_UAT — Chưa được chủ dự án nghiệm thu trải nghiệm trên thiết bị thật; cần kiểm Safari, iPad, iPhone và khả năng tự học.
 
 **Q16:** CĐ02 có 16 placement Tự kiểm tra công khai reuse, không phải đánh giá độc lập, không ghi Mastery. RD1 private imported zero bytes, 0-byte hash ở trên không phải digest bank kín. Hình và model interaction chỉ đặc tả; RELEASE tự quyết và QA triển khai trên current main. Không chỉnh SGK, THCS, Golden UI, Firebase hoặc dữ liệu người học trong AUTHORING.
+
+## R06 numbering DELTA_A_UI · source-custody checkpoint 16/11/2026
+
+- H1 3 pages; numbered H2 groups and 1.1 H3 lessons with no missing predecessor; Practice question labels use scoped bold, not H4.
+- Source SHA `41a3d0497057217368ba63fecfa43d118f3e4519`, source-equivalent author Q18 `09ad994ded632d4f9951f4bb53e3872e64e82db3`, metadata `3cc08a29d6ea132e2e70524b9a95c79a2f9ebe88`, V2 `32c07c5d01ec498aea930bf5bfa3591fdfe2872e`. Historical sources and receipts unchanged; math/answers/rubrics/D6 preserved by identical full reveal block and item ID comparison.
+- AUTHORING CONTENT_READY only; not fresh NotebookLM academic review, RELEASE browser/Golden QA, MERGED or PUBLISHED.
