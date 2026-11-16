@@ -22,6 +22,7 @@ on:
       - "prototypes/thpt/ux795/G10_CHVII_B19_B22_S1_Q18_GOLDEN_ENRICHMENT_RECEIPT_20261113.md"
       - "scripts/test-thpt-chvi-math-block-render.cjs"
       - "scripts/test-thpt-chvi-student-notes.cjs"
+      - "prototypes/thpt/ux795/G10_CHIII_B05_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md"
       - ".github/workflows/ux795-g10-draft-render-qa.yml"
 
 permissions:
@@ -148,6 +149,12 @@ jobs:
           fi
           if [[ -f prototypes/thpt/ux795/G10_CHVII_B19_B22_S1_Q18_GOLDEN_ENRICHMENT_RECEIPT_20261113.md ]]; then
             cp prototypes/thpt/ux795/G10_CHVII_B19_B22_S1_Q18_GOLDEN_ENRICHMENT_RECEIPT_20261113.md integration-main/prototypes/thpt/ux795/
+          fi
+          # Exact B05 Q18 receipt must accompany the new canonical DEG First Try
+          # when replayed in the temporary main+candidate checkout.
+          # This is QA-only; not a production artifact mutation.
+          if [[ -f prototypes/thpt/ux795/G10_CHIII_B05_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md ]]; then
+            cp prototypes/thpt/ux795/G10_CHIII_B05_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md integration-main/prototypes/thpt/ux795/
           fi
           cp scripts/test-ux795-g10-postmerge-headings.cjs integration-main/scripts/
           (
