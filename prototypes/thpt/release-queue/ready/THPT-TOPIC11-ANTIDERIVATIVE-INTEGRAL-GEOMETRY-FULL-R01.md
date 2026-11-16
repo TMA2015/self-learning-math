@@ -1,4 +1,4 @@
-# CĐ11 — Nguyên hàm, Tích phân và Ứng dụng hình học · AUTHORING CONTENT_READY R05 (stable PACKET_ID R01)
+# CĐ11 — Nguyên hàm, Tích phân và Ứng dụng hình học · AUTHORING CONTENT_READY R06 (stable PACKET_ID R01)
 
 PACKET_ID: THPT-TOPIC11-ANTIDERIVATIVE-INTEGRAL-GEOMETRY-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -8,18 +8,18 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: f753f1031f85e0aeb2608330da6518e63532c01e
+SOURCE_COMMIT: c923051bd886e970df450d56df6158f64cf54a16
 AUTHOR_PR: 834
 CURRENT_PR: https://github.com/TMA2015/self-learning-math/pull/834 — DRAFT AUTHORING, not merged/deployed
 CATALOG_TOPIC_ID: CD11
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R05_STUDENT_FIRST_116_CANONICAL_VISIBLE_20261116.md
-ACADEMIC_SOURCE_BLOB: 7d8eac917be4f7688a8a718e54cce4a84bc055ef
-REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC11_R05_AUTHOR_SELF_QA_RECEIPT_20261116.md (Q18 AUTHOR_SELF_VERIFIED v3.1.0, not new independent NotebookLM PASS)
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC11_R05_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: c6df9cdc86b8f3df9d163e8c6e4c16a6e7d48c15
-AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC11-ANTIDERIVATIVE-INTEGRAL-GEOMETRY-FULL-R05_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: 735598387e1eaebc94a8188b4235c052cbfde15d
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md
+ACADEMIC_SOURCE_BLOB: 58b16f7c442d560f3950aafdbaf1f686e1e337e4
+REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC11_R06_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md (Q18 AUTHOR_SELF_VERIFIED v3.1.0, not new independent NotebookLM PASS)
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC11_R06_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
+REVIEW_RECEIPT_BLOB: ee42fcc98ccc51fef08a7eabdbf99032b0110c27
+AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC11-ANTIDERIVATIVE-INTEGRAL-GEOMETRY-FULL-R06_HANDOFF_V2_NUMBERING_20261116.md
+AUTHOR_HANDOFF_BLOB: b3d423b0668a8dd5e74e865c526f6e234675218c
 PUBLIC_ORIGINAL88_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_ORIGINAL88_SGK_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_ORIGINAL88_INDEX_BLOB: 672fdce0c02ebf4f6ae6b37b331ca59e259d9b5c
 PUBLIC_NEW28_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_NEW28_PUBLIC_CANONICAL_R05_20261116.md
@@ -53,14 +53,22 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
 - **22/22** outcome with fully worked original examples, 22 Vận dụng–Đối chiếu immediately after each outcome; 4 coherent arcs and exact 3 Topic learner pages with no Topic Core.
 - **116/116** visible canonical Practice stems and source-exact answers/solutions, **28/28** Written rubric (22 original SGK +6 Topic), **116 D6**, **22 public selfchecks P01–P22 question-only** from previously exposed Practice. Not independent Topic Readiness; `CLIENT_SELF_CHECK_NO_MASTERY`; no private RD1.
-- Current learner source SHA `7d8eac917be4f7688a8a718e54cce4a84bc055ef`, R05 signed `Q18_AUTHOR_SELF_VERIFIED` receipt `c6df9cdc86b8f3df9d163e8c6e4c16a6e7d48c15` on exact source; **266/266** canonical/PED and **26/26** math/SVG checks PASS. Never claim NotebookLM independent Topic PASS.
+- Current learner source SHA `58b16f7c442d560f3950aafdbaf1f686e1e337e4`, R05 signed `Q18_AUTHOR_SELF_VERIFIED` receipt `ee42fcc98ccc51fef08a7eabdbf99032b0110c27` on exact source; **266/266** canonical/PED and **26/26** math/SVG checks PASS. Never claim NotebookLM independent Topic PASS.
 - Original 88 SGK source `45722cd386a498f3e0e96a09928c85565af56d1b`, index `672fdce0c02ebf4f6ae6b37b331ca59e259d9b5c` unchanged. Active NEW28 R05 bank `6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0`; P22 `content_version=3` corrects only D6 false x=4 lesson reference; correct answer **2π** preserved.
 - Four Topic SVG independently checked, distinguish SGK's six original PNG review images. R04 student `3b998d76120485502e33c5d5d131210d1f7ef444`, Q18 `9ef3bcf042cbe6bdae76ca4dde4101da012d9b85`, V2 `18ed3034bbdf773296e6293b91a11a874a09bc0c` untouched historical.
 - RELEASE separately owns UI/Golden/MathJax/SVG/Final Submit/device QA and owner authorization. Draft PR #834 only; **NO MERGE/DEPLOY**.
 
+
+## R06 numbering Delta-A — AUTHORING QA
+
+- Consistent numbered H2/H3 hierarchy, 4 Practice groups, 22 H3 lessons and 116 stable canonical Practice placements. Q15/Q16 metadata moved to HTML comment outside learner solution reveal, no extra H2.
+- Active source `58b16f7c442d560f3950aafdbaf1f686e1e337e4`, Q18 source-equivalent `ee42fcc98ccc51fef08a7eabdbf99032b0110c27`, one R06 V2 `b3d423b0668a8dd5e74e865c526f6e234675218c`; R05 source `7d8eac917be4f7688a8a718e54cce4a84bc055ef`, Q18 `c6df9cdc86b8f3df9d163e8c6e4c16a6e7d48c15`, V2 `735598387e1eaebc94a8188b4235c052cbfde15d` preserved immutable.
+- Every source-locked item_id/answer/explanation/rubric/D6 and 22 public question-only selfchecks unchanged, DELTA_A_UI. No new independent math review or NotebookLM verdict.
+- RELEASE browser/GOLDEN/MathJax/anchor responsive/Final Submit and owner merge/deploy permission separate.
+
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — learner SOURCE Git blob 7d8eac917be4f7688a8a718e54cce4a84bc055ef, Q18 signed receipt c6df9cdc86b8f3df9d163e8c6e4c16a6e7d48c15, original88 immutable-reference index 672fdce0c02ebf4f6ae6b37b331ca59e259d9b5c, NEW28 single bank 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0, one V2 handoff 735598387e1eaebc94a8188b4235c052cbfde15d, four NEW SVG with exact Git SHA readback.
+- [x] A1_SOURCE_SNAPSHOT — learner SOURCE Git blob 58b16f7c442d560f3950aafdbaf1f686e1e337e4, Q18 signed receipt ee42fcc98ccc51fef08a7eabdbf99032b0110c27, original88 immutable-reference index 672fdce0c02ebf4f6ae6b37b331ca59e259d9b5c, NEW28 single bank 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0, one V2 handoff b3d423b0668a8dd5e74e865c526f6e234675218c, four NEW SVG with exact Git SHA readback.
 - [x] A2_SGK_SBT_SCOPE — KNTT G12 Tập2 ChIV B11 SGK printed4–11/PDF1 6–13, B12 12–18/14–20, B13 19–26/21–28,end27–28/29–30; SBT B11 3–8/2–7, B12 9–13/8–12, B13 14–18/13–17,end19–21/18–20. Owner original publisher scan SHA exact in receipt; no fresh PDF scan claimed.
 - [x] A3_NOTEBOOKLM_VERDICT — Q18 `AUTHOR_SELF_VERIFIED` v3.1.0 with 53/53 direct checks+12/12 stronger numerical integration/error checks, author P0/P1=0, 22 outcome QA. Original SGK v2.1 independent Academic/PED PASS remains only on unchanged SGK R00 source, NOT inherited Topic PASS.
 - [x] A4_ITEM_OUTCOME_IDS — 22 lesson IDs,22 outcomes,116 unique PUBLIC canonical IDs and one full V2 item→outcome→role map, 88 original SGK pointer-only+28 new. 22 public Self Check placements reference new P01–P22 only.
