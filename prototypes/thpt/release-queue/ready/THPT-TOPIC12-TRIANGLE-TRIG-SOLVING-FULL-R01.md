@@ -1,4 +1,4 @@
-# CĐ12 — Hệ thức lượng trong tam giác và giải tam giác · AUTHORING CONTENT_READY R03 (stable packet R01)
+# CĐ12 — Hệ thức lượng trong tam giác và giải tam giác · AUTHORING CONTENT_READY R04 (stable packet R01)
 
 PACKET_ID: THPT-TOPIC12-TRIANGLE-TRIG-SOLVING-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -8,18 +8,18 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: d905471462d96ba170c7922922b5c3a3f2fc6300
+SOURCE_COMMIT: f226e396985c6028380977522bbad54dc6a4f86a
 CATALOG_TOPIC_ID: CD12
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R03_LEARNER_FIRST_34_CANONICAL_VISIBLE_20261116.md
-ACADEMIC_SOURCE_BLOB: e74f32b1092d571af0091174a55104e7d3bec5b5
-REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC12_R03_AUTHOR_SELF_QA_RECEIPT_20261116.md (self-QA, not independent Topic NotebookLM review)
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC12_R03_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: d8ad3986da4776260c950cca337e0407da015252
-AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC12-TRIANGLE-TRIG-SOLVING-FULL-R03_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: 2b60071f2a7175d528682d5cb06d9d4f0a222047
-AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R03_AUTHORING_ONLY_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: 7decc64c105d7b3eba70d99c95ab7a6cdc2e5b4d
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_NUMBERING_CONSISTENT_20261116.md
+ACADEMIC_SOURCE_BLOB: ec90cab8455768b263f8d57409587c28f250340a
+REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC12_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md (self-QA, not independent Topic NotebookLM review)
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC12_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
+REVIEW_RECEIPT_BLOB: 6974062fc1f127a7b040d653093ffc5f3c40fabf
+AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC12-TRIANGLE-TRIG-SOLVING-FULL-R04_HANDOFF_V2_NUMBERING_20261116.md
+AUTHOR_HANDOFF_BLOB: e6d91df2285eb23078c463d25099f8cf2f40fcad
+AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
+AUTHOR_A1_A7_BLOB: 4f3c5ae64aef723c4271d59abebc1fcebe48d6f8
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC12_TRIANGLE_NEW16_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/THPT_G10_CHIII_B05_B06_D1D6_AUTHORING_R01_SNAPSHOT.md
@@ -48,10 +48,17 @@ CURRENT_PR: https://github.com/TMA2015/self-learning-math/pull/840 — DRAFT AUT
 
 - **12/12** outcome học độc lập có định nghĩa/định lí đúng điều kiện, 12 Ví dụ riêng với lời giải và 12 Vận dụng–Đối chiếu sát bài; đúng 3 trang TOPIC, không tạo Core.
 - **34/34** bài luyện hiện đề thật (18 SGK công khai từ nguồn duy nhất +16 canonical Topic R03); đủ 6 Written/rubric (2 SGK+4 Topic), đường khắc phục. **12** câu public Tự kiểm tra chỉ đề/lựa chọn và không có key, hint, rubric/correctness, không giả lập Nộp bài/Final Submit.
-- Source R03 `e74f32b1092d571af0091174a55104e7d3bec5b5` được tác giả ký Q18 v3.1.0 `AUTHOR_SELF_VERIFIED` receipt `d8ad3986da4776260c950cca337e0407da015252`, **137/137** structural/PED/canonical +**30/30** math/geometry/SVG checks PASS, P0/P1=0 trong phạm vi tác giả. **Không** phải independent NotebookLM Topic PASS.
+- Source R03 `ec90cab8455768b263f8d57409587c28f250340a` được tác giả ký Q18 v3.1.0 `AUTHOR_SELF_VERIFIED` receipt `6974062fc1f127a7b040d653093ffc5f3c40fabf`, **137/137** structural/PED/canonical +**30/30** math/geometry/SVG checks PASS, P0/P1=0 trong phạm vi tác giả. **Không** phải independent NotebookLM Topic PASS.
 - SGK original 18 canonical `6320aeaa89bd51c514b07461e01fad5e3aca833f`, source ID index `456018726168a5c65496bd0628bd9b2f410d0e62`; one NEW16 R03 bank `8f05b5556d83675649451dec76a8c1ffa5e1098d` giữ nguyên 16 đề/đáp án/rubric đã so nguồn R02; hai SVG có SHA gốc không đổi.
 - Historical learner R01 `b93611eaaf0dbc03908a4836f1db7f70fd8df108`, R02 `52b270e986361cb2d66cd0623522705e1abd8577`, original R01 V2 `e5feaa5f4dfe7ec69aa18ee157aab5defb5cbbf4` giữ nguyên history. Không đưa private RD1 lên GitHub, selfcheck chỉ `CLIENT_SELF_CHECK_NO_MASTERY`.
 - RELEASE kiểm browser/Golden/MathJax/SVG/AP/Final Submit/P1/P2/thiết bị/owner approval; AUTHORING **no merge/deploy**.
+
+
+## R04 numbering Delta-A — AUTHORING QA
+
+- H1 `Kiến thức/Luyện tập/Tự kiểm tra` unified across program. Kiến thức H2 1–3, H3 1.1–3.4, Practice H2 1–3, 34 canonical learner-visible question labels no extra Markdown H3 nesting.
+- Exact 34 source/id/outcome/stem/answer/rubric/D6 and 12 public selfchecks preserved, format-only DELTA_A_UI. New source SHA `ec90cab8455768b263f8d57409587c28f250340a`, author Q18 `6974062fc1f127a7b040d653093ffc5f3c40fabf`, one V2 `e6d91df2285eb23078c463d25099f8cf2f40fcad`; frozen R03 source `e74f32b1092d571af0091174a55104e7d3bec5b5` and Q18 `d8ad3986da4776260c950cca337e0407da015252` immutable.
+- RELEASE owns browser rendered heading/anchors/responsive and owner merge/deploy permission. No independent NotebookLM rerun for equivalent format-only snapshot.
 
 ## AUTHORING A1–A7
 
