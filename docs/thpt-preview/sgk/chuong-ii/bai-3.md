@@ -1,6 +1,6 @@
 # Toán 10 · Bài 3. Bất phương trình bậc nhất hai ẩn
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG II · KIẾN THỨC SGK KNTT</p><p class="thpt-r4-lead">Lý thuyết, ví dụ và sơ đồ nửa mặt phẳng/đa giác từ học liệu đã duyệt. Em tự luyện trước khi mở đáp án, không ghi điểm thành thạo.</p></div>
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG II · KIẾN THỨC SGK KNTT</p><p class="thpt-r4-lead">Học cách nhận diện bất phương trình bậc nhất hai ẩn, kiểm tra cặp nghiệm và đọc miền nghiệm trên mặt phẳng. Em tự làm câu Vận dụng rồi mới mở lời giải Đối chiếu.</p></div>
 
 === "Khám phá kiến thức"
 

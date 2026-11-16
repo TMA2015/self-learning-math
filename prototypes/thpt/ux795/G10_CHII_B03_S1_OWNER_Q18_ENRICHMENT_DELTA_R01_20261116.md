@@ -7,7 +7,7 @@
 **SOURCE_REVIEW_PROVENANCE:** [AUTHORING PR #745](https://github.com/TMA2015/self-learning-math/pull/745), R03 consolidated academic source blob `25f4eaf91483cb310ed13ebc5080f98cd247dd70`, historical owner NotebookLM R02 scoped review/receipt immutable. Reviewer-reported original Q18 HOLD on Studio byte mismatch is preserved unchanged; this new snapshot is **AUTHOR_SELF_VERIFIED, not independent NotebookLM PASS**.
 
 **BASELINE_LESSON_GIT_BLOB:** `c9ae5104c2f65779f2dd452d3f7775abe2600b7b`  
-**CANDIDATE_LESSON_GIT_BLOB:** `4b6adea71aa7d9d56fae8d7607d4677a5de5a562`  
+**CANDIDATE_LESSON_GIT_BLOB:** `03cf894ec9e4fb55b86201ab43dab21c48337ef3`  
 **LESSON_PATH:** `docs/thpt-preview/sgk/chuong-ii/bai-3.md`  
 **BASELINE_CSS_GIT_BLOB:** `e7585ebbd9b082c1b2628aef2d39b7bf7347a13d`  
 **CANDIDATE_CSS_GIT_BLOB:** `6953afcbd5e169a5946f4ba73ab1f399792d79c5`  
@@ -52,3 +52,5 @@
 **History:** Golden B01 F01–F10 and B02 F01–F06 and owner G10-NUM-01 monitor are covered in Issue #795; no new quality standard or release gate.
 
 **NEXT RELEASE GATE:** exact-head source SHA guard plus 18-browser Golden B01–B06 cases 390/820/1440, R4 all devices, UX795 27 lesson regression, ChIV–VII visuals, Roadmap, Q15/Q16, build MathJax/SVG and live `gh-pages` file parity. If all SUCCESS, merge/deploy B03 only under owner's explicit authorization and stop for owner visual UAT. B04 must stay untouched.
+
+**AP1 learner-facing lead cleanup (same B03 candidate):** Removed the misleading learner-visible “đa giác / học liệu đã duyệt” statement. The replacement describes actual B03 outcomes (linear inequality, pair testing and half-plane), with voluntary reveal after Vận dụng. `DELTA_B_SOURCE_EQUIVALENT` wording-only; all original mathematics, teaching examples, five TRY/answer IDs, D6, SVG, Q15/Q16 and B01/B02 sources are byte-unchanged from the prior B03 candidate. New candidate source blob above supersedes the earlier PR-only candidate blob `4b6adea71aa7d9d56fae8d7607d4677a5de5a562`; historical source baseline and reviewer receipt remain preserved. The one-lesson author self-verification remains the same Q18 mode, no independent review is claimed.
