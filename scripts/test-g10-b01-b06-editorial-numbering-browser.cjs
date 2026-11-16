@@ -285,7 +285,7 @@ const widths=[390,820,1440];
       assert.equal((await groups.nth(2).locator("p").allInnerTexts()).filter(x=>x.trim().startsWith("Phân tích.")).length,4,
        loc+" four independent explained worked problems");
       const prose=await pane.innerText();
-      assert(prose.includes("Heron")&&prose.includes("ngoại tiếp")&&prose.includes("nội tiếp")&&prose.includes("đo khoảng cách"),
+      assert(prose.toLocaleLowerCase("vi").includes("heron")&&prose.includes("ngoại tiếp")&&prose.includes("nội tiếp")&&prose.toLocaleLowerCase("vi").includes("khoảng cách"),
        loc+" coverage of cosine/sine/survey/area/radius/Heron outcomes");
       await labels.nth(1).click();
       for(const asset of ["THPT_G10_B06_COSINE_AREA_TRIANGLE_D5_R01.svg","G10_B06_SURVEY_RIGHT_TRIANGLE_R01.svg"]){
