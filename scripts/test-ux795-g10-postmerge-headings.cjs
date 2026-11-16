@@ -38,7 +38,7 @@ const htmlSelfPractice=/<summary[^>]*>\s*Xem lời giải ba câu tự luyện\s
 const blob=raw=>crypto.createHash("sha1")
  .update(Buffer.from("blob "+raw.length+"\0")).update(raw).digest("hex");
 
-let lessons=0,first=0,reveals=0;
+let lessons=0,first=0,reveals=0,legacyCount=0,newB05Count=0;
 for(let n=1;n<=27;n++){
  const route="thpt-preview/sgk/chuong-"+chapter(n)+"/bai-"+n;
  const markdown=fs.readFileSync(path.join(root,"docs",route+".md"),"utf8");
@@ -46,6 +46,22 @@ for(let n=1;n<=27;n++){
  const titles=[...markdown.matchAll(foldName)].map(m=>m[1]);
  const count=titles.filter(isAnswerReveal).length;
  const ids=[...markdown.matchAll(/data-thpt-first-try-id="([^"]+)"/g)].map(m=>m[1]);
+ const added=ids.filter(id=>id==="THPT-G10-CHIII-TRY11");
+ assert.equal(added.length,n===5?1:0,"B"+n+" only B05 may place new calculator First Try once");
+ if(n===5){
+  assert.deepEqual(ids,["THPT-G10-CHIII-TRY01","THPT-G10-CHIII-TRY02","THPT-G10-CHIII-TRY03",
+   "THPT-G10-CHIII-TRY04","THPT-G10-CHIII-TRY05","THPT-G10-CHIII-TRY11"],
+   "B05 preserves original five item IDs and adds one canonical calculator self-trial");
+  const receipt=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIII_B05_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md"),"utf8");
+  const field=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(blob(fs.readFileSync(path.join(root,"docs",route+".md"))),field("CANDIDATE_LESSON_GIT_BLOB"),
+   "B05 new public question only on current Q18 source-locked candidate");
+  assert(markdown.includes('data-outcome-id="G10-B05-CALCULATOR_ANGLE"')&&
+   markdown.includes('data-thpt-help-ref="HELP-G10-B05-03"'),
+   "B05 new item maps to calculator outcome and HELP D6 (never RD1)");
+ }
+ legacyCount+=ids.length-added.length;newB05Count+=added.length;
  const short=(html.match(concise)||[]).length;
  const verbose=(html.match(longTitle)||[]).length;
  assert(count>=ids.length,"B"+n+" all canonical First Try disclosures must be among explicit answer-reveal titles");
@@ -79,6 +95,8 @@ for(let n=1;n<=27;n++){
  lessons++;first+=ids.length;reveals+=short;
 }
 assert.equal(lessons,27,"Only G10 Knowledge scope is requested");
-assert.equal(first,137,"The 137 existing First Try placements must remain canonical");
-assert(reveals>=first,"At least all 137 First Try placements must have user-visible Đối chiếu labels");
+assert.equal(legacyCount,137,"All 137 historical First Try placements must remain canonical");
+assert.equal(newB05Count,1,"Exactly one new B05 calculator First Try is allowed by Q18");
+assert.equal(first,138,"B05 adds exactly one scoped public calculator question to 137 old First Tries");
+assert(reveals>=first,"All 138 First Try placements require visible voluntary Đối chiếu labels");
 console.log("PASS main+candidate dry-run 27 G10 Knowledge pages: "+reveals+" concise Đối chiếu labels for "+first+" First Tries; no verbose reveal headings, IDs preserved. NO DEPLOY; Q18 remains HOLD.");
