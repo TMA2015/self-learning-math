@@ -1,4 +1,4 @@
-# CĐ12 — Hệ thức lượng trong tam giác và giải tam giác · AUTHORING CONTENT_READY R01
+# CĐ12 — Hệ thức lượng trong tam giác và giải tam giác · AUTHORING CONTENT_READY R03 (stable packet R01)
 
 PACKET_ID: THPT-TOPIC12-TRIANGLE-TRIG-SOLVING-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -8,18 +8,20 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 6396a1c59e81adaa84fb59ad9b157c5c4fab9075
+SOURCE_COMMIT: d905471462d96ba170c7922922b5c3a3f2fc6300
 CATALOG_TOPIC_ID: CD12
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_TRIANGLE_TRIG_SOLVING_FULL_R01_20261113.md
-ACADEMIC_SOURCE_BLOB: b93611eaaf0dbc03908a4836f1db7f70fd8df108
-REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC12_TRIANGLE_R01_AUTHOR_SELF_QA_RECEIPT_20261113.md (self-QA, not independent Topic NotebookLM review)
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC12_TRIANGLE_R01_AUTHOR_SELF_QA_RECEIPT_20261113.md
-REVIEW_RECEIPT_BLOB: 9482550bea9b9ef222f2fb685f72079b0e32656e
-AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC12-TRIANGLE-TRIG-SOLVING-FULL-R01_HANDOFF_V2_20261113.md
-AUTHOR_HANDOFF_BLOB: e5feaa5f4dfe7ec69aa18ee157aab5defb5cbbf4
-AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R01_AUTHORING_ONLY_METADATA_20261113.md
-AUTHOR_A1_A7_BLOB: 0bf300392f59d649a99c99bd29541b25c5a5072a
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R03_LEARNER_FIRST_34_CANONICAL_VISIBLE_20261116.md
+ACADEMIC_SOURCE_BLOB: e74f32b1092d571af0091174a55104e7d3bec5b5
+REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC12_R03_AUTHOR_SELF_QA_RECEIPT_20261116.md (self-QA, not independent Topic NotebookLM review)
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC12_R03_AUTHOR_SELF_QA_RECEIPT_20261116.md
+REVIEW_RECEIPT_BLOB: d8ad3986da4776260c950cca337e0407da015252
+AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC12-TRIANGLE-TRIG-SOLVING-FULL-R03_HANDOFF_V2_20261116.md
+AUTHOR_HANDOFF_BLOB: 46da52d06eab0f9579955819e1639db5bcd4274e
+AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R03_AUTHORING_ONLY_METADATA_20261116.md
+AUTHOR_A1_A7_BLOB: 16ce301003de64e404ae31c778256dc6ecdfe2f8
+PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC12_TRIANGLE_NEW16_PUBLIC_CANONICAL_R03_20261116.md
+PUBLIC_CANONICAL_BANK_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/THPT_G10_CHIII_B05_B06_D1D6_AUTHORING_R01_SNAPSHOT.md
 ORIGINAL_SGK_SOURCE_BLOB: 6320aeaa89bd51c514b07461e01fad5e3aca833f
 ORIGINAL_SGK_REVIEW_RECEIPT_BLOB: 3fb823c4353d368ae5a9c14f03c7309933d47e6f
@@ -41,6 +43,15 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 CURRENT_PR: https://github.com/TMA2015/self-learning-math/pull/840 — DRAFT AUTHORING, not merged/deployed
 
 **Scope:** independent three-page Topic Knowledge / Practice / Self Check, 12 concept-first modules/outcomes, 12 voluntary First Try, 34 unique public canonical IDs (18 SGK reused references only +12 Topic Practice +4 Topic Written each rubric /7), two original referenced SGK SVG, no Topic Core and no official independent RD1. Historical SGK B05–B06 independent PASS is specific to original SGK source, **not** a reviewer PASS on CĐ12.
+
+## R03 LEARNER-FACING Q18 / EXACT SOURCE
+
+- **12/12** outcome học độc lập có định nghĩa/định lí đúng điều kiện, 12 Ví dụ riêng với lời giải và 12 Vận dụng–Đối chiếu sát bài; đúng 3 trang TOPIC, không tạo Core.
+- **34/34** bài luyện hiện đề thật (18 SGK công khai từ nguồn duy nhất +16 canonical Topic R03); đủ 6 Written/rubric (2 SGK+4 Topic), đường khắc phục. **12** câu public Tự kiểm tra chỉ đề/lựa chọn và không có key, hint, rubric/correctness, không giả lập Nộp bài/Final Submit.
+- Source R03 `e74f32b1092d571af0091174a55104e7d3bec5b5` được tác giả ký Q18 v3.1.0 `AUTHOR_SELF_VERIFIED` receipt `d8ad3986da4776260c950cca337e0407da015252`, **137/137** structural/PED/canonical +**30/30** math/geometry/SVG checks PASS, P0/P1=0 trong phạm vi tác giả. **Không** phải independent NotebookLM Topic PASS.
+- SGK original 18 canonical `6320aeaa89bd51c514b07461e01fad5e3aca833f`, source ID index `456018726168a5c65496bd0628bd9b2f410d0e62`; one NEW16 R03 bank `8f05b5556d83675649451dec76a8c1ffa5e1098d` giữ nguyên 16 đề/đáp án/rubric đã so nguồn R02; hai SVG có SHA gốc không đổi.
+- Historical learner R01 `b93611eaaf0dbc03908a4836f1db7f70fd8df108`, R02 `52b270e986361cb2d66cd0623522705e1abd8577`, original R01 V2 `e5feaa5f4dfe7ec69aa18ee157aab5defb5cbbf4` giữ nguyên history. Không đưa private RD1 lên GitHub, selfcheck chỉ `CLIENT_SELF_CHECK_NO_MASTERY`.
+- RELEASE kiểm browser/Golden/MathJax/SVG/AP/Final Submit/P1/P2/thiết bị/owner approval; AUTHORING **no merge/deploy**.
 
 ## AUTHORING A1–A7
 
