@@ -44,6 +44,13 @@ for(const [lesson,row] of rows){
  const previous=old.stdout;
  assert.equal(blob(previous),row.baseline,lesson+" original published blob");
  let expected=row.candidate;
+ if(lesson==="B07"){
+  const receipt=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B07_S1_OWNER_Q18_ENRICHMENT_DELTA_R02_20261116.md"),"utf8");
+  const field=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(field("R01_APPROVED_SOURCE_BLOB"),row.candidate,"B07 R02 extends ChIV original R01");
+  expected=field("R02_CANDIDATE_SOURCE_BLOB");
+ }
  if(lesson==="B08"){
   const receipt=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHIV_B08_S1_OWNER_Q18_ENRICHMENT_DELTA_R02_20261116.md"),"utf8");
@@ -71,29 +78,32 @@ for(const [lesson,row] of rows){
   lesson+" official S1 book headings exactly 2.1.., no double SGK");
  assert(official.startsWith('=== "Kiến thức SGK"\n\n    ### 2.1.'),
   lesson+" SGK tab must start directly at 2.1, not commentary");
- assert.equal((discover.match(/^    ### /gm)||[]).length,lesson==="B08"?5:3,lesson+" authentic discovery stages");
+ assert.equal((discover.match(/^    ### /gm)||[]).length,(lesson==="B07"||lesson==="B08")?5:3,lesson+" authentic discovery stages");
  assert(!official.includes("    ### Kiến thức SGK"),lesson+" duplicate SGK heading");
  for(const part of [discover.slice('=== "Khám phá kiến thức"\n'.length),official.slice('=== "Kiến thức SGK"\n'.length)]){
   const unindented=part.split("\n").filter(l=>l.trim()&&!l.startsWith("    "));
   assert.equal(unindented.length,0,lesson+" tabbed Markdown indentation leaked paragraphs");
  }
- if(lesson==="B08"){
+ if(lesson==="B07"||lesson==="B08"){
   assert.equal((examples.match(/^    ### 3\.[1-4]\. Ví dụ [1-4] —/gm)||[]).length,4,
-   "B08 new four distinct method-first examples match owner S1/PED delta receipt");
+   lesson+" new four distinct method-first examples match exact Q18 delta receipt");
   for(const section of ["Phân tích.","Lời giải.","Kiểm lại."]){
    assert.equal(examples.split("**"+section+"**").length-1,4,
-     "B08 every worked example must explain method, solve, and check "+section);
+     lesson+" every worked example must explain method, solve, and check "+section);
   }
-  assert(discover.includes("THPT_G10_B08_TRIANGLE_PARALLELOGRAM_SUM_D5_R01.svg")&&
+  if(lesson==="B08")assert(discover.includes("THPT_G10_B08_TRIANGLE_PARALLELOGRAM_SUM_D5_R01.svg")&&
    !official.includes("THPT_G10_B08_TRIANGLE_PARALLELOGRAM_SUM_D5_R01.svg"),
     "B08 original D5 vector figure must guide discovery before formula");
+  else assert(official.includes("THPT_G10_B07_PARALLELOGRAM_EQUAL_OPPOSITE_D5_R01.svg")&&
+   !discover.includes("THPT_G10_B07_PARALLELOGRAM_EQUAL_OPPOSITE_D5_R01.svg"),
+    "B07 keep source-matched exact-answer visual after first attempts");
  }else{
   assert.equal(examples,previous.slice(previous.indexOf('=== "Ví dụ"'),previous.indexOf('=== "Lỗi thường gặp"')),
    lesson+" previously approved three worked examples changed");
   assert.equal((examples.match(/^    ### Ví dụ /gm)||[]).length,3,
    lesson+" previous three original examples stay intact");
  }
- if(n<=10&&n!==8){
+ if(n<=10&&n!==8&&n!==7){
   assert.deepEqual(tex(source),tex(previous),lesson+" original mathematical expressions changed beyond reordering");
  }else if(n===11){
   assert(official.includes("có thể nhận một giá trị tùy ý từ $0^\\circ$ đến $180^\\circ$"),"B11 original SGK zero-angle range");
@@ -103,19 +113,25 @@ for(const [lesson,row] of rows){
   assert.equal((last.match(/data-thpt-first-try-id/g)||[]).length,1,
    "B11 original extra transfer First Try remains in mistakes tab");
  }else{
-  assert.equal(lesson,"B08","Only B08 source enrichment may skip legacy order-only TeX check");
+  assert(["B07","B08"].includes(lesson),"Only source-locked B07/B08 enrichment skips legacy TeX reorder check");
+  if(lesson==="B07"){
+   for(const formula of ["|\\\\overrightarrow{AB}|=AB\\\\ge0",
+    "\\\\overrightarrow{AB}=\\\\overrightarrow{DC}","\\\\overrightarrow{AA}=\\\\vec0"])
+    assert(official.includes(formula),"B07 original required SGK mathematics preserved: "+formula);
+  }else{
   for(const required of [
    "\\overrightarrow{AB}+\\overrightarrow{BC}=\\overrightarrow{AC}",
    "\\overrightarrow{AB}+\\overrightarrow{AD}=\\overrightarrow{AC}",
    "\\vec u-\\vec v=\\vec u+(-\\vec v)",
    "\\overrightarrow{GA}+\\overrightarrow{GB}+\\overrightarrow{GC}=\\vec0"
   ])assert(official.includes(required),"B08 R02 must retain original vector rule: "+required);
+  }
  }
  assert.notDeepEqual(ids(source.replace('data-thpt-first-try-id="','data-thpt-first-try-id="BAD-'),
   "data-thpt-first-try-id"),ids(previous,"data-thpt-first-try-id"),lesson+" ID mutation must fail");
  assert.notDeepEqual([...official.replace(book[lesson][0],"WRONG SGK").matchAll(/^    ### ([^\n]+)$/gm)].map(x=>x[1]),
   book[lesson],lesson+" wrong S1 section must fail");
  assert.notEqual(blob(source+" "),expected,lesson+" Git SHA mutation must fail");
- console.log("PASS "+lesson+" Q18 S1 sections, "+(lesson==="B08"?"4 new":"3 original")+" examples, canonical IDs and formative answers");
+ console.log("PASS "+lesson+" Q18 S1 sections, "+(["B07","B08"].includes(lesson)?"4 new":"3 original")+" examples, canonical IDs and formative answers");
 }
 console.log("PASS 5/5 G10 ChIV S1/Q18 self-verified editorial source receipts; no independent reviewer claimed.");
