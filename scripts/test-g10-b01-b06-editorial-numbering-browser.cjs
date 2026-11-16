@@ -43,18 +43,36 @@ function checkSHA(){
    assert(oldCandidate&&newBaseline===oldCandidate&&original.includes("**BASELINE_LESSON_GIT_BLOB:** "+String.fromCharCode(96)+sha+String.fromCharCode(96)),
     "B01 R02 must extend original owner-reviewed R01 / frozen historical SGK baseline");
    assert.equal(hash(data),newCandidate,"B01 owner P2 source must match exactly R02 Q18 candidate Git blob");
-  }else if(p==="docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"){
+  }else if(p==="docs/thpt-preview/sgk/chuong-i/bai-2.md"){
    const receipt=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHI_B02_S1_Q18_KNOWLEDGE_ENRICHMENT_R01_20261116.md"),"utf8");
+   const baseline=receipt.match(/^\*\*BASELINE_LESSON_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+   const candidate=receipt.match(/^\*\*CANDIDATE_LESSON_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+   assert.equal(baseline,sha,"B02 immutable prior SGK candidate source SHA remains source-locked");
+   assert.equal(hash(data),candidate,"B02 source must exactly match S1/Q18 enrichment receipt");
+  }else if(p==="docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"){
+   const b01=fs.readFileSync(path.join(root,
     "prototypes/thpt/ux795/G10_CHI_B01_DEFINITION_COLOR_UI_DELTA_A_20261116.md"),"utf8");
-   const oldCss=receipt.match(/^\*\*BASELINE_CSS_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
-   const newCss=receipt.match(/^\*\*CANDIDATE_CSS_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
-   assert.equal(oldCss,sha,"B01 original shared CSS baseline must remain source-locked");
-   assert.equal(hash(data),newCss,"B01 teal concept CSS must match exact Delta A receipt SHA");
-   assert(receipt.includes("**IMMUTABLE_B01_KNOWLEDGE_SOURCE_BLOB:** "+
-     String.fromCharCode(96)+"dba6430cd79b17dee0591fb2dcd075ea5200b126"+String.fromCharCode(96)),
-     "B01 UI-only delta must explicitly preserve deployed R02 Knowledge source");
+   const b02=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHI_B02_S1_Q18_KNOWLEDGE_ENRICHMENT_R01_20261116.md"),"utf8");
+   const b01Baseline=b01.match(/^\*\*BASELINE_CSS_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+   const b01Candidate=b01.match(/^\*\*CANDIDATE_CSS_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+   const b02Baseline=b02.match(/^\*\*CSS_PATH:\*\*.*baseline \x60([a-f0-9]{40})\x60/m)?.[1];
+   const b02Candidate=b02.match(/^\*\*CSS_PATH:\*\*.*candidate \x60([a-f0-9]{40})\x60/m)?.[1];
+   assert(b01Baseline===sha&&b01Candidate===b02Baseline,
+    "Original B01 teal receipt must be immutable and B02 CSS extend that exact blob");
+   assert.equal(hash(data),b02Candidate,"B02 scoped teal CSS must match its source-locked Q18 receipt");
   }else assert.equal(hash(data),sha,"Untouched SGK sibling source/theme drift: "+p);
  }
+ const q18=fs.readFileSync(path.join(root,
+  "prototypes/thpt/ux795/G10_CHI_B02_S1_Q18_KNOWLEDGE_ENRICHMENT_R01_20261116.md"),"utf8");
+ const asset=fs.readFileSync(path.join(root,
+  "docs/assets/images/thpt/G10_B02_NUMBER_SETS_INCLUSION_S1_R01.svg"));
+ const js=fs.readFileSync(path.join(root,"docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js"));
+ assert(q18.includes("**SVG_ASSET_GIT_BLOB:** "+String.fromCharCode(96)+hash(asset)+String.fromCharCode(96)),
+  "B02 S1 nested-set diagram must match immutable figure SHA");
+ assert(q18.includes("candidate "+String.fromCharCode(96)+hash(js)+String.fromCharCode(96)),
+  "B02 Golden route JS must match Q18 candidate SHA");
 }
 const names=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
 const ch=n=>n<=2?"i":n<=4?"ii":"iii";
