@@ -1,4 +1,4 @@
-# CĐ01 — Mệnh đề, Tập hợp và Tư duy logic toán học · AUTHORING CONTENT_READY (student R06, stable packet R01)
+# CĐ01 — Mệnh đề, Tập hợp và Tư duy logic toán học · AUTHORING CONTENT_READY (student R06, stable packet R07)
 
 PACKET_ID: THPT-TOPIC01-LOGIC-SETS-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -8,18 +8,18 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: c63857f5da6c55ba2423f87a0320cca8ee40cae8
+SOURCE_COMMIT: eb0d45032fb771082efd9aaef39a5311c87414c3
 AUTHOR_PR: 817
 CURRENT_PR: #817 Draft AUTHORING, no merge/deploy
 CATALOG_TOPIC_ID: CD01
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R06_STUDENT_FIRST_24_CANONICAL_VISIBLE_20261115.md
-ACADEMIC_SOURCE_BLOB: d4eafd811066997ee64de70a49c5da4a7ff26dcd
-REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC01_R06_AUTHOR_SELF_QA_RECEIPT_20261115.md (AUTHOR_SELF_QA, no fresh independent NotebookLM PASS)
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC01_R06_AUTHOR_SELF_QA_RECEIPT_20261115.md
-REVIEW_RECEIPT_BLOB: 12868fe449d32f70fa1caf83f27be9571c4f1aae
-AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC01-LOGIC-SETS-FULL-R06_HANDOFF_V2_20261115.md
-AUTHOR_HANDOFF_BLOB: f889306cbbf1ae6be48350053be15c4ab5a41532
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R07_NUMBERING_CONSISTENT_20261116.md
+ACADEMIC_SOURCE_BLOB: 0941242cee95d21c5a83da9f6f01c022443272d8
+REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC01_R07_NUMBERING_DELTA_A_Q18_20261116.md (AUTHOR_SELF_QA, no fresh independent NotebookLM PASS)
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC01_R07_NUMBERING_DELTA_A_Q18_20261116.md
+REVIEW_RECEIPT_BLOB: 3732db6a26a13c52f84f574d1c2c3468513c7eca
+AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC01-LOGIC-SETS-FULL-R07_HANDOFF_V2_NUMBERING_20261116.md
+AUTHOR_HANDOFF_BLOB: 78c2712a529f124f397d6a502ec1fa5a985024de
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_CANONICAL_SOURCE_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 09d36b0d289ebc54cc4ee51805503cf7f6e714f2
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_PUBLIC_EXTENSION_06ITEM_R01_20261112.md
@@ -49,7 +49,7 @@ TOPIC_SELF_CHECK: PUBLIC_REPLAY_11_NO_MASTERY
 
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — new CĐ01 student-first source `d4eafd811066997ee64de70a49c5da4a7ff26dcd`, QA receipt `12868fe449d32f70fa1caf83f27be9571c4f1aae`, 18 immutable original + six newly authored PUBLIC formative canonical questions, single V2 handoff.
+- [x] A1_SOURCE_SNAPSHOT — new CĐ01 student-first source `0941242cee95d21c5a83da9f6f01c022443272d8`, QA receipt `3732db6a26a13c52f84f574d1c2c3468513c7eca`, 18 immutable original + six newly authored PUBLIC formative canonical questions, single V2 handoff.
 - [x] A2_SGK_SBT_SCOPE — S1 source *reference only*, prior independent original receipt KNTT G10 T1 B01 printed SGK 5–11/SBT5–7; B02 SGK12–19/SBT8–11. Catalog CĐ01/22 is the organizing unit, not SGK chapters.
 - [x] A3_NOTEBOOKLM_VERDICT — original 18 SGK public bank academic NotebookLM PASS on historic frozen source SHA `95a554e31a613b8e215679fe6790738473d598df` only; CĐ01 R06 complete 11-outcome Delta C verified by exact-source author self-Q18 receipt: 11 standalone examples, 24 displayed original canonical stems/solutions and 2 Written rubrics, NO claim of new independent reviewer PASS.
 - [x] A4_ITEM_OUTCOME_IDS — 11/11 Topic outcomes, 24 distinct PUBLIC canonical IDs (18 previous/6 original new), 2 original Written with single rubric, 11 reused public selfcheck placements NO_MASTERY.
@@ -84,3 +84,9 @@ TOPIC_SELF_CHECK: PUBLIC_REPLAY_11_NO_MASTERY
 **Revision:** R01 signed academic source/receipt remains immutable historical evidence; active R06 source + self-QA + V2 replaces it in the single canonical packet without altering original stems/keys. AUTHORING-only, not deployed.
 
 **Ranh giới:** Có Kiến thức + Luyện tập + Tự kiểm tra công khai trong source. Tự kiểm tra chỉ là self-check 11 public reuse placements, KHÔNG đánh giá độc lập chính thức, KHÔNG Mastery. Phần tương tác là specification chưa triển khai. Không nhập RD1 private; SHA empty trên là digest 0 bytes đã nhập, không đại diện bank kín. Nhánh SGK, Firebase, học sinh, website và Golden UI không thay đổi.
+
+## R07 numbering DELTA_A_UI · source-custody checkpoint 16/11/2026
+
+- H1 3 pages; numbered H2 groups and 1.1 H3 lessons with no missing predecessor; Practice question labels use scoped bold, not H4.
+- Source SHA `0941242cee95d21c5a83da9f6f01c022443272d8`, source-equivalent author Q18 `3732db6a26a13c52f84f574d1c2c3468513c7eca`, metadata `06bf546a2c209d87fa44485fe51b64317378451c`, V2 `78c2712a529f124f397d6a502ec1fa5a985024de`. Historical sources and receipts unchanged; math/answers/rubrics/D6 preserved by identical full reveal block and item ID comparison.
+- AUTHORING CONTENT_READY only; not fresh NotebookLM academic review, RELEASE browser/Golden QA, MERGED or PUBLISHED.
