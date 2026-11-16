@@ -21,7 +21,7 @@ REVIEW_RECEIPT: prototypes/thpt/review-packets/TOP19_R09_Q18_AUTHOR_SELF_QA_RECE
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/TOP19_R09_Q18_AUTHOR_SELF_QA_RECEIPT_20261116.md
 REVIEW_RECEIPT_BLOB: 55bc391995cccdf0ce66b96ebfa8840c0148c075
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/TOP19-COMBINATORICS-BINOMIAL-R09-20261116_HANDOFF_V2.md
-AUTHOR_HANDOFF_BLOB: 67eb079422d9574d6ca6f9bf8fc04fac2f9beebe
+AUTHOR_HANDOFF_BLOB: 61928bb0016868a29ed90205ccc4361bd40960a4
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 BLOCKERS: NONE
@@ -42,13 +42,13 @@ AUTHOR_METADATA_BLOB: d21d1d3ede107b3b479d1f61a1ddc0e4df0414ec
 
 - Exactly **42 complete learner-visible Practice/Written cards** =25 original public G10 SGK source-exact display-only item references (no new owner), 14 original Topic Practice, 3 Topic Written/rubric /4. Exactly 56 public canonical IDs =25 original SGK +31 Topic-owned (14 T,14 P,3 W), 56/56 exact source→V2/metadata mapping. Seven real question-only Selfcheck replay placements, NO_MASTERY.
 - Three independent actual Topic pages Kiến thức/Luyện tập/Tự kiểm tra, three numbered math groups, 14 H3 lessons with 15 fully worked standalone Ví dụ, 14 original Vận dụng/Đối chiếu/D6; no technical H4 or internal Q15 table visible.
-- Current R09 academic source Git blob `2b46a2c92004f2c030d030e2b2021a34157bc95d` and Q18 AUTHOR_SELF_VERIFIED receipt `55bc391995cccdf0ce66b96ebfa8840c0148c075` source-specific (26 direct structure/source-parity checks, 38 numeric/binomial assertions PASS, 25 SGK stem+solution and 17 Topic P/W answer/rubric exact). One 56-ID canonical metadata `d21d1d3ede107b3b479d1f61a1ddc0e4df0414ec` and one V2 handoff `67eb079422d9574d6ca6f9bf8fc04fac2f9beebe`, source commit `c0dfa1b1bb847906f76a54cf16077a73e4815e74`.
+- Current R09 academic source Git blob `2b46a2c92004f2c030d030e2b2021a34157bc95d` and Q18 AUTHOR_SELF_VERIFIED receipt `55bc391995cccdf0ce66b96ebfa8840c0148c075` source-specific (26 direct structure/source-parity checks, 38 numeric/binomial assertions PASS, 25 SGK stem+solution and 17 Topic P/W answer/rubric exact). One 56-ID canonical metadata `d21d1d3ede107b3b479d1f61a1ddc0e4df0414ec` and one V2 handoff `61928bb0016868a29ed90205ccc4361bd40960a4`, source commit `c0dfa1b1bb847906f76a54cf16077a73e4815e74`.
 - R08 historical source blob `989c648e2218096aa63696e1852562d79f40949c` and receipt `24970978f77f3796437577a89b237d942aa14f04` remain immutable with separate ready/REGISTER row, not made equivalent to R09. Prior S1 direct original PDF receipt retained. Four SGK-linked SVGs and interactive model unchanged. Private RD1 fourteen owner-held candidates SHA/count only, not public.
 - No new independent NotebookLM review. R09 self-verified content does not grant website Final Submit, protected Topic Readiness/Mastery, or merge/deploy authority.
 
 ## A — SIGNED AUTHORING CONTENT QA
 
-- [x] A1_SOURCE_SNAPSHOT — Current R09 source `2b46a2c92004f2c030d030e2b2021a34157bc95d`, signed Q18 receipt `55bc391995cccdf0ce66b96ebfa8840c0148c075`, one 56-ID matrix `d21d1d3ede107b3b479d1f61a1ddc0e4df0414ec`, one V2 `67eb079422d9574d6ca6f9bf8fc04fac2f9beebe`. Historical R08/R03 exact-source PASS preserved only for their own immutable blobs.
+- [x] A1_SOURCE_SNAPSHOT — Current R09 source `2b46a2c92004f2c030d030e2b2021a34157bc95d`, signed Q18 receipt `55bc391995cccdf0ce66b96ebfa8840c0148c075`, one 56-ID matrix `d21d1d3ede107b3b479d1f61a1ddc0e4df0414ec`, one V2 `61928bb0016868a29ed90205ccc4361bd40960a4`. Historical R08/R03 exact-source PASS preserved only for their own immutable blobs.
 - [x] A2_SGK_SBT_SCOPE — Toán 10 KNTT Tập Hai ChVIII B23–B25 matched direct original S1 PDF visual receipt (SGK printed 60–76, SBT printed 51–60), with nPr/nCr calculator and two-term growth applications explicitly covered.
 - [x] A3_NOTEBOOKLM_VERDICT — R09 is AUTHOR_SELF_VERIFIED exact source; 26 direct structure/parity and 38 arithmetic assertions PASS on R09, no new independent NotebookLM reviewer verdict. Historical R08 63/63 applies only to R08 source.
 - [x] A4_ITEM_OUTCOME_IDS — 14 outcomes, 56 unique public canonical IDs (25 original frozen SGK public bank reused display-only +31 original Topic-owned T/P/W). Seven public Selfcheck replay placements not new IDs; source owner and original bank version unchanged.
