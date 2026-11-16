@@ -17,9 +17,9 @@ REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC12_R04_NUMBERING_DELTA_
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC12_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
 REVIEW_RECEIPT_BLOB: 6974062fc1f127a7b040d653093ffc5f3c40fabf
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC12-TRIANGLE-TRIG-SOLVING-FULL-R04_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: e6d91df2285eb23078c463d25099f8cf2f40fcad
+AUTHOR_HANDOFF_BLOB: 25fcfe67a61bff0b7ca81c44c56692a966a62cf7
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_A1_A7_BLOB: 4f3c5ae64aef723c4271d59abebc1fcebe48d6f8
+AUTHOR_A1_A7_BLOB: 2d729da63547714363b615c559ef9bca88b0ddac
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC12_TRIANGLE_NEW16_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/THPT_G10_CHIII_B05_B06_D1D6_AUTHORING_R01_SNAPSHOT.md
@@ -57,7 +57,7 @@ CURRENT_PR: https://github.com/TMA2015/self-learning-math/pull/840 — DRAFT AUT
 ## R04 numbering Delta-A — AUTHORING QA
 
 - H1 `Kiến thức/Luyện tập/Tự kiểm tra` unified across program. Kiến thức H2 1–3, H3 1.1–3.4, Practice H2 1–3, 34 canonical learner-visible question labels no extra Markdown H3 nesting.
-- Exact 34 source/id/outcome/stem/answer/rubric/D6 and 12 public selfchecks preserved, format-only DELTA_A_UI. New source SHA `ec90cab8455768b263f8d57409587c28f250340a`, author Q18 `6974062fc1f127a7b040d653093ffc5f3c40fabf`, one V2 `e6d91df2285eb23078c463d25099f8cf2f40fcad`; frozen R03 source `e74f32b1092d571af0091174a55104e7d3bec5b5` and Q18 `d8ad3986da4776260c950cca337e0407da015252` immutable.
+- Exact 34 source/id/outcome/stem/answer/rubric/D6 and 12 public selfchecks preserved, format-only DELTA_A_UI. New source SHA `ec90cab8455768b263f8d57409587c28f250340a`, author Q18 `6974062fc1f127a7b040d653093ffc5f3c40fabf`, one V2 `25fcfe67a61bff0b7ca81c44c56692a966a62cf7`; frozen R03 source `e74f32b1092d571af0091174a55104e7d3bec5b5` and Q18 `d8ad3986da4776260c950cca337e0407da015252` immutable.
 - RELEASE owns browser rendered heading/anchors/responsive and owner merge/deploy permission. No independent NotebookLM rerun for equivalent format-only snapshot.
 
 ## AUTHORING A1–A7
