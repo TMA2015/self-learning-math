@@ -1,4 +1,4 @@
-# CĐ09 — Đạo hàm và Ý nghĩa vi phân · AUTHORING CONTENT_READY R04 (PACKET_ID R01)
+# CĐ09 — Đạo hàm và Ý nghĩa vi phân · AUTHORING CONTENT_READY R05 (stable PACKET_ID R01)
 
 PACKET_ID: THPT-TOPIC09-DERIVATIVE-MEANING-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -8,22 +8,22 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 570970d136fc1eb4949dbf6ab280fdc084b680c1
+SOURCE_COMMIT: a08b542297ed62bca6186300458730100a8e1631
 AUTHOR_PR: 831
 CURRENT_PR: https://github.com/TMA2015/self-learning-math/pull/831 — DRAFT AUTHORING, not merged or deployed
 CATALOG_TOPIC_ID: CD09
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_CONTINUOUS_KNOWLEDGE_ARCS_R04_REVIEW_CANDIDATE_20261113.md
-ACADEMIC_SOURCE_BLOB: 68fe5b8a3ded75b6f774b4685655487d9b4bdff9
-REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC09_CONTINUOUS_R04_AUTHOR_SELF_QA_RECEIPT_20261113.md (Q18 author SELF_VERIFIED, no independent new NotebookLM PASS)
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC09_CONTINUOUS_R04_AUTHOR_SELF_QA_RECEIPT_20261113.md
-REVIEW_RECEIPT_BLOB: bc2aa70ad7c46d678889f0ed750c79201b16dc58
-AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC09-DERIVATIVE-MEANING-FULL-R04_HANDOFF_V2_20261113.md
-AUTHOR_HANDOFF_BLOB: 496c9a66c75f8cd103b58b2f747956e72eafa518
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md
+ACADEMIC_SOURCE_BLOB: 8222107d717f7d02b845f79ccdd154e8dbe71cc6
+REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC09_R05_AUTHOR_SELF_QA_RECEIPT_20261116.md (Q18 author SELF_VERIFIED, no independent new NotebookLM PASS)
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC09_R05_AUTHOR_SELF_QA_RECEIPT_20261116.md
+REVIEW_RECEIPT_BLOB: 6cd023b8da3056d9880d89c738f55876c5f433d7
+AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC09-DERIVATIVE-MEANING-FULL-R05_HANDOFF_V2_20261116.md
+AUTHOR_HANDOFF_BLOB: 8d649136b8dcc8ddd493121ce7057a68602f3f43
 PUBLIC_ORIGINAL71_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_ORIGINAL71_SGK_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_ORIGINAL71_INDEX_BLOB: 3c025ce2dfb8e16743873ac2b3f35bfb37c27ef8
-PUBLIC_NEW37_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_NEW37_PUBLIC_CANONICAL_R04_20261113.md
-PUBLIC_NEW37_CANONICAL_BANK_BLOB: d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a
+PUBLIC_NEW37_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_NEW37_PUBLIC_CANONICAL_R05_20261116.md
+PUBLIC_NEW37_CANONICAL_BANK_BLOB: f249949be3b254a29c8859301b6c4904e636c505
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHIX_B31_B33_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md
 ORIGINAL_SGK_SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0
 SVG1_PATH: prototypes/thpt/visuals/THPT_TOPIC09_SECANT_TANGENT_R01.svg
@@ -47,11 +47,20 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
 **AUTHORING CONTENT_READY only:** independent three-page Topic learning path, 32 lessons/outcomes (31 official S1 SGK ChIX skills plus one labelled Topic differential extension), 108 PUBLIC canonical unique: 71 original unchanged SGK references+37 new (32 Practice, 5 Written /7), four original accessible SVG, 32 public reuse-only self-check and 3 learning interactive labs SPEC_ONLY. No protected RD1 or working website route.
 
+## R05 LEARNER SOURCE / Q18 SELF-VERIFIED CERTIFICATION
+
+- **32/32** outcomes có 32 Ví dụ độc lập Đề bài/Lời giải và 32 Vận dụng/Đối chiếu ngay cạnh nội dung; năm mạch liền nhau, ba trang Topic đầy đủ, không tạo Core riêng.
+- **108/108** câu có đề và lời giải thật trên Practice (71 original SGK immutable +37 Topic R05), **14/14** rubric Written, **108/108** “Nếu làm sai”; 32 public selfcheck P01–P32 chỉ có đề (không in lời giải/key/hint/rubric), `CLIENT_SELF_CHECK_NO_MASTERY`.
+- Original SGK ChIX R00 source `3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0` cùng 71 placement index R01 vẫn bất biến. R05 37 new source `f249949be3b254a29c8859301b6c4904e636c505` giữ ID, P23 `content_version=2` để phản ánh câu hỏi tập xác định đã sửa.
+- Four SVG source SHA historical same; source-driven QA **272/272** PASS + số học/hình **37/37** PASS, signed Q18 R05 blob `6cd023b8da3056d9880d89c738f55876c5f433d7` chế độ `AUTHOR_SELF_VERIFIED` v3.1.0; **không** phải NotebookLM independent PASS.
+- R04 learner `68fe5b8a3ded75b6f774b4685655487d9b4bdff9`, Q18 `bc2aa70ad7c46d678889f0ed750c79201b16dc58`, V2 `496c9a66c75f8cd103b58b2f747956e72eafa518` giữ lịch sử, không chuyển PASS tự động. Dự thảo yêu cầu review NotebookLM R05 trước đó chỉ là tùy chọn, không thay bản Q18 self-signed hiện hành.
+- **RELEASE:** Chưa thử browser/Golden/AP/Final Submit/MathJax/render/mobile/P1/P2 hoặc owner signoff. Draft PR #831, NO MERGE/DEPLOY AUTHORING.
+
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — learner source Git blob 68fe5b8a3ded75b6f774b4685655487d9b4bdff9, signed Q18 author receipt bc2aa70ad7c46d678889f0ed750c79201b16dc58, original71 index 3c025ce2dfb8e16743873ac2b3f35bfb37c27ef8, NEW37 bank d1c546f9ce9a19128ab80c4b04d4ee4f2cb29e1a, one V2 handoff 496c9a66c75f8cd103b58b2f747956e72eafa518, four SVG exact readback SHA.
+- [x] A1_SOURCE_SNAPSHOT — learner source Git blob 8222107d717f7d02b845f79ccdd154e8dbe71cc6, signed Q18 author receipt 6cd023b8da3056d9880d89c738f55876c5f433d7, original71 index 3c025ce2dfb8e16743873ac2b3f35bfb37c27ef8, NEW37 bank f249949be3b254a29c8859301b6c4904e636c505, one V2 handoff 8d649136b8dcc8ddd493121ce7057a68602f3f43, four SVG exact readback SHA.
 - [x] A2_SGK_SBT_SCOPE — archived original scanned publisher SGK KNTT G11 Tập2 ChIX B31 printed81–87, B32 88–94, B33 95–96, end97–98; SBT B31 54–57, B32 58–60, B33 61–62, end63–65, answers111–116; O32 differential formally labelled Topic extension, not SGK Core.
-- [x] A3_NOTEBOOKLM_VERDICT — R04 `AUTHOR_SELF_VERIFIED` theo chuẩn Q01–Q18 v3.1.0: source `68fe5b8a3ded75b6f774b4685655487d9b4bdff9`, receipt `bc2aa70ad7c46d678889f0ed750c79201b16dc58`, kiểm 32/32 outcome, 37/37 câu mới (bao gồm P23 sửa đúng tập xác định), bốn SVG và D6; P0/P1=0 theo phạm vi AUTHORING. `A3_NOTEBOOKLM_VERDICT` là tên trường checklist V2 tương thích CI lịch sử; thực chất chế độ Q18 ở gói này là tự kiểm chứng, **không** có NotebookLM reviewer PASS mới. NotebookLM độc lập chỉ từng review nguồn SGK G11 ChIX lịch sử, không cấp PASS cho R04.
+- [x] A3_NOTEBOOKLM_VERDICT — R04 `AUTHOR_SELF_VERIFIED` theo chuẩn Q01–Q18 v3.1.0: source `8222107d717f7d02b845f79ccdd154e8dbe71cc6`, receipt `6cd023b8da3056d9880d89c738f55876c5f433d7`, kiểm 32/32 outcome, 37/37 câu mới (bao gồm P23 sửa đúng tập xác định), bốn SVG và D6; P0/P1=0 theo phạm vi AUTHORING. `A3_NOTEBOOKLM_VERDICT` là tên trường checklist V2 tương thích CI lịch sử; thực chất chế độ Q18 ở gói này là tự kiểm chứng, **không** có NotebookLM reviewer PASS mới. NotebookLM độc lập chỉ từng review nguồn SGK G11 ChIX lịch sử, không cấp PASS cho R04.
 - [x] A4_ITEM_OUTCOME_IDS — 32 lesson IDs, 32 outcome IDs, 108 unique PUBLIC item IDs in single item-outcome-role V2 matrix, 32 PUBLIC Self Check placements reuse new P01–P32 rather than adding IDs.
 - [x] A5_D1_D6_SCOPE — 32 WHY/prerequisites/meaning/reasoned worked/first-try/D6 units, five original Written /7 with detailed rubrics, four original SVG title/desc and guided reading, three lab proposals SPEC_ONLY.
 - [x] A6_DELTA_RESOLVED — new CĐ09 complete Topic/NEW37 bank is DELTA_C_ACADEMIC_MATERIAL self-Q18 verified on locked SHA. Original reviewed G11 SGK ChIX source unchanged, no P0/P1 author blocker.
