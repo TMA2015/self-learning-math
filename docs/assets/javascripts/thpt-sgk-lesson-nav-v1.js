@@ -616,7 +616,7 @@ const enableG10B06KeyboardTabs=(article)=>{
 const enableG10ChivEarlyKeyboardTabs=(article)=>{
  const m=location.pathname.match(/\/chuong-iv\/bai-(7|8)\/?$/);
  if(!m)return;
- const marker="g10B"+m[1]+"KeyboardTabs";
+ const marker="g10B"+m[1].padStart(2,"0")+"KeyboardTabs";
  if(article.dataset[marker]==="true")return;
  const set=article.querySelector(":scope > .tabbed-set");
  const radios=[...(set?.querySelectorAll(':scope > input[type="radio"]')||[])];
