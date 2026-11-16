@@ -37,7 +37,7 @@ const url="http://127.0.0.1:8765/thpt-preview/sgk/chuong-ii/bai-3/";
       ];
       assert.deepEqual(outline.map(h=>h.level),expected.map(x=>x[0]),
         "B03 must render exactly two S1 parent h3 sections and five nested h4 outcomes");
-      expected.forEach(([level,text],i=>assert(outline[i].text.startsWith(text),
+      expected.forEach(([level,text],i)=>assert(outline[i].text.startsWith(text),
         "B03 S1 hierarchy/learning outcome mismatch at "+level+" "+text+
         "; actual: "+outline[i].text));
       const img=blocks.nth(1).locator('img[src$="THPT_G10_B03_HALFPLANES_D5_R01.svg"]');
