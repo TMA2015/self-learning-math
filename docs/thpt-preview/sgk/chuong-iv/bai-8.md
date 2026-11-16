@@ -1,33 +1,20 @@
-# Bài 8. Tổng và hiệu của hai vectơ
+# Toán 10 · Bài 8. Tổng và hiệu của hai vectơ
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG IV · KIẾN THỨC SGK KNTT</p><p class="thpt-r4-lead">Học từ tình huống trực quan, nắm kiến thức và tự kiểm tra cách hiểu trước khi luyện tập.</p></div>
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG IV · KIẾN THỨC SGK KNTT</p><p class="thpt-r4-lead">Từ đường đi và hai lực cùng điểm đặt, tự hình thành phép cộng và phép trừ vectơ, đọc mũi tên trước khi áp dụng quy tắc. Thử giải Vận dụng rồi mới mở Đối chiếu.</p></div>
 
 === "Khám phá kiến thức"
 
-    ### Cùng tìm hiểu
+    ### 1.1. Vì sao không thể cộng hai vectơ như cộng hai độ dài?
 
-    Một người đi từ A đến B rồi tiếp tục từ B đến C. Nếu em chỉ muốn biết **độ dời từ điểm xuất phát đến điểm kết thúc**, không cần kể hai chặng riêng lẻ: mũi tên \(\overrightarrow{AC}\) chính là kết quả của hai mũi tên nối tiếp.
+    **Xét ba điểm \(A,B,C\)** là các vị trí trên đường đi. Một người xuất phát từ \(A\), đến \(B\), rồi tiếp tục đến \(C\). Độ dài hai chặng đường có thể cộng được để tìm *quãng đường đã đi*. Nhưng nếu chỉ cần biết vị trí cuối so với vị trí đầu, ta dùng **độ dời**: một mũi tên có điểm đầu ở \(A\), điểm cuối ở \(C\). Vì mũi tên có cả độ dài lẫn hướng, phép cộng vectơ không chỉ là cộng những con số đo độ dài.
 
-    Đó là ý nghĩa đầu tiên của phép cộng vectơ. Điểm cuối của mũi tên thứ nhất phải trùng điểm đầu của mũi tên thứ hai, khi ấy tổng được vẽ từ đầu chặng một đến cuối chặng hai. Nếu hai mũi tên lại cùng xuất phát từ một điểm, ta đưa chúng thành hai cạnh kề của hình bình hành để vẽ đường chéo — một cách nhìn khác của cùng phép cộng.
+    Hãy nhìn hai sơ đồ dưới đây: phần **nối đuôi–đầu** cho đường gấp khúc; phần **hình bình hành** cho hai vectơ cùng điểm đầu. Trước tiên xác định điểm đầu, điểm cuối của từng mũi tên rồi mới đọc mũi tên kết quả. Hình này minh họa quy tắc, không mang số đo của câu Vận dụng bên dưới.
 
-    Phép trừ cũng có hình học của nó: muốn lấy vectơ này trừ vectơ kia, ta **cộng với vectơ đối**. Em sẽ thấy vì sao trung điểm và trọng tâm tạo ra những tổng vectơ đặc biệt bằng vectơ-không, chứ không cần học thuộc công thức riêng rẽ.
+        <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B08_TRIANGLE_PARALLELOGRAM_SUM_D5_R01.svg" loading="lazy" alt="Vectơ và quy tắc ba điểm, hình bình hành"><figcaption>Cách đọc hình: theo đường gấp khúc, đầu mũi tên thứ nhất gặp đuôi mũi tên thứ hai; với hai vectơ chung gốc, đường chéo qua gốc là vectơ tổng. Hãy phân biệt vectơ tổng với tổng độ dài hai mũi tên.</figcaption></figure>
 
-    ### Ví dụ trực quan
+        <span id="thpt-g10-chiv-try06" data-thpt-first-try-id="THPT-G10-CHIV-TRY06" data-outcome-id="G10-B08-TRIANGLE" data-thpt-help-ref="HELP-G10-B08-01"></span>
 
-    <span id="thpt-g10-chiv-try06" data-thpt-first-try-id="THPT-G10-CHIV-TRY06" data-outcome-id="G10-B08-TRIANGLE" data-thpt-help-ref="HELP-G10-B08-01"></span>
-
-    #### Cộng hai lần di chuyển nối tiếp
-
-    Một người đi từ A đến B rồi từ B đến C. Muốn biết độ dời cuối cùng, không cần giữ mọi chặng nếu biết điểm đầu A và điểm cuối C.
-
-    Hãy lần theo hai chặng A→B và B→C. Vì chúng nối tại B, vectơ tổng đi thẳng từ A đến C; độ dài AC không nhất thiết bằng tổng độ dài hai chặng. 
-
-    Xếp hai mũi tên 'đuôi–đầu': mũi thứ nhất A→B rồi mũi thứ hai B→C. Hướng đi ròng A→C chính là ý nghĩa phép cộng vectơ \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}\).
-
-
-    Nhận dạng chuỗi điểm nối trước khi áp dụng quy tắc ba điểm; không cộng độ dài trừ khi hai chặng thẳng hàng cùng chiều.
-
-    **Em vận dụng.** Đi từ A 3 m sang Đông đến B, rồi 4 m lên Bắc đến C. Vectơ tổng đi từ đâu tới đâu? Độ dài của nó bằng 7 m không?
+        **Vận dụng.** Đi từ A 3 m sang Đông đến B, rồi 4 m lên Bắc đến C. Vectơ tổng đi từ đâu tới đâu? Độ dài của nó bằng 7 m không?
 
     ??? question "Em tự mở đối chiếu sau khi đã thử làm"
 
@@ -35,21 +22,15 @@
 
         **Vì sao:** Hai chặng vuông góc nên hình học Pitago cho AC = √(3²+4²)=5; 7 m là quãng đường, không phải độ dời.
 
+    ### 1.2. Hai vectơ cùng điểm đặt: vì sao đường chéo biểu diễn hợp lực?
 
-    <span id="thpt-g10-chiv-try07" data-thpt-first-try-id="THPT-G10-CHIV-TRY07" data-outcome-id="G10-B08-PARALLELOGRAM" data-thpt-help-ref="HELP-G10-B08-02"></span>
+    **Xét hai lực** tác dụng lên cùng một vật tại điểm \(A\), được biểu diễn bằng hai vectơ \(\vec u,\vec v\) có chung điểm đầu \(A\). Hai lực có thể khác hướng, nên ta không thể cộng riêng các độ lớn để suy độ lớn hợp lực. Dựng hình bình hành có hai cạnh liền kề biểu diễn \(\vec u,\vec v\); đường chéo xuất phát từ \(A\) biểu diễn \(\vec u+\vec v\).
 
-    #### Hai tác động cùng lúc và hợp lực
+    Nếu muốn dùng quy tắc nối đuôi–đầu, ta được phép **tịnh tiến vectơ** nhưng phải giữ nguyên độ dài và hướng. Hai cách dựng cho cùng vectơ tổng. Trước khi tính hợp lực, hãy kiểm góc giữa hai lực: chỉ khi chúng cùng hướng, độ lớn hợp lực mới bằng tổng hai độ lớn. Với hai lực vuông góc, hình bình hành trở thành hình chữ nhật và độ dài đường chéo dùng Pitago.
 
-    Hai lực có chung điểm đặt nhưng khác hướng không cho hợp lực bằng cách cộng độ lớn như cộng hai số thường.
+        <span id="thpt-g10-chiv-try07" data-thpt-first-try-id="THPT-G10-CHIV-TRY07" data-outcome-id="G10-B08-PARALLELOGRAM" data-thpt-help-ref="HELP-G10-B08-02"></span>
 
-    Trong hình bình hành ABCD, hai mũi tên dọc theo AB và AD cùng xuất phát từ A. Đường chéo đi từ A đến C giúp em hình dung cách cộng chúng. 
-
-    Dịch chuyển một lực để nối đuôi–đầu không đổi vectơ; dựng hình bình hành cho thấy đường chéo từ điểm chung A chính là kết quả \(\overrightarrow{AB}+\overrightarrow{AD}=\overrightarrow{AC}\).
-
-
-    Khi hai vectơ có cùng điểm đầu, vẽ hình bình hành cho trực giác nhanh; nếu điểm đầu khác, có thể tịnh tiến một vectơ rồi dùng quy tắc tam giác.
-
-    **Em vận dụng.** Ở A có hai lực vuông góc, độ lớn lần lượt 3 N và 4 N. Hợp lực theo đường chéo có độ lớn là 7 N hay 5 N?
+        **Vận dụng.** Ở A có hai lực vuông góc, độ lớn lần lượt 3 N và 4 N. Hợp lực theo đường chéo có độ lớn là 7 N hay 5 N?
 
     ??? question "Em tự mở đối chiếu sau khi đã thử làm"
 
@@ -57,21 +38,15 @@
 
         **Vì sao:** Hai lực vuông góc là hai cạnh góc vuông dài 3,4 nên đường chéo có độ lớn √(9+16)=5. Không cộng 3+4.
 
+    ### 1.3. Khi muốn lấy hiệu hai vectơ thì đổi chiều mũi tên nào?
 
-    <span id="thpt-g10-chiv-try08" data-thpt-first-try-id="THPT-G10-CHIV-TRY08" data-outcome-id="G10-B08-OPPOSITE-SUBTRACTION" data-thpt-help-ref="HELP-G10-B08-01"></span>
+    **Xét hai vectơ \(\vec u,\vec v\)** bất kì. Vectơ đối của \(\vec v\), kí hiệu \(-\vec v\), có **cùng độ dài nhưng ngược hướng** với \(\vec v\). Muốn thực hiện hiệu \(\vec u-\vec v\), hãy đổi hướng **vectơ bị trừ** thành \(-\vec v\), rồi cộng bằng quy tắc nối đuôi–đầu: \(\vec u-\vec v=\vec u+(-\vec v)\).
 
-    #### Vì sao trừ phải đổi chiều?
+    Với ba điểm \(A,B,C\), nếu hai vectơ ban đầu là \(\overrightarrow{AB}\) và \(\overrightarrow{AC}\) (cùng gốc \(A\)), em cần phân biệt rõ hướng của \(\overrightarrow{BC}\) và \(\overrightarrow{CB}\). Trước khi mở Đối chiếu, hãy vẽ \(\overrightarrow{CA}\) là vectơ đối của \(\overrightarrow{AC}\) rồi tự nối mũi tên để tìm hiệu.
 
-    Nếu biết hai vị trí đích B và C nhìn từ cùng A, muốn đi từ C sang B ta phải 'bù' chặng A→C bằng chiều ngược của nó.
+        <span id="thpt-g10-chiv-try08" data-thpt-first-try-id="THPT-G10-CHIV-TRY08" data-outcome-id="G10-B08-OPPOSITE-SUBTRACTION" data-thpt-help-ref="HELP-G10-B08-01"></span>
 
-    Muốn thực hiện phép trừ, hãy nhớ vectơ đối giữ độ dài nhưng đảo chiều. Sau đó nối các mũi tên theo quy tắc ba điểm A→C→B. 
-
-    Hiệu \(\vec u-\vec v\) có nghĩa là cộng vectơ ngược \(-\vec v\); vì thế \(\overrightarrow{AB}-\overrightarrow{AC}=\overrightarrow{AB}+\overrightarrow{CA}=\overrightarrow{CB}\).
-
-
-    Đổi dấu vectơ thứ hai trước rồi nối đầu–đuôi. Phép trừ vectơ nhìn chung không giao hoán, không lấy \(\overrightarrow{BC}\) cho trường hợp này.
-
-    **Em vận dụng.** Cho ba điểm A,B,C bất kỳ. Rút gọn \(\overrightarrow{AB}-\overrightarrow{AC}\) thành vectơ có hai chữ cái.
+        **Vận dụng.** Cho ba điểm A,B,C bất kỳ. Rút gọn \(\overrightarrow{AB}-\overrightarrow{AC}\) thành vectơ có hai chữ cái.
 
     ??? question "Em tự mở đối chiếu sau khi đã thử làm"
 
@@ -79,21 +54,15 @@
 
         **Vì sao:** Đổi trừ thành cộng \(\overrightarrow{CA}\): CA+AB=CB theo quy tắc ba điểm; CB và BC là hai vectơ đối.
 
+    ### 1.4. Vì sao tại trung điểm, hai vectơ hướng ra hai đầu triệt tiêu nhau?
 
-    <span id="thpt-g10-chiv-try09" data-thpt-first-try-id="THPT-G10-CHIV-TRY09" data-outcome-id="G10-B08-MIDPOINT" data-thpt-help-ref="HELP-G10-B08-02"></span>
+    **Cho đoạn thẳng \(AB\)** có trung điểm \(M\). Theo định nghĩa, \(M\) nằm giữa \(A,B\) và \(MA=MB\). Hai vectơ \(\overrightarrow{MA}\) và \(\overrightarrow{MB}\) cùng xuất phát từ \(M\) nhưng hướng về hai đầu đối nhau; chúng cùng độ dài và ngược hướng, nên có tổng bằng **vectơ-không** \(\vec0\).
 
-    #### Trung điểm làm hai độ dời triệt tiêu
+    Chú ý \(\vec0\) là **vectơ** có độ dài 0, không phải một độ dài âm. Ngược lại, khi \(A\ne B\) và \(\overrightarrow{MA}+\overrightarrow{MB}=\vec0\), hai độ dời phải triệt tiêu nên \(M\) chính là trung điểm của đoạn \(AB\). Em hãy kiểm tra kết luận trên một đoạn cụ thể thay vì chỉ học thuộc công thức.
 
-    Đứng ở giữa một đoạn đường, đi tới hai đầu theo hai hướng đối nhau và cùng độ dài; tổng hai vectơ này phải bằng 0.
+        <span id="thpt-g10-chiv-try09" data-thpt-first-try-id="THPT-G10-CHIV-TRY09" data-outcome-id="G10-B08-MIDPOINT" data-thpt-help-ref="HELP-G10-B08-02"></span>
 
-    Khi M là trung điểm AB, ta có MA=MB và M nằm trên đoạn AB. Hai mũi tên M→A, M→B vì vậy cùng độ dài nhưng ngược hướng. 
-
-    Vì \(\overrightarrow{MA}=-\overrightarrow{MB}\), tổng hai vectơ bằng \(\vec0\). Ngược lại, tổng bằng 0 ép hai độ dời ngược nhau và cùng dài nên M ở giữa A,B (với A≠B).
-
-
-    Nhận diện hai vectơ cùng xuất phát trung điểm; dùng tổng bằng 0 thay vì chỉ chứng minh MA=MB mà quên thẳng hàng.
-
-    **Em vận dụng.** Trên đường thẳng chọn A=0 m, B=8 m và M là trung điểm. Lấy \(\vec e\) là vectơ đơn vị dài 1 m hướng từ A đến B. Viết hai vectơ \(\overrightarrow{MA}\), \(\overrightarrow{MB}\) theo \(\vec e\) và tính tổng.
+        **Vận dụng.** Trên đường thẳng chọn A=0 m, B=8 m và M là trung điểm. Lấy \(\vec e\) là vectơ đơn vị dài 1 m hướng từ A đến B. Viết hai vectơ \(\overrightarrow{MA}\), \(\overrightarrow{MB}\) theo \(\vec e\) và tính tổng.
 
     ??? question "Em tự mở đối chiếu sau khi đã thử làm"
 
@@ -101,21 +70,15 @@
 
         **Vì sao:** Đặt M ở tọa độ 4 m. Hai độ dời là các bội đối nhau của vectơ đơn vị \(\vec e\), do đó tổng triệt tiêu. Không đồng nhất vectơ với một số đo độ dài.
 
+    ### 1.5. Vì sao tại trọng tâm, ba vectơ hướng tới các đỉnh cân bằng?
 
-    <span id="thpt-g10-chiv-try10" data-thpt-first-try-id="THPT-G10-CHIV-TRY10" data-outcome-id="G10-B08-CENTROID" data-thpt-help-ref="HELP-G10-B08-02"></span>
+    **Cho tam giác \(ABC\)** có \(M\) là trung điểm cạnh \(BC\), \(G\) là trọng tâm. Khi đó \(G\) nằm trên đường trung tuyến \(AM\) và \(AG:GM=2:1\). Từ \(G\), các vectơ hướng về ba đỉnh \(A,B,C\) có thể được cộng theo quy tắc vectơ; **không** phải cộng ba độ dài \(GA+GB+GC\) rồi cho bằng 0.
 
-    #### Ba độ dời cân bằng tại trọng tâm
+    Hai vectơ \(\overrightarrow{GB}\), \(\overrightarrow{GC}\) có tổng cùng phương với trung tuyến \(GM\), vì \(B,C\) nằm đối xứng qua \(M\) trong phép cộng có gốc \(G\). Hãy kết hợp tính chất trung điểm với tỉ số trọng tâm để tự tìm vectơ cần cân bằng tổng đó, trước khi mở lời giải.
 
-    Đặt điểm G ở trọng tâm một tam giác, ba vectơ hướng từ G đến các đỉnh cân bằng nhau khi cộng theo quy tắc vectơ.
+        <span id="thpt-g10-chiv-try10" data-thpt-first-try-id="THPT-G10-CHIV-TRY10" data-outcome-id="G10-B08-CENTROID" data-thpt-help-ref="HELP-G10-B08-02"></span>
 
-    Với tam giác ABC, M là trung điểm BC và G nằm trên trung tuyến AM, chia AM theo tỉ số AG:GM=2:1. Ta chỉ cần quan hệ hình học ấy, chưa cần dùng tọa độ. 
-
-    Từ trung điểm: \(\overrightarrow{GB}+\overrightarrow{GC}=2\overrightarrow{GM}\). Vì G trên AM và AG=2GM nên \(\overrightarrow{GA}=-2\overrightarrow{GM}\); cộng lại được tổng ba vectơ bằng 0.
-
-
-    Đặt trung điểm và trọng tâm đúng vị trí trước khi viết công thức. Không suy tổng độ dài GA+GB+GC=0 vì các độ dài đều không âm.
-
-    **Em vận dụng.** Với M trung điểm BC và G trọng tâm ABC, biết \(\overrightarrow{GB}+\overrightarrow{GC}=2\overrightarrow{GM}\). Viết \(\overrightarrow{GA}\) theo \(\overrightarrow{GM}\) và tìm tổng ba vectơ từ G.
+        **Vận dụng.** Với M trung điểm BC và G trọng tâm ABC, biết \(\overrightarrow{GB}+\overrightarrow{GC}=2\overrightarrow{GM}\). Viết \(\overrightarrow{GA}\) theo \(\overrightarrow{GM}\) và tìm tổng ba vectơ từ G.
 
     ??? question "Em tự mở đối chiếu sau khi đã thử làm"
 
@@ -123,92 +86,144 @@
 
         **Vì sao:** AG=2GM trên cùng trung tuyến, hai vectơ G→A và G→M ngược chiều. Đây là cân bằng vectơ, không phải cộng ba khoảng cách.
 
-    ### Thuật ngữ, kiến thức và kỹ năng
-
-    **Thuật ngữ:** Tổng vectơ, quy tắc ba điểm, quy tắc hình bình hành, vectơ đối, hiệu, trung điểm, trọng tâm.
-
-    **Sau bài học, em cần làm được:** Nối đúng điểm đầu–cuối; vẽ đường chéo hình bình hành; đổi phép trừ thành cộng vectơ đối; dùng các quan hệ trung điểm/trọng tâm.
+    **Sau bài này em cần:** đọc hình và xác định đầu/cuối của vectơ; dựng tổng theo nối đuôi–đầu hoặc hình bình hành; trừ bằng vectơ đối; suy quan hệ trung điểm/trọng tâm; phân biệt tổng độ dời với tổng quãng đường hay tổng độ lớn của lực.
 
 === "Kiến thức SGK"
 
     ### 2.1. Tổng của hai vectơ
 
-    Với A,B,C tùy ý: $\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}$.
+    #### 2.1.1. Định nghĩa tổng: phép nối đuôi–đầu
 
-    **Lưu ý:** Điểm cuối của vectơ thứ nhất B là điểm đầu của vectơ thứ hai; đảo BC thành CB có thể làm đổi kết quả.
+    **Cho hai vectơ \(\vec u,\vec v\).** Chọn một điểm \(A\) tùy ý, dựng \(\overrightarrow{AB}=\vec u\), rồi từ \(B\) dựng \(\overrightarrow{BC}=\vec v\). Vectơ nối từ **điểm đầu của vectơ thứ nhất** đến **điểm cuối của vectơ thứ hai** là tổng \(\vec u+\vec v\).
 
-    #### Quy tắc hình bình hành
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Quy tắc ba điểm:</strong> Với ba điểm \(A,B,C\) bất kì, \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}\). Đặc biệt, điểm cuối \(B\) của vectơ thứ nhất phải trùng điểm đầu \(B\) của vectơ thứ hai.</div>
 
-    **Quan sát hình.** Hãy đọc hai cách cộng trên hình: ở quy tắc tam giác, nối đuôi mũi tên; ở quy tắc hình bình hành, dựng hai cạnh chung gốc rồi lấy đường chéo. Không cộng độ dài như cộng vectơ.
+    Không cần giữ nguyên vị trí mũi tên nếu muốn đặt lại chúng: **tịnh tiến** một vectơ song song với chính nó, không đổi độ dài và hướng, thì vẫn được cùng một vectơ. Nhưng tự ý đổi \(\overrightarrow{BC}\) thành \(\overrightarrow{CB}\) là **đổi hướng**, không còn cùng phép cộng ban đầu.
 
-    <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B08_TRIANGLE_PARALLELOGRAM_SUM_D5_R01.svg" loading="lazy" alt="Vectơ và quy tắc ba điểm, hình bình hành"><figcaption>Vectơ và quy tắc ba điểm, hình bình hành.</figcaption></figure>
+    #### 2.1.2. Quy tắc hình bình hành: hai vectơ cùng điểm đầu
 
-     Với hình bình hành ABCD, $\overrightarrow{AB}+\overrightarrow{AD}=\overrightarrow{AC}$.
+    **Cho hình bình hành \(ABCD\).** Hai vectơ \(\overrightarrow{AB},\overrightarrow{AD}\) chung gốc \(A\). Dựng đường chéo \(AC\) xuất phát từ \(A\); nó biểu diễn tổng hai vectơ theo quy tắc hình bình hành.
 
-    **Điều kiện hình vẽ:** Hai cạnh được chọn phải cùng xuất phát từ **A**, đường chéo kết quả từ A đến C.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Quy tắc hình bình hành:</strong> Nếu \(ABCD\) là hình bình hành thì \(\overrightarrow{AB}+\overrightarrow{AD}=\overrightarrow{AC}\). Quy tắc này chính là quy tắc nối đuôi–đầu khi tịnh tiến một vectơ; không phải quy tắc cộng độ dài \(AB+AD=AC\).</div>
 
-    **Tính chất:** Phép cộng vectơ có giao hoán, kết hợp, phần tử không.
+    Hãy quay lại hình ở mục 1.1 và chỉ ra hai cách dựng cho cùng kết quả. Với hai lực \(\vec F_1,\vec F_2\) tác dụng tại một điểm, hợp lực theo mô hình hình bình hành là \(\vec F_1+\vec F_2\). **Độ lớn** hợp lực còn phụ thuộc góc giữa hai lực: không tự cộng hai số N nếu hai vectơ không cùng hướng.
 
-    #### Vận dụng: hợp lực
+    #### 2.1.3. Tính chất: thứ tự cộng và vectơ-không
 
-    Nếu hai lực có cùng điểm đặt, hợp lực là đường chéo hình bình hành tạo bởi hai vectơ lực. Độ lớn hợp lực không bằng tổng các độ lớn nếu hai lực không cùng hướng. Bài toán hai lực vuông góc có thể dùng định lí Pitago.
+    Với ba vectơ bất kì \(\vec u,\vec v,\vec w\), phép cộng có tính **giao hoán** \(\vec u+\vec v=\vec v+\vec u\), **kết hợp** \((\vec u+\vec v)+\vec w=\vec u+(\vec v+\vec w)\); vectơ-không là phần tử trung hòa \(\vec u+\vec0=\vec u\). Tính chất giao hoán nói **vectơ tổng** không đổi, không có nghĩa hai chặng đường thực tế đã đi theo cùng thứ tự.
+
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Ghi nhớ cách đọc hình:</strong> Vectơ tổng có một hướng và một độ dài riêng. Quãng đường của hai chặng bằng tổng độ dài hai chặng, nhưng độ lớn vectơ tổng chỉ bằng con số đó khi hai chặng thẳng hàng và cùng chiều.</div>
 
     ### 2.2. Hiệu của hai vectơ
 
-    $-\overrightarrow{AB}=\overrightarrow{BA}$ và $\vec u-\vec v=\vec u+(-\vec v)$. 
+    #### 2.2.1. Vectơ đối và phép trừ
 
-    **Hệ quả:** Quy tắc ba điểm suy ra $\overrightarrow{AB}-\overrightarrow{AC}=\overrightarrow{CB}$; phép trừ vectơ nói chung **không giao hoán**.
+    **Cho vectơ \(\vec u\).** Vectơ đối \(-\vec u\) có độ dài bằng \(\vec u\) và ngược hướng (vectơ-không là vectơ đối của chính nó). Vì vậy \(\overrightarrow{BA}=-\overrightarrow{AB}\) với hai điểm \(A,B\).
 
-    **Phần tử không và vectơ đối:** $\vec a+\vec0=\vec a$, $\vec a+(-\vec a)=\vec0$.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa hiệu:</strong> Với hai vectơ \(\vec u,\vec v\), \(\vec u-\vec v=\vec u+(-\vec v)\). Phải đổi chiều **vectơ bị trừ** rồi mới cộng, không đổi chiều cả hai.</div>
 
-    #### Hệ quả: trung điểm và trọng tâm
+    #### 2.2.2. Quy tắc trừ: hai vectơ chung gốc
 
-    M là trung điểm AB khi và chỉ khi $\overrightarrow{MA}+\overrightarrow{MB}=\vec0$.
+    **Cho ba điểm \(A,B,C\).** Hai vectơ \(\overrightarrow{AB},\overrightarrow{AC}\) cùng gốc \(A\). Hiệu của chúng là
+    \[
+    \overrightarrow{AB}-\overrightarrow{AC}
+    =\overrightarrow{AB}+\overrightarrow{CA}
+    =\overrightarrow{CB}.
+    \]
+    Cách kiểm: nối \(C\to A\to B\), tức bắt đầu ở \(C\) và kết thúc ở \(B\), nên kết quả phải có hướng \(C\to B\), không phải \(B\to C\).
 
-    **Trọng tâm:** G là trọng tâm tam giác ABC thì $\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0$.
+    #### 2.2.3. Vận dụng tổng/hiệu cho trung điểm và trọng tâm
 
-    **Hệ quả trung điểm:** Đối với M trung điểm BC và E bất kì: $\overrightarrow{EB}+\overrightarrow{EC}=\overrightarrow{EM}+\overrightarrow{EM}$.
+    **Cho đoạn thẳng \(AB\)** có trung điểm \(M\). Hai vectơ từ \(M\) đến \(A\) và \(B\) đối nhau: \(\overrightarrow{MA}+\overrightarrow{MB}=\vec0\). Ngược lại, nếu \(A\ne B\), đây cũng là điều kiện đủ để \(M\) là trung điểm \(AB\).
 
-    **Liên hệ:** Chú ý đây là quan hệ cộng vectơ đã có trong bài, không xây thêm phần Core riêng.
+    **Cho tam giác \(ABC\)** có \(M\) là trung điểm \(BC\), \(G\) là trọng tâm. Từ quy tắc cộng ta có \(\overrightarrow{GB}+\overrightarrow{GC}=2\overrightarrow{GM}\); vì \(\overrightarrow{GA}=-2\overrightarrow{GM}\), suy ra \(\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0\). Với một điểm \(E\) bất kì, \(\overrightarrow{EB}+\overrightarrow{EC}=2\overrightarrow{EM}\). Mọi công thức trên là **đẳng thức vectơ**, không phải đẳng thức giữa các độ dài.
+
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Ghi nhớ khi vận dụng:</strong> Ghi rõ điểm, đường trung tuyến và trung điểm trước khi thay vào công thức. Kiểm cả hướng lẫn độ dài; không dùng công thức trọng tâm cho một điểm \(G\) bất kì chưa có điều kiện là trọng tâm.</div>
 
 === "Ví dụ"
 
-    Trước khi xem lời giải, hãy tự hỏi **bài cho dữ kiện gì, cần tìm điều gì và vì sao quy tắc vừa học phù hợp**. Sau đó hãy giải từng bước, kiểm lại hướng, độ lớn và điều kiện của kết quả.
+    ### 3.1. Ví dụ 1 — Rút gọn khi các mũi tên chưa được xếp nối tiếp
 
-    ### Ví dụ 1. Rút gọn theo ba điểm
+    **Đề bài.** Cho bốn điểm phân biệt \(A,B,C,D\) bất kì. Rút gọn \(\overrightarrow{AC}+\overrightarrow{CB}+\overrightarrow{BD}\).
 
-    **Đề:** Rút gọn $\overrightarrow{AB}+\overrightarrow{BC}+\overrightarrow{CD}$.
-    **Giải:** Ghép $\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}$ rồi cộng $\overrightarrow{CD}$ được $\overrightarrow{AD}$.
-    **Điểm cần tự kiểm:** Điểm giữa phải nối đúng B rồi C; phép cộng không đổi khi thêm ngoặc hợp lí.
+    **Phân tích.** Điểm cuối của \(\overrightarrow{AC}\) là \(C\), đúng bằng đầu của \(\overrightarrow{CB}\). Sau khi nối hai chặng này, ta sẽ được một vectơ kết thúc ở \(B\), có thể tiếp tục nối với \(\overrightarrow{BD}\). Không cần các điểm tạo hình bình hành.
 
-    ### Ví dụ 2. Quy tắc hình bình hành và hiệu
+    **Lời giải.** \(\overrightarrow{AC}+\overrightarrow{CB}=\overrightarrow{AB}\); do đó
+    \[
+    \overrightarrow{AC}+\overrightarrow{CB}+\overrightarrow{BD}
+      =\overrightarrow{AB}+\overrightarrow{BD}=\overrightarrow{AD}.
+    \]
 
-    **Đề:** Trong hình bình hành ABCD, rút gọn $\overrightarrow{AB}+\overrightarrow{AD}$ và $\overrightarrow{AC}-\overrightarrow{AB}$.
-    **Giải:** Tổng là $\overrightarrow{AC}$. Vì $\overrightarrow{AC}=\overrightarrow{AB}+\overrightarrow{BC}$ nên hiệu $\overrightarrow{AC}-\overrightarrow{AB}=\overrightarrow{BC}=\overrightarrow{AD}$.
-    **Điểm cần tự kiểm:** Không nhầm kết quả với CA hoặc CB khi đổi hướng.
+    **Kiểm lại.** Hướng kết quả đi từ \(A\) đến \(D\), đúng điểm đầu và cuối toàn bộ chuỗi. Kết quả không phụ thuộc vị trí của \(C\) hay hình dạng đường gấp khúc.
 
-    ### Ví dụ 3. Trung điểm và trọng tâm
+    ### 3.2. Ví dụ 2 — Hai lực lệch nhau 60 độ
 
-    **Đề:** M là trung điểm BC của tam giác ABC, G là trọng tâm. Nêu hai hệ thức đặc trưng.
-    **Giải:** Vì M trung điểm BC: $\overrightarrow{MB}+\overrightarrow{MC}=\vec0$. Vì G trọng tâm tam giác ABC: $\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0$.
-    **Điểm cần tự kiểm:** Tổng ba vectơ phải đều xuất phát từ G; không thay tùy ý thành AB + BC + CA khi viện dẫn tính chất trọng tâm.
+    **Đề bài.** Hai lực \(\vec F_1,\vec F_2\) cùng tác dụng tại điểm \(O\), có độ lớn lần lượt \(5\,\mathrm N\) và \(7\,\mathrm N\), hợp với nhau góc \(60^\circ\). Tính độ lớn hợp lực.
+
+    **Phân tích.** Vì hai lực cùng điểm đặt, dựng hình bình hành để tìm vectơ tổng. Khi hai lực **không cùng hướng** và **không vuông góc**, không cộng \(5+7\) cũng không áp dụng trực tiếp Pitago; dùng định lí côsin Bài 6 cho đường chéo.
+
+    **Lời giải.** Với \(F=|\vec F_1+\vec F_2|\), định lí côsin cho
+    \[
+    F^2=5^2+7^2+2\cdot5\cdot7\cos60^\circ
+       =25+49+35=109.
+    \]
+    Vậy \(F=\sqrt{109}\approx10{,}44\,\mathrm N\).
+
+    **Kiểm lại.** Hợp lực lớn hơn \(7\) N nhưng nhỏ hơn \(5+7=12\) N, phù hợp góc giữa hai lực \(60^\circ\). Phép cộng vectơ không làm mất hướng lực.
+
+    ### 3.3. Ví dụ 3 — Tổng hai vectơ từ một đỉnh tới hai đỉnh còn lại
+
+    **Đề bài.** Cho tam giác \(ABC\), gọi \(M\) là trung điểm cạnh \(BC\). Biểu diễn \(\overrightarrow{AB}+\overrightarrow{AC}\) theo \(\overrightarrow{AM}\).
+
+    **Phân tích.** Hai vectơ xuất phát từ cùng đỉnh \(A\) nhưng chưa nối đuôi nhau. Hãy thêm điểm \(M\) vào từng vectơ để dùng quy tắc ba điểm, rồi dùng tính chất trung điểm \(MB\) và \(MC\) đối nhau.
+
+    **Lời giải.**
+    \[
+    \overrightarrow{AB}=\overrightarrow{AM}+\overrightarrow{MB},\qquad
+    \overrightarrow{AC}=\overrightarrow{AM}+\overrightarrow{MC}.
+    \]
+    Vì \(M\) là trung điểm \(BC\), \(\overrightarrow{MB}+\overrightarrow{MC}=\vec0\). Do đó
+    \[
+    \overrightarrow{AB}+\overrightarrow{AC}=2\overrightarrow{AM}.
+    \]
+
+    **Kiểm lại.** Tổng cùng hướng với trung tuyến \(AM\), và độ lớn của tổng bằng hai lần độ dài \(AM\). Không suy kết luận này nếu \(M\) không là trung điểm.
+
+    ### 3.4. Ví dụ 4 — Ba chặng đường, tổng độ dời khác tổng quãng đường
+
+    **Đề bài.** Một người đi từ \(A\) về phía Đông \(7\) m, quay lại phía Tây \(2\) m, rồi đi về phía Bắc \(4\) m đến \(D\). Tính quãng đường đã đi và độ lớn vectơ độ dời \(\overrightarrow{AD}\).
+
+    **Phân tích.** Hai chặng ngược hướng Đông/Tây triệt tiêu một phần về **độ dời**, nhưng quãng đường vẫn cộng tất cả ba chặng. Vectơ độ dời sau hai chặng ngang có độ dài \(5\) m hướng Đông, rồi ghép với \(4\) m hướng Bắc.
+
+    **Lời giải.** Quãng đường là \(7+2+4=13\) m. Độ dời ròng gồm \(5\) m hướng Đông và \(4\) m hướng Bắc (vuông góc), nên
+    \[
+    |\overrightarrow{AD}|=\sqrt{5^2+4^2}=\sqrt{41}\approx6{,}40\ \mathrm m.
+    \]
+
+    **Kiểm lại.** Độ dời nhỏ hơn quãng đường \(13\) m, hướng Đông Bắc; kết quả có nghĩa hình học và không phụ thuộc việc ta chọn điểm trung gian để ghép vectơ.
 
 === "Lỗi thường gặp"
 
     <span data-thpt-help-id="HELP-G10-B08-01" hidden></span>
 
-    ??? tip "Nhầm hướng và thứ tự khi áp dụng quy tắc ba điểm/hiệu"
+    ??? tip "4.1. Nhầm hướng khi nối mũi tên hoặc khi trừ vectơ"
 
-        <ol><li><strong>Tín hiệu:</strong> Học sinh trả lời sai trong B08-C01, B08-P02.</li><li><strong>Nguyên nhân:</strong> Nhầm các định nghĩa hoặc quy tắc vectơ đã học, không phải thiếu thêm công thức mới.</li><li><strong>Nguyên lí:</strong> Dùng đường gấp khúc đầu-cuối: AB + BC = AC; phép trừ đổi vectơ bị trừ thành vectơ đối.</li><li><strong>Tự sửa:</strong> Học sinh phải tự vẽ một sơ đồ mũi tên nhỏ, xác định điểm đầu/cuối và nêu ít nhất một lí do toán học, rồi thử lại câu cũ.</li><li><strong>Điểm quay lại:</strong> Làm B08-P02 và B08-P03.</li></ol><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
+        **Dấu hiệu:** Em viết \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{CA}\) hoặc \(\overrightarrow{AB}-\overrightarrow{AC}=\overrightarrow{BC}\).
+
+        **Vì sao sai?** Tổng theo ba điểm phải nối đúng **điểm cuối–điểm đầu**, còn phép trừ phải đổi chiều vectơ bị trừ. Đảo kết quả \(\overrightarrow{CB}\) thành \(\overrightarrow{BC}\) đổi hướng, dù độ dài bằng nhau.
+
+        **Tự sửa:** Vẽ riêng hai mũi tên, đánh dấu điểm đầu và cuối; với hiệu hãy viết thành tổng với vectơ đối, rồi lần theo đường gấp khúc. Thử với ba điểm bất kì mới tự chọn, sau đó quay lại câu Vận dụng mục 1.3 và <a href="../luyen-tap/">Luyện tập</a>.
 
     <span data-thpt-help-id="HELP-G10-B08-02" hidden></span>
 
-    ??? tip "Quên giao điểm trung điểm/trọng tâm, suy luận sai phép cộng và hợp lực"
+    ??? tip "4.2. Cộng độ lớn và nhầm điều kiện trung điểm/trọng tâm"
 
-        <ol><li><strong>Tín hiệu:</strong> Học sinh trả lời sai trong B08-P04, B08-P05, B08-P06.</li><li><strong>Nguyên nhân:</strong> Nhầm các định nghĩa hoặc quy tắc vectơ đã học, không phải thiếu thêm công thức mới.</li><li><strong>Nguyên lí:</strong> Phân biệt tính chất M trung điểm với G trọng tâm; cộng lực theo hình bình hành, không cộng độ lớn nếu lệch hướng.</li><li><strong>Tự sửa:</strong> Học sinh phải tự vẽ một sơ đồ mũi tên nhỏ, xác định điểm đầu/cuối và nêu ít nhất một lí do toán học, rồi thử lại câu cũ.</li><li><strong>Điểm quay lại:</strong> Làm B08-P04, B08-P05 và B08-P06.</li></ol><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
+        **Dấu hiệu:** Em cộng độ lớn hai lực lệch hướng như hai số thường; hoặc cho rằng \(MA=MB\) đã đủ để khẳng định \(M\) là trung điểm \(AB\) mà không kiểm \(M\) nằm trên đoạn \(AB\).
 
+        **Vì sao sai?** Vectơ mang cả hướng và độ lớn. Trung điểm phải **nằm trên đoạn nối hai đầu** và cách đều hai đầu. Trọng tâm là giao điểm ba trung tuyến của tam giác, không phải một điểm tùy ý.
+
+        **Tự sửa:** Dựng hình bình hành cho hai lực, đọc độ lớn đường chéo và góc giữa chúng; với trung điểm hãy vẽ \(A,M,B\) thẳng hàng và \(MA=MB\); với trọng tâm vẽ trung tuyến và chỉ ra tỉ số \(AG:GM=2:1\). Thử lại câu Vận dụng mục 1.4–1.5, sau đó làm <a href="../luyen-tap/">Luyện tập</a>.
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
-    <p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 10 Kết nối tri thức với cuộc sống và học liệu SLM hiện hành. Lời giảng biên tập nhằm hỗ trợ tự học độc lập.</p>
-
+    <p class="thpt-r4-footnote">Nguồn kiến thức: SGK Toán 10, Kết nối tri thức với cuộc sống, tập 1, Bài 8 (trang in 51–54); giữ đúng hai mục chính “Tổng của hai vectơ” và “Hiệu của hai vectơ”. Bài toán và lời giải chuyển giao do SLM biên tập, học sinh tự mở Đối chiếu; không ghi Mastery hoặc thay thế Tự kiểm tra cuối chương.</p>
