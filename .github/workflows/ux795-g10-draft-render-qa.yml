@@ -33,7 +33,7 @@ concurrency:
 jobs:
   render-model-b:
     name: Build and inspect G10 all 27 Knowledge pages
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 35 # Full 27 x 3 viewport browser AP QA; no skipped lesson
     steps:
       - uses: actions/checkout@v4

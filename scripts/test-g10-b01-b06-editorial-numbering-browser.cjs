@@ -2,7 +2,7 @@
 "use strict";
 /* G10 B01–B06 learner-facing Golden browser QA.
  * B01 now references owner-corrected R02 source and immutable R01→R02 Q18
- * receipts; B02–B06 keep exact historic SHA. Golden UI/answer and D6
+ * receipts; B03–B06 keep exact historic SHA. Golden UI/answer and D6
  * regressions are checked; this does NOT independently approve Delta C.
  */
 const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path"),crypto=require("node:crypto");
@@ -43,18 +43,36 @@ function checkSHA(){
    assert(oldCandidate&&newBaseline===oldCandidate&&original.includes("**BASELINE_LESSON_GIT_BLOB:** "+String.fromCharCode(96)+sha+String.fromCharCode(96)),
     "B01 R02 must extend original owner-reviewed R01 / frozen historical SGK baseline");
    assert.equal(hash(data),newCandidate,"B01 owner P2 source must match exactly R02 Q18 candidate Git blob");
-  }else if(p==="docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"){
+  }else if(p==="docs/thpt-preview/sgk/chuong-i/bai-2.md"){
    const receipt=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHI_B02_S1_Q18_KNOWLEDGE_ENRICHMENT_R01_20261116.md"),"utf8");
+   const baseline=receipt.match(/^\*\*BASELINE_LESSON_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+   const candidate=receipt.match(/^\*\*CANDIDATE_LESSON_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+   assert.equal(baseline,sha,"B02 immutable prior SGK candidate source SHA remains source-locked");
+   assert.equal(hash(data),candidate,"B02 source must exactly match S1/Q18 enrichment receipt");
+  }else if(p==="docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"){
+   const b01=fs.readFileSync(path.join(root,
     "prototypes/thpt/ux795/G10_CHI_B01_DEFINITION_COLOR_UI_DELTA_A_20261116.md"),"utf8");
-   const oldCss=receipt.match(/^\*\*BASELINE_CSS_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
-   const newCss=receipt.match(/^\*\*CANDIDATE_CSS_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
-   assert.equal(oldCss,sha,"B01 original shared CSS baseline must remain source-locked");
-   assert.equal(hash(data),newCss,"B01 teal concept CSS must match exact Delta A receipt SHA");
-   assert(receipt.includes("**IMMUTABLE_B01_KNOWLEDGE_SOURCE_BLOB:** "+
-     String.fromCharCode(96)+"dba6430cd79b17dee0591fb2dcd075ea5200b126"+String.fromCharCode(96)),
-     "B01 UI-only delta must explicitly preserve deployed R02 Knowledge source");
+   const b02=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHI_B02_S1_Q18_KNOWLEDGE_ENRICHMENT_R01_20261116.md"),"utf8");
+   const b01Baseline=b01.match(/^\*\*BASELINE_CSS_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+   const b01Candidate=b01.match(/^\*\*CANDIDATE_CSS_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+   const b02Baseline=b02.match(/^\*\*CSS_PATH:\*\*.*baseline \x60([a-f0-9]{40})\x60/m)?.[1];
+   const b02Candidate=b02.match(/^\*\*CSS_PATH:\*\*.*candidate \x60([a-f0-9]{40})\x60/m)?.[1];
+   assert(b01Baseline===sha&&b01Candidate===b02Baseline,
+    "Original B01 teal receipt must be immutable and B02 CSS extend that exact blob");
+   assert.equal(hash(data),b02Candidate,"B02 scoped teal CSS must match its source-locked Q18 receipt");
   }else assert.equal(hash(data),sha,"Untouched SGK sibling source/theme drift: "+p);
  }
+ const q18=fs.readFileSync(path.join(root,
+  "prototypes/thpt/ux795/G10_CHI_B02_S1_Q18_KNOWLEDGE_ENRICHMENT_R01_20261116.md"),"utf8");
+ const asset=fs.readFileSync(path.join(root,
+  "docs/assets/images/thpt/G10_B02_NUMBER_SETS_INCLUSION_S1_R01.svg"));
+ const js=fs.readFileSync(path.join(root,"docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js"));
+ assert(q18.includes("**SVG_ASSET_GIT_BLOB:** "+String.fromCharCode(96)+hash(asset)+String.fromCharCode(96)),
+  "B02 S1 nested-set diagram must match immutable figure SHA");
+ assert(q18.includes("candidate "+String.fromCharCode(96)+hash(js)+String.fromCharCode(96)),
+  "B02 Golden route JS must match Q18 candidate SHA");
 }
 const names=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
 const ch=n=>n<=2?"i":n<=4?"ii":"iii";
@@ -85,10 +103,14 @@ const widths=[390,820,1440];
        "1.2. Đọc đúng chiều của một lời khẳng định",
        "1.3. “Mọi” và “có ít nhất một” khác nhau ra sao?",
        "1.4. Thuật ngữ và điều em cần nhớ"]:
+      n===2?["1.1. Tập hợp giúp ta xác định những đối tượng nào?",
+       "1.2. Đọc hình và tìm phần chung","1.3. Thuật ngữ và mục tiêu bài học"]:
       ["1.1. Cùng tìm hiểu","1.2. Ví dụ trực quan","1.3. Thuật ngữ, kiến thức và kỹ năng"];
      assert.deepEqual(discoveryTitles,expectedDiscovery,loc+" meaningful concept-first discovery headings");
      const knowledge=(await groups.nth(1).locator("h3").allInnerTexts()).map(x=>x.trim());
-     assert(knowledge.length>=4&&knowledge.every((v,i)=>v.startsWith("2."+(i+1)+". ")),loc+" original SGK 2.x preserved");
+     assert(knowledge.length>=(n===2?3:4)&&knowledge.every((v,i)=>v.startsWith("2."+(i+1)+". ")),loc+" authentic S1 SGK main sections");
+     if(n===2)assert.deepEqual(knowledge,["2.1. Các khái niệm cơ bản về tập hợp",
+      "2.2. Các tập hợp số","2.3. Các phép toán trên tập hợp"],loc+" original S1 has 3 main sections");
      if(n===1){
       const conceptBoxes=groups.nth(1).locator(".thpt-r4-knowledge-conclusion");
       assert.equal(await conceptBoxes.count(),7,loc+" B01 canonical boxed definitions and notation");
@@ -103,8 +125,32 @@ const widths=[390,820,1440];
       assert(!await groups.nth(2).getByText("Vì sao chọn cách này?",{exact:true}).count(),
         loc+" never render rejected method-choice prompt");
      }
+     if(n===2){
+      const knowledgePane=groups.nth(1);
+      const boxes=knowledgePane.locator(".thpt-r4-concept-card");
+      assert.equal(await boxes.count(),13,loc+" thirteen source-aligned concept boxes");
+      assert.equal(await knowledgePane.locator(".thpt-r4-knowledge-conclusion:not(.thpt-r4-concept-card)").count(),4,
+        loc+" four amber memory cards");
+      const ids=await knowledgePane.locator("[data-thpt-first-try-id]").evaluateAll(nodes=>nodes.map(x=>x.getAttribute("data-thpt-first-try-id")));
+      assert.equal(ids.length,6,loc+" original six B02 First Tries");
+      assert.equal(new Set(ids).size,6,loc+" no duplicate First Try ID");
+      const texts=await knowledgePane.locator("p").allInnerTexts();
+      assert.equal(texts.filter(x=>x.trim().startsWith("Vận dụng.")).length,6,
+       loc+" six uniform Vận dụng titles");
+      const analyses=await groups.nth(2).locator("p").allInnerTexts();
+      assert.equal(analyses.filter(x=>x.trim().startsWith("Phân tích.")).length,4,
+        loc+" four analysis-before-method examples");
+      const diagram=knowledgePane.locator('img[src*="G10_B02_NUMBER_SETS_INCLUSION_S1_R01.svg"]');
+      assert.equal(await diagram.count(),1,loc+" S1 nested number sets SVG present");
+      await labels.nth(1).click(); // make lazy-loaded S1 diagram visible before checking pixels
+      await page.waitForFunction(()=>{
+       const image=document.querySelector('img[src*="G10_B02_NUMBER_SETS_INCLUSION_S1_R01.svg"]');
+       return !!image&&image.complete&&image.naturalWidth>0;
+      },null,{timeout:15000});
+      await labels.nth(0).click();
+     }
      const exampleTitles=(await groups.nth(2).locator("h3").allInnerTexts()).map(x=>x.trim());
-     assert(exampleTitles.length>=3&&exampleTitles.every((v,i)=>v.startsWith("3."+(i+1)+". Ví dụ "+(i+1)+" —")),loc+" 3.x examples");
+     assert(exampleTitles.length>=(n===2?4:3)&&exampleTitles.every((v,i)=>v.startsWith("3."+(i+1)+". Ví dụ "+(i+1)+" —")),loc+" S1 extended worked example titles");
      // Visual consistency: every worked example has one full tinted solution,
      // and the table's headers and cells share the same column alignment.
      const solutions=groups.nth(2).locator(".thpt-g10-example-solution");
@@ -181,7 +227,8 @@ const widths=[390,820,1440];
       const inside=folds.flatMap(d=>[...d.querySelectorAll("p")].map(px));
       const callouts=[...article.querySelectorAll(".thpt-r4-knowledge-conclusion")].map(x=>({
        background:getComputedStyle(x).backgroundColor,
-       left:getComputedStyle(x).borderLeftColor
+       left:getComputedStyle(x).borderLeftColor,
+       concept:x.classList.contains("thpt-r4-concept-card")
       }));
       const labels=[...article.querySelectorAll(".tabbed-set > .tabbed-labels > label")];
       return {body,cells,summaries,inside,callouts,
@@ -211,9 +258,29 @@ const widths=[390,820,1440];
        if(old===null)document.body.removeAttribute("data-md-color-scheme");
        else document.body.setAttribute("data-md-color-scheme",old);
       },scheme);
+     }else if(n===2){
+      const concepts=fontAudit.callouts.filter(c=>c.concept);
+      const memory=fontAudit.callouts.filter(c=>!c.concept);
+      assert.equal(concepts.length,13,loc+" thirteen S1 definition cards in layout");
+      assert.equal(memory.length,4,loc+" original four amber memory cards");
+      assert(concepts.every(c=>c.background==="rgb(232, 247, 242)"&&c.left==="rgb(8, 125, 105)"),
+       loc+" B02 concepts teal in light mode");
+      assert(memory.every(c=>c.background==="rgb(255, 243, 213)"&&c.left==="rgb(196, 154, 55)"),
+       loc+" B02 memory cards amber in light mode");
+      const old=await page.evaluate(()=>document.body.getAttribute("data-md-color-scheme"));
+      await page.evaluate(()=>document.body.setAttribute("data-md-color-scheme","slate"));
+      const cards=await groups.nth(1).locator(".thpt-r4-knowledge-conclusion").evaluateAll(nodes=>nodes.map(x=>({
+       bg:getComputedStyle(x).backgroundColor,left:getComputedStyle(x).borderLeftColor,
+       concept:x.classList.contains("thpt-r4-concept-card")
+      })));
+      assert(cards.filter(c=>c.concept).every(c=>c.bg==="rgb(25, 61, 54)"&&c.left==="rgb(118, 223, 199)"),
+       loc+" B02 slate teal definitions");
+      assert(cards.filter(c=>!c.concept).every(c=>c.bg==="rgb(74, 58, 37)"&&c.left==="rgb(214, 170, 73)"),
+       loc+" B02 slate amber reminders");
+      await page.evaluate(v=>{if(v===null)document.body.removeAttribute("data-md-color-scheme");else document.body.setAttribute("data-md-color-scheme",v);},old);
      }else{
       assert(fontAudit.callouts.every(c=>c.background==="rgb(255, 243, 213)"&&c.left==="rgb(196, 154, 55)"),
-       loc+" B02–B06 keep original amber memory cards");
+       loc+" B03–B06 keep original amber memory cards");
      }
      assert(fontAudit.buttons.every(b=>b.height>=42&&b.height<=52),
       loc+" compact original-HTML tab height");

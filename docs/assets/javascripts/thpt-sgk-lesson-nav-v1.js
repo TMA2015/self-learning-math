@@ -56,6 +56,21 @@ const numberG10FirstSix=(article)=>{
     return;
   }
  }
+ // B02 S1 content correction: three numbered authentic SGK sections and
+ // already-numbered discovery/examples/HELP; never renumber source content.
+ if(/\/chuong-i\/bai-2\/?$/.test(location.pathname)){
+  const discovery=[...blocks[0].querySelectorAll("h3")].map(h=>h.textContent.trim());
+  const knowledge=[...blocks[1].querySelectorAll("h3")].map(h=>h.textContent.trim());
+  const examples=[...blocks[2].querySelectorAll("h3")].map(h=>h.textContent.trim());
+  const mistakes=[...blocks[3].querySelectorAll(":scope > details.tip > summary")].map(h=>h.textContent.trim());
+  const ordered=(items,prefix)=>items.every((item,i)=>item.startsWith(prefix+(i+1)+". "));
+  if(discovery.length===3&&knowledge.length===3&&examples.length===4&&mistakes.length===3&&
+     ordered(discovery,"1.")&&ordered(knowledge,"2.")&&
+     ordered(examples,"3.")&&ordered(mistakes,"4.")){
+    article.dataset.g10B01B06EditorialNumbered="true";
+    return;
+  }
+ }
  const discovery=[...blocks[0].querySelectorAll("h3")];
  const original=["Cùng tìm hiểu","Ví dụ trực quan","Thuật ngữ và kiến thức, kỹ năng"];
  if(discovery.length!==3||!discovery.every((node,i)=>node.textContent.trim()===original[i]))return;
