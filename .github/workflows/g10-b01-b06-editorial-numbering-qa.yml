@@ -17,7 +17,7 @@ concurrency:
 jobs:
   six-lesson-render:
     name: Preserve six original SGK source blobs & theme, run 18 browser cases
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
