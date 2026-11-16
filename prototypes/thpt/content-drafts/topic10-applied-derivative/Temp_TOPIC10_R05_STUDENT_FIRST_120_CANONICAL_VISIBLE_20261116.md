@@ -407,9 +407,9 @@ Chẳng hạn, f=(x²−4)/(x−2), x≠2 ⇒ f=x+2 trên miền. Lim tại2 là
 
 **Ví dụ**
 
-**Đề bài:** f=(x²−1)/(x−1), x≠1 có tiệm cận đứng tại1 không?
+**Đề bài:** f=(x²−25)/(x+5), x≠−5 có tiệm cận đứng tại x=−5 không?
 
-**Lời giải:** D=ℝ\{1}; trên D, f=x+1 nên lim(x→1)f=2 hữu hạn. Điểm (1,2) là lỗ, không phải tiệm cận đứng; rút gọn không khôi phục giá trị f(1).
+**Lời giải:** D=ℝ\{−5}. Với x≠−5, f=(x−5)(x+5)/(x+5)=x−5, nên lim(x→−5)f=−10 hữu hạn. Điểm (−5,−10) là lỗ, không phải tiệm cận đứng; rút gọn không tạo lại giá trị f(−5).
 
 **Vận dụng** f=(x²−9)/(x−3), có TCD x=3?
 
@@ -929,9 +929,9 @@ Chẳng hạn, với f=1/x trên D=ℝ\{0}, f'<0 ở hai nhánh. Lời giải 'f
 
 **Ví dụ**
 
-**Đề bài:** Phát hiện lỗi: f=(x²−4)/(x−2) có thật có TCD x=2 không?
+**Đề bài:** Một lời giải khẳng định f=(x²−16)/(x−4) có TCD x=4 vì mẫu bằng 0. Em hãy kiểm chứng và sửa.
 
-**Lời giải:** D=ℝ\{2}; f=x+2 với x≠2 nên giới hạn khi x→2 là4 hữu hạn. Chỉ có lỗ (2,4), không có tiệm cận đứng; không khôi phục điểm bị loại.
+**Lời giải:** Miền D=ℝ\{4}; với x≠4, f=(x−4)(x+4)/(x−4)=x+4. Vì lim(x→4)f(x)=8 hữu hạn, không có TCD x=4 mà chỉ có lỗ (4,8). Không gán f(4)=8 vì điểm đó bị loại khỏi miền gốc.
 
 **Vận dụng** f=(x²−1)/(x−1), x≠1, có TCD tại x=1 không?
 
