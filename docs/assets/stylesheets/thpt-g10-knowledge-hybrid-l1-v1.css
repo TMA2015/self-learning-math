@@ -394,3 +394,20 @@
   border-left-color: #76dfc7;
   color: #e9fff7;
 }
+
+/* B02 · S1 three-section content · Golden semantic separation.
+ * Only B02 canonical TRY06 route, only explicit concept/definition boxes.
+ * Preserve all legacy amber reminders and approved B01 teal definition boxes.
+ */
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden:has([data-thpt-first-try-id="THPT-G10-CHI-TRY06"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card {
+  background: #e8f7f2;
+  border-color: #a9dccc;
+  border-left-color: #087d69;
+  color: #174137;
+}
+[data-md-color-scheme="slate"] .md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden:has([data-thpt-first-try-id="THPT-G10-CHI-TRY06"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card {
+  background: #193d36;
+  border-color: #447e70;
+  border-left-color: #76dfc7;
+  color: #e9fff7;
+}
