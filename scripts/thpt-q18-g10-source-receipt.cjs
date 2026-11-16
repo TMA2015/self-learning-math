@@ -169,6 +169,21 @@ function expectedG10KnowledgeBlob(lesson,legacy){
   return next;
  }
 
+ if(name==="B06"){
+  const receiptPath="prototypes/thpt/ux795/G10_CHIII_B06_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md";
+  const r=fs.readFileSync(path.join(root,receiptPath),"utf8");
+  const field=k=>r.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(field("BASELINE_LESSON_GIT_BLOB"),blobs[1],"B06 exact frozen authoring/source baseline");
+  const next=field("CANDIDATE_LESSON_GIT_BLOB");
+  assert(/^[a-f0-9]{40}$/.test(next||"")&&next!==blobs[1],"B06 requires new exact Q18 Delta C source");
+  for(const m of ["Q18_OWNER_SELF_VERIFIED_ENRICHMENT","AUTHOR_SELF_VERIFIED_ENRICHMENT",
+    "DELTA_C_ACADEMIC_MATERIAL","SOURCE_SCAN_AUTHORITY_PENDING",
+    "B06-F01","B06-F04","THPT-G10-CHIII-TRY06","THPT-G10-CHIII-TRY10",
+    "HELP-G10-B06-01","HELP-G10-B06-02"])
+   assert(r.includes(m),"B06 Q18 source evidence missing "+m);
+  return next;
+ }
+
  const chiv=chivEditorialReceiptRows().get(name);
  const chv=chvEditorialReceiptRows().get(name);
  assert(!(chiv&&chv),name+" duplicate editorial receipts");

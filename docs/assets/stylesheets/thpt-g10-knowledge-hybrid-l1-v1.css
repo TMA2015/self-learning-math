@@ -456,3 +456,33 @@
   border-left-color: #76dfc7;
   color: #e9fff7;
 }
+
+/* G10 ChIII B06 · scoped formal S1 theorem and area definition cards.
+ * Only B06 by canonical TRY06, preserving approved B01–B05 visuals. */
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden:has([data-thpt-first-try-id="THPT-G10-CHIII-TRY06"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card {
+  background: #e8f7f2;
+  border-color: #a9dccc;
+  border-left-color: #087d69;
+  color: #174137;
+}
+[data-md-color-scheme="slate"] .md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden:has([data-thpt-first-try-id="THPT-G10-CHIII-TRY06"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card {
+  background: #193d36;
+  border-color: #447e70;
+  border-left-color: #76dfc7;
+  color: #e9fff7;
+}
+
+/* B06 D5 AP3: preserve actual source SVG 950px vector text legibility.
+ * At narrow widths only scroll the figure, never the whole page. */
+@media(max-width: 740px) {
+  .md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden:has([data-thpt-first-try-id="THPT-G10-CHIII-TRY06"]) figure.thpt-r4-concept-figure {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    max-width: 100%;
+  }
+  .md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden:has([data-thpt-first-try-id="THPT-G10-CHIII-TRY06"]) figure.thpt-r4-concept-figure img {
+    width: 760px;
+    max-width: none;
+    height: auto;
+  }
+}

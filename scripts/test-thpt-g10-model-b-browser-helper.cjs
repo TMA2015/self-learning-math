@@ -86,8 +86,21 @@ async function verifyModelBLesson(page,{n,chapter,tries,helps,images,questions=t
   assert(visible,"B"+n+" reviewed D5 figure inaccessible under four tabs "+asset);
   await figure.scrollIntoViewIfNeeded();
   await img.evaluate(async x=>{if(typeof x.decode==="function")await x.decode()});
-  const measure=await img.evaluate(x=>({loaded:x.complete&&x.naturalWidth>0,w:x.getBoundingClientRect().width,p:x.parentElement.getBoundingClientRect().width}));
-  assert(measure.loaded&&measure.w<=measure.p+2,"B"+n+" D5 missing/overflow "+asset);
+  const measure=await img.evaluate(x=>{
+   const fig=x.closest("figure");
+   return {loaded:x.complete&&x.naturalWidth>0,w:x.getBoundingClientRect().width,
+    p:x.parentElement.getBoundingClientRect().width,
+    width:innerWidth,scroll:fig?fig.scrollWidth:0,client:fig?fig.clientWidth:0,
+    figureOverflow:fig?getComputedStyle(fig).overflowX:null};
+  });
+  assert(measure.loaded,"B"+n+" D5 SVG missing or failed to decode "+asset);
+  if(n===6&&measure.width<=740){
+   assert(measure.w>=755&&measure.scroll>measure.client+2&&
+    (measure.figureOverflow==="auto"||measure.figureOverflow==="scroll"),
+    "B06 phone D5 must be readable at 760px and scroll inside figure "+asset);
+  }else{
+   assert(measure.w<=measure.p+2,"B"+n+" D5 must fit ordinary figure "+asset);
+  }
  }
  const bounds=await page.evaluate(()=>({w:document.documentElement.scrollWidth,v:innerWidth}));
  assert(bounds.w<=bounds.v+20,"B"+n+" Model B horizontal overflow");

@@ -54,8 +54,15 @@ const blob=data=>{
   const b05field=k=>b05receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(b05field("BASELINE_CSS_GIT_BLOB"),b04field("CANDIDATE_CSS_GIT_BLOB"),
    "B05 CSS extends exact accepted B04 CSS");
-  assert.equal(blob(css),b05field("CANDIDATE_CSS_GIT_BLOB"),
-   "B05 scoped CSS follows source receipt, ChV unchanged");
+  const b06receipt=fs.readFileSync(root+
+   "/prototypes/thpt/ux795/G10_CHIII_B06_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md","utf8");
+  const b06field=k=>b06receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(b06field("BASELINE_CSS_GIT_BLOB"),b05field("CANDIDATE_CSS_GIT_BLOB"),
+   "B06 CSS extends exact B05 accepted Golden CSS");
+  assert.equal(blob(css),b06field("CANDIDATE_CSS_GIT_BLOB"),
+   "B06 scoped CSS Q18 receipt; ChV unaffected");
+  assert(css.toString("utf8").includes('data-thpt-first-try-id="THPT-G10-CHIII-TRY06"'),
+   "B06 visual delta constrained to B06 first-try canonical selector");
   assert(css.toString("utf8").includes('data-thpt-first-try-id="THPT-G10-CHIII-TRY01"'),
    "B05 concept colors only on B05");
   assert(css.toString("utf8").includes(':has([data-thpt-first-try-id="THPT-G10-CHII-TRY06"])'),
