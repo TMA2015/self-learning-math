@@ -61,6 +61,17 @@ for(let n=1;n<=27;n++){
    markdown.includes('data-thpt-help-ref="HELP-G10-B05-03"'),
    "B05 new item maps to calculator outcome and HELP D6 (never RD1)");
  }
+ if(n===6){
+  assert.deepEqual(ids,["THPT-G10-CHIII-TRY06","THPT-G10-CHIII-TRY07",
+   "THPT-G10-CHIII-TRY10","THPT-G10-CHIII-TRY08","THPT-G10-CHIII-TRY09"],
+   "B06 source preserves exact five historical item IDs, reorganized only by real S1 sections");
+  const receiptPath="prototypes/thpt/ux795/G10_CHIII_B06_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md";
+  const receipt=fs.readFileSync(path.join(root,receiptPath),"utf8");
+  const field=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(blob(source),field("CANDIDATE_LESSON_GIT_BLOB"),"B06 postmerge overlay exact academic receipt");
+  assert.equal([...markdown.matchAll(/data-thpt-help-id="([^"]+)"/g)].length,2,
+   "B06 original two HELP IDs preserved, no assessment mutation");
+ }
  legacyCount+=ids.length-added.length;newB05Count+=added.length;
  const short=(html.match(concise)||[]).length;
  const verbose=(html.match(longTitle)||[]).length;

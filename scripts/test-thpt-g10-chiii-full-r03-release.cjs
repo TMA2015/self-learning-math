@@ -23,8 +23,10 @@ for(const c of lessons){
  assert(!/^    === "/m.test(txt),"B"+c.n+": no Level 2 tabs during Phase 1");
  const ids=[...txt.matchAll(/data-thpt-first-try-id="([^"]+)"/g)].map(x=>x[1]);
  const expected=Array.from({length:5},(_,i)=>"THPT-G10-CHIII-TRY"+String(c.start+i).padStart(2,"0"));
- if(c.n===5)expected.push("THPT-G10-CHIII-TRY11"); // one new public calculator self-try
- assert.deepEqual(ids,expected,"B"+c.n+": exact five canonical First Try IDs, Q15");
+ if(c.n===5)expected.push("THPT-G10-CHIII-TRY11"); // owner-P2 B05 public calculator First Try
+ if(c.n===6)expected.splice(2,3,"THPT-G10-CHIII-TRY10",
+  "THPT-G10-CHIII-TRY08","THPT-G10-CHIII-TRY09"); // B06 canonical ID set unchanged; true S1 placement order
+ assert.deepEqual(ids,expected,"B"+c.n+": Q15 canonical First Try IDs: B05 six, B06 five reorganized by S1 parents");
  all.push(...ids);
  const helps=[...txt.matchAll(/data-thpt-help-id="([^"]+)"/g)].map(x=>x[1]);
  assert.deepEqual(helps,c.helps,"B"+c.n+": D6 HELP IDs unchanged, Q15");

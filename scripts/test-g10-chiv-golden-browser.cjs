@@ -48,8 +48,15 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
   const b05field=k=>b05receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(b05field("BASELINE_CSS_GIT_BLOB"),b04field("CANDIDATE_CSS_GIT_BLOB"),
    "B05 CSS extends B04 accepted immutable candidate");
-  assert.equal(blob(cssFile),b05field("CANDIDATE_CSS_GIT_BLOB"),
-   "B05 scoped CSS source-locked; Chapter IV unaffected");
+  const b06receipt=fs.readFileSync(root+
+   "/prototypes/thpt/ux795/G10_CHIII_B06_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md","utf8");
+  const b06field=k=>b06receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(b06field("BASELINE_CSS_GIT_BLOB"),b05field("CANDIDATE_CSS_GIT_BLOB"),
+   "B06 CSS extends B05 P2 accepted source");
+  assert.equal(blob(cssFile),b06field("CANDIDATE_CSS_GIT_BLOB"),
+   "B06 scoped SVG/AP/teal CSS source-locked; Chapter IV unaffected");
+  assert(cssFile.toString("utf8").includes('data-thpt-first-try-id="THPT-G10-CHIII-TRY06"'),
+   "B06 visual delta constrained to B06 first-try canonical selector");
   assert(cssFile.toString("utf8").includes('data-thpt-first-try-id="THPT-G10-CHIII-TRY01"'),
    "Only B05 Knowledge canonical route may gain new teal color");
   assert(cssFile.toString("utf8").includes(':has([data-thpt-first-try-id="THPT-G10-CHII-TRY06"])'),

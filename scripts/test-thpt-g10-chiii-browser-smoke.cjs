@@ -9,7 +9,8 @@ const tries=page.locator('details[data-ped-first-try="1"]');
 assert.equal(await tries.count(),n===5?6:5,"Original five First Tries plus B05 source-locked DEG item");
 assert.equal(await page.locator('details[data-ped-first-try="1"][open]').count(),0,"First Try answer cannot be visible by default");
 for(let k=0;k<(n===5?6:5);k++){
- const id="THPT-G10-CHIII-TRY"+String(n===5&&k===5?11:(n===5?0:5)+k+1).padStart(2,"0");
+ const index=n===6?[6,7,10,8,9][k]:(k===5?11:k+1);
+ const id="THPT-G10-CHIII-TRY"+String(index).padStart(2,"0");
  assert.equal(await tries.nth(k).getAttribute("data-thpt-first-try-id"),id,"First Try source ID/order drift");
 }
 await tries.first().locator("summary").click();
