@@ -126,6 +126,20 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    return candidate;
  }
 
+ if(name==="B03"){
+   const receipt="prototypes/thpt/ux795/G10_CHII_B03_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md";
+   const r=fs.readFileSync(path.join(root,receipt),"utf8");
+   const field=key=>r.match(new RegExp("^\\*\\*"+key+":\\*\\* \\x60([a-f0-9]{40})\\x60","m"))?.[1];
+   assert.equal(field("BASELINE_LESSON_GIT_BLOB"),blobs[1],"B03 must extend exact legacy source SHA");
+   const next=field("CANDIDATE_LESSON_GIT_BLOB");
+   assert(next&&next!==blobs[1],"B03 requires new S1 source candidate");
+   for(const marker of ["AUTHOR_SELF_VERIFIED_ENRICHMENT","DELTA_C_ACADEMIC_MATERIAL",
+     "SOURCE_RECEIPT","B03-F08","TRY01","TRY02","P0","P1"]){
+    assert(r.includes(marker),"B03 Q18 author receipt missing evidence: "+marker);
+   }
+   return next;
+ }
+
  const chiv=chivEditorialReceiptRows().get(name);
  const chv=chvEditorialReceiptRows().get(name);
  assert(!(chiv&&chv),name+" duplicate editorial receipts");

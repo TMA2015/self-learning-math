@@ -40,9 +40,16 @@ const blob=data=>{
  const d=b02.match(/^\*\*CSS_PATH:\*\*.*candidate \x60([a-f0-9]{40})\x60/m)?.[1];
  assert(a==="44442773ac31eb1a46f0cab699a7d2c7974a5f37"&&b===c,
   "B01 historic Golden CSS locked, B02 delta extends exact B01 candidate");
- assert.equal(blob(css),d,"Only Q18 source-locked B02 scoped CSS may extend ChV Golden shell");
+ const b03=fs.readFileSync(root+
+  "/prototypes/thpt/ux795/G10_CHII_B03_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md","utf8");
+ const b03baseline=b03.match(/^\*\*BASELINE_CSS_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+ const b03candidate=b03.match(/^\*\*CANDIDATE_CSS_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+ assert.equal(b03baseline,d,"B03 CSS must build on exact accepted B02 Golden candidate");
+ assert.equal(blob(css),b03candidate,"Only Q18 source-locked B03 CSS may extend ChV Golden shell");
  assert(css.toString("utf8").includes(':has([data-thpt-first-try-id="THPT-G10-CHI-TRY06"])'),
   "B02 CSS may not accidentally recolor any ChV page");
+ assert(css.toString("utf8").includes(':has([data-thpt-first-try-id="THPT-G10-CHII-TRY01"])'),
+  "B03 CSS scope must not accidentally recolor ChV pages");
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
  let total=0;
  try{

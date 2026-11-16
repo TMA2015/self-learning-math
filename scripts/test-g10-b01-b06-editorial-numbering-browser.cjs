@@ -50,6 +50,13 @@ function checkSHA(){
    const candidate=receipt.match(/^\*\*CANDIDATE_LESSON_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
    assert.equal(baseline,sha,"B02 immutable prior SGK candidate source SHA remains source-locked");
    assert.equal(hash(data),candidate,"B02 source must exactly match S1/Q18 enrichment receipt");
+  }else if(p==="docs/thpt-preview/sgk/chuong-ii/bai-3.md"){
+   const receipt=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHII_B03_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md"),"utf8");
+   const baseline=receipt.match(/^\*\*BASELINE_LESSON_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+   const candidate=receipt.match(/^\*\*CANDIDATE_LESSON_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+   assert.equal(baseline,sha,"B03 authoring source baseline unchanged");
+   assert.equal(hash(data),candidate,"B03 source equals targeted author verified Q18 receipt");
   }else if(p==="docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"){
    const b01=fs.readFileSync(path.join(root,
     "prototypes/thpt/ux795/G10_CHI_B01_DEFINITION_COLOR_UI_DELTA_A_20261116.md"),"utf8");
@@ -61,7 +68,12 @@ function checkSHA(){
    const b02Candidate=b02.match(/^\*\*CSS_PATH:\*\*.*candidate \x60([a-f0-9]{40})\x60/m)?.[1];
    assert(b01Baseline===sha&&b01Candidate===b02Baseline,
     "Original B01 teal receipt must be immutable and B02 CSS extend that exact blob");
-   assert.equal(hash(data),b02Candidate,"B02 scoped teal CSS must match its source-locked Q18 receipt");
+   const b03=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHII_B03_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md"),"utf8");
+   const b03Old=b03.match(/^\*\*BASELINE_CSS_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+   const b03New=b03.match(/^\*\*CANDIDATE_CSS_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+   assert.equal(b03Old,b02Candidate,"B03 CSS extends exact accepted B02 Golden theme");
+   assert.equal(hash(data),b03New,"B03-only teal CSS must match Q18 candidate and not change sibling pages");
   }else assert.equal(hash(data),sha,"Untouched SGK sibling source/theme drift: "+p);
  }
  const q18=fs.readFileSync(path.join(root,
@@ -71,8 +83,13 @@ function checkSHA(){
  const js=fs.readFileSync(path.join(root,"docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js"));
  assert(q18.includes("**SVG_ASSET_GIT_BLOB:** "+String.fromCharCode(96)+hash(asset)+String.fromCharCode(96)),
   "B02 S1 nested-set diagram must match immutable figure SHA");
- assert(q18.includes("candidate "+String.fromCharCode(96)+hash(js)+String.fromCharCode(96)),
-  "B02 Golden route JS must match Q18 candidate SHA");
+ const b03Receipt=fs.readFileSync(path.join(root,
+  "prototypes/thpt/ux795/G10_CHII_B03_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md"),"utf8");
+ const formerJs=b03Receipt.match(/^\*\*BASELINE_JS_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+ const currentJs=b03Receipt.match(/^\*\*CANDIDATE_JS_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+ assert(q18.includes("candidate "+String.fromCharCode(96)+formerJs+String.fromCharCode(96)),
+  "B03 JS must extend exact B02 accepted Golden route");
+ assert.equal(hash(js),currentJs,"B03 route JS matches exact owner receipt");
 }
 const names=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
 const ch=n=>n<=2?"i":n<=4?"ii":"iii";
@@ -108,9 +125,39 @@ const widths=[390,820,1440];
       ["1.1. Cùng tìm hiểu","1.2. Ví dụ trực quan","1.3. Thuật ngữ, kiến thức và kỹ năng"];
      assert.deepEqual(discoveryTitles,expectedDiscovery,loc+" meaningful concept-first discovery headings");
      const knowledge=(await groups.nth(1).locator("h3").allInnerTexts()).map(x=>x.trim());
-     assert(knowledge.length>=(n===2?3:4)&&knowledge.every((v,i)=>v.startsWith("2."+(i+1)+". ")),loc+" authentic S1 SGK main sections");
+     assert(knowledge.length>=(n===3?2:n===2?3:4)&&knowledge.every((v,i)=>v.startsWith("2."+(i+1)+". ")),loc+" authentic S1 SGK main sections");
      if(n===2)assert.deepEqual(knowledge,["2.1. Các khái niệm cơ bản về tập hợp",
       "2.2. Các tập hợp số","2.3. Các phép toán trên tập hợp"],loc+" original S1 has 3 main sections");
+     if(n===3){
+      assert.deepEqual(knowledge,["2.1. Bất phương trình bậc nhất hai ẩn",
+       "2.2. Biểu diễn miền nghiệm của bất phương trình bậc nhất hai ẩn trên mặt phẳng tọa độ"],
+       loc+" original two S1 knowledge sections only");
+      const children=(await groups.nth(1).locator("h4").allInnerTexts()).map(x=>x.trim());
+      assert.deepEqual(children.map(x=>x.split(" ")[0]),
+       ["2.1.1.","2.1.2.","2.2.1.","2.2.2.","2.2.3."],
+       loc+" owner monitored all level-3 headings with parents, no gap");
+      const pane=groups.nth(1);
+      assert.equal(await pane.locator(".thpt-r4-concept-card").count(),4,loc+" 4 S1 definition cards");
+      assert.equal(await pane.locator(".thpt-r4-knowledge-conclusion:not(.thpt-r4-concept-card)").count(),
+       3,loc+" 3 original amber reminders");
+      const apps=(await pane.locator("p").allInnerTexts()).filter(x=>x.trim().startsWith("Vận dụng."));
+      assert.equal(apps.length,5,loc+" 5 valid canonical First Try placements");
+      const ids=(await pane.locator("[data-thpt-first-try-id]").evaluateAll(nodes=>nodes.map(x=>x.getAttribute("data-thpt-first-try-id"))));
+      assert.deepEqual(ids,["THPT-G10-CHII-TRY01","THPT-G10-CHII-TRY02",
+       "THPT-G10-CHII-TRY03","THPT-G10-CHII-TRY04","THPT-G10-CHII-TRY05"],
+       loc+" 5 unchanged canonical item IDs");
+      const example=groups.nth(2);
+      assert.equal((await example.locator("p").allInnerTexts()).filter(x=>x.trim().startsWith("Phân tích.")).length,3,
+       loc+" 3 analysis-before-solution examples");
+      assert.equal(await pane.locator('img[src*="THPT_G10_B03_HALFPLANES_D5_R01.svg"]').count(),1,
+       loc+" source-verified original B03 diagram preserved");
+      await labels.nth(1).click();
+      const img=pane.locator('img[src*="THPT_G10_B03_HALFPLANES_D5_R01.svg"]');
+      await img.scrollIntoViewIfNeeded();
+      await img.evaluate(async el=>{if(el.decode)await el.decode();});
+      assert(await img.evaluate(el=>el.complete&&el.naturalWidth>0),loc+" diagram actually loads");
+      await labels.nth(0).click();
+     }
      if(n===1){
       const conceptBoxes=groups.nth(1).locator(".thpt-r4-knowledge-conclusion");
       assert.equal(await conceptBoxes.count(),7,loc+" B01 canonical boxed definitions and notation");
@@ -278,9 +325,29 @@ const widths=[390,820,1440];
       assert(cards.filter(c=>!c.concept).every(c=>c.bg==="rgb(74, 58, 37)"&&c.left==="rgb(214, 170, 73)"),
        loc+" B02 slate amber reminders");
       await page.evaluate(v=>{if(v===null)document.body.removeAttribute("data-md-color-scheme");else document.body.setAttribute("data-md-color-scheme",v);},old);
+     }else if(n===3){
+      const concept=fontAudit.callouts.filter(x=>x.concept);
+      const memory=fontAudit.callouts.filter(x=>!x.concept);
+      assert.equal(concept.length,4,loc+" four distinct teal concepts");
+      assert.equal(memory.length,3,loc+" three amber recaps");
+      assert(concept.every(x=>x.background==="rgb(232, 247, 242)"&&x.left==="rgb(8, 125, 105)"),
+       loc+" B03 definition teal in light mode");
+      assert(memory.every(x=>x.background==="rgb(255, 243, 213)"&&x.left==="rgb(196, 154, 55)"),
+       loc+" B03 recap amber in light mode");
+      const old=await page.evaluate(()=>document.body.getAttribute("data-md-color-scheme"));
+      await page.evaluate(()=>document.body.setAttribute("data-md-color-scheme","slate"));
+      const cards=await groups.nth(1).locator(".thpt-r4-knowledge-conclusion").evaluateAll(nodes=>nodes.map(x=>({
+       bg:getComputedStyle(x).backgroundColor,left:getComputedStyle(x).borderLeftColor,
+       concept:x.classList.contains("thpt-r4-concept-card")
+      })));
+      assert(cards.filter(x=>x.concept).every(x=>x.bg==="rgb(25, 61, 54)"&&x.left==="rgb(118, 223, 199)"),
+       loc+" B03 slate teal definitions");
+      assert(cards.filter(x=>!x.concept).every(x=>x.bg==="rgb(74, 58, 37)"&&x.left==="rgb(214, 170, 73)"),
+       loc+" B03 slate amber reminders");
+      await page.evaluate(v=>{if(v===null)document.body.removeAttribute("data-md-color-scheme");else document.body.setAttribute("data-md-color-scheme",v);},old);
      }else{
       assert(fontAudit.callouts.every(c=>c.background==="rgb(255, 243, 213)"&&c.left==="rgb(196, 154, 55)"),
-       loc+" B03–B06 keep original amber memory cards");
+       loc+" B04–B06 keep original amber memory cards");
      }
      assert(fontAudit.buttons.every(b=>b.height>=42&&b.height<=52),
       loc+" compact original-HTML tab height");
