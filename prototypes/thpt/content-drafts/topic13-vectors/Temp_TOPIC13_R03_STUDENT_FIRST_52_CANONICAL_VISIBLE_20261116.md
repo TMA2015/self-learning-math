@@ -1119,63 +1119,70 @@ C'=(3,4,12) (2đ); |AC'|=13 và AB·AC'=9 (3đ); cos góc=9/(3·13)=3/13 (2đ). 
 
 # Tự kiểm tra
 
-Đây là lượt **tự đối chiếu** từ những câu công khai đã học, không phải bài thi độc lập. Hãy làm các câu về chiều vectơ, tổng–hiệu, tọa độ và khoảng cách Oxy/Oxyz, hình hộp, tích vô hướng, chuyển động drone. Trước khi bấm **Nộp cuối**, không hiển thị gợi ý, đáp án, lời giải, nhận xét đúng/sai hoặc AI Tutor; sau nộp mới mở đối chiếu và tự quay lại mục Kiến thức cần ôn. Lượt này không ghi điểm thành thạo.
+**16 câu tự kiểm tra công khai (tự đối chiếu).** Em hãy làm từng câu trên giấy trước, rồi quay lại Luyện tập để mở Đối chiếu và xác định bài cần ôn. Các câu này đã xuất hiện trong Luyện tập nên **không phải đề đánh giá độc lập**, không có chấm điểm hay ghi Skill Mastery. Học liệu Markdown này không tạo nút Nộp cuối hoặc Final Submit chính thức.
 
-<!-- AUTHORING ONLY · ORIGINAL G10 IV R03 SHA 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9; 20 canonical IDs reused by pointer, never clone bodies
-- THPT-G10-B07-C01
-- THPT-G10-B07-P01
-- THPT-G10-B07-P02
-- THPT-G10-B07-P04
-- THPT-G10-B08-C01
-- THPT-G10-B08-P01
-- THPT-G10-B08-P02
-- THPT-G10-B08-P05
-- THPT-G10-B09-C01
-- THPT-G10-B09-P01
-- THPT-G10-B09-P03
-- THPT-G10-B09-P05
-- THPT-G10-B10-C01
-- THPT-G10-B10-P01
-- THPT-G10-B10-P03
-- THPT-G10-B10-P05
-- THPT-G10-B11-C01
-- THPT-G10-B11-P01
-- THPT-G10-B11-P03
-- THPT-G10-B11-P05
--->
-<!-- AUTHORING ONLY · ORIGINAL G12 II R00 SHA 856a37bd16d2746ffc2e12906de18d1f4338a3b6; 12 canonical IDs reused by pointer
-- THPT-G12-B06-C01
-- THPT-G12-B06-P01
-- THPT-G12-B06-C03
-- THPT-G12-B06-P05
-- THPT-G12-B07-C01
-- THPT-G12-B07-P01
-- THPT-G12-B07-C03
-- THPT-G12-B07-P05
-- THPT-G12-B08-C01
-- THPT-G12-B08-P01
-- THPT-G12-B08-C03
-- THPT-G12-B08-P05
--->
-<!-- AUTHORING ONLY · SELF CHECK 16 existing public Practice placements, not new exam IDs
-- THPT-TOP13-P01
-- THPT-TOP13-P02
-- THPT-TOP13-P03
-- THPT-TOP13-P04
-- THPT-TOP13-P05
-- THPT-TOP13-P06
-- THPT-TOP13-P07
-- THPT-TOP13-P08
-- THPT-TOP13-P09
-- THPT-TOP13-P10
-- THPT-TOP13-P11
-- THPT-TOP13-P12
-- THPT-TOP13-P13
-- THPT-TOP13-P14
-- THPT-TOP13-P15
-- THPT-TOP13-P16
-ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
-OFFICIAL_READINESS: NOT_CLAIMED
-PRIVATE_RD1_COUNT: 0
-MASTERY_ACTIVATION: NO
--->
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P01; OUTCOME: TOP13-O02; NO_RD1; NO_MASTERY -->
+
+**Câu 1.** Trong hình bình hành ABCD, vectơ nào bằng AB: DC hay CD?
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P02; OUTCOME: TOP13-O01; NO_RD1; NO_MASTERY -->
+
+**Câu 2.** Khi A=B, độ dài AA và quan hệ cùng phương theo quy ước KNTT đối với vectơ khác không là gì?
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P03; OUTCOME: TOP13-O03; NO_RD1; NO_MASTERY -->
+
+**Câu 3.** Robot đi 5 m về đông rồi 12 m về bắc. Tính tổng quãng đường và độ lớn của vectơ độ dời.
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P04; OUTCOME: TOP13-O04; NO_RD1; NO_MASTERY -->
+
+**Câu 4.** Cho A=(−1,2), B=(4,3), C=(2,−2). Tính AB−AC và đối chiếu với một vectơ có điểm đầu C.
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P05; OUTCOME: TOP13-O05; NO_RD1; NO_MASTERY -->
+
+**Câu 5.** Cho u=(2,−1) và v=−4u. Tìm v, độ dài v và quan hệ hướng với u.
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P06; OUTCOME: TOP13-O06; NO_RD1; NO_MASTERY -->
+
+**Câu 6.** Tam giác A=(−3,0), B=(3,0), C=(0,6). Tìm trung điểm M của BC và trọng tâm G. Kiểm AG=(2/3)AM.
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P07; OUTCOME: TOP13-O07; NO_RD1; NO_MASTERY -->
+
+**Câu 7.** Cho A=(−3,4), B=(5,−2). Tính vectơ AB và độ dài của nó.
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P08; OUTCOME: TOP13-O08; NO_RD1; NO_MASTERY -->
+
+**Câu 8.** Cho u=(4,−6), v=(−2,3). Chúng cùng phương không và có cùng hướng không?
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P09; OUTCOME: TOP13-O09; NO_RD1; NO_MASTERY -->
+
+**Câu 9.** Hai vectơ có độ dài 8 và 5, góc giữa chúng 120°. Tính tích vô hướng và giải thích dấu.
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P10; OUTCOME: TOP13-O10; NO_RD1; NO_MASTERY -->
+
+**Câu 10.** u=(3,−2),v=(4,6). Kiểm hai vectơ có vuông góc không.
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P11; OUTCOME: TOP13-O11; NO_RD1; NO_MASTERY -->
+
+**Câu 11.** Trong hình hộp chữ nhật, ba cạnh xuất phát từ A vuông góc đôi một và dài 3, 4, 12. Tìm độ dài vectơ AC'.
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P12; OUTCOME: TOP13-O12; NO_RD1; NO_MASTERY -->
+
+**Câu 12.** A=(−1,2,0), B=(2,−1,4), C=(5,3,−2). Hãy tính AB, BC và AC, rồi xác minh quy tắc ba điểm.
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P13; OUTCOME: TOP13-O13; NO_RD1; NO_MASTERY -->
+
+**Câu 13.** Hai vectơ không gian u=(2,−1,2), v=(1,4,1). Tính u·v và góc giữa chúng.
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P14; OUTCOME: TOP13-O14; NO_RD1; NO_MASTERY -->
+
+**Câu 14.** A=(−2,3,1), B=(4,−1,5). Tính tọa độ AB và khoảng cách từ A tới B.
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P15; OUTCOME: TOP13-O15; NO_RD1; NO_MASTERY -->
+
+**Câu 15.** Cho A=(−1,2,4), B=(5,−2,−4). Tìm trung điểm M và khoảng cách AB.
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P16; OUTCOME: TOP13-O16; NO_RD1; NO_MASTERY -->
+
+**Câu 16.** Drone ở P=(1,−2,0) m, bay u=(4,0,3) m rồi v=(−1,4,0) m. Tìm Q, độ dài độ dời và quãng đường hai chặng.
+
+<!-- AUTHORING_ONLY: PUBLIC_REPLAY_FROM_PRACTICE; 16 item_id existing; question-only; no private RD1 or official readiness. -->
