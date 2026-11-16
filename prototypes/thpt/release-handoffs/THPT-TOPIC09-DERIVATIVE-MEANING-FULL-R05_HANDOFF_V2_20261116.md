@@ -391,7 +391,7 @@ One placement per 32 new Practice item ID P01–P32, available earlier in Practi
 
 ## QUALITY_Q01_Q18_EVIDENCE
 
-One normative `SLM-THPT-QUALITY-ONE v3.1.0`, from `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`. Exact learner SHA 8222107d717f7d02b845f79ccdd154e8dbe71cc6, receipt SHA 6cd023b8da3056d9880d89c738f55876c5f433d7; not an independent NotebookLM R04 reviewer PASS.
+One normative `SLM-THPT-QUALITY-ONE v3.1.0`, from `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`. Exact learner SHA 8222107d717f7d02b845f79ccdd154e8dbe71cc6, receipt SHA 6cd023b8da3056d9880d89c738f55876c5f433d7; not an independent NotebookLM reviewer PASS on R05.
 
 | Qxx | Exact academic/pedagogical source evidence | Scope verdict | Source trace | Release boundary |
 |---|---|---|---|---|
@@ -399,7 +399,7 @@ One normative `SLM-THPT-QUALITY-ONE v3.1.0`, from `prototypes/thpt/THPT_UNIFIED_
 | Q02 | 32 Topic outcomes TOP09-O01..O32 explained in five connected arcs; O32 differential marked Topic extension. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
 | Q03 | Derivative limit existence and domains, radian, radical/log/cot/tan restrictions, second derivative and approximation conditions. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
 | Q04 | Reasoned secant definition, slope, product area, chain, tangent, signed motion and differential error examples. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q05 | 108 unique canonical public IDs: 71 immutable original SGK +37 active R04 new, including P23 corrected domain wording. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q05 | 108 unique canonical public IDs: 71 immutable original SGK +37 active R05 Topic canonical, including P23 corrected domain wording. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
 | Q06 | Five new Written rubric/7, original SGK Written reused without duplicated stem/answer/rubric. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
 | Q07 | Four real SVG with matched x² secant, area strips, s=t³−6t²+9t motion and differential at a2 dx0.1. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
 | Q08 | 32 First Try opt-in comparisons with targeted D6 and canonical practice groups. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
@@ -409,7 +409,7 @@ One normative `SLM-THPT-QUALITY-ONE v3.1.0`, from `prototypes/thpt/THPT_UNIFIED_
 | Q12 | SVG values checked against exact worked examples and descriptions, not generic nearby images. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
 | Q13 | Why product has two strips, why composition needs chain, why speed requires signs v and a, why differential is approximate. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
 | Q14 | 32 self tries after connected concept passages, voluntary reveal with specific error correction. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q15 | Corrected P23 R04 one active canonical ID and stem, original R01 bank immutable; 108 no-copy ID matrix. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q15 | Corrected P23 R05 content_version 2, one active canonical ID and stem, original R01 bank immutable; 108 no-copy ID matrix. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
 | Q16 | No imported 31 original owner-private RD1; public CLIENT_SELF_CHECK_NO_MASTERY, RELEASE Final Submit gate separate. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
 | Q17 | Three independent Topic pages, no Topic Core, no forced SGK navigation or mastery claims. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
 | Q18 | Exact learner SHA 68fe5b8a and new Q18 author receipt bc2aa70a, 32 outcome/37 new key checks. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
@@ -441,11 +441,11 @@ One normative `SLM-THPT-QUALITY-ONE v3.1.0`, from `prototypes/thpt/THPT_UNIFIED_
 
 ## AUTHORING_A1_A7
 
-A1 source SHA 8222107d717f7d02b845f79ccdd154e8dbe71cc6, self-QA receipt 6cd023b8da3056d9880d89c738f55876c5f433d7, one stable V2 packet. A2 scoped original G11 ChIX SGK/SBT printed/PDF index receipt. A3 substantive author Q18 self-review of DELTA_C, not new independent NotebookLM on R04. A4 32 outcomes/108 unique IDs/32 public selfchecks, 5 new Written rubric. A5 five natural conceptual arcs and 32 targeted First Tries, four exact SVG. A6 37 canonical source answers/conditions and four figure value checks; P23 stem corrected in R04 canonical source only. A7 original 31 RD1 owner-held, none copied; public mode no Mastery and Final Submit gate for RELEASE.
+A1 source SHA 8222107d717f7d02b845f79ccdd154e8dbe71cc6, self-QA receipt 6cd023b8da3056d9880d89c738f55876c5f433d7, one stable V2 packet. A2 scoped original G11 ChIX SGK/SBT printed/PDF index receipt. A3 substantive author Q18 self-review of DELTA_C, not a new independent NotebookLM review on R05. A4 32 outcomes/108 unique IDs/32 public selfchecks, 5 new Written rubric. A5 five natural conceptual arcs and 32 targeted First Tries, four exact SVG. A6 37 canonical source answers/conditions and four figure value checks; P23 stem already corrected in R04, content_version=2 on active R05 bank. A7 original 31 RD1 owner-held, none copied; public mode no Mastery and Final Submit gate for RELEASE.
 
 ## DELTA_LEDGER
 
-R01 historical canonical SGK source/receipt and R03 learner candidate immutable. R04 is `DELTA_C_ACADEMIC_MATERIAL`: learner narrative rewritten to connect mean rate→derivative→geometry/rules→second derivative/differential; four mathematical SVG example mismatches corrected (x² secant at a1, product rectangle numeric strips, signed movement s=t³−6t²+9t, and differential at a2 dx0.1), repetitive generic D6 removed; Practice and Self Check rewritten as learner prose. Original R01 NEW37 bank immutable; current R04 NEW37 canonical source corrects P23 "miền giá trị" to "tập xác định" without changing item_id, solution or rubric. 108 hidden source item ID pointers maintained; current receipt reverified changed scope. No merge/deploy.
+R01 historical canonical SGK source/receipt and R03 learner candidate immutable. R04 is `DELTA_C_ACADEMIC_MATERIAL`: learner narrative rewritten to connect mean rate→derivative→geometry/rules→second derivative/differential; four mathematical SVG example mismatches corrected (x² secant at a1, product rectangle numeric strips, signed movement s=t³−6t²+9t, and differential at a2 dx0.1), repetitive generic D6 removed; Practice and Self Check rewritten as learner prose. Original R01 NEW37 bank immutable; current R04 NEW37 canonical source corrects P23 "miền giá trị" to "tập xác định" without changing item_id, solution or rubric. R04 had only hidden 108 ID pointers; R05 replaces them with 108 learner-visible canonical problem cards plus solutions and D6, independently source-parity checked 108/108. No merge/deploy.
 
 ## PRIVATE_RD1_CUSTODY_METADATA
 
