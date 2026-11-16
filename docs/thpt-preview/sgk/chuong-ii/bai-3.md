@@ -52,17 +52,17 @@
     ax+by<c,\qquad ax+by\le c,\qquad ax+by>c,\qquad ax+by\ge c,
     \]
 
-    trong đó \(a,b,c\) là các số thực và **\(a,b\) không đồng thời bằng 0**. Hệ số của riêng \(x\) hoặc \(y\) được phép bằng 0: chẳng hạn \(0x-3y>1\) vẫn là một bất phương trình bậc nhất hai ẩn. Nhưng \(xy\le6\) có tích hai biến, còn \(0x+0y\le4\) chỉ là điều kiện hằng; cả hai không thuộc dạng vừa nêu.
+    trong đó \(a,b,c\) là các số thực và **\(a,b\) không đồng thời bằng 0**. Hệ số của riêng \(x\) hoặc \(y\) được phép bằng 0: chẳng hạn \(0x-3y>1\) vẫn là một bất phương trình bậc nhất hai ẩn. Một biểu thức như \(x^2+y<3\) không còn bậc nhất vì có \(x^2\). **Em hãy tự áp dụng hai điều kiện nhận diện này** cho các trường hợp khác ở câu Vận dụng, thay vì tìm lại đúng phép tính của ví dụ đã xem.
 
     <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ:</strong> Kiểm bậc của từng biến và điều kiện \((a,b)\ne(0,0)\). Một hệ số bằng 0 vẫn được; cả hai bằng 0 thì không còn bất phương trình bậc nhất hai ẩn.</div>
 
-    **Vận dụng.** Xét bốn biểu thức mới: (a) \(3(x-2y)\le9\); (b) \(x^2-y\le7\); (c) \(0x+0y\le10\); (d) \(0x+5y>10\). Những biểu thức nào là bất phương trình bậc nhất hai ẩn? Với mỗi biểu thức hợp lệ, hãy đưa về dạng \(ax+by\le c\) (hoặc \(<,>,\ge\)) và chỉ ra hệ số \(a,b\).
+    **Vận dụng.** Trong ba biểu thức (a) \(2x-3y<6\); (b) \(xy\le6\); (c) \(0x+0y\le4\), biểu thức nào là bất phương trình bậc nhất hai ẩn? Giải thích.
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY01" data-outcome-id="G10-B03-LINEAR_INEQUALITY" data-thpt-help-ref="HELP-G10-B03-02" hidden></span>
 
     ??? question "Em đã tự làm? Mở lời giải để đối chiếu"
 
-        **(a) và (d)** hợp lệ. Với (a): \(3x-6y\le9\), nên \(a=3,b=-6\). Với (d): \(0x+5y>10\), nên \(a=0,b=5\), vẫn hợp lệ vì hai hệ số không cùng bằng \(0\). (b) chứa \(x^2\), không còn bậc nhất; (c) có \(a=b=0\) nên chỉ còn một bất đẳng thức giữa các hằng số. Nếu nhầm, quay lại điều kiện trong khung “Khái niệm”.
+        **Chỉ (a)** đúng dạng vì các biến ở bậc nhất và hai hệ số \(2,-3\) không đồng thời bằng 0. (b) chứa tích \(xy\); (c) có cả hai hệ số bằng 0. Nếu nhầm, quay lại điều kiện trong khung “Kiến thức cần nhớ”.
 
 
     #### 2.1.2. Cặp nghiệm: kiểm bằng phép thế
@@ -71,27 +71,27 @@
 
     **Cách kiểm:** Thay cả hai tọa độ, tính vế trái và so với ngưỡng. Nếu dấu có bằng (\(\le,\ge\)), điểm cho kết quả đúng bằng ngưỡng cũng được nhận.
 
-    Xét \(x+2y\le6\):
+    Xét \(x+2y\le5\) trong **ví dụ minh họa** dưới đây (khác dữ kiện câu Vận dụng):
 
     <div class="thpt-g10-table-scroll"><table class="thpt-g10-knowledge-table">
     <thead><tr><th>Điểm</th><th>Thay tọa độ</th><th>Có là nghiệm không?</th></tr></thead>
     <tbody>
-    <tr><td>\(A(2,2)\)</td><td>\(2+2\cdot2=6\le6\)</td><td>Có, nằm đúng trên biên</td></tr>
-    <tr><td>\(B(3,2)\)</td><td>\(3+2\cdot2=7&gt;6\)</td><td>Không</td></tr>
-    <tr><td>\(C(0,0)\)</td><td>\(0+2\cdot0=0\le6\)</td><td>Có, nằm trong miền</td></tr>
+    <tr><td>\(P(1,2)\)</td><td>\(1+2\cdot2=5\le5\)</td><td>Có, nằm đúng trên biên</td></tr>
+    <tr><td>\(Q(2,2)\)</td><td>\(2+2\cdot2=6&gt;5\)</td><td>Không</td></tr>
+    <tr><td>\(R(0,1)\)</td><td>\(0+2\cdot1=2\le5\)</td><td>Có, nằm trong miền</td></tr>
     </tbody></table></div>
 
-    Điểm \(A\) được nhận **vì có dấu bằng** trong \(\le\). Nếu đề bài đổi thành \(x+2y<6\), chính điểm \(A\) sẽ không còn là nghiệm. Như vậy, thay một dấu có thể làm thay đổi **ranh giới của cả miền nghiệm**.
+    Điểm \(P\) được nhận **vì có dấu bằng** trong \(\le\). Nếu đề bài đổi thành \(x+2y<5\), chính điểm \(P\) sẽ không còn là nghiệm. Một thay đổi nhỏ ở dấu có thể làm thay đổi **ranh giới của cả miền nghiệm**. Em cần tự tính cho các điểm khác ở câu Vận dụng.
 
     <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ:</strong> Điểm \((x_0,y_0)\) là nghiệm khi và chỉ khi phép thế đầy đủ hai tọa độ cho một bất đẳng thức đúng. Dấu \(<\) và \(\le\) khác nhau tại các điểm trên đường biên.</div>
 
-    **Vận dụng.** Với \(2x-y\le3\), hãy tự xét ba điểm mới \(P(1,-1)\), \(Q(2,-1)\), \(R(0,0)\). Điểm nào là nghiệm, điểm nào nằm đúng trên đường biên, và điểm nào nằm ngoài miền nghiệm? Giải thích bằng phép thế.
+    **Vận dụng.** Với \(x+2y\le6\), trong \(A(2,2)\), \(B(3,2)\), \(C(0,0)\), những điểm nào là nghiệm? Điểm nào nằm đúng trên đường biên?
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY02" data-outcome-id="G10-B03-POINT_TEST" data-thpt-help-ref="HELP-G10-B03-01" hidden></span>
 
     ??? question "Mở đáp án sau khi tự kiểm tra"
 
-        **P và R** là nghiệm. Điểm \(P\): \(2\cdot1-(-1)=3\), bằng ngưỡng nên nằm trên đường biên được lấy. Điểm \(Q\): \(2\cdot2-(-1)=5>3\), không là nghiệm. Điểm \(R\): \(0\le3\), là nghiệm phía trong miền. Đây là những dữ liệu khác với bảng minh họa \(x+2y\le6\).
+        **A và C** là nghiệm. A nằm trên biên vì \(2+2\cdot2=6\); B không là nghiệm vì \(3+2\cdot2=7>6\). C nằm trong miền vì \(0\le6\).
 
 
     ### 2.2. Biểu diễn miền nghiệm của bất phương trình bậc nhất hai ẩn trên mặt phẳng tọa độ
