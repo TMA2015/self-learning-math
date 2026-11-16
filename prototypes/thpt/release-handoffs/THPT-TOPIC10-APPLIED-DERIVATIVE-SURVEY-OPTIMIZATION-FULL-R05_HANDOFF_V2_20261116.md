@@ -449,7 +449,7 @@ One normative source `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.
 | Q15 | One active new42 R04 canonical bank, projected into R05 with original42 history immutable and 78 original, all 120 IDs source-locked. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_68d3ccd1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
 | Q16 | 0 private RD1 imported and public CLIENT_SELF_CHECK_NO_MASTERY; Final Submit safety belongs to RELEASE. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_68d3ccd1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
 | Q17 | Three independent Topic pages without Topic Core, practice bank render requirement separate from SGK journey. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_68d3ccd1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q18 | Exact student source 4a17269c, new bank 5f6ab764 and signed author receipt e54f0f50, v3.1.0. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_68d3ccd1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q18 | Exact R05 student source 68d3ccd1, canonical bank 5f6ab764 and signed R05 author receipt cdf1356b, v3.1.0. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_68d3ccd1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
 
 ## S1_SGK_SBT_SOURCE
 
