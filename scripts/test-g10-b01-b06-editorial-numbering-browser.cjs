@@ -135,8 +135,13 @@ function checkSHA(){
   const field06=k=>b06.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(field06("BASELINE_JS_GIT_BLOB"),field05("CANDIDATE_JS_GIT_BLOB"),
     "B06 nav must extend exact owner accepted B05 JS");
-  assert.equal(hash(js),field06("CANDIDATE_JS_GIT_BLOB"),
-    "B06 S1 route numbering and keyboard must match exact Q18 JS");
+  const b08=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B08_S1_OWNER_Q18_ENRICHMENT_DELTA_R02_20261116.md"),"utf8");
+  const field08=k=>b08.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(field08("JS_PREVIOUS_BLOB"),field06("CANDIDATE_JS_GIT_BLOB"),
+    "B08 scoped JS must extend exact B06 owner-approved Q18 JS, never rewrite history");
+  assert.equal(hash(js),field08("JS_CANDIDATE_BLOB"),
+    "B08 scoped tab keyboard and solved-example cards must match exact Q18 JS");
 }
 const names=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
 const ch=n=>n<=2?"i":n<=4?"ii":"iii";
