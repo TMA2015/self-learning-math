@@ -96,7 +96,7 @@ for(const [lesson,row] of rows){
  if(n<=10&&n!==8){
   assert.deepEqual(tex(source),tex(previous),lesson+" original mathematical expressions changed beyond reordering");
  }else{
-  assert(official.includes("tùy ý từ $0^\\circ$ đến $180^\\circ$"),"B11 original SGK zero-angle range");
+  assert(official.includes("có thể nhận một giá trị tùy ý từ $0^\\circ$ đến $180^\\circ$"),"B11 original SGK zero-angle range");
   assert(official.includes("vuông góc với mọi vectơ"),"B11 SGK orthogonality convention");
   assert(official.includes("hai độ dài đều dương"),"B11 denominator guard");
   assert(official.includes("\\vec u\\cdot\\vec v=ac+bd"),"B11 coordinate product formula");
