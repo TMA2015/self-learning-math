@@ -34,11 +34,17 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
  const b02Candidate=newest.match(/^\*\*CSS_PATH:\*\*.*candidate \x60([a-f0-9]{40})\x60/m)?.[1];
  assert.equal(old,goldenCss,"Chapter IV historic Golden stylesheet SHA unchanged");
  assert.equal(b01,b02Baseline,"B02 scoped CSS must extend accepted B01 teal baseline");
- assert.equal(blob(cssFile),b02Candidate,"B02 scoped CSS must be locked by Q18 candidate SHA");
+ const b03receipt=fs.readFileSync(root+
+  "/prototypes/thpt/ux795/G10_CHII_B03_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md","utf8");
+ const b03base=b03receipt.match(/^\*\*BASELINE_CSS_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+ const b03candidate=b03receipt.match(/^\*\*CANDIDATE_CSS_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+ assert.equal(b03base,b02Candidate,"B03 extends exact B02 Golden CSS candidate");
+ assert.equal(blob(cssFile),b03candidate,"B03 scoped CSS must match Q18 candidate without affecting Chapter IV");
  const styles=cssFile.toString("utf8");
  assert(styles.includes(':has([data-thpt-first-try-id="THPT-G10-CHI-TRY01"])') &&
-  styles.includes(':has([data-thpt-first-try-id="THPT-G10-CHI-TRY06"])'),
-  "Only explicitly scoped B01/B02 concept colors allowed; ChIV stays amber");
+  styles.includes(':has([data-thpt-first-try-id="THPT-G10-CHI-TRY06"])') &&
+  styles.includes(':has([data-thpt-first-try-id="THPT-G10-CHII-TRY01"])'),
+  "B01/B02/B03 scoped concept color only; ChIV stays amber");
  for(const [lesson,sha] of Object.entries(sources)){
   assert.equal(blob(fs.readFileSync(root+"/docs/thpt-preview/sgk/chuong-iv/bai-"+lesson+".md")),sha,
    "Unapproved academic/source/First Try change B"+lesson);
