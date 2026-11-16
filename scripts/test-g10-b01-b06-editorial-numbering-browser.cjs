@@ -142,10 +142,12 @@ const widths=[390,820,1440];
         loc+" four analysis-before-method examples");
       const diagram=knowledgePane.locator('img[src*="G10_B02_NUMBER_SETS_INCLUSION_S1_R01.svg"]');
       assert.equal(await diagram.count(),1,loc+" S1 nested number sets SVG present");
+      await labels.nth(1).click(); // make lazy-loaded S1 diagram visible before checking pixels
       await page.waitForFunction(()=>{
        const image=document.querySelector('img[src*="G10_B02_NUMBER_SETS_INCLUSION_S1_R01.svg"]');
        return !!image&&image.complete&&image.naturalWidth>0;
       },null,{timeout:15000});
+      await labels.nth(0).click();
      }
      const exampleTitles=(await groups.nth(2).locator("h3").allInnerTexts()).map(x=>x.trim());
      assert(exampleTitles.length>=(n===2?4:3)&&exampleTitles.every((v,i)=>v.startsWith("3."+(i+1)+". Ví dụ "+(i+1)+" —")),loc+" S1 extended worked example titles");
@@ -225,7 +227,8 @@ const widths=[390,820,1440];
       const inside=folds.flatMap(d=>[...d.querySelectorAll("p")].map(px));
       const callouts=[...article.querySelectorAll(".thpt-r4-knowledge-conclusion")].map(x=>({
        background:getComputedStyle(x).backgroundColor,
-       left:getComputedStyle(x).borderLeftColor
+       left:getComputedStyle(x).borderLeftColor,
+       concept:x.classList.contains("thpt-r4-concept-card")
       }));
       const labels=[...article.querySelectorAll(".tabbed-set > .tabbed-labels > label")];
       return {body,cells,summaries,inside,callouts,
@@ -255,9 +258,29 @@ const widths=[390,820,1440];
        if(old===null)document.body.removeAttribute("data-md-color-scheme");
        else document.body.setAttribute("data-md-color-scheme",old);
       },scheme);
+     }else if(n===2){
+      const concepts=fontAudit.callouts.filter(c=>c.concept);
+      const memory=fontAudit.callouts.filter(c=>!c.concept);
+      assert.equal(concepts.length,13,loc+" thirteen S1 definition cards in layout");
+      assert.equal(memory.length,4,loc+" original four amber memory cards");
+      assert(concepts.every(c=>c.background==="rgb(232, 247, 242)"&&c.left==="rgb(8, 125, 105)"),
+       loc+" B02 concepts teal in light mode");
+      assert(memory.every(c=>c.background==="rgb(255, 243, 213)"&&c.left==="rgb(196, 154, 55)"),
+       loc+" B02 memory cards amber in light mode");
+      const old=await page.evaluate(()=>document.body.getAttribute("data-md-color-scheme"));
+      await page.evaluate(()=>document.body.setAttribute("data-md-color-scheme","slate"));
+      const cards=await groups.nth(1).locator(".thpt-r4-knowledge-conclusion").evaluateAll(nodes=>nodes.map(x=>({
+       bg:getComputedStyle(x).backgroundColor,left:getComputedStyle(x).borderLeftColor,
+       concept:x.classList.contains("thpt-r4-concept-card")
+      })));
+      assert(cards.filter(c=>c.concept).every(c=>c.bg==="rgb(25, 61, 54)"&&c.left==="rgb(118, 223, 199)"),
+       loc+" B02 slate teal definitions");
+      assert(cards.filter(c=>!c.concept).every(c=>c.bg==="rgb(74, 58, 37)"&&c.left==="rgb(214, 170, 73)"),
+       loc+" B02 slate amber reminders");
+      await page.evaluate(v=>{if(v===null)document.body.removeAttribute("data-md-color-scheme");else document.body.setAttribute("data-md-color-scheme",v);},old);
      }else{
       assert(fontAudit.callouts.every(c=>c.background==="rgb(255, 243, 213)"&&c.left==="rgb(196, 154, 55)"),
-       loc+" B02–B06 keep original amber memory cards");
+       loc+" B03–B06 keep original amber memory cards");
      }
      assert(fontAudit.buttons.every(b=>b.height>=42&&b.height<=52),
       loc+" compact original-HTML tab height");
