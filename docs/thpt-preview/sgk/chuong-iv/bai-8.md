@@ -10,11 +10,11 @@
 
     Hãy nhìn hai sơ đồ dưới đây: phần **nối đuôi–đầu** cho đường gấp khúc; phần **hình bình hành** cho hai vectơ cùng điểm đầu. Trước tiên xác định điểm đầu, điểm cuối của từng mũi tên rồi mới đọc mũi tên kết quả. Hình này minh họa quy tắc, không mang số đo của câu Vận dụng bên dưới.
 
-        <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B08_TRIANGLE_PARALLELOGRAM_SUM_D5_R01.svg" loading="lazy" alt="Vectơ và quy tắc ba điểm, hình bình hành"><figcaption>Cách đọc hình: theo đường gấp khúc, đầu mũi tên thứ nhất gặp đuôi mũi tên thứ hai; với hai vectơ chung gốc, đường chéo qua gốc là vectơ tổng. Hãy phân biệt vectơ tổng với tổng độ dài hai mũi tên.</figcaption></figure>
+    <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B08_TRIANGLE_PARALLELOGRAM_SUM_D5_R01.svg" loading="lazy" alt="Vectơ và quy tắc ba điểm, hình bình hành"><figcaption>Cách đọc hình: theo đường gấp khúc, đầu mũi tên thứ nhất gặp đuôi mũi tên thứ hai; với hai vectơ chung gốc, đường chéo qua gốc là vectơ tổng. Hãy phân biệt vectơ tổng với tổng độ dài hai mũi tên.</figcaption></figure>
 
-        <span id="thpt-g10-chiv-try06" data-thpt-first-try-id="THPT-G10-CHIV-TRY06" data-outcome-id="G10-B08-TRIANGLE" data-thpt-help-ref="HELP-G10-B08-01"></span>
+    <span id="thpt-g10-chiv-try06" data-thpt-first-try-id="THPT-G10-CHIV-TRY06" data-outcome-id="G10-B08-TRIANGLE" data-thpt-help-ref="HELP-G10-B08-01"></span>
 
-        **Vận dụng.** Đi từ A 3 m sang Đông đến B, rồi 4 m lên Bắc đến C. Vectơ tổng đi từ đâu tới đâu? Độ dài của nó bằng 7 m không?
+    **Vận dụng.** Đi từ A 3 m sang Đông đến B, rồi 4 m lên Bắc đến C. Vectơ tổng đi từ đâu tới đâu? Độ dài của nó bằng 7 m không?
 
     ??? question "Em tự mở đối chiếu sau khi đã thử làm"
 
@@ -28,9 +28,9 @@
 
     Nếu muốn dùng quy tắc nối đuôi–đầu, ta được phép **tịnh tiến vectơ** nhưng phải giữ nguyên độ dài và hướng. Hai cách dựng cho cùng vectơ tổng. Trước khi tính hợp lực, hãy kiểm góc giữa hai lực: chỉ khi chúng cùng hướng, độ lớn hợp lực mới bằng tổng hai độ lớn. Với hai lực vuông góc, hình bình hành trở thành hình chữ nhật và độ dài đường chéo dùng Pitago.
 
-        <span id="thpt-g10-chiv-try07" data-thpt-first-try-id="THPT-G10-CHIV-TRY07" data-outcome-id="G10-B08-PARALLELOGRAM" data-thpt-help-ref="HELP-G10-B08-02"></span>
+    <span id="thpt-g10-chiv-try07" data-thpt-first-try-id="THPT-G10-CHIV-TRY07" data-outcome-id="G10-B08-PARALLELOGRAM" data-thpt-help-ref="HELP-G10-B08-02"></span>
 
-        **Vận dụng.** Ở A có hai lực vuông góc, độ lớn lần lượt 3 N và 4 N. Hợp lực theo đường chéo có độ lớn là 7 N hay 5 N?
+    **Vận dụng.** Ở A có hai lực vuông góc, độ lớn lần lượt 3 N và 4 N. Hợp lực theo đường chéo có độ lớn là 7 N hay 5 N?
 
     ??? question "Em tự mở đối chiếu sau khi đã thử làm"
 
@@ -44,9 +44,9 @@
 
     Với ba điểm \(A,B,C\), nếu hai vectơ ban đầu là \(\overrightarrow{AB}\) và \(\overrightarrow{AC}\) (cùng gốc \(A\)), em cần phân biệt rõ hướng của \(\overrightarrow{BC}\) và \(\overrightarrow{CB}\). Trước khi mở Đối chiếu, hãy vẽ \(\overrightarrow{CA}\) là vectơ đối của \(\overrightarrow{AC}\) rồi tự nối mũi tên để tìm hiệu.
 
-        <span id="thpt-g10-chiv-try08" data-thpt-first-try-id="THPT-G10-CHIV-TRY08" data-outcome-id="G10-B08-OPPOSITE-SUBTRACTION" data-thpt-help-ref="HELP-G10-B08-01"></span>
+    <span id="thpt-g10-chiv-try08" data-thpt-first-try-id="THPT-G10-CHIV-TRY08" data-outcome-id="G10-B08-OPPOSITE-SUBTRACTION" data-thpt-help-ref="HELP-G10-B08-01"></span>
 
-        **Vận dụng.** Cho ba điểm A,B,C bất kỳ. Rút gọn \(\overrightarrow{AB}-\overrightarrow{AC}\) thành vectơ có hai chữ cái.
+    **Vận dụng.** Cho ba điểm A,B,C bất kỳ. Rút gọn \(\overrightarrow{AB}-\overrightarrow{AC}\) thành vectơ có hai chữ cái.
 
     ??? question "Em tự mở đối chiếu sau khi đã thử làm"
 
@@ -60,9 +60,9 @@
 
     Chú ý \(\vec0\) là **vectơ** có độ dài 0, không phải một độ dài âm. Ngược lại, khi \(A\ne B\) và \(\overrightarrow{MA}+\overrightarrow{MB}=\vec0\), hai độ dời phải triệt tiêu nên \(M\) chính là trung điểm của đoạn \(AB\). Em hãy kiểm tra kết luận trên một đoạn cụ thể thay vì chỉ học thuộc công thức.
 
-        <span id="thpt-g10-chiv-try09" data-thpt-first-try-id="THPT-G10-CHIV-TRY09" data-outcome-id="G10-B08-MIDPOINT" data-thpt-help-ref="HELP-G10-B08-02"></span>
+    <span id="thpt-g10-chiv-try09" data-thpt-first-try-id="THPT-G10-CHIV-TRY09" data-outcome-id="G10-B08-MIDPOINT" data-thpt-help-ref="HELP-G10-B08-02"></span>
 
-        **Vận dụng.** Trên đường thẳng chọn A=0 m, B=8 m và M là trung điểm. Lấy \(\vec e\) là vectơ đơn vị dài 1 m hướng từ A đến B. Viết hai vectơ \(\overrightarrow{MA}\), \(\overrightarrow{MB}\) theo \(\vec e\) và tính tổng.
+    **Vận dụng.** Trên đường thẳng chọn A=0 m, B=8 m và M là trung điểm. Lấy \(\vec e\) là vectơ đơn vị dài 1 m hướng từ A đến B. Viết hai vectơ \(\overrightarrow{MA}\), \(\overrightarrow{MB}\) theo \(\vec e\) và tính tổng.
 
     ??? question "Em tự mở đối chiếu sau khi đã thử làm"
 
@@ -76,9 +76,9 @@
 
     Hai vectơ \(\overrightarrow{GB}\), \(\overrightarrow{GC}\) có tổng cùng phương với trung tuyến \(GM\), vì \(B,C\) nằm đối xứng qua \(M\) trong phép cộng có gốc \(G\). Hãy kết hợp tính chất trung điểm với tỉ số trọng tâm để tự tìm vectơ cần cân bằng tổng đó, trước khi mở lời giải.
 
-        <span id="thpt-g10-chiv-try10" data-thpt-first-try-id="THPT-G10-CHIV-TRY10" data-outcome-id="G10-B08-CENTROID" data-thpt-help-ref="HELP-G10-B08-02"></span>
+    <span id="thpt-g10-chiv-try10" data-thpt-first-try-id="THPT-G10-CHIV-TRY10" data-outcome-id="G10-B08-CENTROID" data-thpt-help-ref="HELP-G10-B08-02"></span>
 
-        **Vận dụng.** Với M trung điểm BC và G trọng tâm ABC, biết \(\overrightarrow{GB}+\overrightarrow{GC}=2\overrightarrow{GM}\). Viết \(\overrightarrow{GA}\) theo \(\overrightarrow{GM}\) và tìm tổng ba vectơ từ G.
+    **Vận dụng.** Với M trung điểm BC và G trọng tâm ABC, biết \(\overrightarrow{GB}+\overrightarrow{GC}=2\overrightarrow{GM}\). Viết \(\overrightarrow{GA}\) theo \(\overrightarrow{GM}\) và tìm tổng ba vectơ từ G.
 
     ??? question "Em tự mở đối chiếu sau khi đã thử làm"
 
