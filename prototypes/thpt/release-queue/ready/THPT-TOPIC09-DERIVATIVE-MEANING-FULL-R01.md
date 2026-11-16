@@ -17,9 +17,9 @@ ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOP
 ACADEMIC_SOURCE_BLOB: 8222107d717f7d02b845f79ccdd154e8dbe71cc6
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC09_R05_AUTHOR_SELF_QA_RECEIPT_20261116.md (Q18 author SELF_VERIFIED, no independent new NotebookLM PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC09_R05_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 6cd023b8da3056d9880d89c738f55876c5f433d7
+REVIEW_RECEIPT_BLOB: bce770e351460d9d01d7567332aed489bc68aa4d
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC09-DERIVATIVE-MEANING-FULL-R05_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: 8d649136b8dcc8ddd493121ce7057a68602f3f43
+AUTHOR_HANDOFF_BLOB: 51b1a1d7f5633f7a1682f24ebd44d772156f49e7
 PUBLIC_ORIGINAL71_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_ORIGINAL71_SGK_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_ORIGINAL71_INDEX_BLOB: 3c025ce2dfb8e16743873ac2b3f35bfb37c27ef8
 PUBLIC_NEW37_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_NEW37_PUBLIC_CANONICAL_R05_20261116.md
@@ -52,15 +52,15 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 - **32/32** outcomes có 32 Ví dụ độc lập Đề bài/Lời giải và 32 Vận dụng/Đối chiếu ngay cạnh nội dung; năm mạch liền nhau, ba trang Topic đầy đủ, không tạo Core riêng.
 - **108/108** câu có đề và lời giải thật trên Practice (71 original SGK immutable +37 Topic R05), **14/14** rubric Written, **108/108** “Nếu làm sai”; 32 public selfcheck P01–P32 chỉ có đề (không in lời giải/key/hint/rubric), `CLIENT_SELF_CHECK_NO_MASTERY`.
 - Original SGK ChIX R00 source `3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0` cùng 71 placement index R01 vẫn bất biến. R05 37 new source `f249949be3b254a29c8859301b6c4904e636c505` giữ ID, P23 `content_version=2` để phản ánh câu hỏi tập xác định đã sửa.
-- Four SVG source SHA historical same; source-driven QA **272/272** PASS + số học/hình **37/37** PASS, signed Q18 R05 blob `6cd023b8da3056d9880d89c738f55876c5f433d7` chế độ `AUTHOR_SELF_VERIFIED` v3.1.0; **không** phải NotebookLM independent PASS.
+- Four SVG source SHA historical same; source-driven QA **272/272** PASS + số học/hình **37/37** PASS, signed Q18 R05 blob `bce770e351460d9d01d7567332aed489bc68aa4d` chế độ `AUTHOR_SELF_VERIFIED` v3.1.0; **không** phải NotebookLM independent PASS.
 - R04 learner `68fe5b8a3ded75b6f774b4685655487d9b4bdff9`, Q18 `bc2aa70ad7c46d678889f0ed750c79201b16dc58`, V2 `496c9a66c75f8cd103b58b2f747956e72eafa518` giữ lịch sử, không chuyển PASS tự động. Dự thảo yêu cầu review NotebookLM R05 trước đó chỉ là tùy chọn, không thay bản Q18 self-signed hiện hành.
 - **RELEASE:** Chưa thử browser/Golden/AP/Final Submit/MathJax/render/mobile/P1/P2 hoặc owner signoff. Draft PR #831, NO MERGE/DEPLOY AUTHORING.
 
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — learner source Git blob 8222107d717f7d02b845f79ccdd154e8dbe71cc6, signed Q18 author receipt 6cd023b8da3056d9880d89c738f55876c5f433d7, original71 index 3c025ce2dfb8e16743873ac2b3f35bfb37c27ef8, NEW37 bank f249949be3b254a29c8859301b6c4904e636c505, one V2 handoff 8d649136b8dcc8ddd493121ce7057a68602f3f43, four SVG exact readback SHA.
+- [x] A1_SOURCE_SNAPSHOT — learner source Git blob 8222107d717f7d02b845f79ccdd154e8dbe71cc6, signed Q18 author receipt bce770e351460d9d01d7567332aed489bc68aa4d, original71 index 3c025ce2dfb8e16743873ac2b3f35bfb37c27ef8, NEW37 bank f249949be3b254a29c8859301b6c4904e636c505, one V2 handoff 51b1a1d7f5633f7a1682f24ebd44d772156f49e7, four SVG exact readback SHA.
 - [x] A2_SGK_SBT_SCOPE — archived original scanned publisher SGK KNTT G11 Tập2 ChIX B31 printed81–87, B32 88–94, B33 95–96, end97–98; SBT B31 54–57, B32 58–60, B33 61–62, end63–65, answers111–116; O32 differential formally labelled Topic extension, not SGK Core.
-- [x] A3_NOTEBOOKLM_VERDICT — R04 `AUTHOR_SELF_VERIFIED` theo chuẩn Q01–Q18 v3.1.0: source `8222107d717f7d02b845f79ccdd154e8dbe71cc6`, receipt `6cd023b8da3056d9880d89c738f55876c5f433d7`, kiểm 32/32 outcome, 37/37 câu mới (bao gồm P23 sửa đúng tập xác định), bốn SVG và D6; P0/P1=0 theo phạm vi AUTHORING. `A3_NOTEBOOKLM_VERDICT` là tên trường checklist V2 tương thích CI lịch sử; thực chất chế độ Q18 ở gói này là tự kiểm chứng, **không** có NotebookLM reviewer PASS mới. NotebookLM độc lập chỉ từng review nguồn SGK G11 ChIX lịch sử, không cấp PASS cho R04.
+- [x] A3_NOTEBOOKLM_VERDICT — R04 `AUTHOR_SELF_VERIFIED` theo chuẩn Q01–Q18 v3.1.0: source `8222107d717f7d02b845f79ccdd154e8dbe71cc6`, receipt `bce770e351460d9d01d7567332aed489bc68aa4d`, kiểm 32/32 outcome, 37/37 câu mới (bao gồm P23 sửa đúng tập xác định), bốn SVG và D6; P0/P1=0 theo phạm vi AUTHORING. `A3_NOTEBOOKLM_VERDICT` là tên trường checklist V2 tương thích CI lịch sử; thực chất chế độ Q18 ở gói này là tự kiểm chứng, **không** có NotebookLM reviewer PASS mới. NotebookLM độc lập chỉ từng review nguồn SGK G11 ChIX lịch sử, không cấp PASS cho R04.
 - [x] A4_ITEM_OUTCOME_IDS — 32 lesson IDs, 32 outcome IDs, 108 unique PUBLIC item IDs in single item-outcome-role V2 matrix, 32 PUBLIC Self Check placements reuse new P01–P32 rather than adding IDs.
 - [x] A5_D1_D6_SCOPE — 32 WHY/prerequisites/meaning/reasoned worked/first-try/D6 units, five original Written /7 with detailed rubrics, four original SVG title/desc and guided reading, three lab proposals SPEC_ONLY.
 - [x] A6_DELTA_RESOLVED — new CĐ09 complete Topic/NEW37 bank is DELTA_C_ACADEMIC_MATERIAL self-Q18 verified on locked SHA. Original reviewed G11 SGK ChIX source unchanged, no P0/P1 author blocker.
