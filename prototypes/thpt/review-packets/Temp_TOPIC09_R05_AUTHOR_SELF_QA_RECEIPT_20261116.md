@@ -36,6 +36,13 @@ PRIVATE_RD1_IMPORTED: 0
 OFFICIAL_READINESS: NOT_CLAIMED
 RELEASE_AUTHORIZATION: NO
 
+S1_RECEIPT: SGK Toán11 KNTT tập Hai ChIX B31 in81–87, B32 88–94, B33 95–96, cuối ChIX 97–98; SBT in54–57/58–60/61–62, cuối63–65. Đã có owner/SGK composite receipt blob 4280a1741ccde038bbd5ae22af5def0d8683c7e8, source gốc 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; lần này dùng lại biên nhận S1 lịch sử, KHÔNG khai đã mở lại PDF.
+OUTCOME_AUDIT: TOP09-O01–O32 mỗi outcome đều có Kiến thức giải nghĩa, Ví dụ độc lập Đề/Lời giải, Vận dụng/Đối chiếu sát bài và D6, đối chiếu theo 32 hàng ma trận phía dưới; 71 original SGK+37 Topic canonical, 108 actual learner-visible stems, 14 Written rubric, 32 selfcheck public replay.
+MATH_VERIFICATION: 37/37 direct outcome-numeric/figure checks; giới hạn h khác0, đạo hàm trái/phải tại góc nhọn, miền căn/log/mẫu, radian, product/quotient/chain, vận tốc có hướng vs tốc độ, bốn SVG, vi phân dy vs Δy được kiểm; source/canonical 272/272 asserts PASS.
+PED_VERIFICATION: 32/32 lời giảng có động cơ/tiền đề, trực giác trước công thức và ví dụ chọn phương pháp; 32 Vận dụng ngay sát outcome và tự mở Đối chiếu; 108 câu có “Nếu làm sai”; bỏ thuật ngữ kỹ thuật SGK W01/speed/chain/Core khỏi lời học sinh. Đây là QA source, không phải thử học sinh/browser thật.
+CANONICAL_Q15: 108 unique item IDs, 71 original G11 ChIX SGK source gốc SHA 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0 + index SHA 3c025ce2dfb8e16743873ac2b3f35bfb37c27ef8; 37 Topic bank R05 f249949be3b254a29c8859301b6c4904e636c505, P23 content_version=2. 108/108 stem/key/solution/rubric parity đúng source; 14 Written rubric không nhân Anchor.
+ASSESSMENT_Q16: 32 selfcheck P01–P32 chỉ câu hỏi công khai đã có trong Practice, không hint/answer/rubric/correctness trước tự làm, không independent Topic Readiness, không ghi Skill Mastery; private RD1 imported 0, browser Final Submit gate thuộc RELEASE.
+
 ## A1 Q01–Q02: S1, phạm vi và 32 outcome
 
 Kết nối tri thức SGK Toán 11 tập Hai Chương IX (B31 trang in 81–87, B32 88–94, B33 95–96, cuối ChIX 97–98); SBT B31 trang in 54–57, B32 58–60, B33 61–62, cuối chương 63–65. S1/PDF provenance đã có trong metadata R04 và composite SGK receipt `4280a1741ccde038bbd5ae22af5def0d8683c7e8`, original SGK source `3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0` bất biến. **Không nhận đã xem lại PDF SGK/SBT trong lượt này.** O32 vi phân là mở rộng riêng của Chuyên đề, không thành SGK Core. 32/32 outcome có văn xuôi khám phá→điều kiện→ví dụ có suy luận→Vận dụng/Đối chiếu và D6.
