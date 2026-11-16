@@ -23,8 +23,15 @@ const blob=data=>{const b=Buffer.isBuffer(data)?data:Buffer.from(data);return cr
 const idList=(s,key)=>[...s.matchAll(new RegExp(key+'="([^"]+)"',"g"))].map(m=>m[1]).sort();
 const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
 (async()=>{
- assert.equal(blob(fs.readFileSync(root+"/docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css")),goldenCss,
-  "Golden presentation CSS exact Git blob SHA");
+ const cssFile=fs.readFileSync(root+"/docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css");
+ const receipt=fs.readFileSync(root+
+  "/prototypes/thpt/ux795/G10_CHI_B01_DEFINITION_COLOR_UI_DELTA_A_20261116.md","utf8");
+ const prev=receipt.match(/^\*\*BASELINE_CSS_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+ const candidate=receipt.match(/^\*\*CANDIDATE_CSS_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+ assert.equal(prev,goldenCss,"Chapter IV immutable Golden stylesheet baseline remains source-locked");
+ assert.equal(blob(cssFile),candidate,"Only B01 concept-color Delta A CSS candidate may extend original stylesheet");
+ assert(cssFile.toString("utf8").includes(':has([data-thpt-first-try-id="THPT-G10-CHI-TRY01"])'),
+   "B01 color change may not spill into ChIV");
  for(const [lesson,sha] of Object.entries(sources)){
   assert.equal(blob(fs.readFileSync(root+"/docs/thpt-preview/sgk/chuong-iv/bai-"+lesson+".md")),sha,
    "Unapproved academic/source/First Try change B"+lesson);

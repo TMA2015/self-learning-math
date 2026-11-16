@@ -43,6 +43,16 @@ function checkSHA(){
    assert(oldCandidate&&newBaseline===oldCandidate&&original.includes("**BASELINE_LESSON_GIT_BLOB:** "+String.fromCharCode(96)+sha+String.fromCharCode(96)),
     "B01 R02 must extend original owner-reviewed R01 / frozen historical SGK baseline");
    assert.equal(hash(data),newCandidate,"B01 owner P2 source must match exactly R02 Q18 candidate Git blob");
+  }else if(p==="docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"){
+   const receipt=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHI_B01_DEFINITION_COLOR_UI_DELTA_A_20261116.md"),"utf8");
+   const oldCss=receipt.match(/^\*\*BASELINE_CSS_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+   const newCss=receipt.match(/^\*\*CANDIDATE_CSS_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+   assert.equal(oldCss,sha,"B01 original shared CSS baseline must remain source-locked");
+   assert.equal(hash(data),newCss,"B01 teal concept CSS must match exact Delta A receipt SHA");
+   assert(receipt.includes("**IMMUTABLE_B01_KNOWLEDGE_SOURCE_BLOB:** "+
+     String.fromCharCode(96)+"dba6430cd79b17dee0591fb2dcd075ea5200b126"+String.fromCharCode(96)),
+     "B01 UI-only delta must explicitly preserve deployed R02 Knowledge source");
   }else assert.equal(hash(data),sha,"Untouched SGK sibling source/theme drift: "+p);
  }
 }
@@ -183,8 +193,28 @@ const widths=[390,820,1440];
       loc+" Đối chiếu label same normal-text size");
      assert(fontAudit.inside.every(px=>Math.abs(px-fontAudit.body)<.6),
       loc+" revealed answer text same normal-text size");
-     assert(fontAudit.callouts.length>0&&fontAudit.callouts.every(c=>c.background==="rgb(255, 243, 213)"),
-      loc+" yellow-cream memory box from HTML reference");
+     assert(fontAudit.callouts.length>0,loc+" concept or memory callouts exist");
+     if(n===1){
+      assert.equal(fontAudit.callouts.length,7,loc+" exactly seven S1 concept/notation boxes");
+      assert(fontAudit.callouts.every(c=>c.background==="rgb(232, 247, 242)"&&c.left==="rgb(8, 125, 105)"),
+       loc+" B01 teal S1 definitions distinct from amber memory box (light mode)");
+      const scheme=await page.evaluate(()=>document.body.getAttribute("data-md-color-scheme"));
+      await page.evaluate(()=>document.body.setAttribute("data-md-color-scheme","slate"));
+      const dark=await groups.nth(1).locator(".thpt-r4-knowledge-conclusion")
+       .evaluateAll(nodes=>nodes.map(el=>({
+        bg:getComputedStyle(el).backgroundColor,
+        left:getComputedStyle(el).borderLeftColor
+       })));
+      assert(dark.length===7&&dark.every(c=>c.bg==="rgb(25, 61, 54)"&&c.left==="rgb(118, 223, 199)"),
+       loc+" B01 concept boxes use slate teal theme");
+      await page.evaluate(old=>{
+       if(old===null)document.body.removeAttribute("data-md-color-scheme");
+       else document.body.setAttribute("data-md-color-scheme",old);
+      },scheme);
+     }else{
+      assert(fontAudit.callouts.every(c=>c.background==="rgb(255, 243, 213)"&&c.left==="rgb(196, 154, 55)"),
+       loc+" B02–B06 keep original amber memory cards");
+     }
      assert(fontAudit.buttons.every(b=>b.height>=42&&b.height<=52),
       loc+" compact original-HTML tab height");
      // Actual TOC interaction (including hidden sidebar at phone width):

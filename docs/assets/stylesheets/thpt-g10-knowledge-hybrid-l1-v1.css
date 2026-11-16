@@ -374,3 +374,23 @@
   height: 44px;
   min-height: 44px;
 }
+
+/* DELTA_A_UI · B01 S1 concept callouts: teal (definition/notation)
+ * versus the existing amber .thpt-r4-knowledge-conclusion memory/reminder.
+ * Match the canonical B01 first-try ID, not all Golden lessons, to avoid
+ * changing five sibling lessons or the SGK/Topic Golden UI contract.
+ * B01 R02 already has exactly seven concept/notation boxes, no amber memory
+ * boxes in this article. No academic markup, answers or item IDs changed.
+ */
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden:has([data-thpt-first-try-id="THPT-G10-CHI-TRY01"]) .thpt-r4-knowledge-conclusion {
+  background: #e8f7f2;
+  border-color: #a9dccc;
+  border-left-color: #087d69;
+  color: #174137;
+}
+[data-md-color-scheme="slate"] .md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden:has([data-thpt-first-try-id="THPT-G10-CHI-TRY01"]) .thpt-r4-knowledge-conclusion {
+  background: #193d36;
+  border-color: #447e70;
+  border-left-color: #76dfc7;
+  color: #e9fff7;
+}
