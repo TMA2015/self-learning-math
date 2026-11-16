@@ -219,7 +219,17 @@
 
     **Kiểm lại.** Hợp có 5 phần tử và \(n(A)+n(B)-n(A\cap B)=4+3-2=5\). Hai hiệu khác nhau như đã dự đoán.
 
-    ### 3.2. Ví dụ 2 — Giao, hợp và hiệu của hai khoảng
+    ### 3.2. Ví dụ 2 — Phân loại số theo tập hợp số
+
+    **Đề bài.** Xét bốn số \(0\), \(-2\), \(\dfrac34\) và \(\sqrt 2\). Với mỗi số, hãy xác định tập nhỏ nhất trong bốn tập \(\mathbb N,\mathbb Z,\mathbb Q,\mathbb R\) chứa số đó.
+
+    **Phân tích.** Bắt đầu từ tập nhỏ nhất \(\mathbb N\) rồi kiểm lần lượt điều kiện của \(\mathbb Z\), \(\mathbb Q\) và \(\mathbb R\). Đừng nhầm “thuộc \(\mathbb R\)” với “chỉ thuộc \(\mathbb R\)”.
+
+    **Lời giải.** Số \(0\) là số tự nhiên nên tập nhỏ nhất là \(\mathbb N\). Số \(-2\) là số nguyên nhưng không phải số tự nhiên, nên tập nhỏ nhất là \(\mathbb Z\). Số \(\dfrac34\) là số hữu tỉ nhưng không phải số nguyên, nên tập nhỏ nhất là \(\mathbb Q\). Số \(\sqrt 2\) là số vô tỉ, nên tập nhỏ nhất là \(\mathbb R\).
+
+    **Kiểm lại.** \(\mathbb N\subseteq\mathbb Z\subseteq\mathbb Q\subseteq\mathbb R\). Mỗi số còn thuộc tất cả các tập bao ngoài tập nhỏ nhất đã nêu, không phải chỉ thuộc đúng một tập.
+
+    ### 3.3. Ví dụ 3 — Giao, hợp và hiệu của hai khoảng
 
     **Đề bài.** Cho \(A=(-3;2]\), \(B=[0;5)\). Tìm \(A\cap B\), \(A\cup B\) và \(A\setminus B\).
 
@@ -229,7 +239,7 @@
 
     **Kiểm lại.** Số \(0\) thuộc B nên **không** thuộc \(A\setminus B\). Số \(2\) nằm trong giao vì cả A và B đều chứa 2. Hai đầu mút \(-3\) và \(5\) đều không nằm trong hợp.
 
-    ### 3.3. Ví dụ 3 — Giải bài toán đếm bằng sơ đồ Venn
+    ### 3.4. Ví dụ 4 — Giải bài toán đếm bằng biểu đồ Ven
 
     **Đề bài.** Một lớp có 36 học sinh. Có 21 bạn tham gia CLB Đọc sách, 20 bạn tham gia CLB Khoa học và 8 bạn tham gia cả hai. Hỏi bao nhiêu bạn tham gia đúng một câu lạc bộ và bao nhiêu bạn không tham gia câu lạc bộ nào?
 
