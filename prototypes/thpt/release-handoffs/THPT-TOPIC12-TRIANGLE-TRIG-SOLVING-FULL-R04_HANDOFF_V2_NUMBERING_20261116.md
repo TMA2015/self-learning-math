@@ -15,9 +15,9 @@ ACADEMIC_SOURCE_BLOB: ec90cab8455768b263f8d57409587c28f250340a
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC12_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
 REVIEW_RECEIPT_BLOB: 6974062fc1f127a7b040d653093ffc5f3c40fabf
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_A1_A7_BLOB: 4f3c5ae64aef723c4271d59abebc1fcebe48d6f8
+AUTHOR_A1_A7_BLOB: 2d729da63547714363b615c559ef9bca88b0ddac
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: 4f3c5ae64aef723c4271d59abebc1fcebe48d6f8
+AUTHOR_METADATA_BLOB: 2d729da63547714363b615c559ef9bca88b0ddac
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC12_TRIANGLE_NEW16_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/THPT_G10_CHIII_B05_B06_D1D6_AUTHORING_R01_SNAPSHOT.md
@@ -232,7 +232,7 @@ Normative source: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_2
 
 ## REVIEW_SOURCE_RECEIPT
 
-Git source `b93611eaaf0dbc03908a4836f1db7f70fd8df108` and author-only metadata `4f3c5ae64aef723c4271d59abebc1fcebe48d6f8`, receipt `9482550bea9b9ef222f2fb685f72079b0e32656e` are immutable input SHA for this handoff. Author self-QA P0/P1=0; original independent NotebookLM is S1 SGK support only. 34 unique public item IDs; 12 voluntary Self Check placement refs reuse originals/new without clone. Matrix from author metadata:
+Git source `b93611eaaf0dbc03908a4836f1db7f70fd8df108` and author-only metadata `2d729da63547714363b615c559ef9bca88b0ddac`, receipt `9482550bea9b9ef222f2fb685f72079b0e32656e` are immutable input SHA for this handoff. Author self-QA P0/P1=0; original independent NotebookLM is S1 SGK support only. 34 unique public item IDs; 12 voluntary Self Check placement refs reuse originals/new without clone. Matrix from author metadata:
 
 ## OUTCOME_SOURCE_AND_PED_TRACE
 
