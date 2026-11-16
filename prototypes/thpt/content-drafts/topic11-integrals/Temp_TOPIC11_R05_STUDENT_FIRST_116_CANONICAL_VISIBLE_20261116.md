@@ -663,7 +663,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P01; SOURCE_BLOB: d288679011cf1e21cb4594764f0046eaa1637615; OUTCOME: TOP11-O01; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P01; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O01; SINGLE_ITEM_ID -->
 
 **Bài 5.** Tìm họ nguyên hàm f(x)=6x−4.
 
@@ -735,7 +735,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P02; SOURCE_BLOB: d288679011cf1e21cb4594764f0046eaa1637615; OUTCOME: TOP11-O02; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P02; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O02; SINGLE_ITEM_ID -->
 
 **Bài 10.** F'=3x², F(2)=9; tìm F.
 
@@ -749,7 +749,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-W01; SOURCE_BLOB: d288679011cf1e21cb4594764f0046eaa1637615; OUTCOME: TOP11-O02; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-W01; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O02; SINGLE_ITEM_ID -->
 
 **Bài 11.** Cho F'(x)=3x²−4x+1 trên ℝ và F(1)=2. (a) Viết họ nguyên hàm. (b) Tìm C. (c) Tính F(2). (d) Chứng minh nghiệm là duy nhất trên ℝ trong họ nguyên hàm.
 
@@ -830,7 +830,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P03; SOURCE_BLOB: d288679011cf1e21cb4594764f0046eaa1637615; OUTCOME: TOP11-O03; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P03; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O03; SINGLE_ITEM_ID -->
 
 **Bài 16.** Tính ∫(3x²+4x−2)dx.
 
@@ -902,7 +902,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P04; SOURCE_BLOB: d288679011cf1e21cb4594764f0046eaa1637615; OUTCOME: TOP11-O04; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P04; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O04; SINGLE_ITEM_ID -->
 
 **Bài 21.** Tìm nguyên hàm 2/x trên (−∞,0) biết F(−1)=3.
 
@@ -916,7 +916,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-W02; SOURCE_BLOB: d288679011cf1e21cb4594764f0046eaa1637615; OUTCOME: TOP11-O04; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-W02; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O04; SINGLE_ITEM_ID -->
 
 **Bài 22.** Trên khoảng (−∞,0), cho F'(x)=2/x+cos x và F(−1)=4. (a) Tìm họ nguyên hàm. (b) Xác định F đúng miền với hằng C. (c) Kiểm đạo hàm và giá trị đầu. (d) Nêu vì sao không dùng ln x trên khoảng âm.
 
@@ -997,7 +997,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P05; SOURCE_BLOB: d288679011cf1e21cb4594764f0046eaa1637615; OUTCOME: TOP11-O05; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P05; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O05; SINGLE_ITEM_ID -->
 
 **Bài 27.** Tính ∫(2e^{2x}+3^x)dx.
 
@@ -1069,7 +1069,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P06; SOURCE_BLOB: d288679011cf1e21cb4594764f0046eaa1637615; OUTCOME: TOP11-O06; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P06; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O06; SINGLE_ITEM_ID -->
 
 **Bài 32.** Tính ∫(2cos x−3sin x)dx.
 
@@ -1141,7 +1141,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P07; SOURCE_BLOB: d288679011cf1e21cb4594764f0046eaa1637615; OUTCOME: TOP11-O07; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P07; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O07; SINGLE_ITEM_ID -->
 
 **Bài 37.** Với v(t)=6t−4, s(0)=3, tìm s(2).
 
@@ -1215,7 +1215,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P08; SOURCE_BLOB: d288679011cf1e21cb4594764f0046eaa1637615; OUTCOME: TOP11-O08; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P08; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O08; SINGLE_ITEM_ID -->
 
 **Bài 42.** Tính ∫₀²(3x²+1)dx.
 
@@ -1287,7 +1287,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P09; SOURCE_BLOB: d288679011cf1e21cb4594764f0046eaa1637615; OUTCOME: TOP11-O09; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P09; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O09; SINGLE_ITEM_ID -->
 
 **Bài 47.** Tính ∫₁³(2x+1)dx−∫₁³x dx.
 
@@ -1359,7 +1359,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P10; SOURCE_BLOB: d288679011cf1e21cb4594764f0046eaa1637615; OUTCOME: TOP11-O10; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P10; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O10; SINGLE_ITEM_ID -->
 
 **Bài 52.** Tính ∫₃¹ x²dx.
 
@@ -1431,7 +1431,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P11; SOURCE_BLOB: d288679011cf1e21cb4594764f0046eaa1637615; OUTCOME: TOP11-O11; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P11; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O11; SINGLE_ITEM_ID -->
 
 **Bài 57.** Tính diện tích dưới y=x² trên [0,2].
 
@@ -1503,7 +1503,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P12; SOURCE_BLOB: d288679011cf1e21cb4594764f0046eaa1637615; OUTCOME: TOP11-O12; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P12; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O12; SINGLE_ITEM_ID -->
 
 **Bài 62.** Với f=x trên [−2,1], tính tích phân có dấu và diện tích.
 
@@ -1517,7 +1517,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-W03; SOURCE_BLOB: d288679011cf1e21cb4594764f0046eaa1637615; OUTCOME: TOP11-O12; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-W03; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O12; SINGLE_ITEM_ID -->
 
 **Bài 63.** Một vật có vận tốc v(t)=t−1 (m/s) trong 0≤t≤2 s. (a) Tính độ dời bằng tích phân. (b) Xác định thời điểm đổi chiều. (c) Tính tổng quãng đường. (d) Giải thích vì sao không dùng trị tuyệt đối độ dời làm quãng đường.
 
@@ -1598,7 +1598,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P13; SOURCE_BLOB: d288679011cf1e21cb4594764f0046eaa1637615; OUTCOME: TOP11-O13; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P13; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O13; SINGLE_ITEM_ID -->
 
 **Bài 68.** Tính ∫₀^π2sin x dx.
 
@@ -1670,7 +1670,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P14; SOURCE_BLOB: d288679011cf1e21cb4594764f0046eaa1637615; OUTCOME: TOP11-O14; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P14; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O14; SINGLE_ITEM_ID -->
 
 **Bài 73.** Với v=3t², s(0)=5, tính s(2).
 
@@ -1744,7 +1744,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P15; SOURCE_BLOB: d288679011cf1e21cb4594764f0046eaa1637615; OUTCOME: TOP11-O15; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P15; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O15; SINGLE_ITEM_ID -->
 
 **Bài 78.** Tính diện tích dưới y=√x trên [0,4].
 
@@ -1816,7 +1816,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P16; SOURCE_BLOB: d288679011cf1e21cb4594764f0046eaa1637615; OUTCOME: TOP11-O16; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P16; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O16; SINGLE_ITEM_ID -->
 
 **Bài 83.** Tính S giữa y=|x| và Ox trên [−1,2].
 
@@ -1888,7 +1888,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P17; SOURCE_BLOB: d288679011cf1e21cb4594764f0046eaa1637615; OUTCOME: TOP11-O17; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P17; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O17; SINGLE_ITEM_ID -->
 
 **Bài 88.** Tính diện tích giữa y=x+2 và y=x² trên [0,2].
 
@@ -1960,7 +1960,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P18; SOURCE_BLOB: d288679011cf1e21cb4594764f0046eaa1637615; OUTCOME: TOP11-O18; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P18; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O18; SINGLE_ITEM_ID -->
 
 **Bài 93.** Tính S giữa y=x và y=x² trên [0,2].
 
@@ -1974,7 +1974,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-W04; SOURCE_BLOB: d288679011cf1e21cb4594764f0046eaa1637615; OUTCOME: TOP11-O18; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-W04; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O18; SINGLE_ITEM_ID -->
 
 **Bài 94.** Tính diện tích giới hạn bởi hai đường y=x và y=x² trên đoạn [0,2]. (a) Giải giao điểm. (b) Xác định đường trên từng khoảng. (c) Thiết lập hai tích phân. (d) Tính diện tích và so với tích phân đại số ∫₀²(x−x²)dx.
 
@@ -2055,7 +2055,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P19; SOURCE_BLOB: d288679011cf1e21cb4594764f0046eaa1637615; OUTCOME: TOP11-O19; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P19; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O19; SINGLE_ITEM_ID -->
 
 **Bài 99.** Tính S giữa y=2x và y=x² từ hai điểm giao.
 
@@ -2129,7 +2129,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P20; SOURCE_BLOB: d288679011cf1e21cb4594764f0046eaa1637615; OUTCOME: TOP11-O20; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P20; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O20; SINGLE_ITEM_ID -->
 
 **Bài 104.** Cho thiết diện hình vuông cạnh x+1 trên [0,1], tính V.
 
@@ -2143,7 +2143,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-W05; SOURCE_BLOB: d288679011cf1e21cb4594764f0046eaa1637615; OUTCOME: TOP11-O20; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-W05; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O20; SINGLE_ITEM_ID -->
 
 **Bài 105.** Một khối có thiết diện vuông góc Ox là hình vuông cạnh s(x)=x+1 cm với 0≤x≤2 cm. (a) Nêu diện tích mặt cắt. (b) Thiết lập thể tích. (c) Tính V. (d) Giải thích vì sao không nhân π.
 
@@ -2224,7 +2224,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P21; SOURCE_BLOB: d288679011cf1e21cb4594764f0046eaa1637615; OUTCOME: TOP11-O21; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P21; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O21; SINGLE_ITEM_ID -->
 
 **Bài 110.** Cho r(x)=x trên [0,2], tính V hình tròn cắt vuông góc Ox.
 
@@ -2296,7 +2296,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P22; SOURCE_BLOB: d288679011cf1e21cb4594764f0046eaa1637615; OUTCOME: TOP11-O22; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P22; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O22; SINGLE_ITEM_ID -->
 
 **Bài 115.** Cho miền 0≤x≤2, 0≤y≤√x quay quanh Ox, V?
 
@@ -2310,7 +2310,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-W06; SOURCE_BLOB: d288679011cf1e21cb4594764f0046eaa1637615; OUTCOME: TOP11-O22; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-W06; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O22; SINGLE_ITEM_ID -->
 
 **Bài 116.** Miền 0≤x≤2, x≤y≤2 quay quanh trục Ox. (a) Mô tả bán kính ngoài, trong của tiết diện. (b) Thiết lập công thức vành khăn. (c) Tính thể tích. (d) Nêu vì sao không dùng π∫(2−x)²dx.
 
