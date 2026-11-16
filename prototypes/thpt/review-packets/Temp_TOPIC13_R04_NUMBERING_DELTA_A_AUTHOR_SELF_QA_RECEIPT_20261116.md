@@ -1,0 +1,57 @@
+# CĐ13 R04 — Q18 AUTHOR_SELF_VERIFIED · DELTA_A_UI numbering only · 16/11/2026
+
+**Phạm vi AUTHORING:** kiểm soát đánh số các cấp đầu mục và biểu thị bài luyện theo yêu cầu Owner 16/11/2026. Đây là **DELTA_A_UI** theo nguồn học thuật `7f3e90e5eadcbaa1dc7b49cd6d5136f6dbf61e22` bất biến, không sửa câu hỏi, công thức, điều kiện, đáp án, lời giải, rubric, canonical IDs hay RD1. Không gọi là NotebookLM independent review hoặc RELEASE browser QA.
+
+PACKET_ID: THPT-TOPIC13-PLANAR-SPATIAL-VECTORS-FULL-R01
+CONTENT_REVISION: R04
+STANDARD_ID: SLM-THPT-QUALITY-ONE
+STANDARD_VERSION: 3.1.0
+LEARNING_PATH: TOPIC
+Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
+SOURCE_BLOB: 4ddf62bc1ddca87e550201bb30cb7a88eb69cf7c
+ACADEMIC_SOURCE_BLOB: 4ddf62bc1ddca87e550201bb30cb7a88eb69cf7c
+PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md
+PUBLIC_CANONICAL_BANK_BLOB: d2f4b9fbd11b65ddd0a3190cc4cfbb8569951175
+PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R03_STUDENT_FIRST_52_CANONICAL_VISIBLE_20261116.md
+PREVIOUS_SOURCE_BLOB: 7f3e90e5eadcbaa1dc7b49cd6d5136f6dbf61e22
+PREVIOUS_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC13_R03_AUTHOR_SELF_QA_RECEIPT_20261116.md
+PREVIOUS_Q18_RECEIPT_BLOB: bf040651f959e2559c37662caeb66d31d68b6bf9
+SVG1_BLOB: 55ec9add04cb79da2cad7703b3897271e5b3436a
+SVG2_BLOB: 26e388d873521aa5b0bae945343e69357490ec16
+SVG3_BLOB: 979ca912e99fdadfc4e91ae0edad5db34fc13928
+SVG4_BLOB: 13445da079245a556a08e7a57069d9987097a0be
+DELTA_CLASS: DELTA_A_UI
+AUTHOR_QA_NUMBERING: PASS
+AUTHOR_QA_NUMBERING_H2_H3: NO_GAPS_NO_MIXED_SIBLINGS
+AUTHOR_QA_CANONICAL_PARITY: 52/52 UNCHANGED
+AUTHOR_QA_LESSON_HIERARCHY: 16/16 PASS
+AUTHOR_QA_PUBLIC_SELFCHECK: 16/16 UNCHANGED
+AUTHOR_QA_ANSWER_SOLUTION_RUBRIC_D6: EXACT_LINE_AND_ORDER_PARITY
+ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
+PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
+P0: 0
+P1: 0
+P2: 0
+AUTHOR_SIGNOFF: TOPIC13_R04_NUMBERING_DELTA_A_4ddf62bc1ddca87e550201bb30cb7a88eb69cf7c
+ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
+PRIVATE_RD1_IMPORTED: 0
+OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
+RELEASE_AUTHORIZATION: NO
+
+S1_RECEIPT: Toán 10 KNTT SGK tập1 ChIV B07 trang in46–50, B08 51–54, B09 55–59, B10 60–65, B11 66–70, cuối71–72; SBT B07 45–47, B08 48–50, B09 51–54, B10 55–58, B11 59–65, cuối66–71. SGK Toán 12 KNTT tập1 ChII B06 trang in45–59/PDF47–61, B07 60–66/PDF62–68, B08 67–72/PDF69–74, cuối73–74/PDF75–76; SBT B06 in38–45/PDF36–43, B07 46–49/PDF44–47, B08 50–54/PDF48–52, cuối55–58/PDF53–56. Dựa vào biên bản nguồn SGK lịch sử và Git blob, không tuyên bố mở lại PDF trong R03. G10 original source hiện **nằm trên sibling Draft PR #750**, đã thực đọc chính blob `96b5c95f...` từ nhánh gốc, chưa có trong file tree của PR #841; RELEASE phải kiểm tính khả dụng của phụ thuộc này trên HEAD tích hợp và không được dùng source giả/khác SHA.
+OUTCOME_AUDIT: 16/16 outcome thuộc đúng phạm vi vectơ hình học phẳng/Oxy, vectơ không gian/Oxyz (tính vectơ thuần), không kéo phương trình đường/mặt/mặt cầu từ Chuyên đề khác. Mỗi outcome có WHY, điều kiện/bản chất, Đề Ví dụ độc lập, Lời giải có suy luận, Tự thử và Đối chiếu tự mở, D6. Ba trang Kiến thức/Luyện tập/Tự kiểm tra, không Topic Core.
+MATH_VERIFICATION: 40/40 kiểm toán hình học/đại số trực tiếp: 16 worked examples R03, 16 Topic Practice P01–P16, 4 Written W01–W04 và 4 SVG. Kiểm Chasles, vectơ-không, cùng phương/ngược hướng, cuối−đầu, đường chéo hình hộp, phép cộng/trừ/nhân vectơ, góc và tích vô hướng, Oxy/Oxyz, trọng tâm/trung điểm, độ dời khác quãng đường, công lực không đổi và đơn vị.
+PED_VERIFICATION: 16 Ví dụ độc lập Đề bài/Lời giải bổ sung cho 16 outcome và 16 Tự thử–Đối chiếu sát ý; 52/52 Practice cards có đề/đáp án/lời giải learner-visible, mỗi card có 1 lộ trình sửa sai (32 theo outcome; 20 từ original new items); 4/4 Written có rubric /7; 4 distinct SVG với chú thích hướng đọc tại chỗ.
+CANONICAL_Q15: 52 unique `item_id` =20 G10 original SGK từ sibling PR #750 blob `96b5...` +12 G12 original source `856a...` +20 Topic new bank `d2f4b9fbd11b65ddd0a3190cc4cfbb8569951175`. NEW20 chỉ một source canonical, 20 stem/answer/solution/rubric lấy nguyên từ frozen R02 learner `d351...`; 52 projection checked stem, answer, solution, outcomes, SHA, D6; Anchor là nhãn chứ không có ID thứ hai. Không đặt hàng SGK có source_type TOPIC_NEW hay sửa giá trị Q15 schema; matrix chỉ dùng hai loại `SGK_CANONICAL_REUSE` và `TOPIC_NEW_CANDIDATE`.
+ASSESSMENT_Q16: 16 public selfchecks P01–P16 là đề đã hiện trong Practice (question-only), không feedback/key/hint/rubric/correctness trước tự làm. Không tạo held-out RD1 hoặc chấm độc lập Topic Readiness; CLIENT_SELF_CHECK_NO_MASTERY, không tuyên bố có Final Submit runtime trong Markdown. Những điều kiện Q16 protected submit thuộc RELEASE/website riêng.
+
+## Khóa phạm vi so sánh
+
+- **Cùng 3 trang** `Kiến thức / Luyện tập / Tự kiểm tra`; Mạch/nhóm H2 đánh số 1…N và Bài H3 `1.1…`, mỗi nhóm đánh số cùng cấp, không nhảy, không trộn A/B với 1/2. Metadata kỹ thuật Q15/Q16 không còn chen vào nội dung học sinh của CĐ10–CĐ11.
+- **Cùng canonical**: 52/52 comment ID/source SHA/outcome, đề/đáp án/lời giải/rubric/D6 giữ nguyên từng dòng và thứ tự; 16/16 public selfcheck IDs/text giữ nguyên; toàn bộ `<details>` cân bằng.
+- **Đủ câu và toán:** 40/40 kiểm toán hình học/đại số trực tiếp: 16 worked examples R03, 16 Topic Practice P01–P16, 4 Written W01–W04 và 4 SVG. Kiểm Chasles, vectơ-không, cùng phương/ngược hướng, cuối−đầu, đường chéo hình hộp, phép cộng/trừ/nhân vectơ, góc và tích vô hướng, Oxy/Oxyz, trọng tâm/trung điểm, độ dời khác quãng đường, công lực không đổi và đơn vị. là chứng cứ toán trên snapshot cũ, **được bảo toàn** do so sánh nội dung học thuật bất biến, không nhận vừa chạy lại full numeric QA hoặc người học đã UAT trên snapshot mới.
+- Nguyên tắc kiểm thêm tiểu ý: không có `(b)` trước `(a)` trong câu luyện có đánh dấu tiểu ý; kiểm đếm phân cấp từ đầu mỗi trang/nhóm. Quy tắc dùng chung giữa AUTHORING/RELEASE, không thêm chuẩn Qxx riêng.
+- RELEASE phải QA rendered hierarchy/AP1–AP5 trên Golden, anchor link và responsive; không sửa toán hoặc tự merge/deploy. Nguồn G10 từ Draft PR #750 vẫn là phụ thuộc RELEASE intake trên combined HEAD, chưa giải quyết bằng sửa format.
+
+**Source equivalence là DELTA_A**, không yêu cầu NotebookLM đánh giá lại toàn Chuyên đề; Q18 của snapshot cũ được giữ nguyên và chỉ custody mới được khóa riêng.
