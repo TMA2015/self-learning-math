@@ -13,7 +13,7 @@ const root=path.resolve(__dirname,"..");
 const base=process.env.SLM_CHIV_URL||"http://127.0.0.1:8765";
 const goldenCss="44442773ac31eb1a46f0cab699a7d2c7974a5f37";
 const sources={
- 7:"d48a1b9edaec46480dc70acb519d77edf6008445",
+ 7:"7a8f2b8247b3d9da0a1be9375c6ba1a348bbf11f",
  8:"196976859489744bf10e6c3ad60e8dac7afb2422",
  9:"2529b915e4089862e1a48e685ba5dc88d5450558",
  10:"ceaa76688e73274c9cf2d3116c41c6d4d0ac2726",
@@ -107,6 +107,12 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
          "1.3. Khi muốn lấy hiệu hai vectơ thì đổi chiều mũi tên nào?",
          "1.4. Vì sao tại trung điểm, hai vectơ hướng ra hai đầu triệt tiêu nhau?",
          "1.5. Vì sao tại trọng tâm, ba vectơ hướng tới các đỉnh cân bằng?"
+        ]:lesson===7?[
+         "1.1. Vectơ là gì và vì sao phải xác định điểm đầu–cuối?",
+         "1.2. Độ dài vectơ khác hướng di chuyển thế nào?",
+         "1.3. Vì sao cùng phương vẫn có thể ngược hướng?",
+         "1.4. Hai mũi tên ở hai vị trí khác nhau khi nào bằng nhau?",
+         "1.5. Vì sao quay lại điểm xuất phát tạo ra vectơ-không?"
         ]:["1.1. Cùng tìm hiểu","1.2. Ví dụ trực quan","1.3. Thuật ngữ, kiến thức và kỹ năng"],
        where+" complete concept-first discovery stages");
      assert.equal(await blocks.nth(0).locator("[data-thpt-first-try-id]").count(),
@@ -126,11 +132,11 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
      assert((await blocks.nth(0).locator(":scope > h3").allInnerTexts()).every((v,i)=>v.trim().startsWith("1."+(i+1)+". ")),
       where+" discovery headings are visual-only numbered");
      const examples=await blocks.nth(2).locator(":scope > h3").allInnerTexts();
-     assert.equal(examples.length,lesson===8?4:3,where+" B08 has four distinct worked examples");
-     assert(examples.every((v,i)=>v.trim().startsWith("3."+(i+1)+". Ví dụ "+(i+1)+(lesson===8?" —":". "))),
+     assert.equal(examples.length,[7,8].includes(lesson)?4:3,where+" B07/B08 have four distinct worked examples");
+     assert(examples.every((v,i)=>v.trim().startsWith("3."+(i+1)+". Ví dụ "+(i+1)+([7,8].includes(lesson)?" —":". "))),
       where+" numbered visual example headings");
-     assert.equal(await blocks.nth(2).locator(".thpt-g10-example-solution").count(),lesson===8?4:3,
-      where+" original three solutions grouped in owner Golden panel");
+     assert.equal(await blocks.nth(2).locator(".thpt-g10-example-solution").count(),[7,8].includes(lesson)?4:3,
+      where+" original or enriched solutions grouped in owner Golden panel");
      assert.equal(await article.locator(".thpt-r4-lead").count(),0,where+" no redundant introduction");
      assert.equal(await article.locator(".thpt-r4-footnote").count(),1,where+" only existing source footnote retained");
      assert.equal(await blocks.nth(3).locator(".thpt-r4-footnote").count(),1,where+" source note only on last tab");
@@ -164,9 +170,22 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
       where+" First Try summaries collapsed and normal-size text");
      assert(state.tips.every(x=>!x.open),where+" D6 closed");
      assert(state.cells.every(px=>Math.abs(px-state.body)<.6),where+" table fonts equal body");
-     assert(state.solutions.every(x=>x.bg!=="rgba(0, 0, 0, 0)"&&x.strong===(lesson===8?"Lời giải.":"Giải:")),
+     assert(state.solutions.every(x=>x.bg!=="rgba(0, 0, 0, 0)"&&x.strong===([7,8].includes(lesson)?"Lời giải.":"Giải:")),
       where+" solution panel contains unchanged mathematical solution");
      assert(state.overflow<=3,where+" no whole-page horizontal overflow");
+     if(lesson===7){
+       assert.equal(await article.getAttribute("data-g10-b07-keyboard-tabs"),"true",
+        where+" B07 accessible Left/Right keyboard tabs enabled");
+       const vectorFig=blocks.nth(1).locator('img[src*="THPT_G10_B07_PARALLELOGRAM_EQUAL_OPPOSITE_D5_R01.svg"]');
+       assert.equal(await vectorFig.count(),1,where+" original B07 figure kept with exact SGK equality rule");
+       await labels.nth(1).click();await vectorFig.scrollIntoViewIfNeeded();
+       await vectorFig.evaluate(async el=>{if(el.decode)await el.decode()});
+       assert(await vectorFig.evaluate(el=>el.complete&&el.naturalWidth>0),where+" B07 original figure decodes");
+       await labels.nth(0).focus();await page.keyboard.press("ArrowRight");
+       const radios=tabbed.locator(':scope > input[type="radio"]');
+       assert(await radios.nth(1).isChecked(),where+" B07 arrow right activates tab 2");
+       await page.keyboard.press("ArrowLeft");assert(await radios.nth(0).isChecked(),where+" B07 arrow left returns to tab 1");
+     }
      if(lesson===8){
        assert.equal(await article.getAttribute("data-g10-b08-keyboard-tabs"),"true",
         where+" B08 route-only keyboard navigation");
