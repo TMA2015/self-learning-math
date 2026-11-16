@@ -73,7 +73,10 @@ function checkSHA(){
       "prototypes/thpt/ux795/G10_CHIII_B06_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md"),"utf8");
     const field=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
     assert.equal(field("BASELINE_LESSON_GIT_BLOB"),sha,"B06 frozen original source blob");
-    assert.equal(hash(data),field("CANDIDATE_LESSON_GIT_BLOB"),"B06 exact new Q18 academic candidate");
+    const follow=fs.readFileSync(path.join(root,"prototypes/thpt/ux795/G10_CHIII_B06_PED_REFERENCE_ANCHOR_R02_20261116.md"),"utf8");
+     const r02=k=>follow.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+     assert.equal(r02("R01_APPROVED_SOURCE_BLOB"),field("CANDIDATE_LESSON_GIT_BLOB"),"B06 immutable R01 predecessor");
+     assert.equal(hash(data),r02("R02_CORRECTED_SOURCE_BLOB"),"B06 final owner P2 clarity correction exact Q18");
   }else if(p==="docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"){
    const b01=fs.readFileSync(path.join(root,
     "prototypes/thpt/ux795/G10_CHI_B01_DEFINITION_COLOR_UI_DELTA_A_20261116.md"),"utf8");
