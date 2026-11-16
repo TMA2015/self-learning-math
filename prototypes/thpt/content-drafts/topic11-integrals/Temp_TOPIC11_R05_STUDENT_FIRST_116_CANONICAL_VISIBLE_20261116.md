@@ -1,5 +1,6 @@
 <!-- AUTHORING CĐ11 R05 student-first candidate; historical R04 Git blob 3b998d76120485502e33c5d5d131210d1f7ef444 preserved immutable; source/receipt must be locked before handoff. -->
 <!-- STANDARD_ID=SLM-THPT-QUALITY-ONE; STANDARD_VERSION=3.1.0; LEARNING_PATH=TOPIC; OUTER_PAGES=Kiến thức|Luyện tập|Tự kiểm tra; SOURCE_REVISION=R05 -->
+<!-- ORIGINAL88_SGK_BLOB=45722cd386a498f3e0e96a09928c85565af56d1b; ORIGINAL88_INDEX_BLOB=672fdce0c02ebf4f6ae6b37b331ca59e259d9b5c; NEW28_ACTIVE_R05_BLOB=6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0 -->
 # CĐ11 — Nguyên hàm, tích phân và ứng dụng hình học
 
 # Kiến thức
@@ -2305,7 +2306,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Lời giải:** Quay vùng 0≤y≤√x, 0≤x≤2 quanh Ox: tiết diện là đĩa bán kính √x. Diện tích A(x)=π(√x)²=πx; V=π∫₀²x dx=π[x²/2]₀²=2π đơn vị³.
 
-**Nếu làm sai:** Nếu lấy V=8π, bạn đã thế cận x=4 của ví dụ kiến thức thay vì x=2 trong chính đề bài. Luôn đọc lại cận hiện tại.
+**Nếu làm sai:** Nếu được 8π, em hãy kiểm lại cả diện tích lát cắt và bước thế cận: A(x)=π(√x)²=πx, nên V=π[x²/2]₀²=2π. Không dùng cận hay kết quả của ví dụ khác.
 
 </details>
 
