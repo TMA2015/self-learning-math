@@ -68,8 +68,17 @@ const cases=[
            await label.click();
            if(await frame.isVisible()){selected=name;break;}
          }
-         assert.equal(selected,"Kiến thức SGK",
-           "B"+item.lesson+" original D5 SVG figure "+idx+" must be visible when learner selects Knowledge tab");
+         // B08 owner Q18 R02 intentionally moves the unchanged triangle/
+         // parallelogram D5 SVG into discovery, before introducing rules.
+         // B07/B10 retain their existing SGK figure placement.
+         const owningTab=item.lesson===8?"Khám phá kiến thức":"Kiến thức SGK";
+         assert.equal(selected,owningTab,
+           "B"+item.lesson+" original D5 SVG figure "+idx+" must be visible in approved "+owningTab+" tab");
+         if(item.lesson===8){
+           assert.equal(await figures.count(),1,"B08 keeps exactly one original D5 figure");
+           assert((await figure.getAttribute("src"))?.includes("THPT_G10_B08_TRIANGLE_PARALLELOGRAM_SUM_D5_R01.svg"),
+             "B08 discovery must render the exact original source-matched D5 SVG");
+         }
        }
        assert(await frame.isVisible(),"B"+item.lesson+" original SVG figure container "+idx+" must be visible in selected tab");
        await frame.scrollIntoViewIfNeeded();
