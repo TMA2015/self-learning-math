@@ -97,24 +97,24 @@
 
     #### 2.2.2. Khoảng, đoạn và nửa khoảng trên trục số
 
-    Khi tập hợp chứa vô số số thực, liệt kê từng số là không thể. Ta dùng **khoảng** hoặc **đoạn** để viết ngắn gọn. Ví dụ: \([1,4]\) là tất cả các số thực \(x\) thỏa \(1\le x\le4\); còn \((1,4)\) là những số thỏa \(1<x<4\).
+    Khi tập hợp chứa vô số số thực, liệt kê từng số là không thể. Ta dùng **khoảng** hoặc **đoạn** để viết ngắn gọn. Ví dụ: \([1;4]\) là tất cả các số thực \(x\) thỏa \(1\le x\le4\); còn \((1;4)\) là những số thỏa \(1<x<4\).
 
     - Ngoặc vuông **[ ]** tại một đầu mút nghĩa là **lấy** đầu mút đó.
     - Ngoặc tròn **( )** nghĩa là **không lấy** đầu mút.
-    - \([a,b)\) chỉ lấy \(a\), không lấy \(b\); \((a,b]\) chỉ lấy \(b\).
+    - \([a;b)\) chỉ lấy \(a\), không lấy \(b\); \((a;b]\) chỉ lấy \(b\).
     - Khi có \(+\infty\) hoặc \(-\infty\), luôn dùng ngoặc tròn ở phía vô cực vì vô cực **không phải một số thực** để lấy làm đầu mút.
 
     Để tìm giao hoặc hợp hai khoảng, em hãy hình dung cả hai trên **cùng một trục số**. Giao là phần được tô ở cả hai tập; hợp là những điểm được tô ở ít nhất một tập. Cẩn thận kiểm riêng từng đầu mút: một sai khác giữa \(<\) và \(\le\) có thể làm kết quả thay đổi.
 
     <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ:</strong> Đừng chọn ngoặc bằng cảm giác. Tại mỗi đầu mút, hãy hỏi: “Giá trị này có thỏa điều kiện của tập kết quả không?”</div>
 
-    **Vận dụng.** Cho \(X=(-2,4]\), \(Y=[1,6)\). Tìm \(X\cap Y\), \(X\cup Y\); kiểm xem các số 1, 4 và 6 có thuộc từng kết quả không.
+    **Vận dụng.** Cho \(X=(-2;4]\), \(Y=[1;6)\). Tìm \(X\cap Y\), \(X\cup Y\); kiểm xem các số 1, 4 và 6 có thuộc từng kết quả không.
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY10" hidden></span>
 
     ??? question "Mở đối chiếu sau khi tự làm"
 
-        \(X\cap Y=[1,4]\), gồm 1 và 4 nhưng không có 6. \(X\cup Y=(-2,6)\), gồm 1 và 4 nhưng không có 6; cũng không có \(-2\).
+        \(X\cap Y=[1;4]\), gồm 1 và 4 nhưng không có 6. \(X\cup Y=(-2;6)\), gồm 1 và 4 nhưng không có 6; cũng không có \(-2\).
 
 
     ### 2.3. Các phép toán trên tập hợp
@@ -221,23 +221,23 @@
 
     ### 3.2. Ví dụ 2 — Giao, hợp và hiệu của hai khoảng
 
-    **Đề bài.** Cho \(A=(-3,2]\), \(B=[0,5)\). Tìm \(A\cap B\), \(A\cup B\) và \(A\setminus B\).
+    **Đề bài.** Cho \(A=(-3;2]\), \(B=[0;5)\). Tìm \(A\cap B\), \(A\cup B\) và \(A\setminus B\).
 
     **Phân tích.** Mỗi tập là một khoảng trên trục số, nên ta xác định phần **chồng lên nhau**, phần **được phủ bởi ít nhất một tập** và phần **chỉ còn lại trong A**. Quyết định lấy hay bỏ đầu mút sau khi kiểm điều kiện, không đoán qua dấu ngoặc.
 
-    **Lời giải.** Những số nằm đồng thời trong A và B là các số thỏa \(0\le x\le2\), nên \(A\cap B=[0,2]\). Vì hai khoảng có chung phần \([0,2]\), lấy tất cả phần thuộc ít nhất một khoảng cho \(A\cup B=(-3,5)\). Cuối cùng, từ A bỏ các số có trong B, tức bỏ đoạn \([0,2]\), ta còn \(A\setminus B=(-3,0)\).
+    **Lời giải.** Những số nằm đồng thời trong A và B là các số thỏa \(0\le x\le2\), nên \(A\cap B=[0;2]\). Vì hai khoảng có chung phần \([0;2]\), lấy tất cả phần thuộc ít nhất một khoảng cho \(A\cup B=(-3;5)\). Cuối cùng, từ A bỏ các số có trong B, tức bỏ đoạn \([0;2]\), ta còn \(A\setminus B=(-3;0)\).
 
     **Kiểm lại.** Số \(0\) thuộc B nên **không** thuộc \(A\setminus B\). Số \(2\) nằm trong giao vì cả A và B đều chứa 2. Hai đầu mút \(-3\) và \(5\) đều không nằm trong hợp.
 
     ### 3.3. Ví dụ 3 — Giải bài toán đếm bằng sơ đồ Venn
 
-    **Đề bài.** Lớp có 40 học sinh; 23 học Tiếng Anh, 25 học Toán, 12 học cả hai. Hỏi có bao nhiêu bạn chỉ học một môn và bao nhiêu bạn không học môn nào?
+    **Đề bài.** Một lớp có 36 học sinh. Có 21 bạn tham gia CLB Đọc sách, 20 bạn tham gia CLB Khoa học và 8 bạn tham gia cả hai. Hỏi bao nhiêu bạn tham gia đúng một câu lạc bộ và bao nhiêu bạn không tham gia câu lạc bộ nào?
 
-    **Phân tích.** Cộng \(23+25\) sẽ đếm 12 bạn học cả hai **hai lần**. Sơ đồ Venn ở phần 2.4 cho thấy ngay phần phải trừ.
+    **Phân tích.** Nếu cộng \(21+20\), tám bạn thuộc cả hai nhóm bị đếm hai lần. Ta tìm từng vùng riêng rồi lấy tổng sĩ số trừ phần tham gia ít nhất một nhóm. Đây là dữ kiện mới, không dùng kết quả của hình minh họa 40 học sinh.
 
-    **Lời giải theo vùng.** Chỉ Anh: \(23-12=11\). Chỉ Toán: \(25-12=13\). Học đúng một môn: \(11+13=24\). Học ít nhất một môn: \(11+12+13=36\). Không học môn nào: \(40-36=4\).
+    **Lời giải.** Chỉ Đọc sách: \(21-8=13\) (bạn). Chỉ Khoa học: \(20-8=12\) (bạn). Tham gia đúng một CLB: \(13+12=25\) (bạn). Tham gia ít nhất một CLB: \(13+8+12=33\) (bạn). Không tham gia CLB nào: \(36-33=3\) (bạn).
 
-    **Kiểm lại.** Bốn miền \(11+12+13+4=40\), khớp sĩ số ban đầu. Đây chính là các giá trị trong **hình ở phần 2.4**, không phải lời giải của bài 32 học sinh ở trên.
+    **Kiểm lại.** Bốn vùng không chồng nhau có \(13+8+12+3=36\), đúng sĩ số lớp. Không dùng số liệu của hình minh họa 40 học sinh ở mục 2.3.2.
 
 === "Lỗi thường gặp"
 
@@ -267,13 +267,11 @@
 
     ??? tip "4.3. Sai ngoặc tròn/vuông ở đầu mút của khoảng và đoạn"
 
-        **Dấu hiệu:** Viết \((1,4)\) thay cho \([1,4]\), hoặc lấy \(6\) vào \((-2,6)\).
+        **Dấu hiệu:** Viết \((1;4)\) thay cho \([1;4]\), hoặc lấy \(6\) vào \((-2;6)\).
 
         **Tự sửa:** Trở lại 2.2.2, chuyển từng khoảng thành điều kiện \(<,\le,>,\ge\). Kiểm riêng 1, 4, 6 trên từng tập trước khi viết ký hiệu khoảng. Sau đó làm lại câu “Vận dụng” tại 2.2.2 bằng cách tự mở đối chiếu.
 
 
     **Tiếp tục tự học:** [Core và Luyện tập Chương I](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md) · [Tự luận Chương I](../../thu-vien/tu-luan-chuong-i.md).
 
-    <p class="thpt-r4-footnote">Nguồn kiến thức: SGK Toán 10 · Kết nối tri thức với cuộc sống · tập một · Bài 2. Phần giải thích và ví dụ hỗ trợ tự học do SLM biên tập.</p>
-
-<p class="thpt-r4-footnote">Nguồn: SGK Toán 10 KNTT tập 1, Bài 2 trang 12–19; SBT Bài 2 trang 8–11. Học liệu tự luyện không dùng làm bài đánh giá độc lập.</p>
+    <p class="thpt-r4-footnote">Đối chiếu SGK Toán 10 · Kết nối tri thức với cuộc sống · tập một · Bài 2 (trang in 12–19). Lời giảng, hình và ví dụ bổ trợ do SLM biên tập; hoạt động tự đối chiếu không ghi Mastery.</p>
