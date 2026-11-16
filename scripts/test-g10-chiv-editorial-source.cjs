@@ -115,8 +115,8 @@ for(const [lesson,row] of rows){
  }else{
   assert(["B07","B08"].includes(lesson),"Only source-locked B07/B08 enrichment skips legacy TeX reorder check");
   if(lesson==="B07"){
-   for(const formula of ["|\\\\overrightarrow{AB}|=AB\\\\ge0",
-    "\\\\overrightarrow{AB}=\\\\overrightarrow{DC}","\\\\overrightarrow{AA}=\\\\vec0"])
+   for(const formula of ["|\\overrightarrow{AB}|=AB\\ge0",
+    "\\overrightarrow{AB}=\\overrightarrow{DC}","\\overrightarrow{AA}=\\vec0"])
     assert(official.includes(formula),"B07 original required SGK mathematics preserved: "+formula);
   }else{
   for(const required of [
