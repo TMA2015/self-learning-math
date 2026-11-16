@@ -44,7 +44,9 @@
 
     #### 2.1.1. Dạng tổng quát và điều kiện hệ số
 
-    Một bất phương trình bậc nhất hai ẩn \(x,y\) có thể viết dưới một trong bốn dạng:
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Bất phương trình bậc nhất hai ẩn:</strong> Là bất phương trình dạng \(ax+by<c\), \(ax+by\le c\), \(ax+by>c\) hoặc \(ax+by\ge c\), với \(a,b,c\in\mathbb R\), \(a,b\) không đồng thời bằng \(0\).</div>
+
+    **Bốn dạng được viết tương ứng:**
 
     \[
     ax+by<c,\qquad ax+by\le c,\qquad ax+by>c,\qquad ax+by\ge c,
@@ -54,18 +56,20 @@
 
     <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ:</strong> Kiểm bậc của từng biến và điều kiện \((a,b)\ne(0,0)\). Một hệ số bằng 0 vẫn được; cả hai bằng 0 thì không còn bất phương trình bậc nhất hai ẩn.</div>
 
-    **Vận dụng.** Trong ba biểu thức (a) \(2x-3y<6\); (b) \(xy\le6\); (c) \(0x+0y\le4\), biểu thức nào là bất phương trình bậc nhất hai ẩn? Giải thích.
+    **Vận dụng.** Xét bốn biểu thức mới: (a) \(3(x-2y)\le9\); (b) \(x^2-y\le7\); (c) \(0x+0y\le10\); (d) \(0x+5y>10\). Những biểu thức nào là bất phương trình bậc nhất hai ẩn? Với mỗi biểu thức hợp lệ, hãy đưa về dạng \(ax+by\le c\) (hoặc \(<,>,\ge\)) và chỉ ra hệ số \(a,b\).
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY01" data-outcome-id="G10-B03-LINEAR_INEQUALITY" data-thpt-help-ref="HELP-G10-B03-02" hidden></span>
 
     ??? question "Em đã tự làm? Mở lời giải để đối chiếu"
 
-        **Chỉ (a)** đúng dạng vì các biến ở bậc nhất và hai hệ số \(2,-3\) không đồng thời bằng 0. (b) chứa tích \(xy\); (c) có cả hai hệ số bằng 0. Nếu nhầm, quay lại điều kiện trong khung “Kiến thức cần nhớ”.
+        **(a) và (d)** hợp lệ. Với (a): \(3x-6y\le9\), nên \(a=3,b=-6\). Với (d): \(0x+5y>10\), nên \(a=0,b=5\), vẫn hợp lệ vì hai hệ số không cùng bằng \(0\). (b) chứa \(x^2\), không còn bậc nhất; (c) có \(a=b=0\) nên chỉ còn một bất đẳng thức giữa các hằng số. Nếu nhầm, quay lại điều kiện trong khung “Khái niệm”.
 
 
     #### 2.1.2. Cặp nghiệm: kiểm bằng phép thế
 
-    Một **cặp nghiệm** \((x_0,y_0)\) là cặp số thực làm cho bất phương trình trở thành một phát biểu **đúng** sau khi thay \(x=x_0\), \(y=y_0\). Muốn biết một điểm có thuộc miền nghiệm hay không, phải thay **cả hai** tọa độ rồi so với dấu bất phương trình.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Cặp nghiệm:</strong> Cặp số thực \((x_0,y_0)\) là nghiệm nếu thay \(x=x_0\), \(y=y_0\) vào bất phương trình cho một bất đẳng thức <em>đúng</em>.</div>
+
+    **Cách kiểm:** Thay cả hai tọa độ, tính vế trái và so với ngưỡng. Nếu dấu có bằng (\(\le,\ge\)), điểm cho kết quả đúng bằng ngưỡng cũng được nhận.
 
     Xét \(x+2y\le6\):
 
@@ -81,20 +85,24 @@
 
     <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ:</strong> Điểm \((x_0,y_0)\) là nghiệm khi và chỉ khi phép thế đầy đủ hai tọa độ cho một bất đẳng thức đúng. Dấu \(<\) và \(\le\) khác nhau tại các điểm trên đường biên.</div>
 
-    **Vận dụng.** Với \(x+2y\le6\), trong \(A(2,2)\), \(B(3,2)\), \(C(0,0)\), những điểm nào là nghiệm? Điểm nào nằm đúng trên đường biên?
+    **Vận dụng.** Với \(2x-y\le3\), hãy tự xét ba điểm mới \(P(1,-1)\), \(Q(2,-1)\), \(R(0,0)\). Điểm nào là nghiệm, điểm nào nằm đúng trên đường biên, và điểm nào nằm ngoài miền nghiệm? Giải thích bằng phép thế.
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY02" data-outcome-id="G10-B03-POINT_TEST" data-thpt-help-ref="HELP-G10-B03-01" hidden></span>
 
     ??? question "Mở đáp án sau khi tự kiểm tra"
 
-        **A và C** là nghiệm. A nằm trên biên vì \(2+2\cdot2=6\); B không là nghiệm vì \(3+2\cdot2=7>6\). C nằm trong miền vì \(0\le6\).
+        **P và R** là nghiệm. Điểm \(P\): \(2\cdot1-(-1)=3\), bằng ngưỡng nên nằm trên đường biên được lấy. Điểm \(Q\): \(2\cdot2-(-1)=5>3\), không là nghiệm. Điểm \(R\): \(0\le3\), là nghiệm phía trong miền. Đây là những dữ liệu khác với bảng minh họa \(x+2y\le6\).
 
 
     ### 2.2. Biểu diễn miền nghiệm của bất phương trình bậc nhất hai ẩn trên mặt phẳng tọa độ
 
     #### 2.2.1. Đường biên: khi nào lấy, khi nào không lấy?
 
-    Từ bất phương trình \(ax+by\le c\), hãy tạm thay dấu \(\le\) bằng dấu bằng. Ta được đường thẳng
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Miền nghiệm:</strong> Trên mặt phẳng tọa độ \(Oxy\), miền nghiệm là tập hợp các điểm \(M(x,y)\) có tọa độ thỏa mãn bất phương trình đã cho.</div>
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Đường biên:</strong> Đường thẳng \(d:ax+by=c\) là đường biên; dấu \(\le,\ge\) nhận cả điểm trên biên (nét liền), dấu \(<,>\) loại điểm trên biên (nét đứt).</div>
+
+    Để tìm đường biên, thay dấu \(\le\) của \(ax+by\le c\) bằng dấu bằng. Ta được đường thẳng
 
     \[
     d:ax+by=c.
