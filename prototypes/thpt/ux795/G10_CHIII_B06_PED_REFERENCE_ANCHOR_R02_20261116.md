@@ -32,3 +32,5 @@
 **QA status at authoring:** old-source/new-source receipt SHA verified, original Q15 public questions unchanged, mathematics statements manually checked, 11 local reference/definition replacements only, no CSS/JS assets or hidden assessment source changed. `ACADEMIC_SELF_QA_P0=0`; `ACADEMIC_SELF_QA_P1=0` for this narrow corrective scope. **CI exact-HEAD browser/QA and owner P2 recheck remain pending**; do not mark accepted/deploy before evidence. Owner's earlier B06 95% feedback is not a P2 PASS.
 
 **GATE:** `B06_PED_PRECISION_R02_RELEASE_QA_PENDING`.
+
+**CANONICAL_FULL_ITEM_ID_RECEIPT:** `THPT-G10-CHIII-TRY06`, `THPT-G10-CHIII-TRY07`, `THPT-G10-CHIII-TRY08`, `THPT-G10-CHIII-TRY09`, `THPT-G10-CHIII-TRY10`. Exactly one existing Knowledge placement per ID; no content changes to question/answer or role.
