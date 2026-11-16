@@ -41,12 +41,19 @@
 
     ### 2.1. Các khái niệm cơ bản về tập hợp
 
-    Một tập hợp được xác định bởi các phần tử của nó. Có thể viết tập bằng **cách liệt kê**, ví dụ \(A=\{2,4\}\), hoặc **cách nêu tính chất đặc trưng**, chẳng hạn \(C=\{x\in\mathbb N\mid x<5\}\); khi dùng cách thứ hai phải nói rõ miền xét và quy ước về \(\mathbb N\) nếu cần.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Tập hợp và phần tử:</strong> Tập hợp là một nhóm các đối tượng xác định; mỗi đối tượng trong nhóm là một phần tử của tập. Thứ tự liệt kê và việc lặp một phần tử không làm thay đổi tập hợp.</div>
 
-    - \(x\in A\): \(x\) là một **phần tử** của \(A\). \(x\notin A\): \(x\) không là phần tử của \(A\).
-    - \(A\subseteq B\): **mọi** phần tử thuộc \(A\) đều thuộc \(B\). Để kiểm tra, em xét lần lượt các phần tử của tập đứng trước.
-    - \(A=B\) khi \(A\subseteq B\) **và** \(B\subseteq A\). Một chiều chưa đủ để kết luận hai tập bằng nhau.
-    - \(\varnothing\) là tập không chứa phần tử nào; \(\varnothing\subseteq A\) và \(A\subseteq A\) với mọi tập \(A\).
+    **Hai cách mô tả tập hợp.** Có thể **liệt kê** các phần tử, ví dụ \(A=\{2,4\}\), hoặc **nêu tính chất đặc trưng**, chẳng hạn \(C=\{x\in\mathbb N\mid x<5\}\). Theo SGK \(\mathbb N=\{0,1,2,\ldots\}\), nên \(C=\{0,1,2,3,4\}\). Luôn nêu đúng miền xét.
+
+    **Kí hiệu phần tử.** \(x\in A\) nghĩa là \(x\) thuộc tập \(A\); \(x\notin A\) nghĩa là \(x\) không thuộc \(A\).
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Tập con:</strong> \(A\subseteq B\) khi <em>mọi</em> phần tử của \(A\) cũng thuộc \(B\). Mọi tập đều là tập con của chính nó.</div>
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Hai tập hợp bằng nhau:</strong> \(A=B\) khi \(A\subseteq B\) và \(B\subseteq A\): hai tập chứa đúng cùng những phần tử.</div>
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Tập rỗng:</strong> \(\varnothing\) là tập không có phần tử nào; \(\varnothing\subseteq A\) với mọi tập \(A\).</div>
+
+    **Phân biệt.** \(2\in A\) nói về một phần tử; \(\{2\}\subseteq A\) nói về quan hệ giữa hai tập. Một tập có thể là phần tử của tập khác, nhưng phải kiểm các đối tượng thực sự được liệt kê.
 
     <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ:</strong> “Thuộc” (\(\in\)) dùng để nói về <em>phần tử</em>; “là tập con” (\(\subseteq\)) dùng để nói về <em>quan hệ giữa hai tập</em>. Hai tập bằng nhau phải có đúng các phần tử như nhau.</div>
 
@@ -116,7 +123,13 @@
 
     Hãy nhớ lại hai câu lạc bộ. Nếu hỏi “ai tham gia **cả hai** câu lạc bộ?”, ta lấy **giao**. Nếu hỏi “ai tham gia **ít nhất một** câu lạc bộ?”, ta lấy **hợp**. Nếu hỏi “ai chỉ thuộc nhóm Toán mà không thuộc nhóm Tiếng Anh?”, ta lấy **hiệu** theo đúng thứ tự hai tập.
 
-    Với hai tập \(A,B\), các định nghĩa chuẩn là:
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Giao:</strong> \(A\cap B\) gồm các phần tử thuộc <em>cả hai</em> tập \(A,B\).</div>
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Hợp:</strong> \(A\cup B\) gồm các phần tử thuộc <em>ít nhất một</em> trong hai tập.</div>
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Hiệu:</strong> \(A\setminus B\) gồm các phần tử thuộc \(A\) nhưng không thuộc \(B\); không tự ý đảo chiều.</div>
+
+    **Viết bằng tính chất phần tử.** Với hai tập \(A,B\), ta có:
 
     \[
     A\cap B=\{x\mid x\in A\ \text{và}\ x\in B\},
@@ -132,7 +145,9 @@
 
     Chữ **hoặc** trong phép hợp có nghĩa là *ít nhất một trong hai*, kể cả khi \(x\) thuộc cả hai tập. Phép hiệu không đổi chỗ được tùy ý: \(A\setminus B\) và \(B\setminus A\) có thể khác nhau.
 
-    Một câu hỏi khác là “ai **không** thuộc nhóm \(A\)?”. Để trả lời, phải biết đang xét trong **cả lớp**, **cả trường** hay một phạm vi khác. Gọi phạm vi đó là tập vũ trụ \(U\), với \(A\subseteq U\), thì **phần bù** của \(A\) trong \(U\) chính là \(U\setminus A\). Không có \(U\), câu “không thuộc A” chưa xác định đủ phạm vi để liệt kê phần bù.
+    Một câu hỏi khác là “ai **không** thuộc nhóm \(A\)?”. Phải biết đang xét trong **cả lớp**, **cả trường** hay phạm vi khác. Gọi phạm vi đó là tập vũ trụ \(U\), với \(A\subseteq U\).
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Phần bù:</strong> Khi \(A\subseteq U\), phần bù của \(A\) trong \(U\) là \(U\setminus A\), gồm các phần tử thuộc \(U\) nhưng không thuộc \(A\). Phải xác định rõ tập làm phạm vi.</div>
 
     <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ:</strong> Giao là “và”, hợp là “hoặc”, hiệu là “thuộc tập trước nhưng không thuộc tập sau”. Phần bù là hiệu so với một tập vũ trụ đã xác định.</div>
 
@@ -165,7 +180,9 @@
 
     #### 2.3.2. Biểu đồ Ven và cách đếm không trùng
 
-    Khi số lượng phần tử lớn, sơ đồ Venn giúp em **nhìn rõ bốn vùng không chồng lấn**: chỉ thuộc \(A\), thuộc cả \(A\) và \(B\), chỉ thuộc \(B\), và ở ngoài cả hai trong tập vũ trụ \(U\). Đây không phải bốn tập luôn có phần tử; có vùng có thể rỗng.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Biểu đồ Ven:</strong> Biểu đồ Ven dùng các miền hình để biểu diễn tập hợp và các phép toán. Với hai tập \(A,B\) trong \(U\), ta đọc bốn vùng: chỉ \(A\), cả \(A\) và \(B\), chỉ \(B\), ngoài cả hai. Một số vùng có thể rỗng.</div>
+
+    **Đọc hình.** Nhìn vùng giao trước, sau đó đến hai vùng riêng và phần ngoài. Không suy từ diện tích hình vẽ ra số lượng phần tử; phải dùng số liệu đã cho.
 
     Với hai tập hữu hạn, nếu cộng \(n(A)+n(B)\), mọi phần tử thuộc giao đã bị đếm **hai lần**. Vì vậy, muốn biết số phần tử của hợp, phải trừ đi một lần số phần tử ở giao:
 
