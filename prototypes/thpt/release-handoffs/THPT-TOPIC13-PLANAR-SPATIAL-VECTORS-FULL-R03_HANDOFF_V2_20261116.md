@@ -1,6 +1,6 @@
 # CĐ13 — Vectơ hình học phẳng và không gian · AUTHORING HANDOFF V2 R03
 
-**New narrow PLAN22-13 unit:** exactly three independent student pages Kiến thức / Luyện tập / Tự kiểm tra, no Topic Core and no SGK body duplication. This is a source-locked A1–A7 authoring handoff, not a released site feature or new independent NotebookLM verdict.
+**New narrow PLAN22-13 unit:** exactly three independent student pages Kiến thức / Luyện tập / Tự kiểm tra, no Topic Core and no extra SGK canonical item (32 exact source projections are learner-visible). This is a source-locked A1–A7 authoring handoff, not a released site feature or new independent NotebookLM verdict.
 
 PACKET_ID: THPT-TOPIC13-PLANAR-SPATIAL-VECTORS-FULL-R01
 CONTENT_REVISION: R03
