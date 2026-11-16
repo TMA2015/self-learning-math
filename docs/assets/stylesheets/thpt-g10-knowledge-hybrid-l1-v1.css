@@ -441,3 +441,18 @@
   border-left-color: #76dfc7;
   color: #e9fff7;
 }
+
+/* G10 ChIII B05 · scoped S1 formal concept vs amber memory.
+ * Apply only to Knowledge with B05 canonical TRY01; B01–B04 unaffected. */
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden:has([data-thpt-first-try-id="THPT-G10-CHIII-TRY01"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card {
+  background: #e8f7f2;
+  border-color: #a9dccc;
+  border-left-color: #087d69;
+  color: #174137;
+}
+[data-md-color-scheme="slate"] .md-typeset.thpt-g10-knowledge-ap1.thpt-g10-first-six-golden:has([data-thpt-first-try-id="THPT-G10-CHIII-TRY01"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card {
+  background: #193d36;
+  border-color: #447e70;
+  border-left-color: #76dfc7;
+  color: #e9fff7;
+}

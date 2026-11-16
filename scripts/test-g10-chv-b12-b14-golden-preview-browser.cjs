@@ -49,7 +49,15 @@ const blob=data=>{
    "/prototypes/thpt/ux795/G10_CHII_B04_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md","utf8");
   const b04field=k=>b04receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(b04field("BASELINE_CSS_GIT_BLOB"),b03candidate,"B04 CSS must extend exact approved B03 CSS");
-  assert.equal(blob(css),b04field("CANDIDATE_CSS_GIT_BLOB"),"B04 scoped CSS must match Q18 without changing ChV theme");
+  const b05receipt=fs.readFileSync(root+
+   "/prototypes/thpt/ux795/G10_CHIII_B05_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md","utf8");
+  const b05field=k=>b05receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(b05field("BASELINE_CSS_GIT_BLOB"),b04field("CANDIDATE_CSS_GIT_BLOB"),
+   "B05 CSS extends exact accepted B04 CSS");
+  assert.equal(blob(css),b05field("CANDIDATE_CSS_GIT_BLOB"),
+   "B05 scoped CSS follows source receipt, ChV unchanged");
+  assert(css.toString("utf8").includes('data-thpt-first-try-id="THPT-G10-CHIII-TRY01"'),
+   "B05 concept colors only on B05");
   assert(css.toString("utf8").includes(':has([data-thpt-first-try-id="THPT-G10-CHII-TRY06"])'),
    "B04 definition colors must only target canonical B04 Knowledge");
  assert(css.toString("utf8").includes(':has([data-thpt-first-try-id="THPT-G10-CHI-TRY06"])'),
