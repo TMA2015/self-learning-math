@@ -39,7 +39,7 @@ for(const [chapter,nums] of Object.entries(listed))for(const num of nums){
      assert.equal(new Set(ids).size,6,"B02 no duplicate Q15 First Try");
      assert(ids.every(id=>/^THPT-G10-CHI-TRY(0[6-9]|1[01])$/.test(id)),"B02 only six original canonical IDs");
      assert.equal((source.match(/data-thpt-help-id=/g)||[]).length,3,"B02 three original D6 remediation IDs");
-     for(const name of ["\\\\mathbb N","\\\\mathbb Z","\\\\mathbb Q","\\\\mathbb R",
+     for(const name of ["mathbb N","mathbb Z","mathbb Q","mathbb R",
        "G10_B02_NUMBER_SETS_INCLUSION_S1_R01.svg","#### 2.2.2.","#### 2.3.2."])
        assert(source.includes(name),"B02 S1 number-set theory or diagram missing "+name);
      assert.equal((source.match(/thpt-r4-concept-card/g)||[]).length,13,"B02 thirteen explicitly labeled S1 concepts");
