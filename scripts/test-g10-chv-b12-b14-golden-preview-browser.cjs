@@ -45,7 +45,13 @@ const blob=data=>{
  const b03baseline=b03.match(/^\*\*BASELINE_CSS_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
  const b03candidate=b03.match(/^\*\*CANDIDATE_CSS_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
  assert.equal(b03baseline,d,"B03 CSS must build on exact accepted B02 Golden candidate");
- assert.equal(blob(css),b03candidate,"Only Q18 source-locked B03 CSS may extend ChV Golden shell");
+ const b04receipt=fs.readFileSync(root+
+   "/prototypes/thpt/ux795/G10_CHII_B04_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md","utf8");
+  const b04field=k=>b04receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(b04field("BASELINE_CSS_GIT_BLOB"),b03candidate,"B04 CSS must extend exact approved B03 CSS");
+  assert.equal(blob(css),b04field("CANDIDATE_CSS_GIT_BLOB"),"B04 scoped CSS must match Q18 without changing ChV theme");
+  assert(css.toString("utf8").includes(':has([data-thpt-first-try-id="THPT-G10-CHII-TRY06"])'),
+   "B04 definition colors must only target canonical B04 Knowledge");
  assert(css.toString("utf8").includes(':has([data-thpt-first-try-id="THPT-G10-CHI-TRY06"])'),
   "B02 CSS may not accidentally recolor any ChV page");
  assert(css.toString("utf8").includes(':has([data-thpt-first-try-id="THPT-G10-CHII-TRY01"])'),

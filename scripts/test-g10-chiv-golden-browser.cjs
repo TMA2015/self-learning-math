@@ -39,7 +39,13 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
  const b03base=b03receipt.match(/^\*\*BASELINE_CSS_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
  const b03candidate=b03receipt.match(/^\*\*CANDIDATE_CSS_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
  assert.equal(b03base,b02Candidate,"B03 extends exact B02 Golden CSS candidate");
- assert.equal(blob(cssFile),b03candidate,"B03 scoped CSS must match Q18 candidate without affecting Chapter IV");
+ const b04receipt=fs.readFileSync(root+
+   "/prototypes/thpt/ux795/G10_CHII_B04_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md","utf8");
+  const b04field=k=>b04receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(b04field("BASELINE_CSS_GIT_BLOB"),b03candidate,"B04 CSS must extend frozen B03 approved CSS");
+  assert.equal(blob(cssFile),b04field("CANDIDATE_CSS_GIT_BLOB"),"B04 scoped CSS must match Q18 receipt without changing Chapter IV");
+  assert(cssFile.toString("utf8").includes(':has([data-thpt-first-try-id="THPT-G10-CHII-TRY06"])'),
+   "Only B04 canonical first-try selector may extend existing B01–B03 concepts");
  const styles=cssFile.toString("utf8");
  assert(styles.includes(':has([data-thpt-first-try-id="THPT-G10-CHI-TRY01"])') &&
   styles.includes(':has([data-thpt-first-try-id="THPT-G10-CHI-TRY06"])') &&

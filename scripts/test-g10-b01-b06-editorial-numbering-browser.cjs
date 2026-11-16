@@ -57,6 +57,12 @@ function checkSHA(){
    const candidate=receipt.match(/^\*\*CANDIDATE_LESSON_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
    assert.equal(baseline,sha,"B03 authoring source baseline unchanged");
    assert.equal(hash(data),candidate,"B03 source equals targeted author verified Q18 receipt");
+  }else if(p==="docs/thpt-preview/sgk/chuong-ii/bai-4.md"){
+   const receipt=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHII_B04_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md"),"utf8");
+   const field=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(field("BASELINE_LESSON_GIT_BLOB"),sha,"B04 original source SHA preserved");
+   assert.equal(hash(data),field("CANDIDATE_LESSON_GIT_BLOB"),"B04 Q18 candidate exact source");
   }else if(p==="docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"){
    const b01=fs.readFileSync(path.join(root,
     "prototypes/thpt/ux795/G10_CHI_B01_DEFINITION_COLOR_UI_DELTA_A_20261116.md"),"utf8");
@@ -73,7 +79,10 @@ function checkSHA(){
    const b03Old=b03.match(/^\*\*BASELINE_CSS_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
    const b03New=b03.match(/^\*\*CANDIDATE_CSS_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
    assert.equal(b03Old,b02Candidate,"B03 CSS extends exact accepted B02 Golden theme");
-   assert.equal(hash(data),b03New,"B03-only teal CSS must match Q18 candidate and not change sibling pages");
+   const b04=fs.readFileSync(path.join(root,"prototypes/thpt/ux795/G10_CHII_B04_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md"),"utf8");
+   const field=k=>b04.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(field("BASELINE_CSS_GIT_BLOB"),b03New,"B04 CSS baseline preserves B03 accepted CSS");
+   assert.equal(hash(data),field("CANDIDATE_CSS_GIT_BLOB"),"B04 scoped teal CSS equals receipt");
   }else assert.equal(hash(data),sha,"Untouched SGK sibling source/theme drift: "+p);
  }
  const q18=fs.readFileSync(path.join(root,
@@ -89,7 +98,10 @@ function checkSHA(){
  const currentJs=b03Receipt.match(/^\*\*CANDIDATE_JS_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
  assert(q18.includes("candidate "+String.fromCharCode(96)+formerJs+String.fromCharCode(96)),
   "B03 JS must extend exact B02 accepted Golden route");
- assert.equal(hash(js),currentJs,"B03 route JS matches exact owner receipt");
+ const b04=fs.readFileSync(path.join(root,"prototypes/thpt/ux795/G10_CHII_B04_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md"),"utf8");
+  const field=k=>b04.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(field("BASELINE_JS_GIT_BLOB"),currentJs,"B04 extends B03 accepted JS");
+  assert.equal(hash(js),field("CANDIDATE_JS_GIT_BLOB"),"B04 route keyboard JS matches receipt");
 }
 const names=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
 const ch=n=>n<=2?"i":n<=4?"ii":"iii";
@@ -125,7 +137,7 @@ const widths=[390,820,1440];
       ["1.1. Cùng tìm hiểu","1.2. Ví dụ trực quan","1.3. Thuật ngữ, kiến thức và kỹ năng"];
      assert.deepEqual(discoveryTitles,expectedDiscovery,loc+" meaningful concept-first discovery headings");
      const knowledge=(await groups.nth(1).locator("h3").allInnerTexts()).map(x=>x.trim());
-     assert(knowledge.length>=(n===3?2:n===2?3:4)&&knowledge.every((v,i)=>v.startsWith("2."+(i+1)+". ")),loc+" authentic S1 SGK main sections");
+     assert(knowledge.length>=(n===3?2:(n===2||n===4)?3:4)&&knowledge.every((v,i)=>v.startsWith("2."+(i+1)+". ")),loc+" authentic S1 SGK main sections");
      if(n===2)assert.deepEqual(knowledge,["2.1. Các khái niệm cơ bản về tập hợp",
       "2.2. Các tập hợp số","2.3. Các phép toán trên tập hợp"],loc+" original S1 has 3 main sections");
      if(n===3){
@@ -156,6 +168,30 @@ const widths=[390,820,1440];
       await img.scrollIntoViewIfNeeded();
       await img.evaluate(async el=>{if(el.decode)await el.decode();});
       assert(await img.evaluate(el=>el.complete&&el.naturalWidth>0),loc+" diagram actually loads");
+      await labels.nth(0).click();
+     }
+     if(n===4){
+      assert.deepEqual(knowledge,[
+       "2.1. Hệ bất phương trình bậc nhất hai ẩn",
+       "2.2. Biểu diễn miền nghiệm của hệ bất phương trình bậc nhất hai ẩn trên mặt phẳng tọa độ",
+       "2.3. Ứng dụng của hệ bất phương trình bậc nhất hai ẩn"
+      ],loc+" actual S1 three-section outline");
+      const pane=groups.nth(1);
+      const child=(await pane.locator("h4").allInnerTexts()).map(x=>x.trim().split(" ")[0]);
+      assert.deepEqual(child,["2.1.1.","2.2.1.","2.2.2.","2.3.1.","2.3.2."],
+       loc+" five nested outcomes under authentic parent section");
+      const ids=await pane.locator("[data-thpt-first-try-id]").evaluateAll(nodes=>nodes.map(x=>x.getAttribute("data-thpt-first-try-id")));
+      assert.deepEqual(ids,["THPT-G10-CHII-TRY06","THPT-G10-CHII-TRY07","THPT-G10-CHII-TRY08","THPT-G10-CHII-TRY09","THPT-G10-CHII-TRY10"],
+       loc+" all five canonical B04 self-trial IDs unchanged");
+      assert.equal((await pane.locator("p").allInnerTexts()).filter(x=>x.trim().startsWith("Vận dụng.")).length,5,
+       loc+" five genuine learner-first attempts");
+      const text=await groups.nth(2).innerText();
+      assert(text.includes("174 triệu đồng")&&text.includes("27"),loc+" corrected independent worked examples");
+      const img=pane.locator('img[src*="THPT_G10_B04_FEASIBLE_POLYGON_D5_R01.svg"]');
+      assert.equal(await img.count(),1,loc+" original D5 figure retained");
+      await labels.nth(1).click();
+      await img.evaluate(async el=>{if(el.decode)await el.decode()});
+      assert(await img.evaluate(el=>el.complete&&el.naturalWidth>0),loc+" B04 D5 actual pixels");
       await labels.nth(0).click();
      }
      if(n===1){
@@ -345,9 +381,23 @@ const widths=[390,820,1440];
       assert(cards.filter(x=>!x.concept).every(x=>x.bg==="rgb(74, 58, 37)"&&x.left==="rgb(214, 170, 73)"),
        loc+" B03 slate amber reminders");
       await page.evaluate(v=>{if(v===null)document.body.removeAttribute("data-md-color-scheme");else document.body.setAttribute("data-md-color-scheme",v);},old);
+     }else if(n===4){
+      const concept=fontAudit.callouts.filter(x=>x.concept),memory=fontAudit.callouts.filter(x=>!x.concept);
+      assert.equal(concept.length,2,loc+" B04 two concept boxes");
+      assert.equal(memory.length,3,loc+" B04 three memory boxes");
+      assert(concept.every(x=>x.background==="rgb(232, 247, 242)"&&x.left==="rgb(8, 125, 105)"),loc+" B04 teal concept light");
+      assert(memory.every(x=>x.background==="rgb(255, 243, 213)"&&x.left==="rgb(196, 154, 55)"),loc+" B04 amber memory light");
+      const saved=await page.evaluate(()=>document.body.getAttribute("data-md-color-scheme"));
+      await page.evaluate(()=>document.body.setAttribute("data-md-color-scheme","slate"));
+      const dark=await groups.nth(1).locator(".thpt-r4-knowledge-conclusion").evaluateAll(nodes=>nodes.map(x=>({
+       concept:x.classList.contains("thpt-r4-concept-card"),bg:getComputedStyle(x).backgroundColor,left:getComputedStyle(x).borderLeftColor
+      })));
+      assert(dark.filter(x=>x.concept).every(x=>x.bg==="rgb(25, 61, 54)"&&x.left==="rgb(118, 223, 199)"),loc+" B04 teal slate");
+      assert(dark.filter(x=>!x.concept).every(x=>x.bg==="rgb(74, 58, 37)"&&x.left==="rgb(214, 170, 73)"),loc+" B04 amber slate");
+      await page.evaluate(v=>{if(v===null)document.body.removeAttribute("data-md-color-scheme");else document.body.setAttribute("data-md-color-scheme",v);},saved);
      }else{
       assert(fontAudit.callouts.every(c=>c.background==="rgb(255, 243, 213)"&&c.left==="rgb(196, 154, 55)"),
-       loc+" B04–B06 keep original amber memory cards");
+       loc+" B05/B06 unchanged amber memory cards");
      }
      assert(fontAudit.buttons.every(b=>b.height>=42&&b.height<=52),
       loc+" compact original-HTML tab height");
@@ -380,6 +430,17 @@ const widths=[390,820,1440];
       const exp=[...source.matchAll(new RegExp(key+'="([^"]+)"',"g"))].map(m=>m[1]).sort();
       const got=(await page.locator("["+key+"]").evaluateAll((elements,k)=>elements.map(e=>e.getAttribute(k)),key)).sort();
       assert.deepEqual(got,exp,loc+" "+key+" parity");
+     }
+     if(n===4){
+      const radios=tabs.locator(':scope > input[type="radio"]');
+      await labels.nth(0).click();
+      await labels.nth(0).focus();
+      await page.keyboard.press("ArrowRight");
+      assert(await radios.nth(1).isChecked()&&await groups.nth(1).isVisible(),loc+" ArrowRight selects SGK tab");
+      await page.keyboard.press("ArrowLeft");
+      assert(await radios.nth(0).isChecked()&&await groups.nth(0).isVisible(),loc+" ArrowLeft selects Discovery tab");
+      assert.equal(await page.evaluate(()=>document.querySelector(".md-content__inner").dataset.g10B04KeyboardTabs),
+       "true",loc+" B04 route-scoped keyboard handling");
      }
      for(let t=0;t<4;t++){
       await labels.nth(t).click();
