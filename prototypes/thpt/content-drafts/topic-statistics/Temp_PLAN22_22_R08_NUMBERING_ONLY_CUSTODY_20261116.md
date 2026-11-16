@@ -1,0 +1,33 @@
+# PLAN22-22 R08 AUTHORING-only source and numbering custody
+
+STANDARD_ID: SLM-THPT-QUALITY-ONE
+STANDARD_VERSION: 3.1.0
+CONTENT_REVISION: R08
+LEARNING_PATH: TOPIC
+Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R08_NUMBERING_CONSISTENT_20261116.md
+ACADEMIC_SOURCE_BLOB: 85d7522affb779e7de28877903f7a77d4319afc7
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC_STATISTICS_G10_G12_R08_NUMBERING_DELTA_A_Q18_20261116.md
+REVIEW_RECEIPT_BLOB: e6027d6044c886b27d671d5778e716e6a48cb868
+PREVIOUS_R07_HANDOFF_PATH: prototypes/thpt/release-handoffs/THPT-TOPIC-STATISTICS-G10-G12-FULL-R07_HANDOFF_V2_20261115.md
+PREVIOUS_R07_HANDOFF_BLOB: 4c32eaf6342b2cb9cd2ccc69357fed80a0aeca92
+DELTA_CLASS: DELTA_A_UI
+PACKET_ID: THPT-TOPIC-STATISTICS-G10-G12-FULL-R07
+PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC_STATISTICS_G10_G12_CANONICAL_SOURCE_INDEX_R00_20261111.md
+PUBLIC_SOURCE_INDEX_BLOB: 51a6e99587187838aea61c5c72108adae7874d1d
+PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC_STATISTICS_G10_G12_PUBLIC_EXTENSION_07ITEM_R00_20261111.md
+PUBLIC_EXTENSION_BLOB: c222f9c8ef2c3b34caf4f6d6c33fa88f960471c3
+STATISTICS_FREQUENCY_SVG_PATH: prototypes/thpt/content-drafts/topic-statistics/assets/Temp_STATISTICS_GROUPED_FREQ_R00_20261111.svg
+STATISTICS_FREQUENCY_SVG_BLOB: d7922d7caecb1030678d330d5b2bbb8b3596b7b3
+STATISTICS_BOXPLOT_SVG_PATH: prototypes/thpt/content-drafts/topic-statistics/assets/Temp_STATISTICS_BOX_OUTLIER_R00_20261111.svg
+STATISTICS_BOXPLOT_SVG_BLOB: 4798c4e6bd8fb1730dedcfe03581e14a6514f972
+SOURCE_EQUIVALENCE: 114/114 canonical Practice and 127/127 revealed lesson/solution blocks exact; original 39 outcomes/13 lessons/9 public selfchecks unchanged.
+OWNER_CATALOG_DECISION: UNASSIGNED_OWNER_DECISION
+ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
+RELEASE_AUTHORIZATION: NO
+
+## History boundary
+
+- R07 exact original student source `e31771e0fb9347c8c242ec8ca9e8a91a1ab74ff6` and Q18 `40feca220c54fc0620ab113cc354e3d37a66088e` preserved immutable. New R08 updates heading depth and practice labels exclusively; the math/source index/extension bank, 114 ID mappings, rubrics and SVG remain unchanged.
+- Prior R07 V2 `4c32eaf6342b2cb9cd2ccc69357fed80a0aeca92` retained; no independent new reviewer or website QA.
+- Do not infer RELEASE_TOPIC_ID or merge/deploy approval from source readiness.
