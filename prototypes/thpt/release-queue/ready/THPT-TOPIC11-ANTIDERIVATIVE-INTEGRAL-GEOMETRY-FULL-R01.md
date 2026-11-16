@@ -19,7 +19,7 @@ REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC11_R06_NUMBERING_DELTA_
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC11_R06_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
 REVIEW_RECEIPT_BLOB: ee42fcc98ccc51fef08a7eabdbf99032b0110c27
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC11-ANTIDERIVATIVE-INTEGRAL-GEOMETRY-FULL-R06_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: b3d423b0668a8dd5e74e865c526f6e234675218c
+AUTHOR_HANDOFF_BLOB: 29d66967f010bdcd00960e01ed7b3f28041acc3e
 PUBLIC_ORIGINAL88_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_ORIGINAL88_SGK_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_ORIGINAL88_INDEX_BLOB: 672fdce0c02ebf4f6ae6b37b331ca59e259d9b5c
 PUBLIC_NEW28_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_NEW28_PUBLIC_CANONICAL_R05_20261116.md
@@ -62,13 +62,13 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 ## R06 numbering Delta-A — AUTHORING QA
 
 - Consistent numbered H2/H3 hierarchy, 4 Practice groups, 22 H3 lessons and 116 stable canonical Practice placements. Q15/Q16 metadata moved to HTML comment outside learner solution reveal, no extra H2.
-- Active source `58b16f7c442d560f3950aafdbaf1f686e1e337e4`, Q18 source-equivalent `ee42fcc98ccc51fef08a7eabdbf99032b0110c27`, one R06 V2 `b3d423b0668a8dd5e74e865c526f6e234675218c`; R05 source `7d8eac917be4f7688a8a718e54cce4a84bc055ef`, Q18 `c6df9cdc86b8f3df9d163e8c6e4c16a6e7d48c15`, V2 `735598387e1eaebc94a8188b4235c052cbfde15d` preserved immutable.
+- Active source `58b16f7c442d560f3950aafdbaf1f686e1e337e4`, Q18 source-equivalent `ee42fcc98ccc51fef08a7eabdbf99032b0110c27`, one R06 V2 `29d66967f010bdcd00960e01ed7b3f28041acc3e`; R05 source `7d8eac917be4f7688a8a718e54cce4a84bc055ef`, Q18 `c6df9cdc86b8f3df9d163e8c6e4c16a6e7d48c15`, V2 `735598387e1eaebc94a8188b4235c052cbfde15d` preserved immutable.
 - Every source-locked item_id/answer/explanation/rubric/D6 and 22 public question-only selfchecks unchanged, DELTA_A_UI. No new independent math review or NotebookLM verdict.
 - RELEASE browser/GOLDEN/MathJax/anchor responsive/Final Submit and owner merge/deploy permission separate.
 
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — learner SOURCE Git blob 58b16f7c442d560f3950aafdbaf1f686e1e337e4, Q18 signed receipt ee42fcc98ccc51fef08a7eabdbf99032b0110c27, original88 immutable-reference index 672fdce0c02ebf4f6ae6b37b331ca59e259d9b5c, NEW28 single bank 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0, one V2 handoff b3d423b0668a8dd5e74e865c526f6e234675218c, four NEW SVG with exact Git SHA readback.
+- [x] A1_SOURCE_SNAPSHOT — learner SOURCE Git blob 58b16f7c442d560f3950aafdbaf1f686e1e337e4, Q18 signed receipt ee42fcc98ccc51fef08a7eabdbf99032b0110c27, original88 immutable-reference index 672fdce0c02ebf4f6ae6b37b331ca59e259d9b5c, NEW28 single bank 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0, one V2 handoff 29d66967f010bdcd00960e01ed7b3f28041acc3e, four NEW SVG with exact Git SHA readback.
 - [x] A2_SGK_SBT_SCOPE — KNTT G12 Tập2 ChIV B11 SGK printed4–11/PDF1 6–13, B12 12–18/14–20, B13 19–26/21–28,end27–28/29–30; SBT B11 3–8/2–7, B12 9–13/8–12, B13 14–18/13–17,end19–21/18–20. Owner original publisher scan SHA exact in receipt; no fresh PDF scan claimed.
 - [x] A3_NOTEBOOKLM_VERDICT — Q18 `AUTHOR_SELF_VERIFIED` v3.1.0 with 53/53 direct checks+12/12 stronger numerical integration/error checks, author P0/P1=0, 22 outcome QA. Original SGK v2.1 independent Academic/PED PASS remains only on unchanged SGK R00 source, NOT inherited Topic PASS.
 - [x] A4_ITEM_OUTCOME_IDS — 22 lesson IDs,22 outcomes,116 unique PUBLIC canonical IDs and one full V2 item→outcome→role map, 88 original SGK pointer-only+28 new. 22 public Self Check placements reference new P01–P22 only.
