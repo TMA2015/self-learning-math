@@ -29,6 +29,8 @@
 
 **Golden/AP:** Four tabs, Tab1 five `1.x` subsections; Tab2 two `2.x` parent sections + six `2.x.x` nested subtopics; Tab3 four `3.x` worked examples with separate Phân tích / Lời giải / Kiểm lại; Tab4 two `4.x` help. JS respects authored numbers (no double-prefix), wraps only B08 new worked solutions in existing Golden cards, adds **B08-only ArrowLeft/ArrowRight** on tab labels. B07 and B09–B11 and B01–B06 earlier source/behavior stay untouched. CSS shared blob unchanged.
 
+**CANONICAL_FIRST_TRY_IDS:** `THPT-G10-CHIV-TRY06`, `THPT-G10-CHIV-TRY07`, `THPT-G10-CHIV-TRY08`, `THPT-G10-CHIV-TRY09`, `THPT-G10-CHIV-TRY10` (exact five retained source markers; no new items). 
+
 **Q15/Q16:** Five original public First Try `THPT-G10-CHIV-TRY06`, `TRY07`, `TRY08`, `TRY09`, `TRY10` exactly once; no new IDs. Two HELP IDs original. Public disclosures remain `CLIENT_SELF_CHECK_NO_MASTERY`; no changes to Chapter IV 40 Core/Practice items, 21 Final Submit/Q16 protected items, Written/Anchor, readiness, RD1, Firebase or learner data.
 
 ## Mathematics independently recalculated
