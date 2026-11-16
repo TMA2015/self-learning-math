@@ -11,7 +11,7 @@ AUTHORING_STATUS: R04_NUMBERING_DELTA_A_AUTHOR_SELF_VERIFIED
 
 ## Phụ lục AUTHORING — dữ liệu điều phối không hiển thị cho học sinh
 
-**LEARNING_PATH:** `TOPIC` / `FULL_TOPIC_LEARNING_PATH`; **CONTENT_REVISION:** `R03`; **ASSESSMENT_MODE:** `CLIENT_SELF_CHECK_NO_MASTERY`; **PRIVATE_RD1_COUNT:** `0`; **OFFICIAL_READINESS:** `NOT_CLAIMED`; **MASTERY_ACTIVATION:** `NO`.
+**LEARNING_PATH:** `TOPIC` / `FULL_TOPIC_LEARNING_PATH`; **CONTENT_REVISION:** `R04`; **ASSESSMENT_MODE:** `CLIENT_SELF_CHECK_NO_MASTERY`; **PRIVATE_RD1_COUNT:** `0`; **OFFICIAL_READINESS:** `NOT_CLAIMED`; **MASTERY_ACTIVATION:** `NO`.
 
 **S1 scope:** SGK Toán 10 KNTT Tập 1 ChIII B05 trang in 33–37; B06 trang in 38–43; bài cuối chương 44–45. SBT Toán 10 KNTT Tập 1 B05 trang in 29–33, B06 trang in 34–39, cuối chương 40–44, lời giải bắt đầu 94. Các con số trang *kế thừa receipt S1 đã đối chiếu PDF gốc của SGK Chapter III* tại Git blob `6320aeaa89bd51c514b07461e01fad5e3aca833f` và reviewer receipt `3fb823c4353d368ae5a9c14f03c7309933d47e6f`; lượt tạo Topic này không tự nhận đã mở lại PDF gốc. Không nhầm trang in với chỉ số trang PDF và không suy tên từ đoạn PDF.
 
