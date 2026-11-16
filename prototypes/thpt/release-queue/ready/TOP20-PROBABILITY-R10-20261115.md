@@ -15,6 +15,7 @@ ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic20-classical-probabili
 ACADEMIC_SOURCE_BLOB: 63f2891f38be02530bdfe359aae1963603415c89
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/TOP20_R10_Q18_AUTHOR_SELF_QA_RECEIPT_20261115.md
 REVIEW_RECEIPT_BLOB: 6052e969cf41650a9c0ca726f377c00a1da67789
+REVIEW_RECEIPT: prototypes/thpt/review-packets/TOP20_R10_Q18_AUTHOR_SELF_QA_RECEIPT_20261115.md (source-locked AUTHOR_SELF_VERIFIED; NOT independent NotebookLM PASS)
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/TOP20-PROBABILITY-R10-20261115_HANDOFF_V2.md
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
@@ -33,7 +34,7 @@ AUTHORING_Q18_MODE: Q18_OWNER_20261111_XE_AUTHOR_SELF_VERIFIED
 
 - [x] A1_SOURCE_SNAPSHOT — Exact R10 source Git blob `63f2891f38be02530bdfe359aae1963603415c89` and two actual SVG SHA checked; 3 parts Kiến thức/Luyện tập/Tự kiểm tra and one general source line.
 - [x] A2_SGK_SBT_SCOPE — Toán 10 Tập Hai Ch IX B26–B27 and Toán 11 Tập Hai Ch VIII B28–B30 matched against existing reviewer/owner original-book S1 audit; source path and scope recorded in Q18 receipt without fabricated new primary PDF claim.
-- [x] A3_AUTHOR_SELF_Q18 — AUTHOR_SELF_VERIFIED receipt `6052e969cf41650a9c0ca726f377c00a1da67789`, actual mathematics/PED per outcome checked, P0=0, P1=0; not an independent NotebookLM PASS.
+- [x] A3_NOTEBOOKLM_VERDICT — AUTHOR_SELF_VERIFIED receipt `6052e969cf41650a9c0ca726f377c00a1da67789`, actual mathematics/PED per outcome checked, P0=0, P1=0; not an independent NotebookLM PASS. The mandatory checklist key is legacy technical naming only; this is AUTHOR source self-verification / source equivalence, NOT an independent NotebookLM R10/R11 reviewer PASS.
 - [x] A4_ITEM_OUTCOME_IDS — Exactly 17 outcomes, 37 unique canonical public IDs 17 Vận dụng + 17 Practice + 3 Written /4; each question one ID/version/key and primary outcome.
 - [x] A5_D1_D6_SCOPE — Nine concept-first Knowledge units, ten self-contained examples, two explained SVGs, student-first tries and remediation for 37 disclosed formative tasks; Written/rubric kept accurate.
 - [x] A6_DELTA_RESOLVED — R05 original reviewer verdict historically protected; R06–R09 academic/PED edits self-verified here; R09→R10 only item version/comment metadata, student-visible material unchanged.

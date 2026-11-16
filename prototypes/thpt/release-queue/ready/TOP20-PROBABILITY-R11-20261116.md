@@ -15,6 +15,7 @@ ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic20-classical-probabili
 ACADEMIC_SOURCE_BLOB: 74e758075d17e98649d9dd08709b523e8a782b63
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/TOP20_R11_Q18_TECHNICAL_SOURCE_EQUIVALENCE_RECEIPT_20261116.md
 REVIEW_RECEIPT_BLOB: 4e6133b77eeaf1d38394d1e4d6f8058d421fd763
+REVIEW_RECEIPT: prototypes/thpt/review-packets/TOP20_R11_Q18_TECHNICAL_SOURCE_EQUIVALENCE_RECEIPT_20261116.md (source-locked AUTHOR_SELF_VERIFIED; NOT independent NotebookLM PASS)
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/TOP20-PROBABILITY-R11-20261116_HANDOFF_V2.md
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
@@ -47,7 +48,7 @@ AUTHOR_METADATA_BLOB: f271a3ac03ef99063d631b7bebc68f826e217b0e
 
 - [x] A1_SOURCE_SNAPSHOT — Current R11 exact source Git blob `74e758075d17e98649d9dd08709b523e8a782b63`, technical source-equivalence Q18 receipt `4e6133b77eeaf1d38394d1e4d6f8058d421fd763`, A1–A7 `f271a3ac03ef99063d631b7bebc68f826e217b0e`, one V2 `b0bf8ddafb7eb0815a596d02f897ca240f0aea02`; original R10 source/receipt immutable. Source content direct 37/37 parity PASS.
 - [x] A2_SGK_SBT_SCOPE — Toán 10 Tập Hai Ch IX B26–B27 and Toán 11 Tập Hai Ch VIII B28–B30 matched against existing reviewer/owner original-book S1 audit; source path and scope recorded in Q18 receipt without fabricated new primary PDF claim.
-- [x] A3_AUTHOR_SELF_Q18 — R11 technical Q18 and 37/37 text parity to R10, no new independent academic reviewer verdict. The previous R10 author math/PED self-verification remains attached to immutable R10 source only; no changed academic substance.
+- [x] A3_NOTEBOOKLM_VERDICT — R11 technical Q18 and 37/37 text parity to R10, no new independent academic reviewer verdict. The previous R10 author math/PED self-verification remains attached to immutable R10 source only; no changed academic substance. The mandatory checklist key is legacy technical naming only; this is AUTHOR source self-verification / source equivalence, NOT an independent NotebookLM R10/R11 reviewer PASS.
 - [x] A4_ITEM_OUTCOME_IDS — Exactly 17 outcomes, 37 unique canonical public IDs 17 Vận dụng + 17 Practice + 3 Written /4; each question one ID/version/key and primary outcome.
 - [x] A5_D1_D6_SCOPE — Nine concept-first Knowledge units, ten self-contained examples, two explained SVGs, student-first tries and remediation for 37 disclosed formative tasks; Written/rubric kept accurate.
 - [x] A6_DELTA_RESOLVED — R11 heading/Practice numbering and 11 public selfcheck stems source-equivalent to R10, original question/key/rubric byte-identical. The original R10 author receipt applies only to its locked source, never retroactively relabelled NotebookLM PASS.
