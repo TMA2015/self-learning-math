@@ -111,6 +111,21 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    const newCandidate=b01EnrichmentBlob(blobs[1]);
    if(newCandidate)return newCandidate;
  }
+ if(name==="B02"){
+   const pathB02="prototypes/thpt/ux795/G10_CHI_B02_S1_Q18_KNOWLEDGE_ENRICHMENT_R01_20261116.md";
+   const receiptPath=path.join(root,pathB02);
+   assert(fs.existsSync(receiptPath),"B02 must have separate source-locked Q18 enrichment receipt");
+   const receipt=fs.readFileSync(receiptPath,"utf8");
+   const baseline=receipt.match(/^\*\*BASELINE_LESSON_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+   const candidate=receipt.match(/^\*\*CANDIDATE_LESSON_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+   assert.equal(baseline,blobs[1],"B02 source must start exactly from the legacy source ledger candidate");
+   assert(candidate&&candidate!==baseline,"B02 candidate must differ from historical source SHA");
+   for(const phrase of ["ENRICHMENT_DELTA_RECEIPT","DELTA_C_ACADEMIC_MATERIAL",
+     "THREE","Q18_OWNER_SELF_VERIFIED_ENRICHMENT","B01_FROZEN_OWNER_ACCEPTED"])
+     assert(receipt.includes(phrase),"B02 Q18 scope/academic evidence missing "+phrase);
+   return candidate;
+ }
+
  const chiv=chivEditorialReceiptRows().get(name);
  const chv=chvEditorialReceiptRows().get(name);
  assert(!(chiv&&chv),name+" duplicate editorial receipts");
