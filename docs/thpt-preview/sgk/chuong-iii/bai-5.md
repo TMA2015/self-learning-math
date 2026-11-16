@@ -40,7 +40,7 @@
 
     Với góc nhọn, \(x>0,y>0\); với góc tù, \(x<0,y>0\). Điểm ở \(0^\circ\) và \(180^\circ\) nằm trên trục hoành, ở hai **phía đối nhau** của tâm. Hãy tính tọa độ đầu mút bằng bán kính bằng 1, rồi mới mở đáp án.
 
-        **Vận dụng.** Trên nửa đường tròn đơn vị, với \(\alpha=180^\circ\), điểm \(M\) có tọa độ gì? Từ đó tìm \(\sin180^\circ\) và \(\cos180^\circ\).
+    **Vận dụng.** Trên nửa đường tròn đơn vị, với \(\alpha=180^\circ\), điểm \(M\) có tọa độ gì? Từ đó tìm \(\sin180^\circ\) và \(\cos180^\circ\).
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHIII-TRY01" hidden></span>
 
@@ -48,7 +48,7 @@
 
         \(M=(-1,0)\) nên \(\sin180^\circ=0\), \(\cos180^\circ=-1\). Điểm nằm trên trục \(Ox\) âm: tung độ bằng 0, hoành độ bằng \(-1\).
 
-        <figure class="thpt-r4-plot thpt-r4-concept-figure">
+    <figure class="thpt-r4-plot thpt-r4-concept-figure">
     <img src="../../../../assets/images/thpt/THPT_G10_B05_SEMICIRCLE_120_D5_R01.svg" loading="lazy" alt="Nửa đường tròn đơn vị có góc 120 độ, M ở bên trái trục tung và phía trên trục hoành, tọa độ âm một phần hai và căn ba trên hai">
     <figcaption>Đọc hình theo thứ tự: \(O\) → tia \(OM\) tạo \(120^\circ\) → hình chiếu của \(M\) lên hai trục. Hoành độ \(-\frac12\) là \(\cos120^\circ\), tung độ \(\frac{\sqrt3}{2}\) là \(\sin120^\circ\). Hình này minh họa <strong>góc 120°</strong>, không phải mọi góc tù có cùng tọa độ.</figcaption>
     </figure>
@@ -66,7 +66,7 @@
 
     Góc bù của một góc nhọn có điểm đối xứng qua \(Oy\): tung độ giữ nguyên, hoành độ đổi dấu. **Tự thử với \(135^\circ\)** trước khi tra bảng các góc tù ở dưới.
 
-        **Vận dụng.** Không dùng máy tính, tính \(\sin135^\circ,\cos135^\circ\). So với \(45^\circ\), giá trị nào giữ nguyên, giá trị nào đổi dấu?
+    **Vận dụng.** Không dùng máy tính, tính \(\sin135^\circ,\cos135^\circ\). So với \(45^\circ\), giá trị nào giữ nguyên, giá trị nào đổi dấu?
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHIII-TRY02" hidden></span>
 
@@ -89,7 +89,7 @@
 
     Ở các góc nằm đúng trên một trục tọa độ, một trong hai giá trị sin/cos có thể bằng 0. Hãy tự liệt kê tan và cot ở hai góc trục cơ bản trước khi tra bảng điều kiện.
 
-        **Vận dụng.** Trong bốn giá trị \(\tan0^\circ,\cot0^\circ,\tan90^\circ,\cot90^\circ\), giá trị nào bằng 0 và giá trị nào không xác định? Giải thích bằng mẫu số.
+    **Vận dụng.** Trong bốn giá trị \(\tan0^\circ,\cot0^\circ,\tan90^\circ,\cot90^\circ\), giá trị nào bằng 0 và giá trị nào không xác định? Giải thích bằng mẫu số.
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHIII-TRY03" hidden></span>
 
@@ -126,7 +126,7 @@
 
     Khi các mẫu số khác 0, ta còn có \(\tan(180^\circ-\alpha)=-\tan\alpha\) và \(\cot(180^\circ-\alpha)=-\cot\alpha\). Không dùng công thức tan ở \(90^\circ\) hoặc cot ở \(0^\circ,180^\circ\), vì những giá trị này **không xác định**.
 
-        **Vận dụng.** Hai góc \(40^\circ\) và \(140^\circ\) có quan hệ nào giữa sin, cos, tan và cot? Có phải dùng máy tính tìm số thập phân không?
+    **Vận dụng.** Hai góc \(40^\circ\) và \(140^\circ\) có quan hệ nào giữa sin, cos, tan và cot? Có phải dùng máy tính tìm số thập phân không?
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHIII-TRY04" hidden></span>
 
@@ -144,7 +144,7 @@
 
     Nếu \(\cos\alpha\ne0\), chia cho \(\cos^2\alpha\) suy ra \(1+\tan^2\alpha=\frac1{\cos^2\alpha}\). Nếu \(\sin\alpha\ne0\), chia cho \(\sin^2\alpha\) suy ra \(1+\cot^2\alpha=\frac1{\sin^2\alpha}\). Khi cả sin và cos khác 0, \(\tan\alpha\cdot\cot\alpha=1\). Dấu căn phải phù hợp với vị trí góc; với **góc tù** chọn sin dương và cos âm.
 
-        **Vận dụng.** Góc tù \(\alpha\) có \(\cos\alpha=-\frac5{13}\). Tìm \(\sin\alpha\), \(\tan\alpha\) và giải thích cách chọn dấu.
+    **Vận dụng.** Góc tù \(\alpha\) có \(\cos\alpha=-\frac5{13}\). Tìm \(\sin\alpha\), \(\tan\alpha\) và giải thích cách chọn dấu.
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHIII-TRY05" hidden></span>
 
@@ -212,7 +212,7 @@
 
 === "Lỗi thường gặp"
 
-        <span data-thpt-help-id="HELP-G10-B05-01" hidden></span>
+    <span data-thpt-help-id="HELP-G10-B05-01" hidden></span>
 
     ??? tip "4.1. Nhớ góc nhọn nhưng bỏ dấu âm của cos góc tù"
 
@@ -222,7 +222,7 @@
 
         **Tự sửa:** Quay lại hình mục 2.1.1: chỉ điểm \(M\) và hình chiếu xuống trục hoành. Dùng \(180^\circ-\alpha\) và tự tính lại. [Luyện lại tại Core/Luyện tập](luyen-tap.md).
 
-        <span data-thpt-help-id="HELP-G10-B05-02" hidden></span>
+    <span data-thpt-help-id="HELP-G10-B05-02" hidden></span>
 
     ??? tip "4.2. Quên điều kiện mẫu của tan/cot hoặc chọn căn dương máy móc"
 

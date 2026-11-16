@@ -11,7 +11,7 @@
 **AUDIT_INPUT:** PR #862 `prototypes/thpt/ux795/G10_CHIII_B05_B06_DEEP_S1_PED_TRANSFER_AUDIT_R01_20261114.md`, findings B05-F01–F06 (prior B05 mandatory calculator outcome P1 source gap).  
 **LESSON_PATH:** `docs/thpt-preview/sgk/chuong-iii/bai-5.md`  
 **BASELINE_LESSON_GIT_BLOB:** `d45eacd18ad14ee3bdf90a1fe4ba24926b602cd2`  
-**CANDIDATE_LESSON_GIT_BLOB:** `253791b889492e0fda2303c1037395cb799147b5`  
+**CANDIDATE_LESSON_GIT_BLOB:** `79f8101d34430bc0d672558115191a95875014a6`  
 **CSS_PATH:** `docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css`  
 **BASELINE_CSS_GIT_BLOB:** `8d04ab90cd887c8223d33e13d47043a895d23bb1`  
 **CANDIDATE_CSS_GIT_BLOB:** `d295a0574ec439bd4fa390e68d44816c8dc133cc`  
@@ -60,3 +60,5 @@ Original **five** Knowledge self-try canonical items copied unchanged in stem, f
 - **SOURCE STATIC QA:** 4 Golden tabs; 2 S1 main heading parents; 7 nested subheads; 4 distinct examples; 6 B05 self tries (5 existing + 1 new) and 3 HELP (2 existing + 1 new); original figure retained, no answer disclosure before learner actions.
 - **ACADEMIC/PED P0/P1:** within inspected source scope 0 unaddressed documented B05-F01–F06 blockers after corrective delta; yet academic reviewer/owner or actual browser QA remains separate, not inferred.
 - **RELEASE QA PENDING:** formal source-chain tests, CSS/JS SHA, 390/820/1440 browser AP, B05 keyboard arrows, MathJax/figure, Q15/16 independent Final Submit regressions, all exact final PR HEAD workflows pass; only then merge/deploy under owner's standing permission and verify gh-pages P1. Owner P2 acceptance *only afterward*. B06 not in this PR.
+
+**MARKDOWN_RENDER_CORRECTION:** R01 initial source draft had first-line indentation (five First Try prompt labels, opening D5 figure tag, two HELP spans) at 8 spaces rather than 4; actual CI/browser exposed missing rendered labels/HELP01. Final candidate corrects whitespace only, restoring all six visible learner prompts, one SVG and all three HELP. This is an internal candidate QA correction, not a modification of any canonical answer or a new source standard.
