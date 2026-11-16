@@ -584,7 +584,7 @@ Nếu rút gọn rồi tự điền điểm bị loại, đã đổi đồ thị
 
 <!-- LESSON_ID: TOP10-M23; OUTCOME_ID: TOP10-O23 -->
 
-Một số phân thức có tâm đối xứng tại giao tiệm cận. Hình hai nhánh cong đối nhau có tâm nào và phải chứng minh ra sao? Ta sử dụng tịnh tiến tọa độ X=x−a,Y=y−b, đối xứng tâm. Đồ thị y=b+k/(x−a), a,k≠? với k≠0, có TCD x=a, TCN y=b, tâm đối xứng tại giao (a,b), vì f(a+h)+f(a−h)=2b khi h≠0. Không kết luận mọi phân thức đều đối xứng tâm chỉ từ nét nhìn; kiểm phép tịnh tiến hoặc tính chất đối xứng.
+Một số phân thức có tâm đối xứng tại giao tiệm cận. Hình hai nhánh cong đối nhau có tâm nào và phải chứng minh ra sao? Ta sử dụng tịnh tiến tọa độ X=x−a,Y=y−b, đối xứng tâm. Đồ thị y=b+k/(x−a), với a,b∈ℝ và k≠0, có TCD x=a, TCN y=b, tâm đối xứng tại giao (a,b), vì f(a+h)+f(a−h)=2b khi h≠0. Không kết luận mọi phân thức đều đối xứng tâm chỉ từ nét nhìn; kiểm phép tịnh tiến hoặc tính chất đối xứng.
 
 Xét ví dụ: f=(2x+1)/(x−1)=2+3/(x−1) nên tâm I(1,2); TCD x=1, TCN y=2. Chọn phép tách vì chứng minh được đối xứng chứ không chỉ đo bằng mắt.
 
@@ -688,7 +688,7 @@ Nếu trả 50+3q, bạn đang nêu mức chi phí chứ không tốc độ.
 
 <!-- LESSON_ID: TOP10-M27; OUTCOME_ID: TOP10-O27 -->
 
-Vận tốc có hướng và tốc độ khác nhau khi xét dấu. Gia tốc âm có thể đi cùng tốc độ đang tăng không? Ta đã biết cĐ09 v=s',a=s''; dấu v·a khi v≠0. Với tọa độ s(t), vận tốc có hướng v=s', tốc độ |v|, gia tốc a=s''. Khi v·a>0 thì tốc độ đang tăng; khi v·a<0 thì giảm, nếu v=0 phải xét riêng. Tốc độ không âm; gia tốc âm không đủ chứng minh chậm dần.
+Vận tốc có hướng và tốc độ khác nhau khi xét dấu. Gia tốc âm có thể đi cùng tốc độ đang tăng không? Từ CĐ09 ta biết v=s' và a=s''; khi v≠0, dấu v·a giúp xét tốc độ. Với tọa độ s(t), vận tốc có hướng v=s', tốc độ |v|, gia tốc a=s''. Khi v·a>0 thì tốc độ đang tăng; khi v·a<0 thì giảm, nếu v=0 phải xét riêng. Tốc độ không âm; gia tốc âm không đủ chứng minh chậm dần.
 
 Chẳng hạn, s(t)=−t², t>0: v=−2t<0, a=−2<0 cùng dấu nên |v|=2t tăng. Chọn dấu tích v·a thay vì chỉ nhìn a.
 
@@ -923,7 +923,7 @@ Phải thiết lập P=R−C thay vì tối ưu trực tiếp C.
 
 <!-- LESSON_ID: TOP10-M36; OUTCOME_ID: TOP10-O36 -->
 
-Tự rà điều kiện, dấu, biên và đơn vị trước kết luận. Khi nhìn một lời giải 'đúng công thức', cần kiểm những sai sót nào? Để xác định điều đó, cần xét s1 B01–B05: domain, f', giới hạn, max/min, mô hình. Kiểm danh sách: D có đủ? bảng dấu bị nối qua điểm cấm không? f'=0 có đổi dấu không? giá trị biên có thuộc D không? TCD đã xét một phía chưa? lỗ khử có gọi nhầm đứng không? mục tiêu tối ưu có đúng/đơn vị? Biện luận rõ sẽ tránh các kết luận hấp dẫn nhưng sai.
+Tự rà điều kiện, dấu, biên và đơn vị trước kết luận. Khi nhìn một lời giải 'đúng công thức', cần kiểm những sai sót nào? Để xác định điều đó, cần kiểm lại các Bài 1–5: miền xác định, đạo hàm, giới hạn, GTLN/GTNN và mô hình. Kiểm danh sách: D có đủ? bảng dấu bị nối qua điểm cấm không? f'=0 có đổi dấu không? giá trị biên có thuộc D không? TCD đã xét một phía chưa? lỗ khử có gọi nhầm đứng không? mục tiêu tối ưu có đúng/đơn vị? Biện luận rõ sẽ tránh các kết luận hấp dẫn nhưng sai.
 
 Chẳng hạn, với f=1/x trên D=ℝ\{0}, f'<0 ở hai nhánh. Lời giải 'f nghịch biến trên D' là sai theo định nghĩa so mọi cặp: x₁=−1<x₂=1 nhưng f(x₁)=−1<f(x₂)=1. Sửa: nghịch biến trên từng khoảng (−∞,0),(0,∞).
 
@@ -960,7 +960,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đáp án/lí do chỉ mở sau khi làm:** (−∞,0): khi x tiến về 0 từ bên trái, giá trị x² giảm; trên (0,+∞) hàm tăng.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Đồng biến/nghịch biến”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Với x₁<x₂, hãy xét hiệu f(x₂)−f(x₁) cho mọi cặp, không chỉ hai ví dụ số.
 
 </details>
 
@@ -986,7 +986,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đáp án/lí do chỉ mở sau khi làm:** f′>0 khi x<−1 hoặc x>2, f′<0 khi −1<x<2 ⇒ tăng, giảm, tăng theo ba khoảng.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Dấu đạo hàm”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Viết f′ rồi lập bảng dấu tại mọi nghiệm, kiểm tính khả vi trước kết luận.
 
 </details>
 
@@ -998,7 +998,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đáp án/lí do chỉ mở sau khi làm:** f′=2x−4, âm x<2, dương x>2 ⇒ giảm (−∞,2), tăng (2,+∞).
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Dấu đạo hàm”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Viết f′ rồi lập bảng dấu tại mọi nghiệm, kiểm tính khả vi trước kết luận.
 
 </details>
 
@@ -1025,7 +1025,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 **Rubric tự đối chiếu /4:** 1 điểm D=ℝ\{2}; 1 điểm f′=−1/(x−2)²<0; 1 điểm hai khoảng (−∞,2),(2,+∞); 1 điểm phản ví dụ f(1)=−1, f(3)=1 với 1<3 nhưng f(1)<f(3), nên không nghịch biến trên D theo định nghĩa toàn miền.
 **Anchor chỉ gắn nhãn** cho cùng item_id W02, không tạo bản chép chấm điểm thứ hai.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Miền xác định”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Khoanh tròn điểm cấm và xét riêng từng khoảng của miền xác định.
 
 </details>
 
@@ -1037,7 +1037,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đáp án/lí do chỉ mở sau khi làm:** D=ℝ\{2}, f′=−1/(x−2)²<0. Giảm trên (−∞,2) và (2,+∞), không nối qua x=2 không thuộc D.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Miền xác định”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Khoanh tròn điểm cấm và xét riêng từng khoảng của miền xác định.
 
 </details>
 
@@ -1063,7 +1063,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Rubric tự đối chiếu /4 (chỉ sau khi làm):** 1 điểm xác định D=ℝ và f′=3(x²−1); 1 điểm tìm đúng −1,1 và dấu +,−,+; 1 điểm nêu đúng các khoảng tăng/giảm; 1 điểm tính đúng cực đại (−1,2), cực tiểu (1,−2) và giải thích đổi dấu.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Đổi dấu và cực trị”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Xét f′ ở ngay hai phía điểm tới hạn để xác định dấu đổi như thế nào.
 
 </details>
 
@@ -1075,7 +1075,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đáp án/lí do chỉ mở sau khi làm:** f′=3(x+1)(x−1); cực đại tại −1, giá trị 2; cực tiểu tại 1, giá trị −2.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Đổi dấu và cực trị”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Xét f′ ở ngay hai phía điểm tới hạn để xác định dấu đổi như thế nào.
 
 </details>
 
@@ -1087,7 +1087,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đáp án/lí do chỉ mở sau khi làm:** Cực đại tại −1, cực tiểu tại 1; dấu đổi mới quyết định loại cực trị.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Đổi dấu và cực trị”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Xét f′ ở ngay hai phía điểm tới hạn để xác định dấu đổi như thế nào.
 
 </details>
 
@@ -1136,7 +1136,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đáp án/lí do chỉ mở sau khi làm:** Có, f(x)≥f(0)=0; điều kiện f′(0)=0 chỉ là điều kiện cần đối với cực trị nội tại điểm có đạo hàm.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Điểm dừng”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Cho một phản ví dụ f′(c)=0 nhưng f′ cùng dấu hai phía để tránh học mẹo.
 
 </details>
 
@@ -1148,7 +1148,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đáp án/lí do chỉ mở sau khi làm:** Không; f′=3x²>0 ở hai phía (trừ x=0), nên hàm vẫn tăng qua x=0.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Điểm dừng”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Cho một phản ví dụ f′(c)=0 nhưng f′ cùng dấu hai phía để tránh học mẹo.
 
 </details>
 
@@ -1174,7 +1174,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đáp án/lí do chỉ mở sau khi làm:** v(t)=3(t−1)(t−3). Chiều dương khi 0<t<1 và t>3; chiều âm khi 1<t<3; t=1,3 dừng tức thời.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Vận tốc/tốc độ”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Viết riêng v=s′, a=s″, tốc độ |v|; dùng dấu v·a để xét nhanh/chậm.
 
 </details>
 
@@ -1202,7 +1202,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** max=8 tại2; min=−8 tại−2; không có cực trị nội dù f'(0)=0.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Cực trị địa phương”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** So cực trị địa phương với giới hạn ±∞; GTLN/GTNN phải bao quát toàn miền.
 
 </details>
 
@@ -1214,7 +1214,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu sau tự làm:** Không; với mọi x<1 tồn tại y=(x+1)/2 trong (x,1), nên f(y)>f(x). 1 chỉ là supremum.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Cực trị địa phương”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** So cực trị địa phương với giới hạn ±∞; GTLN/GTNN phải bao quát toàn miền.
 
 </details>
 
@@ -1240,7 +1240,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** Không xác định tại0, miền xét không phải toàn đoạn đóng [−1,1]; f không bị chặn gần 0 nên cũng không có min/max toàn miền.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Liên tục trên đoạn đóng”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Định lí đạt min/max cần liên tục trên [a,b] đóng hữu hạn; phân biệt tồn tại và tính được.
 
 </details>
 
@@ -1252,7 +1252,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** Có, bởi định lý giá trị cực trị trên đoạn đóng hữu hạn; chưa cần biết chúng ở điểm nào.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Liên tục trên đoạn đóng”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Định lí đạt min/max cần liên tục trên [a,b] đóng hữu hạn; phân biệt tồn tại và tính được.
 
 </details>
 
@@ -1280,7 +1280,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Rubric /4:** 1 D+f'; 1 các điểm tới hạn và biên; 1 bốn giá trị; 1 max/min đúng cả điểm đạt và phân biệt cực trị nội.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “So ứng viên/biên”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Liệt kê hai đầu và mọi điểm tới hạn thuộc đoạn trước khi so giá trị.
 
 </details>
 
@@ -1292,7 +1292,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** g'=−2x+4, c=2; g(0)=2, g(2)=6, g(5)=−3. Max=6 tại2, min=−3 tại5.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “So ứng viên/biên”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Liệt kê hai đầu và mọi điểm tới hạn thuộc đoạn trước khi so giá trị.
 
 </details>
 
@@ -1304,7 +1304,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** f'=2x−2, ứng viên x=0,1,4, lần lượt f=0,−1,8; GTNN=−1, GTLN=8.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “So ứng viên/biên”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Liệt kê hai đầu và mọi điểm tới hạn thuộc đoạn trước khi so giá trị.
 
 </details>
 
@@ -1353,7 +1353,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** min=0 tại x=0; không có max, vì x²<1 với mọi |x|<1 dù sup=1.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Miền mở và cận”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Phân biệt cận trên với GTLN: phải tìm được điểm thuộc miền làm hàm bằng cận.
 
 </details>
 
@@ -1365,7 +1365,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** Không; mọi 1/x>0, lim∞=0 không đạt được; cũng không có GTLN vì không bị chặn trên gần 0+.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Miền mở và cận”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Phân biệt cận trên với GTLN: phải tìm được điểm thuộc miền làm hàm bằng cận.
 
 </details>
 
@@ -1391,7 +1391,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** f'=(1−x²)/(x²+1)²; max 1/2 tại1, min0 tại0. Mệnh đề f→0 khi x∞ không tự chứng minh GTNN nếu quên x=0.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Ràng buộc”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Thay lại x vào ràng buộc; nghiệm tối ưu ngoài miền phải bị loại.
 
 </details>
 
@@ -1419,7 +1419,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Rubric /4:** 1 xác lập đúng miền/biến; 1 công thức diện tích; 1 tìm tối ưu và đơn vị; 1 xử lý biên mở, giải thích min không tồn tại. Anchor là tag, không clone item.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Mô hình hình học”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Vẽ hình, chọn biến và viết tổng ba cạnh hàng rào trước khi lập A(x).
 
 </details>
 
@@ -1431,7 +1431,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** x∈(0,12), A=x(12−x)≤36 m² (dấu bằng x=6); không có GTNN vì A→0+ khi x→0+.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Mô hình hình học”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Vẽ hình, chọn biến và viết tổng ba cạnh hàng rào trước khi lập A(x).
 
 </details>
 
@@ -1459,7 +1459,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** Hai: y=1 khi x→+∞, y=−1 khi x→−∞, dùng sqrt(x²)=|x|.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Tiệm cận ngang”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Tính giới hạn f(x) ở +∞ và −∞, không suy bằng hình ảnh một mình.
 
 </details>
 
@@ -1471,7 +1471,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** Chia 2−5/(x+2) nên y=2.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Tiệm cận ngang”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Tính giới hạn f(x) ở +∞ và −∞, không suy bằng hình ảnh một mình.
 
 </details>
 
@@ -1483,7 +1483,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** Giới hạn 5; y=5.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Tiệm cận ngang”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Tính giới hạn f(x) ở +∞ và −∞, không suy bằng hình ảnh một mình.
 
 </details>
 
@@ -1509,7 +1509,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** Tử gần3>0, mẫu âm/dương nên lim 2−=−∞, 2+=+∞; x=2 tiệm cận đứng.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Tiệm cận đứng”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Mẫu bằng 0 chưa đủ: tính ít nhất một giới hạn một phía vô cực.
 
 </details>
 
@@ -1521,7 +1521,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** lim x→−3− f=−∞, lim x→−3+ f=+∞; x=−3 là tiệm cận đứng.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Tiệm cận đứng”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Mẫu bằng 0 chưa đủ: tính ít nhất một giới hạn một phía vô cực.
 
 </details>
 
@@ -1549,7 +1549,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Rubric /4:** 1 D; 1 chia đa thức đúng; 1 đứng và giới hạn; 1 xiên, chứng minh phần dư→0 và bác ngang. Anchor chỉ nhãn.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Tiệm cận xiên”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Chia đa thức rồi xét hiệu f(x)−(ax+b) ở vô cực để kiểm tiệm cận xiên.
 
 </details>
 
@@ -1561,7 +1561,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** h=x+1+2/(x+1); xiên y=x+1, đứng x=−1.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Tiệm cận xiên”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Chia đa thức rồi xét hiệu f(x)−(ax+b) ở vô cực để kiểm tiệm cận xiên.
 
 </details>
 
@@ -1573,7 +1573,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** y=x−2, vì phần dư →0; g=x−2 không phải y=x+1.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Tiệm cận xiên”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Chia đa thức rồi xét hiệu f(x)−(ax+b) ở vô cực để kiểm tiệm cận xiên.
 
 </details>
 
@@ -1622,7 +1622,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** Không. k=x+2 chỉ khi x≠2; (2,4) là lỗ, không có tiệm cận đứng.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Lỗ khử được”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Rút gọn chỉ trên miền gốc, kiểm giới hạn hữu hạn để phân biệt lỗ với TCD.
 
 </details>
 
@@ -1634,7 +1634,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** Không; x≠3, f=x+3; lim x→3 f=6, chỉ là lỗ tại (3,6).
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Lỗ khử được”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Rút gọn chỉ trên miền gốc, kiểm giới hạn hữu hạn để phân biệt lỗ với TCD.
 
 </details>
 
@@ -1660,7 +1660,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** y=20 khi q→∞, q=0 là tiệm cận đứng từ phải (C→∞). q=0 không thể là mức sản lượng có chi phí trung bình xác định.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Giới hạn một phía”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Chỉ lấy giới hạn từ những điểm thực thuộc miền gần biên.
 
 </details>
 
@@ -1672,7 +1672,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** Có, lim x→1+=+∞ đủ để kết luận; chỉ dùng giới hạn trong D.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Giới hạn một phía”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Chỉ lấy giới hạn từ những điểm thực thuộc miền gần biên.
 
 </details>
 
@@ -1700,7 +1700,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Rubric /4:** 1 D+biến đổi; 1 tiệm cận ngang; 1 đứng với dấu một bên; 1 mô tả nhánh tương ứng.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Đọc tiệm cận”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Nhận diện TCD x=a, TCN y=L, TC xiên y=ax+b bằng giới hạn tương ứng.
 
 </details>
 
@@ -1712,7 +1712,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** x>2 ⇒ 7/(x−2)>0 ⇒ trên; x<2 ⇒ dưới. Không cần vẽ thêm đường sai.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Đọc tiệm cận”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Nhận diện TCD x=a, TCN y=L, TC xiên y=ax+b bằng giới hạn tương ứng.
 
 </details>
 
@@ -1740,7 +1740,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** lim x→−∞ =−∞ (không phải +∞); y'<0 trên (0,2) nên không tăng liên tục.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Các bước khảo sát”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Đi từng bước: miền → f′/bảng dấu → giới hạn → giao trục → phác nhánh.
 
 </details>
 
@@ -1752,7 +1752,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** D=ℝ\{2} trước; điểm không thuộc D không thể vẽ thành điểm trên đồ thị hoặc cực trị.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Các bước khảo sát”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Đi từng bước: miền → f′/bảng dấu → giới hạn → giao trục → phác nhánh.
 
 </details>
 
@@ -1780,7 +1780,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Rubric /4:** 1 miền+đạo hàm+dấu; 1 cực trị+bảng; 1 giới hạn+giao trục; 1 tâm và đồ thị khớp chứng cứ.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Đồ thị bậc ba”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Đạo hàm bậc ba là tam thức, nghiệm kép không nhất thiết sinh hai cực trị.
 
 </details>
 
@@ -1792,7 +1792,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** h'=3(1−x²), tăng (−1,1), giảm (−∞,−1),(1,∞); min (−1,−2), max (1,2) là **cực trị cục bộ**, không GTLN/GTNN toàn ℝ.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Đồ thị bậc ba”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Đạo hàm bậc ba là tam thức, nghiệm kép không nhất thiết sinh hai cực trị.
 
 </details>
 
@@ -1804,7 +1804,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** f'=3x(x−2), cực đại (0,0), cực tiểu (2,−4).
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Đồ thị bậc ba”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Đạo hàm bậc ba là tam thức, nghiệm kép không nhất thiết sinh hai cực trị.
 
 </details>
 
@@ -1853,7 +1853,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** f→+∞ khi q→10+, f→4 khi q→∞, f'<0; trên (10,∞) chi phí giảm dần và tiệm cận y=4. Không mở rộng sang q≤10 nếu mô hình quy định q>10.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Phân thức”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Với phân thức, ghi nghiệm mẫu và xét f′ trên từng thành phần miền.
 
 </details>
 
@@ -1865,7 +1865,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** g'=−3/(x−1)²<0; giảm riêng trên (−∞,1) và (1,+∞).
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Phân thức”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Với phân thức, ghi nghiệm mẫu và xét f′ trên từng thành phần miền.
 
 </details>
 
@@ -1891,7 +1891,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** x=0 nghiệm kép, tiếp xúc Ox tại (0,0); x=3 nghiệm đơn, cắt Ox tại (3,0).
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Giao trục”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Nghiệm tử chỉ cho giao Ox khi không bị mẫu triệt tiêu; giao Oy cần 0 thuộc miền.
 
 </details>
 
@@ -1903,7 +1903,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** Ox: x=−2 ⇒ (−2,0); Oy: x=0 ⇒ (0,−2).
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Giao trục”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Nghiệm tử chỉ cho giao Ox khi không bị mẫu triệt tiêu; giao Oy cần 0 thuộc miền.
 
 </details>
 
@@ -1929,7 +1929,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** (1,−2), vì hoành độ điểm uốn x=−b/(3a)=1 và f(1)=−2; không phải (0,0).
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Tâm đối xứng”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Tách y=b+k/(x−a) và kiểm cặp điểm (a±h) đối xứng qua (a,b).
 
 </details>
 
@@ -1941,7 +1941,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** (4,2), giao hai tiệm cận x=4, y=2.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Tâm đối xứng”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Tách y=b+k/(x−a) và kiểm cặp điểm (a±h) đối xứng qua (a,b).
 
 </details>
 
@@ -1967,7 +1967,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** Cực đại ở −1; cực tiểu ở3. Muốn biết giá trị phải thay vào hàm.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Bảng biến thiên”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Bảng biến thiên cho cực trị địa phương; kiểm điểm đạt và biên để suy toàn cục.
 
 </details>
 
@@ -1995,7 +1995,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Rubric /4:** 1 D+đạo hàm; 1 đơn điệu từng khoảng; 1 giới hạn/tiệm cận; 1 giao trục+đúng hai nhánh. Anchor chỉ tag một câu.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Miền rời”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Thử hai điểm ở hai nhánh để thấy dấu f′ âm riêng từng nhánh chưa đủ cho toàn D.
 
 </details>
 
@@ -2007,7 +2007,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** Không; x=−1 bị loại khỏi D và là tiệm cận đứng.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Miền rời”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Thử hai điểm ở hai nhánh để thấy dấu f′ âm riêng từng nhánh chưa đủ cho toàn D.
 
 </details>
 
@@ -2035,7 +2035,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** 3x² ⇒ f'(2)=12 cm/phút, thay đổi tức thời của f khi x ở gần2 phút.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Chi phí cận biên”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Chi phí C có đơn vị tiền, C′ có đơn vị tiền/sản phẩm: phải ghi riêng.
 
 </details>
 
@@ -2047,7 +2047,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** f'=4x, f'(2)=8 m/s. Không gọi đây là gia tốc.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Chi phí cận biên”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Chi phí C có đơn vị tiền, C′ có đơn vị tiền/sản phẩm: phải ghi riêng.
 
 </details>
 
@@ -2073,7 +2073,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** t=2, v=−1 nên v·a<0, tốc độ giảm; tại t=3 v=0, phải xét lân cận, không suy chỉ từ a.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Dấu v·a”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Tại v≠0 dùng dấu v·a, không chỉ dấu a, để kết luận tốc độ đang tăng hay giảm.
 
 </details>
 
@@ -2085,7 +2085,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** v=2t−4, v(1)=−2 m/s; tốc độ 2 m/s, chiều âm.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Dấu v·a”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Tại v≠0 dùng dấu v·a, không chỉ dấu a, để kết luận tốc độ đang tăng hay giảm.
 
 </details>
 
@@ -2113,7 +2113,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Rubric /4:** 1 đạo hàm; 1 giá trị C'(50); 1 sai phân; 1 diễn giải đúng đơn vị và "xấp xỉ". Anchor là nhãn, không nhân bản.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Chênh lệch chi phí thực”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** C′(q) là cận biên, ΔC=C(q+1)−C(q) là chênh thực; tính cả hai để so.
 
 </details>
 
@@ -2125,7 +2125,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** 9 so với 9.02 nghìn đồng; sai phân hữu hạn không luôn bằng đạo hàm.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Chênh lệch chi phí thực”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** C′(q) là cận biên, ΔC=C(q+1)−C(q) là chênh thực; tính cả hai để so.
 
 </details>
 
@@ -2137,7 +2137,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** C'=2q+10, C'(5)=20 nghìn đồng/sản phẩm; không phải C(5).
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Chênh lệch chi phí thực”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** C′(q) là cận biên, ΔC=C(q+1)−C(q) là chênh thực; tính cả hai để so.
 
 </details>
 
@@ -2163,7 +2163,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** 0≤q≤300, đơn vị sản phẩm theo mô hình liên tục; nếu cần q nguyên thì lấy giao với ℤ.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Miền hộp”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Độ dài đáy và chiều cao phải dương; xác định miền vật lý trước tối ưu.
 
 </details>
 
@@ -2175,7 +2175,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** 0<x<10 cm, vì 30−2x>0, 20−2x>0 và x>0.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Miền hộp”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Độ dài đáy và chiều cao phải dương; xác định miền vật lý trước tối ưu.
 
 </details>
 
@@ -2201,7 +2201,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** 10 m cạnh vuông góc tường, 20 m song song; Amax=200 m².
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Ứng viên/biên”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Nghiệm f′=0 chỉ là ứng viên nội miền; hãy so các biên có trong miền.
 
 </details>
 
@@ -2213,7 +2213,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** f'=−2x+8, x=4 cho f=13; f(0)=−3, f(6)=9; max13 tại4.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Ứng viên/biên”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Nghiệm f′=0 chỉ là ứng viên nội miền; hãy so các biên có trong miền.
 
 </details>
 
@@ -2264,7 +2264,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Rubric /4:** 1 biến+miền; 1 mô hình V+đạo hàm; 1 nghiệm và dấu; 1 loại nghiệm ngoài miền, kích thước và đơn vị.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Điểm không khả vi”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Điểm |x| gãy không khả vi nhưng vẫn có thể cho GTNN: kiểm cả điểm gãy.
 
 </details>
 
@@ -2276,7 +2276,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** Không, x=10 làm chiều rộng đáy 0, hộp suy biến; miền (0,10), inf V=0 nhưng không có min.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Điểm không khả vi”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Điểm |x| gãy không khả vi nhưng vẫn có thể cho GTNN: kiểm cả điểm gãy.
 
 </details>
 
@@ -2302,7 +2302,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** P(100)=600 nghìn đồng, không phải 600 sản phẩm; q=100 sản phẩm tối ưu trong mô hình.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Biến nguyên”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Số sản phẩm là nguyên; so các nguyên hợp lệ sát đỉnh liên tục.
 
 </details>
 
@@ -2314,7 +2314,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** m²/m=m; đó là độ nhạy diện tích theo độ dài, **không** là vận tốc nếu x không phải thời gian.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Biến nguyên”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Số sản phẩm là nguyên; so các nguyên hợp lệ sát đỉnh liên tục.
 
 </details>
 
@@ -2342,7 +2342,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Author-key:** max1 tại1; không min, vì f>0 nhưng →0 ở hai biên bị loại.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Cực trị và toàn cục”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Đừng dùng cực đại địa phương làm GTLN khi f không bị chặn phía trên.
 
 </details>
 
@@ -2354,7 +2354,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Author-key:** min1 tại2; max5 tại cả x=0 và4.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Cực trị và toàn cục”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Đừng dùng cực đại địa phương làm GTLN khi f không bị chặn phía trên.
 
 </details>
 
@@ -2366,7 +2366,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Author-key AFTER FINAL SUBMIT:** f'=3(x−1)(x−3), tăng (−∞,1),(3,+∞), giảm (1,3); cực đại (1,4), cực tiểu (3,0).
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Cực trị và toàn cục”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Đừng dùng cực đại địa phương làm GTLN khi f không bị chặn phía trên.
 
 </details>
 
@@ -2394,7 +2394,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Rubric tự đối chiếu /4:** 1 D/chia; 1 tiệm cận; 1 đạo hàm/dấu; 1 cực trị và nhánh không nối. Không ghi điểm Skill Mastery.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Tiệm cận và đạo hàm”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** TCD cần giới hạn vô cực, tiệm cận xiên cần hiệu tiến0; kiểm đạo hàm theo từng nhánh.
 
 </details>
 
@@ -2406,7 +2406,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Author-key:** g=x+2+8/(x−2), đứng x=2, xiên y=x+2.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Tiệm cận và đạo hàm”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** TCD cần giới hạn vô cực, tiệm cận xiên cần hiệu tiến0; kiểm đạo hàm theo từng nhánh.
 
 </details>
 
@@ -2418,7 +2418,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Author-key:** g=2+7/(x−3), đứng x=3, ngang y=2, tâm (3,2).
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Tiệm cận và đạo hàm”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** TCD cần giới hạn vô cực, tiệm cận xiên cần hiệu tiến0; kiểm đạo hàm theo từng nhánh.
 
 </details>
 
@@ -2446,7 +2446,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Rubric tự đối chiếu /4:** 1 miền+đơn vị; 1 đạo hàm; 1 so ba giá trị; 1 kết luận thực tế. Anchor chỉ là nhãn của câu W02.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Lợi nhuận”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Đặt lợi nhuận P=R−C rồi tối ưu P, không tối ưu riêng C hay R.
 
 </details>
 
@@ -2458,7 +2458,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Author-key:** 2x+y=36, 0<x<18; A=x(36−2x), x=9,y=18, Amax162m².
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Lợi nhuận”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Đặt lợi nhuận P=R−C rồi tối ưu P, không tối ưu riêng C hay R.
 
 </details>
 
@@ -2470,7 +2470,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Author-key:** v=4t−8, v(1)=−4m/s, đi chiều âm, tốc độ 4m/s.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Lợi nhuận”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Đặt lợi nhuận P=R−C rồi tối ưu P, không tối ưu riêng C hay R.
 
 </details>
 
@@ -2523,7 +2523,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Author-key:** Chỉ giảm mỗi khoảng (−∞,−1), (−1,∞). Chọn x1=−2, x2=0: f(x1)=−1<f(x2)=3; không giảm trên toàn hợp.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Điều kiện và tự kiểm”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Kiểm lại miền, điểm cấm, giới hạn một phía, biên và đơn vị trước kết luận.
 
 </details>
 
@@ -2535,7 +2535,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Author-key:** Sai; h=x+2 trên D, lim x→2 h=4 hữu hạn, có lỗ (2,4).
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Điều kiện và tự kiểm”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Kiểm lại miền, điểm cấm, giới hạn một phía, biên và đơn vị trước kết luận.
 
 </details>
 
@@ -2547,7 +2547,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Author-key:** Sai, f'=3x² không đổi dấu, f tăng qua0; không có cực trị tại0.
 
-**Nếu làm sai:** Nếu chưa giải được, quay lại phần Kiến thức “Điều kiện và tự kiểm”: kiểm miền, điều kiện dùng công cụ, làm lại từng bước rồi mới so lời giải.
+**Nếu làm sai:** Kiểm lại miền, điểm cấm, giới hạn một phía, biên và đơn vị trước kết luận.
 
 </details>
 
