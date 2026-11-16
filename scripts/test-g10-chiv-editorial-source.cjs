@@ -95,13 +95,21 @@ for(const [lesson,row] of rows){
  }
  if(n<=10&&n!==8){
   assert.deepEqual(tex(source),tex(previous),lesson+" original mathematical expressions changed beyond reordering");
- }else{
+ }else if(n===11){
   assert(official.includes("có thể nhận một giá trị tùy ý từ $0^\\circ$ đến $180^\\circ$"),"B11 original SGK zero-angle range");
   assert(official.includes("vuông góc với mọi vectơ"),"B11 SGK orthogonality convention");
   assert(official.includes("hai độ dài đều dương"),"B11 denominator guard");
   assert(official.includes("\\vec u\\cdot\\vec v=ac+bd"),"B11 coordinate product formula");
   assert.equal((last.match(/data-thpt-first-try-id/g)||[]).length,1,
    "B11 original extra transfer First Try remains in mistakes tab");
+ }else{
+  assert.equal(lesson,"B08","Only B08 source enrichment may skip legacy order-only TeX check");
+  for(const required of [
+   "\\overrightarrow{AB}+\\overrightarrow{BC}=\\overrightarrow{AC}",
+   "\\overrightarrow{AB}+\\overrightarrow{AD}=\\overrightarrow{AC}",
+   "\\vec u-\\vec v=\\vec u+(-\\vec v)",
+   "\\overrightarrow{GA}+\\overrightarrow{GB}+\\overrightarrow{GC}=\\vec0"
+  ])assert(official.includes(required),"B08 R02 must retain original vector rule: "+required);
  }
  assert.notDeepEqual(ids(source.replace('data-thpt-first-try-id="','data-thpt-first-try-id="BAD-'),
   "data-thpt-first-try-id"),ids(previous,"data-thpt-first-try-id"),lesson+" ID mutation must fail");
