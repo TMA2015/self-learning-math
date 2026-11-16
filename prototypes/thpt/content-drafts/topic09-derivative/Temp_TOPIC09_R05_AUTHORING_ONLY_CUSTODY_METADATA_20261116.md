@@ -4,7 +4,7 @@ R03_IMMUTABLE_GIT_BLOB: 52be5ef6b8684632435ae22429bf7b5db5cf50cf
 CURRENT_LEARNER_SOURCE_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md
 CURRENT_LEARNER_SOURCE_BLOB: 8222107d717f7d02b845f79ccdd154e8dbe71cc6
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC09_R05_AUTHOR_SELF_QA_RECEIPT_20261116.md
-CURRENT_Q18_RECEIPT_BLOB: 6cd023b8da3056d9880d89c738f55876c5f433d7
+CURRENT_Q18_RECEIPT_BLOB: bce770e351460d9d01d7567332aed489bc68aa4d
 STATUS: R05_Q18_AUTHOR_SELF_VERIFIED_PENDING_V2_GATE
 
 ## Nguồn S1 và giới hạn nội dung
@@ -162,6 +162,6 @@ DELTA_C_P23: Original R01 bank immutable; R04 canonical P23 says "tập xác đ�
 
 - 32 outcome có 32 Ví dụ đầy đủ, 32 Vận dụng–Đối chiếu ngay sát bài, ba trang Kiến thức–Luyện tập–Tự kiểm tra; 108 actual canonical display, 14 Written/rubric, 108 đường khắc phục, 32 public replay selfcheck chỉ có câu hỏi. Không có Topic Core/RD1 riêng.
 - 71 SGK canonical item gốc blob `3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0`, index `3c025ce2dfb8e16743873ac2b3f35bfb37c27ef8` bất biến. 37 Topic canonical R05 blob `f249949be3b254a29c8859301b6c4904e636c505`, P23 content_version=2 giữ đúng “tập xác định”.
-- Four SVG R01 remain immutable. R05 learner blob `8222107d717f7d02b845f79ccdd154e8dbe71cc6`; Q18 `AUTHOR_SELF_VERIFIED` receipt blob `6cd023b8da3056d9880d89c738f55876c5f433d7` (272 source +37 numeric audit checks), không NotebookLM independent PASS.
+- Four SVG R01 remain immutable. R05 learner blob `8222107d717f7d02b845f79ccdd154e8dbe71cc6`; Q18 `AUTHOR_SELF_VERIFIED` receipt blob `bce770e351460d9d01d7567332aed489bc68aa4d` (272 source +37 numeric audit checks), không NotebookLM independent PASS.
 - Historical R04 learner `68fe5b8a3ded75b6f774b4685655487d9b4bdff9`, author receipt `bc2aa70ad7c46d678889f0ed750c79201b16dc58`, prior V2 `496c9a66c75f8cd103b58b2f747956e72eafa518` unchanged, no PASS transplanted.
 - Source 06 review request `Temp_TOPIC09_R05_AUTHOR_Q18_SELF_AUDIT_REVIEW_HOLD_20261116.md` preserved as previous review HOLD snapshot; new signed Q18 self-verification follows owner-approved optional external NotebookLM mode v3.1.0. No browser, Final Submit, website or release authorization claim.
