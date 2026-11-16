@@ -711,43 +711,60 @@ Em luyện từng chặng sau khi hiểu cách chọn định lí và điều ki
 
 ## 3. Tự kiểm tra
 
-**Tự kiểm tra để biết mình cần ôn gì:** Những câu ở đây đã xuất hiện trong lúc Luyện tập, vì vậy kết quả chỉ giúp em tự đối chiếu, **không phải một bài thi độc lập**. Trước khi bấm **Nộp bài**, em sẽ không thấy gợi ý, lời giải, đáp án hay nhận xét đúng/sai. Sau khi nộp, em có thể xem cách làm và xác định phần cần ôn; lượt này không tự động cộng điểm thành thạo.
+**12 câu hỏi tự kiểm tra công khai.** Em hãy làm cả 12 câu trước khi quay lại phần Luyện tập để tự mở lời giải và nhận ra phần cần ôn. Đây là các câu đã dùng để luyện, **không phải bài kiểm tra độc lập hoặc kết quả Mastery**. Tài liệu này không có chức năng nộp bài, chấm điểm hay xét đạt chuẩn chính thức.
 
-Một lượt ôn tự kiểm có 12 nhiệm vụ: dấu góc tù, miền xác định, cạnh/góc đối diện, hai nghiệm SSA, dữ kiện vô nghiệm, diện tích, bán kính và khoảng cách. Các câu lấy từ bài công khai đã học, nên đây là lượt **tự đối chiếu**, không phải đề thi độc lập.
+<!-- PUBLIC_REPLAY_ONLY: THPT-G10-B05-C01; OUTCOME: TOP12-O01; NO_RD1; NO_MASTERY -->
 
+**Câu 1.** Giá trị của \(\cos120^\circ\) là bao nhiêu?
 
-<!-- AUTHORING ONLY · canonical SGK source-pointer roster; not learner-visible
-- THPT-G10-B05-C01
-- THPT-G10-B05-C02
-- THPT-G10-B05-P01
-- THPT-G10-B05-P02
-- THPT-G10-B05-P03
-- THPT-G10-B05-P04
-- THPT-G10-B05-P05
-- THPT-G10-B05-P06
-- THPT-G10-CHIII-W05
-- THPT-G10-B06-C01
-- THPT-G10-B06-C02
-- THPT-G10-B06-P01
-- THPT-G10-B06-P02
-- THPT-G10-B06-P03
-- THPT-G10-B06-P04
-- THPT-G10-B06-P05
-- THPT-G10-B06-P06
-- THPT-G10-CHIII-W06-ANCHOR
--->
-<!-- AUTHORING ONLY · 12 public self-check placements; no new independent IDs
-- THPT-G10-B05-C01
-- THPT-G10-B05-P02
-- THPT-G10-B05-P05
-- THPT-TOP12-P01
-- THPT-G10-B06-C01
-- THPT-G10-B06-P03
-- THPT-TOP12-P06
-- THPT-TOP12-P07
-- THPT-G10-B06-P04
-- THPT-TOP12-P10
-- THPT-TOP12-W02
-- THPT-TOP12-W03
-ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
--->
+**Lựa chọn:** A. \(\tfrac12\) | B. \(-\tfrac12\) | C. \(\tfrac{\sqrt3}{2}\) | D. \(-\tfrac{\sqrt3}{2}\)
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-G10-B05-P02; OUTCOME: TOP12-O04; NO_RD1; NO_MASTERY -->
+
+**Câu 2.** Cho góc tù α với \(\cos\alpha=-3/5\). Tính \(\sin\alpha\) và \(\tan\alpha\).
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-G10-B05-P05; OUTCOME: TOP12-O02; NO_RD1; NO_MASTERY -->
+
+**Câu 3.** Trong \([0^\circ,180^\circ]\), có những góc nào thỏa \(\sin\alpha=\sqrt3/2\)?
+
+**Lựa chọn:** A. Chỉ 60° | B. Chỉ 120° | C. 60° và 120° | D. 30° và 150°
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP12-P01; OUTCOME: TOP12-O04; NO_RD1; NO_MASTERY -->
+
+**Câu 4.** Góc tù α có `cosα=−5/13`. Tính sinα và tanα; giải thích việc chọn dấu.
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-G10-B06-C01; OUTCOME: TOP12-O05; NO_RD1; NO_MASTERY -->
+
+**Câu 5.** Trong tam giác ABC có \(b=5,c=7,A=60^\circ\). Tính \(a\).
+
+**Lựa chọn:** A. \(\sqrt{39}\) | B. \(\sqrt{74}\) | C. \(\sqrt{109}\) | D. \(\sqrt{14}\)
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-G10-B06-P03; OUTCOME: TOP12-O06; NO_RD1; NO_MASTERY -->
+
+**Câu 6.** Tam giác ABC có \(A=30^\circ,B=60^\circ,c=8\). Tính \(a,b\).
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP12-P06; OUTCOME: TOP12-O08; NO_RD1; NO_MASTERY -->
+
+**Câu 7.** Biết `A=30°, a=6, b=10`. Có bao nhiêu tam giác khác nhau thỏa dữ kiện? Nêu hai giá trị khả dĩ của B theo biểu thức arcsin.
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP12-P07; OUTCOME: TOP12-O08; NO_RD1; NO_MASTERY -->
+
+**Câu 8.** `A=30°, a=3, b=7`. Hãy kiểm chứng có tồn tại tam giác ABC hay không.
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-G10-B06-P04; OUTCOME: TOP12-O10; NO_RD1; NO_MASTERY -->
+
+**Câu 9.** Tam giác có ba cạnh \(a=7,b=8,c=9\). Tính \(\cos C\) và diện tích \(S\).
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP12-P10; OUTCOME: TOP12-O11; NO_RD1; NO_MASTERY -->
+
+**Câu 10.** Hai điểm A,B cách nhau 80 m; cùng nhìn C sao cho `A=30°,B=45°` là các góc **trong** của tam giác ABC. Tìm BC và AC dưới dạng căn thức chính xác.
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP12-W02; OUTCOME: TOP12-O11; NO_RD1; NO_MASTERY -->
+
+**Câu 11.** AB dài 120 m; A,B đo được các góc trong `A=45°,B=75°` đến C. Tính C, BC, AC; nêu đơn vị và vì sao dùng định lí sin.
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP12-W03; OUTCOME: TOP12-O08; NO_RD1; NO_MASTERY -->
+
+**Câu 12.** Trong tam giác ABC, biết `A=30°, a=8,b=10`. Chứng minh rằng dữ kiện cho hai tam giác khác nhau; mô tả cách tìm C cho mỗi tam giác.
+
+<!-- AUTHORING: 12 public self-check placements; answers/rubrics only in voluntary Practice reveals; no held-out RD1. -->
