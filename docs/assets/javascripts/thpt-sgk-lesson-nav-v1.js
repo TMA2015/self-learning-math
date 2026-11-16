@@ -71,6 +71,25 @@ const numberG10FirstSix=(article)=>{
     return;
   }
  }
+ // B03: source-correct S1 has TWO main sections with numbered h4
+ // subsections. Preserve actual source numbering and five canonical TRY IDs.
+ if(/\/chuong-ii\/bai-3\/?$/.test(location.pathname)){
+  const discovery=[...blocks[0].querySelectorAll(":scope > h3")].map(h=>h.textContent.trim());
+  const knowledge=[...blocks[1].querySelectorAll(":scope > h3")].map(h=>h.textContent.trim());
+  const children=[...blocks[1].querySelectorAll(":scope > h4")].map(h=>h.textContent.trim());
+  const examples=[...blocks[2].querySelectorAll(":scope > h3")].map(h=>h.textContent.trim());
+  const help=[...blocks[3].querySelectorAll(":scope > details.tip > summary")].map(h=>h.textContent.trim());
+  if(discovery.length===3&&knowledge.length===2&&children.length===5&&examples.length===3&&help.length===2&&
+     discovery.every((s,i)=>s.startsWith("1."+(i+1)+". "))&&
+     knowledge.every((s,i)=>s.startsWith("2."+(i+1)+". "))&&
+     children[0].startsWith("2.1.1. ")&&children[1].startsWith("2.1.2. ")&&
+     children.slice(2).every((s,i)=>s.startsWith("2.2."+(i+1)+". "))&&
+     examples.every((s,i)=>s.startsWith("3."+(i+1)+". Ví dụ "+(i+1)+" —"))&&
+     help.every((s,i)=>s.startsWith("4."+(i+1)+". "))){
+    article.dataset.g10B01B06EditorialNumbered="true";
+    return;
+  }
+ }
  const discovery=[...blocks[0].querySelectorAll("h3")];
  const original=["Cùng tìm hiểu","Ví dụ trực quan","Thuật ngữ và kiến thức, kỹ năng"];
  if(discovery.length!==3||!discovery.every((node,i)=>node.textContent.trim()===original[i]))return;
