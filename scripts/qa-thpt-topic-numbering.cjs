@@ -68,7 +68,7 @@ function lintTopicMarkdown(markdown, displayPath) {
       }
       if (/^####\s/.test(line)) add("SKIPPED_LEVEL", page + ": unexpected H4 " + line);
       if (page !== "Luyện tập") continue;
-      const item = line.match(/^\*\*(Bài SGK|Bài luyện|Bài|Luyện|Tự luận)\s+(\d+)\.(?:\s|$)/);
+      const item = line.match(/^\*\*(Bài SGK|Bài luyện|Bài|Luyện|Tự luận)\s+(\d+)\.(?:\*\*|\s|$)/);
       if (!item) continue;
       const key = group + "|" + item[1];
       const previous = practiceLabels.get(key);
