@@ -1,4 +1,4 @@
-# CĐ13 — Vectơ hình học phẳng và không gian · AUTHORING CONTENT_READY R03 (stable PACKET R01)
+# CĐ13 — Vectơ hình học phẳng và không gian · AUTHORING CONTENT_READY R04 (stable PACKET R01)
 
 PACKET_ID: THPT-TOPIC13-PLANAR-SPATIAL-VECTORS-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -8,23 +8,23 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: d4a56417476706b32b247bb92b49443ed33e51f2
+SOURCE_COMMIT: 198b6a1fe58017945df0d53ee78005b12ed4a702
 CATALOG_TOPIC_ID: CD13
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R03_STUDENT_FIRST_52_CANONICAL_VISIBLE_20261116.md
-ACADEMIC_SOURCE_BLOB: 7f3e90e5eadcbaa1dc7b49cd6d5136f6dbf61e22
-REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC13_R03_AUTHOR_SELF_QA_RECEIPT_20261116.md (Q18 AUTHOR_SELF_VERIFIED, not new independent NotebookLM PASS)
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC13_R03_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: bf040651f959e2559c37662caeb66d31d68b6bf9
-AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R03_AUTHORING_ONLY_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: 755c71241b3c1b3454d81a065ac609286a6a19ee
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
+ACADEMIC_SOURCE_BLOB: 4ddf62bc1ddca87e550201bb30cb7a88eb69cf7c
+REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md (Q18 AUTHOR_SELF_VERIFIED, not new independent NotebookLM PASS)
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
+REVIEW_RECEIPT_BLOB: 4fca1106e615f70be8fd760fbacaafb42a33437c
+AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
+AUTHOR_A1_A7_BLOB: 122d8fb295238406c0c52292b8e93e25dc12e2bc
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: d2f4b9fbd11b65ddd0a3190cc4cfbb8569951175
 G10_SGK_ORIGINAL_DEPENDENCY_PR: 750
 G10_SGK_ORIGINAL_DEPENDENCY_BRANCH: authoring/g10-chiv-ped-r02-24-outcomes-20261105
-AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC13-PLANAR-SPATIAL-VECTORS-FULL-R03_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: 9b8a1746e8d2c5eb998b8630dadc0ef1f83f7acb
+AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC13-PLANAR-SPATIAL-VECTORS-FULL-R04_HANDOFF_V2_NUMBERING_20261116.md
+AUTHOR_HANDOFF_BLOB: 6fc04f713e973c374673bbc5dfe93dae65b68744
 ORIGINAL_G10_SGK_SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9
 ORIGINAL_G12_SGK_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
 SVG1_BLOB: 55ec9add04cb79da2cad7703b3897271e5b3436a
@@ -50,10 +50,18 @@ The independent Topic CĐ13 student path has 3 pages Knowledge / Practice / Self
 
 - 16/16 self-sufficient outcome modules, 16 worked examples with separate problem/solution, 16 immediate formative Self Try and opt-in Đối chiếu, three Topic pages, no Core.
 - 52/52 source-exact learner-visible public Practice (20 original G10 SGK + 12 original G12 SGK + 20 Topic), four full Written rubrics /7, 52 specific D6 remediation, 16 question-only public replay Selfchecks from Practice; no official Readiness or Mastery.
-- Active learner `7f3e90e5eadcbaa1dc7b49cd6d5136f6dbf61e22`, Q18 R03 AUTHOR_SELF_VERIFIED receipt `bf040651f959e2559c37662caeb66d31d68b6bf9`: 261/261 source/canonical/PED checks plus 40/40 direct math/SVG tests PASS (author P0/P1=0). Not an independent NotebookLM Topic13 PASS, real browser/learner UAT or RELEASE approval.
+- Active learner `4ddf62bc1ddca87e550201bb30cb7a88eb69cf7c`, Q18 R03 AUTHOR_SELF_VERIFIED receipt `4fca1106e615f70be8fd760fbacaafb42a33437c`: 261/261 source/canonical/PED checks plus 40/40 direct math/SVG tests PASS (author P0/P1=0). Not an independent NotebookLM Topic13 PASS, real browser/learner UAT or RELEASE approval.
 - NEW20 one bank `d2f4b9fbd11b65ddd0a3190cc4cfbb8569951175` preserves 20 exact original R02 stems/keys/solutions/rubrics, no new item IDs. G12 original blob `856a37bd16d2746ffc2e12906de18d1f4338a3b6` unchanged. G10 original 20 items checked **directly** on sibling Draft PR #750 blob `96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9`; original file is not yet in PR #841 branch. **RELEASE R1 intake must reconcile this exact original G10 source on combined HEAD; if absent, hold, do not substitute.**
 - Historical R02 learner `d351c5aec660d6482f6694becbd3e2567a14edbf`, Q18 `d0d0fcf79149c67fa0e033b9588cd8b15d60b1f5` and original V2 `e27caf5ae79872454b6f665149762b1917ee3080` preserved.
 - Four source-locked SVG with five on-page references; browser/Golden/MathJax/SVG responsiveness/Final Submit/P1/P2/device QA and owner merge/deploy permission are RELEASE-only. AUTHORING **NO MERGE/DEPLOY**.
+
+
+## R04 numbering Delta-A — AUTHORING QA
+
+- Kiến thức H2 1–3 thay Mạch A/B/C; H3 bài 1.1–3.6 thay chuỗi 1–16 chạy xuyên mạch. Practice H2 1–3 (SGK, New Topic, Written); 52 public learner cards dùng nhãn riêng, không làm TOC phình bởi mỗi câu. Tự kiểm tra giữ 16 câu.
+- New source `4ddf62bc1ddca87e550201bb30cb7a88eb69cf7c`, author self Q18 `4fca1106e615f70be8fd760fbacaafb42a33437c`, one V2 `6fc04f713e973c374673bbc5dfe93dae65b68744`. R03 source `7f3e90e5eadcbaa1dc7b49cd6d5136f6dbf61e22`, Q18 `bf040651f959e2559c37662caeb66d31d68b6bf9`, V2 `9b8a1746e8d2c5eb998b8630dadc0ef1f83f7acb` remain immutable.
+- All 52 unique original SGK and Topic IDs/keys/solutions/rubrics/D6 byte-equivalent, `DELTA_A_UI`; original G10 SGK source in sibling Draft PR #750 still a separate source dependency for RELEASE intake.
+- No independent new NotebookLM review/website browser QA. RELEASE checks Golden DOM heading tree, MathJax, responsive, assessment, and owner permission; NO MERGE/DEPLOY.
 
 ## AUTHORING A1–A7
 
