@@ -68,7 +68,7 @@ for(let n=1;n<=27;n++){
   const receiptPath="prototypes/thpt/ux795/G10_CHIII_B06_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md";
   const receipt=fs.readFileSync(path.join(root,receiptPath),"utf8");
   const field=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
-  assert.equal(blob(source),field("CANDIDATE_LESSON_GIT_BLOB"),"B06 postmerge overlay exact academic receipt");
+  assert.equal(blob(fs.readFileSync(path.join(root,"docs",route+".md"))),field("CANDIDATE_LESSON_GIT_BLOB"),"B06 postmerge overlay exact academic receipt");
   assert.equal([...markdown.matchAll(/data-thpt-help-id="([^"]+)"/g)].length,2,
    "B06 original two HELP IDs preserved, no assessment mutation");
  }
