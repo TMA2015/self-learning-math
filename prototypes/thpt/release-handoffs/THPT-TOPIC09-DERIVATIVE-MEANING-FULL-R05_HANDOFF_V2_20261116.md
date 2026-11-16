@@ -3,7 +3,7 @@
 PACKET_ID: THPT-TOPIC09-DERIVATIVE-MEANING-FULL-R01
 CONTENT_REVISION: R05
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_AUTHORING_ONLY_CUSTODY_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: 85bc50eaf70beb3b05cdfc4c3e51b4611b69aea3
+AUTHOR_METADATA_BLOB: b21436d491361f4912b1aba620b2cf1ff40a76bf
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
@@ -13,7 +13,7 @@ Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md
 ACADEMIC_SOURCE_BLOB: 8222107d717f7d02b845f79ccdd154e8dbe71cc6
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC09_R05_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 6cd023b8da3056d9880d89c738f55876c5f433d7
+REVIEW_RECEIPT_BLOB: bce770e351460d9d01d7567332aed489bc68aa4d
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_NEW37_PUBLIC_CANONICAL_R05_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: f249949be3b254a29c8859301b6c4904e636c505
 PUBLIC_ORIGINAL71_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_ORIGINAL71_SGK_CANONICAL_INDEX_R01_20261112.md
@@ -385,13 +385,13 @@ One placement per 32 new Practice item ID P01–P32, available earlier in Practi
 - **32** public Selfcheck P01–P32 là đề thật, công khai lặp lại Practice, chỉ `CLIENT_SELF_CHECK_NO_MASTERY`, không có câu giải/hint/rubric trước khi học sinh tự làm. Không copy 31 RD1 private SGK.
 - Q15 R05 new37 blob `f249949be3b254a29c8859301b6c4904e636c505` giữ 37 ID; P23 tăng `content_version=2` cho lời hỏi **tập xác định** đã sửa ở R04; original71 index `3c025ce2dfb8e16743873ac2b3f35bfb37c27ef8` bất biến.
 - 4 SVG secant/product area/velocity-acceleration/linear differential giữ blob gốc đúng các phép tính, không giả định đã render trên browser; O32 vi phân là Topic extension, không SGK Core.
-- Q18 receipt R05 blob `6cd023b8da3056d9880d89c738f55876c5f433d7` ký `AUTHOR_SELF_VERIFIED` theo v3.1.0 cho source R05 `8222107d717f7d02b845f79ccdd154e8dbe71cc6`: **272/272 direct source/parity/PED assertions PASS +37/37 numeric/figure checks PASS**, P0/P1=0. Không nhận là NotebookLM independent review PASS.
+- Q18 receipt R05 blob `bce770e351460d9d01d7567332aed489bc68aa4d` ký `AUTHOR_SELF_VERIFIED` theo v3.1.0 cho source R05 `8222107d717f7d02b845f79ccdd154e8dbe71cc6`: **272/272 direct source/parity/PED assertions PASS +37/37 numeric/figure checks PASS**, P0/P1=0. Không nhận là NotebookLM independent review PASS.
 - Lịch sử R04 learner `68fe5b8a3ded75b6f774b4685655487d9b4bdff9`, receipt `bc2aa70ad7c46d678889f0ed750c79201b16dc58` và V2 `496c9a66c75f8cd103b58b2f747956e72eafa518` **được bảo toàn nguyên blob**. R05 delta C có kiểm lại nội dung, không kế thừa PASS R04.
 - Q18 self check là cổng AUTHORING; các cổng AP1–AP5/R1–R5/browser/MathJax/rubric actual rendering/Final Submit/owner release authorization đều thuộc RELEASE, hiện chưa PASS, NO MERGE/DEPLOY.
 
 ## QUALITY_Q01_Q18_EVIDENCE
 
-One normative `SLM-THPT-QUALITY-ONE v3.1.0`, from `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`. Exact learner SHA 8222107d717f7d02b845f79ccdd154e8dbe71cc6, receipt SHA 6cd023b8da3056d9880d89c738f55876c5f433d7; not an independent NotebookLM reviewer PASS on R05.
+One normative `SLM-THPT-QUALITY-ONE v3.1.0`, from `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`. Exact learner SHA 8222107d717f7d02b845f79ccdd154e8dbe71cc6, receipt SHA bce770e351460d9d01d7567332aed489bc68aa4d; not an independent NotebookLM reviewer PASS on R05.
 
 | Qxx | Exact academic/pedagogical source evidence | Scope verdict | Source trace | Release boundary |
 |---|---|---|---|---|
@@ -441,7 +441,7 @@ One normative `SLM-THPT-QUALITY-ONE v3.1.0`, from `prototypes/thpt/THPT_UNIFIED_
 
 ## AUTHORING_A1_A7
 
-A1 source SHA 8222107d717f7d02b845f79ccdd154e8dbe71cc6, self-QA receipt 6cd023b8da3056d9880d89c738f55876c5f433d7, one stable V2 packet. A2 scoped original G11 ChIX SGK/SBT printed/PDF index receipt. A3 substantive author Q18 self-review of DELTA_C, not a new independent NotebookLM review on R05. A4 32 outcomes/108 unique IDs/32 public selfchecks, 5 new Written rubric. A5 five natural conceptual arcs and 32 targeted First Tries, four exact SVG. A6 37 canonical source answers/conditions and four figure value checks; P23 stem already corrected in R04, content_version=2 on active R05 bank. A7 original 31 RD1 owner-held, none copied; public mode no Mastery and Final Submit gate for RELEASE.
+A1 source SHA 8222107d717f7d02b845f79ccdd154e8dbe71cc6, self-QA receipt bce770e351460d9d01d7567332aed489bc68aa4d, one stable V2 packet. A2 scoped original G11 ChIX SGK/SBT printed/PDF index receipt. A3 substantive author Q18 self-review of DELTA_C, not a new independent NotebookLM review on R05. A4 32 outcomes/108 unique IDs/32 public selfchecks, 5 new Written rubric. A5 five natural conceptual arcs and 32 targeted First Tries, four exact SVG. A6 37 canonical source answers/conditions and four figure value checks; P23 stem already corrected in R04, content_version=2 on active R05 bank. A7 original 31 RD1 owner-held, none copied; public mode no Mastery and Final Submit gate for RELEASE.
 
 ## DELTA_LEDGER
 
