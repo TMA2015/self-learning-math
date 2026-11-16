@@ -93,6 +93,39 @@ for(const [chapter,nums] of Object.entries(listed))for(const num of nums){
        "B01 seven canonical S1 concept/notation labels, no duplicate summary boxes");
    }
  }
+ if(num===3){
+   const formal=[...source.matchAll(/^    ### (2\.\d+)\. (.+)$/gm)].map(m=>m[1]);
+   assert.deepEqual(formal,["2.1","2.2"],"B03 S1 has exactly two main sections");
+   const sub=[...source.matchAll(/^    #### (2\.\d+\.\d+)\. /gm)].map(m=>m[1]);
+   assert.deepEqual(sub,["2.1.1","2.1.2","2.2.1","2.2.2","2.2.3"],
+    "B03 no gap, duplicate or missing parent in level-3 numbering");
+   const ids=[...source.matchAll(/data-thpt-first-try-id="([^"]+)"/g)].map(m=>m[1]);
+   assert.deepEqual(ids,["THPT-G10-CHII-TRY01","THPT-G10-CHII-TRY02",
+    "THPT-G10-CHII-TRY03","THPT-G10-CHII-TRY04","THPT-G10-CHII-TRY05"],
+    "B03 canonical IDs remain exactly unchanged");
+   const help=[...source.matchAll(/data-thpt-help-id="([^"]+)"/g)].map(m=>m[1]);
+   assert.deepEqual(help,["HELP-G10-B03-01","HELP-G10-B03-02"],"B03 canonical HELP unchanged");
+   assert.equal((source.match(/thpt-r4-concept-card/g)||[]).length,4,"B03 four teal definitions");
+   assert.equal((source.match(/class="thpt-r4-knowledge-conclusion" role="note"/g)||[]).length,3,
+    "B03 three amber knowledge reminders remain");
+   assert.equal((source.match(/^    ### 1\.\d+\. /gm)||[]).length,3,"B03 three discovery subheads");
+   assert.equal((source.match(/^    ### 3\.\d+\. Ví dụ \d — /gm)||[]).length,3,"B03 three worked examples");
+   assert.equal((source.match(/\*\*Phân tích\.\*\*/g)||[]).length,3,"B03 analysis labels precede worked solutions");
+   assert.equal((source.match(/\*\*Vận dụng\.\*\*/g)||[]).length,5,"B03 five uniform First Try headings");
+   assert.equal((source.match(/class="thpt-r4-footnote"/g)||[]).length,1,"B03 one source receipt note");
+   assert(!source.includes("Vì sao chọn cách giải này?"),"B03 must not put a method-choice label before method");
+   // Canonical TRY stems remain, but examples immediately before them now differ.
+   assert(source.includes("Xét \\(x+2y\\le5\\)")&&source.includes("Xét bốn dạng"),
+    "B03 First Try stems/keys are unchanged, worked examples must not reveal exact answer");
+   for(const claim of ["x+3y\\le9","3x-y<2","(9,0)","(0,3)","(2,4)"])
+     assert(source.includes(claim),"B03 independently solved transfer example missing "+claim);
+   const receipt=read("prototypes/thpt/ux795/G10_CHII_B03_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md");
+   const sha=require("node:crypto").createHash("sha1").update("blob "+Buffer.byteLength(source)+"\0"+source).digest("hex");
+   const candidate=receipt.match(/^\*\*CANDIDATE_LESSON_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+   const baseline=receipt.match(/^\*\*BASELINE_LESSON_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+   assert.equal(baseline,"c9ae5104c2f65779f2dd452d3f7775abe2600b7b","B03 receipt historical source immutable");
+   assert.equal(candidate,sha,"B03 actual academic candidate must be source-locked by Q18");
+ }
  if([3,5,6].includes(num)){
    const opens=(source.match(/^    \\\[$/gm)||[]).length,closes=(source.match(/^    \\\]$/gm)||[]).length;
    const display=[...source.matchAll(/^    \\\[$\n([\s\S]*?)^    \\\]$/gm)].map(m=>normalize(m[1]));
