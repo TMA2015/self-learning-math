@@ -181,7 +181,15 @@ function expectedG10KnowledgeBlob(lesson,legacy){
     "B06-F01","B06-F04","THPT-G10-CHIII-TRY06","THPT-G10-CHIII-TRY10",
     "HELP-G10-B06-01","HELP-G10-B06-02"])
    assert(r.includes(m),"B06 Q18 source evidence missing "+m);
-  return next;
+  const follow=fs.readFileSync(path.join(root,"prototypes/thpt/ux795/G10_CHIII_B06_PED_REFERENCE_ANCHOR_R02_20261116.md"),"utf8");
+  const r02=k=>follow.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(r02("R01_APPROVED_SOURCE_BLOB"),next,"B06 R02 follows immutable R01 approved source");
+  const corrected=r02("R02_CORRECTED_SOURCE_BLOB");
+  assert(/^[0-9a-f]{40}$/.test(corrected||"")&&corrected!==next,"B06 R02 must have distinct source");
+  for(const token of ["Q18_OWNER_SELF_VERIFIED_ENRICHMENT","ACADEMIC_SELF_QA_P0=0","ACADEMIC_SELF_QA_P1=0",
+     "THPT-G10-CHIII-TRY06","THPT-G10-CHIII-TRY10","SOURCE_SCAN_AUTHORITY_PENDING"])
+   assert(follow.includes(token),"B06 R02 academic/canonical receipt evidence missing "+token);
+  return corrected;
  }
 
  const chiv=chivEditorialReceiptRows().get(name);
