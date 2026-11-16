@@ -107,6 +107,23 @@ const numberG10FirstSix=(article)=>{
    article.dataset.g10B01B06EditorialNumbered="true";return;
   }
  }
+ // B05 S1: two authentic SGK parent sections, seven learning subtopics.
+ if(location.pathname.endsWith("/chuong-iii/bai-5/")||location.pathname.endsWith("/chuong-iii/bai-5")){
+  const d=[...blocks[0].querySelectorAll(":scope > h3")].map(x=>x.textContent.trim());
+  const k=[...blocks[1].querySelectorAll(":scope > h3")].map(x=>x.textContent.trim());
+  const sub=[...blocks[1].querySelectorAll(":scope > h4")].map(x=>x.textContent.trim());
+  const ex=[...blocks[2].querySelectorAll(":scope > h3")].map(x=>x.textContent.trim());
+  const help=[...blocks[3].querySelectorAll(":scope > details.tip > summary")].map(x=>x.textContent.trim());
+  const expected=["2.1.1.","2.1.2.","2.1.3.","2.1.4.","2.2.1.","2.2.2.","2.2.3."];
+  if(d.length===4&&k.length===2&&sub.length===7&&ex.length===4&&help.length===3&&
+     d.every((x,i)=>x.startsWith("1."+(i+1)+". "))&&
+     k.every((x,i)=>x.startsWith("2."+(i+1)+". "))&&
+     sub.every((x,i)=>x.startsWith(expected[i]+" "))&&
+     ex.every((x,i)=>x.startsWith("3."+(i+1)+". Ví dụ "+(i+1)+" —"))&&
+     help.every((x,i)=>x.startsWith("4."+(i+1)+". "))){
+   article.dataset.g10B01B06EditorialNumbered="true";return;
+  }
+ }
  const discovery=[...blocks[0].querySelectorAll("h3")];
  const original=["Cùng tìm hiểu","Ví dụ trực quan","Thuật ngữ và kiến thức, kỹ năng"];
  if(discovery.length!==3||!discovery.every((node,i)=>node.textContent.trim()===original[i]))return;
@@ -506,6 +523,30 @@ const enableG10B04KeyboardTabs=(article)=>{
  });
  sync();article.dataset.g10B04KeyboardTabs="true";
 };
+/* B05 owner's G10-TAB-KEYNAV-01: keyboard Left/Right on Golden labels.
+ * Scope only to B05, preserve Material native inputs and mouse/touch.
+ * No document-level keyboard listener, no assessment or student-data write. */
+const enableG10B05KeyboardTabs=(article)=>{
+ if(!/\/chuong-iii\/bai-5\/?$/.test(location.pathname)||article.dataset.g10B05KeyboardTabs==="true")return;
+ const set=article.querySelector(":scope > .tabbed-set");
+ const radios=[...(set?.querySelectorAll(':scope > input[type="radio"]')||[])];
+ const labels=[...(set?.querySelectorAll(":scope > .tabbed-labels > label")||[])];
+ if(radios.length!==4||labels.length!==4||!labels.every((l,i)=>l.htmlFor===radios[i].id))return;
+ const sync=()=>labels.forEach((label,i)=>{label.tabIndex=radios[i].checked?0:-1;});
+ labels.forEach((label,i)=>{
+  const onArrow=event=>{
+   if(event.key!=="ArrowLeft"&&event.key!=="ArrowRight")return;
+   event.preventDefault();event.stopPropagation();
+   const step=event.key==="ArrowRight"?1:-1,next=(i+step+labels.length)%labels.length;
+   radios[next].click();sync();labels[next].focus();
+  };
+  label.addEventListener("keydown",onArrow);
+  label.addEventListener("click",sync);
+  radios[i].addEventListener("keydown",onArrow);
+  radios[i].addEventListener("change",sync);
+ });
+ sync();article.dataset.g10B05KeyboardTabs="true";
+};
 const run=()=>{
  const path=location.pathname;
  const match=path.match(/^(.*\/thpt-preview\/sgk\/)(?:(lop-(11|12))\/)?chuong-([ivx]+)\/bai-(\d+)\/?$/);
@@ -519,7 +560,7 @@ const run=()=>{
  if(!article)return;
  if(grade===10){
   article.classList.add("thpt-g10-knowledge-ap1");
-  if(lesson<=6){article.classList.add("thpt-g10-first-six-golden");numberG10FirstSix(article);polishG10FirstSix(article);restoreG10FirstSixGolden(article);if(lesson===4)enableG10B04KeyboardTabs(article);}
+  if(lesson<=6){article.classList.add("thpt-g10-first-six-golden");numberG10FirstSix(article);polishG10FirstSix(article);restoreG10FirstSixGolden(article);if(lesson===4)enableG10B04KeyboardTabs(article);if(lesson===5)enableG10B05KeyboardTabs(article);}
   else if(chapter==="iv"&&lesson<=11)polishG10ChapterIV(article);
   else if(chapter==="v"&&lesson>=12&&lesson<=14)polishG10ChapterV(article);
   else if(chapter==="vi"&&lesson>=15&&lesson<=18)polishG10ChapterVI(article);

@@ -63,6 +63,11 @@ function checkSHA(){
    const field=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
    assert.equal(field("BASELINE_LESSON_GIT_BLOB"),sha,"B04 original source SHA preserved");
    assert.equal(hash(data),field("CANDIDATE_LESSON_GIT_BLOB"),"B04 Q18 candidate exact source");
+  }else if(p==="docs/thpt-preview/sgk/chuong-iii/bai-5.md"){
+   const receipt=fs.readFileSync(path.join(root,"prototypes/thpt/ux795/G10_CHIII_B05_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md"),"utf8");
+   const field=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(field("BASELINE_LESSON_GIT_BLOB"),sha,"B05 frozen source baseline");
+   assert.equal(hash(data),field("CANDIDATE_LESSON_GIT_BLOB"),"B05 Q18 source candidate");
   }else if(p==="docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"){
    const b01=fs.readFileSync(path.join(root,
     "prototypes/thpt/ux795/G10_CHI_B01_DEFINITION_COLOR_UI_DELTA_A_20261116.md"),"utf8");
@@ -82,7 +87,12 @@ function checkSHA(){
    const b04=fs.readFileSync(path.join(root,"prototypes/thpt/ux795/G10_CHII_B04_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md"),"utf8");
    const field=k=>b04.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
    assert.equal(field("BASELINE_CSS_GIT_BLOB"),b03New,"B04 CSS baseline preserves B03 accepted CSS");
-   assert.equal(hash(data),field("CANDIDATE_CSS_GIT_BLOB"),"B04 scoped teal CSS equals receipt");
+   const b05=fs.readFileSync(path.join(root,"prototypes/thpt/ux795/G10_CHIII_B05_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md"),"utf8");
+   const field05=k=>b05.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(field05("BASELINE_CSS_GIT_BLOB"),field("CANDIDATE_CSS_GIT_BLOB"),"B05 extends frozen B04 CSS");
+   assert.equal(hash(data),field05("CANDIDATE_CSS_GIT_BLOB"),"B05 scoped CSS source receipt");
+   assert(data.toString("utf8").includes('data-thpt-first-try-id="THPT-G10-CHIII-TRY01"'),
+    "B05 CSS must scope solely to B05");
   }else assert.equal(hash(data),sha,"Untouched SGK sibling source/theme drift: "+p);
  }
  const q18=fs.readFileSync(path.join(root,
@@ -101,7 +111,10 @@ function checkSHA(){
  const b04=fs.readFileSync(path.join(root,"prototypes/thpt/ux795/G10_CHII_B04_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md"),"utf8");
   const field=k=>b04.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(field("BASELINE_JS_GIT_BLOB"),currentJs,"B04 extends B03 accepted JS");
-  assert.equal(hash(js),field("CANDIDATE_JS_GIT_BLOB"),"B04 route keyboard JS matches receipt");
+  const b05=fs.readFileSync(path.join(root,"prototypes/thpt/ux795/G10_CHIII_B05_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md"),"utf8");
+  const field05=k=>b05.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(field05("BASELINE_JS_GIT_BLOB"),field("CANDIDATE_JS_GIT_BLOB"),"B05 extends owner approved B04 JS");
+  assert.equal(hash(js),field05("CANDIDATE_JS_GIT_BLOB"),"B05 keyboard exact JS");
 }
 const names=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
 const ch=n=>n<=2?"i":n<=4?"ii":"iii";
@@ -134,10 +147,14 @@ const widths=[390,820,1440];
        "1.4. Thuật ngữ và điều em cần nhớ"]:
       n===2?["1.1. Tập hợp giúp ta xác định những đối tượng nào?",
        "1.2. Đọc hình và tìm phần chung","1.3. Thuật ngữ và mục tiêu bài học"]:
+      n===5?["1.1. Vì sao cần mở rộng lượng giác ra ngoài góc nhọn?",
+       "1.2. Hình thành hệ thức và phân biệt góc phụ, góc bù",
+       "1.3. Tại sao tan/cot có lúc không xác định?",
+       "1.4. Dùng máy tính đúng cách và đọc ứng dụng"]:
       ["1.1. Cùng tìm hiểu","1.2. Ví dụ trực quan","1.3. Thuật ngữ, kiến thức và kỹ năng"];
      assert.deepEqual(discoveryTitles,expectedDiscovery,loc+" meaningful concept-first discovery headings");
      const knowledge=(await groups.nth(1).locator("h3").allInnerTexts()).map(x=>x.trim());
-     assert(knowledge.length>=(n===3?2:(n===2||n===4)?3:4)&&knowledge.every((v,i)=>v.startsWith("2."+(i+1)+". ")),loc+" authentic S1 SGK main sections");
+     assert(knowledge.length>=((n===3||n===5)?2:(n===2||n===4)?3:4)&&knowledge.every((v,i)=>v.startsWith("2."+(i+1)+". ")),loc+" authentic S1 SGK main sections");
      if(n===2)assert.deepEqual(knowledge,["2.1. Các khái niệm cơ bản về tập hợp",
       "2.2. Các tập hợp số","2.3. Các phép toán trên tập hợp"],loc+" original S1 has 3 main sections");
      if(n===3){
@@ -192,6 +209,35 @@ const widths=[390,820,1440];
       await labels.nth(1).click();
       await img.evaluate(async el=>{if(el.decode)await el.decode()});
       assert(await img.evaluate(el=>el.complete&&el.naturalWidth>0),loc+" B04 D5 actual pixels");
+      await labels.nth(0).click();
+     }
+     if(n===5){
+      assert.deepEqual(knowledge,[
+       "2.1. Giá trị lượng giác của một góc",
+       "2.2. Mối quan hệ giữa các giá trị lượng giác của hai góc bù nhau"
+      ],loc+" exact two SGK S1 parent sections for B05");
+      const pane=groups.nth(1);
+      const children=(await pane.locator("h4").allInnerTexts()).map(x=>x.trim().split(" ")[0]);
+      assert.deepEqual(children,["2.1.1.","2.1.2.","2.1.3.","2.1.4.","2.2.1.","2.2.2.","2.2.3."],
+       loc+" S1 B05 seven meaningful subtopics with proper parents");
+      const ids=await pane.locator("[data-thpt-first-try-id]").evaluateAll(nodes=>nodes.map(x=>x.getAttribute("data-thpt-first-try-id")));
+      assert.deepEqual(ids,["THPT-G10-CHIII-TRY01","THPT-G10-CHIII-TRY02","THPT-G10-CHIII-TRY03",
+       "THPT-G10-CHIII-TRY04","THPT-G10-CHIII-TRY05","THPT-G10-CHIII-TRY11"],
+       loc+" original five canonical plus one new DEG/inverse learner self-trial");
+      assert.equal((await pane.locator("p").allInnerTexts()).filter(x=>x.trim().startsWith("Vận dụng.")).length,6,
+       loc+" six genuine learner First Try labels including calculator");
+      assert.equal(await pane.locator(".thpt-r4-concept-card").count(),3,loc+" three formal S1 concept boxes");
+      assert.equal(await pane.locator(".thpt-r4-knowledge-conclusion:not(.thpt-r4-concept-card)").count(),2,
+       loc+" two S1 amber memory recaps");
+      assert.equal((await groups.nth(2).locator("p").allInnerTexts()).filter(x=>x.trim().startsWith("Phân tích.")).length,4,
+       loc+" four nonidentical method-first worked examples");
+      const text=await pane.innerText();
+      assert(text.includes("DEG")&&text.includes("RAD")&&text.includes("góc chính"),loc+" mandatory calculator and inverse-angle S1 material present");
+      const img=pane.locator('img[src*="THPT_G10_B05_SEMICIRCLE_120_D5_R01.svg"]');
+      assert.equal(await img.count(),1,loc+" original source-truthful semicircle SVG preserved");
+      await labels.nth(1).click();
+      await img.evaluate(async el=>{if(el.decode)await el.decode()});
+      assert(await img.evaluate(el=>el.complete&&el.naturalWidth>0),loc+" B05 unit semicircle image actually decodes");
       await labels.nth(0).click();
      }
      if(n===1){
@@ -395,9 +441,28 @@ const widths=[390,820,1440];
       assert(dark.filter(x=>x.concept).every(x=>x.bg==="rgb(25, 61, 54)"&&x.left==="rgb(118, 223, 199)"),loc+" B04 teal slate");
       assert(dark.filter(x=>!x.concept).every(x=>x.bg==="rgb(74, 58, 37)"&&x.left==="rgb(214, 170, 73)"),loc+" B04 amber slate");
       await page.evaluate(v=>{if(v===null)document.body.removeAttribute("data-md-color-scheme");else document.body.setAttribute("data-md-color-scheme",v);},saved);
+     }else if(n===5){
+      const concept=fontAudit.callouts.filter(x=>x.concept),memory=fontAudit.callouts.filter(x=>!x.concept);
+      assert.equal(concept.length,3,loc+" three S1 B05 formal concept boxes");
+      assert.equal(memory.length,2,loc+" two remaining amber recap boxes");
+      assert(concept.every(x=>x.background==="rgb(232, 247, 242)"&&x.left==="rgb(8, 125, 105)"),
+       loc+" B05 concept teal, only on B05");
+      assert(memory.every(x=>x.background==="rgb(255, 243, 213)"&&x.left==="rgb(196, 154, 55)"),
+       loc+" B05 amber reminders");
+      const saved=await page.evaluate(()=>document.body.getAttribute("data-md-color-scheme"));
+      await page.evaluate(()=>document.body.setAttribute("data-md-color-scheme","slate"));
+      const dark=await groups.nth(1).locator(".thpt-r4-knowledge-conclusion").evaluateAll(nodes=>nodes.map(x=>({
+       concept:x.classList.contains("thpt-r4-concept-card"),
+       bg:getComputedStyle(x).backgroundColor,left:getComputedStyle(x).borderLeftColor
+      })));
+      assert(dark.filter(x=>x.concept).every(x=>x.bg==="rgb(25, 61, 54)"&&x.left==="rgb(118, 223, 199)"),
+       loc+" B05 formal concepts slate teal");
+      assert(dark.filter(x=>!x.concept).every(x=>x.bg==="rgb(74, 58, 37)"&&x.left==="rgb(214, 170, 73)"),
+       loc+" B05 recap slate amber");
+      await page.evaluate(v=>{if(v===null)document.body.removeAttribute("data-md-color-scheme");else document.body.setAttribute("data-md-color-scheme",v);},saved);
      }else{
       assert(fontAudit.callouts.every(c=>c.background==="rgb(255, 243, 213)"&&c.left==="rgb(196, 154, 55)"),
-       loc+" B05/B06 unchanged amber memory cards");
+       loc+" B06 unchanged amber memory cards");
      }
      assert(fontAudit.buttons.every(b=>b.height>=42&&b.height<=52),
       loc+" compact original-HTML tab height");
@@ -431,7 +496,7 @@ const widths=[390,820,1440];
       const got=(await page.locator("["+key+"]").evaluateAll((elements,k)=>elements.map(e=>e.getAttribute(k)),key)).sort();
       assert.deepEqual(got,exp,loc+" "+key+" parity");
      }
-     if(n===4){
+     if(n===4||n===5){
       const radios=tabs.locator(':scope > input[type="radio"]');
       await labels.nth(0).click();
       await labels.nth(0).focus();
@@ -439,8 +504,9 @@ const widths=[390,820,1440];
       assert(await radios.nth(1).isChecked()&&await groups.nth(1).isVisible(),loc+" ArrowRight selects SGK tab");
       await page.keyboard.press("ArrowLeft");
       assert(await radios.nth(0).isChecked()&&await groups.nth(0).isVisible(),loc+" ArrowLeft selects Discovery tab");
-      assert.equal(await page.evaluate(()=>document.querySelector(".md-content__inner").dataset.g10B04KeyboardTabs),
-       "true",loc+" B04 route-scoped keyboard handling");
+      assert.equal(await page.evaluate(lesson=>document.querySelector(".md-content__inner").dataset[
+       lesson===4?"g10B04KeyboardTabs":"g10B05KeyboardTabs"],n),"true",
+       loc+" B04/B05 route-scoped keyboard handling");
      }
      for(let t=0;t<4;t++){
       await labels.nth(t).click();
