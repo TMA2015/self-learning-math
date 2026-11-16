@@ -173,23 +173,23 @@
 
     ### 3.1. Ví dụ 1 — Hai độ dời bằng nhau dù đặt ở nơi khác
 
-    **Đề bài.** Một người đi từ E đến F đúng 4 m về Đông; người khác đi từ G đến H đúng 4 m về Đông ở một nơi khác. So sánh \\(\\overrightarrow{EF}\\) và \\(\\overrightarrow{GH}\\), rồi xét \\(\\overrightarrow{HG}\\).
+    **Đề bài.** Một người đi từ E đến F đúng 4 m về Đông; người khác đi từ G đến H đúng 4 m về Đông ở một nơi khác. So sánh \(\overrightarrow{EF}\) và \(\overrightarrow{GH}\), rồi xét \(\overrightarrow{HG}\).
 
     **Phân tích.** Hai vectơ không cần cùng điểm đặt. Ta phải xét đồng thời độ dài và hướng, không chỉ nhìn vị trí trên bản vẽ.
 
-    **Lời giải.** Vì cả hai vectơ dài 4 m và cùng hướng Đông, \\(\\overrightarrow{EF}=\\overrightarrow{GH}\\). Vectơ \\(\\overrightarrow{HG}\\) ngược hướng với \\(\\overrightarrow{GH}\\), nên \\(\\overrightarrow{EF}=-\\overrightarrow{HG}\\).
+    **Lời giải.** Vì cả hai vectơ dài 4 m và cùng hướng Đông, \(\overrightarrow{EF}=\overrightarrow{GH}\). Vectơ \(\overrightarrow{HG}\) ngược hướng với \(\overrightarrow{GH}\), nên \(\overrightarrow{EF}=-\overrightarrow{HG}\).
 
     **Kiểm lại.** EF và GH có thể ở hai đường khác nhau; chúng vẫn cùng vectơ độ dời. Đổi thứ tự H,G làm đảo chiều mũi tên mà không đổi độ dài.
 
     ### 3.2. Ví dụ 2 — Cùng phương nhưng không bằng nhau
 
-    **Đề bài.** Vectơ \\(\\vec u\\) dài 6 m hướng Đông và vectơ \\(\\vec v\\) dài 2 m hướng Tây, hai giá cùng nằm theo phương Đông–Tây. Chúng cùng phương, cùng hướng hay bằng nhau?
+    **Đề bài.** Vectơ \(\vec u\) dài 6 m hướng Đông và vectơ \(\vec v\) dài 2 m hướng Tây, hai giá cùng nằm theo phương Đông–Tây. Chúng cùng phương, cùng hướng hay bằng nhau?
 
     **Phân tích.** Phải xét **giá → chiều → độ dài** theo đúng thứ tự; không suy ra bằng nhau chỉ vì cùng một phương.
 
-    **Lời giải.** Hai vectơ cùng phương vì có giá song song hoặc trùng nhau, nhưng ngược hướng do Đông đối với Tây. Chúng cũng có độ dài khác nhau, nên \\(\\vec u\\ne\\vec v\\).
+    **Lời giải.** Hai vectơ cùng phương vì có giá song song hoặc trùng nhau, nhưng ngược hướng do Đông đối với Tây. Chúng cũng có độ dài khác nhau, nên \(\vec u\ne\vec v\).
 
-    **Kiểm lại.** Nếu đảo chiều \\(\\vec v\\), hai vectơ mới cùng hướng nhưng vẫn không bằng nhau do 6 m khác 2 m.
+    **Kiểm lại.** Nếu đảo chiều \(\vec v\), hai vectơ mới cùng hướng nhưng vẫn không bằng nhau do 6 m khác 2 m.
 
     ### 3.3. Ví dụ 3 — Hành trình khép kín có độ dời bằng 0
 
@@ -197,17 +197,17 @@
 
     **Phân tích.** Quãng đường cần cộng ba cạnh đường đi; độ dời chỉ nối vị trí ban đầu và cuối cùng. Hai chặng đầu vuông góc nên có thể tính đoạn RP bằng Pitago.
 
-    **Lời giải.** \\(RP=\\sqrt{7^2+24^2}=25\\,\\mathrm m\\). Tổng quãng đường là \\(7+24+25=56\\,\\mathrm m\\). Vì kết thúc ngay P, vectơ độ dời là \\(\\overrightarrow{PP}=\\vec0\\), có độ dài \\(0\\,\\mathrm m\\).
+    **Lời giải.** \(RP=\sqrt{7^2+24^2}=25\,\mathrm m\). Tổng quãng đường là \(7+24+25=56\,\mathrm m\). Vì kết thúc ngay P, vectơ độ dời là \(\overrightarrow{PP}=\vec0\), có độ dài \(0\,\mathrm m\).
 
     **Kiểm lại.** Dù người ấy thực sự đi 56 m, điểm đầu và cuối trùng nhau; không được nhầm 56 m với độ lớn của vectơ-không.
 
     ### 3.4. Ví dụ 4 — Đọc độ dài vectơ khi hai chặng vuông góc
 
-    **Đề bài.** Một bạn đi từ A 9 m về Đông rồi 12 m về Bắc đến B. Tìm quãng đường đã đi và độ dài vectơ \\(\\overrightarrow{AB}\\).
+    **Đề bài.** Một bạn đi từ A 9 m về Đông rồi 12 m về Bắc đến B. Tìm quãng đường đã đi và độ dài vectơ \(\overrightarrow{AB}\).
 
     **Phân tích.** Hai chặng vuông góc tạo tam giác vuông. Tổng quãng đường bằng tổng hai cạnh đã đi; độ dài vectơ AB là cạnh nối đầu–cuối.
 
-    **Lời giải.** Quãng đường là \\(9+12=21\\,\\mathrm m\\). Theo Pitago, \\(|\\overrightarrow{AB}|=\\sqrt{9^2+12^2}=15\\,\\mathrm m\\).
+    **Lời giải.** Quãng đường là \(9+12=21\,\mathrm m\). Theo Pitago, \(|\overrightarrow{AB}|=\sqrt{9^2+12^2}=15\,\mathrm m\).
 
     **Kiểm lại.** Độ dài độ dời 15 m nhỏ hơn quãng đường 21 m. Nếu hai chặng ngược hướng hoặc không vuông góc thì phải vẽ lại hình; không thể áp dụng phép tính này một cách máy móc.
 
