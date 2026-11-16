@@ -55,3 +55,5 @@
 - **ASSESSMENT_DATA_SAFETY:** protected RD1 and Final Submit routes untouched, recheck in PR exact-head regression; no official Mastery from Knowledge self-check.
 - **RENDER_RELEASE_QA:** **PENDING** until real browser 390/820/1440, Keyboard arrows, MathJax, SVG, Golden, all eight workflows on exact last PR HEAD SUCCESS, authorized merge/deploy, site artifact parity P1 and owner device P2. No academic receipt can preapprove render or deploy.
 - **B01/B02/B03:** immutable academic source and original reviewer/Owner P2 acceptance preserved. B04 only, do not open B05 until B04 owner authorizes progression.
+
+**CANONICAL_PUBLIC_FIRST_TRY_FULL_IDS (Q15 receipt):** `THPT-G10-CHII-TRY06`, `THPT-G10-CHII-TRY07`, `THPT-G10-CHII-TRY08`, `THPT-G10-CHII-TRY09`, `THPT-G10-CHII-TRY10`. These are source-preserved unchanged question, key, disclosure and HELP association; not independently held-out RD1 evidence.
