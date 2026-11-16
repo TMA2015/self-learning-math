@@ -23,14 +23,40 @@ for(const [chapter,nums] of Object.entries(listed))for(const num of nums){
   "B"+num+": redundant example labels are not learner-facing");
  if(num===1||num===2){
    const subs=[...source.matchAll(/^    ### (2\.\d+)\. /gm)].map(m=>m[1]);
-   // SGK KNTT Toán 10 T1 printed pp5–11: B01 has FIVE original source
-   // sections; B02 retains its own separate structure. Never force the
-   // two lessons into an obsolete identical four-section structure.
+   // Direct SGK KNTT Toán 10 T1: B01 (pp5–11) has FIVE main sections,
+   // B02 (pp12–19) has THREE. Do not freeze the old B02 false 4-section outline.
    const expected=num===1
      ?["2.1","2.2","2.3","2.4","2.5"]
-     :["2.1","2.2","2.3","2.4"];
+     :["2.1","2.2","2.3"];
    assert.deepEqual(subs,expected,
      "B"+num+": original SGK section parity and hierarchical numbering");
+   if(num===2){
+     const headings=[...source.matchAll(/^    ### 2\.\d+\. (.+)$/gm)].map(m=>m[1]);
+     assert.deepEqual(headings,["Các khái niệm cơ bản về tập hợp","Các tập hợp số",
+       "Các phép toán trên tập hợp"],"B02 S1 exact three main headings");
+     const ids=[...source.matchAll(/data-thpt-first-try-id="([^"]+)"/g)].map(m=>m[1]);
+     assert.equal(ids.length,6,"B02 six First Tries retained, now in their actual S1 section");
+     assert.equal(new Set(ids).size,6,"B02 no duplicate Q15 First Try");
+     assert(ids.every(id=>/^THPT-G10-CHI-TRY(0[6-9]|1[01])$/.test(id)),"B02 only six original canonical IDs");
+     assert.equal((source.match(/data-thpt-help-id=/g)||[]).length,3,"B02 three original D6 remediation IDs");
+     for(const name of ["\\\\mathbb N","\\\\mathbb Z","\\\\mathbb Q","\\\\mathbb R",
+       "G10_B02_NUMBER_SETS_INCLUSION_S1_R01.svg","#### 2.2.2.","#### 2.3.2."])
+       assert(source.includes(name),"B02 S1 number-set theory or diagram missing "+name);
+     assert.equal((source.match(/thpt-r4-concept-card/g)||[]).length,13,"B02 thirteen explicitly labeled S1 concepts");
+     assert.equal((source.match(/class="thpt-r4-knowledge-conclusion" role="note"/g)||[]).length,4,"B02 four original amber recap cards preserved");
+     assert.equal((source.match(/\*\*Phân tích\.\*\*/g)||[]).length,4,"B02 four analysis-before-solution examples");
+     assert.equal((source.match(/^    ### 3\.\d\. Ví dụ \d — /gm)||[]).length,4,"B02 four Golden numbered worked examples");
+     assert.equal((source.match(/\*\*Vận dụng\.\*\*/g)||[]).length,6,"B02 six unified Vận dụng titles");
+     assert(!source.includes("Vì sao chọn cách giải này?")&&!source.includes("Em vận dụng —"),
+       "B02 must not regress owner terminology F07/F09");
+     const receipt=read("prototypes/thpt/ux795/G10_CHI_B02_S1_Q18_KNOWLEDGE_ENRICHMENT_R01_20261116.md");
+     const sourceBlob=require("node:crypto").createHash("sha1")
+       .update("blob "+Buffer.byteLength(source)+"\0"+source).digest("hex");
+     const base=receipt.match(/^\*\*BASELINE_LESSON_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+     const candidate=receipt.match(/^\*\*CANDIDATE_LESSON_GIT_BLOB:\*\* \x60([a-f0-9]{40})\x60/m)?.[1];
+     assert.equal(base,"8a7b90f1768b789429def045e38ebe97e6adbf3a","B02 historic source blob immutable");
+     assert.equal(candidate,sourceBlob,"B02 true S1 candidate blob must match Q18 receipt");
+   }
    if(num===1){
      const names=[
        "Mệnh đề và mệnh đề chứa biến",
