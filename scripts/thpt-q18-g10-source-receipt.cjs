@@ -192,6 +192,24 @@ function expectedG10KnowledgeBlob(lesson,legacy){
   return corrected;
  }
 
+ if(name==="B08"){
+  const original=chivEditorialReceiptRows().get("B08");
+  assert(original&&original.baseline===blobs[1],"B08 R02 must extend exact ChIV frozen S1 ledger");
+  const receipt=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B08_S1_OWNER_Q18_ENRICHMENT_DELTA_R02_20261116.md"),"utf8");
+  const field=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(field("R01_APPROVED_SOURCE_BLOB"),original.candidate,
+   "B08 new source must follow accepted ChIV R01 candidate");
+  const candidate=field("R02_CANDIDATE_SOURCE_BLOB");
+  assert(/^[0-9a-f]{40}$/.test(candidate||"")&&candidate!==original.candidate,
+   "B08 corrective academic enrichment must carry distinct Q18 source blob");
+  for(const keyword of ["Q18_OWNER_SELF_VERIFIED_ENRICHMENT","DELTA_C_ACADEMIC_MATERIAL",
+    "LEGACY_TRANSFER_EXPOSURE_NOT_HELD_OUT","THPT-G10-CHIV-TRY06","THPT-G10-CHIV-TRY10",
+    "SOURCE_SCAN_AUTHORITY_PENDING"])
+   assert(receipt.includes(keyword),"B08 R02 source academic/canonical evidence missing "+keyword);
+  return candidate;
+ }
+
  const chiv=chivEditorialReceiptRows().get(name);
  const chv=chvEditorialReceiptRows().get(name);
  assert(!(chiv&&chv),name+" duplicate editorial receipts");
