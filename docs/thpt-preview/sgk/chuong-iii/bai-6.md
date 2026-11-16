@@ -12,9 +12,9 @@
 
     ### 1.2. Vì sao định lí côsin phải có “phần điều chỉnh” Pitago?
 
-    Tưởng tượng giữ nguyên hai cạnh \(b,c\), chỉ mở góc kẹp giữa chúng là \(A\). Cạnh thứ ba \(a\) (nối hai đầu mút còn lại) **thay đổi**: góc kẹp mở rộng thì đầu mút tách xa hơn. Nếu \(A=90^\circ\), Pitago cho \(a^2=b^2+c^2\). Với góc nhọn, hai cạnh cùng nghiêng về phía nhau nên \(a^2\) nhỏ hơn tổng ấy; với góc tù, \(a^2\) lớn hơn. Thành phần chiếu của cạnh \(b\) lên hướng \(c\) là \(b\cos A\). Khi tính bình phương khoảng cách hai đầu mút, ta phải trừ \(2bc\cos A\): đó là **lý do hình học** xuất hiện côsin.
+    Xét tam giác \(ABC\) có \(b=CA\), \(c=AB\); hai cạnh này cùng kề góc \(A\). Tưởng tượng giữ nguyên độ dài \(b,c\) rồi thay đổi góc xen giữa chúng là \(A\). Cạnh thứ ba \(a\) (nối hai đầu mút còn lại) **thay đổi**: góc kẹp mở rộng thì đầu mút tách xa hơn. Nếu \(A=90^\circ\), Pitago cho \(a^2=b^2+c^2\). Với góc nhọn, hai cạnh cùng nghiêng về phía nhau nên \(a^2\) nhỏ hơn tổng ấy; với góc tù, \(a^2\) lớn hơn. Thành phần chiếu của cạnh \(b\) lên hướng \(c\) là \(b\cos A\). Khi tính bình phương khoảng cách hai đầu mút, ta phải trừ \(2bc\cos A\): đó là **lý do hình học** xuất hiện côsin.
 
-    Giữ \(b=c=5\) để so ba góc **khác** câu Tự thử:
+    Trong ba tam giác có hai cạnh kề góc \(A\) cùng dài \(b=c=5\), hãy so sánh các trường hợp sau (khác dữ kiện câu Tự thử):
 
     <div class="thpt-g10-table-scroll"><table class="thpt-g10-knowledge-table">
     <thead><tr><th>Góc xen giữa</th><th>Dấu \(\cos A\)</th><th>Giá trị \(a^2\)</th><th>Ý nghĩa</th></tr></thead>
@@ -26,19 +26,19 @@
 
     ### 1.3. Vì sao định lí sin giúp giải tam giác và đo đạc?
 
-    Nếu biết hai góc và một cạnh, việc tính góc thứ ba chỉ cần tổng ba góc \(180^\circ\). Ta còn thiếu mối nối giữa *cạnh* và *góc đối diện*. Hãy tưởng tượng cùng một đường tròn ngoại tiếp: mỗi cạnh là một dây cung và chiều dài của nó phụ thuộc vào sin góc nhìn dây đó. Nhờ vậy, tỉ số cạnh chia sin góc đối diện có một giá trị chung là **đường kính ngoại tiếp** \(2R\). Em không cần dựng chiều cao của mọi tam giác để tìm hai cạnh còn lại.
+    Xét tam giác \(ABC\). Nếu biết số đo hai góc và độ dài một cạnh của tam giác, ta tìm được góc thứ ba nhờ tổng ba góc bằng \(180^\circ\). Để tìm những cạnh còn lại, cần mối liên hệ giữa *mỗi cạnh* với *góc đối diện cạnh ấy*. Xét đường tròn ngoại tiếp tam giác \(ABC\): mỗi cạnh là một dây cung và độ dài dây cung liên hệ với sin của góc nội tiếp chắn dây đó. Nhờ vậy, tỉ số cạnh chia sin góc đối diện có một giá trị chung là **đường kính ngoại tiếp** \(2R\). Em không cần dựng chiều cao của mọi tam giác để tìm hai cạnh còn lại.
 
-    **Giải tam giác** là tìm các cạnh/góc chưa biết. Trước khi chọn công thức, hãy phân loại dữ kiện: hai cạnh và góc **xen giữa** (SAS) thường bắt đầu bằng côsin; ba cạnh (SSS) cũng dùng côsin để tìm góc; hai góc và một cạnh (ASA/AAS) thường dùng sin. Với một góc **không xen giữa** và hai cạnh (SSA), có thể có hai tam giác khác nhau; một kết quả của phím \(\sin^{-1}\) không tự chứng minh tính duy nhất.
+    **Giải tam giác \(ABC\)** là tìm các độ dài cạnh và số đo góc chưa biết của chính tam giác đó. Trước khi chọn công thức, hãy phân loại dữ kiện: hai cạnh và góc **xen giữa** (SAS) thường bắt đầu bằng côsin; ba cạnh (SSS) cũng dùng côsin để tìm góc; hai góc và một cạnh (ASA/AAS) thường dùng sin. Với một góc **không xen giữa** và hai cạnh (SSA), có thể có hai tam giác khác nhau; một kết quả của phím \(\sin^{-1}\) không tự chứng minh tính duy nhất.
 
     ### 1.4. Vì sao diện tích xuất hiện sin, nửa chu vi và hai bán kính?
 
-    Diện tích em đã biết ở THCS là \(S=\tfrac12\times\text{đáy}\times\text{chiều cao}\). Nếu hai cạnh \(b,c\) kẹp góc \(A\), lấy \(c\) làm đáy thì độ cao ứng với đáy có độ dài \(b\sin A\), nên diện tích **liên quan đến sin của góc xen giữa**, không phải cos. Với góc tù, chân đường cao nằm trên *phần kéo dài* cạnh đáy nhưng độ cao vẫn là \(b\sin A>0\).
+    Xét tam giác \(ABC\) có các cạnh \(a=BC\), \(b=CA\), \(c=AB\) và diện tích \(S\). Ở THCS, em đã học công thức tính **diện tích tam giác**: \(S=\tfrac12\times\text{độ dài đáy}\times\text{chiều cao tương ứng}\). Nếu lấy cạnh \(c=AB\) của tam giác làm đáy, độ cao từ đỉnh \(C\) xuống đường thẳng \(AB\) có độ dài \(b\sin A\), nên diện tích **liên quan đến sin của góc xen giữa**, không phải cos. Với góc tù, chân đường cao nằm trên *phần kéo dài* cạnh đáy nhưng độ cao vẫn là \(b\sin A>0\).
 
-    Còn bán kính đường tròn nội tiếp \(r\)? Từ tâm nội tiếp hạ ba đoạn vuông góc tới ba cạnh, mỗi đoạn có chiều dài \(r\). Chia tam giác lớn thành ba tam giác có đáy \(a,b,c\), cùng độ cao \(r\), rồi **cộng diện tích**: \(S=\frac12(a+b+c)r=pr\), trong đó \(p\) là **nửa chu vi**, không phải chu vi. Bán kính ngoại tiếp \(R\) thì khác: định lí sin liên kết \(a\) và \(\sin A\) qua \(2R\); thay vào công thức diện tích cho \(S=abc/(4R)\). Hai công thức thuộc hai đường tròn khác nhau, nên không hoán đổi \(r,R\).
+    Còn đường tròn nội tiếp **tam giác \(ABC\)** có bán kính \(r\) thì sao? Từ tâm đường tròn nội tiếp, hạ ba đoạn vuông góc đến ba cạnh \(BC,CA,AB\); mỗi đoạn dài \(r\). Chia tam giác \(ABC\) thành ba tam giác nhỏ có đáy lần lượt dài \(a,b,c\) và cùng chiều cao \(r\), rồi **cộng diện tích**: \(S=\frac12(a+b+c)r=pr\), trong đó \(p=(a+b+c)/2\) là **nửa chu vi tam giác \(ABC\)**, không phải chu vi. Với đường tròn ngoại tiếp tam giác \(ABC\) có bán kính \(R\), ta dùng hệ thức khác: định lí sin liên kết \(a\) và \(\sin A\) qua \(2R\); thay vào công thức diện tích cho \(S=abc/(4R)\). Hai công thức thuộc hai đường tròn khác nhau, nên không hoán đổi \(r,R\).
 
     ### 1.5. Nếu chỉ đo được ba cạnh thì tính diện tích thế nào?
 
-    Khi không biết góc và đường cao, ta vẫn có thể tìm diện tích **chỉ từ ba cạnh**, vì ba cạnh hợp lệ xác định hình dạng tam giác. Từ côsin, suy ra cos của một góc; hệ thức \(\sin^2 A=1-\cos^2 A\) cho sin dương, rồi thay vào \(S=\tfrac12bc\sin A\). Khi rút gọn, kết quả trở thành công thức **Heron** chứa \(p,p-a,p-b,p-c\). Các hiệu \(p-a,p-b,p-c\) đều dương **chỉ khi ba cạnh tạo tam giác không suy biến**; vì thế phải kiểm bất đẳng thức tam giác trước, không chỉ bấm căn rồi tin một con số.
+    Xét tam giác \(ABC\) có ba cạnh dài \(a,b,c\). Dù chưa biết các góc và đường cao của tam giác, ta vẫn có thể tính **diện tích tam giác \(ABC\)** chỉ từ ba cạnh nếu chúng thực sự tạo thành một tam giác. Từ côsin, suy ra cos của một góc; hệ thức \(\sin^2 A=1-\cos^2 A\) cho sin dương, rồi thay vào \(S=\tfrac12bc\sin A\). Khi rút gọn, kết quả trở thành công thức **Heron** chứa \(p,p-a,p-b,p-c\). Ba đỉnh \(A,B,C\) phải **không thẳng hàng**; khi đó ta có một **tam giác không suy biến** (diện tích lớn hơn 0). Với ba độ dài cạnh dương, điều này tương đương mỗi cạnh nhỏ hơn tổng hai cạnh còn lại; khi đó các hiệu \(p-a,p-b,p-c\) đều dương. Vì thế phải kiểm bất đẳng thức tam giác trước, không chỉ bấm căn rồi tin một con số.
 
     **Sau bài học, em cần:** giải thích và chọn đúng côsin/sin; tìm cạnh/góc của tam giác bằng dữ kiện SAS/SSS/AAS; suy diện tích từ đường cao, góc xen giữa, \(r,R\) hoặc ba cạnh; tính đo đạc có đơn vị và tự kiểm tính hợp lí của kết quả. Các công thức chi tiết và Tự thử sẽ được học ở tab Kiến thức, mỗi câu đều có Đối chiếu do em chủ động mở.
 
@@ -48,7 +48,7 @@
 
     #### 2.1.1. Hai cạnh và góc xen giữa: tìm cạnh thứ ba
 
-    Với tam giác **không suy biến** \(ABC\), quy ước \(a=BC,\ b=CA,\ c=AB\) lần lượt đối diện các góc \(A,B,C\). Biết hai cạnh kề \(b,c\) và góc kẹp giữa chúng \(A\) (SAS), định lí Pitago chưa đủ nếu \(A\ne90^\circ\). Thành phần chiếu \(b\cos A\) của một cạnh lên phương cạnh kia tạo phần hiệu chỉnh:
+    Xét tam giác \(ABC\) có ba đỉnh không thẳng hàng (tức **không suy biến**, như đã giải thích ở mục 1.5). Quy ước \(a=BC,\ b=CA,\ c=AB\) lần lượt đối diện các góc \(A,B,C\). Biết hai cạnh kề \(b,c\) và góc kẹp giữa chúng \(A\) (SAS), định lí Pitago chưa đủ nếu \(A\ne90^\circ\). Thành phần chiếu \(b\cos A\) của một cạnh lên phương cạnh kia tạo phần hiệu chỉnh:
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định lí côsin:</strong> \(a^2=b^2+c^2-2bc\cos A\), tương tự \(b^2=a^2+c^2-2ac\cos B\) và \(c^2=a^2+b^2-2ab\cos C\). Mỗi góc trong tích \(\cos\) phải <em>xen giữa đúng hai cạnh</em> đứng sau hệ số \(2\).</div>
 
@@ -85,11 +85,11 @@
 
     #### 2.2.1. Ghép cạnh với góc đối diện
 
-    Trên cùng đường tròn ngoại tiếp bán kính \(R\), ba cạnh tam giác là ba dây cung. Mỗi dây cung được đo bởi sin của góc nội tiếp chắn dây ấy. Bởi vậy, mọi tỉ số **cạnh chia sin của góc đối diện** đều bằng đường kính:
+    Xét tam giác \(ABC\) có đường tròn ngoại tiếp bán kính \(R\). Ba cạnh \(AB,BC,CA\) của tam giác là ba dây cung của đường tròn này. Mỗi dây cung được đo bởi sin của góc nội tiếp chắn dây ấy. Bởi vậy, mọi tỉ số **cạnh chia sin của góc đối diện** đều bằng đường kính:
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định lí sin:</strong> \(\dfrac{a}{\sin A}=\dfrac{b}{\sin B}=\dfrac{c}{\sin C}=2R\). Ở tam giác không suy biến, \(0^\circ<A,B,C<180^\circ\), nên các mẫu sin đều dương và khác 0.</div>
 
-    Nếu biết hai góc và một cạnh, trước hết tính góc còn lại bằng tổng \(180^\circ\), rồi ghép **đúng cặp**. Ví dụ, biết \(A=40^\circ,B=70^\circ,c=9\), ta có \(C=70^\circ\) và \(b=c=9\) (vì \(B=C\)), còn \(a=\dfrac{9\sin40^\circ}{\sin70^\circ}\). Đây là dữ kiện minh họa khác câu tự kiểm; em cần phân biệt điều đã cho với cặp cạnh/góc muốn tìm.
+    Trong tam giác \(ABC\), nếu biết số đo hai góc và độ dài một cạnh, trước hết tính góc còn lại bằng tổng ba góc \(180^\circ\), rồi ghép **đúng cặp**. Ví dụ, biết \(A=40^\circ,B=70^\circ,c=9\), ta có \(C=70^\circ\) và \(b=c=9\) (vì \(B=C\)), còn \(a=\dfrac{9\sin40^\circ}{\sin70^\circ}\). Đây là dữ kiện minh họa khác câu tự kiểm; em cần phân biệt điều đã cho với cặp cạnh/góc muốn tìm.
 
     **Vận dụng.** Cho \(A=30^\circ\), \(a=5\). Tìm bán kính ngoại tiếp \(R\). Chỉ từ hai dữ kiện này, có biết duy nhất \(B,C\) không?
 
