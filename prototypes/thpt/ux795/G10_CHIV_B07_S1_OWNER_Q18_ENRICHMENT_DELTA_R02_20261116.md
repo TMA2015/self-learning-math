@@ -10,7 +10,7 @@
 **R02_CANDIDATE_SOURCE_BLOB:** `7a8f2b8247b3d9da0a1be9375c6ba1a348bbf11f`  
 **JS_PATH:** `docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js`  
 **JS_PREVIOUS_BLOB:** `da426ed2d7966ab5b242405eaeeaadbfaecefa7d` (B08 original immutable approved candidate)  
-**JS_CANDIDATE_BLOB:** `e58d9a8517f183806f741c5c9877038dd324ebcf`  
+**JS_CANDIDATE_BLOB:** `938a9f8fb62e76978e5eba73784f6966b2140c43`  
 **SVG_UNCHANGED_BLOB:** `55ec9add04cb79da2cad7703b3897271e5b3436a` at `docs/assets/images/thpt/THPT_G10_B07_PARALLELOGRAM_EQUAL_OPPOSITE_D5_R01.svg`  
 **DEPENDENCY:** B08 PR #878 must pass all exact-head RELEASE QA and be integrated before B07; this is a separate subsequent integration candidate, not authority to merge/deploy.
 
