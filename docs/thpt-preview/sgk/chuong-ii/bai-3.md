@@ -139,7 +139,7 @@
     3. Thay tọa độ \(M\) vào bất phương trình. Nếu đúng, chọn nửa mặt phẳng chứa \(M\); nếu sai, chọn nửa mặt phẳng còn lại.
     4. Kết luận có lấy đường biên hay không dựa vào dấu \(\le,\ge\) hay \(<,>\).
 
-    Khi biến đổi để đưa về \(y>mx+n\), hãy nhớ quy tắc từ bất phương trình một ẩn: **nhân hoặc chia cho số âm phải đảo dấu**. Chẳng hạn, \(2x-y<1\) tương đương \(-y<1-2x\), nên \(y>2x-1\). Phía nghiệm nằm **trên** đường biên — đúng với hình bên phải ở mục 2.3.
+    Khi biến đổi để đưa về \(y>mx+n\), hãy nhớ quy tắc từ bất phương trình một ẩn: **nhân hoặc chia cho số âm phải đảo dấu**. Chẳng hạn, \(2x-y<1\) tương đương \(-y<1-2x\), nên \(y>2x-1\). Phía nghiệm nằm **trên** đường biên — đúng với hình bên phải ở mục 2.2.1.
 
     **Vận dụng.** Biến đổi \(3x-y<3\) về điều kiện theo \(y\). Biên có được lấy không? Gốc \(O(0,0)\) có thuộc miền nghiệm không?
 
@@ -178,33 +178,33 @@
 
 === "Ví dụ"
 
-    Các câu “Em vận dụng” vừa giúp kiểm tra từng khái niệm. Bây giờ em xem những bài toán **trọn vẹn**, chú ý cách chọn phương pháp trước khi làm phép tính.
+    Các câu “Vận dụng” vừa giúp kiểm tra từng khái niệm. Bây giờ em xem những bài toán **trọn vẹn**, chú ý cách chọn phương pháp trước khi làm phép tính.
 
     ### 3.1. Ví dụ 1 — Biểu diễn miền nghiệm có lấy biên
 
-    **Đề bài.** Biểu diễn miền nghiệm của \(x+2y\le4\).
+    **Đề bài.** Biểu diễn miền nghiệm của \(x+3y\le9\). Xét thêm điểm \(M(3,2)\).
 
-    **Vì sao chọn cách giải này?** Bất phương trình bậc nhất hai ẩn có đường biên là một đường thẳng; dùng một điểm thử ngoài biên để biết phía cần chọn, rồi kiểm dấu bằng.
+    **Phân tích.** Tìm hai giao điểm của đường biên với các trục, chọn một điểm thử nằm ngoài biên để xác định phía thỏa. Vì có dấu bằng, đường biên phải được lấy. Cuối cùng thay tọa độ \(M\) để xác định điểm trên hay ngoài biên.
 
-    **Lời giải.** Vẽ \(d:x+2y=4\), đi qua \(A(4,0)\) và \(B(0,2)\). Chọn \(O(0,0)\), vì \(0<4\) nên O không nằm trên biên và \(0+2\cdot0=0\le4\) đúng. Miền nghiệm là nửa mặt phẳng bờ \(d\) **chứa O**, **bao gồm cả đường biên**. Trên hình bên trái ở mục 2.3, em thấy đường liền và phần được tô ở phía O.
+    **Lời giải.** Đường biên \(d:x+3y=9\) đi qua \(A(9,0)\), \(B(0,3)\). Thử \(O(0,0)\) (không thuộc \(d\)): \(0\le9\) đúng, nên tô nửa mặt phẳng **chứa O và cả đường biên \(d\)** (nét liền). Tại \(M(3,2)\), \(3+3\cdot2=9\), nên \(M\) thuộc biên và là nghiệm.
 
-    **Kiểm lại.** Điểm \((2,1)\) cho \(2+2\cdot1=4\), là nghiệm nằm trên biên. Nếu em loại điểm này, em đã nhầm \(\le\) với \(<\).
+    **Kiểm lại.** Với \(N(10,0)\), ta có \(10>9\) nên \(N\) ở ngoài miền. Đây là dữ kiện **khác** hai hình minh họa ở mục 2.2.1.
 
     ### 3.2. Ví dụ 2 — Biểu diễn miền nghiệm không lấy biên
 
-    **Đề bài.** Biểu diễn miền nghiệm của \(2x-y<1\).
+    **Đề bài.** Biểu diễn miền nghiệm của \(3x-y<2\), rồi xét điểm \(P(2,4)\).
 
-    **Vì sao chọn cách giải này?** Khi giải theo \(y\), ta dễ nhìn được “phía trên” hay “phía dưới” đường thẳng. Nhưng phải đặc biệt chú ý **đổi chiều** sau khi chia cho \(-1\).
+    **Phân tích.** Đưa về \(y>mx+n\) để đọc phía trên/dưới đường thẳng. Khi nhân hoặc chia cho \(-1\), phải **đảo chiều dấu**. Với dấu nghiêm ngặt, không lấy điểm trên đường biên.
 
-    **Lời giải.** \(2x-y<1\iff y>2x-1\). Đường biên \(y=2x-1\) có **nét đứt**. Điểm \(O\) cho \(0>-1\), nên thuộc nửa mặt phẳng **phía trên** đường. Vì \(>\) là dấu nghiêm ngặt, đường biên không được lấy.
+    **Lời giải.** \(3x-y<2\iff-y<2-3x\iff y>3x-2\). Đường biên \(d:y=3x-2\) vẽ **nét đứt**. Thử \(O(0,0)\): \(0>-2\) đúng, nên tô miền **phía trên \(d\)**, không gồm \(d\). Với \(P(2,4)\), \(3\cdot2-4=2\), bằng ngưỡng nên **không** là nghiệm.
 
-    **Kiểm lại.** \((1,1)\) thỏa \(1=2\cdot1-1\) nên nằm trên đường biên, nhưng **không phải nghiệm** của \(2x-y<1\). Hình bên phải ở mục 2.3 mô tả đúng trường hợp này.
+    **Kiểm lại.** \(Q(0,1)\): \(3\cdot0-1=-1<2\), đúng. \(R(0,-3)\): \(3\cdot0-(-3)=3>2\), sai. Hai điểm ở hai phía biên, đúng với kết quả.
 
     ### 3.3. Ví dụ 3 — Mô hình giá trung bình có điều kiện mẫu
 
     **Đề bài.** Trộn \(x\) kg loại hàng 140 nghìn đồng/kg với \(y\) kg loại hàng 180 nghìn đồng/kg. Muốn đơn giá trung bình không vượt quá 170 nghìn đồng/kg, hãy lập điều kiện cho \(x,y\), rồi xét hai phương án \((1,3)\) và \((1,4)\).
 
-    **Vì sao chọn cách giải này?** “Giá trung bình” phải tính bằng **tổng tiền chia tổng khối lượng**, không phải lấy trung bình cộng hai đơn giá khi khối lượng khác nhau. Trước khi nhân chéo, kiểm tổng khối lượng **dương**.
+    **Phân tích.** “Giá trung bình” phải tính bằng **tổng tiền chia tổng khối lượng**, không phải lấy trung bình cộng hai đơn giá khi khối lượng khác nhau. Trước khi nhân chéo, kiểm tổng khối lượng **dương**.
 
     **Lời giải.** Với \(x,y\ge0\) và \(x+y>0\), đơn giá trung bình là \(\dfrac{140x+180y}{x+y}\) (nghìn đồng/kg). Điều kiện:
 
@@ -244,6 +244,5 @@
 
     **Tiếp tục tự học:** [Core và Luyện tập Chương II](luyen-tap.md) · [Bài 4 — Hệ bất phương trình bậc nhất hai ẩn](bai-4.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
-    <p class="thpt-r4-footnote">Nguồn kiến thức: SGK Toán 10, Kết nối tri thức với cuộc sống, tập một, Bài 3. Phần lời giảng và ví dụ hỗ trợ tự học do SLM biên tập; hình hai nửa mặt phẳng của SLM được đối chiếu với từng bất phương trình tương ứng.</p>
+    <p class="thpt-r4-footnote">Nguồn: SGK Toán 10 Kết nối tri thức, tập 1, Bài 3 trang in 22–25; SBT Bài 3 trang 16–18. Hình, ví dụ chuyển giao và lời dẫn do SLM biên tập; Tự thử công khai không ghi Mastery.</p>
 
-<p class="thpt-r4-footnote">Nguồn: SGK Toán 10 KNTT tập 1 Bài 3 trang 22–25; SBT Bài 3 trang 16–18. Luyện tập tự đối chiếu không phải Tự kiểm tra độc lập.</p>
