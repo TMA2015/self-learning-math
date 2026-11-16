@@ -27,6 +27,13 @@ P1: 0
 P2: 0
 RELEASE_AUTHORIZATION: NO
 AUTHOR_SIGNOFF: TOP14_R02_LEARNER_FIRST_23OUT_110CANONICAL_74DIRECTQA_20261116
+S1_RECEIPT: SGK KNTT Toán 10 Tập Hai ChVII B19 printed pp30–35, B20 pp36–42, B21 pp43–47, B22 pp48–56, cuối chương pp57–59, inherited original validated S1 printed-page Delta B; no fresh source-PDF reread claimed. SBT chapter pp27–49 only as reference, lesson-level offsets unverified (SBT_REFERENCE_GAP_DOCUMENTED).
+OUTCOME_AUDIT: 23/23 TOP14-O01…O23, exactly 7 outcomes for B19, 5 for B20, 5 for B21, 6 for B22; each has concept-first explanation, conditions, a standalone solved Example, Vận dụng/Đối chiếu, D6 and at least one visible Practice question.
+MATH_VERIFICATION: 51/51 direct recomputed numeric and symbolic cases PASS = 23 R02 standalone worked Examples + 23 unchanged canonical Topic Practice solution keys + five Written worked answers and /7 rubric arithmetic; 23 source and semantic structural checks PASS; protected original 32+23+4 SGK stems/solutions source-exact to original Git bank blobs.
+PED_VERIFICATION: 23/23 learner-first chains WHY→meaning/conditions→formal concept→separately stated Example prompt and justified solution→Vận dụng→opt-in Đối chiếu/D6; correct four-level area numbering 1.1…4.6, 3 original SHA-locked SVG references with guided reading; 87 actual Practice prompts and 23 public question-only Selfcheck prompts.
+CANONICAL_Q15: 110 distinct public item_ids = 59 original G10 ChVII SGK source-exact display-only placements + 23 new Topic First Try T01–T23 +23 Topic Practice P01–P23 +five Topic Written W01–W05, all in one frozen V2 matrix 110/110; public SelfCheck reuses 23 P IDs without extra identities, keys, solutions or rubrics.
+ASSESSMENT_Q16: 23 public question-only replay prompts with no hints, correctness, answers, rubrics or AI Tutor in Selfcheck source; CLIENT_SELF_CHECK_NO_MASTERY, no official TOPIC_READINESS, no protected RD1 in public, no Skill Mastery updates. Functional Final Submit and browser safety remain RELEASE-only and explicitly not claimed.
+
 
 ## Nguồn S1, tính đúng và phạm vi
 

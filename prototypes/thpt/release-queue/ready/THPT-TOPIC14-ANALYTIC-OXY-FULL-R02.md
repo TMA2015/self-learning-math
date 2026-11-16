@@ -16,11 +16,11 @@ ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_T
 ACADEMIC_SOURCE_BLOB: 8f61c67a11dd3e2869cbd71dbb279bdcfdd92bf3
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC14_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md (Q18 author-self; NO new independent NotebookLM Topic14 verdict)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC14_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: f778ccd1573433192ad9d9608ea090df2104a893
+REVIEW_RECEIPT_BLOB: c064ed1ba8e2c88318e3acac2b78fccb05ca9717
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_R02_AUTHORING_ONLY_METADATA_20261116.md
 AUTHOR_A1_A7_BLOB: 843671899db376729c8bedd5dbd41c1e3b651054
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC14-ANALYTIC-OXY-FULL-R02_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: 1bdb95f081d67213800e732c78176afa6ac841b1
+AUTHOR_HANDOFF_BLOB: 4722657f66cee1802c62b58c80321130eb940c0a
 ORIGINAL_SGK_SOURCE_BLOB: c5c222af88b0e932f9b60df059d8ffd4da5f0f26
 ORIGINAL_R01_PED_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd
 SVG1_BLOB: 57485fed0a5dcee6ebcd060f100abe5eed43bc76
@@ -47,7 +47,7 @@ One self-sufficient Topic CĐ14 with exactly **Kiến thức / Luyện tập / T
 
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — source SHA 8f61c67a11dd3e2869cbd71dbb279bdcfdd92bf3; metadata 843671899db376729c8bedd5dbd41c1e3b651054; Q18 receipt f778ccd1573433192ad9d9608ea090df2104a893; one V2 1bdb95f081d67213800e732c78176afa6ac841b1, one manifest and one REGISTER row; source/receipt/role lock.
+- [x] A1_SOURCE_SNAPSHOT — source SHA 8f61c67a11dd3e2869cbd71dbb279bdcfdd92bf3; metadata 843671899db376729c8bedd5dbd41c1e3b651054; Q18 receipt c064ed1ba8e2c88318e3acac2b78fccb05ca9717; one V2 4722657f66cee1802c62b58c80321130eb940c0a, one manifest and one REGISTER row; source/receipt/role lock.
 - [x] A2_SGK_SBT_SCOPE — SGK ChVII B19 p30–35, B20 36–42, B21 43–47, B22 48–56, end57–59 (printed). SBT original chapter scope printed27–49, individual lesson page/PDF offset not newly checked and not invented. Source provenance original SGK receipt/Delta B.
 - [x] A3_NOTEBOOKLM_VERDICT — legacy CI checklist label, **Q18 verification is AUTHOR_SELF_VERIFIED** on new Topic source, not independent Topic NotebookLM PASS; original SGK only historical Academic/PED PASS.
 - [x] A4_ITEM_OUTCOME_IDS — 23 lesson IDs,23 outcomes, 110 unique public canonical IDs and exactly110 V2 item→outcome→role mappings (59 SGK reused, 23 new Try,23 new Practice,5 new Written). Optional `THPT-G10-B22-C01` never promoted to Core; 23 public replay selfcheck placements not new IDs.

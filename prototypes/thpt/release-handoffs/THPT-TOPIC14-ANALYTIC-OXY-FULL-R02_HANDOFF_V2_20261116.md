@@ -15,7 +15,7 @@ Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md
 ACADEMIC_SOURCE_BLOB: 8f61c67a11dd3e2869cbd71dbb279bdcfdd92bf3
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC14_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: f778ccd1573433192ad9d9608ea090df2104a893
+REVIEW_RECEIPT_BLOB: c064ed1ba8e2c88318e3acac2b78fccb05ca9717
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_R02_AUTHORING_ONLY_METADATA_20261116.md
 AUTHOR_A1_A7_BLOB: 843671899db376729c8bedd5dbd41c1e3b651054
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_R02_AUTHORING_ONLY_METADATA_20261116.md
@@ -221,7 +221,7 @@ WHY→prerequisite/MEANING before formula→validity/choice of method→worked e
 
 ## DELTA_LEDGER
 
-- `DELTA_C_ACADEMIC_MATERIAL`: new CĐ14 Topic R01 23 concept-first lessons and 51 new canonical questions (23 First Try, 23 Practice, five Written /7), author-self Q18 source `8f61c67a11dd3e2869cbd71dbb279bdcfdd92bf3`, receipt `f778ccd1573433192ad9d9608ea090df2104a893`, initial 37 deterministic arithmetic/structural assertions and outcome-by-outcome math/PED signoff P0/P1=0.
+- `DELTA_C_ACADEMIC_MATERIAL`: new CĐ14 Topic R01 23 concept-first lessons and 51 new canonical questions (23 First Try, 23 Practice, five Written /7), author-self Q18 source `8f61c67a11dd3e2869cbd71dbb279bdcfdd92bf3`, receipt `c064ed1ba8e2c88318e3acac2b78fccb05ca9717`, initial 37 deterministic arithmetic/structural assertions and outcome-by-outcome math/PED signoff P0/P1=0.
 - `DELTA_B_SOURCE_EQUIVALENT`: unchanged 59 SGK canonical source-exact learner-visible projections from `c5c222...`, including 32 D3, 4 D4 Written/Anchor, 23 original SGK First Try. Preserve original roles/answers/SVG/conditions, not copied into a competing bank.
 - Original three SVG Git blobs frozen, not newly reviewed on actual website. New public Self Check **reuses** 23 Topic Practice IDs; no new private exam and no official Readiness.
 - REGISTER risk controlled as explicit RELEASE reconciliation rule: merge rows against latest main; preserve **union** of previous Topics; verify one packet→one manifest→one row on exact final combined HEAD CI. No AUTHORING merge/deploy.
@@ -378,7 +378,7 @@ One authoritative rubric: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDAR
 
 ## REVIEW_SOURCE_RECEIPT
 
-Source `8f61c67a11dd3e2869cbd71dbb279bdcfdd92bf3`, author metadata `843671899db376729c8bedd5dbd41c1e3b651054`, Q18 author receipt `f778ccd1573433192ad9d9608ea090df2104a893`, original SGK `c5c222...` and original three SVG blobs are immutable provenance. 110 canonical unique public IDs, exactly 110 mapping rows; 23 public Self Check replay placement IDs do not add unique IDs. Item→outcome→role source is the table above, and detailed pedagogical mapping comes from same metadata:
+Source `8f61c67a11dd3e2869cbd71dbb279bdcfdd92bf3`, author metadata `843671899db376729c8bedd5dbd41c1e3b651054`, Q18 author receipt `c064ed1ba8e2c88318e3acac2b78fccb05ca9717`, original SGK `c5c222...` and original three SVG blobs are immutable provenance. 110 canonical unique public IDs, exactly 110 mapping rows; 23 public Self Check replay placement IDs do not add unique IDs. Item→outcome→role source is the table above, and detailed pedagogical mapping comes from same metadata:
 
 ## OUTCOME_SOURCE_AND_PED_TRACE
 
