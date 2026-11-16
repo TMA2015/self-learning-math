@@ -8,7 +8,7 @@
 **CANDIDATE_LESSON_GIT_BLOB:** `3002487e974f2693528a39b2b2055fad8724d698`  
 **SVG_ASSET_PATH:** `docs/assets/images/thpt/G10_B02_NUMBER_SETS_INCLUSION_S1_R01.svg`  
 **SVG_ASSET_GIT_BLOB:** `995c387680f4797c619546b73b2acf3acda63aba`  
-**NAV_JS_PATH:** `docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js` · baseline `7db94b86df63c0fb2431ccf66cbb8b1c16d07813`, candidate `35d4ec080305778081f1013c76e4195a3b97aae1`  
+**NAV_JS_PATH:** `docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js` · baseline `7db94b86df63c0fb2431ccf66cbb8b1c16d07813`, candidate `7cc162bee17fd553b9d8192e6e564415a43a4996`  
 **CSS_PATH:** `docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css` · baseline `d7167adbc35770e8e4785ac11a36e2cb40c5cfe1`, candidate `e7585ebbd9b082c1b2628aef2d39b7bf7347a13d`  
 **B01_FROZEN_OWNER_ACCEPTED:** `docs/thpt-preview/sgk/chuong-i/bai-1.md` blob `dba6430cd79b17dee0591fb2dcd075ea5200b126`. Cannot be modified by B02.
 
