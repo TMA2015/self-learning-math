@@ -115,7 +115,7 @@ for(const [chapter,nums] of Object.entries(listed))for(const num of nums){
    assert.equal((source.match(/class="thpt-r4-footnote"/g)||[]).length,1,"B03 one source receipt note");
    assert(!source.includes("Vì sao chọn cách giải này?"),"B03 must not put a method-choice label before method");
    // Canonical TRY stems remain, but examples immediately before them now differ.
-   assert(source.includes("Xét \\(x+2y\\le5\\)")&&source.includes("Xét bốn dạng"),
+   assert(source.includes("Xét \\(x+2y\\le5\\)")&&source.includes("Bốn dạng được viết tương ứng"),
     "B03 First Try stems/keys are unchanged, worked examples must not reveal exact answer");
    for(const claim of ["x+3y\\le9","3x-y<2","(9,0)","(0,3)","(2,4)"])
      assert(source.includes(claim),"B03 independently solved transfer example missing "+claim);
