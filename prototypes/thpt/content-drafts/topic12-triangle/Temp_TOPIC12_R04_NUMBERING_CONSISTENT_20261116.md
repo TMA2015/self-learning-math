@@ -1,0 +1,770 @@
+# Chuyên đề 12 — Hệ thức lượng trong tam giác và giải tam giác · R03 learner-first
+
+<!-- AUTHORING_R03_CANDIDATE; HISTORICAL_R02_BLOB: 52b270e986361cb2d66cd0623522705e1abd8577; NO_RELEASE -->
+
+# Kiến thức
+
+## 1. Từ một góc đến hai con số có ý nghĩa
+
+**Vì sao có thể đo độ dài không thể chạm tới?** Giả sử hai người đứng ở A và B trên bờ sông, biết khoảng cách AB và có thể ngắm một mốc C ở bờ bên kia. Không cần kéo thước qua sông: các góc nhìn và độ dài AB đã đủ để dựng nên một tam giác rồi suy ra các cạnh còn lại. Nhưng trước hết, ta phải hiểu sin và côsin của những góc lớn hơn 90° — điều mà tam giác vuông đơn lẻ không giải thích hết.
+
+### 1.1. Góc 0°–180° được biểu diễn như thế nào?
+<!-- LESSON_ID: TOP12-M01; OUTCOME_ID: TOP12-O01 -->
+
+
+Hãy tưởng tượng một kim dài đúng một đơn vị quay quanh gốc O từ trục ngang dương đến vị trí tạo góc α, với `0° ≤ α ≤ 180°`. Đầu kim là điểm M nằm trên **nửa đường tròn phía trên**, nên nếu M có tọa độ `(x,y)` thì `x²+y²=1`, `y≥0`. Ta gọi **côsin là hoành độ** `cos α=x`, **sin là tung độ** `sin α=y`. Định nghĩa này nối liền góc nhọn, góc vuông và góc tù, thay vì buộc ta học ba trường hợp rời rạc.
+
+![Nửa đường tròn đơn vị: góc 120°, hoành độ âm và tung độ dương](../../visuals/THPT_G10_B05_SEMICIRCLE_120_D5_R01.svg)
+
+**Cách đọc hình:** Đi từ O đến M theo bán kính 1. Tại góc 120°, M nằm **bên trái** trục Oy và **bên trên** Ox, vì vậy `cos 120°=-1/2`, `sin 120°=√3/2`. Nét đứt là hình chiếu tọa độ, *không phải cạnh của một tam giác cần tính*. Góc 180° nằm trên trục Ox âm: sin=0, cos=-1.
+
+
+> **ĐỊNH NGHĨA — Sin và côsin góc 0°–180°**
+>
+> Trên nửa đường tròn đơn vị \(0^\circ\le\alpha\le180^\circ\), điểm cuối \(M=(\cos\alpha,\sin\alpha)\). Côsin là hoành độ (có thể âm), sin là tung độ (không âm).
+
+**Ví dụ tự học — Đề bài:** Tìm tọa độ điểm trên nửa đường tròn đơn vị ứng với góc 135°.
+
+**Lời giải:** Góc 135° bù với 45° nên cos135°=−√2/2 và sin135°=√2/2. Điểm M=(−√2/2,√2/2), đúng ở góc phần tư II.
+
+**Vận dụng:** Không nhìn bảng, dự đoán dấu của `sin 150°` và `cos 150°` trước khi tính.
+
+<details><summary>Đối chiếu</summary>150° là góc tù: điểm trên nửa đường tròn phía trên bên trái, do đó sin dương và cos âm. Cụ thể sin150°=1/2, cos150°=-√3/2. Nếu viết cos dương, hãy quay lại vị trí hình chiếu M trên trục hoành rồi làm bài luyện về cosin góc tù.</details>
+
+### 1.2. Giá trị đặc biệt và góc bù — nhìn thấy quy luật thay vì học thuộc mù
+<!-- LESSON_ID: TOP12-M02; OUTCOME_ID: TOP12-O02 -->
+
+
+Điểm trên nửa đường tròn tại hai góc `α` và `180°−α` có **cùng chiều cao** nhưng hoành độ đối nhau. Bởi vậy:
+
+\[\sin(180^\circ-\alpha)=\sin\alpha,\qquad \cos(180^\circ-\alpha)=-\cos\alpha.\]
+
+| Góc | 0° | 30° | 45° | 60° | 90° | 120° | 135° | 150° | 180° |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| sin | 0 | 1/2 | √2/2 | √3/2 | 1 | √3/2 | √2/2 | 1/2 | 0 |
+| cos | 1 | √3/2 | √2/2 | 1/2 | 0 | −1/2 | −√2/2 | −√3/2 | −1 |
+
+**Ví dụ:** `sin135°+cos120°=√2/2−1/2=(√2−1)/2`. Ta nhận ra trước `135°=180°−45°`, `120°=180°−60°` rồi mới tính, vì quy luật dấu mới là điều quan trọng.
+
+
+> **TÍNH CHẤT — Góc bù và dấu**
+>
+> \[\sin(180^\circ-\alpha)=\sin\alpha,\qquad\cos(180^\circ-\alpha)=-\cos\alpha.\] Với góc tù trên nửa đường tròn, sin dương và cos âm, ngoại trừ các đầu mút có sin bằng 0.
+
+**Ví dụ tự học — Đề bài:** Tính sin150°−cos120° không dùng máy tính.
+
+**Lời giải:** sin150°=sin30°=1/2 và cos120°=−cos60°=−1/2, nên kết quả bằng 1. Dấu âm của cos góc tù quyết định lời giải.
+
+**Vận dụng:** Tính `sin150°+cos120°` mà không dùng máy tính.
+
+<details><summary>Đối chiếu</summary>`sin150°=1/2`, `cos120°=−1/2`, tổng bằng **0**. Nếu nhầm dấu côsin, ôn lại cách đọc nửa đường tròn ở mục 1 và làm bài luyện về góc bù.</details>
+
+### 1.3. Tang, côtang có tồn tại với mọi góc không?
+<!-- LESSON_ID: TOP12-M03; OUTCOME_ID: TOP12-O03 -->
+
+
+Sin và cos là tọa độ nên đều xác định trên đoạn `0°–180°`. Tang và côtang là **tỉ số tọa độ**:
+
+\[\tan\alpha=\frac{\sin\alpha}{\cos\alpha}\quad(\cos\alpha\ne0),\qquad \cot\alpha=\frac{\cos\alpha}{\sin\alpha}\quad(\sin\alpha\ne0).\]
+
+Vì vậy, `tan90°` không xác định; `cot0°` và `cot180°` không xác định; ngược lại `tan180°=0` *có* nghĩa. Đối với góc tù, sin dương và cos âm, nên tang/côtang khi xác định đều âm.
+
+**Ví dụ:** Góc tù α có `tan α=−2`: từ `1+tan²α=1/cos²α` suy `cos²α=1/5`, chọn **cos âm** vì góc tù, nên `cosα=−1/√5`, `sinα=2/√5`, `cotα=−1/2`.
+
+
+> **ĐỊNH NGHĨA — Tang và côtang**
+>
+> \[\tan\alpha=\frac{\sin\alpha}{\cos\alpha}\quad(\cos\alpha\ne0),\qquad\cot\alpha=\frac{\cos\alpha}{\sin\alpha}\quad(\sin\alpha\ne0).\] Phải kiểm mẫu số khác 0 trước khi tính.
+
+**Ví dụ tự học — Đề bài:** Tính tan120° và cot120°; có đại lượng nào không xác định?
+
+**Lời giải:** sin120°=√3/2, cos120°=−1/2 đều khác 0; tan120°=−√3, cot120°=−1/√3=−√3/3. Hai tỉ số đều xác định.
+
+**Vận dụng:** Tại `α=90°`, đại lượng nào không xác định: `sinα`, `cosα`, `tanα`, hay cả ba?
+
+<details><summary>Đối chiếu</summary>Chỉ **tanα** không xác định vì mẫu cos90°=0. Nếu nghĩ cos90° không xác định, quay lại định nghĩa hoành độ ở mục 1 và làm bài luyện về điều kiện của tang.</details>
+
+### 1.4. Từ tọa độ đến hệ thức lượng giác; lựa chọn đúng dấu
+<!-- LESSON_ID: TOP12-M04; OUTCOME_ID: TOP12-O04 -->
+
+
+Vì M luôn nằm trên đường tròn đơn vị nên `x²+y²=1`, tức là:
+
+\[\sin^2\alpha+\cos^2\alpha=1.\]
+
+Chia hai vế cho `cos²α` hoặc `sin²α` chỉ khi mẫu khác 0 mới được các hệ thức `1+tan²α=1/cos²α` và `1+cot²α=1/sin²α`. **Biết bình phương không tự cho biết dấu.** Với góc tù α và `sinα=3/5`, ta có `cos²α=16/25`, rồi chọn `cosα=−4/5`, không phải `+4/5`.
+
+
+> **TÍNH CHẤT — Hệ thức lượng giác**
+>
+> \[\sin^2\alpha+\cos^2\alpha=1.\] Căn từ bình phương phải chọn dấu theo góc phần tư; không mặc định cos dương với góc tù.
+
+**Ví dụ tự học — Đề bài:** Góc tù α có sinα=5/13. Tính cosα và tanα.
+
+**Lời giải:** cos²α=1−25/169=144/169. Vì α tù nên cosα=−12/13 và tanα=−5/12, không tự chọn dấu dương khi lấy căn.
+
+**Vận dụng:** Góc tù α thỏa `cosα=−5/13`. Hãy tính sinα và tanα.
+
+<details><summary>Đối chiếu</summary>`sin²α=1−25/169=144/169`; vì 0°<α<180° nên sin không âm, ở đây sinα=12/13. Do đó tanα=(12/13)/(−5/13)=**−12/5**. Nếu chọn sin âm, hãy xem lại vị trí M ở mục 1 rồi làm bài luyện về dấu của sin và cosin.</details>
+
+## 2. Tam giác bất kỳ: tìm một cạnh từ hai cạnh và góc
+
+### 2.1. Tại sao định lí côsin là sự tiếp nối của Pitago?
+<!-- LESSON_ID: TOP12-M05; OUTCOME_ID: TOP12-O05 -->
+
+
+Trong một **tam giác không suy biến** ABC, đặt `a=BC`, `b=CA`, `c=AB`, lần lượt đối diện các góc A,B,C. Cả ba cạnh dương, `a+b>c`, `b+c>a`, `c+a>b`; ba góc đều trong `(0°,180°)` và có tổng 180°.
+
+Nếu đặt A ở gốc tọa độ, B tại `(c,0)` và C tại `(b cos A,b sin A)`, độ dài BC bằng khoảng cách giữa hai điểm này. Bình phương hai tọa độ chênh lệch rồi dùng `sin²A+cos²A=1`, ta được:
+
+\[a^2=(c-b\cos A)^2+(b\sin A)^2=b^2+c^2-2bc\cos A.\]
+
+**Đó là định lí côsin**. Khi A vuông, cosA=0, nó chính là Pitago. Khi A tù, cosA âm nên `a²>b²+c²`, phản ánh cạnh đối diện góc tù dài hơn.
+
+![Tam giác ABC với b=6, c=8, A=60°: định lí côsin và diện tích](../../visuals/THPT_G10_B06_COSINE_AREA_TRIANGLE_D5_R01.svg)
+
+**Cách đọc hình:** Góc 60° nằm ở A, *xen giữa* hai cạnh AB=c=8 và AC=b=6, không phải giữa b và a. Vì vậy `a²=6²+8²−2·6·8·cos60°=52`, `a=2√13`. Hình còn đánh dấu vùng diện tích; đừng đọc chiều cao ngoài tam giác thành cạnh BC.
+
+
+> **ĐỊNH LÝ — Côsin**
+>
+> Trong tam giác không suy biến, với a đối diện A: \[a^2=b^2+c^2-2bc\cos A.\] Dùng khi biết hai cạnh kẹp góc hoặc ba cạnh để xác định một góc, và nhớ \(\cos A<0\) nếu A tù.
+
+**Ví dụ tự học — Đề bài:** Tam giác có b=7, c=9, A=60°. Tính a.
+
+**Lời giải:** Dùng côsin vì biết hai cạnh kẹp góc: a²=49+81−2·7·9·cos60°=67. Cạnh dương nên a=√67.
+
+**Vận dụng:** Cho `b=5, c=7, A=60°`. Hãy tìm a và giải thích vì sao không dùng Pitago trực tiếp.
+
+<details><summary>Đối chiếu</summary>`a²=25+49−2·5·7·(1/2)=39`, nên **a=√39**. Pitago chỉ dùng trực tiếp khi góc xen giữa 90°. Nếu đặt nhầm cạnh đối diện, quay lại sơ đồ a=BC, b=CA, c=AB rồi làm bài luyện về định lí cosin.</details>
+
+### 2.2. Vì sao định lí sin giúp nối cạnh và góc đối diện?
+<!-- LESSON_ID: TOP12-M06; OUTCOME_ID: TOP12-O06 -->
+
+
+Diện tích cùng một tam giác có thể tính bằng `S=1/2 bc sinA=1/2 ca sinB=1/2 ab sinC`. Chia từng biểu thức cho `abc/2` (ba cạnh dương) thu được `sinA/a=sinB/b=sinC/c`. Định lí sin phát biểu đầy đủ:
+
+\[\frac a{\sin A}=\frac b{\sin B}=\frac c{\sin C}=2R,\]
+
+trong đó R là bán kính đường tròn **ngoại tiếp**. Trong tam giác không suy biến, các góc A,B,C thuộc `(0°,180°)` nên sin của chúng dương.
+
+**Ví dụ:** Với `A=30°, B=45°, a=5`, góc `C=105°`, rồi `b=5·sin45°/sin30°=5√2`. Mặt khác `2R=a/sinA=10` nên `R=5`. Ta dùng định lí sin vì có sẵn một cặp cạnh–góc đối diện và cần cặp còn lại.
+
+
+> **ĐỊNH LÝ — Sin**
+>
+> Với a,b,c đối diện A,B,C trong cùng tam giác: \[\frac a{\sin A}=\frac b{\sin B}=\frac c{\sin C}=2R.\] Ba góc của tam giác dương và tổng 180°, R là bán kính ngoại tiếp.
+
+**Ví dụ tự học — Đề bài:** Tam giác có A=45°, B=60°, a=√2. Tính b và R ngoại tiếp.
+
+**Lời giải:** C=75°. Theo định lí sin b=a·sin60°/sin45°=√3; 2R=a/sin45°=2, nên R=1.
+
+**Vận dụng:** `A=30°, B=60°, a=4`. Tìm b và R.
+
+<details><summary>Đối chiếu</summary>`b=4 sin60°/sin30°=4√3`, `2R=4/sin30°=8`, nên **R=4**. Nếu lấy b/a=sinA/sinB, xem lại thứ tự đối diện rồi làm bài luyện về định lí sin.</details>
+
+### 2.3. Nhìn dữ kiện để chọn phương pháp, không chọn công thức theo thói quen
+<!-- LESSON_ID: TOP12-M07; OUTCOME_ID: TOP12-O07 -->
+
+
+| Đã biết | Tìm tiếp | Lý do chọn |
+|---|---|---|
+| **SSS:** ba cạnh | Góc | Dùng côsin: công thức nối đúng ba cạnh với góc đối diện |
+| **SAS:** hai cạnh và góc xen giữa | Cạnh thứ ba | Dùng côsin trước, vì đã biết góc ở giữa hai cạnh |
+| **ASA/AAS:** hai góc và một cạnh | Hai cạnh khác | Tính góc còn lại, rồi dùng sin |
+| **SSA:** hai cạnh và góc **không xen giữa** | Số tam giác? | Phải kiểm tra *0, 1 hay 2 nghiệm* trước; không tự gán một tam giác |
+
+**Ví dụ SSS:** Ba cạnh `7,8,9` tạo thành tam giác vì thỏa bất đẳng thức tam giác. Với `a=7,b=8,c=9`, `cos C=(a²+b²−c²)/(2ab)=(49+64−81)/112=2/7`. Định lí côsin chọn C vì biết cạnh c đối diện góc cần tìm.
+
+
+> **PHƯƠNG PHÁP — Chọn công cụ theo dữ kiện**
+>
+> SAS/SSS thường bắt đầu từ định lý côsin; ASA/AAS thường chọn định lý sin sau khi tính góc thứ ba. Trường hợp SSA phải kiểm có 0/1/2 tam giác trước khi kết luận.
+
+**Ví dụ tự học — Đề bài:** Tam giác có a=4,b=5,c=6. Muốn tìm C chọn phương pháp nào và tính cosC.
+
+**Lời giải:** Vì 4+5>6, tam giác tồn tại. Biết ba cạnh nên dùng côsin: cosC=(a²+b²−c²)/(2ab)=(16+25−36)/40=1/8.
+
+**Vận dụng:** Tam giác có ba cạnh 6,8,10: góc đối diện cạnh 10 bằng bao nhiêu? Diện tích bao nhiêu?
+
+<details><summary>Đối chiếu</summary>`6²+8²=10²`, nên góc đối diện cạnh 10 là **90°**. Diện tích bằng `1/2·6·8=24` đơn vị vuông. Nếu chỉ biết ba cạnh mà áp dụng ngay định lí sin, quay lại bảng SSS rồi làm bài luyện về góc vuông từ ba cạnh.</details>
+
+### 2.4. Một bộ dữ kiện SSA có thể tạo thành hai tam giác
+<!-- LESSON_ID: TOP12-M08; OUTCOME_ID: TOP12-O08 -->
+
+
+Giả sử biết `A=30°, a=5, b=8`. Định lí sin cho `sinB=b sinA/a=4/5`. Nhưng trên đoạn `(0°,180°)`, **hai góc bù nhau có cùng sin**. Vì vậy `B₁≈53,13°`, `B₂≈126,87°`. Cả hai có `A+B<180°`, nên tồn tại **hai tam giác** khác nhau; tương ứng `C₁≈96,87°` hoặc `C₂≈23,13°`.
+
+Muốn giải SSA an toàn, tính `t=b sinA/a` trước: nếu `t>1`, không có tam giác; nếu `0<t≤1`, phải xét cả `B=arcsin t` lẫn `180°−arcsin t` và kiểm tra `A+B<180°` từng trường hợp. Với t=1 hai giá trị B trùng nhau. Với A và các cạnh dương, số nghiệm phụ thuộc cả góc A và điều kiện tổng góc; không kết luận hai nghiệm chỉ vì t<1.
+
+
+> **GHI NHỚ — Trường hợp hai nghiệm SSA**
+>
+> Biết A, a đối diện A, b đối diện B: \(\sin B=b\sin A/a\). Nếu tỉ số ngoài [0,1], vô nghiệm; nếu trong (0,1), xét cả \(B_1=\arcsin r\) và \(B_2=180^\circ-B_1\), **chỉ giữ** nghiệm có \(A+B<180^\circ\). Không mặc định luôn có hai nghiệm.
+
+**Ví dụ tự học — Đề bài:** Dữ kiện SSA: A=30°, a=8,b=6. Có bao nhiêu tam giác?
+
+**Lời giải:** sinB=3/8. B₁=arcsin(3/8)<30° hợp lệ; B₂=180°−B₁>150° khiến A+B₂>180°, phải loại. Vậy chỉ một tam giác.
+
+**Vận dụng:** `A=30°, a=4, b=10`. Tồn tại tam giác nào thỏa dữ kiện này không?
+
+<details><summary>Đối chiếu</summary>`sinB=(10·sin30°)/4=5/4>1` là vô lý, nên **không tồn tại tam giác**. Không dùng máy tính `arcsin(1,25)`; hãy kiểm điều kiện đầu vào. Luyện lại mục 6 rồi làm bài luyện về dữ kiện vô nghiệm.</details>
+
+## 3. Diện tích, các bán kính và đo đạc thực tế
+
+### 3.1. Diện tích dùng hai cạnh và góc xen giữa
+<!-- LESSON_ID: TOP12-M09; OUTCOME_ID: TOP12-O09 -->
+
+
+Cạnh c làm đáy; độ cao tương ứng bằng `b sinA` nếu A nhọn, và vẫn có cùng độ dài dương nếu A tù (chân đường cao nằm trên phần kéo dài). Do đó:
+
+\[S=\frac12bc\sin A=\frac12ca\sin B=\frac12ab\sin C.\]
+
+Phải dùng **góc xen giữa chính hai cạnh đang nhân**. Với `b=8,c=5,A=30°`, `S=(1/2)·8·5·(1/2)=10`. Trong tam giác, `sinA>0`; diện tích luôn dương.
+
+
+> **CÔNG THỨC — Diện tích theo góc kẹp**
+>
+> \[S=\frac12bc\sin A=\frac12ca\sin B=\frac12ab\sin C.\] Sử dụng đúng góc xen giữa hai cạnh; sin góc trong tam giác dương.
+
+**Ví dụ tự học — Đề bài:** Tam giác có b=5,c=7,A=120°. Tính diện tích.
+
+**Lời giải:** sin120°=√3/2>0; S=1/2·5·7·sin120°=35√3/4. Góc tù vẫn cho diện tích dương.
+
+**Vận dụng:** Cho `b=6,c=8,A=60°`. Tính diện tích, rồi đối chiếu với vùng tô trên hình ở mục 5.
+
+<details><summary>Đối chiếu</summary>`S=(1/2)·6·8·sin60°=12√3` đơn vị diện tích. Nếu ra 24√3, em đã quên hệ số 1/2. Luyện bài luyện cùng dạng.</details>
+
+### 3.2. Chỉ có ba cạnh: Heron, bán kính nội tiếp và ngoại tiếp
+<!-- LESSON_ID: TOP12-M10; OUTCOME_ID: TOP12-O10 -->
+
+
+Không biết góc cũng có thể tính diện tích: đặt nửa chu vi `p=(a+b+c)/2`; với tam giác không suy biến,
+
+\[S=\sqrt{p(p-a)(p-b)(p-c)}.\]
+
+Nếu r là bán kính đường tròn **nội tiếp** và R là bán kính đường tròn **ngoại tiếp**, thì:
+
+\[S=pr,\qquad S=\frac{abc}{4R}.\]
+
+Công thức `S=pr` đến từ việc chia tam giác thành ba tam giác nhỏ chung chiều cao r (đường vuông góc từ tâm nội tiếp đến ba cạnh). Công thức `S=abc/(4R)` kết hợp diện tích qua sin với định lí sin. **Không hoán đổi r và R**, và trước khi dùng Heron phải kiểm `a+b>c`, `b+c>a`, `c+a>b`.
+
+**Ví dụ:** Tam giác 13–14–15 có `p=21`, `S=√(21·8·7·6)=84`, `r=84/21=4`, `R=13·14·15/(4·84)=65/8`.
+
+
+> **CÔNG THỨC — Heron và bán kính**
+>
+> Với \(p=(a+b+c)/2\), tam giác không suy biến: \[S=\sqrt{p(p-a)(p-b)(p-c)},\quad r=S/p,\quad R=abc/(4S).\] Kiểm bất đẳng thức tam giác và S>0.
+
+**Ví dụ tự học — Đề bài:** Tam giác có ba cạnh 10,10,12. Tính S,r,R.
+
+**Lời giải:** p=16; S=√(16·6·6·4)=48. Bán kính nội tiếp r=48/16=3; bán kính ngoại tiếp R=10·10·12/(4·48)=25/4.
+
+**Vận dụng:** Với ba cạnh 5,5,6, tính S và r.
+
+<details><summary>Đối chiếu</summary>`p=8`; `S=√(8·3·3·2)=12`; `r=S/p=3/2`. Nếu dùng `abc/(4S)` sẽ tìm **R**, không phải r. Luyện bài luyện về Heron.</details>
+
+### 3.3. Giải tam giác để đo khoảng cách không đi tới được
+<!-- LESSON_ID: TOP12-M11; OUTCOME_ID: TOP12-O11 -->
+
+
+Khi khảo sát, đầu tiên hãy **vẽ lại điểm quan sát** và đánh dấu cạnh thực sự đo được. Với hai vị trí A,B cách nhau 100 m, cùng ngắm C và đo góc trong `A=30°`, `B=60°`, ta suy `C=90°`. Vì AB đối diện C, đây là cạnh huyền. Định lí sin cho:
+
+\[BC=100\frac{\sin30^\circ}{\sin90^\circ}=50\text{ m},\qquad AC=100\frac{\sin60^\circ}{\sin90^\circ}=50\sqrt3\text{ m}.\]
+
+Tại sao không dùng góc 30° thay cho góc C khi chia AB? Vì **AB đối diện C**, không đối diện A. Kết quả cần ghi đơn vị mét và nên so sánh hợp lí với đoạn mốc ban đầu.
+
+
+> **PHƯƠNG PHÁP — Đo đạc tam giác**
+>
+> Chọn hai vị trí quan sát A,B có khoảng cách AB đã biết và đo góc tới C. Tính C=180°−A−B>0 rồi suy cạnh bằng định lý sin, ghi đơn vị, không biến chiều dài hình phác thảo thành dữ kiện.
+
+**Ví dụ tự học — Đề bài:** Hai trạm A,B cách nhau 60 m, góc A=45°, B=60° khi ngắm C. Tìm BC.
+
+**Lời giải:** C=75°. Định lí sin cho BC=60·sin45°/sin75°=60(√3−1) m. AB đối diện C, phải ghép đúng cặp.
+
+**Vận dụng:** Nếu `AB=80 m`, góc A=B=45°, độ dài BC và AC có bằng nhau không? Bằng bao nhiêu?
+
+<details><summary>Đối chiếu</summary>`C=90°`, `BC=80 sin45°/sin90°=40√2 m`, `AC=40√2 m`. Bằng nhau vì A=B. Nếu ra một cạnh khác, kiểm lại quan hệ đối diện trước khi bấm máy. Luyện bài luyện về đo đạc.</details>
+
+### 3.4. Kiểm tra mô hình trước khi tin đáp số
+<!-- LESSON_ID: TOP12-M12; OUTCOME_ID: TOP12-O12 -->
+
+
+Một phép tính đúng trên máy không cứu được dữ kiện sai: ba thanh dài 2,3,6 không tạo được tam giác (`2+3<6`); hai góc có tổng 190° không thể là góc trong của tam giác; trong bài toán thực tế, nhầm góc giữa đường ngắm với góc bên ngoài sẽ làm ra khoảng cách sai. Khi dùng máy tính lượng giác, kiểm chế độ **DEG (độ)** nếu đề dùng 30°,60°; muốn dùng radian phải đổi đơn vị nhất quán.
+
+Thực hành một quy trình ổn định: (1) gọi tên cạnh/góc đối diện; (2) kiểm dữ kiện và bất đẳng thức tam giác; (3) quyết định SSS/SAS/ASA–AAS/SSA; (4) ghi điều kiện áp dụng trước khi thế; (5) kiểm tổng góc, tính dương, đơn vị và độ lớn kết quả. Đây là cách giúp một người tự học phát hiện lỗi mà chưa cần lời giải từ AI.
+
+
+> **GHI NHỚ — Điều kiện và kiểm nghiệm**
+>
+> Mỗi lời giải phải kiểm tam giác không suy biến, ba cạnh thỏa bất đẳng thức, tổng góc 180°, miền của căn, mẫu số và số nghiệm SSA. Giá trị lấy từ máy không thay thế điều kiện mô hình.
+
+**Ví dụ tự học — Đề bài:** Có thể dùng Heron cho ba cạnh 4,6,11 cm không?
+
+**Lời giải:** Không: 4+6=10<11, không tồn tại tam giác không suy biến. Phải kiểm bất đẳng thức tam giác trước khi dùng Heron.
+
+**Vận dụng:** Có người nhập ba cạnh 2,3,6 vào công thức Heron và ra căn của số âm. Lỗi nằm ở máy tính hay dữ kiện?
+
+<details><summary>Đối chiếu</summary>Dữ kiện **không tạo thành tam giác** vì 2+3 không lớn hơn 6. Cần kiểm điều kiện tồn tại *trước* công thức; luyện bài luyện về bất đẳng thức tam giác.</details>
+
+**Nguồn SGK/SBT — cuối trang Kiến thức**
+
+- **SGK Toán 10 Kết nối tri thức Tập Một:** Bài 5 *Giá trị lượng giác của một góc từ 0° đến 180°*; Bài 6 *Hệ thức lượng trong tam giác* (Chương III).
+- **SBT Toán 10 Kết nối tri thức Tập Một:** các bài 5–6 tương ứng, dùng tham khảo họ dạng. Số trang in/PDF cụ thể phải lấy từ receipt original PR #840, không tự đoán.
+
+<!-- R02 author metadata: frozen source b93611eaaf0dbc03908a4836f1db7f70fd8df108, original reviewed SVG paths unchanged; R02 formal maths new and Q18 pending. -->
+
+# Luyện tập
+
+Em luyện từng chặng sau khi hiểu cách chọn định lí và điều kiện áp dụng. Các câu SGK đã học sẽ hiện lại ở phần này từ cùng ngân hàng; bài bổ sung có lời giải tự mở **Đối chiếu**. Đây là hoạt động giúp em tự sửa sai, không phải bài thi chấm năng lực độc lập.
+
+## 1. Ôn luyện SGK
+
+**18 câu SGK công khai** được hiển thị đầy đủ tại đây từ đúng nguồn SGK canonical đã khóa. Hãy tự làm trước khi mở Đối chiếu; bài tự luận có rubric công khai. Mỗi câu giữ nguyên `item_id`, không nhân ngân hàng mới.
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B05-C01; SOURCE_BLOB: 6320aeaa89bd51c514b07461e01fad5e3aca833f; OUTCOME: TOP12-O01; SINGLE_ITEM_ID -->
+
+**Bài SGK 1.**
+
+**Đề:** Giá trị của \(\cos120^\circ\) là bao nhiêu?
+
+**Lựa chọn:** A. \(\tfrac12\) | B. \(-\tfrac12\) | C. \(\tfrac{\sqrt3}{2}\) | D. \(-\tfrac{\sqrt3}{2}\)
+
+<details><summary>Đối chiếu</summary>
+
+**Đáp án:** B
+
+**Lời giải:** \(\cos120^\circ=\cos(180^\circ-60^\circ)=-\cos60^\circ=-\tfrac12\).
+
+**Nếu làm sai:** Nếu mất dấu, vẽ nửa đường tròn và xem hoành/tung theo góc.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B05-C02; SOURCE_BLOB: 6320aeaa89bd51c514b07461e01fad5e3aca833f; OUTCOME: TOP12-O03; SINGLE_ITEM_ID -->
+
+**Bài SGK 2.**
+
+**Đề:** Trong đoạn từ 0° đến 180°, biểu thức nào sau đây **không xác định**?
+
+**Lựa chọn:** A. \(\sin90^\circ\) | B. \(\cos180^\circ\) | C. \(\tan90^\circ\) | D. \(\tan180^\circ\)
+
+<details><summary>Đối chiếu</summary>
+
+**Đáp án:** C
+
+**Lời giải:** Tại 90°, cos=0 nên tan không xác định. Tan180°=0 vì cos180°=−1 khác 0.
+
+**Nếu làm sai:** Trước phép chia sin/cos, kiểm mẫu khác 0.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B05-P01; SOURCE_BLOB: 6320aeaa89bd51c514b07461e01fad5e3aca833f; OUTCOME: TOP12-O04; SINGLE_ITEM_ID -->
+
+**Bài SGK 3.**
+
+**Đề:** Cặp giá trị \((\sin150^\circ,\cos150^\circ)\) bằng bao nhiêu?
+
+**Lựa chọn:** A. \((\tfrac12,\tfrac{\sqrt3}{2})\) | B. \((\tfrac12,-\tfrac{\sqrt3}{2})\) | C. \((-\tfrac12,-\tfrac{\sqrt3}{2})\) | D. \((\tfrac{\sqrt3}{2},-\tfrac12)\)
+
+<details><summary>Đối chiếu</summary>
+
+**Đáp án:** B
+
+**Lời giải:** \(\sin150^\circ=\sin30^\circ=\tfrac12\); \(\cos150^\circ=-\cos30^\circ=-\tfrac{\sqrt3}{2}\).
+
+**Nếu làm sai:** Từ sin²+cos²=1, chọn dấu căn theo vị trí góc; hai góc bù có sin bằng nhau, cos đối dấu.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B05-P02; SOURCE_BLOB: 6320aeaa89bd51c514b07461e01fad5e3aca833f; OUTCOME: TOP12-O04; SINGLE_ITEM_ID -->
+
+**Bài SGK 4.**
+
+**Đề:** Cho góc tù α với \(\cos\alpha=-3/5\). Tính \(\sin\alpha\) và \(\tan\alpha\).
+
+<details><summary>Đối chiếu</summary>
+
+**Đáp án:** \(\sin\alpha=4/5,\ \tan\alpha=-4/3\).
+
+**Lời giải:** \(\sin^2\alpha=1-9/25=16/25\). Góc tù có sin dương nên sin=4/5; tan=(4/5)/(−3/5)=−4/3.
+
+**Nếu làm sai:** Từ sin²+cos²=1, chọn dấu căn theo vị trí góc; hai góc bù có sin bằng nhau, cos đối dấu.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B05-P03; SOURCE_BLOB: 6320aeaa89bd51c514b07461e01fad5e3aca833f; OUTCOME: TOP12-O02; SINGLE_ITEM_ID -->
+
+**Bài SGK 5.**
+
+**Đề:** Tính chính xác \(T=\sin135^\circ+\cos120^\circ\).
+
+<details><summary>Đối chiếu</summary>
+
+**Đáp án:** \(T=(\sqrt2-1)/2\).
+
+**Lời giải:** \(\sin135^\circ=\sin45^\circ=\sqrt2/2\), \(\cos120^\circ=-1/2\). Cộng lại được \((\sqrt2-1)/2\).
+
+**Nếu làm sai:** Liên hệ góc cần tính với góc nhọn đặc biệt và kiểm dấu sau khi lấy giá trị.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B05-P04; SOURCE_BLOB: 6320aeaa89bd51c514b07461e01fad5e3aca833f; OUTCOME: TOP12-O04; SINGLE_ITEM_ID -->
+
+**Bài SGK 6.**
+
+**Đề:** Phát biểu nào đúng với **mọi** \(0^\circ\le\alpha\le180^\circ\)?
+
+**Lựa chọn:** A. \(\tan\alpha\cdot\cot\alpha=1\) | B. \(\sin^2\alpha+\cos^2\alpha=1\) | C. \(\cos\alpha\ge0\) | D. \(\cot\alpha\) xác định với mọi α
+
+<details><summary>Đối chiếu</summary>
+
+**Đáp án:** B
+
+**Lời giải:** \(\sin^2\alpha+\cos^2\alpha=1\) đúng trên toàn đoạn. Câu A không có nghĩa tại 0°,90°,180°; cos âm với góc tù; cot0° và cot180° không xác định.
+
+**Nếu làm sai:** Từ sin²+cos²=1, chọn dấu căn theo vị trí góc; hai góc bù có sin bằng nhau, cos đối dấu.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B05-P05; SOURCE_BLOB: 6320aeaa89bd51c514b07461e01fad5e3aca833f; OUTCOME: TOP12-O02; SINGLE_ITEM_ID -->
+
+**Bài SGK 7.**
+
+**Đề:** Trong \([0^\circ,180^\circ]\), có những góc nào thỏa \(\sin\alpha=\sqrt3/2\)?
+
+**Lựa chọn:** A. Chỉ 60° | B. Chỉ 120° | C. 60° và 120° | D. 30° và 150°
+
+<details><summary>Đối chiếu</summary>
+
+**Đáp án:** C
+
+**Lời giải:** \(\sin60^\circ=\sqrt3/2\); góc bù 120° có cùng sin. Trong đoạn đã cho chỉ có hai góc đó.
+
+**Nếu làm sai:** Liên hệ góc cần tính với góc nhọn đặc biệt và kiểm dấu sau khi lấy giá trị.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B05-P06; SOURCE_BLOB: 6320aeaa89bd51c514b07461e01fad5e3aca833f; OUTCOME: TOP12-O03; SINGLE_ITEM_ID -->
+
+**Bài SGK 8.**
+
+**Đề:** Góc tù α thỏa \(\tan\alpha=-2\). Tính \(\sin\alpha,\cos\alpha,\cot\alpha\).
+
+<details><summary>Đối chiếu</summary>
+
+**Đáp án:** \(\sin\alpha=2/\sqrt5,\ \cos\alpha=-1/\sqrt5,\ \cot\alpha=-1/2\).
+
+**Lời giải:** \(\cos^2\alpha=1/5\); góc tù nên cos=−1/√5. Sin=tan·cos=2/√5; cot=1/tan=−1/2.
+
+**Nếu làm sai:** Trước phép chia sin/cos, kiểm mẫu khác 0.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHIII-W05; SOURCE_BLOB: 6320aeaa89bd51c514b07461e01fad5e3aca833f; OUTCOME: TOP12-O04; SINGLE_ITEM_ID -->
+
+**Bài SGK 9.**
+
+**Đề:** Một vòng quay có tâm O cao hơn mặt đất 12 m, bán kính 10 m. Xét vị trí M được xác định bởi góc 150° so với tia Ox hướng ngang sang phải, theo chiều dương, trên nửa đường tròn phía trên O. (a) Tính tọa độ của M trong hệ trục Oxy (mét). (b) Tìm độ cao M so với mặt đất. (c) Giải thích dấu của cos150° bằng hình học, không chỉ thuộc bảng số.
+
+<details><summary>Lời giải và rubric</summary>
+
+**Lời giải:** (a) \(x_M=10\cos150^\circ=-5\sqrt3\) (m), \(y_M=10\sin150^\circ=5\) (m). (b) Độ cao M là \(12+5=17\) m. (c) Góc 150° nằm phía trái trục Oy nên hình chiếu xuống trục Ox âm, từ đó cos150°<0.
+
+**Rubric /7:** (1) Nêu đúng quy chiếu tâm O, bán kính và góc (1đ); (2) viết đúng `x=Rcos`, `y=Rsin` (2đ); (3) thay giá trị góc bù tính đủ tọa độ (2đ); (4) tính độ cao mặt đất 17 m (1đ); (5) giải thích hình học dấu cos (1đ). Không trừ lặp cùng lỗi số ở các bước phụ thuộc khi cách làm đúng; giáo viên/người học đối chiếu thủ công, không tự cộng Mastery.
+
+**Nếu làm sai:** Từ sin²+cos²=1, chọn dấu căn theo vị trí góc; hai góc bù có sin bằng nhau, cos đối dấu.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B06-C01; SOURCE_BLOB: 6320aeaa89bd51c514b07461e01fad5e3aca833f; OUTCOME: TOP12-O05; SINGLE_ITEM_ID -->
+
+**Bài SGK 10.**
+
+**Đề:** Trong tam giác ABC có \(b=5,c=7,A=60^\circ\). Tính \(a\).
+
+**Lựa chọn:** A. \(\sqrt{39}\) | B. \(\sqrt{74}\) | C. \(\sqrt{109}\) | D. \(\sqrt{14}\)
+
+<details><summary>Đối chiếu</summary>
+
+**Đáp án:** A
+
+**Lời giải:** \(a^2=25+49-2\cdot5\cdot7\cdot\tfrac12=39\), a=√39.
+
+**Nếu làm sai:** Đặt a đối diện A; nếu biết hai cạnh kẹp góc, dùng côsin rồi kiểm a>0.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B06-C02; SOURCE_BLOB: 6320aeaa89bd51c514b07461e01fad5e3aca833f; OUTCOME: TOP12-O09; SINGLE_ITEM_ID -->
+
+**Bài SGK 11.**
+
+**Đề:** Tam giác có \(b=8,c=5,A=30^\circ\). Diện tích \(S\) bằng bao nhiêu?
+
+**Lựa chọn:** A. 20 | B. 10 | C. 40 | D. 5
+
+<details><summary>Đối chiếu</summary>
+
+**Đáp án:** B
+
+**Lời giải:** \(S=\tfrac12\cdot8\cdot5\cdot\sin30^\circ=10\).
+
+**Nếu làm sai:** Diện tích dùng góc giữa đúng hai cạnh và hệ số 1/2.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B06-P01; SOURCE_BLOB: 6320aeaa89bd51c514b07461e01fad5e3aca833f; OUTCOME: TOP12-O06; SINGLE_ITEM_ID -->
+
+**Bài SGK 12.**
+
+**Đề:** Cho tam giác ABC có \(A=30^\circ,B=60^\circ,a=4\). Tính \(b\) và \(R\).
+
+<details><summary>Đối chiếu</summary>
+
+**Đáp án:** \(b=4\sqrt3,\ R=4\).
+
+**Lời giải:** \(b=4(\sqrt3/2)/(1/2)=4\sqrt3\); \(2R=4/(1/2)=8\), R=4.
+
+**Nếu làm sai:** Dùng định lí sin theo cặp cạnh và góc đối diện, không hoán đổi tử/mẫu.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B06-P02; SOURCE_BLOB: 6320aeaa89bd51c514b07461e01fad5e3aca833f; OUTCOME: TOP12-O10; SINGLE_ITEM_ID -->
+
+**Bài SGK 13.**
+
+**Đề:** Tam giác cân có các cạnh 5,5,6. Tính \(S\) và bán kính nội tiếp \(r\).
+
+<details><summary>Đối chiếu</summary>
+
+**Đáp án:** \(S=12,\ r=3/2\).
+
+**Lời giải:** \(p=8\); \(S=\sqrt{8\cdot3\cdot3\cdot2}=12\); \(r=S/p=3/2\).
+
+**Nếu làm sai:** Trước Heron kiểm tam giác hợp lệ; tính p, rồi r=S/p và R=abc/(4S).
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B06-P03; SOURCE_BLOB: 6320aeaa89bd51c514b07461e01fad5e3aca833f; OUTCOME: TOP12-O06; SINGLE_ITEM_ID -->
+
+**Bài SGK 14.**
+
+**Đề:** Tam giác ABC có \(A=30^\circ,B=60^\circ,c=8\). Tính \(a,b\).
+
+<details><summary>Đối chiếu</summary>
+
+**Đáp án:** \(a=4,\ b=4\sqrt3\).
+
+**Lời giải:** \(C=90^\circ\), c/sinC=8. Vậy \(a=8\sin30^\circ=4\), \(b=8\sin60^\circ=4\sqrt3\).
+
+**Nếu làm sai:** Dùng định lí sin theo cặp cạnh và góc đối diện, không hoán đổi tử/mẫu.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B06-P04; SOURCE_BLOB: 6320aeaa89bd51c514b07461e01fad5e3aca833f; OUTCOME: TOP12-O10; SINGLE_ITEM_ID -->
+
+**Bài SGK 15.**
+
+**Đề:** Tam giác có ba cạnh \(a=7,b=8,c=9\). Tính \(\cos C\) và diện tích \(S\).
+
+<details><summary>Đối chiếu</summary>
+
+**Đáp án:** \(\cos C=2/7,\ S=12\sqrt5\).
+
+**Lời giải:** \(\cos C=(a^2+b^2-c^2)/(2ab)=(49+64-81)/(112)=2/7\). p=12; \(S=\sqrt{12\cdot5\cdot4\cdot3}=12\sqrt5\).
+
+**Nếu làm sai:** Trước Heron kiểm tam giác hợp lệ; tính p, rồi r=S/p và R=abc/(4S).
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B06-P05; SOURCE_BLOB: 6320aeaa89bd51c514b07461e01fad5e3aca833f; OUTCOME: TOP12-O11; SINGLE_ITEM_ID -->
+
+**Bài SGK 16.**
+
+**Đề:** Đo khoảng cách qua một khu vực khó tiếp cận: người khảo sát đứng ở A và B cách nhau 100 m, ngắm điểm C sao cho \(\angle A=30^\circ,\angle B=60^\circ\) trong tam giác ABC. Tính BC và AC.
+
+<details><summary>Đối chiếu</summary>
+
+**Đáp án:** \(BC=50\text{ m},\ AC=50\sqrt3\text{ m}\).
+
+**Lời giải:** \(C=90^\circ\), \(AB=100\) là cạnh huyền. \(BC=AB\sin A=50\) m, \(AC=AB\sin B=50\sqrt3\) m.
+
+**Nếu làm sai:** Vẽ lại điểm quan sát, đánh dấu góc trong và cạnh đo được, ghi đơn vị.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B06-P06; SOURCE_BLOB: 6320aeaa89bd51c514b07461e01fad5e3aca833f; OUTCOME: TOP12-O07; SINGLE_ITEM_ID -->
+
+**Bài SGK 17.**
+
+**Đề:** Tam giác ABC có \(a=\sqrt{61},b=5,c=6\). Hãy xác định góc A và diện tích \(S\).
+
+<details><summary>Đối chiếu</summary>
+
+**Đáp án:** \(A=90^\circ,\ S=15\).
+
+**Lời giải:** \(a^2=61=b^2+c^2=25+36\) nên \(\cos A=0\), A=90°. \(S=\tfrac12 bc=15\).
+
+**Nếu làm sai:** Ba cạnh cần thỏa bất đẳng thức tam giác; chọn định lí côsin khi tìm góc.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHIII-W06-ANCHOR; SOURCE_BLOB: 6320aeaa89bd51c514b07461e01fad5e3aca833f; OUTCOME: TOP12-O11; SINGLE_ITEM_ID -->
+
+**Bài SGK 18.**
+
+**Đề:** Một mảnh đất hình tam giác ABC có AB=9 m, AC=10 m và BC=17 m. (a) Chứng minh ba cạnh tạo thành tam giác. Tính \(\cos A\) và cho biết góc A nhọn hay tù. (b) Tính diện tích S bằng công thức Heron. (c) Tính bán kính đường tròn nội tiếp r và ngoại tiếp R. (d) Nếu trải cỏ toàn bộ mảnh đất, giá 120.000 đồng/m², tính chi phí chưa gồm công.
+
+<details><summary>Lời giải và rubric</summary>
+
+**Lời giải:** (a) Vì \(9+10=19>17\) nên ba độ dài lập thành một tam giác. Với a=17,b=10,c=9, \(\cos A=(b^2+c^2-a^2)/(2bc)=(100+81-289)/(180)=-3/5\), nên A **tù**. (b) \(p=18\), \(S=\sqrt{18\cdot(18-17)\cdot(18-10)\cdot(18-9)}=\sqrt{18\cdot1\cdot8\cdot9}=36\text{ m}^2\). (c) \(r=S/p=36/18=2\text{ m}\), \(R=abc/(4S)=17\cdot10\cdot9/(4\cdot36)=85/8\text{ m}\). (d) Chi phí \(36\cdot120000=4\,320\,000\) đồng.
+
+**Rubric /7:** kiểm tra bất đẳng thức tam giác (1đ); sử dụng đúng định lí côsin và tính cos A (1.5đ); suy góc A tù (0.5đ); tính p và S đúng kèm m² (2đ); suy r và R đúng đơn vị (1.5đ); chi phí cỏ đúng (0.5đ). Tự luận tự đối chiếu không cập nhật Skill Mastery.
+
+**Nếu làm sai:** Vẽ lại điểm quan sát, đánh dấu góc trong và cạnh đo được, ghi đơn vị.
+
+</details>
+
+## 2. Bài tập bổ sung CĐ12 — tự tính và tự đối chiếu
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-P01; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O04; SINGLE_ITEM_ID -->
+**Bài luyện 1. Dấu và hệ thức lượng**
+**Đề:** Góc tù α có `cosα=−5/13`. Tính sinα và tanα; giải thích việc chọn dấu.
+<details><summary>Đối chiếu</summary>`sin²α=144/169`; vì góc tù nên sin dương, sin=12/13 và tan=−12/5. Nhớ xét dấu trước khi lấy căn. Nếu sai: mục 1,3,4 → bài luyện về dấu của sin và cosin.</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-P02; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O02; SINGLE_ITEM_ID -->
+**Bài luyện 2. Hai góc bù**
+**Đề:** Tính chính xác `sin150°+cos120°` và giải thích quy luật được dùng.
+<details><summary>Đối chiếu</summary>Sin giữ nguyên, cos đổi dấu khi chuyển về góc bù: `1/2−1/2=0`. Nếu sai: mục 2 → bài luyện về góc bù.</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-P03; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O05; SINGLE_ITEM_ID -->
+**Bài luyện 3. Góc tù và định lí côsin**
+**Đề:** Trong tam giác ABC có `b=4, c=7, A=120°`. Tính a.
+<details><summary>Đối chiếu</summary>`a²=16+49−2·4·7·(−1/2)=93`, nên `a=√93`. Góc tù khiến cạnh a lớn hơn cả b và c. Nếu sai: mục 5 → bài luyện về định lí cosin.</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-P04; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O06; SINGLE_ITEM_ID -->
+**Bài luyện 4. Hai góc và một cạnh**
+**Đề:** Trong tam giác ABC có `A=30°, B=75°, a=6`. Tính b,c.
+<details><summary>Đối chiếu</summary>`C=75°`, nên `b=c=6 sin75°/sin30°=12 sin75°=3(√6+√2)`. Nếu sai: mục 6–7 → bài luyện về hai góc và một cạnh.</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-P05; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O07; SINGLE_ITEM_ID -->
+**Bài luyện 5. Ba cạnh và tam giác vuông**
+**Đề:** Ba cạnh 6,8,10 tạo thành tam giác ABC. Xác định góc đối diện cạnh 10, diện tích S, r và R.
+<details><summary>Đối chiếu</summary>Vì `6²+8²=10²`, góc đối diện 10 là 90°. `S=24`, `p=12`, `r=24/12=2`, `R=6·8·10/(4·24)=5`. Nếu sai: mục 7,9–10 → bài luyện về Heron.</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-P06; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O08; SINGLE_ITEM_ID -->
+**Bài luyện 6. Dữ kiện SSA có thể có hai nghiệm**
+**Đề:** Biết `A=30°, a=6, b=10`. Có bao nhiêu tam giác khác nhau thỏa dữ kiện? Nêu hai giá trị khả dĩ của B theo biểu thức arcsin.
+<details><summary>Đối chiếu</summary>`sinB=(10 sin30°)/6=5/6`. Hai giá trị `B=arcsin(5/6)` và `B=180°−arcsin(5/6)` đều cho A+B<180° (vì arcsin(5/6)>30°); **hai tam giác**. Nếu chỉ lấy B nhọn: mục 8 → bài luyện về dữ kiện vô nghiệm.</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-P07; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O08; SINGLE_ITEM_ID -->
+**Bài luyện 7. Dữ kiện SSA vô nghiệm**
+**Đề:** `A=30°, a=3, b=7`. Hãy kiểm chứng có tồn tại tam giác ABC hay không.
+<details><summary>Đối chiếu</summary>`sinB=7·sin30°/3=7/6>1`, vô lý. **Không tồn tại tam giác**. Nếu bấm arcsin trực tiếp và bị lỗi: mục 8 kiểm điều kiện trước.</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-P08; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O09; SINGLE_ITEM_ID -->
+**Bài luyện 8. Diện tích qua góc tù**
+**Đề:** `b=6, c=10, A=150°`. Tính diện tích S, nêu vì sao S dương.
+<details><summary>Đối chiếu</summary>`S=(1/2)·6·10·sin150°=15`. Góc tù trong tam giác vẫn có sin dương; độ cao đến phần kéo dài của đáy vẫn là độ dài dương. Nếu sai: mục 9 → bài luyện cùng dạng.</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-P09; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O10; SINGLE_ITEM_ID -->
+**Bài luyện 9. Heron và hai bán kính**
+**Đề:** Tam giác có cạnh 7,8,9. Tìm S,r,R.
+<details><summary>Đối chiếu</summary>`p=12`, `S=√(12·5·4·3)=12√5`, `r=S/p=√5`, `R=7·8·9/(4·12√5)=21√5/10`. Nếu nhầm r/R: mục 10 → bài luyện về diện tích từ ba cạnh.</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-P10; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O11; SINGLE_ITEM_ID -->
+**Bài luyện 10. Bài toán đo đạc**
+**Đề:** Hai điểm A,B cách nhau 80 m; cùng nhìn C sao cho `A=30°,B=45°` là các góc **trong** của tam giác ABC. Tìm BC và AC dưới dạng căn thức chính xác.
+<details><summary>Đối chiếu</summary>`C=105°`; `sin105°=(√6+√2)/4`. Vì AB=c=80, `BC=a=80 sin30°/sin105°=40(√6−√2) m`; `AC=b=80 sin45°/sin105°=80(√3−1) m`. Nếu sai: mục 6,11 → bài luyện về đo đạc.</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-P11; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O12; SINGLE_ITEM_ID -->
+**Bài luyện 11. Bất đẳng thức tam giác**
+**Đề:** Ba thanh dài 2 cm, 3 cm, 6 cm có ghép thành tam giác không? Giải thích vì sao chưa được dùng Heron.
+<details><summary>Đối chiếu</summary>Không, vì `2+3=5<6`. Heron chỉ được áp dụng cho tam giác không suy biến; mục 12 → xem lại điều kiện đầu mục 5.</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-P12; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O12; SINGLE_ITEM_ID -->
+**Bài luyện 12. Biên của công thức**
+**Đề:** Một người đặt `A=0°, b=5, c=7` và gọi đó là tam giác ABC không suy biến. Chỉ ra sự mâu thuẫn với điều kiện áp dụng định lí sin/côsin trong tam giác.
+<details><summary>Đối chiếu</summary>Mọi góc trong tam giác không suy biến phải thuộc `(0°,180°)`; A=0° tạo cấu hình suy biến, dù có thể tính đại số `a=|7−5|=2` bằng biểu thức côsin. Không có tam giác không suy biến để dùng định lí sin hoặc Heron. Nếu sai: mục 5,6,12.</details>
+
+## 3. Tự luận có lập luận, tự đối chiếu rubric
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-W01; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O10; SINGLE_ITEM_ID -->
+**Tự luận 1. Tam giác 5–12–13**
+**Đề:** Với tam giác có cạnh 5,12,13, hãy (a) xác định loại tam giác; (b) tính diện tích S; (c) tính r và R; (d) giải thích vì sao R lớn hơn r.
+<details><summary>Đối chiếu và rubric 7 điểm</summary>(a) `5²+12²=13²`, tam giác vuông (1đ); (b) `S=5·12/2=30` (2đ); (c) `p=15`, `r=30/15=2`, `R=5·12·13/(4·30)=13/2` (3đ); (d) `13/2>2`, R thuộc đường tròn đi qua ba đỉnh, r thuộc đường tròn tiếp xúc ba cạnh (1đ). Nếu sai: mục 7,9,10 → bài luyện về Heron.</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-W02; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O11; SINGLE_ITEM_ID -->
+**Tự luận 2. Định vị điểm từ hai hướng nhìn**
+**Đề:** AB dài 120 m; A,B đo được các góc trong `A=45°,B=75°` đến C. Tính C, BC, AC; nêu đơn vị và vì sao dùng định lí sin.
+<details><summary>Đối chiếu và rubric 7 điểm</summary>`C=60°` (1đ); vì biết hai góc một cạnh, chọn sin (1đ); `BC=120 sin45°/sin60°=40√6 m` (2đ); `AC=120 sin75°/sin60°=60(√6+√2)/√3 m` (2đ); ghi đơn vị và kiểm hợp lí (1đ). Nếu sai: mục 6,7,11 → bài luyện về đo đạc.</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-W03; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O08; SINGLE_ITEM_ID -->
+**Tự luận 3. Giải thích hiện tượng hai nghiệm**
+**Đề:** Trong tam giác ABC, biết `A=30°, a=8,b=10`. Chứng minh rằng dữ kiện cho hai tam giác khác nhau; mô tả cách tìm C cho mỗi tam giác.
+<details><summary>Đối chiếu và rubric 7 điểm</summary>Viết `sinB=b sinA/a=5/8` (2đ); tìm hai giá trị `B₁=arcsin(5/8)`, `B₂=180°−arcsin(5/8)` (2đ); chỉ ra cả `A+B₁<180°` và `A+B₂<180°` vì `B₁>30°` (2đ); đặt `C_i=180°−A−B_i` với C_i>0 (1đ). Lưu ý arcsin là góc nhọn chuẩn. Nếu sai: mục 8 → bài luyện về hai tam giác có thể thỏa dữ kiện.</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP12-W04; SOURCE_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d; OUTCOME: TOP12-O05; SINGLE_ITEM_ID -->
+**Tự luận 4. Tam giác có góc tù**
+**Đề:** Tam giác ABC có `b=5,c=6,A=120°`. Tính a, diện tích S và bán kính ngoại tiếp R; giải thích việc chọn dấu trong định lí côsin.
+<details><summary>Đối chiếu và rubric 7 điểm</summary>`cos120°=−1/2` (1đ); `a²=25+36−60·(−1/2)=91`, `a=√91` (2đ); `S=(1/2)·5·6·sin120°=15√3/2` (2đ); `R=abc/(4S)=√91/√3=√273/3` (2đ). Nếu sai: mục 2,5,9–10 → bài luyện về góc tù và định lí cosin.</details>
+
+# Tự kiểm tra
+
+**12 câu hỏi tự kiểm tra công khai.** Em hãy làm cả 12 câu trước khi quay lại phần Luyện tập để tự mở lời giải và nhận ra phần cần ôn. Đây là các câu đã dùng để luyện, **không phải bài kiểm tra độc lập hoặc kết quả Mastery**. Tài liệu này không có chức năng nộp bài, chấm điểm hay xét đạt chuẩn chính thức.
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-G10-B05-C01; OUTCOME: TOP12-O01; NO_RD1; NO_MASTERY -->
+
+**Câu 1.** Giá trị của \(\cos120^\circ\) là bao nhiêu?
+
+**Lựa chọn:** A. \(\tfrac12\) | B. \(-\tfrac12\) | C. \(\tfrac{\sqrt3}{2}\) | D. \(-\tfrac{\sqrt3}{2}\)
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-G10-B05-P02; OUTCOME: TOP12-O04; NO_RD1; NO_MASTERY -->
+
+**Câu 2.** Cho góc tù α với \(\cos\alpha=-3/5\). Tính \(\sin\alpha\) và \(\tan\alpha\).
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-G10-B05-P05; OUTCOME: TOP12-O02; NO_RD1; NO_MASTERY -->
+
+**Câu 3.** Trong \([0^\circ,180^\circ]\), có những góc nào thỏa \(\sin\alpha=\sqrt3/2\)?
+
+**Lựa chọn:** A. Chỉ 60° | B. Chỉ 120° | C. 60° và 120° | D. 30° và 150°
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP12-P01; OUTCOME: TOP12-O04; NO_RD1; NO_MASTERY -->
+
+**Câu 4.** Góc tù α có `cosα=−5/13`. Tính sinα và tanα; giải thích việc chọn dấu.
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-G10-B06-C01; OUTCOME: TOP12-O05; NO_RD1; NO_MASTERY -->
+
+**Câu 5.** Trong tam giác ABC có \(b=5,c=7,A=60^\circ\). Tính \(a\).
+
+**Lựa chọn:** A. \(\sqrt{39}\) | B. \(\sqrt{74}\) | C. \(\sqrt{109}\) | D. \(\sqrt{14}\)
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-G10-B06-P03; OUTCOME: TOP12-O06; NO_RD1; NO_MASTERY -->
+
+**Câu 6.** Tam giác ABC có \(A=30^\circ,B=60^\circ,c=8\). Tính \(a,b\).
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP12-P06; OUTCOME: TOP12-O08; NO_RD1; NO_MASTERY -->
+
+**Câu 7.** Biết `A=30°, a=6, b=10`. Có bao nhiêu tam giác khác nhau thỏa dữ kiện? Nêu hai giá trị khả dĩ của B theo biểu thức arcsin.
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP12-P07; OUTCOME: TOP12-O08; NO_RD1; NO_MASTERY -->
+
+**Câu 8.** `A=30°, a=3, b=7`. Hãy kiểm chứng có tồn tại tam giác ABC hay không.
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-G10-B06-P04; OUTCOME: TOP12-O10; NO_RD1; NO_MASTERY -->
+
+**Câu 9.** Tam giác có ba cạnh \(a=7,b=8,c=9\). Tính \(\cos C\) và diện tích \(S\).
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP12-P10; OUTCOME: TOP12-O11; NO_RD1; NO_MASTERY -->
+
+**Câu 10.** Hai điểm A,B cách nhau 80 m; cùng nhìn C sao cho `A=30°,B=45°` là các góc **trong** của tam giác ABC. Tìm BC và AC dưới dạng căn thức chính xác.
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP12-W02; OUTCOME: TOP12-O11; NO_RD1; NO_MASTERY -->
+
+**Câu 11.** AB dài 120 m; A,B đo được các góc trong `A=45°,B=75°` đến C. Tính C, BC, AC; nêu đơn vị và vì sao dùng định lí sin.
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP12-W03; OUTCOME: TOP12-O08; NO_RD1; NO_MASTERY -->
+
+**Câu 12.** Trong tam giác ABC, biết `A=30°, a=8,b=10`. Chứng minh rằng dữ kiện cho hai tam giác khác nhau; mô tả cách tìm C cho mỗi tam giác.
+
+<!-- AUTHORING: 12 public self-check placements; answers/rubrics only in voluntary Practice reveals; no held-out RD1. -->
