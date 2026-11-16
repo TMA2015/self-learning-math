@@ -7,7 +7,7 @@
 **SOURCE_PATH:** `docs/thpt-preview/sgk/chuong-iv/bai-8.md`  
 **R01_EDITORIAL_RECEIPT:** `prototypes/thpt/ux795/G10_CHIV_B07_B11_SGK_S1_Q18_EDITORIAL_RECEIPT_20261112.md` (immutable)  
 **R01_APPROVED_SOURCE_BLOB:** `dcdb7aec2ce8afd285739bc3e098d615e4faf623`  
-**R02_CANDIDATE_SOURCE_BLOB:** `508241e1b334fdc913864244a02491e02a04c727`  
+**R02_CANDIDATE_SOURCE_BLOB:** `196976859489744bf10e6c3ad60e8dac7afb2422`  
 **JS_PATH:** `docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js`  
 **JS_PREVIOUS_BLOB:** `1d78bd34bd51233a48669b1358b228eb99fbc34d`  
 **JS_CANDIDATE_BLOB:** `da426ed2d7966ab5b242405eaeeaadbfaecefa7d`  
@@ -41,3 +41,5 @@
 **Q18 self-QA scope:** Learning explanation/conditions and 4 examples manually verified, original canonical question bodies/IDs compared exactly, SGK hierarchy and SVG source retained. `KNOWLEDGE_ENRICHMENT_P0=0` / `KNOWLEDGE_ENRICHMENT_P1=0` **within this edited lesson scope**; existing Practice same-data exposure is separate Q15/readiness concern, not declared closed. Exact-head browser AP/keyboard/math/CSS and full 8 GitHub workflows pending, no deployment/owner P2 claim.
 
 **STATE:** `G10_CHIV_B08_CANDIDATE_RELEASE_QA_PENDING` · DO NOT MERGE/DEPLOY until all exact-HEAD release gates satisfy QA + PR #877 dependency; B07 untouched.
+
+**MARKDOWN_RENDER_PRE_QA_FIX:** Source candidate corrected 11 leading-line indentations (one D5 SVG, five canonical markers, five first-trial labels) from 8 to 4 spaces. Original five question/answer disclosure bodies unchanged. Final source SHA is `196976859489744bf10e6c3ad60e8dac7afb2422`, never accept provisional `508241e1b334fdc913864244a02491e02a04c727` for release.
