@@ -2,7 +2,7 @@
 "use strict";
 /* G10 B01–B06 learner-facing Golden browser QA.
  * B01 now references owner-corrected R02 source and immutable R01→R02 Q18
- * receipts; B02–B06 keep exact historic SHA. Golden UI/answer and D6
+ * receipts; B03–B06 keep exact historic SHA. Golden UI/answer and D6
  * regressions are checked; this does NOT independently approve Delta C.
  */
 const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path"),crypto=require("node:crypto");
@@ -103,10 +103,14 @@ const widths=[390,820,1440];
        "1.2. Đọc đúng chiều của một lời khẳng định",
        "1.3. “Mọi” và “có ít nhất một” khác nhau ra sao?",
        "1.4. Thuật ngữ và điều em cần nhớ"]:
+      n===2?["1.1. Tập hợp giúp ta xác định những đối tượng nào?",
+       "1.2. Đọc hình và tìm phần chung","1.3. Thuật ngữ và mục tiêu bài học"]:
       ["1.1. Cùng tìm hiểu","1.2. Ví dụ trực quan","1.3. Thuật ngữ, kiến thức và kỹ năng"];
      assert.deepEqual(discoveryTitles,expectedDiscovery,loc+" meaningful concept-first discovery headings");
      const knowledge=(await groups.nth(1).locator("h3").allInnerTexts()).map(x=>x.trim());
-     assert(knowledge.length>=4&&knowledge.every((v,i)=>v.startsWith("2."+(i+1)+". ")),loc+" original SGK 2.x preserved");
+     assert(knowledge.length>=(n===2?3:4)&&knowledge.every((v,i)=>v.startsWith("2."+(i+1)+". ")),loc+" authentic S1 SGK main sections");
+     if(n===2)assert.deepEqual(knowledge,["2.1. Các khái niệm cơ bản về tập hợp",
+      "2.2. Các tập hợp số","2.3. Các phép toán trên tập hợp"],loc+" original S1 has 3 main sections");
      if(n===1){
       const conceptBoxes=groups.nth(1).locator(".thpt-r4-knowledge-conclusion");
       assert.equal(await conceptBoxes.count(),7,loc+" B01 canonical boxed definitions and notation");
@@ -121,8 +125,30 @@ const widths=[390,820,1440];
       assert(!await groups.nth(2).getByText("Vì sao chọn cách này?",{exact:true}).count(),
         loc+" never render rejected method-choice prompt");
      }
+     if(n===2){
+      const knowledgePane=groups.nth(1);
+      const boxes=knowledgePane.locator(".thpt-r4-concept-card");
+      assert.equal(await boxes.count(),13,loc+" thirteen source-aligned concept boxes");
+      assert.equal(await knowledgePane.locator(".thpt-r4-knowledge-conclusion:not(.thpt-r4-concept-card)").count(),4,
+        loc+" four amber memory cards");
+      const ids=await knowledgePane.locator("[data-thpt-first-try-id]").evaluateAll(nodes=>nodes.map(x=>x.getAttribute("data-thpt-first-try-id")));
+      assert.equal(ids.length,6,loc+" original six B02 First Tries");
+      assert.equal(new Set(ids).size,6,loc+" no duplicate First Try ID");
+      const texts=await knowledgePane.locator("p").allInnerTexts();
+      assert.equal(texts.filter(x=>x.trim().startsWith("Vận dụng.")).length,6,
+       loc+" six uniform Vận dụng titles");
+      const analyses=await groups.nth(2).locator("p").allInnerTexts();
+      assert.equal(analyses.filter(x=>x.trim().startsWith("Phân tích.")).length,4,
+        loc+" four analysis-before-method examples");
+      const diagram=knowledgePane.locator('img[src*="G10_B02_NUMBER_SETS_INCLUSION_S1_R01.svg"]');
+      assert.equal(await diagram.count(),1,loc+" S1 nested number sets SVG present");
+      await page.waitForFunction(()=>{
+       const image=document.querySelector('img[src*="G10_B02_NUMBER_SETS_INCLUSION_S1_R01.svg"]');
+       return !!image&&image.complete&&image.naturalWidth>0;
+      },null,{timeout:15000});
+     }
      const exampleTitles=(await groups.nth(2).locator("h3").allInnerTexts()).map(x=>x.trim());
-     assert(exampleTitles.length>=3&&exampleTitles.every((v,i)=>v.startsWith("3."+(i+1)+". Ví dụ "+(i+1)+" —")),loc+" 3.x examples");
+     assert(exampleTitles.length>=(n===2?4:3)&&exampleTitles.every((v,i)=>v.startsWith("3."+(i+1)+". Ví dụ "+(i+1)+" —")),loc+" S1 extended worked example titles");
      // Visual consistency: every worked example has one full tinted solution,
      // and the table's headers and cells share the same column alignment.
      const solutions=groups.nth(2).locator(".thpt-g10-example-solution");
