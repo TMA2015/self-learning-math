@@ -32,7 +32,7 @@ The effective B07 published R03 had five genuine concept-first discoveries, four
 
 ## Immutable safety and release gate
 
-- **Exactly five** original `THPT-G10-CHIV-TRY01..TRY05` IDs, question/answer/disclosure bodies preserved byte-for-byte; two `HELP-G10-B07-01..02` and source outcome placements unchanged. Four Golden tabs, original parallelogram SVG, Core/Practice, Written/Anchor and ChIV public/held-out Chapter Self-check untouched.
+- **Exactly five** original `THPT-G10-CHIV-TRY01`, `THPT-G10-CHIV-TRY02`, `THPT-G10-CHIV-TRY03`, `THPT-G10-CHIV-TRY04`, `THPT-G10-CHIV-TRY05` IDs, question/answer/disclosure bodies preserved byte-for-byte; two `HELP-G10-B07-01..02` and source outcome placements unchanged. Four Golden tabs, original parallelogram SVG, Core/Practice, Written/Anchor and ChIV public/held-out Chapter Self-check untouched.
 - **No** Final Submit/hidden RD1 answer/rubric, official Readiness, Skill Mastery, Gemini provider, Firebase, THCS or G11/G12 change.
 - **Author source/maths/PED Q18 direct check:** 8/8 source scope and arithmetic/figure assertions PASS at exact source blobs. **Affected-scope P0=0/P1=0 based on this self-check**; this does not mean browser, P2, primary publisher PDF or full-bank assessment audit were performed.
 - **RELEASE still required:** source router R03→R04 SHA, B07 canonical text comparison, original SVG and both R04 D5 responsive variants decode, browser 390/820/1440, MathJax orphan check, keyboard/Golden/links, ChIV/UX795/R4/Roadmap/exact HEAD CI, P1 deployed HTML parity and **owner physical-device P2**. Do not claim RELEASE_READY or merge/deploy from this document.
