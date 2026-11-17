@@ -13,14 +13,14 @@ CATALOG_TOPIC_ID: CD17
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: ae8bffe04a7c52e062c933739bafceb5412a8270
+ACADEMIC_SOURCE_BLOB: 7ee09cea9c33e2ae520a1a40df694ab7118adb42
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC17_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md (AUTHOR_SELF_VERIFIED, NOT independent NotebookLM)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC17_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: cf87e9b857b01829262d6fe224256766edd5822b
+REVIEW_RECEIPT_BLOB: 110b1cb694875e9d2f8db9e52c35156299a5b09b
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: 9b6fc1db68eefc38db3b31efe7bde4616b26aa65
+AUTHOR_A1_A7_BLOB: 090fa5c50b30eaeea74f42d690c9a787f321345d
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC17-DISTANCE-VOLUME-FULL-R02_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: 7ed37e73f4bfdcf85b1f1ec99731789d4ad9e3d9
+AUTHOR_HANDOFF_BLOB: cafc009f95cdc75f45666989572dc8d1555f2adb
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_THPT_TOPIC17_FRUSTUM_VOLUME_MODEL_R00_20261113.html
 INTERACTIVE_MODEL_BLOB: 727c05896a9d9bf95385b54559faa22917f1510e
@@ -85,3 +85,6 @@ This *existing* ready manifest now explicitly refuses intake as CONTENT_READY af
 
 
 **One source, further MathJax formatting repair:** Knowledge frustum a=6/h=4 renders via math delimiters; all learner questions, answers, eight selfcheck replays and scoring unchanged. Original 20261116 working source path remains the only selected source; no additional file for the correction. Source-only authoring QA does not imply browser/AP or production release.
+
+
+**Frustum self-study after correction:** source directly derives k∈[0,1], volume V=48(1+k+k²) and values 48/84/144 cm³ without assuming a working slider; corrected math/source QA signed in existing Q18. Same selected learner file and unchanged 8 question-only public selfchecks. Only authoring source-ready; browser/AP and production remain separate gates.
