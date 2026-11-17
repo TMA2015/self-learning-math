@@ -74,8 +74,19 @@ const blob=data=>{
    const b09field=k=>b09.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
    assert.equal(b09field("CSS_BASELINE_BLOB"),r04field("R04_CSS_BLOB"),
     "B09 scoped CSS must extend owner P2 B08 exact Golden snapshot");
-   assert.equal(blob(css),b09field("R03_CSS_BLOB"),
-    "B09 only exact scoped CSS, ChV visual source unchanged");
+   const B10cssMarker="/* G10 Chapter IV B10 R01";
+   const fullCss=css.toString("utf8"),atB10=fullCss.indexOf(B10cssMarker);
+   assert(atB10>0&&fullCss.indexOf(B10cssMarker,atB10+1)<0,
+    "B10 may add only one isolated scoped semantic appendix");
+   assert.equal(blob(fullCss.slice(0,atB10)),b09field("R03_CSS_BLOB"),
+    "B09 accepted styles including ChV baseline must remain exact prefix");
+   const b10Receipt=fs.readFileSync(root+
+    "/prototypes/thpt/ux795/G10_CHIV_B10_S1_PED_SINGLE_CANONICAL_Q18_R01_20261118.md","utf8");
+   const b10f=k=>b10Receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(blob(css),b10f("CSS_R01_SCOPED_B10_BLOB"),
+    "B10 scoped append must match signed one-lesson CSS SHA");
+   assert(!fullCss.slice(atB10).includes("THPT-G10-CHV"),
+    "B10 styles may not target Chapter V lesson");
    const cssText=css.toString("utf8"),cut=cssText.indexOf("/* G10 ChIV B07 R05");
    const b08cut=cssText.indexOf("/* G10 ChIV B08 R04");
    const b09cut=cssText.indexOf("/* G10 Chapter IV B09 R03");
