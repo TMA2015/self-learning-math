@@ -320,7 +320,30 @@ for(const [lesson,row] of rows){
    "B09 Q18 R05 must retain immutable earlier signed R03");
   assert(r05.includes("CHIV-09-A")&&r05.includes("Q18_AUTHOR_SELF_VERIFIED")&&
     r05.includes("THPT-G10-B09-P07"),"B09 R05 Q18 source/P07/audit gate proof");
-  expected=q("R05_SOURCE_BLOB");
+  const r06=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B09_TAB4_REAL_ERROR_P2_DELTA_C_R06_20261117.md"),"utf8");
+  const q06=k=>r06.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(q06("PRIOR_R05_SOURCE_BLOB"),q("R05_SOURCE_BLOB"),
+   "B09 new Tab4 correction must follow published P1 exact R05 source");
+  assert.equal(q06("PRIOR_R05_CANONICAL_BLOB"),q("ONE_CANONICAL_LESSON_BLOB"),
+   "B09 new Tab4 correction must preserve historical canonical SHA");
+  assert(r06.includes("Q18_AUTHOR_SELF_VERIFIED")&&r06.includes("B09-F04"),
+   "B09 real-error corrected Tab4 requires scoped Q18 self-QA receipt");
+  const mistakes=source.slice(source.indexOf('=== "Lỗi thường gặp"'));
+  assert.equal((mistakes.match(/^    \?\?\? tip "/gm)||[]).length,3,
+   "B09 Tab4 must have exactly three real error disclosures 4.1–4.3");
+  assert(!mistakes.includes("**Khi chưa phân tích được vectơ theo hai hướng:**"),
+   "B09 P2 regression: standalone method advice is NOT an error");
+  assert(mistakes.includes('??? tip "Đảo dấu khi phân tích vectơ theo hai vectơ không cùng phương"')&&
+   mistakes.includes("<strong>Lỗi thường gặp:</strong>")&&
+   mistakes.includes("<strong>Vì sao sai?</strong>")&&
+   mistakes.includes("<strong>Tự kiểm:</strong>")&&
+   mistakes.includes("<strong>Ôn và luyện lại:</strong>")&&
+   mistakes.includes("THPT-G10-B09-P07"),
+   "B09 Tab4 error 4.3 requires wrong step, diagnosis, repair, mathematical check and public practice route");
+  assert.equal((source.match(/data-thpt-help-id=/g)||[]).length,2,
+   "B09 owner correction must retain 2 original HELP IDs, not create another canonical HELP");
+  expected=q06("R06_SOURCE_BLOB");
  }
  assert.equal(blob(source),expected,lesson+" exact final Q18 academic source receipt");
  assert.equal(candidateG10KnowledgeBlob(n),expected,lesson+" Q18 source router selects correct immutable snapshot");

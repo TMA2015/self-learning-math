@@ -59,8 +59,20 @@ for(const [name,chapter,num]of specs){
   assert(chviReceiptRow,name+" UX receipt without original ChVI editorial");
   assert.equal(ux.baseline,chviReceiptRow.candidate,name+" UX follows published original source, never replaces it");
  }
+ const b09P1Receipt=name==="B09"?read(root,
+  "prototypes/thpt/ux795/G10_CHIV_B09_CANONICAL_Q18_R05_20261117.md").toString("utf8"):null;
+ const receiptField=(packet,k)=>packet?.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+ const b09PublishedP1=b09P1Receipt?receiptField(b09P1Receipt,"R05_SOURCE_BLOB"):null;
+ if(b09P1Receipt){
+  assert.equal(b09PublishedP1,"a28fa50f223f260c8fded1f42b13065d3e047d63",
+   "B09 historical P1 R05 SHA must match immutable owner-reviewed publication");
+  const r03=read(root,"prototypes/thpt/ux795/G10_CHIV_B09_S1_SEMANTIC_DECOMPOSITION_R03_20261117.md").toString("utf8");
+  assert.equal(receiptField(b09P1Receipt,"BASELINE_R03_SOURCE_BLOB"),
+   receiptField(r03,"R03_SOURCE_BLOB"),"B09 published R05 must follow exact approved R03");
+ }
  const approvedSources=[row.main,row.candidate,...(editorial?[editorial.candidate]:[]),
-  ...(chviReceiptRow?[chviReceiptRow.candidate]:[]),...(ux?[ux.candidate]:[])];
+  ...(chviReceiptRow?[chviReceiptRow.candidate]:[]),...(ux?[ux.candidate]:[]),
+  ...(b09PublishedP1?[b09PublishedP1]:[])];
  assert(approvedSources.includes(baselineSha),
    name+" unknown main baseline source drift outside immutable 27-row/Q18 chain");
  assert.equal(blob(candidateRaw),candidateG10KnowledgeBlob(num)||row.candidate,name+" exact approved historical/editorial source drift");
@@ -78,8 +90,18 @@ for(const [name,chapter,num]of specs){
   assert(originalStart>=0&&originalEnd>originalStart,"B09 historic main S1 source intact");
   const historic=[...base.slice(originalStart,originalEnd).matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]|\$([^$]+)\$/g)]
     .map(x=>(x[1]??x[2]??x[3]).trim().replace(/\s+/g," "));
-  assert(historic.some((_,i)=>i+30<=historic.length&&frozen.every((v,j)=>historic[i+j]===v)),
-    "B09 historic immutable 30-expression source witness must remain in main");
+  if(baselineSha===b09PublishedP1){
+   // This main source is the immutable R05 owner P1 publication, not the
+   // original 30-expression historical baseline. Validate its signed SHA,
+   // complete S1 meaning, stable First Tries and new diagram, not the old
+   // expression order that legitimately changed under reviewed Delta C.
+   assert(base.includes("Phân tích duy nhất theo hai vectơ không cùng phương")&&
+    base.includes("THPT_G10_B09_DECOMPOSITION_TWO_DIRECTIONS_D5_R03.svg")&&
+    base.includes("THPT-G10-CHIV-TRY11"),"B09 signed R05 published main mathematics missing");
+  }else{
+   assert(historic.some((_,i)=>i+30<=historic.length&&frozen.every((v,j)=>historic[i+j]===v)),
+    "B09 immutable 30-expression witness lost in historical main");
+  }
   // R03 changes notation and prose semantically: candidate must keep each
   // essential S1 mathematical law plus the newly restored decomposition.
   // Reordering is allowed ONLY under signed academic Q18 Delta C source.
@@ -102,7 +124,7 @@ for(const [name,chapter,num]of specs){
    assert.equal(row.main,historicalMainB09GitBlob,"B09 ledger must retain immutable historic published Git blob");
    assert.notEqual(blob(candidateRaw),historicalMainB09GitBlob,"B09 must remain a distinct source-locked Delta C");
   assert.equal(ids.first.length,5);assert.equal(ids.help.length,2);
-  console.log("PASS EVIDENCE B09: historic 30/30 immutable main expressions; signed R03 S1 laws+decomposition, 5 FirstTry/2 HELP, authoring HOLD");
+  console.log("PASS EVIDENCE B09: historical 30-math witness frozen; baseline SHA "+baselineSha+" approved R03→R05 chain, five First Tries/two HELP, Q18 current candidate math signed");
  }else{
   const old=chvi.match(new RegExp(num+':\\{display:(\\d+),inline:(\\d+),sha:"([a-f0-9]{40})",tries:(\\d+),extraFold:(\\d+)\\}'));
   assert(old,name+" historical math spec missing");

@@ -289,7 +289,13 @@
         <p><strong>Ôn lại:</strong> Xem Ví dụ 2 về trung điểm và Ví dụ 3 về trọng tâm, rồi làm một câu luyện tập tương ứng.</p><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
 
 
-    **Khi chưa phân tích được vectơ theo hai hướng:** Chọn điểm gốc chung, vẽ hai vectơ không cùng phương, tìm một đường đi theo hai hướng ấy và dùng quy tắc cộng. Nếu thấy hai cách chọn hệ số cho cùng một vectơ, kiểm tra lại xem hai vectơ cơ sở có thực sự **không cùng phương** không. Ôn lại Bài 8 (quy tắc ba điểm/hiệu hai vectơ) rồi đọc Ví dụ 4 ở tab Ví dụ; không dùng phép chia cho vectơ.
+    ??? tip "Đảo dấu khi phân tích vectơ theo hai vectơ không cùng phương"
+
+        <p><strong>Lỗi thường gặp:</strong> Với tam giác $ABC$, $M$ và $N$ lần lượt là trung điểm của $AB$ và $AC$, đặt $\vec a=\overrightarrow{AB}$, $\vec b=\overrightarrow{AC}$. Một lời giải viết $\overrightarrow{MN}=\tfrac12\vec a-\tfrac12\vec b$. <strong>Kết quả này sai dấu.</strong></p>
+        <p><strong>Vì sao sai?</strong> $\tfrac12\vec a-\tfrac12\vec b=\overrightarrow{AM}-\overrightarrow{AN}=\overrightarrow{NM}$, không phải $\overrightarrow{MN}$. Khi dùng quy tắc hiệu hai vectơ, em đã đổi chỗ điểm đầu và điểm cuối.</p>
+        <ol><li><strong>Nhìn chiều mũi tên:</strong> $\overrightarrow{MN}$ đi từ $M$ đến $N$, không đi từ $N$ đến $M$.</li><li><strong>Viết quy tắc trước khi thay hệ số:</strong> $\overrightarrow{MN}=\overrightarrow{MA}+\overrightarrow{AN}=\overrightarrow{AN}-\overrightarrow{AM}$.</li><li><strong>Thay quan hệ trung điểm:</strong> $\overrightarrow{AM}=\tfrac12\vec a$, $\overrightarrow{AN}=\tfrac12\vec b$; do đó $\boxed{\overrightarrow{MN}=-\tfrac12\vec a+\tfrac12\vec b}$.</li></ol>
+        <p><strong>Tự kiểm:</strong> Nếu đổi câu hỏi thành $\overrightarrow{NM}$, cả hai hệ số phải đổi dấu. Vì $ABC$ là tam giác nên $\vec a,\vec b$ không cùng phương; cặp hệ số trong phép phân tích này là <strong>duy nhất</strong>, không thể tự chọn một cặp khác để bù dấu sai.</p>
+        <p><strong>Ôn và luyện lại:</strong> Xem quy tắc ba điểm/quy tắc hiệu vectơ ở Bài 8, đọc lời giải Ví dụ 4 của Bài 9 rồi <a href="../luyen-tap/?item=THPT-G10-B09-P07">tự thử bài phân tích vectơ trong phần Luyện tập</a>. Không dùng phép chia cho vectơ để tìm hệ số.</p>
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 

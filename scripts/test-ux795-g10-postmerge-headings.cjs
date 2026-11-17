@@ -129,16 +129,31 @@ for(let n=1;n<=27;n++){
    const q=k=>signed.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
    assert.equal(q("BASELINE_R03_SOURCE_BLOB"),field("R03_SOURCE_BLOB"),
     "B09 R05 must follow exact frozen R03");
+   const r06Path=path.join(root,
+    "prototypes/thpt/ux795/G10_CHIV_B09_TAB4_REAL_ERROR_P2_DELTA_C_R06_20261117.md");
+   assert(fs.existsSync(r06Path),"B09 real error 4.3 source receipt must be in isolated main+candidate QA");
+   const correction=fs.readFileSync(r06Path,"utf8");
+   const q06=k=>correction.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(q06("PRIOR_R05_SOURCE_BLOB"),q("R05_SOURCE_BLOB"),
+    "B09 R06 must extend exact P1 published R05 Markdown");
+   assert.equal(q06("PRIOR_R05_CANONICAL_BLOB"),q("ONE_CANONICAL_LESSON_BLOB"),
+    "B09 R06 must extend exact P1 canonical source");
    const manuscriptPath=path.join(root,
     "prototypes/thpt/content-drafts/THPT_G10_CHIV_B09_CANONICAL.md");
    assert(fs.existsSync(manuscriptPath),"B09 one-current manuscript missing from QA");
-   assert.equal(blob(fs.readFileSync(manuscriptPath)),q("ONE_CANONICAL_LESSON_BLOB"),
-    "B09 full academic manuscript SHA differs from R05 receipt");
+   assert.equal(blob(fs.readFileSync(manuscriptPath)),q06("R06_ONE_CANONICAL_LESSON_BLOB"),
+    "B09 complete academic manuscript SHA differs from R06 signed owner correction");
    assert.equal(blob(fs.readFileSync(path.join(root,"docs",route+".md"))),
-    q("R05_SOURCE_BLOB"),"B09 public Knowledge must match signed R05 current source");
+    q06("R06_SOURCE_BLOB"),"B09 public Knowledge must match R06 exact learner-error correction");
    const manuscript=fs.readFileSync(manuscriptPath,"utf8");
    assert(manuscript.includes("<!-- BEGIN_B09_KNOWLEDGE_MARKDOWN -->")&&
     manuscript.includes("THPT-G10-B09-P07"),"B09 manuscript needs Knowledge and P07");
+   const tab4=markdown.slice(markdown.indexOf('=== "Lỗi thường gặp"'));
+   assert.equal((tab4.match(/^    \?\?\? tip "/gm)||[]).length,3,
+    "B09 P2 needs 4.3 genuine errors, not a free-standing reminder");
+   assert(tab4.includes("Đảo dấu khi phân tích vectơ")&&
+    !tab4.includes("**Khi chưa phân tích được vectơ theo hai hướng:**"),
+    "B09 tab4 real wrong-sign diagnosis must replace misplaced D6 prose");
    assert(markdown.includes("Phân tích duy nhất theo hai vectơ không cùng phương")&&
     markdown.includes("THPT_G10_B09_DECOMPOSITION_TWO_DIRECTIONS_D5_R03.svg"),
     "B09 S1 decomposition explanation and its accessible D5 asset missing");

@@ -36,8 +36,37 @@ async function verifyModelBLesson(page,{n,chapter,tries,helps,images,questions=t
  assert.equal((source.match(/^    \?\?\? question "/gm)||[]).length,questions,"B"+n+" source question/disclosure count");
  assert.equal(await article.locator("details.question").count(),questions,
   "B"+n+" one default-closed First Try per canonical placement");
- assert.equal(await article.locator("details.tip").count(),helps,
-  "B"+n+" one default-closed D6 per canonical helper");
+ // B09 owner P2 correction adds a REAL third mistake disclosure (4.3)
+ // without adding a THIRD canonical D6 HELP_ID. Count both contracts separately.
+ // The exception is only allowed for the exact R06 source SHA.
+ const r06Path="prototypes/thpt/ux795/G10_CHIV_B09_TAB4_REAL_ERROR_P2_DELTA_C_R06_20261117.md";
+ let extraMistake=0;
+ if(n===9&&fs.existsSync(r06Path)){
+  const r06=fs.readFileSync(r06Path,"utf8");
+  const signed=r06.split("**R06_SOURCE_BLOB:** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(signed,sha,"B09 third mistake is permitted only on signed owner P2 R06 source");
+  assert(r06.includes("B09-F04")&&source.includes("Đảo dấu khi phân tích vectơ"),
+   "B09 4.3 must be genuine error with root-cause and formal scoped receipt");
+  extraMistake=1;
+ }
+ assert.equal((source.match(/^    \?\?\? tip "/gm)||[]).length,helps+extraMistake,
+  "B"+n+" only canonical HELP disclosures plus signed B09 4.3 may be shown");
+ assert.equal(await article.locator("details.tip").count(),helps+extraMistake,
+  "B"+n+" exact collapsed error count; canonical HELP markers remain independently checked");
+ if(extraMistake){
+  const third=article.locator("details.tip").nth(2);
+  assert((await third.locator("summary").innerText()).includes("4.3"),
+   "B09 owner P2 4.3 must be a correctly numbered error disclosure");
+  await labels.nth(3).click();
+  assert(!(await third.evaluate(x=>x.open)),"B09 4.3 remains closed before learner action");
+  await third.locator("summary").click();
+  assert(await third.evaluate(x=>x.open),"B09 4.3 student can open actual diagnosis");
+  const text=await third.innerText();
+  assert(text.includes("Vì sao sai?")&&text.includes("Ôn và luyện lại:"),
+   "B09 third real error must explain reason, correction and remediation");
+  await third.locator("summary").click();
+  assert(!(await third.evaluate(x=>x.open)),"B09 4.3 student can reclose error diagnosis");
+ }
  assert.equal(await article.locator("details.question[open], details.tip[open]").count(),0,
   "B"+n+" no pre-attempt solution/remediation may be open");
  const select=async name=>{
