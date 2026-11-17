@@ -8,23 +8,23 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 2e49ba15c43da8b6d42be55675ff3bc83aaf6e99
+SOURCE_COMMIT: 798d2696fcc68dc022bdb517732ad15df739ea61
 CATALOG_TOPIC_ID: CD13
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 9a558f553bd6a4a58701a6bae490717ba5a52540
+ACADEMIC_SOURCE_BLOB: 593484fbe67b168fae677652db0ef3871bcf5695
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md (Q18 AUTHOR_SELF_VERIFIED, not new independent NotebookLM PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 5e8ad3dfbc24d008f32e06e18215c96c543e7278
+REVIEW_RECEIPT_BLOB: 3161e1e8f76ded9a6396eb48424d713d4db55638
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_A1_A7_BLOB: 0e9f894699e0e786ee18423dfdcdc33f2aef01be
+AUTHOR_A1_A7_BLOB: 8c1942bbd332eee25d4d7e5dd0d21945297842da
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df
 G10_SGK_ORIGINAL_DEPENDENCY_PR: 750
 G10_SGK_ORIGINAL_DEPENDENCY_BRANCH: authoring/g10-chiv-ped-r02-24-outcomes-20261105
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC13-PLANAR-SPATIAL-VECTORS-FULL-R04_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: 82f02d0fab56e7e9a3bc31dd6d8a5f6beae42a8b
+AUTHOR_HANDOFF_BLOB: bbe672bd9412024fca9497f5a09a351f24635d6c
 ORIGINAL_G10_SGK_SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9
 ORIGINAL_G12_SGK_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
 SVG1_BLOB: 55ec9add04cb79da2cad7703b3897271e5b3436a
@@ -67,7 +67,7 @@ The independent Topic CĐ13 student path has 3 pages Knowledge / Practice / Self
 
 **SOURCE REVISION R02:** 17 new Practice/Written exercises gained changed transfer data and fully rechecked answer/rubric, to prevent repeating worked-example numbers. Git source, metadata, Q18 receipt, handoff and REGISTER were re-locked; no old SGK item or existing Q15 ID changed.
 
-- [x] A1_SOURCE_SNAPSHOT — 16-lesson student source blob d351c5aec660d6482f6694becbd3e2567a14edbf, sidecar 74ee0dd083b1773211885d7fd77756da2c3ebcf0, Q18 receipt d0d0fcf79149c67fa0e033b9588cd8b15d60b1f5, one V2 handoff e27caf5ae79872454b6f665149762b1917ee3080, all link pointers exact SHA.
+- [x] A1_SOURCE_SNAPSHOT — current one learner source `593484fbe67b168fae677652db0ef3871bcf5695`, Q18 targeted `3161e1e8f76ded9a6396eb48424d713d4db55638`, A1 metadata `8c1942bbd332eee25d4d7e5dd0d21945297842da`, V2 `bbe672bd9412024fca9497f5a09a351f24635d6c`, NEW20 canonical bank `136bd4552118e5dba6b18b58965be7d37878e9df`; original G10/G12 owner blobs unchanged, source refs SHA exact.
 - [x] A2_SGK_SBT_SCOPE — original reviewer-checked Toán10 KNTT T1 ChIV B07–B11 SGK printed46–70 (SBT45–65), Toán12 T1 ChII B06–B08 printed45–72/PDF47–74 (SBT printed38–54/PDF36–52), **no new PDF scan claimed**. Original G10 historical page discrepancy remains documented in original source.
 - [x] A3_NOTEBOOKLM_VERDICT — legacy CI checklist label only; Q18 mode `AUTHOR_SELF_VERIFIED` and exact d0d0fcf79149c67fa0e033b9588cd8b15d60b1f5 author-signoff. Historical SGK independent PASS is limited to old SGK source; no NotebookLM Topic13 independent PASS claimed.
 - [x] A4_ITEM_OUTCOME_IDS — 16 Lessons,16 outcomes; 52 unique public canonical IDs, one V2 item→outcome→role mapping with 20 G10+12 G12 original references and20 unique new Topic answers. Sixteen public Self Check placements reuse Practice IDs.
@@ -104,6 +104,13 @@ The independent Topic CĐ13 student path has 3 pages Knowledge / Practice / Self
 
 **REGISTRY_RISK_AND_PREVENTION:** each topic is a standalone immutable academic packet with one REGISTER row; concurrent Draft branches add near the same table header. RELEASE must combine against latest actual main, preserve union of all already-imported rows and re-test manifest↔REGISTER on exact merged HEAD. Do not overwrite the entire register or edit new Topic academic source to hide integration issues. No AUTHORING merge/deploy.
 
+
+## R06 · current formal-vector teaching source (17/11/2026)
+
+- Effective learner source `593484fbe67b168fae677652db0ef3871bcf5695`; targeted source-locked Q18 receipt `3161e1e8f76ded9a6396eb48424d713d4db55638`; A1 metadata `8c1942bbd332eee25d4d7e5dd0d21945297842da`; current V2 `bbe672bd9412024fca9497f5a09a351f24635d6c`.
+- Q03/Q09–Q14: three genuinely classified vector definitions/properties in TOP13-O01/O02/O03 and one student key-recall block. Verified arrows/length and zero-vector/nonzero-angle conditions in adjacent learner examples.
+- Full 52/52 Practice stem/key/solution/rubric/D6 and 16 public question-only selfcheck entries are byte-for-byte unchanged from prior effective source `9a558f553bd6a4a58701a6bae490717ba5a52540`; NEW20 bank `136bd4552118e5dba6b18b58965be7d37878e9df`, 4 SVG references, original SGK sources and answer disclosure structure unchanged.
+- This is `DELTA_C_ACADEMIC_MATERIAL`, covered by scoped `AUTHOR_SELF_VERIFIED` on source/Q18 listed above, not a new independent full-Topic NotebookLM PASS. G10 SGK original source #750 is a separate draft, so RELEASE combined-HEAD intake remains dependent on source provenance verification; no merge/deploy.
 
 ## R05 · corrected canonical vector-owner handoff (17/11/2026)
 
