@@ -3,7 +3,7 @@
 <!-- STANDARD_ID=SLM-THPT-QUALITY-ONE; STANDARD_VERSION=3.1.0; LEARNING_PATH=TOPIC; SOURCE_VERSION=R06_AUTHORING_CANDIDATE_Q18_PENDING; INDEX_BLOB=01154e0801e77c2e81d56a717c77f7dae5a3515d; NEW_BANK_BLOB=f70e2c961dfcf31825d135b61e301cbb4c322767 -->
 # CĐ07 — Dãy số, cấp số cộng và cấp số nhân
 
-### 1. Kiến thức
+## 1. Kiến thức
 
 ### 1. Từ những lần quan sát đến một dãy số
 
