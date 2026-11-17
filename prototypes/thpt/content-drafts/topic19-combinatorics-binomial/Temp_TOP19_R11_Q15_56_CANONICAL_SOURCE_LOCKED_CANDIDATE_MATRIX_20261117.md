@@ -6,7 +6,7 @@ Q15_Q18_REVIEW_MODE: AUTHOR_SELF_VERIFIED_TARGETED
 STATE: AUTHORING_CANDIDATE_ONLY
 LEARNING_PATH: TOPIC
 SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R11_P2_CANONICAL_LABEL_LEARNER_CLARITY_CANDIDATE_20261117.md
-SOURCE_BLOB: 8f7d149c0359ac895fb2d04496d46e2294511123
+SOURCE_BLOB: 32721032973866087dcc4b8981e33d4bf3391c8d
 PREVIOUS_R10_LEARNER_SOURCE_BLOB: 37612a3fb8d804efa6dd4f65ddd22d90bf2772ae
 PREVIOUS_R10_SOURCE_MATRIX_BLOB: 448c913a0263cdc537a8e33a39bcdd8052ec3372
 IMMUTABLE_R09_OWNER_METADATA_BLOB: d21d1d3ede107b3b479d1f61a1ddc0e4df0414ec
@@ -93,3 +93,8 @@ The R11 source was independently re-fetched by exact Git SHA; 56 unique source m
 ## Remaining source governance
 
 One item has one canonical identity; multiple SGK and Topic displays are placements only and do not generate new ID, answer or independent score. For any source metadata lacking explicit version on the learner marker, preserve VERSION_FROM_OWNER_BANK from the original immutable matrix rather than invent an R11 version. At eventual author acceptance, the single active owner/version registry must choose the R11 Topic SOURCE_BLOB for unchanged Topic item IDs while preserving the separate original SGK owner; synchronize one V2 handoff + ready/manifest + REGISTER to this exact SHA. Until then Q15_CANDIDATE_MAP=AUTHOR_SELF_QA_PASS, Q15_GLOBAL=HOLD, CONTENT_READY=NO. No private RD1/official TOPIC_READINESS, merge/deploy, or release approval.
+
+
+## Editorial correction applied within this SAME learner source (17/11/2026)
+
+The TOP19-O02 T02 voluntary answer sentence has been rewritten in correct natural Vietnamese to explain **each of four clothing choices has three badge options**, hence 4×3=12. This is source-equivalent clarity, no change to question, correct answer 12, method condition, D6, rubric or any of the canonical item bodies. One source file, not a correction copy; 56 source IDs and seven question-only public replays, all line locations (one line replacement) and TOP19-R10 content_version for T02 remain unchanged. Recheck named original SGK owner. Pending exact HEAD/V2/ready/REGISTER; no private RD1/website.
