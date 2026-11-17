@@ -34,3 +34,13 @@
 - **Executed source checks on current SHA:** `MODEL_ARTICLES=2/2`; `FIRST_TRY_PRECEDES_DISCLOSURE=2/2`; `SOLUTION_ONLY_INSIDE_VOLUNTARY_DETAILS=2/2`; `DETAILS_COUNT=2`; `SCRIPT_BYTE_EQUIVALENT_TO_PRE_R03=PASS` established at transformation; no change in CSS, SVG drawing, slider ranges, text of mathematical solution, MODEL_ID or `PUBLIC_DISCOVERY_NO_MASTERY`.
 - **Mathematical spot check of unchanged values:** CĐ21 baseline `P(L)=0.034, P(X|L)=3/17`, application `P(L)=0.038, P(X|L)=12/19`, both error rates zero ⇒ posterior undefined. CĐ22 `2,2,3,4,5,5,20`: total 41, mean 41/7, median 4, Q1=2, Q3=5, range=18, IQR=3, upper fence=9.5.
 - **Receipt verdict:** `AFFECTED_Q14_PED6_SOURCE_DELTA_PASS` for these **two disclosure sequences only**; no new P0/P1 found in changed scope. `G1_FULL_MATH_PED=S1_AND_OUTCOME_CHECK_PENDING`; `G2_VISUAL=OPEN`; `G3_BROWSER=OPEN`; `G4_HANDOFF=OPEN`; `CONTENT_READY=NO`; `RELEASE_AUTHORIZATION=NO`.
+
+
+## R04 · Q03/Q10/Q14 student prose cleanup — affected-scope author QA (17/11/2026)
+
+**CURRENT SOURCE BLOB** `33632fdf8743b5526b925e8c9f393397bb04d943` (same existing Math Lab HTML on Draft #880). R01 pre-CSS numeric tests and R03 disclosure changes remain historical, not re-claimed as complete new math or browser tests.
+
+- **Original defect:** learner sees internal `TOP21-O05/O06/O07/O08`, `G10-B13-...`, `RD1`, `Mastery` in two model headers/footers. These are author/assessment metadata, not explanations needed for study.
+- **Corrections in place:** CĐ21 header now names probability topics; CĐ22 header names mean/median/quartiles/outliers; two notes explain that students explore and compare without formal scoring. Four public text lines changed; private assessment semantics not touched.
+- **Source checks:** `VISIBLE_TECHNICAL_METADATA_4_TOKENS=0`, `FIRST_TRY_BEFORE_OPTIONAL_REVEAL=2/2`, `REVEAL_LABELS=2/2`, `JAVASCRIPT_BYTE_PARITY_R03_TO_R04=PASS`; MODEL_ID attributes/canonical registry, SVG and formulas not changed.
+- **Signed scope:** `Q18_AUTHOR_SELF_VERIFIED_AFFECTED_SCOPE` for Q03/Q10 learner prose and Q14 continuity. `DELTA_B_SOURCE_EQUIVALENT` for four user-facing text changes; no independent reviewer claimed. **Full G1 source/S1/outcome/maths/PED review remains OPEN**, as do G2 actual visual QA, G3 browser/touch/offline and G4 handoff; `CONTENT_READY=NO`, `NO_MERGE_DEPLOY`.
