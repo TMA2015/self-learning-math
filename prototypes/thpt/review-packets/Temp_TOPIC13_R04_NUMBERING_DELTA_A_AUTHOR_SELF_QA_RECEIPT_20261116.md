@@ -1,6 +1,6 @@
-# CĐ13 R04 — Q18 AUTHOR_SELF_VERIFIED · DELTA_A_UI numbering only · 16/11/2026
+# CĐ13 R04 — Q18 AUTHOR_SELF_VERIFIED · original numbering + targeted vector-concept refinement · 17/11/2026
 
-**Phạm vi AUTHORING:** kiểm soát đánh số các cấp đầu mục và biểu thị bài luyện theo yêu cầu Owner 16/11/2026. Đây là **DELTA_A_UI** theo nguồn học thuật `7f3e90e5eadcbaa1dc7b49cd6d5136f6dbf61e22` bất biến, không sửa câu hỏi, công thức, điều kiện, đáp án, lời giải, rubric, canonical IDs hay RD1. Không gọi là NotebookLM independent review hoặc RELEASE browser QA.
+**Phạm vi AUTHORING hiện hành:** bổ sung ba khung kiến thức đúng loại (vectơ, hai vectơ bằng nhau, quy tắc ba điểm) và một khối Kiến thức cần ghi nhớ; áp dụng DELTA_C theo đúng ba outcome O01–O03 và phần tóm tắt. Cùng bản thảo R04 trên Draft #841; toàn bộ 52 câu hỏi, lời giải, rubric, canonical IDs, source bank và 16 public replay giữ nguyên. Lịch sử DELTA_A numbering R04 cũ được bảo toàn đúng SHA cũ; không phải NotebookLM independent review hoặc RELEASE browser QA.
 
 PACKET_ID: THPT-TOPIC13-PLANAR-SPATIAL-VECTORS-FULL-R01
 CONTENT_REVISION: R04
@@ -9,8 +9,8 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 9a558f553bd6a4a58701a6bae490717ba5a52540
-ACADEMIC_SOURCE_BLOB: 9a558f553bd6a4a58701a6bae490717ba5a52540
+SOURCE_BLOB: 593484fbe67b168fae677652db0ef3871bcf5695
+ACADEMIC_SOURCE_BLOB: 593484fbe67b168fae677652db0ef3871bcf5695
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R03_STUDENT_FIRST_52_CANONICAL_VISIBLE_20261116.md
@@ -21,7 +21,7 @@ SVG1_BLOB: 55ec9add04cb79da2cad7703b3897271e5b3436a
 SVG2_BLOB: 26e388d873521aa5b0bae945343e69357490ec16
 SVG3_BLOB: 979ca912e99fdadfc4e91ae0edad5db34fc13928
 SVG4_BLOB: 13445da079245a556a08e7a57069d9987097a0be
-DELTA_CLASS: DELTA_A_UI
+DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
 AUTHOR_QA_NUMBERING: PASS
 AUTHOR_QA_NUMBERING_H2_H3: NO_GAPS_NO_MIXED_SIBLINGS
 AUTHOR_QA_CANONICAL_PARITY: 52/52 UNCHANGED
@@ -33,7 +33,7 @@ PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
 P2: 0
-AUTHOR_SIGNOFF: TOPIC13_R04_NUMBERING_DELTA_A_4ddf62bc1ddca87e550201bb30cb7a88eb69cf7c
+AUTHOR_SIGNOFF: TOPIC13_R04_VECTOR_CONCEPT_Q18_593484fbe67b168fae677652db0ef3871bcf5695
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_IMPORTED: 0
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
@@ -56,6 +56,16 @@ ASSESSMENT_Q16: 16 public selfchecks P01–P16 là đề đã hiện trong Pract
 
 **Source equivalence là DELTA_A**, không yêu cầu NotebookLM đánh giá lại toàn Chuyên đề; Q18 của snapshot cũ được giữ nguyên và chỉ custody mới được khóa riêng.
 
+
+## R06 · Learner formal-knowledge correction — scoped author Q18 (17/11/2026)
+
+- Academic source `593484fbe67b168fae677652db0ef3871bcf5695` replaces current previous `9a558f553bd6a4a58701a6bae490717ba5a52540` only for three formal mathematical labels at TOP13-O01–O03 plus one recap before Luyện tập. Existing SGK G10 original source SHA `96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9` and G12 `856a37bd16d2746ffc2e12906de18d1f4338a3b6` unchanged, as is NEW20 canonical bank `136bd4552118e5dba6b18b58965be7d37878e9df`.
+- O01: a vector from A to B has initial and terminal points; scalar AB=|AB-vector|>=0 is its magnitude, not a vector. BA=-AB and AA=0 are unchanged in adjacent teaching.
+- O02: equality of vectors requires same direction and equal magnitude; translation does not change the represented displacement. SGK KNTT zero-vector convention in the following original paragraph remains unaltered.
+- O03: triangle/three-point identity AB-vector + BC-vector = AC-vector holds, whereas AB+BC as **scalar segment lengths** is not generally AC; the example with two orthogonal legs still verifies |(4,6)|=2sqrt13, not 10.
+- Recap checks dot product and angle only with two nonzero vectors; the force-work formula assumes constant force and correct units. Original final drone result 11 J unchanged.
+- Diff original current R04 learner `9a558f553bd6a4a58701a6bae490717ba5a52540` → this source: all 52/52 Practice stems/keys/solutions/rubrics and D6 BYTE_EXACT, 16/16 Selfcheck question-only BYTE_EXACT, same canonical tags and four SVG paths, disclosure counts unchanged. No new ID/answer/rubric or RD1 material; Q15 inherited same bank.
+- This is scoped `AUTHOR_SELF_VERIFIED` under owner-effective Q18, not a whole-class independent NotebookLM verdict or a RELEASE integration decision. G10 source PR #750 remains an explicit cross-branch dependency for RELEASE combined-HEAD validation.
 
 ## R05 — Q04/Q15/Q18 canonical vector correction (AUTHOR_SELF_VERIFIED, 17/11/2026)
 
