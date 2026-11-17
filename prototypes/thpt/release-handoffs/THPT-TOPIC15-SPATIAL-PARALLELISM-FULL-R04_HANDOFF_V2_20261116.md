@@ -13,13 +13,13 @@ CATALOG_TOPIC_ID: CD15
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_SPATIAL_PARALLELISM_R04_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 581ff0b0c019a705d36f306d7d5b0db38d185c0b
+ACADEMIC_SOURCE_BLOB: 36e94c3752ff2315907a6f3424daa6fa25f80938
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC15_R04_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 6b0efa57a177160d2a9c2d9570f0108830683e56
+REVIEW_RECEIPT_BLOB: 08479dc9a03670259292182662a2dda00b815961
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_R04_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: c2e39a3277d4e62ee935bb9613fe8be51ee57f41
+AUTHOR_A1_A7_BLOB: e993dbf16a98f0dbd2f19af6d243f221b28b98c6
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_R04_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: c2e39a3277d4e62ee935bb9613fe8be51ee57f41
+AUTHOR_METADATA_BLOB: e993dbf16a98f0dbd2f19af6d243f221b28b98c6
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHIV_B10_B14_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md
 ORIGINAL_SGK_SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_THPT_TOPIC15_LINE_PLANE_RELATION_R01_20261113.html
@@ -340,6 +340,12 @@ PED1 motivation per arc, PED2 in-source prerequisites, PED3 meaning before techn
 ## S1_SGK_SBT_SOURCE
 
 SGK G11 KNTT Tập1 ChIV printed B10 70–77, B11 78–83, B12 84–87, B13 88–94, B14 95–101, end 102–103, SBT 53–74; prior owner-verified S1 receipt in PR #705 SHA e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b. This new Topic turn did not re-scan the PDF. One original public SGK canonical reference source with 40 IDs, no copied stems or rubric.
+
+## 18/11 · Source-bound learner recap and controlled Q18
+
+- Current learner SHA `36e94c3752ff2315907a6f3424daa6fa25f80938`, A1 `e993dbf16a98f0dbd2f19af6d243f221b28b98c6`, receipt `08479dc9a03670259292182662a2dda00b815961`. This reuses **one existing R04 handoff**, no duplicate canonical bank.
+- Student recap directly summarizes plane identification, skew/coplanar line relationships, distinct d∥(P) criterion and parallel projection limits. Affected mathematical assumptions and examples checked in Q18, 89 canonical IDs untouched.
+- Signed old R04 source `581ff0b0c019a705d36f306d7d5b0db38d185c0b` is historical. Ten pre-existing learner formatting/prose changes including 7 Selfcheck label corrections were disclosed and checked before relocking. Practice/selfcheck stems, original SVG and rubric unchanged; this is scoped DELTA_C author review, not new independent NotebookLM verdict or RELEASE authority.
 
 ## D1_D6_EVIDENCE
 
