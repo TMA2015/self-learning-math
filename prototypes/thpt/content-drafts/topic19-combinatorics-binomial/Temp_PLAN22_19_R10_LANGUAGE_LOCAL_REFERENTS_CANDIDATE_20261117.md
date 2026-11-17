@@ -86,7 +86,7 @@ Có 4 loại áo và 3 kiểu huy hiệu. Mỗi bộ quà gồm đúng một lo�
 <!-- ITEM_ID: THPT-TOP19-T02; CONTENT_VERSION: TOP19-R10; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP19-O02; ANSWER_REVEAL: OPT_IN_AFTER_TRY; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-**12 bộ**, mỗi trong 4 áo ghép với 3 huy hiệu: 4×3=12.
+**12 bộ.** Với mỗi loại trong 4 loại áo đều có 3 cách chọn huy hiệu, nên theo quy tắc nhân ta có \(4\cdot3=12\) bộ.
 
 **Khi làm sai:** Nếu được 7, em có thể đã cộng \(4+3\). Hãy vẽ bảng gồm 4 hàng cho các loại áo và 3 cột cho các kiểu huy hiệu. Mỗi ô là một bộ quà; đếm tất cả các ô để kiểm tra phép nhân.
 
@@ -340,13 +340,13 @@ Hãy tự kiểm thử n!, nPr và nCr ở mục Kiến thức 2.5 để nhớ k
 
 Khi số phần tử tăng lên, việc nhân thủ công dễ mất thời gian và sai số. Bài học phần này hướng dẫn dùng máy tính cầm tay để tính **hoán vị, chỉnh hợp, tổ hợp**. Máy chỉ giúp tính số nhanh hơn; em vẫn phải hiểu bài toán là **xếp có thứ tự hay chọn nhóm**, nếu không máy sẽ cho đúng phép tính nhưng sai phương pháp.
 
-Trước hết hãy viết rõ ý nghĩa và đối số: `n!` là xếp hết n vật; `nPr` (hay `A_n^k`) là chọn k vật **có thứ tự** từ n; `nCr` (hay `C_n^k`) là chỉ chọn k vật **không thứ tự**. Một số máy có menu xác suất/hoán vị/tổ hợp, máy khác cần phím `SHIFT` hoặc tổ hợp phím riêng; **không có một chuỗi phím chung cho mọi mẫu máy**. Trên máy đang dùng, tìm chức năng được ghi `x!`, `nPr`, `nCr` trong hướng dẫn/nhãn phím, nhập đúng n rồi k, nhấn dấu bằng. Nếu máy không có chức năng này, em dùng các tích ngắn và chia bằng tay; kiến thức phải tự đủ, không phụ thuộc thương hiệu máy.
+Trước hết hãy viết rõ ý nghĩa và đối số: \(n!\) là số cách xếp hết n vật; `nPr` (hay \(A_n^k\)) là chọn k vật **có thứ tự** từ n; `nCr` (hay \(C_n^k\)) là chỉ chọn k vật **không thứ tự**. Một số máy có menu xác suất/hoán vị/tổ hợp, máy khác cần phím `SHIFT` hoặc tổ hợp phím riêng; **không có một chuỗi phím chung cho mọi mẫu máy**. Trên máy đang dùng, tìm chức năng được ghi `x!`, `nPr`, `nCr` trong hướng dẫn/nhãn phím, nhập đúng n rồi k, nhấn dấu bằng. Nếu máy không có chức năng này, em dùng các tích ngắn và chia bằng tay; kiến thức phải tự đủ, không phụ thuộc thương hiệu máy.
 
-**Điều kiện áp dụng:** n và k nguyên, n≥0, 0≤k≤n; số hoán vị/chỉnh hợp/tổ hợp luôn không âm và nguyên. Để kiểm kết quả, dùng `A_n^k = C_n^k × k!`. Lưu ý `nPr` không phải `nCr`; giới hạn số lớn của máy có thể gây tràn, không được xem hiển thị `E` hoặc kết quả thập phân xấp xỉ là số cách chính xác nếu đề đếm hữu hạn.
+**Điều kiện áp dụng:** n và k nguyên, n≥0, 0≤k≤n; số hoán vị/chỉnh hợp/tổ hợp luôn không âm và nguyên. Để kiểm kết quả, dùng \(A_n^k=C_n^k\cdot k!\). Lưu ý `nPr` không phải `nCr`; giới hạn số lớn của máy có thể gây tràn, không được xem hiển thị `E` hoặc kết quả thập phân xấp xỉ là số cách chính xác nếu đề đếm hữu hạn.
 
 > **PHƯƠNG PHÁP · Máy tính cầm tay**
 >
-> Các phép \(n!\), \(nPr\), \(nCr\) giúp tính số khi đã xác định đúng **xếp hết, chọn và xếp k, hay chọn k không thứ tự**. Dùng máy để kiểm phép tính, không thay bước nhận dạng mô hình.
+> Các phép \(n!\), \(\operatorname{nPr}\), \(\operatorname{nCr}\) giúp tính số khi đã xác định đúng **xếp hết, chọn và xếp k, hay chọn k không thứ tự**. Dùng máy để kiểm phép tính, không thay bước nhận dạng mô hình.
 
 **Ví dụ**
 
@@ -491,7 +491,7 @@ Em đã dùng quy tắc nhân trong đếm bước, tổ hợp trong chọn nhó
 
 **Mở rộng sau mạch SGK bắt buộc (tự chọn)**
 
-Hai chặng tiếp theo giúp giải các bài SBT có lũy thừa `1/x` hoặc nhận biết tổng hệ số qua `P(1)`. Đây là phần **mở rộng**, không phải điều kiện tiên quyết để học Bài 25 trong SGK; có thể học sau khi em đã làm bài Vận dụng ở Kiến thức 3.3.
+Hai chặng tiếp theo giúp giải các bài SBT có lũy thừa \(1/x\) hoặc nhận biết tổng hệ số qua \(P(1)\). Đây là phần **mở rộng**, không phải điều kiện tiên quyết để học Bài 25 trong SGK; có thể học sau khi em đã làm bài Vận dụng ở Kiến thức 3.3.
 
 ### 3.4. Số hạng không chứa x: từ đa thức đến mở rộng phân thức
 
@@ -571,11 +571,10 @@ Thử nhìn lại một tình huống thực tế: từ quy tắc nhân tạo k�
 
 # Luyện tập
 
-Luyện tập theo ba mạch toán: một kết quả khác khi nào, có thứ tự hay không, và hệ số nhị thức được đếm thế nào. Hãy tự giải, nêu lý do chọn phép đếm và điều kiện trước khi mở **Lời giải**. Các bài SGK dùng chung xuất hiện đủ đề và đối chiếu, nhưng vẫn thuộc ngân hàng canonical SGK gốc.
+Luyện tập theo ba mạch toán: khi nào hai cách chọn khác nhau, có thứ tự hay không, và vì sao hệ số nhị thức là số cách chọn. Hãy tự giải, nêu lý do chọn phép đếm cùng các điều kiện trước khi mở **Lời giải**. Những bài ghi **Bài SGK** có đủ đề để em luyện xen kẽ với bài của Chuyên đề.
 
 ## 1. Quy tắc đếm và chia trường hợp
 
-**Bài SGK dùng chung — đúng nội dung và phạm vi từ nguồn canonical**
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B23-C01; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O01; SOURCE_ROLE: CORE; NO_NEW_ID -->
 **Bài SGK 1.** Một cửa hàng có 4 loại bút mực và 3 loại bút chì khác nhau. Chọn đúng một cây bút. Có bao nhiêu cách chọn?
@@ -608,7 +607,6 @@ Lời giải: Hai nhóm lựa chọn rời nhau, cộng 5+4=9.
 
 </details>
 
-**Bài SGK dùng chung — đúng nội dung và phạm vi từ nguồn canonical**
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B23-C02; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O02; SOURCE_ROLE: CORE; NO_NEW_ID -->
 **Bài SGK 3.** Có 3 áo khác màu và 2 quần khác màu. Mỗi bộ gồm đúng một áo và một quần. Có bao nhiêu bộ?
@@ -651,7 +649,6 @@ Lời giải: Quy tắc nhân ba bước: 2×3×2=12.
 
 </details>
 
-**Bài SGK dùng chung — đúng nội dung và phạm vi từ nguồn canonical**
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B23-P01; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O03; SOURCE_ROLE: PRACTICE; NO_NEW_ID -->
 **Bài SGK 6.** Mã gồm hai chữ cái lấy từ {A,B,C}, được lặp, tiếp theo một chữ số từ 0 đến 9. Có bao nhiêu mã?
@@ -674,7 +671,6 @@ Lời giải: Có 3×3×10=90 mã; mỗi vị trí là một bước độc lậ
 
 </details>
 
-**Bài SGK dùng chung — đúng nội dung và phạm vi từ nguồn canonical**
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B23-P05; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O04; SOURCE_ROLE: PRACTICE; NO_NEW_ID -->
 **Bài SGK 7.** Từ các chữ số \(0,1,2,3,4\), lập số tự nhiên có ba chữ số khác nhau và là số chẵn. Có bao nhiêu số?
@@ -726,7 +722,6 @@ Lời giải: Phương án xe đạp: 3. Phương án xe buýt: \(2\) tuyến nh
 
 ## 2. Hoán vị, chỉnh hợp, tổ hợp và công cụ tính
 
-**Bài SGK dùng chung — đúng nội dung và phạm vi từ nguồn canonical**
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B24-C01; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O05; SOURCE_ROLE: CORE; NO_NEW_ID -->
 **Bài SGK 9.** Có 5 người khác nhau đứng thành một hàng. Có bao nhiêu thứ tự xếp?
@@ -769,7 +764,6 @@ Lời giải: Gộp A và B thành một khối, cùng 3 học sinh còn lại l
 
 </details>
 
-**Bài SGK dùng chung — đúng nội dung và phạm vi từ nguồn canonical**
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B24-C02; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O06; SOURCE_ROLE: CORE; NO_NEW_ID -->
 **Bài SGK 12.** Từ 7 học sinh khác nhau, chọn 3 người vào ba vị trí có tên A, B, C. Có bao nhiêu cách?
@@ -802,7 +796,6 @@ Lời giải: Có 6 lựa chọn lớp trưởng, sau đó 5 lựa chọn lớp 
 
 </details>
 
-**Bài SGK dùng chung — đúng nội dung và phạm vi từ nguồn canonical**
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B24-P01; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O07; SOURCE_ROLE: PRACTICE; NO_NEW_ID -->
 **Bài SGK 14.** Chọn một nhóm gồm 3 học sinh từ 8 học sinh khác nhau, không phân vai. Có bao nhiêu nhóm?
@@ -825,7 +818,6 @@ Lời giải: \(\binom83=\frac{8\cdot7\cdot6}{3\cdot2\cdot1}=56\).
 
 </details>
 
-**Bài SGK dùng chung — đúng nội dung và phạm vi từ nguồn canonical**
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B24-P04; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O08; SOURCE_ROLE: APPLICATION; NO_NEW_ID -->
 **Bài SGK 15.** Chọn đội gồm 2 bạn nữ từ 5 nữ và 3 bạn nam từ 7 nam, không phân vai. Có bao nhiêu đội?
@@ -888,7 +880,6 @@ Lời giải: Tổng số nhóm \(\binom63=20\). Nhóm không có A lẫn B ch�
 
 ## 3. Nhị thức Newton và ứng dụng
 
-**Bài SGK dùng chung — đúng nội dung và phạm vi từ nguồn canonical**
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B25-C01; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O09; SOURCE_ROLE: CORE; NO_NEW_ID -->
 **Bài SGK 17.** Hệ số của \(a^2b^2\) trong \((a+b)^4\) là bao nhiêu?
@@ -921,7 +912,6 @@ Lời giải: \(\binom52=10\).
 
 </details>
 
-**Bài SGK dùng chung — đúng nội dung và phạm vi từ nguồn canonical**
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B25-P01; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O10; SOURCE_ROLE: PRACTICE; NO_NEW_ID -->
 **Bài SGK 19.** Tìm hệ số của \(x^3\) trong \((2x-1)^4\).
@@ -1019,7 +1009,6 @@ T_0=\binom50 (4x)^0 (-3)^5=\boxed{-243}.
 
 </details>
 
-**Bài SGK dùng chung — một phần thuộc mở rộng tự chọn**
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B25-P02; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O11; SOURCE_ROLE: SUPPORT_EXTENSION; NO_NEW_ID -->
 **Bài SGK 24.** Tìm số hạng không chứa \(x\) trong \((x+1/x)^6\) với \(x\ne0\). Bài tham khảo/mở rộng tự chọn, không dùng làm Core bắt buộc.
@@ -1042,7 +1031,6 @@ Lời giải: Số hạng thứ \(k+1\) có lũy thừa \(x^{6-2k}\). Bằng \(x
 
 </details>
 
-**Bài SGK dùng chung — một phần thuộc mở rộng tự chọn**
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B25-P06; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O12; SOURCE_ROLE: OPTIONAL_SPECIALIZED; NO_NEW_ID -->
 **Bài SGK 25.** Tính tổng các hệ số của những số hạng có số mũ lẻ của \(x\) trong khai triển \((1+x)^7\). Bài tham khảo/mở rộng tự chọn, không dùng làm Core bắt buộc.
@@ -1067,7 +1055,7 @@ Lời giải: Đặt \(f(x)=(1+x)^7\). Tổng hệ số bậc chẵn trừ tổn
 
 # Tự kiểm tra
 
-Đây là bảy bài tự ôn **công khai** từ phần Luyện tập, không phải bài kiểm tra độc lập để ghi Mastery. Em hãy trả lời trước khi quay lại lời giải của bài gốc để tự đối chiếu; trang này không chứa đáp án, gợi ý hay rubric.
+Bảy câu dưới đây dùng lại các bài trong phần Luyện tập để em ôn và tự đối chiếu, **không phải bài đánh giá độc lập**. Hãy tự giải trước, sau đó quay lại lời giải của bài tương ứng để kiểm tra; tại đây không hiển thị đáp án hay gợi ý.
 
 ## 1. Câu hỏi tự ôn
 
