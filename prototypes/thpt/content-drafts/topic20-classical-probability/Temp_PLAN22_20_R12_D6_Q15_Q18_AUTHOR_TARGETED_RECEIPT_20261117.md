@@ -6,8 +6,8 @@ STANDARD_VERSION: 3.1.0
 STANDARD_BLOB: 5a80b20ce99be3179d03d56a73fa57b6f4882fd8
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 REVIEW_SCOPE: DELTA_C_PED_TARGETED_Q08_Q14_Q15_Q18
-SOURCE_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R12_D6_NAVIGATION_CANDIDATE_20261117.md
-SOURCE_BLOB: a5507a33daea690a1193c965999e1d652340cb58
+SOURCE_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_LEARNER_PRESENTATION_20261116.md
+SOURCE_BLOB: 14cf1fa93c263fe4b94c101000e8c974a7a0b682
 ORIGINAL_R11_SOURCE_BLOB: 74e758075d17e98649d9dd08709b523e8a782b63
 ORIGINAL_R11_AUTHOR_Q18_RECEIPT_BLOB: 4e6133b77eeaf1d38394d1e4d6f8058d421fd763
 AFFECTED_P0: 0
@@ -64,3 +64,8 @@ Q15_CANDIDATE_SOURCE_LEVEL: AUTHOR_SELF_VERIFIED; ALL_IDS_UNIQUE; PRACTICE_REPLA
 Q15_GLOBAL_ACTIVE_OWNER_V2_READY_REGISTER: HOLD_PENDING_INTEGRATION
 
 This matrix was generated from the exact item marker lines in the learner source and includes every item-to-outcome/role/content_version and public replay placement, without cloning canonical item bodies. Its SHA is pinned here; it does not imply that the repository-wide ACTIVE REGISTER has been promoted or that external handoff has been completed.
+
+
+## FINAL_AUTHORING_CONSOLIDATION — vetted 17/11/2026
+
+Source-verified learner patches were merged **in place** into original currently selected `Temp_PLAN22_20_R11_LEARNER_PRESENTATION_20261116.md` (blob `14cf1fa93c263fe4b94c101000e8c974a7a0b682`) after direct baseline/candidate diff. **Accepted 4 actual pedagogy lines, REJECTED 3 item content_version bumps** because the underlying original mathematical stem, key, method and 7-point Written rubric remain unchanged: gratuitous version churn would create unnecessary version inconsistency. Existing original item content_versions remain authoritative. No new ID, new source copy, rubric scoring or numerical revision; original selfcheck question-only section preserved byte-for-byte, opt-in answer disclosures unchanged, all SVG paths retained. Earlier candidate and original source SHA values remain Git history; **SOURCE_PATH and SOURCE_BLOB above are authoritative** for the current source and override any historical narrative in the older receipt sections. `AFFECTED_PED_DELTA_AUTHOR_SELF_QA_PASS`; full Q01–Q18, independent review, original SGK owner and browser QA gates still unproven: `CONTENT_READY=NO`. No RELEASE integration, merge or deploy.
