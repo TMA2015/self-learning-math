@@ -98,7 +98,7 @@ So sánh (1/3)^(√3) với (1/3)^2.
 
 √3<2; cơ số 1/3 làm hàm nghịch biến nên (1/3)^(√3)>(1/3)^2.
 
-Nếu đảo dấu sai, dùng x=0 và x=1 để quan sát 1 và cơ số a; quay M10 kiểm tính tăng/giảm.
+Nếu đảo dấu sai, dùng x=0 và x=1 để quan sát 1 và cơ số a; xem lại mục Kiến thức 1.3 về chiều tăng/giảm của lũy thừa khi cơ số lớn hơn 1 hoặc nằm giữa 0 và 1.
 
 </details>
 
@@ -165,7 +165,7 @@ Tính log₄(1/8).
 
 Vì 4^(−3/2)=1/8 nên log₄(1/8)=−3/2.
 
-Nếu nhầm log_a(−b) với số âm, kiểm log có nghĩa chỉ khi đối số >0; luyện P06 và các câu B19-C01/C02.
+Nếu nhầm log_a(−b) với số âm, kiểm log có nghĩa chỉ khi đối số >0; làm lại Bài 29 (lôgarit âm), Bài 19 và Bài 20 (định nghĩa lôgarit) trong phần Luyện tập.
 
 </details>
 
@@ -193,7 +193,7 @@ Tìm miền của log₂(x²−9); tách log₂(x−3)+log₂(x+3) trên mọi m
 
 Miền x<−3 hoặc x>3, nhưng hai log riêng cùng có nghĩa chỉ khi x>3.
 
-Nếu mắc lỗi ‘log của tích’ trên toàn miền, lấy x=−4 làm phản ví dụ; luyện P07/P08 và câu Written nguồn B19.
+Nếu mắc lỗi ‘log của tích’ trên toàn miền, lấy x=−4 làm phản ví dụ; làm lại Bài 30, Bài 31 (điều kiện tách lôgarit) và Bài 28 (tự luận về miền xác định) trong phần Luyện tập.
 
 </details>
 
@@ -203,7 +203,7 @@ Nếu mắc lỗi ‘log của tích’ trên toàn miền, lấy x=−4 làm ph
 
 Khi đổi phép nhân thành phép cộng lôgarit, tại sao từng đối số phải dương?
 
-Ta suy các quy tắc logarit từ chính phép nhân và chia các lũy thừa. Làm việc với những số rất lớn sẽ dễ hơn khi tích biến thành tổng, nhưng phép biến đổi có điều kiện. Ta đã biết tính chất a^r·a^s=a^(r+s), b>0. Với a>0,a≠1,x>0,y>0: log_a(xy)=log_a x+log_a y, log_a(x/y)=log_a x−log_a y, log_a(x^r)=r log_a x (x>0). Chúng đúng vì lấy log hai vế của các tích lũy thừa dương, không phải công thức thuộc lòng không điều kiện.
+Ta suy các quy tắc logarit từ chính phép nhân và chia các lũy thừa. Làm việc với những số rất lớn sẽ dễ hơn khi tích biến thành tổng, nhưng phép biến đổi có điều kiện. Ta đã biết tính chất a^r·a^s=a^(r+s), a>0. Với a>0,a≠1,x>0,y>0: log_a(xy)=log_a x+log_a y, log_a(x/y)=log_a x−log_a y, log_a(x^r)=r log_a x (x>0). Chúng đúng vì lấy log hai vế của các tích lũy thừa dương, không phải công thức thuộc lòng không điều kiện.
 
 Chẳng hạn, log₃81−log₃3=log₃(81/3)=log₃27=3. Trừ hai log là log **thương**, không phải log(81−3).
 
@@ -374,7 +374,7 @@ Cho f(x)=3^x. Điểm (1,3) trên f tương ứng điểm nào trên log₃x?
 
 (3,1) vì log₃3=1.
 
-Nếu dùng log₃(−3) để đảo hàm, kiểm miền log phải dương; luyện P16 và các Written cũ B20.
+Nếu dùng log₃(−3) để đảo hàm, kiểm miền log phải dương; làm lại Bài 50 (hàm ngược) và Bài 44 (đối xứng đồ thị hàm mũ–lôgarit) trong phần Luyện tập.
 
 </details>
 
@@ -411,7 +411,7 @@ Giải 2^(2x)=8·2^x.
 
 2^(2x)=2^(x+3) ⇒ x=3; 2^x>0 nên có thể chia cho 2^x nếu muốn.
 
-Nếu đặt t=3^x mà nhận t âm, kiểm t>0; luyện P17 và bài SGK B21-C01.
+Nếu đặt t=3^x mà nhận t âm, kiểm t>0; làm lại Bài 60 (đặt ẩn dương) và Bài 51 (phương trình mũ) trong phần Luyện tập.
 
 </details>
 
@@ -439,7 +439,7 @@ Giải log₂(x−2)+log₂(x+2)=3.
 
 Điều kiện x>2. x²−4=8 ⇒ x=±2√3, chỉ +2√3 thỏa vì >2.
 
-Nếu dùng x âm từ phương trình bình phương, thay vào từng đối số; luyện P18/W03 và Written nguồn B19.
+Nếu dùng x âm từ phương trình bình phương, thay vào từng đối số; làm lại Bài 61, Bài 64 và Bài 27 (phương trình lôgarit có điều kiện) trong phần Luyện tập.
 
 </details>
 
@@ -471,7 +471,7 @@ Giải (1/3)^(2x−1)≥(1/3)^(x+2).
 
 Nghịch biến nên 2x−1≤x+2 ⇒ x≤3, lấy dấu bằng tại x=3.
 
-Nếu giữ chiều khi cơ số nhỏ hơn 1, kiểm x=4; luyện P19 và 2 câu gốc B21 bất phương trình mũ.
+Nếu giữ chiều khi cơ số nhỏ hơn 1, kiểm x=4; làm lại Bài 62 (bất phương trình mũ), Bài 53 và Bài 57 (cùng kiểm chiều bất đẳng thức) trong phần Luyện tập.
 
 </details>
 
@@ -503,7 +503,7 @@ Giải log_(1/3)(x+1)>log_(1/3)4.
 
 Miền x>−1; log giảm nên x+1<4 ⇒ x<3; S=(−1,3).
 
-Nếu không loại 5 trong ví dụ, kiểm log(0) vô nghĩa; xem SVG miền mới và luyện P20.
+Nếu không loại 5 trong ví dụ, kiểm log(0) vô nghĩa; xem SVG miền mới và làm lại Bài 63 (bất phương trình lôgarit có điều kiện) trong phần Luyện tập.
 
 </details>
 
@@ -540,7 +540,7 @@ Với số lượng 500 giảm 20% mỗi kỳ, tính sau 3 kỳ theo mô hình.
 
 N(3)=500·0,8³=256. Giảm 20% trên số còn lại mỗi kỳ, không trừ 100 cố định mỗi lần.
 
-Nếu tăng/giảm tuyến tính theo số cộng, kiểm tỷ lệ thực mỗi năm; luyện P21/W04 và câu SGK B18-P05.
+Nếu tăng/giảm tuyến tính theo số cộng, kiểm tỷ lệ thực mỗi năm; làm lại Bài 73, Bài 75 (mô hình tăng/giảm theo kỳ) và Bài 65 (lãi kép) trong phần Luyện tập.
 
 </details>
 
@@ -636,13 +636,13 @@ Các số mũ hữu tỉ gần √2 như 1,4;1,41;1,414,… đã có định ngh
 
 **Bài 5.**
 
-Phân biệt hai yêu cầu: tìm `√25` và giải `x²=25`. Nếu chuyển sang `∛(−27)`, kết quả ra sao? Giải thích vai trò của căn bậc chẵn/lẻ.
+Phân biệt hai yêu cầu: tìm \(\sqrt{25}\) và giải \(x^2=25\). Nếu chuyển sang \(\sqrt[3]{-27}\), kết quả ra sao? Giải thích vai trò của căn bậc chẵn/lẻ.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** `√25=5` là căn không âm; phương trình `x²=25` có hai nghiệm `x=5` và `x=−5`; `∛(−27)=−3`.
+**Đáp án:** \(\sqrt{25}=5\) là căn không âm; phương trình \(x^2=25\) có hai nghiệm \(x=5\) và \(x=-5\); \(\sqrt[3]{-27}=-3\).
 
-Ký hiệu căn bậc chẵn lấy giá trị không âm, còn phương trình `x²=25` yêu cầu tìm **mọi** số bình phương bằng 25. Căn bậc lẻ của số âm tồn tại trong ℝ vì `(−3)³=−27`. Không suy rộng cơ số âm sang mọi số mũ thực.
+Ký hiệu căn bậc chẵn lấy giá trị không âm, còn phương trình \(x^2=25\) yêu cầu tìm **mọi** số bình phương bằng 25. Căn bậc lẻ của số âm tồn tại trong ℝ vì \((-3)^3=-27\). Không suy rộng cơ số âm sang mọi số mũ thực.
 
 </details>
 
@@ -720,13 +720,13 @@ Bạn viết 2²+2³=2⁵. Hãy nêu lỗi và kết quả đúng.
 
 **Bài 11.**
 
-Viết `0,0000075` dưới dạng kí hiệu khoa học, rồi giải thích dấu của số mũ và vì sao không được viết `75×10^{-7}` làm **dạng chuẩn** dù giá trị bằng nhau.
+Viết \(0{,}0000075\) dưới dạng kí hiệu khoa học, rồi giải thích dấu của số mũ và vì sao không được viết \(75\times10^{-7}\) làm **dạng chuẩn** dù giá trị bằng nhau.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** `7,5×10^{-6}`. Biểu thức `75×10^{-7}` cũng bằng cùng giá trị nhưng hệ số 75 không thuộc đoạn `[1,10)` nên không phải dạng chuẩn.
+**Đáp án:** \(7{,}5\times10^{-6}\). Biểu thức \(75\times10^{-7}\) cũng bằng cùng giá trị nhưng hệ số 75 không thuộc đoạn \([1,10)\) nên không phải dạng chuẩn.
 
-Số rất nhỏ hơn 1 nên số mũ của 10 âm; chuyển dấu phẩy sáu chữ số để có phần hệ số 7,5, nhân `10^{-6}` để giữ đúng giá trị. Kí hiệu khoa học chuẩn có phần trị tuyệt đối hệ số từ 1 đến dưới 10.
+Số rất nhỏ hơn 1 nên số mũ của 10 âm; chuyển dấu phẩy sáu chữ số để có phần hệ số 7,5, nhân \(10^{-6}\) để giữ đúng giá trị. Kí hiệu khoa học chuẩn có phần trị tuyệt đối hệ số từ 1 đến dưới 10.
 
 </details>
 
