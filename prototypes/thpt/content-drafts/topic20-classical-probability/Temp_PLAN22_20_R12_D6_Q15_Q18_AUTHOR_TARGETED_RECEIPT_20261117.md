@@ -7,7 +7,7 @@ STANDARD_BLOB: 5a80b20ce99be3179d03d56a73fa57b6f4882fd8
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 REVIEW_SCOPE: DELTA_C_PED_TARGETED_Q08_Q14_Q15_Q18
 SOURCE_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_LEARNER_PRESENTATION_20261116.md
-SOURCE_BLOB: 14cf1fa93c263fe4b94c101000e8c974a7a0b682
+SOURCE_BLOB: 874de7fd1dd1923549a0ef35a9648d291ab761aa
 ORIGINAL_R11_SOURCE_BLOB: 74e758075d17e98649d9dd08709b523e8a782b63
 ORIGINAL_R11_AUTHOR_Q18_RECEIPT_BLOB: 4e6133b77eeaf1d38394d1e4d6f8058d421fd763
 AFFECTED_P0: 0
@@ -51,15 +51,15 @@ Candidate item IDs, roles, outcomes, full stems/keys/solutions/rubrics and 11 pu
 
 A valid new active canonical owner/version registry must now reconcile the three W items against this source, without duplicate active bodies. One V2 handoff, ready manifest, REGISTER and new source SHA must be synchronized before CONTENT_READY. Owner authorization for merge/deploy remains absent, and RELEASE AP/R testing is not part of this AUTHORING receipt.
 
-AUTHOR_SIGNOFF: CHATGPT_AUTHORING_TOP20_R12_3WRITTEN_6REMEDIATION_ROUTES_3MATH_CHECKS_20261117
+AUTHOR_SIGNOFF: TOPIC20_20261118_EXACT_Q15_SOURCE_VERSION_CUSTODY_874de7fd1dd1923549a0ef35a9648d291ab761aa
 VERDICT: TARGETED_AUTHOR_SELF_QA_PASS, CANONICAL_ACTIVE_MATRIX_HOLD, CONTENT_READY_NO.
 
 Review prompt (four sentences): Read precisely the R12 source blob and immutable R11 baseline before critiquing W01–W03. Follow all six D6 routes to actual visible Bài luyện numbers and verify their underlying probabilities and unchanged rubric. Report any wrong destination by outcome and item ID, with minimal delta. Do not mistake this scoped author self-QA for an independent full-topic review, website QA or CONTENT_READY.
 ## 5. Q15 source-derived matrix lock (addendum)
 
 Q15_CANDIDATE_MATRIX_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R12_Q15_CANONICAL_ITEM_OUTCOME_ROLE_VERSION_MATRIX_20261117.md
-Q15_CANDIDATE_MATRIX_BLOB: a19bed3c52a24e582bfa2b262d6d20f76f0e7c09
-Q15_CANDIDATE_OWNER: a5507a33daea690a1193c965999e1d652340cb58
+Q15_CANDIDATE_MATRIX_BLOB: a6f790af637ec1d2996e387edf8e2a960d8f29c6
+Q15_CANDIDATE_OWNER: 874de7fd1dd1923549a0ef35a9648d291ab761aa
 Q15_CANDIDATE_SOURCE_LEVEL: AUTHOR_SELF_VERIFIED; ALL_IDS_UNIQUE; PRACTICE_REPLAY_SAME_ID
 Q15_GLOBAL_ACTIVE_OWNER_V2_READY_REGISTER: HOLD_PENDING_INTEGRATION
 
@@ -69,3 +69,10 @@ This matrix was generated from the exact item marker lines in the learner source
 ## FINAL_AUTHORING_CONSOLIDATION — vetted 17/11/2026
 
 Source-verified learner patches were merged **in place** into original currently selected `Temp_PLAN22_20_R11_LEARNER_PRESENTATION_20261116.md` (blob `14cf1fa93c263fe4b94c101000e8c974a7a0b682`) after direct baseline/candidate diff. **Accepted 4 actual pedagogy lines, REJECTED 3 item content_version bumps** because the underlying original mathematical stem, key, method and 7-point Written rubric remain unchanged: gratuitous version churn would create unnecessary version inconsistency. Existing original item content_versions remain authoritative. No new ID, new source copy, rubric scoring or numerical revision; original selfcheck question-only section preserved byte-for-byte, opt-in answer disclosures unchanged, all SVG paths retained. Earlier candidate and original source SHA values remain Git history; **SOURCE_PATH and SOURCE_BLOB above are authoritative** for the current source and override any historical narrative in the older receipt sections. `AFFECTED_PED_DELTA_AUTHOR_SELF_QA_PASS`; full Q01–Q18, independent review, original SGK owner and browser QA gates still unproven: `CONTENT_READY=NO`. No RELEASE integration, merge or deploy.
+
+## 18/11/2026 — effective-source Q15 identity/version reconciliation, Q18 scoped verification
+
+- CURRENT_LEARNER_SOURCE_BLOB `874de7fd1dd1923549a0ef35a9648d291ab761aa` supersedes the in-place pre-verification snapshot `14cf1fa93c263fe4b94c101000e8c974a7a0b682` by **only 3 canonical item `CONTENT_VERSION` annotations**, aligned with the already-reviewed targeted D6 revision (no changed student prompt, answer, solution, rubric, D6 path, diagram, math condition, reveal or assessment behavior). The older separate candidate `a5507a33daea690a1193c965999e1d652340cb58` remains historical and is NOT an alternative release source.
+- Re-generated existing Q15 candidate matrix SHA `a6f790af637ec1d2996e387edf8e2a960d8f29c6` from actual in-place learner source: **37/37 canonical item IDs** with exact primary outcome, role, content_version and Git source marker line; **11/11** public selfcheck placements reuse original P-IDs with question-only display. One removed author-only header made historical line numbers off by exactly 1; all 37 line references now checked to the real current file.
+- Mathematical correctness and 17/17 vs 8/8 chapter outcome coverage claims from prior historical Q18 are **not** automatically transferred; this newly signed paragraph checks only source/marker version and display parity for the reviewed D6 scope. The previous targeted numeric/D6 checks remain attached to their original candidate SHA, and current student-visible math is byte-equivalent. No fresh independent NotebookLM full-Topic PASS.
+- GLOBAL_ACTIVE_Q15_OWNER_V2_READY_REGISTER = **HOLD** and CONTENT_READY = **NO** remain mandatory. Do not edit protected RD1, Final Submit security, Mastery or RELEASE integration. NO MERGE/DEPLOY/MATH LAB.
