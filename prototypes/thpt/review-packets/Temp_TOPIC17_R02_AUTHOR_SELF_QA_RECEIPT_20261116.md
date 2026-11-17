@@ -9,10 +9,10 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 7ee09cea9c33e2ae520a1a40df694ab7118adb42
-SOURCE_BLOB: 7ee09cea9c33e2ae520a1a40df694ab7118adb42
+ACADEMIC_SOURCE_BLOB: e065ded2448f800bf649d0e30239591d57233fbe
+SOURCE_BLOB: e065ded2448f800bf649d0e30239591d57233fbe
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: 69b1cae6ebda31d510efd1a8d7b6b7e5c3086d2c
+AUTHOR_METADATA_BLOB: fd5e82e3a7a0048e65c325fb4582253df77d5ba4
 ORIGINAL_R00_SOURCE_BLOB: baa6c6c575a4cf79187b2aebd2047b1cf872b983
 ORIGINAL_R01_EDITORIAL_CANDIDATE_BLOB: af08791b4d7104679a3ea3481068266a07c72dce
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
@@ -22,7 +22,7 @@ PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
 P2: 0
-AUTHOR_SIGNOFF: TOP17_R03_ONE_SOURCE_LANGUAGE_DELTA_Q03_Q10_Q14_Q15_Q16_Q18_20261117
+AUTHOR_SIGNOFF: TOP17_R03_20261118_D5_FORMAT_Q18_e065ded2448f800bf649d0e30239591d57233fbe
 CONTENT_REVISION: R03
 BASELINE_R02_SIGNED_SOURCE_BLOB: 7cfc1c44d8f8aa722118d945900290fd560b621b
 BASELINE_R02_RECEIPT_GIT_BLOB: 5d55b6a38bf5bb4e81d099e05635001876c2a90a
@@ -117,3 +117,9 @@ Read the source after the R03 learner-prelude correction. The only further learn
 ## Follow-up R04 — Q09/Q13/Q14: standalone chóp cụt self-discovery (17/11/2026)
 
 A real learner dependency was found: Knowledge TOP17-O10 asked the student to “thay thanh trượt” to understand frustum volume while the linked model existed only as an **AUTHOR_ONLY_MODEL_REFERENCE**, not an embedded guaranteed learner interaction. The source is now **self-contained without model availability**: for 0≤k≤1, big square a=6, small side 6k, height 4, derive S=36, S′=36k², √(SS′)=36k, V=(4/3)(36+36k+36k²)=48(1+k+k²) cm³. Verify k=0 ⇒ 48 (pyramid), k=1/2 ⇒ 84 (frustum), k=1 ⇒ 144 (prism). Values, conditions, limits and units checked independently; the square root simplifies to 36k **only because k≥0**. This replacement is **DELTA_C_PED_ACADEMIC_MATERIAL** on one Knowledge learner line (L326). It does not create an additional canonical question or reveal key before the corresponding voluntary First Try. Previous worked Example V=84 remains mathematically consistent. Source exact QA: all 49 answer disclosures, public selfcheck 8 question-only replays, original Knowledge/Practice item markers and SVG references unchanged; entire Practice and Selfcheck byte-identical. **No new learner file**; existing Q18 receipt updated. `AUTHOR_SELF_VERIFIED` affected Q04/Q09/Q13/Q14 PASS; browser UI and independent all-topic NotebookLM verdict NOT claimed. Original signed R02 receipt remains historical in Git, not new active teacher-source. Current SOURCE_BLOB: 7ee09cea9c33e2ae520a1a40df694ab7118adb42.
+
+## 18/11/2026 — Q18 DELTA_A formatting, orphan D5 repair
+
+- Effective current learner SHA `e065ded2448f800bf649d0e30239591d57233fbe`, immediate previous `7ee09cea9c33e2ae520a1a40df694ab7118adb42`; exactly one technical **unrendered heading** in the B27 SGK Written answer disclosure was replaced with a non-rendered `AUTHORING_D5` metadata comment. D5 visual custody remains in A1, not student heading hierarchy.
+- Correct structure verified: Practice H2 groups **1,2,3 only**, technical D5 H2 removed; the original last Written `<details>` properly closes, then NEW Topic Practice appears outside the SGK answer. All open/close `<details>` counts, student question text, answer/key/solution/rubric, 49 canonical IDs, 8 selfcheck question-only placements and 6 SVG paths unchanged.
+- Scoped `DELTA_A_UI` source-equivalence author verification. Previous Q18 counts/status are snapshot-scoped; not new independent NotebookLM Academic/PED PASS, official grading, RELEASE/CI/browser acceptance, Mastery or owner merge/deploy permission. Preserve original A1 STATE `BLOCKED_BY_AUTHORING` until gating.
