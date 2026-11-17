@@ -3,7 +3,7 @@
 PACKET_ID: THPT-TOPIC08-LIMITS-CONTINUITY-FULL-R01
 CONTENT_REVISION: R05
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic08-limits-continuity/Temp_TOPIC08_R05_AUTHORING_ONLY_CUSTODY_METADATA_20261115.md
-AUTHOR_METADATA_BLOB: f5ff43efd9b829102f18aa3c46e3ea2e0f09117e
+AUTHOR_METADATA_BLOB: b4e108b12e15d483c73a5dba436f85e437a08788
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
@@ -11,9 +11,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic08-limits-continuity/Temp_TOPIC08_R05_STUDENT_FIRST_58_CANONICAL_VISIBLE_20261115.md
-ACADEMIC_SOURCE_BLOB: a33d1e6a20dba1dc7861097e231906aff2938c02
+ACADEMIC_SOURCE_BLOB: 178ccc6f1b7c94c9db1146c626efc4dca319b149
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC08_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
-REVIEW_RECEIPT_BLOB: 3285d8d9db6882e798995d92a0d8f83ce592d8e9
+REVIEW_RECEIPT_BLOB: 81dedff34a973b5a1db6737c16ff5d3020e613b6
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC08_LIMITS_CONTINUITY_NEW22_PUBLIC_CANONICAL_R05_20261115.md
 PUBLIC_CANONICAL_BANK_BLOB: 2e93db80384de53e208248eaa0396a7f487302ac
 PUBLIC_ORIGINAL_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC08_LIMITS_CONTINUITY_ORIGINAL36_SGK_PLACEMENT_INDEX_R05_20261115.md
@@ -269,6 +269,12 @@ ONE `SLM-THPT-QUALITY-ONE v3.1.0` normative source `prototypes/thpt/THPT_UNIFIED
 - Original SGK Toán11 KNTT Tập1 ChV: B15 Giới hạn dãy số printed104–110, B16 Giới hạn hàm số 111–118, B17 liên tục 119–122, End ChV 123. Exact originally-reviewed 36 public canonical headings at R03 source blob 7934757ed06de4ae4b63dbc351ef524fc054e0d0.
 - SBT KNTT T1 ChV: B15 printed75–78/PDF1 76–79, B16 79–83/PDF1 80–84, B17 84–86/PDF1 85–87, End ChV 87–90/PDF1 88–91. Existing original publisher SBT scan PDF SHA256 fb5292103e5b682531ce37b5f30598393bba81b2943da9c1a374fdeb56557229, historic Git receipt blob 4d409171aa69ef9b30aae4756959ec1e325a13d3. **Current Topic authoring did not rescan PDF; cites earlier locked source**.
 - Historial SGK ChV original independent R02 Academic/PED PASS on 17 SGK outcomes, 36 original public IDs; author Delta_B only citation metadata R03. New 18 Topic outcomes/22 new items have their **own** Q18 AUTHOR_SELF_VERIFIED v3.1.0, not inherited reviewer PASS.
+
+## 18/11/2026 — scoped Knowledge source correction; single V2 packet preserved
+
+- Current learner source Git blob `178ccc6f1b7c94c9db1146c626efc4dca319b149`; signed scoped Q18 `81dedff34a973b5a1db6737c16ff5d3020e613b6`; A1 source provenance and outcome custody `b4e108b12e15d483c73a5dba436f85e437a08788`.
+- This is `DELTA_C_ACADEMIC_MATERIAL`: explains epsilon sequence limits (O01), infinite geometric sum with |q|<1 (O05), definition of continuity with endpoint convention (O13), and zero-crossing IVT sufficient conditions (O17), plus one four-bullet recall. The earlier two real Knowledge paragraph edits O13/O14 absent from old signed R05 are explicitly independently checked in the new Q18 receipt. No original math item/condition/answer/rubric changes.
+- 58/58 canonical Practice source placements (36 SGK unchanged +22 Topic bank), 18 question-only public selfcheck, 3 original SVG and whole reveal structure remain source-identical. Historic R05 numeric author 159/159 PASS is still only on original Git source snapshot; current assertions scope is exact changed Knowledge. No independent NotebookLM full Topic PASS claimed, no MASTER/RD1/RELEASE/owner-website approval.
 
 ## D1_D6_EVIDENCE
 
