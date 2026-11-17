@@ -525,7 +525,7 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
         null,{timeout:15000});
        const paragraphs=await last.locator("p").allTextContents();
        assert(paragraphs.some(v=>v.includes("Thời gian đó sai"))&&
-        paragraphs.some(v=>v.includes("thành phần hướng Bắc"))&&
+        paragraphs.some(v=>/thành phần hướng Bắc/i.test(v))&&
         paragraphs.some(v=>v.includes("Ôn và luyện lại:")),
         where+" B10 error 4.3 must show a specific wrong method, cause and recovery");
        assert(await last.locator("mjx-container").count()>=5,
