@@ -114,8 +114,23 @@ function checkSHA(){
       "Original B01–B06 scoped Golden CSS prefix must remain source-identical");
     assert.equal(hash(cssText.slice(0,b09cut-1)),f09("CSS_BASELINE_BLOB"),
       "B09 CSS only follows owner P2-accepted B08 source without other changes");
-    assert.equal(hash(data),f09("R03_CSS_BLOB"),
-      "B09-only CSS exact source lock; B01–B06 frozen prefix remains intact");
+    // B10 is the only new scoped appendix; B01-B09 stay byte-for-byte frozen.
+    const b10=fs.readFileSync(path.join(root,
+      "prototypes/thpt/ux795/G10_CHIV_B10_S1_PED_SINGLE_CANONICAL_Q18_R01_20261118.md"),"utf8");
+    const f10=k=>b10.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    const marker10="/* G10 Chapter IV B10 R01";
+    const cut10=cssText.indexOf(marker10);
+    assert(cut10>b09cut&&cssText.indexOf(marker10,cut10+1)<0,
+      "B10 CSS must append exactly one new scoped region after B09");
+    assert.equal(hash(cssText.slice(0,cut10-1)),f09("R03_CSS_BLOB"),
+      "B01–B09 published CSS byte-identical before B10 section");
+    assert.equal(f10("CSS_OWNER_B09_P2_BASELINE_BLOB"),f09("R03_CSS_BLOB"),
+      "B10 Q18 must extend exactly owner-accepted B09 CSS");
+    assert.equal(hash(data),f10("CSS_R01_SCOPED_B10_BLOB"),
+      "B10 final CSS must match source-locked Q18 receipt");
+    assert(cssText.slice(cut10).includes('data-thpt-first-try-id="THPT-G10-CHIV-TRY16"')&&
+      !/TRY0[1-9]|TRY1[1-5]/.test(cssText.slice(cut10)),
+      "B10 append may style only B10 TRY16, not previously accepted lessons");
     assert(data.toString("utf8").includes('data-thpt-first-try-id="THPT-G10-CHIII-TRY06"'),
       "Only B06 canonical Knowledge marker may add CSS");
    assert(data.toString("utf8").includes('data-thpt-first-try-id="THPT-G10-CHIII-TRY01"'),
