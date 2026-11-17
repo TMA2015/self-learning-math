@@ -318,9 +318,9 @@ Trên hình phối cảnh, hai mũi tên ở các vị trí khác nhau có thể
 
 Tích vô hướng hình học u·v=|u||v|cosθ đúng cho vectơ không gian. Trong Oxyz cũng có u·v=uxvx+uyvy+uzvz. Với hai vectơ khác không, tích 0 tương đương vuông góc. Hai đường thẳng chéo nhau có thể có vectơ chỉ phương vuông góc dù hai đường không cắt nhau; không gọi hai đoạn vẽ phối cảnh là cắt nhau chỉ vì ảnh chiếu chồng.
 
-![Phân rã độ dịch chuyển A→B theo ba trục](../svg/FIG-G12-CHII-B06-R00.svg)
+![Phân rã độ dịch chuyển A→B theo ba trục](../svg/FIG-G12-CHII-B08-R00.svg)
 
-**Cách đọc hình:** Ba thành phần theo trục cộng thành vectơ tím A→B; không cộng ba độ dài thành độ dời.
+**Cách đọc hình:** Ba thành phần tọa độ trên các trục hợp thành vectơ tím từ A tới B. Hình chỉ minh họa cách phân tích **một vectơ**, không biểu diễn góc giữa hai vectơ khác nhau; muốn xác định góc của hai vectơ trong ví dụ tiếp theo, dùng tích vô hướng của các cặp thành phần tương ứng, không đo góc trên phối cảnh.
 
 **Ví dụ**
 
