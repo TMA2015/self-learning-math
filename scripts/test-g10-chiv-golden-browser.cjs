@@ -13,7 +13,7 @@ const root=path.resolve(__dirname,"..");
 const base=process.env.SLM_CHIV_URL||"http://127.0.0.1:8765";
 const goldenCss="44442773ac31eb1a46f0cab699a7d2c7974a5f37";
 const sources={
- 7:"4640d5beeb2c43c2e65a4a58e400cf99a4e6efd9",
+ 7:"e1487ce01e81738228ae69d4d87cbdc56b5e0c69",
  8:"9cf96a0e81bea14903a64385359f738145e5a048",
  9:"2529b915e4089862e1a48e685ba5dc88d5450558",
  10:"ceaa76688e73274c9cf2d3116c41c6d4d0ac2726",
@@ -53,8 +53,20 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
   const b06field=k=>b06receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(b06field("BASELINE_CSS_GIT_BLOB"),b05field("CANDIDATE_CSS_GIT_BLOB"),
    "B06 CSS extends B05 P2 accepted source");
-  assert.equal(blob(cssFile),b06field("CANDIDATE_CSS_GIT_BLOB"),
-   "B06 scoped SVG/AP/teal CSS source-locked; Chapter IV unaffected");
+  const r05=fs.readFileSync(root+
+   "/prototypes/thpt/ux795/G10_CHIV_B07_SEMANTIC_CONCEPT_RECAP_DELTA_R05_20261117.md","utf8");
+  const r05field=k=>r05.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(r05field("BASELINE_CSS_GIT_BLOB"),b06field("CANDIDATE_CSS_GIT_BLOB"),
+    "B07 R05 must extend accepted CSS without changing historical source");
+  assert.equal(blob(cssFile),r05field("R05_CSS_GIT_BLOB"),
+    "B07 R05 exact scoped CSS SHA");
+  const cssTextR05=cssFile.toString("utf8"),markerR05="/* G10 ChIV B07 R05";
+  const cutR05=cssTextR05.indexOf(markerR05);
+  assert(cutR05>0&&cssTextR05.indexOf(markerR05,cutR05+1)===-1,"B07 CSS marker one occurrence");
+  assert.equal(blob(cssTextR05.slice(0,cutR05-1)),b06field("CANDIDATE_CSS_GIT_BLOB"),
+    "B01–B06 CSS is untouched byte-for-byte before scoped append");
+  assert(cssTextR05.includes(':has([data-thpt-first-try-id="THPT-G10-CHIV-TRY01"])'),
+    "B07 concept color specific to B07 only");
   assert(cssFile.toString("utf8").includes('data-thpt-first-try-id="THPT-G10-CHIII-TRY06"'),
    "B06 visual delta constrained to B06 first-try canonical selector");
   assert(cssFile.toString("utf8").includes('data-thpt-first-try-id="THPT-G10-CHIII-TRY01"'),
@@ -65,7 +77,7 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
  assert(styles.includes(':has([data-thpt-first-try-id="THPT-G10-CHI-TRY01"])') &&
   styles.includes(':has([data-thpt-first-try-id="THPT-G10-CHI-TRY06"])') &&
   styles.includes(':has([data-thpt-first-try-id="THPT-G10-CHII-TRY01"])'),
-  "B01/B02/B03 scoped concept color only; ChIV stays amber");
+  "B01/B02/B03 concept colors remain scoped; B07 formal-only now teal");
  for(const [lesson,sha] of Object.entries(sources)){
   assert.equal(blob(fs.readFileSync(root+"/docs/thpt-preview/sgk/chuong-iv/bai-"+lesson+".md")),sha,
    "Unapproved academic/source/First Try change B"+lesson);
@@ -186,6 +198,22 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
         where+" source-matched public bank tasks described naturally");
        assert.equal(await article.getAttribute("data-g10-b07-keyboard-tabs"),"true",
         where+" B07 accessible Left/Right keyboard tabs enabled");
+       const formalCards=blocks.nth(1).locator(".thpt-r4-knowledge-conclusion.thpt-r4-concept-card");
+       const recapCards=blocks.nth(1).locator(".thpt-r4-knowledge-conclusion:not(.thpt-r4-concept-card)");
+       assert.equal(await formalCards.count(),5,where+" five formal mathematical definitions by outcome");
+       assert.equal(await recapCards.count(),2,where+" two substantive S1 section recaps");
+       await labels.nth(1).click();
+       for(const scheme of ["default","slate"]){
+        await page.evaluate(s=>document.body.setAttribute("data-md-color-scheme",s),scheme);
+        const formalBg=await formalCards.first().evaluate(el=>getComputedStyle(el).backgroundColor);
+        const recapBg=await recapCards.first().evaluate(el=>getComputedStyle(el).backgroundColor);
+        assert.equal(formalBg,scheme==="slate"?"rgb(25, 61, 54)":"rgb(232, 247, 242)",
+          where+" B07 formal definition teal in "+scheme);
+        assert.equal(recapBg,scheme==="slate"?"rgb(74, 58, 37)":"rgb(255, 243, 213)",
+          where+" B07 mandatory recall amber in "+scheme);
+       }
+       await page.evaluate(()=>document.body.removeAttribute("data-md-color-scheme"));
+       await labels.nth(0).click();
        const physicalFig=blocks.nth(0).locator('img[src*="THPT_G10_B07_FORCE_VELOCITY_REPRESENTATION_D5_R04.svg"]');
        assert.equal(await physicalFig.count(),1,
         where+" B07 new original-force/velocity teaching figure in Discovery");

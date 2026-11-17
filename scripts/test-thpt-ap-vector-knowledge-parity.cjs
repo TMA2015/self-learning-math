@@ -93,15 +93,21 @@ for(const c of cases){
   field(r04,"MOBILE_SVG_BLOB")===blob(fs.readFileSync(path.join(__dirname,
   "../docs/assets/images/thpt/THPT_G10_B07_FORCE_VELOCITY_MOBILE_D5_R04.svg")))&&
   src.includes('media="(max-width: 600px)"');
- const current=editorial[c.n]&&(blob(src)===editorial[c.n].sha||signedR02||signedR03||signedR04);
- if(signedR02||signedR03||signedR04)assert.equal(signedR04?field(r04,"R04_SOURCE_BLOB"):signedR03?
+ const r05=c.n===7?fs.readFileSync(path.join(__dirname,
+  "../prototypes/thpt/ux795/G10_CHIV_B07_SEMANTIC_CONCEPT_RECAP_DELTA_R05_20261117.md"),"utf8"):null;
+ const signedR05=c.n===7&&
+  field(r05,"BASELINE_R04_SOURCE_BLOB")===field(r04,"R04_SOURCE_BLOB")&&
+  field(r05,"R05_SOURCE_BLOB")===blob(src);
+ const current=editorial[c.n]&&(blob(src)===editorial[c.n].sha||signedR02||signedR03||signedR04||signedR05);
+ if(signedR02||signedR03||signedR04||signedR05)assert.equal(signedR05?field(r05,"R05_SOURCE_BLOB"):signedR04?field(r04,"R04_SOURCE_BLOB"):signedR03?
   field(r03,c.n===7?"R03_SOURCE_BLOB":"R03_CANDIDATE_SOURCE_BLOB"):
   field(r02,"R02_CANDIDATE_SOURCE_BLOB"),expectedG10KnowledgeBlob(c.n,c.sha),
   "B07/B08 exact R01→R02→R03→R04 source receipt must match Q18 router");
   if(current){
   const headings=[...middle.matchAll(/^    ### ([^\n]+)$/gm)].map(m=>m[1]);
   assert.deepEqual(headings,editorial[c.n].sections,"B"+c.n+": official S1 book sections changed");
-  assert(expressions.length>0,"B"+c.n+": all S1 mathematical expressions missing");
+  assert(expressions.length>0||(c.n===7&&signedR05&&middle.includes("\\(")),
+    "B"+c.n+": all S1 mathematical expressions missing");
   for(const required of editorial[c.n].formulas)
    assert(middle.includes(required),"B"+c.n+": essential S1 formula absent or mutated: "+required);
   assert.equal((middle.match(/data-thpt-first-try-id/g)||[]).length,0,

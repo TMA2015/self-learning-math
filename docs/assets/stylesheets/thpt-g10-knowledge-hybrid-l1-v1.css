@@ -486,3 +486,20 @@
     height: auto;
   }
 }
+
+/* G10 ChIV B07 R05 · X-F.3 semantic separation after OWNER P2 B07-F01:
+ * formal definitions = B01/B02 accepted teal; mandatory recap = inherited
+ * amber. Scoped to B07 canonical TRY01 and concept-card only.
+ * No CSS changes to B01–B06, B08–B11, G11/G12, Topic, THCS. */
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-chiv-golden:has([data-thpt-first-try-id="THPT-G10-CHIV-TRY01"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card {
+  background: #e8f7f2;
+  border-color: #a9dccc;
+  border-left-color: #087d69;
+  color: #174137;
+}
+[data-md-color-scheme="slate"] .md-typeset.thpt-g10-knowledge-ap1.thpt-g10-chiv-golden:has([data-thpt-first-try-id="THPT-G10-CHIV-TRY01"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card {
+  background: #193d36;
+  border-color: #447e70;
+  border-left-color: #76dfc7;
+  color: #e9fff7;
+}

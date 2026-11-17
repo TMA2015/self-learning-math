@@ -78,7 +78,37 @@ for(const [lesson,row] of rows){
     "B07 R04 force/velocity outcome must be taught as actual student action");
    assert(!source.includes("\\overrightarrow{EF}=-\\overrightarrow{HG}"),
     "B07 R04 may not require the opposite-vector minus sign before B08");
-   expected=field04("R04_SOURCE_BLOB");
+   const r05Path=path.join(root,
+    "prototypes/thpt/ux795/G10_CHIV_B07_SEMANTIC_CONCEPT_RECAP_DELTA_R05_20261117.md");
+   if(fs.existsSync(r05Path)){
+    const r05=fs.readFileSync(r05Path,"utf8");
+    const field05=k=>r05.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    assert.equal(field05("BASELINE_R04_SOURCE_BLOB"),field04("R04_SOURCE_BLOB"),
+     "B07 R05 must follow immutable R04 snapshot");
+    const formal=source.slice(source.indexOf('=== "Kiến thức SGK"'),
+     source.indexOf('=== "Ví dụ"'));
+    const anchors=[
+     "Định nghĩa — Vectơ:","Định nghĩa — Độ dài vectơ:",
+     "Định nghĩa — Vectơ-không:","Kiến thức cần nhớ — Mục 2.1:",
+     "Định nghĩa — Hai vectơ cùng phương:","Định nghĩa — Hai vectơ bằng nhau:",
+     "Kiến thức cần nhớ — Mục 2.2:"
+    ];
+    let prev=-1;
+    for(const anchor of anchors){
+     const ix=formal.indexOf(anchor);
+     assert(ix>prev,"B07 missing/out-of-order formal outcome or recap: "+anchor);
+     prev=ix;
+    }
+    assert.equal((formal.match(/class="thpt-r4-knowledge-conclusion thpt-r4-concept-card"/g)||[]).length,5,
+     "B07 all five mandatory formal concept groups must be distinct from prose");
+    assert.equal((formal.match(/class="thpt-r4-knowledge-conclusion" role="note"/g)||[]).length,2,
+     "B07 has two substantive group recaps, distinct from five formal definitions");
+    assert(formal.includes("song song hoặc trùng nhau")&&
+     formal.includes("cùng hướng và có cùng độ dài")&&
+     formal.includes("vectơ-không được xem là cùng phương"),
+     "B07 mandatory conditions/special zero convention must remain readable");
+    expected=field05("R05_SOURCE_BLOB");
+   }else expected=field04("R04_SOURCE_BLOB");
   }else{
    const replacements=[
     ["Trong Luyện tập, làm lại câu về vectơ ngược hướng trong hình bình hành, rồi đối chiếu câu Core về điều kiện hai vectơ bằng nhau.","Làm lại B07-P03 rồi đối chiếu B07-C02."],
