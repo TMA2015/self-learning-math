@@ -702,7 +702,7 @@ Khi biết đủ ba cạnh (SSS), thường dùng định lí côsin tìm góc; 
 - **STEM:** Một vòng quay có tâm O cao hơn mặt đất 12 m, bán kính 10 m. Xét vị trí M được xác định bởi góc 150° so với tia Ox hướng ngang sang phải, theo chiều dương, trên nửa đường tròn phía trên O. (a) Tính tọa độ của M trong hệ trục Oxy (mét). (b) Tìm độ cao M so với mặt đất. (c) Giải thích dấu của cos150° bằng hình học, không chỉ thuộc bảng số.
 - **HINT (luyện tập):** Với bán kính 10, hoành độ bằng `10cos150°`, tung độ bằng `10sin150°`; độ cao mặt đất = cao độ tâm + tung độ.
 - **LỜI GIẢI:** (a) \(x_M=10\cos150^\circ=-5\sqrt3\) (m), \(y_M=10\sin150^\circ=5\) (m). (b) Độ cao M là \(12+5=17\) m. (c) Góc 150° nằm phía trái trục Oy nên hình chiếu xuống trục Ox âm, từ đó cos150°<0.
-- **RUBRIC 7 điểm:** (1) Nêu đúng quy chiếu tâm O, bán kính và góc (1đ); (2) viết đúng `x=Rcos`, `y=Rsin` (2đ); (3) thay giá trị góc bù tính đủ tọa độ (2đ); (4) tính độ cao mặt đất 17 m (1đ); (5) giải thích hình học dấu cos (1đ). Không trừ lặp cùng lỗi số ở các bước phụ thuộc khi cách làm đúng; giáo viên/người học đối chiếu thủ công, không tự cộng Mastery.
+- **RUBRIC 7 điểm:** (1) Nêu đúng quy chiếu tâm O, bán kính và góc (1đ); (2) viết đúng \(x=R\cos\alpha\), \(y=R\sin\alpha\) với \(\alpha=150^\circ\) (2đ); (3) thay giá trị góc bù tính đủ tọa độ (2đ); (4) tính độ cao mặt đất 17 m (1đ); (5) giải thích hình học dấu cos (1đ). Không trừ lặp cùng lỗi số ở các bước phụ thuộc khi cách làm đúng; giáo viên/người học đối chiếu thủ công, không tự cộng Mastery.
 
 ### THPT-G10-CHIII-W06-ANCHOR
 
