@@ -187,7 +187,21 @@ for(const [lesson,row] of rows){
      "B08 R04 must not assume scalar-vector multiplication before B09");
    const css=fs.readFileSync(path.join(root,
     "docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"));
-   assert.equal(blob(css),f04("R04_CSS_BLOB"),
+   const b09File=path.join(root,
+    "prototypes/thpt/ux795/G10_CHIV_B09_S1_SEMANTIC_DECOMPOSITION_R03_20261117.md");
+   if(fs.existsSync(b09File)){
+    const b09=fs.readFileSync(b09File,"utf8");
+    const b09f=k=>b09.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    assert.equal(b09f("CSS_BASELINE_BLOB"),f04("R04_CSS_BLOB"),
+     "B09 CSS baseline must equal exactly B08 P2 accepted CSS source");
+    const allCss=css.toString("utf8"),offset=allCss.indexOf("/* G10 Chapter IV B09 R03");
+    assert(offset>0&&allCss.indexOf("/* G10 Chapter IV B09 R03",offset+1)===-1,
+     "B09 CSS must add exactly one scoped appendix");
+    assert.equal(blob(allCss.slice(0,offset-1)),f04("R04_CSS_BLOB"),
+     "B08 owner P2 CSS prefix must be byte-for-byte intact");
+    assert.equal(blob(css),b09f("R03_CSS_BLOB"),
+     "Only signed new B09 CSS SHA is allowed");
+   }else assert.equal(blob(css),f04("R04_CSS_BLOB"),
     "B08 scoped CSS SHA must agree with Q18 packet");
    const cssStr=css.toString("utf8"),marker="/* G10 ChIV B08 R04";
    const p=cssStr.indexOf(marker);
@@ -226,6 +240,88 @@ for(const [lesson,row] of rows){
    expected=visualField("R03_CANDIDATE_SOURCE_BLOB");
   }
  }
+ if(lesson==="B09"){
+  const receipt=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B09_S1_SEMANTIC_DECOMPOSITION_R03_20261117.md"),"utf8");
+  const f=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(f("SOURCE_BASELINE_BLOB"),row.candidate,
+   "B09 R03 must extend exact frozen original editorial source");
+  const standard=fs.readFileSync(path.join(root,
+   "prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md"));
+  assert.equal(blob(standard),f("STANDARD_BLOB"),
+   "B09 3+1 source uses one effective signed v3.2.0 standard");
+  const official=source.slice(source.indexOf('=== "Kiến thức SGK"'),source.indexOf('=== "Ví dụ"'));
+  const anchors=[
+   "Định nghĩa — Tích của một vectơ với một số:",
+   "Tính chất của phép nhân vectơ với một số:",
+   "Điều kiện hai vectơ cùng phương:",
+   "Phân tích một vectơ theo hai vectơ không cùng phương",
+   "Phân tích duy nhất theo hai vectơ không cùng phương",
+   "Hệ thức trung điểm – trọng tâm",
+   "Kiến thức cần nhớ — Bài 9:"
+  ];
+  let last=-1;for(const key of anchors){
+   const at=official.indexOf(key);
+   assert(at>last,"B09 outcome/semantic order absent: "+key);last=at;
+  }
+  assert.deepEqual([
+   (official.match(/class="thpt-r4-knowledge-conclusion thpt-r4-concept-card"/g)||[]).length,
+   (official.match(/class="thpt-r4-knowledge-conclusion thpt-r4-rule-card"/g)||[]).length,
+   (official.match(/class="thpt-r4-knowledge-conclusion" role="note"/g)||[]).length,
+   (official.match(/class="thpt-r4-key-formula"/g)||[]).length
+  ],[1,3,1,1],"B09 Q03/X-F.3 exactly meaningful definition/rule/recap/formula roles");
+  for(const key of ["k=0","\\vec u=\\vec0","\\vec a,\\vec b","x\\vec a+y\\vec b",
+   "không cùng phương","duy nhất","trung điểm","trọng tâm"]){
+   assert(official.includes(key),"B09 S1 prerequisite/condition missing "+key);
+  }
+  const discover=source.slice(source.indexOf('=== "Khám phá kiến thức"'),
+   source.indexOf('=== "Kiến thức SGK"'));
+  assert(discover.includes("THPT_G10_B09_SCALAR_MULTIPLE_VECTORS_D5_R01.svg")&&
+   !official.includes("THPT_G10_B09_SCALAR_MULTIPLE_VECTORS_D5_R01.svg")&&
+   official.includes("THPT_G10_B09_DECOMPOSITION_TWO_DIRECTIONS_D5_R03.svg"),
+   "B09 R05: scalar image must be visible in Discovery BEFORE learner tries; decomposition figure stays beside formal proof");
+  assert(discover.indexOf("THPT_G10_B09_SCALAR_MULTIPLE_VECTORS_D5_R01.svg")<
+   discover.indexOf('data-thpt-first-try-id="THPT-G10-CHIV-TRY11"'),
+   "B09 known audit CHIV-09-A may never regress to text-only discovery");
+  const examples=source.slice(source.indexOf('=== "Ví dụ"'),source.indexOf('=== "Lỗi thường gặp"'));
+  assert.equal((examples.match(/^    ### Ví dụ [1-4]\./gm)||[]).length,4,
+   "B09 four distinct worked examples, including mandatory decomposition");
+  assert(examples.includes("Phân tích theo hai vectơ không cùng phương")&&
+   examples.includes("\\overrightarrow{MN}=-\\tfrac12\\vec a+\\tfrac12\\vec b"),
+   "B09 noncollinear decomposition must be solved and verified, not only noted");
+  const css=fs.readFileSync(path.join(root,
+   "docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"));
+  assert.equal(blob(css),f("R03_CSS_BLOB"),
+   "B09 scoped 3+1 CSS exact source SHA required");
+  const cssText=css.toString("utf8"),marker="/* G10 Chapter IV B09 R03";
+  const at=cssText.indexOf(marker);
+  assert(at>0&&cssText.indexOf(marker,at+1)<0,"B09 one CSS append only");
+  assert.equal(blob(cssText.slice(0,at-1)),f("CSS_BASELINE_BLOB"),
+   "All owner P2-accepted B01–B08 CSS bytes must remain identical");
+  const svg=fs.readFileSync(path.join(root,
+   "docs/assets/images/thpt/THPT_G10_B09_DECOMPOSITION_TWO_DIRECTIONS_D5_R03.svg"));
+  assert.equal(blob(svg),f("R03_SVG_BLOB"),
+   "B09 desktop SVG must match signed geometry source");
+  const mobile=fs.readFileSync(path.join(root,
+   "docs/assets/images/thpt/THPT_G10_B09_DECOMPOSITION_MOBILE_D5_R03.svg"));
+  assert.equal(blob(mobile),f("R03_MOBILE_SVG_BLOB"),
+   "B09 mobile SVG must match signed 390px-friendly source");
+  assert(official.includes('media="(max-width: 600px)"')&&
+   official.includes("THPT_G10_B09_DECOMPOSITION_MOBILE_D5_R03.svg"),
+   "B09 mobile viewport requires distinct decomposition picture source");
+  assert(svg.toString("utf8").includes("<title")&&svg.toString("utf8").includes("<desc")&&
+   !svg.toString("utf8").includes("<script"),"B09 SVG accessible/safe");
+  assert(receipt.includes("BLOCKED_BY_AUTHORING")&&receipt.includes("NO_CANONICAL_DECOMPOSITION_ITEM"),
+   "B09 source QA is technical only; academic release must remain HOLD");
+  const r05=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHIV_B09_CANONICAL_Q18_R05_20261117.md"),"utf8");
+  const q=k=>r05.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(q("BASELINE_R03_SOURCE_BLOB"),f("R03_SOURCE_BLOB"),
+   "B09 Q18 R05 must retain immutable earlier signed R03");
+  assert(r05.includes("CHIV-09-A")&&r05.includes("Q18_AUTHOR_SELF_VERIFIED")&&
+    r05.includes("THPT-G10-B09-P07"),"B09 R05 Q18 source/P07/audit gate proof");
+  expected=q("R05_SOURCE_BLOB");
+ }
  assert.equal(blob(source),expected,lesson+" exact final Q18 academic source receipt");
  assert.equal(candidateG10KnowledgeBlob(n),expected,lesson+" Q18 source router selects correct immutable snapshot");
  for(const key of ["data-thpt-first-try-id","data-thpt-help-id","data-outcome-id"])
@@ -246,7 +342,7 @@ for(const [lesson,row] of rows){
   lesson+" official S1 book headings exactly 2.1.., no double SGK");
  assert(official.startsWith('=== "Kiến thức SGK"\n\n    ### 2.1.'),
   lesson+" SGK tab must start directly at 2.1, not commentary");
- assert.equal((discover.match(/^    ### /gm)||[]).length,(lesson==="B07"||lesson==="B08")?5:3,lesson+" authentic discovery stages");
+ assert.equal((discover.match(/^    ### /gm)||[]).length,(lesson==="B07"||lesson==="B08")?5:lesson==="B09"?4:3,lesson+" authentic discovery stages");
  assert(!official.includes("    ### Kiến thức SGK"),lesson+" duplicate SGK heading");
  for(const part of [discover.slice('=== "Khám phá kiến thức"\n'.length),official.slice('=== "Kiến thức SGK"\n'.length)]){
   const unindented=part.split("\n").filter(l=>l.trim()&&!l.startsWith("    "));
@@ -265,13 +361,21 @@ for(const [lesson,row] of rows){
   else assert(official.includes("THPT_G10_B07_PARALLELOGRAM_EQUAL_OPPOSITE_D5_R01.svg")&&
    !discover.includes("THPT_G10_B07_PARALLELOGRAM_EQUAL_OPPOSITE_D5_R01.svg"),
     "B07 keep source-matched exact-answer visual after first attempts");
+ }else if(lesson==="B09"){
+  assert.equal((examples.match(/^    ### Ví dụ [1-4]\./gm)||[]).length,4,
+   "B09 S1 extra decomposition example must be a fourth distinct, solved example");
+  for(const label of ["**Hướng giải:**","**Giải:**","**Tự kiểm:**"])
+   assert.equal(examples.split(label).length-1,4,
+    "B09 all four worked examples must include "+label);
+  assert(examples.includes("Ví dụ 4. Phân tích theo hai vectơ không cùng phương"),
+   "B09 missing required S1 decomposition learner example");
  }else{
   assert.equal(examples,previous.slice(previous.indexOf('=== "Ví dụ"'),previous.indexOf('=== "Lỗi thường gặp"')),
    lesson+" previously approved three worked examples changed");
   assert.equal((examples.match(/^    ### Ví dụ /gm)||[]).length,3,
    lesson+" previous three original examples stay intact");
  }
- if(n<=10&&n!==8&&n!==7){
+ if(n<=10&&![7,8,9].includes(n)){
   assert.deepEqual(tex(source),tex(previous),lesson+" original mathematical expressions changed beyond reordering");
  }else if(n===11){
   assert(official.includes("có thể nhận một giá trị tùy ý từ $0^\\circ$ đến $180^\\circ$"),"B11 original SGK zero-angle range");
@@ -281,11 +385,16 @@ for(const [lesson,row] of rows){
   assert.equal((last.match(/data-thpt-first-try-id/g)||[]).length,1,
    "B11 original extra transfer First Try remains in mistakes tab");
  }else{
-  assert(["B07","B08"].includes(lesson),"Only source-locked B07/B08 enrichment skips legacy TeX reorder check");
+  assert(["B07","B08","B09"].includes(lesson),"Only source-locked B07/B08/B09 enrichment skips legacy TeX reorder check");
   if(lesson==="B07"){
    for(const formula of ["|\\overrightarrow{AB}|=AB\\ge0",
     "\\overrightarrow{AB}=\\overrightarrow{DC}","\\overrightarrow{AA}=\\vec0"])
     assert(official.includes(formula),"B07 original required SGK mathematics preserved: "+formula);
+  }else if(lesson==="B09"){
+   for(const required of [
+    "\\vec u=\\vec0", "k(\\vec u+\\vec v)=k\\vec u+k\\vec v",
+    "x\\vec a+y\\vec b", "\\overrightarrow{MN}=-\\tfrac12\\vec a+\\tfrac12\\vec b"
+   ]) assert(source.includes(required),"B09 required original/new S1 maths missing: "+required);
   }else{
   for(const required of [
    "\\overrightarrow{AB}+\\overrightarrow{BC}=\\overrightarrow{AC}",

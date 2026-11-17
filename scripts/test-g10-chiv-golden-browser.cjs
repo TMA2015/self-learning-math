@@ -15,7 +15,7 @@ const goldenCss="44442773ac31eb1a46f0cab699a7d2c7974a5f37";
 const sources={
  7:"e1487ce01e81738228ae69d4d87cbdc56b5e0c69",
  8:"22e53396caf7753e813c492615a491e1f24cc9fd",
- 9:"2529b915e4089862e1a48e685ba5dc88d5450558",
+ 9:"a28fa50f223f260c8fded1f42b13065d3e047d63",
  10:"ceaa76688e73274c9cf2d3116c41c6d4d0ac2726",
  11:"2a1381689f66d1f8c752bdbf1c29a9ef49a4e073"
 };
@@ -63,9 +63,21 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
   const semField=k=>semantic.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(semField("BASELINE_R05_B07_CSS_BLOB"),r05field("R05_CSS_GIT_BLOB"),
     "B08 must preserve exact P2-accepted B07 CSS");
-  assert.equal(blob(cssFile),semField("R04_CSS_BLOB"),
-    "B08 exact 3+1 CSS Git blob signed by R04 receipt");
+  const b09=fs.readFileSync(root+
+    "/prototypes/thpt/ux795/G10_CHIV_B09_S1_SEMANTIC_DECOMPOSITION_R03_20261117.md","utf8");
+  const b09f=k=>b09.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(b09f("CSS_BASELINE_BLOB"),semField("R04_CSS_BLOB"),
+    "B09 3+1 must extend immutable owner-accepted B08 CSS");
+  assert.equal(blob(cssFile),b09f("R03_CSS_BLOB"),
+    "B09 exact append-only CSS signed by academic Q18 receipt");
   const cssTextR05=cssFile.toString("utf8"),markerR05="/* G10 ChIV B07 R05";
+  const b09Marker="/* G10 Chapter IV B09 R03",b09Pos=cssTextR05.indexOf(b09Marker);
+  assert(b09Pos>0&&cssTextR05.indexOf(b09Marker,b09Pos+1)===-1,
+    "B09 must have one and only one scoped 3+1 palette appendix");
+  assert.equal(blob(cssTextR05.slice(0,b09Pos-1)),semField("R04_CSS_BLOB"),
+    "All CSS of owner-P2 B01–B08 immutable, B09 append only");
+  assert(cssTextR05.includes(':has([data-thpt-first-try-id="THPT-G10-CHIV-TRY11"])'),
+    "B09 styles cannot target unrelated lesson or grade");
   const b08Marker="/* G10 ChIV B08 R04",b08Start=cssTextR05.indexOf(b08Marker);
   assert(b08Start>0&&cssTextR05.indexOf(b08Marker,b08Start+1)===-1,
     "B08 only one scoped 3+1 CSS appendix");
@@ -137,7 +149,10 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
          "1.3. Vì sao cùng phương vẫn có thể ngược hướng?",
          "1.4. Hai mũi tên ở hai vị trí khác nhau khi nào bằng nhau?",
          "1.5. Vì sao quay lại điểm xuất phát tạo ra vectơ-không?"
-        ]:["1.1. Cùng tìm hiểu","1.2. Ví dụ trực quan","1.3. Thuật ngữ, kiến thức và kỹ năng"],
+        ]:lesson===9?["1.1. Cùng tìm hiểu","1.2. Ví dụ trực quan",
+          "1.3. Vì sao phải phân tích một vectơ?",
+          "1.4. Thuật ngữ, kiến thức và kỹ năng"]:
+         ["1.1. Cùng tìm hiểu","1.2. Ví dụ trực quan","1.3. Thuật ngữ, kiến thức và kỹ năng"],
        where+" complete concept-first discovery stages");
      assert.equal(await blocks.nth(0).locator("[data-thpt-first-try-id]").count(),
        ({7:5,8:5,9:5,10:6,11:4})[lesson],where+" original First Tries moved to Discovery");
@@ -156,11 +171,11 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
      assert((await blocks.nth(0).locator(":scope > h3").allInnerTexts()).every((v,i)=>v.trim().startsWith("1."+(i+1)+". ")),
       where+" discovery headings are visual-only numbered");
      const examples=await blocks.nth(2).locator(":scope > h3").allInnerTexts();
-     assert.equal(examples.length,[7,8].includes(lesson)?4:3,where+" B07/B08 have four distinct worked examples");
+     assert.equal(examples.length,[7,8,9].includes(lesson)?4:3,where+" owner-scoped B07/B08 and B09 S1 have four worked examples");
      assert(examples.every((v,i)=>v.trim().startsWith("3."+(i+1)+". Ví dụ "+(i+1)+([7,8].includes(lesson)?" —":". "))),
       where+" numbered visual example headings");
-     assert.equal(await blocks.nth(2).locator(".thpt-g10-example-solution").count(),[7,8].includes(lesson)?4:3,
-      where+" original or enriched solutions grouped in owner Golden panel");
+     assert.equal(await blocks.nth(2).locator(".thpt-g10-example-solution").count(),[7,8,9].includes(lesson)?4:3,
+      where+" original or S1-enriched solutions grouped in Golden panel");
      assert.equal(await article.locator(".thpt-r4-lead").count(),0,where+" no redundant introduction");
      assert.equal(await article.locator(".thpt-r4-footnote").count(),1,where+" only existing source footnote retained");
      assert.equal(await blocks.nth(3).locator(".thpt-r4-footnote").count(),1,where+" source note only on last tab");
@@ -348,6 +363,65 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
        await page.keyboard.press("ArrowLeft");
        assert(await radios.nth(0).isChecked(),where+" arrow left returns to tab 1");
       }
+      if(lesson===9){
+       const scalarDiscovery=blocks.nth(0).locator(
+        'img[src*="THPT_G10_B09_SCALAR_MULTIPLE_VECTORS_D5_R01.svg"]');
+       assert.equal(await scalarDiscovery.count(),1,
+        where+" historic audit CHIV-09-A: real scalar figure MUST be shown in Discovery");
+       assert.equal(await blocks.nth(1).locator(
+        'img[src*="THPT_G10_B09_SCALAR_MULTIPLE_VECTORS_D5_R01.svg"]').count(),0,
+        where+" no second figure clone in SGK formal tab");
+       await labels.nth(0).click();
+       await scalarDiscovery.scrollIntoViewIfNeeded();
+       await scalarDiscovery.evaluate(async el=>{if(el.decode)await el.decode();});
+       assert(await scalarDiscovery.evaluate(el=>el.complete&&el.naturalWidth>0),
+        where+" B09 early scalar picture accessible and decodes");
+       const helpText=await blocks.nth(3).locator("details.tip").allInnerTexts();
+       assert.equal(helpText.length,2,where+" exactly two original B09 D6 HELP placements");
+       assert(helpText.every(t=>!/(?:B09-[CP][0-9]{2}|HELP_ID|Assessment safety|Final Submit|Không clone câu)/.test(t)),
+        where+" learner-facing remediation must never expose internal QA/item identifiers");
+       assert(helpText[0].includes("Vì sao sai?")&&helpText[1].includes("Vì sao sai?")&&
+        helpText.every(t=>t.includes("Ôn lại:")),
+        where+" B09 both D6 sections need concrete mathematical diagnosis and recovery");
+       const knowledge=blocks.nth(1);
+       const defs=knowledge.locator(".thpt-r4-knowledge-conclusion.thpt-r4-concept-card");
+       const rules=knowledge.locator(".thpt-r4-knowledge-conclusion.thpt-r4-rule-card");
+       const recap=knowledge.locator(".thpt-r4-knowledge-conclusion:not(.thpt-r4-concept-card):not(.thpt-r4-rule-card)");
+       const formulas=knowledge.locator(".thpt-r4-key-formula");
+       assert.deepEqual([await defs.count(),await rules.count(),await recap.count(),await formulas.count()],
+        [1,3,1,1],where+" B09 real 3+1 semantic roles by mathematical outcome");
+       assert((await defs.innerText()).includes("Định nghĩa — Tích của một vectơ với một số")&&
+        (await rules.allInnerTexts()).some(s=>s.includes("Phân tích duy nhất theo hai vectơ không cùng phương")),
+        where+" mandatory decomposition and scalar definition visible");
+       await labels.nth(1).click();
+       for(const scheme of ["default","slate"]){
+        await page.evaluate(s=>document.body.setAttribute("data-md-color-scheme",s),scheme);
+        const backgrounds=await Promise.all([defs.first(),rules.first(),recap.first(),formulas.first()]
+         .map(z=>z.evaluate(el=>getComputedStyle(el).backgroundColor)));
+        assert.deepEqual(backgrounds,scheme==="slate"?
+         ["rgb(25, 61, 54)","rgb(32, 53, 81)","rgb(74, 58, 37)","rgba(0, 0, 0, 0)"]:
+         ["rgb(232, 247, 242)","rgb(234, 241, 252)","rgb(255, 243, 213)","rgba(0, 0, 0, 0)"],
+         where+" B09 formal/blue/recap/white palette correct "+scheme);
+       }
+       await page.evaluate(()=>document.body.removeAttribute("data-md-color-scheme"));
+       assert.equal(await formulas.locator("div.arithmatex").count(),1,
+        where+" B09 centroid/midpoint key formula renders MathJax in white frame");
+       assert(await formulas.locator("div.arithmatex").first().isVisible(),
+        where+" B09 math formula actually visible in Knowledge");
+       const fig=knowledge.locator('img[src*="THPT_G10_B09_DECOMPOSITION_TWO_DIRECTIONS_D5_R03.svg"]');
+       assert.equal(await fig.count(),1,where+" authored decomposition SVG beside S1 explanation");
+       await fig.scrollIntoViewIfNeeded();await fig.evaluate(async el=>{if(el.decode)await el.decode();});
+       assert(await fig.evaluate(el=>el.complete&&el.naturalWidth>0),
+        where+" B09 decomposition SVG decodes and is readable");
+       const decoded=await fig.evaluate(el=>el.currentSrc||el.src);
+       assert(decoded.includes(width<=600?
+        "THPT_G10_B09_DECOMPOSITION_MOBILE_D5_R03.svg":
+        "THPT_G10_B09_DECOMPOSITION_TWO_DIRECTIONS_D5_R03.svg"),
+        where+" B09 serves matching responsive image, not tiny desktop labels on mobile");
+       assert.equal(await blocks.nth(2).locator('h3').count(),4,
+        where+" B09 four worked examples include decomposition");
+       await labels.nth(0).click();
+      }
       // Right TOC cross-tab link: tab 3 -> hidden Knowledge tab 2.
      const tocId=await blocks.nth(1).locator("h3[id]").first().getAttribute("id");
      await labels.nth(2).click();
@@ -368,9 +442,63 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
      assert.equal(await page.locator("[data-g10-chapter-selfcheck]").count(),0,where+" no private independent readiness");
      cases++;console.log("PASS "+where+" Golden UI source-locked, TOC, 44px buttons and Q16 intact");
     }
+    // G3 B09-RUNTIME-01: actual PUBLIC Practice modal, item 7, answer disclosure,
+    // deep-link and math on three real Chromium viewports. Static VM is insufficient.
+    const hub=base+"/thpt-preview/sgk/chuong-iv/luyen-tap/";
+    let response=await page.goto(hub,{waitUntil:"domcontentloaded",timeout:60000});
+    assert(response?.ok(),"B09-P07@"+width+" Chapter IV public Practice hub reachable");
+    await page.locator('[data-thpt-open-quiz="b9-practice"]').click();
+    await page.waitForFunction(()=>document.querySelector(".thpt-r4-reviewed-formative-card")?.dataset.thptCanonicalItem==="THPT-G10-B09-P01");
+    const dlg=page.locator("dialog.thpt-r4-practice-dialog");
+    assert(await dlg.evaluate(el=>el.open),"B09-P07@"+width+" modal is open");
+    const nav=dlg.locator(".thpt-r4-modal-question-nav button");
+    assert.equal(await nav.count(),7,"B09-P07@"+width+" original six plus P07, exactly seven");
+    await nav.nth(6).click();
+    const item=dlg.locator('.thpt-r4-reviewed-formative-card[data-thpt-canonical-item="THPT-G10-B09-P07"]');
+    assert.equal(await item.count(),1,"B09-P07@"+width+" exact item selected through learner navigation");
+    assert.equal(await item.getAttribute("data-thpt-exposure-role"),"SGK_PRACTICE");
+    assert((await item.locator("h3").innerText()).includes("tam giác"),"B09-P07@"+width+" stem visible");
+    assert.equal(await item.locator('textarea[aria-label="Lời giải của em"]').count(),1,
+     "B09-P07@"+width+" actual unscored written-answer field");
+    const openDetails=item.locator("details");
+    assert.equal(await openDetails.count(),2,"B09-P07@"+width+" separate voluntary hint/solution");
+    assert.deepEqual(await openDetails.evaluateAll(nodes=>nodes.map(el=>el.open)),[false,false],
+     "B09-P07@"+width+" answers and hints CLOSED before learner action");
+    await item.locator(".thpt-r4-formative-submit").click();
+    assert((await item.locator('[role="status"]').innerText()).includes("Hãy nhập"),
+     "B09-P07@"+width+" no empty-answer comparison");
+    assert.equal(await openDetails.nth(1).evaluate(el=>el.open),false,
+     "B09-P07@"+width+" empty submit does not reveal solution");
+    await item.locator("textarea").fill("MN = -a/6 - b/2; AB,AC khong cung phuong.");
+    await item.locator(".thpt-r4-formative-submit").click();
+    assert((await item.locator('[role="status"]').innerText()).includes("chưa chấm tự động"),
+     "B09-P07@"+width+" NO auto grading / Mastery for free text");
+    assert.equal(await openDetails.nth(1).evaluate(el=>el.open),true,
+     "B09-P07@"+width+" solution shown only after student attempts");
+    assert((await openDetails.nth(1).innerText()).includes("duy nhất"),
+     "B09-P07@"+width+" includes unique coefficients explanation");
+    await page.waitForFunction(()=>!!document.querySelector(
+     '.thpt-r4-reviewed-formative-card[data-thpt-canonical-item="THPT-G10-B09-P07"] mjx-container'),
+     null,{timeout:20000});
+    assert.equal(await dlg.locator("[data-thpt-readiness],[data-mastery-credit]").count(),0,
+     "B09-P07@"+width+" no private readiness or mastery UI");
+    cases++;
+    console.log("PASS B09-P07@"+width+" modal practice answer disclosure and MathJax");
+    response=await page.goto(hub+"?item=THPT-G10-B09-P07",{waitUntil:"domcontentloaded",timeout:60000});
+    assert(response?.ok(),"B09-P07@"+width+" deep-link returns Practice hub");
+    await page.waitForFunction(()=>document.querySelector(
+      '.thpt-r4-reviewed-formative-card[data-thpt-canonical-item="THPT-G10-B09-P07"]'),
+      null,{timeout:20000});
+    const deep=page.locator('.thpt-r4-reviewed-formative-card[data-thpt-canonical-item="THPT-G10-B09-P07"]');
+    assert.equal(await deep.count(),1,"B09-P07@"+width+" correct question auto-opened from URL");
+    assert.equal(await deep.locator("details[open]").count(),0,
+     "B09-P07@"+width+" deep-link answer stays closed");
+    assert.equal(await deep.locator('textarea[aria-label="Lời giải của em"]').inputValue(),"",
+     "B09-P07@"+width+" new navigation has no pre-filled answer");
+    cases++;console.log("PASS B09-P07@"+width+" deep-link cannot pre-expose solutions");
    }finally{await page.close();}
   }
  }finally{await browser.close();}
- assert.equal(cases,15);
- console.log("PASS 15/15 G10 Chapter IV Golden browser cases; all 5 academic source blobs locked. NO DEPLOY.");
+ assert.equal(cases,21);
+ console.log("PASS 21/21 G10 Chapter IV Golden browser cases (15 Knowledge + 6 B09 P07 real runtime/deep-link); all 5 academic source blobs locked. NO DEPLOY.");
 })().catch(e=>{console.error(e.stack||e);process.exitCode=1;});

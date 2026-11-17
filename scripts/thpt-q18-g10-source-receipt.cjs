@@ -309,6 +309,53 @@ function expectedG10KnowledgeBlob(lesson,legacy){
   return candidate;
  }
 
+ if(name==="B09"){
+  const row=chivEditorialReceiptRows().get("B09");
+  assert(row&&row.baseline===blobs[1],
+   "B09 R03 source chain must extend immutable ChIV original baseline");
+  const file=path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B09_S1_SEMANTIC_DECOMPOSITION_R03_20261117.md");
+  if(fs.existsSync(file)){
+   const receipt=fs.readFileSync(file,"utf8");
+   const f=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(f("SOURCE_BASELINE_BLOB"),row.candidate,
+    "B09 R03 academic content must extend published exact editorial source");
+   assert.equal(f("CSS_BASELINE_BLOB"),"0cdc618cf9a070f1b1ed50566877f5de0d025ee8",
+    "B09 R03 style must extend owner P2-accepted B08 CSS");
+   const next=f("R03_SOURCE_BLOB");
+   assert(/^[a-f0-9]{40}$/.test(next||"")&&next!==row.candidate,
+    "B09 R03 requires a distinct signed source snapshot");
+   for(const word of ["B09-F01","B09-F02","FORMAL_DEFINITION","FORMAL_RULE",
+     "MANDATORY_RECAP","KEY_FORMULA","BLOCKED_BY_AUTHORING",
+     "NO_CANONICAL_DECOMPOSITION_ITEM","THPT-G10-CHIV-TRY11"]){
+    assert(receipt.includes(word),"B09 academic receipt missing "+word);
+   }
+   // R05 is an additive self-QA receipt on the SAME current B09 canonical
+   // manuscript; R03 stays a frozen historical checkpoint, not a competing draft.
+   const unifiedPath=path.join(root,
+    "prototypes/thpt/ux795/G10_CHIV_B09_CANONICAL_Q18_R05_20261117.md");
+   if(fs.existsSync(unifiedPath)){
+    const locked=fs.readFileSync(unifiedPath,"utf8");
+    const field=k=>locked.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    assert.equal(field("BASELINE_R03_SOURCE_BLOB"),next,
+     "B09 R05 must follow exact frozen R03 academic source");
+    const final=field("R05_SOURCE_BLOB"),master=field("ONE_CANONICAL_LESSON_BLOB");
+    assert(/^[0-9a-f]{40}$/.test(final||"")&&final!==next,
+     "B09 revised discovery figure needs a distinct SHA");
+    const current=fs.readFileSync(path.join(root,
+     "prototypes/thpt/content-drafts/THPT_G10_CHIV_B09_CANONICAL.md"));
+    const blob=bytes=>require("node:crypto").createHash("sha1").update(Buffer.from("blob "+bytes.length+String.fromCharCode(0))).update(bytes).digest("hex");
+    assert.equal(blob(current),master,"B09 must use the ONE SHA-locked academic manuscript");
+    for(const token of ["Q18_AUTHOR_SELF_VERIFIED","CHIV-09-A","THPT-G10-B09-P07",
+      "FORMATIVE_ONLY","OWNER_P2_PENDING","B09-RUNTIME-01"])
+     assert(locked.includes(token),"B09 single-source Q18 receipt missing "+token);
+    return final;
+   }
+   return next;
+  }
+  return row.candidate;
+ }
+
  const chiv=chivEditorialReceiptRows().get(name);
  const chv=chvEditorialReceiptRows().get(name);
  assert(!(chiv&&chv),name+" duplicate editorial receipts");

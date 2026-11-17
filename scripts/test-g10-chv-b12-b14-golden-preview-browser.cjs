@@ -69,10 +69,19 @@ const blob=data=>{
    const r04field=k=>r04.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
    assert.equal(r04field("BASELINE_R05_B07_CSS_BLOB"),r05field("R05_CSS_GIT_BLOB"),
     "B08 R04 CSS extends exactly accepted B07 without retroactive redesign");
-   assert.equal(blob(css),r04field("R04_CSS_BLOB"),
-    "B08 3+1 CSS confined to B08, ChV unchanged");
+   const b09=fs.readFileSync(root+
+    "/prototypes/thpt/ux795/G10_CHIV_B09_S1_SEMANTIC_DECOMPOSITION_R03_20261117.md","utf8");
+   const b09field=k=>b09.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(b09field("CSS_BASELINE_BLOB"),r04field("R04_CSS_BLOB"),
+    "B09 scoped CSS must extend owner P2 B08 exact Golden snapshot");
+   assert.equal(blob(css),b09field("R03_CSS_BLOB"),
+    "B09 only exact scoped CSS, ChV visual source unchanged");
    const cssText=css.toString("utf8"),cut=cssText.indexOf("/* G10 ChIV B07 R05");
    const b08cut=cssText.indexOf("/* G10 ChIV B08 R04");
+   const b09cut=cssText.indexOf("/* G10 Chapter IV B09 R03");
+   assert(b09cut>b08cut,"B09 scoped style follows previously accepted B08");
+   assert.equal(blob(cssText.slice(0,b09cut-1)),r04field("R04_CSS_BLOB"),
+    "B09 append-only style protects all previously accepted B01–B08");
    assert(b08cut>cut,"B08-only style must follow immutable B07 accepted CSS");
    assert.equal(blob(cssText.slice(0,b08cut-1)),r05field("R05_CSS_GIT_BLOB"),
     "B08 append-only semantics may not modify B01–B07 accepted Golden stylesheet");

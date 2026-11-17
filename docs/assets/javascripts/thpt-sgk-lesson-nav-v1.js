@@ -325,6 +325,8 @@ const polishG10ChapterIV=(article)=>{
    !labels.every((l,i)=>l.textContent.trim()===names[i]))return;
  article.classList.add("thpt-g10-chiv-golden");
  const isEnrichedEarlyVectors=/\/chuong-iv\/bai-(?:7|8)\/?$/.test(location.pathname);
+ const isEnrichedB09=/\/chuong-iv\/bai-9\/?$/.test(location.pathname)&&
+  Boolean(article.querySelector('[data-thpt-first-try-id="THPT-G10-CHIV-TRY11"]'));
  const section=["1. Khám phá kiến thức","2. Kiến thức SGK","3. Ví dụ",
    "4. Lỗi thường gặp và cách tự khắc phục"];
  blocks.forEach((block,i)=>{
@@ -361,6 +363,33 @@ const polishG10ChapterIV=(article)=>{
      break;
     }
     node=node.nextElementSibling;
+   }
+  }
+ }
+ // B09 R03 source explicitly separates "Đề / Hướng giải / Giải / Tự kiểm".
+ // Group only its solved mathematical steps, preserving all existing DOM
+ // nodes and the student's own method-first reasoning outside the panel.
+ // Fail closed on other lessons; no assessment state/data touched.
+ if(isEnrichedB09){
+  const isLead=(node,re)=>node?.tagName==="P"&&
+   node.firstElementChild?.tagName==="STRONG"&&
+   re.test(node.firstElementChild.textContent.trim());
+  for(const heading of blocks[2].querySelectorAll(":scope > h3")){
+   let start=heading.nextElementSibling;
+   while(start&&start.tagName!=="H3"&&!isLead(start,/^Giải\s*:/iu)){
+    start=start.nextElementSibling;
+   }
+   if(!start||start.tagName==="H3")continue;
+   const box=document.createElement("div");
+   box.className="thpt-g10-example-solution";
+   box.setAttribute("role","group");
+   box.setAttribute("aria-label","Lời giải ví dụ");
+   start.before(box);
+   let current=start;
+   while(current&&current.tagName!=="H3"&&!isLead(current,/^Tự kiểm\s*:/iu)){
+    const next=current.nextElementSibling;
+    box.append(current);
+    current=next;
    }
   }
  }

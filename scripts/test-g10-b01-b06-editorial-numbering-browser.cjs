@@ -104,7 +104,18 @@ function checkSHA(){
     const field06=k=>b06.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
     assert.equal(field06("BASELINE_CSS_GIT_BLOB"),field05("CANDIDATE_CSS_GIT_BLOB"),
       "B06 CSS must extend B05 P2 accepted CSS without rewriting history");
-    assert.equal(hash(data),field06("CANDIDATE_CSS_GIT_BLOB"),"B06 scoped teal concept CSS Q18");
+    const b09Receipt=fs.readFileSync(path.join(root,
+      "prototypes/thpt/ux795/G10_CHIV_B09_S1_SEMANTIC_DECOMPOSITION_R03_20261117.md"),"utf8");
+    const f09=k=>b09Receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    const cssText=data.toString("utf8"),b07cut=cssText.indexOf("/* G10 ChIV B07 R05");
+    const b09cut=cssText.indexOf("/* G10 Chapter IV B09 R03");
+    assert(b07cut>0&&b09cut>b07cut,"B09 CSS is append-only after B07/B08 accepted Golden styles");
+    assert.equal(hash(cssText.slice(0,b07cut-1)),field06("CANDIDATE_CSS_GIT_BLOB"),
+      "Original B01–B06 scoped Golden CSS prefix must remain source-identical");
+    assert.equal(hash(cssText.slice(0,b09cut-1)),f09("CSS_BASELINE_BLOB"),
+      "B09 CSS only follows owner P2-accepted B08 source without other changes");
+    assert.equal(hash(data),f09("R03_CSS_BLOB"),
+      "B09-only CSS exact source lock; B01–B06 frozen prefix remains intact");
     assert(data.toString("utf8").includes('data-thpt-first-try-id="THPT-G10-CHIII-TRY06"'),
       "Only B06 canonical Knowledge marker may add CSS");
    assert(data.toString("utf8").includes('data-thpt-first-try-id="THPT-G10-CHIII-TRY01"'),
@@ -145,8 +156,13 @@ function checkSHA(){
   const field07=k=>b07.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(field07("JS_PREVIOUS_BLOB"),field08("JS_CANDIDATE_BLOB"),
     "B07 scoped UI must extend exact B08 accepted source-locked JS");
-  assert.equal(hash(js),field07("JS_CANDIDATE_BLOB"),
-    "B07 scoped Golden solution cards and keyboard must match final Q18 JS");
+  const b09=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B09_S1_SEMANTIC_DECOMPOSITION_R03_20261117.md"),"utf8");
+ const f09=k=>b09.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+ assert.equal(f09("NAV_JS_BASELINE_BLOB"),field07("JS_CANDIDATE_BLOB"),
+   "B09-only Golden solution JS must extend B07/B08 accepted navigation runtime");
+ assert.equal(hash(js),f09("NAV_JS_R03_BLOB"),
+   "B09 exact scoped solution grouping JS must match Q18 receipt");
 }
 const names=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
 const ch=n=>n<=2?"i":n<=4?"ii":"iii";

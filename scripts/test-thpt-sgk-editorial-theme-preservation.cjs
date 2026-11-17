@@ -37,15 +37,39 @@ function verify(files){
    const f=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
    assert.equal(f("BASELINE_R05_B07_CSS_BLOB"),hash,
     "B08 owner 3+1 source-lock must build on accepted B07 CSS, not stale 12/11 fixture");
-   assert.equal(sha(actual),f("R04_CSS_BLOB"),
-    "B08 only exact approved scoped CSS may extend existing Golden palette");
+   const b09=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHIV_B09_S1_SEMANTIC_DECOMPOSITION_R03_20261117.md"),"utf8");
+   const b09f=k=>b09.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(b09f("CSS_BASELINE_BLOB"),f("R04_CSS_BLOB"),
+    "B09 owner-pending CSS must extend exact B08 P2-accepted snapshot");
+   assert.equal(sha(actual),b09f("R03_CSS_BLOB"),
+    "B09 exact scoped candidate CSS source-lock must be checked");
    const txt=actual.toString("utf8"),at=txt.indexOf("/* G10 ChIV B08 R04");
+   const b09At=txt.indexOf("/* G10 Chapter IV B09 R03");
+   assert(b09At>at&&txt.indexOf("/* G10 Chapter IV B09 R03",b09At+1)<0,
+    "Only one B09 3+1 CSS appendix, after immutable B08");
+   assert.equal(sha(txt.slice(0,b09At-1)),f("R04_CSS_BLOB"),
+    "All B01–B08 style bytes must remain immutable before B09 append");
    assert(at>0&&txt.indexOf("/* G10 ChIV B08 R04",at+1)<0,
     "B08 only one owner-approved 3+1 append");
    assert.equal(sha(txt.slice(0,at-1)),hash,
     "B01–B07 production CSS source is byte-for-byte unchanged");
+  }else if(name==="docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js"){
+   const receipt=fs.readFileSync(path.join(root,
+     "prototypes/thpt/ux795/G10_CHIV_B09_S1_SEMANTIC_DECOMPOSITION_R03_20261117.md"),"utf8");
+   const f=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(f("NAV_JS_BASELINE_BLOB"),hash,
+     "B09-only DOM grouping must extend owner P2-accepted lesson-nav JS exactly");
+   assert.equal(sha(actual),f("NAV_JS_R03_BLOB"),
+     "Only signed B09-only solution-grouping JS change permitted in this PR");
+   const js=actual.toString("utf8");
+   assert(js.includes('const isEnrichedB09=/')&&
+     js.includes('data-thpt-first-try-id="THPT-G10-CHIV-TRY11"')&&
+     js.includes("if(isEnrichedB09){")&&
+     js.includes('box.className="thpt-g10-example-solution"'),
+     "B09 solution grouping must be route- and canonical-scoped");
   }else assert.equal(sha(actual),hash,
-    "Owner-approved current G10 B01–B07 baseline must NOT change in governance PR: "+name);
+    "Owner-approved current G10 B01–B08 baseline must NOT change outside B09: "+name);
  }
  return true;
 }
@@ -68,5 +92,9 @@ const mutant={...files,["docs/assets/stylesheets/thpt-r4-preview.css"]:Buffer.co
 assert.throws(()=>verify(mutant),/baseline must NOT change/,"style mutation must FAIL");
 const modified={...files,["docs/thpt-preview/sgk/chuong-i/bai-1.md"]:Buffer.concat([files["docs/thpt-preview/sgk/chuong-i/bai-1.md"],Buffer.from("\n# demo source drift\n")])};
 assert.throws(()=>verify(modified),/baseline must NOT change/,"source mutation must FAIL");
+const jsPath="docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js";
+const jsMutant={...files,[jsPath]:Buffer.concat([files[jsPath],Buffer.from("\n/* unauthorized JS change */\n")])};
+assert.throws(()=>verify(jsMutant),/Only signed B09-only solution-grouping JS change permitted/,
+ "B09 route-scoped UI JS must fail on any unsigned mutation");
 console.log("PASS OWNER GOLDEN IMMUTABILITY: original config/JS and G10 B01–B06 untouched; B07 CSS prefix exact; owner-approved B08-only appendix. No demo CSS imported. Negative drift tests 2/2 FAIL as intended.");
 console.log("This is NOT browser color/font-size/spacing QA. Future chapter migrations require visual AP1–AP5 at 390/820/1440, P1/P2 and owner release approval.");

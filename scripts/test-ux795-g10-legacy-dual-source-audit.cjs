@@ -73,14 +73,36 @@ for(const [name,chapter,num]of specs){
  if(name==="B09"){
   const a=s.indexOf('=== "Kiến thức SGK"'),b=s.indexOf('=== "Ví dụ"',a);
   assert(a>=0&&b>a,"B09 missing Knowledge area");
-  const actual=[...s.slice(a,b).matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]|\$([^$]+)\$/g)]
+  const originalStart=base.indexOf('=== "Kiến thức SGK"');
+  const originalEnd=base.indexOf('=== "Ví dụ"',originalStart);
+  assert(originalStart>=0&&originalEnd>originalStart,"B09 historic main S1 source intact");
+  const historic=[...base.slice(originalStart,originalEnd).matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]|\$([^$]+)\$/g)]
     .map(x=>(x[1]??x[2]??x[3]).trim().replace(/\s+/g," "));
-  assert(actual.some((_,i)=>i+30<=actual.length&&frozen.every((v,j)=>actual[i+j]===v)),
-    "B09 protected original 30 math expressions lost or reordered");
+  assert(historic.some((_,i)=>i+30<=historic.length&&frozen.every((v,j)=>historic[i+j]===v)),
+    "B09 historic immutable 30-expression source witness must remain in main");
+  // R03 changes notation and prose semantically: candidate must keep each
+  // essential S1 mathematical law plus the newly restored decomposition.
+  // Reordering is allowed ONLY under signed academic Q18 Delta C source.
+  const knowledge=s.slice(a,b),tight=knowledge.replace(/\s+/g,"");
+  for(const formula of [
+   "k(\\vec u+\\vec v)=k\\vec u+k\\vec v",
+   "(k+m)\\vec u=k\\vec u+m\\vec u",
+   "k(m\\vec u)=(km)\\vec u",
+   "1\\vec u=\\vec u","(-1)\\vec u=-\\vec u",
+   "\\vec u=x\\vec a+y\\vec b",
+   "\\overrightarrow{AG}"
+  ])assert(tight.includes(formula.replace(/\s+/g,"")),
+   "B09 signed Delta C missing original/new mandatory SGK formula: "+formula);
+  assert(knowledge.includes("Phân tích duy nhất theo hai vectơ không cùng phương")&&
+   knowledge.includes("THPT_G10_B09_DECOMPOSITION_MOBILE_D5_R03.svg"),
+   "B09 signed academic Delta C must restore decomposition with responsive diagram");
+  const packet=read(root,"prototypes/thpt/ux795/G10_CHIV_B09_S1_SEMANTIC_DECOMPOSITION_R03_20261117.md").toString("utf8");
+  assert(packet.includes("BLOCKED_BY_AUTHORING")&&packet.includes("NO_CANONICAL_DECOMPOSITION_ITEM"),
+   "B09 semantic source comparison cannot certify independent assessment");
    assert.equal(row.main,historicalMainB09GitBlob,"B09 ledger must retain immutable historic published Git blob");
    assert.notEqual(blob(candidateRaw),historicalMainB09GitBlob,"B09 must remain a distinct source-locked Delta C");
   assert.equal(ids.first.length,5);assert.equal(ids.help.length,2);
-  console.log("PASS EVIDENCE B09: 30/30 original math; 5 FirstTry/2 HELP; old+new source hashes");
+  console.log("PASS EVIDENCE B09: historic 30/30 immutable main expressions; signed R03 S1 laws+decomposition, 5 FirstTry/2 HELP, authoring HOLD");
  }else{
   const old=chvi.match(new RegExp(num+':\\{display:(\\d+),inline:(\\d+),sha:"([a-f0-9]{40})",tries:(\\d+),extraFold:(\\d+)\\}'));
   assert(old,name+" historical math spec missing");
