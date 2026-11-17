@@ -9,7 +9,7 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 STATE: BLOCKED_BY_AUTHORING
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 76b8a10c12e2a60fa155901d153f17c9982193c4
+ACADEMIC_SOURCE_BLOB: ae8bffe04a7c52e062c933739bafceb5412a8270
 ORIGINAL_G11_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_THPT_TOPIC17_FRUSTUM_VOLUME_MODEL_R00_20261113.html
 INTERACTIVE_MODEL_BLOB: 727c05896a9d9bf95385b54559faa22917f1510e
@@ -126,3 +126,8 @@ REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC17_R02_AUTHOR_SELF
 ## R03 — chỉnh trực tiếp bản thảo hiệu lực, không nhân bản học liệu (17/11/2026)
 
 Tệp học liệu chính tại `ACADEMIC_SOURCE_PATH` được sửa đúng một đoạn hướng dẫn học sinh ở **Tự kiểm tra**: thực hiện tám câu hỏi độc lập, trở về Luyện tập mở lời giải để tự đối chiếu và ôn lại. Nội dung cũ lộ thuật ngữ kỹ thuật “Mastery” đã bỏ. Toàn bộ 12 outcome, 49 câu hỏi canonical (57 placements tính cả 8 public replay), 49 khối lời giải, đề/đáp án/rubric, SVG và mô hình không đổi. `CONTENT_REVISION: R03`; bản R02 đã ký nằm trong lịch sử Git, không sử dụng như bản thảo thứ hai để phát hành. `AUTHORING_QA_HOLD` cho đến khi receipt, V2, ready và REGISTER cùng trỏ đúng bản hiện hành và kiểm tra HEAD cần thiết; không phải đánh giá R02 trước đó bị hủy hay lỗi toán mới.
+
+
+## CĐ17 one learner file post-Q18 notation fix
+
+Knowledge frustum exploration now displays a=6, h=4 as proper inline mathematics; no geometry or solution/value changed. Source and exact question-only Selfcheck parity 57 placements, 49 details and 8 public replay confirmed. Q18 receipt remains same pre-existing path and has been updated to reflect the correction; current learner file is the only active candidate.
