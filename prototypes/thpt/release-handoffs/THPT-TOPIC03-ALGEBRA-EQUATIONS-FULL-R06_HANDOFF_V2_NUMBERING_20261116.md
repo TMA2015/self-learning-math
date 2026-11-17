@@ -36,7 +36,7 @@ CATALOG_TOPIC_ID: CD03
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 ACADEMIC_VERDICT: SELF_VERIFIED
 PEDAGOGICAL_VERDICT: SELF_VERIFIED
-CONTENT_STATE: BLOCKED_BY_AUTHORING
+CONTENT_STATE: CONTENT_READY
 BLOCKERS: NONE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
@@ -239,3 +239,6 @@ RELEASE must resolve official runtime TOPIC_ID on owner decision and integrate o
 ## One effective learner draft — source correction inline
 
 The single active learner **path** is existing R06_NUMBERING_CONSISTENT_20261116.md, current SHA daeeb5d571d120b31265f8c603a76049a1f2c78c, not an additional R07 file. Corrections: 11 student error-remediation pointers now name real numbered Practice exercises; worked Example TOP03-O09 changed to independently solved sqrt(x+6)=x (x≥0, only x=3) so original Vận dụng sqrt(2x+7)=x+1 is not pre-solved. Prior R06 headings kept; 31 canonical Practice items, 12 question-only public replays, 43 disclosures, questions/keys/rubrics, SVGs untouched. Existing Q18 has source-specific author self QA, not blanket NotebookLM PASS. `CONTENT_STATE=BLOCKED_BY_AUTHORING` until existing ready manifest, REGISTER and exact final HEAD CI reconcile; do not read original R05/R06 historical snapshot as current learner source. No RELEASE integration/merge/deploy.
+
+
+**Current source handoff:** Source-specific Q18 author self-QA for the changed math/editorial portion is complete, immutable predecessor source preserved in Git, one learner source and matching A1/V2/ready/REGISTER selected. No website/AP/RELEASE PASS or merge/deploy implied. A separate CI on HEAD is required before release intake acceptance.
