@@ -17,10 +17,10 @@ OFFICIAL_INDEPENDENT_READINESS: NOT_CLAIMED
 MASTERY_ACTIVATION: NO
 RELEASE_AUTHORIZATION: NO
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/Temp_G10_SGK_CHIII_FULL_R03_CONSOLIDATED_SOURCE_20261105.md
-ACADEMIC_SOURCE_BLOB: 9d186b2eb8d1c8250a716014beae3021625a6f6c
+ACADEMIC_SOURCE_BLOB: 569466519ee9a653fa3bcdf874e06619424fbf7b
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/G10_SGK_CHIII_FULL_R03_COMPOSITE_SOURCE_REVIEW_CHAIN_20261105.md
-REVIEW_RECEIPT_BLOB: aeae036a487ffd8e30f1fd4bc65c655f7724e8f1
-SOURCE_REVIEW_CHAIN_TYPE: HISTORICAL_INDEPENDENT_COMPONENT_REVIEWS_PLUS_TARGETED_NOTEBOOKLM_AND_AUTHOR_DELTA_B
+REVIEW_RECEIPT_BLOB: 11451c115ba8a2211628c5538ba8144c1d1a0e41
+SOURCE_REVIEW_CHAIN_TYPE: HISTORICAL_INDEPENDENT_COMPONENT_REVIEWS_PLUS_TARGETED_Q18_AUTHOR_SELF_VERIFIED_W05
 
 **AUTHORING-only:** Complete SGK Chapter III source packet reuses unchanged R01 Academic PASS, reviewed R02 PED and ten First Try, plus 14 existing PUBLIC client selfchecks. Original Q18 Studio SHA caveat is logged; reviewer-corrected TRY08 and TRY09 are confirmed on their original canonical questions. The composite is author Delta B, not a newly independent NotebookLM R03 review. The standard remains ONE Q01–Q18; V2 parser declares legacy-compatible v1.1.0 contract while original R02 independent review used current v1.2.0. No official readiness/Mastery or website release authorization.
 
@@ -182,7 +182,7 @@ Canonical ONE standard: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_
 
 ## REVIEW_SOURCE_RECEIPT
 
-Frozen source 9d186b2eb8d1c8250a716014beae3021625a6f6c; composite author receipt aeae036a487ffd8e30f1fd4bc65c655f7724e8f1; original R01 source 6320aeaa... / independent reviewer 3fb823...; R02 source f7bbffc... (34,884 bytes SHA256 aa0f6400...) / owner independent original reviewer 62ab31e...; targeted independent verdict transcribed at 314b177...; original JSON blob f9c35b7... . Reviewer Academic/PED PASS for all ten outcomes, corrected exact original two items. Q18 raw Studio byte parity is *not* claimed.
+Current source 569466519ee9a653fa3bcdf874e06619424fbf7b; updated composite author receipt 11451c115ba8a2211628c5538ba8144c1d1a0e41; original R01 source 6320aeaa... / independent reviewer 3fb823...; R02 source f7bbffc... (34,884 bytes SHA256 aa0f6400...) / owner independent original reviewer 62ab31e...; targeted independent verdict transcribed at 314b177...; original JSON blob f9c35b7... . Reviewer Academic/PED PASS for all ten outcomes, corrected exact original two items. Q18 raw Studio byte parity is *not* claimed.
 
 ## DELTA_LEDGER
 
@@ -199,3 +199,10 @@ Two lessons B05–B06, 10/10 outcomes, 42 unique public IDs (18 R01 + 10 R02 Fir
 ## RELEASE_ACCEPTANCE
 
 RELEASE receives this source-locked whole-chapter packet and independently checks AP1–AP5, R1–R5, P1/P2, exact HEAD CI, Golden R4 learner journey, safe voluntary Final Submit, responsive desktop/iPhone/iPad and explicit project owner approval. This authoring packet cannot issue release clearance.
+
+
+## Q15 / Q18 targeted current-source reconciliation · 17/11/2026
+
+Single original canonical W05 owner is the SGK ChIII source above. The current revision corrects only the 2-point coordinate-equation rubric `x=Rcos, y=Rsin` into \\(x=R\\cos\\alpha\\), \\(y=R\\sin\\alpha\\), \\(\\alpha=150^\\circ\\), with unchanged 7-point scheme, stem, answer, solution and 42 original public item IDs. No new item copy/version; the prior original R01/R02 reviewer PASS belongs only to the immutable original Git blobs listed above, while the changed W05 rubric has its own **Q18_AUTHOR_SELF_VERIFIED_AFFECTED_W05** receipt at blob `11451c115ba8a2211628c5538ba8144c1d1a0e41`. The 2026-11-05 `CONTENT_READY` source identity is superseded on this *current Draft branch* only; old snapshot remains in Git history. This updated V2 carries one source/receipt pair for the exact current candidate, not a second academic standard or release signoff.
+
+**Source-scope check:** only canonical W05 rubric wording changed; student selfcheck/public RD0, held-out RD1 (none), item IDs, answer key, score allocation, learner records unaffected. `Q15_SINGLE_OWNER_W05=SOURCE_RECONCILED`; `TOPIC12_PLACEMENT_PARITY=RECHECK_REQUIRED_ON_OWN_BRANCH`; `RELEASE_AUTHORIZATION=NO`.
