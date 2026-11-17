@@ -47,21 +47,54 @@ function verifyBlob(value, file) {
   const actual = runGit("hash-object", "--", file);
   assert.equal(actual, value, "Source/receipt byte mismatch: " + file);
 }
-// Version follows the ONE actual normative source, not a hand-maintained
-// release-gate list. Grandfather ONLY previously effective historical versions.
-// Governance drafts (even when present in a PR checkout) are NOT active modes.
+// A PR's OWNER_APPROVED status alone does not activate a new version.
+// Only the effective canonical standard at the MAIN Git ref can do so.
 const historicalVersions=["1.0.0","1.1.0","1.2.0","2.0.0","3.0.0","3.0.1"];
-function acceptedStandardVersions(overrideText) {
-  const raw=overrideText??fs.readFileSync(path.join(root,"prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md"),"utf8");
-  const id=raw.match(/^\*\*STANDARD_ID:\*\*\s*\x60([A-Za-z0-9-]+)\x60/m);
-  const version=raw.match(/^\*\*VERSION:\*\*\s*\x60(\d+\.\d+\.\d+)\x60/m);
-  const status=raw.match(/^\*\*STATUS:\*\*\s*\x60([A-Z0-9_]+)\x60/m);
-  assert(id && id[1]==="SLM-THPT-QUALITY-ONE","Single normative standard identity missing or changed");
-  assert(version&&status,"Canonical standard version/status missing");
-  const approved=status[1]==="OWNER_APPROVED_EFFECTIVE"; // Owner-approved Golden editor STRUCTURE is NOT an effective normative version; preserve draft hold.
-  return [...new Set([...historicalVersions,...(approved?[version[1]]:[])])];
+const standardPath="prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md";
+let cachedMainStandard;
+function mainStandardSource() {
+  if(cachedMainStandard!==undefined)return cachedMainStandard;
+  function atRef(ref) {
+    try{return cp.execFileSync("git",["show",ref+":"+standardPath],
+      {cwd:root,encoding:"utf8",stdio:["ignore","pipe","ignore"]});}
+    catch{return null;}
+  }
+  // A GitHub push on main may legitimately use its own verified HEAD.
+  const onMain=process.env.GITHUB_REF==="refs/heads/main" &&
+    process.env.GITHUB_REPOSITORY==="TMA2015/self-learning-math" &&
+    process.env.GITHUB_SHA===runGit("rev-parse","HEAD");
+  if(onMain)return cachedMainStandard=atRef("HEAD");
+  // PR workflows pin this field to github.event.pull_request.base.sha.
+  const base=process.env.BASE_SHA||"";
+  if(process.env.GITHUB_BASE_REF==="main" && /^[0-9a-f]{40}$/.test(base)){
+    const source=atRef(base);
+    if(source)return cachedMainStandard=source;
+  }
+  // actions/checkout@v4 with fetch-depth:0 retains origin/main.
+  // If unavailable, fail closed rather than trust the PR checkout.
+  return cachedMainStandard=atRef("refs/remotes/origin/main");
 }
-
+function acceptedStandardVersions(overrideText, overrideMainText) {
+  const raw=overrideText??fs.readFileSync(path.join(root,standardPath),"utf8");
+  const id=raw.match(/^\*\*STANDARD_ID:\*\*\s*\x60([A-Za-z0-9-]+)\x60/m);
+  const version=raw.match(/^\*\*VERSION:\*\*\s*\x60(\d+\.\d+\.\d+)(-CANDIDATE)?\x60/m);
+  const status=raw.match(/^\*\*STATUS:\*\*\s*\x60([A-Z0-9_]+)\x60/m);
+  assert(id&&id[1]==="SLM-THPT-QUALITY-ONE","Single normative standard identity missing or changed");
+  assert(version&&status,"Canonical standard version/status missing");
+  const main=overrideMainText===undefined?mainStandardSource():overrideMainText;
+  const mainId=main?.match(/^\*\*STANDARD_ID:\*\*\s*\x60([A-Za-z0-9-]+)\x60/m)?.[1];
+  const mainVersion=main?.match(/^\*\*VERSION:\*\*\s*\x60(\d+\.\d+\.\d+)(-CANDIDATE)?\x60/m);
+  const mainStatus=main?.match(/^\*\*STATUS:\*\*\s*\x60([A-Z0-9_]+)\x60/m)?.[1];
+  const effectiveOnMain=mainId==="SLM-THPT-QUALITY-ONE" &&
+    mainVersion && !mainVersion[2] && mainVersion[1]===version[1] &&
+    mainStatus==="OWNER_APPROVED_EFFECTIVE" &&
+    status[1]==="OWNER_APPROVED_EFFECTIVE" && !version[2];
+  // Historical 3.1.0 READY packets survive the 3.1.1 patch before/after merge.
+  const previous=version[1]==="3.1.1" &&
+    raw.includes("**PREVIOUS_EFFECTIVE_STANDARD:** \x603.1.0 / OWNER_APPROVED_EFFECTIVE\x60")
+    ?["3.1.0"]:[];
+  return [...new Set([...historicalVersions,...previous,...(effectiveOnMain?[version[1]]:[])])];
+}
 
 // Owner decision 11/11/2026: a signed AUTHOR_SELF_VERIFIED Topic/SGK source
 // is audited via the SAME Q18; never call it an independent reviewer PASS.
@@ -77,7 +110,7 @@ function verifyQ18Mode(data,handoff,receipt,sourceBlob,lane) {
   if(self) {
     assert(["TOPIC","SGK_CHAPTER"].includes(lane),"Self-QA mode limited to SGK/Topic academic material");
     const selfVersion=field(data,"STANDARD_VERSION");
-    assert(["3.0.0","3.0.1","3.1.0"].includes(selfVersion) && acceptedStandardVersions().includes(selfVersion),
+    assert(["3.0.0","3.0.1","3.1.0","3.1.1"].includes(selfVersion) && acceptedStandardVersions().includes(selfVersion),
       "Self QA requires owner-effective v3.x, not a prospective standard");
     assert.equal(field(handoff,"Q18_VERIFICATION_MODE"),mode,"Self QA mode mismatch");
     assert.equal(field(handoff,"ACADEMIC_VERDICT"),"SELF_VERIFIED","Never impersonate independent Academic PASS");
@@ -352,8 +385,28 @@ function selfTest() {
     "Approved Golden structure is NOT effective v3.1.0");
   assert(!acceptedStandardVersions(norm("3.1.0","GOVERNANCE_PROPOSAL_OWNER_REVIEW_PENDING")).includes("3.1.0"),
     "Governance draft must not become an accepted source version");
-  assert(acceptedStandardVersions(norm("3.1.0","OWNER_APPROVED_EFFECTIVE")).includes("3.1.0"),
-    "Only exact owner-effective status can activate v3.1.0");
+  const mainBefore=norm("3.1.0","OWNER_APPROVED_EFFECTIVE");
+  const mainAfter=norm("3.1.1","OWNER_APPROVED_EFFECTIVE");
+  const approved=norm("3.1.1","OWNER_APPROVED_EFFECTIVE")+
+    "\n**PREVIOUS_EFFECTIVE_STANDARD:** \x603.1.0 / OWNER_APPROVED_EFFECTIVE\x60";
+  const draft=norm("3.1.1-CANDIDATE","GOVERNANCE_DRAFT_OWNER_REVIEW")+
+    "\n**PREVIOUS_EFFECTIVE_STANDARD:** \x603.1.0 / OWNER_APPROVED_EFFECTIVE\x60";
+  assert(acceptedStandardVersions(draft,mainBefore).includes("3.1.0"),
+    "Immutable v3.1.0 receipts remain valid before governance merge");
+  assert(!acceptedStandardVersions(draft,mainAfter).includes("3.1.1"),
+    "Candidate cannot activate even if main has an approved 3.1.1");
+  assert(!acceptedStandardVersions(approved,mainBefore).includes("3.1.1"),
+    "OWNER_APPROVED on a PR must NOT imply EFFECTIVE_ON_MAIN");
+  assert(acceptedStandardVersions(approved,mainBefore).includes("3.1.0"),
+    "Owner-approved PR must preserve historical v3.1.0 packets");
+  assert(acceptedStandardVersions(approved,mainAfter).includes("3.1.1"),
+    "v3.1.1 becomes eligible only after verified main activation");
+  assert(!acceptedStandardVersions(approved,null).includes("3.1.1"),
+    "Missing main proof must fail closed for new versions");
+  assert(acceptedStandardVersions(norm("3.1.0","OWNER_APPROVED_EFFECTIVE"),mainBefore).includes("3.1.0"),
+    "Official v3.1.0 remains valid");
+  assert(!acceptedStandardVersions(norm("3.1.0","OWNER_APPROVED_SGK_EDITORIAL_STRUCTURE"),mainBefore).includes("3.1.0"),
+    "Structure approval alone is not normative effectiveness");
   assert.throws(()=>acceptedStandardVersions(norm("3.0.1","OWNER_APPROVED_EFFECTIVE").replace("SLM-THPT-QUALITY-ONE","DIFFERENT-STANDARD")));
   assert.equal(verifyLaneScope("LEARNING_PATH: TOPIC\nRELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH"), "TOPIC");
   assert.throws(() => verifyLaneScope("LEARNING_PATH: TOPIC\nRELEASE_SCOPE: FULL_LEARNING_PATH"));
