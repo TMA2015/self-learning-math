@@ -89,7 +89,10 @@ for(const c of cases){
   field(r04,"BASELINE_R03_SOURCE_BLOB")===field(r03,"R03_SOURCE_BLOB")&&
   field(r04,"R04_SOURCE_BLOB")===blob(src)&&
   field(r04,"NEW_SVG_BLOB")===blob(fs.readFileSync(path.join(__dirname,
-  "../docs/assets/images/thpt/THPT_G10_B07_FORCE_VELOCITY_REPRESENTATION_D5_R04.svg")));
+  "../docs/assets/images/thpt/THPT_G10_B07_FORCE_VELOCITY_REPRESENTATION_D5_R04.svg")))&&
+  field(r04,"MOBILE_SVG_BLOB")===blob(fs.readFileSync(path.join(__dirname,
+  "../docs/assets/images/thpt/THPT_G10_B07_FORCE_VELOCITY_MOBILE_D5_R04.svg")))&&
+  src.includes('media="(max-width: 600px)"');
  const current=editorial[c.n]&&(blob(src)===editorial[c.n].sha||signedR02||signedR03||signedR04);
  if(signedR02||signedR03||signedR04)assert.equal(signedR04?field(r04,"R04_SOURCE_BLOB"):signedR03?
   field(r03,c.n===7?"R03_SOURCE_BLOB":"R03_CANDIDATE_SOURCE_BLOB"):
