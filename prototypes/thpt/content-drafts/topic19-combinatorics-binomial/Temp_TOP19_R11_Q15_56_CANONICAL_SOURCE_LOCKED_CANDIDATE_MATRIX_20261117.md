@@ -5,8 +5,8 @@ STANDARD_VERSION: 3.1.0
 Q15_Q18_REVIEW_MODE: AUTHOR_SELF_VERIFIED_TARGETED
 STATE: AUTHORING_CANDIDATE_ONLY
 LEARNING_PATH: TOPIC
-SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R11_P2_CANONICAL_LABEL_LEARNER_CLARITY_CANDIDATE_20261117.md
-SOURCE_BLOB: 5546204168eb3c3402b21af9ca1b9d08b118c378
+SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R10_LANGUAGE_LOCAL_REFERENTS_CANDIDATE_20261117.md
+SOURCE_BLOB: eff5f2a91708671db6f32063eea2cd111ddc6b94
 PREVIOUS_R10_LEARNER_SOURCE_BLOB: 37612a3fb8d804efa6dd4f65ddd22d90bf2772ae
 PREVIOUS_R10_SOURCE_MATRIX_BLOB: 448c913a0263cdc537a8e33a39bcdd8052ec3372
 IMMUTABLE_R09_OWNER_METADATA_BLOB: d21d1d3ede107b3b479d1f61a1ddc0e4df0414ec
@@ -101,3 +101,8 @@ The TOP19-O02 T02 voluntary answer sentence has been rewritten in correct natura
 
 
 **Knowledge typography delta:** same TOP19 learner file directly corrected four explanatory lines to typeset factorial, arrangements, combinations, and polynomial/reciprocal notation; literal `nPr`/`nCr`/`SHIFT` hardware labels stay code text. All canonical item stems, keys, rubric and original Q15 source ownership/version unchanged. No new learner source file.
+
+
+## ORIGINAL_BRANCH_SINGLE_SOURCE_CONSOLIDATED — 17/11/2026
+
+The nineteen vetted R11 student-visible correction groups were applied **directly** to the ORIGINAL R10 learner file at SOURCE_PATH on branch `authoring/topic19-language-clarity-r10-20261117` (source blob `eff5f2a91708671db6f32063eea2cd111ddc6b94`). No new canonical item version, answer, rubric, math condition, original G10 shared item or selfcheck role is introduced. Source copied only the corrected T02 explanation (4 shirts each with 3 badge combinations), four mathematical-versus-calculator-label notational lines, clarified learner Practice direction, removed redundant developer-facing SGK labels, and improved ungraded selfcheck introduction. Item/disclosure/SVG order identical to R10. The R11 patch file is obsolete, must not be an alternative release input. This branch's old V2/ready/REGISTER referencing the R11 file are **STALE/HOLD** and are NOT authorized CONTENT_READY for the original corrected R10 source; owner/bank Q01–Q18, final heads and current CI need independent reconciliation before promotion. NO MERGE/DEPLOY.
