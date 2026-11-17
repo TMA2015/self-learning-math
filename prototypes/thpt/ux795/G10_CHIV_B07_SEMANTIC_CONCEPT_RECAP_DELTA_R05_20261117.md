@@ -3,7 +3,7 @@
 **PACKET_ID:** `G10_CHIV_B07_SEMANTIC_XF3_OWNER_P2_FIX_R05_20261117`
 **LESSON_ID:** `G10-CHIV-B07`
 **STANDARD_ID:** `SLM-THPT-QUALITY-ONE`
-**STANDARD_VERSION:** `3.1.0` (Q01–Q18, X-F.2–X-F.5)
+**STANDARD_VERSION:** `3.1.0` (Q01–Q18, X-F.2, X-F.3, X-F.4, X-F.5)
 **VERIFICATION_MODE:** `Q18_OWNER_SELF_VERIFIED_ENRICHMENT` — author critical review plus source/semantic regression; not independent NotebookLM PASS
 **DELTA_CLASS:** `DELTA_C_ACADEMIC_MATERIAL` (formal presentation and explicit recap) + `DELTA_A_UI` (scoped definition color)
 **MASTER_DEFECT_LEDGER:** `Issue #795 / B07-F01 / G10-SEM-01`
