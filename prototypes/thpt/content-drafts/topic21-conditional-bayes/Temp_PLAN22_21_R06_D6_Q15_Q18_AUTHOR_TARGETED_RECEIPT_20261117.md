@@ -1,0 +1,76 @@
+# CĐ21 R06 · Q08/PED6 + Q15/Q18 TARGETED AUTHORING RECEIPT · 17/11/2026
+
+PACKET_ID: TOP21-R06-D6-20261117
+STANDARD_ID: SLM-THPT-QUALITY-ONE
+STANDARD_VERSION: 3.1.0
+STANDARD_BLOB: 5a80b20ce99be3179d03d56a73fa57b6f4882fd8
+Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
+REVIEW_SCOPE: DELTA_C_PED_TARGETED_Q08_Q14_Q15_Q18
+SOURCE_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R06_D6_NAVIGATION_CANDIDATE_20261117.md
+SOURCE_BLOB: f1e9a0f2a52574f832c27a724189e9f1869940ae
+ORIGINAL_R05_SOURCE_BLOB: 65938a700e0da630694e9cbb6e636d337e67aeb5
+ORIGINAL_R05_AUTHOR_Q18_RECEIPT_BLOB: aa3e00f55eb8f6930e23e9b15bbba3ba2d8e972a
+AFFECTED_P0: 0
+AFFECTED_P1: 0
+AFFECTED_P2: 0
+AFFECTED_Q08_PED6: AUTHOR_SELF_QA_PASS
+AFFECTED_Q15_VERSION_ID_MATH_PARITY: AUTHOR_SELF_QA_PASS
+AFFECTED_Q18: AUTHOR_SELF_QA_PASS
+ACTIVE_CANONICAL_BANK_MATRIX: HOLD_NOT_SYNCHRONIZED
+CONTENT_READY: NO
+RELEASE_AUTHORIZATION: NO
+
+## 1. Exact Git delta and version control
+
+The old R05 and new R06 learner sources were both refetched from GitHub with their exact blobs. After removing the new R06 author-only HTML comment, line-level diff shows exactly 22 changed source lines:
+- First Try marker lines 43/80/117/154/197/234/277/310 and their D6 lines 48/85/122/159/202/239/282/315.
+- Written marker lines 472/504/534 and their D6 lines 493/523/547.
+- No other source lines change. The entire Luyện tập section outside its three Written D6 paragraphs is unchanged; the full Tự kiểm tra question-only section is byte-identical. There are 19 original canonical public item IDs (eight T, eight P, three W), and all remain unique in the candidate. Math formulas, example stems, key values, solution reasoning, all rubric points, diagrams and disclosure open/close are untouched.
+- Changed D6 solution content requires versioning: T01–T08 now TOP21-R06 (from R01); W01–W03 now TOP21-R06 (from R03). Practice P01–P08 remains TOP21-R03. This is versioning of the SAME canonical IDs, not cloned questions.
+
+## 2. Confirm actual remediation pathways across all outcomes
+
+| Item / outcome | Real Knowledge destination | Real visible Practice destination | Remedial reason |
+|---|---|---|---|
+| THPT-TOP21-T01 / O01 | 1.1 | Bài luyện 1, Luyện tập 1.1 | known group changes denominator |
+| THPT-TOP21-T02 / O02 | 1.2 | Bài luyện 2, Luyện tập 1.2 | conditional probability direction |
+| THPT-TOP21-T03 / O03 | 1.3 | Bài luyện 3, Luyện tập 1.3 | without replacement updates counts |
+| THPT-TOP21-T04 / O04 | 1.4 | Bài luyện 4, Luyện tập 1.4 | compare joint probability with product |
+| THPT-TOP21-T05 / O05 | 2.1 | Bài luyện 5, Luyện tập 2.1 | weighted total probability |
+| THPT-TOP21-T06 / O06 | 2.2 | Bài luyện 6, Luyện tập 2.2 | reverse source conditional via Bayes |
+| THPT-TOP21-T07 / O07 | 3.1 | Bài luyện 7, Luyện tập 3.1 | add appropriate tree leaves |
+| THPT-TOP21-T08 / O08 | 3.2 | Bài luyện 8, Luyện tập 3.2 | rare base rate and total flagged group |
+| THPT-TOP21-W01 / O01–O02 | 1.1–1.2 | Bài luyện 1–2, Luyện tập 1.1–1.2 | distinguish P(A|B) and P(B|A) |
+| THPT-TOP21-W02 / O05–O06 | 2.1–2.2 | Bài luyện 5–6, Luyện tập 2.1–2.2 | compute total then invert |
+| THPT-TOP21-W03 / O08 | 3.2 | Bài luyện 8, Luyện tập 3.2 | false-positive count and posterior |
+
+All eight knowledge headings and all eight real Practice exercise stems, math explanations and relevant numbered labels were inspected directly in the R06 source. The original non-existent “Kiến thức 8 / Luyện tập 2.8” navigation is removed. Two original repetitive Written D6 phrases were polished without changing their destinations.
+
+## 3. Independently verify all 11 affected calculations
+
+- T01: P(star|green)=6/9=2/3 (nine green tickets among 24).
+- T02: B=even {2,4,6}, A=divisible by three {3,6}; P(A|B)=1/3.
+- T03: draw red then green without replacement: (4/9)(5/8)=5/18.
+- T04: fair two-coin experiment, A=first heads, B=exactly one head: P(A∩B)=1/4=(1/2)(1/2), so independent.
+- T05: (1/4)(1/10)+(3/4)(1/30)=1/20, correctly weighted across sources.
+- T06: P(X∩failure)=1/25, P(Y∩failure)=3/25, so P(Y|failure)=3/4.
+- T07: leaves A-red 9/50, A-not-red 21/50, B-red 1/10, B-not-red 3/10 sum to 1, P(red)=7/25.
+- T08: H prevalence 2%, sensitivity 90%, false-positive rate 15%: P(H|flag)=0.018/(0.018+0.147)=6/55≈10.91%.
+- W01: 60 pupils, club C 24 of which 15 wear glasses; non-C 36 of which 18 wear glasses. Thus P(glasses|C)=15/24=5/8, P(C|glasses)=15/33=5/11, P(C∩glasses)=15/60=1/4.
+- W02: X prevalence 1/3, failure 1/5; Y prevalence 2/3, failure 1/10; P(failure)=1/15+1/15=2/15, posterior P(X|failure)=1/2; all four leaf probabilities sum to 1.
+- W03: among 10,000 cases, H=100 with 80 flagged and not-H=9,900 with 495 false positive flags, P(H|flag)=80/(80+495)=16/115≈13.91%.
+
+All affected answers and public Written rubric criteria stay exactly as the R05 text. This validates affected-scope maths; it is not a claim of newly solving every unrelated item or an independent NotebookLM full-topic verdict.
+
+## 4. S1, Q15 and Q16 custody, remaining blockers
+
+Original R05 author Q18 receipt binds Toán 12 KNTT Tập Hai Chương VI B18–B19 and historical original S1 PDF review evidence. R06 changes no required mathematical condition, book scope, outcome or full example. No claim of new direct printed-versus-PDF scan is made in this targeted round. The old receipt stays valid for the immutable R05 snapshot only; this R06 author self-QA is separately SHA-bound.
+
+Each FIRST_TRY and Written question remains at one canonical ID with a correctly bumped version; eight Practice keys/solutions and public selfcheck exposure stay unchanged. The selfcheck reuses Practice questions, so it is CLIENT_SELF_CHECK_NO_MASTERY, not an independent TOPIC_READINESS. No private RD1 item is copied to GitHub; no pre-submit hint/key, official Final Submit or Mastery behavior has been enabled.
+
+Still mandatory before CONTENT_READY: update the single active item-owner/version matrix to R06 for 11 changed IDs while retaining the eight unchanged P versions, then synchronize one V2 handoff + ready manifest + REGISTER to the exact new SOURCE_BLOB; verify any other broader readiness gates separately. This receipt does not authorize website integration, merge or deploy.
+
+AUTHOR_SIGNOFF: CHATGPT_AUTHORING_TOP21_R06_11D6_11VERSIONED_ITEM_11MATH_RECOMPUTATIONS_20261117
+VERDICT: TARGETED_AUTHOR_SELF_QA_PASS, ACTIVE_CANONICAL_BANK_HOLD, CONTENT_READY_NO.
+
+Review prompt (four sentences): Critique exactly the R06 source SHA against frozen R05 and inspect 11 D6 paths through Knowledge and visible Practice, rather than checking text labels only. Check the 11 computations, canonical IDs, CONTENT_VERSION and optional-reveal boundary. If an outcome/item route or rubric is wrong, record P0/P1, exact location and MINIMAL_DELTA; do not transfer a verdict to another source. A targeted author receipt is not an independent full-topic review, protected assessment readiness or release approval.
