@@ -295,7 +295,7 @@
         <p><strong>Vì sao sai?</strong> $\tfrac12\vec a-\tfrac12\vec b=\overrightarrow{AM}-\overrightarrow{AN}=\overrightarrow{NM}$, không phải $\overrightarrow{MN}$. Khi dùng quy tắc hiệu hai vectơ, em đã đổi chỗ điểm đầu và điểm cuối.</p>
         <ol><li><strong>Nhìn chiều mũi tên:</strong> $\overrightarrow{MN}$ đi từ $M$ đến $N$, không đi từ $N$ đến $M$.</li><li><strong>Viết quy tắc trước khi thay hệ số:</strong> $\overrightarrow{MN}=\overrightarrow{MA}+\overrightarrow{AN}=\overrightarrow{AN}-\overrightarrow{AM}$.</li><li><strong>Thay quan hệ trung điểm:</strong> $\overrightarrow{AM}=\tfrac12\vec a$, $\overrightarrow{AN}=\tfrac12\vec b$; do đó $\boxed{\overrightarrow{MN}=-\tfrac12\vec a+\tfrac12\vec b}$.</li></ol>
         <p><strong>Tự kiểm:</strong> Nếu đổi câu hỏi thành $\overrightarrow{NM}$, cả hai hệ số phải đổi dấu. Vì $ABC$ là tam giác nên $\vec a,\vec b$ không cùng phương; cặp hệ số trong phép phân tích này là <strong>duy nhất</strong>, không thể tự chọn một cặp khác để bù dấu sai.</p>
-        <p><strong>Ôn và luyện lại:</strong> Xem quy tắc ba điểm/quy tắc hiệu vectơ ở Bài 8, đọc lời giải Ví dụ 4 của Bài 9 rồi <a href="../luyen-tap/?item=THPT-G10-B09-P07">tự giải câu luyện tập P07 về phân tích vectơ</a>. Không dùng phép chia cho vectơ để tìm hệ số.</p>
+        <p><strong>Ôn và luyện lại:</strong> Xem quy tắc ba điểm/quy tắc hiệu vectơ ở Bài 8, đọc lời giải Ví dụ 4 của Bài 9 rồi <a href="../luyen-tap/?item=THPT-G10-B09-P07">tự thử bài phân tích vectơ trong phần Luyện tập</a>. Không dùng phép chia cho vectơ để tìm hệ số.</p>
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
