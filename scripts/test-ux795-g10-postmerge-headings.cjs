@@ -181,7 +181,9 @@ for(let n=1;n<=27;n++){
    manuscript.includes("<!-- BEGIN_B10_R01_CORE_PRACTICE -->"),
    "G10 B10 no other draft/fragment source can replace one full lesson manuscript");
   assert(markdown.includes("### 3.4. Ví dụ 4 — Qua sông")&&
-   markdown.includes("bộ dữ liệu khác")&&
+   markdown.includes("THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg")&&
+   markdown.includes("THPT_G10_B10_RIVER_VELOCITY_MOBILE_D5_R01.svg")&&
+   markdown.includes("Đọc hình theo đúng dữ kiện Ví dụ 4")&&
    markdown.includes("luyen-tap.md")&&markdown.includes("tu-kiem-tra-chuong.md"),
    "B10 real S1 river method belongs in Tab3 with figures and working routes");
   assert.equal((markdown.match(/^    \?\?\? tip "/gm)||[]).length,3,
