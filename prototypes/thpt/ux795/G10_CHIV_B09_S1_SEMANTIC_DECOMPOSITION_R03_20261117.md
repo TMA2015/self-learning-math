@@ -7,7 +7,7 @@
 **DELTA_CLASS:** `DELTA_C_ACADEMIC_MATERIAL` (missing S1 outcome + explanation/examples/diagram), `DELTA_A_UI` (scoped Golden semantic palette).
 **REVIEW_MODE:** `Q18_OWNER_SELF_VERIFIED_ENRICHMENT_CANDIDATE` — self-audited affected lesson content; **not** an independent NotebookLM Academic/PED PASS; *NOT CONTENT_READY*.
 **SOURCE_BASELINE_BLOB:** `2529b915e4089862e1a48e685ba5dc88d5450558`
-**R03_SOURCE_BLOB:** `507408fb2f7f57c7d6b8ebd135f372e33c325283`
+**R03_SOURCE_BLOB:** `70217896971335905ac7907b222b161073c4df4e`
 **CSS_BASELINE_BLOB:** `0cdc618cf9a070f1b1ed50566877f5de0d025ee8`
 **R03_CSS_BLOB:** `7a658ab449818a616382c145c72880066c2ab57a`
 **R03_SVG_BLOB:** `6a7c8a608dcc2ad90353890b5415e123d7878807`
@@ -41,7 +41,7 @@ Use one effective v3.2.0 (Q01–Q18, X-F.3 3+1, G0–G5); Issue #795 and histori
 
 ## G2 self-pedagogical check / risks
 
-Learner-led “why study” after Five existing First Try, then core definition from intuition, precise length/hypotheses, rule selection by mathematical form, new decomposition picture before text interpretation, proof of uniqueness (coefficients), four progressively different worked examples with “Hướng giải, Giải, Tự kiểm”, explicit noncollinear triangular example (overrightarrow{MN}=-\tfrac12\vec a+\tfrac12\vec b); D6 rescue path points to B08 vector sum/difference and B09 example, not an assessment hint.
+Learner-led “why study” after Five existing First Try, then core definition from intuition, precise length/hypotheses, rule selection by mathematical form, new decomposition picture before text interpretation, proof of uniqueness (coefficients), four progressively different worked examples with “Hướng giải, Giải, Tự kiểm”, explicit noncollinear triangular example (overrightarrow{MN}=-\tfrac12\vec a+\tfrac12\vec b); D6 HELP01/02 now explicitly remediate wrong negative length and midpoint/centroid coefficient; removed learner-facing internal item codes, QA policy chatter and Final Submit jargon; canonical HELP_ID unchanged. Source-driven D6 rescue points to B08 vector sum/difference and B09 examples, not an assessment hint.
 
 Existing original 5 `THPT-G10-CHIV-TRY11`–`TRY15` with exact questions/answers/disclosure unchanged, 2 HELP IDs `HELP-G10-B09-01/02` unchanged. Current canonical formative engine `docs/assets/javascripts/thpt-chiv-b09-b11-reviewed-formative-v1.js` provides B09-C01/C02 and B09-P01…P06 only for scalar length/direction, distribution, collinear, midpoint/centroid. Existing public W09 covers point ratio/midpoint. **No canonical item currently checks noncollinear decomposition**, which is an **S1 mandatory outcome**. Do not turn the new worked example into a second untracked canonical assessment item or alter private RD1. This prevents `Q02/Q15 / CONTENT_READY` PASS until AUTHORING supplies canonical source/review/handoff and a RELEASE receives that package.
 
