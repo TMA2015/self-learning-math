@@ -35,7 +35,7 @@
 
     Ví dụ, từ \(A(1;1)\) đến \(B(4;3)\), mũi tên đi \(3\) đơn vị sang phải và \(2\) đơn vị lên trên. Vì thế \(\overrightarrow{AB}=(3;2)\); **đừng nhầm với tọa độ điểm** \(B(4;3)\). Dời cả hai điểm sang vị trí khác nhưng giữ nguyên độ dời thì tọa độ vectơ không đổi.
 
-    ### 1.2. Ví dụ trực quan và Vận dụng
+    ### 1.2. Ví dụ trực quan
 
     <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B10_COORDINATES_DIFFERENCE_D5_R01.svg" loading="lazy" alt="Sơ đồ hai điểm A, B trên hệ trục tọa độ: đọc chiều từ A tới B và hai thành phần hiệu tọa độ"><figcaption>Đọc hình trước công thức: từ đuôi mũi tên ở A tới đầu mũi tên tại B, đo mức thay đổi hoành độ và tung độ. Đổi chiều sang BA thì cả hai dấu đổi ngược.</figcaption></figure>
 
@@ -111,7 +111,7 @@
 
         **Vì sao:** vận tốc theo bờ \(\vec v_{\mathrm{bờ}}=(3;5)\,\mathrm{m/s}\). Thành phần hướng Bắc \(5\,\mathrm{m/s}\) quyết định thời gian \(t=60/5=12\,\mathrm s\); do đó độ trôi ngang \(3\cdot12=36\,\mathrm m\). Độ lớn vận tốc thực \(\sqrt{34}\,\mathrm{m/s}\) **không phải** thành phần qua sông; không lấy \(60/\sqrt{34}\).
 
-    ### 1.3. Thuật ngữ, kiến thức và kĩ năng
+    ### 1.3. Thuật ngữ, kiến thức và kỹ năng
 
     **Từ khóa cần phân biệt:** tọa độ điểm là **vị trí**, tọa độ vectơ là **độ thay đổi có hướng**; vectơ đơn vị \(\vec i,\vec j\) xác định hai chiều trục; độ dài vectơ khác tổng quãng đường đi theo lưới; hai vectơ cùng phương cần một hệ số nhân **chung**.
 
