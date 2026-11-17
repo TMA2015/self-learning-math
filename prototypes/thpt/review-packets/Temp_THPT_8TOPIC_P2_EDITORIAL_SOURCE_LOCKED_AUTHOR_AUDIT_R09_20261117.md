@@ -20,7 +20,7 @@ GLOBAL_ACTIVE_V2_READY_REGISTER: HOLD
 | CĐ08 | a33d1e6a20dba1dc7861097e231906aff2938c02 | 3f1f55d1a05eece7de25508318e8ed6c2cecb621 | f86a0dfc1a7ab73533395f19428368aeeabac676 | Explicit factorization and left/right jump figure narration, L331/L358 |
 | CĐ09 | 8222107d717f7d02b845f79ccdd154e8dbe71cc6 | 252c4719396b3692ea6cf62f1845c0874b666a8f | ba072154f7fc60ae82952f8060f0cb17184cb6d6 | Signed velocity/metres-seconds plus learner Bài52 instead of raw P15, L225/L1699 |
 | CĐ12 | e74f32b1092d571af0091174a55104e7d3bec5b5 | ccf74ca47859794333b8ce6af56fbda4458c5f62 | dc306b4df5ae07aead6fb4541ba42969bd2ddf1b | R11: 189 learner formula spans converted from code to MathJax; rubric x=Rcosα / y=Rsinα clarified, 46 IDs + 12 question-only replays unchanged; MathJax actual-browser AP2 and global V2 HOLD |
-| CĐ15 | 581ff0b0c019a705d36f306d7d5b0db38d185c0b | 98f911d70d6e69fed5747c4f4865fa1a0942f3d1 | a386670f51f70ba3f207a9bf98e34727d31cd3d0 | Seven duplicate source labels removed from 8 public replay stems |
+| CĐ15 | 581ff0b0c019a705d36f306d7d5b0db38d185c0b | 6017e5b6108bfa13241f10be6d4b7050ee68066d | cc4b9322b8a65f6e2f77013bb60e15a117cf363a | R12: seven duplicate source labels removed (R09); 14 code-formatted geometry spans converted into math, three learner-intro lines revised; 70 public placements, 90 disclosures, 5 original SVG unchanged; browser AP2/global owner V2 HOLD |
 | CĐ22 | b5713f0c2a1aa6a9fa7a7d63f6e6878bdf8d338b | 58619b8b613b382fbdd4874670bdc24d54ac1c62 | 559f0e875d7687e7410b60a8304ceeb18572224e | Two real SVG locations aligned to their data; 7 Mastery suffixes replaced, SGK PDF-index P2 still open |
 
 Each learner/source path is directly under prototypes/thpt/content-drafts/ as follows; the receipt is independent Git file alongside that same source (one authoring receipt on exact candidate, not a new NotebookLM reviewer).
@@ -83,3 +83,14 @@ The R09 table row for CĐ12 above is refreshed to the **one current candidate so
 **Source exact QA:** 79 existing lines affected, **769→769** total lines; original explicit inline MathJax count **126→315**, delta +189, all 167 distinct conversions TeX braces balanced with no source math backticks; exact order **46/46** canonical/replay placements, **46/46** voluntary disclosure boundaries, **12/12** public question-only selfcheck, and two source-linked SVGs unchanged; no numeric data, mathematical hypothesis, question role, keyed answer or point allocations changed. These assertions establish only **source-level semantic/presentation parity** with two explicit operand clarifications; they do not prove rendered MathJax in a real browser or all 34 original canonical items have been independently re-solved.
 
 **Open:** `CĐ12_MATHJAX_BROWSER_AP2=UNVERIFIED`; `CĐ12_ORIGINAL_CANONICAL_RUBRIC_EQUIVALENCE_Q15=HOLD` scoped to Bài SGK 9; `GLOBAL_ACTIVE_CANONICAL_Q15_V2_READY_REGISTER=HOLD`; `CONTENT_READY=NO`. Do not create R12 repaired source file, automatically republish, merge or deploy. Continue authoritative one-source consolidation of the remaining Topics and review sentence-level readiness against Issue #864.
+
+
+---
+
+## R12 · CĐ15 source directly revised: optional geometry math and learner-first language
+
+CĐ15 keeps exactly the existing learner **path** `prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_R05_P2_PUBLIC_LABELS_CANDIDATE_20261117.md`. Its current Git blob is `6017e5b6108bfa13241f10be6d4b7050ee68066d`; the **existing** same-path targeted Q18 receipt, updated in place, is `cc4b9322b8a65f6e2f77013bb60e15a117cf363a`. R09 source/receipt are historical source snapshots only.
+
+The original Knowledge introduction used **14 double-backtick inline code segments** for spatial coordinates and line–plane conditions. Changed to `\\(...\\)` math with explicit `w\\ne0`, `c\\ne0` and the parametric line formula. Text plainly teaches all three correct cases for solving `c+tw=0`: (i) w=c=0 contained in plane, (ii) w=0,c≠0 parallel distinct, (iii) w≠0 intersects once. Changed learner address “Học sinh...”→“Em...” and removed a student-visible author-facing figure-provenance note. Exactly 3 original lines L12, L16, L20 affected; all **70 public ordered placements**, **90 voluntary disclosures**, **five original SVG references** and **eight question-only public Selfcheck replays** untouched. The 40 original SGK and 49 Topic owner item identities are unchanged; no official readiness or Mastery activity enabled.
+
+Author-source QA on this 14-formula and introduction-prose scope: `AFFECTED_DELTA_B_AUTHOR_SELF_QA_PASS`; **real browser MathJax display UNVERIFIED**; `GLOBAL_Q15_ACTIVE_OWNER_V2_READY_REGISTER_HOLD`, `CONTENT_READY=NO`. No new learner file, separate correction packet, merge or deploy.
