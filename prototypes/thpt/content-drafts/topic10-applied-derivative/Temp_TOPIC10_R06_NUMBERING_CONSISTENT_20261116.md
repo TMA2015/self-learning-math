@@ -14,7 +14,11 @@ Vì vậy ta đi từ định nghĩa đồng biến/nghịch biến đến dấu
 
 <!-- LESSON_ID: TOP10-M01; OUTCOME_ID: TOP10-O01 -->
 
-Khi nhìn hai điểm trên đồ thị và thấy điểm phía phải cao hơn, ta mới biết hàm tăng **giữa hai vị trí đó**; chừng ấy chưa đủ để khẳng định hàm tăng trên cả khoảng. Điều cần xét là mọi cặp số \(x_1<x_2\) thuộc cùng một khoảng \(I\). Nếu luôn có \(f(x_1)<f(x_2)\), hàm **đồng biến** trên \(I\); nếu luôn có \(f(x_1)>f(x_2)\), hàm **nghịch biến**. Vì vậy miền xác định và việc hai điểm có thuộc cùng một khoảng là điều kiện phải kiểm trước.
+Khi nhìn hai điểm trên đồ thị và thấy điểm phía phải cao hơn, ta mới biết hàm tăng **giữa hai vị trí đó**; chừng ấy chưa đủ để khẳng định hàm tăng trên cả khoảng. Điều cần xét là mọi cặp số \(x_1<x_2\) thuộc cùng một khoảng \(I\). 
+
+> **ĐỊNH NGHĨA — Đồng biến, nghịch biến.** Hàm \(f\) **đồng biến nghiêm ngặt** trên khoảng \(I\) khi với mọi \(x_1,x_2\in I\), \(x_1<x_2\Rightarrow f(x_1)<f(x_2)\); **nghịch biến nghiêm ngặt** khi \(x_1<x_2\Rightarrow f(x_1)>f(x_2)\). Phải xét mọi cặp trong cùng khoảng, không chỉ hai điểm minh họa.
+
+ Vì vậy miền xác định và việc hai điểm có thuộc cùng một khoảng là điều kiện phải kiểm trước.
 
 Xét \(f(x)=-2x+5\) trên \(\mathbb R\). Với bất kỳ \(x_1<x_2\), ta có \(f(x_2)-f(x_1)=-2(x_2-x_1)<0\). Do đó \(f(x_2)<f(x_1)\) và hàm nghịch biến trên toàn trục số. Ta chọn cách so hiệu hai giá trị để chứng minh trực tiếp định nghĩa, trước khi dùng công cụ đạo hàm.
 
@@ -191,7 +195,11 @@ Nếu nói cực đại 2 là GTLN của hàm bậc ba, thử x=10.
 
 <!-- LESSON_ID: TOP10-M08; OUTCOME_ID: TOP10-O08 -->
 
-Liên tục trên đoạn đóng bảo đảm có cực trị toàn cục. Khi nào chắc chắn có GTLN/GTNN dù chưa tìm được điểm đạt? Ta sử dụng định nghĩa liên tục trên đoạn đóng [a,b]. Theo định lí giá trị lớn nhất nhỏ nhất (Weierstrass), hàm liên tục trên đoạn đóng hữu hạn [a,b] chắc chắn đạt GTLN/GTNN. Nếu thiếu 'đóng' hay tính liên tục thì chưa có bảo đảm; vẫn có thể đạt nhưng phải chứng minh riêng. Kết quả chỉ nói tồn tại, chưa cho tọa độ.
+Liên tục trên đoạn đóng bảo đảm có cực trị toàn cục. Khi nào chắc chắn có GTLN/GTNN dù chưa tìm được điểm đạt? Ta sử dụng định nghĩa liên tục trên đoạn đóng [a,b]. 
+
+> **ĐỊNH LÝ — Giá trị lớn nhất, nhỏ nhất trên đoạn.** Nếu \(f\) liên tục trên đoạn đóng, hữu hạn \([a,b]\), \(a<b\), thì tồn tại \(x_{\min},x_{\max}\in[a,b]\) sao cho \(f(x_{\min})\le f(x)\le f(x_{\max})\) với mọi \(x\in[a,b]\). Định lý bảo đảm các giá trị **đạt được**, không xác định sẵn điểm đạt.
+
+ Nếu thiếu 'đóng' hay tính liên tục thì chưa có bảo đảm; vẫn có thể đạt nhưng phải chứng minh riêng. Kết quả chỉ nói tồn tại, chưa cho tọa độ.
 
 Xét ví dụ: f=x²−2x trên [0,3] là đa thức liên tục nên tồn tại hai giá trị. Ta còn tính được GTNN−1 tại x=1, GTLN3 tại x=3 sau so ứng viên.
 
@@ -351,7 +359,11 @@ Nếu lấy hệ số hằng ở tử làm tiệm cận, chia cho x bậc cao nh
 
 <!-- LESSON_ID: TOP10-M14; OUTCOME_ID: TOP10-O14 -->
 
-Gần điểm cấm, giới hạn một phía quyết định tiệm cận đứng. Điểm x=a không xác định có luôn là tiệm cận đứng? Ta bắt đầu từ định nghĩa giới hạn ±∞ một phía, bảng dấu. x=a là tiệm cận đứng nếu ít nhất một trong các giới hạn một phía khi x→a đạt +∞ hoặc −∞. Chỉ có mẫu bằng0 chưa đủ: nếu tử cùng triệt tiêu có thể là lỗ khử. Cần xác định miền và tính dấu mỗi phía.
+Gần điểm cấm, giới hạn một phía quyết định tiệm cận đứng. Điểm x=a không xác định có luôn là tiệm cận đứng? Ta bắt đầu từ định nghĩa giới hạn ±∞ một phía, bảng dấu. 
+
+> **ĐỊNH NGHĨA — Tiệm cận đứng.** Đường \(x=a\) là tiệm cận đứng nếu có ít nhất **một phía hợp lệ trong miền xác định** mà \(f(x)\to+\infty\) hoặc \(f(x)\to-\infty\) khi \(x\to a\). Chỉ thấy mẫu bằng 0 chưa đủ; cần xét giới hạn.
+
+ Chỉ có mẫu bằng0 chưa đủ: nếu tử cùng triệt tiêu có thể là lỗ khử. Cần xác định miền và tính dấu mỗi phía.
 
 Chẳng hạn, f=(x+1)/(x−2), tại2 tử→3>0, mẫu âm phía trái/dương phía phải, nên f→−∞ khi x→2⁻, f→+∞ khi x→2⁺, x=2 là TCD.
 
@@ -376,7 +388,11 @@ Nếu viết 0/0 rồi gọi đứng, thử phân tích và rút gọn.
 
 <!-- LESSON_ID: TOP10-M15; OUTCOME_ID: TOP10-O15 -->
 
-Một đường tiệm cận xiên được nhận qua phần dư tiến 0. Nếu hàm tiến sát đường nghiêng thì cần chứng minh gì, thay vì chỉ chia đa thức? Cần nhớ giới hạn ở ±∞, chia đa thức. Đường y=ax+b (a≠0) là tiệm cận xiên tại một phía vô cực khi lim[f(x)−(ax+b)]=0 phía ấy. Có thể tìm a=lim f(x)/x và b=lim[f(x)−ax] nếu hai giới hạn hữu hạn và a≠0, hoặc chia đa thức trực tiếp. Không phải mọi phép chia ra ax+b đều là tiệm cận nếu phần dư không về0.
+Một đường tiệm cận xiên được nhận qua phần dư tiến 0. Nếu hàm tiến sát đường nghiêng thì cần chứng minh gì, thay vì chỉ chia đa thức? Cần nhớ giới hạn ở ±∞, chia đa thức. 
+
+> **ĐỊNH NGHĨA — Tiệm cận xiên.** Đường thẳng \(y=ax+b\) với \(a\ne0\) là tiệm cận xiên của đồ thị về một phía vô cực nếu \(\lim_{x\to+\infty}[f(x)-(ax+b)]=0\) **hoặc** giới hạn tương ứng khi \(x\to-\infty\) bằng 0. Có thể chỉ đúng về một phía; đồ thị vẫn có thể cắt tiệm cận ở điểm hữu hạn.
+
+ Có thể tìm a=lim f(x)/x và b=lim[f(x)−ax] nếu hai giới hạn hữu hạn và a≠0, hoặc chia đa thức trực tiếp. Không phải mọi phép chia ra ax+b đều là tiệm cận nếu phần dư không về0.
 
 Chẳng hạn, f=(x²+1)/(x−1)=x+1+2/(x−1); vì 2/(x−1)→0 khi x→±∞ nên y=x+1 là TC xiên. Chọn chia vì mẫu bậc1 và tử bậc2.
 
@@ -945,6 +961,13 @@ Nếu chỉ nhìn mẫu bằng0, cần rút nhân tử trên miền bỏ điểm
 </details>
 
 <!-- AUTHORING_ONLY: source-locked figure custody and interaction SPEC_ONLY notes preserved in original R02 blob 47fdfd5d12f4e2996e38104f425551b53964ba54. The learner text already places verified SVG inline. -->
+
+> **Kiến thức cần ghi nhớ**
+>
+> - **Biến thiên:** đồng biến/nghịch biến là khẳng định cho mọi cặp điểm của **cùng khoảng**. Dấu \(f'\) giúp kết luận khi đủ điều kiện; phải chia nhánh theo điểm cấm và xác định dấu đổi chiều trước khi gọi cực trị.
+> - **GTLN/GTNN:** liên tục trên đoạn đóng hữu hạn thì chắc chắn đạt cả hai giá trị. Khi tìm cụ thể, kiểm đầu mút, các điểm \(f'=0\) và các điểm không khả vi trong miền; miền mở không bảo đảm đạt cận.
+> - **Tiệm cận:** đứng khi ít nhất một giới hạn một phía là \(\pm\infty\); ngang \(y=L\) nếu giới hạn ở một phía vô cực là \(L\); xiên \(y=ax+b\) khi hiệu \(f(x)-(ax+b)\to0\) ở một phía vô cực.
+> - **Tối ưu thực tế:** lập miền khả thi, đơn vị và ràng buộc trước; đối chiếu kết quả tìm được với miền và số nguyên (nếu có), không lấy mọi nghiệm \(f'=0\) làm đáp án tối ưu.
 
 # Luyện tập
 
