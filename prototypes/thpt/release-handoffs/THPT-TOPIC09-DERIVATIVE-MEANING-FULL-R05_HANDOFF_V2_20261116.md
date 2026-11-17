@@ -3,7 +3,7 @@
 PACKET_ID: THPT-TOPIC09-DERIVATIVE-MEANING-FULL-R01
 CONTENT_REVISION: R05
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_AUTHORING_ONLY_CUSTODY_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: b21436d491361f4912b1aba620b2cf1ff40a76bf
+AUTHOR_METADATA_BLOB: ff32fda6047be1eb95e64c9ea4067d466eda0fb6
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
@@ -11,9 +11,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md
-ACADEMIC_SOURCE_BLOB: 8222107d717f7d02b845f79ccdd154e8dbe71cc6
+ACADEMIC_SOURCE_BLOB: ecd0dec736d0346fd1789a15aa1ec92d6a718485
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC09_R05_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: bce770e351460d9d01d7567332aed489bc68aa4d
+REVIEW_RECEIPT_BLOB: daeed2fd53f9967ac3ea78e744116aa4f82f4798
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_NEW37_PUBLIC_CANONICAL_R05_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: f249949be3b254a29c8859301b6c4904e636c505
 PUBLIC_ORIGINAL71_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_ORIGINAL71_SGK_CANONICAL_INDEX_R01_20261112.md
@@ -420,6 +420,12 @@ One normative `SLM-THPT-QUALITY-ONE v3.1.0`, from `prototypes/thpt/THPT_UNIFIED_
 - **SBT** KNTT Tập2 B31 54–57, B32 58–60, B33 61–62, cuối ChIX63–65, lời giải111–116; scanned first-party SBT PDF SHA256 `a7c3d5ee9770377e16d7df97c531a2bc081fa47c8266fd4ad3438cba0d04e189`. Source receipt `prototypes/thpt/review-packets/G11_T2_OWNER_DRIVE_S1_PDF_VISUAL_SHA_RECEIPT_20261102.md` original direct rendered scans p printed ↔ PDF index p+1 on the sampled pages; **no new PDF image scan this turn**.
 - Original 31 SGK skill outcomes/71 public IDs independently reviewed historical source blob `3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0`, archived NotebookLM source-fidelity composite `4280a1741ccde038bbd5ae22af5def0d8683c7e8` (historical Permanent Source v2.0). Those PASS are only for original SGK; NEW Topic contents have their own Q18 AUTHOR_SELF_VERIFIED v3.1.0, no NotebookLM re-review falsely claimed.
 - Formal linear differential approximation `dy=f'(a)dx`, TOP09-O32 is **Topic-only extension, not S1 SGK Core**. Guard differentiability at a and small input steps; do not assert Δy equals dy exactly.
+
+## 18/11/2026 — Active learner derivative knowledge amendment, one handoff only
+
+- Effective learner source Git blob `ecd0dec736d0346fd1789a15aa1ec92d6a718485`, Q18 source-scoped author receipt `daeed2fd53f9967ac3ea78e744116aa4f82f4798`, A1 provenance metadata `ff32fda6047be1eb95e64c9ea4067d466eda0fb6`; original R05 signed source `8222107d717f7d02b845f79ccdd154e8dbe71cc6` and 272/272 & 37/37 verified proofs remain historical, not new full-target assertions.
+- Four labeled statements at O03 derivative finite two-sided limit, O05 differentiability implies continuity, O14 product rule, O16 chain rule, with one learner recap. Pre-existing changed velocity semantics O09 and Practice-B52 remedial route explicitly self-verified in updated Q18. Knowledge change classified `DELTA_C_ACADEMIC_MATERIAL`, no original 71 SGK/37 Topic canonical bank changes.
+- 108 learner Practice stem/key/solution/rubric/D6 and 32 public reuse-only Selfchecks preserved against pre-edit source, four SVG unchanged. No private RD1 or official score/Mastery; no independent new NotebookLM full-Topic PASS, no browser/RELEASE authorization.
 
 ## D1_D6_EVIDENCE
 
