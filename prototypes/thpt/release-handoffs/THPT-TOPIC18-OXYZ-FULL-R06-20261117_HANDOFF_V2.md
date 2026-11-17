@@ -1,6 +1,6 @@
 # CĐ18 — Phương pháp tọa độ không gian Oxyz · AUTHORING V2 R06 · 17/11/2026
 
-**Source-only `CONTENT_READY` handoff under ONE standard `SLM-THPT-QUALITY-ONE v3.1.0` Q01–Q18.** Author Q18 mathematical/PED **SELF_VERIFIED**; no independent NotebookLM Topic PASS claimed. This does **not** authorize website merge/deploy, official assessment, Firebase write, or production route.
+**Source-only AUTHORING QA HOLD after direct vector math correction, under ONE standard `SLM-THPT-QUALITY-ONE v3.1.0` Q01–Q18.** Author Q18 mathematical/PED **SELF_VERIFIED**; no independent NotebookLM Topic PASS claimed. This does **not** authorize website merge/deploy, official assessment, Firebase write, or production route.
 
 PACKET_ID: THPT-TOPIC18-OXYZ-FULL-R06-20261117
 CONTENT_REVISION: R06
@@ -13,13 +13,13 @@ CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R06_P2_WRITTEN_RUBRIC_CLARITY_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: 331c31e124179b31731f9caca2669eaa8948bcbd
+ACADEMIC_SOURCE_BLOB: f8c6a52c84fecd0dd63dae60413cfbe4327f54b5
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_R06_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md
-REVIEW_RECEIPT_BLOB: 709d4d12af2a0d2af044d1250ba75a59f679ed7e
+REVIEW_RECEIPT_BLOB: a0ce3bef430e84a03f11073715cee4fa9558a638
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R06_247_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_A1_A7_BLOB: 7983125c26031017b10c09b4526601b66be54730
+AUTHOR_A1_A7_BLOB: 6239749da5a935f4e0cea0a4dac8ac28277956bb
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R06_247_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_METADATA_BLOB: 7983125c26031017b10c09b4526601b66be54730
+AUTHOR_METADATA_BLOB: 6239749da5a935f4e0cea0a4dac8ac28277956bb
 Q01_FAMILY_AUDIT_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R02_Q01_SGK_PROBLEM_FAMILY_SCOPE_AUDIT_20261114.md
 Q01_FAMILY_AUDIT_BLOB: 052b06ea90d6191f125aef72f42d74dd9a6d86c8
 Q18_OUTCOME_ITEM_PED_AUDIT_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R02_Q18_40_OUTCOME_MATH_PED_ITEM_AUDIT_20261114.md
@@ -35,7 +35,7 @@ P0: 0
 P1: 0
 P2: 1
 P2_NOTE: SBT_REFERENCE_GAP_DOCUMENTED_G12_B14_PRINTED_P25_SECONDARY_REFERENCE_ONLY
-BLOCKERS: NONE
+BLOCKERS: CURRENT_SOURCE_QA_HEAD_AND_READY_REGISTER_CHECK_PENDING
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
@@ -724,3 +724,8 @@ R1 source/receipt/matrix SHA verify on combined latest main and owner-approved r
 ## R06 CURRENT AUTHORING PACKET DELTA AND SIGNOFF
 
 R06 is the only proposed new Topic source 331c31e124179b31731f9caca2669eaa8948bcbd, composite AUTHOR_SELF_VERIFIED Q18 receipt 709d4d12af2a0d2af044d1250ba75a59f679ed7e, R06 A1–A7 metadata 7983125c26031017b10c09b4526601b66be54730. Original R04 accepted source/ready/REGISTER remain immutable historical CONTENT_READY, not upgraded on the old SHA. Delta: R04 full author Q18 5262fd454346801b0b5eb4f3dc407bc99d3530 → R05 material parameter t geometry not seconds (one Knowledge paragraph, receipt 9d0f5a224f55eda978bb1aebbeb2c9d20ade5233) → R06 editorial 24 SGK Written /5 headings and 24 technical Mastery lines (receipt f4f7acefae8640227cebdb421ec328b9d9cb3259). All original rubric scoring criteria and sums preserved. 247 unique public source IDs, 12 reused question-only selfcheck Practice placements, 40 outcomes/three Topic pages, 160 original SGK source owners, 87 Topic-owned items, original diagrams and model unchanged. Historical G12 SBT B14 printed p25 missing remains reference-only P2, not mandatory SGK Core blocker; no fresh book PDF claim. This V2 handoff preserves the entire original 247-item crosswalk but binds updated source and composite author receipt; one source-locked ready manifest/REGISTER row and actual gate verification are required before CONTENT_READY. R1–R5/AP1–AP5 and owner merge/deploy remain RELEASE.
+
+
+## In-place authoring math correction — one source to hand off
+
+At existing ACADEMIC_SOURCE_PATH, teaching section TOP18-O03 now explicitly distinguishes vector sums from segment lengths. Rigorous triangle/parallelogram/box vector relations have arrows and a reasoned worked solution. First Try T03 plus every Practice/Written/Selfcheck answer, math key, rubric, current 247 canonical identities, SVG links and 12 question-only replays remain unchanged. The previous source-only READY R06 cannot be carried over by assumption; affected Q18 maths now rechecked on current source, but current branch awaits final HEAD and ready/REGISTER validation. No new source filename, no website integration/merge/deploy.
