@@ -9,8 +9,8 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: ae8bffe04a7c52e062c933739bafceb5412a8270
-SOURCE_BLOB: ae8bffe04a7c52e062c933739bafceb5412a8270
+ACADEMIC_SOURCE_BLOB: 7ee09cea9c33e2ae520a1a40df694ab7118adb42
+SOURCE_BLOB: 7ee09cea9c33e2ae520a1a40df694ab7118adb42
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
 AUTHOR_METADATA_BLOB: 69b1cae6ebda31d510efd1a8d7b6b7e5c3086d2c
 ORIGINAL_R00_SOURCE_BLOB: baa6c6c575a4cf79187b2aebd2047b1cf872b983
@@ -112,3 +112,8 @@ Một đoạn hướng dẫn ở phần **Tự kiểm tra** trước đây nói 
 ## Follow-up source typography — same learner file (17/11/2026)
 
 Read the source after the R03 learner-prelude correction. The only further learner edit is **Knowledge 3D frustum exploration line 326**: two escaped Markdown backtick substrings `\\`a=6\\``, `\\`h=4\\`` were visibly malformed. Corrected both to mathematical `\\(a=6\\)`, `\\(h=4\\)`; the numerical meanings, explanation and volume V=84 cm³ are identical. Exact source review: **57/57** canonical/public markers, **49/49** voluntary answer disclosures, **8/8** question-only selfcheck stems and entire Selfcheck section byte-identical; original SVG/geometry/answer/rubrics untouched. `DELTA_B_SOURCE_EQUIVALENT`, affected-scope `AUTHOR_SELF_VERIFIED` source QA PASS; not a new independent review and not actual browser AP2 PASS. New learner source `ae8bffe04a7c52e062c933739bafceb5412a8270`, historic R03 source remains in Git history. No parallel learner file. Corrected same existing receipt/handoff/ready/REGISTER at new SHA; no website/release change.
+
+
+## Follow-up R04 — Q09/Q13/Q14: standalone chóp cụt self-discovery (17/11/2026)
+
+A real learner dependency was found: Knowledge TOP17-O10 asked the student to “thay thanh trượt” to understand frustum volume while the linked model existed only as an **AUTHOR_ONLY_MODEL_REFERENCE**, not an embedded guaranteed learner interaction. The source is now **self-contained without model availability**: for 0≤k≤1, big square a=6, small side 6k, height 4, derive S=36, S′=36k², √(SS′)=36k, V=(4/3)(36+36k+36k²)=48(1+k+k²) cm³. Verify k=0 ⇒ 48 (pyramid), k=1/2 ⇒ 84 (frustum), k=1 ⇒ 144 (prism). Values, conditions, limits and units checked independently; the square root simplifies to 36k **only because k≥0**. This replacement is **DELTA_C_PED_ACADEMIC_MATERIAL** on one Knowledge learner line (L326). It does not create an additional canonical question or reveal key before the corresponding voluntary First Try. Previous worked Example V=84 remains mathematically consistent. Source exact QA: all 49 answer disclosures, public selfcheck 8 question-only replays, original Knowledge/Practice item markers and SVG references unchanged; entire Practice and Selfcheck byte-identical. **No new learner file**; existing Q18 receipt updated. `AUTHOR_SELF_VERIFIED` affected Q04/Q09/Q13/Q14 PASS; browser UI and independent all-topic NotebookLM verdict NOT claimed. Original signed R02 receipt remains historical in Git, not new active teacher-source. Current SOURCE_BLOB: 7ee09cea9c33e2ae520a1a40df694ab7118adb42.
