@@ -6,7 +6,7 @@
 
 Một lượt quay số tại hội chợ có những kết quả nào? Nếu kết quả nằm trong hai nhóm thưởng, có bị tính trùng không? Hai lượt chơi có thực sự độc lập? Em sẽ học cách mô tả đúng không gian mẫu và biến cố trước, rồi mới chọn phép đếm, quy tắc cộng hoặc nhân. Kiến thức về tập hợp, phân số và đếm theo bước được nhắc lại tại chỗ; không phải hoàn thành một chuyên đề khác mới học được.
 
-**Cách học:** Em hãy tự làm từng câu Vận dụng trước, sau đó chủ động mở phần Đối chiếu để hiểu cách giải và nhận ra lỗi sai. Những bài đã xem lời giải dùng để ôn luyện, không thay thế bài Tự kiểm tra độc lập.
+**Cách học:** Em hãy tự làm từng câu Vận dụng trước, sau đó chủ động mở phần Đối chiếu để hiểu cách giải và nhận ra lỗi sai. Những bài đã xem lời giải giúp em ôn luyện; phần Tự kiểm tra công khai ở cuối chuyên đề cũng dùng lại câu đã học, nên không phải bài đánh giá độc lập.
 
 ## 1. Mô hình ngẫu nhiên
 
@@ -779,7 +779,7 @@ Ba câu đều đếm bằng **nhóm không thứ tự**, nên cách lập tỉ 
 - Chọn biến cố đối hai phiếu xanh với C(5,2)=10 — **1 điểm**.
 - Tính 1−10/28=9/14 và diễn giải ít nhất một đỏ — **1 điểm**.
 
-**Khi làm sai:** Nếu dùng 3 nhóm đỏ thuận lợi nhưng chia cho 56 cặp có thứ tự, em đã trộn hai cách đếm. Đếm nhất quán theo **nhóm không thứ tự** cho \(3/28\); nếu đếm theo **cặp có thứ tự**, phải dùng \(6/56\), vẫn bằng \(3/28\). Hãy xem lại mục Kiến thức 1.4 và bài Luyện tập 2.7. Với câu “ít nhất một đỏ”, biến cố đối là **cả hai phiếu xanh**, không phải “đúng một đỏ”; xem lại mục Kiến thức 1.3 và bài Luyện tập 2.8.
+**Khi làm sai:** Nếu dùng 3 nhóm đỏ thuận lợi nhưng chia cho 56 cặp có thứ tự, em đã trộn hai cách đếm. Đếm nhất quán theo **nhóm không thứ tự** cho \(3/28\); nếu đếm theo **cặp có thứ tự**, phải dùng \(6/56\), vẫn bằng \(3/28\). Hãy xem lại mục Kiến thức 1.4 và Bài luyện 7 (mục Luyện tập 1.7 — Chọn nhóm không xét thứ tự). Với câu “ít nhất một đỏ”, biến cố đối là **cả hai phiếu xanh**, không phải “đúng một đỏ”; xem lại mục Kiến thức 1.3 và Bài luyện 8 (mục Luyện tập 1.8 — Ít nhất một và biến cố đối).
 
 </details>
 
@@ -805,7 +805,7 @@ Ba câu đều đếm bằng **nhóm không thứ tự**, nên cách lập tỉ 
 - Áp dụng cộng tổng quát để được 5/6 — **1 điểm**.
 - So 1/6 với 1/4, kết luận không độc lập và nêu lý do — **1 điểm**.
 
-**Khi làm sai:** Nếu tính \(P(A\cup B)=1\), em đã quên trừ phần giao \(\{2\}\) được đếm hai lần. Hãy xem lại hình Venn ở mục Kiến thức 2.1 và luyện bài 2.14. Nếu kết luận hai biến cố độc lập chỉ vì chúng có kết quả chung, hãy kiểm lại \(P(A\cap B)=1/6\) và \(P(A)P(B)=1/4\): hai giá trị khác nhau. Xem thêm mục Kiến thức 2.2 và bài Luyện tập 2.13.
+**Khi làm sai:** Nếu tính \(P(A\cup B)=1\), em đã quên trừ phần giao \(\{2\}\) được đếm hai lần. Hãy xem lại hình Venn ở mục Kiến thức 2.1 và làm lại Bài luyện 14 (mục Luyện tập 2.4 — Quy tắc cộng xác suất). Nếu kết luận hai biến cố độc lập chỉ vì chúng có kết quả chung, hãy kiểm lại \(P(A\cap B)=1/6\) và \(P(A)P(B)=1/4\): hai giá trị khác nhau. Xem thêm mục Kiến thức 2.2 và Bài luyện 13 (mục Luyện tập 2.3 — Phân biệt xung khắc và độc lập).
 
 </details>
 
@@ -833,7 +833,7 @@ Trước hết, đồng xu cân đối có xác suất ngửa \(P(A)=1/2\). Xúc
 - Tính hợp 1/2+1/3−1/6=2/3 — **1 điểm**.
 - Lấy biến cố đối để được 1/3, giải thích cả hai đều không xảy ra — **1 điểm**.
 
-**Khi làm sai:** Nếu câu (a) ra \(5/6\), em đã tính hợp thay cho giao. Với yêu cầu “cả A và B”, hãy xem lại phép nhân cho hai biến cố độc lập ở mục Kiến thức 2.4 và bài Luyện tập 2.16. Nếu câu (b) ra \(1/6\), em mới tính giao, chưa tính hợp; trở lại quy tắc cộng ở mục Kiến thức 2.3 và bài Luyện tập 2.14. Nếu câu (c) ra \(2/3\), em quên lấy biến cố đối của hợp: “cả A và B đều không xảy ra” chính là phần còn lại sau “ít nhất một trong hai xảy ra”.
+**Khi làm sai:** Nếu câu (a) ra \(5/6\), em đã tính hợp thay cho giao. Với yêu cầu “cả A và B”, hãy xem lại phép nhân cho hai biến cố độc lập ở mục Kiến thức 2.4 và Bài luyện 16 (mục Luyện tập 2.6 — Quy tắc nhân cho hai phép thử độc lập). Nếu câu (b) ra \(1/6\), em mới tính giao, chưa tính hợp; trở lại quy tắc cộng ở mục Kiến thức 2.3 và Bài luyện 14 (mục Luyện tập 2.4 — Áp dụng quy tắc cộng xác suất). Nếu câu (c) ra \(2/3\), em quên lấy biến cố đối của hợp: “cả A và B đều không xảy ra” chính là phần còn lại sau “ít nhất một trong hai xảy ra”.
 
 </details>
 
