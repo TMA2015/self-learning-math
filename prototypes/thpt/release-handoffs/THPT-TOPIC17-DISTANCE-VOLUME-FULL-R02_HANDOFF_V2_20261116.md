@@ -1,6 +1,6 @@
 # CĐ17 · Khoảng cách & Thể tích khối đa diện · AUTHORING V2 — bản thảo hiệu lực R03
 
-**AUTHORING SINGLE_SOURCE_QA_HOLD**, academic/PED self-author-verified `SLM-THPT-QUALITY-ONE v3.1.0` one Q01–Q18 standard; **not** an independent NotebookLM PASS, not website RELEASE readiness or owner merge/deploy permission. PLAN22-17 follows historical NotebookLM 22-topic study proposal, not a locked runtime `TOPIC_ID`.
+**AUTHORING CONTENT_READY_CANDIDATE, SOURCE-ONLY**, academic/PED self-author-verified `SLM-THPT-QUALITY-ONE v3.1.0` one Q01–Q18 standard; **not** an independent NotebookLM PASS, not website RELEASE readiness or owner merge/deploy permission. PLAN22-17 follows historical NotebookLM 22-topic study proposal, not a locked runtime `TOPIC_ID`.
 
 PACKET_ID: THPT-TOPIC17-DISTANCE-VOLUME-FULL-R02
 CONTENT_REVISION: R03
@@ -29,7 +29,7 @@ SVG_B26_BLOB: 26fb51f3af65ba7d86a2907f0eaff808d2d87532
 SVG_B27_BLOB: a7bec7a20295d09ca6f32aae0e8910cef7bed9dc
 ACADEMIC_VERDICT: SELF_VERIFIED
 PEDAGOGICAL_VERDICT: SELF_VERIFIED
-BLOCKERS: R03_ONE_ACTIVE_SOURCE_QA_HEAD_AND_REGISTER_PENDING
+BLOCKERS: NONE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
@@ -245,3 +245,6 @@ RELEASE not integrated or website-tested (AP1–AP5, Golden R4/Adaptive Knowledg
 ## R03 · One effective learner draft policy
 
 This handoff retains its prior file path and packet identifier for stable links but now points to the **same learner source file edited in place**, R03 blob `76b8a10c12e2a60fa155901d153f17c9982193c4`. The former R02 source and its signed receipt live in Git history only, not as an additional learner file for RELEASE intake. The changed learner-facing selfcheck wording tells students how to solve and self-check; 12 outcomes, 49 unique canonical items, 57 placements, 8 public question-only selfcheck references and all math/solutions/rubrics/assets are unchanged. The original Q18 receipt file has been updated in place with source-scoped R03 QA; no parallel R03 review file is accepted. **Release Intake must not use R02 CONTENT_READY status for this edited source** until the ready manifest and REGISTER are explicitly reconciled, source-scope workflows passed on current head, and owner chooses to hand off. No integration/merge/deploy.
+
+
+**Current source handoff:** Source-specific Q18 author self-QA for the changed math/editorial portion is complete, immutable predecessor source preserved in Git, one learner source and matching A1/V2/ready/REGISTER selected. No website/AP/RELEASE PASS or merge/deploy implied. A separate CI on HEAD is required before release intake acceptance.
