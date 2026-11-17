@@ -235,6 +235,23 @@ function expectedG10KnowledgeBlob(lesson,legacy){
     assert(r04.includes(token),
      "B07 R04 source/assessment receipt lacks "+token);
    }
+   const r05Path=path.join(root,
+    "prototypes/thpt/ux795/G10_CHIV_B07_SEMANTIC_CONCEPT_RECAP_DELTA_R05_20261117.md");
+   if(fs.existsSync(r05Path)){
+    const r05=fs.readFileSync(r05Path,"utf8");
+    const field05=k=>r05.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    assert.equal(field05("BASELINE_R04_SOURCE_BLOB"),next,
+     "B07 semantic R05 must extend exact historical R04 publication");
+    const final=field05("R05_SOURCE_BLOB");
+    assert(/^[a-f0-9]{40}$/.test(final||"")&&final!==next,
+     "B07 semantic R05 must carry distinct exact source SHA");
+    for(const token of ["B07-F01","G10-SEM-01","X-F.3",
+       "Định nghĩa — Vectơ","Kiến thức cần nhớ — Mục 2.2",
+       "THPT-G10-CHIV-TRY01"]){
+      assert(r05.includes(token),"B07 R05 full semantic gate receipt missing "+token);
+    }
+    return final;
+   }
    return next;
   }
   return source;
