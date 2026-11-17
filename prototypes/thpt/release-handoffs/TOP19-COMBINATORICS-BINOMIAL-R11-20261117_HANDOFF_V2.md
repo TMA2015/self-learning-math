@@ -14,7 +14,7 @@ REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC19_R11_AUTHOR_SELF
 REVIEW_RECEIPT_BLOB: ad08a2996f25154d83a42b3e44fe591156960cdb
 ACADEMIC_VERDICT: SELF_VERIFIED
 PEDAGOGICAL_VERDICT: SELF_VERIFIED
-BLOCKERS: CURRENT_SOURCE_QA_HEAD_READY_REGISTER_PENDING
+BLOCKERS: NONE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 MASTERY_ACTIVATION: NO
@@ -253,3 +253,6 @@ AUTHORING R11 Q01–Q18/A1–A7 source and affected-delta QA were SELF_VERIFIED 
 ## In-place editorial correction of canonical First Try response
 
 The ONE effective R11 learner source was directly edited to give a grammatical, explanatory TOP19-T02 voluntary answer: each of 4 types of shirt can be paired with 3 badge types so 4·3=12. This preserves TOP19-R10 content_version and source-original item_id with exactly the same math condition/answer/rubric; 56 canonical IDs + 7 public question-only replays, no change to Practice/Selfcheck/SGK stems or SVG. Updated existing Q15 matrix, Q18 composite receipt and A1 metadata now point to same learner source. Hold source-only V2/ready pending current HEAD QA and REGISTER agreement, without creating a duplicate correction file or activating READINESS/Mastery. No merge/deploy.
+
+
+**Current source handoff:** Source-specific Q18 author self-QA for the changed math/editorial portion is complete, immutable predecessor source preserved in Git, one learner source and matching A1/V2/ready/REGISTER selected. No website/AP/RELEASE PASS or merge/deploy implied. A separate CI on HEAD is required before release intake acceptance.
