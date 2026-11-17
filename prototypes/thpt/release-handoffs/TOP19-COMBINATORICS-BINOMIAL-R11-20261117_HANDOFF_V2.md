@@ -9,12 +9,12 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R11_P2_CANONICAL_LABEL_LEARNER_CLARITY_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: 8f7d149c0359ac895fb2d04496d46e2294511123
+ACADEMIC_SOURCE_BLOB: 32721032973866087dcc4b8981e33d4bf3391c8d
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC19_R11_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md
-REVIEW_RECEIPT_BLOB: 2669873f807ec19f008ce5476884b883c391289d
+REVIEW_RECEIPT_BLOB: ad08a2996f25154d83a42b3e44fe591156960cdb
 ACADEMIC_VERDICT: SELF_VERIFIED
 PEDAGOGICAL_VERDICT: SELF_VERIFIED
-BLOCKERS: NONE
+BLOCKERS: CURRENT_SOURCE_QA_HEAD_READY_REGISTER_PENDING
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 MASTERY_ACTIVATION: NO
@@ -24,9 +24,9 @@ PRIVATE_RD1_SHA256: 6cc51485931317083b5ba673d490e5688a7538d4731dca29f002e804c0f9
 
 CONTENT_REVISION: R11
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_56_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_A1_A7_BLOB: 676f261b543f14013b67d9d8ec68e1265fcd07f5
+AUTHOR_A1_A7_BLOB: d0a24f0c009aac22932b4f51a3328d03bde6723d
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_56_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_METADATA_BLOB: 676f261b543f14013b67d9d8ec68e1265fcd07f5
+AUTHOR_METADATA_BLOB: d0a24f0c009aac22932b4f51a3328d03bde6723d
 
 ## R09 IMMUTABLE BASELINE LEARNER SOURCE AND Q18
 
@@ -248,3 +248,8 @@ Source-specific R11 AUTHOR_SELF_QA receipt `prototypes/thpt/review-packets/Temp_
 ## AUTHOR_SIGNOFF
 
 AUTHORING R11 Q01–Q18/A1–A7 source and affected-delta QA were SELF_VERIFIED on these exact source/receipt blobs. This handoff remains candidate until one ready manifest+REGISTER and a positive source-lock V2 gate; old R09 CONTENT_READY remains valid on its immutable source SHA. 14 private candidates remain owner-held only by original SHA/count, no private body in GitHub. No website integration/merge/deploy/Release authorization.
+
+
+## In-place editorial correction of canonical First Try response
+
+The ONE effective R11 learner source was directly edited to give a grammatical, explanatory TOP19-T02 voluntary answer: each of 4 types of shirt can be paired with 3 badge types so 4·3=12. This preserves TOP19-R10 content_version and source-original item_id with exactly the same math condition/answer/rubric; 56 canonical IDs + 7 public question-only replays, no change to Practice/Selfcheck/SGK stems or SVG. Updated existing Q15 matrix, Q18 composite receipt and A1 metadata now point to same learner source. Hold source-only V2/ready pending current HEAD QA and REGISTER agreement, without creating a duplicate correction file or activating READINESS/Mastery. No merge/deploy.
