@@ -278,8 +278,10 @@ for(const [tag,rec]of Object.entries(transfer)){
      example.includes("**Lời giải:**"),"B10 river worked D2 must use exact-data desktop/mobile image and verified solution");
    }else assert(modelB.includes("#### Ví dụ có hướng dẫn — "+rec.ex),
      "Transfer worked method D2 "+tag);
-   assert(modelB.includes("THPT_G10_CHIV_"+tag+"_TRANSFER_D5_R01_CORRECTED.svg"),
-     "Transfer reviewed vector geometry D5 "+tag);
+   const D5=tag==="RIVER"?"THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg":
+     "THPT_G10_CHIV_"+tag+"_TRANSFER_D5_R01_CORRECTED.svg";
+   assert(modelB.includes(D5),
+     "Transfer must keep mathematically correct, source-locked diagram D5 "+tag);
    const at=modelB.indexOf('data-thpt-first-try-id="'+rec.stem+'"');
    const h=modelB.indexOf('data-thpt-help-id="'+rec.help+'"',at);
    assert(at>=0&&h>at&&/^\s*\?\?\? question "/m.test(modelB.slice(at,h)),
