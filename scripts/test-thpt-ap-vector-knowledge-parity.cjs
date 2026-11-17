@@ -119,8 +119,13 @@ for(const c of cases){
   field(b09r06,"PRIOR_R05_SOURCE_BLOB")===field(b09r05,"R05_SOURCE_BLOB")&&
   field(b09r06,"PRIOR_R05_CANONICAL_BLOB")===field(b09r05,"ONE_CANONICAL_LESSON_BLOB")&&
   field(b09r06,"R06_SOURCE_BLOB")===blob(src);
- const current=editorial[c.n]&&(blob(src)===editorial[c.n].sha||signedR02||signedR03||signedR04||signedR05||signedB08R04||signedB09R03||signedB09R05||signedB09R06);
- if(signedR02||signedR03||signedR04||signedR05||signedB08R04||signedB09R03||signedB09R05||signedB09R06)assert.equal(signedB09R06?field(b09r06,"R06_SOURCE_BLOB"):signedB09R05?field(b09r05,"R05_SOURCE_BLOB"):signedB09R03?field(b09r03,"R03_SOURCE_BLOB"):signedB08R04?field(b08r04,"R04_SOURCE_BLOB"):signedR05?field(r05,"R05_SOURCE_BLOB"):signedR04?field(r04,"R04_SOURCE_BLOB"):signedR03?
+ const b10R01=c.n===10?fs.readFileSync(path.join(__dirname,
+  "../prototypes/thpt/ux795/G10_CHIV_B10_S1_PED_SINGLE_CANONICAL_Q18_R01_20261118.md"),"utf8"):null;
+ const signedB10R01=c.n===10&&
+  field(b10R01,"BASELINE_B10_KNOWLEDGE_BLOB")===editorial[10].sha&&
+  field(b10R01,"R01_SOURCE_BLOB")===blob(src);
+ const current=editorial[c.n]&&(blob(src)===editorial[c.n].sha||signedR02||signedR03||signedR04||signedR05||signedB08R04||signedB09R03||signedB09R05||signedB09R06||signedB10R01);
+ if(signedR02||signedR03||signedR04||signedR05||signedB08R04||signedB09R03||signedB09R05||signedB09R06||signedB10R01)assert.equal(signedB10R01?field(b10R01,"R01_SOURCE_BLOB"):signedB09R06?field(b09r06,"R06_SOURCE_BLOB"):signedB09R05?field(b09r05,"R05_SOURCE_BLOB"):signedB09R03?field(b09r03,"R03_SOURCE_BLOB"):signedB08R04?field(b08r04,"R04_SOURCE_BLOB"):signedR05?field(r05,"R05_SOURCE_BLOB"):signedR04?field(r04,"R04_SOURCE_BLOB"):signedR03?
   field(r03,c.n===7?"R03_SOURCE_BLOB":"R03_CANDIDATE_SOURCE_BLOB"):
   field(r02,"R02_CANDIDATE_SOURCE_BLOB"),expectedG10KnowledgeBlob(c.n,c.sha),
   "B07/B08 exact immutable receipt-chain must match Q18 router");
@@ -153,7 +158,9 @@ for(const c of cases){
   "B"+c.n+": preserve original D5 and signed B09 decomposition figure");
  assert(!/PREREQUISITE_CONFIRMED|D5 kế thừa|CONTENT_READY:|data-mastery-credit/.test(src),
   "B"+c.n+": QA metadata/Mastery leaked");
- assert(src.includes("luyen-tap.md")&&src.includes("tu-kiem-tra-chuong.md"),
-  "B"+c.n+": Core and end-of-chapter deep links broken");
+ assert(signedB10R01?
+  src.includes("../luyen-tap/")&&src.includes("../tu-kiem-tra-chuong/"):
+  src.includes("luyen-tap.md")&&src.includes("tu-kiem-tra-chuong.md"),
+  "B"+c.n+": actual working relative Core and end-of-chapter deep links missing");
 }
 console.log("PASS G10 vector AP: historical FNV or current exact-S1 semantic maths, 16 First Try, 7 HELP, 4 SVG and four tabs.");
