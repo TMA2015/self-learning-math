@@ -171,7 +171,7 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
      assert((await blocks.nth(0).locator(":scope > h3").allInnerTexts()).every((v,i)=>v.trim().startsWith("1."+(i+1)+". ")),
       where+" discovery headings are visual-only numbered");
      const examples=await blocks.nth(2).locator(":scope > h3").allInnerTexts();
-     assert.equal(examples.length,[7,8].includes(lesson)?4:3,where+" B07/B08 have four distinct worked examples");
+     assert.equal(examples.length,[7,8,9].includes(lesson)?4:3,where+" owner-scoped B07/B08 and B09 S1 have four worked examples");
      assert(examples.every((v,i)=>v.trim().startsWith("3."+(i+1)+". Ví dụ "+(i+1)+([7,8].includes(lesson)?" —":". "))),
       where+" numbered visual example headings");
      assert.equal(await blocks.nth(2).locator(".thpt-g10-example-solution").count(),[7,8].includes(lesson)?4:3,
