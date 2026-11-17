@@ -49,10 +49,14 @@ function validate(source, agents, queue) {
  }
  const approvalStatus=(source.match(/^\*\*STATUS:\*\*\s*\x60([A-Z0-9_]+)\x60/m)||[])[1];
  if(["2.0.0","3.0.0","3.0.1","3.1.0","3.2.0"].includes(version)){
-   if(version==="3.1.0"){
+   if(version==="3.2.0"){
+     if(approvalStatus!=="OWNER_APPROVED_EFFECTIVE_AFTER_MERGE")
+       fail("V3_2_OWNER_APPROVAL_NOT_EXPLICIT");
+   }else if(version==="3.1.0"){
      if(approvalStatus!=="OWNER_APPROVED_EFFECTIVE")
        fail("SGK_V3_1_OWNER_EDITORIAL_APPROVAL_STATUS_REQUIRED");
-   }else if(approvalStatus!=="OWNER_APPROVED_EFFECTIVE")fail("Q18_V2_OWNER_EFFECTIVE_STATUS_REQUIRED");
+   }else if(approvalStatus!=="OWNER_APPROVED_EFFECTIVE")
+     fail("Q18_V2_OWNER_EFFECTIVE_STATUS_REQUIRED");
    const contract=fs.readFileSync(path.join(ROOT,"prototypes/thpt/THPT_TWO_LANE_SOURCE_LOCKED_HANDOFF_CONTRACT_v2_20261102.md"),"utf8");
    const policy07=fs.readFileSync(path.join(ROOT,"prototypes/thpt/standard-changes/07_THPT_NOTEBOOKLM_BATCH_AND_DELTA_REVIEW_POLICY_v1.2_20261110.md"),"utf8");
    for(const token of ["OWNER APPROVED Q18 v2.0 OPERATIONAL SUPERSESSION","ENRICHMENT_DELTA_RECEIPT","TOPIC"])
@@ -109,8 +113,7 @@ function validate(source, agents, queue) {
      "### X-F.3. Bộ thành phần toán cần làm nổi bật nhất quán",
      "Owner-approved 17/11/2026",
      "FORMAL_DEFINITION","FORMAL_RULE","MANDATORY_RECAP","KEY_FORMULA",
-     "G0–G5","Ghi nhớ","OWNER_APPROVED_20261117",
-     "một chuẩn gốc","DELTA_C_ACADEMIC_MATERIAL"
+     "G0–G5","Ghi nhớ","Một chuẩn gốc","DELTA_C_ACADEMIC_MATERIAL"
    ]){
     if(!source.includes(token))fail("V3_2_SEMANTIC_CONTROL_MISSING:"+token);
    }
