@@ -94,9 +94,11 @@
 
     #### 2.1.1. Định nghĩa tổng: phép nối đuôi–đầu
 
-    **Cho hai vectơ \(\vec u,\vec v\).** Chọn một điểm \(A\) tùy ý, dựng \(\overrightarrow{AB}=\vec u\), rồi từ \(B\) dựng \(\overrightarrow{BC}=\vec v\). Vectơ nối từ **điểm đầu của vectơ thứ nhất** đến **điểm cuối của vectơ thứ hai** là tổng \(\vec u+\vec v\).
+    **Cách hình thành:** Cho hai vectơ \(\vec u,\vec v\). Chọn điểm \(A\) tùy ý, dựng \(\overrightarrow{AB}=\vec u\), rồi từ \(B\) dựng \(\overrightarrow{BC}=\vec v\). Ta có một mũi tên nối trực tiếp từ \(A\) đến \(C\).
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Quy tắc ba điểm:</strong> Với ba điểm \(A,B,C\) bất kì, \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}\). Đặc biệt, điểm cuối \(B\) của vectơ thứ nhất phải trùng điểm đầu \(B\) của vectơ thứ hai.</div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Tổng hai vectơ:</strong> Vectơ \(\overrightarrow{AC}\) dựng như trên gọi là <strong>tổng</strong> của \(\vec u\) và \(\vec v\), kí hiệu \(\vec u+\vec v=\overrightarrow{AC}\). Phép lấy tổng được gọi là <strong>phép cộng vectơ</strong>. Kết quả không phụ thuộc vào vị trí chọn điểm đầu \(A\).</div>
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc ba điểm:</strong> Với ba điểm \(A,B,C\) bất kì, \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}\). Để áp dụng, ghép <strong>điểm cuối \(B\)</strong> của vectơ thứ nhất với <strong>điểm đầu \(B\)</strong> của vectơ thứ hai; kết quả có hướng từ \(A\) tới \(C\).</div>
 
     Không cần giữ nguyên vị trí mũi tên nếu muốn đặt lại chúng: **tịnh tiến** một vectơ song song với chính nó, không đổi độ dài và hướng, thì vẫn được cùng một vectơ. Nhưng tự ý đổi \(\overrightarrow{BC}\) thành \(\overrightarrow{CB}\) là **đổi hướng**, không còn cùng phép cộng ban đầu.
 
@@ -104,27 +106,34 @@
 
     **Cho hình bình hành \(ABCD\).** Hai vectơ \(\overrightarrow{AB},\overrightarrow{AD}\) chung gốc \(A\). Dựng đường chéo \(AC\) xuất phát từ \(A\); nó biểu diễn tổng hai vectơ theo quy tắc hình bình hành.
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Quy tắc hình bình hành:</strong> Nếu \(ABCD\) là hình bình hành thì \(\overrightarrow{AB}+\overrightarrow{AD}=\overrightarrow{AC}\). Quy tắc này chính là quy tắc nối đuôi–đầu khi tịnh tiến một vectơ; không phải quy tắc cộng độ dài \(AB+AD=AC\).</div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc hình bình hành:</strong> Nếu \(ABCD\) là hình bình hành, thì \(\overrightarrow{AB}+\overrightarrow{AD}=\overrightarrow{AC}\). Hai vectơ hạng tử <strong>chung gốc \(A\)</strong>, còn vectơ tổng theo đường chéo từ \(A\). Đây là quy tắc cộng vectơ, <strong>không</strong> phải đẳng thức độ dài \(AB+AD=AC\).</div>
 
     Hãy quay lại hình ở mục 1.1 và chỉ ra hai cách dựng cho cùng kết quả. Với hai lực \(\vec F_1,\vec F_2\) tác dụng tại một điểm, hợp lực theo mô hình hình bình hành là \(\vec F_1+\vec F_2\). **Độ lớn** hợp lực còn phụ thuộc góc giữa hai lực: không tự cộng hai số N nếu hai vectơ không cùng hướng.
 
     #### 2.1.3. Tính chất: thứ tự cộng và vectơ-không
 
-    Với ba vectơ bất kì \(\vec u,\vec v,\vec w\), phép cộng có tính **giao hoán** \(\vec u+\vec v=\vec v+\vec u\), **kết hợp** \((\vec u+\vec v)+\vec w=\vec u+(\vec v+\vec w)\); vectơ-không là phần tử trung hòa \(\vec u+\vec0=\vec u\). Tính chất giao hoán nói **vectơ tổng** không đổi, không có nghĩa hai chặng đường thực tế đã đi theo cùng thứ tự.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất phép cộng vectơ:</strong> Với mọi \(\vec u,\vec v,\vec w\):
+    <ul><li><strong>Giao hoán:</strong> \(\vec u+\vec v=\vec v+\vec u\).</li><li><strong>Kết hợp:</strong> \((\vec u+\vec v)+\vec w=\vec u+(\vec v+\vec w)\).</li><li><strong>Vectơ-không:</strong> \(\vec u+\vec0=\vec0+\vec u=\vec u\).</li></ul></div>
 
-    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Ghi nhớ cách đọc hình:</strong> Vectơ tổng có một hướng và một độ dài riêng. Quãng đường của hai chặng bằng tổng độ dài hai chặng, nhưng độ lớn vectơ tổng chỉ bằng con số đó khi hai chặng thẳng hàng và cùng chiều.</div>
+    **Ghi nhớ cách đọc hình:** Giao hoán nghĩa là <strong>vectơ tổng</strong> không đổi, không có nghĩa hai chặng đường thực tế đã đi theo cùng thứ tự. Tổng độ dài hai chặng là quãng đường; độ dài vectơ tổng chỉ bằng số đó khi hai vectơ cùng hướng (hoặc một vectơ bằng không).
 
     ### 2.2. Hiệu của hai vectơ
 
     #### 2.2.1. Vectơ đối và phép trừ
 
-    **Cho vectơ \(\vec u\).** Vectơ đối \(-\vec u\) có độ dài bằng \(\vec u\) và ngược hướng (vectơ-không là vectơ đối của chính nó). Vì vậy \(\overrightarrow{BA}=-\overrightarrow{AB}\) với hai điểm \(A,B\).
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Vectơ đối:</strong> Với \(\vec u\ne\vec0\), vectơ đối của \(\vec u\), kí hiệu \(-\vec u\), là vectơ có <strong>cùng độ dài, ngược hướng</strong> với \(\vec u\). Vectơ-không là vectơ đối của chính nó: \(-\vec0=\vec0\). Do đó \(\overrightarrow{BA}=-\overrightarrow{AB}\).</div>
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa hiệu:</strong> Với hai vectơ \(\vec u,\vec v\), \(\vec u-\vec v=\vec u+(-\vec v)\). Phải đổi chiều **vectơ bị trừ** rồi mới cộng, không đổi chiều cả hai.</div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Hiệu hai vectơ:</strong> Với hai vectơ \(\vec u,\vec v\), <strong>hiệu</strong> \(\vec u-\vec v\) được xác định bởi \(\vec u-\vec v=\vec u+(-\vec v)\). Phép lấy hiệu gọi là <strong>phép trừ vectơ</strong>.</div>
+
+    **Lưu ý khi trừ:** Chỉ đổi hướng <strong>vectơ bị trừ</strong> \(\vec v\), rồi áp dụng quy tắc cộng; không đổi chiều cả hai vectơ.
 
     #### 2.2.2. Quy tắc trừ: hai vectơ chung gốc
 
-    **Cho ba điểm \(A,B,C\).** Hai vectơ \(\overrightarrow{AB},\overrightarrow{AC}\) cùng gốc \(A\). Hiệu của chúng là
+    **Cho ba điểm \(A,B,C\).** Hai vectơ \(\overrightarrow{AB},\overrightarrow{AC}\) cùng gốc \(A\). Dùng định nghĩa hiệu và quy tắc ba điểm để xác định hướng của vectơ kết quả.
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc hiệu hai vectơ chung gốc:</strong> Với ba điểm \(A,B,C\) bất kì, \(\overrightarrow{AB}-\overrightarrow{AC}=\overrightarrow{CB}\). Hãy lấy vectơ nối <strong>từ điểm cuối \(C\) của vectơ bị trừ đến điểm cuối \(B\) của vectơ đứng trước</strong>.</div>
+
+    <div class="thpt-r4-key-formula" role="note"><strong>Kiểm chứng công thức:</strong>
 
     \[
     \overrightarrow{AB}-\overrightarrow{AC}
@@ -132,15 +141,30 @@
     =\overrightarrow{CB}.
     \]
 
-    Cách kiểm: nối \(C\to A\to B\), tức bắt đầu ở \(C\) và kết thúc ở \(B\), nên kết quả phải có hướng \(C\to B\), không phải \(B\to C\).
+    </div>
+
+    **Cách kiểm:** Nối \(C\to A\to B\), tức đi từ \(C\) đến \(B\), không phải \(B\to C\).
 
     #### 2.2.3. Vận dụng tổng/hiệu cho trung điểm và trọng tâm
 
-    **Cho đoạn thẳng \(AB\)** có trung điểm \(M\). Hai vectơ từ \(M\) đến \(A\) và \(B\) đối nhau: \(\overrightarrow{MA}+\overrightarrow{MB}=\vec0\). Ngược lại, nếu \(A\ne B\), đây cũng là điều kiện đủ để \(M\) là trung điểm \(AB\).
+    **Cho đoạn thẳng \(AB\)** có trung điểm \(M\). Hai vectơ \(\overrightarrow{MA}\) và \(\overrightarrow{MB}\) đối nhau, nên tổng bằng \(\vec0\). Ngược lại, khi \(A\ne B\), điều kiện này cũng đủ để \(M\) là trung điểm \(AB\).
 
-    **Cho tam giác \(ABC\)** có \(M\) là trung điểm \(BC\), \(G\) là trọng tâm. Từ quy tắc cộng ta có \(\overrightarrow{GB}+\overrightarrow{GC}=2\overrightarrow{GM}\); vì \(\overrightarrow{GA}=-2\overrightarrow{GM}\), suy ra \(\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0\). Với một điểm \(E\) bất kì, \(\overrightarrow{EB}+\overrightarrow{EC}=2\overrightarrow{EM}\). Mọi công thức trên là **đẳng thức vectơ**, không phải đẳng thức giữa các độ dài.
+    **Cho tam giác \(ABC\)** có \(M\) là trung điểm \(BC\), \(G\) là trọng tâm. Theo quy tắc ba điểm, \(\overrightarrow{GB}=\overrightarrow{GM}+\overrightarrow{MB}\) và \(\overrightarrow{GC}=\overrightarrow{GM}+\overrightarrow{MC}\). Hai vectơ \(\overrightarrow{MB},\overrightarrow{MC}\) đối nhau, do đó \(\overrightarrow{GB}+\overrightarrow{GC}=\overrightarrow{GM}+\overrightarrow{GM}\). Vì \(G\) nằm trên trung tuyến \(AM\) và \(AG=2GM\), vectơ \(\overrightarrow{GA}\) đối với tổng vừa tìm; suy ra hệ thức trọng tâm.
 
-    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Ghi nhớ khi vận dụng:</strong> Ghi rõ điểm, đường trung tuyến và trung điểm trước khi thay vào công thức. Kiểm cả hướng lẫn độ dài; không dùng công thức trọng tâm cho một điểm \(G\) bất kì chưa có điều kiện là trọng tâm.</div>
+    <div class="thpt-r4-key-formula" role="note"><strong>Hệ thức trọng tâm và trung điểm (khi đúng điều kiện hình):</strong>
+
+    \[
+    \overrightarrow{MA}+\overrightarrow{MB}=\vec0,\qquad
+    \overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0.
+    \]
+
+    </div>
+
+    **Lưu ý:** Đây là <strong>đẳng thức vectơ</strong>, không phải tổng độ dài. Kí hiệu nhân vectơ với một số, chẳng hạn \(2\overrightarrow{GM}\), sẽ học ở Bài 9; tại đây phép cộng \(\overrightarrow{GM}+\overrightarrow{GM}\) đã đủ để hiểu lập luận. Với \(E\) bất kì và \(M\) là trung điểm \(BC\), cũng có \(\overrightarrow{EB}+\overrightarrow{EC}=\overrightarrow{EM}+\overrightarrow{EM}\).
+
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ — Bài 8:</strong> Tổng vectơ được xác định bằng cách nối đuôi–đầu; quy tắc ba điểm và hình bình hành giúp dựng tổng. Hiệu là tổng với vectơ đối. Khi trừ hai vectơ chung gốc, kết quả hướng từ <strong>điểm cuối vectơ bị trừ</strong> đến <strong>điểm cuối vectơ đứng trước</strong>. Các đẳng thức trung điểm/trọng tâm chỉ áp dụng khi đủ điều kiện hình học.</div>
+
+    **Ghi nhớ khi vận dụng:** Xác định đúng các điểm, trung điểm, đường trung tuyến trước khi dùng hệ thức. Kiểm hướng rồi mới kiểm độ dài; không gán tính chất trọng tâm cho một điểm \(G\) bất kì.
 
 === "Ví dụ"
 
