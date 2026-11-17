@@ -7,8 +7,8 @@ QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: BLOCKED_BY_AUTHORING
-SOURCE_COMMIT: 32f347f40ce1b9542161f6b5dd2700160c7a8e89
+STATE: CONTENT_READY
+SOURCE_COMMIT: e9433a775e85c124d233537322b5a0a83e54a4e0
 CATALOG_TOPIC_ID: CD17
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
@@ -30,7 +30,7 @@ ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
-BLOCKERS: R03_HEAD_CI_QA_AND_SINGLE_ACTIVE_REGISTER_RECONCILIATION_PENDING
+BLOCKERS: NONE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
@@ -76,3 +76,6 @@ CURRENT_PR: DRAFT_AUTHORING_NOT_MERGED
 ## R03 readiness condition (17/11/2026)
 
 This *existing* ready manifest now explicitly refuses intake as CONTENT_READY after an in-place learner-facing editorial edit. The single active source has had its student-facing selfcheck guidance corrected and 8/8 public question stems plus every answer, rubric and SVG preserved; affected Q18 and V2 updated in place. Waiting for exact current HEAD source-scope/CI and REGISTER confirmation before AUTHORING can legitimately return state to CONTENT_READY. Historical R02 snapshot remains accessible by Git commit, not by a parallel learner file. Website/RELEASE and owner merge/deploy authority unchanged.
+
+
+**Current AUTHORING source-specific verdict after QA correction:** The only effective learner source is the corrected file already named in ACADEMIC_SOURCE_PATH. All affected academic/PED explanations were read and checked; question stems, answers, rubric and public selfcheck were parity-checked. This READY concerns **authoring source handoff only**. The CI source-lock check on this final HEAD and website/runtime/AP gates are separate and must PASS before RELEASE, merger or deployment; this paragraph grants no such authority.
