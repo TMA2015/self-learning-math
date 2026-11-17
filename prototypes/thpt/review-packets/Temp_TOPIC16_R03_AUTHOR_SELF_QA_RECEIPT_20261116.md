@@ -9,10 +9,10 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_PERPENDICULARITY_R03_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 0adf45aa8d776634d66f5c8e57b1c86ad77c8ed2
-SOURCE_BLOB: 0adf45aa8d776634d66f5c8e57b1c86ad77c8ed2
+ACADEMIC_SOURCE_BLOB: ad3fdadb2b6a7150118c2534bf02cf9563f92e26
+SOURCE_BLOB: ad3fdadb2b6a7150118c2534bf02cf9563f92e26
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_R03_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: ac13670a4b1d0c0acf7f69553ef2634ea704aa16
+AUTHOR_METADATA_BLOB: 8424bdccdbf5ea6041da60fea5ea063e90f8b388
 ORIGINAL_R01_SOURCE_BLOB: 0e934389ebfe239ace19cc23c5dedf9c23d8ebdc
 ORIGINAL_R02_EDITORIAL_CANDIDATE_BLOB: 60f69d43bfa3f4508e8c7a787bad517141f9b2b2
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
@@ -22,7 +22,7 @@ PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
 P2: 0
-AUTHOR_SIGNOFF: TOP16_R03_21_OUTCOMES_86_CANONICAL_108_DIRECT_CHECKS_20261116
+AUTHOR_SIGNOFF: TOP16_R03_20261118_RECAP_Q18_ad3fdadb2b6a7150118c2534bf02cf9563f92e26
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
@@ -106,3 +106,10 @@ ASSESSMENT_Q16: Eight question-only public replay stems shown, no hint/key/corre
 - Original SVG B22 `5f2d23adb6f947064312d04d67ce5a5bb2d1ff48`, B23 `b53b65704f9830e1c97b533bac0e79a0b56761b6`, B24 `c98d7df30b87c339336636e00322816a4099681b`, B25 `3f6112a7b12f1829ee2249b979d45f1f5370fc66` all exact Git blob. Interactive model source R01 `e14ee4c6ec6c851f228352656b0cd8e2fc3a2a06` unchanged.
 - R03 includes `DELTA_C_ACADEMIC_MATERIAL` on learner-first exploration and examples (new 21 worked problems), `DELTA_B_SOURCE_EQUIVALENT` display-only SGK/unchanged 24 Topic solution bodies. No source status from R01/R02 transferred.
 - Q01–Q18/A1–A7 `AUTHOR_SELF_VERIFIED_PASS`, `P0=P1=0` in author source scope. One new R03 V2+ready/REGISTER to source-lock this snapshot. **No independent NotebookLM PASS, no site Q16 Final Submit/Golden browser QA, no physical Safari, no merge/deploy or production permission.**
+
+## 18/11/2026 — targeted active learner recall verification
+
+- Exact current SOURCE_BLOB `ad3fdadb2b6a7150118c2534bf02cf9563f92e26` vs original signed R03 `0adf45aa8d776634d66f5c8e57b1c86ad77c8ed2`: the **only difference** is one student four-bullet recall block before Luyện tập; 21 detailed explanations, 86 canonical ID bodies/stems/answer/rubrics/D6, all public Selfcheck and four SVG references remain byte-exact. The historical `51+57` original assertions remain valid only on original R03, not claimed as rerun whole Topic.
+- B22/O01: angle of skew lines must compare **parallel translations** through one common point and does not depend on perspective projection. B23/O05: perpendicularity to plane follows from perpendicularity to two **intersecting** lines in it, not two parallel lines. B24/O10: angle line–plane uses orthogonal projection and degenerate 90°/0° cases. B25/O15: measured dihedral angle uses lines inside each face perpendicular to common edge; height must be perpendicular to base.
+- Learner recap accurately summarizes existing mathematical conditions, no formula/condition of canonical item changed. Signed scoped AUTHOR_SELF_VERIFIED DELTA_C knowledge presentation only; no new independent NotebookLM full-Topic verdict, official RD1/Mastery or RELEASE integration.
+
