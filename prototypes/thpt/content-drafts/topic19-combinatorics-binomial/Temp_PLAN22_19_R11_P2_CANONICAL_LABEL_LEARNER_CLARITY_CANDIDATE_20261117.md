@@ -86,7 +86,7 @@ Có 4 loại áo và 3 kiểu huy hiệu. Mỗi bộ quà gồm đúng một lo�
 <!-- ITEM_ID: THPT-TOP19-T02; CONTENT_VERSION: TOP19-R10; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP19-O02; ANSWER_REVEAL: OPT_IN_AFTER_TRY; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-**12 bộ**, mỗi trong 4 áo ghép với 3 huy hiệu: 4×3=12.
+**12 bộ.** Với mỗi loại trong 4 loại áo đều có 3 cách chọn huy hiệu, nên theo quy tắc nhân ta có \(4\cdot3=12\) bộ.
 
 **Khi làm sai:** Nếu được 7, em có thể đã cộng \(4+3\). Hãy vẽ bảng gồm 4 hàng cho các loại áo và 3 cột cho các kiểu huy hiệu. Mỗi ô là một bộ quà; đếm tất cả các ô để kiểm tra phép nhân.
 
