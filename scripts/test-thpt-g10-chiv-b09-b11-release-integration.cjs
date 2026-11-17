@@ -38,14 +38,32 @@ for(const [name,hash] of figures){
  assert.equal(blob(bytes),hash,"Changed D5 SVG: "+name);
  assert(!bytes.toString("utf8").includes("<script"));
 }
+const b09Receipt=text("prototypes/thpt/ux795/G10_CHIV_B09_S1_SEMANTIC_DECOMPOSITION_R03_20261117.md");
+const b09Field=k=>b09Receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+assert.equal(b09Field("SOURCE_BASELINE_BLOB"),
+ "2529b915e4089862e1a48e685ba5dc88d5450558",
+ "B09 new knowledge must extend published immutable academic source");
+assert.equal(blob(fs.readFileSync("docs/thpt-preview/sgk/chuong-iv/bai-9.md")),
+ b09Field("R03_SOURCE_BLOB"),"B09 full theory/decomposition source exact Q18 receipt");
+for(const [asset,key] of [
+ ["THPT_G10_B09_DECOMPOSITION_TWO_DIRECTIONS_D5_R03.svg","R03_SVG_BLOB"],
+ ["THPT_G10_B09_DECOMPOSITION_MOBILE_D5_R03.svg","R03_MOBILE_SVG_BLOB"]
+]){
+ assert.equal(blob(fs.readFileSync("docs/assets/images/thpt/"+asset)),
+  b09Field(key),"B09 accessible decomposition figure exact SHA: "+asset);
+}
+assert(b09Receipt.includes("BLOCKED_BY_AUTHORING")&&
+ b09Receipt.includes("NO_CANONICAL_DECOMPOSITION_ITEM"),
+ "B09 new learning cannot be declared independently assessed before AUTHORING");
+
 for(const n of [9,10,11]){
  assert.equal(bank.forLesson(n,"core").length,2);assert.equal(bank.forLesson(n,"practice").length,6);
  const p=text("docs/thpt-preview/sgk/chuong-iv/bai-"+n+".md");
  assert.deepEqual([...p.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]),
   ["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
   "B"+n+": exactly four owner-approved Model B tabs required");
- assert.equal((p.match(/^    ### Ví dụ \d+\./gm)||[]).length,3,
-  "B"+n+": three worked examples remain in the new Ví dụ tab");
+ assert.equal((p.match(/^    ### Ví dụ \d+\./gm)||[]).length,n===9?4:3,
+  "B"+n+": keep original three examples and require additional sourced decomposition for B09 only");
  assert.equal((p.match(new RegExp('data-thpt-help-id="HELP-G10-B'+String(n).padStart(2,"0")+'-0[12]"',"g"))||[]).length,2,"Original reviewer R01 D6 IDs remain untouched; transfer D6 guarded separately");
  for(const kind of ["core","practice"])assert(text("docs/thpt-preview/sgk/chuong-iv/luyen-tap.md").includes('data-thpt-open-quiz="b'+n+'-'+kind+'"'));
 }
