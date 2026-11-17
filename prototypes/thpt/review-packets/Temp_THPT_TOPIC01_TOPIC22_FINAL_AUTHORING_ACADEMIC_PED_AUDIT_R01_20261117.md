@@ -211,3 +211,14 @@ Outcome counts are from canonical Topic PR/receipt. CĐ20 outcomes use `PRIMARY_
 - **CĐ19:** Draft R10 [#883](https://github.com/TMA2015/self-learning-math/pull/883) còn Q15_T02 source-version/bank parity và Q18; **không** tự promote. Như vậy 11 Topic có P1 R03 đã có 10 candidate mới + 1 candidate CĐ19 lịch sử, nhưng **0/11 candidate CONTENT_READY**.
 
 **Đóng P1 đúng chuẩn:** self-QA từng affected outcome, khắc phục/đi đúng D6 bằng tên bài đang thấy, kiểm Q15 canonical stem/key/solution/rubric và content_version nếu D6 đổi, Q16 giữ client-self-check/no mastery, khóa candidate SHA + đúng một receipt Q18 và V2/ready/REGISTER (chỉ khi P0/P1=0). Kiểm S1 in sách–PDF với trường hợp toán chịu ảnh hưởng; không nói MathJax/browser/AP/R đã PASS. Giữ nguyên signed snapshots Rxx. NO MERGE/DEPLOY.
+
+
+---
+
+<!-- TOPIC_R05_TOPIC19_T02_VERSION_20261117 -->
+## R05 · CĐ19: khóa phiên bản item T02 trong candidate R10 (17/11/2026)
+
+- Baseline R09 signed source blob 2b46a2c92004f2c030d030e2b2021a34157bc95d vẫn giữ nguyên.
+- Candidate [Draft #883](https://github.com/TMA2015/self-learning-math/pull/883) đã cập nhật phiên bản của đúng THPT-TOP19-T02: CONTENT_VERSION TOP19-R03 → TOP19-R10 để nhận diện stem và D6 thay đổi. **Git source blob mới = 37612a3fb8d804efa6dd4f65ddd22d90bf2772ae**, commit 28bc108f49b76f981025081638265b82f0a5862f. 13 First Try item khác vẫn TOP19-R03; tổng 14 item_id unchanged; 56 disclosure open/close; public selfcheck question-only; toàn Practice/Selfcheck giữ đúng R09.
+- Q15 canonical R09 metadata còn khai owner TOPIC_R08_CANONICAL cho T02; **chưa** cập nhật sang canonical active R10. Để đóng phải kiểm trong một source canonical mới cùng 1 item_id/1 version/1 đề–key–solution–rubric, không thêm bản sao chấm. T02 stem tương đương về điều kiện 4 áo/3 huy hiệu, đáp án 12 bộ không đổi, D6 được giải thích bằng bảng 4×3 tại chỗ; **DELTA_C_PED_MATERIAL** vì thay D6 và quy tắc nhân. Học thuật/nguồn/receipt Q18 của bản R10 chưa sign; CHƯA CONTENT_READY.
+- Chốt tiến độ: 11/11 Topic P1 của R03 đã có candidate chỉnh sửa thực tế trong #883–#893, nhưng **0/11 candidate mới đã đạt Q15/Q18 hoàn chỉnh**. Không đồng nghĩa 11 P1 được FIXED_FINAL. Giữ signed snapshot lịch sử, không merge/deploy.
