@@ -948,7 +948,7 @@ Nếu chỉ nhìn mẫu bằng0, cần rút nhân tử trên miền bỏ điểm
 
 # Luyện tập
 
-Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạo hàm, dấu/biên và đơn vị; với tự luận, đối chiếu rubric theo lập luận. Các câu ở đây là Practice công khai, không tạo điểm Mastery.
+Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạo hàm, dấu/biên và đơn vị; với tự luận, đối chiếu rubric theo lập luận. Các câu ở đây để tự luyện và tự đối chiếu, không phải bài đánh giá độc lập.
 
 ## 1. Chiều biến thiên và cực trị
 
@@ -1023,7 +1023,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 **Rubric tự đối chiếu /4:** 1 điểm D=ℝ\{2}; 1 điểm f′=−1/(x−2)²<0; 1 điểm hai khoảng (−∞,2),(2,+∞); 1 điểm phản ví dụ f(1)=−1, f(3)=1 với 1<3 nhưng f(1)<f(3), nên không nghịch biến trên D theo định nghĩa toàn miền.
-**Anchor chỉ gắn nhãn** cho cùng item_id W02, không tạo bản chép chấm điểm thứ hai.
+
 
 **Nếu làm sai:** Khoanh tròn điểm cấm và xét riêng từng khoảng của miền xác định.
 
@@ -1547,7 +1547,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đối chiếu:** D=ℝ\{1}; g=x+1+2/(x−1); y=x+1 xiên; x=1 đứng; vì g lớn theo x khi |x|→∞ nên không có tiệm cận ngang.
 
-**Rubric /4:** 1 D; 1 chia đa thức đúng; 1 đứng và giới hạn; 1 xiên, chứng minh phần dư→0 và bác ngang. Anchor chỉ nhãn.
+**Rubric /4:** 1 D; 1 chia đa thức đúng; 1 đứng và giới hạn; 1 xiên, chứng minh phần dư→0 và bác ngang.
 
 **Nếu làm sai:** Chia đa thức rồi xét hiệu f(x)−(ax+b) ở vô cực để kiểm tiệm cận xiên.
 
@@ -1993,7 +1993,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Lời giải tự mở:** D ℝ\{1}, y'=−3/(x−1)², giảm từng nhánh; x=1, y=1 tiệm cận; tâm (1,1); Ox (−2,0), Oy (0,−2), hai nhánh tách tại tiệm cận đứng.
 
-**Rubric /4:** 1 D+đạo hàm; 1 đơn điệu từng khoảng; 1 giới hạn/tiệm cận; 1 giao trục+đúng hai nhánh. Anchor chỉ tag một câu.
+**Rubric /4:** 1 D+đạo hàm; 1 đơn điệu từng khoảng; 1 giới hạn/tiệm cận; 1 giao trục+đúng hai nhánh.
 
 **Nếu làm sai:** Thử hai điểm ở hai nhánh để thấy dấu f′ âm riêng từng nhánh chưa đủ cho toàn D.
 
@@ -2392,7 +2392,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Author-key:** D=ℝ\{−1}, g=x+1+4/(x+1), đứng x=−1, xiên y=x+1. g'=1−4/(x+1)²=(x−1)(x+3)/(x+1)². Dấu + trên (−∞,−3),(1,∞); − trên (−3,−1), (−1,1). Cực đại cục bộ (−3,−4), cực tiểu cục bộ (1,4).
 
-**Rubric tự đối chiếu /4:** 1 D/chia; 1 tiệm cận; 1 đạo hàm/dấu; 1 cực trị và nhánh không nối. Không ghi điểm Skill Mastery.
+**Rubric tự đối chiếu /4:** 1 D/chia; 1 tiệm cận; 1 đạo hàm/dấu; 1 cực trị và nhánh không nối.
 
 **Nếu làm sai:** TCD cần giới hạn vô cực, tiệm cận xiên cần hiệu tiến0; kiểm đạo hàm theo từng nhánh.
 
@@ -2444,7 +2444,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Author-key:** P'=16−0.4q=0 ⇒ q=40, P(0)=P(80)=−100, P(40)=220 nghìn đồng, tối ưu ở q=40 sản phẩm.
 
-**Rubric tự đối chiếu /4:** 1 miền+đơn vị; 1 đạo hàm; 1 so ba giá trị; 1 kết luận thực tế. Anchor chỉ là nhãn của câu W02.
+**Rubric tự đối chiếu /4:** 1 miền+đơn vị; 1 đạo hàm; 1 so ba giá trị; 1 kết luận thực tế.
 
 **Nếu làm sai:** Đặt lợi nhuận P=R−C rồi tối ưu P, không tối ưu riêng C hay R.
 
@@ -2566,7 +2566,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 # Tự kiểm tra
 
-Hãy tự làm 36 câu sau trước khi xem lời giải ở phần Luyện tập. Đây là **câu hỏi công khai đã dùng để luyện**, chỉ giúp em phát hiện lỗ hổng; không phải kiểm tra độc lập, không chấm Mastery.
+Hãy tự làm 36 câu sau trước khi xem lời giải ở phần Luyện tập. Đây là **câu hỏi công khai đã dùng để luyện**, chỉ giúp em phát hiện lỗ hổng; không phải kiểm tra độc lập, không phải lượt đánh giá năng lực độc lập.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P01; NO_RD1; NO_MASTERY -->
 
