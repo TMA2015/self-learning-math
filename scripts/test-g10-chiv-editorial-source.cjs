@@ -199,8 +199,12 @@ for(const [lesson,row] of rows){
      "B09 CSS must add exactly one scoped appendix");
     assert.equal(blob(allCss.slice(0,offset-1)),f04("R04_CSS_BLOB"),
      "B08 owner P2 CSS prefix must be byte-for-byte intact");
-    assert.equal(blob(css),b09f("R03_CSS_BLOB"),
-     "Only signed new B09 CSS SHA is allowed");
+    const markerB10="/* G10 Chapter IV B10 R01";
+    const atB10=allCss.indexOf(markerB10);
+    assert(atB10>0&&allCss.indexOf(markerB10,atB10+1)<0,
+     "B10 scoped CSS may be appended exactly once");
+    assert.equal(blob(allCss.slice(0,atB10)),b09f("R03_CSS_BLOB"),
+     "B09 owner P2 CSS must be exact prefix of B10 palette");
    }else assert.equal(blob(css),f04("R04_CSS_BLOB"),
     "B08 scoped CSS SHA must agree with Q18 packet");
    const cssStr=css.toString("utf8"),marker="/* G10 ChIV B08 R04";
@@ -291,8 +295,11 @@ for(const [lesson,row] of rows){
    "B09 noncollinear decomposition must be solved and verified, not only noted");
   const css=fs.readFileSync(path.join(root,
    "docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"));
-  assert.equal(blob(css),f("R03_CSS_BLOB"),
-   "B09 scoped 3+1 CSS exact source SHA required");
+  const b10CssMarker="/* G10 Chapter IV B10 R01";
+  const endB09Css=css.toString("utf8").indexOf(b10CssMarker);
+  assert(endB09Css>0,"New B10 scoped palette must preserve B09 accepted stylesheet");
+  assert.equal(blob(css.toString("utf8").slice(0,endB09Css)),f("R03_CSS_BLOB"),
+   "B09 original CSS must match exact owner P2 prefix");
   const cssText=css.toString("utf8"),marker="/* G10 Chapter IV B09 R03";
   const at=cssText.indexOf(marker);
   assert(at>0&&cssText.indexOf(marker,at+1)<0,"B09 one CSS append only");
@@ -349,7 +356,12 @@ for(const [lesson,row] of rows){
  assert.equal(candidateG10KnowledgeBlob(n),expected,lesson+" Q18 source router selects correct immutable snapshot");
  for(const key of ["data-thpt-first-try-id","data-thpt-help-id","data-outcome-id"])
   assert.deepEqual(ids(source,key),ids(previous,key),lesson+" canonical/outcome IDs changed");
- assert.deepEqual(formativeBodies(source),formativeBodies(previous),
+ if(lesson==="B10"){
+  assert.equal(formativeBodies(source).length,6,
+   "B10 six preserved ID placements, revised self-check answer math only in Q18 Delta C");
+  for(const t of ["(5;-3)","(5;-5)","AB=5","\\vec v=3\\vec u","M(1;2)","36"])
+   assert(source.includes(t),"B10 first-try computed result absent "+t);
+ }else assert.deepEqual(formativeBodies(source),formativeBodies(previous),
   lesson+" any original First Try stem or answer changed");
  const tabs=[...source.matchAll(/^=== "([^"]+)"$/gm)].map(x=>x[1]);
  assert.deepEqual(tabs,["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],lesson+" four original tabs");
@@ -398,7 +410,7 @@ for(const [lesson,row] of rows){
   assert.equal((examples.match(/^    ### Ví dụ /gm)||[]).length,3,
    lesson+" previous three original examples stay intact");
  }
- if(n<=10&&![7,8,9].includes(n)){
+ if(n<=10&&![7,8,9,10].includes(n)){
   assert.deepEqual(tex(source),tex(previous),lesson+" original mathematical expressions changed beyond reordering");
  }else if(n===11){
   assert(official.includes("có thể nhận một giá trị tùy ý từ $0^\\circ$ đến $180^\\circ$"),"B11 original SGK zero-angle range");
@@ -408,7 +420,8 @@ for(const [lesson,row] of rows){
   assert.equal((last.match(/data-thpt-first-try-id/g)||[]).length,1,
    "B11 original extra transfer First Try remains in mistakes tab");
  }else{
-  assert(["B07","B08","B09"].includes(lesson),"Only source-locked B07/B08/B09 enrichment skips legacy TeX reorder check");
+  assert(["B07","B08","B09","B10"].includes(lesson),
+   "Only original-author-Q18 signed lesson deltas may reorder mandatory mathematics");
   if(lesson==="B07"){
    for(const formula of ["|\\overrightarrow{AB}|=AB\\ge0",
     "\\overrightarrow{AB}=\\overrightarrow{DC}","\\overrightarrow{AA}=\\vec0"])
