@@ -379,9 +379,13 @@ for(const [lesson,row] of rows){
    discover.indexOf('data-thpt-first-try-id="THPT-G10-CHIV-TRY16"'),
    "B10 original coordinate figure must precede first attempt");
   const worked=source.split('=== "Ví dụ"')[1].split('=== "Lỗi thường gặp"')[0];
-  assert(worked.includes("Ví dụ 4 — Qua sông")&&worked.includes("bộ dữ liệu khác")&&
-   worked.includes("150")&&worked.includes("96"),
-   "B10 river worked example must move to Tab3 and clarify diagram's DIFFERENT dataset");
+  assert(worked.includes("Ví dụ 4 — Qua sông")&&
+   worked.includes("Đọc hình theo đúng dữ kiện Ví dụ 4")&&
+   worked.includes("THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg")&&
+   worked.includes("THPT_G10_B10_RIVER_VELOCITY_MOBILE_D5_R01.svg")&&
+   !worked.includes("bộ dữ liệu khác")&&
+   worked.includes("96"),
+   "B10 river worked example must match the same geometry/units as its desktop and mobile figures");
   const tab4=source.split('=== "Lỗi thường gặp"')[1];
   assert((tab4.match(/^    \?\?\? tip "/gm)||[]).length===3&&
    ["Lỗi thường gặp:","Vì sao sai?","Tự kiểm:","Ôn và luyện lại:"].every(x=>tab4.includes(x)),
@@ -406,6 +410,8 @@ for(const [lesson,row] of rows){
  if(lesson==="B10"){
   assert.equal(formativeBodies(source).length,6,
    "B10 six preserved ID placements, revised self-check answer math only in Q18 Delta C");
+  assert.deepEqual(formativeBodies(source).slice(0,5),formativeBodies(previous).slice(0,5),
+   "B10 original TRY16–TRY20 published questions/answers must remain exactly canonical");
   for(const t of ["(5;-3)","(5;-5)","AB=5","\\vec v=3\\vec u","M(1;2)","36"])
    assert(source.includes(t),"B10 first-try computed result absent "+t);
  }else assert.deepEqual(formativeBodies(source),formativeBodies(previous),
