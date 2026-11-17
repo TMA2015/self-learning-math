@@ -217,13 +217,13 @@
 
     ??? tip "Nhầm điểm đầu/cuối và chiều của vectơ"
 
-        <ol><li><strong>Tín hiệu:</strong> Em đổi nhầm điểm đầu và điểm cuối, hoặc coi độ dài bằng nhau là đủ để hai vectơ bằng nhau.</li><li><strong>Nguyên nhân:</strong> Nhầm các định nghĩa hoặc quy tắc vectơ đã học, không phải thiếu thêm công thức mới.</li><li><strong>Nguyên lí:</strong> Vẽ mũi tên từ chữ đứng trước sang chữ đứng sau; thử đảo AB thành BA.</li><li><strong>Tự sửa:</strong> Em tự vẽ một sơ đồ mũi tên nhỏ, xác định rõ điểm đầu/cuối, nói lý do rồi tự thử lại.</li><li><strong>Điểm quay lại:</strong> Làm lại B07-P03 rồi đối chiếu B07-C02.</li></ol><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
+        <ol><li><strong>Tín hiệu:</strong> Em đổi nhầm điểm đầu và điểm cuối, hoặc coi độ dài bằng nhau là đủ để hai vectơ bằng nhau.</li><li><strong>Nguyên nhân:</strong> Nhầm các định nghĩa hoặc quy tắc vectơ đã học, không phải thiếu thêm công thức mới.</li><li><strong>Nguyên lí:</strong> Vẽ mũi tên từ chữ đứng trước sang chữ đứng sau; thử đảo AB thành BA.</li><li><strong>Tự sửa:</strong> Em tự vẽ một sơ đồ mũi tên nhỏ, xác định rõ điểm đầu/cuối, nói lý do rồi tự thử lại.</li><li><strong>Điểm quay lại:</strong> Trong Luyện tập, làm lại câu về vectơ ngược hướng trong hình bình hành, rồi đối chiếu câu Core về điều kiện hai vectơ bằng nhau.</li></ol><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
 
     <span data-thpt-help-id="HELP-G10-B07-02" hidden></span>
 
     ??? tip "Nhầm cùng phương, cùng hướng, bằng nhau; quên quy ước vectơ-không"
 
-        <ol><li><strong>Tín hiệu:</strong> Em thấy hai giá song song rồi kết luận ngay cùng hướng, hoặc quên trường hợp vectơ-không.</li><li><strong>Nguyên nhân:</strong> Nhầm các định nghĩa hoặc quy tắc vectơ đã học, không phải thiếu thêm công thức mới.</li><li><strong>Nguyên lí:</strong> So lần lượt phương, chiều, độ dài; dùng đúng quy ước KNTT về vectơ-không.</li><li><strong>Tự sửa:</strong> Em tự vẽ hai mũi tên, ghi phương–chiều–độ dài theo thứ tự và giải thích kết luận trước khi tự thử lại.</li><li><strong>Điểm quay lại:</strong> Làm B07-P05 rồi B07-P04.</li></ol><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
+        <ol><li><strong>Tín hiệu:</strong> Em thấy hai giá song song rồi kết luận ngay cùng hướng, hoặc quên trường hợp vectơ-không.</li><li><strong>Nguyên nhân:</strong> Nhầm các định nghĩa hoặc quy tắc vectơ đã học, không phải thiếu thêm công thức mới.</li><li><strong>Nguyên lí:</strong> So lần lượt phương, chiều, độ dài; dùng đúng quy ước KNTT về vectơ-không.</li><li><strong>Tự sửa:</strong> Em tự vẽ hai mũi tên, ghi phương–chiều–độ dài theo thứ tự và giải thích kết luận trước khi tự thử lại.</li><li><strong>Điểm quay lại:</strong> Trong Luyện tập, làm câu về hai vectơ cùng hướng nhưng khác độ dài, rồi câu về quy ước vectơ-không.</li></ol><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
 
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
