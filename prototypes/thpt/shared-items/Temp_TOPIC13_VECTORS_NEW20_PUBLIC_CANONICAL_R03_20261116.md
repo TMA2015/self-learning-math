@@ -75,11 +75,11 @@ role: TOPIC_PRACTICE
 source_type: TOPIC_NEW_CANDIDATE
 content_version: 1
 **Nhãn bài học:** Luyện 4 · Hiệu hai vectơ chung gốc
-**Đề:** Cho A=(−1,2), B=(4,3), C=(2,−2). Tính AB−AC và đối chiếu với một vectơ có điểm đầu C.
+**Đề:** Cho A=(−1,2), B=(4,3), C=(2,−2). Tính \(\overrightarrow{AB}-\overrightarrow{AC}\) và đối chiếu với một vectơ có điểm đầu C.
 **Đối chiếu, lời giải, rubric và D6:**
 <details markdown="1"><summary>Đối chiếu lời giải</summary>
 
-AB=(5,1), AC=(3,−4); AB−AC=(2,5)=CB vì B−C=(2,5).
+\(\overrightarrow{AB}=(5,1)\), \(\overrightarrow{AC}=(3,-4)\); \(\overrightarrow{AB}-\overrightarrow{AC}=(2,5)=\overrightarrow{CB}\), vì \(B-C=(2,5)\) theo tọa độ.
 
 **Sửa lỗi:** Xem lại mục Kiến thức 4 và tự trình bày một lượt không nhìn lời giải.
 
@@ -111,11 +111,11 @@ role: TOPIC_PRACTICE
 source_type: TOPIC_NEW_CANDIDATE
 content_version: 1
 **Nhãn bài học:** Luyện 6 · Điểm cân bằng
-**Đề:** Tam giác A=(−3,0), B=(3,0), C=(0,6). Tìm trung điểm M của BC và trọng tâm G. Kiểm AG=(2/3)AM.
+**Đề:** Tam giác A=(−3,0), B=(3,0), C=(0,6). Tìm trung điểm M của BC và trọng tâm G. Kiểm \(\overrightarrow{AG}=\tfrac23\overrightarrow{AM}\).
 **Đối chiếu, lời giải, rubric và D6:**
 <details markdown="1"><summary>Đối chiếu lời giải</summary>
 
-M=(3/2,3), G=(0,2); AG=(3,2) và AM=(9/2,3), nên AG=(2/3)AM.
+\(M=(\tfrac32,3)\), \(G=(0,2)\); \(\overrightarrow{AG}=(3,2)\) và \(\overrightarrow{AM}=(\tfrac92,3)\), nên \(\overrightarrow{AG}=\tfrac23\overrightarrow{AM}\).
 
 **Sửa lỗi:** Xem lại mục Kiến thức 6 và tự trình bày một lượt không nhìn lời giải.
 
@@ -129,11 +129,11 @@ role: TOPIC_PRACTICE
 source_type: TOPIC_NEW_CANDIDATE
 content_version: 1
 **Nhãn bài học:** Luyện 7 · Oxy cuối trừ đầu
-**Đề:** Cho A=(−3,4), B=(5,−2). Tính vectơ AB và độ dài của nó.
+**Đề:** Cho A=(−3,4), B=(5,−2). Tính vectơ \(\overrightarrow{AB}\) và độ dài của nó.
 **Đối chiếu, lời giải, rubric và D6:**
 <details markdown="1"><summary>Đối chiếu lời giải</summary>
 
-AB=(8,−6), độ dài √(8²+6²)=10. Không thay hiệu tọa độ bằng tổng giá trị tuyệt đối.
+\(\overrightarrow{AB}=(8,-6)\), độ dài \(AB=|\overrightarrow{AB}|=\sqrt{8^2+6^2}=10\). Không thay hiệu tọa độ bằng tổng giá trị tuyệt đối.
 
 **Sửa lỗi:** Xem lại mục Kiến thức 7 và tự trình bày một lượt không nhìn lời giải.
 
@@ -219,11 +219,11 @@ role: TOPIC_PRACTICE
 source_type: TOPIC_NEW_CANDIDATE
 content_version: 1
 **Nhãn bài học:** Luyện 12 · Chasles trong Oxyz
-**Đề:** A=(−1,2,0), B=(2,−1,4), C=(5,3,−2). Hãy tính AB, BC và AC, rồi xác minh quy tắc ba điểm.
+**Đề:** A=(−1,2,0), B=(2,−1,4), C=(5,3,−2). Hãy tính \(\overrightarrow{AB}\), \(\overrightarrow{BC}\), \(\overrightarrow{AC}\), rồi xác minh quy tắc ba điểm.
 **Đối chiếu, lời giải, rubric và D6:**
 <details markdown="1"><summary>Đối chiếu lời giải</summary>
 
-AB=(3,−3,4), BC=(3,4,−6); AB+BC=(6,1,−2)=AC. Cần lấy cuối trừ đầu từng cặp.
+\(\overrightarrow{AB}=(3,-3,4)\), \(\overrightarrow{BC}=(3,4,-6)\); \(\overrightarrow{AB}+\overrightarrow{BC}=(6,1,-2)=\overrightarrow{AC}\). Cần lấy cuối trừ đầu từng cặp.
 
 **Sửa lỗi:** Xem lại mục Kiến thức 12 và tự trình bày một lượt không nhìn lời giải.
 
@@ -255,11 +255,11 @@ role: TOPIC_PRACTICE
 source_type: TOPIC_NEW_CANDIDATE
 content_version: 1
 **Nhãn bài học:** Luyện 14 · Tọa độ độ dời Oxyz
-**Đề:** A=(−2,3,1), B=(4,−1,5). Tính tọa độ AB và khoảng cách từ A tới B.
+**Đề:** A=(−2,3,1), B=(4,−1,5). Tính tọa độ \(\overrightarrow{AB}\) và khoảng cách từ A tới B.
 **Đối chiếu, lời giải, rubric và D6:**
 <details markdown="1"><summary>Đối chiếu lời giải</summary>
 
-AB=(6,−4,4); AB=√(36+16+16)=√68=2√17.
+\(\overrightarrow{AB}=(6,-4,4)\); khoảng cách \(AB=|\overrightarrow{AB}|=\sqrt{36+16+16}=\sqrt{68}=2\sqrt{17}\).
 
 **Sửa lỗi:** Xem lại mục Kiến thức 14 và tự trình bày một lượt không nhìn lời giải.
 
@@ -277,7 +277,7 @@ content_version: 1
 **Đối chiếu, lời giải, rubric và D6:**
 <details markdown="1"><summary>Đối chiếu lời giải</summary>
 
-M=(2,0,0); AB=(6,−4,−8) dài √(36+16+64)=√116=2√29.
+\(M=(2,0,0)\); \(\overrightarrow{AB}=(6,-4,-8)\) có độ dài \(AB=\sqrt{36+16+64}=\sqrt{116}=2\sqrt{29}\).
 
 **Sửa lỗi:** Xem lại mục Kiến thức 15 và tự trình bày một lượt không nhìn lời giải.
 
@@ -309,11 +309,11 @@ role: TOPIC_WRITTEN
 source_type: TOPIC_NEW_CANDIDATE
 content_version: 1
 **Nhãn bài học:** Tự luận 1 · Tổng vectơ và trọng tâm
-**Đề:** Với A=(−2,1), B=(4,1), C=(1,7), hãy (a) rút gọn AB+BC; (b) tìm trung điểm M của BC; (c) tìm trọng tâm G và chứng minh AG=(2/3)AM.
+**Đề:** Với A=(−2,1), B=(4,1), C=(1,7), hãy (a) rút gọn \(\overrightarrow{AB}+\overrightarrow{BC}\); (b) tìm trung điểm M của BC; (c) tìm trọng tâm G và chứng minh \(\overrightarrow{AG}=\tfrac23\overrightarrow{AM}\).
 **Đối chiếu, lời giải, rubric và D6:**
 <details markdown="1"><summary>Đối chiếu và rubric /7</summary>
 
-(a) AB+BC=AC=(3,6) (2đ); (b) M=(5/2,4) (2đ); (c) G=(1,3) (2đ), AG=(3,2)=(2/3)(9/2,3)=(2/3)AM (1đ). Tổng 7 điểm.
+(a) \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}=(3,6)\) (2đ); (b) \(M=(\tfrac52,4)\) (2đ); (c) \(G=(1,3)\) (2đ), \(\overrightarrow{AG}=(3,2)=\tfrac23(\tfrac92,3)=\tfrac23\overrightarrow{AM}\) (1đ). Tổng 7 điểm.
 
 **Sửa lỗi:** Xem lại mục Kiến thức 6 và tự trình bày một lượt không nhìn lời giải.
 
@@ -327,11 +327,11 @@ role: TOPIC_WRITTEN
 source_type: TOPIC_NEW_CANDIDATE
 content_version: 1
 **Nhãn bài học:** Tự luận 2 · Tích vô hướng và góc trong Oxy
-**Đề:** Cho tam giác A=(0,0),B=(6,0),C=(2,4). Tính (a) AB·AC; (b) cos góc A; (c) trọng tâm G và diện tích tam giác.
+**Đề:** Cho tam giác A=(0,0),B=(6,0),C=(2,4). Tính (a) \(\overrightarrow{AB}\cdot\overrightarrow{AC}\); (b) cos góc A; (c) trọng tâm G và diện tích tam giác.
 **Đối chiếu, lời giải, rubric và D6:**
 <details markdown="1"><summary>Đối chiếu và rubric /7</summary>
 
-AB=(6,0), AC=(2,4), tích vô hướng=12 (2đ); |AB|=6, |AC|=2√5, cosA=12/(12√5)=1/√5 (2đ); G=(8/3,4/3) (2đ); S=6·4/2=12 đơn vị vuông (1đ). Tổng 7 điểm.
+\(\overrightarrow{AB}=(6,0)\), \(\overrightarrow{AC}=(2,4)\), tích vô hướng bằng 12 (2đ); \(AB=|\overrightarrow{AB}|=6\), \(AC=|\overrightarrow{AC}|=2\sqrt5\), \(\cos A=12/(12\sqrt5)=1/\sqrt5\) (2đ); \(G=(\tfrac83,\tfrac43)\) (2đ); \(S=6\cdot4/2=12\) đơn vị vuông (1đ). Tổng 7 điểm.
 
 **Sửa lỗi:** Xem lại mục Kiến thức 10 và tự trình bày một lượt không nhìn lời giải.
 
@@ -345,7 +345,7 @@ role: TOPIC_WRITTEN
 source_type: TOPIC_NEW_CANDIDATE
 content_version: 1
 **Nhãn bài học:** Tự luận 3 · Vectơ đường chéo hình hộp
-**Đề:** Một hình hộp chữ nhật có A=(0,0,0), B=(3,0,0), D=(0,4,0), A'=(0,0,12). Tìm C', độ dài AC', tích vô hướng AB·AC' và cos góc giữa chúng.
+**Đề:** Một hình hộp chữ nhật có A=(0,0,0), B=(3,0,0), D=(0,4,0), A'=(0,0,12). Tìm C', độ dài AC', tích vô hướng \(\overrightarrow{AB}\cdot\overrightarrow{AC'}\) và cos góc giữa chúng.
 **Đối chiếu, lời giải, rubric và D6:**
 <details markdown="1"><summary>Đối chiếu và rubric /7</summary>
 
