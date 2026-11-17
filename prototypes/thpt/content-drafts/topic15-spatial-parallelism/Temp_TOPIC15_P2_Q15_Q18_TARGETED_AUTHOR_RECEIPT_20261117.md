@@ -7,8 +7,9 @@ STANDARD_BLOB: 5a80b20ce99be3179d03d56a73fa57b6f4882fd8
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 DELTA_CLASS: DELTA_B_EDITORIAL_SOURCE_EQUIVALENT
 REVIEW_SCOPE: Q03_Q07_Q09_Q10_Q15_PUBLIC_LABELS_AND_MATH_TYPESETTING
-SOURCE_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_R05_P2_PUBLIC_LABELS_CANDIDATE_20261117.md
-SOURCE_BLOB: 6017e5b6108bfa13241f10be6d4b7050ee68066d
+SOURCE_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_SPATIAL_PARALLELISM_R04_LEARNER_FIRST_20261116.md
+SOURCE_BLOB: 8270cfa8dc691f21ad5b251ffa0d6f4be82dd570
+SOURCE_BRANCH: authoring/topic15-spatial-parallelism-r00-20261113
 PREVIOUS_R09_SOURCE_BLOB: 98f911d70d6e69fed5747c4f4865fa1a0942f3d1
 IMMUTABLE_BASELINE_SOURCE_BLOB: 581ff0b0c019a705d36f306d7d5b0db38d185c0b
 IMMUTABLE_BASELINE_Q18_RECEIPT_BLOB: 6b0efa57a177160d2a9c2d9570f0108830683e56
@@ -55,3 +56,8 @@ Two further natural-language edits affect only the learner introduction: use dir
 The original R09 check paragraphs above are history scoped to its prior SHA, not claims R12 changed only seven labels. This is presentation-only `DELTA_B_SOURCE_EQUIVALENT` with targeted author self-review, **not** a real-browser MathJax/AP2 PASS or comprehensive new Topic PASS. The existing one current learner file and this existing receipt are the only proposed new authoring source/receipt pair. `GLOBAL_ACTIVE_OWNER_Q15_V2_READY_REGISTER=HOLD`, `CONTENT_READY=NO`, no website/merge/deploy.
 
 Review prompt: Compare the R12 learner file against the exact R09 signed target and check the fourteen code-to-math replacements and two learner-language clarifications. Verify the three z=c+tw branch cases, optional primer semantics and original five figures against the unchanged diagram captions. Recheck all eight selfcheck replays and original rubric identities, reporting only actual affected defects. Do not infer a browser visual PASS, new NotebookLM independent verdict or CONTENT_READY from these targeted changes.
+
+
+## IN_PLACE_CONSOLIDATION, 17/11/2026
+
+Merged precisely **10 changed original learner lines** from the prior patch into the **existing R04 full learner source** on SOURCE_BRANCH (SHA `8270cfa8dc691f21ad5b251ffa0d6f4be82dd570`), rather than rewriting or duplicating its correct mathematics. Three Knowledge lines: 14 math-code spans displayed as TeX, learner addressed directly, author-facing illustration instruction replaced with genuine diagram reading. Seven public selfcheck line headings cleaned of duplicate “Bài N” labels **without changing the question itself**. Verified 70/70 public canonical/display markers, 90/90 voluntary solution disclosures, all eight public question-only selfchecks, and existing five SVG paths. Same numerical data/conditions and rubric; source code math token numeric parity PASS. The separately named patch is obsolete and to be deleted, not a new SOURCE for RELEASE. Q01–Q18 full, original S1 and browser AP remain separate HOLD; no merge/deploy.
