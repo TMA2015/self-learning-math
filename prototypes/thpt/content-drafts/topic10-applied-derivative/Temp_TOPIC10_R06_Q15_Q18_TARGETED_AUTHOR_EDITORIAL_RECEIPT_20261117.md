@@ -5,9 +5,9 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 STANDARD_BLOB: 5a80b20ce99be3179d03d56a73fa57b6f4882fd8
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-DELTA_CLASS: DELTA_B_SOURCE_EQUIVALENT_EDITORIAL (TECHNICAL METADATA REMOVAL)
+DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
 SOURCE_PATH: prototypes/thpt/content-drafts/topic10-applied-derivative/Temp_TOPIC10_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 2b4361077e3c0712f6be863763bc3ee43ad94f5e
+SOURCE_BLOB: e3b30ca30ef5fb08c7e70e78a5981d2d58d95ba9
 BASELINE_R05_SOURCE_BLOB: 68d3ccd180162c0b850c7e419a5098982d3785a0
 BASELINE_R05_AUTHOR_Q18_RECEIPT_BLOB: cdf1356b3bedc5c3a246464f34600ed7ec99579a
 AFFECTED_Q03_Q15_VERDICT: AUTHOR_SELF_QA_PASS
@@ -42,3 +42,10 @@ Review prompt (four sentences): Compare learner R06 exact SHA against original R
 ## CONSOLIDATED_SOURCE_ONLY (owner-selected single learner file; 17/11/2026)
 
 The corrected student language was merged directly into the pre-existing R06_NUMBERING_CONSISTENT source file at SOURCE_PATH (new SHA `2b4361077e3c0712f6be863763bc3ee43ad94f5e`). The old parallel candidate does not remain effective. **Accepted seven targeted student-facing language edits, rejected any unrelated metadata/comment reordering or re-numbering** from the candidate. All mathematics, original item identities, exercise stems, answers, 4-point Written rubrics and opt-in disclosures preserve baseline integrity; 156 public placements and disclosures have exact ordered parity. Previous signed legacy sources remain Git history. The Q18 author self-verification here is affected-scope only, not independent all-topic PASS; S1/canonical owner, V2/ready/REGISTER and browser testing require separate validation before release.
+
+## 18/11/2026 — learner formal knowledge and summary on exact R06 source
+
+- Current `SOURCE_BLOB=e3b30ca30ef5fb08c7e70e78a5981d2d58d95ba9` follows previously consolidated metadata-only source `2b4361077e3c0712f6be863763bc3ee43ad94f5e`; the old nine-line DELTA_B metadata cleanup remains a historical subdelta, **not** classification of the present learner-facing explanation enhancement.
+- Q03/Q09–Q14 affected outcomes: TOP10-O01 defines strictly increasing/decreasing on one interval using *every* x1<x2, O08 closed-interval extreme value theorem guarantees attainment without locating optimizers, O14 defines vertical asymptote by one-sided ±∞, O15 slant asymptote by f(x)−(ax+b)→0 at either infinity (a≠0). Student recall explicitly separates local vs global extrema, strict sign tests, domain holes, and feasible integer optimization.
+- Direct math checks: f=−2x+5 yields f(x2)−f(x1)=−2(x2−x1)<0, so decreasing; f=x²−2x on [0,3] attains min −1 at 1 and max 3 at 3; (x+1)/(x−2) has vertical x=2 because numerator→3 and denominator→0 signed; (x²+1)/(x−1)=x+1+2/(x−1) yields slant y=x+1 with remainder→0. Clear domain conditions prevent wrong formula use.
+- Complete 120 Practice canonical stems/keys/solutions/4-point Written rubrics and 36 public Selfcheck question-only placements **byte-exact** versus immediate pre-edit source `2b4361077e3c0712f6be863763bc3ee43ad94f5e`; original markers, figures, disclosure boundaries and prior metadata-only corrections unchanged. `DELTA_C_ACADEMIC_MATERIAL`, scoped author source/math/PED QA only. **ACTIVE_V2_READY_REGISTER=HOLD_NOT_UPDATED; CONTENT_READY=NO** remain unchanged until global full-Topic Q01–Q18 / source custody and handoff gates close. No new independent NotebookLM/release verdict.
