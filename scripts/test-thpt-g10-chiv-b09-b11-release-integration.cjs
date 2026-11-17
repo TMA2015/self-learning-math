@@ -3,6 +3,8 @@ const assert=require("node:assert/strict"),fs=require("node:fs"),vm=require("nod
 const text=p=>fs.readFileSync(p,"utf8");
 // One current B09 academic manuscript is authoritative; all web artifacts must match.
 require("./test-thpt-g10-b09-single-canonical-source.cjs");
+// B10 owner-authorized next lesson: one source, immutable old bank, 3+1 CSS.
+require("./test-thpt-g10-b10-single-canonical-source.cjs");
 const blob=bytes=>crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+bytes.length+"\0"),bytes])).digest("hex");
 const sourcePath="prototypes/thpt/content-drafts/THPT_G10_CHIV_B09_B11_D1D6_AUTHORING_R01_SNAPSHOT.md";
 const sourceBytes=fs.readFileSync(sourcePath);
