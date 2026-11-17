@@ -7,8 +7,8 @@ STANDARD_BLOB: 5a80b20ce99be3179d03d56a73fa57b6f4882fd8
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 DELTA_CLASS: DELTA_B_SOURCE_EQUIVALENT_EDITORIAL
 REVIEW_SCOPE: Q03_Q05_Q15_Q16_Q18_PUBLIC_WRITTEN_RUBRIC_LANGUAGE
-SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R06_P2_WRITTEN_RUBRIC_CLARITY_CANDIDATE_20261117.md
-SOURCE_BLOB: 331c31e124179b31731f9caca2669eaa8948bcbd
+SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
+SOURCE_BLOB: fda1fa60d8448c016c24159156c6898de2bc673f
 PREVIOUS_R05_LEARNER_SOURCE_BLOB: af8a3529398e5f876d5c979b0d5d26df3519d6ac
 PREVIOUS_R05_Q18_TARGETED_RECEIPT_BLOB: 9d0f5a224f55eda978bb1aebbeb2c9d20ade5233
 PREVIOUS_R04_FROZEN_SOURCE_BLOB: 41daf40a3b639a3ef35e129099525137a05b1848
@@ -70,3 +70,8 @@ AUTHOR_SIGNOFF: CHATGPT_AUTHORING_TOP18_R06_24_WRITTEN_RUBRICS_24_METADATA_REMOV
 VERDICT: AFFECTED_DELTA_B_AUTHOR_SELF_QA_PASS; GLOBAL_Q15_V2_READY_REGISTER_HOLD; CONTENT_READY_NO; NO_MERGE_NO_DEPLOY.
 
 Review prompt (four sentences): Compare exactly the R06 learner SHA against R05 and check all 24 public Written items retain their original stems, complete mathematical reasoning, and 5-point criterion content. Confirm only rubric labels and nonlearner Mastery status lines were removed, not a valid condition, key or scoring criterion. Check the inherited R05 geometric parameter correction and public selfcheck assessment boundary without reopening unrelated passed content. Report a genuine affected P0/P1/P2 with item ID and MINIMAL_DELTA; do not infer full source reapproval, global Q15 activation, CONTENT_READY or deployment.
+
+
+## Verified consolidation — reject vector-regression from obsolete R06 candidate
+
+Fetched the original AUTHORING R05 file and the discarded R06 source bytes: exactly three student-content differences (original L78/87/89) plus one author-only provenance comment. The supposed R06 wording turned the actual vector identity into bare `AB+BC=AC` and `AB+AD=AC`, which can be **false as length equalities**; it must NOT overwrite the correct `\\overrightarrow{AB}+\\overrightarrow{BC}=\\overrightarrow{AC}` and box vector sum in the existing R05 source. The current correct original R05 source and the later repaired R06 candidate after angle correction have **identical 3,638 learner lines**, differing solely in a hidden provenance comment. Preserve that one correct source (SOURCE_PATH/SOURCE_BLOB above), 247 disclosure blocks and original Written /5 rubrics. The erroneous earlier R06 SHA in prior paragraphs is historical, NOT release-authoritative. No new learner file; R06 patch deleted. `SOURCE_ONLY_CONSOLIDATION_PASS`; full Content Ready, source S1, independent review, browser and V2 handoff remain HOLD.
