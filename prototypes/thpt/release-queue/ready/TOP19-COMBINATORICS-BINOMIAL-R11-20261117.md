@@ -1,4 +1,4 @@
-# CĐ19 · SOURCE-ONLY CONTENT_READY R11 · 17/11/2026
+# CĐ19 · một bản thảo hiệu lực đã sửa lời giải T02 · QA HOLD
 
 PACKET_ID: TOP19-COMBINATORICS-BINOMIAL-R11-20261117
 SUPERSEDES_PACKET_ID: TOP19-COMBINATORICS-BINOMIAL-R09-20261116
@@ -9,22 +9,22 @@ QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: CONTENT_READY
+STATE: BLOCKED_BY_AUTHORING
 SOURCE_COMMIT: 03c0ed4c80f98ca8e21d8b50f73a9250608b50dc
 CATALOG_TOPIC_ID: CD19
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 CURRENT_PR: #897 — AUTHORING DRAFT source-only, no website permission
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R11_P2_CANONICAL_LABEL_LEARNER_CLARITY_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: 8f7d149c0359ac895fb2d04496d46e2294511123
+ACADEMIC_SOURCE_BLOB: 32721032973866087dcc4b8981e33d4bf3391c8d
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC19_R11_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md — AUTHOR_SELF_VERIFIED composite of immutable R09 + targeted R10/R11; NOT independent NotebookLM
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC19_R11_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md
-REVIEW_RECEIPT_BLOB: 2669873f807ec19f008ce5476884b883c391289d
+REVIEW_RECEIPT_BLOB: ad08a2996f25154d83a42b3e44fe591156960cdb
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/TOP19-COMBINATORICS-BINOMIAL-R11-20261117_HANDOFF_V2.md
-AUTHOR_HANDOFF_BLOB: e93f94ed08a525c48a753012840cec3630f2c3a1
+AUTHOR_HANDOFF_BLOB: a56783a7ce5a7f13adbd259772039deb9fb118d2
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
-BLOCKERS: NONE
+BLOCKERS: CURRENT_SOURCE_HEAD_QA_AND_REGISTER_CONFIRMATION_PENDING
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_COUNT: 14
 PRIVATE_RD1_SHA256: 6cc51485931317083b5ba673d490e5688a7538d4731dca29f002e804c0f9271a
@@ -34,9 +34,9 @@ RELEASE_AUTHORIZATION: NO
 RELEASE_STATUS: NOT_INTEGRATED_NOT_PUBLISHED
 
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_56_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_A1_A7_BLOB: 676f261b543f14013b67d9d8ec68e1265fcd07f5
+AUTHOR_A1_A7_BLOB: d0a24f0c009aac22932b4f51a3328d03bde6723d
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_56_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_METADATA_BLOB: 676f261b543f14013b67d9d8ec68e1265fcd07f5
+AUTHOR_METADATA_BLOB: d0a24f0c009aac22932b4f51a3328d03bde6723d
 
 ## R09 IMMUTABLE FULL MATH/PED BASELINE (inherited)
 
@@ -94,3 +94,8 @@ AUTHORING R09 learner source and Q18 author self-QA are signed on its own exact 
 ## R11 CURRENT SOURCE-LOCKED AUTHORING SIGNOFF
 
 R11 distinct full Topic authoring packet selects candidate source 8f7d149c0359ac895fb2d04496d46e2294511123 and composite Q18 AUTHOR_SELF_VERIFIED receipt 2669873f807ec19f008ce5476884b883c391289d with complete 56-item R11 A1–A7 mapping 676f261b543f14013b67d9d8ec68e1265fcd07f5 and one V2 handoff e93f94ed08a525c48a753012840cec3630f2c3a1. Supersedes earlier R09 source for **new proposed authoring intake only**, never overwrites immutable historical R09 accepted ready manifest, old signed source or private owner-held bank. R09 full source math/14 outcomes/56-ID verification inherited unchanged; R10 changed material rule of product and T02 stem plus pedagogical D6, reviewed and versioned to TOP19-R10; R11 removed 12 repetitive SGK-provenance labels and rephrased two nonmathematical learner intros, all original math/key/rubric/SGK owner items unchanged. Exact R11 Q15 matrix blob c4718f6786e4b6e36d705a3a6b0a5ccf890ba9e0 contains 56 unique public IDs (25 G10 shared SGK, 14 T, 14 P, 3 W) and seven public reused Practice question-only selfchecks. Original protected RD1 count=14 and SHA256 owner-held preserved; none of the private stems/answers/solutions/rubrics are in this packet. New R11 CONTENT_READY is **AUTHORING source-only** and does not activate website, protected assessment/Skill Mastery or independent Topic readiness; separate V2 source-lock CI/RELEASE AP1–AP5/R1–R5 and owner merge/deploy authorization apply. Old R09 ready remains historically valid on prior source SHA.
+
+
+## Same-source correction of voluntary T02 explanation
+
+A single sentence in learner optional answer T02 was edited in the *existing* authoring draft file: correct Vietnamese explicitly explains each of four shirts pairs with three badges, so 4·3=12. No new source file was created, no answer/stem/rubric/SGK original bank owner/content_version changed; 56 public canonical IDs +7 question-only public selfcheck replays remain. Existing Q15 matrix, Q18 receipt, A1 metadata and V2 updated. HOLD source-only previous READY for exact HEAD final gate; prior signed R09/R11 snapshots remain Git history. No merge/deploy.
