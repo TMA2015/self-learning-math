@@ -103,8 +103,13 @@ for(const c of cases){
  const signedB08R04=c.n===8&&
   field(b08r04,"BASELINE_R03_SOURCE_BLOB")===field(r03,"R03_CANDIDATE_SOURCE_BLOB")&&
   field(b08r04,"R04_SOURCE_BLOB")===blob(src);
- const current=editorial[c.n]&&(blob(src)===editorial[c.n].sha||signedR02||signedR03||signedR04||signedR05||signedB08R04);
- if(signedR02||signedR03||signedR04||signedR05||signedB08R04)assert.equal(signedB08R04?field(b08r04,"R04_SOURCE_BLOB"):signedR05?field(r05,"R05_SOURCE_BLOB"):signedR04?field(r04,"R04_SOURCE_BLOB"):signedR03?
+ const b09r03=c.n===9?fs.readFileSync(path.join(__dirname,
+  "../prototypes/thpt/ux795/G10_CHIV_B09_S1_SEMANTIC_DECOMPOSITION_R03_20261117.md"),"utf8"):null;
+ const signedB09R03=c.n===9&&
+  field(b09r03,"SOURCE_BASELINE_BLOB")===editorial[9].sha&&
+  field(b09r03,"R03_SOURCE_BLOB")===blob(src);
+ const current=editorial[c.n]&&(blob(src)===editorial[c.n].sha||signedR02||signedR03||signedR04||signedR05||signedB08R04||signedB09R03);
+ if(signedR02||signedR03||signedR04||signedR05||signedB08R04||signedB09R03)assert.equal(signedB09R03?field(b09r03,"R03_SOURCE_BLOB"):signedB08R04?field(b08r04,"R04_SOURCE_BLOB"):signedR05?field(r05,"R05_SOURCE_BLOB"):signedR04?field(r04,"R04_SOURCE_BLOB"):signedR03?
   field(r03,c.n===7?"R03_SOURCE_BLOB":"R03_CANDIDATE_SOURCE_BLOB"):
   field(r02,"R02_CANDIDATE_SOURCE_BLOB"),expectedG10KnowledgeBlob(c.n,c.sha),
   "B07/B08 exact immutable receipt-chain must match Q18 router");
@@ -132,8 +137,8 @@ for(const c of cases){
  assert.equal(new Set(helps).size,c.helpCount,"B"+c.n+": duplicate HELP");
  assert.equal((src.match(/^    \?\?\? (question|tip) "/gm)||[]).length,c.tryCount+c.helpCount,
   "B"+c.n+": answers/remediation must stay collapsed");
- assert.equal((src.match(/<figure\b/g)||[]).length,c.figs,
-  "B"+c.n+": original D5/extra SVG absent");
+ assert.equal((src.match(/<figure\b/g)||[]).length,c.figs+(signedB09R03?1:0),
+  "B"+c.n+": preserve original D5 and signed B09 decomposition figure");
  assert(!/PREREQUISITE_CONFIRMED|D5 kế thừa|CONTENT_READY:|data-mastery-credit/.test(src),
   "B"+c.n+": QA metadata/Mastery leaked");
  assert(src.includes("luyen-tap.md")&&src.includes("tu-kiem-tra-chuong.md"),
