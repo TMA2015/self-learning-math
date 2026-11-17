@@ -64,9 +64,18 @@ const blob=data=>{
    const r05field=k=>r05.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
    assert.equal(r05field("BASELINE_CSS_GIT_BLOB"),b06field("CANDIDATE_CSS_GIT_BLOB"),
     "B07 R05 extends immutable B06 style");
-   assert.equal(blob(css),r05field("R05_CSS_GIT_BLOB"),
-    "B07 R05 exact scoped CSS SHA; ChV untouched");
+   const r04=fs.readFileSync(root+
+    "/prototypes/thpt/ux795/G10_CHIV_B08_SEMANTIC_3PLUS1_DELTA_R04_20261117.md","utf8");
+   const r04field=k=>r04.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(r04field("BASELINE_R05_B07_CSS_BLOB"),r05field("R05_CSS_GIT_BLOB"),
+    "B08 R04 CSS extends exactly accepted B07 without retroactive redesign");
+   assert.equal(blob(css),r04field("R04_CSS_BLOB"),
+    "B08 3+1 CSS confined to B08, ChV unchanged");
    const cssText=css.toString("utf8"),cut=cssText.indexOf("/* G10 ChIV B07 R05");
+   const b08cut=cssText.indexOf("/* G10 ChIV B08 R04");
+   assert(b08cut>cut,"B08-only style must follow immutable B07 accepted CSS");
+   assert.equal(blob(cssText.slice(0,b08cut-1)),r05field("R05_CSS_GIT_BLOB"),
+    "B08 append-only semantics may not modify B01–B07 accepted Golden stylesheet");
    assert(cut>0,"B07 scoped CSS tail present");
    assert.equal(blob(cssText.slice(0,cut-1)),b06field("CANDIDATE_CSS_GIT_BLOB"),
     "All pre-B07 Golden CSS bytes unchanged");
