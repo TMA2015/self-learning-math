@@ -13,13 +13,13 @@ CATALOG_TOPIC_ID: CD17
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: ae8bffe04a7c52e062c933739bafceb5412a8270
+ACADEMIC_SOURCE_BLOB: 7ee09cea9c33e2ae520a1a40df694ab7118adb42
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC17_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: cf87e9b857b01829262d6fe224256766edd5822b
+REVIEW_RECEIPT_BLOB: 110b1cb694875e9d2f8db9e52c35156299a5b09b
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: 9b6fc1db68eefc38db3b31efe7bde4616b26aa65
+AUTHOR_A1_A7_BLOB: 090fa5c50b30eaeea74f42d690c9a787f321345d
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: 9b6fc1db68eefc38db3b31efe7bde4616b26aa65
+AUTHOR_METADATA_BLOB: 090fa5c50b30eaeea74f42d690c9a787f321345d
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHVII_B22_B27_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_THPT_TOPIC17_FRUSTUM_VOLUME_MODEL_R00_20261113.html
@@ -251,3 +251,6 @@ This handoff retains its prior file path and packet identifier for stable links 
 
 
 **Additional in-place typography QC:** Knowledge frustum labels a=6/h=4 now correct MathJax; source Q18/metadata updated in existing files. The only active learner file path remains unchanged. All assessment/keys/point scores unaffected; no new independent reviewer verdict or production QA.
+
+
+**Pedagogical self-sufficiency correction:** TOP17-O10 volume relation k=0,1/2,1 now taught fully in learner source without requiring an optional interactive HTML slider. Exact new source has matching updated Q18 and A1 self-QA; no key/rubric, assessment or source path changed. Source-only handoff is not production release.
