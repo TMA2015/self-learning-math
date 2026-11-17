@@ -250,7 +250,7 @@ Trên trục số, một số \(x\) hoặc thuộc tập nghiệm hoặc không.
 
 Hai quyết định x,y cần mô tả tập cặp khả thi. Trước hết, hãy nhớ cặp tọa độ (x,y), thay số vào biểu thức. 
 
-> **ĐỊNH NGHĨA — Bất phương trình bậc nhất hai ẩn.** Bất phương trình bậc nhất hai ẩn có dạng \(ax+by\mathrel{\square}c\), trong đó \(a,b,c\in\mathbb R\), \((a,b)\ne(0,0)\) và ký hiệu \(\square\) được thay bằng \(<,\le,>,\ge\). Một cặp \((x,y)\) là nghiệm nếu thay vào làm bất phương trình đúng; một hệ số bằng 0 vẫn hợp lệ.
+> **ĐỊNH NGHĨA — Bất phương trình bậc nhất hai ẩn.** Bất phương trình bậc nhất hai ẩn có dạng \(ax+by<c\), \(ax+by\le c\), \(ax+by>c\) hoặc \(ax+by\ge c\), với \(a,b,c\in\mathbb R\) và \((a,b)\ne(0,0)\). Một cặp \((x,y)\) là nghiệm nếu thay vào làm bất phương trình đúng; một hệ số bằng 0 vẫn hợp lệ.
 
 
 
