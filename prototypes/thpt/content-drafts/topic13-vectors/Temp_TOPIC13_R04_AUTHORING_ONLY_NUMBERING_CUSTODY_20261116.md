@@ -1,12 +1,12 @@
 # AUTHORING-only metadata — CĐ13 Vectơ hình học phẳng và không gian R04
 
-**Scope:** one self-sufficient Topic in three learner pages, 16 modules/outcomes, 16 self-tries, 16 new Practice and 4 Written rubrics /7; active learner source 4ddf62bc1ddca87e550201bb30cb7a88eb69cf7c. Internal IDs/receipts are not learner-visible.
+**Scope:** one self-sufficient Topic in three learner pages, 16 modules/outcomes, 16 self-tries, 16 new Practice and 4 Written rubrics /7; active learner source 9a558f553bd6a4a58701a6bae490717ba5a52540. Internal IDs/receipts are not learner-visible.
 
 CONTENT_REVISION: R04
 PUBLIC_NEW20_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md
-PUBLIC_NEW20_CANONICAL_BANK_BLOB: d2f4b9fbd11b65ddd0a3190cc4cfbb8569951175
+PUBLIC_NEW20_CANONICAL_BANK_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df
 Q18_R04_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-Q18_R04_RECEIPT_BLOB: 4fca1106e615f70be8fd760fbacaafb42a33437c
+Q18_R04_RECEIPT_BLOB: 5e8ad3dfbc24d008f32e06e18215c96c543e7278
 G10_SOURCE_EXTERNAL_PR: 750
 G10_SOURCE_EXTERNAL_BRANCH: authoring/g10-chiv-ped-r02-24-outcomes-20261105
 AUTHORING_STATUS: R04_NUMBERING_DELTA_A_AUTHOR_SELF_VERIFIED
@@ -16,8 +16,8 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 4ddf62bc1ddca87e550201bb30cb7a88eb69cf7c
-SOURCE_BLOB: 4ddf62bc1ddca87e550201bb30cb7a88eb69cf7c
+ACADEMIC_SOURCE_BLOB: 9a558f553bd6a4a58701a6bae490717ba5a52540
+SOURCE_BLOB: 9a558f553bd6a4a58701a6bae490717ba5a52540
 ORIGINAL_G10_SGK_SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9
 ORIGINAL_G12_SGK_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
@@ -213,3 +213,8 @@ Original SGK sources are third-party reviewer-verified *within their old snapsho
 - Active academic source `prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md`, Git blob `4ddf62bc1ddca87e550201bb30cb7a88eb69cf7c`; signed source-equivalent author Q18 `4fca1106e615f70be8fd760fbacaafb42a33437c`.
 - Frozen R03 source `7f3e90e5eadcbaa1dc7b49cd6d5136f6dbf61e22`, Q18 `bf040651f959e2559c37662caeb66d31d68b6bf9`, metadata `755c71241b3c1b3454d81a065ac609286a6a19ee` preserved. G10 source on sibling Draft PR #750 still a RELEASE R1 dependency, no source substitution.
 - This is source/format authoring QA, not a new academic standard, independent reviewer, or real website/browser QA. No merge/deploy.
+
+
+## R05 · Q15 canonical bank vector equations / Q18 source lock (17/11/2026)
+
+Current learner source `9a558f553bd6a4a58701a6bae490717ba5a52540`, NEW20 single canonical bank `136bd4552118e5dba6b18b58965be7d37878e9df`, affected-scope Q18 receipt `5e8ad3dfbc24d008f32e06e18215c96c543e7278`. This replaces 9 ambiguous vector/scalar notations in one bank (8 stems/8 solution paragraphs), preserving the 20 original IDs and 4 Written /7 rubrics. Verified 20 G10 original SGK item bodies, 12 G12 original item bodies and 20 NEW20 bank bodies match the 52 learner source placements by ID. Original G10 #750 is Draft and still a source availability dependency before RELEASE. Historical R04 source/Q18 SHA remains historical; `Q15_52_SOURCE_PARITY_PASS` does not mean whole-topic math/PED or browser QA newly passed.
