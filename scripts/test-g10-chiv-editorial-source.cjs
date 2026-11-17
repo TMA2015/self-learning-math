@@ -50,6 +50,32 @@ for(const [lesson,row] of rows){
   const field=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(field("R01_APPROVED_SOURCE_BLOB"),row.candidate,"B08 R02 extends immutable ChIV R01");
   expected=field("R02_CANDIDATE_SOURCE_BLOB");
+  const visual=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B08_MATHJAX_DISPLAY_DELTA_A_R03_20261117.md"),"utf8");
+  const visualField=k=>visual.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(visualField("R02_PUBLISHED_SOURCE_BLOB"),expected,
+   "B08 R03 Delta A must follow exactly previously published R02 source blob");
+  const published=cp.spawnSync("git",["show",
+   "447967a6775c414578c841358290d232eacfa80b:"+rel],{cwd:root,encoding:"utf8"});
+  assert.equal(published.status,0,"B08 immutable published R02 git object required");
+  assert.equal(blob(published.stdout),expected,"B08 R02 Git content must equal approved published Q18 receipt");
+  const lines=published.stdout.split("\n"),adjusted=[];
+  let opens=0,closes=0,added=0;
+  for(let i=0;i<lines.length;i++){
+   if(lines[i]==="    \\["&&lines[i-1]?.trim()!==""){adjusted.push("");added++;}
+   adjusted.push(lines[i]);
+   if(lines[i]==="    \\[")opens++;
+   if(lines[i]==="    \\]"){
+    closes++;
+    if(lines[i+1]?.trim()!==""){adjusted.push("");added++;}
+   }
+  }
+  assert.equal(opens,6,"B08 R02 original exactly six display TeX blocks");
+  assert.equal(closes,6,"B08 R02 original six closed displays");
+  assert.equal(added,9,"B08 R03 exactly nine Markdown blank lines inserted");
+  assert.equal(source,adjusted.join("\n"),
+   "B08 R03 display-only fix must be byte-exact R02 plus nine blank lines; no math or answer edits");
+  expected=visualField("R03_CANDIDATE_SOURCE_BLOB");
  }
  assert.equal(blob(source),expected,lesson+" exact final Q18 academic source receipt");
  assert.equal(candidateG10KnowledgeBlob(n),expected,lesson+" Q18 source router selects correct immutable snapshot");
