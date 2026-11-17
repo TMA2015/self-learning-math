@@ -2,10 +2,15 @@
 
 R03_IMMUTABLE_SOURCE_BLOB: bbb0169bd4809691b08963413abd16d20ae50073
 STUDENT_R05_PATH: prototypes/thpt/content-drafts/topic08-limits-continuity/Temp_TOPIC08_R05_STUDENT_FIRST_58_CANONICAL_VISIBLE_20261115.md
-STUDENT_R05_BLOB: a33d1e6a20dba1dc7861097e231906aff2938c02
+STUDENT_R05_BLOB: 178ccc6f1b7c94c9db1146c626efc4dca319b149
 R05_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC08_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
-R05_Q18_RECEIPT_BLOB: 3285d8d9db6882e798995d92a0d8f83ce592d8e9
-STATUS: R05_Q18_AUTHOR_SELF_VERIFIED_PENDING_V2_GATE
+R05_Q18_RECEIPT_BLOB: 81dedff34a973b5a1db6737c16ff5d3020e613b6
+STATUS: R05_CURRENT_FORMAL_KNOWLEDGE_TARGETED_AUTHOR_SELF_VERIFIED
+
+## 18/11 current learner-source custody and DELTA_C boundary
+
+- The one effective source at existing R05 path is `178ccc6f1b7c94c9db1146c626efc4dca319b149`. This direct SOURCE delta explicitly includes two previously unreceipted learner Knowledge clarifications (old signed `a33d1e6a20dba1dc7861097e231906aff2938c02` → pre-edit `8e40965f6174b52c386ab461440b1ed11ccededc`) and four genuinely typed mathematics statements plus a recap. Source-Q18 current receipt `81dedff34a973b5a1db6737c16ff5d3020e613b6` includes line-level affected-scope verification.
+- All original 36 SGK canonical references and 22 new Topic bank items, 18 public replays, full Practice solutions and rubrics, three SVG references, outcome→item mapping unchanged. Historical 159/159 author assertions remain evidence for old R05 only; source-scoped current academic/PED claims limited to edited Knowledge. No new independent NotebookLM or official RD1/Readiness/Mastery.
 
 ## Nguồn chuẩn, ranh giới và trang in
 
