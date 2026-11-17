@@ -264,7 +264,7 @@ for(const [lesson,row] of rows){
    official.includes("THPT_G10_B09_DECOMPOSITION_TWO_DIRECTIONS_D5_R03.svg"),
    "B09 two D5 figures must be adjacent to official teaching");
   const examples=source.slice(source.indexOf('=== "Ví dụ"'),source.indexOf('=== "Lỗi thường gặp"'));
-  assert.equal((examples.match(/^    ### Ví dụ [1-4]\\./gm)||[]).length,4,
+  assert.equal((examples.match(/^    ### Ví dụ [1-4]\./gm)||[]).length,4,
    "B09 four distinct worked examples, including mandatory decomposition");
   assert(examples.includes("Phân tích theo hai vectơ không cùng phương")&&
    examples.includes("\\overrightarrow{MN}=-\\tfrac12\\vec a+\\tfrac12\\vec b"),
