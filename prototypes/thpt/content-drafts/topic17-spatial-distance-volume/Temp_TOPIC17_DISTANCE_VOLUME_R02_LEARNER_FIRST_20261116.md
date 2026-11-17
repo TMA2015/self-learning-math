@@ -846,7 +846,7 @@ Hai diện tích S=36,S′=9, √(SS′)=18. V=(4/3)·(36+9+18)=84 cm³. Nếu S
 
 # Tự kiểm tra
 
-Tám câu sau là những bài tự ôn công khai đã có trong Luyện tập. Em hãy tự làm trên giấy trước khi xem lời giải. Đây không phải đánh giá năng lực độc lập, không ghi Mastery.
+Hãy tự giải tám câu dưới đây vào vở mà chưa xem lại lời giải đã học. Khi làm xong, trở về phần **Luyện tập**, mở lời giải từng câu để đối chiếu, tìm chỗ sai và chọn nội dung cần ôn thêm. Đây là phần tự ôn, không phải bài kiểm tra có chấm điểm chính thức.
 
 ## 1. Câu hỏi tự ôn
 
