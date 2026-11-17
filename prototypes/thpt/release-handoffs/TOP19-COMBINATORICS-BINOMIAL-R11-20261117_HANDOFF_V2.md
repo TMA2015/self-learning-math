@@ -9,9 +9,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R11_P2_CANONICAL_LABEL_LEARNER_CLARITY_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: 32721032973866087dcc4b8981e33d4bf3391c8d
+ACADEMIC_SOURCE_BLOB: 5546204168eb3c3402b21af9ca1b9d08b118c378
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC19_R11_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md
-REVIEW_RECEIPT_BLOB: ad08a2996f25154d83a42b3e44fe591156960cdb
+REVIEW_RECEIPT_BLOB: 0424dc58b6662fa214ea1f2a0835d923b0843ba4
 ACADEMIC_VERDICT: SELF_VERIFIED
 PEDAGOGICAL_VERDICT: SELF_VERIFIED
 BLOCKERS: NONE
@@ -24,9 +24,9 @@ PRIVATE_RD1_SHA256: 6cc51485931317083b5ba673d490e5688a7538d4731dca29f002e804c0f9
 
 CONTENT_REVISION: R11
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_56_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_A1_A7_BLOB: d0a24f0c009aac22932b4f51a3328d03bde6723d
+AUTHOR_A1_A7_BLOB: e08edfe43800b6416997920af6aa30e6b8c08ba1
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_56_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_METADATA_BLOB: d0a24f0c009aac22932b4f51a3328d03bde6723d
+AUTHOR_METADATA_BLOB: e08edfe43800b6416997920af6aa30e6b8c08ba1
 
 ## R09 IMMUTABLE BASELINE LEARNER SOURCE AND Q18
 
@@ -256,3 +256,6 @@ The ONE effective R11 learner source was directly edited to give a grammatical, 
 
 
 **Current source handoff:** Source-specific Q18 author self-QA for the changed math/editorial portion is complete, immutable predecessor source preserved in Git, one learner source and matching A1/V2/ready/REGISTER selected. No website/AP/RELEASE PASS or merge/deploy implied. A separate CI on HEAD is required before release intake acceptance.
+
+
+**Learner Knowledge formatting QA:** four original lines now distinguish mathematical symbols n!, A_n^k, C_n^k, 1/x, P(1) from physical calculator keys nPr/nCr/SHIFT. No canonical question, key, scoring, public replay or official assessment changed; same one active source path, matching Q18 and A1.
