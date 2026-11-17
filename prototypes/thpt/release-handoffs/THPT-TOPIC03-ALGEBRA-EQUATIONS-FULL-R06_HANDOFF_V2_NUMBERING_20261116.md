@@ -1,11 +1,11 @@
-# AUTHORING CONTENT_READY — CĐ03 phương trình đại số và kỹ thuật chuyển đổi dạng · current learner R06
+# AUTHORING QA HOLD — CĐ03, một bản thảo hiện hành đã sửa D6 và Ví dụ
 
 **Scope:** CĐ03/22 trong danh mục được chủ dự án yêu cầu theo thứ tự. Chuyên đề độc lập có ba trang Kiến thức / Luyện tập / Tự kiểm tra; SGK KNTT Toán 10 tập 2 ChVI B18 chỉ là nguồn S1 và item reuse, không là thứ tự nội dung Topic. 12 outcomes, 31 unique PUBLIC canonical IDs, 3 SVG. Mô hình tương tác SPEC_ONLY, không trình bày là website đã hoạt động. AUTHORING Draft PR #820, không merge/deploy.
 
 PACKET_ID: THPT-TOPIC03-ALGEBRA-EQUATIONS-FULL-R01
 CONTENT_REVISION: R06
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_ONLY_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: 08bdb553501f9a9627a52cf6e5248501ad7044ac
+AUTHOR_METADATA_BLOB: 8464ce41de5ad9d51ff01883c9a89dee12d08f9f
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
@@ -13,9 +13,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 9cc738526f95e68a31f99409d8672aff44f5c8a9
+ACADEMIC_SOURCE_BLOB: daeeb5d571d120b31265f8c603a76049a1f2c78c
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC03_R06_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: 22c934be731baf6690a52c28ba8cb993f34ee013
+REVIEW_RECEIPT_BLOB: 6f7641528ea7bd8acb6a98e1c46be03a8ef44aae
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_ORIGINAL08_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: b2e79a6cda5fdcc82dbd281e4273577ca637895e
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_NEW23_PUBLIC_CANONICAL_R01_20261112.md
@@ -36,7 +36,7 @@ CATALOG_TOPIC_ID: CD03
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 ACADEMIC_VERDICT: SELF_VERIFIED
 PEDAGOGICAL_VERDICT: SELF_VERIFIED
-CONTENT_STATE: CONTENT_READY
+CONTENT_STATE: BLOCKED_BY_AUTHORING
 BLOCKERS: NONE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
@@ -234,3 +234,8 @@ CĐ03 R05 exact source blob `9cc738526f95e68a31f99409d8672aff44f5c8a9`, signed Q
 ## RELEASE_AND_OWNER_GATE
 
 RELEASE must resolve official runtime TOPIC_ID on owner decision and integrate on current main, verify AP1–AP5, R1–R5 and P1–P2 on exact HEAD, Golden R4/Adaptive Tabs, responsiveness/MathJax/SVG/keyboard/touch, canonical solution/rubric parity including original 5/6-point grading, Final Submit no hint/key/Tutor/correctness before submission, no exposure of private RD1, no Mastery from public selfcheck or Written self-rubric. Interaction labs are spec-only, not runtime. Owner **has not authorized merge/deploy**; SGK, THCS, Firebase and learner records remain unaffected.
+
+
+## One effective learner draft — source correction inline
+
+The single active learner **path** is existing R06_NUMBERING_CONSISTENT_20261116.md, current SHA daeeb5d571d120b31265f8c603a76049a1f2c78c, not an additional R07 file. Corrections: 11 student error-remediation pointers now name real numbered Practice exercises; worked Example TOP03-O09 changed to independently solved sqrt(x+6)=x (x≥0, only x=3) so original Vận dụng sqrt(2x+7)=x+1 is not pre-solved. Prior R06 headings kept; 31 canonical Practice items, 12 question-only public replays, 43 disclosures, questions/keys/rubrics, SVGs untouched. Existing Q18 has source-specific author self QA, not blanket NotebookLM PASS. `CONTENT_STATE=BLOCKED_BY_AUTHORING` until existing ready manifest, REGISTER and exact final HEAD CI reconcile; do not read original R05/R06 historical snapshot as current learner source. No RELEASE integration/merge/deploy.
