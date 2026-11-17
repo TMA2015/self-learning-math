@@ -64,6 +64,13 @@ for(const [lesson,row] of rows){
    const svg=fs.readFileSync(path.join(root,
     "docs/assets/images/thpt/THPT_G10_B07_FORCE_VELOCITY_REPRESENTATION_D5_R04.svg"));
    assert.equal(blob(svg),field04("NEW_SVG_BLOB"),"B07 R04 original new D5 source exact SVG SHA");
+   const mobileSvg=fs.readFileSync(path.join(root,
+    "docs/assets/images/thpt/THPT_G10_B07_FORCE_VELOCITY_MOBILE_D5_R04.svg"));
+   assert.equal(blob(mobileSvg),field04("MOBILE_SVG_BLOB"),
+    "B07 R04 responsive mobile art exact Git blob");
+   assert(source.includes('<source media="(max-width: 600px)"')&&
+    source.includes("THPT_G10_B07_FORCE_VELOCITY_MOBILE_D5_R04.svg"),
+    "B07 R04 requires portrait mobile variant at 390px");
    assert(source.includes("THPT_G10_B07_FORCE_VELOCITY_REPRESENTATION_D5_R04.svg")&&
     source.includes("1 cm trên giấy ứng với 10 N")&&
     source.includes("Xe thứ nhất có vận tốc 6 m/s")&&
