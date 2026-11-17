@@ -19,7 +19,7 @@ GLOBAL_ACTIVE_V2_READY_REGISTER: HOLD
 | CĐ07 | 22609934f525e6e9c2c8f1513e439c3cd4d54221 | 3e49d4032d6274c8992cee26d50d0de1fd768d29 | 5734640f9948659cebafa52e0fcdd61d85be1460 | Page H2 hierarchy + independent sequence/index explanation, original L6/L44 |
 | CĐ08 | a33d1e6a20dba1dc7861097e231906aff2938c02 | 3f1f55d1a05eece7de25508318e8ed6c2cecb621 | f86a0dfc1a7ab73533395f19428368aeeabac676 | Explicit factorization and left/right jump figure narration, L331/L358 |
 | CĐ09 | 8222107d717f7d02b845f79ccdd154e8dbe71cc6 | 252c4719396b3692ea6cf62f1845c0874b666a8f | ba072154f7fc60ae82952f8060f0cb17184cb6d6 | Signed velocity/metres-seconds plus learner Bài52 instead of raw P15, L225/L1699 |
-| CĐ12 | e74f32b1092d571af0091174a55104e7d3bec5b5 | d4724b24f4dba4b45a2198860e2db8e2f472d7dc | abe40c57320889533301bc41652a67b8584561f5 | Remove learner-visible R03 implementation tag in H1 |
+| CĐ12 | e74f32b1092d571af0091174a55104e7d3bec5b5 | ccf74ca47859794333b8ce6af56fbda4458c5f62 | dc306b4df5ae07aead6fb4541ba42969bd2ddf1b | R11: 189 learner formula spans converted from code to MathJax; rubric x=Rcosα / y=Rsinα clarified, 46 IDs + 12 question-only replays unchanged; MathJax actual-browser AP2 and global V2 HOLD |
 | CĐ15 | 581ff0b0c019a705d36f306d7d5b0db38d185c0b | 98f911d70d6e69fed5747c4f4865fa1a0942f3d1 | a386670f51f70ba3f207a9bf98e34727d31cd3d0 | Seven duplicate source labels removed from 8 public replay stems |
 | CĐ22 | b5713f0c2a1aa6a9fa7a7d63f6e6878bdf8d338b | 58619b8b613b382fbdd4874670bdc24d54ac1c62 | 559f0e875d7687e7410b60a8304ceeb18572224e | Two real SVG locations aligned to their data; 7 Mastery suffixes replaced, SGK PDF-index P2 still open |
 
@@ -70,3 +70,16 @@ Open exactly the eight new learner source blobs and frozen old blobs listed abov
 - **Decision:** `AFFECTED_DELTA_AUTHOR_SELF_QA_PASS` for this narrowly source-equivalent editorial revision; **`GLOBAL_V2_REGISTER_HOLD` / `CONTENT_READY=NO`**. Do not promote to Academic/PED global PASS or independent NotebookLM verdict. Other seven candidate sources and receipts remain unchanged. No RELEASE, merge or deploy.
 
 **Next AUTHORING scope:** continue sentence-by-sentence language/context audit across Topic candidates; verify other true student-visible metadata, math notation and image-reading issues under the same Q01–Q18 + Issue #864 checklist, without rewriting correct passages for uniformity.
+
+
+---
+
+## R11 current-CĐ12 learner source quality edit (17/11/2026) — use SAME source path
+
+The R09 table row for CĐ12 above is refreshed to the **one current candidate source** and its existing receipt. Historic R09/R10 blobs remain in Git history and this report's earlier R10 prose solely as audit context; they are **not** alternate active learner drafts. Current source is the **same file path**: `prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_P2_LEARNER_TITLE_CANDIDATE_20261117.md`. Current Git source blob is `ccf74ca47859794333b8ce6af56fbda4458c5f62`; existing Q18 targeted receipt (updated **in place**, not added): `dc306b4df5ae07aead6fb4541ba42969bd2ddf1b`.
+
+**Real student-visible defect:** 189/189 mathematical expressions were formatted as inline Markdown code (monospace, no MathJax mathematical layout), distributed across all three Topic pages, including some question-only selfcheck and voluntary answer reveals. Converted these expressions to explicit `\\(...\\)` TeX in-place, normalized trigonometric functions, radical signs, superscripts, intervals and degree symbols. The Bài SGK 9 handwritten 7-point rubric also had two incomplete coordinate formulas `x=Rcos`, `y=Rsin`; it now explicitly specifies `x=R\\cos\\alpha`, `y=R\\sin\\alpha`. This is a **Q03/Q04/Q07/Q14 DELTA_C** notation fix, requiring source-aware review of that SGK-reused Written item before global canonical acceptance.
+
+**Source exact QA:** 79 existing lines affected, **769→769** total lines; original explicit inline MathJax count **126→315**, delta +189, all 167 distinct conversions TeX braces balanced with no source math backticks; exact order **46/46** canonical/replay placements, **46/46** voluntary disclosure boundaries, **12/12** public question-only selfcheck, and two source-linked SVGs unchanged; no numeric data, mathematical hypothesis, question role, keyed answer or point allocations changed. These assertions establish only **source-level semantic/presentation parity** with two explicit operand clarifications; they do not prove rendered MathJax in a real browser or all 34 original canonical items have been independently re-solved.
+
+**Open:** `CĐ12_MATHJAX_BROWSER_AP2=UNVERIFIED`; `CĐ12_ORIGINAL_CANONICAL_RUBRIC_EQUIVALENCE_Q15=HOLD` scoped to Bài SGK 9; `GLOBAL_ACTIVE_CANONICAL_Q15_V2_READY_REGISTER=HOLD`; `CONTENT_READY=NO`. Do not create R12 repaired source file, automatically republish, merge or deploy. Continue authoritative one-source consolidation of the remaining Topics and review sentence-level readiness against Issue #864.
