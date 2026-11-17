@@ -59,8 +59,17 @@ const blob=data=>{
   const b06field=k=>b06receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(b06field("BASELINE_CSS_GIT_BLOB"),b05field("CANDIDATE_CSS_GIT_BLOB"),
    "B06 CSS extends exact B05 accepted Golden CSS");
-  assert.equal(blob(css),b06field("CANDIDATE_CSS_GIT_BLOB"),
-   "B06 scoped CSS Q18 receipt; ChV unaffected");
+  const r05=fs.readFileSync(root+
+    "/prototypes/thpt/ux795/G10_CHIV_B07_SEMANTIC_CONCEPT_RECAP_DELTA_R05_20261117.md","utf8");
+   const r05field=k=>r05.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(r05field("BASELINE_CSS_GIT_BLOB"),b06field("CANDIDATE_CSS_GIT_BLOB"),
+    "B07 R05 extends immutable B06 style");
+   assert.equal(blob(css),r05field("R05_CSS_GIT_BLOB"),
+    "B07 R05 exact scoped CSS SHA; ChV untouched");
+   const cssText=css.toString("utf8"),cut=cssText.indexOf("/* G10 ChIV B07 R05");
+   assert(cut>0,"B07 scoped CSS tail present");
+   assert.equal(blob(cssText.slice(0,cut-1)),b06field("CANDIDATE_CSS_GIT_BLOB"),
+    "All pre-B07 Golden CSS bytes unchanged");
   assert(css.toString("utf8").includes('data-thpt-first-try-id="THPT-G10-CHIII-TRY06"'),
    "B06 visual delta constrained to B06 first-try canonical selector");
   assert(css.toString("utf8").includes('data-thpt-first-try-id="THPT-G10-CHIII-TRY01"'),
