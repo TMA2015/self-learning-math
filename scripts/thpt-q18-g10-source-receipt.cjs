@@ -207,7 +207,19 @@ function expectedG10KnowledgeBlob(lesson,legacy){
     "THPT-G10-CHIV-TRY01","THPT-G10-CHIV-TRY05",
     "HELP-G10-B07-01","HELP-G10-B07-02"])
     assert(receipt.includes(key),"B07 R02 receipt missing source/identity evidence "+key);
-  return candidate;
+  const visual=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B07_HELP_LABELS_DELTA_A_R03_20261117.md"),"utf8");
+  const ui=k=>visual.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(ui("R02_SOURCE_BLOB"),candidate,
+   "B07 UI-only R03 must extend exact immutable academic R02");
+  const source=ui("R03_SOURCE_BLOB");
+  assert(/^[a-f0-9]{40}$/.test(source||"")&&source!==candidate,
+   "B07 R03 learner-facing labels source must have exact new SHA");
+  for(const token of ["DELTA_A_UI","HELP-G10-B07-01","HELP-G10-B07-02",
+    "THPT-G10-CHIV-TRY01","THPT-G10-CHIV-TRY05"]){
+    assert(visual.includes(token),"B07 R03 visual receipt missing "+token);
+  }
+  return source;
  }
 
  if(name==="B08"){
