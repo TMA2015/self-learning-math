@@ -450,3 +450,18 @@ All SHA cells above are complete Git blob SHAs fetched from PR heads, NOT curren
 - RELEASE/AP/R/P1/P2 QA, official private Readiness/Mastery, merge and deploy = OUT OF SCOPE / NOT CLAIMED.
 
 **Operational close of this audit iteration:** do not repeat another 22-source inventory as if the recorded findings were absent. The next actual work is remediation/verification of these **specific open defects** and per-source handoff synchronization. Any future assertion of all-22 full-language PASS must be backed by different, genuinely exhaustive evidence rather than this automated-plus-targeted review.
+
+---
+
+<!-- TOPIC_R13_FIRST_TRY_CLONE_20261117 -->
+## R13 · Verify formative independence: exact solved Example versus immediate Vận dụng (17/11/2026)
+
+**Reason for extra pass:** R12 source structural triage cannot prove that a supposedly independent First Try is not copied from the solved Example directly above it. Re-fetched all 22 candidate sources, extracted per-lesson solved-example prompts and adjacent Vận dụng, checked nearby exact/normalized matches with human context confirmation. The tokenizer produces false positives for short generic commands like “Giải”; **no Q14 defect is assigned from similarity alone**. CĐ12 uses its own combined “Ví dụ tự học — Đề bài” presentation; its twelve first tries were manually checked for identical numerical data against that style of example, with no exact original-stem clone observed in this targeted comparison.
+
+### Verified real P1 discovered and corrected
+
+- **CĐ03 / TOP03-O09**, PR #888 R06 source blob `d258b880fe695a152d677061a7d307cf262f2862`, around Knowledge L266–272: solved Ví dụ and immediately following Vận dụng BOTH asked exactly `sqrt(2x+7)=x+1`, and both supplied the same unique answer `sqrt(6)`. Students had already seen the answer before being asked to self-try. **P1 Q04/Q13/Q14**, not a source ID collision.
+- **Only the prior teaching Example was changed** in the new R07 candidate on **the same Draft #888**. New worked Example: `sqrt(x+6)=x`; condition x≥0; square to x²−x−6=0 → candidates 3 and −2, reject −2, verify sqrt(9)=3, final solution {3}. This is mathematically correct and demonstrates candidate filtration; it does not show the student's unchanged original question/answer.
+- **New source Git blob:** `9d275d9bb2f0cfed1e13c42df957505d8b3d27fb`; **new Q18 AUTHOR_SELF_VERIFIED receipt Git blob:** `6ea89f6b98e6339c2a5a965ea715ee6712a606b4` (old R06 source/receipt are preserved by Git history). Checked 43/43 ordered canonical/public replay markers, same optional disclosures, Practice and Selfcheck byte-identical; only the teaching Example changed. This material PED delta is Q18 scoped self-QA, not an independent NotebookLM PASS or new full Topic PASS.
+- **Other Topic results:** No other normalized-exact worked-Example versus immediate First Try stem was confirmed in the same targeted source scan. This is not mathematical proof all future questions are novel, nor full duplicate-semantic detection for all Practice.
+- **Status:** `CĐ03_FIRST_TRY_CLONE_P1=FIXED_ON_R07_CANDIDATE`; `GLOBAL_ACTIVE_CANONICAL_Q15_V2_READY_REGISTER=HOLD`; `CONTENT_READY=NO`. The R12 line for CĐ03 R06 blob is historical and is **superseded for the latest candidate by this R13 new R07 blob**. Do not silently edit previous signed R05 source, publish, merge or deploy.
