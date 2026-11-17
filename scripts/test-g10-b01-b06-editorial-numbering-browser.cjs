@@ -140,8 +140,13 @@ function checkSHA(){
   const field08=k=>b08.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(field08("JS_PREVIOUS_BLOB"),field06("CANDIDATE_JS_GIT_BLOB"),
     "B08 scoped JS must extend exact B06 owner-approved Q18 JS, never rewrite history");
-  assert.equal(hash(js),field08("JS_CANDIDATE_BLOB"),
-    "B08 scoped tab keyboard and solved-example cards must match exact Q18 JS");
+  const b07=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B07_S1_OWNER_Q18_ENRICHMENT_DELTA_R02_20261116.md"),"utf8");
+  const field07=k=>b07.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(field07("JS_PREVIOUS_BLOB"),field08("JS_CANDIDATE_BLOB"),
+    "B07 scoped UI must extend exact B08 accepted source-locked JS");
+  assert.equal(hash(js),field07("JS_CANDIDATE_BLOB"),
+    "B07 scoped Golden solution cards and keyboard must match final Q18 JS");
 }
 const names=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
 const ch=n=>n<=2?"i":n<=4?"ii":"iii";

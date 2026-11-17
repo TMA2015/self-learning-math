@@ -192,6 +192,36 @@ function expectedG10KnowledgeBlob(lesson,legacy){
   return corrected;
  }
 
+ if(name==="B07"){
+  const original=chivEditorialReceiptRows().get("B07");
+  assert(original&&original.baseline===blobs[1],"B07 R02 must extend exact original ChIV S1 ledger");
+  const receipt=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B07_S1_OWNER_Q18_ENRICHMENT_DELTA_R02_20261116.md"),"utf8");
+  const field=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(field("R01_APPROVED_SOURCE_BLOB"),original.candidate,
+   "B07 R02 source must directly extend immutable R01 editorial source");
+  const candidate=field("R02_CANDIDATE_SOURCE_BLOB");
+  assert(/^[0-9a-f]{40}$/.test(candidate||"")&&candidate!==original.candidate,
+   "B07 concept-first R02 must carry new exact source SHA");
+  for(const key of ["Q18_OWNER_SELF_VERIFIED_ENRICHMENT","DELTA_C_ACADEMIC_MATERIAL",
+    "THPT-G10-CHIV-TRY01","THPT-G10-CHIV-TRY05",
+    "HELP-G10-B07-01","HELP-G10-B07-02"])
+    assert(receipt.includes(key),"B07 R02 receipt missing source/identity evidence "+key);
+  const visual=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B07_HELP_LABELS_DELTA_A_R03_20261117.md"),"utf8");
+  const ui=k=>visual.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(ui("R02_SOURCE_BLOB"),candidate,
+   "B07 UI-only R03 must extend exact immutable academic R02");
+  const source=ui("R03_SOURCE_BLOB");
+  assert(/^[a-f0-9]{40}$/.test(source||"")&&source!==candidate,
+   "B07 R03 learner-facing labels source must have exact new SHA");
+  for(const token of ["DELTA_A_UI","HELP-G10-B07-01","HELP-G10-B07-02",
+    "THPT-G10-CHIV-TRY01","THPT-G10-CHIV-TRY05"]){
+    assert(visual.includes(token),"B07 R03 visual receipt missing "+token);
+  }
+  return source;
+ }
+
  if(name==="B08"){
   const original=chivEditorialReceiptRows().get("B08");
   assert(original&&original.baseline===blobs[1],"B08 R02 must extend exact ChIV frozen S1 ledger");
