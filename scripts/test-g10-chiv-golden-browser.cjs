@@ -463,6 +463,67 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
         where+" B09 four worked examples include decomposition");
        await labels.nth(0).click();
       }
+      if(lesson===10){
+       // B10 G3: anti-repeat CHIV-10-A/B/C + B09-F04, real learner UI.
+       await labels.nth(0).click();
+       const fig=blocks.nth(0).locator('img[src*="THPT_G10_B10_COORDINATES_DIFFERENCE_D5_R01.svg"]');
+       assert.equal(await fig.count(),1,where+" B10 D5 figure moves BEFORE first student try");
+       await fig.scrollIntoViewIfNeeded();await fig.evaluate(async el=>{if(el.decode)await el.decode();});
+       assert(await fig.evaluate(el=>el.complete&&el.naturalWidth>0),where+" B10 early coordinate SVG decodes");
+       assert.equal(await blocks.nth(0).locator("code").count(),0,
+        where+" B10 no raw backtick-generated math code in Discovery");
+       await labels.nth(1).click();
+       const defs=blocks.nth(1).locator(".thpt-r4-concept-card");
+       const rules=blocks.nth(1).locator(".thpt-r4-rule-card");
+       const recap=blocks.nth(1).locator(".thpt-r4-knowledge-conclusion:not(.thpt-r4-concept-card):not(.thpt-r4-rule-card)");
+       const formulas=blocks.nth(1).locator(".thpt-r4-key-formula");
+       assert.deepEqual([await defs.count(),await rules.count(),await recap.count(),await formulas.count()],
+        [1,2,1,2],where+" B10 semantic 3+1 roles, no arbitrary box quota");
+       for(const scheme of ["default","slate"]){
+        await page.evaluate(v=>document.body.setAttribute("data-md-color-scheme",v),scheme);
+        const colors=await Promise.all([defs.first(),rules.first(),recap.first(),formulas.first()]
+         .map(z=>z.evaluate(el=>getComputedStyle(el).backgroundColor)));
+        assert.deepEqual(colors,scheme==="slate"?
+         ["rgb(25, 61, 54)","rgb(32, 53, 81)","rgb(74, 58, 37)","rgba(0, 0, 0, 0)"]:
+         ["rgb(232, 247, 242)","rgb(234, 241, 252)","rgb(255, 243, 213)","rgba(0, 0, 0, 0)"],
+         where+" B10 3+1 contrast in "+scheme);
+       }
+       await page.evaluate(()=>document.body.removeAttribute("data-md-color-scheme"));
+       assert((await defs.innerText()).includes("Định nghĩa — Tọa độ của vectơ")&&
+        (await rules.allInnerTexts()).some(v=>v.includes("Điều kiện cùng phương")),
+        where+" B10 source-accurate real formal definition and rule");
+       await labels.nth(2).click();
+       const examplesText=await blocks.nth(2).innerText();
+       assert(examplesText.includes("Ví dụ 4 — Qua sông")&&
+        examplesText.includes("bộ dữ liệu khác")&&
+        examplesText.includes("150")&&examplesText.includes("96"),
+        where+" B10 river figure must NOT imply the wrong numeric example dataset");
+       const river=blocks.nth(2).locator('img[src*="THPT_G10_CHIV_RIVER_TRANSFER_D5_R01_CORRECTED.svg"]');
+       assert.equal(await river.count(),1,where+" B10 existing river diagram belongs in worked-example Tab3");
+       await river.scrollIntoViewIfNeeded();
+       await river.evaluate(async el=>{if(el.decode)await el.decode();});
+       assert(await river.evaluate(el=>el.complete&&el.naturalWidth>0),where+" B10 river SVG decodes");
+       await labels.nth(3).click();
+       const tips=blocks.nth(3).locator("details.tip");
+       assert.equal(await tips.count(),3,where+" B10 exactly three actual errors, 3 canonical HELP markers separately");
+       const data=await tips.evaluateAll(nodes=>nodes.map(e=>({open:e.open,summary:e.querySelector("summary")?.textContent||"",text:e.textContent||""})));
+       assert(data.every((x,i)=>!x.open&&x.summary.includes("4."+(i+1))&&
+        x.text.includes("Lỗi thường gặp:")&&x.text.includes("Vì sao sai?")&&
+        x.text.includes("Ôn và luyện lại:")),
+        where+" B10 tab4 genuine student wrong step, cause, remedy and numbering");
+       assert(data.every(x=>!/Assessment safety|HELP_ID|EX-G10-B10-RIVER|B10-[CP]0[1-6]/.test(x.text)),
+        where+" B10 no admin metadata visible to students");
+       const last=tips.nth(2);await last.locator("summary").click();
+       assert(await last.evaluate(e=>e.open),where+" B10 river error expands");
+       await page.waitForFunction(()=>document.querySelector('details.tip[open] mjx-container')!==null,
+        null,{timeout:15000});
+       assert((await last.innerText()).includes("Thời gian đó sai")&&
+        (await last.innerText()).includes("t=60/5=12"),
+        where+" B10 4.3 correct time uses NORTH component not full magnitude");
+       await last.locator("summary").click();
+       assert(!(await last.evaluate(e=>e.open)),where+" B10 4.3 re-closes");
+       await labels.nth(0).click();
+      }
       // Right TOC cross-tab link: tab 3 -> hidden Knowledge tab 2.
      const tocId=await blocks.nth(1).locator("h3[id]").first().getAttribute("id");
      await labels.nth(2).click();
