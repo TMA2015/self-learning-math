@@ -9,8 +9,8 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md
-SOURCE_BLOB: 8222107d717f7d02b845f79ccdd154e8dbe71cc6
-ACADEMIC_SOURCE_BLOB: 8222107d717f7d02b845f79ccdd154e8dbe71cc6
+SOURCE_BLOB: ecd0dec736d0346fd1789a15aa1ec92d6a718485
+ACADEMIC_SOURCE_BLOB: ecd0dec736d0346fd1789a15aa1ec92d6a718485
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_NEW37_PUBLIC_CANONICAL_R05_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: f249949be3b254a29c8859301b6c4904e636c505
 PUBLIC_ORIGINAL71_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_ORIGINAL71_SGK_CANONICAL_INDEX_R01_20261112.md
@@ -30,7 +30,7 @@ PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
 P2: 0
-AUTHOR_SIGNOFF: TOPIC09_R05_20261116_AUTHOR_SELF_VERIFIED_8222107d717f7d02b845f79ccdd154e8dbe71cc6
+AUTHOR_SIGNOFF: TOPIC09_R05_20261118_SCOPED_FORMAL_KNOWLEDGE_ecd0dec736d0346fd1789a15aa1ec92d6a718485
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_IMPORTED: 0
 OFFICIAL_READINESS: NOT_CLAIMED
@@ -104,3 +104,13 @@ Kết nối tri thức SGK Toán 11 tập Hai Chương IX (B31 trang in 81–87,
 - **RELEASE** chưa kiểm AP1–AP5, R1–R5, responsive, MathJax, source parity trên mã website, Final Submit, private RD1 thật, thiết bị vật lý hoặc quyền chủ dự án. AUTHORING không merge/deploy.
 
 **Kết luận tác giả:** Q01–Q18/A1–A7 được tự kiểm theo 32 outcome và 108 item không thấy blocker học thuật P0/P1 trong source R05. Tiếp theo khóa V2 handoff + ready/REGISTER đúng SHA, sau đó dừng AUTHORING. Đây không phải tuyên bố Academic/PED independent reviewer PASS.
+
+## 18/11/2026 — scoped Q18 on current 4 formal derivative statements and earlier two source deviations
+
+- Effective source `ecd0dec736d0346fd1789a15aa1ec92d6a718485`; immediately previous selected learner source `28ce852d11558af56c1b7ea4bbe88160ea33a6e9`; signed original R05 SHA `8222107d717f7d02b845f79ccdd154e8dbe71cc6` with historical 272/272 source QA and 37/37 math/figure checks remains historical and shall not be attributed automatically to new text.
+- Diff **signed** original `8222107d717f7d02b845f79ccdd154e8dbe71cc6` → effective pre-edit `28ce852d11558af56c1b7ea4bbe88160ea33a6e9` found precisely **two material lines**: TOP09-O09 improves correct units and distinguishes directed velocity s'(t) from speed |s'|; Practice Bài 53 remediation points to actual Bài 52 rather than ambiguous P15. Directly checked Bài 52 source: f=(x²+1)/(x−1), D=ℝ\\{1}, f'=(x²−2x−1)/(x−1)², f'(0)=−1. The 108 Practice question texts and keys remain canonical; one D6 navigation changed before this turn.
+- Current Knowledge-only change states exact (i) derivative definition at interior point requiring finite two-sided difference quotient, (ii) differentiability implies continuity but not converse (|x| at 0), (iii) product derivative u'v+uv' when both differentiable, (iv) chain-rule F'(g(x))g'(x) with both derivatives existing, plus one learner summary of tangent, physical velocity units and valid denominator/domain.
+- Rechecked with source examples: for f(x)=x³ at a=2 the quotient tends to 12; |x| slopes −1/+1 at zero; for x(x²+3), product derivative equals 3x²+3; for (2x+1)^5, chain gives 10(2x+1)^4. Required domains and original STEM/ANSWER/SOLUTION/RUBRIC remain unchanged.
+- Complete Practice section and 32 public Selfcheck replays **byte-exact** against immediate predecessor `28ce852d11558af56c1b7ea4bbe88160ea33a6e9` (including the already corrected navigation Bài 52), full canonical 108 IDs, rubrics, SVG4 paths and reveal structure unchanged. `DELTA_C_ACADEMIC_MATERIAL` scope-limited author mathematical/PED Q18 verification only; **no independent NotebookLM full-Topic PASS**, browser MathJax, RD1, or RELEASE implied.
+
+## Lỗi hồi quy R05
