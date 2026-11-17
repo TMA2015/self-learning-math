@@ -554,3 +554,14 @@ The following is a **read-only cross-Topic SOURCE quality checkpoint** over the 
 ### 22-Topic full acceptance: explicit NOT-YET-PASS gates
 
 The user-defined learning quality is decisive. The source-lint and sampled maths are useful but insufficient for full Academic/PED acceptance per outcome. **FINAL_ALL_22_CONTENT_QUALITY_VERDICT: HOLD** until original S1 SGK/SBT printed-page vs PDF page evidence (notably **CĐ22**), original G10 canonical owner PR #750 (notably **CĐ13**), full 22-topic point-by-point textbook/outcome and individual item academic/pedagogical review, actual MathJax/SVG UX renderer QA, and one harmonized current content-owner/V2/ready/REGISTER record each are resolved. No NotebookLM independent PASS automatically inferred from author self-review. No merge/deploy; RELEASE lane stays separate, and private RD1/official assessment data remain untouched.
+
+
+---
+
+## R17 · 4,272 TeX region braces across 22 selected learner sources (17/11/2026)
+
+Additional source-level static QA, exactly on each effective learner SHA from R16 (source ownership and branches unchanged). After stripping unrendered HTML author comments, scan each `\\(...\\)`, `\\[...\\]`, and single-line `$...$` TeX region, check brace nesting and escaped literal braces for early closing/unbalanced grouping.
+
+**Actual result:** **4,272** detected TeX regions across 22 sources, **zero unbalanced/underflow TeX brace warnings** by this controlled source parser. Counts by topic: 01:270 · 02:144 · 03:134 · 04:216 · 05:193 · 06:169 · 07:201 · 08:218 · 09:274 · 10:84 · 11:65 · 12:331 · 13:211 · 14:498 · 15:14 · 16:0 · 17:25 · 18:116 · 19:309 · 20:207 · 21:181 · 22:412. CĐ16 is consciously written in readable Unicode symbols and therefore has zero explicit TeX delimited regions by this measure, **not** zero mathematical substance; it has 21 topic outcomes/actual worked examples and needs the same eventual visual/API math-output check as other Topics.
+
+**Precision limit:** This is a BRACE-BALANCE SOURCE CHECK, not a complete LaTeX grammar parser, proof of valid macros or web-based MathJax/Katex rendering; source-level math may still display incorrectly in Golden UI or responsive/mobile, so AP2 remains **UNVERIFIED**. No additional learner files or learner changes were made for R17. Source Q01/Q02/Q04–Q14/Q15/Q18 full-quality acceptance remains **HOLD** where direct original SGK PDF and/or item-level review is missing. In particular CĐ13 PR #750 and CĐ22 original printed-page/PDF-index S1 evidence are still open. No automatic RELEASE promotion, merge or deploy.
