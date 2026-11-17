@@ -47,7 +47,9 @@ assert(r04.includes("THPT-G10-B09-P07")&&r04.includes("G10-B09-DECOMP_S1")&&
  "P07 must have a scoped non-fabricated Q18 source receipt");
 const ui=text("docs/assets/javascripts/thpt-r4-preview.js");
 assert(ui.includes('const isB09Extension=!isG11&&requestedItem==="THPT-G10-B09-P07"')&&
- ui.includes("b09Extension.forLesson(lesson,parts[2])"),
+ ui.includes("b09Extension.forLesson(lesson,parts[2])")&&
+ ui.includes("await loadB09PracticeExtension()")&&
+ ui.includes("thpt-g10-b09-decomp-r04-formative-extension.js"),
  "Practice modal and deep link must load P07 only on G10 B09");
 const practice=text("docs/thpt-preview/sgk/chuong-iv/luyen-tap.md");
 assert(practice.includes("41 câu tự luyện")&&practice.includes("Bài 9 · Vectơ</strong><p>7 câu"),
