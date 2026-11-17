@@ -121,8 +121,24 @@ for(let n=1;n<=27;n++){
    assert.equal(field("SOURCE_BASELINE_BLOB"),
     "2529b915e4089862e1a48e685ba5dc88d5450558",
     "B09 R03 follows exact immutable R01 editorial source");
+   // R03 remains immutable; R05 is the one current source SHA.
+   const r05Path=path.join(root,
+    "prototypes/thpt/ux795/G10_CHIV_B09_CANONICAL_Q18_R05_20261117.md");
+   assert(fs.existsSync(r05Path),"B09 R05 Q18 receipt must be in the QA-only checkout");
+   const signed=fs.readFileSync(r05Path,"utf8");
+   const q=k=>signed.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(q("BASELINE_R03_SOURCE_BLOB"),field("R03_SOURCE_BLOB"),
+    "B09 R05 must follow exact frozen R03");
+   const manuscriptPath=path.join(root,
+    "prototypes/thpt/content-drafts/THPT_G10_CHIV_B09_CANONICAL.md");
+   assert(fs.existsSync(manuscriptPath),"B09 one-current manuscript missing from QA");
+   assert.equal(blob(fs.readFileSync(manuscriptPath)),q("ONE_CANONICAL_LESSON_BLOB"),
+    "B09 full academic manuscript SHA differs from R05 receipt");
    assert.equal(blob(fs.readFileSync(path.join(root,"docs",route+".md"))),
-    field("R03_SOURCE_BLOB"),"B09 source must match signed new S1/3+1 snapshot");
+    q("R05_SOURCE_BLOB"),"B09 public Knowledge must match signed R05 current source");
+   const manuscript=fs.readFileSync(manuscriptPath,"utf8");
+   assert(manuscript.includes("<!-- BEGIN_B09_KNOWLEDGE_MARKDOWN -->")&&
+    manuscript.includes("THPT-G10-B09-P07"),"B09 manuscript needs Knowledge and P07");
    assert(markdown.includes("Phân tích duy nhất theo hai vectơ không cùng phương")&&
     markdown.includes("THPT_G10_B09_DECOMPOSITION_TWO_DIRECTIONS_D5_R03.svg"),
     "B09 S1 decomposition explanation and its accessible D5 asset missing");
