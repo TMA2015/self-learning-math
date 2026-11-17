@@ -274,13 +274,17 @@
 
     ??? tip "Độ dài âm khi k âm hoặc nhầm quy tắc hướng"
 
-        <ul><li>Điểm nghẽn: Nhầm $|k\vec u|$ với $k|\vec u|$.</li><li>Bản chất cần sửa: Phân biệt hệ số (có dấu) với độ dài (không âm).</li><li>Quy trình 5 bước: 1. Viết $|k|$. 2. Tính độ dài. 3. Xét dấu k khi $\vec u\ne\vec0$. 4. Kiểm k=0 riêng. 5. Làm lại B09-C01 rồi P05.</li><li>Liên kết item có sẵn: B09-C01, B09-P01, B09-P05. Không clone câu hoặc giải vào HELP_ID.</li><li>Assessment safety: hỗ trợ chỉ tại Knowledge/Practice, không hiển thị trong phiên Tự kiểm tra trước Final Submit.</li></ul><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
+        <p><strong>Vì sao sai?</strong> Hệ số $k$ có thể âm, nhưng độ dài vectơ luôn không âm. Vì vậy $|k\vec u|=|k|\,|\vec u|$, không phải $k|\vec u|$.</p>
+        <ol><li><strong>Tìm độ dài:</strong> thay $k$ bằng $|k|$ trước khi nhân độ dài.</li><li><strong>Xét hướng:</strong> nếu cả $k$ và $\vec u$ khác 0 thì $k>0$ giữ hướng, $k<0$ đảo hướng.</li><li><strong>Xét trường hợp đặc biệt:</strong> $k=0$ hoặc $\vec u=\vec0$ thì được vectơ-không; không gán hướng riêng cho vectơ-không.</li><li><strong>Thử kiểm:</strong> nếu $|\vec u|=4$ cm, hãy tự mô tả $-2\vec u$ rồi đối chiếu với Ví dụ 1.</li></ol>
+        <p><strong>Ôn lại:</strong> Nếu vẫn nhầm, quay về định nghĩa trong tab Kiến thức SGK, sau đó luyện câu về độ dài và chiều của vectơ.</p><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
 
     <span data-thpt-help-id="HELP-G10-B09-02" hidden></span>
 
     ??? tip "Nhầm tỉ số trung điểm/trọng tâm với tỉ số vectơ"
 
-        <ul><li>Điểm nghẽn: Viết sai chiều MA/AM hoặc hệ số AG/AM.</li><li>Bản chất cần sửa: Đọc điểm đầu-cuối; lấy đúng 2/3 trung tuyến, 1/3 tổng AB+AC.</li><li>Quy trình 5 bước: 1. Vẽ ABC và M trung điểm BC. 2. Xác định chiều từng vectơ. 3. Dùng AM=(AB+AC)/2. 4. Suy AG=2AM/3. 5. Tự thử B09-P04.</li><li>Liên kết item có sẵn: B09-P03, B09-P04, W09. Không clone câu hoặc giải vào HELP_ID.</li><li>Assessment safety: hỗ trợ chỉ tại Knowledge/Practice, không hiển thị trong phiên Tự kiểm tra trước Final Submit.</li></ul><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
+        <p><strong>Vì sao sai?</strong> Trung điểm quyết định vị trí và độ dài bằng nhau, nhưng chiều của $\overrightarrow{MA}$ ngược với $\overrightarrow{AM}$. Trọng tâm $G$ chia trung tuyến $AM$ theo tỉ số $AG:GM=2:1$, nên $AG:AM=2:3$, không phải $2:1$.</p>
+        <ol><li><strong>Vẽ hình:</strong> đánh dấu $M$ là trung điểm $BC$ và $G$ nằm trên $AM$.</li><li><strong>Đọc mũi tên:</strong> xác định chính xác điểm đầu, điểm cuối trước khi đặt dấu hệ số.</li><li><strong>Dùng đúng tỉ số:</strong> $\overrightarrow{AG}=\tfrac23\overrightarrow{AM}$ và $\overrightarrow{AM}=\tfrac12(\overrightarrow{AB}+\overrightarrow{AC})$.</li><li><strong>Kiểm lại:</strong> kết quả phải là $\overrightarrow{AG}=\tfrac13(\overrightarrow{AB}+\overrightarrow{AC})$; đổi $AG$ thành $GA$ thì đổi dấu.</li></ol>
+        <p><strong>Ôn lại:</strong> Xem Ví dụ 2 về trung điểm và Ví dụ 3 về trọng tâm, rồi làm một câu luyện tập tương ứng.</p><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
 
 
     **Khi chưa phân tích được vectơ theo hai hướng:** Chọn điểm gốc chung, vẽ hai vectơ không cùng phương, tìm một đường đi theo hai hướng ấy và dùng quy tắc cộng. Nếu thấy hai cách chọn hệ số cho cùng một vectơ, kiểm tra lại xem hai vectơ cơ sở có thực sự **không cùng phương** không. Ôn lại Bài 8 (quy tắc ba điểm/hiệu hai vectơ) rồi đọc Ví dụ 4 ở tab Ví dụ; không dùng phép chia cho vectơ.
