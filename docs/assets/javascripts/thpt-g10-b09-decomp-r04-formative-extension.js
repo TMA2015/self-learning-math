@@ -17,10 +17,10 @@
    "content_version": 1
  });
  const records=Object.freeze([item]);
- const validate=()=>records.length===1&&item.item_id==="THPT-G10-B09-P07"&&
+ const validate=()=>({valid:records.length===1&&item.item_id==="THPT-G10-B09-P07"&&
   item.lesson==="9"&&item.role==="PRACTICE"&&
   item.skill==="G10-B09-DECOMP_S1"&&item.exposure==="FORMATIVE_ONLY"&&
-  item.content_version===1&&!Object.prototype.hasOwnProperty.call(item,"options");
+  item.content_version===1&&!Object.prototype.hasOwnProperty.call(item,"options")});
  const forLesson=(lesson,role)=>String(Number(lesson))==="9"&&role==="practice"?records:[];
  root.THPT_G10_B09_DECOMP_R04_EXTENSION=Object.freeze({records,validate,forLesson});
 })(window);
