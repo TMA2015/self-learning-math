@@ -7,12 +7,12 @@ Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 STATE: BLOCKED_BY_AUTHORING
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R11_P2_CANONICAL_LABEL_LEARNER_CLARITY_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: 5546204168eb3c3402b21af9ca1b9d08b118c378
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R10_LANGUAGE_LOCAL_REFERENTS_CANDIDATE_20261117.md
+ACADEMIC_SOURCE_BLOB: eff5f2a91708671db6f32063eea2cd111ddc6b94
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC19_R11_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md
-REVIEW_RECEIPT_BLOB: 0424dc58b6662fa214ea1f2a0835d923b0843ba4
+REVIEW_RECEIPT_BLOB: 77fb608d7e8815ab6d32478638cc599e477470b6
 R11_Q15_MATRIX_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_Q15_56_CANONICAL_SOURCE_LOCKED_CANDIDATE_MATRIX_20261117.md
-R11_Q15_MATRIX_BLOB: 07eefae8e5dd5a8da876a88e8c6b9d59fed1210e
+R11_Q15_MATRIX_BLOB: 3f512f82a2dd0770c66eddd67d9447523e6935ea
 BASELINE_R09_SIGNED_SOURCE_BLOB: 2b46a2c92004f2c030d030e2b2021a34157bc95d
 
 S1_ORIGINAL_PUBLIC_BANK_PATH: docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js
@@ -105,3 +105,8 @@ Nguồn học liệu hiện hành tại ACADEMIC_SOURCE_PATH được sửa đú
 
 
 **Knowledge readability update:** calculator key names nPr/nCr/SHIFT clearly separate from mathematical (A_n^k,C_n^k,n!,P(1)); four original learner lines changed, all public canonical items/versions/keys, Practice and Selfcheck unchanged. No new learner file; source-only A1 evidence updated.
+
+
+## Current one-source consolidation (17/11/2026)
+
+The effective learner source is **the existing original filename at ACADEMIC_SOURCE_PATH**, with exact SHA `eff5f2a91708671db6f32063eea2cd111ddc6b94`; the parallel newer-numbered correction candidate was removed after source-level comparison. The R06/R11 release naming in this AUTHORING metadata is a historical packet identifier and does not imply a different live learner body. Current Q18 composite receipt is the existing REVIEW_RECEIPT_PATH with actual blob `77fb608d7e8815ab6d32478638cc599e477470b6`. The 1,084-line R11 learner candidate was byte-identical to corrected R10 except one hidden provenance comment; retain 56 canonical item IDs, 56 disclosures and 7 public selfchecks. No source duplication, no Academic/PED whole-topic approval, no web release. `STATE=BLOCKED_BY_AUTHORING` remains in force.
