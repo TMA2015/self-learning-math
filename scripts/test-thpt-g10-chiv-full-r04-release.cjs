@@ -273,8 +273,9 @@ for(const [tag,rec]of Object.entries(transfer)){
      "River D2 can move only under signed B10 one-canonical source");
     const example=modelB.split('=== "Ví dụ"')[1]?.split('=== "Lỗi thường gặp"')[0]||"";
     assert(example.includes("### 3.4. Ví dụ 4 — Qua sông")&&
-     example.includes("96")&&example.includes("bộ dữ liệu khác")&&
-     example.includes("**Giải:**"),"B10 river worked D2 in Tab3 must show method/numbers/dataset caveat");
+     example.includes("96")&&example.includes("THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg")&&
+     example.includes("THPT_G10_B10_RIVER_VELOCITY_MOBILE_D5_R01.svg")&&
+     example.includes("**Lời giải:**"),"B10 river worked D2 must use exact-data desktop/mobile image and verified solution");
    }else assert(modelB.includes("#### Ví dụ có hướng dẫn — "+rec.ex),
      "Transfer worked method D2 "+tag);
    assert(modelB.includes("THPT_G10_CHIV_"+tag+"_TRANSFER_D5_R01_CORRECTED.svg"),
