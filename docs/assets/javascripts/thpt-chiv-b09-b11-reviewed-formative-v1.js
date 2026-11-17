@@ -114,6 +114,18 @@
     "difficulty": "APPLICATION"
   },
   {
+    "item_id": "THPT-G10-B09-P07",
+    "lesson": "9",
+    "role": "PRACTICE",
+    "skill": "G10-B09-DECOMP_S1",
+    "stem": "Cho tam giác $ABC$. $M$ là trung điểm của $BC$, $N$ thuộc đoạn $AB$ sao cho $AN=\\tfrac13 AB$. Đặt $\\vec a=\\overrightarrow{AB}$, $\\vec b=\\overrightarrow{AC}$. Hãy biểu thị $\\overrightarrow{MN}$ theo $\\vec a,\\vec b$ và giải thích vì sao cặp hệ số là duy nhất.",
+    "solution": "Đáp án: $\\overrightarrow{MN}=-\\tfrac16\\vec a-\\tfrac12\\vec b$.\\nLời giải: Vì $M$ là trung điểm $BC$, $\\overrightarrow{AM}=\\tfrac12(\\overrightarrow{AB}+\\overrightarrow{AC})=\\tfrac12\\vec a+\\tfrac12\\vec b$. Vì $N$ thuộc đoạn $AB$ và $AN=\\tfrac13 AB$, $\\overrightarrow{AN}=\\tfrac13\\vec a$. Theo quy tắc ba điểm, $\\overrightarrow{MN}=\\overrightarrow{MA}+\\overrightarrow{AN}=-\\tfrac12(\\vec a+\\vec b)+\\tfrac13\\vec a=-\\tfrac16\\vec a-\\tfrac12\\vec b$. Hai vectơ $\\vec a,\\vec b$ không cùng phương vì $ABC$ là tam giác không suy biến; do đó cặp hệ số duy nhất.",
+    "hint": "Viết $\\overrightarrow{AM}=\\tfrac12(\\vec a+\\vec b)$ rồi dùng $\\overrightarrow{MN}=\\overrightarrow{MA}+\\overrightarrow{AN}$; kiểm tra dấu vectơ $\\overrightarrow{MA}$.",
+    "exposure": "FORMATIVE_ONLY",
+    "difficulty": "CORE_APPLY",
+    "content_version": 1
+  },
+  {
     "item_id": "THPT-G10-B10-C01",
     "lesson": "10",
     "role": "CORE",
@@ -311,7 +323,7 @@
     "difficulty": "APPLICATION"
   }
 ];
- const validate=()=>({valid:records.length===24&&new Set(records.map(x=>x.item_id)).size===24&&
+ const validate=()=>({valid:records.length===25&&new Set(records.map(x=>x.item_id)).size===25&&
    records.every(x=>/^THPT-G10-B(09|10|11)-[CP]\d{2}$/.test(x.item_id)&&x.exposure==="FORMATIVE_ONLY"&&
     (!x.options||(x.options.length===4&&/^[ABCD]$/.test(x.answerKey))))});
  const forLesson=(lesson,role)=>records.filter(x=>x.lesson===String(Number(lesson))&&
