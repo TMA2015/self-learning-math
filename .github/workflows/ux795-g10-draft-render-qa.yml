@@ -190,6 +190,12 @@ jobs:
           if [[ -f prototypes/thpt/ux795/G10_CHIV_B09_S1_SEMANTIC_DECOMPOSITION_R03_20261117.md ]]; then
             cp prototypes/thpt/ux795/G10_CHIV_B09_S1_SEMANTIC_DECOMPOSITION_R03_20261117.md integration-main/prototypes/thpt/ux795/
           fi
+          # R05 uses ONE canonical B09 manuscript; carry the source and Q18
+          # receipt together to the isolated main+candidate dry-run. No deploy.
+          test -f prototypes/thpt/content-drafts/THPT_G10_CHIV_B09_CANONICAL.md
+          test -f prototypes/thpt/ux795/G10_CHIV_B09_CANONICAL_Q18_R05_20261117.md
+          cp prototypes/thpt/content-drafts/THPT_G10_CHIV_B09_CANONICAL.md integration-main/prototypes/thpt/content-drafts/
+          cp prototypes/thpt/ux795/G10_CHIV_B09_CANONICAL_Q18_R05_20261117.md integration-main/prototypes/thpt/ux795/
           cp scripts/test-ux795-g10-postmerge-headings.cjs integration-main/scripts/
           (
             cd integration-main
