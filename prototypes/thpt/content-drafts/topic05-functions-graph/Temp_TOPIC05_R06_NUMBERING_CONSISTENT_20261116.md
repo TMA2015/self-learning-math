@@ -64,7 +64,7 @@ Tìm D của √(9−x²)/(x−1).
 
 D=[−3,1)∪(1,3], vì −3≤x≤3 và x≠1.
 
-Nếu bỏ điều kiện mẫu, thử x=1; nếu loại căn bằng0, thử x=±3; luyện P03/P04.
+Nếu bỏ điều kiện mẫu, thử x=1; nếu loại căn bằng0, thử x=±3; làm lại Bài 3 và Bài 4 trong phần Luyện tập.
 
 </details>
 
@@ -92,7 +92,7 @@ f(q)=3q−1 với q∈{0,1,2} có T nào?
 
 T={−1,2,5}, không phải cả đoạn [−1,5].
 
-Nếu lầm T với [min,max], liệt kê đầu vào thực sự cho phép; luyện P05/P06.
+Nếu lầm T với [min,max], liệt kê đầu vào thực sự cho phép; làm lại Bài 5 và Bài 6 trong phần Luyện tập.
 
 </details>
 
@@ -120,7 +120,7 @@ Vì sao đường tròn x²+y²=9 không biểu diễn hàm y=f(x) trên [−3,3
 
 x=0 cho hai y=3 và −3, vi phạm một đầu vào một đầu ra.
 
-Nếu chỉ nhìn đường cong mượt và gọi hàm, kẻ đường thẳng đứng qua x=0; luyện P07/P08.
+Nếu chỉ nhìn đường cong mượt và gọi hàm, kẻ đường thẳng đứng qua x=0; làm lại Bài 8 và Bài 9 trong phần Luyện tập.
 
 </details>
 
@@ -154,7 +154,7 @@ x² tăng/giảm trên [−5,−2] ra sao?
 
 Giảm; GTLN25 ở−5, GTNN4 ở−2.
 
-Nếu chỉ thử x=0,1, hãy giải thích cho x₁,x₂ tùy ý; luyện P09/P10.
+Nếu chỉ thử x=0,1, hãy giải thích cho x₁,x₂ tùy ý; làm lại Bài 10 và Bài 11 trong phần Luyện tập.
 
 </details>
 
@@ -182,7 +182,7 @@ f(x)=(x+2)²−1 trên [−1,3] có min/max?
 
 Đỉnh−2 ngoài miền; min f(−1)=0, max f(3)=24.
 
-Nếu lấy đỉnh vô điều kiện, khoanh D trước khi chọn; luyện P11/P12.
+Nếu lấy đỉnh vô điều kiện, khoanh D trước khi chọn; làm lại Bài 12 và Bài 13 trong phần Luyện tập.
 
 </details>
 
@@ -210,7 +210,7 @@ g(x)=x²+x trên ℝ thuộc loại nào?
 
 g(−x)=x²−x khác g(x) và −g(x), nên không chẵn/lẻ.
 
-Nếu chỉ nhìn số mũ cao nhất, thay −x vào **toàn bộ** biểu thức; luyện P13/P14.
+Nếu chỉ nhìn số mũ cao nhất, thay −x vào **toàn bộ** biểu thức; làm lại Bài 14 và Bài 15 trong phần Luyện tập.
 
 </details>
 
@@ -238,7 +238,7 @@ f(x+3)=f(x), f(1)=4; f(10) là?
 
 4, vì 10=1+3·3; chưa thể kết luận 3 là chu kỳ **cơ bản**.
 
-Nếu từ bốn điểm suy toàn miền tuần hoàn, hãy tách quan sát và định nghĩa; luyện P15/P16.
+Nếu từ bốn điểm suy toàn miền tuần hoàn, hãy tách quan sát và định nghĩa; làm lại Bài 16 và Bài 17 trong phần Luyện tập.
 
 </details>
 
@@ -272,7 +272,7 @@ Từ f=x², g=f−2 có đỉnh đâu?
 
 (0,−2), và điểm (1,1) thành (1,−1).
 
-Nếu nói dịch ngang, hãy xem x có bị thay trong f không; luyện P17/P18.
+Nếu nói dịch ngang, hãy xem x có bị thay trong f không; làm lại Bài 18 và Bài 19 trong phần Luyện tập.
 
 </details>
 
@@ -304,7 +304,7 @@ g(x)=(x+2)² dịch parabol x² thế nào?
 
 Trái2, đỉnh(−2,0), vì x+2=0 tại−2.
 
-Nếu dịch phải vì dấu+, tìm x để đối số bằng0; luyện P19/P20.
+Nếu dịch phải vì dấu+, tìm x để đối số bằng0; làm lại Bài 20 và Bài 21 trong phần Luyện tập.
 
 </details>
 
@@ -332,7 +332,7 @@ Với f=x²−2x, f(−x) là gì?
 
 x²+2x, là ảnh qua trục Oy.
 
-Nếu đổi dấu toàn biểu thức, đó là phản xạ Ox; luyện P21/P22.
+Nếu đổi dấu toàn biểu thức, đó là phản xạ Ox; làm lại Bài 22 và Bài 23 trong phần Luyện tập.
 
 </details>
 
@@ -364,7 +364,7 @@ g=(1/2)|x| tại x=4 so với f=|x|?
 
 g(4)=2, f(4)=4, co đứng một nửa.
 
-Nếu kết luận co ngang, giữ x=4 và so hai tung độ; luyện P23/P24.
+Nếu kết luận co ngang, giữ x=4 và so hai tung độ; làm lại Bài 24 và Bài 25 trong phần Luyện tập.
 
 </details>
 
@@ -392,7 +392,7 @@ f=√x, g=f(3x): D và x khi g(x)=2?
 
 D=[0,+∞), 3x=4 ⇒ x=4/3, so f đạt y=2 ở x=4.
 
-Nếu nhận giãn ngang3, dùng u=3x ⇒ x=u/3; luyện P25/P26.
+Nếu nhận giãn ngang3, dùng u=3x ⇒ x=u/3; làm lại Bài 26 và Bài 27 trong phần Luyện tập.
 
 </details>
 
@@ -420,7 +420,7 @@ f=x²−1, tính |f(0)| và f(|0|).
 
 |−1|=1, còn f(0)=−1.
 
-Nếu gán hai hàm bằng nhau mọi x, dùng x=0 làm phản ví dụ; luyện P27/P28.
+Nếu gán hai hàm bằng nhau mọi x, dùng x=0 làm phản ví dụ; làm lại Bài 28 và Bài 29 trong phần Luyện tập.
 
 </details>
 
@@ -456,7 +456,7 @@ g=−f(x+2)+1 với f=x² có đỉnh và hướng mở?
 
 g=−(x+2)²+1, đỉnh(−2,1), mở xuống.
 
-Nếu đọc x+2 là dịch phải, tìm x làm x+2=0; luyện P29/P30/W02.
+Nếu đọc x+2 là dịch phải, tìm x làm x+2=0; làm lại Bài 30, Bài 31 và Bài 36 trong phần Luyện tập.
 
 </details>
 
@@ -488,7 +488,7 @@ f=0 nếu x≤0, f=x+2 nếu x>0 có bước nhảy ở 0 không?
 
 Có: chấm đặc(0,0) và chấm rỗng(0,2) thuộc nhánh bên phải.
 
-Nếu tính f(0)=2, bạn đã dùng nhầm nhánh x>0; luyện P31/P32/W03.
+Nếu tính f(0)=2, bạn đã dùng nhầm nhánh x>0; làm lại Bài 32, Bài 33 và Bài 37 trong phần Luyện tập.
 
 </details>
 
@@ -516,7 +516,7 @@ Q(t)=(t−3)²+2 trên t∈[5,7], giá trị min?
 
 t≥5, nên min Q(5)=6; không chọn Q(3)=2 vì ngoài miền.
 
-Nếu vẫn chọn đỉnh không hợp lệ, viết lại tập khả thi và thử các biên; luyện P33/P34/W04.
+Nếu vẫn chọn đỉnh không hợp lệ, viết lại tập khả thi và thử các biên; làm lại Bài 34, Bài 35 và Bài 38 trong phần Luyện tập.
 
 </details>
 
