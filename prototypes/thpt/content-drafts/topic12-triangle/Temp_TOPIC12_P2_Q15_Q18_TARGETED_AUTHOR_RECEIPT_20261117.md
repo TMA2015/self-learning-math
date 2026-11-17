@@ -7,8 +7,9 @@ STANDARD_GIT_BLOB: 5a80b20ce99be3179d03d56a73fa57b6f4882fd8
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
 REVIEW_SCOPE: Q03_Q04_Q07_Q10_Q14_Q15_Q16_Q18_MATH_PRESENTATION_AND_RUBRIC_CLARITY
-SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_P2_LEARNER_TITLE_CANDIDATE_20261117.md
-SOURCE_BLOB: ccf74ca47859794333b8ce6af56fbda4458c5f62
+SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_NUMBERING_CONSISTENT_20261116.md
+SOURCE_BLOB: 4c0fc6c5791648f4bb1bdd0cfa5dfa5b9ba6253e
+SOURCE_BRANCH: authoring/topic12-triangle-solving-r01-20261113
 PREVIOUS_R05_TARGETED_SOURCE_BLOB: 35148794c6396b213ec18930ac99f031d074c78e
 PREVIOUS_CANDIDATE_SOURCE_BLOB: d4724b24f4dba4b45a2198860e2db8e2f472d7dc
 IMMUTABLE_R03_BASELINE_SOURCE_BLOB: e74f32b1092d571af0091174a55104e7d3bec5b5
@@ -68,3 +69,10 @@ The R05 claims in Sections 1–3 above are **historical to its prior source**, N
 ### Targeted independent review prompt (4 sentences)
 
 Open the current learner file and compare the TOP12 R06 source against the R05 source exactly as recorded, paying particular attention to all MathJax conversions, the two angle-bearing coordinate identities and any SGK-owned canonical item. Verify that no numeric value, mathematical condition, solution, grade criterion or question answer was unintentionally changed, and check the original SGK/SBT where the academic owner differs. Review the complete learning flow for the 12 outcomes and the optional Selfcheck/Practice distinction, with P0/P1/P2 and minimal delta only. Return an affected-scope verdict without inventing a browser AP2 PASS or blanket Topic CONTENT_READY.
+
+
+## CRITICAL_CORRUPT_PATCH_REJECTED; corrected from original source (17/11/2026)
+
+The previous candidate `Temp_TOPIC12_R04_P2_LEARNER_TITLE_CANDIDATE_20261117.md` MUST NOT be used for authoring/release intake. Its naive math-code converter rewrote correct multi-digit rational expressions into **mathematically incorrect TeX mixed-number syntax** (examples: `25/169`→`2\\tfrac{5}{169}`, `144/169`→`14\\tfrac{4}{169}`, `84/21`→`8\\tfrac{4}{21}`, `13/2`→`1\\tfrac{3}{2}`). This is a confirmed `P1_MATH_CORRUPTION` in the discarded patch, not a source-original defect. **Do not copy its content into the correct source.** The patch has been superseded by converting all original 189 mathematical code spans directly from the mathematically correct **original** file, conservatively retaining each original rational numerator and denominator and checking that mathematical numeric tokens were unchanged. Source path above contains 46/46 unchanged item/public placements, 46/46 disclosure blocks, all 12 question-only selfchecks and original SVG assets; 189/189 math spans rendered using TeX, all braces balanced, no reconstructed fraction corruption. Author-facing version/Mastery/canonical/receipt jargon removed from learner visible prose; correct rubric angle now shows `x=R\\cos\\alpha`, `y=R\\sin\\alpha`.
+
+**Current source corrected, not released:** Exact current one selected learner file SHA `4c0fc6c5791648f4bb1bdd0cfa5dfa5b9ba6253e` on SOURCE_BRANCH; previous candidate P1 errors are **rejected and must be deleted**. This Q18 receipt is kept as a historical trail of accepted/rejected changes and is superseded on all statements that asserted the naive candidate source was mathematically equivalent. **FULL Q15 shared SGK W05 original-owner rubric and independent AP2/browser/math review still HOLD**, no CONTENT_READY or merge/deploy.
