@@ -8,10 +8,10 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R06_P2_WRITTEN_RUBRIC_CLARITY_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R06_P2_WRITTEN_RUBRIC_CLARITY_CANDIDATE_20261117.md
-SOURCE_BLOB: f8c6a52c84fecd0dd63dae60413cfbe4327f54b5
-ACADEMIC_SOURCE_BLOB: f8c6a52c84fecd0dd63dae60413cfbe4327f54b5
+SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
+SOURCE_BLOB: fda1fa60d8448c016c24159156c6898de2bc673f
+ACADEMIC_SOURCE_BLOB: fda1fa60d8448c016c24159156c6898de2bc673f
 FROZEN_R04_READY_SOURCE_BLOB: 41daf40a3b639a3ef35e129099525137a05b1848
 FROZEN_R04_FULL_AUTHOR_Q18_RECEIPT_BLOB: 5262fd454346801b050b5eb4f3dc407bc99d3530
 R05_GEOMETRIC_MODEL_SOURCE_BLOB: af8a3529398e5f876d5c979b0d5d26df3519d6ac
@@ -66,4 +66,9 @@ The previous source R06 (Git blob 331c31e124179b31731f9caca2669eaa8948bcbd) show
 
 **Source-specific math check:** choose non-collinear adjacent vectors u=(1,0,0), v=(0,2,0), w=(0,0,3): u+v+w=(1,2,3) equals AC′, whereas |u|+|v|+|w|=6 is not |AC′|=sqrt(14). This exemplifies why explicit arrows matter. Only the learner explanation, teaching Example prompt and teaching worked solution in 1.3 changed. The canonical first try THPT-TOP18-T03, its reveal/answer and all Practice/Written/selfcheck text, rubric scores, 259 public markers, 247 reveal blocks and SVG assets stay byte-equivalent. Source delta is **DELTA_C_ACADEMIC_MATERIAL** for mathematical notation/meaning, targeted `AUTHOR_SELF_VERIFIED`; does not imply independent NotebookLM or full Q01–Q18 new PASS. Original R04 and R06 receipts remain recoverable via immutable Git history.
 
-**Gate:** source current is f8c6a52c84fecd0dd63dae60413cfbe4327f54b5, but prior source-only READY R06 snapshot does not transfer; `BLOCKED_BY_AUTHORING` until current A1/V2/ready/REGISTER and HEAD QA align. No merge/deploy, no private RD1 or Mastery.
+**Gate:** source current is fda1fa60d8448c016c24159156c6898de2bc673f, but prior source-only READY R06 snapshot does not transfer; `BLOCKED_BY_AUTHORING` until current A1/V2/ready/REGISTER and HEAD QA align. No merge/deploy, no private RD1 or Mastery.
+
+
+## CURRENT_ONE_SOURCE_AUTHORING_CONSOLIDATION (17/11/2026)
+
+The **original R05 learner file** now directly contains the 3 mathematically verified vector-arrow teaching lines in TOP18-O03 and **24** correctly reworded student-facing /5 Written rubric titles. Each changed rubric's numeric and textual criteria were verified EXACTLY equivalent to the original when stripping only title and old control-plane “Mastery” sentence. All 247 opt-in solution disclosures, original 212 item/public marker placements, 10 original SVG references, all assessment answers and independent public selfcheck remain unchanged. Learner source is the original existing R05 path above, blob `fda1fa60d8448c016c24159156c6898de2bc673f`, branch `authoring/topic18-r05-parameter-unit-fix-20261117`. The R06 parallel patch is discarded. This receipt's previous R06 ready/V2/REGISTER hashes are STALE, cannot confer CONTENT_READY on newly changed source without exact synced owner/QA. Independent complete Topic academic review/actual browser AP2 remain HOLD; no release/merge/deploy.
