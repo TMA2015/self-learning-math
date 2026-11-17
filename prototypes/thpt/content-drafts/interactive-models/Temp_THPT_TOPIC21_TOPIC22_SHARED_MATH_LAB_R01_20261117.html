@@ -86,7 +86,7 @@ for(let i=1;i<=20;i++){const x=45+(i-1)*33.1;$("ticks").appendChild(el("line",{x
 function stats(){
  const sorted=data.slice().sort((a,b)=>a-b),mean=data.reduce((a,b)=>a+b,0)/7,med=sorted[3],q1=sorted[1],q3=sorted[5],iqr=q3-q1,spread=sorted[6]-sorted[0];
  const lo=q1-1.5*iqr,hi=q3+1.5*iqr,counts={};$("dots").replaceChildren();
- sorted.forEach(v=>{const layer=counts[v]||0;counts[v]=layer+1;const out=v<lo||v>hi;$("dots").appendChild(el("circle",{cx:45+(v-1)*33.1,cy:147-29*layer,r:11,fill:out?"#e9922a":"#1687b4",stroke:"white","stroke-width":2}));});
+ sorted.forEach(v=>{const layer=counts[v]||0;counts[v]=layer+1;const out=v<lo||v>hi;$("dots").appendChild(el("circle",{cx:45+(v-1)*33.1,cy:152-17*layer,r:11,fill:out?"#e9922a":"#1687b4",stroke:"white","stroke-width":2}));});
  data.forEach((v,i)=>$("out-"+i).textContent=v);
  $("mean").textContent=fmt(mean);$("median").textContent=fmt(med);$("spread").textContent=fmt(spread);$("quartiles").textContent=[q1,q3,iqr].map(fmt).join(" · ");
  const exceptions=sorted.filter(v=>v<lo||v>hi);
