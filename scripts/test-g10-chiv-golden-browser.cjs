@@ -391,6 +391,11 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
        await fig.scrollIntoViewIfNeeded();await fig.evaluate(async el=>{if(el.decode)await el.decode();});
        assert(await fig.evaluate(el=>el.complete&&el.naturalWidth>0),
         where+" B09 decomposition SVG decodes and is readable");
+       const decoded=await fig.evaluate(el=>el.currentSrc||el.src);
+       assert(decoded.includes(width<=600?
+        "THPT_G10_B09_DECOMPOSITION_MOBILE_D5_R03.svg":
+        "THPT_G10_B09_DECOMPOSITION_TWO_DIRECTIONS_D5_R03.svg"),
+        where+" B09 serves matching responsive image, not tiny desktop labels on mobile");
        assert.equal(await blocks.nth(2).locator('h3').count(),4,
         where+" B09 four worked examples include decomposition");
        await labels.nth(0).click();
