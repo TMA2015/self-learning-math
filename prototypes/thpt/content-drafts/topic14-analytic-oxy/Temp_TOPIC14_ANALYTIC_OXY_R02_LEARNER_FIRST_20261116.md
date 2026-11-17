@@ -208,7 +208,7 @@ Mức tăng 2 lít/phút, V(t)=2t+5 nên V(4)=13 lít, nếu chưa tràn bể.
 
 </details>
 
-## Mạch B — Vị trí, góc và khoảng cách (Bài 20)
+**Mạch B — Vị trí, góc và khoảng cách (Bài 20)**
 
 ## 2. Vị trí, góc và khoảng cách giữa các đường thẳng
 
@@ -358,7 +358,7 @@ Góc nhỏ giữa trục Oy (x=0) và đường y=x là bao nhiêu?
 
 </details>
 
-## Mạch C — Đường tròn (Bài 21)
+**Mạch C — Đường tròn (Bài 21)**
 
 ## 3. Đường tròn trong mặt phẳng tọa độ
 
@@ -508,7 +508,7 @@ Khoảng cách từ tâm đến đường cho biết nó ở ngoài, tiếp xúc
 
 </details>
 
-## Mạch D — Ba đường conic (Bài 22)
+**Mạch D — Ba đường conic (Bài 22)**
 
 ## 4. Ba đường conic và ứng dụng
 
