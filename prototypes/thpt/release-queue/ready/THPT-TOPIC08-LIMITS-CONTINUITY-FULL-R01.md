@@ -8,18 +8,18 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: f075199081697510acc09be3df31c9e07a078699
+SOURCE_COMMIT: 1d5655bce3d3b18acf83f25ac63174a7039f86c4
 AUTHOR_PR: 829
 CURRENT_PR: https://github.com/TMA2015/self-learning-math/pull/829 — DRAFT AUTHORING, not merged/deployed
 CATALOG_TOPIC_ID: CD08
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic08-limits-continuity/Temp_TOPIC08_R05_STUDENT_FIRST_58_CANONICAL_VISIBLE_20261115.md
-ACADEMIC_SOURCE_BLOB: a33d1e6a20dba1dc7861097e231906aff2938c02
+ACADEMIC_SOURCE_BLOB: 178ccc6f1b7c94c9db1146c626efc4dca319b149
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC08_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md (Q18 AUTHOR_SELF_VERIFIED, not independent NotebookLM PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC08_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
-REVIEW_RECEIPT_BLOB: 3285d8d9db6882e798995d92a0d8f83ce592d8e9
+REVIEW_RECEIPT_BLOB: 81dedff34a973b5a1db6737c16ff5d3020e613b6
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC08-LIMITS-CONTINUITY-FULL-R05_HANDOFF_V2_20261115.md
-AUTHOR_HANDOFF_BLOB: a38430a086ddf49e0defb054cc4caad18cbca952
+AUTHOR_HANDOFF_BLOB: df3bb1695043eafe1b269fc1450496f5cf86b4ad
 PUBLIC_ORIGINAL36_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC08_LIMITS_CONTINUITY_ORIGINAL36_SGK_PLACEMENT_INDEX_R05_20261115.md
 PUBLIC_ORIGINAL36_INDEX_BLOB: 43cbb73bd06e0da6bf8838d925186bc4db4194a7
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC08_LIMITS_CONTINUITY_NEW22_PUBLIC_CANONICAL_R05_20261115.md
@@ -54,9 +54,15 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 - **R04 lịch sử bất biến:** source `8fd1c9d223ccab794ae20fc8f0206df32f0671c4`, Q18 receipt `c3cfa8ca4ec9c05710fed4ab2428f3d2814eec07`, V2 blob `cd18380d72b41d09cb0b6ba241e6089644b7aeeb`; không kế thừa PASS sang R05.
 - RELEASE vẫn riêng: MathJax/SVG rendering/Golden responsive, Final Submit, 0 protected RD1/Mastery, QA browser/mobile devices, chủ dự án quyền phát hành. AUTHORING NO MERGE/DEPLOY.
 
+## 18/11/2026 · Active R05 learner prose and formal-knowledge closure
+
+- Current effective learner SOURCE_BLOB `178ccc6f1b7c94c9db1146c626efc4dca319b149`, target Q18 AUTHOR_SELF_VERIFIED receipt `81dedff34a973b5a1db6737c16ff5d3020e613b6`, metadata `b4e108b12e15d483c73a5dba436f85e437a08788`, handoff V2 `df3bb1695043eafe1b269fc1450496f5cf86b4ad`. This updates an *existing single R05 packet*, not a second Topic source.
+- 4 student-facing real formal knowledge statements: sequence epsilon limit, infinite geometric sum |q|<1, continuity and one-sided endpoint, zero-crossing IVT; plus one short recap. Two previously unreceipted-but-correct learner prose refinements at O13/O14 between original signed R05 (`a33d1e6a20dba1dc7861097e231906aff2938c02`) and pre-edit (`8e40965f6174b52c386ab461440b1ed11ccededc`) are now explicitly reviewed and recorded. Historical 159/159 source Q18 retains original SHA.
+- Original 58 Practice canonical stems, keys, solutions and rubric, 18 public question-only replays, item IDs, image paths and disclosures byte-exact; no official Topic Readiness/private RD1/Skill Mastery. Scoped author self-QA is not independent NotebookLM PASS; RELEASE browser, AP/Golden and owner permissions separate.
+
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — exact source Git blob a33d1e6a20dba1dc7861097e231906aff2938c02, Q18 signed receipt blob 3285d8d9db6882e798995d92a0d8f83ce592d8e9, original36 index blob 43cbb73bd06e0da6bf8838d925186bc4db4194a7, new22 bank blob 2e93db80384de53e208248eaa0396a7f487302ac, V2 handoff blob a38430a086ddf49e0defb054cc4caad18cbca952.
+- [x] A1_SOURCE_SNAPSHOT — learner source `178ccc6f1b7c94c9db1146c626efc4dca319b149`, current scoped Q18 `81dedff34a973b5a1db6737c16ff5d3020e613b6`, A1 `b4e108b12e15d483c73a5dba436f85e437a08788`, V2 `df3bb1695043eafe1b269fc1450496f5cf86b4ad`; original SGK36 source and NEW22 bank unchanged.
 - [x] A2_SGK_SBT_SCOPE — SGK KNTT Toán11 T1 ChV B15 printed104–110,B16 111–118,B17 119–122,end123; historical original publisher SBT direct scan B15 75–78,B16 79–83,B17 84–86,end87–90. No new scan claimed; source/extension boundary recorded.
 - [x] A3_NOTEBOOKLM_VERDICT — current Q18 `AUTHOR_SELF_VERIFIED v3.1.0` with real math/PED/source Q01–Q18 evidence, 159/159 author source/math checks, no new NotebookLM report or fabricated independent PASS; historical original SGK ChV reviewer retained only for source R02/03.
 - [x] A4_ITEM_OUTCOME_IDS — 18 lesson IDs/outcomes and 58 public canonical unique IDs in full single V2 matrix (36 SGK source pointers + 22 NEW); 18 Self Check placements refer back to P01–P18 without item duplication.
