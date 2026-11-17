@@ -1,15 +1,15 @@
-# CĐ3 R06 — AUTHORING numbering-only Q18 custody
+# CĐ03 — metadata bản thảo hiện hành, đã sửa D6 + Ví dụ trực tiếp
 
 CURRENT_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_CONSISTENT_20261116.md
-CURRENT_SOURCE_BLOB: 9cc738526f95e68a31f99409d8672aff44f5c8a9
+CURRENT_SOURCE_BLOB: daeeb5d571d120b31265f8c603a76049a1f2c78c
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC03_R06_NUMBERING_DELTA_A_Q18_20261116.md
 CURRENT_Q18_RECEIPT_BLOB: 22c934be731baf6690a52c28ba8cb993f34ee013
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
-DELTA_CLASS: DELTA_A_UI
+DELTA_CLASS: DELTA_C_PED_TARGETED
 PREVIOUS_AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R04_AUTHORING_ONLY_CUSTODY_METADATA_20261113.md
 PREVIOUS_AUTHOR_METADATA_BLOB: 9b69bbbff0e9af27a8b7190df89243d8751f858b
-AUTHORING_STATUS: NUMBERING_DELTA_A_SOURCE_EQUIVALENT
+AUTHORING_STATUS: REVISED_SINGLE_SOURCE_QA_HOLD
 RELEASE_AUTHORIZATION: NO
 
 Original A1–A7/SGK/outcome/item source matrix below is inherited **unaltered**; only current learner snapshot formatting and Q18 source custody above changed. User-facing headings are now page H1, numbered group H2 and child H3, with Practice Bài labels not H4. Old author metadata Git blob `9b69bbbff0e9af27a8b7190df89243d8751f858b` and old academic source/Q18 remain immutable. No independent reviewer claim or RELEASE approval.
@@ -89,3 +89,8 @@ RELEASE_AUTHORIZATION: NO
 | `THPT-TOP03-W02` | `TOP03-O12` | TOPIC_WRITTEN | `fd85d7056f3b934f4599727f8c6da173cf05cd65` |
 
 **Giới hạn Academic/Q18:** Nguồn G10 B18 công khai có 6 câu và 2 Written thuộc phạm vi review NotebookLM 28/10/2026; receipt gốc khóa snapshot 5 Temp_ SHA256, **không suy các tệp public đã qua merge byte-identical với Temp_**. Tác giả kiểm lại nội dung và giới hạn từng câu trên blob mới. CĐ03 mới là DELTA_C, kiểm tự thân theo `AUTHOR_SELF_VERIFIED` chủ dự án cho phép v3.0.1; không mạo nhận NotebookLM đã review CĐ03, không sửa SGK.
+
+
+## Revision after R06 — correct one source, do not create a correction source
+
+The learner source at CURRENT_SOURCE_PATH is edited **in place**. Its prior numbered headings and all 31 student Practice items/solutions and 12 public selfcheck question-only placements are preserved. Eleven D6 student destinations now point to actual numbered Bài and avoid raw ADD/P/W codes. TOP03-O09 worked Example is changed from identical-to-Vận-dụng sqrt(2x+7)=x+1 to independent sqrt(x+6)=x; x≥0, candidates x=3/−2, only x=3 valid; original First Try and its optional key are unchanged. Source has 43 unchanged canonical/display placements, 43 expandable solution blocks. Other historical R05/R06 files are provenance only, not active intake sources. Pending receipt/handoff/ready/REGISTER final QA; not website approved.
