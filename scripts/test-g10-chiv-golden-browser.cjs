@@ -194,8 +194,11 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
        assert(await physicalFig.evaluate(el=>el.complete&&el.naturalWidth>0),
         where+" B07 new physical-vector figure decodes and is accessible");
        const firstText=await blocks.nth(0).innerText();
+       await labels.nth(1).click();
        const formalText=await blocks.nth(1).innerText();
+       await labels.nth(2).click();
        const solutionText=await blocks.nth(2).innerText();
+       await labels.nth(0).click();
        assert(firstText.includes("20 N")&&firstText.includes("12 km/h")&&
         formalText.includes("Biểu diễn lực và vận tốc bằng vectơ")&&
         solutionText.includes("6 m/s")&&solutionText.includes("3 cm")&&solutionText.includes("1 cm"),
