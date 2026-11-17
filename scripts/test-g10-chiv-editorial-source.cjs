@@ -187,7 +187,21 @@ for(const [lesson,row] of rows){
      "B08 R04 must not assume scalar-vector multiplication before B09");
    const css=fs.readFileSync(path.join(root,
     "docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"));
-   assert.equal(blob(css),f04("R04_CSS_BLOB"),
+   const b09File=path.join(root,
+    "prototypes/thpt/ux795/G10_CHIV_B09_S1_SEMANTIC_DECOMPOSITION_R03_20261117.md");
+   if(fs.existsSync(b09File)){
+    const b09=fs.readFileSync(b09File,"utf8");
+    const b09f=k=>b09.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    assert.equal(b09f("CSS_BASELINE_BLOB"),f04("R04_CSS_BLOB"),
+     "B09 CSS baseline must equal exactly B08 P2 accepted CSS source");
+    const allCss=css.toString("utf8"),offset=allCss.indexOf("/* G10 Chapter IV B09 R03");
+    assert(offset>0&&allCss.indexOf("/* G10 Chapter IV B09 R03",offset+1)===-1,
+     "B09 CSS must add exactly one scoped appendix");
+    assert.equal(blob(allCss.slice(0,offset-1)),f04("R04_CSS_BLOB"),
+     "B08 owner P2 CSS prefix must be byte-for-byte intact");
+    assert.equal(blob(css),b09f("R03_CSS_BLOB"),
+     "Only signed new B09 CSS SHA is allowed");
+   }else assert.equal(blob(css),f04("R04_CSS_BLOB"),
     "B08 scoped CSS SHA must agree with Q18 packet");
    const cssStr=css.toString("utf8"),marker="/* G10 ChIV B08 R04";
    const p=cssStr.indexOf(marker);
