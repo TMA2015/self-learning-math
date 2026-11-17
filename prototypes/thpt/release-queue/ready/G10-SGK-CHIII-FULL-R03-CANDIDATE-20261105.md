@@ -5,7 +5,7 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: SGK_CHAPTER
 RELEASE_SCOPE: FULL_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 1759808ae84427ee1925a97c0d4ae1a2d6b6eeac
+SOURCE_COMMIT: 08d375c737e2cee24bc9d27bb0649b648dfdde63
 CURRENT_PR: #749 Draft AUTHORING only; no release or deployment authorization
 REVIEW_RECEIPT: prototypes/thpt/review-packets/G10_SGK_CHIII_FULL_R03_COMPOSITE_SOURCE_REVIEW_CHAIN_20261105.md — R01 R02 scoped reviewer chain
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -23,14 +23,14 @@ PRIVATE_RD1_COUNT: 0
 RELEASE_AUTHORIZATION: NO
 MASTERY_ACTIVATION: NO
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/Temp_G10_SGK_CHIII_FULL_R03_CONSOLIDATED_SOURCE_20261105.md
-ACADEMIC_SOURCE_BLOB: 9d186b2eb8d1c8250a716014beae3021625a6f6c
+ACADEMIC_SOURCE_BLOB: 569466519ee9a653fa3bcdf874e06619424fbf7b
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/G10_SGK_CHIII_FULL_R03_COMPOSITE_SOURCE_REVIEW_CHAIN_20261105.md
-REVIEW_RECEIPT_BLOB: aeae036a487ffd8e30f1fd4bc65c655f7724e8f1
+REVIEW_RECEIPT_BLOB: 11451c115ba8a2211628c5538ba8144c1d1a0e41
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/G10-SGK-CHIII-FULL-R03_HANDOFF_V2_20261105.md
 EXISTING_LEGACY_PACKET: G10-SGK-CHIII_PUBLIC_FORMATIVE_ONLY_RETAINED
 
 ## A1–A7 AUTHORING gates on locked source
-- [x] A1_SOURCE_SNAPSHOT — Original R01 Git source 6320aeaa and R02 f7bbffc8 plus public CHIII JSON f9c35b7a copied verbatim to one R03 blob 9d186b2e and one composite receipt aeae036a.
+- [x] A1_SOURCE_SNAPSHOT — Original R01 Git source 6320aeaa and R02 f7bbffc8 plus public CHIII JSON f9c35b7a were originally copied to one R03 blob 9d186b2e and one historical composite receipt aeae036a; current source 56946651 is a **single in-place W05 rubric clarification** with current Q18 author scope receipt 11451c11.
 - [x] A2_SGK_SBT_SCOPE — S1 KNTT SGK Toán 10 T1 B05 pp33–37 B06 pp38–43 chapter pp44–45, SBT T1 B05 pp29–33 B06 pp34–39 chapter pp40–44; source PDF checksums pinned.
 - [x] A3_NOTEBOOKLM_VERDICT — Original R01 18/18 Academic PASS, R02 independent ten outcomes Academic/PED PASS, scoped reviewer confirms original TRY08 and TRY09 both PASS; old PASS retained.
 - [x] A4_ITEM_OUTCOME_IDS — Exactly two lessons ten outcomes and 42 canonical unique public IDs (18 R01 plus ten R02 TRY plus fourteen existing client final), each mapped to primary outcome in V2.
@@ -60,3 +60,8 @@ NotebookLM owner R02 original reviewer reports Academic/PED PASS and P0=P1=P2=0.
 - [ ] P2_DEVICE_UAT — Release independently performs actual desktop and iPhone/iPad device checks; source QA does not assert production UAT.
 
 **AUTHORING handoff only. No merge, deploy or protected assessment activation.**
+
+
+## Current W05 original-owner source update · 17/11/2026
+
+Active AUTHORING source and receipt above supersede the original R03 SHA **only on the current Draft**, without editing the prior NotebookLM evidence: original R03 blob `9d186b2eb8d1c8250a716014beae3021625a6f6c`, historical composite receipt `aeae036a487ffd8e30f1fd4bc65c655f7724e8f1`. The only mathematical edit is the `THPT-G10-CHIII-W05` 2-point rubric: `x=Rcos, y=Rsin` → \\(x=R\\cos\\alpha, y=R\\sin\\alpha\\), \\(\\alpha=150^\\circ\\). Seven-point allocation `1+2+2+1+1`, stem/answer/solution/42 IDs and source S1 unchanged. The current receipt includes scoped `Q18_AUTHOR_SELF_VERIFIED`; **not** a new NotebookLM independent PASS. `Q15_ORIGINAL_OWNER_W05_RECONCILED` in SGK; Topic12 reuse must source-crosscheck on its active branch before claiming global Q15; R1–R5 / browser and owner RELEASE remain separate.
