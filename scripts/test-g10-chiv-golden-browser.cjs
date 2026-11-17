@@ -13,7 +13,7 @@ const root=path.resolve(__dirname,"..");
 const base=process.env.SLM_CHIV_URL||"http://127.0.0.1:8765";
 const goldenCss="44442773ac31eb1a46f0cab699a7d2c7974a5f37";
 const sources={
- 7:"7a8f2b8247b3d9da0a1be9375c6ba1a348bbf11f",
+ 7:"6fefa4cb27f4d4603cd3b461c8592d732c603f8e",
  8:"9cf96a0e81bea14903a64385359f738145e5a048",
  9:"2529b915e4089862e1a48e685ba5dc88d5450558",
  10:"ceaa76688e73274c9cf2d3116c41c6d4d0ac2726",
@@ -174,6 +174,16 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
       where+" solution panel contains unchanged mathematical solution");
      assert(state.overflow<=3,where+" no whole-page horizontal overflow");
      if(lesson===7){
+       const helpContent=await blocks.nth(3).locator("details.tip")
+        .evaluateAll(tips=>tips.map(tip=>tip.textContent||""));
+       assert.equal(helpContent.length,2,where+" two original D6 HELP sections remain");
+       assert(helpContent.every(s=>!/B07-[CP][0-9]{2}/.test(s)),
+        where+" no student-facing Core/Practice codes in D6");
+       assert(helpContent[0].includes("vectơ ngược hướng trong hình bình hành")&&
+        helpContent[0].includes("điều kiện hai vectơ bằng nhau")&&
+        helpContent[1].includes("hai vectơ cùng hướng nhưng khác độ dài")&&
+        helpContent[1].includes("quy ước vectơ-không"),
+        where+" source-matched public bank tasks described naturally");
        assert.equal(await article.getAttribute("data-g10-b07-keyboard-tabs"),"true",
         where+" B07 accessible Left/Right keyboard tabs enabled");
        const vectorFig=blocks.nth(1).locator('img[src*="THPT_G10_B07_PARALLELOGRAM_EQUAL_OPPOSITE_D5_R01.svg"]');
