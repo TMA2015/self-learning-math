@@ -2,10 +2,15 @@
 
 R03_IMMUTABLE_GIT_BLOB: 52be5ef6b8684632435ae22429bf7b5db5cf50cf
 CURRENT_LEARNER_SOURCE_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md
-CURRENT_LEARNER_SOURCE_BLOB: 8222107d717f7d02b845f79ccdd154e8dbe71cc6
+CURRENT_LEARNER_SOURCE_BLOB: ecd0dec736d0346fd1789a15aa1ec92d6a718485
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC09_R05_AUTHOR_SELF_QA_RECEIPT_20261116.md
-CURRENT_Q18_RECEIPT_BLOB: bce770e351460d9d01d7567332aed489bc68aa4d
+CURRENT_Q18_RECEIPT_BLOB: daeed2fd53f9967ac3ea78e744116aa4f82f4798
 STATUS: R05_Q18_AUTHOR_SELF_VERIFIED_PENDING_V2_GATE
+
+## 18/11/2026 — Active source correction, signed scoped Q18 provenance
+
+- One current learner source `ecd0dec736d0346fd1789a15aa1ec92d6a718485` and Q18 targeted author receipt `daeed2fd53f9967ac3ea78e744116aa4f82f4798`. Previous signed R05 source `8222107d717f7d02b845f79ccdd154e8dbe71cc6` had two later editorial/D6 corrections before the present four mathematical explanation classifications, all explicitly audited in the updated source receipt. No old independent S1 reviewer scope expanded.
+- Current 32 outcomes, 108 original canonical Practice items, 32 public reuse-only selfchecks, 4 figure paths and source bank identical. Differentiability/continuity, valid product and chain rules with point/domain conditions were rechecked; no answer/solution/rubric/key changed. Assessment – public only CLIENT_SELF_CHECK_NO_MASTERY.
 
 ## Nguồn S1 và giới hạn nội dung
 
