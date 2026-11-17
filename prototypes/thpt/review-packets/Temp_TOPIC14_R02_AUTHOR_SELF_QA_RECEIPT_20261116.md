@@ -7,10 +7,10 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md
-SOURCE_BLOB: 8f61c67a11dd3e2869cbd71dbb279bdcfdd92bf3
-ACADEMIC_SOURCE_BLOB: 8f61c67a11dd3e2869cbd71dbb279bdcfdd92bf3
+SOURCE_BLOB: dada7df9fc509cc67238cbc3e5d03376b58f23f4
+ACADEMIC_SOURCE_BLOB: dada7df9fc509cc67238cbc3e5d03376b58f23f4
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_R02_AUTHORING_ONLY_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: 843671899db376729c8bedd5dbd41c1e3b651054
+AUTHOR_A1_A7_BLOB: b72c3a80ef1a25bc7ac0caa1debcd1eb5ed738a2
 ORIGINAL_R01_SOURCE_BLOB: 277ccb8b5d9f0a8c5f08680fa7e5b70925710308
 ORIGINAL_R01_Q18_BLOB: e20555eae495a910afe25454cc61ad5a97e7e52d
 ORIGINAL_SGK_SOURCE_BLOB: c5c222af88b0e932f9b60df059d8ffd4da5f0f26
@@ -40,6 +40,12 @@ ASSESSMENT_Q16: 23 public question-only replay prompts with no hints, correctnes
 SGK KNTT Toán 10 Tập Hai Chương VII B19 tr.30–35, B20 tr.36–42, B21 tr.43–47, B22 tr.48–56, cuối chương tr.57–59. Các trang **in** này kế thừa biên bản sửa S1 Delta B và reviewed G10 ChVII trước đây; không nhận là đã đọc lại bản PDF/scan gốc trong lượt này. SBT gốc ChVII tham khảo dạng bài tr.27–49; từng trang/offset PDF chưa được rà lại, ghi `SBT_REFERENCE_GAP_DOCUMENTED`, không suy thiếu Core SGK từ riêng khoảng trống SBT. Ba SVG giữ exact SHA `57485fed0a5dcee6ebcd060f100abe5eed43bc76` / `0fd1f0671ccdad9b7bdff1d05551a3e32f9d82d1` / `6a1d532983804a7cdb7d44b5d99f82c688660d62` và có chỉ dẫn xem hình sát nội dung.
 
 Kiến thức bản R02 thay 23 giải thích D2/diễn giải so với R01 (DELTA_C), đã tự kiểm đúng điều kiện/toán và 23 outcome; không suy PASS độc lập của SGK sang Chuyên đề. **59 SGK display-only projections** từ ba Git blobs original được kiểm 32+23+4 và không tạo item/key/rubric khác; 51 CĐ14 item T/P/W cũ giữ nguyên thân/đáp án/rubric. Dạng elip tâm sai `THPT-G10-B22-C01` chỉ là mở rộng, không gắn Core bắt buộc.
+
+## 18/11/2026 — exact three heading-level corrections; author delta-A source lock
+
+- CURRENT_SOURCE_BLOB `dada7df9fc509cc67238cbc3e5d03376b58f23f4`; baseline R02 original source `8f61c67a11dd3e2869cbd71dbb279bdcfdd92bf3` remains immutable. Three unnumbered H2 orientation headings `## Mạch B`, `## Mạch C`, `## Mạch D` now bold prose before the corresponding numbered H2 groups 2/3/4, preventing a duplicated sibling hierarchy. The math group levels H2=1..4 and H3=1.1..4.6 preserve sequence without missing numbers or orphan segments.
+- Original R02 source vs current differs in **exactly three Markdown heading lines only**, not in any problem, definition, worked example, mathematical expression, canonical placement, disclosure, SVG or D6. This `DELTA_A_UI` keeps original 23 structural and 51 direct math checks valid only on unchanged content, with new source/document SHA re-bound.
+- Scoped `AUTHOR_SELF_VERIFIED` format parity only. No new independent NotebookLM Academic/PED PASS or RELEASE QA. Original historical R01/old R02 reviewer SHA unchanged. Protect RD1 and official Mastery boundaries.
 
 ## Q01–Q18 theo 23 outcome
 
