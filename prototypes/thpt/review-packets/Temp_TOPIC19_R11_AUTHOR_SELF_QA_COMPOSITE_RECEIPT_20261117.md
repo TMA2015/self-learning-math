@@ -10,8 +10,8 @@ RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R10_LANGUAGE_LOCAL_REFERENTS_CANDIDATE_20261117.md
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R10_LANGUAGE_LOCAL_REFERENTS_CANDIDATE_20261117.md
-SOURCE_BLOB: eff5f2a91708671db6f32063eea2cd111ddc6b94
-ACADEMIC_SOURCE_BLOB: eff5f2a91708671db6f32063eea2cd111ddc6b94
+SOURCE_BLOB: 7005bf1f839e566efb9abbc17eccfa92a0b41e63
+ACADEMIC_SOURCE_BLOB: 7005bf1f839e566efb9abbc17eccfa92a0b41e63
 FROZEN_R09_READY_SOURCE_BLOB: 2b46a2c92004f2c030d030e2b2021a34157bc95d
 FROZEN_R09_FULL_AUTHOR_Q18_RECEIPT_BLOB: 55bc391995cccdf0ce66b96ebfa8840c0148c075
 R10_MATERIAL_PED_SOURCE_BLOB: 37612a3fb8d804efa6dd4f65ddd22d90bf2772ae
@@ -76,3 +76,10 @@ Four Knowledge lines L343/L345/L349/L494 now format the **mathematical** factori
 ## ORIGINAL_BRANCH_SINGLE_SOURCE_CONSOLIDATED — 17/11/2026
 
 The nineteen vetted R11 student-visible correction groups were applied **directly** to the ORIGINAL R10 learner file at SOURCE_PATH on branch `authoring/topic19-language-clarity-r10-20261117` (source blob `eff5f2a91708671db6f32063eea2cd111ddc6b94`). No new canonical item version, answer, rubric, math condition, original G10 shared item or selfcheck role is introduced. Source copied only the corrected T02 explanation (4 shirts each with 3 badge combinations), four mathematical-versus-calculator-label notational lines, clarified learner Practice direction, removed redundant developer-facing SGK labels, and improved ungraded selfcheck introduction. Item/disclosure/SVG order identical to R10. The R11 patch file is obsolete, must not be an alternative release input. This branch's old V2/ready/REGISTER referencing the R11 file are **STALE/HOLD** and are NOT authorized CONTENT_READY for the original corrected R10 source; owner/bank Q01–Q18, final heads and current CI need independent reconciliation before promotion. NO MERGE/DEPLOY.
+
+## 18/11/2026 — one original R10 learner source, concise combinatorics recap added
+
+- **EFFECTIVE_SOURCE_BLOB**: `7005bf1f839e566efb9abbc17eccfa92a0b41e63`, same original R10 learner path, previous R11 composite learner SHA `eff5f2a91708671db6f32063eea2cd111ddc6b94`. This DELTA_C addition is one four-bullet **Kiến thức cần ghi nhớ** block at the end of Knowledge, not a duplicate source, not a new item version or an independent NotebookLM verdict.
+- Direct math/PED checks: for disjoint choices use addition, multi-stage choices multiplication; distinct n objects give n!, A(n,k)=n!/(n−k)! for 0≤k≤n ordered choices, C(n,k)=n!/[k!(n−k)!] unordered choices; binomial for n≥0 integer and signs with negative b; sum polynomial coefficients P(1). Worked checks: C(5,3)=10 vs A(5,3)=60; (2x−1)^4 coefficients sum P(1)=1. No source lemma shifted beyond original lessons.
+- Entire Practice and public Selfcheck **byte-exact** with previous `eff5f2a91708671db6f32063eea2cd111ddc6b94`: all 56 canonical items, solutions, rubrics, seven public replay-only question stems, source-owned ID markers, display HTML, SVG links and disclosure counts unchanged. Original R11 P2 author receipt remains tied to its signed old source and is not a new full QA on this recap.
+- **SOURCE-SCOPED_AUTHOR_Q18=PASS_ON_RECAP_ONLY; GLOBAL_ACTIVE_Q15_OWNER_V2_READY_REGISTER=HOLD, CONTENT_READY=NO** preserved. S1 original SGK owner, release/golden/official RD1 not modified. NO MERGE/DEPLOY/MATH LAB.
