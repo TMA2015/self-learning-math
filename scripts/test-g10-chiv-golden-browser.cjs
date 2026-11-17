@@ -430,9 +430,63 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
      assert.equal(await page.locator("[data-g10-chapter-selfcheck]").count(),0,where+" no private independent readiness");
      cases++;console.log("PASS "+where+" Golden UI source-locked, TOC, 44px buttons and Q16 intact");
     }
+    // G3 B09-RUNTIME-01: actual PUBLIC Practice modal, item 7, answer disclosure,
+    // deep-link and math on three real Chromium viewports. Static VM is insufficient.
+    const hub=base+"/thpt-preview/sgk/chuong-iv/luyen-tap/";
+    let response=await page.goto(hub,{waitUntil:"domcontentloaded",timeout:60000});
+    assert(response?.ok(),"B09-P07@"+width+" Chapter IV public Practice hub reachable");
+    await page.locator('[data-thpt-open-quiz="b9-practice"]').click();
+    await page.waitForFunction(()=>document.querySelector(".thpt-r4-reviewed-formative-card")?.dataset.thptCanonicalItem==="THPT-G10-B09-P01");
+    const dlg=page.locator("dialog.thpt-r4-practice-dialog");
+    assert(await dlg.evaluate(el=>el.open),"B09-P07@"+width+" modal is open");
+    const nav=dlg.locator(".thpt-r4-modal-question-nav button");
+    assert.equal(await nav.count(),7,"B09-P07@"+width+" original six plus P07, exactly seven");
+    await nav.nth(6).click();
+    const item=dlg.locator('.thpt-r4-reviewed-formative-card[data-thpt-canonical-item="THPT-G10-B09-P07"]');
+    assert.equal(await item.count(),1,"B09-P07@"+width+" exact item selected through learner navigation");
+    assert.equal(await item.getAttribute("data-thpt-exposure-role"),"SGK_PRACTICE");
+    assert((await item.locator("h3").innerText()).includes("tam giác"),"B09-P07@"+width+" stem visible");
+    assert.equal(await item.locator('textarea[aria-label="Lời giải của em"]').count(),1,
+     "B09-P07@"+width+" actual unscored written-answer field");
+    const openDetails=item.locator("details");
+    assert.equal(await openDetails.count(),2,"B09-P07@"+width+" separate voluntary hint/solution");
+    assert.deepEqual(await openDetails.evaluateAll(nodes=>nodes.map(el=>el.open)),[false,false],
+     "B09-P07@"+width+" answers and hints CLOSED before learner action");
+    await item.locator(".thpt-r4-formative-submit").click();
+    assert((await item.locator('[role="status"]').innerText()).includes("Hãy nhập"),
+     "B09-P07@"+width+" no empty-answer comparison");
+    assert.equal(await openDetails.nth(1).evaluate(el=>el.open),false,
+     "B09-P07@"+width+" empty submit does not reveal solution");
+    await item.locator("textarea").fill("MN = -a/6 - b/2; AB,AC khong cung phuong.");
+    await item.locator(".thpt-r4-formative-submit").click();
+    assert((await item.locator('[role="status"]').innerText()).includes("chưa chấm tự động"),
+     "B09-P07@"+width+" NO auto grading / Mastery for free text");
+    assert.equal(await openDetails.nth(1).evaluate(el=>el.open),true,
+     "B09-P07@"+width+" solution shown only after student attempts");
+    assert((await openDetails.nth(1).innerText()).includes("duy nhất"),
+     "B09-P07@"+width+" includes unique coefficients explanation");
+    await page.waitForFunction(()=>!!document.querySelector(
+     '.thpt-r4-reviewed-formative-card[data-thpt-canonical-item="THPT-G10-B09-P07"] mjx-container'),
+     null,{timeout:20000});
+    assert.equal(await dlg.locator("[data-thpt-readiness],[data-mastery-credit]").count(),0,
+     "B09-P07@"+width+" no private readiness or mastery UI");
+    cases++;
+    console.log("PASS B09-P07@"+width+" modal practice answer disclosure and MathJax");
+    response=await page.goto(hub+"?item=THPT-G10-B09-P07",{waitUntil:"domcontentloaded",timeout:60000});
+    assert(response?.ok(),"B09-P07@"+width+" deep-link returns Practice hub");
+    await page.waitForFunction(()=>document.querySelector(
+      '.thpt-r4-reviewed-formative-card[data-thpt-canonical-item="THPT-G10-B09-P07"]'),
+      null,{timeout:20000});
+    const deep=page.locator('.thpt-r4-reviewed-formative-card[data-thpt-canonical-item="THPT-G10-B09-P07"]');
+    assert.equal(await deep.count(),1,"B09-P07@"+width+" correct question auto-opened from URL");
+    assert.equal(await deep.locator("details[open]").count(),0,
+     "B09-P07@"+width+" deep-link answer stays closed");
+    assert.equal(await deep.locator('textarea[aria-label="Lời giải của em"]').inputValue(),"",
+     "B09-P07@"+width+" new navigation has no pre-filled answer");
+    cases++;console.log("PASS B09-P07@"+width+" deep-link cannot pre-expose solutions");
    }finally{await page.close();}
   }
  }finally{await browser.close();}
- assert.equal(cases,15);
- console.log("PASS 15/15 G10 Chapter IV Golden browser cases; all 5 academic source blobs locked. NO DEPLOY.");
+ assert.equal(cases,21);
+ console.log("PASS 21/21 G10 Chapter IV Golden browser cases (15 Knowledge + 6 B09 P07 real runtime/deep-link); all 5 academic source blobs locked. NO DEPLOY.");
 })().catch(e=>{console.error(e.stack||e);process.exitCode=1;});
