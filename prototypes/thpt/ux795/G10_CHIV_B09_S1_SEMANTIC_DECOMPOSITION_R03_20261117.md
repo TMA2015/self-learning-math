@@ -7,10 +7,12 @@
 **DELTA_CLASS:** `DELTA_C_ACADEMIC_MATERIAL` (missing S1 outcome + explanation/examples/diagram), `DELTA_A_UI` (scoped Golden semantic palette).
 **REVIEW_MODE:** `Q18_OWNER_SELF_VERIFIED_ENRICHMENT_CANDIDATE` — self-audited affected lesson content; **not** an independent NotebookLM Academic/PED PASS; *NOT CONTENT_READY*.
 **SOURCE_BASELINE_BLOB:** `2529b915e4089862e1a48e685ba5dc88d5450558`
-**R03_SOURCE_BLOB:** `17ab2a58976125fb51c325ddad7b59d0a8870679`
+**R03_SOURCE_BLOB:** `507408fb2f7f57c7d6b8ebd135f372e33c325283`
 **CSS_BASELINE_BLOB:** `0cdc618cf9a070f1b1ed50566877f5de0d025ee8`
 **R03_CSS_BLOB:** `7a658ab449818a616382c145c72880066c2ab57a`
 **R03_SVG_BLOB:** `6a7c8a608dcc2ad90353890b5415e123d7878807`
+**R03_MOBILE_SVG_BLOB:** `a37dd77639b3300ab5b860da6dec9d856c0a152d`
+**MOBILE_SVG_PATH:** `docs/assets/images/thpt/THPT_G10_B09_DECOMPOSITION_MOBILE_D5_R03.svg`
 **STANDARD_BLOB:** `24f744b5d9f114d053b6e2e1ab8a0fb26c3fab39`
 **SOURCE_PATH:** `docs/thpt-preview/sgk/chuong-iv/bai-9.md`
 **CSS_PATH:** `docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css`
@@ -46,7 +48,7 @@ Existing original 5 `THPT-G10-CHIV-TRY11`–`TRY15` with exact questions/answers
 ## G3–G5 release gates and HOLD
 
 - Source SHA locked exact R02 editorial baseline → R03; CSS prefix byte-equal B08 accepted snapshot, add only B09 canonical `TRY11` selectors for teal/blue/neutral, amber inherited. Both source/render dark/light at 390/820/1440 and no orphan TeX, no private data.
-- B09 SVG must have `title`, `desc`, no scripts, math arrows correct and readable mobile; existing scalar SVG unchanged.
+- B09 desktop and mobile SVGs must have `title`, `desc`, no scripts, math arrows correct and readable mobile; existing scalar SVG unchanged.
 - Unchanged Core/Practice/W09/canonical Q15 content, Final Submit/RD1/Mastery, THCS and other 78 lessons.
 - **Blocking criterion** even if all CI PASS: `B09-F02 / BLOCKED_BY_AUTHORING / NO_CANONICAL_DECOMPOSITION_ITEM`, plus publisher S1 page index `SOURCE_SCAN_AUTHORITY_PENDING`. AUTHORING must verify original source, determine canonical outcome and one answer/solution/rubric, conduct affected Academic/PED/Q18 review, handoff V2 with SHA; RELEASE only accepts legitimate `CONTENT_READY` and reruns exact HEAD CI/P1.
 - All PR, CI, HTML sha and statuses must be written to #795. `B09-F01` may be `FIXED_IN_DRAFT` only, **never OWNER_P2_PASS**. No automatic B10 until the owner signs off B09.
