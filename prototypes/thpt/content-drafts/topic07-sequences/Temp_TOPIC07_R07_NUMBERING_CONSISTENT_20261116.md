@@ -41,7 +41,7 @@ Dãy gồm 3, 6, 9 và **không có \(u_0\)** vì 0 không thuộc miền chỉ 
 
 <!-- LESSON_ID: TOP07-M02; OUTCOME_ID: TOP07-O02 -->
 
-Từ miền chỉ số, câu hỏi tiếp theo là làm sao nhận ra công thức tổng quát. Làm sao tìm u_100 mà không viết đủ 99 số trước? Ta đã biết phép thế và tìm quy luật số; phân biệt vài giá trị đầu với định nghĩa. Công thức tường minh u_n=f(n) cho phép tính một số hạng bằng một phép thế; một vài giá trị đầu KHÔNG xác định duy nhất dãy nếu chưa nói quy luật. Muốn kết luận công thức phải có định nghĩa, giả thiết hoặc chứng minh, không chỉ khớp ba số đầu.
+Với một dãy số \((u_n)\), mỗi số hạng \(u_n\) được gắn với một chỉ số \(n\) thuộc miền chỉ số đã cho (chẳng hạn \(n=1,2,3,\ldots\)). Làm thế nào tìm \(u_{100}\) mà không phải liệt kê 99 số hạng trước đó? Một **công thức tường minh** \(u_n=f(n)\) cho phép tính trực tiếp bằng cách thay \(n\); tuy nhiên, vài số hạng đầu **không xác định duy nhất** toàn bộ dãy nếu thiếu quy luật hoặc giả thiết. Muốn khẳng định một công thức đúng cho mọi chỉ số cho phép, ta cần định nghĩa hoặc chứng minh, không chỉ dựa vào ba giá trị đầu.
 
 Chẳng hạn, u_n=2n+1, n≥1 cho u_1=3,u_2=5,u_3=7 và u_10=21. Nhưng thêm một biểu thức bội (n−1)(n−2)(n−3) vẫn giữ ba số đầu mà đổi các số sau; do đó suy từ ba số không đủ duy nhất.
 
