@@ -71,8 +71,25 @@ assert.deepEqual([...formal.matchAll(/^    ### ([^\n]+)$/gm)].map(x=>x[1]),
 assert((formal.match(/thpt-r4-concept-card/g)||[]).length===1&&
  (formal.match(/thpt-r4-rule-card/g)||[]).length===2&&
  (formal.match(/thpt-r4-key-formula/g)||[]).length===2,"B10 3+1 roles wrong");
-assert(worked.includes("bộ dữ liệu khác")&&worked.includes("150")&&worked.includes("96")&&
- worked.includes("THPT_G10_CHIV_RIVER_TRANSFER_D5_R01_CORRECTED.svg"),"River figure numerical dataset not distinguished");
+assert(worked.includes("Đọc hình theo đúng dữ kiện Ví dụ 4")&&
+ worked.includes("96")&&worked.includes("3")&&worked.includes("5")&&
+ worked.includes("THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg")&&
+ worked.includes("THPT_G10_B10_RIVER_VELOCITY_MOBILE_D5_R01.svg")&&
+ !worked.includes("THPT_G10_CHIV_RIVER_TRANSFER_D5_R01_CORRECTED.svg")&&
+ !worked.includes("bộ dữ liệu khác"),"B10 worked river figure must match EXACT 96m/3/5 dataset, no legacy 150m graphic");
+const figurePairs=[
+ ["FIG_B10_COORDINATES_DESKTOP_BLOB","THPT_G10_B10_COORDINATES_DIFFERENCE_D5_R01.svg"],
+ ["FIG_B10_COORDINATES_MOBILE_BLOB","THPT_G10_B10_COORDINATES_MOBILE_D5_R01.svg"],
+ ["FIG_B10_RIVER_DESKTOP_BLOB","THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg"],
+ ["FIG_B10_RIVER_MOBILE_BLOB","THPT_G10_B10_RIVER_VELOCITY_MOBILE_D5_R01.svg"]
+];
+for(const [k,name] of figurePairs){
+ assert.equal(blob(buf("docs/assets/images/thpt/"+name)),field(k),
+   "B10 signed pedagogical SVG Git blob drift: "+name);
+ assert(src.includes(name),"B10 missing source-locked desktop/mobile SVG "+name);
+}
+assert(r.includes("FIG_GEOMETRY_VERIFIED")&&r.includes("FIRST_TRY_PRESERVATION"),
+ "B10 Q18 must state math proof and previous self-try custody");
 assert(!src.includes(t)&&!src.includes("Assessment safety")&&!src.includes("EX-G10-B10-RIVER-TR01")&&
  !src.includes("HELP_ID"),"B10 learner text exposes source/metadata or code style");
 for(const token of ["Lỗi thường gặp:","Vì sao sai?","Tự kiểm:","Ôn và luyện lại:"])
@@ -84,4 +101,4 @@ for(const token of ["\\vec u=x\\vec i+y\\vec j","\\vec0=(0;0)",
  assert(src.includes(token),"B10 mandatory S1 math missing "+token);
 assert(!/data-mastery-credit|data-readiness-answer/.test(src),"Mastery/Readiness leak");
 assert.notEqual(blob(Buffer.from(src+" ")),field("R01_SOURCE_BLOB"),"Mutation detector ineffective");
-console.log("PASS B10 one canonical source and 8 original immutable questions/W10, 6 First Try/3 HELP, 2 SVG, four worked examples, semantic math, CSS old prefix and negative test");
+console.log("PASS B10 one canonical source and 8 original immutable questions/W10, 6 First Try/3 HELP, two figures/four SVG, four worked examples, semantic math, CSS old prefix and negative test");
