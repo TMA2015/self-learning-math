@@ -13,13 +13,13 @@ CATALOG_TOPIC_ID: CD14
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 8f61c67a11dd3e2869cbd71dbb279bdcfdd92bf3
+ACADEMIC_SOURCE_BLOB: dada7df9fc509cc67238cbc3e5d03376b58f23f4
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC14_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: c064ed1ba8e2c88318e3acac2b78fccb05ca9717
+REVIEW_RECEIPT_BLOB: 27a6e61fb90342d19afa61cd92b56ac3bda25a6a
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_R02_AUTHORING_ONLY_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: 843671899db376729c8bedd5dbd41c1e3b651054
+AUTHOR_A1_A7_BLOB: b72c3a80ef1a25bc7ac0caa1debcd1eb5ed738a2
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_R02_AUTHORING_ONLY_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: 843671899db376729c8bedd5dbd41c1e3b651054
+AUTHOR_METADATA_BLOB: b72c3a80ef1a25bc7ac0caa1debcd1eb5ed738a2
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/Temp_G10_SGK_CHVII_FULL_R02_SOURCE_WITH_CANONICAL_REFERENCES_20261105.md
 ORIGINAL_SGK_SOURCE_BLOB: c5c222af88b0e932f9b60df059d8ffd4da5f0f26
 ORIGINAL_R01_PED_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd
@@ -210,6 +210,12 @@ RELEASE_AUTHORIZATION: NO
 - SGK Kết nối tri thức Toán10 **Tập Hai** Chương VII: B19 Phương trình đường thẳng pp30–35; B20 Vị trí tương đối, góc và khoảng cách pp36–42; B21 Đường tròn trong mặt phẳng tọa độ pp43–47; B22 Ba đường conic pp48–56; cuối chương pp57–59. Chapter starts printed p29. These printed pages corrected in owner-authored Git Delta B: `prototypes/thpt/audits/G10_CHVII_R01_S1_PRINTED_PAGE_SOURCE_LOCATOR_DELTA_B_20261105.md`. Do not use old misaligned source locator.
 - SBT KNTT G10 Tập Hai ChVII original scope pp27–49; **lesson-level printed pages and PDF index have not been rechecked in this new Topic authoring turn**.
 - Old SGK 59 reviewed public canonical IDs display full stem/solution/rubric, referencing one unchanged original `c5c222af88b0e932f9b60df059d8ffd4da5f0f26`, unchanged. Original SGK reviewer NotebookLM PASS belongs to exact old source only, **NOT a new Topic14 independent review**. Conic eccentricity `THPT-G10-B22-C01` stays `TOPIC_OPTIONAL_EXTENSION` rather than forced Core.
+
+## 18/11 · Learner heading Delta-A with full academic/source parity
+
+- Effective source `dada7df9fc509cc67238cbc3e5d03376b58f23f4`, signed Q18 `27a6e61fb90342d19afa61cd92b56ac3bda25a6a`, current A1 `b72c3a80ef1a25bc7ac0caa1debcd1eb5ed738a2`.
+- Exactly three student orientation headings Mạch B/C/D were changed from H2 to bold prose. H2 remain four numbered groups 1..4, all subheads H3 1.1..4.6 sequential. Original 23 outcomes, 110 canonical public IDs, 23 standalone examples & first tries, 3 SVG, full Practice and public Selfcheck unchanged byte-for-byte.
+- `DELTA_A_UI` only, no new independent mathematical/reviewer PASS. The historic R02 signed source `8f61c67a11dd3e2869cbd71dbb279bdcfdd92bf3` remains a distinct source-scoped proof; this new source has exact academic content parity.
 
 ## D1_D6_EVIDENCE
 
