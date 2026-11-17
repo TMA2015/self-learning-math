@@ -8,15 +8,15 @@ Một bản vẽ không gian chỉ là hình biểu diễn trên mặt phẳng. 
 
 **Đường đi của chuyên đề.** Ta bắt đầu từ cách xác định mặt phẳng để hiểu vì sao hình vẽ 2D có thể đánh lừa; từ đó phân biệt đường thẳng song song và chéo nhau, nhận biết quan hệ đường–mặt và hai mặt, cuối cùng nhìn lại toàn bộ hình bằng phép chiếu song song. Mỗi kết luận dựa trên điều kiện toán, không dựa vào cảm giác hình vẽ. Hãy tự làm câu Vận dụng trước khi mở Đối chiếu.
 
-**Những điều cần biết trước khi bắt đầu.** Học sinh chỉ cần quen với tam giác, định lý Thales/đường trung bình, hình bình hành và ý nghĩa điểm–đường thẳng–mặt phẳng. Khi hai đường cắt nhau, chúng xác định một mặt phẳng; khi hai đường không cắt, phải kiểm xem chúng có cùng mặt phẳng hay không. Tên ``(ABC)`` chỉ có nghĩa xác định duy nhất khi ba điểm không thẳng hàng. Nếu mới học hình không gian, hãy đọc kỹ phần hình học bằng lời trước; các ví dụ tọa độ dưới đây là **một cách kiểm chứng bổ sung**, không phải điều kiện để hiểu định lý.
+**Những điều cần biết trước khi bắt đầu.** Em chỉ cần quen với tam giác, định lý Thales/đường trung bình, hình bình hành và ý nghĩa điểm–đường thẳng–mặt phẳng. Khi hai đường cắt nhau, chúng xác định một mặt phẳng; khi hai đường không cắt, phải kiểm xem chúng có cùng mặt phẳng hay không. Tên \((ABC)\) chỉ có nghĩa xác định duy nhất khi ba điểm không thẳng hàng. Nếu mới học hình không gian, hãy đọc kỹ phần hình học bằng lời trước; các ví dụ tọa độ dưới đây là **một cách kiểm chứng bổ sung**, không phải điều kiện để hiểu định lý.
 
 <details><summary>Tùy chọn: cách đọc minh họa tọa độ khi em cần</summary>
 
-**Cách đọc ví dụ tọa độ (không cần học trước hình giải tích không gian lớp 12).** Ba số ``(x,y,z)`` lần lượt là vị trí theo ba trục vuông góc; ``z=0`` biểu diễn một mặt phẳng nằm ngang, ``z=c`` một mặt phẳng nằm ngang khác. Một đường viết ``(x,y,z)=(a,b,c)+t(u,v,w)`` nghĩa là chọn **cùng một số thực t** để có một điểm trên đường: ``x=a+tu, y=b+tv, z=c+tw``. Muốn tìm giao với ``z=0``, giải ``c+tw=0`` và thay lại vào cả ba tọa độ. Nếu ``w=0`` và ``c=0`` đường **nằm trong** mặt; nếu ``w=0`` nhưng ``c≠0`` đường **song song phân biệt**; nếu ``w≠0`` đường **cắt** mặt đúng một điểm. Phép biến đổi ``T(x,y,z)`` ở mạch cuối chỉ là chiếu một điểm theo một phương cố định, không phải một công thức học thuộc bắt buộc. Khi không quen tọa độ, có thể kiểm cùng một kết luận bằng quan hệ giao tuyến và định lý song song đã giải thích.
+**Cách đọc ví dụ tọa độ (không cần học trước hình giải tích không gian lớp 12).** Ba số \((x,y,z)\) lần lượt là vị trí theo ba trục vuông góc; \(z=0\) biểu diễn một mặt phẳng nằm ngang, \(z=c\) một mặt phẳng nằm ngang khác. Một đường viết \((x,y,z)=(a,b,c)+t(u,v,w)\) nghĩa là chọn **cùng một số thực t** để có một điểm trên đường: \(x=a+tu,\ y=b+tv,\ z=c+tw\). Muốn tìm giao với \(z=0\), giải \(c+tw=0\) và thay lại vào cả ba tọa độ. Nếu \(w=0\) và \(c=0\) đường **nằm trong** mặt; nếu \(w=0\) nhưng \(c\ne 0\) đường **song song phân biệt**; nếu \(w\ne 0\) đường **cắt** mặt đúng một điểm. Phép biến đổi \(T(x,y,z)\) ở mạch cuối chỉ là chiếu một điểm theo một phương cố định, không phải một công thức học thuộc bắt buộc. Khi không quen tọa độ, có thể kiểm cùng một kết luận bằng quan hệ giao tuyến và định lý song song đã giải thích.
 
 </details>
 
-**Cách học với hình.** Mỗi hình mô tả một cấu hình có thật; các nét đứt chỉ cạnh khuất. Hãy xác định điểm, cạnh, mặt liên quan trước khi đọc quan hệ song song. Tên hình/nguồn nằm trong chú thích dành cho tác giả, không phải điều kiện để chứng minh.
+**Cách học với hình.** Mỗi hình mô tả một cấu hình có thật; các nét đứt chỉ cạnh khuất. Hãy xác định điểm, cạnh, mặt liên quan trước khi đọc quan hệ song song. Điều quan trọng là chỉ ra được vì sao quan hệ trên hình là đúng.
 
 ## 1. Từ điểm, đường đến thiết diện
 
@@ -1544,24 +1544,24 @@ Hãy trả lời tám câu hỏi dưới đây trên giấy, chưa xem lại l�
 **Câu 1.** d=(1+t,2,3+2t); (P): z=0. Xác định d∩(P). Đường e=(1+t,2,3) và f=(1+t,2,0) thuộc loại nào so với (P)?
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP15-P06; ROLE: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_KEY_HINT_RUBRIC_AI_PRE_SUBMIT -->
-**Câu 2.** **Bài 6.** Cho A,B phân biệt thuộc (P), M∈AB, C nằm ngoài (P). Hỏi M∈(P) không và AC⊂(P) có đúng không?
+**Câu 2.** Cho A,B phân biệt thuộc (P), M∈AB, C nằm ngoài (P). Hỏi M∈(P) không và AC⊂(P) có đúng không?
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP15-P09; ROLE: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_KEY_HINT_RUBRIC_AI_PRE_SUBMIT -->
-**Câu 3.** **Bài 9.** Cho d:(x,y,z)=(2+t,1,4−2t), (P):z=0. Tìm d∩(P); đường e:(t,1,4) có cắt (P) không?
+**Câu 3.** Cho d:(x,y,z)=(2+t,1,4−2t), (P):z=0. Tìm d∩(P); đường e:(t,1,4) có cắt (P) không?
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP15-P12; ROLE: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_KEY_HINT_RUBRIC_AI_PRE_SUBMIT -->
-**Câu 4.** **Bài 12.** Trong tam giác SAB, M∈SA, N∈SB với SM:MA=2:3 và SN:NB=2:3. Chứng minh MN∥AB.
+**Câu 4.** Trong tam giác SAB, M∈SA, N∈SB với SM:MA=2:3 và SN:NB=2:3. Chứng minh MN∥AB.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP15-P14; ROLE: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_KEY_HINT_RUBRIC_AI_PRE_SUBMIT -->
-**Câu 5.** **Bài 14.** Trong tứ diện S.ABC, M,N là trung điểm SA,SB. Chứng minh MN∥(ABC) và nêu vì sao không thể bỏ điều kiện MN nằm ngoài mặt đáy.
+**Câu 5.** Trong tứ diện S.ABC, M,N là trung điểm SA,SB. Chứng minh MN∥(ABC) và nêu vì sao không thể bỏ điều kiện MN nằm ngoài mặt đáy.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP15-P17; ROLE: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_KEY_HINT_RUBRIC_AI_PRE_SUBMIT -->
-**Câu 6.** **Bài 17.** Phân loại: (P):z=0, (Q):z=−3, (R):x=0, (T):3z=0; xét (P) với từng mặt còn lại.
+**Câu 6.** Phân loại: (P):z=0, (Q):z=−3, (R):x=0, (T):3z=0; xét (P) với từng mặt còn lại.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP15-P20; ROLE: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_KEY_HINT_RUBRIC_AI_PRE_SUBMIT -->
-**Câu 7.** **Bài 20.** Chiếu song song theo (1,0,2) lên (P):z=0. Tìm ảnh M(3,1,4) và giải thích vì sao không dùng T(x,y,z)=(x−z,y,0).
+**Câu 7.** Chiếu song song theo (1,0,2) lên (P):z=0. Tìm ảnh M(3,1,4) và giải thích vì sao không dùng T(x,y,z)=(x−z,y,0).
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP15-P21; ROLE: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_KEY_HINT_RUBRIC_AI_PRE_SUBMIT -->
-**Câu 8.** **Bài 21.** Qua phép chiếu T(x,y,z)=(x−z,y,0), ảnh đường d:(x,y,z)=(2+t,5,−1+t) là đường hay điểm?
+**Câu 8.** Qua phép chiếu T(x,y,z)=(x−z,y,0), ảnh đường d:(x,y,z)=(2+t,5,−1+t) là đường hay điểm?
 
 **Nguồn tài liệu:** SGK Toán 11 Kết nối tri thức với cuộc sống, Tập Một, Chương IV (Bài 10–14).
