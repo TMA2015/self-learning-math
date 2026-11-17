@@ -83,7 +83,7 @@ Nếu có \(m\) kiểu áo và với **mỗi kiểu áo** đều ghép được 
 
 Có 4 loại áo và 3 kiểu huy hiệu. Mỗi bộ quà gồm đúng một loại áo và một kiểu huy hiệu. Hỏi có bao nhiêu bộ quà khác nhau?
 
-<!-- ITEM_ID: THPT-TOP19-T02; CONTENT_VERSION: TOP19-R03; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP19-O02; ANSWER_REVEAL: OPT_IN_AFTER_TRY; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
+<!-- ITEM_ID: THPT-TOP19-T02; CONTENT_VERSION: TOP19-R10; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP19-O02; ANSWER_REVEAL: OPT_IN_AFTER_TRY; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
 **12 bộ**, mỗi trong 4 áo ghép với 3 huy hiệu: 4×3=12.
