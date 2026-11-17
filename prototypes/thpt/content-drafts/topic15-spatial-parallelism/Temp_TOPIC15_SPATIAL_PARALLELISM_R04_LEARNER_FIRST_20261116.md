@@ -698,6 +698,13 @@ Là 9/25; không nhầm với t=3/5 áp dụng cho chu vi.
 
 **Nếu làm sai:** Nếu diện tích hình chiếu khác dự đoán, xác định hướng chiếu và điều kiện hai mặt có song song nhau hay không.
 
+> **Kiến thức cần ghi nhớ**
+>
+> - **Xác định mặt phẳng:** ba điểm không thẳng hàng xác định duy nhất một mặt phẳng; khi tìm giao tuyến của hai mặt, cần chỉ ra **hai điểm chung phân biệt**, không suy từ hình phối cảnh.
+> - **Hai đường thẳng trong không gian:** song song phải **đồng phẳng** và không có điểm chung; chéo nhau là **không đồng phẳng**, không thể gọi song song chỉ vì hình vẽ trông cùng hướng.
+> - **Đường và mặt phẳng:** muốn kết luận đường thẳng song song **phân biệt** với mặt, ngoài hướng song song một đường nằm trong mặt còn phải loại trường hợp đường nằm hẳn trong mặt. Dùng điều kiện đủ của định lý đúng bối cảnh.
+> - **Hai mặt phẳng và phép chiếu:** luôn kiểm điều kiện song song phân biệt; phép chiếu song song bảo toàn tính thẳng hàng và một số tỉ số theo đường thẳng nhưng không bảo toàn mọi góc, độ dài, vuông góc; đoạn có thể suy biến thành điểm.
+
 # Luyện tập
 
 Hãy giải mỗi bài vào vở trước khi tự mở **Lời giải**. Bài tập theo nội dung SGK và các câu luyện mới đều có đề và lời giải ở ngay trang này; phần tự luận có thêm hướng dẫn chấm để em tự đối chiếu. Lời giải đã xem không phải chứng cứ đánh giá độc lập.
