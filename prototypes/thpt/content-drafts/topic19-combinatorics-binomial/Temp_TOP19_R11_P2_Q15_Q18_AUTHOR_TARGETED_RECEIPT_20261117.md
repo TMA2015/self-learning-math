@@ -7,8 +7,8 @@ STANDARD_BLOB: 5a80b20ce99be3179d03d56a73fa57b6f4882fd8
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 DELTA_CLASS: DELTA_B_SOURCE_EQUIVALENT_LEARNER_EDITORIAL
 REVIEW_SCOPE: Q03_Q08_Q15_Q16_Q18_PUBLIC_LABEL_AND_REPLAY_INTRO
-SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R11_P2_CANONICAL_LABEL_LEARNER_CLARITY_CANDIDATE_20261117.md
-SOURCE_BLOB: 8f7d149c0359ac895fb2d04496d46e2294511123
+SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R10_LANGUAGE_LOCAL_REFERENTS_CANDIDATE_20261117.md
+SOURCE_BLOB: eff5f2a91708671db6f32063eea2cd111ddc6b94
 BASELINE_R10_SOURCE_BLOB: 37612a3fb8d804efa6dd4f65ddd22d90bf2772ae
 BASELINE_R10_ACADEMIC_Q18_AUTHOR_RECEIPT_BLOB: 440f0c17f1a4f6b813e8627f29626248ba7f5684
 R11_Q15_CANDIDATE_MATRIX_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_Q15_56_CANONICAL_SOURCE_LOCKED_CANDIDATE_MATRIX_20261117.md
@@ -47,3 +47,8 @@ AUTHOR_SIGNOFF: CHATGPT_AUTHORING_TOP19_R11_12_SGK_LABELS_2_INTROS_56_SOURCE_ITE
 VERDICT: AFFECTED_DELTA_B_AUTHOR_SELF_QA_PASS; GLOBAL_Q15_V2_READY_REGISTER_HOLD; CONTENT_READY_NO.
 
 Review prompt (four sentences): Compare exactly R11 and R10 Git source blobs, the 56-row R11 candidate item matrix and the previous R10 authored Q18 receipt. Confirm the 12 deleted source-status headings never carried a key, item stem, optional S1 status or rubric and that both modified introductions remain learner-friendly. Verify all 56 canonical IDs and seven public replay references, with original G10 bank ownership, unchanged T02 TOP19-R10 content version and no pre-submit answer exposure. Report any affected P0/P1/P2 with line/item and MINIMAL_DELTA, not an invented independent NotebookLM full Topic PASS or CONTENT_READY.
+
+
+## Verified consolidation — R11 no substantive delta from corrected R10
+
+Fetched the exact R10 original source and final R11 repair blob. The entire **1,084-line learner Markdown** including 56 source-owned canonical items, seven question-only public selfcheck replays, all 56 optional solution disclosures, mathematical answers and rubric wording is identical; the sole difference is **an unrendered author-only provenance HTML comment on line 3**. The original R10 active source (SOURCE_PATH/SOURCE_BLOB above) is therefore authoritative; do not keep a second R11 learner copy. The obsolete R11 patch was deleted from this branch. Previous R11-source SHA assertions in earlier receipt sections are historical and superseded by the direct exact-content comparison. `SOURCE_ONLY_CONSOLIDATION_PASS`; original S1/Q15 owner, independent review, V2 and browser checks remain HOLD.
