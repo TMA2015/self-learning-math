@@ -454,7 +454,7 @@ for(const [lesson,row] of rows){
  }else if(lesson==="B10"){
   assert.equal((examples.match(/^    ### 3\.[1-4]\. Ví dụ [1-4] —/gm)||[]).length,4,
    "B10 needs four fully reasoned examples with river in Tab3");
-  for(const k of ["**Phân tích:**","**Lời giải:**","**Kiểm lại"])
+  for(const k of ["**Phân tích:**","**Giải:**","**Kiểm lại"])
    assert.equal(examples.split(k).length-1,4,
     "B10 each worked example needs why/method/check "+k);
  }else{
