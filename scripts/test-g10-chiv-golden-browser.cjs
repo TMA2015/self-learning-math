@@ -16,7 +16,7 @@ const sources={
  7:"e1487ce01e81738228ae69d4d87cbdc56b5e0c69",
  8:"22e53396caf7753e813c492615a491e1f24cc9fd",
  9:"3d79a17e9ba39cd0f46077823800f5f38c73e313",
- 10:"69c024419565d58f591632cb5dd9d0069df815a8",
+ 10:"b923f5f491c007c54392d3f7d7be83193f3f93fc",
  11:"2a1381689f66d1f8c752bdbf1c29a9ef49a4e073"
 };
 const blob=data=>{const b=Buffer.isBuffer(data)?data:Buffer.from(data);return crypto.createHash("sha1").update(Buffer.from("blob "+b.length+"\0")).update(b).digest("hex");};
@@ -470,6 +470,11 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
        assert.equal(await fig.count(),1,where+" B10 D5 figure moves BEFORE first student try");
        await fig.scrollIntoViewIfNeeded();await fig.evaluate(async el=>{if(el.decode)await el.decode();});
        assert(await fig.evaluate(el=>el.complete&&el.naturalWidth>0),where+" B10 early coordinate SVG decodes");
+       const actualCoord=await fig.evaluate(el=>el.currentSrc);
+       assert(actualCoord.includes(width<=600?
+        "THPT_G10_B10_COORDINATES_MOBILE_D5_R01.svg":
+        "THPT_G10_B10_COORDINATES_DIFFERENCE_D5_R01.svg"),
+        where+" B10 early coordinate figure must have readable mobile source and exact original desktop source");
        assert.equal(await blocks.nth(0).locator("code").count(),0,
         where+" B10 no raw backtick-generated math code in Discovery");
        await labels.nth(1).click();
@@ -495,14 +500,20 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
        await labels.nth(2).click();
        const examplesText=await blocks.nth(2).innerText();
        assert(examplesText.includes("Ví dụ 4 — Qua sông")&&
-        examplesText.includes("bộ dữ liệu khác")&&
-        examplesText.includes("150")&&examplesText.includes("96"),
-        where+" B10 river figure must NOT imply the wrong numeric example dataset");
-       const river=blocks.nth(2).locator('img[src*="THPT_G10_CHIV_RIVER_TRANSFER_D5_R01_CORRECTED.svg"]');
-       assert.equal(await river.count(),1,where+" B10 existing river diagram belongs in worked-example Tab3");
+        examplesText.includes("96")&&examplesText.includes("3")&&examplesText.includes("5")&&
+        examplesText.includes("Đọc hình theo đúng dữ kiện Ví dụ 4")&&
+        !examplesText.includes("bộ dữ liệu khác"),
+        where+" B10 river figure must match its worked-example dataset exactly");
+       const river=blocks.nth(2).locator('img[src*="THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg"]');
+       assert.equal(await river.count(),1,where+" B10 source-matched river diagram belongs in worked-example Tab3");
        await river.scrollIntoViewIfNeeded();
        await river.evaluate(async el=>{if(el.decode)await el.decode();});
        assert(await river.evaluate(el=>el.complete&&el.naturalWidth>0),where+" B10 river SVG decodes");
+       const actualRiver=await river.evaluate(el=>el.currentSrc);
+       assert(actualRiver.includes(width<=600?
+        "THPT_G10_B10_RIVER_VELOCITY_MOBILE_D5_R01.svg":
+        "THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg"),
+        where+" B10 must serve legible portrait diagram only on mobile, full width otherwise");
        await labels.nth(3).click();
        const tips=blocks.nth(3).locator("details.tip");
        assert.equal(await tips.count(),3,where+" B10 exactly three actual errors, 3 canonical HELP markers separately");
