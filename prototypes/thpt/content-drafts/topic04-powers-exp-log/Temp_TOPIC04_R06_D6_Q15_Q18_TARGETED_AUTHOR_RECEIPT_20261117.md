@@ -5,8 +5,8 @@ STANDARD_VERSION: 3.1.0
 STANDARD_BLOB: 5a80b20ce99be3179d03d56a73fa57b6f4882fd8
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 DELTA_CLASS: DELTA_C_PED_TARGETED_PLUS_Q03_MATH_CONDITION
-SOURCE_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_R06_D6_AND_CONDITION_CANDIDATE_20261117.md
-SOURCE_BLOB: 5791f37b7ac777e62fd9088fa40aba5add1be3c0
+SOURCE_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_R06_NUMBERING_CONSISTENT_20261116.md
+SOURCE_BLOB: 5f1d29bfb17c14206d3c02e5130d308dd6ced21a
 PREVIOUS_R06_SOURCE_BLOB: 9b0a9bf090cd8e13bd3807030bb326c0756bd6e8
 BASELINE_SOURCE_BLOB: c948ad9957bbcd55b416ea7ddce96a6dcdf0d799
 BASELINE_AUTHOR_Q18_RECEIPT_BLOB: 436084332b4acc642db3a2a8523d91d980cf566d
@@ -46,3 +46,8 @@ Review prompt (four sentences): Reopen the learner R06 source exact Git SHA and 
 ## R07 MathJax readability source correction in SAME active learner file (17/11/2026)
 
 Rechecked the one R06 learner source and detected exactly **16** mathematical expressions formatted as Markdown code in Practice: square root versus solving square equation (Bài 1) and normalized scientific notation (Bài 9). Revised only original learner lines 640,644,646,724,728,730, converting `√25` to `\\sqrt{25}`, `∛(−27)` to `\\sqrt[3]{-27}`, `x²` to `x^2`, and `7,5×10^{-6}` to `7{,}5\\times10^{-6}` with inline `\\(...\\)` math tags. Decimal comma and the scientific-notation normalization condition 1≤|a|<10 are unchanged; Bài 9 still distinguishes equal 75×10^-7 from scientific notation in standard coefficient range. This changes **math typography only**, not the original problem data, key, solution, sign conditions, point rubrics or method. Source length and all headings unaffected; **93/93 public ordered placements**, **93/93 optional answer disclosures**, 5 original SVG refs and all 18 question-only public selfcheck items retained exactly. This presentation-only addition is `DELTA_B_SOURCE_EQUIVALENT`, appended to original substantive R06 Q03/D6 targeted receipt rather than adding another file. MathJax visual AP2 needs actual browser validation; source formula balance and math equivalence were checked. `GLOBAL_CANONICAL_V2_READY_REGISTER_HOLD`, `CONTENT_READY=NO`. Prior receipt statements “Practice byte-identical” refer to the **earlier R06 scope only**, and must not be read as unchanged MathJax markup after this R07 correction. No merge/deploy.
+
+
+## CONSOLIDATED_IN_PLACE — user decision 17/11/2026
+
+The verified 10 pedagogical/condition + 6 math typesetting changes were applied directly to the existing numbered R06 learner source at `SOURCE_PATH` (new blob `5f1d29bfb17c14206d3c02e5130d308dd6ced21a`), **not** to a parallel learner candidate file. The previously created patch candidate is no longer an effective release input and may be removed from the branch. Original R06 heading numbering, all canonical/public display IDs, question stems, answer/reveal blocks, Written rubric/points, figures, Practice and public question-only Selfcheck roles remain the original baseline except the declared math formatting in Topic04. This receipt now applies to the CURRENT R06 source; earlier old-candidate SHA references in discussion are historical Git provenance only. Author self-check is affected-scope, not full independent Topic quality review or website display QA. `RELEASE=HOLD` until exact active Q01–Q18 & original S1 owner/ready gates close.
