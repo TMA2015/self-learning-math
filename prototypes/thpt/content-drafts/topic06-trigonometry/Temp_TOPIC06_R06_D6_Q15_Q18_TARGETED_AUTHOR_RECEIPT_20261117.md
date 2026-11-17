@@ -4,9 +4,9 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 STANDARD_BLOB: 5a80b20ce99be3179d03d56a73fa57b6f4882fd8
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-DELTA_CLASS: DELTA_C_PED_TARGETED
+DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
 SOURCE_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: a5c4a10e9cad2855a54af692149df26486d28379
+SOURCE_BLOB: ab88d7ed3b52713e4a80779c22dc75a67c3cccb1
 BASELINE_SOURCE_BLOB: dd3af68f681eba9a7b75040d9490815f81efdd6b
 BASELINE_AUTHOR_Q18_RECEIPT_BLOB: 8f4d721ec8ab5b08baaf0a19c7aeaf2aa9cf454f
 AFFECTED_P0: 0
@@ -18,7 +18,7 @@ GLOBAL_ACTIVE_V2_READY_REGISTER: HOLD
 CONTENT_READY: NO
 RELEASE_AUTHORIZATION: NO
 ## Actual old vs new source diff
-The baseline learner Git SHA and new learner Git SHA above were both fetched. After ignoring the one new author-only version/receipt HTML comment, exact line-by-line comparison finds 15 changed First Try D6 lines. All other math explanations, examples, questions, opt-in worked keys, rubric criteria, canonical IDs, SVG links and the entire original Practice + Tự kiểm tra sections are byte-identical. Existing signed baseline remains preserved.
+The baseline R05 learner Git SHA and the 17/11 consolidated learner SHA a5c4a10e9cad2855a54af692149df26486d28379 were previously directly compared: exactly 15 changed First Try D6 lines, preserving original Practice/Selfcheck and worked keys. The new 18/11 source adds separately recorded Knowledge classifications and recap; it is *not* claimed byte-identical to the older R05 Knowledge. Original 15 D6 destinations, Practice/Selfcheck, canonical IDs and rubric criteria remain preserved.
 ## Q08/PED6: every changed outcome's actual remedial route
 | Outcome | Old source line | Direct D6 text in R06 | Actual Practice exercise stem(s) |
 |---|---:|---|---|
@@ -51,3 +51,10 @@ Review prompt (four sentences): Reopen the learner R06 source exact Git SHA and 
 ## CONSOLIDATED_IN_PLACE — user decision 17/11/2026
 
 The 15 pedagogical D6 changes, including the math-corrected O10 range/phase and O14 zero-factor conditions, were transferred by **line-specific review only** into existing R06_NUMBERING_CONSISTENT_20261116.md, preserving all 93 headings from the base numbered learner source. Student Practice and selfcheck are byte-identical; 82/82 public marker placements, 82/82 answer disclosures, original item IDs and all SVG references preserved. Latest one effective source blob `a5c4a10e9cad2855a54af692149df26486d28379`; the parallel D6 candidate is obsolete and is to be deleted. This receipt's PATH/BLOB now points to the real learner source. Historical signed snapshots remain Git history, not parallel release inputs. Targeted AUTHOR_SELF_QA_PASS on changed D6 only, no full Academic/PED/CI browser PASS, global CONTENT_READY remains HOLD.
+
+## 18/11/2026 — effective trigonometry formal-knowledge clarification, HOLD retained
+
+- Current one learner source `ab88d7ed3b52713e4a80779c22dc75a67c3cccb1`, directly succeeding `a5c4a10e9cad2855a54af692149df26486d28379`, with three genuine math classifications at TOP06-O01 (degree/radian conversion), O02 (sin/cos and tan/cot domain on the unit circle), O04 (sin²+cos² and reciprocal identities only with nonzero denominators), plus a concise knowledge recap.
+- Mathematics rechecked against original current examples: −450°=−5π/2; α=135° gives cos negative/sin positive; sin=3/5 in quadrant I implies cos=4/5, tan=3/4; no tan/cot formula used at a zero denominator. Recap keeps two sine/cosine solution families and integer k conditions when required.
+- Full Practice and Selfcheck sections byte-identical versus effective `a5c4a10e9cad2855a54af692149df26486d28379`: 66 original canonical IDs/answers/solutions/rubrics/D6 and 16 replay-only public questions preserved. 15 D6 corrected routes (including O10 phase/range and O14 zero factor) unchanged, original SVG paths, disclosure counts and all public marker placements unchanged.
+- Q18 scoped `AUTHOR_SELF_VERIFIED` applies only to these student-facing knowledge explanations. **GLOBAL_ACTIVE_V2_READY_REGISTER=HOLD, CONTENT_READY=NO** remain until current academic and V2 receipt gates close; no false new NotebookLM independent approval or website integration/merge/deploy.
