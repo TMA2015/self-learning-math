@@ -10,6 +10,9 @@
 **DERIVED_KNOWLEDGE_PATH:** `docs/thpt-preview/sgk/chuong-iv/bai-10.md`
 **CSS_OWNER_B09_P2_BASELINE_BLOB:** `7a658ab449818a616382c145c72880066c2ab57a`
 **CSS_R01_SCOPED_B10_BLOB:** `0238a8cbdc55cc76783997cbad1b7c18afc29d50`
+**B09_OWNER_P2_RUNTIME_BASELINE_BLOB:** `7a77c4444dfc96aeeaf87ddd17d8f9d37a6ae136`
+**B10_SCOPED_GOLDEN_RUNTIME_BLOB:** `74220df7d4a7632c5aa1b2abd2925d5fbcfee82c`
+**B10_RUNTIME_DELTA:** `DELTA_A_UI` — `docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js` adds a B10 route+TRY16 gated DOM-only solution grouping with exact 4 boxed solutions. Leaves problem/method/learner self-check paragraphs **outside**; no data writes, no B01–B09 route behavior change.
 **R01_BANK_SOURCE_BLOB:** `a9f6fab820559a8da98a5a42cd9902dbf9891f34`
 **R01_ORIGINAL_PUBLIC_BANK_BLOB:** `713e6a97b95c2c807c8b76045b324bdddf1a6737`
 **SHARED_WRITTEN_LIBRARY_BLOB:** `cedf2a952624095d9135e04a84dc469e22ec53e5`
