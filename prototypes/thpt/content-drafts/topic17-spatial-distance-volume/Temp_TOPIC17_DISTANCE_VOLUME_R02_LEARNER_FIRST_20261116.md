@@ -323,7 +323,7 @@ Chóp cụt S=16,S′=4,h=6. Giá trị √(SS′)?
 </details>
 
 
-**Tự khám phá trên mô hình:** Giữ cạnh đáy lớn \`a=6\` cm và chiều cao vuông góc \`h=4\` cm, thay đổi tỉ lệ cạnh đáy nhỏ \(k\) từ \(0\) đến \(1\). Hãy tự dự đoán \(V\) trước khi thay thanh trượt: khi \(k=0\), khối giới hạn là chóp; khi \(k=1\), giới hạn là lăng trụ. Với \(k=1/2\), \(S=36\), \(S'=9\), căn \(\sqrt{SS'}=18\), nên \(V=84\,\mathrm{cm}^3\). Từ ba trường hợp, em có thể phát hiện lỗi gõ công thức nào?
+**Tự khám phá trên mô hình:** Giữ cạnh đáy lớn \(a=6\) cm và chiều cao vuông góc \(h=4\) cm, thay đổi tỉ lệ cạnh đáy nhỏ \(k\) từ \(0\) đến \(1\). Hãy tự dự đoán \(V\) trước khi thay thanh trượt: khi \(k=0\), khối giới hạn là chóp; khi \(k=1\), giới hạn là lăng trụ. Với \(k=1/2\), \(S=36\), \(S'=9\), căn \(\sqrt{SS'}=18\), nên \(V=84\,\mathrm{cm}^3\). Từ ba trường hợp, em có thể phát hiện lỗi gõ công thức nào?
 
 <!-- AUTHOR_ONLY_MODEL_REFERENCE: SLM-TOP17-FRUSTUM-VOLUME-R00; FILE: Temp_THPT_TOPIC17_FRUSTUM_VOLUME_MODEL_R00_20261113.html; PUBLIC_DISCOVERY_NO_MASTERY -->
 
