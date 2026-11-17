@@ -15,7 +15,7 @@ const goldenCss="44442773ac31eb1a46f0cab699a7d2c7974a5f37";
 const sources={
  7:"e1487ce01e81738228ae69d4d87cbdc56b5e0c69",
  8:"22e53396caf7753e813c492615a491e1f24cc9fd",
- 9:"a28fa50f223f260c8fded1f42b13065d3e047d63",
+ 9:"3d79a17e9ba39cd0f46077823800f5f38c73e313",
  10:"ceaa76688e73274c9cf2d3116c41c6d4d0ac2726",
  11:"2a1381689f66d1f8c752bdbf1c29a9ef49a4e073"
 };
@@ -376,13 +376,42 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
        await scalarDiscovery.evaluate(async el=>{if(el.decode)await el.decode();});
        assert(await scalarDiscovery.evaluate(el=>el.complete&&el.naturalWidth>0),
         where+" B09 early scalar picture accessible and decodes");
-       const helpText=await blocks.nth(3).locator("details.tip").allInnerTexts();
-       assert.equal(helpText.length,2,where+" exactly two original B09 D6 HELP placements");
+       const tips=blocks.nth(3).locator("details.tip");
+       const helpText=await tips.allInnerTexts();
+       assert.equal(helpText.length,3,where+" B09 three real Tab4 error disclosures, not two plus standalone advice");
        assert(helpText.every(t=>!/(?:B09-[CP][0-9]{2}|HELP_ID|Assessment safety|Final Submit|Không clone câu)/.test(t)),
-        where+" learner-facing remediation must never expose internal QA/item identifiers");
-       assert(helpText[0].includes("Vì sao sai?")&&helpText[1].includes("Vì sao sai?")&&
-        helpText.every(t=>t.includes("Ôn lại:")),
-        where+" B09 both D6 sections need concrete mathematical diagnosis and recovery");
+        where+" B09 learner-facing remedies must not leak QA/item identifiers");
+       assert(helpText.slice(0,2).every(t=>t.includes("Vì sao sai?")&&t.includes("Ôn lại:")),
+        where+" original two B09 D6 HELP steps are intact");
+       assert(helpText[2].includes("Lỗi thường gặp:")&&
+        helpText[2].includes("Vì sao sai?")&&
+        helpText[2].includes("Tự kiểm:")&&
+        helpText[2].includes("Ôn và luyện lại:"),
+        where+" B09-F04 third entry must show real wrong step→cause→repair→self-check→D6");
+       const mistakes=blocks.nth(3);
+       await labels.nth(3).click();
+       const third=tips.nth(2);
+       assert.equal(await third.getAttribute("open"),null,where+" B09 4.3 stays closed until learner opens");
+       const thirdLabel=await third.locator("summary").innerText();
+       assert(thirdLabel.includes("4.3")&&thirdLabel.includes("Đảo dấu"),
+        where+" B09 4.3 is numbered as actual error, not free-standing advice");
+       await third.locator("summary").click();
+       assert((await third.getAttribute("open"))!==null,where+" B09 4.3 expands on demand");
+       const thirdBody=await third.innerText();
+       assert(thirdBody.includes("đổi chỗ điểm đầu và điểm cuối")&&
+        thirdBody.includes("không cùng phương")&&
+        thirdBody.includes("Ôn và luyện lại:"),
+        where+" B09 4.3 actual wrong sign, mathematical cause and remediation present");
+       const link=third.locator('a[href*="THPT-G10-B09-P07"]');
+       assert.equal(await link.count(),1,where+" B09 4.3 points to valid existing practice P07");
+       assert(!(await link.innerText()).includes("P07"),
+        where+" B09 4.3 must not show internal item identifier in learner copy");
+       await page.waitForFunction(()=>!!document.querySelector('details.tip[open] mjx-container'),
+        null,{timeout:15000});
+       assert(await third.locator("mjx-container").count()>3,
+        where+" B09 4.3 wrong and corrected math actually typeset");
+       await third.locator("summary").click();
+       await labels.nth(0).click();
        const knowledge=blocks.nth(1);
        const defs=knowledge.locator(".thpt-r4-knowledge-conclusion.thpt-r4-concept-card");
        const rules=knowledge.locator(".thpt-r4-knowledge-conclusion.thpt-r4-rule-card");
