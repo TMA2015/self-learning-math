@@ -222,7 +222,7 @@ Nếu kết quả không qua (a,f(a)), thế lại x=a để phát hiện.
 
 <!-- LESSON_ID: TOP09-M09; OUTCOME_ID: TOP09-O09 -->
 
-Trong chuyển động, độ dốc ấy là vận tốc có hướng. Vật có thể có vận tốc −2 m/s mà tốc độ vẫn dương không? Ta bắt đầu từ tọa độ có dấu và đơn vị s(t) theo mét/giây. Khi s(t) là tọa độ theo thời gian t, v(t)=s'(t) là vận tốc tức thời (có dấu), đơn vị m/s. Tốc độ bằng |v(t)| và không âm. s'(t)<0 chỉ cho biết chiều chuyển động, không tự nói vật chậm dần.
+Trong chuyển động trên một trục thẳng, nếu \(s(t)\) là **tọa độ có dấu** của vật đo bằng mét tại thời điểm \(t\) đo bằng giây, thì độ dốc của đồ thị \(s(t)\) cho **vận tốc có hướng** \(v(t)=s'(t)\), đơn vị m/s. Vật có thể có vận tốc \(-2\) m/s mà tốc độ vẫn dương không? Có: **tốc độ** là \(|v(t)|\), luôn không âm; còn \(v(t)<0\) chỉ nói vật đang chuyển động theo chiều âm, không tự khẳng định đang chậm dần.
 
 Chẳng hạn, s(t)=t²−6t (m), t≥0: v(t)=2t−6; tại t=2, v=−2 m/s, tốc độ2 m/s. Chọn trị tuyệt đối chỉ sau khi xác định vận tốc có hướng.
 
@@ -1696,7 +1696,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 7. Khẳng định điều kiện x≠1 (1đ)
 
 
-**Nếu làm sai:** Chỉ áp (u/v)' khi v khác0; dùng P15 để sửa dấu âm quy tắc thương.
+**Nếu làm sai:** Chỉ dùng quy tắc đạo hàm của thương tại nơi mẫu \(v\ne0\). Khi bỏ sót dấu trừ của \(uv'\), hãy quay lại **Bài 52 trong phần Luyện tập**: viết rõ \(u=x^2+1\), \(v=x-1\), lấy đạo hàm từng phần rồi tính lại \(f'(0)\) trước khi làm bài này.
 
 </details>
 
