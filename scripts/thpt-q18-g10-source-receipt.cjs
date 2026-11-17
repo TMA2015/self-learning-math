@@ -309,6 +309,28 @@ function expectedG10KnowledgeBlob(lesson,legacy){
   return candidate;
  }
 
+ if(name==="B10"){
+  const row=chivEditorialReceiptRows().get("B10");
+  assert(row&&row.baseline===blobs[1],"B10 R01 Q18 must extend exact old editorial ledger");
+  const rf="prototypes/thpt/ux795/G10_CHIV_B10_S1_PED_SINGLE_CANONICAL_Q18_R01_20261118.md";
+  const receipt=fs.readFileSync(path.join(root,rf),"utf8");
+  const f=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(f("BASELINE_B10_KNOWLEDGE_BLOB"),row.candidate,
+    "B10 scoped Q18 source baseline must match old current Knowledge");
+  const source=f("R01_SOURCE_BLOB"),masterSha=f("ONE_CANONICAL_LESSON_BLOB");
+  assert(/^[a-f0-9]{40}$/.test(source||"")&&/^[a-f0-9]{40}$/.test(masterSha||"")&&
+   source!==row.candidate,"B10 candidate Academic Delta C requires distinct signed SHA");
+  const canonical=fs.readFileSync(path.join(root,
+   "prototypes/thpt/content-drafts/THPT_G10_CHIV_B10_CANONICAL.md"));
+  const calc=b=>require("node:crypto").createHash("sha1")
+   .update(Buffer.from("blob "+b.length+String.fromCharCode(0))).update(b).digest("hex");
+  assert.equal(calc(canonical),masterSha,"B10 one current academic manuscript SHA mismatch");
+  for(const token of ["Q18_AUTHOR_SELF_VERIFIED","CHIV-10-A","CHIV-10-B","CHIV-10-C",
+   "B09-F04","DELTA_C_ACADEMIC_MATERIAL","P1_NOT_PUBLISHED"])
+   assert(receipt.includes(token),"B10 mandatory signed self-QA/audit evidence missing "+token);
+  return source;
+ }
+
  if(name==="B09"){
   const row=chivEditorialReceiptRows().get("B09");
   assert(row&&row.baseline===blobs[1],
