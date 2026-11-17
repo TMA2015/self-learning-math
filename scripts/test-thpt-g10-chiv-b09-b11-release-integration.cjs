@@ -28,23 +28,30 @@ const context={window:{}};
 vm.runInNewContext(text("docs/assets/javascripts/thpt-chiv-b09-b11-reviewed-formative-v1.js"),context);
 const bank=context.window.THPT_CHIV_B09_B11_REVIEWED_FORMATIVE;
 assert(bank?.validate().valid,"Invalid new bank");
-const extension=bank.records.filter(x=>x.item_id==="THPT-G10-B09-P07");
-assert.equal(extension.length,1,"B09 source-locked decomposition extension must have one canonical ID");
-assert.equal(JSON.stringify(bank.records.filter(x=>x.item_id!=="THPT-G10-B09-P07")),
- JSON.stringify(expected),"Original 24 R01 reviewed items must remain completely byte-identical");
-const delta=text("prototypes/thpt/ux795/G10_CHIV_B09_DECOMP_CANONICAL_DELTA_R04_20261117.md");
-for(const marker of ["G10-B09-DECOMP_S1","THPT-G10-B09-P07","Q01–Q18",
- "FORMATIVE_ONLY","NO_MERGE_NO_DEPLOY"]){
- if(marker==="NO_MERGE_NO_DEPLOY")continue; // Candidate status is tracked in PR / release gate.
- assert(delta.includes(marker),"Missing targeted P07 source/self-QA evidence: "+marker);
-}
-assert.equal(extension[0].skill,"G10-B09-DECOMP_S1");
-assert.equal(extension[0].role,"PRACTICE");
-assert.equal(extension[0].exposure,"FORMATIVE_ONLY");
-assert.equal(extension[0].content_version,1);
-assert(extension[0].stem.includes("trung điểm")&&
- extension[0].solution.includes(String.raw`-\tfrac16\vec a-\tfrac12\vec b`)&&
- extension[0].solution.includes("duy nhất"),"P07 geometry, key and uniqueness must be preserved");
+assert.equal(JSON.stringify(bank.records),JSON.stringify(expected),
+ "Original 24 R01 items must remain source-exact and immutable");
+const historical=bank.records.map(x=>x.item_id);
+vm.runInNewContext(text("docs/assets/javascripts/thpt-g10-b09-decomp-r04-formative-extension.js"),context);
+const delta=context.window.THPT_G10_B09_DECOMP_R04_EXTENSION;
+assert(delta?.validate().valid,"B09 isolated P07 extension invalid");
+const extra=delta.forLesson("9","practice");
+assert.equal(extra.length,1,"B09 has exactly one canonical decomposition extension");
+assert.equal(extra[0].item_id,"THPT-G10-B09-P07");
+assert.equal(extra[0].skill,"G10-B09-DECOMP_S1");
+assert(!historical.includes(extra[0].item_id),"P07 cannot duplicate any original R01 item");
+assert.deepEqual(delta.forLesson("10","practice"),[],"B10 must not receive B09 P07");
+assert.deepEqual(delta.forLesson("9","core"),[],"B09 original Core must remain unchanged");
+const r04=text("prototypes/thpt/ux795/G10_CHIV_B09_DECOMP_CANONICAL_DELTA_R04_20261117.md");
+assert(r04.includes("THPT-G10-B09-P07")&&r04.includes("G10-B09-DECOMP_S1")&&
+ r04.includes("SOURCE-CANDIDATE")&&r04.includes("not independent reviewer"),
+ "P07 must have a scoped non-fabricated Q18 source receipt");
+const ui=text("docs/assets/javascripts/thpt-r4-preview.js");
+assert(ui.includes('const isB09Extension=!isG11&&requestedItem==="THPT-G10-B09-P07"')&&
+ ui.includes("b09Extension.forLesson(lesson,parts[2])"),
+ "Practice modal and deep link must load P07 only on G10 B09");
+const practice=text("docs/thpt-preview/sgk/chuong-iv/luyen-tap.md");
+assert(practice.includes("41 câu tự luyện")&&practice.includes("Bài 9 · Vectơ</strong><p>7 câu"),
+ "Learner-facing B09 Practice count must match one added P07");
 const figures=[
 ["THPT_G10_B09_SCALAR_MULTIPLE_VECTORS_D5_R01.svg","8670fd4815f89a1f56e824cdab2d2d3696299422"],
 ["THPT_G10_B10_COORDINATES_DIFFERENCE_D5_R01.svg","fb293bfb7c89b1247ebea310a1f97e04ea1ebab0"],
@@ -54,34 +61,14 @@ for(const [name,hash] of figures){
  assert.equal(blob(bytes),hash,"Changed D5 SVG: "+name);
  assert(!bytes.toString("utf8").includes("<script"));
 }
-const b09Receipt=text("prototypes/thpt/ux795/G10_CHIV_B09_S1_SEMANTIC_DECOMPOSITION_R03_20261117.md");
-const b09Field=k=>b09Receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
-assert.equal(b09Field("SOURCE_BASELINE_BLOB"),
- "2529b915e4089862e1a48e685ba5dc88d5450558",
- "B09 new knowledge must extend published immutable academic source");
-assert.equal(blob(fs.readFileSync("docs/thpt-preview/sgk/chuong-iv/bai-9.md")),
- b09Field("R03_SOURCE_BLOB"),"B09 full theory/decomposition source exact Q18 receipt");
-for(const [asset,key] of [
- ["THPT_G10_B09_DECOMPOSITION_TWO_DIRECTIONS_D5_R03.svg","R03_SVG_BLOB"],
- ["THPT_G10_B09_DECOMPOSITION_MOBILE_D5_R03.svg","R03_MOBILE_SVG_BLOB"]
-]){
- assert.equal(blob(fs.readFileSync("docs/assets/images/thpt/"+asset)),
-  b09Field(key),"B09 accessible decomposition figure exact SHA: "+asset);
-}
-assert(b09Receipt.includes("BLOCKED_BY_AUTHORING")&&
- b09Receipt.includes("NO_CANONICAL_DECOMPOSITION_ITEM"),
- "Historical R03 was genuinely missing an independent canonical item");
-assert(delta.includes("SOURCE-CANDIDATE")&&delta.includes("no claim of independent"),
- "R04 Q18 candidate must not impersonate independent reviewer/owner signoff");
-
 for(const n of [9,10,11]){
- assert.equal(bank.forLesson(n,"core").length,2);assert.equal(bank.forLesson(n,"practice").length,n===9?7:6);
+ assert.equal(bank.forLesson(n,"core").length,2);assert.equal(bank.forLesson(n,"practice").length,6);
  const p=text("docs/thpt-preview/sgk/chuong-iv/bai-"+n+".md");
  assert.deepEqual([...p.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]),
   ["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
   "B"+n+": exactly four owner-approved Model B tabs required");
- assert.equal((p.match(/^    ### Ví dụ \d+\./gm)||[]).length,n===9?4:3,
-  "B"+n+": keep original three examples and require additional sourced decomposition for B09 only");
+ assert.equal((p.match(/^    ### Ví dụ \d+\./gm)||[]).length,3,
+  "B"+n+": three worked examples remain in the new Ví dụ tab");
  assert.equal((p.match(new RegExp('data-thpt-help-id="HELP-G10-B'+String(n).padStart(2,"0")+'-0[12]"',"g"))||[]).length,2,"Original reviewer R01 D6 IDs remain untouched; transfer D6 guarded separately");
  for(const kind of ["core","practice"])assert(text("docs/thpt-preview/sgk/chuong-iv/luyen-tap.md").includes('data-thpt-open-quiz="b'+n+'-'+kind+'"'));
 }
@@ -94,10 +81,10 @@ const banks=["thpt-chi-reviewed-formative-v1.js","thpt-chii-reviewed-formative-v
 "thpt-chviii-reviewed-formative-v1.js","thpt-chix-reviewed-formative-v1.js"];
 const existing=banks.flatMap(name=>[...text("docs/assets/javascripts/"+name).matchAll(/"item_id"\s*:\s*"([^"]+)"/g)].map(m=>m[1]));
 assert.equal(new Set(existing).size,existing.length);
-assert.equal(new Set([...existing,...bank.records.map(x=>x.item_id)]).size,existing.length+25,"Duplicate canonical ID");
+assert.equal(new Set([...existing,...bank.records.map(x=>x.item_id)]).size,existing.length+24,"Duplicate canonical ID");
 assert(!/data-thpt-readiness|data-mastery-credit/.test(text("docs/thpt-preview/sgk/chuong-iv/tu-kiem-tra-chuong.md")));
 if(process.argv.includes("--built")){
  for(const n of [9,10,11])assert(fs.existsSync("site/thpt-preview/sgk/chuong-iv/bai-"+n+"/index.html"));
  assert(fs.existsSync("site/thpt-preview/thu-vien/tu-luan-chuong-iv-b09-b11/index.html"));
 }
-console.log("PASS: B09–B11 24 original source-identical public items + 1 B09 P07 targeted candidate, 3 original SVG, 3 canonical Written, 6 D6, 0 ID overlap, no Readiness/Mastery");
+console.log("PASS: 24/24 historic R01 items immutable + one G10 B09 P07 isolated extension, no changes to B10/B11/Readiness/Mastery");
