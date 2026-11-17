@@ -9,8 +9,8 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: ec90cab8455768b263f8d57409587c28f250340a
-ACADEMIC_SOURCE_BLOB: ec90cab8455768b263f8d57409587c28f250340a
+SOURCE_BLOB: 7f537a309fe302941589073bb0e2e9577d323134
+ACADEMIC_SOURCE_BLOB: 7f537a309fe302941589073bb0e2e9577d323134
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC12_TRIANGLE_NEW16_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R03_LEARNER_FIRST_34_CANONICAL_VISIBLE_20261116.md
@@ -53,3 +53,12 @@ ASSESSMENT_Q16: 12 câu public replay (SGK và Topic) dùng lại Practice, ch�
 - RELEASE phải QA rendered hierarchy/AP1–AP5 trên Golden, anchor link và responsive; không sửa toán hoặc tự merge/deploy. 
 
 **Source equivalence là DELTA_A**, không yêu cầu NotebookLM đánh giá lại toàn Chuyên đề; Q18 của snapshot cũ được giữ nguyên và chỉ custody mới được khóa riêng.
+
+
+## R05 · targeted Q15 canonical W05 source-owner parity (17/11/2026)
+
+**This is a scoped Q18 AUTHOR_SELF_VERIFIED addendum, not a new independent NotebookLM review.** Current in-place Topic12 source blob `7f537a309fe302941589073bb0e2e9577d323134`; previous R20-selected source blob `4c0fc6c5791648f4bb1bdd0cfa5dfa5b9ba6253e` preserved in Git history. Original SGK ChIII W05 canonical source now `569466519ee9a653fa3bcdf874e06619424fbf7b` on original-owner Draft #749; its updated Q18 composite receipt `11451c115ba8a2211628c5538ba8144c1d1a0e41` verifies the single 2-point rubric mathematical correction. Original reviewed R01 SGK bank `6320aeaa89bd51c514b07461e01fad5e3aca833f` retains historical source/review PASS **for its old snapshot only**.
+
+**Affected Topic source = only 2 exact changes:** (1) original W05 display-only placement metadata points to corrected current SGK-owner composite SHA, retaining `ORIGINAL_R01_REVIEWED_BLOB`; (2) same original W05 rubric adds `với \\(\\alpha=150^\\circ\\)` to \\(x=R\\cos\\alpha, y=R\\sin\\alpha\\), so Topic12 displays exactly the angular formula in original owner. No new item ID or mathematical result. For wheel \\(R=10,\\alpha=150^\\circ\\): \\(x_M=-5\\sqrt3, y_M=5\\), ground height 17m, negative cosine matches quadrant II. All five rubric allocations `1+2+2+1+1=7` unchanged. No stem, answer key, source bank or score change.
+
+**Executed SOURCE checks:** 34/34 `DISPLAY_ONLY_CANONICAL` markers preserved, 46/46 `<details>` placements preserved, exact original W05 source owner pointed to new SHA, original 18 historic SGK identity markers retained, topic NEW16 bank SHA unchanged, public assessment questions unchanged by a strictly two-target edit. `Q15_W05_SINGLE_OWNER_PARITY=PASS`; `Q04_RUBRIC_ANGLE=PASS`; `Q18_TARGETED_AUTHOR_SELF_QA=PASS`. Scope is this **W05 source-pointer and rubric** only; it does not claim re-solving the entire 34-item Topic bank, independent reviewer of all 22 topics, actual browser MathJax or visual SVG QA. `RD1/MASTERY/FINAL_SUBMIT=UNCHANGED`; `RELEASE_AUTHORIZATION=NO`. New V2/handoff/ready/register SHA synchronisation must be checked on exact PR HEAD independently.
