@@ -328,7 +328,7 @@ Tính liên tục nối giới hạn với giá trị hàm. Ta sẽ thấy sự 
 
 Giới hạn có thể tồn tại nhưng hàm vẫn 'đứt' tại đúng điểm không? Ta sử dụng giới hạn hai phía, giá trị hàm và đẳng thức. f liên tục tại a khi a thuộc miền xác định, lim(x→a)f(x) tồn tại hữu hạn và bằng f(a). Chỉ một trong ba điều không đủ. Hàm có thể sửa bằng gán lại f(a) nếu giới hạn hữu hạn tồn tại; không thể sửa một cú nhảy với hai giới hạn một phía khác nhau chỉ bằng đổi một giá trị.
 
-Xét ví dụ: Đặt f(x)=(x²−5x+6)/(x−2) nếu x≠2 và f(2)=k. Như M06, lim tại 2 là −1 nên chỉ k=−1 cho liên tục. Chọn so giới hạn đã tính với điểm thay vì giả định thế được phân thức gốc.
+Xét ví dụ: Đặt \(f(x)=\frac{x^2-5x+6}{x-2}\) khi \(x\ne2\) và \(f(2)=k\). Với \(x\ne2\), rút gọn được \(f(x)=x-3\), nên \(\lim_{x\to2}f(x)=-1\). Vì tính liên tục đòi giá trị tại điểm đúng bằng giới hạn, chỉ \(k=-1\) làm hàm liên tục. Không thế trực tiếp \(x=2\) vào phân thức gốc vì mẫu bằng 0.
 
 **Ví dụ**
 
@@ -355,7 +355,7 @@ Giới hạn và giá trị tại điểm có thể lệch nhau theo những cá
 
 Chẳng hạn, f=|x|/x (x≠0) có giới hạn trái −1, phải +1 ⇒ gián đoạn nhảy tại 0. g=1/x có hai phía ±∞ ⇒ gián đoạn vô cực tại 0. h=(x²−36)/(x−6) nếu x≠6 rút x+6, lim=12 ⇒ gián đoạn có thể khử ở 6. Chọn so một phía trước khi kết luận.
 
-Ngay tại hình này, ta xét hàm từng đoạn \(f(x)=x+2\) khi \(x<0\), còn \(f(x)=2x+1\) khi \(x\ge0\). Khi \(x\to0^-\), nhánh trái tiến tới 2 nhưng **không lấy** \((0,2)\); khi \(x\to0^+\), nhánh phải tiến tới 1 và có điểm đặc \((0,1)\), nên \(f(0)=1\). Vì 2 khác 1, hàm **không có giới hạn hai phía** ở 0 và không liên tục tại 0. Điều này khác ví dụ \(|x|/x\) ở trên: cả hai là gián đoạn nhảy nhưng độ cao một phía không giống nhau.
+Xét hàm từng đoạn \(f(x)=x+2\) khi \(x<0\), còn \(f(x)=2x+1\) khi \(x\ge0\), được minh họa bằng hình ngay bên dưới. Khi \(x\to0^-\), nhánh trái tiến tới 2 nhưng **không lấy** \((0,2)\); khi \(x\to0^+\), nhánh phải tiến tới 1 và có điểm đặc \((0,1)\), nên \(f(0)=1\). Vì 2 khác 1, hàm **không có giới hạn hai phía** ở 0 và không liên tục tại 0. Đây cũng là gián đoạn nhảy như \(|x|/x\), nhưng cặp giới hạn một phía của \(|x|/x\) là \((-1,1)\), còn ở hình này là \((2,1)\).
 
 ![Hai phía của điểm nhảy có giới hạn khác nhau](../../visuals/THPT_TOPIC08_ONE_SIDED_JUMP_R01.svg)
 
