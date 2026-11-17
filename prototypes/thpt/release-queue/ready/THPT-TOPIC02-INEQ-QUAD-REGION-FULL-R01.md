@@ -1,4 +1,4 @@
-# CĐ02 — Bất đẳng thức, dấu tam thức bậc hai và miền nghiệm · AUTHORING CONTENT_READY R05 (stable R06 packet)
+# CĐ02 — Bất đẳng thức, dấu tam thức bậc hai và miền nghiệm · AUTHORING current R06
 
 PACKET_ID: THPT-TOPIC02-INEQ-QUAD-REGION-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -8,18 +8,18 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: b798a47f8cb9e2f16708c5f3ae732f56c1b393db
+SOURCE_COMMIT: abd4cbc30f25bf00dc2ebc6e978dde498e8b4b25
 AUTHOR_PR: 818
 CURRENT_PR: #818 Draft AUTHORING; no merge or deploy
 CATALOG_TOPIC_ID: CD02
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 41a3d0497057217368ba63fecfa43d118f3e4519
+ACADEMIC_SOURCE_BLOB: ec8a640c65f66e1f743c8af155642aac6a4170c3
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC02_R06_NUMBERING_DELTA_A_Q18_20261116.md (AUTHOR_SELF_QA only, not a new independent reviewer PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC02_R06_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: 09ad994ded632d4f9951f4bb53e3872e64e82db3
+REVIEW_RECEIPT_BLOB: 7752de431df0e1d11e2ebe67390781c6f6c7f1d9
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC02-INEQ-QUAD-REGION-FULL-R06_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: 32c07c5d01ec498aea930bf5bfa3591fdfe2872e
+AUTHOR_HANDOFF_BLOB: c9a22f1ea06a2da346dc40e7c65f3c47de9f9e0f
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC02_INEQ_QUAD_REGION_ORIGINAL18_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 6412d01a5d2c9b04c6f97d5b6a41c43e85d1c2df
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC02_INEQ_QUAD_REGION_ORIGINAL20_EXTENSION_R01_20261112.md
@@ -43,7 +43,7 @@ MASTERY_ACTIVATION: NO
 RELEASE_AUTHORIZATION: NO
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
-CURRENT_CONTENT_REVISION: R05
+CURRENT_CONTENT_REVISION: R06
 TOPIC_EDITORIAL_CHECKLIST: Issue #864, original 13 points
 REGRESSION_LEDGER: Issue #865; CĐ01/CĐ22 defects checked, CĐ02 L21–L24 recorded
 PREVIOUS_R04_SOURCE_BLOB: 907af796ff6f61dee518f7d25e5ff99cb23467f1
@@ -53,12 +53,12 @@ PUBLIC_SELF_CHECK: 16 public replay questions, no Mastery/heldout score
 
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — Một Topic source 41a3d0497057217368ba63fecfa43d118f3e4519, receipt 09ad994ded632d4f9951f4bb53e3872e64e82db3, 18 bank index +20 extension + một V2 handoff; source SHA đúng mọi file.
+- [x] A1_SOURCE_SNAPSHOT — Current R06 source ec8a640c65f66e1f743c8af155642aac6a4170c3, Q18 author scope 7752de431df0e1d11e2ebe67390781c6f6c7f1d9, A1 metadata 91408737fec8fbd7710984b920c77c25123b12a9, 18 SGK index +20 Topic extension, single handoff c9a22f1ea06a2da346dc40e7c65f3c47de9f9e0f; all exact SHA locked.
 - [x] A2_SGK_SBT_SCOPE — CĐ02 gốc theo danh mục 22; KNTT G10 T1 B03 SGK 22–25/SBT16–18, B04 SGK26–30/SBT19–23; B17 G10 T2 SGK19–24/SBT16–18, no new scan claim.
 - [x] A3_NOTEBOOKLM_VERDICT — Original 18 immutable G10 ChII reviewed independent 18/18 PASS on old SHA only; new R04 Topic Delta C Q18 AUTHOR_SELF_VERIFIED 16 outcome + 20 novel item solution checks; no invented NotebookLM Topic PASS.
 - [x] A4_ITEM_OUTCOME_IDS — 16/16 outcome IDs, 38 distinct PUBLIC canonical IDs (18 old+20 new), 4 Written (2 old+2 new), each one rubric/7, 16 public selfcheck reuses no IDs minted.
 - [x] A5_D1_D6_SCOPE — four connected teaching arcs, 16 reasoned outcomes/first tries/voluntary reveals, 16 D6 recovery routes and 3 exact SVG; two interaction models described as SPEC_ONLY.
-- [x] A6_DELTA_RESOLVED — Current R04 coherent mathematical arcs, 20 new formative/Written cases and 3 figure-example alignment corrections have exact source-locked self-QA; old 18 canonical stems/keys/rubrics frozen.
+- [x] A6_DELTA_RESOLVED — Current R06 formal-label and key-recall clarification DELTA_C scoped AUTHOR_SELF_VERIFIED with unchanged canonical item stem/key/solution/rubric and immutable original 18 SGK bank; no new independent full-Topic reviewer verdict.
 - [x] A7_PUBLIC_PRIVATE_BOUNDARY — 0 private RD1 imported; no independent TOPIC_READINESS; no key/hint/correctness/Tutor before Final Submit and no public practice/selfcheck Mastery.
 
 ## PED1–PED6 / Q09–Q14
@@ -86,6 +86,12 @@ PUBLIC_SELF_CHECK: 16 public replay questions, no Mastery/heldout score
 - [ ] P2_DEVICE_UAT — Chưa được chủ dự án nghiệm thu trải nghiệm trên thiết bị thật; cần kiểm Safari, iPad, iPhone và khả năng tự học.
 
 **Q16:** CĐ02 có 16 placement Tự kiểm tra công khai reuse, không phải đánh giá độc lập, không ghi Mastery. RD1 private imported zero bytes, 0-byte hash ở trên không phải digest bank kín. Hình và model interaction chỉ đặc tả; RELEASE tự quyết và QA triển khai trên current main. Không chỉnh SGK, THCS, Golden UI, Firebase hoặc dữ liệu người học trong AUTHORING.
+
+## R06 current learner-formal-knowledge closure · 17/11/2026
+
+- Exact source `ec8a640c65f66e1f743c8af155642aac6a4170c3`, Q18 targeted author receipt `7752de431df0e1d11e2ebe67390781c6f6c7f1d9`, A1 metadata `91408737fec8fbd7710984b920c77c25123b12a9` and V2 `c9a22f1ea06a2da346dc40e7c65f3c47de9f9e0f` are the current AUTHORING chain. Older numbered R06 source/receipt below are historical only.
+- Q03/Q09–Q14: 4 real formal statements (inequality operations, discriminant, no-real-root polynomial sign, 2-variable inequalities), one concise key-recall block; definitions/conditions verified using adjacent learner examples. No blank formula or added item.
+- 38 original canonical Practice stems, answers, rubrics, disclosures and D6 BYTE_EXACT to preceding source `351dc607a6721fd56947344034f06c6cc8cca253`; public selfcheck 16 question-only and SVG paths unaffected. No Mastery/private RD1/official Readiness; release/AP/owner permission remain separate.
 
 ## R06 numbering DELTA_A_UI · source-custody checkpoint 16/11/2026
 
