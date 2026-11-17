@@ -263,9 +263,9 @@ Hãy kiểm tra trường hợp sau: √(3x+1)=x−1: x≥1. Bình phương 3x+1
 
 **Ví dụ**
 
-**Đề bài.** Giải \(\sqrt{2x+7}=x+1\).
+**Đề bài.** Giải \(\sqrt{x+6}=x\).
 
-**Lời giải.** Vế phải cần không âm nên \(x\ge-1\); khi đó \(2x+7\ge5>0\). Bình phương được \(2x+7=(x+1)^2\), tức \(x^2=6\). Ứng viên \(\pm\sqrt6\); chỉ \(+\sqrt6\ge-1\). Với nghiệm này, hai vế không âm và có bình phương bằng nhau, nên đúng. Vậy \(S=\{\sqrt6\}\).
+**Lời giải.** Vì căn bậc hai số học không âm nên vế phải phải thỏa \(x\ge0\); khi đó \(x+6\ge6>0\), căn có nghĩa. Bình phương hai vế được \(x+6=x^2\), hay \((x-3)(x+2)=0\). Hai ứng viên là \(x=3\) và \(x=-2\); loại \(-2\) vì không thỏa \(x\ge0\). Thử trực tiếp \(x=3\): \(\sqrt{3+6}=3\), đúng bằng vế phải. Vậy tập nghiệm là \(S=\{3\}\).
 
 **Vận dụng**
 
