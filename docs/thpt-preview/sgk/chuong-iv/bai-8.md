@@ -133,7 +133,7 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc hiệu hai vectơ chung gốc:</strong> Với ba điểm \(A,B,C\) bất kì, \(\overrightarrow{AB}-\overrightarrow{AC}=\overrightarrow{CB}\). Hãy lấy vectơ nối <strong>từ điểm cuối \(C\) của vectơ bị trừ đến điểm cuối \(B\) của vectơ đứng trước</strong>.</div>
 
-    <div class="thpt-r4-key-formula" role="note"><strong>Kiểm chứng công thức:</strong>
+    **Kiểm chứng bằng định nghĩa hiệu:**
 
     \[
     \overrightarrow{AB}-\overrightarrow{AC}
@@ -141,15 +141,13 @@
     =\overrightarrow{CB}.
     \]
 
-    </div>
-
     **Cách kiểm:** Nối \(C\to A\to B\), tức đi từ \(C\) đến \(B\), không phải \(B\to C\).
 
     #### 2.2.3. Vận dụng tổng/hiệu cho trung điểm và trọng tâm
 
     **Cho đoạn thẳng \(AB\)** có trung điểm \(M\). Hai vectơ \(\overrightarrow{MA}\) và \(\overrightarrow{MB}\) đối nhau, nên tổng bằng \(\vec0\). Ngược lại, khi \(A\ne B\), điều kiện này cũng đủ để \(M\) là trung điểm \(AB\).
 
-    **Cho tam giác \(ABC\)** có \(M\) là trung điểm \(BC\), \(G\) là trọng tâm. Theo quy tắc ba điểm, \(\overrightarrow{GB}=\overrightarrow{GM}+\overrightarrow{MB}\) và \(\overrightarrow{GC}=\overrightarrow{GM}+\overrightarrow{MC}\). Hai vectơ \(\overrightarrow{MB},\overrightarrow{MC}\) đối nhau, do đó \(\overrightarrow{GB}+\overrightarrow{GC}=\overrightarrow{GM}+\overrightarrow{GM}\). Vì \(G\) nằm trên trung tuyến \(AM\) và \(AG=2GM\), vectơ \(\overrightarrow{GA}\) đối với tổng vừa tìm; suy ra hệ thức trọng tâm.
+    **Cho tam giác \(ABC\)** có \(M\) là trung điểm \(BC\), \(G\) là trọng tâm. Theo quy tắc ba điểm, \(\overrightarrow{GB}=\overrightarrow{GM}+\overrightarrow{MB}\) và \(\overrightarrow{GC}=\overrightarrow{GM}+\overrightarrow{MC}\). Hai vectơ \(\overrightarrow{MB},\overrightarrow{MC}\) đối nhau, do đó \(\overrightarrow{GB}+\overrightarrow{GC}=\overrightarrow{GM}+\overrightarrow{GM}\). Vì \(G\) nằm trên trung tuyến \(AM\) và \(AG=2GM\), vectơ \(\overrightarrow{GA}\) là vectơ đối của tổng vừa tìm; suy ra hệ thức trọng tâm.
 
     <div class="thpt-r4-key-formula" role="note"><strong>Hệ thức trọng tâm và trung điểm (khi đúng điều kiện hình):</strong>
 
