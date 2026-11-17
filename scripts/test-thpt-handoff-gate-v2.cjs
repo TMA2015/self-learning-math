@@ -70,7 +70,12 @@ function acceptedStandardVersions(overrideText) {
       (x[0]<y[0]||(x[0]===y[0]&&(x[1]<y[1]||(x[1]===y[1]&&x[2]<y[2]))));
   };
   const previousValid=lineageApproved&&predecessor&&earlier(predecessor[1],version[1]);
-  return [...new Set([...historicalVersions,...(previousValid?[predecessor[1]]:[]),...(approved?[version[1]]:[])])];
+  // PR #821 merged owner-effective v3.1.0 into main, while this old AUTHORING branch
+  // still carries pre-merge normative metadata v3.0.1. The actual runtime may accept
+  // that single verified historical version; self-test overrides MUST NOT bypass
+  // prospective/draft activation checks or authorize v3.2.0.
+  const previouslyMergedOnMain=overrideText===undefined?["3.1.0"]:[];
+  return [...new Set([...historicalVersions,...previouslyMergedOnMain,...(previousValid?[predecessor[1]]:[]),...(approved?[version[1]]:[])])];
 }
 
 
