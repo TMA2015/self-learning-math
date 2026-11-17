@@ -59,10 +59,10 @@ function acceptedStandardVersions(overrideText) {
   assert(id && id[1]==="SLM-THPT-QUALITY-ONE","Single normative standard identity missing or changed");
   assert(version&&status,"Canonical standard version/status missing");
   const approved=status[1]==="OWNER_APPROVED_EFFECTIVE"; // Current candidate only, never an unmerged prospect.
-  // The canonical source records the *previous* owner-effective standard when
+  // The canonical status/activation line also holds the *previous* effective standard when
   // a newly approved amendment is still pending activation. Preserve that
   // predecessor without granting early acceptance to the prospective version.
-  const predecessor=raw.match(/^\*\*PREVIOUS_EFFECTIVE_STANDARD:\*\*\s*\x60(\d+\.\d+\.\d+)\s*\/\s*OWNER_APPROVED_EFFECTIVE\x60/m);
+  const predecessor=raw.match(/\*\*PREVIOUS_EFFECTIVE_STANDARD:\*\*\s*\x60(\d+\.\d+\.\d+)\s*\/\s*OWNER_APPROVED_EFFECTIVE\x60/m);
   const lineageApproved=["OWNER_APPROVED_EFFECTIVE","OWNER_APPROVED_EFFECTIVE_AFTER_MERGE"].includes(status[1]);
   const earlier=(a,b)=>{
     const x=a.split(".").map(Number),y=b.split(".").map(Number);
