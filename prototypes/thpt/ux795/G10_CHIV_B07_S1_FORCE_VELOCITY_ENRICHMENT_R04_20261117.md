@@ -12,7 +12,7 @@
 **NEW_SVG_PATH:** `docs/assets/images/thpt/THPT_G10_B07_FORCE_VELOCITY_REPRESENTATION_D5_R04.svg`
 **NEW_SVG_BLOB:** `a3701de109aecdf189dde470889ee61bed5ebeb4`
 **MOBILE_SVG_PATH:** `docs/assets/images/thpt/THPT_G10_B07_FORCE_VELOCITY_MOBILE_D5_R04.svg`
-**MOBILE_SVG_BLOB:** `95d0948600669282d11f0a5d4b00f10270f45233`
+**MOBILE_SVG_BLOB:** `fbe4f85f2cf94295a2165714a50d86c3930a0249`
 **PRESERVED_ORIGINAL_SVG_BLOB:** `55ec9add04cb79da2cad7703b3897271e5b3436a`
 **BASELINE_ACADEMIC_RECEIPT_R02:** `prototypes/thpt/ux795/G10_CHIV_B07_S1_OWNER_Q18_ENRICHMENT_DELTA_R02_20261116.md`
 **BASELINE_UI_RECEIPT_R03:** `prototypes/thpt/ux795/G10_CHIV_B07_HELP_LABELS_DELTA_A_R03_20261117.md`
@@ -27,7 +27,7 @@ The effective B07 published R03 had five genuine concept-first discoveries, four
 2. **Tab 2 §2.2.3:** the learner gets a reproducible four-step procedure: choose origin/application point → direction → scale/magnitude → units; distinguishes distance travelled from displacement. Preserves the two genuine S1 §2.1/§2.2 parent headings and all subordinate categories.
 3. **Worked example 3.2:** a new 6 m/s East versus 2 m/s West pair on parallel streets teaches actual velocity drawing with a single **1 cm ↔ 2 m/s** paper scale, lengths 3 cm and 1 cm, same line direction but opposite orientation and unequal magnitudes. Independent direct checks: 6/2=3; 2/2=1; two different velocities are not equal. This replaces one less applied but mathematically equivalent comparison example, maintaining exactly four worked examples.
 4. **Prerequisite discipline:** worked example 3.1 now says vectors are opposite in direction instead of using unary minus before B08; zero-vector §1.5 previews addition/subtraction explicitly as future B08, with the mathematical facts unchanged. No conditions about zero-vector angles or SBT conventions changed.
-5. **SVG geometry:** 20 N arrow from x120→404 is 284 units, 10 N arrow x120→262 is 142 units, exact 2:1. Wind arrow goes from (800,299) toward (618,168), physically northwest on the drawing. Desktop and portrait-mobile SVG versions have clear units, title/description/accessible alt/fallback caption; a responsive `<picture>` selects the phone variant at 600 px and below. On-screen arrow pixels are **not** a real paper-cm measurement.
+5. **SVG geometry:** 20 N arrow from x120→404 is 284 units, 10 N arrow x120→262 is 142 units, exact 2:1. Desktop wind arrow goes from (800,299) toward (618,168), physically northwest; phone variant goes from (382,565) toward (180,490), northwest without overlapping its speed label. Desktop and portrait-mobile SVG versions have clear units, title/description/accessible alt/fallback caption; a responsive `<picture>` selects the phone variant at 600 px and below. On-screen arrow pixels are **not** a real paper-cm measurement.
 6. **No false pedagogical independence:** the five original First Try questions remain formative and voluntary; no new item entered independent Readiness or Mastery. New physical application is instruction/one worked example, not extra authored assessed bank.
 
 ## Immutable safety and release gate
