@@ -16,7 +16,7 @@ const sources={
  7:"e1487ce01e81738228ae69d4d87cbdc56b5e0c69",
  8:"22e53396caf7753e813c492615a491e1f24cc9fd",
  9:"3d79a17e9ba39cd0f46077823800f5f38c73e313",
- 10:"ceaa76688e73274c9cf2d3116c41c6d4d0ac2726",
+ 10:"b389b3dc7175fb8969296c8104f1d64a0129db43",
  11:"2a1381689f66d1f8c752bdbf1c29a9ef49a4e073"
 };
 const blob=data=>{const b=Buffer.isBuffer(data)?data:Buffer.from(data);return crypto.createHash("sha1").update(Buffer.from("blob "+b.length+"\0")).update(b).digest("hex");};
@@ -68,8 +68,20 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
   const b09f=k=>b09.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(b09f("CSS_BASELINE_BLOB"),semField("R04_CSS_BLOB"),
     "B09 3+1 must extend immutable owner-accepted B08 CSS");
-  assert.equal(blob(cssFile),b09f("R03_CSS_BLOB"),
-    "B09 exact append-only CSS signed by academic Q18 receipt");
+  const cssWithB10=cssFile.toString("utf8");
+  const atB10=cssWithB10.indexOf("/* G10 Chapter IV B10 R01");
+  assert(atB10>0&&cssWithB10.indexOf("/* G10 Chapter IV B10 R01",atB10+1)<0,
+    "B10 semantic CSS must add exactly one scoped tail");
+  assert.equal(blob(cssWithB10.slice(0,atB10)),b09f("R03_CSS_BLOB"),
+    "B09 owner P2 approved CSS must be exact byte-immutable prefix");
+  const b10Receipt=fs.readFileSync(root+
+   "/prototypes/thpt/ux795/G10_CHIV_B10_S1_PED_SINGLE_CANONICAL_Q18_R01_20261118.md","utf8");
+  const b10f=k=>b10Receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(blob(cssFile),b10f("CSS_R01_SCOPED_B10_BLOB"),
+    "B10 CSS source hash must be exact and signed");
+  assert(cssWithB10.slice(atB10).includes("THPT-G10-CHIV-TRY16")&&
+   !cssWithB10.slice(atB10).includes("THPT-G10-CHIV-TRY11"),
+    "B10 scoped CSS cannot recolor owner P2 B09");
   const cssTextR05=cssFile.toString("utf8"),markerR05="/* G10 ChIV B07 R05";
   const b09Marker="/* G10 Chapter IV B09 R03",b09Pos=cssTextR05.indexOf(b09Marker);
   assert(b09Pos>0&&cssTextR05.indexOf(b09Marker,b09Pos+1)===-1,
@@ -171,10 +183,10 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
      assert((await blocks.nth(0).locator(":scope > h3").allInnerTexts()).every((v,i)=>v.trim().startsWith("1."+(i+1)+". ")),
       where+" discovery headings are visual-only numbered");
      const examples=await blocks.nth(2).locator(":scope > h3").allInnerTexts();
-     assert.equal(examples.length,[7,8,9].includes(lesson)?4:3,where+" owner-scoped B07/B08 and B09 S1 have four worked examples");
-     assert(examples.every((v,i)=>v.trim().startsWith("3."+(i+1)+". Ví dụ "+(i+1)+([7,8].includes(lesson)?" —":". "))),
+     assert.equal(examples.length,[7,8,9,10].includes(lesson)?4:3,where+" owner-scoped B07/B08 and B09 S1 have four worked examples");
+     assert(examples.every((v,i)=>v.trim().startsWith("3."+(i+1)+". Ví dụ "+(i+1)+([7,8,10].includes(lesson)?" —":". "))),
       where+" numbered visual example headings");
-     assert.equal(await blocks.nth(2).locator(".thpt-g10-example-solution").count(),[7,8,9].includes(lesson)?4:3,
+     assert.equal(await blocks.nth(2).locator(".thpt-g10-example-solution").count(),[7,8,9,10].includes(lesson)?4:3,
       where+" original or S1-enriched solutions grouped in Golden panel");
      assert.equal(await article.locator(".thpt-r4-lead").count(),0,where+" no redundant introduction");
      assert.equal(await article.locator(".thpt-r4-footnote").count(),1,where+" only existing source footnote retained");
@@ -209,7 +221,7 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
       where+" First Try summaries collapsed and normal-size text");
      assert(state.tips.every(x=>!x.open),where+" D6 closed");
      assert(state.cells.every(px=>Math.abs(px-state.body)<.6),where+" table fonts equal body");
-     assert(state.solutions.every(x=>x.bg!=="rgba(0, 0, 0, 0)"&&x.strong===([7,8].includes(lesson)?"Lời giải.":"Giải:")),
+     assert(state.solutions.every(x=>x.bg!=="rgba(0, 0, 0, 0)"&&x.strong===([7,8].includes(lesson)?"Lời giải.":lesson===10?"Lời giải:":"Giải:")),
       where+" solution panel contains unchanged mathematical solution");
      assert(state.overflow<=3,where+" no whole-page horizontal overflow");
      if(lesson===7){
