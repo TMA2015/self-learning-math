@@ -13,7 +13,7 @@ const root=path.resolve(__dirname,"..");
 const base=process.env.SLM_CHIV_URL||"http://127.0.0.1:8765";
 const goldenCss="44442773ac31eb1a46f0cab699a7d2c7974a5f37";
 const sources={
- 7:"57f71caa84efdaab898862ade603121506e9149a",
+ 7:"4640d5beeb2c43c2e65a4a58e400cf99a4e6efd9",
  8:"9cf96a0e81bea14903a64385359f738145e5a048",
  9:"2529b915e4089862e1a48e685ba5dc88d5450558",
  10:"ceaa76688e73274c9cf2d3116c41c6d4d0ac2726",
@@ -193,6 +193,13 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
        await physicalFig.evaluate(async el=>{if(el.decode)await el.decode();});
        assert(await physicalFig.evaluate(el=>el.complete&&el.naturalWidth>0),
         where+" B07 new physical-vector figure decodes and is accessible");
+       const selectedFigure=await physicalFig.evaluate(el=>el.currentSrc);
+       assert(selectedFigure.includes(width<=600?
+         "THPT_G10_B07_FORCE_VELOCITY_MOBILE_D5_R04.svg":
+         "THPT_G10_B07_FORCE_VELOCITY_REPRESENTATION_D5_R04.svg"),
+        where+" responsive picture selects correct phone/desktop source");
+       assert.equal(await blocks.nth(0).locator('picture source[media="(max-width: 600px)"]').count(),1,
+        where+" B07 mobile SVG fallback exists");
        const firstText=await blocks.nth(0).innerText();
        await labels.nth(1).click();
        const formalText=await blocks.nth(1).innerText();
