@@ -311,3 +311,27 @@ Date 17/11/2026. One standard only SLM-THPT-QUALITY-ONE v3.1.0 Q01–Q18. Q18 au
 | Website, assessment runtime, independent TOPIC_READINESS, Firebase/Skill Mastery, merge/deploy | NOT CLAIMED; NO MERGE/DEPLOY |
 
 R03 P2 learner issues for CĐ01–02,07–09,12,15,22 and smaller P2 associated with other Topics remain open in the separate ledger; targeted P1 remediation does not close them. Existing original SGK/SBT PDFs were not reopened page-by-page in R08; prior historical S1 receipts are cited without inventing new visual checks. Before claiming CONTENT_READY for any candidate, the owner must resolve active canonical item/version identity, exact SOURCE_BLOB and source-level authoring receipts, then one V2 handoff + ready manifest + REGISTER aligned on that SHA, with P0/P1 zero under the one original standard. Preserve previous immutable snapshots and review scope; no RELEASE action.
+
+---
+
+<!-- TOPIC_R09_EIGHT_P2_SHA_LOCK_20261117 -->
+## R09 · Eight remaining learner-visible P2 deltas, new exact-source targeted AUTHOR_SELF_QA
+
+**Source 17/11/2026:** [Draft PR #895](https://github.com/TMA2015/self-learning-math/pull/895), head **eb4235720734d460926c96714035a5b102f55773**, branch authoring/thpt-topic-p2-editorial-8topics-r01-20261117. R09 ledger: prototypes/thpt/review-packets/Temp_THPT_8TOPIC_P2_EDITORIAL_SOURCE_LOCKED_AUTHOR_AUDIT_R09_20261117.md. New candidates and receipts are separate Temp_* files; original signed source/receipts and original Q15 owner remain immutable. All eight Q18 checks use owner-approved AUTHOR_SELF_VERIFIED on changed scope, not full independent NotebookLM approval.
+
+| CĐ | Old signed learner SOURCE_BLOB | New R09 candidate SOURCE_BLOB | Targeted Q18 receipt Git blob | Scope / outstanding |
+|---|---|---|---|---|
+| 01 | d4eafd811066997ee64de70a49c5da4a7ff26dcd | dc6e8366e912953f6fd6e1adfb641c601a99e538 | bfa7f23ca7bd16d082222bfa14d5b6c959a597d4 | Make sets intro self-contained (L181) |
+| 02 | eb5a01b50262dc4b151b3915f5a5e4b436432374 | d1c05e91d3ca21d28981be404cbca23fb5937bb2 | 0117391ecb1ddccc1d2d067f3e9b2a819f30b56a | Real Bài17 rubric D6, not raw W01 |
+| 07 | 22609934f525e6e9c2c8f1513e439c3cd4d54221 | 3e49d4032d6274c8992cee26d50d0de1fd768d29 | 5734640f9948659cebafa52e0fcdd61d85be1460 | Standalone index explanation + H2 Knowledge page |
+| 08 | a33d1e6a20dba1dc7861097e231906aff2938c02 | 3f1f55d1a05eece7de25508318e8ed6c2cecb621 | f86a0dfc1a7ab73533395f19428368aeeabac676 | Derive lim -1; explicit jump comparison; no early 'hình này' |
+| 09 | 8222107d717f7d02b845f79ccdd154e8dbe71cc6 | 252c4719396b3692ea6cf62f1845c0874b666a8f | ba072154f7fc60ae82952f8060f0cb17184cb6d6 | Signed metres/seconds in v=s'; real Bài52 instead of raw P15 |
+| 12 | e74f32b1092d571af0091174a55104e7d3bec5b5 | d4724b24f4dba4b45a2198860e2db8e2f472d7dc | abe40c57320889533301bc41652a67b8584561f5 | Remove visible R03 learner-first release marker in title |
+| 15 | 581ff0b0c019a705d36f306d7d5b0db38d185c0b | 98f911d70d6e69fed5747c4f4865fa1a0942f3d1 | a386670f51f70ba3f207a9bf98e34727d31cd3d0 | Seven double labels 'Câu/Bài' cleaned; 8 question-only mathematical stems and canonical IDs same |
+| 22 | b5713f0c2a1aa6a9fa7a7d63f6e6878bdf8d338b | 58619b8b613b382fbdd4874670bdc24d54ac1c62 | 559f0e875d7687e7410b60a8304ceeb18572224e | Boxplot/n=20 grouped figure next to actual matching explanation, seven Mastery suffixes removed; separate S1 PDF-index P2 remains OPEN |
+
+**Proof beyond lint:** Direct old/new source diff, unchanged ordered item IDs/disclosure count, no Practice question/key/rubric mathematical change. CĐ01/02/07/08 have fully byte-identical Practice+Selfcheck; CĐ09 only one D6 in Practice changed (real Bài52, source mathematical outcome matched) and Selfcheck unchanged; CĐ12 only title; CĐ15 seven source-label prefixes removed, selfcheck mathematical payloads exact; CĐ22 two figures moved with exact same SVG refs and mathematical terms, seven rubric technical suffixes changed without changing rubric criteria, entire public selfcheck unchanged. CĐ08 jump SVG source matched left limit 2 and right 1; CĐ22 figures matched sample 1,2,2,4,5,8,30 and grouped-frequency counts 4,6,8,2 with total 20.
+
+**Critical cross-branch asset QA:** eight candidate learner files reference 24 relative SVG images. The branch was created from main and initially lacked 18 original Topic SVGs; all 18 were copied byte-identically from original authoring branches, and all 24 were read back from exact candidate branch with valid unchanged SVG blobs. No new diagram mathematics or website/browser visual QA is claimed.
+
+**Verdict:** 8/8 AFFECTED_P2_AUTHOR_SELF_QA_PASS on these proposed sources, but **0/8 new CONTENT_READY**. No active global source-bank owner change; V2/ready/REGISTER and RELEASE/AP gates remain HOLD. R08's original 11/11 P1 candidate delta QA remains source-locked on its own branches, untouched by R09. Remaining P2: CĐ18/19 technical readability within their separate draft candidates, CĐ22 historical S1 original PDF index, plus any new issue found in future release/browser QA. No merge/deploy, private RD1/Final Submit/Skill Mastery or Firebase change.
