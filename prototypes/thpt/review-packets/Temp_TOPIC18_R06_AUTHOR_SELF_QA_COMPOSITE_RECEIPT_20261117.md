@@ -1,4 +1,4 @@
-# CĐ18 R06 · COMPOSITE SOURCE-LOCKED AUTHOR_SELF_QA_RECEIPT · 17/11/2026
+# CĐ18 · SOURCE-LOCKED AUTHOR_SELF_QA — nội dung vectơ đã chỉnh ngay trên nguồn hiện hành · 17/11/2026
 
 AUTHOR_SELF_QA_RECEIPT: COMPOSITE_WITH_IMMUTABLE_BASELINE_AND_VERIFIED_TARGETED_DELTAS
 PACKET_ID: THPT-TOPIC18-OXYZ-FULL-R06-20261117
@@ -10,8 +10,8 @@ RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R06_P2_WRITTEN_RUBRIC_CLARITY_CANDIDATE_20261117.md
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R06_P2_WRITTEN_RUBRIC_CLARITY_CANDIDATE_20261117.md
-SOURCE_BLOB: 331c31e124179b31731f9caca2669eaa8948bcbd
-ACADEMIC_SOURCE_BLOB: 331c31e124179b31731f9caca2669eaa8948bcbd
+SOURCE_BLOB: f8c6a52c84fecd0dd63dae60413cfbe4327f54b5
+ACADEMIC_SOURCE_BLOB: f8c6a52c84fecd0dd63dae60413cfbe4327f54b5
 FROZEN_R04_READY_SOURCE_BLOB: 41daf40a3b639a3ef35e129099525137a05b1848
 FROZEN_R04_FULL_AUTHOR_Q18_RECEIPT_BLOB: 5262fd454346801b050b5eb4f3dc407bc99d3530
 R05_GEOMETRIC_MODEL_SOURCE_BLOB: af8a3529398e5f876d5c979b0d5d26df3519d6ac
@@ -58,3 +58,12 @@ ASSESSMENT_Q16: Public Topic replay is only CLIENT_SELF_CHECK_NO_MASTERY, never 
 
 AUTHOR_SIGNOFF: CHATGPT_AUTHORING_TOP18_R06_40OUTCOME_247CANONICAL_R04FULL_PLUS_R05MATHEMATICAL_R06EDITORIAL_COMPOSITE_20261117
 VERDICT: AFFECTED_Q01_Q18_AUTHOR_SELF_VERIFIED_WITH_HISTORICAL_BASELINE; HANDOFF_PACKAGING_PENDING; NEW_CONTENT_READY_NOT_CLAIMED; NO_MERGE_NO_DEPLOY.
+
+
+## Same-file vector-notation correction — Q03/Q04/Q07/Q13 source-scoped author QA
+
+The previous source R06 (Git blob 331c31e124179b31731f9caca2669eaa8948bcbd) showed unarrowed AB+BC=AC in a vector sum explanation. Read literally as segment lengths, this is generally false. In the **existing learner source path**, the affected section TOP18-O03 now explicitly teaches `\\overrightarrow{AB}+\\overrightarrow{BC}=\\overrightarrow{AC}` using MathJax and explains the endpoints. In rectangular/parallelepiped ABCD.A′B′C′D′, `\\overrightarrow{AD}=\\overrightarrow{BC}` and `\\overrightarrow{AA'}=\\overrightarrow{CC'}`; hence `\\overrightarrow{AB}+\\overrightarrow{AD}+\\overrightarrow{AA'}=\\overrightarrow{AC'}`. This is correct vector addition (not length sums); the three-step reasoning now directly supports the illustration and outcome.
+
+**Source-specific math check:** choose non-collinear adjacent vectors u=(1,0,0), v=(0,2,0), w=(0,0,3): u+v+w=(1,2,3) equals AC′, whereas |u|+|v|+|w|=6 is not |AC′|=sqrt(14). This exemplifies why explicit arrows matter. Only the learner explanation, teaching Example prompt and teaching worked solution in 1.3 changed. The canonical first try THPT-TOP18-T03, its reveal/answer and all Practice/Written/selfcheck text, rubric scores, 259 public markers, 247 reveal blocks and SVG assets stay byte-equivalent. Source delta is **DELTA_C_ACADEMIC_MATERIAL** for mathematical notation/meaning, targeted `AUTHOR_SELF_VERIFIED`; does not imply independent NotebookLM or full Q01–Q18 new PASS. Original R04 and R06 receipts remain recoverable via immutable Git history.
+
+**Gate:** source current is f8c6a52c84fecd0dd63dae60413cfbe4327f54b5, but prior source-only READY R06 snapshot does not transfer; `BLOCKED_BY_AUTHORING` until current A1/V2/ready/REGISTER and HEAD QA align. No merge/deploy, no private RD1 or Mastery.
