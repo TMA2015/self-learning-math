@@ -177,10 +177,9 @@ for(const [lesson,row] of rows){
     "B08 must not distort prerequisites of parallelogram");
    assert(formal.includes("Điểm đầu")||formal.includes("điểm đầu"),
     "B08 must explicitly teach orientation of result vector");
-   assert(formal.includes("giao hoán")&&formal.includes("kết hợp")&&
-     formal.includes("vectơ-không")&&formal.includes("cùng độ dài, ngược hướng")&&
-     formal.includes("tổng")&&formal.includes("trung điểm")&&
-     formal.includes("trọng tâm"),
+   const mathText=formal.toLocaleLowerCase("vi");
+   assert(["giao hoán","kết hợp","vectơ-không","cùng độ dài, ngược hướng",
+      "tổng","trung điểm","trọng tâm"].every(token=>mathText.includes(token)),
      "B08 official math conditions and S1 outcome family must not disappear");
    const examples=source.slice(source.indexOf('=== "Ví dụ"'),source.indexOf('=== "Lỗi thường gặp"'));
    assert(examples.includes(String.raw`\overrightarrow{AM}+\overrightarrow{AM}`)&&
