@@ -274,3 +274,40 @@ R06 documented CĐ20/CĐ21. R07 records seven more verified corrections, all sou
 **QA method:** for CĐ03–06, exact old/new Git source line-diff excluding unrendered metadata, detect only 11/10/16/15 changed lines respectively (CĐ04 9 D6+Q03 formula); every D6 corrected exercise number was resolved to actual Practice heading and mathematical exercise stem in the same file. In CĐ06, checking substantive learner route rather than label alone revealed overbroad references in O10 and O14; the candidate was **amended once more**, then refetched and reviewed before Q18 receipt. All four Practice + Selfcheck sections are byte-identical with original signed sources, item IDs unchanged; original Knowledge First Tries have no independent canonical item marker to duplicate. CĐ10–11: exact 9/4 editorial lines changed; original ID sequence, visible Practice stems, all MathJax expressions and disclosures identical. CĐ18: exactly one changed original mathematical entry paragraph, recomputed plane normal·direction=2≠0, unique intersection at (2,1,3), existing SVG description checked.
 
 **Scope-limited verdict:** AUTHOR_Q08/PED6 or AUTHOR_Q03/PED_DELTA_VERIFIED for CĐ03–06/10–11/18, in addition to CĐ20/21 from R06. **Overall: 11/11 original P1 Topics have candidates; 9/11 targeted source delta checks now have AUTHOR_SELF_QA_RECEIPT on exact SHA; CĐ13 and CĐ19 still need targeted reviews/active canonical reconciliation. Still 0/11 new CONTENT_READY** without source-consistent active bank, one V2 handoff, ready manifest and REGISTER plus remaining gates; no merge/deploy.
+
+
+---
+
+<!-- TOPIC_R08_ALL_11_TARGETED_SOURCE_QA_20261117 -->
+## R08 · All eleven P1 Topic deltas have exact-source-targeted AUTHOR_SELF_QA, not CONTENT_READY
+
+Date 17/11/2026. One standard only SLM-THPT-QUALITY-ONE v3.1.0 Q01–Q18. Q18 author self-verification on an exact source is valid with substantive evidence; this is NOT an independent NotebookLM full-Topic PASS. R01–R07 hold the original 22-topic QA, 440 outcomes and previously pinned source/receipt IDs. Immutable historical signed sources stay intact.
+
+### CĐ13 R04 – 16-outcome PED and actual SVG correction
+
+- Draft [#893](https://github.com/TMA2015/self-learning-math/pull/893); latest learner source Git blob **7837fa88ba6376f873bd9f3bc3cbea134b3a838d**; new targeted author Q18 receipt Git blob **744a3b4c3b950b5b122d8a72e8a6a9702313a8a0**.
+- Reviewed all sixteen Knowledge outcomes: natural motivation, concept and conditions, worked example and correct mathematics, First Try with optional disclosure, local D6. Same original 52 Practice item stems/solutions/rubrics, 16 public selfcheck stems, same IDs, MathJax expressions and disclosure counts. **Practice and Selfcheck intro text DID change; their entire sections are not byte-identical**.
+- Found a real Q07 mismatch in the first R04 candidate: O13 figure alt/read guide described A→B coordinate decomposition, but source SVG B06 showed box addition. Corrected image to real SVG B08 source Git blob **13445da079245a556a08e7a57069d9987097a0be** and explained that this single-vector diagram does not depict the angle between two distinct vectors; the O13 dot product is what verifies the angle. B06 still fits O11. Four unique SVG sources fetched and inspected by title/desc; no browser/render claim.
+- Original G10 ChIV source [Draft #750](https://github.com/TMA2015/self-learning-math/pull/750) still open and unmerged. Cross-branch S1/shared canonical owner, active V2/ready/REGISTER remain **HOLD**, not CONTENT_READY.
+
+### CĐ19 R10 – product rule, T02 version and complete source-derived Q15 mapping
+
+- Draft [#883](https://github.com/TMA2015/self-learning-math/pull/883); latest learner Git blob **37612a3fb8d804efa6dd4f65ddd22d90bf2772ae**; new targeted author Q18 receipt Git blob **440f0c17f1a4f6b813e8627f29626248ba7f5684**; full source-derived Q15 candidate 56-item matrix Git blob **448c913a0263cdc537a8e33a39bcdd8052ec3372**.
+- Source old R09→R10 line-LCS had 23 local change blocks in Knowledge: the condition for product rule m×n explicitly requires every first-step choice to offer exactly n second-step choices; if counts differ, add branch totals. Changed T02 FIRST_TRY stem gives a more explicit 4-shirts×3-badges gift question, unchanged numeric answer 12; D6 now maps to an actual four-row by three-column table. Its canonical ID and outcome remain, **only T02 CONTENT_VERSION changes TOP19-R03→TOP19-R10**; all 13 other T versions unchanged.
+- Independently recomputed 14 Knowledge example results (addition, counting codes, permutations, combinations, binomial coefficients/signs, growth approximation and constant terms); mathematical checks PASS on affected lesson narratives. Both original SVGs fetched and checked: 4+3=7 versus 4×3=12, separate tree 2×3=6. Source from the Luyện tập heading to end is **byte-identical** to original R09 including every Practice key/rubric and seven public question-only selfcheck replays.
+- Exact 56 unique IDs verified against signed R09 author metadata: 25 original G10 SGK shared-bank items, 14 T, 14 P and 3 W, plus seven selfcheck reference placements. G10 SGK canonical bank remains original source blob 2ae62fada28913ec336b3507684408a1e05a3232, not copied to create a new owner. The R10 Q15 candidate is a proposed source and is **NOT YET GLOBAL ACTIVE REGISTER**.
+
+### Current 22-topic comprehensive QA / 11-topic remediation checkpoint
+
+| Evidence gate | Verified present state |
+|---|---|
+| Source-scope audit | 22/22 Topics, 440 registered outcomes in R03; previous source/receipt parity and P2 ledger preserved |
+| Original newly found P1 Topic defects | 11 Topics: CĐ03–06, 10–11, 13, 18–21 |
+| Topics with real new learner source candidates and Draft PRs | **11/11** |
+| Topics with exact source-SHA-bound targeted math/PED/Q15/Q18 author self-QA receipt | **11/11** (R06 CĐ20/21; R07 CĐ03–06,10/11,18; R08 CĐ13/19) |
+| Targeted source delta verdict | AFFECTED_DELTA_AUTHOR_SELF_QA_PASS, NOT a blanket 22/22 Academic/PED PASS |
+| Canonical active bank/source owner/V2/ready/REGISTER synchronization | **HOLD**, CĐ13 additional dependency G10 PR #750 |
+| New source CONTENT_READY promotions | **0/11** |
+| Website, assessment runtime, independent TOPIC_READINESS, Firebase/Skill Mastery, merge/deploy | NOT CLAIMED; NO MERGE/DEPLOY |
+
+R03 P2 learner issues for CĐ01–02,07–09,12,15,22 and smaller P2 associated with other Topics remain open in the separate ledger; targeted P1 remediation does not close them. Existing original SGK/SBT PDFs were not reopened page-by-page in R08; prior historical S1 receipts are cited without inventing new visual checks. Before claiming CONTENT_READY for any candidate, the owner must resolve active canonical item/version identity, exact SOURCE_BLOB and source-level authoring receipts, then one V2 handoff + ready manifest + REGISTER aligned on that SHA, with P0/P1 zero under the one original standard. Preserve previous immutable snapshots and review scope; no RELEASE action.
