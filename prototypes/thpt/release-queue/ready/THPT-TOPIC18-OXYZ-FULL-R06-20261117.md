@@ -7,8 +7,8 @@ QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: BLOCKED_BY_AUTHORING
-SOURCE_COMMIT: 3e7eae4766ea62cbe0590ba24cbb3c1242f11a11
+STATE: CONTENT_READY
+SOURCE_COMMIT: 02b0d83e4c38059f122379e397bb28c9efb395af
 CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
@@ -33,7 +33,7 @@ P0: 0
 P1: 0
 P2: 1
 P2_NOTE: SBT_REFERENCE_GAP_DOCUMENTED_G12_B14_PRINTED_P25
-BLOCKERS: CURRENT_SOURCE_HEAD_QA_AND_REGISTER_CONFIRMATION_PENDING
+BLOCKERS: NONE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
@@ -90,3 +90,6 @@ This distinct R06 packet supersedes original accepted R04 SOURCE_BLOB `41daf40a3
 ## CĐ18 current source quality after vector edit
 
 The one learner source was directly repaired at Knowledge TOP18-O03: vector arrow notation and box-path proof now distinguish displacement sums from segment-length sums. No canonical first-try, Practice, Written, Selfcheck, public replay, answer, rubric, figure or item ID has changed. Updated source QA/self receipt and V2 now match current edited content. Retain `BLOCKED_BY_AUTHORING` until final current HEAD and REGISTER validation; previous R06 source-only CONTENT_READY remains historically valid only at its old Git blob, not for new current source. No merge/deploy.
+
+
+**Current AUTHORING source-specific verdict after QA correction:** The only effective learner source is the corrected file already named in ACADEMIC_SOURCE_PATH. All affected academic/PED explanations were read and checked; question stems, answers, rubric and public selfcheck were parity-checked. This READY concerns **authoring source handoff only**. The CI source-lock check on this final HEAD and website/runtime/AP gates are separate and must PASS before RELEASE, merger or deployment; this paragraph grants no such authority.
