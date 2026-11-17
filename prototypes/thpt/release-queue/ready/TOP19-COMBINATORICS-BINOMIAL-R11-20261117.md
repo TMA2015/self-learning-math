@@ -16,12 +16,12 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 CURRENT_PR: #897 — AUTHORING DRAFT source-only, no website permission
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R11_P2_CANONICAL_LABEL_LEARNER_CLARITY_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: 32721032973866087dcc4b8981e33d4bf3391c8d
+ACADEMIC_SOURCE_BLOB: 5546204168eb3c3402b21af9ca1b9d08b118c378
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC19_R11_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md — AUTHOR_SELF_VERIFIED composite of immutable R09 + targeted R10/R11; NOT independent NotebookLM
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC19_R11_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md
-REVIEW_RECEIPT_BLOB: ad08a2996f25154d83a42b3e44fe591156960cdb
+REVIEW_RECEIPT_BLOB: 0424dc58b6662fa214ea1f2a0835d923b0843ba4
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/TOP19-COMBINATORICS-BINOMIAL-R11-20261117_HANDOFF_V2.md
-AUTHOR_HANDOFF_BLOB: a495fd06732502caf04cef95fe820160e3c4f72b
+AUTHOR_HANDOFF_BLOB: 6f604cb48c92c414e8aa81232d35b7ed5aa4e4ff
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 BLOCKERS: NONE
@@ -34,9 +34,9 @@ RELEASE_AUTHORIZATION: NO
 RELEASE_STATUS: NOT_INTEGRATED_NOT_PUBLISHED
 
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_56_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_A1_A7_BLOB: d0a24f0c009aac22932b4f51a3328d03bde6723d
+AUTHOR_A1_A7_BLOB: e08edfe43800b6416997920af6aa30e6b8c08ba1
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_56_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_METADATA_BLOB: d0a24f0c009aac22932b4f51a3328d03bde6723d
+AUTHOR_METADATA_BLOB: e08edfe43800b6416997920af6aa30e6b8c08ba1
 
 ## R09 IMMUTABLE FULL MATH/PED BASELINE (inherited)
 
@@ -105,3 +105,6 @@ A single sentence in learner optional answer T02 was edited in the *existing* au
 
 
 **Final source-only custody after workflow state correction:** This document uses the required READY state because its edited learner source passed affected-scope academic/PED author review with unchanged question/key/rubric integrity. No separate student source, no independent full-topic new review or website release is implied. Any previous temporary HOLD wording was superseded by the latest STATE/BLOCKERS fields. Release/AP/device CI and explicit owner authorization remain separate hard gates.
+
+
+**Additional presentation QA:** learner Knowledge factorial/arrangements/combination math now explicit TeX and literal calculator labels stay clear. All 56 original canonical IDs, 7 question-only public replays, Practice, Written and scoring stay identical. Source-only authoring intake; actual site browser/AP QA and owner's release decision remain separate.
