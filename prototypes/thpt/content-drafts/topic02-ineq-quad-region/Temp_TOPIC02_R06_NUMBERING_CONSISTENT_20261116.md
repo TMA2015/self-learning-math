@@ -198,7 +198,7 @@ Tìm m để x²−2mx+1≥0 mọi x.
 
 Δ=4(m²−1)≤0 ⇒ m∈[−1,1].
 
-Nếu lấy cả biên trong bài >0, kiểm x tại nghiệm kép và loại; luyện Written W01.
+Nếu đang xét dấu nghiêm \(>0\) mà vẫn nhận biên \(\Delta=0\), hãy thử ngay tại nghiệm kép: giá trị tam thức bằng 0 nên phải loại. Ôn lại bằng Bài 17, phần (b)–(c), trong Luyện tập — bài này yêu cầu giải thích rõ vì sao \(m=2\) không được nhận.
 
 </details>
 
