@@ -275,7 +275,7 @@ for(const [tag,rec]of Object.entries(transfer)){
     assert(example.includes("### 3.4. Ví dụ 4 — Qua sông")&&
      example.includes("96")&&example.includes("THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg")&&
      example.includes("THPT_G10_B10_RIVER_VELOCITY_MOBILE_D5_R01.svg")&&
-     example.includes("**Lời giải:**"),"B10 river worked D2 must use exact-data desktop/mobile image and verified solution");
+     example.includes("**Giải:**"),"B10 river worked D2 must use exact-data desktop/mobile image and Golden solution renderer key");
    }else assert(modelB.includes("#### Ví dụ có hướng dẫn — "+rec.ex),
      "Transfer worked method D2 "+tag);
    const D5=tag==="RIVER"?"THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg":
