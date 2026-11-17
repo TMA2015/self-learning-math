@@ -14,7 +14,7 @@ const base=process.env.SLM_CHIV_URL||"http://127.0.0.1:8765";
 const goldenCss="44442773ac31eb1a46f0cab699a7d2c7974a5f37";
 const sources={
  7:"e1487ce01e81738228ae69d4d87cbdc56b5e0c69",
- 8:"9cf96a0e81bea14903a64385359f738145e5a048",
+ 8:"5a6d33411b595547c12d1d665af1e48b1cd0e9eb",
  9:"2529b915e4089862e1a48e685ba5dc88d5450558",
  10:"ceaa76688e73274c9cf2d3116c41c6d4d0ac2726",
  11:"2a1381689f66d1f8c752bdbf1c29a9ef49a4e073"
@@ -58,9 +58,21 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
   const r05field=k=>r05.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(r05field("BASELINE_CSS_GIT_BLOB"),b06field("CANDIDATE_CSS_GIT_BLOB"),
     "B07 R05 must extend accepted CSS without changing historical source");
-  assert.equal(blob(cssFile),r05field("R05_CSS_GIT_BLOB"),
-    "B07 R05 exact scoped CSS SHA");
+  const semantic=fs.readFileSync(root+
+    "/prototypes/thpt/ux795/G10_CHIV_B08_SEMANTIC_3PLUS1_DELTA_R04_20261117.md","utf8");
+  const semField=k=>semantic.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(semField("BASELINE_R05_B07_CSS_BLOB"),r05field("R05_CSS_GIT_BLOB"),
+    "B08 must preserve exact P2-accepted B07 CSS");
+  assert.equal(blob(cssFile),semField("R04_CSS_BLOB"),
+    "B08 exact 3+1 CSS Git blob signed by R04 receipt");
   const cssTextR05=cssFile.toString("utf8"),markerR05="/* G10 ChIV B07 R05";
+  const b08Marker="/* G10 ChIV B08 R04",b08Start=cssTextR05.indexOf(b08Marker);
+  assert(b08Start>0&&cssTextR05.indexOf(b08Marker,b08Start+1)===-1,
+    "B08 only one scoped 3+1 CSS appendix");
+  assert.equal(blob(cssTextR05.slice(0,b08Start-1)),r05field("R05_CSS_GIT_BLOB"),
+    "B01–B07 CSS accepted prefix must remain byte-for-byte exact");
+  assert(cssTextR05.includes(':has([data-thpt-first-try-id="THPT-G10-CHIV-TRY06"])'),
+    "B08 CSS must target B08 only");
   const cutR05=cssTextR05.indexOf(markerR05);
   assert(cutR05>0&&cssTextR05.indexOf(markerR05,cutR05+1)===-1,"B07 CSS marker one occurrence");
   assert.equal(blob(cssTextR05.slice(0,cutR05-1)),b06field("CANDIDATE_CSS_GIT_BLOB"),
@@ -264,6 +276,34 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
        await page.keyboard.press("ArrowLeft");assert(await radios.nth(0).isChecked(),where+" B07 arrow left returns to tab 1");
      }
      if(lesson===8){
+       // Owner-approved X-F.3 3+1 semantic test: exact actual B08 DOM and light/slate palette.
+       const knowledge=blocks.nth(1);
+       const definitions=knowledge.locator(".thpt-r4-knowledge-conclusion.thpt-r4-concept-card");
+       const rules=knowledge.locator(".thpt-r4-knowledge-conclusion.thpt-r4-rule-card");
+       const recaps=knowledge.locator(".thpt-r4-knowledge-conclusion:not(.thpt-r4-concept-card):not(.thpt-r4-rule-card)");
+       const formulas=knowledge.locator(".thpt-r4-key-formula");
+       assert.deepEqual([await definitions.count(),await rules.count(),await recaps.count(),await formulas.count()],
+         [3,4,1,2],where+" B08 correct mathematical 3+1 semantic roles");
+       assert((await definitions.allInnerTexts()).some(t=>t.includes("Định nghĩa — Tổng hai vectơ"))&&
+         (await rules.allInnerTexts()).some(t=>t.includes("Quy tắc ba điểm"))&&
+         (await definitions.allInnerTexts()).some(t=>t.includes("Định nghĩa — Vectơ đối")),
+         where+" definition distinct from rule, no heading-keyword shortcut");
+       assert.equal(await knowledge.locator(".thpt-r4-knowledge-conclusion strong").filter({hasText:/Ghi nhớ/}).count(),
+         0,where+" local reminders cannot be mistaken for mandatory colored recap");
+       await labels.nth(1).click();
+       for(const scheme of ["default","slate"]){
+        await page.evaluate(s=>document.body.setAttribute("data-md-color-scheme",s),scheme);
+        const backgrounds=await Promise.all([definitions.first(),rules.first(),recaps.first(),formulas.first()]
+         .map(el=>el.evaluate(x=>getComputedStyle(x).backgroundColor)));
+        assert.deepEqual(backgrounds,scheme==="slate"?
+         ["rgb(25, 61, 54)","rgb(32, 53, 81)","rgb(74, 58, 37)","rgba(0, 0, 0, 0)"]:
+         ["rgb(232, 247, 242)","rgb(234, 241, 252)","rgb(255, 243, 213)","rgba(0, 0, 0, 0)"],
+         where+" 3+1 computed colors must be meaningfully distinct in "+scheme);
+       }
+       await page.evaluate(()=>document.body.removeAttribute("data-md-color-scheme"));
+       await labels.nth(0).click();
+       // Source R04 is pedagogical Delta C, so do not treat R03 exact display count as invariant.
+       // The original six equations and any new R04 formula must render without orphan TeX.
        // Owner 17/11: source-locked six display equations must become Arithmatex
        // blocks, not raw escaped TeX inserted into ordinary Markdown paragraphs.
        assert.equal(await blocks.nth(1).locator("div.arithmatex").count(),1,
