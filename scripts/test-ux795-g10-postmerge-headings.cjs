@@ -82,8 +82,20 @@ for(let n=1;n<=27;n++){
   const receipt=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHIV_B08_S1_OWNER_Q18_ENRICHMENT_DELTA_R02_20261116.md"),"utf8");
   const field=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
-  assert.equal(blob(fs.readFileSync(path.join(root,"docs",route+".md"))),field("R02_CANDIDATE_SOURCE_BLOB"),
-   "B08 latest source SHA must match immutable Q18 receipt");
+  const visualFile=path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B08_MATHJAX_DISPLAY_DELTA_A_R03_20261117.md");
+  let expected=field("R02_CANDIDATE_SOURCE_BLOB");
+  if(fs.existsSync(visualFile)){
+   const delta=fs.readFileSync(visualFile,"utf8");
+   const visualField=k=>delta.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(visualField("R02_PUBLISHED_SOURCE_BLOB"),expected,
+    "B08 R03 UI-only MathJax repair must extend exact published R02 academic source");
+   assert(delta.includes("DELTA_A_UI")&&delta.includes("nine blank lines"),
+    "B08 R03 receipt requires precise display-only evidence");
+   expected=visualField("R03_CANDIDATE_SOURCE_BLOB");
+  }
+  assert.equal(blob(fs.readFileSync(path.join(root,"docs",route+".md"))),expected,
+   "B08 current source must match immutable R02→R03 source-locked receipts");
   const first=markdown.indexOf('=== "Khám phá kiến thức"'),second=markdown.indexOf('=== "Kiến thức SGK"');
   assert(first>=0&&second>first&&markdown.slice(first,second).includes("THPT_G10_B08_TRIANGLE_PARALLELOGRAM_SUM_D5_R01.svg"),
    "B08 authentic D5 figure must guide concept-first discovery");

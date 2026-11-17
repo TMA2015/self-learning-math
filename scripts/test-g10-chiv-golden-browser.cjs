@@ -14,7 +14,7 @@ const base=process.env.SLM_CHIV_URL||"http://127.0.0.1:8765";
 const goldenCss="44442773ac31eb1a46f0cab699a7d2c7974a5f37";
 const sources={
  7:"7a8f2b8247b3d9da0a1be9375c6ba1a348bbf11f",
- 8:"196976859489744bf10e6c3ad60e8dac7afb2422",
+ 8:"9cf96a0e81bea14903a64385359f738145e5a048",
  9:"2529b915e4089862e1a48e685ba5dc88d5450558",
  10:"ceaa76688e73274c9cf2d3116c41c6d4d0ac2726",
  11:"2a1381689f66d1f8c752bdbf1c29a9ef49a4e073"
@@ -187,6 +187,34 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
        await page.keyboard.press("ArrowLeft");assert(await radios.nth(0).isChecked(),where+" B07 arrow left returns to tab 1");
      }
      if(lesson===8){
+       // Owner 17/11: source-locked six display equations must become Arithmatex
+       // blocks, not raw escaped TeX inserted into ordinary Markdown paragraphs.
+       assert.equal(await blocks.nth(1).locator("div.arithmatex").count(),1,
+        where+" one formal SGK subtraction equation is display math");
+       assert.equal(await blocks.nth(2).locator("div.arithmatex").count(),5,
+        where+" five worked-example equations are display math");
+       const unrendered=await blocks.evaluateAll(panels=>{
+        const bad=[],slash=String.fromCharCode(92);
+        const commands=["overrightarrow","cdot","sqrt","vec","cos","[","]"];
+        for(const panel of panels){
+         const tree=document.createTreeWalker(panel,NodeFilter.SHOW_TEXT);
+         let node;
+         while((node=tree.nextNode())){
+          if(node.parentElement?.closest(".arithmatex,script,style"))continue;
+          const content=node.textContent||"";
+          if(commands.some(word=>content.includes(slash+word)))
+           bad.push(content.trim().slice(0,100));
+         }
+        }
+        return bad;
+       });
+       assert.deepEqual(unrendered,[],where+" no orphan TeX source outside MathJax wrappers");
+       await labels.nth(1).click();
+       assert(await blocks.nth(1).locator("div.arithmatex").isVisible(),
+        where+" subtraction equation visible when Knowledge tab selected");
+       await labels.nth(2).click();
+       assert(await blocks.nth(2).locator("div.arithmatex").first().isVisible(),
+        where+" solved equation visible when Examples tab selected");
        assert.equal(await article.getAttribute("data-g10-b08-keyboard-tabs"),"true",
         where+" B08 route-only keyboard navigation");
        const svg=blocks.nth(0).locator('img[src*="THPT_G10_B08_TRIANGLE_PARALLELOGRAM_SUM_D5_R01.svg"]');
