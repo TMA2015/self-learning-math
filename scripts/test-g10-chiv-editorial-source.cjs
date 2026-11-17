@@ -412,7 +412,7 @@ for(const [lesson,row] of rows){
    "B10 six preserved ID placements, revised self-check answer math only in Q18 Delta C");
   assert.deepEqual(formativeBodies(source).slice(0,5),formativeBodies(previous).slice(0,5),
    "B10 original TRY16–TRY20 published questions/answers must remain exactly canonical");
-  for(const t of ["(5;-3)","(5;-5)","AB=5","\\vec v=3\\vec u","M(1;2)","36"])
+  for(const t of ["(5;-3)","(5;-5)","5 đơn vị","\\vec v=3\\vec u","M=(1;2)","36"])
    assert(source.includes(t),"B10 first-try computed result absent "+t);
  }else assert.deepEqual(formativeBodies(source),formativeBodies(previous),
   lesson+" any original First Try stem or answer changed");
