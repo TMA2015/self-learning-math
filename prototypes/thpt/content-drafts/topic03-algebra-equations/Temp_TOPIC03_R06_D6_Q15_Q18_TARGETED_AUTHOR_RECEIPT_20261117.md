@@ -1,4 +1,4 @@
-# CĐ03 · R06 Q08/PED6 + Q15/Q18 targeted AUTHORING receipt · 17/11/2026
+# CĐ03 · R07 Q08/PED6 + Q14/PED first-try + Q15/Q18 targeted AUTHORING receipt · 17/11/2026
 PACKET_ID: TOP03-R06-D6-20261117
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
@@ -6,19 +6,22 @@ STANDARD_BLOB: 5a80b20ce99be3179d03d56a73fa57b6f4882fd8
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 DELTA_CLASS: DELTA_C_PED_TARGETED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_D6_NAVIGATION_CANDIDATE_20261117.md
-SOURCE_BLOB: d258b880fe695a152d677061a7d307cf262f2862
+SOURCE_BLOB: 9d275d9bb2f0cfed1e13c42df957505d8b3d27fb
+PREVIOUS_R06_CANDIDATE_SOURCE_BLOB: d258b880fe695a152d677061a7d307cf262f2862
+PREVIOUS_R06_Q18_RECEIPT_BLOB: 1e62775fd62785814926bdc2e865aac5f93b3b18
 BASELINE_SOURCE_BLOB: 05e9675a7dca802aa9540a96a46d76d013055d8b
 BASELINE_AUTHOR_Q18_RECEIPT_BLOB: 871edc307cae9e156dab528da6d98653b6686331
 AFFECTED_P0: 0
 AFFECTED_P1: 0
 Q08_PED6_AFFECTED: AUTHOR_SELF_QA_PASS
+Q14_PED_FIRST_TRY_CLONE_REMOVAL: AUTHOR_SELF_QA_PASS
 Q15_UNCHANGED_ITEM_BANK: AUTHOR_SELF_QA_PASS
 Q18_TARGETED_DELTA: AUTHOR_SELF_QA_PASS
 GLOBAL_ACTIVE_V2_READY_REGISTER: HOLD
 CONTENT_READY: NO
 RELEASE_AUTHORIZATION: NO
 ## Actual old vs new source diff
-The baseline learner Git SHA and new learner Git SHA above were both fetched. After ignoring the one new author-only version/receipt HTML comment, exact line-by-line comparison finds 11 changed First Try D6 lines. All other math explanations, examples, questions, opt-in worked keys, rubric criteria, canonical IDs, SVG links and the entire original Practice + Tự kiểm tra sections are byte-identical. Existing signed baseline remains preserved.
+The baseline learner Git SHA and new learner Git SHA above were both fetched. R06 historic comparison against original R05 baseline found 11 changed First Try D6 lines (retained below for traceability). New R07 source **additionally changes one worked Example in TOP03-O09** only. Its canonical Vận dụng First Try/question/key, other Knowledge, original Practice and Tự kiểm tra remain byte-identical compared with prior R06 candidate. This is a substantive teaching-example delta, checked under Q04/Q09/Q13/Q14 and not misclassified as cosmetic UI. Existing signed baseline remains preserved.
 ## Q08/PED6: every changed outcome's actual remedial route
 | Outcome | Old source line | Direct D6 text in R06 | Actual Practice exercise stem(s) |
 |---|---:|---|---|
@@ -39,6 +42,16 @@ The changed D6 lines are part of Knowledge First Try self-reveal disclosures and
 ## S1/Q18 scope and remaining handoff
 The original R05 author source receipt and original S1/KNTT lesson scope remain historical evidence on their unchanged baseline SHA. This R06 targeted review checks only the authoring delta in D6 and the explicit Q03 condition correction where applicable. We did NOT scan the original SGK/SBT PDF page-by-page again and did NOT independently re-solve every unrelated canonical exercise, nor falsely claim independent NotebookLM PASS. Targeted Q18 author self-review is permitted by the owner-effective single v3.1.0 Q01–Q18 standard; it is not an extra acceptance standard.
 Before new CONTENT_READY: choose the R06 source as the sole active canonical candidate rather than duplicated old R05 bodies; align the one V2 handoff, ready manifest and REGISTER with the exact R06 SOURCE_BLOB; ensure remaining global scholarly/safety gates and owner decision. No merge/deploy, Firebase, Skill Mastery or private RD1 change.
-AUTHOR_SIGNOFF: CHATGPT_AUTHORING_TOP03_R06_11D6_AUTHOR_Q08_Q15_Q18_20261117
+AUTHOR_SIGNOFF: CHATGPT_AUTHORING_TOP03_R07_11D6_FIRSTTRY_DEDUP_SOURCE_9d275d9b_Q04_Q08_Q14_Q15_Q18_20261117
 VERDICT: TARGETED_DELTA_AUTHOR_SELF_QA_PASS; ACTIVE_V2_READY_REGISTER_HOLD; CONTENT_READY_NO.
 Review prompt (four sentences): Reopen the learner R06 source exact Git SHA and its immutable R05 predecessor before reviewing this table. Follow each D6 line to the real visible exercise stem and check the intended error/outcome, not the number alone. Verify no changed original key, rubric or mathematical condition beyond the documented Q03 correction, and report any wrong route with MINIMAL_DELTA. Do not transfer this targeted author receipt to independent NotebookLM approval, protected assessment or deployment.
+
+## R07 additional P1 correction — worked example must not expose exact next First Try
+
+The R06 candidate was re-fetched by exact source blob `d258b880fe695a152d677061a7d307cf262f2862`. In TOP03-O09, the old immediately solved Example and first-try both asked **sqrt(2x+7)=x+1**, with the same solution, making the `Vận dụng` non-independent even in formative self-learning. This is a real **Q04/Q13/Q14 PED P1 defect**, not an ID collision. R07 keeps the canonical original First Try `Giải √(2x+7)=x+1` and its reveal/D6 exactly as before, and replaces **only the preceding teaching Example** with `Giải √(x+6)=x` and full new worked justification.
+
+**Direct arithmetic and conditional verification:** since sqrt is nonnegative, require `x≥0`. Squaring gives `x+6=x²` → `(x−3)(x+2)=0`; candidates 3, −2; −2 violates nonnegative RHS, while at x=3, `sqrt(9)=3`. Thus exact solution set is `{3}`. This teaches the same method but uses a genuinely different equation, candidates and numerical answer before the unchanged student's First Try.
+
+**Scope invariants verified on old versus new candidate:** 43/43 ordered visible/public canonical marker placements unchanged, number of opt-in disclosure sections unchanged, full Practice + Tự kiểm tra bytes unchanged, question/key/solution/rubric and existing first-try D6 untouched, no new ID or private RD1 body, no new official Readiness/Mastery. No SGK/SBT page-index recheck in this targeted delta; R05 receipt covers unchanged scope. Browser/MathJax/diagram render not claimed.
+
+**Affected Q18 verdict:** `AUTHOR_SELF_VERIFIED` for the changed source SHA `9d275d9bb2f0cfed1e13c42df957505d8b3d27fb`; `P0=0` and `P1=0` in the **R07 changed-example scope**. This does not create a full Topic Q01–Q18 Academic/PED PASS, nor turn candidate into CONTENT_READY. Global single-active-owner canonical Q15 / one V2 handoff / ready manifest / REGISTER still `HOLD`. No RELEASE, merge or deploy.
