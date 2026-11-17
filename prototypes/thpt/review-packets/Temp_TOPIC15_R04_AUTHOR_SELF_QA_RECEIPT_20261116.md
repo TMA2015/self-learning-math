@@ -7,10 +7,10 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_SPATIAL_PARALLELISM_R04_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 581ff0b0c019a705d36f306d7d5b0db38d185c0b
-SOURCE_BLOB: 581ff0b0c019a705d36f306d7d5b0db38d185c0b
+ACADEMIC_SOURCE_BLOB: 36e94c3752ff2315907a6f3424daa6fa25f80938
+SOURCE_BLOB: 36e94c3752ff2315907a6f3424daa6fa25f80938
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_R04_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: c2e39a3277d4e62ee935bb9613fe8be51ee57f41
+AUTHOR_METADATA_BLOB: e993dbf16a98f0dbd2f19af6d243f221b28b98c6
 ORIGINAL_R02_SOURCE_BLOB: ab4bd6a9f40b4925da35b725ccf396cd3c4eae9b
 ORIGINAL_R03_CANDIDATE_BLOB: 4a5a0c1fd140aab342737f6bde95e37b79237d80
 ORIGINAL_SGK_SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b
@@ -20,7 +20,7 @@ PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
 P2: 0
-AUTHOR_SIGNOFF: TOP15_R04_22_OUTCOMES_89_CANONICAL_102_SOURCE_AND_MATH_CHECKS_20261116
+AUTHOR_SIGNOFF: TOP15_R04_20261118_RECAP_SOP_Q18_36e94c3752ff2315907a6f3424daa6fa25f80938
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
@@ -76,6 +76,13 @@ ASSESSMENT_Q16: Public replay eight stems visible, không key/hint/đúng-sai/AI
 11. Q03/Q07/Q15: source learner ẩn mã, SHA, outcome trong comment; MathJax delimiter check, details cân bằng; browser render là RELEASE.
 12. Q01: duy nhất một dòng SGK nguồn ở cuối toàn Topic, chi tiết S1/R02/Q18 ở đây.
 13. Q18: đã đọc lại lỗi OPEN/RECHECK của Issue #865 và tránh 1.1.1, heading lẫn cấp, thiếu thân câu, thiếu hình/đối chiếu; kiểm toàn 22 outcome, 40 source projections, 27 unchanged answers, 5 SVG và tám stems. 52 direct structure/source assertions + 50 math/geometry test PASS trên exact nguồn.
+
+## 18/11/2026 — targeted current learner/S1 source receipt
+
+- CURRENT_SOURCE_BLOB `36e94c3752ff2315907a6f3424daa6fa25f80938`; prior edited effective learner source `8270cfa8dc691f21ad5b251ffa0d6f4be82dd570`; original R04 source `581ff0b0c019a705d36f306d7d5b0db38d185c0b` historical. Existing source/proof count `52+50` belongs original Q18 signed version only.
+- Exact line audit old original→prior: 3 introductory learner prose/MathJax lines and 7 public Selfcheck numbered labels `Câu n. Bài k.`→`Câu n.` (same stem), no new tests/items, no changes to mathematical equations or answers. The present current version introduces one additional four-bullet Knowledge recap (five conceptual group topics), no new definition invented.
+- Math/PED verification: plane by 3 non-collinear points; line intersections with z=0 from parameter shared t (w=0/c=0 contained, w=0/c≠0 disjoint parallel, w≠0 unique intersection); skew lines cannot be parallel due to absent coplanarity; d∥(P) distinct requires d outside P; projection preserves collinearity/segment ratio on a line, but not arbitrary angles/lengths. All agree with original worked examples.
+- Practice 67 canonical visible cards/solutions/Written rubrics plus 8 public question-only selfchecks and 89 canonical IDs unchanged versus pre-edit effective source, original 5 SVG and disclosures byte-exact. `DELTA_C_ACADEMIC_MATERIAL` scoped author-self pedagogical/math review, no independent NotebookLM full Topic verdict or browser RELEASE PASS.
 
 ## Test/checklist result
 
