@@ -14,7 +14,7 @@
 
     ### 1.2. Ví dụ trực quan
 
-    <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B10_COORDINATES_DIFFERENCE_D5_R01.svg" loading="lazy" alt="Sơ đồ hai điểm A, B trên hệ trục tọa độ: đọc chiều từ A tới B và hai thành phần hiệu tọa độ"><figcaption>Đọc hình trước công thức: từ đuôi mũi tên ở A tới đầu mũi tên tại B, đo mức thay đổi hoành độ và tung độ. Đổi chiều sang BA thì cả hai dấu đổi ngược.</figcaption></figure>
+    <figure class="thpt-r4-plot thpt-r4-probability-figure"><picture><source media="(max-width: 600px)" srcset="../../../../assets/images/thpt/THPT_G10_B10_COORDINATES_MOBILE_D5_R01.svg"><img src="../../../../assets/images/thpt/THPT_G10_B10_COORDINATES_DIFFERENCE_D5_R01.svg" loading="lazy" alt="Sơ đồ hai điểm A, B trên hệ trục tọa độ: đọc chiều từ A tới B và hai thành phần hiệu tọa độ"></picture><figcaption>Đọc hình trước công thức: từ đuôi mũi tên ở A tới đầu mũi tên tại B, đo mức thay đổi hoành độ và tung độ. Đổi chiều sang BA thì cả hai dấu đổi ngược.</figcaption></figure>
 
     **Đọc hình:** hãy xác định đuôi A, đầu B, hướng dọc trục hoành và dọc trục tung. Tọa độ của vectơ là hai **độ thay đổi có dấu**, không phải độ dài theo hai trục (độ dài không âm).
 
@@ -188,7 +188,7 @@
 
     **Kiểm lại và giới hạn:** \(3^2+4^2=5^2\) đúng tốc độ riêng; chọn \(-4\) làm thành phần Bắc sẽ đi xa bờ cần đến. Muốn vừa không trôi vừa đi tới bờ đích phải có tốc độ dòng **nhỏ hơn** tốc độ riêng. Không dùng định lí Pythagore để thay cho bước cộng vectơ vận tốc tương đối.
 
-    <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg" alt="Sơ đồ hai hướng vận tốc ca nô và dòng nước; mũi thuyền lái Bắc có trôi, mũi lái chếch ngược dòng để không trôi" loading="lazy"><figcaption><strong>Đọc hình theo đúng dữ kiện Ví dụ 4:</strong> Sông rộng \(96\,\mathrm m\), dòng Đông \(3\,\mathrm{m/s}\), tốc độ riêng \(5\,\mathrm{m/s}\). Mũi tên xanh cho vận tốc riêng, cam cho dòng, lục cho vận tốc theo bờ; tỉ lệ chiều dài vectơ giữ nhất quán giữa hai tình huống. Thời gian dùng <strong>thành phần Bắc</strong>, không dùng độ lớn của mũi tên chéo.</figcaption></figure>
+    <figure class="thpt-r4-plot thpt-r4-probability-figure"><picture><source media="(max-width: 600px)" srcset="../../../../assets/images/thpt/THPT_G10_B10_RIVER_VELOCITY_MOBILE_D5_R01.svg"><img src="../../../../assets/images/thpt/THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg" alt="Sơ đồ hai hướng vận tốc ca nô và dòng nước; mũi thuyền lái Bắc có trôi, mũi lái chếch ngược dòng để không trôi" loading="lazy"></picture><figcaption><strong>Đọc hình theo đúng dữ kiện Ví dụ 4:</strong> Sông rộng \(96\,\mathrm m\), dòng Đông \(3\,\mathrm{m/s}\), tốc độ riêng \(5\,\mathrm{m/s}\). Mũi tên xanh cho vận tốc riêng, cam cho dòng, lục cho vận tốc theo bờ; tỉ lệ chiều dài vectơ giữ nhất quán giữa hai tình huống. Thời gian dùng <strong>thành phần Bắc</strong>, không dùng độ lớn của mũi tên chéo.</figcaption></figure>
 
 === "Lỗi thường gặp"
 
