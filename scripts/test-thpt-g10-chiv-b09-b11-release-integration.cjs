@@ -73,7 +73,7 @@ for(const n of [9,10,11]){
  assert.deepEqual([...p.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]),
   ["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
   "B"+n+": exactly four owner-approved Model B tabs required");
- assert.equal((p.match(/^    ### Ví dụ \d+\./gm)||[]).length,n===9?4:3,
+ assert.equal((p.match(/^    ### (?:3\.[1-4]\. )?Ví dụ \d+\b/gm)||[]).length,[9,10].includes(n)?4:3,
   "B"+n+": three original worked examples plus B09 fourth decomposition example in the new Ví dụ tab");
  assert.equal((p.match(new RegExp('data-thpt-help-id="HELP-G10-B'+String(n).padStart(2,"0")+'-0[12]"',"g"))||[]).length,2,"Original reviewer R01 D6 IDs remain untouched; transfer D6 guarded separately");
  for(const kind of ["core","practice"])assert(text("docs/thpt-preview/sgk/chuong-iv/luyen-tap.md").includes('data-thpt-open-quiz="b'+n+'-'+kind+'"'));
