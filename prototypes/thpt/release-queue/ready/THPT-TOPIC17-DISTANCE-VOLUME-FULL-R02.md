@@ -20,7 +20,7 @@ REVIEW_RECEIPT_BLOB: ee703c5c92e26065d53479a5019d23e27c0f81c9
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
 AUTHOR_A1_A7_BLOB: 69b1cae6ebda31d510efd1a8d7b6b7e5c3086d2c
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC17-DISTANCE-VOLUME-FULL-R02_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: bbba2d791e5e53150d1f82e6a60ca11722190495
+AUTHOR_HANDOFF_BLOB: 2efd4bbf389390c2ccd1dc38b4ea42641e1dbc09
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_THPT_TOPIC17_FRUSTUM_VOLUME_MODEL_R00_20261113.html
 INTERACTIVE_MODEL_BLOB: 727c05896a9d9bf95385b54559faa22917f1510e
@@ -79,3 +79,6 @@ This *existing* ready manifest now explicitly refuses intake as CONTENT_READY af
 
 
 **Current AUTHORING source-specific verdict after QA correction:** The only effective learner source is the corrected file already named in ACADEMIC_SOURCE_PATH. All affected academic/PED explanations were read and checked; question stems, answers, rubric and public selfcheck were parity-checked. This READY concerns **authoring source handoff only**. The CI source-lock check on this final HEAD and website/runtime/AP gates are separate and must PASS before RELEASE, merger or deployment; this paragraph grants no such authority.
+
+
+**Final source-only custody after workflow state correction:** This document uses the required READY state because its edited learner source passed affected-scope academic/PED author review with unchanged question/key/rubric integrity. No separate student source, no independent full-topic new review or website release is implied. Any previous temporary HOLD wording was superseded by the latest STATE/BLOCKERS fields. Release/AP/device CI and explicit owner authorization remain separate hard gates.
