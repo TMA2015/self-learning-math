@@ -8,23 +8,23 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 198b6a1fe58017945df0d53ee78005b12ed4a702
+SOURCE_COMMIT: 2e49ba15c43da8b6d42be55675ff3bc83aaf6e99
 CATALOG_TOPIC_ID: CD13
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 4ddf62bc1ddca87e550201bb30cb7a88eb69cf7c
+ACADEMIC_SOURCE_BLOB: 9a558f553bd6a4a58701a6bae490717ba5a52540
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md (Q18 AUTHOR_SELF_VERIFIED, not new independent NotebookLM PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 4fca1106e615f70be8fd760fbacaafb42a33437c
+REVIEW_RECEIPT_BLOB: 5e8ad3dfbc24d008f32e06e18215c96c543e7278
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_A1_A7_BLOB: 122d8fb295238406c0c52292b8e93e25dc12e2bc
+AUTHOR_A1_A7_BLOB: 0e9f894699e0e786ee18423dfdcdc33f2aef01be
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md
-PUBLIC_CANONICAL_BANK_BLOB: d2f4b9fbd11b65ddd0a3190cc4cfbb8569951175
+PUBLIC_CANONICAL_BANK_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df
 G10_SGK_ORIGINAL_DEPENDENCY_PR: 750
 G10_SGK_ORIGINAL_DEPENDENCY_BRANCH: authoring/g10-chiv-ped-r02-24-outcomes-20261105
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC13-PLANAR-SPATIAL-VECTORS-FULL-R04_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: 6fc04f713e973c374673bbc5dfe93dae65b68744
+AUTHOR_HANDOFF_BLOB: 82f02d0fab56e7e9a3bc31dd6d8a5f6beae42a8b
 ORIGINAL_G10_SGK_SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9
 ORIGINAL_G12_SGK_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
 SVG1_BLOB: 55ec9add04cb79da2cad7703b3897271e5b3436a
@@ -103,3 +103,8 @@ The independent Topic CĐ13 student path has 3 pages Knowledge / Practice / Self
 - [ ] AP5_RESPONSIVE_VISUAL
 
 **REGISTRY_RISK_AND_PREVENTION:** each topic is a standalone immutable academic packet with one REGISTER row; concurrent Draft branches add near the same table header. RELEASE must combine against latest actual main, preserve union of all already-imported rows and re-test manifest↔REGISTER on exact merged HEAD. Do not overwrite the entire register or edit new Topic academic source to hide integration issues. No AUTHORING merge/deploy.
+
+
+## R05 · corrected canonical vector-owner handoff (17/11/2026)
+
+Source, affected-scope Q18, A1–A7, V2, bank fields above supersede old R04 current pointer (old Git snapshots preserved). 9 existing NEW20 item IDs have correct explicit vector notation in their original canonical bank, same as the already-correct Topic learner. Source checks prove 52/52 displayed canonical placements and 20/20 SGK G10 plus 12/12 G12 exact original key/solution. No item duplication, answer/math result change, 4 Written /7 point change, Mastery/RD1/Final Submit modification or website release. Full topic Q01–Q18 at current combined source and SGK #750 combined HEAD still subject to separate substantive/release checks; this is targeted Q15/Q04 author self-QA only.
