@@ -1,18 +1,21 @@
 # CĐ4 R06 — AUTHORING numbering-only Q18 custody
 
 CURRENT_SOURCE_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_R06_NUMBERING_CONSISTENT_20261116.md
-CURRENT_SOURCE_BLOB: 58e6f13113c7a042418560d1efe896b8a43de735
+CURRENT_SOURCE_BLOB: bb4da8a9c17c4b5051043043d76682144e5414c3
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC04_R06_NUMBERING_DELTA_A_Q18_20261116.md
-CURRENT_Q18_RECEIPT_BLOB: e4f2e9335b76e4c34630a278412d1876e3aff6d6
+CURRENT_Q18_RECEIPT_BLOB: 7b5837abf401a44fb5aee4624f0416b5616e3f47
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
-DELTA_CLASS: DELTA_A_UI
+DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
 PREVIOUS_AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_R04_AUTHORING_ONLY_CUSTODY_METADATA_20261113.md
 PREVIOUS_AUTHOR_METADATA_BLOB: dbefc80e878456544078dc0c55ce6660278d1533
-AUTHORING_STATUS: NUMBERING_DELTA_A_SOURCE_EQUIVALENT
+AUTHORING_STATUS: R06_FORMAL_DOMAIN_TARGETED_Q18_AUTHOR_SELF_VERIFIED
 RELEASE_AUTHORIZATION: NO
 
 Original A1–A7/SGK/outcome/item source matrix below is inherited **unaltered**; only current learner snapshot formatting and Q18 source custody above changed. User-facing headings are now page H1, numbered group H2 and child H3, with Practice Bài labels not H4. Old author metadata Git blob `dbefc80e878456544078dc0c55ce6660278d1533` and old academic source/Q18 remain immutable. No independent reviewer claim or RELEASE approval.
+
+
+Current effective Knowledge revision 18/11/2026: three true formula/definition/domain blocks and student recall; 75 Practice source projections, 18 public replay Selfchecks, original D6 and MathJax repairs from #890 unchanged. Q18 is bounded DELTA_C source self-QA; no independent NotebookLM or RELEASE verdict. Historical numbering-only snapshot remains preserved in Git history.
 
 ---
 
