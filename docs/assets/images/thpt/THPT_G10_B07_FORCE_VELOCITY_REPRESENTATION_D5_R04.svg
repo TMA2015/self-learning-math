@@ -21,7 +21,8 @@
 <text x="101" y="273" font-family="Arial, sans-serif" font-size="18" fill="#0f172a">O</text>
 <line x1="120" y1="286" x2="262" y2="286" stroke="#1d4ed8" stroke-width="5" marker-end="url(#b07fv-force-arrow)"/>
 <text x="163" y="267" font-family="Arial, sans-serif" font-size="20" fill="#1e40af" font-weight="bold">10 N</text>
-<text x="55" y="344" font-family="Arial, sans-serif" font-size="18" fill="#334155">Cùng tỉ lệ: mũi tên 20 N dài gấp đôi 10 N</text>
+<text x="55" y="344" font-family="Arial, sans-serif" font-size="18" fill="#334155">Cùng tỉ lệ: mũi tên 20 N dài</text>
+<text x="55" y="367" font-family="Arial, sans-serif" font-size="18" fill="#334155">gấp đôi mũi tên 10 N</text>
 <circle cx="800" cy="299" r="8" fill="#0f172a"/>
 <text x="813" y="308" font-family="Arial, sans-serif" font-size="19" fill="#0f172a">O</text>
 <line x1="800" y1="299" x2="618" y2="168" stroke="#be185d" stroke-width="6" marker-end="url(#b07fv-wind-arrow)"/>
