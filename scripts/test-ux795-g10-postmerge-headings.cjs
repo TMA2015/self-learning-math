@@ -162,6 +162,36 @@ for(let n=1;n<=27;n++){
     "B09 can be technically previewed, but authoring gap is still HOLD");
   }
  }
+ if(n===10){
+  const receiptPath=path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B10_S1_PED_SINGLE_CANONICAL_Q18_R01_20261118.md");
+  const masterPath=path.join(root,
+   "prototypes/thpt/content-drafts/THPT_G10_CHIV_B10_CANONICAL.md");
+  assert(fs.existsSync(receiptPath)&&fs.existsSync(masterPath),
+   "G10 B10 QA integration must carry both one canonical manuscript and Q18 receipt");
+  const receipt=fs.readFileSync(receiptPath,"utf8");
+  const f=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(f("BASELINE_B10_KNOWLEDGE_BLOB"),"ceaa76688e73274c9cf2d3116c41c6d4d0ac2726");
+  assert.equal(blob(fs.readFileSync(path.join(root,"docs",route+".md"))),
+   f("R01_SOURCE_BLOB"),"G10 B10 rendered Knowledge from wrong academic source");
+  assert.equal(blob(fs.readFileSync(masterPath)),f("ONE_CANONICAL_LESSON_BLOB"),
+   "G10 B10 one manuscript/receipt SHA inconsistent in merged preview");
+  const manuscript=fs.readFileSync(masterPath,"utf8");
+  assert(manuscript.includes("<!-- BEGIN_B10_KNOWLEDGE_MARKDOWN -->")&&
+   manuscript.includes("<!-- BEGIN_B10_R01_CORE_PRACTICE -->"),
+   "G10 B10 no other draft/fragment source can replace one full lesson manuscript");
+  assert(markdown.includes("### 3.4. Ví dụ 4 — Qua sông")&&
+   markdown.includes("bộ dữ liệu khác")&&
+   markdown.includes("luyen-tap.md")&&markdown.includes("tu-kiem-tra-chuong.md"),
+   "B10 real S1 river method belongs in Tab3 with figures and working routes");
+  assert.equal((markdown.match(/^    \?\?\? tip "/gm)||[]).length,3,
+   "B10 exactly three student-error diagnosis disclosures");
+  assert.equal((markdown.match(/data-thpt-help-id=/g)||[]).length,3,
+   "B10 HELP Q15 ID count is independent of UI error disclosure count");
+  assert(!markdown.includes("EX-G10-B10-RIVER-TR01")&&
+   !markdown.includes(String.fromCharCode(96)),
+   "B10 old source code/admin text cannot leak to learner-facing page");
+ }
  legacyCount+=ids.length-added.length;newB05Count+=added.length;
  const short=(html.match(concise)||[]).length;
  const verbose=(html.match(longTitle)||[]).length;
