@@ -10,9 +10,9 @@ LEARNING_PATH: TOPIC
 CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R06_P2_WRITTEN_RUBRIC_CLARITY_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: f8c6a52c84fecd0dd63dae60413cfbe4327f54b5
-REVIEW_RECEIPT_BLOB: a0ce3bef430e84a03f11073715cee4fa9558a638
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
+ACADEMIC_SOURCE_BLOB: fda1fa60d8448c016c24159156c6898de2bc673f
+REVIEW_RECEIPT_BLOB: 0e3ed68872e0e05e5bd26e2a611de440a29e9faa
 BASELINE_R04_SIGNED_SOURCE_BLOB: 41daf40a3b639a3ef35e129099525137a05b1848
 BASELINE_R04_SIGNED_Q18_RECEIPT_BLOB: 5262fd454346801b0b5eb4f3dc407bc99d3530
 
@@ -369,3 +369,8 @@ This new AUTHORING A1–A7 custody file binds R06 source SHA 331c31e124179b31731
 ## Bản thảo hiệu lực CĐ18 sau sửa trực tiếp ký hiệu vectơ
 
 Nguồn hiện hành vẫn là một tệp ở ACADEMIC_SOURCE_PATH, đã chỉnh phần Kiến thức TOP18-O03 để nêu đúng vectơ có mũi tên và không đánh đồng độ dài đoạn. 40 outcomes, 247 câu canonical, 12 selfcheck public replays, dữ kiện/đáp án/rubric/SVG của các bài không thay. Trạng thái giữ HOLD chờ kiểm chứng QA HEAD và đồng bộ V2/ready/REGISTER; không lập thêm tệp học liệu sửa sai. Source lịch sử R06 có thể khôi phục qua Git, không phải source hiệu lực song song.
+
+
+## Current one-source consolidation (17/11/2026)
+
+The effective learner source is **the existing original filename at ACADEMIC_SOURCE_PATH**, with exact SHA `fda1fa60d8448c016c24159156c6898de2bc673f`; the parallel newer-numbered correction candidate was removed after source-level comparison. The R06/R11 release naming in this AUTHORING metadata is a historical packet identifier and does not imply a different live learner body. Current Q18 composite receipt is the existing REVIEW_RECEIPT_PATH with actual blob `0e3ed68872e0e05e5bd26e2a611de440a29e9faa`. Rejected the candidate's three ambiguous bare vector equations; retained exact directed arrow notation and the original 247 public solution disclosures. No source duplication, no Academic/PED whole-topic approval, no web release. `STATE=BLOCKED_BY_AUTHORING` remains in force.
