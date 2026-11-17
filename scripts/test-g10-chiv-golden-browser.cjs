@@ -15,7 +15,7 @@ const goldenCss="44442773ac31eb1a46f0cab699a7d2c7974a5f37";
 const sources={
  7:"e1487ce01e81738228ae69d4d87cbdc56b5e0c69",
  8:"22e53396caf7753e813c492615a491e1f24cc9fd",
- 9:"2529b915e4089862e1a48e685ba5dc88d5450558",
+ 9:"17ab2a58976125fb51c325ddad7b59d0a8870679",
  10:"ceaa76688e73274c9cf2d3116c41c6d4d0ac2726",
  11:"2a1381689f66d1f8c752bdbf1c29a9ef49a4e073"
 };
@@ -63,9 +63,21 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
   const semField=k=>semantic.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(semField("BASELINE_R05_B07_CSS_BLOB"),r05field("R05_CSS_GIT_BLOB"),
     "B08 must preserve exact P2-accepted B07 CSS");
-  assert.equal(blob(cssFile),semField("R04_CSS_BLOB"),
-    "B08 exact 3+1 CSS Git blob signed by R04 receipt");
+  const b09=fs.readFileSync(root+
+    "/prototypes/thpt/ux795/G10_CHIV_B09_S1_SEMANTIC_DECOMPOSITION_R03_20261117.md","utf8");
+  const b09f=k=>b09.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(b09f("CSS_BASELINE_BLOB"),semField("R04_CSS_BLOB"),
+    "B09 3+1 must extend immutable owner-accepted B08 CSS");
+  assert.equal(blob(cssFile),b09f("R03_CSS_BLOB"),
+    "B09 exact append-only CSS signed by academic Q18 receipt");
   const cssTextR05=cssFile.toString("utf8"),markerR05="/* G10 ChIV B07 R05";
+  const b09Marker="/* G10 Chapter IV B09 R03",b09Pos=cssTextR05.indexOf(b09Marker);
+  assert(b09Pos>0&&cssTextR05.indexOf(b09Marker,b09Pos+1)===-1,
+    "B09 must have one and only one scoped 3+1 palette appendix");
+  assert.equal(blob(cssTextR05.slice(0,b09Pos-1)),semField("R04_CSS_BLOB"),
+    "All CSS of owner-P2 B01–B08 immutable, B09 append only");
+  assert(cssTextR05.includes(':has([data-thpt-first-try-id="THPT-G10-CHIV-TRY11"])'),
+    "B09 styles cannot target unrelated lesson or grade");
   const b08Marker="/* G10 ChIV B08 R04",b08Start=cssTextR05.indexOf(b08Marker);
   assert(b08Start>0&&cssTextR05.indexOf(b08Marker,b08Start+1)===-1,
     "B08 only one scoped 3+1 CSS appendix");
@@ -347,6 +359,41 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
        assert(await radios.nth(1).isChecked(),where+" arrow right activates tab 2");
        await page.keyboard.press("ArrowLeft");
        assert(await radios.nth(0).isChecked(),where+" arrow left returns to tab 1");
+      }
+      if(lesson===9){
+       const knowledge=blocks.nth(1);
+       const defs=knowledge.locator(".thpt-r4-knowledge-conclusion.thpt-r4-concept-card");
+       const rules=knowledge.locator(".thpt-r4-knowledge-conclusion.thpt-r4-rule-card");
+       const recap=knowledge.locator(".thpt-r4-knowledge-conclusion:not(.thpt-r4-concept-card):not(.thpt-r4-rule-card)");
+       const formulas=knowledge.locator(".thpt-r4-key-formula");
+       assert.deepEqual([await defs.count(),await rules.count(),await recap.count(),await formulas.count()],
+        [1,3,1,1],where+" B09 real 3+1 semantic roles by mathematical outcome");
+       assert((await defs.innerText()).includes("Định nghĩa — Tích của một vectơ với một số")&&
+        (await rules.allInnerTexts()).some(s=>s.includes("Phân tích duy nhất theo hai vectơ không cùng phương")),
+        where+" mandatory decomposition and scalar definition visible");
+       await labels.nth(1).click();
+       for(const scheme of ["default","slate"]){
+        await page.evaluate(s=>document.body.setAttribute("data-md-color-scheme",s),scheme);
+        const backgrounds=await Promise.all([defs.first(),rules.first(),recap.first(),formulas.first()]
+         .map(z=>z.evaluate(el=>getComputedStyle(el).backgroundColor)));
+        assert.deepEqual(backgrounds,scheme==="slate"?
+         ["rgb(25, 61, 54)","rgb(32, 53, 81)","rgb(74, 58, 37)","rgba(0, 0, 0, 0)"]:
+         ["rgb(232, 247, 242)","rgb(234, 241, 252)","rgb(255, 243, 213)","rgba(0, 0, 0, 0)"],
+         where+" B09 formal/blue/recap/white palette correct "+scheme);
+       }
+       await page.evaluate(()=>document.body.removeAttribute("data-md-color-scheme"));
+       assert.equal(await formulas.locator("div.arithmatex").count(),1,
+        where+" B09 centroid/midpoint key formula renders MathJax in white frame");
+       assert(await formulas.locator("div.arithmatex").first().isVisible(),
+        where+" B09 math formula actually visible in Knowledge");
+       const fig=knowledge.locator('img[src*="THPT_G10_B09_DECOMPOSITION_TWO_DIRECTIONS_D5_R03.svg"]');
+       assert.equal(await fig.count(),1,where+" authored decomposition SVG beside S1 explanation");
+       await fig.scrollIntoViewIfNeeded();await fig.evaluate(async el=>{if(el.decode)await el.decode();});
+       assert(await fig.evaluate(el=>el.complete&&el.naturalWidth>0),
+        where+" B09 decomposition SVG decodes and is readable");
+       assert.equal(await blocks.nth(2).locator('h3').count(),4,
+        where+" B09 four worked examples include decomposition");
+       await labels.nth(0).click();
       }
       // Right TOC cross-tab link: tab 3 -> hidden Knowledge tab 2.
      const tocId=await blocks.nth(1).locator("h3[id]").first().getAttribute("id");
