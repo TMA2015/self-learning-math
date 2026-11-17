@@ -8,7 +8,7 @@ Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 REVIEW_SCOPE: Q03_Q10
 DELTA_CLASS: DELTA_C_PED_TARGETED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic07-sequences/Temp_TOPIC07_R07_P2_LEARNER_PROSE_CANDIDATE_20261117.md
-SOURCE_BLOB: 6c16411393dd6bcb95f9c334607a4cf031482dc1
+SOURCE_BLOB: 3e49d4032d6274c8992cee26d50d0de1fd768d29
 FROZEN_BASELINE_SOURCE_BLOB: 22609934f525e6e9c2c8f1513e439c3cd4d54221
 FROZEN_BASELINE_Q18_RECEIPT_BLOB: 73fc766c9bea00be48e25d0514548e12fa783f60
 BASELINE_P0_P1_VERDICT: HISTORICAL_IMMUTABLE_ONLY
@@ -22,7 +22,7 @@ RELEASE_AUTHORIZATION: NO
 
 ## Exact changed learner lines and rationale
 
-Original Git source Rxx and candidate Git source exact blobs above were both fetched. Ignore one newly added author-only HTML provenance line. **Changed original lines: L44 only.** Bỏ câu 'Từ miền chỉ số', tự giới thiệu dãy số (u_n), n thuộc miền chỉ số đã cho và công thức tường minh u_n=f(n); giải thích ba số đầu không ấn định duy nhất quy luật.
+Original Git source Rxx and candidate Git source exact blobs above were both fetched. Ignore one newly added author-only HTML provenance line. **Changed original lines: L6 and L44 only.** At original L6: promote visible parent `1. Kiến thức` from H3 to H2 so the three Topic pages use the same heading level and numbered H3 groups are nested correctly; this is Markdown structure, not mathematics. At original L44: bỏ câu 'Từ miền chỉ số', tự giới thiệu dãy số (u_n), n thuộc miền chỉ số đã cho và công thức tường minh u_n=f(n); giải thích ba số đầu không ấn định duy nhất quy luật.
 
 ## Affected-scope independent math/PED check
 
