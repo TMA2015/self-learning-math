@@ -1,4 +1,4 @@
-# CĐ07 — Dãy số, Cấp số cộng và Cấp số nhân · AUTHORING CONTENT_READY R06 (PACKET_ID R01)
+# CĐ07 — Dãy số, Cấp số cộng và Cấp số nhân · AUTHORING current R07 (PACKET_ID R01)
 
 PACKET_ID: THPT-TOPIC07-SEQUENCES-AP-GP-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -8,18 +8,18 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 880e96ad09022f28850a0b91c4390a9be03c862e
+SOURCE_COMMIT: 8fe086d475a5ecc844f556d6556813d61a798095
 AUTHOR_PR: 828
 CURRENT_PR: https://github.com/TMA2015/self-learning-math/pull/828 — DRAFT AUTHORING, no merge/deploy
 CATALOG_TOPIC_ID: CD07
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic07-sequences/Temp_TOPIC07_R06_STUDENT_FIRST_69_CANONICAL_VISIBLE_20261115.md
-ACADEMIC_SOURCE_BLOB: 22609934f525e6e9c2c8f1513e439c3cd4d54221
-REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC07_R06_AUTHOR_SELF_QA_RECEIPT_20261115.md (Q18 author SELF_VERIFIED, no independent NotebookLM PASS)
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC07_R06_AUTHOR_SELF_QA_RECEIPT_20261115.md
-REVIEW_RECEIPT_BLOB: 73fc766c9bea00be48e25d0514548e12fa783f60
-AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC07-SEQUENCES-AP-GP-FULL-R06_HANDOFF_V2_20261115.md
-AUTHOR_HANDOFF_BLOB: 741933cfaeb771647e777a92a448c1a620fff51d
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic07-sequences/Temp_TOPIC07_R07_NUMBERING_CONSISTENT_20261116.md
+ACADEMIC_SOURCE_BLOB: fcabe475254b4f54f5e6a8e74fce536df1f6bf43
+REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC07_R07_NUMBERING_DELTA_A_Q18_20261116.md (Q18 targeted AUTHOR_SELF_VERIFIED, no independent NotebookLM PASS)
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC07_R07_NUMBERING_DELTA_A_Q18_20261116.md
+REVIEW_RECEIPT_BLOB: 580111dbfe0ddc831cc3ef53f062cdb46772c465
+AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC07-SEQUENCES-AP-GP-FULL-R07_HANDOFF_V2_NUMBERING_20261116.md
+AUTHOR_HANDOFF_BLOB: ae05b08f6312e4ad95110dce37b9936fac698ed3
 PUBLIC_ORIGINAL47_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC07_SEQUENCES_ORIGINAL47_SGK_PLACEMENT_INDEX_R06_20261115.md
 PUBLIC_ORIGINAL47_INDEX_BLOB: 01154e0801e77c2e81d56a717c77f7dae5a3515d
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC07_SEQUENCES_NEW22_PUBLIC_CANONICAL_R06_20261115.md
@@ -45,6 +45,13 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
 **CONTENT_READY chỉ trong phạm vi AUTHORING.** 18 modules/outcomes; 47 old SGK PUBLIC items referenced by immutable source pointers +22 new public (18 Practice, 4 Written/7); total69 unique; 3 original SVG and two interaction labs SPEC_ONLY; 18 public reuse-only self-check, not independent Readiness.
 
+## R07 current source QA — formal definitions and recap
+
+- Exact learner source `fcabe475254b4f54f5e6a8e74fce536df1f6bf43`, Q18 `580111dbfe0ddc831cc3ef53f062cdb46772c465`, metadata `3acfee8131da5c82ba96aee1841ed7f8a497fe24`, V2 `ae05b08f6312e4ad95110dce37b9936fac698ed3` on Draft #828.
+- Formal definitions explicitly labeled for the index-domain of sequences, constant-difference CSC and constant-ratio CSN at TOP07-O01/O06/O11; concise knowledge recap including timing of end-of-period interest. Mathematical assumptions q=0, d=0, n-domain and cashflow verified; targeted DELTA_C Q18 AUTHOR_SELF_VERIFIED, not independent NotebookLM PASS.
+- 18 outcomes; 69 original learner Practice placements, all answers/solutions/rubrics unchanged byte-for-byte; 18 public selfcheck question-only unchanged; 3 original SVG references unchanged. `CLIENT_SELF_CHECK_NO_MASTERY`, no private RD1, no website integration, no owner release authorization.
+- Technical exact-head CI and browser/render/AP remain separate checks; historical R06 certification below describes the immutable older version and must not be attributed to the new wording.
+
 ## R06 STUDENT_VIEW_CERTIFICATION
 
 - Học sinh đọc được 18 Ví dụ Đề bài–Lời giải độc lập và 18 Vận dụng–Đối chiếu tự mở ngay sau bài; không còn những khối câu hỏi gom cuối bốn mạch.
@@ -52,16 +59,16 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 - 18 public selfcheck P01–P18 là câu có đề thực, **không có lời giải/hint/rubric** ngay trong Selfcheck; chỉ `CLIENT_SELF_CHECK_NO_MASTERY`, không official Topic Readiness.
 - Bốn item giữ ID, nâng version2: P01/P16/P18/W04 (tránh trùng/lộ bài từ SVG/Ví dụ); B05-P05 đổi placement tới O05. 3 SVG nguyên gốc, 18 outcome, 0 RD1.
 - Q18 receipt blob `73fc766c9bea00be48e25d0514548e12fa783f60` có 120/120 QA assertions trên exact source R06 `22609934f525e6e9c2c8f1513e439c3cd4d54221`. Không nhận là NotebookLM độc lập hoặc browser RELEASE PASS.
-- R04 source blob `238813098845ee8b7bc525174febb16ef6f70d70` và receipt `e3cc98d412e2cc387b0348941e08b7b1cd5ba05f` được bảo toàn; intake hiện hành chỉ R06, một PACKET_ID.
+- R04/R06 source and receipt snapshots remain in Git history. Current packet R07 is the only declared effective learner source for this PACKET_ID, not a second Topic bank.
 
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — canonical source Git blob 22609934f525e6e9c2c8f1513e439c3cd4d54221; original47 index 01154e0801e77c2e81d56a717c77f7dae5a3515d, NEW22 f70e2c961dfcf31825d135b61e301cbb4c322767; signed Q18 receipt 73fc766c9bea00be48e25d0514548e12fa783f60; handoff 741933cfaeb771647e777a92a448c1a620fff51d.
+- [x] A1_SOURCE_SNAPSHOT — current R07 source fcabe475254b4f54f5e6a8e74fce536df1f6bf43; original47 index 01154e0801e77c2e81d56a717c77f7dae5a3515d; NEW22 bank f70e2c961dfcf31825d135b61e301cbb4c322767; updated targeted Q18 580111dbfe0ddc831cc3ef53f062cdb46772c465, V2 ae05b08f6312e4ad95110dce37b9936fac698ed3.
 - [x] A2_SGK_SBT_SCOPE — archived publisher S1: SGK G11 Tập1 B05 42–47, B06 48–51, B07 52–55, B15 104–110, SBT direct original PDF printed B05 31–34, B06 35–36, B07 37–39 and B15 75–78; Topic-only finance enriched scope labelled.
 - [x] A3_NOTEBOOKLM_VERDICT — Q18 AUTHOR_SELF_VERIFIED v3.1.0 signed author receipt with 49/49 direct checks; no new independent NotebookLM PASS asserted, original SGK ChII/ChV PASS retained source-scoped.
 - [x] A4_ITEM_OUTCOME_IDS — 18 lesson IDs/outcome IDs, 69 unique canonical PUBLIC IDs, 69 item→outcome→role mappings; 18 public self-check repeat placements do not add IDs.
 - [x] A5_D1_D6_SCOPE — all 18 modules WHY/prerequisites/meaning/reasoned example/first try/D6, four original Written rubrics/7 and three accessible SVG; two model labs are SPEC_ONLY.
-- [x] A6_DELTA_RESOLVED — new CĐ07 is DELTA_C_ACADEMIC_MATERIAL independently author-verified on its own source; old SGK R03 snapshots unchanged and no recorded author P0/P1.
+- [x] A6_DELTA_RESOLVED — latest R07 concept/recap clarification is DELTA_C_ACADEMIC_MATERIAL with bounded source-locked AUTHOR_SELF_VERIFIED, not independent reviewer PASS; original SGK, canonical answers and immutable prior source snapshots unchanged.
 - [x] A7_PUBLIC_PRIVATE_BOUNDARY — zero private RD1 imported, zero official Topic Readiness; public 18 self-check only CLIENT_SELF_CHECK_NO_MASTERY, Final Submit runtime protection belongs to RELEASE.
 
 ## PED1–PED6 / Q09–Q14
