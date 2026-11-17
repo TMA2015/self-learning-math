@@ -178,7 +178,7 @@ Phát biểu **đúng**: trong hai số nguyên liên tiếp \(n\) và \(n+1\) l
 
 **Khám phá kiến thức**
 
-Ở phần trước, ta nhận ra một câu chỉ có ý nghĩa rõ ràng khi biết **đang nói về đối tượng nào** và đối tượng ấy **cần thỏa điều kiện gì**. Bây giờ thay vì xét từng đối tượng một, ta gom tất cả đối tượng thỏa cùng điều kiện vào một tập hợp. Khi đó, câu “đồng thời thỏa hai điều kiện” trở thành phép giao, “thỏa ít nhất một điều kiện” trở thành phép hợp, còn “thỏa điều kiện này nhưng không thỏa điều kiện kia” dẫn đến phép hiệu. Nhờ vậy logic và tập hợp là hai cách biểu diễn cùng một việc lựa chọn đối tượng.
+Khi xét một điều kiện toán học, trước hết phải xác định **đối tượng đang xét** (chẳng hạn số nguyên) và **điều kiện đối tượng phải thỏa** (chẳng hạn là số chẵn). Tập hợp gom tất cả những đối tượng thỏa điều kiện ấy: nếu cần đồng thời thỏa hai điều kiện, ta xét phép giao; nếu thỏa ít nhất một trong hai, ta xét phép hợp; nếu thỏa điều kiện thứ nhất nhưng không thỏa điều kiện thứ hai, ta xét phép hiệu. Vì thế, ngôn ngữ điều kiện và ngôn ngữ tập hợp cùng giúp mô tả chính xác những đối tượng được chọn.
 
 <!-- LESSON_ID: TOP01-M06; OUTCOME_ID: TOP01-O06 -->
 
