@@ -699,6 +699,13 @@ Hai đáy hình vuông cạnh 6 và 3 có tỉ số diện tích đáy lớn : �
 
 </details>
 
+> **Kiến thức cần ghi nhớ**
+>
+> - **Góc giữa hai đường:** để so hai đường chéo nhau, chuyển hai phương về cùng điểm bằng đường song song rồi đo góc nhỏ; không lấy số đo góc vẽ phối cảnh.
+> - **Vuông góc đường–mặt:** đường thẳng vuông góc mặt phẳng nếu vuông góc với mọi đường nằm trong mặt; khi chứng minh, đủ chỉ ra vuông góc với **hai đường cắt nhau** nằm trong mặt ấy, không thay bằng hai đường song song.
+> - **Hình chiếu và góc đường–mặt:** dựng chân vuông góc trước khi chọn tam giác tính góc; nếu đường vuông góc mặt phẳng thì góc bằng 90°, đường song song thì góc bằng 0°. Phân biệt góc đường–mặt với góc hai mặt.
+> - **Góc nhị diện, hình khối:** đo góc hai mặt bằng hai đường cùng vuông góc giao tuyến tại cùng một điểm trong các mặt; chiều cao lăng trụ/chóp phải vuông góc với mặt đáy, không lấy độ dài cạnh xiên thay thế.
+
 # Luyện tập
 
 Em hãy giải bằng hình học và suy luận, ghi rõ điều kiện của từng dấu hiệu rồi mới tự mở **Lời giải**. Mỗi bài đều có đề thực để làm tại đây.
