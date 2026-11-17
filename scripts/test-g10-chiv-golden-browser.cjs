@@ -523,11 +523,11 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
        assert(await last.evaluate(e=>e.open),where+" B10 river error expands");
        await page.waitForFunction(()=>document.querySelector('details.tip[open] mjx-container')!==null,
         null,{timeout:15000});
-       const readable=await last.innerText();
-       assert(readable.includes("Thời gian đó sai")&&
-        readable.includes("thành phần hướng Bắc")&&
-        readable.includes("trôi Đông"),
-        where+" B10 error 4.3 explains why only NORTH component determines crossing time");
+       const paragraphs=await last.locator("p").allTextContents();
+       assert(paragraphs.some(v=>v.includes("Thời gian đó sai"))&&
+        paragraphs.some(v=>v.includes("thành phần hướng Bắc"))&&
+        paragraphs.some(v=>v.includes("Ôn và luyện lại:")),
+        where+" B10 error 4.3 must show a specific wrong method, cause and recovery");
        assert(await last.locator("mjx-container").count()>=5,
         where+" B10 4.3 wrong and corrected time must be real rendered MathJax, not raw source TeX");
        await last.locator("summary").click();
