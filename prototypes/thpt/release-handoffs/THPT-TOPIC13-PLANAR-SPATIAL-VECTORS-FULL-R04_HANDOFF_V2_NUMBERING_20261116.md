@@ -13,15 +13,15 @@ CATALOG_TOPIC_ID: CD13
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 4ddf62bc1ddca87e550201bb30cb7a88eb69cf7c
+ACADEMIC_SOURCE_BLOB: 9a558f553bd6a4a58701a6bae490717ba5a52540
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 4fca1106e615f70be8fd760fbacaafb42a33437c
+REVIEW_RECEIPT_BLOB: 5e8ad3dfbc24d008f32e06e18215c96c543e7278
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_A1_A7_BLOB: 122d8fb295238406c0c52292b8e93e25dc12e2bc
+AUTHOR_A1_A7_BLOB: 0e9f894699e0e786ee18423dfdcdc33f2aef01be
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: 122d8fb295238406c0c52292b8e93e25dc12e2bc
+AUTHOR_METADATA_BLOB: 0e9f894699e0e786ee18423dfdcdc33f2aef01be
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md
-PUBLIC_CANONICAL_BANK_BLOB: d2f4b9fbd11b65ddd0a3190cc4cfbb8569951175
+PUBLIC_CANONICAL_BANK_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df
 G10_SGK_CROSS_PR_DEPENDENCY: 750
 G10_SGK_SOURCE_BRANCH: authoring/g10-chiv-ped-r02-24-outcomes-20261105
 ORIGINAL_G10_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/Temp_G10_SGK_CHIV_FULL_R03_CONSOLIDATED_SOURCE_20261105.md
@@ -305,3 +305,8 @@ Author Q01–Q18, A1–A7, PED1–PED6 on locked SHA, 30 computational/structura
 ## RELEASE_ACCEPTANCE
 
 RELEASE separately verifies AP1–AP5, R1–R5, Q15 canonical resolver collision/role, Q16 browser Final Submit/early feedback/Skill Mastery, responsive/MathJax/Golden/THCS regressions, exact final combined HEAD CI and owner approval. RELEASE rebase/merge REGISTER preserving the union of all Topic rows on **latest main**; never replace register with stale branch snapshot. AUTHORING does not integrate, merge, deploy or change Firebase.
+
+
+## R05 · 52-of-52 canonical owner parity after mathematical vector notation fix (17/11/2026)
+
+Source `9a558f553bd6a4a58701a6bae490717ba5a52540`; Q18 targeted affected receipt `5e8ad3dfbc24d008f32e06e18215c96c543e7278`; A1 metadata `0e9f894699e0e786ee18423dfdcdc33f2aef01be`; canonical NEW20 bank `136bd4552118e5dba6b18b58965be7d37878e9df`. Math changes confined to corrected vector notation for 9 existing IDs in NEW20 bank (8 stem +8 solution text fields), unchanged numerical results and rubric scores, and hash references in learner source. Source parity: G10 original 20/20 on Draft #750, G12 original 12/12, Topic-owned 20/20; no new item, no assessment credit. Q18 self-QA is targeted and not a fresh independent review. Cross-branch availability of G10 original source on combined RELEASE HEAD remains not proven; do not merge/deploy.
