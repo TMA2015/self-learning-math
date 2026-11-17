@@ -1,6 +1,6 @@
 # CĐ18 — Phương pháp tọa độ không gian Oxyz · AUTHORING V2 R06 · 17/11/2026
 
-**Source-only AUTHORING QA HOLD after direct vector math correction, under ONE standard `SLM-THPT-QUALITY-ONE v3.1.0` Q01–Q18.** Author Q18 mathematical/PED **SELF_VERIFIED**; no independent NotebookLM Topic PASS claimed. This does **not** authorize website merge/deploy, official assessment, Firebase write, or production route.
+**Source-only CONTENT_READY_CANDIDATE after direct vector math correction, under ONE standard `SLM-THPT-QUALITY-ONE v3.1.0` Q01–Q18.** Author Q18 mathematical/PED **SELF_VERIFIED**; no independent NotebookLM Topic PASS claimed. This does **not** authorize website merge/deploy, official assessment, Firebase write, or production route.
 
 PACKET_ID: THPT-TOPIC18-OXYZ-FULL-R06-20261117
 CONTENT_REVISION: R06
@@ -35,7 +35,7 @@ P0: 0
 P1: 0
 P2: 1
 P2_NOTE: SBT_REFERENCE_GAP_DOCUMENTED_G12_B14_PRINTED_P25_SECONDARY_REFERENCE_ONLY
-BLOCKERS: CURRENT_SOURCE_QA_HEAD_AND_READY_REGISTER_CHECK_PENDING
+BLOCKERS: NONE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
@@ -729,3 +729,6 @@ R06 is the only proposed new Topic source 331c31e124179b31731f9caca2669eaa8948bc
 ## In-place authoring math correction — one source to hand off
 
 At existing ACADEMIC_SOURCE_PATH, teaching section TOP18-O03 now explicitly distinguishes vector sums from segment lengths. Rigorous triangle/parallelogram/box vector relations have arrows and a reasoned worked solution. First Try T03 plus every Practice/Written/Selfcheck answer, math key, rubric, current 247 canonical identities, SVG links and 12 question-only replays remain unchanged. The previous source-only READY R06 cannot be carried over by assumption; affected Q18 maths now rechecked on current source, but current branch awaits final HEAD and ready/REGISTER validation. No new source filename, no website integration/merge/deploy.
+
+
+**Current source handoff:** Source-specific Q18 author self-QA for the changed math/editorial portion is complete, immutable predecessor source preserved in Git, one learner source and matching A1/V2/ready/REGISTER selected. No website/AP/RELEASE PASS or merge/deploy implied. A separate CI on HEAD is required before release intake acceptance.
