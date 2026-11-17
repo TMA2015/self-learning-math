@@ -14,7 +14,7 @@ const base=process.env.SLM_CHIV_URL||"http://127.0.0.1:8765";
 const goldenCss="44442773ac31eb1a46f0cab699a7d2c7974a5f37";
 const sources={
  7:"e1487ce01e81738228ae69d4d87cbdc56b5e0c69",
- 8:"5a6d33411b595547c12d1d665af1e48b1cd0e9eb",
+ 8:"22e53396caf7753e813c492615a491e1f24cc9fd",
  9:"2529b915e4089862e1a48e685ba5dc88d5450558",
  10:"ceaa76688e73274c9cf2d3116c41c6d4d0ac2726",
  11:"2a1381689f66d1f8c752bdbf1c29a9ef49a4e073"
@@ -283,7 +283,7 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
        const recaps=knowledge.locator(".thpt-r4-knowledge-conclusion:not(.thpt-r4-concept-card):not(.thpt-r4-rule-card)");
        const formulas=knowledge.locator(".thpt-r4-key-formula");
        assert.deepEqual([await definitions.count(),await rules.count(),await recaps.count(),await formulas.count()],
-         [3,4,1,2],where+" B08 correct mathematical 3+1 semantic roles");
+         [3,4,1,1],where+" B08 correct mathematical 3+1 semantic roles");
        assert((await definitions.allInnerTexts()).some(t=>t.includes("Định nghĩa — Tổng hai vectơ"))&&
          (await rules.allInnerTexts()).some(t=>t.includes("Quy tắc ba điểm"))&&
          (await definitions.allInnerTexts()).some(t=>t.includes("Định nghĩa — Vectơ đối")),
@@ -307,9 +307,9 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
        // Owner 17/11: source-locked six display equations must become Arithmatex
        // blocks, not raw escaped TeX inserted into ordinary Markdown paragraphs.
        assert.equal(await blocks.nth(1).locator("div.arithmatex").count(),2,
-        where+" two owner-approved unfilled formula frames render MathJax in SGK");
-       assert.equal(await formulas.locator("div.arithmatex").count(),2,
-        where+" both neutral key-formula frames contain properly rendered display math");
+        where+" one neutral formula frame plus unboxed subtraction verification both render MathJax");
+       assert.equal(await formulas.locator("div.arithmatex").count(),1,
+        where+" the unfilled key-formula frame contains real display MathJax");
        assert.equal(await blocks.nth(2).locator("div.arithmatex").count(),5,
         where+" five worked-example equations are display math");
        const unrendered=await blocks.evaluateAll(panels=>{
@@ -331,7 +331,7 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
        await labels.nth(1).click();
        assert(await blocks.nth(1).locator("div.arithmatex").first().isVisible()&&
         await blocks.nth(1).locator("div.arithmatex").last().isVisible(),
-        where+" both unfilled formula-frame equations visible in Knowledge tab");
+        where+" standalone verification and key formula both visible in Knowledge tab");
        await labels.nth(2).click();
        assert(await blocks.nth(2).locator("div.arithmatex").first().isVisible(),
         where+" solved equation visible when Examples tab selected");
