@@ -53,3 +53,28 @@ Outcome counts are from canonical Topic PR/receipt. CĐ20 outcomes use `PRIMARY_
 - **Q16 across all 22:** public self-check replay is not protected held-out Topic Readiness and does not grant Mastery. Actual Final Submit/readiness/browser security remains an independent RELEASE gate. No RD1 protected content on GitHub.
 
 **Conclusion:** Authoring Q18 self-signoffs are source-consistent and targeted global regression found no new P0/P1; finish any actual evidence-backed delta within affected source scope, not a blanket rewriting of all 22. Issue #865 remains open for genuine outstanding evidence/intake dependency. **Next distinct AUTHORING work item: Math Lab model registry and G0–G4 QA (#880). NO MERGE/DEPLOY.**
+
+
+---
+
+<!-- OWNER_LANGUAGE_ADDENDUM_20261117 -->
+## AUTHORING addendum · 17/11/2026 — đọc ngôn ngữ như học sinh, tham chiếu chỉ cục bộ
+
+**Owner bổ sung:** Với “điều này”, “nó”, “cách đó”, “trường hợp trên”, “hình trên”, v.v., chỉ dùng khi đối tượng đã nêu **trong cùng mục và ở câu/đoạn ngay trước hoặc cùng câu**. Không bắt học sinh quay lại mục, trang hay bài khác để hiểu một đại từ hoặc hình được ngụ ý. Khi cần ôn nơi khác, gọi **đích danh khái niệm/tiêu đề** và cho lối điều hướng rõ ràng, không dùng chỉ từ mơ hồ. Áp dụng trong Q03/Q08/Q10–Q14, #864 mục 3/6/11/13 và defect ledger #865; **không tạo Q19/checklist mới**.
+
+**Đã kiểm chứng trong lượt này:** Fetched/compared **22/22 exact learner Git blobs** trong bảng trên; sàng lọc toàn văn theo mẫu lời dẫn/tham chiếu, sau đó đọc trực tiếp các đoạn nghi vấn và ngữ cảnh sát trước/sau. Đây **chỉ là FIRST PASS + TARGETED CLOSE READING**, **không phải** đã đọc và nghiệm thu câu-văn-từng-bài cho toàn bộ 22 Chuyên đề. Không gán LANGUAGE_PASS 22/22; 22 nguồn Q18 cũ giữ nguyên theo immutable SHA. Kiểm tự động chỉ phát hiện ứng viên, kết luận dựa trên văn cảnh thật.
+
+| Mã | Nguồn/locus đọc trực tiếp | Triệu chứng người học | Qxx / mức | Đề xuất xử lý / trạng thái |
+|---|---|---|---|---|
+| LANG-01 | CĐ01 R06 blob `d4eafd8…`, L177–181 | Đầu mục 2 nói “Ở phần trước”, bắt người đọc truy mục 1 để hiểu câu mở đầu | Q03/Q10 P2 | Viết mục 2 tự đủ: giới thiệu trực tiếp đối tượng thỏa điều kiện và phép toán tập hợp; **OPEN** |
+| LANG-02 | CĐ07 R06 blob `2260993…`, L40–46 | Đầu mục 1.2 “Từ miền chỉ số…” phụ thuộc tên/ý mục 1.1, chưa tự giới thiệu dãy và n | Q03/Q10 P2 | Mở bằng “Với một dãy có các số hạng \\(u_n\\) được đánh số theo \\(n\\), …”; **OPEN** |
+| LANG-03 | CĐ08 R05 blob `a33d1e6…`, L350–362 | “Ngay tại hình này” đặt **trước** hình; “Điều này khác ví dụ … ở trên” không rõ chủ ngữ so sánh | Q03/Q12 P2 | Giới thiệu hai nhánh \\(f(x)\\) trực tiếp, đặt hình sát lời đọc và so rõ hai ví dụ gián đoạn nhảy; **OPEN** |
+| LANG-04 | CĐ09 R05 blob `8222107…`, L221–227 | Đầu mục 2.3 “độ dốc ấy” trỏ sang 2.1–2.2; câu thiếu đối tượng ngay tại mục 2.3 | Q03/Q10/Q13 P2 | Viết “Khi \\(s(t)\\) là tọa độ theo thời gian, \\(s'(t)\\) là vận tốc có hướng…”; **OPEN** |
+| LANG-05 | CĐ13 R03 blob `7f3e90e…`, L1/L16–30 và các mục tương tự | Heading hiện “R03 student-first”, 48 dòng mẫu “Vì sao cần học / Hiểu bản chất / Tự thử / Gặp lỗi ở đâu”, làm lời giảng thành khung checklist | Q03/Q09–14/#864 mục 3/8/11 **P1 biên tập** | Biên soạn lại thành văn xuôi khám phá→bản chất→Ví dụ→Vận dụng→Đối chiếu đúng nhãn đã duyệt; **OPEN, cần tự QA theo affected outcomes, không coi receipt R03 đã xét delta mới** |
+| LANG-06 | CĐ18 R04 blob `41daf40…`, L700–707 | Đầu mục 5 “Tiếp tục chuyến bay đã biết” trỏ xa; khẳng định \\(t=1\\) giây trong khi **ngay mục này** chưa định nghĩa t là thời gian và đơn vị của vectơ v | Q03/Q04/Q10 **P1 ngữ cảnh/đơn vị** | Tự giới thiệu bài toán drone, t tính giây và v có đơn vị tọa độ/giây (nếu đúng với S1/mô hình), tránh gọi là “hướng” rồi suy đơn vị thời gian; **OPEN / S1 MODEL VERIFY** |
+| LANG-07 | CĐ19 R09 blob `2b46a2c…`, L7/70/76/93/388/504, tám câu kết giống nhau | Lời dẫn quá dài, “mô hình A/B” mơ hồ, bước nhân thiếu phân biệt số cách n cố định; “vừa học/đã học” trỏ mục khác; câu cuối lặp như mẫu | Q03/Q08/Q10/Q13/14 P1–P2 | Đã tạo **R10 candidate trên Draft PR #883**: sửa văn xuôi và điều kiện toán, giữ Practice/Selfcheck byte-identical; **R10 NOT_CONTENT_READY, Q15 T02 canonical và Q18 targeted pending** |
+| LANG-08 (PASS-example) | CĐ16 R03 blob `0adf45a…`, L15–21 | “mô tả bằng lời ở trên” có hình và đoạn mô tả **ngay trước trong cùng mục** | Q12 | **Không phải lỗi tham chiếu** theo owner; giữ nguyên đoạn này nếu không có vấn đề khác |
+
+**Phân biệt quan trọng:** Lời điều hướng minh bạch “Xem hình Venn ở mục Kiến thức 2.1” như CĐ20 R11 L808 là hướng **khắc phục D6 có đích rõ**, không phải đại từ ngụ ý buộc người đọc tự đoán. Chỉ chỉnh khi đoạn đang đọc không tự đủ thông tin cần thiết.
+
+**Trạng thái kiểm toán ngôn ngữ toàn bộ:** `SOURCE_SCAN=22/22`; `TARGETED_MANUAL_FINDINGS=7 topic cases + 1 acceptable-reference control`; `FULL_LESSON_SENTENCE_BY_SENTENCE_PASS=NOT_ESTABLISHED`. Phần sửa R10 **không được** ghi là R09 đã sửa; Q15/T02 và Q18/V2/ready/REGISTER phải đóng trên bản nguồn mới trước bất kỳ CLAIM CONTENT_READY. PR #882 vẫn Draft source-only, không merge/deploy.
