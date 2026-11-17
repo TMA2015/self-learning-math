@@ -14,6 +14,10 @@
 
     ### Ví dụ trực quan
 
+    **Quan sát các mũi tên trước khi tự thử:** cùng một vectơ gốc, số dương làm mũi tên dài/ngắn đi nhưng không đổi chiều; số âm đảo chiều. Đừng dự đoán độ dài bằng dấu của hệ số.
+
+    <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B09_SCALAR_MULTIPLE_VECTORS_D5_R01.svg" loading="lazy" alt="Phép nhân vectơ với một số: mũi tên cùng chiều, ngược chiều và vectơ-không"><figcaption>Đọc từ mũi tên gốc: hệ số dương giữ hướng, hệ số âm đảo hướng, trị tuyệt đối quyết định độ dài. Trường hợp \(0\) phải xét riêng.</figcaption></figure>
+
     <span id="thpt-g10-chiv-try11" data-thpt-first-try-id="THPT-G10-CHIV-TRY11" data-outcome-id="G10-B09-SCALAR_DEFINITION" data-thpt-help-ref="HELP-G10-B09-01"></span>
 
     #### Nhân vectơ với số: phóng to, thu nhỏ, đổi chiều
@@ -141,9 +145,7 @@
 
     **Vì sao cần phép nhân này?** Ở Bài 8, em có thể cộng \(\vec u+\vec u+\vec u\). Nếu muốn tạo vectơ dài gấp ba lần, hoặc cùng độ dài nhưng đảo hướng, ta dùng một số thực \(k\) để biểu diễn phép biến đổi ấy bằng \(k\vec u\).
 
-    **Quan sát hình trước khi đọc định nghĩa.** Nhìn vectơ gốc, rồi đối chiếu các mũi tên hệ số dương, âm và \(0\): **độ dài** thay đổi theo \(|k|\); **chiều** chỉ xác định cho vectơ khác không và thay đổi theo dấu \(k\). Không ghi “độ dài âm”.
-
-    <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B09_SCALAR_MULTIPLE_VECTORS_D5_R01.svg" loading="lazy" alt="Phép nhân vectơ với một số: mũi tên cùng chiều, ngược chiều và vectơ-không"><figcaption>Đọc từ mũi tên gốc: hệ số dương giữ hướng, hệ số âm đảo hướng, trị tuyệt đối quyết định độ dài. Trường hợp \(0\) phải xét riêng.</figcaption></figure>
+    **Từ quan sát đến định nghĩa:** Nếu số nhân là \(2\), vectơ dài gấp đôi; nếu là \(-2\), độ dài vẫn gấp đôi nhưng chiều đổi ngược. Với \(k=0\) phải xử lí vectơ-không riêng. Từ đó, **độ dài** được quyết định bởi \(|k|\), còn chiều của vectơ khác không phụ thuộc dấu \(k\).
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Tích của một vectơ với một số:</strong> Với số thực \(k\) và vectơ \(\vec u\), vectơ \(k\vec u\) được xác định như sau: nếu \(k\ne0\) và \(\vec u\ne\vec0\), nó có độ dài \(|k|\,|\vec u|\), <strong>cùng hướng</strong> với \(\vec u\) khi \(k>0\) và <strong>ngược hướng</strong> khi \(k<0\). Nếu \(k=0\) hoặc \(\vec u=\vec0\), kết quả là \(\vec0\).</div>
 
