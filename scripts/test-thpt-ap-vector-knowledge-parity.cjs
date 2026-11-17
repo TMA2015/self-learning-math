@@ -98,11 +98,16 @@ for(const c of cases){
  const signedR05=c.n===7&&
   field(r05,"BASELINE_R04_SOURCE_BLOB")===field(r04,"R04_SOURCE_BLOB")&&
   field(r05,"R05_SOURCE_BLOB")===blob(src);
- const current=editorial[c.n]&&(blob(src)===editorial[c.n].sha||signedR02||signedR03||signedR04||signedR05);
- if(signedR02||signedR03||signedR04||signedR05)assert.equal(signedR05?field(r05,"R05_SOURCE_BLOB"):signedR04?field(r04,"R04_SOURCE_BLOB"):signedR03?
+ const b08r04=c.n===8?fs.readFileSync(path.join(__dirname,
+   "../prototypes/thpt/ux795/G10_CHIV_B08_SEMANTIC_3PLUS1_DELTA_R04_20261117.md"),"utf8"):null;
+ const signedB08R04=c.n===8&&
+  field(b08r04,"BASELINE_R03_SOURCE_BLOB")===field(r03,"R03_CANDIDATE_SOURCE_BLOB")&&
+  field(b08r04,"R04_SOURCE_BLOB")===blob(src);
+ const current=editorial[c.n]&&(blob(src)===editorial[c.n].sha||signedR02||signedR03||signedR04||signedR05||signedB08R04);
+ if(signedR02||signedR03||signedR04||signedR05||signedB08R04)assert.equal(signedB08R04?field(b08r04,"R04_SOURCE_BLOB"):signedR05?field(r05,"R05_SOURCE_BLOB"):signedR04?field(r04,"R04_SOURCE_BLOB"):signedR03?
   field(r03,c.n===7?"R03_SOURCE_BLOB":"R03_CANDIDATE_SOURCE_BLOB"):
   field(r02,"R02_CANDIDATE_SOURCE_BLOB"),expectedG10KnowledgeBlob(c.n,c.sha),
-  "B07/B08 exact R01→R02→R03→R04 source receipt must match Q18 router");
+  "B07/B08 exact immutable receipt-chain must match Q18 router");
   if(current){
   const headings=[...middle.matchAll(/^    ### ([^\n]+)$/gm)].map(m=>m[1]);
   assert.deepEqual(headings,editorial[c.n].sections,"B"+c.n+": official S1 book sections changed");
