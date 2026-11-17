@@ -1,9 +1,9 @@
 # AUTHORING-only metadata — CĐ12 R04
 
 CURRENT_R04_LEARNER_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_NUMBERING_CONSISTENT_20261116.md
-CURRENT_R04_LEARNER_SOURCE_BLOB: ec90cab8455768b263f8d57409587c28f250340a
+CURRENT_R04_LEARNER_SOURCE_BLOB: 7f537a309fe302941589073bb0e2e9577d323134
 CURRENT_R04_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC12_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-CURRENT_R04_Q18_RECEIPT_BLOB: 6974062fc1f127a7b040d653093ffc5f3c40fabf
+CURRENT_R04_Q18_RECEIPT_BLOB: f0524226db441d7e6786773288c9a7152343f4c2
 CURRENT_R04_NEW16_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC12_TRIANGLE_NEW16_PUBLIC_CANONICAL_R03_20261116.md
 CURRENT_R04_NEW16_CANONICAL_BANK_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d
 AUTHORING_STATUS: R04_NUMBERING_DELTA_A_AUTHOR_SELF_VERIFIED
@@ -91,7 +91,7 @@ OUTCOME_IDS: `TOP12-O01`…`TOP12-O12`.
 | `THPT-G10-B05-P04` | `TOP12-O04` | TOPIC_PRACTICE | SGK_CANONICAL_REUSE | `6320aeaa89bd51c514b07461e01fad5e3aca833f` |
 | `THPT-G10-B05-P05` | `TOP12-O02` | TOPIC_PRACTICE | SGK_CANONICAL_REUSE | `6320aeaa89bd51c514b07461e01fad5e3aca833f` |
 | `THPT-G10-B05-P06` | `TOP12-O03` | TOPIC_PRACTICE | SGK_CANONICAL_REUSE | `6320aeaa89bd51c514b07461e01fad5e3aca833f` |
-| `THPT-G10-CHIII-W05` | `TOP12-O04` | TOPIC_WRITTEN | SGK_CANONICAL_REUSE | `6320aeaa89bd51c514b07461e01fad5e3aca833f` |
+| `THPT-G10-CHIII-W05` | `TOP12-O04` | TOPIC_WRITTEN | SGK_CANONICAL_REUSE | `569466519ee9a653fa3bcdf874e06619424fbf7b` |
 | `THPT-G10-B06-C01` | `TOP12-O05` | TOPIC_PRACTICE | SGK_CANONICAL_REUSE | `6320aeaa89bd51c514b07461e01fad5e3aca833f` |
 | `THPT-G10-B06-C02` | `TOP12-O09` | TOPIC_PRACTICE | SGK_CANONICAL_REUSE | `6320aeaa89bd51c514b07461e01fad5e3aca833f` |
 | `THPT-G10-B06-P01` | `TOP12-O06` | TOPIC_PRACTICE | SGK_CANONICAL_REUSE | `6320aeaa89bd51c514b07461e01fad5e3aca833f` |
@@ -157,3 +157,10 @@ OUTCOME_IDS: `TOP12-O01`…`TOP12-O12`.
 - Current new `ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_NUMBERING_CONSISTENT_20261116.md`; `SOURCE_BLOB: ec90cab8455768b263f8d57409587c28f250340a`. Exact-source Q18 receipt `6974062fc1f127a7b040d653093ffc5f3c40fabf` ghi nhận kiểm soát cấu trúc.
 - Cũ `R03` source `e74f32b1092d571af0091174a55104e7d3bec5b5`, Q18 `d8ad3986da4776260c950cca337e0407da015252`, metadata `7decc64c105d7b3eba70d99c95ab7a6cdc2e5b4d` **giữ nguyên** trong lịch sử. Canonical bank, SVG, RD1, MathJax equation/keys/rubric không bị sửa.
 - Cùng chuẩn Q01–Q18; bản này chỉ dành cho AUTHORING handoff. RELEASE tự kiểm render hierarchy và responsive trước bất kỳ tích hợp/phát hành; no merge/deploy.
+
+
+## R05 · W05 Q15 source-owner cross-branch lock (17/11/2026)
+
+Current Topic12 `SOURCE_BLOB=7f537a309fe302941589073bb0e2e9577d323134`; current scoped Q18 `RECEIPT_BLOB=f0524226db441d7e6786773288c9a7152343f4c2`. All 34 canonical source placements remain, with **only** reused `THPT-G10-CHIII-W05` pointing to the corrected original-owner source on SGK ChIII Draft #749, SHA `569466519ee9a653fa3bcdf874e06619424fbf7b`. Its original R01 snapshot `6320aeaa89bd51c514b07461e01fad5e3aca833f` remains review-custody evidence, **not** active W05 rubric owner. All other 17 SGK-reused IDs continue referencing immutable original R01 blob; 16 Topic-owned items unchanged.
+
+No duplicate item/answer/rubric introduced. W05 mathematical rubric now matches original-owner angle \\(\\alpha=150^\\circ\\), /7 unchanged. `Q15_W05_OWNER=ONE`, `Q18_AUTHOR_SELF_VERIFIED_AFFECTED=PASS`, `Q16=UNCHANGED`, `RELEASE_AUTHORIZATION=NO`. Older source/receipt blob citations in R04 chronology above are historical, not effective pointers.
