@@ -8,11 +8,11 @@ STATE: BLOCKED_BY_AUTHORING
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R11_P2_CANONICAL_LABEL_LEARNER_CLARITY_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: 32721032973866087dcc4b8981e33d4bf3391c8d
+ACADEMIC_SOURCE_BLOB: 5546204168eb3c3402b21af9ca1b9d08b118c378
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC19_R11_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md
-REVIEW_RECEIPT_BLOB: ad08a2996f25154d83a42b3e44fe591156960cdb
+REVIEW_RECEIPT_BLOB: 0424dc58b6662fa214ea1f2a0835d923b0843ba4
 R11_Q15_MATRIX_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_Q15_56_CANONICAL_SOURCE_LOCKED_CANDIDATE_MATRIX_20261117.md
-R11_Q15_MATRIX_BLOB: e938adcf0ba32052f533baf1408434ef308821a0
+R11_Q15_MATRIX_BLOB: 07eefae8e5dd5a8da876a88e8c6b9d59fed1210e
 BASELINE_R09_SIGNED_SOURCE_BLOB: 2b46a2c92004f2c030d030e2b2021a34157bc95d
 
 S1_ORIGINAL_PUBLIC_BANK_PATH: docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js
@@ -102,3 +102,6 @@ The **same original 56 canonical item IDs/outcome/role/placements** in the table
 ## Chỉ một bản thảo hiệu lực, sửa thẳng lời giải T02
 
 Nguồn học liệu hiện hành tại ACADEMIC_SOURCE_PATH được sửa đúng một câu diễn đạt trong Đối chiếu TOP19-T02. Quy tắc nhân vẫn yêu cầu mỗi loại áo có 3 lựa chọn huy hiệu: 4×3=12, không thay dữ kiện, đáp án, logic phương pháp, rubric, mã ID hay CONTENT_VERSION TOP19-R10. Bảo toàn 56 câu canonical, 7 public replay question-only và các nguồn SGK chủ sở hữu riêng. Không tạo thêm tệp R12 sửa lỗi; bản cũ do Git bảo toàn. Giữ QA HOLD khi chưa đối chiếu toàn bộ V2/ready/REGISTER + CI HEAD. No merge/deploy.
+
+
+**Knowledge readability update:** calculator key names nPr/nCr/SHIFT clearly separate from mathematical (A_n^k,C_n^k,n!,P(1)); four original learner lines changed, all public canonical items/versions/keys, Practice and Selfcheck unchanged. No new learner file; source-only A1 evidence updated.
