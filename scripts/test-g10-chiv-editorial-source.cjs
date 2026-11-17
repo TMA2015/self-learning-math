@@ -50,6 +50,23 @@ for(const [lesson,row] of rows){
   const field=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(field("R01_APPROVED_SOURCE_BLOB"),row.candidate,"B07 R02 extends ChIV original R01");
   expected=field("R02_CANDIDATE_SOURCE_BLOB");
+  const delta=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B07_HELP_LABELS_DELTA_A_R03_20261117.md"),"utf8");
+  const ui=k=>delta.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(ui("R02_SOURCE_BLOB"),expected,"B07 R03 follows exact academic R02 source");
+  const replacements=[
+   ["Trong Luyện tập, làm lại câu về vectơ ngược hướng trong hình bình hành, rồi đối chiếu câu Core về điều kiện hai vectơ bằng nhau.","Làm lại B07-P03 rồi đối chiếu B07-C02."],
+   ["Trong Luyện tập, làm câu về hai vectơ cùng hướng nhưng khác độ dài, rồi câu về quy ước vectơ-không.","Làm B07-P05 rồi B07-P04."]
+  ];
+  let prior=source;
+  for(const [friendly,original] of replacements){
+   assert.equal(prior.split(friendly).length,2,"B07 R03 must contain exactly one signed friendly D6 label");
+   prior=prior.replace(friendly,original);
+  }
+  assert.equal(blob(prior),expected,
+   "B07 R03 must be byte-exact R02 except two verified learner-facing D6 labels");
+  assert(!/B07-[CP][0-9]{2}/.test(source),"B07 internal Core/Practice codes cannot be visible in lesson");
+  expected=ui("R03_SOURCE_BLOB");
  }
  if(lesson==="B08"){
   const receipt=fs.readFileSync(path.join(root,
