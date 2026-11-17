@@ -6,7 +6,8 @@ STANDARD_BLOB: 5a80b20ce99be3179d03d56a73fa57b6f4882fd8
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 DELTA_CLASS: DELTA_C_MATERIAL_PEDAGOGICAL_PRESENTATION_WITH_Q07_VISUAL_CORRECTION
 SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_PED_LEARNER_CANDIDATE_20261117.md
-SOURCE_BLOB: 7837fa88ba6376f873bd9f3bc3cbea134b3a838d
+SOURCE_BLOB: 47e851cb47767aba6ec1cfa81efe3232ae8fed23
+PREVIOUS_R04_SOURCE_BLOB: 7837fa88ba6376f873bd9f3bc3cbea134b3a838d
 IMMUTABLE_R03_SOURCE_BLOB: 7f3e90e5eadcbaa1dc7b49cd6d5136f6dbf61e22
 IMMUTABLE_R03_Q18_RECEIPT_BLOB: bf040651f959e2559c37662caeb66d31d68b6bf9
 ORIGINAL_G10_SGK_SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9
@@ -70,3 +71,13 @@ AUTHOR_SIGNOFF: CHATGPT_AUTHORING_TOP13_R04_16_PED_OUTCOMES_16_WORKED_MATH_5_FIG
 VERDICT: AFFECTED_PED_AND_Q07_DELTA_AUTHOR_SELF_QA_PASS; G10_PR750_Q15_ACTIVE_BANK_HOLD; CONTENT_READY_NO; NO_MERGE_NO_DEPLOY.
 
 Review prompt (four sentences): Compare exactly the R04 learner source SHA and signed R03 source in all 16 Knowledge outcomes plus O13 SVG. Independently assess whether each new motivation/explanation/first try/D6 enables a learner to follow the mathematical idea, and check each shown example and picture without relying on the headings count. Verify original bank/source and 52 Practice items stay canonical, especially unresolved G10 ChIV PR #750. Return P0/P1/P2 and MINIMAL_DELTA if there is a mathematical, PED or image mismatch; do not infer any merge/deploy or CONTENT_READY.
+
+## R05 substantive vector-concept correction, SAME current Knowledge learner source (17/11/2026)
+
+An additional live source inspection found **Q03/Q04/PED3 material ambiguity**: much of the initial lesson wrote `AB+BC=AC`, `MA+MB=0`, `AC'=AB+AD+AA'` and `AB=DC` as plain scalar/segment-length equations without explicit vector arrows. Under a length reading these formulas can be false, contradicting the lesson's own explanation that displacement depends on direction. Corrected **23 original lines** across Knowledge O01–O16 in the **same** source path, with explicit `\\overrightarrow{AB}`, `\\vec0`, `\\vec u`, properly signed Chasles, parallelogram, midpoint/centroid, Oxy/Oxyz coordinates and box vector addition. Do not equate `AB=|\\overrightarrow{AB}|` (a segment length) to vector sums. The key vector algebra was rechecked: `\\overrightarrow{AB}+\\overrightarrow{BC}=\\overrightarrow{AC}`, `\\overrightarrow{AB}-\\overrightarrow{AC}=\\overrightarrow{CB}`, `\\overrightarrow{AC'}=\\overrightarrow{AB}+\\overrightarrow{AD}+\\overrightarrow{AA'}` and `\\overrightarrow{AG}=2/3\\overrightarrow{AM}` with M midpoint BC. All are valid with arbitrary point placement/coordinates as scoped.
+
+**Exact affected-source QA:** 23/23 intended learner lines changed; total original file remains 1222 lines; the entire `# Luyện tập` and `# Tự kiểm tra` sections remain byte-identical, including **68/68** ordered canonical/display/replay marker placements, **68/68** voluntary answer disclosures and **5/5** SVG references. No stem, numeric data, answer, written rubric, public selfcheck, private RD1 or Mastery activity was changed in either Practice or Selfcheck. Affected `DELTA_C_ACADEMIC_MATERIAL` source-locked `AUTHOR_SELF_VERIFIED` Q03/Q04/Q07/Q10/PED3 check with no P0/P1 remaining in this limited source-scoped correction. The earlier R04 receipt's byte-equivalence statements refer to its ORIGINAL prior SHA, **not** to the newly clarified Knowledge formulas.
+
+**Remaining:** original G10 canonical PR #750 still a real Q01/Q15 active owner dependency; full original S1 printed/PDF check and live MathJax browser AP2 have not been performed; active V2/ready/REGISTER still HOLD, `CONTENT_READY=NO`. No independent NotebookLM whole-topic verdict or website release is implied. No parallel learner version file added.
+
+Review prompt: compare the old and new R04 learner source on exactly 23 affected Knowledge lines, ensuring arrows, null vector, directed Oxy/Oxyz differences and centroid directions are correct. Test the independence of all sixteen First Tries and check their D6 help against actual Practice statements. Cross-check original canonical G10 ownership once PR #750 source is available, without changing any displayed SGK practice copy. Return affected Academic/PED and P0/P1/P2 with minimal delta; do not claim actual MathJax/AP rendering or release.
