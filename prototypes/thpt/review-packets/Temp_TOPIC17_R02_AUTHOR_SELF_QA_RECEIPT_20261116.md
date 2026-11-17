@@ -9,8 +9,8 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 76b8a10c12e2a60fa155901d153f17c9982193c4
-SOURCE_BLOB: 76b8a10c12e2a60fa155901d153f17c9982193c4
+ACADEMIC_SOURCE_BLOB: ae8bffe04a7c52e062c933739bafceb5412a8270
+SOURCE_BLOB: ae8bffe04a7c52e062c933739bafceb5412a8270
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
 AUTHOR_METADATA_BLOB: 69b1cae6ebda31d510efd1a8d7b6b7e5c3086d2c
 ORIGINAL_R00_SOURCE_BLOB: baa6c6c575a4cf79187b2aebd2047b1cf872b983
@@ -107,3 +107,8 @@ Một đoạn hướng dẫn ở phần **Tự kiểm tra** trước đây nói 
 **Tự kiểm Q03/Q10/Q14/Q15/Q16/Q18:** so sánh toàn văn với nguồn R02 ban đầu cho thấy duy nhất đoạn hướng dẫn này đổi; **57/57 placement IDs, 49/49 disclosures, 8/8 question-only selfcheck** nguyên trạng; không đổi bất cứ ví dụ, điều kiện toán, đề, đáp án, lời giải/rubric, mức điểm, SGK/SBT, SVG, mô hình, chế độ bảo vệ RD1, Final Submit hoặc Mastery. Độ sâu mỗi outcome không bị rút bớt. `DELTA_B_SOURCE_EQUIVALENT`; `AFFECTED_SCOPE_AUTHOR_SELF_QA_PASS`; đây không phải NotebookLM độc lập hoặc UAT giao diện.
 
 **Trạng thái kỹ thuật bàn giao:** tệp học liệu hiệu lực duy nhất nằm ở `ACADEMIC_SOURCE_PATH`; receipt này thay cho việc tạo file receipt R03 mới; bản R02 nguồn/receipt cũ lưu trong lịch sử Git. Chỉ chuyển `CONTENT_READY` cho bản R03 sau khi metadata, V2, ready, REGISTER và QA HEAD đồng bộ, không mặc nhiên kế thừa trạng thái R02. `NO_MERGE_NO_DEPLOY`.
+
+
+## Follow-up source typography — same learner file (17/11/2026)
+
+Read the source after the R03 learner-prelude correction. The only further learner edit is **Knowledge 3D frustum exploration line 326**: two escaped Markdown backtick substrings `\\`a=6\\``, `\\`h=4\\`` were visibly malformed. Corrected both to mathematical `\\(a=6\\)`, `\\(h=4\\)`; the numerical meanings, explanation and volume V=84 cm³ are identical. Exact source review: **57/57** canonical/public markers, **49/49** voluntary answer disclosures, **8/8** question-only selfcheck stems and entire Selfcheck section byte-identical; original SVG/geometry/answer/rubrics untouched. `DELTA_B_SOURCE_EQUIVALENT`, affected-scope `AUTHOR_SELF_VERIFIED` source QA PASS; not a new independent review and not actual browser AP2 PASS. New learner source `ae8bffe04a7c52e062c933739bafceb5412a8270`, historic R03 source remains in Git history. No parallel learner file. Corrected same existing receipt/handoff/ready/REGISTER at new SHA; no website/release change.
