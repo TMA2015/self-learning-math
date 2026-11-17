@@ -136,33 +136,96 @@ for(const [lesson,row] of rows){
   const visualField=k=>visual.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(visualField("R02_PUBLISHED_SOURCE_BLOB"),expected,
    "B08 R03 Delta A must follow exactly previously published R02 source blob");
-  // CI shallow checkout may not contain the already-published main commit.
-  // Recover exact immutable R02 blob by removing only the nine added
-  // boundary blank lines from candidate; no network or old Git tree needed.
-  const lines=source.split("\n"),restored=[];
-  let opens=0,closes=0,removed=0;
-  for(let i=0;i<lines.length;i++){
-   const line=lines[i];
-   if(line==="    \\["){
-    assert.equal(lines[i-1],"","B08 R03 every display opener must be separated from prose");
-    assert.equal(restored.pop(),"","B08 R03 opener must have a blank boundary");
-    opens++;removed++;
+
+  const r04Path=path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B08_SEMANTIC_3PLUS1_DELTA_R04_20261117.md");
+  if(fs.existsSync(r04Path)){
+   const r04=fs.readFileSync(r04Path,"utf8");
+   const f04=k=>r04.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(f04("BASELINE_R03_SOURCE_BLOB"),visualField("R03_CANDIDATE_SOURCE_BLOB"),
+     "B08 R04 extends exactly immutable R03 content");
+   const standard=fs.readFileSync(path.join(root,
+    "prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md"));
+   assert.equal(blob(standard),f04("R04_STANDARD_BLOB"),
+     "B08 semantic 3+1 must reference one owner-approved exact standard source");
+   const formal=source.slice(source.indexOf('=== "Kiến thức SGK"'),source.indexOf('=== "Ví dụ"'));
+   const signed=[
+    ["Định nghĩa — Tổng hai vectơ:",1],
+    ["Quy tắc ba điểm:",2],
+    ["Quy tắc hình bình hành:",2],
+    ["Tính chất phép cộng vectơ:",2],
+    ["Định nghĩa — Vectơ đối:",1],
+    ["Định nghĩa — Hiệu hai vectơ:",1],
+    ["Quy tắc hiệu hai vectơ chung gốc:",2],
+    ["Kiến thức cần nhớ — Bài 8:",3]
+   ];
+   let prev=-1;
+   for(const [label,group] of signed){
+    const pos=formal.indexOf(label);
+    assert(pos>prev,"B08 Q03/X-F.3 missing or reordered semantic outcome: "+label);
+    prev=pos;
    }
-   restored.push(line);
-   if(line==="    \\]"){
-    assert.equal(lines[i+1],"","B08 R03 every display closer must separate subsequent prose");
-    if([0,2,3].includes(closes)){
-     i++;removed++;
+   assert.equal((formal.match(/class="thpt-r4-knowledge-conclusion thpt-r4-concept-card"/g)||[]).length,3,
+    "B08: three actual formal definitions, not a word-based heading count");
+   assert.equal((formal.match(/class="thpt-r4-knowledge-conclusion thpt-r4-rule-card"/g)||[]).length,4,
+    "B08: four mandatory operational mathematical rules/properties");
+   assert.equal((formal.match(/class="thpt-r4-knowledge-conclusion" role="note"/g)||[]).length,1,
+    "B08: one actual math recap (local notes must be inline)");
+   assert.equal((formal.match(/class="thpt-r4-key-formula"/g)||[]).length,2,
+    "B08: exactly two unfilled key formula frames, not nested color cards");
+   assert(formal.includes("song song")===false||formal.includes("hình bình hành"),
+    "B08 must not distort prerequisites of parallelogram");
+   assert(formal.includes("Điểm đầu")||formal.includes("điểm đầu"),
+    "B08 must explicitly teach orientation of result vector");
+   assert(formal.includes("giao hoán")&&formal.includes("kết hợp")&&
+     formal.includes("vectơ-không")&&formal.includes("cùng độ dài, ngược hướng")&&
+     formal.includes("tổng")&&formal.includes("trung điểm")&&
+     formal.includes("trọng tâm"),
+     "B08 official math conditions and S1 outcome family must not disappear");
+   const examples=source.slice(source.indexOf('=== "Ví dụ"'),source.indexOf('=== "Lỗi thường gặp"'));
+   assert(examples.includes(String.raw`\overrightarrow{AM}+\overrightarrow{AM}`)&&
+     !examples.includes(String.raw`2\overrightarrow{AM}`),
+     "B08 R04 must not assume scalar-vector multiplication before B09");
+   const css=fs.readFileSync(path.join(root,
+    "docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"));
+   assert.equal(blob(css),f04("R04_CSS_BLOB"),
+    "B08 scoped CSS SHA must agree with Q18 packet");
+   const cssStr=css.toString("utf8"),marker="/* G10 ChIV B08 R04";
+   const p=cssStr.indexOf(marker);
+   assert(p>0&&cssStr.indexOf(marker,p+1)===-1,
+    "B08 3+1 css append must appear once");
+   assert.equal(blob(cssStr.slice(0,p-1)),f04("BASELINE_R05_B07_CSS_BLOB"),
+    "All B01–B07 Golden CSS must be unmodified before B08 exact scope");
+   expected=f04("R04_SOURCE_BLOB");
+  }else{
+   // CI shallow checkout may not contain the already-published main commit.
+   // Recover exact immutable R02 blob by removing only the nine added
+   // boundary blank lines from candidate; no network or old Git tree needed.
+   const lines=source.split("\n"),restored=[];
+   let opens=0,closes=0,removed=0;
+   for(let i=0;i<lines.length;i++){
+    const line=lines[i];
+    if(line==="    \\["){
+     assert.equal(lines[i-1],"","B08 R03 every display opener must be separated from prose");
+     assert.equal(restored.pop(),"","B08 R03 opener must have a blank boundary");
+     opens++;removed++;
     }
-    closes++;
+    restored.push(line);
+    if(line==="    \\]"){
+     assert.equal(lines[i+1],"","B08 R03 every display closer must separate subsequent prose");
+     if([0,2,3].includes(closes)){
+      i++;removed++;
+     }
+     closes++;
+    }
    }
+   assert.equal(opens,6,"B08 R03 has exactly six preserved display equations");
+   assert.equal(closes,6,"B08 R03 has six matching display closers");
+   assert.equal(removed,9,"B08 R03 has exactly nine added blank lines");
+   assert.equal(blob(restored.join("\n")),expected,
+    "Removing only nine B08 display boundary blanks MUST recover the published R02 Git blob");
+   expected=visualField("R03_CANDIDATE_SOURCE_BLOB");
   }
-  assert.equal(opens,6,"B08 R03 has exactly six preserved display equations");
-  assert.equal(closes,6,"B08 R03 has six matching display closers");
-  assert.equal(removed,9,"B08 R03 has exactly nine added blank lines");
-  assert.equal(blob(restored.join("\n")),expected,
-   "Removing only nine B08 display boundary blanks MUST recover the published R02 Git blob");
-  expected=visualField("R03_CANDIDATE_SOURCE_BLOB");
  }
  assert.equal(blob(source),expected,lesson+" exact final Q18 academic source receipt");
  assert.equal(candidateG10KnowledgeBlob(n),expected,lesson+" Q18 source router selects correct immutable snapshot");
