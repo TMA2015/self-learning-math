@@ -37,7 +37,7 @@ Không: cùng độ dài nhưng ngược hướng.
 
 **Vì sao cần học:** Ta trượt một mũi tên sang vị trí khác mà không đổi độ dời; nhưng quay 180° sẽ đổi ý nghĩa.
 
-**Hiểu bản chất, điều kiện trước công thức:** Với hai vectơ khác không, cùng phương nghĩa là có giá song song hoặc trùng nhau; cùng hướng còn đòi chiều thống nhất. Hai vectơ bằng nhau khi cùng hướng **và** cùng độ dài. Trong hình bình hành ABCD theo thứ tự, AB=DC dưới dạng vectơ, còn CD đối của AB. Cùng hướng của AB và AM không đủ để khẳng định M nằm giữa A,B.
+**Hiểu bản chất, điều kiện trước công thức:** Với hai vectơ khác không, cùng phương nghĩa là có giá song song hoặc trùng nhau; cùng hướng còn đòi chiều thống nhất. Hai vectơ bằng nhau khi cùng hướng **và** cùng độ dài. Trong hình bình hành ABCD theo thứ tự, \(\overrightarrow{AB}=\overrightarrow{DC}\), còn \(\overrightarrow{CD}=-\overrightarrow{AB}\). Cùng hướng của AB và AM không đủ để khẳng định M nằm giữa A,B.
 
 ![Hình bình hành: đọc hướng AB, DC và CD](../../visuals/THPT_G10_B07_PARALLELOGRAM_EQUAL_OPPOSITE_D5_R01.svg)
 
@@ -45,7 +45,7 @@ Không: cùng độ dài nhưng ngược hướng.
 
 **Ví dụ — Đề bài:** Trong hình bình hành ABCD theo đúng thứ tự A–B–C–D, so sánh các vectơ AB, DC và CD.
 
-**Lời giải:** Hai cạnh AB,DC song song, cùng chiều, cùng độ dài nên AB=DC theo nghĩa vectơ. Vectơ CD ngược chiều với AB nên CD=−AB. Chỉ có cùng độ dài thì chưa đủ để hai vectơ bằng nhau.
+**Lời giải:** Hai cạnh AB,DC song song, cùng chiều, cùng độ dài nên \(\overrightarrow{AB}=\overrightarrow{DC}\). Vectơ CD ngược chiều với AB nên \(\overrightarrow{CD}=-\overrightarrow{AB}\). Chỉ có cùng độ dài thì chưa đủ để hai vectơ bằng nhau.
 
 **Tự thử trước luyện tập:** Vectơ nào bằng AD: BC hay CB?
 
@@ -63,7 +63,7 @@ BC, vì cùng hướng và độ dài; CB là vectơ đối.
 
 **Vì sao cần học:** Đi A→B→C, điều ta cần thường là vị trí cuối so với A, không phải quãng đường vòng.
 
-**Hiểu bản chất, điều kiện trước công thức:** Quy tắc ba điểm: vectơ AB + BC = AC; mũi tên thứ hai phải bắt đầu từ đầu mũi tên thứ nhất. Độ dài |AB+BC| không nhất thiết bằng |AB|+|BC|. Với hai bước vuông góc, dùng Pitago để tìm độ dời; không cộng hai độ dài như khi tính quãng đường.
+**Hiểu bản chất, điều kiện trước công thức:** Quy tắc ba điểm: \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}\); mũi tên thứ hai phải bắt đầu từ đầu mũi tên thứ nhất. Độ dài \(\left|\overrightarrow{AB}+\overrightarrow{BC}\right|\) không nhất thiết bằng tổng độ dài \(AB+BC\). Với hai bước vuông góc, dùng Pitago để tìm độ dời; không cộng hai độ dài như khi tính quãng đường.
 
 **Ví dụ — Đề bài:** Từ vị trí đầu, đi 4 m đông và tiếp 6 m bắc. Viết vectơ tổng và tính độ dài đường tắt.
 
@@ -85,11 +85,11 @@ BC, vì cùng hướng và độ dài; CB là vectơ đối.
 
 **Vì sao cần học:** Hai lực cùng tác dụng từ một điểm không tạo ra ngay hai mũi tên nối đuôi, nhưng vẫn có một hợp lực.
 
-**Hiểu bản chất, điều kiện trước công thức:** Đặt hai vectơ cùng gốc, đường chéo của hình bình hành biểu diễn tổng. Phép trừ là cộng vectơ đối: u−v=u+(−v). Với ba điểm, AB−AC=CB (theo vectơ). Dấu âm đảo chiều vectơ AC, không phải AB; đây là nguyên nhân nhầm CB thành BC.
+**Hiểu bản chất, điều kiện trước công thức:** Đặt hai vectơ cùng gốc, đường chéo của hình bình hành biểu diễn tổng. Phép trừ là cộng vectơ đối: \(\vec u-\vec v=\vec u+(-\vec v)\). Với ba điểm, \(\overrightarrow{AB}-\overrightarrow{AC}=\overrightarrow{CB}\). Dấu âm đảo chiều vectơ AC, không phải AB; đây là nguyên nhân nhầm CB thành BC.
 
 **Ví dụ — Đề bài:** Cho A=(2,1), B=(5,3), C=(7,−2). Rút gọn AB−AC và nhận dạng vectơ thu được.
 
-**Lời giải:** AB=B−A=(3,2), AC=C−A=(5,−3), nên AB−AC=(−2,5). Đồng thời CB=B−C=(−2,5), do đó AB−AC=CB. Chỉ phép trừ hai vectơ chung gốc mới triệt A theo cách này.
+**Lời giải:** \(\overrightarrow{AB}=B-A=(3,2)\), \(\overrightarrow{AC}=C-A=(5,-3)\) theo tọa độ, nên \(\overrightarrow{AB}-\overrightarrow{AC}=(-2,5)\). Đồng thời \(\overrightarrow{CB}=B-C=(-2,5)\), do đó \(\overrightarrow{AB}-\overrightarrow{AC}=\overrightarrow{CB}\). Chỉ phép trừ hai vectơ chung gốc mới triệt A theo cách này.
 
 **Tự thử trước luyện tập:** Rút gọn PQ−PR thành vectơ nối R và Q.
 
@@ -129,11 +129,11 @@ RQ.
 
 **Vì sao cần học:** Điểm cân bằng của hai hoặc ba vị trí có thể tìm từ các vectơ, không cần đo trung bình cạnh.
 
-**Hiểu bản chất, điều kiện trước công thức:** Nếu M là trung điểm AB, MA+MB=0 và OM=(OA+OB)/2 với gốc O bất kỳ. Với trọng tâm G của tam giác ABC, GA+GB+GC=0; OG=(OA+OB+OC)/3. Nếu M là trung điểm BC, AG=(2/3)AM. Đây là trung bình **vị trí**, không phải trung bình độ dài.
+**Hiểu bản chất, điều kiện trước công thức:** Nếu M là trung điểm AB, \(\overrightarrow{MA}+\overrightarrow{MB}=\vec0\) và \(\overrightarrow{OM}=\tfrac12(\overrightarrow{OA}+\overrightarrow{OB})\) với gốc O bất kỳ. Với trọng tâm G của tam giác ABC, \(\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0\); \(\overrightarrow{OG}=\tfrac13(\overrightarrow{OA}+\overrightarrow{OB}+\overrightarrow{OC})\). Nếu M là trung điểm BC, \(\overrightarrow{AG}=\tfrac23\overrightarrow{AM}\). Đây là trung bình **vị trí**, không phải trung bình độ dài.
 
-**Ví dụ — Đề bài:** Cho tam giác A(0,0), B(6,0), C(0,3). Tìm trung điểm M của BC, trọng tâm G và kiểm tra hệ thức AG=(2/3)AM.
+**Ví dụ — Đề bài:** Cho tam giác A(0,0), B(6,0), C(0,3). Tìm trung điểm M của BC, trọng tâm G và kiểm tra hệ thức \(\overrightarrow{AG}=\tfrac23\overrightarrow{AM}\).
 
-**Lời giải:** Trung điểm M=((6+0)/2,(0+3)/2)=(3,3/2). Trọng tâm G=((0+6+0)/3,(0+0+3)/3)=(2,1). Từ A, AG=(2,1), AM=(3,3/2), nên (2/3)AM=(2,1)=AG. Hệ số 2/3 chỉ áp dụng khi M là trung điểm của BC.
+**Lời giải:** Trung điểm M=((6+0)/2,(0+3)/2)=(3,3/2). Trọng tâm G=((0+6+0)/3,(0+0+3)/3)=(2,1). Từ A, \(\overrightarrow{AG}=(2,1)\), \(\overrightarrow{AM}=(3,\tfrac32)\), nên \(\tfrac23\overrightarrow{AM}=(2,1)=\overrightarrow{AG}\). Hệ số 2/3 chỉ áp dụng khi M là trung điểm của BC.
 
 **Tự thử trước luyện tập:** Tam giác A(0,0),B(3,0),C(0,6) có trọng tâm ở đâu?
 
@@ -153,7 +153,7 @@ G=(1,2).
 
 **Vì sao cần học:** Đo sự thay đổi trên bản đồ không phụ thuộc điểm xuất phát đặt ở đâu.
 
-**Hiểu bản chất, điều kiện trước công thức:** Nếu A=(xA,yA), B=(xB,yB) thì vectơ AB=(xB−xA,yB−yA). Tọa độ **điểm** mô tả vị trí, còn tọa độ **vectơ** mô tả hai thay đổi theo trục. Bảo toàn vectơ khi tịnh tiến cả A,B như nhau. Phép cộng, trừ và nhân số trên Oxy tính theo từng thành phần.
+**Hiểu bản chất, điều kiện trước công thức:** Nếu A=(xA,yA), B=(xB,yB) thì \(\overrightarrow{AB}=(x_B-x_A,y_B-y_A)\). Tọa độ **điểm** mô tả vị trí, còn tọa độ **vectơ** mô tả hai thay đổi theo trục. Bảo toàn vectơ khi tịnh tiến cả A,B như nhau. Phép cộng, trừ và nhân số trên Oxy tính theo từng thành phần.
 
 **Ví dụ — Đề bài:** Hai điểm A=(−2,1), B=(3,5) trong Oxy. Tính AB, BA và so sánh độ dài, chiều.
 
@@ -243,7 +243,7 @@ Có, tích 1×4+2×(−2)=0.
 
 **Vì sao cần học:** Một drone có thể đi đông, bắc và lên cao; vectơ hai chiều không diễn tả đủ ba thay đổi.
 
-**Hiểu bản chất, điều kiện trước công thức:** Phép cộng vectơ trong không gian giữ nguyên quy tắc nối đuôi. Trong hình hộp ABCD.A'B'C'D', AC'=AB+AD+AA' dưới dạng vectơ: ba cạnh xuất phát từ A đưa ta tới đỉnh C'. Hình phối cảnh có thể làm góc trông bị méo; không lấy góc trên giấy làm góc không gian thật. Chỉ khi ba cạnh vuông góc đôi một mới dùng căn tổng bình phương để tìm đường chéo.
+**Hiểu bản chất, điều kiện trước công thức:** Phép cộng vectơ trong không gian giữ nguyên quy tắc nối đuôi. Trong hình hộp ABCD.A'B'C'D', \(\overrightarrow{AC'}=\overrightarrow{AB}+\overrightarrow{AD}+\overrightarrow{AA'}\): ba cạnh xuất phát từ A đưa ta tới đỉnh C'. Hình phối cảnh có thể làm góc trông bị méo; không lấy góc trên giấy làm góc không gian thật. Chỉ khi ba cạnh vuông góc đôi một mới dùng căn tổng bình phương để tìm đường chéo.
 
 ![Hình hộp: ba hướng cạnh cộng thành đường chéo](../svg/FIG-G12-CHII-B06-R00.svg)
 
@@ -269,17 +269,17 @@ C' vì còn một bước theo chiều cao AA'.
 
 **Vì sao cần học:** Dù ba điểm nằm trên một mặt phẳng nghiêng, độ dời qua B vẫn bằng độ dời trực tiếp từ A đến C.
 
-**Hiểu bản chất, điều kiện trước công thức:** Trong không gian AB+BC=AC không cần A,B,C ở Oxy. Trung điểm M của AB thỏa MA+MB=0; trọng tâm tam giác ABC vẫn thỏa GA+GB+GC=0. Không nhầm giao điểm hai đoạn nhìn thấy trên hình chiếu với giao điểm thật của chúng trong không gian.
+**Hiểu bản chất, điều kiện trước công thức:** Trong không gian \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}\) không cần A,B,C ở Oxy. Trung điểm M của AB thỏa \(\overrightarrow{MA}+\overrightarrow{MB}=\vec0\); trọng tâm tam giác ABC vẫn thỏa \(\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0\). Không nhầm giao điểm hai đoạn nhìn thấy trên hình chiếu với giao điểm thật của chúng trong không gian.
 
-**Ví dụ — Đề bài:** Trong Oxyz, A=(1,0,2), B=(4,−2,5), C=(5,1,7). Kiểm tra quy tắc Chasles AB+BC=AC.
+**Ví dụ — Đề bài:** Trong Oxyz, A=(1,0,2), B=(4,−2,5), C=(5,1,7). Kiểm tra quy tắc Chasles \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}\).
 
-**Lời giải:** AB=(3,−2,3), BC=(1,3,2), cộng thành (4,1,5). AC=C−A=(4,1,5), khớp. Quy tắc Chasles nối điểm đầu A qua B đến điểm cuối C, đúng trong không gian như trong mặt phẳng.
+**Lời giải:** \(\overrightarrow{AB}=(3,-2,3)\), \(\overrightarrow{BC}=(1,3,2)\), cộng thành (4,1,5). \(\overrightarrow{AC}=C-A=(4,1,5)\), khớp. Quy tắc Chasles nối điểm đầu A qua B đến điểm cuối C, đúng trong không gian như trong mặt phẳng.
 
-**Tự thử trước luyện tập:** AB=(2,−1,3),BC=(−4,2,0): AC bằng bao nhiêu?
+**Tự thử trước luyện tập:** \(\overrightarrow{AB}=(2,-1,3)\), \(\overrightarrow{BC}=(-4,2,0)\): \(\overrightarrow{AC}\) bằng bao nhiêu?
 
 <details markdown="1"><summary>Đối chiếu sau khi tự giải</summary>
 
-AC=(−2,1,3).
+\(\overrightarrow{AC}=(-2,1,3)\).
 
 **Gặp lỗi ở đâu?** Nếu trừ vì nghĩ chiều BC ngược AB, nhớ quy tắc đường đi là cộng nối tiếp.
 
@@ -317,7 +317,7 @@ Có: dot=1−1+0=0, cả hai khác không.
 
 **Vì sao cần học:** Thay đổi nơi đặt gốc bản đồ làm tọa độ vị trí đổi, nhưng độ dời A→B không đổi.
 
-**Hiểu bản chất, điều kiện trước công thức:** Điểm M=(x,y,z) là **vị trí**, vectơ OM=(x,y,z) là một **dịch chuyển** từ gốc. Với A,B, vectơ AB=(xB−xA,yB−yA,zB−zA). Ba trục vuông góc được vẽ xiên trên mặt giấy; độ dài trên bản vẽ không phải dữ kiện thật. Khi giữ hướng trục và đơn vị, tịnh tiến gốc làm tọa độ điểm thay đổi nhưng hiệu B−A không đổi.
+**Hiểu bản chất, điều kiện trước công thức:** Điểm M=(x,y,z) là **vị trí**, \(\overrightarrow{OM}=(x,y,z)\) là một **dịch chuyển** từ gốc. Với A,B, \(\overrightarrow{AB}=(x_B-x_A,y_B-y_A,z_B-z_A)\). Ba trục vuông góc được vẽ xiên trên mặt giấy; độ dài trên bản vẽ không phải dữ kiện thật. Khi giữ hướng trục và đơn vị, tịnh tiến gốc làm tọa độ điểm thay đổi nhưng hiệu B−A không đổi.
 
 ![Trục Oxyz và điểm M=(2,1,3)](../svg/FIG-G12-CHII-B07-R00.svg)
 
