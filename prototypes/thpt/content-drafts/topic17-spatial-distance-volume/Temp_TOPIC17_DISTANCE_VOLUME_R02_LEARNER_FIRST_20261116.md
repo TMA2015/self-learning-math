@@ -729,7 +729,7 @@ Chân cao O là tâm đáy. Với M là trung điểm cạnh đáy, OM=3 cm và 
 
 
 
-## D5 — Sáu hình học liệu SVG độc lập, có chữ mô tả và kiểm toán hình
+<!-- AUTHORING_D5_ONLY: six SVG proof references belong in A1 metadata, not student Practice headings -->
 
 </details>
 
