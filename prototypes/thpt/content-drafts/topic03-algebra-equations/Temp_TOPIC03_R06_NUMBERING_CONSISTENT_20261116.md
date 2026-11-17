@@ -62,7 +62,7 @@ Giải a(x−1)=0 theo tham số a.
 
 Nếu a≠0 thì x=1, nếu a=0 thì mọi x∈ℝ.
 
-Nếu quên trường hợp hệ số 0, đặt a=0 và thử x=6; luyện ADD03, ADD04.
+Nếu quên trường hợp hệ số 0, đặt a=0 và thử x=6; làm lại Bài 3 và Bài 4 trong phần Luyện tập.
 
 </details>
 
@@ -90,7 +90,7 @@ Giải (x−5)(x+1)=0.
 
 x=5 hoặc x=−1; thử vào từng thừa số.
 
-Nếu tìm được một nghiệm mà không xét nhân tử còn lại, quay lại ab=0 và luyện ADD05, ADD06.
+Nếu tìm được một nghiệm mà không xét nhân tử còn lại, quay lại ab=0 và làm lại Bài 5 và Bài 6 trong phần Luyện tập.
 
 </details>
 
@@ -118,7 +118,7 @@ Giải x²+4x+4=0.
 
 (x+2)²=0 ⇒ x=−2 (nghiệm kép), không phải hai giá trị khác nhau.
 
-Nếu Δ âm mà cho nghiệm thực, hoàn phương thành tổng số không âm để kiểm; luyện ADD07, ADD08.
+Nếu Δ âm mà cho nghiệm thực, hoàn phương thành tổng số không âm để kiểm; làm lại Bài 7 và Bài 8 trong phần Luyện tập.
 
 </details>
 
@@ -150,7 +150,7 @@ Giải (x²−9)/(x−3)=0.
 
 Điều kiện x≠3. Tử (x−3)(x+3)=0 cho 3 hoặc −3; loại 3, nghiệm duy nhất −3.
 
-Nếu rút gọn rồi kết luận nhận x=3, thay x=3 vào mẫu để thấy vô nghĩa; luyện ADD09/ADD10.
+Nếu rút gọn rồi kết luận nhận x=3, thay x=3 vào mẫu để thấy vô nghĩa; làm lại Bài 9 và Bài 10 trong phần Luyện tập.
 
 </details>
 
@@ -178,7 +178,7 @@ Giải |x+3|=x+3.
 
 Vì |u|=u khi u≥0, ta có x+3≥0 ⇒ x≥−3. Thử x=−4 cho |−1|=1 khác −1.
 
-Nếu quên điều kiện B≥0, thử một x làm B âm; luyện ADD11/ADD12.
+Nếu quên điều kiện B≥0, thử một x làm B âm; làm lại Bài 11 và Bài 12 trong phần Luyện tập.
 
 </details>
 
@@ -214,7 +214,7 @@ Giải √(x+1)=x.
 
 Điều kiện x≥0; bình phương x+1=x² ⇒ x=(1±√5)/2. Chỉ x=(1+√5)/2≥0 được nhận.
 
-Nếu hai nghiệm sau bình phương đều được nhận, thử nghiệm âm và so dấu hai vế; luyện ADD13/ADD14.
+Nếu hai nghiệm sau bình phương đều được nhận, thử nghiệm âm và so dấu hai vế; làm lại Bài 19 và Bài 20 trong phần Luyện tập.
 
 </details>
 
@@ -246,7 +246,7 @@ Giải √(x²+5)=√(4x+2).
 
 Miền x≥−1/2. Bình phương x²+5=4x+2 ⇒ (x−1)(x−3)=0, x=1 hoặc 3; cả hai hợp miền, thử được √6 và √14 tương ứng ở mỗi vế.
 
-Nếu quên một miền căn, thay nghiệm âm khiến radicand âm để tự bác; luyện ADD15 và C02/W18-01.
+Nếu quên một miền căn, thay nghiệm âm khiến radicand âm để tự bác; làm lại Bài 21, Bài 14 và Bài 18 trong phần Luyện tập.
 
 </details>
 
@@ -262,9 +262,9 @@ Hãy kiểm tra trường hợp sau: √(3x+1)=x−1: x≥1. Bình phương 3x+1
 
 **Ví dụ**
 
-**Đề bài.** Giải \(\sqrt{2x+7}=x+1\).
+**Đề bài.** Giải \(\sqrt{x+6}=x\).
 
-**Lời giải.** Vế phải cần không âm nên \(x\ge-1\); khi đó \(2x+7\ge5>0\). Bình phương được \(2x+7=(x+1)^2\), tức \(x^2=6\). Ứng viên \(\pm\sqrt6\); chỉ \(+\sqrt6\ge-1\). Với nghiệm này, hai vế không âm và có bình phương bằng nhau, nên đúng. Vậy \(S=\{\sqrt6\}\).
+**Lời giải.** Vì căn bậc hai số học không âm nên vế phải phải thỏa \(x\ge0\); khi đó \(x+6\ge6>0\), căn có nghĩa. Bình phương hai vế được \(x+6=x^2\), hay \((x-3)(x+2)=0\). Hai ứng viên là \(x=3\) và \(x=-2\); loại \(-2\) vì không thỏa \(x\ge0\). Thử trực tiếp \(x=3\): \(\sqrt{3+6}=3\), đúng bằng vế phải. Vậy tập nghiệm là \(S=\{3\}\).
 
 **Vận dụng**
 
@@ -274,7 +274,7 @@ Giải √(2x+7)=x+1.
 
 Cần x≥−1. Bình phương x²−6=0 ⇒ x=±√6; chỉ +√6≥−1 đạt, âm bị loại. Thử căn bằng √6+1.
 
-Nếu chỉ dùng điều kiện A≥0 rồi giữ nghiệm B âm, thử gốc sẽ sai; luyện ADD16,C01,P01,P02.
+Nếu chỉ dùng điều kiện A≥0 rồi giữ nghiệm B âm, thử gốc sẽ sai; làm lại Bài 22, Bài 13, Bài 15 và Bài 16 trong phần Luyện tập.
 
 </details>
 
@@ -306,7 +306,7 @@ Giải √(x²+5)=x−2 trong ℝ.
 
 Điều kiện x≥2. Bình phương x²+5=x²−4x+4 ⇒ x=−1/4, trái miền. Vậy S=∅, không nhận ứng viên.
 
-Nếu kết luận nghiệm chỉ bằng giải phương trình sau bình phương, hãy lập bảng ‘ứng viên→miền→dấu→gốc’; luyện ADD17,ADD18 và W01.
+Nếu kết luận nghiệm chỉ bằng giải phương trình sau bình phương, hãy lập bảng ‘ứng viên→miền→dấu→gốc’; làm lại Bài 23, Bài 24 và Bài 25 trong phần Luyện tập.
 
 </details>
 
@@ -338,7 +338,7 @@ Giải x⁴−2x²−3=0.
 
 t=x²≥0; t²−2t−3=(t−3)(t+1)=0. Chỉ t=3 hợp lệ ⇒ x=±√3.
 
-Nếu suy x²=−1 có nghiệm thực, kiểm tính không âm của bình phương; luyện ADD19,ADD20.
+Nếu suy x²=−1 có nghiệm thực, kiểm tính không âm của bình phương; làm lại Bài 28 và Bài 29 trong phần Luyện tập.
 
 </details>
 
@@ -366,7 +366,7 @@ Một xe đi 90 km với tốc độ v>0; nếu tăng 15 km/h thì nhanh hơn 1 
 
 90/v−90/(v+15)=1 ⇒ v²+15v−1350=0 ⇒ (v−30)(v+45)=0. Lọc v>0 ⇒ v=30 km/h; thời gian 3 giờ và 2 giờ.
 
-Nếu quên miền vật lý hoặc mẫu v(v+15)≠0, đặt biến/đơn vị lại rồi thử số; luyện ADD21,P04,W18-02,W02.
+Nếu quên miền vật lý hoặc mẫu v(v+15)≠0, đặt biến/đơn vị lại rồi thử số; làm lại Bài 30, Bài 26, Bài 27 và Bài 31 trong phần Luyện tập.
 
 </details>
 
