@@ -367,11 +367,11 @@ for(const [lesson,row] of rows){
    (official.match(/class="thpt-r4-knowledge-conclusion" role="note"/g)||[]).length,
    (official.match(/class="thpt-r4-key-formula"/g)||[]).length
   ],[1,2,1,2],"B10 3+1 formal roles must match actual math");
-  for(const x of ["\vec u=x\vec i+y\vec j",
-   "\overrightarrow{AB}=(x_B-x_A;y_B-y_A)",
-   "\vec u+\vec v=(a+c;b+d)",
-   "AB=\sqrt{(x_B-x_A)^2+(y_B-y_A)^2}",
-   "ad-bc=0","\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0"])
+  for(const x of [String.raw`\vec u=x\vec i+y\vec j`,
+   String.raw`\overrightarrow{AB}=(x_B-x_A;y_B-y_A)`,
+   String.raw`\vec u+\vec v=(a+c;b+d)`,
+   String.raw`AB=\sqrt{(x_B-x_A)^2+(y_B-y_A)^2}`,
+   "ad-bc=0",String.raw`\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0`])
    assert(official.includes(x),"B10 mandatory S1 mathematics absent "+x);
   const discover=source.split('=== "Khám phá kiến thức"')[1].split('=== "Kiến thức SGK"')[0];
   assert(discover.indexOf("THPT_G10_B10_COORDINATES_DIFFERENCE_D5_R01.svg")>0&&
