@@ -8,18 +8,18 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: eb0d45032fb771082efd9aaef39a5311c87414c3
+SOURCE_COMMIT: c7ec97d5c8cc33ddb471de93ba6adae9915400fe
 AUTHOR_PR: 817
 CURRENT_PR: #817 Draft AUTHORING, no merge/deploy
 CATALOG_TOPIC_ID: CD01
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R07_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 0941242cee95d21c5a83da9f6f01c022443272d8
+ACADEMIC_SOURCE_BLOB: fefe797ee158ee357533605267496ed415a7681a
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC01_R07_NUMBERING_DELTA_A_Q18_20261116.md (AUTHOR_SELF_QA, no fresh independent NotebookLM PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC01_R07_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: 3732db6a26a13c52f84f574d1c2c3468513c7eca
+REVIEW_RECEIPT_BLOB: f454e239f22df9c306ef69d1e82f0900f02a48ea
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC01-LOGIC-SETS-FULL-R07_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: 78c2712a529f124f397d6a502ec1fa5a985024de
+AUTHOR_HANDOFF_BLOB: f78d61a663b3d4dee738650e869dcdfe380a4558
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_CANONICAL_SOURCE_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 09d36b0d289ebc54cc4ee51805503cf7f6e714f2
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_PUBLIC_EXTENSION_06ITEM_R01_20261112.md
@@ -47,9 +47,15 @@ R04_HISTORICAL_Q18_RECEIPT_BLOB: c17156275e7835121ce6232ff3f574c64d53c181
 CANONICAL_DISPLAY_MODE: READ_ONLY_ORIGINAL_18_PLUS_EXTENSION_6
 TOPIC_SELF_CHECK: PUBLIC_REPLAY_11_NO_MASTERY
 
+## 18/11/2026 · Current learner knowledge-recall closure
+
+- Source `fefe797ee158ee357533605267496ed415a7681a` adds four short knowledge-summary bullets, correctly reusing **already explicit formal definitions, properties and formula**; no blanket new boxes or unsourced mathematics. One source and one PACKET_ID maintained.
+- Exact previous effective source `15ecc1b8f2c9d916e3e8e4a320609c2e36ebbb95` verified with unchanged 24 canonical item text, complete public Practice and 11 question-only Selfcheck sections, original SVG paths, existing mathematical boxes and reveal count. Q18 targeted DELTA_C AUTHOR_SELF_VERIFIED at `f454e239f22df9c306ef69d1e82f0900f02a48ea`, A1 `0c0fd28720853c4c69d4b8c9380c750421a51c31`, V2 `f78d61a663b3d4dee738650e869dcdfe380a4558`.
+- No new independent NotebookLM reviewer verdict or RELEASE acceptance. Browser MathJax, Final Submit and device QA still belong to RELEASE. No merge or deploy.
+
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — new CĐ01 student-first source `0941242cee95d21c5a83da9f6f01c022443272d8`, QA receipt `3732db6a26a13c52f84f574d1c2c3468513c7eca`, 18 immutable original + six newly authored PUBLIC formative canonical questions, single V2 handoff.
+- [x] A1_SOURCE_SNAPSHOT — Current CĐ01 learner source fefe797ee158ee357533605267496ed415a7681a, signed scoped Q18 f454e239f22df9c306ef69d1e82f0900f02a48ea, author metadata 0c0fd28720853c4c69d4b8c9380c750421a51c31, V2 f78d61a663b3d4dee738650e869dcdfe380a4558. Prior source 15ecc1b8f2c9d916e3e8e4a320609c2e36ebbb95 and historical R06/R07 remain immutable; 24 canonical item placements unchanged.
 - [x] A2_SGK_SBT_SCOPE — S1 source *reference only*, prior independent original receipt KNTT G10 T1 B01 printed SGK 5–11/SBT5–7; B02 SGK12–19/SBT8–11. Catalog CĐ01/22 is the organizing unit, not SGK chapters.
 - [x] A3_NOTEBOOKLM_VERDICT — original 18 SGK public bank academic NotebookLM PASS on historic frozen source SHA `95a554e31a613b8e215679fe6790738473d598df` only; CĐ01 R06 complete 11-outcome Delta C verified by exact-source author self-Q18 receipt: 11 standalone examples, 24 displayed original canonical stems/solutions and 2 Written rubrics, NO claim of new independent reviewer PASS.
 - [x] A4_ITEM_OUTCOME_IDS — 11/11 Topic outcomes, 24 distinct PUBLIC canonical IDs (18 previous/6 original new), 2 original Written with single rubric, 11 reused public selfcheck placements NO_MASTERY.
