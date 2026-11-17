@@ -222,3 +222,33 @@ Outcome counts are from canonical Topic PR/receipt. CĐ20 outcomes use `PRIMARY_
 - Candidate [Draft #883](https://github.com/TMA2015/self-learning-math/pull/883) đã cập nhật phiên bản của đúng THPT-TOP19-T02: CONTENT_VERSION TOP19-R03 → TOP19-R10 để nhận diện stem và D6 thay đổi. **Git source blob mới = 37612a3fb8d804efa6dd4f65ddd22d90bf2772ae**, commit 28bc108f49b76f981025081638265b82f0a5862f. 13 First Try item khác vẫn TOP19-R03; tổng 14 item_id unchanged; 56 disclosure open/close; public selfcheck question-only; toàn Practice/Selfcheck giữ đúng R09.
 - Q15 canonical R09 metadata còn khai owner TOPIC_R08_CANONICAL cho T02; **chưa** cập nhật sang canonical active R10. Để đóng phải kiểm trong một source canonical mới cùng 1 item_id/1 version/1 đề–key–solution–rubric, không thêm bản sao chấm. T02 stem tương đương về điều kiện 4 áo/3 huy hiệu, đáp án 12 bộ không đổi, D6 được giải thích bằng bảng 4×3 tại chỗ; **DELTA_C_PED_MATERIAL** vì thay D6 và quy tắc nhân. Học thuật/nguồn/receipt Q18 của bản R10 chưa sign; CHƯA CONTENT_READY.
 - Chốt tiến độ: 11/11 Topic P1 của R03 đã có candidate chỉnh sửa thực tế trong #883–#893, nhưng **0/11 candidate mới đã đạt Q15/Q18 hoàn chỉnh**. Không đồng nghĩa 11 P1 được FIXED_FINAL. Giữ signed snapshot lịch sử, không merge/deploy.
+
+
+---
+
+<!-- TOPIC_R06_D6_TARGETED_RECEIPTS_20261117 -->
+## R06 · Source-locked Q15/Q18 targeted AUTHOR_SELF_QA for CĐ20/CĐ21
+
+**Source authority Q18 clarification:** GitHub effective SLM-THPT-QUALITY-ONE v3.1.0 (standard blob 5a80b20ce99be3179d03d56a73fa57b6f4882fd8) explicitly permits Q18_AUTHOR_SELF_VERIFIED if there is real source/math/S1/PED/item and assessment custody evidence. It does **not** require NotebookLM independent review by default for every delta; do not claim NotebookLM verdict without actually collecting one. This R06 documents **targeted** author recheck only, not CONTENT_READY. It supersedes the R05 field “Q15/Q18 chưa kiểm phần sửa” **for the affected scope of only these two Topics**.
+
+### CĐ20 · R12, original blocker ACA-05
+
+- [Draft #884](https://github.com/TMA2015/self-learning-math/pull/884); learner Git SOURCE_BLOB **a5507a33daea690a1193c965999e1d652340cb58**.
+- Author Q18 targeted receipt [file](https://github.com/TMA2015/self-learning-math/blob/7eef632822c652db5db00c9699b5e72677660fda/prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R12_D6_Q15_Q18_AUTHOR_TARGETED_RECEIPT_20261117.md), Git blob **5ee1dbfa9170272036433d128bfa25cef1912e36**.
+- Source-derived Q15 full active-for-candidate matrix [file](https://github.com/TMA2015/self-learning-math/blob/7eef632822c652db5db00c9699b5e72677660fda/prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R12_Q15_CANONICAL_ITEM_OUTCOME_ROLE_VERSION_MATRIX_20261117.md), Git blob **a19bed3c52a24e582bfa2b262d6d20f76f0e7c09**.
+- Exact old→new source diff excluding new author-only HTML comment: **7 original lines changed**: intro L9; W01/W02/W03 CONTENT_VERSION L760/L788/L814; D6 L782/L808/L836. Everything else byte-identical, including all math/rubric content and whole question-only Tự kiểm tra. W01–W03 versions moved from TOP20-R09 to **TOP20-R12**; exactly same 37 IDs, 17 T + 17 P + 3 W, 11 public replay placements, 17 outcome coverage.
+- Manual six route proof: W01 unordered Bài 7 / complement Bài 8, W02 union Bài 14 / independence Bài 13, W03 independent conjunction Bài 16 / union Bài 14, all actual headings and explanations located. Independently rechecked W01 C(8,2)=28, 3/28 and 9/14; W02 union 5/6 and non-independence 1/6≠1/4; W03 intersection 1/6, union 2/3, neither 1/3.
+- **Verdict:** Q08/PED6 affected-author QA PASS, candidate Q15 ID/version/placement PASS, Q18 targeted-author receipt PASS. **Active global canonical owner, V2/ready/REGISTER not changed** → CONTENT_READY=NO; old R11 signed receipt still pinned to immutable R11 SHA.
+
+### CĐ21 · R06, original blocker ACA-06
+
+- [Draft #885](https://github.com/TMA2015/self-learning-math/pull/885); learner Git SOURCE_BLOB **f1e9a0f2a52574f832c27a724189e9f1869940ae**.
+- Author Q18 targeted receipt [file](https://github.com/TMA2015/self-learning-math/blob/51f946398469f948c2c062798250dd9875641de0/prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R06_D6_Q15_Q18_AUTHOR_TARGETED_RECEIPT_20261117.md), Git blob **567b7503f40c07d998792560043e28251f405ed1**.
+- Source-derived Q15 full active-for-candidate matrix [file](https://github.com/TMA2015/self-learning-math/blob/51f946398469f948c2c062798250dd9875641de0/prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R06_Q15_CANONICAL_ITEM_OUTCOME_ROLE_VERSION_MATRIX_20261117.md), Git blob **6c5cd14634f2ecbfe77062228c8964a53c1b1176**.
+- Exact old→new source diff excluding author comment: **22 original lines changed**: eight First Try item version lines and eight D6 lines; three Written item version lines and three D6 lines. Every other line is byte-identical; T01–T08 and W01–W03 now TOP21-R06; P01–P08 keep TOP21-R03, exact 19 IDs, 8 public selfcheck replay placements, 8 outcome coverage. Two repetitive D6 phrases also polished in the same two D6 lines.
+- All 11 learner routes inspected against true Knowledge 1.1–3.2 and corresponding eight full visible Practice items. Independently recomputed **11 affected maths** including conditional 1/3, without replacement 5/18, 1/4 independence, total 1/20, Bayes 3/4, tree 7/25, base rate 6/55, Written 5/8 +5/11 +1/4, 2/15 +1/2, and 16/115.
+- **Verdict:** Q08/PED6 affected-author QA PASS, candidate Q15 ID/version/placement PASS, Q18 targeted-author receipt PASS. **Active global canonical owner, V2/ready/REGISTER not changed** → CONTENT_READY=NO; old R05 signed receipt remains historically scoped.
+
+### Remaining blockers and boundary
+
+The two targeted receipts do **not** change the verdict for the other nine affected candidates, and do not prove new full-book S1 PDF verification or website AP/Final Submit. The pair of Q15 source-derived candidate matrices each declares one **proposed** new canonical owner, without activating that owner in global REGISTER or spawning duplicate active item bodies. Administrative harmonization (single V2/ready/REGISTER matching source SHA, owner acceptance gate) is next. The 22-topic audit ledger remains intact: **11/11 have source candidates, 2/11 targeted author source-delta QA completed, 0/11 newly CONTENT_READY**. Do not merge/deploy or edit Firebase/RD1.
