@@ -94,8 +94,20 @@ for(let n=1;n<=27;n++){
     "B08 R03 receipt requires precise display-only evidence");
    expected=visualField("R03_CANDIDATE_SOURCE_BLOB");
   }
+  const semanticPath=path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B08_SEMANTIC_3PLUS1_DELTA_R04_20261117.md");
+  if(fs.existsSync(semanticPath)){
+   const semantic=fs.readFileSync(semanticPath,"utf8");
+   const semField=k=>semantic.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(semField("BASELINE_R03_SOURCE_BLOB"),expected,
+    "B08 R04 must extend the exact immutable R03 display snapshot");
+   assert(semantic.includes("OWNER_P2_PENDING")&&semantic.includes("FORMAL_DEFINITION")&&
+    semantic.includes("FORMAL_RULE")&&semantic.includes("KEY_FORMULA"),
+    "B08 R04 owner-approved semantic roles require signed Q18 evidence");
+   expected=semField("R04_SOURCE_BLOB");
+  }
   assert.equal(blob(fs.readFileSync(path.join(root,"docs",route+".md"))),expected,
-   "B08 current source must match immutable R02→R03 source-locked receipts");
+   "B08 source must match its complete immutable R02→R03→R04 academic source chain");
   const first=markdown.indexOf('=== "Khám phá kiến thức"'),second=markdown.indexOf('=== "Kiến thức SGK"');
   assert(first>=0&&second>first&&markdown.slice(first,second).includes("THPT_G10_B08_TRIANGLE_PARALLELOGRAM_SUM_D5_R01.svg"),
    "B08 authentic D5 figure must guide concept-first discovery");
