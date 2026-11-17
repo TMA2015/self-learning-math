@@ -4,9 +4,9 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 STANDARD_BLOB: 5a80b20ce99be3179d03d56a73fa57b6f4882fd8
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-DELTA_CLASS: DELTA_C_PED_TARGETED
+DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
 SOURCE_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 30e332a54a20c6c8e2f7e8bd765d53db9f1beb25
+SOURCE_BLOB: 44c3a3a0ffcdefa9a3c4eaf6ad1d4f78012541b4
 BASELINE_SOURCE_BLOB: 3052d5f7090f74af2eca7739047c59ed76ccda63
 BASELINE_AUTHOR_Q18_RECEIPT_BLOB: 9b3c25de45fc8601f2b5c8c11c6f7dc89b015fbc
 AFFECTED_P0: 0
@@ -51,3 +51,10 @@ Review prompt (four sentences): Reopen the learner R06 source exact Git SHA and 
 ## CONSOLIDATED_IN_PLACE — user decision 17/11/2026
 
 The verified 16 PED6 changes were applied directly to the existing numbered R06 learner source at `SOURCE_PATH` (new blob `30e332a54a20c6c8e2f7e8bd765d53db9f1beb25`), **not** to a parallel learner candidate file. The previously created patch candidate is no longer an effective release input and may be removed from the branch. Original R06 heading numbering, all canonical/public display IDs, question stems, answer/reveal blocks, Written rubric/points, figures, Practice and public question-only Selfcheck roles remain the original baseline except the declared math formatting in Topic04. This receipt now applies to the CURRENT R06 source; earlier old-candidate SHA references in discussion are historical Git provenance only. Author self-check is affected-scope, not full independent Topic quality review or website display QA. `RELEASE=HOLD` until exact active Q01–Q18 & original S1 owner/ready gates close.
+
+## Current 18/11/2026 learner formal-knowledge delta — HOLD retained
+
+- Current effective one learner source `44c3a3a0ffcdefa9a3c4eaf6ad1d4f78012541b4` differs from the 17/11 D6-targeted learner snapshot `30e332a54a20c6c8e2f7e8bd765d53db9f1beb25` **only** by three formal boxes at TOP05-O01 (function), O02 (sqrt-rational domain), O07 (even/odd with symmetric domain), plus a concise student knowledge recap. This bounded academic explanation update is DELTA_C, not a source-equivalent UI-only change.
+- Rechecked O01: each x in D maps to exactly one f(x) (repeating same ordered pair is harmless); O02: radical numerator requires A≥0 and divisor B≠0; O07: even/odd require symmetric domain and identity f(-x)=±f(x). Adjacent original Examples and First Try outcomes unchanged.
+- Complete 38 canonical Practice stem/key/solution/rubric/D6 content byte-exact versus `30e332a54a20c6c8e2f7e8bd765d53db9f1beb25`; 17 public Selfcheck question-only unchanged, canonical comments, 3 SVG paths and reveal counts preserved. Previous 16 D6 destination corrections from this receipt remain exactly in current learner source; avoid conflating the older candidate SHA in title with the current snapshot.
+- **TARGETED_AUTHOR_SELF_QA_PASS** on added Knowledge explanations only. **GLOBAL_ACTIVE_V2_READY_REGISTER=HOLD** and **CONTENT_READY=NO** remain deliberately unchanged because original #889 did not grant full Topic Academic/PED/one-handoff readiness. Do not alter the historical ready manifest into a premature claimed PASS. No independent NotebookLM, official assessment, website, merge/deploy.
