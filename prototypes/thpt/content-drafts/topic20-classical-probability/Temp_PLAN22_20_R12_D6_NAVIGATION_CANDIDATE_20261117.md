@@ -758,7 +758,7 @@ Ba bài tự luận dưới đây yêu cầu trình bày lời giải và giải
 
 ### 3.1. Bài tự luận 1
 
-<!-- ITEM_ID: THPT-TOP20-W01; ROLE: TOPIC_WRITTEN; PRIMARY_OUTCOME: TOP20-O08; CONTENT_VERSION: TOP20-R09; PUBLIC_SELF_SCORED_NO_MASTERY; NOT_PROTECTED_RD1 -->
+<!-- ITEM_ID: THPT-TOP20-W01; ROLE: TOPIC_WRITTEN; PRIMARY_OUTCOME: TOP20-O08; CONTENT_VERSION: TOP20-R12; PUBLIC_SELF_SCORED_NO_MASTERY; NOT_PROTECTED_RD1 -->
 
 **Tự luận 1.** Có 8 phiếu phân biệt, 3 phiếu đỏ và 5 phiếu xanh. Chọn đều một nhóm 2 phiếu không xét thứ tự. (a) Có bao nhiêu nhóm kết quả? (b) Tính P(cả hai đỏ). (c) Tính P(ít nhất một đỏ) bằng biến cố đối.
 
@@ -786,7 +786,7 @@ Ba câu đều đếm bằng **nhóm không thứ tự**, nên cách lập tỉ 
 
 ### 3.2. Bài tự luận 2
 
-<!-- ITEM_ID: THPT-TOP20-W02; ROLE: TOPIC_WRITTEN; PRIMARY_OUTCOME: TOP20-O14; CONTENT_VERSION: TOP20-R09; PUBLIC_SELF_SCORED_NO_MASTERY; NOT_PROTECTED_RD1 -->
+<!-- ITEM_ID: THPT-TOP20-W02; ROLE: TOPIC_WRITTEN; PRIMARY_OUTCOME: TOP20-O14; CONTENT_VERSION: TOP20-R12; PUBLIC_SELF_SCORED_NO_MASTERY; NOT_PROTECTED_RD1 -->
 
 **Tự luận 2.** Một lần gieo xúc xắc cân đối. A={2,4,6}, B={2,3,5}. (a) Tìm giao và hợp. (b) Tính xác suất hợp bằng quy tắc cộng. (c) Hai biến cố có độc lập không?
 
@@ -812,7 +812,7 @@ Ba câu đều đếm bằng **nhóm không thứ tự**, nên cách lập tỉ 
 
 ### 3.3. Bài tự luận 3
 
-<!-- ITEM_ID: THPT-TOP20-W03; ROLE: TOPIC_WRITTEN; PRIMARY_OUTCOME: TOP20-O17; CONTENT_VERSION: TOP20-R09; PUBLIC_SELF_SCORED_NO_MASTERY; NOT_PROTECTED_RD1 -->
+<!-- ITEM_ID: THPT-TOP20-W03; ROLE: TOPIC_WRITTEN; PRIMARY_OUTCOME: TOP20-O17; CONTENT_VERSION: TOP20-R12; PUBLIC_SELF_SCORED_NO_MASTERY; NOT_PROTECTED_RD1 -->
 
 **Tự luận 3.** Tung đồng xu cân đối và gieo một xúc xắc cân đối, hai phép thử độc lập. A: xu ngửa; B: xúc xắc lớn hơn 4. (a) Tính P(A∩B). (b) Tính P(A∪B). (c) Tính xác suất cả A và B đều không xảy ra.
 
