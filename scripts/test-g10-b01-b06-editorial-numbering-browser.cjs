@@ -177,8 +177,26 @@ function checkSHA(){
  const f09=k=>b09.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
  assert.equal(f09("NAV_JS_BASELINE_BLOB"),field07("JS_CANDIDATE_BLOB"),
    "B09-only Golden solution JS must extend B07/B08 accepted navigation runtime");
- assert.equal(hash(js),f09("NAV_JS_R03_BLOB"),
-   "B09 exact scoped solution grouping JS must match Q18 receipt");
+ const b10=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B10_S1_PED_SINGLE_CANONICAL_Q18_R01_20261118.md"),"utf8");
+ const f10=k=>b10.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+ const newJs=js.toString("utf8");
+ const start1=" const isEnrichedB10=",end1=" const section=",
+       start2=" // B10 signed Q18:",end2=" // Golden example solution panel.";
+ const a=newJs.indexOf(start1),b=newJs.indexOf(end1,a),
+       c=newJs.indexOf(start2),d=newJs.indexOf(end2,c);
+ assert(a>0&&b>a&&c>b&&d>c&&
+  newJs.indexOf(start1,a+1)<0&&newJs.indexOf(start2,c+1)<0,
+  "B10 JavaScript may add only two exact scoped Golden regions");
+ const baseJs=newJs.slice(0,a)+newJs.slice(b,c)+newJs.slice(d);
+ assert.equal(hash(baseJs),f09("NAV_JS_R03_BLOB"),
+   "B01–B09 original runtime byte-exact after removing only B10 additions");
+ assert.equal(f10("B09_OWNER_P2_RUNTIME_BASELINE_BLOB"),f09("NAV_JS_R03_BLOB"),
+   "B10 JS must extend owner accepted B09 exact runtime SHA");
+ assert.equal(hash(js),f10("B10_SCOPED_GOLDEN_RUNTIME_BLOB"),
+   "B10 current complete runtime must equal signed Q18 exact SHA");
+ assert(newJs.slice(a,b).includes("TRY16")&&newJs.slice(c,d).includes("isEnrichedB10"),
+  "B10 JS additions must affect only B10 lesson runtime");
 }
 const names=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
 const ch=n=>n<=2?"i":n<=4?"ii":"iii";
