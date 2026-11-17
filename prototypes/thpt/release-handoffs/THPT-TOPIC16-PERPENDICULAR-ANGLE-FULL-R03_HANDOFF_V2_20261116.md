@@ -13,13 +13,13 @@ CATALOG_TOPIC_ID: CD16
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_PERPENDICULARITY_R03_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 0adf45aa8d776634d66f5c8e57b1c86ad77c8ed2
+ACADEMIC_SOURCE_BLOB: ad3fdadb2b6a7150118c2534bf02cf9563f92e26
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC16_R03_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 61984089e3108ccf7fb1ef72123ee2c54c699d82
+REVIEW_RECEIPT_BLOB: 55ee159e7929545032c76a8493dc48b09a3f593a
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_R03_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: ac13670a4b1d0c0acf7f69553ef2634ea704aa16
+AUTHOR_A1_A7_BLOB: 8424bdccdbf5ea6041da60fea5ea063e90f8b388
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_R03_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: ac13670a4b1d0c0acf7f69553ef2634ea704aa16
+AUTHOR_METADATA_BLOB: 8424bdccdbf5ea6041da60fea5ea063e90f8b388
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHVII_B22_B27_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 MODEL_ID: SLM-TOP16-RAMP-ANGLE-R00
@@ -301,6 +301,12 @@ THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md — ONE effective normat
 ## S1_SGK_SBT_SOURCE
 
 Original G11 SGK KNTT Tập Hai ChVII: B22 pp27–30, B23 pp31–37, B24 pp38–43, B25 pp44–53. SBT: B22 pp24–25, B23 pp26–28, B24 pp29–30, B25 pp31–34. Original public canonical SGK source Git blob `afc8ec039213b87b4930f2d34d48c28d1fc6277f` and historical receipt from AUTHORING PR #710; pages inherited, PDF not rescanned. Prior SGK Academic/PED PASS is scoped to original SGK and not newly claimed for Topic.
+
+## 18/11/2026 — source-locked geometric knowledge recall correction
+
+- Effective R03 learner `ad3fdadb2b6a7150118c2534bf02cf9563f92e26`, Q18 `55ee159e7929545032c76a8493dc48b09a3f593a`, A1 `8424bdccdbf5ea6041da60fea5ea063e90f8b388`; previous signed learner `0adf45aa8d776634d66f5c8e57b1c86ad77c8ed2` immutable and differs **only** in one four-bullet student summary.
+- Recap clarifies line-plane perpendicular criterion (two intersecting in-plane lines), actual space angles/projections, dihedral cuts and true perpendicular height. 21 outcomes, 86 canonical IDs, public 65 Practice cards plus 8 selfchecks (question-only), all original answers/4 SVG/disclosures protected and byte-exact.
+- Source-scoped Q18 `AUTHOR_SELF_VERIFIED`; historic R03 direct-count assertions remain historical, not new independent NotebookLM verdict, no RD1, Final Submit or RELEASE permission.
 
 ## D1_D6_EVIDENCE
 
