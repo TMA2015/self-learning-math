@@ -18,7 +18,11 @@ Trước hết, mỗi bước biến đổi bất phương trình phải giữ *
 
 ### 1.1. Biến đổi bất phương trình
 
-Khi kiểm tra một phương án có hợp lệ hay không, ta thường phải biết một đại lượng **lớn hơn**, **nhỏ hơn** hoặc **ít nhất** một mức nào đó. Khác với phương trình tìm giá trị bằng nhau, bất phương trình chọn ra **tập các giá trị thỏa điều kiện**. Mỗi phép biến đổi vì thế phải giữ đúng tập này. Cộng cùng một số vào hai vế không đổi chiều bất đẳng thức; nhân hoặc chia cho một số dương cũng vậy, nhưng khi nhân hoặc chia cho **số âm**, ta phải đảo chiều. Nếu nhân một biểu thức chứa biến chưa biết dấu, cần xét dấu trước.
+Khi kiểm tra một phương án có hợp lệ hay không, ta thường phải biết một đại lượng **lớn hơn**, **nhỏ hơn** hoặc **ít nhất** một mức nào đó. Khác với phương trình tìm giá trị bằng nhau, bất phương trình chọn ra **tập các giá trị thỏa điều kiện**. Mỗi phép biến đổi vì thế phải giữ đúng tập này. 
+
+> **TÍNH CHẤT — Biến đổi bất phương trình.** Cộng cùng một số vào hai vế không đổi chiều bất đẳng thức; nhân hoặc chia hai vế với cùng một số dương cũng không đổi chiều. Khi nhân hoặc chia với **số âm**, phải đảo chiều. Nếu hệ số chứa biến chưa biết dấu, cần xét dấu hoặc chia trường hợp trước.
+
+
 
 Chẳng hạn, từ \(-4x+1>9\) suy ra \(-4x>8\). Chia cho \(-4\) khiến dấu đổi thành \(x<-2\). Ta có thể tự kiểm bằng cách chọn \(x=-3\): vế trái \(13>9\) đúng; còn \(x=-1\) cho \(5>9\) sai. Phép thử không thay thế chứng minh, nhưng giúp phát hiện sai dấu ngay khi tính.
 
@@ -46,7 +50,11 @@ Sau khi biết cách giữ nguyên tập nghiệm khi biến đổi, ta gặp m�
 
 ### 2.1. Biệt thức và nghiệm của tam thức
 
-Muốn xét dấu tam thức cần biết nó bằng 0 ở đâu. Điểm xuất phát là hằng đẳng thức và công thức nghiệm phương trình bậc hai. f=ax²+bx+c, a≠0; Δ=b²−4ac. Δ<0 không có nghiệm thực, Δ=0 có nghiệm kép, Δ>0 có hai nghiệm thực. Nếu a biến thiên có thể bằng 0, phải xét riêng a=0 trước.
+Muốn xét dấu tam thức cần biết nó bằng 0 ở đâu. Điểm xuất phát là hằng đẳng thức và công thức nghiệm phương trình bậc hai. 
+
+> **CÔNG THỨC — Biệt thức của tam thức bậc hai.** Với \(f(x)=ax^2+bx+c\), \(a\ne0\), đặt \(\Delta=b^2-4ac\). Phương trình \(f(x)=0\) không có nghiệm thực khi \(\Delta<0\), có một nghiệm kép khi \(\Delta=0\), và có hai nghiệm thực phân biệt khi \(\Delta>0\). Nếu \(a=0\), phải xét phương trình bậc nhất hoặc trường hợp suy biến, không dùng công thức bậc hai.
+
+
 
 Chẳng hạn, x²−5x+6 có Δ=1 và hai nghiệm 2,3; f=(x−2)(x−3), nhân tử cho phép đọc dấu.
 
@@ -72,7 +80,11 @@ Quên 2a hoặc sai dấu b thì thử nhân tích để kiểm nghiệm.
 
 ### 2.2. Tam thức luôn cùng dấu
 
-Nhưng biết nghiệm của tam thức vẫn chưa đủ: cần hiểu dấu của nó khi không có nghiệm thực. Có tam thức luôn dương hoặc luôn âm với mọi số thực. Ta bắt đầu từ tính không âm của bình phương và Δ. Với a≠0, Δ<0, tam thức không có nghiệm thực và luôn cùng dấu a. Điều đó không có nghĩa f>0 hay f<0 vô nghiệm.
+Nhưng biết nghiệm của tam thức vẫn chưa đủ: cần hiểu dấu của nó khi không có nghiệm thực. Có tam thức luôn dương hoặc luôn âm với mọi số thực. Ta bắt đầu từ tính không âm của bình phương và Δ. 
+
+> **TÍNH CHẤT — Dấu tam thức khi \(\Delta<0\).** Với \(a\ne0\) và \(\Delta<0\), tam thức \(f(x)=ax^2+bx+c\) luôn cùng dấu với \(a\) với mọi \(x\in\mathbb R\): dương nếu \(a>0\), âm nếu \(a<0\). Không có nghiệm của **phương trình** \(f(x)=0\) không đồng nghĩa với việc bất phương trình \(f(x)>0\) hoặc \(f(x)<0\) vô nghiệm.
+
+
 
 Xét ví dụ: 2x²+2x+3 có Δ=−20<0, a=2>0 ⇒ luôn dương; hoàn phương thành 2(x+1/2)²+5/2>0 xác minh.
 
@@ -236,7 +248,11 @@ Trên trục số, một số \(x\) hoặc thuộc tập nghiệm hoặc không.
 
 ### 3.1. Bất phương trình bậc nhất hai ẩn
 
-Hai quyết định x,y cần mô tả tập cặp khả thi. Trước hết, hãy nhớ cặp tọa độ (x,y), thay số vào biểu thức. BPT bậc nhất hai ẩn có dạng ax+by⋄c, (a,b)≠(0,0); một hệ số bằng 0 vẫn hợp lệ. Một cặp (x,y) là nghiệm nếu thế vào làm bất phương trình đúng.
+Hai quyết định x,y cần mô tả tập cặp khả thi. Trước hết, hãy nhớ cặp tọa độ (x,y), thay số vào biểu thức. 
+
+> **ĐỊNH NGHĨA — Bất phương trình bậc nhất hai ẩn.** Bất phương trình bậc nhất hai ẩn có dạng \(ax+by\mathrel{\square}c\), trong đó \(a,b,c\in\mathbb R\), \((a,b)\ne(0,0)\) và ký hiệu \(\square\) được thay bằng \(<,\le,>,\ge\). Một cặp \((x,y)\) là nghiệm nếu thay vào làm bất phương trình đúng; một hệ số bằng 0 vẫn hợp lệ.
+
+
 
 Hãy kiểm tra trường hợp sau: 0x+2y≥4 vẫn bậc nhất hai ẩn, tương đương y≥2; (10,3) hợp lệ, (0,1) sai.
 
@@ -449,6 +465,13 @@ Max nguyên 2 tại (2,0),(1,1),(0,2), dù liên tục có thể đạt 8/3.
 Nếu làm tròn tọa độ mà bỏ điều kiện, liệt kê từng y và x lớn nhất hợp lệ.
 
 </details>
+
+> **Kiến thức cần ghi nhớ**
+>
+> - Với bất phương trình, **đảo chiều dấu khi nhân hoặc chia hai vế cho số âm**; hệ số chưa biết dấu phải được xét trước.
+> - Với tam thức bậc hai \(ax^2+bx+c\), chỉ dùng \(\Delta=b^2-4ac\) theo công thức bậc hai khi \(a\ne0\). Dấu của tam thức còn phụ thuộc \(a\), nghiệm kép và điều kiện có/không có dấu bằng.
+> - Miền nghiệm của bất phương trình hai ẩn phải kiểm **phía thỏa** và **đường biên**. Với dấu \(\le,\ge\) nhận biên; với \(<,>\) loại biên.
+> - Khi tối ưu trên miền đa giác đóng, không rỗng, bị chặn, hãy kiểm các đỉnh; nếu \(x,y\) phải nguyên, chỉ xét các điểm nguyên thỏa mọi điều kiện, không làm tròn tùy ý.
 
 # Luyện tập
 
