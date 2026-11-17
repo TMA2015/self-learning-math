@@ -54,8 +54,22 @@ function verify(files){
     "B08 only one owner-approved 3+1 append");
    assert.equal(sha(txt.slice(0,at-1)),hash,
     "B01–B07 production CSS source is byte-for-byte unchanged");
+  }else if(name==="docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js"){
+   const receipt=fs.readFileSync(path.join(root,
+     "prototypes/thpt/ux795/G10_CHIV_B09_S1_SEMANTIC_DECOMPOSITION_R03_20261117.md"),"utf8");
+   const f=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(f("NAV_JS_BASELINE_BLOB"),hash,
+     "B09-only DOM grouping must extend owner P2-accepted lesson-nav JS exactly");
+   assert.equal(sha(actual),f("NAV_JS_R03_BLOB"),
+     "Only signed B09-only solution-grouping JS change permitted in this PR");
+   const js=actual.toString("utf8");
+   assert(js.includes('const isEnrichedB09=/')&&
+     js.includes('data-thpt-first-try-id="THPT-G10-CHIV-TRY11"')&&
+     js.includes("if(isEnrichedB09){")&&
+     js.includes('box.className="thpt-g10-example-solution"'),
+     "B09 solution grouping must be route- and canonical-scoped");
   }else assert.equal(sha(actual),hash,
-    "Owner-approved current G10 B01–B07 baseline must NOT change in governance PR: "+name);
+    "Owner-approved current G10 B01–B08 snapshot must NOT change outside B09: "+name);
  }
  return true;
 }
