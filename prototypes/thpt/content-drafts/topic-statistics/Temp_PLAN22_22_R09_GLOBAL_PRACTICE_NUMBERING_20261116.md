@@ -175,6 +175,11 @@ Hàng rào \(Q_1-1{,}5IQR\) và \(Q_3+1{,}5IQR\) là quy tắc **phát hiện đ
 
 **Lời giải.** \(Q_1=2,Q_3=8\), \(IQR=6\). Hàng rào trên \(8+1{,}5\cdot6=17\). Vì \(30>17\), đây là giá trị cần xem xét, không tự coi là sai số đo.
 
+![Biểu đồ hộp có ngoại lệ 30 theo quy tắc hàng rào](assets/Temp_STATISTICS_BOX_OUTLIER_R00_20261111.svg)
+
+**Đọc hình:** Đọc \(Q_1=2\), trung vị \(Me=4\), \(Q_3=8\); \(IQR=6\), hàng rào trên \(8+1{,}5\cdot6=17\). Điểm 30 vượt 17 nên được đánh dấu để kiểm tra **chứ không tự xóa** khỏi mẫu. Hãy tìm \(Q_1,Me,Q_3\) trên hình và so với vị trí các điểm nằm ngoài hàng rào.
+
+
 
 
 **Vận dụng** Mẫu 2,3,4,5,6,7,25 có IQR và hàng rào trên bao nhiêu?
@@ -187,11 +192,6 @@ Hàng rào \(Q_1-1{,}5IQR\) và \(Q_3+1{,}5IQR\) là quy tắc **phát hiện đ
 
 </details>
 
-**Đọc hình:**
-
-![Biểu đồ hộp có ngoại lệ 30 theo quy tắc hàng rào](assets/Temp_STATISTICS_BOX_OUTLIER_R00_20261111.svg)
-
-**Đọc hình:** Đọc \(Q_1=2\), trung vị \(Me=4\), \(Q_3=8\); \(IQR=6\), hàng rào trên \(8+1{,}5\cdot6=17\). Điểm 30 vượt 17 nên được đánh dấu để kiểm tra **chứ không tự xóa** khỏi mẫu. Hãy tìm \(Q_1,Me,Q_3\) trên hình và so với vị trí các điểm nằm ngoài hàng rào.
 
 ### 1.5. Phương sai và độ lệch chuẩn
 
@@ -336,11 +336,6 @@ Trung điểm 5,15,25; trung bình (5+30+25)/4=15, tích lũy 1,3,4.
 
 </details>
 
-**Đọc hình:**
-
-![Biểu đồ tần số ghép nhóm của 20 quan sát với bốn cột](assets/Temp_STATISTICS_GROUPED_FREQ_R00_20261111.svg)
-
-**Đọc hình:** Bốn cột có tần số \(4,6,8,2\) trên tổng \(20\). Cộng tích lũy lần lượt \(4,10,18,20\). Trục/cột biểu diễn **số quan sát trong mỗi khoảng**, không khẳng định tất cả số trong một khoảng đều bằng trung điểm.
 
 ### 2.3. Nội suy trung vị và tứ phân vị ghép nhóm
 
@@ -349,6 +344,11 @@ Trung điểm 5,15,25; trung bình (5+30+25)/4=15, tích lũy 1,3,4.
 Sau khi chỉ còn bảng tần số theo khoảng, ta biết trung vị thật hay phải ước lượng qua tần số tích lũy?
 
 Với bảng nhóm, tìm nhóm chứa vị trí \(p\) từ **tần số tích lũy**, rồi nội suy: \(\mathrm{estimate}=L+(p-F_{\mathrm{trước}})h/f\) khi tần số nhóm \(f>0\). Với trung vị dùng \(p=n/2\), tứ phân vị \(p=n/4,3n/4\). Ví dụ nhóm [0,10):4, [10,20):6, [20,30):8, [30,40):2 có \(n=20\), tích lũy 4,10,18,20. \(Me=20\), \(Q_1=10+(5-4)10/6=35/3\), \(Q_3=20+(15-10)10/8=26{,}25\). Đều là **ước lượng** từ bảng, không là số gốc chính xác.
+
+![Biểu đồ tần số ghép nhóm của 20 quan sát với bốn cột](assets/Temp_STATISTICS_GROUPED_FREQ_R00_20261111.svg)
+
+**Đọc hình:** Bốn cột có tần số \(4,6,8,2\) trên tổng \(20\). Cộng tích lũy lần lượt \(4,10,18,20\). Trục/cột biểu diễn **số quan sát trong mỗi khoảng**, không khẳng định tất cả số trong một khoảng đều bằng trung điểm.
+
 
 
 
@@ -996,7 +996,7 @@ Một lớp có chính xác 25 học sinh. Một bạn đo chiều dài bàn là
 
 Số đếm 25 học sinh là số đúng trong tình huống đếm đầy đủ; 120,3 cm là số đo gần đúng vì dụng cụ/quan sát có sai số.
 
-**Các bước tự đối chiếu:** 1 điểm mô hình/khái niệm đúng; 1 điểm tính hoặc lý giải đúng; 1 điểm giải thích giới hạn/điều kiện. Không tự chấm tự luận hoặc ghi Mastery.
+**Các bước tự đối chiếu:** 1 điểm mô hình/khái niệm đúng; 1 điểm tính hoặc lý giải đúng; 1 điểm giải thích giới hạn/điều kiện. Chỉ đối chiếu từng bước sau khi tự giải; đây không phải điểm đánh giá chính thức.
 
 </details>
 
@@ -1010,7 +1010,7 @@ Mẫu số sách đọc trong tháng: 1,1,2,2,3,4. Tìm mốt và giải thích 
 
 Giá trị 1 và 2 cùng xuất hiện 2 lần, lớn hơn các giá trị khác, nên mẫu có hai mốt: 1 và 2.
 
-**Các bước tự đối chiếu:** 1 điểm mô hình/khái niệm đúng; 1 điểm tính hoặc lý giải đúng; 1 điểm giải thích giới hạn/điều kiện. Không tự chấm tự luận hoặc ghi Mastery.
+**Các bước tự đối chiếu:** 1 điểm mô hình/khái niệm đúng; 1 điểm tính hoặc lý giải đúng; 1 điểm giải thích giới hạn/điều kiện. Chỉ đối chiếu từng bước sau khi tự giải; đây không phải điểm đánh giá chính thức.
 
 </details>
 
@@ -1024,7 +1024,7 @@ Dữ liệu thời gian (phút) là 9,2,4,7,1,5. Tính trung vị và cho biết
 
 Sắp tăng dần: 1,2,4,5,7,9. Có 6 số nên trung vị (4+5)/2=4,5 phút.
 
-**Các bước tự đối chiếu:** 1 điểm mô hình/khái niệm đúng; 1 điểm tính hoặc lý giải đúng; 1 điểm giải thích giới hạn/điều kiện. Không tự chấm tự luận hoặc ghi Mastery.
+**Các bước tự đối chiếu:** 1 điểm mô hình/khái niệm đúng; 1 điểm tính hoặc lý giải đúng; 1 điểm giải thích giới hạn/điều kiện. Chỉ đối chiếu từng bước sau khi tự giải; đây không phải điểm đánh giá chính thức.
 
 </details>
 
@@ -1038,7 +1038,7 @@ Mẫu đã sắp 2,3,3,4,5,6,20. Tính Q1,Q3,IQR và kiểm số 20 theo hàng r
 
 Me=4; nửa dưới 2,3,3 cho Q1=3; nửa trên 5,6,20 cho Q3=6. IQR=3, hàng rào trên 6+1,5·3=10,5, nên 20 là ngoại lệ theo quy tắc này.
 
-**Các bước tự đối chiếu:** 1 điểm mô hình/khái niệm đúng; 1 điểm tính hoặc lý giải đúng; 1 điểm giải thích giới hạn/điều kiện. Không tự chấm tự luận hoặc ghi Mastery.
+**Các bước tự đối chiếu:** 1 điểm mô hình/khái niệm đúng; 1 điểm tính hoặc lý giải đúng; 1 điểm giải thích giới hạn/điều kiện. Chỉ đối chiếu từng bước sau khi tự giải; đây không phải điểm đánh giá chính thức.
 
 </details>
 
@@ -1052,7 +1052,7 @@ Hai nhóm A=2,4,6 và B=3,4,5 có cùng đơn vị đo. Tính trung bình và ph
 
 Cả hai có trung bình 4. Phương sai A=(4+0+4)/3=8/3; B=(1+0+1)/3=2/3. Nhóm B ổn định hơn.
 
-**Các bước tự đối chiếu:** 1 điểm mô hình/khái niệm đúng; 1 điểm tính hoặc lý giải đúng; 1 điểm giải thích giới hạn/điều kiện. Không tự chấm tự luận hoặc ghi Mastery.
+**Các bước tự đối chiếu:** 1 điểm mô hình/khái niệm đúng; 1 điểm tính hoặc lý giải đúng; 1 điểm giải thích giới hạn/điều kiện. Chỉ đối chiếu từng bước sau khi tự giải; đây không phải điểm đánh giá chính thức.
 
 </details>
 
@@ -1460,7 +1460,7 @@ Một bảng ghép nhóm có [10,20):4 người và [20,30):6 người. Chọn g
 
 Trung điểm là 15 và 25; trung bình ước lượng (4×15+6×25)/10=21. Không thể kết luận bốn người nhóm đầu đều có giá trị đúng 15; bảng nhóm mất thông tin thô.
 
-**Các bước tự đối chiếu:** 1 điểm mô hình/khái niệm đúng; 1 điểm tính hoặc lý giải đúng; 1 điểm giải thích giới hạn/điều kiện. Không tự chấm tự luận hoặc ghi Mastery.
+**Các bước tự đối chiếu:** 1 điểm mô hình/khái niệm đúng; 1 điểm tính hoặc lý giải đúng; 1 điểm giải thích giới hạn/điều kiện. Chỉ đối chiếu từng bước sau khi tự giải; đây không phải điểm đánh giá chính thức.
 
 </details>
 
@@ -1474,7 +1474,7 @@ Mẫu ghép [0,10):3 và [10,20):7 có n=10. Ước lượng trung vị và đá
 
 Tích lũy là 3,10; nhóm trung vị thứ hai có L=10,h=10,f=7,F trước=3. Me≈10+(5−3)×10/7=90/7≈12,86. Không thể khẳng định trung vị dữ liệu thô đúng bằng 90/7.
 
-**Các bước tự đối chiếu:** 1 điểm mô hình/khái niệm đúng; 1 điểm tính hoặc lý giải đúng; 1 điểm giải thích giới hạn/điều kiện. Không tự chấm tự luận hoặc ghi Mastery.
+**Các bước tự đối chiếu:** 1 điểm mô hình/khái niệm đúng; 1 điểm tính hoặc lý giải đúng; 1 điểm giải thích giới hạn/điều kiện. Chỉ đối chiếu từng bước sau khi tự giải; đây không phải điểm đánh giá chính thức.
 
 </details>
 
