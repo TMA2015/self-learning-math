@@ -69,7 +69,7 @@ function verify(files){
      js.includes('box.className="thpt-g10-example-solution"'),
      "B09 solution grouping must be route- and canonical-scoped");
   }else assert.equal(sha(actual),hash,
-    "Owner-approved current G10 B01–B08 snapshot must NOT change outside B09: "+name);
+    "Owner-approved current G10 B01–B08 baseline must NOT change outside B09: "+name);
  }
  return true;
 }
@@ -92,5 +92,9 @@ const mutant={...files,["docs/assets/stylesheets/thpt-r4-preview.css"]:Buffer.co
 assert.throws(()=>verify(mutant),/baseline must NOT change/,"style mutation must FAIL");
 const modified={...files,["docs/thpt-preview/sgk/chuong-i/bai-1.md"]:Buffer.concat([files["docs/thpt-preview/sgk/chuong-i/bai-1.md"],Buffer.from("\n# demo source drift\n")])};
 assert.throws(()=>verify(modified),/baseline must NOT change/,"source mutation must FAIL");
+const jsPath="docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js";
+const jsMutant={...files,[jsPath]:Buffer.concat([files[jsPath],Buffer.from("\n/* unauthorized JS change */\n")])};
+assert.throws(()=>verify(jsMutant),/Only signed B09-only solution-grouping JS change permitted/,
+ "B09 route-scoped UI JS must fail on any unsigned mutation");
 console.log("PASS OWNER GOLDEN IMMUTABILITY: original config/JS and G10 B01–B06 untouched; B07 CSS prefix exact; owner-approved B08-only appendix. No demo CSS imported. Negative drift tests 2/2 FAIL as intended.");
 console.log("This is NOT browser color/font-size/spacing QA. Future chapter migrations require visual AP1–AP5 at 390/820/1440, P1/P2 and owner release approval.");
