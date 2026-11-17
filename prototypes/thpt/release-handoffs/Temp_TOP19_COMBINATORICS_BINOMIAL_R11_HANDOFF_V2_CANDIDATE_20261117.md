@@ -241,12 +241,12 @@ Exactly **56** current public Topic placements: 31 unchanged original Topic cano
 | Q10 | Prerequisites in the Topic itself | Sets, digits, factorial, powers recalled as required | AUTHOR_QA_PASS · independent pathway | AP4 RELEASE_OWNED |
 | Q11 | Math essence before formalized formula | From sample choices to permutation and Newton coefficients | AUTHOR_QA_PASS · 14 meaning-first units | AP1 RELEASE_OWNED |
 | Q12 | Four source-verified SVG reading instructions | Figure reading matched nearby model and conditions | AUTHOR_QA_PASS · source XML/caption checks | AP3 RELEASE_OWNED |
-| Q13 | Method selection and constraints | Order/no order, digit zero, sign, reciprocal x nonzero | AUTHOR_QA_PASS · 63 recomputed relations | AP4 RELEASE_OWNED |
+| Q13 | Method selection and constraints | Order/no order, digit zero, sign, reciprocal x nonzero; new R10 conditional m×n rule, T02 gift 4×3=12, preserved on R11 | AUTHOR_QA_PASS · frozen R09 full maths + targeted R10 14 examples | AP4 RELEASE_OWNED |
 | Q14 | 14 first tries with remedial path | Try, click Đối chiếu, revisit exact Knowledge/Practice | AUTHOR_QA_PASS · opt-in parity | AP4/R4 RELEASE_OWNED |
-| Q15 | 56 public canonical item placements (31 original Topic +25 original SGK shared) | One source owner/id/key/solution, 25 SGK source-equivalent full displays and 17 unchanged Topic P/W solutions; seven public replay placements not cloned | AUTHOR_QA_PASS · 56/56 | R1/R4 RELEASE_OWNED |
+| Q15 | 56 public canonical item IDs (31 proposed Topic owner +25 original SGK owner) | One canonical ID per question; R11 56-ID candidate matrix source-bound; T02 version TOP19-R10; 25 SGK source-equivalent displays and 17 Topic P/W solutions; seven public replays are placements only | AUTHOR_QA_PASS · 56/56 R11 candidate; GLOBAL_OWNER_HOLD | R1/R4 RELEASE_OWNED |
 | Q16 | 14 separate private held-out candidates | Only custody SHA/count public; no live Readiness/mastery | AUTHOR_QA_PASS · public/private isolation | R4 RELEASE_OWNED |
 | Q17 | Three self-sufficient TOPIC sections | No Core tab; SGK learning path not compulsory | AUTHOR_QA_PASS · Topic structure | AP1/AP4 RELEASE_OWNED |
-| Q18 | Exact R08 source and author signed QA receipt | 63 maths checks, S1 custody, 14 outcome matrix, P0=0 P1=0 | AUTHOR_QA_PASS · source blob locked | R1/R2 RELEASE_OWNED |
+| Q18 | Exact R11 source and composite AUTHOR_SELF_VERIFIED receipt | Frozen R09 full source/math/S1 + R10 scoped Delta C + R11 equivalent editorial Delta B, new source blob 8f7d149c0359ac895fb2d04496d46e2294511123 and 56-ID candidate matrix c4718f6786e4b6e36d705a3a6b0a5ccf890ba9e0; P0=0 P1=0 | AUTHOR_QA_PASS · R11 SOURCE_LOCKED, V2_READY_GATE_HOLD | R1/R2 RELEASE_OWNED |
 
 ## REVIEW_SOURCE_RECEIPT
 
