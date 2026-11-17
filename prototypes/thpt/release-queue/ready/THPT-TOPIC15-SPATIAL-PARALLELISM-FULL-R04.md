@@ -8,19 +8,19 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: e28648739c00734bfb7c057bb46c64fb082560a8
+SOURCE_COMMIT: ffa22df505056243d2d70fdc801fa2887971c977
 CATALOG_TOPIC_ID: CD15
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_SPATIAL_PARALLELISM_R04_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 581ff0b0c019a705d36f306d7d5b0db38d185c0b
+ACADEMIC_SOURCE_BLOB: 36e94c3752ff2315907a6f3424daa6fa25f80938
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC15_R04_AUTHOR_SELF_QA_RECEIPT_20261116.md (author-self; NOT an independent NotebookLM verdict)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC15_R04_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 6b0efa57a177160d2a9c2d9570f0108830683e56
+REVIEW_RECEIPT_BLOB: 08479dc9a03670259292182662a2dda00b815961
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_R04_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: c2e39a3277d4e62ee935bb9613fe8be51ee57f41
+AUTHOR_A1_A7_BLOB: e993dbf16a98f0dbd2f19af6d243f221b28b98c6
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC15-SPATIAL-PARALLELISM-FULL-R04_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: a4f6bbf118716fec4ba493734b671c94b252b447
+AUTHOR_HANDOFF_BLOB: f9d4bd7415b1093bb8eea61287a74553ef979d93
 ORIGINAL_SGK_SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_THPT_TOPIC15_LINE_PLANE_RELATION_R01_20261113.html
 INTERACTIVE_MODEL_BLOB: 3f3c75765b6cddcaa53994027c45e79701d4d840
@@ -51,6 +51,12 @@ CURRENT_PR: DRAFT_AUTHORING_NOT_MERGED
 - Tự kiểm tra **8 câu hiện đề**, chỉ câu hỏi public replay của P03/P06/P09/P12/P14/P17/P20/P21; không phải RD1 độc lập, không có key/hint/rubric trước Final Submit; runtime Submit/AI-Tutor safety cần RELEASE QA.
 - Receipt R04 exact `6b0efa57a177160d2a9c2d9570f0108830683e56`, 52 direct structural/source-parity +50 mathematical/geometry checks PASS tác giả, source `581ff0b0c019a705d36f306d7d5b0db38d185c0b`, 89/89 canonical mapping intact, 5 SHA-locked SVG/Canvas không đổi.
 - R02 historical source `ab4bd6a9f40b4925da35b725ccf396cd3c4eae9b` giữ nguyên trên GitHub; R03 editorial candidate R04 đã khắc phục, chưa có independent NotebookLM Topic PASS.
+
+## 18/11/2026 · Active R04 learner recap source
+
+- Current SOURCE_BLOB `36e94c3752ff2315907a6f3424daa6fa25f80938`, Q18 `08479dc9a03670259292182662a2dda00b815961`, A1 `e993dbf16a98f0dbd2f19af6d243f221b28b98c6`, V2 `f9d4bd7415b1093bb8eea61287a74553ef979d93`. Same 22 outcomes, 89 canonical IDs, no new Topic bank or private assessment data.
+- Adds only four-bullet orientation recall on plane/coplanarity/distinct parallelism/projection. Prior seven duplicate Selfcheck numbering labels and three opening prose/MathJax clarifications between signed historical R04 and active source were checked and documented in the updated Q18. Practice/answers/solutions/5 Written rubrics untouched; 8 question-only Selfchecks, 5 SVG intact.
+- This is author-scoped DELTA_C with Q18 verification, not new independent NotebookLM full-Topic verdict; browser/RELEASE/Final Submit/owner permission unchanged.
 
 ## AUTHORING A1–A7 / Q18
 
