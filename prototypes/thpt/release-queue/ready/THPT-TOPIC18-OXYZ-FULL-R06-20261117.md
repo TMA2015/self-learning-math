@@ -1,4 +1,4 @@
-# CĐ18 · Oxyz · AUTHORING CONTENT_READY R06 · 17/11/2026
+# CĐ18 · Oxyz · bản thảo hiện hành QA HOLD sau sửa toán vectơ
 
 PACKET_ID: THPT-TOPIC18-OXYZ-FULL-R06-20261117
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -7,20 +7,20 @@ QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: CONTENT_READY
+STATE: BLOCKED_BY_AUTHORING
 SOURCE_COMMIT: 3e7eae4766ea62cbe0590ba24cbb3c1242f11a11
 CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R06_P2_WRITTEN_RUBRIC_CLARITY_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: 331c31e124179b31731f9caca2669eaa8948bcbd
+ACADEMIC_SOURCE_BLOB: f8c6a52c84fecd0dd63dae60413cfbe4327f54b5
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC18_R06_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md (SIGNED AUTHOR_SELF_VERIFIED COMPOSITE OF R04+R05+R06; NOT independent NotebookLM)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_R06_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md
-REVIEW_RECEIPT_BLOB: 709d4d12af2a0d2af044d1250ba75a59f679ed7e
+REVIEW_RECEIPT_BLOB: a0ce3bef430e84a03f11073715cee4fa9558a638
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R06_247_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_A1_A7_BLOB: 7983125c26031017b10c09b4526601b66be54730
+AUTHOR_A1_A7_BLOB: 6239749da5a935f4e0cea0a4dac8ac28277956bb
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC18-OXYZ-FULL-R06-20261117_HANDOFF_V2.md
-AUTHOR_HANDOFF_BLOB: a57c6f3aed696cfa8ba3c9f2e7beca1c9ba55397
+AUTHOR_HANDOFF_BLOB: 9fb0778536f9b5f20df0f61268cb87e0195e4d42
 Q01_FAMILY_AUDIT_BLOB: 052b06ea90d6191f125aef72f42d74dd9a6d86c8
 Q18_SUBSTANTIVE_AUDIT_BLOB: 4785b3be15b49f968de27fad99fc311cb2f8bb1b
 S1_ORIGINAL_G12_CHII_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
@@ -33,7 +33,7 @@ P0: 0
 P1: 0
 P2: 1
 P2_NOTE: SBT_REFERENCE_GAP_DOCUMENTED_G12_B14_PRINTED_P25
-BLOCKERS: NONE
+BLOCKERS: CURRENT_SOURCE_HEAD_QA_AND_REGISTER_CONFIRMATION_PENDING
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
@@ -85,3 +85,8 @@ CURRENT_PR: #896 — AUTHORING DRAFT, no merge/deploy
 ## R06 CURRENT SOURCE-LOCKED AUTHORING SIGNOFF
 
 This distinct R06 packet supersedes original accepted R04 SOURCE_BLOB `41daf40a3b639a3ef35e129099525137a05b1848` **only as a proposed newer content source**, preserving the immutable original R04 ready/REGISTER receipt and verdict on its own Git blob. R06 candidate source 331c31e124179b31731f9caca2669eaa8948bcbd, composite full author Q18 receipt 709d4d12af2a0d2af044d1250ba75a59f679ed7e, 247-item source-locked A1–A7 7983125c26031017b10c09b4526601b66be54730, single V2 handoff a57c6f3aed696cfa8ba3c9f2e7beca1c9ba55397 are bound together. The source change chain is R05 mathematical correction clarifying t as a geometric parameter rather than seconds (verified on one affected example) and R06 editorial cleanup of 24 redundant Mastery-control lines +24 rubric headings with 24/24 criteria and 5-point sum exact. The original 40 learning outcomes, original 247 canonical source item IDs and original SGK source ownership, 12 public selfcheck references and 247 balanced disclosures remain intact. No new mathematical condition, answer, rubric criterion or item ID in R06; historical SBT B14 p25 reference-only P2 is preserved. This signed authoring source is CONTENT_READY for the **source-only full Topic learning path**, not RELEASE_READY/DEPLOYED; official protected Topic readiness/Skill Mastery, website AP1–AP5/R1–R5/physical device QA and explicit owner merge/deploy remain separate, NOT CLAIMED. The revised packet requires source-lock V2 gate proof before any release intake.
+
+
+## CĐ18 current source quality after vector edit
+
+The one learner source was directly repaired at Knowledge TOP18-O03: vector arrow notation and box-path proof now distinguish displacement sums from segment-length sums. No canonical first-try, Practice, Written, Selfcheck, public replay, answer, rubric, figure or item ID has changed. Updated source QA/self receipt and V2 now match current edited content. Retain `BLOCKED_BY_AUTHORING` until final current HEAD and REGISTER validation; previous R06 source-only CONTENT_READY remains historically valid only at its old Git blob, not for new current source. No merge/deploy.
