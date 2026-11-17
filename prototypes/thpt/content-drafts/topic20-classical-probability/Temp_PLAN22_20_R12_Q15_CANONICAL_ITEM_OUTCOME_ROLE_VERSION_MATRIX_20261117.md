@@ -3,8 +3,8 @@
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 Q15_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED_TARGETED
-CANDIDATE_SOURCE_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R12_D6_NAVIGATION_CANDIDATE_20261117.md
-CANDIDATE_SOURCE_BLOB: a5507a33daea690a1193c965999e1d652340cb58
+CANDIDATE_SOURCE_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_LEARNER_PRESENTATION_20261116.md
+CANDIDATE_SOURCE_BLOB: 14cf1fa93c263fe4b94c101000e8c974a7a0b682
 HISTORICAL_SIGNED_SOURCE_BLOB: 74e758075d17e98649d9dd08709b523e8a782b63
 HISTORICAL_Q18_RECEIPT_BLOB: 4e6133b77eeaf1d38394d1e4d6f8058d421fd763
 Q15_ACTIVATION: CANDIDATE_ONLY; NOT_GLOBAL_REGISTER
@@ -52,9 +52,9 @@ One canonical source for the NEW proposed Topic revision is the exact candidate 
 | 32 | THPT-TOP20-P15 | TOP20-O15 | TOPIC_PRACTICE | TOP20-R09 | 715 |
 | 33 | THPT-TOP20-P16 | TOP20-O16 | TOPIC_PRACTICE | TOP20-R09 | 729 |
 | 34 | THPT-TOP20-P17 | TOP20-O17 | TOPIC_PRACTICE | TOP20-R09 | 743 |
-| 35 | THPT-TOP20-W01 | TOP20-O08 | TOPIC_WRITTEN | TOP20-R12 | 761 |
-| 36 | THPT-TOP20-W02 | TOP20-O14 | TOPIC_WRITTEN | TOP20-R12 | 789 |
-| 37 | THPT-TOP20-W03 | TOP20-O17 | TOPIC_WRITTEN | TOP20-R12 | 815 |
+| 35 | THPT-TOP20-W01 | TOP20-O08 | TOPIC_WRITTEN | TOP20-R09 | 761 |
+| 36 | THPT-TOP20-W02 | TOP20-O14 | TOPIC_WRITTEN | TOP20-R09 | 789 |
+| 37 | THPT-TOP20-W03 | TOP20-O17 | TOPIC_WRITTEN | TOP20-R09 | 815 |
 
 ## Public question-only placements: no new canonical item
 
@@ -74,6 +74,9 @@ One canonical source for the NEW proposed Topic revision is the exact candidate 
 
 ## Versioned D6 delta, Q15 boundary and required external reconciliation
 
-Changed D6 belongs to the following existing item IDs, so only their content version has been raised to the candidate revision: THPT-TOP20-W01=TOP20-R12; THPT-TOP20-W02=TOP20-R12; THPT-TOP20-W03=TOP20-R12. The exercise stems, numerical answers and rubric texts did not change; compare Q18 targeted receipt against original source for the exact limited diff. Unchanged Practice, unaffected First Try and other public items retain their historical version rather than artificial mass-bumping.
+The three Written questions W01–W03 retain their canonical content version TOP20-R09. Only their learner remediation (D6) pointers were improved: no original stem, correct mathematical answer, rubric or scoring condition changed. It would be incorrect to introduce R12 as a new canonical mathematical version solely because a return-to-practice pointer was reworded. All unaffected original item IDs and content versions are preserved.
 
 **CANDIDATE Q15 identity/version map: AUTHOR_SELF_QA_PASS** on this exact SOURCE_BLOB. **GLOBAL active bank/version, V2 handoff, ready manifest and REGISTER have not been updated**; the pending owner integration MUST select this exact source as the new single canonical owner before CONTENT_READY. No official RD1/Final Submit/Skill Mastery is enabled; private assessment content remains outside public GitHub. Q18 review for changed D6 stays separately source-locked. Do not merge/deploy.
+
+
+**Final one-file choice:** the only effective learner SOURCE_PATH is now the original R11 presentation file above edited in place. The temporary R12 patch was not promoted; the three version bumps in that candidate were explicitly rejected in academic ownership/Q15 QA, and the matrix above reflects source-owned old correct versions. Historical signed source snapshots exist in Git history only.
