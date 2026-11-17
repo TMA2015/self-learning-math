@@ -71,7 +71,7 @@ for(const [asset,key] of [
 assert(b09Receipt.includes("BLOCKED_BY_AUTHORING")&&
  b09Receipt.includes("NO_CANONICAL_DECOMPOSITION_ITEM"),
  "Historical R03 was genuinely missing an independent canonical item");
-assert(delta.includes("SOURCE-CANDIDATE")&&delta.includes("not independent"),
+assert(delta.includes("SOURCE-CANDIDATE")&&delta.includes("no claim of independent"),
  "R04 Q18 candidate must not impersonate independent reviewer/owner signoff");
 
 for(const n of [9,10,11]){
