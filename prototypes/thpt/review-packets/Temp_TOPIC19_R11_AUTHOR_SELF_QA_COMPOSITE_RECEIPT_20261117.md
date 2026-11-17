@@ -10,15 +10,15 @@ RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R11_P2_CANONICAL_LABEL_LEARNER_CLARITY_CANDIDATE_20261117.md
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R11_P2_CANONICAL_LABEL_LEARNER_CLARITY_CANDIDATE_20261117.md
-SOURCE_BLOB: 32721032973866087dcc4b8981e33d4bf3391c8d
-ACADEMIC_SOURCE_BLOB: 32721032973866087dcc4b8981e33d4bf3391c8d
+SOURCE_BLOB: 5546204168eb3c3402b21af9ca1b9d08b118c378
+ACADEMIC_SOURCE_BLOB: 5546204168eb3c3402b21af9ca1b9d08b118c378
 FROZEN_R09_READY_SOURCE_BLOB: 2b46a2c92004f2c030d030e2b2021a34157bc95d
 FROZEN_R09_FULL_AUTHOR_Q18_RECEIPT_BLOB: 55bc391995cccdf0ce66b96ebfa8840c0148c075
 R10_MATERIAL_PED_SOURCE_BLOB: 37612a3fb8d804efa6dd4f65ddd22d90bf2772ae
 R10_TARGETED_PED_Q15_Q18_RECEIPT_BLOB: 440f0c17f1a4f6b813e8627f29626248ba7f5684
 R11_EDITORIAL_DELTA_RECEIPT_BLOB: 2c17b30e78f484606509cf9d3817fea431ae8dad
 R11_CANDIDATE_Q15_MATRIX_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_Q15_56_CANONICAL_SOURCE_LOCKED_CANDIDATE_MATRIX_20261117.md
-R11_CANDIDATE_Q15_MATRIX_BLOB: e938adcf0ba32052f533baf1408434ef308821a0
+R11_CANDIDATE_Q15_MATRIX_BLOB: 07eefae8e5dd5a8da876a88e8c6b9d59fed1210e
 R09_FULL_AUTHOR_A1_A7_MATRIX_BLOB: d21d1d3ede107b3b479d1f61a1ddc0e4df0414ec
 ORIGINAL_G10_SGK_CANONICAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232
 ORIGINAL_G10_SGK_SBT_PDF_VISUAL_RECEIPT_BLOB: 850dd241e60de58ccf032e48e1e13530988436e3
@@ -66,3 +66,8 @@ VERDICT: AUTHOR_SELF_VERIFIED_ON_EXACT_R11_SOURCE_WITH_TARGETED_DELTA_CHAIN; HAN
 Previously the voluntary TOP19-O02 / THPT-TOP19-T02 response contained ungrammatical “mỗi trong 4 áo”, despite mathematical answer being 12. Now the SAME existing R11 learner source says: “**12 bộ.** Với mỗi loại trong 4 loại áo đều có 3 cách chọn huy hiệu, nên theo quy tắc nhân ta có 4·3=12 bộ.” This is natural student-first Vietnamese and the proper condition for multiplying branch counts. Question and example before it still differ: solved 3×2 and First Try 4×3; thus formative independence preserved. `DELTA_B_SOURCE_EQUIVALENT`; canonical T02 CONTENT_VERSION TOP19-R10 remains exactly same because answer/decision/logic/rubric are mathematically identical, and a second item version would multiply duplicate sources unnecessarily.
 
 **Direct parity QA:** all 56 original single-owner unique IDs and 7 public selfcheck replays, 63 source marker placements, 56 voluntary disclosure blocks, same source section architecture and Practice/Selfcheck bytes, no SVG changes or private RD1 introduced. Old signed R09 and previous R11 source stay in Git history only. Targeted editorial self-QA PASS for the one affected explanation; this is NOT independent full Topic NotebookLM PASS. After source update, prior source-only R11 CONTENT_READY cannot be used for edited text until V2/ready/REGISTER/current HEAD QA reconciled. No merge/deploy.
+
+
+## Further same-source learner-math presentation QA (17/11/2026)
+
+Four Knowledge lines L343/L345/L349/L494 now format the **mathematical** factorial, permutation/combination and polynomial expressions `n!`, `A_n^k=C_n^k\cdot k!`, `1/x`, `P(1)` as TeX inline math, while hardware labels `nPr`, `nCr`, `SHIFT`, `x!` and device `E` remain literal code. The Knowledge method box uses `\\operatorname{nPr}` and `\\operatorname{nCr}` instead of parsing physical key names as algebraic variable multiplication. The same learner source path is edited in place; no R12 file. Source parity: 56 original single-owner canonical items, seven public question-only replays, all Practice/Written/Selfcheck text byte-identical, 56 optional disclosures, answers/rubric exact, all SVG references unchanged. `DELTA_B_SOURCE_EQUIVALENT`, affected Q03/Q09/Q10/Q15/Q18 `AUTHOR_SELF_VERIFIED` QA; actual browser MathJax and global canonical owner/V2 receipt remain their own gates. Original G10 bank, protected RD1/Final Submit/Mastery and production not touched.
