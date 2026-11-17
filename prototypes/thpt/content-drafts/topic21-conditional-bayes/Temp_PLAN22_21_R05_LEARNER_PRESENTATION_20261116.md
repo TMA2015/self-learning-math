@@ -45,7 +45,7 @@ Trong 24 vé khác nhau được chọn đều có 9 vé xanh, 6 trong 9 vé xan
 
 Nhóm điều kiện gồm 9 vé xanh; có 6 vé trong nhóm đó có sao. Do đó P(sao | xanh)=6/9=2/3, không phải 6/24.
 
-**Khi làm sai:** Nếu chia cho 24, em đã quên thu hẹp Ω khi biết màu vé. Tự gạch riêng 9 vé xanh, đánh dấu 6 vé sao rồi thử lại. Ôn lại mục Kiến thức 1 và bài Luyện tập 2.1.
+**Khi làm sai:** Nếu chia cho 24, em đã quên thu hẹp Ω khi biết màu vé. Tự gạch riêng 9 vé xanh, đánh dấu 6 vé sao rồi thử lại. Ôn lại mục Kiến thức 1.1 (đổi nhóm đang xét) và Bài luyện 1 tại Luyện tập 1.1.
 
 </details>
 
@@ -82,7 +82,7 @@ Gieo xúc xắc sáu mặt cân đối. A là 'chia hết cho 3', B là 'số ch
 
 B={2,4,6}, A∩B={6}; P(A|B)=(1/6)/(3/6)=1/3. Mẫu số P(B)=1/2>0.
 
-**Khi làm sai:** Nếu viết 1/2, em đã lấy P(B) thay cho xác suất giao trong B. Nếu chia cho P(A), em đã đổi chiều thành P(B|A). Ôn lại mục Kiến thức 2 và bài Luyện tập 2.2.
+**Khi làm sai:** Nếu viết 1/2, em đã lấy P(B) thay cho xác suất giao trong B. Nếu chia cho P(A), em đã đổi chiều thành P(B|A). Ôn lại mục Kiến thức 1.2 (công thức xác suất có điều kiện) và Bài luyện 2 tại Luyện tập 1.2.
 
 </details>
 
@@ -119,7 +119,7 @@ Có 4 thẻ đỏ và 5 thẻ xanh khác nhau; rút liên tiếp hai thẻ khôn
 
 P(đỏ đầu)=4/9; sau đó còn 8 thẻ, 5 xanh nên P(xanh sau | đỏ đầu)=5/8. Giao = (4/9)(5/8)=5/18.
 
-**Khi làm sai:** Nếu dùng (4/9)(5/9), em chưa đổi tổng số thẻ ở lượt hai từ 9 xuống 8. Vẽ một nhánh đỏ trước rồi ghi nội dung túi còn lại. Ôn lại mục Kiến thức 3 và bài Luyện tập 2.3.
+**Khi làm sai:** Nếu dùng (4/9)(5/9), em chưa đổi tổng số thẻ ở lượt hai từ 9 xuống 8. Vẽ một nhánh đỏ trước rồi ghi nội dung túi còn lại. Ôn lại mục Kiến thức 1.3 (quy tắc nhân cho lượt phụ thuộc) và Bài luyện 3 tại Luyện tập 1.3.
 
 </details>
 
@@ -156,7 +156,7 @@ Tung hai đồng xu cân đối, độc lập. A: đồng xu đầu ngửa; B: c
 
 Ω={NN,NS,SN,SS}. P(A)=2/4, P(B)=2/4, P(A∩B)=1/4 (chỉ NS). Vì 1/4=(1/2)(1/2), A và B độc lập trong mô hình này.
 
-**Khi làm sai:** Nếu kết luận phụ thuộc chỉ vì B có nhắc đồng xu đầu, em đã suy theo ngôn ngữ. Hãy đếm giao và tích; cả hai cùng bằng 1/4. Ôn lại mục Kiến thức 4 và bài Luyện tập 2.4.
+**Khi làm sai:** Nếu kết luận phụ thuộc chỉ vì B có nhắc đồng xu đầu, em đã suy theo ngôn ngữ. Hãy đếm giao và tích; cả hai cùng bằng 1/4. Ôn lại mục Kiến thức 1.4 (dấu hiệu độc lập) và Bài luyện 4 tại Luyện tập 1.4.
 
 </details>
 
@@ -199,7 +199,7 @@ Nguồn X cung cấp 1/4 sản phẩm, tỉ lệ lỗi 1/10; nguồn Y cung cấ
 
 P(lỗi)=(1/4)(1/10)+(3/4)(1/30)=1/40+1/40=1/20.
 
-**Khi làm sai:** Nếu ra 1/10+1/30, em đã quên nhân tỉ trọng nguồn; làm lại từng đường 'chọn nguồn → lỗi' trước khi cộng. Ôn lại mục Kiến thức 5 và bài Luyện tập 2.5.
+**Khi làm sai:** Nếu ra 1/10+1/30, em đã quên nhân tỉ trọng nguồn; làm lại từng đường 'chọn nguồn → lỗi' trước khi cộng. Ôn lại mục Kiến thức 2.1 (công thức xác suất toàn phần) và Bài luyện 5 tại Luyện tập 2.1.
 
 </details>
 
@@ -236,7 +236,7 @@ Nguồn X chiếm 2/5 sản phẩm, tỉ lệ lỗi 1/10; Y chiếm 3/5, tỉ l�
 
 P(Y∩lỗi)=(3/5)(1/5)=3/25; P(X∩lỗi)=(2/5)(1/10)=1/25. P(lỗi)=4/25 nên P(Y|lỗi)=(3/25)/(4/25)=3/4.
 
-**Khi làm sai:** Nếu trả lời 1/5, em mới tính xác suất lỗi khi đã biết Y, chưa đảo chiều. Cộng tất cả nhánh lỗi thành mẫu số rồi chia đường Y–lỗi. Ôn lại mục Kiến thức 6 và bài Luyện tập 2.6.
+**Khi làm sai:** Nếu trả lời 1/5, em mới tính xác suất lỗi khi đã biết Y, chưa đảo chiều. Cộng tất cả nhánh lỗi thành mẫu số rồi chia đường Y–lỗi. Ôn lại mục Kiến thức 2.2 (Bayes) và Bài luyện 6 tại Luyện tập 2.2.
 
 </details>
 
@@ -279,7 +279,7 @@ Chọn lớp A với xác suất 3/5, trong A tỉ lệ thẻ đỏ là 3/10; l�
 
 A-đỏ=9/50, A-không đỏ=21/50; B-đỏ=1/10, B-không đỏ=3/10. Tổng bốn lá bằng 1, P(đỏ)=9/50+1/10=7/25.
 
-**Khi làm sai:** Nếu bốn lá không cộng thành 1, hãy rà mỗi nút: đỏ và không đỏ trong A phải có tổng 1; tương tự B. Đừng cộng trực tiếp 3/10 và 1/4. Ôn lại mục Kiến thức 7 và bài Luyện tập 2.7.
+**Khi làm sai:** Nếu bốn lá không cộng thành 1, hãy rà mỗi nút: đỏ và không đỏ trong A phải có tổng 1; tương tự B. Đừng cộng trực tiếp 3/10 và 1/4. Ôn lại mục Kiến thức 3.1 (đọc sơ đồ cây) và Bài luyện 7 tại Luyện tập 3.1.
 
 </details>
 
@@ -312,7 +312,7 @@ Một hệ thống giả định có 2% hồ sơ thuộc nhóm H. Hệ thống b
 
 P(H∩báo)=0,02·0,90=0,018; P(không H∩báo)=0,98·0,15=0,147. Xác suất cần tìm là 0,018/(0,018+0,147)=18/165=6/55≈10,91%.
 
-**Khi làm sai:** Nếu ra 90%, em đã nhầm 'báo khi biết H' với 'H khi đã báo'. Hãy lập bảng 10.000 hồ sơ: 200 H có 180 báo; 9.800 không H có 1.470 báo; tỉ lệ 180/(180+1470). Ôn lại mục Kiến thức 8 và bài Luyện tập 2.8.
+**Khi làm sai:** Nếu ra 90%, em đã nhầm 'báo khi biết H' với 'H khi đã báo'. Hãy lập bảng 10.000 hồ sơ: 200 H có 180 báo; 9.800 không H có 1.470 báo; tỉ lệ 180/(180+1470). Ôn lại mục Kiến thức 3.2 (tỉ lệ nền) và Bài luyện 8 tại Luyện tập 3.2.
 
 </details>
 
@@ -490,7 +490,7 @@ Một tập hợp 60 học sinh được chọn đều một học sinh: có 24 
 
 **Rubric:** Bảng đủ bốn ô và tổng=60 (1); đúng P(kính|C)=5/8 (1); đúng P(C|kính)=5/11 (1); đúng xác suất giao 1/4 và giải thích khác mẫu số (1).
 
-**Khi làm sai:** Nếu đảo 5/8 và 5/11, gạch dưới từ **“biết”** rồi xem lại mục Kiến thức 1–2 cùng các bài Luyện tập 2.1–2.2 trước khi làm lại.
+**Khi làm sai:** Nếu đảo 5/8 và 5/11, hãy gạch dưới từ **“biết”**, xem lại Kiến thức 1.1–1.2 và làm lại Bài luyện 1–2 (Luyện tập 1.1–1.2).
 
 </details>
 
@@ -520,7 +520,7 @@ Tổng bốn lá bằng \(1/15+4/15+1/15+3/5=1\), nên không bỏ sót trườn
 
 **Rubric:** Nêu hai nhánh X,Y đầy đủ và các điều kiện (1); tính đúng bốn xác suất lá/tổng 1 (1); cộng phần lỗi được 2/15 (1); đảo điều kiện Bayes được 1/2 và diễn giải nhóm đã biết lỗi (1).
 
-**Khi làm sai:** Nếu cho 1/5 ở (c), em vẫn đang trả lời lỗi khi X, không phải X khi lỗi; viết hai nhánh lỗi rồi xem lại các mục Kiến thức 5–6 và bài Luyện tập 2.5–2.6.
+**Khi làm sai:** Nếu cho 1/5 ở (c), em vẫn đang trả lời lỗi khi X, không phải X khi lỗi; viết hai nhánh lỗi, ôn Kiến thức 2.1–2.2 rồi làm lại Bài luyện 5–6 (Luyện tập 2.1–2.2).
 
 </details>
 
@@ -544,7 +544,7 @@ Trong một hệ thống giả định 10.000 hồ sơ có 1% hồ sơ thuộc n
 
 **Rubric:** Phân nhóm nền 100/9.900 (1); báo đúng 80, báo nhầm 495 (1); P(H|báo)=16/115 (1); giải thích đảo điều kiện và tỷ lệ nền (1).
 
-**Khi làm sai:** Nếu ra 80%, hãy lập bảng 2×2 rồi nhìn mẫu số là **tổng hồ sơ đã bị báo =575**, không phải tổng hồ sơ H=100; xem lại mục Kiến thức 8 và bài Luyện tập 2.8.
+**Khi làm sai:** Nếu ra 80%, hãy lập bảng 2×2 rồi nhìn mẫu số là **tổng hồ sơ đã bị báo =575**, không phải tổng hồ sơ H=100; xem lại mục Kiến thức 3.2 (tỉ lệ nền) và Bài luyện 8 (Luyện tập 3.2).
 
 </details>
 
