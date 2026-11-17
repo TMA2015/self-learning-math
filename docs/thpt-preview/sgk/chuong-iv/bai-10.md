@@ -148,7 +148,7 @@
 
     **Phân tích:** Có hai điểm đầu–cuối nên trước hết chọn quy tắc \(\overrightarrow{AB}=\overrightarrow{OB}-\overrightarrow{OA}\); sau khi có tọa độ vectơ mới dùng Pythagore để tìm khoảng cách thẳng, không cộng hai độ thay đổi.
 
-    **Lời giải:** \(\overrightarrow{AB}=(3-(-1);5-2)=(4;3)\). Do đó \(AB=\sqrt{4^2+3^2}=5\).
+    **Giải:** \(\overrightarrow{AB}=(3-(-1);5-2)=(4;3)\). Do đó \(AB=\sqrt{4^2+3^2}=5\).
 
     **Kiểm lại:** \(\overrightarrow{BA}=(-4;-3)\). Hai vectơ đối nhau nhưng có cùng độ dài \(5\). Công thức tọa độ điểm cuối trừ điểm đầu chỉ đổi thành tọa độ \(B\) khi \(A=O\).
 
@@ -158,7 +158,7 @@
 
     **Phân tích:** Dùng phép toán theo từng tọa độ; khi xét cùng phương, kiểm hai thành phần có cùng một hệ số thay vì nhìn riêng một tọa độ.
 
-    **Lời giải:** \(2\vec u=(4;-2)\), nên \(2\vec u-\vec v=(4-(-3);-2-4)=(7;-6)\). Với \(\vec w=(7;-6)\), ta có \(2\cdot(-6)-(-1)\cdot7=-5\ne0\), do đó \(\vec w\) không cùng phương với \(\vec u\).
+    **Giải:** \(2\vec u=(4;-2)\), nên \(2\vec u-\vec v=(4-(-3);-2-4)=(7;-6)\). Với \(\vec w=(7;-6)\), ta có \(2\cdot(-6)-(-1)\cdot7=-5\ne0\), do đó \(\vec w\) không cùng phương với \(\vec u\).
 
     **Kiểm lại:** Nếu bỏ ngoặc khi trừ \(-3\), em dễ ra \((1;-6)\), sai ở hoành độ. Phép kiểm định thức tránh chia cho một thành phần có thể bằng \(0\).
 
@@ -168,7 +168,7 @@
 
     **Phân tích:** Trung điểm lấy trung bình **hai** tọa độ theo từng trục; trọng tâm lấy trung bình **ba** tọa độ của ba đỉnh. Ba điểm không thẳng hàng nên có một tam giác và trọng tâm hình học xác định.
 
-    **Lời giải:** \(M=((1+5)/2;(3-1)/2)=(3;1)\). \(G=((1+5-2)/3;(3-1+4)/3)=(4/3;2)\).
+    **Giải:** \(M=((1+5)/2;(3-1)/2)=(3;1)\). \(G=((1+5-2)/3;(3-1+4)/3)=(4/3;2)\).
 
     **Kiểm lại:** \(M\) nằm giữa A, B; \(\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0\) theo từng tọa độ. Không dùng mẫu \(2\) cho trọng tâm.
 
@@ -178,7 +178,7 @@
 
     **Phân tích:** Lấy \(Ox\) hướng Đông, \(Oy\) hướng Bắc. Vận tốc theo bờ là **tổng vectơ** \(\vec v_{\mathrm{bờ}}=\vec v_{\mathrm{riêng}}+\vec v_{\mathrm{dòng}}\). Thời gian vượt sông bằng \(96\) chia cho **thành phần Bắc dương** của vận tốc theo bờ. Không lấy \(96/|\vec v_{\mathrm{bờ}}|\) khi vận tốc có thành phần dọc bờ.
 
-    **Lời giải:** (a) \(\vec v_{\mathrm{riêng}}=(0;5)\), \(\vec v_{\mathrm{dòng}}=(3;0)\), nên \(\vec v_{\mathrm{bờ}}=(3;5)\,\mathrm{m/s}\). Thời gian qua sông \(t=96/5=19{,}2\,\mathrm s\); độ trôi Đông \(3\cdot19{,}2=57{,}6\,\mathrm m\).
+    **Giải:** (a) \(\vec v_{\mathrm{riêng}}=(0;5)\), \(\vec v_{\mathrm{dòng}}=(3;0)\), nên \(\vec v_{\mathrm{bờ}}=(3;5)\,\mathrm{m/s}\). Thời gian qua sông \(t=96/5=19{,}2\,\mathrm s\); độ trôi Đông \(3\cdot19{,}2=57{,}6\,\mathrm m\).
 
     (b) Muốn không trôi phải có \(\vec v_{\mathrm{bờ},x}=0\), tức thành phần vận tốc riêng hướng Tây bằng \(-3\). Vì tốc độ riêng bằng \(5\), thành phần Bắc cần dương:
     \[
