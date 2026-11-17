@@ -5,7 +5,7 @@
 PACKET_ID: THPT-TOPIC03-ALGEBRA-EQUATIONS-FULL-R01
 CONTENT_REVISION: R06
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_ONLY_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: 8464ce41de5ad9d51ff01883c9a89dee12d08f9f
+AUTHOR_METADATA_BLOB: 0720e90fcfbc67e85e3aa0986a68c3397b73bab8
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
@@ -13,9 +13,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: daeeb5d571d120b31265f8c603a76049a1f2c78c
+ACADEMIC_SOURCE_BLOB: c843613b88d106a18086d91ff7d0ada499398033
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC03_R06_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: 6f7641528ea7bd8acb6a98e1c46be03a8ef44aae
+REVIEW_RECEIPT_BLOB: b8a9ddc851a1026af2d42d93ea5eb6c21cad6a13
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_ORIGINAL08_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: b2e79a6cda5fdcc82dbd281e4273577ca637895e
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_NEW23_PUBLIC_CANONICAL_R01_20261112.md
@@ -166,6 +166,13 @@ Exactly 12 references to already-public Practice items, one for each outcome. Th
 | TOP03-O11 | THPT-TOP03-ADD19 | CLIENT_SELF_CHECK_NO_MASTERY |
 | TOP03-O12 | THPT-G10-B18-P04 | CLIENT_SELF_CHECK_NO_MASTERY |
 
+
+## 18/11 — Targeted formal-mathematics learner clarity (DELTA_C)
+
+- Effective source blob `c843613b88d106a18086d91ff7d0ada499398033`, current signed Q18 `b8a9ddc851a1026af2d42d93ea5eb6c21cad6a13`, updated A1 metadata `0720e90fcfbc67e85e3aa0986a68c3397b73bab8`. Previous effective source `daeeb5d571d120b31265f8c603a76049a1f2c78c` is retained as an immutable historical snapshot.
+- Genuine mathematical labels at TOP03-O01 equivalent equations (same solution set on same domain), O03 zero-product rule without invalid division, O07 sqrt(A)=B iff B≥0 and A=B²; one concise recall block. Tested on existing examples and conditions, not by making 12 duplicate template cards.
+- 31 canonical Practice items + answer/solutions/rubrics/D6, 12 public self-check question-only repeats, SVG references and disclosure order unchanged exactly from previous effective source. The earlier 11 targeted D6 navigation fixes are still included; G10 original canonical and source IDs untouched.
+- Source-scoped AUTHOR_SELF_VERIFIED, not a new independent external NotebookLM verdict. Existing Draft #888 author QA HOLD remains until latest HEAD checks. RELEASE integration/browser/Final Submit remains separate, no merge/deploy.
 
 ## R06 formatting/numbering Delta-A custody
 
