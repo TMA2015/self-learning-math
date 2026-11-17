@@ -21,6 +21,16 @@ assert(pos>0&&css.indexOf(marker,pos+marker.length)<0,"One B10 CSS appendix only
 assert.equal(blob(Buffer.from(css.slice(0,pos))),field("CSS_OWNER_B09_P2_BASELINE_BLOB"),
  "B01-B09 owner accepted stylesheet prefix changed");
 assert.equal(blob(buf(cssPath)),field("CSS_R01_SCOPED_B10_BLOB"),"B10 CSS SHA changed without new Q18 receipt");
+const runtimePath="docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js";
+const runtime=read(runtimePath);
+assert.equal(field("B09_OWNER_P2_RUNTIME_BASELINE_BLOB"),"7a77c4444dfc96aeeaf87ddd17d8f9d37a6ae136");
+assert.equal(blob(buf(runtimePath)),field("B10_SCOPED_GOLDEN_RUNTIME_BLOB"),
+ "B10 Golden render runtime changed without signed Q18 UI receipt");
+assert(runtime.includes('const isEnrichedB10=/')&&
+ runtime.includes('THPT-G10-CHIV-TRY16')&&
+ runtime.includes('if(isEnrichedB10)')&&
+ runtime.includes('while(cur&&cur.tagName!=="H3"'),
+ "B10 must receive exactly scoped DOM solution grouping with strict stop at learner self-check");
 assert(css.slice(pos).includes("THPT-G10-CHIV-TRY16")&&!css.slice(pos).includes("THPT-G10-CHIV-TRY11"));
 const part=n=>{
  const a="<!-- BEGIN_"+n+" -->\n",b="<!-- END_"+n+" -->";
