@@ -1,18 +1,20 @@
 # CĐ1 R07 — AUTHORING numbering-only Q18 custody
 
 CURRENT_SOURCE_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R07_NUMBERING_CONSISTENT_20261116.md
-CURRENT_SOURCE_BLOB: 0941242cee95d21c5a83da9f6f01c022443272d8
+CURRENT_SOURCE_BLOB: fefe797ee158ee357533605267496ed415a7681a
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC01_R07_NUMBERING_DELTA_A_Q18_20261116.md
-CURRENT_Q18_RECEIPT_BLOB: 3732db6a26a13c52f84f574d1c2c3468513c7eca
+CURRENT_Q18_RECEIPT_BLOB: f454e239f22df9c306ef69d1e82f0900f02a48ea
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
-DELTA_CLASS: DELTA_A_UI
+DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
 PREVIOUS_AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R04_AUTHORING_ONLY_CUSTODY_METADATA_20261113.md
 PREVIOUS_AUTHOR_METADATA_BLOB: 0bf738b497b1b893ac90c3b82f758f661c0cf05c
-AUTHORING_STATUS: NUMBERING_DELTA_A_SOURCE_EQUIVALENT
+AUTHORING_STATUS: R07_LOGIC_SET_RECAP_TARGETED_Q18_AUTHOR_SELF_VERIFIED
 RELEASE_AUTHORIZATION: NO
 
 Original A1–A7/SGK/outcome/item source matrix below is inherited **unaltered**; only current learner snapshot formatting and Q18 source custody above changed. User-facing headings are now page H1, numbered group H2 and child H3, with Practice Bài labels not H4. Old author metadata Git blob `0bf738b497b1b893ac90c3b82f758f661c0cf05c` and old academic source/Q18 remain immutable. No independent reviewer claim or RELEASE approval.
+
+Current source now has a four-bullet student recap for TOP01-O01..O11, with existing formal definitions unaltered and 24 canonical Practice/11 public replay Selfcheck unchanged. Historical R07 numbering-only Q18 was source-locked to 0941242cee95d21c5a83da9f6f01c022443272d8; current source uses bounded DELTA_C author Q18, not an independent NotebookLM or RELEASE signoff.
 
 ---
 
