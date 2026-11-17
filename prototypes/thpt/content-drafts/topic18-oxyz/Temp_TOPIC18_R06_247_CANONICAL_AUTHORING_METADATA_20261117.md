@@ -3,7 +3,7 @@
 **AUTHOR_Q18_MATH_PED_SELF_VERIFIED_ON_SOURCE / website NOT RELEASE_READY**. Standard: one `SLM-THPT-QUALITY-ONE v3.1.0` Q01–Q18. Source page S1 KNTT G12 ChII B06–B08 and G12 ChV B14–B17; G12 SBT ChV B14 printed p25 missing from original PDF; affected SBT exercise IDs 5.6–5.7 require separately verified source. No autonomous source equivalence or independent Topic NotebookLM PASS claimed.
 
 PACKET_ID: THPT-TOPIC18-OXYZ-FULL-R06-20261117
-STATE: AUTHORING_R06_SELF_VERIFIED_SOURCE_ONLY
+STATE: BLOCKED_BY_AUTHORING
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
@@ -11,8 +11,8 @@ CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R06_P2_WRITTEN_RUBRIC_CLARITY_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: 331c31e124179b31731f9caca2669eaa8948bcbd
-REVIEW_RECEIPT_BLOB: 709d4d12af2a0d2af044d1250ba75a59f679ed7e
+ACADEMIC_SOURCE_BLOB: f8c6a52c84fecd0dd63dae60413cfbe4327f54b5
+REVIEW_RECEIPT_BLOB: a0ce3bef430e84a03f11073715cee4fa9558a638
 BASELINE_R04_SIGNED_SOURCE_BLOB: 41daf40a3b639a3ef35e129099525137a05b1848
 BASELINE_R04_SIGNED_Q18_RECEIPT_BLOB: 5262fd454346801b0b5eb4f3dc407bc99d3530
 
@@ -364,3 +364,8 @@ REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_R06_AUTHOR_SELF
 ## R06 source locked author A1–A7 delta closure
 
 This new AUTHORING A1–A7 custody file binds R06 source SHA 331c31e124179b31731f9caca2669eaa8948bcbd, composite Q18 receipt 709d4d12af2a0d2af044d1250ba75a59f679ed7e and all 247 original item IDs to one proposed source. The full 247-row item/outcome/placement table above is preserved from R04 unchanged; only its learner-facing rubric headings/technical status and the one R05 corrected geometric paragraph changed, as demonstrated in composite Q18 receipt. The old R04 source/receipt/ready/REGISTER remain immutable historical accepted packets, not two simultaneously active canonical owners. R06 24 original SGK Written /5 criteria were independently compared byte-for-byte; each still totals five. R05 geometric intersection t=1 was independently recomputed under the non-time parametric model. Twelve public Practice replays remain question-only CLIENT_SELF_CHECK_NO_MASTERY. SBT original B14 printed p25 remains reference P2, no mandatory SGK Core P0/P1. New V2 handoff and ready REGISTER row must cite this exact source and receipt SHA; no website/Release/owner merge authorization.
+
+
+## Bản thảo hiệu lực CĐ18 sau sửa trực tiếp ký hiệu vectơ
+
+Nguồn hiện hành vẫn là một tệp ở ACADEMIC_SOURCE_PATH, đã chỉnh phần Kiến thức TOP18-O03 để nêu đúng vectơ có mũi tên và không đánh đồng độ dài đoạn. 40 outcomes, 247 câu canonical, 12 selfcheck public replays, dữ kiện/đáp án/rubric/SVG của các bài không thay. Trạng thái giữ HOLD chờ kiểm chứng QA HEAD và đồng bộ V2/ready/REGISTER; không lập thêm tệp học liệu sửa sai. Source lịch sử R06 có thể khôi phục qua Git, không phải source hiệu lực song song.
