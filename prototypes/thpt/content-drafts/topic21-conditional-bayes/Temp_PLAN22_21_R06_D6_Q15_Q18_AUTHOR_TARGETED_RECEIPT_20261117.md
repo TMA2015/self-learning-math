@@ -74,3 +74,12 @@ AUTHOR_SIGNOFF: CHATGPT_AUTHORING_TOP21_R06_11D6_11VERSIONED_ITEM_11MATH_RECOMPU
 VERDICT: TARGETED_AUTHOR_SELF_QA_PASS, ACTIVE_CANONICAL_BANK_HOLD, CONTENT_READY_NO.
 
 Review prompt (four sentences): Critique exactly the R06 source SHA against frozen R05 and inspect 11 D6 paths through Knowledge and visible Practice, rather than checking text labels only. Check the 11 computations, canonical IDs, CONTENT_VERSION and optional-reveal boundary. If an outcome/item route or rubric is wrong, record P0/P1, exact location and MINIMAL_DELTA; do not transfer a verdict to another source. A targeted author receipt is not an independent full-topic review, protected assessment readiness or release approval.
+## 5. Q15 source-derived matrix lock (addendum)
+
+Q15_CANDIDATE_MATRIX_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R06_Q15_CANONICAL_ITEM_OUTCOME_ROLE_VERSION_MATRIX_20261117.md
+Q15_CANDIDATE_MATRIX_BLOB: 6c5cd14634f2ecbfe77062228c8964a53c1b1176
+Q15_CANDIDATE_OWNER: f1e9a0f2a52574f832c27a724189e9f1869940ae
+Q15_CANDIDATE_SOURCE_LEVEL: AUTHOR_SELF_VERIFIED; ALL_IDS_UNIQUE; PRACTICE_REPLAY_SAME_ID
+Q15_GLOBAL_ACTIVE_OWNER_V2_READY_REGISTER: HOLD_PENDING_INTEGRATION
+
+This matrix was generated from the exact item marker lines in the learner source and includes every item-to-outcome/role/content_version and public replay placement, without cloning canonical item bodies. Its SHA is pinned here; it does not imply that the repository-wide ACTIVE REGISTER has been promoted or that external handoff has been completed.
