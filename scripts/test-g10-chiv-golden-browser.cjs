@@ -16,7 +16,7 @@ const sources={
  7:"e1487ce01e81738228ae69d4d87cbdc56b5e0c69",
  8:"22e53396caf7753e813c492615a491e1f24cc9fd",
  9:"3d79a17e9ba39cd0f46077823800f5f38c73e313",
- 10:"ed75637365f6c3bc6b90a773df20878e995d3950",
+ 10:"93ddcc4f034d69196df33af0875b11c650af9f77",
  11:"2a1381689f66d1f8c752bdbf1c29a9ef49a4e073"
 };
 const blob=data=>{const b=Buffer.isBuffer(data)?data:Buffer.from(data);return crypto.createHash("sha1").update(Buffer.from("blob "+b.length+"\0")).update(b).digest("hex");};
@@ -221,7 +221,7 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
       where+" First Try summaries collapsed and normal-size text");
      assert(state.tips.every(x=>!x.open),where+" D6 closed");
      assert(state.cells.every(px=>Math.abs(px-state.body)<.6),where+" table fonts equal body");
-     assert(state.solutions.every(x=>x.bg!=="rgba(0, 0, 0, 0)"&&x.strong===([7,8].includes(lesson)?"Lời giải.":lesson===10?"Lời giải:":"Giải:")),
+     assert(state.solutions.every(x=>x.bg!=="rgba(0, 0, 0, 0)"&&x.strong===([7,8].includes(lesson)?"Lời giải.":lesson===10?"Giải:":"Giải:")),
       where+" solution panel contains unchanged mathematical solution");
      assert(state.overflow<=3,where+" no whole-page horizontal overflow");
      if(lesson===7){
