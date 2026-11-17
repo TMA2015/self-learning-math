@@ -139,25 +139,29 @@
 
     #### 2.1.1. Vectơ, điểm đầu–cuối và độ dài
 
-    **Khái niệm:** Vectơ là đoạn thẳng có hướng. Kí hiệu $\overrightarrow{AB}$ gồm điểm đầu **A**, điểm cuối **B**; độ dài $|\overrightarrow{AB}|=AB\ge0$.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Vectơ:</strong> Vectơ là một đoạn thẳng có hướng. Vectơ \(\overrightarrow{AB}\) có **điểm đầu** \(A\), **điểm cuối** \(B\), chiều từ \(A\) tới \(B\). Khi \(A\ne B\), đường thẳng \(AB\) gọi là <strong>giá</strong> của vectơ.</div>
 
-    **Nhận xét:** Hai vectơ đặt tại vị trí khác nhau có thể bằng nhau. Đường thẳng qua A,B là **giá** của vectơ khác không; vectơ có điểm đầu trùng điểm cuối là vectơ-không $\vec0$.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Độ dài vectơ:</strong> Độ dài của \(\overrightarrow{AB}\) là độ dài đoạn thẳng \(AB\), kí hiệu \(|\overrightarrow{AB}|=AB\ge0\). Độ dài chỉ là một số, không biểu diễn chiều của vectơ.</div>
+
+    **Nhận xét:** Hai vectơ được vẽ ở hai vị trí khác nhau vẫn có thể bằng nhau; không phải chỉ khi cùng điểm đầu và điểm cuối mới xét được sự bằng nhau.
 
     **Phân biệt:** Mũi tên biểu diễn hướng di chuyển từ A sang B, nhưng quãng đường đã đi không luôn bằng độ dài độ dời.
 
     #### 2.1.2. Vectơ-không và quy ước của SBT KNTT
 
-    $\overrightarrow{AA}=\vec0$ với mọi điểm A và $|\vec0|=0$. **Theo quy ước SBT KNTT lớp 10 Bài 7**, vectơ-không được xem là cùng phương và cùng hướng với mọi vectơ.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Vectơ-không:</strong> Vectơ có điểm đầu trùng điểm cuối là <strong>vectơ-không</strong>, kí hiệu \(\vec0\). Với mọi điểm \(A\), \(\overrightarrow{AA}=\vec0\) và \(|\vec0|=0\).</div>
 
-    **Lưu ý về quy ước:** Điều này là quy ước toán học cho trường hợp đặc biệt, không mô tả một đoạn có chiều vật lí khác 0.
+    **Quy ước cần phân biệt:** Theo SBT KNTT lớp 10 Bài 7, vectơ-không được xem là cùng phương và cùng hướng với mọi vectơ. Đây là **quy ước toán học**, không phải khẳng định một mũi tên độ dài 0 có chiều vật lí xác định.
+
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ — Mục 2.1:</strong> Một vectơ có <strong>điểm đầu, điểm cuối và chiều</strong>; \(\overrightarrow{AB}\) có độ dài \(AB\). Khi hai điểm trùng nhau ta được \(\vec0\), có độ dài bằng \(0\). Vectơ và độ dài của nó là hai đối tượng khác nhau.</div>
 
     ### 2.2. Hai vectơ cùng phương, cùng hướng, bằng nhau
 
     #### 2.2.1. Phương và chiều phải được xét riêng
 
-    Với hai vectơ khác không, chúng **cùng phương** nếu hai giá song song hoặc trùng nhau; cùng phương có thể **cùng hướng** hoặc **ngược hướng**.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Hai vectơ cùng phương:</strong> Hai vectơ <strong>khác vectơ-không</strong> gọi là cùng phương nếu giá của chúng <strong>song song hoặc trùng nhau</strong>. Khi đó hai mũi tên có thể <strong>cùng hướng</strong> hoặc <strong>ngược hướng</strong>, tùy chiều trên các giá.</div>
 
-    **Lưu ý:** Cùng phương không suy ra cùng hướng; cùng hướng không suy ra cùng độ dài.
+    **Lưu ý:** Cùng phương <strong>chưa đủ</strong> để kết luận cùng hướng; cùng hướng cũng chưa đủ để kết luận bằng nhau nếu độ dài khác nhau. Quy ước riêng về vectơ-không đã nêu tại mục 2.1.2.
 
     #### 2.2.2. Hai vectơ bằng nhau không cần trùng giá
 
@@ -165,7 +169,9 @@
 
     <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B07_PARALLELOGRAM_EQUAL_OPPOSITE_D5_R01.svg" loading="lazy" alt="Hình bình hành ABCD với các vectơ cạnh đối bằng nhau"><figcaption>Hình bình hành ABCD với các vectơ cạnh đối bằng nhau.</figcaption></figure>
 
-     $\vec u=\vec v$ khi cùng hướng, cùng độ dài. Trong hình bình hành ABCD: $\overrightarrow{AB}=\overrightarrow{DC}$; còn $\overrightarrow{AB}$ và $\overrightarrow{CD}$ cùng độ dài nhưng **ngược hướng**.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Hai vectơ bằng nhau:</strong> Hai vectơ bằng nhau khi chúng <strong>cùng hướng và có cùng độ dài</strong>. Không cần có chung điểm đầu hoặc cùng giá. Kí hiệu \(\vec u=\vec v\).</div>
+
+    **Áp dụng hình bên trên:** Với hình bình hành \(ABCD\), \(\overrightarrow{AB}=\overrightarrow{DC}\). Hai vectơ \(\overrightarrow{AB}\) và \(\overrightarrow{CD}\) tuy bằng độ dài nhưng <strong>ngược hướng</strong>, nên không bằng nhau.
 
     **Liên hệ:** Tên gọi vectơ đối cùng kí hiệu âm của vectơ được giải thích ở Bài 8.
 
@@ -174,6 +180,8 @@
     **Biểu diễn lực và vận tốc bằng vectơ:** (1) chọn vị trí gốc mũi tên (điểm đặt của lực hoặc vị trí đang xét); (2) vẽ mũi tên đúng phương và chiều; (3) chọn tỉ lệ và độ dài mũi tên tương ứng với độ lớn; (4) ghi rõ đơn vị, chẳng hạn N cho lực, m/s hoặc km/h cho vận tốc. Không so sánh độ dài mũi tên của các đại lượng khác đơn vị hoặc khác tỉ lệ.
 
     **Phân biệt với quãng đường:** Vectơ độ dời nối vị trí đầu và cuối. Quãng đường đi theo nhiều chặng có thể lớn hơn độ dài vectơ độ dời.
+
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ — Mục 2.2:</strong> Để so sánh hai vectơ khác không, xét <strong>phương</strong> (giá song song/trùng), <strong>chiều</strong> (cùng hay ngược hướng), rồi <strong>độ dài</strong>. <strong>Hai vectơ bằng nhau ⇔ cùng hướng và cùng độ dài.</strong> Đừng kết luận bằng nhau chỉ từ hai độ dài bằng nhau; với vectơ-không dùng quy ước riêng ở mục 2.1.</div>
 
 === "Ví dụ"
 
