@@ -13,13 +13,13 @@ CATALOG_TOPIC_ID: CD17
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 76b8a10c12e2a60fa155901d153f17c9982193c4
+ACADEMIC_SOURCE_BLOB: ae8bffe04a7c52e062c933739bafceb5412a8270
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC17_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: ee703c5c92e26065d53479a5019d23e27c0f81c9
+REVIEW_RECEIPT_BLOB: cf87e9b857b01829262d6fe224256766edd5822b
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: 69b1cae6ebda31d510efd1a8d7b6b7e5c3086d2c
+AUTHOR_A1_A7_BLOB: 9b6fc1db68eefc38db3b31efe7bde4616b26aa65
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: 69b1cae6ebda31d510efd1a8d7b6b7e5c3086d2c
+AUTHOR_METADATA_BLOB: 9b6fc1db68eefc38db3b31efe7bde4616b26aa65
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHVII_B22_B27_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_THPT_TOPIC17_FRUSTUM_VOLUME_MODEL_R00_20261113.html
@@ -248,3 +248,6 @@ This handoff retains its prior file path and packet identifier for stable links 
 
 
 **Current source handoff:** Source-specific Q18 author self-QA for the changed math/editorial portion is complete, immutable predecessor source preserved in Git, one learner source and matching A1/V2/ready/REGISTER selected. No website/AP/RELEASE PASS or merge/deploy implied. A separate CI on HEAD is required before release intake acceptance.
+
+
+**Additional in-place typography QC:** Knowledge frustum labels a=6/h=4 now correct MathJax; source Q18/metadata updated in existing files. The only active learner file path remains unchanged. All assessment/keys/point scores unaffected; no new independent reviewer verdict or production QA.
