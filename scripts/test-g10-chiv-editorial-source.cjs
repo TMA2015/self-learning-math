@@ -352,6 +352,53 @@ for(const [lesson,row] of rows){
    "B09 owner correction must retain 2 original HELP IDs, not create another canonical HELP");
   expected=q06("R06_SOURCE_BLOB");
  }
+ if(lesson==="B10"){
+  const receipt=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B10_S1_PED_SINGLE_CANONICAL_Q18_R01_20261118.md"),"utf8");
+  const f=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(f("BASELINE_B10_KNOWLEDGE_BLOB"),row.candidate,
+   "B10 source SHA must extend exact previous published B10, never a parallel draft");
+  assert(["CHIV-10-A","CHIV-10-B","CHIV-10-C","B09-F04","Q18_AUTHOR_SELF_VERIFIED"].every(x=>receipt.includes(x)),
+   "B10 must review 79-deep-audit defects and owner P2 anti-repeat");
+  const official=source.slice(source.indexOf('=== "Kiến thức SGK"'),source.indexOf('=== "Ví dụ"'));
+  assert.deepEqual([
+   (official.match(/class="thpt-r4-knowledge-conclusion thpt-r4-concept-card"/g)||[]).length,
+   (official.match(/class="thpt-r4-knowledge-conclusion thpt-r4-rule-card"/g)||[]).length,
+   (official.match(/class="thpt-r4-knowledge-conclusion" role="note"/g)||[]).length,
+   (official.match(/class="thpt-r4-key-formula"/g)||[]).length
+  ],[1,2,1,2],"B10 3+1 formal roles must match actual math");
+  for(const x of ["\vec u=x\vec i+y\vec j",
+   "\overrightarrow{AB}=(x_B-x_A;y_B-y_A)",
+   "\vec u+\vec v=(a+c;b+d)",
+   "AB=\sqrt{(x_B-x_A)^2+(y_B-y_A)^2}",
+   "ad-bc=0","\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0"])
+   assert(official.includes(x),"B10 mandatory S1 mathematics absent "+x);
+  const discover=source.split('=== "Khám phá kiến thức"')[1].split('=== "Kiến thức SGK"')[0];
+  assert(discover.indexOf("THPT_G10_B10_COORDINATES_DIFFERENCE_D5_R01.svg")>0&&
+   discover.indexOf("THPT_G10_B10_COORDINATES_DIFFERENCE_D5_R01.svg")<
+   discover.indexOf('data-thpt-first-try-id="THPT-G10-CHIV-TRY16"'),
+   "B10 original coordinate figure must precede first attempt");
+  const worked=source.split('=== "Ví dụ"')[1].split('=== "Lỗi thường gặp"')[0];
+  assert(worked.includes("Ví dụ 4 — Qua sông")&&worked.includes("bộ dữ liệu khác")&&
+   worked.includes("150")&&worked.includes("96"),
+   "B10 river worked example must move to Tab3 and clarify diagram's DIFFERENT dataset");
+  const tab4=source.split('=== "Lỗi thường gặp"')[1];
+  assert((tab4.match(/^    \?\?\? tip "/gm)||[]).length===3&&
+   ["Lỗi thường gặp:","Vì sao sai?","Tự kiểm:","Ôn và luyện lại:"].every(x=>tab4.includes(x)),
+   "B10 must teach actual student error, why wrong, correction and remediation");
+  assert(!source.includes("EX-G10-B10-RIVER-TR01")&&
+   !source.includes("Assessment safety")&&!source.includes("HELP_ID")&&
+   !source.includes(String.fromCharCode(96)),"B10 learner text has exposed internal metadata/code");
+  const css=fs.readFileSync(path.join(root,
+   "docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"));
+  const textCss=css.toString("utf8"),marker="/* G10 Chapter IV B10 R01",at=textCss.indexOf(marker);
+  assert(at>0&&textCss.indexOf(marker,at+1)===-1,"B10 exactly one scoped CSS append");
+  assert.equal(blob(textCss.slice(0,at)),f("CSS_OWNER_B09_P2_BASELINE_BLOB"),
+   "B10 may not touch any B01-B09 accepted CSS");
+  assert.equal(blob(css),f("CSS_R01_SCOPED_B10_BLOB"),
+   "B10 semantic palette SHA not matching source receipt");
+  expected=f("R01_SOURCE_BLOB");
+ }
  assert.equal(blob(source),expected,lesson+" exact final Q18 academic source receipt");
  assert.equal(candidateG10KnowledgeBlob(n),expected,lesson+" Q18 source router selects correct immutable snapshot");
  for(const key of ["data-thpt-first-try-id","data-thpt-help-id","data-outcome-id"])
