@@ -19,7 +19,7 @@ REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC03_R06_NUMBERING_DELTA_
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC03_R06_NUMBERING_DELTA_A_Q18_20261116.md
 REVIEW_RECEIPT_BLOB: 6f7641528ea7bd8acb6a98e1c46be03a8ef44aae
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC03-ALGEBRA-EQUATIONS-FULL-R06_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: 9bb2d7370e0ba61570aaa4c914a80f74ec167a18
+AUTHOR_HANDOFF_BLOB: d41dbcf97e07759b3612886563111e0a137018e1
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_ORIGINAL08_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: b2e79a6cda5fdcc82dbd281e4273577ca637895e
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_NEW23_PUBLIC_CANONICAL_R01_20261112.md
@@ -95,3 +95,6 @@ The current learner file at ACADEMIC_SOURCE_PATH is the **only** active CĐ03 dr
 
 
 **Current AUTHORING source-specific verdict after QA correction:** The only effective learner source is the corrected file already named in ACADEMIC_SOURCE_PATH. All affected academic/PED explanations were read and checked; question stems, answers, rubric and public selfcheck were parity-checked. This READY concerns **authoring source handoff only**. The CI source-lock check on this final HEAD and website/runtime/AP gates are separate and must PASS before RELEASE, merger or deployment; this paragraph grants no such authority.
+
+
+**Final source-only custody after workflow state correction:** This document uses the required READY state because its edited learner source passed affected-scope academic/PED author review with unchanged question/key/rubric integrity. No separate student source, no independent full-topic new review or website release is implied. Any previous temporary HOLD wording was superseded by the latest STATE/BLOCKERS fields. Release/AP/device CI and explicit owner authorization remain separate hard gates.
