@@ -456,7 +456,7 @@ Em luyện từng chặng sau khi hiểu cách chọn định lí và điều ki
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHIII-W05; SOURCE_BLOB: 6320aeaa89bd51c514b07461e01fad5e3aca833f; OUTCOME: TOP12-O04; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHIII-W05; SOURCE_BLOB: 569466519ee9a653fa3bcdf874e06619424fbf7b; ORIGINAL_R01_REVIEWED_BLOB: 6320aeaa89bd51c514b07461e01fad5e3aca833f; OUTCOME: TOP12-O04; SINGLE_ITEM_ID -->
 
 **Bài SGK 9.**
 
@@ -466,7 +466,7 @@ Em luyện từng chặng sau khi hiểu cách chọn định lí và điều ki
 
 **Lời giải:** (a) \(x_M=10\cos150^\circ=-5\sqrt3\) (m), \(y_M=10\sin150^\circ=5\) (m). (b) Độ cao M là \(12+5=17\) m. (c) Góc 150° nằm phía trái trục Oy nên hình chiếu xuống trục Ox âm, từ đó cos150°<0.
 
-**Rubric /7:** (1) Nêu đúng quy chiếu tâm O, bán kính và góc (1đ); (2) viết đúng \(x=R\cos\alpha\), \(y=R\sin\alpha\) (2đ); (3) thay giá trị góc bù tính đủ tọa độ (2đ); (4) tính độ cao mặt đất 17 m (1đ); (5) giải thích hình học dấu cos (1đ). Không trừ điểm hai lần cho cùng một lỗi số ở những bước phụ thuộc khi cách làm và lập luận đúng.
+**Rubric /7:** (1) Nêu đúng quy chiếu tâm O, bán kính và góc (1đ); (2) viết đúng \(x=R\cos\alpha\), \(y=R\sin\alpha\) với \(\alpha=150^\circ\) (2đ); (3) thay giá trị góc bù tính đủ tọa độ (2đ); (4) tính độ cao mặt đất 17 m (1đ); (5) giải thích hình học dấu cos (1đ). Không trừ điểm hai lần cho cùng một lỗi số ở những bước phụ thuộc khi cách làm và lập luận đúng.
 
 **Nếu làm sai:** Từ sin²+cos²=1, chọn dấu căn theo vị trí góc; hai góc bù có sin bằng nhau, cos đối dấu.
 
