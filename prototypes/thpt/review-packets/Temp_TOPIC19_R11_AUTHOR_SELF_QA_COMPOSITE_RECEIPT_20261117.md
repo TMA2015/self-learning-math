@@ -8,10 +8,10 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R11_P2_CANONICAL_LABEL_LEARNER_CLARITY_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R11_P2_CANONICAL_LABEL_LEARNER_CLARITY_CANDIDATE_20261117.md
-SOURCE_BLOB: 5546204168eb3c3402b21af9ca1b9d08b118c378
-ACADEMIC_SOURCE_BLOB: 5546204168eb3c3402b21af9ca1b9d08b118c378
+SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R10_LANGUAGE_LOCAL_REFERENTS_CANDIDATE_20261117.md
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R10_LANGUAGE_LOCAL_REFERENTS_CANDIDATE_20261117.md
+SOURCE_BLOB: eff5f2a91708671db6f32063eea2cd111ddc6b94
+ACADEMIC_SOURCE_BLOB: eff5f2a91708671db6f32063eea2cd111ddc6b94
 FROZEN_R09_READY_SOURCE_BLOB: 2b46a2c92004f2c030d030e2b2021a34157bc95d
 FROZEN_R09_FULL_AUTHOR_Q18_RECEIPT_BLOB: 55bc391995cccdf0ce66b96ebfa8840c0148c075
 R10_MATERIAL_PED_SOURCE_BLOB: 37612a3fb8d804efa6dd4f65ddd22d90bf2772ae
@@ -71,3 +71,8 @@ Previously the voluntary TOP19-O02 / THPT-TOP19-T02 response contained ungrammat
 ## Further same-source learner-math presentation QA (17/11/2026)
 
 Four Knowledge lines L343/L345/L349/L494 now format the **mathematical** factorial, permutation/combination and polynomial expressions `n!`, `A_n^k=C_n^k\cdot k!`, `1/x`, `P(1)` as TeX inline math, while hardware labels `nPr`, `nCr`, `SHIFT`, `x!` and device `E` remain literal code. The Knowledge method box uses `\\operatorname{nPr}` and `\\operatorname{nCr}` instead of parsing physical key names as algebraic variable multiplication. The same learner source path is edited in place; no R12 file. Source parity: 56 original single-owner canonical items, seven public question-only replays, all Practice/Written/Selfcheck text byte-identical, 56 optional disclosures, answers/rubric exact, all SVG references unchanged. `DELTA_B_SOURCE_EQUIVALENT`, affected Q03/Q09/Q10/Q15/Q18 `AUTHOR_SELF_VERIFIED` QA; actual browser MathJax and global canonical owner/V2 receipt remain their own gates. Original G10 bank, protected RD1/Final Submit/Mastery and production not touched.
+
+
+## ORIGINAL_BRANCH_SINGLE_SOURCE_CONSOLIDATED — 17/11/2026
+
+The nineteen vetted R11 student-visible correction groups were applied **directly** to the ORIGINAL R10 learner file at SOURCE_PATH on branch `authoring/topic19-language-clarity-r10-20261117` (source blob `eff5f2a91708671db6f32063eea2cd111ddc6b94`). No new canonical item version, answer, rubric, math condition, original G10 shared item or selfcheck role is introduced. Source copied only the corrected T02 explanation (4 shirts each with 3 badge combinations), four mathematical-versus-calculator-label notational lines, clarified learner Practice direction, removed redundant developer-facing SGK labels, and improved ungraded selfcheck introduction. Item/disclosure/SVG order identical to R10. The R11 patch file is obsolete, must not be an alternative release input. This branch's old V2/ready/REGISTER referencing the R11 file are **STALE/HOLD** and are NOT authorized CONTENT_READY for the original corrected R10 source; owner/bank Q01–Q18, final heads and current CI need independent reconciliation before promotion. NO MERGE/DEPLOY.
