@@ -440,7 +440,7 @@ Với P ban đầu và hai chặng vectơ u,v, vị trí cuối Q=P+u+v. Độ d
 
 Trước tiên em hãy làm các bài theo từng nhóm kiến thức. Với bài chọn đáp án, giải thích vì sao phương án đúng; với bài tự luận, trình bày đủ bước rồi mới mở **Lời giải** hoặc **Đối chiếu** để tìm chỗ cần sửa.
 
-## Câu luyện SGK dùng chung
+## 1. Câu luyện SGK dùng chung
 
 Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt phẳng và trong không gian. Em hãy đọc đề, tự giải và chỉ mở **Đối chiếu** sau khi hoàn thành; một số câu là bài đã gặp ở hành trình SGK để em luyện lại.
 
@@ -906,7 +906,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 
 </details>
 
-## Bài mới theo mạch học
+## 2. Bài mới theo mạch học
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P01; SOURCE_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df; OUTCOME: TOP13-O02; SINGLE_ITEM_ID -->
 ### Luyện 1 · Chiều vectơ hình bình hành
