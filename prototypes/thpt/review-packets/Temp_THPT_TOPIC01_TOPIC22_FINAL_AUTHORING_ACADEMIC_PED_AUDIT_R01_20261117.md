@@ -78,3 +78,49 @@ Outcome counts are from canonical Topic PR/receipt. CĐ20 outcomes use `PRIMARY_
 **Phân biệt quan trọng:** Lời điều hướng minh bạch “Xem hình Venn ở mục Kiến thức 2.1” như CĐ20 R11 L808 là hướng **khắc phục D6 có đích rõ**, không phải đại từ ngụ ý buộc người đọc tự đoán. Chỉ chỉnh khi đoạn đang đọc không tự đủ thông tin cần thiết.
 
 **Trạng thái kiểm toán ngôn ngữ toàn bộ:** `SOURCE_SCAN=22/22`; `TARGETED_MANUAL_FINDINGS=7 topic cases + 1 acceptable-reference control`; `FULL_LESSON_SENTENCE_BY_SENTENCE_PASS=NOT_ESTABLISHED`. Phần sửa R10 **không được** ghi là R09 đã sửa; Q15/T02 và Q18/V2/ready/REGISTER phải đóng trên bản nguồn mới trước bất kỳ CLAIM CONTENT_READY. PR #882 vẫn Draft source-only, không merge/deploy.
+
+---
+
+<!-- FULL_SCOPE_AUTHORING_RECHECK_R02_20261117 -->
+## R02 · 17/11/2026 — kiểm toán toàn bộ Chuyên đề, không chỉ ngôn ngữ
+
+**Phạm vi:** Trực tiếp đọc lại **22/22 learner sources**, từng nguồn ở ba phần Kiến thức/Luyện tập/Tự kiểm tra, xác định LESSON_ID/OUTCOME_ID nếu source có khai báo, kiểm ví dụ, Vận dụng, câu luyện thật, đáp án/lời giải tự mở, hình, nguồn và Tự kiểm tra công khai. Tìm đường khắc phục D6 có trỏ đúng đích và các mã/metadata xuất hiện trong lời học sinh. Tự đọc mẫu toán ở cả 22 mảng và kiểm lại các kết quả cụ thể; chưa tái giải mọi câu canonical hay mở lại trực tiếp từng trang SGK/SBT S1. Đây là **learner-source audit và manual targeted Academic/PED audit**, không phải QA browser/MathJax thật.
+
+### Ma trận kiểm tra theo 22 Chuyên đề
+
+| Chuyên đề | Outcome theo source | Ba phần học | Toán/chuỗi tự học đã soi mẫu | Khiếm khuyết và trạng thái mới |
+|---|---:|---|---|---|
+| CĐ01 | 11 | Có đủ | Lượng từ, phủ định, tương đương | **LANG-01 P2:** L181 mở mục 2 bằng “Ở phần trước…”; phải nêu đối tượng ngay tại mục |
+| CĐ02 | 16 | Có đủ | Dấu tam thức, nghiệm biên | **P2 Q08:** L201 hướng “Written W01” thay vì số/tên bài học sinh thấy |
+| CĐ03 | 12 | Có đủ | Hai căn, miền, nghiệm thử lại | **P1 Q08/PED6:** 11 D6 tại L65–369 nhắc ADD03/Pxx/Cxx/Wxx, nhưng Practice hiển thị “Bài 1, Bài 2…”; không tìm được đích từ nhãn |
+| CĐ04 | 18 | Có đủ | Logarit, đổi cơ số, miền dương | **P1 Q08/PED6:** 9 D6 tại L101–543 dùng M10/Pxx/B19-Cxx; **P2 Q03:** L206 dùng b>0 sau đẳng thức cơ số a, ký hiệu không liền mạch |
+| CĐ05 | 17 | Có đủ | Miền, biến đổi giá trị tuyệt đối và đồ thị | **P1 Q08/PED6:** 16 D6 L67–519 trỏ P03/P04… nhưng Practice chỉ đánh “Bài 1–38” |
+| CĐ06 | 16 | Có đủ | Chu kỳ, tan/cot, điểm loại | **P1 Q08/PED6:** 15 D6 L69–493 chứa mã THPT-G11-.../THPT-TOP06-... thay tên/số bài thật |
+| CĐ07 | 18 | Có đủ | Dãy số, cấp số nhân, q=0 | **LANG-02 P2:** L40–46 mở mục 1.2 “Từ miền chỉ số…” mà chưa tự giới thiệu lại đối tượng |
+| CĐ08 | 18 | Có đủ | Giới hạn một phía và phân loại gián đoạn | **LANG-03 P2:** L350–362 nói “Ngay tại hình này” trước hình, so sánh “ở trên”; L331 “Như M06” lộ mã |
+| CĐ09 | 32 | Có đủ | Dấu vận tốc–gia tốc, tốc độ | **LANG-04 P2:** L225 “độ dốc ấy” trỏ mục khác; L1699 “dùng P15” không tương ứng nhãn học sinh |
+| CĐ10 | 36 | Có đủ | Miền rời, cực trị/biên tối ưu | **P1 Q03/Q15:** L1026 lộ “item_id W02”; L2512–2516 heading Q15/Q16 invariants và metadata kỹ thuật nằm trong disclosure Lời giải; Mastery notes khác P2 |
+| CĐ11 | 22 | Có đủ | Diện tích, đĩa/vành khăn và thể tích | **P1 Q03/Q15:** L2334–2338 heading Q15/Q16 identity và metadata RD1/Mastery nằm trong disclosure Lời giải |
+| CĐ12 | 12 | Có đủ | SSS/SSA, cos và diện tích | **P2 Q03:** L1 tiêu đề hiển thị R03 learner-first |
+| CĐ13 | 16 | Có đủ | Độ dời, vectơ và tích vô hướng | **P1 Q03/Q14/PED:** 16 nhãn “Tự thử trước luyện tập” thay Vận dụng, 32 khối “Vì sao cần học”/“Hiểu bản chất” giống checklist; L1 lộ R03 student-first; L394 lộ Draft PR #750/blob trong Practice; Q15/R1 dependency #750 vẫn mở |
+| CĐ14 | 23 | Có đủ | Đường thẳng, đường tròn, tiệm cận | Chưa phát hiện blocker mới trong phần toán và learner path đã soi; **không** suy full mathematical PASS |
+| CĐ15 | 22 | Có đủ | Giao tuyến, hai mặt song song | Chưa phát hiện blocker mới trong mẫu đã soi |
+| CĐ16 | 21 | Có đủ | Góc giữa hai đường/mặt và nhị diện | Chưa phát hiện blocker mới trong mẫu đã soi |
+| CĐ17 | 12 | Có đủ | Khoảng cách vuông góc, thể tích chóp | Chưa phát hiện blocker mới trong mẫu đã soi |
+| CĐ18 | 40 | Có đủ | Phương trình mặt cầu, đường–mặt | **P1 Q03/Q10:** L702 mở “Tiếp tục chuyến bay đã biết”, kết luận t=1 “giây” dù chưa khai báo đơn vị t/v trong cùng mục; **P2:** 24 lời kỹ thuật “không tự động ghi Mastery” lặp trong Written Practice |
+| CĐ19 | 14 | Có đủ | Quy tắc đếm, hệ số nhị thức, tăng trưởng | **P2 Q03:** L580–926 lặp “nguồn canonical” học sinh không cần. R09 bất biến; Draft R10 #883 sửa một số đoạn nhưng **Q15 T02 và Q18 vẫn HOLD**, chưa CONTENT_READY |
+| CĐ20 | 17 | Có đủ | Độc lập, xung khắc, biến cố đối | **P1 Q08/PED6:** L782/808/836 trỏ các bài Luyện tập 2.8/2.13/2.14/2.16 **không tồn tại**; nhóm 2 thực có 2.1–2.7 |
+| CĐ21 | 8 | Có đủ | Xác suất có điều kiện, toàn phần, Bayes | **P1 Q08/PED6:** L48–315 và L493/523/547 trỏ Kiến thức 4–8 (thực chỉ có nhóm 1–3) và Luyện tập 2.3–2.8 (thực nhóm 2 chỉ 2.1–2.2) |
+| CĐ22 | 39 | Có đủ | IQR ghép nhóm, nội suy, ngoại lệ | **P2 Q03:** lời kỹ thuật “không ghi Mastery” lặp trong Practice L999/1013/1027/1041/1055/1463/1477; Q01 S1 PDF-index P2 còn theo receipt cũ |
+
+**Diễn giải coverage:** Có ba phần và số outcome khớp bản hiện hành không phải là PED PASS. Ở các nguồn dùng metadata/marker khác LESSON_ID/OUTCOME_ID (CĐ20–22), lấy outcome từ Q18/V2 chính thức, không báo sai là “0 outcome”. Giữ kết quả source–receipt SHA parity đã xác minh 22/22 trong R01; không trộn R10 candidate vào R09 signed.
+
+### Thứ tự xử lý, trong đúng Q01–Q18 và #864/#865
+
+1. **P1 Q08/PED6:** CĐ03–06 và CĐ20–21 phải sửa tên/nơi trỏ của đường D6 theo nhãn bài thực tế, kiểm toàn bộ D6 bị ảnh hưởng, không để internal ID thay cho điều hướng được.
+2. **P1 Q03/Q14:** CĐ10–11 loại metadata Q15/Q16 khỏi phần học sinh nhìn thấy; CĐ13 thay mẫu checklist bằng diễn giải tự nhiên và nhãn Vận dụng/Đối chiếu, bỏ branch/SHA khỏi lời học sinh.
+3. **P1 ngữ cảnh/toán:** CĐ18 làm bài toán drone tự đủ dữ kiện và đơn vị, kiểm mô hình S1; CĐ04 chỉnh ký hiệu cơ số nhất quán. Những thay đổi ảnh hưởng toán/D6/item phải phân loại delta đúng phần, không gọi sửa metadata là toán PASS.
+4. **P2:** sửa các câu tham chiếu xa, mã kỹ thuật, mô tả quy trình và vị trí hình; không sửa đoạn đang rõ chỉ để đồng dạng.
+5. **Bảo toàn nghiệm thu:** các source/receipt/V2/ready/REGISTER signed Rxx giữ nguyên; bản candidate mới cần kiểm delta theo outcome/item, Q15/Q16/canonical và Q18 nguồn mới trước khi chuyển CONTENT_READY. Không giả có direct S1 page re-scan, full item math re-solving, real browser/AP QA hoặc independent NotebookLM review.
+
+**Verdict R02:** SOURCE_SCAN=22/22, TARGETED ACADEMIC/PED AUDIT PER TOPIC, **NEW P1/P2 FINDINGS OPEN**. KHÔNG kết luận 22/22 PED PASS hay 22/22 LANGUAGE PASS. AUTHORING ONLY; NO MERGE/DEPLOY.
