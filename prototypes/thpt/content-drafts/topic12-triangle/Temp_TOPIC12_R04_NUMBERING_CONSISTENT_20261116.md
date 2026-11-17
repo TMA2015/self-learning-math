@@ -1,4 +1,4 @@
-# Chuyên đề 12 — Hệ thức lượng trong tam giác và giải tam giác · R03 learner-first
+# Chuyên đề 12 — Hệ thức lượng trong tam giác và giải tam giác
 
 <!-- AUTHORING_R03_CANDIDATE; HISTORICAL_R02_BLOB: 52b270e986361cb2d66cd0623522705e1abd8577; NO_RELEASE -->
 
@@ -308,11 +308,6 @@ Thực hành một quy trình ổn định: (1) gọi tên cạnh/góc đối di
 
 <details><summary>Đối chiếu</summary>Dữ kiện **không tạo thành tam giác** vì 2+3 không lớn hơn 6. Cần kiểm điều kiện tồn tại *trước* công thức; luyện bài luyện về bất đẳng thức tam giác.</details>
 
-**Nguồn SGK/SBT — cuối trang Kiến thức**
-
-- **SGK Toán 10 Kết nối tri thức Tập Một:** Bài 5 *Giá trị lượng giác của một góc từ 0° đến 180°*; Bài 6 *Hệ thức lượng trong tam giác* (Chương III).
-- **SBT Toán 10 Kết nối tri thức Tập Một:** các bài 5–6 tương ứng, dùng tham khảo họ dạng. Số trang in/PDF cụ thể phải lấy từ receipt original PR #840, không tự đoán.
-
 <!-- R02 author metadata: frozen source b93611eaaf0dbc03908a4836f1db7f70fd8df108, original reviewed SVG paths unchanged; R02 formal maths new and Q18 pending. -->
 
 # Luyện tập
@@ -321,7 +316,7 @@ Em luyện từng chặng sau khi hiểu cách chọn định lí và điều ki
 
 ## 1. Ôn luyện SGK
 
-**18 câu SGK công khai** được hiển thị đầy đủ tại đây từ đúng nguồn SGK canonical đã khóa. Hãy tự làm trước khi mở Đối chiếu; bài tự luận có rubric công khai. Mỗi câu chỉ có một đề và lời giải thống nhất, dù được dùng ở nhiều nơi.
+**18 câu SGK công khai** được trình bày tại đây để em luyện lại cùng những lời giải thống nhất. Hãy tự làm trước khi mở Đối chiếu; bài tự luận có rubric công khai. Mỗi câu chỉ có một đề và lời giải thống nhất, dù được dùng ở nhiều nơi.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B05-C01; SOURCE_BLOB: 6320aeaa89bd51c514b07461e01fad5e3aca833f; OUTCOME: TOP12-O01; SINGLE_ITEM_ID -->
 
@@ -471,7 +466,7 @@ Em luyện từng chặng sau khi hiểu cách chọn định lí và điều ki
 
 **Lời giải:** (a) \(x_M=10\cos150^\circ=-5\sqrt3\) (m), \(y_M=10\sin150^\circ=5\) (m). (b) Độ cao M là \(12+5=17\) m. (c) Góc 150° nằm phía trái trục Oy nên hình chiếu xuống trục Ox âm, từ đó cos150°<0.
 
-**Rubric /7:** (1) Nêu đúng quy chiếu tâm O, bán kính và góc (1đ); (2) viết đúng \(x=R\cos\alpha\), \(y=R\sin\alpha\) (2đ); (3) thay giá trị góc bù tính đủ tọa độ (2đ); (4) tính độ cao mặt đất 17 m (1đ); (5) giải thích hình học dấu cos (1đ). Không trừ lặp cùng lỗi số ở các bước phụ thuộc khi cách làm đúng; giáo viên/người học đối chiếu thủ công, không tự cộng Mastery.
+**Rubric /7:** (1) Nêu đúng quy chiếu tâm O, bán kính và góc (1đ); (2) viết đúng \(x=R\cos\alpha\), \(y=R\sin\alpha\) (2đ); (3) thay giá trị góc bù tính đủ tọa độ (2đ); (4) tính độ cao mặt đất 17 m (1đ); (5) giải thích hình học dấu cos (1đ). Không trừ điểm hai lần cho cùng một lỗi số ở những bước phụ thuộc khi cách làm và lập luận đúng.
 
 **Nếu làm sai:** Từ sin²+cos²=1, chọn dấu căn theo vị trí góc; hai góc bù có sin bằng nhau, cos đối dấu.
 
@@ -619,7 +614,7 @@ Em luyện từng chặng sau khi hiểu cách chọn định lí và điều ki
 
 **Lời giải:** (a) Vì \(9+10=19>17\) nên ba độ dài lập thành một tam giác. Với a=17,b=10,c=9, \(\cos A=(b^2+c^2-a^2)/(2bc)=(100+81-289)/(180)=-3/5\), nên A **tù**. (b) \(p=18\), \(S=\sqrt{18\cdot(18-17)\cdot(18-10)\cdot(18-9)}=\sqrt{18\cdot1\cdot8\cdot9}=36\text{ m}^2\). (c) \(r=S/p=36/18=2\text{ m}\), \(R=abc/(4S)=17\cdot10\cdot9/(4\cdot36)=85/8\text{ m}\). (d) Chi phí \(36\cdot120000=4\,320\,000\) đồng.
 
-**Rubric /7:** kiểm tra bất đẳng thức tam giác (1đ); sử dụng đúng định lí côsin và tính cos A (1.5đ); suy góc A tù (0.5đ); tính p và S đúng kèm m² (2đ); suy r và R đúng đơn vị (1.5đ); chi phí cỏ đúng (0.5đ). Tự luận tự đối chiếu không cập nhật Skill Mastery.
+**Rubric /7:** kiểm tra bất đẳng thức tam giác (1đ); sử dụng đúng định lí côsin và tính cos A (1.5đ); suy góc A tù (0.5đ); tính p và S đúng kèm m² (2đ); suy r và R đúng đơn vị (1.5đ); chi phí cỏ đúng (0.5đ). Em tự kiểm lại từng tiêu chí của lời giải để tìm phần cần ôn thêm.
 
 **Nếu làm sai:** Vẽ lại điểm quan sát, đánh dấu góc trong và cạnh đo được, ghi đơn vị.
 
@@ -711,7 +706,7 @@ Em luyện từng chặng sau khi hiểu cách chọn định lí và điều ki
 
 # Tự kiểm tra
 
-**12 câu hỏi tự kiểm tra công khai.** Em hãy làm cả 12 câu trước khi quay lại phần Luyện tập để tự mở lời giải và nhận ra phần cần ôn. Đây là các câu đã dùng để luyện, **không phải bài kiểm tra độc lập hoặc kết quả Mastery**. Tài liệu này không có chức năng nộp bài, chấm điểm hay xét đạt chuẩn chính thức.
+**12 câu hỏi tự kiểm tra công khai.** Em hãy làm cả 12 câu trước khi quay lại phần Luyện tập để tự mở lời giải và nhận ra phần cần ôn. Đây là các câu đã dùng để luyện, **không phải bài kiểm tra độc lập**. Tài liệu này không có chức năng nộp bài, chấm điểm hay xét đạt chuẩn chính thức.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-G10-B05-C01; OUTCOME: TOP12-O01; NO_RD1; NO_MASTERY -->
 
@@ -768,3 +763,6 @@ Em luyện từng chặng sau khi hiểu cách chọn định lí và điều ki
 **Câu 12.** Trong tam giác ABC, biết \(A=30^{\circ}, a=8,b=10\). Chứng minh rằng dữ kiện cho hai tam giác khác nhau; mô tả cách tìm C cho mỗi tam giác.
 
 <!-- AUTHORING: 12 public self-check placements; answers/rubrics only in voluntary Practice reveals; no held-out RD1. -->
+
+
+**Nguồn tham khảo:** SGK Toán 10 *Kết nối tri thức với cuộc sống*, Tập Một, Chương III (Bài 5–6). Các bài toán SGK được trình bày cùng phần Luyện tập để em đối chiếu phương pháp; không dùng số trang suy đoán.
