@@ -329,8 +329,9 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
        });
        assert.deepEqual(unrendered,[],where+" no orphan TeX source outside MathJax wrappers");
        await labels.nth(1).click();
-       assert(await blocks.nth(1).locator("div.arithmatex").isVisible(),
-        where+" subtraction equation visible when Knowledge tab selected");
+       assert(await blocks.nth(1).locator("div.arithmatex").first().isVisible()&&
+        await blocks.nth(1).locator("div.arithmatex").last().isVisible(),
+        where+" both unfilled formula-frame equations visible in Knowledge tab");
        await labels.nth(2).click();
        assert(await blocks.nth(2).locator("div.arithmatex").first().isVisible(),
         where+" solved equation visible when Examples tab selected");
