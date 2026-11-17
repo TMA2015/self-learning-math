@@ -8,19 +8,19 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: c70b3a4d2327e513d9b54f84b18f5ce164eb3e70
+SOURCE_COMMIT: 01370689a2056612bc833db1cbebe93a5c7fc6a5
 CATALOG_TOPIC_ID: CD14
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 8f61c67a11dd3e2869cbd71dbb279bdcfdd92bf3
+ACADEMIC_SOURCE_BLOB: dada7df9fc509cc67238cbc3e5d03376b58f23f4
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC14_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md (Q18 author-self; NO new independent NotebookLM Topic14 verdict)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC14_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: c064ed1ba8e2c88318e3acac2b78fccb05ca9717
+REVIEW_RECEIPT_BLOB: 27a6e61fb90342d19afa61cd92b56ac3bda25a6a
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_R02_AUTHORING_ONLY_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: 843671899db376729c8bedd5dbd41c1e3b651054
+AUTHOR_A1_A7_BLOB: b72c3a80ef1a25bc7ac0caa1debcd1eb5ed738a2
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC14-ANALYTIC-OXY-FULL-R02_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: 4722657f66cee1802c62b58c80321130eb940c0a
+AUTHOR_HANDOFF_BLOB: 70211bac6e0a7037e744a85b3ee3db989189f639
 ORIGINAL_SGK_SOURCE_BLOB: c5c222af88b0e932f9b60df059d8ffd4da5f0f26
 ORIGINAL_R01_PED_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd
 SVG1_BLOB: 57485fed0a5dcee6ebcd060f100abe5eed43bc76
@@ -44,6 +44,12 @@ One self-sufficient Topic CĐ14 with exactly **Kiến thức / Luyện tập / T
 - **R02 actual learner path:** 4 numbered Knowledge groups (1.1…4.6), 23 concept-first outcomes, 23 independent Ví dụ/Đề bài/Lời giải, 23 Vận dụng/Đối chiếu/D6; Practice 87 full visible cards = 59 SGK original source-exact +23 Topic Practice +5 Topic Written; Public SelfCheck 23 questions-only from original P01–P23. No pseudo-Practice pointer table or invented Topic Core.
 - **QA:** 23 direct source/semantic structure tests +51 mathematical/arithmetic assertions PASS on R02 source SHA; 110/110 canonical mapping preserved, original bank keys/rubrics unchanged, 3 SVG exact; 13-item editorial regression #864/#865 documented in single Q18 receipt. SOURCE_ONLY, no deployed runtime, actual Final Submit, browser, Golden or Safari PASS.
 - **R01 historical:** `277ccb8b5d9f0a8c5f08680fa7e5b70925710308` original R01 source/old ready retained immutable in history; R02 only current REGISTER entry. New source is DELTA_C content, old SGK content remains source-equivalent and is only visually projected, not duplicated canonical bank.
+
+## 18/11/2026 · Active R02 three-heading DELTA_A source boundary
+
+- Effective student learner source `dada7df9fc509cc67238cbc3e5d03376b58f23f4`; exact Q18 source scope `27a6e61fb90342d19afa61cd92b56ac3bda25a6a`, A1 `b72c3a80ef1a25bc7ac0caa1debcd1eb5ed738a2`, one V2 `70211bac6e0a7037e744a85b3ee3db989189f639`. Historical R01 and originally signed R02 remain separate immutable packets; **R02 is effective**, no second R02 source.
+- Original three H2 `## Mạch B/C/D` are now bold orientation text, so only four numbered H2 academic groups exist (1/2/3/4), with H3 1.1–4.6 preserved. Exactly three Markdown heading lines differ from pre-correction R02. All 110 canonical item roles, 87 public Practice cards and 23 public Selfcheck replay stems, all SVG and original learning math/explanations byte-for-byte unchanged.
+- `DELTA_A_UI` source equivalence, not an independent NotebookLM new Topic verdict; runtime/browser/AP/official RD1/owner release gates separate.
 
 ## AUTHORING A1–A7
 
