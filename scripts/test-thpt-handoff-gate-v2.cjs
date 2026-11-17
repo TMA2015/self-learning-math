@@ -62,7 +62,7 @@ function acceptedStandardVersions(overrideText) {
   // The canonical source records the *previous* owner-effective standard when
   // a newly approved amendment is still pending activation. Preserve that
   // predecessor without granting early acceptance to the prospective version.
-  const predecessor=raw.match(/^\\*\\*PREVIOUS_EFFECTIVE_STANDARD:\\*\\*\\s*\\x60(\\d+\\.\\d+\\.\\d+)\\s*\\/\\s*OWNER_APPROVED_EFFECTIVE\\x60/m);
+  const predecessor=raw.match(/^\*\*PREVIOUS_EFFECTIVE_STANDARD:\*\*\s*\x60(\d+\.\d+\.\d+)\s*\/\s*OWNER_APPROVED_EFFECTIVE\x60/m);
   const lineageApproved=["OWNER_APPROVED_EFFECTIVE","OWNER_APPROVED_EFFECTIVE_AFTER_MERGE"].includes(status[1]);
   const earlier=(a,b)=>{
     const x=a.split(".").map(Number),y=b.split(".").map(Number);
@@ -366,7 +366,7 @@ function selfTest() {
   assert(acceptedStandardVersions(norm("3.1.0","OWNER_APPROVED_EFFECTIVE")).includes("3.1.0"),
     "Only exact owner-effective status can activate v3.1.0");
   const prospective32=norm("3.2.0","OWNER_APPROVED_EFFECTIVE_AFTER_MERGE")+
-    "\\n**PREVIOUS_EFFECTIVE_STANDARD:** \\x603.1.0 / OWNER_APPROVED_EFFECTIVE\\x60";
+    "\n**PREVIOUS_EFFECTIVE_STANDARD:** \x603.1.0 / OWNER_APPROVED_EFFECTIVE\x60";
   assert(acceptedStandardVersions(prospective32).includes("3.1.0"),
     "Explicit canonical previous effective 3.1 must remain accepted");
   assert(!acceptedStandardVersions(prospective32).includes("3.2.0"),
@@ -374,7 +374,7 @@ function selfTest() {
   assert(!acceptedStandardVersions(prospective32.replace("OWNER_APPROVED_EFFECTIVE_AFTER_MERGE","GOVERNANCE_PROPOSAL_OWNER_REVIEW_PENDING")).includes("3.1.0"),
     "Unapproved governance draft cannot forge a previous-effective lineage");
   assert(!acceptedStandardVersions(norm("3.2.0","OWNER_APPROVED_EFFECTIVE_AFTER_MERGE")+
-    "\\n**PREVIOUS_EFFECTIVE_STANDARD:** \\x603.2.0 / OWNER_APPROVED_EFFECTIVE\\x60").includes("3.2.0"),
+    "\n**PREVIOUS_EFFECTIVE_STANDARD:** \x603.2.0 / OWNER_APPROVED_EFFECTIVE\x60").includes("3.2.0"),
     "A non-older predecessor must not activate a prospective version");
   assert.throws(()=>acceptedStandardVersions(norm("3.0.1","OWNER_APPROVED_EFFECTIVE").replace("SLM-THPT-QUALITY-ONE","DIFFERENT-STANDARD")));
   assert.equal(verifyLaneScope("LEARNING_PATH: TOPIC\nRELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH"), "TOPIC");
