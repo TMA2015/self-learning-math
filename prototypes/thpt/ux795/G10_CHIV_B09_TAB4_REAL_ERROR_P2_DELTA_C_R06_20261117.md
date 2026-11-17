@@ -22,8 +22,8 @@ S1 Toán 10 KNTT tập 1 B09 printed pp55–59, decomposition of planar vector o
 ## G1 / Targeted correctness and genuine error
 
 New **4.3 collapsible tip**, not an additional HELP/item ID:
-- **Specific wrong student step:** for $M,N$ midpoints of $AB,AC$, $`\vec a=\overrightarrow{AB}`, $`\vec b=\overrightarrow{AC}`, learner writes $`\overrightarrow{MN}=\tfrac12\vec a-\tfrac12\vec b`. This is actually $`\overrightarrow{NM}` (**wrong orientation/sign**).
-- **Proof (independent of claims):** $`\overrightarrow{MN}=\overrightarrow{MA}+\overrightarrow{AN}= -\overrightarrow{AM}+\overrightarrow{AN}=-\tfrac12\vec a+\tfrac12\vec b`. Reversing endpoints gives $`\overrightarrow{NM}=\tfrac12\vec a-\tfrac12\vec b`. Since $A,B,C$ form a (nondegenerate) triangle, $`\vec a,\vec b` are noncollinear, so the pair of coefficients is unique. No vector division.
+- **Specific wrong student step:** for $M,N$ midpoints of $AB,AC$, `\vec a=\overrightarrow{AB}`, `\vec b=\overrightarrow{AC}`, learner writes `\overrightarrow{MN}=\tfrac12\vec a-\tfrac12\vec b`. This is actually `\overrightarrow{NM}` (**wrong orientation/sign**).
+- **Proof (independent of claims):** `\overrightarrow{MN}=\overrightarrow{MA}+\overrightarrow{AN}= -\overrightarrow{AM}+\overrightarrow{AN}=-\tfrac12\vec a+\tfrac12\vec b`. Reversing endpoints gives `\overrightarrow{NM}=\tfrac12\vec a-\tfrac12\vec b`. Since $A,B,C$ form a (nondegenerate) triangle, `\vec a,\vec b` are noncollinear, so the pair of coefficients is unique. No vector division.
 - **How to self-repair:** check arrow start/end → write three-point rule before substituting midpoint coefficients → verify signs by reversing arrow; return to B08 and Example 4; attempt public formative `THPT-G10-B09-P07` through existing deep-link. Diagnosis/reason/fix/independent self-check/route all explicit. It is **a genuine mathematical error, not general homework advice**.
 - **No duplicate content:** original worked Example 4 unchanged; this is one incorrect line and focused debugging, not a second worked example nor the full method in Tab 3.
 
