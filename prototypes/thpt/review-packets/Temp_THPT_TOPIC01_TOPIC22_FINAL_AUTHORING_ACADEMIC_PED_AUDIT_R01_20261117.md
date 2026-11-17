@@ -178,3 +178,36 @@ Outcome counts are from canonical Topic PR/receipt. CĐ20 outcomes use `PRIMARY_
 - **Hướng sửa:** D6 điều hướng đến tên mục/bài đang hiển thị thật (CĐ03–06,20–21); bỏ metadata trong nội dung learner (CĐ10–11/13/18/19/22); CĐ18 nêu t, đơn vị, mô hình; CĐ19 kiểm lại quy tắc nhân và canonical T02; sửa tham chiếu cục bộ và nhãn/placement hình. Phân loại DELTA_A/B/C đúng phần, giữ một item_id canonical, không đưa nội dung RD1 kín lên GitHub.
 - **Chứng cứ còn thiếu ngoài phạm vi**: giải lại toàn bộ câu/đáp án/rubric, đối chiếu trực tiếp trang in–PDF SGK/SBT S1 ở nơi còn bất định, 100% SVG visual accuracy, browser UI/MathJax và bảo vệ Final Submit. Các mục chưa chứng minh **UNVERIFIED_IN_THIS_ROUND**, không được gọi PASS.
 - **Kết thúc:** đây là **báo cáo audit nguồn toàn phạm vi 22/22 với defect verdict và checkpoint đã khóa**. Chưa được nghiệm thu bản source sửa nào thành CONTENT_READY mới cho tới khi P1=0 trên affected scope, Q18 receipt/SHA + V2/ready/REGISTER thống nhất. Không merge/deploy/release.
+
+
+---
+
+<!-- TOPIC_R04_DELTA_STAGING_20261117 -->
+## R04 · Đã sửa nguồn tại 10 Draft candidate, còn HOLD Q15/Q18 (17/11/2026)
+
+**Trạng thái:** 10 file learner candidate đã tạo thật trên nhánh tách từ Topic HEAD; đã refetch và khóa chính xác các Git blob SHA dưới đây. **Không thay source/Q18 lịch sử, không merge/deploy, không CONTENT_READY mới.** Mỗi dòng trạng thái = STAGED_FIX + TARGETED_Q15_Q18_RECHECK_PENDING. Chỉ được FIXED sau khi kiểm lại đường học sinh thực đi và đúng canonical snapshot.
+
+| CĐ | Lỗi Q/PED cần đóng | Draft sửa | Old Rxx signed blob | Candidate source blob đã kiểm |
+|---|---|---|---|---|
+| 03 | Q08/PED6: 11 đường D6 raw ID | [#888](https://github.com/TMA2015/self-learning-math/pull/888) | 05e9675a7dca802aa9540a96a46d76d013055d8b | d258b880fe695a152d677061a7d307cf262f2862 |
+| 04 | Q08/PED6: 9 D6; Q03: cơ số phải a>0 | [#890](https://github.com/TMA2015/self-learning-math/pull/890) | c948ad9957bbcd55b416ea7ddce96a6dcdf0d799 | 9b0a9bf090cd8e13bd3807030bb326c0756bd6e8 |
+| 05 | Q08/PED6: 16 D6 raw P/W ID | [#889](https://github.com/TMA2015/self-learning-math/pull/889) | 3052d5f7090f74af2eca7739047c59ed76ccda63 | 663c5423070397ba5e389b5f307598664ab28808 |
+| 06 | Q08/PED6: 15 D6 THPT-G11/TOP refs | [#891](https://github.com/TMA2015/self-learning-math/pull/891) | dd3af68f681eba9a7b75040d9490815f81efdd6b | f4ede20e309b02705567bd42390912ec415a84c8 |
+| 10 | Q03/Q15: Anchor/Q15/Q16 metadata trong Lời giải | [#886](https://github.com/TMA2015/self-learning-math/pull/886) | 68d3ccd180162c0b850c7e419a5098982d3785a0 | 069f4f52eb7ae88ac609f11cfa933ec09c2b08d5 |
+| 11 | Q03/Q15: technical identity/Mastery trong Lời giải | [#887](https://github.com/TMA2015/self-learning-math/pull/887) | 7d8eac917be4f7688a8a718e54cce4a84bc055ef | 8017adb5616901a4f2a159d1f6179bd2a3f62e1a |
+| 13 | Q03/Q14: lời giảng thành checklist, lộ branch/SHA | [#893](https://github.com/TMA2015/self-learning-math/pull/893) | 7f3e90e5eadcbaa1dc7b49cd6d5136f6dbf61e22 | 68b9732ca6bcae07f270b22f60e9d4850bbec4a6 |
+| 18 | Q03/Q04/Q10: drone thiếu tham số và đơn vị | [#892](https://github.com/TMA2015/self-learning-math/pull/892) | 41daf40a3b639a3ef35e129099525137a05b1848 | af8a3529398e5f876d5c979b0d5d26df3519d6ac |
+| 20 | Q08/PED6: trỏ sai heading Luyện tập | [#884](https://github.com/TMA2015/self-learning-math/pull/884) | 74e758075d17e98649d9dd08709b523e8a782b63 | 0f85e1985f47357bd4d0d56379bfd1f647470fe3 |
+| 21 | Q08/PED6: Kiến thức 1–8/Luyện tập 2.1–2.8 sai heading | [#885](https://github.com/TMA2015/self-learning-math/pull/885) | 65938a700e0da630694e9cbb6e636d337e67aeb5 | 14a436e4f2eb59e307cadfb69f8f67c1bedaf881 |
+
+### Chứng cứ và điều kiện đóng
+
+- **CĐ03–06:** đã đọc trực tiếp cả item_id và số Bài đang hiển thị trong Luyện tập. Chuyển đúng 11/9/16/15 D6 sang số bài, kể cả Written chen giữa hoặc ký hiệu SGK rút gọn. Với bốn candidate này Practice và Selfcheck nguyên văn byte (không đổi stem/key/rubric). Riêng CĐ04 sửa ký hiệu quy tắc lũy thừa cơ số a>0, cần Q01/S1 targeted math verify.
+- **CĐ10–11:** chỉ bỏ nội dung Q15/Q16/Anchor/Mastery lộ trong learner explanations; đối chiếu item ID sequence, Bài stems, công thức MathJax payload và disclosure vẫn đồng nhất.
+- **CĐ13:** đã biên tập bằng văn xuôi 16 phần dẫn dắt, thống nhất nhãn Ví dụ–Đề bài–Vận dụng–Đối chiếu, đánh số 1.1–3.6 và bỏ branch/SHA learner; IDs, công thức và disclosures nguyên. Phải đánh giá thủ công lại 16 outcome Q09–Q14 và SGK G10 source dependency PR #750, không lấy đổi nhãn làm PED PASS.
+- **CĐ18:** đầu mục đường thẳng được viết tự đủ với A, vectơ chỉ phương, t tham số hình học không gán đơn vị giây; kết quả giao t=1, M=(2,1,3) không đổi, Practice/Selfcheck byte-identical. Cần S1/Q18 review đúng phần.
+- **CĐ20:** sửa 3 D6 Written về Bài luyện 7/8/13/14/16 và heading thực; ngoài D6 Practice byte-identical, Selfcheck byte-identical, IDs/đáp án không đổi.
+- **CĐ21:** sửa 8 First Try D6 và 3 Written D6 về đúng Kiến thức 1.1–3.2, Bài luyện 1–8; ngoài 11 dòng D6 learner source byte-identical.
+- **CĐ19:** Draft R10 [#883](https://github.com/TMA2015/self-learning-math/pull/883) còn Q15_T02 source-version/bank parity và Q18; **không** tự promote. Như vậy 11 Topic có P1 R03 đã có 10 candidate mới + 1 candidate CĐ19 lịch sử, nhưng **0/11 candidate CONTENT_READY**.
+
+**Đóng P1 đúng chuẩn:** self-QA từng affected outcome, khắc phục/đi đúng D6 bằng tên bài đang thấy, kiểm Q15 canonical stem/key/solution/rubric và content_version nếu D6 đổi, Q16 giữ client-self-check/no mastery, khóa candidate SHA + đúng một receipt Q18 và V2/ready/REGISTER (chỉ khi P0/P1=0). Kiểm S1 in sách–PDF với trường hợp toán chịu ảnh hưởng; không nói MathJax/browser/AP/R đã PASS. Giữ nguyên signed snapshots Rxx. NO MERGE/DEPLOY.
