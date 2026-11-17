@@ -200,6 +200,12 @@ jobs:
           # learner error R06 and copy receipt to same isolated checkout.
           test -f prototypes/thpt/ux795/G10_CHIV_B09_TAB4_REAL_ERROR_P2_DELTA_C_R06_20261117.md
           cp prototypes/thpt/ux795/G10_CHIV_B09_TAB4_REAL_ERROR_P2_DELTA_C_R06_20261117.md integration-main/prototypes/thpt/ux795/
+          # B10 G0–G5: overlay ONE current academic manuscript and Q18
+          # receipt into the temporary main+candidate render QA. No deploy.
+          test -f prototypes/thpt/content-drafts/THPT_G10_CHIV_B10_CANONICAL.md
+          test -f prototypes/thpt/ux795/G10_CHIV_B10_S1_PED_SINGLE_CANONICAL_Q18_R01_20261118.md
+          cp prototypes/thpt/content-drafts/THPT_G10_CHIV_B10_CANONICAL.md integration-main/prototypes/thpt/content-drafts/
+          cp prototypes/thpt/ux795/G10_CHIV_B10_S1_PED_SINGLE_CANONICAL_Q18_R01_20261118.md integration-main/prototypes/thpt/ux795/
           cp scripts/test-ux795-g10-postmerge-headings.cjs integration-main/scripts/
           (
             cd integration-main
