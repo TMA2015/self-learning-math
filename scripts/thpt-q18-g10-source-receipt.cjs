@@ -330,6 +330,27 @@ function expectedG10KnowledgeBlob(lesson,legacy){
      "NO_CANONICAL_DECOMPOSITION_ITEM","THPT-G10-CHIV-TRY11"]){
     assert(receipt.includes(word),"B09 academic receipt missing "+word);
    }
+   // R05 is an additive self-QA receipt on the SAME current B09 canonical
+   // manuscript; R03 stays a frozen historical checkpoint, not a competing draft.
+   const unifiedPath=path.join(root,
+    "prototypes/thpt/ux795/G10_CHIV_B09_CANONICAL_Q18_R05_20261117.md");
+   if(fs.existsSync(unifiedPath)){
+    const locked=fs.readFileSync(unifiedPath,"utf8");
+    const field=k=>locked.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    assert.equal(field("BASELINE_R03_SOURCE_BLOB"),next,
+     "B09 R05 must follow exact frozen R03 academic source");
+    const final=field("R05_SOURCE_BLOB"),master=field("ONE_CANONICAL_LESSON_BLOB");
+    assert(/^[0-9a-f]{40}$/.test(final||"")&&final!==next,
+     "B09 revised discovery figure needs a distinct SHA");
+    const current=fs.readFileSync(path.join(root,
+     "prototypes/thpt/content-drafts/THPT_G10_CHIV_B09_CANONICAL.md"));
+    const blob=bytes=>require("node:crypto").createHash("sha1").update(Buffer.from("blob "+bytes.length+"\\0")).update(bytes).digest("hex");
+    assert.equal(blob(current),master,"B09 must use the ONE SHA-locked academic manuscript");
+    for(const token of ["Q18_AUTHOR_SELF_VERIFIED","CHIV-09-A","THPT-G10-B09-P07",
+      "FORMATIVE_ONLY","OWNER_P2_PENDING","B09-RUNTIME-01"])
+     assert(locked.includes(token),"B09 single-source Q18 receipt missing "+token);
+    return final;
+   }
    return next;
   }
   return row.candidate;
