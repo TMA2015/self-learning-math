@@ -601,7 +601,7 @@ Nếu vùng không chạm Ox, không dùng đĩa đầy; kiểm lỗ r>0.
 
 # Luyện tập
 
-Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, kiểm đạo hàm và miền; với tích phân, kiểm cận, dấu và đơn vị; với hình học, mô tả hình phẳng/tiết diện trước khi lập tích phân. Rubric công khai dùng để tự đối chiếu, **không tự ghi Mastery**.
+Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, kiểm đạo hàm và miền; với tích phân, kiểm cận, dấu và đơn vị; với hình học, mô tả hình phẳng/tiết diện trước khi lập tích phân. Rubric đi kèm giúp em tự xem lại từng bước lập luận, không phải bảng điểm đánh giá độc lập.
 
 ## 1. Nguyên hàm và điều kiện đầu
 
@@ -2338,7 +2338,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 # Tự kiểm tra
 
-Bộ tự kiểm tra công khai này gồm 22 câu **đã xuất hiện trong Luyện tập**. Tự làm trước rồi mới quay lại đối chiếu lời giải ở phần Luyện tập. Các câu này giúp phát hiện lỗ hổng, **không phải kiểm tra độc lập hoặc đánh giá Mastery**; không có gợi ý hay đáp án trong phần này.
+Bộ tự kiểm tra công khai này gồm 22 câu **đã xuất hiện trong Luyện tập**. Tự làm trước rồi mới quay lại đối chiếu lời giải ở phần Luyện tập. Các câu này giúp phát hiện lỗ hổng, **không phải bài kiểm tra độc lập**; không có gợi ý hay đáp án trong phần này.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P01; NO_RD1; NO_MASTERY -->
 
