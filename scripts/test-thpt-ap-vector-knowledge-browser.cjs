@@ -70,7 +70,7 @@ const cases=[
          }
          // Lock actual pedagogical ownership for each source-verified D5:
          // B07 formal SGK, B08 Discovery, B10 coordinate Discovery BEFORE
-         // TRY16, B10 river figure in worked EX 3.4 with distinct data.
+         // TRY16, B10 river figure in worked EX 3.4 with exact same data.
          const src=(await figure.getAttribute("src"))||"";
          let owningTab=item.lesson===8?"Khám phá kiến thức":"Kiến thức SGK";
          if(item.lesson===10){
@@ -89,13 +89,23 @@ const cases=[
              }),"B10 coordinate image must precede first learner attempt");
            }else{
              owningTab="Ví dụ";
-             assert(src.includes("THPT_G10_CHIV_RIVER_TRANSFER_D5_R01_CORRECTED.svg"),
-               "B10 river D5 must remain the existing reviewed SVG");
+             assert(src.includes("THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg"),
+               "B10 exact-data 96m river D5 must replace unrelated 150m Written drawing");
              const ex=modelB.locator(".tabbed-content > .tabbed-block").nth(2);
              const captions=await ex.locator("figcaption").allTextContents();
-             assert(captions.some(t=>t.includes("bộ dữ liệu khác")&&t.includes("150")&&t.includes("96")),
-               "B10 river picture must explicitly distinguish the 150m dataset from the 96m example");
+             assert(captions.some(t=>t.includes("Đọc hình theo đúng dữ kiện Ví dụ 4")&&
+               t.includes("96")&&t.includes("3")&&t.includes("5")),
+               "B10 river picture and worked example must share one 96m/3/5 dataset");
            }
+           const expectedMobile=idx===0?
+             "THPT_G10_B10_COORDINATES_MOBILE_D5_R01.svg":
+             "THPT_G10_B10_RIVER_VELOCITY_MOBILE_D5_R01.svg";
+           const expectedDesktop=idx===0?
+             "THPT_G10_B10_COORDINATES_DIFFERENCE_D5_R01.svg":
+             "THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg";
+           const displayed=await figure.evaluate(el=>el.currentSrc);
+           assert(displayed.includes(width<=600?expectedMobile:expectedDesktop),
+             "B10 desktop/mobile diagram selection must match source geometry and viewport");
          }
          assert.equal(selected,owningTab,
            "B"+item.lesson+" original D5 figure "+idx+" belongs to learner tab "+owningTab);
