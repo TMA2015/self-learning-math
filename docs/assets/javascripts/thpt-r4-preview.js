@@ -655,7 +655,9 @@
   const loadB09PracticeExtension=()=>{
    const module=window.THPT_G10_B09_DECOMP_R04_EXTENSION;
    if(module?.validate().valid)return Promise.resolve(module);
-   if(!/\\/(?:thpt-preview|thpt)\\/sgk\\/chuong-iv\\/luyen-tap\\/?/.test(location.pathname))
+   const practicePath=location.pathname;
+   if(!practicePath.includes("/thpt-preview/sgk/chuong-iv/luyen-tap")&&
+      !practicePath.includes("/thpt/sgk/chuong-iv/luyen-tap"))
     return Promise.resolve(null);
    if(!b09ExtensionPending)b09ExtensionPending=new Promise(resolve=>{
     const script=document.createElement("script");
