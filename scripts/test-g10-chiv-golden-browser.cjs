@@ -306,8 +306,10 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
        // The original six equations and any new R04 formula must render without orphan TeX.
        // Owner 17/11: source-locked six display equations must become Arithmatex
        // blocks, not raw escaped TeX inserted into ordinary Markdown paragraphs.
-       assert.equal(await blocks.nth(1).locator("div.arithmatex").count(),1,
-        where+" one formal SGK subtraction equation is display math");
+       assert.equal(await blocks.nth(1).locator("div.arithmatex").count(),2,
+        where+" two owner-approved unfilled formula frames render MathJax in SGK");
+       assert.equal(await formulas.locator("div.arithmatex").count(),2,
+        where+" both neutral key-formula frames contain properly rendered display math");
        assert.equal(await blocks.nth(2).locator("div.arithmatex").count(),5,
         where+" five worked-example equations are display math");
        const unrendered=await blocks.evaluateAll(panels=>{
