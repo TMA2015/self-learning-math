@@ -274,9 +274,15 @@ for(const [lesson,row] of rows){
    "không cùng phương","duy nhất","trung điểm","trọng tâm"]){
    assert(official.includes(key),"B09 S1 prerequisite/condition missing "+key);
   }
-  assert(official.includes("THPT_G10_B09_SCALAR_MULTIPLE_VECTORS_D5_R01.svg")&&
+  const discover=source.slice(source.indexOf('=== "Khám phá kiến thức"'),
+   source.indexOf('=== "Kiến thức SGK"'));
+  assert(discover.includes("THPT_G10_B09_SCALAR_MULTIPLE_VECTORS_D5_R01.svg")&&
+   !official.includes("THPT_G10_B09_SCALAR_MULTIPLE_VECTORS_D5_R01.svg")&&
    official.includes("THPT_G10_B09_DECOMPOSITION_TWO_DIRECTIONS_D5_R03.svg"),
-   "B09 two D5 figures must be adjacent to official teaching");
+   "B09 R05: scalar image must be visible in Discovery BEFORE learner tries; decomposition figure stays beside formal proof");
+  assert(discover.indexOf("THPT_G10_B09_SCALAR_MULTIPLE_VECTORS_D5_R01.svg")<
+   discover.indexOf('data-thpt-first-try-id="THPT-G10-CHIV-TRY11"'),
+   "B09 known audit CHIV-09-A may never regress to text-only discovery");
   const examples=source.slice(source.indexOf('=== "Ví dụ"'),source.indexOf('=== "Lỗi thường gặp"'));
   assert.equal((examples.match(/^    ### Ví dụ [1-4]\./gm)||[]).length,4,
    "B09 four distinct worked examples, including mandatory decomposition");
@@ -307,7 +313,14 @@ for(const [lesson,row] of rows){
    !svg.toString("utf8").includes("<script"),"B09 SVG accessible/safe");
   assert(receipt.includes("BLOCKED_BY_AUTHORING")&&receipt.includes("NO_CANONICAL_DECOMPOSITION_ITEM"),
    "B09 source QA is technical only; academic release must remain HOLD");
-  expected=f("R03_SOURCE_BLOB");
+  const r05=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHIV_B09_CANONICAL_Q18_R05_20261117.md"),"utf8");
+  const q=k=>r05.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(q("BASELINE_R03_SOURCE_BLOB"),f("R03_SOURCE_BLOB"),
+   "B09 Q18 R05 must retain immutable earlier signed R03");
+  assert(r05.includes("CHIV-09-A")&&r05.includes("Q18_AUTHOR_SELF_VERIFIED")&&
+    r05.includes("THPT-G10-B09-P07"),"B09 R05 Q18 source/P07/audit gate proof");
+  expected=q("R05_SOURCE_BLOB");
  }
  assert.equal(blob(source),expected,lesson+" exact final Q18 academic source receipt");
  assert.equal(candidateG10KnowledgeBlob(n),expected,lesson+" Q18 source router selects correct immutable snapshot");
