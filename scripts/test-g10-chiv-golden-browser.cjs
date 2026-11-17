@@ -508,9 +508,15 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
        assert.equal(await tips.count(),3,where+" B10 exactly three actual errors, 3 canonical HELP markers separately");
        const data=await tips.evaluateAll(nodes=>nodes.map(e=>({open:e.open,summary:e.querySelector("summary")?.textContent||"",text:e.textContent||""})));
        assert(data.every((x,i)=>!x.open&&x.summary.includes("4."+(i+1))&&
-        x.text.includes("Lỗi thường gặp:")&&x.text.includes("Vì sao sai?")&&
+        x.text.includes("Lỗi thường gặp")&&x.text.includes("Vì sao sai?")&&
         x.text.includes("Ôn và luyện lại:")),
         where+" B10 tab4 genuine student wrong step, cause, remedy and numbering");
+       assert(data[0].text.includes("Lỗi thường gặp:")&&
+        data[1].text.includes("Lỗi thường gặp 1:")&&
+        data[1].text.includes("Lỗi thường gặp 2:")&&
+        data[2].text.includes("Lỗi thường gặp:")&&
+        data.every(x=>/sai|không phải|Đúng phải|Sửa/.test(x.text)),
+        where+" B10 must show 4 concrete wrong student steps, not generic method reminders");
        assert(data.every(x=>!/Assessment safety|HELP_ID|EX-G10-B10-RIVER|B10-[CP]0[1-6]/.test(x.text)),
         where+" B10 no admin metadata visible to students");
        const last=tips.nth(2);await last.locator("summary").click();
