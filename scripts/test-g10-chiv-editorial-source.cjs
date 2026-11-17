@@ -329,7 +329,7 @@ for(const [lesson,row] of rows){
   lesson+" official S1 book headings exactly 2.1.., no double SGK");
  assert(official.startsWith('=== "Kiến thức SGK"\n\n    ### 2.1.'),
   lesson+" SGK tab must start directly at 2.1, not commentary");
- assert.equal((discover.match(/^    ### /gm)||[]).length,(lesson==="B07"||lesson==="B08")?5:3,lesson+" authentic discovery stages");
+ assert.equal((discover.match(/^    ### /gm)||[]).length,(lesson==="B07"||lesson==="B08")?5:lesson==="B09"?4:3,lesson+" authentic discovery stages");
  assert(!official.includes("    ### Kiến thức SGK"),lesson+" duplicate SGK heading");
  for(const part of [discover.slice('=== "Khám phá kiến thức"\n'.length),official.slice('=== "Kiến thức SGK"\n'.length)]){
   const unindented=part.split("\n").filter(l=>l.trim()&&!l.startsWith("    "));
