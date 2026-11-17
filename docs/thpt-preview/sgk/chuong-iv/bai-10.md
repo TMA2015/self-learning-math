@@ -10,7 +10,7 @@
 
     Từ Bài 8 và Bài 9, em đã biết ghép vectơ và nhân vectơ với số. Trong hệ trục vuông góc \(Oxy\), lấy \(\vec i\) là một bước đơn vị theo \(Ox\), \(\vec j\) là một bước đơn vị theo \(Oy\). Mỗi vectơ \(\vec u\) đều có thể viết **duy nhất** dưới dạng \(\vec u=x\vec i+y\vec j\). Vì hai hướng trục không cùng phương nên cặp \((x;y)\) chính là cách ghi ngắn gọn hai thành phần của vectơ.
 
-    Ví dụ, từ \(A(1;1)\) đến \(B(4;3)\), mũi tên đi \(3\) đơn vị sang phải và \(2\) đơn vị lên trên. Vì thế \(\overrightarrow{AB}=(3;2)\); **đừng nhầm với tọa độ điểm** \(B(4;3)\). Dời cả hai điểm sang vị trí khác nhưng giữ nguyên độ dời thì tọa độ vectơ không đổi.
+    Ví dụ ngay trong hình bên dưới: từ \(A(-2;1)\) tới \(B(3;4)\), mũi tên đi \(5\) đơn vị sang phải và \(3\) đơn vị lên trên. Vì thế \(\overrightarrow{AB}=(5;3)\); **đừng nhầm với tọa độ điểm** \(B(3;4)\). Dời cả hai điểm sang vị trí khác nhưng giữ nguyên độ dời thì tọa độ vectơ không đổi.
 
     ### 1.2. Ví dụ trực quan
 
@@ -20,61 +20,61 @@
 
     <span id="thpt-g10-chiv-try16" data-thpt-first-try-id="THPT-G10-CHIV-TRY16" data-outcome-id="G10-B10-VECTOR_COORDS" data-thpt-help-ref="HELP-G10-B10-01"></span>
 
-    **Vận dụng 1 — tự thử trước khi đọc quy tắc:** Cho \(A(-3;2)\), \(B(2;-1)\). Tìm \(\overrightarrow{AB}\) và \(\overrightarrow{BA}\). Trước khi mở đối chiếu, kiểm xem mũi tên đi về phía nào theo mỗi trục.
+    **Em vận dụng.** Cho A(-3;2), B(2;-1). Tìm tọa độ \(\overrightarrow{AB}\) và \(\overrightarrow{BA}\).
 
-    ??? question "Tự mở đối chiếu sau khi đã thử làm"
+    ??? question "Em tự mở đối chiếu sau khi đã thử làm"
 
         **Kết quả:** \(\overrightarrow{AB}=(5;-3)\), \(\overrightarrow{BA}=(-5;3)\).
 
-        **Vì sao:** từ A đến B, hoành độ đổi \(2-(-3)=5\), tung độ đổi \(-1-2=-3\). Đảo điểm đầu và điểm cuối thì cả hai thành phần đổi dấu.
+        **Vì sao:** 2−(−3)=5 và −1−2=−3. Đảo điểm đầu/cuối làm vectơ đối.
 
     **Từ trực quan đến tính toán:** khi ghép hai mũi tên, hoành độ chỉ cộng với hoành độ, tung độ chỉ cộng với tung độ. Nếu trừ một vectơ, dấu trừ tác động lên cả hai thành phần.
 
     <span id="thpt-g10-chiv-try17" data-thpt-first-try-id="THPT-G10-CHIV-TRY17" data-outcome-id="G10-B10-OPERATIONS" data-thpt-help-ref="HELP-G10-B10-01"></span>
 
-    **Vận dụng 2:** \(\vec u=(2;-1)\), \(\vec v=(-1;3)\). Tính \(2\vec u-\vec v\), viết phép tính riêng cho hai tọa độ.
+    **Em vận dụng.** \(\vec u=(2;-1)\), \(\vec v=(-1;3)\). Tính \(2\vec u-\vec v\).
 
-    ??? question "Tự mở đối chiếu sau khi đã thử làm"
+    ??? question "Em tự mở đối chiếu sau khi đã thử làm"
 
         **Kết quả:** \((5;-5)\).
 
-        **Vì sao:** \(2\vec u=(4;-2)\), nên \(2\vec u-\vec v=(4-(-1);-2-3)=(5;-5)\).
+        **Vì sao:** 2u=(4;−2); trừ v=(-1;3) nghĩa là (4−(−1);−2−3)=(5;−5).
 
     **Một độ dài, không phải hai chặng:** nếu đi \(3\) ô sang Đông rồi \(4\) ô lên Bắc thì đường đi theo lưới dài \(7\) ô, nhưng khoảng cách nối đầu–cuối là cạnh huyền tam giác vuông, chỉ dài \(5\) ô. Định lí Pythagore giải thích vì sao **độ dài vectơ** cần căn của tổng bình phương hai thành phần.
 
     <span id="thpt-g10-chiv-try18" data-thpt-first-try-id="THPT-G10-CHIV-TRY18" data-outcome-id="G10-B10-NORM_DISTANCE" data-thpt-help-ref="HELP-G10-B10-01"></span>
 
-    **Vận dụng 3:** Cho \(A(1;2)\), \(B(4;6)\). Khoảng cách thẳng \(AB\) là \(7\) hay \(5\) đơn vị? Giải thích bằng một tam giác vuông.
+    **Em vận dụng.** Cho A(1;2), B(4;6). Khoảng cách AB là 7 hay 5 đơn vị?
 
-    ??? question "Tự mở đối chiếu sau khi đã thử làm"
+    ??? question "Em tự mở đối chiếu sau khi đã thử làm"
 
-        **Kết quả:** \(AB=5\) đơn vị.
+        **Kết quả:** 5 đơn vị.
 
-        **Vì sao:** \(\overrightarrow{AB}=(3;4)\), nên \(AB=\sqrt{3^2+4^2}=5\). Số \(7\) là tổng hai chặng đi theo lưới, không phải độ dài đoạn nối thẳng.
+        **Vì sao:** AB=(3;4), nên AB=√(3²+4²)=5. 7 là tổng chặng theo hai trục, không phải khoảng cách thẳng.
 
     **Nhìn hai thành phần để xét hướng:** \((2;1)\) và \((6;3)\) có cùng một hệ số nhân \(3\) ở cả hai tọa độ. Nếu một thành phần không cùng tỉ lệ, hai vectơ khác không không cùng phương. Không bao giờ chia cho một thành phần bằng \(0\) để “tìm tỉ số”.
 
     <span id="thpt-g10-chiv-try19" data-thpt-first-try-id="THPT-G10-CHIV-TRY19" data-outcome-id="G10-B10-COLLINEAR_COORDS" data-thpt-help-ref="HELP-G10-B10-02"></span>
 
-    **Vận dụng 4:** Với \(\vec u=(2;1)\), \(\vec v=(6;3)\), \(\vec w=(6;4)\), vectơ nào cùng phương với \(\vec u\)? Cả ba vectơ đều khác không.
+    **Em vận dụng.** Với \(\vec u=(2;1)\), \(\vec v=(6;3)\), \(\vec w=(6;4)\). Vectơ nào cùng phương với u (biết cả ba đều khác 0)?
 
-    ??? question "Tự mở đối chiếu sau khi đã thử làm"
+    ??? question "Em tự mở đối chiếu sau khi đã thử làm"
 
-        **Kết quả:** Chỉ \(\vec v\) cùng phương với \(\vec u\), vì \(\vec v=3\vec u\).
+        **Kết quả:** Chỉ \(\vec v\) cùng phương với \(\vec u\), vì \(\vec v=3\vec u\); \(\vec w\) không cùng phương.
 
-        **Vì sao:** với \(\vec w=(6;4)\), hoành độ đòi hệ số \(3\) nhưng tung độ đòi hệ số \(4\); không tồn tại một hệ số chung.
+        **Vì sao:** Cặp (6,4) có tỉ số x=3 nhưng y=4, không thể tìm cùng k cho hai tọa độ.
 
     **Trung bình tọa độ có ý nghĩa gì?** Trung điểm cân bằng hai đầu mút; trọng tâm tam giác cân bằng ba đỉnh. Ta lấy trung bình **riêng từng trục** chứ không lấy trung bình độ dài hay lẫn các trục.
 
     <span id="thpt-g10-chiv-try20" data-thpt-first-try-id="THPT-G10-CHIV-TRY20" data-outcome-id="G10-B10-MIDPOINT_CENTROID" data-thpt-help-ref="HELP-G10-B10-02"></span>
 
-    **Vận dụng 5:** Cho tam giác \(A(-2;4)\), \(B(4;0)\), \(C(1;5)\). Tìm trung điểm \(M\) của \(AB\) và trọng tâm \(G\) của \(ABC\).
+    **Em vận dụng.** Cho A(-2;4), B(4;0), C(1;5). Tính trung điểm M của AB và trọng tâm G của ABC.
 
-    ??? question "Tự mở đối chiếu sau khi đã thử làm"
+    ??? question "Em tự mở đối chiếu sau khi đã thử làm"
 
-        **Kết quả:** \(M(1;2)\), \(G(1;3)\).
+        **Kết quả:** \(M=(1;2)\), \(G=(1;3)\).
 
-        **Vì sao:** \(M=(({-2+4})/2;(4+0)/2)=(1;2)\). Với ba đỉnh, \(G=((-2+4+1)/3;(4+0+5)/3)=(1;3)\). Trung điểm chia \(2\), trọng tâm chia \(3\).
+        **Vì sao:** M: ((−2+4)/2;(4+0)/2)=(1;2); G: ((−2+4+1)/3;(4+0+5)/3)=(1;3).
 
     **Ứng dụng mở rộng — dòng nước:** có hai vận tốc khác nhau: vận tốc ca nô so với nước (hướng mũi lái) và vận tốc thực so với bờ (hướng di chuyển). Vectơ vận tốc thực là **tổng** vectơ vận tốc riêng và vectơ dòng nước. Chọn trục \(Ox\) về Đông, \(Oy\) về Bắc; muốn tính thời gian qua sông phải xem thành phần vận tốc hướng Bắc.
 
@@ -188,7 +188,7 @@
 
     **Kiểm lại và giới hạn:** \(3^2+4^2=5^2\) đúng tốc độ riêng; chọn \(-4\) làm thành phần Bắc sẽ đi xa bờ cần đến. Muốn vừa không trôi vừa đi tới bờ đích phải có tốc độ dòng **nhỏ hơn** tốc độ riêng. Không dùng định lí Pythagore để thay cho bước cộng vectơ vận tốc tương đối.
 
-    <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_CHIV_RIVER_TRANSFER_D5_R01_CORRECTED.svg" alt="Sơ đồ hai hướng vận tốc ca nô và dòng nước; mũi thuyền lái Bắc có trôi, mũi lái chếch ngược dòng để không trôi" loading="lazy"><figcaption><strong>Lưu ý khi đọc hình:</strong> Hình minh họa dùng <strong>bộ dữ liệu khác</strong> (sông rộng \(150\,\mathrm m\), dòng \(2{,}5\,\mathrm{m/s}\), tốc độ riêng \(6{,}5\,\mathrm{m/s}\)) để thấy hai hướng mũi thuyền và đường đi thực. Ví dụ 4 vừa giải dùng \(96\,\mathrm m\), \(3\,\mathrm{m/s}\), \(5\,\mathrm{m/s}\); không lấy số trên hình thay vào ví dụ.</figcaption></figure>
+    <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg" alt="Sơ đồ hai hướng vận tốc ca nô và dòng nước; mũi thuyền lái Bắc có trôi, mũi lái chếch ngược dòng để không trôi" loading="lazy"><figcaption><strong>Đọc hình theo đúng dữ kiện Ví dụ 4:</strong> Sông rộng \(96\,\mathrm m\), dòng Đông \(3\,\mathrm{m/s}\), tốc độ riêng \(5\,\mathrm{m/s}\). Mũi tên xanh cho vận tốc riêng, cam cho dòng, lục cho vận tốc theo bờ; tỉ lệ chiều dài vectơ giữ nhất quán giữa hai tình huống. Thời gian dùng <strong>thành phần Bắc</strong>, không dùng độ lớn của mũi tên chéo.</figcaption></figure>
 
 === "Lỗi thường gặp"
 
