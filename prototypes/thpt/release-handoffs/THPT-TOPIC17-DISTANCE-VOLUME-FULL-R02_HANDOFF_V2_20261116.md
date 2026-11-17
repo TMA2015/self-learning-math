@@ -13,13 +13,13 @@ CATALOG_TOPIC_ID: CD17
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 7ee09cea9c33e2ae520a1a40df694ab7118adb42
+ACADEMIC_SOURCE_BLOB: e065ded2448f800bf649d0e30239591d57233fbe
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC17_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 110b1cb694875e9d2f8db9e52c35156299a5b09b
+REVIEW_RECEIPT_BLOB: 239a73b05f5f875c02c6ccac19f79ff3adacf447
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: 090fa5c50b30eaeea74f42d690c9a787f321345d
+AUTHOR_A1_A7_BLOB: fd5e82e3a7a0048e65c325fb4582253df77d5ba4
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: 090fa5c50b30eaeea74f42d690c9a787f321345d
+AUTHOR_METADATA_BLOB: fd5e82e3a7a0048e65c325fb4582253df77d5ba4
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHVII_B22_B27_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_THPT_TOPIC17_FRUSTUM_VOLUME_MODEL_R00_20261113.html
@@ -254,3 +254,9 @@ This handoff retains its prior file path and packet identifier for stable links 
 
 
 **Pedagogical self-sufficiency correction:** TOP17-O10 volume relation k=0,1/2,1 now taught fully in learner source without requiring an optional interactive HTML slider. Exact new source has matching updated Q18 and A1 self-QA; no key/rubric, assessment or source path changed. Source-only handoff is not production release.
+
+## 18/11/2026 — current source only, D5 technical metadata leak removed
+
+- Current learner source `e065ded2448f800bf649d0e30239591d57233fbe`, Q18 `239a73b05f5f875c02c6ccac19f79ff3adacf447`, A1 `fd5e82e3a7a0048e65c325fb4582253df77d5ba4`. R03 shares the same effective R02 path, no second R03 candidate.
+- DELTA_A_UI: author-only D5 H2 inside last B27 Written solution was replaced with a non-rendered custody comment; learner Practice now has exactly H2 1/2/3, all 49 public canonical items (37 Practice including 4 original Written), eight selfcheck prompts, six original SVG and 4-point rubrics preserved. A1 still BLOCKED_BY_AUTHORING awaiting full gate; V2 `BLOCKERS: NONE` reflects no new math blockers only, not permission to release.
+- No independent NotebookLM full Topic PASS, official RD1/Skill Mastery or owner RELEASE authorization. No merge/deploy.
