@@ -3,7 +3,7 @@
 PACKET_ID: THPT-TOPIC07-SEQUENCES-AP-GP-FULL-R01
 CONTENT_REVISION: R07
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic07-sequences/Temp_TOPIC07_R07_NUMBERING_ONLY_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: f56107fc6758307e0646537085ef5840bbcf5455
+AUTHOR_METADATA_BLOB: 3acfee8131da5c82ba96aee1841ed7f8a497fe24
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
@@ -11,9 +11,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic07-sequences/Temp_TOPIC07_R07_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: b28b4222c19ae949072c507ac53be0a4ebfbf535
+ACADEMIC_SOURCE_BLOB: fcabe475254b4f54f5e6a8e74fce536df1f6bf43
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC07_R07_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: a7764580e056f402d66ffa873094102a92a4ad81
+REVIEW_RECEIPT_BLOB: 580111dbfe0ddc831cc3ef53f062cdb46772c465
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC07_SEQUENCES_NEW22_PUBLIC_CANONICAL_R06_20261115.md
 PUBLIC_CANONICAL_BANK_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767
 PUBLIC_ORIGINAL47_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC07_SEQUENCES_ORIGINAL47_SGK_PLACEMENT_INDEX_R06_20261115.md
@@ -250,6 +250,13 @@ Exactly 18 public placements, each references a NEW Practice ID already accessib
 | TOP07-O18 | THPT-TOP07-P18 | CLIENT_SELF_CHECK_NO_MASTERY |
 
 
+
+## R07 follow-up — formal definitions and learner recap, source-locked
+
+- Current academic source `fcabe475254b4f54f5e6a8e74fce536df1f6bf43`, Q18 author targeted receipt `580111dbfe0ddc831cc3ef53f062cdb46772c465`, A1 metadata `3acfee8131da5c82ba96aee1841ed7f8a497fe24`.
+- Q03/Q09–Q14: genuine definitions of sequence, CSC and CSN explicitly classified at TOP07-O01/O06/O11; four concise key-recall bullets including end-period timing. Verified finite index domain, d sign, q=0 and nonzero ratio condition, 2/1/0 end-period interest. No change to canonical 69 IDs, Practice, Written rubric, Selfcheck 18 or three SVG paths. `DELTA_C_ACADEMIC_MATERIAL` with bounded AUTHOR_SELF_VERIFIED; not a new independent NotebookLM PASS.
+- Preserve signed historical R07 numbering evidence below as a snapshot-specific record; it is not a byte-exact proof for the current pedagogical text. No topic runtime ID assigned and no RELEASE permission.
+
 ## R07 source-equivalent NUMBERING Delta-A
 
 - Original source `22609934f525e6e9c2c8f1513e439c3cd4d54221` remains immutable, new `b28b4222c19ae949072c507ac53be0a4ebfbf535` differs only in H1/H2/H3 page and group heading depth; fixed orphan `### 1. Kiến thức` at same level as a mạch, now proper H1 page. All 69 canonical Practice bodies and 18 public Selfcheck stems and rubric remain identical.
@@ -258,7 +265,7 @@ Exactly 18 public placements, each references a NEW Practice ID already accessib
 
 ## QUALITY_Q01_Q18_EVIDENCE
 
-One normative `SLM-THPT-QUALITY-ONE v3.1.0` defined at `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`. Current R06 source blob b28b4222c19ae949072c507ac53be0a4ebfbf535 and author Q18 receipt a7764580e056f402d66ffa873094102a92a4ad81.
+One normative `SLM-THPT-QUALITY-ONE v3.1.0` defined at `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`. Current R07 learner source blob fcabe475254b4f54f5e6a8e74fce536df1f6bf43 and current scoped Q18 author receipt 580111dbfe0ddc831cc3ef53f062cdb46772c465; previous numbering-only source/receipt remain in Git history.
 
 | Qxx | Concrete academic and PED evidence on exact R06 | Scope verdict | Trace | Release boundary |
 |---|---|---|---|---|
@@ -307,7 +314,7 @@ One normative `SLM-THPT-QUALITY-ONE v3.1.0` defined at `prototypes/thpt/THPT_UNI
 
 ## AUTHORING_A1_A7
 
-A1: current R06 learner source SHA b28b4222c19ae949072c507ac53be0a4ebfbf535; Q18 self-QA receipt a7764580e056f402d66ffa873094102a92a4ad81 and one V2 packet. A2 historical G11 KNTT ChII/B15 SGK+SBT receipt with printed-page mapping. A3 exact R06 mathematical/PED author self-QA, not a new NotebookLM independent review on R06. A4 18 outcomes, original47+new22=69 unique IDs, 18 reuse-only public Self Checks. A5 four coherent continuous narrative arcs, 18 targeted self-tries, three math-aligned SVG. A6 verified 22 new keys incl strict convergence, 331 end-period cash flow and all visual examples. A7 zero private RD1, no official readiness/Mastery, runtime release safety not yet QA.
+A1: current R07 learner source SHA fcabe475254b4f54f5e6a8e74fce536df1f6bf43; scoped Q18 self-QA receipt 580111dbfe0ddc831cc3ef53f062cdb46772c465; one V2 packet, no item bank revision. A2 historical G11 KNTT ChII/B15 SGK+SBT receipt with printed-page mapping. A3 exact R06 mathematical/PED author self-QA, not a new NotebookLM independent review on R06. A4 18 outcomes, original47+new22=69 unique IDs, 18 reuse-only public Self Checks. A5 four coherent continuous narrative arcs, 18 targeted self-tries, three math-aligned SVG. A6 verified 22 new keys incl strict convergence, 331 end-period cash flow and all visual examples. A7 zero private RD1, no official readiness/Mastery, runtime release safety not yet QA.
 
 ## R06_STUDENT_VIEW_SOURCE_LOCK
 
