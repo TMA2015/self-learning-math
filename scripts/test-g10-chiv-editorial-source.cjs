@@ -281,7 +281,14 @@ for(const [lesson,row] of rows){
   const svg=fs.readFileSync(path.join(root,
    "docs/assets/images/thpt/THPT_G10_B09_DECOMPOSITION_TWO_DIRECTIONS_D5_R03.svg"));
   assert.equal(blob(svg),f("R03_SVG_BLOB"),
-   "B09 SVG must match signed geometry source");
+   "B09 desktop SVG must match signed geometry source");
+  const mobile=fs.readFileSync(path.join(root,
+   "docs/assets/images/thpt/THPT_G10_B09_DECOMPOSITION_MOBILE_D5_R03.svg"));
+  assert.equal(blob(mobile),f("R03_MOBILE_SVG_BLOB"),
+   "B09 mobile SVG must match signed 390px-friendly source");
+  assert(official.includes('media="(max-width: 600px)"')&&
+   official.includes("THPT_G10_B09_DECOMPOSITION_MOBILE_D5_R03.svg"),
+   "B09 mobile viewport requires distinct decomposition picture source");
   assert(svg.toString("utf8").includes("<title")&&svg.toString("utf8").includes("<desc")&&
    !svg.toString("utf8").includes("<script"),"B09 SVG accessible/safe");
   assert(receipt.includes("BLOCKED_BY_AUTHORING")&&receipt.includes("NO_CANONICAL_DECOMPOSITION_ITEM"),
