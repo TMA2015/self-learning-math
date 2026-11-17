@@ -21,7 +21,7 @@ REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC19_R11_AUTHOR_SELF_QA_C
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC19_R11_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md
 REVIEW_RECEIPT_BLOB: ad08a2996f25154d83a42b3e44fe591156960cdb
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/TOP19-COMBINATORICS-BINOMIAL-R11-20261117_HANDOFF_V2.md
-AUTHOR_HANDOFF_BLOB: a56783a7ce5a7f13adbd259772039deb9fb118d2
+AUTHOR_HANDOFF_BLOB: a495fd06732502caf04cef95fe820160e3c4f72b
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 BLOCKERS: NONE
@@ -102,3 +102,6 @@ A single sentence in learner optional answer T02 was edited in the *existing* au
 
 
 **Current AUTHORING source-specific verdict after QA correction:** The only effective learner source is the corrected file already named in ACADEMIC_SOURCE_PATH. All affected academic/PED explanations were read and checked; question stems, answers, rubric and public selfcheck were parity-checked. This READY concerns **authoring source handoff only**. The CI source-lock check on this final HEAD and website/runtime/AP gates are separate and must PASS before RELEASE, merger or deployment; this paragraph grants no such authority.
+
+
+**Final source-only custody after workflow state correction:** This document uses the required READY state because its edited learner source passed affected-scope academic/PED author review with unchanged question/key/rubric integrity. No separate student source, no independent full-topic new review or website release is implied. Any previous temporary HOLD wording was superseded by the latest STATE/BLOCKERS fields. Release/AP/device CI and explicit owner authorization remain separate hard gates.
