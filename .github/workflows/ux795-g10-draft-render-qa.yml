@@ -180,6 +180,12 @@ jobs:
           if [[ -f prototypes/thpt/ux795/G10_CHIV_B08_SEMANTIC_3PLUS1_DELTA_R04_20261117.md ]]; then
             cp prototypes/thpt/ux795/G10_CHIV_B08_SEMANTIC_3PLUS1_DELTA_R04_20261117.md integration-main/prototypes/thpt/ux795/
           fi
+          # Include B09 academic/S1 3+1 receipt only in the isolated QA
+          # checkout. This is NOT release authority: B09-F02 authoring HOLD
+          # remains explicit in the signed receipt and #795 master ledger.
+          if [[ -f prototypes/thpt/ux795/G10_CHIV_B09_S1_SEMANTIC_DECOMPOSITION_R03_20261117.md ]]; then
+            cp prototypes/thpt/ux795/G10_CHIV_B09_S1_SEMANTIC_DECOMPOSITION_R03_20261117.md integration-main/prototypes/thpt/ux795/
+          fi
           cp scripts/test-ux795-g10-postmerge-headings.cjs integration-main/scripts/
           (
             cd integration-main
