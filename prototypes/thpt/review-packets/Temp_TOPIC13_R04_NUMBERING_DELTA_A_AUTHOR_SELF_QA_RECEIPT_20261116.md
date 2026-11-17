@@ -9,8 +9,8 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 593484fbe67b168fae677652db0ef3871bcf5695
-ACADEMIC_SOURCE_BLOB: 593484fbe67b168fae677652db0ef3871bcf5695
+SOURCE_BLOB: 4722b4ab923e162733a100610c3d825cbe9b67f5
+ACADEMIC_SOURCE_BLOB: 4722b4ab923e162733a100610c3d825cbe9b67f5
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R03_STUDENT_FIRST_52_CANONICAL_VISIBLE_20261116.md
@@ -33,7 +33,7 @@ PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
 P2: 0
-AUTHOR_SIGNOFF: TOPIC13_R04_VECTOR_CONCEPT_Q18_593484fbe67b168fae677652db0ef3871bcf5695
+AUTHOR_SIGNOFF: TOPIC13_R04_20261118_PRACTICE_GROUP_NUMBERING_4722b4ab923e162733a100610c3d825cbe9b67f5
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_IMPORTED: 0
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
@@ -76,3 +76,8 @@ Source currently `9a558f553bd6a4a58701a6bae490717ba5a52540` in the existing Topi
 **Reconciled source evidence:** 20/20 G10 reused SGK item STEM/KEY/SOLUTION exact original SHA `96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9` (Draft #750); 12/12 G12 reused item STEM/KEY/SOLUTION exact source `856a37bd16d2746ffc2e12906de18d1f4338a3b6`; 20/20 Topic-new canonicals now have identical stem and optional solution to the current learner, each ID once, total **52/52 Q15 source placements parity**. This is source-identity proof, NOT complete re-solving every item or original PDF source re-check.
 
 **Verdict:** `Q18_AUTHOR_SELF_VERIFIED_AFFECTED=PASS`, `Q15_CANONICAL_SOURCE_PARITY=52/52`, `Q04_VECTOR_NOTATION_TARGETED=PASS`, `P0=0/P1=0` in this affected correction. `DELTA_C_ACADEMIC_MATERIAL` (mathematical meaning clarified before website release), no external NotebookLM PASS asserted. Existing public selfcheck no-Mastery, protected RD1, Q16, Firebase and website unaffected. SGK #750 is still a Draft dependency for combined-head RELEASE R1; original 22-topic full Academic/PED and AP1–AP5/R1–R5 not claimed.
+
+## 18/11/2026 · Final Practice H2 numbering delta-A on current source
+
+- Current learner SOURCE_BLOB `4722b4ab923e162733a100610c3d825cbe9b67f5`, previous concept-verified learner `593484fbe67b168fae677652db0ef3871bcf5695`. Two and only two H2 Practice labels changed: `## Câu luyện SGK dùng chung` → `## 1. Câu luyện SGK dùng chung` and `## Bài mới theo mạch học` → `## 2. Bài mới theo mạch học`. Original Knowledge lessons H2 1..3 and H3 numbering, all 52 original canonical practice stems/keys/solutions/rubrics/D6, selfchecks, 4 SVG, public `details`, and source-owned bank IDs unchanged byte-for-byte.
+- This increment is **DELTA_A_UI only**, preserving the earlier 17/11 **DELTA_C** formal vector O01–O03 and prior scoped Q18 source math/PED assertions. Neither a new Topic 52 mathematical re-solve nor an independent NotebookLM reviewer PASS is claimed; G10 SGK original source PR #750 remains external Draft dependency for combined-HEAD RELEASE.
