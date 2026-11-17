@@ -174,8 +174,8 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
      assert.equal(examples.length,[7,8,9].includes(lesson)?4:3,where+" owner-scoped B07/B08 and B09 S1 have four worked examples");
      assert(examples.every((v,i)=>v.trim().startsWith("3."+(i+1)+". Ví dụ "+(i+1)+([7,8].includes(lesson)?" —":". "))),
       where+" numbered visual example headings");
-     assert.equal(await blocks.nth(2).locator(".thpt-g10-example-solution").count(),[7,8].includes(lesson)?4:3,
-      where+" original or enriched solutions grouped in owner Golden panel");
+     assert.equal(await blocks.nth(2).locator(".thpt-g10-example-solution").count(),[7,8,9].includes(lesson)?4:3,
+      where+" original or S1-enriched solutions grouped in Golden panel");
      assert.equal(await article.locator(".thpt-r4-lead").count(),0,where+" no redundant introduction");
      assert.equal(await article.locator(".thpt-r4-footnote").count(),1,where+" only existing source footnote retained");
      assert.equal(await blocks.nth(3).locator(".thpt-r4-footnote").count(),1,where+" source note only on last tab");
