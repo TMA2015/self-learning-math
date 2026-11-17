@@ -15,7 +15,11 @@ Từ mũi tên chỉ hướng trên mặt phẳng, em sẽ hiểu phép cộng, 
 
 Hai người có thể cùng đi 5 m, nhưng nếu một người đi về đông và người kia đi về tây thì hai độ dời khác nhau. Vì vậy, khi mô tả vị trí thay đổi, ta phải giữ cả độ lớn lẫn hướng, không chỉ ghi một con số.
 
-Vectơ \(\overrightarrow{AB}\) đi từ A đến B, có độ dài \(AB=|\overrightarrow{AB}|\ge0\). Vectơ \(\overrightarrow{BA}=-\overrightarrow{AB}\) là vectơ đối; \(\overrightarrow{AA}=\vec 0\) là vectơ-không, có độ dài 0. **Quy ước KNTT B07:** vectơ-không được coi là cùng phương và cùng hướng với mọi vectơ; không dùng nó để xác định một góc giữa hai hướng.
+
+
+> **ĐỊNH NGHĨA — Vectơ.** Vectơ \(\overrightarrow{AB}\) là đoạn thẳng có hướng với điểm đầu \(A\), điểm cuối \(B\). Độ dài vectơ là \(|\overrightarrow{AB}|=AB\ge0\); \(AB\) chỉ là số đo độ dài, không phải chính vectơ.
+
+ Vectơ \(\overrightarrow{BA}=-\overrightarrow{AB}\) là vectơ đối; \(\overrightarrow{AA}=\vec 0\) là vectơ-không, có độ dài 0. **Quy ước KNTT B07:** vectơ-không được coi là cùng phương và cùng hướng với mọi vectơ; không dùng nó để xác định một góc giữa hai hướng.
 
 **Ví dụ**
 
@@ -39,7 +43,11 @@ Không: cùng độ dài nhưng ngược hướng.
 
 Thử hình dung em dời nguyên một mũi tên sang chỗ khác mà không quay nó: độ dời được biểu diễn vẫn như cũ. Nhưng quay mũi tên nửa vòng sẽ đảo chiều. Nhờ đó, ta cần phân biệt cùng phương, cùng hướng và bằng nhau.
 
-Với hai vectơ khác không, cùng phương nghĩa là có giá song song hoặc trùng nhau; cùng hướng còn đòi chiều thống nhất. Hai vectơ bằng nhau khi cùng hướng **và** cùng độ dài. Trong hình bình hành ABCD theo thứ tự, \(\overrightarrow{AB}=\overrightarrow{DC}\), còn \(\overrightarrow{CD}=-\overrightarrow{AB}\); **đây là các đẳng thức vectơ**, không phải đẳng thức chỉ nói về độ dài. Cùng hướng của AB và AM không đủ để khẳng định M nằm giữa A,B.
+Với hai vectơ khác không, cùng phương nghĩa là có giá song song hoặc trùng nhau; cùng hướng còn đòi chiều thống nhất. 
+
+> **ĐỊNH NGHĨA — Hai vectơ bằng nhau.** Hai vectơ bằng nhau khi chúng cùng hướng **và** cùng độ dài. Không đòi hai mũi tên phải cùng vị trí; chỉ bằng nhau về độ dài chưa đủ.
+
+ Trong hình bình hành ABCD theo thứ tự, \(\overrightarrow{AB}=\overrightarrow{DC}\), còn \(\overrightarrow{CD}=-\overrightarrow{AB}\); **đây là các đẳng thức vectơ**, không phải đẳng thức chỉ nói về độ dài. Cùng hướng của AB và AM không đủ để khẳng định M nằm giữa A,B.
 
 ![Hình bình hành: đọc hướng AB, DC và CD](../../visuals/THPT_G10_B07_PARALLELOGRAM_EQUAL_OPPOSITE_D5_R01.svg)
 
@@ -67,7 +75,11 @@ BC, vì cùng hướng và độ dài; CB là vectơ đối.
 
 Khi đi từ A tới B rồi B tới C, điều ta muốn biết đôi khi chỉ là từ A tới C đã dịch chuyển thế nào. Hãy nối điểm đầu và điểm cuối trước khi cộng hai độ dài đường đi: phép cộng vectơ lưu hướng của từng chặng.
 
-Quy tắc ba điểm: \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}\); mũi tên thứ hai phải bắt đầu từ đầu mũi tên thứ nhất. **Độ dài của tổng vectơ** \(\left|\overrightarrow{AB}+\overrightarrow{BC}\right|\) không nhất thiết bằng tổng **độ dài hai đoạn** \(AB+BC\). Với hai bước vuông góc, dùng Pitago để tìm độ dời; không cộng hai độ dài như khi tính quãng đường.
+
+
+> **TÍNH CHẤT — Quy tắc ba điểm.** Với ba điểm \(A,B,C\), luôn có \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}\). Khi vẽ quy tắc tam giác, đặt điểm đầu của mũi tên thứ hai tại điểm cuối mũi tên thứ nhất.
+
+ **Độ dài của tổng vectơ** \(\left|\overrightarrow{AB}+\overrightarrow{BC}\right|\) không nhất thiết bằng tổng **độ dài hai đoạn** \(AB+BC\). Với hai bước vuông góc, dùng Pitago để tìm độ dời; không cộng hai độ dài như khi tính quãng đường.
 
 **Ví dụ**
 
@@ -416,6 +428,13 @@ Với P ban đầu và hai chặng vectơ u,v, vị trí cuối Q=P+u+v. Độ d
 **Khi làm sai:** Nếu trả lời cả hai bằng 0, bạn đang triệt tiêu cả quãng đường; chỉ vectơ mới triệt tiêu.
 
 </details>
+
+> **Kiến thức cần ghi nhớ**
+>
+> - **Vectơ có hướng:** \(\overrightarrow{AB}\) khác số đo độ dài \(AB=|\overrightarrow{AB}|\); không cộng các độ dài để thay cho phép cộng vectơ.
+> - **Vectơ bằng nhau** khi cùng hướng, cùng độ dài. Quy tắc ba điểm: \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}\); phép trừ là cộng vectơ đối.
+> - **Tích vô hướng và góc:** với hai vectơ khác \(\vec0\), \(\vec a\cdot\vec b=|\vec a||\vec b|\cos\theta\). Không dùng công thức góc bằng phép chia cho độ dài khi có vectơ-không.
+> - **Trong ứng dụng:** quãng đường gấp khúc là tổng độ dài các chặng; độ dời là tổng vectơ. Công của lực không đổi là \(W=\vec F\cdot\vec s\) với đơn vị phù hợp.
 
 # Luyện tập
 
