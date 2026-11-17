@@ -1,4 +1,4 @@
-# CĐ17 R02 — AUTHOR_SELF_QA_RECEIPT · 16/11/2026
+# CĐ17 — Q18 receipt hiệu lực R03, lưu lịch sử R02 · 17/11/2026
 
 **AUTHOR_SELF_QA_RECEIPT** theo một chuẩn `SLM-THPT-QUALITY-ONE v3.1.0` Q01–Q18. Đây là tự kiểm chứng học thuật/sư phạm từ bản nguồn học sinh R02 cụ thể, không phải kết quả phản biện NotebookLM độc lập, không cấp phép RELEASE/website.
 
@@ -9,10 +9,10 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 7cfc1c44d8f8aa722118d945900290fd560b621b
-SOURCE_BLOB: 7cfc1c44d8f8aa722118d945900290fd560b621b
+ACADEMIC_SOURCE_BLOB: 76b8a10c12e2a60fa155901d153f17c9982193c4
+SOURCE_BLOB: 76b8a10c12e2a60fa155901d153f17c9982193c4
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: 79f985ce73097c12562f3178d3e169da3f743e0e
+AUTHOR_METADATA_BLOB: 69b1cae6ebda31d510efd1a8d7b6b7e5c3086d2c
 ORIGINAL_R00_SOURCE_BLOB: baa6c6c575a4cf79187b2aebd2047b1cf872b983
 ORIGINAL_R01_EDITORIAL_CANDIDATE_BLOB: af08791b4d7104679a3ea3481068266a07c72dce
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
@@ -22,7 +22,11 @@ PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
 P2: 0
-AUTHOR_SIGNOFF: TOP17_R02_12OUTCOMES_49_CANONICAL_112_DIRECT_SOURCE_AND_MATH_TESTS_20261116
+AUTHOR_SIGNOFF: TOP17_R03_ONE_SOURCE_LANGUAGE_DELTA_Q03_Q10_Q14_Q15_Q16_Q18_20261117
+CONTENT_REVISION: R03
+BASELINE_R02_SIGNED_SOURCE_BLOB: 7cfc1c44d8f8aa722118d945900290fd560b621b
+BASELINE_R02_RECEIPT_GIT_BLOB: 5d55b6a38bf5bb4e81d099e05635001876c2a90a
+GLOBAL_V2_READY_REGISTER_SYNC: HOLD
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
@@ -94,3 +98,12 @@ ASSESSMENT_Q16: Tám câu Tự kiểm tra công khai hiển thị phần hỏi, 
 
 - `DELTA_C_ACADEMIC_MATERIAL`: 12 Ví dụ mới độc lập, ghép hiển thị Practice/SelfCheck, sửa trình bày/dẫn giải một số đoạn; Q18 selfQA chỉ cho phần chịu ảnh hưởng. `DELTA_B_SOURCE_EQUIVALENT`: 22 SGK stem/key/rubric nguyên Git original và 15 Topic P/W key/rubric nguyên R01, checked exact strings. Historical R00 receipts remain unchanged.
 - **AUTHOR_SELF_VERIFIED_PASS** R02 exact source `7cfc1c44d8f8aa722118d945900290fd560b621b`, P0=P1=0 trong phạm vi AUTHORING. No independent NotebookLM reviewer Topic PASS, no website Final Submit/browser/Golden/AP1–AP5/R1–R5/real Safari UAT, no owner approval to merge/deploy.
+
+
+## R03 bổ sung — lỗi kỹ thuật lộ vào lời học sinh đã sửa trực tiếp trên bản thảo chính
+
+Một đoạn hướng dẫn ở phần **Tự kiểm tra** trước đây nói đến “không ghi Mastery” thay vì chỉ cho học sinh làm gì. Trên tệp học liệu chính giữ nguyên đường dẫn R02, đã sửa thành: “Hãy tự giải tám câu dưới đây vào vở mà chưa xem lại lời giải đã học. Khi làm xong, trở về phần **Luyện tập**, mở lời giải từng câu để đối chiếu, tìm chỗ sai và chọn nội dung cần ôn thêm. Đây là phần tự ôn, không phải bài kiểm tra có chấm điểm chính thức.”
+
+**Tự kiểm Q03/Q10/Q14/Q15/Q16/Q18:** so sánh toàn văn với nguồn R02 ban đầu cho thấy duy nhất đoạn hướng dẫn này đổi; **57/57 placement IDs, 49/49 disclosures, 8/8 question-only selfcheck** nguyên trạng; không đổi bất cứ ví dụ, điều kiện toán, đề, đáp án, lời giải/rubric, mức điểm, SGK/SBT, SVG, mô hình, chế độ bảo vệ RD1, Final Submit hoặc Mastery. Độ sâu mỗi outcome không bị rút bớt. `DELTA_B_SOURCE_EQUIVALENT`; `AFFECTED_SCOPE_AUTHOR_SELF_QA_PASS`; đây không phải NotebookLM độc lập hoặc UAT giao diện.
+
+**Trạng thái kỹ thuật bàn giao:** tệp học liệu hiệu lực duy nhất nằm ở `ACADEMIC_SOURCE_PATH`; receipt này thay cho việc tạo file receipt R03 mới; bản R02 nguồn/receipt cũ lưu trong lịch sử Git. Chỉ chuyển `CONTENT_READY` cho bản R03 sau khi metadata, V2, ready, REGISTER và QA HEAD đồng bộ, không mặc nhiên kế thừa trạng thái R02. `NO_MERGE_NO_DEPLOY`.
