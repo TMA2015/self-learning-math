@@ -348,13 +348,21 @@ for(const [lesson,row] of rows){
   else assert(official.includes("THPT_G10_B07_PARALLELOGRAM_EQUAL_OPPOSITE_D5_R01.svg")&&
    !discover.includes("THPT_G10_B07_PARALLELOGRAM_EQUAL_OPPOSITE_D5_R01.svg"),
     "B07 keep source-matched exact-answer visual after first attempts");
+ }else if(lesson==="B09"){
+  assert.equal((examples.match(/^    ### Ví dụ [1-4]\\./gm)||[]).length,4,
+   "B09 S1 extra decomposition example must be a fourth distinct, solved example");
+  for(const label of ["**Hướng giải:**","**Giải:**","**Tự kiểm:**"])
+   assert.equal(examples.split(label).length-1,4,
+    "B09 all four worked examples must include "+label);
+  assert(examples.includes("Ví dụ 4. Phân tích theo hai vectơ không cùng phương"),
+   "B09 missing required S1 decomposition learner example");
  }else{
   assert.equal(examples,previous.slice(previous.indexOf('=== "Ví dụ"'),previous.indexOf('=== "Lỗi thường gặp"')),
    lesson+" previously approved three worked examples changed");
   assert.equal((examples.match(/^    ### Ví dụ /gm)||[]).length,3,
    lesson+" previous three original examples stay intact");
  }
- if(n<=10&&n!==8&&n!==7){
+ if(n<=10&&![7,8,9].includes(n)){
   assert.deepEqual(tex(source),tex(previous),lesson+" original mathematical expressions changed beyond reordering");
  }else if(n===11){
   assert(official.includes("có thể nhận một giá trị tùy ý từ $0^\\circ$ đến $180^\\circ$"),"B11 original SGK zero-angle range");
@@ -364,11 +372,16 @@ for(const [lesson,row] of rows){
   assert.equal((last.match(/data-thpt-first-try-id/g)||[]).length,1,
    "B11 original extra transfer First Try remains in mistakes tab");
  }else{
-  assert(["B07","B08"].includes(lesson),"Only source-locked B07/B08 enrichment skips legacy TeX reorder check");
+  assert(["B07","B08","B09"].includes(lesson),"Only source-locked B07/B08/B09 enrichment skips legacy TeX reorder check");
   if(lesson==="B07"){
    for(const formula of ["|\\overrightarrow{AB}|=AB\\ge0",
     "\\overrightarrow{AB}=\\overrightarrow{DC}","\\overrightarrow{AA}=\\vec0"])
     assert(official.includes(formula),"B07 original required SGK mathematics preserved: "+formula);
+  }else if(lesson==="B09"){
+   for(const required of [
+    "\\vec u=\\vec0", "k(\\vec u+\\vec v)=k\\vec u+k\\vec v",
+    "x\\vec a+y\\vec b", "\\overrightarrow{MN}=-\\tfrac12\\vec a+\\tfrac12\\vec b"
+   ]) assert(source.includes(required),"B09 required original/new S1 maths missing: "+required);
   }else{
   for(const required of [
    "\\overrightarrow{AB}+\\overrightarrow{BC}=\\overrightarrow{AC}",
