@@ -37,9 +37,19 @@ function verify(files){
    const f=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
    assert.equal(f("BASELINE_R05_B07_CSS_BLOB"),hash,
     "B08 owner 3+1 source-lock must build on accepted B07 CSS, not stale 12/11 fixture");
-   assert.equal(sha(actual),f("R04_CSS_BLOB"),
-    "B08 only exact approved scoped CSS may extend existing Golden palette");
+   const b09=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHIV_B09_S1_SEMANTIC_DECOMPOSITION_R03_20261117.md"),"utf8");
+   const b09f=k=>b09.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(b09f("CSS_BASELINE_BLOB"),f("R04_CSS_BLOB"),
+    "B09 owner-pending CSS must extend exact B08 P2-accepted snapshot");
+   assert.equal(sha(actual),b09f("R03_CSS_BLOB"),
+    "B09 exact scoped candidate CSS source-lock must be checked");
    const txt=actual.toString("utf8"),at=txt.indexOf("/* G10 ChIV B08 R04");
+   const b09At=txt.indexOf("/* G10 Chapter IV B09 R03");
+   assert(b09At>at&&txt.indexOf("/* G10 Chapter IV B09 R03",b09At+1)<0,
+    "Only one B09 3+1 CSS appendix, after immutable B08");
+   assert.equal(sha(txt.slice(0,b09At-1)),f("R04_CSS_BLOB"),
+    "All B01–B08 style bytes must remain immutable before B09 append");
    assert(at>0&&txt.indexOf("/* G10 ChIV B08 R04",at+1)<0,
     "B08 only one owner-approved 3+1 append");
    assert.equal(sha(txt.slice(0,at-1)),hash,
