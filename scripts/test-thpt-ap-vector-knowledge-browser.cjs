@@ -68,16 +68,41 @@ const cases=[
            await label.click();
            if(await frame.isVisible()){selected=name;break;}
          }
-         // B08 owner Q18 R02 intentionally moves the unchanged triangle/
-         // parallelogram D5 SVG into discovery, before introducing rules.
-         // B07/B10 retain their existing SGK figure placement.
-         const owningTab=item.lesson===8?"Khám phá kiến thức":"Kiến thức SGK";
+         // Lock actual pedagogical ownership for each source-verified D5:
+         // B07 formal SGK, B08 Discovery, B10 coordinate Discovery BEFORE
+         // TRY16, B10 river figure in worked EX 3.4 with distinct data.
+         const src=(await figure.getAttribute("src"))||"";
+         let owningTab=item.lesson===8?"Khám phá kiến thức":"Kiến thức SGK";
+         if(item.lesson===10){
+           assert.equal(await figures.count(),2,
+             "B10 must retain one coordinate and one river diagram");
+           if(idx===0){
+             owningTab="Khám phá kiến thức";
+             assert(src.includes("THPT_G10_B10_COORDINATES_DIFFERENCE_D5_R01.svg"),
+               "B10 original coordinate D5 missing");
+             const discovery=modelB.locator(".tabbed-content > .tabbed-block").nth(0);
+             assert.equal(await discovery.locator('img[src*="THPT_G10_B10_COORDINATES_DIFFERENCE_D5_R01.svg"]').count(),1,
+               "B10 early coordinate picture must be in Discovery");
+             assert(await figure.evaluate(el=>{
+               const target=document.querySelector('[data-thpt-first-try-id="THPT-G10-CHIV-TRY16"]');
+               return Boolean(target&&(el.compareDocumentPosition(target)&Node.DOCUMENT_POSITION_FOLLOWING));
+             }),"B10 coordinate image must precede first learner attempt");
+           }else{
+             owningTab="Ví dụ";
+             assert(src.includes("THPT_G10_CHIV_RIVER_TRANSFER_D5_R01_CORRECTED.svg"),
+               "B10 river D5 must remain the existing reviewed SVG");
+             const ex=modelB.locator(".tabbed-content > .tabbed-block").nth(2);
+             const captions=await ex.locator("figcaption").allTextContents();
+             assert(captions.some(t=>t.includes("bộ dữ liệu khác")&&t.includes("150")&&t.includes("96")),
+               "B10 river picture must explicitly distinguish the 150m dataset from the 96m example");
+           }
+         }
          assert.equal(selected,owningTab,
-           "B"+item.lesson+" original D5 SVG figure "+idx+" must be visible in approved "+owningTab+" tab");
+           "B"+item.lesson+" original D5 figure "+idx+" belongs to learner tab "+owningTab);
          if(item.lesson===8){
            assert.equal(await figures.count(),1,"B08 keeps exactly one original D5 figure");
-           assert((await figure.getAttribute("src"))?.includes("THPT_G10_B08_TRIANGLE_PARALLELOGRAM_SUM_D5_R01.svg"),
-             "B08 discovery must render the exact original source-matched D5 SVG");
+           assert(src.includes("THPT_G10_B08_TRIANGLE_PARALLELOGRAM_SUM_D5_R01.svg"),
+             "B08 Discovery retains exact original source-matched D5 SVG");
          }
        }
        assert(await frame.isVisible(),"B"+item.lesson+" original SVG figure container "+idx+" must be visible in selected tab");
