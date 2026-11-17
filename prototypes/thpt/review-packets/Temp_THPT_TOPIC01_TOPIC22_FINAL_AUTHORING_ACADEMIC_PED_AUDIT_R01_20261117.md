@@ -252,3 +252,25 @@ Outcome counts are from canonical Topic PR/receipt. CĐ20 outcomes use `PRIMARY_
 ### Remaining blockers and boundary
 
 The two targeted receipts do **not** change the verdict for the other nine affected candidates, and do not prove new full-book S1 PDF verification or website AP/Final Submit. The pair of Q15 source-derived candidate matrices each declares one **proposed** new canonical owner, without activating that owner in global REGISTER or spawning duplicate active item bodies. Administrative harmonization (single V2/ready/REGISTER matching source SHA, owner acceptance gate) is next. The 22-topic audit ledger remains intact: **11/11 have source candidates, 2/11 targeted author source-delta QA completed, 0/11 newly CONTENT_READY**. Do not merge/deploy or edit Firebase/RD1.
+
+
+---
+
+<!-- TOPIC_R07_TARGETED_9_OF_11_20261117 -->
+## R07 · 9/11 affected-scope QA receipts, source SHA-locked
+
+R06 documented CĐ20/CĐ21. R07 records seven more verified corrections, all source files still **candidates** on Draft PRs. Q18 owner-effective v3.1.0 permits evidenced AUTHOR_SELF_VERIFIED; each receipt is targeted to its **changed** source area, not a new independent full-book reviewer verdict or automatic CONTENT_READY. Baseline source and baseline Q18 signed snapshots remain immutable.
+
+| CĐ | Draft PR | Current candidate learner blob (supersedes R04 table if changed) | Newly fetched targeted Q15/Q18 author receipt blob | Verified scope and remaining gate |
+|---|---|---|---|---|
+| 03 | [#888](https://github.com/TMA2015/self-learning-math/pull/888) | d258b880fe695a152d677061a7d307cf262f2862 | 1e62775fd62785814926bdc2e865aac5f93b3b18 | 11 D6; 31 unchanged public Practice IDs, 12 question-only replay placements; V2/ready/REGISTER HOLD |
+| 04 | [#890](https://github.com/TMA2015/self-learning-math/pull/890) | 9b0a9bf090cd8e13bd3807030bb326c0756bd6e8 | 4b0ebf600385f0e7b67af79ce5faf7ac02010e0a | 9 D6 + Q03: algebraic powers a>0, no stray b>0; 75 Practice, 18 selfchecks; historical S1 scope used; V2 HOLD |
+| 05 | [#889](https://github.com/TMA2015/self-learning-math/pull/889) | 663c5423070397ba5e389b5f307598664ab28808 | 39b5d7ac1a7f50e132d01444a402df2abd4944a3 | 16 D6; 38 Practice, 17 replay; V2 HOLD |
+| 06 | [#891](https://github.com/TMA2015/self-learning-math/pull/891) | **3eb442f9399b2a6fb5b715953401585a3bed0c5d** | 598a18284e9ff6fb8120ee192de0c461b5c438f8 | 15 D6. Two more conceptual fixes at original lines L313/L437, new math on cos range/phase and no division by zero. 66 Practice, 16 replay; V2 HOLD. **Previous R04 candidate SHA f4ede... is superseded, not current.** |
+| 10 | [#886](https://github.com/TMA2015/self-learning-math/pull/886) | 069f4f52eb7ae88ac609f11cfa933ec09c2b08d5 | 0b97f1aefd3681f00450a401bcbf75a67225fc33 | 9-line editorial-only metadata removal, 120 unique Practice IDs, 36 replays, math/rubric byte parity; V2 HOLD |
+| 11 | [#887](https://github.com/TMA2015/self-learning-math/pull/887) | 8017adb5616901a4f2a159d1f6179bd2a3f62e1a | 43bcbf655617872e409b5e623b564d6bfa988b16 | 4-line editorial-only metadata removal, 116 unique Practice IDs, 22 replay; math/rubric byte parity; V2 HOLD |
+| 18 | [#892](https://github.com/TMA2015/self-learning-math/pull/892) | af8a3529398e5f876d5c979b0d5d26df3519d6ac | 9d0f5a224f55eda978bb1aebbeb2c9d20ade5233 | One original line L702 context fix, t is geometric not seconds, t=1→M=(2,1,3) unique intersection; Q15 Practice/Selfcheck byte parity; preserve unrelated SBT P2; V2 HOLD |
+
+**QA method:** for CĐ03–06, exact old/new Git source line-diff excluding unrendered metadata, detect only 11/10/16/15 changed lines respectively (CĐ04 9 D6+Q03 formula); every D6 corrected exercise number was resolved to actual Practice heading and mathematical exercise stem in the same file. In CĐ06, checking substantive learner route rather than label alone revealed overbroad references in O10 and O14; the candidate was **amended once more**, then refetched and reviewed before Q18 receipt. All four Practice + Selfcheck sections are byte-identical with original signed sources, item IDs unchanged; original Knowledge First Tries have no independent canonical item marker to duplicate. CĐ10–11: exact 9/4 editorial lines changed; original ID sequence, visible Practice stems, all MathJax expressions and disclosures identical. CĐ18: exactly one changed original mathematical entry paragraph, recomputed plane normal·direction=2≠0, unique intersection at (2,1,3), existing SVG description checked.
+
+**Scope-limited verdict:** AUTHOR_Q08/PED6 or AUTHOR_Q03/PED_DELTA_VERIFIED for CĐ03–06/10–11/18, in addition to CĐ20/21 from R06. **Overall: 11/11 original P1 Topics have candidates; 9/11 targeted source delta checks now have AUTHOR_SELF_QA_RECEIPT on exact SHA; CĐ13 and CĐ19 still need targeted reviews/active canonical reconciliation. Still 0/11 new CONTENT_READY** without source-consistent active bank, one V2 handoff, ready manifest and REGISTER plus remaining gates; no merge/deploy.
