@@ -7,8 +7,8 @@ QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: BLOCKED_BY_AUTHORING
-SOURCE_COMMIT: 1136023653d0b4a017a2ad62c75d97cd18f4cc62
+STATE: CONTENT_READY
+SOURCE_COMMIT: 1a05d5495464db4e345f0a9c5c06b4dbe3a66a31
 AUTHOR_PR: 820
 CURRENT_PR: #888 Draft chỉnh trực tiếp bản thảo của #820, no merge/deploy
 CATALOG_TOPIC_ID: CD03
@@ -35,7 +35,7 @@ SVG2_PATH: prototypes/thpt/visuals/THPT_TOPIC03_RADICAL_DOMAIN_NUMBERLINE_R01.sv
 SVG2_BLOB: 7ee7acd819d9f6d8eb66bcc4ac8abebfd7d4521b
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
-BLOCKERS: EXACT_HEAD_CI_QA_AND_ACTIVE_REGISTER_RECONCILIATION_PENDING
+BLOCKERS: NONE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
@@ -92,3 +92,6 @@ SELF_CHECK_PUBLIC_REPLAY: 12 question stems only; CLIENT_SELF_CHECK_NO_MASTERY
 ## One effective learner source — inline Q14/D6 correction
 
 The current learner file at ACADEMIC_SOURCE_PATH is the **only** active CĐ03 draft for release intake, corrected in place. D6 now sends pupils to real Practice exercise numbers, and the worked Example no longer duplicates the immediate First Try. 31 original canonical Practice items with original keys/rubrics, 12 public selfcheck questions, all original headings, diagrams and item placement IDs were preserved. **This manifest intentionally blocks READY** until exact current source and Q18/A1/V2/REGISTER/CI gates are verified after the change; prior R05/R06 Git snapshots are history, not live alternative release candidates. No owner release approval.
+
+
+**Current AUTHORING source-specific verdict after QA correction:** The only effective learner source is the corrected file already named in ACADEMIC_SOURCE_PATH. All affected academic/PED explanations were read and checked; question stems, answers, rubric and public selfcheck were parity-checked. This READY concerns **authoring source handoff only**. The CI source-lock check on this final HEAD and website/runtime/AP gates are separate and must PASS before RELEASE, merger or deployment; this paragraph grants no such authority.
