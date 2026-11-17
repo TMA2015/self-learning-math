@@ -171,8 +171,8 @@ for(const [lesson,row] of rows){
     "B08: four mandatory operational mathematical rules/properties");
    assert.equal((formal.match(/class="thpt-r4-knowledge-conclusion" role="note"/g)||[]).length,1,
     "B08: one actual math recap (local notes must be inline)");
-   assert.equal((formal.match(/class="thpt-r4-key-formula"/g)||[]).length,2,
-    "B08: exactly two unfilled key formula frames, not nested color cards");
+   assert.equal((formal.match(/class="thpt-r4-key-formula"/g)||[]).length,1,
+    "B08: one genuine unfilled core formula, intermediate algebra remains unboxed");
    assert(formal.includes("song song")===false||formal.includes("hình bình hành"),
     "B08 must not distort prerequisites of parallelogram");
    assert(formal.includes("Điểm đầu")||formal.includes("điểm đầu"),
