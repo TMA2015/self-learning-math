@@ -57,9 +57,15 @@ async function verifyModelBLesson(page,{n,chapter,tries,helps,images,questions=t
   const third=article.locator("details.tip").nth(2);
   assert((await third.locator("summary").innerText()).includes("4.3"),
    "B09 owner P2 4.3 must be a correctly numbered error disclosure");
-  assert((await third.innerText()).includes("Vì sao sai?")&&
-   (await third.innerText()).includes("Ôn và luyện lại:"),
+  await labels.nth(3).click();
+  assert(!(await third.evaluate(x=>x.open)),"B09 4.3 remains closed before learner action");
+  await third.locator("summary").click();
+  assert(await third.evaluate(x=>x.open),"B09 4.3 student can open actual diagnosis");
+  const text=await third.innerText();
+  assert(text.includes("Vì sao sai?")&&text.includes("Ôn và luyện lại:"),
    "B09 third real error must explain reason, correction and remediation");
+  await third.locator("summary").click();
+  assert(!(await third.evaluate(x=>x.open)),"B09 4.3 student can reclose error diagnosis");
  }
  assert.equal(await article.locator("details.question[open], details.tip[open]").count(),0,
   "B"+n+" no pre-attempt solution/remediation may be open");
