@@ -9,10 +9,10 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 4ddf62bc1ddca87e550201bb30cb7a88eb69cf7c
-ACADEMIC_SOURCE_BLOB: 4ddf62bc1ddca87e550201bb30cb7a88eb69cf7c
+SOURCE_BLOB: 9a558f553bd6a4a58701a6bae490717ba5a52540
+ACADEMIC_SOURCE_BLOB: 9a558f553bd6a4a58701a6bae490717ba5a52540
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md
-PUBLIC_CANONICAL_BANK_BLOB: d2f4b9fbd11b65ddd0a3190cc4cfbb8569951175
+PUBLIC_CANONICAL_BANK_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R03_STUDENT_FIRST_52_CANONICAL_VISIBLE_20261116.md
 PREVIOUS_SOURCE_BLOB: 7f3e90e5eadcbaa1dc7b49cd6d5136f6dbf61e22
 PREVIOUS_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC13_R03_AUTHOR_SELF_QA_RECEIPT_20261116.md
@@ -55,3 +55,14 @@ ASSESSMENT_Q16: 16 public selfchecks P01–P16 là đề đã hiện trong Pract
 - RELEASE phải QA rendered hierarchy/AP1–AP5 trên Golden, anchor link và responsive; không sửa toán hoặc tự merge/deploy. Nguồn G10 từ Draft PR #750 vẫn là phụ thuộc RELEASE intake trên combined HEAD, chưa giải quyết bằng sửa format.
 
 **Source equivalence là DELTA_A**, không yêu cầu NotebookLM đánh giá lại toàn Chuyên đề; Q18 của snapshot cũ được giữ nguyên và chỉ custody mới được khóa riêng.
+
+
+## R05 — Q04/Q15/Q18 canonical vector correction (AUTHOR_SELF_VERIFIED, 17/11/2026)
+
+Source currently `9a558f553bd6a4a58701a6bae490717ba5a52540` in the existing Topic13 learner file, single canonical NEW20 bank `136bd4552118e5dba6b18b58965be7d37878e9df`; R04 predecessor learner `5f6d3a1efc50e5869f98c80dd6f5b3c3a94082aa`, bank `d2f4b9fbd11b65ddd0a3190cc4cfbb8569951175` remain historical only.
+
+**Identified substantive ambiguity:** 8 NEW20 original canonical stems and 8 answer/explanation blocks across **9 IDs** used AB/AC/BC/AG/AM as if scalar segment lengths in vector-coordinate calculations; Topic learner corrected them using explicit `\\overrightarrow{}` notation and separated lengths (AB) from vector AB. In-place bank has now been corrected to the identical learner math. Affected: `THPT-TOP13-P04/P06/P07/P12/P14/P15/W01/W02/W03`; P15 only solution, W03 only stem. Preserve same original mathematical results, 4 Written /7 allocation, ID, no new copies or extra assessments. For instance, \\(\\overrightarrow{AB}-\\overrightarrow{AC}=\\overrightarrow{CB}\\) is vector equality, whereas `AB-AC=CB` as segment lengths is generally false.
+
+**Reconciled source evidence:** 20/20 G10 reused SGK item STEM/KEY/SOLUTION exact original SHA `96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9` (Draft #750); 12/12 G12 reused item STEM/KEY/SOLUTION exact source `856a37bd16d2746ffc2e12906de18d1f4338a3b6`; 20/20 Topic-new canonicals now have identical stem and optional solution to the current learner, each ID once, total **52/52 Q15 source placements parity**. This is source-identity proof, NOT complete re-solving every item or original PDF source re-check.
+
+**Verdict:** `Q18_AUTHOR_SELF_VERIFIED_AFFECTED=PASS`, `Q15_CANONICAL_SOURCE_PARITY=52/52`, `Q04_VECTOR_NOTATION_TARGETED=PASS`, `P0=0/P1=0` in this affected correction. `DELTA_C_ACADEMIC_MATERIAL` (mathematical meaning clarified before website release), no external NotebookLM PASS asserted. Existing public selfcheck no-Mastery, protected RD1, Q16, Firebase and website unaffected. SGK #750 is still a Draft dependency for combined-head RELEASE R1; original 22-topic full Academic/PED and AP1–AP5/R1–R5 not claimed.
