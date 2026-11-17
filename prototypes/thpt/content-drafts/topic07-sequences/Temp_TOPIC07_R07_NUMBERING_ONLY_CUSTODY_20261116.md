@@ -1,18 +1,18 @@
 # CĐ7 R07 — AUTHORING numbering-only Q18 custody
 
 CURRENT_SOURCE_PATH: prototypes/thpt/content-drafts/topic07-sequences/Temp_TOPIC07_R07_NUMBERING_CONSISTENT_20261116.md
-CURRENT_SOURCE_BLOB: b28b4222c19ae949072c507ac53be0a4ebfbf535
+CURRENT_SOURCE_BLOB: fcabe475254b4f54f5e6a8e74fce536df1f6bf43
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC07_R07_NUMBERING_DELTA_A_Q18_20261116.md
-CURRENT_Q18_RECEIPT_BLOB: a7764580e056f402d66ffa873094102a92a4ad81
+CURRENT_Q18_RECEIPT_BLOB: 580111dbfe0ddc831cc3ef53f062cdb46772c465
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
-DELTA_CLASS: DELTA_A_UI
+DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
 PREVIOUS_AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic07-sequences/Temp_TOPIC07_R06_AUTHORING_ONLY_CUSTODY_METADATA_20261115.md
 PREVIOUS_AUTHOR_METADATA_BLOB: 48199cd454a97c1a55719057d499da6c2162dd4b
-AUTHORING_STATUS: NUMBERING_DELTA_A_SOURCE_EQUIVALENT
+AUTHORING_STATUS: R07_FORMAL_KNOWLEDGE_TARGETED_Q18_AUTHOR_SELF_VERIFIED
 RELEASE_AUTHORIZATION: NO
 
-Original A1–A7/SGK/outcome/item source matrix below is inherited unaltered; the learner snapshot formatting and Q18 source custody above are the only changes. Visible hierarchy page H1 > numbered group H2 > numbered child H3, Practice question labels no H4. Source and old receipt immutable. No new independent NotebookLM or RELEASE verdict.
+Original A1–A7/SGK/outcome/item source matrix below is inherited unaltered; the learner snapshot formatting and Q18 source custody above are the only changes. The R07 prior numbering proof remains historical; current source adds three formal definitions (O01/O06/O11) and one summary after Knowledge, with unchanged canonical bank and Practice/Selfcheck. This is a scoped DELTA_C with new Q18 self-verification on source fcabe475254b4f54f5e6a8e74fce536df1f6bf43. Heading and item bank custody unchanged. No independent NotebookLM or RELEASE verdict.
 
 ---
 
