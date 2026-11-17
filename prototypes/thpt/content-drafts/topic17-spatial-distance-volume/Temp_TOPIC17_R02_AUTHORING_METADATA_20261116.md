@@ -9,7 +9,7 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 STATE: BLOCKED_BY_AUTHORING
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 7ee09cea9c33e2ae520a1a40df694ab7118adb42
+ACADEMIC_SOURCE_BLOB: e065ded2448f800bf649d0e30239591d57233fbe
 ORIGINAL_G11_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_THPT_TOPIC17_FRUSTUM_VOLUME_MODEL_R00_20261113.html
 INTERACTIVE_MODEL_BLOB: 727c05896a9d9bf95385b54559faa22917f1510e
@@ -136,3 +136,10 @@ Knowledge frustum exploration now displays a=6, h=4 as proper inline mathematics
 ## Full self-study path QA — frustum example
 
 Learner Knowledge 2.4 (TOP17-O10) no longer requires a non-embedded slider: direct explanation derives V=48(1+k+k²) for square frustum with 0≤k≤1 and explicitly works k=0,1/2,1 (48,84,144 cm³). No changed item body, rubric, score, figure, 8 question-only selfcheck or protected RD1. Same learner source file, updated Q18 proof, no duplicate source. Optional HTML model remains an author-only external aid, not a prerequisite.
+
+## 18/11/2026 · Student-structure fix inside Practice disclosure
+
+- Current source `e065ded2448f800bf649d0e30239591d57233fbe`, prior effective R03 `7ee09cea9c33e2ae520a1a40df694ab7118adb42`, same original R02 learner Markdown path. Exactly **one AUTHORING-only H2 text line** `## D5 — Sáu hình học liệu SVG độc lập, có chữ mô tả và kiểm toán hình` occurred *inside* the last SGK Written answer `<details>` block; replaced with a non-rendered AUTHORING_D5 HTML comment, removing malformed heading hierarchy and the apparent unnumbered Practice section.
+- HTML `details` open/close counts unchanged, all 37 original Practice cards and 8 public selfcheck question stems unchanged, 49 canonical IDs, original 6 SVG, answers/Written rubric/math examples exactly same. D5 visual evidence belongs in author metadata, not learner Practice H2.
+- **DELTA_A_UI** source-equivalent formatting only, not a math explanation or assessment edit; metadata STATE BLOCKED_BY_AUTHORING retained until exact source/handoff CI and owner review, no independent NotebookLM/RELEASE claim.
+
