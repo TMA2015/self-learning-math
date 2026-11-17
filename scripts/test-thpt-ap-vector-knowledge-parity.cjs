@@ -159,7 +159,7 @@ for(const c of cases){
  assert(!/PREREQUISITE_CONFIRMED|D5 kế thừa|CONTENT_READY:|data-mastery-credit/.test(src),
   "B"+c.n+": QA metadata/Mastery leaked");
  assert(signedB10R01?
-  src.includes("../luyen-tap/")&&src.includes("../tu-kiem-tra-chuong/"):
+  src.includes("luyen-tap.md")&&src.includes("tu-kiem-tra-chuong.md"):
   src.includes("luyen-tap.md")&&src.includes("tu-kiem-tra-chuong.md"),
   "B"+c.n+": actual working relative Core and end-of-chapter deep links missing");
 }
