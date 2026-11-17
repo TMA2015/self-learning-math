@@ -5,7 +5,7 @@
 PACKET_ID: THPT-TOPIC04-POWERS-EXP-LOG-FULL-R01
 CONTENT_REVISION: R06
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_R06_NUMBERING_ONLY_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: c772ba37cc186de6585ee83719ac4cba0c78b55e
+AUTHOR_METADATA_BLOB: 3b50e44d06ecd8295611f854119614061b45891a
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
@@ -13,9 +13,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 58e6f13113c7a042418560d1efe896b8a43de735
+ACADEMIC_SOURCE_BLOB: bb4da8a9c17c4b5051043043d76682144e5414c3
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC04_R06_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: e4f2e9335b76e4c34630a278412d1876e3aff6d6
+REVIEW_RECEIPT_BLOB: 7b5837abf401a44fb5aee4624f0416b5616e3f47
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC04_POWERS_LOG_ORIGINAL49_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 7d257edda0a2d29ba063987a51c61980558dbab6
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC04_POWERS_LOG_NEW26_PUBLIC_CANONICAL_R01_20261112.md
@@ -346,3 +346,12 @@ R05 Delta C writes 18 standalone Ví dụ/Đề bài/Lời giải with discovery
 ## RELEASE_AND_OWNER_GATE
 
 RELEASE assigns official runtime Topic ID on owner authorization, integrates exact 75 canonical references into three Topic pages on current main (no duplicate source), respects Golden R4/Adaptive Knowledge Tabs v2, checks MathJax formulas, responsive five SVGs, keyboard/touch and no false claims about spec-only labs. R1–R5/AP1–AP5/P1–P2 and real Final Submit negative tests must run on exact website HEAD. No hint, AI Tutor, correctness, key, solution, rubric before Final Submit in self-check, and no Mastery from public Self Check/Written. Owner has **not** approved merge/deploy. SGK path, THCS, Firebase, deep links and learner records preserved.
+
+## 18/11 · Source-locked formal exponent/logarithm knowledge clarification
+
+- Current source `bb4da8a9c17c4b5051043043d76682144e5414c3`; Q18 `7b5837abf401a44fb5aee4624f0416b5616e3f47`; A1 `3b50e44d06ecd8295611f854119614061b45891a`.
+- True formal statements and learner recap added for TOP04-O01 (a≠0 when exponent≤0), TOP04-O05 (log base and argument), TOP04-O06 (individual log arguments positive). Correctness rechecked on existing examples; no rewritten formula operands or answer keys.
+- 75/75 public Practice canonical stem/key/solution/rubric/D6 and 18/18 question-only selfcheck sections byte-exact to prior effective editor source `5f1d29bfb17c14206d3c02e5130d308dd6ced21a`; SVG references, disclosure counts, recent #890 MathJax and D6 repairs retained. `DELTA_C_ACADEMIC_MATERIAL`, targeted Q18 author-self verified; not new independent NotebookLM review.
+- Historical R06 formatting-only evidence below applies to its own SHA; not a claim that the current learner Knowledge source is byte-exact to pre-R06. No RELEASE authorization.
+
+## R06 formatting/numbering Delta-A custody
