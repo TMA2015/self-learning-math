@@ -503,7 +503,7 @@ Mô hình chuyển động thẳng đều có vị trí M(t)=M0+t·v, ba tọa �
 
 — Phần B: bức tường, đường bay, góc và mặt cầu
 
-### 2. Phương pháp tọa độ trong không gian
+**Chuyển mạch — Phương pháp tọa độ trong không gian**
 
 ## 4. Mặt phẳng trong Oxyz
 
