@@ -4,12 +4,15 @@
 **LESSON_ID:** `G10-CHIV-B09`
 **STANDARD_ID:** `SLM-THPT-QUALITY-ONE` · **STANDARD_VERSION:** `3.2.0`
 **MASTER_DEFECT_LEDGER:** [#795](https://github.com/TMA2015/self-learning-math/issues/795) / `B09-F01` / `B09-F02` / `G10-SEM-01`
-**DELTA_CLASS:** `DELTA_C_ACADEMIC_MATERIAL` (missing S1 outcome + explanation/examples/diagram), `DELTA_A_UI` (scoped Golden semantic palette).
+**DELTA_CLASS:** `DELTA_C_ACADEMIC_MATERIAL` (missing S1 outcome + explanation/examples/diagram, corrected D6 remediation), `DELTA_A_UI` (scoped Golden 3+1 CSS and B09-specific solution grouping in existing JS).
 **REVIEW_MODE:** `Q18_OWNER_SELF_VERIFIED_ENRICHMENT_CANDIDATE` — self-audited affected lesson content; **not** an independent NotebookLM Academic/PED PASS; *NOT CONTENT_READY*.
 **SOURCE_BASELINE_BLOB:** `2529b915e4089862e1a48e685ba5dc88d5450558`
 **R03_SOURCE_BLOB:** `70217896971335905ac7907b222b161073c4df4e`
 **CSS_BASELINE_BLOB:** `0cdc618cf9a070f1b1ed50566877f5de0d025ee8`
 **R03_CSS_BLOB:** `7a658ab449818a616382c145c72880066c2ab57a`
+**NAV_JS_BASELINE_BLOB:** `938a9f8fb62e76978e5eba73784f6966b2140c43`
+**NAV_JS_R03_BLOB:** `7a77c4444dfc96aeeaf87ddd17d8f9d37a6ae136`
+**NAV_JS_PATH:** `docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js`
 **R03_SVG_BLOB:** `6a7c8a608dcc2ad90353890b5415e123d7878807`
 **R03_MOBILE_SVG_BLOB:** `a37dd77639b3300ab5b860da6dec9d856c0a152d`
 **MOBILE_SVG_PATH:** `docs/assets/images/thpt/THPT_G10_B09_DECOMPOSITION_MOBILE_D5_R03.svg`
@@ -48,6 +51,7 @@ Existing original 5 `THPT-G10-CHIV-TRY11`–`TRY15` with exact questions/answers
 ## G3–G5 release gates and HOLD
 
 - Source SHA locked exact R02 editorial baseline → R03; CSS prefix byte-equal B08 accepted snapshot, add only B09 canonical `TRY11` selectors for teal/blue/neutral, amber inherited. Both source/render dark/light at 390/820/1440 and no orphan TeX, no private data.
+- B09 DOM-only solution grouping must wrap all **four** distinct worked examples under `thpt-g10-example-solution`, leave **Hướng giải** and **Tự kiểm** outside, not affect B07/B08 or assessment. B09-specific script source SHA is pinned; B01–B08 Golden route behavior remains under cross-lesson Chromium QA.
 - B09 desktop and mobile SVGs must have `title`, `desc`, no scripts, math arrows correct and readable mobile; existing scalar SVG unchanged.
 - Unchanged Core/Practice/W09/canonical Q15 content, Final Submit/RD1/Mastery, THCS and other 78 lessons.
 - **Blocking criterion** even if all CI PASS: `B09-F02 / BLOCKED_BY_AUTHORING / NO_CANONICAL_DECOMPOSITION_ITEM`, plus publisher S1 page index `SOURCE_SCAN_AUTHORITY_PENDING`. AUTHORING must verify original source, determine canonical outcome and one answer/solution/rubric, conduct affected Academic/PED/Q18 review, handoff V2 with SHA; RELEASE only accepts legitimate `CONTENT_READY` and reruns exact HEAD CI/P1.
