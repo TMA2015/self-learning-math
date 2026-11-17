@@ -1,4 +1,4 @@
-# CĐ3 R06 Q18 AUTHOR_SELF_VERIFIED — numbering DELTA_A_UI · 16/11/2026
+# CĐ03 — Q18 AUTHOR_SELF_VERIFIED for current learner draft, D6 + independent Example · 17/11/2026
 
 PACKET_ID: THPT-TOPIC03-ALGEBRA-EQUATIONS-FULL-R01
 CONTENT_REVISION: R06
@@ -7,23 +7,23 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 9cc738526f95e68a31f99409d8672aff44f5c8a9
-ACADEMIC_SOURCE_BLOB: 9cc738526f95e68a31f99409d8672aff44f5c8a9
+SOURCE_BLOB: daeeb5d571d120b31265f8c603a76049a1f2c78c
+ACADEMIC_SOURCE_BLOB: daeeb5d571d120b31265f8c603a76049a1f2c78c
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R05_FULL_LEARNER_VISIBLE_31_CANONICAL_20261115.md
 PREVIOUS_SOURCE_BLOB: 05e9675a7dca802aa9540a96a46d76d013055d8b
 PREVIOUS_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC03_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
 PREVIOUS_Q18_RECEIPT_BLOB: 871edc307cae9e156dab528da6d98653b6686331
-DELTA_CLASS: DELTA_A_UI
+DELTA_CLASS: DELTA_C_PED_TARGETED
 AUTHOR_QA_H2_H3_SEQ: PASS
 AUTHOR_QA_OUTCOMES: 12/12
-AUTHOR_QA_CANONICAL: 31/31 EXACT_ITEM_ID_STEM_KEY_SOLUTION_RUBRIC_D6
+AUTHOR_QA_CANONICAL: 31/31 EXACT_ITEM_ID_STEM_KEY_SOLUTION_RUBRIC; 11 D6 REMEDIAL_DESTINATIONS_REVISED
 AUTHOR_QA_SELFCHECK: 12/12 QUESTION_ONLY_PRESERVED
-AUTHOR_QA_REVEAL_CONTENT: BYTE_EXACT_OLD_NEW
+AUTHOR_QA_REVEAL_CONTENT: SAME_43_DISCLOSURES; 11 D6 DESTINATIONS_UPDATED; OTHER ANSWER/SOLUTION/RUBRIC UNCHANGED
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
-AUTHOR_SIGNOFF: TOPIC3_R06_NUMBERING_DELTA_A_9cc738526f95e68a31f99409d8672aff44f5c8a9
+AUTHOR_SIGNOFF: TOP03_ONE_DRAFT_D6_PED_EXAMPLE_SOURCE_DAEEB5_20261117
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_IMPORTED: 0
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
@@ -42,3 +42,14 @@ ASSESSMENT_Q16: 12 public selfcheck thực hiện được bằng cách tự là
 - Three independent learner pages now H1; conceptual H2 1..N and lessons H3 1.1..N.M; Practice H2 scoped groups 1..N and labels **Bài 1.** etc, not deep H4. No orphan (b)/(2), no mixed sibling styles found in heading-tree scan.
 - SOURCE receipt and V2 on this revision must be relocked to new Git SHA. AUTHORING only; RELEASE separately checks Golden UI/MathJax/DOM/anchor/mobile/Final Submit/owner permission. No merge/deploy.
 
+
+
+## Targeted pedagogical repair in SAME existing learner draft (17/11/2026)
+
+Prior R06 source blob 9cc738526f95e68a31f99409d8672aff44f5c8a9 remains a historical Git snapshot. The existing R06 learner **path** now directly contains precisely 13 changed learner lines compared to this source: 11 D6 return-to-Practice destinations and 2 lines of the TOP03-O09 worked Example. The R06 three-part title/heading hierarchy and the entire original 31-numbered Practice question/answer/solution/rubric, 12 public selfcheck stems and 43 canonical/display placements remain unchanged. Unlike prior R06 numbering-only diff, this is **DELTA_C_PED_TARGETED** not purely visual.
+
+**Critical P1 Q04/Q13/Q14:** original solved Example sqrt(2x+7)=x+1 was identical to immediately following independent Vận dụng; the answer was exposed before self-attempt. New worked Example sqrt(x+6)=x with condition x≥0 yields (x−3)(x+2)=0; reject −2, verify x=3 since sqrt(9)=3; solution {3}. Original first try sqrt(2x+7)=x+1 and its key/remedial D6 remain unchanged, preserving Q15 single item identity.
+
+**Q08/PED6:** all 11 revised D6 lines name numbered Practice exercises actually present in learner draft and directly relevant to the diagnosed error. Affected scope author self QA passes math/substitution and canonical/public replay parity; 31 canonical Practice ID markers + 12 public selfcheck placements, 43 exact opt-in disclosure boundaries and unchanged rubric point allocations. No fresh S1 printed/PDF recheck, whole-topic independent NotebookLM re-PASS, private RD1, browser/UI/Final Submit/Mastery or site change claimed.
+
+**Current status:** one live learner draft file, one existing Q18 receipt. Prior immutable source/receipt accessible by Git history, not a duplicate file. Active V2/ready/REGISTER reconciliation pending; CONTENT_READY not yet claimed for edited draft. NO MERGE/DEPLOY.
