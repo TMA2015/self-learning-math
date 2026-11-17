@@ -22,8 +22,8 @@
 <text x="38" y="413" fill="#0f172a" font-family="Arial,sans-serif" font-size="22" font-weight="bold">Vận tốc gió</text>
 <circle cx="382" cy="565" r="8" fill="#0f172a"/>
 <text x="397" y="576" fill="#0f172a" font-family="Arial,sans-serif" font-size="20">O</text>
-<line x1="382" y1="565" x2="158" y2="448" stroke="#be185d" stroke-width="6" marker-end="url(#b07fvm-v)"/>
-<text x="42" y="446" fill="#9d174d" font-family="Arial,sans-serif" font-size="20" font-weight="bold">12 km/h · Tây Bắc</text>
+<line x1="382" y1="565" x2="180" y2="490" stroke="#be185d" stroke-width="6" marker-end="url(#b07fvm-v)"/>
+<text x="42" y="459" fill="#9d174d" font-family="Arial,sans-serif" font-size="20" font-weight="bold">12 km/h · Tây Bắc</text>
 <text x="40" y="628" font-family="Arial,sans-serif" font-size="18" fill="#334155">Chiều mũi tên: hướng Tây Bắc</text>
 <text x="22" y="705" font-family="Arial,sans-serif" font-size="17" fill="#475569">Hình minh họa, không đo cm trực tiếp</text>
 <text x="22" y="727" font-family="Arial,sans-serif" font-size="17" fill="#475569">và không so tỉ lệ giữa N với km/h.</text>
