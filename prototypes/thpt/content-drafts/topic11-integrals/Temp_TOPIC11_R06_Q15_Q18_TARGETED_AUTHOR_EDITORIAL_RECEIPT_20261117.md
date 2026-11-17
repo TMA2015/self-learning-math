@@ -6,8 +6,8 @@ STANDARD_VERSION: 3.1.0
 STANDARD_BLOB: 5a80b20ce99be3179d03d56a73fa57b6f4882fd8
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 DELTA_CLASS: DELTA_B_SOURCE_EQUIVALENT_EDITORIAL (TECHNICAL METADATA REMOVAL)
-SOURCE_PATH: prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_LEARNER_METADATA_CLEANUP_CANDIDATE_20261117.md
-SOURCE_BLOB: 8017adb5616901a4f2a159d1f6179bd2a3f62e1a
+SOURCE_PATH: prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md
+SOURCE_BLOB: e0f7c0f18a2b6334ca382523413ce2bad7a8cf1e
 BASELINE_R05_SOURCE_BLOB: 7d8eac917be4f7688a8a718e54cce4a84bc055ef
 BASELINE_R05_AUTHOR_Q18_RECEIPT_BLOB: c6df9cdc86b8f3df9d163e8c6e4c16a6e7d48c15
 AFFECTED_Q03_Q15_VERDICT: AUTHOR_SELF_QA_PASS
@@ -37,3 +37,8 @@ AUTHOR_SIGNOFF: CHATGPT_AUTHORING_TOP11_R06_Q03_Q15_METADATA_ONLY_116UNIQUE_ITEM
 VERDICT: AFFECTED_DELTA_AUTHOR_SELF_QA_PASS; ACTIVE_V2_READY_REGISTER_HOLD; CONTENT_READY_NO; NO_MERGE_NO_DEPLOY.
 
 Review prompt (four sentences): Compare learner R06 exact SHA against original R05, especially lines 604, 2334, 2336, 2342. Confirm every removed piece is technical metadata, with mathematical explanation, conditions, question IDs and rubric preserved. If any answer, model or student remediation was lost, report the affected item ID and minimal delta. Do not extrapolate source-equivalent editorial QA to independent NotebookLM PASS, website assessment or production deployment.
+
+
+## CONSOLIDATED_SOURCE_ONLY (owner-selected single learner file; 17/11/2026)
+
+The corrected student language was merged directly into the pre-existing R06_NUMBERING_CONSISTENT source file at SOURCE_PATH (new SHA `e0f7c0f18a2b6334ca382523413ce2bad7a8cf1e`). The old parallel candidate does not remain effective. **Accepted two targeted student-facing language edits, rejected any unrelated metadata/comment reordering or re-numbering** from the candidate. All mathematics, original item identities, exercise stems, answers, 4-point Written rubrics and opt-in disclosures preserve baseline integrity; 138 public placements and disclosures have exact ordered parity. Previous signed legacy sources remain Git history. The Q18 author self-verification here is affected-scope only, not independent all-topic PASS; S1/canonical owner, V2/ready/REGISTER and browser testing require separate validation before release.
