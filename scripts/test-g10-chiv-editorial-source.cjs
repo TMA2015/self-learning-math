@@ -54,19 +54,39 @@ for(const [lesson,row] of rows){
    "prototypes/thpt/ux795/G10_CHIV_B07_HELP_LABELS_DELTA_A_R03_20261117.md"),"utf8");
   const ui=k=>delta.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(ui("R02_SOURCE_BLOB"),expected,"B07 R03 follows exact academic R02 source");
-  const replacements=[
-   ["Trong Luyện tập, làm lại câu về vectơ ngược hướng trong hình bình hành, rồi đối chiếu câu Core về điều kiện hai vectơ bằng nhau.","Làm lại B07-P03 rồi đối chiếu B07-C02."],
-   ["Trong Luyện tập, làm câu về hai vectơ cùng hướng nhưng khác độ dài, rồi câu về quy ước vectơ-không.","Làm B07-P05 rồi B07-P04."]
-  ];
-  let prior=source;
-  for(const [friendly,original] of replacements){
-   assert.equal(prior.split(friendly).length,2,"B07 R03 must contain exactly one signed friendly D6 label");
-   prior=prior.replace(friendly,original);
+  const r04File=path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B07_S1_FORCE_VELOCITY_ENRICHMENT_R04_20261117.md");
+  if(fs.existsSync(r04File)){
+   const r04=fs.readFileSync(r04File,"utf8");
+   const field04=k=>r04.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(field04("BASELINE_R03_SOURCE_BLOB"),ui("R03_SOURCE_BLOB"),
+    "B07 R04 must extend immutable R03 without changing historical receipt");
+   const svg=fs.readFileSync(path.join(root,
+    "docs/assets/images/thpt/THPT_G10_B07_FORCE_VELOCITY_REPRESENTATION_D5_R04.svg"));
+   assert.equal(blob(svg),field04("NEW_SVG_BLOB"),"B07 R04 original new D5 source exact SVG SHA");
+   assert(source.includes("THPT_G10_B07_FORCE_VELOCITY_REPRESENTATION_D5_R04.svg")&&
+    source.includes("1 cm trên giấy ứng với 10 N")&&
+    source.includes("Xe thứ nhất có vận tốc 6 m/s")&&
+    source.includes("Không so sánh độ dài mũi tên của các đại lượng khác đơn vị"),
+    "B07 R04 force/velocity outcome must be taught as actual student action");
+   assert(!source.includes("\\overrightarrow{EF}=-\\overrightarrow{HG}"),
+    "B07 R04 may not require the opposite-vector minus sign before B08");
+   expected=field04("R04_SOURCE_BLOB");
+  }else{
+   const replacements=[
+    ["Trong Luyện tập, làm lại câu về vectơ ngược hướng trong hình bình hành, rồi đối chiếu câu Core về điều kiện hai vectơ bằng nhau.","Làm lại B07-P03 rồi đối chiếu B07-C02."],
+    ["Trong Luyện tập, làm câu về hai vectơ cùng hướng nhưng khác độ dài, rồi câu về quy ước vectơ-không.","Làm B07-P05 rồi B07-P04."]
+   ];
+   let prior=source;
+   for(const [friendly,original] of replacements){
+    assert.equal(prior.split(friendly).length,2,"B07 R03 must contain exactly one signed friendly D6 label");
+    prior=prior.replace(friendly,original);
+   }
+   assert.equal(blob(prior),expected,
+    "B07 R03 must be byte-exact R02 except two verified learner-facing D6 labels");
+   assert(!/B07-[CP][0-9]{2}/.test(source),"B07 internal Core/Practice codes cannot be visible in lesson");
+   expected=ui("R03_SOURCE_BLOB");
   }
-  assert.equal(blob(prior),expected,
-   "B07 R03 must be byte-exact R02 except two verified learner-facing D6 labels");
-  assert(!/B07-[CP][0-9]{2}/.test(source),"B07 internal Core/Practice codes cannot be visible in lesson");
-  expected=ui("R03_SOURCE_BLOB");
  }
  if(lesson==="B08"){
   const receipt=fs.readFileSync(path.join(root,
