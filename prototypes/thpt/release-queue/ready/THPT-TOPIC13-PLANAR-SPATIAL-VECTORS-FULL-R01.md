@@ -8,23 +8,23 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 798d2696fcc68dc022bdb517732ad15df739ea61
+SOURCE_COMMIT: a8977ab268ac6ccf74bd705b100db8bf5a760a31
 CATALOG_TOPIC_ID: CD13
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 593484fbe67b168fae677652db0ef3871bcf5695
+ACADEMIC_SOURCE_BLOB: 4722b4ab923e162733a100610c3d825cbe9b67f5
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md (Q18 AUTHOR_SELF_VERIFIED, not new independent NotebookLM PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 3161e1e8f76ded9a6396eb48424d713d4db55638
+REVIEW_RECEIPT_BLOB: 32ad95d970d2e1e948f325916f0f12486966dc06
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_A1_A7_BLOB: 8c1942bbd332eee25d4d7e5dd0d21945297842da
+AUTHOR_A1_A7_BLOB: 45c0255dac9c8c22efbd5b8fa4138ced94d74ab5
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df
 G10_SGK_ORIGINAL_DEPENDENCY_PR: 750
 G10_SGK_ORIGINAL_DEPENDENCY_BRANCH: authoring/g10-chiv-ped-r02-24-outcomes-20261105
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC13-PLANAR-SPATIAL-VECTORS-FULL-R04_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: bbe672bd9412024fca9497f5a09a351f24635d6c
+AUTHOR_HANDOFF_BLOB: 0173a24df33620cb9b8e621738720556eac7bbe7
 ORIGINAL_G10_SGK_SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9
 ORIGINAL_G12_SGK_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
 SVG1_BLOB: 55ec9add04cb79da2cad7703b3897271e5b3436a
@@ -62,6 +62,12 @@ The independent Topic CĐ13 student path has 3 pages Knowledge / Practice / Self
 - New source `4ddf62bc1ddca87e550201bb30cb7a88eb69cf7c`, author self Q18 `4fca1106e615f70be8fd760fbacaafb42a33437c`, one V2 `6fc04f713e973c374673bbc5dfe93dae65b68744`. R03 source `7f3e90e5eadcbaa1dc7b49cd6d5136f6dbf61e22`, Q18 `bf040651f959e2559c37662caeb66d31d68b6bf9`, V2 `9b8a1746e8d2c5eb998b8630dadc0ef1f83f7acb` remain immutable.
 - All 52 unique original SGK and Topic IDs/keys/solutions/rubrics/D6 byte-equivalent, `DELTA_A_UI`; original G10 SGK source in sibling Draft PR #750 still a separate source dependency for RELEASE intake.
 - No independent new NotebookLM review/website browser QA. RELEASE checks Golden DOM heading tree, MathJax, responsive, assessment, and owner permission; NO MERGE/DEPLOY.
+
+## 18/11/2026 — effective current heading cleanup and custody
+
+- Active learner `4722b4ab923e162733a100610c3d825cbe9b67f5` numbers both Practice H2 groups: shared SGK questions (1), new Topic items (2). Exact two-line visual-only change from preceding source `593484fbe67b168fae677652db0ef3871bcf5695`; 52 canonical item texts/solutions, four SVG, 16 question-only public Selfchecks and all mathematical domain/rubric/D6 unchanged.
+- Scoped Q18 `32ad95d970d2e1e948f325916f0f12486966dc06`, A1 `45c0255dac9c8c22efbd5b8fa4138ced94d74ab5`, single V2 handoff `0173a24df33620cb9b8e621738720556eac7bbe7`; earlier R04 mathematical definition revision remains source-scoped historical and unaffected by this DELTA_A formatting change.
+- No independent NotebookLM full Topic PASS, no official RD1/Mastery, browser RELEASE or owner merge/deploy consent implied.
 
 ## AUTHORING A1–A7
 
