@@ -55,26 +55,32 @@ for(const [lesson,row] of rows){
   const visualField=k=>visual.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(visualField("R02_PUBLISHED_SOURCE_BLOB"),expected,
    "B08 R03 Delta A must follow exactly previously published R02 source blob");
-  const published=cp.spawnSync("git",["show",
-   "447967a6775c414578c841358290d232eacfa80b:"+rel],{cwd:root,encoding:"utf8"});
-  assert.equal(published.status,0,"B08 immutable published R02 git object required");
-  assert.equal(blob(published.stdout),expected,"B08 R02 Git content must equal approved published Q18 receipt");
-  const lines=published.stdout.split("\n"),adjusted=[];
-  let opens=0,closes=0,added=0;
+  // CI shallow checkout may not contain the already-published main commit.
+  // Recover exact immutable R02 blob by removing only the nine added
+  // boundary blank lines from candidate; no network or old Git tree needed.
+  const lines=source.split("\n"),restored=[];
+  let opens=0,closes=0,removed=0;
   for(let i=0;i<lines.length;i++){
-   if(lines[i]==="    \\["&&lines[i-1]?.trim()!==""){adjusted.push("");added++;}
-   adjusted.push(lines[i]);
-   if(lines[i]==="    \\[")opens++;
-   if(lines[i]==="    \\]"){
+   const line=lines[i];
+   if(line==="    \\["){
+    assert.equal(lines[i-1],"","B08 R03 every display opener must be separated from prose");
+    assert.equal(restored.pop(),"","B08 R03 opener must have a blank boundary");
+    opens++;removed++;
+   }
+   restored.push(line);
+   if(line==="    \\]"){
+    assert.equal(lines[i+1],"","B08 R03 every display closer must separate subsequent prose");
+    if([0,2,3].includes(closes)){
+     i++;removed++;
+    }
     closes++;
-    if(lines[i+1]?.trim()!==""){adjusted.push("");added++;}
    }
   }
-  assert.equal(opens,6,"B08 R02 original exactly six display TeX blocks");
-  assert.equal(closes,6,"B08 R02 original six closed displays");
-  assert.equal(added,9,"B08 R03 exactly nine Markdown blank lines inserted");
-  assert.equal(source,adjusted.join("\n"),
-   "B08 R03 display-only fix must be byte-exact R02 plus nine blank lines; no math or answer edits");
+  assert.equal(opens,6,"B08 R03 has exactly six preserved display equations");
+  assert.equal(closes,6,"B08 R03 has six matching display closers");
+  assert.equal(removed,9,"B08 R03 has exactly nine added blank lines");
+  assert.equal(blob(restored.join("\n")),expected,
+   "Removing only nine B08 display boundary blanks MUST recover the published R02 Git blob");
   expected=visualField("R03_CANDIDATE_SOURCE_BLOB");
  }
  assert.equal(blob(source),expected,lesson+" exact final Q18 academic source receipt");
