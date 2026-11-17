@@ -5,8 +5,8 @@ STANDARD_VERSION: 3.1.0
 STANDARD_BLOB: 5a80b20ce99be3179d03d56a73fa57b6f4882fd8
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 DELTA_CLASS: DELTA_C_PED_TARGETED
-SOURCE_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_D6_NAVIGATION_CANDIDATE_20261117.md
-SOURCE_BLOB: 663c5423070397ba5e389b5f307598664ab28808
+SOURCE_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_NUMBERING_CONSISTENT_20261116.md
+SOURCE_BLOB: 30e332a54a20c6c8e2f7e8bd765d53db9f1beb25
 BASELINE_SOURCE_BLOB: 3052d5f7090f74af2eca7739047c59ed76ccda63
 BASELINE_AUTHOR_Q18_RECEIPT_BLOB: 9b3c25de45fc8601f2b5c8c11c6f7dc89b015fbc
 AFFECTED_P0: 0
@@ -47,3 +47,7 @@ Before new CONTENT_READY: choose the R06 source as the sole active canonical can
 AUTHOR_SIGNOFF: CHATGPT_AUTHORING_TOP05_R06_16D6_AUTHOR_Q08_Q15_Q18_20261117
 VERDICT: TARGETED_DELTA_AUTHOR_SELF_QA_PASS; ACTIVE_V2_READY_REGISTER_HOLD; CONTENT_READY_NO.
 Review prompt (four sentences): Reopen the learner R06 source exact Git SHA and its immutable R05 predecessor before reviewing this table. Follow each D6 line to the real visible exercise stem and check the intended error/outcome, not the number alone. Verify no changed original key, rubric or mathematical condition beyond the documented Q03 correction, and report any wrong route with MINIMAL_DELTA. Do not transfer this targeted author receipt to independent NotebookLM approval, protected assessment or deployment.
+
+## CONSOLIDATED_IN_PLACE — user decision 17/11/2026
+
+The verified 16 PED6 changes were applied directly to the existing numbered R06 learner source at `SOURCE_PATH` (new blob `30e332a54a20c6c8e2f7e8bd765d53db9f1beb25`), **not** to a parallel learner candidate file. The previously created patch candidate is no longer an effective release input and may be removed from the branch. Original R06 heading numbering, all canonical/public display IDs, question stems, answer/reveal blocks, Written rubric/points, figures, Practice and public question-only Selfcheck roles remain the original baseline except the declared math formatting in Topic04. This receipt now applies to the CURRENT R06 source; earlier old-candidate SHA references in discussion are historical Git provenance only. Author self-check is affected-scope, not full independent Topic quality review or website display QA. `RELEASE=HOLD` until exact active Q01–Q18 & original S1 owner/ready gates close.
