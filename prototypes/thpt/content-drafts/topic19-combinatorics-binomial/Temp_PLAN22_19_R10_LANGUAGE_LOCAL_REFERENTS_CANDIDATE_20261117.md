@@ -569,6 +569,13 @@ Thay x=1: (1+2)^5=**243**.
 
 Thử nhìn lại một tình huống thực tế: từ quy tắc nhân tạo kết quả nhiều bước, từ không thứ tự suy ra tổ hợp, rồi tổ hợp trở thành hệ số trong khai triển.
 
+> **Kiến thức cần ghi nhớ**
+>
+> - **Quy tắc đếm:** dùng *cộng* cho các trường hợp loại trừ nhau; dùng *nhân* cho một kết quả được tạo qua nhiều bước. Khi các trường hợp chồng nhau, phải loại trùng hoặc dùng phép bù.
+> - **Chọn hay sắp xếp:** hoán vị \(P_n=n!\) xếp tất cả \(n\) phần tử phân biệt; chỉnh hợp \(A_n^k=\dfrac{n!}{(n-k)!}\) khi **có thứ tự**; tổ hợp \(\binom nk=\dfrac{n!}{k!(n-k)!}\) khi **không xét thứ tự**, với \(0\le k\le n\).
+> - **Nhị thức Newton:** \((a+b)^n=\sum_{k=0}^{n}\binom nk a^{n-k}b^k\) cho \(n\) nguyên không âm. Khi \(b\) âm, dấu của mỗi hạng phụ thuộc số lần chọn \(b\).
+> - **Tự kiểm:** giải thích vì sao thứ tự có/không quan trọng trước khi bấm máy; tổng hệ số của **đa thức** \(P(x)\) bằng \(P(1)\), không áp dụng mẹo này tùy tiện cho phân thức hoặc biểu thức không phải đa thức.
+
 # Luyện tập
 
 Luyện tập theo ba mạch toán: khi nào hai cách chọn khác nhau, có thứ tự hay không, và vì sao hệ số nhị thức là số cách chọn. Hãy tự giải, nêu lý do chọn phép đếm cùng các điều kiện trước khi mở **Lời giải**. Những bài ghi **Bài SGK** có đủ đề để em luyện xen kẽ với bài của Chuyên đề.
