@@ -11,11 +11,11 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R07_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 0941242cee95d21c5a83da9f6f01c022443272d8
+ACADEMIC_SOURCE_BLOB: fefe797ee158ee357533605267496ed415a7681a
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC01_R07_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: 3732db6a26a13c52f84f574d1c2c3468513c7eca
+REVIEW_RECEIPT_BLOB: f454e239f22df9c306ef69d1e82f0900f02a48ea
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R07_NUMBERING_ONLY_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: 06bf546a2c209d87fa44485fe51b64317378451c
+AUTHOR_METADATA_BLOB: 0c0fd28720853c4c69d4b8c9380c750421a51c31
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_CANONICAL_SOURCE_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 09d36b0d289ebc54cc4ee51805503cf7f6e714f2
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_PUBLIC_EXTENSION_06ITEM_R01_20261112.md
@@ -213,3 +213,11 @@ Stable PACKET_ID remains THPT-TOPIC01-LOGIC-SETS-FULL-R01. R04 receipt and sourc
 ## RELEASE_AND_OWNER_GATE
 
 RELEASE must intake current manifest and immutable R06 source; check R1–R5/AP1–AP5, Golden R4/Adaptive Tabs v2, MathJax and SVG rendering, keyboard/touch and devices, exact HEAD CI, Final Submit no leak, NO MASTERY from public check, Firebase/THCS/SGK unaffected, then owner release permission. R06 only AUTHORING. Not merged, integrated, or deployed. Runtime Topic ID still owner-unassigned.
+
+## 18/11/2026 · Current logic/set learner recap (DELTA_C)
+
+- Effective learner source `fefe797ee158ee357533605267496ed415a7681a` with 11 conceptual modules, original definitions unchanged; short four-bullet recall block now makes logic, implication/equivalence, set operations and inclusion–exclusion easier to find.
+- Source-bound targeted Q18 `f454e239f22df9c306ef69d1e82f0900f02a48ea` and A1 custody `0c0fd28720853c4c69d4b8c9380c750421a51c31`; previous live source `15ecc1b8f2c9d916e3e8e4a320609c2e36ebbb95` already contained the source-corrected transition explanation.
+- Original 24 canonical public Practice item stems, keys, worked solutions, rubrics, D6; 11 public replay Selfcheck stems, reveal count, 2 SVG refs, canonical IDs are byte-equivalent to the immediate predecessor. No independent Topic NotebookLM verdict, private RD1 or official scoring/Mastery. Historical numbering evidence keeps own source SHA.
+
+## R07 source-equivalent NUMBERING Delta-A
