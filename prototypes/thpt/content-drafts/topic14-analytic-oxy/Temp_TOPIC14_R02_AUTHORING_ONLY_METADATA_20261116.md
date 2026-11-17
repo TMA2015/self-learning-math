@@ -6,8 +6,8 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 8f61c67a11dd3e2869cbd71dbb279bdcfdd92bf3
-SOURCE_BLOB: 8f61c67a11dd3e2869cbd71dbb279bdcfdd92bf3
+ACADEMIC_SOURCE_BLOB: dada7df9fc509cc67238cbc3e5d03376b58f23f4
+SOURCE_BLOB: dada7df9fc509cc67238cbc3e5d03376b58f23f4
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/Temp_G10_SGK_CHVII_FULL_R02_SOURCE_WITH_CANONICAL_REFERENCES_20261105.md
 ORIGINAL_SGK_SOURCE_BLOB: c5c222af88b0e932f9b60df059d8ffd4da5f0f26
 ORIGINAL_SGK_PED_R01_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd
@@ -16,6 +16,11 @@ OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
 MASTERY_ACTIVATION: NO
 RELEASE_AUTHORIZATION: NO
+
+## 18/11/2026 · CĐ14 exact student heading parity Delta-A
+
+- Effective learner source SHA `dada7df9fc509cc67238cbc3e5d03376b58f23f4` replaces prior `8f61c67a11dd3e2869cbd71dbb279bdcfdd92bf3` only as **three H2 lines**: `## Mạch B/C/D` → bold student orientation lines; the numbered four H2 sections and H3 1.1–4.6 remain in exact order.
+- Entire learner Knowledge substantive text, all Practice and Selfcheck questions, 110 original canonical placements, 3 SVG, answers/solutions/rubrics/first-tries/D6 and disclosures remain byte-exact except these three heading markers. DELTA_A_UI, not a new academic revision; prior Q18 math checks are preserved only for unchanged mathematics. New Q18 source reference will be bound after this metadata update.
 
 ## S1_SOURCE_PROVENANCE_AND_SCOPE
 
@@ -376,4 +381,4 @@ Original author metadata 110→outcome→role rows remains unchanged. Exposed PU
 
 ## AUTHOR_SIGNOFF
 
-TOP14_R02_LEARNER_FIRST_23OUT_110CANONICAL_74DIRECTQA_20261116; source `8f61c67a11dd3e2869cbd71dbb279bdcfdd92bf3`; author Q18 receipt path `prototypes/thpt/review-packets/Temp_TOPIC14_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md`, no independent NotebookLM new verdict. Q01–Q18/A1–A7 substantive self-QA P0=P1=0 on this source; R1–R5/AP/P1/P2/website/Final Submit owner authorization not claimed.
+TOP14_R02_LEARNER_FIRST_23OUT_110CANONICAL_74DIRECTQA_20261116; source `dada7df9fc509cc67238cbc3e5d03376b58f23f4`; author Q18 receipt path `prototypes/thpt/review-packets/Temp_TOPIC14_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md`, no independent NotebookLM new verdict. Q01–Q18/A1–A7 substantive self-QA P0=P1=0 on this source; R1–R5/AP/P1/P2/website/Final Submit owner authorization not claimed.
