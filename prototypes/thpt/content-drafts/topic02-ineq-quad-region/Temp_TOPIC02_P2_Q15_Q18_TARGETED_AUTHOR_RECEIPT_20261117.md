@@ -7,8 +7,9 @@ STANDARD_GIT_BLOB: 5a80b20ce99be3179d03d56a73fa57b6f4882fd8
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 REVIEW_SCOPE: Q08_PED6
 DELTA_CLASS: DELTA_C_PED_TARGETED
-SOURCE_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R06_P2_LEARNER_PROSE_CANDIDATE_20261117.md
-SOURCE_BLOB: d1c05e91d3ca21d28981be404cbca23fb5937bb2
+SOURCE_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R06_NUMBERING_CONSISTENT_20261116.md
+SOURCE_BLOB: 351dc607a6721fd56947344034f06c6cc8cca253
+SOURCE_BRANCH: authoring/topic02-ineq-quad-region-r01-20261112
 FROZEN_BASELINE_SOURCE_BLOB: eb5a01b50262dc4b151b3915f5a5e4b436432374
 FROZEN_BASELINE_Q18_RECEIPT_BLOB: 19a8ce12552d94add042dc2127a054d20cd29027
 BASELINE_P0_P1_VERDICT: HISTORICAL_IMMUTABLE_ONLY
@@ -40,3 +41,8 @@ AUTHOR_SIGNOFF: CHATGPT_AUTHORING_TOP02_P2_EXACT_SOURCE_Q08_PED6_20261117
 VERDICT: AFFECTED_DELTA_AUTHOR_SELF_QA_PASS; GLOBAL_V2_REGISTER_HOLD; CONTENT_READY_NO; NO_MERGE_NO_DEPLOY.
 
 Review prompt (four sentences): Compare the exact candidate source blob with its immutable original and verify only the recorded lines changed. Check the mathematical meaning and self-learning clarity of the correction, including real reference to the visible exercise or figure where applicable. Verify unchanged public canonical IDs, answer/rubric disclosure, SGK source mapping and public selfcheck boundary; return a targeted P0/P1/P2 with MINIMAL_DELTA if wrong. Do not present this receipt as a full new NotebookLM PASS or as CONTENT_READY.
+
+
+## IN_PLACE_CONSOLIDATION to original authoring source
+
+User requested **one active learner source**: the corrected material for CĐ02 is now in the existing numbered/learner-first original authoring source at SOURCE_PATH on SOURCE_BRANCH, exact current blob `351dc607a6721fd56947344034f06c6cc8cca253`. The separate patch candidate file on this eight-topic editorial branch is superseded and may be deleted without losing the verified fix. Applied only the one/two declared substantive learner lines, not the patch's unrelated heading renumbering or author comments. Canonical item IDs/order, all original practice/selfcheck stems, opt-in answers, mathematical results, rubric points and referenced SVG files retain source parity. Prior signed SOURCE_BLOB history is recoverable through Git; this author-receipt file remains evidence from a separate review branch, **not** another learner draft or authority to deploy. Full Q01–Q18 and actual browser AP gates not independently passed by this limited delta.
