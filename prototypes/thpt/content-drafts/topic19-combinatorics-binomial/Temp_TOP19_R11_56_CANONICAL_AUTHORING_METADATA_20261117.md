@@ -4,15 +4,15 @@ PACKET_ID: TOP19-COMBINATORICS-BINOMIAL-R11-20261117
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-STATE: AUTHORING_SOURCE_ONLY
+STATE: BLOCKED_BY_AUTHORING
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R11_P2_CANONICAL_LABEL_LEARNER_CLARITY_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: 8f7d149c0359ac895fb2d04496d46e2294511123
+ACADEMIC_SOURCE_BLOB: 32721032973866087dcc4b8981e33d4bf3391c8d
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC19_R11_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md
-REVIEW_RECEIPT_BLOB: 2669873f807ec19f008ce5476884b883c391289d
+REVIEW_RECEIPT_BLOB: ad08a2996f25154d83a42b3e44fe591156960cdb
 R11_Q15_MATRIX_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_Q15_56_CANONICAL_SOURCE_LOCKED_CANDIDATE_MATRIX_20261117.md
-R11_Q15_MATRIX_BLOB: c4718f6786e4b6e36d705a3a6b0a5ccf890ba9e0
+R11_Q15_MATRIX_BLOB: e938adcf0ba32052f533baf1408434ef308821a0
 BASELINE_R09_SIGNED_SOURCE_BLOB: 2b46a2c92004f2c030d030e2b2021a34157bc95d
 
 S1_ORIGINAL_PUBLIC_BANK_PATH: docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js
@@ -97,3 +97,8 @@ RELEASE_AUTHORIZATION: NO
 ## R11 source locked author A1–A7 delta closure
 
 The **same original 56 canonical item IDs/outcome/role/placements** in the table above are verified against updated candidate source SHA 8f7d149c0359ac895fb2d04496d46e2294511123 and current live-line Q15 matrix c4718f6786e4b6e36d705a3a6b0a5ccf890ba9e0; old R09 source/receipt remains immutable. The cumulative author source chain is: historical R09 content ready full-self-QA 55bc391995cccdf0ce66b96ebfa8840c0148c075 → R10 material conceptual m×n + T02 4×3=12 self-QA 440f0c17f1a4f6b813e8627f29626248ba7f5684 → R11 editorial-only 12 repeated provenance labels + two intros self-QA 2c17b30e78f484606509cf9d3817fea431ae8dad. Composite source-specific author Q18 receipt 2669873f807ec19f008ce5476884b883c391289d covers these deltas. One canonical T02 ID and content_version TOP19-R10 remain unchanged in R11; 25 original G10 SGK items keep original bank source owner 2ae62fada28913ec336b3507684408a1e05a3232, 14 T/14 P/3 W are Topic-owned, 7 public question-only replay placements never become private assessment. Private RD1 count=14 and original owner-held SHA256 unchanged. New V2/ready/REGISTER packaging must select source SHA 8f7d149c0359ac895fb2d04496d46e2294511123 atomically; no release authorization.
+
+
+## Chỉ một bản thảo hiệu lực, sửa thẳng lời giải T02
+
+Nguồn học liệu hiện hành tại ACADEMIC_SOURCE_PATH được sửa đúng một câu diễn đạt trong Đối chiếu TOP19-T02. Quy tắc nhân vẫn yêu cầu mỗi loại áo có 3 lựa chọn huy hiệu: 4×3=12, không thay dữ kiện, đáp án, logic phương pháp, rubric, mã ID hay CONTENT_VERSION TOP19-R10. Bảo toàn 56 câu canonical, 7 public replay question-only và các nguồn SGK chủ sở hữu riêng. Không tạo thêm tệp R12 sửa lỗi; bản cũ do Git bảo toàn. Giữ QA HOLD khi chưa đối chiếu toàn bộ V2/ready/REGISTER + CI HEAD. No merge/deploy.
