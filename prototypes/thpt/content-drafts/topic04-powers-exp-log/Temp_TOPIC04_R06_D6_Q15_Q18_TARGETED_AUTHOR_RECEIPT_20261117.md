@@ -6,7 +6,8 @@ STANDARD_BLOB: 5a80b20ce99be3179d03d56a73fa57b6f4882fd8
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 DELTA_CLASS: DELTA_C_PED_TARGETED_PLUS_Q03_MATH_CONDITION
 SOURCE_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_R06_D6_AND_CONDITION_CANDIDATE_20261117.md
-SOURCE_BLOB: 9b0a9bf090cd8e13bd3807030bb326c0756bd6e8
+SOURCE_BLOB: 5791f37b7ac777e62fd9088fa40aba5add1be3c0
+PREVIOUS_R06_SOURCE_BLOB: 9b0a9bf090cd8e13bd3807030bb326c0756bd6e8
 BASELINE_SOURCE_BLOB: c948ad9957bbcd55b416ea7ddce96a6dcdf0d799
 BASELINE_AUTHOR_Q18_RECEIPT_BLOB: 436084332b4acc642db3a2a8523d91d980cf566d
 AFFECTED_P0: 0
@@ -41,3 +42,7 @@ Before new CONTENT_READY: choose the R06 source as the sole active canonical can
 AUTHOR_SIGNOFF: CHATGPT_AUTHORING_TOP04_R06_9D6_AUTHOR_Q08_Q15_Q18_20261117
 VERDICT: TARGETED_DELTA_AUTHOR_SELF_QA_PASS; ACTIVE_V2_READY_REGISTER_HOLD; CONTENT_READY_NO.
 Review prompt (four sentences): Reopen the learner R06 source exact Git SHA and its immutable R05 predecessor before reviewing this table. Follow each D6 line to the real visible exercise stem and check the intended error/outcome, not the number alone. Verify no changed original key, rubric or mathematical condition beyond the documented Q03 correction, and report any wrong route with MINIMAL_DELTA. Do not transfer this targeted author receipt to independent NotebookLM approval, protected assessment or deployment.
+
+## R07 MathJax readability source correction in SAME active learner file (17/11/2026)
+
+Rechecked the one R06 learner source and detected exactly **16** mathematical expressions formatted as Markdown code in Practice: square root versus solving square equation (Bài 1) and normalized scientific notation (Bài 9). Revised only original learner lines 640,644,646,724,728,730, converting `√25` to `\\sqrt{25}`, `∛(−27)` to `\\sqrt[3]{-27}`, `x²` to `x^2`, and `7,5×10^{-6}` to `7{,}5\\times10^{-6}` with inline `\\(...\\)` math tags. Decimal comma and the scientific-notation normalization condition 1≤|a|<10 are unchanged; Bài 9 still distinguishes equal 75×10^-7 from scientific notation in standard coefficient range. This changes **math typography only**, not the original problem data, key, solution, sign conditions, point rubrics or method. Source length and all headings unaffected; **93/93 public ordered placements**, **93/93 optional answer disclosures**, 5 original SVG refs and all 18 question-only public selfcheck items retained exactly. This presentation-only addition is `DELTA_B_SOURCE_EQUIVALENT`, appended to original substantive R06 Q03/D6 targeted receipt rather than adding another file. MathJax visual AP2 needs actual browser validation; source formula balance and math equivalence were checked. `GLOBAL_CANONICAL_V2_READY_REGISTER_HOLD`, `CONTENT_READY=NO`. Prior receipt statements “Practice byte-identical” refer to the **earlier R06 scope only**, and must not be read as unchanged MathJax markup after this R07 correction. No merge/deploy.
