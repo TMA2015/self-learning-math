@@ -324,6 +324,7 @@ const polishG10ChapterIV=(article)=>{
  if(labels.length!==4||blocks.length!==4||
    !labels.every((l,i)=>l.textContent.trim()===names[i]))return;
  article.classList.add("thpt-g10-chiv-golden");
+ const isEnrichedB08=/\/chuong-iv\/bai-8\/?$/.test(location.pathname);
  const section=["1. Khám phá kiến thức","2. Kiến thức SGK","3. Ví dụ",
    "4. Lỗi thường gặp và cách tự khắc phục"];
  blocks.forEach((block,i)=>{
@@ -334,14 +335,35 @@ const polishG10ChapterIV=(article)=>{
  // Number only existing visible discovery/example/remediation labels. Source
  // SGK concept headings in tab 2 are untouched pending S1 editorial review.
  [...blocks[0].querySelectorAll(":scope > h3")].forEach((h,i)=>{
-  h.textContent="1."+(i+1)+". "+h.textContent.trim();
+  const prefix="1."+(i+1)+". ";if(!h.textContent.trim().startsWith(prefix))h.textContent=prefix+h.textContent.trim();
  });
  [...blocks[2].querySelectorAll(":scope > h3")].forEach((h,i)=>{
-  h.textContent="3."+(i+1)+". "+h.textContent.trim();
+  const prefix="3."+(i+1)+". ";if(!h.textContent.trim().startsWith(prefix))h.textContent=prefix+h.textContent.trim();
  });
  [...blocks[3].querySelectorAll(":scope > details.tip > summary")].forEach((h,i)=>{
-  h.textContent="4."+(i+1)+". "+h.textContent.trim();
+  const prefix="4."+(i+1)+". ";if(!h.textContent.trim().startsWith(prefix))h.textContent=prefix+h.textContent.trim();
  });
+ // B08 has four method-first examples with separate solution/verification.
+ if(isEnrichedB08){
+  for(const h of blocks[2].querySelectorAll(":scope > h3")){
+   let node=h.nextElementSibling;
+   while(node&&node.tagName!=="H3"){
+    const lead=node.querySelector?.(":scope > strong");
+    if(node.tagName==="P"&&lead&&/^Lời giải\./u.test(lead.textContent.trim())){
+     const box=document.createElement("div");box.className="thpt-g10-example-solution";
+     box.setAttribute("role","group");box.setAttribute("aria-label","Lời giải ví dụ");
+     node.before(box);
+     while(node&&node.tagName!=="H3"){
+      const strong=node.querySelector?.(":scope > strong");
+      if(node.tagName==="P"&&strong&&/^Kiểm lại\./u.test(strong.textContent.trim()))break;
+      const next=node.nextElementSibling;box.append(node);node=next;
+     }
+     break;
+    }
+    node=node.nextElementSibling;
+   }
+  }
+ }
  // Golden example solution panel. MkDocs may render Đề/Giải/Tự kiểm as
  // three strong labels in ONE paragraph; split its EXISTING DOM nodes without
  // altering a single answer, formula, punctuation mark or example ID.
@@ -589,6 +611,30 @@ const enableG10B06KeyboardTabs=(article)=>{
  });
  sync();article.dataset.g10B06KeyboardTabs="true";
 };
+/* B08 owner's G10-TAB-KEYNAV-01: keyboard Left/Right on Golden labels.
+ * Scope only to B08, preserve Material native inputs and mouse/touch.
+ * No document-level keyboard listener, no assessment or student-data write. */
+const enableG10B08KeyboardTabs=(article)=>{
+ if(!/\/chuong-iv\/bai-8\/?$/.test(location.pathname)||article.dataset.g10B08KeyboardTabs==="true")return;
+ const set=article.querySelector(":scope > .tabbed-set");
+ const radios=[...(set?.querySelectorAll(':scope > input[type="radio"]')||[])];
+ const labels=[...(set?.querySelectorAll(":scope > .tabbed-labels > label")||[])];
+ if(radios.length!==4||labels.length!==4||!labels.every((l,i)=>l.htmlFor===radios[i].id))return;
+ const sync=()=>labels.forEach((label,i)=>{label.tabIndex=radios[i].checked?0:-1;});
+ labels.forEach((label,i)=>{
+  const onArrow=event=>{
+   if(event.key!=="ArrowLeft"&&event.key!=="ArrowRight")return;
+   event.preventDefault();event.stopPropagation();
+   const step=event.key==="ArrowRight"?1:-1,next=(i+step+labels.length)%labels.length;
+   radios[next].click();sync();labels[next].focus();
+  };
+  label.addEventListener("keydown",onArrow);
+  label.addEventListener("click",sync);
+  radios[i].addEventListener("keydown",onArrow);
+  radios[i].addEventListener("change",sync);
+ });
+ sync();article.dataset.g10B08KeyboardTabs="true";
+};
 const run=()=>{
  const path=location.pathname;
  const match=path.match(/^(.*\/thpt-preview\/sgk\/)(?:(lop-(11|12))\/)?chuong-([ivx]+)\/bai-(\d+)\/?$/);
@@ -603,7 +649,7 @@ const run=()=>{
  if(grade===10){
   article.classList.add("thpt-g10-knowledge-ap1");
   if(lesson<=6){article.classList.add("thpt-g10-first-six-golden");numberG10FirstSix(article);polishG10FirstSix(article);restoreG10FirstSixGolden(article);if(lesson===4)enableG10B04KeyboardTabs(article);if(lesson===5)enableG10B05KeyboardTabs(article);if(lesson===6)enableG10B06KeyboardTabs(article);}
-  else if(chapter==="iv"&&lesson<=11)polishG10ChapterIV(article);
+  else if(chapter==="iv"&&lesson<=11){polishG10ChapterIV(article);if(lesson===8)enableG10B08KeyboardTabs(article);}
   else if(chapter==="v"&&lesson>=12&&lesson<=14)polishG10ChapterV(article);
   else if(chapter==="vi"&&lesson>=15&&lesson<=18)polishG10ChapterVI(article);
   else if(chapter==="vii"&&lesson>=19&&lesson<=22)polishG10ChapterVII(article);

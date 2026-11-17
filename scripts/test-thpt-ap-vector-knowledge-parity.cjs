@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 "use strict";
 const {expectedG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
-/* UX795 Model B G10 vector AP source lock: preserve legacy display/dollar
+/* UX795 Model B G10 vector AP source lock: preserve exact historical snapshots
  * mathematical expression sequence exactly while allowing owner-approved
  * narrative Delta C in four independent Level-1 tabs. Not academic PASS.
  */
@@ -65,7 +65,15 @@ for(const c of cases){
  const start=src.indexOf('=== "Kiến thức SGK"'),end=src.indexOf('=== "Ví dụ"',start);
  assert(start>=0&&end>start,"B"+c.n+": knowledge/example areas missing");
  const middle=src.slice(start,end),expressions=math(middle);
- const current=editorial[c.n]&&blob(src)===editorial[c.n].sha;
+ const r02=(c.n===8)?fs.readFileSync(path.join(__dirname,
+  "../prototypes/thpt/ux795/G10_CHIV_B08_S1_OWNER_Q18_ENRICHMENT_DELTA_R02_20261116.md"),"utf8"):null;
+ const receiptField=k=>r02?.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+ const current=editorial[c.n]&&(blob(src)===editorial[c.n].sha||
+  (c.n===8&&receiptField("R01_APPROVED_SOURCE_BLOB")===editorial[c.n].sha&&
+   receiptField("R02_CANDIDATE_SOURCE_BLOB")===blob(src)));
+ if(c.n===8&&current&&blob(src)!==editorial[c.n].sha)
+  assert.equal(receiptField("R02_CANDIDATE_SOURCE_BLOB"),expectedG10KnowledgeBlob(c.n,c.sha),
+   "B08 R02 signed Q18 source receipt must agree with exact-head academic source router");
  if(current){
   const headings=[...middle.matchAll(/^    ### ([^\n]+)$/gm)].map(m=>m[1]);
   assert.deepEqual(headings,editorial[c.n].sections,"B"+c.n+": official S1 book sections changed");

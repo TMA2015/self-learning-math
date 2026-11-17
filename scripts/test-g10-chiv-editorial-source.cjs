@@ -43,8 +43,16 @@ for(const [lesson,row] of rows){
  assert.equal(old.status,0,"baseline fetch missing: "+lesson+" "+old.stderr);
  const previous=old.stdout;
  assert.equal(blob(previous),row.baseline,lesson+" original published blob");
- assert.equal(blob(source),row.candidate,lesson+" exact final academic source receipt");
- assert.equal(candidateG10KnowledgeBlob(n),row.candidate,lesson+" Q18 source router must select latest approved blob");
+ let expected=row.candidate;
+ if(lesson==="B08"){
+  const receipt=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B08_S1_OWNER_Q18_ENRICHMENT_DELTA_R02_20261116.md"),"utf8");
+  const field=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(field("R01_APPROVED_SOURCE_BLOB"),row.candidate,"B08 R02 extends immutable ChIV R01");
+  expected=field("R02_CANDIDATE_SOURCE_BLOB");
+ }
+ assert.equal(blob(source),expected,lesson+" exact final Q18 academic source receipt");
+ assert.equal(candidateG10KnowledgeBlob(n),expected,lesson+" Q18 source router selects correct immutable snapshot");
  for(const key of ["data-thpt-first-try-id","data-thpt-help-id","data-outcome-id"])
   assert.deepEqual(ids(source,key),ids(previous,key),lesson+" canonical/outcome IDs changed");
  assert.deepEqual(formativeBodies(source),formativeBodies(previous),
@@ -63,30 +71,51 @@ for(const [lesson,row] of rows){
   lesson+" official S1 book headings exactly 2.1.., no double SGK");
  assert(official.startsWith('=== "Kiến thức SGK"\n\n    ### 2.1.'),
   lesson+" SGK tab must start directly at 2.1, not commentary");
- assert.equal((discover.match(/^    ### /gm)||[]).length,3,lesson+" Discovery stages 1.1–1.3");
+ assert.equal((discover.match(/^    ### /gm)||[]).length,lesson==="B08"?5:3,lesson+" authentic discovery stages");
  assert(!official.includes("    ### Kiến thức SGK"),lesson+" duplicate SGK heading");
  for(const part of [discover.slice('=== "Khám phá kiến thức"\n'.length),official.slice('=== "Kiến thức SGK"\n'.length)]){
   const unindented=part.split("\n").filter(l=>l.trim()&&!l.startsWith("    "));
   assert.equal(unindented.length,0,lesson+" tabbed Markdown indentation leaked paragraphs");
  }
- assert.equal(examples,previous.slice(previous.indexOf('=== "Ví dụ"'),previous.indexOf('=== "Lỗi thường gặp"')),
-  lesson+" previously approved three worked examples changed");
- assert.equal((examples.match(/^    ### Ví dụ /gm)||[]).length,3,lesson+" examples must remain grouped in tab 3");
- if(n<=10){
-  assert.deepEqual(tex(source),tex(previous),lesson+" original mathematical expressions changed beyond reordering");
+ if(lesson==="B08"){
+  assert.equal((examples.match(/^    ### 3\.[1-4]\. Ví dụ [1-4] —/gm)||[]).length,4,
+   "B08 new four distinct method-first examples match owner S1/PED delta receipt");
+  for(const section of ["Phân tích.","Lời giải.","Kiểm lại."]){
+   assert.equal(examples.split("**"+section+"**").length-1,4,
+     "B08 every worked example must explain method, solve, and check "+section);
+  }
+  assert(discover.includes("THPT_G10_B08_TRIANGLE_PARALLELOGRAM_SUM_D5_R01.svg")&&
+   !official.includes("THPT_G10_B08_TRIANGLE_PARALLELOGRAM_SUM_D5_R01.svg"),
+    "B08 original D5 vector figure must guide discovery before formula");
  }else{
-  assert(official.includes("tùy ý từ $0^\\circ$ đến $180^\\circ$"),"B11 original SGK zero-angle range");
+  assert.equal(examples,previous.slice(previous.indexOf('=== "Ví dụ"'),previous.indexOf('=== "Lỗi thường gặp"')),
+   lesson+" previously approved three worked examples changed");
+  assert.equal((examples.match(/^    ### Ví dụ /gm)||[]).length,3,
+   lesson+" previous three original examples stay intact");
+ }
+ if(n<=10&&n!==8){
+  assert.deepEqual(tex(source),tex(previous),lesson+" original mathematical expressions changed beyond reordering");
+ }else if(n===11){
+  assert(official.includes("có thể nhận một giá trị tùy ý từ $0^\\circ$ đến $180^\\circ$"),"B11 original SGK zero-angle range");
   assert(official.includes("vuông góc với mọi vectơ"),"B11 SGK orthogonality convention");
   assert(official.includes("hai độ dài đều dương"),"B11 denominator guard");
   assert(official.includes("\\vec u\\cdot\\vec v=ac+bd"),"B11 coordinate product formula");
   assert.equal((last.match(/data-thpt-first-try-id/g)||[]).length,1,
    "B11 original extra transfer First Try remains in mistakes tab");
+ }else{
+  assert.equal(lesson,"B08","Only B08 source enrichment may skip legacy order-only TeX check");
+  for(const required of [
+   "\\overrightarrow{AB}+\\overrightarrow{BC}=\\overrightarrow{AC}",
+   "\\overrightarrow{AB}+\\overrightarrow{AD}=\\overrightarrow{AC}",
+   "\\vec u-\\vec v=\\vec u+(-\\vec v)",
+   "\\overrightarrow{GA}+\\overrightarrow{GB}+\\overrightarrow{GC}=\\vec0"
+  ])assert(official.includes(required),"B08 R02 must retain original vector rule: "+required);
  }
  assert.notDeepEqual(ids(source.replace('data-thpt-first-try-id="','data-thpt-first-try-id="BAD-'),
   "data-thpt-first-try-id"),ids(previous,"data-thpt-first-try-id"),lesson+" ID mutation must fail");
  assert.notDeepEqual([...official.replace(book[lesson][0],"WRONG SGK").matchAll(/^    ### ([^\n]+)$/gm)].map(x=>x[1]),
   book[lesson],lesson+" wrong S1 section must fail");
- assert.notEqual(blob(source+" "),row.candidate,lesson+" Git SHA mutation must fail");
- console.log("PASS "+lesson+" Q18 S1 sections, 3 examples, canonicals and exact formative answer bodies");
+ assert.notEqual(blob(source+" "),expected,lesson+" Git SHA mutation must fail");
+ console.log("PASS "+lesson+" Q18 S1 sections, "+(lesson==="B08"?"4 new":"3 original")+" examples, canonical IDs and formative answers");
 }
 console.log("PASS 5/5 G10 ChIV S1/Q18 self-verified editorial source receipts; no independent reviewer claimed.");

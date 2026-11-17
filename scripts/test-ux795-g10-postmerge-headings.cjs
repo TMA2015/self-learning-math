@@ -76,6 +76,18 @@ for(let n=1;n<=27;n++){
   assert.equal([...markdown.matchAll(/data-thpt-help-id="([^"]+)"/g)].length,2,
    "B06 original two HELP IDs preserved, no assessment mutation");
  }
+ if(n===8){
+  assert.deepEqual(ids,["THPT-G10-CHIV-TRY06","THPT-G10-CHIV-TRY07","THPT-G10-CHIV-TRY08",
+   "THPT-G10-CHIV-TRY09","THPT-G10-CHIV-TRY10"],"B08 original five canonical IDs unchanged");
+  const receipt=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B08_S1_OWNER_Q18_ENRICHMENT_DELTA_R02_20261116.md"),"utf8");
+  const field=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(blob(fs.readFileSync(path.join(root,"docs",route+".md"))),field("R02_CANDIDATE_SOURCE_BLOB"),
+   "B08 latest source SHA must match immutable Q18 receipt");
+  const first=markdown.indexOf('=== "Khám phá kiến thức"'),second=markdown.indexOf('=== "Kiến thức SGK"');
+  assert(first>=0&&second>first&&markdown.slice(first,second).includes("THPT_G10_B08_TRIANGLE_PARALLELOGRAM_SUM_D5_R01.svg"),
+   "B08 authentic D5 figure must guide concept-first discovery");
+ }
  legacyCount+=ids.length-added.length;newB05Count+=added.length;
  const short=(html.match(concise)||[]).length;
  const verbose=(html.match(longTitle)||[]).length;

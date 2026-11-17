@@ -14,7 +14,7 @@ const base=process.env.SLM_CHIV_URL||"http://127.0.0.1:8765";
 const goldenCss="44442773ac31eb1a46f0cab699a7d2c7974a5f37";
 const sources={
  7:"d48a1b9edaec46480dc70acb519d77edf6008445",
- 8:"dcdb7aec2ce8afd285739bc3e098d615e4faf623",
+ 8:"196976859489744bf10e6c3ad60e8dac7afb2422",
  9:"2529b915e4089862e1a48e685ba5dc88d5450558",
  10:"ceaa76688e73274c9cf2d3116c41c6d4d0ac2726",
  11:"2a1381689f66d1f8c752bdbf1c29a9ef49a4e073"
@@ -101,7 +101,13 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
      assert.deepEqual((await blocks.nth(1).locator(":scope > h3").allInnerTexts()).map(x=>x.trim()),
        officialSections[lesson],where+" actual SGK S1 headings 2.1.. without duplicate heading");
      assert.deepEqual((await blocks.nth(0).locator(":scope > h3").allInnerTexts()).map(x=>x.trim()),
-       ["1.1. Cùng tìm hiểu","1.2. Ví dụ trực quan","1.3. Thuật ngữ, kiến thức và kỹ năng"],
+       lesson===8?[
+         "1.1. Vì sao không thể cộng hai vectơ như cộng hai độ dài?",
+         "1.2. Hai vectơ cùng điểm đặt: vì sao đường chéo biểu diễn hợp lực?",
+         "1.3. Khi muốn lấy hiệu hai vectơ thì đổi chiều mũi tên nào?",
+         "1.4. Vì sao tại trung điểm, hai vectơ hướng ra hai đầu triệt tiêu nhau?",
+         "1.5. Vì sao tại trọng tâm, ba vectơ hướng tới các đỉnh cân bằng?"
+        ]:["1.1. Cùng tìm hiểu","1.2. Ví dụ trực quan","1.3. Thuật ngữ, kiến thức và kỹ năng"],
        where+" complete concept-first discovery stages");
      assert.equal(await blocks.nth(0).locator("[data-thpt-first-try-id]").count(),
        ({7:5,8:5,9:5,10:6,11:4})[lesson],where+" original First Tries moved to Discovery");
@@ -120,10 +126,10 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
      assert((await blocks.nth(0).locator(":scope > h3").allInnerTexts()).every((v,i)=>v.trim().startsWith("1."+(i+1)+". ")),
       where+" discovery headings are visual-only numbered");
      const examples=await blocks.nth(2).locator(":scope > h3").allInnerTexts();
-     assert.equal(examples.length,3,where+" exactly 3 original solved examples");
-     assert(examples.every((v,i)=>v.trim().startsWith("3."+(i+1)+". Ví dụ "+(i+1)+". ")),
+     assert.equal(examples.length,lesson===8?4:3,where+" B08 has four distinct worked examples");
+     assert(examples.every((v,i)=>v.trim().startsWith("3."+(i+1)+". Ví dụ "+(i+1)+(lesson===8?" —":". "))),
       where+" numbered visual example headings");
-     assert.equal(await blocks.nth(2).locator(".thpt-g10-example-solution").count(),3,
+     assert.equal(await blocks.nth(2).locator(".thpt-g10-example-solution").count(),lesson===8?4:3,
       where+" original three solutions grouped in owner Golden panel");
      assert.equal(await article.locator(".thpt-r4-lead").count(),0,where+" no redundant introduction");
      assert.equal(await article.locator(".thpt-r4-footnote").count(),1,where+" only existing source footnote retained");
@@ -158,10 +164,24 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
       where+" First Try summaries collapsed and normal-size text");
      assert(state.tips.every(x=>!x.open),where+" D6 closed");
      assert(state.cells.every(px=>Math.abs(px-state.body)<.6),where+" table fonts equal body");
-     assert(state.solutions.every(x=>x.bg!=="rgba(0, 0, 0, 0)"&&x.strong==="Giải:"),
+     assert(state.solutions.every(x=>x.bg!=="rgba(0, 0, 0, 0)"&&x.strong===(lesson===8?"Lời giải.":"Giải:")),
       where+" solution panel contains unchanged mathematical solution");
      assert(state.overflow<=3,where+" no whole-page horizontal overflow");
-     // Right TOC cross-tab link: tab 3 -> hidden Knowledge tab 2.
+     if(lesson===8){
+       assert.equal(await article.getAttribute("data-g10-b08-keyboard-tabs"),"true",
+        where+" B08 route-only keyboard navigation");
+       const svg=blocks.nth(0).locator('img[src*="THPT_G10_B08_TRIANGLE_PARALLELOGRAM_SUM_D5_R01.svg"]');
+       assert.equal(await svg.count(),1,where+" B08 original D5 image must be in Discovery");
+       await labels.nth(0).click();await svg.scrollIntoViewIfNeeded();
+       await svg.evaluate(async el=>{if(el.decode)await el.decode();});
+       assert(await svg.evaluate(el=>el.complete&&el.naturalWidth>0),where+" original D5 SVG decodes");
+       const radios=tabbed.locator(':scope > input[type="radio"]');
+       await labels.nth(0).focus();await page.keyboard.press("ArrowRight");
+       assert(await radios.nth(1).isChecked(),where+" arrow right activates tab 2");
+       await page.keyboard.press("ArrowLeft");
+       assert(await radios.nth(0).isChecked(),where+" arrow left returns to tab 1");
+      }
+      // Right TOC cross-tab link: tab 3 -> hidden Knowledge tab 2.
      const tocId=await blocks.nth(1).locator("h3[id]").first().getAttribute("id");
      await labels.nth(2).click();
      const toc=page.locator('.md-sidebar--secondary a[href="#'+tocId+'"]').first();
