@@ -637,13 +637,13 @@ Các số mũ hữu tỉ gần √2 như 1,4;1,41;1,414,… đã có định ngh
 
 #### Bài 5
 
-Phân biệt hai yêu cầu: tìm `√25` và giải `x²=25`. Nếu chuyển sang `∛(−27)`, kết quả ra sao? Giải thích vai trò của căn bậc chẵn/lẻ.
+Phân biệt hai yêu cầu: tìm \(\sqrt{25}\) và giải \(x^2=25\). Nếu chuyển sang \(\sqrt[3]{-27}\), kết quả ra sao? Giải thích vai trò của căn bậc chẵn/lẻ.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** `√25=5` là căn không âm; phương trình `x²=25` có hai nghiệm `x=5` và `x=−5`; `∛(−27)=−3`.
+**Đáp án:** \(\sqrt{25}=5\) là căn không âm; phương trình \(x^2=25\) có hai nghiệm \(x=5\) và \(x=-5\); \(\sqrt[3]{-27}=-3\).
 
-Ký hiệu căn bậc chẵn lấy giá trị không âm, còn phương trình `x²=25` yêu cầu tìm **mọi** số bình phương bằng 25. Căn bậc lẻ của số âm tồn tại trong ℝ vì `(−3)³=−27`. Không suy rộng cơ số âm sang mọi số mũ thực.
+Ký hiệu căn bậc chẵn lấy giá trị không âm, còn phương trình \(x^2=25\) yêu cầu tìm **mọi** số bình phương bằng 25. Căn bậc lẻ của số âm tồn tại trong ℝ vì \((-3)^3=-27\). Không suy rộng cơ số âm sang mọi số mũ thực.
 
 </details>
 
@@ -721,13 +721,13 @@ Bạn viết 2²+2³=2⁵. Hãy nêu lỗi và kết quả đúng.
 
 #### Bài 11
 
-Viết `0,0000075` dưới dạng kí hiệu khoa học, rồi giải thích dấu của số mũ và vì sao không được viết `75×10^{-7}` làm **dạng chuẩn** dù giá trị bằng nhau.
+Viết \(0{,}0000075\) dưới dạng kí hiệu khoa học, rồi giải thích dấu của số mũ và vì sao không được viết \(75\times10^{-7}\) làm **dạng chuẩn** dù giá trị bằng nhau.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** `7,5×10^{-6}`. Biểu thức `75×10^{-7}` cũng bằng cùng giá trị nhưng hệ số 75 không thuộc đoạn `[1,10)` nên không phải dạng chuẩn.
+**Đáp án:** \(7{,}5\times10^{-6}\). Biểu thức \(75\times10^{-7}\) cũng bằng cùng giá trị nhưng hệ số 75 không thuộc đoạn \([1,10)\) nên không phải dạng chuẩn.
 
-Số rất nhỏ hơn 1 nên số mũ của 10 âm; chuyển dấu phẩy sáu chữ số để có phần hệ số 7,5, nhân `10^{-6}` để giữ đúng giá trị. Kí hiệu khoa học chuẩn có phần trị tuyệt đối hệ số từ 1 đến dưới 10.
+Số rất nhỏ hơn 1 nên số mũ của 10 âm; chuyển dấu phẩy sáu chữ số để có phần hệ số 7,5, nhân \(10^{-6}\) để giữ đúng giá trị. Kí hiệu khoa học chuẩn có phần trị tuyệt đối hệ số từ 1 đến dưới 10.
 
 </details>
 
