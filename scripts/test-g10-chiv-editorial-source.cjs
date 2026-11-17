@@ -349,7 +349,7 @@ for(const [lesson,row] of rows){
    !discover.includes("THPT_G10_B07_PARALLELOGRAM_EQUAL_OPPOSITE_D5_R01.svg"),
     "B07 keep source-matched exact-answer visual after first attempts");
  }else if(lesson==="B09"){
-  assert.equal((examples.match(/^    ### Ví dụ [1-4]\\./gm)||[]).length,4,
+  assert.equal((examples.match(/^    ### Ví dụ [1-4]\./gm)||[]).length,4,
    "B09 S1 extra decomposition example must be a fourth distinct, solved example");
   for(const label of ["**Hướng giải:**","**Giải:**","**Tự kiểm:**"])
    assert.equal(examples.split(label).length-1,4,
