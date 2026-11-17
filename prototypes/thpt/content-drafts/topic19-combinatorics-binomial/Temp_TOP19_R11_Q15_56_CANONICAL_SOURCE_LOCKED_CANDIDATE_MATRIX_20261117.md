@@ -6,7 +6,7 @@ Q15_Q18_REVIEW_MODE: AUTHOR_SELF_VERIFIED_TARGETED
 STATE: AUTHORING_CANDIDATE_ONLY
 LEARNING_PATH: TOPIC
 SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R11_P2_CANONICAL_LABEL_LEARNER_CLARITY_CANDIDATE_20261117.md
-SOURCE_BLOB: 32721032973866087dcc4b8981e33d4bf3391c8d
+SOURCE_BLOB: 5546204168eb3c3402b21af9ca1b9d08b118c378
 PREVIOUS_R10_LEARNER_SOURCE_BLOB: 37612a3fb8d804efa6dd4f65ddd22d90bf2772ae
 PREVIOUS_R10_SOURCE_MATRIX_BLOB: 448c913a0263cdc537a8e33a39bcdd8052ec3372
 IMMUTABLE_R09_OWNER_METADATA_BLOB: d21d1d3ede107b3b479d1f61a1ddc0e4df0414ec
@@ -98,3 +98,6 @@ One item has one canonical identity; multiple SGK and Topic displays are placeme
 ## Editorial correction applied within this SAME learner source (17/11/2026)
 
 The TOP19-O02 T02 voluntary answer sentence has been rewritten in correct natural Vietnamese to explain **each of four clothing choices has three badge options**, hence 4×3=12. This is source-equivalent clarity, no change to question, correct answer 12, method condition, D6, rubric or any of the canonical item bodies. One source file, not a correction copy; 56 source IDs and seven question-only public replays, all line locations (one line replacement) and TOP19-R10 content_version for T02 remain unchanged. Recheck named original SGK owner. Pending exact HEAD/V2/ready/REGISTER; no private RD1/website.
+
+
+**Knowledge typography delta:** same TOP19 learner file directly corrected four explanatory lines to typeset factorial, arrangements, combinations, and polynomial/reciprocal notation; literal `nPr`/`nCr`/`SHIFT` hardware labels stay code text. All canonical item stems, keys, rubric and original Q15 source ownership/version unchanged. No new learner source file.
