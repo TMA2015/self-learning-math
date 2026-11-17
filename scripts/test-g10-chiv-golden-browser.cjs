@@ -15,7 +15,7 @@ const goldenCss="44442773ac31eb1a46f0cab699a7d2c7974a5f37";
 const sources={
  7:"e1487ce01e81738228ae69d4d87cbdc56b5e0c69",
  8:"22e53396caf7753e813c492615a491e1f24cc9fd",
- 9:"70217896971335905ac7907b222b161073c4df4e",
+ 9:"a28fa50f223f260c8fded1f42b13065d3e047d63",
  10:"ceaa76688e73274c9cf2d3116c41c6d4d0ac2726",
  11:"2a1381689f66d1f8c752bdbf1c29a9ef49a4e073"
 };
@@ -364,6 +364,18 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
        assert(await radios.nth(0).isChecked(),where+" arrow left returns to tab 1");
       }
       if(lesson===9){
+       const scalarDiscovery=blocks.nth(0).locator(
+        'img[src*="THPT_G10_B09_SCALAR_MULTIPLE_VECTORS_D5_R01.svg"]');
+       assert.equal(await scalarDiscovery.count(),1,
+        where+" historic audit CHIV-09-A: real scalar figure MUST be shown in Discovery");
+       assert.equal(await blocks.nth(1).locator(
+        'img[src*="THPT_G10_B09_SCALAR_MULTIPLE_VECTORS_D5_R01.svg"]').count(),0,
+        where+" no second figure clone in SGK formal tab");
+       await labels.nth(0).click();
+       await scalarDiscovery.scrollIntoViewIfNeeded();
+       await scalarDiscovery.evaluate(async el=>{if(el.decode)await el.decode();});
+       assert(await scalarDiscovery.evaluate(el=>el.complete&&el.naturalWidth>0),
+        where+" B09 early scalar picture accessible and decodes");
        const helpText=await blocks.nth(3).locator("details.tip").allInnerTexts();
        assert.equal(helpText.length,2,where+" exactly two original B09 D6 HELP placements");
        assert(helpText.every(t=>!/(?:B09-[CP][0-9]{2}|HELP_ID|Assessment safety|Final Submit|Không clone câu)/.test(t)),
