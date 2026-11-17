@@ -13,14 +13,14 @@ CATALOG_TOPIC_ID: CD17
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 76b8a10c12e2a60fa155901d153f17c9982193c4
+ACADEMIC_SOURCE_BLOB: ae8bffe04a7c52e062c933739bafceb5412a8270
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC17_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md (AUTHOR_SELF_VERIFIED, NOT independent NotebookLM)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC17_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: ee703c5c92e26065d53479a5019d23e27c0f81c9
+REVIEW_RECEIPT_BLOB: cf87e9b857b01829262d6fe224256766edd5822b
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: 69b1cae6ebda31d510efd1a8d7b6b7e5c3086d2c
+AUTHOR_A1_A7_BLOB: 9b6fc1db68eefc38db3b31efe7bde4616b26aa65
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC17-DISTANCE-VOLUME-FULL-R02_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: 2efd4bbf389390c2ccd1dc38b4ea42641e1dbc09
+AUTHOR_HANDOFF_BLOB: 7ed37e73f4bfdcf85b1f1ec99731789d4ad9e3d9
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_THPT_TOPIC17_FRUSTUM_VOLUME_MODEL_R00_20261113.html
 INTERACTIVE_MODEL_BLOB: 727c05896a9d9bf95385b54559faa22917f1510e
@@ -82,3 +82,6 @@ This *existing* ready manifest now explicitly refuses intake as CONTENT_READY af
 
 
 **Final source-only custody after workflow state correction:** This document uses the required READY state because its edited learner source passed affected-scope academic/PED author review with unchanged question/key/rubric integrity. No separate student source, no independent full-topic new review or website release is implied. Any previous temporary HOLD wording was superseded by the latest STATE/BLOCKERS fields. Release/AP/device CI and explicit owner authorization remain separate hard gates.
+
+
+**One source, further MathJax formatting repair:** Knowledge frustum a=6/h=4 renders via math delimiters; all learner questions, answers, eight selfcheck replays and scoring unchanged. Original 20261116 working source path remains the only selected source; no additional file for the correction. Source-only authoring QA does not imply browser/AP or production release.
