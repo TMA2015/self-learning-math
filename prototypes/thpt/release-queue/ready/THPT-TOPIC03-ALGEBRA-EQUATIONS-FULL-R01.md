@@ -1,4 +1,4 @@
-# CĐ03 — Phương trình đại số và kỹ thuật chuyển đổi dạng · AUTHORING CONTENT_READY R05 (stable packet R01)
+# CĐ03 — Phương trình đại số và kỹ thuật chuyển đổi dạng · bản thảo hiện hành QA HOLD
 
 PACKET_ID: THPT-TOPIC03-ALGEBRA-EQUATIONS-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -7,19 +7,19 @@ QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: CONTENT_READY
-SOURCE_COMMIT: e2ba5b26a045895459e6f658eeafe26311700e24
+STATE: BLOCKED_BY_AUTHORING
+SOURCE_COMMIT: 1136023653d0b4a017a2ad62c75d97cd18f4cc62
 AUTHOR_PR: 820
-CURRENT_PR: #820 Draft AUTHORING, no merge/deploy
+CURRENT_PR: #888 Draft chỉnh trực tiếp bản thảo của #820, no merge/deploy
 CATALOG_TOPIC_ID: CD03
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R05_FULL_LEARNER_VISIBLE_31_CANONICAL_20261115.md
-ACADEMIC_SOURCE_BLOB: 05e9675a7dca802aa9540a96a46d76d013055d8b
-REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC03_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md (AUTHOR_SELF_QA, no new independent NotebookLM PASS)
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC03_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
-REVIEW_RECEIPT_BLOB: 871edc307cae9e156dab528da6d98653b6686331
-AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC03-ALGEBRA-EQUATIONS-FULL-R05_HANDOFF_V2_20261115.md
-AUTHOR_HANDOFF_BLOB: 6f4eb188b7b9494c3038cd1f92479059b5a1e047
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_CONSISTENT_20261116.md
+ACADEMIC_SOURCE_BLOB: daeeb5d571d120b31265f8c603a76049a1f2c78c
+REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC03_R06_NUMBERING_DELTA_A_Q18_20261116.md (AUTHOR_SELF_VERIFIED, source corrected in place, no independent NotebookLM PASS)
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC03_R06_NUMBERING_DELTA_A_Q18_20261116.md
+REVIEW_RECEIPT_BLOB: 6f7641528ea7bd8acb6a98e1c46be03a8ef44aae
+AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC03-ALGEBRA-EQUATIONS-FULL-R06_HANDOFF_V2_NUMBERING_20261116.md
+AUTHOR_HANDOFF_BLOB: 9bb2d7370e0ba61570aaa4c914a80f74ec167a18
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_ORIGINAL08_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: b2e79a6cda5fdcc82dbd281e4273577ca637895e
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_NEW23_PUBLIC_CANONICAL_R01_20261112.md
@@ -35,7 +35,7 @@ SVG2_PATH: prototypes/thpt/visuals/THPT_TOPIC03_RADICAL_DOMAIN_NUMBERLINE_R01.sv
 SVG2_BLOB: 7ee7acd819d9f6d8eb66bcc4ac8abebfd7d4521b
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
-BLOCKERS: NONE
+BLOCKERS: EXACT_HEAD_CI_QA_AND_ACTIVE_REGISTER_RECONCILIATION_PENDING
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
@@ -44,7 +44,7 @@ MASTERY_ACTIVATION: NO
 RELEASE_AUTHORIZATION: NO
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
-CURRENT_CONTENT_REVISION: R05
+CURRENT_CONTENT_REVISION: IN_PLACE_REPAIR_OF_R06
 TOPIC_EDITORIAL_CHECKLIST: Issue #864 original 13 points, no additional standard
 TOPIC_REGRESSION_LEDGER: Issue #865, cross-check L01–L25; new CĐ03 defects to be registered L26–L30
 PREVIOUS_R04_SOURCE_BLOB: e94bbe37339f7002bd8e29bdf60e0c86fae0aa95
@@ -87,3 +87,8 @@ SELF_CHECK_PUBLIC_REPLAY: 12 question stems only; CLIENT_SELF_CHECK_NO_MASTERY
 - [ ] P2_DEVICE_UAT — Chưa có nghiệm thu thiết bị thực tế bởi chủ dự án; cần kiểm Safari và hành trình làm bài công khai không leak.
 
 **Q16 boundary:** 12 public selfchecks reuse previously exposed practice IDs. They never count as independent Topic Readiness or Mastery. Zero private RD1 imported; empty SHA above is zero uploaded private bytes, NOT owner-held bank SHA. Two interactive labs are design specifications only; no browser integration or real-device UAT. The SGK site, THCS, Firebase, learner data and Golden UI are not edited by AUTHORING.
+
+
+## One effective learner source — inline Q14/D6 correction
+
+The current learner file at ACADEMIC_SOURCE_PATH is the **only** active CĐ03 draft for release intake, corrected in place. D6 now sends pupils to real Practice exercise numbers, and the worked Example no longer duplicates the immediate First Try. 31 original canonical Practice items with original keys/rubrics, 12 public selfcheck questions, all original headings, diagrams and item placement IDs were preserved. **This manifest intentionally blocks READY** until exact current source and Q18/A1/V2/REGISTER/CI gates are verified after the change; prior R05/R06 Git snapshots are history, not live alternative release candidates. No owner release approval.
