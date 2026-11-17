@@ -285,6 +285,25 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    for(const marker of ["DELTA_A_UI","six display TeX payloads","P1_PAGES_ARTIFACT_VERIFIED"]){
     assert(visual.includes(marker),"B08 R03 visual-only Q18 evidence missing: "+marker);
    }
+   const semanticFile=path.join(root,
+    "prototypes/thpt/ux795/G10_CHIV_B08_SEMANTIC_3PLUS1_DELTA_R04_20261117.md");
+   if(fs.existsSync(semanticFile)){
+    const sem=fs.readFileSync(semanticFile,"utf8");
+    const semField=k=>sem.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    assert.equal(semField("BASELINE_R03_SOURCE_BLOB"),next,
+      "B08 R04 must extend immutable R03 visual fix");
+    assert.equal(semField("BASELINE_R05_B07_CSS_BLOB"),
+      "2aaaa262a1e3fe8195ab507bad2f08302302341e",
+      "B08 R04 scoped CSS must extend P2-accepted B07 CSS");
+    const r04=semField("R04_SOURCE_BLOB");
+    assert(/^[a-f0-9]{40}$/.test(r04||"")&&r04!==next,
+     "B08 R04 exact new academic source required");
+    for(const label of ["B08-F01","3PLUS1","OWNER_P2_PENDING","R04_CSS_BLOB",
+      "FORMAL_DEFINITION","FORMAL_RULE","KEY_FORMULA"]){
+     assert(sem.includes(label),"B08 R04 semantic receipt lacks "+label);
+    }
+    return r04;
+   }
    return next;
   }
   return candidate;
