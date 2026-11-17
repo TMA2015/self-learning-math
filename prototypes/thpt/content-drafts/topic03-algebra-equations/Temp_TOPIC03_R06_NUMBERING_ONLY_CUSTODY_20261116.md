@@ -1,12 +1,12 @@
 # CĐ03 — metadata bản thảo hiện hành, đã sửa D6 + Ví dụ trực tiếp
 
 CURRENT_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_CONSISTENT_20261116.md
-CURRENT_SOURCE_BLOB: daeeb5d571d120b31265f8c603a76049a1f2c78c
+CURRENT_SOURCE_BLOB: c843613b88d106a18086d91ff7d0ada499398033
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC03_R06_NUMBERING_DELTA_A_Q18_20261116.md
-CURRENT_Q18_RECEIPT_BLOB: 6f7641528ea7bd8acb6a98e1c46be03a8ef44aae
+CURRENT_Q18_RECEIPT_BLOB: b8a9ddc851a1026af2d42d93ea5eb6c21cad6a13
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
-DELTA_CLASS: DELTA_C_PED_TARGETED
+DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
 PREVIOUS_AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R04_AUTHORING_ONLY_CUSTODY_METADATA_20261113.md
 PREVIOUS_AUTHOR_METADATA_BLOB: 9b69bbbff0e9af27a8b7190df89243d8751f858b
 AUTHORING_STATUS: REVISED_SINGLE_SOURCE_QA_HOLD
@@ -90,6 +90,12 @@ RELEASE_AUTHORIZATION: NO
 
 **Giới hạn Academic/Q18:** Nguồn G10 B18 công khai có 6 câu và 2 Written thuộc phạm vi review NotebookLM 28/10/2026; receipt gốc khóa snapshot 5 Temp_ SHA256, **không suy các tệp public đã qua merge byte-identical với Temp_**. Tác giả kiểm lại nội dung và giới hạn từng câu trên blob mới. CĐ03 mới là DELTA_C, kiểm tự thân theo `AUTHOR_SELF_VERIFIED` chủ dự án cho phép v3.0.1; không mạo nhận NotebookLM đã review CĐ03, không sửa SGK.
 
+
+## 18/11/2026 — exact current Knowledge clarification and Q18
+
+- One effective learner file `c843613b88d106a18086d91ff7d0ada499398033`; targeted signed source Q18 `b8a9ddc851a1026af2d42d93ea5eb6c21cad6a13`. Existing corrective D6/Example from Draft #888 is preserved; original SGK/index bank and item→outcome source map remain unchanged.
+- Added three explicitly typed genuine mathematics statements at TOP03-O01/O03/O07 (equivalent equations, zero-product property, necessary+ sufficient sign condition for sqrt(A)=B), and one concise learning recap. Only Knowledge modified; 31 canonical Practice items, 12 public Selfchecks, original SVG and disclosure structure byte-exact to source `daeeb5d571d120b31265f8c603a76049a1f2c78c`.
+- Existing AUTHORING_STATUS `REVISED_SINGLE_SOURCE_QA_HOLD` retained until current-head CI and full affected-scope closure. No new independent NotebookLM or RELEASE/merge/deploy claim.
 
 ## Revision after R06 — correct one source, do not create a correction source
 
