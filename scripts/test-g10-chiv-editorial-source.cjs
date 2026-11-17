@@ -50,6 +50,38 @@ for(const [lesson,row] of rows){
   const field=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(field("R01_APPROVED_SOURCE_BLOB"),row.candidate,"B08 R02 extends immutable ChIV R01");
   expected=field("R02_CANDIDATE_SOURCE_BLOB");
+  const visual=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B08_MATHJAX_DISPLAY_DELTA_A_R03_20261117.md"),"utf8");
+  const visualField=k=>visual.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(visualField("R02_PUBLISHED_SOURCE_BLOB"),expected,
+   "B08 R03 Delta A must follow exactly previously published R02 source blob");
+  // CI shallow checkout may not contain the already-published main commit.
+  // Recover exact immutable R02 blob by removing only the nine added
+  // boundary blank lines from candidate; no network or old Git tree needed.
+  const lines=source.split("\n"),restored=[];
+  let opens=0,closes=0,removed=0;
+  for(let i=0;i<lines.length;i++){
+   const line=lines[i];
+   if(line==="    \\["){
+    assert.equal(lines[i-1],"","B08 R03 every display opener must be separated from prose");
+    assert.equal(restored.pop(),"","B08 R03 opener must have a blank boundary");
+    opens++;removed++;
+   }
+   restored.push(line);
+   if(line==="    \\]"){
+    assert.equal(lines[i+1],"","B08 R03 every display closer must separate subsequent prose");
+    if([0,2,3].includes(closes)){
+     i++;removed++;
+    }
+    closes++;
+   }
+  }
+  assert.equal(opens,6,"B08 R03 has exactly six preserved display equations");
+  assert.equal(closes,6,"B08 R03 has six matching display closers");
+  assert.equal(removed,9,"B08 R03 has exactly nine added blank lines");
+  assert.equal(blob(restored.join("\n")),expected,
+   "Removing only nine B08 display boundary blanks MUST recover the published R02 Git blob");
+  expected=visualField("R03_CANDIDATE_SOURCE_BLOB");
  }
  assert.equal(blob(source),expected,lesson+" exact final Q18 academic source receipt");
  assert.equal(candidateG10KnowledgeBlob(n),expected,lesson+" Q18 source router selects correct immutable snapshot");

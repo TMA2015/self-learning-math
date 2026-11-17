@@ -125,11 +125,13 @@
     #### 2.2.2. Quy tắc trừ: hai vectơ chung gốc
 
     **Cho ba điểm \(A,B,C\).** Hai vectơ \(\overrightarrow{AB},\overrightarrow{AC}\) cùng gốc \(A\). Hiệu của chúng là
+
     \[
     \overrightarrow{AB}-\overrightarrow{AC}
     =\overrightarrow{AB}+\overrightarrow{CA}
     =\overrightarrow{CB}.
     \]
+
     Cách kiểm: nối \(C\to A\to B\), tức bắt đầu ở \(C\) và kết thúc ở \(B\), nên kết quả phải có hướng \(C\to B\), không phải \(B\to C\).
 
     #### 2.2.3. Vận dụng tổng/hiệu cho trung điểm và trọng tâm
@@ -149,6 +151,7 @@
     **Phân tích.** Điểm cuối của \(\overrightarrow{AC}\) là \(C\), đúng bằng đầu của \(\overrightarrow{CB}\). Sau khi nối hai chặng này, ta sẽ được một vectơ kết thúc ở \(B\), có thể tiếp tục nối với \(\overrightarrow{BD}\). Không cần các điểm tạo hình bình hành.
 
     **Lời giải.** \(\overrightarrow{AC}+\overrightarrow{CB}=\overrightarrow{AB}\); do đó
+
     \[
     \overrightarrow{AC}+\overrightarrow{CB}+\overrightarrow{BD}
       =\overrightarrow{AB}+\overrightarrow{BD}=\overrightarrow{AD}.
@@ -163,10 +166,12 @@
     **Phân tích.** Vì hai lực cùng điểm đặt, dựng hình bình hành để tìm vectơ tổng. Khi hai lực **không cùng hướng** và **không vuông góc**, không cộng \(5+7\) cũng không áp dụng trực tiếp Pitago; dùng định lí côsin Bài 6 cho đường chéo.
 
     **Lời giải.** Với \(F=|\vec F_1+\vec F_2|\), định lí côsin cho
+
     \[
     F^2=5^2+7^2+2\cdot5\cdot7\cos60^\circ
        =25+49+35=109.
     \]
+
     Vậy \(F=\sqrt{109}\approx10{,}44\,\mathrm N\).
 
     **Kiểm lại.** Hợp lực lớn hơn \(7\) N nhưng nhỏ hơn \(5+7=12\) N, phù hợp góc giữa hai lực \(60^\circ\). Phép cộng vectơ không làm mất hướng lực.
@@ -178,11 +183,14 @@
     **Phân tích.** Hai vectơ xuất phát từ cùng đỉnh \(A\) nhưng chưa nối đuôi nhau. Hãy thêm điểm \(M\) vào từng vectơ để dùng quy tắc ba điểm, rồi dùng tính chất trung điểm \(MB\) và \(MC\) đối nhau.
 
     **Lời giải.**
+
     \[
     \overrightarrow{AB}=\overrightarrow{AM}+\overrightarrow{MB},\qquad
     \overrightarrow{AC}=\overrightarrow{AM}+\overrightarrow{MC}.
     \]
+
     Vì \(M\) là trung điểm \(BC\), \(\overrightarrow{MB}+\overrightarrow{MC}=\vec0\). Do đó
+
     \[
     \overrightarrow{AB}+\overrightarrow{AC}=2\overrightarrow{AM}.
     \]
@@ -196,6 +204,7 @@
     **Phân tích.** Hai chặng ngược hướng Đông/Tây triệt tiêu một phần về **độ dời**, nhưng quãng đường vẫn cộng tất cả ba chặng. Vectơ độ dời sau hai chặng ngang có độ dài \(5\) m hướng Đông, rồi ghép với \(4\) m hướng Bắc.
 
     **Lời giải.** Quãng đường là \(7+2+4=13\) m. Độ dời ròng gồm \(5\) m hướng Đông và \(4\) m hướng Bắc (vuông góc), nên
+
     \[
     |\overrightarrow{AD}|=\sqrt{5^2+4^2}=\sqrt{41}\approx6{,}40\ \mathrm m.
     \]

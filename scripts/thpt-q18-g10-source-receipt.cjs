@@ -207,6 +207,21 @@ function expectedG10KnowledgeBlob(lesson,legacy){
     "LEGACY_TRANSFER_EXPOSURE_NOT_HELD_OUT","THPT-G10-CHIV-TRY06","THPT-G10-CHIV-TRY10",
     "SOURCE_SCAN_AUTHORITY_PENDING"])
    assert(receipt.includes(keyword),"B08 R02 source academic/canonical evidence missing "+keyword);
+  const visualFile=path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B08_MATHJAX_DISPLAY_DELTA_A_R03_20261117.md");
+  if(fs.existsSync(visualFile)){
+   const visual=fs.readFileSync(visualFile,"utf8");
+   const r03=k=>visual.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(r03("R02_PUBLISHED_SOURCE_BLOB"),candidate,
+    "B08 R03 display Delta A must extend exact published R02 academic source");
+   const next=r03("R03_CANDIDATE_SOURCE_BLOB");
+   assert(/^[a-f0-9]{40}$/.test(next||"")&&next!==candidate,
+    "B08 R03 MathJax display must carry a distinct exact source blob");
+   for(const marker of ["DELTA_A_UI","six display TeX payloads","P1_PAGES_ARTIFACT_VERIFIED"]){
+    assert(visual.includes(marker),"B08 R03 visual-only Q18 evidence missing: "+marker);
+   }
+   return next;
+  }
   return candidate;
  }
 

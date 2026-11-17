@@ -67,13 +67,20 @@ for(const c of cases){
  const middle=src.slice(start,end),expressions=math(middle);
  const r02=(c.n===8)?fs.readFileSync(path.join(__dirname,
   "../prototypes/thpt/ux795/G10_CHIV_B08_S1_OWNER_Q18_ENRICHMENT_DELTA_R02_20261116.md"),"utf8"):null;
+ const r03=(c.n===8)?fs.readFileSync(path.join(__dirname,
+  "../prototypes/thpt/ux795/G10_CHIV_B08_MATHJAX_DISPLAY_DELTA_A_R03_20261117.md"),"utf8"):null;
  const receiptField=k=>r02?.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
- const current=editorial[c.n]&&(blob(src)===editorial[c.n].sha||
-  (c.n===8&&receiptField("R01_APPROVED_SOURCE_BLOB")===editorial[c.n].sha&&
-   receiptField("R02_CANDIDATE_SOURCE_BLOB")===blob(src)));
+ const visualField=k=>r03?.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+ const signedR02=c.n===8&&receiptField("R01_APPROVED_SOURCE_BLOB")===editorial[8].sha&&
+  receiptField("R02_CANDIDATE_SOURCE_BLOB")===blob(src);
+ const signedR03=c.n===8&&receiptField("R01_APPROVED_SOURCE_BLOB")===editorial[8].sha&&
+  receiptField("R02_CANDIDATE_SOURCE_BLOB")===visualField("R02_PUBLISHED_SOURCE_BLOB")&&
+  visualField("R03_CANDIDATE_SOURCE_BLOB")===blob(src);
+ const current=editorial[c.n]&&(blob(src)===editorial[c.n].sha||signedR02||signedR03);
  if(c.n===8&&current&&blob(src)!==editorial[c.n].sha)
-  assert.equal(receiptField("R02_CANDIDATE_SOURCE_BLOB"),expectedG10KnowledgeBlob(c.n,c.sha),
-   "B08 R02 signed Q18 source receipt must agree with exact-head academic source router");
+  assert.equal(signedR03?visualField("R03_CANDIDATE_SOURCE_BLOB"):receiptField("R02_CANDIDATE_SOURCE_BLOB"),
+   expectedG10KnowledgeBlob(c.n,c.sha),
+   "B08 R01→R02→R03 signed source receipt must match exact-head Q18 router");
  if(current){
   const headings=[...middle.matchAll(/^    ### ([^\n]+)$/gm)].map(m=>m[1]);
   assert.deepEqual(headings,editorial[c.n].sections,"B"+c.n+": official S1 book sections changed");
