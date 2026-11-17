@@ -124,3 +124,57 @@ Outcome counts are from canonical Topic PR/receipt. CĐ20 outcomes use `PRIMARY_
 5. **Bảo toàn nghiệm thu:** các source/receipt/V2/ready/REGISTER signed Rxx giữ nguyên; bản candidate mới cần kiểm delta theo outcome/item, Q15/Q16/canonical và Q18 nguồn mới trước khi chuyển CONTENT_READY. Không giả có direct S1 page re-scan, full item math re-solving, real browser/AP QA hoặc independent NotebookLM review.
 
 **Verdict R02:** SOURCE_SCAN=22/22, TARGETED ACADEMIC/PED AUDIT PER TOPIC, **NEW P1/P2 FINDINGS OPEN**. KHÔNG kết luận 22/22 PED PASS hay 22/22 LANGUAGE PASS. AUTHORING ONLY; NO MERGE/DEPLOY.
+
+
+---
+
+<!-- FULL_AUDIT_R03_EVIDENCE_LOCK_20261117 -->
+## R03 · Chốt vòng kiểm toán toàn diện 22/22 nguồn: có verdict và lỗi còn mở
+
+**Kết luận phân biệt rõ:** AUDIT_SOURCE_RECHECK_COMPLETED_WITH_OPEN_DEFECTS — đã kết thúc việc kiểm chứng nguồn/chuỗi học/ID và lập defect ledger đối với 22 bản học liệu hiện có, **không phải** CONTENT_READY mới, FULL_ACADEMIC_PASS hay PED_PASS. R03 cập nhật kết luận R01/R02 trong cùng tài liệu, không sửa chữ ký hoặc trạng thái lịch sử của 22 Q18 receipt.
+
+### Bằng chứng kiểm toán đã thực hiện, không suy rộng
+
+1. **Q18:** đọc lại trực tiếp đúng 22/22 learner Git blobs và 22/22 Q18 receipt Git blobs; tất cả receipt chứa source SHA tương ứng và chuẩn v3.1.0. Đây là AUTHOR_SELF_VERIFIED lịch sử, **không** phải 22 verdict mới từ NotebookLM; CĐ22 receipt ghi P2=1 về PDF page-index S1.
+2. **Q02/Q03/Q04/Q08/PED:** kiểm trong nguồn tất cả các outcome marker phần Kiến thức CĐ01–CĐ19: **406** đơn vị có Ví dụ, Đề bài (CĐ12–13 dùng nhãn kép), Lời giải, Vận dụng hoặc Tự thử và khối Đối chiếu. Đánh dấu riêng lỗi chất lượng như dẫn giải thành checklist, mô hình thiếu đơn vị, đường khắc phục sai. CĐ20 có 17 outcome trải trên 9 mảng, CĐ21 8 outcome/8 mảng, CĐ22 39 outcome/13 mảng; **không** tự áp quan hệ một mảng = một outcome.
+3. **Q05/Q15:** kiểm marker Practice trong 22 learner sources có tổng **1.478 bản ghi ID**; không tìm thấy trùng ID **trong từng phần Practice**. Kiểm **338 public-self-check placements** với đúng Practice item_id: không phát hiện thay đổi nội dung đề, CĐ15 có lỗi nhãn kép nhưng giữ nguyên dữ kiện toán. **Chưa** so từng key/solution/rubric với mọi original bank hoặc kiểm trùng trên toàn repository, nên chưa cấp Q15 full PASS.
+4. **Q16/Q17:** cả 22 nguồn có ba phần Kiến thức/Luyện tập/Tự kiểm tra; cả 22 public self-check không đặt key/hint/rubric hay lời giải mở sẵn trong chính phần question-only. Đây là tự ôn PUBLIC REPLAY, chỉ CLIENT_SELF_CHECK_NO_MASTERY, **không** là đánh giá độc lập, Final Submit hay TOPIC_READINESS.
+5. **Q07/Q12:** tất cả ảnh Markdown trong 22 source đều có alt khác rỗng; cặp delimiter MathJax inline/display cân bằng về số lượng. Đã mở SVG và đọc label/số liệu mẫu CĐ15/20/21/22 (11 asset), kiểm hình CĐ21 gắn với Ví dụ đã giải khác đề Vận dụng; liên kết mô hình HTML tương tác CĐ20 tồn tại (blob 117237ff935fdef0f5ce7ad8ec99a664f5f980b6). Không suy QA mọi SVG, render, chức năng website hoặc MathJax browser đã PASS.
+6. **Q01/Q04 toán:** đối chiếu phép tính, điều kiện và lời giải mẫu ở cả 22 lĩnh vực (log/miền; lượng giác; q=0; giới hạn; dấu vận tốc/gia tốc; tối ưu; tích phân hình học; SSA; vectơ; hình không gian; xác suất; nội suy nhóm) và kiểm thêm một số canonical SGK original blobs. Chưa tái giải mọi câu trong 1.478 bản ghi, chưa tự mở lại toàn bộ SGK/SBT PDF S1 và không giả đã có independent full mathematical review. **P0_NOT_PROVEN_ZERO_GLOBAL**, không phát hiện P0 trong mẫu đã kiểm.
+
+### Bảng kết luận theo toàn bộ 22 Chuyên đề
+
+| Topic | Outcome | Practice / Public replay | Phát hiện kiểm toán trên source blob R01 | Verdict cho phạm vi lỗi mới |
+|---|---:|---:|---|---|
+| CĐ01 | 11 | 24 / 11 | LANG-01: L181 “Ở phần trước”, tham chiếu vượt mục | P2_REVISE |
+| CĐ02 | 16 | 38 / 16 | L201 “Written W01” không phải nhãn bài học sinh | P2_REVISE |
+| CĐ03 | 12 | 31 / 12 | ACA-01: L65–369, 11 D6 dùng mã ADD/P/W/C thay tên bài thật | **P1_Q08_PED6_HOLD** |
+| CĐ04 | 18 | 75 / 18 | ACA-02: L101–543, 9 D6 dùng mã M/P/B; L206 ký hiệu cơ số lệch | **P1_Q08_PED6_HOLD**, P2 Q03 |
+| CĐ05 | 17 | 38 / 17 | ACA-02: L67–519, 16 D6 dùng raw Pxx | **P1_Q08_PED6_HOLD** |
+| CĐ06 | 16 | 66 / 16 | ACA-02: L69–493, 15 D6 dùng mã THPT-G11/TOP | **P1_Q08_PED6_HOLD** |
+| CĐ07 | 18 | 69 / 18 | LANG-02: mục 1.2 “Từ miền chỉ số…” tham chiếu mục khác | P2_REVISE |
+| CĐ08 | 18 | 58 / 18 | LANG-03: L350–362 nói “hình này” trước hình; L331 lộ M06 | P2_REVISE |
+| CĐ09 | 32 | 108 / 32 | LANG-04: L225 “độ dốc ấy” trỏ xa; L1699 lộ P15 | P2_REVISE |
+| CĐ10 | 36 | 120 / 36 | ACA-03: L1026 và L2512–16 metadata Q15/Q16/Anchor/ID hiện trong disclosure Lời giải | **P1_Q03_Q15_HOLD** |
+| CĐ11 | 22 | 116 / 22 | ACA-03: L2334–38 metadata identity/RD1/Mastery ở trong disclosure Lời giải | **P1_Q03_Q15_HOLD** |
+| CĐ12 | 12 | 34 / 12 | L1 title phơi “R03 learner-first” | P2_REVISE |
+| CĐ13 | 16 | 52 / 16 | ACA-04: 16 nhãn “Tự thử” thay Vận dụng, checklist lý thuyết, L394 lộ Draft #750/blob; dependency #750 | **P1_Q03_Q14_HOLD**, R1 dependency |
+| CĐ14 | 23 | 87 / 23 | Chưa phát hiện P1 mới từ phần nguồn/toán đã soi | NO_NEW_DEFECT_OBSERVED, not blanket PASS |
+| CĐ15 | 22 | 67 / 8 | **NEW P2:** selfcheck L1544–65 có “Câu 2. Bài 6.”; Câu 1 lược tiêu đề “Đường và mặt.”, vẫn tự đủ dữ kiện | P2_LEARNER_LABEL |
+| CĐ16 | 21 | 65 / 8 | Chưa phát hiện P1 mới từ phần nguồn/toán đã soi | NO_NEW_DEFECT_OBSERVED |
+| CĐ17 | 12 | 37 / 8 | Chưa phát hiện P1 mới từ phần nguồn/toán đã soi | NO_NEW_DEFECT_OBSERVED |
+| CĐ18 | 40 | 207 / 12 | ACA-07: L702 drone thiếu t là thời gian và đơn vị; Practice lặp thông tin kỹ thuật Mastery | **P1_Q03_Q04_Q10_HOLD**, P2 |
+| CĐ19 | 14 | 42 / 7 | R09 O02/T02 chưa giải thích rõ điều kiện m×n cố định và D6 “mô hình A/B”; Draft R10 #883 sửa nhưng chưa source-lock Q15/Q18; lộ metadata P2 | **P1_R10_DELTA_C_HOLD** |
+| CĐ20 | 17 | 20 / 11 | ACA-05: L782/808/836 D6 trỏ Luyện tập 2.8/2.13/2.14/2.16 không có heading đó; mapping đúng đã ghi #865 | **P1_Q08_PED6_HOLD** |
+| CĐ21 | 8 | 11 / 8 | ACA-06: D6 trỏ Kiến thức 4–8 và Luyện tập 2.3–2.8 không đúng số heading thực; mapping 8 outcome đã ghi #865 | **P1_Q08_PED6_HOLD** |
+| CĐ22 | 39 | 114 / 9 | ACA-08: 7 hướng dẫn chứa metadata Mastery ở Practice, một hình hộp đặt sau Vận dụng L190–194; receipt Q01 S1 PDF-index P2 | P2_Q03_Q12 + Q01 EVIDENCE_LIMIT |
+
+**Chú ý cách đếm:** 1.478 là số marker Practice được rà trên mỗi file, chưa chứng minh 1.478 unique toàn repo; 338 là placement câu tự ôn công khai. 440 là số outcome theo register, **không** khẳng định 440 kết quả học tập đã được giải độc lập hết. Không có phép tính số lượng nào thay QA sâu và bằng chứng S1 theo từng outcome.
+
+### Verdict cuối của vòng audit — không đóng nhầm acceptance
+
+- **11 Topic có P1 mới chưa xử lý:** CĐ03–06, CĐ10–11, CĐ13, CĐ18–21 (bao gồm CĐ19 R09/R10). Không tự huỷ bỏ các Q18 receipt hay CONTENT_READY lịch sử: ghi đây là **AUTHORING_DEFECT phát hiện mới**, chỉ đóng trên candidate SHA sau sửa, đối chiếu affected outcome/item và phân loại DELTA theo chuẩn.
+- **Các P2:** CĐ01,02,07–09,12,15,22, và một phần CĐ04/18/19. **Chưa thấy P1 mới ở CĐ14,16,17** trong phạm vi đã đọc nhưng không suy Academic/PED PASS cho toàn item bank.
+- **Hướng sửa:** D6 điều hướng đến tên mục/bài đang hiển thị thật (CĐ03–06,20–21); bỏ metadata trong nội dung learner (CĐ10–11/13/18/19/22); CĐ18 nêu t, đơn vị, mô hình; CĐ19 kiểm lại quy tắc nhân và canonical T02; sửa tham chiếu cục bộ và nhãn/placement hình. Phân loại DELTA_A/B/C đúng phần, giữ một item_id canonical, không đưa nội dung RD1 kín lên GitHub.
+- **Chứng cứ còn thiếu ngoài phạm vi**: giải lại toàn bộ câu/đáp án/rubric, đối chiếu trực tiếp trang in–PDF SGK/SBT S1 ở nơi còn bất định, 100% SVG visual accuracy, browser UI/MathJax và bảo vệ Final Submit. Các mục chưa chứng minh **UNVERIFIED_IN_THIS_ROUND**, không được gọi PASS.
+- **Kết thúc:** đây là **báo cáo audit nguồn toàn phạm vi 22/22 với defect verdict và checkpoint đã khóa**. Chưa được nghiệm thu bản source sửa nào thành CONTENT_READY mới cho tới khi P1=0 trên affected scope, Q18 receipt/SHA + V2/ready/REGISTER thống nhất. Không merge/deploy/release.
