@@ -339,9 +339,26 @@ function expectedG10KnowledgeBlob(lesson,legacy){
     const field=k=>locked.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
     assert.equal(field("BASELINE_R03_SOURCE_BLOB"),next,
      "B09 R05 must follow exact frozen R03 academic source");
-    const final=field("R05_SOURCE_BLOB"),master=field("ONE_CANONICAL_LESSON_BLOB");
-    assert(/^[0-9a-f]{40}$/.test(final||"")&&final!==next,
-     "B09 revised discovery figure needs a distinct SHA");
+    const r05Source=field("R05_SOURCE_BLOB"),r05Master=field("ONE_CANONICAL_LESSON_BLOB");
+    assert(/^[0-9a-f]{40}$/.test(r05Source||"")&&r05Source!==next,
+     "B09 R05 original discovery figure source SHA locked");
+    let final=r05Source,master=r05Master;
+    const r06Path=path.join(root,
+     "prototypes/thpt/ux795/G10_CHIV_B09_TAB4_REAL_ERROR_P2_DELTA_C_R06_20261117.md");
+    if(fs.existsSync(r06Path)){
+     const r06=fs.readFileSync(r06Path,"utf8");
+     const q=k=>r06.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+     assert.equal(q("PRIOR_R05_SOURCE_BLOB"),r05Source,
+      "B09 owner P2 correction must follow exact frozen R05 Knowledge");
+     assert.equal(q("PRIOR_R05_CANONICAL_BLOB"),r05Master,
+      "B09 owner P2 correction must follow exact frozen R05 manuscript");
+     assert(r06.includes("Q18_AUTHOR_SELF_VERIFIED")&&r06.includes("B09-F04")&&
+      r06.includes("DELTA_C_ACADEMIC_MATERIAL")&&r06.includes("OWNER_P2_STATUS"),
+      "B09 R06 scoped Q18 pedagogic correction receipt required");
+     final=q("R06_SOURCE_BLOB");master=q("R06_ONE_CANONICAL_LESSON_BLOB");
+     assert(/^[a-f0-9]{40}$/.test(final||"")&&/^[a-f0-9]{40}$/.test(master||"")&&
+      final!==r05Source&&master!==r05Master,"B09 real-error delta must bind new distinct source/master SHA");
+    }
     const current=fs.readFileSync(path.join(root,
      "prototypes/thpt/content-drafts/THPT_G10_CHIV_B09_CANONICAL.md"));
     const blob=bytes=>require("node:crypto").createHash("sha1").update(Buffer.from("blob "+bytes.length+String.fromCharCode(0))).update(bytes).digest("hex");
