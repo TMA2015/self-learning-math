@@ -664,7 +664,15 @@
     modalBody.textContent="Đang mở nội dung…";lifecycle.open(button);
     const activeBank=isG11?(Number(lesson)<=2?window.THPT_G11_CHI_REVIEWED_FORMATIVE:Number(lesson)<=4?window.THPT_G11_CHI_B03_B04_REVIEWED_FORMATIVE:Number(lesson)<=7?window.THPT_G11_CHII_REVIEWED_FORMATIVE:Number(lesson)<=9?window.THPT_G11_CHIII_REVIEWED_FORMATIVE:Number(lesson)<=14?window.THPT_G11_CHIV_REVIEWED_FORMATIVE:Number(lesson)<=17?window.THPT_G11_CHV_REVIEWED_FORMATIVE:Number(lesson)<=21?window.THPT_G11_CHVI_REVIEWED_FORMATIVE:Number(lesson)<=27?window.THPT_G11_CHVII_REVIEWED_FORMATIVE:Number(lesson)<=30?window.THPT_G11_CHVIII_REVIEWED_FORMATIVE:window.THPT_G11_CHIX_REVIEWED_FORMATIVE):Number(lesson)<=2?window.THPT_CHI_REVIEWED_FORMATIVE:Number(lesson)<=4?window.THPT_CHII_REVIEWED_FORMATIVE:Number(lesson)<=6?window.THPT_CHIII_REVIEWED_FORMATIVE:Number(lesson)<=8?window.THPT_CHIV_B07_B08_REVIEWED_FORMATIVE:Number(lesson)<=11?window.THPT_CHIV_B09_B11_REVIEWED_FORMATIVE:Number(lesson)===12?window.THPT_CHV_B12_REVIEWED_FORMATIVE:Number(lesson)<=14?window.THPT_CHV_B13_B14_REVIEWED_FORMATIVE:Number(lesson)>=26?window.THPT_CHIX_REVIEWED_FORMATIVE:Number(lesson)>=23?window.THPT_CHVIII_REVIEWED_FORMATIVE:Number(lesson)>=19?window.THPT_CHVII_REVIEWED_FORMATIVE:reviewed;
     if(activeBank?.validate().valid){
-     const items=activeBank.forLesson(lesson,parts[2]);
+     const originalItems=activeBank.forLesson(lesson,parts[2]);
+     // G10 B09 R04 adds one original, self-verified PUBLIC practice item only.
+     // The immutable B09–B11 R01 reviewed bank and all other routes stay unchanged.
+     const b09Extension=!isG11&&Number(lesson)===9&&parts[2]==="practice"?
+      window.THPT_G10_B09_DECOMP_R04_EXTENSION:null;
+     const extensionItems=b09Extension?.validate().valid?
+      b09Extension.forLesson(lesson,parts[2]):[];
+     const items=extensionItems.length&&!originalItems.some(x=>x.item_id===extensionItems[0].item_id)?
+      [...originalItems,...extensionItems]:originalItems;
      if(items.length){
       showReviewed(items,pendingD6Item||new URLSearchParams(location.search).get("item"));
       pendingD6Item=null;
@@ -709,7 +717,10 @@
    const isG11=Boolean(parsedG11||integratedG11);
    const lesson=isG11?(integratedG11?(requestedItem.startsWith("THPT-G11-CHIX-CHIX-")?"33":requestedItem==="THPT-G11-CHVIII-CHVIII-P01"?"30":"27"):(parsedG11[1]||parsedG11[2]||parsedG11[3]||parsedG11[4]||parsedG11[5]||parsedG11[6]||parsedG11[7])):parsed[1], bank=isG11?(Number(lesson)<=2?window.THPT_G11_CHI_REVIEWED_FORMATIVE:Number(lesson)<=4?window.THPT_G11_CHI_B03_B04_REVIEWED_FORMATIVE:Number(lesson)<=7?window.THPT_G11_CHII_REVIEWED_FORMATIVE:Number(lesson)<=9?window.THPT_G11_CHIII_REVIEWED_FORMATIVE:Number(lesson)<=14?window.THPT_G11_CHIV_REVIEWED_FORMATIVE:Number(lesson)<=17?window.THPT_G11_CHV_REVIEWED_FORMATIVE:Number(lesson)<=21?window.THPT_G11_CHVI_REVIEWED_FORMATIVE:Number(lesson)<=27?window.THPT_G11_CHVII_REVIEWED_FORMATIVE:Number(lesson)<=30?window.THPT_G11_CHVIII_REVIEWED_FORMATIVE:window.THPT_G11_CHIX_REVIEWED_FORMATIVE):Number(lesson)<=2?window.THPT_CHI_REVIEWED_FORMATIVE:Number(lesson)<=4?window.THPT_CHII_REVIEWED_FORMATIVE:Number(lesson)<=6?window.THPT_CHIII_REVIEWED_FORMATIVE:Number(lesson)<=8?window.THPT_CHIV_B07_B08_REVIEWED_FORMATIVE:Number(lesson)<=11?window.THPT_CHIV_B09_B11_REVIEWED_FORMATIVE:Number(lesson)===12?window.THPT_CHV_B12_REVIEWED_FORMATIVE:Number(lesson)<=14?window.THPT_CHV_B13_B14_REVIEWED_FORMATIVE:Number(lesson)>=26?window.THPT_CHIX_REVIEWED_FORMATIVE:Number(lesson)>=23?window.THPT_CHVIII_REVIEWED_FORMATIVE:window.THPT_CHVII_REVIEWED_FORMATIVE;
    if(bank?.validate().valid){
-    const placement=["core","practice"].find(role=>bank.forLesson(lesson,role).some(item=>item.item_id===requestedItem));
+    const isB09Extension=!isG11&&requestedItem==="THPT-G10-B09-P07"&&
+      window.THPT_G10_B09_DECOMP_R04_EXTENSION?.validate().valid;
+    const placement=isB09Extension?"practice":
+     ["core","practice"].find(role=>bank.forLesson(lesson,role).some(item=>item.item_id===requestedItem));
     const trigger=placement?root.querySelector('[data-thpt-open-quiz="'+(isG11?"g11-b":"b")+Number(lesson)+'-'+placement+'"]'):null;
     trigger?.click();
    }
