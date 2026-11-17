@@ -177,7 +177,7 @@ function selfTest(){
    assert(validate(full.replace(/\*\*VERSION:\*\* `\d+\.\d+\.\d+`/,"**VERSION:** `9.9.9`"),"","").failures.includes("VERSION_NOT_LOCKED"));
  }
  if(/\*\*VERSION:\*\* \x603\.2\.0\x60/.test(full)){
-    assert(validate(full.replace("FORMAL_RULE","FORMAL_RULE_DELETED"),"","")
+    assert(validate(full.replaceAll("FORMAL_RULE","ROLE_REMOVED"),"","")
       .failures.some(e=>e.startsWith("V3_2_SEMANTIC_CONTROL_MISSING")),
       "V3.2 must fail if semantic role deleted");
     assert(validate(full.replace("**STATUS:** `OWNER_APPROVED_EFFECTIVE_AFTER_MERGE`",
