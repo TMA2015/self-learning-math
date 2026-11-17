@@ -112,6 +112,25 @@ for(let n=1;n<=27;n++){
   assert(first>=0&&second>first&&markdown.slice(first,second).includes("THPT_G10_B08_TRIANGLE_PARALLELOGRAM_SUM_D5_R01.svg"),
    "B08 authentic D5 figure must guide concept-first discovery");
  }
+ if(n===9){
+  const r03Path=path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B09_S1_SEMANTIC_DECOMPOSITION_R03_20261117.md");
+  if(fs.existsSync(r03Path)){
+   const receipt=fs.readFileSync(r03Path,"utf8");
+   const field=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(field("SOURCE_BASELINE_BLOB"),
+    "2529b915e4089862e1a48e685ba5dc88d5450558",
+    "B09 R03 follows exact immutable R01 editorial source");
+   assert.equal(blob(fs.readFileSync(path.join(root,"docs",route+".md"))),
+    field("R03_SOURCE_BLOB"),"B09 source must match signed new S1/3+1 snapshot");
+   assert(markdown.includes("Phân tích duy nhất theo hai vectơ không cùng phương")&&
+    markdown.includes("THPT_G10_B09_DECOMPOSITION_TWO_DIRECTIONS_D5_R03.svg"),
+    "B09 S1 decomposition explanation and its accessible D5 asset missing");
+   assert(receipt.includes("BLOCKED_BY_AUTHORING")&&
+    receipt.includes("NO_CANONICAL_DECOMPOSITION_ITEM"),
+    "B09 can be technically previewed, but authoring gap is still HOLD");
+  }
+ }
  legacyCount+=ids.length-added.length;newB05Count+=added.length;
  const short=(html.match(concise)||[]).length;
  const verbose=(html.match(longTitle)||[]).length;
