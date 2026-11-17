@@ -364,6 +364,13 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
        assert(await radios.nth(0).isChecked(),where+" arrow left returns to tab 1");
       }
       if(lesson===9){
+       const helpText=await blocks.nth(3).locator("details.tip").allInnerTexts();
+       assert.equal(helpText.length,2,where+" exactly two original B09 D6 HELP placements");
+       assert(helpText.every(t=>!/(?:B09-[CP][0-9]{2}|HELP_ID|Assessment safety|Final Submit|Không clone câu)/.test(t)),
+        where+" learner-facing remediation must never expose internal QA/item identifiers");
+       assert(helpText[0].includes("Vì sao sai?")&&helpText[1].includes("Vì sao sai?")&&
+        helpText.every(t=>t.includes("Ôn lại:")),
+        where+" B09 both D6 sections need concrete mathematical diagnosis and recovery");
        const knowledge=blocks.nth(1);
        const defs=knowledge.locator(".thpt-r4-knowledge-conclusion.thpt-r4-concept-card");
        const rules=knowledge.locator(".thpt-r4-knowledge-conclusion.thpt-r4-rule-card");
