@@ -8,18 +8,18 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: a08b542297ed62bca6186300458730100a8e1631
+SOURCE_COMMIT: 19cf3322169724fe2dfa840827b27c168c5fb3f8
 AUTHOR_PR: 831
 CURRENT_PR: https://github.com/TMA2015/self-learning-math/pull/831 — DRAFT AUTHORING, not merged or deployed
 CATALOG_TOPIC_ID: CD09
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md
-ACADEMIC_SOURCE_BLOB: 8222107d717f7d02b845f79ccdd154e8dbe71cc6
+ACADEMIC_SOURCE_BLOB: ecd0dec736d0346fd1789a15aa1ec92d6a718485
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC09_R05_AUTHOR_SELF_QA_RECEIPT_20261116.md (Q18 author SELF_VERIFIED, no independent new NotebookLM PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC09_R05_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: bce770e351460d9d01d7567332aed489bc68aa4d
+REVIEW_RECEIPT_BLOB: daeed2fd53f9967ac3ea78e744116aa4f82f4798
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC09-DERIVATIVE-MEANING-FULL-R05_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: 51b1a1d7f5633f7a1682f24ebd44d772156f49e7
+AUTHOR_HANDOFF_BLOB: bd715893b50a0045165fba3bb469d77578cc06a4
 PUBLIC_ORIGINAL71_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_ORIGINAL71_SGK_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_ORIGINAL71_INDEX_BLOB: 3c025ce2dfb8e16743873ac2b3f35bfb37c27ef8
 PUBLIC_NEW37_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_NEW37_PUBLIC_CANONICAL_R05_20261116.md
@@ -56,9 +56,15 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 - R04 learner `68fe5b8a3ded75b6f774b4685655487d9b4bdff9`, Q18 `bc2aa70ad7c46d678889f0ed750c79201b16dc58`, V2 `496c9a66c75f8cd103b58b2f747956e72eafa518` giữ lịch sử, không chuyển PASS tự động. Dự thảo yêu cầu review NotebookLM R05 trước đó chỉ là tùy chọn, không thay bản Q18 self-signed hiện hành.
 - **RELEASE:** Chưa thử browser/Golden/AP/Final Submit/MathJax/render/mobile/P1/P2 hoặc owner signoff. Draft PR #831, NO MERGE/DEPLOY AUTHORING.
 
+## 18/11/2026 · Active source, mathematical formal labels and historical diff control
+
+- One current learner source `ecd0dec736d0346fd1789a15aa1ec92d6a718485`, source-Q18 targeted `daeed2fd53f9967ac3ea78e744116aa4f82f4798`, A1 metadata `ff32fda6047be1eb95e64c9ea4067d466eda0fb6`, V2 `bd715893b50a0045165fba3bb469d77578cc06a4`. Previous originally signed R05 source `8222107d717f7d02b845f79ccdd154e8dbe71cc6` not transferred as automatic new 272/272 or 37/37 full checks.
+- Real formula/definition/lemma boxes at TOP09-O03/O05/O14/O16 and learner recall; verified derivative difference quotient, differentiability→continuity, product rule, chain rule and valid domains against adjacent examples. Previously unreceipted O09 velocity/speed explanatory detail and Practice D6 route to real Bài 52 now audited by source-bound Q18.
+- 108 full canonical Practice IDs/answers/solutions/rubrics/D6 and 32 question-only public replays preserved from immediate predecessor, four SVG references and disclosure structure unchanged. No new independent full-Topic NotebookLM PASS or official RD1/Mastery; website and owner RELEASE gates separate.
+
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — learner source Git blob 8222107d717f7d02b845f79ccdd154e8dbe71cc6, signed Q18 author receipt bce770e351460d9d01d7567332aed489bc68aa4d, original71 index 3c025ce2dfb8e16743873ac2b3f35bfb37c27ef8, NEW37 bank f249949be3b254a29c8859301b6c4904e636c505, one V2 handoff 51b1a1d7f5633f7a1682f24ebd44d772156f49e7, four SVG exact readback SHA.
+- [x] A1_SOURCE_SNAPSHOT — exact current Topic09 learner `ecd0dec736d0346fd1789a15aa1ec92d6a718485`, signed bounded Q18 author review `daeed2fd53f9967ac3ea78e744116aa4f82f4798`, A1 metadata `ff32fda6047be1eb95e64c9ea4067d466eda0fb6`, single V2 `bd715893b50a0045165fba3bb469d77578cc06a4`; original 71 SGK and 37 Topic NEW bank SHA unchanged.
 - [x] A2_SGK_SBT_SCOPE — archived original scanned publisher SGK KNTT G11 Tập2 ChIX B31 printed81–87, B32 88–94, B33 95–96, end97–98; SBT B31 54–57, B32 58–60, B33 61–62, end63–65, answers111–116; O32 differential formally labelled Topic extension, not SGK Core.
 - [x] A3_NOTEBOOKLM_VERDICT — R04 `AUTHOR_SELF_VERIFIED` theo chuẩn Q01–Q18 v3.1.0: source `8222107d717f7d02b845f79ccdd154e8dbe71cc6`, receipt `bce770e351460d9d01d7567332aed489bc68aa4d`, kiểm 32/32 outcome, 37/37 câu mới (bao gồm P23 sửa đúng tập xác định), bốn SVG và D6; P0/P1=0 theo phạm vi AUTHORING. `A3_NOTEBOOKLM_VERDICT` là tên trường checklist V2 tương thích CI lịch sử; thực chất chế độ Q18 ở gói này là tự kiểm chứng, **không** có NotebookLM reviewer PASS mới. NotebookLM độc lập chỉ từng review nguồn SGK G11 ChIX lịch sử, không cấp PASS cho R04.
 - [x] A4_ITEM_OUTCOME_IDS — 32 lesson IDs, 32 outcome IDs, 108 unique PUBLIC item IDs in single item-outcome-role V2 matrix, 32 PUBLIC Self Check placements reuse new P01–P32 rather than adding IDs.
