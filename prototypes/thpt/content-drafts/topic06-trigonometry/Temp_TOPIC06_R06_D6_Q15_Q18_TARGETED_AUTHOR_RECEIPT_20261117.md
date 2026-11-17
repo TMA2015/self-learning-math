@@ -5,8 +5,8 @@ STANDARD_VERSION: 3.1.0
 STANDARD_BLOB: 5a80b20ce99be3179d03d56a73fa57b6f4882fd8
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 DELTA_CLASS: DELTA_C_PED_TARGETED
-SOURCE_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_D6_NAVIGATION_CANDIDATE_20261117.md
-SOURCE_BLOB: 3eb442f9399b2a6fb5b715953401585a3bed0c5d
+SOURCE_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_NUMBERING_CONSISTENT_20261116.md
+SOURCE_BLOB: a5c4a10e9cad2855a54af692149df26486d28379
 BASELINE_SOURCE_BLOB: dd3af68f681eba9a7b75040d9490815f81efdd6b
 BASELINE_AUTHOR_Q18_RECEIPT_BLOB: 8f4d721ec8ab5b08baaf0a19c7aeaf2aa9cf454f
 AFFECTED_P0: 0
@@ -47,3 +47,7 @@ Before new CONTENT_READY: choose the R06 source as the sole active canonical can
 AUTHOR_SIGNOFF: CHATGPT_AUTHORING_TOP06_R06_15D6_AUTHOR_Q08_Q15_Q18_20261117
 VERDICT: TARGETED_DELTA_AUTHOR_SELF_QA_PASS; ACTIVE_V2_READY_REGISTER_HOLD; CONTENT_READY_NO.
 Review prompt (four sentences): Reopen the learner R06 source exact Git SHA and its immutable R05 predecessor before reviewing this table. Follow each D6 line to the real visible exercise stem and check the intended error/outcome, not the number alone. Verify no changed original key, rubric or mathematical condition beyond the documented Q03 correction, and report any wrong route with MINIMAL_DELTA. Do not transfer this targeted author receipt to independent NotebookLM approval, protected assessment or deployment.
+
+## CONSOLIDATED_IN_PLACE — user decision 17/11/2026
+
+The 15 pedagogical D6 changes, including the math-corrected O10 range/phase and O14 zero-factor conditions, were transferred by **line-specific review only** into existing R06_NUMBERING_CONSISTENT_20261116.md, preserving all 93 headings from the base numbered learner source. Student Practice and selfcheck are byte-identical; 82/82 public marker placements, 82/82 answer disclosures, original item IDs and all SVG references preserved. Latest one effective source blob `a5c4a10e9cad2855a54af692149df26486d28379`; the parallel D6 candidate is obsolete and is to be deleted. This receipt's PATH/BLOB now points to the real learner source. Historical signed snapshots remain Git history, not parallel release inputs. Targeted AUTHOR_SELF_QA_PASS on changed D6 only, no full Academic/PED/CI browser PASS, global CONTENT_READY remains HOLD.
