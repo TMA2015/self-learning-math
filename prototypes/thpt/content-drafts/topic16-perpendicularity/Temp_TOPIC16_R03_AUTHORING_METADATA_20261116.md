@@ -8,7 +8,7 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 STATE: AUTHORING_R03_SELF_VERIFIED
 SCOPE_NOTES: PLAN22-17 Khoảng cách & Thể tích (G11 B26–B27 + CHVII-INTEGRATED) out of CĐ16, not silently retired/finished
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_PERPENDICULARITY_R03_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 0adf45aa8d776634d66f5c8e57b1c86ad77c8ed2
+ACADEMIC_SOURCE_BLOB: ad3fdadb2b6a7150118c2534bf02cf9563f92e26
 ORIGINAL_G11_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_THPT_TOPIC16_RAMP_ANGLE_R01_SCOPE_CORRECTED_20261113.html
 INTERACTIVE_MODEL_BLOB: e14ee4c6ec6c851f228352656b0cd8e2fc3a2a06
@@ -168,8 +168,16 @@ No new private RD1 text, keys or rubric. Public eight-item replay is CLIENT_SELF
 
 ## R03_LEARNER_FACING_DELTA_Q15_CUSTODY
 
-- R03 source `0adf45aa8d776634d66f5c8e57b1c86ad77c8ed2` follows the same Q01–Q18 standard, original R01 source `0e934389ebfe239ace19cc23c5dedf9c23d8ebdc` immutable, R02 editorial candidate `60f69d43bfa3f4508e8c7a787bad517141f9b2b2` not auto-promoted. The new explanations and 21 new independent worked examples are DELTA_C_AFFECTED_SCOPE self-audited; all original 41 SGK and 24 Topic P/W answers/rubrics preserved source-exact.
+- R03 source `ad3fdadb2b6a7150118c2534bf02cf9563f92e26` follows the same Q01–Q18 standard, original R01 source `0e934389ebfe239ace19cc23c5dedf9c23d8ebdc` immutable, R02 editorial candidate `60f69d43bfa3f4508e8c7a787bad517141f9b2b2` not auto-promoted. The new explanations and 21 new independent worked examples are DELTA_C_AFFECTED_SCOPE self-audited; all original 41 SGK and 24 Topic P/W answers/rubrics preserved source-exact.
 - Four math groups 4+5+5+7 with continuous 1.1…4.7 numbering; 21 learner-first explanations before formal statements; 21 Ví dụ/Đề bài/Lời giải, 21 Vận dụng/Đối chiếu+D6; 65 complete learner Practice cards (33 SGK formative+8 SGK Written+21 Topic P+3 Topic W) with optional Lời giải, 8 public question-only replay checks. 86/86 canonical IDs unchanged and Q15 outcome placements preserved. No Topic Core, no official independent Readiness/Mastery. S1 original owner-provenance printed page receipt, no fresh PDF scan.
 - Existing four SVG and one standalone HTML model Git blob SHA unchanged; actual browser/Golden/Final Submit belongs to RELEASE. R03 executed 51 structure/source-parity checks and 57 mathematical/geometry checks PASS in signed author receipt; independent NotebookLM verdict not claimed.
 
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC16_R03_AUTHOR_SELF_QA_RECEIPT_20261116.md
+
+## 18/11/2026 — current student recap, scoped Q18 provenance
+
+- Effective learner source `ad3fdadb2b6a7150118c2534bf02cf9563f92e26` derives from original signed R03 `0adf45aa8d776634d66f5c8e57b1c86ad77c8ed2` by adding exactly one four-point knowledge recall before Practice. No other source edits. Students can distinguish skew-line angle, line-plane perpendicular proof via two intersecting lines, orthogonal projection and actual solid height.
+- All 21 original outcomes, 86 canonical IDs, full Practice 65 visible cards/solution/Written rubrics, 8 public question-only Selfchecks, 4 original SVG and disclosures byte-exact to signed original. No new teaching formula or Topic Core; recap reiterates existing precise definition and conditions in each worked section.
+- Targeted author mathematical checks: moving parallel directions to common point preserves line angle; a line perpendicular to two **intersecting** lines within plane is perpendicular to the whole plane; plane projection of a perpendicular line is a single point; dihedral angle by intersecting two perpendiculars to shared edge; actual block height perpendicular to base plane. No new independent NotebookLM or RELEASE verdict.
+
+## S1_SOURCE_PROVENANCE_AND_SCOPE
