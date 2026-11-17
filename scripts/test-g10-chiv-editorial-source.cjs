@@ -451,6 +451,12 @@ for(const [lesson,row] of rows){
     "B09 all four worked examples must include "+label);
   assert(examples.includes("Ví dụ 4. Phân tích theo hai vectơ không cùng phương"),
    "B09 missing required S1 decomposition learner example");
+ }else if(lesson==="B10"){
+  assert.equal((examples.match(/^    ### 3\.[1-4]\. Ví dụ [1-4] —/gm)||[]).length,4,
+   "B10 needs four fully reasoned examples with river in Tab3");
+  for(const k of ["**Phân tích:**","**Lời giải:**","**Kiểm lại"])
+   assert.equal(examples.split(k).length-1,4,
+    "B10 each worked example needs why/method/check "+k);
  }else{
   assert.equal(examples,previous.slice(previous.indexOf('=== "Ví dụ"'),previous.indexOf('=== "Lỗi thường gặp"')),
    lesson+" previously approved three worked examples changed");
@@ -469,7 +475,11 @@ for(const [lesson,row] of rows){
  }else{
   assert(["B07","B08","B09","B10"].includes(lesson),
    "Only original-author-Q18 signed lesson deltas may reorder mandatory mathematics");
-  if(lesson==="B07"){
+  if(lesson==="B10"){
+  for(const required of ["\\vec u=x\\vec i+y\\vec j",
+   "AB=\\sqrt{(x_B-x_A)^2+(y_B-y_A)^2}","ad-bc=0"])
+   assert(source.includes(required),"B10 essential mandatory S1 mathematics lost "+required);
+ }else if(lesson==="B07"){
    for(const formula of ["|\\overrightarrow{AB}|=AB\\ge0",
     "\\overrightarrow{AB}=\\overrightarrow{DC}","\\overrightarrow{AA}=\\vec0"])
     assert(official.includes(formula),"B07 original required SGK mathematics preserved: "+formula);
@@ -492,6 +502,6 @@ for(const [lesson,row] of rows){
  assert.notDeepEqual([...official.replace(book[lesson][0],"WRONG SGK").matchAll(/^    ### ([^\n]+)$/gm)].map(x=>x[1]),
   book[lesson],lesson+" wrong S1 section must fail");
  assert.notEqual(blob(source+" "),expected,lesson+" Git SHA mutation must fail");
- console.log("PASS "+lesson+" Q18 S1 sections, "+(["B07","B08"].includes(lesson)?"4 new":"3 original")+" examples, canonical IDs and formative answers");
+ console.log("PASS "+lesson+" Q18 S1 sections, "+(["B07","B08","B10"].includes(lesson)?"4 signed worked":"3 original")+" examples, canonical IDs and formative answers");
 }
 console.log("PASS 5/5 G10 ChIV S1/Q18 self-verified editorial source receipts; no independent reviewer claimed.");
