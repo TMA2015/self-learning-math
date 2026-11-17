@@ -9,7 +9,7 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 STATE: BLOCKED_BY_AUTHORING
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: ae8bffe04a7c52e062c933739bafceb5412a8270
+ACADEMIC_SOURCE_BLOB: 7ee09cea9c33e2ae520a1a40df694ab7118adb42
 ORIGINAL_G11_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_THPT_TOPIC17_FRUSTUM_VOLUME_MODEL_R00_20261113.html
 INTERACTIVE_MODEL_BLOB: 727c05896a9d9bf95385b54559faa22917f1510e
@@ -131,3 +131,8 @@ Tệp học liệu chính tại `ACADEMIC_SOURCE_PATH` được sửa đúng m�
 ## CĐ17 one learner file post-Q18 notation fix
 
 Knowledge frustum exploration now displays a=6, h=4 as proper inline mathematics; no geometry or solution/value changed. Source and exact question-only Selfcheck parity 57 placements, 49 details and 8 public replay confirmed. Q18 receipt remains same pre-existing path and has been updated to reflect the correction; current learner file is the only active candidate.
+
+
+## Full self-study path QA — frustum example
+
+Learner Knowledge 2.4 (TOP17-O10) no longer requires a non-embedded slider: direct explanation derives V=48(1+k+k²) for square frustum with 0≤k≤1 and explicitly works k=0,1/2,1 (48,84,144 cm³). No changed item body, rubric, score, figure, 8 question-only selfcheck or protected RD1. Same learner source file, updated Q18 proof, no duplicate source. Optional HTML model remains an author-only external aid, not a prerequisite.
