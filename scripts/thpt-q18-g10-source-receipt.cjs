@@ -309,6 +309,32 @@ function expectedG10KnowledgeBlob(lesson,legacy){
   return candidate;
  }
 
+ if(name==="B09"){
+  const row=chivEditorialReceiptRows().get("B09");
+  assert(row&&row.baseline===blobs[1],
+   "B09 R03 source chain must extend immutable ChIV original baseline");
+  const file=path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B09_S1_SEMANTIC_DECOMPOSITION_R03_20261117.md");
+  if(fs.existsSync(file)){
+   const receipt=fs.readFileSync(file,"utf8");
+   const f=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(f("SOURCE_BASELINE_BLOB"),row.candidate,
+    "B09 R03 academic content must extend published exact editorial source");
+   assert.equal(f("CSS_BASELINE_BLOB"),"0cdc618cf9a070f1b1ed50566877f5de0d025ee8",
+    "B09 R03 style must extend owner P2-accepted B08 CSS");
+   const next=f("R03_SOURCE_BLOB");
+   assert(/^[a-f0-9]{40}$/.test(next||"")&&next!==row.candidate,
+    "B09 R03 requires a distinct signed source snapshot");
+   for(const word of ["B09-F01","B09-F02","FORMAL_DEFINITION","FORMAL_RULE",
+     "MANDATORY_RECAP","KEY_FORMULA","BLOCKED_BY_AUTHORING",
+     "NO_CANONICAL_DECOMPOSITION_ITEM","THPT-G10-CHIV-TRY11"]){
+    assert(receipt.includes(word),"B09 academic receipt missing "+word);
+   }
+   return next;
+  }
+  return row.candidate;
+ }
+
  const chiv=chivEditorialReceiptRows().get(name);
  const chv=chvEditorialReceiptRows().get(name);
  assert(!(chiv&&chv),name+" duplicate editorial receipts");
