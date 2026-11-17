@@ -311,7 +311,7 @@ y=3cos(2x)+4 có giá trị lớn nhất, nhỏ nhất là bao nhiêu?
 
 7 và 1.
 
-Đánh dấu trục giữa/điểm cực trị; nếu nhầm tịnh tiến ngang, giải 3x−π/2=0. Hãy làm lại Bài 33, Bài 35, Bài 36 và Bài 41 trong phần Luyện tập.
+Nếu tìm sai giá trị lớn nhất, nhỏ nhất của \(y=3\cos(2x)+4\), hãy dùng \(-1\le\cos(2x)\le1\) để được ngay \(1\le y\le7\), rồi làm lại Bài 33 (tập giá trị) và Bài 41 (trục giữa, biên độ và chu kỳ) trong phần Luyện tập. Nếu nhầm chiều dịch pha của ví dụ \(y=1+3\cos(2x+\pi/3)\), hãy viết \(2x+\pi/3=2(x+\pi/6)\) để nhận ra dịch trái \(\pi/6\); luyện thêm Bài 34 về chu kỳ của hàm cos có pha.
 
 </details>
 
@@ -435,7 +435,7 @@ Giải 2sinx cosx=0.
 
 x=kπ/2, k∈ℤ; hoặc sinx=0 (kπ) hoặc cosx=0 (π/2+kπ).
 
-Nếu đang muốn chia cho sinx, tách trường hợp sinx=0 trước. Hãy làm lại Bài 48, Bài 49, Bài 55 và Bài 62 trong phần Luyện tập.
+Nếu định chia hai vế cho \(\sin x\), hãy xét riêng trường hợp \(\sin x=0\) trước để không mất nghiệm. Làm lại Bài 62 (phương trình phân thức cần lọc điểm mẫu bằng 0), rồi Bài 55 (điều kiện xác định của hai biểu thức tang) trong phần Luyện tập; không chia hoặc nhân với biểu thức có thể bằng 0 khi chưa xét điều kiện.
 
 </details>
 
