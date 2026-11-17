@@ -5,8 +5,8 @@ STANDARD_VERSION: 3.1.0
 STANDARD_BLOB: 5a80b20ce99be3179d03d56a73fa57b6f4882fd8
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 DELTA_CLASS: DELTA_C_MATERIAL_PEDAGOGICAL_PRESENTATION_WITH_Q07_VISUAL_CORRECTION
-SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_PED_LEARNER_CANDIDATE_20261117.md
-SOURCE_BLOB: ca2e68cc78413e8aa22679a3341b118a9f413bc1
+SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
+SOURCE_BLOB: 5f6d3a1efc50e5869f98c80dd6f5b3c3a94082aa
 PREVIOUS_DIRECT_KNOWLEDGE_SOURCE_BLOB: 47e851cb47767aba6ec1cfa81efe3232ae8fed23
 PREVIOUS_R04_SOURCE_BLOB: 7837fa88ba6376f873bd9f3bc3cbea134b3a838d
 IMMUTABLE_R03_SOURCE_BLOB: 7f3e90e5eadcbaa1dc7b49cd6d5136f6dbf61e22
@@ -90,4 +90,9 @@ Following the previous 23-line Knowledge repair, read the exact learner Practice
 
 **Author mathematics checks:** P04: (5,1)−(3,−4)=(2,5)=CB; P06 centroid M=(3/2,3), G=(0,2), AG=(3,2)=(2/3)AM; P07 AB vector (8,−6), length 10; P12 Oxyz vectors (3,−3,4)+(3,4,−6)=(6,1,−2); P14 AB vector (6,−4,4), length sqrt68; P15 length sqrt116; W01 Chasles + centroid with 2+2+2+1 seven points; W02 dot=12, 7-point rubric; W03 AB·AC′=9 and angle cos=3/13 unchanged. This is **targeted author mathematical/pedagogical review**, no independent NotebookLM whole-Topic pass or actual browser MathJax claim.
 
-**No new correction source**; current one effective learner source `ca2e68cc78413e8aa22679a3341b118a9f413bc1` and this existing Q18 receipt path updated. Historical old source stays in Git. `GLOBAL_ACTIVE_Q15_G10_SGK_PR750_V2_READY_REGISTER=HOLD` and `CONTENT_READY=NO` pending original SGK owner, complete S1/academic and browser gates. Do not merge/deploy.
+**No new correction source**; current one effective learner source `5f6d3a1efc50e5869f98c80dd6f5b3c3a94082aa` and this existing Q18 receipt path updated. Historical old source stays in Git. `GLOBAL_ACTIVE_Q15_G10_SGK_PR750_V2_READY_REGISTER=HOLD` and `CONTENT_READY=NO` pending original SGK owner, complete S1/academic and browser gates. Do not merge/deploy.
+
+
+## FINAL_SINGLE_ORIGINAL_LEARNER_SOURCE — 17/11/2026
+
+The complete revised 16-outcome learner narrative was vetted and consolidated INTO the existing original R04 authoring source path, **not** promoted to a separate R05 correction source. Exact 68/68 canonical/display placements, 68/68 opt-in disclosures, all 16 unique outcome IDs, question-only Selfcheck and four /7 Written rubric score totals preserved. Mathematical arrow-vector statements were independently checked (Chasles AB+BC=AC as a VECTOR identity; midpoint/centroid, Oxy/Oxyz and box vector sums). The only changed SVG asset among five references is a **genuine pedagogical figure correction** in TOP13-O13: original B06 is a box figure but the paragraph discusses one 3D displacement decomposed along axes; new B08 is the appropriate vector-decomposition figure and caption explicitly says the drawing is NOT an angle-between-two-vectors illustration. Source now `5f6d3a1efc50e5869f98c80dd6f5b3c3a94082aa` on branch `authoring/topic13-planar-spatial-vectors-r01-20261113`. Prior R04 signed version preserved through Git only. This receipt documents a DELTA_C pedagogical/math-material change and DOES NOT claim independent NotebookLM academic/PED PASS of this revised source. Shared G10 SGK original owner PR #750 remains open, Q01/Q15 original S1 owner/registration and actual browser AP remain HOLD. All old candidate V2/ready/REGISTER refs are stale until reconciled and must not be used to publish. No merge/deploy.
