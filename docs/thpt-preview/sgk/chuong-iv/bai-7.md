@@ -25,6 +25,12 @@
 
     Muốn xác định vectơ, hỏi 'đi từ đâu đến đâu?' trước khi so sánh độ dài. Không thay \(\overrightarrow{AB}\) bằng đoạn AB nếu bài yêu cầu hướng.
 
+    **Từ mũi tên đến đại lượng thực tế.** Một lực 20 N đẩy vật sang Đông và một vận tốc gió 12 km/h hướng Tây Bắc không thể mô tả đầy đủ bằng các con số 20 hoặc 12: ta còn cần biết **hướng tác dụng/chuyển động**. Mũi tên vectơ cho phép biểu diễn cả hai thông tin đó. Với lực, cần xác định cả **điểm đặt**; với vận tốc, cần xác định hướng chuyển động.
+
+    <figure class="thpt-r4-plot"><img src="../../../../assets/images/thpt/THPT_G10_B07_FORCE_VELOCITY_REPRESENTATION_D5_R04.svg" loading="lazy" alt="Bên trái: cùng điểm O, hai lực hướng Đông, 20 N vẽ dài gấp đôi 10 N. Bên phải: vận tốc gió 12 km/h hướng Tây Bắc được vẽ bằng mũi tên có gốc tại vị trí quan sát. Hai đại lượng dùng đơn vị và tỉ lệ riêng."><figcaption>Đọc hình từ điểm đặt/gốc mũi tên → phương và chiều → độ lớn. Hai lực dùng cùng tỉ lệ nên mũi tên 20 N dài gấp đôi 10 N; không so trực tiếp chiều dài mũi tên lực với vận tốc.</figcaption></figure>
+
+    **Cách tự vẽ.** Nếu chọn tỉ lệ 1 cm trên giấy ứng với 10 N, lực 20 N hướng Đông được vẽ bằng mũi tên 2 cm về phía Đông từ điểm đặt; lực 10 N cùng hướng dài 1 cm. Hình trên chỉ minh họa tỉ lệ tương đối, không dùng thước đo trực tiếp trên màn hình.
+
     **Em vận dụng.** An đi từ A đến B; Bình đi từ B về A, với A khác B. Hai vectơ độ dời có bằng nhau không, và độ dài của chúng thế nào?
 
     ??? question "Em tự mở đối chiếu sau khi đã thử làm"
@@ -111,7 +117,7 @@
     Khi A trùng B, mũi tên co lại thành một điểm: \(\overrightarrow{AA}=\vec0\), độ dài 0. **Theo quy ước SBT KNTT**, vectơ-không cùng phương và cùng hướng với mọi vectơ; đây là quy ước chứ không phải mũi tên vật lý có chiều xác định.
 
 
-    Dùng \(\vec0\) để cộng, trừ và biểu diễn độ dời ròng bằng 0. Không suy ra một góc xác định duy nhất khi có vectơ-không; Bài 11 sẽ giới thiệu quy ước riêng của SGK về góc và tính vuông góc.
+    Dùng \(\vec0\) để biểu diễn độ dời ròng bằng 0. Phép cộng, trừ vectơ sẽ học ở Bài 8. Không suy ra một góc xác định duy nhất khi có vectơ-không; Bài 11 sẽ giới thiệu quy ước riêng của SGK về góc và tính vuông góc.
 
     **Em vận dụng.** Bạn đi từ A đến B rồi trở về A. Vectơ độ dời từ điểm đầu đến điểm cuối là gì? Có bằng tổng độ dài hai chặng không?
 
@@ -165,7 +171,9 @@
 
     #### 2.2.3. Độ dời và quãng đường trong thực tế
 
-    Lực, vận tốc, độ dời có thể dùng vectơ vì đồng thời chứa độ lớn và hướng; quãng đường đi theo hai chặng có thể lớn hơn độ dài vectơ độ dời từ đầu đến cuối. Luôn ghi đơn vị thích hợp.
+    **Biểu diễn lực và vận tốc bằng vectơ:** (1) chọn vị trí gốc mũi tên (điểm đặt của lực hoặc vị trí đang xét); (2) vẽ mũi tên đúng phương và chiều; (3) chọn tỉ lệ và độ dài mũi tên tương ứng với độ lớn; (4) ghi rõ đơn vị, chẳng hạn N cho lực, m/s hoặc km/h cho vận tốc. Không so sánh độ dài mũi tên của các đại lượng khác đơn vị hoặc khác tỉ lệ.
+
+    **Phân biệt với quãng đường:** Vectơ độ dời nối vị trí đầu và cuối. Quãng đường đi theo nhiều chặng có thể lớn hơn độ dài vectơ độ dời.
 
 === "Ví dụ"
 
@@ -177,19 +185,19 @@
 
     **Phân tích.** Hai vectơ không cần cùng điểm đặt. Ta phải xét đồng thời độ dài và hướng, không chỉ nhìn vị trí trên bản vẽ.
 
-    **Lời giải.** Vì cả hai vectơ dài 4 m và cùng hướng Đông, \(\overrightarrow{EF}=\overrightarrow{GH}\). Vectơ \(\overrightarrow{HG}\) ngược hướng với \(\overrightarrow{GH}\), nên \(\overrightarrow{EF}=-\overrightarrow{HG}\).
+    **Lời giải.** Vì cả hai vectơ dài 4 m và cùng hướng Đông, \(\overrightarrow{EF}=\overrightarrow{GH}\). Vectơ \(\overrightarrow{HG}\) hướng Tây, nên ngược hướng với \(\overrightarrow{EF}\). Kí hiệu dấu trừ cho vectơ đối sẽ được học ở Bài 8.
 
     **Kiểm lại.** EF và GH có thể ở hai đường khác nhau; chúng vẫn cùng vectơ độ dời. Đổi thứ tự H,G làm đảo chiều mũi tên mà không đổi độ dài.
 
-    ### 3.2. Ví dụ 2 — Cùng phương nhưng không bằng nhau
+    ### 3.2. Ví dụ 2 — Biểu diễn và so sánh hai vectơ vận tốc
 
-    **Đề bài.** Vectơ \(\vec u\) dài 6 m hướng Đông và vectơ \(\vec v\) dài 2 m hướng Tây, hai giá cùng nằm theo phương Đông–Tây. Chúng cùng phương, cùng hướng hay bằng nhau?
+    **Đề bài.** Hai xe chạy trên hai đường thẳng song song theo trục Đông–Tây. Xe thứ nhất có vận tốc 6 m/s hướng Đông, xe thứ hai 2 m/s hướng Tây. Chọn tỉ lệ 1 cm ứng với 2 m/s. Em hãy mô tả cách vẽ các vectơ vận tốc \(\vec v_1,\vec v_2\), rồi xét phương, hướng và sự bằng nhau.
 
-    **Phân tích.** Phải xét **giá → chiều → độ dài** theo đúng thứ tự; không suy ra bằng nhau chỉ vì cùng một phương.
+    **Phân tích.** Vận tốc không chỉ là số đo tốc độ: phải thể hiện cả hướng chuyển động. Trên cùng một hình và cùng tỉ lệ, độ dài mũi tên tỉ lệ với tốc độ. Xét phương trước, sau đó xét chiều và độ lớn.
 
-    **Lời giải.** Hai vectơ cùng phương vì có giá song song hoặc trùng nhau, nhưng ngược hướng do Đông đối với Tây. Chúng cũng có độ dài khác nhau, nên \(\vec u\ne\vec v\).
+    **Lời giải.** Từ vị trí mỗi xe, vẽ \(\vec v_1\) dài 3 cm hướng Đông và \(\vec v_2\) dài 1 cm hướng Tây. Hai vectơ cùng phương vì giá song song, nhưng ngược hướng và có độ dài khác nhau, nên \(\vec v_1\ne\vec v_2\).
 
-    **Kiểm lại.** Nếu đảo chiều \(\vec v\), hai vectơ mới cùng hướng nhưng vẫn không bằng nhau do 6 m khác 2 m.
+    **Kiểm lại.** Mũi tên 3 cm ứng với 6 m/s, mũi tên 1 cm ứng với 2 m/s theo đúng cùng tỉ lệ. Nếu xe thứ hai đổi chiều sang Đông, hai vectơ cùng hướng nhưng vẫn không bằng nhau vì tốc độ khác nhau.
 
     ### 3.3. Ví dụ 3 — Hành trình khép kín có độ dời bằng 0
 
