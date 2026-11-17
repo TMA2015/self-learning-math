@@ -377,6 +377,13 @@ Từ \(40=26+30-|A\cap B|\), suy ra **16** bạn tham gia cả hai. Chỉ Toán:
 
 </details>
 
+> **Kiến thức cần ghi nhớ**
+>
+> - **Mệnh đề** có giá trị đúng hoặc sai; mệnh đề chứa biến cần miền xét và giá trị của biến hoặc lượng từ. Phủ định của “mọi” là “tồn tại ít nhất một phần tử không thỏa”.
+> - **Kéo theo:** \(P\Rightarrow Q\) nghĩa là \(P\) là điều kiện đủ cho \(Q\), còn \(Q\) là điều kiện cần cho \(P\). Tương đương \(P\Leftrightarrow Q\) đòi kiểm **cả hai chiều**.
+> - **Tập hợp:** \(A\cap B\) chứa các phần tử thuộc cả hai; \(A\cup B\) thuộc ít nhất một; \(A\setminus B\) thuộc A nhưng không thuộc B. Phần bù phải nói rõ tập vũ trụ \(U\).
+> - **Khoảng và bài toán đếm:** phân biệt dấu ngoặc nhận/loại điểm mút; với hai tập hữu hạn, \(|A\cup B|=|A|+|B|-|A\cap B|\), tránh đếm trùng vùng giao.
+
 # Luyện tập
 
 Hãy tự làm bài, kiểm điều kiện, thử tìm phản ví dụ và viết lý do chọn phép tính trước khi mở lời giải. Nếu còn nhầm, em có thể quay lại mảng Kiến thức liên quan rồi giải một bài khác.
