@@ -13,13 +13,13 @@ CATALOG_TOPIC_ID: CD13
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 9a558f553bd6a4a58701a6bae490717ba5a52540
+ACADEMIC_SOURCE_BLOB: 593484fbe67b168fae677652db0ef3871bcf5695
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 5e8ad3dfbc24d008f32e06e18215c96c543e7278
+REVIEW_RECEIPT_BLOB: 3161e1e8f76ded9a6396eb48424d713d4db55638
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_A1_A7_BLOB: 0e9f894699e0e786ee18423dfdcdc33f2aef01be
+AUTHOR_A1_A7_BLOB: 8c1942bbd332eee25d4d7e5dd0d21945297842da
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: 0e9f894699e0e786ee18423dfdcdc33f2aef01be
+AUTHOR_METADATA_BLOB: 8c1942bbd332eee25d4d7e5dd0d21945297842da
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df
 G10_SGK_CROSS_PR_DEPENDENCY: 750
@@ -240,6 +240,13 @@ No new held-out private RD1 items were created/imported. Only public 16-item Sel
 - Four original SVG distinct, 5 visible placements with local instructions; author math checks are not browser SVG render QA. Runtime Golden, MathJax, Final Submit/RD1, responsive, AP/R/P/device and owner merge/deploy permission remain RELEASE-only. **NO MERGE/DEPLOY.**
 
 
+## R06_FORMAL_VECTOR_CONCEPT_Q18 (17/11/2026)
+
+- Effective academic learner SHA `593484fbe67b168fae677652db0ef3871bcf5695` and scoped source-bound Q18 receipt `3161e1e8f76ded9a6396eb48424d713d4db55638`, A1 metadata `8c1942bbd332eee25d4d7e5dd0d21945297842da`; all above HEAD fields refer to these current blobs.
+- Student knowledge O01–O03 now explicitly classifies real definitions and three-point addition property, with a short `Kiến thức cần ghi nhớ` summary. The distinction between vector and nonnegative scalar length, same-direction equality, zero-vector and nonzero-angle conditions was rechecked against the existing examples; all other mathematical content retained.
+- 52 Practice canonical stem/key/solution/rubric/D6 projections and 16 question-only public replay placements byte-exact; original G10/G12 owner sources and NEW20 bank `136bd4552118e5dba6b18b58965be7d37878e9df` untouched, SVG4 included. `DELTA_C_ACADEMIC_MATERIAL`, scoped AUTHOR_SELF_VERIFIED under one standard Q01–Q18, not a new independent NotebookLM or RELEASE verdict.
+- G10 original bank PR #750 remains sibling Draft; RELEASE must source-verify combined HEAD before ingestion, no silent standalone Topic Q15 grant.
+
 ## R04_NUMBERING_SOURCE_EQUIVALENT_DELTA_A
 
 - Owner-directed harmonization of headings: same three Topic pages, H2 numbered groups 1…N, H3 lesson indexes 1.1, 1.2 … restarting under respective group; same-level practice question labels use one scoped style without orphan b/2.
@@ -309,4 +316,4 @@ RELEASE separately verifies AP1–AP5, R1–R5, Q15 canonical resolver collision
 
 ## R05 · 52-of-52 canonical owner parity after mathematical vector notation fix (17/11/2026)
 
-Source `9a558f553bd6a4a58701a6bae490717ba5a52540`; Q18 targeted affected receipt `5e8ad3dfbc24d008f32e06e18215c96c543e7278`; A1 metadata `0e9f894699e0e786ee18423dfdcdc33f2aef01be`; canonical NEW20 bank `136bd4552118e5dba6b18b58965be7d37878e9df`. Math changes confined to corrected vector notation for 9 existing IDs in NEW20 bank (8 stem +8 solution text fields), unchanged numerical results and rubric scores, and hash references in learner source. Source parity: G10 original 20/20 on Draft #750, G12 original 12/12, Topic-owned 20/20; no new item, no assessment credit. Q18 self-QA is targeted and not a fresh independent review. Cross-branch availability of G10 original source on combined RELEASE HEAD remains not proven; do not merge/deploy.
+Source `593484fbe67b168fae677652db0ef3871bcf5695`; Q18 targeted affected receipt `3161e1e8f76ded9a6396eb48424d713d4db55638`; A1 metadata `8c1942bbd332eee25d4d7e5dd0d21945297842da`; canonical NEW20 bank `136bd4552118e5dba6b18b58965be7d37878e9df`. Math changes confined to corrected vector notation for 9 existing IDs in NEW20 bank (8 stem +8 solution text fields), unchanged numerical results and rubric scores, and hash references in learner source. Source parity: G10 original 20/20 on Draft #750, G12 original 12/12, Topic-owned 20/20; no new item, no assessment credit. Q18 self-QA is targeted and not a fresh independent review. Cross-branch availability of G10 original source on combined RELEASE HEAD remains not proven; do not merge/deploy.
