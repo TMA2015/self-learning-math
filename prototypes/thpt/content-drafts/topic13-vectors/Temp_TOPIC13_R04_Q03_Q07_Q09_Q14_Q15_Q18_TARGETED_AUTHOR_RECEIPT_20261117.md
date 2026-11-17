@@ -6,7 +6,8 @@ STANDARD_BLOB: 5a80b20ce99be3179d03d56a73fa57b6f4882fd8
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 DELTA_CLASS: DELTA_C_MATERIAL_PEDAGOGICAL_PRESENTATION_WITH_Q07_VISUAL_CORRECTION
 SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_PED_LEARNER_CANDIDATE_20261117.md
-SOURCE_BLOB: 47e851cb47767aba6ec1cfa81efe3232ae8fed23
+SOURCE_BLOB: ca2e68cc78413e8aa22679a3341b118a9f413bc1
+PREVIOUS_DIRECT_KNOWLEDGE_SOURCE_BLOB: 47e851cb47767aba6ec1cfa81efe3232ae8fed23
 PREVIOUS_R04_SOURCE_BLOB: 7837fa88ba6376f873bd9f3bc3cbea134b3a838d
 IMMUTABLE_R03_SOURCE_BLOB: 7f3e90e5eadcbaa1dc7b49cd6d5136f6dbf61e22
 IMMUTABLE_R03_Q18_RECEIPT_BLOB: bf040651f959e2559c37662caeb66d31d68b6bf9
@@ -81,3 +82,12 @@ An additional live source inspection found **Q03/Q04/PED3 material ambiguity**: 
 **Remaining:** original G10 canonical PR #750 still a real Q01/Q15 active owner dependency; full original S1 printed/PDF check and live MathJax browser AP2 have not been performed; active V2/ready/REGISTER still HOLD, `CONTENT_READY=NO`. No independent NotebookLM whole-topic verdict or website release is implied. No parallel learner version file added.
 
 Review prompt: compare the old and new R04 learner source on exactly 23 affected Knowledge lines, ensuring arrows, null vector, directed Oxy/Oxyz differences and centroid directions are correct. Test the independence of all sixteen First Tries and check their D6 help against actual Practice statements. Cross-check original canonical G10 ownership once PR #750 source is available, without changing any displayed SGK practice copy. Return affected Academic/PED and P0/P1/P2 with minimal delta; do not claim actual MathJax/AP rendering or release.
+
+
+## R06 continuation — source-consistent vectors also in Practice and two replay stems (17/11/2026)
+
+Following the previous 23-line Knowledge repair, read the exact learner Practice and found 19 further student-visible ambiguous scalar-like vector equalities, affecting Topic-owned Practice P04/P06/P07/P12/P14/P15, Written W01/W02/W03, and both corresponding public selfcheck P04/P06 replays, plus a student feedback line in one SGK reused problem. Changed **exactly original lines 761, 935, 939, 961, 965, 974, 978, 1039, 1043, 1065, 1069, 1082, 1104, 1108, 1117, 1121, 1130, 1171, 1179** in the same one learner file. These line edits add explicit `\\overrightarrow{AB}`/`\\overrightarrow{BC}` and arrows in algebra, `AB=|\\overrightarrow{AB}|` when the actual numeric quantity is a distance; they do NOT alter any question circumstance, numeric input, theorem, mathematical answer, grading criterion, outcome, original canonical ID or source owner. Original P04/P06 question and its selfcheck replay have **identical new mathematical meaning and wording**, preserving public reuse identity; only math typography/clarity changed, so `DELTA_B_SOURCE_EQUIVALENT` for this extension. The earlier 23 Knowledge paragraphs remain unchanged. Source count exactly 1222 lines and original **68/68** ordered canonical/public placement markers, **68/68** voluntary answer disclosures, **5/5 SVG reference placements**, all original 16 question-only public selfchecks and the 7-point Written rubric scores preserved. There is no change to independent RD1, Final Submit or Mastery.
+
+**Author mathematics checks:** P04: (5,1)−(3,−4)=(2,5)=CB; P06 centroid M=(3/2,3), G=(0,2), AG=(3,2)=(2/3)AM; P07 AB vector (8,−6), length 10; P12 Oxyz vectors (3,−3,4)+(3,4,−6)=(6,1,−2); P14 AB vector (6,−4,4), length sqrt68; P15 length sqrt116; W01 Chasles + centroid with 2+2+2+1 seven points; W02 dot=12, 7-point rubric; W03 AB·AC′=9 and angle cos=3/13 unchanged. This is **targeted author mathematical/pedagogical review**, no independent NotebookLM whole-Topic pass or actual browser MathJax claim.
+
+**No new correction source**; current one effective learner source `ca2e68cc78413e8aa22679a3341b118a9f413bc1` and this existing Q18 receipt path updated. Historical old source stays in Git. `GLOBAL_ACTIVE_Q15_G10_SGK_PR750_V2_READY_REGISTER=HOLD` and `CONTENT_READY=NO` pending original SGK owner, complete S1/academic and browser gates. Do not merge/deploy.
