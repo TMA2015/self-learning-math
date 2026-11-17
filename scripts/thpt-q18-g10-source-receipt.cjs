@@ -344,7 +344,7 @@ function expectedG10KnowledgeBlob(lesson,legacy){
      "B09 revised discovery figure needs a distinct SHA");
     const current=fs.readFileSync(path.join(root,
      "prototypes/thpt/content-drafts/THPT_G10_CHIV_B09_CANONICAL.md"));
-    const blob=bytes=>require("node:crypto").createHash("sha1").update(Buffer.from("blob "+bytes.length+String.fromCharCode(0)).update(bytes).digest("hex");
+    const blob=bytes=>require("node:crypto").createHash("sha1").update(Buffer.from("blob "+bytes.length+String.fromCharCode(0))).update(bytes).digest("hex");
     assert.equal(blob(current),master,"B09 must use the ONE SHA-locked academic manuscript");
     for(const token of ["Q18_AUTHOR_SELF_VERIFIED","CHIV-09-A","THPT-G10-B09-P07",
       "FORMATIVE_ONLY","OWNER_P2_PENDING","B09-RUNTIME-01"])
