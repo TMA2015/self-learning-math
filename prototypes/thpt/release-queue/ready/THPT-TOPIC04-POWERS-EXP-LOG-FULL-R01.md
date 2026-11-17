@@ -1,4 +1,4 @@
-# CĐ04 — Lũy thừa, mũ và lôgarit · AUTHORING CONTENT_READY current R05 (stable packet R01)
+# CĐ04 — Lũy thừa, mũ và lôgarit · AUTHORING revised R06 (stable packet R01)
 
 PACKET_ID: THPT-TOPIC04-POWERS-EXP-LOG-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -8,18 +8,18 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: ad8b0dbab4cae55ad55b29f2eeff05e713ea35d6
+SOURCE_COMMIT: f7772e1a4b1b01b6bc60f0747b25f4341f417e85
 AUTHOR_PR: 822
-CURRENT_PR: #822 Draft AUTHORING, not merged/deployed
+CURRENT_PR: #890 Draft AUTHORING from previous #822, not merged/deployed
 CATALOG_TOPIC_ID: CD04
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_R05_STUDENT_FIRST_75_CANONICAL_VISIBLE_20261115.md
-ACADEMIC_SOURCE_BLOB: c948ad9957bbcd55b416ea7ddce96a6dcdf0d799
-REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC04_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md (AUTHOR_SELF_QA, no new independent Topic NotebookLM PASS)
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC04_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
-REVIEW_RECEIPT_BLOB: 436084332b4acc642db3a2a8523d91d980cf566d
-AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC04-POWERS-EXP-LOG-FULL-R05_HANDOFF_V2_20261115.md
-AUTHOR_HANDOFF_BLOB: 2475915a4e46ed2ba3840563f2b9f9f2b33336fd
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_R06_NUMBERING_CONSISTENT_20261116.md
+ACADEMIC_SOURCE_BLOB: bb4da8a9c17c4b5051043043d76682144e5414c3
+REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC04_R06_NUMBERING_DELTA_A_Q18_20261116.md (scoped AUTHOR_SELF_VERIFIED, no new independent Topic NotebookLM PASS)
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC04_R06_NUMBERING_DELTA_A_Q18_20261116.md
+REVIEW_RECEIPT_BLOB: 7b5837abf401a44fb5aee4624f0416b5616e3f47
+AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC04-POWERS-EXP-LOG-FULL-R06_HANDOFF_V2_NUMBERING_20261116.md
+AUTHOR_HANDOFF_BLOB: 90cd134da1318efb9834ee4608f41590f2c6fca3
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC04_POWERS_LOG_ORIGINAL49_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 7d257edda0a2d29ba063987a51c61980558dbab6
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC04_POWERS_LOG_NEW26_PUBLIC_CANONICAL_R01_20261112.md
@@ -52,9 +52,15 @@ TOPIC_DEFECT_LEDGER: Issue #865 (reuse; no second academic standard)
 REAL_PRACTICE_DISPLAY: 75 immutable canonical stems+solutions, 12 original Written rubrics
 SELF_CHECK_PUBLIC_REPLAY: 18 full question stems, no official Readiness/Mastery
 
+## 18/11/2026 · Current learning source closure and unresolved QA scope
+
+- One current source `bb4da8a9c17c4b5051043043d76682144e5414c3`; signed scoped Q18 `7b5837abf401a44fb5aee4624f0416b5616e3f47`; A1 `3b50e44d06ecd8295611f854119614061b45891a`; V2 `90cd134da1318efb9834ee4608f41590f2c6fca3`. Previously this ready record still pointed to the R05 learner and receipt despite the active R06 draft; pointers now corrected without duplicating packet.
+- Three genuine formal blocks + concise recap within Knowledge for exponent/negative exponent, log definition, and log-domain conditions. Earlier #890 D6, 16 MathJax and contextual fixes retained. The complete 75 learner Practice and 18 public question-only Selfchecks byte-identical to immediate predecessor `5f1d29bfb17c14206d3c02e5130d308dd6ced21a`.
+- No new independent full-Topic NotebookLM PASS claimed. Runtime/AP/mobile/Final Submit, original canonical source exact HEAD and owner RELEASE consent remain unchecked; CONTENT_READY in historical manifest is authoring-only and not evidence of published student functionality.
+
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — Canonical Topic source Git blob c948ad9957bbcd55b416ea7ddce96a6dcdf0d799, Q18 signed receipt 436084332b4acc642db3a2a8523d91d980cf566d, one 49-old index, one 26-new bank and one handoff V2 exact source.
+- [x] A1_SOURCE_SNAPSHOT — Current R06 academic source bb4da8a9c17c4b5051043043d76682144e5414c3, source-bound Q18 author receipt 7b5837abf401a44fb5aee4624f0416b5616e3f47, A1 metadata 3b50e44d06ecd8295611f854119614061b45891a, V2 90cd134da1318efb9834ee4608f41590f2c6fca3; 49 original SGK IDs + 26 Topic extension unchanged, signed previous snapshots remain historical.
 - [x] A2_SGK_SBT_SCOPE — KNTT G11 tập 2 S1 Core: SGK B18–B21, printed SGK p4–24/SBT p4–19; owner original PDF SHA+visual printed-page index receipt 02/11/2026. SBT solutions p73–85, not old 117–134; SBT reference, no copyright copying.
 - [x] A3_NOTEBOOKLM_VERDICT — G11 ChVI original public reviewed 49 items historical independent NotebookLM PASS limited to original R01 source and two Delta B decimal corrections; 18 new Topic modules/26 original questions/1 SVG AUTHOR_SELF_VERIFIED Q18 with 113 direct checks, **not new NotebookLM PASS**.
 - [x] A4_ITEM_OUTCOME_IDS — 18 outcomes, 75 unique canonical PUBLIC IDs (49 references+26 new), 3–7 mapped to each; 12 Written one canonical library (8 old rubric 4 pts,4 new rubric 7 pts), 18 public reuse selfchecks no new IDs.
