@@ -8,18 +8,18 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 1a05d5495464db4e345f0a9c5c06b4dbe3a66a31
+SOURCE_COMMIT: 2468c25af7635455331f270d1982be0a811f94af
 AUTHOR_PR: 820
 CURRENT_PR: #888 Draft chỉnh trực tiếp bản thảo của #820, no merge/deploy
 CATALOG_TOPIC_ID: CD03
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: daeeb5d571d120b31265f8c603a76049a1f2c78c
+ACADEMIC_SOURCE_BLOB: c843613b88d106a18086d91ff7d0ada499398033
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC03_R06_NUMBERING_DELTA_A_Q18_20261116.md (AUTHOR_SELF_VERIFIED, source corrected in place, no independent NotebookLM PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC03_R06_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: 6f7641528ea7bd8acb6a98e1c46be03a8ef44aae
+REVIEW_RECEIPT_BLOB: b8a9ddc851a1026af2d42d93ea5eb6c21cad6a13
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC03-ALGEBRA-EQUATIONS-FULL-R06_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: d41dbcf97e07759b3612886563111e0a137018e1
+AUTHOR_HANDOFF_BLOB: 04581ae0d5482ee0771f904d6b581d6511f6a8ff
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_ORIGINAL08_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: b2e79a6cda5fdcc82dbd281e4273577ca637895e
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_NEW23_PUBLIC_CANONICAL_R01_20261112.md
@@ -54,7 +54,7 @@ SELF_CHECK_PUBLIC_REPLAY: 12 question stems only; CLIENT_SELF_CHECK_NO_MASTERY
 
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — Nguồn CĐ03 R04 ba trang/liền mạch đã khóa SHA 05e9675a7dca802aa9540a96a46d76d013055d8b, receipt Q18 871edc307cae9e156dab528da6d98653b6686331, một original index 8 ID, một new 23 bank và một handoff V2, bản chính xác kiểm được.
+- [x] A1_SOURCE_SNAPSHOT — Current authoritative CĐ03 learner source c843613b88d106a18086d91ff7d0ada499398033, scoped Q18 author receipt b8a9ddc851a1026af2d42d93ea5eb6c21cad6a13, A1 custody 0720e90fcfbc67e85e3aa0986a68c3397b73bab8 and V2 04581ae0d5482ee0771f904d6b581d6511f6a8ff, original 8 SGK +23 new bank retained.
 - [x] A2_SGK_SBT_SCOPE — CĐ03 theo đề xuất 22 chủ dự án cho phép triển khai; SGK KNTT Toán 10 T2 B18 trang in 25–27, SBT trang 19–21 xác thực từ receipt S1 lịch sử, không tuyên bố scan PDF mới.
 - [x] A3_NOTEBOOKLM_VERDICT — B18 historical NotebookLM PASS chỉ cho snapshot 5 Temp_ gốc, 8 ID thuộc reviewer scope; CĐ03 R04 12 outcomes/23 new item math solution checks source-bound Q18 AUTHOR_SELF_VERIFIED, not inherited R01 counts, không giả reviewer PASS mới.
 - [x] A4_ITEM_OUTCOME_IDS — 12 outcome, 31 unique PUBLIC IDs (8 reused +23 new), >=2 item mỗi outcome; 4 Written có rubric đúng source gốc 5/6 điểm, mới 7/7; 12 reuse-only Self Check NO_MASTERY.
@@ -88,6 +88,12 @@ SELF_CHECK_PUBLIC_REPLAY: 12 question stems only; CLIENT_SELF_CHECK_NO_MASTERY
 
 **Q16 boundary:** 12 public selfchecks reuse previously exposed practice IDs. They never count as independent Topic Readiness or Mastery. Zero private RD1 imported; empty SHA above is zero uploaded private bytes, NOT owner-held bank SHA. Two interactive labs are design specifications only; no browser integration or real-device UAT. The SGK site, THCS, Firebase, learner data and Golden UI are not edited by AUTHORING.
 
+
+## 18/11/2026 · Current true-formal-knowledge fix in the same source
+
+- Current learner SOURCE_BLOB `c843613b88d106a18086d91ff7d0ada499398033`; Q18 `b8a9ddc851a1026af2d42d93ea5eb6c21cad6a13`; A1 metadata `0720e90fcfbc67e85e3aa0986a68c3397b73bab8`; V2 `04581ae0d5482ee0771f904d6b581d6511f6a8ff`. Earlier original R06 D6/Example corrections on Draft #888 are retained.
+- Explicit definition of equivalent equations, zero-product property and the necessary+ sufficient real sign criterion for sqrt(A)=B at TOP03-O01/O03/O07; a short recall block. The existing 31 Practice stem/key/solution/rubric/D6, 12 selfcheck question-only repeats, 3 SVG references and 43 disclosure blocks are byte-exact with preceding effective source `daeeb5d571d120b31265f8c603a76049a1f2c78c`.
+- DELTA_C source-scoped Q18 author self-QA, no independent NotebookLM Topic verdict. QA HOLD in the title continues to mean the revised whole Topic has not passed a fresh independent review; STATUS in the historical manifest does not authorize RELEASE, merge or deploy. Official Readiness/Mastery not claimed.
 
 ## One effective learner source — inline Q14/D6 correction
 
