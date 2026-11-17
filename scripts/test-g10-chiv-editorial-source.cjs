@@ -226,6 +226,68 @@ for(const [lesson,row] of rows){
    expected=visualField("R03_CANDIDATE_SOURCE_BLOB");
   }
  }
+ if(lesson==="B09"){
+  const receipt=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B09_S1_SEMANTIC_DECOMPOSITION_R03_20261117.md"),"utf8");
+  const f=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(f("SOURCE_BASELINE_BLOB"),row.candidate,
+   "B09 R03 must extend exact frozen original editorial source");
+  const standard=fs.readFileSync(path.join(root,
+   "prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md"));
+  assert.equal(blob(standard),f("STANDARD_BLOB"),
+   "B09 3+1 source uses one effective signed v3.2.0 standard");
+  const official=source.slice(source.indexOf('=== "Kiến thức SGK"'),source.indexOf('=== "Ví dụ"'));
+  const anchors=[
+   "Định nghĩa — Tích của một vectơ với một số:",
+   "Tính chất của phép nhân vectơ với một số:",
+   "Điều kiện hai vectơ cùng phương:",
+   "Phân tích một vectơ theo hai vectơ không cùng phương",
+   "Phân tích duy nhất theo hai vectơ không cùng phương",
+   "Hệ thức trung điểm – trọng tâm",
+   "Kiến thức cần nhớ — Bài 9:"
+  ];
+  let last=-1;for(const key of anchors){
+   const at=official.indexOf(key);
+   assert(at>last,"B09 outcome/semantic order absent: "+key);last=at;
+  }
+  assert.deepEqual([
+   (official.match(/class="thpt-r4-knowledge-conclusion thpt-r4-concept-card"/g)||[]).length,
+   (official.match(/class="thpt-r4-knowledge-conclusion thpt-r4-rule-card"/g)||[]).length,
+   (official.match(/class="thpt-r4-knowledge-conclusion" role="note"/g)||[]).length,
+   (official.match(/class="thpt-r4-key-formula"/g)||[]).length
+  ],[1,3,1,1],"B09 Q03/X-F.3 exactly meaningful definition/rule/recap/formula roles");
+  for(const key of ["k=0","\\vec u=\\vec0","\\vec a,\\vec b","x\\vec a+y\\vec b",
+   "không cùng phương","duy nhất","trung điểm","trọng tâm"]){
+   assert(official.includes(key),"B09 S1 prerequisite/condition missing "+key);
+  }
+  assert(official.includes("THPT_G10_B09_SCALAR_MULTIPLE_VECTORS_D5_R01.svg")&&
+   official.includes("THPT_G10_B09_DECOMPOSITION_TWO_DIRECTIONS_D5_R03.svg"),
+   "B09 two D5 figures must be adjacent to official teaching");
+  const examples=source.slice(source.indexOf('=== "Ví dụ"'),source.indexOf('=== "Lỗi thường gặp"'));
+  assert.equal((examples.match(/^    ### Ví dụ [1-4]\\./gm)||[]).length,4,
+   "B09 four distinct worked examples, including mandatory decomposition");
+  assert(examples.includes("Phân tích theo hai vectơ không cùng phương")&&
+   examples.includes("\\overrightarrow{MN}=-\\tfrac12\\vec a+\\tfrac12\\vec b"),
+   "B09 noncollinear decomposition must be solved and verified, not only noted");
+  const css=fs.readFileSync(path.join(root,
+   "docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"));
+  assert.equal(blob(css),f("R03_CSS_BLOB"),
+   "B09 scoped 3+1 CSS exact source SHA required");
+  const cssText=css.toString("utf8"),marker="/* G10 Chapter IV B09 R03";
+  const at=cssText.indexOf(marker);
+  assert(at>0&&cssText.indexOf(marker,at+1)<0,"B09 one CSS append only");
+  assert.equal(blob(cssText.slice(0,at-1)),f("CSS_BASELINE_BLOB"),
+   "All owner P2-accepted B01–B08 CSS bytes must remain identical");
+  const svg=fs.readFileSync(path.join(root,
+   "docs/assets/images/thpt/THPT_G10_B09_DECOMPOSITION_TWO_DIRECTIONS_D5_R03.svg"));
+  assert.equal(blob(svg),f("R03_SVG_BLOB"),
+   "B09 SVG must match signed geometry source");
+  assert(svg.toString("utf8").includes("<title")&&svg.toString("utf8").includes("<desc")&&
+   !svg.toString("utf8").includes("<script"),"B09 SVG accessible/safe");
+  assert(receipt.includes("BLOCKED_BY_AUTHORING")&&receipt.includes("NO_CANONICAL_DECOMPOSITION_ITEM"),
+   "B09 source QA is technical only; academic release must remain HOLD");
+  expected=f("R03_SOURCE_BLOB");
+ }
  assert.equal(blob(source),expected,lesson+" exact final Q18 academic source receipt");
  assert.equal(candidateG10KnowledgeBlob(n),expected,lesson+" Q18 source router selects correct immutable snapshot");
  for(const key of ["data-thpt-first-try-id","data-thpt-help-id","data-outcome-id"])
