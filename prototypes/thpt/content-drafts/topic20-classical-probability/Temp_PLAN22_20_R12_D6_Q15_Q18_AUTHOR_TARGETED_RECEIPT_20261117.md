@@ -55,3 +55,12 @@ AUTHOR_SIGNOFF: CHATGPT_AUTHORING_TOP20_R12_3WRITTEN_6REMEDIATION_ROUTES_3MATH_C
 VERDICT: TARGETED_AUTHOR_SELF_QA_PASS, CANONICAL_ACTIVE_MATRIX_HOLD, CONTENT_READY_NO.
 
 Review prompt (four sentences): Read precisely the R12 source blob and immutable R11 baseline before critiquing W01–W03. Follow all six D6 routes to actual visible Bài luyện numbers and verify their underlying probabilities and unchanged rubric. Report any wrong destination by outcome and item ID, with minimal delta. Do not mistake this scoped author self-QA for an independent full-topic review, website QA or CONTENT_READY.
+## 5. Q15 source-derived matrix lock (addendum)
+
+Q15_CANDIDATE_MATRIX_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R12_Q15_CANONICAL_ITEM_OUTCOME_ROLE_VERSION_MATRIX_20261117.md
+Q15_CANDIDATE_MATRIX_BLOB: a19bed3c52a24e582bfa2b262d6d20f76f0e7c09
+Q15_CANDIDATE_OWNER: a5507a33daea690a1193c965999e1d652340cb58
+Q15_CANDIDATE_SOURCE_LEVEL: AUTHOR_SELF_VERIFIED; ALL_IDS_UNIQUE; PRACTICE_REPLAY_SAME_ID
+Q15_GLOBAL_ACTIVE_OWNER_V2_READY_REGISTER: HOLD_PENDING_INTEGRATION
+
+This matrix was generated from the exact item marker lines in the learner source and includes every item-to-outcome/role/content_version and public replay placement, without cloning canonical item bodies. Its SHA is pinned here; it does not imply that the repository-wide ACTIVE REGISTER has been promoted or that external handoff has been completed.
