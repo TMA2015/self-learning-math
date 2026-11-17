@@ -149,7 +149,10 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
          "1.3. Vì sao cùng phương vẫn có thể ngược hướng?",
          "1.4. Hai mũi tên ở hai vị trí khác nhau khi nào bằng nhau?",
          "1.5. Vì sao quay lại điểm xuất phát tạo ra vectơ-không?"
-        ]:["1.1. Cùng tìm hiểu","1.2. Ví dụ trực quan","1.3. Thuật ngữ, kiến thức và kỹ năng"],
+        ]:lesson===9?["1.1. Cùng tìm hiểu","1.2. Ví dụ trực quan",
+          "1.3. Vì sao phải phân tích một vectơ?",
+          "1.4. Thuật ngữ, kiến thức và kỹ năng"]:
+         ["1.1. Cùng tìm hiểu","1.2. Ví dụ trực quan","1.3. Thuật ngữ, kiến thức và kỹ năng"],
        where+" complete concept-first discovery stages");
      assert.equal(await blocks.nth(0).locator("[data-thpt-first-try-id]").count(),
        ({7:5,8:5,9:5,10:6,11:4})[lesson],where+" original First Tries moved to Discovery");
