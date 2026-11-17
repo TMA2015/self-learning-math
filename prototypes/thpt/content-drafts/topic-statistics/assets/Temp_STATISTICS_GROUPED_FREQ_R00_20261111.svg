@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 400" role="img" aria-labelledby="tt dd">
+<title id="tt">Biểu đồ tần số ghép nhóm của 20 số liệu</title>
+<desc id="dd">Bốn cột liên tiếp [0,10) có tần số 4, [10,20) có 6, [20,30) có 8, [30,40) có 2. Tần số tích lũy là 4, 10, 18, 20. Nửa đầu dữ liệu chứa 10 số liệu trước mốc 20.</desc>
+<rect width="760" height="400" fill="#fff" stroke="#555" rx="14"/>
+<text x="28" y="36" font-family="Arial,sans-serif" font-size="21" fill="#172554">Tần số theo khoảng — mẫu có n = 20</text>
+<g stroke="#334155" stroke-width="2"><line x1="100" y1="328" x2="686" y2="328"/><line x1="100" y1="328" x2="100" y2="86"/></g>
+<g fill="#0369a1" fill-opacity=".7" stroke="#075985" stroke-width="2"><rect x="100" y="216" width="120" height="112"/><rect x="220" y="160" width="120" height="168"/><rect x="340" y="104" width="120" height="224"/><rect x="460" y="272" width="120" height="56"/></g>
+<g fill="#0f172a" font-family="Arial,sans-serif" font-size="18" text-anchor="middle"><text x="160" y="204">4</text><text x="280" y="148">6</text><text x="400" y="92">8</text><text x="520" y="260">2</text><text x="100" y="353">0</text><text x="220" y="353">10</text><text x="340" y="353">20</text><text x="460" y="353">30</text><text x="580" y="353">40</text></g>
+<text x="620" y="340" font-family="Arial,sans-serif" font-size="16" fill="#334155">Giá trị</text>
+<text x="25" y="82" font-family="Arial,sans-serif" font-size="16" fill="#334155">Tần số</text>
+</svg>
