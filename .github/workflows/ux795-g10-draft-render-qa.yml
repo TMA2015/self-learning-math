@@ -127,6 +127,10 @@ jobs:
               live_file.write_text(candidate, encoding="utf-8")
           PY
           cp docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css integration-main/docs/assets/stylesheets/
+          # B09 new responsive decomposition D5: QA-only overlay, not deploy.
+          for image in THPT_G10_B09_DECOMPOSITION_TWO_DIRECTIONS_D5_R03.svg THPT_G10_B09_DECOMPOSITION_MOBILE_D5_R03.svg; do
+            cp "docs/assets/images/thpt/$image" "integration-main/docs/assets/images/thpt/$image"
+          done
           # Overlay approved source-locked ChV visual dependencies in the
           # isolated integration checkout, never in production.
           cp docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js integration-main/docs/assets/javascripts/
