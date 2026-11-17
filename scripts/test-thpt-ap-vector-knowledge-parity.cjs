@@ -69,18 +69,25 @@ for(const c of cases){
   "G10_CHIV_B07_S1_OWNER_Q18_ENRICHMENT_DELTA_R02_20261116.md":
   c.n===8?"G10_CHIV_B08_S1_OWNER_Q18_ENRICHMENT_DELTA_R02_20261116.md":null;
  const r02=receiptPath?fs.readFileSync(path.join(__dirname,"../prototypes/thpt/ux795",receiptPath),"utf8"):null;
- const r03=c.n===8?fs.readFileSync(path.join(__dirname,
+ const r03=c.n===7?fs.readFileSync(path.join(__dirname,
+  "../prototypes/thpt/ux795/G10_CHIV_B07_HELP_LABELS_DELTA_A_R03_20261117.md"),"utf8"):
+  c.n===8?fs.readFileSync(path.join(__dirname,
   "../prototypes/thpt/ux795/G10_CHIV_B08_MATHJAX_DISPLAY_DELTA_A_R03_20261117.md"),"utf8"):null;
  const field=(s,k)=>s?.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
  const signedR02=!!r02&&field(r02,"R01_APPROVED_SOURCE_BLOB")===editorial[c.n].sha&&
   field(r02,"R02_CANDIDATE_SOURCE_BLOB")===blob(src);
- const signedR03=c.n===8&&field(r02,"R01_APPROVED_SOURCE_BLOB")===editorial[8].sha&&
+ const signedR03=c.n===7?
+  field(r02,"R01_APPROVED_SOURCE_BLOB")===editorial[7].sha&&
+  field(r03,"R02_SOURCE_BLOB")===field(r02,"R02_CANDIDATE_SOURCE_BLOB")&&
+  field(r03,"R03_SOURCE_BLOB")===blob(src):
+  c.n===8&&field(r02,"R01_APPROVED_SOURCE_BLOB")===editorial[8].sha&&
   field(r03,"R02_PUBLISHED_SOURCE_BLOB")===field(r02,"R02_CANDIDATE_SOURCE_BLOB")&&
   field(r03,"R03_CANDIDATE_SOURCE_BLOB")===blob(src);
  const current=editorial[c.n]&&(blob(src)===editorial[c.n].sha||signedR02||signedR03);
- if(signedR02||signedR03)assert.equal(signedR03?field(r03,"R03_CANDIDATE_SOURCE_BLOB"):
+ if(signedR02||signedR03)assert.equal(signedR03?
+  field(r03,c.n===7?"R03_SOURCE_BLOB":"R03_CANDIDATE_SOURCE_BLOB"):
   field(r02,"R02_CANDIDATE_SOURCE_BLOB"),expectedG10KnowledgeBlob(c.n,c.sha),
-  "B07/B08 signed R01→R02→R03 exact source receipt must match Q18 router");
+  "B07/B08 exact R01→R02→R03 source receipt must match Q18 router");
   if(current){
   const headings=[...middle.matchAll(/^    ### ([^\n]+)$/gm)].map(m=>m[1]);
   assert.deepEqual(headings,editorial[c.n].sections,"B"+c.n+": official S1 book sections changed");
