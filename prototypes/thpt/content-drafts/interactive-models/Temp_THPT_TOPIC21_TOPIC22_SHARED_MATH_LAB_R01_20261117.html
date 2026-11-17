@@ -36,7 +36,7 @@ canvas,svg{background:var(--slm-canvas)!important;border-color:var(--slm-border)
 </style></head><body><main>
 <nav id="menu" class="menu" aria-label="Mô hình có thể xem thử"><a href="?model=SLM-TOP21-BAYES-TREE-R01">CĐ21 · Bayes</a><a href="?model=SLM-TOP22-DISTRIBUTION-R01">CĐ22 · Dữ liệu</a></nav><p id="bad-route" class="observe" hidden></p>
 <article data-model-id="SLM-TOP21-BAYES-TREE-R01" data-assessment="PUBLIC_DISCOVERY_NO_MASTERY" hidden>
-<header><h1>Xác suất toàn phần và Bayes trên sơ đồ cây</h1><p class="sub">CĐ21 · Khám phá TOP21-O05/O06/O07/O08</p></header><div class="content">
+<header><h1>Xác suất toàn phần và Bayes trên sơ đồ cây</h1><p class="sub">CĐ21 · Khám phá xác suất có điều kiện, xác suất toàn phần và công thức Bayes</p></header><div class="content">
 <p><b>Dự đoán:</b> Nguồn X chiếm 30% sản phẩm, có 2% lỗi; nguồn Y chiếm 70% và có 4% lỗi. Nếu gặp một sản phẩm lỗi, xác suất đến từ X là bao nhiêu?</p>
 <div class="columns"><section class="panel"><h2>Điều chỉnh ba tỉ lệ</h2>
 <label><span>Nguồn X <output id="v-prior">30%</output></span><input type="range" id="prior" min="1" max="99" value="30" aria-label="Tỉ trọng nguồn X, phần trăm"></label>
@@ -57,9 +57,9 @@ canvas,svg{background:var(--slm-canvas)!important;border-color:var(--slm-border)
 <p><b>Giải thích:</b> Nhân xác suất dọc từng nhánh lỗi, cộng xác suất hai đường dẫn đến lỗi, rồi mới chia đường X ∩ lỗi cho toàn bộ lỗi. Không được đồng nhất P(lỗi | X) với P(X | lỗi). Khi P(lỗi)=0 thì P(X | lỗi) không xác định.</p>
 <p><b>Vận dụng · Tự thử trước:</b> Đặt X=30%, lỗi ở X=8%, lỗi ở Y=2%; tính P(lỗi), P(X | lỗi) rồi so với kết quả mô hình.</p>
 <details><summary>Đối chiếu sau khi tự thử</summary><p><b>Đối chiếu:</b> P(lỗi)=0,3×0,08+0,7×0,02=3,8%. P(X | lỗi)=0,024/0,038≈63,16%. Nếu lấy 8%, em đã đảo chiều điều kiện; hãy vẽ hai đường đi.</p></details>
-<p class="small">Công cụ khám phá công khai, không chứa câu hỏi RD1 kín, không ghi điểm/Mastery.</p></div></article>
+<p class="small">Mô hình dùng để khám phá và tự đối chiếu, không phải bài kiểm tra chấm điểm.</p></div></article>
 <article data-model-id="SLM-TOP22-DISTRIBUTION-R01" data-assessment="PUBLIC_DISCOVERY_NO_MASTERY" hidden>
-<header><h1>Giá trị cực đoan làm thay đổi phân phối ra sao?</h1><p class="sub">CĐ22 · G10-B13-MEAN/MEDIAN/QUARTILES · G10-B14-RANGE_IQR/OUTLIERS</p></header><div class="content">
+<header><h1>Giá trị cực đoan làm thay đổi phân phối ra sao?</h1><p class="sub">CĐ22 · Khám phá số trung bình, trung vị, tứ phân vị và giá trị ngoại lệ</p></header><div class="content">
 <p><b>Dự đoán:</b> Dãy 2, 2, 3, 4, 5, 5, 6 có trung vị 4. Nếu thay 6 bằng 20, số trung bình, trung vị và khoảng biến thiên sẽ biến đổi như nhau không?</p>
 <div class="columns"><section class="panel"><h2>Điều chỉnh bảy số liệu</h2><div id="data-sliders" class="controls-grid"></div><button type="button" id="reset-stats">Đặt lại</button> <button type="button" id="try-extreme">Thử ngoại lệ 20</button>
 <p class="small">7 quan sát nguyên, mỗi giá trị từ 1 đến 20. Tứ phân vị KNTT với n lẻ: bỏ giá trị trung vị rồi lấy trung vị của hai nửa.</p></section>
@@ -73,7 +73,7 @@ canvas,svg{background:var(--slm-canvas)!important;border-color:var(--slm-border)
 <p><b>Giải thích:</b> Trung bình phụ thuộc tổng toàn bộ số liệu; trung vị là giá trị giữa sau sắp xếp; khoảng biến thiên bằng max−min. Quy tắc hàng rào 1,5×IQR chỉ đánh dấu giá trị cần chú ý, không khẳng định số liệu bị sai.</p>
 <p><b>Vận dụng · Tự thử trước:</b> Đặt dãy 2, 2, 3, 4, 5, 5, 20; tính trung bình, Me, Q1, Q3 và khoảng biến thiên.</p>
 <details><summary>Đối chiếu sau khi tự thử</summary><p><b>Đối chiếu:</b> Tổng 41; trung bình 41/7≈5,86; Me=4; Q1=2, Q3=5, IQR=3; khoảng biến thiên 18; hàng rào trên 9,5 nên 20 nằm ngoài. Nếu chọn trung vị 5, hãy sắp lại dãy tăng dần.</p></details>
-<p class="small">Chỉ là dữ liệu thô, không dùng nội suy ghép nhóm. Công cụ không chấm điểm, không ghi Mastery.</p></div></article>
+<p class="small">Mô hình dùng số liệu thô, không áp dụng cách ước lượng cho số liệu ghép nhóm. Em có thể thay đổi từng giá trị để tự kiểm tra dự đoán của mình.</p></div></article>
 <noscript>Cần JavaScript để tương tác; trang bài học vẫn phải có nội dung kiến thức và ví dụ đầy đủ không phụ thuộc mô hình.</noscript></main>
 <script>
 (function(){"use strict";
