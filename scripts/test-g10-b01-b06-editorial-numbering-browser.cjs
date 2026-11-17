@@ -122,7 +122,8 @@ function checkSHA(){
     const cut10=cssText.indexOf(marker10);
     assert(cut10>b09cut&&cssText.indexOf(marker10,cut10+1)<0,
       "B10 CSS must append exactly one new scoped region after B09");
-    assert.equal(hash(cssText.slice(0,cut10-1)),f09("R03_CSS_BLOB"),
+    // B09 main CSS ends immediately before the B10 comment (no extra separator).
+    assert.equal(hash(cssText.slice(0,cut10)),f09("R03_CSS_BLOB"),
       "B01–B09 published CSS byte-identical before B10 section");
     assert.equal(f10("CSS_OWNER_B09_P2_BASELINE_BLOB"),f09("R03_CSS_BLOB"),
       "B10 Q18 must extend exactly owner-accepted B09 CSS");
