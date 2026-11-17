@@ -8,19 +8,19 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 4995d98064d7952ba9e361f1c0958ff34834b9bc
+SOURCE_COMMIT: c92422e334c3cc0b88008b75d3b13f78f432a1ad
 CATALOG_TOPIC_ID: CD16
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_PERPENDICULARITY_R03_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 0adf45aa8d776634d66f5c8e57b1c86ad77c8ed2
+ACADEMIC_SOURCE_BLOB: ad3fdadb2b6a7150118c2534bf02cf9563f92e26
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC16_R03_AUTHOR_SELF_QA_RECEIPT_20261116.md (SIGNED_AUTHOR_Q18, NOT independent NotebookLM)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC16_R03_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 61984089e3108ccf7fb1ef72123ee2c54c699d82
+REVIEW_RECEIPT_BLOB: 55ee159e7929545032c76a8493dc48b09a3f593a
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_R03_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: ac13670a4b1d0c0acf7f69553ef2634ea704aa16
+AUTHOR_A1_A7_BLOB: 8424bdccdbf5ea6041da60fea5ea063e90f8b388
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC16-PERPENDICULAR-ANGLE-FULL-R03_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: 34575ea68fc7a88a5e372660e2edc856da536e0f
+AUTHOR_HANDOFF_BLOB: c8d26ada921bc629636eb0bf3404896ba31a1f04
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_THPT_TOPIC16_RAMP_ANGLE_R01_SCOPE_CORRECTED_20261113.html
 INTERACTIVE_MODEL_BLOB: e14ee4c6ec6c851f228352656b0cd8e2fc3a2a06
@@ -42,6 +42,12 @@ RELEASE_AUTHORIZATION: NO
 CURRENT_PR: DRAFT_AUTHORING_NOT_MERGED
 
 **AUTHORING CONTENT_READY only. Not a live Topic route, not a RELEASE-ready site, not automatic official Readiness.** CĐ16 R01 holds G11 KNTT T2 ChVII B22–B25 **21 outcomes**, four cohesive natural NotebookLM-informed/independently SGK-checked narrative bridges, 41 unchanged original SGK canonical reference IDs + 21 new First Try +21 Practice +3 Written rubric/4 = **86 unique PUBLIC canonical IDs**. Only 8 public replay selfchecks. Original B26/B27 (Khoảng cách & Thể tích) deliberately reserved for separate PLAN22-17; this research taxonomy does not assign runtime site IDs.
+
+## 18/11/2026 · Source-scoped learner recap on signed current snapshot
+
+- Exact learner source `ad3fdadb2b6a7150118c2534bf02cf9563f92e26`, receipt `55ee159e7929545032c76a8493dc48b09a3f593a`, A1 metadata `8424bdccdbf5ea6041da60fea5ea063e90f8b388`, V2 `c8d26ada921bc629636eb0bf3404896ba31a1f04`.
+- Added a concise student recap about geometrical perpendicularity, projection and real height. No original 21 outcome body/definition theorem changed; 86 canonical ID and answer/solution/rubric, 8 public selfchecks, 4 SVG remain unchanged against original signed source `0adf45aa8d776634d66f5c8e57b1c86ad77c8ed2`.
+- DELTA_C academic/pedagogical presentation affected-scope AUTHOR_SELF_VERIFIED; no independent full-Topic NotebookLM verdict, no RELEASE Golden/Final Submit/owner approval.
 
 ## AUTHORING A1–A7
 
