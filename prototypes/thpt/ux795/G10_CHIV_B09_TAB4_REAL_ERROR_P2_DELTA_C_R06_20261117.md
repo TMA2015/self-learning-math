@@ -6,8 +6,8 @@
 
 **PRIOR_R05_SOURCE_BLOB:** `a28fa50f223f260c8fded1f42b13065d3e047d63`
 **PRIOR_R05_CANONICAL_BLOB:** `3c22b8d72d1f514257a4fe815bb1e46fccd7c3a3`
-**R06_SOURCE_BLOB:** `75d030f668a7e128ed47e7e1fc2cf85019db0bfb`
-**R06_ONE_CANONICAL_LESSON_BLOB:** `f166478d4f7b56b273808835aa7d89cc39a80626`
+**R06_SOURCE_BLOB:** `3d79a17e9ba39cd0f46077823800f5f38c73e313`
+**R06_ONE_CANONICAL_LESSON_BLOB:** `7f3139b851f6a1161de0b813eac2fa7909aae9ed`
 **CANONICAL_SOURCE_PATH:** `prototypes/thpt/content-drafts/THPT_G10_CHIV_B09_CANONICAL.md`
 **DERIVED_WEBSITE_MD:** `docs/thpt-preview/sgk/chuong-iv/bai-9.md`
 **PREVIOUS_Q18_RECEIPT:** `prototypes/thpt/ux795/G10_CHIV_B09_CANONICAL_Q18_R05_20261117.md` (immutable R05 historical receipt, **not** second active draft)
@@ -40,4 +40,4 @@ New **4.3 collapsible tip**, not an additional HELP/item ID:
 - `scripts/test-g10-chiv-golden-browser.cjs` verifies **real rendered tab 4** on 390/820/1440: 4.3 is a third closed disclosure, opening reveals explicit **Lỗi thường gặp / Vì sao sai? / Tự kiểm / Ôn và luyện lại** and correct MathJax vector orientation; first two unchanged.
 - `scripts/test-ux795-g10-postmerge-headings.cjs`, isolated QA integration and other source SHA routers must follow `R05→R06` **without rewriting immutable R05**. All exact final HEAD full CI and released Pages B09 artifact required before `P1_VERIFIED`; owner will evaluate P2 separately. Log any failure/fix into the **same active #795** row `B09-F04`.
 
-**AUTHOR_SIGNOFF:** `Q18_AUTHOR_SELF_VERIFIED / SCOPED_B09_F04_CANDIDATE`, not `P2_PASS`, not independent review. The only current authoritative B09 academic manuscript after this change is `prototypes/thpt/content-drafts/THPT_G10_CHIV_B09_CANONICAL.md` Git blob `f166478d4f7b56b273808835aa7d89cc39a80626`, backed by exact derived website Markdown `75d030f668a7e128ed47e7e1fc2cf85019db0bfb`.
+**AUTHOR_SIGNOFF:** `Q18_AUTHOR_SELF_VERIFIED / SCOPED_B09_F04_CANDIDATE`, not `P2_PASS`, not independent review. The only current authoritative B09 academic manuscript after this change is `prototypes/thpt/content-drafts/THPT_G10_CHIV_B09_CANONICAL.md` Git blob `7f3139b851f6a1161de0b813eac2fa7909aae9ed`, backed by exact derived website Markdown `3d79a17e9ba39cd0f46077823800f5f38c73e313`.
