@@ -8,19 +8,19 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: e9433a775e85c124d233537322b5a0a83e54a4e0
+SOURCE_COMMIT: 87f2b37a5e561a52fcd7e890c520abd11fbd2c18
 CATALOG_TOPIC_ID: CD17
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 7ee09cea9c33e2ae520a1a40df694ab7118adb42
+ACADEMIC_SOURCE_BLOB: e065ded2448f800bf649d0e30239591d57233fbe
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC17_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md (AUTHOR_SELF_VERIFIED, NOT independent NotebookLM)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC17_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 110b1cb694875e9d2f8db9e52c35156299a5b09b
+REVIEW_RECEIPT_BLOB: 239a73b05f5f875c02c6ccac19f79ff3adacf447
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: 090fa5c50b30eaeea74f42d690c9a787f321345d
+AUTHOR_A1_A7_BLOB: fd5e82e3a7a0048e65c325fb4582253df77d5ba4
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC17-DISTANCE-VOLUME-FULL-R02_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: cafc009f95cdc75f45666989572dc8d1555f2adb
+AUTHOR_HANDOFF_BLOB: b52729248f40f6aa901621f83c993a0dc62d9620
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_THPT_TOPIC17_FRUSTUM_VOLUME_MODEL_R00_20261113.html
 INTERACTIVE_MODEL_BLOB: 727c05896a9d9bf95385b54559faa22917f1510e
@@ -40,6 +40,12 @@ RELEASE_AUTHORIZATION: NO
 CURRENT_PR: DRAFT_AUTHORING_NOT_MERGED
 
 **AUTHORING source-only R03 QA HOLD, not production.** PLAN22-17 Historical NotebookLM research Topic “Khoảng cách & Thể tích khối đa diện” separate from CĐ16 geometry angle. Source G11 KNTT Tập2 ChVII B26/B27 and integrated end: 12 outcome, 49 unique public canonical IDs (22 original SGK immutable pointers plus 12 Try +12 Practice +3 Written /4); two original B26/B27 SVG, public frustum/prism/pyramid model with 6 DOM assertion PASS. Three learner pages Kiến thức/Luyện tập/Tự kiểm tra, no Topic Core, no prerequisite on CĐ16/Toán12 Oxyz and no private RD1 imported. New Topic Q18 signed self verification only, no independent NotebookLM Topic PASS.
+
+## 18/11/2026 · Fixed orphan technical heading inside Written answer
+
+- Current source `e065ded2448f800bf649d0e30239591d57233fbe`, Q18 `239a73b05f5f875c02c6ccac19f79ff3adacf447`, A1 `fd5e82e3a7a0048e65c325fb4582253df77d5ba4`, one V2 `b52729248f40f6aa901621f83c993a0dc62d9620`.
+- The only source change replaces the technical heading `## D5 — Sáu hình học liệu SVG...` inside the B27 SGK Written `<details>` with an unrendered HTML author-custody comment. All mathematical statements, 49 canonical IDs, full 37 Practice and eight public Selfcheck prompts, SVG and answers/rubrics byte-exact to previous effective source `7ee09cea9c33e2ae520a1a40df694ab7118adb42`.
+- Historical ready STATE `CONTENT_READY` is not new independent reviewer acceptance; A1 author STATE still `BLOCKED_BY_AUTHORING` pending full current HEAD QA/owner gate. No Mastery/RELEASE/merge/deploy authorization.
 
 ## AUTHORING A1–A7
 
