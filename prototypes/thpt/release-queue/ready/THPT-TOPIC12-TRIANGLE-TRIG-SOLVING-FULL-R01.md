@@ -8,18 +8,18 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: f226e396985c6028380977522bbad54dc6a4f86a
+SOURCE_COMMIT: 48123885732f666e973cdaa0f06c0d597012e108
 CATALOG_TOPIC_ID: CD12
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: ec90cab8455768b263f8d57409587c28f250340a
+ACADEMIC_SOURCE_BLOB: 7f537a309fe302941589073bb0e2e9577d323134
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC12_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md (self-QA, not independent Topic NotebookLM review)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC12_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 6974062fc1f127a7b040d653093ffc5f3c40fabf
+REVIEW_RECEIPT_BLOB: f0524226db441d7e6786773288c9a7152343f4c2
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC12-TRIANGLE-TRIG-SOLVING-FULL-R04_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: 25fcfe67a61bff0b7ca81c44c56692a966a62cf7
+AUTHOR_HANDOFF_BLOB: e6bcb2882cf646eabeb17a6b1b780769abea402f
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_A1_A7_BLOB: 2d729da63547714363b615c559ef9bca88b0ddac
+AUTHOR_A1_A7_BLOB: 21556e1018583aa68ec9bec1800fa90532f01ad5
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC12_TRIANGLE_NEW16_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/THPT_G10_CHIII_B05_B06_D1D6_AUTHORING_R01_SNAPSHOT.md
@@ -98,3 +98,8 @@ CURRENT_PR: https://github.com/TMA2015/self-learning-math/pull/840 — DRAFT AUT
 - [ ] AP5_RESPONSIVE_VISUAL
 
 **REGISTRY_GUARD:** Mỗi Topic source-ready dùng 1 packet independent; vì PRs khác cũng sửa đầu `release-queue/REGISTER.md`, RELEASE khi tiếp nhận từng gói phải so latest main và giữ nguyên mọi hàng đã tích hợp. Trước merge/deploy chạy kiểm manifest↔REGISTER và CI trên **combined final HEAD**. Không gộp 11+ Topic vào một gói học thuật, không ghi đè source snapshot của nhau.
+
+
+## R05 · source-active W05 cross-branch owner correction (17/11/2026)
+
+The previous R04 `ec90cab8455768b263f8d57409587c28f250340a` and receipt `6974062fc1f127a7b040d653093ffc5f3c40fabf` remain historical Git evidence. New active Topic12 source/receipt/A1/V2 SHA are the header fields above. Original SGK W05 canonical correction is on SGK ChIII Draft #749 (current source Git blob `569466519ee9a653fa3bcdf874e06619424fbf7b`); historical R01 blob/reviewer remains frozen. Topic12 W05 display-only now points to that one owner, uses the same \\(x=R\\cos\\alpha, y=R\\sin\\alpha,\\alpha=150^\\circ\\) rubric with unchanged 7 points and original result. Check source-only receipt `f0524226db441d7e6786773288c9a7152343f4c2` for precise Q15/Q18 DELTA. Other 33 items, total 34 canonical placements, 12 question-only public selfchecks and existing Topic NEW16 bank untouched; no official readiness/Mastery, no browser/RELEASE/merge/deploy authorization.
