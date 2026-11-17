@@ -75,7 +75,7 @@ Không. AB và CD đối nhau; AB bằng DC.
 
 <!-- LESSON_ID: TOP18-M03; OUTCOME_ID: TOP18-O03; S1_ORIGINAL_OUTCOME: G12-CHII-B06-O03 -->
 
-Cộng vectơ là ghép các độ dời, không cộng số đo chiều dài tùy ý. Quy tắc ba điểm AB+BC=AC phản ánh đi liên tiếp; trong hình hộp, tổng ba cạnh kề ở A đưa đến đỉnh đối diện C′.
+Cộng vectơ là ghép các độ dời có cả độ lớn lẫn hướng, **không cộng độ dài các đoạn thẳng**. Quy tắc ba điểm là \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}\): đi từ A đến B rồi từ B đến C có cùng độ dời với đi thẳng từ A đến C. Trong hình hộp, ba vectơ theo ba cạnh kề tại A cộng lại thành vectơ nối A với đỉnh đối diện C′.
 
 > **Kiến thức cần ghi nhớ**
 >
@@ -84,9 +84,9 @@ Cộng vectơ là ghép các độ dời, không cộng số đo chiều dài t�
 
 **Ví dụ**
 
-**Đề bài:** Trong hình hộp ABCD.A′B′C′D′, ba độ dời AB, AD, AA′ đưa ta tới đỉnh nào?
+**Đề bài:** Trong hình hộp ABCD.A′B′C′D′, tổng ba vectơ \(\overrightarrow{AB}\), \(\overrightarrow{AD}\), \(\overrightarrow{AA'}\) bằng vectơ nào?
 
-**Lời giải:** Trong hình hộp ABCD.A′B′C′D′, đi A→B, rồi B→C, rồi C→C′ có cùng độ dời với A→C′. Vì AB+AD=AC và AC+AA′=AC′, suy AB+AD+AA′=AC′.
+**Lời giải:** Trong hình hộp, \(\overrightarrow{AD}=\overrightarrow{BC}\) và \(\overrightarrow{AA'}=\overrightarrow{CC'}\) vì chúng là các cạnh song song, cùng hướng và cùng độ dài. Vì vậy, tổng đã cho tương ứng với đường đi A→B→C→C′. Theo quy tắc ba điểm, \(\overrightarrow{AB}+\overrightarrow{AD}=\overrightarrow{AC}\), rồi \(\overrightarrow{AC}+\overrightarrow{AA'}=\overrightarrow{AC'}\). Do đó \(\overrightarrow{AB}+\overrightarrow{AD}+\overrightarrow{AA'}=\overrightarrow{AC'}\). **Đây là tổng vectơ, không phải phép cộng ba độ dài cạnh.**
 
 **Vận dụng:** Tính dạng rút gọn của vectơ PQ + vectơ QR.
 
