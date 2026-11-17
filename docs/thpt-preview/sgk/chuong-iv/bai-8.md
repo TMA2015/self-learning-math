@@ -216,10 +216,10 @@
     Vì \(M\) là trung điểm \(BC\), \(\overrightarrow{MB}+\overrightarrow{MC}=\vec0\). Do đó
 
     \[
-    \overrightarrow{AB}+\overrightarrow{AC}=2\overrightarrow{AM}.
+    \overrightarrow{AB}+\overrightarrow{AC}=\overrightarrow{AM}+\overrightarrow{AM}.
     \]
 
-    **Kiểm lại.** Tổng cùng hướng với trung tuyến \(AM\), và độ lớn của tổng bằng hai lần độ dài \(AM\). Không suy kết luận này nếu \(M\) không là trung điểm.
+    **Kiểm lại.** Tổng cùng hướng với trung tuyến \(AM\), và độ lớn của tổng bằng hai lần độ dài \(AM\). Viết tổng của hai vectơ \(\overrightarrow{AM}\) tránh đòi hỏi phép nhân vectơ với một số vốn sẽ được học ở Bài 9. Không suy kết luận này nếu \(M\) không là trung điểm.
 
     ### 3.4. Ví dụ 4 — Ba chặng đường, tổng độ dời khác tổng quãng đường
 
