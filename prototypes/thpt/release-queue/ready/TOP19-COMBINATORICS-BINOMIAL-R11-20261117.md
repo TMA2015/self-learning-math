@@ -9,8 +9,8 @@ QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: BLOCKED_BY_AUTHORING
-SOURCE_COMMIT: 03c0ed4c80f98ca8e21d8b50f73a9250608b50dc
+STATE: CONTENT_READY
+SOURCE_COMMIT: 4f10b2959b5420c44e9f5392135011107b750603
 CATALOG_TOPIC_ID: CD19
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 CURRENT_PR: #897 — AUTHORING DRAFT source-only, no website permission
@@ -24,7 +24,7 @@ AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/TOP19-COMBINATORICS-BINOMIAL-R1
 AUTHOR_HANDOFF_BLOB: a56783a7ce5a7f13adbd259772039deb9fb118d2
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
-BLOCKERS: CURRENT_SOURCE_HEAD_QA_AND_REGISTER_CONFIRMATION_PENDING
+BLOCKERS: NONE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_COUNT: 14
 PRIVATE_RD1_SHA256: 6cc51485931317083b5ba673d490e5688a7538d4731dca29f002e804c0f9271a
@@ -99,3 +99,6 @@ R11 distinct full Topic authoring packet selects candidate source 8f7d149c0359ac
 ## Same-source correction of voluntary T02 explanation
 
 A single sentence in learner optional answer T02 was edited in the *existing* authoring draft file: correct Vietnamese explicitly explains each of four shirts pairs with three badges, so 4·3=12. No new source file was created, no answer/stem/rubric/SGK original bank owner/content_version changed; 56 public canonical IDs +7 question-only public selfcheck replays remain. Existing Q15 matrix, Q18 receipt, A1 metadata and V2 updated. HOLD source-only previous READY for exact HEAD final gate; prior signed R09/R11 snapshots remain Git history. No merge/deploy.
+
+
+**Current AUTHORING source-specific verdict after QA correction:** The only effective learner source is the corrected file already named in ACADEMIC_SOURCE_PATH. All affected academic/PED explanations were read and checked; question stems, answers, rubric and public selfcheck were parity-checked. This READY concerns **authoring source handoff only**. The CI source-lock check on this final HEAD and website/runtime/AP gates are separate and must PASS before RELEASE, merger or deployment; this paragraph grants no such authority.
