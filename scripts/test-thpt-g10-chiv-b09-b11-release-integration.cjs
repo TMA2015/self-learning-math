@@ -39,8 +39,8 @@ assert.equal(extra.length,1,"B09 has exactly one canonical decomposition extensi
 assert.equal(extra[0].item_id,"THPT-G10-B09-P07");
 assert.equal(extra[0].skill,"G10-B09-DECOMP_S1");
 assert(!historical.includes(extra[0].item_id),"P07 cannot duplicate any original R01 item");
-assert.deepEqual(delta.forLesson("10","practice"),[],"B10 must not receive B09 P07");
-assert.deepEqual(delta.forLesson("9","core"),[],"B09 original Core must remain unchanged");
+assert.equal(delta.forLesson("10","practice").length,0,"B10 must not receive B09 P07");
+assert.equal(delta.forLesson("9","core").length,0,"B09 original Core must remain unchanged");
 const r04=text("prototypes/thpt/ux795/G10_CHIV_B09_DECOMP_CANONICAL_DELTA_R04_20261117.md");
 assert(r04.includes("THPT-G10-B09-P07")&&r04.includes("G10-B09-DECOMP_S1")&&
  r04.includes("SOURCE-CANDIDATE")&&r04.includes("not independent reviewer"),
