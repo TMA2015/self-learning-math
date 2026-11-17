@@ -66,7 +66,7 @@ Sinα=−3/5, α thuộc góc phần tư IV; cosα bằng bao nhiêu?
 
 +4/5 vì cos dương ở góc IV.
 
-Nếu ra −4/5, xem lại trục hoành phía phải; luyện THPT-G11-B01-C02 và THPT-TOP06-P02.
+Nếu ra −4/5, xem lại trục hoành phía phải; làm lại Bài 2 và Bài 7 trong phần Luyện tập.
 
 </details>
 
@@ -94,7 +94,7 @@ Bán kính 3, quay 3π/2 rad: cung dài bao nhiêu?
 
 9π/2; góc đã ở radian.
 
-Nếu dùng r×góc độ trực tiếp, đổi 270°=3π/2 rồi tính lại. Luyện THPT-G11-B01-P03 và THPT-TOP06-P03.
+Nếu dùng r×góc độ trực tiếp, đổi 270°=3π/2 rồi tính lại. Hãy làm lại Bài 4 và Bài 8 trong phần Luyện tập.
 
 </details>
 
@@ -130,7 +130,7 @@ Với x=π/2, tanx tồn tại không?
 
 Không, cos(π/2)=0.
 
-Ghi điều kiện trước khi áp dụng đẳng thức phân thức; luyện THPT-G11-B01-P01 và THPT-TOP06-P04.
+Ghi điều kiện trước khi áp dụng đẳng thức phân thức; làm lại Bài 10 và Bài 23 trong phần Luyện tập.
 
 </details>
 
@@ -158,7 +158,7 @@ So sánh sin(−π/3) với sin(π/3).
 
 sin(−π/3)=−√3/2 do sin là hàm lẻ.
 
-Vẽ trục Ox và phản xạ trên đường tròn; luyện THPT-G11-B01-P05 và THPT-TOP06-P05.
+Vẽ trục Ox và phản xạ trên đường tròn; làm lại Bài 20 và Bài 24 trong phần Luyện tập.
 
 </details>
 
@@ -186,7 +186,7 @@ Tính sin75° từ 45°+30°.
 
 (√6+√2)/4.
 
-Nếu ghi sin45°+sin30°, thử u=v=π/2 để tìm phản ví dụ. Luyện THPT-G11-B02-C01 và THPT-TOP06-P06.
+Nếu ghi sin45°+sin30°, thử u=v=π/2 để tìm phản ví dụ. Hãy làm lại Bài 12 và Bài 25 trong phần Luyện tập.
 
 </details>
 
@@ -214,7 +214,7 @@ Viết 2sinx cosx thành hàm của 2x.
 
 sin2x.
 
-Nếu nhầm hệ số 2, thay x=π/4 để kiểm. Luyện THPT-G11-B02-P04/P05 và THPT-TOP06-P07.
+Nếu nhầm hệ số 2, thay x=π/4 để kiểm. Hãy làm lại Bài 17, Bài 18 và Bài 26 trong phần Luyện tập.
 
 </details>
 
@@ -250,7 +250,7 @@ Tập giá trị của y=2cosx−3 là gì?
 
 [−5,−1] do cosx∈[−1,1].
 
-Nếu bỏ mất miền xác định của tan, đặt cosx=0 làm thử phản ví dụ. Luyện THPT-G11-B03-C01 và THPT-TOP06-P08.
+Nếu bỏ mất miền xác định của tan, đặt cosx=0 làm thử phản ví dụ. Hãy làm lại Bài 28 và Bài 39 trong phần Luyện tập.
 
 </details>
 
@@ -278,7 +278,7 @@ Chu kỳ cơ bản của y=cos(4x) là gì?
 
 π/2.
 
-Nếu đo chu kỳ bằng cách nhìn một đỉnh, kiểm đỉnh tiếp theo và điều kiện trên mọi x. Luyện THPT-G11-B03-C03 và THPT-TOP06-P09.
+Nếu đo chu kỳ bằng cách nhìn một đỉnh, kiểm đỉnh tiếp theo và điều kiện trên mọi x. Hãy làm lại Bài 30 và Bài 40 trong phần Luyện tập.
 
 </details>
 
@@ -310,7 +310,7 @@ y=3cos(2x)+4 có giá trị lớn nhất, nhỏ nhất là bao nhiêu?
 
 7 và 1.
 
-Đánh dấu trục giữa/điểm cực trị; nếu nhầm tịnh tiến ngang, giải 3x−π/2=0. Luyện THPT-G11-B03-P02/P04/P05 và THPT-TOP06-P10.
+Nếu tìm sai giá trị lớn nhất, nhỏ nhất của \(y=3\cos(2x)+4\), hãy dùng \(-1\le\cos(2x)\le1\) để được ngay \(1\le y\le7\), rồi làm lại Bài 33 (tập giá trị) và Bài 41 (trục giữa, biên độ và chu kỳ) trong phần Luyện tập. Nếu nhầm chiều dịch pha của ví dụ \(y=1+3\cos(2x+\pi/3)\), hãy viết \(2x+\pi/3=2(x+\pi/6)\) để nhận ra dịch trái \(\pi/6\); luyện thêm Bài 34 về chu kỳ của hàm cos có pha.
 
 </details>
 
@@ -342,7 +342,7 @@ Tanx xác định tại x=π không?
 
 Có, tanπ=0; cotπ mới không xác định.
 
-Ghi bảng điểm loại trước khi nối hình; luyện THPT-G11-B03-P06/P07 và THPT-TOP06-P11.
+Ghi bảng điểm loại trước khi nối hình; làm lại Bài 37, Bài 38 và Bài 42 trong phần Luyện tập.
 
 </details>
 
@@ -378,7 +378,7 @@ Giải cosx=0 trên ℝ.
 
 x=π/2+kπ (k∈ℤ).
 
-Nếu chỉ viết một nghiệm, quay thêm chu kỳ; nếu |a|>1 thì vô nghiệm. Luyện THPT-G11-B04-C01/C02 và THPT-TOP06-P12.
+Nếu chỉ viết một nghiệm, quay thêm chu kỳ; nếu |a|>1 thì vô nghiệm. Hãy làm lại Bài 44, Bài 45 và Bài 60 trong phần Luyện tập.
 
 </details>
 
@@ -406,7 +406,7 @@ Giải tan(2x)=0.
 
 x=kπ/2, k∈ℤ; mọi nghiệm nằm trong miền tan.
 
-Không nhân chéo cho cos=0; luyện THPT-G11-B04-C03/C04 và THPT-TOP06-P13.
+Không nhân chéo cho cos=0; làm lại Bài 46, Bài 47 và Bài 61 trong phần Luyện tập.
 
 </details>
 
@@ -434,7 +434,7 @@ Giải 2sinx cosx=0.
 
 x=kπ/2, k∈ℤ; hoặc sinx=0 (kπ) hoặc cosx=0 (π/2+kπ).
 
-Nếu đang muốn chia cho sinx, tách trường hợp sinx=0 trước. Luyện THPT-G11-B04-P01/P02/P08 và THPT-TOP06-P14.
+Nếu định chia hai vế cho \(\sin x\), hãy xét riêng trường hợp \(\sin x=0\) trước để không mất nghiệm. Làm lại Bài 62 (phương trình phân thức cần lọc điểm mẫu bằng 0), rồi Bài 55 (điều kiện xác định của hai biểu thức tang) trong phần Luyện tập; không chia hoặc nhân với biểu thức có thể bằng 0 khi chưa xét điều kiện.
 
 </details>
 
@@ -462,7 +462,7 @@ Giải sinx=0 trên [0,2π).
 
 x=0,π; loại 2π.
 
-Vẽ dãy nghiệm trên trục số và đánh dấu đầu mút; luyện THPT-G11-B04-P06/P07 và THPT-TOP06-P15.
+Vẽ dãy nghiệm trên trục số và đánh dấu đầu mút; làm lại Bài 53, Bài 54 và Bài 63 trong phần Luyện tập.
 
 </details>
 
@@ -490,7 +490,7 @@ Trong mô hình đó, h(12) bằng bao nhiêu?
 
 4,2 m, vì cos2π=1.
 
-Nếu đếm chu kỳ sai, so pha ở t=0 và t=12; nếu viết t<0 ngoài phạm vi thì đọc miền. Luyện THPT-G11-B03-P08, THPT-G11-B04-P09 và THPT-TOP06-P16.
+Nếu đếm chu kỳ sai, so pha ở t=0 và t=12; nếu viết t<0 ngoài phạm vi thì đọc miền. Hãy làm lại Bài 43, Bài 56 và Bài 64 trong phần Luyện tập.
 
 </details>
 
