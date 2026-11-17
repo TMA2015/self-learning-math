@@ -17,7 +17,7 @@ Under `HELP-G10-B07-01` (mistake: direction/point of origin), learner-visible te
 
 Under `HELP-G10-B07-02` (mistake: collinearity/orientation/zero-vector), identifiers `B07-P05`, `B07-P04` replaced with bank-matched descriptions "hai vectơ cùng hướng nhưng khác độ dài", "quy ước vectơ-không". Same Practice-to-Practice order and link are retained.
 
-Exactly **two complete visible sentences** are replaced in two D6 closed tips. Both original HELP canonical IDs `HELP-G10-B07-01` / `HELP-G10-B07-02` preserved, **five public First Try `THPT-G10-CHIV-TRY01..TRY05` question/answer bodies byte-identical**. All other source text byte-identical, including mathematical formula and 4 new transfer examples. No new item added; no private RD1 published; no change to Mastery, Firebase, Golden, original SVG or JS.
+Exactly **two complete visible sentences** are replaced in two D6 closed tips. Both original HELP canonical IDs `HELP-G10-B07-01` / `HELP-G10-B07-02` preserved, **five public First Try `THPT-G10-CHIV-TRY01`, `THPT-G10-CHIV-TRY02`, `THPT-G10-CHIV-TRY03`, `THPT-G10-CHIV-TRY04`, `THPT-G10-CHIV-TRY05` question/answer bodies byte-identical**. All other source text byte-identical, including mathematical formula and 4 new transfer examples. No new item added; no private RD1 published; no change to Mastery, Firebase, Golden, original SVG or JS.
 
 ### QA / release requirements
 
