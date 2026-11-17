@@ -1,18 +1,18 @@
 # CĐ2 R06 — AUTHORING numbering-only Q18 custody
 
 CURRENT_SOURCE_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R06_NUMBERING_CONSISTENT_20261116.md
-CURRENT_SOURCE_BLOB: 41a3d0497057217368ba63fecfa43d118f3e4519
+CURRENT_SOURCE_BLOB: ec8a640c65f66e1f743c8af155642aac6a4170c3
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC02_R06_NUMBERING_DELTA_A_Q18_20261116.md
-CURRENT_Q18_RECEIPT_BLOB: 09ad994ded632d4f9951f4bb53e3872e64e82db3
+CURRENT_Q18_RECEIPT_BLOB: 7752de431df0e1d11e2ebe67390781c6f6c7f1d9
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
-DELTA_CLASS: DELTA_A_UI
+DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
 PREVIOUS_AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R04_AUTHORING_ONLY_CUSTODY_METADATA_20261113.md
 PREVIOUS_AUTHOR_METADATA_BLOB: d6b967c73272d57664b070b4163fa652deddfdaf
-AUTHORING_STATUS: NUMBERING_DELTA_A_SOURCE_EQUIVALENT
+AUTHORING_STATUS: R06_FORMAL_KNOWLEDGE_TARGETED_Q18_AUTHOR_SELF_VERIFIED
 RELEASE_AUTHORIZATION: NO
 
-Original A1–A7/SGK/outcome/item source matrix below is inherited **unaltered**; only current learner snapshot formatting and Q18 source custody above changed. User-facing headings are now page H1, numbered group H2 and child H3, with Practice Bài labels not H4. Old author metadata Git blob `d6b967c73272d57664b070b4163fa652deddfdaf` and old academic source/Q18 remain immutable. No independent reviewer claim or RELEASE approval.
+Original A1–A7/SGK/outcome/item source matrix below is inherited from its frozen baseline, but current learner source now has **four genuine formal mathematical statements and one student recap** (TOP02-O01/O02/O03/O09 and applications) alongside the already accepted H1/H2/H3 numbering. Current Practice, canonical 38 IDs, rubric, Selfcheck 16 stems and SVGs are unchanged. Updated DELTA_C Q18 self-verification refers only to the changed Knowledge scope; old source/Q18 history is preserved. No independent reviewer or RELEASE claim.
 
 ---
 
