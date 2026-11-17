@@ -20,7 +20,11 @@ Ta bắt đầu bằng câu hỏi “đâu là một hàm số?”, rồi lần 
 
 Khi nào các cặp số lặp lại đầu vào vẫn xác định một hàm số?
 
-Hãy hình dung một bảng ghi nhiệt độ ở từng thời điểm. Để bảng thực sự mô tả một quy luật kiểu hàm số, **mỗi đầu vào** phải có **đúng một đầu ra**. Hai thời điểm khác nhau có thể cùng nhiệt độ; điều không được phép là cùng một thời điểm lại có hai nhiệt độ khác nhau trong cùng một quy luật đang xét. Đó là ý nghĩa của hàm \(f:D\to\mathbb R\): mỗi \(x\in D\) nhận đúng một giá trị \(f(x)\).
+Hãy hình dung một bảng ghi nhiệt độ ở từng thời điểm. Để bảng thực sự mô tả một quy luật kiểu hàm số, **mỗi đầu vào** phải có **đúng một đầu ra**. Hai thời điểm khác nhau có thể cùng nhiệt độ; điều không được phép là cùng một thời điểm lại có hai nhiệt độ khác nhau trong cùng một quy luật đang xét. 
+
+> **ĐỊNH NGHĨA — Hàm số.** Hàm \(f:D\to\mathbb R\) gán cho **mỗi** \(x\in D\) **đúng một** giá trị \(f(x)\). Hai đầu vào khác nhau được phép có cùng đầu ra; một đầu vào không thể tương ứng hai đầu ra khác nhau trong cùng một hàm số.
+
+
 
 Xét bảng các cặp \((0,2),(1,4),(1,4)\). Dù \(x=1\) được ghi hai lần, cả hai lần đều cho 4, nên bảng vẫn phù hợp với một hàm số. Nếu thay một cặp thành \((1,7)\) thì cùng đầu vào 1 sẽ có hai đầu ra khác nhau: bảng không còn định nghĩa một hàm. Trên đồ thị, ta có thể hình dung điều kiện ấy bằng việc mỗi đường thẳng đứng cắt đồ thị tại **không quá một điểm**.
 
@@ -46,7 +50,11 @@ Có. Ba đầu vào 1, 2, 3 khác nhau và mỗi đầu vào chỉ có một đ�
 
 Tại sao căn bằng 0 được nhận, còn mẫu bằng 0 phải loại?
 
-Để có một hàm số, trước hết cần biết những đầu vào nào biểu thức cho phép. Căn số học và mẫu số tạo ra điểm bị loại; dấu ≥ của căn không được biến thành >. Ta đã biết căn √u đòi u≥0, mẫu v≠0. Với √A(x)/B(x) cần đồng thời A(x)≥0 và B(x)≠0, nên D là **giao** các miền; luôn xét biểu thức ban đầu trước khi rút gọn. Ở đầu mút căn bằng0 là hợp lệ nếu mẫu khác0.
+Để có một hàm số, trước hết cần biết những đầu vào nào biểu thức cho phép. Căn số học và mẫu số tạo ra điểm bị loại; dấu ≥ của căn không được biến thành >. Ta đã biết căn √u đòi u≥0, mẫu v≠0. 
+
+> **ĐIỀU KIỆN — Miền xác định của phân thức có căn.** Với \(f(x)=\dfrac{\sqrt{A(x)}}{B(x)}\), điều kiện xác định trên số thực là \(A(x)\ge0\) **và** \(B(x)\ne0\). Miền xác định là giao của hai điều kiện, phải xét trên biểu thức gốc trước khi rút gọn.
+
+ Ở đầu mút căn bằng0 là hợp lệ nếu mẫu khác0.
 
 Chẳng hạn, √(x+1)/(x−2): cần x≥−1, x≠2 ⇒ D=[−1,2)∪(2,+∞). Nhận x=−1 vì căn bằng0, mẫu−3.
 
@@ -192,7 +200,11 @@ Nếu lấy đỉnh vô điều kiện, khoanh D trước khi chọn; làm lại
 
 Tại sao cần miền đối xứng để kết luận hàm chẵn hoặc lẻ?
 
-Đồ thị cũng có thể giữ nguyên hình dạng khi phản xạ qua trục hoặc qua gốc. Phỏng đoán một hình đối xứng không thay được chứng minh với mọi x. Ta đã biết miền D đối xứng qua0; so f(−x) và f(x). Chẵn khi D đối xứng và f(−x)=f(x), đồ thị đối xứng trục Oy. Lẻ khi D đối xứng và f(−x)=−f(x), đồ thị đối xứng gốc O. Miền không đối xứng thì không suy chẵn/lẻ chỉ từ công thức.
+Đồ thị cũng có thể giữ nguyên hình dạng khi phản xạ qua trục hoặc qua gốc. Phỏng đoán một hình đối xứng không thay được chứng minh với mọi x. Ta đã biết miền D đối xứng qua0; so f(−x) và f(x). 
+
+> **ĐỊNH NGHĨA — Hàm chẵn và hàm lẻ.** Nếu miền \(D\) đối xứng qua 0 (\(x\in D\Rightarrow -x\in D\)), hàm \(f\) *chẵn* khi \(f(-x)=f(x)\) với mọi \(x\in D\), và *lẻ* khi \(f(-x)=-f(x)\) với mọi \(x\in D\). Đồ thị tương ứng đối xứng qua trục \(Oy\) hoặc gốc \(O\).
+
+ Miền không đối xứng thì không suy chẵn/lẻ chỉ từ công thức.
 
 Chẳng hạn, f(x)=x⁴−2x² chẵn do f(−x)=f(x); x³ lẻ do f(−x)=−f(x). Tính trực tiếp đáng tin hơn nhìn sơ đồ phác.
 
@@ -519,6 +531,13 @@ t≥5, nên min Q(5)=6; không chọn Q(3)=2 vì ngoài miền.
 Nếu vẫn chọn đỉnh không hợp lệ, viết lại tập khả thi và thử các biên; làm lại Bài 34, Bài 35 và Bài 38 trong phần Luyện tập.
 
 </details>
+
+> **Kiến thức cần ghi nhớ**
+>
+> - **Hàm số:** mỗi đầu vào \(x\in D\) cho đúng một đầu ra; tập giá trị là những giá trị thực sự đạt được \(\{f(x):x\in D\}\), không tự đồng nhất với tập đích.
+> - **Miền xác định:** căn bậc chẵn cần biểu thức trong căn không âm; mẫu số phải khác 0. Với hàm từng đoạn, **nhánh chứa dấu bằng** xác định giá trị ở mốc.
+> - **Đọc và biến đổi đồ thị:** \(f(x)+k\) dịch lên/xuống; \(f(x-h)\) dịch phải \(h\) và cũng dịch miền xác định; \(-f(x)\) phản xạ qua \(Ox\), \(f(-x)\) phản xạ qua \(Oy\). Luôn kiểm tác động lên điểm và miền.
+> - **Biến thiên và cực trị:** xét mọi cặp trên khoảng, không suy từ vài điểm; khi tối ưu chỉ nhận ứng viên thuộc **miền khả thi** (đặc biệt khi biến nguyên).
 
 # Luyện tập
 
