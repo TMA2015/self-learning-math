@@ -13,7 +13,7 @@ const root=path.resolve(__dirname,"..");
 const base=process.env.SLM_CHIV_URL||"http://127.0.0.1:8765";
 const goldenCss="44442773ac31eb1a46f0cab699a7d2c7974a5f37";
 const sources={
- 7:"6fefa4cb27f4d4603cd3b461c8592d732c603f8e",
+ 7:"4640d5beeb2c43c2e65a4a58e400cf99a4e6efd9",
  8:"9cf96a0e81bea14903a64385359f738145e5a048",
  9:"2529b915e4089862e1a48e685ba5dc88d5450558",
  10:"ceaa76688e73274c9cf2d3116c41c6d4d0ac2726",
@@ -186,6 +186,45 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
         where+" source-matched public bank tasks described naturally");
        assert.equal(await article.getAttribute("data-g10-b07-keyboard-tabs"),"true",
         where+" B07 accessible Left/Right keyboard tabs enabled");
+       const physicalFig=blocks.nth(0).locator('img[src*="THPT_G10_B07_FORCE_VELOCITY_REPRESENTATION_D5_R04.svg"]');
+       assert.equal(await physicalFig.count(),1,
+        where+" B07 new original-force/velocity teaching figure in Discovery");
+       await labels.nth(0).click();await physicalFig.scrollIntoViewIfNeeded();
+       await physicalFig.evaluate(async el=>{if(el.decode)await el.decode();});
+       assert(await physicalFig.evaluate(el=>el.complete&&el.naturalWidth>0),
+        where+" B07 new physical-vector figure decodes and is accessible");
+       const selectedFigure=await physicalFig.evaluate(el=>el.currentSrc);
+       assert(selectedFigure.includes(width<=600?
+         "THPT_G10_B07_FORCE_VELOCITY_MOBILE_D5_R04.svg":
+         "THPT_G10_B07_FORCE_VELOCITY_REPRESENTATION_D5_R04.svg"),
+        where+" responsive picture selects correct phone/desktop source");
+       assert.equal(await blocks.nth(0).locator('picture source[media="(max-width: 600px)"]').count(),1,
+        where+" B07 mobile SVG fallback exists");
+       const firstText=await blocks.nth(0).innerText();
+       await labels.nth(1).click();
+       const formalText=await blocks.nth(1).innerText();
+       await labels.nth(2).click();
+       const solutionText=await blocks.nth(2).innerText();
+       await labels.nth(0).click();
+       assert(firstText.includes("20 N")&&firstText.includes("12 km/h")&&
+        formalText.includes("Biểu diễn lực và vận tốc bằng vectơ")&&
+        solutionText.includes("6 m/s")&&solutionText.includes("3 cm")&&solutionText.includes("1 cm"),
+        where+" SGK force/velocity ability taught with method, units and worked transfer");
+       const leakedTex=await blocks.evaluateAll(panels=>{
+        const bad=[],slash=String.fromCharCode(92);
+        for(const panel of panels){
+         const tree=document.createTreeWalker(panel,NodeFilter.SHOW_TEXT);
+         let node;
+         while((node=tree.nextNode())){
+          if(node.parentElement?.closest(".arithmatex,script,style"))continue;
+          const t=node.textContent||"";
+          if(["overrightarrow","cdot","sqrt","vec","["].some(x=>t.includes(slash+x)))
+           bad.push(t.trim().slice(0,100));
+         }
+        }
+        return bad;
+       });
+       assert.deepEqual(leakedTex,[],where+" B07 no raw unrendered TeX in all four tabs");
        const vectorFig=blocks.nth(1).locator('img[src*="THPT_G10_B07_PARALLELOGRAM_EQUAL_OPPOSITE_D5_R01.svg"]');
        assert.equal(await vectorFig.count(),1,where+" original B07 figure kept with exact SGK equality rule");
        await labels.nth(1).click();await vectorFig.scrollIntoViewIfNeeded();

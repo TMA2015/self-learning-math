@@ -7,7 +7,7 @@ const {expectedG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
  */
 const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path"),crypto=require("node:crypto");
 const cases=[
- {n:7,count:9,hash:"bcee085f",sha:"76a449bbc3386e7dc244b1e981dc55f454605350",headings:5,tryCount:5,helpCount:2,figs:1},
+ {n:7,count:9,hash:"bcee085f",sha:"76a449bbc3386e7dc244b1e981dc55f454605350",headings:5,tryCount:5,helpCount:2,figs:2},
  {n:8,count:10,hash:"e7848abf",sha:"9495a09548acffeea2763816336fc22859933890",headings:5,tryCount:5,helpCount:2,figs:1},
  {n:10,count:24,hash:"fe5bcbec",sha:"ff46465388cf3882af931fc181bb635413f7d521",headings:4,tryCount:6,helpCount:3,figs:2}
 ];
@@ -73,6 +73,8 @@ for(const c of cases){
   "../prototypes/thpt/ux795/G10_CHIV_B07_HELP_LABELS_DELTA_A_R03_20261117.md"),"utf8"):
   c.n===8?fs.readFileSync(path.join(__dirname,
   "../prototypes/thpt/ux795/G10_CHIV_B08_MATHJAX_DISPLAY_DELTA_A_R03_20261117.md"),"utf8"):null;
+ const r04=c.n===7?fs.readFileSync(path.join(__dirname,
+  "../prototypes/thpt/ux795/G10_CHIV_B07_S1_FORCE_VELOCITY_ENRICHMENT_R04_20261117.md"),"utf8"):null;
  const field=(s,k)=>s?.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
  const signedR02=!!r02&&field(r02,"R01_APPROVED_SOURCE_BLOB")===editorial[c.n].sha&&
   field(r02,"R02_CANDIDATE_SOURCE_BLOB")===blob(src);
@@ -83,11 +85,19 @@ for(const c of cases){
   c.n===8&&field(r02,"R01_APPROVED_SOURCE_BLOB")===editorial[8].sha&&
   field(r03,"R02_PUBLISHED_SOURCE_BLOB")===field(r02,"R02_CANDIDATE_SOURCE_BLOB")&&
   field(r03,"R03_CANDIDATE_SOURCE_BLOB")===blob(src);
- const current=editorial[c.n]&&(blob(src)===editorial[c.n].sha||signedR02||signedR03);
- if(signedR02||signedR03)assert.equal(signedR03?
+ const signedR04=c.n===7&&
+  field(r04,"BASELINE_R03_SOURCE_BLOB")===field(r03,"R03_SOURCE_BLOB")&&
+  field(r04,"R04_SOURCE_BLOB")===blob(src)&&
+  field(r04,"NEW_SVG_BLOB")===blob(fs.readFileSync(path.join(__dirname,
+  "../docs/assets/images/thpt/THPT_G10_B07_FORCE_VELOCITY_REPRESENTATION_D5_R04.svg")))&&
+  field(r04,"MOBILE_SVG_BLOB")===blob(fs.readFileSync(path.join(__dirname,
+  "../docs/assets/images/thpt/THPT_G10_B07_FORCE_VELOCITY_MOBILE_D5_R04.svg")))&&
+  src.includes('media="(max-width: 600px)"');
+ const current=editorial[c.n]&&(blob(src)===editorial[c.n].sha||signedR02||signedR03||signedR04);
+ if(signedR02||signedR03||signedR04)assert.equal(signedR04?field(r04,"R04_SOURCE_BLOB"):signedR03?
   field(r03,c.n===7?"R03_SOURCE_BLOB":"R03_CANDIDATE_SOURCE_BLOB"):
   field(r02,"R02_CANDIDATE_SOURCE_BLOB"),expectedG10KnowledgeBlob(c.n,c.sha),
-  "B07/B08 exact R01→R02→R03 source receipt must match Q18 router");
+  "B07/B08 exact R01→R02→R03→R04 source receipt must match Q18 router");
   if(current){
   const headings=[...middle.matchAll(/^    ### ([^\n]+)$/gm)].map(m=>m[1]);
   assert.deepEqual(headings,editorial[c.n].sections,"B"+c.n+": official S1 book sections changed");

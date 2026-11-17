@@ -219,6 +219,24 @@ function expectedG10KnowledgeBlob(lesson,legacy){
     "THPT-G10-CHIV-TRY01","THPT-G10-CHIV-TRY05"]){
     assert(visual.includes(token),"B07 R03 visual receipt missing "+token);
   }
+  const r04Path=path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B07_S1_FORCE_VELOCITY_ENRICHMENT_R04_20261117.md");
+  if(fs.existsSync(r04Path)){
+   const r04=fs.readFileSync(r04Path,"utf8");
+   const field04=k=>r04.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(field04("BASELINE_R03_SOURCE_BLOB"),source,
+    "B07 R04 must extend immutable R03 D6/source snapshot");
+   const next=field04("R04_SOURCE_BLOB");
+   assert(/^[a-f0-9]{40}$/.test(next||"")&&next!==source,
+    "B07 R04 requires distinct source-locked learner math/S1 delta");
+   for(const token of ["Q18_OWNER_SELF_VERIFIED_ENRICHMENT","DELTA_C_ACADEMIC_MATERIAL",
+    "THPT_G10_B07_FORCE_VELOCITY_REPRESENTATION_D5_R04.svg",
+    "THPT-G10-CHIV-TRY01","THPT-G10-CHIV-TRY05"]){
+    assert(r04.includes(token),
+     "B07 R04 source/assessment receipt lacks "+token);
+   }
+   return next;
+  }
   return source;
  }
 
