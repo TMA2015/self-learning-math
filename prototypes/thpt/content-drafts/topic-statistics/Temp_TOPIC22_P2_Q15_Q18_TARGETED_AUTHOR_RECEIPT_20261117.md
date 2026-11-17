@@ -7,8 +7,9 @@ STANDARD_BLOB: 5a80b20ce99be3179d03d56a73fa57b6f4882fd8
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 DELTA_CLASS: DELTA_C_PED_FIGURE_PLACEMENT_PLUS_EDITORIAL_METADATA
 REVIEW_SCOPE: Q03_Q07_Q12_Q15_LEARNER_GUIDANCE
-SOURCE_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R10_P2_LEARNER_GUIDANCE_FIGURE_CANDIDATE_20261117.md
-SOURCE_BLOB: 58619b8b613b382fbdd4874670bdc24d54ac1c62
+SOURCE_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md
+SOURCE_BLOB: b875ca4e726ab14071f17a2d8a85d6950e3b4ba9
+SOURCE_BRANCH: authoring/topic-descriptive-statistics-g10-g12-r00-20261111
 IMMUTABLE_BASELINE_SOURCE_BLOB: b5713f0c2a1aa6a9fa7a7d63f6e6878bdf8d338b
 IMMUTABLE_BASELINE_Q18_RECEIPT_BLOB: d311899df9a71fc41683df85f6fbd49db30404aa
 AFFECTED_SCOPE_P0: 0
@@ -42,3 +43,8 @@ AUTHOR_SIGNOFF: CHATGPT_AUTHORING_TOP22_P2_Q03_Q07_Q12_Q15_LEARNER_GUIDANCE_2026
 VERDICT: TARGETED_AUTHOR_SELF_QA_PASS, GLOBAL_V2_REGISTER_HOLD, CONTENT_READY_NO, NO_MERGE_NO_DEPLOY.
 
 Review prompt (four sentences): Read this candidate exact SOURCE_BLOB against the original SOURCE_BLOB, not simply a title or old receipt. Verify each learner-visible change, the matching original worked problem/figure and unchanged mathematical data, conditions, answers, rubric and item IDs. Confirm original public selfcheck has no exposed key or protected assessment activation, and note all remaining P2 governance limitations. Report any affected P0/P1/P2 with line, item/outcome and MINIMAL_DELTA; do not infer global CONTENT_READY or website release.
+
+
+## DIRECT_ORIGINAL_SOURCE_CONSOLIDATION (17/11/2026)
+
+Owner's one-live-draft rule: exactly two verified figures were moved in the ORIGINAL Topic22 authoring file to the mathematically matching boxplot sample and n=20 grouped-frequency explanation. Seven learner rubric suffixes no longer mention “Mastery”. Image source paths/order remain 2/2, all **114 canonical/source placements**, **127 opt-in solution disclosures** retained, public selfcheck section byte-identical to original. Confirmed actual mathematics boxplot sample 1,2,2,4,5,8,30 gives Q1=2,Q3=8,IQR=6,fence=17, value30 outlier; frequency 4,6,8,2 gives cumulative 4,10,18,20. No stem, key, condition, rubric points, owner or item version changed. Old candidate is obsolete and is to be deleted, not a parallel release input. **Q01_S1_PRINT_PDF_INDEX_HISTORICAL_P2=HOLD** because original printed SGK page/actual PDF-index still not available for direct source verification. Full Content Ready, external independent review, browser SVG/MathJax render remain unverified. No merge/deploy.
