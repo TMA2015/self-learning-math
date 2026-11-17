@@ -1,23 +1,23 @@
 # AUTHORING-only metadata — CĐ13 Vectơ hình học phẳng và không gian R04
 
-**Scope:** one self-sufficient Topic in three learner pages, 16 modules/outcomes, 16 self-tries, 16 new Practice and 4 Written rubrics /7; active learner source 9a558f553bd6a4a58701a6bae490717ba5a52540. Internal IDs/receipts are not learner-visible.
+**Scope:** one self-sufficient Topic in three learner pages, 16 modules/outcomes, 16 self-tries, 16 new Practice and 4 Written rubrics /7; active learner source 593484fbe67b168fae677652db0ef3871bcf5695. Internal IDs/receipts are not learner-visible.
 
 CONTENT_REVISION: R04
 PUBLIC_NEW20_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_NEW20_CANONICAL_BANK_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df
 Q18_R04_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-Q18_R04_RECEIPT_BLOB: 5e8ad3dfbc24d008f32e06e18215c96c543e7278
+Q18_R04_RECEIPT_BLOB: 3161e1e8f76ded9a6396eb48424d713d4db55638
 G10_SOURCE_EXTERNAL_PR: 750
 G10_SOURCE_EXTERNAL_BRANCH: authoring/g10-chiv-ped-r02-24-outcomes-20261105
-AUTHORING_STATUS: R04_NUMBERING_DELTA_A_AUTHOR_SELF_VERIFIED
+AUTHORING_STATUS: R04_VECTOR_CONCEPT_DELTA_C_TARGETED_AUTHOR_SELF_VERIFIED
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 9a558f553bd6a4a58701a6bae490717ba5a52540
-SOURCE_BLOB: 9a558f553bd6a4a58701a6bae490717ba5a52540
+ACADEMIC_SOURCE_BLOB: 593484fbe67b168fae677652db0ef3871bcf5695
+SOURCE_BLOB: 593484fbe67b168fae677652db0ef3871bcf5695
 ORIGINAL_G10_SGK_SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9
 ORIGINAL_G12_SGK_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
@@ -215,6 +215,12 @@ Original SGK sources are third-party reviewer-verified *within their old snapsho
 - This is source/format authoring QA, not a new academic standard, independent reviewer, or real website/browser QA. No merge/deploy.
 
 
+## R06 · current learner vector definitions and recall / Q18
+
+- Exact one current learner source `593484fbe67b168fae677652db0ef3871bcf5695` and scoped Q18 `3161e1e8f76ded9a6396eb48424d713d4db55638`, same NEW20 bank `136bd4552118e5dba6b18b58965be7d37878e9df` and G10/G12 original banks. `DELTA_C_ACADEMIC_MATERIAL` only within Knowledge: formal definitions vector/equality and three-point property plus concise recall.
+- 52 canonical Practice items, answers/solutions/rubrics/D6 and 16 public selfcheck stems byte-exact against previous effective learner `9a558f553bd6a4a58701a6bae490717ba5a52540`. Four SVG references, disclosure count and question IDs unchanged. External SGK original PR #750 remains a RELEASE intake dependency on combined HEAD.
+- Owner-effective Q18 targeted author scope PASS for the clarified concepts/conditions (zero-vector convention, no scalar/vector mixup, two-nonzero-vector angle, end-point displacement). No independent NotebookLM Topic PASS or website acceptance claimed.
+
 ## R05 · Q15 canonical bank vector equations / Q18 source lock (17/11/2026)
 
-Current learner source `9a558f553bd6a4a58701a6bae490717ba5a52540`, NEW20 single canonical bank `136bd4552118e5dba6b18b58965be7d37878e9df`, affected-scope Q18 receipt `5e8ad3dfbc24d008f32e06e18215c96c543e7278`. This replaces 9 ambiguous vector/scalar notations in one bank (8 stems/8 solution paragraphs), preserving the 20 original IDs and 4 Written /7 rubrics. Verified 20 G10 original SGK item bodies, 12 G12 original item bodies and 20 NEW20 bank bodies match the 52 learner source placements by ID. Original G10 #750 is Draft and still a source availability dependency before RELEASE. Historical R04 source/Q18 SHA remains historical; `Q15_52_SOURCE_PARITY_PASS` does not mean whole-topic math/PED or browser QA newly passed.
+Previous R05 learner snapshot `9a558f553bd6a4a58701a6bae490717ba5a52540`, NEW20 single canonical bank `136bd4552118e5dba6b18b58965be7d37878e9df`, affected-scope Q18 receipt `5e8ad3dfbc24d008f32e06e18215c96c543e7278`. This replaces 9 ambiguous vector/scalar notations in one bank (8 stems/8 solution paragraphs), preserving the 20 original IDs and 4 Written /7 rubrics. Verified 20 G10 original SGK item bodies, 12 G12 original item bodies and 20 NEW20 bank bodies match the 52 learner source placements by ID. Original G10 #750 is Draft and still a source availability dependency before RELEASE. Historical R04 source/Q18 SHA remains historical; `Q15_52_SOURCE_PARITY_PASS` does not mean whole-topic math/PED or browser QA newly passed.
