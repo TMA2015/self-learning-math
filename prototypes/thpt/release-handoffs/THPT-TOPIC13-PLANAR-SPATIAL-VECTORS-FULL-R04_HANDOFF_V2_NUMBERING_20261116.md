@@ -13,13 +13,13 @@ CATALOG_TOPIC_ID: CD13
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 593484fbe67b168fae677652db0ef3871bcf5695
+ACADEMIC_SOURCE_BLOB: 4722b4ab923e162733a100610c3d825cbe9b67f5
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 3161e1e8f76ded9a6396eb48424d713d4db55638
+REVIEW_RECEIPT_BLOB: 32ad95d970d2e1e948f325916f0f12486966dc06
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_A1_A7_BLOB: 8c1942bbd332eee25d4d7e5dd0d21945297842da
+AUTHOR_A1_A7_BLOB: 45c0255dac9c8c22efbd5b8fa4138ced94d74ab5
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: 8c1942bbd332eee25d4d7e5dd0d21945297842da
+AUTHOR_METADATA_BLOB: 45c0255dac9c8c22efbd5b8fa4138ced94d74ab5
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df
 G10_SGK_CROSS_PR_DEPENDENCY: 750
@@ -145,6 +145,11 @@ RELEASE_AUTHORIZATION: NO
 - G10 SGK KNTT tập1 ChIV: B07 printed46–50, B08 51–54, B09 55–59, B10 60–65, B11 66–70, final71–72; SBT B07 printed45–47, B08 48–50, B09 51–54, B10 55–58, B11 59–65, final66–71. Print pages from original reviewed G10 R03 source `96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9`. Original G10 R02 page discrepancy is documented in source history; not reinterpreted.
 - G12 SGK KNTT tập1 ChII: B06 printed45–59/PDF47–61, B07 printed60–66/PDF62–68, B08 printed67–72/PDF69–74, final73–74/PDF75–76; SBT B06 38–45/PDF36–43, B07 46–49/PDF44–47, B08 50–54/PDF48–52, final55–58/PDF53–56. Source `856a37bd16d2746ffc2e12906de18d1f4338a3b6`.
 - S1 originally scanned/checked under those earlier SGK review packets, **not freshly PDF-scanned in this CĐ13 authoring turn**. Original independent Academic/PED PASS is source-scoped SGK; no new reviewer PASS for this narrow Topic.
+
+## 18/11/2026 — current source-bound Practice group correction
+
+- Effective learner source `4722b4ab923e162733a100610c3d825cbe9b67f5` with exactly two Practice H2 headings changed to numbered groups 1/2. All 52/52 canonical question/answer/solution/rubric bodies, 16 public replay-only selfchecks, source item IDs, four SVG and D6 unchanged.
+- Current signed Q18 `32ad95d970d2e1e948f325916f0f12486966dc06` and A1 metadata `45c0255dac9c8c22efbd5b8fa4138ced94d74ab5`. Historic vector concept and old-source source QA remain source-specific, not an independent new NotebookLM full-Topic verdict. DELTA_A_UI only on this heading correction; no new bank, private RD1 or mastery.
 
 ## D1_D6_EVIDENCE
 
