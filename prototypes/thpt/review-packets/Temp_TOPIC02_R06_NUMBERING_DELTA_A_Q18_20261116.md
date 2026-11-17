@@ -1,4 +1,4 @@
-# CĐ2 R06 Q18 AUTHOR_SELF_VERIFIED — numbering DELTA_A_UI · 16/11/2026
+# CĐ2 R06 Q18 AUTHOR_SELF_VERIFIED — formal statements and key-recall QA · 17/11/2026
 
 PACKET_ID: THPT-TOPIC02-INEQ-QUAD-REGION-FULL-R01
 CONTENT_REVISION: R06
@@ -7,23 +7,31 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 41a3d0497057217368ba63fecfa43d118f3e4519
-ACADEMIC_SOURCE_BLOB: 41a3d0497057217368ba63fecfa43d118f3e4519
+SOURCE_BLOB: ec8a640c65f66e1f743c8af155642aac6a4170c3
+ACADEMIC_SOURCE_BLOB: ec8a640c65f66e1f743c8af155642aac6a4170c3
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R05_FULL_LEARNER_VISIBLE_38_CANONICAL_20261115.md
 PREVIOUS_SOURCE_BLOB: eb5a01b50262dc4b151b3915f5a5e4b436432374
 PREVIOUS_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC02_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
 PREVIOUS_Q18_RECEIPT_BLOB: 19a8ce12552d94add042dc2127a054d20cd29027
-DELTA_CLASS: DELTA_A_UI
+DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
 AUTHOR_QA_H2_H3_SEQ: PASS
 AUTHOR_QA_OUTCOMES: 16/16
 AUTHOR_QA_CANONICAL: 38/38 EXACT_ITEM_ID_STEM_KEY_SOLUTION_RUBRIC_D6
 AUTHOR_QA_SELFCHECK: 16/16 QUESTION_ONLY_PRESERVED
 AUTHOR_QA_REVEAL_CONTENT: BYTE_EXACT_OLD_NEW
+CURRENT_PREVIOUS_NUMBERING_SOURCE_BLOB: 41a3d0497057217368ba63fecfa43d118f3e4519
+CURRENT_PREVIOUS_EDITORIAL_SOURCE_BLOB: 351dc607a6721fd56947344034f06c6cc8cca253
+CURRENT_FORMAL_KNOWLEDGE_QA: TOP02-O01_O02_O03_O09 PASS
+CURRENT_RECALL_SUMMARY_QA: TOP02-O01_O02_O03_O09_O15_O16 PASS
+CURRENT_SOURCE_PRACTICE_PARITY: 38/38 SAME_STEM_KEY_SOLUTION_RUBRIC_D6
+CURRENT_SOURCE_PUBLIC_REPLAY_PARITY: 16/16 SAME_QUESTION_ONLY
+CURRENT_SOURCE_SVG_PARITY: 3/3 SAME_PATH
+CURRENT_SOURCE_QA_DELTA: 4 MATH CLASSIFICATION BLOCKS AND ONE RECALL SUMMARY, 0 ITEM_OR_RUBRIC_CHANGES
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
-AUTHOR_SIGNOFF: TOPIC2_R06_NUMBERING_DELTA_A_41a3d0497057217368ba63fecfa43d118f3e4519
+AUTHOR_SIGNOFF: TOPIC2_R06_FORMAL_CONCEPT_SELF_QA_ec8a640c65f66e1f743c8af155642aac6a4170c3
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_IMPORTED: 0
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
@@ -35,6 +43,16 @@ MATH_VERIFICATION: Recomputed inequalities, discriminants, exact parameter bound
 PED_VERIFICATION: Motivation of feasibility precedes rules; bridges from 1 variable to quadratic to 2-variable half-planes and linear optimization. 16 voluntary First Tries with specific corrective D6 and nearby 3 SVG whose mathematical data match text, not checklist microcards.
 CANONICAL_Q15: 18 original unique index IDs plus 20 original extension IDs (18 Practice, two Written), exactly one stem/key/solution/rubric at source-of-truth locations. 16 public self-check placements reuse IDs; no item cloned as Topic Core.
 ASSESSMENT_Q16: Zero private RD1 imported, public self-check CLIENT_SELF_CHECK_NO_MASTERY, not official TOPIC_READINESS and no automatic Mastery. RELEASE must protect Final Submit from pre-submit key/hint/AI/correctness leak, test actual runtime independently.
+
+## Current formal-maths targeted verification (17/11/2026)
+
+- TOP02-O01: adding or subtracting the same amount preserves inequality direction; multiplication/division by a negative constant reverses direction; an unknown-sign factor must be handled by sign cases.
+- TOP02-O02: for f(x)=ax²+bx+c, a≠0, discriminant Δ=b²−4ac separates no real root / double root / two distinct real roots; a=0 is separately handled.
+- TOP02-O03: if Δ<0 and a≠0 then f(x) retains the sign of a for every real x; absence of equality roots does not mean a strict inequality has no solution.
+- TOP02-O09: with (a,b)≠(0,0), an inequality ax+by ⋄ c may contain one zero coefficient; a pair (x,y) is a solution exactly when substitution makes the inequality true.
+- TOP02-O15/O16: convex closed nonempty bounded polygon yields linear extrema at vertices, but integer-constrained optimum requires testing feasible lattice points. The existing 8/3 continuous and integer 13 calculation is unchanged.
+- Diff prior selected source `351dc607a6721fd56947344034f06c6cc8cca253` to current ec8a640c65f66e1f743c8af155642aac6a4170c3: complete Practice and Selfcheck sections byte-exact, same 38 canonical item markers, same disclosure boundaries, same SVG paths. No new ID, answer, solution, rubric, RD1, or active Mastery.
+- DELTA_C affects presentation and precision of mathematical teaching, reviewed within owner-effective Q18 AUTHOR_SELF_VERIFIED scope; no independent NotebookLM Topic acceptance is claimed.
 
 ## Evidence and limits
 
