@@ -11,7 +11,7 @@
 | CĐ17 | similar square bases S=a², S′=Sk² and V=h(S+√SS′+S′)/3; k=0→pyramid, k=1→prism | **2,268** | PASS |
 | CĐ18 | sphere-plane distance d versus R and r=√(R²−d²) for d<R, no intersection for d>R | **250** | PASS |
 | CĐ19 | C(n,k)=n!/[k!(n−k)!], Pascal and symmetry for 0≤k≤n≤10 | **66** | PASS |
-| CĐ20 | pair of A,B subsets of {1..6}; |A∪B|=|A|+|B|−|A∩B|; independence iff 6|A∩B|=|A||B| | **4,096** | PASS |
+| CĐ20 | Pair of A,B subsets of {1..6}; union = size(A)+size(B)−intersection; independence iff 6 × size(intersection) = size(A) × size(B) | **4,096** | PASS |
 
 **Total: 7,238** formula/boundary cross-check cases PASS (independently implemented from directly inspected source algorithm). Additionally, **70 configurations** of the **exact CĐ19 recursive enumeration implementation** were executed: for n=1..7, k=0..n, ordered or unordered, every result list count and uniqueness matched nPk or C(n,k); largest 5,040 distinct permutations. **7,308 total** model math numeric/enumeration cases in this R02 scope.
 
