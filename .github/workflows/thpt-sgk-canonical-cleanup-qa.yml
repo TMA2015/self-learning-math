@@ -1,0 +1,21 @@
+name: THPT SGK 79 single active learner source (no deploy)
+on:
+  pull_request:
+    paths:
+      - 'scripts/test-thpt-sgk-79-current-source.cjs'
+      - 'prototypes/thpt/ux795/**'
+      - 'docs/thpt-preview/sgk/**'
+      - '.github/workflows/thpt-sgk-canonical-cleanup-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  sgk-79-inventory:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: One active learning page per SGK lesson; no old parallel prototypes
+        run: node scripts/test-thpt-sgk-79-current-source.cjs
