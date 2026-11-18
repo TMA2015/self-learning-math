@@ -280,8 +280,19 @@ for(const [tag,rec]of Object.entries(transfer)){
      example.includes("96")&&example.includes("THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg")&&
      example.includes("THPT_G10_B10_RIVER_VELOCITY_MOBILE_D5_R01.svg")&&
      example.includes("**Giải:**"),"B10 river worked D2 must use exact-data desktop/mobile image and Golden solution renderer key");
-   }else assert(modelB.includes("#### Ví dụ có hướng dẫn — "+rec.ex),
-     "Transfer worked method D2 "+tag);
+   }else{
+    const b11=read("prototypes/thpt/ux795/G10_CHIV_B11_S1_PED_CANONICAL_Q18_R01_20261118.md");
+    const field=k=>b11.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    assert.equal(sha(modelB),field("B11_CANDIDATE_SOURCE_BLOB"),
+     "B11 force transfer placement must match exact candidate under independent-review HOLD");
+    const examples=modelB.split('=== "Ví dụ"')[1]?.split('=== "Lỗi thường gặp"')[0]||"";
+    assert(examples.includes("### 3.4. Ví dụ 4 — Hợp lực")&&
+     examples.includes("THPT_G10_CHIV_FORCE_TRANSFER_D5_R01_CORRECTED.svg")&&
+     examples.includes("**Giải:**"),
+     "B11 force D2 must be a proper worked example in Tab3, source figure retained");
+    assert(!modelB.includes("#### Ví dụ có hướng dẫn — "+rec.ex),
+     "B11 old implementation EX identifier must not appear in student source");
+   }
    const D5=tag==="RIVER"?"THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg":
      "THPT_G10_CHIV_"+tag+"_TRANSFER_D5_R01_CORRECTED.svg";
    assert(modelB.includes(D5),
