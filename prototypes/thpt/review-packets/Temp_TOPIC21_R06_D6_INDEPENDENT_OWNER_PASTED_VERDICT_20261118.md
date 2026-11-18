@@ -44,9 +44,9 @@ The supplied review found all eight D6 explanations and recovery paths mathemati
 
 ## C. Exact source reconciliation — author, distinct from independent verdict
 
-- Canonical reviewed learner source: `prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_LEARNER_PRESENTATION_20261116.md`, **Git blob SHA-1** `aa325637f659bc5f8ba504530b72c0a41d`.
+- Canonical reviewed learner source: `prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_LEARNER_PRESENTATION_20261116.md`, **Git blob SHA-1** `aa325637f659bc5f8ba504f6ce0129e07340a41d`.
 - Review evidence input: `prototypes/thpt/review-packets/Temp_TOPIC21_R06_D6_TARGETED_REVIEW_20261118.md` created from that exact source on PR #885.
-- The supplied `SOURCE_RECEIPT` labels `aa325...` as `SHA256`, but the value has 40 hex characters and is the verified Git **blob SHA-1**, not an independently computed SHA-256. Preserve the reporter's original metadata in A; use verified Git SHA-1 for repository locks.
+- The supplied `SOURCE_RECEIPT` labels `aa325...` as `SHA256`, but the value has 34 hex characters and is **neither** the verified 40-character Git blob SHA-1 nor a 64-character SHA-256; the separately verified SHA-1 appears above, not an independently computed SHA-256. Preserve the reporter's original metadata in A; use verified Git SHA-1 for repository locks.
 - Reviewer lesson labels `TOP21-M01–M08` are **not** the current V2 handoff labels `TOP21-K01–K08`. The source learner text does not contain either lesson token; instead it carries eight real headings 1.1–3.2 and `TOP21-O01–O08`. The eight outcome identities and source SHA reconcile 1:1. Do not silently re-ID items/lessons. Maintain V2's K-labels pending any separately authorized identity migration.
 - Reviewer prose mentions a medical-style test for O08; actual source is a hypothetical profile/flag model. This does not change the formula or target-scope PASS.
 - The supplied reviewer specifically says `CONTENT_READY: NO` **for this reviewer report alone**, `RELEASE_AUTHORIZATION: NO`, and `MASTERY_ACTIVATION: NO`. AUTHORING must independently reconcile its broader self-QA, one V2 handoff, `ready/`, REGISTER and CI before promoting the **combined** authoring packet.
@@ -56,7 +56,7 @@ The supplied review found all eight D6 explanations and recovery paths mathemati
 
 OWNER_PASTED_REVIEW|YES
 REVIEWER_VERDICT_RECORD|INDEPENDENT_REVIEWER_TARGETED_SCOPE_ONLY
-SOURCE_BLOB_SHA1|aa325637f659bc5f8ba504530b72c0a41d
+SOURCE_BLOB_SHA1|aa325637f659bc5f8ba504f6ce0129e07340a41d
 EXPECTED_OUTCOMES|8
 REVIEWED_OUTCOMES|8
 D6_TARGETED_CLEARANCE|PASS
