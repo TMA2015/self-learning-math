@@ -399,8 +399,18 @@ for(const [lesson,row] of rows){
   assert(at>0&&textCss.indexOf(marker,at+1)===-1,"B10 exactly one scoped CSS append");
   assert.equal(blob(textCss.slice(0,at)),f("CSS_OWNER_B09_P2_BASELINE_BLOB"),
    "B10 may not touch any B01-B09 accepted CSS");
-  assert.equal(blob(css),f("CSS_R01_SCOPED_B10_BLOB"),
-   "B10 semantic palette SHA not matching source receipt");
+  const b11Pos=textCss.indexOf("\n/* G10 Chapter IV B11 R01");
+  assert(b11Pos>0&&textCss.indexOf("\n/* G10 Chapter IV B11 R01",b11Pos+1)===-1,
+   "B11 must have exactly one append-only scoped CSS section");
+  assert.equal(blob(textCss.slice(0,b11Pos)),f("CSS_R01_SCOPED_B10_BLOB"),
+   "B10 P2-approved CSS must be byte-identical before B11 append");
+  const b11Receipt=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B11_S1_PED_CANONICAL_Q18_R01_20261118.md"),"utf8");
+  const b11f=k=>b11Receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(b11f("B10_P2_APPROVED_CSS_BLOB"),f("CSS_R01_SCOPED_B10_BLOB"),
+   "B11 scoped CSS must descend from B10 owner P2-approved CSS");
+  assert.equal(blob(css),b11f("CSS_B11_SCOPED_APPEND_BLOB"),
+   "B11 current CSS must exactly match scoped new source receipt");
   // Historical R01 source/receipt stay immutable; this P2 correction is a scoped DELTA_A_UI.
   const r02=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHIV_B10_P2_MATHJAX_DELTA_A_UI_R02_20261118.md"),"utf8");
@@ -412,6 +422,19 @@ for(const [lesson,row] of rows){
   assert.equal(blob(fs.readFileSync(path.join(root,
    "prototypes/thpt/content-drafts/THPT_G10_CHIV_B10_CANONICAL.md"))),
    r02f("R02_ONE_CANONICAL_LESSON_BLOB"),"B10 P2 canonical SHA mismatch");
+ }else if(lesson==="B11"){
+  const signed=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B11_S1_PED_CANONICAL_Q18_R01_20261118.md"),"utf8");
+  const field=k=>signed.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(field("R01_PUBLISHED_B11_SOURCE_BLOB"),row.candidate,
+   "B11 candidate must extend immutable R01 publication");
+  assert(signed.includes("INDEPENDENT_ACADEMIC_PED_REVIEW_PENDING")&&
+   signed.includes("DELTA_C_ACADEMIC_MATERIAL")&&signed.includes("RELEASE_HOLD"),
+   "B11 authoring material independent review required; not automated PASS");
+  expected=field("B11_CANDIDATE_SOURCE_BLOB");
+  assert.equal(blob(fs.readFileSync(path.join(root,
+   "prototypes/thpt/content-drafts/THPT_G10_CHIV_B11_CANONICAL.md"))),
+   field("ONE_CANONICAL_B11_BLOB"),"B11 full manuscript SHA changed");
  }
  assert.equal(blob(source),expected,lesson+" exact final Q18 academic source receipt");
  assert.equal(candidateG10KnowledgeBlob(n),expected,lesson+" Q18 source router selects correct immutable snapshot");
@@ -424,6 +447,14 @@ for(const [lesson,row] of rows){
    "B10 original TRY16–TRY20 published questions/answers must remain exactly canonical");
   for(const t of ["(5;-3)","(5;-5)","5 đơn vị","\\vec v=3\\vec u","M=(1;2)","36"])
    assert(source.includes(t),"B10 first-try computed result absent "+t);
+ }else if(lesson==="B11"){
+  assert.equal(formativeBodies(source).length,5,
+   "B11 original four First Tries + one force transfer placement must remain");
+  assert.deepEqual(formativeBodies(source).slice(0,4),formativeBodies(previous).slice(0,4),
+   "B11 four original independent First Try keys/solutions must remain exact");
+  for(const item of ["THPT-G10-CHIV-TRY-FORCE-TR01","4\\sqrt3",
+   "HELP-G10-CHIV-FORCE-TR01"])
+   assert(source.includes(item),"B11 signed force transfer Q15/D6 evidence missing "+item);
  }else assert.deepEqual(formativeBodies(source),formativeBodies(previous),
   lesson+" any original First Try stem or answer changed");
  const tabs=[...source.matchAll(/^=== "([^"]+)"$/gm)].map(x=>x[1]);
@@ -432,15 +463,18 @@ for(const [lesson,row] of rows){
        z=source.indexOf('=== "Ví dụ"'),w=source.indexOf('=== "Lỗi thường gặp"');
  assert(x>=0&&y>x&&z>y&&w>z,lesson+" four tab order");
  const discover=source.slice(x,y),official=source.slice(y,z),examples=source.slice(z,w),last=source.slice(w);
- assert.equal((discover.match(/data-thpt-first-try-id/g)||[]).length,row.moved,
-  lesson+" original pedagogic First Try must appear only in Discovery");
+ assert.equal((discover.match(/data-thpt-first-try-id/g)||[]).length,
+  lesson==="B11"?5:row.moved,
+  lesson+" each original canonical First Try must appear only in Discovery");
  assert.equal((official.match(/data-thpt-first-try-id/g)||[]).length,0,lesson+" SGK tab contains a First Try");
  assert.equal((official.match(/^    \?\?\? question/gm)||[]).length,0,lesson+" SGK tab contains an opened-answer control");
  assert.deepEqual([...official.matchAll(/^    ### ([^\n]+)$/gm)].map(x=>x[1]),book[lesson],
   lesson+" official S1 book headings exactly 2.1.., no double SGK");
  assert(official.startsWith('=== "Kiến thức SGK"\n\n    ### 2.1.'),
   lesson+" SGK tab must start directly at 2.1, not commentary");
- assert.equal((discover.match(/^    ### /gm)||[]).length,(lesson==="B07"||lesson==="B08")?5:lesson==="B09"?4:3,lesson+" authentic discovery stages");
+ assert.equal((discover.match(/^    ### /gm)||[]).length,
+  (lesson==="B07"||lesson==="B08")?5:lesson==="B09"||lesson==="B11"?4:3,
+  lesson+" authentic discovery stages");
  assert(!official.includes("    ### Kiến thức SGK"),lesson+" duplicate SGK heading");
  for(const part of [discover.slice('=== "Khám phá kiến thức"\n'.length),official.slice('=== "Kiến thức SGK"\n'.length)]){
   const unindented=part.split("\n").filter(l=>l.trim()&&!l.startsWith("    "));
@@ -473,6 +507,13 @@ for(const [lesson,row] of rows){
   for(const k of ["**Phân tích:**","**Giải:**","**Kiểm lại"])
    assert.equal(examples.split(k).length-1,4,
     "B10 each worked example needs why/method/check "+k);
+ }else if(lesson==="B11"){
+  assert.equal((examples.match(/^    ### 3\\.[1-4]\\. Ví dụ [1-4] —/gm)||[]).length,4,
+   "B11 force equilibrium worked example must belong to Tab3, not errors");
+  assert(examples.includes("6\\,\\mathrm N")&&examples.includes("THPT_G10_CHIV_FORCE_TRANSFER_D5_R01_CORRECTED.svg"),
+   "B11 original source-matched 8/15 SVG must be separated from 6/6 worked force example");
+  for(const k of ["**Giải:**","**Kiểm lại:**","**Chọn phương pháp:**"])
+   assert(examples.includes(k),"B11 worked examples must contain mathematical reasoning "+k);
  }else{
   assert.equal(examples,previous.slice(previous.indexOf('=== "Ví dụ"'),previous.indexOf('=== "Lỗi thường gặp"')),
    lesson+" previously approved three worked examples changed");
@@ -482,12 +523,20 @@ for(const [lesson,row] of rows){
  if(n<=10&&![7,8,9,10].includes(n)){
   assert.deepEqual(tex(source),tex(previous),lesson+" original mathematical expressions changed beyond reordering");
  }else if(n===11){
-  assert(official.includes("có thể nhận một giá trị tùy ý từ $0^\\circ$ đến $180^\\circ$"),"B11 original SGK zero-angle range");
-  assert(official.includes("vuông góc với mọi vectơ"),"B11 SGK orthogonality convention");
-  assert(official.includes("hai độ dài đều dương"),"B11 denominator guard");
-  assert(official.includes("\\vec u\\cdot\\vec v=ac+bd"),"B11 coordinate product formula");
-  assert.equal((last.match(/data-thpt-first-try-id/g)||[]).length,1,
-   "B11 original extra transfer First Try remains in mistakes tab");
+  assert(official.includes("có thể nhận một giá trị **tùy ý** từ")&&
+   official.includes("vuông góc với mọi vectơ"),"B11 exact SGK zero-vector convention must not be erased");
+  assert(official.includes("Mẫu số phải dương")&&
+   official.includes("\\vec u\\cdot\\vec v=ac+bd"),"B11 denominator guards/coordinate dot missing");
+  assert.equal((last.match(/data-thpt-first-try-id/g)||[]).length,0,
+   "B11 force transfer First Try must not remain in error tab");
+  assert.equal((last.match(/^    ### 4\\.[1-3]\\./gm)||[]).length,3,
+   "B11 must have three actual wrong student steps with numbered 4.x headings");
+  assert.equal((last.match(/^    \?\?\? tip "/gm)||[]).length,3,
+   "B11 must keep exactly three independent HELP disclosures");
+  assert(!source.includes(String.fromCharCode(96))&&
+   !source.includes("Assessment safety")&&
+   !source.includes("Ví dụ có hướng dẫn — EX-"),
+   "B11 learner prose must not leak raw code or implementation metadata");
  }else{
   assert(["B07","B08","B09","B10"].includes(lesson),
    "Only original-author-Q18 signed lesson deltas may reorder mandatory mathematics");
