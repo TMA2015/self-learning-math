@@ -49,7 +49,14 @@ for(const n of [12,13,14]){
  const p2=fs.readFileSync(path.join(root,
   "prototypes/thpt/ux795/G10_B11_B12_OWNER_P2_SOURCE_FIRST_DELTA_A_R01_20261118.md"),"utf8");
  const d=k=>p2.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
- const expected=n===12?d("B12_SOURCE_CURRENT_BLOB"):row.candidate;
+ const gold=fs.readFileSync(path.join(root,
+  "prototypes/thpt/ux795/G10_B11_B12_OWNER_P2_GOLDEN_COMPONENT_PARITY_DELTA_A_R02_20261118.md"),"utf8");
+ const g=k=>gold.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+ if(n===12){
+  assert.equal(g("B12_PREVIOUS_SOURCE_BLOB"),d("B12_SOURCE_CURRENT_BLOB"),"Prior B12 learner SHA must remain Q18 signed");
+  assert.equal(g("B12_PREVIOUS_CANONICAL_BLOB"),d("B12_CANONICAL_CURRENT_BLOB"),"Prior B12 canonical SHA must remain Q18 signed");
+ }
+ const expected=n===12?g("B12_SOURCE_CURRENT_BLOB"):row.candidate;
  if(n===12)assert.equal(d("B12_BASELINE_SOURCE_BLOB"),r12("B12_R01_SOURCE_BLOB"),
   "B12 historic reviewed source SHA must remain immutable");
  assert.equal(blob(source),expected,"B"+n+" current Git blob != current Q18 signed source");
@@ -64,7 +71,7 @@ for(const n of [12,13,14]){
    "prototypes/thpt/content-drafts/THPT_G10_CHV_B12_CANONICAL.md"),"utf8");
   assert.equal(d("B12_BASELINE_CANONICAL_BLOB"),r12("ONE_CANONICAL_B12_R01_BLOB"),
     "B12 historic independent-reviewed canonical SHA must remain immutable");
-  assert.equal(blob(master),d("B12_CANONICAL_CURRENT_BLOB"),
+  assert.equal(blob(master),g("B12_CANONICAL_CURRENT_BLOB"),
     "B12 ONE current canonical must match updated source-first receipt");
   assert.equal(master.split("<!-- BEGIN_B12_KNOWLEDGE_MARKDOWN -->\n")[1]
    .split("\n<!-- END_B12_KNOWLEDGE_MARKDOWN -->")[0],s,"B12 learner Knowledge must equal ONE canonical Section A");
@@ -123,13 +130,19 @@ for(const n of [12,13,14]){
   const ex=s.slice(r,t),errors=s.slice(t);
   assert.equal((ex.match(/^    ### 3\.[1-4]\. Ví dụ [1-4] —/gm)||[]).length,4,
    "B12 four reasoned examples including SGK calculator must be authored");
-  for(const term of ["**Giải:**","**Kiểm lại:**","**Phân tích:**",
-   '!!! example "Lời giải"',"#### Đề bài"])
-   assert(ex.includes(term),"B12 source-first structure missing "+term);
-  assert.equal(ex.split('!!! example "Lời giải"').length-1,4,
-   "B12 four source-authored native solution boxes, no runtime overlay");
+  for(const label of ["<strong>Giải:</strong>","**Kiểm lại:**","**Phân tích:**",
+   'class="thpt-g10-example-solution"',"#### Đề bài"])
+   assert(ex.includes(label),"B12 B10 Golden worked source lacking "+label);
+  assert.equal(ex.split('class="thpt-g10-example-solution"').length-1,4,
+   "B12 four B10 Golden neutral solved-example panels");
   assert.equal(ex.split("**Phân tích:**").length-1,4,
-   "B12 four source-authored analysis labels");
+   "B12 four source-authored outside analysis paragraphs");
+  const formalB12=s.slice(s.indexOf('=== "Kiến thức SGK"'),s.indexOf('=== "Ví dụ"'));
+  assert.equal((formalB12.match(/class="thpt-r4-knowledge-conclusion thpt-r4-concept-card"/g)||[]).length,3,
+   "B12 three teal B10 semantic concepts");
+  assert.equal((formalB12.match(/class="thpt-r4-knowledge-conclusion thpt-r4-rule-card"/g)||[]).length,1,
+   "B12 one blue B10 semantic rule");
+  assert(!/!!! (example|abstract|info)/.test(ex+formalB12),"B12 wrong-color MkDocs admonition prohibited");
   assert(!ex.includes("**Vì sao chọn cách này:**")&&!ex.includes("**Chọn phương pháp:**"),
    "B12 legacy method heading still present in current manuscript");
   assert(ex.includes("2^9")&&ex.includes("886{,}810"),
