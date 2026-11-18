@@ -7,7 +7,7 @@ STANDARD_BLOB: 5a80b20ce99be3179d03d56a73fa57b6f4882fd8
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 REVIEW_SCOPE: DELTA_C_PED_TARGETED_Q08_Q14_Q15_Q18
 SOURCE_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_LEARNER_PRESENTATION_20261116.md
-SOURCE_BLOB: 874de7fd1dd1923549a0ef35a9648d291ab761aa
+SOURCE_BLOB: d4a501bce64003f3583aca947d429504530b72c0
 ORIGINAL_R11_SOURCE_BLOB: 74e758075d17e98649d9dd08709b523e8a782b63
 ORIGINAL_R11_AUTHOR_Q18_RECEIPT_BLOB: 4e6133b77eeaf1d38394d1e4d6f8058d421fd763
 AFFECTED_P0: 0
@@ -51,15 +51,15 @@ Candidate item IDs, roles, outcomes, full stems/keys/solutions/rubrics and 11 pu
 
 A valid new active canonical owner/version registry must now reconcile the three W items against this source, without duplicate active bodies. One V2 handoff, ready manifest, REGISTER and new source SHA must be synchronized before CONTENT_READY. Owner authorization for merge/deploy remains absent, and RELEASE AP/R testing is not part of this AUTHORING receipt.
 
-AUTHOR_SIGNOFF: TOPIC20_20261118_EXACT_Q15_SOURCE_VERSION_CUSTODY_874de7fd1dd1923549a0ef35a9648d291ab761aa
+AUTHOR_SIGNOFF: TOP20_20261118_SOURCE_EXACT_17_PED6_REMEDIATION_LINKS_d4a501bce64003f3583aca947d429504530b72c0
 VERDICT: TARGETED_AUTHOR_SELF_QA_PASS, CANONICAL_ACTIVE_MATRIX_HOLD, CONTENT_READY_NO.
 
 Review prompt (four sentences): Read precisely the R12 source blob and immutable R11 baseline before critiquing W01–W03. Follow all six D6 routes to actual visible Bài luyện numbers and verify their underlying probabilities and unchanged rubric. Report any wrong destination by outcome and item ID, with minimal delta. Do not mistake this scoped author self-QA for an independent full-topic review, website QA or CONTENT_READY.
 ## 5. Q15 source-derived matrix lock (addendum)
 
 Q15_CANDIDATE_MATRIX_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R12_Q15_CANONICAL_ITEM_OUTCOME_ROLE_VERSION_MATRIX_20261117.md
-Q15_CANDIDATE_MATRIX_BLOB: a6f790af637ec1d2996e387edf8e2a960d8f29c6
-Q15_CANDIDATE_OWNER: 874de7fd1dd1923549a0ef35a9648d291ab761aa
+Q15_CANDIDATE_MATRIX_BLOB: 9d89151085df7bd01df86fc304675bf4d1f3a5fb
+Q15_CANDIDATE_OWNER: d4a501bce64003f3583aca947d429504530b72c0
 Q15_CANDIDATE_SOURCE_LEVEL: AUTHOR_SELF_VERIFIED; ALL_IDS_UNIQUE; PRACTICE_REPLAY_SAME_ID
 Q15_GLOBAL_ACTIVE_OWNER_V2_READY_REGISTER: HOLD_PENDING_INTEGRATION
 
@@ -80,3 +80,9 @@ Source-verified learner patches were merged **in place** into original currently
 ### 18/11/2026 · same-source matrix activation boundary
 
 - Source `874de7fd1dd1923549a0ef35a9648d291ab761aa`, in-place 37/37 verified Q15 ID/outcome/role/version/line matrix Git blob `a6f790af637ec1d2996e387edf8e2a960d8f29c6`. Old HOLD_NOT_SYNCHRONIZED **for matrix pointers only** is now closed. This is not an independent full-Topic Academic/PED PASS; `CONTENT_READY: NO` stays until scoped pedagogical review/one active handoff are accepted. No new learner file or bank.
+
+## 18/11/2026 — remediation routing repaired, scoped Q08/PED6 self-QA
+
+- Effective one learner source `d4a501bce64003f3583aca947d429504530b72c0`; previous `874de7fd1dd1923549a0ef35a9648d291ab761aa` historical. **17/17 existing "Khi làm sai"** messages now include an actionable return to the exact *Kiến thức x.y* and *Bài luyện n* / *Luyện tập u.v* for the SAME primary outcome; 17 unique T-item/outcome IDs matched 17 unique Practice IDs in the source.
+- Critical order-control: O09/O10 and O05/O06 appear in different learner sequence; destinations were mapped via `PRIMARY_OUTCOME`, not sequential question position. Existing numeric error diagnosis and math proof unchanged. No new line insertion, so original 37 canonical item marker lines and corrected Q15 matrix `9d89151085df7bd01df86fc304675bf4d1f3a5fb` still exact.
+- QA: 17/17 route targets refer to real Knowledge H3 and Practice H3 headings; complete Luyện tập and Tự kiểm tra are byte-identical to previous source, 37 stems/answers/rubrics, 11 question-only public placements, SVG and `<details>` counts unchanged. `AFFECTED_P0=0, AFFECTED_P1=0` on author-scope check. **DELTA_C_PED_TARGETED** still requires independent affected-scope PED review before current CONTENT_READY; no premature full-Topic or release PASS.
