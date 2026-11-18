@@ -11,7 +11,7 @@ const root=path.resolve(__dirname,".."),read=p=>fs.readFileSync(path.join(root,p
 const sha1=s=>crypto.createHash("sha1").update("blob "+Buffer.byteLength(s)+"\0").update(s).digest("hex");
 const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
 const lessons=[
- {n:5,start:1,sha:"dd1a9ecaa51a6ad1da0a6d86d6ac39847be68140",helps:["HELP-G10-B05-01","HELP-G10-B05-02"],figs:1, concepts:["\\sin","\\cos","\\tan","\\cot","180"]},
+ {n:5,start:1,sha:"dd1a9ecaa51a6ad1da0a6d86d6ac39847be68140",helps:["HELP-G10-B05-01","HELP-G10-B05-02","HELP-G10-B05-03"],figs:1, concepts:["\\sin","\\cos","\\tan","\\cot","180"]},
  {n:6,start:6,sha:"0806c3f48c0b99109ff1b2531f9a839a3a16ec8c",helps:["HELP-G10-B06-01","HELP-G10-B06-02"],figs:2,concepts:["\\cos","\\sin","Heron","diện tích","bán kính"]}
 ];
 const all=[];
@@ -23,12 +23,15 @@ for(const c of lessons){
  assert(!/^    === "/m.test(txt),"B"+c.n+": no Level 2 tabs during Phase 1");
  const ids=[...txt.matchAll(/data-thpt-first-try-id="([^"]+)"/g)].map(x=>x[1]);
  const expected=Array.from({length:5},(_,i)=>"THPT-G10-CHIII-TRY"+String(c.start+i).padStart(2,"0"));
- assert.deepEqual(ids,expected,"B"+c.n+": exact five canonical First Try IDs, Q15");
+ if(c.n===5)expected.push("THPT-G10-CHIII-TRY11"); // owner-P2 B05 public calculator First Try
+ if(c.n===6)expected.splice(2,3,"THPT-G10-CHIII-TRY10",
+  "THPT-G10-CHIII-TRY08","THPT-G10-CHIII-TRY09"); // B06 canonical ID set unchanged; true S1 placement order
+ assert.deepEqual(ids,expected,"B"+c.n+": Q15 canonical First Try IDs: B05 six, B06 five reorganized by S1 parents");
  all.push(...ids);
  const helps=[...txt.matchAll(/data-thpt-help-id="([^"]+)"/g)].map(x=>x[1]);
  assert.deepEqual(helps,c.helps,"B"+c.n+": D6 HELP IDs unchanged, Q15");
- assert.equal((txt.match(/^    \?\?\? (?:question|tip) "/gm)||[]).length,7,
-  "B"+c.n+": seven self-reveal/remediation blocks must be collapsed");
+ assert.equal((txt.match(/^    \?\?\? (?:question|tip) "/gm)||[]).length,c.n===5?9:7,
+  "B"+c.n+": closed self-reveal/remediation blocks match source");
  assert.equal((txt.match(/<figure\b/g)||[]).length,c.figs,"B"+c.n+": mathematically matched SVG figure count");
  for(const term of c.concepts)assert(txt.includes(term),"B"+c.n+": mathematical concept absent: "+term);
  assert.equal((txt.match(/\\\(/g)||[]).length,(txt.match(/\\\)/g)||[]).length,"B"+c.n+": inline TeX delimiters");
@@ -38,7 +41,7 @@ for(const c of lessons){
  assert(txt.includes("luyen-tap.md")&&txt.includes("tu-kiem-tra-chuong.md"),
   "B"+c.n+": Core/Final Submit links must resolve from actual Markdown location");
 }
-assert.equal(all.length,10);assert.equal(new Set(all).size,10);
+assert.equal(all.length,11);assert.equal(new Set(all).size,11);
 const b06=read("docs/thpt-preview/sgk/chuong-iii/bai-6.md");
 for(const key of ["b=6","c=8","30^\\circ","150^\\circ","(3,4,5)","(2,3,6)","10\\sqrt2"])
   assert(b06.includes(key),"B06 critical original/transfer outcome lost: "+key);
@@ -50,4 +53,4 @@ assert(self.includes('data-g10-chapter-selfcheck="CHIII"')&&self.includes("Final
  "Q16 independent final-submission route must survive");
 assert(!self.includes("data-mastery-credit=")&&!practice.includes("data-mastery-credit="),
  "No formative Mastery credit");
-console.log("PASS G10 ChIII UX795: exact B05/B06 SHA, four tabs, 10 canonical First Try, 4 HELP, 3 SVG and protected Core/Q16.");
+console.log("PASS G10 ChIII UX795: exact B05/B06 SHA, four tabs, 11 First Try (10 original+1 B05 DEG), 5 HELP, 3 SVG and protected Core/Q16.");

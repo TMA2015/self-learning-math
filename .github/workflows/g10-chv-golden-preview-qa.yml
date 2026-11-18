@@ -17,7 +17,7 @@ permissions:
 jobs:
   chv-preview:
     name: Three immutable ChV sources, Golden browser 9 cases (NO RELEASE)
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 18
     steps:
       - uses: actions/checkout@v4
