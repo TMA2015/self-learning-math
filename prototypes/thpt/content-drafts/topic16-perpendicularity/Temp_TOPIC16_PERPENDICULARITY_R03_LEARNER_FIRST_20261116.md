@@ -396,9 +396,9 @@ Một đường xiên có thành phần nằm ngang và thành phần thẳng đ
 
 **Ví dụ**
 
-**Đề bài:** Trong mặt z=0, đặt A(0,0,2), H(0,0,0), B(3,0,0). Chứng minh đường qua H có hướng (0,1,0) vuông góc AB.
+**Đề bài:** Với mặt phẳng (P): z=0, lấy A(0,0,2) nằm ngoài (P), H(0,0,0) và B(3,0,0) thuộc (P). Chứng minh đường c qua H có hướng (0,1,0) vuông góc với đường AB.
 
-**Lời giải:** AH⊥(P) và BH nằm trong (P) với B≠H. Đường c theo (0,1,0) nằm trong (P), vuông góc BH theo (1,0,0). Định lí ba đường vuông góc cho c⊥AB; kiểm bằng AB=(3,0,−2) có tích vô hướng với c bằng 0.
+**Lời giải:** AH⊥(P) vì A và H có cùng hai tọa độ ngang, H∈(P); BH nằm trong (P) và B≠H. Đường c qua H có hướng (0,1,0) nằm trong (P), vuông góc BH theo (1,0,0). Định lí ba đường vuông góc cho c⊥AB; kiểm bằng tọa độ vectơ \(\overrightarrow{AB}=(3,0,-2)\) có tích vô hướng với hướng (0,1,0) của c bằng 0.
 
 **Vận dụng**
 
