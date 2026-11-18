@@ -418,8 +418,13 @@ for(const [lesson,row] of rows){
   const b11f=k=>b11Receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(b11f("B10_P2_APPROVED_CSS_BLOB"),f("CSS_R01_SCOPED_B10_BLOB"),
    "B11 scoped CSS must descend from B10 owner P2-approved CSS");
-  assert.equal(blob(css),b11f("CSS_B11_SCOPED_APPEND_BLOB"),
-   "B11 current CSS must exactly match scoped new source receipt");
+  const b12Palette=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_B11_B12_OWNER_P2_GOLDEN_COMPONENT_PARITY_DELTA_A_R02_20261118.md"),"utf8");
+   const b12Color=k=>b12Palette.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(b12Color("GOLDEN_CSS_PREVIOUS_BLOB"),b11f("CSS_B11_SCOPED_APPEND_BLOB"),
+    "Signed B10/B11 stylesheet was exact accepted baseline before B12 append");
+   assert.equal(blob(css),b12Color("GOLDEN_CSS_CURRENT_BLOB"),
+    "Current shared Golden CSS must match B12 scoped exact B10 palette SHA");
   // Historical R01 source/receipt stay immutable; this P2 correction is a scoped DELTA_A_UI.
   const r02=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHIV_B10_P2_MATHJAX_DELTA_A_UI_R02_20261118.md"),"utf8");
