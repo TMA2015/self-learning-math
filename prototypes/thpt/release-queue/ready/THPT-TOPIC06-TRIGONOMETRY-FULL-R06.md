@@ -93,9 +93,9 @@ No independent full-Topic NotebookLM PASS invented for this current learner. Stu
 - [x] PED1_MOTIVATION — Four coherent mathematical arcs, each lesson begins with a real why/how trigonometric question.
 - [x] PED2_PREREQUISITES — Angles/circle/coordinate/period and domain locally explained.
 - [x] PED3_MEANING_FIRST — Concepts and conditions explained before formula callouts.
-- [x] PED4_GUIDED_VISUAL — Original 3 SVGs placed in real lesson text with how-to-read descriptions.
-- [x] PED5_REASONED_METHOD — 16 independent worked examples with conditions and full reasoning.
-- [x] PED6_SELF_TRY_REMEDIATION — 16 opt-in learner tries and their error-specific routes, 15 fixed source-documented.
+- [x] PED4_EXPLAINED_VISUAL — Original 3 SVGs placed in real lesson text with how-to-read descriptions.
+- [x] PED5_REASONED_EXAMPLES — 16 independent worked examples with conditions and full reasoning.
+- [x] PED6_FIRST_TRY_REMEDIATION — 16 opt-in learner tries and their error-specific routes, 15 fixed source-documented.
 
 ## RELEASE gates separate (do NOT mark automatically)
 
