@@ -1,0 +1,74 @@
+# TOP20-PROBABILITY-R12-20261118 — AUTHORING CONTENT_READY · CĐ20 Xác suất cổ điển
+
+PACKET_ID: TOP20-PROBABILITY-R12-20261118
+STANDARD_ID: SLM-THPT-QUALITY-ONE
+STANDARD_VERSION: 3.1.0
+QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
+HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
+LEARNING_PATH: TOPIC
+RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
+STATE: CONTENT_READY
+Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
+SOURCE_COMMIT: 3a5a3bc9f2fe390f878bf453539afbe4cbf41ff1
+CURRENT_PR: #884 — AUTHORING Draft only, no website release
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_LEARNER_PRESENTATION_20261116.md
+ACADEMIC_SOURCE_BLOB: d4a501bce64003f3583aca947d429504530b72c0
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/TOP20_R12_Q18_AUTHOR_SELF_QA_COMPOSITE_20261118.md
+REVIEW_RECEIPT_BLOB: b3204f8e8e1a43921c1039d362dca91f22321f8a
+REVIEW_RECEIPT: signed current-source AUTHOR_SELF_VERIFIED composite, no independent NotebookLM Topic PASS
+AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/TOP20-PROBABILITY-R11-20261116_HANDOFF_V2.md
+AUTHOR_HANDOFF_BLOB: dcc88dedb0c0bc9cd61143dbfd921cf5add50200
+AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_A1_A7_TECHNICAL_SOURCE_PARITY_20261116.md
+AUTHOR_A1_A7_BLOB: 29f58e7af9240a067ae30429299d4f1ebef203d6
+AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_A1_A7_TECHNICAL_SOURCE_PARITY_20261116.md
+AUTHOR_METADATA_BLOB: 29f58e7af9240a067ae30429299d4f1ebef203d6
+ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
+PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
+BLOCKERS: NONE
+ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
+PRIVATE_RD1_COUNT: 17
+PRIVATE_RD1_SHA256: a3107e6434d2359f86752412a14fd45b7a1da1bef84d18e53b6da3532f2520b2
+OFFICIAL_READINESS: NOT_CLAIMED
+MASTERY_ACTIVATION: NO
+RELEASE_AUTHORIZATION: NO
+RELEASE_STATUS: NOT_INTEGRATED_NOT_PUBLISHED
+SOURCE_SCOPE: SGK_G10_KNTT_CHIX_B26_B27_PLUS_SGK_G11_KNTT_CHVIII_B28_B30
+
+## Authoring Q01–Q18 source-locked clearance
+
+- **Single current learner:** original R11-named file maintained in place at Git blob `d4a501bce64003f3583aca947d429504530b72c0`, 9 Knowledge units, 10 standalone Ví dụ, 17 Vận dụng/Đối chiếu, 17 Practice, 3 Written/rubric, two original SVGs. This is authoring learning content, not an integrated runtime.
+- **Q18:** Current composite receipt SHA `b3204f8e8e1a43921c1039d362dca91f22321f8a` directly signs this source under historical effective `SLM-THPT-QUALITY-ONE v3.1.0`, grandfathered by owner-approved governance PR #909. It combines prior immutable full-topic author-math source evidence with current direct 37 canonical question/answer checks and 17/17 D6 remediation routes; ACADEMIC/PED Q18 are **AUTHOR_SELF_VERIFIED**, no independent reviewer PASS.
+- **Q15:** 37 unique canonical IDs and their exact role/outcome/version/source markers cross-matched to matrix `9d89151085df7bd01df86fc304675bf4d1f3a5fb`; 11 question-only public Selfcheck placements reuse existing IDs without duplicated answer/rubric, not an independent assessment.
+- **Q16:** `CLIENT_SELF_CHECK_NO_MASTERY`, no official Readiness, learner score, Mastery or private RD1 delivery. 17 original RD1 candidate bank stems/keys are owner-held outside public Git; only hash/count here.
+- Historical R10 and R11 manifests remain in `release-queue/archive/` with SUPERSEDED register history and never become parallel active ready items.
+
+## A — SOURCE / AUTHORING
+
+- [x] A1_SOURCE_SNAPSHOT — Current single source Git blob is exact, composite Q18 and A1–A7 receipts have immutable distinct hashes; earlier source snapshots preserved as history.
+- [x] A2_SGK_SBT_SCOPE — Original owner S1 receipts for G10 KNTT Tập Hai Ch IX B26–B27 and G11 Tập Hai Ch VIII B28–B30 cross-linked without inventing new PDF page verification.
+- [x] A3_NOTEBOOKLM_VERDICT — Q18 AUTHOR_SELF_VERIFIED source-specific math and pedagogy receipt accepted via owner-effective v3.x; no independent NotebookLM claim and no automatic promotion of older reviewer PASS.
+- [x] A4_ITEM_OUTCOME_IDS — 17 outcomes with 17 canonical First Try, 17 real Practice and 3 Written, unique 37 item IDs; 11 public replay question-only placements reuse IDs.
+- [x] A5_D1_D6_SCOPE — Reasoned concept-first explanation and ten worked examples, conditions, two SVGs, real exercises/rubrics, 17 first-try D6 paths all source-checked against matching Knowledge/Practice.
+- [x] A6_DELTA_RESOLVED — Original R10 full authored math preserved, R11 learner layout source-equivalent, R12 17/17 pedagogical D6 routes author-verified on current source with no P0/P1.
+- [x] A7_PUBLIC_PRIVATE_BOUNDARY — Private 17 RD1 candidates remain owner-held; public selfcheck is no-Mastery, 37 disclosures remain opt-in, no pre-submit official evaluation.
+
+## PED — DIRECT CHECKS
+
+- [x] PED1_MOTIVATION — Nine Knowledge lessons introduce questions and mathematical modeling reasons before formula labels.
+- [x] PED2_PREREQUISITES — Sets, ratios, counting, event logic and independence explained within the autonomous Topic path.
+- [x] PED3_MEANING_FIRST — Distinct sample-space models, complement, union and independence reasoned before calculation rules.
+- [x] PED4_EXPLAINED_VISUAL — Original tree and Venn SVGs placed at Knowledge 1.4/2.1 with alt and how-to-read supporting prose.
+- [x] PED5_REASONED_EXAMPLES — Ten original Ví dụ/Đề bài/Lời giải and all 17 Practice/3 Written have checked mathematical process, not answers only.
+- [x] PED6_FIRST_TRY_REMEDIATION — Each of 17 first tries has collapsed Đối chiếu plus exact student-actionable Knowledge H3 and same-outcome Practice exercise return route.
+
+## R/AP/P — SEPARATE RELEASE GATES
+
+- [ ] R1_SOURCE_LOCK — RELEASE must independently re-fetch exact authoring source/receipt SHA.
+- [ ] R2_EXACT_HEAD_CI — Release integration and combined CI remain a separate operation.
+- [ ] R3_GOLDEN_VISUAL — Student facing topic navigation, actual MathJax/SVG, Tutor public-only, Golden 390/820/1440 to be browser verified.
+- [ ] R4_FINAL_SUBMIT_SAFETY — Private RD1 must remain off public Git, no feedback/hints/AI/answer before official Final Submit.
+- [ ] R5_OWNER_PERMISSION — No permission to integrate website, merge release, or deploy is granted by this authoring manifest.
+- [ ] AP1_AP5_RENDERED_QA — Check actual site display/reading/interaction and responsive after RELEASE intake; source Markdown is not production UI.
+- [ ] P1_PUBLISHED_P2_DEVICE — Not published, no real iPhone/iPad Safari proof and no parent acceptance.
+
+AUTHOR_SIGNOFF: TOP20_R12_AUTHORING_CONTENT_READY_ONLY_20261118
