@@ -3,7 +3,7 @@
 **New narrow PLAN22-13 unit:** exactly three independent student pages Kiến thức / Luyện tập / Tự kiểm tra, no Topic Core and no extra SGK canonical item (32 exact source projections are learner-visible). This is a source-locked A1–A7 authoring handoff, not a released site feature or new independent NotebookLM verdict.
 
 PACKET_ID: THPT-TOPIC13-PLANAR-SPATIAL-VECTORS-FULL-R01
-CONTENT_REVISION: R04
+CONTENT_REVISION: R07
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
@@ -13,15 +13,15 @@ CATALOG_TOPIC_ID: CD13
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 4722b4ab923e162733a100610c3d825cbe9b67f5
+ACADEMIC_SOURCE_BLOB: 94e24a128c33efc141f6be52ad11656973043567
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 32ad95d970d2e1e948f325916f0f12486966dc06
+REVIEW_RECEIPT_BLOB: 74eb71875e2bbde3902b9eb52f60a419d4abe864
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_A1_A7_BLOB: 45c0255dac9c8c22efbd5b8fa4138ced94d74ab5
+AUTHOR_A1_A7_BLOB: 6ab826963e00ee1c3b2cbf922e012ef841513d3a
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: 45c0255dac9c8c22efbd5b8fa4138ced94d74ab5
+AUTHOR_METADATA_BLOB: 6ab826963e00ee1c3b2cbf922e012ef841513d3a
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md
-PUBLIC_CANONICAL_BANK_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df
+PUBLIC_CANONICAL_BANK_BLOB: e2f71e56479a08c4f8bb5f949d4ed8e249983cd6
 G10_SGK_CROSS_PR_DEPENDENCY: 750
 G10_SGK_SOURCE_BRANCH: authoring/g10-chiv-ped-r02-24-outcomes-20261105
 ORIGINAL_G10_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/Temp_G10_SGK_CHIV_FULL_R03_CONSOLIDATED_SOURCE_20261105.md
@@ -322,3 +322,12 @@ RELEASE separately verifies AP1–AP5, R1–R5, Q15 canonical resolver collision
 ## R05 · 52-of-52 canonical owner parity after mathematical vector notation fix (17/11/2026)
 
 Source `593484fbe67b168fae677652db0ef3871bcf5695`; Q18 targeted affected receipt `3161e1e8f76ded9a6396eb48424d713d4db55638`; A1 metadata `8c1942bbd332eee25d4d7e5dd0d21945297842da`; canonical NEW20 bank `136bd4552118e5dba6b18b58965be7d37878e9df`. Math changes confined to corrected vector notation for 9 existing IDs in NEW20 bank (8 stem +8 solution text fields), unchanged numerical results and rubric scores, and hash references in learner source. Source parity: G10 original 20/20 on Draft #750, G12 original 12/12, Topic-owned 20/20; no new item, no assessment credit. Q18 self-QA is targeted and not a fresh independent review. Cross-branch availability of G10 original source on combined RELEASE HEAD remains not proven; do not merge/deploy.
+
+
+## R07 current one-source Q18 / vector mathematical correction (18/11/2026)
+
+The **effective** and only learner source for this stable packet is `Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md`, Git blob `94e24a128c33efc141f6be52ad11656973043567`. One active NEW20 bank `e2f71e56479a08c4f8bb5f949d4ed8e249983cd6` with 20 original stable item IDs; targeted W03 canonical `content_version=2` on the **same** source path (not a clone). Current single signed `AUTHOR_SELF_VERIFIED` Q18 composite `Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md` Git blob `74eb71875e2bbde3902b9eb52f60a419d4abe864` and A1–A7 metadata `6ab826963e00ee1c3b2cbf922e012ef841513d3a`. Prior R03/R04/R05/R06 strings/SHA values in the historical narrative above remain immutable historical custody only.
+
+**Affected mathematics/PED:** 15 Knowledge lines across O07/O08/O11/O14/O15 now distinguish coordinate **vectors** `(\overrightarrow{AB})` from scalar lengths `AB=|\overrightarrow{AB}|`. Three NEW20 questions plus W03 /7 rubric were corrected for vector notation at the only canonical bank and the learner display; W03 dot product is 9, AC' scalar length 13, cos=3/13 and 2+3+2=7 points, all unchanged numerically. All 52 original item IDs and 20 actual new bank stem projections checked; 16 public selfchecks retain exactly the same IDs, with six notation-only question-stem clarifications, no answer/reveal. Four SVG files/five placements and 68/68 disclosures unchanged. Q18 self-QA recomputes affected math with assumptions and source owner; `DELTA_C_ACADEMIC_MATERIAL` for meaningful rubric/vector distinctions, `NOTEBOOKLM_REREVIEW=NOT_REQUIRED_WITH_REASON` (effective owner Q18 v3). **Not** a new full independent NotebookLM reviewer PASS or proof of rendered browser MathJax.
+
+Original G10 SGK source `96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9` has been read on sibling Draft PR #750, while G12 original source is present on the Topic branch. This is a separately recorded **RELEASE combined-HEAD provenance dependency**, not a reason to duplicate SGK source owner under Topic AUTHORING. Only SOURCE `CONTENT_READY` (when V2/ready/REGISTER and CI match); no official readiness/Mastery/RD1, website merge or deploy.
