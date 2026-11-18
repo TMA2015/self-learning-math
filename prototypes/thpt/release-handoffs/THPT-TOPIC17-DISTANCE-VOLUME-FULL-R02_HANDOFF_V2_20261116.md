@@ -1,9 +1,9 @@
-# CĐ17 · Khoảng cách & Thể tích khối đa diện · AUTHORING V2 R02
+# CĐ17 · Khoảng cách & Thể tích khối đa diện · AUTHORING V2 — bản thảo hiệu lực R03
 
-**AUTHORING CONTENT_READY_CANDIDATE**, academic/PED self-author-verified `SLM-THPT-QUALITY-ONE v3.1.0` one Q01–Q18 standard; **not** an independent NotebookLM PASS, not website RELEASE readiness or owner merge/deploy permission. PLAN22-17 follows historical NotebookLM 22-topic study proposal, not a locked runtime `TOPIC_ID`.
+**AUTHORING CONTENT_READY_CANDIDATE, SOURCE-ONLY**, academic/PED self-author-verified `SLM-THPT-QUALITY-ONE v3.1.0` one Q01–Q18 standard; **not** an independent NotebookLM PASS, not website RELEASE readiness or owner merge/deploy permission. PLAN22-17 follows historical NotebookLM 22-topic study proposal, not a locked runtime `TOPIC_ID`.
 
 PACKET_ID: THPT-TOPIC17-DISTANCE-VOLUME-FULL-R02
-CONTENT_REVISION: R02
+CONTENT_REVISION: R03
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
@@ -13,17 +13,17 @@ CATALOG_TOPIC_ID: CD17
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 7cfc1c44d8f8aa722118d945900290fd560b621b
+ACADEMIC_SOURCE_BLOB: 9c427674ea0263b8cf7e1e191f1f9a81c3261e91
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC17_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 5d55b6a38bf5bb4e81d099e05635001876c2a90a
+REVIEW_RECEIPT_BLOB: e1050266fd69bf18eefaa40264962fbd6c6f0010
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: 79f985ce73097c12562f3178d3e169da3f743e0e
+AUTHOR_A1_A7_BLOB: 7d0f43a1ae6fb5ccce67baf3fda21ca4261f29d9
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: 79f985ce73097c12562f3178d3e169da3f743e0e
+AUTHOR_METADATA_BLOB: 7d0f43a1ae6fb5ccce67baf3fda21ca4261f29d9
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHVII_B22_B27_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_THPT_TOPIC17_FRUSTUM_VOLUME_MODEL_R00_20261113.html
-INTERACTIVE_MODEL_BLOB: 727c05896a9d9bf95385b54559faa22917f1510e
+INTERACTIVE_MODEL_BLOB: cfb2bd522531167003eeae8e7342c6d1349ca425
 MODEL_ID: SLM-TOP17-FRUSTUM-VOLUME-R00
 SVG_B26_BLOB: 26fb51f3af65ba7d86a2907f0eaff808d2d87532
 SVG_B27_BLOB: a7bec7a20295d09ca6f32aae0e8910cef7bed9dc
@@ -240,3 +240,30 @@ A1 frozen source/receipt/matrix Git blob and one handoff; A2 original SGK/SBT pr
 ## RELEASE_AND_OWNER_GATE
 
 RELEASE not integrated or website-tested (AP1–AP5, Golden R4/Adaptive Knowledge Tabs v2, SVG/MathJax/Canvas, UI Safari P2). R1 exact source intake/latest main, R2 combined HEAD CI, R3 presentation and accessibility, R4 Final Submit no pre-submit answer/hint/correctness/rubric/AI Tutor and no unapproved Skill Mastery, R5 explicit owner deploy permission; P1 production SHA parity/P2 real iOS touch independently pending. No WEBSITE code, merge/deploy, Firebase or student data changes in AUTHORING.
+
+
+## R03 · One effective learner draft policy
+
+This handoff retains its prior file path and packet identifier for stable links but now points to the **same learner source file edited in place**, R03 blob `76b8a10c12e2a60fa155901d153f17c9982193c4`. The former R02 source and its signed receipt live in Git history only, not as an additional learner file for RELEASE intake. The changed learner-facing selfcheck wording tells students how to solve and self-check; 12 outcomes, 49 unique canonical items, 57 placements, 8 public question-only selfcheck references and all math/solutions/rubrics/assets are unchanged. The original Q18 receipt file has been updated in place with source-scoped R03 QA; no parallel R03 review file is accepted. **Release Intake must not use R02 CONTENT_READY status for this edited source** until the ready manifest and REGISTER are explicitly reconciled, source-scope workflows passed on current head, and owner chooses to hand off. No integration/merge/deploy.
+
+
+**Current source handoff:** Source-specific Q18 author self-QA for the changed math/editorial portion is complete, immutable predecessor source preserved in Git, one learner source and matching A1/V2/ready/REGISTER selected. No website/AP/RELEASE PASS or merge/deploy implied. A separate CI on HEAD is required before release intake acceptance.
+
+
+**Additional in-place typography QC:** Knowledge frustum labels a=6/h=4 now correct MathJax; source Q18/metadata updated in existing files. The only active learner file path remains unchanged. All assessment/keys/point scores unaffected; no new independent reviewer verdict or production QA.
+
+
+**Pedagogical self-sufficiency correction:** TOP17-O10 volume relation k=0,1/2,1 now taught fully in learner source without requiring an optional interactive HTML slider. Exact new source has matching updated Q18 and A1 self-QA; no key/rubric, assessment or source path changed. Source-only handoff is not production release.
+
+## 18/11/2026 — current source only, D5 technical metadata leak removed
+
+- Current learner source `e065ded2448f800bf649d0e30239591d57233fbe`, Q18 `239a73b05f5f875c02c6ccac19f79ff3adacf447`, A1 `fd5e82e3a7a0048e65c325fb4582253df77d5ba4`. R03 shares the same effective R02 path, no second R03 candidate.
+- DELTA_A_UI: author-only D5 H2 inside last B27 Written solution was replaced with a non-rendered custody comment; learner Practice now has exactly H2 1/2/3, all 49 public canonical items (37 Practice including 4 original Written), eight selfcheck prompts, six original SVG and 4-point rubrics preserved. A1 still BLOCKED_BY_AUTHORING awaiting full gate; V2 `BLOCKERS: NONE` reflects no new math blockers only, not permission to release.
+- No independent NotebookLM full Topic PASS, official RD1/Skill Mastery or owner RELEASE authorization. No merge/deploy.
+
+## FINAL CURRENT ONE-SOURCE AUTHORING V2 — 18/11/2026
+
+- **Only student source path** is the existing `Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md`, effective Git blob `9c427674ea0263b8cf7e1e191f1f9a81c3261e91` (content_revision R03), with no second student file. Owner Draft #853 is authoritative, auxiliary Draft #900 carries historical targeted review/fixes copied to this same path; its source blob `e065ded2448f800bf649d0e30239591d57233fbe` is predecessor evidence only.
+- **Q18 self-verified exact SHA** `e1050266fd69bf18eefaa40264962fbd6c6f0010`, **A1–A7** `7d0f43a1ae6fb5ccce67baf3fda21ca4261f29d9`, one current V2 and ready. O10 independent frustum exploration `V=48(1+k+k²)` for k∈[0,1] checks k=0=>48, 1/2=>84, 1=>144 cm³, explanation no longer assumes an installed slider (`DELTA_C_ACADEMIC_MATERIAL` PED/Knowledge affected scope). O11 stem says lăng trụ đứng with **right-triangle base**, legs 6/8cm, h7cm, unchanged 168cm³=0.168L and original canonical answers/rubrics (`DELTA_B_SOURCE_EQUIVALENT`). Selfcheck guidance is actionable learner wording; D5 orphan Practice H2 now hidden metadata comment (`DELTA_A_UI`). Source author Q18 directly verifies affected math, not a new full independent NotebookLM PASS.
+- **Q15/Q16 invariant:** 12 lessons/outcomes, 49 unique canonical IDs =22 G11 SGK original+12 Try+12 Practice+3 Written, 37 Practice cards, 8 same-public-ID Selfcheck replays question-only, 49 voluntary solution details. Original G11 S1 source `afc8ec039213b87b4930f2d34d48c28d1fc6277f` present on same branch, no duplicate SGK body/key/rubric. Two actual SVG learner figures `26fb51f3af65ba7d86a2907f0eaff808d2d87532` and `a7bec7a20295d09ca6f32aae0e8910cef7bed9dc` source-exact. Auxiliary HTML model `cfb2bd522531167003eeae8e7342c6d1349ca425` differs from prior `727c05896a9d9bf95385b54559faa22917f1510e` by only an HTML metadata comment and 17 Golden CSS lines; all prior JS/math remains identical. This does **not** imply browser feature availability or UAT.
+- Historical R00 ready blob `359ff8026b193c37a6f9a98ea2344ecd1ff6c0c2` archived byte-for-byte and removed from active ready/REGISTER. Current only R02 packet with R03 learner content and exact SHA chain. Original R00 QA remain historical; no protected RD1/official Readiness/Mastery, website integration, merge/deploy or owner release approval.
