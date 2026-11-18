@@ -10,8 +10,8 @@ RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
-SOURCE_BLOB: fda1fa60d8448c016c24159156c6898de2bc673f
-ACADEMIC_SOURCE_BLOB: fda1fa60d8448c016c24159156c6898de2bc673f
+SOURCE_BLOB: 21ce8179678bd0e9bc944d80dbde9646aaf73647
+ACADEMIC_SOURCE_BLOB: 21ce8179678bd0e9bc944d80dbde9646aaf73647
 FROZEN_R04_READY_SOURCE_BLOB: 41daf40a3b639a3ef35e129099525137a05b1848
 FROZEN_R04_FULL_AUTHOR_Q18_RECEIPT_BLOB: 5262fd454346801b050b5eb4f3dc407bc99d3530
 R05_GEOMETRIC_MODEL_SOURCE_BLOB: af8a3529398e5f876d5c979b0d5d26df3519d6ac
@@ -72,3 +72,8 @@ The previous source R06 (Git blob 331c31e124179b31731f9caca2669eaa8948bcbd) show
 ## CURRENT_ONE_SOURCE_AUTHORING_CONSOLIDATION (17/11/2026)
 
 The **original R05 learner file** now directly contains the 3 mathematically verified vector-arrow teaching lines in TOP18-O03 and **24** correctly reworded student-facing /5 Written rubric titles. Each changed rubric's numeric and textual criteria were verified EXACTLY equivalent to the original when stripping only title and old control-plane “Mastery” sentence. All 247 opt-in solution disclosures, original 212 item/public marker placements, 10 original SVG references, all assessment answers and independent public selfcheck remain unchanged. Learner source is the original existing R05 path above, blob `fda1fa60d8448c016c24159156c6898de2bc673f`, branch `authoring/topic18-r05-parameter-unit-fix-20261117`. The R06 parallel patch is discarded. This receipt's previous R06 ready/V2/REGISTER hashes are STALE, cannot confer CONTENT_READY on newly changed source without exact synced owner/QA. Independent complete Topic academic review/actual browser AP2 remain HOLD; no release/merge/deploy.
+
+
+## 18/11/2026 · exact merged-base title delta, new effective source SHA
+
+The currently effective learner is Git blob `21ce8179678bd0e9bc944d80dbde9646aaf73647`. Its full 3,638-line source was compared line-by-line against previous exact learner blob `fda1fa60d8448c016c24159156c6898de2bc673f`: **one line differs**, line 506 changes `### 2. Phương pháp tọa độ trong không gian` to `**Chuyển mạch — Phương pháp tọa độ trong không gian**` (heading/learner-transition prose only). There is no new mathematical proposition, condition, canonical item, question, answer, worked solution, rubric, SVG or Q16 exposure change. This is `DELTA_A_UI` / source-equivalent paragraph hierarchy, inspected on the actual merge-tested base revision, not assumed from stale PR head. Q18 original source mathematical content and independent source checks are preserved on immutable historical blob; the present `AUTHOR_SELF_VERIFIED` source-specific receipt covers the one-line heading delta. `P0=0, P1=0` for the affected heading. No independent full-Topic NotebookLM PASS, browser QA or merge/deploy authorization is implied.
