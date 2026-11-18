@@ -302,6 +302,7 @@
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
     <p class="thpt-r4-footnote">Nguồn học liệu: SGK Toán 10 Kết nối tri thức và thư viện SLM hiện hành. Các tình huống tự học bổ sung dùng dữ kiện minh họa riêng, không thay thế bài tập SGK/SBT.</p>
+
 <!-- END_B11_KNOWLEDGE_MARKDOWN -->
 
 ## B. Exactly eight original B11 Core/Practice canonical records (source-exact R01; do not edit)
