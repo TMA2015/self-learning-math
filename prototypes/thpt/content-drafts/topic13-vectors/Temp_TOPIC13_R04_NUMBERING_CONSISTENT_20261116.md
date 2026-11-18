@@ -2,7 +2,7 @@
 
 Từ mũi tên chỉ hướng trên mặt phẳng, em sẽ hiểu phép cộng, trừ và nhân vectơ trước khi tính bằng tọa độ. Các ví dụ về chuyển động, lực và hình không gian cho thấy một vectơ luôn mô tả cả độ lớn lẫn hướng. Em hãy tự giải câu Vận dụng rồi mở Đối chiếu; kiến thức về tọa độ Oxy và Oxyz được giải thích tại chỗ, không đòi học một chuyên đề khác trước.
 
-<!-- CROSS_BRANCH_G10_SGK_SOURCE: PR750; G10_SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9; G12_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; NEW20_BANK_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df -->
+<!-- CROSS_BRANCH_G10_SGK_SOURCE: PR750; G10_SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9; G12_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; NEW20_BANK_BLOB: 3c993c28e9aa8e91cfcaf070cbfcdb6981f4e317 -->
 <!-- AUTHORING_R03_CANDIDATE; R02_ORIGINAL_BLOB=d351c5aec660d6482f6694becbd3e2567a14edbf; NO_MERGE_DEPLOY -->
 
 # Kiến thức
@@ -181,17 +181,17 @@ Nếu A=(xA,yA), B=(xB,yB) thì \(\overrightarrow{AB}=(x_B-x_A,y_B-y_A)\). Tọa
 
 **Ví dụ**
 
-**Đề bài:** Hai điểm A=(−2,1), B=(3,5) trong Oxy. Tính AB, BA và so sánh độ dài, chiều.
+**Đề bài:** Hai điểm A=(−2,1), B=(3,5) trong Oxy. Tính tọa độ \(\overrightarrow{AB}\), \(\overrightarrow{BA}\) và so sánh độ dài, hướng.
 
-**Lời giải:** AB=(3−(−2),5−1)=(5,4), BA=(−2−3,1−5)=(−5,−4). Hai vectơ là đối nhau, cùng độ dài √(5²+4²)=√41 nhưng ngược chiều. Cần lấy tọa độ điểm cuối trừ điểm đầu.
+**Lời giải:** \(\overrightarrow{AB}=(3-(-2),5-1)=(5,4)\), \(\overrightarrow{BA}=(-2-3,1-5)=(-5,-4)\). Hai vectơ là đối nhau, cùng độ dài \(AB=BA=\sqrt{5^2+4^2}=\sqrt{41}\) nhưng ngược hướng. Cần lấy tọa độ điểm cuối trừ điểm đầu.
 
-**Vận dụng:** A=(4,−1),B=(−2,3); AB bằng bao nhiêu?
+**Vận dụng:** A=(4,−1), B=(−2,3); tọa độ \(\overrightarrow{AB}\) bằng bao nhiêu?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-AB=(−6,4).
+\(\overrightarrow{AB}=(-6,4)\).
 
-**Khi làm sai:** Nếu ra (6,−4), bạn đã tính BA; viết 'cuối trừ đầu' cạnh phép tính.
+**Khi làm sai:** Nếu ra (6,−4), em đã tính \(\overrightarrow{BA}\); hãy viết “cuối trừ đầu” bên cạnh phép tính.
 
 </details>
 
@@ -201,13 +201,13 @@ AB=(−6,4).
 
 Đi từ A đến B vừa lệch ngang vừa lệch dọc tạo thành một tam giác vuông. Độ dài đoạn thẳng là cạnh huyền của tam giác ấy; còn cùng phương và cùng hướng là hai câu hỏi khác nhau cần kiểm riêng.
 
-Với u=(ux,uy), |u|=√(ux²+uy²). AB là độ dài của vectơ AB. Trung điểm lấy trung bình hoành và tung; trọng tâm tam giác lấy trung bình ba tọa độ từng trục. Hai vectơ **khác không** cùng phương khi ux·vy−uy·vx=0; kết quả này không đồng nghĩa cùng hướng. Không dùng tỉ số có mẫu 0.
+Với vectơ \(\vec u=(u_x,u_y)\), độ dài \(|\vec u|=\sqrt{u_x^2+u_y^2}\). Độ dài đoạn \(AB=|\overrightarrow{AB}|\), còn tọa độ vectơ \(\overrightarrow{AB}\) là một cặp số. Trung điểm lấy trung bình hoành và tung; trọng tâm tam giác lấy trung bình ba tọa độ từng trục. Hai vectơ **khác không** cùng phương khi \(u_xv_y-u_yv_x=0\); kết quả này không đồng nghĩa cùng hướng. Không dùng tỉ số có mẫu 0.
 
 **Ví dụ**
 
-**Đề bài:** Trong Oxy, A=(−1,2), B=(5,−6). Tính AB, khoảng cách AB và trung điểm.
+**Đề bài:** Trong Oxy, A=(−1,2), B=(5,−6). Tính tọa độ \(\overrightarrow{AB}\), độ dài đoạn \(AB\) và tọa độ trung điểm M.
 
-**Lời giải:** AB=(6,−8) nên AB=√(6²+(−8)²)=10. Trung điểm M=((−1+5)/2,(2−6)/2)=(2,−2). Độ dài dùng căn tổng bình phương, còn tọa độ trung điểm là trung bình hai tọa độ cùng trục.
+**Lời giải:** \(\overrightarrow{AB}=(6,-8)\), còn độ dài đoạn \(AB=|\overrightarrow{AB}|=\sqrt{6^2+(-8)^2}=10\). Trung điểm \(M=((-1+5)/2,(2-6)/2)=(2,-2)\). Độ dài dùng căn tổng bình phương, còn tọa độ trung điểm là trung bình hai tọa độ cùng trục.
 
 **Vận dụng:** u=(2,4),v=(−1,−2): chúng cùng phương, cùng hướng không?
 
@@ -285,7 +285,7 @@ Phép cộng vectơ trong không gian giữ nguyên quy tắc nối đuôi. Tron
 
 **Đề bài:** Hình hộp chữ nhật có ba cạnh xuất phát từ A vuông góc đôi một và dài 2,3,4. Tính độ dài đường chéo nối A tới đỉnh đối diện C'.
 
-**Lời giải:** Chọn ba trục theo ba cạnh: AC' có thành phần (2,3,4). Do các trục vuông góc, |AC'|=√(2²+3²+4²)=√29. Đây là đường chéo không gian, không phải tổng ba cạnh 2+3+4.
+**Lời giải:** Chọn ba trục theo ba cạnh: vectơ \(\overrightarrow{AC'}\) có thành phần (2,3,4). Do các trục vuông góc, độ dài \(AC'=|\overrightarrow{AC'}|=\sqrt{2^2+3^2+4^2}=\sqrt{29}\). Đây là đường chéo không gian, không phải tổng ba cạnh 2+3+4.
 
 **Vận dụng:** \(\overrightarrow{AB}+\overrightarrow{AD}+\overrightarrow{AA'}\) đi tới C hay C'?
 
@@ -363,15 +363,15 @@ Có: dot=1−1+0=0, cả hai khác không.
 
 **Ví dụ**
 
-**Đề bài:** Trong Oxyz, A=(1,−1,2), B=(4,3,−2). Tính AB, BA và độ dài AB.
+**Đề bài:** Trong Oxyz, A=(1,−1,2), B=(4,3,−2). Tính tọa độ \(\overrightarrow{AB}\), \(\overrightarrow{BA}\) và độ dài đoạn \(AB\).
 
-**Lời giải:** AB=(4−1,3−(−1),−2−2)=(3,4,−4), còn BA=(−3,−4,4). Độ dài |AB|=√(3²+4²+(−4)²)=√41. Tọa độ điểm B không tự là tọa độ vectơ AB nếu gốc không phải O.
+**Lời giải:** \(\overrightarrow{AB}=(4-1,3-(-1),-2-2)=(3,4,-4)\), còn \(\overrightarrow{BA}=(-3,-4,4)\). Độ dài \(AB=|\overrightarrow{AB}|=\sqrt{3^2+4^2+(-4)^2}=\sqrt{41}\). Tọa độ điểm B không tự là tọa độ vectơ \(\overrightarrow{AB}\) nếu gốc không phải O.
 
-**Vận dụng:** A=(2,0,−1),B=(−1,5,3): AB?
+**Vận dụng:** A=(2,0,−1), B=(−1,5,3): tọa độ \(\overrightarrow{AB}\) là gì?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-AB=(−3,5,4).
+\(\overrightarrow{AB}=(-3,5,4)\).
 
 **Khi làm sai:** Nếu đổi dấu tất cả, bạn đã làm A−B thay vì B−A.
 
@@ -391,9 +391,9 @@ Với u=(u1,u2,u3), v=(v1,v2,v3): u+v=(u1+v1,u2+v2,u3+v3); ku=(ku1,ku2,ku3); |u|
 
 **Ví dụ**
 
-**Đề bài:** Cho A=(1,0,2), B=(5,2,−2). Tìm trung điểm M, vectơ AB và kiểm AM=MB.
+**Đề bài:** Cho A=(1,0,2), B=(5,2,−2). Tìm trung điểm M, tọa độ vectơ \(\overrightarrow{AB}\) và kiểm tra hai độ dài \(AM=MB\).
 
-**Lời giải:** AB=(4,2,−4), dài √(16+4+16)=6. M=((1+5)/2,(0+2)/2,(2−2)/2)=(3,1,0). AM=(2,1,−2) dài 3 và MB=(2,1,−2) dài 3, nên M thực sự nằm giữa A,B.
+**Lời giải:** \(\overrightarrow{AB}=(4,2,-4)\), có độ dài \(AB=|\overrightarrow{AB}|=\sqrt{16+4+16}=6\). Trung điểm \(M=((1+5)/2,(0+2)/2,(2-2)/2)=(3,1,0)\). Hai vectơ \(\overrightarrow{AM}=\overrightarrow{MB}=(2,1,-2)\), do đó \(AM=MB=3\); M nằm giữa A và B.
 
 **Vận dụng:** A=(0,0,0),B=(6,0,0),C=(0,3,9): trọng tâm?
 
@@ -908,33 +908,33 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 
 ## 2. Bài mới theo mạch học
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P01; SOURCE_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df; OUTCOME: TOP13-O02; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P01; SOURCE_BLOB: 3c993c28e9aa8e91cfcaf070cbfcdb6981f4e317; OUTCOME: TOP13-O02; SINGLE_ITEM_ID -->
 ### Luyện 1 · Chiều vectơ hình bình hành
 
-**Đề:** Trong hình bình hành ABCD, vectơ nào bằng AB: DC hay CD?
+**Đề:** Trong hình bình hành ABCD, vectơ nào bằng \(\overrightarrow{AB}\): \(\overrightarrow{DC}\) hay \(\overrightarrow{CD}\)?
 
 <details markdown="1"><summary>Đối chiếu lời giải</summary>
 
-DC cùng hướng và độ dài; CD ngược hướng.
+\(\overrightarrow{DC}=\overrightarrow{AB}\) vì cùng hướng và độ dài; \(\overrightarrow{CD}=-\overrightarrow{AB}\) vì ngược hướng.
 
 **Sửa lỗi:** Xem lại mục Kiến thức 2 và tự trình bày một lượt không nhìn lời giải.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P02; SOURCE_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df; OUTCOME: TOP13-O01; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P02; SOURCE_BLOB: 3c993c28e9aa8e91cfcaf070cbfcdb6981f4e317; OUTCOME: TOP13-O01; SINGLE_ITEM_ID -->
 ### Luyện 2 · Vectơ-không theo quy ước KNTT
 
-**Đề:** Khi A=B, độ dài AA và quan hệ cùng phương theo quy ước KNTT đối với vectơ khác không là gì?
+**Đề:** Khi A=B, độ dài \(\lvert\overrightarrow{AA}\rvert\) và quan hệ cùng phương của vectơ-không với vectơ khác không theo quy ước KNTT là gì?
 
 <details markdown="1"><summary>Đối chiếu lời giải</summary>
 
-AA dài 0; vectơ-không được quy ước cùng phương và cùng hướng với mọi vectơ. Không suy góc xác định với nó.
+\(\overrightarrow{AA}=\vec 0\) nên độ dài bằng 0; vectơ-không được quy ước cùng phương và cùng hướng với mọi vectơ. Không suy góc xác định với nó.
 
 **Sửa lỗi:** Xem lại mục Kiến thức 1 và tự trình bày một lượt không nhìn lời giải.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P03; SOURCE_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df; OUTCOME: TOP13-O03; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P03; SOURCE_BLOB: 3c993c28e9aa8e91cfcaf070cbfcdb6981f4e317; OUTCOME: TOP13-O03; SINGLE_ITEM_ID -->
 ### Luyện 3 · Đường đi và độ dời
 
 **Đề:** Robot đi 5 m về đông rồi 12 m về bắc. Tính tổng quãng đường và độ lớn của vectơ độ dời.
@@ -947,7 +947,7 @@ Quãng đường là 5+12=17 m; độ dời là √(5²+12²)=13 m. Không lấy
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P04; SOURCE_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df; OUTCOME: TOP13-O04; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P04; SOURCE_BLOB: 3c993c28e9aa8e91cfcaf070cbfcdb6981f4e317; OUTCOME: TOP13-O04; SINGLE_ITEM_ID -->
 ### Luyện 4 · Hiệu hai vectơ chung gốc
 
 **Đề:** Cho A=(−1,2), B=(4,3), C=(2,−2). Tính \(\overrightarrow{AB}-\overrightarrow{AC}\) và đối chiếu với một vectơ có điểm đầu C.
@@ -960,7 +960,7 @@ Quãng đường là 5+12=17 m; độ dời là √(5²+12²)=13 m. Không lấy
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P05; SOURCE_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df; OUTCOME: TOP13-O05; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P05; SOURCE_BLOB: 3c993c28e9aa8e91cfcaf070cbfcdb6981f4e317; OUTCOME: TOP13-O05; SINGLE_ITEM_ID -->
 ### Luyện 5 · Nhân âm với vectơ
 
 **Đề:** Cho u=(2,−1) và v=−4u. Tìm v, độ dài v và quan hệ hướng với u.
@@ -973,7 +973,7 @@ v=(−8,4), |u|=√5 nên |v|=4√5. Hệ số −4 đảo hướng của u.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P06; SOURCE_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df; OUTCOME: TOP13-O06; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P06; SOURCE_BLOB: 3c993c28e9aa8e91cfcaf070cbfcdb6981f4e317; OUTCOME: TOP13-O06; SINGLE_ITEM_ID -->
 ### Luyện 6 · Điểm cân bằng
 
 **Đề:** Tam giác A=(−3,0), B=(3,0), C=(0,6). Tìm trung điểm M của BC và trọng tâm G. Kiểm \(\overrightarrow{AG}=\tfrac23\overrightarrow{AM}\).
@@ -986,7 +986,7 @@ v=(−8,4), |u|=√5 nên |v|=4√5. Hệ số −4 đảo hướng của u.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P07; SOURCE_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df; OUTCOME: TOP13-O07; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P07; SOURCE_BLOB: 3c993c28e9aa8e91cfcaf070cbfcdb6981f4e317; OUTCOME: TOP13-O07; SINGLE_ITEM_ID -->
 ### Luyện 7 · Oxy cuối trừ đầu
 
 **Đề:** Cho A=(−3,4), B=(5,−2). Tính vectơ \(\overrightarrow{AB}\) và độ dài của nó.
@@ -999,7 +999,7 @@ v=(−8,4), |u|=√5 nên |v|=4√5. Hệ số −4 đảo hướng của u.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P08; SOURCE_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df; OUTCOME: TOP13-O08; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P08; SOURCE_BLOB: 3c993c28e9aa8e91cfcaf070cbfcdb6981f4e317; OUTCOME: TOP13-O08; SINGLE_ITEM_ID -->
 ### Luyện 8 · Cùng phương không đồng nghĩa cùng hướng
 
 **Đề:** Cho u=(4,−6), v=(−2,3). Chúng cùng phương không và có cùng hướng không?
@@ -1012,7 +1012,7 @@ v=−(1/2)u, cả hai khác không nên cùng phương nhưng ngược hướng.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P09; SOURCE_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df; OUTCOME: TOP13-O09; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P09; SOURCE_BLOB: 3c993c28e9aa8e91cfcaf070cbfcdb6981f4e317; OUTCOME: TOP13-O09; SINGLE_ITEM_ID -->
 ### Luyện 9 · Tích vô hướng từ góc
 
 **Đề:** Hai vectơ có độ dài 8 và 5, góc giữa chúng 120°. Tính tích vô hướng và giải thích dấu.
@@ -1025,7 +1025,7 @@ u·v=8·5·cos120°=−20; góc tù nên tích âm. Nếu ra dương, đã bỏ 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P10; SOURCE_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df; OUTCOME: TOP13-O10; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P10; SOURCE_BLOB: 3c993c28e9aa8e91cfcaf070cbfcdb6981f4e317; OUTCOME: TOP13-O10; SINGLE_ITEM_ID -->
 ### Luyện 10 · Vuông góc Oxy
 
 **Đề:** u=(3,−2),v=(4,6). Kiểm hai vectơ có vuông góc không.
@@ -1038,10 +1038,10 @@ u·v=12−12=0 và u,v khác không ⇒ vuông góc.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P11; SOURCE_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df; OUTCOME: TOP13-O11; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P11; SOURCE_BLOB: 3c993c28e9aa8e91cfcaf070cbfcdb6981f4e317; OUTCOME: TOP13-O11; SINGLE_ITEM_ID -->
 ### Luyện 11 · Đường chéo hình hộp
 
-**Đề:** Trong hình hộp chữ nhật, ba cạnh xuất phát từ A vuông góc đôi một và dài 3, 4, 12. Tìm độ dài vectơ AC'.
+**Đề:** Trong hình hộp chữ nhật, ba cạnh xuất phát từ A vuông góc đôi một và dài 3, 4, 12. Tìm độ dài vectơ \(\overrightarrow{AC'}\).
 
 <details markdown="1"><summary>Đối chiếu lời giải</summary>
 
@@ -1051,7 +1051,7 @@ u·v=12−12=0 và u,v khác không ⇒ vuông góc.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P12; SOURCE_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df; OUTCOME: TOP13-O12; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P12; SOURCE_BLOB: 3c993c28e9aa8e91cfcaf070cbfcdb6981f4e317; OUTCOME: TOP13-O12; SINGLE_ITEM_ID -->
 ### Luyện 12 · Chasles trong Oxyz
 
 **Đề:** A=(−1,2,0), B=(2,−1,4), C=(5,3,−2). Hãy tính \(\overrightarrow{AB}\), \(\overrightarrow{BC}\), \(\overrightarrow{AC}\), rồi xác minh quy tắc ba điểm.
@@ -1064,7 +1064,7 @@ u·v=12−12=0 và u,v khác không ⇒ vuông góc.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P13; SOURCE_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df; OUTCOME: TOP13-O13; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P13; SOURCE_BLOB: 3c993c28e9aa8e91cfcaf070cbfcdb6981f4e317; OUTCOME: TOP13-O13; SINGLE_ITEM_ID -->
 ### Luyện 13 · Vuông góc trong không gian
 
 **Đề:** Hai vectơ không gian u=(2,−1,2), v=(1,4,1). Tính u·v và góc giữa chúng.
@@ -1077,7 +1077,7 @@ u·v=2−4+2=0; |u|=3 và |v|=3√2 đều khác 0 nên góc bằng 90°.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P14; SOURCE_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df; OUTCOME: TOP13-O14; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P14; SOURCE_BLOB: 3c993c28e9aa8e91cfcaf070cbfcdb6981f4e317; OUTCOME: TOP13-O14; SINGLE_ITEM_ID -->
 ### Luyện 14 · Tọa độ độ dời Oxyz
 
 **Đề:** A=(−2,3,1), B=(4,−1,5). Tính tọa độ \(\overrightarrow{AB}\) và khoảng cách từ A tới B.
@@ -1090,7 +1090,7 @@ u·v=2−4+2=0; |u|=3 và |v|=3√2 đều khác 0 nên góc bằng 90°.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P15; SOURCE_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df; OUTCOME: TOP13-O15; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P15; SOURCE_BLOB: 3c993c28e9aa8e91cfcaf070cbfcdb6981f4e317; OUTCOME: TOP13-O15; SINGLE_ITEM_ID -->
 ### Luyện 15 · Trung điểm Oxyz
 
 **Đề:** Cho A=(−1,2,4), B=(5,−2,−4). Tìm trung điểm M và khoảng cách AB.
@@ -1103,7 +1103,7 @@ u·v=2−4+2=0; |u|=3 và |v|=3√2 đều khác 0 nên góc bằng 90°.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P16; SOURCE_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df; OUTCOME: TOP13-O16; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P16; SOURCE_BLOB: 3c993c28e9aa8e91cfcaf070cbfcdb6981f4e317; OUTCOME: TOP13-O16; SINGLE_ITEM_ID -->
 ### Luyện 16 · Hai chặng drone
 
 **Đề:** Drone ở P=(1,−2,0) m, bay u=(4,0,3) m rồi v=(−1,4,0) m. Tìm Q, độ dài độ dời và quãng đường hai chặng.
@@ -1116,7 +1116,7 @@ Q=P+u+v=(4,2,3) m. Tổng độ dời=(3,4,3) dài √34 m; quãng đường the
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-W01; SOURCE_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df; OUTCOME: TOP13-O06; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-W01; SOURCE_BLOB: 3c993c28e9aa8e91cfcaf070cbfcdb6981f4e317; OUTCOME: TOP13-O06; SINGLE_ITEM_ID -->
 ### Tự luận 1 · Tổng vectơ và trọng tâm
 
 **Đề:** Với A=(−2,1), B=(4,1), C=(1,7), hãy (a) rút gọn \(\overrightarrow{AB}+\overrightarrow{BC}\); (b) tìm trung điểm M của BC; (c) tìm trọng tâm G và chứng minh \(\overrightarrow{AG}=\tfrac23\overrightarrow{AM}\).
@@ -1129,7 +1129,7 @@ Q=P+u+v=(4,2,3) m. Tổng độ dời=(3,4,3) dài √34 m; quãng đường the
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-W02; SOURCE_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df; OUTCOME: TOP13-O10; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-W02; SOURCE_BLOB: 3c993c28e9aa8e91cfcaf070cbfcdb6981f4e317; OUTCOME: TOP13-O10; SINGLE_ITEM_ID -->
 ### Tự luận 2 · Tích vô hướng và góc trong Oxy
 
 **Đề:** Cho tam giác A=(0,0),B=(6,0),C=(2,4). Tính (a) \(\overrightarrow{AB}\cdot\overrightarrow{AC}\); (b) cos góc A; (c) trọng tâm G và diện tích tam giác.
@@ -1142,20 +1142,20 @@ Q=P+u+v=(4,2,3) m. Tổng độ dời=(3,4,3) dài √34 m; quãng đường the
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-W03; SOURCE_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df; OUTCOME: TOP13-O11; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-W03; SOURCE_BLOB: 3c993c28e9aa8e91cfcaf070cbfcdb6981f4e317; OUTCOME: TOP13-O11; SINGLE_ITEM_ID -->
 ### Tự luận 3 · Vectơ đường chéo hình hộp
 
-**Đề:** Một hình hộp chữ nhật có A=(0,0,0), B=(3,0,0), D=(0,4,0), A'=(0,0,12). Tìm C', độ dài AC', tích vô hướng \(\overrightarrow{AB}\cdot\overrightarrow{AC'}\) và cos góc giữa chúng.
+**Đề:** Một hình hộp chữ nhật có A=(0,0,0), B=(3,0,0), D=(0,4,0), A'=(0,0,12). Tìm C', độ dài đoạn \(AC'\), tích vô hướng \(\overrightarrow{AB}\cdot\overrightarrow{AC'}\) và cos góc giữa chúng.
 
 <details markdown="1"><summary>Đối chiếu và rubric /7</summary>
 
-C'=(3,4,12) (2đ); |AC'|=13 và AB·AC'=9 (3đ); cos góc=9/(3·13)=3/13 (2đ). Tổng 7 điểm.
+\(C'=(3,4,12)\) (2đ); \(AC'=\lvert\overrightarrow{AC'}\rvert=13\) và \(\overrightarrow{AB}\cdot\overrightarrow{AC'}=9\) (3đ); \(\cos\theta=9/(3\cdot13)=3/13\) (2đ). Tổng 7 điểm.
 
 **Sửa lỗi:** Xem lại mục Kiến thức 11 và tự trình bày một lượt không nhìn lời giải.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-W04; SOURCE_BLOB: 136bd4552118e5dba6b18b58965be7d37878e9df; OUTCOME: TOP13-O16; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-W04; SOURCE_BLOB: 3c993c28e9aa8e91cfcaf070cbfcdb6981f4e317; OUTCOME: TOP13-O16; SINGLE_ITEM_ID -->
 ### Tự luận 4 · Drone và công của lực
 
 **Đề:** Drone ở P=(0,0,1) m bay u=(2,−1,2) m rồi v=(−1,3,0) m, trong khi lực không đổi F=(1,2,−1) N tác dụng. (a) Tìm Q. (b) Phân biệt quãng đường với độ dài độ dời. (c) Tính công trên tổng độ dời.
@@ -1174,11 +1174,11 @@ C'=(3,4,12) (2đ); |AC'|=13 và AB·AC'=9 (3đ); cos góc=9/(3·13)=3/13 (2đ). 
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P01; OUTCOME: TOP13-O02; NO_RD1; NO_MASTERY -->
 
-**Câu 1.** Trong hình bình hành ABCD, vectơ nào bằng AB: DC hay CD?
+**Câu 1.** Trong hình bình hành ABCD, vectơ nào bằng \(\overrightarrow{AB}\): \(\overrightarrow{DC}\) hay \(\overrightarrow{CD}\)?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P02; OUTCOME: TOP13-O01; NO_RD1; NO_MASTERY -->
 
-**Câu 2.** Khi A=B, độ dài AA và quan hệ cùng phương theo quy ước KNTT đối với vectơ khác không là gì?
+**Câu 2.** Khi A=B, độ dài \(\lvert\overrightarrow{AA}\rvert\) và quan hệ cùng phương của vectơ-không với vectơ khác không theo quy ước KNTT là gì?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P03; OUTCOME: TOP13-O03; NO_RD1; NO_MASTERY -->
 
@@ -1198,7 +1198,7 @@ C'=(3,4,12) (2đ); |AC'|=13 và AB·AC'=9 (3đ); cos góc=9/(3·13)=3/13 (2đ). 
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P07; OUTCOME: TOP13-O07; NO_RD1; NO_MASTERY -->
 
-**Câu 7.** Cho A=(−3,4), B=(5,−2). Tính vectơ AB và độ dài của nó.
+**Câu 7.** Cho A=(−3,4), B=(5,−2). Tính vectơ \(\overrightarrow{AB}\) và độ dài của nó.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P08; OUTCOME: TOP13-O08; NO_RD1; NO_MASTERY -->
 
@@ -1214,11 +1214,11 @@ C'=(3,4,12) (2đ); |AC'|=13 và AB·AC'=9 (3đ); cos góc=9/(3·13)=3/13 (2đ). 
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P11; OUTCOME: TOP13-O11; NO_RD1; NO_MASTERY -->
 
-**Câu 11.** Trong hình hộp chữ nhật, ba cạnh xuất phát từ A vuông góc đôi một và dài 3, 4, 12. Tìm độ dài vectơ AC'.
+**Câu 11.** Trong hình hộp chữ nhật, ba cạnh xuất phát từ A vuông góc đôi một và dài 3, 4, 12. Tìm độ dài vectơ \(\overrightarrow{AC'}\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P12; OUTCOME: TOP13-O12; NO_RD1; NO_MASTERY -->
 
-**Câu 12.** A=(−1,2,0), B=(2,−1,4), C=(5,3,−2). Hãy tính AB, BC và AC, rồi xác minh quy tắc ba điểm.
+**Câu 12.** A=(−1,2,0), B=(2,−1,4), C=(5,3,−2). Hãy tính \(\overrightarrow{AB}\), \(\overrightarrow{BC}\), \(\overrightarrow{AC}\), rồi xác minh quy tắc ba điểm.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P13; OUTCOME: TOP13-O13; NO_RD1; NO_MASTERY -->
 
@@ -1226,7 +1226,7 @@ C'=(3,4,12) (2đ); |AC'|=13 và AB·AC'=9 (3đ); cos góc=9/(3·13)=3/13 (2đ). 
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P14; OUTCOME: TOP13-O14; NO_RD1; NO_MASTERY -->
 
-**Câu 14.** A=(−2,3,1), B=(4,−1,5). Tính tọa độ AB và khoảng cách từ A tới B.
+**Câu 14.** A=(−2,3,1), B=(4,−1,5). Tính tọa độ \(\overrightarrow{AB}\) và khoảng cách từ A tới B.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP13-P15; OUTCOME: TOP13-O15; NO_RD1; NO_MASTERY -->
 
