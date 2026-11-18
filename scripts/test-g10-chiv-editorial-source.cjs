@@ -147,8 +147,12 @@ for(const [lesson,row] of rows){
      "B08 R04 extends exactly immutable R03 content");
    const standard=fs.readFileSync(path.join(root,
     "prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md"));
-   assert.equal(blob(standard),f04("R04_STANDARD_BLOB"),
-     "B08 semantic 3+1 must reference one owner-approved exact standard source");
+   assert.equal(f04("R04_STANDARD_BLOB"),"24f744b5d9f114d053b6e2e1ab8a0fb26c3fab39",
+     "B08 original historical standard SHA remains signed and immutable");
+   assert.equal(blob(standard),"224792a6037a098ec3cc42fb67e2c2f95581bbc9",
+     "B08 current owner-effective standard must match merged PR908 exact SHA");
+   assert(standard.toString("utf8").includes("OWNER_APPROVED_PR_899_MERGED_INTO_MAIN_20261117"),
+     "Owner-effective v3.2.0 requires merged PR899 evidence");
    const formal=source.slice(source.indexOf('=== "Kiến thức SGK"'),source.indexOf('=== "Ví dụ"'));
    const signed=[
     ["Định nghĩa — Tổng hai vectơ:",1],
@@ -253,8 +257,12 @@ for(const [lesson,row] of rows){
    "B09 R03 must extend exact frozen original editorial source");
   const standard=fs.readFileSync(path.join(root,
    "prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md"));
-  assert.equal(blob(standard),f("STANDARD_BLOB"),
-   "B09 3+1 source uses one effective signed v3.2.0 standard");
+  assert.equal(f("STANDARD_BLOB"),"24f744b5d9f114d053b6e2e1ab8a0fb26c3fab39",
+   "B09 historical v3.2.0 signed standard SHA must remain immutable");
+  assert.equal(blob(standard),"224792a6037a098ec3cc42fb67e2c2f95581bbc9",
+   "B09 effective v3.2.0 after approved PR908 must match exact SHA");
+  assert(standard.toString("utf8").includes("OWNER_APPROVED_PR_899_MERGED_INTO_MAIN_20261117"),
+   "Owner-effective v3.2.0 activation must be explicit");
   const official=source.slice(source.indexOf('=== "Kiến thức SGK"'),source.indexOf('=== "Ví dụ"'));
   const anchors=[
    "Định nghĩa — Tích của một vectơ với một số:",
