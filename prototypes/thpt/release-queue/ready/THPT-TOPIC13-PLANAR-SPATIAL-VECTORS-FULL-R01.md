@@ -8,26 +8,26 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-CONTENT_REVISION: R07
+CONTENT_REVISION: R07_EDITORIAL_FINAL_20261118
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL_AFFECTED_VECTOR_AND_W03
 NOTEBOOKLM_REREVIEW: NOT_REQUIRED_WITH_REASON
-SOURCE_COMMIT: 262365d09b4892bf64b736010d4f6d2578cab9e6
+SOURCE_COMMIT: 514b3cd2e0c986b87aab8aa7e5a29a4521940db7
 CATALOG_TOPIC_ID: CD13
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 94e24a128c33efc141f6be52ad11656973043567
+ACADEMIC_SOURCE_BLOB: 2fe260f6da3f4eedec7d9b8c93d683915493cc1e
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md (Q18 AUTHOR_SELF_VERIFIED, not new independent NotebookLM PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 74eb71875e2bbde3902b9eb52f60a419d4abe864
+REVIEW_RECEIPT_BLOB: 0da86e86df36c1e8548076fa50935912af57b991
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_A1_A7_BLOB: 6ab826963e00ee1c3b2cbf922e012ef841513d3a
+AUTHOR_A1_A7_BLOB: d7b7cb710ab3675a0d928c5d6d1ea53911977762
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md
-PUBLIC_CANONICAL_BANK_BLOB: e2f71e56479a08c4f8bb5f949d4ed8e249983cd6
+PUBLIC_CANONICAL_BANK_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563
 G10_SGK_ORIGINAL_DEPENDENCY_PR: 750
 G10_SGK_ORIGINAL_DEPENDENCY_BRANCH: authoring/g10-chiv-ped-r02-24-outcomes-20261105
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC13-PLANAR-SPATIAL-VECTORS-FULL-R04_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: 5ee701c359668a233a8decff652a15d582525f0a
+AUTHOR_HANDOFF_BLOB: 75a1e91df43df7b2db3f02ac18b7930fe64963bd
 ORIGINAL_G10_SGK_SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9
 ORIGINAL_G12_SGK_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
 SVG1_BLOB: 55ec9add04cb79da2cad7703b3897271e5b3436a
@@ -76,9 +76,9 @@ The independent Topic CĐ13 student path has 3 pages Knowledge / Practice / Self
 
 **SOURCE REVISION R02:** 17 new Practice/Written exercises gained changed transfer data and fully rechecked answer/rubric, to prevent repeating worked-example numbers. Git source, metadata, Q18 receipt, handoff and REGISTER were re-locked; no old SGK item or existing Q15 ID changed.
 
-- [x] A1_SOURCE_SNAPSHOT — current sole student source `94e24a128c33efc141f6be52ad11656973043567`, signed Q18 `74eb71875e2bbde3902b9eb52f60a419d4abe864`, A1 custody `6ab826963e00ee1c3b2cbf922e012ef841513d3a`, one V2 `5ee701c359668a233a8decff652a15d582525f0a`, one canonical NEW20 bank `e2f71e56479a08c4f8bb5f949d4ed8e249983cd6`, original G10/G12 verified Git owner blobs; current source pointers and outcome/item roster rechecked.
+- [x] A1_SOURCE_SNAPSHOT — current sole student source `2fe260f6da3f4eedec7d9b8c93d683915493cc1e`, signed Q18 `0da86e86df36c1e8548076fa50935912af57b991`, A1 custody `d7b7cb710ab3675a0d928c5d6d1ea53911977762`, one V2 `75a1e91df43df7b2db3f02ac18b7930fe64963bd`, one canonical NEW20 bank `c74505ba59d047c19943c2309f5fd7c033ac9563`, original G10/G12 verified Git owner blobs; current source pointers and outcome/item roster rechecked.
 - [x] A2_SGK_SBT_SCOPE — original reviewer-checked Toán10 KNTT T1 ChIV B07–B11 SGK printed46–70 (SBT45–65), Toán12 T1 ChII B06–B08 printed45–72/PDF47–74 (SBT printed38–54/PDF36–52), **no new PDF scan claimed**. Original G10 historical page discrepancy remains documented in original source.
-- [x] A3_NOTEBOOKLM_VERDICT — legacy CI checklist key retained; actual Q18 mode `AUTHOR_SELF_VERIFIED` on exact learner Git SHA `94e24a128c33efc141f6be52ad11656973043567` and composite author receipt `74eb71875e2bbde3902b9eb52f60a419d4abe864`. New targeted material vector/length and W03 rubric correction directly math/PED re-solved, P0/P1=0; `NOTEBOOKLM_REREVIEW=NOT_REQUIRED_WITH_REASON`. This is **not** independent NotebookLM Topic13 PASS; original SGK independent decisions remain source-scoped only.
+- [x] A3_NOTEBOOKLM_VERDICT — legacy CI checklist key retained; actual Q18 mode `AUTHOR_SELF_VERIFIED` on exact learner Git SHA `2fe260f6da3f4eedec7d9b8c93d683915493cc1e` and composite author receipt `0da86e86df36c1e8548076fa50935912af57b991`. New targeted material vector/length and W03 rubric correction directly math/PED re-solved, P0/P1=0; `NOTEBOOKLM_REREVIEW=NOT_REQUIRED_WITH_REASON`. This is **not** independent NotebookLM Topic13 PASS; original SGK independent decisions remain source-scoped only.
 - [x] A4_ITEM_OUTCOME_IDS — 16 Lessons,16 outcomes; 52 unique public canonical IDs, one V2 item→outcome→role mapping with 20 G10+12 G12 original references and20 unique new Topic answers. Sixteen public Self Check placements reuse Practice IDs.
 - [x] A5_D1_D6_SCOPE — 16 coherent explanation→worked→Tự thử→D6 sequences, four new Written with /7 rubric, four source-locked SVG with reading guidance, three-page learning path.
 - [x] A6_DELTA_RESOLVED — O07/O08/O11/O14/O15 vector-coordinate versus scalar-length ambiguity and canonical NEW20 P01/P02/P11/W03 notation repaired on single source/bank under `DELTA_C_ACADEMIC_MATERIAL` for material math/rubric, source-equivalent elsewhere. W03 content_version 2, dot-product 9, cos=3/13, rubric 2+3+2=7 unchanged. Q18 direct author evidence, P0/P1=0, no new independent reviewer or overwritten historical snapshot.
@@ -128,10 +128,18 @@ Source, affected-scope Q18, A1–A7, V2, bank fields above supersede old R04 cur
 
 ## CURRENT R07 AUTHORING CONTENT_READY · Q01–Q18 full source custody (18/11/2026)
 
-The current one effective learner Markdown source `94e24a128c33efc141f6be52ad11656973043567` and one public NEW20 canonical bank `e2f71e56479a08c4f8bb5f949d4ed8e249983cd6` are bound by signed affected-scope Q18 `74eb71875e2bbde3902b9eb52f60a419d4abe864`, A1–A7 `6ab826963e00ee1c3b2cbf922e012ef841513d3a`, one V2 `5ee701c359668a233a8decff652a15d582525f0a` and this stable-packet ready manifest. Historical R03–R06 paragraphs above retain only their original SHA scope.
+The current one effective learner Markdown source `2fe260f6da3f4eedec7d9b8c93d683915493cc1e` and one public NEW20 canonical bank `c74505ba59d047c19943c2309f5fd7c033ac9563` are bound by signed affected-scope Q18 `0da86e86df36c1e8548076fa50935912af57b991`, A1–A7 `d7b7cb710ab3675a0d928c5d6d1ea53911977762`, one V2 `75a1e91df43df7b2db3f02ac18b7930fe64963bd` and this stable-packet ready manifest. Historical R03–R06 paragraphs above retain only their original SHA scope.
 
 - 16/16 complete concept-first outcomes with standalone Ví dụ/Đề bài/Lời giải and immediate Vận dụng/Đối chiếu, all 52 unique public canonical Practice IDs (20 original G10 SGK from Draft #750 verified blob `96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9`, 12 G12 original `856a37bd16d2746ffc2e12906de18d1f4338a3b6`, 20 Topic from one NEW20 bank). 20/20 current NEW20 canonical question stems identical to student Practice. W03 uses content_version 2 in the **same** bank, /7 unchanged; 16 public question-only replay IDs not a private RD1 or official readiness. `CLIENT_SELF_CHECK_NO_MASTERY`.
 - Corrections: 15 math-explanation lines O07/O08/O11/O14/O15 now distinguish a directed vector `\\overrightarrow{AB}` from length `AB=|\\overrightarrow{AB}|`, including coordinates, distance and midpoint. P01/P02/P11 and W03 canonical statement/rubric notation synchronized with student displays, six question-only replay stems clarified without solutions. W03 data `(3,0,0)·(3,4,12)=9`, diagonal 13, cos=3/13, points 2+3+2=7. Q18 is evidence-scoped `AUTHOR_SELF_VERIFIED`, not reused external PASS.
 - Four original SVG Git blobs referenced five times, 68/68 reveal boundaries, no learner-visible author IDs, no private RD1/Final Submit/Mastery. No math or presentation QA asserted beyond the exact source checked.
 - **Separate RELEASE intake dependency:** G10 canonical source blob `96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9` exists only on sibling Draft PR #750 (source-owner verified), not this Topic-only branch. RELEASE must prove exact G10 source on integrated combined HEAD or HOLD R1; AUTHORING does not merge or copy a different SGK canonical to this branch.
 - Exact Topic V2 source QA on final PR HEAD still required. Browser/AP1–AP5 and Golden responsiveness/assessment runtime remain RELEASE gates; no website merge/deploy permission from this author receipt.
+
+
+## FINAL R07 #864 learner-facing editorial acceptance · 18/11/2026
+
+- Same original one Topic Markdown Git blob now `2fe260f6da3f4eedec7d9b8c93d683915493cc1e`, bank NEW20 `c74505ba59d047c19943c2309f5fd7c033ac9563`; targeted Q18 `0da86e86df36c1e8548076fa50935912af57b991`; A1 `d7b7cb710ab3675a0d928c5d6d1ea53911977762`; single current V2 `75a1e91df43df7b2db3f02ac18b7930fe64963bd`. Stable packet R01 remains the same; historical R03–R06 source identities above do not override these current pointers.
+- Corrected additional verified owner #864 editorial P2s on the current student source: 48 Practice reveal captions now simply **Lời giải**, four Written reveal captions **Lời giải và rubric**, 16 Knowledge Vận dụng disclosures remain **Đối chiếu**, and exactly one human-readable SGK/SBT KNTT source line now follows all 16 selfcheck stems at the end of the Topic. No mathematical item, rubric score, answer key, source-owner ID or Q16 privacy changed in this **DELTA_A_UI** step. Former academic vector/scalar/W03 **DELTA_C** is already source-selfQA in the same current receipt, not converted into UI Delta.
+- 16/16 worked modules, 52/52 unique public canonical IDs (20 original G10 SGK on sibling Draft #750, 12 original G12, 20 current NEW20), 20/20 NEW20 original stem projections, 16/16 public question-only replay, four unchanged SVGs/five placements, 68/68 voluntary answer boundaries; W03 content_version 2, unchanged 7-point rubric and numeric math. `CONTENT_READY` here is AUTHORING only; no Topic independent NotebookLM reviewer PASS, no RELEASE/browser/AP/P1–P2 or merge/deploy.
+- RELEASE original G10 canonical owner blob `96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9` is verified on sibling Draft #750 but needs exact SHA presence on the assembled integrated HEAD; this is a **separate RELEASE R1 dependency**, not a new AUTHORING material-content HOLD.
