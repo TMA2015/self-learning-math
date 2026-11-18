@@ -5,10 +5,12 @@ STANDARD_VERSION: 3.1.0
 VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_LEARNER_PRESENTATION_20261116.md
 SOURCE_BLOB: d4a501bce64003f3583aca947d429504530b72c0
-CURRENT_Q18_RECEIPT_BLOB: 9b8ae77f1e9558e6f4d85c81f04e850ab5d5aa5d
+CURRENT_Q18_RECEIPT_BLOB: b3204f8e8e1a43921c1039d362dca91f22321f8a
+CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/TOP20_R12_Q18_AUTHOR_SELF_QA_COMPOSITE_20261118.md
+AFFECTED_SCOPE_HISTORICAL_Q18_BLOB: 9b8ae77f1e9558e6f4d85c81f04e850ab5d5aa5d
 CURRENT_Q15_MATRIX_BLOB: 9d89151085df7bd01df86fc304675bf4d1f3a5fb
 CONTENT_SNAPSHOT: R11_SOURCE_EQUIVALENT_R10 / FULL_TOPIC_LEARNING_PATH / KIEN_THUC + LUYEN_TAP + TU_KIEM_TRA
-STATUS: ACTIVE_AUTHORING_Q15_SOURCE_CUSTODY_VERIFIED; DELTA_C_PED_TARGETED_IN_REVIEW; CONTENT_READY_NO
+STATUS: AUTHOR_SELF_QA_PASS_CURRENT_SOURCE; A1_A7_PASS; READY_ONLY_WHEN_CURRENT_V2_MANIFEST_REGISTER_SYNC
 
 ## R11 exact-source equivalent learner presentation (technical-only, 16/11/2026)
 
@@ -70,3 +72,17 @@ I have reviewed the whole authoring source after its R10 metadata-only lock, re-
 
 - Only active learner source `d4a501bce64003f3583aca947d429504530b72c0`; scoped Q18 `9b8ae77f1e9558e6f4d85c81f04e850ab5d5aa5d`; Q15 exact-owner matrix `9d89151085df7bd01df86fc304675bf4d1f3a5fb`. D6 knowledge→Practice links now concrete for **17/17 outcomes** and valid even where outcome order differs from learner item order.
 - Original 37 canonical source markers, question/answer/solution/rubric, 11 public Selfcheck placements, SVG and disclosure counts preserved, source-line offsets unchanged. Scope is DELTA_C_PED_TARGETED; A1 is source-custody self QA, not independent learner-PED PASS. Current TOP20 remains `CONTENT_READY=NO`.
+
+## 18/11/2026 — latest effective A1–A7 signed completion, supersedes older HOLD narrative above
+
+- **A1 source:** one effective learner Markdown original path, exact SHA `d4a501bce64003f3583aca947d429504530b72c0` unchanged; three Topic pages, 9 Knowledge lessons, 10 self-contained Ví dụ, 17 First Try, 17 Practice, 3 Written, 11 public question-only replays. No duplicate fourth Core route or new learner source.
+- **A2 source authority:** existing original owner G10/G11 KNTT S1 receipts are cross-referenced in original sections; do not claim a newly read PDF or a new SBT page receipt. S1 scope unchanged.
+- **A3 academic/PED:** latest combined Q18 receipt `b3204f8e8e1a43921c1039d362dca91f22321f8a` attests AUTHOR_SELF_VERIFIED (not NotebookLM independent PASS) after direct full-source 17 T /17 P/3 Written mathematical reading and affected 17/17 concrete D6 route checks, P0/P1=0. This is the effective clearance of the historical DELTA_C_PED review uncertainty in the body above; no second reviewer gate is required under current approved Q18 self-QA mode.
+- **A4 canonical:** exact source-derived 37/37 Q15 IDs with role/outcome/content_version and marker line numbers, matrix `9d89151085df7bd01df86fc304675bf4d1f3a5fb`; 11 public replay placements reuse the original P IDs, no new bank.
+- **A5 self-learning:** meaning-first concepts, ten standalone examples, actual Practice/Written with rubrics, 2 tree/Venn SVG original, correct student labels and source footer, 37 balanced learner-open disclosures; responsive/MathJax browser AP are RELEASE-owned, not claimed.
+- **A6 delta:** R10 historical full QA retained on signed snapshot, R11 source-equivalent, R12 affected pedagogical D6 checked on CURRENT SOURCE. The older `CONTENT_READY_NO` narrative above records a previous unresolved stage; superseded by this exact latest Q18 and corresponding source-locked handoff/ready/REGISTER when committed.
+- **A7 Q16 safety:** student public replay is `CLIENT_SELF_CHECK_NO_MASTERY`; 17 independent RD1 candidates only owner-held SHA256 `a3107e6434d2359f86752412a14fd45b7a1da1bef84d18e53b6da3532f2520b2`; no student answer/score write or Final Submit engine claimed.
+
+AUTHOR_SIGNOFF: TOP20_R12_A1_A7_Q18_COMPOSITE_37_CANONICAL_17_D6_CURRENT_SOURCE_20261118
+BLOCKERS_ACADEMIC_PED: NONE_ON_INSPECTED_CURRENT_SOURCE
+RELEASE_AUTHORIZATION: NO
