@@ -443,10 +443,17 @@ for(const [lesson,row] of rows){
    uf("R01_Q18_RECEIPT_BLOB"),"B11 original independently reviewed Q18 receipt must be frozen");
   assert.equal(uf("R01_CSS_BLOB"),uf("R02_CSS_BLOB"),
    "B11 UI-only Tab4 reflow cannot change CSS");
-  expected=uf("R02_B11_SOURCE_BLOB");
+  const p2=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_B11_B12_OWNER_P2_SOURCE_FIRST_DELTA_A_R01_20261118.md"),"utf8");
+  const d=k=>p2.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(d("B11_BASELINE_SOURCE_BLOB"),uf("R02_B11_SOURCE_BLOB"),
+   "B11 prior signed reviewed source remains immutable");
+  assert.equal(d("B11_BASELINE_CANONICAL_BLOB"),uf("R02_ONE_CANONICAL_B11_BLOB"),
+   "B11 prior signed canonical remains immutable");
+  expected=d("B11_SOURCE_CURRENT_BLOB");
   assert.equal(blob(fs.readFileSync(path.join(root,
    "prototypes/thpt/content-drafts/THPT_G10_CHIV_B11_CANONICAL.md"))),
-   uf("R02_ONE_CANONICAL_B11_BLOB"),"B11 R02 full manuscript SHA changed");
+   d("B11_CANONICAL_CURRENT_BLOB"),"B11 current single canonical Section A SHA mismatch");
  }
  assert.equal(blob(source),expected,lesson+" exact final Q18 academic source receipt");
  assert.equal(candidateG10KnowledgeBlob(n),expected,lesson+" Q18 source router selects correct immutable snapshot");
@@ -524,8 +531,12 @@ for(const [lesson,row] of rows){
    "B11 force equilibrium worked example must belong to Tab3, not errors");
   assert(examples.includes("6\\,\\mathrm N")&&examples.includes("THPT_G10_CHIV_FORCE_TRANSFER_D5_R01_CORRECTED.svg"),
    "B11 original source-matched 8/15 SVG must be separated from 6/6 worked force example");
-  for(const k of ["**Giải:**","**Kiểm lại:**","**Chọn phương pháp:**"])
-   assert(examples.includes(k),"B11 worked examples must contain mathematical reasoning "+k);
+  for(const k of ["**Giải:**","**Kiểm lại:**","**Phân tích:**",'!!! example "Lời giải"'])
+   assert(examples.includes(k),"B11 source-authored example missing "+k);
+  assert.equal(examples.split('!!! example "Lời giải"').length-1,4,
+   "B11 must have four native authored solution boxes");
+  assert.equal(examples.split("**Phân tích:**").length-1,4,
+   "B11 four source-authored Phân tích labels");
  }else{
   assert.equal(examples,previous.slice(previous.indexOf('=== "Ví dụ"'),previous.indexOf('=== "Lỗi thường gặp"')),
    lesson+" previously approved three worked examples changed");
