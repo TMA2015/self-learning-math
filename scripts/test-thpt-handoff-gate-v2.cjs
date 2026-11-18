@@ -60,10 +60,10 @@ const activationReceipts=Object.freeze({
 });
 function acceptedStandardVersions(overrideText, baselineText) {
   const raw=overrideText??fs.readFileSync(path.join(root,standardRel),"utf8");
-  const id=raw.match(/^\\*\\*STANDARD_ID:\\*\\*\\s*\\x60([A-Za-z0-9-]+)\\x60/m);
-  const version=raw.match(/^\\*\\*VERSION:\\*\\*\\s*\\x60(\\d+\\.\\d+\\.\\d+)\\x60/m);
-  const status=raw.match(/^\\*\\*STATUS:\\*\\*\\s*\\x60([A-Z0-9_]+)\\x60/m);
-  const activation=raw.match(/\\*\\*ACTIVATION:\\*\\*\\s*\\x60([A-Z0-9_]+)\\x60/);
+  const id=raw.match(/^\*\*STANDARD_ID:\*\*\s*\x60([A-Za-z0-9-]+)\x60/m);
+  const version=raw.match(/^\*\*VERSION:\*\*\s*\x60(\d+\.\d+\.\d+)\x60/m);
+  const status=raw.match(/^\*\*STATUS:\*\*\s*\x60([A-Z0-9_]+)\x60/m);
+  const activation=raw.match(/\*\*ACTIVATION:\*\*\s*\x60([A-Z0-9_]+)\x60/);
   assert(id && id[1]==="SLM-THPT-QUALITY-ONE","Single normative standard identity missing or changed");
   assert(version&&status,"Canonical standard version/status missing");
   const approved=status[1]==="OWNER_APPROVED_EFFECTIVE";
@@ -72,7 +72,7 @@ function acceptedStandardVersions(overrideText, baselineText) {
     const base=baselineText??(!overrideText && process.env.BASE_SHA
       ?runGit("show",process.env.BASE_SHA+":"+standardRel)
       :(!overrideText?raw:null));
-    const baseVersion=base?.match(/^\\*\\*VERSION:\\*\\*\\s*\\x60(\\d+\\.\\d+\\.\\d+)\\x60/m);
+    const baseVersion=base?.match(/^\*\*VERSION:\*\*\s*\x60(\d+\.\d+\.\d+)\x60/m);
     currentIsMerged=!!(activation && activation[1]===activationReceipts[version[1]] &&
       baseVersion && baseVersion[1]===version[1]);
   }
@@ -360,7 +360,7 @@ function verifyReadyManifest(rel, initialHandoff) {
 function selfTest() {
   assert.deepEqual(ids("## IDS\n- A\n- B\n", "IDS"), ["A","B"]);
   assert.equal(verifyLaneScope("LEARNING_PATH: SGK_CHAPTER\nRELEASE_SCOPE: FULL_LEARNING_PATH"), "SGK_CHAPTER");
-  const norm=(v,status,activation)=>"**STANDARD_ID:** \\x60SLM-THPT-QUALITY-ONE\\x60\\n**VERSION:** \\x60"+v+"\\x60\\n**STATUS:** \\x60"+status+"\\x60"+(activation?"\\n**ACTIVATION:** \\x60"+activation+"\\x60":"");
+  const norm=(v,status,activation)=>"**STANDARD_ID:** \x60SLM-THPT-QUALITY-ONE\x60\n**VERSION:** \x60"+v+"\x60\n**STATUS:** \x60"+status+"\x60"+(activation?"\n**ACTIVATION:** \x60"+activation+"\x60":"");
   const mergedV32=norm("3.2.0","OWNER_APPROVED_EFFECTIVE","OWNER_APPROVED_PR_899_MERGED_INTO_MAIN_20261117");
   const pendingV32=norm("3.2.0","OWNER_APPROVED_EFFECTIVE_AFTER_MERGE","AFTER_OWNER_APPROVED_B08_R04_PR_MERGE_INTO_MAIN");
   assert(acceptedStandardVersions().includes("1.2.0"),"Effective historical v1.2.0 must be retained");
