@@ -1,6 +1,6 @@
-# CĐ20 · ONE HANDOFF V2 R11 · SOURCE_EQUIVALENCE_TECHNICAL · 16/11/2026
+# CĐ20 · ONE HANDOFF V2 R12 · CURRENT SOURCE LOCKED AUTHOR SELF-QA · 18/11/2026
 
-PACKET_ID: TOP20-PROBABILITY-R11-20261116
+PACKET_ID: TOP20-PROBABILITY-R12-20261118
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
@@ -8,11 +8,11 @@ RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_LEARNER_PRESENTATION_20261116.md
 ACADEMIC_SOURCE_BLOB: d4a501bce64003f3583aca947d429504530b72c0
-REVIEW_RECEIPT_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R12_D6_Q15_Q18_AUTHOR_TARGETED_RECEIPT_20261117.md
-REVIEW_RECEIPT_BLOB: 9b8ae77f1e9558e6f4d85c81f04e850ab5d5aa5d
-ACADEMIC_VERDICT: AUTHOR_SELF_VERIFIED_MATH_UNCHANGED_ONLY
-PEDAGOGICAL_VERDICT: TARGETED_AUTHOR_SELF_QA_ONLY; INDEPENDENT_PED_PENDING
-BLOCKERS: AFFECTED_DELTA_C_PED_INDEPENDENT_REVIEW_PENDING; CURRENT_CONTENT_READY_NOT_APPROVED
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/TOP20_R12_Q18_AUTHOR_SELF_QA_COMPOSITE_20261118.md
+REVIEW_RECEIPT_BLOB: b3204f8e8e1a43921c1039d362dca91f22321f8a
+ACADEMIC_VERDICT: SELF_VERIFIED
+PEDAGOGICAL_VERDICT: SELF_VERIFIED
+BLOCKERS: NONE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 MASTERY_ACTIVATION: NO
@@ -20,7 +20,7 @@ RELEASE_AUTHORIZATION: NO
 PRIVATE_RD1_COUNT: 17
 PRIVATE_RD1_SHA256: a3107e6434d2359f86752412a14fd45b7a1da1bef84d18e53b6da3532f2520b2
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_A1_A7_TECHNICAL_SOURCE_PARITY_20261116.md
-AUTHOR_A1_A7_BLOB: 5df85077118295e0560a50383bafecf3618d27c4
+AUTHOR_A1_A7_BLOB: 29f58e7af9240a067ae30429299d4f1ebef203d6
 
 CONTENT_REVISION: R12_IN_PLACE
 DELTA_CLASS: DELTA_C_PED_TARGETED
@@ -196,10 +196,10 @@ PRIVATE_BANK_SHA256 = a3107e6434d2359f86752412a14fd45b7a1da1bef84d18e53b6da3532f
 | Q12 | Tree and Venn visuals | Two figures explained with how to read branch order/intersection, not decorative | AUTHOR_QA_PASS; two SVG identities | AP3 RELEASE_OWNED |
 | Q13 | Why choose counting, complement, union or product | Worked logic and explicit limitations across examples and 17 Practice | AUTHOR_QA_PASS; R10 29 numerical checks | AP4 RELEASE_OWNED |
 | Q14 | 17 Vận dụng and D6 remediation | Try before optional reveal; error-specific path to relevant Knowledge/Practice | AUTHOR_QA_PASS; collapsed details verified | AP4/R4 RELEASE_OWNED |
-| Q15 | 37 local canonical IDs and 11 replay placements | 17 T /17 P /3 W, one ID/stem/key/rubric; P/W versions updated R09 | AUTHOR_QA_PASS; 34 external IDs not placed | R1/R4 RELEASE_OWNED |
+| Q15 | 37 local canonical IDs and 11 replay placements | 17 T (R02) /17 P (R09) /3 W (R12), one ID/stem/key/rubric and reuse-only replay | AUTHOR_QA_PASS; 34 external IDs not placed | R1/R4 RELEASE_OWNED |
 | Q16 | 17 owner-held confidential candidate RD1 + public replay | No private stem/key on Git; public repeat not official; Final Submit live release-owned | AUTHOR_QA_PASS; custody hash and no live scoring claim | R4 RELEASE_OWNED |
 | Q17 | FULL_TOPIC_LEARNING_PATH | Three complete learning parts, SGK not compulsory prerequisite; no Topic Core | AUTHOR_QA_PASS; nine Knowledge units and 37 public items | AP1/AP4 RELEASE_OWNED |
-| Q18 | Exact R10 source and author self-verification | One author-signed receipt, self QA P0=0/P1=0, no reviewer impersonation | AUTHOR_QA_PASS; exact SOURCE_BLOB and Q18 receipt | R1/R2 RELEASE_OWNED |
+| Q18 | Exact current R12 source and author self-verification | Composite signed Q18 receipt current SHA, self QA P0=0/P1=0, no reviewer impersonation | AUTHOR_QA_PASS; exact SOURCE_BLOB and Q18 receipt | R1/R2 RELEASE_OWNED |
 
 ## REVIEW_SOURCE_RECEIPT
 
@@ -219,3 +219,11 @@ The R11 source is a `DELTA_B_SOURCE_EQUIVALENT` presentation revision of immutab
 
 - Active one learner file SHA `d4a501bce64003f3583aca947d429504530b72c0` on the existing R11 path, revision implemented *in place*. 17/17 `Khi làm sai` routes now direct each learner to the exact real Knowledge subsection and Practice task matched by `PRIMARY_OUTCOME`. Original item/answer/rubric/SVG and 11 selfcheck display remain unchanged; no extra private assessment bank.
 - Q18 targeted source receipt `9b8ae77f1e9558e6f4d85c81f04e850ab5d5aa5d`, A1 `5df85077118295e0560a50383bafecf3618d27c4`, Q15 matrix `9d89151085df7bd01df86fc304675bf4d1f3a5fb`. Source and reviewer scope are aligned. Affected DELTA_C_PED independent reviewer still pending; `CONTENT_READY=NO`, no RELEASE integration or Mastery.
+
+## Final CURRENT R12 authoring clearance 18/11/2026 — supersedes historical R11/R12 HOLD paragraphs above
+
+- The sole CURRENT full-topic learner Git blob remains `d4a501bce64003f3583aca947d429504530b72c0` on its existing filename. This single V2 handoff path now binds `PACKET_ID: TOP20-PROBABILITY-R12-20261118`; older R10/R11 READY manifests remain archived and SUPERSEDED, not restored.
+- Signed composite CURRENT Q18 AUTHOR_SELF_VERIFIED `b3204f8e8e1a43921c1039d362dca91f22321f8a`, source-exact A1–A7 `29f58e7af9240a067ae30429299d4f1ebef203d6`, Q15 matrix `9d89151085df7bd01df86fc304675bf4d1f3a5fb`. This author-QA checks all 17 first tries, 17 Practice, 3 Written arithmetic/conditions and 17/17 same-outcome D6 routes; it is **not** NotebookLM or any independent reviewer PASS.
+- `ACADEMIC_VERDICT=SELF_VERIFIED`, `PEDAGOGICAL_VERDICT=SELF_VERIFIED`, Q01–Q18 AUTHORING P0=P1=0 on exact current source; the old targeted independent-review-PENDING language above describes the now-superseded interim stage. No new mathematical item/answer/rubric, no duplicate source, no grading or Mastery.
+- 3 Topic learning pages; 37 unique public canonical with exactly one source; 11 question-only replay placements `CLIENT_SELF_CHECK_NO_MASTERY`, private owner-held RD1 candidates metadata only. The Topic V2 CONTENT_READY state is authoring custody, **not** website RELEASE AP/R/P, official TOPIC_READINESS, live Final Submit or deployment. Owner RELEASE permission remains NO.
+AUTHOR_SIGNOFF: TOP20_R12_V2_ONLY_SIGNED_SOURCE_Q18_A1_Q15_20261118
