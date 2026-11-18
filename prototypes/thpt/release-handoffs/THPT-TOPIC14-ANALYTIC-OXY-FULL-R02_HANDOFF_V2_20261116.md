@@ -13,13 +13,13 @@ CATALOG_TOPIC_ID: CD14
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: dada7df9fc509cc67238cbc3e5d03376b58f23f4
+ACADEMIC_SOURCE_BLOB: c80f20dc9f8f2ee000f5c4af5a4c8583a5307cf1
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC14_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 27a6e61fb90342d19afa61cd92b56ac3bda25a6a
+REVIEW_RECEIPT_BLOB: 834f9daf4330c62b55ec51c1864944f26385fb65
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_R02_AUTHORING_ONLY_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: b72c3a80ef1a25bc7ac0caa1debcd1eb5ed738a2
+AUTHOR_A1_A7_BLOB: 47d4f38654db0f388eb07563148a3cbec26cae10
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_R02_AUTHORING_ONLY_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: b72c3a80ef1a25bc7ac0caa1debcd1eb5ed738a2
+AUTHOR_METADATA_BLOB: 47d4f38654db0f388eb07563148a3cbec26cae10
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/Temp_G10_SGK_CHVII_FULL_R02_SOURCE_WITH_CANONICAL_REFERENCES_20261105.md
 ORIGINAL_SGK_SOURCE_BLOB: c5c222af88b0e932f9b60df059d8ffd4da5f0f26
 ORIGINAL_R01_PED_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd
@@ -426,3 +426,10 @@ Author verified Q01–Q18, D1–D6, PED1–PED6, A1–A7 on exact source SHA, 23
 ## RELEASE_ACCEPTANCE
 
 RELEASE alone verifies canonical resolver/source equivalence, MathJax, original 3 SVG on actual devices, Golden R4, AP1–AP5, R1–R5 and Q16 protected Final Submit, runtime ID and source storage, linked work/THCS regression, exact-head CI, and permission for merge/deploy. No production claim or student/Firebase data edits here.
+
+
+## Current 18/11/2026 — O22 targeted teaching defect and unique ready handoff
+
+**Only learner source effective:** `prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md` Git blob `c80f20dc9f8f2ee000f5c4af5a4c8583a5307cf1`. The corrected `TOP14-O22` D6 now directs learners who omitted the negative solution back to **ellipse symmetry** rather than an unrelated parabola: for ellipse `x²/9+y²/4=1`, line `x=0` gives `(0,±2)`. Actual answer/condition unchanged and directly computed by the author; classify `DELTA_C_ACADEMIC_MATERIAL` pedagogy-only affected outcome and retain owner effective Q18 `AUTHOR_SELF_VERIFIED` without mechanical NotebookLM re-review.
+
+One current Q18 receipt `834f9daf4330c62b55ec51c1864944f26385fb65`, one A1–A7 `47d4f38654db0f388eb07563148a3cbec26cae10`, 23 lessons/outcomes, 110 original unique item IDs, 87 real Practice display cards, 23 question-only Self Check replays, 3 pre-existing SVG, 5 Written /7 rubrics, no new math/assessment bank. Original SGK 59 item bodies/keys/rubrics unmodified. Former R01 historical ready Git `814997dc5686d5716d880a7c4379a2c146d339af` archived **byte-identically**, removed from active `ready/`; its earlier Q18 source remains historical. Effective REGISTER row must point exclusively to R02 current ready. Same owner-approved Q01–Q18 and handoff V2, not a new standard. Any future RELEASE must verify MathJax/AP, Q16 Final Submit/privacy, original SGK bank resolution and owner authorization on combined HEAD. No merge/deploy.
