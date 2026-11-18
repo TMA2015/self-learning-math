@@ -13,14 +13,14 @@ CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: fda1fa60d8448c016c24159156c6898de2bc673f
+ACADEMIC_SOURCE_BLOB: 21ce8179678bd0e9bc944d80dbde9646aaf73647
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC18_R06_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md (SIGNED AUTHOR_SELF_VERIFIED COMPOSITE OF R04+R05+R06; NOT independent NotebookLM)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_R06_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md
-REVIEW_RECEIPT_BLOB: 0e3ed68872e0e05e5bd26e2a611de440a29e9faa
+REVIEW_RECEIPT_BLOB: 3b25e8966cbbe1a40deaf9d35566b19ae2707b22
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R06_247_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_A1_A7_BLOB: 4e47c8415d7fb065cbcd4c75b6cb7985bb1d95ff
+AUTHOR_A1_A7_BLOB: 46136a332c0a4f5a124f05ed62bb10abcc79ca45
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC18-OXYZ-FULL-R06-20261117_HANDOFF_V2.md
-AUTHOR_HANDOFF_BLOB: 0eaf1c4a4678644c7e440ccd61c61880b3377eb3
+AUTHOR_HANDOFF_BLOB: d71cd0f05abdea44863964ab6e9e0a01663e607e
 Q01_FAMILY_AUDIT_BLOB: 052b06ea90d6191f125aef72f42d74dd9a6d86c8
 Q18_SUBSTANTIVE_AUDIT_BLOB: 4785b3be15b49f968de27fad99fc311cb2f8bb1b
 S1_ORIGINAL_G12_CHII_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
@@ -103,3 +103,6 @@ The one learner source was directly repaired at Knowledge TOP18-O03: vector arro
 The valid learner source is `prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md`, source blob `fda1fa60d8448c016c24159156c6898de2bc673f`. The removed R06-named learner candidate differed only in the non-student provenance comment: 3,638/3,638 learner lines source-equivalent. Current composite full Q18 AUTHOR_SELF_VERIFIED source-specific receipt blob `0e3ed68872e0e05e5bd26e2a611de440a29e9faa`, A1–A7 blob `4e47c8415d7fb065cbcd4c75b6cb7985bb1d95ff`, V2 blob `0eaf1c4a4678644c7e440ccd61c61880b3377eb3`. All original 40 outcomes, 247 original canonical questions/solutions and scoring rubrics, 12 question-only public selfcheck replay references, 10 original SVG references, and owner-held private RD1 metadata remain unchanged. Original CĐ18 R02/R04 packets are immutable historical and should not remain active ready manifests after this replacement.
 
 This marks AUTHORING source custody complete, not full independent NotebookLM Topic PASS, Golden/MathJax/browser verification, official Readiness/Mastery, PR merge or website deployment.
+
+
+**18/11 final exact merged-base learner lock:** Git source blob `21ce8179678bd0e9bc944d80dbde9646aaf73647`, Q18 author `3b25e8966cbbe1a40deaf9d35566b19ae2707b22`, A1 `46136a332c0a4f5a124f05ed62bb10abcc79ca45`, one V2 `d71cd0f05abdea44863964ab6e9e0a01663e607e`. The previous fda1 learner source was superseded by a single documented non-math transition-heading line; old learner texts are immutable Git history. This remains SOURCE ONLY, and does not certify website/browser QA, independent protected Readiness or Mastery.
