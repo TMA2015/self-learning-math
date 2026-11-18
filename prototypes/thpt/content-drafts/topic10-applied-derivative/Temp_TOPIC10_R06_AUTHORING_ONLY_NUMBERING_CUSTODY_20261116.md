@@ -2,11 +2,11 @@
 
 R03_IMMUTABLE_BLOB: 51cebfe1cb71c5db85c42d40e6167ea4497fa1d9
 CURRENT_STUDENT_R06_PATH: prototypes/thpt/content-drafts/topic10-applied-derivative/Temp_TOPIC10_R06_NUMBERING_CONSISTENT_20261116.md
-CURRENT_STUDENT_R06_BLOB: bd33faa8e7bc348cda78da6e44d3f40a68223596
-CURRENT_Q18_R06_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC10_R06_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-CURRENT_Q18_R06_RECEIPT_BLOB: 96cc3e1dee497f7a42e1ef50bee4c17692a9158e
+CURRENT_STUDENT_R06_BLOB: 58f0570b5428bd154201bc012f3e598cb1b2825a
+CURRENT_Q18_R06_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC10_R06_CURRENT_SOURCE_EQUIVALENCE_Q18_AUTHOR_SELF_QA_20261118.md
+CURRENT_Q18_R06_RECEIPT_BLOB: 385d2a92bb10cf4062f3dfb84bc8415521e68243
 CURRENT_NEW42_CANONICAL_PATH: prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_NEW42_PUBLIC_CANONICAL_R04_20261113.md
-STATUS: R06_NUMBERING_DELTA_A_AUTHOR_SELF_VERIFIED
+STATUS: R06_CURRENT_SOURCE_EQUIVALENT_AUTHOR_SELF_VERIFIED
 
 ## S1 primary provenance and exact boundaries
 
@@ -38,7 +38,7 @@ MASTERY_ACTIVATION: NO
 RELEASE_AUTHORIZATION: NO
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 ORIGINAL78_INDEX_BLOB: ffaba90bddc47a1d86dd905535e37c07d22173d9
-NEW42_BANK_BLOB: f8a8491f60168e07ccd77b5eea59d2f67198b05a
+NEW42_BANK_BLOB: 5f6ab764df6541ada9b4d4475403d29984d8e7da
 
 ### Original 78 SGK public item_id — reference only
 - THPT-G12-CHI-B01-C01
@@ -181,3 +181,11 @@ END_AUTHOR_SOURCE: SOURCE_LOCKED_R01
 - Current new `ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic10-applied-derivative/Temp_TOPIC10_R06_NUMBERING_CONSISTENT_20261116.md`; `SOURCE_BLOB: bd33faa8e7bc348cda78da6e44d3f40a68223596`. Exact-source Q18 receipt `96cc3e1dee497f7a42e1ef50bee4c17692a9158e` ghi nhận kiểm soát cấu trúc.
 - Cũ `R05` source `68d3ccd180162c0b850c7e419a5098982d3785a0`, Q18 `cdf1356b3bedc5c3a246464f34600ed7ec99579a`, metadata `81e5cf66e7af016b5346d040187aad25fca4a83d` **giữ nguyên** trong lịch sử. Canonical bank, SVG, RD1, MathJax equation/keys/rubric không bị sửa.
 - Cùng chuẩn Q01–Q18; bản này chỉ dành cho AUTHORING handoff. RELEASE tự kiểm render hierarchy và responsive trước bất kỳ tích hợp/phát hành; no merge/deploy.
+
+
+## R06 source equivalence closure — 18/11/2026 (CURRENT; historical sections above unchanged)
+
+- Effective learner source: `prototypes/thpt/content-drafts/topic10-applied-derivative/Temp_TOPIC10_R06_NUMBERING_CONSISTENT_20261116.md`, Git blob `58f0570b5428bd154201bc012f3e598cb1b2825a`; one active learner Markdown only.
+- Current **composite Q18 AUTHOR_SELF_VERIFIED**: `prototypes/thpt/review-packets/Temp_TOPIC10_R06_CURRENT_SOURCE_EQUIVALENCE_Q18_AUTHOR_SELF_QA_20261118.md`, Git blob `385d2a92bb10cf4062f3dfb84bc8415521e68243`. Original R05/R06 receipts and prior SHA statements elsewhere in this file remain immutable historical references; they do NOT describe current source.
+- Q01–Q18/A1–A7: formal definitions/theorem/restatement are proven equivalent to prior written knowledge, and 14 learner metadata labels removed. 36/36 lesson/outcome, 120/120 original canonical public placements (78 SGK owner +42 Topic), 36/36 public replays, 18 Written rubrics, 4 SVG, 156/156 disclosures checked on current source. No changes to stem, key, worked mathematics or rubric points.
+- Original 78 SGK review is not claimed as fresh independent Topic NotebookLM review. `DELTA_B_SOURCE_EQUIVALENT`; previously locked Topic mathematical statements retained. Browser/AP/R/RELEASE/merge/deploy remain separate.
