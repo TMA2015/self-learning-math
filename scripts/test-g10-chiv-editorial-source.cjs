@@ -508,7 +508,7 @@ for(const [lesson,row] of rows){
    assert.equal(examples.split(k).length-1,4,
     "B10 each worked example needs why/method/check "+k);
  }else if(lesson==="B11"){
-  assert.equal((examples.match(/^    ### 3\\.[1-4]\\. Ví dụ [1-4] —/gm)||[]).length,4,
+  assert.equal((examples.match(/^    ### 3\.[1-4]\. Ví dụ [1-4] —/gm)||[]).length,4,
    "B11 force equilibrium worked example must belong to Tab3, not errors");
   assert(examples.includes("6\\,\\mathrm N")&&examples.includes("THPT_G10_CHIV_FORCE_TRANSFER_D5_R01_CORRECTED.svg"),
    "B11 original source-matched 8/15 SVG must be separated from 6/6 worked force example");
@@ -529,7 +529,7 @@ for(const [lesson,row] of rows){
    official.includes("\\vec u\\cdot\\vec v=ac+bd"),"B11 denominator guards/coordinate dot missing");
   assert.equal((last.match(/data-thpt-first-try-id/g)||[]).length,0,
    "B11 force transfer First Try must not remain in error tab");
-  assert.equal((last.match(/^    ### 4\\.[1-3]\\./gm)||[]).length,3,
+  assert.equal((last.match(/^    ### 4\.[1-3]\./gm)||[]).length,3,
    "B11 must have three actual wrong student steps with numbered 4.x headings");
   assert.equal((last.match(/^    \?\?\? tip "/gm)||[]).length,3,
    "B11 must keep exactly three independent HELP disclosures");
