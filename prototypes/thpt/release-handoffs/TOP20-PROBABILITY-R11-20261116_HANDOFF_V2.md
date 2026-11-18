@@ -7,9 +7,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_LEARNER_PRESENTATION_20261116.md
-ACADEMIC_SOURCE_BLOB: 874de7fd1dd1923549a0ef35a9648d291ab761aa
+ACADEMIC_SOURCE_BLOB: d4a501bce64003f3583aca947d429504530b72c0
 REVIEW_RECEIPT_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R12_D6_Q15_Q18_AUTHOR_TARGETED_RECEIPT_20261117.md
-REVIEW_RECEIPT_BLOB: bde8785e4794b0519bb301a6358b746b2fc854dd
+REVIEW_RECEIPT_BLOB: 9b8ae77f1e9558e6f4d85c81f04e850ab5d5aa5d
 ACADEMIC_VERDICT: AUTHOR_SELF_VERIFIED_MATH_UNCHANGED_ONLY
 PEDAGOGICAL_VERDICT: TARGETED_AUTHOR_SELF_QA_ONLY; INDEPENDENT_PED_PENDING
 BLOCKERS: AFFECTED_DELTA_C_PED_INDEPENDENT_REVIEW_PENDING; CURRENT_CONTENT_READY_NOT_APPROVED
@@ -20,7 +20,7 @@ RELEASE_AUTHORIZATION: NO
 PRIVATE_RD1_COUNT: 17
 PRIVATE_RD1_SHA256: a3107e6434d2359f86752412a14fd45b7a1da1bef84d18e53b6da3532f2520b2
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_A1_A7_TECHNICAL_SOURCE_PARITY_20261116.md
-AUTHOR_A1_A7_BLOB: 1040e7e70aee5a769c6c8e2b7a98e24f0d5f69b1
+AUTHOR_A1_A7_BLOB: 5df85077118295e0560a50383bafecf3618d27c4
 
 CONTENT_REVISION: R12_IN_PLACE
 DELTA_CLASS: DELTA_C_PED_TARGETED
@@ -214,3 +214,8 @@ The R11 source is a `DELTA_B_SOURCE_EQUIVALENT` presentation revision of immutab
 - This **same V2 handoff path** now points to current learner Git blob `874de7fd1dd1923549a0ef35a9648d291ab761aa` with exact current Q15/Q18 author-targeted receipt `bde8785e4794b0519bb301a6358b746b2fc854dd` and A1 source custody `1040e7e70aee5a769c6c8e2b7a98e24f0d5f69b1`. Previously signed source `74e758075d17e98649d9dd08709b523e8a782b63`, receipt `4e6133b77eeaf1d38394d1e4d6f8058d421fd763` and metadata `f271a3ac03ef99063d631b7bebc68f826e217b0e` are *historic*, not parallel live handoffs.
 - The effective learner file keeps existing original filename while learner content was edited in-place under version `R12_IN_PLACE`; no alternate learner Markdown and no new canonical bank. 10/10 Q15 item/version/placement assertions and V2 intake on current branch passed after archival of historical ready manifests; mathematical stems, solutions and rubrics unaffected.
 - This is a staged **AUTHORING-only V2 with explicit BLOCKER**, not a `ready/` acceptance: targeted D6 pedagogy is DELTA_C and needs affected-scope independent review before Academic+PED CONTENT_READY can be granted. Do not restore superseded historical ready manifests, leak private RD1, record Mastery, merge or deploy.
+
+## Current 17/17 D6 self-remediation (18/11/2026)
+
+- Active one learner file SHA `d4a501bce64003f3583aca947d429504530b72c0` on the existing R11 path, revision implemented *in place*. 17/17 `Khi làm sai` routes now direct each learner to the exact real Knowledge subsection and Practice task matched by `PRIMARY_OUTCOME`. Original item/answer/rubric/SVG and 11 selfcheck display remain unchanged; no extra private assessment bank.
+- Q18 targeted source receipt `9b8ae77f1e9558e6f4d85c81f04e850ab5d5aa5d`, A1 `5df85077118295e0560a50383bafecf3618d27c4`, Q15 matrix `9d89151085df7bd01df86fc304675bf4d1f3a5fb`. Source and reviewer scope are aligned. Affected DELTA_C_PED independent reviewer still pending; `CONTENT_READY=NO`, no RELEASE integration or Mastery.
