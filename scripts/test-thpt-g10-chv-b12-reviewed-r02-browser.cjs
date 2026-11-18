@@ -13,9 +13,9 @@ const {verifyModelBLesson}=require("./test-thpt-g10-model-b-browser-helper.cjs")
     assert.equal(await cards.count(),3,"Golden ChVII 3 lesson cards");
     assert.equal(await cards.first().getAttribute("href"),"bai-12/");
     const html=await page.goto(base+"bai-12/",{waitUntil:"domcontentloaded"});assert(html?.ok());
-    assert.equal(await page.locator("h3").filter({hasText:/Ví dụ [123]/}).count(),3);
-    if(!(await verifyModelBLesson(page,{n:12,chapter:"v",tries:4,helps:2,images:["THPT_G10_B12_ERROR_INTERVAL_D5_R02_REVIEWED.svg"]}))){
-assert.equal(await page.locator("[data-thpt-help-id]").count(),2);
+    assert.equal(await page.locator("h3").filter({hasText:/Ví dụ [1234]/}).count(),4,"B12 four approved reasoning examples, including calculator");
+    if(!(await verifyModelBLesson(page,{n:12,chapter:"v",tries:5,helps:3,images:["THPT_G10_B12_ERROR_INTERVAL_D5_R02_REVIEWED.svg"]}))){
+assert.equal(await page.locator("[data-thpt-help-id]").count(),3);
     const image=page.locator('[data-thpt-fig-id="FIG-G10-B12-01"] img');
     assert.equal(await image.count(),1);
     await image.scrollIntoViewIfNeeded();
@@ -26,7 +26,7 @@ assert.equal(await page.locator("[data-thpt-help-id]").count(),2);
     assert(await page.locator('[data-thpt-help-id="HELP-G10-B12-01"]').getAttribute("open")!==null);
     
 }
-for(const id of ["THPT-G10-B12-C01","THPT-G10-B12-P06"]){
+for(const id of ["THPT-G10-B12-C01","THPT-G10-B12-P06","THPT-G10-B12-P07"]){
      assert((await page.goto(base+"luyen-tap/?item="+id,{waitUntil:"domcontentloaded"}))?.ok());
      const modal=page.locator("dialog.thpt-r4-practice-dialog");await modal.waitFor({state:"visible",timeout:14000});
      assert.equal(await modal.locator("[data-thpt-canonical-item]").first().getAttribute("data-thpt-canonical-item"),id);
@@ -41,6 +41,6 @@ for(const id of ["THPT-G10-B12-C01","THPT-G10-B12-P06"]){
     assert(overflow<=20,"Mobile overflow "+overflow+" at "+width);
    }finally{await page.close()}
   }
-  console.log("PASS G10 ChV B12 R02: 390/820/1440 Golden VII, FIG01 SVG, 2 HELP, canonical C01/P06, no Readiness");
+  console.log("PASS G10 ChV B12 R01: 390/820/1440 Golden V, 4 examples, 5 First Try/3 HELP, FIG01 SVG, canonical C01/P06/P07, no Readiness");
  }finally{await browser.close()}
 })().catch(e=>{console.error(e.stack||e);process.exit(1)});

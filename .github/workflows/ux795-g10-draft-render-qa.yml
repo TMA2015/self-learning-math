@@ -6,6 +6,7 @@ on:
       - "docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"
       - "docs/assets/images/thpt/**"
       - "scripts/test-ux795-g10-render-draft.cjs"
+      - "scripts/test-ux795-g10-numbering-monitor.cjs"
       - "scripts/test-ux795-g10-knowledge-browser.cjs"
       - "scripts/test-ux795-g10-source-candidate-lock.cjs"
       - "scripts/test-ux795-g10-legacy-dual-source-audit.cjs"
@@ -17,8 +18,15 @@ on:
       - "prototypes/thpt/ux795/UX795_G10_KNOWLEDGE_RELEASE_SOURCE_INTAKE_R01_20261110.md"
       - "prototypes/thpt/ux795/UX795_G10_FIGURE_MATH_SELF_AUDIT_R01_20261110.md"
       - "scripts/test-ux795-g10-postmerge-headings.cjs"
+      - "prototypes/thpt/ux795/G10_CHVI_B15_B18_EXAMPLE_UX_Q18_DELTA_RECEIPT_20261113.md"
+      - "prototypes/thpt/ux795/G10_CHVII_B19_B22_S1_Q18_GOLDEN_ENRICHMENT_RECEIPT_20261113.md"
       - "scripts/test-thpt-chvi-math-block-render.cjs"
       - "scripts/test-thpt-chvi-student-notes.cjs"
+      - "prototypes/thpt/ux795/G10_CHIII_B05_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md"
+      - "prototypes/thpt/ux795/G10_CHIII_B06_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md"
+      - "prototypes/thpt/ux795/G10_CHIII_B06_PED_REFERENCE_ANCHOR_R02_20261116.md"
+      - "prototypes/thpt/ux795/G10_CHIV_B08_S1_OWNER_Q18_ENRICHMENT_DELTA_R02_20261116.md"
+      - "prototypes/thpt/ux795/G10_CHIV_B08_MATHJAX_DISPLAY_DELTA_A_R03_20261117.md"
       - ".github/workflows/ux795-g10-draft-render-qa.yml"
 
 permissions:
@@ -31,10 +39,12 @@ concurrency:
 jobs:
   render-model-b:
     name: Build and inspect G10 all 27 Knowledge pages
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 35 # Full 27 x 3 viewport browser AP QA; no skipped lesson
     steps:
       - uses: actions/checkout@v4
+      - name: "MONITOR only · G10 27 source numbering, parent/sibling and a→b continuity"
+        run: node scripts/test-ux795-g10-numbering-monitor.cjs
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -93,9 +103,12 @@ jobs:
             lesson_count=$((lesson_count + 1))
           done
           test "$lesson_count" -eq 27
-          # Candidate MkDocs config MUST differ from published main only by
-          # this scoped CSS line. Abort instead of replacing navigation, hooks,
-          # scripts, authentication, or other established site configuration.
+          # The CSS was first added when all 27 G10 lessons were published.
+          # Accept exactly TWO source-locked states:
+          # (1) previous main without the single approved CSS line, OR
+          # (2) current published main with the line already present.
+          # In both cases reject ANY other MkDocs config difference. This is
+          # a post-publication test migration, not a relaxation of source gates.
           python - <<'PY'
           from pathlib import Path
           css = "  - assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css\n"
@@ -103,13 +116,25 @@ jobs:
               candidate = Path(name).read_text(encoding="utf-8")
               live_file = Path("integration-main") / name
               published = live_file.read_text(encoding="utf-8")
-              if candidate.count(css) != 1 or candidate.replace(css, "", 1) != published:
-                  raise SystemExit(f"STANDARD_CONFLICT_HOLD: {name} has non-CSS differences against current main")
-              # Verified equivalent to inserting only the scoped CSS line.
+              if candidate.count(css) != 1:
+                  raise SystemExit(f"STANDARD_CONFLICT_HOLD: {name} must register exactly one scoped G10 CSS")
+              if published == candidate:
+                  print(f"PASS current published {name}: exactly identical, original G10 CSS already present")
+              elif candidate.replace(css, "", 1) == published:
+                  print(f"PASS historical {name}: only the G10 Knowledge CSS was added")
+              else:
+                  raise SystemExit(f"STANDARD_CONFLICT_HOLD: {name} has unapproved config differences")
               live_file.write_text(candidate, encoding="utf-8")
-              print(f"PASS current main {name}: only G10 Knowledge CSS inserted")
           PY
           cp docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css integration-main/docs/assets/stylesheets/
+          # B09 new responsive decomposition D5: QA-only overlay, not deploy.
+          for image in THPT_G10_B09_DECOMPOSITION_TWO_DIRECTIONS_D5_R03.svg THPT_G10_B09_DECOMPOSITION_MOBILE_D5_R03.svg; do
+            cp "docs/assets/images/thpt/$image" "integration-main/docs/assets/images/thpt/$image"
+          done
+          # Overlay approved source-locked ChV visual dependencies in the
+          # isolated integration checkout, never in production.
+          cp docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js integration-main/docs/assets/javascripts/
+          cp docs/assets/images/thpt/G10_B14_BOXPLOT_S1_Q18_ENRICHMENT_20261113.svg integration-main/docs/assets/images/thpt/
           for name in \
             G10_B02_MEMBERSHIP_SUBSET_R01.svg \
             G10_B06_SURVEY_RIGHT_TRIANGLE_R01.svg \
@@ -124,6 +149,74 @@ jobs:
             G10_B25_PASCAL_TRIANGLE_R02.svg; do
             cp "docs/assets/images/thpt/$name" "integration-main/docs/assets/images/thpt/$name"
           done
+          # The follow-on Q18 UX receipt is optional for historical PRs.
+          # If present, copy the exact signed source identities into this
+          # isolated postmerge dry-run (not main / not production).
+          if [[ -f prototypes/thpt/ux795/G10_CHVI_B15_B18_EXAMPLE_UX_Q18_DELTA_RECEIPT_20261113.md ]]; then
+            cp prototypes/thpt/ux795/G10_CHVI_B15_B18_EXAMPLE_UX_Q18_DELTA_RECEIPT_20261113.md integration-main/prototypes/thpt/ux795/
+          fi
+          if [[ -f prototypes/thpt/ux795/G10_CHVII_B19_B22_S1_Q18_GOLDEN_ENRICHMENT_RECEIPT_20261113.md ]]; then
+            cp prototypes/thpt/ux795/G10_CHVII_B19_B22_S1_Q18_GOLDEN_ENRICHMENT_RECEIPT_20261113.md integration-main/prototypes/thpt/ux795/
+          fi
+          # Exact B05 Q18 receipt must accompany the new canonical DEG First Try
+          # when replayed in the temporary main+candidate checkout.
+          # This is QA-only; not a production artifact mutation.
+          if [[ -f prototypes/thpt/ux795/G10_CHIII_B05_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md ]]; then
+            cp prototypes/thpt/ux795/G10_CHIII_B05_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md integration-main/prototypes/thpt/ux795/
+          fi
+          # B06 four-S1-section academic Delta C: exact Q18 receipt must accompany
+          # candidate Markdown inside isolated main+candidate browser dry-run.
+          if [[ -f prototypes/thpt/ux795/G10_CHIII_B06_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md ]]; then
+            cp prototypes/thpt/ux795/G10_CHIII_B06_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md integration-main/prototypes/thpt/ux795/
+          fi
+          if [[ -f prototypes/thpt/ux795/G10_CHIII_B06_PED_REFERENCE_ANCHOR_R02_20261116.md ]]; then
+            cp prototypes/thpt/ux795/G10_CHIII_B06_PED_REFERENCE_ANCHOR_R02_20261116.md integration-main/prototypes/thpt/ux795/
+          fi
+          if [[ -f prototypes/thpt/ux795/G10_CHIV_B08_S1_OWNER_Q18_ENRICHMENT_DELTA_R02_20261116.md ]]; then
+            cp prototypes/thpt/ux795/G10_CHIV_B08_S1_OWNER_Q18_ENRICHMENT_DELTA_R02_20261116.md integration-main/prototypes/thpt/ux795/
+          fi
+          if [[ -f prototypes/thpt/ux795/G10_CHIV_B08_MATHJAX_DISPLAY_DELTA_A_R03_20261117.md ]]; then
+            cp prototypes/thpt/ux795/G10_CHIV_B08_MATHJAX_DISPLAY_DELTA_A_R03_20261117.md integration-main/prototypes/thpt/ux795/
+          fi
+          # B08 R04 owner-approved 3+1 semantic teaching delta. Copy the
+          # exact new Q18 receipt to QA-only integration checkout; original
+          # R02 and R03 receipts remain immutable and are checked in order.
+          if [[ -f prototypes/thpt/ux795/G10_CHIV_B08_SEMANTIC_3PLUS1_DELTA_R04_20261117.md ]]; then
+            cp prototypes/thpt/ux795/G10_CHIV_B08_SEMANTIC_3PLUS1_DELTA_R04_20261117.md integration-main/prototypes/thpt/ux795/
+          fi
+          # Include B09 academic/S1 3+1 receipt only in the isolated QA
+          # checkout. This is NOT release authority: B09-F02 authoring HOLD
+          # remains explicit in the signed receipt and #795 master ledger.
+          if [[ -f prototypes/thpt/ux795/G10_CHIV_B09_S1_SEMANTIC_DECOMPOSITION_R03_20261117.md ]]; then
+            cp prototypes/thpt/ux795/G10_CHIV_B09_S1_SEMANTIC_DECOMPOSITION_R03_20261117.md integration-main/prototypes/thpt/ux795/
+          fi
+          # R05 uses ONE canonical B09 manuscript; carry the source and Q18
+          # receipt together to the isolated main+candidate dry-run. No deploy.
+          test -f prototypes/thpt/content-drafts/THPT_G10_CHIV_B09_CANONICAL.md
+          test -f prototypes/thpt/ux795/G10_CHIV_B09_CANONICAL_Q18_R05_20261117.md
+          cp prototypes/thpt/content-drafts/THPT_G10_CHIV_B09_CANONICAL.md integration-main/prototypes/thpt/content-drafts/
+          cp prototypes/thpt/ux795/G10_CHIV_B09_CANONICAL_Q18_R05_20261117.md integration-main/prototypes/thpt/ux795/
+          # Owner P2 scoped B09-F04: preserve R05 as history, chain real
+          # learner error R06 and copy receipt to same isolated checkout.
+          test -f prototypes/thpt/ux795/G10_CHIV_B09_TAB4_REAL_ERROR_P2_DELTA_C_R06_20261117.md
+          cp prototypes/thpt/ux795/G10_CHIV_B09_TAB4_REAL_ERROR_P2_DELTA_C_R06_20261117.md integration-main/prototypes/thpt/ux795/
+          # B10 G0–G5: overlay ONE current academic manuscript and Q18
+          # receipt into the temporary main+candidate render QA. No deploy.
+          test -f prototypes/thpt/content-drafts/THPT_G10_CHIV_B10_CANONICAL.md
+          test -f prototypes/thpt/ux795/G10_CHIV_B10_S1_PED_SINGLE_CANONICAL_Q18_R01_20261118.md
+          cp prototypes/thpt/content-drafts/THPT_G10_CHIV_B10_CANONICAL.md integration-main/prototypes/thpt/content-drafts/
+          cp prototypes/thpt/ux795/G10_CHIV_B10_S1_PED_SINGLE_CANONICAL_Q18_R01_20261118.md integration-main/prototypes/thpt/ux795/
+          # B10 owner P2 DELTA_A MathJax: the temporary dry-run overlays R02
+          # Knowledge and R02 canonical, so it must also receive the exact
+          # signed R01→R02 UI receipt. Historical R01 stays unchanged.
+          test -f prototypes/thpt/ux795/G10_CHIV_B10_P2_MATHJAX_DELTA_A_UI_R02_20261118.md
+          cp prototypes/thpt/ux795/G10_CHIV_B10_P2_MATHJAX_DELTA_A_UI_R02_20261118.md integration-main/prototypes/thpt/ux795/
+          # B12 CALCULATOR candidate is a separate Delta C with its own exact
+          # academic/PED review HOLD and Q18 source identity. Overlay receipt only
+          # into isolated postmerge QA, never into public/production by this step.
+          if [[ -f prototypes/thpt/ux795/G10_CHV_B12_S1_PED_CALCULATOR_Q18_R01_20261118.md ]]; then
+            cp prototypes/thpt/ux795/G10_CHV_B12_S1_PED_CALCULATOR_Q18_R01_20261118.md integration-main/prototypes/thpt/ux795/
+          fi
           cp scripts/test-ux795-g10-postmerge-headings.cjs integration-main/scripts/
           (
             cd integration-main
