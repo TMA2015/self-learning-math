@@ -1,9 +1,9 @@
 "use strict";
-/* G10 ChV B12 PUBLIC_FORMATIVE_ONLY: 8 original independently reviewed R01 canonical items.
-   All stem, options, keys, hints and worked solutions locked to Git blob 49502fe39cf0a67f6a3e973a77f94164150637a7.
-   D5/D6 corrected separately in reviewed R02 overlays; no Chapter/Topic Readiness or Mastery. */
+/* G10 ChV B12 PUBLIC_FORMATIVE_ONLY: eight immutable independently reviewed R01 canonical items
+   plus new P07 calculator-practice candidate (Delta C Academic/PED review pending).
+   Original eight stems, options, keys, hints and solutions unchanged; no Readiness/Mastery. */
 (function(root){
- const contentVersion="THPT-G10-CHV-B12-R01-ITEMS-R02-OVERLAYS";
+ const contentVersion="THPT-G10-CHV-B12-CALCULATOR-R03-CANDIDATE";
  const records=[
   {
     "item_id": "THPT-G10-B12-C01",
@@ -106,9 +106,20 @@
     "hint": "Tính hai cận trên với cùng số gần đúng a=10,0; không gọi đó là sai số thực.",
     "exposure": "FORMATIVE_ONLY",
     "difficulty": "APPLICATION"
+  },
+  {
+    "item_id": "THPT-G10-B12-P07",
+    "lesson": "12",
+    "role": "PRACTICE",
+    "skill": "G10-B12-CALCULATOR_APPROX",
+    "stem": "Hãy tự dùng máy tính cầm tay tìm số gần đúng của $\\sqrt[3]{7}$ đến hàng phần nghìn, rồi kiểm tra sai số của kết quả có nhỏ hơn $0{,}0005$ không. Nêu cách nhập để không nhầm phép căn bậc ba với chia cho 3.",
+    "solution": "Kết quả: $\\sqrt[3]{7}\\approx1{,}91293118\\ldots\\approx1{,}913$. Nhập phím căn bậc ba hoặc $7^{(1/3)}$ có ngoặc, chuyển sang dạng thập phân rồi xét chữ số hàng phần mười nghìn là 9. Chứng minh $1{,}9125^3<7<1{,}9135^3$ và hàm lập phương tăng trên số dương, nên $|\\sqrt[3]{7}-1{,}913|<0{,}0005$. Không thay $\\sqrt[3]{7}$ bằng $7/3$.",
+    "hint": "Tự thao tác máy trước khi mở gợi ý. Dùng căn bậc ba hoặc mũ $1/3$ có ngoặc, đọc nhiều hơn ba chữ số thập phân và chỉ sau đó mới quy tròn. Có thể kiểm cận bằng lập phương hai biên.",
+    "exposure": "FORMATIVE_ONLY",
+    "difficulty": "APPLICATION"
   }
 ];
- const validate=()=>({valid:records.length===8&&new Set(records.map(x=>x.item_id)).size===8&&
+ const validate=()=>({valid:records.length===9&&new Set(records.map(x=>x.item_id)).size===8&&
   records.every(x=>/^THPT-G10-B12-[CP]\d{2}$/.test(x.item_id)&&x.exposure==="FORMATIVE_ONLY"&&
   (!x.options||(x.options.length===4&&/^[ABCD]$/.test(x.answerKey))))});
  const forLesson=(lesson,role)=>records.filter(x=>x.lesson===String(Number(lesson))&&
