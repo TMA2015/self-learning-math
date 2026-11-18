@@ -6,8 +6,8 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: c80f20dc9f8f2ee000f5c4af5a4c8583a5307cf1
-SOURCE_BLOB: c80f20dc9f8f2ee000f5c4af5a4c8583a5307cf1
+ACADEMIC_SOURCE_BLOB: b5c03a5cfb3336ff9e3d3a15fd8f0161ec71fb39
+SOURCE_BLOB: b5c03a5cfb3336ff9e3d3a15fd8f0161ec71fb39
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/Temp_G10_SGK_CHVII_FULL_R02_SOURCE_WITH_CANONICAL_REFERENCES_20261105.md
 ORIGINAL_SGK_SOURCE_BLOB: c5c222af88b0e932f9b60df059d8ffd4da5f0f26
 ORIGINAL_SGK_PED_R01_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd
@@ -389,3 +389,8 @@ TOP14_R02_LEARNER_FIRST_23OUT_110CANONICAL_74DIRECTQA_20261116; source `c80f20dc
 - **Actual O22 learner-facing error** (Q03/PED6): after solving two intersections of an **ellipse** with the y-axis, the “Nếu làm sai” formerly pointed students to a **parabola** symmetry diagram. Repaired to use the **ellipse's symmetry across Ox** and both coordinates (0,2),(0,-2), directly verified from `x²/9+y²/4=1` and `x=0`. This is a simple affected-scope `DELTA_C_ACADEMIC_MATERIAL` because the conceptual remediation changed, checked directly by author. NotebookLM unnecessary (no remaining mathematical uncertainty); do not re-PASS other source snapshots.
 - **One-effective-ready rule:** old R01 manifest Git blob `814997dc5686d5716d880a7c4379a2c146d339af` has been copied **byte-identically** to `prototypes/thpt/release-queue/archive/THPT-TOPIC14-ANALYTIC-OXY-FULL-R01_HISTORICAL_SIGNED_20261118.md` then deleted from active `ready/`. R01 historical Academic/Q18/V2 and git commit remain unchanged; only R02 is current. REGISTER must remove R01 ACTIVE-ready identity while retaining an auditable historical reference.
 - **A1–A7 original evidence:** 23/23 outcomes, 59 SGK original canonical IDs +23 First Try +23 Practice +5 Written = 110 unique identities, 87 actual Practice cards, 23 public question-only selfcheck reuse placements, 3 original SVG, no protected RD1 or Mastery. No content beyond this O22 D6 line was changed. Combined-HEAD RELEASE/UI gates remain separate.
+
+
+## Final 18/11/2026 AUTHORING closure — 55/55 numbered SGK learner labels (DELTA_A_UI)
+
+Latest EFFECTIVE learner SHA: `b5c03a5cfb3336ff9e3d3a15fd8f0161ec71fb39`; previous `c80f20dc9f8f2ee000f5c4af5a4c8583a5307cf1` is historical signed only. Current targeted R02 Q18 receipt Git SHA: `83ed7bce8010f522d86beac22b01403601e13da3`. Exactly 40 visible `Bài SGK` numbers adjusted to make 55 labels 1..55 sequential across four math groups; full source after normalizing the numbering-token span is byte-identical to previous, and all canonical SGK source IDs/stems/answers/solutions/rubrics plus 23 Topic-firsttry, 23 Practice, five Written, 23 public replays and three SVG unchanged. No historic math source reassigned, no independent reviewer PASS or website RELEASE.

@@ -981,7 +981,7 @@ So sánh đường, tính giao điểm, góc và khoảng cách theo điều ki�
 **Luyện tập từ SGK**
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B20-C01; SOURCE_BLOB: 2b191d7abba7a4f5bd79d4c122673cd53a45495b; SGK_D3_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 17.** Xét \(d_1:2x-y+3=0\), \(d_2:4x-2y-5=0\). Hai đường có vị trí tương đối nào?
+**Bài SGK 16.** Xét \(d_1:2x-y+3=0\), \(d_2:4x-2y-5=0\). Hai đường có vị trí tương đối nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -992,7 +992,7 @@ So sánh đường, tính giao điểm, góc và khoảng cách theo điều ki�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B20-C02; SOURCE_BLOB: 2b191d7abba7a4f5bd79d4c122673cd53a45495b; SGK_D3_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 18.** Hai đường \(d_1:x+2y=0\) và \(d_2:2x-y+4=0\) có vuông góc không?
+**Bài SGK 17.** Hai đường \(d_1:x+2y=0\) và \(d_2:2x-y+4=0\) có vuông góc không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1003,7 +1003,7 @@ So sánh đường, tính giao điểm, góc và khoảng cách theo điều ki�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B20-P01; SOURCE_BLOB: 2b191d7abba7a4f5bd79d4c122673cd53a45495b; SGK_D3_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 19.** Tìm giao điểm \(d_1:x+y-3=0\) và \(d_2:x-y-1=0\).
+**Bài SGK 18.** Tìm giao điểm \(d_1:x+y-3=0\) và \(d_2:x-y-1=0\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1014,7 +1014,7 @@ So sánh đường, tính giao điểm, góc và khoảng cách theo điều ki�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B20-P02; SOURCE_BLOB: 2b191d7abba7a4f5bd79d4c122673cd53a45495b; SGK_D3_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 20.** Tính khoảng cách từ \(P(1;-2)\) đến đường \(d:3x+4y-5=0\).
+**Bài SGK 19.** Tính khoảng cách từ \(P(1;-2)\) đến đường \(d:3x+4y-5=0\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1025,7 +1025,7 @@ So sánh đường, tính giao điểm, góc và khoảng cách theo điều ki�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B20-P03; SOURCE_BLOB: 2b191d7abba7a4f5bd79d4c122673cd53a45495b; SGK_D3_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 21.** Tìm góc nhọn giữa \(d_1:x-y=0\) và \(d_2:x=0\).
+**Bài SGK 20.** Tìm góc nhọn giữa \(d_1:x-y=0\) và \(d_2:x=0\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1036,7 +1036,7 @@ So sánh đường, tính giao điểm, góc và khoảng cách theo điều ki�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B20-P04; SOURCE_BLOB: 2b191d7abba7a4f5bd79d4c122673cd53a45495b; SGK_D3_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 22.** Viết đường thẳng qua \(A(2;-1)\) và vuông góc với \(d:3x-4y+2=0\).
+**Bài SGK 21.** Viết đường thẳng qua \(A(2;-1)\) và vuông góc với \(d:3x-4y+2=0\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1047,7 +1047,7 @@ So sánh đường, tính giao điểm, góc và khoảng cách theo điều ki�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B20-P05; SOURCE_BLOB: 2b191d7abba7a4f5bd79d4c122673cd53a45495b; SGK_D3_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 23.** Tìm \(m\in\mathbb R\) để \(d_1:(m+1)x+2y-1=0\) song song và phân biệt với \(d_2:3x-6y+4=0\).
+**Bài SGK 22.** Tìm \(m\in\mathbb R\) để \(d_1:(m+1)x+2y-1=0\) song song và phân biệt với \(d_2:3x-6y+4=0\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1058,7 +1058,7 @@ So sánh đường, tính giao điểm, góc và khoảng cách theo điều ki�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B20-P06; SOURCE_BLOB: 2b191d7abba7a4f5bd79d4c122673cd53a45495b; SGK_D3_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 24.** Tính cosin của góc nhọn giữa \(d_1:x+2y=0\) và \(d_2:2x+y=0\).
+**Bài SGK 23.** Tính cosin của góc nhọn giữa \(d_1:x+2y=0\) và \(d_2:2x+y=0\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1069,7 +1069,7 @@ So sánh đường, tính giao điểm, góc và khoảng cách theo điều ki�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY08; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 25.** d1: 2x-y+1=0, d2: 4x-2y+3=0 là song song phân biệt hay trùng nhau?
+**Bài SGK 24.** d1: 2x-y+1=0, d2: 4x-2y+3=0 là song song phân biệt hay trùng nhau?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1080,7 +1080,7 @@ So sánh đường, tính giao điểm, góc và khoảng cách theo điều ki�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY09; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 26.** Qua P(1,-2) viết đường vuông góc với d: x+2y-5=0.
+**Bài SGK 25.** Qua P(1,-2) viết đường vuông góc với d: x+2y-5=0.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1091,7 +1091,7 @@ So sánh đường, tính giao điểm, góc và khoảng cách theo điều ki�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY10; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 27.** Tìm giao điểm của x+2y=8 và 2x-y=1.
+**Bài SGK 26.** Tìm giao điểm của x+2y=8 và 2x-y=1.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1102,7 +1102,7 @@ So sánh đường, tính giao điểm, góc và khoảng cách theo điều ki�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY11; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 28.** Tính khoảng cách từ M(1,2) đến d: 3x+4y-1=0.
+**Bài SGK 27.** Tính khoảng cách từ M(1,2) đến d: 3x+4y-1=0.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1113,7 +1113,7 @@ So sánh đường, tính giao điểm, góc và khoảng cách theo điều ki�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY12; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 29.** Góc nhỏ giữa d1: x=0 và d2: x-y=0 bằng bao nhiêu?
+**Bài SGK 28.** Góc nhỏ giữa d1: x=0 và d2: x-y=0 bằng bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1219,7 +1219,7 @@ Tìm tâm, bán kính, tiếp tuyến và nghiệm giao với đường thẳng.
 **Luyện tập từ SGK**
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B21-C01; SOURCE_BLOB: 2b191d7abba7a4f5bd79d4c122673cd53a45495b; SGK_D3_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 31.** Viết phương trình đường tròn tâm \(I(1;-2)\), bán kính \(R=3\).
+**Bài SGK 29.** Viết phương trình đường tròn tâm \(I(1;-2)\), bán kính \(R=3\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1230,7 +1230,7 @@ Tìm tâm, bán kính, tiếp tuyến và nghiệm giao với đường thẳng.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B21-C02; SOURCE_BLOB: 2b191d7abba7a4f5bd79d4c122673cd53a45495b; SGK_D3_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 32.** Tìm tâm và bán kính đường tròn \(x^2+y^2-4x+6y-12=0\).
+**Bài SGK 30.** Tìm tâm và bán kính đường tròn \(x^2+y^2-4x+6y-12=0\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1241,7 +1241,7 @@ Tìm tâm, bán kính, tiếp tuyến và nghiệm giao với đường thẳng.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B21-P01; SOURCE_BLOB: 2b191d7abba7a4f5bd79d4c122673cd53a45495b; SGK_D3_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 33.** Viết phương trình đường tròn đường kính \(AB\), với \(A(-2;1)\), \(B(4;5)\).
+**Bài SGK 31.** Viết phương trình đường tròn đường kính \(AB\), với \(A(-2;1)\), \(B(4;5)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1252,7 +1252,7 @@ Tìm tâm, bán kính, tiếp tuyến và nghiệm giao với đường thẳng.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B21-P02; SOURCE_BLOB: 2b191d7abba7a4f5bd79d4c122673cd53a45495b; SGK_D3_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 34.** Viết tiếp tuyến của đường tròn \(x^2+y^2=25\) tại \(M(3;4)\).
+**Bài SGK 32.** Viết tiếp tuyến của đường tròn \(x^2+y^2=25\) tại \(M(3;4)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1263,7 +1263,7 @@ Tìm tâm, bán kính, tiếp tuyến và nghiệm giao với đường thẳng.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B21-P03; SOURCE_BLOB: 2b191d7abba7a4f5bd79d4c122673cd53a45495b; SGK_D3_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 35.** Xét \((C):(x-1)^2+(y+1)^2=4\) và đường thẳng \(d:x=3\). \(d\) có tiếp xúc với \((C)\) không? Nêu tiếp điểm.
+**Bài SGK 33.** Xét \((C):(x-1)^2+(y+1)^2=4\) và đường thẳng \(d:x=3\). \(d\) có tiếp xúc với \((C)\) không? Nêu tiếp điểm.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1274,7 +1274,7 @@ Tìm tâm, bán kính, tiếp tuyến và nghiệm giao với đường thẳng.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B21-P04; SOURCE_BLOB: 2b191d7abba7a4f5bd79d4c122673cd53a45495b; SGK_D3_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 36.** Tìm đường tròn qua \(A(0;0)\), \(B(4;0)\), \(C(0;2)\).
+**Bài SGK 34.** Tìm đường tròn qua \(A(0;0)\), \(B(4;0)\), \(C(0;2)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1285,7 +1285,7 @@ Tìm tâm, bán kính, tiếp tuyến và nghiệm giao với đường thẳng.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B21-P05; SOURCE_BLOB: 2b191d7abba7a4f5bd79d4c122673cd53a45495b; SGK_D3_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 37.** Tìm \(k\in\mathbb R\) để \(x^2+y^2-6x+2y+k=0\) là đường tròn tiếp xúc với đường thẳng \(x=0\). Nêu tiếp điểm.
+**Bài SGK 35.** Tìm \(k\in\mathbb R\) để \(x^2+y^2-6x+2y+k=0\) là đường tròn tiếp xúc với đường thẳng \(x=0\). Nêu tiếp điểm.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1296,7 +1296,7 @@ Tìm tâm, bán kính, tiếp tuyến và nghiệm giao với đường thẳng.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B21-P06; SOURCE_BLOB: 2b191d7abba7a4f5bd79d4c122673cd53a45495b; SGK_D3_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 38.** Tìm phương trình đường tròn đi qua \(A(1;2)\), \(B(5;4)\), biết tâm nằm trên trục \(Ox\).
+**Bài SGK 36.** Tìm phương trình đường tròn đi qua \(A(1;2)\), \(B(5;4)\), biết tâm nằm trên trục \(Ox\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1307,7 +1307,7 @@ Tìm tâm, bán kính, tiếp tuyến và nghiệm giao với đường thẳng.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY13; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 39.** Đường tròn có tâm I(-2,1) và bán kính 3 có phương trình nào?
+**Bài SGK 37.** Đường tròn có tâm I(-2,1) và bán kính 3 có phương trình nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1318,7 +1318,7 @@ Tìm tâm, bán kính, tiếp tuyến và nghiệm giao với đường thẳng.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY14; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 40.** Phương trình x²+y²−6x+4y+8=0 biểu diễn đường tròn nào?
+**Bài SGK 38.** Phương trình x²+y²−6x+4y+8=0 biểu diễn đường tròn nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1329,7 +1329,7 @@ Tìm tâm, bán kính, tiếp tuyến và nghiệm giao với đường thẳng.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY15; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 41.** Đường tròn tâm I(1,−1), bán kính 5; M(4,3). Viết tiếp tuyến tại M.
+**Bài SGK 39.** Đường tròn tâm I(1,−1), bán kính 5; M(4,3). Viết tiếp tuyến tại M.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1340,7 +1340,7 @@ Tìm tâm, bán kính, tiếp tuyến và nghiệm giao với đường thẳng.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY16; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 42.** Đường tròn qua A(0,0), B(2,0), C(0,2) có tâm, bán kính và phương trình gì?
+**Bài SGK 40.** Đường tròn qua A(0,0), B(2,0), C(0,2) có tâm, bán kính và phương trình gì?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1351,7 +1351,7 @@ Tìm tâm, bán kính, tiếp tuyến và nghiệm giao với đường thẳng.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY17; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 43.** Đường tròn tâm I(1,2), R=3 và đường d: y=−1 có quan hệ nào?
+**Bài SGK 41.** Đường tròn tâm I(1,2), R=3 và đường d: y=−1 có quan hệ nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1459,7 +1459,7 @@ Phân biệt elip, hypebol và parabol; tính tiêu điểm, tiệm cận, giao 
 **Luyện tập từ SGK**
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B22-C01; SOURCE_BLOB: 2b191d7abba7a4f5bd79d4c122673cd53a45495b; SGK_D3_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 45.** Cho elip \(E:\dfrac{x^2}{25}+\dfrac{y^2}{9}=1\). Tìm hai tiêu điểm và tâm sai.
+**Bài SGK 42.** Cho elip \(E:\dfrac{x^2}{25}+\dfrac{y^2}{9}=1\). Tìm hai tiêu điểm và tâm sai.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1470,7 +1470,7 @@ Phân biệt elip, hypebol và parabol; tính tiêu điểm, tiệm cận, giao 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B22-C02; SOURCE_BLOB: 2b191d7abba7a4f5bd79d4c122673cd53a45495b; SGK_D3_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 46.** Cho hypebol \(H:\dfrac{x^2}{9}-\dfrac{y^2}{16}=1\). Tìm hai tiêu điểm và hai tiệm cận.
+**Bài SGK 43.** Cho hypebol \(H:\dfrac{x^2}{9}-\dfrac{y^2}{16}=1\). Tìm hai tiêu điểm và hai tiệm cận.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1481,7 +1481,7 @@ Phân biệt elip, hypebol và parabol; tính tiêu điểm, tiệm cận, giao 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B22-P01; SOURCE_BLOB: 2b191d7abba7a4f5bd79d4c122673cd53a45495b; SGK_D3_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 47.** Elip có tiêu điểm \((-3;0)\), \((3;0)\), độ dài trục lớn \(10\). Viết phương trình chính tắc.
+**Bài SGK 44.** Elip có tiêu điểm \((-3;0)\), \((3;0)\), độ dài trục lớn \(10\). Viết phương trình chính tắc.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1492,7 +1492,7 @@ Phân biệt elip, hypebol và parabol; tính tiêu điểm, tiệm cận, giao 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B22-P02; SOURCE_BLOB: 2b191d7abba7a4f5bd79d4c122673cd53a45495b; SGK_D3_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 48.** Hypebol có hai đỉnh \((-2;0),(2;0)\), hai tiêu điểm \((-\sqrt{13};0),(\sqrt{13};0)\). Viết phương trình chính tắc.
+**Bài SGK 45.** Hypebol có hai đỉnh \((-2;0),(2;0)\), hai tiêu điểm \((-\sqrt{13};0),(\sqrt{13};0)\). Viết phương trình chính tắc.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1503,7 +1503,7 @@ Phân biệt elip, hypebol và parabol; tính tiêu điểm, tiệm cận, giao 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B22-P03; SOURCE_BLOB: 2b191d7abba7a4f5bd79d4c122673cd53a45495b; SGK_D3_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 49.** Viết phương trình chính tắc của parabol có tiêu điểm \(F(2;0)\) và đường chuẩn \(x=-2\).
+**Bài SGK 46.** Viết phương trình chính tắc của parabol có tiêu điểm \(F(2;0)\) và đường chuẩn \(x=-2\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1514,7 +1514,7 @@ Phân biệt elip, hypebol và parabol; tính tiêu điểm, tiệm cận, giao 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B22-P04; SOURCE_BLOB: 2b191d7abba7a4f5bd79d4c122673cd53a45495b; SGK_D3_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 50.** Một mặt cắt chảo phản xạ được mô hình bằng \(y^2=12x\) (đơn vị cm). Xác định tiêu điểm và đường chuẩn.
+**Bài SGK 47.** Một mặt cắt chảo phản xạ được mô hình bằng \(y^2=12x\) (đơn vị cm). Xác định tiêu điểm và đường chuẩn.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1525,7 +1525,7 @@ Phân biệt elip, hypebol và parabol; tính tiêu điểm, tiệm cận, giao 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B22-P05; SOURCE_BLOB: 2b191d7abba7a4f5bd79d4c122673cd53a45495b; SGK_D3_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 51.** Tìm các giao điểm của elip \(E:\frac{x^2}{16}+\frac{y^2}{9}=1\) với đường thẳng \(y=\frac32\).
+**Bài SGK 48.** Tìm các giao điểm của elip \(E:\frac{x^2}{16}+\frac{y^2}{9}=1\) với đường thẳng \(y=\frac32\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1536,7 +1536,7 @@ Phân biệt elip, hypebol và parabol; tính tiêu điểm, tiệm cận, giao 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B22-P06; SOURCE_BLOB: 2b191d7abba7a4f5bd79d4c122673cd53a45495b; SGK_D3_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 52.** Cho parabol \(P:y^2=8x\). Chứng minh điểm \(M(2;4)\) thuộc \(P\) và có khoảng cách tới tiêu điểm bằng khoảng cách tới đường chuẩn.
+**Bài SGK 49.** Cho parabol \(P:y^2=8x\). Chứng minh điểm \(M(2;4)\) thuộc \(P\) và có khoảng cách tới tiêu điểm bằng khoảng cách tới đường chuẩn.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1547,7 +1547,7 @@ Phân biệt elip, hypebol và parabol; tính tiêu điểm, tiệm cận, giao 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY18; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 53.** Với elip x²/25+y²/16=1, tìm a, b, c và hai tiêu điểm.
+**Bài SGK 50.** Với elip x²/25+y²/16=1, tìm a, b, c và hai tiêu điểm.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1558,7 +1558,7 @@ Phân biệt elip, hypebol và parabol; tính tiêu điểm, tiệm cận, giao 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY19; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 54.** Hypebol x²/16−y²/9=1 có các đỉnh và hai tiêu điểm tọa độ nào?
+**Bài SGK 51.** Hypebol x²/16−y²/9=1 có các đỉnh và hai tiêu điểm tọa độ nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1569,7 +1569,7 @@ Phân biệt elip, hypebol và parabol; tính tiêu điểm, tiệm cận, giao 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY20; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 55.** Hypebol x²/25−y²/4=1 có hai đường tiệm cận nào?
+**Bài SGK 52.** Hypebol x²/25−y²/4=1 có hai đường tiệm cận nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1580,7 +1580,7 @@ Phân biệt elip, hypebol và parabol; tính tiêu điểm, tiệm cận, giao 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY21; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 56.** Cho parabol y²=8x với x≥0. Xác định tiêu điểm, đường chuẩn; M(2,4) có thuộc parabol không?
+**Bài SGK 53.** Cho parabol y²=8x với x≥0. Xác định tiêu điểm, đường chuẩn; M(2,4) có thuộc parabol không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1591,7 +1591,7 @@ Phân biệt elip, hypebol và parabol; tính tiêu điểm, tiệm cận, giao 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY22; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 57.** Đường x=0 cắt elip x²/9+y²/4=1 tại những điểm nào?
+**Bài SGK 54.** Đường x=0 cắt elip x²/9+y²/4=1 tại những điểm nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1602,7 +1602,7 @@ Phân biệt elip, hypebol và parabol; tính tiêu điểm, tiệm cận, giao 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-CHVII-TRY23; SOURCE_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd; SGK_FIRST_TRY_VERIFIED; ROLE: TOPIC_PRACTICE; canonical stem/key/rubric stay in original source -->
-**Bài SGK 58.** Mặt cắt một máng giả sử có dạng y²=20x (x,y tính bằng cm). Bề rộng của máng tại x=5 cm là bao nhiêu?
+**Bài SGK 55.** Mặt cắt một máng giả sử có dạng y²=20x (x,y tính bằng cm). Bề rộng của máng tại x=5 cm là bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
