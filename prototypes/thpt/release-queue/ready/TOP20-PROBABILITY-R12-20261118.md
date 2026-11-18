@@ -63,12 +63,13 @@ SOURCE_SCOPE: SGK_G10_KNTT_CHIX_B26_B27_PLUS_SGK_G11_KNTT_CHVIII_B28_B30
 
 ## R/AP/P — SEPARATE RELEASE GATES
 
-- [ ] R1_SOURCE_LOCK — RELEASE must independently re-fetch exact authoring source/receipt SHA.
+- [ ] R1_INTEGRATED_CURRENT_MAIN — RELEASE has not imported the exact authoring source and receipt into the current website/main; intake must verify source SHA first.
 - [ ] R2_EXACT_HEAD_CI — Release integration and combined CI remain a separate operation.
-- [ ] R3_GOLDEN_VISUAL — Student facing topic navigation, actual MathJax/SVG, Tutor public-only, Golden 390/820/1440 to be browser verified.
-- [ ] R4_FINAL_SUBMIT_SAFETY — Private RD1 must remain off public Git, no feedback/hints/AI/answer before official Final Submit.
+- [ ] R3_CLEAN_STUDENT_UI — RELEASE must check live Topic Golden, MathJax/SVG, tutoring on public learning only, 390/820/1440 and deep links before publication.
+- [ ] R4_ASSESSMENT_SAFETY — No private RD1 leakage, hint/key/correctness/AI Tutor before official Final Submit, and no illegitimate Mastery score writes.
 - [ ] R5_OWNER_PERMISSION — No permission to integrate website, merge release, or deploy is granted by this authoring manifest.
 - [ ] AP1_AP5_RENDERED_QA — Check actual site display/reading/interaction and responsive after RELEASE intake; source Markdown is not production UI.
-- [ ] P1_PUBLISHED_P2_DEVICE — Not published, no real iPhone/iPad Safari proof and no parent acceptance.
+- [ ] P1_DEPLOY_RECEIPT — Website is not deployed or published for this Topic; no P1 verification or public availability claimed.
+- [ ] P2_DEVICE_UAT — Real-device iPhone/iPad Safari and parent acceptance pending after an authorized release.
 
 AUTHOR_SIGNOFF: TOP20_R12_AUTHORING_CONTENT_READY_ONLY_20261118
