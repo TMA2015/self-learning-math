@@ -24,18 +24,27 @@ const REQUIRED_SECTIONS=[
  "## X. Quản trị thay đổi và bảo đảm “một chuẩn”",
  "## XI. Truy vết nguồn → điều khoản và phân công"
 ];
+// v3.2 approved as a draft prior to PR #899; after owner-approved merge,
+// its effective marker must reference the exact known merged receipt.
+// A prospective branch without that receipt remains a non-effective draft.
+function validV32Approval(source,status) {
+  if(status==="OWNER_APPROVED_EFFECTIVE_AFTER_MERGE")return true; // prospective only; gate does not activate
+  return status==="OWNER_APPROVED_EFFECTIVE" &&
+    source.includes("**ACTIVATION:** `OWNER_APPROVED_PR_899_MERGED_INTO_MAIN_20261117`") &&
+    source.includes("6d9ae928876379a9c00e23a62c77504eb7a6d028");
+}
 function validate(source, agents, queue) {
  const failures=[],warnings=[];
  const fail=x=>failures.push(x);
  if(!source.includes("STANDARD_ID:** `SLM-THPT-QUALITY-ONE`"))fail("STANDARD_ID_NOT_EXPLICIT");
  const version=(source.match(/\*\*VERSION:\*\* `(\d+\.\d+\.\d+)`/)||[])[1];
- if(!["1.0.0","1.1.0","1.2.0","2.0.0","3.0.0","3.0.1","3.1.0"].includes(version))fail("VERSION_NOT_LOCKED");
- if(["1.1.0","1.2.0","2.0.0","3.0.0","3.0.1","3.1.0"].includes(version)){
+ if(!["1.0.0","1.1.0","1.2.0","2.0.0","3.0.0","3.0.1","3.1.0","3.2.0"].includes(version))fail("VERSION_NOT_LOCKED");
+ if(["1.1.0","1.2.0","2.0.0","3.0.0","3.0.1","3.1.0","3.2.0"].includes(version)){
    for(const token of ["SBT_REFERENCE_GAP_DOCUMENTED","SGK_CORE_AUTHORITY","REFERENCE_EXERCISE","ORIGINAL_AUTHORED","STANDARD_CHANGE_REQUEST_Q01_SOURCE_ROLES_20261103"]){
      if(!source.includes(token))fail("Q01_V1_1_MISSING_CONTROL:"+token);
    }
  }
- if(["1.2.0","2.0.0","3.0.0","3.0.1","3.1.0"].includes(version)){
+ if(["1.2.0","2.0.0","3.0.0","3.0.1","3.1.0","3.2.0"].includes(version)){
    const required=["## II-B. Diễn giải áp dụng Q03/Q04/Q07/Q08/Q09–Q14/Q17 qua cùng AP1–AP5 — bổ sung v1.2.0",
      "## X-B. Quyết định hợp nhất trải nghiệm tự học — Change Log 04/11/2026",
      "1.1.0 → 1.2.0","LEARNER_EVIDENCE_PENDING",
@@ -48,11 +57,15 @@ function validate(source, agents, queue) {
      fail("UX_PED_V1_2_MISSING_CONTROL:OWNER_APPROVED_EFFECTIVE_UPON_GOVERNANCE_MERGE");
  }
  const approvalStatus=(source.match(/^\*\*STATUS:\*\*\s*\x60([A-Z0-9_]+)\x60/m)||[])[1];
- if(["2.0.0","3.0.0","3.0.1","3.1.0"].includes(version)){
-   if(version==="3.1.0"){
+ if(["2.0.0","3.0.0","3.0.1","3.1.0","3.2.0"].includes(version)){
+   if(version==="3.2.0"){
+     if(!validV32Approval(source,approvalStatus))
+       fail("V3_2_OWNER_APPROVAL_NOT_EXPLICIT");
+   }else if(version==="3.1.0"){
      if(approvalStatus!=="OWNER_APPROVED_EFFECTIVE")
        fail("SGK_V3_1_OWNER_EDITORIAL_APPROVAL_STATUS_REQUIRED");
-   }else if(approvalStatus!=="OWNER_APPROVED_EFFECTIVE")fail("Q18_V2_OWNER_EFFECTIVE_STATUS_REQUIRED");
+   }else if(approvalStatus!=="OWNER_APPROVED_EFFECTIVE")
+     fail("Q18_V2_OWNER_EFFECTIVE_STATUS_REQUIRED");
    const contract=fs.readFileSync(path.join(ROOT,"prototypes/thpt/THPT_TWO_LANE_SOURCE_LOCKED_HANDOFF_CONTRACT_v2_20261102.md"),"utf8");
    const policy07=fs.readFileSync(path.join(ROOT,"prototypes/thpt/standard-changes/07_THPT_NOTEBOOKLM_BATCH_AND_DELTA_REVIEW_POLICY_v1.2_20261110.md"),"utf8");
    for(const token of ["OWNER APPROVED Q18 v2.0 OPERATIONAL SUPERSESSION","ENRICHMENT_DELTA_RECEIPT","TOPIC"])
@@ -63,7 +76,7 @@ function validate(source, agents, queue) {
      if(!source.includes(token))fail("Q18_V2_EFFECTIVE_CONTROL_MISSING:"+token);
  
 }
-  if(["3.0.0","3.0.1","3.1.0"].includes(version)){
+  if(["3.0.0","3.0.1","3.1.0","3.2.0"].includes(version)){
     for(const token of ["## X-D. OWNER DECISION 11/11/2026","Q18_AUTHOR_SELF_VERIFIED",
       "AUTHOR_SELF_QA_RECEIPT","TARGETED_INDEPENDENT_REVIEW_REQUIRED",
       "Adaptive Knowledge Tabs v2","ASSESSMENT_DATA_SAFETY"]){
@@ -76,7 +89,7 @@ function validate(source, agents, queue) {
     // The temporary AUTHORING pause may later be lifted by the owner; do NOT
     // hard-code PAUSED as a permanent quality-schema requirement.
   }
-  if(["3.0.1","3.1.0"].includes(version)){
+  if(["3.0.1","3.1.0","3.2.0"].includes(version)){
     for(const token of ["## X-E. OWNER CLARIFICATION 11/11/2026","AUTHORING_PASS = CONTENT_READY",
       "Q18_CONTENT_CHECK_PENDING","Q18_SUBSTANTIVE_HOLD",
       "HANDOFF_PACKAGING_PENDING","một V2 handoff","ASSESSMENT_DATA_SAFETY"])
@@ -101,7 +114,26 @@ function validate(source, agents, queue) {
        !source.includes("GOVERNANCE_DRAFT_NOT_YET_EFFECTIVE"))
       fail("SGK_V3_1_DRAFT_MUST_NOT_CLAIM_EFFECTIVE");
   }
-  if(!["2.0.0","3.0.0","3.0.1","3.1.0"].includes(version) && !source.includes("OFFICIAL_OWNER_APPROVED_MAIN")&&!source.includes("OWNER_APPROVED_EFFECTIVE_UPON_GOVERNANCE_MERGE")&&!source.includes("OWNER_APPROVED_Q01_REVISION_PENDING_GOVERNANCE_QA_MERGE"))fail("OWNER_APPROVAL_RECEIPT_MISSING");
+  if(version==="3.2.0"){
+   if(!validV32Approval(source,approvalStatus))
+    fail("V3_2_OWNER_APPROVAL_NOT_EXPLICIT");
+   for(const token of [
+     "## X-F. OWNER DECISION 12/11/2026",
+     "### X-F.3. Bộ thành phần toán cần làm nổi bật nhất quán",
+     "Owner-approved 17/11/2026",
+     "FORMAL_DEFINITION","FORMAL_RULE","MANDATORY_RECAP","KEY_FORMULA",
+     "G0–G5","Ghi nhớ","Một chuẩn gốc","DELTA_C_ACADEMIC_MATERIAL"
+   ]){
+    if(!source.includes(token))fail("V3_2_SEMANTIC_CONTROL_MISSING:"+token);
+   }
+   const change=fs.readFileSync(path.join(ROOT,
+     "prototypes/thpt/standard-changes/SLM_THPT_QUALITY_ONE_SCR_3PLUS1_20261117.md"),"utf8");
+   for(const token of ["SLM-THPT-QUALITY-ONE-SCR-20261117-3PLUS1",
+     "OWNER_APPROVED_20261117","v3.2.0","B08"]){
+    if(!change.includes(token))fail("V3_2_OWNER_CHANGE_RECEIPT_MISSING:"+token);
+   }
+  }
+  if(!["2.0.0","3.0.0","3.0.1","3.1.0","3.2.0"].includes(version) && !source.includes("OFFICIAL_OWNER_APPROVED_MAIN")&&!source.includes("OWNER_APPROVED_EFFECTIVE_UPON_GOVERNANCE_MERGE")&&!source.includes("OWNER_APPROVED_Q01_REVISION_PENDING_GOVERNANCE_QA_MERGE"))fail("OWNER_APPROVAL_RECEIPT_MISSING");
  for(const heading of REQUIRED_SECTIONS)if(!source.includes(heading))fail("MISSING_SECTION:"+heading);
  const tableStart=source.indexOf("## II. Ma trận chuẩn chất lượng duy nhất Q01–Q18");
  const tableEnd=source.indexOf("## III.",tableStart);
@@ -153,6 +185,19 @@ function selfTest(){
  {
    assert(validate(full.replace(/\*\*VERSION:\*\* `\d+\.\d+\.\d+`/,"**VERSION:** `9.9.9`"),"","").failures.includes("VERSION_NOT_LOCKED"));
  }
+ if(/\*\*VERSION:\*\* \x603\.2\.0\x60/.test(full)){
+    assert(validate(full.replaceAll("FORMAL_RULE","ROLE_REMOVED"),"","")
+      .failures.some(e=>e.startsWith("V3_2_SEMANTIC_CONTROL_MISSING")),
+      "V3.2 must fail if semantic role deleted");
+    assert(validate(full.replace(/^\*\*STATUS:\*\* \x60[A-Z0-9_]+\x60/m,
+      "**STATUS:** `GOVERNANCE_REVIEW_NOT_APPROVED`"),"","")
+      .failures.includes("V3_2_OWNER_APPROVAL_NOT_EXPLICIT"),
+      "V3.2 fake approval must fail");
+    assert(validate(full.replace("OWNER_APPROVED_PR_899_MERGED_INTO_MAIN_20261117",
+      "UNAPPROVED_MERGE"),"","")
+      .failures.includes("V3_2_OWNER_APPROVAL_NOT_EXPLICIT"),
+      "V3.2 forged merge receipt must fail");
+  }
  if(/\*\*VERSION:\*\* `3\.1\.0`/.test(full)){
     assert(validate(full.replace("## X-F. OWNER DECISION 12/11/2026","## X-F. [REMOVED]"),"","")
       .failures.some(e=>e.startsWith("SGK_EDITORIAL_V3_1_MISSING_CONTROL")));

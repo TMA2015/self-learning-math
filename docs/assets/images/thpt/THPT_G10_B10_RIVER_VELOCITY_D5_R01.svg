@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="600" viewBox="0 0 1024 600" role="img" aria-labelledby="b10-title b10-desc">
+<title id="b10-title">Bài 10: vận tốc ca nô, dòng chảy và độ trôi khi qua sông rộng 96 m</title>
+<desc id="b10-desc">Hai sơ đồ cùng tỉ lệ 34 px trên mỗi mét mỗi giây. A lái thẳng Bắc: vận tốc riêng (0;5), dòng (3;0), vận tốc theo bờ (3;5); thời gian 96 chia 5 bằng 19,2 giây, trôi Đông 57,6 m. B lái chếch Tây Bắc: vận tốc riêng (-3;4), dòng (3;0), vận tốc theo bờ (0;4), thời gian 24 giây, không trôi. Mọi thành phần tọa độ đo theo Ox Đông và Oy Bắc.</desc>
+<defs>
+<marker id="b10-blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#1d629c"/></marker>
+<marker id="b10-orange" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#b85b1e"/></marker>
+<marker id="b10-green" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#11806d"/></marker>
+</defs>
+<rect width="1024" height="600" fill="#fff"/><rect x="32" y="115" width="960" height="309" rx="8" fill="#edf6fa"/>
+<g stroke="#768493" stroke-width="3"><path d="M32 115H992M32 424H992"/><path d="M512 72V516" stroke-width="2" stroke-dasharray="9 7"/></g>
+<g font-family="Arial,sans-serif" font-size="19" fill="#273443">
+<text x="45" y="108">Bờ Bắc</text><text x="45" y="450">Bờ Nam</text>
+<text x="265" y="48" font-size="24" font-weight="bold" text-anchor="middle">A. Lái thẳng Bắc</text>
+<text x="765" y="48" font-size="24" font-weight="bold" text-anchor="middle">B. Lái chếch Tây Bắc</text>
+</g>
+<!-- With one shared scale S=34px/(m/s), arrows represent true vector component ratios. -->
+<g fill="none" stroke-linecap="round">
+<path d="M255 385L255 215" stroke="#1d629c" stroke-width="5" marker-end="url(#b10-blue)"/>
+<path d="M255 385L357 385" stroke="#b85b1e" stroke-width="5" marker-end="url(#b10-orange)"/>
+<path d="M255 385L357 215" stroke="#11806d" stroke-width="5.5" marker-end="url(#b10-green)"/>
+<path d="M255 215H357V385" stroke="#90a4b4" stroke-dasharray="7 6" stroke-width="2"/>
+<path d="M755 385L653 249" stroke="#1d629c" stroke-width="5" marker-end="url(#b10-blue)"/>
+<path d="M755 385L857 385" stroke="#b85b1e" stroke-width="5" marker-end="url(#b10-orange)"/>
+<path d="M755 385L755 249" stroke="#11806d" stroke-width="5.5" marker-end="url(#b10-green)"/>
+<path d="M653 249H755" stroke="#90a4b4" stroke-dasharray="7 6" stroke-width="2"/>
+</g>
+<circle cx="255" cy="385" r="5" fill="#253241"/><circle cx="755" cy="385" r="5" fill="#253241"/>
+<g font-family="Arial,sans-serif" font-size="17" fill="#273443">
+<text x="244" y="197" text-anchor="end" fill="#1d629c">Vận tốc riêng (0; 5)</text>
+<text x="362" y="408" fill="#b85b1e">Dòng (3; 0)</text>
+<text x="367" y="233" fill="#11806d">Theo bờ (3; 5)</text>
+<text x="346" y="167" font-weight="bold" fill="#11806d">Trôi về Đông</text>
+<text x="633" y="225" text-anchor="end" fill="#1d629c">Riêng (−3; 4)</text>
+<text x="863" y="409" fill="#b85b1e">Dòng (3; 0)</text>
+<text x="773" y="267" fill="#11806d">Theo bờ (0; 4)</text>
+<text x="755" y="194" text-anchor="middle" font-weight="bold" fill="#11806d">Không trôi</text>
+<text x="258" y="480" text-anchor="middle" font-size="20" font-weight="bold">t = 96/5 = 19,2 s</text>
+<text x="258" y="510" text-anchor="middle">Trôi Đông = 3·19,2 = 57,6 m</text>
+<text x="762" y="480" text-anchor="middle" font-size="20" font-weight="bold">t = 96/4 = 24 s</text>
+<text x="762" y="510" text-anchor="middle">Độ trôi = 0 m</text>
+<text x="512" y="557" text-anchor="middle" font-size="19">Sông rộng 96 m · Ox hướng Đông, Oy hướng Bắc</text>
+<text x="512" y="584" text-anchor="middle" font-size="16">Cùng một tỉ lệ vectơ trong cả hai hình: 34 px cho 1 m/s</text>
+</g></svg>

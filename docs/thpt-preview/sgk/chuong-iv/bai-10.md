@@ -1,31 +1,24 @@
 # Bài 10. Vectơ trong mặt phẳng tọa độ
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG IV · KIẾN THỨC SGK KNTT</p><p class="thpt-r4-lead">Học kiến thức và ví dụ, rồi luyện tập theo từng kĩ năng.</p></div>
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG IV · KIẾN THỨC SGK KNTT</p><p class="thpt-r4-lead">Hiểu vì sao vectơ có hai tọa độ, tự thử trước khi đối chiếu và luyện tập theo từng kĩ năng.</p></div>
 
 === "Khám phá kiến thức"
 
-    ### Cùng tìm hiểu
+    ### 1.1. Cùng tìm hiểu
 
-    Một mũi tên trên bản đồ có thể được mô tả bằng hai điều: đi **bao nhiêu đơn vị theo chiều ngang** và **bao nhiêu đơn vị theo chiều dọc**. Nếu một người đi từ \(A(1,2)\) đến \(B(5,5)\), họ đã dịch chuyển \(4\) đơn vị theo phương ngang và \(3\) đơn vị theo phương đứng. Vì thế, tọa độ của vectơ độ dời được tính bằng **điểm cuối trừ điểm đầu**: \(\overrightarrow{AB}=(4,3)\).
+    **Vì sao cần học?** Trên bản đồ dự báo bão, biết một vị trí rồi mới biết vị trí sau đó không chỉ cần một độ dài: ta cần biết đã dịch chuyển bao nhiêu về Đông–Tây và bao nhiêu về Bắc–Nam. Hai con số ấy mô tả **vectơ độ dời**, không phải hai tọa độ của vị trí cuối.
 
-    Khi đã biết tọa độ, việc cộng hai độ dời không còn đòi hỏi vẽ lại từng mũi tên: ta cộng từng thành phần, tương tự cách ghép hai lần di chuyển. Nhưng tọa độ của **một điểm** và tọa độ của **một vectơ** không phải cùng một đối tượng. Vectơ \(\overrightarrow{AB}\) có thể chuyển sang một vị trí khác mà không đổi hai thành phần của nó.
+    Từ Bài 8 và Bài 9, em đã biết ghép vectơ và nhân vectơ với số. Trong hệ trục vuông góc \(Oxy\), lấy \(\vec i\) là một bước đơn vị theo \(Ox\), \(\vec j\) là một bước đơn vị theo \(Oy\). Mỗi vectơ \(\vec u\) đều có thể viết **duy nhất** dưới dạng \(\vec u=x\vec i+y\vec j\). Vì hai hướng trục không cùng phương nên cặp \((x;y)\) chính là cách ghi ngắn gọn hai thành phần của vectơ.
 
-    Bài học cũng giải thích vì sao độ dài vectơ phải dùng căn của **tổng bình phương** hai tọa độ, cách kiểm hai vectơ cùng phương và cách tìm trung điểm, trọng tâm từ tọa độ các đỉnh.
+    Ví dụ ngay trong hình bên dưới: từ \(A(-2;1)\) tới \(B(3;4)\), mũi tên đi \(5\) đơn vị sang phải và \(3\) đơn vị lên trên. Vì thế \(\overrightarrow{AB}=(5;3)\); **đừng nhầm với tọa độ điểm** \(B(3;4)\). Dời cả hai điểm sang vị trí khác nhưng giữ nguyên độ dời thì tọa độ vectơ không đổi.
 
-    ### Ví dụ trực quan
+    ### 1.2. Ví dụ trực quan
+
+    <figure class="thpt-r4-plot thpt-r4-probability-figure"><picture><source media="(max-width: 600px)" srcset="../../../../assets/images/thpt/THPT_G10_B10_COORDINATES_MOBILE_D5_R01.svg"><img src="../../../../assets/images/thpt/THPT_G10_B10_COORDINATES_DIFFERENCE_D5_R01.svg" loading="lazy" alt="Sơ đồ hai điểm A, B trên hệ trục tọa độ: đọc chiều từ A tới B và hai thành phần hiệu tọa độ"></picture><figcaption>Đọc hình trước công thức: từ đuôi mũi tên ở A tới đầu mũi tên tại B, đo mức thay đổi hoành độ và tung độ. Đổi chiều sang BA thì cả hai dấu đổi ngược.</figcaption></figure>
+
+    **Đọc hình:** hãy xác định đuôi A, đầu B, hướng dọc trục hoành và dọc trục tung. Tọa độ của vectơ là hai **độ thay đổi có dấu**, không phải độ dài theo hai trục (độ dài không âm).
 
     <span id="thpt-g10-chiv-try16" data-thpt-first-try-id="THPT-G10-CHIV-TRY16" data-outcome-id="G10-B10-VECTOR_COORDS" data-thpt-help-ref="HELP-G10-B10-01"></span>
-
-    #### Vì sao lấy điểm cuối trừ điểm đầu?
-
-    Trên bản đồ tọa độ, muốn biết bạn đã dịch chuyển bao xa theo Đông–Tây và Bắc–Nam từ A đến B, chỉ cần nhìn sự thay đổi tọa độ.
-
-    Đã biết trục Ox, Oy và điểm A(xA;yA), B(xB;yB); quy ước đổi theo chiều dương của hai trục. 
-
-    Độ dời theo trục x là 'x đến − x đi', theo trục y là 'y đến − y đi'. Hai số đó ghép thành tọa độ vectơ \(\overrightarrow{AB}\); điểm đặt có thể khác nhưng cùng cặp độ dời tạo vectơ bằng nhau.
-
-
-    Viết 'cuối trừ đầu' thành hai bước độc lập, đừng lấy luôn tọa độ B. Đổi sang BA thì cả hai thành phần đổi dấu.
 
     **Em vận dụng.** Cho A(-3;2), B(2;-1). Tìm tọa độ \(\overrightarrow{AB}\) và \(\overrightarrow{BA}\).
 
@@ -35,19 +28,9 @@
 
         **Vì sao:** 2−(−3)=5 và −1−2=−3. Đảo điểm đầu/cuối làm vectơ đối.
 
+    **Từ trực quan đến tính toán:** khi ghép hai mũi tên, hoành độ chỉ cộng với hoành độ, tung độ chỉ cộng với tung độ. Nếu trừ một vectơ, dấu trừ tác động lên cả hai thành phần.
 
     <span id="thpt-g10-chiv-try17" data-thpt-first-try-id="THPT-G10-CHIV-TRY17" data-outcome-id="G10-B10-OPERATIONS" data-thpt-help-ref="HELP-G10-B10-01"></span>
-
-    #### Tọa độ giữ phép cộng vectơ dễ tính
-
-    Từ hai lần dịch chuyển đã mô tả bằng (ngang; dọc), ta muốn ghép chúng mà không phải vẽ lại từng mũi tên.
-
-    Biết cộng hai vectơ theo thành phần ngang/dọc B08, nhân một số B09; cặp số (x;y) biểu diễn hai thành phần theo trục. 
-
-    Đi thêm 2 đơn vị ngang và −1 dọc rồi tiếp thêm −1 ngang và 3 dọc nghĩa là cộng các độ dời ngang với nhau, dọc với nhau. Vì vậy phép cộng/trừ và nhân số được thực hiện theo từng tọa độ.
-
-
-    Chọn đại số theo tọa độ khi đã có cặp số; không cộng chéo x với y, và đặt ngoặc đúng khi trừ một vectơ.
 
     **Em vận dụng.** \(\vec u=(2;-1)\), \(\vec v=(-1;3)\). Tính \(2\vec u-\vec v\).
 
@@ -57,19 +40,9 @@
 
         **Vì sao:** 2u=(4;−2); trừ v=(-1;3) nghĩa là (4−(−1);−2−3)=(5;−5).
 
+    **Một độ dài, không phải hai chặng:** nếu đi \(3\) ô sang Đông rồi \(4\) ô lên Bắc thì đường đi theo lưới dài \(7\) ô, nhưng khoảng cách nối đầu–cuối là cạnh huyền tam giác vuông, chỉ dài \(5\) ô. Định lí Pythagore giải thích vì sao **độ dài vectơ** cần căn của tổng bình phương hai thành phần.
 
     <span id="thpt-g10-chiv-try18" data-thpt-first-try-id="THPT-G10-CHIV-TRY18" data-outcome-id="G10-B10-NORM_DISTANCE" data-thpt-help-ref="HELP-G10-B10-01"></span>
-
-    #### Khoảng cách là độ dài mũi tên, không phải tổng hai ô
-
-    Đi 3 ô sang Đông và 4 ô lên Bắc có quãng đường theo lưới 7 ô nhưng khoảng cách thẳng chỉ 5 ô.
-
-    Đã biết tam giác vuông và Pitago; tọa độ vectơ AB=(Δx;Δy) là hai cạnh góc vuông. 
-
-    Đường nối trực tiếp A–B là cạnh huyền: \(AB=\sqrt{(\Delta x)^2+(\Delta y)^2}\). Đó là độ dài vectơ, luôn không âm; không cộng |Δx|+|Δy| trừ khi đang hỏi đường đi theo lưới.
-
-
-    Dùng Pitago khi hỏi độ dài vectơ/khoảng cách giữa hai điểm, không nhầm với quãng đường đi theo cạnh ô.
 
     **Em vận dụng.** Cho A(1;2), B(4;6). Khoảng cách AB là 7 hay 5 đơn vị?
 
@@ -79,19 +52,9 @@
 
         **Vì sao:** AB=(3;4), nên AB=√(3²+4²)=5. 7 là tổng chặng theo hai trục, không phải khoảng cách thẳng.
 
+    **Nhìn hai thành phần để xét hướng:** \((2;1)\) và \((6;3)\) có cùng một hệ số nhân \(3\) ở cả hai tọa độ. Nếu một thành phần không cùng tỉ lệ, hai vectơ khác không không cùng phương. Không bao giờ chia cho một thành phần bằng \(0\) để “tìm tỉ số”.
 
     <span id="thpt-g10-chiv-try19" data-thpt-first-try-id="THPT-G10-CHIV-TRY19" data-outcome-id="G10-B10-COLLINEAR_COORDS" data-thpt-help-ref="HELP-G10-B10-02"></span>
-
-    #### Hai cặp số có cùng hướng hình học khi nào?
-
-    Trong bản đồ, (2 ô Đông,1 ô Bắc) và (6 ô Đông,3 ô Bắc) cùng đường đi nhưng khác độ dài.
-
-    Đã biết bội vô hướng và điều kiện khác vectơ-không của B09; tọa độ vectơ biểu diễn hai thành phần. 
-
-    Nếu \(\vec v=k\vec u\) thì cả hai tọa độ đều nhân cùng k, nên hai mũi tên song song. Nếu không có cùng một k cho cả hai thành phần thì khác phương.
-
-
-    Tìm cùng hệ số k ở cả hai tọa độ; trường hợp một tọa độ bằng 0 cần đối chiếu trực tiếp, không chia cho số 0.
 
     **Em vận dụng.** Với \(\vec u=(2;1)\), \(\vec v=(6;3)\), \(\vec w=(6;4)\). Vectơ nào cùng phương với u (biết cả ba đều khác 0)?
 
@@ -101,19 +64,9 @@
 
         **Vì sao:** Cặp (6,4) có tỉ số x=3 nhưng y=4, không thể tìm cùng k cho hai tọa độ.
 
+    **Trung bình tọa độ có ý nghĩa gì?** Trung điểm cân bằng hai đầu mút; trọng tâm tam giác cân bằng ba đỉnh. Ta lấy trung bình **riêng từng trục** chứ không lấy trung bình độ dài hay lẫn các trục.
 
     <span id="thpt-g10-chiv-try20" data-thpt-first-try-id="THPT-G10-CHIV-TRY20" data-outcome-id="G10-B10-MIDPOINT_CENTROID" data-thpt-help-ref="HELP-G10-B10-02"></span>
-
-    #### Tọa độ điểm cân bằng là trung bình các đỉnh
-
-    Trung điểm đoạn thẳng nằm cân giữa hai đầu, trọng tâm tam giác nằm cân giữa ba đỉnh khi xét tọa độ theo mỗi trục.
-
-    Đã biết trung điểm M của AB và trọng tâm G của tam giác; phép cộng vectơ và số trung bình cộng. 
-
-    Vì trung điểm có vectơ MA+MB=0, tọa độ trung bình của A,B cho M. Tương tự GA+GB+GC=0 cho trọng tâm, nên tọa độ G là trung bình của ba tọa độ đỉnh.
-
-
-    Dùng trung bình tọa độ theo từng trục cho M hoặc G, kiểm G nằm trong tam giác và M nằm trên AB; không nhầm chia 2 và chia 3.
 
     **Em vận dụng.** Cho A(-2;4), B(4;0), C(1;5). Tính trung điểm M của AB và trọng tâm G của ABC.
 
@@ -123,152 +76,152 @@
 
         **Vì sao:** M: ((−2+4)/2;(4+0)/2)=(1;2); G: ((−2+4+1)/3;(4+0+5)/3)=(1;3).
 
+    **Ứng dụng mở rộng — dòng nước:** có hai vận tốc khác nhau: vận tốc ca nô so với nước (hướng mũi lái) và vận tốc thực so với bờ (hướng di chuyển). Vectơ vận tốc thực là **tổng** vectơ vận tốc riêng và vectơ dòng nước. Chọn trục \(Ox\) về Đông, \(Oy\) về Bắc; muốn tính thời gian qua sông phải xem thành phần vận tốc hướng Bắc.
 
     <span id="thpt-g10-chiv-try-river-tr01" data-thpt-first-try-id="THPT-G10-CHIV-TRY-RIVER-TR01" data-outcome-id="G10-B10-OPERATIONS" data-thpt-help-ref="HELP-G10-CHIV-RIVER-TR01"></span>
 
-    #### Ứng dụng: Ca nô: vận tốc theo bờ và điều kiện không trôi
+    **Vận dụng 6 — tự thử:** Sông rộng \(60\,\mathrm m\), dòng chảy đều \(3\,\mathrm{m/s}\) về Đông. Ca nô chạy \(5\,\mathrm{m/s}\) so với nước, lái thẳng Bắc. Ca nô trôi bao nhiêu mét về Đông khi tới bờ bên kia? Đặt hai thành phần theo trục trước khi tính.
 
-    Mũi thuyền đang hướng Bắc nhưng dòng nước kéo sang Đông: **hướng mũi thuyền không trùng quỹ đạo theo bờ**. Muốn cập đúng điểm đối diện, phải chủ động hướng thuyền ngược dòng.
+    ??? question "Tự mở đối chiếu sau khi đã thử làm"
 
-    **Kiến thức tiền đề:** B08 cộng/trừ vectơ, B10 tọa độ `(x;y)` và độ dài vectơ; định nghĩa vận tốc là vectơ (m/s), phân biệt **vận tốc riêng so với nước** với **vận tốc theo bờ**.
+        **Kết quả:** Trôi \(36\,\mathrm m\) về Đông.
 
-    Nếu chọn Ox về Đông, Oy về Bắc: `v_bờ=v_thuyền/nước+v_dòng`. Thời gian qua sông bằng **bề rộng chia thành phần Bắc dương** của `v_bờ` (không tự động chia cho độ lớn tốc độ riêng). Dịch chuyển ngang bằng `v_bờ,x·t`.
+        **Vì sao:** vận tốc theo bờ \(\vec v_{\mathrm{bờ}}=(3;5)\,\mathrm{m/s}\). Thành phần hướng Bắc \(5\,\mathrm{m/s}\) quyết định thời gian \(t=60/5=12\,\mathrm s\); do đó độ trôi ngang \(3\cdot12=36\,\mathrm m\). Độ lớn vận tốc thực \(\sqrt{34}\,\mathrm{m/s}\) **không phải** thành phần qua sông; không lấy \(60/\sqrt{34}\).
 
-    **Hướng dẫn đọc hình:** Vẽ mũi tên dòng nước sang phải, mũi tên lái về phía bờ (có thể hơi chếch trái), và đường chéo vận tốc thực. Khoảng cách hai bờ đo dọc Oy; trôi dạt đo dọc Ox. Không coi đồ thị tốc độ–thời gian là sơ đồ hai bờ.
+    ### 1.3. Thuật ngữ, kiến thức và kỹ năng
 
-    Để **không trôi**, giải `v_thuyền/nước,x=−v_dòng,x` rồi chọn thành phần Bắc dương từ độ lớn đã cho. Điều kiện **`|v_dòng|<|v_thuyền/nước|`** cần thiết để vẫn có thành phần Bắc dương (dòng bằng tốc độ riêng thì không vượt qua bờ). Giả định dòng đều, vận tốc riêng có độ lớn không đổi, hai bờ thẳng song song.
+    **Từ khóa cần phân biệt:** tọa độ điểm là **vị trí**, tọa độ vectơ là **độ thay đổi có hướng**; vectơ đơn vị \(\vec i,\vec j\) xác định hai chiều trục; độ dài vectơ khác tổng quãng đường đi theo lưới; hai vectơ cùng phương cần một hệ số nhân **chung**.
 
-
-    **Em vận dụng.** Sông rộng 60 m, nước chảy **3 m/s về Đông**; ca nô chạy **5 m/s so với nước**, lái thẳng về Bắc. Ca nô sẽ trôi bao nhiêu mét về Đông khi tới bờ bên kia? Hãy thử trước khi mở.
-
-    ??? question "Tự mở đối chiếu kết quả"
-
-        `v_bờ=(3;5)` m/s; thành phần qua sông 5 m/s, nên `t=60/5=12 s` và độ trôi Đông `3·12=36 m`. Độ lớn vận tốc thực `√34` m/s, **không phải** tốc độ Bắc 5 m/s. Nếu dùng `60/√34`, xem `HELP-G10-CHIV-RIVER-TR01`.
-
-
-    #### Ví dụ có hướng dẫn — EX-G10-B10-RIVER-TR01
-
-    Sông rộng 96 m, dòng chảy đều 3 m/s về Đông; thuyền chạy 5 m/s so với nước. So sánh (i) giữ mũi thuyền thẳng Bắc và (ii) chọn hướng để cập đúng điểm đối diện.
-
-    1. **Lập hệ:** Ox về Đông, Oy về Bắc. Vận tốc dòng `(3;0)` m/s. 
-    2. **Trường hợp (i):** vận tốc riêng `(0;5)` m/s; theo bờ `(3;5)` m/s. Thời gian `96/5=19,2 s`; trôi Đông `3·19,2=57,6 m`.
-    3. **Trường hợp (ii):** yêu cầu vận tốc thực không có thành phần Đông, tức vận tốc riêng `(-3;v_y)`; vì độ lớn là 5, `(-3)²+v_y²=25` ⇒ lấy **`v_y=+4` m/s** để qua bờ. Vận tốc thực `(0;4)`; qua sông hết `96/4=24 s`, không trôi ngang.
-    4. **So sánh:** đi đúng điểm đối diện tốn **nhiều thời gian hơn** do một phần tốc độ riêng dùng để khử dòng. Không lấy nghiệm `v_y=-4` vì nó hướng **ra xa bờ đích**.
-
-    **Tại sao không dùng định lí Pitago làm toàn bộ bài?** Pitago giúp tìm độ lớn/thành phần, nhưng không thay bước thiết lập quan hệ **vectơ vận tốc tương đối** và điều kiện “đúng điểm đối diện”.
-
-    <span id="help-g10-chiv-river-tr01" data-thpt-help-id="HELP-G10-CHIV-RIVER-TR01"></span>
-
-    ??? tip "Tự khắc phục trong năm bước"
-
-        1. **Nhận diện:** em đang dùng tốc độ tổng thay cho thành phần qua sông, hay quên cộng vectơ dòng nước?
-
-        2. **Chẩn đoán:** vẽ 3 mũi tên từ cùng gốc; mũi tên nào chỉ đường đi thực khi đứng trên bờ?
-
-        3. **Lấp nền:** quay B08 cộng/trừ, B10 tọa độ và định lí độ dài vectơ, giải nghĩa hai hệ quy chiếu “nước” và “bờ”.
-
-        4. **Tự sửa:** viết `v_bờ,y>0`, áp `t=bề_rộng/v_bờ,y`, đặt `v_bờ,x=0` khi không trôi; kiểm điều kiện căn không âm và v_y dương.
-
-        5. **Luyện lại:** Ôn các câu về cộng vectơ và tọa độ trong phần Luyện tập, rồi tự giải một tình huống qua sông tương tự trước khi mở lời giải. Nếu đã xem đáp án, hãy đổi dữ kiện để tự thử lại.
-
-    ### Thuật ngữ, kiến thức và kỹ năng
-
-    **Thuật ngữ:** Vectơ tọa độ, vectơ đơn vị trên trục, điểm đầu/điểm cuối, độ dài, cùng phương, tọa độ trung điểm/trọng tâm.
-
-    **Sau bài học, em cần làm được:** Tính tọa độ vectơ đi từ A đến B bằng cách lấy tọa độ điểm cuối trừ tọa độ điểm đầu; cộng, trừ, nhân vectơ theo tọa độ; tính độ dài; kiểm cùng phương và tìm tọa độ trung điểm, trọng tâm.
+    **Sau bài này:** em biểu diễn được \(\vec u=x\vec i+y\vec j\); tính \(\overrightarrow{AB}\), phép toán, độ dài/khoảng cách, kiểm cùng phương (xét vectơ-không riêng), trung điểm/trọng tâm và dùng tọa độ để diễn giải chuyển động. Nếu nhầm dấu, chuyển sang tab **Lỗi thường gặp** để tự sửa.
 
 === "Kiến thức SGK"
 
     ### 2.1. Tọa độ của vectơ
 
-    **Cách đọc hình.** Đọc mũi tên từ điểm A đến B; lấy hoành độ và tung độ điểm cuối trừ điểm đầu, rồi đối chiếu chiều chuyển động trên trục.
+    Trong hệ trục vuông góc \(Oxy\), \(\vec i\) và \(\vec j\) là hai vectơ đơn vị theo chiều dương của hai trục. Phân tích \(\vec u\) theo hai vectơ không cùng phương ấy rồi lấy hai hệ số làm tọa độ của vectơ.
 
-    <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B10_COORDINATES_DIFFERENCE_D5_R01.svg" loading="lazy" alt="Tọa độ vectơ AB bằng tọa độ điểm cuối trừ điểm đầu"><figcaption>Tọa độ vectơ AB bằng tọa độ điểm cuối trừ điểm đầu.</figcaption></figure>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Tọa độ của vectơ:</strong> Với mỗi vectơ \(\vec u\), có duy nhất hai số thực \(x,y\) sao cho \(\vec u=x\vec i+y\vec j\). Cặp \((x;y)\) là <strong>tọa độ của vectơ</strong>, viết \(\vec u=(x;y)\). Khi đó \(\vec0=(0;0)\), \(\vec i=(1;0)\), \(\vec j=(0;1)\). Hai vectơ bằng nhau khi và chỉ khi các tọa độ tương ứng bằng nhau.</div>
 
-
-     Trong hệ tọa độ vuông góc $Oxy$ với hai vectơ đơn vị $\vec i=(1;0)$ và $\vec j=(0;1)$, vectơ $\vec u=(u_x;u_y)=u_x\vec i+u_y\vec j$. Nếu $A(x_A;y_A)$, $B(x_B;y_B)$, thì
-
-    \[
-    \overrightarrow{AB}=(x_B-x_A;\ y_B-y_A).
-    \]
-
-    **Lưu ý:** Tọa độ vectơ $\overrightarrow{AB}$ **không phải** tọa độ điểm $B$ trừ khi $A=O$.
+    **Cách đọc hình từ Bài 9:** vì \(\vec i,\vec j\) không cùng phương, cặp hệ số trên là **duy nhất**. Hai mũi tên đặt ở các vị trí khác nhau vẫn biểu diễn cùng một vectơ nếu có cùng hai độ thay đổi có dấu.
 
     ### 2.2. Biểu thức tọa độ của các phép toán vectơ
 
-    Với $\vec u=(a;b)$, $\vec v=(c;d)$, $t\in\mathbb R$:
+    Nếu \(\vec u=(a;b)\), \(\vec v=(c;d)\), \(t\in\mathbb R\), các phép toán thực hiện trên **hai thành phần tương ứng**, không cộng chéo hoành độ và tung độ.
 
-    \[
-    \vec u+\vec v=(a+c;b+d),\quad \vec u-\vec v=(a-c;b-d),\quad t\vec u=(ta;tb).
-    \]
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Phép toán tọa độ:</strong>
+    <div class="arithmatex">\(\displaystyle \vec u+\vec v=(a+c;b+d)\)</div>
+    <div class="arithmatex">\(\displaystyle \vec u-\vec v=(a-c;b-d)\)</div>
+    <div class="arithmatex">\(\displaystyle t\vec u=(ta;tb).\)</div>
+    Suy ra \(\overrightarrow{AB}=(x_B-x_A;y_B-y_A)\) với \(A(x_A;y_A)\), \(B(x_B;y_B)\). Khi đổi chiều, \(\overrightarrow{BA}=-\overrightarrow{AB}\).</div>
 
-    $|\vec u|=\sqrt{a^2+b^2}$, $AB=\sqrt{(x_B-x_A)^2+(y_B-y_A)^2}$.
+    **Tại sao lại “cuối trừ đầu”?** Theo Bài 8, \(\overrightarrow{AB}=\overrightarrow{OB}-\overrightarrow{OA}\). Hai vectơ chung gốc \(O\) có tọa độ lần lượt là tọa độ \(B\) và \(A\); vì vậy hiệu của chúng cho ra hai độ dời. Không lấy luôn tọa độ \(B\) nếu \(A\ne O\).
 
-    **Điều kiện cùng phương:** Hai vectơ **khác không** cùng phương khi $ad-bc=0$; với vectơ không cần nêu quy ước KNTT riêng.
+    <div class="thpt-r4-key-formula" role="note"><strong>Công thức cần sử dụng — Độ dài và khoảng cách:</strong> Từ định lí Pythagore, với \(\vec u=(a;b)\) và \(A(x_A;y_A),B(x_B;y_B)\):
+    <div class="arithmatex">\(\displaystyle |\vec u|=\sqrt{a^2+b^2}\)</div>
+    <div class="arithmatex">\(\displaystyle AB=\sqrt{(x_B-x_A)^2+(y_B-y_A)^2}.\)</div>
+    Độ dài luôn không âm; kết quả bằng \(0\) đúng khi vectơ là \(\vec0\) hoặc hai điểm trùng nhau.</div>
 
-    #### Hệ quả: tọa độ trung điểm và trọng tâm
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Nhận xét — Điều kiện cùng phương bằng tọa độ:</strong> Với \(\vec u=(a;b)\ne\vec0\), \(\vec v=(c;d)\) cùng phương với \(\vec u\) khi và chỉ khi có số thực \(t\) sao cho \((c;d)=(ta;tb)\). Tương đương \(ad-bc=0\). Nếu hai vectơ đều khác không thì \(t>0\) cho cùng hướng, \(t<0\) cho ngược hướng. Trường hợp vectơ-không phải xét theo quy ước SGK, không chia cho tọa độ bằng \(0\).</div>
 
-    $M$ là trung điểm $AB$ khi
+    **Vì sao điều kiện \(ad-bc=0\) có ích?** Khi một tọa độ bằng \(0\), lập tỉ số \(c/a\) hoặc \(d/b\) có thể vô nghĩa. Phép kiểm \(ad-bc\) chỉ dùng nhân và trừ, không có mẫu số bằng \(0\). Với \(\vec0\), việc nói “hướng mũi tên” cần tách khỏi quy ước cùng phương trong SGK.
 
-    \[
-    M\left(\frac{x_A+x_B}{2};\frac{y_A+y_B}{2}\right).
-    \]
+    <div class="thpt-r4-key-formula" role="note"><strong>Hệ quả hình học — Trung điểm và trọng tâm:</strong> Nếu \(M\) là trung điểm \(AB\), \(G\) là trọng tâm tam giác \(ABC\) (ba đỉnh không thẳng hàng), thì
+    <div class="arithmatex">\(\displaystyle M\left(\frac{x_A+x_B}{2};\frac{y_A+y_B}{2}\right)\)</div>
+    <div class="arithmatex">\(\displaystyle G\left(\frac{x_A+x_B+x_C}{3};\frac{y_A+y_B+y_C}{3}\right).\)</div>
+    Công thức là hệ quả của các đẳng thức vectơ trung điểm và \(\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0\), không phải hai mẹo ghi nhớ không liên quan.</div>
 
-    Trọng tâm tam giác $ABC$ là
-
-    \[
-    G\left(\frac{x_A+x_B+x_C}{3};\frac{y_A+y_B+y_C}{3}\right).
-    \]
-
-    **Điều kiện:** Chỉ dùng công thức trọng tâm khi $ABC$ là tam giác không suy biến. Kiểm tra lại bằng $\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0$.
-
-    #### Vận dụng
-
-    **Cách đọc hình.** Đọc vectơ vận tốc theo bờ như tổng hai chuyển động của ca nô và dòng nước. Phân biệt trục dọc bờ với trục qua sông; kiểm điều kiện không trôi bằng thành phần ngang.
-
-    <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_CHIV_RIVER_TRANSFER_D5_R01_CORRECTED.svg" alt="Hai trường hợp hướng mũi ca nô; lái Bắc thì trôi Đông, lái chếch Tây Bắc thì đi Bắc không trôi" loading="lazy"><figcaption>Hai bờ song song: thời gian phụ thuộc thành phần Bắc của vận tốc theo bờ.</figcaption></figure>
-
-
-     Định vị/chuyển động trong bản đồ Oxy phải xác định trục, đơn vị và phân biệt độ dài đường đi thực tế với khoảng cách thẳng giữa hai vị trí.
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ — Bài 10:</strong> Vectơ có tọa độ là hai hệ số duy nhất theo \(\vec i,\vec j\); lấy <strong>cuối trừ đầu</strong> để tìm \(\overrightarrow{AB}\); cộng/trừ/nhân số theo từng tọa độ; dùng Pythagore để tính độ dài; kiểm cùng phương với cùng một hệ số hoặc \(ad-bc=0\); chỉ dùng trung điểm/trọng tâm khi có đủ giả thiết. Trong ứng dụng chuyển động, luôn ghi rõ trục, đơn vị và loại vận tốc.</div>
 
 === "Ví dụ"
 
-    Trước khi xem lời giải, hãy xác định dữ kiện, điều phải tìm và lý do chọn cách giải. Sau đó kiểm tra lại điều kiện áp dụng và kết quả, thay vì chỉ nhìn phép tính cuối cùng.
+    Trước mỗi lời giải, tự chỉ ra **dữ kiện → cần tìm → chọn quy tắc nào và vì sao**. Sau đó soát điều kiện và chiều mũi tên; không lấy một lời giải đã xem làm chứng cứ tự kiểm tra độc lập.
 
-    ### Ví dụ 1. Tọa độ vectơ từ hai điểm
+    ### 3.1. Ví dụ 1 — Tọa độ vectơ và khoảng cách hai điểm
 
-    **Đề:** Cho $A(-1;2)$, $B(3;5)$. Tìm $\overrightarrow{AB}$ và $AB$.  
-    **Giải:** $\overrightarrow{AB}=(3-(-1);5-2)=(4;3)$, do đó $AB=\sqrt{4^2+3^2}=5$.  
-    **Tự kiểm:** $\overrightarrow{BA}=(-4;-3)$, không phải $(4;3)$.
+    **Đề:** Cho \(A(-1;2)\), \(B(3;5)\). Tìm \(\overrightarrow{AB}\), \(AB\).
 
-    ### Ví dụ 2. Tính tọa độ biểu thức vectơ
+    **Phân tích:** Có hai điểm đầu–cuối nên trước hết chọn quy tắc \(\overrightarrow{AB}=\overrightarrow{OB}-\overrightarrow{OA}\); sau khi có tọa độ vectơ mới dùng Pythagore để tìm khoảng cách thẳng, không cộng hai độ thay đổi.
 
-    **Đề:** Cho $\vec u=(2;-1)$, $\vec v=(-3;4)$. Tính $2\vec u-\vec v$.  
-    **Giải:** $2\vec u=(4;-2)$, vậy $2\vec u-\vec v=(4-(-3);-2-4)=(7;-6)$.  
-    **Tự kiểm:** Nhân hệ số lên cả hai thành phần.
+    **Giải:** \(\overrightarrow{AB}=(3-(-1);5-2)=(4;3)\). Do đó \(AB=\sqrt{4^2+3^2}=5\).
 
-    ### Ví dụ 3. Tọa độ trung điểm và trọng tâm
+    **Kiểm lại:** \(\overrightarrow{BA}=(-4;-3)\). Hai vectơ đối nhau nhưng có cùng độ dài \(5\). Công thức tọa độ điểm cuối trừ điểm đầu chỉ đổi thành tọa độ \(B\) khi \(A=O\).
 
-    **Đề:** Cho $A(1;3)$, $B(5;-1)$, $C(-2;4)$. Tìm trung điểm $M$ của $AB$ và trọng tâm $G$ của tam giác.  
-    **Giải:** $M=(3;1)$; $G=((1+5-2)/3;(3-1+4)/3)=(4/3;2)$.  
-    **Tự kiểm:** Trọng tâm chia cho 3, không phải 2.
+    ### 3.2. Ví dụ 2 — Phép toán vectơ và xét cùng phương
+
+    **Đề:** Cho \(\vec u=(2;-1)\), \(\vec v=(-3;4)\). Tính \(2\vec u-\vec v\). Vectơ kết quả có cùng phương với \(\vec u\) không?
+
+    **Phân tích:** Dùng phép toán theo từng tọa độ; khi xét cùng phương, kiểm hai thành phần có cùng một hệ số thay vì nhìn riêng một tọa độ.
+
+    **Giải:** \(2\vec u=(4;-2)\), nên \(2\vec u-\vec v=(4-(-3);-2-4)=(7;-6)\). Với \(\vec w=(7;-6)\), ta có \(2\cdot(-6)-(-1)\cdot7=-5\ne0\), do đó \(\vec w\) không cùng phương với \(\vec u\).
+
+    **Kiểm lại:** Nếu bỏ ngoặc khi trừ \(-3\), em dễ ra \((1;-6)\), sai ở hoành độ. Phép kiểm định thức tránh chia cho một thành phần có thể bằng \(0\).
+
+    ### 3.3. Ví dụ 3 — Trung điểm và trọng tâm có giả thiết
+
+    **Đề:** Cho tam giác \(A(1;3)\), \(B(5;-1)\), \(C(-2;4)\). Tìm trung điểm \(M\) của \(AB\) và trọng tâm \(G\) của tam giác.
+
+    **Phân tích:** Trung điểm lấy trung bình **hai** tọa độ theo từng trục; trọng tâm lấy trung bình **ba** tọa độ của ba đỉnh. Ba điểm không thẳng hàng nên có một tam giác và trọng tâm hình học xác định.
+
+    **Giải:** \(M=((1+5)/2;(3-1)/2)=(3;1)\). \(G=((1+5-2)/3;(3-1+4)/3)=(4/3;2)\).
+
+    **Kiểm lại:** \(M\) nằm giữa A, B; \(\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0\) theo từng tọa độ. Không dùng mẫu \(2\) cho trọng tâm.
+
+    ### 3.4. Ví dụ 4 — Qua sông: tổng vectơ vận tốc và điều kiện không trôi
+
+    **Đề:** Sông rộng \(96\,\mathrm m\), nước chảy đều \(3\,\mathrm{m/s}\) về Đông. Ca nô chạy với tốc độ riêng \(5\,\mathrm{m/s}\) so với nước. So sánh việc (a) lái thẳng Bắc và (b) lái chếch Tây Bắc để cập đúng điểm đối diện. Giả sử dòng chảy và tốc độ riêng không đổi, hai bờ song song.
+
+    **Phân tích:** Lấy \(Ox\) hướng Đông, \(Oy\) hướng Bắc. Vận tốc theo bờ là **tổng vectơ** \(\vec v_{\mathrm{bờ}}=\vec v_{\mathrm{riêng}}+\vec v_{\mathrm{dòng}}\). Thời gian vượt sông bằng \(96\) chia cho **thành phần Bắc dương** của vận tốc theo bờ. Không lấy \(96/|\vec v_{\mathrm{bờ}}|\) khi vận tốc có thành phần dọc bờ.
+
+    **Giải:** (a) \(\vec v_{\mathrm{riêng}}=(0;5)\), \(\vec v_{\mathrm{dòng}}=(3;0)\), nên \(\vec v_{\mathrm{bờ}}=(3;5)\,\mathrm{m/s}\). Thời gian qua sông \(t=96/5=19{,}2\,\mathrm s\); độ trôi Đông \(3\cdot19{,}2=57{,}6\,\mathrm m\).
+
+    (b) Muốn không trôi phải có \(\vec v_{\mathrm{bờ},x}=0\), tức thành phần vận tốc riêng hướng Tây bằng \(-3\). Vì tốc độ riêng bằng \(5\), thành phần Bắc cần dương:
+    <div class="arithmatex">\(\displaystyle v_{\mathrm{riêng},y}=\sqrt{5^2-3^2}=4\,\mathrm{m/s}.\)</div>
+    Do đó \(\vec v_{\mathrm{riêng}}=(-3;4)\), \(\vec v_{\mathrm{bờ}}=(0;4)\,\mathrm{m/s}\); thời gian qua sông \(96/4=24\,\mathrm s\), không trôi sang Đông.
+
+    **Kiểm lại và giới hạn:** \(3^2+4^2=5^2\) đúng tốc độ riêng; chọn \(-4\) làm thành phần Bắc sẽ đi xa bờ cần đến. Muốn vừa không trôi vừa đi tới bờ đích phải có tốc độ dòng **nhỏ hơn** tốc độ riêng. Không dùng định lí Pythagore để thay cho bước cộng vectơ vận tốc tương đối.
+
+    <figure class="thpt-r4-plot thpt-r4-probability-figure"><picture><source media="(max-width: 600px)" srcset="../../../../assets/images/thpt/THPT_G10_B10_RIVER_VELOCITY_MOBILE_D5_R01.svg"><img src="../../../../assets/images/thpt/THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg" alt="Sơ đồ hai hướng vận tốc ca nô và dòng nước; mũi thuyền lái Bắc có trôi, mũi lái chếch ngược dòng để không trôi" loading="lazy"></picture><figcaption><strong>Đọc hình theo đúng dữ kiện Ví dụ 4:</strong> Sông rộng \(96\,\mathrm m\), dòng Đông \(3\,\mathrm{m/s}\), tốc độ riêng \(5\,\mathrm{m/s}\). Mũi tên xanh cho vận tốc riêng, cam cho dòng, lục cho vận tốc theo bờ; tỉ lệ chiều dài vectơ giữ nhất quán giữa hai tình huống. Thời gian dùng <strong>thành phần Bắc</strong>, không dùng độ lớn của mũi tên chéo.</figcaption></figure>
 
 === "Lỗi thường gặp"
 
     <span data-thpt-help-id="HELP-G10-B10-01" hidden></span>
 
-    ??? tip "Lấy nhầm tọa độ B làm tọa độ AB"
+    ??? tip "4.1. Lấy nhầm tọa độ điểm cuối làm tọa độ vectơ"
 
-        <ul><li>Điểm nghẽn: Quên lấy tọa độ cuối trừ đầu.</li><li>Bản chất cần sửa: Tọa độ AB = B−A, không phải B.</li><li>Quy trình 5 bước: 1. Gạch điểm đầu A/cuối B. 2. Trừ hoành độ, tung độ. 3. Đảo chiều để tự kiểm BA=−AB. 4. Kiểm bằng độ dài. 5. Làm B10-P02.</li><li>Liên kết item có sẵn: B10-C01, B10-P02. Không clone câu hoặc giải vào HELP_ID.</li><li>Assessment safety: hỗ trợ chỉ tại Knowledge/Practice, không hiển thị trong phiên Tự kiểm tra trước Final Submit.</li></ul><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
+        <p><strong>Lỗi thường gặp:</strong> Với \(A(-2;3)\), \(B(4;1)\), một học sinh ghi \(\overrightarrow{AB}=(4;1)\) vì nhìn ngay tọa độ B. Kết quả sai: đó là tọa độ <strong>điểm B</strong>, không phải độ dời từ A đến B.</p>
+
+        <p><strong>Vì sao sai?</strong> Vectơ \(\overrightarrow{AB}=\overrightarrow{OB}-\overrightarrow{OA}\); khi A khác O, không thể bỏ đi thành phần xuất phát.</p>
+
+        <ol><li><strong>Đánh dấu:</strong> A là điểm đầu, B là điểm cuối.</li><li><strong>Sửa phép tính:</strong> \(\overrightarrow{AB}=(4-(-2);1-3)=(6;-2)\).</li><li><strong>Tự kiểm:</strong> \(\overrightarrow{BA}=(-6;2)\), là vectơ đối của \(\overrightarrow{AB}\).</li></ol>
+
+        <p><strong>Ôn và luyện lại:</strong> Mở lại hình tọa độ ở tab Khám phá, tự làm một câu tìm điểm cuối từ vectơ trong <a href="../luyen-tap/">Core và Luyện tập</a>. Đừng xem lời giải trước khi thử.</p>
 
     <span data-thpt-help-id="HELP-G10-B10-02" hidden></span>
 
-    ??? tip "Nhầm công thức trung điểm/trọng tâm và kiểm cùng phương"
+    ??? tip "4.2. Dùng nhầm mẫu số khi tìm trọng tâm hoặc kết luận cùng phương"
 
-        <ul><li>Điểm nghẽn: Chia 2 khi có ba đỉnh hoặc bỏ điều kiện vectơ khác không.</li><li>Bản chất cần sửa: Trung điểm lấy trung bình 2 điểm, trọng tâm 3 đỉnh.</li><li>Quy trình 5 bước: 1. Đếm số điểm. 2. Viết công thức hoành/tung. 3. Kiểm tổng GA+GB+GC. 4. Xét vectơ không riêng. 5. Luyện B10-P04/P05.</li><li>Liên kết item có sẵn: B10-P03, B10-P04, B10-P05. Không clone câu hoặc giải vào HELP_ID.</li><li>Assessment safety: hỗ trợ chỉ tại Knowledge/Practice, không hiển thị trong phiên Tự kiểm tra trước Final Submit.</li></ul><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
+        <p><strong>Lỗi thường gặp 1:</strong> Với \(A(0;0)\), \(B(6;0)\), \(C(0;3)\), học sinh ghi trọng tâm \(G(3;1{,}5)\), vì lấy trung bình tọa độ ba đỉnh nhưng <strong>chia cho 2</strong>. Đúng phải là \(G(2;1)\), do có <strong>ba đỉnh</strong>.</p>
 
+        <p><strong>Lỗi thường gặp 2:</strong> Học sinh nói hai vectơ \((2;0)\) và \((3;1)\) cùng phương vì “hoành độ đều dương”, trong khi \(2\cdot1-0\cdot3=2\ne0\). Dấu riêng một thành phần không đủ xác định cùng phương.</p>
+
+        <p><strong>Vì sao sai?</strong> Công thức trọng tâm khác trung điểm về số điểm lấy trung bình; còn cùng phương đòi hỏi <strong>một hệ số nhân chung</strong> cho cả hai thành phần. Khi gặp thành phần \(0\), không lập tỉ số có mẫu \(0\).</p>
+
+        <p><strong>Sửa và tự kiểm:</strong> Trọng tâm chia \(3\) cho cả hoành và tung; soát lại bằng \(\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0\). Với cùng phương, tính \(ad-bc\) hoặc kiểm trực tiếp \(\vec v=t\vec u\).</p>
+
+        <p><strong>Ôn và luyện lại:</strong> Tự thử một bài tìm trung điểm, một bài trọng tâm và một bài kiểm cùng phương trong <a href="../luyen-tap/">Luyện tập</a>, không dùng bài đã xem lời giải để tính là kiểm tra độc lập.</p>
+
+    <span id="help-g10-chiv-river-tr01" data-thpt-help-id="HELP-G10-CHIV-RIVER-TR01"></span>
+
+    ??? tip "4.3. Dùng độ lớn vận tốc thay thành phần qua sông"
+
+        <p><strong>Lỗi thường gặp:</strong> Sông rộng \(60\,\mathrm m\), ca nô lái thẳng Bắc \(5\,\mathrm{m/s}\) so với nước, dòng chảy Đông \(3\,\mathrm{m/s}\). Một lời giải tính \(t=60/\sqrt{5^2+3^2}\). <strong>Thời gian đó sai.</strong></p>
+
+        <p><strong>Vì sao sai?</strong> \(\sqrt{34}\,\mathrm{m/s}\) là <strong>độ lớn vận tốc theo bờ</strong>, nhưng bề rộng sông chỉ đo theo hướng Bắc. Thành phần hướng Bắc thực tế vẫn là \(5\,\mathrm{m/s}\).</p>
+
+        <ol><li><strong>Xác định trục và hệ quy chiếu:</strong> \(Ox\) Đông, \(Oy\) Bắc; \(\vec v_{\mathrm{bờ}}=\vec v_{\mathrm{riêng}}+\vec v_{\mathrm{dòng}}=(3;5)\,\mathrm{m/s}\).</li><li><strong>Sửa:</strong> \(t=60/5=12\,\mathrm s\), trôi Đông \(3\cdot12=36\,\mathrm m\).</li><li><strong>Thử kiểm:</strong> Nếu dòng nước tăng nhưng mũi thuyền vẫn hướng Bắc với cùng tốc độ riêng, thành phần Bắc không đổi nên thời gian qua sông không đổi (chỉ tăng độ trôi).</li></ol>
+
+        <p><strong>Ôn và luyện lại:</strong> Nhắc lại phép cộng vectơ ở Bài 8 và tọa độ theo trục ở Bài 10, rồi thử tự giải một bài ca nô với số liệu khác. Nếu muốn <strong>không trôi</strong>, phải có thành phần vận tốc theo bờ hướng Đông bằng \(0\) và thành phần Bắc <strong>dương</strong>; trường hợp tốc độ dòng không nhỏ hơn tốc độ riêng không thể vừa chống trôi vừa tới bờ đích trong mô hình này.</p>
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
-    <p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 10 Kết nối tri thức với cuộc sống và học liệu SLM hiện hành. Lời giảng được biên tập nhằm hỗ trợ tự học độc lập.</p>
-
+    <p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 10 Kết nối tri thức với cuộc sống, tập 1, Bài 10 (trang in 59–65); SBT dùng để tham khảo dạng bài, không thay thế SGK. Phần ví dụ và giải thích do SLM biên soạn phục vụ tự học.</p>
