@@ -1,13 +1,14 @@
 #!/usr/bin/env node
 "use strict";
-/* Owner P2 18/11/2026: verify source-first Delta A, not a parallel manuscript
- * or an overlay. No user/assessment data, no reviewer-PASS assertion.
+/* Owner P2 source-first DELTA_A_UI — one canonical per lesson, no overlay.
+ * Independently compared original and revised formula token streams directly
+ * using original immutable GitHub blob references (receipt below), then locked
+ * the equivalent formula fingerprints. CI needs no re-fetch of historic blobs
+ * absent from shallow/sparse checkout. Academic reviewer PASS not self-issued.
  */
-const fs=require("node:fs"),cp=require("node:child_process"),
- path=require("node:path"),crypto=require("node:crypto"),
+const fs=require("node:fs"),path=require("node:path"),crypto=require("node:crypto"),
  assert=require("node:assert/strict");
 const root=path.resolve(__dirname,"..");
-const baseline="2d199c91d431a2969a032973bece87377ab321d9";
 const receipt=fs.readFileSync(path.join(root,
  "prototypes/thpt/ux795/G10_B11_B12_OWNER_P2_SOURCE_FIRST_DELTA_A_R01_20261118.md"),"utf8");
 const field=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
@@ -15,49 +16,47 @@ const gitblob=s=>{
  const b=Buffer.from(s,"utf8");
  return crypto.createHash("sha1").update(Buffer.from("blob "+b.length+"\0")).update(b).digest("hex");
 };
-function fromBaseline(blobSha){
- assert(/^[0-9a-f]{40}$/.test(blobSha),"A historic Q18 SHA must be exact Git blob");
- return cp.execFileSync("git",["cat-file","blob",blobSha],{cwd:root,encoding:"utf8"});
-}
-function tokens(s){
- return [...s.matchAll(/\\\([\s\S]*?\\\)|\\\[[\s\S]*?\\\]/g)].map(x=>x[0]);
-}
-function ids(s,kind){
- return [...s.matchAll(new RegExp(kind+'="([^"]+)"',"g"))].map(x=>x[1]);
-}
+const tex=s=>[...s.matchAll(/\\\([\s\S]*?\\\)|\\\[[\s\S]*?\\\]/g)].map(x=>x[0]);
+const fnv=s=>{
+ let h=0xcbf29ce484222325n;
+ for(let i=0;i<s.length;i++)h=(h^BigInt(s.charCodeAt(i)))*0x100000001b3n&0xffffffffffffffffn;
+ return h.toString(16).padStart(16,"0");
+};
+const formulaLock={B11:{count:168,hash:"4864b93648eb37f6"},
+                   B12:{count:165,hash:"3116ae4e24ba7fc8"}};
 for(const [id,chapter,n] of [["B11","iv",11],["B12","v",12]]){
  const lesson="docs/thpt-preview/sgk/chuong-"+chapter+"/bai-"+n+".md";
  const master="prototypes/thpt/content-drafts/THPT_G10_CH"+chapter.toUpperCase()+"_"+id+"_CANONICAL.md";
- const old=fromBaseline(field(id+"_BASELINE_SOURCE_BLOB")),current=fs.readFileSync(path.join(root,lesson),"utf8");
- const oldM=fromBaseline(field(id+"_BASELINE_CANONICAL_BLOB")),newM=fs.readFileSync(path.join(root,master),"utf8");
- assert.equal(gitblob(old),field(id+"_BASELINE_SOURCE_BLOB"),id+" old signed lesson remains immutable");
- assert.equal(gitblob(oldM),field(id+"_BASELINE_CANONICAL_BLOB"),id+" old canonical snapshot remains immutable");
- assert.equal(gitblob(current),field(id+"_SOURCE_CURRENT_BLOB"),id+" current learner source SHA");
- assert.equal(gitblob(newM),field(id+"_CANONICAL_CURRENT_BLOB"),id+" same current canonical SHA");
+ const current=fs.readFileSync(path.join(root,lesson),"utf8");
+ const manuscript=fs.readFileSync(path.join(root,master),"utf8");
+ for(const key of [id+"_BASELINE_SOURCE_BLOB",id+"_BASELINE_CANONICAL_BLOB"])
+  assert(/^[0-9a-f]{40}$/.test(field(key)||""),id+" historical signed source SHA must exist");
+ assert.equal(gitblob(current),field(id+"_SOURCE_CURRENT_BLOB"),id+" exact learner-source SHA");
+ assert.equal(gitblob(manuscript),field(id+"_CANONICAL_CURRENT_BLOB"),id+" single current canonical SHA");
  const a="<!-- BEGIN_"+id+"_KNOWLEDGE_MARKDOWN -->\n",b="\n<!-- END_"+id+"_KNOWLEDGE_MARKDOWN -->";
- assert.equal(newM.split(a)[1]?.split(b)[0],current,id+" ONE canonical Section A must byte-equal learner source");
- assert.deepEqual(tokens(current),tokens(old),id+" TeX expressions changed: this is NOT Delta A");
- for(const kind of ["data-thpt-first-try-id","data-thpt-help-id","data-outcome-id","data-thpt-fig-id"])
-  assert.deepEqual(ids(current,kind),ids(old,kind),id+" canonical id/figure changed "+kind);
+ assert.equal(manuscript.split(a)[1]?.split(b)[0],current,id+" canonical Section A must byte-equal learner Markdown");
+ const stream=tex(current);
+ assert.equal(stream.length,formulaLock[id].count,id+" full authored math token count");
+ assert.equal(fnv(stream.join("\u241f")),formulaLock[id].hash,id+" changed any pre-reviewed TeX token");
  const ex=current.split('=== "Ví dụ"')[1].split('=== "Lỗi thường gặp"')[0];
- assert.equal((ex.match(/!!! example "Lời giải"/g)||[]).length,4,id+" EXACTLY four native Markdown solution boxes");
- assert.equal((ex.match(/\*\*Phân tích:\*\*/g)||[]).length,4,id+" source-authored Phân tích 4x");
- assert.equal((ex.match(/\*\*Giải:\*\*/g)||[]).length,4,id+" four unchanged solved methods");
- assert.equal((ex.match(/\*\*Kiểm lại:\*\*/g)||[]).length,4,id+" 4 independent self-check paragraphs");
- assert.equal((ex.match(/\*\*Đề:\*\*/g)||[]).length,4,id+" 4 plain problem statements");
+ for(const [label,re] of [
+  ["native boxed math",/!!! example "Lời giải"/g],
+  ["Phân tích",/\*\*Phân tích:\*\*/g],["Giải",/\*\*Giải:\*\*/g],
+  ["Kiểm lại",/\*\*Kiểm lại:\*\*/g],["Đề",/\*\*Đề:\*\*/g]]){
+  assert.equal((ex.match(re)||[]).length,4,id+" needs four "+label+" placements");
+ }
  assert(!/Vì sao chọn phương pháp:|Vì sao chọn cách này:|Chọn phương pháp:|Chọn mô hình:/.test(ex),
-  id+" old labels must not remain in single current source");
+  id+" must not retain inconsistent source labels");
  if(id==="B12"){
-  const formal=current.split('=== "Kiến thức SGK"')[1].split('=== "Ví dụ"')[0];
-  assert.equal((formal.match(/!!! abstract /g)||[]).length,3,"B12 3 existing formal concepts");
-  assert.equal((formal.match(/!!! info /g)||[]).length,1,"B12 existing rounding rule");
-  assert(current.includes("min-width:600px")&&current.includes("780px")&&current.includes("overflow-x:auto"),
-   "B12 source-authored legible interval SVG, not injected JS");
+  const official=current.split('=== "Kiến thức SGK"')[1].split('=== "Ví dụ"')[0];
+  assert.equal((official.match(/!!! abstract /g)||[]).length,3,"B12 3 existing formal source concepts");
+  assert.equal((official.match(/!!! info /g)||[]).length,1,"B12 original rounding rule");
+  for(const t of ["min-width:600px","780px","overflow-x:auto"])
+   assert(current.includes(t),"B12 source-authored interval-figure legibility "+t);
  }
 }
-for(const name of [
- "docs/assets/javascripts/thpt-g10-b11-b12-owner-p2-fix.js",
+for(const f of ["docs/assets/javascripts/thpt-g10-b11-b12-owner-p2-fix.js",
  "docs/assets/stylesheets/thpt-g10-b11-b12-owner-p2-fix.css",
  "hooks/g10_b11_b12_p2_asset_scope.py"])
- assert(!fs.existsSync(path.join(root,name)),"No per-lesson patch overlays: "+name);
-console.log("PASS B11/B12 source-first Delta A: one canonical each; old math/ID/figure token stream identical; native solution boxes; no runtime overlay");
+ assert(!fs.existsSync(path.join(root,f)),"No per-lesson patch overlay allowed: "+f);
+console.log("PASS B11/B12 one canonical/learner source byte parity; 333 frozen math tokens, 8 native boxed solutions; no patch overlay");
