@@ -32,6 +32,13 @@ OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
 PRIVATE_RD1_IMPORTED: 0
 RELEASE_AUTHORIZATION: NO
 AUTHOR_SIGNOFF: TOP10_R06_20261118_58f0570b5428bd154201bc012f3e598cb1b2825a
+AUTHOR_SELF_QA_RECEIPT: TOP10_R06_EQUIVALENT_20261118_SOURCE_LOCKED
+S1_RECEIPT: Toán 12 KNTT tập Một SGK ChI B01–B05 and SBT corresponding sections, owner-verified printed/PDF page pairing preserved in Topic A1 metadata; immutable G12 SGK source blob f0862dcdab21dec136e43969f45c42638e7c7574 and original independent SGK-only receipt 8fef1c7dbd9b404881ff40cec8147c9ae89ef473; no new PDF rescanning or independent Topic verdict.
+OUTCOME_AUDIT: TOP10-M01..M36 map one-to-one TOP10-O01..O36 in 6 numbered arcs; 36 full worked examples, 36 immediate First Try/voluntary Đối chiếu, 120 source-visible canonical Practice placements, 36 public replay-only selfchecks.
+MATH_VERIFICATION: Direct new-vs-old semantic verification of four formal callouts in O01/O08/O14/O15: original assumptions and conclusions unchanged; Weierstrass continuous finite closed interval, vertical one-sided infinity, oblique remainder limit, monotonic pairwise quantifier. Recomputed examples min4/max13 on [-3,2], 1/(x+3)^2 vertical x=-3, and (x²+3)/(x−2)=x+2+7/(x−2). Earlier 40/40 checks are historical, not newly rerun.
+PED_VERIFICATION: Source-read six coherent Knowledge sections, 36 worked examples, 36 First Try/D6 opt-in and student-facing solutions; four new formal boxes are reorganizations of the existing fully reasoned prose; one recap restates earlier taught outcomes. Fixed 12 Author-key and 2 Anchor learner leaks without math or assessment effects; #864/#882/#865 regressions cross-checked.
+CANONICAL_Q15: One canonical ID per question; 120/120 unique displayed Practice (78 original G12 SGK and 42 unchanged Topic NEW42 bank Git blob 5f6ab764df6541ada9b4d4475403d29984d8e7da), 18 unchanged Written rubric scoring, no duplicate canonical ID or altered key/stem.
+ASSESSMENT_Q16: 36/36 replay-only public question stems map to existing Practice IDs, no displayed solution/hint/rubric in Self Check, no private RD1 or official topic readiness, no premature Final Submit/mastery claims; CLIENT_SELF_CHECK_NO_MASTERY.
 
 ## SOURCE_RECEIPT / Q01–Q02 / SOURCE OWNER
 
