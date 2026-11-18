@@ -211,6 +211,12 @@ jobs:
           # signed R01→R02 UI receipt. Historical R01 stays unchanged.
           test -f prototypes/thpt/ux795/G10_CHIV_B10_P2_MATHJAX_DELTA_A_UI_R02_20261118.md
           cp prototypes/thpt/ux795/G10_CHIV_B10_P2_MATHJAX_DELTA_A_UI_R02_20261118.md integration-main/prototypes/thpt/ux795/
+          # B12 CALCULATOR candidate is a separate Delta C with its own exact
+          # academic/PED review HOLD and Q18 source identity. Overlay receipt only
+          # into isolated postmerge QA, never into public/production by this step.
+          if [[ -f prototypes/thpt/ux795/G10_CHV_B12_S1_PED_CALCULATOR_Q18_R01_20261118.md ]]; then
+            cp prototypes/thpt/ux795/G10_CHV_B12_S1_PED_CALCULATOR_Q18_R01_20261118.md integration-main/prototypes/thpt/ux795/
+          fi
           cp scripts/test-ux795-g10-postmerge-headings.cjs integration-main/scripts/
           (
             cd integration-main
