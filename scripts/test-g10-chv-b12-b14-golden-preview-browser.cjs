@@ -219,8 +219,16 @@ const blob=data=>{
      if(lesson===12){
       // Owner P2: check DOM role AND computed presentation; count-only Golden
       // tests previously missed an accidentally boxed Đề and tiny figure.
+      const p2Debug=await page.evaluate(()=>({
+       scripts:[...document.scripts].filter(x=>x.src.includes("owner-p2")).map(x=>x.src),
+       data:document.querySelector(".md-content__inner")?.dataset,
+       sgkH3:[...document.querySelectorAll(".tabbed-block")][1]?.querySelectorAll(":scope > h3").length,
+       sgkH4:[...document.querySelectorAll(".tabbed-block")][1]?.querySelectorAll(":scope > h4").length,
+       source:[...document.querySelectorAll(".tabbed-block")][2]?.querySelectorAll(":scope > h3").length,
+       firstNode:[...document.querySelectorAll(".tabbed-block")][2]?.querySelector(":scope > h3")?.nextElementSibling?.outerHTML?.slice(0,350)
+      }));
       assert.equal(await article.getAttribute("data-g10-owner-p2-examples"),"b12",
-       context+" P2 explicit B12 runtime must run");
+       context+" P2 explicit B12 runtime must run "+JSON.stringify(p2Debug));
       const solved=blocks.nth(2).locator(":scope > .thpt-g10-example-solution");
       assert.equal(await solved.count(),4,context+" 4 actual solution panels");
       for(let j=0;j<4;j++){
