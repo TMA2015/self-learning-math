@@ -8,10 +8,10 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 STATE: AUTHORING_R03_SELF_VERIFIED
 SCOPE_NOTES: PLAN22-17 Khoảng cách & Thể tích (G11 B26–B27 + CHVII-INTEGRATED) out of CĐ16, not silently retired/finished
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_PERPENDICULARITY_R03_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: ad3fdadb2b6a7150118c2534bf02cf9563f92e26
+ACADEMIC_SOURCE_BLOB: 363316efc7a338e4ec7d5629b182fce3de271356
 ORIGINAL_G11_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_THPT_TOPIC16_RAMP_ANGLE_R01_SCOPE_CORRECTED_20261113.html
-INTERACTIVE_MODEL_BLOB: e14ee4c6ec6c851f228352656b0cd8e2fc3a2a06
+INTERACTIVE_MODEL_BLOB: 931093557eb411b9f78286a92e6545dcbd59aa73
 MODEL_ID: SLM-TOP16-RAMP-ANGLE-R00
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
@@ -176,8 +176,16 @@ REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC16_R03_AUTHOR_SELF
 
 ## 18/11/2026 — current student recap, scoped Q18 provenance
 
-- Effective learner source `ad3fdadb2b6a7150118c2534bf02cf9563f92e26` derives from original signed R03 `0adf45aa8d776634d66f5c8e57b1c86ad77c8ed2` by adding exactly one four-point knowledge recall before Practice. No other source edits. Students can distinguish skew-line angle, line-plane perpendicular proof via two intersecting lines, orthogonal projection and actual solid height.
+- Immediately previous learner snapshot `ad3fdadb2b6a7150118c2534bf02cf9563f92e26` derives from original signed R03 `0adf45aa8d776634d66f5c8e57b1c86ad77c8ed2` by adding exactly one four-point knowledge recall before Practice. No other source edits. Students can distinguish skew-line angle, line-plane perpendicular proof via two intersecting lines, orthogonal projection and actual solid height.
 - All 21 original outcomes, 86 canonical IDs, full Practice 65 visible cards/solution/Written rubrics, 8 public question-only Selfchecks, 4 original SVG and disclosures byte-exact to signed original. No new teaching formula or Topic Core; recap reiterates existing precise definition and conditions in each worked section.
 - Targeted author mathematical checks: moving parallel directions to common point preserves line angle; a line perpendicular to two **intersecting** lines within plane is perpendicular to the whole plane; plane projection of a perpendicular line is a single point; dihedral angle by intersecting two perpendiculars to shared edge; actual block height perpendicular to base plane. No new independent NotebookLM or RELEASE verdict.
 
 ## S1_SOURCE_PROVENANCE_AND_SCOPE
+
+## CURRENT effective snapshot — O12 source-corrected author evidence (18/11/2026)
+
+- **One current learner** Git blob `363316efc7a338e4ec7d5629b182fce3de271356`, same existing student Markdown path, superseding **previous** R03-recap `ad3fdadb2b6a7150118c2534bf02cf9563f92e26` strictly for two example lines under `TOP16-O12` (B24, định lí ba đường vuông góc). Before correction the stem stated falsely “Trong mặt z=0, đặt A(0,0,2)”: `A\notin(P)` where `(P):z=0`. Now explicitly says **A outside (P)**, H(0,0,0) and B(3,0,0) inside. Correct proof: AH perpendicular plane, BH inside, c through H direction (0,1,0) lies in plane and perpendicular BH direction (1,0,0). Then `\\overrightarrow{AB}=(3,0,-2)` dot (0,1,0)=0. No question outcome, Practice stem/key/rubric, D6 route, public Self Check or SVG changed. `DELTA_C_ACADEMIC_MATERIAL` for mathematical false premise and explicit vector meaning, direct author math/PED recheck; no unnecessary independent NotebookLM review.
+- **HTML model source drift:** Actual standalone `Temp_THPT_TOPIC16_RAMP_ANGLE_R01_SCOPE_CORRECTED_20261113.html` Git blob `931093557eb411b9f78286a92e6545dcbd59aa73`, older signed `e14ee4c6ec6c851f228352656b0cd8e2fc3a2a06`. Direct Git line-diff: exactly 17 additional Golden UI CSS styling/token lines, **all previous HTML, JS, math/model logic byte-identical**, `DELTA_A_UI` only. R4 browser/AP and device rendering NOT certified by source QA.
+- **SOURCE S1:** Original G11 SGK ChVII B22–B27 canonical owner Git blob `afc8ec039213b87b4930f2d34d48c28d1fc6277f` exists on this Topic branch and is preserved verbatim; CĐ16 uses only B22–B25 (41 original IDs). Four original SVG blobs also verified. Historical R01 author signed source/review and old R03 evidence remain snapshot-scoped, not copied to this learner SHA.
+- **Q15/Q16:** 86 original canonical identities (41 original SGK +21 first tries +21 Topic Practice +3 Written), eight question-only Self Check replay IDs are placements only, no new item/official Topic Readiness/Mastery, no new private RD1. 21 outcome/explanations/examples/Vận dụng/D6, 65 Practice, four SVG and 86 balanced solution reveals from prior snapshot unaffected by the two-line fix.
+- **One-current-ready:** Historical R01 manifest Git blob `6de988fbe61f2e6bc5e58571e9cad68605cdd990` preserved **byte-identical** at `prototypes/thpt/release-queue/archive/THPT-TOPIC16-PERPENDICULAR-ANGLE-FULL-R01_HISTORICAL_SIGNED_20261118.md` and removed from current `ready/`. Only R03 effective on REGISTER; source-lock final Q18/V2/ready and CI after this source/metadata snapshot.
