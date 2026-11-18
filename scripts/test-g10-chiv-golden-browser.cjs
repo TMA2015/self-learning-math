@@ -96,8 +96,13 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
    "B11 P2 Tab4 reflow cannot modify accepted CSS");
   assert.equal(b11f("B10_P2_APPROVED_CSS_BLOB"),b10f("CSS_R01_SCOPED_B10_BLOB"),
    "B11 css source must descend from B10 owner P2");
-  assert.equal(blob(cssFile),b11f("CSS_B11_SCOPED_APPEND_BLOB"),
-   "B11 exact CSS source-lock mismatch");
+  const goldCss=fs.readFileSync(root+
+    "/prototypes/thpt/ux795/G10_B11_B12_OWNER_P2_GOLDEN_COMPONENT_PARITY_DELTA_A_R02_20261118.md","utf8");
+   const gCss=k=>goldCss.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(gCss("GOLDEN_CSS_PREVIOUS_BLOB"),b11f("CSS_B11_SCOPED_APPEND_BLOB"),
+    "B10/B11 owner-accepted CSS baseline still immutable");
+   assert.equal(blob(cssFile),gCss("GOLDEN_CSS_CURRENT_BLOB"),
+    "Exact current B10 parity CSS scoped only to B12");
   assert(cssWithB10.slice(cutB11).includes("THPT-G10-CHIV-TRY21")&&
    !cssWithB10.slice(cutB11).includes("THPT-G10-CHIV-TRY16"),
    "B11 styles cannot recolor B10");
