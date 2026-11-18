@@ -4,8 +4,8 @@ PACKET_ID: THPT-TOPIC06-TRIGONOMETRY-FULL-R06
 CONTENT_REVISION: R06
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_A1_A7_CURRENT_SOURCE_QA_20261118.md
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_A1_A7_CURRENT_SOURCE_QA_20261118.md
-AUTHOR_METADATA_BLOB: 2e9ffd902ced73dfc51683bfde6d94c4494212e3
-AUTHOR_A1_A7_BLOB: 2e9ffd902ced73dfc51683bfde6d94c4494212e3
+AUTHOR_METADATA_BLOB: b944861b3466a1596bce331ff444dde8e43048ef
+AUTHOR_A1_A7_BLOB: b944861b3466a1596bce331ff444dde8e43048ef
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
@@ -15,7 +15,7 @@ Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_NUMBERING_CONSISTENT_20261116.md
 ACADEMIC_SOURCE_BLOB: ab88d7ed3b52713e4a80779c22dc75a67c3cccb1
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC06_R06_COMPOSITE_Q18_AUTHOR_SELF_QA_20261118.md
-REVIEW_RECEIPT_BLOB: 22322daefe587a52314a59825c39e5f8f6af10ec
+REVIEW_RECEIPT_BLOB: 854766f7e4ddfdd8509c2fa1e2515d858fe7f9e1
 PUBLIC_ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHI_B01_B04_CONCEPT_FIRST_PED_R03_SOURCE_CANDIDATE_20261102.md
 PUBLIC_ORIGINAL_SGK_SOURCE_BLOB: 256ceb5edc5e02aec320e83e99c8e08e035654f3
 PUBLIC_ORIGINAL_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC06_TRIGONOMETRY_ORIGINAL46_CANONICAL_INDEX_R01_20261112.md
@@ -316,7 +316,7 @@ Q18 author proof is 16 outcomes, 66 original records string parity, and 54 direc
 - P1 website published and P2 real-device Safari unverified. Source handoff cannot claim those states.
 ## CURRENT R06 exact-source custody closure — 18/11/2026
 
-This appended current R06 section **supersedes historical R05/R06-numbering SHA descriptions in prior prose of this very file**; ONE V2 handoff is updated in-place. One effective learner `prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_NUMBERING_CONSISTENT_20261116.md` Git SHA `ab88d7ed3b52713e4a80779c22dc75a67c3cccb1`, composite Q18 AUTHOR_SELF_VERIFIED Git `22322daefe587a52314a59825c39e5f8f6af10ec`, A1–A7 SHA `2e9ffd902ced73dfc51683bfde6d94c4494212e3`, original G11 46 canonical bank `256ceb5edc5e02aec320e83e99c8e08e035654f3`, index `d8279df37c9dcd74a0b26f0da389baf7d53ecf64`, NEW20 source `f83b285ff0c8f4e45b724cf06248935e5d618b65`. All original bank, 3 SVGs, student Practice 66/66 and question-only Selfchecks 16/16 preserved in source; 15 corrected D6 routes and formal trig clarifications rechecked in current-source Q18. No independent new NotebookLM verdict claimed.
+This appended current R06 section **supersedes historical R05/R06-numbering SHA descriptions in prior prose of this very file**; ONE V2 handoff is updated in-place. One effective learner `prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_NUMBERING_CONSISTENT_20261116.md` Git SHA `ab88d7ed3b52713e4a80779c22dc75a67c3cccb1`, composite Q18 AUTHOR_SELF_VERIFIED Git `854766f7e4ddfdd8509c2fa1e2515d858fe7f9e1`, A1–A7 SHA `b944861b3466a1596bce331ff444dde8e43048ef`, original G11 46 canonical bank `256ceb5edc5e02aec320e83e99c8e08e035654f3`, index `d8279df37c9dcd74a0b26f0da389baf7d53ecf64`, NEW20 source `f83b285ff0c8f4e45b724cf06248935e5d618b65`. All original bank, 3 SVGs, student Practice 66/66 and question-only Selfchecks 16/16 preserved in source; 15 corrected D6 routes and formal trig clarifications rechecked in current-source Q18. No independent new NotebookLM verdict claimed.
 
 A former R05 ready manifest `THPT-TOPIC06-TRIGONOMETRY-FULL-R01.md` is to be archived as SUPERSEDED with preserved historical R05 source/blob evidence; a single new R06 ready + REGISTER points only to current R06. This is an AUTHORING-only `CONTENT_READY` source handoff under Q01–Q18 source self-QA; no protected RD1, no official Topic Readiness, Final Submit/Mastery score, website/Golden, production browser or release approval. RELEASE separately checks AP1–AP5/R1–R5/P1–P2 and requires explicit owner authorization. No merge/deploy.
 
