@@ -1,4 +1,4 @@
-# CĐ17 R02 — AUTHOR_SELF_QA_RECEIPT · 16/11/2026
+# CĐ17 — Q18 receipt hiệu lực R03, lưu lịch sử R02 · 17/11/2026
 
 **AUTHOR_SELF_QA_RECEIPT** theo một chuẩn `SLM-THPT-QUALITY-ONE v3.1.0` Q01–Q18. Đây là tự kiểm chứng học thuật/sư phạm từ bản nguồn học sinh R02 cụ thể, không phải kết quả phản biện NotebookLM độc lập, không cấp phép RELEASE/website.
 
@@ -9,20 +9,24 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 7cfc1c44d8f8aa722118d945900290fd560b621b
-SOURCE_BLOB: 7cfc1c44d8f8aa722118d945900290fd560b621b
+ACADEMIC_SOURCE_BLOB: 9c427674ea0263b8cf7e1e191f1f9a81c3261e91
+SOURCE_BLOB: 9c427674ea0263b8cf7e1e191f1f9a81c3261e91
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: 79f985ce73097c12562f3178d3e169da3f743e0e
+AUTHOR_METADATA_BLOB: 7d0f43a1ae6fb5ccce67baf3fda21ca4261f29d9
 ORIGINAL_R00_SOURCE_BLOB: baa6c6c575a4cf79187b2aebd2047b1cf872b983
 ORIGINAL_R01_EDITORIAL_CANDIDATE_BLOB: af08791b4d7104679a3ea3481068266a07c72dce
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
-INTERACTIVE_MODEL_BLOB: 727c05896a9d9bf95385b54559faa22917f1510e
+INTERACTIVE_MODEL_BLOB: cfb2bd522531167003eeae8e7342c6d1349ca425
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
 P2: 0
-AUTHOR_SIGNOFF: TOP17_R02_12OUTCOMES_49_CANONICAL_112_DIRECT_SOURCE_AND_MATH_TESTS_20261116
+AUTHOR_SIGNOFF: TOP17_R03_20261118_FINAL_AFFECTED_Q18_9c427674ea0263b8cf7e1e191f1f9a81c3261e91
+CONTENT_REVISION: R03
+BASELINE_R02_SIGNED_SOURCE_BLOB: 7cfc1c44d8f8aa722118d945900290fd560b621b
+BASELINE_R02_RECEIPT_GIT_BLOB: 5d55b6a38bf5bb4e81d099e05635001876c2a90a
+GLOBAL_V2_READY_REGISTER_SYNC: PENDING_EXACT_HEAD_CI
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
@@ -31,7 +35,7 @@ RELEASE_AUTHORIZATION: NO
 
 S1_RECEIPT: SGK Toán 11 KNTT Tập Hai, ChVII B26 trang in 54–60/SBT 35–37, B27 SGK 61–63/SBT 38–40, cuối chương SGK 64–65/SBT 41–43. Các mốc này kế thừa chứng cứ sách từ SGK original frozen PR #710 và Git blob afc8ec039213b87b4930f2d34d48c28d1fc6277f; không tự khẳng định đã mở lại PDF SGK/SBT hoặc đối chiếu trang in/số trang PDF ở R02. Học liệu SGK PASS trước không tự chuyển thành Topic PASS; CĐ16 B22–B25 tách biệt.
 OUTCOME_AUDIT: 12/12 TOP17-O01…O12, tương ứng B26(6)+B27(5)+ChVII-integrated(1). Mỗi outcome có tình huống hiểu bản chất trước công thức/định nghĩa, 1 Ví dụ độc lập Đề bài–Lời giải có suy luận, 1 Vận dụng trước khi mở Đối chiếu và D6; 12 Topic Practice và 3 Topic Written /4 chấm tự đối chiếu. 2 mạch kiến thức 1.1…2.6; đủ ba trang học liệu độc lập.
-MATH_VERIFICATION: 69/69 phép kiểm toán học, số học, vectơ vuông góc, chân chiếu, khoảng cách ngắn nhất, hai đường chéo nhau, chiều cao, thể tích, frustum limits k=0/k=1, đơn vị và bài Written đã thực thi; 43/43 kiểm tra cấu trúc và source-parity. 22/22 stems/keys/solutions/rubrics SGK hiển thị source-exact, 15/15 Topic Practice/Written answer/rubric nguyên so với R01, 2 SVG git blob SHA nguyên; không tuyên bố đây là chứng minh tổng quát cho tất cả hình.
+MATH_VERIFICATION: Current source direct author recheck is affected-scope: O10 square-frustum V=48(1+k+k²) cm³ for 0≤k≤1, results k=0:48, k=1/2:84, k=1:144; O11 base right triangle 6x8/2=24 cm², 24x7=168 cm³=0.168 L; no changed original canonical item answer/rubric. Prior R02 signed 69/69 math/edge and 43/43 structure/parity checks belong to that historical source Git snapshot, NOT claimed newly run in full on current R03. Current 22 SGK+15 Topic Practice/Written item bodies preserved; 2 actual learner SVG. Selfcheck/assessment remains unaffected, no generalized theorem proof for unseen cases.
 PED_VERIFICATION: 12/12 lời giảng có bản chất/điều kiện trước formal, Ví dụ độc lập nhiều bước, Vận dụng có câu thật và tự mở Đối chiếu/D6 đúng lỗi; hai hình minh hoạ B26/B27 có mô tả đọc hình (B26 KHÔNG bị nhận nhầm là hình dựng hai đường chéo nhau). 37 đề Luyện tập hiển thị đủ; tự kiểm tra tám đề thật chỉ câu hỏi. Lấy nhịp giải thích tốt của R01, tham khảo NotebookLM author draft cũ với ChVIII sai đã loại; không nhận reviewer PASS.
 CANONICAL_Q15: 49 unique PUBLIC item_ids =22 original SGK (18 formative+4 Written/Anchor), 12 Topic First Try T01–T12, 12 Topic Practice P01–P12, 3 Topic Written W01–W03. Original SGK item canonical không bị clone; 22 source-exact display projections; 15 Topic P/W đáp án/rubric gốc không đổi. Tám public replay placements dùng các P01/P02/P04/P05/P06/P08/P10/P12; không nhân item_id. Five Topic-only SGK mapping fixes preserved from historical locked matrix.
 ASSESSMENT_Q16: Tám câu Tự kiểm tra công khai hiển thị phần hỏi, không nhúng key/rubric/hint/feedback/AI trước Final Submit; nguồn static không chứng minh website có Final Submit. `CLIENT_SELF_CHECK_NO_MASTERY` không tạo Topic Readiness độc lập, không ghi Skill Mastery/Firebase từ Practice, tự luận hoặc tự so đáp án; không đưa RD1 kín lên GitHub.
@@ -94,3 +98,37 @@ ASSESSMENT_Q16: Tám câu Tự kiểm tra công khai hiển thị phần hỏi, 
 
 - `DELTA_C_ACADEMIC_MATERIAL`: 12 Ví dụ mới độc lập, ghép hiển thị Practice/SelfCheck, sửa trình bày/dẫn giải một số đoạn; Q18 selfQA chỉ cho phần chịu ảnh hưởng. `DELTA_B_SOURCE_EQUIVALENT`: 22 SGK stem/key/rubric nguyên Git original và 15 Topic P/W key/rubric nguyên R01, checked exact strings. Historical R00 receipts remain unchanged.
 - **AUTHOR_SELF_VERIFIED_PASS** R02 exact source `7cfc1c44d8f8aa722118d945900290fd560b621b`, P0=P1=0 trong phạm vi AUTHORING. No independent NotebookLM reviewer Topic PASS, no website Final Submit/browser/Golden/AP1–AP5/R1–R5/real Safari UAT, no owner approval to merge/deploy.
+
+
+## R03 bổ sung — lỗi kỹ thuật lộ vào lời học sinh đã sửa trực tiếp trên bản thảo chính
+
+Một đoạn hướng dẫn ở phần **Tự kiểm tra** trước đây nói đến “không ghi Mastery” thay vì chỉ cho học sinh làm gì. Trên tệp học liệu chính giữ nguyên đường dẫn R02, đã sửa thành: “Hãy tự giải tám câu dưới đây vào vở mà chưa xem lại lời giải đã học. Khi làm xong, trở về phần **Luyện tập**, mở lời giải từng câu để đối chiếu, tìm chỗ sai và chọn nội dung cần ôn thêm. Đây là phần tự ôn, không phải bài kiểm tra có chấm điểm chính thức.”
+
+**Tự kiểm Q03/Q10/Q14/Q15/Q16/Q18:** so sánh toàn văn với nguồn R02 ban đầu cho thấy duy nhất đoạn hướng dẫn này đổi; **57/57 placement IDs, 49/49 disclosures, 8/8 question-only selfcheck** nguyên trạng; không đổi bất cứ ví dụ, điều kiện toán, đề, đáp án, lời giải/rubric, mức điểm, SGK/SBT, SVG, mô hình, chế độ bảo vệ RD1, Final Submit hoặc Mastery. Độ sâu mỗi outcome không bị rút bớt. `DELTA_B_SOURCE_EQUIVALENT`; `AFFECTED_SCOPE_AUTHOR_SELF_QA_PASS`; đây không phải NotebookLM độc lập hoặc UAT giao diện.
+
+**Trạng thái kỹ thuật bàn giao:** tệp học liệu hiệu lực duy nhất nằm ở `ACADEMIC_SOURCE_PATH`; receipt này thay cho việc tạo file receipt R03 mới; bản R02 nguồn/receipt cũ lưu trong lịch sử Git. Chỉ chuyển `CONTENT_READY` cho bản R03 sau khi metadata, V2, ready, REGISTER và QA HEAD đồng bộ, không mặc nhiên kế thừa trạng thái R02. `NO_MERGE_NO_DEPLOY`.
+
+
+## Follow-up source typography — same learner file (17/11/2026)
+
+Read the source after the R03 learner-prelude correction. The only further learner edit is **Knowledge 3D frustum exploration line 326**: two escaped Markdown backtick substrings `\\`a=6\\``, `\\`h=4\\`` were visibly malformed. Corrected both to mathematical `\\(a=6\\)`, `\\(h=4\\)`; the numerical meanings, explanation and volume V=84 cm³ are identical. Exact source review: **57/57** canonical/public markers, **49/49** voluntary answer disclosures, **8/8** question-only selfcheck stems and entire Selfcheck section byte-identical; original SVG/geometry/answer/rubrics untouched. `DELTA_B_SOURCE_EQUIVALENT`, affected-scope `AUTHOR_SELF_VERIFIED` source QA PASS; not a new independent review and not actual browser AP2 PASS. New learner source `ae8bffe04a7c52e062c933739bafceb5412a8270`, historic R03 source remains in Git history. No parallel learner file. Corrected same existing receipt/handoff/ready/REGISTER at new SHA; no website/release change.
+
+
+## Follow-up R04 — Q09/Q13/Q14: standalone chóp cụt self-discovery (17/11/2026)
+
+A real learner dependency was found: Knowledge TOP17-O10 asked the student to “thay thanh trượt” to understand frustum volume while the linked model existed only as an **AUTHOR_ONLY_MODEL_REFERENCE**, not an embedded guaranteed learner interaction. The source is now **self-contained without model availability**: for 0≤k≤1, big square a=6, small side 6k, height 4, derive S=36, S′=36k², √(SS′)=36k, V=(4/3)(36+36k+36k²)=48(1+k+k²) cm³. Verify k=0 ⇒ 48 (pyramid), k=1/2 ⇒ 84 (frustum), k=1 ⇒ 144 (prism). Values, conditions, limits and units checked independently; the square root simplifies to 36k **only because k≥0**. This replacement is **DELTA_C_PED_ACADEMIC_MATERIAL** on one Knowledge learner line (L326). It does not create an additional canonical question or reveal key before the corresponding voluntary First Try. Previous worked Example V=84 remains mathematically consistent. Source exact QA: all 49 answer disclosures, public selfcheck 8 question-only replays, original Knowledge/Practice item markers and SVG references unchanged; entire Practice and Selfcheck byte-identical. **No new learner file**; existing Q18 receipt updated. `AUTHOR_SELF_VERIFIED` affected Q04/Q09/Q13/Q14 PASS; browser UI and independent all-topic NotebookLM verdict NOT claimed. Original signed R02 receipt remains historical in Git, not new active teacher-source. Current SOURCE_BLOB: 7ee09cea9c33e2ae520a1a40df694ab7118adb42.
+
+## 18/11/2026 — Q18 DELTA_A formatting, orphan D5 repair
+
+- Effective current learner SHA `e065ded2448f800bf649d0e30239591d57233fbe`, immediate previous `7ee09cea9c33e2ae520a1a40df694ab7118adb42`; exactly one technical **unrendered heading** in the B27 SGK Written answer disclosure was replaced with a non-rendered `AUTHORING_D5` metadata comment. D5 visual custody remains in A1, not student heading hierarchy.
+- Correct structure verified: Practice H2 groups **1,2,3 only**, technical D5 H2 removed; the original last Written `<details>` properly closes, then NEW Topic Practice appears outside the SGK answer. All open/close `<details>` counts, student question text, answer/key/solution/rubric, 49 canonical IDs, 8 selfcheck question-only placements and 6 SVG paths unchanged.
+- Scoped `DELTA_A_UI` source-equivalence author verification. Previous Q18 counts/status are snapshot-scoped; not new independent NotebookLM Academic/PED PASS, official grading, RELEASE/CI/browser acceptance, Mastery or owner merge/deploy permission. Preserve original A1 STATE `BLOCKED_BY_AUTHORING` until gating.
+
+## FINAL CURRENT R03 AUTHOR_SELF_VERIFIED on one R02 Markdown path — 18/11/2026
+
+- **Effective learner source** `9c427674ea0263b8cf7e1e191f1f9a81c3261e91`, same file path, previous R03 `e065ded2448f800bf649d0e30239591d57233fbe` and originally signed R02 `7cfc1c44d8f8aa722118d945900290fd560b621b` are historical only. Current A1–A7 Git blob `7d0f43a1ae6fb5ccce67baf3fda21ca4261f29d9` was checked directly before this receipt. One accepted Topic R03 author source under original packet ID ending R02, **not a second R03 learner file**.
+- **Actual math/PED changes:** O10 learner self-explanation now derives volume of a square-pyramid frustum independent of an author-only optional model: major square side 6, minor square side 6k with `0≤k≤1`, h=4 => `S=36`, `S'=36k²`, `√(SS')=36k`, `V=(4/3)(36+36k+36k²)=48(1+k+k²)` cm³. Directly checked boundary k=0 =>48 (pyramid), k=1/2=>84 (frustum), k=1=>144 (prism), with correct square-root sign since k≥0; standalone outcome no slider prerequisite, `DELTA_C_ACADEMIC_MATERIAL` (PED Q09–Q14). O11 original example question stem was ambiguous “lăng trụ tam giác đứng đáy vuông”; now plainly says **lăng trụ đứng có đáy là tam giác vuông** with legs 6cm,8cm, height7cm. Formula S=24 cm², V=168cm³=0.168L unchanged, `DELTA_B_SOURCE_EQUIVALENT` within academic/PED clarification. Original 12 worked solutions and 37 Practice mathematical data/results remain; no new key/rubric or official grading. No independent NotebookLM review required for these directly checked elementary arithmetic/method conditions; no independent Topic PASS claimed.
+- **Student-only editorial fixes inherited from source-known #900:** Selfcheck opener gives executable pen-and-paper + post-study Practice comparison instead of internal “Mastery”; technical D5 heading inside one B27 Written answer `<details>` changed to hidden author-comment, no orphan H2. This is `DELTA_A_UI` only; source comments are not displayed to students. Practice H2 only 1/2/3. Source text otherwise same as PR #900 except one O11 clarity stem.
+- **Q15/Q16 current direct structure check:** exactly 49 public canonical unique IDs =22 original G11 SGK +12 Topic FirstTry+12 Topic Practice+3 Topic Written, 57 total item placements because eight replay P IDs are reuse not new questions. 12/12 full standalone outcomes, 12 examples, 12 Vận dụng/Đối chiếu, **37 complete Practice**, 49 open+49 close optional disclosures, eight question-only public Self Check stems, one final S1 line. Zero public official Final Submit/Mastery or imported RD1; controlled platform remains RELEASE responsibility.
+- **Visual/model source drift:** B26/B27 **two** actual learner SVG placements on Git file SHA `26fb51f3af65ba7d86a2907f0eaff808d2d87532`/`a7bec7a20295d09ca6f32aae0e8910cef7bed9dc`. Current optional interactive HTML Git `cfb2bd522531167003eeae8e7342c6d1349ca425` vs historical signed `727c05896a9d9bf95385b54559faa22917f1510e`: direct blob diff contains **one nonfunctional MODEL_ID HTML comment** and **17 inserted CSS lines**; all original HTML/JS/formula/geometry bytes unchanged. `DELTA_A_UI` only, no CLAIM of integrated browser AP1–AP5 UAT. Original G11 SGK wrapper `afc8ec039213b87b4930f2d34d48c28d1fc6277f` on same branch; 22 referenced original IDs verified against wrapper separately.
+- **R00 prior READY Git** `359ff8026b193c37a6f9a98ea2344ecd1ff6c0c2` preserved byte-for-byte under `prototypes/thpt/release-queue/archive/THPT-TOPIC17-DISTANCE-VOLUME-FULL-R00_HISTORICAL_SIGNED_20261118.md`, old active ready removed. After this Q18/A1 one V2/current ready/REGISTER and exact HEAD Topic V2 CI shall be checked; no website RELEASE/merge/deploy authority from author QA.
