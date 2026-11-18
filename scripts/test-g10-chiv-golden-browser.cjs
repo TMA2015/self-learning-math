@@ -586,6 +586,69 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
        assert(!(await last.evaluate(e=>e.open)),where+" B10 4.3 re-closes");
        await labels.nth(0).click();
       }
+      if(lesson===11){
+       // B11 CHIV-11-A/B: all math must be real MathJax, distinct datasets visible,
+       // genuine wrong step in Tab4, and 3+1 roles with no B01–B10 style mutation.
+       await labels.nth(0).click();
+       assert.equal(await blocks.nth(0).locator("code").count(),0,
+        where+" B11 Knowledge does not expose raw backtick math or internal IDs");
+       assert.equal(await blocks.nth(0).locator("details.question").count(),5,
+        where+" B11 all four original + force transfer First Tries must be in Discovery");
+       const obtuse=blocks.nth(0).locator('img[src*="THPT_G10_B11_DOT_PRODUCT_OBTUSE_D5_R01.svg"]');
+       assert.equal(await obtuse.count(),1,where+" S1 obtuse figure remains adjacent to first concept");
+       await labels.nth(1).click();
+       const defs=blocks.nth(1).locator(".thpt-r4-concept-card"),
+             rules=blocks.nth(1).locator(".thpt-r4-rule-card"),
+             recap=blocks.nth(1).locator(".thpt-r4-knowledge-conclusion:not(.thpt-r4-concept-card):not(.thpt-r4-rule-card)"),
+             formula=blocks.nth(1).locator(".thpt-r4-key-formula");
+       assert.deepEqual([await defs.count(),await rules.count(),await recap.count(),await formula.count()],
+        [2,3,1,1],where+" B11 3+1 roles follow meaning, not arbitrary quotas");
+       await formula.locator("div.arithmatex mjx-container").first()
+        .waitFor({state:"attached",timeout:15000});
+       assert.equal(await blocks.nth(1).locator('div.arithmatex mjx-container').count(),5,
+        where+" B11 all five formal TeX expressions must typeset, no raw brackets");
+       for(const scheme of ["default","slate"]){
+        await page.evaluate(v=>document.body.setAttribute("data-md-color-scheme",v),scheme);
+        const colors=await Promise.all([defs.first(),rules.first(),recap.first(),formula.first()]
+         .map(z=>z.evaluate(el=>getComputedStyle(el).backgroundColor)));
+        assert.deepEqual(colors,scheme==="slate"?
+         ["rgb(25, 61, 54)","rgb(32, 53, 81)","rgb(74, 58, 37)","rgba(0, 0, 0, 0)"]:
+         ["rgb(232, 247, 242)","rgb(234, 241, 252)","rgb(255, 243, 213)","rgba(0, 0, 0, 0)"],
+         where+" B11 semantic palette and slate contrast "+scheme);
+       }
+       await page.evaluate(()=>document.body.removeAttribute("data-md-color-scheme"));
+       await labels.nth(2).click();
+       assert.equal(await blocks.nth(2).locator("code").count(),0,
+        where+" B11 worked maths must be MathJax, not literal code");
+       await blocks.nth(2).locator('div.arithmatex mjx-container').first()
+        .waitFor({state:"attached",timeout:15000});
+       assert.equal(await blocks.nth(2).locator('div.arithmatex mjx-container').count(),1,
+        where+" B11 force worked R-square is typeset in correct Example tab");
+       const force=blocks.nth(2).locator('img[src*="THPT_G10_CHIV_FORCE_TRANSFER_D5_R01_CORRECTED.svg"]');
+       assert.equal(await force.count(),1,where+" B11 force diagram now belongs to corresponding worked Example 4");
+       await force.scrollIntoViewIfNeeded();await force.evaluate(async img=>{if(img.decode)await img.decode();});
+       assert(await force.evaluate(img=>img.complete&&img.naturalWidth>0),
+        where+" B11 original force SVG must decode");
+       const exText=await blocks.nth(2).innerText();
+       assert(exText.includes("8 N/15 N/120°")&&exText.includes("6 N/6 N/120°")&&
+        exText.includes("Ví dụ 4 — Hợp lực"),
+        where+" B11 force figure 8/15 must distinguish worked 6/6 dataset in student text");
+       await labels.nth(3).click();
+       assert.equal(await blocks.nth(3).locator("[data-thpt-first-try-id]").count(),0,
+        where+" B11 no First Try allowed in error tab");
+       const tips=blocks.nth(3).locator("details.tip");
+       assert.equal(await tips.count(),3,where+" B11 three canonical HELP plus genuinely wrong steps");
+       const ts=await tips.evaluateAll(nodes=>nodes.map(el=>({
+        open:el.open,text:el.textContent||""
+       })));
+       assert(ts.every(x=>!x.open&&["Cách làm sai:","Vì sao sai:","Tự sửa:","Luyện lại:"].every(t=>x.text.includes(t))),
+        where+" B11 errors must give wrong action, cause, correction and retry");
+       assert(ts.every(x=>!/Assessment safety|HELP_ID|EX-G10-|B11-[CP][0-9]{2}/.test(x.text)),
+        where+" B11 visible help cannot leak internal assessment metadata");
+       assert.equal(await blocks.nth(3).locator(":scope > h3").count(),3,
+        where+" B11 errors are numbered 4.1/4.2/4.3");
+       await labels.nth(0).click();
+      }
       // Right TOC cross-tab link: tab 3 -> hidden Knowledge tab 2.
      const tocId=await blocks.nth(1).locator("h3[id]").first().getAttribute("id");
      await labels.nth(2).click();
