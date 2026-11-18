@@ -105,7 +105,7 @@
 
         **Kết quả:** Có, vì \(\vec u\cdot\vec v=2\cdot3+3\cdot(-2)=0\), và cả hai khác \(\vec0\).
 
-        **Vì sao:** Nếu một vectơ bằng \(\vec0\) thì tích vẫn bằng \(0\), nhưng không có góc duy nhất từ cách dựng hai vectơ khác không. SGK vẫn **quy ước** vectơ-không vuông góc với mọi vectơ.
+        **Vì sao:** Nếu một vectơ bằng 0 thì tích vẫn bằng 0 nhưng góc giữa hai vectơ không xác định theo định nghĩa dùng ở đây.
 
 
     <span id="thpt-g10-chiv-try24" data-thpt-first-try-id="THPT-G10-CHIV-TRY24" data-outcome-id="G10-B11-APPLICATION" data-thpt-help-ref="HELP-G10-B11-02"></span>
