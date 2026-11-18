@@ -264,10 +264,47 @@ for(const [tag,rec]of Object.entries(transfer)){
      modelB.includes('data-thpt-help-ref="'+rec.help+'"')&&
      modelB.includes('data-thpt-help-id="'+rec.help+'"'),
      "Transfer source canonical Q15/outcome/D6 "+tag);
-   assert(modelB.includes("#### Ví dụ có hướng dẫn — "+rec.ex),
-     "Transfer worked method D2 "+tag);
-   assert(modelB.includes("THPT_G10_CHIV_"+tag+"_TRANSFER_D5_R01_CORRECTED.svg"),
-     "Transfer reviewed vector geometry D5 "+tag);
+   if(tag==="RIVER"){
+    // B10 has owner-authorized Q18 Delta C: full river worked solution moved
+    // from Discovery to Golden Tab3, not removed or duplicated. Exact source SHA.
+    const r=read("prototypes/thpt/ux795/G10_CHIV_B10_S1_PED_SINGLE_CANONICAL_Q18_R01_20261118.md");
+    const field=k=>r.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    const r02=read("prototypes/thpt/ux795/G10_CHIV_B10_P2_MATHJAX_DELTA_A_UI_R02_20261118.md");
+    const f02=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    assert.equal(f02("BASELINE_R01_SOURCE_BLOB"),field("R01_SOURCE_BLOB"),
+     "River D2 must preserve immutable R01 B10 source prior to UI correction");
+    assert.equal(sha(modelB),f02("R02_SOURCE_BLOB"),
+     "River D2 remains signed in the single current B10 P2 MathJax source");
+    const example=modelB.split('=== "Ví dụ"')[1]?.split('=== "Lỗi thường gặp"')[0]||"";
+    assert(example.includes("### 3.4. Ví dụ 4 — Qua sông")&&
+     example.includes("96")&&example.includes("THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg")&&
+     example.includes("THPT_G10_B10_RIVER_VELOCITY_MOBILE_D5_R01.svg")&&
+     example.includes("**Giải:**"),"B10 river worked D2 must use exact-data desktop/mobile image and Golden solution renderer key");
+   }else{
+    const b11=read("prototypes/thpt/ux795/G10_CHIV_B11_S1_PED_CANONICAL_Q18_R01_20261118.md");
+    const field=k=>b11.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    const r02=read("prototypes/thpt/ux795/G10_CHIV_B11_P2_TAB4_GOLDEN_DELTA_A_UI_R02_20261118.md");
+    const uiField=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    assert.equal(uiField("R01_PUBLISHED_B11_SOURCE_BLOB"),field("B11_CANDIDATE_SOURCE_BLOB"),
+     "B11 force D2 still depends on exact independently reviewed R01");
+    const newReceipt=read("prototypes/thpt/ux795/G10_B11_B12_OWNER_P2_SOURCE_FIRST_DELTA_A_R01_20261118.md");
+    const d=k=>newReceipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    assert.equal(d("B11_BASELINE_SOURCE_BLOB"),uiField("R02_B11_SOURCE_BLOB"),
+     "B11 signed R02 historic force D2 source SHA preserved");
+    assert.equal(sha(modelB),d("B11_SOURCE_CURRENT_BLOB"),
+     "B11 force D2 remains in source-first current canonical learner source");
+    const examples=modelB.split('=== "Ví dụ"')[1]?.split('=== "Lỗi thường gặp"')[0]||"";
+    assert(examples.includes("### 3.4. Ví dụ 4 — Hợp lực")&&
+     examples.includes("THPT_G10_CHIV_FORCE_TRANSFER_D5_R01_CORRECTED.svg")&&
+     examples.includes("**Giải:**"),
+     "B11 force D2 must be a proper worked example in Tab3, source figure retained");
+    assert(!modelB.includes("#### Ví dụ có hướng dẫn — "+rec.ex),
+     "B11 old implementation EX identifier must not appear in student source");
+   }
+   const D5=tag==="RIVER"?"THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg":
+     "THPT_G10_CHIV_"+tag+"_TRANSFER_D5_R01_CORRECTED.svg";
+   assert(modelB.includes(D5),
+     "Transfer must keep mathematically correct, source-locked diagram D5 "+tag);
    const at=modelB.indexOf('data-thpt-first-try-id="'+rec.stem+'"');
    const h=modelB.indexOf('data-thpt-help-id="'+rec.help+'"',at);
    assert(at>=0&&h>at&&/^\s*\?\?\? question "/m.test(modelB.slice(at,h)),

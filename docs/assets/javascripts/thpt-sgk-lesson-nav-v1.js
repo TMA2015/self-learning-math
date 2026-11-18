@@ -39,6 +39,109 @@ const numberG10FirstSix=(article)=>{
   return;
  }
  if(!labels.every((node,i)=>node.textContent.trim()===names[i]))return;
+ // B01 owner's 15/11 source upgrade already carries meaningful 1.x/3.x/4.x
+ // headings and FIVE authentic SGK 2.x sections. Accept the verified DOM
+ // directly; never re-number or compress it to the legacy three-heading shell.
+ // All other five lessons remain on the original display-only branch.
+ if(/\/chuong-i\/bai-1\/?$/.test(location.pathname)){
+  const discovery=[...blocks[0].querySelectorAll("h3")].map(n=>n.textContent.trim());
+  const knowledge=[...blocks[1].querySelectorAll("h3")].map(n=>n.textContent.trim());
+  const examples=[...blocks[2].querySelectorAll("h3")].map(n=>n.textContent.trim());
+  const mistakes=[...blocks[3].querySelectorAll(":scope > details.tip > summary")].map(n=>n.textContent.trim());
+  const ordered=(items,prefix)=>items.every((value,index)=>value.startsWith(prefix+(index+1)+". "));
+  if(discovery.length===4 && knowledge.length===5 && examples.length===4 && mistakes.length===2 &&
+    ordered(discovery,"1.") && ordered(knowledge,"2.") &&
+    ordered(examples,"3.") && ordered(mistakes,"4.")){
+    article.dataset.g10B01B06EditorialNumbered="true";
+    return;
+  }
+ }
+ // B02 S1 content correction: three numbered authentic SGK sections and
+ // already-numbered discovery/examples/HELP; never renumber source content.
+ if(/\/chuong-i\/bai-2\/?$/.test(location.pathname)){
+  const discovery=[...blocks[0].querySelectorAll("h3")].map(h=>h.textContent.trim());
+  const knowledge=[...blocks[1].querySelectorAll("h3")].map(h=>h.textContent.trim());
+  const examples=[...blocks[2].querySelectorAll("h3")].map(h=>h.textContent.trim());
+  const mistakes=[...blocks[3].querySelectorAll(":scope > details.tip > summary")].map(h=>h.textContent.trim());
+  const ordered=(items,prefix)=>items.every((item,i)=>item.startsWith(prefix+(i+1)+". "));
+  if(discovery.length===3&&knowledge.length===3&&examples.length===4&&mistakes.length===3&&
+     ordered(discovery,"1.")&&ordered(knowledge,"2.")&&
+     ordered(examples,"3.")&&ordered(mistakes,"4.")){
+    article.dataset.g10B01B06EditorialNumbered="true";
+    return;
+  }
+ }
+ // B03: source-correct S1 has TWO main sections with numbered h4
+ // subsections. Preserve actual source numbering and five canonical TRY IDs.
+ if(/\/chuong-ii\/bai-3\/?$/.test(location.pathname)){
+  const discovery=[...blocks[0].querySelectorAll(":scope > h3")].map(h=>h.textContent.trim());
+  const knowledge=[...blocks[1].querySelectorAll(":scope > h3")].map(h=>h.textContent.trim());
+  const children=[...blocks[1].querySelectorAll(":scope > h4")].map(h=>h.textContent.trim());
+  const examples=[...blocks[2].querySelectorAll(":scope > h3")].map(h=>h.textContent.trim());
+  const help=[...blocks[3].querySelectorAll(":scope > details.tip > summary")].map(h=>h.textContent.trim());
+  if(discovery.length===3&&knowledge.length===2&&children.length===5&&examples.length===3&&help.length===2&&
+     discovery.every((s,i)=>s.startsWith("1."+(i+1)+". "))&&
+     knowledge.every((s,i)=>s.startsWith("2."+(i+1)+". "))&&
+     children[0].startsWith("2.1.1. ")&&children[1].startsWith("2.1.2. ")&&
+     children.slice(2).every((s,i)=>s.startsWith("2.2."+(i+1)+". "))&&
+     examples.every((s,i)=>s.startsWith("3."+(i+1)+". Ví dụ "+(i+1)+" —"))&&
+     help.every((s,i)=>s.startsWith("4."+(i+1)+". "))){
+    article.dataset.g10B01B06EditorialNumbered="true";
+    return;
+  }
+ }
+ // B04 S1: THREE parent sections (2.1–2.3) with five nested outcomes.
+ if(location.pathname.endsWith("/chuong-ii/bai-4/")||location.pathname.endsWith("/chuong-ii/bai-4")){
+  const d=[...blocks[0].querySelectorAll(":scope > h3")].map(x=>x.textContent.trim());
+  const k=[...blocks[1].querySelectorAll(":scope > h3")].map(x=>x.textContent.trim());
+  const sub=[...blocks[1].querySelectorAll(":scope > h4")].map(x=>x.textContent.trim());
+  const ex=[...blocks[2].querySelectorAll(":scope > h3")].map(x=>x.textContent.trim());
+  const mistakes=[...blocks[3].querySelectorAll(":scope > details.tip > summary")].map(x=>x.textContent.trim());
+  const expected=["2.1.1.","2.2.1.","2.2.2.","2.3.1.","2.3.2."];
+  if(d.length===3&&k.length===3&&sub.length===5&&ex.length===3&&mistakes.length===2&&
+     d.every((x,i)=>x.startsWith("1."+(i+1)+". "))&&
+     k.every((x,i)=>x.startsWith("2."+(i+1)+". "))&&
+     sub.every((x,i)=>x.startsWith(expected[i]+" "))&&
+     ex.every((x,i)=>x.startsWith("3."+(i+1)+". Ví dụ "+(i+1)+" —"))&&
+     mistakes.every((x,i)=>x.startsWith("4."+(i+1)+". "))){
+   article.dataset.g10B01B06EditorialNumbered="true";return;
+  }
+ }
+ // B05 S1: two authentic SGK parent sections, seven learning subtopics.
+ if(location.pathname.endsWith("/chuong-iii/bai-5/")||location.pathname.endsWith("/chuong-iii/bai-5")){
+  const d=[...blocks[0].querySelectorAll(":scope > h3")].map(x=>x.textContent.trim());
+  const k=[...blocks[1].querySelectorAll(":scope > h3")].map(x=>x.textContent.trim());
+  const sub=[...blocks[1].querySelectorAll(":scope > h4")].map(x=>x.textContent.trim());
+  const ex=[...blocks[2].querySelectorAll(":scope > h3")].map(x=>x.textContent.trim());
+  const help=[...blocks[3].querySelectorAll(":scope > details.tip > summary")].map(x=>x.textContent.trim());
+  const expected=["2.1.1.","2.1.2.","2.1.3.","2.1.4.","2.2.1.","2.2.2.","2.2.3."];
+  if(d.length===4&&k.length===2&&sub.length===7&&ex.length===4&&help.length===3&&
+     d.every((x,i)=>x.startsWith("1."+(i+1)+". "))&&
+     k.every((x,i)=>x.startsWith("2."+(i+1)+". "))&&
+     sub.every((x,i)=>x.startsWith(expected[i]+" "))&&
+     ex.every((x,i)=>x.startsWith("3."+(i+1)+". Ví dụ "+(i+1)+" —"))&&
+     help.every((x,i)=>x.startsWith("4."+(i+1)+". "))){
+   article.dataset.g10B01B06EditorialNumbered="true";return;
+  }
+ }
+ // B06: four authentic SGK parents and ten nested subtopics.
+ if(location.pathname.endsWith("/chuong-iii/bai-6/")||location.pathname.endsWith("/chuong-iii/bai-6")){
+  const d=[...blocks[0].querySelectorAll(":scope > h3")].map(x=>x.textContent.trim());
+  const k=[...blocks[1].querySelectorAll(":scope > h3")].map(x=>x.textContent.trim());
+  const sub=[...blocks[1].querySelectorAll(":scope > h4")].map(x=>x.textContent.trim());
+  const ex=[...blocks[2].querySelectorAll(":scope > h3")].map(x=>x.textContent.trim());
+  const help=[...blocks[3].querySelectorAll(":scope > details.tip > summary")].map(x=>x.textContent.trim());
+  const expected=["2.1.1.","2.1.2.","2.2.1.","2.2.2.","2.3.1.","2.3.2.",
+   "2.4.1.","2.4.2.","2.4.3.","2.4.4."];
+  if(d.length===5&&k.length===4&&sub.length===10&&ex.length===4&&help.length===2&&
+     d.every((x,i)=>x.startsWith("1."+(i+1)+". "))&&
+     k.every((x,i)=>x.startsWith("2."+(i+1)+". "))&&
+     sub.every((x,i)=>x.startsWith(expected[i]+" "))&&
+     ex.every((x,i)=>x.startsWith("3."+(i+1)+". Ví dụ "+(i+1)+" —"))&&
+     help.every((x,i)=>x.startsWith("4."+(i+1)+". "))){
+   article.dataset.g10B01B06EditorialNumbered="true";return;
+  }
+ }
  const discovery=[...blocks[0].querySelectorAll("h3")];
  const original=["Cùng tìm hiểu","Ví dụ trực quan","Thuật ngữ và kiến thức, kỹ năng"];
  if(discovery.length!==3||!discovery.every((node,i)=>node.textContent.trim()===original[i]))return;
@@ -221,6 +324,11 @@ const polishG10ChapterIV=(article)=>{
  if(labels.length!==4||blocks.length!==4||
    !labels.every((l,i)=>l.textContent.trim()===names[i]))return;
  article.classList.add("thpt-g10-chiv-golden");
+ const isEnrichedEarlyVectors=/\/chuong-iv\/bai-(?:7|8)\/?$/.test(location.pathname);
+ const isEnrichedB09=/\/chuong-iv\/bai-9\/?$/.test(location.pathname)&&
+  Boolean(article.querySelector('[data-thpt-first-try-id="THPT-G10-CHIV-TRY11"]'));
+ const isEnrichedB10=/\/chuong-iv\/bai-10\/?$/.test(location.pathname)&&
+  Boolean(article.querySelector('[data-thpt-first-try-id="THPT-G10-CHIV-TRY16"]'));
  const section=["1. Khám phá kiến thức","2. Kiến thức SGK","3. Ví dụ",
    "4. Lỗi thường gặp và cách tự khắc phục"];
  blocks.forEach((block,i)=>{
@@ -231,14 +339,86 @@ const polishG10ChapterIV=(article)=>{
  // Number only existing visible discovery/example/remediation labels. Source
  // SGK concept headings in tab 2 are untouched pending S1 editorial review.
  [...blocks[0].querySelectorAll(":scope > h3")].forEach((h,i)=>{
-  h.textContent="1."+(i+1)+". "+h.textContent.trim();
+  const prefix="1."+(i+1)+". ";if(!h.textContent.trim().startsWith(prefix))h.textContent=prefix+h.textContent.trim();
  });
  [...blocks[2].querySelectorAll(":scope > h3")].forEach((h,i)=>{
-  h.textContent="3."+(i+1)+". "+h.textContent.trim();
+  const prefix="3."+(i+1)+". ";if(!h.textContent.trim().startsWith(prefix))h.textContent=prefix+h.textContent.trim();
  });
  [...blocks[3].querySelectorAll(":scope > details.tip > summary")].forEach((h,i)=>{
-  h.textContent="4."+(i+1)+". "+h.textContent.trim();
+  const prefix="4."+(i+1)+". ";if(!h.textContent.trim().startsWith(prefix))h.textContent=prefix+h.textContent.trim();
  });
+ // B07/B08 approved standalone four method-first examples, keep each solution in Golden panel.
+ if(isEnrichedEarlyVectors){
+  for(const h of blocks[2].querySelectorAll(":scope > h3")){
+   let node=h.nextElementSibling;
+   while(node&&node.tagName!=="H3"){
+    const lead=node.querySelector?.(":scope > strong");
+    if(node.tagName==="P"&&lead&&/^Lời giải\./u.test(lead.textContent.trim())){
+     const box=document.createElement("div");box.className="thpt-g10-example-solution";
+     box.setAttribute("role","group");box.setAttribute("aria-label","Lời giải ví dụ");
+     node.before(box);
+     while(node&&node.tagName!=="H3"){
+      const strong=node.querySelector?.(":scope > strong");
+      if(node.tagName==="P"&&strong&&/^Kiểm lại\./u.test(strong.textContent.trim()))break;
+      const next=node.nextElementSibling;box.append(node);node=next;
+     }
+     break;
+    }
+    node=node.nextElementSibling;
+   }
+  }
+ }
+ // B09 R03 source explicitly separates "Đề / Hướng giải / Giải / Tự kiểm".
+ // Group only its solved mathematical steps, preserving all existing DOM
+ // nodes and the student's own method-first reasoning outside the panel.
+ // Fail closed on other lessons; no assessment state/data touched.
+ if(isEnrichedB09){
+  const isLead=(node,re)=>node?.tagName==="P"&&
+   node.firstElementChild?.tagName==="STRONG"&&
+   re.test(node.firstElementChild.textContent.trim());
+  for(const heading of blocks[2].querySelectorAll(":scope > h3")){
+   let start=heading.nextElementSibling;
+   while(start&&start.tagName!=="H3"&&!isLead(start,/^Giải\s*:/iu)){
+    start=start.nextElementSibling;
+   }
+   if(!start||start.tagName==="H3")continue;
+   const box=document.createElement("div");
+   box.className="thpt-g10-example-solution";
+   box.setAttribute("role","group");
+   box.setAttribute("aria-label","Lời giải ví dụ");
+   start.before(box);
+   let current=start;
+   while(current&&current.tagName!=="H3"&&!isLead(current,/^Tự kiểm\s*:/iu)){
+    const next=current.nextElementSibling;
+    box.append(current);
+    current=next;
+   }
+  }
+ }
+ // B10 signed Q18: new concept-first source has separate P paragraphs for
+ // 'Phân tích / Giải / Kiểm lại'. Wrap ONLY the actual solution, leaving
+ // explanation, problem and self-check outside. No global runtime changes,
+ // Q15/Q16 writes or other lesson routes touched.
+ if(isEnrichedB10){
+  const isLead=(node,re)=>node?.tagName==="P"&&
+   node.firstElementChild?.tagName==="STRONG"&&
+   re.test(node.firstElementChild.textContent.trim());
+  for(const heading of blocks[2].querySelectorAll(":scope > h3")){
+   let start=heading.nextElementSibling;
+   while(start&&start.tagName!=="H3"&&!isLead(start,/^Giải\s*:/iu))
+    start=start.nextElementSibling;
+   if(!start||start.tagName==="H3")continue;
+   const panel=document.createElement("div");
+   panel.className="thpt-g10-example-solution";
+   panel.setAttribute("role","group");
+   panel.setAttribute("aria-label","Lời giải ví dụ");
+   start.before(panel);
+   let cur=start;
+   while(cur&&cur.tagName!=="H3"&&!isLead(cur,/^Kiểm lại(?:\s+và giới hạn)?\s*:/iu)){
+    const next=cur.nextElementSibling;panel.append(cur);cur=next;
+   }
+  }
+ }
  // Golden example solution panel. MkDocs may render Đề/Giải/Tự kiểm as
  // three strong labels in ONE paragraph; split its EXISTING DOM nodes without
  // altering a single answer, formula, punctuation mark or example ID.
@@ -414,6 +594,104 @@ const polishG10ChapterVII=(article)=>{
  article.dataset.g10ChviiGolden="preview";
 };
 
+/* B04 owner's G10-TAB-KEYNAV-01: keyboard Left/Right on Golden labels.
+ * Scope only to B04, preserve Material native inputs and mouse/touch.
+ * No document-level keyboard listener, no assessment or student-data write. */
+const enableG10B04KeyboardTabs=(article)=>{
+ if(!/\/chuong-ii\/bai-4\/?$/.test(location.pathname)||article.dataset.g10B04KeyboardTabs==="true")return;
+ const set=article.querySelector(":scope > .tabbed-set");
+ const radios=[...(set?.querySelectorAll(':scope > input[type="radio"]')||[])];
+ const labels=[...(set?.querySelectorAll(":scope > .tabbed-labels > label")||[])];
+ if(radios.length!==4||labels.length!==4||!labels.every((l,i)=>l.htmlFor===radios[i].id))return;
+ const sync=()=>labels.forEach((label,i)=>{label.tabIndex=radios[i].checked?0:-1;});
+ labels.forEach((label,i)=>{
+  const onArrow=event=>{
+   if(event.key!=="ArrowLeft"&&event.key!=="ArrowRight")return;
+   event.preventDefault();event.stopPropagation();
+   const step=event.key==="ArrowRight"?1:-1,next=(i+step+labels.length)%labels.length;
+   radios[next].click();sync();labels[next].focus();
+  };
+  label.addEventListener("keydown",onArrow);
+  label.addEventListener("click",sync);
+  radios[i].addEventListener("keydown",onArrow);
+  radios[i].addEventListener("change",sync);
+ });
+ sync();article.dataset.g10B04KeyboardTabs="true";
+};
+/* B05 owner's G10-TAB-KEYNAV-01: keyboard Left/Right on Golden labels.
+ * Scope only to B05, preserve Material native inputs and mouse/touch.
+ * No document-level keyboard listener, no assessment or student-data write. */
+const enableG10B05KeyboardTabs=(article)=>{
+ if(!/\/chuong-iii\/bai-5\/?$/.test(location.pathname)||article.dataset.g10B05KeyboardTabs==="true")return;
+ const set=article.querySelector(":scope > .tabbed-set");
+ const radios=[...(set?.querySelectorAll(':scope > input[type="radio"]')||[])];
+ const labels=[...(set?.querySelectorAll(":scope > .tabbed-labels > label")||[])];
+ if(radios.length!==4||labels.length!==4||!labels.every((l,i)=>l.htmlFor===radios[i].id))return;
+ const sync=()=>labels.forEach((label,i)=>{label.tabIndex=radios[i].checked?0:-1;});
+ labels.forEach((label,i)=>{
+  const onArrow=event=>{
+   if(event.key!=="ArrowLeft"&&event.key!=="ArrowRight")return;
+   event.preventDefault();event.stopPropagation();
+   const step=event.key==="ArrowRight"?1:-1,next=(i+step+labels.length)%labels.length;
+   radios[next].click();sync();labels[next].focus();
+  };
+  label.addEventListener("keydown",onArrow);
+  label.addEventListener("click",sync);
+  radios[i].addEventListener("keydown",onArrow);
+  radios[i].addEventListener("change",sync);
+ });
+ sync();article.dataset.g10B05KeyboardTabs="true";
+};
+/* B06 owner's G10-TAB-KEYNAV-01: keyboard Left/Right on Golden labels.
+ * Scope only to B06, preserve Material native inputs and mouse/touch.
+ * No document-level keyboard listener, no assessment or student-data write. */
+const enableG10B06KeyboardTabs=(article)=>{
+ if(!/\/chuong-iii\/bai-6\/?$/.test(location.pathname)||article.dataset.g10B06KeyboardTabs==="true")return;
+ const set=article.querySelector(":scope > .tabbed-set");
+ const radios=[...(set?.querySelectorAll(':scope > input[type="radio"]')||[])];
+ const labels=[...(set?.querySelectorAll(":scope > .tabbed-labels > label")||[])];
+ if(radios.length!==4||labels.length!==4||!labels.every((l,i)=>l.htmlFor===radios[i].id))return;
+ const sync=()=>labels.forEach((label,i)=>{label.tabIndex=radios[i].checked?0:-1;});
+ labels.forEach((label,i)=>{
+  const onArrow=event=>{
+   if(event.key!=="ArrowLeft"&&event.key!=="ArrowRight")return;
+   event.preventDefault();event.stopPropagation();
+   const step=event.key==="ArrowRight"?1:-1,next=(i+step+labels.length)%labels.length;
+   radios[next].click();sync();labels[next].focus();
+  };
+  label.addEventListener("keydown",onArrow);
+  label.addEventListener("click",sync);
+  radios[i].addEventListener("keydown",onArrow);
+  radios[i].addEventListener("change",sync);
+ });
+ sync();article.dataset.g10B06KeyboardTabs="true";
+};
+/* B07/B08 owner Golden: keyboard Left/Right on public Knowledge tabs.
+ * Preserve native radio inputs, mouse/touch and all assessment safety. */
+const enableG10ChivEarlyKeyboardTabs=(article)=>{
+ const m=location.pathname.match(/\/chuong-iv\/bai-(7|8)\/?$/);
+ if(!m)return;
+ const marker="g10B"+m[1].padStart(2,"0")+"KeyboardTabs";
+ if(article.dataset[marker]==="true")return;
+ const set=article.querySelector(":scope > .tabbed-set");
+ const radios=[...(set?.querySelectorAll(':scope > input[type="radio"]')||[])];
+ const labels=[...(set?.querySelectorAll(":scope > .tabbed-labels > label")||[])];
+ if(radios.length!==4||labels.length!==4||!labels.every((l,i)=>l.htmlFor===radios[i].id))return;
+ const sync=()=>labels.forEach((label,i)=>{label.tabIndex=radios[i].checked?0:-1;});
+ labels.forEach((label,i)=>{
+  const onArrow=event=>{
+   if(event.key!=="ArrowLeft"&&event.key!=="ArrowRight")return;
+   event.preventDefault();event.stopPropagation();
+   const step=event.key==="ArrowRight"?1:-1,next=(i+step+labels.length)%labels.length;
+   radios[next].click();sync();labels[next].focus();
+  };
+  label.addEventListener("keydown",onArrow);
+  label.addEventListener("click",sync);
+  radios[i].addEventListener("keydown",onArrow);
+  radios[i].addEventListener("change",sync);
+ });
+ sync();article.dataset[marker]="true";
+};
 const run=()=>{
  const path=location.pathname;
  const match=path.match(/^(.*\/thpt-preview\/sgk\/)(?:(lop-(11|12))\/)?chuong-([ivx]+)\/bai-(\d+)\/?$/);
@@ -427,8 +705,8 @@ const run=()=>{
  if(!article)return;
  if(grade===10){
   article.classList.add("thpt-g10-knowledge-ap1");
-  if(lesson<=6){article.classList.add("thpt-g10-first-six-golden");numberG10FirstSix(article);polishG10FirstSix(article);restoreG10FirstSixGolden(article);}
-  else if(chapter==="iv"&&lesson<=11)polishG10ChapterIV(article);
+  if(lesson<=6){article.classList.add("thpt-g10-first-six-golden");numberG10FirstSix(article);polishG10FirstSix(article);restoreG10FirstSixGolden(article);if(lesson===4)enableG10B04KeyboardTabs(article);if(lesson===5)enableG10B05KeyboardTabs(article);if(lesson===6)enableG10B06KeyboardTabs(article);}
+  else if(chapter==="iv"&&lesson<=11){polishG10ChapterIV(article);if(lesson===7||lesson===8)enableG10ChivEarlyKeyboardTabs(article);}
   else if(chapter==="v"&&lesson>=12&&lesson<=14)polishG10ChapterV(article);
   else if(chapter==="vi"&&lesson>=15&&lesson<=18)polishG10ChapterVI(article);
   else if(chapter==="vii"&&lesson>=19&&lesson<=22)polishG10ChapterVII(article);

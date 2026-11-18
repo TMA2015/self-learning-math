@@ -14,7 +14,7 @@ permissions:
 jobs:
   chvii-s1-golden:
     name: Signed S1 ChVII four lessons, 25 first-tries, 33 D6 and 12 real-browser Golden cases
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 28
     steps:
       - uses: actions/checkout@v4

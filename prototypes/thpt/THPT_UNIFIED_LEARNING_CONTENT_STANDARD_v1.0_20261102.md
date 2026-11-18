@@ -1,8 +1,8 @@
-# SELF-LEARNING MATH — TIÊU CHUẨN CHẤT LƯỢNG HỌC LIỆU THPT THỐNG NHẤT v3.1.0
+# SELF-LEARNING MATH — TIÊU CHUẨN CHẤT LƯỢNG HỌC LIỆU THPT THỐNG NHẤT v3.2.0
 
 **STANDARD_ID:** `SLM-THPT-QUALITY-ONE`  
-**VERSION:** `3.1.0` (SGK editorial amendment, owner-approved structure 12/11/2026; **effective only after governance merge**) · **OWNER:** Chủ dự án Self-Learning Math / G Learning  
-**STATUS:** `OWNER_APPROVED_EFFECTIVE` · **ACTIVATION:** `AFTER_GOVERNANCE_PR_821_MERGE_INTO_MAIN` · **PREVIOUS_EFFECTIVE_STANDARD:** `3.0.1 / OWNER_APPROVED_EFFECTIVE`: chủ dự án **đã xem và duyệt mẫu HTML về cấu trúc/biên tập** ngày 12/11/2026, gồm 4 tab, cách đánh số, phân vai nội dung, khung định nghĩa/công thức, bảng/hình và ví dụ; **không duyệt màu sắc, font, cỡ chữ, spacing hay CSS của mẫu**. Chủ dự án đã ủy quyền ngày 12/11/2026 cho phép phát hành **gói đạt đủ điều kiện QA**; riêng PR quản trị này đã được duyệt cấu trúc và QA độc lập. Phiên bản v3.1.0 được xác nhận **hiệu lực kể từ commit merge PR #821 vào `main`**, không từ bản nháp chưa merge. v3.0.0 (PR #808) và v3.0.1 (PR #809) giữ nguyên lịch sử nghiệm thu. Việc phê duyệt chuẩn **không tự nghiệm thu lại** 79 bài; G10 triển khai lần lượt, G11 vẫn PAUSED theo phạm vi đã giao; PR #816 và #819 đã CLOSED UNMERGED.
+**VERSION:** `3.2.0` (owner-approved 17/11/2026; X-F.3 semantic 3+1 and reproducible QA; **effective since owner-approved PR #899 merged into `main` on 17/11/2026**) · **OWNER:** Chủ dự án Self-Learning Math / G Learning  
+**STATUS:** `OWNER_APPROVED_EFFECTIVE` · **ACTIVATION:** `OWNER_APPROVED_PR_899_MERGED_INTO_MAIN_20261117` · **EFFECTIVE_EVIDENCE:** PR #899 merged `2026-11-17T10:28:07Z`, merge commit `6d9ae928876379a9c00e23a62c77504eb7a6d028` (owner-approved 9/9 CI). This is a post-merge metadata reconciliation only; no change to Q01–Q18 criteria. · **PREVIOUS_EFFECTIVE_STANDARD:** `3.1.0 / OWNER_APPROVED_EFFECTIVE` (PR #821 merged). Owner đã duyệt cấu trúc 4 tab và X-F trước đó ngày 12/11/2026, phê duyệt bổ sung **semantic 3+1 ngày 17/11/2026**; màu mới chỉ áp dụng theo đúng phạm vi các bài đang nâng cấp, không nhập theme HTML demo, không tự đổi snapshot B01–B07 P2 PASS. v3.0.0 (PR #808), v3.0.1 (PR #809), v3.1.0 (PR #821) giữ nguyên lịch sử và SHA. **Chủ dự án đã cho phép hoàn thiện và phát hành B08 nếu đủ QA**, không tự cho phép phát hành các bài khác ngoài nhiệm vụ. Việc duyệt chuẩn không đồng nghĩa nghiệm thu học liệu B08 hay toàn bộ 79 bài.
 **SCOPE:** mọi học liệu Toán THPT 10–12 KNTT theo **SGK_CHAPTER** và **TOPIC**; áp dụng cho cả tác giả, NotebookLM và nhánh phát hành. **Một tiêu chuẩn chất lượng; các cổng kiểm tra phân theo trách nhiệm, không phải hai bộ tiêu chuẩn cạnh tranh.**
 
 ## 0. Luật thống nhất và thứ tự hiệu lực
@@ -254,12 +254,25 @@ Những đoạn dẫn dắt như `Kiến thức tiền đề`, `Bản chất tr�
 
 ### X-F.3. Bộ thành phần toán cần làm nổi bật nhất quán — Q03/Q07/PED4, AP2/AP3
 
-- **Định nghĩa/định lí chính thức:** dùng cùng kiểu nhấn/khung đã chốt từ Bài 1–6 Toán 10, ghi rõ điều kiện và phạm vi. Không tự đóng khung những câu chỉ là nhận xét phụ.
-- **Công thức trọng tâm:** có khung hiển thị tương đương mẫu Bài 6 Toán 10, MathJax không lỗi và không cắt mất vế; không đóng khung mọi phép tính trung gian. Phải xác minh công thức chính xác, điều kiện đủ và đúng nguồn SGK trước khi phân loại là trọng tâm.
-- **Kiến thức cần nhớ:** hộp thống nhất như Bài 1–6 nếu bài thực sự có kiến thức cần chốt; không bắt buộc mọi bài phải có, cũng không làm mất nội dung hiện hữu vì muốn đồng đều hình thức.
-- **Bảng:** nhãn chữ có thể căn trái; số/ký hiệu/công thức căn phù hợp từng cột; tiêu đề cột phải cùng trục với dữ liệu bên dưới, căn dọc và padding thống nhất; mobile phải đọc được đủ hàng/cột, có cuộn trong bảng nếu cần.
-- **Hình, SVG, sơ đồ:** có thật, đúng toán, alt/caption, xuất hiện gần và **trước lời yêu cầu đọc hình**. Nếu học sinh cần **tự vẽ**, chỉ dẫn phải ghi rõ “tự vẽ/tự dựng”, không hứa có hình hoặc bảng mà bài không trình bày.
-- **Ví dụ:** cỡ chữ, tiêu đề, phân đoạn lời giải, phép biến đổi, điều kiện và kết luận đồng bộ; tương ứng `3.1`, `3.2`…; phân biệt ví dụ trực quan ở tab 1 và bài vận dụng ngắn ở tab 2.
+**Owner-approved 17/11/2026 — contract 3+1; same standard Q01–Q18, not Q19:**
+
+Phân loại **theo ý nghĩa toán của phát biểu trong SGK S1 và OUTCOME_ID**, **không suy từ một từ** trong nhan đề như “quy tắc”, “ghi nhớ”, “định nghĩa”. Một phép toán cần **định nghĩa độc lập**; công thức/quy tắc suy ra từ định nghĩa không được dùng thay phát biểu định nghĩa. Giữ đủ giả thiết, ký hiệu, miền/phạm vi, quy ước đặc biệt và các kết luận SGK. **Tối đa ba loại hộp kiến thức có nền + một loại khung công thức không tô nền**:
+
+1. **\`FORMAL_DEFINITION\` — xanh ngọc:** Định nghĩa/Khái niệm chính thức, bao gồm định nghĩa phép toán, đối tượng và ký hiệu. Nêu rõ đối tượng là gì, cách xác định và điều kiện. Ví dụ: định nghĩa tổng hai vectơ **khác** quy tắc ba điểm; định nghĩa vectơ đối/hiệu là phát biểu riêng. Tên hiển thị chọn đúng ý SGK (“Định nghĩa”, “Khái niệm”), **không thay đổi bản chất toán**.
+2. **\`FORMAL_RULE\` — xanh lam nhạt:** Định lý/Tính chất/Quy tắc chính thức, kèm giả thiết và giới hạn áp dụng. Ví dụ: quy tắc ba điểm, hình bình hành, tính giao hoán/kết hợp, quy tắc hiệu. **Không biến quy tắc thành định nghĩa chỉ để thống nhất màu.**
+3. **\`MANDATORY_RECAP\` — vàng nhạt:** “Kiến thức cần nhớ” khi thực sự tổng kết các ý toán bắt buộc vừa dạy, dễ tra cứu; không thêm quota hộp cho mọi mục/bài. Không dùng hộp này thay định nghĩa hoặc chép lại trọn vẹn hộp định lý.
+4. **\`KEY_FORMULA\` — viền trung tính, nền trắng/transparent:** Công thức trọng tâm có MathJax đọc được, nguyên vế và điều kiện liền kề; không tô nền, không lồng hai loại hộp cho cùng một công thức. Không đóng khung các phép biến đổi trung gian. Nếu công thức đã hiển thị đủ, rõ trong hộp định nghĩa/quy tắc thì **không buộc tạo thêm** khung công thức trùng lặp.
+
+**\`Ghi nhớ\`, \`Lưu ý\`, \`Nhận xét\`, \`Cách kiểm\`, \`Sai lầm cần tránh\`:** Nhãn chữ **in đậm trong văn xuôi tự nhiên**, không tự động là loại hộp thứ năm. Chỉ dùng \`MANDATORY_RECAP\` nếu nội dung thực sự là tổng kết kiến thức toán bắt buộc, bất kể tác giả ban đầu đặt tên “Ghi nhớ”. Không viết hoa toàn dòng chỉ để nổi bật. Màu sắc đúng cả light/slate, tương phản và responsive; tránh dày đặc hộp, ưu tiên một phát biểu rõ trên một outcome.
+
+**Luật thực thi & QA bắt buộc G0–G5 (là cổng của Q03/Q09–Q14/Q18/AP1–AP5/R1–R5, không thêm chuẩn):** G0 đọc danh sách lỗi chính và snapshot đã nghiệm thu; G1 lập ma trận **S1/outcome → loại phát biểu → nguồn/chỉ dẫn → nhãn → exact DOM/CSS → bài tập minh chứng**, kiểm phạm vi và kiến thức tiền đề; G2 phản biện độc lập toàn bài như người học, không chỉ phần vừa sửa; G3 đối chiếu **ngữ nghĩa cùng màu/khung tại 390/820/1440, light/slate**, MathJax/ảnh và không hiển thị công thức thô; G4 ghi trạng thái \`OPEN→FIXED_IN_PR→CI_PASS→P1_VERIFIED→OWNER_P2_PASS\` cho từng defect kèm SHA thực, không quên master ledger; G5 CI exact HEAD, an toàn Q15/Q16, deploy đúng commit khi đủ quyền và P1/P2 tách biệt. **Không lấy số lượng hộp, tên nhãn, source hash hay CI PASS đơn độc thay được chất lượng học thuật/sư phạm**.
+
+**Ranh giới thay đổi:** Hệ 3+1 là quyết định của chủ dự án cho các bài **đang nâng cấp/từ nay về sau**; không hồi tố đổi theme các snapshot B01–B07 đã P2 PASS vì khác palette. Giữ nguyên Golden THCS/Topic/THPT ngoài phạm vi. Chỉnh ngữ nghĩa/giải thích = \`DELTA_C_ACADEMIC_MATERIAL\` cần Q18 review phần chịu ảnh hưởng; chỉnh scoped CSS giữ nguyên toán = \`DELTA_A_UI\`. Một chuẩn gốc và một lịch sử thay đổi có phiên bản.
+
+**Các yêu cầu trình bày khác của X-F.3 vẫn giữ nguyên:**
+- **Bảng:** nhãn chữ căn phù hợp, cột/dòng cùng trục và mobile có cuộn nếu cần.
+- **Hình/SVG:** đúng toán, alt/caption, xuất hiện gần **trước** lời yêu cầu đọc; chỉ nói “tự vẽ” khi học sinh phải tự dựng.
+- **Ví dụ:** nội dung 3.x có suy luận, điều kiện, lời giải và kiểm lại; không nhân bản Vận dụng.
 
 ### X-F.4. Khóa giao diện sản xuất theo Bài 1–6 Toán 10 — AP1–AP5, R3/R4
 
