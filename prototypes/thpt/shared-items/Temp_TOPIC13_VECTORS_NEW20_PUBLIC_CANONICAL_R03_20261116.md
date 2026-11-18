@@ -21,11 +21,11 @@ role: TOPIC_PRACTICE
 source_type: TOPIC_NEW_CANDIDATE
 content_version: 1
 **Nhãn bài học:** Luyện 1 · Chiều vectơ hình bình hành
-**Đề:** Trong hình bình hành ABCD, vectơ nào bằng AB: DC hay CD?
+**Đề:** Trong hình bình hành ABCD, vectơ nào bằng \(\overrightarrow{AB}\): \(\overrightarrow{DC}\) hay \(\overrightarrow{CD}\)?
 **Đối chiếu, lời giải, rubric và D6:**
 <details markdown="1"><summary>Đối chiếu lời giải</summary>
 
-DC cùng hướng và độ dài; CD ngược hướng.
+\(\overrightarrow{DC}=\overrightarrow{AB}\) vì cùng hướng và độ dài; \(\overrightarrow{CD}=-\overrightarrow{AB}\) vì ngược hướng.
 
 **Sửa lỗi:** Xem lại mục Kiến thức 2 và tự trình bày một lượt không nhìn lời giải.
 
@@ -39,11 +39,11 @@ role: TOPIC_PRACTICE
 source_type: TOPIC_NEW_CANDIDATE
 content_version: 1
 **Nhãn bài học:** Luyện 2 · Vectơ-không theo quy ước KNTT
-**Đề:** Khi A=B, độ dài AA và quan hệ cùng phương theo quy ước KNTT đối với vectơ khác không là gì?
+**Đề:** Khi A=B, độ dài \(\lvert\overrightarrow{AA}\rvert\) và quan hệ cùng phương của vectơ-không với vectơ khác không theo quy ước KNTT là gì?
 **Đối chiếu, lời giải, rubric và D6:**
 <details markdown="1"><summary>Đối chiếu lời giải</summary>
 
-AA dài 0; vectơ-không được quy ước cùng phương và cùng hướng với mọi vectơ. Không suy góc xác định với nó.
+\(\overrightarrow{AA}=\vec 0\) nên độ dài bằng 0; vectơ-không được quy ước cùng phương và cùng hướng với mọi vectơ. Không suy góc xác định với nó.
 
 **Sửa lỗi:** Xem lại mục Kiến thức 1 và tự trình bày một lượt không nhìn lời giải.
 
@@ -201,7 +201,7 @@ role: TOPIC_PRACTICE
 source_type: TOPIC_NEW_CANDIDATE
 content_version: 1
 **Nhãn bài học:** Luyện 11 · Đường chéo hình hộp
-**Đề:** Trong hình hộp chữ nhật, ba cạnh xuất phát từ A vuông góc đôi một và dài 3, 4, 12. Tìm độ dài vectơ AC'.
+**Đề:** Trong hình hộp chữ nhật, ba cạnh xuất phát từ A vuông góc đôi một và dài 3, 4, 12. Tìm độ dài vectơ \(\overrightarrow{AC'}\).
 **Đối chiếu, lời giải, rubric và D6:**
 <details markdown="1"><summary>Đối chiếu lời giải</summary>
 
@@ -343,13 +343,13 @@ item_id: THPT-TOP13-W03
 outcome_id: TOP13-O11
 role: TOPIC_WRITTEN
 source_type: TOPIC_NEW_CANDIDATE
-content_version: 1
+content_version: 2
 **Nhãn bài học:** Tự luận 3 · Vectơ đường chéo hình hộp
-**Đề:** Một hình hộp chữ nhật có A=(0,0,0), B=(3,0,0), D=(0,4,0), A'=(0,0,12). Tìm C', độ dài AC', tích vô hướng \(\overrightarrow{AB}\cdot\overrightarrow{AC'}\) và cos góc giữa chúng.
+**Đề:** Một hình hộp chữ nhật có A=(0,0,0), B=(3,0,0), D=(0,4,0), A'=(0,0,12). Tìm C', độ dài đoạn \(AC'\), tích vô hướng \(\overrightarrow{AB}\cdot\overrightarrow{AC'}\) và cos góc giữa chúng.
 **Đối chiếu, lời giải, rubric và D6:**
 <details markdown="1"><summary>Đối chiếu và rubric /7</summary>
 
-C'=(3,4,12) (2đ); |AC'|=13 và AB·AC'=9 (3đ); cos góc=9/(3·13)=3/13 (2đ). Tổng 7 điểm.
+\(C'=(3,4,12)\) (2đ); \(AC'=\lvert\overrightarrow{AC'}\rvert=13\) và \(\overrightarrow{AB}\cdot\overrightarrow{AC'}=9\) (3đ); \(\cos\theta=9/(3\cdot13)=3/13\) (2đ). Tổng 7 điểm.
 
 **Sửa lỗi:** Xem lại mục Kiến thức 11 và tự trình bày một lượt không nhìn lời giải.
 
