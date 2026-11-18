@@ -2,6 +2,15 @@
 
 **STANDARD_ID:** `SLM-THPT-QUALITY-ONE` · **STANDARD_VERSION:** `3.2.0` · **SCOPE:** B11 Examples tab + B12 formal SGK / Examples / D5 interval figure. **CLASS:** `DELTA_A_UI` only (presentation/labels/markup; not revised mathematical claim, problem, answer, conditions, rubric, or item id). **ISSUE:** #795. **PR:** #910. **STATUS:** AUTHOR_SOURCE_UPDATE_CREATED / INDEPENDENT_P2_PENDING / NO_RELEASE_BEFORE_CI.
 
+**B11_BASELINE_SOURCE_BLOB:** `60a3d043694986e3250f15b51350380b86f70cfc`
+**B11_SOURCE_CURRENT_BLOB:** `d35a39eedef9d5b55e96836de83649d9a014e42e`
+**B11_BASELINE_CANONICAL_BLOB:** `db9ec64bc82d44ae09a7cdce79b97e14ac4a2ef8`
+**B11_CANONICAL_CURRENT_BLOB:** `d43ec90d02c1ae9e61d66ee886df82692ba2616d`
+**B12_BASELINE_SOURCE_BLOB:** `fc2942aeafdcd34d3cedd9eeb24c48716bbe7e78`
+**B12_SOURCE_CURRENT_BLOB:** `6b0f137849e11a74a28d4b7fe436d2911a5b5c9d`
+**B12_BASELINE_CANONICAL_BLOB:** `c4ee9f322d158d775be551c9888d426aba8ee16d`
+**B12_CANONICAL_CURRENT_BLOB:** `b07e9f19f7fea1beb4e334924d795d276d0a8eb4`
+
 ## One current canonical per lesson (not new manuscripts)
 
 | Lesson | Former reviewed/published Knowledge SHA | Current learner Knowledge SHA | Former immutable canonical SHA | Updated SAME canonical file SHA |
