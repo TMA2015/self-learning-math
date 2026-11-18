@@ -115,8 +115,14 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
   styles.includes(':has([data-thpt-first-try-id="THPT-G10-CHII-TRY01"])'),
   "B01/B02/B03 concept colors remain scoped; B07 formal-only now teal");
  for(const [lesson,sha] of Object.entries(sources)){
-  assert.equal(blob(fs.readFileSync(root+"/docs/thpt-preview/sgk/chuong-iv/bai-"+lesson+".md")),sha,
-   "Unapproved academic/source/First Try change B"+lesson);
+  const current=blob(fs.readFileSync(root+"/docs/thpt-preview/sgk/chuong-iv/bai-"+lesson+".md"));
+  if(lesson==="10"){
+   const delta=fs.readFileSync(root+
+    "/prototypes/thpt/ux795/G10_CHIV_B10_P2_MATHJAX_DELTA_A_UI_R02_20261118.md","utf8");
+   const df=k=>delta.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(df("BASELINE_R01_SOURCE_BLOB"),sha,"B10 P2 must preserve exact R01 historical source");
+   assert.equal(current,df("R02_SOURCE_BLOB"),"B10 P2 source not signed by MathJax UI-only delta");
+  }else assert.equal(current,sha,"Unapproved academic/source/First Try change B"+lesson);
  }
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
  let cases=0;
