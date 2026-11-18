@@ -85,6 +85,15 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
   const b11Receipt=fs.readFileSync(root+
    "/prototypes/thpt/ux795/G10_CHIV_B11_S1_PED_CANONICAL_Q18_R01_20261118.md","utf8");
   const b11f=k=>b11Receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  const b11ui=fs.readFileSync(root+
+   "/prototypes/thpt/ux795/G10_CHIV_B11_P2_TAB4_GOLDEN_DELTA_A_UI_R02_20261118.md","utf8");
+  const b11u=k=>b11ui.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(b11u("R01_PUBLISHED_B11_SOURCE_BLOB"),b11f("B11_CANDIDATE_SOURCE_BLOB"),
+   "B11 P2 UI-only source must descend from Academic/PED R01");
+  assert.equal(b11u("R01_PUBLISHED_B11_CANONICAL_BLOB"),b11f("ONE_CANONICAL_B11_BLOB"),
+   "B11 P2 UI-only canonical must descend from Academic/PED R01");
+  assert.equal(b11u("R02_CSS_BLOB"),b11f("CSS_B11_SCOPED_APPEND_BLOB"),
+   "B11 P2 Tab4 reflow cannot modify accepted CSS");
   assert.equal(b11f("B10_P2_APPROVED_CSS_BLOB"),b10f("CSS_R01_SCOPED_B10_BLOB"),
    "B11 css source must descend from B10 owner P2");
   assert.equal(blob(cssFile),b11f("CSS_B11_SCOPED_APPEND_BLOB"),
@@ -138,8 +147,8 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
   }else if(lesson==="11"){
    assert.equal(b11f("R01_PUBLISHED_B11_SOURCE_BLOB"),sha,
     "B11 old published R01 source must be immutable");
-   assert.equal(current,b11f("B11_CANDIDATE_SOURCE_BLOB"),
-    "B11 signed candidate source SHA differs");
+   assert.equal(current,b11u("R02_B11_SOURCE_BLOB"),
+    "B11 P2 source must be exact signed R02 Tab4 UI-only blob");
   }else assert.equal(current,sha,"Unapproved academic/source/First Try change B"+lesson);
  }
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
@@ -645,8 +654,30 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
         where+" B11 errors must give wrong action, cause, correction and retry");
        assert(ts.every(x=>!/Assessment safety|HELP_ID|EX-G10-|B11-[CP][0-9]{2}/.test(x.text)),
         where+" B11 visible help cannot leak internal assessment metadata");
-       assert.equal(await blocks.nth(3).locator(":scope > h3").count(),3,
-        where+" B11 errors are numbered 4.1/4.2/4.3");
+       // Owner P2 B11-UI-TAB4-01: match the accepted B10 pattern.
+       // R01 incorrectly asserted three h3 cards *plus* three tips.
+       assert.equal(await blocks.nth(3).locator("h3").count(),0,
+        where+" B11 Tab4 must have ZERO duplicate standalone heading cards");
+       const summaries=await tips.locator("summary").allTextContents();
+       assert.equal(summaries.length,3,where+" B11 exactly three accordion summaries");
+       assert.deepEqual(summaries.map(t=>t.trim().slice(0,3)),["4.1","4.2","4.3"],
+        where+" B11 numbered summary headings must replace redundant h3 cards");
+       const b10Tab4=fs.readFileSync(root+"/docs/thpt-preview/sgk/chuong-iv/bai-10.md","utf8")
+        .split('=== "Lỗi thường gặp"')[1];
+       assert.equal((b10Tab4.match(/^    ### 4\.[1-3]\./gm)||[]).length,0,
+        where+" Golden reference B10 must be accordion-only");
+       assert.equal((b10Tab4.match(/^    \?\?\? tip "4\.[1-3]\. /gm)||[]).length,3,
+        where+" Golden reference B10 has three numbered accordions");
+       // Check default-closed, voluntary reveal/reclose and math typesetting.
+       await tips.first().locator("summary").click();
+       assert.equal(await tips.first().getAttribute("open"),"",
+        where+" first B11 help disclosure must open on learner action");
+       await tips.first().locator("mjx-container").first().waitFor({state:"attached",timeout:15000});
+       await tips.first().locator("summary").click();
+       assert.equal(await tips.first().getAttribute("open"),null,
+        where+" B11 disclosure must reclose; no always-visible answer");
+       assert.equal(await blocks.nth(3).locator("h3").count(),0,
+        where+" opening B11 help must not introduce duplicate heading cards");
        await labels.nth(0).click();
       }
       // Right TOC cross-tab link: tab 3 -> hidden Knowledge tab 2.
