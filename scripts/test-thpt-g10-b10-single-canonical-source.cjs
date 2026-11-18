@@ -5,12 +5,16 @@ const read=p=>fs.readFileSync(p,"utf8"),buf=p=>fs.readFileSync(p);
 const blob=b=>crypto.createHash("sha1").update(Buffer.from("blob "+b.length+"\0")).update(b).digest("hex");
 const t=String.fromCharCode(96),r=read("prototypes/thpt/ux795/G10_CHIV_B10_S1_PED_SINGLE_CANONICAL_Q18_R01_20261118.md");
 const field=k=>r.split("**"+k+":** "+t)[1]?.slice(0,40);
+const delta=read("prototypes/thpt/ux795/G10_CHIV_B10_P2_MATHJAX_DELTA_A_UI_R02_20261118.md");
+const dfield=k=>delta.split("**"+k+":** "+t)[1]?.slice(0,40);
+assert.equal(dfield("BASELINE_R01_SOURCE_BLOB"),field("R01_SOURCE_BLOB"),"R02 must preserve published R01 source chain");
+assert.equal(dfield("BASELINE_R01_CANONICAL_BLOB"),field("ONE_CANONICAL_LESSON_BLOB"),"R02 must preserve published R01 canonical chain");
 const srcPath="docs/thpt-preview/sgk/chuong-iv/bai-10.md",src=read(srcPath);
 const manuscriptPath="prototypes/thpt/content-drafts/THPT_G10_CHIV_B10_CANONICAL.md",manuscript=read(manuscriptPath);
 const legacyPath="prototypes/thpt/content-drafts/THPT_G10_CHIV_B09_B11_D1D6_AUTHORING_R01_SNAPSHOT.md",legacy=read(legacyPath);
 const cssPath="docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css",css=read(cssPath);
-assert.equal(blob(buf(srcPath)),field("R01_SOURCE_BLOB"),"B10 current Knowledge source does not match Q18 SHA");
-assert.equal(blob(buf(manuscriptPath)),field("ONE_CANONICAL_LESSON_BLOB"),"B10 ONE academic manuscript SHA altered");
+assert.equal(blob(buf(srcPath)),dfield("R02_SOURCE_BLOB"),"B10 R02 Knowledge source not signed by scoped P2 receipt");
+assert.equal(blob(buf(manuscriptPath)),dfield("R02_ONE_CANONICAL_LESSON_BLOB"),"B10 R02 ONE manuscript SHA altered");
 assert.equal(blob(buf(legacyPath)),field("R01_BANK_SOURCE_BLOB"),"B10 original 8 items and W10 author packet mutated");
 assert.equal(blob(buf("docs/assets/javascripts/thpt-chiv-b09-b11-reviewed-formative-v1.js")),
  field("R01_ORIGINAL_PUBLIC_BANK_BLOB"),"Original B09-B11 24 canonical items changed");
@@ -100,5 +104,13 @@ for(const token of ["\\vec u=x\\vec i+y\\vec j","\\vec0=(0;0)",
  "\\overrightarrow{GA}+\\overrightarrow{GB}+\\overrightarrow{GC}=\\vec0"])
  assert(src.includes(token),"B10 mandatory S1 math missing "+token);
 assert(!/data-mastery-credit|data-readiness-answer/.test(src),"Mastery/Readiness leak");
-assert.notEqual(blob(Buffer.from(src+" ")),field("R01_SOURCE_BLOB"),"Mutation detector ineffective");
+// P2 regression: do not let Markdown backslash escaping silently turn \\[...\\] into raw [..] in HTML.
+assert(!/^\s*\\\[$/m.test(src)&&!/^\s*\\\]$/m.test(src),"B10 source contains unrenderable raw MathJax display delimiters");
+assert.equal((src.match(/<div class="arithmatex">\\\(\\displaystyle /g)||[]).length,8,
+ "Exactly eight formulas in four former raw display blocks must use reliable arithmatex inline wrappers");
+for(const tex of ["\\vec u+\\vec v=(a+c;b+d)","AB=\\sqrt{(x_B-x_A)^2+(y_B-y_A)^2}",
+ "M\\left(\\frac{x_A+x_B}{2};\\frac{y_A+y_B}{2}\\right)",
+ "v_{\\mathrm{riêng},y}=\\sqrt{5^2-3^2}=4\\,\\mathrm{m/s}."])
+ assert(src.includes(tex),"B10 P2 required rendered expression missing: "+tex);
+assert.notEqual(blob(Buffer.from(src+" ")),dfield("R02_SOURCE_BLOB"),"Mutation detector ineffective");
 console.log("PASS B10 one canonical source and 8 original immutable questions/W10, 6 First Try/3 HELP, two figures/four SVG, four worked examples, semantic math, CSS old prefix and negative test");

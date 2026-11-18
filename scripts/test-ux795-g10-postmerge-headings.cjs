@@ -172,10 +172,29 @@ for(let n=1;n<=27;n++){
   const receipt=fs.readFileSync(receiptPath,"utf8");
   const f=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(f("BASELINE_B10_KNOWLEDGE_BLOB"),"ceaa76688e73274c9cf2d3116c41c6d4d0ac2726");
-  assert.equal(blob(fs.readFileSync(path.join(root,"docs",route+".md"))),
-   f("R01_SOURCE_BLOB"),"G10 B10 rendered Knowledge from wrong academic source");
-  assert.equal(blob(fs.readFileSync(masterPath)),f("ONE_CANONICAL_LESSON_BLOB"),
-   "G10 B10 one manuscript/receipt SHA inconsistent in merged preview");
+  const deltaPath=path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B10_P2_MATHJAX_DELTA_A_UI_R02_20261118.md");
+  const currentPublic=blob(fs.readFileSync(path.join(root,"docs",route+".md")));
+  const currentMaster=blob(fs.readFileSync(masterPath));
+  if(fs.existsSync(deltaPath)){
+   // PR candidate: new render-only source SHA must follow exact P1 R01.
+   const delta=fs.readFileSync(deltaPath,"utf8");
+   const df=k=>delta.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(df("BASELINE_R01_SOURCE_BLOB"),f("R01_SOURCE_BLOB"),
+    "G10 B10 UI-only R02 must descend from P1 R01 Knowledge");
+   assert.equal(df("BASELINE_R01_CANONICAL_BLOB"),f("ONE_CANONICAL_LESSON_BLOB"),
+    "G10 B10 UI-only R02 must descend from P1 R01 canonical");
+   assert.equal(currentPublic,df("R02_SOURCE_BLOB"),
+    "G10 B10 candidate Knowledge does not match P2 MathJax receipt");
+   assert.equal(currentMaster,df("R02_ONE_CANONICAL_LESSON_BLOB"),
+    "G10 B10 candidate manuscript/receipt SHA mismatch");
+  }else{
+   // UX795 separately reconstructs unmodified published main, which has only R01.
+   assert.equal(currentPublic,f("R01_SOURCE_BLOB"),
+    "G10 B10 published baseline Knowledge must be exact immutable R01");
+   assert.equal(currentMaster,f("ONE_CANONICAL_LESSON_BLOB"),
+    "G10 B10 published baseline canonical must be exact immutable R01");
+  }
   const manuscript=fs.readFileSync(masterPath,"utf8");
   assert(manuscript.includes("<!-- BEGIN_B10_KNOWLEDGE_MARKDOWN -->")&&
    manuscript.includes("<!-- BEGIN_B10_R01_CORE_PRACTICE -->"),

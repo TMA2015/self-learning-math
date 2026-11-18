@@ -115,8 +115,14 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
   styles.includes(':has([data-thpt-first-try-id="THPT-G10-CHII-TRY01"])'),
   "B01/B02/B03 concept colors remain scoped; B07 formal-only now teal");
  for(const [lesson,sha] of Object.entries(sources)){
-  assert.equal(blob(fs.readFileSync(root+"/docs/thpt-preview/sgk/chuong-iv/bai-"+lesson+".md")),sha,
-   "Unapproved academic/source/First Try change B"+lesson);
+  const current=blob(fs.readFileSync(root+"/docs/thpt-preview/sgk/chuong-iv/bai-"+lesson+".md"));
+  if(lesson==="10"){
+   const delta=fs.readFileSync(root+
+    "/prototypes/thpt/ux795/G10_CHIV_B10_P2_MATHJAX_DELTA_A_UI_R02_20261118.md","utf8");
+   const df=k=>delta.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(df("BASELINE_R01_SOURCE_BLOB"),sha,"B10 P2 must preserve exact R01 historical source");
+   assert.equal(current,df("R02_SOURCE_BLOB"),"B10 P2 source not signed by MathJax UI-only delta");
+  }else assert.equal(current,sha,"Unapproved academic/source/First Try change B"+lesson);
  }
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
  let cases=0;
@@ -484,6 +490,16 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
        const formulas=blocks.nth(1).locator(".thpt-r4-key-formula");
        assert.deepEqual([await defs.count(),await rules.count(),await recap.count(),await formulas.count()],
         [1,2,1,2],where+" B10 semantic 3+1 roles, no arbitrary box quota");
+       // Owner P2: 4 source display blocks were raw [..] in published HTML.
+       // Require real typeset containers INSIDE each affected Tab2 card, not just any MathJax on page.
+       await formulas.first().locator('div.arithmatex mjx-container').first()
+        .waitFor({state:"attached",timeout:15000});
+       assert.equal(await rules.first().locator('div.arithmatex mjx-container').count(),3,
+        where+" B10 three coordinate-operation formulas must be typeset, not raw TeX");
+       assert.equal(await formulas.nth(0).locator('div.arithmatex mjx-container').count(),2,
+        where+" B10 both Pythagoras and distance formulas must be typeset");
+       assert.equal(await formulas.nth(1).locator('div.arithmatex mjx-container').count(),2,
+        where+" B10 both midpoint and centroid formulas must be typeset");
        for(const scheme of ["default","slate"]){
         await page.evaluate(v=>document.body.setAttribute("data-md-color-scheme",v),scheme);
         const colors=await Promise.all([defs.first(),rules.first(),recap.first(),formulas.first()]
@@ -498,6 +514,10 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
         (await rules.allInnerTexts()).some(v=>v.includes("Điều kiện cùng phương")),
         where+" B10 source-accurate real formal definition and rule");
        await labels.nth(2).click();
+       await blocks.nth(2).locator('div.arithmatex mjx-container').first()
+        .waitFor({state:"attached",timeout:15000});
+       assert.equal(await blocks.nth(2).locator('div.arithmatex mjx-container').count(),1,
+        where+" B10 counter-current square-root expression must be typeset in Example 4");
        const examplesText=await blocks.nth(2).innerText();
        assert(examplesText.includes("Ví dụ 4 — Qua sông")&&
         examplesText.includes("96")&&examplesText.includes("3")&&examplesText.includes("5")&&

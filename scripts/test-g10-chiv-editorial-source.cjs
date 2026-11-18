@@ -401,7 +401,17 @@ for(const [lesson,row] of rows){
    "B10 may not touch any B01-B09 accepted CSS");
   assert.equal(blob(css),f("CSS_R01_SCOPED_B10_BLOB"),
    "B10 semantic palette SHA not matching source receipt");
-  expected=f("R01_SOURCE_BLOB");
+  // Historical R01 source/receipt stay immutable; this P2 correction is a scoped DELTA_A_UI.
+  const r02=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B10_P2_MATHJAX_DELTA_A_UI_R02_20261118.md"),"utf8");
+  const r02f=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(r02f("BASELINE_R01_SOURCE_BLOB"),f("R01_SOURCE_BLOB"),"B10 P2 R02 source ancestry changed");
+  assert.equal(r02f("BASELINE_R01_CANONICAL_BLOB"),f("ONE_CANONICAL_LESSON_BLOB"),"B10 P2 R02 canonical ancestry changed");
+  assert(r02.includes("DELTA_A_UI")&&r02.includes("MathJax"),"B10 P2 targeted UI fix must be documented");
+  expected=r02f("R02_SOURCE_BLOB");
+  assert.equal(blob(fs.readFileSync(path.join(root,
+   "prototypes/thpt/content-drafts/THPT_G10_CHIV_B10_CANONICAL.md"))),
+   r02f("R02_ONE_CANONICAL_LESSON_BLOB"),"B10 P2 canonical SHA mismatch");
  }
  assert.equal(blob(source),expected,lesson+" exact final Q18 academic source receipt");
  assert.equal(candidateG10KnowledgeBlob(n),expected,lesson+" Q18 source router selects correct immutable snapshot");

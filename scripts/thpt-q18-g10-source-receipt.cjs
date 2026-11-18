@@ -324,11 +324,22 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    "prototypes/thpt/content-drafts/THPT_G10_CHIV_B10_CANONICAL.md"));
   const calc=b=>require("node:crypto").createHash("sha1")
    .update(Buffer.from("blob "+b.length+String.fromCharCode(0))).update(b).digest("hex");
-  assert.equal(calc(canonical),masterSha,"B10 one current academic manuscript SHA mismatch");
   for(const token of ["Q18_AUTHOR_SELF_VERIFIED","CHIV-10-A","CHIV-10-B","CHIV-10-C",
    "B09-F04","DELTA_C_ACADEMIC_MATERIAL","P1_NOT_PUBLISHED"])
    assert(receipt.includes(token),"B10 mandatory signed self-QA/audit evidence missing "+token);
-  return source;
+  // Published R01 is immutable. P2 visual MathJax fix has a separate DELTA_A receipt.
+  const r02=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B10_P2_MATHJAX_DELTA_A_UI_R02_20261118.md"),"utf8");
+  const f02=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(f02("BASELINE_R01_SOURCE_BLOB"),source,"B10 P2 R02 must chain to published R01 Knowledge");
+  assert.equal(f02("BASELINE_R01_CANONICAL_BLOB"),masterSha,"B10 P2 R02 must chain to published R01 manuscript");
+  for(const keyword of ["DELTA_A_UI","OWNER_P2","MathJax"])
+   assert(r02.includes(keyword),"B10 P2 MathJax receipt is missing scope/provenance "+keyword);
+  const nextSource=f02("R02_SOURCE_BLOB"),nextMaster=f02("R02_ONE_CANONICAL_LESSON_BLOB");
+  assert(/^[a-f0-9]{40}$/.test(nextSource||"")&&/^[a-f0-9]{40}$/.test(nextMaster||""),
+   "B10 P2 R02 source and manuscript must be exactly hash-locked");
+  assert.equal(calc(canonical),nextMaster,"B10 current canonical manuscript must match R02 P2 receipt");
+  return nextSource;
  }
 
  if(name==="B09"){

@@ -132,20 +132,16 @@
     Nếu \(\vec u=(a;b)\), \(\vec v=(c;d)\), \(t\in\mathbb R\), các phép toán thực hiện trên **hai thành phần tương ứng**, không cộng chéo hoành độ và tung độ.
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Phép toán tọa độ:</strong>
-    \[
-    \vec u+\vec v=(a+c;b+d),\quad
-    \vec u-\vec v=(a-c;b-d),\quad
-    t\vec u=(ta;tb).
-    \]
+    <div class="arithmatex">\(\displaystyle \vec u+\vec v=(a+c;b+d)\)</div>
+    <div class="arithmatex">\(\displaystyle \vec u-\vec v=(a-c;b-d)\)</div>
+    <div class="arithmatex">\(\displaystyle t\vec u=(ta;tb).\)</div>
     Suy ra \(\overrightarrow{AB}=(x_B-x_A;y_B-y_A)\) với \(A(x_A;y_A)\), \(B(x_B;y_B)\). Khi đổi chiều, \(\overrightarrow{BA}=-\overrightarrow{AB}\).</div>
 
     **Tại sao lại “cuối trừ đầu”?** Theo Bài 8, \(\overrightarrow{AB}=\overrightarrow{OB}-\overrightarrow{OA}\). Hai vectơ chung gốc \(O\) có tọa độ lần lượt là tọa độ \(B\) và \(A\); vì vậy hiệu của chúng cho ra hai độ dời. Không lấy luôn tọa độ \(B\) nếu \(A\ne O\).
 
     <div class="thpt-r4-key-formula" role="note"><strong>Công thức cần sử dụng — Độ dài và khoảng cách:</strong> Từ định lí Pythagore, với \(\vec u=(a;b)\) và \(A(x_A;y_A),B(x_B;y_B)\):
-    \[
-    |\vec u|=\sqrt{a^2+b^2},\qquad
-    AB=\sqrt{(x_B-x_A)^2+(y_B-y_A)^2}.
-    \]
+    <div class="arithmatex">\(\displaystyle |\vec u|=\sqrt{a^2+b^2}\)</div>
+    <div class="arithmatex">\(\displaystyle AB=\sqrt{(x_B-x_A)^2+(y_B-y_A)^2}.\)</div>
     Độ dài luôn không âm; kết quả bằng \(0\) đúng khi vectơ là \(\vec0\) hoặc hai điểm trùng nhau.</div>
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Nhận xét — Điều kiện cùng phương bằng tọa độ:</strong> Với \(\vec u=(a;b)\ne\vec0\), \(\vec v=(c;d)\) cùng phương với \(\vec u\) khi và chỉ khi có số thực \(t\) sao cho \((c;d)=(ta;tb)\). Tương đương \(ad-bc=0\). Nếu hai vectơ đều khác không thì \(t>0\) cho cùng hướng, \(t<0\) cho ngược hướng. Trường hợp vectơ-không phải xét theo quy ước SGK, không chia cho tọa độ bằng \(0\).</div>
@@ -153,10 +149,8 @@
     **Vì sao điều kiện \(ad-bc=0\) có ích?** Khi một tọa độ bằng \(0\), lập tỉ số \(c/a\) hoặc \(d/b\) có thể vô nghĩa. Phép kiểm \(ad-bc\) chỉ dùng nhân và trừ, không có mẫu số bằng \(0\). Với \(\vec0\), việc nói “hướng mũi tên” cần tách khỏi quy ước cùng phương trong SGK.
 
     <div class="thpt-r4-key-formula" role="note"><strong>Hệ quả hình học — Trung điểm và trọng tâm:</strong> Nếu \(M\) là trung điểm \(AB\), \(G\) là trọng tâm tam giác \(ABC\) (ba đỉnh không thẳng hàng), thì
-    \[
-    M\left(\frac{x_A+x_B}{2};\frac{y_A+y_B}{2}\right),\qquad
-    G\left(\frac{x_A+x_B+x_C}{3};\frac{y_A+y_B+y_C}{3}\right).
-    \]
+    <div class="arithmatex">\(\displaystyle M\left(\frac{x_A+x_B}{2};\frac{y_A+y_B}{2}\right)\)</div>
+    <div class="arithmatex">\(\displaystyle G\left(\frac{x_A+x_B+x_C}{3};\frac{y_A+y_B+y_C}{3}\right).\)</div>
     Công thức là hệ quả của các đẳng thức vectơ trung điểm và \(\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0\), không phải hai mẹo ghi nhớ không liên quan.</div>
 
     <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ — Bài 10:</strong> Vectơ có tọa độ là hai hệ số duy nhất theo \(\vec i,\vec j\); lấy <strong>cuối trừ đầu</strong> để tìm \(\overrightarrow{AB}\); cộng/trừ/nhân số theo từng tọa độ; dùng Pythagore để tính độ dài; kiểm cùng phương với cùng một hệ số hoặc \(ad-bc=0\); chỉ dùng trung điểm/trọng tâm khi có đủ giả thiết. Trong ứng dụng chuyển động, luôn ghi rõ trục, đơn vị và loại vận tốc.</div>
@@ -204,9 +198,7 @@
     **Giải:** (a) \(\vec v_{\mathrm{riêng}}=(0;5)\), \(\vec v_{\mathrm{dòng}}=(3;0)\), nên \(\vec v_{\mathrm{bờ}}=(3;5)\,\mathrm{m/s}\). Thời gian qua sông \(t=96/5=19{,}2\,\mathrm s\); độ trôi Đông \(3\cdot19{,}2=57{,}6\,\mathrm m\).
 
     (b) Muốn không trôi phải có \(\vec v_{\mathrm{bờ},x}=0\), tức thành phần vận tốc riêng hướng Tây bằng \(-3\). Vì tốc độ riêng bằng \(5\), thành phần Bắc cần dương:
-    \[
-    v_{\mathrm{riêng},y}=\sqrt{5^2-3^2}=4\,\mathrm{m/s}.
-    \]
+    <div class="arithmatex">\(\displaystyle v_{\mathrm{riêng},y}=\sqrt{5^2-3^2}=4\,\mathrm{m/s}.\)</div>
     Do đó \(\vec v_{\mathrm{riêng}}=(-3;4)\), \(\vec v_{\mathrm{bờ}}=(0;4)\,\mathrm{m/s}\); thời gian qua sông \(96/4=24\,\mathrm s\), không trôi sang Đông.
 
     **Kiểm lại và giới hạn:** \(3^2+4^2=5^2\) đúng tốc độ riêng; chọn \(-4\) làm thành phần Bắc sẽ đi xa bờ cần đến. Muốn vừa không trôi vừa đi tới bờ đích phải có tốc độ dòng **nhỏ hơn** tốc độ riêng. Không dùng định lí Pythagore để thay cho bước cộng vectơ vận tốc tương đối.

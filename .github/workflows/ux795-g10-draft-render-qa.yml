@@ -206,6 +206,11 @@ jobs:
           test -f prototypes/thpt/ux795/G10_CHIV_B10_S1_PED_SINGLE_CANONICAL_Q18_R01_20261118.md
           cp prototypes/thpt/content-drafts/THPT_G10_CHIV_B10_CANONICAL.md integration-main/prototypes/thpt/content-drafts/
           cp prototypes/thpt/ux795/G10_CHIV_B10_S1_PED_SINGLE_CANONICAL_Q18_R01_20261118.md integration-main/prototypes/thpt/ux795/
+          # B10 owner P2 DELTA_A MathJax: the temporary dry-run overlays R02
+          # Knowledge and R02 canonical, so it must also receive the exact
+          # signed R01→R02 UI receipt. Historical R01 stays unchanged.
+          test -f prototypes/thpt/ux795/G10_CHIV_B10_P2_MATHJAX_DELTA_A_UI_R02_20261118.md
+          cp prototypes/thpt/ux795/G10_CHIV_B10_P2_MATHJAX_DELTA_A_UI_R02_20261118.md integration-main/prototypes/thpt/ux795/
           cp scripts/test-ux795-g10-postmerge-headings.cjs integration-main/scripts/
           (
             cd integration-main
