@@ -1440,7 +1440,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Lời giải tự mở:** x+y=14, 0<x<14; A=x(14−x), A'=14−2x; max49 m² khi x=y=7. A>0 và tiến về0 khi x→0+, nhưng 0 không đạt nên không có min.
 
-**Rubric /4:** 1 xác lập đúng miền/biến; 1 công thức diện tích; 1 tìm tối ưu và đơn vị; 1 xử lý biên mở, giải thích min không tồn tại. Anchor là tag, không clone item.
+**Rubric /4:** 1 xác lập đúng miền/biến; 1 công thức diện tích; 1 tìm tối ưu và đơn vị; 1 xử lý biên mở, giải thích min không tồn tại.
 
 **Nếu làm sai:** Vẽ hình, chọn biến và viết tổng ba cạnh hàng rào trước khi lập A(x).
 
@@ -2134,7 +2134,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Lời giải tự mở:** C'=0.02q+4; C'(50)=5 nghìn đồng/sp; C(51)−C(50)=0.01·101+4=5.01 nghìn đồng; sai số 0.01 nghìn đồng do bước rời rạc.
 
-**Rubric /4:** 1 đạo hàm; 1 giá trị C'(50); 1 sai phân; 1 diễn giải đúng đơn vị và "xấp xỉ". Anchor là nhãn, không nhân bản.
+**Rubric /4:** 1 đạo hàm; 1 giá trị C'(50); 1 sai phân; 1 diễn giải đúng đơn vị và "xấp xỉ".
 
 **Nếu làm sai:** C′(q) là cận biên, ΔC=C(q+1)−C(q) là chênh thực; tính cả hai để so.
 
@@ -2363,7 +2363,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Author-key:** max1 tại1; không min, vì f>0 nhưng →0 ở hai biên bị loại.
+**Đáp án:** max1 tại1; không min, vì f>0 nhưng →0 ở hai biên bị loại.
 
 **Nếu làm sai:** Đừng dùng cực đại địa phương làm GTLN khi f không bị chặn phía trên.
 
@@ -2375,7 +2375,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Author-key:** min1 tại2; max5 tại cả x=0 và4.
+**Đáp án:** min1 tại2; max5 tại cả x=0 và4.
 
 **Nếu làm sai:** Đừng dùng cực đại địa phương làm GTLN khi f không bị chặn phía trên.
 
@@ -2387,7 +2387,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Author-key AFTER FINAL SUBMIT:** f'=3(x−1)(x−3), tăng (−∞,1),(3,+∞), giảm (1,3); cực đại (1,4), cực tiểu (3,0).
+**Đáp án:** f'=3(x−1)(x−3), tăng (−∞,1),(3,+∞), giảm (1,3); cực đại (1,4), cực tiểu (3,0).
 
 **Nếu làm sai:** Đừng dùng cực đại địa phương làm GTLN khi f không bị chặn phía trên.
 
@@ -2413,7 +2413,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Author-key:** D=ℝ\{−1}, g=x+1+4/(x+1), đứng x=−1, xiên y=x+1. g'=1−4/(x+1)²=(x−1)(x+3)/(x+1)². Dấu + trên (−∞,−3),(1,∞); − trên (−3,−1), (−1,1). Cực đại cục bộ (−3,−4), cực tiểu cục bộ (1,4).
+**Đáp án:** D=ℝ\{−1}, g=x+1+4/(x+1), đứng x=−1, xiên y=x+1. g'=1−4/(x+1)²=(x−1)(x+3)/(x+1)². Dấu + trên (−∞,−3),(1,∞); − trên (−3,−1), (−1,1). Cực đại cục bộ (−3,−4), cực tiểu cục bộ (1,4).
 
 **Rubric tự đối chiếu /4:** 1 D/chia; 1 tiệm cận; 1 đạo hàm/dấu; 1 cực trị và nhánh không nối.
 
@@ -2427,7 +2427,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Author-key:** g=x+2+8/(x−2), đứng x=2, xiên y=x+2.
+**Đáp án:** g=x+2+8/(x−2), đứng x=2, xiên y=x+2.
 
 **Nếu làm sai:** TCD cần giới hạn vô cực, tiệm cận xiên cần hiệu tiến0; kiểm đạo hàm theo từng nhánh.
 
@@ -2439,7 +2439,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Author-key:** g=2+7/(x−3), đứng x=3, ngang y=2, tâm (3,2).
+**Đáp án:** g=2+7/(x−3), đứng x=3, ngang y=2, tâm (3,2).
 
 **Nếu làm sai:** TCD cần giới hạn vô cực, tiệm cận xiên cần hiệu tiến0; kiểm đạo hàm theo từng nhánh.
 
@@ -2465,7 +2465,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Author-key:** P'=16−0.4q=0 ⇒ q=40, P(0)=P(80)=−100, P(40)=220 nghìn đồng, tối ưu ở q=40 sản phẩm.
+**Đáp án:** P'=16−0.4q=0 ⇒ q=40, P(0)=P(80)=−100, P(40)=220 nghìn đồng, tối ưu ở q=40 sản phẩm.
 
 **Rubric tự đối chiếu /4:** 1 miền+đơn vị; 1 đạo hàm; 1 so ba giá trị; 1 kết luận thực tế.
 
@@ -2479,7 +2479,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Author-key:** 2x+y=36, 0<x<18; A=x(36−2x), x=9,y=18, Amax162m².
+**Đáp án:** 2x+y=36, 0<x<18; A=x(36−2x), x=9,y=18, Amax162m².
 
 **Nếu làm sai:** Đặt lợi nhuận P=R−C rồi tối ưu P, không tối ưu riêng C hay R.
 
@@ -2491,7 +2491,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Author-key:** v=4t−8, v(1)=−4m/s, đi chiều âm, tốc độ 4m/s.
+**Đáp án:** v=4t−8, v(1)=−4m/s, đi chiều âm, tốc độ 4m/s.
 
 **Nếu làm sai:** Đặt lợi nhuận P=R−C rồi tối ưu P, không tối ưu riêng C hay R.
 
@@ -2543,7 +2543,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Author-key:** Chỉ giảm mỗi khoảng (−∞,−1), (−1,∞). Chọn x1=−2, x2=0: f(x1)=−1<f(x2)=3; không giảm trên toàn hợp.
+**Đáp án:** Chỉ giảm mỗi khoảng (−∞,−1), (−1,∞). Chọn x1=−2, x2=0: f(x1)=−1<f(x2)=3; không giảm trên toàn hợp.
 
 **Nếu làm sai:** Kiểm lại miền, điểm cấm, giới hạn một phía, biên và đơn vị trước kết luận.
 
@@ -2555,7 +2555,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Author-key:** Sai; h=x+2 trên D, lim x→2 h=4 hữu hạn, có lỗ (2,4).
+**Đáp án:** Sai; h=x+2 trên D, lim x→2 h=4 hữu hạn, có lỗ (2,4).
 
 **Nếu làm sai:** Kiểm lại miền, điểm cấm, giới hạn một phía, biên và đơn vị trước kết luận.
 
@@ -2567,7 +2567,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Author-key:** Sai, f'=3x² không đổi dấu, f tăng qua0; không có cực trị tại0.
+**Đáp án:** Sai, f'=3x² không đổi dấu, f tăng qua0; không có cực trị tại0.
 
 **Nếu làm sai:** Kiểm lại miền, điểm cấm, giới hạn một phía, biên và đơn vị trước kết luận.
 
