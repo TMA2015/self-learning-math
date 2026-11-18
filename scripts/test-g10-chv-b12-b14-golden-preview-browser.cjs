@@ -167,6 +167,32 @@ const blob=data=>{
  let total=0;
  try{
   for(const width of [390,820,1440]){
+   // The accepted B10 rendered page is the Golden oracle, not a color guess.
+   const b10=await browser.newPage({viewport:{width,height:width===390?844:width===820?1180:900}});
+   await b10.goto(base+"/thpt-preview/sgk/chuong-iv/bai-10/",
+    {waitUntil:"domcontentloaded",timeout:60000});
+   await b10.waitForFunction(()=>document.querySelector(".md-content__inner")?.dataset.g10ChivGolden==="true");
+   const sample=async p=>p.evaluate(()=>{
+    const root=document.querySelector(".md-content__inner");
+    const get=selector=>{
+     const el=root?.querySelector(selector);
+     if(!el)return null;
+     const cs=getComputedStyle(el);
+     return {background:cs.backgroundColor,border:cs.borderTopColor,
+      borderLeft:cs.borderLeftColor,radius:cs.borderRadius,padding:cs.padding};
+    };
+    return {solution:get(".thpt-g10-example-solution"),
+     concept:get(".thpt-r4-knowledge-conclusion.thpt-r4-concept-card"),
+     rule:get(".thpt-r4-knowledge-conclusion.thpt-r4-rule-card")};
+   });
+   const b10Palette={};
+   for(const scheme of ["default","slate"]){
+    await b10.evaluate(v=>document.body.setAttribute("data-md-color-scheme",v),scheme);
+    b10Palette[scheme]=await sample(b10);
+    assert(Object.values(b10Palette[scheme]).every(Boolean),
+     "B10 Golden reference missing semantic/solution panels");
+   }
+   await b10.close();
    const page=await browser.newPage({viewport:{width,height:width===390?844:width===820?1180:900}});
    page.setDefaultTimeout(20000);
    try{
@@ -258,6 +284,17 @@ const blob=data=>{
         context+" B12 one B10 semantic rule card");
        assert.equal(await blocks.nth(1).locator(".admonition.abstract,.admonition.info").count(),0,
         context+" reject wrong-color default MkDocs knowledge boxes");
+       for(const scheme of ["default","slate"]){
+        await page.evaluate(v=>document.body.setAttribute("data-md-color-scheme",v),scheme);
+        const current=await sample(page);
+        assert.deepEqual(current.solution,b10Palette[scheme].solution,
+         context+" B12 solution color/border/padding MUST match B10 "+scheme);
+        assert.deepEqual(current.concept,b10Palette[scheme].concept,
+         context+" B12 concept color/border/padding MUST match B10 "+scheme);
+        assert.deepEqual(current.rule,b10Palette[scheme].rule,
+         context+" B12 rule color/border/padding MUST match B10 "+scheme);
+       }
+       await page.evaluate(()=>document.body.removeAttribute("data-md-color-scheme"));
        await labels.nth(0).click();
       const fig=blocks.nth(0).locator('img[src*="THPT_G10_B12_ERROR_INTERVAL_D5_R02_REVIEWED.svg"]');
       assert.equal(await fig.count(),1,context+" signed interval figure must guide concept BEFORE tab2");
