@@ -187,7 +187,7 @@ const blob=data=>{
      assert.equal(await blocks.nth(2).locator(":scope > h3").count(),lesson===12?4:3,
       context+" signed number of worked examples");
      assert.equal(await blocks.nth(2).locator(".thpt-g10-example-solution").count(),
-      lesson===12?0:3,context+" B12 complete authored 3.x sections / legacy B13-B14 panels");
+      lesson===12?4:3,context+" all four B12 method-first examples grouped in Golden UI");
      const render=await article.evaluate(root=>{
       const body=getComputedStyle(root.querySelector(".tabbed-block p")).fontSize;
       const labels=[...root.querySelectorAll(":scope > .tabbed-set > .tabbed-labels > label")];
@@ -211,7 +211,7 @@ const blob=data=>{
      assert(render.summaries.every(t=>t.startsWith("Đối chiếu")),context+" opt-in concise result disclosure");
      assert(render.overflow<=3,context+" no horizontal page overflow");
      assert(render.tipsClosed&&render.tipsCount>=2,context+" all D6 remediation stays closed");
-     assert.equal(render.worked.length,lesson===12?0:3,context+" B12 has new four semantic worked sections");
+     assert.equal(render.worked.length,lesson===12?4:3,context+" B12 has four visibly grouped Golden worked solutions");
      assert(render.worked.every(x=>x.text.length>=55&&x.color!=="rgba(0, 0, 0, 0)"),
       context+" each example has unchanged readable source and a visible Golden panel");
      assert.equal(await article.locator("[data-g10-chapter-selfcheck]").count(),0,
