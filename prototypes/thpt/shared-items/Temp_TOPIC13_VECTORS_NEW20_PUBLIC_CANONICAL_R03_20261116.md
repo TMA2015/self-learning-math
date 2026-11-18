@@ -23,7 +23,7 @@ content_version: 1
 **Nhãn bài học:** Luyện 1 · Chiều vectơ hình bình hành
 **Đề:** Trong hình bình hành ABCD, vectơ nào bằng \(\overrightarrow{AB}\): \(\overrightarrow{DC}\) hay \(\overrightarrow{CD}\)?
 **Đối chiếu, lời giải, rubric và D6:**
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 \(\overrightarrow{DC}=\overrightarrow{AB}\) vì cùng hướng và độ dài; \(\overrightarrow{CD}=-\overrightarrow{AB}\) vì ngược hướng.
 
@@ -41,7 +41,7 @@ content_version: 1
 **Nhãn bài học:** Luyện 2 · Vectơ-không theo quy ước KNTT
 **Đề:** Khi A=B, độ dài \(\lvert\overrightarrow{AA}\rvert\) và quan hệ cùng phương của vectơ-không với vectơ khác không theo quy ước KNTT là gì?
 **Đối chiếu, lời giải, rubric và D6:**
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 \(\overrightarrow{AA}=\vec 0\) nên độ dài bằng 0; vectơ-không được quy ước cùng phương và cùng hướng với mọi vectơ. Không suy góc xác định với nó.
 
@@ -59,7 +59,7 @@ content_version: 1
 **Nhãn bài học:** Luyện 3 · Đường đi và độ dời
 **Đề:** Robot đi 5 m về đông rồi 12 m về bắc. Tính tổng quãng đường và độ lớn của vectơ độ dời.
 **Đối chiếu, lời giải, rubric và D6:**
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 Quãng đường là 5+12=17 m; độ dời là √(5²+12²)=13 m. Không lấy tổng hai chặng làm độ dài vectơ.
 
@@ -77,7 +77,7 @@ content_version: 1
 **Nhãn bài học:** Luyện 4 · Hiệu hai vectơ chung gốc
 **Đề:** Cho A=(−1,2), B=(4,3), C=(2,−2). Tính \(\overrightarrow{AB}-\overrightarrow{AC}\) và đối chiếu với một vectơ có điểm đầu C.
 **Đối chiếu, lời giải, rubric và D6:**
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 \(\overrightarrow{AB}=(5,1)\), \(\overrightarrow{AC}=(3,-4)\); \(\overrightarrow{AB}-\overrightarrow{AC}=(2,5)=\overrightarrow{CB}\), vì \(B-C=(2,5)\) theo tọa độ.
 
@@ -95,7 +95,7 @@ content_version: 1
 **Nhãn bài học:** Luyện 5 · Nhân âm với vectơ
 **Đề:** Cho u=(2,−1) và v=−4u. Tìm v, độ dài v và quan hệ hướng với u.
 **Đối chiếu, lời giải, rubric và D6:**
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 v=(−8,4), |u|=√5 nên |v|=4√5. Hệ số −4 đảo hướng của u.
 
@@ -113,7 +113,7 @@ content_version: 1
 **Nhãn bài học:** Luyện 6 · Điểm cân bằng
 **Đề:** Tam giác A=(−3,0), B=(3,0), C=(0,6). Tìm trung điểm M của BC và trọng tâm G. Kiểm \(\overrightarrow{AG}=\tfrac23\overrightarrow{AM}\).
 **Đối chiếu, lời giải, rubric và D6:**
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 \(M=(\tfrac32,3)\), \(G=(0,2)\); \(\overrightarrow{AG}=(3,2)\) và \(\overrightarrow{AM}=(\tfrac92,3)\), nên \(\overrightarrow{AG}=\tfrac23\overrightarrow{AM}\).
 
@@ -131,7 +131,7 @@ content_version: 1
 **Nhãn bài học:** Luyện 7 · Oxy cuối trừ đầu
 **Đề:** Cho A=(−3,4), B=(5,−2). Tính vectơ \(\overrightarrow{AB}\) và độ dài của nó.
 **Đối chiếu, lời giải, rubric và D6:**
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 \(\overrightarrow{AB}=(8,-6)\), độ dài \(AB=|\overrightarrow{AB}|=\sqrt{8^2+6^2}=10\). Không thay hiệu tọa độ bằng tổng giá trị tuyệt đối.
 
@@ -149,7 +149,7 @@ content_version: 1
 **Nhãn bài học:** Luyện 8 · Cùng phương không đồng nghĩa cùng hướng
 **Đề:** Cho u=(4,−6), v=(−2,3). Chúng cùng phương không và có cùng hướng không?
 **Đối chiếu, lời giải, rubric và D6:**
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 v=−(1/2)u, cả hai khác không nên cùng phương nhưng ngược hướng.
 
@@ -167,7 +167,7 @@ content_version: 1
 **Nhãn bài học:** Luyện 9 · Tích vô hướng từ góc
 **Đề:** Hai vectơ có độ dài 8 và 5, góc giữa chúng 120°. Tính tích vô hướng và giải thích dấu.
 **Đối chiếu, lời giải, rubric và D6:**
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 u·v=8·5·cos120°=−20; góc tù nên tích âm. Nếu ra dương, đã bỏ dấu của cos120°.
 
@@ -185,7 +185,7 @@ content_version: 1
 **Nhãn bài học:** Luyện 10 · Vuông góc Oxy
 **Đề:** u=(3,−2),v=(4,6). Kiểm hai vectơ có vuông góc không.
 **Đối chiếu, lời giải, rubric và D6:**
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 u·v=12−12=0 và u,v khác không ⇒ vuông góc.
 
@@ -203,7 +203,7 @@ content_version: 1
 **Nhãn bài học:** Luyện 11 · Đường chéo hình hộp
 **Đề:** Trong hình hộp chữ nhật, ba cạnh xuất phát từ A vuông góc đôi một và dài 3, 4, 12. Tìm độ dài vectơ \(\overrightarrow{AC'}\).
 **Đối chiếu, lời giải, rubric và D6:**
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 Đường chéo không gian dài √(3²+4²+12²)=√169=13. Chỉ dùng tổng bình phương vì ba hướng đôi một vuông góc.
 
@@ -221,7 +221,7 @@ content_version: 1
 **Nhãn bài học:** Luyện 12 · Chasles trong Oxyz
 **Đề:** A=(−1,2,0), B=(2,−1,4), C=(5,3,−2). Hãy tính \(\overrightarrow{AB}\), \(\overrightarrow{BC}\), \(\overrightarrow{AC}\), rồi xác minh quy tắc ba điểm.
 **Đối chiếu, lời giải, rubric và D6:**
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 \(\overrightarrow{AB}=(3,-3,4)\), \(\overrightarrow{BC}=(3,4,-6)\); \(\overrightarrow{AB}+\overrightarrow{BC}=(6,1,-2)=\overrightarrow{AC}\). Cần lấy cuối trừ đầu từng cặp.
 
@@ -239,7 +239,7 @@ content_version: 1
 **Nhãn bài học:** Luyện 13 · Vuông góc trong không gian
 **Đề:** Hai vectơ không gian u=(2,−1,2), v=(1,4,1). Tính u·v và góc giữa chúng.
 **Đối chiếu, lời giải, rubric và D6:**
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 u·v=2−4+2=0; |u|=3 và |v|=3√2 đều khác 0 nên góc bằng 90°.
 
@@ -257,7 +257,7 @@ content_version: 1
 **Nhãn bài học:** Luyện 14 · Tọa độ độ dời Oxyz
 **Đề:** A=(−2,3,1), B=(4,−1,5). Tính tọa độ \(\overrightarrow{AB}\) và khoảng cách từ A tới B.
 **Đối chiếu, lời giải, rubric và D6:**
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 \(\overrightarrow{AB}=(6,-4,4)\); khoảng cách \(AB=|\overrightarrow{AB}|=\sqrt{36+16+16}=\sqrt{68}=2\sqrt{17}\).
 
@@ -275,7 +275,7 @@ content_version: 1
 **Nhãn bài học:** Luyện 15 · Trung điểm Oxyz
 **Đề:** Cho A=(−1,2,4), B=(5,−2,−4). Tìm trung điểm M và khoảng cách AB.
 **Đối chiếu, lời giải, rubric và D6:**
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 \(M=(2,0,0)\); \(\overrightarrow{AB}=(6,-4,-8)\) có độ dài \(AB=\sqrt{36+16+64}=\sqrt{116}=2\sqrt{29}\).
 
@@ -293,7 +293,7 @@ content_version: 1
 **Nhãn bài học:** Luyện 16 · Hai chặng drone
 **Đề:** Drone ở P=(1,−2,0) m, bay u=(4,0,3) m rồi v=(−1,4,0) m. Tìm Q, độ dài độ dời và quãng đường hai chặng.
 **Đối chiếu, lời giải, rubric và D6:**
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 Q=P+u+v=(4,2,3) m. Tổng độ dời=(3,4,3) dài √34 m; quãng đường theo hai chặng=5+√17 m. Hai độ dài khác nhau.
 
@@ -311,7 +311,7 @@ content_version: 1
 **Nhãn bài học:** Tự luận 1 · Tổng vectơ và trọng tâm
 **Đề:** Với A=(−2,1), B=(4,1), C=(1,7), hãy (a) rút gọn \(\overrightarrow{AB}+\overrightarrow{BC}\); (b) tìm trung điểm M của BC; (c) tìm trọng tâm G và chứng minh \(\overrightarrow{AG}=\tfrac23\overrightarrow{AM}\).
 **Đối chiếu, lời giải, rubric và D6:**
-<details markdown="1"><summary>Đối chiếu và rubric /7</summary>
+<details markdown="1"><summary>Lời giải và rubric</summary>
 
 (a) \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}=(3,6)\) (2đ); (b) \(M=(\tfrac52,4)\) (2đ); (c) \(G=(1,3)\) (2đ), \(\overrightarrow{AG}=(3,2)=\tfrac23(\tfrac92,3)=\tfrac23\overrightarrow{AM}\) (1đ). Tổng 7 điểm.
 
@@ -329,7 +329,7 @@ content_version: 1
 **Nhãn bài học:** Tự luận 2 · Tích vô hướng và góc trong Oxy
 **Đề:** Cho tam giác A=(0,0),B=(6,0),C=(2,4). Tính (a) \(\overrightarrow{AB}\cdot\overrightarrow{AC}\); (b) cos góc A; (c) trọng tâm G và diện tích tam giác.
 **Đối chiếu, lời giải, rubric và D6:**
-<details markdown="1"><summary>Đối chiếu và rubric /7</summary>
+<details markdown="1"><summary>Lời giải và rubric</summary>
 
 \(\overrightarrow{AB}=(6,0)\), \(\overrightarrow{AC}=(2,4)\), tích vô hướng bằng 12 (2đ); \(AB=|\overrightarrow{AB}|=6\), \(AC=|\overrightarrow{AC}|=2\sqrt5\), \(\cos A=12/(12\sqrt5)=1/\sqrt5\) (2đ); \(G=(\tfrac83,\tfrac43)\) (2đ); \(S=6\cdot4/2=12\) đơn vị vuông (1đ). Tổng 7 điểm.
 
@@ -347,7 +347,7 @@ content_version: 2
 **Nhãn bài học:** Tự luận 3 · Vectơ đường chéo hình hộp
 **Đề:** Một hình hộp chữ nhật có A=(0,0,0), B=(3,0,0), D=(0,4,0), A'=(0,0,12). Tìm C', độ dài đoạn \(AC'\), tích vô hướng \(\overrightarrow{AB}\cdot\overrightarrow{AC'}\) và cos góc giữa chúng.
 **Đối chiếu, lời giải, rubric và D6:**
-<details markdown="1"><summary>Đối chiếu và rubric /7</summary>
+<details markdown="1"><summary>Lời giải và rubric</summary>
 
 \(C'=(3,4,12)\) (2đ); \(AC'=\lvert\overrightarrow{AC'}\rvert=13\) và \(\overrightarrow{AB}\cdot\overrightarrow{AC'}=9\) (3đ); \(\cos\theta=9/(3\cdot13)=3/13\) (2đ). Tổng 7 điểm.
 
@@ -365,7 +365,7 @@ content_version: 1
 **Nhãn bài học:** Tự luận 4 · Drone và công của lực
 **Đề:** Drone ở P=(0,0,1) m bay u=(2,−1,2) m rồi v=(−1,3,0) m, trong khi lực không đổi F=(1,2,−1) N tác dụng. (a) Tìm Q. (b) Phân biệt quãng đường với độ dài độ dời. (c) Tính công trên tổng độ dời.
 **Đối chiếu, lời giải, rubric và D6:**
-<details markdown="1"><summary>Đối chiếu và rubric /7</summary>
+<details markdown="1"><summary>Lời giải và rubric</summary>
 
 (a) Q=P+u+v=(1,2,3) (2đ); (b) tổng độ dời=(1,2,2) dài 3 m, hai chặng dài 3 và √10 nên quãng đường=3+√10 m (3đ); (c) W=F·(u+v)=1+4−2=3 J, do lực không đổi (2đ). Tổng 7 điểm.
 
