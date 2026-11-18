@@ -7,20 +7,20 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_SPATIAL_PARALLELISM_R04_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 36e94c3752ff2315907a6f3424daa6fa25f80938
-SOURCE_BLOB: 36e94c3752ff2315907a6f3424daa6fa25f80938
+ACADEMIC_SOURCE_BLOB: 6579363666f07f13cf5c7e407b311a08f1e700e2
+SOURCE_BLOB: 6579363666f07f13cf5c7e407b311a08f1e700e2
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_R04_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: e993dbf16a98f0dbd2f19af6d243f221b28b98c6
+AUTHOR_METADATA_BLOB: e8d3d03c5a3a339eac9f68e41429fc0c8621de3c
 ORIGINAL_R02_SOURCE_BLOB: ab4bd6a9f40b4925da35b725ccf396cd3c4eae9b
 ORIGINAL_R03_CANDIDATE_BLOB: 4a5a0c1fd140aab342737f6bde95e37b79237d80
 ORIGINAL_SGK_SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b
-INTERACTIVE_MODEL_BLOB: 3f3c75765b6cddcaa53994027c45e79701d4d840
+INTERACTIVE_MODEL_BLOB: cf6510d5d964958982fae3ebce5823e35aeac639
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
 P2: 0
-AUTHOR_SIGNOFF: TOP15_R04_20261118_RECAP_SOP_Q18_36e94c3752ff2315907a6f3424daa6fa25f80938
+AUTHOR_SIGNOFF: TOP15_R04_20261118_RECAP_SOP_Q18_6579363666f07f13cf5c7e407b311a08f1e700e2
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
@@ -79,7 +79,7 @@ ASSESSMENT_Q16: Public replay eight stems visible, không key/hint/đúng-sai/AI
 
 ## 18/11/2026 — targeted current learner/S1 source receipt
 
-- CURRENT_SOURCE_BLOB `36e94c3752ff2315907a6f3424daa6fa25f80938`; prior edited effective learner source `8270cfa8dc691f21ad5b251ffa0d6f4be82dd570`; original R04 source `581ff0b0c019a705d36f306d7d5b0db38d185c0b` historical. Existing source/proof count `52+50` belongs original Q18 signed version only.
+- CURRENT_SOURCE_BLOB `6579363666f07f13cf5c7e407b311a08f1e700e2`; prior edited effective learner source `8270cfa8dc691f21ad5b251ffa0d6f4be82dd570`; original R04 source `581ff0b0c019a705d36f306d7d5b0db38d185c0b` historical. Existing source/proof count `52+50` belongs original Q18 signed version only.
 - Exact line audit old original→prior: 3 introductory learner prose/MathJax lines and 7 public Selfcheck numbered labels `Câu n. Bài k.`→`Câu n.` (same stem), no new tests/items, no changes to mathematical equations or answers. The present current version introduces one additional four-bullet Knowledge recap (five conceptual group topics), no new definition invented.
 - Math/PED verification: plane by 3 non-collinear points; line intersections with z=0 from parameter shared t (w=0/c=0 contained, w=0/c≠0 disjoint parallel, w≠0 unique intersection); skew lines cannot be parallel due to absent coplanarity; d∥(P) distinct requires d outside P; projection preserves collinearity/segment ratio on a line, but not arbitrary angles/lengths. All agree with original worked examples.
 - Practice 67 canonical visible cards/solutions/Written rubrics plus 8 public question-only selfchecks and 89 canonical IDs unchanged versus pre-edit effective source, original 5 SVG and disclosures byte-exact. `DELTA_C_ACADEMIC_MATERIAL` scoped author-self pedagogical/math review, no independent NotebookLM full Topic verdict or browser RELEASE PASS.
@@ -89,7 +89,16 @@ ASSESSMENT_Q16: Public replay eight stems visible, không key/hint/đúng-sai/AI
 - `52/52` source/structure/matrix/card exact-parity checks PASS.
 - `50/50` numeric and geometric case assertions PASS (trực tiếp tính tọa độ, trung điểm, giao, chéo nhau, song song, diện tích, chiếu và năm tự luận).
 - Five unchanged SVG source Git SHA: `7791308bcdd5cae8528dfdc2ce1085bc4378785d`, `bb4a2f1b9b39b5de2ef4d3221c26f068a873d61c`, `2600483921efb57caa8ac01d9c410ba58c115c18`, `23e50f336fc16927e3e2c3646505f81d8df0631a`, `88cd65cb986f07072da73bd06737aacfb3f70fe2`.
-- Historical Canvas model source blob `3f3c75765b6cddcaa53994027c45e79701d4d840` unchanged; source model standalone smoke checks historical only, no website embedding claim.
+- Historical Canvas model source blob `cf6510d5d964958982fae3ebce5823e35aeac639` unchanged; source model standalone smoke checks historical only, no website embedding claim.
 - `DELTA_C_ACADEMIC_MATERIAL`: 22 expanded concept-first narratives / examples and real Luyện tập/selfcheck projections. `DELTA_B_SOURCE_EQUIVALENT`: 40 old SGK unchanged and 27 Topic P/W answers unchanged, exact original bank hash confirmed. Original R02/R03 snapshot PASS/HOLD history remains unchanged.
 
 **AUTHORING Q18 verdict:** `AUTHOR_SELF_VERIFIED_PASS`, `P0=P1=0` on source `581ff0b0c019a705d36f306d7d5b0db38d185c0b`, not on production. One V2/ready/REGISTER entry to be source-locked; Q16 Final Submit, website AP/R/P1/P2/owner approval remain excluded.
+
+## 18/11/2026 · exact Git source R04 O21/W02 correction and model CSS-only drift QA
+
+- **One student source**, SHA `6579363666f07f13cf5c7e407b311a08f1e700e2`. Prior signed student SHA `36e94c3752ff2315907a6f3424daa6fa25f80938` is historical. Two actual mathematical equalities needed directed vector symbols: `TOP15-O21` example had `AB=(2,0,0)` and `AB·AD=0` whereas bare `AB`/ `AD` denote nonnegative scalar segment lengths. With `A=(0,0,0), B=(2,0,0), D=(0,1,1)`: `vector AB=(2,0,0)`, `vector AD=(0,1,1)`, dot product 0; the image under `T(x,y,z)=(x−z,y,0)` has `A′=(0,0,0), B′=(2,0,0), D′=(-1,1,0)`, so `vector A′B′=(2,0,0)` and `vector A′D′=(-1,1,0)` dot `-2≠0`. This is a genuinely consequential vector/scalar distinction, not a UI-only edit.
+- **Exact same source-owned Written canonical** `THPT-TOP15-W02` has `CONTENT_VERSION: 2` in its existing item marker, **same item_id/outcome and four unchanged 1-point criteria** (total 4); rubric text now uses the proper directed vector dot products while all coordinates, resulting `0` and `-2`, explanation of non-right angle and points remain unchanged. Original R02 rubric as reviewed is retained in history only. **Q15 one canonical** holds; no second public bank, new item, answer or scoring scheme. O21 concept-first narrative and proof directly re-solved; Q03/Q06/PED5/PED6 corrected and P0=P1=P2=0 in affected author verification.
+- **DELTA_C_ACADEMIC_MATERIAL** on O21/W02 mathematics/rubric notation; `AUTHOR_SELF_VERIFIED` by direct coordinate and dot arithmetic. The outcome/score change is unambiguous; `NOTEBOOKLM_REREVIEW=NOT_REQUIRED_WITH_REASON` according to owner Q18 v3/PR #808. Historical 52/52 structural + 50/50 math source checks apply to their exact original snapshot only; this direct calculation is a new **affected-scope** check, not a claim to repeat the whole original 102-test suite or independent Topic reviewer PASS.
+- **Model source SHA drift** analyzed byte-by-byte via Git: original `3f3c75765b6cddcaa53994027c45e79701d4d840` was 100 lines, current `cf6510d5d964958982fae3ebce5823e35aeac639` is 117 lines. Diff inserts only 17 CSS lines (Golden UI colors, sizing, focus/accessibility styles), leaving all original HTML and the Canvas/JS coordinate and line/plane logic byte-identical. Current Q18/A1/V2/ready must pin **actual CSS-modified blob** `cf6510d5d964958982fae3ebce5823e35aeac639`, retaining original blob SHA as historical UI snapshot. This is `DELTA_A_UI` independent of the academic O21/W02 correction, requires browser AP check by RELEASE, **not** new math/NotebookLM review. No claim of model preview QA on real devices.
+- **Curriculum evidence still intact**: 22/22 Knowledge/outcomes/worked examples, 67 Practice (40 original SGK source-owned, 22 Topic Practice, 5 Topic Written), 22 First Tries, 8 question-only PUBLIC Selfchecks from existing P IDs, **89 unique canonical IDs**, 90/90 optional details, 5 original SVG blobs direct read (no change). Source S1 original G11 ChIV owner PR #705 actual wrapper SHA `e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b` verified on sibling branch; integration SOURCE resolution on combined HEAD is independent RELEASE R1 gate.
+- **Historical READY** R02 `6aafb53867cb699a7b270aecb9e165be3b6cc1b1` preserved byte-identically at `archive/THPT-TOPIC15-SPATIAL-PARALLELISM-FULL-R02_HISTORICAL_SIGNED_20261118.md`; current R04 alone in active ready/REGISTER. SOURCE student update / Q18 / A1 / one V2 / ready / REGISTER source checks and exact-head Topic Intake CI to be revalidated, not assumed. No official Topic Readiness, protected RD1, Mastery or merge/deploy.
