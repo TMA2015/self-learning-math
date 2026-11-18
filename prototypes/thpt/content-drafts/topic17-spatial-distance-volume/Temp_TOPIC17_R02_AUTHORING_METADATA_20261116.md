@@ -1,4 +1,4 @@
-# CĐ17 — Khoảng cách & Thể tích · R02 canonical matrix and scope custody · AUTHORING CONTENT_READY (source-only)
+# CĐ17 — Khoảng cách & Thể tích · bản thảo hiệu lực R03 (giữ nguyên đường dẫn học liệu)
 
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
@@ -9,10 +9,10 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 STATE: AUTHORING_CONTENT_READY_SOURCE_ONLY
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 7cfc1c44d8f8aa722118d945900290fd560b621b
+ACADEMIC_SOURCE_BLOB: 9c427674ea0263b8cf7e1e191f1f9a81c3261e91
 ORIGINAL_G11_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_THPT_TOPIC17_FRUSTUM_VOLUME_MODEL_R00_20261113.html
-INTERACTIVE_MODEL_BLOB: 727c05896a9d9bf95385b54559faa22917f1510e
+INTERACTIVE_MODEL_BLOB: cfb2bd522531167003eeae8e7342c6d1349ca425
 MODEL_ID: SLM-TOP17-FRUSTUM-VOLUME-R00
 NO_PRIVATE_RD1_IMPORTED: YES
 NO_MASTERY: YES
@@ -121,3 +121,32 @@ Use old accessible NotebookLM author DRAFT `Temp_TOPIC_10_QUAN_HE_VUONG_GOC_VA_K
 - R02 direct author verification 43/43 structural/source-parity and 69/69 numeric/geometry/volume/edge checks PASS. 22 original G11 SGK stem/key/solution/rubric identical and 15 Topic P/W solutions/rubrics unchanged. 2 original SVG SHA and frustum HTML model unchanged. Source original S1 pages inherited from SGK source receipt; no new PDF scan, no independent NotebookLM review.
 
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC17_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md
+
+
+## R03 — chỉnh trực tiếp bản thảo hiệu lực, không nhân bản học liệu (17/11/2026)
+
+Tệp học liệu chính tại `ACADEMIC_SOURCE_PATH` được sửa đúng một đoạn hướng dẫn học sinh ở **Tự kiểm tra**: thực hiện tám câu hỏi độc lập, trở về Luyện tập mở lời giải để tự đối chiếu và ôn lại. Nội dung cũ lộ thuật ngữ kỹ thuật “Mastery” đã bỏ. Toàn bộ 12 outcome, 49 câu hỏi canonical (57 placements tính cả 8 public replay), 49 khối lời giải, đề/đáp án/rubric, SVG và mô hình không đổi. `CONTENT_REVISION: R03`; bản R02 đã ký nằm trong lịch sử Git, không sử dụng như bản thảo thứ hai để phát hành. `AUTHORING_QA_HOLD` cho đến khi receipt, V2, ready và REGISTER cùng trỏ đúng bản hiện hành và kiểm tra HEAD cần thiết; không phải đánh giá R02 trước đó bị hủy hay lỗi toán mới.
+
+
+## CĐ17 one learner file post-Q18 notation fix
+
+Knowledge frustum exploration now displays a=6, h=4 as proper inline mathematics; no geometry or solution/value changed. Source and exact question-only Selfcheck parity 57 placements, 49 details and 8 public replay confirmed. Q18 receipt remains same pre-existing path and has been updated to reflect the correction; current learner file is the only active candidate.
+
+
+## Full self-study path QA — frustum example
+
+Learner Knowledge 2.4 (TOP17-O10) no longer requires a non-embedded slider: direct explanation derives V=48(1+k+k²) for square frustum with 0≤k≤1 and explicitly works k=0,1/2,1 (48,84,144 cm³). No changed item body, rubric, score, figure, 8 question-only selfcheck or protected RD1. Same learner source file, updated Q18 proof, no duplicate source. Optional HTML model remains an author-only external aid, not a prerequisite.
+
+## 18/11/2026 · Student-structure fix inside Practice disclosure
+
+- Current source `e065ded2448f800bf649d0e30239591d57233fbe`, prior effective R03 `7ee09cea9c33e2ae520a1a40df694ab7118adb42`, same original R02 learner Markdown path. Exactly **one AUTHORING-only H2 text line** `## D5 — Sáu hình học liệu SVG độc lập, có chữ mô tả và kiểm toán hình` occurred *inside* the last SGK Written answer `<details>` block; replaced with a non-rendered AUTHORING_D5 HTML comment, removing malformed heading hierarchy and the apparent unnumbered Practice section.
+- HTML `details` open/close counts unchanged, all 37 original Practice cards and 8 public selfcheck question stems unchanged, 49 canonical IDs, original 6 SVG, answers/Written rubric/math examples exactly same. D5 visual evidence belongs in author metadata, not learner Practice H2.
+- **DELTA_A_UI** source-equivalent formatting only, not a math explanation or assessment edit; metadata STATE BLOCKED_BY_AUTHORING retained until exact source/handoff CI and owner review, no independent NotebookLM/RELEASE claim.
+
+## FINAL owner-active R03 learner at the same R02 path — 18/11/2026
+
+- **Effective student source Git blob `9c427674ea0263b8cf7e1e191f1f9a81c3261e91`** on single owner Draft #853, same original learner path. Prior Draft #900 source `e065ded2448f800bf649d0e30239591d57233fbe` is **historical evidence of three valid student-facing fixes**, not a second active source after consolidation. R02 before those changes `7cfc1c44d8f8aa722118d945900290fd560b621b` also historical. Four precise change locations in current learner vs previous original R02: O10 one line expands self-contained derivation `S=36,S'=36k²,√(SS')=36k,V=48(1+k+k²)`, `k=0/1/2/1\mapsto48/84/144\,cm³`; O11 *one example question stem* clarifies the base is a **right triangle**, not a “square base” `Lăng trụ đứng có đáy là tam giác vuông` with legs 6,8 cm, height 7 cm, calculated (168\,cm³=0.168\,L) unchanged; one orphan technical D5 Practice H2 replaced with an HTML author comment; Self Check opening instructs pen-and-paper answer and comparison after studying, no displayed Mastery jargon. No Practice/Written canonical question/answer/rubric changes, 8 replay IDs or exposed keys.
+- **Affected mathematics/PED:** O10 derivation correct only for `k≥0` and homothetic/similar square bases cut parallel to original base; cases k=0 pyramid 48cm³, k=1/2 frustum 84cm³, k=1 prism 144cm³. O11 is wording clarification of the same triangular prism whose base area is `6·8/2=24 cm²`; V=24·7=168cm³=0.168L. `DELTA_C_ACADEMIC_MATERIAL` for making O10 knowledge independently learnable (not reliant on optional slider), `DELTA_B_SOURCE_EQUIVALENT` for O11 mathematical wording, `DELTA_A_UI` for orphan heading and Self Check coaching/presentation. Direct AUTHOR_SELF_VERIFIED affected Q03/Q04/Q09–Q15 evidence; no independent NotebookLM Topic PASS asserted.
+- **Public visual versus auxiliary custody:** exactly **2 actual learner-visible SVG embeddings** (B26/B27) verified source SHA `26fb51f3af65ba7d86a2907f0eaff808d2d87532` and `a7bec7a20295d09ca6f32aae0e8910cef7bed9dc`. Historical “6 SVG proof” statements in old review narratives must **not** be interpreted as 6 rendered SVGs in this student file. Current optional frustum HTML model Git blob `cfb2bd522531167003eeae8e7342c6d1349ca425` vs old signed `727c05896a9d9bf95385b54559faa22917f1510e`: diff is 17 inserted Golden UI CSS lines **and one non-functional MODEL_ID HTML comment**, with all original HTML/JS/math lines byte-identical; `DELTA_A_UI`, not a mathematical/material update. Not an embedded functional slider or live browser PASS.
+- **S1 canonical owner:** G11 SGK Chapter VII source Git `afc8ec039213b87b4930f2d34d48c28d1fc6277f` confirmed on same current branch; 22 public SGK ID projections and original answers/rubrics retained. 12 lessons/outcomes, 12 worked examples, 12 First Tries, 37 Practice cards, 49 unique canonical IDs (22 SGK+12T+12P+3W), 8 public question-only replay, 49 balanced answer disclosures and no Topic official Readiness/Mastery, private RD1 upload or student-data changes. B22–B25 remain CĐ16, CĐ17 covers B26/B27 + integrated.
+- **Single READY history:** former R00 signed ready blob `359ff8026b193c37a6f9a98ea2344ecd1ff6c0c2` preserved **byte-identical** at `prototypes/thpt/release-queue/archive/THPT-TOPIC17-DISTANCE-VOLUME-FULL-R00_HISTORICAL_SIGNED_20261118.md`, then removed from active ready/REGISTER. Current sole R02-file-named packet has version R03 authoring content and one V2/ready/REGISTER after SHA relock. SOURCE CONTENT_READY author only, not website RELEASE permission.
