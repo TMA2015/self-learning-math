@@ -15,8 +15,9 @@ const gitblob=s=>{
  const b=Buffer.from(s,"utf8");
  return crypto.createHash("sha1").update(Buffer.from("blob "+b.length+"\0")).update(b).digest("hex");
 };
-function fromBaseline(file){
- return cp.execFileSync("git",["show",baseline+":"+file],{cwd:root,encoding:"utf8"});
+function fromBaseline(blobSha){
+ assert(/^[0-9a-f]{40}$/.test(blobSha),"A historic Q18 SHA must be exact Git blob");
+ return cp.execFileSync("git",["cat-file","blob",blobSha],{cwd:root,encoding:"utf8"});
 }
 function tokens(s){
  return [...s.matchAll(/\\\([\s\S]*?\\\)|\\\[[\s\S]*?\\\]/g)].map(x=>x[0]);
@@ -27,8 +28,8 @@ function ids(s,kind){
 for(const [id,chapter,n] of [["B11","iv",11],["B12","v",12]]){
  const lesson="docs/thpt-preview/sgk/chuong-"+chapter+"/bai-"+n+".md";
  const master="prototypes/thpt/content-drafts/THPT_G10_CH"+chapter.toUpperCase()+"_"+id+"_CANONICAL.md";
- const old=fromBaseline(lesson),current=fs.readFileSync(path.join(root,lesson),"utf8");
- const oldM=fromBaseline(master),newM=fs.readFileSync(path.join(root,master),"utf8");
+ const old=fromBaseline(field(id+"_BASELINE_SOURCE_BLOB")),current=fs.readFileSync(path.join(root,lesson),"utf8");
+ const oldM=fromBaseline(field(id+"_BASELINE_CANONICAL_BLOB")),newM=fs.readFileSync(path.join(root,master),"utf8");
  assert.equal(gitblob(old),field(id+"_BASELINE_SOURCE_BLOB"),id+" old signed lesson remains immutable");
  assert.equal(gitblob(oldM),field(id+"_BASELINE_CANONICAL_BLOB"),id+" old canonical snapshot remains immutable");
  assert.equal(gitblob(current),field(id+"_SOURCE_CURRENT_BLOB"),id+" current learner source SHA");
