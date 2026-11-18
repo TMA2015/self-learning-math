@@ -5,18 +5,18 @@
 **B11_BASELINE_SOURCE_BLOB:** `60a3d043694986e3250f15b51350380b86f70cfc`
 **B11_SOURCE_CURRENT_BLOB:** `d35a39eedef9d5b55e96836de83649d9a014e42e`
 **B11_BASELINE_CANONICAL_BLOB:** `db9ec64bc82d44ae09a7cdce79b97e14ac4a2ef8`
-**B11_CANONICAL_CURRENT_BLOB:** `d43ec90d02c1ae9e61d66ee886df82692ba2616d`
+**B11_CANONICAL_CURRENT_BLOB:** `c313fdb96e8a0ca1b1f7062512293efbd44dec21`
 **B12_BASELINE_SOURCE_BLOB:** `fc2942aeafdcd34d3cedd9eeb24c48716bbe7e78`
 **B12_SOURCE_CURRENT_BLOB:** `6b0f137849e11a74a28d4b7fe436d2911a5b5c9d`
 **B12_BASELINE_CANONICAL_BLOB:** `c4ee9f322d158d775be551c9888d426aba8ee16d`
-**B12_CANONICAL_CURRENT_BLOB:** `b07e9f19f7fea1beb4e334924d795d276d0a8eb4`
+**B12_CANONICAL_CURRENT_BLOB:** `fea02a91eef4225c986a846ab89a00ecf0c33faf`
 
 ## One current canonical per lesson (not new manuscripts)
 
 | Lesson | Former reviewed/published Knowledge SHA | Current learner Knowledge SHA | Former immutable canonical SHA | Updated SAME canonical file SHA |
 |---|---|---|---|---|
-| G10-CHIV-B11 | `60a3d043694986e3250f15b51350380b86f70cfc` | `d35a39eedef9d5b55e96836de83649d9a014e42e` | `db9ec64bc82d44ae09a7cdce79b97e14ac4a2ef8` | `d43ec90d02c1ae9e61d66ee886df82692ba2616d` |
-| G10-CHV-B12 | `fc2942aeafdcd34d3cedd9eeb24c48716bbe7e78` | `6b0f137849e11a74a28d4b7fe436d2911a5b5c9d` | `c4ee9f322d158d775be551c9888d426aba8ee16d` | `b07e9f19f7fea1beb4e334924d795d276d0a8eb4` |
+| G10-CHIV-B11 | `60a3d043694986e3250f15b51350380b86f70cfc` | `d35a39eedef9d5b55e96836de83649d9a014e42e` | `db9ec64bc82d44ae09a7cdce79b97e14ac4a2ef8` | `c313fdb96e8a0ca1b1f7062512293efbd44dec21` |
+| G10-CHV-B12 | `fc2942aeafdcd34d3cedd9eeb24c48716bbe7e78` | `6b0f137849e11a74a28d4b7fe436d2911a5b5c9d` | `c4ee9f322d158d775be551c9888d426aba8ee16d` | `fea02a91eef4225c986a846ab89a00ecf0c33faf` |
 
 **B11 canonical current path:** `prototypes/thpt/content-drafts/THPT_G10_CHIV_B11_CANONICAL.md`. 
 **B12 canonical current path:** `prototypes/thpt/content-drafts/THPT_G10_CHV_B12_CANONICAL.md`.
