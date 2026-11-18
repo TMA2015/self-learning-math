@@ -8,22 +8,25 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: c92422e334c3cc0b88008b75d3b13f78f432a1ad
+CONTENT_REVISION: R03_AFFECTED_O12_SOURCE_CORRECTED_20261118
+DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL_O12; DELTA_A_UI_MODEL_CSS
+NOTEBOOKLM_REREVIEW: NOT_REQUIRED_WITH_REASON
+SOURCE_COMMIT: e75ba045ae6a87f3ccea7dcf43ff341250d8e96c
 CATALOG_TOPIC_ID: CD16
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_PERPENDICULARITY_R03_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: ad3fdadb2b6a7150118c2534bf02cf9563f92e26
+ACADEMIC_SOURCE_BLOB: 363316efc7a338e4ec7d5629b182fce3de271356
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC16_R03_AUTHOR_SELF_QA_RECEIPT_20261116.md (SIGNED_AUTHOR_Q18, NOT independent NotebookLM)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC16_R03_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 55ee159e7929545032c76a8493dc48b09a3f593a
+REVIEW_RECEIPT_BLOB: 7ac399da84280f285cf8e25ecf5a16e2f0768a76
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_R03_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: 8424bdccdbf5ea6041da60fea5ea063e90f8b388
+AUTHOR_A1_A7_BLOB: b2fef1fab9629e53bab34295ce858c888bb4448f
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC16-PERPENDICULAR-ANGLE-FULL-R03_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: c8d26ada921bc629636eb0bf3404896ba31a1f04
+AUTHOR_HANDOFF_BLOB: f5c07f374d4437d20fa525aa6d69d7aa319835c5
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_THPT_TOPIC16_RAMP_ANGLE_R01_SCOPE_CORRECTED_20261113.html
-INTERACTIVE_MODEL_BLOB: e14ee4c6ec6c851f228352656b0cd8e2fc3a2a06
+INTERACTIVE_MODEL_BLOB: 931093557eb411b9f78286a92e6545dcbd59aa73
 SVG_B22_BLOB: 5f2d23adb6f947064312d04d67ce5a5bb2d1ff48
 SVG_B23_BLOB: b53b65704f9830e1c97b533bac0e79a0b56761b6
 SVG_B24_BLOB: c98d7df30b87c339336636e00322816a4099681b
@@ -45,7 +48,7 @@ CURRENT_PR: DRAFT_AUTHORING_NOT_MERGED
 
 ## 18/11/2026 · Source-scoped learner recap on signed current snapshot
 
-- Exact learner source `ad3fdadb2b6a7150118c2534bf02cf9563f92e26`, receipt `55ee159e7929545032c76a8493dc48b09a3f593a`, A1 metadata `8424bdccdbf5ea6041da60fea5ea063e90f8b388`, V2 `c8d26ada921bc629636eb0bf3404896ba31a1f04`.
+- Exact learner source `363316efc7a338e4ec7d5629b182fce3de271356`, receipt `7ac399da84280f285cf8e25ecf5a16e2f0768a76`, A1 metadata `b2fef1fab9629e53bab34295ce858c888bb4448f`, V2 `f5c07f374d4437d20fa525aa6d69d7aa319835c5`.
 - Added a concise student recap about geometrical perpendicularity, projection and real height. No original 21 outcome body/definition theorem changed; 86 canonical ID and answer/solution/rubric, 8 public selfchecks, 4 SVG remain unchanged against original signed source `0adf45aa8d776634d66f5c8e57b1c86ad77c8ed2`.
 - DELTA_C academic/pedagogical presentation affected-scope AUTHOR_SELF_VERIFIED; no independent full-Topic NotebookLM verdict, no RELEASE Golden/Final Submit/owner approval.
 
@@ -79,3 +82,10 @@ CURRENT_PR: DRAFT_AUTHORING_NOT_MERGED
 - [ ] P2_DEVICE_UAT — No physical iOS Safari UAT, screenshots/Chromium emulation do not certify real device support.
 
 **RELEASE workflow:** exact source/receipt/handoff verification, then separate integration PR and AP/R/P tests against latest main; reconcile all independent READY rows instead of resetting other Authoring work. **No merge/deploy/Firebase/student data changes** from AUTHORING.
+
+## CURRENT R03 O12 academic / model-UI correction and one effective READY (18/11/2026)
+
+- **Current one learner** `363316efc7a338e4ec7d5629b182fce3de271356`, self-verified exact Q18 `7ac399da84280f285cf8e25ecf5a16e2f0768a76`, A1–A7 `b2fef1fab9629e53bab34295ce858c888bb4448f`, ONE V2 `f5c07f374d4437d20fa525aa6d69d7aa319835c5`. Previous signed R03 source `ad3fdadb2b6a7150118c2534bf02cf9563f92e26` is historical and its broad 51/57 direct checks are snapshot-bound.
+- **Actual TOP16-O12 conceptual defect corrected in place:** source previously said point A(0,0,2) was *in* plane z=0. A is **outside**; H(0,0,0) and B(3,0,0) are inside. Correct line through H direction (0,1,0) is perpendicular BH direction (3,0,0), and `\\overrightarrow{AB}=(3,0,-2)` has dot 0 with c direction, verifying the three perpendicular lines theorem. Exact two changed Knowledge Example lines, NOT a canonical Practice/Written key/condition/answer/rubric edit; 21 outcomes/solved examples/FirstTry/D6, 86 unique canonical, 65 Practice, 8 public question-only replay, four unchanged SVG retained. `DELTA_C_ACADEMIC_MATERIAL` direct author math/PED recheck, no need for independent NotebookLM when this one error is demonstrably resolved; no external Topic reviewer PASS claimed.
+- **Current standalone ramp-angle HTML model SHA** `931093557eb411b9f78286a92e6545dcbd59aa73` supersedes historical `e14ee4c6ec6c851f228352656b0cd8e2fc3a2a06` solely because of 17 added Golden UI CSS lines; all earlier HTML/JS/angle model math byte-identical, `DELTA_A_UI`. Browser/Golden/AP/iOS Safari are not AUTHORING PASS.
+- **R01 signed manifest historical-only:** old ready Git blob `6de988fbe61f2e6bc5e58571e9cad68605cdd990` copied *byte-identical* to `prototypes/thpt/release-queue/archive/THPT-TOPIC16-PERPENDICULAR-ANGLE-FULL-R01_HISTORICAL_SIGNED_20261118.md`, removed from active `ready/`. Exactly one current R03 READY/REGISTER row, no historical PASS transferred to new source. No runtime Topic Readiness/Final Submit/Mastery/merge/deploy authorization.
