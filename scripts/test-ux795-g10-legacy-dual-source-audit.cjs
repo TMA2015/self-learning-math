@@ -10,6 +10,7 @@ const fs=require("node:fs");
 const path=require("node:path");
 const crypto=require("node:crypto");
 const root=path.resolve(__dirname,"..");
+const {candidateG10KnowledgeBlob,chivEditorialReceiptRows,chviEditorialReceiptRows,chviExampleUxReceiptRows}=require("./thpt-q18-g10-source-receipt.cjs");
 const index=process.argv.indexOf("--baseline");
 assert(index>=0&&process.argv[index+1],"--baseline DIR required: use a pristine main checkout");
 const baselineRoot=path.resolve(root,process.argv[index+1]);
@@ -45,8 +46,49 @@ for(const [name,chapter,num]of specs){
  // current main must equal EITHER the old published blob or its exact approved
  // replacement. No arbitrary source drift is accepted.
  const baselineSha=blob(mainRaw);
- assert([row.main,row.candidate].includes(baselineSha),name+" unknown main baseline source drift");
- assert.equal(blob(candidateRaw),row.candidate,name+" staged candidate source drift");
+ // The immutable ChIV v3.1.0 Q18 receipt adds the third approved
+ // state for B09 only. Keep the old ledger snapshots and identity chain:
+ // historical main -> Model B candidate -> S1 editorial candidate.
+ const editorial=chivEditorialReceiptRows().get(name);
+ if(editorial)assert.equal(editorial.baseline,row.candidate,
+   name+" ChIV editorial baseline must equal the historic 27-lesson candidate");
+ const chviReceiptRow=chviEditorialReceiptRows().get(name);
+ if(chviReceiptRow)assert.equal(chviReceiptRow.baseline,row.candidate,name+" ChVI Q18 must extend only historical candidate");
+ const ux=chviExampleUxReceiptRows().get(name);
+ if(ux){
+  assert(chviReceiptRow,name+" UX receipt without original ChVI editorial");
+  assert.equal(ux.baseline,chviReceiptRow.candidate,name+" UX follows published original source, never replaces it");
+ }
+ const b09P1Receipt=name==="B09"?read(root,
+  "prototypes/thpt/ux795/G10_CHIV_B09_CANONICAL_Q18_R05_20261117.md").toString("utf8"):null;
+ const receiptField=(packet,k)=>packet?.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+ const b09PublishedP1=b09P1Receipt?receiptField(b09P1Receipt,"R05_SOURCE_BLOB"):null;
+ if(b09P1Receipt){
+  assert.equal(b09PublishedP1,"a28fa50f223f260c8fded1f42b13065d3e047d63",
+   "B09 historical P1 R05 SHA must match immutable owner-reviewed publication");
+  const r03=read(root,"prototypes/thpt/ux795/G10_CHIV_B09_S1_SEMANTIC_DECOMPOSITION_R03_20261117.md").toString("utf8");
+  assert.equal(receiptField(b09P1Receipt,"BASELINE_R03_SOURCE_BLOB"),
+   receiptField(r03,"R03_SOURCE_BLOB"),"B09 published R05 must follow exact approved R03");
+ }
+ const b09P2Receipt=name==="B09"?read(root,
+  "prototypes/thpt/ux795/G10_CHIV_B09_TAB4_REAL_ERROR_P2_DELTA_C_R06_20261117.md").toString("utf8"):null;
+ const b09OwnerP2=b09P2Receipt?receiptField(b09P2Receipt,"R06_SOURCE_BLOB"):null;
+ if(b09P2Receipt){
+  assert.equal(receiptField(b09P2Receipt,"PRIOR_R05_SOURCE_BLOB"),b09PublishedP1,
+   "B09 P2 owner source must follow exact previous published R05");
+  assert.equal(b09OwnerP2,"3d79a17e9ba39cd0f46077823800f5f38c73e313",
+   "B09 Q18 R06 immutable owner-accepted Knowledge source SHA");
+  assert.equal(receiptField(b09P2Receipt,"PRIOR_R05_CANONICAL_BLOB"),
+   receiptField(b09P1Receipt,"ONE_CANONICAL_LESSON_BLOB"),
+   "B09 R06 one academic manuscript must follow frozen P1 snapshot");
+ }
+ const approvedSources=[row.main,row.candidate,...(editorial?[editorial.candidate]:[]),
+  ...(chviReceiptRow?[chviReceiptRow.candidate]:[]),...(ux?[ux.candidate]:[]),
+  ...(b09PublishedP1?[b09PublishedP1]:[]),
+  ...(b09OwnerP2?[b09OwnerP2]:[])];
+ assert(approvedSources.includes(baselineSha),
+   name+" unknown main baseline source drift outside immutable 27-row/Q18 chain");
+ assert.equal(blob(candidateRaw),candidateG10KnowledgeBlob(num)||row.candidate,name+" exact approved historical/editorial source drift");
  const base=mainRaw.toString("utf8"),s=candidateRaw.toString("utf8");
  assert.deepEqual(getIDs(s),getIDs(base),name+" original First Try/HELP/outcome IDs changed");
  assert.deepEqual([...s.matchAll(/^=== "([^"]+)"$/gm)].map(x=>x[1]),tabs,name+" changed owner Model B tabs");
@@ -56,14 +98,46 @@ for(const [name,chapter,num]of specs){
  if(name==="B09"){
   const a=s.indexOf('=== "Kiến thức SGK"'),b=s.indexOf('=== "Ví dụ"',a);
   assert(a>=0&&b>a,"B09 missing Knowledge area");
-  const actual=[...s.slice(a,b).matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]|\$([^$]+)\$/g)]
+  const originalStart=base.indexOf('=== "Kiến thức SGK"');
+  const originalEnd=base.indexOf('=== "Ví dụ"',originalStart);
+  assert(originalStart>=0&&originalEnd>originalStart,"B09 historic main S1 source intact");
+  const historic=[...base.slice(originalStart,originalEnd).matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]|\$([^$]+)\$/g)]
     .map(x=>(x[1]??x[2]??x[3]).trim().replace(/\s+/g," "));
-  assert(actual.some((_,i)=>i+30<=actual.length&&frozen.every((v,j)=>actual[i+j]===v)),
-    "B09 protected original 30 math expressions lost or reordered");
+  if(baselineSha===b09PublishedP1||baselineSha===b09OwnerP2){
+   // This main source is the immutable R05 owner P1 publication, not the
+   // original 30-expression historical baseline. Validate its signed SHA,
+   // complete S1 meaning, stable First Tries and new diagram, not the old
+   // expression order that legitimately changed under reviewed Delta C.
+   assert(base.includes("Phân tích duy nhất theo hai vectơ không cùng phương")&&
+    base.includes("THPT_G10_B09_DECOMPOSITION_TWO_DIRECTIONS_D5_R03.svg")&&
+    base.includes("THPT-G10-CHIV-TRY11"),"B09 signed R05 published main mathematics missing");
+  }else{
+   assert(historic.some((_,i)=>i+30<=historic.length&&frozen.every((v,j)=>historic[i+j]===v)),
+    "B09 immutable 30-expression witness lost in historical main");
+  }
+  // R03 changes notation and prose semantically: candidate must keep each
+  // essential S1 mathematical law plus the newly restored decomposition.
+  // Reordering is allowed ONLY under signed academic Q18 Delta C source.
+  const knowledge=s.slice(a,b),tight=knowledge.replace(/\s+/g,"");
+  for(const formula of [
+   "k(\\vec u+\\vec v)=k\\vec u+k\\vec v",
+   "(k+m)\\vec u=k\\vec u+m\\vec u",
+   "k(m\\vec u)=(km)\\vec u",
+   "1\\vec u=\\vec u","(-1)\\vec u=-\\vec u",
+   "\\vec u=x\\vec a+y\\vec b",
+   "\\overrightarrow{AG}"
+  ])assert(tight.includes(formula.replace(/\s+/g,"")),
+   "B09 signed Delta C missing original/new mandatory SGK formula: "+formula);
+  assert(knowledge.includes("Phân tích duy nhất theo hai vectơ không cùng phương")&&
+   knowledge.includes("THPT_G10_B09_DECOMPOSITION_MOBILE_D5_R03.svg"),
+   "B09 signed academic Delta C must restore decomposition with responsive diagram");
+  const packet=read(root,"prototypes/thpt/ux795/G10_CHIV_B09_S1_SEMANTIC_DECOMPOSITION_R03_20261117.md").toString("utf8");
+  assert(packet.includes("BLOCKED_BY_AUTHORING")&&packet.includes("NO_CANONICAL_DECOMPOSITION_ITEM"),
+   "B09 semantic source comparison cannot certify independent assessment");
    assert.equal(row.main,historicalMainB09GitBlob,"B09 ledger must retain immutable historic published Git blob");
    assert.notEqual(blob(candidateRaw),historicalMainB09GitBlob,"B09 must remain a distinct source-locked Delta C");
   assert.equal(ids.first.length,5);assert.equal(ids.help.length,2);
-  console.log("PASS EVIDENCE B09: 30/30 original math; 5 FirstTry/2 HELP; old+new source hashes");
+  console.log("PASS EVIDENCE B09: historical 30-math witness frozen; baseline SHA "+baselineSha+" approved R03→R05→R06 chain, five First Tries/two HELP, Q18 current candidate math signed");
  }else{
   const old=chvi.match(new RegExp(num+':\\{display:(\\d+),inline:(\\d+),sha:"([a-f0-9]{40})",tries:(\\d+),extraFold:(\\d+)\\}'));
   assert(old,name+" historical math spec missing");
@@ -77,7 +151,7 @@ for(const [name,chapter,num]of specs){
  }
  const mutated=s.replace('data-thpt-first-try-id="','data-thpt-first-try-id="CORRUPTED-');
  assert.notDeepEqual(getIDs(mutated),getIDs(base),name+" negative canonical-ID mutation must be caught");
- assert.notEqual(blob(Buffer.from(s+" ","utf8")),row.candidate,name+" negative source-drift mutation must be caught");
+ assert.notEqual(blob(Buffer.from(s+" ","utf8")),candidateG10KnowledgeBlob(num)||row.candidate,name+" negative source-drift mutation must be caught");
 }
 console.log("PASS DUAL-SOURCE MATH EVIDENCE: five lessons, 27-row SHA ledger, B09 historic 30 expressions, immutable source and canonical IDs; no obsolete test-file textual gate.");
 console.log("NOT an Academic/PED PASS, NOT authorized Q18 self-QA, NOT a substitute for official R4/Roadmap; NO DEPLOY.");

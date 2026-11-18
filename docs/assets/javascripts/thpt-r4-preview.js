@@ -649,6 +649,26 @@
    footer.append(button,holder);modalBody.append(footer);
   };
 
+  // Load B09 R04 only when its public G10 Chapter IV Practice route is opened.
+  // No global MkDocs/Golden config change, no B07–B08 P2 or held-out assessment mutation.
+  let b09ExtensionPending=null;
+  const loadB09PracticeExtension=()=>{
+   const module=window.THPT_G10_B09_DECOMP_R04_EXTENSION;
+   if(module?.validate().valid)return Promise.resolve(module);
+   const practicePath=location.pathname;
+   if(!practicePath.includes("/thpt-preview/sgk/chuong-iv/luyen-tap")&&
+      !practicePath.includes("/thpt/sgk/chuong-iv/luyen-tap"))
+    return Promise.resolve(null);
+   if(!b09ExtensionPending)b09ExtensionPending=new Promise(resolve=>{
+    const script=document.createElement("script");
+    script.src=new URL("../../../../assets/javascripts/thpt-g10-b09-decomp-r04-formative-extension.js",location.href).href;
+    script.onload=()=>resolve(window.THPT_G10_B09_DECOMP_R04_EXTENSION||null);
+    script.onerror=()=>resolve(null);
+    document.head.append(script);
+   });
+   return b09ExtensionPending;
+  };
+
   root.querySelectorAll("[data-thpt-open-quiz]").forEach(button=>{
    button.addEventListener("click",async()=>{
     if(!pendingD6Item)returnFocus=button;
@@ -662,9 +682,19 @@
     dlg.querySelector(".thpt-r4-modal-meta").textContent=isG11?("LỚP 11 · CHƯƠNG "+(Number(lesson)<=4?"I":Number(lesson)<=7?"II":Number(lesson)<=9?"III":Number(lesson)<=14?"IV":Number(lesson)<=17?"V":Number(lesson)<=21?"VI":Number(lesson)<=27?"VII":Number(lesson)<=30?"VIII":"IX")):"LỚP 10 · CHƯƠNG "+(Number(lesson)<=2?"I":Number(lesson)<=4?"II":Number(lesson)<=6?"III":Number(lesson)<=11?"IV":Number(lesson)<=14?"V":Number(lesson)>=26?"IX":Number(lesson)>=23?"VIII":Number(lesson)>=19?"VII":"VI");
     modalTitle.textContent=role+" · Bài "+lesson+". "+(isG11?g11LessonTitle[lesson]:lessonTitle[lesson]);
     modalBody.textContent="Đang mở nội dung…";lifecycle.open(button);
+    if(!isG11&&Number(lesson)===9&&parts[2]==="practice")
+     await loadB09PracticeExtension();
     const activeBank=isG11?(Number(lesson)<=2?window.THPT_G11_CHI_REVIEWED_FORMATIVE:Number(lesson)<=4?window.THPT_G11_CHI_B03_B04_REVIEWED_FORMATIVE:Number(lesson)<=7?window.THPT_G11_CHII_REVIEWED_FORMATIVE:Number(lesson)<=9?window.THPT_G11_CHIII_REVIEWED_FORMATIVE:Number(lesson)<=14?window.THPT_G11_CHIV_REVIEWED_FORMATIVE:Number(lesson)<=17?window.THPT_G11_CHV_REVIEWED_FORMATIVE:Number(lesson)<=21?window.THPT_G11_CHVI_REVIEWED_FORMATIVE:Number(lesson)<=27?window.THPT_G11_CHVII_REVIEWED_FORMATIVE:Number(lesson)<=30?window.THPT_G11_CHVIII_REVIEWED_FORMATIVE:window.THPT_G11_CHIX_REVIEWED_FORMATIVE):Number(lesson)<=2?window.THPT_CHI_REVIEWED_FORMATIVE:Number(lesson)<=4?window.THPT_CHII_REVIEWED_FORMATIVE:Number(lesson)<=6?window.THPT_CHIII_REVIEWED_FORMATIVE:Number(lesson)<=8?window.THPT_CHIV_B07_B08_REVIEWED_FORMATIVE:Number(lesson)<=11?window.THPT_CHIV_B09_B11_REVIEWED_FORMATIVE:Number(lesson)===12?window.THPT_CHV_B12_REVIEWED_FORMATIVE:Number(lesson)<=14?window.THPT_CHV_B13_B14_REVIEWED_FORMATIVE:Number(lesson)>=26?window.THPT_CHIX_REVIEWED_FORMATIVE:Number(lesson)>=23?window.THPT_CHVIII_REVIEWED_FORMATIVE:Number(lesson)>=19?window.THPT_CHVII_REVIEWED_FORMATIVE:reviewed;
     if(activeBank?.validate().valid){
-     const items=activeBank.forLesson(lesson,parts[2]);
+     const originalItems=activeBank.forLesson(lesson,parts[2]);
+     // G10 B09 R04 adds one original, self-verified PUBLIC practice item only.
+     // The immutable B09–B11 R01 reviewed bank and all other routes stay unchanged.
+     const b09Extension=!isG11&&Number(lesson)===9&&parts[2]==="practice"?
+      window.THPT_G10_B09_DECOMP_R04_EXTENSION:null;
+     const extensionItems=b09Extension?.validate().valid?
+      b09Extension.forLesson(lesson,parts[2]):[];
+     const items=extensionItems.length&&!originalItems.some(x=>x.item_id===extensionItems[0].item_id)?
+      [...originalItems,...extensionItems]:originalItems;
      if(items.length){
       showReviewed(items,pendingD6Item||new URLSearchParams(location.search).get("item"));
       pendingD6Item=null;
@@ -709,7 +739,9 @@
    const isG11=Boolean(parsedG11||integratedG11);
    const lesson=isG11?(integratedG11?(requestedItem.startsWith("THPT-G11-CHIX-CHIX-")?"33":requestedItem==="THPT-G11-CHVIII-CHVIII-P01"?"30":"27"):(parsedG11[1]||parsedG11[2]||parsedG11[3]||parsedG11[4]||parsedG11[5]||parsedG11[6]||parsedG11[7])):parsed[1], bank=isG11?(Number(lesson)<=2?window.THPT_G11_CHI_REVIEWED_FORMATIVE:Number(lesson)<=4?window.THPT_G11_CHI_B03_B04_REVIEWED_FORMATIVE:Number(lesson)<=7?window.THPT_G11_CHII_REVIEWED_FORMATIVE:Number(lesson)<=9?window.THPT_G11_CHIII_REVIEWED_FORMATIVE:Number(lesson)<=14?window.THPT_G11_CHIV_REVIEWED_FORMATIVE:Number(lesson)<=17?window.THPT_G11_CHV_REVIEWED_FORMATIVE:Number(lesson)<=21?window.THPT_G11_CHVI_REVIEWED_FORMATIVE:Number(lesson)<=27?window.THPT_G11_CHVII_REVIEWED_FORMATIVE:Number(lesson)<=30?window.THPT_G11_CHVIII_REVIEWED_FORMATIVE:window.THPT_G11_CHIX_REVIEWED_FORMATIVE):Number(lesson)<=2?window.THPT_CHI_REVIEWED_FORMATIVE:Number(lesson)<=4?window.THPT_CHII_REVIEWED_FORMATIVE:Number(lesson)<=6?window.THPT_CHIII_REVIEWED_FORMATIVE:Number(lesson)<=8?window.THPT_CHIV_B07_B08_REVIEWED_FORMATIVE:Number(lesson)<=11?window.THPT_CHIV_B09_B11_REVIEWED_FORMATIVE:Number(lesson)===12?window.THPT_CHV_B12_REVIEWED_FORMATIVE:Number(lesson)<=14?window.THPT_CHV_B13_B14_REVIEWED_FORMATIVE:Number(lesson)>=26?window.THPT_CHIX_REVIEWED_FORMATIVE:Number(lesson)>=23?window.THPT_CHVIII_REVIEWED_FORMATIVE:window.THPT_CHVII_REVIEWED_FORMATIVE;
    if(bank?.validate().valid){
-    const placement=["core","practice"].find(role=>bank.forLesson(lesson,role).some(item=>item.item_id===requestedItem));
+    const isB09Extension=!isG11&&requestedItem==="THPT-G10-B09-P07";
+    const placement=isB09Extension?"practice":
+     ["core","practice"].find(role=>bank.forLesson(lesson,role).some(item=>item.item_id===requestedItem));
     const trigger=placement?root.querySelector('[data-thpt-open-quiz="'+(isG11?"g11-b":"b")+Number(lesson)+'-'+placement+'"]'):null;
     trigger?.click();
    }
