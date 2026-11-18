@@ -1,12 +1,12 @@
 # AUTHORING-only metadata — CĐ13 Vectơ hình học phẳng và không gian R04
 
-**Scope:** one self-sufficient Topic in three learner pages, 16 modules/outcomes, 16 self-tries, 16 new Practice and 4 Written rubrics /7; active learner source 94e24a128c33efc141f6be52ad11656973043567. Internal IDs/receipts are not learner-visible.
+**Scope:** one self-sufficient Topic in three learner pages, 16 modules/outcomes, 16 self-tries, 16 new Practice and 4 Written rubrics /7; active learner source 2fe260f6da3f4eedec7d9b8c93d683915493cc1e. Internal IDs/receipts are not learner-visible.
 
-CONTENT_REVISION: R07
+CONTENT_REVISION: R07_EDITORIAL_FINAL_20261118
 PUBLIC_NEW20_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md
-PUBLIC_NEW20_CANONICAL_BANK_BLOB: e2f71e56479a08c4f8bb5f949d4ed8e249983cd6
+PUBLIC_NEW20_CANONICAL_BANK_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563
 Q18_R04_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-Q18_R04_RECEIPT_BLOB: 74eb71875e2bbde3902b9eb52f60a419d4abe864
+Q18_R04_RECEIPT_BLOB: 0da86e86df36c1e8548076fa50935912af57b991
 G10_SOURCE_EXTERNAL_PR: 750
 G10_SOURCE_EXTERNAL_BRANCH: authoring/g10-chiv-ped-r02-24-outcomes-20261105
 AUTHORING_STATUS: R07_VECTOR_AND_RUBRIC_Q18_AUTHOR_SELF_VERIFIED
@@ -16,8 +16,8 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 94e24a128c33efc141f6be52ad11656973043567
-SOURCE_BLOB: 94e24a128c33efc141f6be52ad11656973043567
+ACADEMIC_SOURCE_BLOB: 2fe260f6da3f4eedec7d9b8c93d683915493cc1e
+SOURCE_BLOB: 2fe260f6da3f4eedec7d9b8c93d683915493cc1e
 ORIGINAL_G10_SGK_SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9
 ORIGINAL_G12_SGK_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
@@ -234,10 +234,15 @@ Previous R05 learner snapshot `9a558f553bd6a4a58701a6bae490717ba5a52540`, NEW20 
 
 ## R07 — CURRENT source, NEW20 and signed Q18 closure (18/11/2026)
 
-This is the superseding **effective** A1–A7 source lock for the one current learner: `94e24a128c33efc141f6be52ad11656973043567`, one NEW20 canonical bank `e2f71e56479a08c4f8bb5f949d4ed8e249983cd6`, and the only current Q18 composite `74eb71875e2bbde3902b9eb52f60a419d4abe864`. Prior R03–R06 sources and bank SHA values in historical sections above are *not* the active current source or 2026-11-18 accepted bank.
+This is the superseding **effective** A1–A7 source lock for the one current learner: `2fe260f6da3f4eedec7d9b8c93d683915493cc1e`, one NEW20 canonical bank `c74505ba59d047c19943c2309f5fd7c033ac9563`, and the only current Q18 composite `0da86e86df36c1e8548076fa50935912af57b991`. Prior R03–R06 sources and bank SHA values in historical sections above are *not* the active current source or 2026-11-18 accepted bank.
 
 - **A1 S1 provenance:** G10 ChIV first-party canonical source exact Git `96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9` on Draft #750; G12 ChII source exact `856a37bd16d2746ffc2e12906de18d1f4338a3b6` locally on this branch; no new SGK/SBT PDF scan claimed. Cross-PR source presence on combined RELEASE HEAD remains separately required; do not make SGK copy to force an AUTHORING pass.
 - **A2/A3/A4:** 16 outcome/lesson IDs, 16 independently worked examples and 16 immediate voluntary First Tries; 52 source canonical IDs (20 original G10+12 G12+20 Topic), current NEW20 20/20 stems exact in learner Practice; one item one ID, one authoritative bank. Corrected clearer notational wording in P01/P02/P11 and W03; **W03 content_version=2** because mathematical dot-product rubric now explicitly arrows, same 2+3+2=7 allocations and answer cos=3/13. No second W03 item or rubric created. Other stable Practice mathematics/SGK original authority unchanged.
 - **A5/A6:** 4 original math SVG (5 learner placements) unchanged; all original 68/68 disclosure boundaries balanced, 16 question-only Self Check IDs reused from existing Practice and six stem notation clarifications with zero exposed solutions. `CLIENT_SELF_CHECK_NO_MASTERY`, no private RD1, Final Submit, official readiness or Mastery.
 - **A7/Q18:** current `DELTA_C_ACADEMIC_MATERIAL` for affected O07/O08/O11/O14/O15 vector/length meaning and W03 rubric; `DELTA_B_SOURCE_EQUIVALENT` for otherwise identical notation clarification. Recomputed actual coordinate/vector lengths and W03 dot-product values/units from source in signed Q18, P0=P1=P2=0 within affected scope. No full numeric 40/40 historical rerun falsely claimed. Owner-effective Q18 v3 merged PR #808 permits this `AUTHOR_SELF_VERIFIED` with actual mathematical/PED/S1/Q15/Q16 evidence; independent NotebookLM targeted review not required for this deterministically checked delta.
 - **Handoff boundary:** source must match one current V2/ready/REGISTER and final Topic V2 exact-head CI; no RELEASE rendering/AP/P1/P2/merge/deploy authority is implied.
+
+
+## R07 final source snapshot — editorial #864 signoff (18/11/2026)
+
+The final *effective* student Git blob `2fe260f6da3f4eedec7d9b8c93d683915493cc1e` has one single learner-visible **Nguồn tham khảo** line at the absolute end with verified S1 textbook class/volume/chapter; no printed/PDF index/Git source metadata. 48 Practice disclosure controls now read `Lời giải` and 4 Written disclosure controls read `Lời giải và rubric`, with 16 Knowledge voluntary First Try controls still reading `Đối chiếu`. One NEW20 bank `c74505ba59d047c19943c2309f5fd7c033ac9563` uses the identical two Practice/Written reveal captions. All canonical source IDs, stem/key/solution numbers, W03 rubric 2+3+2=7 and `content_version=2`, 16 public replay IDs, 4 original SVG and 68 reveal pairings unchanged. `DELTA_A_UI` only for the last footer/caption corrections, included within the *same* one Q18 author composite Git blob `0da86e86df36c1e8548076fa50935912af57b991`. Earlier vector/scalar `DELTA_C` self-reviewed Q18 remains valid because the latest delta doesn't touch its mathematics. No new NotebookLM review required; no RELEASE/source-owner #750 source copy, merge or deploy.
