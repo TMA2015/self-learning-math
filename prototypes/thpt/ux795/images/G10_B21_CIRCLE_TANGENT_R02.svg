@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 450" role="img" aria-labelledby="t d"><title id="t">Đường tròn tâm I(2,1) bán kính 3 và tiếp tuyến tại T(5,1)</title><desc id="d">Trong hệ trục vuông góc, đường tròn (x−2) bình phương cộng (y−1) bình phương bằng 9 có tâm I(2,1), bán kính IT=3 tới T(5,1). Tiếp tuyến tại T là đường thẳng x=5, vuông góc bán kính IT.</desc>
+<rect width="760" height="450" fill="#f8fbff" rx="22"/><text x="22" y="42" font-family="Arial,sans-serif" font-weight="700" font-size="23" fill="#173a66">Tâm và bán kính quyết định đường tròn</text><line x1="90" y1="250" x2="715" y2="250" stroke="#8396ad" stroke-width="2"/><line x1="330" y1="412" x2="330" y2="66" stroke="#8396ad" stroke-width="2"/>
+<circle cx="420" cy="205" r="135" fill="#e5f1ff" fill-opacity=".35" stroke="#205e9a" stroke-width="4"/>
+<line x1="420" y1="205" x2="555" y2="205" stroke="#b26623" stroke-width="4"/><line x1="555" y1="53" x2="555" y2="397" stroke="#328175" stroke-width="4"/><path d="M543 205 V217 H555" stroke="#b26623" stroke-width="3" fill="none"/>
+<circle cx="420" cy="205" r="6" fill="#244c79"/><circle cx="555" cy="205" r="6" fill="#244c79"/>
+<g font-family="Arial,sans-serif" font-size="18" fill="#19395d"><text x="402" y="186">I(2;1)</text><text x="568" y="196">T(5;1)</text><text x="470" y="195">R=3</text><text x="570" y="82">x=5</text></g>
+<text x="24" y="429" font-size="18" font-family="Arial,sans-serif" fill="#3b587a">(x−2)²+(y−1)²=9. Bán kính luôn vuông góc với tiếp tuyến tại điểm tiếp xúc.</text></svg>

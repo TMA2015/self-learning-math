@@ -7,6 +7,7 @@
  * Never render R00 wrong-arrowhead force/river drawings. No RD1/Mastery.
  */
 const assert=require("node:assert/strict"),fs=require("node:fs"),crypto=require("node:crypto"),path=require("node:path");
+const {expectedG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 const root=path.resolve(__dirname,".."),read=p=>fs.readFileSync(path.join(root,p),"utf8");
 const sha=t=>{const b=Buffer.from(t);return crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+b.length+"\0"),b])).digest("hex")};
 const gitblob=p=>sha(read(p));
@@ -186,6 +187,42 @@ const names=["Vì sao cần học","Kiến thức cần nhớ trước","Hiểu 
 const ansNames=["Kết quả","Vì sao","Đường tự sửa nếu mắc lỗi"],seen=[];
 for(const n of [7,8,9,10,11]){
  const path="docs/thpt-preview/sgk/chuong-iv/bai-"+n+".md",s=read(path);
+  // Candidate Model B replaces historical comment boundaries with 4 tabs.
+  // Preserve original canonical First Try/outcome/D6 and source Git blob;
+  // the historical bounded-FNV verification below stays unchanged for old pages.
+  const tabs=[...s.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]);
+  if(tabs.length){
+   assert.deepEqual(tabs,["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
+     "B"+n+": four exact owner Knowledge tabs");
+   assert.equal(sha(s),expectedG10KnowledgeBlob(n,original[n]),"B"+n+": candidate source blob drift");
+   const originalRecords=records.filter(x=>x.lesson===n);
+   const matches=[...s.matchAll(/data-thpt-first-try-id="([^"]+)" data-outcome-id="([^"]+)" data-thpt-help-ref="([^"]+)"/g)]
+      .filter(x=>/^THPT-G10-CHIV-TRY\d\d$/.test(x[1]));
+   assert.equal(matches.length,originalRecords.length,"B"+n+": reviewed First Try coverage changed");
+   matches.forEach((m,i)=>{
+    const rec=originalRecords[i];
+    assert.equal(m[1],rec.id,"B"+n+": canonical item ID/order changed");
+    assert.equal(m[2],rec.outcome,"B"+n+": original outcome changed");
+    assert.equal(m[3],rec.help,"B"+n+": D6 binding changed");
+    assert(!seen.includes(rec.id),"B"+n+": duplicate canonical First Try");seen.push(rec.id);
+    const at=s.indexOf('data-thpt-first-try-id="'+rec.id+'"');
+    const next=i+1<originalRecords.length?
+      s.indexOf('data-thpt-first-try-id="'+originalRecords[i+1].id+'"',at+1):s.length;
+    assert(at>=0&&next>at&&/^\s*\?\?\? question "/m.test(s.slice(at,next)),
+      "B"+n+": closed answer missing "+rec.id);
+    const helpAt=s.indexOf('data-thpt-help-id="'+rec.help+'"');
+    assert(helpAt>=0&&/^\s*\?\?\? tip "/m.test(s.slice(helpAt,helpAt+1900)),
+      "B"+n+": canonical D6 help must be closed "+rec.help);
+   });
+   assert.equal((s.match(/^    \?\?\? question "/gm)||[]).length,
+     originalRecords.length+(n===10||n===11?1:0),"B"+n+": answer fold counts");
+   for(const i of [1,2])assert.equal(
+     (s.match(new RegExp('data-thpt-help-id="HELP-G10-B'+String(n).padStart(2,"0")+'-0'+i+'"','g'))||[]).length,1,
+     "B"+n+": original D6 identity lost");
+   assert(!/data-thpt-readiness|data-mastery-credit|data-mastery-write/.test(s),
+     "B"+n+": Knowledge cannot activate official assessment/Mastery");
+   continue;
+  }
  const bounded=/<!-- G10_CHIV_FULL_R04_ALL_BEGIN -->[\s\S]*?<!-- G10_CHIV_FULL_R04_ALL_END -->\n\n/g;
  assert.equal([...s.matchAll(bounded)].length,1,"One bounded source-locked pedagogy section B"+n);
  const afterB11=/<!-- G10_CHIV_POST_B11_TRANSFER_ALL_BEGIN -->[\s\S]*?<!-- G10_CHIV_POST_B11_TRANSFER_ALL_END -->\n\n/g;
@@ -220,6 +257,58 @@ const transfer={FORCE:{lesson:11,stem:"THPT-G10-CHIV-TRY-FORCE-TR01",outcome:"G1
  RIVER:{lesson:10,stem:"THPT-G10-CHIV-TRY-RIVER-TR01",outcome:"G10-B10-OPERATIONS",help:"HELP-G10-CHIV-RIVER-TR01",ex:"EX-G10-B10-RIVER-TR01",written:"THPT-G10-CHIV-W10-RIVER-TR01",hash:"debe3fa6"}};
 const pedNames=["Vì sao cần học","Kiến thức tiền đề","Hiểu bản chất trước công thức","Hướng dẫn đọc hình","Chọn phương pháp và giới hạn"];
 for(const [tag,rec]of Object.entries(transfer)){
+  const modelB=read("docs/thpt-preview/sgk/chuong-iv/bai-"+rec.lesson+".md");
+  if(modelB.includes('=== "Khám phá kiến thức"')){
+   assert(modelB.includes('data-thpt-first-try-id="'+rec.stem+'"')&&
+     modelB.includes('data-outcome-id="'+rec.outcome+'"')&&
+     modelB.includes('data-thpt-help-ref="'+rec.help+'"')&&
+     modelB.includes('data-thpt-help-id="'+rec.help+'"'),
+     "Transfer source canonical Q15/outcome/D6 "+tag);
+   if(tag==="RIVER"){
+    // B10 has owner-authorized Q18 Delta C: full river worked solution moved
+    // from Discovery to Golden Tab3, not removed or duplicated. Exact source SHA.
+    const r=read("prototypes/thpt/ux795/G10_CHIV_B10_S1_PED_SINGLE_CANONICAL_Q18_R01_20261118.md");
+    const field=k=>r.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    const r02=read("prototypes/thpt/ux795/G10_CHIV_B10_P2_MATHJAX_DELTA_A_UI_R02_20261118.md");
+    const f02=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    assert.equal(f02("BASELINE_R01_SOURCE_BLOB"),field("R01_SOURCE_BLOB"),
+     "River D2 must preserve immutable R01 B10 source prior to UI correction");
+    assert.equal(sha(modelB),f02("R02_SOURCE_BLOB"),
+     "River D2 remains signed in the single current B10 P2 MathJax source");
+    const example=modelB.split('=== "Ví dụ"')[1]?.split('=== "Lỗi thường gặp"')[0]||"";
+    assert(example.includes("### 3.4. Ví dụ 4 — Qua sông")&&
+     example.includes("96")&&example.includes("THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg")&&
+     example.includes("THPT_G10_B10_RIVER_VELOCITY_MOBILE_D5_R01.svg")&&
+     example.includes("**Giải:**"),"B10 river worked D2 must use exact-data desktop/mobile image and Golden solution renderer key");
+   }else{
+    const b11=read("prototypes/thpt/ux795/G10_CHIV_B11_S1_PED_CANONICAL_Q18_R01_20261118.md");
+    const field=k=>b11.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    const r02=read("prototypes/thpt/ux795/G10_CHIV_B11_P2_TAB4_GOLDEN_DELTA_A_UI_R02_20261118.md");
+    const uiField=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    assert.equal(uiField("R01_PUBLISHED_B11_SOURCE_BLOB"),field("B11_CANDIDATE_SOURCE_BLOB"),
+     "B11 force D2 still depends on exact independently reviewed R01");
+    assert.equal(sha(modelB),uiField("R02_B11_SOURCE_BLOB"),
+     "B11 force D2 must remain in signed R02 UI-only learner source");
+    const examples=modelB.split('=== "Ví dụ"')[1]?.split('=== "Lỗi thường gặp"')[0]||"";
+    assert(examples.includes("### 3.4. Ví dụ 4 — Hợp lực")&&
+     examples.includes("THPT_G10_CHIV_FORCE_TRANSFER_D5_R01_CORRECTED.svg")&&
+     examples.includes("**Giải:**"),
+     "B11 force D2 must be a proper worked example in Tab3, source figure retained");
+    assert(!modelB.includes("#### Ví dụ có hướng dẫn — "+rec.ex),
+     "B11 old implementation EX identifier must not appear in student source");
+   }
+   const D5=tag==="RIVER"?"THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg":
+     "THPT_G10_CHIV_"+tag+"_TRANSFER_D5_R01_CORRECTED.svg";
+   assert(modelB.includes(D5),
+     "Transfer must keep mathematically correct, source-locked diagram D5 "+tag);
+   const at=modelB.indexOf('data-thpt-first-try-id="'+rec.stem+'"');
+   const h=modelB.indexOf('data-thpt-help-id="'+rec.help+'"',at);
+   assert(at>=0&&h>at&&/^\s*\?\?\? question "/m.test(modelB.slice(at,h)),
+     "Transfer result must stay default-closed "+tag);
+   assert(/^\s*\?\?\? tip "/m.test(modelB.slice(h,h+1800)),
+     "Transfer D6 must stay default-closed "+tag);
+   continue;
+  }
  const s=read("docs/thpt-preview/sgk/chuong-iv/bai-"+rec.lesson+".md"),begin="<!-- G10_CHIV_TRANSFER_BEGIN:"+tag+" -->",end="<!-- G10_CHIV_TRANSFER_END:"+tag+" -->";
  assert.equal(s.split(begin).length,2);assert.equal(s.split(end).length,2);
  const block=s.split(begin)[1].split(end)[0];

@@ -1,245 +1,236 @@
-# Bài 4. Hệ bất phương trình bậc nhất hai ẩn
+# Toán 10 · Bài 4. Hệ bất phương trình bậc nhất hai ẩn
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG II · KIẾN THỨC SGK KNTT</p><p class="thpt-r4-lead">Lý thuyết, ví dụ và sơ đồ nửa mặt phẳng/đa giác từ học liệu đã duyệt. Em tự luyện trước khi mở đáp án, không ghi điểm thành thạo.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương II</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra · chưa kích hoạt</a></nav></div>
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG II · KIẾN THỨC SGK KNTT</p><p class="thpt-r4-lead">Học cách kiểm nghiệm hệ, tìm phần giao các nửa mặt phẳng và lựa chọn phương án phù hợp với nhiều giới hạn. Em tự làm câu Vận dụng rồi mới mở Đối chiếu.</p></div>
 
-<!-- G10_CHII_FULL_R03_ALL_BEGIN -->
+=== "Khám phá kiến thức"
 
-## Tự khám phá trước công thức
+    ### 1.1. Cùng tìm hiểu
 
-Em hãy đọc tình huống, nhớ kiến thức đã học và **tự trả lời từng câu Tự thử** trước khi mở lời giải. Sau đó học phần Kiến thức SGK và luyện Core. Hoạt động Tự thử chỉ dùng để tự học, không chấm điểm hay ghi Mastery.
+    Hãy tưởng tượng một xưởng nhỏ làm hai loại sản phẩm A và B. Gọi \(x\) là số sản phẩm A, \(y\) là số sản phẩm B. Mỗi sản phẩm A dùng **2 giờ máy**, còn mỗi sản phẩm B dùng **1 giờ máy**. Xưởng có không quá **8 giờ máy** trong ngày và chỉ đóng gói được tối đa **6 sản phẩm**. Muốn lập một kế hoạch khả thi, em phải đáp ứng đồng thời hai giới hạn đó.
 
-<!-- G10_CHII_R03_BEGIN:THPT-G10-CHII-TRY06 OUTCOME=G10-B04-SYSTEM -->
+    Điều kiện thời gian được viết \(2x+y\le8\); điều kiện đóng gói là \(x+y\le6\). Ngoài ra, số sản phẩm không thể âm, nên \(x\ge0,\ y\ge0\). Bốn điều kiện hợp lại thành một **hệ bất phương trình bậc nhất hai ẩn**:
 
-<span id="thpt-g10-chii-try06" data-thpt-first-try-id="THPT-G10-CHII-TRY06" data-outcome-id="G10-B04-SYSTEM" data-thpt-help-ref="HELP-G10-B04-01"></span>
+    \[
+    \begin{cases}
+    x\ge0,\\
+    y\ge0,\\
+    x+y\le6,\\
+    2x+y\le8.
+    \end{cases}
+    \]
 
-### Nghiệm của hệ phải thỏa tất cả điều kiện
+    Thử \(x=2\), \(y=4\): xưởng làm 6 sản phẩm, sử dụng đúng 8 giờ, không vi phạm điều kiện nào. Nhưng \(x=4\), \(y=3\) cho 7 sản phẩm và 11 giờ máy, nên không được nhận. Một kế hoạch dù **đạt một điều kiện** vẫn có thể không hợp lệ nếu **vi phạm điều kiện khác**. Vì vậy, nghiệm của hệ phải thỏa **tất cả** các bất phương trình cùng lúc.
 
-**Vì sao cần học:** Một phương án có thể đạt ngân sách nhưng vi phạm diện tích hoặc giờ làm; "đạt một điều kiện" không có nghĩa "đạt kế hoạch".
+    Trong Bài 3, mỗi điều kiện đơn lẻ tạo ra một nửa mặt phẳng nghiệm. Sang bài này, ta giữ lại **phần chung** của tất cả các nửa mặt phẳng. Em đã gặp ý tưởng ấy ở phép **giao tập hợp**. Khi nhiều đường biên bao lấy một phần chung, hình có thể là một tam giác, một tứ giác hoặc miền khác. Đôi khi các điều kiện mâu thuẫn đến mức **không còn điểm nào chung**.
 
-**Điều phải nhớ trước:** Đã học kiểm một điểm với một bất phương trình và phép giao tập hợp ở Chương I.
+    Nếu một bài toán còn hỏi “sản xuất thế nào để lãi cao nhất?”, ta phải tìm phương án tốt nhất **trong phần miền chung đó**, chứ không thể chọn một điểm mang lại lợi nhuận lớn nhưng vi phạm nguồn lực. Học được cách nhìn miền nghiệm, em sẽ hiểu vì sao toán học giúp lựa chọn giữa nhiều kế hoạch có giới hạn.
 
-**Hình thành bản chất:** Hệ bất phương trình đặt nhiều điều kiện đồng thời. Tập nghiệm hệ là **giao** các tập nghiệm từng điều kiện, không phải hợp.
+    Khi lợi nhuận có dạng \(F=px+qy\), những đường thẳng \(F=k\) ứng với các mức lợi nhuận khác nhau **song song nhau**. Hãy hình dung dịch chuyển một đường như vậy theo hướng lợi nhuận tăng: nếu miền khả thi là một **đa giác không rỗng, đóng và bị chặn**, đường ở mức cao nhất còn chạm miền sẽ đi qua **ít nhất một đỉnh**; đôi khi cả một cạnh cùng đạt cực đại. Vì thế phải kiểm đủ các đỉnh chứ không chọn ngẫu nhiên một điểm trong miền. Nếu \(x,y\) đếm sản phẩm nguyên chiếc, ta còn phải kiểm tính nguyên của phương án tối ưu.
 
-**Hướng dẫn đọc hình:** PED4: Khi nhiều điều kiện biểu diễn bằng các nửa mặt phẳng, chỉ phần nằm đồng thời trong tất cả các miền mới là nghiệm hệ; hình dùng chung FIG-G10-B04-01.
+    ### 1.2. Ví dụ trực quan
 
-**Vì sao chọn phương pháp:** Thế tọa độ vào từng bất phương trình, chỉ giữ cặp làm tất cả đúng. Không dừng ở hàng đầu tiên đúng.
+    Với bốn điều kiện của xưởng, hãy so sánh:
 
-**Tự thử trước Core:** Xét hệ \(x\ge1,\ y\ge0,\ x+y\le5\). \((2,3)\) và \((0,4)\) có là nghiệm hệ không? Vì sao?
+    <div class="thpt-g10-table-scroll"><table class="thpt-g10-knowledge-table">
+    <thead><tr><th>Phương án \((x,y)\)</th><th>\(x+y\le6\)</th><th>\(2x+y\le8\)</th><th>Kết luận</th></tr></thead>
+    <tbody>
+    <tr><td>\((2,4)\)</td><td>\(6\le6\)</td><td>\(8\le8\)</td><td>Đạt mọi điều kiện</td></tr>
+    <tr><td>\((4,0)\)</td><td>\(4\le6\)</td><td>\(8\le8\)</td><td>Đạt mọi điều kiện</td></tr>
+    <tr><td>\((4,3)\)</td><td>\(7&gt;6\)</td><td>\(11&gt;8\)</td><td>Bị loại</td></tr>
+    <tr><td>\((0,6)\)</td><td>\(6\le6\)</td><td>\(6\le8\)</td><td>Đạt mọi điều kiện</td></tr>
+    </tbody></table></div>
 
-??? question "Đã tự làm? Tự mở đáp án và hướng khắc phục"
+    Ở đây \(x,y\) được hiểu là số nguyên không âm vì đếm sản phẩm. Khi **vẽ miền nghiệm hình học**, ta có thể xét mọi cặp số thực không âm trước, rồi chỉ giữ các **điểm lưới có tọa độ nguyên** nếu quay lại bài toán sản phẩm nguyên chiếc.
 
-    **Đáp án canonical:** (2,3) là nghiệm; (0,4) không.
+    ### 1.3. Thuật ngữ, kiến thức và kỹ năng
 
+    **Thuật ngữ:** hệ bất phương trình bậc nhất hai ẩn, nghiệm của hệ, giao các miền nghiệm, miền khả thi, đỉnh, hàm mục tiêu, cực trị, miền rỗng, nghiệm nguyên.
 
+    **Sau bài học, em cần làm được:** kiểm một cặp số với toàn hệ; xác định và đọc phần giao của các nửa mặt phẳng; nhận diện khi hệ vô nghiệm; tìm đỉnh và xét một hàm bậc nhất trên đa giác khả thi; phân biệt miền liên tục với các phương án đếm sản phẩm nguyên chiếc.
 
-    **Giải thích và kiểm điều kiện:** (2,3) có \(2\ge1,3\ge0,2+3=5\le5\), tất cả đúng. (0,4) vi phạm \(x\ge1\), dù hai điều kiện còn lại đúng.
+=== "Kiến thức SGK"
 
+    ### 2.1. Hệ bất phương trình bậc nhất hai ẩn
 
+    #### 2.1.1. Nghiệm của hệ: phải thỏa đồng thời tất cả điều kiện
 
-    **D6 · Tự khắc phục sau khi thử:** Nếu giữ (0,4), em đã lấy "hoặc" thay cho "và". Xem HELP-G10-B04-01.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Hệ bất phương trình bậc nhất hai ẩn:</strong> Gồm từ hai bất phương trình bậc nhất hai ẩn trở lên, cùng xét trên hai biến \(x,y\). Cặp số là nghiệm khi thỏa <em>đồng thời tất cả</em> các bất phương trình trong hệ.</div>
 
+    Một **hệ bất phương trình bậc nhất hai ẩn** gồm hai hoặc nhiều bất phương trình bậc nhất hai ẩn cùng chứa \(x,y\). Cặp số \((x_0,y_0)\) là nghiệm của hệ khi **thay vào từng bất phương trình đều cho kết quả đúng**.
 
+    Đừng đọc hệ theo nghĩa “đúng một điều kiện là đủ”. Hãy đọc theo nghĩa “đúng điều kiện thứ nhất **và** thứ hai **và** tất cả điều kiện còn lại”. Nếu một bất phương trình sai, cả hệ không nhận cặp số đó.
 
-    **Đường trở lại:** Đối chiếu EX-G10-B04-01 và HELP-G10-B04-01 trong R01 đã khóa, rồi mới làm Core/Practice.
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ:</strong> Nghiệm của hệ là giao các tập nghiệm riêng lẻ. Khi kiểm nghiệm một cặp số, phải kiểm <em>mọi dòng của hệ</em>, kể cả không âm, đơn vị và điều kiện nguyên nếu bài toán có yêu cầu.</div>
 
+    **Vận dụng.** Xét hệ \(x\ge1,\ y\ge0,\ x+y\le5\). Hai cặp \((2,3)\) và \((0,4)\) có là nghiệm hệ không? Vì sao?
 
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY06" data-outcome-id="G10-B04-SYSTEM" data-thpt-help-ref="HELP-G10-B04-01" hidden></span>
 
-<!-- G10_CHII_R03_END:THPT-G10-CHII-TRY06 -->
+    ??? question "Em đã tự làm? Mở lời giải để đối chiếu"
 
-<!-- G10_CHII_R03_BEGIN:THPT-G10-CHII-TRY07 OUTCOME=G10-B04-REGION_INTERSECTION -->
+        \((2,3)\) **là nghiệm** vì \(2\ge1,\ 3\ge0,\ 2+3=5\le5\). \((0,4)\) **không là nghiệm** vì \(0\not\ge1\), dù hai điều kiện còn lại đúng.
 
-<span id="thpt-g10-chii-try07" data-thpt-first-try-id="THPT-G10-CHII-TRY07" data-outcome-id="G10-B04-REGION_INTERSECTION" data-thpt-help-ref="HELP-G10-B04-01"></span>
 
-### Tìm giao của các miền nghiệm
+    ### 2.2. Biểu diễn miền nghiệm của hệ bất phương trình bậc nhất hai ẩn trên mặt phẳng tọa độ
 
-**Vì sao cần học:** Khi cả ba giới hạn cùng tác động, cần nhìn được tập hợp toàn bộ phương án hợp lệ, không chỉ thử từng phương án.
+    #### 2.2.1. Miền nghiệm là phần giao — đọc hình từ điều kiện đến các đỉnh
 
-**Điều phải nhớ trước:** Biết trục tọa độ, phương trình đường thẳng, nửa mặt phẳng nghiệm và giao của các tập hợp.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Miền nghiệm của hệ:</strong> Tập hợp các điểm trên mặt phẳng có tọa độ thỏa đồng thời tất cả các bất phương trình của hệ, tức là <em>giao</em> các miền nghiệm riêng lẻ.</div>
 
-**Hình thành bản chất:** Giao của \(x\ge0, y\ge0, x+2y\le6\) là một tam giác kín trong góc phần tư thứ nhất; các đỉnh được tạo từ giao điểm của các đường biên.
+    Mỗi bất phương trình bậc nhất hai ẩn xác định một nửa mặt phẳng nghiệm. Khi vẽ tất cả chúng trên **cùng một hệ trục**, ta chỉ giữ phần **nằm đồng thời trong từng miền**. Phần ấy gọi là **miền nghiệm của hệ** hay **miền khả thi**.
 
-**Hướng dẫn đọc hình:** PED4: Trên FIG-G10-B04-01 xác định từng đường biên, các giao điểm đỉnh, rồi chỉ giữ phần cùng nằm trong ba nửa mặt phẳng. Phân biệt hình tam giác kín với các miền riêng.
+    Quay lại xưởng ở phần Khám phá. Bốn giới hạn \(x\ge0,\ y\ge0,\ x+y\le6,\ 2x+y\le8\) tạo nên miền tứ giác trong hình dưới. Em hãy đọc lần lượt **hai trục không âm**, **đường \(x+y=6\)** và **đường \(2x+y=8\)** rồi nhìn phần được tô nằm trong **cả bốn** miền. Vì tất cả dấu đều có bằng nên các cạnh cũng thuộc miền nghiệm.
 
-**Vì sao chọn phương pháp:** Vẽ ba đường biên, quyết định phía đúng cho mỗi bất phương trình, tìm giao và đỉnh bằng giải hệ hai phương trình. Đừng mặc định miền nào cũng là đa giác bị chặn.
+    <figure class="thpt-r4-plot thpt-r4-concept-figure">
+    <img src="../../../../assets/images/thpt/THPT_G10_B04_FEASIBLE_POLYGON_D5_R01.svg" loading="lazy" alt="Tứ giác nghiệm cho x và y không âm, x cộng y không vượt 6, 2x cộng y không vượt 8; các đỉnh O(0,0), A(4,0), B(2,4), C(0,6)">
+    <figcaption>Đọc theo từng điều kiện: phần tô là giao của <strong>bốn</strong> nửa mặt phẳng, không phải hợp. Các đỉnh là \(O(0,0)\), \(A(4,0)\), \(B(2,4)\), \(C(0,6)\). Hình này chỉ ứng với <strong>hệ bốn điều kiện được ghi ngay phía trên</strong>.</figcaption>
+    </figure>
 
-**Tự thử trước Core:** Hệ \(x\ge0,\ y\ge0,\ x+2y\le6\) có các đỉnh miền nghiệm nào? Có nhận các cạnh không?
+    Để tìm đỉnh \(B\), giải hai phương trình đường biên \(x+y=6\), \(2x+y=8\), thu được \(x=2,\ y=4\). Mỗi đỉnh cần được kiểm lại với **toàn bộ hệ**, không chỉ với hai đường dùng để tìm giao điểm. Bảng \(F\) ở bên phải hình minh họa **ứng dụng tối ưu** của chính tứ giác này; cách giải tổng quát sẽ học ở mục 2.3.
 
-??? question "Đã tự làm? Tự mở đáp án và hướng khắc phục"
+    Không phải hệ nào cũng tạo một đa giác đóng, bị chặn. Miền nghiệm có thể là nửa mặt phẳng, một miền kéo dài vô hạn, hoặc không có điểm nào. Vì vậy, **xem điều kiện trước, kết luận dạng miền sau**.
 
-    **Đáp án canonical:** \((0,0),(6,0),(0,3)\); các cạnh đều thuộc miền nghiệm.
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ:</strong> Vẽ từng đường biên, xác định đúng phía, giữ phần giao. Tìm các đỉnh bằng giao của những đường biên liên quan và thử lại tất cả ràng buộc. Không coi hình trên là hình minh họa cho mọi hệ.</div>
 
+    **Vận dụng.** Hệ \(x\ge0,\ y\ge0,\ x+2y\le6\) có những đỉnh nào? Các cạnh có được lấy không? Đây là **hệ ba điều kiện khác với tứ giác trong hình**.
 
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY07" data-outcome-id="G10-B04-REGION_INTERSECTION" data-thpt-help-ref="HELP-G10-B04-01" hidden></span>
 
-    **Giải thích và kiểm điều kiện:** Giao \(x=0,y=0\) cho (0,0); \(y=0,x+2y=6\) cho (6,0); \(x=0,x+2y=6\) cho (0,3). Dấu \(\ge,\le\) đều có bằng.
+    ??? question "Em đã thử tìm đỉnh? Mở đối chiếu"
 
+        Các đỉnh là \((0,0)\), \((6,0)\), \((0,3)\). Ba đường biên tạo thành một **tam giác**, **không phải** tứ giác ở hình trên. Cả ba cạnh đều thuộc miền vì các dấu \(\ge,\le\) đều có bằng.
 
 
-    **D6 · Tự khắc phục sau khi thử:** Nếu thấy hình có cả phần bên ngoài, em đã lấy hợp thay giao. Nếu bỏ cạnh, em đã bỏ mất dấu bằng. Xem HELP-G10-B04-01 và FIG-G10-B04-01.
+    #### 2.2.2. Có khi hệ không có nghiệm nào
 
+    Chẳng hạn, một kế hoạch vừa yêu cầu **tổng ít nhất 7 sản phẩm** vừa quy định **tổng không quá 5 sản phẩm**. Hai điều kiện \(x+y\ge7\) và \(x+y\le5\) tự mâu thuẫn: dù mỗi điều kiện riêng lẻ có vô số nghiệm, **không có phương án nào thỏa đồng thời**. Ở câu Vận dụng ngay sau đây, em sẽ phải tự tìm một mâu thuẫn với những điều kiện khác.
 
+    Trong hình học, đó là trường hợp các miền riêng lẻ **không có phần giao chung**. Có thể kiểm bằng cách vẽ, nhưng khi đã nhìn thấy mâu thuẫn đại số, ta **không cần vẽ** để kết luận hệ vô nghiệm.
 
-    **Đường trở lại:** Đối chiếu EX-G10-B04-01 và HELP-G10-B04-01 trong R01 đã khóa, rồi mới làm Core/Practice.
+    **Vận dụng.** Xét hệ \(x\ge3,\ y\ge0,\ x+y\le2\). Hệ có nghiệm không? Giải thích bằng bất đẳng thức.
 
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY08" data-outcome-id="G10-B04-FEASIBILITY" data-thpt-help-ref="HELP-G10-B04-01" hidden></span>
 
+    ??? question "Mở lời giải sau khi suy nghĩ"
 
-<!-- G10_CHII_R03_END:THPT-G10-CHII-TRY07 -->
+        **Không có nghiệm.** Từ \(x\ge3,\ y\ge0\) suy ra \(x+y\ge3\), trái với điều kiện \(x+y\le2\). Không thể tối ưu trên một miền nghiệm rỗng.
 
-<!-- G10_CHII_R03_BEGIN:THPT-G10-CHII-TRY08 OUTCOME=G10-B04-FEASIBILITY -->
 
-<span id="thpt-g10-chii-try08" data-thpt-first-try-id="THPT-G10-CHII-TRY08" data-outcome-id="G10-B04-FEASIBILITY" data-thpt-help-ref="HELP-G10-B04-01"></span>
+    ### 2.3. Ứng dụng của hệ bất phương trình bậc nhất hai ẩn
 
-### Nhận biết miền nghiệm rỗng
+    #### 2.3.1. Tối ưu một hàm bậc nhất trên miền khả thi
 
-**Vì sao cần học:** Trước khi tìm phương án tối ưu phải biết có phương án nào thỏa tất cả điều kiện hay không.
+    Nếu xưởng muốn lãi cao nhất, ta cần một **hàm mục tiêu** \(F(x,y)=px+qy\). Trong bài toán hình học trên một **đa giác nghiệm không rỗng, đóng và bị chặn**, giá trị lớn nhất và nhỏ nhất của hàm bậc nhất có thể được tìm bằng cách xét **các đỉnh**.
 
-**Điều phải nhớ trước:** Biết so sánh \(x+y\) với x khi \(y\ge0\); biết nghiệm hệ là giao các điều kiện.
+    Các đường thẳng \(F(x,y)=k\) có cùng phương. Trên một miền đa giác kín và bị chặn, dịch chuyển đường này từ mức thấp đến mức cao cho thấy ít nhất một **đỉnh** đạt mỗi cực trị. Vì vậy, lập bảng **đỉnh → kiểm điều kiện → giá trị \(F\)** và so tất cả các đỉnh. Nếu một cạnh nằm trùng đường \(F=k\) ở mức cực trị, **nhiều phương án trên cạnh** cùng tối ưu. Hình ở 2.2.1 minh họa một trường hợp, còn Ví dụ 3.1 giải một **hệ khác** để em tự chuyển phương pháp.
 
-**Hình thành bản chất:** Miền khả thi rỗng khi các ràng buộc mâu thuẫn, dù từng bất phương trình riêng lẻ có nhiều nghiệm. Miền không rỗng có thể bị chặn hoặc không bị chặn.
+    Quy tắc “thử các đỉnh” **không được áp dụng máy móc** cho miền rỗng hoặc miền không bị chặn. Trên miền không bị chặn, một cực trị có thể vẫn tồn tại, nhưng phải xét riêng điều kiện và hướng biến thiên của \(F\).
 
-**Hướng dẫn đọc hình:** PED4: Một miền rỗng không có điểm giao; nếu vẽ x≥3 trong góc phần tư thứ nhất và x+y≤2, hai miền không chồng nhau.
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ:</strong> Muốn tối ưu, tìm miền khả thi trước. Khi miền là đa giác không rỗng, đóng, bị chặn, tính \(F\) ở **tất cả** đỉnh rồi so. Mọi đỉnh dùng để tính phải thỏa toàn hệ.</div>
 
-**Vì sao chọn phương pháp:** Tìm mâu thuẫn ngắn gọn trong các điều kiện trước khi vẽ hay tối ưu; không mặc định cứ có các đường thẳng là có đa giác nghiệm.
+    **Vận dụng.** Tam giác nghiệm của \(x\ge0,\ y\ge0,\ 2x+y\le6\) có các đỉnh \((0,0),(3,0),(0,6)\). Tính \(F=x+2y\) ở các đỉnh và xác định \(F_{\max}\). Đây **không** phải hàm và hệ trong hình tứ giác ở mục §2.2.
 
-**Tự thử trước Core:** Hệ \(x\ge3,\ y\ge0,\ x+y\le2\) có nghiệm không? Giải thích mà không cần vẽ đồ thị.
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY09" data-outcome-id="G10-B04-LINEAR_OBJECTIVE" data-thpt-help-ref="HELP-G10-B04-02" hidden></span>
 
-??? question "Đã tự làm? Tự mở đáp án và hướng khắc phục"
+    ??? question "Em đã tính ở cả ba đỉnh? Mở đáp án"
 
-    **Đáp án canonical:** Không có nghiệm.
+        \(F(0,0)=0\), \(F(3,0)=3\), \(F(0,6)=12\). Vậy \(F_{\max}=12\) tại \((0,6)\).
 
 
+    #### 2.3.2. Phương án có số lượng nguyên (vận dụng thực tế)
 
-    **Giải thích và kiểm điều kiện:** Từ \(x\ge3\) và \(y\ge0\) suy \(x+y\ge3\); điều này mâu thuẫn với \(x+y\le2\).
+    Khi \(x,y\) là **số sản phẩm nguyên chiếc**, ta phải bổ sung \(x,y\in\mathbb Z_{\ge0}\). Miền hình học có thể chứa vô số điểm thực, nhưng phương án sản xuất chỉ gồm các **điểm có tọa độ nguyên không âm** nằm trong miền đó.
 
+    Nếu cực đại của miền liên tục đạt tại một điểm có tọa độ **nguyên**, điểm ấy cũng tối ưu cho bài toán đếm sản phẩm. Nhưng nếu điểm tối ưu liên tục có tọa độ phân số, chẳng hạn \((5/2,3/2)\), thì ta **không thể** sản xuất nửa sản phẩm, cũng không được tùy tiện làm tròn rồi coi là tối ưu. Phải kiểm phương án nguyên khả thi và lập luận đầy đủ. Đây là một **lưu ý vận dụng mở rộng**, không thay thế kiến thức Core biểu diễn miền nghiệm.
 
+    **Vận dụng.** Với \(x+2y\le7,\ 2x+y\le7,\ x,y\in\mathbb Z_{\ge0}\), xét \(F=3x+2y\). Điểm \((7/3,7/3)\) có hợp lệ không? So \(F\) tại hai điểm \((2,2)\) và \((3,1)\). **Chỉ so hai điểm, chưa kết luận tối ưu toàn cục.**
 
-    **D6 · Tự khắc phục sau khi thử:** Nếu nghĩ có nghiệm, thử dùng một cặp x≥3,y≥0 sẽ thấy tổng luôn ≥3; đọc HELP-G10-B04-01.
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHII-TRY10" data-outcome-id="G10-B04-INTEGER_MODELS" data-thpt-help-ref="HELP-G10-B04-02" hidden></span>
 
+    ??? question "Mở đối chiếu sau khi tự làm"
 
+        \((7/3,7/3)\) thỏa hai bất phương trình nhưng **không phải phương án nguyên**. \((2,2)\) có \(2+4=6\le7,\ 4+2=6\le7\), cho \(F=10\). \((3,1)\) có \(3+2=5\le7,\ 6+1=7\le7\), cho \(F=11\). Trong **hai điểm được so**, \((3,1)\) tốt hơn; bài chưa yêu cầu chứng minh đó là tối ưu toàn cục.
 
-    **Đường trở lại:** Đối chiếu EX-G10-B04-02 và HELP-G10-B04-01 trong R01 đã khóa, rồi mới làm Core/Practice.
 
+=== "Ví dụ"
 
+    Các bước trên cho em hiểu từng điều kiện. Bây giờ ta giải ba bài **trọn vẹn**, với lý do chọn phương pháp nằm ngay tại ví dụ.
 
-<!-- G10_CHII_R03_END:THPT-G10-CHII-TRY08 -->
+    ### 3.1. Ví dụ 1 — Miền giao và cực trị trên một hệ mới
 
-<!-- G10_CHII_R03_BEGIN:THPT-G10-CHII-TRY09 OUTCOME=G10-B04-LINEAR_OBJECTIVE -->
+    **Đề bài.** Xét hệ \(x\ge0,\ y\ge0,\ x+y\le9,\ 3x+y\le15\). Tìm miền nghiệm và cực trị của \(F=5x+2y\). Hệ này **khác** hình minh họa ở mục 2.2.1 và khác dữ kiện câu Vận dụng.
 
-<span id="thpt-g10-chii-try09" data-thpt-first-try-id="THPT-G10-CHII-TRY09" data-outcome-id="G10-B04-LINEAR_OBJECTIVE" data-thpt-help-ref="HELP-G10-B04-02"></span>
+    **Phân tích.** Tìm giao các nửa mặt phẳng; tính giao điểm đường biên, kiểm mọi đỉnh với toàn hệ rồi so giá trị \(F\). Ta giải giao điểm bằng phương trình thay vì đo hình.
 
-### Tìm giá trị hàm mục tiêu trên miền nghiệm
+    **Lời giải.** Các đường biên \(x=0,\ y=0,\ x+y=9,\ 3x+y=15\) tạo tứ giác đỉnh \(O(0,0), A(5,0), B(3,6), C(0,9)\). Từ \(x+y=9,\ 3x+y=15\) suy ra \(2x=6\), tức \(B(3,6)\). Cả bốn đỉnh đều thỏa hệ. Ta được \(F(O)=0,\ F(A)=25,\ F(B)=27,\ F(C)=18\). Vậy
 
-**Vì sao cần học:** Có nhiều phương án thỏa ràng buộc, nhưng nếu cần kết quả cao nhất ta phải chọn trong **miền hợp lệ**, không chọn giá trị lớn tùy ý.
+    \[
+    F_{\max}=27\ \text{tại }(3,6),\qquad F_{\min}=0\ \text{tại }(0,0).
+    \]
 
-**Điều phải nhớ trước:** Biết tính biểu thức \(F(x,y)\) tại một điểm và đọc đỉnh đa giác khả thi.
+    **Kiểm lại.** Với \(B(3,6)\): \(3+6=9,\ 3\cdot3+6=15\). \(A\) có hoành độ lớn hơn \(B\) nhưng \(F(A)=25<27\), nên nhìn riêng \(x\) không đủ. Nếu muốn vẽ hình cho ví dụ này, em **tự dựng bốn đường biên mới**; không lấy tọa độ từ hình 2.2.1.
 
-**Hình thành bản chất:** Trên một đa giác kín, bị chặn, không rỗng, hàm mục tiêu tuyến tính đạt giá trị lớn/nhỏ ở ít nhất một đỉnh; đôi khi cả một cạnh cùng tối ưu.
+    ### 3.2. Ví dụ 2 — Hệ vô nghiệm do hai điều kiện không tương thích
 
-**Hướng dẫn đọc hình:** PED4: Tam giác \(x\ge0,y\ge0,2x+y\le6\) có các đỉnh \((0,0),(3,0),(0,6)\); đánh dấu từng đỉnh trước khi so hàm mục tiêu.
+    **Đề bài.** Xét hệ \(x\ge0,\ y\ge0,\ x+y<2,\ 2x+2y\ge5\). Hệ có nghiệm không?
 
-**Vì sao chọn phương pháp:** Trước hết xác nhận miền là đa giác kín bị chặn; tính F tại **mọi** đỉnh rồi so. Với miền rỗng/không bị chặn phải xét riêng, không áp máy móc quy tắc đỉnh.
+    **Phân tích.** Nhân bất phương trình \(x+y<2\) với số dương 2, rồi so hai yêu cầu cùng biểu thức \(2x+2y\). Khi nhận ra mâu thuẫn trực tiếp, không cần vẽ.
 
-**Tự thử trước Core:** Tam giác nghiệm của \(x\ge0,y\ge0,2x+y\le6\) có các đỉnh \((0,0),(3,0),(0,6)\). Tính \(F=x+2y\) tại các đỉnh và chọn giá trị lớn nhất.
+    **Lời giải.** Từ \(x+y<2\) suy ra \(2x+2y<4\), trái với \(2x+2y\ge5\). Vậy không tồn tại cặp số thỏa toàn hệ: **hệ vô nghiệm**.
 
-??? question "Đã tự làm? Tự mở đáp án và hướng khắc phục"
+    **Kiểm lại.** Mỗi bất phương trình riêng có nghiệm, nhưng không có điểm chung của toàn hệ. Lý do là mâu thuẫn đại số, không phải vì thiếu tọa độ nguyên.
 
-    **Đáp án canonical:** \(F_{\max}=12\) tại (0,6).
+    ### 3.3. Ví dụ 3 — Phương án lợi nhuận có số lượng nguyên
 
+    **Đề bài.** Cơ sở sản xuất hai loại sản phẩm A và B, vốn cần lần lượt **12 triệu** và **8 triệu đồng**/sản phẩm. Vốn không quá **720 triệu**, khả năng bán tối đa **75 sản phẩm**. Lợi nhuận mỗi chiếc lần lượt là **2,8 triệu** và **2 triệu đồng**. Tìm số lượng nguyên không âm để lợi nhuận lớn nhất.
 
+    **Phân tích.** Đặt \(x,y\) là số sản phẩm A, B. Lập hai giới hạn và tính chặn trên liên tục trên đa giác. Chỉ khi một điểm cực đại liên tục có tọa độ nguyên mới được suy ra tối ưu cho bài toán đếm.
 
-    **Giải thích và kiểm điều kiện:** \(F(0,0)=0; F(3,0)=3; F(0,6)=12\). Đỉnh (0,6) thỏa điều kiện biên \(2\cdot0+6=6\).
+    **Lời giải.** Các điều kiện là
 
+    \[
+    12x+8y\le720,\quad x+y\le75,\quad x,y\in\mathbb Z_{\ge0}.
+    \]
 
+    Chia điều kiện vốn cho 4 được \(3x+2y\le180\). Miền liên tục \(x,y\ge0,\ x+y\le75,\ 3x+2y\le180\) có đỉnh \(O(0,0)\), \(A(60,0)\), \(B(30,45)\), \(C(0,75)\). Hàm lợi nhuận \(F=2{,}8x+2y\) (triệu đồng) cho:
 
-    **D6 · Tự khắc phục sau khi thử:** Nếu chọn (3,0), em đã so vị trí trên trục x thay vì giá trị F; xem HELP-G10-B04-02.
+    <div class="thpt-g10-table-scroll"><table class="thpt-g10-knowledge-table">
+    <thead><tr><th>Phương án</th><th>\(F(x,y)\) (triệu đồng)</th></tr></thead>
+    <tbody>
+    <tr><td>\((0,0)\)</td><td>0</td></tr>
+    <tr><td>\((60,0)\)</td><td>168</td></tr>
+    <tr><td>\((30,45)\)</td><td><strong>174</strong></td></tr>
+    <tr><td>\((0,75)\)</td><td>150</td></tr>
+    </tbody></table></div>
 
+    Cực đại liên tục là **174 triệu đồng** tại \((30,45)\). Vì đây là cặp số nguyên không âm nên **30 sản phẩm A và 45 sản phẩm B** cũng tối ưu trong bài toán nguyên.
 
+    **Kiểm lại.** Vốn \(12\cdot30+8\cdot45=720\) triệu đồng, tổng số sản phẩm \(30+45=75\), đều đúng giới hạn. Hình ở 2.2.1 có dữ kiện khác, không dùng lại đỉnh của hình để giải ví dụ này.
 
-    **Đường trở lại:** Đối chiếu EX-G10-B04-02 và HELP-G10-B04-02 trong R01 đã khóa, rồi mới làm Core/Practice.
+=== "Lỗi thường gặp"
 
+    <span data-thpt-help-id="HELP-G10-B04-01" hidden></span>
 
+    ??? tip "4.1. Nhầm hợp và giao, hoặc tìm đỉnh mà không kiểm toàn bộ hệ"
 
-<!-- G10_CHII_R03_END:THPT-G10-CHII-TRY09 -->
+        **Dấu hiệu:** Chỉ cần một bất phương trình đúng đã nhận điểm là nghiệm; hoặc tô phần nằm trong **ít nhất một** nửa mặt phẳng thay vì phần chung.
 
-<!-- G10_CHII_R03_BEGIN:THPT-G10-CHII-TRY10 OUTCOME=G10-B04-INTEGER_MODELS -->
+        **Vì sao sai?** Hệ yêu cầu các điều kiện xảy ra **đồng thời**. Một điểm có thể đúng với hai điều kiện nhưng sai điều kiện thứ ba, nên không nằm trong miền nghiệm của hệ.
 
-<span id="thpt-g10-chii-try10" data-thpt-first-try-id="THPT-G10-CHII-TRY10" data-outcome-id="G10-B04-INTEGER_MODELS" data-thpt-help-ref="HELP-G10-B04-02"></span>
+        **Tự sửa:** Khi xét một cặp số, lập bảng kiểm mọi dòng. Khi vẽ, đánh dấu vùng bị loại sau mỗi ràng buộc, chỉ giữ phần còn lại. Nếu các ràng buộc mâu thuẫn như ở 2.2.2, kết luận miền rỗng ngay. [Luyện kiểm nghiệm hệ](luyen-tap.md?item=THPT-G10-B04-C01) · [Luyện đọc miền giao](luyen-tap.md?item=THPT-G10-B04-P04).
 
-### Tôn trọng điều kiện nghiệm nguyên
 
-**Vì sao cần học:** Máy móc làm tròn 2,33 sản phẩm lên 2 hoặc 3 có thể làm phương án vi phạm ngân sách; bài toán đếm phải kiểm điều kiện nguyên.
+    <span data-thpt-help-id="HELP-G10-B04-02" hidden></span>
 
-**Điều phải nhớ trước:** Biết phân số và số nguyên không âm; biết thay cặp điểm vào hai bất phương trình.
+    ??? tip "4.2. So thiếu đỉnh hoặc tự làm tròn nghiệm phân số"
 
-**Hình thành bản chất:** Đỉnh tối ưu liên tục có thể có tọa độ phân số, nhưng phương án sản xuất chỉ khả thi khi \(x,y\in\mathbb Z_{\ge0}\); không được xem nghiệm liên tục là lời giải bài toán nguyên.
+        **Dấu hiệu:** Thấy một đỉnh có hoành độ lớn nhất nên cho rằng \(F\) lớn nhất tại đó; hoặc lấy đỉnh phân số làm đáp án sản phẩm nguyên.
 
-**Hướng dẫn đọc hình:** PED4: Miền liên tục gồm các điểm trên mặt phẳng, còn bài toán đếm sản phẩm chỉ nhận điểm lưới có cả hai tọa độ nguyên; không suy đáp án từ một điểm lẻ trên cạnh.
+        **Vì sao sai?** Hàm mục tiêu phụ thuộc cả \(x\) lẫn \(y\). Trên đa giác liên tục phải so **mọi đỉnh**, và bài toán sản phẩm nguyên chỉ nhận các phương án có tọa độ nguyên.
 
-**Vì sao chọn phương pháp:** Kiểm điều kiện nguyên **trước** khi tính mục tiêu; liệt kê một số điểm nguyên hợp lệ và so F. Không kết luận cực trị toàn cục chỉ từ hai điểm nếu chưa chứng minh.
+        **Tự sửa:** Lập bảng “đỉnh → điều kiện → giá trị \(F\)”. Nếu nghiệm liên tục là phân số, dùng nó làm **chặn**, sau đó xét các điểm nguyên khả thi hoặc có lập luận chứng minh tối ưu. [Luyện tối ưu nguyên](luyen-tap.md?item=THPT-G10-B04-P06) · [Luyện trường hợp nhiều điểm tối ưu](luyen-tap.md?item=THPT-G10-B04-P03).
 
-**Tự thử trước Core:** Cho \(x+2y\le7, 2x+y\le7, x,y\in\mathbb Z_{\ge0}\), xét \(F=3x+2y\). Điểm \((7/3,7/3)\) có là phương án hợp lệ không? So F tại hai điểm (2,2) và (3,1).
 
-??? question "Đã tự làm? Tự mở đáp án và hướng khắc phục"
+    **Tiếp tục tự học:** [Core và Luyện tập Chương II](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
-    **Đáp án canonical:** \((7/3,7/3)\) không hợp lệ vì không nguyên; (2,2) và (3,1) đều hợp lệ, F tương ứng 10 và 11 nên (3,1) tốt hơn trong hai điểm.
-
-
-
-    **Giải thích và kiểm điều kiện:** \(7/3+2(7/3)=7\) và \(2(7/3)+7/3=7\), nhưng \(7/3\notin\mathbb Z\). Với (2,2): ràng buộc bằng 6 và 6, F=10. Với (3,1): ràng buộc bằng 5 và 7, F=11. Chưa khẳng định đây là tối ưu toàn cục.
-
-
-
-    **D6 · Tự khắc phục sau khi thử:** Nếu nhận (7/3,7/3), em chỉ kiểm bất phương trình mà quên điều kiện nguyên; nếu kết luận (3,1) tối ưu toàn cục từ hai điểm, hãy xem lại HELP-G10-B04-02.
-
-
-
-    **Đường trở lại:** Đối chiếu EX-G10-B04-03 và HELP-G10-B04-02 trong R01 đã khóa, rồi mới làm Core/Practice.
-
-
-
-<!-- G10_CHII_R03_END:THPT-G10-CHII-TRY10 -->
-
-<!-- G10_CHII_FULL_R03_ALL_END -->
-
-## 1. Kiến thức SGK
-
-**Hệ và miền chung:** Cặp \((x,y)\) là nghiệm hệ khi thỏa **đồng thời từng bất phương trình**. Miền nghiệm là **giao** các nửa mặt phẳng (không phải hợp), có thể rỗng, bị chặn hoặc không bị chặn. Phần đường biên của từng ràng buộc được lấy tùy dấu của bất phương trình; các nét liền/đứt trên hình phải tương ứng chính xác.
-
-**Giá trị lớn nhất/nhỏ nhất của hàm bậc nhất:** Với hàm \(F(x,y)=px+qy\) trên một **đa giác nghiệm không rỗng, đóng và bị chặn**, tồn tại giá trị lớn nhất, nhỏ nhất và có thể tìm chúng bằng các **đỉnh**. Trường hợp \(F\) song song một cạnh, có thể có cả cạnh cùng tối ưu. Nếu miền rỗng thì không tối ưu; nếu miền không bị chặn, vẫn có thể tồn tại *một* cực trị hữu hạn, phải xét riêng, không mặc định.
-
-**Bài toán đếm sản phẩm:** Trước tiên có thể tối ưu trên miền liên tục để tìm chặn trên. Nếu điểm tối ưu liên tục có tọa độ nguyên thì đạt tối ưu cả bài toán nguyên; nếu tọa độ phân số thì phải tối ưu lại trên các điểm nguyên khả thi, không tự làm tròn từng tọa độ hoặc dùng giá trị phân số làm đáp án sản phẩm nguyên.
-
-**Tự học 5 bước:** đặt biến và điều kiện → lập các ràng buộc/đơn vị → xác định miền giao → nhận diện mục tiêu và thử các đỉnh phù hợp → đối chiếu đơn vị, nghiệm nguyên, ý nghĩa thực tế và trường hợp rỗng/không bị chặn.
-
-## 2. Ví dụ
-
-**EX-G10-B04-01 — Giao nửa mặt phẳng và cực trị.** Hệ \(x\ge0,y\ge0,x+y\le6,2x+y\le8\) cho các đỉnh \(O(0,0),A(4,0),B(2,4),C(0,6)\). Xét \(F=3x+2y\): giá trị \(0,12,14,12\) → cực đại \(14\) tại B, cực tiểu \(0\) tại O. Kiểm tra B: \(2+4=6, 2\cdot2+4=8\).
-
-**EX-G10-B04-02 — Hệ vô nghiệm.** Hai điều kiện \(x+y\le1\) và \(x+y\ge3\) không thể đồng thời đúng → miền nghiệm chung rỗng. Vẽ hợp hai miền sẽ cho kết luận sai.
-
-**EX-G10-B04-03 — Tối ưu doanh nghiệp có nghiệm nguyên.** Sản phẩm A/B mua lần lượt 20/10 triệu mỗi chiếc; vốn không quá 1200 triệu và sức chứa không quá 100 chiếc. \(x,y\in\mathbb Z_{\ge0}\), \(20x+10y\le1200, x+y\le100\). Lợi nhuận \(F=3{,}5x+2y\) triệu đồng; miền liên tục có đỉnh \((0,0),(60,0),(20,80),(0,100)\). Lợi nhuận tại đỉnh tương ứng \(0,210,230,200\). Cực đại 230 tại \((20,80)\) có tọa độ nguyên nên đạt tối ưu cả mô hình nguyên. Đơn vị và điều kiện không âm không được bỏ.
-
-## 3. Hình minh họa và tự khắc phục lỗi
-
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B04_FEASIBLE_POLYGON_D5_R01.svg" loading="lazy" alt="Miền giao đa giác nghiệm và các đỉnh xét hàm mục tiêu"><figcaption>Miền giao và bài toán tối ưu: cần xét đầy đủ ràng buộc và điều kiện nguyên nếu có.</figcaption></figure>
-
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-B04-01"><summary>Nhầm hợp với giao trong hệ</summary>
-<p><strong>Trigger:</strong> B04-C01, B04-C02, B04-P01, B04-P04. <strong>Sai lầm:</strong> chỉ cần đúng một bất phương trình nên tô hợp các miền.</p>
-<p><strong>Nguyên lí:</strong> Nghiệm hệ phải thỏa đồng thời toàn bộ điều kiện, tức lấy giao; miền có thể rỗng.</p>
-<p><strong>Tự sửa:</strong> Bắt đầu từ một cặp cụ thể, thế vào từng hàng; loại ngay khi một hàng sai. Vẽ từng miền, chỉ giữ phần không bị loại bởi bất cứ điều kiện nào.</p>
-<p><strong>Tiền đề:</strong> phép giao tập hợp, biểu diễn nửa mặt phẳng.</p>
-<p><strong>Luyện lại:</strong> `THPT-G10-B04-C01` → `THPT-G10-B04-P04`.</p>
-<p><strong>Mở câu đã có:</strong> <a data-thpt-formative-id="THPT-G10-B04-C01" href="../luyen-tap/?item=THPT-G10-B04-C01">Luyện lại B04-C01</a> · <a data-thpt-formative-id="THPT-G10-B04-P04" href="../luyen-tap/?item=THPT-G10-B04-P04">Luyện lại B04-P04</a></p></details>
-
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-B04-02"><summary>Tối ưu sai miền hoặc bỏ điều kiện nguyên</summary>
-<p><strong>Trigger:</strong> B04-P02, B04-P03, B04-P05, B04-P06, W04. <strong>Sai lầm:</strong> chỉ kiểm một đỉnh, giả định nghiệm tối ưu duy nhất, hoặc làm tròn đỉnh phân số để trả bài nguyên.</p>
-<p><strong>Nguyên lí:</strong> Trên đa giác kín, bị chặn, không rỗng, so F tại <strong>mọi</strong> đỉnh; có thể đồng tối ưu trên cả cạnh. Với miền không bị chặn xét riêng cực trị. Sản phẩm nguyên bắt buộc nghiệm nguyên.</p>
-<p><strong>Tự sửa:</strong> Lập bảng đỉnh → F → chọn giá trị phù hợp. Với B04-P06, đỉnh liên tục (5/3,5/3) không nguyên; duyệt x∈{0,1,2}, tìm y nguyên tối ưu: (2,1) cho F=8, không dùng 25/3 làm đáp án sản phẩm.</p>
-<p><strong>Tiền đề:</strong> giải hệ hai phương trình; miền nghiệm; số nguyên; hàm mục tiêu.</p>
-<p><strong>Luyện lại:</strong> `THPT-G10-B04-P06` → `THPT-G10-B04-P03` (trường hợp cả cạnh cùng tối ưu).</p>
-<p><strong>Mở câu đã có:</strong> <a data-thpt-formative-id="THPT-G10-B04-P06" href="../luyen-tap/?item=THPT-G10-B04-P06">Luyện lại B04-P06</a> · <a data-thpt-formative-id="THPT-G10-B04-P03" href="../luyen-tap/?item=THPT-G10-B04-P03">Luyện lại B04-P03</a></p></details>
-
-## 4. Tiếp tục
-
-[Luyện tập Bài 4](luyen-tap.md) · [Tự luận Chương II](../../thu-vien/tu-luan-chuong-ii.md)
-
-<p class="thpt-r4-footnote">Nguồn: SGK Toán 10 KNTT tập 1 Bài 4 trang 26–30; SBT Bài 4 trang 19–23. Luyện tập tự đối chiếu không phải Tự kiểm tra độc lập.</p>
+    <p class="thpt-r4-footnote">Nguồn Core: SGK Toán 10 · Kết nối tri thức · tập một, Bài 4 (trang in 26–30). Lời dẫn, ví dụ và Vận dụng do SLM biên tập và tự kiểm; đối chiếu công khai không ghi Mastery hay thay thế Tự kiểm tra cuối chương. Trang SBT tham khảo chưa được xác minh đầy đủ trong lượt này.</p>

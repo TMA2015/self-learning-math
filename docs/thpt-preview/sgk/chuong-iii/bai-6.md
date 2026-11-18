@@ -1,201 +1,310 @@
-# Bài 6. Hệ thức lượng trong tam giác
+# Toán 10 · Bài 6. Hệ thức lượng trong tam giác
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG III · KIẾN THỨC SGK KNTT</p><p class="thpt-r4-lead">Học kiến thức và ví dụ theo Bài 6, sau đó tự luyện.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương III</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra</a></nav></div>
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG III · KIẾN THỨC SGK KNTT</p><p class="thpt-r4-lead">Từ đo đạc thực tế, tự hình thành định lí côsin, định lí sin và công thức diện tích. Hãy tự giải Vận dụng trước khi mở Đối chiếu.</p></div>
 
-## Trước khi học — hiểu ý nghĩa trước khi nhớ quy tắc
+=== "Khám phá kiến thức"
 
-Em hãy đọc tình huống, nhắc lại kiến thức đã học và tự trả lời từng câu **Tự thử** trước khi đọc phần công thức. Chỉ mở lời giải sau khi em đã tự làm. Nếu gặp khó khăn, xem mục hỗ trợ của bài rồi mới luyện Core/Luyện tập. Hoạt động này không chấm điểm hay ghi mức độ thành thạo.
+    ### 1.1. Vì sao cần học hệ thức lượng trong tam giác?
 
-### Định lí côsin
+    Em đứng ở bờ hồ, nhìn một điểm \(C\) trên đảo mà không thể kéo thước đo thẳng từ bờ đến đó. Em chọn thêm vị trí \(B\) cùng bờ với \(A\), đo đoạn \(AB\) và hai góc ngắm từ \(A,B\) tới \(C\). Từ **một đoạn mốc đo được** và **hai góc ngắm**, em có thể tính khoảng cách tới \(C\) mà không phải bơi qua hồ. Tam giác \(ABC\) biến việc đo trực tiếp khó thành phép tính có chứng cứ.
 
-**Vì sao cần học?** Pitago chỉ cho tam giác vuông; với hai cạnh và góc xen giữa là góc tù, cạnh thứ ba có thể dài hơn nhiều. Làm sao tính đúng khi góc không vuông?
+    Kiến thức tiền đề là định lí Pitago trong tam giác vuông, tỉ số sin/cos ở lớp 9 và lượng giác các góc \(0^\circ\) đến \(180^\circ\) của Bài 5. Nhưng tam giác ngoài thực tế thường không vuông. Bài 6 giúp em tìm cạnh hoặc góc khi chỉ có một số dữ kiện, rồi tìm diện tích và kiểm phương án đo đạc. Trong toàn bài, \(a=BC,\ b=CA,\ c=AB\) lần lượt đối diện \(A,B,C\); đừng ghép cạnh với một góc ngẫu nhiên.
 
-**Em đã biết gì?** Trong tam giác ABC không suy biến, a=BC đối diện A, b=CA đối diện B, c=AB đối diện C; mọi cạnh dương và a<b+c. Ôn Pitago và cos góc tù âm.
+    ### 1.2. Vì sao định lí côsin phải có “phần điều chỉnh” Pitago?
 
-**Hiểu bản chất trước công thức** Chiếu một cạnh lên hướng cạnh kia: độ dài cạnh đối diện phụ thuộc cả hai cạnh và góc xen giữa. Hệ số điều chỉnh Pitago là −2bc cosA, từ đó a²=b²+c²−2bc cosA; A=90° thì cosA=0 và quay lại Pitago.
+    Xét tam giác \(ABC\) có \(b=CA\), \(c=AB\); hai cạnh này cùng kề góc \(A\). Tưởng tượng giữ nguyên độ dài \(b,c\) rồi thay đổi góc xen giữa chúng là \(A\). Cạnh thứ ba \(a\) (nối hai đầu mút còn lại) **thay đổi**: góc kẹp mở rộng thì đầu mút tách xa hơn. Nếu \(A=90^\circ\), Pitago cho \(a^2=b^2+c^2\). Với góc nhọn, hai cạnh cùng nghiêng về phía nhau nên \(a^2\) nhỏ hơn tổng ấy; với góc tù, \(a^2\) lớn hơn. Thành phần chiếu của cạnh \(b\) lên hướng \(c\) là \(b\cos A\). Khi tính bình phương khoảng cách hai đầu mút, ta phải trừ \(2bc\cos A\): đó là **lý do hình học** xuất hiện côsin.
 
-**Cách đọc hình và hình dung** Dùng hình minh họa bên dưới: chỉ A, hai cạnh b,c kề A và cạnh a đối diện; đối chiếu góc được sử dụng, không lấy nhầm góc B/C vào −2bc cos.
+    Trong ba tam giác có hai cạnh kề góc \(A\) cùng dài \(b=c=5\), hãy so sánh các trường hợp sau (khác dữ kiện câu Tự thử):
 
-**Vì sao làm theo cách này?** Chọn định lí côsin trong trường hợp SAS (hai cạnh và góc xen giữa) hoặc SSS (tìm góc); không áp dụng công thức Pitago cho góc tù/nhọn không vuông.
+    <div class="thpt-g10-table-scroll"><table class="thpt-g10-knowledge-table">
+    <thead><tr><th>Góc xen giữa</th><th>Dấu \(\cos A\)</th><th>Giá trị \(a^2\)</th><th>Ý nghĩa</th></tr></thead>
+    <tbody><tr><td>\(60^\circ\)</td><td>Dương</td><td>\(25\)</td><td>\(a=5\)</td></tr>
+    <tr><td>\(90^\circ\)</td><td>Bằng 0</td><td>\(50\)</td><td>Trở về Pitago</td></tr>
+    <tr><td>\(150^\circ\)</td><td>Âm</td><td>\(50+25\sqrt3\)</td><td>Cạnh đối diện dài hơn</td></tr></tbody></table></div>
 
-**Tự thử trước Core** Trong tam giác có b=c=5 và A=120°, tính a. Tại sao cạnh a dài hơn mỗi cạnh kề 5?
+    Góc không phải lúc nào cũng \(60^\circ\) hay \(90^\circ\), nhưng **dấu cos** vẫn giúp em dự đoán cạnh nào dài hơn trước khi bấm máy. Đây là bước kiểm lỗi quan trọng sau khi tính.
 
-<details class="thpt-r4-pedagogical-note" markdown="1" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHIII-TRY06">
-<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+    ### 1.3. Vì sao định lí sin giúp giải tam giác và đo đạc?
 
-**Lời giải và giải thích.** a²=25+25−50cos120°=50+25=75, nên a=5√3. Vì cos120°<0, phần điều chỉnh khiến cạnh đối diện góc tù dài hơn 5.
+    Xét tam giác \(ABC\). Nếu biết số đo hai góc và độ dài một cạnh của tam giác, ta tìm được góc thứ ba nhờ tổng ba góc bằng \(180^\circ\). Để tìm những cạnh còn lại, cần mối liên hệ giữa *mỗi cạnh* với *góc đối diện cạnh ấy*. Xét đường tròn ngoại tiếp tam giác \(ABC\): mỗi cạnh là một dây cung và độ dài dây cung liên hệ với sin của góc nội tiếp chắn dây đó. Nhờ vậy, tỉ số cạnh chia sin góc đối diện có một giá trị chung là **đường kính ngoại tiếp** \(2R\). Em không cần dựng chiều cao của mọi tam giác để tìm hai cạnh còn lại.
 
-**Nếu chưa đúng:** Xem lại mục Hỗ trợ khắc phục lỗi ở cuối bài, thử nhắc lại bản chất bằng lời của mình rồi làm câu liên kết câu Core/Luyện tập tương ứng; phần sau này là luyện tập tự nguyện, không là kiểm tra độc lập.
+    **Giải tam giác \(ABC\)** là tìm các độ dài cạnh và số đo góc chưa biết của chính tam giác đó. Trước khi chọn công thức, hãy phân loại dữ kiện: hai cạnh và góc **xen giữa** (SAS) thường bắt đầu bằng côsin; ba cạnh (SSS) cũng dùng côsin để tìm góc; hai góc và một cạnh (ASA/AAS) thường dùng sin. Với một góc **không xen giữa** và hai cạnh (SSA), có thể có hai tam giác khác nhau; một kết quả của phím \(\sin^{-1}\) không tự chứng minh tính duy nhất.
 
-</details>
+    ### 1.4. Vì sao diện tích xuất hiện sin, nửa chu vi và hai bán kính?
 
-### Định lí sin
+    Xét tam giác \(ABC\) có các cạnh \(a=BC\), \(b=CA\), \(c=AB\) và diện tích \(S\). Ở THCS, em đã học công thức tính **diện tích tam giác**: \(S=\tfrac12\times\text{độ dài đáy}\times\text{chiều cao tương ứng}\). Nếu lấy cạnh \(c=AB\) của tam giác làm đáy, độ cao từ đỉnh \(C\) xuống đường thẳng \(AB\) có độ dài \(b\sin A\), nên diện tích **liên quan đến sin của góc xen giữa**, không phải cos. Với góc tù, chân đường cao nằm trên *phần kéo dài* cạnh đáy nhưng độ cao vẫn là \(b\sin A>0\).
 
-**Vì sao cần học?** Trong đo đạc, thường dễ đo góc từ hai điểm hơn là trực tiếp đo khoảng cách tới vật. Định lí sin giúp nối các góc với các cạnh đối diện mà không cần dựng đường cao rồi chia nhỏ tam giác.
+    Còn đường tròn nội tiếp **tam giác \(ABC\)** có bán kính \(r\) thì sao? Từ tâm đường tròn nội tiếp, hạ ba đoạn vuông góc đến ba cạnh \(BC,CA,AB\); mỗi đoạn dài \(r\). Chia tam giác \(ABC\) thành ba tam giác nhỏ có đáy lần lượt dài \(a,b,c\) và cùng chiều cao \(r\), rồi **cộng diện tích**: \(S=\frac12(a+b+c)r=pr\), trong đó \(p=(a+b+c)/2\) là **nửa chu vi tam giác \(ABC\)**, không phải chu vi. Với đường tròn ngoại tiếp tam giác \(ABC\) có bán kính \(R\), ta dùng hệ thức khác: định lí sin liên kết \(a\) và \(\sin A\) qua \(2R\); thay vào công thức diện tích cho \(S=abc/(4R)\). Hai công thức thuộc hai đường tròn khác nhau, nên không hoán đổi \(r,R\).
 
-**Em đã biết gì?** Tổng ba góc trong tam giác bằng 180°; cạnh a đối diện góc A, sin góc trong tam giác dương; R>0 là bán kính ngoại tiếp. Phân biệt một góc với cạnh đối diện của góc đó.
+    ### 1.5. Nếu chỉ đo được ba cạnh thì tính diện tích thế nào?
 
-**Hiểu bản chất trước công thức** Định lí sin a/sinA=b/sinB=c/sinC=2R cho thấy cạnh lớn tương ứng sin góc lớn hơn trong cùng tam giác. Nó có ích cho ASA/AAS; với dữ liệu SSA có thể tồn tại hai tam giác khác nhau, không mặc định mọi kết quả arcsin là duy nhất.
+    Xét tam giác \(ABC\) có ba cạnh dài \(a,b,c\). Dù chưa biết các góc và đường cao của tam giác, ta vẫn có thể tính **diện tích tam giác \(ABC\)** chỉ từ ba cạnh nếu chúng thực sự tạo thành một tam giác. Từ côsin, suy ra cos của một góc; hệ thức \(\sin^2 A=1-\cos^2 A\) cho sin dương, rồi thay vào \(S=\tfrac12bc\sin A\). Khi rút gọn, kết quả trở thành công thức **Heron** chứa \(p,p-a,p-b,p-c\). Ba đỉnh \(A,B,C\) phải **không thẳng hàng**; khi đó ta có một **tam giác không suy biến** (diện tích lớn hơn 0). Với ba độ dài cạnh dương, điều này tương đương mỗi cạnh nhỏ hơn tổng hai cạnh còn lại; khi đó các hiệu \(p-a,p-b,p-c\) đều dương. Vì thế phải kiểm bất đẳng thức tam giác trước, không chỉ bấm căn rồi tin một con số.
 
-**Cách đọc hình và hình dung** Trong hình tam giác minh họa ở phần kiến thức bên dưới, đánh dấu cặp A–a, B–b, C–c; đặt hai cạnh đối diện cạnh nhau rồi so sánh. Hình bên dưới chỉ minh họa nhãn cạnh và góc, không phải một hình riêng chứng minh định lí sin.
+    **Sau bài học, em cần:** giải thích và chọn đúng côsin/sin; tìm cạnh/góc của tam giác bằng dữ kiện SAS/SSS/AAS; suy diện tích từ đường cao, góc xen giữa, \(r,R\) hoặc ba cạnh; tính đo đạc có đơn vị và tự kiểm tính hợp lí của kết quả. Các công thức chi tiết và Tự thử sẽ được học ở tab Kiến thức, mỗi câu đều có Đối chiếu do em chủ động mở.
 
-**Vì sao làm theo cách này?** Khi biết hai góc và một cạnh, tìm góc thứ ba rồi ghép đúng cặp cạnh–sin góc; dùng a/sinA=2R nếu cần bán kính. Không thể khôi phục cả tam giác từ một cặp A,a duy nhất.
+=== "Kiến thức SGK"
 
-**Tự thử trước Core** Trong tam giác có A=30° và a=5, tính bán kính ngoại tiếp R. Chỉ với hai dữ kiện này có xác định duy nhất các góc B,C không? Vì sao?
+    ### 2.1. Định lí côsin
 
-<details class="thpt-r4-pedagogical-note" markdown="1" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHIII-TRY07">
-<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+    #### 2.1.1. Hai cạnh và góc xen giữa: tìm cạnh thứ ba
 
-**Lời giải và giải thích.** 2R=a/sinA=5/(1/2)=10 nên R=5. Không xác định duy nhất B,C: cần thêm dữ kiện độc lập; chỉ biết B+C=150°.
+    Xét tam giác \(ABC\) có ba đỉnh không thẳng hàng (tức **không suy biến**, như đã giải thích ở mục 1.5). Quy ước \(a=BC,\ b=CA,\ c=AB\) lần lượt đối diện các góc \(A,B,C\). Biết hai cạnh kề \(b,c\) và góc kẹp giữa chúng \(A\) (SAS), định lí Pitago chưa đủ nếu \(A\ne90^\circ\). Thành phần chiếu \(b\cos A\) của một cạnh lên phương cạnh kia tạo phần hiệu chỉnh:
 
-**Nếu chưa đúng:** Xem lại mục Hỗ trợ khắc phục lỗi ở cuối bài, thử nhắc lại bản chất bằng lời của mình rồi làm câu liên kết câu Core/Luyện tập tương ứng; phần sau này là luyện tập tự nguyện, không là kiểm tra độc lập.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định lí côsin:</strong> \(a^2=b^2+c^2-2bc\cos A\), tương tự \(b^2=a^2+c^2-2ac\cos B\) và \(c^2=a^2+b^2-2ab\cos C\). Mỗi góc trong tích \(\cos\) phải <em>xen giữa đúng hai cạnh</em> đứng sau hệ số \(2\).</div>
 
-</details>
+    Nếu \(A=90^\circ\) thì \(\cos A=0\), ta trở lại Pitago. Nếu \(A\) tù thì \(\cos A<0\), làm \(a^2>b^2+c^2\). Hãy dự đoán dấu trước khi tính, rồi áp dụng cho **dữ kiện mới** ở câu Vận dụng này.
 
-### Diện tích tam giác theo sin
+    **Vận dụng.** Với \(b=c=5\) và \(A=120^\circ\), hãy tính \(a\). Vì sao \(a\) dài hơn từng cạnh kề?
 
-**Vì sao cần học?** Nếu hai cạnh và góc xen giữa đã biết nhưng chưa biết đường cao, liệu tính được diện tích mà không cần dựng và đo đường cao trực tiếp?
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHIII-TRY06" hidden></span>
 
-**Em đã biết gì?** Diện tích tam giác S=1/2×đáy×chiều cao. Với một cạnh c làm đáy, chiều cao từ đầu cạnh b tạo góc A có độ lớn b sinA; góc trong nằm (0°,180°) nên sinA>0.
+    ??? question "Em đã tính? Mở lời giải để đối chiếu"
 
-**Hiểu bản chất trước công thức** Từ chiều cao h=b sinA, suy S=(1/2)bc sinA. Điều này giải thích cả việc hai góc bù có cùng sin nên khi giữ nguyên hai cạnh kề, diện tích có thể bằng nhau dù cạnh đối diện đổi chiều dài.
+        \(a^2=5^2+5^2-2\cdot5\cdot5\cos120^\circ=50+25=75\), nên \(a=5\sqrt3\). Vì \(\cos120^\circ=-\frac12<0\), phần điều chỉnh được cộng thêm vào tổng hai bình phương, cho cạnh đối diện lớn hơn 5.
 
-**Cách đọc hình và hình dung** Trong hình minh họa bên dưới, xem góc A giữa b và c, hình chiếu vuông góc cho chiều cao của đỉnh C xuống đường chứa cạnh c. Nếu A tù, chân đường cao nằm trên phần kéo dài của đáy; diện tích vẫn dương.
+    <figure class="thpt-r4-plot thpt-r4-concept-figure">
+    <img src="../../../../assets/images/thpt/THPT_G10_B06_COSINE_AREA_TRIANGLE_D5_R01.svg" loading="lazy" alt="Tam giác ABC với cạnh AC bằng 6, AB bằng 8, góc A bằng 60 độ, cạnh BC bằng hai căn mười ba, chú giải định lí côsin và diện tích">
+    <figcaption>Đọc hình: \(b=AC=6,\ c=AB=8\) kẹp góc \(A=60^\circ\); \(a=BC\) là cạnh đối diện cần tìm. Hình có các bước kiểm tra bằng côsin và diện tích: em hãy đối chiếu đúng kí hiệu và điều kiện, không đọc nhầm thành dữ kiện các câu Tự thử.</figcaption>
+    </figure>
 
-**Vì sao làm theo cách này?** Chọn công thức diện tích theo sin cho SAS; khi biết cả ba cạnh mà không biết góc, Heron thuận tiện hơn. Không thay nhầm góc không xen giữa b,c.
+    Hình trên là một minh họa riêng với \(b=6,c=8,A=60^\circ\). Trên hình, trước tiên hãy xác định hai cạnh **kề** góc \(A\) và cạnh **đối diện** \(a\), sau đó mới đọc các phép tính đã chú thích. Không dùng kết quả của hình để thay vào một tam giác có số liệu khác.
 
-**Tự thử trước Core** Hai tam giác đều có hai cạnh kề b=6, c=8, nhưng góc xen giữa lần lượt A=30° và A=150°. Tính diện tích của từng tam giác và giải thích tại sao bằng nhau.
+    #### 2.1.2. Ba cạnh đã biết: tìm góc bằng côsin
 
-<details class="thpt-r4-pedagogical-note" markdown="1" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHIII-TRY08">
-<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+    Từ định lí côsin, chuyển vế rồi chia cho \(2bc>0\), ta tìm được
 
-**Lời giải và giải thích.** Cả hai có S=(1/2)·6·8·sin30°=(1/2)·6·8·sin150°=12 đơn vị diện tích, do sin150°=sin30°. Chúng không nhất thiết có cùng cạnh thứ ba.
+    \[
+    \cos A=\frac{b^2+c^2-a^2}{2bc}.
+    \]
 
-**Nếu chưa đúng:** Xem lại mục Hỗ trợ khắc phục lỗi ở cuối bài, thử nhắc lại bản chất bằng lời của mình rồi làm câu liên kết câu Core/Luyện tập tương ứng; phần sau này là luyện tập tự nguyện, không là kiểm tra độc lập.
+    Tương tự cho \(B,C\) bằng cách hoán đổi tên góc và cạnh. **Trước khi bấm \(\cos^{-1}\)**, phải kiểm \(a,b,c>0\) và tổng hai cạnh bất kì **lớn hơn** cạnh còn lại. Nếu không thỏa bất đẳng thức tam giác nghiêm ngặt, không có tam giác cần giải. Khi tìm góc từ cos, hãy đặt máy ở DEG, kiểm góc nằm trong \((0^\circ,180^\circ)\), và xác nhận góc đối diện cạnh dài nhất phải lớn nhất.
 
-</details>
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiểm phương pháp:</strong> SAS → dùng côsin tìm cạnh. SSS → dùng côsin tìm góc. Nếu \(A\) tù, kết quả \(a\) phải dài hơn từng cạnh kề; nếu ba cạnh không lập thành tam giác, dừng trước khi tính các góc.</div>
 
-### Công thức Heron
+    ### 2.2. Định lí sin
 
-**Vì sao cần học?** Chỉ biết ba cạnh mảnh đất hình tam giác mà chưa biết góc hoặc đường cao, vẫn có thể tính diện tích được hay không? Và ba số đo nào thực sự lập được một tam giác?
+    #### 2.2.1. Ghép cạnh với góc đối diện
 
-**Em đã biết gì?** Ba cạnh dương của tam giác phải thỏa tổng hai cạnh lớn hơn cạnh còn lại; nửa chu vi p=(a+b+c)/2. Diện tích S>0, r là bán kính nội tiếp và R là ngoại tiếp, không tráo hai ký hiệu.
+    Xét tam giác \(ABC\) có đường tròn ngoại tiếp bán kính \(R\). Ba cạnh \(AB,BC,CA\) của tam giác là ba dây cung của đường tròn này. Mỗi dây cung được đo bởi sin của góc nội tiếp chắn dây ấy. Bởi vậy, mọi tỉ số **cạnh chia sin của góc đối diện** đều bằng đường kính:
 
-**Hiểu bản chất trước công thức** Heron dùng dữ liệu SSS: S=√[p(p−a)(p−b)(p−c)], nhưng điều kiện tam giác phải được kiểm trước. Khi đã có S, công thức S=pr cho bán kính nội tiếp; công thức S=abc/(4R) cho ngoại tiếp.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định lí sin:</strong> \(\dfrac{a}{\sin A}=\dfrac{b}{\sin B}=\dfrac{c}{\sin C}=2R\). Ở tam giác không suy biến, \(0^\circ<A,B,C<180^\circ\), nên các mẫu sin đều dương và khác 0.</div>
 
-**Cách đọc hình và hình dung** Vẽ thử tam giác cạnh 3,4,5 so với bộ 2,3,6. Bộ thứ hai không thể khép cạnh thành tam giác vì 2+3<6. Một hình chữ V không khép kín không có “diện tích tam giác” để Heron tính.
+    Trong tam giác \(ABC\), nếu biết số đo hai góc và độ dài một cạnh, trước hết tính góc còn lại bằng tổng ba góc \(180^\circ\), rồi ghép **đúng cặp**. Ví dụ, biết \(A=40^\circ,B=70^\circ,c=9\), ta có \(C=70^\circ\) và \(b=c=9\) (vì \(B=C\)), còn \(a=\dfrac{9\sin40^\circ}{\sin70^\circ}\). Đây là dữ kiện minh họa khác câu tự kiểm; em cần phân biệt điều đã cho với cặp cạnh/góc muốn tìm.
 
-**Vì sao làm theo cách này?** Với ba cạnh SSS, kiểm bất đẳng thức tam giác, tính p rồi Heron; nếu dữ kiện đã cho góc xen giữa, cân nhắc công thức theo sin để giảm biến đổi. Không tự lấy căn một biểu thức âm và gọi là diện tích thực.
+    **Vận dụng.** Cho \(A=30^\circ\), \(a=5\). Tìm bán kính ngoại tiếp \(R\). Chỉ từ hai dữ kiện này, có biết duy nhất \(B,C\) không?
 
-**Tự thử trước Core** Bộ ba cạnh (3,4,5) cho diện tích S và bán kính nội tiếp r bao nhiêu? Bộ ba (2,3,6) có áp dụng Heron cho một tam giác được không? Giải thích.
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHIII-TRY07" hidden></span>
 
-<details class="thpt-r4-pedagogical-note" markdown="1" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHIII-TRY09">
-<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+    ??? question "Mở lời giải sau khi tự tính"
 
-**Lời giải và giải thích.** Với 3,4,5: p=6, S=√(6·3·2·1)=6, r=S/p=1. Với 2,3,6: 2+3<6, không lập thành tam giác nên không có diện tích tam giác hợp lệ.
+        \(\frac{a}{\sin A}=2R=\frac5{1/2}=10\), nên \(R=5\). **Không xác định duy nhất** \(B,C\), vì mới biết \(B+C=150^\circ\), vẫn có nhiều cách chọn hai góc dương có tổng này.
 
-**Nếu chưa đúng:** Xem lại mục Hỗ trợ khắc phục lỗi ở cuối bài, thử nhắc lại bản chất bằng lời của mình rồi làm câu liên kết câu Core/Luyện tập tương ứng; phần sau này là luyện tập tự nguyện, không là kiểm tra độc lập.
+    #### 2.2.2. Chọn góc nào khi dữ kiện chưa đủ?
 
-</details>
+    Một cặp \(A,a\) cho \(R\) nhưng chưa đủ xác định **duy nhất** hai góc còn lại. Nếu đề chỉ cho hai cạnh và một góc **không xen giữa** (SSA), lời giải dùng \(\sin^{-1}\) có thể cho **hai góc bù nhau** phù hợp; cần kiểm tổng ba góc và cạnh đối diện, không mặc nhiên chọn góc do máy trả về. Nếu đề cho AAS/ASA, hai góc đã biết thường tránh được sự mơ hồ này.
 
-### Bài toán đo đạc thực tế
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Ghi nhớ:</strong> Chỉ ghép \(a\leftrightarrow A,\ b\leftrightarrow B,\ c\leftrightarrow C\). Một phép tính đúng vẫn có thể không giải đủ tam giác nếu dữ kiện chưa quyết định duy nhất hình.</div>
 
-**Vì sao cần học?** Không thể sang trực tiếp một điểm C bên kia vật cản để đo đoạn đường tới đó. Chỉ cần một đường chuẩn AB và các góc ngắm A,B, ta có thể dựng tam giác và tính những khoảng cách chưa đo trực tiếp.
+    ### 2.3. Giải tam giác và ứng dụng thực tế
 
-**Em đã biết gì?** Mô tả chính xác tam giác khảo sát ABC, biết đoạn chuẩn AB=c, các góc A,B là góc trong tam giác, A+B<180°. Nhớ tổng ba góc, định lí sin và diện tích=1/2×đáy×chiều cao. Đơn vị độ dài phải thống nhất.
+    #### 2.3.1. Chọn phương pháp theo dữ kiện
 
-**Hiểu bản chất trước công thức** Bài đo đạc gồm hai tầng: chuyển tình huống thực thành tam giác đúng, rồi chọn quan hệ lượng. Tính các cạnh bằng định lí sin khi biết hai góc và cạnh chuẩn; nếu cần khoảng cách vuông góc từ C tới AB thì dùng chiều cao, không nhầm với AC hay BC.
+    **Giải tam giác** là tính các cạnh và góc chưa biết khi đã có đủ dữ kiện. Trước khi thao tác, ghi ba cặp \(a/A,\ b/B,\ c/C\) và đánh dấu những đại lượng đã cho. Với **SAS**, thường bắt đầu bằng côsin để tìm cạnh thứ ba; với **SSS**, dùng côsin để tìm góc, rồi dùng tổng góc hoặc sin; với **ASA/AAS**, tính góc thứ ba rồi dùng định lí sin. Không tự bỏ qua điều kiện góc dương, tổng \(180^\circ\) và độ dài cạnh dương.
 
-**Cách đọc hình và hình dung** Vẽ AB là đoạn chuẩn nằm ngang, C ở một phía đường AB; ghi góc tại A,B và điểm hạ vuông góc H từ C xuống AB. Đọc kỹ đại lượng đề hỏi là AC, BC hay CH; chúng không tự bằng nhau.
+    Nếu biết \(A=35^\circ,B=65^\circ,c=10\), ta có \(C=80^\circ\). Khi ấy \(a=\dfrac{10\sin35^\circ}{\sin80^\circ}\), \(b=\dfrac{10\sin65^\circ}{\sin80^\circ}\). Em có thể tính gần đúng bằng máy DEG, ghi đơn vị và đối chiếu cạnh đối diện góc lớn hơn phải dài hơn. Không dùng công thức Heron chỉ để tìm cạnh khi đã biết hai góc, một cạnh.
 
-**Vì sao làm theo cách này?** Với ASA/AAS chọn định lí sin; nếu cần chiều cao sau khi biết hai cạnh thì dùng diện tích hoặc lượng giác trong tam giác vuông; kiểm điều kiện hợp lí và đơn vị ở từng bước. Không dùng công thức Heron nếu chưa biết ba cạnh.
+    #### 2.3.2. Đo khoảng cách không thể đo trực tiếp
 
-**Tự thử trước Core** Người khảo sát đo AB=20√2 m và các góc trong tam giác tại A,B đều 45°, còn C bên kia vật cản. Tính AC, BC và khoảng cách vuông góc CH từ C đến đường AB.
+    Một tuyến khảo sát dùng đoạn mốc \(AB\) đo được dọc bờ, góc ngắm tại \(A,B\) hướng tới điểm \(C\) phía bên kia. Sau khi lập sơ đồ, tính \(C=180^\circ-A-B\), rồi dùng định lí sin để tìm \(AC\) hoặc \(BC\). Nếu cần **khoảng cách vuông góc từ \(C\) đến đường thẳng \(AB\)**, gọi \(H\) là hình chiếu vuông góc của \(C\) lên \(AB\) và dùng \(CH=\dfrac{2S}{AB}\); có thể tính \(S\) từ các cạnh/góc của tam giác. Không tự nhận hình học lí tưởng phản ánh chính xác địa hình, và cần nêu đơn vị đo.
 
-<details class="thpt-r4-pedagogical-note" markdown="1" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHIII-TRY10">
-<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+    **Em hãy tự giải tình huống độc lập trước khi nhìn hình có kết quả.**
 
-**Lời giải và giải thích.** C=90°, tam giác vuông cân tại C nên AC=BC=20 m (AB là cạnh huyền 20√2 m). Diện tích S=1/2·20·20=200 m²; CH=2S/AB=400/(20√2)=10√2 m.
+    **Vận dụng.** Với \(AB=20\sqrt2\) m, hai góc tại \(A,B\) đều \(45^\circ\), hãy tính \(AC,BC\) và khoảng cách vuông góc \(CH\) từ \(C\) đến đường thẳng \(AB\).
 
-**Nếu chưa đúng:** Xem lại các mục Hỗ trợ khắc phục lỗi ở cuối bài, thử nhắc lại bản chất bằng lời của mình rồi làm câu liên kết câu Core/Luyện tập tương ứng; phần sau này là luyện tập tự nguyện, không là kiểm tra độc lập.
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHIII-TRY10" hidden></span>
 
-</details>
+    ??? question "Em đã tự tính khoảng cách? Mở lời giải"
 
----
+        \(C=180^\circ-45^\circ-45^\circ=90^\circ\), nên tam giác vuông cân tại C. \(AC=BC=\frac{AB}{\sqrt2}=20\) m. Diện tích \(S=\frac12\cdot20\cdot20=200\) m², mặt khác \(S=\frac12 AB\cdot CH\). Vì vậy \(CH=\frac{400}{20\sqrt2}=10\sqrt2\) m.
 
-## 1. Kiến thức
+    <figure class="thpt-r4-plot thpt-r4-concept-figure">
+    <img src="../../../../assets/images/thpt/G10_B06_SURVEY_RIGHT_TRIANGLE_R01.svg" loading="lazy" alt="Sơ đồ tam giác vuông cân ABC với AB dài 20 căn hai mét, A và B cùng 45 độ, góc C 90 độ và đường cao CH vuông góc AB">
+    <figcaption>Sơ đồ đo đạc do SLM dựng: \(AB=20\sqrt2\) m, \(A=B=45^\circ,\ C=90^\circ\). \(H\) là hình chiếu của \(C\) lên \(AB\), nên khoảng cách vuông góc \(CH=10\sqrt2\) m. Hình là <strong>sơ đồ hình học</strong>, không mô tả chính xác địa hình.</figcaption>
+    </figure>
 
-### Kí hiệu và định lí côsin
+    **Hướng dẫn đọc hình sau Tự thử:** Điểm \(H\) là chân đường vuông góc từ \(C\) đến đường thẳng \(AB\), không phải đỉnh thứ tư của tam giác. Hình minh họa đúng riêng bộ dữ kiện trong câu vừa làm, có ghi kết quả để em tự đối chiếu. Khi gặp đoạn mốc và góc ngắm khác, phải tính lại từ dữ kiện mới.
 
-Trong tam giác **không suy biến** ABC, đặt `a=BC`, `b=CA`, `c=AB`, với các góc đối diện tương ứng A,B,C; các cạnh `a,b,c>0`, thỏa bất đẳng thức tam giác nghiêm ngặt.
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Ghi nhớ đo đạc:</strong> Chọn hai điểm mốc có thể đo trực tiếp; xác định góc đo tại đúng đỉnh; giải tam giác bằng sin/cos; kiểm đơn vị và độ hợp lí trước khi báo khoảng cách thực tế.</div>
 
-\[
-\begin{aligned}
-a^2&=b^2+c^2-2bc\cos A,\\
-b^2&=a^2+c^2-2ac\cos B,\\
-c^2&=a^2+b^2-2ab\cos C.
-\end{aligned}
-\]
+    ### 2.4. Công thức tính diện tích tam giác
 
-Từ đó \(\cos A=(b^2+c^2-a^2)/(2bc)\), tương tự cho B,C. Nếu `A=90°`, định lí trở thành Pitago. Không chọn nhầm góc B trong công thức liên quan `b,c`.
+    #### 2.4.1. Bán kính nội tiếp và nửa chu vi: vì sao \(S=pr\)?
 
-### Định lí sin
+    Gọi \(I\) là tâm đường tròn nội tiếp, \(r\) là bán kính nội tiếp và \(p=\dfrac{a+b+c}{2}\) là **nửa chu vi**. Ba đường vuông góc từ \(I\) đến các cạnh đều dài \(r\). Chia tam giác \(ABC\) thành \(IAB,IBC,ICA\), tổng diện tích:
 
-Với `R>0` là bán kính ngoại tiếp:
+    \[
+    S=\tfrac12cr+\tfrac12ar+\tfrac12br=\tfrac12(a+b+c)r=pr.
+    \]
 
-\[
-\frac a{\sin A}=\frac b{\sin B}=\frac c{\sin C}=2R.
-\]
+    Đây là cách hiểu \(S=pr\): **cùng chiều cao \(r\)** ứng với ba đáy là các cạnh của tam giác. Không thay \(p\) bằng chu vi đầy đủ, và không nhầm \(r\) với bán kính ngoại tiếp.
 
-Mọi góc trong của tam giác nằm trong `(0°,180°)` nên các sin dương. Nếu đã biết hai góc, góc thứ ba bằng `180°−A−B`; trước khi dùng cần `A+B<180°`. Trường hợp chỉ biết `A,a,b` có thể có hai góc B thỏa phương trình sin, nên không mặc định phép lấy arcsin trả một tam giác duy nhất.
+    #### 2.4.2. Hai cạnh và góc xen giữa: từ chiều cao đến sin
 
-### Diện tích, Heron và bán kính
+    Nếu lấy \(c=AB\) làm đáy, chiều cao từ \(C\) đến đường thẳng \(AB\) bằng \(b\sin A\), kể cả khi chân đường cao ở phần kéo dài của \(AB\). Vậy
 
-Với `p=(a+b+c)/2` và diện tích `S>0`:
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Diện tích theo sin góc xen giữa:</strong> \(\displaystyle S=\frac12bc\sin A=\frac12ca\sin B=\frac12ab\sin C\). Cặp cạnh dùng cùng một biểu thức phải kẹp đúng góc đi kèm. Vì \(0^\circ<A,B,C<180^\circ\), các sin ở đây đều dương.</div>
 
-\[
-S=\tfrac12bc\sin A=\tfrac12ca\sin B=\tfrac12ab\sin C,\qquad
-S=\sqrt{p(p-a)(p-b)(p-c)},
-\]
+    Hai cạnh giữ nguyên nhưng thay góc kẹp bằng **góc bù** có thể cho cùng diện tích vì hai sin bằng nhau; tuy nhiên cạnh thứ ba thường **khác nhau** theo định lí côsin. Hãy tự kiểm điều đó trong câu sau:
 
-\[
-S=pr,\qquad S=\frac{abc}{4R}.
-\]
+    **Vận dụng.** Hai tam giác có cùng hai cạnh kề \(b=6,c=8\), nhưng góc xen giữa lần lượt \(A=30^\circ\) và \(A=150^\circ\). Tính diện tích của mỗi tam giác, giải thích vì sao bằng nhau.
 
-Trong đó r là bán kính đường tròn **nội tiếp**, R là bán kính **ngoại tiếp**. Đơn vị diện tích là đơn vị độ dài bình phương; không dùng Heron khi ba cạnh không tạo thành tam giác.
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHIII-TRY08" hidden></span>
 
-### Giải tam giác và ứng dụng S1
+    ??? question "Em đã chọn đúng góc? Mở đối chiếu"
 
-Khi biết đủ ba cạnh (SSS), thường dùng định lí côsin tìm góc; khi biết hai cạnh và góc xen giữa (SAS), tìm cạnh còn lại bằng côsin; khi biết hai góc và một cạnh (ASA/AAS), dùng định lí sin. Với đo đạc thực tế, phải khai báo đoạn mốc, góc quan sát là **góc trong của tam giác nào**, độ dài cần tìm, đơn vị và độ chính xác hợp lý. Nếu cần bán kính ngoại tiếp, dùng `2R=a/sin A` hoặc `S=abc/(4R)`.
+        Mỗi tam giác có diện tích \(S=\frac12\cdot6\cdot8\cdot\sin30^\circ=12\), vì \(\sin150^\circ=\sin30^\circ=\frac12\). Hai tam giác không nhất thiết có cùng cạnh thứ ba.
 
-## 2. Ví dụ
+    #### 2.4.3. Bán kính ngoại tiếp: vì sao \(S=\dfrac{abc}{4R}\)?
 
-**Ví dụ 1 — Côsin và diện tích:** `b=6,c=8,A=60°`. 
-\(a^2=36+64-2\cdot6\cdot8\cdot\tfrac12=52\), nên \(a=2\sqrt{13}\). Đồng thời \(S=\tfrac12\cdot6\cdot8\cdot\sin60^\circ=12\sqrt3\). Nêu đúng góc xen giữa và cạnh đối diện.
+    Từ định lí sin ta có \(\sin A=\dfrac{a}{2R}\). Thay vào \(S=\frac12bc\sin A\) được
 
-**Ví dụ 2 — Định lí sin:** `A=30°,B=45°,a=5`; vậy `C=105°`. 
-\(b=5\sin45^\circ/\sin30^\circ=5\sqrt2\), \(2R=5/\sin30^\circ=10\), nên `R=5`. Các góc đều hợp lệ.
+    \[
+    \boxed{S=\frac{abc}{4R}.}
+    \]
 
-**Ví dụ 3 — Heron và hai bán kính:** Ba cạnh 13,14,15 thỏa bất đẳng thức tam giác. Nửa chu vi `p=21`, 
-\(S=\sqrt{21\cdot8\cdot7\cdot6}=84\), bán kính nội tiếp `r=S/p=4`, bán kính ngoại tiếp 
-\(R=13\cdot14\cdot15/(4\cdot84)=65/8\). Không nhầm r và R.
+    Đây là công thức cho **bán kính ngoại tiếp** \(R\), khác \(S=pr\) cho bán kính **nội tiếp** \(r\). Muốn tìm \(R\) khi đã biết \(a,b,c,S\), biến đổi \(R=\frac{abc}{4S}\). Khi tính \(r\), dùng \(r=\frac S p\), không lấy nhầm tích ba cạnh.
 
-## 3. Hình minh họa
+    #### 2.4.4. Công thức Heron: tính từ ba cạnh mà không cần góc
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B06_COSINE_AREA_TRIANGLE_D5_R01.svg" loading="lazy" alt="Hệ thức lượng trong tam giác, định lí côsin và công thức diện tích"><figcaption>Hệ thức lượng trong tam giác, định lí côsin và công thức diện tích.</figcaption></figure>
+    Nếu biết đủ ba cạnh \(a,b,c\), kiểm \(a,b,c>0\) và bất đẳng thức tam giác **nghiêm ngặt**. Khi ấy \(p=\frac{a+b+c}{2}\) và \(\sin A>0\). Từ \(\cos A=\frac{b^2+c^2-a^2}{2bc}\) kết hợp \(S=\frac12bc\sin A\), ta có
 
-## 4. Tự khắc phục lỗi thường gặp
+    \[
+    16S^2=4b^2c^2-(b^2+c^2-a^2)^2
+       =(a+b+c)(-a+b+c)(a-b+c)(a+b-c).
+    \]
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-B06-01"><summary>Sai góc xen giữa / nhầm định lí sin và côsin</summary><ol><li><strong>Dấu hiệu:</strong> Lấy `a²=b²+c²−2bc cos B` hoặc dùng sin để tìm cạnh trong tình huống chỉ biết hai cạnh và góc xen giữa.</li>
-<li><strong>Chẩn đoán:</strong> Không chỉ rõ cạnh đối diện góc A và hai cạnh kề góc A.</li>
-<li><strong>Bản chất:</strong> Với kí hiệu chuẩn a đối diện A; hệ thức đúng là `a²=b²+c²−2bc cos A`. Định lí sin liên hệ các <strong>cặp cạnh–góc đối diện</strong>.</li>
-<li><strong>Tự sửa:</strong> Ghi a,b,c lên FIG-G10-B06-01, kiểm tra góc A=60°, tính lại 52 và căn dương.</li></ol><p><a href="../luyen-tap/">Luyện lại các câu liên quan</a></p></details>
+    Mỗi thừa số ở tích cuối bằng \(2p,\ 2(p-a),\ 2(p-b),\ 2(p-c)\). Chia cho 16 và lấy căn **dương** vì diện tích dương, suy ra công thức:
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-B06-02"><summary>Nhầm diện tích, Heron, r/R và đơn vị</summary><ol><li><strong>Dấu hiệu:</strong> Dùng `S=1/2 bc cos A`, tính r từ `abc/(4S)`, hoặc ghi m thay vì m².</li>
-<li><strong>Chẩn đoán:</strong> Nhớ công thức rời rạc, không phân biệt tâm nội/ngoại tiếp và góc xen giữa.</li>
-<li><strong>Bản chất:</strong> `S=1/2 bc sin A`, `S=sqrt[p(p−a)(p−b)(p−c)]`, `S=pr`, `S=abc/(4R)`.</li>
-<li><strong>Tự sửa:</strong> Làm tam giác 13–14–15: p=21, S=84, r=4, R=65/8; kiểm tra thứ nguyên.</li></ol><p><a href="../luyen-tap/">Luyện lại các câu liên quan</a></p></details>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Công thức Heron:</strong> \(\displaystyle S=\sqrt{p(p-a)(p-b)(p-c)}\), \(p=\frac{a+b+c}{2}\). Kiểm ba cạnh lập tam giác trước khi dùng; sau khi có \(S\), chọn \(r=S/p\) hoặc \(R=abc/(4S)\) theo đúng loại bán kính.</div>
 
-## 5. Luyện tập
+    Nếu ba cạnh không tạo tam giác, **không** cố dùng Heron để tìm một “diện tích” hình học không tồn tại. Nếu chỉ biết ba cạnh, Heron thường gọn hơn việc tìm góc bằng \(\cos^{-1}\) rồi lại tính sin. Tự thử với một tam giác vuông và một bộ ba cạnh không hợp lệ:
 
-[Luyện tập Bài 6](luyen-tap.md) · [Bài tự luận Chương III](../../thu-vien/tu-luan-chuong-iii.md)
+    **Vận dụng.** Với ba cạnh \((3,4,5)\), hãy tính \(S,r\). Bộ ba \((2,3,6)\) có dùng Heron như một tam giác được không?
+
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHIII-TRY09" hidden></span>
+
+    ??? question "Em đã kiểm điều kiện tam giác? Mở đáp án"
+
+        Với \(3,4,5\): \(p=6\), \(S=\sqrt{6\cdot3\cdot2\cdot1}=6\), \(r=S/p=1\). Bộ ba \(2,3,6\) **không tạo tam giác** vì \(2+3\le6\), nên không dùng như một bài toán diện tích tam giác thực.
+
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Bản đồ lựa chọn:</strong> Hai cạnh + góc xen giữa → diện tích theo sin; ba cạnh → Heron; biết \(r,p\) → \(S=pr\); biết \(a,b,c,R\) → \(S=abc/(4R)\). Diện tích đo bằng đơn vị **bình phương**, còn cạnh và bán kính đo bằng đơn vị dài.</div>
+
+=== "Ví dụ"
+
+    ### 3.1. Ví dụ 1 — Hai cạnh và góc xen giữa, tính cả cạnh và diện tích
+
+    **Đề bài.** Cho tam giác \(ABC\) có \(b=9,\ c=7,\ A=60^\circ\). Tính cạnh \(a\) và diện tích \(S\). Đây là bộ dữ kiện **khác hình minh họa** ở §2.1 và các câu Tự thử.
+
+    **Phân tích.** Góc \(A\) **kẹp đúng hai cạnh \(b,c\)**, nên định lí côsin tính được cạnh đối diện \(a\). Diện tích dùng \(\frac12bc\sin A\); không cần tìm đường cao riêng. Dự đoán \(a\) ngắn hơn \(\sqrt{b^2+c^2}\) vì \(A\) nhọn.
+
+    **Lời giải.** Theo định lí côsin,
+
+    \[
+    a^2=9^2+7^2-2\cdot9\cdot7\cos60^\circ
+        =81+49-63=67,\quad a=\sqrt{67}\approx8{,}19.
+    \]
+
+    \[
+    S=\tfrac12\cdot9\cdot7\sin60^\circ
+      =\frac{63\sqrt3}{4}\approx27{,}28.
+    \]
+
+    **Kiểm lại.** \(2<\sqrt{67}<16\), ba cạnh tạo tam giác; diện tích dương và đo bằng đơn vị độ dài bình phương. Không dùng cạnh \(a=2\sqrt{13}\) của **hình §2.1** cho dữ kiện mới này.
+
+    ### 3.2. Ví dụ 2 — Giải tam giác từ hai góc và một cạnh
+
+    **Đề bài.** Cho \(A=45^\circ,\ B=75^\circ,\ a=6\). Tìm \(C,\ b,\ c\) và bán kính ngoại tiếp \(R\).
+
+    **Phân tích.** Đây là dữ kiện hai góc và một cạnh; định lí sin kết nối \(a\) với \(\sin A\). Trước hết tìm góc \(C\), sau đó dùng cùng tỉ số cho các cạnh còn lại và \(2R\). Không dùng côsin SAS khi chưa có hai cạnh.
+
+    **Lời giải.** \(C=180^\circ-45^\circ-75^\circ=60^\circ\). Định lí sin cho
+
+    \[
+    2R=\frac6{\sin45^\circ}=6\sqrt2
+    \quad\Rightarrow\quad R=3\sqrt2,
+    \]
+
+    \[
+    b=6\,\frac{\sin75^\circ}{\sin45^\circ}
+     =3(\sqrt3+1),\qquad
+    c=6\,\frac{\sin60^\circ}{\sin45^\circ}=3\sqrt6.
+    \]
+
+    **Kiểm lại.** \(B=75^\circ\) lớn nhất, nên \(b\) phải dài nhất; thật vậy \(3(\sqrt3+1)\approx8{,}20\), \(3\sqrt6\approx7{,}35\), \(a=6\). Tổng góc bằng \(180^\circ\).
+
+    ### 3.3. Ví dụ 3 — Heron và hai bán kính trong một tam giác khác
+
+    **Đề bài.** Một mảnh đất hình tam giác có ba cạnh dài \(10,\ 13,\ 13\) m. Tính diện tích, bán kính đường tròn nội tiếp \(r\) và ngoại tiếp \(R\).
+
+    **Phân tích.** Ba cạnh hợp lệ và chưa biết góc, nên dùng Heron trực tiếp. Sau khi có diện tích, \(r=S/p\) và \(R=abc/(4S)\) là **hai công thức khác nhau**.
+
+    **Lời giải.** \(10+13>13,\ 13+13>10\), nên các cạnh tạo tam giác. \(p=\frac{10+13+13}{2}=18\) m. Theo Heron,
+
+    \[
+    S=\sqrt{18(18-10)(18-13)(18-13)}
+      =\sqrt{18\cdot8\cdot5\cdot5}=60\ \text{m}^2.
+    \]
+
+    \[
+    r=\frac{60}{18}=\frac{10}{3}\ \text{m},\qquad
+    R=\frac{10\cdot13\cdot13}{4\cdot60}
+      =\frac{169}{24}\ \text{m}.
+    \]
+
+    **Kiểm lại.** Với tam giác cân đáy 10 m và hai cạnh bên 13 m, đường cao chia đáy thành hai đoạn 5 m nên cao \(\sqrt{13^2-5^2}=12\) m. Tính lại \(S=\frac12\cdot10\cdot12=60\ \text{m}^2\) khớp Heron. Bán kính có đơn vị **m**, không phải m².
+
+    ### 3.4. Ví dụ 4 — Đo chiều dài không tới được từ bờ hồ
+
+    **Đề bài.** Hai vị trí \(A,B\) trên cùng bờ hồ cách nhau \(80\) m. Góc ngắm trong tam giác tới điểm \(C\) bên kia là \(A=35^\circ,\ B=75^\circ\). Tính khoảng cách \(AC\), \(BC\), làm tròn tới \(0{,}1\) m.
+
+    **Phân tích.** Đoạn \(AB\) là cạnh \(c\), đối diện góc \(C\), còn \(AC=b\) đối diện \(B\), \(BC=a\) đối diện \(A\). Vì đã biết hai góc và cạnh mốc, dùng định lí sin; máy đặt **DEG**, làm tròn cuối cùng.
+
+    **Lời giải.** \(C=180^\circ-35^\circ-75^\circ=70^\circ\). Theo định lí sin:
+
+    \[
+    AC=b=\frac{80\sin75^\circ}{\sin70^\circ}
+       \approx82{,}2\ \text{m},\qquad
+    BC=a=\frac{80\sin35^\circ}{\sin70^\circ}
+       \approx48{,}8\ \text{m}.
+    \]
+
+    **Kiểm lại.** \(AC\) đối diện góc lớn nhất \(75^\circ\), nên phải lớn hơn cả \(AB=80\) m và \(BC\approx48{,}8\) m. Nếu chỉ dựa vào số trên bản vẽ mà không đo góc tại đúng vị trí, kết quả không có cơ sở; đây là mô hình tam giác lí tưởng, không phải đo địa hình thực địa.
+
+=== "Lỗi thường gặp"
+
+    <span data-thpt-help-id="HELP-G10-B06-01" hidden></span>
+
+    ??? tip "4.1. Ghép nhầm cạnh–góc và chọn sai định lí"
+
+        **Dấu hiệu:** Viết \(a^2=b^2+c^2-2bc\cos B\); dùng định lí sin ngay khi chỉ biết hai cạnh và góc xen giữa.
+
+        **Vì sao sai?** Trong công thức cạnh \(a\), góc xen giữa \(b,c\) phải là \(A\), đồng thời cạnh \(a\) đối diện \(A\). Định lí sin kết nối **cạnh với góc đối diện**, không tùy ý ghép.
+
+        **Tự sửa:** Trên hình mục 2.1.1, chỉ đúng \(a=BC,b=CA,c=AB\) và góc kẹp giữa \(b,c\). Với Ví dụ 3.1, tự tính lại \(a^2\) từ hai cạnh 9, 7 và góc \(60^\circ\), rồi đối chiếu cạnh đối diện. [Ôn định lí côsin và sin tại Core](luyen-tap.md).
+
+
+    <span data-thpt-help-id="HELP-G10-B06-02" hidden></span>
+
+    ??? tip "4.2. Nhầm công thức diện tích, Heron và hai bán kính"
+
+        **Dấu hiệu:** Dùng \(S=\frac12bc\cos A\), cho \(r=abc/(4S)\) hoặc ghi diện tích bằng mét thay vì mét vuông.
+
+        **Vì sao sai?** Diện tích theo hai cạnh cần **sin góc xen giữa**; Heron dùng **nửa chu vi**; \(r\) gắn với đường tròn nội tiếp còn \(R\) gắn với đường tròn ngoại tiếp.
+
+        **Tự sửa:** Với ba cạnh \(10,13,13\) trong Ví dụ 3.3, tự tính lại \(p=18\), \(S=60\), \(r=10/3\), \(R=169/24\). Giải thích vì sao hai bán kính khác nhau và vì sao diện tích có đơn vị m². [Ôn tại Core/Luyện tập](luyen-tap.md).
+
+
+    **Học tiếp:** [Core và Luyện tập Chương III](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md) · [Chương IV — Vectơ](../chuong-iv.md).
+
+    <p class="thpt-r4-footnote">Nguồn kiến thức: SGK Toán 10 · Kết nối tri thức với cuộc sống · tập 1, Bài 6 (trang in 38–43); giữ đúng thứ tự bốn mục chính. Lời dẫn và ví dụ chuyển giao do SLM biên tập và tự tính kiểm tra. Hình đo đạc là sơ đồ riêng, không phải bản đồ địa hình. Các câu Tự thử tự mở đối chiếu, không ghi Mastery hoặc thay Tự kiểm tra cuối chương.</p>
+

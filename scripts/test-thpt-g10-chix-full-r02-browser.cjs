@@ -3,6 +3,7 @@
  * tests voluntary public practice, not held-out independent Readiness/Mastery.
  */
 const assert=require("node:assert/strict"),{chromium}=require("playwright");
+const {verifyModelBLesson}=require("./test-thpt-g10-model-b-browser-helper.cjs");
 const base="http://127.0.0.1:8765/thpt-preview/sgk/chuong-ix/";
 (async()=>{
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
@@ -15,7 +16,42 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/chuong-ix/";
      const response=await page.goto(base+"bai-"+n+"/",{waitUntil:"networkidle",timeout:90000});
      assert(response?.ok(),"Missing G10 ChIX B"+n);
      const article=page.locator("article.md-content__inner");
-     const cards=article.locator('details[data-thpt-first-try-id^="THPT-G10-CHIX-TRY"]');
+     if(await verifyModelBLesson(page,{n,chapter:"ix",tries:5,helps:7,
+       images:n===26?["THPT_G10_B26_COIN_DIE_SAMPLE_SPACE.svg"]:["THPT_G10_B27_WITHOUT_REPLACEMENT_TREE.svg"]})){
+       const article=page.locator("article.md-content__inner");
+       const tab=article.locator(".tabbed-set").first().locator(".tabbed-labels label")
+        .filter({hasText:/^Kiến thức SGK$/});await tab.click();
+       const items=article.locator('[data-thpt-first-try-id^="THPT-G10-CHIX-TRY"]');
+       const helps=article.locator('[data-thpt-help-id^="HELP-G10-CHIX-TRY"]');
+       assert.equal(await items.count(),5,"B"+n+" five original source-locked First Try items");
+       assert.equal(await helps.count(),5,"B"+n+" five original five-step D6 help items");
+       const answers=article.locator("details.question:visible"),tips=article.locator("details.tip:visible");
+       assert.equal(await answers.count(),5,"B"+n+" every original First Try visible in Knowledge tab");
+       assert.equal(await tips.count(),5,"B"+n+" every original D6 visible in Knowledge tab");
+       for(let k=0;k<5;k++){
+        const id="THPT-G10-CHIX-TRY"+String(start+k).padStart(2,"0");
+        assert.equal(await items.nth(k).getAttribute("data-thpt-first-try-id"),id,
+          "B"+n+" canonical item/order");
+        assert.equal(await items.nth(k).getAttribute("data-ped-first-try"),"1",
+          "B"+n+" intentional voluntary self-attempt");
+        assert.equal(await helps.nth(k).getAttribute("data-thpt-help-id"),
+          "HELP-G10-CHIX-TRY"+String(start+k).padStart(2,"0"),"B"+n+" exact remedial ID");
+        const answer=answers.nth(k),hint=tips.nth(k);
+        assert(!(await answer.evaluate(x=>x.open))&&!(await hint.evaluate(x=>x.open)),
+          "B"+n+" First Try/D6 must be hidden before voluntary choice");
+        await answer.locator("summary").click();
+        assert(await answer.evaluate(x=>x.open),"B"+n+" learner must be able to open answer");
+        assert((await answer.innerText()).includes("Đáp án và lập luận"),
+          "B"+n+" original reasoned answer missing "+id);
+        await answer.locator("summary").click();
+        assert(!(await answer.evaluate(x=>x.open)),"B"+n+" learner can collapse answer");
+        await hint.locator("summary").click();
+        assert.equal(await hint.locator("strong").filter({hasText:/^Bước [1-5]:$/}).count(),5,
+          "B"+n+" original five-step D6 not preserved "+id);
+        await hint.locator("summary").click();
+       }
+      }else{
+const cards=article.locator('details[data-thpt-first-try-id^="THPT-G10-CHIX-TRY"]');
      const helps=article.locator('details[data-thpt-help-id^="HELP-G10-CHIX-TRY"]');
      assert.equal(await cards.count(),5,"Five canonical First Try B"+n);
      assert.equal(await helps.count(),5,"Five canonical five-step D6 B"+n);
@@ -36,7 +72,9 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/chuong-ix/";
       assert.equal(await h.locator("strong").filter({hasText:/^Bước [1-5]:$/}).count(),5,"All reviewed remediation steps "+id);
       await h.locator("summary").click();
      }
-     const text=await article.innerText();
+     
+      }
+      const text=await article.innerText();
      assert(!/PED1 —|PED6 —|LESSON_ID|CONTENT_READY|SOURCE_RECEIPT/.test(text),"Author review metadata leaked B"+n);
      const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);
      assert(overflow<=20,"ChIX B"+n+" horizontal overflow at "+width);

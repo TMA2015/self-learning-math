@@ -22,22 +22,56 @@ assert.equal(expected.length,8);
 const ctx={window:{}};vm.runInNewContext(read("docs/assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js"),ctx);
 const bank=ctx.window.THPT_CHV_B12_REVIEWED_FORMATIVE;
 assert(bank?.validate().valid,"B12 canonical bank invalid");
-assert.equal(JSON.stringify(bank.records),JSON.stringify(expected),"B12 data not equal to independently reviewed R01 source");
-assert.equal(bank.forLesson("12","core").length,2);assert.equal(bank.forLesson("12","practice").length,6);
+assert.equal(bank.records.length,9,"B12 must be eight immutable old items + one calculator P07");
+assert.equal(JSON.stringify(bank.records.slice(0,8)),JSON.stringify(expected),
+ "B12 historical eight canonical records must be byte-by-value identical to reviewed R01");
+assert.equal(bank.records[8].item_id,"THPT-G10-B12-P07",
+ "B12 new ninth item must be the unique new calculator Practice");
+assert.equal(bank.records[8].role,"PRACTICE");
+assert.equal(bank.records[8].skill,"G10-B12-CALCULATOR_APPROX");
+assert(bank.records[8].stem.includes("sqrt")&&bank.records[8].solution.includes("1{,}913"),
+ "B12 new calculator item stem/solution must be worked and distinct");
+const r12=read("prototypes/thpt/ux795/G10_CHV_B12_S1_PED_CALCULATOR_Q18_R01_20261118.md");
+assert(r12.includes("INDEPENDENT_NOTEBOOKLM_ACADEMIC_PED_REVIEW_PENDING"),
+ "B12 new item cannot be treated as R01-reviewed academic PASS");
+assert.equal(bank.forLesson("12","core").length,2);assert.equal(bank.forLesson("12","practice").length,7);
 assert.equal(blob("docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js"),"ddd5ec947029f644865110f2f381047214499e3e","Published B13/14 bank altered");
 const ctx13={window:{}};vm.runInNewContext(read("docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js"),ctx13);
 const bank13=ctx13.window.THPT_CHV_B13_B14_REVIEWED_FORMATIVE;
 assert(bank13.validate().valid);
-assert.equal(new Set([...bank.records,...bank13.records].map(x=>x.item_id)).size,24,"Canonical collision B12 vs B13/14");
+assert.equal(new Set([...bank.records,...bank13.records].map(x=>x.item_id)).size,25,"Canonical collision among 25 current public IDs");
 const page=read("docs/thpt-preview/sgk/chuong-v/bai-12.md");
-assert.equal((page.match(/^### Ví dụ [123]\./gm)||[]).length,3);
-for(const name of ["Đúng/gần đúng và số quy tròn","Sai số tuyệt đối, độ chính xác","Sai số tương đối","Giới hạn độ chính xác và quy tròn"])assert(page.includes(name),"missing theory "+name);
+// Model B nests worked examples under the exact Level-1 "Ví dụ" tab.
+const level1Tabs=[...page.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]);
+if(level1Tabs.length)assert.deepEqual(level1Tabs,
+ ["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
+ "B12 must retain four owner-approved horizontal Knowledge tabs");
+const workedPattern=/^    ### 3\.[1-4]\. Ví dụ [1-4] —/gm;
+assert.equal((page.match(workedPattern)||[]).length,4,
+ "B12 must have four explicit WHY/WORK/CHECK worked examples, including calculator");
+const {chvEditorialReceiptRows}=require("./thpt-q18-g10-source-receipt.cjs");
+if(chvEditorialReceiptRows().has("B12")){
+ const titles=[...page.slice(page.indexOf('=== "Kiến thức SGK"'),page.indexOf('=== "Ví dụ"'))
+  .matchAll(/^    ### (.*)$/gm)].map(x=>x[1]);
+ assert.deepEqual(titles,["2.1. Số gần đúng","2.2. Sai số tuyệt đối và sai số tương đối",
+  "2.3. Quy tròn số gần đúng"],"B12 revised S1 headings must match exact signed Q18 receipt");
+ assert(page.includes("Máy tính cầm tay giúp")&&
+ page.includes("1.3. Thực hành máy tính cầm tay")&&
+ page.includes("THPT-G10-CHV-TRY-CALC-R01")&&
+ page.includes("HELP-G10-B12-CALC-01"),"B12 S1 calculator outcome needs hands-on instruction+try+recover");
+}else{
+ for(const name of ["Đúng/gần đúng và số quy tròn","Sai số tuyệt đối, độ chính xác",
+  "Sai số tương đối","Giới hạn độ chính xác và quy tròn"])
+  assert(page.includes(name),"missing historical theory "+name);
+}
 const fig="docs/assets/images/thpt/THPT_G10_B12_ERROR_INTERVAL_D5_R02_REVIEWED.svg";
 assert.equal(blob(fig),"fede1bb23334ff7bd66a6f5a6adc39cf856c5d52","Source locked FIG01 R02 differs");
 const svg=read(fig);
 assert(svg.includes("a = 20,0 cm")&&svg.includes("19,9 ≤ ā ≤ 20,1 cm")&&svg.includes("Vùng có thể chứa số đúng ā"));
 assert(!svg.includes("ā = 20,0 cm"),"Old incorrect R01 SVG slipped in");
 assert(page.includes('data-thpt-fig-id="FIG-G10-B12-01"')&&page.includes("THPT_G10_B12_ERROR_INTERVAL_D5_R02_REVIEWED.svg"));
+assert(page.indexOf("FIG-G10-B12-01")<page.indexOf('=== "Kiến thức SGK"'),
+ "B12 D5 interval picture belongs in discovery before formula, not copied example");
 const overlays=[
  ["01","2cecaba020881a560bc33251c38d55cc10a05516","THPT-G10-B12-C02"],
  ["02","913400d6aff63befac95a8a47a00870663dd0096","THPT-G10-B12-P06"]
@@ -77,4 +111,9 @@ if(process.argv.includes("--built")){
  for(const p of ["site/thpt-preview/sgk/chuong-v/bai-12/index.html","site/thpt-preview/sgk/chuong-v/luyen-tap/index.html"])
   assert(fs.existsSync(p),"Missing built public page "+p);
 }
-console.log("PASS G10 ChV B12 R1: source 8/8, FIG01 R02 exact, HELP01/02 R02 5-step/ID, Written, Golden VII, 24 total IDs, inactive Readiness");
+assert(page.includes('data-thpt-help-id="HELP-G10-B12-CALC-01"')&&
+ page.includes('??? tip "4.3. Nhập nhầm căn bậc ba'),
+ "B12 third error disclosure must diagnose real wrong calculator action");
+assert.equal((page.slice(page.indexOf('=== "Lỗi thường gặp"')).match(/^    ### 4\./gm)||[]).length,0,
+ "B12 must not recreate owner P2 rejected duplicate heading cards");
+console.log("PASS G10 ChV B12 candidate: old 8/8 source identical, one new P07, full calculator pedagogic chain, 25 IDs, Q16 Readiness unchanged. ACADEMIC/PED REVIEW HOLD.");

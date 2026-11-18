@@ -7,7 +7,8 @@
  * composite receipt blob 1b9620cd45172277516b0621cd20f3cb695aceaa.
  * No new private RD1, Mastery, canonical scored item bank, Golden or Firebase change.
  */
-const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path");
+const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path"),crypto=require("node:crypto");
+const {expectedG10KnowledgeBlob,chvEditorialReceiptRows}=require("./thpt-q18-g10-source-receipt.cjs");
 const root=path.resolve(__dirname,".."),read=p=>fs.readFileSync(path.join(root,p),"utf8");
 const fnv=s=>{let h=2166136261;for(let i=0;i<s.length;i++)h=Math.imul(h^s.charCodeAt(i),16777619)>>>0;return h.toString(16).padStart(8,"0")};
 const part="## Trước khi học — hiểu ý nghĩa trước khi nhớ công thức",anchor="## 1. Kiến thức SGK";
@@ -20,6 +21,57 @@ const ids=[];
 const labels=["Vì sao cần học?","Em đã biết gì?","Hiểu bản chất trước công thức","Cách đọc hình và hình dung","Vì sao làm theo cách này?","Tự thử trước Core"];
 for(const {n,count,first,bridge:expectedBridge,suffix:expectedSuffix}of lessons){
  const p="docs/thpt-preview/sgk/chuong-v/bai-"+n+".md",txt=read(p);
+ // Model B candidate: source-locked replacement for historical exact-heading/FNV checks.
+ const tabs=[...txt.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]);
+ if(tabs.length){
+  assert.deepEqual(tabs,["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],"Exact 4 tabs B"+n);
+  const bytes=fs.readFileSync(path.join(root,p));
+  const sha=crypto.createHash("sha1").update(Buffer.from("blob "+bytes.length+"\0")).update(bytes).digest("hex");
+  assert.equal(sha,expectedG10KnowledgeBlob(n,"0".repeat(40)),"G10 B"+n+" candidate source SHA drift");
+  const attempts=[...txt.matchAll(/data-thpt-first-try-id="(THPT-G10-CHV-TRY\d\d)"/g)].map(m=>m[1]);
+  assert.equal(attempts.length,count,"First Try count B"+n);
+  for(let i=0;i<count;i++){
+   const expected="THPT-G10-CHV-TRY"+String(first+i).padStart(2,"0");
+   assert.equal(attempts[i],expected,"Original first try ID/order B"+n);
+   const at=txt.indexOf('data-thpt-first-try-id="'+expected+'"');
+   assert(/^\s*\?\?\? question "/m.test(txt.slice(at,at+350)),"Answer not default-closed "+expected);
+   ids.push(expected);
+  }
+  assert.equal((txt.match(/^    \?\?\? question "/gm)||[]).length,n===12?5:count,
+   "B"+n+" original First Try plus distinct calculator disclosure");
+  assert.equal((txt.match(/data-thpt-help-id="HELP-G10-B\d\d-0[12]"/g)||[]).length,2,
+   "Original D6 IDs B"+n+" immutable");
+  assert.equal((txt.match(/^    \?\?\? tip "/gm)||[]).length,n===12?3:2,
+   "B"+n+" two original D6 + new independent calculator error");
+  assert.equal((txt.match(n===12?/^    ### 3\.[1-4]\. Ví dụ [1-4] —/gm:
+   /^    ### Ví dụ [123]\./gm)||[]).length,n===12?4:3,
+   "B"+n+" fully reasoned examples, not duplicated cards");
+  if(n===12){
+   assert(txt.includes('data-thpt-first-try-id="THPT-G10-CHV-TRY-CALC-R01"')&&
+    txt.includes('data-thpt-help-id="HELP-G10-B12-CALC-01"'),
+    "B12 only one new independent calculator attempt and D6 ID");
+   ids.push("THPT-G10-CHV-TRY-CALC-R01");
+  }
+  if(chvEditorialReceiptRows().has("B"+n)){
+   const content=txt.slice(txt.indexOf('=== "Kiến thức SGK"'),txt.indexOf('=== "Ví dụ"'));
+   const actual=[...content.matchAll(/^    ### (.*)$/gm)].map(m=>m[1]);
+   const expected={
+    12:["2.1. Số gần đúng","2.2. Sai số tuyệt đối và sai số tương đối","2.3. Quy tròn số gần đúng"],
+    13:["2.1. Số trung bình và trung vị","2.2. Tứ phân vị","2.3. Mốt"],
+    14:["2.1. Khoảng biến thiên và khoảng tứ phân vị","2.2. Phương sai và độ lệch chuẩn",
+     "2.3. Phát hiện số liệu bất thường hoặc không chính xác bằng biểu đồ hộp"]
+   }[n];
+   assert.deepEqual(actual,expected,"B"+n+" S1 section headings must match signed Q18");
+   const discovery=txt.slice(txt.indexOf('=== "Khám phá kiến thức"'),txt.indexOf('=== "Kiến thức SGK"'));
+   assert.equal((discovery.match(/data-thpt-first-try-id=/g)||[]).length,n===12?5:count,
+    "B"+n+" all original and new First Tries must be in Discovery");
+   assert.equal((content.match(/data-thpt-first-try-id=/g)||[]).length,0,
+    "B"+n+" SGK must not contain First Try answers");
+  }else assert(txt.includes("### Kiến thức SGK"),"Historical SGK theory B"+n);
+  assert((txt.match(/\?item=THPT-G10-B\d\d-[CP]\d\d/g)||[]).length>=count,"Original Core/Practice references B"+n);
+  assert(!/data-thpt-readiness|data-mastery-credit|data-mastery-write/.test(txt),"No Q16/Mastery leak B"+n);
+  continue;
+ }
  assert.equal(txt.split(part).length,2,"One pre-Knowledge PED section "+p);
  assert.equal(txt.split(anchor).length,2,"Original Knowledge D1–D6 section preserved "+p);
  const pre=txt.slice(txt.indexOf(part),txt.indexOf(anchor)),old=txt.slice(txt.indexOf(anchor));
@@ -46,7 +98,8 @@ for(const {n,count,first,bridge:expectedBridge,suffix:expectedSuffix}of lessons)
  assert(old.includes("## 2. Ví dụ")&&old.includes("## 3. Hình minh họa")&&old.includes("## 4. Tự khắc phục lỗi thường gặp"),"Original teaching and D5/D6 remain "+p);
  for(const h of ["01","02"])assert(old.includes("HELP-G10-B"+n+"-"+h),"Original reviewed D6 HELP "+n+"-"+h);
 }
-assert.equal(ids.length,14);assert.equal(new Set(ids).size,14);
+assert.equal(ids.length,15,"14 R01 original IDs plus one distinct B12 calculator ID");
+assert.equal(new Set(ids).size,15,"All fifteen First Try canonical IDs must be unique");
 const selfcheck=read("docs/thpt-preview/sgk/chuong-v/tu-kiem-tra-chuong.md");
 assert(selfcheck.includes('data-g10-chapter-selfcheck="CHV"')&&selfcheck.includes("Final Submit"),"Preserve existing 18-item public Q16 Final Submit");
 const practice=read("docs/thpt-preview/sgk/chuong-v/luyen-tap.md");
@@ -54,8 +107,10 @@ assert(practice.includes("data-thpt-open-quiz")&&!practice.includes("data-master
 if(process.argv.includes("--built")){
  for(const {n,count,first}of lessons){
   const p="site/thpt-preview/sgk/chuong-v/bai-"+n+"/index.html",html=read(p);
-  for(let i=0;i<count;i++)assert(html.includes('data-thpt-first-try-id="THPT-G10-CHV-TRY'+String(first+i).padStart(2,"0")+'"'),"Built learner First Try "+p+" "+i);
+  for(let i=0;i<count;i++)assert(html.includes('data-thpt-first-try-id="THPT-G10-CHV-TRY'+String(first+i).padStart(2,"0")+'"'),"Original First Try remains "+p+" "+i);
+  if(n===12)assert(html.includes('data-thpt-first-try-id="THPT-G10-CHV-TRY-CALC-R01"'),
+   "New hands-on calculator attempt must render in B12 only");
   assert(html.includes("mathjax")||html.includes("MathJax"),"Learner MathJax must be present "+p);
  }
 }
-console.log("PASS G10 ChV FULL R03: 14 canonical First Tries, PED1–PED6, reviewed answers/D6, original B12 R02 and B13/B14 R01 suffixes untouched, Golden/Q16 and no Mastery.");
+console.log("PASS G10 ChV candidate: 14 immutable historical first-tries + one B12 CALCULATOR, 4 B12 worked, 3 real D6, B13-B14 frozen, Q16 no Mastery; independent Academic/PED REVIEW PENDING.");

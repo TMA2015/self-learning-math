@@ -3,383 +3,428 @@
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VII · KIẾN THỨC SGK KNTT</p>
 <p class="thpt-r4-lead">Nhận biết vectơ pháp tuyến, vectơ chỉ phương và viết phương trình đường thẳng từ dữ kiện hình học.</p>
-<nav class="thpt-r4-lesson-tabs" aria-label="Điều hướng học Toán 10 Chương VII"><a href="../">Tổng quan Chương VII</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra chương · chưa kích hoạt</a></nav>
+
 </div>
 
-<!-- G10_CHVII_FULL_R03_ALL_BEGIN -->
+=== "Khám phá kiến thức"
 
-## Tự khám phá trước khi học công thức
+    ### Cùng tìm hiểu
 
-Đọc vì sao cần học, tự làm Tự thử trước khi mở đáp án và chỉ quay lại Core sau khi đã đối chiếu. Các câu này là luyện tập không ghi Mastery.
+    Hãy tưởng tượng một con đường thẳng trên bản đồ. Em có thể mô tả nó bằng **một điểm mà đường đi qua** và **một hướng để đi dọc đường**. Đó là ý nghĩa của **vectơ chỉ phương**. Nhưng nếu muốn đo khoảng cách vuông góc từ một ngôi nhà đến con đường, ta cần một hướng **vuông góc với đường** — chính là **vectơ pháp tuyến**.
 
-<!-- G10_CHVII_R03_BEGIN:THPT-G10-CHVII-TRY01 OUTCOME=G10-B19-NORMAL_DIRECTION -->
+    Hai vectơ ấy không giống nhau. Chẳng hạn, đường \(2x+y=6\) có pháp tuyến \(\vec n=(2,1)\). Một vectơ chỉ phương của đường là \(\vec u=(1,-2)\), vì \(\vec u\cdot\vec n=2-2=0\). Từ một hình học đơn giản, em có thể suy ra các hệ số trong phương trình mà không cần nhớ máy móc.
 
-<span id="thpt-g10-chvii-try01" data-thpt-first-try-id="THPT-G10-CHVII-TRY01" data-outcome-id="G10-B19-NORMAL_DIRECTION" data-thpt-help-ref="HELP-G10-CHVII-TRY01"></span>
+    Bài học đi từ hai cách mô tả đường thẳng đến các dạng phương trình: tổng quát dùng pháp tuyến, tham số dùng điểm và chỉ phương. Khi đổi dạng, phải giữ **cùng tập điểm**, không chỉ thay ký hiệu.
 
-### Pháp tuyến và chỉ phương
+    ### Ví dụ trực quan
 
-**Vì sao cần học:** Khi mô tả một tuyến đường bằng tọa độ, chỉ biết một điểm chưa đủ: cần biết đường đi hướng nào. Vectơ chỉ phương chỉ hướng chuyển động; vectơ pháp tuyến cho biết hướng vuông góc để lập phương trình.
+    Hãy tự giải từng câu Tự thử trước khi mở Đối chiếu. Nếu vướng, hãy đọc phần tự khắc phục và tự làm lại một bài tương tự.
 
-**Kiến thức tiền đề:** Nhắc lại vectơ tọa độ và tích vô hướng: (a,b)·(c,d)=ac+bd; hai vectơ khác 0 vuông góc khi tích vô hướng bằng 0.
 
-**Bản chất trước công thức:** Vectơ chỉ phương nằm dọc đường; pháp tuyến vuông góc đường. Cùng một đường thẳng có vô số vectơ cùng phương hoặc pháp tuyến khác nhau bởi bội khác 0.
+    <span id="thpt-g10-chvii-try01" data-thpt-first-try-id="THPT-G10-CHVII-TRY01" data-outcome-id="G10-B19-NORMAL_DIRECTION" data-thpt-help-ref="HELP-G10-CHVII-TRY01"></span>
 
-**Hướng dẫn đọc hình:** Hãy tưởng tượng một mũi tên chạy dọc đường thẳng và một mũi tên dựng vuông góc với nó; chỉ ra trên hình cái nào giữ hướng, cái nào đo độ lệch khỏi đường.
+    #### Pháp tuyến và chỉ phương
 
-**Chọn phương pháp và giới hạn:** Muốn đổi giữa hai loại vectơ, xoay tọa độ 90 độ: n=(a,b) khác 0 thì u=(-b,a). Kiểm tra n·u=0, không dùng vectơ (0,0).
+    Khi mô tả một tuyến đường bằng tọa độ, chỉ biết một điểm chưa đủ: cần biết đường đi hướng nào. Vectơ chỉ phương chỉ hướng chuyển động; vectơ pháp tuyến cho biết hướng vuông góc để lập phương trình.
 
-**Tự thử trước Core:** Cho n=(2,3) là pháp tuyến của d. Vectơ u=(-3,2) có phải một chỉ phương của d không? Nêu phép kiểm.
+    **Kiến thức tiền đề:** Nhắc lại vectơ tọa độ và tích vô hướng: (a,b)·(c,d)=ac+bd; hai vectơ khác 0 vuông góc khi tích vô hướng bằng 0.
 
-??? question "Tự mở đáp án sau khi đã tự làm"
+    **Bản chất trước công thức:** Vectơ chỉ phương nằm dọc đường; pháp tuyến vuông góc đường. Cùng một đường thẳng có vô số vectơ cùng phương hoặc pháp tuyến khác nhau bởi bội khác 0.
 
-    **Đáp án:** Có, vì n·u=2(-3)+3(2)=0 và u≠(0,0).
+    **Hướng dẫn đọc hình:** Hãy tưởng tượng một mũi tên chạy dọc đường thẳng và một mũi tên dựng vuông góc với nó; chỉ ra trên hình cái nào giữ hướng, cái nào đo độ lệch khỏi đường.
 
-    **Lý do:** Tích vô hướng bằng 0 chứng minh u vuông góc với pháp tuyến n, tức song song với đường thẳng d; u không phải vectơ không.
+    Muốn đổi giữa hai loại vectơ, xoay tọa độ 90 độ: n=(a,b) khác 0 thì u=(-b,a). Kiểm tra n·u=0, không dùng vectơ (0,0).
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY01` bên dưới; quay lại câu canonical cũ `THPT-G10-B19-C01` khi đã hiểu kiến thức.
+    **Em vận dụng.** Cho n=(2,3) là pháp tuyến của d. Vectơ u=(-3,2) có phải một chỉ phương của d không? Nêu phép kiểm.
 
-<span id="help-g10-chvii-try01" data-thpt-help-id="HELP-G10-CHVII-TRY01"></span>
+    ??? question "Đối chiếu"
 
-??? tip "Tự khắc phục theo năm bước"
+        **Đáp án:** Có, vì n·u=2(-3)+3(2)=0 và u≠(0,0).
 
-    1. **Nhận diện lỗi:** Nếu dùng n làm chỉ phương, em đang nhầm hai vai trò vuông góc.
+        **Lý do:** Tích vô hướng bằng 0 chứng minh u vuông góc với pháp tuyến n, tức song song với đường thẳng d; u không phải vectơ không.
 
-    2. **Quay lại bản chất:** Vectơ chỉ phương nằm dọc đường; pháp tuyến vuông góc đường. Cùng một đường thẳng có vô số vectơ cùng phương hoặc pháp tuyến khác nhau bởi bội khác 0.
+        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
-    3. **Tự sửa:** Vẽ hai mũi tên dọc/vuông góc; tính lại 2(-3)+3(2) trước khi áp dụng.
 
-    4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B19-C01` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B19-C01">Mở câu luyện tập đã review để tự sửa</a>
+    <a href="../luyen-tap/?item=THPT-G10-B19-C01">Mở câu luyện tập tương ứng để tự luyện</a>
 
-<!-- G10_CHVII_R03_END:THPT-G10-CHVII-TRY01 -->
 
-<!-- G10_CHVII_R03_BEGIN:THPT-G10-CHVII-TRY02 OUTCOME=G10-B19-GENERAL_POINT -->
+    <span id="thpt-g10-chvii-try02" data-thpt-first-try-id="THPT-G10-CHVII-TRY02" data-outcome-id="G10-B19-GENERAL_POINT" data-thpt-help-ref="HELP-G10-CHVII-TRY02"></span>
 
-<span id="thpt-g10-chvii-try02" data-thpt-first-try-id="THPT-G10-CHVII-TRY02" data-outcome-id="G10-B19-GENERAL_POINT" data-thpt-help-ref="HELP-G10-CHVII-TRY02"></span>
+    #### Phương trình tổng quát qua điểm
 
-### Phương trình tổng quát qua điểm
+    Cần một quy tắc để xác định mọi điểm trên đường thẳng, không chỉ liệt kê một vài điểm.
 
-**Vì sao cần học:** Cần một quy tắc để xác định mọi điểm trên đường thẳng, không chỉ liệt kê một vài điểm.
+    **Kiến thức tiền đề:** Ôn quy tắc hai vectơ vuông góc khi tích vô hướng bằng 0; tọa độ của AM là (x-xA,y-yA).
 
-**Kiến thức tiền đề:** Ôn quy tắc hai vectơ vuông góc khi tích vô hướng bằng 0; tọa độ của AM là (x-xA,y-yA).
+    **Bản chất trước công thức:** M thuộc đường qua A có pháp tuyến n khi độ dịch chuyển AM không có thành phần theo n: n·AM=0. Đây là nguồn gốc phương trình, không phải một công thức học thuộc.
 
-**Bản chất trước công thức:** M thuộc đường qua A có pháp tuyến n khi độ dịch chuyển AM không có thành phần theo n: n·AM=0. Đây là nguồn gốc phương trình, không phải một công thức học thuộc.
+    **Hướng dẫn đọc hình:** Hướng dẫn đọc đường qua A: M chạy dọc đường, còn n luôn dựng vuông góc; hình chiếu của AM lên n bằng 0.
 
-**Hướng dẫn đọc hình:** Hướng dẫn đọc đường qua A: M chạy dọc đường, còn n luôn dựng vuông góc; hình chiếu của AM lên n bằng 0.
+    Từ điểm A(x0,y0), n=(a,b)≠0, viết a(x-x0)+b(y-y0)=0 rồi khai triển. Kiểm lại điểm A và độ dài pháp tuyến khác 0.
 
-**Chọn phương pháp và giới hạn:** Từ điểm A(x0,y0), n=(a,b)≠0, viết a(x-x0)+b(y-y0)=0 rồi khai triển. Kiểm lại điểm A và độ dài pháp tuyến khác 0.
+    **Em vận dụng.** Đường thẳng qua A(1,3), pháp tuyến n=(2,-1) có phương trình tổng quát nào?
 
-**Tự thử trước Core:** Đường thẳng qua A(1,3), pháp tuyến n=(2,-1) có phương trình tổng quát nào?
+    ??? question "Đối chiếu"
 
-??? question "Tự mở đáp án sau khi đã tự làm"
+        **Đáp án:** 2(x-1)-(y-3)=0 hay 2x-y+1=0.
 
-    **Đáp án:** 2(x-1)-(y-3)=0 hay 2x-y+1=0.
+        **Lý do:** AM=(x-1,y-3), n·AM=2(x-1)-(y-3); thế A được 0. Không tự đảo vai trò n với vectơ chỉ phương.
 
-    **Lý do:** AM=(x-1,y-3), n·AM=2(x-1)-(y-3); thế A được 0. Không tự đảo vai trò n với vectơ chỉ phương.
+        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY02` bên dưới; quay lại câu canonical cũ `THPT-G10-B19-C02` khi đã hiểu kiến thức.
 
-<span id="help-g10-chvii-try02" data-thpt-help-id="HELP-G10-CHVII-TRY02"></span>
 
-??? tip "Tự khắc phục theo năm bước"
 
-    1. **Nhận diện lỗi:** Nếu phương trình không đi qua A, em đã mất dấu khi trừ tọa độ gốc.
+    <a href="../luyen-tap/?item=THPT-G10-B19-C02">Mở câu luyện tập tương ứng để tự luyện</a>
 
-    2. **Quay lại bản chất:** M thuộc đường qua A có pháp tuyến n khi độ dịch chuyển AM không có thành phần theo n: n·AM=0. Đây là nguồn gốc phương trình, không phải một công thức học thuộc.
 
-    3. **Tự sửa:** Thay ngay A(1,3) vào phương trình: phải được 0 trước khi luyện tiếp.
+    <span id="thpt-g10-chvii-try03" data-thpt-first-try-id="THPT-G10-CHVII-TRY03" data-outcome-id="G10-B19-PARAMETRIC" data-thpt-help-ref="HELP-G10-CHVII-TRY03"></span>
 
-    4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+    #### Phương trình tham số
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B19-C02` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+    Khi mô tả chuyển động trên một tuyến đường, có lúc cần biết điểm đến ứng với một bước t cụ thể.
 
-<a href="../luyen-tap/?item=THPT-G10-B19-C02">Mở câu luyện tập đã review để tự sửa</a>
+    **Kiến thức tiền đề:** Ôn phép nhân số thực với vectơ; A+t·u là vị trí dọc hướng u tính từ A.
 
-<!-- G10_CHVII_R03_END:THPT-G10-CHVII-TRY02 -->
+    **Bản chất trước công thức:** Điểm trên đường thẳng có dạng M=A+t·u với t thực. Tham số t không nhất thiết là thời gian; nó chỉ là hệ số quét các vị trí.
 
-<!-- G10_CHVII_R03_BEGIN:THPT-G10-CHVII-TRY03 OUTCOME=G10-B19-PARAMETRIC -->
+    **Hướng dẫn đọc hình:** Tưởng tượng trượt từ A theo mũi tên u: t=0 đứng ở A, t=1 tiến một u, t âm đi ngược chiều.
 
-<span id="thpt-g10-chvii-try03" data-thpt-first-try-id="THPT-G10-CHVII-TRY03" data-outcome-id="G10-B19-PARAMETRIC" data-thpt-help-ref="HELP-G10-CHVII-TRY03"></span>
+    Chọn một điểm A và một vectơ chỉ phương u≠0, đặt x=xA+tux, y=yA+tuy. Kiểm t=0 và t=1, tránh nhầm t là một tọa độ.
 
-### Phương trình tham số
+    **Em vận dụng.** Viết phương trình tham số đường thẳng qua A(1,-1), chỉ phương u=(-2,3).
 
-**Vì sao cần học:** Khi mô tả chuyển động trên một tuyến đường, có lúc cần biết điểm đến ứng với một bước t cụ thể.
+    ??? question "Đối chiếu"
 
-**Kiến thức tiền đề:** Ôn phép nhân số thực với vectơ; A+t·u là vị trí dọc hướng u tính từ A.
+        **Đáp án:** x=1-2t, y=-1+3t (t∈ℝ).
 
-**Bản chất trước công thức:** Điểm trên đường thẳng có dạng M=A+t·u với t thực. Tham số t không nhất thiết là thời gian; nó chỉ là hệ số quét các vị trí.
+        **Lý do:** Khi t=0 thu A; khi t=1 thu A+u=(-1,2). Mọi điểm thuộc đường có độ dời t·u.
 
-**Hướng dẫn đọc hình:** Tưởng tượng trượt từ A theo mũi tên u: t=0 đứng ở A, t=1 tiến một u, t âm đi ngược chiều.
+        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
-**Chọn phương pháp và giới hạn:** Chọn một điểm A và một vectơ chỉ phương u≠0, đặt x=xA+tux, y=yA+tuy. Kiểm t=0 và t=1, tránh nhầm t là một tọa độ.
 
-**Tự thử trước Core:** Viết phương trình tham số đường thẳng qua A(1,-1), chỉ phương u=(-2,3).
 
-??? question "Tự mở đáp án sau khi đã tự làm"
 
-    **Đáp án:** x=1-2t, y=-1+3t (t∈ℝ).
+    <a href="../luyen-tap/?item=THPT-G10-B19-P01">Mở câu luyện tập tương ứng để tự luyện</a>
 
-    **Lý do:** Khi t=0 thu A; khi t=1 thu A+u=(-1,2). Mọi điểm thuộc đường có độ dời t·u.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY03` bên dưới; quay lại câu canonical cũ `THPT-G10-B19-P01` khi đã hiểu kiến thức.
+    <span id="thpt-g10-chvii-try04" data-thpt-first-try-id="THPT-G10-CHVII-TRY04" data-outcome-id="G10-B19-TWO_POINTS" data-thpt-help-ref="HELP-G10-CHVII-TRY04"></span>
 
-<span id="help-g10-chvii-try03" data-thpt-help-id="HELP-G10-CHVII-TRY03"></span>
+    #### Đường qua hai điểm phân biệt
 
-??? tip "Tự khắc phục theo năm bước"
+    Trên bản đồ, hai địa điểm khác nhau đủ xác định một tuyến đường thẳng duy nhất.
 
-    1. **Nhận diện lỗi:** Nếu đảo u thành pháp tuyến hoặc thiếu tham số chung t, hai phương trình không mô tả đúng một đường.
+    **Kiến thức tiền đề:** Ôn vectơ AB=(xB-xA,yB-yA), điều kiện A≠B, và pháp tuyến vuông góc với AB.
 
-    2. **Quay lại bản chất:** Điểm trên đường thẳng có dạng M=A+t·u với t thực. Tham số t không nhất thiết là thời gian; nó chỉ là hệ số quét các vị trí.
+    **Bản chất trước công thức:** Hai điểm phân biệt xác định một hướng AB không bằng 0; từ đó chọn được pháp tuyến và viết được phương trình.
 
-    3. **Tự sửa:** Thử lại t=0, t=1 và vẽ đường nối hai điểm thu được.
+    **Hướng dẫn đọc hình:** Đặt A và B trên hình; chỉ vectơ AB chạy dọc đường, còn pháp tuyến dựng ngang với nó.
 
-    4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+    Kiểm A≠B, tính AB, chọn n vuông góc, viết n·AM=0 và thử cả A,B. Nếu A=B thì dữ kiện không xác định một đường duy nhất.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B19-P01` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+    **Em vận dụng.** Cho A(-1,2), B(2,5). Viết một phương trình tổng quát của đường AB.
 
-<a href="../luyen-tap/?item=THPT-G10-B19-P01">Mở câu luyện tập đã review để tự sửa</a>
+    ??? question "Đối chiếu"
 
-<!-- G10_CHVII_R03_END:THPT-G10-CHVII-TRY03 -->
+        **Đáp án:** x-y+3=0.
 
-<!-- G10_CHVII_R03_BEGIN:THPT-G10-CHVII-TRY04 OUTCOME=G10-B19-TWO_POINTS -->
+        **Lý do:** AB=(3,3)≠0, chọn n=(1,-1). Qua A: (x+1)-(y-2)=0 ⇒ x-y+3=0; thế B: 2-5+3=0.
 
-<span id="thpt-g10-chvii-try04" data-thpt-first-try-id="THPT-G10-CHVII-TRY04" data-outcome-id="G10-B19-TWO_POINTS" data-thpt-help-ref="HELP-G10-CHVII-TRY04"></span>
+        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
-### Đường qua hai điểm phân biệt
 
-**Vì sao cần học:** Trên bản đồ, hai địa điểm khác nhau đủ xác định một tuyến đường thẳng duy nhất.
 
-**Kiến thức tiền đề:** Ôn vectơ AB=(xB-xA,yB-yA), điều kiện A≠B, và pháp tuyến vuông góc với AB.
 
-**Bản chất trước công thức:** Hai điểm phân biệt xác định một hướng AB không bằng 0; từ đó chọn được pháp tuyến và viết được phương trình.
+    <a href="../luyen-tap/?item=THPT-G10-B19-P02">Mở câu luyện tập tương ứng để tự luyện</a>
 
-**Hướng dẫn đọc hình:** Đặt A và B trên hình; chỉ vectơ AB chạy dọc đường, còn pháp tuyến dựng ngang với nó.
 
-**Chọn phương pháp và giới hạn:** Kiểm A≠B, tính AB, chọn n vuông góc, viết n·AM=0 và thử cả A,B. Nếu A=B thì dữ kiện không xác định một đường duy nhất.
+    <span id="thpt-g10-chvii-try05" data-thpt-first-try-id="THPT-G10-CHVII-TRY05" data-outcome-id="G10-B19-MEMBERSHIP" data-thpt-help-ref="HELP-G10-CHVII-TRY05"></span>
 
-**Tự thử trước Core:** Cho A(-1,2), B(2,5). Viết một phương trình tổng quát của đường AB.
+    #### Điểm thuộc đường thẳng
 
-??? question "Tự mở đáp án sau khi đã tự làm"
+    Muốn biết một vị trí thực tế có nằm trên tuyến đường đã cho không, ta cần phép kiểm nhanh và chắc chắn.
 
-    **Đáp án:** x-y+3=0.
+    **Kiến thức tiền đề:** Ôn thay tọa độ điểm vào biểu thức ax+by+c; điểm trên đường phải làm vế trái bằng 0.
 
-    **Lý do:** AB=(3,3)≠0, chọn n=(1,-1). Qua A: (x+1)-(y-2)=0 ⇒ x-y+3=0; thế B: 2-5+3=0.
+    **Bản chất trước công thức:** Phương trình đường thẳng là điều kiện ràng buộc tọa độ; 'thuộc' không dựa vào nhìn gần đúng mà là thỏa chính xác điều kiện.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY04` bên dưới; quay lại câu canonical cũ `THPT-G10-B19-P02` khi đã hiểu kiến thức.
+    **Hướng dẫn đọc hình:** Với hai điểm trên mặt phẳng, thử điểm được đánh dấu trên đường và điểm lệch đường; khoảng cách thị giác chỉ gợi ý, phép thế quyết định.
 
-<span id="help-g10-chvii-try04" data-thpt-help-id="HELP-G10-CHVII-TRY04"></span>
+    Thế (xM,yM) vào ax+by+c; bằng 0 thì M thuộc, khác 0 thì không. Không chia hay chuyển vế làm mất dấu.
 
-??? tip "Tự khắc phục theo năm bước"
+    **Em vận dụng.** Với d: 2x-3y+1=0, M(1,1) và N(2,1) điểm nào thuộc d?
 
-    1. **Nhận diện lỗi:** Nếu lấy AB làm pháp tuyến, đường mới thường vuông góc với AB thay vì đi qua cả A,B.
+    ??? question "Đối chiếu"
 
-    2. **Quay lại bản chất:** Hai điểm phân biệt xác định một hướng AB không bằng 0; từ đó chọn được pháp tuyến và viết được phương trình.
+        **Đáp án:** M thuộc d vì 2-3+1=0; N không thuộc vì 4-3+1=2.
 
-    3. **Tự sửa:** Vẽ đoạn AB, kiểm n·AB=0 và thế từng điểm vào phương trình.
+        **Lý do:** Điểm thuộc là nghiệm của phương trình theo cặp tọa độ. Đây là phép thử hai lần độc lập.
 
-    4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B19-P02` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B19-P02">Mở câu luyện tập đã review để tự sửa</a>
 
-<!-- G10_CHVII_R03_END:THPT-G10-CHVII-TRY04 -->
 
-<!-- G10_CHVII_R03_BEGIN:THPT-G10-CHVII-TRY05 OUTCOME=G10-B19-MEMBERSHIP -->
+    <a href="../luyen-tap/?item=THPT-G10-B19-P03">Mở câu luyện tập tương ứng để tự luyện</a>
 
-<span id="thpt-g10-chvii-try05" data-thpt-first-try-id="THPT-G10-CHVII-TRY05" data-outcome-id="G10-B19-MEMBERSHIP" data-thpt-help-ref="HELP-G10-CHVII-TRY05"></span>
 
-### Điểm thuộc đường thẳng
+    <span id="thpt-g10-chvii-try06" data-thpt-first-try-id="THPT-G10-CHVII-TRY06" data-outcome-id="G10-B19-MULTISTEP" data-thpt-help-ref="HELP-G10-CHVII-TRY06"></span>
 
-**Vì sao cần học:** Muốn biết một vị trí thực tế có nằm trên tuyến đường đã cho không, ta cần phép kiểm nhanh và chắc chắn.
+    #### Giao điểm và quan hệ vuông góc
 
-**Kiến thức tiền đề:** Ôn thay tọa độ điểm vào biểu thức ax+by+c; điểm trên đường phải làm vế trái bằng 0.
+    Khi hai tuyến đường cắt nhau, cần biết điểm gặp nhau và góc giữa chúng; hai yêu cầu phải được kiểm bằng hai cách khác nhau.
 
-**Bản chất trước công thức:** Phương trình đường thẳng là điều kiện ràng buộc tọa độ; 'thuộc' không dựa vào nhìn gần đúng mà là thỏa chính xác điều kiện.
+    **Kiến thức tiền đề:** Ôn giải hệ hai phương trình bậc nhất và tích vô hướng của hai pháp tuyến.
 
-**Hướng dẫn đọc hình:** Với hai điểm trên mặt phẳng, thử điểm được đánh dấu trên đường và điểm lệch đường; khoảng cách thị giác chỉ gợi ý, phép thế quyết định.
+    **Bản chất trước công thức:** Giao điểm phải thỏa đồng thời hai phương trình; vuông góc là quan hệ hướng, không phụ thuộc vị trí giao.
 
-**Chọn phương pháp và giới hạn:** Thế (xM,yM) vào ax+by+c; bằng 0 thì M thuộc, khác 0 thì không. Không chia hay chuyển vế làm mất dấu.
+    **Hướng dẫn đọc hình:** Vẽ hai đường cắt nhau và đánh dấu giao điểm; phân biệt tính giao điểm và kiểm góc vuông của hai hướng.
 
-**Tự thử trước Core:** Với d: 2x-3y+1=0, M(1,1) và N(2,1) điểm nào thuộc d?
+    Giải hệ trước để có tọa độ giao; kiểm bằng cách thế lại cả hai. Sau đó dùng tích vô hướng hai pháp tuyến để kết luận vuông góc.
 
-??? question "Tự mở đáp án sau khi đã tự làm"
+    **Em vận dụng.** Hai đường d1: x+y=4, d2: x-y=2 gặp nhau ở đâu và có vuông góc không?
 
-    **Đáp án:** M thuộc d vì 2-3+1=0; N không thuộc vì 4-3+1=2.
+    ??? question "Đối chiếu"
 
-    **Lý do:** Điểm thuộc là nghiệm của phương trình theo cặp tọa độ. Đây là phép thử hai lần độc lập.
+        **Đáp án:** Giao I(3,1); hai đường vuông góc.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY05` bên dưới; quay lại câu canonical cũ `THPT-G10-B19-P03` khi đã hiểu kiến thức.
+        **Lý do:** Cộng hai phương trình được 2x=6 ⇒ x=3, y=1. Pháp tuyến (1,1) và (1,-1) có tích vô hướng 1-1=0.
 
-<span id="help-g10-chvii-try05" data-thpt-help-id="HELP-G10-CHVII-TRY05"></span>
+        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
-??? tip "Tự khắc phục theo năm bước"
 
-    1. **Nhận diện lỗi:** Nếu chỉ nhìn số hạng đầu hoặc bỏ dấu âm của 3y, phép thử có thể sai.
 
-    2. **Quay lại bản chất:** Phương trình đường thẳng là điều kiện ràng buộc tọa độ; 'thuộc' không dựa vào nhìn gần đúng mà là thỏa chính xác điều kiện.
 
-    3. **Tự sửa:** Lập hai dòng thay tọa độ từng điểm, so với 0 trước khi kết luận.
+    <a href="../luyen-tap/?item=THPT-G10-B19-P06">Mở câu luyện tập tương ứng để tự luyện</a>
 
-    4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B19-P03` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+    <span id="thpt-g10-chvii-try07" data-thpt-first-try-id="THPT-G10-CHVII-TRY07" data-outcome-id="G10-B19-LINEAR_MODEL" data-thpt-help-ref="HELP-G10-CHVII-TRY07"></span>
 
-<a href="../luyen-tap/?item=THPT-G10-B19-P03">Mở câu luyện tập đã review để tự sửa</a>
+    #### Mô hình tuyến tính từ dữ liệu
 
-<!-- G10_CHVII_R03_END:THPT-G10-CHVII-TRY05 -->
+    Hai quan sát có thể giúp ước lượng một xu hướng tuyến tính đơn giản, chẳng hạn giá trị tăng đều theo thời gian.
 
-<!-- G10_CHVII_R03_BEGIN:THPT-G10-CHVII-TRY06 OUTCOME=G10-B19-MULTISTEP -->
+    **Kiến thức tiền đề:** Nhắc lại đường thẳng qua hai điểm và hệ số góc là mức thay đổi Δy/Δx khi Δx≠0.
 
-<span id="thpt-g10-chvii-try06" data-thpt-first-try-id="THPT-G10-CHVII-TRY06" data-outcome-id="G10-B19-MULTISTEP" data-thpt-help-ref="HELP-G10-CHVII-TRY06"></span>
+    **Bản chất trước công thức:** Một quan hệ y=mx+b mô tả mỗi khi x tăng một đơn vị, y tăng m đơn vị; b là giá trị tại x=0. Mô hình chỉ đáng tin trong miền dữ liệu phù hợp.
 
-### Giao điểm và quan hệ vuông góc
+    **Hướng dẫn đọc hình:** Trên hệ trục có hai chấm dữ liệu, giải thích m là 'độ tăng đứng / độ tăng ngang'; cần ghi đơn vị trên cả hai trục.
 
-**Vì sao cần học:** Khi hai tuyến đường cắt nhau, cần biết điểm gặp nhau và góc giữa chúng; hai yêu cầu phải được kiểm bằng hai cách khác nhau.
+    Tính m=(y2-y1)/(x2-x1) khi x2≠x1; thay một điểm để tìm b, sau đó kiểm điểm còn lại và ghi miền ứng dụng.
 
-**Kiến thức tiền đề:** Ôn giải hệ hai phương trình bậc nhất và tích vô hướng của hai pháp tuyến.
+    **Em vận dụng.** Giá trị V theo thời gian t (t≥0) đi qua (0,5) và (2,9), giả sử tuyến tính. Lập V(t) và tính V(3).
 
-**Bản chất trước công thức:** Giao điểm phải thỏa đồng thời hai phương trình; vuông góc là quan hệ hướng, không phụ thuộc vị trí giao.
+    ??? question "Đối chiếu"
 
-**Hướng dẫn đọc hình:** Vẽ hai đường cắt nhau và đánh dấu giao điểm; phân biệt tính giao điểm và kiểm góc vuông của hai hướng.
+        **Đáp án:** V(t)=2t+5, V(3)=11.
 
-**Chọn phương pháp và giới hạn:** Giải hệ trước để có tọa độ giao; kiểm bằng cách thế lại cả hai. Sau đó dùng tích vô hướng hai pháp tuyến để kết luận vuông góc.
+        **Lý do:** Hệ số góc (9-5)/(2-0)=2, giá trị tại t=0 là 5. Đây là phép ngoại suy t=3, chỉ hợp lý nếu giả thiết tăng đều vẫn đúng.
 
-**Tự thử trước Core:** Hai đường d1: x+y=4, d2: x-y=2 gặp nhau ở đâu và có vuông góc không?
+        **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
-??? question "Tự mở đáp án sau khi đã tự làm"
 
-    **Đáp án:** Giao I(3,1); hai đường vuông góc.
 
-    **Lý do:** Cộng hai phương trình được 2x=6 ⇒ x=3, y=1. Pháp tuyến (1,1) và (1,-1) có tích vô hướng 1-1=0.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY06` bên dưới; quay lại câu canonical cũ `THPT-G10-B19-P06` khi đã hiểu kiến thức.
+    <a href="../luyen-tap/?item=THPT-G10-B19-P04">Mở câu luyện tập tương ứng để tự luyện</a>
 
-<span id="help-g10-chvii-try06" data-thpt-help-id="HELP-G10-CHVII-TRY06"></span>
+    ### Thuật ngữ, kiến thức và kỹ năng
 
-??? tip "Tự khắc phục theo năm bước"
+    **Thuật ngữ:** Vectơ chỉ phương, vectơ pháp tuyến, phương trình tổng quát, phương trình tham số, tham số (t), điểm thuộc đường thẳng.
 
-    1. **Nhận diện lỗi:** Nếu chỉ giải được giao điểm mà suy ra vuông góc, em đã đánh đồng vị trí với góc.
+    **Sau bài học, em cần làm được:** Dựng đường từ điểm và vectơ; đổi giữa dạng tổng quát và tham số; tìm đường qua hai điểm phân biệt; kiểm điểm thuộc và tính giao khi đủ điều kiện.
 
-    2. **Quay lại bản chất:** Giao điểm phải thỏa đồng thời hai phương trình; vuông góc là quan hệ hướng, không phụ thuộc vị trí giao.
+=== "Kiến thức SGK"
 
-    3. **Tự sửa:** Tách làm hai cột: 'I thỏa hai phương trình' và 'n1·n2=0' rồi kiểm riêng.
+    ### 2.1. Phương trình tổng quát của đường thẳng
 
-    4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+    #### Vectơ pháp tuyến và vectơ chỉ phương
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B19-P06` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
 
-<a href="../luyen-tap/?item=THPT-G10-B19-P06">Mở câu luyện tập đã review để tự sửa</a>
+    <figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="../../../../assets/images/thpt/G10_B19_LINE_NORMAL_R02.svg" loading="lazy" alt="Đường 2x+y=6 qua P(1,4), vectơ chỉ phương (1,-2) và pháp tuyến (2,1)"><figcaption>Đường thẳng \(d:2x+y=6\) có một vectơ chỉ phương \((1,-2)\) và một pháp tuyến \((2,1)\). Hai vectơ vuông góc vì tích vô hướng bằng 0.</figcaption></figure>
 
-<!-- G10_CHVII_R03_END:THPT-G10-CHVII-TRY06 -->
 
-<!-- G10_CHVII_R03_BEGIN:THPT-G10-CHVII-TRY07 OUTCOME=G10-B19-LINEAR_MODEL -->
 
-<span id="thpt-g10-chvii-try07" data-thpt-first-try-id="THPT-G10-CHVII-TRY07" data-outcome-id="G10-B19-LINEAR_MODEL" data-thpt-help-ref="HELP-G10-CHVII-TRY07"></span>
+    **Cách đọc hình.** Quan sát vectơ chỉ phương \(\vec u=(1,-2)\) đi dọc đường \(2x+y=6\), còn \(\vec n=(2,1)\) vuông góc với đường. Điểm \(P(1,4)\) nằm trên đường vì \(2\cdot1+4=6\).
+    Đường thẳng \(\Delta\) nhận **vectơ pháp tuyến** \(\vec n=(a;b)\ne(0;0)\) khi \(\vec n\) vuông góc với đường thẳng. Đường thẳng nhận **vectơ chỉ phương** \(\vec u=(u_1;u_2)\ne(0;0)\) khi \(\vec u\) song song với đường thẳng.
 
-### Mô hình tuyến tính từ dữ liệu
+    Nếu \(\vec n=(a;b)\) thì có thể chọn \(\vec u=(-b;a)\). Cần phân biệt rõ vai trò hai vectơ, không lấy nhầm vectơ nối hai điểm làm pháp tuyến.
 
-**Vì sao cần học:** Hai quan sát có thể giúp ước lượng một xu hướng tuyến tính đơn giản, chẳng hạn giá trị tăng đều theo thời gian.
+    Qua điểm \(M_0(x_0;y_0)\) và pháp tuyến \(\vec n=(a;b)\):
 
-**Kiến thức tiền đề:** Nhắc lại đường thẳng qua hai điểm và hệ số góc là mức thay đổi Δy/Δx khi Δx≠0.
+    \[
+    a(x-x_0)+b(y-y_0)=0,\quad a^2+b^2>0.
+    \]
 
-**Bản chất trước công thức:** Một quan hệ y=mx+b mô tả mỗi khi x tăng một đơn vị, y tăng m đơn vị; b là giá trị tại x=0. Mô hình chỉ đáng tin trong miền dữ liệu phù hợp.
+    Đây là phương trình tổng quát \(ax+by+c=0\).
 
-**Hướng dẫn đọc hình:** Trên hệ trục có hai chấm dữ liệu, giải thích m là 'độ tăng đứng / độ tăng ngang'; cần ghi đơn vị trên cả hai trục.
+    ### 2.2. Phương trình tham số của đường thẳng
 
-**Chọn phương pháp và giới hạn:** Tính m=(y2-y1)/(x2-x1) khi x2≠x1; thay một điểm để tìm b, sau đó kiểm điểm còn lại và ghi miền ứng dụng.
+    Với vectơ chỉ phương \(\vec u=(u_1;u_2)\), phương trình tham số là:
 
-**Tự thử trước Core:** Giá trị V theo thời gian t (t≥0) đi qua (0,5) và (2,9), giả sử tuyến tính. Lập V(t) và tính V(3).
+    \[
+    \begin{cases}x=x_0+u_1t,\\y=y_0+u_2t,\end{cases}\qquad t\in\mathbb R.
+    \]
 
-??? question "Tự mở đáp án sau khi đã tự làm"
+    Nếu đường thẳng đi qua \(A\) và \(B\), **phải có \(A\ne B\)** mới dùng được \(\overrightarrow{AB}\) làm vectơ chỉ phương.
 
-    **Đáp án:** V(t)=2t+5, V(3)=11.
+=== "Ví dụ"
 
-    **Lý do:** Hệ số góc (9-5)/(2-0)=2, giá trị tại t=0 là 5. Đây là phép ngoại suy t=3, chỉ hợp lý nếu giả thiết tăng đều vẫn đúng.
+    Trước khi xem lời giải, hãy xác định dữ kiện, điều phải tìm và lý do chọn cách giải. Sau đó kiểm tra lại điều kiện áp dụng và kết quả, thay vì chỉ nhìn phép tính cuối cùng.
 
-    **Nếu chưa đúng:** xem hướng khắc phục `HELP-G10-CHVII-TRY07` bên dưới; quay lại câu canonical cũ `THPT-G10-B19-P04` khi đã hiểu kiến thức.
+    ### Ví dụ — Từ điểm và pháp tuyến đến phương trình
 
-<span id="help-g10-chvii-try07" data-thpt-help-id="HELP-G10-CHVII-TRY07"></span>
+    **Đề bài.** Lập phương trình đường thẳng qua \(P(1,4)\) có vectơ pháp tuyến \(\vec n=(2,1)\). Tìm một vectơ chỉ phương.
 
-??? tip "Tự khắc phục theo năm bước"
+    **Vì sao chọn cách này?** Dữ kiện cho **pháp tuyến**, vì vậy phương trình tổng quát qua điểm là con đường trực tiếp nhất.
 
-    1. **Nhận diện lỗi:** Nếu viết V=5t+2, em đã nhầm hệ số góc với giá trị ban đầu.
+    **Lời giải.** \(2(x-1)+(y-4)=0\), hay \(2x+y-6=0\). Vectơ \(\vec u=(1,-2)\) có \(\vec u\cdot\vec n=2-2=0\), nên là một vectơ chỉ phương. 
 
-    2. **Quay lại bản chất:** Một quan hệ y=mx+b mô tả mỗi khi x tăng một đơn vị, y tăng m đơn vị; b là giá trị tại x=0. Mô hình chỉ đáng tin trong miền dữ liệu phù hợp.
+    **Kiểm lại:** \(P(1,4)\) thỏa \(2+4-6=0\).
 
-    3. **Tự sửa:** Kiểm cả V(0)=5 và V(2)=9 trước khi tính V(3).
+    ### Ví dụ 2 — Viết hai dạng phương trình của đường thẳng qua hai điểm
 
-    4. **Tự đối chiếu:** xem lại lời giải trên chỉ sau khi đã làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+    **Đề bài.** Cho \(A(1;2)\), \(B(4;3)\). Hãy viết phương trình tổng quát và phương trình tham số của đường thẳng \(AB\).
 
-    5. **Luyện tiếp cùng kỹ năng:** quay lại `THPT-G10-B19-P04` trong ngân hàng Core/Practice SGK đã có; không coi câu vừa mở lời giải là chứng cứ đánh giá độc lập.
+    **Vì sao chọn cách này?** Hai điểm phân biệt cho một vectơ chỉ phương; từ đó chọn một vectơ pháp tuyến để lập phương trình tổng quát.
 
-<a href="../luyen-tap/?item=THPT-G10-B19-P04">Mở câu luyện tập đã review để tự sửa</a>
+    **Lời giải.** Ta có \(\overrightarrow{AB}=(3;1)\), nên một pháp tuyến là \((1;-3)\).
 
-<!-- G10_CHVII_R03_END:THPT-G10-CHVII-TRY07 -->
+    - Dạng tổng quát: \((x-1)-3(y-2)=0\), hay \(\boxed{x-3y+5=0}\).
+    - Dạng tham số: \(x=1+3t,\ y=2+t,\ t\in\mathbb R\).
+    - Kiểm tra: thế tọa độ \(A,B\) vào phương trình tổng quát đều cho \(0\).
 
-<!-- G10_CHVII_FULL_R03_ALL_END -->
+    **Vì sao:** điểm \(M\) thuộc đường thẳng khi \(\overrightarrow{AM}\perp\vec n\); biểu thức tham số quét mọi bội số của vectơ chỉ phương.
 
-## 1. Vectơ pháp tuyến và vectơ chỉ phương
+    !!! tip "Tự nhớ"
+        Trong \(ax+by+c=0\), không được để đồng thời \(a=b=0\). Hai phương trình khác hệ số vẫn có thể xác định **cùng một đường thẳng** nếu toàn bộ hệ số tỉ lệ.
 
-Đường thẳng \(\Delta\) nhận **vectơ pháp tuyến** \(\vec n=(a;b)\ne(0;0)\) khi \(\vec n\) vuông góc với đường thẳng. Đường thẳng nhận **vectơ chỉ phương** \(\vec u=(u_1;u_2)\ne(0;0)\) khi \(\vec u\) song song với đường thẳng.
+=== "Lỗi thường gặp"
 
-Nếu \(\vec n=(a;b)\) thì có thể chọn \(\vec u=(-b;a)\). Cần phân biệt rõ vai trò hai vectơ, không lấy nhầm vectơ nối hai điểm làm pháp tuyến.
+    <span id="help-g10-chvii-try01" data-thpt-help-id="HELP-G10-CHVII-TRY01"></span>
 
-## 2. Hai dạng phương trình của đường thẳng
+    ??? tip "Tự khắc phục theo năm bước"
 
-Qua điểm \(M_0(x_0;y_0)\) và pháp tuyến \(\vec n=(a;b)\):
+        1. **Nhận diện lỗi:** Nếu dùng n làm chỉ phương, em đang nhầm hai vai trò vuông góc.
 
-\[
-a(x-x_0)+b(y-y_0)=0,\quad a^2+b^2>0.
-\]
+        2. **Quay lại bản chất:** Vectơ chỉ phương nằm dọc đường; pháp tuyến vuông góc đường. Cùng một đường thẳng có vô số vectơ cùng phương hoặc pháp tuyến khác nhau bởi bội khác 0.
 
-Đây là phương trình tổng quát \(ax+by+c=0\). Với vectơ chỉ phương \(\vec u=(u_1;u_2)\), phương trình tham số là:
+        3. **Tự sửa:** Vẽ hai mũi tên dọc/vuông góc; tính lại 2(-3)+3(2) trước khi áp dụng.
 
-\[
-\begin{cases}x=x_0+u_1t,\\y=y_0+u_2t,\end{cases}\qquad t\in\mathbb R.
-\]
+        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-Nếu đường thẳng đi qua \(A\) và \(B\), **phải có \(A\ne B\)** mới dùng được \(\overrightarrow{AB}\) làm vectơ chỉ phương.
+        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
-## 3. Ví dụ
+    <span id="help-g10-chvii-try02" data-thpt-help-id="HELP-G10-CHVII-TRY02"></span>
 
-Cho \(A(1;2)\), \(B(4;3)\). Ta có \(\overrightarrow{AB}=(3;1)\), nên một pháp tuyến là \((1;-3)\).
+    ??? tip "Tự khắc phục theo năm bước"
 
-- Dạng tổng quát: \((x-1)-3(y-2)=0\), hay \(\boxed{x-3y+5=0}\).
-- Dạng tham số: \(x=1+3t,\ y=2+t,\ t\in\mathbb R\).
-- Kiểm tra: thế tọa độ \(A,B\) vào phương trình tổng quát đều cho \(0\).
+        1. **Nhận diện lỗi:** Nếu phương trình không đi qua A, em đã mất dấu khi trừ tọa độ gốc.
 
-**Vì sao:** điểm \(M\) thuộc đường thẳng khi \(\overrightarrow{AM}\perp\vec n\); biểu thức tham số quét mọi bội số của vectơ chỉ phương.
+        2. **Quay lại bản chất:** M thuộc đường qua A có pháp tuyến n khi độ dịch chuyển AM không có thành phần theo n: n·AM=0. Đây là nguồn gốc phương trình, không phải một công thức học thuộc.
 
-!!! tip "Tự nhớ"
-    Trong \(ax+by+c=0\), không được để đồng thời \(a=b=0\). Hai phương trình khác hệ số vẫn có thể xác định **cùng một đường thẳng** nếu toàn bộ hệ số tỉ lệ.
+        3. **Tự sửa:** Thay ngay A(1,3) vào phương trình: phải được 0 trước khi luyện tiếp.
 
-## Khi gặp khó khăn — tự tìm lỗi và học lại
+        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="D6-G10-B19-01">
-<summary>Nhầm vectơ pháp tuyến/chỉ phương</summary>
-<p><strong>Dấu hiệu:</strong> Từ ax+by+c=0 dùng (a;b) làm chỉ phương, hoặc chấp nhận vectơ không.</p>
-<p><strong>Bản chất toán:</strong> Với (a;b)≠(0;0), n=(a;b) là pháp tuyến, u=(-b;a) có thể làm chỉ phương vì n·u=0 và u≠0.</p>
-<p><strong>Tự sửa:</strong> Ôn B19 mục 1: đánh dấu n và u, tự kiểm n·u=0 rồi mới viết phương trình.</p>
-<p><strong>Kiến thức cần ôn:</strong> Vectơ tọa độ, tích vô hướng; B19 mục 1.</p>
-<p><strong>Luyện lại bài đã có:</strong> <a data-thpt-formative-id="THPT-G10-B19-C01" href="../luyen-tap/?item=THPT-G10-B19-C01">Luyện lại câu 19-C01</a> · <a data-thpt-formative-id="THPT-G10-B19-P05" href="../luyen-tap/?item=THPT-G10-B19-P05">Luyện lại câu 19-P05</a></p>
-</details>
+        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="D6-G10-B19-02">
-<summary>Viết đường thẳng qua hai điểm chưa kiểm điều kiện</summary>
-<p><strong>Dấu hiệu:</strong> Nhầm AB là pháp tuyến, quên A≠B hoặc không thử nghiệm kết quả.</p>
-<p><strong>Bản chất toán:</strong> Chỉ khi A≠B, AB khác 0 và là một vectơ chỉ phương; chọn n vuông góc AB, rồi thế cả A và B để kiểm phương trình.</p>
-<p><strong>Tự sửa:</strong> Ôn B19 mục 2–3: tìm vectơ \(\overrightarrow{AB}\) với \(A\ne B\), chọn \(\vec n=(a;b)\) vuông góc \(\overrightarrow{AB}\); viết \(a(x-x_A)+b(y-y_A)=0\) (tương đương \(\vec n\cdot\overrightarrow{AM}=0\)); thử lại cả A và B.</p>
-<p><strong>Kiến thức cần ôn:</strong> Hiệu tọa độ hai điểm, vectơ khác 0; B19 mục 2–3.</p>
-<p><strong>Luyện lại bài đã có:</strong> <a data-thpt-formative-id="THPT-G10-B19-P02" href="../luyen-tap/?item=THPT-G10-B19-P02">Luyện lại câu 19-P02</a> · <a data-thpt-formative-id="THPT-G10-B19-P06" href="../luyen-tap/?item=THPT-G10-B19-P06">Luyện lại câu 19-P06</a> · <a data-thpt-formative-id="THPT-G10-CHVII-W19-01" href="../../../thu-vien/tu-luan-chuong-vii/#thpt-g10-chvii-w19-01">Bài tự luận liên quan</a></p>
-</details>
+    <span id="help-g10-chvii-try03" data-thpt-help-id="HELP-G10-CHVII-TRY03"></span>
 
-## 4. Tiếp tục học
+    ??? tip "Tự khắc phục theo năm bước"
 
-- [Bài 20 — Hai đường thẳng, góc và khoảng cách](bai-20.md).
-- [Core và Luyện tập/Vận dụng Chương VII](luyen-tap.md): tự luyện và mở lời giải sau khi tự làm.
+        1. **Nhận diện lỗi:** Nếu đảo u thành pháp tuyến hoặc thiếu tham số chung t, hai phương trình không mô tả đúng một đường.
 
-<small>Nguồn đối chiếu: SGK KNTT Toán 10 tập 2, trang in 30–35; SBT trang 28–31. Ví dụ do dự án biên soạn; không chép nguyên SGK.</small>
+        2. **Quay lại bản chất:** Điểm trên đường thẳng có dạng M=A+t·u với t thực. Tham số t không nhất thiết là thời gian; nó chỉ là hệ số quét các vị trí.
+
+        3. **Tự sửa:** Thử lại t=0, t=1 và vẽ đường nối hai điểm thu được.
+
+        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+
+        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
+
+    <span id="help-g10-chvii-try04" data-thpt-help-id="HELP-G10-CHVII-TRY04"></span>
+
+    ??? tip "Tự khắc phục theo năm bước"
+
+        1. **Nhận diện lỗi:** Nếu lấy AB làm pháp tuyến, đường mới thường vuông góc với AB thay vì đi qua cả A,B.
+
+        2. **Quay lại bản chất:** Hai điểm phân biệt xác định một hướng AB không bằng 0; từ đó chọn được pháp tuyến và viết được phương trình.
+
+        3. **Tự sửa:** Vẽ đoạn AB, kiểm n·AB=0 và thế từng điểm vào phương trình.
+
+        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+
+        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
+
+    <span id="help-g10-chvii-try05" data-thpt-help-id="HELP-G10-CHVII-TRY05"></span>
+
+    ??? tip "Tự khắc phục theo năm bước"
+
+        1. **Nhận diện lỗi:** Nếu chỉ nhìn số hạng đầu hoặc bỏ dấu âm của 3y, phép thử có thể sai.
+
+        2. **Quay lại bản chất:** Phương trình đường thẳng là điều kiện ràng buộc tọa độ; 'thuộc' không dựa vào nhìn gần đúng mà là thỏa chính xác điều kiện.
+
+        3. **Tự sửa:** Lập hai dòng thay tọa độ từng điểm, so với 0 trước khi kết luận.
+
+        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+
+        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
+
+    <span id="help-g10-chvii-try06" data-thpt-help-id="HELP-G10-CHVII-TRY06"></span>
+
+    ??? tip "Tự khắc phục theo năm bước"
+
+        1. **Nhận diện lỗi:** Nếu chỉ giải được giao điểm mà suy ra vuông góc, em đã đánh đồng vị trí với góc.
+
+        2. **Quay lại bản chất:** Giao điểm phải thỏa đồng thời hai phương trình; vuông góc là quan hệ hướng, không phụ thuộc vị trí giao.
+
+        3. **Tự sửa:** Tách làm hai cột: 'I thỏa hai phương trình' và 'n1·n2=0' rồi kiểm riêng.
+
+        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+
+        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
+
+    <span id="help-g10-chvii-try07" data-thpt-help-id="HELP-G10-CHVII-TRY07"></span>
+
+    ??? tip "Tự khắc phục theo năm bước"
+
+        1. **Nhận diện lỗi:** Nếu viết V=5t+2, em đã nhầm hệ số góc với giá trị ban đầu.
+
+        2. **Quay lại bản chất:** Một quan hệ y=mx+b mô tả mỗi khi x tăng một đơn vị, y tăng m đơn vị; b là giá trị tại x=0. Mô hình chỉ đáng tin trong miền dữ liệu phù hợp.
+
+        3. **Tự sửa:** Kiểm cả V(0)=5 và V(2)=9 trước khi tính V(3).
+
+        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
+
+        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
+
+    <span data-thpt-help-id="D6-G10-B19-01" hidden></span>
+
+    ??? tip "Nhầm vectơ pháp tuyến/chỉ phương"
+
+        <p><strong>Dấu hiệu:</strong> Từ ax+by+c=0 dùng (a;b) làm chỉ phương, hoặc chấp nhận vectơ không.</p>
+        <p><strong>Bản chất toán:</strong> Với (a;b)≠(0;0), n=(a;b) là pháp tuyến, u=(-b;a) có thể làm chỉ phương vì n·u=0 và u≠0.</p>
+        <p><strong>Tự sửa:</strong> Ôn B19 mục 1: đánh dấu n và u, tự kiểm n·u=0 rồi mới viết phương trình.</p>
+        <p><strong>Kiến thức cần ôn:</strong> Vectơ tọa độ, tích vô hướng; B19 mục 1.</p>
+        <p><strong>Luyện lại bài đã có:</strong> <a data-thpt-formative-id="THPT-G10-B19-C01" href="../luyen-tap/?item=THPT-G10-B19-C01">Luyện lại câu 19-C01</a> · <a data-thpt-formative-id="THPT-G10-B19-P05" href="../luyen-tap/?item=THPT-G10-B19-P05">Luyện lại câu 19-P05</a></p>
+
+
+    <span data-thpt-help-id="D6-G10-B19-02" hidden></span>
+
+    ??? tip "Viết đường thẳng qua hai điểm chưa kiểm điều kiện"
+
+        <p><strong>Dấu hiệu:</strong> Nhầm AB là pháp tuyến, quên A≠B hoặc không thử nghiệm kết quả.</p>
+        <p><strong>Bản chất toán:</strong> Chỉ khi A≠B, AB khác 0 và là một vectơ chỉ phương; chọn n vuông góc AB, rồi thế cả A và B để kiểm phương trình.</p>
+        <p><strong>Tự sửa:</strong> Ôn B19 mục 2–3: tìm vectơ \(\overrightarrow{AB}\) với \(A\ne B\), chọn \(\vec n=(a;b)\) vuông góc \(\overrightarrow{AB}\); viết \(a(x-x_A)+b(y-y_A)=0\) (tương đương \(\vec n\cdot\overrightarrow{AM}=0\)); thử lại cả A và B.</p>
+        <p><strong>Kiến thức cần ôn:</strong> Hiệu tọa độ hai điểm, vectơ khác 0; B19 mục 2–3.</p>
+        <p><strong>Luyện lại bài đã có:</strong> <a data-thpt-formative-id="THPT-G10-B19-P02" href="../luyen-tap/?item=THPT-G10-B19-P02">Luyện lại câu 19-P02</a> · <a data-thpt-formative-id="THPT-G10-B19-P06" href="../luyen-tap/?item=THPT-G10-B19-P06">Luyện lại câu 19-P06</a> · <a data-thpt-formative-id="THPT-G10-CHVII-W19-01" href="../../../thu-vien/tu-luan-chuong-vii/#thpt-g10-chvii-w19-01">Bài tự luận liên quan</a></p>
+
+
+    **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
+
+    <p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 10 Kết nối tri thức với cuộc sống và học liệu SLM hiện hành. Lời giảng được biên tập nhằm hỗ trợ tự học độc lập.</p>
+
+<small>Nguồn đối chiếu: SGK KNTT Toán 10 tập 2, trang in 30–35; SBT trang 28–31. </small>

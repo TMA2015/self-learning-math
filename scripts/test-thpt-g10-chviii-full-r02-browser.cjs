@@ -4,6 +4,7 @@
  * unchanged 14-client-question Final Submit at 390/820/1440.
  */
 const assert=require("node:assert/strict"),{chromium}=require("playwright");
+const {verifyModelBLesson}=require("./test-thpt-g10-model-b-browser-helper.cjs");
 const root="http://127.0.0.1:8765/thpt-preview/sgk/chuong-viii/";
 (async()=>{
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
@@ -16,7 +17,41 @@ const root="http://127.0.0.1:8765/thpt-preview/sgk/chuong-viii/";
      const response=await page.goto(root+"bai-"+n+"/",{waitUntil:"networkidle",timeout:90000});
      assert(response?.ok(),"Missing Chapter VIII B"+n);
      const article=page.locator("article.md-content__inner");
-     const first=article.locator("[data-thpt-first-try-id]");
+     if(await verifyModelBLesson(page,{n,chapter:"viii",tries:4,helps:6,
+       questions:n===25?5:4,
+       images:n===23?["G10_B23_ADD_MULTIPLY_CHOICES_R02.svg"]:
+              n===24?["G10_B24_ORDER_VS_COMBINATION_R02.svg"]:
+                       ["G10_B25_PASCAL_TRIANGLE_R02.svg"]})){
+       const first=article.locator("[data-thpt-first-try-id]");
+       const helps=article.locator('[data-thpt-help-id^="HELP-G10-CHVIII-TRY"]');
+       assert.equal(await first.count(),4,"B"+n+" 4 canonical First Try IDs");
+       assert.equal(await helps.count(),4,"B"+n+" 4 canonical D6 helpers");
+       for(let k=0;k<4;k++){
+        const v=String(start+k).padStart(2,"0");
+        assert.equal(await first.nth(k).getAttribute("data-thpt-first-try-id"),
+          "THPT-G10-CHVIII-TRY"+v,"B"+n+" Q15 canonical ID order");
+        assert.equal(await helps.nth(k).getAttribute("data-thpt-help-id"),
+          "HELP-G10-CHVIII-TRY"+v,"B"+n+" original D6 mapping");
+       }
+       const knowledge=article.locator(".tabbed-set").first().locator(".tabbed-labels label")
+         .filter({hasText:/^Kiến thức SGK$/});
+       await knowledge.click();
+       const answers=article.locator("details.question:visible"),tips=article.locator("details.tip:visible");
+       assert((await answers.count())>=4&&(await tips.count())>=4,
+         "B"+n+" all reviewed First Try/D6 must remain visible on Knowledge tab");
+       for(let k=0;k<4;k++){
+        const a=answers.nth(k),h=tips.nth(k);
+        assert(!(await a.evaluate(x=>x.open))&&!(await h.evaluate(x=>x.open)),"B"+n+" no automatic solution");
+        await a.locator("summary").click();
+        assert((await a.innerText()).includes("Lập luận"),"B"+n+" reviewed worked reasoning");
+        await a.locator("summary").click();
+        assert(!(await a.evaluate(x=>x.open)),"B"+n+" original First Try can close");
+        await h.locator("summary").click();
+        assert.equal(await h.locator("li").count(),5,"B"+n+" five D6 remediation steps");
+        await h.locator("summary").click();
+       }
+      }else{
+const first=article.locator("[data-thpt-first-try-id]");
      const helps=article.locator('[data-thpt-help-id^="HELP-G10-CHVIII-TRY"]');
      const answers=article.locator("details.question");
      const recovery=article.locator("details.tip");
@@ -43,7 +78,9 @@ const root="http://127.0.0.1:8765/thpt-preview/sgk/chuong-viii/";
       await hint.locator("summary").click();
       assert.equal(await hint.getAttribute("open"),null,"D6 can collapse "+id);
      }
-     const visible=await article.innerText();
+     
+      }
+      const visible=await article.innerText();
      assert(!visible.includes("??? question")&&!visible.includes("??? tip"),"Raw unrendered disclosure B"+n);
      assert(!/ACADEMIC_VERDICT|CONTENT_READY|NOTEBOOKLM|RELEASE_AUTHORIZATION/.test(visible),"Reviewer metadata leaked B"+n);
      const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);

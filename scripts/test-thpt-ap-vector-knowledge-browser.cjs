@@ -2,6 +2,8 @@
 "use strict";
 const assert=require("node:assert/strict");
 const {chromium}=require("playwright");
+const {chivEditorialReceiptRows}=require("./thpt-q18-g10-source-receipt.cjs");
+const latest=chivEditorialReceiptRows();
 const cases=[
  {lesson:7,headings:["1. Vectơ và độ dài","2. Phương và hướng","3. Bằng nhau và ngược hướng","4. Vectơ-không theo SGK/SBT","5. Ứng dụng"]},
  {lesson:8,headings:["1. Quy tắc ba điểm (quy tắc tam giác)","2. Quy tắc hình bình hành","3. Vectơ đối và hiệu","4. Trung điểm và trọng tâm","5. Ứng dụng hợp lực"]},
@@ -17,27 +19,118 @@ const cases=[
      const res=await page.goto("http://127.0.0.1:8765/thpt-preview/sgk/chuong-iv/bai-"+item.lesson+"/",{waitUntil:"networkidle"});
      assert(res?.ok(),"Page B"+item.lesson+" not available");
      const headers=await page.locator(".md-content__inner h3").allInnerTexts();
-     for(const h of item.headings)assert(headers.some(x=>x.trim().startsWith(h)),"B"+item.lesson+" heading: "+h);
+     const corrected={
+       7:["2.1. Khái niệm vectơ","2.2. Hai vectơ cùng phương, cùng hướng, bằng nhau"],
+       8:["2.1. Tổng của hai vectơ","2.2. Hiệu của hai vectơ"],
+       10:["2.1. Tọa độ của vectơ","2.2. Biểu thức tọa độ của các phép toán vectơ"]
+     };
+     if(latest.has("B"+String(item.lesson).padStart(2,"0"))){
+       assert.deepEqual((await page.locator(".tabbed-content > .tabbed-block").nth(1)
+         .locator(":scope > h3").allInnerTexts()).map(x=>x.trim()),corrected[item.lesson],
+         "B"+item.lesson+" exact SGK original section headings after owner editorial correction");
+       assert.equal(await page.locator(".tabbed-content > .tabbed-block").nth(1)
+         .locator("details.question").count(),0,"No formative First Try in formal SGK");
+     }else for(const h of item.headings)
+       assert(headers.some(x=>x.trim().startsWith(h)),"B"+item.lesson+" historical heading: "+h);
      assert.equal(await page.locator(".md-content__inner h3").filter({hasText:"D1."}).count(),0,
        "Never display D1.x audit labels as lesson headings");
      const figures=page.locator(".thpt-r4-probability-figure img");
      assert(await figures.count()>=1,"Missing original reviewed SVG figure");
-     // SVG figures are lazy-loaded. Scroll each actual figure into view and
-     // verify that its image decodes; don't mistake an off-screen lazy image for a broken asset.
-     for(let idx=0;idx<await figures.count();idx++){
-      const figure=figures.nth(idx);
-      await figure.scrollIntoViewIfNeeded();
-      await figure.evaluate(async img=>img.decode());
-      assert(await figure.evaluate(img=>img.complete&&img.naturalWidth>0),
-        "SVG asset failed to render B"+item.lesson+" figure "+idx+" @"+width);
+     const modelB=page.locator(".md-content__inner .tabbed-set").first();
+     const labels=modelB.locator(".tabbed-labels > label");
+     const isModelB=await modelB.count()>0;
+     if(isModelB){
+       const actual=(await labels.allInnerTexts()).map(s=>s.trim());
+       assert.deepEqual(actual,["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
+         "G10 B"+item.lesson+" exact Model B learner tabs");
+       assert.equal(await modelB.locator(".tabbed-content > .tabbed-block").count(),4,
+         "G10 B"+item.lesson+" four independent lesson panels");
      }
-     const status=await page.evaluate(()=>{
-      const d=document.documentElement;
-      const images=[...document.querySelectorAll(".thpt-r4-probability-figure img")];
-      return {overflow:d.scrollWidth-window.innerWidth,figures:images.map(i=>({img:i.getBoundingClientRect().width,parent:i.parentElement.getBoundingClientRect().width}))};
-     });
-     assert(status.overflow<=12,"Page horizontal overflow B"+item.lesson+" at "+width+": "+status.overflow);
-     assert(status.figures.every(x=>x.img<=x.parent+2),"Figure too wide B"+item.lesson+" at "+width);
+     // In Model B a mathematically correct original SVG can live inside a
+     // deliberately HIDDEN tab. Open the actual owning tab before checking
+     // that the image becomes visible, loads, decodes, and fits. Never skip it.
+     const measurements=[];
+     for(let idx=0;idx<await figures.count();idx++){
+       const figure=figures.nth(idx);
+       // A lazy-loaded SVG <img> has no intrinsic dimensions until decoded.
+       // Check its visible FIGURE container (with real figcaption) first,
+       // then scroll it into view and decode/test the actual image below.
+       const frame=figure.locator("xpath=..");
+       if(isModelB){
+         // Match the already-PASSING chapter Model B browser helper: tab
+         // labels are interactive controls, while DOM block indices are not
+         // guaranteed to equal label indices after the Material transformation.
+         // Visit real learner tabs until the actual original SVG is visible.
+         let selected=null;
+         for(const name of ["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"]){
+           const label=labels.filter({hasText:new RegExp("^"+name+"$")});
+           assert.equal(await label.count(),1,"B"+item.lesson+" missing tab "+name);
+           await label.click();
+           if(await frame.isVisible()){selected=name;break;}
+         }
+         // Lock actual pedagogical ownership for each source-verified D5:
+         // B07 formal SGK, B08 Discovery, B10 coordinate Discovery BEFORE
+         // TRY16, B10 river figure in worked EX 3.4 with exact same data.
+         const src=(await figure.getAttribute("src"))||"";
+         let owningTab=item.lesson===8?"Khám phá kiến thức":"Kiến thức SGK";
+         if(item.lesson===10){
+           assert.equal(await figures.count(),2,
+             "B10 must retain one coordinate and one river diagram");
+           if(idx===0){
+             owningTab="Khám phá kiến thức";
+             assert(src.includes("THPT_G10_B10_COORDINATES_DIFFERENCE_D5_R01.svg"),
+               "B10 original coordinate D5 missing");
+             const discovery=modelB.locator(".tabbed-content > .tabbed-block").nth(0);
+             assert.equal(await discovery.locator('img[src*="THPT_G10_B10_COORDINATES_DIFFERENCE_D5_R01.svg"]').count(),1,
+               "B10 early coordinate picture must be in Discovery");
+             assert(await figure.evaluate(el=>{
+               const target=document.querySelector('[data-thpt-first-try-id="THPT-G10-CHIV-TRY16"]');
+               return Boolean(target&&(el.compareDocumentPosition(target)&Node.DOCUMENT_POSITION_FOLLOWING));
+             }),"B10 coordinate image must precede first learner attempt");
+           }else{
+             owningTab="Ví dụ";
+             assert(src.includes("THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg"),
+               "B10 exact-data 96m river D5 must replace unrelated 150m Written drawing");
+             const ex=modelB.locator(".tabbed-content > .tabbed-block").nth(2);
+             const captions=await ex.locator("figcaption").allTextContents();
+             assert(captions.some(t=>t.includes("Đọc hình theo đúng dữ kiện Ví dụ 4")&&
+               t.includes("96")&&t.includes("3")&&t.includes("5")),
+               "B10 river picture and worked example must share one 96m/3/5 dataset");
+           }
+           const expectedMobile=idx===0?
+             "THPT_G10_B10_COORDINATES_MOBILE_D5_R01.svg":
+             "THPT_G10_B10_RIVER_VELOCITY_MOBILE_D5_R01.svg";
+           const expectedDesktop=idx===0?
+             "THPT_G10_B10_COORDINATES_DIFFERENCE_D5_R01.svg":
+             "THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg";
+           const displayed=await figure.evaluate(el=>el.currentSrc);
+           assert(displayed.includes(width<=600?expectedMobile:expectedDesktop),
+             "B10 desktop/mobile diagram selection must match source geometry and viewport");
+         }
+         assert.equal(selected,owningTab,
+           "B"+item.lesson+" original D5 figure "+idx+" belongs to learner tab "+owningTab);
+         if(item.lesson===8){
+           assert.equal(await figures.count(),1,"B08 keeps exactly one original D5 figure");
+           assert(src.includes("THPT_G10_B08_TRIANGLE_PARALLELOGRAM_SUM_D5_R01.svg"),
+             "B08 Discovery retains exact original source-matched D5 SVG");
+         }
+       }
+       assert(await frame.isVisible(),"B"+item.lesson+" original SVG figure container "+idx+" must be visible in selected tab");
+       await frame.scrollIntoViewIfNeeded();
+       await figure.evaluate(async img=>{if(img.decode)await img.decode()});
+       const dims=await figure.evaluate(img=>({
+         loaded:img.complete&&img.naturalWidth>0,
+         img:img.getBoundingClientRect().width,
+         parent:img.parentElement.getBoundingClientRect().width
+       }));
+       assert(dims.loaded,"SVG asset failed to render B"+item.lesson+" figure "+idx+" @"+width);
+       assert(dims.img>0&&dims.parent>0&&dims.img<=dims.parent+2,
+         "Original SVG figure "+idx+" too wide or invisible B"+item.lesson+" @"+width);
+       measurements.push(dims);
+     }
+     const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth);
+     assert(overflow<=12,"Page horizontal overflow B"+item.lesson+" at "+width+": "+overflow);
+     assert.equal(measurements.length,await figures.count(),"Every source-locked SVG must be physically checked");
     }
    }finally{await page.close()}
   }

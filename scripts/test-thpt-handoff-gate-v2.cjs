@@ -47,37 +47,37 @@ function verifyBlob(value, file) {
   const actual = runGit("hash-object", "--", file);
   assert.equal(actual, value, "Source/receipt byte mismatch: " + file);
 }
-// Version follows the ONE actual normative source, not a hand-maintained
-// release-gate list. Grandfather ONLY previously effective historical versions.
-// Governance drafts (even when present in a PR checkout) are NOT active modes.
-const historicalVersions=["1.0.0","1.1.0","1.2.0","2.0.0","3.0.0","3.0.1"];
-function acceptedStandardVersions(overrideText) {
-  const raw=overrideText??fs.readFileSync(path.join(root,"prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md"),"utf8");
+// ONE normative Q01-Q18 source. A signed receipt keeps the version effective
+// when signed (PR #821 merged v3.1.0); it is never silently upgraded to v3.2.
+// New versions need exact owner/merge provenance, never a broad 'any v3.x' pass.
+// PR #899 (merged 2026-11-17 10:28Z, 6d9ae928876379a9c00e23a62c77504eb7a6d028)
+// made 3.2.0 effective. CI checks the actual PR BASE has that version, so a
+// draft cannot activate a not-yet-merged standard just by editing its status.
+const standardRel="prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md";
+const historicalVersions=Object.freeze(["1.0.0","1.1.0","1.2.0","2.0.0","3.0.0","3.0.1","3.1.0"]);
+const activationReceipts=Object.freeze({
+  "3.2.0":"OWNER_APPROVED_PR_899_MERGED_INTO_MAIN_20261117"
+});
+function acceptedStandardVersions(overrideText, baselineText) {
+  const raw=overrideText??fs.readFileSync(path.join(root,standardRel),"utf8");
   const id=raw.match(/^\*\*STANDARD_ID:\*\*\s*\x60([A-Za-z0-9-]+)\x60/m);
   const version=raw.match(/^\*\*VERSION:\*\*\s*\x60(\d+\.\d+\.\d+)\x60/m);
   const status=raw.match(/^\*\*STATUS:\*\*\s*\x60([A-Z0-9_]+)\x60/m);
+  const activation=raw.match(/\*\*ACTIVATION:\*\*\s*\x60([A-Z0-9_]+)\x60/);
   assert(id && id[1]==="SLM-THPT-QUALITY-ONE","Single normative standard identity missing or changed");
   assert(version&&status,"Canonical standard version/status missing");
-  const approved=status[1]==="OWNER_APPROVED_EFFECTIVE"; // Current candidate only, never an unmerged prospect.
-  // The canonical status/activation line also holds the *previous* effective standard when
-  // a newly approved amendment is still pending activation. Preserve that
-  // predecessor without granting early acceptance to the prospective version.
-  const predecessor=raw.match(/\*\*PREVIOUS_EFFECTIVE_STANDARD:\*\*\s*\x60(\d+\.\d+\.\d+)\s*\/\s*OWNER_APPROVED_EFFECTIVE\x60/m);
-  const lineageApproved=["OWNER_APPROVED_EFFECTIVE","OWNER_APPROVED_EFFECTIVE_AFTER_MERGE"].includes(status[1]);
-  const earlier=(a,b)=>{
-    const x=a.split(".").map(Number),y=b.split(".").map(Number);
-    return x.findIndex((n,i)=>n!==y[i])===-1?false:
-      (x[0]<y[0]||(x[0]===y[0]&&(x[1]<y[1]||(x[1]===y[1]&&x[2]<y[2]))));
-  };
-  const previousValid=lineageApproved&&predecessor&&earlier(predecessor[1],version[1]);
-  // PR #821 merged owner-effective v3.1.0 into main, while this old AUTHORING branch
-  // still carries pre-merge normative metadata v3.0.1. The actual runtime may accept
-  // that single verified historical version; self-test overrides MUST NOT bypass
-  // prospective/draft activation checks or authorize v3.2.0.
-  const previouslyMergedOnMain=overrideText===undefined?["3.1.0"]:[];
-  return [...new Set([...historicalVersions,...previouslyMergedOnMain,...(previousValid?[predecessor[1]]:[]),...(approved?[version[1]]:[])])];
+  const approved=status[1]==="OWNER_APPROVED_EFFECTIVE";
+  let currentIsMerged=false;
+  if(approved && Object.prototype.hasOwnProperty.call(activationReceipts,version[1])) {
+    const base=baselineText??(!overrideText && process.env.BASE_SHA
+      ?runGit("show",process.env.BASE_SHA+":"+standardRel)
+      :(!overrideText?raw:null));
+    const baseVersion=base?.match(/^\*\*VERSION:\*\*\s*\x60(\d+\.\d+\.\d+)\x60/m);
+    currentIsMerged=!!(activation && activation[1]===activationReceipts[version[1]] &&
+      baseVersion && baseVersion[1]===version[1]);
+  }
+  return [...historicalVersions,...(currentIsMerged?[version[1]]:[])];
 }
-
 
 // Owner decision 11/11/2026: a signed AUTHOR_SELF_VERIFIED Topic/SGK source
 // is audited via the SAME Q18; never call it an independent reviewer PASS.
@@ -93,7 +93,7 @@ function verifyQ18Mode(data,handoff,receipt,sourceBlob,lane) {
   if(self) {
     assert(["TOPIC","SGK_CHAPTER"].includes(lane),"Self-QA mode limited to SGK/Topic academic material");
     const selfVersion=field(data,"STANDARD_VERSION");
-    assert(["3.0.0","3.0.1","3.1.0"].includes(selfVersion) && acceptedStandardVersions().includes(selfVersion),
+    assert(/^3\.\d+\.\d+$/.test(selfVersion) && acceptedStandardVersions().includes(selfVersion),
       "Self QA requires owner-effective v3.x, not a prospective standard");
     assert.equal(field(handoff,"Q18_VERIFICATION_MODE"),mode,"Self QA mode mismatch");
     assert.equal(field(handoff,"ACADEMIC_VERDICT"),"SELF_VERIFIED","Never impersonate independent Academic PASS");
@@ -360,28 +360,22 @@ function verifyReadyManifest(rel, initialHandoff) {
 function selfTest() {
   assert.deepEqual(ids("## IDS\n- A\n- B\n", "IDS"), ["A","B"]);
   assert.equal(verifyLaneScope("LEARNING_PATH: SGK_CHAPTER\nRELEASE_SCOPE: FULL_LEARNING_PATH"), "SGK_CHAPTER");
-  const norm=(v,status)=>"**STANDARD_ID:** \x60SLM-THPT-QUALITY-ONE\x60\n**VERSION:** \x60"+v+"\x60\n**STATUS:** \x60"+status+"\x60";
-  assert(acceptedStandardVersions().includes("1.2.0"),"Current normative v1.2.0 must work");
-  assert(acceptedStandardVersions(norm("3.0.1","GOVERNANCE_PROPOSAL_OWNER_REVIEW_PENDING")).includes("3.0.1"),
-    "Previously merged v3.0.1 remains accepted for historical source-locked handoffs");
-  assert(!acceptedStandardVersions(norm("3.1.0","OWNER_APPROVED_SGK_EDITORIAL_STRUCTURE")).includes("3.1.0"),
-    "Approved Golden structure is NOT effective v3.1.0");
-  assert(!acceptedStandardVersions(norm("3.1.0","GOVERNANCE_PROPOSAL_OWNER_REVIEW_PENDING")).includes("3.1.0"),
-    "Governance draft must not become an accepted source version");
-  assert(acceptedStandardVersions(norm("3.1.0","OWNER_APPROVED_EFFECTIVE")).includes("3.1.0"),
-    "Only exact owner-effective status can activate v3.1.0");
-  const prospective32=norm("3.2.0","OWNER_APPROVED_EFFECTIVE_AFTER_MERGE")+
-    "\n**PREVIOUS_EFFECTIVE_STANDARD:** \x603.1.0 / OWNER_APPROVED_EFFECTIVE\x60";
-  assert(acceptedStandardVersions(prospective32).includes("3.1.0"),
-    "Explicit canonical previous effective 3.1 must remain accepted");
-  assert(!acceptedStandardVersions(prospective32).includes("3.2.0"),
-    "Current 3.2 must remain blocked until owner-effective activation");
-  assert(!acceptedStandardVersions(prospective32.replace("OWNER_APPROVED_EFFECTIVE_AFTER_MERGE","GOVERNANCE_PROPOSAL_OWNER_REVIEW_PENDING")).includes("3.1.0"),
-    "Unapproved governance draft cannot forge a previous-effective lineage");
-  assert(!acceptedStandardVersions(norm("3.2.0","OWNER_APPROVED_EFFECTIVE_AFTER_MERGE")+
-    "\n**PREVIOUS_EFFECTIVE_STANDARD:** \x603.2.0 / OWNER_APPROVED_EFFECTIVE\x60").includes("3.2.0"),
-    "A non-older predecessor must not activate a prospective version");
+  const norm=(v,status,activation)=>"**STANDARD_ID:** \x60SLM-THPT-QUALITY-ONE\x60\n**VERSION:** \x60"+v+"\x60\n**STATUS:** \x60"+status+"\x60"+(activation?"\n**ACTIVATION:** \x60"+activation+"\x60":"");
+  const mergedV32=norm("3.2.0","OWNER_APPROVED_EFFECTIVE","OWNER_APPROVED_PR_899_MERGED_INTO_MAIN_20261117");
+  const pendingV32=norm("3.2.0","OWNER_APPROVED_EFFECTIVE_AFTER_MERGE","AFTER_OWNER_APPROVED_B08_R04_PR_MERGE_INTO_MAIN");
+  assert(acceptedStandardVersions().includes("1.2.0"),"Effective historical v1.2.0 must be retained");
+  assert(acceptedStandardVersions().includes("3.1.0"),"Signed v3.1.0 remains valid after v3.2.0 merge");
+  assert(acceptedStandardVersions().includes("3.2.0"),"Merged owner-effective v3.2.0 must be active");
+  assert(acceptedStandardVersions(norm("3.0.1","GOVERNANCE_PROPOSAL_OWNER_REVIEW_PENDING")).includes("3.0.1"),"Historical v3.0.1 remains valid");
+  assert(acceptedStandardVersions(norm("3.1.0","GOVERNANCE_PROPOSAL_OWNER_REVIEW_PENDING")).includes("3.1.0"),"Historic signed 3.1.0 does not depend on new draft metadata");
+  assert(acceptedStandardVersions(mergedV32,mergedV32).includes("3.1.0"),"Old signed v3.1.0 receipts survive standard upgrade");
+  assert(acceptedStandardVersions(mergedV32,mergedV32).includes("3.2.0"),"3.2.0 activates when owner-approved and base already merged");
+  assert(!acceptedStandardVersions(pendingV32,mergedV32).includes("3.2.0"),"Pre-merge metadata must not activate 3.2.0");
+  assert(!acceptedStandardVersions(mergedV32,norm("3.1.0","OWNER_APPROVED_EFFECTIVE")).includes("3.2.0"),"Unmerged 3.2.0 draft must fail even if its metadata claims effective");
+  assert(!acceptedStandardVersions(norm("3.2.0","OWNER_APPROVED_EFFECTIVE","FAKE_ACTIVATION"),mergedV32).includes("3.2.0"),"Wrong merge receipt must not activate 3.2.0");
+  assert(!acceptedStandardVersions(norm("3.3.0","OWNER_APPROVED_EFFECTIVE","OWNER_APPROVED_PR_899_MERGED_INTO_MAIN_20261117"),mergedV32).includes("3.3.0"),"Unknown future v3.3.0 must fail closed");
   assert.throws(()=>acceptedStandardVersions(norm("3.0.1","OWNER_APPROVED_EFFECTIVE").replace("SLM-THPT-QUALITY-ONE","DIFFERENT-STANDARD")));
+
   assert.equal(verifyLaneScope("LEARNING_PATH: TOPIC\nRELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH"), "TOPIC");
   assert.throws(() => verifyLaneScope("LEARNING_PATH: TOPIC\nRELEASE_SCOPE: FULL_LEARNING_PATH"));
   assert.throws(() => verifyLaneScope("LEARNING_PATH: SGK_CHAPTER\nRELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH"));
@@ -421,6 +415,17 @@ function selfTest() {
     "PED_VERIFICATION: student flow audited","CANONICAL_Q15: deduplicated",
     "ASSESSMENT_Q16: private exam guarded","P0: 0","P1: 0","AUTHOR_SIGNOFF: accountable author"].join("\n");
   assert.equal(verifyQ18Mode(selfData,selfHandoff,evidence,sha,"TOPIC"),"AUTHOR_SELF_VERIFIED");
+  const selfV31=selfData.replace("STANDARD_VERSION: 3.0.0","STANDARD_VERSION: 3.1.0");
+  const receiptV31=evidence.replace("STANDARD_VERSION: 3.0.0","STANDARD_VERSION: 3.1.0");
+  assert.equal(verifyQ18Mode(selfV31,selfHandoff,receiptV31,sha,"TOPIC"),"AUTHOR_SELF_VERIFIED");
+  const selfV32=selfData.replace("STANDARD_VERSION: 3.0.0","STANDARD_VERSION: 3.2.0");
+  const receiptV32=evidence.replace("STANDARD_VERSION: 3.0.0","STANDARD_VERSION: 3.2.0");
+  assert.equal(verifyQ18Mode(selfV32,selfHandoff,receiptV32,sha,"TOPIC"),"AUTHOR_SELF_VERIFIED");
+  assert.throws(()=>verifyQ18Mode(selfV31,selfHandoff,evidence,sha,"TOPIC"),"Signed receipt must keep exact historical version");
+  assert.throws(()=>verifyQ18Mode(selfV31,selfHandoff,receiptV31.replace("ASSESSMENT_Q16: private exam guarded",""),sha,"TOPIC"),"Q16 cannot be bypassed");
+  assert.throws(()=>verifyQ18Mode(selfV31,selfHandoff,receiptV31.replace("CANONICAL_Q15: deduplicated",""),sha,"TOPIC"),"Q15 cannot be bypassed");
+  assert.throws(()=>verifyQ18Mode(selfV31,selfHandoff,receiptV31.replace("AUTHOR_SIGNOFF: accountable author",""),sha,"TOPIC"),"Unsigned receipt must fail");
+  assert.throws(()=>verifyQ18Mode(selfData.replace("STANDARD_VERSION: 3.0.0","STANDARD_VERSION: 3.3.0"),selfHandoff,evidence.replace("STANDARD_VERSION: 3.0.0","STANDARD_VERSION: 3.3.0"),sha,"TOPIC"),"Future Q18 must fail");
   const patchSelfData=selfData.replace("STANDARD_VERSION: 3.0.0","STANDARD_VERSION: 3.0.1");
   const patchSelfReceipt=evidence.replace("STANDARD_VERSION: 3.0.0","STANDARD_VERSION: 3.0.1");
   assert.equal(verifyQ18Mode(patchSelfData,selfHandoff,patchSelfReceipt,sha,"TOPIC"),"AUTHOR_SELF_VERIFIED");

@@ -1,5 +1,6 @@
 "use strict";
 const assert=require("node:assert/strict"),{chromium}=require("playwright");
+const {verifyModelBLesson}=require("./test-thpt-g10-model-b-browser-helper.cjs");
 (async()=>{
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
  try{
@@ -10,7 +11,8 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
     assert((await page.goto(base,{waitUntil:"domcontentloaded"}))?.ok());
     for(const n of [13,14]){
      assert((await page.goto(base+"bai-"+n+"/",{waitUntil:"domcontentloaded"}))?.ok(),"Lesson "+n);
-     assert.equal(await page.locator("[data-thpt-help-id]").count(),2);
+     if(!(await verifyModelBLesson(page,{n,chapter:"v",tries:5,helps:2,images:n===13?["THPT_G10_B13_QUARTILES_D5_R01.svg"]:["THPT_G10_B14_DISPERSION_D5_R01.svg"]}))){
+assert.equal(await page.locator("[data-thpt-help-id]").count(),2);
      assert.equal(await page.locator("h3").filter({hasText:/Ví dụ [123]/}).count(),3);
      const img=page.locator(".thpt-r4-probability-figure img");
      assert.equal(await img.count(),1);
@@ -20,7 +22,9 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
      assert(d.w<=d.p+2,"SVG overflow B"+n);
      await page.locator("[data-thpt-help-id] summary").first().click();
      assert(await page.locator("[data-thpt-help-id]").first().getAttribute("open")!==null);
-     const id="THPT-G10-B"+n+"-C01";
+     
+}
+const id="THPT-G10-B"+n+"-C01";
      const response=await page.goto(base+"luyen-tap/?item="+id,{waitUntil:"domcontentloaded"});
      assert(response?.ok(),"Practice "+id);
      const dlg=page.locator("dialog.thpt-r4-practice-dialog");
@@ -38,7 +42,12 @@ const assert=require("node:assert/strict"),{chromium}=require("playwright");
     assert.equal(await dialog.locator("[data-thpt-canonical-item]").first().getAttribute("data-thpt-canonical-item"),"THPT-G10-B13-P01");
     assert.equal(await dialog.locator('.thpt-r4-formative-choice-group input[type="radio"]').count(),0,"Short-form not forced into guessed MCQ");
     assert((await page.goto(base+"tu-kiem-tra-chuong/",{waitUntil:"domcontentloaded"}))?.ok());
-    assert(await page.getByText("chưa kích hoạt",{exact:false}).count()>0);
+    const self=page.locator('[data-g10-chapter-selfcheck="CHV"]');
+    await self.locator(".g10sc-progress").waitFor();
+    assert.equal(await self.locator("[data-g10sc-final]").count(),1,"CHV requires one public Final Submit");
+    assert.equal(await self.locator(".g10sc-review").count(),0,"CHV must conceal answers/rubric before Final Submit");
+    assert.equal(await page.locator("[data-thpt-secure-readiness]").count(),0,
+      "CHV public self-check must not activate private Readiness/Mastery");
     assert((await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth))<=20,"Chapter V demo overflow");
    }finally{await page.close()}
   }

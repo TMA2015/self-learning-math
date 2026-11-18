@@ -3,6 +3,7 @@
  * Ten First Tries share existing four canonical R01 HELP resources.
  */
 const assert=require("node:assert/strict"),{chromium}=require("playwright");
+const {verifyModelBLesson}=require("./test-thpt-g10-model-b-browser-helper.cjs");
 const root="http://127.0.0.1:8765/thpt-preview/sgk/chuong-ii/";
 (async()=>{
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
@@ -15,7 +16,20 @@ const root="http://127.0.0.1:8765/thpt-preview/sgk/chuong-ii/";
      const response=await page.goto(root+"bai-"+n+"/",{waitUntil:"networkidle",timeout:90000});
      assert(response?.ok(),"Missing G10 ChII B"+n);
      const article=page.locator("article.md-content__inner");
-     const first=article.locator('[data-thpt-first-try-id^="THPT-G10-CHII-TRY"]');
+     if(await verifyModelBLesson(page,{n,chapter:"ii",tries:5,helps:2,
+       images:n===3?["THPT_G10_B03_HALFPLANES_D5_R01.svg"]:["THPT_G10_B04_FEASIBLE_POLYGON_D5_R01.svg"]})){
+      const items=article.locator('[data-thpt-first-try-id^="THPT-G10-CHII-TRY"]');
+      assert.equal(await items.count(),5,"B"+n+" five canonical Q15 placements");
+      for(let k=0;k<5;k++){
+       const id="THPT-G10-CHII-TRY"+String(start+k).padStart(2,"0");
+       const it=items.nth(k);
+       assert.equal(await it.getAttribute("data-thpt-first-try-id"),id,"B"+n+" original Q15 ID/order");
+       const help=await it.getAttribute("data-thpt-help-ref");
+       assert(help&&await article.locator('[data-thpt-help-id="'+help+'"]').count()===1,
+         "B"+n+" unique original HELP mapping "+id);
+      }
+     }else{
+const first=article.locator('[data-thpt-first-try-id^="THPT-G10-CHII-TRY"]');
      const answers=article.locator("details.question");
      const help=article.locator('[data-thpt-help-id^="HELP-G10-B0"]');
      assert.equal(await first.count(),5,"Five distinct first tries B"+n);
@@ -35,6 +49,8 @@ const root="http://127.0.0.1:8765/thpt-preview/sgk/chuong-ii/";
       assert((await ans.innerText()).includes("Đáp án canonical")&&(await ans.innerText()).includes("Tự khắc phục"),"Approved solution/D6 review content "+id);
       await ans.locator("summary").click();
       assert(!(await detail.isVisible()),"Can close solution "+id);
+     }
+     
      }
      const text=await article.innerText();
      assert(!text.includes("??? question")&&!/NOTEBOOKLM_PENDING|CONTENT_READY|SCORING: UNSCORED/.test(text),"No authoring metadata/raw Markdown B"+n);

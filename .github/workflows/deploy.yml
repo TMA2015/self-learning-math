@@ -63,21 +63,43 @@ jobs:
       - name: Install dependencies
         run: pip install mkdocs-material
 
+      - name: Route G10 historical versus Q18 verified Model B candidate
+        id: g10_route
+        run: |
+          node scripts/test-thpt-q18-release-test-router.cjs --self-test
+          node scripts/test-thpt-q18-release-test-router.cjs
+      - name: Mandatory Model B source, mathematics, outcome-path and figure checks before production
+        if: steps.g10_route.outputs.candidate == 'true'
+        run: |
+          node scripts/test-ux795-g10-source-candidate-lock.cjs
+          node scripts/test-ux795-g10-chvi-ped-mapping.cjs
+          node scripts/test-ux795-g10-chvi-worked-math.cjs
+          node scripts/test-ux795-g10-figure-math.cjs
+          node scripts/test-thpt-shared-item-placement.cjs
+          node scripts/test-floating-ai-tutor-v1.js
+          node scripts/test-thpt-g10-reviewed-selfcheck-data.cjs
       - name: Validate THPT academic-to-release checklist before deploy
         run: node scripts/test-thpt-release-queue.cjs
       - name: Guard G10 ChV FULL R03 14 source-locked First Try before deploy
+        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-g10-chv-full-r03-release.cjs
       - name: Guard G10 ChVI FULL R04 19 PED placements, two reviewed public Written and no Mastery before deploy
+        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-g10-chvi-full-r04-release.cjs
       - name: Guard G10 ChVIII FULL R02 12 source-locked First Try/D6 and frozen 25+3+14 public banks before deploy
+        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-g10-chviii-full-r02-release.cjs
       - name: Guard G10 ChIX FULL R02 10 reviewed First Try/D6 and frozen public formative/Written/6 client Q16 before deploy
+        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-g10-chix-full-r02-release.cjs
       - name: Guard G10 ChII FULL R03 source locked 10 First Try, reuse four D6, original 14 Q16 before deploy
+        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-g10-chii-full-r03-release.cjs
       - name: Guard G10 ChVII FULL R03 25 source-locked First Try, 2 new Written/D5, no private RD1/Mastery before deploy
+        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-g10-chvii-full-r03-release.cjs
       - name: Guard G10 ChIV FULL R04 26 canonical First Try, corrected R01 D5 and 21 client-only Q16 before deploy
+        if: steps.g10_route.outputs.candidate != 'true'
         run: node scripts/test-thpt-g10-chiv-full-r04-release.cjs
       - name: Guard G12 ChVI source/receipt SHA, 56 public canonical and private RD1 Q16 boundary
         run: node scripts/test-thpt-g12-chvi-release-source.cjs
@@ -249,6 +271,7 @@ jobs:
           node scripts/test-skill-map-v2-i6b-public.js
 
       - name: Guard reviewed ChVII–VIII scoped formative release if explicitly approved
+        if: steps.g10_route.outputs.candidate != 'true'
         run: |
           node --check docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js
           node --check docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js
@@ -257,6 +280,7 @@ jobs:
           node scripts/test-thpt-g10-d6-release-integration.cjs
 
       - name: Guard scoped G10 ChIX public formative before authorized deploy
+        if: steps.g10_route.outputs.candidate != 'true'
         run: |
           node --check docs/assets/javascripts/thpt-chix-reviewed-formative-v1.js
           node scripts/test-thpt-g10-chix-reviewed-stage3.cjs
@@ -280,10 +304,15 @@ jobs:
       - name: Assemble tested single GitHub Pages website
         run: node scripts/assemble-thpt-site.cjs
 
+      - name: Q18 Model B final built-site verification, all 27 learner pages
+        if: steps.g10_route.outputs.candidate == 'true'
+        run: node scripts/test-ux795-g10-render-draft.cjs
       - name: Guard ChVI display math B15–B18
         run: |
           node scripts/test-thpt-chvi-math-block-render.cjs --built
-          node scripts/test-thpt-chvi-student-notes.cjs --built
+          if [[ "${{ steps.g10_route.outputs.candidate }}" != "true" ]]; then
+            node scripts/test-thpt-chvi-student-notes.cjs --built
+          fi
 
       - name: Validate CĐ25 built display math
         run: node scripts/test-topic25-math-render.js --built

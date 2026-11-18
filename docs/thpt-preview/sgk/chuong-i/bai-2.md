@@ -1,219 +1,287 @@
-# Bài 2. Tập hợp và các phép toán trên tập hợp
+# Toán 10 · Bài 2. Tập hợp và các phép toán trên tập hợp
 
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG I · KIẾN THỨC SGK KNTT</p>
 <p class="thpt-r4-lead">Học kiến thức, xem ví dụ và hình minh họa rồi tự luyện. Gợi ý/lời giải chỉ mở khi em chọn; không ghi điểm thành thạo.</p>
-<nav class="thpt-r4-lesson-tabs"><a href="../">Tổng quan chương</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav>
+
 </div>
 
-## Trước khi học — hiểu ý nghĩa trước khi nhớ quy tắc
+=== "Khám phá kiến thức"
 
-Em hãy đọc tình huống, nhớ lại kiến thức cũ và tự trả lời từng câu **Tự thử**. Chỉ mở lời giải sau khi tự làm. Sau đó tiếp tục với **Kiến thức SGK**, **Ví dụ** rồi **Core/Luyện tập**. Hoạt động này không chấm điểm hay ghi mức độ thành thạo.
+    ### 1.1. Tập hợp giúp ta xác định những đối tượng nào?
 
+    Em hãy tưởng tượng trên bàn có một chiếc hộp ghi chữ \(A\), trong hộp là hai tấm thẻ mang số **2** và **4**. Nếu một bạn hỏi “Số 2 có ở trong hộp \(A\) không?”, câu trả lời rất dễ: có. Trong toán học, ta gọi \(A=\{2,4\}\) là **một tập hợp**; số 2 và số 4 là **những phần tử** của tập đó. Ta viết \(2\in A\), đọc là “2 thuộc A”.
 
+    Bây giờ, em lấy riêng thẻ số 2 đặt vào chiếc hộp nhỏ \(B\). Hộp nhỏ ấy biểu diễn tập \(B=\{2\}\). Lúc này có hai đối tượng cần phân biệt: **số 2** là một phần tử, còn **\(\{2\}\)** là một tập hợp có đúng một phần tử. Vì mọi phần tử của \(B\) đều nằm trong \(A\), ta nói \(B\) là **tập con của \(A\)** và viết \(B\subseteq A\).
 
-### Phần tử, tập con và tập bằng nhau
+    <figure class="thpt-r4-plot thpt-r4-concept-figure">
+    <img src="../../../../assets/images/thpt/G10_B02_MEMBERSHIP_SUBSET_R01.svg" loading="lazy" alt="Tập A chứa số 2 và 4; tập B chỉ chứa số 2, nằm bên trong A; B là tập con của A nhưng không là phần tử của A">
+    <figcaption>Quan sát: cả hai số 2, 4 đều thuộc A; số 2 đồng thời thuộc B. Vì mọi phần tử của B đều thuộc A nên B là tập con của A. Riêng tập {2} không phải phần tử của A trong ví dụ này.</figcaption>
+    </figure>
 
-**Vì sao cần học?** Danh sách người tham gia và nhóm danh sách là hai loại đối tượng: nhầm một người với nhóm gồm người đó sẽ dẫn tới dùng sai ∈ và ⊆.
+    Cách nghĩ này giải thích vì sao \(2\in A\) và \(\{2\}\subseteq A\) đều đúng, nhưng \(\{2\}\in A\) lại sai **trong ví dụ đang xét**: hai phần tử của \(A\) là *các số* 2 và 4, không có phần tử nào là tập \(\{2\}\). Trong toán học, bản thân một tập cũng có thể là phần tử của một tập lớn hơn; điều quyết định là tập đó thực sự chứa **những đối tượng nào**.
 
-**Em đã biết gì?** Biết cách liệt kê tập hợp bằng ngoặc nhọn, một phần tử có thể là một số hoặc một tập.
+    Khi học phần này, em sẽ gặp cả trường hợp không có phần tử nào: đó là **tập rỗng** \(\varnothing\). Em cũng sẽ gặp những tập được viết theo một điều kiện, chẳng hạn tập các số tự nhiên nhỏ hơn 5, thay vì phải kể tên từng số. Nhờ vậy, tập hợp trở thành một cách ghi rõ **ta đang xét những đối tượng nào**.
 
-**Hiểu bản chất trước công thức** x∈A nói “x là một phần tử”; B⊆A nói “mọi phần tử của tập B có trong A”. Cùng ký hiệu số 2 không đồng nhất với tập {2}.
+    Tập hợp còn giúp trả lời những câu hỏi đời thường. Ví dụ, trong một lớp học có hai câu lạc bộ Toán và Tiếng Anh, có bạn chỉ tham gia một câu lạc bộ, có bạn tham gia cả hai, cũng có bạn không tham gia câu lạc bộ nào. Muốn đếm chính xác, ta cần phân biệt **phần chung**, **tất cả những người tham gia**, và **phần chỉ thuộc một nhóm**. Đó chính là ý tưởng đằng sau các phép giao, hợp và hiệu của tập hợp.
 
-**Quy tắc và điều kiện áp dụng** A⊆B ⇔ ∀x (x∈A⇒x∈B); A=B khi đồng thời A⊆B và B⊆A.
+    ### 1.2. Đọc hình và tìm phần chung
 
-**Vì sao làm theo cách này?** Đọc kiểu đối tượng hai vế của mỗi ký hiệu trước khi kiểm phần tử. Đừng suy {2}∈A chỉ từ 2∈A.
+    Cho \(A=\{2,4\}\) và \(B=\{2\}\). Ta đọc được ngay: \(2\in A\), \(B\subseteq A\), \(A\ne B\). Dù \(B\) nằm trong \(A\), hai tập không bằng nhau vì \(A\) còn chứa số 4.
 
-**Tự thử trước Core** Cho A={2,4}. Đánh giá ba phát biểu: (a) 2∈A; (b) {2}⊆A; (c) {2}∈A.
+    Với hai câu lạc bộ, giả sử An và Bình tham gia CLB Toán, Bình và Chi tham gia CLB Tiếng Anh. **Bạn Bình** thuộc cả hai nhóm nên nằm ở *phần giao*. Ba bạn An, Bình, Chi hợp lại là *phần hợp*; khi viết danh sách, Bình chỉ được ghi **một lần**, không phải hai.
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY06" markdown="1">
-<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+    ### 1.3. Thuật ngữ và mục tiêu bài học
 
-(a) **đúng** vì 2 là phần tử của A. (b) **đúng** vì phần tử duy nhất 2 của {2} nằm trong A. (c) **sai** vì A gồm hai phần tử là các số 2 và 4, không có phần tử là tập {2}.
+    **Thuật ngữ cần biết:** tập hợp, phần tử, tập con, tập bằng nhau, tập rỗng, giao, hợp, hiệu, phần bù, tập vũ trụ, khoảng, đoạn, nửa khoảng và sơ đồ Venn.
 
-</details>
+    **Sau bài học, em cần làm được:** đọc và viết đúng ký hiệu \(\in,\notin,\subseteq\); mô tả tập bằng cách liệt kê hoặc nêu điều kiện; thực hiện giao, hợp, hiệu, phần bù; đọc đầu mút trên trục số; và dùng sơ đồ Venn để đếm mà không trùng lặp.
 
-**Nếu chưa làm được:** Lẫn ∈ với ⊆. Ghi loại đối tượng từng vế rồi quay về phần hỗ trợ tự khắc phục ở cuối bài.
+=== "Kiến thức SGK"
 
-### Hợp và giao hai tập hợp
+    ### 2.1. Các khái niệm cơ bản về tập hợp
 
-**Vì sao cần học?** Hai câu lạc bộ có người tham gia trùng nhau; cộng tổng người của hai nhóm sẽ đếm lặp nếu không xác định phần giao.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Tập hợp và phần tử:</strong> Tập hợp là một nhóm các đối tượng xác định; mỗi đối tượng trong nhóm là một phần tử của tập. Thứ tự liệt kê và việc lặp một phần tử không làm thay đổi tập hợp.</div>
 
-**Em đã biết gì?** Biết cách liệt kê tập hữu hạn; “hoặc” trong tập hợp có nghĩa “ít nhất một”, có thể cả hai.
+    **Hai cách mô tả tập hợp.** Có thể **liệt kê** các phần tử, ví dụ \(A=\{2,4\}\), hoặc **nêu tính chất đặc trưng**, chẳng hạn \(C=\{x\in\mathbb N\mid x<5\}\). Theo SGK \(\mathbb N=\{0,1,2,\ldots\}\), nên \(C=\{0,1,2,3,4\}\). Luôn nêu đúng miền xét.
 
-**Hiểu bản chất trước công thức** Giao là nhóm chung; hợp là nhóm có mặt trong ít nhất một tập. Không đếm một phần tử hai lần khi viết hợp.
+    **Kí hiệu phần tử.** \(x\in A\) nghĩa là \(x\) thuộc tập \(A\); \(x\notin A\) nghĩa là \(x\) không thuộc \(A\).
 
-**Quy tắc và điều kiện áp dụng** A∩B={x|x∈A và x∈B}; A∪B={x|x∈A hoặc x∈B}.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Tập con:</strong> \(A\subseteq B\) khi <em>mọi</em> phần tử của \(A\) cũng thuộc \(B\). Mọi tập đều là tập con của chính nó.</div>
 
-**Vì sao làm theo cách này?** Lập phần chung trước, rồi hợp không lặp phần tử; dùng biểu đồ Venn để tự kiểm. Không suy giao là rỗng chỉ vì hai tập có tên khác nhau.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Hai tập hợp bằng nhau:</strong> \(A=B\) khi \(A\subseteq B\) và \(B\subseteq A\): hai tập chứa đúng cùng những phần tử.</div>
 
-**Tự thử trước Core** Cho A={a,b,c}, B={b,c,d}. Hãy viết A∩B, A∪B và số phần tử của mỗi tập kết quả.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Tập rỗng:</strong> \(\varnothing\) là tập không có phần tử nào; \(\varnothing\subseteq A\) với mọi tập \(A\).</div>
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY07" markdown="1">
-<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+    **Phân biệt.** \(2\in A\) nói về một phần tử; \(\{2\}\subseteq A\) nói về quan hệ giữa hai tập. Một tập có thể là phần tử của tập khác, nhưng phải kiểm các đối tượng thực sự được liệt kê.
 
-A∩B={b,c}, có 2 phần tử; A∪B={a,b,c,d}, có 4 phần tử, không đếm b,c hai lần.
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ:</strong> “Thuộc” (\(\in\)) dùng để nói về <em>phần tử</em>; “là tập con” (\(\subseteq\)) dùng để nói về <em>quan hệ giữa hai tập</em>. Hai tập bằng nhau phải có đúng các phần tử như nhau.</div>
 
-</details>
+    <div class="thpt-g10-table-scroll"><table class="thpt-g10-knowledge-table">
+    <thead><tr><th>Em muốn diễn đạt</th><th>Ký hiệu</th><th>Ví dụ đúng với \(A=\{2,4\}\)</th></tr></thead>
+    <tbody>
+    <tr><td>Một <strong>phần tử</strong> nằm trong tập</td><td>\(\in\)</td><td>\(2\in A\)</td></tr>
+    <tr><td>Một <strong>tập</strong> có toàn bộ phần tử thuộc tập khác</td><td>\(\subseteq\)</td><td>\(\{2\}\subseteq A\)</td></tr>
+    <tr><td>Một <strong>tập</strong> cũng là phần tử của tập lớn?</td><td>Phải kiểm phần tử thực tế</td><td>\(\{2\}\notin A\) trong ví dụ này</td></tr>
+    </tbody></table></div>
 
-**Nếu chưa làm được:** Ghi các phần tử b,c hai lần trong hợp. Phác hai vòng tròn có chồng lấn và quay về phần hỗ trợ tự khắc phục ở cuối bài.
+    **Vận dụng.** Với \(A=\{2,4\}\), hãy tự xét ba phát biểu: (a) \(2\in A\); (b) \(\{2\}\subseteq A\); (c) \(\{2\}\in A\). Nghĩ xem hai vế của ký hiệu đang nói về *số* hay *tập* trước khi mở đối chiếu.
 
-### Hiệu hai tập và chiều phép toán
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY06" hidden></span>
 
-**Vì sao cần học?** Khi lập danh sách chỉ thuộc nhóm A mà không thuộc B, việc lấy A trừ B khác với lấy B trừ A.
+    ??? question "Em đã suy nghĩ? Mở lời giải để đối chiếu"
 
-**Em đã biết gì?** Phân biệt phần riêng và phần giao của hai tập; biết duyệt từng phần tử.
+        (a) **Đúng** vì 2 là phần tử của A. (b) **Đúng** vì phần tử duy nhất 2 của \(\{2\}\) nằm trong A. (c) **Sai** vì A chỉ có hai phần tử là các **số** 2 và 4, không chứa tập \(\{2\}\) như một phần tử.
 
-**Hiểu bản chất trước công thức** A\B giữ lại phần của A ở ngoài B; đổi thứ tự hai tập sẽ đổi kết quả.
 
-**Quy tắc và điều kiện áp dụng** A\B={x|x∈A và x∉B}. Không có công thức A\B=B\A nói chung.
+    ### 2.2. Các tập hợp số
 
-**Vì sao làm theo cách này?** Lọc các phần tử thuộc tập đứng trước, loại những phần tử có ở tập đứng sau; kiểm một phần tử làm chứng nếu nghi hai hiệu bằng nhau.
+    #### 2.2.1. Mối quan hệ giữa các tập hợp số
 
-**Tự thử trước Core** A={1,2,3,4}, B={2,4,6}. Tính A\B và B\A. Hai tập kết quả có bằng nhau không?
+    Em đã gặp số tự nhiên, số nguyên, phân số và số thập phân. Khi học tập hợp, ta cần biết **một số thuộc những tập số nào**, không chỉ đọc được dạng viết của số đó.
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY08" markdown="1">
-<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Số tự nhiên và số nguyên:</strong> \(\mathbb N=\{0,1,2,3,\ldots\}\); \(\mathbb Z=\{\ldots,-2,-1,0,1,2,\ldots\}\) gồm các số nguyên âm, số \(0\) và các số nguyên dương.</div>
 
-A\B={1,3}; B\A={6}. **Không bằng nhau**, vì chẳng hạn 1 nằm trong A\B nhưng không nằm trong B\A.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Số hữu tỉ:</strong> \(\mathbb Q\) gồm những số viết được dưới dạng \(\dfrac ab\), với \(a,b\in\mathbb Z\), \(b\ne0\). Số hữu tỉ có dạng thập phân hữu hạn hoặc vô hạn tuần hoàn.</div>
 
-</details>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Số thực:</strong> \(\mathbb R\) gồm các số hữu tỉ và số vô tỉ. Số vô tỉ có biểu diễn thập phân vô hạn không tuần hoàn; \(\sqrt 2\) là một ví dụ.</div>
 
-**Nếu chưa làm được:** Cho rằng hiệu là phép giao hoặc luôn đổi chỗ được. Dùng bảng ba cột “chỉ A / cả hai / chỉ B” rồi phần hỗ trợ tự khắc phục ở cuối bài.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Kiến thức — Quan hệ bao hàm:</strong> \(\mathbb N\subseteq\mathbb Z\subseteq\mathbb Q\subseteq\mathbb R\). Số thuộc một tập bên trong thì cũng thuộc các tập bao ngoài, nhưng không suy ngược được.</div>
 
-### Phần bù phụ thuộc tập vũ trụ
+    <figure class="thpt-r4-plot thpt-r4-concept-figure">
+    <img src="../../../../assets/images/thpt/G10_B02_NUMBER_SETS_INCLUSION_S1_R01.svg" loading="lazy" alt="Các miền lồng nhau: N nằm trong Z, Z trong Q, Q trong R; ví dụ âm 3 thuộc Z nhưng không thuộc N, căn hai thuộc R nhưng không thuộc Q">
+    <figcaption>Đọc hình từ miền nhỏ ra miền lớn: \(\mathbb N\subseteq\mathbb Z\subseteq\mathbb Q\subseteq\mathbb R\). \(-3\in\mathbb Z\) nhưng \(-3\notin\mathbb N\), còn \(\sqrt2\in\mathbb R\) nhưng \(\sqrt2\notin\mathbb Q\). Kích thước các miền không biểu thị số lượng phần tử.</figcaption>
+    </figure>
 
-**Vì sao cần học?** Muốn hỏi ai “không thuộc A” thì phải biết đang xét toàn trường hay một lớp; cùng nhóm A có thể có phần bù khác nhau tùy tập vũ trụ.
+    **Cách tự kiểm.** Với \(\dfrac34\), hỏi trước: đây có phải số nguyên không? Nó có thể viết dưới dạng phân số của hai số nguyên không? Việc một số thuộc \(\mathbb R\) không có nghĩa số đó chắc chắn thuộc \(\mathbb Q\).
 
-**Em đã biết gì?** Biết hiệu hai tập, tập vũ trụ U là phạm vi đang xét và A⊆U.
+    #### 2.2.2. Khoảng, đoạn và nửa khoảng trên trục số
 
-**Hiểu bản chất trước công thức** Phần bù của A là mọi phần tử trong U nhưng không thuộc A, không phải tất cả đối tượng của thế giới bên ngoài U.
+    Khi tập hợp chứa vô số số thực, liệt kê từng số là không thể. Ta dùng **khoảng** hoặc **đoạn** để viết ngắn gọn. Ví dụ: \([1;4]\) là tất cả các số thực \(x\) thỏa \(1\le x\le4\); còn \((1;4)\) là những số thỏa \(1<x<4\).
 
-**Quy tắc và điều kiện áp dụng** Nếu A⊆U thì phần bù của A trong U là U\A.
+    - Ngoặc vuông **[ ]** tại một đầu mút nghĩa là **lấy** đầu mút đó.
+    - Ngoặc tròn **( )** nghĩa là **không lấy** đầu mút.
+    - \([a;b)\) chỉ lấy \(a\), không lấy \(b\); \((a;b]\) chỉ lấy \(b\).
+    - Khi có \(+\infty\) hoặc \(-\infty\), luôn dùng ngoặc tròn ở phía vô cực vì vô cực **không phải một số thực** để lấy làm đầu mút.
 
-**Vì sao làm theo cách này?** Ghi U rõ ràng, sau đó dùng phép hiệu. Nếu chưa cho U thì phải yêu cầu xác định miền thay vì tự bổ sung vô hạn phần tử.
+    Để tìm giao hoặc hợp hai khoảng, em hãy hình dung cả hai trên **cùng một trục số**. Giao là phần được tô ở cả hai tập; hợp là những điểm được tô ở ít nhất một tập. Cẩn thận kiểm riêng từng đầu mút: một sai khác giữa \(<\) và \(\le\) có thể làm kết quả thay đổi.
 
-**Tự thử trước Core** Với U={0,1,2,3,4,5} và A={1,3,5}, tìm phần bù của A trong U. Vì sao cần ghi U?
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ:</strong> Đừng chọn ngoặc bằng cảm giác. Tại mỗi đầu mút, hãy hỏi: “Giá trị này có thỏa điều kiện của tập kết quả không?”</div>
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY09" markdown="1">
-<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+    **Vận dụng.** Cho \(X=(-2;4]\), \(Y=[1;6)\). Tìm \(X\cap Y\), \(X\cup Y\); kiểm xem các số 1, 4 và 6 có thuộc từng kết quả không.
 
-U\A={0,2,4}. Cần U vì “không thuộc A” chỉ có nghĩa trong phạm vi được xét; thay U sẽ có thể thay phần bù.
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY10" hidden></span>
 
-</details>
+    ??? question "Mở đối chiếu sau khi tự làm"
 
-**Nếu chưa làm được:** Lấy phần bù ngoài U hoặc quên số 0. Đối chiếu D1 phần bù và phần hỗ trợ tự khắc phục ở cuối bài.
+        \(X\cap Y=[1;4]\), gồm 1 và 4 nhưng không có 6. \(X\cup Y=(-2;6)\), gồm 1 và 4 nhưng không có 6; cũng không có \(-2\).
 
-### Khoảng, đoạn, đầu mút mở/đóng
 
-**Vì sao cần học?** Một khoảng điều kiện x≥1 khác x>1 tại đúng giá trị 1; nếu không đánh dấu đầu mút sẽ loại nhầm nghiệm.
+    ### 2.3. Các phép toán trên tập hợp
 
-**Em đã biết gì?** Ôn bất đẳng thức x<a, x≤a, x>a, x≥a; biết trục số và phân biệt ≤ với <.
+    #### 2.3.1. Giao, hợp, hiệu và phần bù
 
-**Hiểu bản chất trước công thức** Giao giữ điểm thỏa đồng thời; hợp lấy điểm thỏa ít nhất một. Đầu mút được lấy nếu thỏa điều kiện của tập kết quả.
+    Hãy nhớ lại hai câu lạc bộ. Nếu hỏi “ai tham gia **cả hai** câu lạc bộ?”, ta lấy **giao**. Nếu hỏi “ai tham gia **ít nhất một** câu lạc bộ?”, ta lấy **hợp**. Nếu hỏi “ai chỉ thuộc nhóm Toán mà không thuộc nhóm Tiếng Anh?”, ta lấy **hiệu** theo đúng thứ tự hai tập.
 
-**Quy tắc và điều kiện áp dụng** [a,b] chứa cả hai đầu mút; (a,b) không chứa; nửa khoảng chứa đúng đầu có ngoặc vuông. ±∞ không là số thực để lấy làm đầu mút.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Giao:</strong> \(A\cap B\) gồm các phần tử thuộc <em>cả hai</em> tập \(A,B\).</div>
 
-**Vì sao làm theo cách này?** Vẽ hoặc tưởng tượng hai đoạn trục số. Kiểm giá trị x ở mỗi biên rồi viết ngoặc; không suy ra dấu ngoặc chỉ từ hình dạng chữ viết.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Hợp:</strong> \(A\cup B\) gồm các phần tử thuộc <em>ít nhất một</em> trong hai tập.</div>
 
-**Tự thử trước Core** Cho X=(-2,4] và Y=[1,6). Tìm X∩Y và X∪Y. Với mỗi kết quả, cho biết 1, 4 và 6 có thuộc hay không.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Hiệu:</strong> \(A\setminus B\) gồm các phần tử thuộc \(A\) nhưng không thuộc \(B\); không tự ý đảo chiều.</div>
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY10" markdown="1">
-<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+    **Viết bằng tính chất phần tử.** Với hai tập \(A,B\), ta có:
 
-X∩Y=[1,4], gồm 1 và 4 nhưng không có 6. X∪Y=(-2,6), gồm 1,4 nhưng không có 6 (cũng không có -2).
+    \[
+    A\cap B=\{x\mid x\in A\ \text{và}\ x\in B\},
+    \]
 
-</details>
+    \[
+    A\cup B=\{x\mid x\in A\ \text{hoặc}\ x\in B\},
+    \]
 
-**Nếu chưa làm được:** Viết (1,4) vì quên 1 hoặc 4 được nhận, hoặc viết (-2,6] vì tưởng 6 thuộc Y. Xem phần hỗ trợ tự khắc phục ở cuối bài và ví dụ tương ứng bên dưới.
+    \[
+    A\setminus B=\{x\mid x\in A\ \text{và}\ x\notin B\}.
+    \]
 
-### Đếm bốn miền sơ đồ Venn
+    Chữ **hoặc** trong phép hợp có nghĩa là *ít nhất một trong hai*, kể cả khi \(x\) thuộc cả hai tập. Phép hiệu không đổi chỗ được tùy ý: \(A\setminus B\) và \(B\setminus A\) có thể khác nhau.
 
-**Vì sao cần học?** Nếu hỏi có bao nhiêu bạn không vào hai câu lạc bộ, chỉ nhìn số đăng kí từng câu lạc bộ là chưa đủ vì một bạn có thể tham gia cả hai.
+    Một câu hỏi khác là “ai **không** thuộc nhóm \(A\)?”. Phải biết đang xét trong **cả lớp**, **cả trường** hay phạm vi khác. Gọi phạm vi đó là tập vũ trụ \(U\), với \(A\subseteq U\).
 
-**Em đã biết gì?** Nắm giao, hợp, hiệu và phần bù trong tập U là cả lớp; biết công thức trừ phần giao để không đếm trùng.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Phần bù:</strong> Khi \(A\subseteq U\), phần bù của \(A\) trong \(U\) là \(U\setminus A\), gồm các phần tử thuộc \(U\) nhưng không thuộc \(A\). Phải xác định rõ tập làm phạm vi.</div>
 
-**Hiểu bản chất trước công thức** Bốn miền không chồng lấn là: chỉ A, A∩B, chỉ B, ngoài cả hai; tổng bằng sĩ số lớp.
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ:</strong> Giao là “và”, hợp là “hoặc”, hiệu là “thuộc tập trước nhưng không thuộc tập sau”. Phần bù là hiệu so với một tập vũ trụ đã xác định.</div>
 
-**Quy tắc và điều kiện áp dụng** Với tập hữu hạn: |A∪B|=|A|+|B|−|A∩B|; số ngoài hai tập là |U|−|A∪B|.
+    **Vận dụng.** Cho \(A=\{a,b,c\}\), \(B=\{b,c,d\}\). Tự viết \(A\cap B\), \(A\cup B\) và đếm số phần tử của từng tập kết quả.
 
-**Vì sao làm theo cách này?** Đặt số phần giao vào giữa sơ đồ trước, trừ giao khỏi từng CLB, rồi lấy tổng 4 miền để kiểm lại. Hình R01 với 40 bạn là ví dụ khác; không tái dùng các số của hình cho bài 32 bạn.
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY07" hidden></span>
 
-**Tự thử trước Core** Một lớp có 32 học sinh; 18 bạn tham gia CLB Âm nhạc, 15 bạn tham gia CLB Thể thao và 6 bạn tham gia cả hai. Hãy tính số bạn chỉ tham gia mỗi CLB và số bạn không tham gia CLB nào.
+    ??? question "Mở đối chiếu sau khi tự làm"
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY11" markdown="1">
-<summary>Em đã tự thử? Mở lời giải để đối chiếu</summary>
+        \(A\cap B=\{b,c\}\), có 2 phần tử. \(A\cup B=\{a,b,c,d\}\), có 4 phần tử. Trong phép hợp, \(b,c\) chỉ được viết mỗi phần tử một lần.
 
-Chỉ Âm nhạc: 18−6=12; chỉ Thể thao: 15−6=9; tham gia ít nhất một CLB: 12+6+9=27; không tham gia CLB nào: 32−27=5. Bốn miền 12+6+9+5=32, khớp sĩ số.
 
-</details>
+    **Vận dụng.** Với \(A=\{1,2,3,4\}\), \(B=\{2,4,6\}\), em hãy tính \(A\setminus B\) và \(B\setminus A\). Kết quả có giống nhau không?
 
-**Nếu chưa làm được:** Đếm 6 bạn trong giao hai lần: 18+15=33>32. Điền giao trước rồi đối chiếu phần hỗ trợ tự khắc phục ở cuối bài/ví dụ tương ứng bên dưới.
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY08" hidden></span>
 
----
+    ??? question "Mở đối chiếu sau khi tự làm"
 
-## 1. Kiến thức SGK
+        \(A\setminus B=\{1,3\}\); \(B\setminus A=\{6\}\). Hai tập **khác nhau**. Chẳng hạn, 1 thuộc \(A\setminus B\) nhưng không thuộc \(B\setminus A\).
 
-### 1.1. Phần tử, tập hợp, tập con và tập bằng nhau
-- `x∈A` phát biểu x là phần tử của tập A. `A⊆B` khi **mọi** phần tử của A đều nằm trong B. Hai tập bằng nhau A=B khi A⊆B và B⊆A. Tập rỗng `∅` không có phần tử và là tập con của mọi tập.
-- Phải phân biệt `x∈A` (phần tử) với `A⊆B` (tập con); tập `{1}` và phần tử `1` là hai đối tượng khác nhau. Biểu diễn tập qua liệt kê hoặc tính chất đặc trưng kèm miền xét.
-### 1.2. Hợp, giao, hiệu và phần bù
-- `A∪B={x|x∈A hoặc x∈B}` (“hoặc” có thể đồng thời). `A∩B={x|x∈A và x∈B}`; `A\B={x∈A|x∉B}`. Nếu A⊆U, **phần bù** của A trong U là `U\A`; phải biết U để tính phần bù.
-- Với tập hữu hạn, `n(A∪B)=n(A)+n(B)−n(A∩B)`. Không cộng hai tập khi có phần chung mà không trừ giao.
-### 1.3. Khoảng, đoạn, nửa khoảng trên ℝ
-- `(a,b)`, `[a,b]`, `(a,b]`, `[a,b)` lần lượt biểu thị điều kiện nghiêm ngặt hoặc bao gồm đầu mút. Với vô cực luôn dùng ngoặc tròn; `(-∞,b]` có x≤b, `(a,+∞)` có x>a. Dùng trục số để xem hợp (một trong hai) và giao (cả hai).
-### 1.4. Ứng dụng — sơ đồ Venn
-- Đếm bốn miền **chỉ A**, **A∩B**, **chỉ B**, **ngoài cả hai**. Tổng bốn miền bằng số phần tử U. Đây là mô hình tập hợp; không suy năng lực xác suất, không nhầm số phần tử với điểm Mastery.
 
+    **Vận dụng.** Cho \(U=\{0,1,2,3,4,5\}\) và \(A=\{1,3,5\}\). Phần bù của \(A\) trong \(U\) là tập nào? Vì sao phải ghi rõ \(U\)?
 
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY09" hidden></span>
 
-## 2. Ví dụ
+    ??? question "Mở đối chiếu sau khi tự làm"
 
-**Ví dụ 01.** A={1,2,3,4}, B={3,4,5}. A∩B={3,4}; A∪B={1,2,3,4,5}; A\B={1,2}; B\A={5}. Nêu rõ hiệu không giao hoán.
+        \(U\setminus A=\{0,2,4\}\). Phải ghi U vì chỉ những phần tử trong **phạm vi U** mới được xét; nếu thay U, phần bù có thể thay đổi.
 
-**Ví dụ 02.** X=(-∞,3], Y=(1,+∞). X∩Y=(1,3], X∪Y=ℝ. Xét riêng 1 không thuộc Y và 3 thuộc cả hai.
 
-**Ví dụ 03.** Trong lớp 40 học sinh, 23 học Anh, 25 học Toán, 12 học cả hai: chỉ Anh=11, chỉ Toán=13, hợp=36, không học môn nào=4. Hình FIG-G10-B02-01 minh họa bốn miền.
+    #### 2.3.2. Biểu đồ Ven và cách đếm không trùng
 
-## 3. Hình minh họa và hỗ trợ tự khắc phục
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Biểu đồ Ven:</strong> Biểu đồ Ven dùng các miền hình để biểu diễn tập hợp và các phép toán. Với hai tập \(A,B\) trong \(U\), ta đọc bốn vùng: chỉ \(A\), cả \(A\) và \(B\), chỉ \(B\), ngoài cả hai. Một số vùng có thể rỗng.</div>
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B02_VENN_TWO_CLUBS_D5_R01.svg" loading="lazy" alt="Sơ đồ Venn bốn miền của 40 học sinh"><figcaption>Sơ đồ Venn minh họa cách tránh đếm trùng ở giao hai tập.</figcaption></figure>
+    **Đọc hình.** Nhìn vùng giao trước, sau đó đến hai vùng riêng và phần ngoài. Không suy từ diện tích hình vẽ ra số lượng phần tử; phải dùng số liệu đã cho.
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-B02-01">
-<summary>Nhầm phần tử và tập con</summary>
-<p><strong>Dấu hiệu:</strong> Viết 1⊆A thay vì 1∈A, hoặc cho rằng A=B khi chỉ kiểm một chiều A⊆B.</p>
-<p><strong>Bản chất:</strong> Một số là phần tử; một tập được so bằng quan hệ tập con. Để kết luận hai tập bằng nhau cần đủ hai chiều.</p>
-<p><strong>Tự sửa:</strong> Ghi loại đối tượng mỗi vế. Khi là tập, liệt kê phần tử; kiểm mọi phần tử A trong B và mọi phần tử B trong A.</p>
-<p><strong>Tiền đề:</strong> EX-G10-B02-01</p>
-<p><strong>Luyện lại:</strong> <a data-thpt-formative-id="THPT-G10-B02-C01" href="../luyen-tap/?item=THPT-G10-B02-C01">B02-C01</a> · <a data-thpt-formative-id="THPT-G10-B02-P06" href="../luyen-tap/?item=THPT-G10-B02-P06">B02-P06</a></p>
-</details>
+    Với hai tập hữu hạn, nếu cộng \(n(A)+n(B)\), mọi phần tử thuộc giao đã bị đếm **hai lần**. Vì vậy, muốn biết số phần tử của hợp, phải trừ đi một lần số phần tử ở giao:
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-B02-02">
-<summary>Nhầm giao, hợp, phần bù và đếm trùng</summary>
-<p><strong>Dấu hiệu:</strong> Khi có 12 người ở giao, cộng 23+25 không trừ; hoặc tìm U\A mà quên U.</p>
-<p><strong>Bản chất:</strong> Giao là “và”, hợp là “hoặc”; tổng hai tập đếm giao hai lần. Phần bù phụ thuộc tập vũ trụ.</p>
-<p><strong>Tự sửa:</strong> Vẽ bốn miền Venn; điền giao trước, trừ ra hai miền chỉ một tập, cuối cùng lấy tổng U trừ hợp. Với khoảng, tô đúng đầu mút và dùng giao/hợp.</p>
-<p><strong>Tiền đề:</strong> EX-G10-B02-03</p>
-<p><strong>Luyện lại:</strong> <a data-thpt-formative-id="THPT-G10-B02-C02" href="../luyen-tap/?item=THPT-G10-B02-C02">B02-C02</a> · <a data-thpt-formative-id="THPT-G10-B02-P02" href="../luyen-tap/?item=THPT-G10-B02-P02">B02-P02</a> · <a data-thpt-formative-id="THPT-G10-B02-P05" href="../luyen-tap/?item=THPT-G10-B02-P05">B02-P05</a></p>
-</details>
+    \[
+    n(A\cup B)=n(A)+n(B)-n(A\cap B).
+    \]
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G10-B02-03" markdown="1">
-<summary>Khi nhầm khoảng, đoạn và dấu ngoặc ở đầu mút</summary>
+    **Đọc hình bằng số liệu cụ thể.** Một lớp có 40 học sinh. Có 23 bạn học Tiếng Anh, 25 bạn học Toán, trong đó 12 bạn học cả hai. Trong hình, em tìm vùng chung ở chính giữa trước (12); vùng chỉ Anh là \(23-12=11\), vùng chỉ Toán là \(25-12=13\); vùng ngoài cả hai là \(40-(11+12+13)=4\).
 
-1. **Nhận biết dấu hiệu sai:** Em viết sai ngoặc ở 1,4 hoặc 6 khi tìm hợp/giao hai khoảng.
+    <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B02_VENN_TWO_CLUBS_D5_R01.svg" loading="lazy" alt="Sơ đồ Venn: lớp 40 học sinh gồm 11 chỉ học Tiếng Anh, 12 học cả hai, 13 chỉ học Toán và 4 không học môn nào"><figcaption>Sơ đồ Venn cho lớp 40 học sinh: đọc giao 12 ở giữa, rồi lần lượt xác định hai phần riêng 11 và 13, cuối cùng 4 học sinh ngoài cả hai. Hình ứng với đúng bài toán 40 học sinh này, không dùng cho dữ liệu khác.</figcaption></figure>
 
-2. **Nhớ lại tiền đề:** Hỏi “1 có thuộc X? thuộc Y?”; đọc đúng dấu ≤/< và ý nghĩa ngoặc vuông/tròn. Luôn tách từng điều kiện.
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ:</strong> Với sơ đồ Venn có hai tập, hãy điền <em>phần giao trước</em>, rồi tính phần riêng của mỗi tập, cuối cùng lấy phần ngoài từ tổng \(U\).</div>
 
-3. **Xem ví dụ đã duyệt:** Quay về Kiến thức SGK Bài 2 “Khoảng/đoạn/nửa khoảng” và Ví dụ 2 (X=(-∞,3], Y=(1,+∞)); giải thích vì sao 1 bị loại, 3 được lấy trong giao.
+    **Vận dụng.** Một lớp khác có 32 học sinh; 18 bạn tham gia CLB Âm nhạc, 15 bạn tham gia CLB Thể thao, 6 bạn tham gia cả hai. Hỏi chỉ tham gia từng CLB có bao nhiêu bạn, và không tham gia CLB nào có bao nhiêu bạn? **Không** dùng lại các số của hình 40 học sinh phía trên.
 
-4. **Tự sửa câu ngắn:** X=(-2,4], Y=[1,6). Thử từng giá trị -2,1,4,6 và xác định có ở hợp/giao; chỉ sau đó viết khoảng.
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHI-TRY11" hidden></span>
 
-5. **Quay lại & tự đối chiếu:** Làm lại câu Tự thử về khoảng/đoạn ở phía trên và hai item R01 các câu Core/Luyện tập về khoảng và đoạn, tự mở đối chiếu; không dùng kết quả làm Mastery hay xác nhận official Readiness.
+    ??? question "Mở đối chiếu sau khi tự làm"
 
-</details>
+        Chỉ Âm nhạc: \(18-6=12\); chỉ Thể thao: \(15-6=9\). Tham gia ít nhất một CLB: \(12+6+9=27\). Không tham gia CLB nào: \(32-27=5\). Kiểm tra \(12+6+9+5=32\).
 
-## 4. Tiếp tục học
 
-[Luyện tập Bài 2](luyen-tap.md) · [Tự luận Chương I](../../thu-vien/tu-luan-chuong-i.md)
+=== "Ví dụ"
 
-<p class="thpt-r4-footnote">Nguồn: SGK Toán 10 KNTT tập 1, Bài 2 trang 12–19; SBT Bài 2 trang 8–11. Học liệu tự luyện không dùng làm bài đánh giá độc lập.</p>
+    Các hoạt động “Vận dụng” phía trên giúp em tự kiểm từng bước. Mỗi ví dụ tiếp theo có **Phân tích** (nhận diện dữ kiện và hướng giải), **Lời giải** (thực hiện) và **Kiểm lại**.
+
+    ### 3.1. Ví dụ 1 — Giao, hợp, hiệu của hai tập hữu hạn
+
+    **Đề bài.** Cho \(A=\{1,2,3,4\}\), \(B=\{3,4,5\}\). Tìm \(A\cap B\), \(A\cup B\), \(A\setminus B\) và \(B\setminus A\).
+
+    **Phân tích.** Hai tập có ít phần tử và đã được liệt kê đầy đủ. Ta kiểm trực tiếp từng số, không cần lập công thức dài hay vẽ hình phức tạp.
+
+    **Lời giải.** Số 3 và 4 thuộc cả hai tập nên \(A\cap B=\{3,4\}\). Lấy tất cả các số xuất hiện ở ít nhất một tập, mỗi số ghi một lần, được \(A\cup B=\{1,2,3,4,5\}\). Bỏ 3,4 khỏi A còn \(A\setminus B=\{1,2\}\); bỏ 3,4 khỏi B còn \(B\setminus A=\{5\}\).
+
+    **Kiểm lại.** Hợp có 5 phần tử và \(n(A)+n(B)-n(A\cap B)=4+3-2=5\). Hai hiệu khác nhau như đã dự đoán.
+
+    ### 3.2. Ví dụ 2 — Phân loại số theo tập hợp số
+
+    **Đề bài.** Xét bốn số \(0\), \(-2\), \(\dfrac34\) và \(\sqrt 2\). Với mỗi số, hãy xác định tập nhỏ nhất trong bốn tập \(\mathbb N,\mathbb Z,\mathbb Q,\mathbb R\) chứa số đó.
+
+    **Phân tích.** Bắt đầu từ tập nhỏ nhất \(\mathbb N\) rồi kiểm lần lượt điều kiện của \(\mathbb Z\), \(\mathbb Q\) và \(\mathbb R\). Đừng nhầm “thuộc \(\mathbb R\)” với “chỉ thuộc \(\mathbb R\)”.
+
+    **Lời giải.** Số \(0\) là số tự nhiên nên tập nhỏ nhất là \(\mathbb N\). Số \(-2\) là số nguyên nhưng không phải số tự nhiên, nên tập nhỏ nhất là \(\mathbb Z\). Số \(\dfrac34\) là số hữu tỉ nhưng không phải số nguyên, nên tập nhỏ nhất là \(\mathbb Q\). Số \(\sqrt 2\) là số vô tỉ, nên tập nhỏ nhất là \(\mathbb R\).
+
+    **Kiểm lại.** \(\mathbb N\subseteq\mathbb Z\subseteq\mathbb Q\subseteq\mathbb R\). Mỗi số còn thuộc tất cả các tập bao ngoài tập nhỏ nhất đã nêu, không phải chỉ thuộc đúng một tập.
+
+    ### 3.3. Ví dụ 3 — Giao, hợp và hiệu của hai khoảng
+
+    **Đề bài.** Cho \(A=(-3;2]\), \(B=[0;5)\). Tìm \(A\cap B\), \(A\cup B\) và \(A\setminus B\).
+
+    **Phân tích.** Mỗi tập là một khoảng trên trục số, nên ta xác định phần **chồng lên nhau**, phần **được phủ bởi ít nhất một tập** và phần **chỉ còn lại trong A**. Quyết định lấy hay bỏ đầu mút sau khi kiểm điều kiện, không đoán qua dấu ngoặc.
+
+    **Lời giải.** Những số nằm đồng thời trong A và B là các số thỏa \(0\le x\le2\), nên \(A\cap B=[0;2]\). Vì hai khoảng có chung phần \([0;2]\), lấy tất cả phần thuộc ít nhất một khoảng cho \(A\cup B=(-3;5)\). Cuối cùng, từ A bỏ các số có trong B, tức bỏ đoạn \([0;2]\), ta còn \(A\setminus B=(-3;0)\).
+
+    **Kiểm lại.** Số \(0\) thuộc B nên **không** thuộc \(A\setminus B\). Số \(2\) nằm trong giao vì cả A và B đều chứa 2. Hai đầu mút \(-3\) và \(5\) đều không nằm trong hợp.
+
+    ### 3.4. Ví dụ 4 — Giải bài toán đếm bằng biểu đồ Ven
+
+    **Đề bài.** Một lớp có 36 học sinh. Có 21 bạn tham gia CLB Đọc sách, 20 bạn tham gia CLB Khoa học và 8 bạn tham gia cả hai. Hỏi bao nhiêu bạn tham gia đúng một câu lạc bộ và bao nhiêu bạn không tham gia câu lạc bộ nào?
+
+    **Phân tích.** Nếu cộng \(21+20\), tám bạn thuộc cả hai nhóm bị đếm hai lần. Ta tìm từng vùng riêng rồi lấy tổng sĩ số trừ phần tham gia ít nhất một nhóm. Đây là dữ kiện mới, không dùng kết quả của hình minh họa 40 học sinh.
+
+    **Lời giải.** Chỉ Đọc sách: \(21-8=13\) (bạn). Chỉ Khoa học: \(20-8=12\) (bạn). Tham gia đúng một CLB: \(13+12=25\) (bạn). Tham gia ít nhất một CLB: \(13+8+12=33\) (bạn). Không tham gia CLB nào: \(36-33=3\) (bạn).
+
+    **Kiểm lại.** Bốn vùng không chồng nhau có \(13+8+12+3=36\), đúng sĩ số lớp. Không dùng số liệu của hình minh họa 40 học sinh ở mục 2.3.2.
+
+=== "Lỗi thường gặp"
+
+    <span data-thpt-help-id="HELP-G10-B02-01" hidden></span>
+
+    ??? tip "4.1. Nhầm phần tử với tập con hoặc kết luận hai tập bằng nhau quá sớm"
+
+        **Dấu hiệu:** Viết \(1\subseteq A\) khi muốn nói số 1 thuộc A; hoặc mới kiểm \(A\subseteq B\) đã kết luận \(A=B\).
+
+        **Tự sửa:** Đọc lại ý nghĩa \(\in\) và \(\subseteq\) tại 2.1. Nếu hai vế là hai tập, muốn chứng minh bằng nhau phải kiểm **cả hai chiều** tập con.
+
+        **Luyện tiếp:** [Câu Core về tập hợp](luyen-tap.md?item=THPT-G10-B02-C01) · [Bài luyện về tập con](luyen-tap.md?item=THPT-G10-B02-P06).
+
+
+    <span data-thpt-help-id="HELP-G10-B02-02" hidden></span>
+
+    ??? tip "4.2. Nhầm giao với hợp, quên phần bù hoặc đếm một người hai lần"
+
+        **Dấu hiệu:** Lấy \(23+25=48\) làm số học sinh tham gia ít nhất một môn trong lớp 40 bạn; hoặc tìm phần bù mà chưa biết tập vũ trụ.
+
+        **Tự sửa:** Trở lại 2.3.1 và 2.3.2. Xác định nhóm chung trước, trừ giao đúng một lần, nêu rõ U trước khi tính phần bù. Kiểm tổng các vùng phải bằng số người được khảo sát.
+
+        **Luyện tiếp:** [Core giao/hợp](luyen-tap.md?item=THPT-G10-B02-C02) · [Luyện vận dụng](luyen-tap.md?item=THPT-G10-B02-P02) · [Đếm Venn](luyen-tap.md?item=THPT-G10-B02-P05).
+
+
+    <span data-thpt-help-id="HELP-G10-B02-03" hidden></span>
+
+    ??? tip "4.3. Sai ngoặc tròn/vuông ở đầu mút của khoảng và đoạn"
+
+        **Dấu hiệu:** Viết \((1;4)\) thay cho \([1;4]\), hoặc lấy \(6\) vào \((-2;6)\).
+
+        **Tự sửa:** Trở lại 2.2.2, chuyển từng khoảng thành điều kiện \(<,\le,>,\ge\). Kiểm riêng 1, 4, 6 trên từng tập trước khi viết ký hiệu khoảng. Sau đó làm lại câu “Vận dụng” tại 2.2.2 bằng cách tự mở đối chiếu.
+
+
+    **Tiếp tục tự học:** [Core và Luyện tập Chương I](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md) · [Tự luận Chương I](../../thu-vien/tu-luan-chuong-i.md).
+
+    <p class="thpt-r4-footnote">Đối chiếu SGK Toán 10 · Kết nối tri thức với cuộc sống · tập một · Bài 2 (trang in 12–19). Lời giảng, hình và ví dụ bổ trợ do SLM biên tập; hoạt động tự đối chiếu không ghi Mastery.</p>

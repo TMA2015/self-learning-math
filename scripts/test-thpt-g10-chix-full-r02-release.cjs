@@ -6,6 +6,7 @@
  * fingerprint original reviewed text after dropping only admin labels; no duplicate bank.
  */
 const fs=require("node:fs"),crypto=require("node:crypto"),path=require("node:path"),assert=require("node:assert/strict");
+const {expectedG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 const root=path.resolve(__dirname,".."),read=p=>fs.readFileSync(path.join(root,p),"utf8");
 const blob=p=>{const b=fs.readFileSync(path.join(root,p));return crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+b.length+"\0"),b])).digest("hex")};
 const fnv=t=>{let h=2166136261;for(let i=0;i<t.length;i++)h=Math.imul(h^t.charCodeAt(i),16777619)>>>0;return h.toString(16).padStart(8,"0")};
@@ -85,6 +86,36 @@ const original={26:"c469d19c6ba7db40d694c0590638c3832b0feaa0",27:"a47e8e149f3ee1
 const seen=[];
 for(const n of [26,27]){
  const name="docs/thpt-preview/sgk/chuong-ix/bai-"+n+".md",s=read(name);
+  // Model B: verified candidate Git blob + exact original canonical IDs and
+  // pedagogical outcome/D6 pairings. Historical comment-bound FNV below is
+  // retained for historical snapshots only.
+  const tabs=[...s.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]);
+  if(tabs.length){
+   assert.deepEqual(tabs,["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
+      "B"+n+" must have owner-approved four horizontal tabs");
+   assert.equal(blob(name),expectedG10KnowledgeBlob(n,original[n]),"B"+n+" candidate SHA");
+   const eligible=records.filter(x=>x.lesson===n);
+   const placements=[...s.matchAll(/data-outcome-id="([^"]+)" data-thpt-first-try-id="([^"]+)" hidden/g)]
+      .map(x=>({outcome:x[1],item:x[2]}));
+   assert.equal(placements.length,5,"B"+n+": five canonical First Try placements");
+   placements.forEach((item,i)=>{
+    const k=eligible[i];
+    assert.equal(item.item,k.id,"B"+n+": unchanged First Try item ID/order");
+    assert.equal(item.outcome,k.outcome,"B"+n+": unchanged pedagogic outcome");
+    assert(!seen.includes(k.id),"B"+n+": duplicate first try");seen.push(k.id);
+    const at=s.indexOf('data-thpt-first-try-id="'+k.id+'"');
+    const next=i+1<eligible.length?s.indexOf('data-thpt-first-try-id="'+eligible[i+1].id+'"',at+1):s.length;
+    assert(at>=0&&next>at&&/^\s*\?\?\? question "/m.test(s.slice(at,next)),
+      "B"+n+": First Try solution must remain collapsed "+k.id);
+    const ix=s.indexOf('data-thpt-help-id="'+k.help+'"');
+    assert(ix>=0 && /^\s*\?\?\? tip "/m.test(s.slice(ix,ix+700)),
+      "B"+n+": original D6 HELP not default-closed "+k.help);
+   });
+   assert.equal((s.match(/^    \?\?\? question "/gm)||[]).length,5,"B"+n+": five answer disclosures");
+   assert(!/data-thpt-readiness|data-mastery-credit|data-mastery-write/.test(s),
+      "B"+n+": prevent Readiness/Mastery in Knowledge");
+   continue;
+  }
  assert.equal((s.match(/<!-- G10_CHIX_FULL_R02_ALL_BEGIN -->/g)||[]).length,1);
  const old=s.replace(/<!-- G10_CHIX_FULL_R02_ALL_BEGIN -->[\s\S]*?<!-- G10_CHIX_FULL_R02_ALL_END -->\n\n/,"");
  const b=Buffer.from(old);

@@ -24,7 +24,13 @@ for(let n=23;n<=25;n++){
          (p===lesson.length||lesson.slice(p,p+2)==="\\n\\n"),
    "B"+n+" display TeX must have blank paragraphs for MkDocs MathJax");
  }
- assert(lesson.includes("## 1.")&&lesson.includes("## 3."),"Missing self-contained Knowledge/Examples B"+n);
+ const fourTabs=[...lesson.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]);
+ assert.deepEqual(fourTabs,["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
+  "B"+n+": standalone S1 Knowledge and worked examples must use four approved tabs");
+ const sections=lesson.split(/^=== "[^"]+"$/gm).slice(1);
+ assert(sections.length===4&&sections.every(section=>section.trim().length>450),
+  "B"+n+": all Knowledge, examples and remediation tabs must have meaningful material");
+ assert(!/^==== /m.test(lesson),"No phase-2 nested tabs B"+n);
  assert(lesson.includes("SGK")&&lesson.includes("SBT")&&lesson.includes("../luyen-tap/"));
  // Exact original scanned SGK/SBT printed-page citation guard, metadata only.
  const s1Pages={23:["60–65","51–53"],24:["66–71","54–55"],25:["72–75","56–57"]};

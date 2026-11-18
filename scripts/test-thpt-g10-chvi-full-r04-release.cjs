@@ -7,6 +7,7 @@
  * CHVI selfcheck = 18 historic + 2 reviewed client-only Written; no Mastery.
  */
 const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path"),crypto=require("node:crypto");
+const {expectedG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 const root=path.resolve(__dirname,".."),read=p=>fs.readFileSync(path.join(root,p),"utf8");
 const blob=p=>{const bytes=fs.readFileSync(path.join(root,p));return crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+bytes.length+"\0"),bytes])).digest("hex")};
 const fnv=s=>{let h=2166136261;for(let i=0;i<s.length;i++)h=Math.imul(h^s.charCodeAt(i),16777619)>>>0;return h.toString(16).padStart(8,"0")};
@@ -19,6 +20,41 @@ const lessons=[
 const ids=[];const marker=/<!-- G10_CHVI_R04_BEGIN:(B\d\d_OUT_\d\d) -->([\s\S]*?)<!-- G10_CHVI_R04_END:\1 -->\n\n/g;
 for(const lesson of lessons){
  const p="docs/thpt-preview/sgk/chuong-vi/bai-"+lesson.n+".md",s=read(p);
+  // Candidate Model B: the historical R04 comment blocks were converted
+  // into source-locked horizontal tabs and default-closed admonition folds.
+  // Check the same exact canonical item/outcome mapping; keep old tests below.
+  const tabs=[...s.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]);
+  if(tabs.length){
+   assert.deepEqual(tabs,["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
+     "B"+lesson.n+": four exact Model B Knowledge tabs");
+   assert.equal(blob(p),expectedG10KnowledgeBlob(lesson.n,lesson.old),
+     "B"+lesson.n+": immutable candidate ledger mismatch");
+   const placements=[...s.matchAll(/data-thpt-first-try-id="([^"]+)" data-outcome-id="([^"]+)"/g)]
+     .map(m=>({item:m[1],outcome:m[2]}));
+   assert.equal(placements.length,lesson.items.length,
+     "B"+lesson.n+": complete reviewed First Try placement count");
+   placements.forEach((rec,i)=>{
+    const label=lesson.items[i];
+    const expected=label==="B18-C01"?"THPT-G10-B18-C01":"THPT-G10-CHVI-"+label;
+    assert.equal(rec.item,expected,"B"+lesson.n+": original canonical First Try order");
+    assert.equal(rec.outcome,lesson.outcomes[i],"B"+lesson.n+": original pedagogic outcome binding");
+    const at=s.indexOf('data-thpt-first-try-id="'+expected+'"');
+    assert(/^\s*\?\?\? question "/m.test(s.slice(at,at+380)),"B"+lesson.n+": hidden First Try missing "+expected);
+    ids.push(expected);
+   });
+   const helps=[...s.matchAll(/data-thpt-help-id="(HELP-G10-CHVI-TRY\d\d)"/g)].map(m=>m[1]);
+   assert.equal(helps.length,lesson.items.length,"B"+lesson.n+": original D6 helpers preserved");
+   assert.equal(new Set(helps).size,helps.length,"B"+lesson.n+": duplicated D6 ID");
+   for(const h of helps){
+    const at=s.indexOf('data-thpt-help-id="'+h+'"');
+    assert(/^\s*\?\?\? tip "/m.test(s.slice(at,at+460)),"B"+lesson.n+": D6 remediation not closed "+h);
+   }
+   assert((s.match(/^    \?\?\? question "/gm)||[]).length>=placements.length,
+     "B"+lesson.n+": all first-attempt answers must be default-closed");
+   assert(!/data-thpt-readiness|data-mastery-credit|data-mastery-write/.test(s),
+     "B"+lesson.n+": do not leak official assessment/Mastery");
+   continue;
+  }
  const match=[...s.matchAll(marker)];
  assert.equal(match.length,lesson.items.length,"Per-subtopic reviewed placement count B"+lesson.n);
  assert.deepEqual(match.map(m=>m[1]),lesson.outcomes,"Follow authoring per-lesson insertion map B"+lesson.n);

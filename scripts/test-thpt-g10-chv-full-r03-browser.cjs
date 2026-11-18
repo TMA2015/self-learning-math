@@ -3,7 +3,8 @@
  * Reviewed PED 14 FIRST_TRY items are optional self-disclosure before unchanged
  * original R01/R02 SGK knowledge and existing canonical Core/Practice bank.
  */
-const assert=require("node:assert/strict"),{chromium}=require("playwright");
+const assert=require("node:assert/strict"),fs=require("node:fs"),{chromium}=require("playwright");
+const {verifyModelBLesson}=require("./test-thpt-g10-model-b-browser-helper.cjs");
 const base="http://127.0.0.1:8765/thpt-preview/sgk/chuong-v/";
 (async()=>{
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
@@ -11,10 +12,61 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/chuong-v/";
   for(const viewport of [{width:390,height:844},{width:820,height:1180},{width:1440,height:900}]){
    const page=await browser.newPage({viewport});
    try{
-    for(const {n,first,count}of [{n:12,first:1,count:4},{n:13,first:5,count:5},{n:14,first:10,count:5}]){
+    for(const {n,first,count}of [{n:12,first:1,count:5},{n:13,first:5,count:5},{n:14,first:10,count:5}]){
      const res=await page.goto(base+"bai-"+n+"/",{waitUntil:"networkidle",timeout:90000});
      assert(res?.ok(),"G10 ChV student Knowledge page missing B"+n);
-     const disc=page.locator('details.thpt-r4-pedagogical-note[data-thpt-first-try-id]');
+     if(await verifyModelBLesson(page,{n,chapter:"v",tries:count,helps:n===12?3:2,images:[
+       n===12?"THPT_G10_B12_ERROR_INTERVAL_D5_R02_REVIEWED.svg":
+       n===13?"THPT_G10_B13_QUARTILES_D5_R01.svg":"THPT_G10_B14_DISPERSION_D5_R01.svg"
+     ]})){
+      const article=page.locator("article.md-content__inner");
+      const ids=article.locator("[data-thpt-first-try-id]");
+      const actual=await ids.evaluateAll(nodes=>nodes.map(x=>x.getAttribute("data-thpt-first-try-id")));
+      const exact=Array.from({length:n===12?4:count},(_,i)=>
+       "THPT-G10-CHV-TRY"+String(first+i).padStart(2,"0"));
+      if(n===12)exact.push("THPT-G10-CHV-TRY-CALC-R01");
+      assert.deepEqual(actual,exact,
+       "B"+n+" original IDs unchanged, one independent calculator First Try appended");
+      const tab=article.locator(".tabbed-set").first().locator(".tabbed-labels label")
+        .filter({hasText:/^Khám phá kiến thức$/});
+      await tab.click();
+      const answers=article.locator("details.question");
+      assert.equal(await answers.count(),count,"B"+n+" one reviewed voluntary answer per First Try");
+      for(let k=0;k<count;k++){
+       const fold=answers.nth(k),content=fold.locator(".thpt-r4-first-try-answer");
+       if(n===12&&k===4){
+        assert.equal(await content.count(),0,
+         "B12 new calculator first try cannot be cloned from four old response blocks");
+        const title=(await fold.locator("summary").innerText()).trim();
+        assert(title.startsWith("Đối chiếu"),"B12 new calculator answer is opt-in");
+        assert(!(await fold.evaluate(x=>x.open)),"B12 new calculator result must start closed");
+        await fold.locator("summary").click();
+        assert(await fold.evaluate(x=>x.open),"B12 new calculator result opens only by user");
+        const t=await fold.innerText();
+        assert(t.includes("Vì sao")&&t.includes("Nếu nhầm"),
+         "B12 calculator answer needs WHY explanation and D6 recovery, not only key");
+        await fold.locator("mjx-container").first().waitFor({state:"attached",timeout:15000});
+        const markdown=fs.readFileSync("docs/thpt-preview/sgk/chuong-v/bai-12.md","utf8");
+        assert(markdown.includes("2{,}224")&&markdown.includes("2{,}223980090"),
+         "B12 exact source includes correct calculator rounded and unrounded values");
+        await fold.locator("summary").click();
+        assert(!(await fold.evaluate(x=>x.open)),"B12 calculator result recloses");
+        continue;
+       }
+       assert.equal(await content.count(),1,"B"+n+" original semantic answer block");
+       assert(!(await content.isVisible()),"B"+n+" no pre-reveal answer");
+       await fold.locator("summary").click();
+       assert(await content.isVisible(),"B"+n+" student can reveal original reasoning");
+       const s=await content.innerText();
+       assert(s.includes("Đối chiếu kết quả")&&s.includes("Giải thích vì sao"),
+         "B"+n+" original answered reasoning/correction not preserved");
+       const links=content.locator('a[href*="?item=THPT-G10-B"]');
+       assert.equal(await links.count(),1,"B"+n+" reviewed remediation deep link");
+       await fold.locator("summary").click();
+       assert(!(await content.isVisible()),"B"+n+" student can close original answer");
+      }
+     }else{
+const disc=page.locator('details.thpt-r4-pedagogical-note[data-thpt-first-try-id]');
      assert.equal(await disc.count(),count,"B"+n+" First Try count on real rendered DOM");
      assert.equal(await page.locator('details[data-thpt-first-try-id][open]').count(),0,"First Try answers must start closed B"+n);
      const head=await page.locator(".md-content h2").allTextContents();
@@ -42,6 +94,8 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/chuong-v/";
      await figure.scrollIntoViewIfNeeded();
      await figure.evaluate(async img=>{if(!img.complete)await new Promise((done,fail)=>{img.addEventListener("load",done,{once:true});img.addEventListener("error",fail,{once:true})});if(img.decode)await img.decode()});
      assert(await figure.evaluate(img=>img.naturalWidth>0),"Original source-locked D5 image must load B"+n);
+     
+     }
      const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);
      assert(overflow<=20,"Unexpected horizontal overflow B"+n+" @"+viewport.width+": "+overflow);
     }
@@ -49,7 +103,7 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/chuong-v/";
     assert(res?.ok(),"Protected G10 ChV self-check route still exists");
     assert.equal(await page.locator('[data-g10-chapter-selfcheck="CHV"]').count(),1);
     assert.equal(await page.locator("[data-thpt-first-try-id]").count(),0,"First Try not included in protected Final Submit");
-    console.log("PASS G10 ChV R03 learner browser "+viewport.width+"px: B12–B14, 14 hidden-first attempts, D6 same IDs, original D5, Q16 route.");
+    console.log("PASS G10 ChV candidate browser "+viewport.width+"px: B12 5 with distinct calculator / B13+B14 immutable 10, D5/D6, guarded Q16. INDEPENDENT_REVIEW_PENDING.");
    }finally{await page.close()}
   }
  }finally{await browser.close()}
