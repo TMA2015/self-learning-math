@@ -1,0 +1,322 @@
+# AUTHORING CĐ07/22 — Dãy số, CSC và CSN · HANDOFF V2 R01
+
+PACKET_ID: THPT-TOPIC07-SEQUENCES-AP-GP-FULL-R01
+HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
+STANDARD_ID: SLM-THPT-QUALITY-ONE
+STANDARD_VERSION: 3.1.0
+LEARNING_PATH: TOPIC
+RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
+Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic07-sequences/Temp_TOPIC07_SEQUENCES_AP_GP_FULL_PUBLIC_R01_20261112.md
+ACADEMIC_SOURCE_BLOB: 14174ab648c76f458881d0baf11413608968e3b5
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC07_SEQUENCES_R01_AUTHOR_SELF_QA_RECEIPT_20261112.md
+REVIEW_RECEIPT_BLOB: 52e67e991298140410559dcd00d5468038c54e71
+PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC07_SEQUENCES_NEW22_PUBLIC_CANONICAL_R01_20261112.md
+PUBLIC_CANONICAL_BANK_BLOB: 3bf3ab77d89497b39ae50ac54f71b81eccddc14c
+PUBLIC_ORIGINAL47_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC07_SEQUENCES_ORIGINAL47_SGK_CANONICAL_INDEX_R01_20261112.md
+PUBLIC_ORIGINAL47_INDEX_BLOB: 6500dc26b7ae21eb99b964f675023babdd881663
+ORIGINAL_CHII_SOURCE_BLOB: 2101e2a248e0cf53ee11847b913b937cebcd0806
+ORIGINAL_CHV_SOURCE_BLOB: 7934757ed06de4ae4b63dbc351ef524fc054e0d0
+CATALOG_TOPIC_ID: CD07
+RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
+ACADEMIC_VERDICT: SELF_VERIFIED
+PEDAGOGICAL_VERDICT: SELF_VERIFIED
+BLOCKERS: NONE
+ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
+OFFICIAL_READINESS: NOT_CLAIMED
+PRIVATE_RD1_COUNT: 0
+PRIVATE_RD1_SHA256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+MASTERY_ACTIVATION: NO
+RELEASE_AUTHORIZATION: NO
+
+**CĐ07 Topic độc lập** không phải Chương II SGK lặp lại. 18 outcomes, 47 old SGK canonical public references, 22 NEW public canonical (18 Practice +4 Written /7), 3 original SVG, two learning labs SPEC_ONLY, and 18 PUBLIC self-check reuse-only placements. No Topic Core, no independent official TOPIC_READINESS, no private RD1 imported.
+
+## LESSON_IDS
+
+- TOP07-M01
+- TOP07-M02
+- TOP07-M03
+- TOP07-M04
+- TOP07-M05
+- TOP07-M06
+- TOP07-M07
+- TOP07-M08
+- TOP07-M09
+- TOP07-M10
+- TOP07-M11
+- TOP07-M12
+- TOP07-M13
+- TOP07-M14
+- TOP07-M15
+- TOP07-M16
+- TOP07-M17
+- TOP07-M18
+
+## OUTCOME_IDS
+
+- TOP07-O01
+- TOP07-O02
+- TOP07-O03
+- TOP07-O04
+- TOP07-O05
+- TOP07-O06
+- TOP07-O07
+- TOP07-O08
+- TOP07-O09
+- TOP07-O10
+- TOP07-O11
+- TOP07-O12
+- TOP07-O13
+- TOP07-O14
+- TOP07-O15
+- TOP07-O16
+- TOP07-O17
+- TOP07-O18
+
+## PUBLIC_ITEM_IDS
+
+- THPT-G11-B05-C01
+- THPT-G11-B05-C02
+- THPT-G11-B05-C03
+- THPT-G11-B05-C04
+- THPT-G11-B05-P01
+- THPT-G11-B05-P02
+- THPT-G11-B05-P03
+- THPT-G11-B05-P04
+- THPT-G11-B05-P05
+- THPT-G11-B05-P06
+- THPT-G11-B05-P07
+- THPT-G11-B05-P08
+- THPT-G11-B06-C01
+- THPT-G11-B06-C02
+- THPT-G11-B06-C03
+- THPT-G11-B06-C04
+- THPT-G11-B06-P01
+- THPT-G11-B06-P02
+- THPT-G11-B06-P03
+- THPT-G11-B06-P04
+- THPT-G11-B06-P05
+- THPT-G11-B06-P06
+- THPT-G11-B06-P07
+- THPT-G11-B06-P08
+- THPT-G11-B07-C01
+- THPT-G11-B07-C02
+- THPT-G11-B07-C03
+- THPT-G11-B07-C04
+- THPT-G11-B07-P01
+- THPT-G11-B07-P02
+- THPT-G11-B07-P03
+- THPT-G11-B07-P04
+- THPT-G11-B07-P05
+- THPT-G11-B07-P06
+- THPT-G11-B07-P07
+- THPT-G11-B07-P08
+- THPT-G11-CHII-W05-01
+- THPT-G11-CHII-W05-02-ANCHOR
+- THPT-G11-CHII-W06-01
+- THPT-G11-CHII-W06-02-ANCHOR
+- THPT-G11-CHII-W07-01
+- THPT-G11-CHII-W07-02-ANCHOR
+- THPT-G11-CHV-B15-C03
+- THPT-G11-CHV-B15-P05
+- THPT-G11-CHV-B15-P06
+- THPT-G11-CHV-B15-P07
+- THPT-G11-CHV-B15-W02-ANCHOR
+- THPT-TOP07-P01
+- THPT-TOP07-P02
+- THPT-TOP07-P03
+- THPT-TOP07-P04
+- THPT-TOP07-P05
+- THPT-TOP07-P06
+- THPT-TOP07-P07
+- THPT-TOP07-P08
+- THPT-TOP07-P09
+- THPT-TOP07-P10
+- THPT-TOP07-P11
+- THPT-TOP07-P12
+- THPT-TOP07-P13
+- THPT-TOP07-P14
+- THPT-TOP07-P15
+- THPT-TOP07-P16
+- THPT-TOP07-P17
+- THPT-TOP07-P18
+- THPT-TOP07-W01
+- THPT-TOP07-W02
+- THPT-TOP07-W03
+- THPT-TOP07-W04
+
+## ITEM_OUTCOME_MATRIX
+
+Each item_id points to exactly one canonical question body/answer/rubric. Topic reuse role must not change SGK source. Public assessment placements are reuse only.
+
+| item_id | primary_outcome | role | source_type | status |
+|---|---|---|---|---|
+| `THPT-G11-B05-C01` | `TOP07-O01` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B05-C02` | `TOP07-O02` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B05-C03` | `TOP07-O03` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B05-C04` | `TOP07-O04` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B05-P01` | `TOP07-O02` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B05-P02` | `TOP07-O03` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B05-P03` | `TOP07-O04` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B05-P04` | `TOP07-O05` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B05-P05` | `TOP07-O01` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B05-P06` | `TOP07-O02` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B05-P07` | `TOP07-O03` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B05-P08` | `TOP07-O05` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B06-C01` | `TOP07-O06` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B06-C02` | `TOP07-O07` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B06-C03` | `TOP07-O09` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B06-C04` | `TOP07-O08` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B06-P01` | `TOP07-O07` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B06-P02` | `TOP07-O06` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B06-P03` | `TOP07-O09` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B06-P04` | `TOP07-O07` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B06-P05` | `TOP07-O08` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B06-P06` | `TOP07-O10` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B06-P07` | `TOP07-O09` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B06-P08` | `TOP07-O10` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B07-C01` | `TOP07-O11` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B07-C02` | `TOP07-O12` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B07-C03` | `TOP07-O14` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B07-C04` | `TOP07-O13` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B07-P01` | `TOP07-O11` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B07-P02` | `TOP07-O12` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B07-P03` | `TOP07-O14` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B07-P04` | `TOP07-O14` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B07-P05` | `TOP07-O13` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B07-P06` | `TOP07-O17` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B07-P07` | `TOP07-O11` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-B07-P08` | `TOP07-O17` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-CHII-W05-01` | `TOP07-O04` | `TOPIC_WRITTEN` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-CHII-W05-02-ANCHOR` | `TOP07-O03` | `TOPIC_WRITTEN` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-CHII-W06-01` | `TOP07-O09` | `TOPIC_WRITTEN` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-CHII-W06-02-ANCHOR` | `TOP07-O10` | `TOPIC_WRITTEN` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-CHII-W07-01` | `TOP07-O14` | `TOPIC_WRITTEN` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-CHII-W07-02-ANCHOR` | `TOP07-O17` | `TOPIC_WRITTEN` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-CHV-B15-C03` | `TOP07-O15` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-CHV-B15-P05` | `TOP07-O15` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-CHV-B15-P06` | `TOP07-O15` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-CHV-B15-P07` | `TOP07-O15` | `TOPIC_PRACTICE` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-G11-CHV-B15-W02-ANCHOR` | `TOP07-O15` | `TOPIC_WRITTEN` | SGK_CANONICAL_REUSE | PROPOSED_NOT_LIVE |
+| `THPT-TOP07-P01` | `TOP07-O01` | `TOPIC_PRACTICE` | TOPIC_NEW_CANDIDATE | PROPOSED_NOT_LIVE |
+| `THPT-TOP07-P02` | `TOP07-O02` | `TOPIC_PRACTICE` | TOPIC_NEW_CANDIDATE | PROPOSED_NOT_LIVE |
+| `THPT-TOP07-P03` | `TOP07-O03` | `TOPIC_PRACTICE` | TOPIC_NEW_CANDIDATE | PROPOSED_NOT_LIVE |
+| `THPT-TOP07-P04` | `TOP07-O04` | `TOPIC_PRACTICE` | TOPIC_NEW_CANDIDATE | PROPOSED_NOT_LIVE |
+| `THPT-TOP07-P05` | `TOP07-O05` | `TOPIC_PRACTICE` | TOPIC_NEW_CANDIDATE | PROPOSED_NOT_LIVE |
+| `THPT-TOP07-P06` | `TOP07-O06` | `TOPIC_PRACTICE` | TOPIC_NEW_CANDIDATE | PROPOSED_NOT_LIVE |
+| `THPT-TOP07-P07` | `TOP07-O07` | `TOPIC_PRACTICE` | TOPIC_NEW_CANDIDATE | PROPOSED_NOT_LIVE |
+| `THPT-TOP07-P08` | `TOP07-O08` | `TOPIC_PRACTICE` | TOPIC_NEW_CANDIDATE | PROPOSED_NOT_LIVE |
+| `THPT-TOP07-P09` | `TOP07-O09` | `TOPIC_PRACTICE` | TOPIC_NEW_CANDIDATE | PROPOSED_NOT_LIVE |
+| `THPT-TOP07-P10` | `TOP07-O10` | `TOPIC_PRACTICE` | TOPIC_NEW_CANDIDATE | PROPOSED_NOT_LIVE |
+| `THPT-TOP07-P11` | `TOP07-O11` | `TOPIC_PRACTICE` | TOPIC_NEW_CANDIDATE | PROPOSED_NOT_LIVE |
+| `THPT-TOP07-P12` | `TOP07-O12` | `TOPIC_PRACTICE` | TOPIC_NEW_CANDIDATE | PROPOSED_NOT_LIVE |
+| `THPT-TOP07-P13` | `TOP07-O13` | `TOPIC_PRACTICE` | TOPIC_NEW_CANDIDATE | PROPOSED_NOT_LIVE |
+| `THPT-TOP07-P14` | `TOP07-O14` | `TOPIC_PRACTICE` | TOPIC_NEW_CANDIDATE | PROPOSED_NOT_LIVE |
+| `THPT-TOP07-P15` | `TOP07-O15` | `TOPIC_PRACTICE` | TOPIC_NEW_CANDIDATE | PROPOSED_NOT_LIVE |
+| `THPT-TOP07-P16` | `TOP07-O16` | `TOPIC_PRACTICE` | TOPIC_NEW_CANDIDATE | PROPOSED_NOT_LIVE |
+| `THPT-TOP07-P17` | `TOP07-O17` | `TOPIC_PRACTICE` | TOPIC_NEW_CANDIDATE | PROPOSED_NOT_LIVE |
+| `THPT-TOP07-P18` | `TOP07-O18` | `TOPIC_PRACTICE` | TOPIC_NEW_CANDIDATE | PROPOSED_NOT_LIVE |
+| `THPT-TOP07-W01` | `TOP07-O03` | `TOPIC_WRITTEN` | TOPIC_NEW_CANDIDATE | PROPOSED_NOT_LIVE |
+| `THPT-TOP07-W02` | `TOP07-O09` | `TOPIC_WRITTEN` | TOPIC_NEW_CANDIDATE | PROPOSED_NOT_LIVE |
+| `THPT-TOP07-W03` | `TOP07-O15` | `TOPIC_WRITTEN` | TOPIC_NEW_CANDIDATE | PROPOSED_NOT_LIVE |
+| `THPT-TOP07-W04` | `TOP07-O18` | `TOPIC_WRITTEN` | TOPIC_NEW_CANDIDATE | PROPOSED_NOT_LIVE |
+
+## SELF_CHECK_PUBLIC_PLACEMENTS
+
+Exactly 18 public placements, each references a NEW Practice ID already accessible in the learning path, not 18 unseen items.
+
+| outcome_id | reused_public_item_id | assessment_mode |
+|---|---|---|
+| TOP07-O01 | THPT-TOP07-P01 | CLIENT_SELF_CHECK_NO_MASTERY |
+| TOP07-O02 | THPT-TOP07-P02 | CLIENT_SELF_CHECK_NO_MASTERY |
+| TOP07-O03 | THPT-TOP07-P03 | CLIENT_SELF_CHECK_NO_MASTERY |
+| TOP07-O04 | THPT-TOP07-P04 | CLIENT_SELF_CHECK_NO_MASTERY |
+| TOP07-O05 | THPT-TOP07-P05 | CLIENT_SELF_CHECK_NO_MASTERY |
+| TOP07-O06 | THPT-TOP07-P06 | CLIENT_SELF_CHECK_NO_MASTERY |
+| TOP07-O07 | THPT-TOP07-P07 | CLIENT_SELF_CHECK_NO_MASTERY |
+| TOP07-O08 | THPT-TOP07-P08 | CLIENT_SELF_CHECK_NO_MASTERY |
+| TOP07-O09 | THPT-TOP07-P09 | CLIENT_SELF_CHECK_NO_MASTERY |
+| TOP07-O10 | THPT-TOP07-P10 | CLIENT_SELF_CHECK_NO_MASTERY |
+| TOP07-O11 | THPT-TOP07-P11 | CLIENT_SELF_CHECK_NO_MASTERY |
+| TOP07-O12 | THPT-TOP07-P12 | CLIENT_SELF_CHECK_NO_MASTERY |
+| TOP07-O13 | THPT-TOP07-P13 | CLIENT_SELF_CHECK_NO_MASTERY |
+| TOP07-O14 | THPT-TOP07-P14 | CLIENT_SELF_CHECK_NO_MASTERY |
+| TOP07-O15 | THPT-TOP07-P15 | CLIENT_SELF_CHECK_NO_MASTERY |
+| TOP07-O16 | THPT-TOP07-P16 | CLIENT_SELF_CHECK_NO_MASTERY |
+| TOP07-O17 | THPT-TOP07-P17 | CLIENT_SELF_CHECK_NO_MASTERY |
+| TOP07-O18 | THPT-TOP07-P18 | CLIENT_SELF_CHECK_NO_MASTERY |
+
+## QUALITY_Q01_Q18_EVIDENCE
+
+Same normative source: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md` v3.1.0; all Q01–Q18 are within one standard, not a new Topic academic rubric.
+
+| Q | SOURCE scope | AUTHORING verification | RELEASE boundary | source custody |
+|---|---|---|---|---|
+| Q01 | S1 KNTT ChII and ChV B15 printed verified historical receipt, Topic extension labelled | AUTHOR_QA_PASS: Direct source receipt and metadata | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_BLOB_14174A_RECEIPT_52E67E |
+| Q02 | 18 independent Topic outcomes / 69 unique PUBLIC item mappings | AUTHOR_QA_PASS: Per-outcome matrix and 18 modules | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_BLOB_14174A_RECEIPT_52E67E |
+| Q03 | D1 theory, domain of integer n, d/q/r and exceptional cases | AUTHOR_QA_PASS: Module concept and assumptions | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_BLOB_14174A_RECEIPT_52E67E |
+| Q04 | D2 reasoned worked methods for 18 outcomes | AUTHOR_QA_PASS: Each worked example before first try | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_BLOB_14174A_RECEIPT_52E67E |
+| Q05 | D3 47 old references and 18 new Practice | AUTHOR_QA_PASS: Different item families with answers | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_BLOB_14174A_RECEIPT_52E67E |
+| Q06 | D4 4 Written original rubrics seven points each | AUTHOR_QA_PASS: Single new-bank source | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_BLOB_14174A_RECEIPT_52E67E |
+| Q07 | D5 3 SVG explained / 2 labs SPEC_ONLY | AUTHOR_QA_PASS: No fabricated interaction QA | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_BLOB_14174A_RECEIPT_52E67E |
+| Q08 | D6 18 error-remediation routes | AUTHOR_QA_PASS: Returning to prerequisite and exercise | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_BLOB_14174A_RECEIPT_52E67E |
+| Q09 | PED1 motivation each module | AUTHOR_QA_PASS: WHY sequence/index/AP/GP/finance | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_BLOB_14174A_RECEIPT_52E67E |
+| Q10 | PED2 prerequisites each module | AUTHOR_QA_PASS: Integer indexing, inequalities, powers | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_BLOB_14174A_RECEIPT_52E67E |
+| Q11 | PED3 meaning before formula | AUTHOR_QA_PASS: Repeated differences versus ratios | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_BLOB_14174A_RECEIPT_52E67E |
+| Q12 | PED4 diagram reading guidance | AUTHOR_QA_PASS: Discrete graph / growth / timeline | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_BLOB_14174A_RECEIPT_52E67E |
+| Q13 | PED5 reason for method and limitations | AUTHOR_QA_PASS: q equals zero or one, abs(q) below 1, r equals zero | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_BLOB_14174A_RECEIPT_52E67E |
+| Q14 | PED6 first try then voluntary compare + D6 | AUTHOR_QA_PASS: 18 self-guided checks | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_BLOB_14174A_RECEIPT_52E67E |
+| Q15 | Q15 exact 69 unique original+new, no clone | AUTHOR_QA_PASS: 47 references +22 new canonical | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_BLOB_14174A_RECEIPT_52E67E |
+| Q16 | Q16 protected private absence / public replay self-check | AUTHOR_QA_PASS: No official RD1 or Mastery | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_BLOB_14174A_RECEIPT_52E67E |
+| Q17 | Q17 independent 3-page Topic route | AUTHOR_QA_PASS: No Topic Core or mandatory SGK link | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_BLOB_14174A_RECEIPT_52E67E |
+| Q18 | Q18 author signed source lock + 49 checks | AUTHOR_QA_PASS: Source SHA + receipt SHA | RELEASE_GATE_SEPARATE_NOT_CERTIFIED | SOURCE_BLOB_14174A_RECEIPT_52E67E |
+
+## S1_SGK_SBT_SOURCE
+
+- SGK KNTT Toán11 Tập1 ChII: B05 Dãy số printed 42–47; B06 CSC 48–51; B07 CSN 52–55; cuối ChII 56–57. SGK ChV B15 Giới hạn dãy số printed 104–110; tổng cấp số nhân lùi vô hạn thuộc nguồn giới hạn, không dạy toàn CĐ08.
+- SBT KNTT Tập1 ChII B05 printed31–34/PDF1 32–35, B06 35–36/PDF1 36–37, B07 37–39/PDF1 38–40, cuối ChII 40–43/PDF1 41–44; ChV B15 SBT printed75–78. Nguồn historic publisher SBT PDF SHA256 fb5292103e5b682531ce37b5f30598393bba81b2943da9c1a374fdeb56557229; biên nhận Git `955efc35bce6a34f09bfc68f5552cb5a65d971b1`. Lượt này không tuyên bố ảnh SGK/SBT được quét lại.
+- Original 42 public canonical from ChII R03 Git blob `2101e2a248e0cf53ee11847b913b937cebcd0806` and 5 ChV B15 from `7934757ed06de4ae4b63dbc351ef524fc054e0d0`. Historical independent source review remains on corresponding old snapshots only. Topic model savings and installments are original enrichment, not new SGK Core.
+
+## D1_D6_EVIDENCE
+
+- D1: 18 concept-first outcomes cover finite/infinite index domains, explicit/recurrence, monotonicity, boundedness, AP differences/reconstruction/sum, GP q signs and zero/reverse/sum, |q|<1 and model timing, with conditions stated.
+- D2: 18 worked examples include why choose difference vs ratio, n−1 vs n, induction, inverse index, sum formula, signed/zero q, strict inequalities and future/present finance values.
+- D3: 47 unchanged original SGK canonical references +18 new Practice; stem/key/solution not cloned. Outcome families include both routine and transfer, with original source roles not silently rewritten.
+- D4: Four original deep Written items with unique canonical ID and 7-step rubrics: recurrence proof, AP inverse/sum, GP infinite error, cash-flow modeling; Anchor is a label of the same Written.
+- D5: Three accessible original SVG (discrete sequence, AP–GP comparison and end-period cash flow), two interaction labs SPEC_ONLY, no website feature claim.
+- D6: 18 error-specific return routes; mistakes include dividing by q=0, q²→±q, misusing q=1 formula, assuming |q|=1 converges, deposit timing/loan residual.
+
+## PED1_PED6_EVIDENCE
+
+- PED1_MOTIVATION: each module starts from why indexed quantities and repeated operations matter.
+- PED2_PREREQUISITES: integer n, real inequalities, algebra, powers and percentage locally recalled.
+- PED3_MEANING_FIRST: repeated add → CSC, repeated multiply → CSN, visual/discrete before nth or sum formulas.
+- PED4_EXPLAINED_VISUAL: D5 3 SVG titles/descriptions and reading guidance, axes, endpoints and units.
+- PED5_REASONED_EXAMPLES: formulas selected with rationale, guards q=0/1, |q|<1, rate r, timeline endpoints.
+- PED6_FIRST_TRY_REMEDIATION: 18 first tries, answers only self-opened after attempt, same-outcome D6; no site AI/pre-submit assessment claim.
+
+## AUTHORING_A1_A7
+
+- [x] A1_SOURCE_SNAPSHOT — learner source blob `14174ab648c76f458881d0baf11413608968e3b5`, original47 index `6500dc26b7ae21eb99b964f675023babdd881663`, NEW22 bank `3bf3ab77d89497b39ae50ac54f71b81eccddc14c`, Q18 receipt `52e67e991298140410559dcd00d5468038c54e71` all GitHub read-back.
+- [x] A2_SGK_SBT_SCOPE — actual historical first-party publisher S1 and printed-page receipts; no fabricated PDF index, no Topic finance mislabelled SGK Core.
+- [x] A3_Q18_PROVENANCE — Q18 `AUTHOR_SELF_VERIFIED` v3.1.0 on NEW Topic source, 49/49 direct checks, no invented reviewer PASS. Old SGK independent receipts bound to original SHA.
+- [x] A4_ITEM_OUTCOME_IDS — exactly 18 lessons/outcomes and 69 public unique canonical IDs; one compact matrix with 47 original reuse and 22 new; 18 self-check placements are not new IDs.
+- [x] A5_D1_D6_SCOPE — full self-contained Knowledge, Practice, Self-check, 18 WHY/examples/first tries/D6, four Written /7, three SVG.
+- [x] A6_DELTA_RESOLVED — new Topic is DELTA_C self-verified; original independent source untouched; no known P0/P1 author blockers.
+- [x] A7_PUBLIC_PRIVATE_BOUNDARY — no private RD1 imported, no Mastery or independent readiness; Final Submit negative QA is RELEASE.
+
+## DELTA_LEDGER
+
+- `DELTA_C_ACADEMIC_MATERIAL`: new CĐ07 full Topic content and original exercises. Self-authored academic/PED QA under v3.1.0, not a new NotebookLM verdict.
+- `DELTA_B_SOURCE_EQUIVALENT`: historical G11 ChII/ChV SBT page metadata corrections already in archived sources, unchanged here. No re-review or mutation of original academic source.
+- No runtime, Firebase, Golden UI, existing learner progress/Readiness, Gemini, SGK site files, independent RD1 question bytes.
+
+## PRIVATE_RD1_CUSTODY_METADATA
+
+0 held-out private items imported. For any future official independent TOPIC_READINESS, a separate bank must be **owner-held only** and **NOT on GitHub**; this handoff has none. `PRIVATE_RD1_SHA256` here is the SHA256 of an empty payload sentinel, NOT hash evidence of any owner-protected exam. Public 18-item self-check is a replay of visible Practice, `CLIENT_SELF_CHECK_NO_MASTERY`; no official Skill Mastery writes.
+
+## RELEASE_AND_OWNER_GATE
+
+- This AUTHORING Draft is not production, not merged, not web-integrated, not a running Topic route. R1–R5/AP1–AP5/P1–P2 all separately owned by RELEASE.
+- RELEASE must validate exact source SHA on integration HEAD, MathJax/SVG rendered meaning and responsive UI, Q15 original bank references, Q16 Final Submit no pre-submit answer/hint/AI/correctness, RD1 privacy and no Mastery writes, CI and explicit owner permission.
+- P1 and physical-device P2 unverified. Do not conflate CONTENT_READY with RELEASE_READY/PUBLISHED; no merge/deploy from AUTHORING.
