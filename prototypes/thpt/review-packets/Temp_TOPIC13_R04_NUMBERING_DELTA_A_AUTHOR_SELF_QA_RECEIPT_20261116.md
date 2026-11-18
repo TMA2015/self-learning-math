@@ -3,16 +3,16 @@
 **Phạm vi AUTHORING hiệu lực:** sau baseline R04 và sửa bank ký hiệu trên PR #841, lượt này sửa 15 dòng Kiến thức O07/O08/O11/O14/O15 để phân biệt tọa độ vectơ với độ dài đoạn; làm rõ ba đề NEW20 và rubric W03, cùng sáu câu tự kiểm tra chỉ nhắc lại đề đã xem. Giữ nguyên 52 `item_id`, dữ kiện số, đáp án, phép toán, 4 rubric tổng /7, 16 outcome, 4 SVG và Q16 public replay; W03 đổi `content_version=2` trong MỘT bank canonical. DELTA_C cho lỗi diễn đạt toán/rubric W03, DELTA_B cho cách trình bày tương đương ở các câu còn lại, không tự gọi độc lập NotebookLM PASS.
 
 PACKET_ID: THPT-TOPIC13-PLANAR-SPATIAL-VECTORS-FULL-R01
-CONTENT_REVISION: R07
+CONTENT_REVISION: R07_EDITORIAL_FINAL_20261118
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 94e24a128c33efc141f6be52ad11656973043567
-ACADEMIC_SOURCE_BLOB: 94e24a128c33efc141f6be52ad11656973043567
+SOURCE_BLOB: 2fe260f6da3f4eedec7d9b8c93d683915493cc1e
+ACADEMIC_SOURCE_BLOB: 2fe260f6da3f4eedec7d9b8c93d683915493cc1e
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md
-PUBLIC_CANONICAL_BANK_BLOB: e2f71e56479a08c4f8bb5f949d4ed8e249983cd6
+PUBLIC_CANONICAL_BANK_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R03_STUDENT_FIRST_52_CANONICAL_VISIBLE_20261116.md
 PREVIOUS_SOURCE_BLOB: 7f3e90e5eadcbaa1dc7b49cd6d5136f6dbf61e22
 PREVIOUS_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC13_R03_AUTHOR_SELF_QA_RECEIPT_20261116.md
@@ -33,7 +33,7 @@ PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
 P2: 0
-AUTHOR_SIGNOFF: TOPIC13_R07_20261118_94e24a128c33efc141f6be52ad11656973043567_AUTHOR_SELF_VERIFIED
+AUTHOR_SIGNOFF: TOPIC13_R07_20261118_2fe260f6da3f4eedec7d9b8c93d683915493cc1e_AUTHOR_SELF_VERIFIED
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_IMPORTED: 0
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
@@ -43,7 +43,7 @@ S1_RECEIPT: Toán 10 KNTT SGK tập1 ChIV B07 trang in46–50, B08 51–54, B09 
 OUTCOME_AUDIT: 16/16 TOP13-M01..M16/TOP13-O01..O16 full 3-page Topic Knowledge/Practice/Self Check, 16 Ví dụ (Đề bài, Lời giải) and adjacent 16 Vận dụng/optional Đối chiếu, one suitable D6 path. Original SGK sources retained by distinct owner; outcome material limited to vector geometry/Oxy/Oxyz and applied displacement/work, no unrelated equations/planes.
 MATH_VERIFICATION: Current affected-scope *direct re-solve*: O07 A=(-2,1),B=(3,5) gives vector AB=(5,4), BA=(-5,-4), scalar length sqrt41; O08 A=(-1,2),B=(5,-6) gives vector (6,-8), distance10 and midpoint (2,-2); O11 perpendicular box edges 2,3,4 yield sqrt29; O14 A=(1,-1,2),B=(4,3,-2) gives vector(3,4,-4), scalar length sqrt41; O15 A=(1,0,2),B=(5,2,-2) gives vector(4,2,-4), length6, midpoint (3,1,0), AM=MB=3 and directed vectors AM=MB=(2,1,-2). Topic P11 three box edges 3,4,12 yield 13. Written W03: C'=(3,4,12), |AC'|=13, vector AB=(3,0,0) dot vector AC'=(3,4,12) gives 9, cos=9/(3*13)=3/13, unchanged rubric 2+3+2=7. P01 parallelogram AB-vector=DC-vector while CD opposite; P02 AA is zero vector with length 0 per locked KNTT convention. Historical broad 40/40 math/SVG checks belong to prior signed snapshot, **not claimed fresh full rerun**.
 PED_VERIFICATION: Source-level 16/16 standalone worked examples and 16 immediate voluntary Vận dụng/Đối chiếu; O07/O08/O14/O15 now explicitly name **coordinate vector** before equality with an ordered tuple, and scalar **length AB=|vector AB|** before a real number. O11 diagram reading and scalar diagonal length are distinguished. Q03/PED mathematical explanation precedes formula, D6 routes unchanged. Four original SVG titles/alt with 5 learner placements held; browser AP2 not claimed. 52 Practice question displays, 4 Written /7, 16 question-only public selfchecks.
-CANONICAL_Q15: 52 unique item_id =20 unchanged original G10 public SGK, exact canonical Git blob 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9 verified on sibling owner Draft #750; 12 G12 original, exact blob 856a37bd16d2746ffc2e12906de18d1f4338a3b6 on Topic branch; 20 Topic NEW20 in exactly ONE active canonical bank e2f71e56479a08c4f8bb5f949d4ed8e249983cd6. Verified all 52 source marker IDs exist at respective owner, 20/20 NEW20 current **Dé** stems appear byte-identically in learner Practice, 52 unique placements, no duplicate IDs. Previously ambiguous notational question/solution values for P01/P02/P11 and W03 are synchronized with the same active bank, W03 content_version=2, no changed result or 7-point allocation. Earlier source `d2f4b9...` is historical, not a second active bank. Q15 source ownership for cross-branch G10 is verified on source Draft; RELEASE must confirm physical availability on combined HEAD, not fabricate it in this AUTHORING branch.
+CANONICAL_Q15: 52 unique item_id =20 unchanged original G10 public SGK, exact canonical Git blob 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9 verified on sibling owner Draft #750; 12 G12 original, exact blob 856a37bd16d2746ffc2e12906de18d1f4338a3b6 on Topic branch; 20 Topic NEW20 in exactly ONE active canonical bank c74505ba59d047c19943c2309f5fd7c033ac9563. Verified all 52 source marker IDs exist at respective owner, 20/20 NEW20 current **Dé** stems appear byte-identically in learner Practice, 52 unique placements, no duplicate IDs. Previously ambiguous notational question/solution values for P01/P02/P11 and W03 are synchronized with the same active bank, W03 content_version=2, no changed result or 7-point allocation. Earlier source `d2f4b9...` is historical, not a second active bank. Q15 source ownership for cross-branch G10 is verified on source Draft; RELEASE must confirm physical availability on combined HEAD, not fabricate it in this AUTHORING branch.
 ASSESSMENT_Q16: 16/16 replay-only Self Check IDs all occur in Practice, six question-stem notation clarifications synchronized with canonical bank meaning, with no solution/rubric/hint/reveal in Self Check and no RD1 import/official readiness/Final Submit/Mastery. 68 opening and 68 closing voluntary solution details across 16 First Tries and 52 Practice. CLIENT_SELF_CHECK_NO_MASTERY remains demo and self-comparison, not independent assessment.
 
 ## Khóa phạm vi so sánh
@@ -85,9 +85,17 @@ Source currently `9a558f553bd6a4a58701a6bae490717ba5a52540` in the existing Topi
 
 ## R07 · Current source/canonical and direct math/PED closure (18/11/2026)
 
-- **Effective learner:** one file `prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md`, Git blob `94e24a128c33efc141f6be52ad11656973043567`; former R04 `4722b4ab923e162733a100610c3d825cbe9b67f5` historical only. **Active original NEW20 bank** `e2f71e56479a08c4f8bb5f949d4ed8e249983cd6`; predecessor `136bd4552118e5dba6b18b58965be7d37878e9df` historical.
+- **Effective learner:** one file `prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md`, Git blob `2fe260f6da3f4eedec7d9b8c93d683915493cc1e`; former R04 `4722b4ab923e162733a100610c3d825cbe9b67f5` historical only. **Active original NEW20 bank** `c74505ba59d047c19943c2309f5fd7c033ac9563`; predecessor `136bd4552118e5dba6b18b58965be7d37878e9df` historical.
 - **Vector/length Q03/Q04/Q13 & D6:** exact changed teaching lines O07/O08/O11/O14/O15 and source-owned P01/P02/P11/W03 show arrows and distinguish a coordinate tuple from a nonnegative length. No change to integer/numeric calculations. W03 rubric now `(AB vector)·(AC' vector)=9` and `|AC' vector|=13`, 7 points; only W03 canonical `content_version=2`. Direct computations in MATH_VERIFICATION above.
 - **Q15 canonical:** 52 original IDs (20 G10 owner PR #750, 12 G12, 20 Topic), 52 unique placements; all 20 current NEW20 `**Đề:**` text lines match learner Practice source; no shadow library. All 16 public replay IDs match Practice, six only re-typeset mathematical vector notation without changing questions' requested quantities.
 - **Q16 assessment:** 68 opening and 68 closing disclosures, 16 Self Check question stems with zero embedded `<details>` and no protected keys/score; no official Topic Readiness or Mastery. Four SHA-retained SVGs in five placements, not newly generated.
 - **Owner-effective Q18/Delta:** `DELTA_C_ACADEMIC_MATERIAL` for significant correction of ambiguous vector equation and W03 rubric notation; `DELTA_B_SOURCE_EQUIVALENT` for otherwise identical symbolic re-typesetting. Author checked exact assumptions, geometry, measures, rubric and PED on this Git SHA; `NOTEBOOKLM_REREVIEW=NOT_REQUIRED_WITH_REASON` (PR #808 governance Q18 v3), P0/P1/P2=0 within checked affected scope. **Not** an independent NotebookLM Topic PASS or proof of full browser AP1–AP5.
 - **Cross-source dependency:** original G10 owner SGK source `96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9` exists on Draft #750, not the Topic-only file tree; explicit RELEASE combined-HEAD source intake must verify exact blob or HOLD. AUTHORING verifies identity, **does not copy/merge** a different source owner as a workaround.
+
+
+## 18/11/2026 · owner #864 13-item FINAL learner-view editing (DELTA_A_UI)
+
+- After the earlier source-locked mathematical Q03/Q04/Q15 fixes, the final read-through against the same owner-approved [Issue #864](https://github.com/TMA2015/self-learning-math/issues/864) uncovered two **presentation-only** defects: the learner file had **zero** readable final S1 source-footnotes (item 12), and 48 SGK/new Practice reveal labels said `Đối chiếu lời giải` while 4 Written labels said `Đối chiếu và rubric /7` (item 9). This was **not** a reason to reopen mathematical verification or NotebookLM. No extra standard/contract created.
+- **Exact source changes:** `48` Practice `<summary>` captions now `Lời giải`, `4` Written captions now `Lời giải và rubric`; the 16 Knowledge Vận dụng opt-in labels remain `Đối chiếu`. One human-readable source line appended **at the very end** of the Topic only, without technical page numbers, Git SHA or Source Receipt text: “SGK và SBT Toán 10, Tập Một, Chương IV; SGK và SBT Toán 12, Tập Một, Chương II — bộ Kết nối tri thức với cuộc sống”. 20 equivalent optional-reveal labels inside the ONE NEW20 canonical bank normalized in place as well, with unchanged questions, answers, mathematical steps and rubric allocations. All public IDs untouched.
+- Final active learner Git blob `2fe260f6da3f4eedec7d9b8c93d683915493cc1e`, single NEW20 bank `c74505ba59d047c19943c2309f5fd7c033ac9563`. Direct recheck of all `52/52` canonical source markers, `20/20` new Practice stem rows matching the bank, `16/16` public Self Check question IDs, exactly `68/68` opening and closing details, 4 real SVG assets/five placements. **Source footer count exactly 1 at end**, zero old solution-caption strings or student-visible author metadata. No official Final Submit or Mastery behavior changed.
+- **Verdict on this last change:** `DELTA_A_UI` (naming and visible source footnote only), author source QA PASS. The substantive earlier `DELTA_C_ACADEMIC_MATERIAL` vector/length and W03 mathematics verified above persists without modification; independent NotebookLM not required merely to re-label summary controls. Full original historical independent SGK review is not extended to Topic by this correction.
