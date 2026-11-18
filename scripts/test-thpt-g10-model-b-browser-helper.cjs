@@ -127,6 +127,10 @@ async function verifyModelBLesson(page,{n,chapter,tries,helps,images,questions=t
    assert(measure.w>=755&&measure.scroll>measure.client+2&&
     (measure.figureOverflow==="auto"||measure.figureOverflow==="scroll"),
     "B06 phone D5 must be readable at 760px and scroll inside figure "+asset);
+  }else if(n===12&&measure.width<=600&&asset==="THPT_G10_B12_ERROR_INTERVAL_D5_R02_REVIEWED.svg"){
+   assert(measure.w>=580&&measure.scroll>measure.client+50&&
+    (measure.figureOverflow==="auto"||measure.figureOverflow==="scroll"),
+    "B12 source-authored D5 must show readable 600px graphic and pan only inside figure "+asset);
   }else{
    assert(measure.w<=measure.p+2,"B"+n+" D5 must fit ordinary figure "+asset);
   }
