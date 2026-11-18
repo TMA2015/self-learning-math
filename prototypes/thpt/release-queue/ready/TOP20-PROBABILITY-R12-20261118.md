@@ -67,7 +67,7 @@ SOURCE_SCOPE: SGK_G10_KNTT_CHIX_B26_B27_PLUS_SGK_G11_KNTT_CHVIII_B28_B30
 - [ ] R2_EXACT_HEAD_CI — Release integration and combined CI remain a separate operation.
 - [ ] R3_CLEAN_STUDENT_UI — RELEASE must check live Topic Golden, MathJax/SVG, tutoring on public learning only, 390/820/1440 and deep links before publication.
 - [ ] R4_ASSESSMENT_SAFETY — No private RD1 leakage, hint/key/correctness/AI Tutor before official Final Submit, and no illegitimate Mastery score writes.
-- [ ] R5_OWNER_PERMISSION — No permission to integrate website, merge release, or deploy is granted by this authoring manifest.
+- [ ] R5_OWNER_APPROVAL — No permission to integrate website, merge release, or deploy is granted by this authoring manifest.
 - [ ] AP1_AP5_RENDERED_QA — Check actual site display/reading/interaction and responsive after RELEASE intake; source Markdown is not production UI.
 - [ ] P1_DEPLOY_RECEIPT — Website is not deployed or published for this Topic; no P1 verification or public availability claimed.
 - [ ] P2_DEVICE_UAT — Real-device iPhone/iPad Safari and parent acceptance pending after an authorized release.
