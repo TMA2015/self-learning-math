@@ -70,3 +70,17 @@ Direct line-by-line comparison `58b16f7c442d560f3950aafdbaf1f686e1e337e4` (2,432
 ## Decision and scope boundary
 
 **Academic/PED affected-scope author self-verification completed. Independent NotebookLM (exactly five Permanent Sources v2.1 + S1) reviewer verdict still missing for TOP11-O08 and TOP11-O14.** Thus `ACADEMIC_AUTHOR_SELF_QA_PASS` is not `CONTENT_READY` for the **current source** under the owner Delta C policy. Declare `BLOCKED_BY_AUTHORING_INDEPENDENT_AFFECTED_SCOPE_REVIEW`; old R06 ready manifest/source/receipt is historical only and **must not** be treated as current source acceptance. After reviewer Academic+PED PASS/P0/P1=0 and minimal delta closed, update exactly one active Q18/V2/ready/REGISTER to current Git blob and run Topic V2 exact-HEAD; no global Topic re-review from a small affected delta. No merge/deploy.
+
+
+## D5 SVG Git blob revalidation on the current AUTHORING branch (18/11/2026)
+
+All four figure paths used by the *current* learner source were fetched directly from GitHub and matched to previously signed original Topic SVG SHA; this proves media provenance/existence, **not** browser/AP rendering or automatic correctness of every visual label.
+
+| Media file | Actual Git blob | Locked historic blob | Source-level QA |
+|---|---|---|---|
+| THPT_TOPIC11_SIGNED_INTEGRAL_R01.svg | `9a4b0b56c9613711d60c623e349df2415f4dbb4d` | same | MATCH; `y=x`, signed net `3/2` vs area `5/2` |
+| THPT_TOPIC11_TWO_CURVES_SPLIT_R01.svg | `bbfb83ef7fcbd3f39f46848856f7d96f8233d50d` | same | MATCH; `y=x` and `y=x²` on [0,2], split at 1, area 1 |
+| THPT_TOPIC11_CROSS_SECTION_SQUARE_CIRCLE_R01.svg | `f20c2cdb2e24115a051dc1d8f197e4945d35a2e5` | same | MATCH; square area 1 vs circle area π at unit sizes |
+| THPT_TOPIC11_WASHER_REVOLUTION_R01.svg | `e24c8d91fd5421e6b20ab5c4215db0b2d51342c2` | same | MATCH; washer `R=2`, `r=x` on [0,2], volume `16π/3` |
+
+This verification does not close DELTA_C independent review O08/O14, does not alter PDF evidence or score state and does not authorize RELEASE.
