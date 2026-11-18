@@ -7,10 +7,10 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md
-SOURCE_BLOB: b5c03a5cfb3336ff9e3d3a15fd8f0161ec71fb39
-ACADEMIC_SOURCE_BLOB: b5c03a5cfb3336ff9e3d3a15fd8f0161ec71fb39
+SOURCE_BLOB: 47c98711e2955287831d5ea10fc5d61d1483fd6a
+ACADEMIC_SOURCE_BLOB: 47c98711e2955287831d5ea10fc5d61d1483fd6a
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_R02_AUTHORING_ONLY_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: 47d4f38654db0f388eb07563148a3cbec26cae10
+AUTHOR_A1_A7_BLOB: e2dd3eb2985aba77e354dbd21c9025a273163be5
 ORIGINAL_R01_SOURCE_BLOB: 277ccb8b5d9f0a8c5f08680fa7e5b70925710308
 ORIGINAL_R01_Q18_BLOB: e20555eae495a910afe25454cc61ad5a97e7e52d
 ORIGINAL_SGK_SOURCE_BLOB: c5c222af88b0e932f9b60df059d8ffd4da5f0f26
@@ -26,7 +26,7 @@ P0: 0
 P1: 0
 P2: 0
 RELEASE_AUTHORIZATION: NO
-AUTHOR_SIGNOFF: TOP14_R02_LEARNER_FIRST_23OUT_110CANONICAL_74DIRECTQA_20261116
+AUTHOR_SIGNOFF: TOP14_R02_O22_PARABOLA_REMEDIATION_DELTA_C_20261119
 S1_RECEIPT: SGK KNTT Toán 10 Tập Hai ChVII B19 printed pp30–35, B20 pp36–42, B21 pp43–47, B22 pp48–56, cuối chương pp57–59, inherited original validated S1 printed-page Delta B; no fresh source-PDF reread claimed. SBT chapter pp27–49 only as reference, lesson-level offsets unverified (SBT_REFERENCE_GAP_DOCUMENTED).
 OUTCOME_AUDIT: 23/23 TOP14-O01…O23, exactly 7 outcomes for B19, 5 for B20, 5 for B21, 6 for B22; each has concept-first explanation, conditions, a standalone solved Example, Vận dụng/Đối chiếu, D6 and at least one visible Practice question.
 MATH_VERIFICATION: 51/51 direct recomputed numeric and symbolic cases PASS = 23 R02 standalone worked Examples + 23 unchanged canonical Topic Practice solution keys + five Written worked answers and /7 rubric arithmetic; 23 source and semantic structural checks PASS; protected original 32+23+4 SGK stems/solutions source-exact to original Git bank blobs.
@@ -43,7 +43,7 @@ Kiến thức bản R02 thay 23 giải thích D2/diễn giải so với R01 (DEL
 
 ## 18/11/2026 — exact three heading-level corrections; author delta-A source lock
 
-- CURRENT_SOURCE_BLOB `b5c03a5cfb3336ff9e3d3a15fd8f0161ec71fb39`; baseline R02 original source `8f61c67a11dd3e2869cbd71dbb279bdcfdd92bf3` remains immutable. Three unnumbered H2 orientation headings `## Mạch B`, `## Mạch C`, `## Mạch D` now bold prose before the corresponding numbered H2 groups 2/3/4, preventing a duplicated sibling hierarchy. The math group levels H2=1..4 and H3=1.1..4.6 preserve sequence without missing numbers or orphan segments.
+- CURRENT_SOURCE_BLOB `47c98711e2955287831d5ea10fc5d61d1483fd6a`; baseline R02 original source `8f61c67a11dd3e2869cbd71dbb279bdcfdd92bf3` remains immutable. Three unnumbered H2 orientation headings `## Mạch B`, `## Mạch C`, `## Mạch D` now bold prose before the corresponding numbered H2 groups 2/3/4, preventing a duplicated sibling hierarchy. The math group levels H2=1..4 and H3=1.1..4.6 preserve sequence without missing numbers or orphan segments.
 - Original R02 source vs current differs in **exactly three Markdown heading lines only**, not in any problem, definition, worked example, mathematical expression, canonical placement, disclosure, SVG or D6. This `DELTA_A_UI` keeps original 23 structural and 51 direct math checks valid only on unchanged content, with new source/document SHA re-bound.
 - Scoped `AUTHOR_SELF_VERIFIED` format parity only. No new independent NotebookLM Academic/PED PASS or RELEASE QA. Original historical R01/old R02 reviewer SHA unchanged. Protect RD1 and official Mastery boundaries.
 
@@ -139,7 +139,7 @@ A1 source `8f61c67a11dd3e2869cbd71dbb279bdcfdd92bf3`; A2 SGK S1 inherited-source
 
 ## 18/11/2026 · O22 ellipse D6 targeted author verification, exact current Git source
 
-- **Owner Issue #864 (Q03/Q13/PED6) and #865 anti-regression:** the last effective R02 student source `b5c03a5cfb3336ff9e3d3a15fd8f0161ec71fb39` corrects one genuine **pedagogical semantic defect** at `TOP14-O22`, without changing 23/23 outcome structure or any learner item. Previous baseline `dada7df9fc509cc67238cbc3e5d03376b58f23f4` mistakenly instructed a student who had omitted the negative root of the **ellipse** `x²/9+y²/4=1` at `x=0` to revisit a **parabola** symmetry drawing. The direct author check re-solves `y²/4=1\Rightarrow y=\pm2`, identifies both points `(0,2),(0,-2)`, and corrects the D6 wording to the ellipse symmetric across `Ox`. **Both** solutions satisfy the equation; no external source dispute. Change classified `DELTA_C_ACADEMIC_MATERIAL` in the affected Q03/PED6 teaching, not disguised as UI.
+- **Owner Issue #864 (Q03/Q13/PED6) and #865 anti-regression:** the last effective R02 student source `47c98711e2955287831d5ea10fc5d61d1483fd6a` corrects one genuine **pedagogical semantic defect** at `TOP14-O22`, without changing 23/23 outcome structure or any learner item. Previous baseline `dada7df9fc509cc67238cbc3e5d03376b58f23f4` mistakenly instructed a student who had omitted the negative root of the **ellipse** `x²/9+y²/4=1` at `x=0` to revisit a **parabola** symmetry drawing. The direct author check re-solves `y²/4=1\Rightarrow y=\pm2`, identifies both points `(0,2),(0,-2)`, and corrects the D6 wording to the ellipse symmetric across `Ox`. **Both** solutions satisfy the equation; no external source dispute. Change classified `DELTA_C_ACADEMIC_MATERIAL` in the affected Q03/PED6 teaching, not disguised as UI.
 - **Direct outcome-specific Q18 result:** `TOP14-O22` Academic mathematics PASS (two real intersection points), PED6 remediation PASS (correct concept to recheck), Q15/Q16 invariance PASS. Existing 23 examples, 23 T first-tries, 59 original SGK reuses, 23 Topic P practices, 5 Written rubrics, 23 public question-only replays, 3 math SVG and 110 Q15 item IDs unchanged; no private assessment content. Original 23+51 broad direct QA checks belong to prior frozen R02; this minor remedy does **not** purport to rerun all 74 from scratch. No fresh independent NotebookLM verdict claimed. `NOTEBOOKLM_REREVIEW=NOT_REQUIRED_WITH_REASON` under effective owner Q18 v3 (PR #808), since a directly proven one-line conceptual correction leaves no unresolved ambiguity.
 - **A1 metadata relocked:** `47d4f38654db0f388eb07563148a3cbec26cae10`. **Historical R01 manifest** `814997dc5686d5716d880a7c4379a2c146d339af` preserved byte-exact under `archive/THPT-TOPIC14-ANALYTIC-OXY-FULL-R01_HISTORICAL_SIGNED_20261118.md` and removed from active `ready/`; its historical PASS does not transfer to current source. Only one effective current R02 manifest should be registered as `CONTENT_READY`. Former R01 Q18/source/banks remain immutable; DO NOT edit old source to hide prior defect.
 - **Status of this author proof:** `ACADEMIC_AUTHOR_SELF_QA_PASS`, `PED_AUTHOR_SELF_QA_PASS` limited to O22 delta; P0=P1=P2=0 for changed scope; no new external Topic PASS. Release AP/device/Final Submit/official Readiness and owner merge/deploy remain unverified and outside AUTHORING.
@@ -148,7 +148,7 @@ A1 source `8f61c67a11dd3e2869cbd71dbb279bdcfdd92bf3`; A2 SGK S1 inherited-source
 ## 18/11/2026 · DELTA_A_UI — CĐ14 bài SGK đánh số liền mạch (final source-only audit)
 
 SOURCE_BEFORE_DELTA_A: c80f20dc9f8f2ee000f5c4af5a4c8583a5307cf1
-SOURCE_BLOB: b5c03a5cfb3336ff9e3d3a15fd8f0161ec71fb39
+SOURCE_BLOB: 47c98711e2955287831d5ea10fc5d61d1483fd6a
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 DELTA_CLASS: DELTA_A_UI
 SCOPE: **40 changed presentation labels** among 55 student-visible `Bài SGK n.` exercise headings; source originally displayed 1..15,17..29,31..43,45..58, with three artificial gaps at section boundaries; now 55 headings display **Bài SGK 1..55 strictly consecutive**. Pure numbered-heading normalization was mechanically tested by replacing all 55 labels with a single placeholder in before+after source: **full learner content was then byte-identical**. No formula, stem, key, solution, rubric, canonical item ID, item-to-outcome mapping, SVG, student selfcheck question, opt-in reveal or 3-part structure changed. Other `Bài luyện 1..23` is unchanged and independently numbered. Three original group headings and 23 H3 Knowledge lessons preserved. No new `Final Submit` or Mastery; not website AP.
@@ -159,4 +159,14 @@ CANONICAL_Q15: All 110 canonical ID/source placement tokens and item bodies unch
 ASSESSMENT_Q16: 23 public question-only replay/selfcheck items and Q16 Final Submit privacy boundary unchanged; CLIENT_SELF_CHECK_NO_MASTERY only.
 P0: 0
 P1: 0
-AUTHOR_SIGNOFF: TOP14_R02_55_SGK_DISPLAY_NUMBERS_DELTA_A_EXACT_GIT_SOURCE_b5c03a5cfb3336ff9e3d3a15fd8f0161ec71fb39
+AUTHOR_SIGNOFF: TOP14_R02_55_SGK_DISPLAY_NUMBERS_DELTA_A_EXACT_GIT_SOURCE_47c98711e2955287831d5ea10fc5d61d1483fd6a
+
+## 19/11/2026 · Q18 targeted Delta C / TOP14-O22 / THPT-TOP14-T22
+
+**MODE:** `Q18_AUTHOR_SELF_VERIFIED`, source SHA `47c98711e2955287831d5ea10fc5d61d1483fd6a`; baseline previous SHA `b5c03a5cfb3336ff9e3d3a15fd8f0161ec71fb39` (immutable prior state; old Q18 blob `83ed7bce8010f522d86beac22b01403601e13da3` is historical, not current verdict).
+
+**Q08/PED6 substantive defect directly reproduced:** T22 asks intersection of parabol `y²=4x` and `x=1`. Old recovery accidentally said “elip” and cited points (0,±2). Those coordinates fail the actual parabola: at x=0,y=±2, `y²−4x=4≠0`. They belong to the preceding independent ellipse example and must not be reused in T22's remediation.
+
+**Exact minimal correction and mathematical check:** the only changed learner-facing span is T22's “Nếu làm sai”. Substituting x=1 yields y²=4, so y=±2; (1,2) and (1,-2) both give y²−4x=0, symmetric about Ox for the parabola. The T22 stem, public canonical item ID, correct key, pre-existing “Đối chiếu”, rubric, grade placement, 55 SGK numbering and figures are not touched. **23/23 first-try recovery notes were read for wrong-topic carryover**; only T22 required this correction.
+
+**Verdict on affected scope:** `DELTA_C_ACADEMIC_MATERIAL` (reasoned pedagogical mathematics); author independently verified Q03/Q08/Q13/Q14/PED6 with direct substitution, `P0=0;P1=0;MINIMAL_DELTA=ONE_T22_D6_SENTENCE;AUTHOR_SIGNOFF=TOP14_R02_O22_PARABOLA_REMEDIATION_DELTA_C_20261119`. No new whole-Topic reviewer PASS or NotebookLM use claimed. Prior unaffected signed checks retain their snapshot scope. A1–A7 updated exact source blob `e2dd3eb2985aba77e354dbd21c9025a273163be5`. RELEASE R1–R5/AP1–AP5/P1–P2, protected RD1, Final Submit and Mastery **not** authorized.
