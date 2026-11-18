@@ -16,7 +16,7 @@ concurrency:
 jobs:
   scope:
     name: Classify PR and validate authoring/manifest integrity
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     outputs:
       authoring_only: ${{ steps.scope.outputs.authoring_only }}
     steps:
@@ -49,7 +49,7 @@ jobs:
     # Only source Markdown/SVG in approved authoring/review/handoff directories
     # bypasses the expensive website suite. Any mixed change runs full QA.
     if: ${{ needs.scope.outputs.authoring_only != 'true' }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

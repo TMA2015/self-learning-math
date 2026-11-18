@@ -1,0 +1,433 @@
+# G10-CHV-B12 — ONE CURRENT CANONICAL MANUSCRIPT — Số gần đúng và sai số
+
+**LESSON_ID:** G10-CHV-B12 · **VERSION:** R01 candidate 18/11/2026 · **ONE_STANDARD:** SLM-THPT-QUALITY-ONE Q01–Q18. **ROLE:** single current complete B12 manuscript covering derived learner Knowledge, nine public formative canonical records and one immutable historic Written W12. Code/website files are derived implementation surfaces, not competing manuscript authorities.
+
+**SOURCE RECEIPT (scoped):** SGK Toán 10 Kết nối tri thức với cuộc sống Tập 1, printed pp73–77, Bài 12: 1. Số gần đúng; 2. Sai số tuyệt đối và sai số tương đối; 3. Quy tròn số gần đúng. Skills in printed p73 explicitly include calculator with approximate numbers. Printed p74 SGK illustrates calculator with 2^9√3, printed p77 exercise 5.3 asks cube-root 7 with d=0.0005. External SGK PDF transcription and SGKVN independent mirror checked, but AUTHENTICATED_PUBLISHER_PDF page-index / scan chain are NOT verified; original SBT printed pp73–74 cited by independent secondary exercise listing, not custody-authenticated. HOLD Q01 source-authentication claim pending reviewer receipt; do not pretend original scans were supplied by owner.
+
+**FROZEN HISTORICAL SOURCE:** learner B12 Knowledge Git blob 386a8d46bb4960bbab4934a5891fad89406ac7a5; public original 8-item JS blob b9e5f967671bd76e03c420e88ebfcb4e9dc02bc7; ChV Practice hub blob e99b057ebc26f93821d0a2f161279d071d3f51bf; Written B12–B14 source blob 8a1fbabe62d749177d2986e3d59ddb979a9d0267; published B12 original HTML blob a33bd362e79c8fd53a3250e97d73737d318bd45e. Immutable owner B01–B11 P2 PASS.
+
+**CURRENT DELTA CLASS:** DELTA_C_ACADEMIC_MATERIAL for new calculator outcome (worked operation, independent First Try and brand-new public P07 with answer/rubric), restructured worked examples, figure placement and new D6. DELTA_A_UI for numbered tab titles, owner learner-visible “Em vận dụng” wording and removal of exposed NotebookLM metadata. Academic/PED independent review required for affected lesson outcomes including P07; legacy 8 public items and W12 must be identical to approved R01; no automated self-PASS or promoted CONTENT_READY.
+
+**LESSON OUTCOMES:** APPROX_CONCEPT (why approximate ≠ exact, units), ABS_ERROR (Δ vs bound d, interval), REL_ERROR (δ=Δ/|a| with a≠0 and inequality), ROUNDING (correct step h, half-step guard), CALCULATOR (input root/exponent correctly, read displayed digits, convert to decimal, round after full precision and justify accuracy). Every new answer is deliberately learner-opened rather than preexposed; does not touch protected Final Submit / RD1 / Skill Mastery / Firebase.
+
+**CANONICAL ITEM REGISTER:** legacy THPT-G10-B12-C01/C02, P01–P06 unchanged text/keys/solutions; add exactly one new B12-P07 (unique P role, CALCULATOR); Knowledge first-tries original THPT-G10-CHV-TRY01–TRY04 retained and one independent THPT-G10-CHV-TRY-CALC-R01 newly authored, with independent values (∛11 versus P07 ∛7), no clone. HELP-G10-B12-01/02 original, HELP-G10-B12-CALC-01 newly authored. Written THPT-G10-CHV-W12 original unchanged; no new Anchor or Readiness item.
+
+**MATH SELF-CHECK:** sqrt5≈2.236067977→2.236; (2.2355)^2 < 5 < (2.2365)^2. Cube root 11≈2.22398009→2.224, (2.2235)^3 < 11 < (2.2245)^3. Cube root 7≈1.91293118→1.913, (1.9125)^3 < 7 < (1.9135)^3. 2^9√3≈886.810013475→886.810. Relative error 0.003/12.35×100≈0.0242915%. All numeric calculations are self-checked, not independent review.
+
+**DERIVATION CONTRACT:** Public Knowledge Markdown must byte-equal Section A and Git blob in signed Q18. Public JS must byte-equal Section B and include eight unchanged original item objects + exactly one pending-review new P07. Written section C must match frozen historical source. Published Practice hub must expose exactly 2 Core/7 Practice B12 and preserve B13/B14 counts. Strict SHA lock and academic/pedagogical independent verdict are required before merge/deploy.
+
+**DISPOSITION:** AUTHORING_CANDIDATE / DELTA_C_REVIEW_REQUIRED / NO_CONTENT_READY / NO_MERGE_NO_DEPLOY.
+
+## A. Authoritative learner-facing Knowledge Markdown
+
+<!-- BEGIN_B12_KNOWLEDGE_MARKDOWN -->
+# Bài 12. Số gần đúng và sai số
+
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG V · KIẾN THỨC SGK KNTT</p><p class="thpt-r4-lead">Hiểu bản chất số gần đúng, tự dùng máy tính cầm tay để tính và quy tròn có kiểm soát sai số.</p></div>
+
+=== "Khám phá kiến thức"
+
+    ### 1.1. Cùng tìm hiểu
+
+    Một ứng dụng đo quãng đường hiển thị “9,2 km”. Con số này thuận tiện để đọc, nhưng máy đo có thể không biết khoảng cách thật đến mọi chữ số thập phân. Nếu thiết bị chỉ đảm bảo sai lệch **không quá 0,4 km**, ta không thể kết luận quãng đường đúng bằng 9,2 km — cũng không thể khẳng định lần đo này **sai đúng 0,4 km**.
+
+    Đó là sự khác nhau giữa **số gần đúng**, **sai số thực** và **giới hạn sai số**. Số gần đúng là giá trị ta sử dụng; sai số thực là khoảng cách đến giá trị đúng mà đôi khi ta chưa biết; độ chính xác cho một **ranh giới** mà sai số không vượt quá. Khi biểu diễn bằng đoạn trên trục số, em sẽ thấy giá trị đúng có thể nằm ở bất kỳ vị trí nào trong khoảng được đảm bảo.
+
+    Bài học cũng giúp em hiểu vì sao quy tròn phải gắn với độ chính xác. Không phải cứ viết thêm nhiều chữ số là thông tin tự nhiên chính xác hơn.
+
+    ### 1.2. Ví dụ trực quan
+
+    #### Vì sao cần nói số gần đúng?
+
+    Một phần ba chiếc bánh là một lượng chính xác, nhưng máy chỉ hiển thị đến hai chữ số thập phân. Số hiện trên máy giúp sử dụng thuận tiện nhưng không còn biểu diễn chính xác toàn bộ lượng đó.
+
+    Nhắc lại phân số \(1/3\) và phép viết thập phân vô hạn \(0{,}333\ldots\). Phân biệt con số biểu diễn trên thiết bị với giá trị toán học ban đầu. 
+
+    Khi giới hạn độ dài biểu diễn, ta phải chọn một số hữu hạn chữ số để **thay cho** giá trị đúng: kí hiệu trong bài dùng \(a\) là số gần đúng và \(\bar a\) là số đúng. Dấu \(\approx\) nói hai số gần nhau, không phải luôn bằng nhau.
+
+
+    **Em vận dụng.** Cho số đúng \(\bar a=1/3\), dùng số gần đúng \(a=0{,}33\). Em viết quan hệ bằng kí hiệu nào, và vì sao không viết dấu bằng?
+
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY01" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        <div class="thpt-r4-first-try-answer">
+        <p><strong>Đối chiếu kết quả:</strong> \(a=0{,}33\) là số gần đúng; \(\bar a=1/3\) là số đúng; viết \(0{,}33\approx1/3\), không viết bằng.</p>
+        <p><strong>Giải thích vì sao:</strong> \(0{,}33=33/100\ne1/3\). Việc cắt độ chính xác biểu diễn tạo ra số gần đúng dù cách tính là hợp lệ.</p>
+        <p><strong>Nếu chưa làm được:</strong> Đọc lại giải thích số đúng và số gần đúng trong §1.2, rồi <a href="../luyen-tap/?item=THPT-G10-B12-P04">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
+        </div>
+
+
+    #### Độ chính xác không phải sai số thực
+
+    <figure class="thpt-r4-plot thpt-r4-probability-figure" data-thpt-fig-id="FIG-G10-B12-01" style="width:min(100%, 780px); max-width:none; overflow-x:auto; box-sizing:border-box;"><img style="display:block; width:100%; min-width:600px; max-width:none; height:auto;" src="../../../../assets/images/thpt/THPT_G10_B12_ERROR_INTERVAL_D5_R02_REVIEWED.svg" loading="lazy" alt="Số gần đúng a bằng 20,0 cm, độ chính xác d bằng 0,1 cm; giá trị đúng a gạch ngang thuộc đoạn 19,9 đến 20,1 cm."><figcaption>Khoảng có thể chứa số đúng · hình minh họa.</figcaption></figure>
+
+    **Cách đọc hình.** Tìm số gần đúng ở giữa khoảng, rồi nhìn hai biên cách nó một khoảng d. Giá trị đúng có thể nằm bất cứ đâu trong đoạn, không nhất thiết ở biên hoặc trùng tâm.
+
+
+    Một thước báo 'sai lệch không quá 0,3 cm' không có nghĩa mọi lần đo đều lệch đúng 0,3 cm.
+
+    Nhắc lại khoảng đóng \([a-d;a+d]\), trị tuyệt đối là khoảng cách không âm và số đúng \(\bar a\) có thể chưa biết. 
+
+    Đặt số đo gần đúng tại \(a\); số đúng nằm đâu đó quanh a. **Sai số thực** là khoảng cách tới giá trị đúng, chỉ tính được khi biết \(\bar a\); **độ chính xác d** là giới hạn cho khoảng cách này. Nhận thức 'không quá' đến trước ký hiệu \(\Delta_a=|a-\bar a|\le d\).
+
+
+    Khi thiếu \(\bar a\), chỉ lập khoảng và viết bất đẳng thức \(\Delta_a\le d\). Không được tự thay bằng dấu bằng.
+
+    **Em vận dụng.** Máy báo \(a=8{,}4\,\mathrm{cm}\), độ chính xác \(d=0{,}3\,\mathrm{cm}\). Số đúng \(\bar a\) thuộc khoảng nào? Có chắc \(\Delta_a=0{,}3\,\mathrm{cm}\) không?
+
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY02" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        <div class="thpt-r4-first-try-answer">
+        <p><strong>Đối chiếu kết quả:</strong> \(\bar a\in[8{,}1;8{,}7]\,\mathrm{cm}\). Chỉ chắc \(\Delta_a\le0{,}3\,\mathrm{cm}\), không chắc bằng.</p>
+        <p><strong>Giải thích vì sao:</strong> Lấy 8,4 trừ/cộng 0,3. Sai số có thể 0 nếu giá trị đúng đúng bằng 8,4; độ chính xác chỉ giới hạn trên.</p>
+        <p><strong>Nếu chưa làm được:</strong> Xem hình khoảng giá trị đúng tại §1.2 và công thức §2.2, rồi <a href="../luyen-tap/?item=THPT-G10-B12-C02">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
+        </div>
+
+
+    #### Sai số lớn hay nhỏ còn phụ thuộc cỡ đại lượng
+
+    Sai 3 m khi đo 150 m thường nhẹ hơn sai 3 m khi đo một đoạn 10 m. Cần so sánh sai số với quy mô con số đang dùng.
+
+    Đã biết độ chính xác d, sai số tuyệt đối \(\Delta_a\), số gần đúng a và phép đổi tỉ số sang phần trăm. Kiểm a khác 0. 
+
+    Để đánh giá mức sai số so với cỡ số gần đúng, ta lấy độ lệch tuyệt đối **chia cho \(|a|\)** theo KNTT. Nếu chỉ biết \(\Delta_a\le d\), chỉ có cận trên tỉ lệ chứ chưa biết tỉ lệ thực. Điều này giải thích cả mẫu số lẫn dấu bất đẳng thức.
+
+
+    **Em vận dụng.** Đo quãng đường \(a=150\,\mathrm m\), sai số tuyệt đối không vượt quá \(d=3\,\mathrm m\). Hãy tính cận trên của sai số tương đối và phân biệt dấu \(=\) với \(\le\).
+
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY03" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        <div class="thpt-r4-first-try-answer">
+        <p><strong>Đối chiếu kết quả:</strong> \(\delta_a\le3/150=0{,}02=2\%\), không thể kết luận \(\delta_a=2\%\).</p>
+        <p><strong>Giải thích vì sao:</strong> Ta đang so giới hạn sai số 3 m với số gần đúng 150 m. Sai số thực có thể nhỏ hơn 3 m; cần giữ dấu \(\le\).</p>
+        <p><strong>Nếu chưa làm được:</strong> Đọc lại điều kiện mẫu số và cận sai số tương đối trong §2.2, rồi <a href="../luyen-tap/?item=THPT-G10-B12-P06">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
+        </div>
+
+
+    #### Cắt bớt chữ số nhưng phải biết mức chênh
+
+    Khi ghi giá tiền hay chiều dài, ta thường không cần mọi chữ số; quy tròn giúp trình bày gọn nhưng có thể làm đổi giá trị.
+
+    Biết hàng phần mười, phần trăm (0,01) và quy tắc chữ số ngay bên phải hàng giữ lại. 
+
+    Làm tròn đến một hàng là chọn giá trị gần số ban đầu nhất theo bội của đơn vị hàng đó; chênh lệch là cái giá của sự giản lược. Nếu số ban đầu **được biết chính xác** và làm tròn gần nhất tới bước h, sai số quy tròn không vượt quá h/2; điều đó không biến thành độ chính xác của một phép đo khác.
+
+
+    **Em vận dụng.** Làm tròn số đúng \(7{,}346\) tới hàng phần trăm. Tìm số quy tròn và sai số tuyệt đối của phép làm tròn.
+
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY04" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        <div class="thpt-r4-first-try-answer">
+        <p><strong>Đối chiếu kết quả:</strong> Số quy tròn là \(7{,}35\); sai số là \(|7{,}35-7{,}346|=0{,}004\).</p>
+        <p><strong>Giải thích vì sao:</strong> Giữ hai chữ số thập phân, chữ số kế tiếp 6 làm tăng hàng phần trăm. Sai số 0,004 nhỏ hơn 0,005 (nửa đơn vị hàng phần trăm).</p>
+        <p><strong>Nếu chưa làm được:</strong> Ôn quy tắc hàng quy tròn tại §2.3, rồi <a href="../luyen-tap/?item=THPT-G10-B12-P02">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
+        </div>
+
+    ### 1.3. Thực hành máy tính cầm tay — tự nhập, đọc và kiểm
+
+    **Tại sao phải tự bấm máy?** Một biểu thức như \(\sqrt5\) là giá trị chính xác; màn hình chỉ ghi hữu hạn chữ số. Nhập đúng biểu thức, đọc đủ chữ số và quy tròn theo độ chính xác yêu cầu là **ba kĩ năng khác nhau**, không thể học chỉ bằng cách nhìn một kết quả chép sẵn.
+
+    **Quy trình cho máy tính có phím căn/lũy thừa (tên phím tùy model):**
+
+    1. **Xác định biểu thức:** Khoanh rõ số nằm trong dấu căn, số mũ và dấu ngoặc. Xóa biểu thức cũ trước khi nhập.
+    2. **Nhập đúng:** Với \(\sqrt5\), chọn chức năng căn bậc hai, nhập 5 trong dấu căn và nhấn phím tính. Nếu máy cho dạng căn/phân số, chọn chức năng chuyển sang thập phân (có máy dùng S⇔D, có máy dùng menu FORMAT). Không mặc định mọi máy có một tên phím.
+    3. **Đọc trước, quy tròn sau:** \(\sqrt5\approx2{,}2360679\ldots\). Làm tròn đến hàng phần nghìn được \(2{,}236\), vì chữ số tiếp theo là 0. Không thay căn bằng \(2{,}2\) trước khi tính một biểu thức dài.
+    4. **Đánh giá mức sai số:** Làm tròn gần nhất đến bước \(0{,}001\) từ kết quả đủ chính xác cho sai số không quá \(0{,}0005\). Với chính ví dụ này có thể kiểm \(2{,}2355^2<5<2{,}2365^2\). Số chữ số hiển thị **không** tự chứng minh độ chính xác của một phép đo khác.
+
+    **Nếu không có phím căn bậc ba:** tính \(\sqrt[3]{11}\) qua chức năng \(11^{(1/3)}\) với ngoặc quanh \(1/3\). Không gõ phép chia \(11/3\). Với từng model, hãy đọc kí hiệu phím thực tế hoặc tài liệu kèm máy; không đoán thao tác.
+
+    **Em vận dụng — phải thao tác trên máy trước khi mở đối chiếu.** Tính \(\sqrt[3]{11}\) và ghi số gần đúng đến hàng phần nghìn sao cho sai số không vượt quá \(0{,}0005\). Hãy mô tả cách nhập và vì sao không dùng \(11/3\).
+
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY-CALC-R01" data-outcome-id="G10-B12-CALCULATOR" data-thpt-help-ref="HELP-G10-B12-CALC-01" hidden></span>
+
+    ??? question "Đối chiếu sau khi đã tự thao tác"
+
+        **Kết quả:** \(\sqrt[3]{11}\approx2{,}223980090\ldots\), làm tròn được \(2{,}224\). Sai số khoảng \(0{,}00001991<0{,}0005\); có thể chứng minh bằng \(2{,}2235^3<11<2{,}2245^3\).
+
+        **Vì sao:** Căn bậc ba là lũy thừa mũ \(1/3\), không phải phép chia cho 3. Chỉ có thể ghi đã thực hành máy khi đã thật sự nhập, đọc và quy tròn.
+
+        **Nếu nhầm:** Mở mục lỗi 4.3, rồi chọn bộ số mới trong Luyện tập; không dùng kết quả vừa xem làm chứng cứ độc lập.
+
+    ### 1.4. Thuật ngữ, kiến thức và kỹ năng
+
+    **Thuật ngữ:** Số đúng, số gần đúng, sai số tuyệt đối, độ chính xác, sai số tương đối, quy tròn và chữ số đáng tin cậy.
+
+    **Sau bài học, em cần làm được:** Viết đúng dấu gần bằng; phân biệt sai số thực với độ chính xác; xác định khoảng chứa giá trị đúng; tính sai số tương đối khi đủ điều kiện; quy tròn phù hợp độ chính xác; sử dụng máy tính cầm tay để tính và ghi số gần đúng.
+
+=== "Kiến thức SGK"
+
+    ### 2.1. Số gần đúng
+
+    !!! abstract "Khái niệm — Số gần đúng"
+
+        Theo kí hiệu SGK/SBT KNTT, **\(a\) là số gần đúng**, còn **\(\bar a\) là số đúng** (có thể chưa biết). Số gần đúng \(a\) thay cho số đúng \(\bar a\); viết \(a\approx\bar a\). Không phải mọi chữ số thập phân được hiển thị đều là chữ số đáng tin cậy; độ chính xác phụ thuộc phép đo/quy trình. Làm tròn một giá trị theo hàng yêu cầu để có số quy tròn. Quy tròn tới hàng phần mười, phần trăm, hàng chục… phải xác định rõ hàng làm tròn.
+
+
+    **Máy tính cầm tay giúp tìm số gần đúng, không tự chứng minh độ chính xác.** Với biểu thức chứa căn hoặc \(\pi\), em nhập đúng biểu thức, quan sát kết quả thập phân, rồi làm tròn theo yêu cầu. Ví dụ máy cho \(\sqrt2\approx1{,}41421356\ldots\); lấy \(a=1{,}414\) với độ chính xác \(d=0{,}0005\) là hợp lệ vì \(1{,}4135^2<2<1{,}4145^2\), nên \(|\sqrt2-1{,}414|<0{,}0005\). Chỉ đọc nhiều chữ số trên màn hình không có nghĩa mọi chữ số đều đáng tin cậy.
+
+    ### 2.2. Sai số tuyệt đối và sai số tương đối
+
+    !!! abstract "Định nghĩa — Sai số tuyệt đối và độ chính xác"
+
+        Sai số tuyệt đối của số gần đúng \(a\) là \(\Delta_a=|a-\bar a|\). Nếu **chưa biết** số đúng \(\bar a\), nhưng \(\Delta_a\le d\), thì \(d\) là **độ chính xác/giới hạn trên**; không được suy \(\Delta_a=d\). Số đúng nằm trong \(a-d\le\bar a\le a+d\). Sai số tuyệt đối cùng đơn vị với đại lượng.
+
+    #### b. Sai số tương đối
+
+    !!! abstract "Định nghĩa — Sai số tương đối"
+
+        Với số gần đúng **\(a\ne0\)** và số đúng \(\bar a\) đã biết, \(\delta_a=\Delta_a/|a|\) (thường viết theo %): **mẫu số là số gần đúng \(a\) theo KNTT**, không phải số đúng. Khi chỉ có \(a\ne0\) và \(\Delta_a\le d\), chỉ suy ra **cận trên** \(\delta_a\le d/|a|\), không được viết đẳng thức \(\delta_a=d/|a|\) nếu chưa biết sai số thực. Không chia cho 0, không nhầm tỷ lệ với %.
+
+    ### 2.3. Quy tròn số gần đúng
+
+    !!! info "Quy tắc — Quy tròn và sai số"
+
+        Khi làm tròn một số đúng tới đơn vị của hàng \(h>0\), sai số làm tròn thông thường không quá \(h/2\) nếu áp dụng quy tắc làm tròn gần nhất. Không tự khẳng định mọi phép đo tới hàng đó có cùng sai số tối đa: còn phụ thuộc độ chính xác đo ban đầu. Khi một số gần đúng \(a\) được cho với độ chính xác \(d\) nhưng không nêu hàng quy tròn, cần kiểm đúng quy tắc SGK/SBT về **hàng thấp nhất có một đơn vị lớn hơn d** trước khi chọn hàng.
+
+=== "Ví dụ"
+
+    Trước khi xem lời giải, hãy xác định số đúng có biết không, đề cho **sai số thực** hay chỉ cho **cận trên \(d\)**, rồi chọn công thức. Nhìn lại dấu bằng và dấu bất đẳng thức sau khi tính.
+
+    ### 3.1. Ví dụ 1 — Sai số thực khi đã biết số đúng
+
+    #### Đề bài
+
+    **Đề:** Cho số đúng \(\bar a=12{,}347\), số gần đúng \(a=12{,}35\). Tìm sai số tuyệt đối và sai số tương đối.
+
+    **Phân tích:** Biết \(\bar a\) nên tính được \(\Delta_a\). Với sai số tương đối theo KNTT, phải chia cho **\(|a|\)**, không phải số đúng.
+
+    !!! example "Lời giải"
+
+        **Giải:** \(\Delta_a=|12{,}35-12{,}347|=0{,}003\). Do \(a\ne0\), \(\delta_a=0{,}003/12{,}35\approx0{,}0243\%\).
+
+    **Kiểm lại:** Nếu chỉ có \(\Delta_a\le0{,}003\), phải dùng \(\delta_a\le0{,}003/12{,}35\), không khẳng định bằng.
+
+    ### 3.2. Ví dụ 2 — Độ chính xác chỉ cho một khoảng
+
+    #### Đề bài
+
+    **Đề:** Chiều dài gần đúng \(a=8{,}6\,\mathrm{cm}\), độ chính xác \(d=0{,}2\,\mathrm{cm}\). Tìm khoảng số đúng có thể nằm và đánh giá sai số.
+
+    **Phân tích:** Số đúng chưa biết, nên phải giải \(|\bar a-a|\le d\), thay vì tự lấy \(d\) làm sai số thực.
+
+    !!! example "Lời giải"
+
+        **Giải:** \(\bar a\in[8{,}6-0{,}2;8{,}6+0{,}2]=[8{,}4;8{,}8]\,\mathrm{cm}\). Chỉ biết \(0\le\Delta_a\le0{,}2\,\mathrm{cm}\).
+
+    **Kiểm lại:** Nếu \(\bar a=8{,}6\) thì sai số 0; nếu \(\bar a=8{,}4\) thì sai số 0,2. Bộ số khác hình \(20{,}0\pm0{,}1\) ở tab Khám phá.
+
+    ### 3.3. Ví dụ 3 — Quy tròn và kiểm sai số
+
+    #### Đề bài
+
+    **Đề:** Quy tròn số đúng \(3{,}14159\) tới hàng phần trăm và tính sai số thực.
+
+    **Phân tích:** Cần xét chữ số hàng phần nghìn để quyết định giữ hay tăng chữ số hàng phần trăm. Có số ban đầu chính xác nên tính chênh được.
+
+    !!! example "Lời giải"
+
+        **Giải:** Số quy tròn là \(3{,}14\). Sai số tuyệt đối \(|3{,}14159-3{,}14|=0{,}00159\).
+
+    **Kiểm lại:** \(0{,}00159\le0{,}005\), bằng một nửa bước quy tròn \(0{,}01\). Không áp dụng giới hạn này tùy tiện cho phép đo khác.
+
+    ### 3.4. Ví dụ 4 — Bấm máy tính đúng biểu thức rồi quy tròn
+
+    #### Đề bài
+
+    **Đề:** Dùng máy tính tìm giá trị gần đúng của \(2^9\sqrt3\) với ba chữ số thập phân, cùng kiểu bài trong SGK trang in 74.
+
+    **Phân tích:** Giữ dấu căn và lũy thừa nguyên vẹn trong máy, không lấy \(\sqrt3=1{,}7\) trước khi nhân. Nhận kết quả đủ chữ số rồi mới quy tròn.
+
+    !!! example "Lời giải"
+
+        **Giải:** Xóa phép tính cũ; nhập \(2^9\times\sqrt3\), bảo đảm căn chỉ phủ số 3, nhấn tính. Đổi dạng thập phân nếu máy đang hiện kết quả chính xác. Ta đọc được \(886{,}810013475\ldots\) và làm tròn đến ba chữ số thập phân là \(886{,}810\).
+
+    **Kiểm lại:** Số \(886{,}810\) chỉ là số gần đúng của \(2^9\sqrt3\). Khi máy tính đủ độ chính xác và quy tròn gần nhất đến bước \(0{,}001\), chênh do quy tròn không quá \(0{,}0005\).
+
+=== "Lỗi thường gặp"
+
+    <span data-thpt-help-id="HELP-G10-B12-01" hidden></span>
+
+    ??? tip "4.1. Nhầm độ chính xác d với sai số tuyệt đối thực tế"
+
+        <ol><li><strong>Nhận diện lỗi:</strong> Coi độ chính xác \(d\) là sai số tuyệt đối thực tế \(\Delta_a\), dù không biết số đúng.</li><li><strong>Dấu hiệu / tự chẩn đoán:</strong> Em đã viết \(\Delta_a=d\) chỉ vì đề cho độ chính xác \(d\)? Đề đã cho số đúng \(\bar a\), hay mới chỉ cho số gần đúng \(a\) và cận sai số \(d\)?</li><li><strong>Kiến thức gốc:</strong> \(a\) là số gần đúng, \(\bar a\) là số đúng; \(\Delta_a=|a-\bar a|\). Nếu chỉ biết \(\Delta_a\le d\) thì không thể kết luận \(\Delta_a=d\); ta chỉ biết \(a-d\le\bar a\le a+d\).</li><li><strong>Tự sửa:</strong> Với số gần đúng \(a\) và độ chính xác \(d\), hãy lập đúng khoảng \([a-d;a+d]\) chứa **số đúng** \(\bar a\), rồi phát biểu rõ “sai số tuyệt đối **không quá** \(d\)”, không ghi bằng \(d\) khi chưa biết sai số thực. Ví dụ liên hệ câu Core C02: \(a=12{,}3\,\mathrm{cm}\), \(d=0{,}2\,\mathrm{cm}\) thì \(\bar a\in[12{,}1;12{,}5]\,\mathrm{cm}\), chứ chưa biết \(\Delta_a=0{,}2\).</li><li><strong>Luyện lại bằng ID sẵn có:</strong> THPT-G10-B12-C02 (không sao chép câu, không đổi đáp án hay lời giải).</li></ol><p><a href="../luyen-tap/?item=THPT-G10-B12-C02">Luyện lại bằng câu hỏi đã có</a></p>
+
+    <span data-thpt-help-id="HELP-G10-B12-02" hidden></span>
+
+    ??? tip "4.2. Sai mẫu số và nhầm cận sai số tương đối"
+
+        <ol><li><strong>Nhận diện lỗi:</strong> Dùng số đúng (chưa biết) thay cho số gần đúng khi tính sai số tương đối, hoặc nhầm cận sai số với sai số thực.</li><li><strong>Dấu hiệu / tự chẩn đoán:</strong> Em lấy \(\frac{\Delta_a}{|\bar{a}|}\) thay cho \(\frac{\Delta_a}{|a|}\)? Khi chỉ biết độ chính xác \(d\), em đã nhầm \(\Delta_a=d\) chưa?</li><li><strong>Kiến thức gốc:</strong> Với số gần đúng \(a\ne0\), \(\delta_a=\frac{\Delta_a}{|a|}\). Nếu chỉ biết \(\Delta_a\le d\) thì chỉ suy \(\delta_a\le\frac{d}{|a|}\); không khẳng định \(\delta_a=\frac{d}{|a|}\) khi chưa biết sai số thực.</li><li><strong>Tự sửa:</strong> Xác định lại \(a,\bar{a},\Delta_a,d\); tính cận phần trăm đúng theo \(a\) và nói rõ dấu \(\le\).</li><li><strong>Luyện lại bằng ID sẵn có:</strong> THPT-G10-B12-P06.</li></ol><p><a href="../luyen-tap/?item=THPT-G10-B12-P06">Luyện lại bằng câu hỏi đã có</a></p>
+
+
+    <span data-thpt-help-id="HELP-G10-B12-CALC-01" hidden></span>
+
+    ??? tip "4.3. Nhập nhầm căn bậc ba hoặc quy tròn quá sớm"
+
+        **Cách làm sai:** Muốn tính \(\sqrt[3]{7}\) nhưng nhập \(7/3\), hoặc thay \(\sqrt[3]{7}\) bằng \(1{,}9\) rồi tự nhận kết quả chính xác đến hàng phần nghìn.
+
+        **Vì sao sai:** Chia 7 cho 3 khác với căn bậc ba của 7; làm tròn quá sớm sẽ làm mất chữ số cần dùng. Số chữ số hiển thị trên máy không tự nói gì về sai số của một phép đo khác.
+
+        **Tự sửa:** Dùng chức năng căn bậc ba hoặc nhập \(7^{(1/3)}\) có ngoặc. Đổi sang thập phân, đọc đủ chữ số, sau đó mới làm tròn. Khi yêu cầu cận \(0{,}0005\), có thể kiểm \(1{,}9125^3<7<1{,}9135^3\) để chứng minh gần đúng \(1{,}913\).
+
+        **Luyện lại:** Làm câu P07 ở Core/Luyện tập trên máy thật trước khi mở đáp án. Nếu đã xem đáp án, chọn \(\sqrt[3]{13}\) làm bộ số luyện độc lập.
+
+    **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
+
+    <p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 10 Kết nối tri thức với cuộc sống và học liệu SLM hiện hành. Lời giảng được biên tập nhằm hỗ trợ tự học độc lập.</p>
+
+
+<!-- END_B12_KNOWLEDGE_MARKDOWN -->
+
+## B. Authoritative public formative records (eight old untouched + one new P07)
+
+<!-- BEGIN_B12_FORMATIVE_JS -->
+"use strict";
+/* G10 ChV B12 PUBLIC_FORMATIVE_ONLY: eight immutable independently reviewed R01 canonical items
+   plus new P07 calculator-practice candidate (Delta C Academic/PED review pending).
+   Original eight stems, options, keys, hints and solutions unchanged; no Readiness/Mastery. */
+(function(root){
+ const contentVersion="THPT-G10-CHV-B12-CALCULATOR-R03-CANDIDATE";
+ const records=[
+  {
+    "item_id": "THPT-G10-B12-C01",
+    "lesson": "12",
+    "role": "CORE",
+    "skill": "G10-B12-ABS_ERROR",
+    "stem": "Biết số đúng $\\bar a=14{,}37$, số gần đúng $a=14{,}4$. Sai số tuyệt đối là bao nhiêu?",
+    "options": [
+      "A. $0{,}3$",
+      "B. $0{,}03$",
+      "C. $0{,}003$",
+      "D. $14{,}37$"
+    ],
+    "answerKey": "B",
+    "solution": "Đáp án: $0{,}03$\nLời giải: $\\Delta=|14{,}37-14{,}4|=0{,}03$.",
+    "hint": "Lấy trị tuyệt đối hiệu số đúng và số gần đúng.",
+    "exposure": "FORMATIVE_ONLY",
+    "difficulty": "BASIC"
+  },
+  {
+    "item_id": "THPT-G10-B12-C02",
+    "lesson": "12",
+    "role": "CORE",
+    "skill": "G10-B12-ABS_ERROR",
+    "stem": "Kết quả đo $12{,}3\\,\\mathrm{cm}$ có độ chính xác $d=0{,}2\\,\\mathrm{cm}$. Kết luận chắc chắn nào đúng?",
+    "options": [
+      "A. $\\bar a=12{,}5$",
+      "B. $\\Delta=0{,}2$ chắc chắn",
+      "C. $\\bar a\\in[12{,}1;12{,}5]$",
+      "D. $\\bar a=12{,}3$ chắc chắn"
+    ],
+    "answerKey": "C",
+    "solution": "Đáp án: $\\bar a\\in[12{,}1;12{,}5]\\,\\mathrm{cm}$\nLời giải: $|\\bar a-12{,}3|\\le0{,}2$ nên $12{,}1\\le\\bar a\\le12{,}5$. Không suy sai số thực bằng 0,2.",
+    "hint": "Độ chính xác là giới hạn sai số, chưa biết sai số thực.",
+    "exposure": "FORMATIVE_ONLY",
+    "difficulty": "BASIC"
+  },
+  {
+    "item_id": "THPT-G10-B12-P01",
+    "lesson": "12",
+    "role": "PRACTICE",
+    "skill": "G10-B12-REL_ERROR",
+    "stem": "Số đúng $\\bar a=80$, dùng số gần đúng $a=78$. Tính sai số tương đối theo phần trăm.",
+    "solution": "Đáp án: $100/39\\%\\approx2{,}5641\\%$\nLời giải: $\\Delta_a=|80-78|=2$; $\\delta_a=2/78=1/39\\approx2{,}5641\\%$. Không dùng mẫu số 80.",
+    "hint": "Tìm $\\Delta$, chia cho số gần đúng $|a|=78$ theo SGK.",
+    "exposure": "FORMATIVE_ONLY",
+    "difficulty": "CORE_APPLY"
+  },
+  {
+    "item_id": "THPT-G10-B12-P02",
+    "lesson": "12",
+    "role": "PRACTICE",
+    "skill": "G10-B12-ROUNDING",
+    "stem": "Quy tròn số đúng 4286 đến hàng chục. Hãy cho số quy tròn và sai số tuyệt đối thực.",
+    "solution": "Đáp án: 4290, sai số 4\nLời giải: 4286 làm tròn đến hàng chục được 4290; sai số thực $|4290-4286|=4$, không quá 5.",
+    "hint": "Chữ số hàng đơn vị là 6.",
+    "exposure": "FORMATIVE_ONLY",
+    "difficulty": "CORE_APPLY"
+  },
+  {
+    "item_id": "THPT-G10-B12-P03",
+    "lesson": "12",
+    "role": "PRACTICE",
+    "skill": "G10-B12-REL_ERROR",
+    "stem": "Số đúng là 2500 người, số gần đúng a=2475 người. Sai số tương đối là bao nhiêu?",
+    "solution": "Đáp án: $100/99\\%\\approx1{,}0101\\%$\nLời giải: $\\Delta_a=25$, $\\delta_a=25/2475=1/99\\approx1{,}0101\\%$. Không dùng mẫu 2500.",
+    "hint": "Chia sai số tuyệt đối cho **số gần đúng** 2475 theo KNTT.",
+    "exposure": "FORMATIVE_ONLY",
+    "difficulty": "CORE_APPLY"
+  },
+  {
+    "item_id": "THPT-G10-B12-P04",
+    "lesson": "12",
+    "role": "PRACTICE",
+    "skill": "G10-B12-APPROX_CONCEPT",
+    "stem": "Bản ghi $3{,}20\\,\\mathrm{m}$ với độ chính xác $0{,}05\\,\\mathrm{m}$. Khoảng nào **chắc chắn chứa** giá trị đúng?",
+    "solution": "Đáp án: $\\bar a\\in[3{,}15;3{,}25]\\,\\mathrm{m}$\nLời giải: $3{,}20-0{,}05\\le\\bar a\\le3{,}20+0{,}05$, tức $\\bar a\\in[3{,}15;3{,}25]\\,\\mathrm{m}$.",
+    "hint": "Giải $|\\bar a-3{,}20|\\le0{,}05$. Số gần đúng là 3,20.",
+    "exposure": "FORMATIVE_ONLY",
+    "difficulty": "CORE_APPLY"
+  },
+  {
+    "item_id": "THPT-G10-B12-P05",
+    "lesson": "12",
+    "role": "PRACTICE",
+    "skill": "G10-B12-ROUNDING",
+    "stem": "Làm tròn 10,06 đến hàng phần mười. Sai số tuyệt đối của phép làm tròn là bao nhiêu?",
+    "solution": "Đáp án: $10{,}1$ và $0{,}04$\nLời giải: $10{,}06\\to10{,}1$; $\\Delta=|10{,}06-10{,}1|=0{,}04$.",
+    "hint": "Giữ một chữ số thập phân; xem chữ số hàng phần trăm.",
+    "exposure": "FORMATIVE_ONLY",
+    "difficulty": "CORE_APPLY"
+  },
+  {
+    "item_id": "THPT-G10-B12-P06",
+    "lesson": "12",
+    "role": "PRACTICE",
+    "skill": "G10-B12-REL_ERROR",
+    "stem": "Hai phép đo cùng cho giá trị gần đúng $10{,}0\\,\\mathrm{cm}$, nhưng độ chính xác lần lượt $d_1=0{,}2$ cm và $d_2=0{,}05$ cm. So sánh **cận trên** sai số tương đối $d/|a|$.",
+    "solution": "Đáp án: Lần 2 nhỏ hơn: $0{,}5\\%$ so với $2\\%$\nLời giải: $0{,}2/10=2\\%$; $0{,}05/10=0{,}5\\%$. Lần 2 có giới hạn trên sai số tương đối nhỏ hơn; sai số thực từng phép đo chưa biết.",
+    "hint": "Tính hai cận trên với cùng số gần đúng a=10,0; không gọi đó là sai số thực.",
+    "exposure": "FORMATIVE_ONLY",
+    "difficulty": "APPLICATION"
+  },
+  {
+    "item_id": "THPT-G10-B12-P07",
+    "lesson": "12",
+    "role": "PRACTICE",
+    "skill": "G10-B12-CALCULATOR_APPROX",
+    "stem": "Hãy tự dùng máy tính cầm tay tìm số gần đúng của $\\sqrt[3]{7}$ đến hàng phần nghìn, rồi kiểm tra sai số của kết quả có nhỏ hơn $0{,}0005$ không. Nêu cách nhập để không nhầm phép căn bậc ba với chia cho 3.",
+    "solution": "Kết quả: $\\sqrt[3]{7}\\approx1{,}91293118\\ldots\\approx1{,}913$. Nhập phím căn bậc ba hoặc $7^{(1/3)}$ có ngoặc, chuyển sang dạng thập phân rồi xét chữ số hàng phần mười nghìn là 9. Chứng minh $1{,}9125^3<7<1{,}9135^3$ và hàm lập phương tăng trên số dương, nên $|\\sqrt[3]{7}-1{,}913|<0{,}0005$. Không thay $\\sqrt[3]{7}$ bằng $7/3$.",
+    "hint": "Tự thao tác máy trước khi mở gợi ý. Dùng căn bậc ba hoặc mũ $1/3$ có ngoặc, đọc nhiều hơn ba chữ số thập phân và chỉ sau đó mới quy tròn. Có thể kiểm cận bằng lập phương hai biên.",
+    "exposure": "FORMATIVE_ONLY",
+    "difficulty": "APPLICATION"
+  }
+];
+ const validate=()=>({valid:records.length===9&&new Set(records.map(x=>x.item_id)).size===9&&
+  records.every(x=>/^THPT-G10-B12-[CP]\d{2}$/.test(x.item_id)&&x.exposure==="FORMATIVE_ONLY"&&
+  (!x.options||(x.options.length===4&&/^[ABCD]$/.test(x.answerKey))))});
+ const forLesson=(lesson,role)=>records.filter(x=>x.lesson===String(Number(lesson))&&
+  (role==="core"?x.role==="CORE":x.role==="PRACTICE"));
+ root.THPT_CHV_B12_REVIEWED_FORMATIVE=Object.freeze({contentVersion,
+  records:Object.freeze(records.map(x=>Object.freeze({...x,...(x.options?{options:Object.freeze(x.options)}:{})}))),
+  validate,forLesson});
+})(window);
+
+<!-- END_B12_FORMATIVE_JS -->
+
+## C. One original Written W12 canonical card (historical unchanged)
+
+<!-- BEGIN_B12_WRITTEN_CARD -->
+<section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="normal" data-thpt-written-canonical="THPT-G10-CHV-W12" data-thpt-exposure-role="SGK_WRITTEN" id="thpt-g10-chv-w12"><p class="thpt-r4-eyebrow">BÀI TỰ LUẬN · BÀI 12</p><h2>Bài 12 · Tự luận</h2><p>Đường kính thật của một chi tiết là \(\bar a=2{,}486\,\mathrm{cm}\), bảng đo ghi số gần đúng \(a=2{,}49\,\mathrm{cm}\). (a) Tính sai số tuyệt đối và tương đối thực, làm tròn tỷ lệ % đến 3 chữ số thập phân. (b) Xác nhận \(a\) là kết quả quy tròn \(\bar a\) đến hàng phần trăm và đánh giá sai số với giới hạn \(0{,}005\,\mathrm{cm}\). (c) Giả sử chỉ biết bảng ghi có độ chính xác \(d=0{,}005\,\mathrm{cm}\), viết khoảng có thể chứa số đúng \(\bar a\) và giải thích vì sao không xác định được sai số thực.</p><details><summary>Xem lời giải và rubric sau khi tự làm</summary><p><strong>Lời giải:</strong> (a) \(\Delta=|2{,}486-2{,}49|=0{,}004\,\mathrm{cm}\), \(\delta_a=0{,}004/2{,}49\approx0{,}16064\%\approx0{,}161\%\). (b) Số đúng 2,486 làm tròn tới hàng phần trăm → a=2,49; sai số 0,004 không vượt 0,005. (c) Nếu không biết số đúng \(\bar a\), chỉ có \(2{,}485\le\bar a\le2{,}495\); \(d\) là mức chặn, không phải giá trị \(\Delta\) thực.</p><p><strong>Rubric tự đối chiếu:</strong> tìm đúng \(\Delta\), đơn vị (1,5); \(\delta_a\), dùng mẫu số **a gần đúng** và % (1,5); làm tròn đúng hàng (1); kiểm giới hạn làm tròn (1); khoảng bất định (1); giải thích độ chính xác khác sai số thật (1).</p><p>Chỉ tự đối chiếu, không ghi điểm hay Skill Mastery.</p></details></section>
+
+<!-- END_B12_WRITTEN_CARD -->
+
+## D. Required independent reviewer output
+
+Use the five authorized Permanent Sources THPT v2.1 and verified SGK/SBT S1; output SOURCE_RECEIPT, ACADEMIC and PED verdict by every LESSON_OUTCOME_ID, canonical ITEM_ID×ROLE×PLACEMENT matrix, Q01–Q18 clearance, P0/P1/P2, MINIMAL_DELTA, immutable SHA source snapshot. Source authentication gaps and any mathematically material changes require HOLD until resolved. Do not equate author QA, screenshots, source counts or browser CI with an independent Academic/PED PASS.
