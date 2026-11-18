@@ -13,17 +13,17 @@ CATALOG_TOPIC_ID: CD15
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_SPATIAL_PARALLELISM_R04_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 36e94c3752ff2315907a6f3424daa6fa25f80938
+ACADEMIC_SOURCE_BLOB: 6579363666f07f13cf5c7e407b311a08f1e700e2
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC15_R04_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 08479dc9a03670259292182662a2dda00b815961
+REVIEW_RECEIPT_BLOB: 523f2038b195f7826c6830bc739c4b3dc8de93b3
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_R04_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: e993dbf16a98f0dbd2f19af6d243f221b28b98c6
+AUTHOR_A1_A7_BLOB: e8d3d03c5a3a339eac9f68e41429fc0c8621de3c
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_R04_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: e993dbf16a98f0dbd2f19af6d243f221b28b98c6
+AUTHOR_METADATA_BLOB: e8d3d03c5a3a339eac9f68e41429fc0c8621de3c
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHIV_B10_B14_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md
 ORIGINAL_SGK_SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_THPT_TOPIC15_LINE_PLANE_RELATION_R01_20261113.html
-INTERACTIVE_MODEL_BLOB: 3f3c75765b6cddcaa53994027c45e79701d4d840
+INTERACTIVE_MODEL_BLOB: cf6510d5d964958982fae3ebce5823e35aeac639
 MODEL_ID: SLM-TOP15-LINE-PLANE-R00
 SVG_B10_BLOB: 7791308bcdd5cae8528dfdc2ce1085bc4378785d
 SVG_B11_BLOB: bb4a2f1b9b39b5de2ef4d3221c26f068a873d61c
@@ -343,7 +343,7 @@ SGK G11 KNTT Tập1 ChIV printed B10 70–77, B11 78–83, B12 84–87, B13 88�
 
 ## 18/11 · Source-bound learner recap and controlled Q18
 
-- Current learner SHA `36e94c3752ff2315907a6f3424daa6fa25f80938`, A1 `e993dbf16a98f0dbd2f19af6d243f221b28b98c6`, receipt `08479dc9a03670259292182662a2dda00b815961`. This reuses **one existing R04 handoff**, no duplicate canonical bank.
+- Current learner SHA `6579363666f07f13cf5c7e407b311a08f1e700e2`, A1 `e8d3d03c5a3a339eac9f68e41429fc0c8621de3c`, receipt `523f2038b195f7826c6830bc739c4b3dc8de93b3`. This reuses **one existing R04 handoff**, no duplicate canonical bank.
 - Student recap directly summarizes plane identification, skew/coplanar line relationships, distinct d∥(P) criterion and parallel projection limits. Affected mathematical assumptions and examples checked in Q18, 89 canonical IDs untouched.
 - Signed old R04 source `581ff0b0c019a705d36f306d7d5b0db38d185c0b` is historical. Ten pre-existing learner formatting/prose changes including 7 Selfcheck label corrections were disclosed and checked before relocking. Practice/selfcheck stems, original SVG and rubric unchanged; this is scoped DELTA_C author review, not new independent NotebookLM verdict or RELEASE authority.
 
@@ -378,3 +378,12 @@ A1 source lock, A2 original S1 printed page receipt, A3 author Q18 signed self-v
 ## RELEASE_AND_OWNER_GATE
 
 RELEASE has not integrated a real page, no runtime route/catalog or owner approval, no site Final Submit/MathJax/Golden/AP checks or actual iOS Safari/touch UAT, no owner merge/deploy authorization. R1–R5/P1–P2 remain exclusively RELEASE. CD15 is an AUTHORING catalogue sequence; owner decides runtime Topic ID. RELEASE must reconcile main + all Draft REGISTER rows before integration and preserve learner records/Firebase.
+
+## 18/11/2026 · Final exact current source, written W02 v2 and CSS model provenance
+
+One effective learner markdown source `6579363666f07f13cf5c7e407b311a08f1e700e2`, author exact Q18 `523f2038b195f7826c6830bc739c4b3dc8de93b3`, A1–A7 `e8d3d03c5a3a339eac9f68e41429fc0c8621de3c`. Historical R04 source `36e94c3752ff2315907a6f3424daa6fa25f80938` and historic R02 `ab4bd6a9f40b4925da35b725ccf396cd3c4eae9b` retain their distinct original Q18 meaning; no external reviewer PASS was transferred. 22 self-contained Knowledge outcomes and 22 worked Example + First Try / D6, 67 visible original SGK/Topic Practice, 8 public question-only reuse selfchecks, one canonical item ID per body/placement, no private RD1, new or official Topic Readiness, or Skill Mastery.
+
+- `TOP15-O21` and existing canonical Written `THPT-TOP15-W02` (same `item_id`, source-owned `CONTENT_VERSION=2`) distinguish directed vectors from scalar segment length in the original rectangle and its oblique projection: `(2,0,0)·(0,1,1)=0` and `(2,0,0)·(-1,1,0)=-2`, keeping rectangle and non-right projection claims, W02 1+1+1+1=4-point rubric, no changed question result. `DELTA_C_ACADEMIC_MATERIAL` direct mathematics and pedagogy self-Q18 verified without NotebookLM for deterministic fix.
+- **Real current model file** `Temp_THPT_TOPIC15_LINE_PLANE_RELATION_R01_20261113.html` Git blob `cf6510d5d964958982fae3ebce5823e35aeac639`, not old signed `3f3c75765b6cddcaa53994027c45e79701d4d840`. Git blob direct diff shows only 17 new Golden UI CSS lines, same HTML/Canvas JS/mathematical logic. `DELTA_A_UI` source custody corrected, no fabricated math regression or claim of live Safari/browser QA.
+- Five original SVG exact blobs unchanged; original G11 SGK canonical owner `e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b` verified on sibling owner PR #705, must be source-resolved on eventual combined RELEASE HEAD or R1 HOLD. Historical R02 ready manifest `6aafb53867cb699a7b270aecb9e165be3b6cc1b1` preserved **byte-identically** in `archive/THPT-TOPIC15-SPATIAL-PARALLELISM-FULL-R02_HISTORICAL_SIGNED_20261118.md` and removed from active `ready/`. This R04 is the only current author handoff; one ready/REGISTER must lock these exact current source SHA and pass Topic Intake CI on PR HEAD.
+- No merge/deploy, Golden live UI AP1–AP5, official assessment Final Submit, browser device UAT or student/Firebase changes authorized.
