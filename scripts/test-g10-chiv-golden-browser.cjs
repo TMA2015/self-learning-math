@@ -211,6 +211,25 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
        assert(s1.includes("vuông góc với mọi vectơ"),where+" zero perpendicular SGK convention");
        assert(s1.includes("tùy ý"),where+" zero vector angle SGK convention");
        assert(s1.includes("Mẫu số phải dương"),where+" cos denominator guard");
+       // Reopened owner-P2 scope: all B11 source-separated examples must
+       // present plain Đề, separate Phân tích, framed actual Giải and free Kiểm.
+       assert.equal(await article.getAttribute("data-g10-owner-p2-examples"),"b11",
+        where+" scoped P2 correction runtime");
+       const worked=blocks.nth(2).locator(":scope > .thpt-g10-example-solution");
+       assert.equal(await worked.count(),4,where+" four actual worked-solution boxes");
+       for(let k=0;k<4;k++){
+        const heading=blocks.nth(2).locator(":scope > h3").nth(k);
+        const problem=heading.locator("xpath=following-sibling::p[1]");
+        assert((await problem.innerText()).startsWith("Đề:"),
+         where+" unboxed problem statement "+k);
+        const box=worked.nth(k),text=(await box.innerText()).trim();
+        assert(text.startsWith("Giải:"),where+" only solution math enters box "+k);
+        assert(!text.startsWith("Đề:"),where+" never frame the problem "+k);
+       }
+       assert.equal(await blocks.nth(2).locator(":scope > p").filter({hasText:/^Phân tích:/}).count(),
+        4,where+" label all reasoning as Phân tích");
+       assert((await worked.first().evaluate(el=>getComputedStyle(el).backgroundColor))!=="rgba(0, 0, 0, 0)",
+        where+" actual solution background must paint");
      }
 
      assert.deepEqual((await blocks.locator(":scope > h2.thpt-g10-section-heading").allInnerTexts()).map(v=>v.trim()),
@@ -222,8 +241,8 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
      assert.equal(examples.length,[7,8,9,10,11].includes(lesson)?4:3,where+" owner-scoped B07/B08 and B09 S1 have four worked examples");
      assert(examples.every((v,i)=>v.trim().startsWith("3."+(i+1)+". Ví dụ "+(i+1)+([7,8,10,11].includes(lesson)?" —":". "))),
       where+" numbered visual example headings");
-     assert.equal(await blocks.nth(2).locator(".thpt-g10-example-solution").count(),[7,8,9,10].includes(lesson)?4:0,
-      where+" preexisting special solution wrappers remain intact; B11 has four authored direct worked sections");
+     assert.equal(await blocks.nth(2).locator(".thpt-g10-example-solution").count(),4,
+      where+" all 4 Golden examples have actual solution frames; B11 owner P2 regression protected");
      assert.equal(await article.locator(".thpt-r4-lead").count(),0,where+" no redundant introduction");
      assert.equal(await article.locator(".thpt-r4-footnote").count(),1,where+" only existing source footnote retained");
      assert.equal(await blocks.nth(3).locator(".thpt-r4-footnote").count(),1,where+" source note only on last tab");
