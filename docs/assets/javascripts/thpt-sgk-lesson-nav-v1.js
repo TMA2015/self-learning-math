@@ -419,6 +419,34 @@ const polishG10ChapterIV=(article)=>{
    }
   }
  }
+ /* Owner P2 B11 R02 Example defect: actual solutions, not prompts, must be framed.
+  * Move existing DOM nodes without changing formulas, source or answers. */
+ if(/\/chuong-iv\/bai-11\/?$/.test(location.pathname)){
+  const isLead=(node,re)=>node?.tagName==="P"&&
+   node.firstElementChild?.tagName==="STRONG"&&
+   re.test(node.firstElementChild.textContent.trim());
+  for(const heading of blocks[2].querySelectorAll(":scope > h3")){
+   let node=heading.nextElementSibling;
+   while(node&&node.tagName!=="H3"&&!isLead(node,/^Giải\s*:/iu))
+    node=node.nextElementSibling;
+   if(!node||node.tagName==="H3")continue;
+   const panel=document.createElement("div");
+   panel.className="thpt-g10-example-solution";
+   panel.setAttribute("role","group");
+   panel.setAttribute("aria-label","Lời giải ví dụ");
+   node.before(panel);
+   while(node&&node.tagName!=="H3"&&!isLead(node,/^Kiểm(?:\s+lại)?\s*:/iu)){
+    const next=node.nextElementSibling;panel.append(node);node=next;
+   }
+  }
+  for(const p of blocks[2].querySelectorAll(":scope > p")){
+   const lead=p.firstElementChild;
+   if(lead?.tagName==="STRONG"&&
+      /^(?:Vì sao chọn phương pháp|Chọn phương pháp|Chọn mô hình)\s*:/iu.test(lead.textContent.trim()))
+    lead.textContent="Phân tích:";
+  }
+  article.dataset.g10OwnerP2Examples="b11";
+ }
  // Golden example solution panel. MkDocs may render Đề/Giải/Tự kiểm as
  // three strong labels in ONE paragraph; split its EXISTING DOM nodes without
  // altering a single answer, formula, punctuation mark or example ID.
@@ -472,15 +500,67 @@ const polishG10ChapterV=(article)=>{
  blocks[0].querySelectorAll("details.question > summary").forEach(summary=>{
   summary.textContent="Đối chiếu";
  });
+ const isB12OwnerP2=/\/chuong-v\/bai-12\/?$/.test(location.pathname);
+ const isStrongLead=(node,re)=>node?.tagName==="P"&&
+  node.firstElementChild?.tagName==="STRONG"&&
+  re.test(node.firstElementChild.textContent.trim());
  for(const title of blocks[2].querySelectorAll(":scope > h3")){
-  const paragraph=title.nextElementSibling;
-  if(!paragraph||paragraph.tagName!=="P"||paragraph.closest(".thpt-g10-example-solution"))continue;
-  const panel=document.createElement("div");
-  panel.className="thpt-g10-example-solution";
-  panel.setAttribute("role","group");
-  panel.setAttribute("aria-label","Ví dụ và lời giải minh họa");
-  paragraph.before(panel);
-  panel.append(paragraph);
+  if(isB12OwnerP2){
+   // Fixed: old B12 runtime boxed the first P (the Đề), not the Giải.
+   let node=title.nextElementSibling;
+   while(node&&node.tagName!=="H3"&&!isStrongLead(node,/^Giải(?:\s+theo thao tác)?\s*:/iu))
+    node=node.nextElementSibling;
+   if(!node||node.tagName==="H3")continue;
+   const panel=document.createElement("div");
+   panel.className="thpt-g10-example-solution";
+   panel.setAttribute("role","group");
+   panel.setAttribute("aria-label","Lời giải ví dụ");
+   node.before(panel);
+   while(node&&node.tagName!=="H3"&&!isStrongLead(node,/^Kiểm(?:\s+lại)?\s*:/iu)){
+    const next=node.nextElementSibling;panel.append(node);node=next;
+   }
+  }else{
+   // Unchanged historic B13/B14 semantics.
+   const paragraph=title.nextElementSibling;
+   if(!paragraph||paragraph.tagName!=="P"||paragraph.closest(".thpt-g10-example-solution"))continue;
+   const panel=document.createElement("div");
+   panel.className="thpt-g10-example-solution";
+   panel.setAttribute("role","group");
+   panel.setAttribute("aria-label","Ví dụ và lời giải minh họa");
+   paragraph.before(panel);
+   panel.append(paragraph);
+  }
+ }
+ if(isB12OwnerP2){
+  for(const p of blocks[2].querySelectorAll(":scope > p")){
+   const lead=p.firstElementChild;
+   if(lead?.tagName==="STRONG"&&
+      /^(?:Vì sao chọn cách này|Chọn phương pháp)\s*:/iu.test(lead.textContent.trim()))
+    lead.textContent="Phân tích:";
+  }
+  // The mathematical definitions already exist in the signed B12 source.
+  // Put their existing paragraphs in semantic cards, with no math rewriting.
+  const headings=[...blocks[1].querySelectorAll(":scope > h3")];
+  const formals=[
+   {head:headings[0],label:"Khái niệm — Số gần đúng",type:"concept"},
+   {head:headings[1],label:"Định nghĩa — Sai số tuyệt đối và độ chính xác",type:"concept"},
+   {head:blocks[1].querySelector(":scope > h4"),label:"Định nghĩa — Sai số tương đối",type:"concept"},
+   {head:headings[2],label:"Quy tắc — Quy tròn và giới hạn sai số",type:"rule"}
+  ];
+  for(const {head,label,type} of formals){
+   const p=head?.nextElementSibling;
+   if(!p||p.tagName!=="P"||p.closest(".thpt-g10-p2-formal-card"))continue;
+   const card=document.createElement("div");
+   card.className="thpt-g10-p2-formal-card thpt-g10-p2-formal-"+type;
+   card.setAttribute("role","note");
+   const heading=document.createElement("strong");
+   heading.className="thpt-g10-p2-formal-label";
+   heading.textContent=label;
+   p.before(card);card.append(heading,p);
+  }
+  const figure=blocks[0].querySelector('[data-thpt-fig-id="FIG-G10-B12-01"]');
+  if(figure)figure.classList.add("thpt-g10-p2-interval-figure");
+  article.dataset.g10OwnerP2Examples="b12";
  }
  article.classList.add("thpt-g10-chv-golden");
  article.dataset.g10ChvGolden="preview";
