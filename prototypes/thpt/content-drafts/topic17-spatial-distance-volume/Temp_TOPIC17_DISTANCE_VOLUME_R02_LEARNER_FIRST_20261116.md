@@ -323,7 +323,7 @@ Chóp cụt S=16,S′=4,h=6. Giá trị √(SS′)?
 </details>
 
 
-**Tự khám phá trên mô hình:** Giữ cạnh đáy lớn \`a=6\` cm và chiều cao vuông góc \`h=4\` cm, thay đổi tỉ lệ cạnh đáy nhỏ \(k\) từ \(0\) đến \(1\). Hãy tự dự đoán \(V\) trước khi thay thanh trượt: khi \(k=0\), khối giới hạn là chóp; khi \(k=1\), giới hạn là lăng trụ. Với \(k=1/2\), \(S=36\), \(S'=9\), căn \(\sqrt{SS'}=18\), nên \(V=84\,\mathrm{cm}^3\). Từ ba trường hợp, em có thể phát hiện lỗi gõ công thức nào?
+**Tự khám phá — tự tính được ngay cả khi không có mô hình tương tác:** Giữ cạnh đáy lớn \(a=6\) cm và chiều cao vuông góc \(h=4\) cm. Nếu cạnh đáy nhỏ bằng \(6k\) với \(0\le k\le1\), thì \(S=36\), \(S'=36k^2\), \(\sqrt{SS'}=36k\) (cm²). Từ công thức thể tích chóp cụt, \(V=\frac43(36+36k+36k^2)=48(1+k+k^2)\) cm³. **Hãy tự tính trước khi xem các giá trị sau:** \(k=0\) cho \(V=48\) cm³ (chóp); \(k=\frac12\) cho \(V=84\) cm³ (chóp cụt); \(k=1\) cho \(V=144\) cm³ (lăng trụ). Nếu kết quả không tăng khi \(k\) tăng, kiểm lại diện tích đáy nhỏ \(36k^2\) và thành phần \(36k\) trong căn tích hai diện tích.
 
 <!-- AUTHOR_ONLY_MODEL_REFERENCE: SLM-TOP17-FRUSTUM-VOLUME-R00; FILE: Temp_THPT_TOPIC17_FRUSTUM_VOLUME_MODEL_R00_20261113.html; PUBLIC_DISCOVERY_NO_MASTERY -->
 
@@ -339,7 +339,7 @@ Chóp cụt S=16,S′=4,h=6. Giá trị √(SS′)?
 
 **Ví dụ**
 
-**Đề bài:** Lăng trụ tam giác đứng đáy vuông có hai cạnh góc vuông 6,8 cm, cao 7 cm. Tính thể tích và đổi sang lít.
+**Đề bài:** Lăng trụ đứng có đáy là tam giác vuông với hai cạnh góc vuông dài 6 cm và 8 cm; chiều cao lăng trụ là 7 cm. Tính thể tích và đổi sang lít.
 
 **Lời giải:** Sđáy=(1/2)×6×8=24 cm²; lăng trụ đứng nên cạnh bên 7 cm là chiều cao vuông góc. V=24×7=168 cm³=0,168 lít vì 1000 cm³=1 lít. Kiểm tra cả công thức và đơn vị.
 
@@ -729,7 +729,7 @@ Chân cao O là tâm đáy. Với M là trung điểm cạnh đáy, OM=3 cm và 
 
 
 
-## D5 — Sáu hình học liệu SVG độc lập, có chữ mô tả và kiểm toán hình
+<!-- AUTHORING_D5_ONLY: six SVG proof references belong in A1 metadata, not student Practice headings -->
 
 </details>
 
@@ -846,7 +846,7 @@ Hai diện tích S=36,S′=9, √(SS′)=18. V=(4/3)·(36+9+18)=84 cm³. Nếu S
 
 # Tự kiểm tra
 
-Tám câu sau là những bài tự ôn công khai đã có trong Luyện tập. Em hãy tự làm trên giấy trước khi xem lời giải. Đây không phải đánh giá năng lực độc lập, không ghi Mastery.
+Hãy tự giải tám câu dưới đây vào vở mà chưa xem lại lời giải đã học. Khi làm xong, trở về phần **Luyện tập**, mở lời giải từng câu để đối chiếu, tìm chỗ sai và chọn nội dung cần ôn thêm. Đây là phần tự ôn, không phải bài kiểm tra có chấm điểm chính thức.
 
 ## 1. Câu hỏi tự ôn
 
