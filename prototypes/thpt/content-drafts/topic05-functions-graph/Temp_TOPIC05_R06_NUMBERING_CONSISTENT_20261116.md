@@ -1,0 +1,1147 @@
+# Chuyên đề 05 · Hàm số, đồ thị và phép biến đổi
+
+Một khoản phí giao hàng thay đổi theo quãng đường là một ví dụ về hàm số: mỗi quãng đường hợp lệ phải cho đúng một mức phí. Ta sẽ học cách đọc miền, tập giá trị, xu hướng trên đồ thị rồi đổi đồ thị **bằng cách theo dõi tọa độ điểm**. Sau cùng, các phép biến đổi giúp giải những bài có giới hạn về số lượng và miền thực tế.
+
+# Kiến thức
+
+## 1. Từ bảng dữ liệu đến quy luật hàm số
+
+**Khám phá kiến thức**
+
+Nếu một cửa hàng thay đổi mức phí giao hàng theo quãng đường, ta có thể lập bảng ghi quãng đường và số tiền phải trả. Nhưng chỉ nhìn vài dòng của bảng chưa đủ hiểu quy luật cho **mọi** quãng đường được phép: cần biết quãng đường nào hợp lệ, mỗi giá trị đầu vào có xác định duy nhất một khoản phí hay không, và khi quãng đường thay đổi thì số tiền tăng giảm ra sao. Hàm số giúp trả lời bằng công thức; đồ thị giúp nhìn thấy xu hướng, những điểm bị loại và ranh giới giữa các cách tính.
+
+Trước khi dịch hay phản xạ một đồ thị, em cần đọc đúng đồ thị **ban đầu**. Chẳng hạn, căn bậc hai \(\sqrt u\) chỉ có nghĩa khi \(u\ge0\), phân thức phải có mẫu khác 0 và ký hiệu \((x,y)\) trên hệ trục chỉ một điểm có hoành độ \(x\), tung độ \(y\). Những kiến thức ấy sẽ được dùng khi tìm miền và khi xem một điểm bị phép biến đổi đưa tới đâu.
+
+Ta bắt đầu bằng câu hỏi “đâu là một hàm số?”, rồi lần lượt xem đồ thị cho biết miền, tập giá trị, sự tăng giảm và đối xứng như thế nào. Sau đó mới tìm hiểu vì sao đổi một con số trong công thức có thể dịch hoặc biến dạng cả đồ thị.
+
+<!-- LESSON_ID: TOP05-M01; OUTCOME_ID: TOP05-O01; R04_BLOB: 04f532661d014ee011e5d2f61a3dca9578a101d4 -->
+
+### 1.1. Thế nào là một hàm số?
+
+Khi nào các cặp số lặp lại đầu vào vẫn xác định một hàm số?
+
+Hãy hình dung một bảng ghi nhiệt độ ở từng thời điểm. Để bảng thực sự mô tả một quy luật kiểu hàm số, **mỗi đầu vào** phải có **đúng một đầu ra**. Hai thời điểm khác nhau có thể cùng nhiệt độ; điều không được phép là cùng một thời điểm lại có hai nhiệt độ khác nhau trong cùng một quy luật đang xét. Đó là ý nghĩa của hàm \(f:D\to\mathbb R\): mỗi \(x\in D\) nhận đúng một giá trị \(f(x)\).
+
+Xét bảng các cặp \((0,2),(1,4),(1,4)\). Dù \(x=1\) được ghi hai lần, cả hai lần đều cho 4, nên bảng vẫn phù hợp với một hàm số. Nếu thay một cặp thành \((1,7)\) thì cùng đầu vào 1 sẽ có hai đầu ra khác nhau: bảng không còn định nghĩa một hàm. Trên đồ thị, ta có thể hình dung điều kiện ấy bằng việc mỗi đường thẳng đứng cắt đồ thị tại **không quá một điểm**.
+
+**Ví dụ**
+
+**Đề bài.** Xét \((0,1),(1,2),(1,2),(2,3)\) trên tập \(\{0,1,2\}\). Có phải hàm số? Nếu thay cặp cuối bằng \((1,3)\) thì sao?
+
+**Lời giải.** Ban đầu \(f(0)=1,f(1)=2,f(2)=3\), mỗi đầu vào cho đúng một đầu ra nên là hàm số dù cặp \((1,2)\) lặp. Sau khi thay, \(x=1\) cho cả \(2\) và \(3\); điều kiện đơn trị bị phá, không còn là hàm số.
+
+**Vận dụng**
+
+Các cặp \((1,3),(2,3),(3,5)\) có thể là dữ liệu của một hàm số không? Điều gì quyết định?
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+Có. Ba đầu vào 1, 2, 3 khác nhau và mỗi đầu vào chỉ có một đầu ra. Việc hai đầu vào cùng cho giá trị 3 không vi phạm định nghĩa. Nếu em nhầm với yêu cầu “mỗi y chỉ đến từ một x”, hãy nhớ đó là tính một-một, không phải điều kiện cơ bản của hàm số.
+
+</details>
+
+<!-- LESSON_ID: TOP05-M02; OUTCOME_ID: TOP05-O02; R04_BLOB: 04f532661d014ee011e5d2f61a3dca9578a101d4 -->
+
+### 1.2. Tập xác định của biểu thức
+
+Tại sao căn bằng 0 được nhận, còn mẫu bằng 0 phải loại?
+
+Để có một hàm số, trước hết cần biết những đầu vào nào biểu thức cho phép. Căn số học và mẫu số tạo ra điểm bị loại; dấu ≥ của căn không được biến thành >. Ta đã biết căn √u đòi u≥0, mẫu v≠0. Với √A(x)/B(x) cần đồng thời A(x)≥0 và B(x)≠0, nên D là **giao** các miền; luôn xét biểu thức ban đầu trước khi rút gọn. Ở đầu mút căn bằng0 là hợp lệ nếu mẫu khác0.
+
+Chẳng hạn, √(x+1)/(x−2): cần x≥−1, x≠2 ⇒ D=[−1,2)∪(2,+∞). Nhận x=−1 vì căn bằng0, mẫu−3.
+
+**Ví dụ**
+
+**Đề bài.** Tìm tập xác định \(f(x)=\dfrac{\sqrt{5-x}}{x+2}\).
+
+**Lời giải.** Cần \(5-x\ge0\Rightarrow x\le5\), và \(x+2\ne0\Rightarrow x\ne-2\). Giao hai điều kiện: \(D=(-\infty,-2)\cup(-2,5]\). Nhận \(x=5\) vì \(\sqrt0=0\) và mẫu khác 0.
+
+**Vận dụng**
+
+Tìm D của √(9−x²)/(x−1).
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+D=[−3,1)∪(1,3], vì −3≤x≤3 và x≠1.
+
+Nếu bỏ điều kiện mẫu, thử x=1; nếu loại căn bằng0, thử x=±3; luyện P03/P04.
+
+</details>
+
+<!-- LESSON_ID: TOP05-M03; OUTCOME_ID: TOP05-O03; R04_BLOB: 04f532661d014ee011e5d2f61a3dca9578a101d4 -->
+
+### 1.3. Tập giá trị phụ thuộc miền
+
+Đổi tập đầu vào từ rời rạc sang đoạn ảnh hưởng tập giá trị ra sao?
+
+Miền đầu vào chưa nói hết các giá trị đầu ra mà hàm có thể nhận. Một biểu thức có thể cho rất nhiều giá trị trên ℝ, nhưng trên số sản phẩm nguyên chỉ có ít đầu ra. Ta sử dụng phép thế số và tập số nguyên/đoạn. T={f(x):x∈D} là tập **các y thật nhận được**, khác tập xác định D và tập đích ℝ. Miền rời rạc dẫn tới tập giá trị rời rạc, không tự nối thành khoảng.
+
+Xét ví dụ: f(x)=x² trên D={−2,0,1} cho T={0,1,4}. Với D=[−2,1] thì T=[0,4]. Cùng công thức nhưng miền khác nhau làm tập giá trị khác.
+
+**Ví dụ**
+
+**Đề bài.** Cho \(f(x)=2x+1\). Tìm tập giá trị trên \(D_1=\{-1,0,2\}\) và \(D_2=[-1,2]\).
+
+**Lời giải.** Trên \(D_1\), thế từng số: \(T_1=\{-1,1,5\}\). Trên đoạn \(D_2\), hàm bậc nhất có hệ số \(2>0\) nên tăng từ \(-1\) đến \(5\); \(T_2=[-1,5]\). Không nối các giá trị rời rạc của \(D_1\) thành đoạn.
+
+**Vận dụng**
+
+f(q)=3q−1 với q∈{0,1,2} có T nào?
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+T={−1,2,5}, không phải cả đoạn [−1,5].
+
+Nếu lầm T với [min,max], liệt kê đầu vào thực sự cho phép; luyện P05/P06.
+
+</details>
+
+<!-- LESSON_ID: TOP05-M04; OUTCOME_ID: TOP05-O04; R04_BLOB: 04f532661d014ee011e5d2f61a3dca9578a101d4 -->
+
+### 1.4. Đọc một điểm thuộc đồ thị
+
+Muốn kiểm một điểm có thuộc đồ thị, phải làm phép tính nào?
+
+Khi đã biết miền và tập giá trị, đồ thị cho phép quan sát quy luật. Nối một vài điểm đo thành đường cong có thể là giả định, không phải dữ kiện chắc chắn. Ta bắt đầu từ hệ trục Oxy; điểm A(a,b). Γ={(x,f(x)):x∈D}. A(a,b) thuộc đồ thị khi a∈D và b=f(a). Chấm đặc biểu thị điểm thuộc, chấm rỗng không thuộc; đường thẳng đứng x=c gặp hai y thì quan hệ không là đồ thị y=f(x).
+
+Chẳng hạn, f(x)=|x−2|+1: A(1,2) thuộc vì f(1)=2, B(3,3) không thuộc vì f(3)=2. Thay vào công thức là lý do kiểm nhanh chính xác.
+
+**Ví dụ**
+
+**Đề bài.** Với \(f(x)=|x+1|+2\), kiểm \(A(0,3)\), \(B(1,5)\), \(C(-1,2)\) có thuộc đồ thị không.
+
+**Lời giải.** Điểm \((a,b)\) thuộc đồ thị nếu \(b=f(a)\). \(f(0)=3\) nên \(A\) thuộc; \(f(1)=4\ne5\) nên \(B\) không thuộc; \(f(-1)=2\) nên \(C\) thuộc. Đỉnh của đồ thị chữ V là \((-1,2)\).
+
+**Vận dụng**
+
+Vì sao đường tròn x²+y²=9 không biểu diễn hàm y=f(x) trên [−3,3]?
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+x=0 cho hai y=3 và −3, vi phạm một đầu vào một đầu ra.
+
+Nếu chỉ nhìn đường cong mượt và gọi hàm, kẻ đường thẳng đứng qua x=0; luyện P07/P08.
+
+</details>
+
+## 2. Đọc đồ thị, biến thiên và đối xứng
+
+**Khám phá kiến thức**
+
+Khi đã biết một điểm \((a,f(a))\) có thuộc đồ thị hay không, câu hỏi tiếp theo là nhìn cả một khoảng: giá trị đi lên, đi xuống hay lặp lại theo chu kỳ? Một parabol có đỉnh, một đồ thị chẵn đối xứng qua trục tung, và một hiện tượng tuần hoàn lặp theo trục thời gian. Hiểu những đặc điểm này trước giúp ta không nhầm một đồ thị đã bị dịch với đồ thị gốc.
+
+<!-- LESSON_ID: TOP05-M05; OUTCOME_ID: TOP05-O05; R04_BLOB: 04f532661d014ee011e5d2f61a3dca9578a101d4 -->
+
+### 2.1. Đồng biến và nghịch biến
+
+Nhìn vài điểm tăng đã chứng minh hàm đồng biến chưa?
+
+Một vài điểm tăng không chứng minh cả đồ thị tăng; cần xét mọi cặp trong khoảng. Cần nhớ thứ tự x₁<x₂ và dấu của hiệu f(x₂)−f(x₁). Hàm đồng biến nghiêm ngặt trên khoảng K khi với mọi x₁<x₂ trong K, f(x₁)<f(x₂); nghịch biến nếu f(x₁)>f(x₂). Với x²: trên x<0 hàm giảm, trên x>0 hàm tăng. Không kết luận trên cả ℝ chỉ vì một nhánh đi lên.
+
+Chẳng hạn, f(x)=−3x+2: f(x₂)−f(x₁)=−3(x₂−x₁)<0 khi x₁<x₂, nên nghịch biến trên ℝ. Chọn cách so hiệu vì không cần đạo hàm.
+
+**Ví dụ**
+
+**Đề bài.** Chứng minh \(f(x)=4-2x\) nghịch biến trên \(\mathbb R\) mà không dùng đạo hàm.
+
+**Lời giải.** Với mọi \(x_1<x_2\), \(f(x_2)-f(x_1)=-2(x_2-x_1)<0\). Do đó \(f(x_2)<f(x_1)\), nên hàm nghịch biến trên toàn \(\mathbb R\). Kiểm mọi cặp đầu vào mới là chứng minh, không chỉ nhìn hai điểm.
+
+**Vận dụng**
+
+x² tăng/giảm trên [−5,−2] ra sao?
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+Giảm; GTLN25 ở−5, GTNN4 ở−2.
+
+Nếu chỉ thử x=0,1, hãy giải thích cho x₁,x₂ tùy ý; luyện P09/P10.
+
+</details>
+
+<!-- LESSON_ID: TOP05-M06; OUTCOME_ID: TOP05-O06; R04_BLOB: 04f532661d014ee011e5d2f61a3dca9578a101d4 -->
+
+### 2.2. Đỉnh parabol trên miền cho phép
+
+Đỉnh của parabol nằm ngoài miền có thể làm cực trị trên miền không?
+
+Với parabol, vị trí đỉnh cho biết cực trị trong miền được phép. Đỉnh của parabol có thể nằm ngoài miền khả thi nên không phải đáp án cực trị. Để xác định điều đó, cần xét bình phương không âm, khoảng/đoạn đóng và số nguyên. Hoàn phương ax²+bx+c=a(x−h)²+k (a≠0), h=−b/(2a), k=f(h). Đỉnh(h,k), trục đối xứng x=h. Khi tìm GTLN/GTNN trên D, luôn kiểm h có ở D không, so biên và các giá trị nguyên khả thi; không cần vội dùng đạo hàm.
+
+Chẳng hạn, f(x)=−(x−1)²+8 trên [2,5]: đỉnh ở1 bị loại. Hàm giảm trên miền, max f(2)=7, min f(5)=−8. Chọn kiểm miền trước công thức cực trị.
+
+**Ví dụ**
+
+**Đề bài.** Tìm GTLN và GTNN của \(f(x)=-(x-2)^2+9\) trên \([3,6]\).
+
+**Lời giải.** Đỉnh \((2,9)\) nằm ngoài đoạn. Trên \(x\ge3\), \((x-2)^2\) tăng nên \(f\) giảm. \(f(3)=8\) là GTLN, \(f(6)=-7\) là GTNN. Không nhận giá trị 9 tại \(x=2\) ngoài miền.
+
+**Vận dụng**
+
+f(x)=(x+2)²−1 trên [−1,3] có min/max?
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+Đỉnh−2 ngoài miền; min f(−1)=0, max f(3)=24.
+
+Nếu lấy đỉnh vô điều kiện, khoanh D trước khi chọn; luyện P11/P12.
+
+</details>
+
+<!-- LESSON_ID: TOP05-M07; OUTCOME_ID: TOP05-O07; R04_BLOB: 04f532661d014ee011e5d2f61a3dca9578a101d4 -->
+
+### 2.3. Chẵn, lẻ và miền đối xứng
+
+Tại sao cần miền đối xứng để kết luận hàm chẵn hoặc lẻ?
+
+Đồ thị cũng có thể giữ nguyên hình dạng khi phản xạ qua trục hoặc qua gốc. Phỏng đoán một hình đối xứng không thay được chứng minh với mọi x. Ta đã biết miền D đối xứng qua0; so f(−x) và f(x). Chẵn khi D đối xứng và f(−x)=f(x), đồ thị đối xứng trục Oy. Lẻ khi D đối xứng và f(−x)=−f(x), đồ thị đối xứng gốc O. Miền không đối xứng thì không suy chẵn/lẻ chỉ từ công thức.
+
+Chẳng hạn, f(x)=x⁴−2x² chẵn do f(−x)=f(x); x³ lẻ do f(−x)=−f(x). Tính trực tiếp đáng tin hơn nhìn sơ đồ phác.
+
+**Ví dụ**
+
+**Đề bài.** Xác định tính chẵn/lẻ của \(g(x)=x^3-x\) trên \(\mathbb R\).
+
+**Lời giải.** Miền \(\mathbb R\) đối xứng qua 0 và \(g(-x)=-x^3+x=-g(x)\) với mọi \(x\). Vậy \(g\) là hàm lẻ, đồ thị đối xứng qua gốc tọa độ.
+
+**Vận dụng**
+
+g(x)=x²+x trên ℝ thuộc loại nào?
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+g(−x)=x²−x khác g(x) và −g(x), nên không chẵn/lẻ.
+
+Nếu chỉ nhìn số mũ cao nhất, thay −x vào **toàn bộ** biểu thức; luyện P13/P14.
+
+</details>
+
+<!-- LESSON_ID: TOP05-M08; OUTCOME_ID: TOP05-O08; R04_BLOB: 04f532661d014ee011e5d2f61a3dca9578a101d4 -->
+
+### 2.4. Chu kỳ hàm số
+
+Lặp ở vài điểm có đủ để kết luận tuần hoàn không?
+
+Một loại đối xứng khác xuất hiện khi giá trị lặp lại theo chu kỳ. Quan sát số liệu lặp chưa đủ chứng minh hàm tuần hoàn trên mọi đầu vào. Ta sử dụng t>0, phép dịch đầu vào x↦x+T. T là chu kỳ khi f(x+T)=f(x) với mọi x trong miền mà các điểm dịch hợp lệ và miền bảo toàn qua phép dịch. Chu kỳ cơ bản là chu kỳ dương nhỏ nhất nếu tồn tại. Không lẫn chu kỳ trên Ox với độ cao/biên độ trên Oy. Công thức chi tiết lượng giác thuộc CĐ06.
+
+Xét ví dụ: Nếu f(x+5)=f(x) và f(2)=−1, thì f(12)=f(2+2·5)=−1. Chọn dùng định nghĩa, không cần biết hàm là sin hay cos.
+
+**Ví dụ**
+
+**Đề bài.** Biết \(f(x+4)=f(x)\) với mọi số thực \(x\), và \(f(1)=6\). Tìm \(f(9)\); 4 có chắc là chu kỳ nhỏ nhất không?
+
+**Lời giải.** Vì \(9=1+2\cdot4\), \(f(9)=f(5)=f(1)=6\). Bốn là một chu kỳ nhưng chưa chắc cơ bản; một hàm có chu kỳ 2 cũng thỏa điều kiện dịch 4.
+
+**Vận dụng**
+
+f(x+3)=f(x), f(1)=4; f(10) là?
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+4, vì 10=1+3·3; chưa thể kết luận 3 là chu kỳ **cơ bản**.
+
+Nếu từ bốn điểm suy toàn miền tuần hoàn, hãy tách quan sát và định nghĩa; luyện P15/P16.
+
+</details>
+
+## 3. Dịch, phản xạ và co giãn đồ thị
+
+**Khám phá kiến thức**
+
+Thay vì nhớ dấu cộng hay dấu trừ một cách máy móc, hãy đánh dấu một điểm đã biết trên đồ thị gốc rồi theo dõi nó đi đâu. Nếu cộng một lượng vào **giá trị hàm**, tung độ thay đổi; nếu thay \(x\) bằng \(x-h\) thì chính đầu vào thay đổi, nên đồ thị dịch theo phương ngang. Nhìn một điểm trước sẽ giúp giải thích cả phép tịnh tiến, đối xứng và co giãn sau đó.
+
+<!-- LESSON_ID: TOP05-M09; OUTCOME_ID: TOP05-O09; R04_BLOB: 04f532661d014ee011e5d2f61a3dca9578a101d4 -->
+
+### 3.1. Dịch đồ thị theo phương đứng
+
+Cộng một hằng số ngoài hàm làm điểm đồ thị dịch theo phương nào?
+
+Một mức phí cố định cộng vào mọi hóa đơn, không đổi lượng đầu vào. Ta bắt đầu từ điểm (x,f(x)) và phép cộng số k. g(x)=f(x)+k có D_g=D_f, mọi điểm (x,y)→(x,y+k). k>0 dịch lên, k<0 dịch xuống. Số cộng nằm **ngoài** f làm đổi tung độ, không đổi hoành độ.
+
+Chẳng hạn, f(x)=|x−1|, g(x)=f(x)+4 có đỉnh(1,4), g(0)=5. Chọn xem điểm đỉnh và một điểm kiểm.
+
+**Ví dụ**
+
+**Đề bài.** Từ \(f(x)=x^2\), đặt \(g(x)=f(x)+3\). Tìm đỉnh và \(g(2)\).
+
+**Lời giải.** Cộng 3 ngoài hàm giữ nguyên hoành độ, tăng tung độ 3. Đỉnh chuyển từ \((0,0)\) lên \((0,3)\); \(g(2)=2^2+3=7\). Điểm \((2,4)\) của \(f\) biến thành \((2,7)\).
+
+**Vận dụng**
+
+Từ f=x², g=f−2 có đỉnh đâu?
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+(0,−2), và điểm (1,1) thành (1,−1).
+
+Nếu nói dịch ngang, hãy xem x có bị thay trong f không; luyện P17/P18.
+
+</details>
+
+<!-- LESSON_ID: TOP05-M10; OUTCOME_ID: TOP05-O10; R04_BLOB: 04f532661d014ee011e5d2f61a3dca9578a101d4 -->
+
+### 3.2. Dịch đồ thị theo phương ngang
+
+Vì sao biểu thức f(x−3) lại dịch phải ba đơn vị?
+
+Khi dịch theo phương ngang, dấu bên trong đối số dễ gây nhầm. Dời thời điểm bắt đầu của hiện tượng có thể dời cả miền hợp lệ. Cần nhớ đặt u=x−h; miền gốc D_f. g(x)=f(x−h) xác định khi x−h∈D_f, nên D_g=D_f+h; điểm (u,f(u)) thành(u+h,f(u)). h>0 là dịch **phải** h; f(x+h) dịch trái h. Không đoán chiều dịch chỉ theo dấu trừ cộng nếu chưa xét tọa độ.
+
+Chẳng hạn, từ parabol \(f(x)=x^2\) có đỉnh \((0,0)\), hàm \(g(x)=f(x-2)+1=(x-2)^2+1\) có đỉnh \((2,1)\): dịch phải 2 và lên 1, đúng như hai đường trong hình. Với một hàm có miền giới hạn như \(f(x)=\sqrt x\), phép \(f(x-3)\) còn làm điểm bắt đầu dịch từ \((0,0)\) sang \((3,0)\); miền mới là \([3,+\infty)\). Cả hai minh họa cùng quy luật hoành độ cộng 2 hay 3 theo lượng dịch.
+
+![Parabol gốc và parabol được tịnh tiến](../../visuals/THPT_TOPIC05_GRAPH_TRANSLATION_R01.svg)
+
+*Đọc hình:* Hai parabol \(y=x^2\) và \(y=(x-2)^2+1\) có đỉnh lần lượt \((0,0)\), \((2,1)\). Chọn điểm đỉnh để thấy chính xác **dịch phải hai, lên một**; không có phép đổi độ rộng.
+
+**Ví dụ**
+
+**Đề bài.** Từ \(f(x)=x^2\), đặt \(g(x)=f(x-3)\). Tìm đỉnh và ảnh của điểm \((1,1)\).
+
+**Lời giải.** Đặt \(u=x-3\Rightarrow x=u+3\): dịch phải 3. Đỉnh \((0,0)\mapsto(3,0)\) và \((1,1)\mapsto(4,1)\). Hình trong bài minh họa một phép dịch khác (phải 2, lên 1) nhưng cùng quy tắc điểm.
+
+**Vận dụng**
+
+g(x)=(x+2)² dịch parabol x² thế nào?
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+Trái2, đỉnh(−2,0), vì x+2=0 tại−2.
+
+Nếu dịch phải vì dấu+, tìm x để đối số bằng0; luyện P19/P20.
+
+</details>
+
+<!-- LESSON_ID: TOP05-M11; OUTCOME_ID: TOP05-O11; R04_BLOB: 04f532661d014ee011e5d2f61a3dca9578a101d4 -->
+
+### 3.3. Phản xạ qua hai trục
+
+Phản xạ đầu vào và phản xạ đầu ra khác nhau thế nào?
+
+Sau phép dịch, phép phản xạ tạo đồ thị mới mà không cần vẽ lại. Đổi dấu đầu ra khác hoàn toàn việc đổi hướng đầu vào. Để xác định điều đó, cần xét điểm (x,y), đổi dấu x hoặc y. −f(x) phản xạ Ox: (x,y)→(x,−y), miền giữ. f(−x) phản xạ Oy: (x,y)→(−x,y), miền thành −D_f. Với f chẵn, phản xạ Oy không làm đổi hình; với f lẻ cả hai cho cùng biểu thức.
+
+Chẳng hạn, f=x²+x: −f=−x²−x trong khi f(−x)=x²−x. Tại x=1 được −2 và0, chứng minh hai phép khác nhau.
+
+**Ví dụ**
+
+**Đề bài.** Với \(f(x)=x^2+2x\), lập \(g(x)=-f(x)\) và \(h(x)=f(-x)\); so \(g(1)\), \(h(1)\).
+
+**Lời giải.** Ta có \(g(x)=-x^2-2x\), là phản xạ \(Ox\); \(h(x)=x^2-2x\), là phản xạ \(Oy\). \(g(1)=-3\) còn \(h(1)=-1\), chứng tỏ hai phép khác nhau.
+
+**Vận dụng**
+
+Với f=x²−2x, f(−x) là gì?
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+x²+2x, là ảnh qua trục Oy.
+
+Nếu đổi dấu toàn biểu thức, đó là phản xạ Ox; luyện P21/P22.
+
+</details>
+
+<!-- LESSON_ID: TOP05-M12; OUTCOME_ID: TOP05-O12; R04_BLOB: 04f532661d014ee011e5d2f61a3dca9578a101d4 -->
+
+### 3.4. Đổi độ cao và phản xạ đứng
+
+Nhân tung độ với hệ số âm tác động lên chiều và độ lớn ra sao?
+
+Nhân toàn bộ giá trị hàm làm độ cao thay đổi, khác tác động lên đối số. Phóng to đơn vị tung độ làm đường cong cao hơn nhưng giữ vị trí đầu vào. Ta đã biết nhân một tung độ y với hệ số c. g(x)=c f(x): (x,y)→(x,cy). |c|>1 dãn đứng, 0<|c|<1 co đứng, c<0 còn phản xạ Ox. c=0 đưa hình về Ox nhưng không là phép giãn khả nghịch. Nếu c≠0 thì tập nghiệm f(x)=0 giữ nguyên.
+
+Chẳng hạn, đặt \(f(x)=|x|\) và \(h(x)=-2|x|+3\). Với \(x=2\), điểm \((2,2)\) trên đồ thị \(f\) thành \((2,-1)\) trên \(h\): trước tiên nhân tung độ với \(-2\) (lật qua trục \(Ox\), dãn đứng hai lần), rồi cộng 3 (dịch lên). Đỉnh chuyển từ \((0,0)\) lên \((0,3)\), đúng như hình. Muốn đổi chỉ riêng tung độ mà không dịch, ta bỏ số \(+3\) ở ngoài.
+
+![Phản xạ và co giãn tung độ của đồ thị](../../visuals/THPT_TOPIC05_REFLECTION_VERTICAL_SCALE_R01.svg)
+
+*Đọc hình:* Hình vẽ cả \(f(x)=|x|\) và \(h(x)=-2|x|+3\), nên phép biến đổi thật sự gồm \((x,y)\mapsto(x,-2y+3)\). Dấu âm đảo tung độ, hệ số 2 dãn đứng, còn số 3 dịch lên; không được lược mất bước cuối.
+
+**Ví dụ**
+
+**Đề bài.** Cho \(f(x)=|x|\), \(g(x)=-3|x|+2\). Điểm \((2,2)\) thành điểm nào? Đỉnh mới?
+
+**Lời giải.** Mỗi tung độ \(y\mapsto-3y+2\), nên \((2,2)\mapsto(2,-4)\), đỉnh \((0,0)\mapsto(0,2)\). Hình cạnh bài dùng trường hợp **khác** \(h=-2|x|+3\); không nhầm số của hình và ví dụ.
+
+**Vận dụng**
+
+g=(1/2)|x| tại x=4 so với f=|x|?
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+g(4)=2, f(4)=4, co đứng một nửa.
+
+Nếu kết luận co ngang, giữ x=4 và so hai tung độ; luyện P23/P24.
+
+</details>
+
+<!-- LESSON_ID: TOP05-M13; OUTCOME_ID: TOP05-O13; R04_BLOB: 04f532661d014ee011e5d2f61a3dca9578a101d4 -->
+
+### 3.5. Co giãn ngang theo đối số
+
+Vì sao f(3x) có thể hẹp hơn đồ thị f(x)?
+
+Nếu nhân biến bên trong đối số, khoảng cách theo trục hoành biến đổi. Khi đầu vào chạy nhanh gấp đôi, cùng một tung độ xuất hiện sớm hơn. Ta sử dụng đặt u=kx (k khác0), điểm gốc(u,f(u)). g(x)=f(kx) biến (u,f(u)) thành(u/k,f(u)); độ rộng ngang nhân1/|k|. |k|>1 là co ngang, 0<|k|<1 là dãn ngang; k<0 còn phản xạ Oy. Miền D_g={x:kx∈D_f}, khác phép g=kf(x).
+
+Xét ví dụ: f=|x|, g=f(2x)=2|x|: cùng y=4, f đạt x=±4 còn g đạt x=±2. Vẻ dốc hơn là kết quả co ngang theo đối số.
+
+**Ví dụ**
+
+**Đề bài.** Với \(f(x)=|x|\), \(g(x)=f(3x)\), tìm các \(x\) để \(f(x)=6\) và \(g(x)=6\).
+
+**Lời giải.** Ta có \(|x|=6\Rightarrow x=\pm6\); \(|3x|=6\Rightarrow x=\pm2\). Hoành độ cho cùng tung độ bị chia 3 nên đồ thị co ngang 3 lần.
+
+**Vận dụng**
+
+f=√x, g=f(3x): D và x khi g(x)=2?
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+D=[0,+∞), 3x=4 ⇒ x=4/3, so f đạt y=2 ở x=4.
+
+Nếu nhận giãn ngang3, dùng u=3x ⇒ x=u/3; luyện P25/P26.
+
+</details>
+
+<!-- LESSON_ID: TOP05-M14; OUTCOME_ID: TOP05-O14; R04_BLOB: 04f532661d014ee011e5d2f61a3dca9578a101d4 -->
+
+### 3.6. Phân biệt |f(x)| và f(|x|)
+
+Trị tuyệt đối đặt ngoài hàm và trong đối số tác động lên thành phần nào?
+
+Giá trị tuyệt đối có hai hiệu ứng khác nhau khi đặt ngoài hay trong hàm. Dấu |.| bên ngoài f và bên trong đối số thay hai nửa đồ thị khác nhau. Ta bắt đầu từ |t|≥0, |t|=t khi t≥0, =−t nếu t<0. |f(x)| giữ phần y≥0, phản xạ phần y<0 lên Ox; miền không đổi. f(|x|) lấy nửa đồ thị f trên x≥0 rồi phản xạ sang x≤0; miền mới {x:|x|∈D_f}. Không thể coi chúng giống nhau.
+
+Chẳng hạn, f=x−1: |f(x)|=|x−1| có đỉnh(1,0), còn f(|x|)=|x|−1 có đỉnh(0,−1). Điểm x=0 cho hai giá trị khác.
+
+**Ví dụ**
+
+**Đề bài.** Với \(f(x)=x+2\), so \(p(x)=|f(x)|\) và \(q(x)=f(|x|)\) tại \(x=-3\).
+
+**Lời giải.** \(p(x)=|x+2|\) có đỉnh \((-2,0)\), \(q(x)=|x|+2\) có đỉnh \((0,2)\). \(p(-3)=1\) nhưng \(q(-3)=5\). Dấu trị tuyệt đối ngoài tác động lên tung độ; trong tác động lên đầu vào.
+
+**Vận dụng**
+
+f=x²−1, tính |f(0)| và f(|0|).
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+|−1|=1, còn f(0)=−1.
+
+Nếu gán hai hàm bằng nhau mọi x, dùng x=0 làm phản ví dụ; luyện P27/P28.
+
+</details>
+
+## 4. Kết hợp phép biến đổi và miền ứng dụng
+
+**Khám phá kiến thức**
+
+Một đồ thị có thể vừa bị dịch, vừa bị lật và co giãn. Muốn không đảo nhầm thứ tự, ta theo một điểm gốc qua từng phép biến đổi rồi kiểm lại miền xác định. Nếu hàm chỉ dùng cho số sản phẩm nguyên hoặc thời gian không âm, không thể coi cả đường cong vẽ trên \(\mathbb R\) đều là phương án hợp lệ. Cuối cùng, hàm từng đoạn sẽ cho thấy vì sao một dấu bằng ở điểm nối có thể thay đổi kết quả dù công thức gần giống nhau.
+
+Khi nhiều phép biến đổi xảy ra liên tiếp, thứ tự thực hiện và miền của hàm vẫn cần được kiểm tra. Hàm từng đoạn và tình huống tối ưu cho thấy đọc đồ thị là một cách lập luận, không chỉ phác hình.
+
+<!-- LESSON_ID: TOP05-M15; OUTCOME_ID: TOP05-O15; R04_BLOB: 04f532661d014ee011e5d2f61a3dca9578a101d4 -->
+
+### 4.1. Phối hợp nhiều phép biến đổi
+
+Làm sao theo dõi đúng tọa độ điểm khi phối hợp dịch và co giãn?
+
+Nhìn dấu cộng trừ mà bỏ qua thứ tự thao tác có thể sai miền và đỉnh. Cần nhớ đổi điểm(u,f(u)) theo u=k(x−h). Với g(x)=c f(k(x−h))+v, c,k≠0, điểm(u,f(u)) thành(h+u/k, c f(u)+v). Đây là phép đổi tọa độ có chứng minh, không phải 'dịch đoán'. Luôn kiểm f đã xác định ở k(x−h) trước khi tính.
+
+Chẳng hạn, f=x², g=2f(x−1)+3 có đỉnh (1,3), g(0)=5. Viết dạng đỉnh trực tiếp cho thấy miền ℝ và cực tiểu3.
+
+**Ví dụ**
+
+**Đề bài.** Cho \(f(x)=x^2\), \(g(x)=-2f(x-1)+3\). Mô tả phép biến đổi, tìm đỉnh và \(g(0)\).
+
+**Lời giải.** Dịch phải 1, nhân tung độ \(-2\) (phản xạ \(Ox\), dãn đứng 2) rồi lên 3. \(g(x)=-2(x-1)^2+3\) có đỉnh \((1,3)\), mở xuống, \(g(0)=1\).
+
+**Vận dụng**
+
+g=−f(x+2)+1 với f=x² có đỉnh và hướng mở?
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+g=−(x+2)²+1, đỉnh(−2,1), mở xuống.
+
+Nếu đọc x+2 là dịch phải, tìm x làm x+2=0; luyện P29/P30/W02.
+
+</details>
+
+<!-- LESSON_ID: TOP05-M16; OUTCOME_ID: TOP05-O16; R04_BLOB: 04f532661d014ee011e5d2f61a3dca9578a101d4 -->
+
+### 4.2. Hàm từng đoạn và điểm đầu mút
+
+Chấm đặc hay chấm rỗng quyết định giá trị tại mốc?
+
+Với hàm từng đoạn, điểm nối và dấu bằng có thể làm thay đổi đồ thị. Hai công thức giá theo thời gian có thể gặp nhau hoặc tạo bước nhảy tại mốc đổi giá. Để xác định điều đó, cần xét phân biệt x<c, x≤c, x≥c; chấm rỗng/đặc. Tại x=c, **nhánh có dấu bằng** xác định f(c). Nhìn độ cao của hai nhánh sát c: khác nhau tạo bước nhảy, bằng nhau có thể nối khi điểm được nhận. Đây là cách đọc hình trực quan, không thay nội dung định nghĩa/định lý giới hạn và liên tục chính thức ở CĐ08.
+
+Chẳng hạn, hàm từng đoạn \(f(x)=2\) khi \(x\le1\), còn \(f(x)=x+3\) khi \(x>1\) có \(f(1)=2\) nhờ nhánh chứa dấu bằng. Trên hình, nhánh phải chỉ tiến gần điểm \((1,4)\) khi \(x\to1^+\) nhưng không nhận điểm ấy. Vì 2 khác 4, hai nhánh tạo **bước nhảy** tại \(x=1\), chứ không nối nhau; cần phân biệt giá trị tại mốc và giá trị gần mốc.
+
+![Điểm đầu rỗng và đặc ở hàm số từng đoạn](../../visuals/THPT_TOPIC05_PIECEWISE_ENDPOINTS_R01.svg)
+
+*Đọc hình:* Chấm **đặc** tại \((1,2)\) thuộc nhánh \(x\le1\); chấm **rỗng** tại \((1,4)\) chỉ là điểm mà nhánh \(x>1\) tiến tới. Hai tung độ khác nhau nên không thể kết luận đồ thị nối liên tục.
+
+**Ví dụ**
+
+**Đề bài.** Đặt \(p(x)=3\) nếu \(x\le2\), và \(p(x)=x+4\) nếu \(x>2\). Tìm \(p(2)\), hai chấm tại mốc và tính bước nhảy.
+
+**Lời giải.** Nhánh chứa dấu bằng cho \(p(2)=3\): chấm đặc \((2,3)\). Nhánh phải tiến tới 6 nhưng không nhận tại 2: chấm rỗng \((2,6)\). Có bước nhảy vì 3 khác 6. Hình bài học dùng mốc 1, áp dụng cùng nguyên tắc.
+
+**Vận dụng**
+
+f=0 nếu x≤0, f=x+2 nếu x>0 có bước nhảy ở 0 không?
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+Có: chấm đặc(0,0) và chấm rỗng(0,2) thuộc nhánh bên phải.
+
+Nếu tính f(0)=2, bạn đã dùng nhầm nhánh x>0; luyện P31/P32/W03.
+
+</details>
+
+<!-- LESSON_ID: TOP05-M17; OUTCOME_ID: TOP05-O17; R04_BLOB: 04f532661d014ee011e5d2f61a3dca9578a101d4 -->
+
+### 4.3. Tối ưu trong miền khả thi
+
+Có thể chọn đỉnh tối ưu nếu lượng sản xuất bị giới hạn ở các số nguyên khác không?
+
+Mọi phép biến đổi phải quay về miền hợp lệ của mô hình. Một đỉnh đẹp trên toàn ℝ có thể không có ý nghĩa vì sản phẩm chỉ nhận giá trị nguyên và còn ràng buộc. Ta đã biết biến q nguyên, đơn vị, miền quyết định D. Đặt biến, **đơn vị và miền khả thi trước**; từ đó tính hàm và ứng viên, kiểm ứng viên trong D. Khi ràng buộc đổi, quyết định tối ưu có thể đổi dù công thức không đổi. Với bậc hai sơ cấp dùng hoàn phương; khảo sát cực trị bằng đạo hàm thuộc CĐ10.
+
+Chẳng hạn, P(q)=−(q−4)²+16 (triệu) với q∈{5,6}. Đỉnh q=4 không khả thi; P(5)=15, P(6)=12 ⇒ chọn q=5.
+
+**Ví dụ**
+
+**Đề bài.** Lợi nhuận \(P(q)=-(q-6)^2+25\) triệu đồng, với \(q\in\{7,8,9\}\) lô. Chọn \(q\) tối ưu.
+
+**Lời giải.** Đỉnh \(q=6\) không khả thi. \(P(7)=24,\ P(8)=21,\ P(9)=16\) triệu đồng, nên chọn \(q=7\) và lợi nhuận lớn nhất 24 triệu. Giữ điều kiện số lô nguyên và đơn vị.
+
+**Vận dụng**
+
+Q(t)=(t−3)²+2 trên t∈[5,7], giá trị min?
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+t≥5, nên min Q(5)=6; không chọn Q(3)=2 vì ngoài miền.
+
+Nếu vẫn chọn đỉnh không hợp lệ, viết lại tập khả thi và thử các biên; luyện P33/P34/W04.
+
+</details>
+
+# Luyện tập
+
+Hãy tự giải trước khi mở **Lời giải**. Với câu hỏi về miền, kiểm điều kiện căn và mẫu; với đồ thị, theo dõi tọa độ trước/sau phép biến đổi và phân biệt chấm đặc – chấm rỗng. Với bài tối ưu, luôn kiểm miền khả thi. Nếu làm sai, trở lại bài Kiến thức tương ứng rồi thử một bài khác.
+
+## 1. Hàm số, miền xác định và tập giá trị
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P01; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O01; NOT_CANONICAL -->
+
+**Bài 1.**
+
+Một bảng có các cặp (0,2),(1,4),(1,4),(2,5). Đây có phải một hàm số trên tập đầu vào {0,1,2} không?
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** Có; f(1)=4 được lặp nhất quán.
+
+Mỗi đầu vào chỉ có đúng một đầu ra. Việc x=1 xuất hiện hai lần nhưng đều gắn y=4 không phá tính đơn trị.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P02; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O01; NOT_CANONICAL -->
+
+**Bài 2.**
+
+Một quan hệ có (0,1),(0,3),(2,4). Vì sao không phải hàm số y=f(x) trên {0,2}?
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** Không phải hàm số vì x=0 cho hai đầu ra 1 và 3 khác nhau.
+
+Một hàm số phải gán mỗi x đúng một y; chỉ một đầu vào vi phạm đã đủ bác bỏ.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P03; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O02; NOT_CANONICAL -->
+
+**Bài 3.**
+
+Tìm tập xác định f(x)=√(x+2)/(x−3).
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** D=[−2,3)∪(3,+∞).
+
+Cần x+2≥0 tức x≥−2; đồng thời x−3≠0 tức x≠3. Lấy giao và không loại x=−2 vì √0=0 hợp lệ.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P04; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O02; NOT_CANONICAL -->
+
+**Bài 4.**
+
+Tìm tập xác định f(x)=√(4−x²)/(x+1).
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** D=[−2,−1)∪(−1,2].
+
+Điều kiện 4−x²≥0 ⇒ −2≤x≤2; đồng thời x≠−1 vì mẫu. Hai đầu x=±2 được phép.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P05; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O03; NOT_CANONICAL -->
+
+**Bài 5.**
+
+Cho f(x)=(x−2)²+1 với D=[−1,3]. Tìm tập giá trị thật của hàm số trên D.
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** T=[1,10].
+
+Bình phương nhỏ nhất 0 tại x=2∈D; khoảng cách |x−2| lớn nhất ở −1 bằng3, bình phương9 rồi cộng1 cho10. Hàm liên tục trên đoạn nên nhận mọi giá trị ở giữa.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P06; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O03; NOT_CANONICAL -->
+
+**Bài 6.**
+
+Mô hình số sản phẩm q∈{0,1,2,3}, f(q)=2q+1. Tìm tập giá trị.
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** {1,3,5,7}.
+
+Thế lần lượt đúng bốn đầu vào nguyên. Không thể nhận 4 vì phương trình 2q+1=4 cho q=1,5 không thuộc miền thực tế.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-W01; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O03; NOT_CANONICAL -->
+
+**Bài 7.**
+
+Cho f(x)=√(4−x²) trên số thực. (a) Tìm D; (b) tìm tập giá trị; (c) xác định chẵn/lẻ; (d) xác minh các điểm (−2,0), (0,2), (2,0) thuộc đồ thị.
+
+<details markdown="1"><summary>Lời giải và rubric</summary>
+
+**Đáp án:** D=[−2,2], T=[0,2], hàm chẵn; cả ba điểm thuộc.
+
+4−x²≥0 ⇒ x∈[−2,2]. Căn không âm; max√4=2 tại x=0, min0 ở ±2, giá trị trung gian đều có bởi tính liên tục của căn. f(−x)=f(x), miền đối xứng nên chẵn. Thay ba x cho các y tương ứng.
+
+**Rubric tự đối chiếu:** 7 điểm: D và điều kiện căn (2đ), tập giá trị đủ đầu mút (2đ), chẵn với chứng minh miền đối xứng (1đ), kiểm đủ ba điểm (2đ).
+
+</details>
+
+## 2. Đồ thị, biến thiên và đối xứng
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P07; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O04; NOT_CANONICAL -->
+
+**Bài 8.**
+
+Trên đồ thị y=|x−1|+2, điểm A(0,3) và B(2,4) có thuộc đồ thị không?
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** A thuộc, B không thuộc.
+
+Tính f(0)=|−1|+2=3 nên A thuộc; f(2)=|1|+2=3 khác 4 nên B không thuộc.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P08; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O04; NOT_CANONICAL -->
+
+**Bài 9.**
+
+Vì sao đường tròn x²+y²=4 không biểu diễn một hàm số y=f(x) trên toàn khoảng [−2,2]?
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** Vì x=0 cho y=2 và y=−2, vi phạm một x chỉ có một y.
+
+Thay x=0 được y²=4. Hai giao điểm trên đường x=0 chứng minh quan hệ không đơn trị.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P09; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O05; NOT_CANONICAL -->
+
+**Bài 10.**
+
+Cho f(x)=x² trên D=[−4,−1]. Hàm tăng hay giảm trên D? Tìm giá trị lớn nhất và nhỏ nhất.
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** Giảm; lớn nhất 16 ở −4, nhỏ nhất 1 ở −1.
+
+Với −4≤x<y≤−1 đều âm, |x|>|y| nên x²>y². Hàm giảm trên chính đoạn D; hai đầu mút lần lượt cho 16 và 1.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P10; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O05; NOT_CANONICAL -->
+
+**Bài 11.**
+
+Chứng minh f(x)=−2x+7 nghịch biến trên ℝ mà không dùng đạo hàm.
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** Nghịch biến nghiêm ngặt.
+
+Với x₁<x₂, f(x₂)−f(x₁)=−2(x₂−x₁)<0, suy ra f(x₂)<f(x₁). Đây là chứng minh cho mọi cặp, không chỉ hai điểm thử.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P11; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O06; NOT_CANONICAL -->
+
+**Bài 12.**
+
+f(x)=−(x−2)²+9 trên [0,5]. Tìm giá trị lớn nhất và nhỏ nhất trên đoạn.
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** Max 9 tại x=2; min 0 tại x=5.
+
+Khoảng cách tới 2 nhỏ nhất 0 cho 9; lớn nhất 3 tại x=5 cho 9−9=0. Ở x=0 được5 nên không phải min.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P12; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O06; NOT_CANONICAL -->
+
+**Bài 13.**
+
+f(x)=2(x+1)²−3 trên [−2,2]. Tìm min/max.
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** Min −3 tại x=−1; max 15 tại x=2.
+
+Đỉnh x=−1 trong đoạn cho min −3. Các đầu mút: f(−2)=−1, f(2)=15 nên max15.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P13; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O07; NOT_CANONICAL -->
+
+**Bài 14.**
+
+Xét f(x)=x³−x trên ℝ. Hàm chẵn, lẻ hay không loại nào? Nêu đối xứng.
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** Hàm lẻ, đối xứng qua gốc tọa độ.
+
+f(−x)=−x³+x=−(x³−x)=−f(x); miền ℝ đối xứng qua 0.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P14; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O07; NOT_CANONICAL -->
+
+**Bài 15.**
+
+Xét g(x)=x²+x trên ℝ. G chẵn hay lẻ?
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** Không chẵn cũng không lẻ.
+
+g(−x)=x²−x, khác g(x)=x²+x và khác −g(x)=−x²−x (chọn x=1). Miền đối xứng nhưng tính chất công thức không đạt.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P15; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O08; NOT_CANONICAL -->
+
+**Bài 16.**
+
+Hàm f xác định trên ℝ có chu kỳ 4: f(x+4)=f(x) với mọi x. Nếu f(1)=2, tính f(9).
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** f(9)=2.
+
+Vì 9=1+2·4, lặp quan hệ hai lần. Không cần biết công thức lượng giác.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P16; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O08; NOT_CANONICAL -->
+
+**Bài 17.**
+
+Bốn giá trị f(0)=1,f(1)=0,f(2)=1,f(3)=0 có đủ chứng minh f có chu kỳ 2 trên ℝ không?
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** Không đủ.
+
+Dữ liệu ở bốn điểm không chứng minh f(x+2)=f(x) với mọi x trong miền. Chẳng hạn hàm đa thức nội suy qua bốn điểm có thể khác nhau ở những x khác.
+
+</details>
+
+## 3. Tịnh tiến, phản xạ và co giãn
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P17; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O09; NOT_CANONICAL -->
+
+**Bài 18.**
+
+Từ f(x)=x², cho g(x)=f(x)−3. Đỉnh g ở đâu và đồ thị dịch theo hướng nào?
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** Dịch xuống 3; đỉnh (0,−3).
+
+Trừ 3 khỏi mọi tung độ giữ hoành độ không đổi, (0,0)→(0,−3).
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P18; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O09; NOT_CANONICAL -->
+
+**Bài 19.**
+
+Từ f(x)=|x|, cho g(x)=f(x)+2. Giá trị nhỏ nhất và vị trí đạt được?
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** Min2 tại x=0; đồ thị dịch lên2.
+
+|x|≥0 với dấu bằng tại x=0; cộng2 vào giá trị y nên min tăng từ0 lên2.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P19; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O10; NOT_CANONICAL -->
+
+**Bài 20.**
+
+Từ y=x², đồ thị g(x)=(x+3)² được tịnh tiến bao nhiêu đơn vị theo chiều nào?
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** Sang trái3; đỉnh (−3,0).
+
+g(x)=f(x−(−3)); điểm g bằng0 tại x=−3. Dấu trong ngoặc ngược với chiều dịch của điểm.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P20; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O10; NOT_CANONICAL -->
+
+**Bài 21.**
+
+Từ f(x)=√x (D=[0,+∞)), cho g(x)=√(x−4). Tìm D_g và chiều dịch.
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** D_g=[4,+∞), dịch phải4.
+
+Điều kiện x−4≥0 ⇒ x≥4; hình g được từ hình f bằng dịch mỗi điểm sang phải4.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P21; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O11; NOT_CANONICAL -->
+
+**Bài 22.**
+
+Với f(x)=x²+x, h(x)=−f(x). Đối xứng qua trục nào? Tính h(1).
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** Qua Ox, h(1)=−2.
+
+Phép y↦−y giữ x, đổi dấu tung độ; f(1)=2 nên h(1)=−2.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P22; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O11; NOT_CANONICAL -->
+
+**Bài 23.**
+
+Với f(x)=x²+x, k(x)=f(−x). Viết k và tính k(1).
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** k(x)=x²−x, k(1)=0; đối xứng qua Oy.
+
+Thay −x ở đối số: (−x)²+(−x)=x²−x. Đổi dấu x giữ tung độ tạo đối xứng Oy.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P23; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O12; NOT_CANONICAL -->
+
+**Bài 24.**
+
+Cho f(x)=|x|, g(x)=3f(x). Tính g(−2), xét min và mô tả biến đổi.
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** g(−2)=6; min0; kéo dãn đứng hệ số3.
+
+Mọi tung độ y nhân3, nên ở x=−2 từ2 lên6; giá trị min0 vẫn ở x=0.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P24; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O12; NOT_CANONICAL -->
+
+**Bài 25.**
+
+f(x)=x², g(x)=−(1/2)f(x). Mô tả phép biến đổi và tính g(2).
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** Đối xứng qua Ox và co chiều đứng hệ số1/2; g(2)=−2.
+
+Từ f(2)=4, nhân −1/2 được −2. Hệ số âm phản xạ qua Ox; độ lớn 1/2 thu nhỏ mọi tung độ.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P25; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O13; NOT_CANONICAL -->
+
+**Bài 26.**
+
+f(x)=x² và g(x)=f(2x)=4x². So độ rộng hai đồ thị và tìm g(1).
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** g co ngang hệ số1/2; g(1)=4.
+
+Cùng mức y=4, f đạt x=±2 còn g đạt x=±1, nên hình g hẹp theo Ox gấp đôi. g(1)=(2)²=4.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P26; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O13; NOT_CANONICAL -->
+
+**Bài 27.**
+
+f(x)=|x| và h(x)=f(x/3). Đây là co hay giãn ngang? h(−6)=?
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** Giãn ngang hệ số3; h(−6)=2.
+
+Để đạt mức y=2, f cần |x|=2 còn h cần |x/3|=2 tức |x|=6. h(−6)=|−2|=2.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P27; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O14; NOT_CANONICAL -->
+
+**Bài 28.**
+
+Từ f(x)=x−2, g(x)=|f(x)|. Đỉnh hình chữ V ở đâu? Nửa dưới trục Ox biến đi đâu?
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** Đỉnh (2,0); phần f<0 phản xạ lên phía trên Ox.
+
+Lấy |y| giữ y≥0 và đổi dấu y<0; đồ thị y=|x−2| không có tung độ âm, nghiệm bằng0 tại x=2.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P28; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O14; NOT_CANONICAL -->
+
+**Bài 29.**
+
+Từ f(x)=x²−4, g(x)=|x²−4|. Tìm nghiệm g(x)=0 và tính g(0).
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** x=−2 hoặc 2; g(0)=4.
+
+|u|=0 ⇔ u=0 ⇒ x²=4. f(0)=−4 được phản xạ thành g(0)=4. Không được kết luận g(x)=x²−4 mọi x.
+
+</details>
+
+## 4. Phép biến đổi kết hợp và mô hình thực tế
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P29; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O15; NOT_CANONICAL -->
+
+**Bài 30.**
+
+f(x)=x², g(x)=f(x−2)+1. Nêu chuỗi dịch và tính g(0).
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** Dịch phải2 rồi lên1; g(0)=5.
+
+g(x)=(x−2)²+1. Đỉnh từ (0,0) đến (2,1), g(0)=4+1=5. Dịch ngang dùng đối số, dịch đứng dùng số ngoài.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P30; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O15; NOT_CANONICAL -->
+
+**Bài 31.**
+
+f(x)=x², h(x)=−2f(x+1)+3. Tìm đỉnh, chiều parabol và tính h(0).
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** Đỉnh (−1,3), parabol quay xuống, h(0)=1.
+
+h(x)=−2(x+1)²+3: dịch trái1, kéo giãn đứng2 và phản xạ Ox, rồi lên3. Đỉnh tại x=−1, h(0)=−2+3=1.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P31; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O16; NOT_CANONICAL -->
+
+**Bài 32.**
+
+f(x)=x+1 khi x<0 và f(x)=x²+1 khi x≥0. Tính f(0) và giải thích hai nhánh có nối nhau tại x=0 không.
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** f(0)=1; hai nhánh gặp nhau tại (0,1) không nhảy.
+
+Tại x=0 dùng nhánh ≥0 nên f(0)=1. Giá trị nhánh trái khi x gần0 là gần1, nhánh phải cũng gần1; điểm thuộc nhánh phải là chấm đặc.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P32; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O16; NOT_CANONICAL -->
+
+**Bài 33.**
+
+f(x)=2 nếu x≤1 và f(x)=x+3 nếu x>1. Xác định chấm đặc/rỗng tại x=1 và có bước nhảy không.
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** Chấm đặc (1,2), chấm rỗng (1,4), có bước nhảy.
+
+Tại x=1 quy tắc đầu cho f(1)=2. Nhánh thứ hai chỉ nhận x>1, lúc x đến gần1 từ phải tung độ gần4 nhưng (1,4) không thuộc đồ thị.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P33; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O17; NOT_CANONICAL -->
+
+**Bài 34.**
+
+Lợi nhuận giả định R(q)=−(q−5)²+25 (triệu đồng), q∈{0,1,...,8} là số sản phẩm. Tìm giá trị lớn nhất hợp lệ và q tương ứng.
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** Max25 triệu tại q=5.
+
+R(q)≤25 do trừ một bình phương, q=5 nằm trong miền nguyên cho R(5)=25. Không dùng đạo hàm; đỉnh và miền thực tế đã đủ.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-P34; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O17; NOT_CANONICAL -->
+
+**Bài 35.**
+
+Giá thuê dịch vụ F(k)=12000+9000·max(k−2,0) (đồng), k≥0 tính bằng giờ. Tính F(1), F(4) và giải thích vai trò ngưỡng 2 giờ.
+
+<details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án:** F(1)=12000 đồng, F(4)=30000 đồng; trước hoặc bằng2 giờ chỉ trả phí nền.
+
+max(k−2,0) bằng0 với k≤2 và bằng k−2 khi k>2. Khi k=4, F=12000+9000·2=30000. Quy tắc theo từng khoảng tạo điểm đổi dốc ở k=2.
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-W02; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O15; NOT_CANONICAL -->
+
+**Bài 36.**
+
+Từ f(x)=x², cho g(x)=−2f(x+3)+4. (a) Mô tả phép biến đổi; (b) tìm đỉnh và GTLN trên ℝ; (c) tính g(0); (d) giải g(x)=0.
+
+<details markdown="1"><summary>Lời giải và rubric</summary>
+
+**Đáp án:** Trái3, phản xạ Ox/kéo đứng2, lên4; đỉnh(−3,4), max4; g(0)=−14; nghiệm x=−3±√2.
+
+g(x)=−2(x+3)²+4. Hệ số bình phương âm nên đạt max4 tại x=−3. g(0)=−2·9+4=−14. Giải -2(x+3)²+4=0 ⇒ (x+3)²=2 ⇒ x=−3±√2.
+
+**Rubric tự đối chiếu:** 7 điểm: mô tả dịch ngang/đứng (1đ), phản xạ và tỉ lệ đứng (1đ), đỉnh và max có lí do (2đ), g(0) (1đ), hai nghiệm đúng và giải thích (2đ).
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-W03; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O16; NOT_CANONICAL -->
+
+**Bài 37.**
+
+Cho f(x)=(x+2)² nếu x<−1, và f(x)=3−x nếu x≥−1. Tính f(−2), f(−1), mô tả hai chấm tại x=−1 và xác định đồ thị có bị nhảy tại đó không.
+
+<details markdown="1"><summary>Lời giải và rubric</summary>
+
+**Đáp án:** f(−2)=0, f(−1)=4; chấm rỗng(−1,1), chấm đặc(−1,4); có bước nhảy.
+
+Nhánh trái x<−1 cho f(−2)=0 và khi tiến tới −1 thì (x+2)² tiến đến1, nhưng không lấy điểm(−1,1). Nhánh phải có dấu ≥ nên f(−1)=3−(−1)=4 là điểm đặc. Hai nhánh không nối tại cùng y nên bị nhảy.
+
+**Rubric tự đối chiếu:** 7 điểm: chọn đúng nhánh ở −2 (1đ), tính 0 (1đ), chọn đúng nhánh tại −1 và tính 4 (2đ), nêu đúng điểm mở (1đ), điểm đóng (1đ), giải thích bước nhảy (1đ).
+
+</details>
+
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP05-W04; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O17; NOT_CANONICAL -->
+
+**Bài 38.**
+
+Một mô hình lợi nhuận R(q)=−(q−4)²+16 (triệu đồng), q là số sản phẩm nguyên không âm và chỉ được sản xuất q∈{0,1,2,3,4,5,6}. (a) Tìm phương án tối ưu ban đầu; (b) nếu chỉ còn lựa chọn q=5 hoặc 6, tìm phương án mới; (c) giải thích vì sao đỉnh không tự là đáp án khi miền khả thi đổi.
+
+<details markdown="1"><summary>Lời giải và rubric</summary>
+
+**Đáp án:** Ban đầu q=4, lợi nhuận16; nếu chỉ q∈{5,6}, chọn q=5 với R(5)=15 thay vì R(6)=12.
+
+R(q)=16−(q−4)²≤16 và q=4 khả thi, nên tối ưu toàn miền ban đầu. Khi miền còn {5,6}, q=4 không khả thi: R(5)=15, R(6)=12; chọn 5. Cần tối ưu trên miền quyết định, không trên ℝ không ràng buộc.
+
+**Rubric tự đối chiếu:** 7 điểm: hiểu miền nguyên q và đơn vị (1đ), nhận đỉnh q4 và giá trị16 (2đ), tính R(5)=15 và R(6)=12 (2đ), chọn tối ưu q5 (1đ), giải thích thay miền thay quyết định (1đ).
+
+</details>
+
+# Tự kiểm tra
+
+Hãy làm đủ 17 câu trước khi mở lại phần Luyện tập để tự đối chiếu. Đây là các câu **công khai đã gặp**, nhằm giúp em phát hiện phần cần ôn, không phải đánh giá năng lực độc lập. Sau khi làm xong, hãy kiểm điều kiện, điểm biên, phép biến đổi và đơn vị; nếu sai, quay lại bài Kiến thức tương ứng.
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P01; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O01; NO_MASTERY; NOT_RD1 -->
+
+**Câu 1.** Một bảng có các cặp (0,2),(1,4),(1,4),(2,5). Đây có phải một hàm số trên tập đầu vào {0,1,2} không?
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P03; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O02; NO_MASTERY; NOT_RD1 -->
+
+**Câu 2.** Tìm tập xác định f(x)=√(x+2)/(x−3).
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P05; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O03; NO_MASTERY; NOT_RD1 -->
+
+**Câu 3.** Cho f(x)=(x−2)²+1 với D=[−1,3]. Tìm tập giá trị thật của hàm số trên D.
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P07; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O04; NO_MASTERY; NOT_RD1 -->
+
+**Câu 4.** Trên đồ thị y=|x−1|+2, điểm A(0,3) và B(2,4) có thuộc đồ thị không?
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P09; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O05; NO_MASTERY; NOT_RD1 -->
+
+**Câu 5.** Cho f(x)=x² trên D=[−4,−1]. Hàm tăng hay giảm trên D? Tìm giá trị lớn nhất và nhỏ nhất.
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P11; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O06; NO_MASTERY; NOT_RD1 -->
+
+**Câu 6.** f(x)=−(x−2)²+9 trên [0,5]. Tìm giá trị lớn nhất và nhỏ nhất trên đoạn.
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P13; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O07; NO_MASTERY; NOT_RD1 -->
+
+**Câu 7.** Xét f(x)=x³−x trên ℝ. Hàm chẵn, lẻ hay không loại nào? Nêu đối xứng.
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P15; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O08; NO_MASTERY; NOT_RD1 -->
+
+**Câu 8.** Hàm f xác định trên ℝ có chu kỳ 4: f(x+4)=f(x) với mọi x. Nếu f(1)=2, tính f(9).
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P17; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O09; NO_MASTERY; NOT_RD1 -->
+
+**Câu 9.** Từ f(x)=x², cho g(x)=f(x)−3. Đỉnh g ở đâu và đồ thị dịch theo hướng nào?
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P19; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O10; NO_MASTERY; NOT_RD1 -->
+
+**Câu 10.** Từ y=x², đồ thị g(x)=(x+3)² được tịnh tiến bao nhiêu đơn vị theo chiều nào?
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P21; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O11; NO_MASTERY; NOT_RD1 -->
+
+**Câu 11.** Với f(x)=x²+x, h(x)=−f(x). Đối xứng qua trục nào? Tính h(1).
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P23; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O12; NO_MASTERY; NOT_RD1 -->
+
+**Câu 12.** Cho f(x)=|x|, g(x)=3f(x). Tính g(−2), xét min và mô tả biến đổi.
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P25; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O13; NO_MASTERY; NOT_RD1 -->
+
+**Câu 13.** f(x)=x² và g(x)=f(2x)=4x². So độ rộng hai đồ thị và tìm g(1).
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P27; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O14; NO_MASTERY; NOT_RD1 -->
+
+**Câu 14.** Từ f(x)=x−2, g(x)=|f(x)|. Đỉnh hình chữ V ở đâu? Nửa dưới trục Ox biến đi đâu?
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P29; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O15; NO_MASTERY; NOT_RD1 -->
+
+**Câu 15.** f(x)=x², g(x)=f(x−2)+1. Nêu chuỗi dịch và tính g(0).
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P31; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O16; NO_MASTERY; NOT_RD1 -->
+
+**Câu 16.** f(x)=x+1 khi x<0 và f(x)=x²+1 khi x≥0. Tính f(0) và giải thích hai nhánh có nối nhau tại x=0 không.
+
+<!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P33; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O17; NO_MASTERY; NOT_RD1 -->
+
+**Câu 17.** Lợi nhuận giả định R(q)=−(q−5)²+25 (triệu đồng), q∈{0,1,...,8} là số sản phẩm. Tìm giá trị lớn nhất hợp lệ và q tương ứng.
+
+Học liệu tham khảo SGK Toán 10, Tập Hai (Bài 15–16) và SGK Toán 11, Tập Một (Bài 3), bộ Kết nối tri thức với cuộc sống.
