@@ -11,11 +11,11 @@ const {chromium}=require("playwright");
 const root=path.resolve(__dirname,"..");
 const base=process.env.SLM_CHV_URL||"http://127.0.0.1:8765";
 const expectedSources={
- 12:"386a8d46bb4960bbab4934a5891fad89406ac7a5",
+ 12:"fc2942aeafdcd34d3cedd9eeb24c48716bbe7e78",
  13:"0459b67858246cb6136cf9a2cf9e7a7d18bd27be",
  14:"21c1ef59277f742b45a27900b173fac031a4a04f"
 };
-const ids={12:4,13:5,14:5};
+const ids={12:5,13:5,14:5};
 const names=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
 const blob=data=>{
  const bytes=Buffer.isBuffer(data)?data:Buffer.from(data);
@@ -25,7 +25,29 @@ const blob=data=>{
  for(const [lesson,sha] of Object.entries(expectedSources)){
   const filename=root+"/docs/thpt-preview/sgk/chuong-v/bai-"+lesson+".md";
   const source=fs.readFileSync(filename);
-  assert.equal(blob(source),sha,"B"+lesson+" academic source must stay immutable");
+  assert.equal(blob(source),sha,"B"+lesson+" exact candidate source must be SHA-locked");
+  if(Number(lesson)===12){
+   const receipt=fs.readFileSync(root+
+    "/prototypes/thpt/ux795/G10_CHV_B12_S1_PED_CALCULATOR_Q18_R01_20261118.md","utf8");
+   const get=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(get("BASELINE_B12_KNOWLEDGE_BLOB"),
+    "386a8d46bb4960bbab4934a5891fad89406ac7a5",
+    "B12 R01 must retain original independently reviewed source history");
+   assert.equal(get("B12_R01_SOURCE_BLOB"),blob(source),
+    "B12 must use exactly signed Academic Delta C candidate source");
+   const master=fs.readFileSync(root+"/prototypes/thpt/content-drafts/THPT_G10_CHV_B12_CANONICAL.md","utf8");
+   assert.equal(blob(master),get("ONE_CANONICAL_B12_R01_BLOB"),
+    "B12 source must derive from one signed complete manuscript");
+   assert.equal(master.split("<!-- BEGIN_B12_KNOWLEDGE_MARKDOWN -->\n")[1]
+    ?.split("\n<!-- END_B12_KNOWLEDGE_MARKDOWN -->")[0],source.toString("utf8"),
+    "B12 learner Knowledge must be byte-identical to current canonical");
+   const bank=fs.readFileSync(root+"/docs/assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js");
+   assert.equal(blob(bank),get("B12_R01_ITEM_BANK_BLOB"),"B12 new calculator item source SHA mismatch");
+   assert.equal(blob(fs.readFileSync(root+"/docs/thpt-preview/sgk/chuong-v/luyen-tap.md")),
+    get("B12_R01_PRACTICE_HUB_BLOB"),"B12 new P07 launcher SHA mismatch");
+   assert(receipt.includes("INDEPENDENT_NOTEBOOKLM_ACADEMIC_PED_REVIEW_PENDING"),
+    "B12 material needs independent Academic/PED review, no code self-PASS");
+  }
   assert.equal((source.toString().match(/data-thpt-first-try-id="/g)||[]).length,ids[lesson],
    "B"+lesson+" original formative IDs must not be removed");
  }
@@ -149,7 +171,10 @@ const blob=data=>{
      assert.deepEqual((await blocks.nth(1).locator(":scope > h3").allInnerTexts()).map(t=>t.trim()),
       officialBook[lesson],context+" exact S1 headings without duplicate SGK");
      assert.deepEqual((await blocks.nth(0).locator(":scope > h3").allInnerTexts()).map(t=>t.trim()),
-      ["1.1. Cùng tìm hiểu","1.2. Ví dụ trực quan","1.3. Thuật ngữ, kiến thức và kỹ năng"],
+      lesson===12?["1.1. Cùng tìm hiểu","1.2. Ví dụ trực quan",
+       "1.3. Thực hành máy tính cầm tay — tự nhập, đọc và kiểm",
+       "1.4. Thuật ngữ, kiến thức và kỹ năng"]:
+       ["1.1. Cùng tìm hiểu","1.2. Ví dụ trực quan","1.3. Thuật ngữ, kiến thức và kỹ năng"],
       context+" concept-first discovery");
      if(lesson===14){
       const picture=blocks.nth(1).locator('img[src$="G10_B14_BOXPLOT_S1_Q18_ENRICHMENT_20261113.svg"]');
@@ -159,10 +184,10 @@ const blob=data=>{
       assert(await picture.evaluate(async img=>{if(img.decode)await img.decode();return img.naturalWidth>0;}),
        context+" real educational boxplot SVG decodes");
      }
-     assert.equal(await blocks.nth(2).locator(":scope > h3").count(),3,
-      context+" three historical worked examples still present");
-     assert.equal(await blocks.nth(2).locator(".thpt-g10-example-solution").count(),3,
-      context+" all three original examples grouped in Golden panels");
+     assert.equal(await blocks.nth(2).locator(":scope > h3").count(),lesson===12?4:3,
+      context+" signed number of worked examples");
+     assert.equal(await blocks.nth(2).locator(".thpt-g10-example-solution").count(),
+      lesson===12?4:3,context+" all four B12 method-first examples grouped in Golden UI");
      const render=await article.evaluate(root=>{
       const body=getComputedStyle(root.querySelector(".tabbed-block p")).fontSize;
       const labels=[...root.querySelectorAll(":scope > .tabbed-set > .tabbed-labels > label")];
@@ -183,14 +208,40 @@ const blob=data=>{
      assert(render.heights.every(h=>Math.abs(h-44)<1),context+" Golden 44px buttons");
      assert(render.closed,context+" no pre-click answer exposure");
      assert.equal(render.summaries.length,ids[lesson],context+" original voluntary answer controls");
-     assert(render.summaries.every(t=>t==="Đối chiếu"),context+" concise optional reveal");
+     assert(render.summaries.every(t=>t.startsWith("Đối chiếu")),context+" opt-in concise result disclosure");
      assert(render.overflow<=3,context+" no horizontal page overflow");
      assert(render.tipsClosed&&render.tipsCount>=2,context+" all D6 remediation stays closed");
-     assert.equal(render.worked.length,3,context+" all original worked paragraphs retained");
+     assert.equal(render.worked.length,lesson===12?4:3,context+" B12 has four visibly grouped Golden worked solutions");
      assert(render.worked.every(x=>x.text.length>=55&&x.color!=="rgba(0, 0, 0, 0)"),
       context+" each example has unchanged readable source and a visible Golden panel");
      assert.equal(await article.locator("[data-g10-chapter-selfcheck]").count(),0,
       context+" no independent Readiness exposed");
+     if(lesson===12){
+      await labels.nth(0).click();
+      const fig=blocks.nth(0).locator('img[src*="THPT_G10_B12_ERROR_INTERVAL_D5_R02_REVIEWED.svg"]');
+      assert.equal(await fig.count(),1,context+" signed interval figure must guide concept BEFORE tab2");
+      await fig.scrollIntoViewIfNeeded();
+      assert(await fig.evaluate(async img=>{if(img.decode)await img.decode();return img.naturalWidth>0;}),
+       context+" signed D5 source interval graphic must decode on device viewport");
+      await labels.nth(2).click();
+      assert((await blocks.nth(2).innerText()).includes("Ví dụ 4 — Bấm máy tính"),
+       context+" B12 four method-first examples include genuine calculator operation");
+      await labels.nth(3).click();
+      const tips=blocks.nth(3).locator("details.tip");
+      assert.equal(await blocks.nth(3).locator("h3").count(),0,
+       context+" B12 Golden Tab4 must not regress to B11 duplicate heading cards");
+      assert.equal(await tips.count(),3,context+" B12 three actual wrong-step diagnosis disclosures");
+      assert.deepEqual((await tips.locator("summary").allTextContents())
+       .map(t=>t.trim().slice(0,3)),["4.1","4.2","4.3"],
+       context+" B12 three numbered accordion titles in summaries");
+      await tips.last().locator("summary").click();
+      assert.notEqual(await tips.last().getAttribute("open"),null,
+       context+" B12 calculator D6 voluntarily opens");
+      await tips.last().locator("summary").click();
+      assert.equal(await tips.last().getAttribute("open"),null,
+       context+" B12 calculator D6 must reclose");
+      await labels.nth(0).click();
+     }
      // The cross-tab TOC must open the hidden source tab, preserving URL anchors.
      const headingId=await blocks.nth(1).locator("h3[id]").first().getAttribute("id");
      assert(headingId,context+" original Knowledge anchor");

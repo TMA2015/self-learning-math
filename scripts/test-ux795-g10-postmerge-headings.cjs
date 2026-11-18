@@ -38,7 +38,7 @@ const htmlSelfPractice=/<summary[^>]*>\s*Xem lời giải ba câu tự luyện\s
 const blob=raw=>crypto.createHash("sha1")
  .update(Buffer.from("blob "+raw.length+"\0")).update(raw).digest("hex");
 
-let lessons=0,first=0,reveals=0,legacyCount=0,newB05Count=0;
+let lessons=0,first=0,reveals=0,legacyCount=0,newB05Count=0,newB12Count=0;
 for(let n=1;n<=27;n++){
  const route="thpt-preview/sgk/chuong-"+chapter(n)+"/bai-"+n;
  const markdown=fs.readFileSync(path.join(root,"docs",route+".md"),"utf8");
@@ -60,6 +60,22 @@ for(let n=1;n<=27;n++){
   assert(markdown.includes('data-outcome-id="G10-B05-CALCULATOR_ANGLE"')&&
    markdown.includes('data-thpt-help-ref="HELP-G10-B05-03"'),
    "B05 new item maps to calculator outcome and HELP D6 (never RD1)");
+ }
+ if(n===12){
+  const original=["THPT-G10-CHV-TRY01","THPT-G10-CHV-TRY02",
+    "THPT-G10-CHV-TRY03","THPT-G10-CHV-TRY04"];
+  assert.deepEqual(ids.slice(0,4),original,
+   "B12 four historical independently reviewed First Try IDs/order must remain");
+  assert.deepEqual(ids.slice(4),["THPT-G10-CHV-TRY-CALC-R01"],
+   "B12 may add exactly one independent calculator First Try");
+  const q18=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHV_B12_S1_PED_CALCULATOR_Q18_R01_20261118.md"),"utf8");
+  const f=k=>q18.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(blob(fs.readFileSync(path.join(root,"docs",route+".md"))),
+   f("B12_R01_SOURCE_BLOB"),"B12 new calculator First Try must match signed candidate SHA");
+  assert(q18.includes("INDEPENDENT_NOTEBOOKLM_ACADEMIC_PED_REVIEW_PENDING"),
+   "B12 distinct calculator attempt does not itself grant Academic/PED clearance");
+  newB12Count++;
  }
  if(n===6){
   assert.deepEqual(ids,["THPT-G10-CHIII-TRY06","THPT-G10-CHIII-TRY07",
@@ -213,7 +229,7 @@ for(let n=1;n<=27;n++){
    !markdown.includes(String.fromCharCode(96)),
    "B10 old source code/admin text cannot leak to learner-facing page");
  }
- legacyCount+=ids.length-added.length;newB05Count+=added.length;
+ legacyCount+=ids.length-added.length-(n===12?1:0);newB05Count+=added.length;
  const short=(html.match(concise)||[]).length;
  const verbose=(html.match(longTitle)||[]).length;
  assert(count>=ids.length,"B"+n+" all canonical First Try disclosures must be among explicit answer-reveal titles");
@@ -238,17 +254,24 @@ for(let n=1;n<=27;n++){
   assert.equal(self,1,"B"+n+" one descriptive solution reveal for exactly three voluntary self-practice questions");
   assert.equal(short,ids.length,"B"+n+" every canonical First Try keeps concise Đối chiếu");
   assert.equal(count,short+self,"B"+n+" no unaccounted answer-reveal title");
+ }else if(n===12){
+  const calculator=/<summary[^>]*>\s*Đối chiếu sau khi đã tự thao tác\s*<\/summary>/g;
+  const extra=(html.match(calculator)||[]).length;
+  assert.equal(extra,1,"B12 exact separate calculator disclosure summary must be present");
+  assert.equal(short,4,"B12 four previously reviewed concise Đối chiếu summaries unchanged");
+  assert.equal(count,short+extra,"B12 one distinct opt-in calculator answer, no other changes");
  }else{
   assert.equal(short,count,"B"+n+" concise canonical answer labels must remain unchanged");
  }
  assert.equal(verbose,0,"B"+n+" obsolete spoken-style answer reveal titles must not show in post-merge HTML");
  for(const id of ids)assert(html.includes(id),"B"+n+" canonical First Try ID lost in main+candidate output: "+id);
  assert(!/<summary[^>]*>\s*Em vận dụng\s*<\/summary>/i.test(html),"B"+n+" application headings must be concise");
- lessons++;first+=ids.length;reveals+=short;
+ lessons++;first+=ids.length;reveals+=short+(n===12?1:0);
 }
 assert.equal(lessons,27,"Only G10 Knowledge scope is requested");
 assert.equal(legacyCount,137,"All 137 historical First Try placements must remain canonical");
-assert.equal(newB05Count,1,"Exactly one new B05 calculator First Try is allowed by Q18");
-assert.equal(first,138,"B05 adds exactly one scoped public calculator question to 137 old First Tries");
-assert(reveals>=first,"All 138 First Try placements require visible voluntary Đối chiếu labels");
-console.log("PASS main+candidate dry-run 27 G10 Knowledge pages: "+reveals+" concise Đối chiếu labels for "+first+" First Tries; no verbose reveal headings, IDs preserved. NO DEPLOY; Q18 remains HOLD.");
+assert.equal(newB05Count,1,"Exactly one previously signed new B05 calculator First Try");
+assert.equal(newB12Count,1,"Exactly one independently reviewed-pending new B12 calculator First Try");
+assert.equal(first,139,"137 historic + one B05 + one B12 = 139 canonical First Tries");
+assert.equal(reveals,first,"All 139 First Tries must have voluntary answer disclosures");
+console.log("PASS main+candidate dry-run: 137 immutable historical IDs, one B05, one new Q18-signed B12; 139/139 voluntary answer summaries, no verbose legacy titles. Independent review remains HOLD.");
