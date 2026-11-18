@@ -18,7 +18,7 @@ R10_MATERIAL_PED_SOURCE_BLOB: 37612a3fb8d804efa6dd4f65ddd22d90bf2772ae
 R10_TARGETED_PED_Q15_Q18_RECEIPT_BLOB: 440f0c17f1a4f6b813e8627f29626248ba7f5684
 R11_EDITORIAL_DELTA_RECEIPT_BLOB: 2c17b30e78f484606509cf9d3817fea431ae8dad
 R11_CANDIDATE_Q15_MATRIX_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_Q15_56_CANONICAL_SOURCE_LOCKED_CANDIDATE_MATRIX_20261117.md
-R11_CANDIDATE_Q15_MATRIX_BLOB: 07eefae8e5dd5a8da876a88e8c6b9d59fed1210e
+R11_CANDIDATE_Q15_MATRIX_BLOB: a127267978ec61c857d5cc0cbcd8cb3f1dcc2f1e
 R09_FULL_AUTHOR_A1_A7_MATRIX_BLOB: d21d1d3ede107b3b479d1f61a1ddc0e4df0414ec
 ORIGINAL_G10_SGK_CANONICAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232
 ORIGINAL_G10_SGK_SBT_PDF_VISUAL_RECEIPT_BLOB: 850dd241e60de58ccf032e48e1e13530988436e3
@@ -83,3 +83,11 @@ The nineteen vetted R11 student-visible correction groups were applied **directl
 - Direct math/PED checks: for disjoint choices use addition, multi-stage choices multiplication; distinct n objects give n!, A(n,k)=n!/(n−k)! for 0≤k≤n ordered choices, C(n,k)=n!/[k!(n−k)!] unordered choices; binomial for n≥0 integer and signs with negative b; sum polynomial coefficients P(1). Worked checks: C(5,3)=10 vs A(5,3)=60; (2x−1)^4 coefficients sum P(1)=1. No source lemma shifted beyond original lessons.
 - Entire Practice and public Selfcheck **byte-exact** with previous `eff5f2a91708671db6f32063eea2cd111ddc6b94`: all 56 canonical items, solutions, rubrics, seven public replay-only question stems, source-owned ID markers, display HTML, SVG links and disclosure counts unchanged. Original R11 P2 author receipt remains tied to its signed old source and is not a new full QA on this recap.
 - **SOURCE-SCOPED_AUTHOR_Q18=PASS_ON_RECAP_ONLY; GLOBAL_ACTIVE_Q15_OWNER_V2_READY_REGISTER=HOLD, CONTENT_READY=NO** preserved. S1 original SGK owner, release/golden/official RD1 not modified. NO MERGE/DEPLOY/MATH LAB.
+
+
+## CURRENT CĐ19 R11 IN-PLACE SOURCE ADJUDICATION · 18/11/2026
+
+- Current single learner Git blob `7005bf1f839e566efb9abbc17eccfa92a0b41e63` vs prior R11 learner blob `5546204168eb3c3402b21af9ca1b9d08b118c378`: complete 1,084-to-1,091-line diff checked. **Only one author comment replaced and one seven-line learner Knowledge summary inserted**. No changes to 56 original canonical item markers, original questions, answer/disclosures, rubrics, two SVG or 7 question-only public replay stems.
+- The new Knowledge summary explains counting: sum across mutually exclusive cases, multiply across independent *choice-count levels* when the number of second-step choices is fixed per first-step branch; `P_n=n!`, `A_n^k=n!/(n-k)!`, `C_n^k=n!/[k!(n-k)!]` for `0<=k<=n`, Newton binomial with nonnegative integer power, and the polynomial-only coefficient sum `P(1)`. These are direct consequences of already-reviewed R09/R10 source mathematics; no new exercise result or grading rule.
+- Reconstructed existing Q15 matrix directly from actual current source marker positions: **56/56 unique canonical IDs and seven reused selfcheck placements**, Q15 matrix current SHA `a127267978ec61c857d5cc0cbcd8cb3f1dcc2f1e`. After seven inserted lines, Practice and selfcheck line references were repaired without changing bank ownership; original 25 G10 SGK items remain owned by original G10 public bank, 14 First Try +14 Practice +3 Written remain one canonical each.
+- This is `DELTA_B_SOURCE_EQUIVALENT` relative to the earlier R11 reviewed-staged source for student-visible mathematics and `DELTA_A_UI` for author-only comment. Source-lock for current composite self-QA is `7005bf1f839e566efb9abbc17eccfa92a0b41e63`. No independent NotebookLM full-topic PASS is asserted; `AUTHOR_SELF_VERIFIED` Q18 + previous immutable R09 maths and R10 targeted source receipt are the academic basis. `P0=0`, `P1=0` on affected scope. This revision is AUTHORING custody, no official Readiness/Mastery/merge/deploy.
