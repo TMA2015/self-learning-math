@@ -8,22 +8,25 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: ffa22df505056243d2d70fdc801fa2887971c977
+CONTENT_REVISION: R04_VECTOR_W02_V2_20261118
+DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL_O21_W02; DELTA_A_UI_MODEL_STYLE
+NOTEBOOKLM_REREVIEW: NOT_REQUIRED_WITH_REASON
+SOURCE_COMMIT: ec419671396d7b3464d000c7a4e20d9fe20ebce7
 CATALOG_TOPIC_ID: CD15
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_SPATIAL_PARALLELISM_R04_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 36e94c3752ff2315907a6f3424daa6fa25f80938
+ACADEMIC_SOURCE_BLOB: 6579363666f07f13cf5c7e407b311a08f1e700e2
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC15_R04_AUTHOR_SELF_QA_RECEIPT_20261116.md (author-self; NOT an independent NotebookLM verdict)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC15_R04_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 08479dc9a03670259292182662a2dda00b815961
+REVIEW_RECEIPT_BLOB: 523f2038b195f7826c6830bc739c4b3dc8de93b3
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_R04_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: e993dbf16a98f0dbd2f19af6d243f221b28b98c6
+AUTHOR_A1_A7_BLOB: e8d3d03c5a3a339eac9f68e41429fc0c8621de3c
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC15-SPATIAL-PARALLELISM-FULL-R04_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: f9d4bd7415b1093bb8eea61287a74553ef979d93
+AUTHOR_HANDOFF_BLOB: f45af01ba69aac67f16327494e04719782e6db6b
 ORIGINAL_SGK_SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_THPT_TOPIC15_LINE_PLANE_RELATION_R01_20261113.html
-INTERACTIVE_MODEL_BLOB: 3f3c75765b6cddcaa53994027c45e79701d4d840
+INTERACTIVE_MODEL_BLOB: cf6510d5d964958982fae3ebce5823e35aeac639
 SVG_B10_BLOB: 7791308bcdd5cae8528dfdc2ce1085bc4378785d
 SVG_B11_BLOB: bb4a2f1b9b39b5de2ef4d3221c26f068a873d61c
 SVG_B12_BLOB: 2600483921efb57caa8ac01d9c410ba58c115c18
@@ -54,7 +57,7 @@ CURRENT_PR: DRAFT_AUTHORING_NOT_MERGED
 
 ## 18/11/2026 · Active R04 learner recap source
 
-- Current SOURCE_BLOB `36e94c3752ff2315907a6f3424daa6fa25f80938`, Q18 `08479dc9a03670259292182662a2dda00b815961`, A1 `e993dbf16a98f0dbd2f19af6d243f221b28b98c6`, V2 `f9d4bd7415b1093bb8eea61287a74553ef979d93`. Same 22 outcomes, 89 canonical IDs, no new Topic bank or private assessment data.
+- Current SOURCE_BLOB `6579363666f07f13cf5c7e407b311a08f1e700e2`, Q18 `523f2038b195f7826c6830bc739c4b3dc8de93b3`, A1 `e8d3d03c5a3a339eac9f68e41429fc0c8621de3c`, V2 `f45af01ba69aac67f16327494e04719782e6db6b`. Same 22 outcomes, 89 canonical IDs, no new Topic bank or private assessment data.
 - Adds only four-bullet orientation recall on plane/coplanarity/distinct parallelism/projection. Prior seven duplicate Selfcheck numbering labels and three opening prose/MathJax clarifications between signed historical R04 and active source were checked and documented in the updated Q18. Practice/answers/solutions/5 Written rubrics untouched; 8 question-only Selfchecks, 5 SVG intact.
 - This is author-scoped DELTA_C with Q18 verification, not new independent NotebookLM full-Topic verdict; browser/RELEASE/Final Submit/owner permission unchanged.
 
@@ -90,3 +93,10 @@ CURRENT_PR: DRAFT_AUTHORING_NOT_MERGED
 **Cross-PR REGISTER rule:** this AUTHORING branch holds only its own additional row. RELEASE must reconcile the union from all active AUTHORING Drafts with latest main on exact integrated HEAD; do **not** overwrite or regard old rows as removed.
 
 **No merge, no deploy, no website runtime, no Firebase/student data change.**
+
+## CURRENT 18/11/2026 · one effective R04 source / author QA / model SHA
+
+- Current sole learner source `6579363666f07f13cf5c7e407b311a08f1e700e2` (same established R04 Markdown path), one Q18 signed `AUTHOR_SELF_VERIFIED` receipt `523f2038b195f7826c6830bc739c4b3dc8de93b3`, A1–A7 metadata `e8d3d03c5a3a339eac9f68e41429fc0c8621de3c`, one handoff V2 `f45af01ba69aac67f16327494e04719782e6db6b`. Older R04 source and prior R02 source/Q18 assertions above remain source-scoped **historical**, not current evidence.
+- Corrected actual `TOP15-O21` worked-example and source-owned `THPT-TOP15-W02` (same item ID, `CONTENT_VERSION: 2`) misuse of scalar `AB·AD=0`. Correct directed dot vectors give `(2,0,0)·(0,1,1)=0` and `(2,0,0)·(-1,1,0)=-2` under oblique projection, with same rectangular source/parallel image lesson and unchanged W02 1+1+1+1 **4-point** rubric. This is `DELTA_C_ACADEMIC_MATERIAL` affected-scope self-verified math/PED Q18, no new independent NotebookLM reviewer verdict or forced review on trivial exact arithmetic.
+- **Current standalone Canvas model Git blob** `cf6510d5d964958982fae3ebce5823e35aeac639` reflects 17 added Golden UI CSS lines only compared with old historical `3f3c75765b6cddcaa53994027c45e79701d4d840`; HTML, JS and math code byte-exact; `DELTA_A_UI`. Browser AP and visual embedding remain RELEASE-specific.
+- Prior R02 ready manifest Git blob `6aafb53867cb699a7b270aecb9e165be3b6cc1b1` preserved **byte-identically** in `archive/THPT-TOPIC15-SPATIAL-PARALLELISM-FULL-R02_HISTORICAL_SIGNED_20261118.md`; R02 removed from current `ready/`. This R04 is the only active READY, matched to exactly one REGISTER row. No 2nd source/bank/independent Topic PASS, no private RD1, official Readiness/Mastery, WEBSITE RELEASE, merge or deploy.
