@@ -211,6 +211,25 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
        assert(s1.includes("vuông góc với mọi vectơ"),where+" zero perpendicular SGK convention");
        assert(s1.includes("tùy ý"),where+" zero vector angle SGK convention");
        assert(s1.includes("Mẫu số phải dương"),where+" cos denominator guard");
+       // Reopened owner-P2 scope: all B11 source-separated examples must
+       // present plain Đề, separate Phân tích, framed actual Giải and free Kiểm.
+       assert.equal(await article.getAttribute("data-g10-owner-p2-examples"),"b11",
+        where+" scoped P2 correction runtime");
+       const worked=blocks.nth(2).locator(":scope > .thpt-g10-example-solution");
+       assert.equal(await worked.count(),4,where+" four actual worked-solution boxes");
+       for(let k=0;k<4;k++){
+        const heading=blocks.nth(2).locator(":scope > h3").nth(k);
+        const problem=heading.locator("xpath=following-sibling::p[1]");
+        assert((await problem.innerText()).startsWith("Đề:"),
+         where+" unboxed problem statement "+k);
+        const box=worked.nth(k),text=(await box.innerText()).trim();
+        assert(text.startsWith("Giải:"),where+" only solution math enters box "+k);
+        assert(!text.startsWith("Đề:"),where+" never frame the problem "+k);
+       }
+       assert.equal(await blocks.nth(2).locator(":scope > p").filter({hasText:/^Phân tích:/}).count(),
+        4,where+" label all reasoning as Phân tích");
+       assert((await worked.first().evaluate(el=>getComputedStyle(el).backgroundColor))!=="rgba(0, 0, 0, 0)",
+        where+" actual solution background must paint");
      }
 
      assert.deepEqual((await blocks.locator(":scope > h2.thpt-g10-section-heading").allInnerTexts()).map(v=>v.trim()),
