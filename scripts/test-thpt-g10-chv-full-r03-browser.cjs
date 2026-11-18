@@ -3,7 +3,7 @@
  * Reviewed PED 14 FIRST_TRY items are optional self-disclosure before unchanged
  * original R01/R02 SGK knowledge and existing canonical Core/Practice bank.
  */
-const assert=require("node:assert/strict"),{chromium}=require("playwright");
+const assert=require("node:assert/strict"),fs=require("node:fs"),{chromium}=require("playwright");
 const {verifyModelBLesson}=require("./test-thpt-g10-model-b-browser-helper.cjs");
 const base="http://127.0.0.1:8765/thpt-preview/sgk/chuong-v/";
 (async()=>{
@@ -43,8 +43,12 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/chuong-v/";
         await fold.locator("summary").click();
         assert(await fold.evaluate(x=>x.open),"B12 new calculator result opens only by user");
         const t=await fold.innerText();
-        assert(t.includes("2{,}224")||t.includes("2,224"),
-         "B12 newly disclosed calculator result must be mathematically correct");
+        assert(t.includes("Vì sao")&&t.includes("Nếu nhầm"),
+         "B12 calculator answer needs WHY explanation and D6 recovery, not only key");
+        await fold.locator("mjx-container").first().waitFor({state:"attached",timeout:15000});
+        const markdown=fs.readFileSync("docs/thpt-preview/sgk/chuong-v/bai-12.md","utf8");
+        assert(markdown.includes("2{,}224")&&markdown.includes("2{,}223980090"),
+         "B12 exact source includes correct calculator rounded and unrounded values");
         await fold.locator("summary").click();
         assert(!(await fold.evaluate(x=>x.open)),"B12 calculator result recloses");
         continue;
