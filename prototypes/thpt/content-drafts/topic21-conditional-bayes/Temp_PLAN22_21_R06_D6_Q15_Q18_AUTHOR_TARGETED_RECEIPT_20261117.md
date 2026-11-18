@@ -16,7 +16,7 @@ AFFECTED_P2: 0
 AFFECTED_Q08_PED6: AUTHOR_SELF_QA_PASS
 AFFECTED_Q15_VERSION_ID_MATH_PARITY: AUTHOR_SELF_QA_PASS
 AFFECTED_Q18: AUTHOR_SELF_QA_PASS
-ACTIVE_CANONICAL_BANK_MATRIX: HOLD_NOT_SYNCHRONIZED
+ACTIVE_CANONICAL_BANK_MATRIX: CURRENT_SOURCE_EXACT_Q15_AUTHOR_QA_PASS
 CONTENT_READY: NO
 RELEASE_AUTHORIZATION: NO
 
@@ -95,3 +95,7 @@ Source-verified learner patches were merged **in place** into original currently
 - Re-generated existing Q15 candidate matrix SHA `522d13493d18ec53280a752dc5498e92c8896805` from actual in-place learner source: **19/19 canonical item IDs** with exact primary outcome, role, content_version and Git source marker line; **8/8** public selfcheck placements reuse original P-IDs with question-only display. One removed author-only header made historical line numbers off by exactly 1; all 19 line references now checked to the real current file.
 - Mathematical correctness and 17/17 vs 8/8 chapter outcome coverage claims from prior historical Q18 are **not** automatically transferred; this newly signed paragraph checks only source/marker version and display parity for the reviewed D6 scope. The previous targeted numeric/D6 checks remain attached to their original candidate SHA, and current student-visible math is byte-equivalent. No fresh independent NotebookLM full-Topic PASS.
 - GLOBAL_ACTIVE_Q15_OWNER_V2_READY_REGISTER = **HOLD** and CONTENT_READY = **NO** remain mandatory. Do not edit protected RD1, Final Submit security, Mastery or RELEASE integration. NO MERGE/DEPLOY/MATH LAB.
+
+### 18/11/2026 · same-source matrix activation boundary
+
+- Source `aa325637f659bc5f8ba504f6ce0129e07340a41d`, in-place 19/19 verified Q15 ID/outcome/role/version/line matrix Git blob `522d13493d18ec53280a752dc5498e92c8896805`. Old HOLD_NOT_SYNCHRONIZED **for matrix pointers only** is now closed. This is not an independent full-Topic Academic/PED PASS; `CONTENT_READY: NO` stays until scoped pedagogical review/one active handoff are accepted. No new learner file or bank.
