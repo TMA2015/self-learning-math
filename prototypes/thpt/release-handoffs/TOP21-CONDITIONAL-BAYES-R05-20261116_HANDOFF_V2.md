@@ -8,11 +8,11 @@ RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_LEARNER_PRESENTATION_20261116.md
 ACADEMIC_SOURCE_BLOB: aa325637f659bc5f8ba504f6ce0129e07340a41d
-REVIEW_RECEIPT_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R06_D6_Q15_Q18_AUTHOR_TARGETED_RECEIPT_20261117.md
-REVIEW_RECEIPT_BLOB: d67d28772fe1f724624b19f314dd6df1f62c8cc7
-ACADEMIC_VERDICT: AUTHOR_SELF_VERIFIED_FULL_TOPIC_BASE_WITH_EXACT_SOURCE_Q15_Q18_QA; INDEPENDENT_D6_AFFECTED_ONLY_PASS
-PEDAGOGICAL_VERDICT: AUTHOR_SELF_VERIFIED_WHOLE_TOPIC; INDEPENDENT_D6_PED6_8_OF_8_PASS
-BLOCKERS: NONE_AUTHORING_CONTENT; FINAL_HEAD_CI_PENDING
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC21_R06_CURRENT_SOURCE_Q18_AUTHOR_SELF_QA_RECEIPT_20261118.md
+REVIEW_RECEIPT_BLOB: b58ec1516f8f1618a0c5ae173ba8451be02f929e
+ACADEMIC_VERDICT: SELF_VERIFIED
+PEDAGOGICAL_VERDICT: SELF_VERIFIED
+BLOCKERS: NONE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 MASTERY_ACTIVATION: NO
@@ -190,3 +190,7 @@ This is the **single active V2 handoff**, retaining its original path for the in
 Canonical actual marker versions: T01–T08 = TOP21-R06; P01–P08 = TOP21-R03; W01–W03 = TOP21-R06. The eight public end-of-Topic repetitions reuse P01–P08 question-only, not a second question bank. Current textual lesson identity remains the V2 K01–K08 mapping; reviewer M01–M08 are noncanonical review labels, documented without re-ID.
 
 Historical R05 and any old trailing sentences claiming independent PED_PENDING or R05 ready are superseded by this **effective R06 reconciliation and top metadata**. Only an actual current ready/REGISTER and exact final SHA QA can close authoring packaging; RELEASE still owns AP1–AP5/R1–R5, Final Submit, site QA and explicit owner permission.
+
+## V2 canonical receipt precedence for exact-ready CI
+
+The normative current SOURCE-LOCKED Q18 receipt for this V2 is `prototypes/thpt/review-packets/Temp_TOPIC21_R06_CURRENT_SOURCE_Q18_AUTHOR_SELF_QA_RECEIPT_20261118.md`, Git blob `b58ec1516f8f1618a0c5ae173ba8451be02f929e`, using `AUTHOR_SELF_VERIFIED` on the full Topic. Owner-pasted independent 8/8 D6 verdict is separately pinned in that Q18 record; do not conflate the two scopes. The underlying in-place author-targeted Q18 `d67d28772fe1f724624b19f314dd6df1f62c8cc7` remains subsidiary source evidence and is **not** the V2 gate's canonical `REVIEW_RECEIPT_PATH`. The top-level `ACADEMIC_VERDICT: SELF_VERIFIED` and `PEDAGOGICAL_VERDICT: SELF_VERIFIED` are required mode values, not a claim of independent full-Topic reviewer PASS. AUTHORING no P0/P1; RELEASE remains blocked pending its own gates and owner permission.
