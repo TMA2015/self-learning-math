@@ -217,9 +217,58 @@ const blob=data=>{
      assert.equal(await article.locator("[data-g10-chapter-selfcheck]").count(),0,
       context+" no independent Readiness exposed");
      if(lesson===12){
+      // Owner P2: check DOM role AND computed presentation; count-only Golden
+      // tests previously missed an accidentally boxed Đề and tiny figure.
+      const p2Debug=await page.evaluate(()=>({
+       scripts:[...document.scripts].filter(x=>x.src.includes("owner-p2")).map(x=>x.src),
+       data:document.querySelector(".md-content__inner")?.dataset,
+       sgkH3:[...document.querySelectorAll(".tabbed-block")][1]?.querySelectorAll(":scope > h3").length,
+       sgkH4:[...document.querySelectorAll(".tabbed-block")][1]?.querySelectorAll(":scope > h4").length,
+       source:[...document.querySelectorAll(".tabbed-block")][2]?.querySelectorAll(":scope > h3").length,
+       firstNode:[...document.querySelectorAll(".tabbed-block")][2]?.querySelector(":scope > h3")?.nextElementSibling?.outerHTML?.slice(0,350)
+      }));
+      assert.equal(await article.getAttribute("data-g10-owner-p2-examples"),"b12",
+       context+" P2 explicit B12 runtime must run "+JSON.stringify(p2Debug));
+      const solved=blocks.nth(2).locator(":scope > .thpt-g10-example-solution");
+      assert.equal(await solved.count(),4,context+" 4 actual solution panels");
+      for(let j=0;j<4;j++){
+       const example=blocks.nth(2).locator(":scope > h3").nth(j);
+       const prompt=example.locator("xpath=following-sibling::p[1]");
+       assert((await prompt.innerText()).startsWith("Đề:"),context+" plain prompt before reasoning "+j);
+       assert(!(await solved.nth(j).innerText()).startsWith("Đề:"),
+        context+" NEVER box a problem prompt "+j);
+       assert((await solved.nth(j).innerText()).startsWith("Giải"),
+        context+" frame only solution "+j);
+      }
+      assert.equal(await blocks.nth(2).locator(":scope > p").filter({hasText:/^Phân tích:/}).count(),
+       4,context+" all four method-choice explanations labeled Phân tích");
+      const formals=blocks.nth(1).locator(".thpt-g10-p2-formal-card");
+      assert.equal(await formals.count(),4,context+" formal S1 terms rendered as visible semantic cards");
+      assert.deepEqual((await formals.locator(".thpt-g10-p2-formal-label").allTextContents()).map(x=>x.trim()),
+       ["Khái niệm — Số gần đúng","Định nghĩa — Sai số tuyệt đối và độ chính xác",
+        "Định nghĩa — Sai số tương đối","Quy tắc — Quy tròn và giới hạn sai số"],
+       context+" math-authoritative vocabulary visibly classified");
+      assert((await formals.first().evaluate(x=>getComputedStyle(x).backgroundColor))!=="rgba(0, 0, 0, 0)",
+       context+" formal cards require actual painted background");
       await labels.nth(0).click();
       const fig=blocks.nth(0).locator('img[src*="THPT_G10_B12_ERROR_INTERVAL_D5_R02_REVIEWED.svg"]');
       assert.equal(await fig.count(),1,context+" signed interval figure must guide concept BEFORE tab2");
+      const dims=await fig.evaluate(img=>{
+       const picture=img.closest("figure"),article=img.closest(".md-content__inner");
+       return {picture:picture.getBoundingClientRect().width,
+        img:img.getBoundingClientRect().width,article:article.getBoundingClientRect().width,
+        overflow:document.documentElement.scrollWidth-innerWidth,
+        scrollable:picture.scrollWidth>picture.clientWidth+50};
+      });
+      if(width===390){
+       assert(dims.img>=580&&dims.scrollable&&dims.overflow<=3,
+        context+" small screen must provide a legible zoomable horizontal interval diagram without body overflow");
+      }else{
+       assert(dims.picture>=Math.min(620,dims.article*.72),
+        context+" interval figure must not shrink to tiny 330px screenshot");
+       assert(dims.img<=dims.picture+2,
+        context+" desktop SVG must be within figure frame");
+      }
       await fig.scrollIntoViewIfNeeded();
       assert(await fig.evaluate(async img=>{if(img.decode)await img.decode();return img.naturalWidth>0;}),
        context+" signed D5 source interval graphic must decode on device viewport");
