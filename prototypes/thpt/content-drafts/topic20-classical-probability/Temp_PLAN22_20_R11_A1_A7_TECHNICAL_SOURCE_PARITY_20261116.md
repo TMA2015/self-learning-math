@@ -4,9 +4,9 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_LEARNER_PRESENTATION_20261116.md
-SOURCE_BLOB: 874de7fd1dd1923549a0ef35a9648d291ab761aa
-CURRENT_Q18_RECEIPT_BLOB: bde8785e4794b0519bb301a6358b746b2fc854dd
-CURRENT_Q15_MATRIX_BLOB: a6f790af637ec1d2996e387edf8e2a960d8f29c6
+SOURCE_BLOB: d4a501bce64003f3583aca947d429504530b72c0
+CURRENT_Q18_RECEIPT_BLOB: 9b8ae77f1e9558e6f4d85c81f04e850ab5d5aa5d
+CURRENT_Q15_MATRIX_BLOB: 9d89151085df7bd01df86fc304675bf4d1f3a5fb
 CONTENT_SNAPSHOT: R11_SOURCE_EQUIVALENT_R10 / FULL_TOPIC_LEARNING_PATH / KIEN_THUC + LUYEN_TAP + TU_KIEM_TRA
 STATUS: ACTIVE_AUTHORING_Q15_SOURCE_CUSTODY_VERIFIED; DELTA_C_PED_TARGETED_IN_REVIEW; CONTENT_READY_NO
 
@@ -65,3 +65,8 @@ I have reviewed the whole authoring source after its R10 metadata-only lock, re-
 
 - Current learner Git source `874de7fd1dd1923549a0ef35a9648d291ab761aa`, historical accepted original source `74e758075d17e98649d9dd08709b523e8a782b63` kept in Git history only, no second current lesson file. 37/37 item ID/outcome/role/version and actual source line pointers checked against Q15 matrix `a6f790af637ec1d2996e387edf8e2a960d8f29c6`; updated scoped Q18 `bde8785e4794b0519bb301a6358b746b2fc854dd` confirms Q08/PED6 remediation and original question/answer/rubric math are preserved.
 - Q15 source-owner/line-count error is CLOSED. Material self-remediation DELTA_C is still `AUTHOR_SELF_VERIFIED`, so final readiness must obtain affected-scope independent PED review and exact one current V2/ready/REGISTER chain. Do not reuse old SOURCE_EQUIVALENT academic verdict as a current full-Topic PASS. No official RD1/Final Submit/Skill Mastery or deployment.
+
+## 18/11/2026 · current D6 remediation reconciliation
+
+- Only active learner source `d4a501bce64003f3583aca947d429504530b72c0`; scoped Q18 `9b8ae77f1e9558e6f4d85c81f04e850ab5d5aa5d`; Q15 exact-owner matrix `9d89151085df7bd01df86fc304675bf4d1f3a5fb`. D6 knowledge→Practice links now concrete for **17/17 outcomes** and valid even where outcome order differs from learner item order.
+- Original 37 canonical source markers, question/answer/solution/rubric, 11 public Selfcheck placements, SVG and disclosure counts preserved, source-line offsets unchanged. Scope is DELTA_C_PED_TARGETED; A1 is source-custody self QA, not independent learner-PED PASS. Current TOP20 remains `CONTENT_READY=NO`.
