@@ -4,7 +4,7 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 Q15_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED_TARGETED
 CANDIDATE_SOURCE_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_LEARNER_PRESENTATION_20261116.md
-CANDIDATE_SOURCE_BLOB: 874de7fd1dd1923549a0ef35a9648d291ab761aa
+CANDIDATE_SOURCE_BLOB: d4a501bce64003f3583aca947d429504530b72c0
 HISTORICAL_SIGNED_SOURCE_BLOB: 74e758075d17e98649d9dd08709b523e8a782b63
 HISTORICAL_Q18_RECEIPT_BLOB: 4e6133b77eeaf1d38394d1e4d6f8058d421fd763
 Q15_ACTIVATION: CANDIDATE_ONLY; NOT_GLOBAL_REGISTER
@@ -86,3 +86,9 @@ The three Written questions W01–W03 retain their canonical content version TOP
 - Effective learner Git blob `874de7fd1dd1923549a0ef35a9648d291ab761aa`, same source path `prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_LEARNER_PRESENTATION_20261116.md`. 37/37 canonical IDs matched to source marker line, primary outcome, role and current content_version; 11 public Selfcheck placements reuse existing P-IDs (no new item).
 - 37/37 source line pointers were offset +1 because an author-only candidate comment was removed. 3 previously stale Written-version metadata rows changed to exactly match the reviewed original item revision; no new math, key, rubric, D6, SVG or assessment operation.
 - Existing candidate source Q15 and targeted Delta-C D6 author review are scoped evidence only. `Q15_ACTIVATION: CANDIDATE_ONLY` and `CONTENT_READY: NO` remain; original historical reviewer snapshots unchanged, no release or Mastery.
+
+## 18/11/2026 — D6 remediation destinations source-exact
+
+- One current learner source Git blob `d4a501bce64003f3583aca947d429504530b72c0` (previous `874de7fd1dd1923549a0ef35a9648d291ab761aa` historic), with **17/17 in-place D6 errors** now naming the matching Knowledge subsection and canonical public Practice item, joined through primary `OUTCOME_ID`. All 17 destinations were independently checked against actual live H3 headings and P-item IDs, including reordered O09/O10 and O05/O06.
+- Q15 matrix still 37/37 item ID/outcome/role/version/source-line exact because each D6 link was appended within its existing line; source file length and marker line offsets unchanged. Existing 11 public question-only Selfcheck placements reuse P-IDs. This is `DELTA_C_PED_TARGETED` knowledge-remediation explanation only; no stem, answer, rubric, SVG, private RD1, Mastery or new learner draft.
+- The previous candidate-only status remains until affected-scope independent pedagogical reviewer acceptance; do not promote to CONTENT_READY by matrix parity alone.
