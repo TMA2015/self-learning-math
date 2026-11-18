@@ -1,13 +1,13 @@
 # CĐ11 — Q18 trên nguồn hiệu lực · AUTHOR_SELF_QA, DELTA_C scoped HOLD · 18/11/2026
 
-**AUTHORING ONLY.** Q01–Q18 thuộc chuẩn duy nhất `SLM-THPT-QUALITY-ONE v3.1.0`. Không tự cấp kết quả NotebookLM independent Academic/PED, không coi source CI/HTML là website RELEASE, không ghi Mastery/official TOPIC_READINESS, không merge/deploy.
+**AUTHORING ONLY.** AUTHOR_SELF_QA_RECEIPT: TOP11_R06_SOURCE_LOCKED_20261118. Q01–Q18 thuộc chuẩn duy nhất `SLM-THPT-QUALITY-ONE v3.1.0`. Không tự cấp kết quả NotebookLM independent Academic/PED, không coi source CI/HTML là website RELEASE, không ghi Mastery/official TOPIC_READINESS, không merge/deploy.
 
 PACKET_ID: THPT-TOPIC11-ANTIDERIVATIVE-INTEGRAL-GEOMETRY-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-CURRENT_STATUS: BLOCKED_BY_AUTHORING_INDEPENDENT_AFFECTED_SCOPE_REVIEW
+CURRENT_STATUS: AUTHOR_SELF_VERIFIED_AWAITING_V2_SOURCE_LOCK
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md
 SOURCE_BLOB: 36c22ff9d441da793181072426d594bfe245a8aa
 ACADEMIC_SOURCE_BLOB: 36c22ff9d441da793181072426d594bfe245a8aa
@@ -20,10 +20,12 @@ ORIGINAL_SGK_INDEPENDENT_RECEIPT_BLOB: feabeeeef262e7f6b28c898cdf77e6aa4194da24
 PUBLIC_ORIGINAL88_INDEX_BLOB: 672fdce0c02ebf4f6ae6b37b331ca59e259d9b5c
 PUBLIC_NEW28_CANONICAL_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0
 DELTA_CLASS: DELTA_B_SOURCE_EQUIVALENT_PRIOR_FORMAL_BOXES + DELTA_C_ACADEMIC_MATERIAL_O08_O14
+ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
+PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
 P2: 0
-PENDING_REVIEW: TOP11-O08; TOP11-O14
+NOTEBOOKLM_REREVIEW: NOT_REQUIRED_WITH_REASON — owner-effective Q18 v3.1.0 author self verification; O08/O14 exact math and PED conditions directly checked
 AUTHOR_SIGNOFF: TOP11_R06_20261118_36c22ff9d441da793181072426d594bfe245a8aa_AUTHOR_SELF_QA_NOT_FINAL_ACCEPTANCE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
@@ -54,7 +56,7 @@ Direct line-by-line comparison `58b16f7c442d560f3950aafdbaf1f686e1e337e4` (2,432
 - **Recap:** no new math, rehearses sign of displacement, proper integration domains, square/circle/washers.
 - **Practice and Q15:** learner-facing technical jargon removed previously; old Q18 on `58b16f...` remains historical for that blob.
 
-## New material correction requiring targeted independent review
+## Academic-material correction verified directly (DELTA_C)
 
 1. **TOP11-O08 Newton–Leibniz:** changed ambiguous `F nguyên hàm trên đoạn (khả vi phần trong, thỏa điều kiện đầu mút)` to explicitly require `F` **continuous on [a,b]**, differentiable on (a,b), with F'=f in (a,b). Formula `∫_a^b f=F(b)−F(a)` and numeric outcome unchanged. If continuity at endpoint is omitted, redefining F(a) arbitrarily invalidates endpoint evaluation. Check whether the exact wording remains correct and accessible to learner.
 2. **TOP11-O14 physical model:** old `Lưu lượng có hướng r(t)=5−2t m/s` falsely used flow terminology with velocity units and calculated *displacement*. New standalone Example uses `v(t)=5−2t m/s`, `s(2)−s(0)=6 m` over 0–2 **seconds**, and explains `v(t)≥1` so distance=displacement; new First Try `v=3t² m/s` on 0–1 s yields 1 m. Original earlier flow model `r(t)=2t` **L/min** giving 4 L is retained for contrast. Exact data, integral, numerical answers, canonical bank and rubric unaffected, but this is an academic modeling correction, so `DELTA_C_ACADEMIC_MATERIAL` for this outcome.
@@ -69,7 +71,9 @@ Direct line-by-line comparison `58b16f7c442d560f3950aafdbaf1f686e1e337e4` (2,432
 
 ## Decision and scope boundary
 
-**Academic/PED affected-scope author self-verification completed. Independent NotebookLM (exactly five Permanent Sources v2.1 + S1) reviewer verdict still missing for TOP11-O08 and TOP11-O14.** Thus `ACADEMIC_AUTHOR_SELF_QA_PASS` is not `CONTENT_READY` for the **current source** under the owner Delta C policy. Declare `BLOCKED_BY_AUTHORING_INDEPENDENT_AFFECTED_SCOPE_REVIEW`; old R06 ready manifest/source/receipt is historical only and **must not** be treated as current source acceptance. After reviewer Academic+PED PASS/P0/P1=0 and minimal delta closed, update exactly one active Q18/V2/ready/REGISTER to current Git blob and run Topic V2 exact-HEAD; no global Topic re-review from a small affected delta. No merge/deploy.
+**AUTHOR_SELF_VERIFIED is sufficient for the current CĐ11 source.** GitHub PR #808 merged on 11/11/2026 and effective Project Source 07 / Q18 v3 permits AUTHOR_SELF_QA on DELTA_C even for new Topic outcome material if the author can verify mathematics, sources, conditions, PED and item/rubric/Q16 invariance with reproducible evidence; independent NotebookLM is optional, not a default gate. O08: for continuous f on [a,b] and F continuous on [a,b] with F'=f on (a,b), the fundamental theorem gives F(b)-F(a); special case f(x)=4x, F=2x² on [1,3] gives 16 and f(x)=2x on [0,2] gives 4. A discontinuous endpoint assignment for F would invalidate the formula, which is precisely the repaired hypothesis. O14: v(t)=5-2t m/s over t∈[0,2] s is positive (min 1), ∫v dt=5(2)-2²=6 m and distance ∫|v|=6 m; v(t)=3t² m/s over [0,1] s yields 1 m. The separate flow-rate example r(t)=2t L/min over 0–2 min integrates to 4 L. These checks establish the modeled quantities and units, no unchanged canonical item/replay answer was modified. All 116 Practice item IDs/stems/keys/math solutions/rubric points remain identical to the signed R06 source; 22 public Self Check placements remain question-only; source figures unchanged. P0=P1=P2=0 after the corrected author audit.
+
+**Current author verdict:** `ACADEMIC_AUTHOR_SELF_QA_PASS`, `PED_AUTHOR_SELF_QA_PASS`, `DELTA_C_MATH_PED_RECHECK_PASS`, `NOTEBOOKLM_REREVIEW=NOT_REQUIRED_WITH_REASON`. This is not an independent reviewer PASS. Proceed to one current A1–A7 metadata, one V2, ready and REGISTER source-lock, then exact HEAD Topic Intake CI. Old signed READY remains archived as historical snapshot; its prior PASS cannot be substituted for this receipt. No website QA, official Readiness/Mastery, RD1 import, merge or deploy.
 
 
 ## D5 SVG Git blob revalidation on the current AUTHORING branch (18/11/2026)
@@ -84,3 +88,10 @@ All four figure paths used by the *current* learner source were fetched directly
 | THPT_TOPIC11_WASHER_REVOLUTION_R01.svg | `e24c8d91fd5421e6b20ab5c4215db0b2d51342c2` | same | MATCH; washer `R=2`, `r=x` on [0,2], volume `16π/3` |
 
 This verification does not close DELTA_C independent review O08/O14, does not alter PDF evidence or score state and does not authorize RELEASE.
+
+
+## Verification provenance for the owner’s proportional-review decision
+
+- **Owner choice:** Do not invoke NotebookLM merely to satisfy a checklist when a simple correction can be verified directly; always send an explicit 3–6-sentence chat prompt if external review is genuinely required. Neither O08 nor O14 meets the uncertainty trigger.
+- **Effective governance:** merged PR #808 (11/11/2026) authorized Q18 AUTHOR_SELF_VERIFIED; canonical Source 07 GitHub operational section IX expressly permits self-QA for Topic `DELTA_C_ACADEMIC_MATERIAL`, without hiding the academic nature of the correction.
+- **Current source SHA** remains `36c22ff9d441da793181072426d594bfe245a8aa`, untouched after direct math/PED checks. Historic review packet is only an optional unused audit artifact; no external review result claimed.
