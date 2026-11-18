@@ -1,9 +1,11 @@
-# AUTHORING CĐ05 — Hàm số, đồ thị và các phép biến đổi đồ thị · V2 current learner R05
+# AUTHORING CĐ05 — Hàm số, đồ thị và các phép biến đổi đồ thị · one CURRENT R06 V2
 
-PACKET_ID: THPT-TOPIC05-FUNCTION-GRAPH-TRANSFORMS-FULL-R01
+PACKET_ID: THPT-TOPIC05-FUNCTION-GRAPH-TRANSFORMS-FULL-R06
 CONTENT_REVISION: R06
-AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_NUMBERING_ONLY_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: e55f0dfaf35bd7a83ff3a1b39cad2f9fc93097cc
+AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_A1_A7_CURRENT_SOURCE_QA_20261118.md
+AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_A1_A7_CURRENT_SOURCE_QA_20261118.md
+AUTHOR_METADATA_BLOB: 00666fd8c3f7b6953c2d7dc6bb68f84ba36135a1
+AUTHOR_A1_A7_BLOB: 00666fd8c3f7b6953c2d7dc6bb68f84ba36135a1
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
@@ -11,9 +13,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: efcd1e3c9a90b2909baf3e18f0b1729ea5b34044
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC05_R06_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: 26163231bb56a41ebb4d99670e924ce9208ef605
+ACADEMIC_SOURCE_BLOB: 44c3a3a0ffcdefa9a3c4eaf6ad1d4f78012541b4
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC05_R06_COMPOSITE_Q18_AUTHOR_SELF_QA_20261118.md
+REVIEW_RECEIPT_BLOB: da5e68aa3c6f2d2e40d984f0a0a904b0c4361380
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC05_GRAPH_TRANSFORMS_NEW38_PUBLIC_CANONICAL_R01_20261112.md
 PUBLIC_CANONICAL_BANK_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39
 CATALOG_TOPIC_ID: CD05
@@ -253,3 +255,11 @@ Q18 R05 is DELTA_C for novel pedagogical examples and real learner presentation;
 ## RELEASE_AND_OWNER_GATE
 
 RELEASE chưa tích hợp website, chưa test AP1–AP5, R1–R5, P1–P2 trên HEAD runtime. Cần bảo vệ Golden R4 5+1 / Adaptive Knowledge Tabs v2, responsive MathJax và SVG, keyboard/touch, canonical version và đúng 3 Topic pages. Trước Final Submit không key, feedback, AI Tutor, hint, rubric; sau nộp mới tự đối chiếu. Chủ dự án chưa cấp phép merge/deploy, branch SOURCE ONLY không tác động SGK, THCS, Firebase, Gemini, dữ liệu học sinh. Runtime Topic ID phải được chủ dự án phê duyệt; các lab SPEC_ONLY không mạo nhận tính năng chạy.
+
+## CURRENT R06 closure after prior historical R05 / numbering records — 18/11/2026
+
+This final appended section supersedes any older R05 or R06-numbering source pointers in the historical body above. The original file path is reused for ONE V2 handoff, not a parallel active handoff. Current learner source Git SHA `44c3a3a0ffcdefa9a3c4eaf6ad1d4f78012541b4`, immutable canonical bank SHA `ab878f1a18dea87872449a79c27b75a612d81b39`, latest **AUTHOR_SELF_VERIFIED** Q18 composite SHA `da5e68aa3c6f2d2e40d984f0a0a904b0c4361380` and A1–A7 SHA `00666fd8c3f7b6953c2d7dc6bb68f84ba36135a1`. The source's 38 display-only Practice/Written projections exactly match canonical bank problem, answer, reasoning; 17 public replay stems are question-only. No new source copy, no revised bank, no official held-out assessment.
+
+Q01–Q18 academic/PED source self-QA and A1–A7 have no demonstrated P0/P1 on the inspected current file. The 16 pedagogical remediation routes and three formal clarification boxes were explicitly checked; earlier independent reviewer PASS is **not** claimed for this R06 snapshot. Public selfcheck is `CLIENT_SELF_CHECK_NO_MASTERY`, private RD1 count remains 0 imported, and no live Score/Mastery. Source-only `CONTENT_READY` will be recorded through one R06 ready manifest and REGISTER, superseding old R01 active ready without deleting historical Git evidence. RELEASE AP/R/P, actual browser, source intake on website, Final Submit/hidden questions and owner merge/deploy permission are separate and **NOT** granted.
+
+AUTHOR_SIGNOFF: TOP05_R06_CURRENT_ONE_V2_LOCKED_TO_Q18_A1_BANK_20261118
