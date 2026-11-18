@@ -270,6 +270,10 @@ const blob=data=>{
       context+" no independent Readiness exposed");
      if(lesson===12){
        const solved=blocks.nth(2).locator(".thpt-g10-example-solution");
+       await solved.first().locator("mjx-container").first()
+        .waitFor({state:"attached",timeout:15000});
+       await blocks.nth(1).locator(".thpt-r4-concept-card mjx-container").first()
+        .waitFor({state:"attached",timeout:15000});
        const contents=await solved.allInnerTexts();
        assert.equal(contents.length,4,context+" B12 four B10 Golden solution panels");
        assert(contents.every(t=>t.trim().startsWith("Giải:")&&!t.includes("Đề:")),
