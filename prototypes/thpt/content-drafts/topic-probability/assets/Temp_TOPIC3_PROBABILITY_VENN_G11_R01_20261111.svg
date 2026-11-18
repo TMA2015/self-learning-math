@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" role="img" aria-labelledby="title desc">
+<title id="title">Biến cố hợp và giao trên tập 12 kết quả đồng khả năng</title>
+<desc id="desc">Trong các số 1 đến 12, A là tập chia hết cho 3, B là tập chẵn. A chỉ gồm 3,9; giao A và B gồm 6,12; B chỉ gồm 2,4,8,10; ngoài hai tập gồm 1,5,7,11. Có 8 kết quả thuộc hợp và 2 kết quả thuộc giao.</desc>
+<rect width="760" height="380" rx="16" fill="#fff" stroke="#64748b" stroke-width="2"/>
+<text x="22" y="39" fill="#0f172a" font-family="Arial,sans-serif" font-size="18" font-weight="bold">Không gian mẫu Ω = {1, 2, ..., 12}</text>
+<circle cx="305" cy="187" r="120" fill="#bae6fd" fill-opacity=".55" stroke="#075985" stroke-width="3"/>
+<circle cx="447" cy="187" r="120" fill="#ddd6fe" fill-opacity=".55" stroke="#6d28d9" stroke-width="3"/>
+<text x="235" y="91" font-family="Arial,sans-serif" font-size="19" font-weight="bold" fill="#075985">A: chia hết cho 3</text>
+<text x="475" y="91" font-family="Arial,sans-serif" font-size="19" font-weight="bold" fill="#5b21b6">B: số chẵn</text>
+<text x="252" y="195" font-family="Arial,sans-serif" font-size="22" text-anchor="middle" fill="#0f172a">3, 9</text>
+<text x="377" y="195" font-family="Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#0f172a">6, 12</text>
+<text x="504" y="195" font-family="Arial,sans-serif" font-size="20" text-anchor="middle" fill="#0f172a">2, 4</text>
+<text x="504" y="221" font-family="Arial,sans-serif" font-size="20" text-anchor="middle" fill="#0f172a">8, 10</text>
+<text x="36" y="320" font-family="Arial,sans-serif" font-size="18" fill="#334155">Ngoài A ∪ B:</text>
+<text x="36" y="346" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#0f172a">1, 5, 7, 11</text>
+<text x="377" y="343" font-family="Arial,sans-serif" font-size="18" fill="#334155">P(A ∩ B) = 2/12</text>
+</svg>
