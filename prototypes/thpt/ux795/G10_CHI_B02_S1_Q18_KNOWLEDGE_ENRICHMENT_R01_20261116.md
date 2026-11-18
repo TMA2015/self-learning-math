@@ -1,0 +1,39 @@
+# G10 · Chương I · Bài 02 — SGK Knowledge S1/Q18 enrichment R01 (16/11/2026)
+
+**RECEIPT_TYPE:** `ENRICHMENT_DELTA_RECEIPT` · **STANDARD_ID:** `SLM-THPT-QUALITY-ONE` · **STANDARD_VERSION:** `3.1.0` (the currently effective main standard, do not silently substitute draft #867).  
+**SCOPE:** `G10_CHI_B02 / SGK_KNOWLEDGE_ONLY`, no Core/Practice/Written/Final Submit changes. Owner approved moving to B02 after confirming B01 `OWNER_P2_PASS`.  
+**BASELINE_MAIN_COMMIT:** `f555ee74c8e192e4e849180636b5be9a4b284854` (owner-accepted B01).  
+**LESSON_PATH:** `docs/thpt-preview/sgk/chuong-i/bai-2.md`  
+**BASELINE_LESSON_GIT_BLOB:** `8a7b90f1768b789429def045e38ebe97e6adbf3a`  
+**CANDIDATE_LESSON_GIT_BLOB:** `3002487e974f2693528a39b2b2055fad8724d698`  
+**SVG_ASSET_PATH:** `docs/assets/images/thpt/G10_B02_NUMBER_SETS_INCLUSION_S1_R01.svg`  
+**SVG_ASSET_GIT_BLOB:** `995c387680f4797c619546b73b2acf3acda63aba`  
+**NAV_JS_PATH:** `docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js` · baseline `7db94b86df63c0fb2431ccf66cbb8b1c16d07813`, candidate `7cc162bee17fd553b9d8192e6e564415a43a4996`  
+**CSS_PATH:** `docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css` · baseline `d7167adbc35770e8e4785ac11a36e2cb40c5cfe1`, candidate `e7585ebbd9b082c1b2628aef2d39b7bf7347a13d`  
+**B01_FROZEN_OWNER_ACCEPTED:** `docs/thpt-preview/sgk/chuong-i/bai-1.md` blob `dba6430cd79b17dee0591fb2dcd075ea5200b126`. Cannot be modified by B02.
+
+## Direct SGK S1 source audit, not legacy-page imitation
+
+- **S1 text:** Toán 10 *Kết nối tri thức với cuộc sống*, tập một, Bài 2 **printed pp12–19**, PDF [Mê Tải Sách — publisher-book reproduction](https://media.metaisach.com/2025/09/toan-10-tap-1-ket-noi-tri-thuc-voi-cuoc-song-7ff1b316.pdf), searchable text extracted from printed pages and page footer numbers. Additional section outline cross-check: [SGK247](https://www.sachgiaokhoa247.com/sach-giao-khoa/lop-10-13/ket-noi-tri-thuc-voi-cuoc-song-3/chuong-i-menh-de-va-tap-hop-1970/bai-2-tap-hop-va-cac-phep-toan-tren-tap-hop-11141.html). **PDF screenshot renderer returned cache-miss; therefore the distinction between printed-page index and PDF physical page index cannot be independently locked here.** Do not invent PDF index or claim screenshot visual parity. S1 text and text-described figures, and all math worked directly.
+- S1 has exactly **THREE** main sections: (1) *Các khái niệm cơ bản về tập hợp* (p12–15), (2) *Các tập hợp số* (p15–16), (3) *Các phép toán trên tập hợp* (p16–18), followed by exercises p19. The released B02 had a flattened 4-section structure with **no full `N,Z,Q,R` theory**, and promoted intervals to a separate false top-level SGK section. This was an actual `Q01/Q02` omission/academic defect, not a UI-only change.
+- New source: `2.1` membership/two representation methods/subset/equal/empty; `2.2.1` `N,Z,Q,R` with `N⊆Z⊆Q⊆R`, `2.2.2` intervals/rays; `2.3.1` intersection/union/difference/complement and `2.3.2` Venn counting. This is **3 S1 main sections**, keeping all outcomes as independently understandable; section numbers match source. Interval delimiter `; ` follows SGK notation.
+- **Calculator:** the S1 B02 printed pages do not give a calculator procedure as required content. No invented instruction.
+
+## Delta/outcome matrix — all material changes explicitly scoped
+
+| DELTA_ID | Qxx / Learning outcome | Delta class and evidence | Mathematical/pedagogical check |
+|---|---|---|---|
+| B02-D01 | Q01/Q02/Q03, all outcomes | `DELTA_C_ACADEMIC_MATERIAL`: remove incorrect four-main-section layout; restore exactly S1 **three** sections and S1 number-set module, with rational/irrational definitions and strict inclusion | `0∈N`, `−2∈Z\N`, `3/4∈Q\Z`, `√2∈R\Q`. Does not equate “belongs to R” with “not in Q”; the new worked example includes the smallest containing set and outward membership reasoning |
+| B02-D02 | Q03/Q09/Q11 · definitions & formation | `DELTA_C_ACADEMIC_MATERIAL`: group 13 concept/notation/relationship cards under proper S1 sections; preserve four amber recap boxes | Distinguish element (`∈`) from subset (`⊆`); equal iff mutual subset; empty set subset all; intersection (“and”), union (inclusive “or”), ordered difference and complement relative to `U`; number set hierarchy from inner to outer; avoid copying old blocks mechanically |
+| B02-D03 | Q04/Q12/Q13 · worked examples | `DELTA_C_ACADEMIC_MATERIAL`: insert independent worked rational/number-classification example and replace duplicate 40-student Venn example with 36-student transfer (21/20/8) | For 36-person case: only reading 13, only science 12, both 8, outside 3; `13+8+12+3=36`; old 40-student figure remains tied explicitly to its own 11/12/13/4 data. All four examples use **Phân tích** before **Lời giải**, not misnamed “Vì sao chọn cách này?” |
+| B02-D04 | Q07/Q12/AP1 · figures | `DELTA_C_ACADEMIC_MATERIAL` for new academic figure and `DELTA_A_UI` for styling: add accessible nested number-set SVG and adjacent “đọc hình”; preserve original membership/Subset SVG and existing 40-student Venn SVG with correct numbers and alt | SVG has aria title/desc, labels and examples; no Venn figure reused for 36-student independent example; remaining browser QA must verify actual rendered scale |
+| B02-D05 | Q14/Q15/Q16/Q17 | `DELTA_B_SOURCE_EQUIVALENT`: six hidden First Try IDs `THPT-G10-CHI-TRY06…11` and three HELP IDs retained one-to-one; move each original First Try with its respective S1 concept under new heading; 4 Golden tabs unchanged; visible names all **Vận dụng**, no custom sublabels | No answer text or canonical IDs intentionally changed apart from punctuation `; ` in interval notation. No Final Submit feedback, scoring, Mastery or private RD1 source exposed |
+| B02-D06 | UX/AP/semantic color | `DELTA_A_UI`: B02-only CSS scope `TRY06`, teal 13 concept/definition cards (light `#e8f7f2`/border `#087d69`; slate `#193d36`/border `#76dfc7`); **four amber** recap cards retain legacy `#fff3d5`/dark `#4a3a25` | Inherits accepted B01 Golden visual distinction without recoloring B01 or any B03–B06 siblings. Corresponding JS accepts the real three-section B02 source rather than forcing old four-section outline. |
+| B02-D07 | F01–F10 prevention | `DELTA_A_UI+B_SOURCE_EQUIVALENT`: meaningful heading hierarchy 1.x/2.x/3.x/4.x, four example labels, three HELP labels, single footnote, consistent “Phân tích” and six “Vận dụng” | No vague/repetitive generic remediation; direct practice links kept intact; outcome/MathJax and private safeguards still require actual UI QA |
+
+## Q15/Q16 invariants & review status
+
+- Same four Golden Knowledge tabs, exactly 6 original B02 First Try IDs `TRY06–TRY11` (now arranged under correct source concepts; IDs are opaque canonical identifiers, not display order), 3 original D6 HELP IDs, no duplicate placement/role, same Core/Practice/Written/Anchor IDs and references; no public Final Submit/RD1 changes.
+- **OWNER_SELF_VERIFIED_Q18:** `Q18_OWNER_SELF_VERIFIED_ENRICHMENT` for the explicitly enumerated delta; this is **NOT** an independent NotebookLM verdict or Academic/PED PASS on a different source snapshot. New S1 material was checked directly against S1 text and math; all source SHA/asset SHA listed above. Previous immutable reviewed snapshot not revoked or rewritten.
+- **Pending before publication:** page-source static QA, MkDocs render MathJax/SVG, real browser 390/820/1440 including light/slate semantic colors and images, source-lock acceptance of candidate SHA without rewriting ledger, relevant 27-lesson UX795/R4/Roadmap/THCS/Q16 regression on exact HEAD; then owner-authorized merge/deploy + actual `gh-pages` artifact/URL verified. If any must fail, HOLD until repaired.
+- **Owner UAT:** pending after deploy, B02 separately accepted or defects logged under [Issue #795](https://github.com/TMA2015/self-learning-math/issues/795); do not automatically proceed to B03 or treat B01 PASS as B02 PASS.

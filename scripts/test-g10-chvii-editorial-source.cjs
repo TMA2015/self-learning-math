@@ -1,0 +1,100 @@
+#!/usr/bin/env node
+"use strict";
+/* Q18 Golden B19–B22 — fail-closed original published source → candidate.
+ * No assessment answer/rubric edits, no Academic/PED reviewer PASS inference.
+ * This suite is independent of the original historical G10 source ledger. */
+const fs=require("node:fs"),path=require("node:path"),cp=require("node:child_process"),
+ crypto=require("node:crypto"),assert=require("node:assert/strict");
+const root=path.resolve(__dirname,".."),published="bfc15b552a1ea697edb1327f0a48d7a95bbb73ed";
+const {chviiEditorialReceiptRows,candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
+const blob=data=>{const raw=Buffer.isBuffer(data)?data:Buffer.from(data);return crypto.createHash("sha1").update("blob "+raw.length+"\0").update(raw).digest("hex");};
+const ids=(s,k)=>[...s.matchAll(new RegExp(k+'="([^"]+)"',"g"))].map(m=>m[1]).sort();
+const tex=s=>[...s.matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]/g)].map(m=>(m[1]||m[2]).trim().replace(/\s+/g," "));
+function revealed(s){
+ const lines=s.split("\n"),out=[];let capture=null;
+ for(let i=0;i<lines.length;i++){
+  const line=lines[i];
+  if(/^    \?\?\? question "(?:Tự mở đáp án sau khi đã tự làm|Tự mở kết quả sau khi đã thử|Đối chiếu)"$/.test(line)){
+   if(capture)out.push(capture.join("\n").trimEnd());
+   capture=[];continue;
+  }
+  if(capture!==null){
+   if(line===""||line.startsWith("        ")){capture.push(line);continue;}
+   out.push(capture.join("\n").trimEnd());capture=null;
+  }
+ }
+ if(capture)out.push(capture.join("\n").trimEnd());
+ return out.sort();
+}
+const specs={
+ 19:{count:7,helps:9,figures:1,examples:2,book:["2.1. Phương trình tổng quát của đường thẳng","2.2. Phương trình tham số của đường thẳng"]},
+ 20:{count:5,helps:7,figures:1,examples:2,book:["2.1. Vị trí tương đối giữa hai đường thẳng","2.2. Góc giữa hai đường thẳng","2.3. Khoảng cách từ một điểm đến một đường thẳng"]},
+ 21:{count:5,helps:7,figures:1,examples:2,book:["2.1. Phương trình đường tròn","2.2. Phương trình tiếp tuyến của đường tròn"]},
+ 22:{count:8,helps:10,figures:3,examples:3,book:["2.1. Elip","2.2. Hypebol","2.3. Parabol","2.4. Một số ứng dụng của ba đường conic"]}
+};
+const rows=chviiEditorialReceiptRows();
+assert.equal(rows.size,4,"Exactly four signed Chapter VII rows required");
+let allTry=0,allHelp=0,allFigures=0,allExamples=0;
+for(const [lessonStr,info]of Object.entries(specs)){
+ const n=Number(lessonStr),name="B"+n,row=rows.get(name);
+ assert(row,"Missing signed receipt "+name);
+ const rel="docs/thpt-preview/sgk/chuong-vii/bai-"+n+".md";
+ const bytes=fs.readFileSync(path.join(root,rel)),s=bytes.toString("utf8");
+ const old=cp.spawnSync("git",["show",published+":"+rel],{cwd:root,encoding:"utf8"});
+ assert.equal(old.status,0,"Original published Git source inaccessible "+rel+" "+old.stderr);
+ const baseline=old.stdout;
+ assert.equal(blob(baseline),row.baseline,name+" published source baseline SHA mismatch");
+ assert.equal(blob(bytes),row.candidate,name+" changed Markdown differs from exact receipt");
+ assert.equal(candidateG10KnowledgeBlob(n),row.candidate,name+" canonical source router not signed");
+ assert.equal(row.moved,info.count,name+" 25 First Try count source receipt");
+ assert.equal(row.helps,info.helps,name+" 33 HELP source receipt");
+ assert.equal(row.examples,info.examples,name+" example count source receipt");
+ for(const id of ["data-thpt-first-try-id","data-thpt-help-id","data-outcome-id","data-thpt-help-ref","data-thpt-fig-id"]){
+  assert.deepEqual(ids(s,id),ids(baseline,id),name+" canonical data ID drift: "+id);
+  if(id!=="data-outcome-id")assert.equal(new Set(ids(s,id)).size,ids(s,id).length,name+" duplicated canonical "+id);
+  // Q15: multiple distinct item_ids may target the SAME outcome_id. Do not
+  // misclassify original B22 shared ellipse/hyperbola outcomes as duplicate items.
+ }
+ assert.deepEqual(revealed(s),revealed(baseline),name+" original canonical voluntary answer text changed");
+ assert.equal(revealed(s).length,info.count,name+" original First Try answer-body count");
+ const now=Math.max(0,s.indexOf('=== "Khám phá kiến thức"')),k=s.indexOf('=== "Kiến thức SGK"'),e=s.indexOf('=== "Ví dụ"'),m=s.indexOf('=== "Lỗi thường gặp"');
+ assert(now>=0&&now<k&&k<e&&e<m,name+" tabs broken");
+ assert.deepEqual([...s.matchAll(/^=== "([^"]+)"$/gm)].map(x=>x[1]),
+  ["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],name+" tab identity");
+ const d=s.slice(now,k),knowledge=s.slice(k,e),examples=s.slice(e,m),rem=s.slice(m);
+ assert.deepEqual([...d.matchAll(/^    ### ([^\n]+)/gm)].map(x=>x[1]),
+  ["Cùng tìm hiểu","Ví dụ trực quan","Thuật ngữ, kiến thức và kỹ năng"],name+" Discovery stages");
+ assert.deepEqual([...knowledge.matchAll(/^    ### ([^\n]+)/gm)].map(x=>x[1]),info.book,
+  name+" only real S1 textbook sections in Knowledge");
+ assert.equal(ids(d,"data-thpt-first-try-id").length,info.count,name+" all First Try MUST be before Core/SGK Knowledge");
+ assert.equal(ids(knowledge+examples+rem,"data-thpt-first-try-id").length,0,name+" cloned First Try outside Discovery");
+ assert.equal(ids(rem,"data-thpt-help-id").length,info.helps,name+" all HELPs in remediation tab");
+ assert.equal(ids(d+knowledge+examples,"data-thpt-help-id").length,0,name+" HELP outside remediation");
+ assert.equal((s.match(/<figure/g)||[]).length,info.figures,name+" original D5 figures lost");
+ assert.equal([...examples.matchAll(/^    ### /gm)].length,info.examples,name+" worked example sections incorrect");
+ assert.equal([...examples.matchAll(/\*\*Lời giải\.\*\*/g)].length,info.examples,
+  name+" missing one clear source-level solution for every example");
+ assert(!/Ví dụ do dự án biên soạn|Ví dụ tự biên soạn|Lưu ý về phạm vi Core|outcome Core|RD1/.test(s),
+  name+" review metadata exposed in learner-facing source");
+ const more=new Map();for(const f of tex(s))more.set(f,(more.get(f)||0)+1);
+ for(const f of tex(baseline)){const v=more.get(f)||0;assert(v>=1,name+" original math expression missing "+f.slice(0,90));more.set(f,v-1);}
+ assert.equal((s.match(/^    \\\[$/gm)||[]).length,(s.match(/^    \\\]$/gm)||[]).length,name+" math display delimiters malformed");
+ assert(!/data-mastery-credit|data-mastery-write|data-thpt-readiness/.test(s),name+" official scoring/mastery in Knowledge");
+ assert(!/^\s{4}\?\?\? question "Tự mở đáp án sau khi đã tự làm"/m.test(s),name+" non-Golden reveal label");
+ assert.notDeepEqual(ids(s.replace('data-thpt-first-try-id="','data-thpt-first-try-id="CORRUPTED-'),"data-thpt-first-try-id"),
+  ids(baseline,"data-thpt-first-try-id"),name+" negative item-id mutation failed");
+ assert.notEqual(blob(s+" "),row.candidate,name+" negative source SHA mutation failed");
+ assert.notDeepEqual([...knowledge.replace(info.book[0],"WRONG_S1_TITLE").matchAll(/^    ### ([^\n]+)/gm)].map(x=>x[1]),
+  info.book,name+" negative SGK title mutation failed");
+ allTry+=info.count;allHelp+=info.helps;allFigures+=info.figures;allExamples+=info.examples;
+ console.log("PASS "+name+" true S1 sections "+info.book.length+", FirstTry "+info.count+", HELP "+info.helps+
+  ", figures "+info.figures+", worked problems "+info.examples+", original math and source SHA");
+}
+assert.deepEqual([allTry,allHelp,allFigures,allExamples],[25,33,6,9]);
+const eq=(x,y)=>Math.abs(x-y)<1e-10;
+assert(eq(2*1+4-6,0),"B19 line normal example");
+assert(eq(6/Math.sqrt(5),Math.hypot(12/5,6/5)),"B20 perpendicular distance example");
+assert(eq((5-2)**2+(1-1)**2,9),"B21 source circle tangent point");
+assert(eq(25-16,9)&&eq(9+16,25),"B22 ellipse vs hyperbola c² sign");
+assert(eq(4,2*2)&&eq(2/2,1),"B22 parabol 2p convention, F(1;0)");
+console.log("PASS Q18 G10 ChVII 25/25 canonical First Try, 33 D6, 6 D5, 9 solution boundaries, math/ID/source negative checks; NO DEPLOY.");
