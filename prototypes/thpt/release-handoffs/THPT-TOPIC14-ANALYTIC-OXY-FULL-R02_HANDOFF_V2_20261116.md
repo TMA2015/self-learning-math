@@ -13,13 +13,13 @@ CATALOG_TOPIC_ID: CD14
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: b5c03a5cfb3336ff9e3d3a15fd8f0161ec71fb39
+ACADEMIC_SOURCE_BLOB: 47c98711e2955287831d5ea10fc5d61d1483fd6a
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC14_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 83ed7bce8010f522d86beac22b01403601e13da3
+REVIEW_RECEIPT_BLOB: 1995054b3fd147ffabbe581101cd286659096612
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_R02_AUTHORING_ONLY_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: f8cc19aeb7c6e9320df4cdcff69d4d135deb9925
+AUTHOR_A1_A7_BLOB: e2dd3eb2985aba77e354dbd21c9025a273163be5
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_R02_AUTHORING_ONLY_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: f8cc19aeb7c6e9320df4cdcff69d4d135deb9925
+AUTHOR_METADATA_BLOB: e2dd3eb2985aba77e354dbd21c9025a273163be5
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/Temp_G10_SGK_CHVII_FULL_R02_SOURCE_WITH_CANONICAL_REFERENCES_20261105.md
 ORIGINAL_SGK_SOURCE_BLOB: c5c222af88b0e932f9b60df059d8ffd4da5f0f26
 ORIGINAL_R01_PED_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd
@@ -430,11 +430,18 @@ RELEASE alone verifies canonical resolver/source equivalence, MathJax, original 
 
 ## Current 18/11/2026 — O22 targeted teaching defect and unique ready handoff
 
-**Only learner source effective:** `prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md` Git blob `b5c03a5cfb3336ff9e3d3a15fd8f0161ec71fb39`. The corrected `TOP14-O22` D6 now directs learners who omitted the negative solution back to **ellipse symmetry** rather than an unrelated parabola: for ellipse `x²/9+y²/4=1`, line `x=0` gives `(0,±2)`. Actual answer/condition unchanged and directly computed by the author; classify `DELTA_C_ACADEMIC_MATERIAL` pedagogy-only affected outcome and retain owner effective Q18 `AUTHOR_SELF_VERIFIED` without mechanical NotebookLM re-review.
+**Only learner source effective:** `prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md` Git blob `47c98711e2955287831d5ea10fc5d61d1483fd6a`. The corrected `TOP14-O22` D6 now directs learners who omitted the negative solution back to **ellipse symmetry** rather than an unrelated parabola: for ellipse `x²/9+y²/4=1`, line `x=0` gives `(0,±2)`. Actual answer/condition unchanged and directly computed by the author; classify `DELTA_C_ACADEMIC_MATERIAL` pedagogy-only affected outcome and retain owner effective Q18 `AUTHOR_SELF_VERIFIED` without mechanical NotebookLM re-review.
 
-One current Q18 receipt `83ed7bce8010f522d86beac22b01403601e13da3`, one A1–A7 `f8cc19aeb7c6e9320df4cdcff69d4d135deb9925`, 23 lessons/outcomes, 110 original unique item IDs, 87 real Practice display cards, 23 question-only Self Check replays, 3 pre-existing SVG, 5 Written /7 rubrics, no new math/assessment bank. Original SGK 59 item bodies/keys/rubrics unmodified. Former R01 historical ready Git `814997dc5686d5716d880a7c4379a2c146d339af` archived **byte-identically**, removed from active `ready/`; its earlier Q18 source remains historical. Effective REGISTER row must point exclusively to R02 current ready. Same owner-approved Q01–Q18 and handoff V2, not a new standard. Any future RELEASE must verify MathJax/AP, Q16 Final Submit/privacy, original SGK bank resolution and owner authorization on combined HEAD. No merge/deploy.
+One current Q18 receipt `1995054b3fd147ffabbe581101cd286659096612`, one A1–A7 `e2dd3eb2985aba77e354dbd21c9025a273163be5`, 23 lessons/outcomes, 110 original unique item IDs, 87 real Practice display cards, 23 question-only Self Check replays, 3 pre-existing SVG, 5 Written /7 rubrics, no new math/assessment bank. Original SGK 59 item bodies/keys/rubrics unmodified. Former R01 historical ready Git `814997dc5686d5716d880a7c4379a2c146d339af` archived **byte-identically**, removed from active `ready/`; its earlier Q18 source remains historical. Effective REGISTER row must point exclusively to R02 current ready. Same owner-approved Q01–Q18 and handoff V2, not a new standard. Any future RELEASE must verify MathJax/AP, Q16 Final Submit/privacy, original SGK bank resolution and owner authorization on combined HEAD. No merge/deploy.
 
 
 ## 18/11/2026 · Final CĐ14 DELTA_A_UI active-source numbering closure
 
-Active single learner SHA `b5c03a5cfb3336ff9e3d3a15fd8f0161ec71fb39`, current Q18 `83ed7bce8010f522d86beac22b01403601e13da3`, current A1 `f8cc19aeb7c6e9320df4cdcff69d4d135deb9925`; old learner `c80f20dc9f8f2ee000f5c4af5a4c8583a5307cf1` is historical only. Owner-source and canonical content held byte-equivalent except presentation-only **40 Bài SGK numbering tokens** for 55 SGK displayed cards, now 1..55 with no group gaps; 23 Topic Bài luyện, 23 FirstTry, five Written and all 23 public replays unchanged. No math re-review on unchanged content, no new NotebookLM independent PASS. This is still AUTHORING CONTENT_READY, not website integration, private RD1, official evaluation or release.
+Active single learner SHA `47c98711e2955287831d5ea10fc5d61d1483fd6a`, current Q18 `1995054b3fd147ffabbe581101cd286659096612`, current A1 `e2dd3eb2985aba77e354dbd21c9025a273163be5`; old learner `c80f20dc9f8f2ee000f5c4af5a4c8583a5307cf1` is historical only. Owner-source and canonical content held byte-equivalent except presentation-only **40 Bài SGK numbering tokens** for 55 SGK displayed cards, now 1..55 with no group gaps; 23 Topic Bài luyện, 23 FirstTry, five Written and all 23 public replays unchanged. No math re-review on unchanged content, no new NotebookLM independent PASS. This is still AUTHORING CONTENT_READY, not website integration, private RD1, official evaluation or release.
+
+## 19/11/2026 · Final Q08/PED6 targeted Delta C reconciliation
+
+- `TOP14-O22 / THPT-TOP14-T22`: previous teacher recovery described an **ellipse** and coordinates (0,±2) for a **parabola** intersection. New learner recovery explicitly checks `y²=4x`, x=1 ⇒ y=±2, points (1,±2); both satisfy, whereas (0,±2) do not. Mathematical self-verification includes direct substitution and correct symmetry about Ox.
+- Type `DELTA_C_ACADEMIC_MATERIAL`, **only one T22 “Nếu làm sai” sentence**. Source previous blob `b5c03a5cfb3336ff9e3d3a15fd8f0161ec71fb39` was baseline; effective learner `47c98711e2955287831d5ea10fc5d61d1483fd6a`. Effectively signed Q18 receipt `1995054b3fd147ffabbe581101cd286659096612`, A1–A7 `e2dd3eb2985aba77e354dbd21c9025a273163be5`.
+- 23 First Tries checked for recovery topic alignment; existing 110 canonical IDs, 23 outcomes, 55 consecutive SGK visible problem numbers, 23 question-only client selfchecks, 3 SVG and unchanged shared SGK source/keys/rubrics. No new independent full-topic NotebookLM verdict is asserted. Author affected-scope P0/P1=0.
+- **AUTHORING boundary:** one canonical learner source and one current V2/ready/REGISTER. RELEASE must still do source-owner dependencies, AP1–AP5/R1–R5 and owner permission; no website merge/deploy/Mastery.
