@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 240" role="img" aria-labelledby="title desc">
+<title id="title">Truy hồi một dãy số theo công sai 5</title>
+<desc id="desc">Năm ô minh họa các số hạng 3,8,13,18,23; mỗi bước từ số hạng u n đến u n cộng 1 đều cộng 5. Với u1=3, u n cộng1=u n+5 cho n từ 1, dãy cũng có công thức un=3+5(n−1).</desc>
+<rect width="700" height="240" fill="#fff" stroke="#64748b"/>
+<g fill="#eff6ff" stroke="#0369a1" stroke-width="2"><rect x="34" y="82" width="88" height="64" rx="9"/><rect x="165" y="82" width="88" height="64" rx="9"/><rect x="296" y="82" width="88" height="64" rx="9"/><rect x="427" y="82" width="88" height="64" rx="9"/><rect x="558" y="82" width="88" height="64" rx="9"/></g>
+<g font-family="Arial,sans-serif" font-size="24" fill="#0f172a" text-anchor="middle"><text x="78" y="122">3</text><text x="209" y="122">8</text><text x="340" y="122">13</text><text x="471" y="122">18</text><text x="602" y="122">23</text></g>
+<g font-family="Arial,sans-serif" font-size="17" fill="#be123c" text-anchor="middle"><text x="145" y="65">+5</text><text x="276" y="65">+5</text><text x="407" y="65">+5</text><text x="538" y="65">+5</text></g>
+<g stroke="#be123c" stroke-width="2" fill="none"><path d="M125 114 L159 114 l-7 -6 m7 6 -7 6"/><path d="M256 114 L290 114 l-7 -6 m7 6 -7 6"/><path d="M387 114 L421 114 l-7 -6 m7 6 -7 6"/><path d="M518 114 L552 114 l-7 -6 m7 6 -7 6"/></g>
+<text x="350" y="201" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#334155">u₁=3; uₙ₊₁=uₙ+5 ⇒ uₙ=3+5(n−1)</text>
+</svg>
