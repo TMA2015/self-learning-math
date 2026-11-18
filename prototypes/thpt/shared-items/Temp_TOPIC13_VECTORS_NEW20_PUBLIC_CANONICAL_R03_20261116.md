@@ -1,6 +1,6 @@
 # CĐ13 R03 · NEW20 one PUBLIC canonical bank · 16/11/2026
 
-AUTHORING-only. Exactly 20 unique new canonical IDs: 16 Practice + 4 Written /7. Content identical to frozen R02 learner Git blob d351c5aec660d6482f6694becbd3e2567a14edbf. Preserve historical R01/R02 authoring sources; R03 learner displays the same canonical bodies by ID placement, never a new item.
+AUTHORING-only. Exactly 20 unique new canonical IDs: 16 Practice + 4 Written /7. Original frozen R02 learner Git blob d351c5aec660d6482f6694becbd3e2567a14edbf retains historical evidence; this same canonical bank has since corrected vector-versus-length notation in place, including the current P01/P02/P11 statements and W03 7-point solution. All 20 IDs, mathematics, numerical results, outcome assignments and /7 allocations remain unchanged. W03 has content_version 2 for its precise vector-dot-product rubric text; other three statement clarifications are source-equivalent presentation. The R04 learner file displays these current canonical bodies by a single ID/placement, not a second bank.
 
 PACKET_ID: THPT-TOPIC13-PLANAR-SPATIAL-VECTORS-FULL-R01
 CANONICAL_REVISION: R03
