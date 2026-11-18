@@ -12,15 +12,15 @@ SOURCE_COMMIT: 02b0d83e4c38059f122379e397bb28c9efb395af
 CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R06_P2_WRITTEN_RUBRIC_CLARITY_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: f8c6a52c84fecd0dd63dae60413cfbe4327f54b5
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
+ACADEMIC_SOURCE_BLOB: fda1fa60d8448c016c24159156c6898de2bc673f
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC18_R06_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md (SIGNED AUTHOR_SELF_VERIFIED COMPOSITE OF R04+R05+R06; NOT independent NotebookLM)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_R06_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md
-REVIEW_RECEIPT_BLOB: a0ce3bef430e84a03f11073715cee4fa9558a638
+REVIEW_RECEIPT_BLOB: 0e3ed68872e0e05e5bd26e2a611de440a29e9faa
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R06_247_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_A1_A7_BLOB: 6239749da5a935f4e0cea0a4dac8ac28277956bb
+AUTHOR_A1_A7_BLOB: 4e47c8415d7fb065cbcd4c75b6cb7985bb1d95ff
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC18-OXYZ-FULL-R06-20261117_HANDOFF_V2.md
-AUTHOR_HANDOFF_BLOB: 7bed7df1ac868620c6988139417420e3410e494c
+AUTHOR_HANDOFF_BLOB: 0eaf1c4a4678644c7e440ccd61c61880b3377eb3
 Q01_FAMILY_AUDIT_BLOB: 052b06ea90d6191f125aef72f42d74dd9a6d86c8
 Q18_SUBSTANTIVE_AUDIT_BLOB: 4785b3be15b49f968de27fad99fc311cb2f8bb1b
 S1_ORIGINAL_G12_CHII_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
@@ -96,3 +96,10 @@ The one learner source was directly repaired at Knowledge TOP18-O03: vector arro
 
 
 **Final source-only custody after workflow state correction:** This document uses the required READY state because its edited learner source passed affected-scope academic/PED author review with unchanged question/key/rubric integrity. No separate student source, no independent full-topic new review or website release is implied. Any previous temporary HOLD wording was superseded by the latest STATE/BLOCKERS fields. Release/AP/device CI and explicit owner authorization remain separate hard gates.
+
+
+## Current one-source custody closure · 18/11/2026
+
+The valid learner source is `prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md`, source blob `fda1fa60d8448c016c24159156c6898de2bc673f`. The removed R06-named learner candidate differed only in the non-student provenance comment: 3,638/3,638 learner lines source-equivalent. Current composite full Q18 AUTHOR_SELF_VERIFIED source-specific receipt blob `0e3ed68872e0e05e5bd26e2a611de440a29e9faa`, A1–A7 blob `4e47c8415d7fb065cbcd4c75b6cb7985bb1d95ff`, V2 blob `0eaf1c4a4678644c7e440ccd61c61880b3377eb3`. All original 40 outcomes, 247 original canonical questions/solutions and scoring rubrics, 12 question-only public selfcheck replay references, 10 original SVG references, and owner-held private RD1 metadata remain unchanged. Original CĐ18 R02/R04 packets are immutable historical and should not remain active ready manifests after this replacement.
+
+This marks AUTHORING source custody complete, not full independent NotebookLM Topic PASS, Golden/MathJax/browser verification, official Readiness/Mastery, PR merge or website deployment.
