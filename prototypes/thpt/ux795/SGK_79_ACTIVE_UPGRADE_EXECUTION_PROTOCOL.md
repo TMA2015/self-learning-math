@@ -1,0 +1,27 @@
+# SLM THPT · THỦ TỤC THỰC THI DUY NHẤT — NÂNG CẤP 79 BÀI SGK
+
+**Owner operational direction:** 17/11/2026. **Track:** only RELEASE-SGK learning content, strictly Toán 10 B01→B27, Toán 11 B01→B33, Toán 12 B01→B19. **Master:** [Issue #795](https://github.com/TMA2015/self-learning-math/issues/795) (single live defect ledger + G0–G5 execution checklist). **Standard:** `SLM-THPT-QUALITY-ONE v3.2.0` Q01–Q18 at `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`, §X-D–X-F. Do not create a second standard/checklist. This file is an **operational read-first pointer**, not a parallel defect database.
+
+## Three indispensable inputs — always reopen before each lesson
+
+1. **S1 source authority:** authentic SGK Toán KNTT correct grade/volume/printed pages, direct check of section order, mathematics, hypotheses, exceptional conventions and all outcomes. SBT/other sources for self-authored exercise families and depth, not authoritative replacements. Never invent publisher provenance or PDF offsets. Record real source and limitations.
+2. **Audit 79/79 from 14–15/11:** source-ledger `THPT_SGK_79_LESSON_SOURCE_TRIAGE_20261114.md`; 23 deep S1/PED chapter reports and consolidated `THPT_SGK_79_DEEP_SOURCE_AUDIT_P1_P2_OWNER_TRIAGE_MATRIX_R01_20261115.md`. Preserved **at immutable audit PR #862 HEAD `f44c6c7fa6c3108ad96e928e131fe769581f822d`** (closed unmerged, content still available by SHA). Relevant findings for the lesson must be made explicit before editing.
+3. **Accumulated live defect ledger:** top of #795, both OPEN and past P2-CLOSED issues; owner feedback and accepted preceding lesson source/visual snapshots. Check recurrence classes across lessons, do not reopen frozen owner-accepted B01–B08. History under #795 details is **not an independent work queue**.
+
+## G0–G5 — required execution checklist, no separate academic criterion
+
+- [ ] **G0 intake** — one active lesson/PR; identify `LESSON_ID`, S1 sections/pages, 79-deep audit findings, all affected #795 defect IDs including historic root causes; baseline Git blob, prior P2 freeze, owner authorization.
+- [ ] **G1 coverage matrix** — map each SGK `§2.x`/outcome to WHY/BRIDGE/core definitions/hypotheses/semantic 3+1/formula, worked HOW/WHY, First Try, D5 figure + explanation, D6 remediation, independent Core/Practice/Written item/placement. Avoid counting boxes/items as coverage; preserve exact SGK 2.x order.
+- [ ] **G2 one lesson canonical draft** — edit the **same single current academic source**, not R02/R03/patch sidecars. Existing bank/snapshot IDs stay immutable when reviewed; any new item has one `ITEM_ID`, stem, key, solution, rubric, version and role, with deterministic output/snapshot parity. Self-check mathematical answer/conditions/drawing and independent reader-mode quality. Gemini can inspire natural teaching, not S1 source; NotebookLM only targeted if independent review requested or facts cannot be verified. Q18 receipt binds exact academic source SHA, not fake reviewer PASS.
+- [ ] **G3 actual product tests** — 4 Golden tabs, 1.x–4.x, semantic definition/rule/recap/formula roles, full math coverage, figure before read-guide, MathJax, practice modal/item deep link, closed comparison until learner action, D6, keyboard/touch, 390/820/1440, light/slate, Q15/Q16/RD1, privacy/Final Submit, regression on frozen G10 B01–B08/THCS/Topic/Firebase. A code-string or green CI alone cannot prove a browser behavior. Add tests for new defect patterns.
+- [ ] **G4 ledger transaction each discovery/fix** — immediately update #795 **same defect row**: `ID / lesson,outcome,item / Qxx / observed error and root cause / links to source, browser and SHA / fix / prevention test / status`. Workflow `OPEN→FIXED_IN_PR→CI_PASS→P1_VERIFIED→OWNER_P2_PASS/CLOSED` (or evidence-backed HOLD). New recurrent issue = new row in **same #795** plus G0/G3 prevention, never a parallel issue/PR; no unlogged patch.
+- [ ] **G5 release closure** — exact final Git HEAD and academic source/receipt validity; AP1–AP5, R1–R5, Q15/Q16 safety, full CI, explicit/stored owner release permission; P1 production asset verification after merge/deploy, separate owner P2 physical acceptance. **Next lesson only after owner P2 PASS**. Report `LESSON_ID/SOURCE_BLOB/PR_HEAD/CI/OPEN_DEFECTS/P1/P2/NEXT` with links.
+
+## Source + publication rules
+
+- **One active SGK Issue #795 and one active lesson PR** (at this checkpoint B09 #901); old Issue #861 and audit PR #862 are archived evidence, not live QUALITY HOLD.
+- **One current full academic draft per lesson.** The website Markdown, question bank JS, SVG/CSS are **derived/linked implementation artifacts**, not competing draft revisions; Git history is archival only. Source-to-render and new-item parity tests must detect divergence.
+- Protect SGK vs Topic independence, Q15 unique canonical item roles/placements, Q16 private held-out Readiness and no Mastery from formative/client self-check, owner-accepted B01–B08 immutable acceptance.
+- Never claim `CONTENT_READY`, `PUBLISHED/P1`, `OWNER_P2_PASS` from a PR draft, a standalone sample, or green CI. When evidence is missing, log exact `DEFECT_ID`, not generic workflow HOLD.
+
+**Checkpoint 17/11/2026:** G10 B01–B08 accepted by owner, B09 Draft PR #901 (initial HEAD ee13beaadc0fae6074c6cefe91a8552f7fa4e3ae) active. Later HEAD/state must be re-fetched live and must never be copied as timeless truth. B10 not opened.

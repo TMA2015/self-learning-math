@@ -21,14 +21,25 @@ const url="http://127.0.0.1:8765/thpt-preview/sgk/chuong-ii/bai-3/";
       assert.equal(await blocks.count(),4,"B03 exactly four student panels");
       await modelB.locator(".tabbed-labels > label").nth(1).click();
       assert(await blocks.nth(1).isVisible(),"B03 SGK content panel selectable");
-      const heads=(await blocks.nth(1).locator("h3").allInnerTexts()).map(x=>x.trim());
-      for(const concept of [
-        "2.1. Nhận diện bất phương trình bậc nhất hai ẩn",
-        "2.2. Cặp nghiệm",
-        "2.3. Đường biên",
-        "2.4. Chọn đúng nửa mặt phẳng nghiệm",
-        "2.5. Từ điều kiện đời sống"
-      ]) assert(heads.some(h=>h.startsWith(concept)),"B03 Model B mathematical outcome missing "+concept);
+      // Owner-approved SGK S1 hierarchy: two original main sections (h3),
+      // with five outcome-specific subtopics (h4). Do not restore the
+      // obsolete 2.1..2.5 headings from the pre-enrichment page.
+      const outline=await blocks.nth(1).locator("h3, h4").evaluateAll(nodes=>
+        nodes.map(n=>({level:n.tagName.toLowerCase(),text:n.innerText.trim()})));
+      const expected=[
+        ["h3","2.1. Bất phương trình bậc nhất hai ẩn"],
+        ["h4","2.1.1. Dạng tổng quát và điều kiện hệ số"],
+        ["h4","2.1.2. Cặp nghiệm: kiểm bằng phép thế"],
+        ["h3","2.2. Biểu diễn miền nghiệm của bất phương trình bậc nhất hai ẩn trên mặt phẳng tọa độ"],
+        ["h4","2.2.1. Đường biên: khi nào lấy, khi nào không lấy?"],
+        ["h4","2.2.2. Chọn đúng nửa mặt phẳng nghiệm"],
+        ["h4","2.2.3. Từ điều kiện đời sống đến bất phương trình"]
+      ];
+      assert.deepEqual(outline.map(h=>h.level),expected.map(x=>x[0]),
+        "B03 must render exactly two S1 parent h3 sections and five nested h4 outcomes");
+      expected.forEach(([level,text],i)=>assert(outline[i].text.startsWith(text),
+        "B03 S1 hierarchy/learning outcome mismatch at "+level+" "+text+
+        "; actual: "+outline[i].text));
       const img=blocks.nth(1).locator('img[src$="THPT_G10_B03_HALFPLANES_D5_R01.svg"]');
       assert.equal(await img.count(),1,"B03 reviewed half-plane D5 should remain");
       assert((await img.getAttribute("alt"))?.length>25,"B03 educational figure needs meaningful alt");
@@ -77,7 +88,7 @@ const url="http://127.0.0.1:8765/thpt-preview/sgk/chuong-ii/bai-3/";
       assert.equal(await page.locator("[data-thpt-help-id]").count(),2,"B03 original D6 source IDs preserved");
       assert.equal(await page.locator("[data-thpt-first-try-id]").count(),5,"B03 original 5 self-attempts preserved");
       assert.equal(await page.locator("details.question[open]").count(),0,"B03 must not expose answers");
-      console.log("PASS G10 B03 Model B AP: five mathematical outcomes, MathJax, D5, D6 and closed answers @"+width);
+      console.log("PASS G10 B03 Model B AP: two original S1 sections / five nested outcomes, MathJax, D5, D6 and closed answers @"+width);
       continue;
     }
     const heads=await page.locator("h3").allInnerTexts();

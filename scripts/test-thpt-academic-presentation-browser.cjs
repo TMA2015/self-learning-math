@@ -2,6 +2,8 @@
 "use strict";
 const assert=require("node:assert/strict");
 const {chromium}=require("playwright");
+const {chivEditorialReceiptRows}=require("./thpt-q18-g10-source-receipt.cjs");
+const chivEditorial=chivEditorialReceiptRows();
 
 const pages=[
   {
@@ -19,8 +21,10 @@ const pages=[
   },
   {
     path:"sgk/chuong-iv/bai-9/",
-    expected:["1. Định nghĩa và trường hợp đặc biệt","2. Tính chất",
-      "3. Trung điểm và trọng tâm","4. Ứng dụng"],
+    expected:chivEditorial.has("B09")
+      ? ["2.1. Tích của một vectơ với một số","2.2. Các tính chất của phép nhân vectơ với một số"]
+      : ["1. Định nghĩa và trường hợp đặc biệt","2. Tính chất",
+         "3. Trung điểm và trọng tâm","4. Ứng dụng"],
     minMath:20
   }
 ];
@@ -38,6 +42,16 @@ const pages=[
      for(const expected of sample.expected){
       assert(headings.some(x=>x.trim().startsWith(expected)),
        "Missing learner-facing heading "+expected+" on "+sample.path);
+     }
+     if(sample.path==="sgk/chuong-iv/bai-9/"&&chivEditorial.has("B09")){
+       const official=page.locator(".md-content__inner > .tabbed-set > .tabbed-content > .tabbed-block").nth(1);
+       assert.deepEqual((await official.locator(":scope > h3").allInnerTexts()).map(x=>x.trim()),
+         sample.expected,"B09 official S1 2.x headings, not old editorial checklist");
+       assert.equal(await official.locator("details.question,[data-thpt-first-try-id]").count(),0,
+         "B09 no First Try in official Knowledge tab");
+       assert.equal(await page.locator(".md-content__inner > .tabbed-set > .tabbed-content > .tabbed-block")
+         .nth(0).locator("[data-thpt-first-try-id]").count(),5,
+         "B09 retained all five voluntary First Tries in Discovery");
      }
      await page.waitForFunction(()=>document.querySelectorAll("mjx-container").length>0,{timeout:12000});
      await page.evaluate(async()=>{if(window.MathJax?.startup?.promise)await window.MathJax.startup.promise});

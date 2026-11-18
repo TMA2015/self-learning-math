@@ -13,15 +13,12 @@ const specs={
   18:{display:8,inline:118,sha:"06e97d3685f0dbfb5ef80082622eda185a5dfe7d",tries:4,extraFold:1}
 };
 const gitBlob=s=>crypto.createHash("sha1").update("blob "+Buffer.byteLength(s,"utf8")+"\0").update(s).digest("hex");
+const {candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 function candidateSourceSha(n){
- const ledgerPath=path.join(root,"prototypes/thpt/ux795/UX795_G10_KNOWLEDGE_RELEASE_SOURCE_INTAKE_R01_20261110.md");
- if(!fs.existsSync(ledgerPath))return null;
- const lines=fs.readFileSync(ledgerPath,"utf8").split(/\r?\n/);
- const row=lines.find(x=>new RegExp("^\\|\\s*B"+String(n).padStart(2,"0")+"\\s*\\|").test(x));
- assert(row,"G10 ChVI B"+n+": candidate ledger row missing");
- const blobs=[...row.matchAll(/[a-f0-9]{40}/g)].map(x=>x[0]);
- assert.equal(blobs.length,2,"B"+n+": baseline + candidate SHA must be present");
- return blobs[1];
+ // The immutable 27-row ledger stays source-of-truth for historical published
+ // snapshots. Only an exact ChIV/ChV/ChVI signed Q18 receipt can select a
+ // later source. No FNV/byte-drift bypass is permitted.
+ return candidateG10KnowledgeBlob(n);
 }
 
 const dec=s=>s.replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&amp;/g,"&").replace(/&quot;/g,'"').replace(/&#39;/g,"'");
