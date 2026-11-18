@@ -8,19 +8,19 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 01370689a2056612bc833db1cbebe93a5c7fc6a5
+SOURCE_COMMIT: ef8999ddc2a18db8eab2dc2939e826f7f1fce619
 CATALOG_TOPIC_ID: CD14
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: dada7df9fc509cc67238cbc3e5d03376b58f23f4
+ACADEMIC_SOURCE_BLOB: c80f20dc9f8f2ee000f5c4af5a4c8583a5307cf1
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC14_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md (Q18 author-self; NO new independent NotebookLM Topic14 verdict)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC14_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 27a6e61fb90342d19afa61cd92b56ac3bda25a6a
+REVIEW_RECEIPT_BLOB: 834f9daf4330c62b55ec51c1864944f26385fb65
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_R02_AUTHORING_ONLY_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: b72c3a80ef1a25bc7ac0caa1debcd1eb5ed738a2
+AUTHOR_A1_A7_BLOB: 47d4f38654db0f388eb07563148a3cbec26cae10
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC14-ANALYTIC-OXY-FULL-R02_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: 70211bac6e0a7037e744a85b3ee3db989189f639
+AUTHOR_HANDOFF_BLOB: 3b4aa055ecfc96dcc9fd5c711cdd4f102d179686
 ORIGINAL_SGK_SOURCE_BLOB: c5c222af88b0e932f9b60df059d8ffd4da5f0f26
 ORIGINAL_R01_PED_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd
 SVG1_BLOB: 57485fed0a5dcee6ebcd060f100abe5eed43bc76
@@ -89,3 +89,10 @@ One self-sufficient Topic CĐ14 with exactly **Kiến thức / Luyện tập / T
 - [ ] AP5_RESPONSIVE_VISUAL
 
 **REGISTER_PREVENTION:** CĐ01..CĐ13 also use shared register rows; each Topic is *academically independent*. RELEASE must merge latest main REGISTER preserving union of all pre-existing Topic rows, then manifest↔REGISTER and exact combined HEAD CI. No blanket overwrite of REGISTER, no change to canonical source for registry fix. Stop at AUTHORING CONTENT_READY; no merge/deploy.
+
+
+## FINAL ACTIVE R02 O22 Delta C and archived R01 custody · 18/11/2026
+
+- **Effective student source Git blob** `c80f20dc9f8f2ee000f5c4af5a4c8583a5307cf1` replaces previous R02 Git `dada7df9fc509cc67238cbc3e5d03376b58f23f4` for precisely **one** true `TOP14-O22` pedagogical correction, no changed question, key, scoring, diagram, mathematical condition or actual D6 concept target. When substituting `x=0` into ellipse `x²/9+y²/4=1`, learner must revisit the **ellipse** symmetric about Ox to recover both `(0,2)` and `(0,-2)`, not incorrectly consult parabola. Delta `DELTA_C_ACADEMIC_MATERIAL` on affected PED6 sentence, directly checked without unnecessary independent NotebookLM; old broad R02 math tests remain snapshot scoped and unchanged. P0/P1=0 on this source by exact author Q18 `834f9daf4330c62b55ec51c1864944f26385fb65` and updated A1–A7 `47d4f38654db0f388eb07563148a3cbec26cae10`. Single current V2 `3b4aa055ecfc96dcc9fd5c711cdd4f102d179686`.
+- **Only one current active Topic ready record:** R02. Previous R01 manifest is retained exactly unmodified as Git blob `814997dc5686d5716d880a7c4379a2c146d339af` at `prototypes/thpt/release-queue/archive/THPT-TOPIC14-ANALYTIC-OXY-FULL-R01_HISTORICAL_SIGNED_20261118.md`, no longer at `ready/`; previous signed acceptance is historical only. REGISTER must retain at most one active CĐ14 `CONTENT_READY` entry.
+- **Inherited other AUTHORING evidence:** 23/23 outcome and examples/adjacent Vận dụng/Đối chiếu, 110 Q15 public canonical IDs, 87 actual Practice with 5 Written rubrics /7, 23 reused question-only Self Checks (`CLIENT_SELF_CHECK_NO_MASTERY`) and 3 Git SVG files. Original SGK source/bank unchanged. SOURCE handoff does not grant website/ap/browser/RD1/Final Submit/Mastery/merge/deploy.
