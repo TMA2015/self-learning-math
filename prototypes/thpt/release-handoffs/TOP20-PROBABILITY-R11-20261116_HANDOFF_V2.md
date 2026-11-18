@@ -7,12 +7,12 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_LEARNER_PRESENTATION_20261116.md
-ACADEMIC_SOURCE_BLOB: 74e758075d17e98649d9dd08709b523e8a782b63
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/TOP20_R11_Q18_TECHNICAL_SOURCE_EQUIVALENCE_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 4e6133b77eeaf1d38394d1e4d6f8058d421fd763
-ACADEMIC_VERDICT: SELF_VERIFIED
-PEDAGOGICAL_VERDICT: SELF_VERIFIED
-BLOCKERS: NONE
+ACADEMIC_SOURCE_BLOB: 874de7fd1dd1923549a0ef35a9648d291ab761aa
+REVIEW_RECEIPT_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R12_D6_Q15_Q18_AUTHOR_TARGETED_RECEIPT_20261117.md
+REVIEW_RECEIPT_BLOB: bde8785e4794b0519bb301a6358b746b2fc854dd
+ACADEMIC_VERDICT: AUTHOR_SELF_VERIFIED_MATH_UNCHANGED_ONLY
+PEDAGOGICAL_VERDICT: TARGETED_AUTHOR_SELF_QA_ONLY; INDEPENDENT_PED_PENDING
+BLOCKERS: AFFECTED_DELTA_C_PED_INDEPENDENT_REVIEW_PENDING; CURRENT_CONTENT_READY_NOT_APPROVED
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 MASTERY_ACTIVATION: NO
@@ -20,10 +20,10 @@ RELEASE_AUTHORIZATION: NO
 PRIVATE_RD1_COUNT: 17
 PRIVATE_RD1_SHA256: a3107e6434d2359f86752412a14fd45b7a1da1bef84d18e53b6da3532f2520b2
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_A1_A7_TECHNICAL_SOURCE_PARITY_20261116.md
-AUTHOR_A1_A7_BLOB: f271a3ac03ef99063d631b7bebc68f826e217b0e
+AUTHOR_A1_A7_BLOB: 1040e7e70aee5a769c6c8e2b7a98e24f0d5f69b1
 
-CONTENT_REVISION: R11
-DELTA_CLASS: SOURCE_EQUIVALENT_PRESENTATION_ONLY
+CONTENT_REVISION: R12_IN_PLACE
+DELTA_CLASS: DELTA_C_PED_TARGETED
 
 ## R11_SOURCE_EQUIVALENCE_CUSTODY
 
@@ -208,3 +208,9 @@ The R11 AUTHOR technical source-parity/Q18 receipt at `prototypes/thpt/review-pa
 ## AUTHOR_SIGNOFF
 
 The R11 source is a `DELTA_B_SOURCE_EQUIVALENT` presentation revision of immutable R10: identical math and learner questions with clearer headings, learner Practice cards and 11 explicit Selfcheck prompts. AUTHORING verified source/ID/answer/rubric parity and Q16 privacy; NotebookLM retains the sole independent academic critique role. R11 is SOURCE-ONLY, not website integration or live Final Submit. AP/R/P and owner merge/deploy authorization remain pending.
+
+## 18/11/2026 — one current in-place learner + handoff custody
+
+- This **same V2 handoff path** now points to current learner Git blob `874de7fd1dd1923549a0ef35a9648d291ab761aa` with exact current Q15/Q18 author-targeted receipt `bde8785e4794b0519bb301a6358b746b2fc854dd` and A1 source custody `1040e7e70aee5a769c6c8e2b7a98e24f0d5f69b1`. Previously signed source `74e758075d17e98649d9dd08709b523e8a782b63`, receipt `4e6133b77eeaf1d38394d1e4d6f8058d421fd763` and metadata `f271a3ac03ef99063d631b7bebc68f826e217b0e` are *historic*, not parallel live handoffs.
+- The effective learner file keeps existing original filename while learner content was edited in-place under version `R12_IN_PLACE`; no alternate learner Markdown and no new canonical bank. 10/10 Q15 item/version/placement assertions and V2 intake on current branch passed after archival of historical ready manifests; mathematical stems, solutions and rubrics unaffected.
+- This is a staged **AUTHORING-only V2 with explicit BLOCKER**, not a `ready/` acceptance: targeted D6 pedagogy is DELTA_C and needs affected-scope independent review before Academic+PED CONTENT_READY can be granted. Do not restore superseded historical ready manifests, leak private RD1, record Mastery, merge or deploy.
