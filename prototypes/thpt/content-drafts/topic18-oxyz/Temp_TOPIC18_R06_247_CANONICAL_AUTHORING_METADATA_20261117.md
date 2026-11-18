@@ -11,8 +11,8 @@ CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: fda1fa60d8448c016c24159156c6898de2bc673f
-REVIEW_RECEIPT_BLOB: 0e3ed68872e0e05e5bd26e2a611de440a29e9faa
+ACADEMIC_SOURCE_BLOB: 21ce8179678bd0e9bc944d80dbde9646aaf73647
+REVIEW_RECEIPT_BLOB: 3b25e8966cbbe1a40deaf9d35566b19ae2707b22
 BASELINE_R04_SIGNED_SOURCE_BLOB: 41daf40a3b639a3ef35e129099525137a05b1848
 BASELINE_R04_SIGNED_Q18_RECEIPT_BLOB: 5262fd454346801b0b5eb4f3dc407bc99d3530
 
@@ -383,3 +383,6 @@ Verified two real Git blobs: current single learner source `fda1fa60d8448c016c24
 Current signed comprehensive Q18 author-self-verification is Git blob `0e3ed68872e0e05e5bd26e2a611de440a29e9faa` on **this same** source. Its prior substantive TOP18-O03 vector correction was explicitly justified by a counterexample: three edge vectors (1,0,0)+(0,2,0)+(0,0,3)=(1,2,3) and the geometric diagonal length sqrt(14) differs from sum of edge lengths 6. The author also verified 24 Written /5 rubric headings changed only wording, not scoring criteria. Student source has all 40 outcome IDs, 247 opt-in <details> disclosures, 12 public replay metadata markers and 10 SVG references. This narrow check does not imply a fresh independent solution of all 247 questions or actual browser/MathJax PASS.
 
 With original author Q01–Q18 source receipt, Q15/Q16 and signed A1–A7 as represented here, this is **one current AUTHORING source ready for a single V2/ready/REGISTER source lock**, not official independent Topic Readiness, no RD1 public content, no website release authority, no merge/deploy.
+
+
+**18/11 HEAD source note:** The effective single learner Git blob is `21ce8179678bd0e9bc944d80dbde9646aaf73647` (replaces previous in-place source fda1... because one confirmed lesson transition heading line changed in the newer parent merge). Current composite author Q18 receipt `3b25e8966cbbe1a40deaf9d35566b19ae2707b22` verifies the exact delta. Other contents and 40 outcomes/247 original canonical scoring and 12 client-only public replay placements remain unaffected. Prior appendix describing fda1 as 'current' is an immutable historical checkpoint, superseded here. No change to Mastery/RD1/RELEASE authority.
