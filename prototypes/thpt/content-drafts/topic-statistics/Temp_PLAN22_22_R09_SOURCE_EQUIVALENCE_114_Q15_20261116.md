@@ -6,11 +6,12 @@ CONTENT_REVISION: R09
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md
-ACADEMIC_SOURCE_BLOB: b5713f0c2a1aa6a9fa7a7d63f6e6878bdf8d338b
+ACADEMIC_SOURCE_BLOB: b875ca4e726ab14071f17a2d8a85d6950e3b4ba9
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC_STATISTICS_G10_G12_R09_AUTHOR_TECHNICAL_Q18_RECEIPT_20261116.md
+REVIEW_RECEIPT_BLOB: fab8d45b3a1d1479ed4bc437a577799e865a8d3b
 PREVIOUS_R07_HANDOFF_PATH: prototypes/thpt/release-handoffs/THPT-TOPIC-STATISTICS-G10-G12-FULL-R07_HANDOFF_V2_20261115.md
 PREVIOUS_R07_HANDOFF_BLOB: 4c32eaf6342b2cb9cd2ccc69357fed80a0aeca92
-DELTA_CLASS: DELTA_A_UI
+DELTA_CLASS: DELTA_B_SOURCE_EQUIVALENT
 PACKET_ID: THPT-TOPIC-STATISTICS-G10-G12-FULL-R09
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC_STATISTICS_G10_G12_CANONICAL_SOURCE_INDEX_R00_20261111.md
 PUBLIC_SOURCE_INDEX_BLOB: 51a6e99587187838aea61c5c72108adae7874d1d
@@ -37,3 +38,9 @@ RELEASE_AUTHORIZATION: NO
 - R07 exact original student source `e31771e0fb9347c8c242ec8ca9e8a91a1ab74ff6` and Q18 `40feca220c54fc0620ab113cc354e3d37a66088e` preserved immutable. New R08 updates heading depth and practice labels exclusively; the math/source index/extension bank, 114 ID mappings, rubrics and SVG remain unchanged.
 - Prior R07 V2 `4c32eaf6342b2cb9cd2ccc69357fed80a0aeca92` retained; no independent new reviewer or website QA.
 - Do not infer RELEASE_TOPIC_ID or merge/deploy approval from source readiness.
+
+## 18/11/2026 — current canonical learner and one-source custody
+
+- **Only effective student content file** remains `Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md`, Git SHA `b875ca4e726ab14071f17a2d8a85d6950e3b4ba9`. The older signed source `b5713f0c2a1aa6a9fa7a7d63f6e6878bdf8d338b` is historic evidence only, NOT a second active draft. Current exact-source Q18 receipt SHA `fab8d45b3a1d1479ed4bc437a577799e865a8d3b`.
+- Delta audit: 2 standalone redundant figure-reading headings removed + 7 public Written self-compare notices tightened to self-attempt-first and no official grade. Complete 114/114 item display sequence, mathematical stems/answers/solutions/rubric criteria and points, 9 public Selfcheck questions, 2 image references and reveal counts unchanged. Scoped Q16 note and `NO_MASTERY NOT_RD1` nine placements preserved. Classified `DELTA_B_SOURCE_EQUIVALENT` for learning/assessment semantics, no new math theorem or answer.
+- The older SGK PDF-page-index reviewer note is nonblocking; mathematical validity established by existing worked-solution and arithmetic checks, with S1 used for curriculum scope. No official Mastery or RELEASE implied.
