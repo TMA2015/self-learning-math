@@ -61,7 +61,7 @@
 
     #### Độ chính xác không phải sai số thực
 
-    <figure class="thpt-r4-plot thpt-r4-probability-figure" data-thpt-fig-id="FIG-G10-B12-01"><img src="../../../../assets/images/thpt/THPT_G10_B12_ERROR_INTERVAL_D5_R02_REVIEWED.svg" loading="lazy" alt="Số gần đúng a bằng 20,0 cm, độ chính xác d bằng 0,1 cm; giá trị đúng a gạch ngang thuộc đoạn 19,9 đến 20,1 cm."><figcaption>Khoảng có thể chứa số đúng · hình minh họa.</figcaption></figure>
+    <figure class="thpt-r4-plot thpt-r4-probability-figure" data-thpt-fig-id="FIG-G10-B12-01" style="width:min(100%, 780px); max-width:none; overflow-x:auto; box-sizing:border-box;"><img style="display:block; width:100%; min-width:600px; max-width:none; height:auto;" src="../../../../assets/images/thpt/THPT_G10_B12_ERROR_INTERVAL_D5_R02_REVIEWED.svg" loading="lazy" alt="Số gần đúng a bằng 20,0 cm, độ chính xác d bằng 0,1 cm; giá trị đúng a gạch ngang thuộc đoạn 19,9 đến 20,1 cm."><figcaption>Khoảng có thể chứa số đúng · hình minh họa.</figcaption></figure>
 
     **Cách đọc hình.** Tìm số gần đúng ở giữa khoảng, rồi nhìn hai biên cách nó một khoảng d. Giá trị đúng có thể nằm bất cứ đâu trong đoạn, không nhất thiết ở biên hoặc trùng tâm.
 
@@ -165,21 +165,31 @@
 === "Kiến thức SGK"
 
     ### 2.1. Số gần đúng
-    Theo kí hiệu SGK/SBT KNTT, **\(a\) là số gần đúng**, còn **\(\bar a\) là số đúng** (có thể chưa biết). Số gần đúng \(a\) thay cho số đúng \(\bar a\); viết \(a\approx\bar a\). Không phải mọi chữ số thập phân được hiển thị đều là chữ số đáng tin cậy; độ chính xác phụ thuộc phép đo/quy trình. Làm tròn một giá trị theo hàng yêu cầu để có số quy tròn. Quy tròn tới hàng phần mười, phần trăm, hàng chục… phải xác định rõ hàng làm tròn.
+
+    !!! abstract "Khái niệm — Số gần đúng"
+
+        Theo kí hiệu SGK/SBT KNTT, **\(a\) là số gần đúng**, còn **\(\bar a\) là số đúng** (có thể chưa biết). Số gần đúng \(a\) thay cho số đúng \(\bar a\); viết \(a\approx\bar a\). Không phải mọi chữ số thập phân được hiển thị đều là chữ số đáng tin cậy; độ chính xác phụ thuộc phép đo/quy trình. Làm tròn một giá trị theo hàng yêu cầu để có số quy tròn. Quy tròn tới hàng phần mười, phần trăm, hàng chục… phải xác định rõ hàng làm tròn.
 
 
     **Máy tính cầm tay giúp tìm số gần đúng, không tự chứng minh độ chính xác.** Với biểu thức chứa căn hoặc \(\pi\), em nhập đúng biểu thức, quan sát kết quả thập phân, rồi làm tròn theo yêu cầu. Ví dụ máy cho \(\sqrt2\approx1{,}41421356\ldots\); lấy \(a=1{,}414\) với độ chính xác \(d=0{,}0005\) là hợp lệ vì \(1{,}4135^2<2<1{,}4145^2\), nên \(|\sqrt2-1{,}414|<0{,}0005\). Chỉ đọc nhiều chữ số trên màn hình không có nghĩa mọi chữ số đều đáng tin cậy.
 
     ### 2.2. Sai số tuyệt đối và sai số tương đối
 
+    !!! abstract "Định nghĩa — Sai số tuyệt đối và độ chính xác"
 
-    Sai số tuyệt đối của số gần đúng \(a\) là \(\Delta_a=|a-\bar a|\). Nếu **chưa biết** số đúng \(\bar a\), nhưng \(\Delta_a\le d\), thì \(d\) là **độ chính xác/giới hạn trên**; không được suy \(\Delta_a=d\). Số đúng nằm trong \(a-d\le\bar a\le a+d\). Sai số tuyệt đối cùng đơn vị với đại lượng.
+        Sai số tuyệt đối của số gần đúng \(a\) là \(\Delta_a=|a-\bar a|\). Nếu **chưa biết** số đúng \(\bar a\), nhưng \(\Delta_a\le d\), thì \(d\) là **độ chính xác/giới hạn trên**; không được suy \(\Delta_a=d\). Số đúng nằm trong \(a-d\le\bar a\le a+d\). Sai số tuyệt đối cùng đơn vị với đại lượng.
 
     #### b. Sai số tương đối
-    Với số gần đúng **\(a\ne0\)** và số đúng \(\bar a\) đã biết, \(\delta_a=\Delta_a/|a|\) (thường viết theo %): **mẫu số là số gần đúng \(a\) theo KNTT**, không phải số đúng. Khi chỉ có \(a\ne0\) và \(\Delta_a\le d\), chỉ suy ra **cận trên** \(\delta_a\le d/|a|\), không được viết đẳng thức \(\delta_a=d/|a|\) nếu chưa biết sai số thực. Không chia cho 0, không nhầm tỷ lệ với %.
+
+    !!! abstract "Định nghĩa — Sai số tương đối"
+
+        Với số gần đúng **\(a\ne0\)** và số đúng \(\bar a\) đã biết, \(\delta_a=\Delta_a/|a|\) (thường viết theo %): **mẫu số là số gần đúng \(a\) theo KNTT**, không phải số đúng. Khi chỉ có \(a\ne0\) và \(\Delta_a\le d\), chỉ suy ra **cận trên** \(\delta_a\le d/|a|\), không được viết đẳng thức \(\delta_a=d/|a|\) nếu chưa biết sai số thực. Không chia cho 0, không nhầm tỷ lệ với %.
 
     ### 2.3. Quy tròn số gần đúng
-    Khi làm tròn một số đúng tới đơn vị của hàng \(h>0\), sai số làm tròn thông thường không quá \(h/2\) nếu áp dụng quy tắc làm tròn gần nhất. Không tự khẳng định mọi phép đo tới hàng đó có cùng sai số tối đa: còn phụ thuộc độ chính xác đo ban đầu. Khi một số gần đúng \(a\) được cho với độ chính xác \(d\) nhưng không nêu hàng quy tròn, cần kiểm đúng quy tắc SGK/SBT về **hàng thấp nhất có một đơn vị lớn hơn d** trước khi chọn hàng.
+
+    !!! info "Quy tắc — Quy tròn và sai số"
+
+        Khi làm tròn một số đúng tới đơn vị của hàng \(h>0\), sai số làm tròn thông thường không quá \(h/2\) nếu áp dụng quy tắc làm tròn gần nhất. Không tự khẳng định mọi phép đo tới hàng đó có cùng sai số tối đa: còn phụ thuộc độ chính xác đo ban đầu. Khi một số gần đúng \(a\) được cho với độ chính xác \(d\) nhưng không nêu hàng quy tròn, cần kiểm đúng quy tắc SGK/SBT về **hàng thấp nhất có một đơn vị lớn hơn d** trước khi chọn hàng.
 
 === "Ví dụ"
 
@@ -187,41 +197,57 @@
 
     ### 3.1. Ví dụ 1 — Sai số thực khi đã biết số đúng
 
+    #### Đề bài
+
     **Đề:** Cho số đúng \(\bar a=12{,}347\), số gần đúng \(a=12{,}35\). Tìm sai số tuyệt đối và sai số tương đối.
 
-    **Vì sao chọn cách này:** Biết \(\bar a\) nên tính được \(\Delta_a\). Với sai số tương đối theo KNTT, phải chia cho **\(|a|\)**, không phải số đúng.
+    **Phân tích:** Biết \(\bar a\) nên tính được \(\Delta_a\). Với sai số tương đối theo KNTT, phải chia cho **\(|a|\)**, không phải số đúng.
 
-    **Giải:** \(\Delta_a=|12{,}35-12{,}347|=0{,}003\). Do \(a\ne0\), \(\delta_a=0{,}003/12{,}35\approx0{,}0243\%\).
+    !!! example "Lời giải"
+
+        **Giải:** \(\Delta_a=|12{,}35-12{,}347|=0{,}003\). Do \(a\ne0\), \(\delta_a=0{,}003/12{,}35\approx0{,}0243\%\).
 
     **Kiểm lại:** Nếu chỉ có \(\Delta_a\le0{,}003\), phải dùng \(\delta_a\le0{,}003/12{,}35\), không khẳng định bằng.
 
     ### 3.2. Ví dụ 2 — Độ chính xác chỉ cho một khoảng
 
+    #### Đề bài
+
     **Đề:** Chiều dài gần đúng \(a=8{,}6\,\mathrm{cm}\), độ chính xác \(d=0{,}2\,\mathrm{cm}\). Tìm khoảng số đúng có thể nằm và đánh giá sai số.
 
-    **Vì sao chọn cách này:** Số đúng chưa biết, nên phải giải \(|\bar a-a|\le d\), thay vì tự lấy \(d\) làm sai số thực.
+    **Phân tích:** Số đúng chưa biết, nên phải giải \(|\bar a-a|\le d\), thay vì tự lấy \(d\) làm sai số thực.
 
-    **Giải:** \(\bar a\in[8{,}6-0{,}2;8{,}6+0{,}2]=[8{,}4;8{,}8]\,\mathrm{cm}\). Chỉ biết \(0\le\Delta_a\le0{,}2\,\mathrm{cm}\).
+    !!! example "Lời giải"
+
+        **Giải:** \(\bar a\in[8{,}6-0{,}2;8{,}6+0{,}2]=[8{,}4;8{,}8]\,\mathrm{cm}\). Chỉ biết \(0\le\Delta_a\le0{,}2\,\mathrm{cm}\).
 
     **Kiểm lại:** Nếu \(\bar a=8{,}6\) thì sai số 0; nếu \(\bar a=8{,}4\) thì sai số 0,2. Bộ số khác hình \(20{,}0\pm0{,}1\) ở tab Khám phá.
 
     ### 3.3. Ví dụ 3 — Quy tròn và kiểm sai số
 
+    #### Đề bài
+
     **Đề:** Quy tròn số đúng \(3{,}14159\) tới hàng phần trăm và tính sai số thực.
 
-    **Vì sao chọn cách này:** Cần xét chữ số hàng phần nghìn để quyết định giữ hay tăng chữ số hàng phần trăm. Có số ban đầu chính xác nên tính chênh được.
+    **Phân tích:** Cần xét chữ số hàng phần nghìn để quyết định giữ hay tăng chữ số hàng phần trăm. Có số ban đầu chính xác nên tính chênh được.
 
-    **Giải:** Số quy tròn là \(3{,}14\). Sai số tuyệt đối \(|3{,}14159-3{,}14|=0{,}00159\).
+    !!! example "Lời giải"
+
+        **Giải:** Số quy tròn là \(3{,}14\). Sai số tuyệt đối \(|3{,}14159-3{,}14|=0{,}00159\).
 
     **Kiểm lại:** \(0{,}00159\le0{,}005\), bằng một nửa bước quy tròn \(0{,}01\). Không áp dụng giới hạn này tùy tiện cho phép đo khác.
 
     ### 3.4. Ví dụ 4 — Bấm máy tính đúng biểu thức rồi quy tròn
 
+    #### Đề bài
+
     **Đề:** Dùng máy tính tìm giá trị gần đúng của \(2^9\sqrt3\) với ba chữ số thập phân, cùng kiểu bài trong SGK trang in 74.
 
-    **Chọn phương pháp:** Giữ dấu căn và lũy thừa nguyên vẹn trong máy, không lấy \(\sqrt3=1{,}7\) trước khi nhân. Nhận kết quả đủ chữ số rồi mới quy tròn.
+    **Phân tích:** Giữ dấu căn và lũy thừa nguyên vẹn trong máy, không lấy \(\sqrt3=1{,}7\) trước khi nhân. Nhận kết quả đủ chữ số rồi mới quy tròn.
 
-    **Giải theo thao tác:** Xóa phép tính cũ; nhập \(2^9\times\sqrt3\), bảo đảm căn chỉ phủ số 3, nhấn tính. Đổi dạng thập phân nếu máy đang hiện kết quả chính xác. Ta đọc được \(886{,}810013475\ldots\) và làm tròn đến ba chữ số thập phân là \(886{,}810\).
+    !!! example "Lời giải"
+
+        **Giải:** Xóa phép tính cũ; nhập \(2^9\times\sqrt3\), bảo đảm căn chỉ phủ số 3, nhấn tính. Đổi dạng thập phân nếu máy đang hiện kết quả chính xác. Ta đọc được \(886{,}810013475\ldots\) và làm tròn đến ba chữ số thập phân là \(886{,}810\).
 
     **Kiểm lại:** Số \(886{,}810\) chỉ là số gần đúng của \(2^9\sqrt3\). Khi máy tính đủ độ chính xác và quy tròn gần nhất đến bước \(0{,}001\), chênh do quy tròn không quá \(0{,}0005\).
 
@@ -255,8 +281,6 @@
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
     <p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 10 Kết nối tri thức với cuộc sống và học liệu SLM hiện hành. Lời giảng được biên tập nhằm hỗ trợ tự học độc lập.</p>
-
-
 <!-- END_B12_KNOWLEDGE_MARKDOWN -->
 
 ## B. Authoritative public formative records (eight old untouched + one new P07)
