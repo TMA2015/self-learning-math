@@ -283,8 +283,12 @@ for(const [tag,rec]of Object.entries(transfer)){
    }else{
     const b11=read("prototypes/thpt/ux795/G10_CHIV_B11_S1_PED_CANONICAL_Q18_R01_20261118.md");
     const field=k=>b11.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
-    assert.equal(sha(modelB),field("B11_CANDIDATE_SOURCE_BLOB"),
-     "B11 force transfer placement must match exact candidate under independent-review HOLD");
+    const r02=read("prototypes/thpt/ux795/G10_CHIV_B11_P2_TAB4_GOLDEN_DELTA_A_UI_R02_20261118.md");
+    const uiField=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    assert.equal(uiField("R01_PUBLISHED_B11_SOURCE_BLOB"),field("B11_CANDIDATE_SOURCE_BLOB"),
+     "B11 force D2 still depends on exact independently reviewed R01");
+    assert.equal(sha(modelB),uiField("R02_B11_SOURCE_BLOB"),
+     "B11 force D2 must remain in signed R02 UI-only learner source");
     const examples=modelB.split('=== "Ví dụ"')[1]?.split('=== "Lỗi thường gặp"')[0]||"";
     assert(examples.includes("### 3.4. Ví dụ 4 — Hợp lực")&&
      examples.includes("THPT_G10_CHIV_FORCE_TRANSFER_D5_R01_CORRECTED.svg")&&

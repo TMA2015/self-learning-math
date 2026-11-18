@@ -320,17 +320,32 @@ function expectedG10KnowledgeBlob(lesson,legacy){
   const field=k=>signed.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(field("R01_PUBLISHED_B11_SOURCE_BLOB"),row.candidate,
    "B11 R01 immutable source must be signed");
-  const source=field("B11_CANDIDATE_SOURCE_BLOB"),
-        masterSha=field("ONE_CANONICAL_B11_BLOB");
+  const ui=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B11_P2_TAB4_GOLDEN_DELTA_A_UI_R02_20261118.md"),"utf8");
+  const uf=k=>ui.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(uf("R01_PUBLISHED_B11_SOURCE_BLOB"),field("B11_CANDIDATE_SOURCE_BLOB"),
+   "B11 R02 UI delta must descend from independent-reviewed R01 Knowledge");
+  assert.equal(uf("R01_PUBLISHED_B11_CANONICAL_BLOB"),field("ONE_CANONICAL_B11_BLOB"),
+   "B11 R02 UI delta must descend from independent-reviewed R01 canonical");
+  assert.equal(uf("R01_CSS_BLOB"),field("CSS_B11_SCOPED_APPEND_BLOB"),
+   "B11 R02 must preserve approved R01 CSS");
+  assert.equal(uf("R02_CSS_BLOB"),uf("R01_CSS_BLOB"),
+   "B11 R02 must not touch shared CSS");
+  assert(ui.includes("B11-UI-TAB4-01")&&ui.includes("DELTA_A_UI"),
+   "B11 R02 owner UI issue and classification missing");
+  const source=uf("R02_B11_SOURCE_BLOB"),
+        masterSha=uf("R02_ONE_CANONICAL_B11_BLOB");
   assert(/^[a-f0-9]{40}$/.test(source||"")&&/^[a-f0-9]{40}$/.test(masterSha||"")&&source!==row.candidate,
    "B11 distinct candidate and canonical must have SHA-locked identities");
   const calc=buf=>require("node:crypto").createHash("sha1")
    .update(Buffer.from("blob "+buf.length+String.fromCharCode(0))).update(buf).digest("hex");
+  assert.equal(calc(Buffer.from(signed)),uf("R01_Q18_RECEIPT_BLOB"),
+   "B11 signed academic/PED R01 receipt must remain byte-identical");
   const manuscript=fs.readFileSync(path.join(root,
    "prototypes/thpt/content-drafts/THPT_G10_CHIV_B11_CANONICAL.md"));
   assert.equal(calc(manuscript),masterSha,"B11 single current manuscript SHA mismatch");
   const css=fs.readFileSync(path.join(root,"docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"));
-  assert.equal(calc(css),field("CSS_B11_SCOPED_APPEND_BLOB"),"B11 scoped Golden CSS SHA mismatch");
+  assert.equal(calc(css),uf("R02_CSS_BLOB"),"B11 scoped Golden CSS SHA changed during UI-only repair");
   const sourceText=fs.readFileSync(path.join(root,
    "docs/thpt-preview/sgk/chuong-iv/bai-11.md"),"utf8");
   assert.equal(calc(Buffer.from(sourceText)),source,"B11 current Knowledge source not signed");

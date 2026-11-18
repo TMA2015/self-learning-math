@@ -431,10 +431,22 @@ for(const [lesson,row] of rows){
   assert(signed.includes("INDEPENDENT_ACADEMIC_PED_REVIEW_PENDING")&&
    signed.includes("DELTA_C_ACADEMIC_MATERIAL")&&signed.includes("RELEASE_HOLD"),
    "B11 authoring material independent review required; not automated PASS");
-  expected=field("B11_CANDIDATE_SOURCE_BLOB");
+  const ui=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B11_P2_TAB4_GOLDEN_DELTA_A_UI_R02_20261118.md"),"utf8");
+  const uf=k=>ui.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(uf("R01_PUBLISHED_B11_SOURCE_BLOB"),field("B11_CANDIDATE_SOURCE_BLOB"),
+   "B11 Tab4 R02 may only descend from independently reviewed R01 Knowledge");
+  assert.equal(uf("R01_PUBLISHED_B11_CANONICAL_BLOB"),field("ONE_CANONICAL_B11_BLOB"),
+   "B11 Tab4 R02 may only descend from independently reviewed R01 canonical");
+  assert.equal(blob(fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B11_S1_PED_CANONICAL_Q18_R01_20261118.md"))),
+   uf("R01_Q18_RECEIPT_BLOB"),"B11 original independently reviewed Q18 receipt must be frozen");
+  assert.equal(uf("R01_CSS_BLOB"),uf("R02_CSS_BLOB"),
+   "B11 UI-only Tab4 reflow cannot change CSS");
+  expected=uf("R02_B11_SOURCE_BLOB");
   assert.equal(blob(fs.readFileSync(path.join(root,
    "prototypes/thpt/content-drafts/THPT_G10_CHIV_B11_CANONICAL.md"))),
-   field("ONE_CANONICAL_B11_BLOB"),"B11 full manuscript SHA changed");
+   uf("R02_ONE_CANONICAL_B11_BLOB"),"B11 R02 full manuscript SHA changed");
  }
  assert.equal(blob(source),expected,lesson+" exact final Q18 academic source receipt");
  assert.equal(candidateG10KnowledgeBlob(n),expected,lesson+" Q18 source router selects correct immutable snapshot");
@@ -529,8 +541,24 @@ for(const [lesson,row] of rows){
    official.includes("\\vec u\\cdot\\vec v=ac+bd"),"B11 denominator guards/coordinate dot missing");
   assert.equal((last.match(/data-thpt-first-try-id/g)||[]).length,0,
    "B11 force transfer First Try must not remain in error tab");
-  assert.equal((last.match(/^    ### 4\.[1-3]\./gm)||[]).length,3,
-   "B11 must have three actual wrong student steps with numbered 4.x headings");
+  assert.equal((last.match(/^    ### 4\.[1-3]\./gm)||[]).length,0,
+   "B11 Golden Tab4 must have zero redundant heading cards like owner-P2 B10");
+  assert.deepEqual([...last.matchAll(/^    \?\?\? tip "(4\.[1-3]\. [^"]+)"$/gm)]
+   .map(x=>x[1].slice(0,3)),["4.1","4.2","4.3"],
+   "B11 Tab4 must have 3 numbered accordion summaries, with no separate h3 cards");
+  assert.equal((last.match(/\*\*Tự nhận diện:\*\*/g)||[]).length,3,
+   "B11 original mistake-identification questions must remain inside accordions");
+  // Reverse *only* the three UI placements. The resulting source must equal
+  // the exact independently reviewed R01 Git blob: no mathematical delta.
+  let count=0;
+  const reconstructed=source.replace(/^    (<span[^\n]*data-thpt-help-id="[^"]+"[^\n]*><\/span>)\n\n    \?\?\? tip "(4\.[1-3])\. ([^"]+)"\n\n        \*\*Tự nhận diện:\*\* ([^\n]+)\n\n/gm,
+   (_all,span,n,h,q)=>{count++;return "    ### "+n+". "+h+"\n\n    "+span+"\n\n    ??? tip "+String.fromCharCode(34)+q+String.fromCharCode(34)+"\n\n";});
+  assert.equal(count,3,"B11 R02 must move exactly three original headings and summary questions");
+  const ui=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B11_P2_TAB4_GOLDEN_DELTA_A_UI_R02_20261118.md"),"utf8");
+  const uf=k=>ui.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(blob(Buffer.from(reconstructed)),uf("R01_PUBLISHED_B11_SOURCE_BLOB"),
+   "B11 R02 only Tab4 UI reflow allowed; reconstruct R01 source byte-for-byte");
   assert.equal((last.match(/^    \?\?\? tip "/gm)||[]).length,3,
    "B11 must keep exactly three independent HELP disclosures");
   assert(!source.includes(String.fromCharCode(96))&&

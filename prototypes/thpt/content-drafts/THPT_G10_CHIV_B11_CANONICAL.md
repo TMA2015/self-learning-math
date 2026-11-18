@@ -249,11 +249,11 @@
 
 === "Lỗi thường gặp"
 
-    ### 4.1. Nhầm tích vô hướng bằng 0 với phép chia cho 0
-
     <span data-thpt-help-id="HELP-G10-B11-01" hidden></span>
 
-    ??? tip "Em đã chia cho độ dài của vectơ-không?"
+    ??? tip "4.1. Nhầm tích vô hướng bằng 0 với phép chia cho 0"
+
+        **Tự nhận diện:** Em đã chia cho độ dài của vectơ-không?
 
         **Cách làm sai:** Với \(\vec u=\vec0\), \(\vec v=(2;3)\), tính \(\cos(\vec u,\vec v)=\frac{0}{0\cdot\sqrt{13}}=0\), rồi kết luận góc duy nhất bằng \(90^\circ\).
 
@@ -263,11 +263,11 @@
 
         **Luyện lại:** Chọn hai vectơ khác không và thử tính tích bằng 0 trong phần Luyện tập, sau đó quay lại tự giải một trường hợp có vectơ-không.
 
-    ### 4.2. Dùng cos góc nhọn thay cho góc tù
-
     <span data-thpt-help-id="HELP-G10-B11-02" hidden></span>
 
-    ??? tip "Em đang làm sai dấu của công lực?"
+    ??? tip "4.2. Dùng cos góc nhọn thay cho góc tù"
+
+        **Tự nhận diện:** Em đang làm sai dấu của công lực?
 
         **Cách làm sai:** Lực \(10\,\mathrm N\) tạo góc \(120^\circ\) với độ dời \(3\,\mathrm m\) nhưng thay \(\cos60^\circ\), thu được công \(+15\,\mathrm J\).
 
@@ -277,11 +277,11 @@
 
         **Luyện lại:** Tự đổi góc thành \(90^\circ\) rồi \(60^\circ\) và dự đoán dấu trước khi tính lại.
 
-    ### 4.3. Cộng độ lớn của hai lực không cùng hướng
-
     <span id="help-g10-chiv-force-tr01" data-thpt-help-id="HELP-G10-CHIV-FORCE-TR01" hidden></span>
 
-    ??? tip "Em lấy tổng hai lực 6 N + 6 N thành 12 N?"
+    ??? tip "4.3. Cộng độ lớn của hai lực không cùng hướng"
+
+        **Tự nhận diện:** Em lấy tổng hai lực 6 N + 6 N thành 12 N?
 
         **Cách làm sai:** Vì mỗi dây kéo \(6\,\mathrm N\), kết luận hợp lực luôn \(12\,\mathrm N\), rồi đặt lực cân bằng cùng chiều với hợp lực.
 
