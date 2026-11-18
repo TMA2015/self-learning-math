@@ -204,7 +204,7 @@ Khi biến thiên diễn ra suốt một khoảng, tích phân cộng dồn các
 
 Vì sao cùng nguyên hàm khác nhau C nhưng tích phân có cận vẫn là một số? Ta sử dụng F′=f trên đoạn [a,b] với F là một nguyên hàm, và f liên tục trên đoạn để áp dụng Newton–Leibniz. 
 
-> **ĐỊNH LÝ — Newton–Leibniz.** Nếu \(f\) liên tục trên đoạn \([a,b]\), \(a<b\), và \(F\) là một nguyên hàm của \(f\) trên đoạn ấy (khả vi ở phần trong, thỏa điều kiện đầu mút), thì \(\displaystyle\int_a^b f(x)\,dx=F(b)-F(a)\). Đây là **một số thực**, không có \(+C\).
+> **ĐỊNH LÝ — Newton–Leibniz.** Nếu \(f\) liên tục trên đoạn \([a,b]\), \(a<b\), và \(F\) liên tục trên \([a,b]\), khả vi trên \((a,b)\) với \(F'(x)=f(x)\) tại mọi \(x\in(a,b)\), thì \(\displaystyle\int_a^b f(x)\,dx=F(b)-F(a)\). Đây là **một số thực**, không có \(+C\).
 
  C bị triệt trong hiệu. Khác nguyên hàm bất định, tích phân xác định không thêm +C. Nếu hàm không liên tục/không xác định trên đoạn, không áp máy móc mà kiểm điều kiện.
 
@@ -368,18 +368,18 @@ Chẳng hạn, Lưu lượng r(t)=2t lít/phút trên [0,2]: Q(2)−Q(0)=∫₀�
 
 **Ví dụ**
 
-**Đề bài:** Lưu lượng có hướng r(t)=5−2t m/s trên [0,2]. Tính biến thiên lượng tích lũy.
+**Đề bài:** Một vật chuyển động thẳng với vận tốc có hướng v(t)=5−2t (m/s) trong 0≤t≤2 giây. Tính độ dời của vật.
 
-**Lời giải:** Độ biến thiên Q(2)−Q(0)=∫₀²(5−2t)dt=[5t−t²]₀²=10−4=6 m. Không tính bằng r(2)·2=2 m vì r không hằng; ở đây r≥1 nên độ dời cũng bằng quãng đường.
+**Lời giải:** Độ dời s(2)−s(0)=∫₀²v(t)dt=∫₀²(5−2t)dt=[5t−t²]₀²=10−4=6 m. Không tính bằng v(2)·2=2 m vì vận tốc không hằng; trên [0,2] có v(t)≥1 m/s nên quãng đường cũng bằng 6 m.
 
-**Vận dụng** r(t)=3t² mét/giây trên [0,1], độ dời?
+**Vận dụng** Một vật có vận tốc có hướng v(t)=3t² (m/s) trong 0≤t≤1 giây. Độ dời là bao nhiêu?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-∫₀¹3t²dt=1 m.
+Độ dời bằng ∫₀¹3t²dt=1 m.
 
-Nếu kết quả có đơn vị m/s, bạn chưa tích phân theo giây.
+Nếu kết quả còn đơn vị m/s, em chưa tích phân theo thời gian (giây).
 
 </details>
 
