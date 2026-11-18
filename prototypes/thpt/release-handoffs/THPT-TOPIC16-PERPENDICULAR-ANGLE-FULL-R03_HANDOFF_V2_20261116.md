@@ -13,18 +13,18 @@ CATALOG_TOPIC_ID: CD16
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_PERPENDICULARITY_R03_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: ad3fdadb2b6a7150118c2534bf02cf9563f92e26
+ACADEMIC_SOURCE_BLOB: 363316efc7a338e4ec7d5629b182fce3de271356
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC16_R03_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 55ee159e7929545032c76a8493dc48b09a3f593a
+REVIEW_RECEIPT_BLOB: 7ac399da84280f285cf8e25ecf5a16e2f0768a76
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_R03_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: 8424bdccdbf5ea6041da60fea5ea063e90f8b388
+AUTHOR_A1_A7_BLOB: b2fef1fab9629e53bab34295ce858c888bb4448f
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_R03_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: 8424bdccdbf5ea6041da60fea5ea063e90f8b388
+AUTHOR_METADATA_BLOB: b2fef1fab9629e53bab34295ce858c888bb4448f
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHVII_B22_B27_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 MODEL_ID: SLM-TOP16-RAMP-ANGLE-R00
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_THPT_TOPIC16_RAMP_ANGLE_R01_SCOPE_CORRECTED_20261113.html
-INTERACTIVE_MODEL_BLOB: e14ee4c6ec6c851f228352656b0cd8e2fc3a2a06
+INTERACTIVE_MODEL_BLOB: 931093557eb411b9f78286a92e6545dcbd59aa73
 SVG_B22_BLOB: 5f2d23adb6f947064312d04d67ce5a5bb2d1ff48
 SVG_B23_BLOB: b53b65704f9830e1c97b533bac0e79a0b56761b6
 SVG_B24_BLOB: c98d7df30b87c339336636e00322816a4099681b
@@ -304,7 +304,7 @@ Original G11 SGK KNTT Tập Hai ChVII: B22 pp27–30, B23 pp31–37, B24 pp38–
 
 ## 18/11/2026 — source-locked geometric knowledge recall correction
 
-- Effective R03 learner `ad3fdadb2b6a7150118c2534bf02cf9563f92e26`, Q18 `55ee159e7929545032c76a8493dc48b09a3f593a`, A1 `8424bdccdbf5ea6041da60fea5ea063e90f8b388`; previous signed learner `0adf45aa8d776634d66f5c8e57b1c86ad77c8ed2` immutable and differs **only** in one four-bullet student summary.
+- Effective R03 learner `363316efc7a338e4ec7d5629b182fce3de271356`, Q18 `7ac399da84280f285cf8e25ecf5a16e2f0768a76`, A1 `b2fef1fab9629e53bab34295ce858c888bb4448f`; previous signed learner `0adf45aa8d776634d66f5c8e57b1c86ad77c8ed2` immutable and differs **only** in one four-bullet student summary.
 - Recap clarifies line-plane perpendicular criterion (two intersecting in-plane lines), actual space angles/projections, dihedral cuts and true perpendicular height. 21 outcomes, 86 canonical IDs, public 65 Practice cards plus 8 selfchecks (question-only), all original answers/4 SVG/disclosures protected and byte-exact.
 - Source-scoped Q18 `AUTHOR_SELF_VERIFIED`; historic R03 direct-count assertions remain historical, not new independent NotebookLM verdict, no RD1, Final Submit or RELEASE permission.
 
@@ -342,3 +342,10 @@ A1 immutable R01 academic source + receipt + matrix blobs; A2 G11 ChVII original
 ## RELEASE_AND_OWNER_GATE
 
 R1–R5/AP1–AP5/P1–P2 **NOT TESTED** on production or integrated main. Release must reconcile actual source/receipt/SHA on exact integrated HEAD and union of independent Draft manifest rows; map runtime Topic ID only after owner decision, preserve Golden R4 / Adaptive Knowledge Tabs v2, MathJax/SVG/Canvas and native iPhone/iPad Safari. Q16 Final Submit must not leak answer, rubric, hint, correctness or AI Tutor before final submission, and must not write Mastery from public replay. **No merge/deploy/Firebase/student-record modification authorized by this AUTHORING handoff.**
+
+## CURRENT O12 corrected R03 source/Q18 and CSS-only model — 18/11/2026
+
+- **ONE learner source** `prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_PERPENDICULARITY_R03_LEARNER_FIRST_20261116.md` Git blob `363316efc7a338e4ec7d5629b182fce3de271356`, superseding prior R03-recap source `ad3fdadb2b6a7150118c2534bf02cf9563f92e26` as effective snapshot. Targeted O12 two-line true `DELTA_C_ACADEMIC_MATERIAL`: in plane z=0, A(0,0,2) must be OUTSIDE, while H(0,0,0),B(3,0,0) belong to plane; correct theorem uses AH normal, BH in plane and c through H direction (0,1,0), with `\\overrightarrow{AB}=(3,0,-2)` and `(3,0,-2)·(0,1,0)=0`. This fixes an actual misleading mathematical premise/vector, not any item math or rubric. Scoped direct author Q18 math/PED verified; `NOTEBOOKLM_REREVIEW=NOT_REQUIRED_WITH_REASON`. Historical R03 51/57 broad tests remain snapshot-locked, no invented external reviewer PASS.
+- **Q18 current exact composite** `7ac399da84280f285cf8e25ecf5a16e2f0768a76`; **A1 current** `b2fef1fab9629e53bab34295ce858c888bb4448f`, 86 canonical item IDs = 41 original SGK +21 Topic T +21 Topic P+3 Topic Written; 8 public question-only selfchecks from existing P IDs; 65 real Practice, four original SVG. Same one original SGK canonical owner `afc8ec039213b87b4930f2d34d48c28d1fc6277f` was fetched on this branch. No new second item or ID or change to conditions/answer/rubric in Practice.
+- **Actual current ramp angle model** `931093557eb411b9f78286a92e6545dcbd59aa73` compared to historically signed `e14ee4c6ec6c851f228352656b0cd8e2fc3a2a06` differs exclusively by 17 added Golden UI CSS/tokens. Original HTML/JS/mathematical logic byte-identical by Git source comparison, `DELTA_A_UI`, no math rereview; separate browser AP2/device visual QA belongs to RELEASE.
+- **Historical immutable R01** ready Git `6de988fbe61f2e6bc5e58571e9cad68605cdd990` archived byte-for-byte at `prototypes/thpt/release-queue/archive/THPT-TOPIC16-PERPENDICULAR-ANGLE-FULL-R01_HISTORICAL_SIGNED_20261118.md` and removed from active ready queue. This R03 should be only effective READY and REGISTER row. Authoring source/Q18/A1/V2/ready and exact-head CI govern CONTENT_READY; production/browser/Final Submit/RD1/Mastery/deploy not authorized.
