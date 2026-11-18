@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 410" role="img" aria-labelledby="b09-title b09-desc">
+  <title id="b09-title">Phân tích một vectơ theo hai vectơ không cùng phương</title>
+  <desc id="b09-desc">Từ điểm O, vectơ a hướng sang phải đến P, vectơ b hướng chếch lên phải đến B, hai lần vectơ b đến Q; từ P đi theo hai lần vectơ b đến R. Đường chéo O đến R là vectơ u bằng a cộng hai lần b.</desc>
+  <defs>
+    <marker id="b09-arrow-a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#17665e"/></marker>
+    <marker id="b09-arrow-b" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#7154a4"/></marker>
+    <marker id="b09-arrow-u" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#1e4d8e"/></marker>
+  </defs>
+  <rect x="1" y="1" width="718" height="408" rx="16" fill="#fff" stroke="#dce3eb" stroke-width="2"/>
+  <text x="30" y="41" font-size="23" font-family="Arial, sans-serif" font-weight="700" fill="#20314e">Hai hướng không cùng phương: a và b</text>
+  <text x="30" y="69" font-size="18" font-family="Arial, sans-serif" fill="#526174">Ghép a với 2b để được vectơ u</text>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path d="M90 318 L290 318 L410 108 L210 108Z" fill="#eff5fe" fill-opacity=".7" stroke="#9daec9" stroke-dasharray="8 8" stroke-width="2.5"/>
+    <path d="M90 318 L290 318" fill="none" stroke="#17665e" stroke-width="5" marker-end="url(#b09-arrow-a)"/>
+    <path d="M90 318 L150 213" fill="none" stroke="#7154a4" stroke-width="4" marker-end="url(#b09-arrow-b)"/>
+    <path d="M90 318 L210 108" fill="none" stroke="#7154a4" stroke-width="3" stroke-dasharray="10 7" marker-end="url(#b09-arrow-b)"/>
+    <path d="M290 318 L410 108" fill="none" stroke="#7154a4" stroke-width="5" marker-end="url(#b09-arrow-b)"/>
+    <path d="M90 318 L410 108" fill="none" stroke="#1e4d8e" stroke-width="5" marker-end="url(#b09-arrow-u)"/>
+  </g>
+  <g fill="#263a54" font-size="22" font-family="Arial, sans-serif" font-weight="700">
+    <text x="66" y="344">O</text><text x="291" y="348">P</text><text x="200" y="97">Q</text><text x="422" y="113">R</text>
+  </g>
+  <g font-size="24" font-family="Arial, sans-serif" font-weight="700">
+    <text x="178" y="355" fill="#17665e">a</text><text x="110" y="213" fill="#7154a4">b</text>
+    <text x="307" y="224" fill="#7154a4">2b</text><text x="255" y="193" fill="#1e4d8e">u</text>
+  </g>
+  <rect x="466" y="165" width="224" height="106" rx="12" fill="#f1f5fc" stroke="#b9c7dd"/>
+  <text x="483" y="197" font-size="19" font-family="Arial, sans-serif" font-weight="700" fill="#1e4d8e">u = a + 2b</text>
+  <text x="483" y="228" font-size="17" font-family="Arial, sans-serif" fill="#34475e">O → P → R</text>
+  <text x="483" y="255" font-size="17" font-family="Arial, sans-serif" fill="#34475e">theo a, rồi 2b</text>
+  <text x="30" y="391" font-size="17" font-family="Arial, sans-serif" fill="#526174">Hình minh họa quy tắc hình bình hành, không phải biểu đồ tọa độ.</text>
+</svg>

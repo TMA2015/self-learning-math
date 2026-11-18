@@ -22,8 +22,12 @@ for (const name of names) {
   const runners = [...yaml.matchAll(/^\s*runs-on:\s*([^\r\n#]+)/gm)]
     .map(match => match[1].trim().replace(/[\x22\x27]/g, ""));
   assert(runners.length > 0, name + ": runners are not defined");
-  assert(runners.every(label => label === "ubuntu-latest"),
-    name + ": non-standard runner could consume private quota or incur fees");
+  // ubuntu-24.04 is an official standard GitHub-hosted image. Pinning it
+  // avoids Playwright 1.56.1's unsupported Ubuntu 26.04 image, while
+  // preserving the same public-repository quota/isolation guarantees.
+  const freePublicHosted=new Set(["ubuntu-latest","ubuntu-24.04"]);
+  assert(runners.every(label => freePublicHosted.has(label)),
+    name + ": non-standard/self-hosted runner could consume private quota or incur fees");
   assert(!/actions\/(?:upload-artifact|cache|download-artifact)@/i.test(yaml),
     name + ": prevent automatic use of shared artifact/cache quota");
   assert(!/\b(?:upload-artifact|upload-pages-artifact|save-cache|restore-cache)@/i.test(yaml),

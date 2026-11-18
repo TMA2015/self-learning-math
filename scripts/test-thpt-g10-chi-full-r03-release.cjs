@@ -20,7 +20,14 @@ for(const c of chapters){
       c.lesson+": Model B 4-tab mismatch");
     const ids=[...x.matchAll(/data-thpt-first-try-id="([^"]+)"/g)].map(z=>z[1]);
     const expected=Array.from({length:c.expected},(_,i)=>"THPT-G10-CHI-TRY"+String(c.start+i).padStart(2,"0"));
-    assert.deepEqual(ids,expected,c.lesson+": source item identity/regression");
+    if(c.lesson==="B02"){
+      // The six canonical IDs remain one-to-one. Their physical placements
+      // follow the S1 three-section Knowledge sequence rather than numeric IDs.
+      assert.deepEqual([...ids].sort(),[...expected].sort(),c.lesson+": canonical identity retained after S1 reorder");
+      assert.equal(new Set(ids).size,c.expected,c.lesson+": no duplicate First Try ID");
+    }else{
+      assert.deepEqual(ids,expected,c.lesson+": source item identity/regression");
+    }
     // Model B authoring uses Markdown links; MkDocs resolves sibling .md
     // to the SAME final Golden routes as historic href="../.../" links.
     // Check both real source targets and their existence; never weaken Q16.
