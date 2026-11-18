@@ -291,13 +291,17 @@ for(const [tag,rec]of Object.entries(transfer)){
     const d=k=>newReceipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
     assert.equal(d("B11_BASELINE_SOURCE_BLOB"),uiField("R02_B11_SOURCE_BLOB"),
      "B11 signed R02 historic force D2 source SHA preserved");
-    assert.equal(sha(modelB),d("B11_SOURCE_CURRENT_BLOB"),
+    const goldenReceipt=read("prototypes/thpt/ux795/G10_B11_B12_OWNER_P2_GOLDEN_COMPONENT_PARITY_DELTA_A_R02_20261118.md");
+    const gold=k=>goldenReceipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    assert.equal(gold("B11_PREVIOUS_SOURCE_BLOB"),d("B11_SOURCE_CURRENT_BLOB"),
+     "Prior published B11 source-first receipt remains signed");
+    assert.equal(sha(modelB),gold("B11_SOURCE_CURRENT_BLOB"),
      "B11 force D2 remains in source-first current canonical learner source");
     const examples=modelB.split('=== "Ví dụ"')[1]?.split('=== "Lỗi thường gặp"')[0]||"";
     assert(examples.includes("### 3.4. Ví dụ 4 — Hợp lực")&&
      examples.includes("THPT_G10_CHIV_FORCE_TRANSFER_D5_R01_CORRECTED.svg")&&
-     examples.includes("**Giải:**"),
-     "B11 force D2 must be a proper worked example in Tab3, source figure retained");
+     examples.includes("<strong>Giải:</strong>")&&examples.includes('class="thpt-g10-example-solution"'),
+     "B11 force D2 uses B10 Golden neutral worked-solution component and original SVG");
     assert(!modelB.includes("#### Ví dụ có hướng dẫn — "+rec.ex),
      "B11 old implementation EX identifier must not appear in student source");
    }

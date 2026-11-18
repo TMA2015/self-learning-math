@@ -11,7 +11,7 @@ const {chromium}=require("playwright");
 const root=path.resolve(__dirname,"..");
 const base=process.env.SLM_CHV_URL||"http://127.0.0.1:8765";
 const expectedSources={
- 12:"6b0f137849e11a74a28d4b7fe436d2911a5b5c9d",
+ 12:"ff22a17265a0b3f66607bdfb132975877a7a6eba",
  13:"0459b67858246cb6136cf9a2cf9e7a7d18bd27be",
  14:"21c1ef59277f742b45a27900b173fac031a4a04f"
 };
@@ -36,14 +36,21 @@ const blob=data=>{
    const delta=fs.readFileSync(root+
      "/prototypes/thpt/ux795/G10_B11_B12_OWNER_P2_SOURCE_FIRST_DELTA_A_R01_20261118.md","utf8");
     const df=k=>delta.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+     const golden=fs.readFileSync(root+
+      "/prototypes/thpt/ux795/G10_B11_B12_OWNER_P2_GOLDEN_COMPONENT_PARITY_DELTA_A_R02_20261118.md","utf8");
+     const g=k=>golden.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+     assert.equal(g("B12_PREVIOUS_SOURCE_BLOB"),df("B12_SOURCE_CURRENT_BLOB"),
+      "B12 previous source-first SHA retained in history");
+     assert.equal(g("B12_PREVIOUS_CANONICAL_BLOB"),df("B12_CANONICAL_CURRENT_BLOB"),
+      "B12 previous canonical retained in history");
     assert.equal(df("B12_BASELINE_SOURCE_BLOB"),get("B12_R01_SOURCE_BLOB"),
      "B12 prior independent-review SHA remains frozen");
-    assert.equal(df("B12_SOURCE_CURRENT_BLOB"),blob(source),
+    assert.equal(g("B12_SOURCE_CURRENT_BLOB"),blob(source),
      "B12 new current source SHA exact");
    const master=fs.readFileSync(root+"/prototypes/thpt/content-drafts/THPT_G10_CHV_B12_CANONICAL.md","utf8");
    assert.equal(df("B12_BASELINE_CANONICAL_BLOB"),get("ONE_CANONICAL_B12_R01_BLOB"),
      "B12 prior approved canonical remains frozen");
-    assert.equal(blob(master),df("B12_CANONICAL_CURRENT_BLOB"),
+    assert.equal(blob(master),g("B12_CANONICAL_CURRENT_BLOB"),
      "B12 new source-first one canonical SHA exact");
    assert.equal(master.split("<!-- BEGIN_B12_KNOWLEDGE_MARKDOWN -->\n")[1]
     ?.split("\n<!-- END_B12_KNOWLEDGE_MARKDOWN -->")[0],source.toString("utf8"),
@@ -120,10 +127,20 @@ const blob=data=>{
    const b11Receipt=fs.readFileSync(root+
     "/prototypes/thpt/ux795/G10_CHIV_B11_S1_PED_CANONICAL_Q18_R01_20261118.md","utf8");
    const b11f=k=>b11Receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
-   assert.equal(blob(css),b11f("CSS_B11_SCOPED_APPEND_BLOB"),
-    "B11 appended CSS must match signed exact Q18 source");
-   assert(!fullCss.slice(atB10).includes("THPT-G10-CHV"),
-    "B10 styles may not target Chapter V lesson");
+   const b12gold=fs.readFileSync(root+
+      "/prototypes/thpt/ux795/G10_B11_B12_OWNER_P2_GOLDEN_COMPONENT_PARITY_DELTA_A_R02_20261118.md","utf8");
+    const color=k=>b12gold.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    assert.equal(color("GOLDEN_CSS_PREVIOUS_BLOB"),b11f("CSS_B11_SCOPED_APPEND_BLOB"),
+     "B10/B11 previously accepted CSS baseline exact");
+    assert.equal(blob(css),color("GOLDEN_CSS_CURRENT_BLOB"),
+     "B12 Golden semantic CSS must match scoped B10 palette receipt");
+   const b12cut=fullCss.indexOf("/* G10 ChV B12 · OWNER P2 Golden parity");
+    assert(b12cut>cutB11&&fullCss.indexOf("/* G10 ChV B12 · OWNER P2 Golden parity",b12cut+1)<0,
+     "B12 scoped palette appended after B10 accepted CSS exactly once");
+    assert(!fullCss.slice(atB10,b12cut).includes("THPT-G10-CHV"),
+     "B10/B11 approved CSS must not target ChV before reviewed B12 append");
+    assert(fullCss.slice(b12cut).includes('data-thpt-first-try-id="THPT-G10-CHV-TRY01"'),
+     "Only B12 canonical marker receives B10-semantic palette");
    const cssText=css.toString("utf8"),cut=cssText.indexOf("/* G10 ChIV B07 R05");
    const b08cut=cssText.indexOf("/* G10 ChIV B08 R04");
    const b09cut=cssText.indexOf("/* G10 Chapter IV B09 R03");
@@ -150,6 +167,32 @@ const blob=data=>{
  let total=0;
  try{
   for(const width of [390,820,1440]){
+   // The accepted B10 rendered page is the Golden oracle, not a color guess.
+   const b10=await browser.newPage({viewport:{width,height:width===390?844:width===820?1180:900}});
+   await b10.goto(base+"/thpt-preview/sgk/chuong-iv/bai-10/",
+    {waitUntil:"domcontentloaded",timeout:60000});
+   await b10.waitForFunction(()=>document.querySelector(".md-content__inner")?.dataset.g10ChivGolden==="true");
+   const sample=async p=>p.evaluate(()=>{
+    const root=document.querySelector(".md-content__inner");
+    const get=selector=>{
+     const el=root?.querySelector(selector);
+     if(!el)return null;
+     const cs=getComputedStyle(el);
+     return {background:cs.backgroundColor,border:cs.borderTopColor,
+      borderLeft:cs.borderLeftColor,radius:cs.borderRadius,padding:cs.padding};
+    };
+    return {solution:get(".thpt-g10-example-solution"),
+     concept:get(".thpt-r4-knowledge-conclusion.thpt-r4-concept-card"),
+     rule:get(".thpt-r4-knowledge-conclusion.thpt-r4-rule-card")};
+   });
+   const b10Palette={};
+   for(const scheme of ["default","slate"]){
+    await b10.evaluate(v=>document.body.setAttribute("data-md-color-scheme",v),scheme);
+    b10Palette[scheme]=await sample(b10);
+    assert(Object.values(b10Palette[scheme]).every(Boolean),
+     "B10 Golden reference missing semantic/solution panels");
+   }
+   await b10.close();
    const page=await browser.newPage({viewport:{width,height:width===390?844:width===820?1180:900}});
    page.setDefaultTimeout(20000);
    try{
@@ -193,7 +236,7 @@ const blob=data=>{
      }
      assert.equal(await blocks.nth(2).locator(":scope > h3").count(),lesson===12?4:3,
       context+" signed number of worked examples");
-     const sourceBox=lesson===12?".admonition.example":".thpt-g10-example-solution";
+     const sourceBox=".thpt-g10-example-solution";
       assert.equal(await blocks.nth(2).locator(sourceBox).count(),
        lesson===12?4:3,context+" B12 source-authored solutions, B13/B14 legacy Golden");
      const render=await article.evaluate(root=>{
@@ -202,7 +245,7 @@ const blob=data=>{
       const closed=[...root.querySelectorAll(".tabbed-block details.question")];
       const tips=[...root.querySelectorAll(".tabbed-block details.tip")];
       const worked=[...root.querySelectorAll(location.pathname.includes("/bai-12/")?
-        ".tabbed-block .admonition.example":".tabbed-block .thpt-g10-example-solution")];
+        ".tabbed-block .thpt-g10-example-solution":".tabbed-block .thpt-g10-example-solution")];
       return {
        heights:labels.map(e=>e.getBoundingClientRect().height),
        closed:closed.every(e=>!e.open),
@@ -226,17 +269,36 @@ const blob=data=>{
      assert.equal(await article.locator("[data-g10-chapter-selfcheck]").count(),0,
       context+" no independent Readiness exposed");
      if(lesson===12){
-       const native=blocks.nth(2).locator(".admonition.example");
-       const texts=await native.allInnerTexts();
-       assert.equal(texts.length,4,context+" B12 four native source-authored Lời giải");
-       assert(texts.every(x=>x.includes("Giải:")&&!x.includes("Đề:")),
-        context+" only Giải may appear inside solution box");
+       const solved=blocks.nth(2).locator(".thpt-g10-example-solution");
+       await solved.first().locator("mjx-container").first()
+        .waitFor({state:"attached",timeout:15000});
+       await blocks.nth(1).locator(".thpt-r4-concept-card mjx-container").first()
+        .waitFor({state:"attached",timeout:15000});
+       const contents=await solved.allInnerTexts();
+       assert.equal(contents.length,4,context+" B12 four B10 Golden solution panels");
+       assert(contents.every(t=>t.trim().startsWith("Giải:")&&!t.includes("Đề:")),
+        context+" only solved mathematics inside B10 neutral panels");
+       assert.equal(await blocks.nth(2).locator(".admonition.example").count(),0,
+        context+" reject purple default MkDocs Example admonition");
        assert.equal(await blocks.nth(2).locator(":scope > p").filter({hasText:/^Phân tích:/}).count(),4,
-        context+" B12 four plain Phân tích outside boxes");
-       assert.equal(await blocks.nth(1).locator(".admonition.abstract").count(),3,
-        context+" three source-authored concepts/definitions");
-       assert.equal(await blocks.nth(1).locator(".admonition.info").count(),1,
-        context+" one source-authored rule card");
+        context+" four source-authored method analyses outside panels");
+       assert.equal(await blocks.nth(1).locator(".thpt-r4-knowledge-conclusion.thpt-r4-concept-card").count(),3,
+        context+" B12 three B10 semantic concept cards");
+       assert.equal(await blocks.nth(1).locator(".thpt-r4-knowledge-conclusion.thpt-r4-rule-card").count(),1,
+        context+" B12 one B10 semantic rule card");
+       assert.equal(await blocks.nth(1).locator(".admonition.abstract,.admonition.info").count(),0,
+        context+" reject wrong-color default MkDocs knowledge boxes");
+       for(const scheme of ["default","slate"]){
+        await page.evaluate(v=>document.body.setAttribute("data-md-color-scheme",v),scheme);
+        const current=await sample(page);
+        assert.deepEqual(current.solution,b10Palette[scheme].solution,
+         context+" B12 solution color/border/padding MUST match B10 "+scheme);
+        assert.deepEqual(current.concept,b10Palette[scheme].concept,
+         context+" B12 concept color/border/padding MUST match B10 "+scheme);
+        assert.deepEqual(current.rule,b10Palette[scheme].rule,
+         context+" B12 rule color/border/padding MUST match B10 "+scheme);
+       }
+       await page.evaluate(()=>document.body.removeAttribute("data-md-color-scheme"));
        await labels.nth(0).click();
       const fig=blocks.nth(0).locator('img[src*="THPT_G10_B12_ERROR_INTERVAL_D5_R02_REVIEWED.svg"]');
       assert.equal(await fig.count(),1,context+" signed interval figure must guide concept BEFORE tab2");

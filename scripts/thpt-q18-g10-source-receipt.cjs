@@ -336,6 +336,15 @@ function expectedG10KnowledgeBlob(lesson,legacy){
   const delta=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_B11_B12_OWNER_P2_SOURCE_FIRST_DELTA_A_R01_20261118.md"),"utf8");
   const df=k=>delta.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  const currentGolden=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_B11_B12_OWNER_P2_GOLDEN_COMPONENT_PARITY_DELTA_A_R02_20261118.md"),"utf8");
+   const g=k=>currentGolden.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(g("B11_PREVIOUS_SOURCE_BLOB"),df("B11_SOURCE_CURRENT_BLOB"),
+   "B11 prior P2 source-first learner SHA history intact");
+  assert.equal(g("B11_PREVIOUS_CANONICAL_BLOB"),df("B11_CANONICAL_CURRENT_BLOB"),
+   "B11 prior P2 source-first canonical SHA history intact");
+  assert.equal(g("GOLDEN_CSS_PREVIOUS_BLOB"),uf("R02_CSS_BLOB"),
+   "B11 old shared Golden CSS history intact");
   const source=uf("R02_B11_SOURCE_BLOB"),
         masterSha=uf("R02_ONE_CANONICAL_B11_BLOB");
   assert.equal(df("B11_BASELINE_SOURCE_BLOB"),source,
@@ -350,13 +359,13 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    "B11 signed academic/PED R01 receipt must remain byte-identical");
   const manuscript=fs.readFileSync(path.join(root,
    "prototypes/thpt/content-drafts/THPT_G10_CHIV_B11_CANONICAL.md"));
-  assert.equal(calc(manuscript),df("B11_CANONICAL_CURRENT_BLOB"),
+  assert.equal(calc(manuscript),g("B11_CANONICAL_CURRENT_BLOB"),
    "B11 same canonical file must equal new owner P2 Delta A SHA");
   const css=fs.readFileSync(path.join(root,"docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"));
-  assert.equal(calc(css),uf("R02_CSS_BLOB"),"B11 scoped Golden CSS SHA changed during UI-only repair");
+  assert.equal(calc(css),g("GOLDEN_CSS_CURRENT_BLOB"),"B11 shared Golden CSS equals exact B10 palette Delta A receipt");
   const sourceText=fs.readFileSync(path.join(root,
    "docs/thpt-preview/sgk/chuong-iv/bai-11.md"),"utf8");
-  assert.equal(calc(Buffer.from(sourceText)),df("B11_SOURCE_CURRENT_BLOB"),
+  assert.equal(calc(Buffer.from(sourceText)),g("B11_SOURCE_CURRENT_BLOB"),
    "B11 source-first learner Knowledge must match new owner P2 receipt");
   const manuscriptText=manuscript.toString("utf8");
   const start="<!-- BEGIN_B11_KNOWLEDGE_MARKDOWN -->\n",end="\n<!-- END_B11_KNOWLEDGE_MARKDOWN -->";
@@ -367,7 +376,7 @@ function expectedG10KnowledgeBlob(lesson,legacy){
     "INDEPENDENT_ACADEMIC_PED_REVIEW_PENDING","NO_MERGE_NO_DEPLOY"]){
    assert(signed.includes(required),"B11 review HOLD evidence missing "+required);
   }
-  return df("B11_SOURCE_CURRENT_BLOB");
+  return g("B11_SOURCE_CURRENT_BLOB");
  }
 
  if(name==="B10"){
@@ -493,23 +502,35 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    const delta=fs.readFileSync(path.join(root,
     "prototypes/thpt/ux795/G10_B11_B12_OWNER_P2_SOURCE_FIRST_DELTA_A_R01_20261118.md"),"utf8");
    const df=k=>delta.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   const currentGolden=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_B11_B12_OWNER_P2_GOLDEN_COMPONENT_PARITY_DELTA_A_R02_20261118.md"),"utf8");
+   const g=k=>currentGolden.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(g("B12_PREVIOUS_SOURCE_BLOB"),df("B12_SOURCE_CURRENT_BLOB"),
+    "B12 prior P2 source-first learner SHA preserved");
+   assert.equal(g("B12_PREVIOUS_CANONICAL_BLOB"),df("B12_CANONICAL_CURRENT_BLOB"),
+    "B12 prior P2 source-first canonical SHA preserved");
+   assert.equal(g("GOLDEN_CSS_PREVIOUS_BLOB"),f("FROZEN_CSS_BLOB"),
+    "B12 original shared CSS SHA must remain signed");
    assert.equal(df("B12_BASELINE_SOURCE_BLOB"),f("B12_R01_SOURCE_BLOB"),
     "B12 source-first P2 must preserve historical independent-review source SHA");
    assert.equal(df("B12_BASELINE_CANONICAL_BLOB"),f("ONE_CANONICAL_B12_R01_BLOB"),
     "B12 source-first P2 must preserve historical signed canonical SHA");
    assert.equal(blob(fs.readFileSync(path.join(root,
     "prototypes/thpt/content-drafts/THPT_G10_CHV_B12_CANONICAL.md"))),
-    df("B12_CANONICAL_CURRENT_BLOB"),"B12 same current canonical file must match P2 Delta A SHA");
+    g("B12_CANONICAL_CURRENT_BLOB"),"B12 current canonical must match B10 Golden component parity SHA");
    for(const [rel,key] of [
     ["docs/assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js","B12_R01_ITEM_BANK_BLOB"],
     ["docs/thpt-preview/sgk/chuong-v/luyen-tap.md","B12_R01_PRACTICE_HUB_BLOB"],
-    ["docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css","FROZEN_CSS_BLOB"],
+
     ["docs/thpt-preview/sgk/chuong-v/bai-13.md","FROZEN_B13_SOURCE_BLOB"],
     ["docs/thpt-preview/sgk/chuong-v/bai-14.md","FROZEN_B14_SOURCE_BLOB"]]){
      assert.equal(blob(fs.readFileSync(path.join(root,rel))),f(key),
       "B12 single canonical/source and other owner-frozen lesson SHA mismatch "+rel);
    }
-   return df("B12_SOURCE_CURRENT_BLOB");
+   assert.equal(blob(fs.readFileSync(path.join(root,
+    "docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"))),
+    g("GOLDEN_CSS_CURRENT_BLOB"),"B12 source-first B10 palette CSS SHA exact");
+   return g("B12_SOURCE_CURRENT_BLOB");
   }
   if(chvii){
    assert.equal(chvii.helps,({B19:9,B20:7,B21:7,B22:10})[name],name+" exact total HELP count");

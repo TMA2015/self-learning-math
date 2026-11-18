@@ -96,8 +96,13 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
    "B11 P2 Tab4 reflow cannot modify accepted CSS");
   assert.equal(b11f("B10_P2_APPROVED_CSS_BLOB"),b10f("CSS_R01_SCOPED_B10_BLOB"),
    "B11 css source must descend from B10 owner P2");
-  assert.equal(blob(cssFile),b11f("CSS_B11_SCOPED_APPEND_BLOB"),
-   "B11 exact CSS source-lock mismatch");
+  const goldCss=fs.readFileSync(root+
+    "/prototypes/thpt/ux795/G10_B11_B12_OWNER_P2_GOLDEN_COMPONENT_PARITY_DELTA_A_R02_20261118.md","utf8");
+   const gCss=k=>goldCss.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(gCss("GOLDEN_CSS_PREVIOUS_BLOB"),b11f("CSS_B11_SCOPED_APPEND_BLOB"),
+    "B10/B11 owner-accepted CSS baseline still immutable");
+   assert.equal(blob(cssFile),gCss("GOLDEN_CSS_CURRENT_BLOB"),
+    "Exact current B10 parity CSS scoped only to B12");
   assert(cssWithB10.slice(cutB11).includes("THPT-G10-CHIV-TRY21")&&
    !cssWithB10.slice(cutB11).includes("THPT-G10-CHIV-TRY16"),
    "B11 styles cannot recolor B10");
@@ -152,14 +157,20 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
    const df=k=>currentDelta.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
    assert.equal(df("B11_BASELINE_SOURCE_BLOB"),b11u("R02_B11_SOURCE_BLOB"),
     "Original B11 R02 signed source still immutable");
-   assert.equal(current,df("B11_SOURCE_CURRENT_BLOB"),
-    "B11 now uses exact current one-canonical source-first SHA");
+   const goldenReceipt=fs.readFileSync(root+
+     "/prototypes/thpt/ux795/G10_B11_B12_OWNER_P2_GOLDEN_COMPONENT_PARITY_DELTA_A_R02_20261118.md","utf8");
+   const g=k=>goldenReceipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(g("B11_PREVIOUS_SOURCE_BLOB"),df("B11_SOURCE_CURRENT_BLOB"),
+    "Original source-first B11 P2 SHA remains signed in historical receipt");
+   assert.equal(current,g("B11_SOURCE_CURRENT_BLOB"),
+    "B11 current learner source is exactly B10 Golden component R02 receipt");
   }else assert.equal(current,sha,"Unapproved academic/source/First Try change B"+lesson);
  }
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
  let cases=0;
  try{
   for(const width of [390,820,1440]){
+   let b10GoldenStyles=null;
    const page=await browser.newPage({viewport:{width,height:width===390?844:width===820?1180:900}});
    page.setDefaultTimeout(20000);
    try{
@@ -228,22 +239,43 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
      assert(examples.every((v,i)=>v.trim().startsWith("3."+(i+1)+". Ví dụ "+(i+1)+([7,8,10,11].includes(lesson)?" —":". "))),
       where+" numbered visual example headings");
      assert.equal(await blocks.nth(2).locator(".thpt-g10-example-solution").count(),
-      [7,8,9,10].includes(lesson)?4:0,
-      where+" original B07–B10 Golden solution panels frozen; B11 source is native");
-     if(lesson===11){
-      const native=blocks.nth(2).locator(".admonition.example");
-      assert.equal(await native.count(),4,where+" 4 native Markdown source-authored boxed solutions");
-      const texts=await native.allInnerTexts();
-      assert(texts.every(x=>x.includes("Giải:")&&!x.includes("Đề:")),
-       where+" actual Giải in box, never Đề");
-      assert.equal(await blocks.nth(2).locator(":scope > p").filter({hasText:/^Phân tích:/}).count(),4,
-       where+" 4 Phân tích explanations outside boxes");
-      assert.equal(await blocks.nth(2).locator(":scope > p").filter({hasText:/^Đề:/}).count(),4,
-       where+" 4 learner problems stay unboxed");
-      assert((await native.first().evaluate(e=>getComputedStyle(e).backgroundColor))!=="rgba(0, 0, 0, 0)",
-       where+" real computed boxed solution background");
-     }
-     assert.equal(await article.locator(".thpt-r4-lead").count(),0,where+" no redundant introduction");
+       [7,8,9,10,11].includes(lesson)?4:0,
+       where+" every B07–B11 example uses approved B10 Golden neutral solution style");
+     if(lesson===10||lesson===11){
+       const panel=blocks.nth(2).locator(".thpt-g10-example-solution").first();
+       const palette={};
+       for(const scheme of ["default","slate"]){
+        await page.evaluate(v=>document.body.setAttribute("data-md-color-scheme",v),scheme);
+        palette[scheme]=await panel.evaluate(el=>{
+         const css=getComputedStyle(el);
+         return {background:css.backgroundColor,border:css.borderTopColor,
+          borderWidth:css.borderTopWidth,borderRadius:css.borderRadius,padding:css.padding};
+        });
+       }
+       await page.evaluate(()=>document.body.removeAttribute("data-md-color-scheme"));
+       if(lesson===10)b10GoldenStyles=palette;
+       if(lesson===11){
+        assert(b10GoldenStyles,where+" B10 computed Golden reference missing");
+        assert.deepEqual(palette,b10GoldenStyles,
+         where+" B11 Golden background, border, radius and padding must equal B10 light/slate");
+       }
+      }
+      if(lesson===11){
+       const solved=blocks.nth(2).locator(".thpt-g10-example-solution");
+       assert.equal(await solved.count(),4,where+" four B10 Golden source solution boxes");
+       assert.equal(await blocks.nth(2).locator(".admonition.example").count(),0,
+        where+" must not render default violet MkDocs Example admonitions");
+       await solved.first().locator("mjx-container").first()
+        .waitFor({state:"attached",timeout:15000});
+       const texts=await solved.allInnerTexts();
+       assert(texts.every(t=>t.trim().startsWith("Giải:")&&!t.includes("Đề:")),
+        where+" only math solution goes inside the neutral panel");
+       assert.equal(await blocks.nth(2).locator(":scope > p").filter({hasText:/^Phân tích:/}).count(),4,
+        where+" four plain Phân tích paragraphs outside box");
+       assert.equal(await blocks.nth(2).locator(":scope > p").filter({hasText:/^Đề:/}).count(),4,
+        where+" four source-authored problems outside box");
+      }
+      assert.equal(await article.locator(".thpt-r4-lead").count(),0,where+" no redundant introduction");
      assert.equal(await article.locator(".thpt-r4-footnote").count(),1,where+" only existing source footnote retained");
      assert.equal(await blocks.nth(3).locator(".thpt-r4-footnote").count(),1,where+" source note only on last tab");
      const source=fs.readFileSync(root+"/docs/thpt-preview/sgk/chuong-iv/bai-"+lesson+".md","utf8");
