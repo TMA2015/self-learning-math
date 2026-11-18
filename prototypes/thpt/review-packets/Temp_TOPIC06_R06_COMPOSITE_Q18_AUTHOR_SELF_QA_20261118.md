@@ -7,6 +7,12 @@ Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 AUTHOR_SELF_QA_RECEIPT: TOP06_R06_CURRENT_SOURCE_SIGNED_AUTHOR_SELF_QA_20261118
 P0: 0
 P1: 0
+S1_RECEIPT: Historic immutable owner-S1 KNTT G11 Tập Một ChI B01–B04 SGK and SBT printed-page receipts reused from signed prior R05; no new physical PDF scan claimed.
+OUTCOME_AUDIT: Direct inspected current student 16/16 TOP06-O01–O16, 16 standalone Ví dụ/Đề bài/Lời giải and Vận dụng/Đối chiếu, 66 real unique public Bài and 16 question-only Tự kiểm tra placements.
+MATH_VERIFICATION: Checked current domain/degree/radian/quadrant/tan/cot restrictions, interval and phase examples; R05 older 54 signed maths checks remain scoped to old source, no unsupported newly comprehensive maths PASS.
+PED_VERIFICATION: Verified current 16 meaning-first lessons, 15 corrected D6 destinations linked to real Bài headings and error-specific phase/range O10 and lost-root O14, three in-context SVG.
+CANONICAL_Q15: 46 immutable original G11 IDs plus 20 new original Topic IDs =66 unique real display-only item placements, two frozen bank source hashes, 16 public question-only replay IDs, no duplicate canonical owner.
+ASSESSMENT_Q16: Public replays are CLIENT_SELF_CHECK_NO_MASTERY only; no private RD1 exposed, official Final Submit, independent Topic Readiness or Skill Mastery produced.
 SOURCE_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_NUMBERING_CONSISTENT_20261116.md
 SOURCE_BLOB: ab88d7ed3b52713e4a80779c22dc75a67c3cccb1
 BASELINE_R05_SOURCE_BLOB: dd3af68f681eba9a7b75040d9490815f81efdd6b

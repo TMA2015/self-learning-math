@@ -4,8 +4,8 @@ PACKET_ID: THPT-TOPIC06-TRIGONOMETRY-FULL-R06
 CONTENT_REVISION: R06
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_A1_A7_CURRENT_SOURCE_QA_20261118.md
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_A1_A7_CURRENT_SOURCE_QA_20261118.md
-AUTHOR_METADATA_BLOB: b944861b3466a1596bce331ff444dde8e43048ef
-AUTHOR_A1_A7_BLOB: b944861b3466a1596bce331ff444dde8e43048ef
+AUTHOR_METADATA_BLOB: df6ab630e8df5c08fd3fb1e77f963e0d9a362ffc
+AUTHOR_A1_A7_BLOB: df6ab630e8df5c08fd3fb1e77f963e0d9a362ffc
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
@@ -15,7 +15,7 @@ Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_NUMBERING_CONSISTENT_20261116.md
 ACADEMIC_SOURCE_BLOB: ab88d7ed3b52713e4a80779c22dc75a67c3cccb1
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC06_R06_COMPOSITE_Q18_AUTHOR_SELF_QA_20261118.md
-REVIEW_RECEIPT_BLOB: 854766f7e4ddfdd8509c2fa1e2515d858fe7f9e1
+REVIEW_RECEIPT_BLOB: 19b65c2faf8db9480da401a6a8212c000c95d103
 PUBLIC_ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHI_B01_B04_CONCEPT_FIRST_PED_R03_SOURCE_CANDIDATE_20261102.md
 PUBLIC_ORIGINAL_SGK_SOURCE_BLOB: 256ceb5edc5e02aec320e83e99c8e08e035654f3
 PUBLIC_ORIGINAL_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC06_TRIGONOMETRY_ORIGINAL46_CANONICAL_INDEX_R01_20261112.md
@@ -246,28 +246,28 @@ RELEASE_AUTHORIZATION: NO
 
 ## QUALITY_Q01_Q18_EVIDENCE
 
-One canonical `SLM-THPT-QUALITY-ONE v3.1.0` source `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`. Q18 author receipt SHA 879ad8bf09e1b5f5efd33c8266a021d9d9638df8 on exact R05 learner SHA fc5937c96c811364f551a895c7c24d21cbc3cc86.
+One canonical `SLM-THPT-QUALITY-ONE v3.1.0` source `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`. Current Q18 composite receipt SHA 19b65c2faf8db9480da401a6a8212c000c95d103 on current R06 learner SHA ab88d7ed3b52713e4a80779c22dc75a67c3cccb1.
 
 | Qxx | Scope and mathematical/PED evidence | Verdict | Source SHA trace | Release gate |
 |---|---|---|---|---|
-| Q01 | Owner historical SGK G11 T1 B01–B04 ChI printed pages and SBT receipt, scoped original46 source 256ceb5e, not rescan. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_dd3af68f | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q02 | All 16 TOP06-O01..O16 explained by continuous angular geometry→identities→periodic graphs→general solution. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_dd3af68f | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q03 | Angle orientation and radii, tan/cot point exclusions, trig identities/periods, all k∈Z solution families. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_dd3af68f | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q04 | 16 independent Ví dụ/Đề bài/Lời giải per outcome with valid degree/radian, sign, domains and complete solution families. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_dd3af68f | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q05 | 66/66 actual learner-visible original canonical stems, answer keys and source solutions, 46 unchanged G11 +20 Topic extension (instead of ID-only Practice instructions). | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_dd3af68f | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q06 | 8 Written /7 rubric items (4 original G11 +4 Topic new) are visible under Lời giải và rubric; no separate Anchor library. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_dd3af68f | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q07 | Three immutable SVG diagrams at M02 135° unit circle, M10 sin x one period, M11 tan x asymptotes, with real alt and guidance not depicting a different worked example. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_dd3af68f | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q08 | 16 adjacent Vận dụng/Đối chiếu immediately after examples, with targeted D6 and actual 66 Practice questions. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_dd3af68f | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q09 | Why trig: a turning wheel, signed rotation and its coordinate projections, periodic physical signals. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_dd3af68f | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q10 | Degree/radian conversion, circle coordinates, sin/cos ratio, domain of tan/cot locally explained. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_dd3af68f | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q11 | Circle geometry leads to trig relations and identities before symbol manipulation; wave as projected rotation. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_dd3af68f | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q12 | All three SVG have title/desc and near-by precise point-value reading instructions. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_dd3af68f | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q13 | Why cos determines tan domain, why 2π family needed, why periodic waveform changes with phase, how to filter interval. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_dd3af68f | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q14 | 16 voluntary opt-in solution reveals beside each lesson, no generic PED box wall or premature key in selfcheck. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_dd3af68f | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q15 | One original source record per 66 unique IDs (46 SGK/20 Topic); 66 read-only source projections with exact stem/key/solution/rubric, 16 public replay selfcheck placements. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_dd3af68f | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q16 | 16 actual public selfcheck question stems, no solution/hint/rubric in selfcheck; CLIENT_SELF_CHECK_NO_MASTERY, no RD1 private; RELEASE tests runtime Final Submit. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_dd3af68f | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q17 | Three complete independent Topic parts: 16 taught lessons, 66 actual Practice questions+solutions, 16 public replay Selfcheck stems; no Topic Core or forced SGK route. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_dd3af68f | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q18 | R05 academic source dd3af68f and Q18 AUTHOR_SELF_VERIFIED receipt 8f4d721e; 16 outcome-specific audited examples, 66/66 exact original canonical parity and 54 corrected mathematics assertions. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_dd3af68f | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q01 | Owner historical SGK G11 T1 B01–B04 ChI printed pages and SBT receipt, scoped original46 source 256ceb5e, not rescan. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_ab88d7ed | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q02 | All 16 TOP06-O01..O16 explained by continuous angular geometry→identities→periodic graphs→general solution. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_ab88d7ed | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q03 | Angle orientation and radii, tan/cot point exclusions, trig identities/periods, all k∈Z solution families. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_ab88d7ed | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q04 | 16 independent Ví dụ/Đề bài/Lời giải per outcome with valid degree/radian, sign, domains and complete solution families. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_ab88d7ed | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q05 | 66/66 actual learner-visible original canonical stems, answer keys and source solutions, 46 unchanged G11 +20 Topic extension (instead of ID-only Practice instructions). | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_ab88d7ed | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q06 | 8 Written /7 rubric items (4 original G11 +4 Topic new) are visible under Lời giải và rubric; no separate Anchor library. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_ab88d7ed | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q07 | Three immutable SVG diagrams at M02 135° unit circle, M10 sin x one period, M11 tan x asymptotes, with real alt and guidance not depicting a different worked example. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_ab88d7ed | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q08 | 16 adjacent Vận dụng/Đối chiếu immediately after examples, with targeted D6 and actual 66 Practice questions. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_ab88d7ed | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q09 | Why trig: a turning wheel, signed rotation and its coordinate projections, periodic physical signals. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_ab88d7ed | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q10 | Degree/radian conversion, circle coordinates, sin/cos ratio, domain of tan/cot locally explained. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_ab88d7ed | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q11 | Circle geometry leads to trig relations and identities before symbol manipulation; wave as projected rotation. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_ab88d7ed | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q12 | All three SVG have title/desc and near-by precise point-value reading instructions. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_ab88d7ed | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q13 | Why cos determines tan domain, why 2π family needed, why periodic waveform changes with phase, how to filter interval. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_ab88d7ed | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q14 | 16 voluntary opt-in solution reveals beside each lesson, no generic PED box wall or premature key in selfcheck. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_ab88d7ed | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q15 | One original source record per 66 unique IDs (46 SGK/20 Topic); 66 read-only source projections with exact stem/key/solution/rubric, 16 public replay selfcheck placements. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_ab88d7ed | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q16 | 16 actual public selfcheck question stems, no solution/hint/rubric in selfcheck; CLIENT_SELF_CHECK_NO_MASTERY, no RD1 private; RELEASE tests runtime Final Submit. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_ab88d7ed | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q17 | Three complete independent Topic parts: 16 taught lessons, 66 actual Practice questions+solutions, 16 public replay Selfcheck stems; no Topic Core or forced SGK route. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_ab88d7ed | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q18 | Current R06 source ab88d7ed and composite Q18 19b65c2; 16 outcome-specific examples, 66 unchanged original canonical projections, targeted 15 D6 paths and formal condition QA; historic R05 54 math assertions preserved as R05-only evidence. | AUTHOR_SELF_VERIFIED_R06 | SOURCE_LOCKED_ab88d7ed | RELEASE_QA_SEPARATE_NO_DEPLOY |
 
 ## S1_SGK_SBT_SOURCE
 
@@ -316,7 +316,7 @@ Q18 author proof is 16 outcomes, 66 original records string parity, and 54 direc
 - P1 website published and P2 real-device Safari unverified. Source handoff cannot claim those states.
 ## CURRENT R06 exact-source custody closure — 18/11/2026
 
-This appended current R06 section **supersedes historical R05/R06-numbering SHA descriptions in prior prose of this very file**; ONE V2 handoff is updated in-place. One effective learner `prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_NUMBERING_CONSISTENT_20261116.md` Git SHA `ab88d7ed3b52713e4a80779c22dc75a67c3cccb1`, composite Q18 AUTHOR_SELF_VERIFIED Git `854766f7e4ddfdd8509c2fa1e2515d858fe7f9e1`, A1–A7 SHA `b944861b3466a1596bce331ff444dde8e43048ef`, original G11 46 canonical bank `256ceb5edc5e02aec320e83e99c8e08e035654f3`, index `d8279df37c9dcd74a0b26f0da389baf7d53ecf64`, NEW20 source `f83b285ff0c8f4e45b724cf06248935e5d618b65`. All original bank, 3 SVGs, student Practice 66/66 and question-only Selfchecks 16/16 preserved in source; 15 corrected D6 routes and formal trig clarifications rechecked in current-source Q18. No independent new NotebookLM verdict claimed.
+This appended current R06 section **supersedes historical R05/R06-numbering SHA descriptions in prior prose of this very file**; ONE V2 handoff is updated in-place. One effective learner `prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_NUMBERING_CONSISTENT_20261116.md` Git SHA `ab88d7ed3b52713e4a80779c22dc75a67c3cccb1`, composite Q18 AUTHOR_SELF_VERIFIED Git `19b65c2faf8db9480da401a6a8212c000c95d103`, A1–A7 SHA `df6ab630e8df5c08fd3fb1e77f963e0d9a362ffc`, original G11 46 canonical bank `256ceb5edc5e02aec320e83e99c8e08e035654f3`, index `d8279df37c9dcd74a0b26f0da389baf7d53ecf64`, NEW20 source `f83b285ff0c8f4e45b724cf06248935e5d618b65`. All original bank, 3 SVGs, student Practice 66/66 and question-only Selfchecks 16/16 preserved in source; 15 corrected D6 routes and formal trig clarifications rechecked in current-source Q18. No independent new NotebookLM verdict claimed.
 
 A former R05 ready manifest `THPT-TOPIC06-TRIGONOMETRY-FULL-R01.md` is to be archived as SUPERSEDED with preserved historical R05 source/blob evidence; a single new R06 ready + REGISTER points only to current R06. This is an AUTHORING-only `CONTENT_READY` source handoff under Q01–Q18 source self-QA; no protected RD1, no official Topic Readiness, Final Submit/Mastery score, website/Golden, production browser or release approval. RELEASE separately checks AP1–AP5/R1–R5/P1–P2 and requires explicit owner authorization. No merge/deploy.
 
