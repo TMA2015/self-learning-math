@@ -83,8 +83,16 @@ const blob=data=>{
    const b10Receipt=fs.readFileSync(root+
     "/prototypes/thpt/ux795/G10_CHIV_B10_S1_PED_SINGLE_CANONICAL_Q18_R01_20261118.md","utf8");
    const b10f=k=>b10Receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
-   assert.equal(blob(css),b10f("CSS_R01_SCOPED_B10_BLOB"),
-    "B10 scoped append must match signed one-lesson CSS SHA");
+   const cutB11=fullCss.indexOf("\n/* G10 Chapter IV B11 R01");
+   assert(cutB11>atB10&&fullCss.indexOf("\n/* G10 Chapter IV B11 R01",cutB11+1)===-1,
+    "B11 must be scoped append only, no global CSS mutation");
+   assert.equal(blob(fullCss.slice(0,cutB11)),b10f("CSS_R01_SCOPED_B10_BLOB"),
+    "B10 published CSS must remain byte-identical before B11");
+   const b11Receipt=fs.readFileSync(root+
+    "/prototypes/thpt/ux795/G10_CHIV_B11_S1_PED_CANONICAL_Q18_R01_20261118.md","utf8");
+   const b11f=k=>b11Receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(blob(css),b11f("CSS_B11_SCOPED_APPEND_BLOB"),
+    "B11 appended CSS must match signed exact Q18 source");
    assert(!fullCss.slice(atB10).includes("THPT-G10-CHV"),
     "B10 styles may not target Chapter V lesson");
    const cssText=css.toString("utf8"),cut=cssText.indexOf("/* G10 ChIV B07 R05");
