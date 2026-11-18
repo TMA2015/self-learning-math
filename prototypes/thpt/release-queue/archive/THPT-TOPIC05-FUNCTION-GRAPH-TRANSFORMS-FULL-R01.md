@@ -1,13 +1,14 @@
-# CĐ05 — Hàm số, đồ thị và phép biến đổi · AUTHORING CONTENT_READY R05 (stable packet R01)
+# HISTORICAL SOURCE R05 (SUPERSEDED; previous accepted authoring snapshot) — CĐ05 — Hàm số, đồ thị và phép biến đổi · AUTHORING CONTENT_READY R05 (stable packet R01)
 
 PACKET_ID: THPT-TOPIC05-FUNCTION-GRAPH-TRANSFORMS-FULL-R01
+ARCHIVED_20261118: superseded only by R06 current-source authoring; original R05 academic evidence remains signed to its own immutable Git SHA; no website release.
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: CONTENT_READY
+STATE: SUPERSEDED
 SOURCE_COMMIT: bc5640441698c1309edd03a51ba54c2fee06f4cb
 AUTHOR_PR: 824
 CURRENT_PR: #824 Draft AUTHORING, not merged/deployed
