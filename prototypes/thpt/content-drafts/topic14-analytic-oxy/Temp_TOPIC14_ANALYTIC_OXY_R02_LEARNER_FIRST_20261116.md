@@ -654,7 +654,7 @@ Parabol y²=4x và đường x=1 có bao nhiêu giao điểm?
 
 Có hai giao (1,2),(1,−2).
 
-**Nếu làm sai:** Nếu chỉ lấy y=2 vì quên dấu ± khi căn, quay lại hình parabol đối xứng qua Ox.
+**Nếu làm sai:** Nếu chỉ lấy y=2 vì quên dấu ± khi căn, xem lại tính đối xứng của elip qua trục Ox: cả (0,2) và (0,−2) đều thỏa phương trình.
 
 </details>
 
