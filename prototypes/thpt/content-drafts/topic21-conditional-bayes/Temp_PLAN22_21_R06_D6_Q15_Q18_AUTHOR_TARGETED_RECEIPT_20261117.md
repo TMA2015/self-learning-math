@@ -103,8 +103,8 @@ Source-verified learner patches were merged **in place** into original currently
 ## 18/11/2026 — owner-pasted independent D6/PED6 targeted clearance, exact Git source
 
 INDEPENDENT_TARGETED_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC21_R06_D6_INDEPENDENT_OWNER_PASTED_VERDICT_20261118.md
-INDEPENDENT_TARGETED_RECEIPT_BLOB: 798eb7d586711fd9ce5213b44e66fe4a0e751060
-INDEPENDENT_TARGETED_SOURCE_BLOB: aa325637f659bc5f8ba504530b72c0a41d
+INDEPENDENT_TARGETED_RECEIPT_BLOB: 06157b8c7e5873611b463f991620c466b72e2741
+INDEPENDENT_TARGETED_SOURCE_BLOB: aa325637f659bc5f8ba504f6ce0129e07340a41d
 INDEPENDENT_TARGETED_SCOPE: TOP21-O01_TO_O08_D6_PED6_ONLY
 INDEPENDENT_TARGETED_ACADEMIC: PASS
 INDEPENDENT_TARGETED_PED: PASS
@@ -117,4 +117,4 @@ MASTERY_ACTIVATION: NO
 
 The owner pasted a complete independent report with eight PASS outcome findings for O01–O08, eight knowledge destinations and eight visible practice routes. This is independent evidence **only for the eight first-try D6/PED6 recovery pathways**; three Written remediation paths remain covered by the separate signed author QA above and were not represented as newly independently reviewed. This exact learner SHA has 19 unique canonical IDs in the Q15 matrix; previous Q18 self-QA, original R04 academic signoff and A1–A7 evidence remain source-scoped and may be composed without transferring independent clearance to unrelated content.
 
-Metadata reconciliation: the reviewer labelled a 40-character Git blob SHA as SHA256 and used M01–M08 lesson labels, while the current V2 uses K01–K08. The eight canonical outcome IDs O01–O08 reconcile 1:1 against source, and both inconsistencies are documented without altering mathematics or IDs in the archival receipt. The review explicitly withheld system/RELEASE authorization. This authoring document does not by itself declare the whole Topic CONTENT_READY: one source-locked V2, current ready manifest, REGISTER and QA must reconcile before that designation.
+Metadata reconciliation: the reviewer gave a truncated 34-character value labelled SHA256 and used M01–M08 lesson labels, while the current V2 uses K01–K08. The eight canonical outcome IDs O01–O08 reconcile 1:1 against source, and both inconsistencies are documented without altering mathematics or IDs in the archival receipt. The review explicitly withheld system/RELEASE authorization. This authoring document does not by itself declare the whole Topic CONTENT_READY: one source-locked V2, current ready manifest, REGISTER and QA must reconcile before that designation.
