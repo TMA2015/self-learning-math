@@ -1,0 +1,45 @@
+# R03 — So sánh yêu cầu phương pháp trong đề thi và D4 đã duyệt; ứng viên phân loại trước Chuyên đề
+
+AUDIT_ID: SLM-SGK-WRITTEN-EXAM-COVERAGE-20261106
+EVIDENCE_PACKET: SLM-SGK-HN-GRADMOCK-2026-R03
+SCOPE: READ_ONLY_AUTHORING_ANALYSIS
+CANONICAL_TOTAL_LOCKED: 238
+ACADEMIC_RE_REVIEW: NO
+CANONICAL_ITEM_EDITS: 0
+FORMAL_COVERAGE_GAP: 0
+OWNER_APPROVAL_TO_ADD_ITEMS: NOT_REQUESTED
+TOPIC_REAL_PLACEMENT_IDS: NOT_ASSIGNED
+TOPIC_CONTENT_READY: NOT_CLAIMED
+RELEASE_AUTHORIZATION: NO
+
+## Why this comparison matters
+
+These four verified-copy graduation **mock** papers expose transfer demands beyond direct worked-example substitution. A same-method item is useful evidence of *prerequisite skill*, **not automatic proof that the student has independently rehearsed the entire new exam scenario**. Nor does the difference prove a gap: lesson D3, worked examples, feedback/remediation and other canonical practice items must be crosschecked first. This audit **does not regrade or question previous Academic/PED PASS**; it assesses curriculum-to-exam problem-type *placement breadth* only.
+
+| Method family, source locator | Exact frozen canonical evidence actually checked | Demonstrated in the old Written task / rubric | Extra exam transfer visible in 2026 mock | Status and next investigation |
+|---|---|---|---|---|
+| Two-variable constrained linear optimum · `HN-CL-2026-MOCK:III.C1` | `THPT-G10-CHII-W04-ANCHOR` in `docs/thpt-preview/thu-vien/tu-luan-chuong-ii.md` (Git blob `6ff217b4c24a248a8120bc1f964476b4966eca83`) | Model nonnegative/integer choices, intersect half-planes, enumerate polygon vertices, evaluate linear objective and check integrality; 7-point rubric includes interpretive conditions | Shipbuilding mixes labor-hour ceiling, cap on type-A output and minimum type-B output; same linear-program family, changed physical constraints | `METHOD_FAMILY_MATCH_CANDIDATE`; **no new Written indicated** by this one example. Need compare full D3 B04 before claiming full deployment |
+| Compound constrained counting · `HN-DOE-2026-MOCK:III.C2`, `HN-CL-2026-MOCK:III.C6`, `HN-NGT-2026-MOCK:III.C6` | `THPT-G10-CHVIII-W24-ANCHOR-01` in `docs/thpt-preview/thu-vien/tu-luan-chuong-viii.md` blob `e78c43ab7b2f6d3ab1b135d1ad09c7030df2c44e` | Select fixed numbers from **disjoint unordered groups**, then choose a leader, multiply stage counts; rubric explicitly distinguishes group selection and role allocation | Row+column constraints on 4×4 board; arranged seating with **relative order and gap counts**; selected number labels enforcing arithmetic-mean constraints. These are **different subtype families**, no equivalence assumed | `CROSS_METHOD_TRANSFER_RESEARCH_CANDIDATE`; inspect B23/B24 D3 plus Grade 10 chapter practice and further typical-school exams; **not `COVERAGE_GAP`** |
+| Continuous decay vs discrete threshold · `HN-DOE-2026-MOCK:III.C3` | `THPT-G11-CHVI-B21-W02-ANCHOR` in G11 ChVI approved source blob `17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872` | Exponential threshold `≥` versus `>` for **integer year** n; rubric checks monotonicity, domain n∈N and strictness | Infer continuous exponential decay rate from two observations, solve a **continuous-time** target threshold, interpret time/rounding and dosing condition | `SUBSKILL_ONLY`; inspect D3 B18–B21, continuous exponential and logarithm modeling before proposing any variant |
+| Arithmetic-series finance · `HN-DOE-2026-MOCK:III.C4` | `THPT-G11-CHII-W06-02-ANCHOR` in source-locked G11 ChII, plus `THPT-G11-CHVI-B18-W02-ANCHOR` | ChII cumulative arithmetic series, ChVI annual compound-interest model including explanation of lãi đơn vs lãi gộp | Interest based on decreasing **remaining loan principal**, constant principal repayment each month, and annual-to-monthly rate conversion | `METHOD_COMPONENTS_REHEARSED_COMPOSITE_PENDING`; not identical loan-amortization exercise; compare D3/real-context and G12 financial Topic scope separately |
+| Area between changing curves · `HN-DOE-2026-MOCK:III.C5` | `THPT-G12-B13-W03`, `THPT-G12-B13-W04` in approved G12 ChIV blob `45722cd386a498f3e0e96a09928c85565af56d1b` | Identify upper/lower graph, integrate their difference; W04 handles order swap and segmentation; existing /5 rubric checks intersections/sign/units | Infer **both parabola equations from coordinate grid** before choosing integration limits, account for shaded regions | `AREA_SUBSKILL_REHEARSED_GRAPH_RECONSTRUCTION_PENDING`; compare D3 B13 and coordinate graph reading |
+| Simple optimization vs multi-threshold business profit · `HN-NGT-2026-MOCK:III.C5`, `HN-CL-2026-MOCK:III.C5`, `HN-TL-2026-MOCK:III.C2,III.C3` | `THPT-G12-CHI-B02-W02` (rectangle optimization, open boundary, /4 rubric) and `THPT-G12-CHI-B05-W02` (marginal-vs-discrete cost, /4) from G12 ChI source blob `f0862dcdab21dec136e43969f45c42638e7c7574` | Build objective/domain, take derivative, inspect whether min/max is attained; differentiate marginal cost and finite difference, explain units and approximation | Price-demand elasticity, discrete production, tax and **piecewise cost break at 100 units** (NGT), compare discontinuity/threshold candidates | `SAME_OPT_FAMILY_DIFFERENT_MODEL_COMPLEXITY`; inspect all of D3 and applications B02/B05, then classify genuine combined-model practice breadth |
+| Spatial applied modeling · `HN-NGT-2026-MOCK:III.C2–C4`, `HN-CL-2026-MOCK:III.C3` | `THPT-G12-B08-W04` for scalar dot, `THPT-G12-B15-W02` for segment/parametric line, in G12 ChII blob `856a37bd16d2746ffc2e12906de18d1f4338a3b6` and ChV blob `11eb2834cfdb4a24685157f84666c2bb0767970a` | Explain dot products and directional vector from endpoints; written rubric asks distinction between infinite line and physical segment, no automatic Mastery | Determine stopping point on sphere; optimize tetrahedron volume with three perpendicular walls; locus-to-plane distance, requiring **composition** | `PARTIAL_METHOD_COMPONENTS_ONLY`; distinct 3D optimization types not presumed covered; compare D3 G12 B08/B14–B16 |
+| Oblique asymptote & extremum · `HN-TL-2026-MOCK:III.C1–C3` | `THPT-G12-CHI-B03-W02`, `THPT-G12-CHI-B02-W02` in G12 ChI source blob `f0862dcdab21dec136e43969f45c42638e7c7574` | Oblique remainder method and elementary constrained optimization concepts | Applied cubic profit and variable price scenarios; exam format demands compact result but students still need multistep derivation | `PREREQUISITE_METHOD_MATCH_CANDIDATE`; no gap verdict |
+
+## Shared bank ↔ future Topic path: pre-placement study, **not** Topic implementation
+
+The existing Project Source `08_THPT_DUAL_COMPLETE_LEARNING_PATHS_AND_SHARED_RESOURCES_v2.0.md` (owner-provided project authority, not a GitHub file link) concept is **one `ITEM_ID`**, with many `placement_id/role/level` values. These are *conceptual topic correlations only*, not definitive `topic_id` or new content and not a new standard. Native SGK Chuyên đề KNTT book samples supplied by owner show:
+
+- **G10 ChII `W04-ANCHOR`** (2-variable linear programming) ↔ KNTT **Chuyên đề học tập Toán 12, Chuyên đề 2, Bài 3** (quy hoạch tuyến tính, tập khả thi, mô hình hóa). Possible **prerequisite/shared practice candidate** only; Topic path must teach its own full knowledge.
+- **G12 ChI `B02-W02`** (one-variable derivative optimization) ↔ KNTT **Chuyên đề học tập Toán 12, Chuyên đề 2, Bài 4** (đạo hàm giải bài toán tối ưu thực tế); appropriate topic-activity candidate after outcome-level comparison.
+- **G10 ChVIII `W25-01`** (Newton binomial coefficients) ↔ KNTT **Chuyên đề học tập Toán 10, Chuyên đề 2, Bài 4 — Nhị thức Newton**; Topic may require deeper Pascal/proof than that canonical problem alone.
+- **G10 ChVII conics** ↔ KNTT **Chuyên đề học tập Toán 10, Chuyên đề 3, Bài 5–8** (elip, hyperbol, parabol, unified); *exact* item mapping remains on HOLD until outcome+method verification.
+- **G11 ChII `W06-02-ANCHOR`** (arithmetic sequence in context) ↔ KNTT **Chuyên đề học tập Toán 12, Chuyên đề 3 (tài chính, lãi suất/vay nợ)** as a general prerequisite, **not** a substitute for complete amortization knowledge.
+- **G10 ChVIII constrained counting** ↔ G12 Chuyên đề 1 discrete random variables/binomial distribution as foundational combinatorics only, not an equivalent stochastic-model item.
+
+**No topic_id/tag mutation performed.** SGK and Topic remain two complete independent journeys; Topic has exactly Kiến thức/Luyện tập/Tự kiểm tra, no Core. The user-supplied G11/G12 *sample* PDFs are incomplete (G11 ends mid-Topic 2; G12 ends mid-Topic 2); native full-book Topic PASS/coverage cannot be claimed from them. Neither Topic exercises nor exam questions have been copied.
+
+## Next gate
+
+Complete primary school/Sở source verification (four sources are visually inspected **mirrors**, not official issuer-confirmed files) and inspect D3 lesson/practice per identified outcome and at least two independent **ordinary Hanoi school semester** exams before proposing additions. Previously Academic/PED PASS remains intact; only new content if owner explicitly authorizes a justified minimal delta with targeted independent review.
