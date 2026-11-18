@@ -655,7 +655,7 @@ Một hình chữ nhật thật có thể hiện thành hình bình hành xiên 
 
 **Đề bài:** Cho A(0,0,0), B(2,0,0), C(2,1,1), D(0,1,1). Dưới T(x,y,z)=(x−z,y,0), chứng minh ảnh là hình bình hành không có góc vuông tại A′.
 
-**Lời giải:** Trong hình gốc AB=(2,0,0), AD=(0,1,1) có tích vô hướng 0, nên ABCD là hình chữ nhật (các cạnh đối song song). Ảnh: A′=(0,0,0), B′=(2,0,0), C′=(1,1,0), D′=(-1,1,0). Ta có A′B′=(2,0,0)=D′C′, A′D′=(-1,1,0)=B′C′ nên là hình bình hành. Nhưng A′B′·A′D′=−2≠0, góc A′ không vuông.
+**Lời giải:** Trong hình gốc \(\overrightarrow{AB}=(2,0,0)\), \(\overrightarrow{AD}=(0,1,1)\) có tích vô hướng \(\overrightarrow{AB}\cdot\overrightarrow{AD}=0\), nên ABCD là hình chữ nhật (các cạnh đối song song). Ảnh: A′=(0,0,0), B′=(2,0,0), C′=(1,1,0), D′=(-1,1,0). Ta có \(\overrightarrow{A′B′}=(2,0,0)=\overrightarrow{D′C′}\), \(\overrightarrow{A′D′}=(-1,1,0)=\overrightarrow{B′C′}\), nên ảnh là hình bình hành. Nhưng \(\overrightarrow{A′B′}\cdot\overrightarrow{A′D′}=-2\ne0\), do đó góc A′ không vuông.
 
 <!-- ITEM_ID: THPT-TOP15-T21; ROLE: TOPIC_FIRST_TRY; OUTCOME: TOP15-O21; PUBLIC_FORMATIVE_NO_MASTERY -->
 **Vận dụng**
@@ -1518,11 +1518,11 @@ A′=(0,0,0), B′=(4,2,0), M=(3,1,1) nên M′=(2,1,0), đúng trung điểm A�
 
 </details>
 
-<!-- CANONICAL_ITEM_ID: THPT-TOP15-W02; OUTCOME_ID: TOP15-O22; ROLE: TOPIC_WRITTEN; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
+<!-- CANONICAL_ITEM_ID: THPT-TOP15-W02; OUTCOME_ID: TOP15-O22; ROLE: TOPIC_WRITTEN; CONTENT_VERSION: 2; DELTA_C_VECTOR_DOT_PRODUCT_NOTATION_20261118; CANONICAL_ID_UNCHANGED -->
 **Tự luận 4.** Chứng minh phép chiếu T(x,y,z)=(x−z,y,0) biến hình chữ nhật ABCD với A(0,0,0), B(2,0,0), C(2,1,1), D(0,1,1) thành hình bình hành không có góc vuông tại A′.
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-AB·AD=0 và các cạnh đối tương ứng song song, xác lập ABCD là hình chữ nhật (1đ); tính A′(0,0),B′(2,0),C′(1,1),D′(−1,1) (1đ); A′B′∥C′D′ và A′D′∥B′C′ (1đ); A′B′·A′D′=−2≠0, nên góc A′ không vuông (1đ). Không suy vuông góc từ hình biểu diễn.
+\(\overrightarrow{AB}\cdot\overrightarrow{AD}=0\) và các cạnh đối tương ứng song song, xác lập ABCD là hình chữ nhật (1đ); tính A′(0,0), B′(2,0), C′(1,1), D′(−1,1) (1đ); \(A′B′\parallel C′D′\) và \(A′D′\parallel B′C′\) (1đ); \(\overrightarrow{A′B′}\cdot\overrightarrow{A′D′}=-2\ne0\), nên góc A′ không vuông (1đ). Không suy vuông góc từ hình biểu diễn.
 
 </details>
 
