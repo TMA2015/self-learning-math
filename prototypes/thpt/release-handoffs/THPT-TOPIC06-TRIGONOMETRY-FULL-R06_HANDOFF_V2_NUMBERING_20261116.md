@@ -1,9 +1,11 @@
-# AUTHORING CĐ06 — Lượng giác và phương trình lượng giác · V2 current learner R05
+# AUTHORING CĐ06 — Lượng giác và phương trình lượng giác · ONE current R06 V2
 
-PACKET_ID: THPT-TOPIC06-TRIGONOMETRY-FULL-R01
+PACKET_ID: THPT-TOPIC06-TRIGONOMETRY-FULL-R06
 CONTENT_REVISION: R06
-AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_NUMBERING_ONLY_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: 7d99ab5776209c83be67bf1265bdbebd70b05d44
+AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_A1_A7_CURRENT_SOURCE_QA_20261118.md
+AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_A1_A7_CURRENT_SOURCE_QA_20261118.md
+AUTHOR_METADATA_BLOB: 2e9ffd902ced73dfc51683bfde6d94c4494212e3
+AUTHOR_A1_A7_BLOB: 2e9ffd902ced73dfc51683bfde6d94c4494212e3
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
@@ -11,9 +13,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: fc5937c96c811364f551a895c7c24d21cbc3cc86
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC06_R06_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: 879ad8bf09e1b5f5efd33c8266a021d9d9638df8
+ACADEMIC_SOURCE_BLOB: ab88d7ed3b52713e4a80779c22dc75a67c3cccb1
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC06_R06_COMPOSITE_Q18_AUTHOR_SELF_QA_20261118.md
+REVIEW_RECEIPT_BLOB: 22322daefe587a52314a59825c39e5f8f6af10ec
 PUBLIC_ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHI_B01_B04_CONCEPT_FIRST_PED_R03_SOURCE_CANDIDATE_20261102.md
 PUBLIC_ORIGINAL_SGK_SOURCE_BLOB: 256ceb5edc5e02aec320e83e99c8e08e035654f3
 PUBLIC_ORIGINAL_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC06_TRIGONOMETRY_ORIGINAL46_CANONICAL_INDEX_R01_20261112.md
@@ -312,3 +314,10 @@ Q18 author proof is 16 outcomes, 66 original records string parity, and 54 direc
 - AUTHORING-only academic package: no merge/deploy, no runtime built, no official RD1, no browser proof.
 - RELEASE must independently verify Q15/Q16 Final Submit, no pre-submit key/hint/AI/correctness, zero Mastery writes from exposed items, R1–R5, AP1–AP5, Golden responsiveness, exact HEAD CI and owner permission.
 - P1 website published and P2 real-device Safari unverified. Source handoff cannot claim those states.
+## CURRENT R06 exact-source custody closure — 18/11/2026
+
+This appended current R06 section **supersedes historical R05/R06-numbering SHA descriptions in prior prose of this very file**; ONE V2 handoff is updated in-place. One effective learner `prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_NUMBERING_CONSISTENT_20261116.md` Git SHA `ab88d7ed3b52713e4a80779c22dc75a67c3cccb1`, composite Q18 AUTHOR_SELF_VERIFIED Git `22322daefe587a52314a59825c39e5f8f6af10ec`, A1–A7 SHA `2e9ffd902ced73dfc51683bfde6d94c4494212e3`, original G11 46 canonical bank `256ceb5edc5e02aec320e83e99c8e08e035654f3`, index `d8279df37c9dcd74a0b26f0da389baf7d53ecf64`, NEW20 source `f83b285ff0c8f4e45b724cf06248935e5d618b65`. All original bank, 3 SVGs, student Practice 66/66 and question-only Selfchecks 16/16 preserved in source; 15 corrected D6 routes and formal trig clarifications rechecked in current-source Q18. No independent new NotebookLM verdict claimed.
+
+A former R05 ready manifest `THPT-TOPIC06-TRIGONOMETRY-FULL-R01.md` is to be archived as SUPERSEDED with preserved historical R05 source/blob evidence; a single new R06 ready + REGISTER points only to current R06. This is an AUTHORING-only `CONTENT_READY` source handoff under Q01–Q18 source self-QA; no protected RD1, no official Topic Readiness, Final Submit/Mastery score, website/Golden, production browser or release approval. RELEASE separately checks AP1–AP5/R1–R5/P1–P2 and requires explicit owner authorization. No merge/deploy.
+
+AUTHOR_SIGNOFF: TOP06_R06_CURRENT_V2_LOCKED_Q18_A1_CANONICAL_20261118
