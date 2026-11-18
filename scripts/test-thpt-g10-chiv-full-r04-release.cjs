@@ -269,8 +269,12 @@ for(const [tag,rec]of Object.entries(transfer)){
     // from Discovery to Golden Tab3, not removed or duplicated. Exact source SHA.
     const r=read("prototypes/thpt/ux795/G10_CHIV_B10_S1_PED_SINGLE_CANONICAL_Q18_R01_20261118.md");
     const field=k=>r.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
-    assert.equal(sha(modelB),field("R01_SOURCE_BLOB"),
-     "River D2 can move only under signed B10 one-canonical source");
+    const r02=read("prototypes/thpt/ux795/G10_CHIV_B10_P2_MATHJAX_DELTA_A_UI_R02_20261118.md");
+    const f02=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    assert.equal(f02("BASELINE_R01_SOURCE_BLOB"),field("R01_SOURCE_BLOB"),
+     "River D2 must preserve immutable R01 B10 source prior to UI correction");
+    assert.equal(sha(modelB),f02("R02_SOURCE_BLOB"),
+     "River D2 remains signed in the single current B10 P2 MathJax source");
     const example=modelB.split('=== "Ví dụ"')[1]?.split('=== "Lỗi thường gặp"')[0]||"";
     assert(example.includes("### 3.4. Ví dụ 4 — Qua sông")&&
      example.includes("96")&&example.includes("THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg")&&
