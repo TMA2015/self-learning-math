@@ -1,4 +1,4 @@
-# CĐ21 · Single source-equivalent learner R05 HANDOFF V2 · 16/11/2026
+# CĐ21 · Single effective R06 in-place learner HANDOFF V2 · updated 18/11/2026
 
 PACKET_ID: TOP21-CONDITIONAL-BAYES-R05-20261116
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -9,10 +9,10 @@ Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_LEARNER_PRESENTATION_20261116.md
 ACADEMIC_SOURCE_BLOB: aa325637f659bc5f8ba504f6ce0129e07340a41d
 REVIEW_RECEIPT_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R06_D6_Q15_Q18_AUTHOR_TARGETED_RECEIPT_20261117.md
-REVIEW_RECEIPT_BLOB: 062927424ab6d58b8560def38819de3663328e11
-ACADEMIC_VERDICT: AUTHOR_SELF_VERIFIED_MATH_UNCHANGED_ONLY
-PEDAGOGICAL_VERDICT: TARGETED_AUTHOR_SELF_QA_ONLY; INDEPENDENT_PED_PENDING
-BLOCKERS: AFFECTED_DELTA_C_PED_INDEPENDENT_REVIEW_PENDING; CURRENT_CONTENT_READY_NOT_APPROVED
+REVIEW_RECEIPT_BLOB: 5424680e709efc849a967ad00e6ef6292e1a8f0f
+ACADEMIC_VERDICT: AUTHOR_SELF_VERIFIED_FULL_TOPIC_BASE_WITH_EXACT_SOURCE_Q15_Q18_QA; INDEPENDENT_D6_AFFECTED_ONLY_PASS
+PEDAGOGICAL_VERDICT: AUTHOR_SELF_VERIFIED_WHOLE_TOPIC; INDEPENDENT_D6_PED6_8_OF_8_PASS
+BLOCKERS: NONE_AUTHORING_CONTENT; FINAL_HEAD_CI_PENDING
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 MASTERY_ACTIVATION: NO
@@ -20,13 +20,13 @@ RELEASE_AUTHORIZATION: NO
 PRIVATE_RD1_COUNT: 8
 PRIVATE_RD1_SHA256: c4242630d329f794e570cc406939fd85d5f65302b8b286ddcd2c74e8220a2e3b
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_A1_A7_TECHNICAL_SOURCE_PARITY_20261116.md
-AUTHOR_A1_A7_BLOB: da80aa915b21d2ed2ea474602b31e331e4fafa05
+AUTHOR_A1_A7_BLOB: db9d9ba30a0176263c39d4929fb28a7575883a0c
 
 CONTENT_REVISION: R06_IN_PLACE
 ORIGINAL_IMMUTABLE_R04_SOURCE_BLOB: 2fa6557286aba05dd0eea972d4c4ac68371842d7
 ORIGINAL_IMMUTABLE_R04_RECEIPT_BLOB: 3dec04e92a96d24b4b77ebda144bc1ca80b8f1f8
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_A1_A7_TECHNICAL_SOURCE_PARITY_20261116.md
-AUTHOR_METADATA_BLOB: da80aa915b21d2ed2ea474602b31e331e4fafa05
+AUTHOR_METADATA_BLOB: db9d9ba30a0176263c39d4929fb28a7575883a0c
 
 ## R05_CURRENT_SOURCE_AND_EQUIVALENT_DELTA
 
@@ -107,14 +107,14 @@ Eight candidate unseen private questions, one per TOP21 outcome, questions separ
 
 | item_id | primary_outcome | role | source_type | status |
 |---|---|---|---|---|
-| `THPT-TOP21-T01` | `TOP21-O01` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_TOP21-R01 |
-| `THPT-TOP21-T02` | `TOP21-O02` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_TOP21-R01 |
-| `THPT-TOP21-T03` | `TOP21-O03` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_TOP21-R01 |
-| `THPT-TOP21-T04` | `TOP21-O04` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_TOP21-R01 |
-| `THPT-TOP21-T05` | `TOP21-O05` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_TOP21-R01 |
-| `THPT-TOP21-T06` | `TOP21-O06` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_TOP21-R01 |
-| `THPT-TOP21-T07` | `TOP21-O07` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_TOP21-R01 |
-| `THPT-TOP21-T08` | `TOP21-O08` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_TOP21-R01 |
+| `THPT-TOP21-T01` | `TOP21-O01` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_TOP21-R06 |
+| `THPT-TOP21-T02` | `TOP21-O02` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_TOP21-R06 |
+| `THPT-TOP21-T03` | `TOP21-O03` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_TOP21-R06 |
+| `THPT-TOP21-T04` | `TOP21-O04` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_TOP21-R06 |
+| `THPT-TOP21-T05` | `TOP21-O05` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_TOP21-R06 |
+| `THPT-TOP21-T06` | `TOP21-O06` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_TOP21-R06 |
+| `THPT-TOP21-T07` | `TOP21-O07` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_TOP21-R06 |
+| `THPT-TOP21-T08` | `TOP21-O08` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_TOP21-R06 |
 | `THPT-TOP21-P01` | `TOP21-O01` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | VERIFIED_TOP21-R03 |
 | `THPT-TOP21-P02` | `TOP21-O02` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | VERIFIED_TOP21-R03 |
 | `THPT-TOP21-P03` | `TOP21-O03` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | VERIFIED_TOP21-R03 |
@@ -123,9 +123,9 @@ Eight candidate unseen private questions, one per TOP21 outcome, questions separ
 | `THPT-TOP21-P06` | `TOP21-O06` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | VERIFIED_TOP21-R03 |
 | `THPT-TOP21-P07` | `TOP21-O07` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | VERIFIED_TOP21-R03 |
 | `THPT-TOP21-P08` | `TOP21-O08` | TOPIC_PRACTICE | TOPIC_NEW_CANDIDATE | VERIFIED_TOP21-R03 |
-| `THPT-TOP21-W01` | `TOP21-O02` | TOPIC_WRITTEN | TOPIC_NEW_CANDIDATE | VERIFIED_TOP21-R03 |
-| `THPT-TOP21-W02` | `TOP21-O06` | TOPIC_WRITTEN | TOPIC_NEW_CANDIDATE | VERIFIED_TOP21-R03 |
-| `THPT-TOP21-W03` | `TOP21-O08` | TOPIC_WRITTEN | TOPIC_NEW_CANDIDATE | VERIFIED_TOP21-R03 |
+| `THPT-TOP21-W01` | `TOP21-O02` | TOPIC_WRITTEN | TOPIC_NEW_CANDIDATE | VERIFIED_TOP21-R06 |
+| `THPT-TOP21-W02` | `TOP21-O06` | TOPIC_WRITTEN | TOPIC_NEW_CANDIDATE | VERIFIED_TOP21-R06 |
+| `THPT-TOP21-W03` | `TOP21-O08` | TOPIC_WRITTEN | TOPIC_NEW_CANDIDATE | VERIFIED_TOP21-R06 |
 
 **Q15 canonical control:** Nineteen unique active TOP21 items, each exactly once in one source, with one main outcome and complete answer/rubric. Eight old G12 external/legacy bank references from past planning are **not placed**; any historic collision is outside this source's active canonical set and would require separate validation only before optional reuse. The self-check references P01–P08 as reuse-only public formative placements, not clones or official testing items.
 
@@ -167,3 +167,26 @@ AUTHORING verifies R05 source-equiv student headings + eight actual public selfc
 - This **same V2 handoff path** now points to current learner Git blob `aa325637f659bc5f8ba504f6ce0129e07340a41d` with exact current Q15/Q18 author-targeted receipt `062927424ab6d58b8560def38819de3663328e11` and A1 source custody `da80aa915b21d2ed2ea474602b31e331e4fafa05`. Previously signed source `65938a700e0da630694e9cbb6e636d337e67aeb5`, receipt `aa3e00f55eb8f6930e23e9b15bbba3ba2d8e972a` and metadata `fce97e1d11a803f234e62ec5c05b9cd2f77af540` are *historic*, not parallel live handoffs.
 - The effective learner file keeps existing original filename while learner content was edited in-place under version `R06_IN_PLACE`; no alternate learner Markdown and no new canonical bank. 10/10 Q15 item/version/placement assertions and V2 intake on current branch passed after archival of historical ready manifests; mathematical stems, solutions and rubrics unaffected.
 - This is a staged **AUTHORING-only V2 with explicit BLOCKER**, not a `ready/` acceptance: targeted D6 pedagogy is DELTA_C and needs affected-scope independent review before Academic+PED CONTENT_READY can be granted. Do not restore superseded historical ready manifests, leak private RD1, record Mastery, merge or deploy.
+
+## EFFECTIVE R06 AUTHORING INDEPENDENT REVIEW RECONCILIATION (18/11/2026)
+
+CURRENT_LEARNER_SOURCE_BLOB: aa325637f659bc5f8ba504530b72c0a41d
+CURRENT_Q18_AUTHOR_RECEIPT_BLOB: 5424680e709efc849a967ad00e6ef6292e1a8f0f
+CURRENT_A1_A7_BLOB: db9d9ba30a0176263c39d4929fb28a7575883a0c
+CURRENT_Q15_MATRIX_BLOB: 522d13493d18ec53280a752dc5498e92c8896805
+TARGETED_INDEPENDENT_REVIEW_PATH: prototypes/thpt/review-packets/Temp_TOPIC21_R06_D6_INDEPENDENT_OWNER_PASTED_VERDICT_20261118.md
+TARGETED_INDEPENDENT_REVIEW_BLOB: 798eb7d586711fd9ce5213b44e66fe4a0e751060
+TARGETED_REVIEW_SCOPE: TOP21-O01_TO_O08_D6_ONLY
+TARGETED_REVIEW_ACADEMIC_PED: PASS_PASS
+TARGETED_REVIEW_FINDINGS: P0_0_P1_0_P2_0_MINIMAL_DELTA_NONE
+AUTHOR_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED_FULL_TOPIC_WITH_INDEPENDENT_D6_DELTA_RECEIPT
+CUSTODY: ONE_LEARNER_SOURCE_19_PUBLIC_CANONICAL_8_PUBLIC_P_REPLAY_8_PRIVATE_RD1_HASH_ONLY
+ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
+OFFICIAL_READINESS: NOT_CLAIMED
+RELEASE_AUTHORIZATION: NO
+
+This is the **single active V2 handoff**, retaining its original path for the in-place revised source. The 8/8 owner-pasted independent reviewer findings concern only corrected D6/PED6 paths. Original signed R04 self-QA and R05 technical math source-equivalence, updated author target-scope receipt, 19/19 current Q15 mapping and A1–A7 custody together establish the broader AUTHORING basis. No independent PASS is claimed for 3 Written D6 routes, unrelated canonical items, private held-out tests or runtime.
+
+Canonical actual marker versions: T01–T08 = TOP21-R06; P01–P08 = TOP21-R03; W01–W03 = TOP21-R06. The eight public end-of-Topic repetitions reuse P01–P08 question-only, not a second question bank. Current textual lesson identity remains the V2 K01–K08 mapping; reviewer M01–M08 are noncanonical review labels, documented without re-ID.
+
+Historical R05 and any old trailing sentences claiming independent PED_PENDING or R05 ready are superseded by this **effective R06 reconciliation and top metadata**. Only an actual current ready/REGISTER and exact final SHA QA can close authoring packaging; RELEASE still owns AP1–AP5/R1–R5, Final Submit, site QA and explicit owner permission.
