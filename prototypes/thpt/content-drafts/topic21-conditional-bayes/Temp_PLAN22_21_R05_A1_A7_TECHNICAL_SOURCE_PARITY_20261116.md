@@ -4,7 +4,9 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_LEARNER_PRESENTATION_20261116.md
-SOURCE_BLOB: 65938a700e0da630694e9cbb6e636d337e67aeb5
+SOURCE_BLOB: aa325637f659bc5f8ba504f6ce0129e07340a41d
+CURRENT_Q18_RECEIPT_BLOB: 062927424ab6d58b8560def38819de3663328e11
+CURRENT_Q15_MATRIX_BLOB: 522d13493d18ec53280a752dc5498e92c8896805
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 A1_A7_AUTHOR_VERDICT: TECHNICAL_PARITY_PASS_R05__R04_ACADEMIC_AUTHOR_SELF_QA_FROZEN
@@ -55,3 +57,8 @@ Both have literal accessible `<title>` and `<desc>`, mathematical correct branch
 ## AUTHOR_SIGNOFF
 
 I have inspected the final R04 student source after canonical version lock, checked complete conditions/constraints, read all eight discovery–formal–worked-example–first-try teaching sequences and each Practice/Written explanation and rubric, recomputed 45 distinct public probability relations, verified the two SVG source descriptions, and separated eight independent private candidate questions from public material. **No identified academic/pedagogical P0/P1** remains in this *declared source packet*. This is Q18 **AUTHOR_SELF_VERIFIED** under the owner-effective single Q01–Q18 standard, **not** an independent NotebookLM reviewer result and not website RELEASE sign-off. No merge/deploy, official Readiness or Mastery.
+
+## 18/11/2026 · current in-place source A1–A7 scope
+
+- Current learner Git source `aa325637f659bc5f8ba504f6ce0129e07340a41d`, historical accepted original source `65938a700e0da630694e9cbb6e636d337e67aeb5` kept in Git history only, no second current lesson file. 19/19 item ID/outcome/role/version and actual source line pointers checked against Q15 matrix `522d13493d18ec53280a752dc5498e92c8896805`; updated scoped Q18 `062927424ab6d58b8560def38819de3663328e11` confirms Q08/PED6 remediation and original question/answer/rubric math are preserved.
+- Q15 source-owner/line-count error is CLOSED. Material self-remediation DELTA_C is still `AUTHOR_SELF_VERIFIED`, so final readiness must obtain affected-scope independent PED review and exact one current V2/ready/REGISTER chain. Do not reuse old SOURCE_EQUIVALENT academic verdict as a current full-Topic PASS. No official RD1/Final Submit/Skill Mastery or deployment.
