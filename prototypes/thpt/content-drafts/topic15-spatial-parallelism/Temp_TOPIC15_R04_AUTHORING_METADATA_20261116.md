@@ -3,7 +3,7 @@
 `STANDARD_ID=SLM-THPT-QUALITY-ONE` · `STANDARD_VERSION=3.1.0` · `CATALOG_TOPIC_ID=CD15` · `RUNTIME_TOPIC_ID=UNASSIGNED_OWNER_DECISION` (catalogue number is production sequence, not a website route)
 
 **Nguồn SGK**: G11 ChIV B10–B14 R03, Git blob `e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b`, 40 original canonical questions source-exact display-only in learner Practice; canonical owner remains SGK.
-**Nguồn Topic R04**: `Temp_TOPIC15_SPATIAL_PARALLELISM_R04_LEARNER_FIRST_20261116.md` Git blob `36e94c3752ff2315907a6f3424daa6fa25f80938`. Model R01 blob `3f3c75765b6cddcaa53994027c45e79701d4d840`.
+**Nguồn Topic R04**: `Temp_TOPIC15_SPATIAL_PARALLELISM_R04_LEARNER_FIRST_20261116.md` Git blob `6579363666f07f13cf5c7e407b311a08f1e700e2`. Model R01 blob `cf6510d5d964958982fae3ebce5823e35aeac639`.
 **TOTAL_PUBLIC_UNIQUE_ID_COUNT**: 89 = 40 old SGK + 22 Topic First Try + 22 Topic Practice +5 Written. Public Self Check 8 reuses = **0 extra IDs**. No RD1 bank imported.
 
 PACKET_ID: THPT-TOPIC15-SPATIAL-PARALLELISM-FULL-R04
@@ -15,14 +15,14 @@ Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 CATALOG_TOPIC_ID: CD15
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_SPATIAL_PARALLELISM_R04_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 36e94c3752ff2315907a6f3424daa6fa25f80938
-SOURCE_BLOB: 36e94c3752ff2315907a6f3424daa6fa25f80938
+ACADEMIC_SOURCE_BLOB: 6579363666f07f13cf5c7e407b311a08f1e700e2
+SOURCE_BLOB: 6579363666f07f13cf5c7e407b311a08f1e700e2
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHIV_B10_B14_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md
 ORIGINAL_SGK_SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b
 INTERACTIVE_MODEL_ID: SLM-TOP15-LINE-PLANE-R00
 INTERACTIVE_MODEL_VERSION: R01
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_THPT_TOPIC15_LINE_PLANE_RELATION_R01_20261113.html
-INTERACTIVE_MODEL_BLOB: 3f3c75765b6cddcaa53994027c45e79701d4d840
+INTERACTIVE_MODEL_BLOB: cf6510d5d964958982fae3ebce5823e35aeac639
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
@@ -237,13 +237,21 @@ Each SVG is an exact textual extraction (trailing newline only) from five embedd
 - Q18 author self-verification is documented in a separate SHA-locked receipt; this metadata is NOT an independent NotebookLM academic verdict.
 ## 18/11/2026 — effective editorial and knowledge-recall source audit
 
-- Current one learner source Git blob `36e94c3752ff2315907a6f3424daa6fa25f80938`; immediate pre-edit learner `8270cfa8dc691f21ad5b251ffa0d6f4be82dd570`; original Q18 signed 16/11 exact baseline `581ff0b0c019a705d36f306d7d5b0db38d185c0b` remains immutable and its 102 structural/math checks are not new checks on the present source.
+- Current one learner source Git blob `6579363666f07f13cf5c7e407b311a08f1e700e2`; immediate pre-edit learner `8270cfa8dc691f21ad5b251ffa0d6f4be82dd570`; original Q18 signed 16/11 exact baseline `581ff0b0c019a705d36f306d7d5b0db38d185c0b` remains immutable and its 102 structural/math checks are not new checks on the present source.
 - Audit original Q18 learner vs pre-edit revealed only 10 line-level differences: three pre-Luyện tập language/MathJax render clarifications (wording Em rather than Học sinh; backticks to MathJax for geometry parameters; remove technical figure comment), and seven **selfcheck numbering duplicate** forms `Câu n. Bài k.` → `Câu n.` while preserving the questions. No answer/key/rubric/canonical ID change. Current change adds **one four-bullet learner recall** about plane conditions, coplanarity/skew vs parallel, distinct line–plane criteria, and projection invariants.
 - Direct mathematical check: the optional line `(a,b,c)+t(u,v,w)` intersects z=0 at t=−c/w when w≠0; if w=0 then c=0 contained, c≠0 disjoint parallel. Three noncollinear points determine a plane. A skew pair cannot be parallel because not coplanar. A parallel projection preserves line collinearity/affine ratios but generally not orthogonality.
 - Complete 89 public item identities (40 SGK +49 Topic), full 67 Practice and 8 public selfcheck stems, detailed solutions/5 Written rubric and 5 SVG paths preserved from immediate predecessor, except already documented selfcheck *display labels* from signed initial R04. `DELTA_C_ACADEMIC_MATERIAL` for this learner recap, scoped author self-QA, not new NotebookLM Topic reviewer PASS. No official RD1 or release authority.
 
 ## R04_LEARNER_FIRST_DELTA_AND_Q15_LOCK
 
-R04 AUTHORING source `36e94c3752ff2315907a6f3424daa6fa25f80938` with 22 numbered Knowledge outcomes (five groups, 1.1…5.5), 22 discovery questions and reasoned examples before formal maths, 22 Vận dụng/Đối chiếu and D6; 67 learner-visible Practice: 30 SGK D3 +10 original SGK Written (source-exact) +22 new Topic Practice +5 Topic Written (keys unchanged), eight P-ID-reused question-only public selfchecks. All 89 item-outcome rows preserved; historical R02 blob `ab4bd6a9f40b4925da35b725ccf396cd3c4eae9b` immutable, R03 editorial candidate `4a5a0c1fd140aab342737f6bde95e37b79237d80` not automatically promoted. R04 Delta C exact maths/ped author self QA: 52 direct source/parity +50 numerical/geometric checks PASS; 5 original SVGs and one Canvas model unchanged, browser QA not claimed. S1 only historical owner-verified printed-page receipt (SGK G11 ChIV, SBT ChIV); no fresh scan.
+R04 AUTHORING source `6579363666f07f13cf5c7e407b311a08f1e700e2` with 22 numbered Knowledge outcomes (five groups, 1.1…5.5), 22 discovery questions and reasoned examples before formal maths, 22 Vận dụng/Đối chiếu and D6; 67 learner-visible Practice: 30 SGK D3 +10 original SGK Written (source-exact) +22 new Topic Practice +5 Topic Written (keys unchanged), eight P-ID-reused question-only public selfchecks. All 89 item-outcome rows preserved; historical R02 blob `ab4bd6a9f40b4925da35b725ccf396cd3c4eae9b` immutable, R03 editorial candidate `4a5a0c1fd140aab342737f6bde95e37b79237d80` not automatically promoted. R04 Delta C exact maths/ped author self QA: 52 direct source/parity +50 numerical/geometric checks PASS; 5 original SVGs and one Canvas model unchanged, browser QA not claimed. S1 only historical owner-verified printed-page receipt (SGK G11 ChIV, SBT ChIV); no fresh scan.
 
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC15_R04_AUTHOR_SELF_QA_RECEIPT_20261116.md
+
+
+## 18/11/2026 — Final effective source, W02 canonical version 2 and model visual SHA custody
+
+- Current **single effective learner** Git blob `6579363666f07f13cf5c7e407b311a08f1e700e2` supersedes R04 learner `36e94c3752ff2315907a6f3424daa6fa25f80938` for **two** mathematical notation lines only, O21 example and source-owned Written `THPT-TOP15-W02` /7? **Actual W02 rubric has four criteria, 1 point each = 4 points** (not /7): case `AB·AD=0` was invalid as scalar lengths, now explicitly `\\overrightarrow{AB}\\cdot\\overrightarrow{AD}=0` and `\\overrightarrow{A′B′}\\cdot\\overrightarrow{A′D′}=-2`. Numerically `(2,0,0)·(0,1,1)=0`; projected `(2,0,0)·(-1,1,0)=-2`. The original four rubric criteria and point allocation **1+1+1+1=4** remain; `item_id=THPT-TOP15-W02` unchanged, canonical `content_version=2` recorded on the one effective learner source; no duplicate body/key/version in a second bank. This is affected `DELTA_C_ACADEMIC_MATERIAL` notation/math meaning; source math/PED author self verified, no external reviewer required for deterministic dot products.
+- **Model SHA drift provenance** independently compared full Git blob `3f3c75765b6cddcaa53994027c45e79701d4d840` (100 lines) with actual current model file `cf6510d5d964958982fae3ebce5823e35aeac639` (117 lines). The entire diff is **CSS-only**: 17 extra styles/tokens using Golden UI, while all HTML/JS Canvas/math logic lines are byte-identical. Current model on branch has Git `cf6510d5d964958982fae3ebce5823e35aeac639`; old original SHA remains historical reference only. `DELTA_A_UI` on model, not an academic/math Delta C; browser integration AP remains RELEASE gate.
+- S1 original SGK G11 ChIV owner branch [PR #705](https://github.com/TMA2015/self-learning-math/pull/705) source actual `e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b` direct verified on sibling Draft. No duplicate SGK item/key/rubric created. Current five original SVG Git blobs match source exactly; 22 outcomes, 89 canonical IDs, 67 Practice and 8 question-only replays remain from previous accepted learner snapshot.
+- Prior R02 `ready/` manifest Git blob `6aafb53867cb699a7b270aecb9e165be3b6cc1b1` is byte-identical in `prototypes/thpt/release-queue/archive/THPT-TOPIC15-SPATIAL-PARALLELISM-FULL-R02_HISTORICAL_SIGNED_20261118.md`, removed from current `ready/`. R02 source/Q18 history untouched. One effective R04 ready/REGISTER after current SHA lock; no official Readiness/Final Submit/Mastery, merge or deploy.
