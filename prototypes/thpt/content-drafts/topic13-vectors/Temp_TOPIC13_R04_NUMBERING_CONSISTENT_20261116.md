@@ -2,7 +2,7 @@
 
 Từ mũi tên chỉ hướng trên mặt phẳng, em sẽ hiểu phép cộng, trừ và nhân vectơ trước khi tính bằng tọa độ. Các ví dụ về chuyển động, lực và hình không gian cho thấy một vectơ luôn mô tả cả độ lớn lẫn hướng. Em hãy tự giải câu Vận dụng rồi mở Đối chiếu; kiến thức về tọa độ Oxy và Oxyz được giải thích tại chỗ, không đòi học một chuyên đề khác trước.
 
-<!-- CROSS_BRANCH_G10_SGK_SOURCE: PR750; G10_SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9; G12_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; NEW20_BANK_BLOB: e2f71e56479a08c4f8bb5f949d4ed8e249983cd6 -->
+<!-- CROSS_BRANCH_G10_SGK_SOURCE: PR750; G10_SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9; G12_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; NEW20_BANK_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563 -->
 <!-- AUTHORING_R03_CANDIDATE; R02_ORIGINAL_BLOB=d351c5aec660d6482f6694becbd3e2567a14edbf; NO_MERGE_DEPLOY -->
 
 # Kiến thức
@@ -450,7 +450,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 **Đề:** Theo định nghĩa, vectơ $\overrightarrow{AB}$ có điểm đầu và điểm cuối là gì?
 
 **Lựa chọn:** A. Đầu B, cuối A ; B. Đầu A, cuối B ; C. Cả hai đầu tại A ; D. Chỉ có độ dài mà không có hướng
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** B
 
@@ -464,7 +464,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 
 ### Bài SGK 2
 **Đề:** Cho $AB=7\,\mathrm{cm}$. Tính độ dài của $\overrightarrow{BA}$.
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 7 cm
 
@@ -480,7 +480,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 **Đề:** Cho hình bình hành $ABCD$ theo thứ tự. Vectơ nào luôn bằng $\overrightarrow{AB}$?
 
 **Lựa chọn:** A. $\overrightarrow{DC}$ ; B. $\overrightarrow{CD}$ ; C. $\overrightarrow{BA}$ ; D. $\overrightarrow{AD}$
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** A
 
@@ -496,7 +496,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 **Đề:** Theo quy ước SGK/SBT KNTT, phát biểu nào đúng về vectơ-không $\vec0$?
 
 **Lựa chọn:** A. Có độ dài 1 ; B. Có điểm đầu và cuối khác nhau ; C. Không có bất kỳ quy ước nào về cùng phương ; D. Độ dài 0, được quy ước cùng hướng với mọi vectơ
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** D
 
@@ -512,7 +512,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 **Đề:** Với ba điểm A, B, C bất kì, $\overrightarrow{AB}+\overrightarrow{BC}$ bằng vectơ nào?
 
 **Lựa chọn:** A. $\overrightarrow{AC}$ ; B. $\overrightarrow{CA}$ ; C. $\overrightarrow{CB}$ ; D. $\vec0$ (luôn đúng)
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** A
 
@@ -526,7 +526,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 
 ### Bài SGK 6
 **Đề:** Rút gọn $\overrightarrow{AB}+\overrightarrow{BA}$.
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** $\vec0$
 
@@ -540,7 +540,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 
 ### Bài SGK 7
 **Đề:** Rút gọn $\overrightarrow{AB}-\overrightarrow{AC}$.
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** $\overrightarrow{CB}$
 
@@ -554,7 +554,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 
 ### Bài SGK 8
 **Đề:** Cho G là trọng tâm tam giác ABC. Rút gọn $\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}$.
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** $\vec0$
 
@@ -570,7 +570,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 **Đề:** Cho $\vec u\ne\vec0$, $|\vec u|=4$ cm, $\vec v=-2\vec u$. Phát biểu nào đúng?
 
 **Lựa chọn:** A. $|\vec v|=-8$ cm; B. $|\vec v|=8$ cm và ngược hướng $\vec u$; C. $|\vec v|=2$ cm; D. $\vec v$ cùng hướng $\vec u$.
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** B
 
@@ -584,7 +584,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 
 ### Bài SGK 10
 **Đề:** Nếu $|\vec a|=6$ m, tính $|3\vec a|$.
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 18 m
 
@@ -598,7 +598,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 
 ### Bài SGK 11
 **Đề:** M nằm trên đoạn AB và $AM=\frac35 AB$. Biểu thị $\overrightarrow{MA}$ qua $\overrightarrow{AB}$.
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** $-\frac35\overrightarrow{AB}$
 
@@ -612,7 +612,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 
 ### Bài SGK 12
 **Đề:** Hai vectơ khác không thỏa $\vec v=-\frac52\vec u$. So sánh hướng và tỉ số độ dài $|\vec v|/|\vec u|$.
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** Ngược hướng; tỉ số $\frac52$
 
@@ -628,7 +628,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 **Đề:** Cho $A(-2;3),B(4;1)$. Tọa độ $\overrightarrow{AB}$ là?
 
 **Lựa chọn:** A. $(2;4)$; B. $(6;-2)$; C. $(-6;2)$; D. $(4;1)$.
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** B
 
@@ -642,7 +642,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 
 ### Bài SGK 14
 **Đề:** Cho $\vec u=(1;-2),\vec v=(-3;4)$. Tính $2\vec u-\vec v$.
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** $(5;-8)$
 
@@ -656,7 +656,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 
 ### Bài SGK 15
 **Đề:** Tìm trung điểm M của $A(-2;5)$ và $B(4;-1)$.
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** $M(1;2)$
 
@@ -672,7 +672,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 **Đề:** Với $\vec u=(2;-3)$, $\vec v=(-4;6)$, chọn phát biểu đúng.
 
 **Lựa chọn:** A. Không cùng phương; B. Cùng phương và ngược hướng; C. Cùng hướng và bằng nhau; D. Vuông góc.
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** B
 
@@ -686,7 +686,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 
 ### Bài SGK 17
 **Đề:** Cho $\vec u=(3;-2),\vec v=(1;4)$. Tính $\vec u\cdot\vec v$.
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** -5
 
@@ -700,7 +700,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 
 ### Bài SGK 18
 **Đề:** Cho $|\vec u|=5$, $|\vec v|=4$ và góc giữa chúng $60^\circ$. Tính $\vec u\cdot\vec v$.
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 10
 
@@ -714,7 +714,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 
 ### Bài SGK 19
 **Đề:** Cho $\vec u=(1;3),\vec v=(-1;1)$. Tính $\cos\theta$ với $\theta$ là góc giữa hai vectơ.
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** $1/\sqrt5$
 
@@ -728,7 +728,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 
 ### Bài SGK 20
 **Đề:** Một lực không đổi $\vec F=(10;0)$ N tác dụng lên vật dịch chuyển $\vec s=(3;4)$ m. Tính công $W=\vec F\cdot\vec s$.
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 30 J
 
@@ -742,7 +742,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 
 ### Bài SGK 21
 **Đề:** Trong hình lập phương cạnh 4 cm, độ dài vectơ đi dọc một cạnh bằng bao nhiêu?
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 4 cm
 
@@ -756,7 +756,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 
 ### Bài SGK 22
 **Đề:** Hình hộp chữ nhật có các cạnh theo ba phương vuông góc dài 3, 4, 12 cm. Độ dài vectơ nối hai đỉnh đối diện?
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 13 cm
 
@@ -770,7 +770,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 
 ### Bài SGK 23
 **Đề:** Với A,B,C bất kì, $\overrightarrow{AB}+\overrightarrow{BC}$ bằng gì?
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** $\overrightarrow{AC}$
 
@@ -784,7 +784,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 
 ### Bài SGK 24
 **Đề:** Trong hình bình hành ABCD, $\overrightarrow{AB}+\overrightarrow{AD}$ bằng gì?
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** $\overrightarrow{AC}$
 
@@ -798,7 +798,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 
 ### Bài SGK 25
 **Đề:** Trong hệ Oxyz, điểm P(4;2;0) nằm trên mặt phẳng tọa độ nào?
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** (Oxy)
 
@@ -812,7 +812,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 
 ### Bài SGK 26
 **Đề:** Một điểm Q thuộc trục Oz. Hai tọa độ nào bắt buộc bằng 0?
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** x=0 và y=0
 
@@ -826,7 +826,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 
 ### Bài SGK 27
 **Đề:** Trong phòng lấy O góc sàn và ba trục dọc dài/rộng/cao. Vật cách O lần lượt 2,3,4 m theo ba chiều dương có tọa độ gì?
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** (2;3;4) m
 
@@ -840,7 +840,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 
 ### Bài SGK 28
 **Đề:** Một cảm biến ở trần trong phòng cao 3 m, chọn Oz hướng lên từ sàn. Tọa độ z của cảm biến là gì?
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 3 m
 
@@ -854,7 +854,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 
 ### Bài SGK 29
 **Đề:** Với a=(1;2;3), b=(3;-1;2), tính a+b.
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** (4;1;5)
 
@@ -868,7 +868,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 
 ### Bài SGK 30
 **Đề:** Với a=(2;-3;1), b=(-1;4;0), tính a-b.
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** (3;-7;1)
 
@@ -882,7 +882,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 
 ### Bài SGK 31
 **Đề:** Trung điểm A(1;3;5), B(3;1;7) có tọa độ?
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** (2;2;6)
 
@@ -896,7 +896,7 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 
 ### Bài SGK 32
 **Đề:** Trọng tâm tam giác A(0;0;0), B(3;0;0), C(0;6;0) là?
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** (1;2;0)
 
@@ -908,12 +908,12 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 
 ## 2. Bài mới theo mạch học
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P01; SOURCE_BLOB: e2f71e56479a08c4f8bb5f949d4ed8e249983cd6; OUTCOME: TOP13-O02; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P01; SOURCE_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563; OUTCOME: TOP13-O02; SINGLE_ITEM_ID -->
 ### Luyện 1 · Chiều vectơ hình bình hành
 
 **Đề:** Trong hình bình hành ABCD, vectơ nào bằng \(\overrightarrow{AB}\): \(\overrightarrow{DC}\) hay \(\overrightarrow{CD}\)?
 
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 \(\overrightarrow{DC}=\overrightarrow{AB}\) vì cùng hướng và độ dài; \(\overrightarrow{CD}=-\overrightarrow{AB}\) vì ngược hướng.
 
@@ -921,12 +921,12 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P02; SOURCE_BLOB: e2f71e56479a08c4f8bb5f949d4ed8e249983cd6; OUTCOME: TOP13-O01; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P02; SOURCE_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563; OUTCOME: TOP13-O01; SINGLE_ITEM_ID -->
 ### Luyện 2 · Vectơ-không theo quy ước KNTT
 
 **Đề:** Khi A=B, độ dài \(\lvert\overrightarrow{AA}\rvert\) và quan hệ cùng phương của vectơ-không với vectơ khác không theo quy ước KNTT là gì?
 
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 \(\overrightarrow{AA}=\vec 0\) nên độ dài bằng 0; vectơ-không được quy ước cùng phương và cùng hướng với mọi vectơ. Không suy góc xác định với nó.
 
@@ -934,12 +934,12 @@ Các câu luyện dưới đây giúp em ôn kiến thức vectơ trong mặt ph
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P03; SOURCE_BLOB: e2f71e56479a08c4f8bb5f949d4ed8e249983cd6; OUTCOME: TOP13-O03; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P03; SOURCE_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563; OUTCOME: TOP13-O03; SINGLE_ITEM_ID -->
 ### Luyện 3 · Đường đi và độ dời
 
 **Đề:** Robot đi 5 m về đông rồi 12 m về bắc. Tính tổng quãng đường và độ lớn của vectơ độ dời.
 
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 Quãng đường là 5+12=17 m; độ dời là √(5²+12²)=13 m. Không lấy tổng hai chặng làm độ dài vectơ.
 
@@ -947,12 +947,12 @@ Quãng đường là 5+12=17 m; độ dời là √(5²+12²)=13 m. Không lấy
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P04; SOURCE_BLOB: e2f71e56479a08c4f8bb5f949d4ed8e249983cd6; OUTCOME: TOP13-O04; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P04; SOURCE_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563; OUTCOME: TOP13-O04; SINGLE_ITEM_ID -->
 ### Luyện 4 · Hiệu hai vectơ chung gốc
 
 **Đề:** Cho A=(−1,2), B=(4,3), C=(2,−2). Tính \(\overrightarrow{AB}-\overrightarrow{AC}\) và đối chiếu với một vectơ có điểm đầu C.
 
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 \(\overrightarrow{AB}=(5,1)\), \(\overrightarrow{AC}=(3,-4)\); \(\overrightarrow{AB}-\overrightarrow{AC}=(2,5)=\overrightarrow{CB}\), vì \(B-C=(2,5)\) theo tọa độ.
 
@@ -960,12 +960,12 @@ Quãng đường là 5+12=17 m; độ dời là √(5²+12²)=13 m. Không lấy
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P05; SOURCE_BLOB: e2f71e56479a08c4f8bb5f949d4ed8e249983cd6; OUTCOME: TOP13-O05; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P05; SOURCE_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563; OUTCOME: TOP13-O05; SINGLE_ITEM_ID -->
 ### Luyện 5 · Nhân âm với vectơ
 
 **Đề:** Cho u=(2,−1) và v=−4u. Tìm v, độ dài v và quan hệ hướng với u.
 
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 v=(−8,4), |u|=√5 nên |v|=4√5. Hệ số −4 đảo hướng của u.
 
@@ -973,12 +973,12 @@ v=(−8,4), |u|=√5 nên |v|=4√5. Hệ số −4 đảo hướng của u.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P06; SOURCE_BLOB: e2f71e56479a08c4f8bb5f949d4ed8e249983cd6; OUTCOME: TOP13-O06; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P06; SOURCE_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563; OUTCOME: TOP13-O06; SINGLE_ITEM_ID -->
 ### Luyện 6 · Điểm cân bằng
 
 **Đề:** Tam giác A=(−3,0), B=(3,0), C=(0,6). Tìm trung điểm M của BC và trọng tâm G. Kiểm \(\overrightarrow{AG}=\tfrac23\overrightarrow{AM}\).
 
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 \(M=(\tfrac32,3)\), \(G=(0,2)\); \(\overrightarrow{AG}=(3,2)\) và \(\overrightarrow{AM}=(\tfrac92,3)\), nên \(\overrightarrow{AG}=\tfrac23\overrightarrow{AM}\).
 
@@ -986,12 +986,12 @@ v=(−8,4), |u|=√5 nên |v|=4√5. Hệ số −4 đảo hướng của u.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P07; SOURCE_BLOB: e2f71e56479a08c4f8bb5f949d4ed8e249983cd6; OUTCOME: TOP13-O07; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P07; SOURCE_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563; OUTCOME: TOP13-O07; SINGLE_ITEM_ID -->
 ### Luyện 7 · Oxy cuối trừ đầu
 
 **Đề:** Cho A=(−3,4), B=(5,−2). Tính vectơ \(\overrightarrow{AB}\) và độ dài của nó.
 
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 \(\overrightarrow{AB}=(8,-6)\), độ dài \(AB=|\overrightarrow{AB}|=\sqrt{8^2+6^2}=10\). Không thay hiệu tọa độ bằng tổng giá trị tuyệt đối.
 
@@ -999,12 +999,12 @@ v=(−8,4), |u|=√5 nên |v|=4√5. Hệ số −4 đảo hướng của u.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P08; SOURCE_BLOB: e2f71e56479a08c4f8bb5f949d4ed8e249983cd6; OUTCOME: TOP13-O08; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P08; SOURCE_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563; OUTCOME: TOP13-O08; SINGLE_ITEM_ID -->
 ### Luyện 8 · Cùng phương không đồng nghĩa cùng hướng
 
 **Đề:** Cho u=(4,−6), v=(−2,3). Chúng cùng phương không và có cùng hướng không?
 
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 v=−(1/2)u, cả hai khác không nên cùng phương nhưng ngược hướng.
 
@@ -1012,12 +1012,12 @@ v=−(1/2)u, cả hai khác không nên cùng phương nhưng ngược hướng.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P09; SOURCE_BLOB: e2f71e56479a08c4f8bb5f949d4ed8e249983cd6; OUTCOME: TOP13-O09; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P09; SOURCE_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563; OUTCOME: TOP13-O09; SINGLE_ITEM_ID -->
 ### Luyện 9 · Tích vô hướng từ góc
 
 **Đề:** Hai vectơ có độ dài 8 và 5, góc giữa chúng 120°. Tính tích vô hướng và giải thích dấu.
 
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 u·v=8·5·cos120°=−20; góc tù nên tích âm. Nếu ra dương, đã bỏ dấu của cos120°.
 
@@ -1025,12 +1025,12 @@ u·v=8·5·cos120°=−20; góc tù nên tích âm. Nếu ra dương, đã bỏ 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P10; SOURCE_BLOB: e2f71e56479a08c4f8bb5f949d4ed8e249983cd6; OUTCOME: TOP13-O10; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P10; SOURCE_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563; OUTCOME: TOP13-O10; SINGLE_ITEM_ID -->
 ### Luyện 10 · Vuông góc Oxy
 
 **Đề:** u=(3,−2),v=(4,6). Kiểm hai vectơ có vuông góc không.
 
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 u·v=12−12=0 và u,v khác không ⇒ vuông góc.
 
@@ -1038,12 +1038,12 @@ u·v=12−12=0 và u,v khác không ⇒ vuông góc.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P11; SOURCE_BLOB: e2f71e56479a08c4f8bb5f949d4ed8e249983cd6; OUTCOME: TOP13-O11; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P11; SOURCE_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563; OUTCOME: TOP13-O11; SINGLE_ITEM_ID -->
 ### Luyện 11 · Đường chéo hình hộp
 
 **Đề:** Trong hình hộp chữ nhật, ba cạnh xuất phát từ A vuông góc đôi một và dài 3, 4, 12. Tìm độ dài vectơ \(\overrightarrow{AC'}\).
 
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 Đường chéo không gian dài √(3²+4²+12²)=√169=13. Chỉ dùng tổng bình phương vì ba hướng đôi một vuông góc.
 
@@ -1051,12 +1051,12 @@ u·v=12−12=0 và u,v khác không ⇒ vuông góc.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P12; SOURCE_BLOB: e2f71e56479a08c4f8bb5f949d4ed8e249983cd6; OUTCOME: TOP13-O12; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P12; SOURCE_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563; OUTCOME: TOP13-O12; SINGLE_ITEM_ID -->
 ### Luyện 12 · Chasles trong Oxyz
 
 **Đề:** A=(−1,2,0), B=(2,−1,4), C=(5,3,−2). Hãy tính \(\overrightarrow{AB}\), \(\overrightarrow{BC}\), \(\overrightarrow{AC}\), rồi xác minh quy tắc ba điểm.
 
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 \(\overrightarrow{AB}=(3,-3,4)\), \(\overrightarrow{BC}=(3,4,-6)\); \(\overrightarrow{AB}+\overrightarrow{BC}=(6,1,-2)=\overrightarrow{AC}\). Cần lấy cuối trừ đầu từng cặp.
 
@@ -1064,12 +1064,12 @@ u·v=12−12=0 và u,v khác không ⇒ vuông góc.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P13; SOURCE_BLOB: e2f71e56479a08c4f8bb5f949d4ed8e249983cd6; OUTCOME: TOP13-O13; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P13; SOURCE_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563; OUTCOME: TOP13-O13; SINGLE_ITEM_ID -->
 ### Luyện 13 · Vuông góc trong không gian
 
 **Đề:** Hai vectơ không gian u=(2,−1,2), v=(1,4,1). Tính u·v và góc giữa chúng.
 
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 u·v=2−4+2=0; |u|=3 và |v|=3√2 đều khác 0 nên góc bằng 90°.
 
@@ -1077,12 +1077,12 @@ u·v=2−4+2=0; |u|=3 và |v|=3√2 đều khác 0 nên góc bằng 90°.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P14; SOURCE_BLOB: e2f71e56479a08c4f8bb5f949d4ed8e249983cd6; OUTCOME: TOP13-O14; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P14; SOURCE_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563; OUTCOME: TOP13-O14; SINGLE_ITEM_ID -->
 ### Luyện 14 · Tọa độ độ dời Oxyz
 
 **Đề:** A=(−2,3,1), B=(4,−1,5). Tính tọa độ \(\overrightarrow{AB}\) và khoảng cách từ A tới B.
 
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 \(\overrightarrow{AB}=(6,-4,4)\); khoảng cách \(AB=|\overrightarrow{AB}|=\sqrt{36+16+16}=\sqrt{68}=2\sqrt{17}\).
 
@@ -1090,12 +1090,12 @@ u·v=2−4+2=0; |u|=3 và |v|=3√2 đều khác 0 nên góc bằng 90°.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P15; SOURCE_BLOB: e2f71e56479a08c4f8bb5f949d4ed8e249983cd6; OUTCOME: TOP13-O15; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P15; SOURCE_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563; OUTCOME: TOP13-O15; SINGLE_ITEM_ID -->
 ### Luyện 15 · Trung điểm Oxyz
 
 **Đề:** Cho A=(−1,2,4), B=(5,−2,−4). Tìm trung điểm M và khoảng cách AB.
 
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 \(M=(2,0,0)\); \(\overrightarrow{AB}=(6,-4,-8)\) có độ dài \(AB=\sqrt{36+16+64}=\sqrt{116}=2\sqrt{29}\).
 
@@ -1103,12 +1103,12 @@ u·v=2−4+2=0; |u|=3 và |v|=3√2 đều khác 0 nên góc bằng 90°.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P16; SOURCE_BLOB: e2f71e56479a08c4f8bb5f949d4ed8e249983cd6; OUTCOME: TOP13-O16; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-P16; SOURCE_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563; OUTCOME: TOP13-O16; SINGLE_ITEM_ID -->
 ### Luyện 16 · Hai chặng drone
 
 **Đề:** Drone ở P=(1,−2,0) m, bay u=(4,0,3) m rồi v=(−1,4,0) m. Tìm Q, độ dài độ dời và quãng đường hai chặng.
 
-<details markdown="1"><summary>Đối chiếu lời giải</summary>
+<details markdown="1"><summary>Lời giải</summary>
 
 Q=P+u+v=(4,2,3) m. Tổng độ dời=(3,4,3) dài √34 m; quãng đường theo hai chặng=5+√17 m. Hai độ dài khác nhau.
 
@@ -1116,12 +1116,12 @@ Q=P+u+v=(4,2,3) m. Tổng độ dời=(3,4,3) dài √34 m; quãng đường the
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-W01; SOURCE_BLOB: e2f71e56479a08c4f8bb5f949d4ed8e249983cd6; OUTCOME: TOP13-O06; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-W01; SOURCE_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563; OUTCOME: TOP13-O06; SINGLE_ITEM_ID -->
 ### Tự luận 1 · Tổng vectơ và trọng tâm
 
 **Đề:** Với A=(−2,1), B=(4,1), C=(1,7), hãy (a) rút gọn \(\overrightarrow{AB}+\overrightarrow{BC}\); (b) tìm trung điểm M của BC; (c) tìm trọng tâm G và chứng minh \(\overrightarrow{AG}=\tfrac23\overrightarrow{AM}\).
 
-<details markdown="1"><summary>Đối chiếu và rubric /7</summary>
+<details markdown="1"><summary>Lời giải và rubric</summary>
 
 (a) \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}=(3,6)\) (2đ); (b) \(M=(\tfrac52,4)\) (2đ); (c) \(G=(1,3)\) (2đ), \(\overrightarrow{AG}=(3,2)=\tfrac23(\tfrac92,3)=\tfrac23\overrightarrow{AM}\) (1đ). Tổng 7 điểm.
 
@@ -1129,12 +1129,12 @@ Q=P+u+v=(4,2,3) m. Tổng độ dời=(3,4,3) dài √34 m; quãng đường the
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-W02; SOURCE_BLOB: e2f71e56479a08c4f8bb5f949d4ed8e249983cd6; OUTCOME: TOP13-O10; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-W02; SOURCE_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563; OUTCOME: TOP13-O10; SINGLE_ITEM_ID -->
 ### Tự luận 2 · Tích vô hướng và góc trong Oxy
 
 **Đề:** Cho tam giác A=(0,0),B=(6,0),C=(2,4). Tính (a) \(\overrightarrow{AB}\cdot\overrightarrow{AC}\); (b) cos góc A; (c) trọng tâm G và diện tích tam giác.
 
-<details markdown="1"><summary>Đối chiếu và rubric /7</summary>
+<details markdown="1"><summary>Lời giải và rubric</summary>
 
 \(\overrightarrow{AB}=(6,0)\), \(\overrightarrow{AC}=(2,4)\), tích vô hướng bằng 12 (2đ); \(AB=|\overrightarrow{AB}|=6\), \(AC=|\overrightarrow{AC}|=2\sqrt5\), \(\cos A=12/(12\sqrt5)=1/\sqrt5\) (2đ); \(G=(\tfrac83,\tfrac43)\) (2đ); \(S=6\cdot4/2=12\) đơn vị vuông (1đ). Tổng 7 điểm.
 
@@ -1142,12 +1142,12 @@ Q=P+u+v=(4,2,3) m. Tổng độ dời=(3,4,3) dài √34 m; quãng đường the
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-W03; SOURCE_BLOB: e2f71e56479a08c4f8bb5f949d4ed8e249983cd6; OUTCOME: TOP13-O11; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-W03; SOURCE_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563; OUTCOME: TOP13-O11; SINGLE_ITEM_ID -->
 ### Tự luận 3 · Vectơ đường chéo hình hộp
 
 **Đề:** Một hình hộp chữ nhật có A=(0,0,0), B=(3,0,0), D=(0,4,0), A'=(0,0,12). Tìm C', độ dài đoạn \(AC'\), tích vô hướng \(\overrightarrow{AB}\cdot\overrightarrow{AC'}\) và cos góc giữa chúng.
 
-<details markdown="1"><summary>Đối chiếu và rubric /7</summary>
+<details markdown="1"><summary>Lời giải và rubric</summary>
 
 \(C'=(3,4,12)\) (2đ); \(AC'=\lvert\overrightarrow{AC'}\rvert=13\) và \(\overrightarrow{AB}\cdot\overrightarrow{AC'}=9\) (3đ); \(\cos\theta=9/(3\cdot13)=3/13\) (2đ). Tổng 7 điểm.
 
@@ -1155,12 +1155,12 @@ Q=P+u+v=(4,2,3) m. Tổng độ dời=(3,4,3) dài √34 m; quãng đường the
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-W04; SOURCE_BLOB: e2f71e56479a08c4f8bb5f949d4ed8e249983cd6; OUTCOME: TOP13-O16; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP13-W04; SOURCE_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563; OUTCOME: TOP13-O16; SINGLE_ITEM_ID -->
 ### Tự luận 4 · Drone và công của lực
 
 **Đề:** Drone ở P=(0,0,1) m bay u=(2,−1,2) m rồi v=(−1,3,0) m, trong khi lực không đổi F=(1,2,−1) N tác dụng. (a) Tìm Q. (b) Phân biệt quãng đường với độ dài độ dời. (c) Tính công trên tổng độ dời.
 
-<details markdown="1"><summary>Đối chiếu và rubric /7</summary>
+<details markdown="1"><summary>Lời giải và rubric</summary>
 
 (a) Q=P+u+v=(1,2,3) (2đ); (b) tổng độ dời=(1,2,2) dài 3 m, hai chặng dài 3 và √10 nên quãng đường=3+√10 m (3đ); (c) W=F·(u+v)=1+4−2=3 J, do lực không đổi (2đ). Tổng 7 điểm.
 
@@ -1237,3 +1237,5 @@ Q=P+u+v=(4,2,3) m. Tổng độ dời=(3,4,3) dài √34 m; quãng đường the
 **Câu 16.** Drone ở P=(1,−2,0) m, bay u=(4,0,3) m rồi v=(−1,4,0) m. Tìm Q, độ dài độ dời và quãng đường hai chặng.
 
 <!-- AUTHORING_ONLY: PUBLIC_REPLAY_FROM_PRACTICE; 16 item_id existing; question-only; no private RD1 or official readiness. -->
+
+**Nguồn tham khảo:** SGK và SBT *Toán 10*, Tập Một, Chương IV; SGK và SBT *Toán 12*, Tập Một, Chương II — bộ *Kết nối tri thức với cuộc sống*.
