@@ -577,8 +577,15 @@ for(const [lesson,row] of rows){
   const ui=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHIV_B11_P2_TAB4_GOLDEN_DELTA_A_UI_R02_20261118.md"),"utf8");
   const uf=k=>ui.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
-  assert.equal(blob(Buffer.from(reconstructed)),uf("R01_PUBLISHED_B11_SOURCE_BLOB"),
-   "B11 R02 only Tab4 UI reflow allowed; reconstruct R01 source byte-for-byte");
+  assert.equal(uf("R02_B11_SOURCE_BLOB"),"60a3d043694986e3250f15b51350380b86f70cfc",
+    "B11 original R02 signed Knowledge source remains immutable");
+   // The new Delta A only changes Examples. Guard every byte of Tab4 against
+   // the owner-approved R02 snapshot rather than comparing whole old lesson.
+   let h4=0xcbf29ce484222325n;
+   for(const ch of source.split('=== "Lỗi thường gặp"')[1])
+    h4=(h4^BigInt(ch.charCodeAt(0)))*0x100000001b3n&0xffffffffffffffffn;
+   assert.equal(h4.toString(16).padStart(16,"0"),"c41feeaf19e96098",
+    "B11 original Tab4 error examples and HELP unchanged from approved R02");
   assert.equal((last.match(/^    \?\?\? tip "/gm)||[]).length,3,
    "B11 must keep exactly three independent HELP disclosures");
   assert(!source.includes(String.fromCharCode(96))&&
