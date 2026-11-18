@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 500" role="img" aria-labelledby="title-b09mobile desc-b09mobile">
+<title id="title-b09mobile">Phân tích vectơ thành hai hướng không cùng phương — bản điện thoại</title>
+<desc id="desc-b09mobile">Vectơ a từ O sang P, vectơ b từ O chếch lên phải, hai lần b từ P đến R. Vectơ u từ O đến R bằng a cộng hai lần b; hai hướng a và b không song song.</desc>
+<defs>
+ <marker id="m-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10Z" fill="#17665e"/></marker>
+ <marker id="m-b" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10Z" fill="#7154a4"/></marker>
+ <marker id="m-u" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10Z" fill="#1e4d8e"/></marker>
+</defs>
+<rect x="1" y="1" width="438" height="498" rx="12" fill="#fff" stroke="#dce3eb" stroke-width="2"/>
+<text x="20" y="39" font-family="Arial,sans-serif" font-size="23" fill="#20314e" font-weight="700">Phân tích theo hai hướng</text>
+<text x="20" y="72" font-family="Arial,sans-serif" font-size="21" fill="#526174">không cùng phương</text>
+<path d="M55 345 L195 345 L273 205 L133 205Z" fill="#eff5fe" stroke="#a8b6cc" stroke-dasharray="7 7" stroke-width="2.5"/>
+<path d="M55 345 L195 345" fill="none" stroke="#17665e" stroke-width="5" marker-end="url(#m-a)"/>
+<path d="M55 345 L94 275" fill="none" stroke="#7154a4" stroke-width="4" marker-end="url(#m-b)"/>
+<path d="M55 345 L133 205" fill="none" stroke="#7154a4" stroke-width="3" stroke-dasharray="8 7" marker-end="url(#m-b)"/>
+<path d="M195 345 L273 205" fill="none" stroke="#7154a4" stroke-width="5" marker-end="url(#m-b)"/>
+<path d="M55 345 L273 205" fill="none" stroke="#1e4d8e" stroke-width="5" marker-end="url(#m-u)"/>
+<g font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#20314e">
+<text x="27" y="365">O</text><text x="197" y="375">P</text><text x="133" y="193">Q</text><text x="283" y="210">R</text>
+</g>
+<g font-family="Arial,sans-serif" font-size="23" font-weight="700">
+<text x="120" y="376" fill="#17665e">a</text>
+<text x="67" y="266" fill="#7154a4">b</text>
+<text x="223" y="285" fill="#7154a4">2b</text>
+<text x="168" y="251" fill="#1e4d8e">u</text>
+</g>
+<rect x="20" y="397" width="400" height="77" rx="10" fill="#f1f5fc" stroke="#b9c7dd"/>
+<text x="40" y="427" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#1e4d8e">u = a + 2b</text>
+<text x="40" y="455" font-family="Arial,sans-serif" font-size="19" fill="#34475e">Từ O: đi theo a, rồi 2b đến R.</text>
+</svg>
