@@ -383,7 +383,7 @@
     "difficulty": "APPLICATION"
   }
 ];
- const validate=()=>({valid:records.length===9&&new Set(records.map(x=>x.item_id)).size===8&&
+ const validate=()=>({valid:records.length===9&&new Set(records.map(x=>x.item_id)).size===9&&
   records.every(x=>/^THPT-G10-B12-[CP]\d{2}$/.test(x.item_id)&&x.exposure==="FORMATIVE_ONLY"&&
   (!x.options||(x.options.length===4&&/^[ABCD]$/.test(x.answerKey))))});
  const forLesson=(lesson,role)=>records.filter(x=>x.lesson===String(Number(lesson))&&
