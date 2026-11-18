@@ -6,8 +6,8 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: b5c03a5cfb3336ff9e3d3a15fd8f0161ec71fb39
-SOURCE_BLOB: b5c03a5cfb3336ff9e3d3a15fd8f0161ec71fb39
+ACADEMIC_SOURCE_BLOB: 47c98711e2955287831d5ea10fc5d61d1483fd6a
+SOURCE_BLOB: 47c98711e2955287831d5ea10fc5d61d1483fd6a
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/Temp_G10_SGK_CHVII_FULL_R02_SOURCE_WITH_CANONICAL_REFERENCES_20261105.md
 ORIGINAL_SGK_SOURCE_BLOB: c5c222af88b0e932f9b60df059d8ffd4da5f0f26
 ORIGINAL_SGK_PED_R01_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd
@@ -393,4 +393,12 @@ TOP14_R02_LEARNER_FIRST_23OUT_110CANONICAL_74DIRECTQA_20261116; source `c80f20dc
 
 ## Final 18/11/2026 AUTHORING closure — 55/55 numbered SGK learner labels (DELTA_A_UI)
 
-Latest EFFECTIVE learner SHA: `b5c03a5cfb3336ff9e3d3a15fd8f0161ec71fb39`; previous `c80f20dc9f8f2ee000f5c4af5a4c8583a5307cf1` is historical signed only. Current targeted R02 Q18 receipt Git SHA: `83ed7bce8010f522d86beac22b01403601e13da3`. Exactly 40 visible `Bài SGK` numbers adjusted to make 55 labels 1..55 sequential across four math groups; full source after normalizing the numbering-token span is byte-identical to previous, and all canonical SGK source IDs/stems/answers/solutions/rubrics plus 23 Topic-firsttry, 23 Practice, five Written, 23 public replays and three SVG unchanged. No historic math source reassigned, no independent reviewer PASS or website RELEASE.
+Latest EFFECTIVE learner SHA: `47c98711e2955287831d5ea10fc5d61d1483fd6a`; previous `c80f20dc9f8f2ee000f5c4af5a4c8583a5307cf1` is historical signed only. Prior targeted R02 Q18 receipt SHA before 19/11 O22 correction (historical): `83ed7bce8010f522d86beac22b01403601e13da3`; effective signed receipt is source-locked through the V2 handoff and ready manifest. Exactly 40 visible `Bài SGK` numbers adjusted to make 55 labels 1..55 sequential across four math groups; full source after normalizing the numbering-token span is byte-identical to previous, and all canonical SGK source IDs/stems/answers/solutions/rubrics plus 23 Topic-firsttry, 23 Practice, five Written, 23 public replays and three SVG unchanged. No historic math source reassigned, no independent reviewer PASS or website RELEASE.
+
+## 19/11/2026 · A1–A7 bổ sung kiểm sai lệch Q08/PED6 tại TOP14-O22 / T22
+
+- **Baseline (18/11) Git source:** `b5c03a5cfb3336ff9e3d3a15fd8f0161ec71fb39`; **new canonical Git source:** `47c98711e2955287831d5ea10fc5d61d1483fd6a`.
+- **Phát hiện thực chất:** ở T22, đề parabol `y²=4x` cắt `x=1`, đáp án đúng (1,2)/(1,-2), nhưng câu chữa lỗi nhầm sang elip và khẳng định (0,±2) là giao điểm. Thực tế với (0,±2), `y²−4x=4≠0`; đó là hai tọa độ của ví dụ elip phía trước, không thuộc parabol T22.
+- **DELTA_C_ACADEMIC_MATERIAL (affected only):** sửa đúng một câu lời dẫn D6. Thay `x=1` vào `y²=4x` ⇒ `y²=4` ⇒ `y=±2`; hai điểm (1,2)/(1,-2) thỏa parabol và đối xứng qua Ox. Chủ thể “parabol” đúng Q03/Q08/PED6.
+- **Bảo toàn:** một item canonical `THPT-TOP14-T22`, stem/key/solution/rubric, 110 unique IDs, 23 outcomes, 55 SGK liên tục, 23 public selfchecks, ba SVG không đổi. Đã đọc kiểm 23/23 Vận dụng→Nếu làm sai để xác định đúng phạm vi; không tuyên bố reviewer NotebookLM độc lập. P0/P1 trên đoạn sửa = 0 theo author self-verification.
+- **Author affected-scope signoff:** `TOP14_R02_O22_PARABOLA_REMEDIATION_20261119_AUTHOR_SELF_QA`. RELEASE AP/R/P1/P2, official RD1/Final Submit/Mastery, owner merge/deploy vẫn ngoài phạm vi.
