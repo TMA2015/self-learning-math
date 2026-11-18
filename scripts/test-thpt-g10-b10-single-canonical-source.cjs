@@ -24,7 +24,16 @@ const marker="/* G10 Chapter IV B10 R01",pos=css.indexOf(marker);
 assert(pos>0&&css.indexOf(marker,pos+marker.length)<0,"One B10 CSS appendix only");
 assert.equal(blob(Buffer.from(css.slice(0,pos))),field("CSS_OWNER_B09_P2_BASELINE_BLOB"),
  "B01-B09 owner accepted stylesheet prefix changed");
-assert.equal(blob(buf(cssPath)),field("CSS_R01_SCOPED_B10_BLOB"),"B10 CSS SHA changed without new Q18 receipt");
+const b11Marker="\n/* G10 Chapter IV B11 R01",cut11=css.indexOf(b11Marker);
+assert(cut11>0&&css.indexOf(b11Marker,cut11+1)===-1,"Exactly one B11 scoped CSS appendix");
+assert.equal(blob(Buffer.from(css.slice(0,cut11))),field("CSS_R01_SCOPED_B10_BLOB"),
+ "B10 P2 stylesheet source must be byte-identical before B11 append");
+const b11Receipt=read("prototypes/thpt/ux795/G10_CHIV_B11_S1_PED_CANONICAL_Q18_R01_20261118.md"),
+ b11field=k=>b11Receipt.split("**"+k+":** "+t)[1]?.slice(0,40);
+assert.equal(b11field("B10_P2_APPROVED_CSS_BLOB"),field("CSS_R01_SCOPED_B10_BLOB"),
+ "B11 scoped style baseline must be B10 owner accepted CSS");
+assert.equal(blob(buf(cssPath)),b11field("CSS_B11_SCOPED_APPEND_BLOB"),
+ "B11 final CSS not signed by exact scoped receipt");
 const runtimePath="docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js";
 const runtime=read(runtimePath);
 assert.equal(field("B09_OWNER_P2_RUNTIME_BASELINE_BLOB"),"7a77c4444dfc96aeeaf87ddd17d8f9d37a6ae136");
@@ -35,7 +44,11 @@ assert(runtime.includes('const isEnrichedB10=/')&&
  runtime.includes('if(isEnrichedB10)')&&
  runtime.includes('while(cur&&cur.tagName!=="H3"'),
  "B10 must receive exactly scoped DOM solution grouping with strict stop at learner self-check");
-assert(css.slice(pos).includes("THPT-G10-CHIV-TRY16")&&!css.slice(pos).includes("THPT-G10-CHIV-TRY11"));
+assert(css.slice(pos,cut11).includes("THPT-G10-CHIV-TRY16")&&
+ !css.slice(pos,cut11).includes("THPT-G10-CHIV-TRY11")&&
+ css.slice(cut11).includes("THPT-G10-CHIV-TRY21")&&
+ !css.slice(cut11).includes("THPT-G10-CHIV-TRY16"),
+ "B10 and B11 CSS have independent selectors, no earlier lesson restyling");
 const part=n=>{
  const a="<!-- BEGIN_"+n+" -->\n",b="<!-- END_"+n+" -->";
  assert.equal(manuscript.split(a).length,2,"Missing/duplicated canonical section "+n);
