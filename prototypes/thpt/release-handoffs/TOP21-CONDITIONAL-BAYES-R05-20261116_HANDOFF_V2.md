@@ -7,12 +7,12 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_LEARNER_PRESENTATION_20261116.md
-ACADEMIC_SOURCE_BLOB: 65938a700e0da630694e9cbb6e636d337e67aeb5
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/TOP21_R05_Q18_TECHNICAL_EQUIVALENCE_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: aa3e00f55eb8f6930e23e9b15bbba3ba2d8e972a
-ACADEMIC_VERDICT: SELF_VERIFIED
-PEDAGOGICAL_VERDICT: SELF_VERIFIED
-BLOCKERS: NONE
+ACADEMIC_SOURCE_BLOB: aa325637f659bc5f8ba504f6ce0129e07340a41d
+REVIEW_RECEIPT_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R06_D6_Q15_Q18_AUTHOR_TARGETED_RECEIPT_20261117.md
+REVIEW_RECEIPT_BLOB: 062927424ab6d58b8560def38819de3663328e11
+ACADEMIC_VERDICT: AUTHOR_SELF_VERIFIED_MATH_UNCHANGED_ONLY
+PEDAGOGICAL_VERDICT: TARGETED_AUTHOR_SELF_QA_ONLY; INDEPENDENT_PED_PENDING
+BLOCKERS: AFFECTED_DELTA_C_PED_INDEPENDENT_REVIEW_PENDING; CURRENT_CONTENT_READY_NOT_APPROVED
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 MASTERY_ACTIVATION: NO
@@ -20,13 +20,13 @@ RELEASE_AUTHORIZATION: NO
 PRIVATE_RD1_COUNT: 8
 PRIVATE_RD1_SHA256: c4242630d329f794e570cc406939fd85d5f65302b8b286ddcd2c74e8220a2e3b
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_A1_A7_TECHNICAL_SOURCE_PARITY_20261116.md
-AUTHOR_A1_A7_BLOB: fce97e1d11a803f234e62ec5c05b9cd2f77af540
+AUTHOR_A1_A7_BLOB: da80aa915b21d2ed2ea474602b31e331e4fafa05
 
-CONTENT_REVISION: R05
+CONTENT_REVISION: R06_IN_PLACE
 ORIGINAL_IMMUTABLE_R04_SOURCE_BLOB: 2fa6557286aba05dd0eea972d4c4ac68371842d7
 ORIGINAL_IMMUTABLE_R04_RECEIPT_BLOB: 3dec04e92a96d24b4b77ebda144bc1ca80b8f1f8
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_A1_A7_TECHNICAL_SOURCE_PARITY_20261116.md
-AUTHOR_METADATA_BLOB: fce97e1d11a803f234e62ec5c05b9cd2f77af540
+AUTHOR_METADATA_BLOB: da80aa915b21d2ed2ea474602b31e331e4fafa05
 
 ## R05_CURRENT_SOURCE_AND_EQUIVALENT_DELTA
 
@@ -161,3 +161,9 @@ One R05 technical source equivalence receipt `prototypes/thpt/review-packets/TOP
 ## AUTHOR_SIGNOFF
 
 AUTHORING verifies R05 source-equiv student headings + eight actual public selfcheck stems, unchanged eight Knowledge mathematics blocks, 19 canonical full question-answer/rubric bodies and Q15/Q16 private boundary. Current R05 is CONTENT_READY AUTHORING source only, not live official Topic Readiness, Golden, responsive, Final Submit, merge or deploy. AP1–AP5/R1–R5/P1–P2 and owner's RELEASE decision still separate.
+
+## 18/11/2026 — one current in-place learner + handoff custody
+
+- This **same V2 handoff path** now points to current learner Git blob `aa325637f659bc5f8ba504f6ce0129e07340a41d` with exact current Q15/Q18 author-targeted receipt `062927424ab6d58b8560def38819de3663328e11` and A1 source custody `da80aa915b21d2ed2ea474602b31e331e4fafa05`. Previously signed source `65938a700e0da630694e9cbb6e636d337e67aeb5`, receipt `aa3e00f55eb8f6930e23e9b15bbba3ba2d8e972a` and metadata `fce97e1d11a803f234e62ec5c05b9cd2f77af540` are *historic*, not parallel live handoffs.
+- The effective learner file keeps existing original filename while learner content was edited in-place under version `R06_IN_PLACE`; no alternate learner Markdown and no new canonical bank. 10/10 Q15 item/version/placement assertions and V2 intake on current branch passed after archival of historical ready manifests; mathematical stems, solutions and rubrics unaffected.
+- This is a staged **AUTHORING-only V2 with explicit BLOCKER**, not a `ready/` acceptance: targeted D6 pedagogy is DELTA_C and needs affected-scope independent review before Academic+PED CONTENT_READY can be granted. Do not restore superseded historical ready manifests, leak private RD1, record Mastery, merge or deploy.
