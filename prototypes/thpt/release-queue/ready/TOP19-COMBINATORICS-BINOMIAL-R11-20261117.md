@@ -1,4 +1,4 @@
-# CĐ19 · một bản thảo hiệu lực đã sửa lời giải T02 · QA HOLD
+# CĐ19 · một nguồn hiện hành R11 · SOURCE-LOCKED AUTHORING CONTENT_READY
 
 PACKET_ID: TOP19-COMBINATORICS-BINOMIAL-R11-20261117
 SUPERSEDES_PACKET_ID: TOP19-COMBINATORICS-BINOMIAL-R09-20261116
@@ -15,13 +15,13 @@ CATALOG_TOPIC_ID: CD19
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 CURRENT_PR: #897 — AUTHORING DRAFT source-only, no website permission
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R11_P2_CANONICAL_LABEL_LEARNER_CLARITY_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: 5546204168eb3c3402b21af9ca1b9d08b118c378
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R10_LANGUAGE_LOCAL_REFERENTS_CANDIDATE_20261117.md
+ACADEMIC_SOURCE_BLOB: 7005bf1f839e566efb9abbc17eccfa92a0b41e63
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC19_R11_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md — AUTHOR_SELF_VERIFIED composite of immutable R09 + targeted R10/R11; NOT independent NotebookLM
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC19_R11_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md
-REVIEW_RECEIPT_BLOB: 0424dc58b6662fa214ea1f2a0835d923b0843ba4
+REVIEW_RECEIPT_BLOB: 3bd774c5113a6e030e989af59257598452a93fde
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/TOP19-COMBINATORICS-BINOMIAL-R11-20261117_HANDOFF_V2.md
-AUTHOR_HANDOFF_BLOB: 6f604cb48c92c414e8aa81232d35b7ed5aa4e4ff
+AUTHOR_HANDOFF_BLOB: 72352bcaad0a16e10843e9bc9f6f80867c274b0c
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 BLOCKERS: NONE
@@ -34,9 +34,9 @@ RELEASE_AUTHORIZATION: NO
 RELEASE_STATUS: NOT_INTEGRATED_NOT_PUBLISHED
 
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_56_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_A1_A7_BLOB: e08edfe43800b6416997920af6aa30e6b8c08ba1
+AUTHOR_A1_A7_BLOB: dcd3564beba2bab3789e86231cdac71c452ce42c
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_56_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_METADATA_BLOB: e08edfe43800b6416997920af6aa30e6b8c08ba1
+AUTHOR_METADATA_BLOB: dcd3564beba2bab3789e86231cdac71c452ce42c
 
 ## R09 IMMUTABLE FULL MATH/PED BASELINE (inherited)
 
@@ -108,3 +108,8 @@ A single sentence in learner optional answer T02 was edited in the *existing* au
 
 
 **Additional presentation QA:** learner Knowledge factorial/arrangements/combination math now explicit TeX and literal calculator labels stay clear. All 56 original canonical IDs, 7 question-only public replays, Practice, Written and scoring stay identical. Source-only authoring intake; actual site browser/AP QA and owner's release decision remain separate.
+
+
+## Current 18/11 source SHA custody and decision
+
+Current source SHA `7005bf1f839e566efb9abbc17eccfa92a0b41e63`; canonical Q18 author self-QA `3bd774c5113a6e030e989af59257598452a93fde`; A1 `dcd3564beba2bab3789e86231cdac71c452ce42c`; V2 `72352bcaad0a16e10843e9bc9f6f80867c274b0c`; Q15 56 current source marker lines `a127267978ec61c857d5cc0cbcd8cb3f1dcc2f1e`. The former R11-named learner file was removed; its SHA and older ready claims are historical. Full original 14 outcomes and 25 G10 SGK source-owned items remain unchanged. Only seven valid Mathematics Knowledge recap lines added to the current learner source versus earlier signed R11 learner. `BLOCKERS=NONE` for AUTHORING subject/source custody after scoped author recheck; only Release AP/R/QA/owner permission remains. No website integration, independent held-out Readiness, RD1 public content, Mastery or deploy.
