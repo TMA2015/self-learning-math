@@ -5,7 +5,7 @@ STANDARD_VERSION: 3.1.0
 PACKET_ID: THPT-TOPIC-STATISTICS-G10-G12-FULL-R09
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md
-SOURCE_BLOB: b5713f0c2a1aa6a9fa7a7d63f6e6878bdf8d338b
+SOURCE_BLOB: b875ca4e726ab14071f17a2d8a85d6950e3b4ba9
 PREVIOUS_R06_BLOB: 12f3af42c2e6b0f316355dcedfc34ec8b6136694
 BASELINE_R05_BLOB: 0762cc67491965a4bab700aa1d33937aa3bf7cb6
 ORIGINAL_R01_BLOB: 4f4dc4abcf671479fe0650595e9b67f745738b9a
@@ -27,7 +27,7 @@ AUTHOR_SIGNOFF: AUTHORING tự kiểm và chịu trách nhiệm Academic+PED the
 
 ORIGINAL_R07_SOURCE_BLOB: e31771e0fb9347c8c242ec8ca9e8a91a1ab74ff6
 ORIGINAL_R07_AUTHOR_Q18_BLOB: 40feca220c54fc0620ab113cc354e3d37a66088e
-R09_SOURCE_BLOB: b5713f0c2a1aa6a9fa7a7d63f6e6878bdf8d338b
+R09_SOURCE_BLOB: b875ca4e726ab14071f17a2d8a85d6950e3b4ba9
 R09_A1_A7_PARITY_METADATA_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_SOURCE_EQUIVALENCE_114_Q15_20261116.md
 R09_A1_A7_PARITY_METADATA_BLOB: 4a519ff67d28ed3da93be87a8b630e42beb649f5
 R09_DELTA_CLASS: DELTA_A_UI_AND_DELTA_B_SOURCE_EQUIVALENT
@@ -164,4 +164,11 @@ R09_REVIEW_SCOPE: R07 original source math checks and Q18 receipt remain valid o
 ## R09 source-specific author technical signoff
 
 AUTHOR_SIGNOFF: TOP22_R09_114_EXACT_ORIGINAL_ITEM_PROJECTIONS_19_WRITTEN_13_LESSONS_9_PUBLIC_SELF_CHECK_2_SVG_20261116
-AUTHOR_SELF_QA_RECEIPT: This source-specific technical receipt binds R09 `b5713f0c2a1aa6a9fa7a7d63f6e6878bdf8d338b`, A1–A7 `4a519ff67d28ed3da93be87a8b630e42beb649f5` and original unchanged R07 source; math/PED original assertions are historical R07 evidence, NOT a new independent NotebookLM review or website QA. No merge/deploy.
+AUTHOR_SELF_QA_RECEIPT: This source-specific technical receipt binds R09 `b875ca4e726ab14071f17a2d8a85d6950e3b4ba9`, A1–A7 `4a519ff67d28ed3da93be87a8b630e42beb649f5` and original unchanged R07 source; math/PED original assertions are historical R07 evidence, NOT a new independent NotebookLM review or website QA. No merge/deploy.
+
+## 18/11/2026 — active in-place Q18/Q16 source equivalence
+
+- **CURRENT_LEARNER_SOURCE_BLOB** `b875ca4e726ab14071f17a2d8a85d6950e3b4ba9` on the existing unique R09 learner path; historical source `b5713f0c2a1aa6a9fa7a7d63f6e6878bdf8d338b` retains its original immutable Git snapshot and checks. Exact source diff has precisely two redundant standalone `**Đọc hình:**` headings removed and seven public Written self-comparison instruction lines rewritten; original scoring weights, criteria, mathematical solutions and answer keys remain unchanged.
+- Seven notes now explicitly require **self-attempt before reveal** and say **not an official grade**; original had said no official self-grade/Mastery. Runtime Q16 stays unaffected: all **nine public Selfcheck** question-only placements retain `NO_MASTERY NOT_RD1`, the learner Markdown does not implement official Final Submit or write Mastery, no extra private RD1 material disclosed. This is scoped `DELTA_B_SOURCE_EQUIVALENT` verification of guidance semantics, not mathematical-material change.
+- Verified complete **114 original Practice headings**, canonical display marker sequence, two SVG references, 9 public question-only Selfchecks, and answer disclosure count unchanged. Existing grouped-mode worked math and 21 direct recomputation checks remain source-equivalent on the unchanged math blocks. No new mathematical definitions, formulas, conditions, item answer/rubric changed.
+- **PDF-index:** original reviewer R2 citation was a metadata error; correct G11 KNTT printed scope ChIII B08–B09 pp58–68 recorded by prior source receipt, without requiring an exclusive PDF offset to establish correct mathematics. Historical P2=1 is a nonblocking provenance note, not P0/P1, and **not** a reason to change the mathematics. No new independent NotebookLM full-Topic PASS claimed.
