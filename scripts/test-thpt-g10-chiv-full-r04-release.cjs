@@ -287,8 +287,12 @@ for(const [tag,rec]of Object.entries(transfer)){
     const uiField=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
     assert.equal(uiField("R01_PUBLISHED_B11_SOURCE_BLOB"),field("B11_CANDIDATE_SOURCE_BLOB"),
      "B11 force D2 still depends on exact independently reviewed R01");
-    assert.equal(sha(modelB),uiField("R02_B11_SOURCE_BLOB"),
-     "B11 force D2 must remain in signed R02 UI-only learner source");
+    const newReceipt=read("prototypes/thpt/ux795/G10_B11_B12_OWNER_P2_SOURCE_FIRST_DELTA_A_R01_20261118.md");
+    const d=k=>newReceipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    assert.equal(d("B11_BASELINE_SOURCE_BLOB"),uiField("R02_B11_SOURCE_BLOB"),
+     "B11 signed R02 historic force D2 source SHA preserved");
+    assert.equal(sha(modelB),d("B11_SOURCE_CURRENT_BLOB"),
+     "B11 force D2 remains in source-first current canonical learner source");
     const examples=modelB.split('=== "Ví dụ"')[1]?.split('=== "Lỗi thường gặp"')[0]||"";
     assert(examples.includes("### 3.4. Ví dụ 4 — Hợp lực")&&
      examples.includes("THPT_G10_CHIV_FORCE_TRANSFER_D5_R01_CORRECTED.svg")&&

@@ -7,6 +7,7 @@
 const fs=require("node:fs"),path=require("node:path"),assert=require("node:assert/strict");
 const cp=require("node:child_process"),crypto=require("node:crypto");
 const root=path.resolve(__dirname,"..");
+require("./test-g10-b11-b12-source-first-delta.cjs");
 const baseline="95c111b313886283bd8245babcc9ffdbfcc7c54f";
 const {chvEditorialReceiptRows,candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 const blob=data=>{
@@ -45,7 +46,12 @@ for(const n of [12,13,14]){
  const receipt=n===12?fs.readFileSync(path.join(root,
   "prototypes/thpt/ux795/G10_CHV_B12_S1_PED_CALCULATOR_Q18_R01_20261118.md"),"utf8"):null;
  const r12=k=>receipt?.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
- const expected=n===12?r12("B12_R01_SOURCE_BLOB"):row.candidate;
+ const p2=fs.readFileSync(path.join(root,
+  "prototypes/thpt/ux795/G10_B11_B12_OWNER_P2_SOURCE_FIRST_DELTA_A_R01_20261118.md"),"utf8");
+ const d=k=>p2.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+ const expected=n===12?d("B12_SOURCE_CURRENT_BLOB"):row.candidate;
+ if(n===12)assert.equal(d("B12_BASELINE_SOURCE_BLOB"),r12("B12_R01_SOURCE_BLOB"),
+  "B12 historic reviewed source SHA must remain immutable");
  assert.equal(blob(source),expected,"B"+n+" current Git blob != current Q18 signed source");
  assert.equal(candidateG10KnowledgeBlob(n),expected,"B"+n+" source router selects wrong signed source");
  assert.equal(row.moved,n===12?4:moving[n],"B"+n+" legacy Q15 placements must remain frozen");
@@ -56,7 +62,10 @@ for(const n of [12,13,14]){
    receipt.includes("DELTA_C_ACADEMIC_MATERIAL"),"B12 material must stay independent-review HOLD");
   const master=fs.readFileSync(path.join(root,
    "prototypes/thpt/content-drafts/THPT_G10_CHV_B12_CANONICAL.md"),"utf8");
-  assert.equal(blob(master),r12("ONE_CANONICAL_B12_R01_BLOB"),"B12 ONE canonical manuscript drift");
+  assert.equal(d("B12_BASELINE_CANONICAL_BLOB"),r12("ONE_CANONICAL_B12_R01_BLOB"),
+    "B12 historic independent-reviewed canonical SHA must remain immutable");
+  assert.equal(blob(master),d("B12_CANONICAL_CURRENT_BLOB"),
+    "B12 ONE current canonical must match updated source-first receipt");
   assert.equal(master.split("<!-- BEGIN_B12_KNOWLEDGE_MARKDOWN -->\n")[1]
    .split("\n<!-- END_B12_KNOWLEDGE_MARKDOWN -->")[0],s,"B12 learner Knowledge must equal ONE canonical Section A");
   const bank=fs.readFileSync(path.join(root,
@@ -114,9 +123,15 @@ for(const n of [12,13,14]){
   const ex=s.slice(r,t),errors=s.slice(t);
   assert.equal((ex.match(/^    ### 3\.[1-4]\. Ví dụ [1-4] —/gm)||[]).length,4,
    "B12 four reasoned examples including SGK calculator must be authored");
-  for(const term of ["**Giải:**","**Kiểm lại:**","**Vì sao chọn cách này:**",
-   "**Chọn phương pháp:**","**Giải theo thao tác:**"])
-   assert(ex.includes(term),"B12 worked method missing "+term);
+  for(const term of ["**Giải:**","**Kiểm lại:**","**Phân tích:**",
+   '!!! example "Lời giải"',"#### Đề bài"])
+   assert(ex.includes(term),"B12 source-first structure missing "+term);
+  assert.equal(ex.split('!!! example "Lời giải"').length-1,4,
+   "B12 four source-authored native solution boxes, no runtime overlay");
+  assert.equal(ex.split("**Phân tích:**").length-1,4,
+   "B12 four source-authored analysis labels");
+  assert(!ex.includes("**Vì sao chọn cách này:**")&&!ex.includes("**Chọn phương pháp:**"),
+   "B12 legacy method heading still present in current manuscript");
   assert(ex.includes("2^9")&&ex.includes("886{,}810"),
    "B12 authentic SGK p74 calculator worked example absent");
   assert.equal((errors.match(/^    \?\?\? tip "4\.[1-3]\. /gm)||[]).length,3,

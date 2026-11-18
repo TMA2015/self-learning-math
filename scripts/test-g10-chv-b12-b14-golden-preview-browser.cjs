@@ -11,7 +11,7 @@ const {chromium}=require("playwright");
 const root=path.resolve(__dirname,"..");
 const base=process.env.SLM_CHV_URL||"http://127.0.0.1:8765";
 const expectedSources={
- 12:"fc2942aeafdcd34d3cedd9eeb24c48716bbe7e78",
+ 12:"6b0f137849e11a74a28d4b7fe436d2911a5b5c9d",
  13:"0459b67858246cb6136cf9a2cf9e7a7d18bd27be",
  14:"21c1ef59277f742b45a27900b173fac031a4a04f"
 };
@@ -33,11 +33,18 @@ const blob=data=>{
    assert.equal(get("BASELINE_B12_KNOWLEDGE_BLOB"),
     "386a8d46bb4960bbab4934a5891fad89406ac7a5",
     "B12 R01 must retain original independently reviewed source history");
-   assert.equal(get("B12_R01_SOURCE_BLOB"),blob(source),
-    "B12 must use exactly signed Academic Delta C candidate source");
+   const delta=fs.readFileSync(root+
+     "/prototypes/thpt/ux795/G10_B11_B12_OWNER_P2_SOURCE_FIRST_DELTA_A_R01_20261118.md","utf8");
+    const df=k=>delta.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    assert.equal(df("B12_BASELINE_SOURCE_BLOB"),get("B12_R01_SOURCE_BLOB"),
+     "B12 prior independent-review SHA remains frozen");
+    assert.equal(df("B12_SOURCE_CURRENT_BLOB"),blob(source),
+     "B12 new current source SHA exact");
    const master=fs.readFileSync(root+"/prototypes/thpt/content-drafts/THPT_G10_CHV_B12_CANONICAL.md","utf8");
-   assert.equal(blob(master),get("ONE_CANONICAL_B12_R01_BLOB"),
-    "B12 source must derive from one signed complete manuscript");
+   assert.equal(df("B12_BASELINE_CANONICAL_BLOB"),get("ONE_CANONICAL_B12_R01_BLOB"),
+     "B12 prior approved canonical remains frozen");
+    assert.equal(blob(master),df("B12_CANONICAL_CURRENT_BLOB"),
+     "B12 new source-first one canonical SHA exact");
    assert.equal(master.split("<!-- BEGIN_B12_KNOWLEDGE_MARKDOWN -->\n")[1]
     ?.split("\n<!-- END_B12_KNOWLEDGE_MARKDOWN -->")[0],source.toString("utf8"),
     "B12 learner Knowledge must be byte-identical to current canonical");
@@ -186,14 +193,16 @@ const blob=data=>{
      }
      assert.equal(await blocks.nth(2).locator(":scope > h3").count(),lesson===12?4:3,
       context+" signed number of worked examples");
-     assert.equal(await blocks.nth(2).locator(".thpt-g10-example-solution").count(),
-      lesson===12?4:3,context+" all four B12 method-first examples grouped in Golden UI");
+     const sourceBox=lesson===12?".admonition.example":".thpt-g10-example-solution";
+      assert.equal(await blocks.nth(2).locator(sourceBox).count(),
+       lesson===12?4:3,context+" B12 source-authored solutions, B13/B14 legacy Golden");
      const render=await article.evaluate(root=>{
       const body=getComputedStyle(root.querySelector(".tabbed-block p")).fontSize;
       const labels=[...root.querySelectorAll(":scope > .tabbed-set > .tabbed-labels > label")];
       const closed=[...root.querySelectorAll(".tabbed-block details.question")];
       const tips=[...root.querySelectorAll(".tabbed-block details.tip")];
-      const worked=[...root.querySelectorAll(".tabbed-block .thpt-g10-example-solution")];
+      const worked=[...root.querySelectorAll(location.pathname.includes("/bai-12/")?
+        ".tabbed-block .admonition.example":".tabbed-block .thpt-g10-example-solution")];
       return {
        heights:labels.map(e=>e.getBoundingClientRect().height),
        closed:closed.every(e=>!e.open),
@@ -217,10 +226,35 @@ const blob=data=>{
      assert.equal(await article.locator("[data-g10-chapter-selfcheck]").count(),0,
       context+" no independent Readiness exposed");
      if(lesson===12){
-      await labels.nth(0).click();
+       const native=blocks.nth(2).locator(".admonition.example");
+       const texts=await native.allInnerTexts();
+       assert.equal(texts.length,4,context+" B12 four native source-authored Lời giải");
+       assert(texts.every(x=>x.includes("Giải:")&&!x.includes("Đề:")),
+        context+" only Giải may appear inside solution box");
+       assert.equal(await blocks.nth(2).locator(":scope > p").filter({hasText:/^Phân tích:/}).count(),4,
+        context+" B12 four plain Phân tích outside boxes");
+       assert.equal(await blocks.nth(1).locator(".admonition.abstract").count(),3,
+        context+" three source-authored concepts/definitions");
+       assert.equal(await blocks.nth(1).locator(".admonition.info").count(),1,
+        context+" one source-authored rule card");
+       await labels.nth(0).click();
       const fig=blocks.nth(0).locator('img[src*="THPT_G10_B12_ERROR_INTERVAL_D5_R02_REVIEWED.svg"]');
       assert.equal(await fig.count(),1,context+" signed interval figure must guide concept BEFORE tab2");
       await fig.scrollIntoViewIfNeeded();
+       const size=await fig.evaluate(img=>{
+        const f=img.closest("figure");return {
+         w:img.getBoundingClientRect().width,fig:f.getBoundingClientRect().width,
+         scroll:f.scrollWidth,client:f.clientWidth,
+         overflow:getComputedStyle(f).overflowX,
+         doc:document.documentElement.scrollWidth-innerWidth};
+       });
+       assert(size.doc<=3,context+" D5 no whole-page overflow");
+       if(width===390)
+        assert(size.w>=580&&size.scroll>size.client+50&&
+          ["auto","scroll"].includes(size.overflow),
+         context+" B12 mobile diagram legible and pans inside figure");
+       else assert(size.fig>=Math.min(600,width*.65)&&size.w<=size.fig+2,
+         context+" D5 B12 must be a large readable diagram");
       assert(await fig.evaluate(async img=>{if(img.decode)await img.decode();return img.naturalWidth>0;}),
        context+" signed D5 source interval graphic must decode on device viewport");
       await labels.nth(2).click();

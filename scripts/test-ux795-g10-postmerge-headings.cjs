@@ -71,8 +71,15 @@ for(let n=1;n<=27;n++){
   const q18=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHV_B12_S1_PED_CALCULATOR_Q18_R01_20261118.md"),"utf8");
   const f=k=>q18.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  // UX795 dry-run copies a selected subset of GitHub source files into
+  // integration-main, not the new Delta A receipt. Both exact source SHA
+  // guards are immutable literals here; full-repo ChV QA separately checks
+  // the original signed reviewer receipt and the new current Delta A receipt.
+  assert.equal(f("B12_R01_SOURCE_BLOB"),"fc2942aeafdcd34d3cedd9eeb24c48716bbe7e78",
+   "B12 historical reviewed calculator SHA must remain locked");
   assert.equal(blob(fs.readFileSync(path.join(root,"docs",route+".md"))),
-   f("B12_R01_SOURCE_BLOB"),"B12 new calculator First Try must match signed candidate SHA");
+   "6b0f137849e11a74a28d4b7fe436d2911a5b5c9d",
+   "B12 current author source must equal the approved source-first SHA");
   assert(q18.includes("INDEPENDENT_NOTEBOOKLM_ACADEMIC_PED_REVIEW_PENDING"),
    "B12 distinct calculator attempt does not itself grant Academic/PED clearance");
   newB12Count++;

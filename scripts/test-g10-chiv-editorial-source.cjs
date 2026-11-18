@@ -6,6 +6,7 @@
 const fs=require("node:fs"),path=require("node:path"),assert=require("node:assert/strict");
 const crypto=require("node:crypto"),cp=require("node:child_process");
 const root=path.resolve(__dirname,"..");
+require("./test-g10-b11-b12-source-first-delta.cjs");
 const baselineSha="045b15ecc402acf9a081a35bd4a7fb36d6325188";
 const {chivEditorialReceiptRows,candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 const rows=chivEditorialReceiptRows();
@@ -146,8 +147,12 @@ for(const [lesson,row] of rows){
      "B08 R04 extends exactly immutable R03 content");
    const standard=fs.readFileSync(path.join(root,
     "prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md"));
-   assert.equal(blob(standard),f04("R04_STANDARD_BLOB"),
-     "B08 semantic 3+1 must reference one owner-approved exact standard source");
+   assert.equal(f04("R04_STANDARD_BLOB"),"24f744b5d9f114d053b6e2e1ab8a0fb26c3fab39",
+     "B08 original historical standard SHA remains signed and immutable");
+   assert.equal(blob(standard),"224792a6037a098ec3cc42fb67e2c2f95581bbc9",
+     "B08 current owner-effective standard must match merged PR908 exact SHA");
+   assert(standard.toString("utf8").includes("OWNER_APPROVED_PR_899_MERGED_INTO_MAIN_20261117"),
+     "Owner-effective v3.2.0 requires merged PR899 evidence");
    const formal=source.slice(source.indexOf('=== "Kiến thức SGK"'),source.indexOf('=== "Ví dụ"'));
    const signed=[
     ["Định nghĩa — Tổng hai vectơ:",1],
@@ -252,8 +257,12 @@ for(const [lesson,row] of rows){
    "B09 R03 must extend exact frozen original editorial source");
   const standard=fs.readFileSync(path.join(root,
    "prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md"));
-  assert.equal(blob(standard),f("STANDARD_BLOB"),
-   "B09 3+1 source uses one effective signed v3.2.0 standard");
+  assert.equal(f("STANDARD_BLOB"),"24f744b5d9f114d053b6e2e1ab8a0fb26c3fab39",
+   "B09 historical v3.2.0 signed standard SHA must remain immutable");
+  assert.equal(blob(standard),"224792a6037a098ec3cc42fb67e2c2f95581bbc9",
+   "B09 effective v3.2.0 after approved PR908 must match exact SHA");
+  assert(standard.toString("utf8").includes("OWNER_APPROVED_PR_899_MERGED_INTO_MAIN_20261117"),
+   "Owner-effective v3.2.0 activation must be explicit");
   const official=source.slice(source.indexOf('=== "Kiến thức SGK"'),source.indexOf('=== "Ví dụ"'));
   const anchors=[
    "Định nghĩa — Tích của một vectơ với một số:",
@@ -443,10 +452,17 @@ for(const [lesson,row] of rows){
    uf("R01_Q18_RECEIPT_BLOB"),"B11 original independently reviewed Q18 receipt must be frozen");
   assert.equal(uf("R01_CSS_BLOB"),uf("R02_CSS_BLOB"),
    "B11 UI-only Tab4 reflow cannot change CSS");
-  expected=uf("R02_B11_SOURCE_BLOB");
+  const p2=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_B11_B12_OWNER_P2_SOURCE_FIRST_DELTA_A_R01_20261118.md"),"utf8");
+  const d=k=>p2.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(d("B11_BASELINE_SOURCE_BLOB"),uf("R02_B11_SOURCE_BLOB"),
+   "B11 prior signed reviewed source remains immutable");
+  assert.equal(d("B11_BASELINE_CANONICAL_BLOB"),uf("R02_ONE_CANONICAL_B11_BLOB"),
+   "B11 prior signed canonical remains immutable");
+  expected=d("B11_SOURCE_CURRENT_BLOB");
   assert.equal(blob(fs.readFileSync(path.join(root,
    "prototypes/thpt/content-drafts/THPT_G10_CHIV_B11_CANONICAL.md"))),
-   uf("R02_ONE_CANONICAL_B11_BLOB"),"B11 R02 full manuscript SHA changed");
+   d("B11_CANONICAL_CURRENT_BLOB"),"B11 current single canonical Section A SHA mismatch");
  }
  assert.equal(blob(source),expected,lesson+" exact final Q18 academic source receipt");
  assert.equal(candidateG10KnowledgeBlob(n),expected,lesson+" Q18 source router selects correct immutable snapshot");
@@ -524,8 +540,12 @@ for(const [lesson,row] of rows){
    "B11 force equilibrium worked example must belong to Tab3, not errors");
   assert(examples.includes("6\\,\\mathrm N")&&examples.includes("THPT_G10_CHIV_FORCE_TRANSFER_D5_R01_CORRECTED.svg"),
    "B11 original source-matched 8/15 SVG must be separated from 6/6 worked force example");
-  for(const k of ["**Giải:**","**Kiểm lại:**","**Chọn phương pháp:**"])
-   assert(examples.includes(k),"B11 worked examples must contain mathematical reasoning "+k);
+  for(const k of ["**Giải:**","**Kiểm lại:**","**Phân tích:**",'!!! example "Lời giải"'])
+   assert(examples.includes(k),"B11 source-authored example missing "+k);
+  assert.equal(examples.split('!!! example "Lời giải"').length-1,4,
+   "B11 must have four native authored solution boxes");
+  assert.equal(examples.split("**Phân tích:**").length-1,4,
+   "B11 four source-authored Phân tích labels");
  }else{
   assert.equal(examples,previous.slice(previous.indexOf('=== "Ví dụ"'),previous.indexOf('=== "Lỗi thường gặp"')),
    lesson+" previously approved three worked examples changed");
@@ -557,8 +577,15 @@ for(const [lesson,row] of rows){
   const ui=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHIV_B11_P2_TAB4_GOLDEN_DELTA_A_UI_R02_20261118.md"),"utf8");
   const uf=k=>ui.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
-  assert.equal(blob(Buffer.from(reconstructed)),uf("R01_PUBLISHED_B11_SOURCE_BLOB"),
-   "B11 R02 only Tab4 UI reflow allowed; reconstruct R01 source byte-for-byte");
+  assert.equal(uf("R02_B11_SOURCE_BLOB"),"60a3d043694986e3250f15b51350380b86f70cfc",
+    "B11 original R02 signed Knowledge source remains immutable");
+   // The new Delta A only changes Examples. Guard every byte of Tab4 against
+   // the owner-approved R02 snapshot rather than comparing whole old lesson.
+   let h4=0xcbf29ce484222325n;
+   for(const ch of source.split('=== "Lỗi thường gặp"')[1])
+    h4=(h4^BigInt(ch.charCodeAt(0)))*0x100000001b3n&0xffffffffffffffffn;
+   assert.equal(h4.toString(16).padStart(16,"0"),"c41feeaf19e96098",
+    "B11 original Tab4 error examples and HELP unchanged from approved R02");
   assert.equal((last.match(/^    \?\?\? tip "/gm)||[]).length,3,
    "B11 must keep exactly three independent HELP disclosures");
   assert(!source.includes(String.fromCharCode(96))&&
