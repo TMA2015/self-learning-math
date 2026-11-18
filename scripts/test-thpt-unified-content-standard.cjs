@@ -24,6 +24,15 @@ const REQUIRED_SECTIONS=[
  "## X. Quản trị thay đổi và bảo đảm “một chuẩn”",
  "## XI. Truy vết nguồn → điều khoản và phân công"
 ];
+// v3.2 approved as a draft prior to PR #899; after owner-approved merge,
+// its effective marker must reference the exact known merged receipt.
+// A prospective branch without that receipt remains a non-effective draft.
+function validV32Approval(source,status) {
+  if(status==="OWNER_APPROVED_EFFECTIVE_AFTER_MERGE")return true; // prospective only; gate does not activate
+  return status==="OWNER_APPROVED_EFFECTIVE" &&
+    source.includes("**ACTIVATION:** `OWNER_APPROVED_PR_899_MERGED_INTO_MAIN_20261117`") &&
+    source.includes("6d9ae928876379a9c00e23a62c77504eb7a6d028");
+}
 function validate(source, agents, queue) {
  const failures=[],warnings=[];
  const fail=x=>failures.push(x);
@@ -50,7 +59,7 @@ function validate(source, agents, queue) {
  const approvalStatus=(source.match(/^\*\*STATUS:\*\*\s*\x60([A-Z0-9_]+)\x60/m)||[])[1];
  if(["2.0.0","3.0.0","3.0.1","3.1.0","3.2.0"].includes(version)){
    if(version==="3.2.0"){
-     if(approvalStatus!=="OWNER_APPROVED_EFFECTIVE_AFTER_MERGE")
+     if(!validV32Approval(source,approvalStatus))
        fail("V3_2_OWNER_APPROVAL_NOT_EXPLICIT");
    }else if(version==="3.1.0"){
      if(approvalStatus!=="OWNER_APPROVED_EFFECTIVE")
@@ -106,7 +115,7 @@ function validate(source, agents, queue) {
       fail("SGK_V3_1_DRAFT_MUST_NOT_CLAIM_EFFECTIVE");
   }
   if(version==="3.2.0"){
-   if(approvalStatus!=="OWNER_APPROVED_EFFECTIVE_AFTER_MERGE")
+   if(!validV32Approval(source,approvalStatus))
     fail("V3_2_OWNER_APPROVAL_NOT_EXPLICIT");
    for(const token of [
      "## X-F. OWNER DECISION 12/11/2026",
@@ -180,10 +189,14 @@ function selfTest(){
     assert(validate(full.replaceAll("FORMAL_RULE","ROLE_REMOVED"),"","")
       .failures.some(e=>e.startsWith("V3_2_SEMANTIC_CONTROL_MISSING")),
       "V3.2 must fail if semantic role deleted");
-    assert(validate(full.replace("**STATUS:** `OWNER_APPROVED_EFFECTIVE_AFTER_MERGE`",
+    assert(validate(full.replace(/^\*\*STATUS:\*\* \x60[A-Z0-9_]+\x60/m,
       "**STATUS:** `GOVERNANCE_REVIEW_NOT_APPROVED`"),"","")
       .failures.includes("V3_2_OWNER_APPROVAL_NOT_EXPLICIT"),
       "V3.2 fake approval must fail");
+    assert(validate(full.replace("OWNER_APPROVED_PR_899_MERGED_INTO_MAIN_20261117",
+      "UNAPPROVED_MERGE"),"","")
+      .failures.includes("V3_2_OWNER_APPROVAL_NOT_EXPLICIT"),
+      "V3.2 forged merge receipt must fail");
   }
  if(/\*\*VERSION:\*\* `3\.1\.0`/.test(full)){
     assert(validate(full.replace("## X-F. OWNER DECISION 12/11/2026","## X-F. [REMOVED]"),"","")
