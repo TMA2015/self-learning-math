@@ -9,20 +9,20 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_PERPENDICULARITY_R03_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: ad3fdadb2b6a7150118c2534bf02cf9563f92e26
-SOURCE_BLOB: ad3fdadb2b6a7150118c2534bf02cf9563f92e26
+ACADEMIC_SOURCE_BLOB: 363316efc7a338e4ec7d5629b182fce3de271356
+SOURCE_BLOB: 363316efc7a338e4ec7d5629b182fce3de271356
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_R03_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: 8424bdccdbf5ea6041da60fea5ea063e90f8b388
+AUTHOR_METADATA_BLOB: b2fef1fab9629e53bab34295ce858c888bb4448f
 ORIGINAL_R01_SOURCE_BLOB: 0e934389ebfe239ace19cc23c5dedf9c23d8ebdc
 ORIGINAL_R02_EDITORIAL_CANDIDATE_BLOB: 60f69d43bfa3f4508e8c7a787bad517141f9b2b2
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
-INTERACTIVE_MODEL_BLOB: e14ee4c6ec6c851f228352656b0cd8e2fc3a2a06
+INTERACTIVE_MODEL_BLOB: 931093557eb411b9f78286a92e6545dcbd59aa73
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
 P2: 0
-AUTHOR_SIGNOFF: TOP16_R03_20261118_RECAP_Q18_ad3fdadb2b6a7150118c2534bf02cf9563f92e26
+AUTHOR_SIGNOFF: TOP16_R03_20261118_O12_AFFECTED_MATH_PED_363316efc7a338e4ec7d5629b182fce3de271356
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
@@ -31,7 +31,7 @@ RELEASE_AUTHORIZATION: NO
 
 S1_RECEIPT: SGK Toán 11 KNTT Tập Hai, Chương VII B22 tr.27–30, B23 tr.31–37, B24 tr.38–43, B25 tr.44–53; SBT Tập Hai B22 tr.24–25, B23 tr.26–28, B24 tr.29–30, B25 tr.31–34. Dùng owner/historical G11 original-source receipt Git blob afc8ec039213b87b4930f2d34d48c28d1fc6277f và prior authoring PR #710; không nhận đã trực tiếp mở lại PDF SGK/SBT trong lượt R03. G11 B26–B27/CHVII-INTEGRATED thuộc CĐ17, không cộng vào CĐ16.
 OUTCOME_AUDIT: 21/21 TOP16-O01..O21 thuộc B22=4, B23=5, B24=5, B25=7; từng mục có diễn giải bản chất, điều kiện, định lí, Ví dụ với Đề bài và Lời giải tách độc lập, Vận dụng rồi tự mở Đối chiếu và hướng D6. Ma trận canonical item–outcome–role 86/86 không đổi; eight original Topic-only SGK skill reassignments remain as source-locked R01 metadata.
-MATH_VERIFICATION: 57/57 concrete arithmetic, vector dot/cross/skew, angles, Pythagoras, projections, normal-to-plane and degenerate B=H edge checks executed and PASS against the actual R03 Example / Practice / Written values. Also 51/51 direct structural/parity checks PASS. 41/41 SGK original stem+key+solution+rubric projections source-exact, 24/24 unchanged Topic Practice/Written answer/rubric paragraphs source-equivalent, four SVG original blob SHA exact. This is QA evidence, not formal proof for arbitrary unseen cases.
+MATH_VERIFICATION: CURRENT_O12_DIRECT_AUTHOR_MATH_CHECK_PASS: for (P):z=0, A=(0,0,2) OUTSIDE plane, H=(0,0,0) and B=(3,0,0) IN plane; AH direction (0,0,-2) perpendicular all in-plane directions, BH direction (3,0,0), c through H direction (0,1,0), c perpendicular BH and vector AB=(3,0,-2) dot direction c = 0. Correct application of three-perpendicular-lines theorem. The earlier 57/57 math/edge assertions and 51/51 source/parity checks belong to the PRIOR immutable signed R03 snapshot, not claimed newly run on this changed learner. Current 21 lesson / 86 Q15 ID / 8 replay / 4 SVG and unchanged Practice/Written stem/key/rubric source directly cross-checked; no formal proof for unseen cases.
 PED_VERIFICATION: Four connected discovery arcs from two line directions to perpendicular floor, roof slope/orthogonal projection, dihedral cross-section. 21 narrative why-and-condition explanations before appropriate formal statements, 21 standalone solved examples, 21 learner-try Vận dụng / optional Đối chiếu / D6, 65 learner-visible Practice questions (33 SGK +8 SGK Written +21 Topic P+3 Topic W), 8 public question-only selfchecks. Four original images with guided reading near lessons. Uses NotebookLM draft only as editorial inspiration with its incorrect ChVIII scope rejected; not independent reviewer verdict.
 CANONICAL_Q15: Exactly 86 unique PUBLIC IDs: 41 source-exact display-only original G11 ChVII SGK (33 D3 +8 Written/Anchor), 21 Topic FirstTry T01–T21, 21 Topic Practice P01–P21, 3 Topic Written W01–W03. Eight selfcheck public replay P02/P06/P09/P12/P14/P16/P18/P21 are existing placements, NOT new items. One canonical stem/key/solution/rubric per ID, original SGK source owner unchanged, 8 Topic-only semantic crosswalks preserved.
 ASSESSMENT_Q16: Eight question-only public replay stems shown, no hint/key/correctness/rubric/AI Tutor before official Final Submit; it is `CLIENT_SELF_CHECK_NO_MASTERY` and never official Topic Readiness. Zero protected private RD1 questions/answers/rubrics uploaded, no Learner/Firebase updates, Final Submit rendering/submit engine belongs to RELEASE and is NOT claimed working.
@@ -103,13 +103,20 @@ ASSESSMENT_Q16: Eight question-only public replay stems shown, no hint/key/corre
 | 12 · Q01/Q17 | One SGK source line at end of entire Topic; S1 page/receipt details remain outside student source |
 | 13 · Q18 | Rechecked issue #865 CĐ14/CĐ15 regression: numbering tree, source-exact 41+24, 21 example independence, 4 figures/near label, 8 Check stems, 0 duplicate IDs; 51 structural/parity checks and 57 math/edge assertions ran on exact R03 source |
 
-- Original SVG B22 `5f2d23adb6f947064312d04d67ce5a5bb2d1ff48`, B23 `b53b65704f9830e1c97b533bac0e79a0b56761b6`, B24 `c98d7df30b87c339336636e00322816a4099681b`, B25 `3f6112a7b12f1829ee2249b979d45f1f5370fc66` all exact Git blob. Interactive model source R01 `e14ee4c6ec6c851f228352656b0cd8e2fc3a2a06` unchanged.
+- Original SVG B22 `5f2d23adb6f947064312d04d67ce5a5bb2d1ff48`, B23 `b53b65704f9830e1c97b533bac0e79a0b56761b6`, B24 `c98d7df30b87c339336636e00322816a4099681b`, B25 `3f6112a7b12f1829ee2249b979d45f1f5370fc66` all exact Git blobs. Historical model R01 `e14ee4c6ec6c851f228352656b0cd8e2fc3a2a06` was visually extended with 17 new Golden CSS-only lines; CURRENT exact HTML model `931093557eb411b9f78286a92e6545dcbd59aa73` preserves original HTML/JS/math logic byte-exact.
 - R03 includes `DELTA_C_ACADEMIC_MATERIAL` on learner-first exploration and examples (new 21 worked problems), `DELTA_B_SOURCE_EQUIVALENT` display-only SGK/unchanged 24 Topic solution bodies. No source status from R01/R02 transferred.
 - Q01–Q18/A1–A7 `AUTHOR_SELF_VERIFIED_PASS`, `P0=P1=0` in author source scope. One new R03 V2+ready/REGISTER to source-lock this snapshot. **No independent NotebookLM PASS, no site Q16 Final Submit/Golden browser QA, no physical Safari, no merge/deploy or production permission.**
 
 ## 18/11/2026 — targeted active learner recall verification
 
-- Exact current SOURCE_BLOB `ad3fdadb2b6a7150118c2534bf02cf9563f92e26` vs original signed R03 `0adf45aa8d776634d66f5c8e57b1c86ad77c8ed2`: the **only difference** is one student four-bullet recall block before Luyện tập; 21 detailed explanations, 86 canonical ID bodies/stems/answer/rubrics/D6, all public Selfcheck and four SVG references remain byte-exact. The historical `51+57` original assertions remain valid only on original R03, not claimed as rerun whole Topic.
+- Prior 18/11 source-before-O12-fix `ad3fdadb2b6a7150118c2534bf02cf9563f92e26` vs original signed R03 `0adf45aa8d776634d66f5c8e57b1c86ad77c8ed2`: the **only difference** is one student four-bullet recall block before Luyện tập; 21 detailed explanations, 86 canonical ID bodies/stems/answer/rubrics/D6, all public Selfcheck and four SVG references remain byte-exact. The historical `51+57` original assertions remain valid only on original R03, not claimed as rerun whole Topic.
 - B22/O01: angle of skew lines must compare **parallel translations** through one common point and does not depend on perspective projection. B23/O05: perpendicularity to plane follows from perpendicularity to two **intersecting** lines in it, not two parallel lines. B24/O10: angle line–plane uses orthogonal projection and degenerate 90°/0° cases. B25/O15: measured dihedral angle uses lines inside each face perpendicular to common edge; height must be perpendicular to base.
 - Learner recap accurately summarizes existing mathematical conditions, no formula/condition of canonical item changed. Signed scoped AUTHOR_SELF_VERIFIED DELTA_C knowledge presentation only; no new independent NotebookLM full-Topic verdict, official RD1/Mastery or RELEASE integration.
 
+## CURRENT 18/11/2026 · affected O12 academic/PED correction and exact current model source
+
+- **SOURCE_BLOB** `363316efc7a338e4ec7d5629b182fce3de271356` is the ONE current learner Markdown, superseding previous `ad3fdadb2b6a7150118c2534bf02cf9563f92e26`. Two lines changed in standalone Knowledge `TOP16-O12`, not in canonical Practice/assessment: false statement “Trong mặt z=0 đặt A(0,0,2)” contradicted A coordinate since 2≠0, and “AB=(3,0,-2)” used scalar-style segment symbol where a **vector** was intended. Corrected stem explicitly locates A OUTSIDE (P), H/B IN (P), and the worked solution explicitly computes `\\overrightarrow{AB}=(3,0,-2)`. With AH perpendicular (P) and c in (P) perpendicular BH, theorem gives c perpendicular AB; arithmetic direct check `(3,0,-2)·(0,1,0)=0`. The two-line change corrects a **mathematically false premise and learner pedagogical interpretation**, so `DELTA_C_ACADEMIC_MATERIAL` affected-scope math/PED proof. No uncertainty remains requiring NotebookLM independent review: `NOTEBOOKLM_REREVIEW=NOT_REQUIRED_WITH_REASON` per effective Q18 v3. No independent Topic16 reviewer PASS claimed.
+- **A1–A7 current** `b2fef1fab9629e53bab34295ce858c888bb4448f`, 21 outcomes and worked examples, 86 canonical unique item IDs (41 original SGK+21 First Try+21 Practice+3 Written), 65 Practice cards, 8 public question-only replay, 86/86 disclosures, four original SVG, all unchanged from previous current learner except O12 example 2 lines. No RD1/public Mastery/official Readiness.
+- **HTML model** current Git `931093557eb411b9f78286a92e6545dcbd59aa73`, original `e14ee4c6ec6c851f228352656b0cd8e2fc3a2a06`: direct exact LCS diff shows only 17 inserted CSS Golden UI lines, no old HTML/JS/angle math logic deleted or changed. Model `DELTA_A_UI` separate from O12 academic correction; browser device/Golden AP QA not certified by source check.
+- **S1 source owner** actual exact Git `afc8ec039213b87b4930f2d34d48c28d1fc6277f` fetched locally on this Topic branch, original G11 ChVII B22–B27 wrapper; CĐ16 remains strictly B22–B25, B26/27 out-of-scope CĐ17, no new SGK original key/rubric. Original B22/B23/B24/B25 4 SVG blobs individually fetched and exact.
+- **One current READY**: historical R01 ready `6de988fbe61f2e6bc5e58571e9cad68605cdd990` byte-exact in `prototypes/thpt/release-queue/archive/THPT-TOPIC16-PERPENDICULAR-ANGLE-FULL-R01_HISTORICAL_SIGNED_20261118.md`, no longer active ready. Current V2/ready/REGISTER source locks and exact HEAD CI shall be checked separately; no owner merge/deploy or site Q16 runtime claim.
