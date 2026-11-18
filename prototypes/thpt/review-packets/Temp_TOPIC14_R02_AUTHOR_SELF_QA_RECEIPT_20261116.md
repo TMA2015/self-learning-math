@@ -7,10 +7,10 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md
-SOURCE_BLOB: dada7df9fc509cc67238cbc3e5d03376b58f23f4
-ACADEMIC_SOURCE_BLOB: dada7df9fc509cc67238cbc3e5d03376b58f23f4
+SOURCE_BLOB: c80f20dc9f8f2ee000f5c4af5a4c8583a5307cf1
+ACADEMIC_SOURCE_BLOB: c80f20dc9f8f2ee000f5c4af5a4c8583a5307cf1
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_R02_AUTHORING_ONLY_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: b72c3a80ef1a25bc7ac0caa1debcd1eb5ed738a2
+AUTHOR_A1_A7_BLOB: 47d4f38654db0f388eb07563148a3cbec26cae10
 ORIGINAL_R01_SOURCE_BLOB: 277ccb8b5d9f0a8c5f08680fa7e5b70925710308
 ORIGINAL_R01_Q18_BLOB: e20555eae495a910afe25454cc61ad5a97e7e52d
 ORIGINAL_SGK_SOURCE_BLOB: c5c222af88b0e932f9b60df059d8ffd4da5f0f26
@@ -43,7 +43,7 @@ Kiến thức bản R02 thay 23 giải thích D2/diễn giải so với R01 (DEL
 
 ## 18/11/2026 — exact three heading-level corrections; author delta-A source lock
 
-- CURRENT_SOURCE_BLOB `dada7df9fc509cc67238cbc3e5d03376b58f23f4`; baseline R02 original source `8f61c67a11dd3e2869cbd71dbb279bdcfdd92bf3` remains immutable. Three unnumbered H2 orientation headings `## Mạch B`, `## Mạch C`, `## Mạch D` now bold prose before the corresponding numbered H2 groups 2/3/4, preventing a duplicated sibling hierarchy. The math group levels H2=1..4 and H3=1.1..4.6 preserve sequence without missing numbers or orphan segments.
+- CURRENT_SOURCE_BLOB `c80f20dc9f8f2ee000f5c4af5a4c8583a5307cf1`; baseline R02 original source `8f61c67a11dd3e2869cbd71dbb279bdcfdd92bf3` remains immutable. Three unnumbered H2 orientation headings `## Mạch B`, `## Mạch C`, `## Mạch D` now bold prose before the corresponding numbered H2 groups 2/3/4, preventing a duplicated sibling hierarchy. The math group levels H2=1..4 and H3=1.1..4.6 preserve sequence without missing numbers or orphan segments.
 - Original R02 source vs current differs in **exactly three Markdown heading lines only**, not in any problem, definition, worked example, mathematical expression, canonical placement, disclosure, SVG or D6. This `DELTA_A_UI` keeps original 23 structural and 51 direct math checks valid only on unchanged content, with new source/document SHA re-bound.
 - Scoped `AUTHOR_SELF_VERIFIED` format parity only. No new independent NotebookLM Academic/PED PASS or RELEASE QA. Original historical R01/old R02 reviewer SHA unchanged. Protect RD1 and official Mastery boundaries.
 
@@ -136,3 +136,10 @@ Kiến thức bản R02 thay 23 giải thích D2/diễn giải so với R01 (DEL
 A1 source `8f61c67a11dd3e2869cbd71dbb279bdcfdd92bf3`; A2 SGK S1 inherited-source provenance và SBT gap documented; A3 Q18 `AUTHOR_SELF_VERIFIED` không mạo danh notebook; A4 23 LESSON/OUTCOME +110 canonical mappings; A5 D1–D6/PED1–PED6 nghĩa trước công thức, 23 Ví dụ, 23 Vận dụng+D6, 87 bài có lời giải, 3 SVG; A6 R02 changed reasoning delta C verified on affected outcomes + immutable old SGK/bank; A7 no RD1 leak, no Mastery, client-only public selfcheck, no learner/Firebase data.
 
 **AUTHORING verdict:** `Q01-Q18=AUTHOR_SELF_VERIFIED_PASS`, `P0=0`, `P1=0` trên exact R02 source, với đúng một V2/manifest/current REGISTER row. **Không tự cấp** independent NotebookLM PASS, WEBSITE QA PASS, real Final Submit, owner merge/deploy, AP/R/P1/P2. Cảnh báo tích hợp: original G10 SGK wrapper provenance nằm ở historical source; RELEASE phải resolve được original 32+23+4 banks tại combined HEAD, kể cả optional B22 eccentricity, hoặc HOLD R1 đúng phần.
+
+## 18/11/2026 · O22 ellipse D6 targeted author verification, exact current Git source
+
+- **Owner Issue #864 (Q03/Q13/PED6) and #865 anti-regression:** the last effective R02 student source `c80f20dc9f8f2ee000f5c4af5a4c8583a5307cf1` corrects one genuine **pedagogical semantic defect** at `TOP14-O22`, without changing 23/23 outcome structure or any learner item. Previous baseline `dada7df9fc509cc67238cbc3e5d03376b58f23f4` mistakenly instructed a student who had omitted the negative root of the **ellipse** `x²/9+y²/4=1` at `x=0` to revisit a **parabola** symmetry drawing. The direct author check re-solves `y²/4=1\Rightarrow y=\pm2`, identifies both points `(0,2),(0,-2)`, and corrects the D6 wording to the ellipse symmetric across `Ox`. **Both** solutions satisfy the equation; no external source dispute. Change classified `DELTA_C_ACADEMIC_MATERIAL` in the affected Q03/PED6 teaching, not disguised as UI.
+- **Direct outcome-specific Q18 result:** `TOP14-O22` Academic mathematics PASS (two real intersection points), PED6 remediation PASS (correct concept to recheck), Q15/Q16 invariance PASS. Existing 23 examples, 23 T first-tries, 59 original SGK reuses, 23 Topic P practices, 5 Written rubrics, 23 public question-only replays, 3 math SVG and 110 Q15 item IDs unchanged; no private assessment content. Original 23+51 broad direct QA checks belong to prior frozen R02; this minor remedy does **not** purport to rerun all 74 from scratch. No fresh independent NotebookLM verdict claimed. `NOTEBOOKLM_REREVIEW=NOT_REQUIRED_WITH_REASON` under effective owner Q18 v3 (PR #808), since a directly proven one-line conceptual correction leaves no unresolved ambiguity.
+- **A1 metadata relocked:** `47d4f38654db0f388eb07563148a3cbec26cae10`. **Historical R01 manifest** `814997dc5686d5716d880a7c4379a2c146d339af` preserved byte-exact under `archive/THPT-TOPIC14-ANALYTIC-OXY-FULL-R01_HISTORICAL_SIGNED_20261118.md` and removed from active `ready/`; its historical PASS does not transfer to current source. Only one effective current R02 manifest should be registered as `CONTENT_READY`. Former R01 Q18/source/banks remain immutable; DO NOT edit old source to hide prior defect.
+- **Status of this author proof:** `ACADEMIC_AUTHOR_SELF_QA_PASS`, `PED_AUTHOR_SELF_QA_PASS` limited to O22 delta; P0=P1=P2=0 for changed scope; no new external Topic PASS. Release AP/device/Final Submit/official Readiness and owner merge/deploy remain unverified and outside AUTHORING.
