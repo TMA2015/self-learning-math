@@ -3,7 +3,7 @@
 **AUTHOR_Q18_MATH_PED_SELF_VERIFIED_ON_SOURCE / website NOT RELEASE_READY**. Standard: one `SLM-THPT-QUALITY-ONE v3.1.0` Q01–Q18. Source page S1 KNTT G12 ChII B06–B08 and G12 ChV B14–B17; G12 SBT ChV B14 printed p25 missing from original PDF; affected SBT exercise IDs 5.6–5.7 require separately verified source. No autonomous source equivalence or independent Topic NotebookLM PASS claimed.
 
 PACKET_ID: THPT-TOPIC18-OXYZ-FULL-R06-20261117
-STATE: BLOCKED_BY_AUTHORING
+STATE: AUTHORING_Q18_SOURCE_LOCKED_CONTENT_READY
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
@@ -374,3 +374,12 @@ Nguồn hiện hành vẫn là một tệp ở ACADEMIC_SOURCE_PATH, đã chỉn
 ## Current one-source consolidation (17/11/2026)
 
 The effective learner source is **the existing original filename at ACADEMIC_SOURCE_PATH**, with exact SHA `fda1fa60d8448c016c24159156c6898de2bc673f`; the parallel newer-numbered correction candidate was removed after source-level comparison. The R06/R11 release naming in this AUTHORING metadata is a historical packet identifier and does not imply a different live learner body. Current Q18 composite receipt is the existing REVIEW_RECEIPT_PATH with actual blob `0e3ed68872e0e05e5bd26e2a611de440a29e9faa`. Rejected the candidate's three ambiguous bare vector equations; retained exact directed arrow notation and the original 247 public solution disclosures. No source duplication, no Academic/PED whole-topic approval, no web release. `STATE=BLOCKED_BY_AUTHORING` remains in force.
+
+
+## 18/11/2026 — current R06 source-exact AUTHORING closure
+
+Verified two real Git blobs: current single learner source `fda1fa60d8448c016c24159156c6898de2bc673f` and historical removed R06-named learner blob `f8c6a52c84fecd0dd63dae60413cfbe4327f54b5`. Both are **3,638 lines**, identical on every line except the hidden author-only HTML provenance comment at line 3. This is `DELTA_A_UI` provenance, not a change to any vector definition, condition, question, solution, rubric, SVG, Written or assessment. No extra learner source is reintroduced.
+
+Current signed comprehensive Q18 author-self-verification is Git blob `0e3ed68872e0e05e5bd26e2a611de440a29e9faa` on **this same** source. Its prior substantive TOP18-O03 vector correction was explicitly justified by a counterexample: three edge vectors (1,0,0)+(0,2,0)+(0,0,3)=(1,2,3) and the geometric diagonal length sqrt(14) differs from sum of edge lengths 6. The author also verified 24 Written /5 rubric headings changed only wording, not scoring criteria. Student source has all 40 outcome IDs, 247 opt-in <details> disclosures, 12 public replay metadata markers and 10 SVG references. This narrow check does not imply a fresh independent solution of all 247 questions or actual browser/MathJax PASS.
+
+With original author Q01–Q18 source receipt, Q15/Q16 and signed A1–A7 as represented here, this is **one current AUTHORING source ready for a single V2/ready/REGISTER source lock**, not official independent Topic Readiness, no RD1 public content, no website release authority, no merge/deploy.
