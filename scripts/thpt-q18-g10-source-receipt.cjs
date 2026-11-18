@@ -470,6 +470,29 @@ function expectedG10KnowledgeBlob(lesson,legacy){
   assert.equal(row.baseline,blobs[1],name+" immutable S1/Q18 baseline must match ledger candidate");
   assert.notEqual(row.candidate,row.baseline,name+" editorial source must be distinct");
   assert.equal(row.moved,({B07:5,B08:5,B09:5,B10:6,B11:4,B12:4,B13:5,B14:5,B15:5,B16:5,B17:5,B18:4,B19:7,B20:5,B21:5,B22:8})[name],name+" moved First Try count");
+  if(name==="B12"){
+   const locked=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHV_B12_S1_PED_CALCULATOR_Q18_R01_20261118.md"),"utf8");
+   const f=k=>locked.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(f("BASELINE_B12_KNOWLEDGE_BLOB"),row.candidate,
+    "B12 current material must extend immutable ChV S1 editorial Q18 receipt");
+   assert(locked.includes("DELTA_C_ACADEMIC_MATERIAL")&&
+    locked.includes("INDEPENDENT_NOTEBOOKLM_ACADEMIC_PED_REVIEW_PENDING"),
+    "B12 calculator material is a review HOLD; no automated academic PASS");
+   const blob=b=>{const c=require("node:crypto");return c.createHash("sha1")
+     .update(Buffer.from("blob "+b.length+String.fromCharCode(0))).update(b).digest("hex");};
+   for(const [rel,key] of [
+    ["prototypes/thpt/content-drafts/THPT_G10_CHV_B12_CANONICAL.md","ONE_CANONICAL_B12_R01_BLOB"],
+    ["docs/assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js","B12_R01_ITEM_BANK_BLOB"],
+    ["docs/thpt-preview/sgk/chuong-v/luyen-tap.md","B12_R01_PRACTICE_HUB_BLOB"],
+    ["docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css","FROZEN_CSS_BLOB"],
+    ["docs/thpt-preview/sgk/chuong-v/bai-13.md","FROZEN_B13_SOURCE_BLOB"],
+    ["docs/thpt-preview/sgk/chuong-v/bai-14.md","FROZEN_B14_SOURCE_BLOB"]]){
+     assert.equal(blob(fs.readFileSync(path.join(root,rel))),f(key),
+      "B12 single canonical/source and other owner-frozen lesson SHA mismatch "+rel);
+   }
+   return f("B12_R01_SOURCE_BLOB");
+  }
   if(chvii){
    assert.equal(chvii.helps,({B19:9,B20:7,B21:7,B22:10})[name],name+" exact total HELP count");
    assert.equal(chvii.examples,({B19:2,B20:2,B21:2,B22:3})[name],name+" anti-ChVI Golden worked-example count");
