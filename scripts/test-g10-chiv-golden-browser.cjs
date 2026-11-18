@@ -77,8 +77,21 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
   const b10Receipt=fs.readFileSync(root+
    "/prototypes/thpt/ux795/G10_CHIV_B10_S1_PED_SINGLE_CANONICAL_Q18_R01_20261118.md","utf8");
   const b10f=k=>b10Receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
-  assert.equal(blob(cssFile),b10f("CSS_R01_SCOPED_B10_BLOB"),
-    "B10 CSS source hash must be exact and signed");
+  const b11Marker="\n/* G10 Chapter IV B11 R01",cutB11=cssWithB10.indexOf(b11Marker);
+  assert(cutB11>0&&cssWithB10.indexOf(b11Marker,cutB11+1)===-1,
+   "B11 CSS must append a single independent scoped tail");
+  assert.equal(blob(cssWithB10.slice(0,cutB11)),b10f("CSS_R01_SCOPED_B10_BLOB"),
+   "B10 P2-approved CSS must stay byte-frozen before B11 scope");
+  const b11Receipt=fs.readFileSync(root+
+   "/prototypes/thpt/ux795/G10_CHIV_B11_S1_PED_CANONICAL_Q18_R01_20261118.md","utf8");
+  const b11f=k=>b11Receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(b11f("B10_P2_APPROVED_CSS_BLOB"),b10f("CSS_R01_SCOPED_B10_BLOB"),
+   "B11 css source must descend from B10 owner P2");
+  assert.equal(blob(cssFile),b11f("CSS_B11_SCOPED_APPEND_BLOB"),
+   "B11 exact CSS source-lock mismatch");
+  assert(cssWithB10.slice(cutB11).includes("THPT-G10-CHIV-TRY21")&&
+   !cssWithB10.slice(cutB11).includes("THPT-G10-CHIV-TRY16"),
+   "B11 styles cannot recolor B10");
   assert(cssWithB10.slice(atB10).includes("THPT-G10-CHIV-TRY16")&&
    !cssWithB10.slice(atB10).includes("THPT-G10-CHIV-TRY11"),
     "B10 scoped CSS cannot recolor owner P2 B09");
@@ -122,6 +135,11 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
    const df=k=>delta.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
    assert.equal(df("BASELINE_R01_SOURCE_BLOB"),sha,"B10 P2 must preserve exact R01 historical source");
    assert.equal(current,df("R02_SOURCE_BLOB"),"B10 P2 source not signed by MathJax UI-only delta");
+  }else if(lesson==="11"){
+   assert.equal(b11f("R01_PUBLISHED_B11_SOURCE_BLOB"),sha,
+    "B11 old published R01 source must be immutable");
+   assert.equal(current,b11f("B11_CANDIDATE_SOURCE_BLOB"),
+    "B11 signed candidate source SHA differs");
   }else assert.equal(current,sha,"Unapproved academic/source/First Try change B"+lesson);
  }
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
@@ -169,18 +187,21 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
          "1.5. Vì sao quay lại điểm xuất phát tạo ra vectơ-không?"
         ]:lesson===9?["1.1. Cùng tìm hiểu","1.2. Ví dụ trực quan",
           "1.3. Vì sao phải phân tích một vectơ?",
+          "1.4. Thuật ngữ, kiến thức và kỹ năng"]:lesson===11?
+         ["1.1. Vì sao cần tích vô hướng?","1.2. Khám phá và vận dụng qua hình",
+          "1.3. Vận dụng — hợp lực và lực giữ cân bằng",
           "1.4. Thuật ngữ, kiến thức và kỹ năng"]:
          ["1.1. Cùng tìm hiểu","1.2. Ví dụ trực quan","1.3. Thuật ngữ, kiến thức và kỹ năng"],
        where+" complete concept-first discovery stages");
      assert.equal(await blocks.nth(0).locator("[data-thpt-first-try-id]").count(),
-       ({7:5,8:5,9:5,10:6,11:4})[lesson],where+" original First Tries moved to Discovery");
+       ({7:5,8:5,9:5,10:6,11:5})[lesson],where+" original First Tries moved to Discovery");
      assert.equal(await blocks.nth(1).locator("[data-thpt-first-try-id], details.question").count(),0,
        where+" official SGK has no First Try/question insertion");
      if(lesson===11){
        const s1=(await blocks.nth(1).innerText());
        assert(s1.includes("vuông góc với mọi vectơ"),where+" zero perpendicular SGK convention");
        assert(s1.includes("tùy ý"),where+" zero vector angle SGK convention");
-       assert(s1.includes("hai độ dài đều dương"),where+" cos denominator guard");
+       assert(s1.includes("Mẫu số phải dương"),where+" cos denominator guard");
      }
 
      assert.deepEqual((await blocks.locator(":scope > h2.thpt-g10-section-heading").allInnerTexts()).map(v=>v.trim()),
@@ -189,10 +210,10 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
      assert((await blocks.nth(0).locator(":scope > h3").allInnerTexts()).every((v,i)=>v.trim().startsWith("1."+(i+1)+". ")),
       where+" discovery headings are visual-only numbered");
      const examples=await blocks.nth(2).locator(":scope > h3").allInnerTexts();
-     assert.equal(examples.length,[7,8,9,10].includes(lesson)?4:3,where+" owner-scoped B07/B08 and B09 S1 have four worked examples");
-     assert(examples.every((v,i)=>v.trim().startsWith("3."+(i+1)+". Ví dụ "+(i+1)+([7,8,10].includes(lesson)?" —":". "))),
+     assert.equal(examples.length,[7,8,9,10,11].includes(lesson)?4:3,where+" owner-scoped B07/B08 and B09 S1 have four worked examples");
+     assert(examples.every((v,i)=>v.trim().startsWith("3."+(i+1)+". Ví dụ "+(i+1)+([7,8,10,11].includes(lesson)?" —":". "))),
       where+" numbered visual example headings");
-     assert.equal(await blocks.nth(2).locator(".thpt-g10-example-solution").count(),[7,8,9,10].includes(lesson)?4:3,
+     assert.equal(await blocks.nth(2).locator(".thpt-g10-example-solution").count(),[7,8,9,10,11].includes(lesson)?4:3,
       where+" original or S1-enriched solutions grouped in Golden panel");
      assert.equal(await article.locator(".thpt-r4-lead").count(),0,where+" no redundant introduction");
      assert.equal(await article.locator(".thpt-r4-footnote").count(),1,where+" only existing source footnote retained");
