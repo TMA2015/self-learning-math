@@ -131,3 +131,29 @@
 4. Historic A/B visual proof is retrievable at [pre-prune main commit](https://github.com/TMA2015/self-learning-math/tree/32429541782518c337887d55db2a2a10bb44266e/prototypes/thpt/ux795). Historical 79 Markdown blobs above reflect this baseline only; ongoing lesson improvements naturally update them, so this is an audit snapshot rather than a continually refreshed source of truth.
 
 **Remaining verification boundary:** The entire AUTHORING chapter-based archive has **not** been declared redundant; a complete 79-per-lesson authoring-manuscript consolidation requires source/receipt/handoff dependency reconciliation under its owning lane, not destructive RELEASE deletion.
+
+## G11–G12: 15 source-locked chapter authorities mapped to 52 lessons
+
+This is a **Git blob custody inventory** of the 15 PRIMARY full-path `CONTENT_READY` packets in `release-queue/REGISTER.md`, *not* an independent academic verdict or release authorization. All listed academic files matched their `ready/ACADEMIC_SOURCE_BLOB` values against Git at baseline `main@32429541782518c337887d55db2a2a10bb44266e`, and all 15 reviewer receipt paths from the packets exist. One chapter package can be the authoritative manuscript of multiple lessons; older R00/R01/R02 reviewer snapshots remain proof, not competing active sources.
+
+| Grade | Lessons | REGISTER canonical packet | Original academic Git blob | Effective source file in `prototypes/thpt/content-drafts/` |
+|---|---|---|---|---|
+| 11 | B01–B04 | `G11-SGK-CHI-B01-B04` | `256ceb5edc5e02aec320e83e99c8e08e035654f3` | `G11_CHI_B01_B04_CONCEPT_FIRST_PED_R03_SOURCE_CANDIDATE_20261102.md` |
+| 11 | B05–B07 | `G11-SGK-CHII-B05-B07` | `2101e2a248e0cf53ee11847b913b937cebcd0806` | `G11_CHII_B05_B07_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md` |
+| 11 | B08–B09 | `G11-SGK-CHIII-B08-B09` | `4ea8df2ca2682d9fac8b1556852334af336930a5` | `G11_CHIII_B08_B09_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md` |
+| 11 | B10–B14 | `G11-SGK-CHIV-B10-B14-R01` | `e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b` | `G11_CHIV_B10_B14_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md` |
+| 11 | B15–B17 | `G11-SGK-CHV-B15-B17-R02` | `7934757ed06de4ae4b63dbc351ef524fc054e0d0` | `G11_CHV_B15_B17_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md` |
+| 11 | B18–B21 | `G11-SGK-CHVI-B18-B21-R01` | `17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872` | `G11_CHVI_B18_B21_PUBLIC_CANONICAL_R01_POSTPASS_DELTA_B_SOURCE_LOCK.md` |
+| 11 | B22–B27 | `G11-SGK-CHVII-B22-B27-R01` | `afc8ec039213b87b4930f2d34d48c28d1fc6277f` | `G11_CHVII_B22_B27_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md` |
+| 11 | B28–B30 | `G11-SGK-CHVIII-B28-B30-R00` | `fde4f8be91b5884b4559fef59fde46cf826c2bc9` | `G11_CHVIII_B28_B30_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md` |
+| 11 | B31–B33 | `G11-SGK-CHIX-B31-B33-R00` | `3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0` | `G11_CHIX_B31_B33_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md` |
+| 12 | B01–B05 | `G12-SGK-CHI-B01-B05-R00` | `f0862dcdab21dec136e43969f45c42638e7c7574` | `G12_SGK_CHI_B01_B05_FULL_CHAPTER_PUBLIC_CANONICAL_R00_SOURCE_CANDIDATE.md` |
+| 12 | B06–B08 | `G12-SGK-CHII-B06-B08-R00` | `856a37bd16d2746ffc2e12906de18d1f4338a3b6` | `G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md` |
+| 12 | B09–B10 | `G12-SGK-CHIII-B09-B10-R00` | `4e8e462a5c2243583be8c71625a9be3095e48c7b` | `G12_SGK_CHIII_B09_B10_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md` |
+| 12 | B11–B13 | `G12-SGK-CHIV-B11-B13-R00` | `45722cd386a498f3e0e96a09928c85565af56d1b` | `G12_SGK_CHIV_B11_B13_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md` |
+| 12 | B14–B17 | `G12-SGK-CHV-B14-B17-R01` | `11eb2834cfdb4a24685157f84666c2bb0767970a` | `G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md` |
+| 12 | B18–B19 | `G12-SGK-CHVI-B18-B19-END-R00` | `1578efd4d2d46deb9bae064d12752d88fc3747b8` | `G12_SGK_CHVI_B18_B19_END_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md` |
+
+**Non-conflicting historic scope:** `G11-SGK-CHI-B01-B02` was narrower `PUBLIC_FORMATIVE_ONLY`; current primary full-path authority is `G11-SGK-CHI-B01-B04`. G10 ChIV B07–B08 and B09–B11 historic packets cover disjoint lesson ranges. Neither situation authorizes deleting Q18 receipts or assuming a second active authoring packet.
+
+**Unclosed G10 upstream boundary:** 27/27 current learner pages are uniquely counted; named standalone academic canonical sources for B09–B12 remain present. Other G10 upstream chapter/lesson source chains require AUTHORING dependency authority before any destructive pruning. No claim of 79 separate source manuscripts or website approval is made here.
