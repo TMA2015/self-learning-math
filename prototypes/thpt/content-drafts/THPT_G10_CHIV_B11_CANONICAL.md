@@ -205,9 +205,11 @@
 
     **Đề:** Cho \(|\vec u|=4\), \(|\vec v|=3\) và góc giữa chúng là \(120^\circ\). Tính \(\vec u\cdot\vec v\).
 
-    **Vì sao chọn phương pháp:** Đề cho hai độ dài và góc, không cho tọa độ, nên dùng định nghĩa hình học. Dự đoán kết quả âm vì góc tù.
+    **Phân tích:** Đề cho hai độ dài và góc, không cho tọa độ, nên dùng định nghĩa hình học. Dự đoán kết quả âm vì góc tù.
 
-    **Giải:** \(\vec u\cdot\vec v=4\cdot3\cos120^\circ=12\cdot(-\tfrac12)=-6\).
+    !!! example "Lời giải"
+
+        **Giải:** \(\vec u\cdot\vec v=4\cdot3\cos120^\circ=12\cdot(-\tfrac12)=-6\).
 
     **Kiểm lại:** Độ lớn mỗi vectơ dương, \(\cos120^\circ<0\), nên dấu âm là hợp lý; kết quả không có đơn vị nếu vectơ chỉ là đối tượng hình học.
 
@@ -215,9 +217,11 @@
 
     **Đề:** Cho \(\vec u=(2;-1)\), \(\vec v=(1;2)\). Kiểm tra hai vectơ vuông góc.
 
-    **Vì sao chọn phương pháp:** Biết tọa độ, tính \(ac+bd\) nhanh và chính xác hơn đo góc từ hình vẽ.
+    **Phân tích:** Biết tọa độ, tính \(ac+bd\) nhanh và chính xác hơn đo góc từ hình vẽ.
 
-    **Giải:** \(\vec u\cdot\vec v=2\cdot1+(-1)\cdot2=0\). Hai vectơ đều khác \(\vec0\), nên góc giữa chúng xác định và bằng \(90^\circ\).
+    !!! example "Lời giải"
+
+        **Giải:** \(\vec u\cdot\vec v=2\cdot1+(-1)\cdot2=0\). Hai vectơ đều khác \(\vec0\), nên góc giữa chúng xác định và bằng \(90^\circ\).
 
     **Kiểm lại:** \(|\vec u|=|\vec v|=\sqrt5>0\), vì thế công thức cos cho \(\cos\theta=0\), phù hợp \(90^\circ\).
 
@@ -225,9 +229,11 @@
 
     **Đề:** Cho \(A(1;1)\), \(B(4;1)\), \(C(1;5)\). Xác định góc tại \(A\) và diện tích tam giác.
 
-    **Chọn phương pháp:** Góc tại \(A\) được tạo bởi \(\overrightarrow{AB}\) và \(\overrightarrow{AC}\); phải chọn hai vectơ **chung gốc A** trước khi tính.
+    **Phân tích:** Góc tại \(A\) được tạo bởi \(\overrightarrow{AB}\) và \(\overrightarrow{AC}\); phải chọn hai vectơ **chung gốc A** trước khi tính.
 
-    **Giải:** \(\overrightarrow{AB}=(3;0)\), \(\overrightarrow{AC}=(0;4)\). Vì \(\overrightarrow{AB}\cdot\overrightarrow{AC}=3\cdot0+0\cdot4=0\) và chúng khác \(\vec0\), nên \(\angle BAC=90^\circ\). Do đó \(S_{ABC}=\tfrac12\cdot AB\cdot AC=\tfrac12\cdot3\cdot4=6\).
+    !!! example "Lời giải"
+
+        **Giải:** \(\overrightarrow{AB}=(3;0)\), \(\overrightarrow{AC}=(0;4)\). Vì \(\overrightarrow{AB}\cdot\overrightarrow{AC}=3\cdot0+0\cdot4=0\) và chúng khác \(\vec0\), nên \(\angle BAC=90^\circ\). Do đó \(S_{ABC}=\tfrac12\cdot AB\cdot AC=\tfrac12\cdot3\cdot4=6\).
 
     **Kiểm lại:** Hai cạnh dọc theo hai trục vuông góc, độ dài \(3\) và \(4\), nên kết quả có ý nghĩa hình học.
 
@@ -239,13 +245,15 @@
 
     **Đề:** Hai dây kéo vòng móc với hai lực có độ lớn \(6\,\mathrm N\) và \(6\,\mathrm N\), tạo góc \(120^\circ\). Tìm **độ lớn và chiều** lực thứ ba để vòng móc đứng yên.
 
-    **Chọn mô hình:** Điều kiện cân bằng là \(\vec F_1+\vec F_2+\vec F_3=\vec0\). Đặt \(\vec R=\vec F_1+\vec F_2\), khi đó \(\vec F_3=-\vec R\). Không cộng \(6+6\) vì hai lực không cùng hướng.
+    **Phân tích:** Điều kiện cân bằng là \(\vec F_1+\vec F_2+\vec F_3=\vec0\). Đặt \(\vec R=\vec F_1+\vec F_2\), khi đó \(\vec F_3=-\vec R\). Không cộng \(6+6\) vì hai lực không cùng hướng.
 
-    **Giải:** Từ tính chất bình phương tổng vectơ và góc giữa hai lực,
-    <div class="arithmatex">\(\displaystyle |\vec R|^2=6^2+6^2+2\cdot6\cdot6\cos120^\circ=72-36=36.\)</div>
-    Vậy \(|\vec F_3|=|\vec R|=6\,\mathrm N\) và \(\vec F_3=-\vec R\), ngược chiều đường chéo hình bình hành tạo bởi \(\vec F_1,\vec F_2\); không phải ngược riêng một trong hai dây.
+    !!! example "Lời giải"
 
-    **Kiểm:** \(0\le|\vec R|\le 6+6=12\,\mathrm N\), phù hợp bất đẳng thức tam giác; tổng ba vectơ bằng \(\vec0\). Biết độ lớn và góc giúp tìm độ lớn hợp lực; muốn xác định góc hướng chính xác trong trục tọa độ phải xét các thành phần.
+        **Giải:** Từ tính chất bình phương tổng vectơ và góc giữa hai lực,
+        <div class="arithmatex">\(\displaystyle |\vec R|^2=6^2+6^2+2\cdot6\cdot6\cos120^\circ=72-36=36.\)</div>
+        Vậy \(|\vec F_3|=|\vec R|=6\,\mathrm N\) và \(\vec F_3=-\vec R\), ngược chiều đường chéo hình bình hành tạo bởi \(\vec F_1,\vec F_2\); không phải ngược riêng một trong hai dây.
+
+    **Kiểm lại:** \(0\le|\vec R|\le 6+6=12\,\mathrm N\), phù hợp bất đẳng thức tam giác; tổng ba vectơ bằng \(\vec0\). Biết độ lớn và góc giúp tìm độ lớn hợp lực; muốn xác định góc hướng chính xác trong trục tọa độ phải xét các thành phần.
 
 === "Lỗi thường gặp"
 
@@ -294,7 +302,6 @@
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
     <p class="thpt-r4-footnote">Nguồn học liệu: SGK Toán 10 Kết nối tri thức và thư viện SLM hiện hành. Các tình huống tự học bổ sung dùng dữ kiện minh họa riêng, không thay thế bài tập SGK/SBT.</p>
-
 <!-- END_B11_KNOWLEDGE_MARKDOWN -->
 
 ## B. Exactly eight original B11 Core/Practice canonical records (source-exact R01; do not edit)
