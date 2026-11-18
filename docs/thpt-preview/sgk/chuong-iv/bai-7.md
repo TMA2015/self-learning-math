@@ -4,7 +4,7 @@
 
 === "Khám phá kiến thức"
 
-    ### Cùng tìm hiểu
+    **Khởi động.**
 
     Một chuyến đi có thể dài 5 km về phía Đông hoặc 5 km về phía Tây. Hai chuyến đi ấy có cùng **độ dài**, nhưng không đưa ta đến cùng vị trí. Để diễn tả sự khác nhau, toán học dùng **vectơ**: một mũi tên vừa cho biết độ lớn, vừa cho biết phương và chiều.
 
@@ -12,11 +12,9 @@
 
     Trong bài này, em sẽ bắt đầu từ những mũi tên quen thuộc, rồi lần lượt nhận ra khi nào chúng cùng phương, cùng hướng, bằng nhau và vì sao vectơ-không là một trường hợp đặc biệt cần quy ước.
 
-    ### Ví dụ trực quan
-
     <span id="thpt-g10-chiv-try01" data-thpt-first-try-id="THPT-G10-CHIV-TRY01" data-outcome-id="G10-B07-DEFINITION" data-thpt-help-ref="HELP-G10-B07-01"></span>
 
-    #### Vectơ là gì và tại sao phải có chiều?
+    ### 1.1. Vectơ là gì và vì sao phải xác định điểm đầu–cuối?
 
     Đi từ A đến B rồi đi ngược từ B về A có cùng đoạn đường, nhưng hai lần di chuyển đưa ta về hai hướng trái nhau. Chỉ độ dài AB không đủ mô tả sự di chuyển.
 
@@ -26,6 +24,12 @@
 
 
     Muốn xác định vectơ, hỏi 'đi từ đâu đến đâu?' trước khi so sánh độ dài. Không thay \(\overrightarrow{AB}\) bằng đoạn AB nếu bài yêu cầu hướng.
+
+    **Từ mũi tên đến đại lượng thực tế.** Một lực 20 N đẩy vật sang Đông và một vận tốc gió 12 km/h hướng Tây Bắc không thể mô tả đầy đủ bằng các con số 20 hoặc 12: ta còn cần biết **hướng tác dụng/chuyển động**. Mũi tên vectơ cho phép biểu diễn cả hai thông tin đó. Với lực, cần xác định cả **điểm đặt**; với vận tốc, cần xác định hướng chuyển động.
+
+    <figure class="thpt-r4-plot"><picture><source media="(max-width: 600px)" srcset="../../../../assets/images/thpt/THPT_G10_B07_FORCE_VELOCITY_MOBILE_D5_R04.svg"><img src="../../../../assets/images/thpt/THPT_G10_B07_FORCE_VELOCITY_REPRESENTATION_D5_R04.svg" loading="lazy" alt="Bên trái: cùng điểm O, hai lực hướng Đông, 20 N vẽ dài gấp đôi 10 N. Bên phải: vận tốc gió 12 km/h hướng Tây Bắc được vẽ bằng mũi tên có gốc tại vị trí quan sát. Hai đại lượng dùng đơn vị và tỉ lệ riêng."></picture><figcaption>Đọc hình từ điểm đặt/gốc mũi tên → phương và chiều → độ lớn. Hai lực dùng cùng tỉ lệ nên mũi tên 20 N dài gấp đôi 10 N; không so trực tiếp chiều dài mũi tên lực với vận tốc.</figcaption></figure>
+
+    **Cách tự vẽ.** Nếu chọn tỉ lệ 1 cm trên giấy ứng với 10 N, lực 20 N hướng Đông được vẽ bằng mũi tên 2 cm về phía Đông từ điểm đặt; lực 10 N cùng hướng dài 1 cm. Hình trên chỉ minh họa tỉ lệ tương đối, không dùng thước đo trực tiếp trên màn hình.
 
     **Em vận dụng.** An đi từ A đến B; Bình đi từ B về A, với A khác B. Hai vectơ độ dời có bằng nhau không, và độ dài của chúng thế nào?
 
@@ -38,7 +42,7 @@
 
     <span id="thpt-g10-chiv-try02" data-thpt-first-try-id="THPT-G10-CHIV-TRY02" data-outcome-id="G10-B07-LENGTH" data-thpt-help-ref="HELP-G10-B07-02"></span>
 
-    #### Độ lớn không phải là hướng
+    ### 1.2. Độ dài vectơ khác hướng di chuyển thế nào?
 
     Trên bản đồ, hai người đi 4 km theo các hướng khác nhau đều có quãng di chuyển 4 km, nhưng không có cùng vectơ độ dời.
 
@@ -60,7 +64,7 @@
 
     <span id="thpt-g10-chiv-try03" data-thpt-first-try-id="THPT-G10-CHIV-TRY03" data-outcome-id="G10-B07-DIRECTION" data-thpt-help-ref="HELP-G10-B07-02"></span>
 
-    #### Cùng phương khác cùng hướng
+    ### 1.3. Vì sao cùng phương vẫn có thể ngược hướng?
 
     Trên đường hai chiều, hai xe có thể đi trên hai làn song song mà một xe về Đông, xe còn lại về Tây.
 
@@ -82,7 +86,7 @@
 
     <span id="thpt-g10-chiv-try04" data-thpt-first-try-id="THPT-G10-CHIV-TRY04" data-outcome-id="G10-B07-EQUALITY" data-thpt-help-ref="HELP-G10-B07-02"></span>
 
-    #### Khi nào hai mũi tên ở nơi khác nhau là một vectơ?
+    ### 1.4. Hai mũi tên ở hai vị trí khác nhau khi nào bằng nhau?
 
     Một xe dịch chuyển 2 km về Đông ở Hà Nội và một xe khác dịch chuyển 2 km về Đông ở nơi khác: độ dời mô tả như nhau dù điểm đặt khác.
 
@@ -104,7 +108,7 @@
 
     <span id="thpt-g10-chiv-try05" data-thpt-first-try-id="THPT-G10-CHIV-TRY05" data-outcome-id="G10-B07-ZERO" data-thpt-help-ref="HELP-G10-B07-02"></span>
 
-    #### Không di chuyển vẫn cần một vectơ
+    ### 1.5. Vì sao quay lại điểm xuất phát tạo ra vectơ-không?
 
     Đi một vòng rồi quay lại đúng điểm xuất phát, độ dời cuối cùng bằng 0 dù quãng đường đã đi có thể lớn hơn 0.
 
@@ -113,7 +117,7 @@
     Khi A trùng B, mũi tên co lại thành một điểm: \(\overrightarrow{AA}=\vec0\), độ dài 0. **Theo quy ước SBT KNTT**, vectơ-không cùng phương và cùng hướng với mọi vectơ; đây là quy ước chứ không phải mũi tên vật lý có chiều xác định.
 
 
-    Dùng \(\vec0\) để cộng, trừ và biểu diễn độ dời ròng bằng 0. Không suy ra một góc xác định duy nhất khi có vectơ-không; Bài 11 sẽ giới thiệu quy ước riêng của SGK về góc và tính vuông góc.
+    Dùng \(\vec0\) để biểu diễn độ dời ròng bằng 0. Phép cộng, trừ vectơ sẽ học ở Bài 8. Không suy ra một góc xác định duy nhất khi có vectơ-không; Bài 11 sẽ giới thiệu quy ước riêng của SGK về góc và tính vuông góc.
 
     **Em vận dụng.** Bạn đi từ A đến B rồi trở về A. Vectơ độ dời từ điểm đầu đến điểm cuối là gì? Có bằng tổng độ dài hai chặng không?
 
@@ -123,7 +127,7 @@
 
         **Vì sao:** Độ dời chỉ quan tâm vị trí đầu/cuối; đi rồi quay lại cho vectơ-không. Quãng đường vẫn là số dương nếu có di chuyển.
 
-    ### Thuật ngữ, kiến thức và kỹ năng
+    **Tóm tắt thuật ngữ và mục tiêu tự học**
 
     **Thuật ngữ:** Vectơ, giá vectơ, điểm đầu/điểm cuối, độ dài, cùng phương, cùng/ngược hướng, vectơ bằng nhau, vectơ-không.
 
@@ -133,59 +137,95 @@
 
     ### 2.1. Khái niệm vectơ
 
-    **Khái niệm:** Vectơ là đoạn thẳng có hướng. Kí hiệu $\overrightarrow{AB}$ gồm điểm đầu **A**, điểm cuối **B**; độ dài $|\overrightarrow{AB}|=AB\ge0$.
+    #### 2.1.1. Vectơ, điểm đầu–cuối và độ dài
 
-    **Nhận xét:** Hai vectơ đặt tại vị trí khác nhau có thể bằng nhau. Đường thẳng qua A,B là **giá** của vectơ khác không; vectơ có điểm đầu trùng điểm cuối là vectơ-không $\vec0$.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Vectơ:</strong> Vectơ là một đoạn thẳng có hướng. Vectơ \(\overrightarrow{AB}\) có **điểm đầu** \(A\), **điểm cuối** \(B\), chiều từ \(A\) tới \(B\). Khi \(A\ne B\), đường thẳng \(AB\) gọi là <strong>giá</strong> của vectơ.</div>
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Độ dài vectơ:</strong> Độ dài của \(\overrightarrow{AB}\) là độ dài đoạn thẳng \(AB\), kí hiệu \(|\overrightarrow{AB}|=AB\ge0\). Độ dài chỉ là một số, không biểu diễn chiều của vectơ.</div>
+
+    **Nhận xét:** Hai vectơ được vẽ ở hai vị trí khác nhau vẫn có thể bằng nhau; không phải chỉ khi cùng điểm đầu và điểm cuối mới xét được sự bằng nhau.
 
     **Phân biệt:** Mũi tên biểu diễn hướng di chuyển từ A sang B, nhưng quãng đường đã đi không luôn bằng độ dài độ dời.
 
-    #### Vectơ-không
+    #### 2.1.2. Vectơ-không và quy ước của SBT KNTT
 
-    $\overrightarrow{AA}=\vec0$ với mọi điểm A và $|\vec0|=0$. **Theo quy ước SBT KNTT lớp 10 Bài 7**, vectơ-không được xem là cùng phương và cùng hướng với mọi vectơ.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Vectơ-không:</strong> Vectơ có điểm đầu trùng điểm cuối là <strong>vectơ-không</strong>, kí hiệu \(\vec0\). Với mọi điểm \(A\), \(\overrightarrow{AA}=\vec0\) và \(|\vec0|=0\).</div>
 
-    **Lưu ý về quy ước:** Điều này là quy ước toán học cho trường hợp đặc biệt, không mô tả một đoạn có chiều vật lí khác 0.
+    **Quy ước cần phân biệt:** Theo SBT KNTT lớp 10 Bài 7, vectơ-không được xem là cùng phương và cùng hướng với mọi vectơ. Đây là **quy ước toán học**, không phải khẳng định một mũi tên độ dài 0 có chiều vật lí xác định.
+
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ — Mục 2.1:</strong> Một vectơ có <strong>điểm đầu, điểm cuối và chiều</strong>; \(\overrightarrow{AB}\) có độ dài \(AB\). Khi hai điểm trùng nhau ta được \(\vec0\), có độ dài bằng \(0\). Vectơ và độ dài của nó là hai đối tượng khác nhau.</div>
 
     ### 2.2. Hai vectơ cùng phương, cùng hướng, bằng nhau
 
-    Với hai vectơ khác không, chúng **cùng phương** nếu hai giá song song hoặc trùng nhau; cùng phương có thể **cùng hướng** hoặc **ngược hướng**.
+    #### 2.2.1. Phương và chiều phải được xét riêng
 
-    **Lưu ý:** Cùng phương không suy ra cùng hướng; cùng hướng không suy ra cùng độ dài.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Hai vectơ cùng phương:</strong> Hai vectơ <strong>khác vectơ-không</strong> gọi là cùng phương nếu giá của chúng <strong>song song hoặc trùng nhau</strong>. Khi đó hai mũi tên có thể <strong>cùng hướng</strong> hoặc <strong>ngược hướng</strong>, tùy chiều trên các giá.</div>
 
-    #### Hai vectơ bằng nhau và ngược hướng
+    **Lưu ý:** Cùng phương <strong>chưa đủ</strong> để kết luận cùng hướng; cùng hướng cũng chưa đủ để kết luận bằng nhau nếu độ dài khác nhau. Quy ước riêng về vectơ-không đã nêu tại mục 2.1.2.
+
+    #### 2.2.2. Hai vectơ bằng nhau không cần trùng giá
 
     **Quan sát hình.** Đọc hình bình hành theo thứ tự: chọn cạnh AB, đối chiếu mũi tên DC và CD, rồi kiểm chiều của từng mũi tên trước khi kết luận bằng nhau. Hai cạnh đối bằng độ dài chưa đủ để hai vectơ cùng bằng nhau.
 
     <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B07_PARALLELOGRAM_EQUAL_OPPOSITE_D5_R01.svg" loading="lazy" alt="Hình bình hành ABCD với các vectơ cạnh đối bằng nhau"><figcaption>Hình bình hành ABCD với các vectơ cạnh đối bằng nhau.</figcaption></figure>
 
-     $\vec u=\vec v$ khi cùng hướng, cùng độ dài. Trong hình bình hành ABCD: $\overrightarrow{AB}=\overrightarrow{DC}$; còn $\overrightarrow{AB}$ và $\overrightarrow{CD}$ cùng độ dài nhưng **ngược hướng**.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Hai vectơ bằng nhau:</strong> Hai vectơ bằng nhau khi chúng <strong>cùng hướng và có cùng độ dài</strong>. Không cần có chung điểm đầu hoặc cùng giá. Kí hiệu \(\vec u=\vec v\).</div>
+
+    **Áp dụng hình bên trên:** Với hình bình hành \(ABCD\), \(\overrightarrow{AB}=\overrightarrow{DC}\). Hai vectơ \(\overrightarrow{AB}\) và \(\overrightarrow{CD}\) tuy bằng độ dài nhưng <strong>ngược hướng</strong>, nên không bằng nhau.
 
     **Liên hệ:** Tên gọi vectơ đối cùng kí hiệu âm của vectơ được giải thích ở Bài 8.
 
-    #### Vận dụng
+    #### 2.2.3. Độ dời và quãng đường trong thực tế
 
-    Lực, vận tốc, độ dời có thể dùng vectơ vì đồng thời chứa độ lớn và hướng; quãng đường đi theo hai chặng có thể lớn hơn độ dài vectơ độ dời từ đầu đến cuối. Luôn ghi đơn vị thích hợp.
+    **Biểu diễn lực và vận tốc bằng vectơ:** (1) chọn vị trí gốc mũi tên (điểm đặt của lực hoặc vị trí đang xét); (2) vẽ mũi tên đúng phương và chiều; (3) chọn tỉ lệ và độ dài mũi tên tương ứng với độ lớn; (4) ghi rõ đơn vị, chẳng hạn N cho lực, m/s hoặc km/h cho vận tốc. Không so sánh độ dài mũi tên của các đại lượng khác đơn vị hoặc khác tỉ lệ.
+
+    **Phân biệt với quãng đường:** Vectơ độ dời nối vị trí đầu và cuối. Quãng đường đi theo nhiều chặng có thể lớn hơn độ dài vectơ độ dời.
+
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ — Mục 2.2:</strong> Để so sánh hai vectơ khác không, xét <strong>phương</strong> (giá song song/trùng), <strong>chiều</strong> (cùng hay ngược hướng), rồi <strong>độ dài</strong>. <strong>Hai vectơ bằng nhau ⇔ cùng hướng và cùng độ dài.</strong> Đừng kết luận bằng nhau chỉ từ hai độ dài bằng nhau; với vectơ-không dùng quy ước riêng ở mục 2.1.</div>
 
 === "Ví dụ"
 
-    Trước khi xem lời giải, hãy tự hỏi **bài cho dữ kiện gì, cần tìm điều gì và vì sao quy tắc vừa học phù hợp**. Sau đó hãy giải từng bước, kiểm lại hướng, độ lớn và điều kiện của kết quả.
+    Trước khi đọc mỗi lời giải, hãy xác định **đối tượng hình học**, điều bài cho và phải kiểm điều kiện gì. Mỗi ví dụ đều đi từ phân tích cách chọn phương pháp đến lời giải và kiểm lại kết quả.
 
-    ### Ví dụ 1. Bằng nhau và ngược hướng trong hình bình hành
+    ### 3.1. Ví dụ 1 — Hai độ dời bằng nhau dù đặt ở nơi khác
 
-    **Đề:** Cho hình bình hành ABCD. Hãy so sánh AB với DC, và AB với CD theo nghĩa vectơ.
-    **Giải:** $\overrightarrow{AB}=\overrightarrow{DC}$ vì hai cạnh đối cùng hướng và cùng độ dài. Mặt khác, $\overrightarrow{CD}$ cùng độ dài nhưng ngược hướng $\overrightarrow{AB}$.
-    **Điểm cần tự kiểm:** Sai thường gặp: xem cả AB và CD là bằng nhau chỉ vì độ dài cạnh đối bằng nhau.
+    **Đề bài.** Một người đi từ E đến F đúng 4 m về Đông; người khác đi từ G đến H đúng 4 m về Đông ở một nơi khác. So sánh \(\overrightarrow{EF}\) và \(\overrightarrow{GH}\), rồi xét \(\overrightarrow{HG}\).
 
-    ### Ví dụ 2. Trường hợp vectơ-không
+    **Phân tích.** Hai vectơ không cần cùng điểm đặt. Ta phải xét đồng thời độ dài và hướng, không chỉ nhìn vị trí trên bản vẽ.
 
-    **Đề:** Cho A bất kì và B khác A, hãy so sánh $\overrightarrow{AA}$ với $\overrightarrow{BB}$ và nêu độ dài.
-    **Giải:** $\overrightarrow{AA}=\overrightarrow{BB}=\vec0$ và đều có độ dài 0. Theo quy ước SBT Bài 7, vectơ-không được xem là cùng phương và cùng hướng với mọi vectơ.
-    **Điểm cần tự kiểm:** Không nên lấy sự không quan sát thấy chiều mũi tên làm lí do phủ nhận quy ước của sách.
+    **Lời giải.** Vì cả hai vectơ dài 4 m và cùng hướng Đông, \(\overrightarrow{EF}=\overrightarrow{GH}\). Vectơ \(\overrightarrow{HG}\) hướng Tây, nên ngược hướng với \(\overrightarrow{EF}\). Kí hiệu dấu trừ cho vectơ đối sẽ được học ở Bài 8.
 
-    ### Ví dụ 3. Vectơ độ dời và quãng đường
+    **Kiểm lại.** EF và GH có thể ở hai đường khác nhau; chúng vẫn cùng vectơ độ dời. Đổi thứ tự H,G làm đảo chiều mũi tên mà không đổi độ dài.
 
-    **Đề:** Một tàu rời A đi Đông 6 km rồi Bắc 8 km tới B. Hỏi quãng đường đi và độ dài vectơ AB.
-    **Giải:** Quãng đường: $6+8=14$ km. Vì hai chặng vuông góc, $|\overrightarrow{AB}|=\sqrt{6^2+8^2}=10$ km.
-    **Điểm cần tự kiểm:** Không cộng 6 + 8 để tìm độ dài độ dời, cũng không dùng 10 km làm quãng đường hai chặng.
+    ### 3.2. Ví dụ 2 — Biểu diễn và so sánh hai vectơ vận tốc
+
+    **Đề bài.** Hai xe chạy trên hai đường thẳng song song theo trục Đông–Tây. Xe thứ nhất có vận tốc 6 m/s hướng Đông, xe thứ hai 2 m/s hướng Tây. Chọn tỉ lệ 1 cm ứng với 2 m/s. Em hãy mô tả cách vẽ các vectơ vận tốc \(\vec v_1,\vec v_2\), rồi xét phương, hướng và sự bằng nhau.
+
+    **Phân tích.** Vận tốc không chỉ là số đo tốc độ: phải thể hiện cả hướng chuyển động. Trên cùng một hình và cùng tỉ lệ, độ dài mũi tên tỉ lệ với tốc độ. Xét phương trước, sau đó xét chiều và độ lớn.
+
+    **Lời giải.** Từ vị trí mỗi xe, vẽ \(\vec v_1\) dài 3 cm hướng Đông và \(\vec v_2\) dài 1 cm hướng Tây. Hai vectơ cùng phương vì giá song song, nhưng ngược hướng và có độ dài khác nhau, nên \(\vec v_1\ne\vec v_2\).
+
+    **Kiểm lại.** Mũi tên 3 cm ứng với 6 m/s, mũi tên 1 cm ứng với 2 m/s theo đúng cùng tỉ lệ. Nếu xe thứ hai đổi chiều sang Đông, hai vectơ cùng hướng nhưng vẫn không bằng nhau vì tốc độ khác nhau.
+
+    ### 3.3. Ví dụ 3 — Hành trình khép kín có độ dời bằng 0
+
+    **Đề bài.** Từ P, một người đi 7 m sang Đông đến Q, 24 m lên Bắc đến R, rồi đi thẳng từ R về P. Tính tổng quãng đường và độ dài vectơ độ dời từ điểm đầu đến điểm cuối.
+
+    **Phân tích.** Quãng đường cần cộng ba cạnh đường đi; độ dời chỉ nối vị trí ban đầu và cuối cùng. Hai chặng đầu vuông góc nên có thể tính đoạn RP bằng Pitago.
+
+    **Lời giải.** \(RP=\sqrt{7^2+24^2}=25\,\mathrm m\). Tổng quãng đường là \(7+24+25=56\,\mathrm m\). Vì kết thúc ngay P, vectơ độ dời là \(\overrightarrow{PP}=\vec0\), có độ dài \(0\,\mathrm m\).
+
+    **Kiểm lại.** Dù người ấy thực sự đi 56 m, điểm đầu và cuối trùng nhau; không được nhầm 56 m với độ lớn của vectơ-không.
+
+    ### 3.4. Ví dụ 4 — Đọc độ dài vectơ khi hai chặng vuông góc
+
+    **Đề bài.** Một bạn đi từ A 9 m về Đông rồi 12 m về Bắc đến B. Tìm quãng đường đã đi và độ dài vectơ \(\overrightarrow{AB}\).
+
+    **Phân tích.** Hai chặng vuông góc tạo tam giác vuông. Tổng quãng đường bằng tổng hai cạnh đã đi; độ dài vectơ AB là cạnh nối đầu–cuối.
+
+    **Lời giải.** Quãng đường là \(9+12=21\,\mathrm m\). Theo Pitago, \(|\overrightarrow{AB}|=\sqrt{9^2+12^2}=15\,\mathrm m\).
+
+    **Kiểm lại.** Độ dài độ dời 15 m nhỏ hơn quãng đường 21 m. Nếu hai chặng ngược hướng hoặc không vuông góc thì phải vẽ lại hình; không thể áp dụng phép tính này một cách máy móc.
 
 === "Lỗi thường gặp"
 
@@ -193,13 +233,13 @@
 
     ??? tip "Nhầm điểm đầu/cuối và chiều của vectơ"
 
-        <ol><li><strong>Tín hiệu:</strong> Học sinh trả lời sai trong B07-C01, B07-P03.</li><li><strong>Nguyên nhân:</strong> Nhầm các định nghĩa hoặc quy tắc vectơ đã học, không phải thiếu thêm công thức mới.</li><li><strong>Nguyên lí:</strong> Vẽ mũi tên từ chữ đứng trước sang chữ đứng sau; thử đảo AB thành BA.</li><li><strong>Tự sửa:</strong> Học sinh phải tự vẽ một sơ đồ mũi tên nhỏ, xác định điểm đầu/cuối và nêu ít nhất một lí do toán học, rồi thử lại câu cũ.</li><li><strong>Điểm quay lại:</strong> Làm lại B07-P03 rồi đối chiếu B07-C02.</li></ol><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
+        <ol><li><strong>Tín hiệu:</strong> Em đổi nhầm điểm đầu và điểm cuối, hoặc coi độ dài bằng nhau là đủ để hai vectơ bằng nhau.</li><li><strong>Nguyên nhân:</strong> Nhầm các định nghĩa hoặc quy tắc vectơ đã học, không phải thiếu thêm công thức mới.</li><li><strong>Nguyên lí:</strong> Vẽ mũi tên từ chữ đứng trước sang chữ đứng sau; thử đảo AB thành BA.</li><li><strong>Tự sửa:</strong> Em tự vẽ một sơ đồ mũi tên nhỏ, xác định rõ điểm đầu/cuối, nói lý do rồi tự thử lại.</li><li><strong>Điểm quay lại:</strong> Trong Luyện tập, làm lại câu về vectơ ngược hướng trong hình bình hành, rồi đối chiếu câu Core về điều kiện hai vectơ bằng nhau.</li></ol><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
 
     <span data-thpt-help-id="HELP-G10-B07-02" hidden></span>
 
     ??? tip "Nhầm cùng phương, cùng hướng, bằng nhau; quên quy ước vectơ-không"
 
-        <ol><li><strong>Tín hiệu:</strong> Học sinh trả lời sai trong B07-P04, B07-P05.</li><li><strong>Nguyên nhân:</strong> Nhầm các định nghĩa hoặc quy tắc vectơ đã học, không phải thiếu thêm công thức mới.</li><li><strong>Nguyên lí:</strong> So lần lượt phương, chiều, độ dài; dùng đúng quy ước KNTT về vectơ-không.</li><li><strong>Tự sửa:</strong> Học sinh phải tự vẽ một sơ đồ mũi tên nhỏ, xác định điểm đầu/cuối và nêu ít nhất một lí do toán học, rồi thử lại câu cũ.</li><li><strong>Điểm quay lại:</strong> Làm B07-P05 rồi B07-P04.</li></ol><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
+        <ol><li><strong>Tín hiệu:</strong> Em thấy hai giá song song rồi kết luận ngay cùng hướng, hoặc quên trường hợp vectơ-không.</li><li><strong>Nguyên nhân:</strong> Nhầm các định nghĩa hoặc quy tắc vectơ đã học, không phải thiếu thêm công thức mới.</li><li><strong>Nguyên lí:</strong> So lần lượt phương, chiều, độ dài; dùng đúng quy ước KNTT về vectơ-không.</li><li><strong>Tự sửa:</strong> Em tự vẽ hai mũi tên, ghi phương–chiều–độ dài theo thứ tự và giải thích kết luận trước khi tự thử lại.</li><li><strong>Điểm quay lại:</strong> Trong Luyện tập, làm câu về hai vectơ cùng hướng nhưng khác độ dài, rồi câu về quy ước vectơ-không.</li></ol><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
 
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
