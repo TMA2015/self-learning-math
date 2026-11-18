@@ -1,4 +1,4 @@
-# AUTHORING CURRENT-SOURCE REVIEW — Thống kê mô tả và phân tích số liệu G10–G12 · V2 R09
+# AUTHORING CONTENT_READY — Thống kê mô tả và phân tích số liệu G10–G12 · V2 R09
 
 **Một nguồn Topic độc lập** theo SLM-THPT-QUALITY-ONE v3.1.0 Q01–Q18, đi từ sai số/đặc trưng mẫu G10 sang bảng ghép G11 và độ phân tán ghép G12. Không gộp lại chủ đề Xác suất đã bàn giao ở PR #810. Gói này là **thứ tư theo trình tự AUTHORING**, không gán `PLAN22-04`/mã/route Topic chính thức (danh mục nghiên cứu 22 chủ đề chưa được owner-lock). Học liệu công khai R07 đã tự kiểm đầy đủ theo checklist 13 mục; thực tế có 114 câu Luyện tập và chín câu public tự ôn; không có private held-out câu mới, không có website implementation, không merge/deploy.
 
@@ -24,7 +24,7 @@ STATISTICS_BOXPLOT_SVG_BLOB: 4798c4e6bd8fb1730dedcfe03581e14a6514f972
 ACADEMIC_VERDICT: SELF_VERIFIED
 PEDAGOGICAL_VERDICT: SELF_VERIFIED
 CONTENT_STATE: CONTENT_READY
-BLOCKERS: CURRENT_HEAD_CI_Q18_SOURCE_RECHECK_PENDING
+BLOCKERS: NONE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
@@ -429,3 +429,7 @@ RELEASE owns source-locked canonical runtime import, quality AP1–AP5/R1–R5, 
 - Source `b875ca4e726ab14071f17a2d8a85d6950e3b4ba9`, scoped current Q18 `fab8d45b3a1d1479ed4bc437a577799e865a8d3b`, A1/Q15 evidence `5d0febb1ae3537730c8ea5892f41d882ba4a7957` are source-locked to the same existing R09 file. Former signed source `b5713f0c2a1aa6a9fa7a7d63f6e6878bdf8d338b` is retained only as historical Git proof.
 - Actual seven public Written self-check wording deltas / two figure orientation label removals have exact Q14/Q16 and math invariance evidence in Q18. All 114 canonical public items/solutions/rubrics, 9 public no-Mastery Selfcheck questions and SVGs protected. Historical PDF page-index note is nonblocking; scope and math are verified without claiming a new independent NotebookLM review.
 - Current authoring revision is NOT automatically `CONTENT_READY` before current HEAD QA passes. No RELEASE ingestion, RD1 activation, Mastery, merge or deploy.
+
+### Authoring gate candidate 18/11/2026
+
+- Current source and impacted Q14/Q16 wording are source-equivalent DELTA_B with Q18 signed author check and 114 canonical mathematical responses protected. Existing original R09 academic/PED author acceptance may be inherited **only** because no content-mathematics or rubric-weight change occurred. This state describes **authoring evidence readiness**; PR HEAD CI still required before any RELEASE intake and is not an independent new NotebookLM full Topic verdict.
