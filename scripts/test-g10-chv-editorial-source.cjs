@@ -7,6 +7,7 @@
 const fs=require("node:fs"),path=require("node:path"),assert=require("node:assert/strict");
 const cp=require("node:child_process"),crypto=require("node:crypto");
 const root=path.resolve(__dirname,"..");
+require("./test-g10-b11-b12-source-first-delta.cjs");
 const baseline="95c111b313886283bd8245babcc9ffdbfcc7c54f";
 const {chvEditorialReceiptRows,candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 const blob=data=>{
