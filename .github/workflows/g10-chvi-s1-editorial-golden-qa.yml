@@ -17,7 +17,7 @@ permissions:
 jobs:
   chvi-s1-golden:
     name: Source-locked ChVI four lessons, Golden browser 12 cases and 27 G10 regressions
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
