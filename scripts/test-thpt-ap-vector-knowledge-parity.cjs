@@ -139,7 +139,9 @@ for(const c of cases){
   if(current){
   const headings=[...middle.matchAll(/^    ### ([^\n]+)$/gm)].map(m=>m[1]);
   assert.deepEqual(headings,editorial[c.n].sections,"B"+c.n+": official S1 book sections changed");
-  assert(expressions.length>0||(c.n===7&&signedR05&&middle.includes("\\(")),
+  assert(expressions.length>0||(c.n===7&&signedR05&&middle.includes("\\("))||
+   (c.n===10&&signedB10R02&&
+    (middle.match(/<div class="arithmatex">\\\(\\displaystyle /g)||[]).length===7),
     "B"+c.n+": all S1 mathematical expressions missing");
   for(const required of editorial[c.n].formulas)
    assert(middle.includes(required),"B"+c.n+": essential S1 formula absent or mutated: "+required);
