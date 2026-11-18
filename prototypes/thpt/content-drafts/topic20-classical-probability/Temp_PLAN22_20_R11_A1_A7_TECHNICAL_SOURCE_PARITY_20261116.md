@@ -4,9 +4,11 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_LEARNER_PRESENTATION_20261116.md
-SOURCE_BLOB: 74e758075d17e98649d9dd08709b523e8a782b63
+SOURCE_BLOB: 874de7fd1dd1923549a0ef35a9648d291ab761aa
+CURRENT_Q18_RECEIPT_BLOB: bde8785e4794b0519bb301a6358b746b2fc854dd
+CURRENT_Q15_MATRIX_BLOB: a6f790af637ec1d2996e387edf8e2a960d8f29c6
 CONTENT_SNAPSHOT: R11_SOURCE_EQUIVALENT_R10 / FULL_TOPIC_LEARNING_PATH / KIEN_THUC + LUYEN_TAP + TU_KIEM_TRA
-STATUS: AUTHOR_TECHNICAL_PARITY_PASS_R11; ORIGINAL_R10_AUTHOR_MATH_PED_SIGNOFF_UNCHANGED; NO_INDEPENDENT_NOTEBOOKLM_R11; NO_RELEASE
+STATUS: ACTIVE_AUTHORING_Q15_SOURCE_CUSTODY_VERIFIED; DELTA_C_PED_TARGETED_IN_REVIEW; CONTENT_READY_NO
 
 ## R11 exact-source equivalent learner presentation (technical-only, 16/11/2026)
 
@@ -58,3 +60,8 @@ For every outcome, check in R10: named `Khám phá kiến thức` paragraphs exp
 ## AUTHOR_SIGNOFF
 
 I have reviewed the whole authoring source after its R10 metadata-only lock, re-evaluated all 17 first-try mathematical claims, all 17 Practice and three Written answers/rubrics, all 10 examples (including the device and dice models) and both actual SVG definitions. No identified P0/P1 source, mathematical or pedagogy defect remains for this **public Topic learning source plus private candidate assessment custody**; the official scoring/readiness runtime is not claimed. This is **AUTHOR_SELF_QA_PASS under the owner-effective Q18 §X-E**, NOT an independent NotebookLM Academic/PED reviewer verdict. No merge/deploy, official Mastery, or released website status follows.
+
+## 18/11/2026 · current in-place source A1–A7 scope
+
+- Current learner Git source `874de7fd1dd1923549a0ef35a9648d291ab761aa`, historical accepted original source `74e758075d17e98649d9dd08709b523e8a782b63` kept in Git history only, no second current lesson file. 37/37 item ID/outcome/role/version and actual source line pointers checked against Q15 matrix `a6f790af637ec1d2996e387edf8e2a960d8f29c6`; updated scoped Q18 `bde8785e4794b0519bb301a6358b746b2fc854dd` confirms Q08/PED6 remediation and original question/answer/rubric math are preserved.
+- Q15 source-owner/line-count error is CLOSED. Material self-remediation DELTA_C is still `AUTHOR_SELF_VERIFIED`, so final readiness must obtain affected-scope independent PED review and exact one current V2/ready/REGISTER chain. Do not reuse old SOURCE_EQUIVALENT academic verdict as a current full-Topic PASS. No official RD1/Final Submit/Skill Mastery or deployment.
