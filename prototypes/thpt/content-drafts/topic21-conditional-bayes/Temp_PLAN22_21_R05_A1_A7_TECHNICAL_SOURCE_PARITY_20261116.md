@@ -5,7 +5,7 @@ STANDARD_VERSION: 3.1.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_LEARNER_PRESENTATION_20261116.md
 SOURCE_BLOB: aa325637f659bc5f8ba504f6ce0129e07340a41d
-CURRENT_Q18_RECEIPT_BLOB: 062927424ab6d58b8560def38819de3663328e11
+CURRENT_Q18_RECEIPT_BLOB: 5424680e709efc849a967ad00e6ef6292e1a8f0f
 CURRENT_Q15_MATRIX_BLOB: 522d13493d18ec53280a752dc5498e92c8896805
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
@@ -62,3 +62,11 @@ I have inspected the final R04 student source after canonical version lock, chec
 
 - Current learner Git source `aa325637f659bc5f8ba504f6ce0129e07340a41d`, historical accepted original source `65938a700e0da630694e9cbb6e636d337e67aeb5` kept in Git history only, no second current lesson file. 19/19 item ID/outcome/role/version and actual source line pointers checked against Q15 matrix `522d13493d18ec53280a752dc5498e92c8896805`; updated scoped Q18 `062927424ab6d58b8560def38819de3663328e11` confirms Q08/PED6 remediation and original question/answer/rubric math are preserved.
 - Q15 source-owner/line-count error is CLOSED. Material self-remediation DELTA_C is still `AUTHOR_SELF_VERIFIED`, so final readiness must obtain affected-scope independent PED review and exact one current V2/ready/REGISTER chain. Do not reuse old SOURCE_EQUIVALENT academic verdict as a current full-Topic PASS. No official RD1/Final Submit/Skill Mastery or deployment.
+
+## Effective R06 in-place targeted review reconciliation — 18/11/2026
+
+- Learner single-file source remains Git blob `aa325637f659bc5f8ba504530b72c0a41d`; math/answers and 2 SVG are unchanged against prior R05. Eight first-try D6 pathways received an **owner-pasted independent targeted review**: Academic/PED PASS 8/8, P0=P1=P2=0, no delta. Independent reviewer evidence is `prototypes/thpt/review-packets/Temp_TOPIC21_R06_D6_INDEPENDENT_OWNER_PASTED_VERDICT_20261118.md` Git blob `798eb7d586711fd9ce5213b44e66fe4a0e751060`.
+- The three Written D6 explanations were checked by AUTHOR SELF-QA, not by that independent review. Earlier R04 author Q01–Q18 and 45 mathematics checks, plus R05 equivalent scope, remain attached to their original blobs; the unchanged-math bridge and targeted current-source Q18 evidence are now linked in the current receipt SHA `5424680e709efc849a967ad00e6ef6292e1a8f0f`.
+- Current Q15 matrix Git blob `522d13493d18ec53280a752dc5498e92c8896805` reconciles 19 actual item IDs, role/primary outcome/version/line and 8 public question-only P-item replays. T01–T08 and W01–W03 now carry the current source annotation `TOP21-R06`; P01–P08 retain `TOP21-R03`. Earlier `A4` mention of T01–T08 at R01 is **historic** and must not be used as active marker metadata.
+- Reviewer SOURCE_RECEIPT's 'SHA256_aa325...' is actually Git SHA-1; reviewer M01–M08 IDs do not match current V2 K01–K08 identity labels. All eight canonical O01–O08 are identical, and no re-ID of student source or canonical items was made.
+- Authoring quality chain only. User-supplied reviewer report does not authorize release, independent held-out Readiness, Mastery or protected RD1 access. Final ready/REGISTER/HEAD QA must reconcile separately.
