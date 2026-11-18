@@ -1,6 +1,6 @@
 # TEMP REVIEW PACKET — TOÁN 10 CHƯƠNG V BÀI 12 — ACADEMIC + PED
 
-**One single current manuscript:** e6be7e0db63eeebc9c680978f520ddb387791774 · **Q18 receipt:** 09fcf52ade0fb8b25435cfc585f226c01ffeeb38 · **source role:** temporary self-contained Markdown for NotebookLM, not an alternative public source.
+**One single current manuscript:** c4ee9f322d158d775be551c9888d426aba8ee16d · **Q18 receipt:** 29094e10863a5a8d1d77e559afe010b475b5d916 · **source role:** temporary self-contained Markdown for NotebookLM, not an alternative public source.
 **Permanent Sources:** exactly FIVE THPT v2.1; verify against original SGK/SBT Kết nối tri thức S1 and identify any unauthenticated PDF pages as SOURCE_GAP. SGK printed pp73–77, calculator outcome p73, example 2^9√3 p74 and exercise 5.3 ∛7 p77. SBT primary scan / printed-to-PDF index not independently verified by author.
 **Reviewer obligation:** judge each of APPROX_CONCEPT, ABS_ERROR, REL_ERROR, ROUNDING, CALCULATOR and each item (eight original preserved + new P07, independent TRY-CALC-R01, Written W12, three HELP); verify accuracy, reasoning and learnability, non-reuse of disclosed items, diagram/MathJax, Q15/Q16/RD1 and independent chapter evaluation safeguards. Produce source-verified ACADEMIC/PED verdict, P0/P1/P2 and MINIMAL_DELTA. Never self-issue PASS or authorize website release.
 
@@ -393,7 +393,7 @@
     "difficulty": "APPLICATION"
   }
 ];
- const validate=()=>({valid:records.length===9&&new Set(records.map(x=>x.item_id)).size===8&&
+ const validate=()=>({valid:records.length===9&&new Set(records.map(x=>x.item_id)).size===9&&
   records.every(x=>/^THPT-G10-B12-[CP]\d{2}$/.test(x.item_id)&&x.exposure==="FORMATIVE_ONLY"&&
   (!x.options||(x.options.length===4&&/^[ABCD]$/.test(x.answerKey))))});
  const forLesson=(lesson,role)=>records.filter(x=>x.lesson===String(Number(lesson))&&
@@ -435,9 +435,9 @@ Use the five authorized Permanent Sources THPT v2.1 and verified SGK/SBT S1; out
 **BASELINE_W12_W13_W14_PUBLIC_WRITTEN_BLOB:** `8a1fbabe62d749177d2986e3d59ddb979a9d0267`
 **BASELINE_B12_PUBLISHED_HTML_BLOB:** `a33bd362e79c8fd53a3250e97d73737d318bd45e`
 **B12_R01_SOURCE_BLOB:** `fc2942aeafdcd34d3cedd9eeb24c48716bbe7e78`
-**B12_R01_ITEM_BANK_BLOB:** `7a65fc8dabb4e5d2a2162c5f22f99bf5f9df3630`
+**B12_R01_ITEM_BANK_BLOB:** `ca93acc0dd4df6e8f7fcd45732a6c69d82892d3f`
 **B12_R01_PRACTICE_HUB_BLOB:** `9a559ebf48e9c75abe3ebbdee667944eb2ae98b1`
-**ONE_CANONICAL_B12_R01_BLOB:** `e6be7e0db63eeebc9c680978f520ddb387791774`
+**ONE_CANONICAL_B12_R01_BLOB:** `c4ee9f322d158d775be551c9888d426aba8ee16d`
 **FROZEN_B13_SOURCE_BLOB:** `0459b67858246cb6136cf9a2cf9e7a7d18bd27be`
 **FROZEN_B14_SOURCE_BLOB:** `21c1ef59277f742b45a27900b173fac031a4a04f`
 **FROZEN_CSS_BLOB:** `818866d2ea73b3252649f78926fe3abd343abc64`
