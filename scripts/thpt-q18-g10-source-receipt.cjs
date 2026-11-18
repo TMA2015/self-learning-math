@@ -309,6 +309,43 @@ function expectedG10KnowledgeBlob(lesson,legacy){
   return candidate;
  }
 
+ if(name==="B11"){
+  // Academic material is a DRAFT requiring independent review, not a Q18 PASS.
+  // Q18 source-locks a single candidate source without touching frozen receipts.
+  const row=chivEditorialReceiptRows().get("B11");
+  assert(row&&row.baseline===blobs[1],
+   "B11 candidate must extend historical ChIV editorial baseline");
+  const signed=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B11_S1_PED_CANONICAL_Q18_R01_20261118.md"),"utf8");
+  const field=k=>signed.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(field("R01_PUBLISHED_B11_SOURCE_BLOB"),row.candidate,
+   "B11 R01 immutable source must be signed");
+  const source=field("B11_CANDIDATE_SOURCE_BLOB"),
+        masterSha=field("ONE_CANONICAL_B11_BLOB");
+  assert(/^[a-f0-9]{40}$/.test(source||"")&&/^[a-f0-9]{40}$/.test(masterSha||"")&&source!==row.candidate,
+   "B11 distinct candidate and canonical must have SHA-locked identities");
+  const calc=buf=>require("node:crypto").createHash("sha1")
+   .update(Buffer.from("blob "+buf.length+String.fromCharCode(0))).update(buf).digest("hex");
+  const manuscript=fs.readFileSync(path.join(root,
+   "prototypes/thpt/content-drafts/THPT_G10_CHIV_B11_CANONICAL.md"));
+  assert.equal(calc(manuscript),masterSha,"B11 single current manuscript SHA mismatch");
+  const css=fs.readFileSync(path.join(root,"docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"));
+  assert.equal(calc(css),field("CSS_B11_SCOPED_APPEND_BLOB"),"B11 scoped Golden CSS SHA mismatch");
+  const sourceText=fs.readFileSync(path.join(root,
+   "docs/thpt-preview/sgk/chuong-iv/bai-11.md"),"utf8");
+  assert.equal(calc(Buffer.from(sourceText)),source,"B11 current Knowledge source not signed");
+  const manuscriptText=manuscript.toString("utf8");
+  const start="<!-- BEGIN_B11_KNOWLEDGE_MARKDOWN -->\n",end="\n<!-- END_B11_KNOWLEDGE_MARKDOWN -->";
+  assert(manuscriptText.includes(start)&&manuscriptText.includes(end),"B11 one canonical Knowledge markers missing");
+  assert.equal(manuscriptText.split(start)[1].split(end)[0].trimEnd()+"\n",sourceText,
+   "B11 published learner source must be exact current canonical Section A");
+  for(const required of ["CHIV-11-A","CHIV-11-B","DELTA_C_ACADEMIC_MATERIAL",
+    "INDEPENDENT_ACADEMIC_PED_REVIEW_PENDING","NO_MERGE_NO_DEPLOY"]){
+   assert(signed.includes(required),"B11 review HOLD evidence missing "+required);
+  }
+  return source;
+ }
+
  if(name==="B10"){
   const row=chivEditorialReceiptRows().get("B10");
   assert(row&&row.baseline===blobs[1],"B10 R01 Q18 must extend exact old editorial ledger");
