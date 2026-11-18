@@ -484,6 +484,16 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
        const formulas=blocks.nth(1).locator(".thpt-r4-key-formula");
        assert.deepEqual([await defs.count(),await rules.count(),await recap.count(),await formulas.count()],
         [1,2,1,2],where+" B10 semantic 3+1 roles, no arbitrary box quota");
+       // Owner P2: 4 source display blocks were raw [..] in published HTML.
+       // Require real typeset containers INSIDE each affected Tab2 card, not just any MathJax on page.
+       await formulas.first().locator('div.arithmatex mjx-container').first()
+        .waitFor({state:"attached",timeout:15000});
+       assert.equal(await rules.first().locator('div.arithmatex mjx-container').count(),3,
+        where+" B10 three coordinate-operation formulas must be typeset, not raw TeX");
+       assert.equal(await formulas.nth(0).locator('div.arithmatex mjx-container').count(),2,
+        where+" B10 both Pythagoras and distance formulas must be typeset");
+       assert.equal(await formulas.nth(1).locator('div.arithmatex mjx-container').count(),2,
+        where+" B10 both midpoint and centroid formulas must be typeset");
        for(const scheme of ["default","slate"]){
         await page.evaluate(v=>document.body.setAttribute("data-md-color-scheme",v),scheme);
         const colors=await Promise.all([defs.first(),rules.first(),recap.first(),formulas.first()]
@@ -498,6 +508,10 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
         (await rules.allInnerTexts()).some(v=>v.includes("Điều kiện cùng phương")),
         where+" B10 source-accurate real formal definition and rule");
        await labels.nth(2).click();
+       await blocks.nth(2).locator('div.arithmatex mjx-container').first()
+        .waitFor({state:"attached",timeout:15000});
+       assert.equal(await blocks.nth(2).locator('div.arithmatex mjx-container').count(),1,
+        where+" B10 counter-current square-root expression must be typeset in Example 4");
        const examplesText=await blocks.nth(2).innerText();
        assert(examplesText.includes("Ví dụ 4 — Qua sông")&&
         examplesText.includes("96")&&examplesText.includes("3")&&examplesText.includes("5")&&
