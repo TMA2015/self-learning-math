@@ -281,6 +281,8 @@
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
     <p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 10 Kết nối tri thức với cuộc sống và học liệu SLM hiện hành. Lời giảng được biên tập nhằm hỗ trợ tự học độc lập.</p>
+
+
 <!-- END_B12_KNOWLEDGE_MARKDOWN -->
 
 ## B. Authoritative public formative records (eight old untouched + one new P07)
