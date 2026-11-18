@@ -327,6 +327,8 @@ const polishG10ChapterIV=(article)=>{
  const isEnrichedEarlyVectors=/\/chuong-iv\/bai-(?:7|8)\/?$/.test(location.pathname);
  const isEnrichedB09=/\/chuong-iv\/bai-9\/?$/.test(location.pathname)&&
   Boolean(article.querySelector('[data-thpt-first-try-id="THPT-G10-CHIV-TRY11"]'));
+ const isEnrichedB10=/\/chuong-iv\/bai-10\/?$/.test(location.pathname)&&
+  Boolean(article.querySelector('[data-thpt-first-try-id="THPT-G10-CHIV-TRY16"]'));
  const section=["1. Khám phá kiến thức","2. Kiến thức SGK","3. Ví dụ",
    "4. Lỗi thường gặp và cách tự khắc phục"];
  blocks.forEach((block,i)=>{
@@ -390,6 +392,30 @@ const polishG10ChapterIV=(article)=>{
     const next=current.nextElementSibling;
     box.append(current);
     current=next;
+   }
+  }
+ }
+ // B10 signed Q18: new concept-first source has separate P paragraphs for
+ // 'Phân tích / Giải / Kiểm lại'. Wrap ONLY the actual solution, leaving
+ // explanation, problem and self-check outside. No global runtime changes,
+ // Q15/Q16 writes or other lesson routes touched.
+ if(isEnrichedB10){
+  const isLead=(node,re)=>node?.tagName==="P"&&
+   node.firstElementChild?.tagName==="STRONG"&&
+   re.test(node.firstElementChild.textContent.trim());
+  for(const heading of blocks[2].querySelectorAll(":scope > h3")){
+   let start=heading.nextElementSibling;
+   while(start&&start.tagName!=="H3"&&!isLead(start,/^Giải\s*:/iu))
+    start=start.nextElementSibling;
+   if(!start||start.tagName==="H3")continue;
+   const panel=document.createElement("div");
+   panel.className="thpt-g10-example-solution";
+   panel.setAttribute("role","group");
+   panel.setAttribute("aria-label","Lời giải ví dụ");
+   start.before(panel);
+   let cur=start;
+   while(cur&&cur.tagName!=="H3"&&!isLead(cur,/^Kiểm lại(?:\s+và giới hạn)?\s*:/iu)){
+    const next=cur.nextElementSibling;panel.append(cur);cur=next;
    }
   }
  }

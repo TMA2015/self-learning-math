@@ -16,7 +16,7 @@ const sources={
  7:"e1487ce01e81738228ae69d4d87cbdc56b5e0c69",
  8:"22e53396caf7753e813c492615a491e1f24cc9fd",
  9:"3d79a17e9ba39cd0f46077823800f5f38c73e313",
- 10:"ceaa76688e73274c9cf2d3116c41c6d4d0ac2726",
+ 10:"b923f5f491c007c54392d3f7d7be83193f3f93fc",
  11:"2a1381689f66d1f8c752bdbf1c29a9ef49a4e073"
 };
 const blob=data=>{const b=Buffer.isBuffer(data)?data:Buffer.from(data);return crypto.createHash("sha1").update(Buffer.from("blob "+b.length+"\0")).update(b).digest("hex");};
@@ -68,8 +68,20 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
   const b09f=k=>b09.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(b09f("CSS_BASELINE_BLOB"),semField("R04_CSS_BLOB"),
     "B09 3+1 must extend immutable owner-accepted B08 CSS");
-  assert.equal(blob(cssFile),b09f("R03_CSS_BLOB"),
-    "B09 exact append-only CSS signed by academic Q18 receipt");
+  const cssWithB10=cssFile.toString("utf8");
+  const atB10=cssWithB10.indexOf("/* G10 Chapter IV B10 R01");
+  assert(atB10>0&&cssWithB10.indexOf("/* G10 Chapter IV B10 R01",atB10+1)<0,
+    "B10 semantic CSS must add exactly one scoped tail");
+  assert.equal(blob(cssWithB10.slice(0,atB10)),b09f("R03_CSS_BLOB"),
+    "B09 owner P2 approved CSS must be exact byte-immutable prefix");
+  const b10Receipt=fs.readFileSync(root+
+   "/prototypes/thpt/ux795/G10_CHIV_B10_S1_PED_SINGLE_CANONICAL_Q18_R01_20261118.md","utf8");
+  const b10f=k=>b10Receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(blob(cssFile),b10f("CSS_R01_SCOPED_B10_BLOB"),
+    "B10 CSS source hash must be exact and signed");
+  assert(cssWithB10.slice(atB10).includes("THPT-G10-CHIV-TRY16")&&
+   !cssWithB10.slice(atB10).includes("THPT-G10-CHIV-TRY11"),
+    "B10 scoped CSS cannot recolor owner P2 B09");
   const cssTextR05=cssFile.toString("utf8"),markerR05="/* G10 ChIV B07 R05";
   const b09Marker="/* G10 Chapter IV B09 R03",b09Pos=cssTextR05.indexOf(b09Marker);
   assert(b09Pos>0&&cssTextR05.indexOf(b09Marker,b09Pos+1)===-1,
@@ -171,10 +183,10 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
      assert((await blocks.nth(0).locator(":scope > h3").allInnerTexts()).every((v,i)=>v.trim().startsWith("1."+(i+1)+". ")),
       where+" discovery headings are visual-only numbered");
      const examples=await blocks.nth(2).locator(":scope > h3").allInnerTexts();
-     assert.equal(examples.length,[7,8,9].includes(lesson)?4:3,where+" owner-scoped B07/B08 and B09 S1 have four worked examples");
-     assert(examples.every((v,i)=>v.trim().startsWith("3."+(i+1)+". Ví dụ "+(i+1)+([7,8].includes(lesson)?" —":". "))),
+     assert.equal(examples.length,[7,8,9,10].includes(lesson)?4:3,where+" owner-scoped B07/B08 and B09 S1 have four worked examples");
+     assert(examples.every((v,i)=>v.trim().startsWith("3."+(i+1)+". Ví dụ "+(i+1)+([7,8,10].includes(lesson)?" —":". "))),
       where+" numbered visual example headings");
-     assert.equal(await blocks.nth(2).locator(".thpt-g10-example-solution").count(),[7,8,9].includes(lesson)?4:3,
+     assert.equal(await blocks.nth(2).locator(".thpt-g10-example-solution").count(),[7,8,9,10].includes(lesson)?4:3,
       where+" original or S1-enriched solutions grouped in Golden panel");
      assert.equal(await article.locator(".thpt-r4-lead").count(),0,where+" no redundant introduction");
      assert.equal(await article.locator(".thpt-r4-footnote").count(),1,where+" only existing source footnote retained");
@@ -209,7 +221,7 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
       where+" First Try summaries collapsed and normal-size text");
      assert(state.tips.every(x=>!x.open),where+" D6 closed");
      assert(state.cells.every(px=>Math.abs(px-state.body)<.6),where+" table fonts equal body");
-     assert(state.solutions.every(x=>x.bg!=="rgba(0, 0, 0, 0)"&&x.strong===([7,8].includes(lesson)?"Lời giải.":"Giải:")),
+     assert(state.solutions.every(x=>x.bg!=="rgba(0, 0, 0, 0)"&&x.strong===([7,8].includes(lesson)?"Lời giải.":lesson===10?"Giải:":"Giải:")),
       where+" solution panel contains unchanged mathematical solution");
      assert(state.overflow<=3,where+" no whole-page horizontal overflow");
      if(lesson===7){
@@ -449,6 +461,88 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
         where+" B09 serves matching responsive image, not tiny desktop labels on mobile");
        assert.equal(await blocks.nth(2).locator('h3').count(),4,
         where+" B09 four worked examples include decomposition");
+       await labels.nth(0).click();
+      }
+      if(lesson===10){
+       // B10 G3: anti-repeat CHIV-10-A/B/C + B09-F04, real learner UI.
+       await labels.nth(0).click();
+       const fig=blocks.nth(0).locator('img[src*="THPT_G10_B10_COORDINATES_DIFFERENCE_D5_R01.svg"]');
+       assert.equal(await fig.count(),1,where+" B10 D5 figure moves BEFORE first student try");
+       await fig.scrollIntoViewIfNeeded();await fig.evaluate(async el=>{if(el.decode)await el.decode();});
+       assert(await fig.evaluate(el=>el.complete&&el.naturalWidth>0),where+" B10 early coordinate SVG decodes");
+       const actualCoord=await fig.evaluate(el=>el.currentSrc);
+       assert(actualCoord.includes(width<=600?
+        "THPT_G10_B10_COORDINATES_MOBILE_D5_R01.svg":
+        "THPT_G10_B10_COORDINATES_DIFFERENCE_D5_R01.svg"),
+        where+" B10 early coordinate figure must have readable mobile source and exact original desktop source");
+       assert.equal(await blocks.nth(0).locator("code").count(),0,
+        where+" B10 no raw backtick-generated math code in Discovery");
+       await labels.nth(1).click();
+       const defs=blocks.nth(1).locator(".thpt-r4-concept-card");
+       const rules=blocks.nth(1).locator(".thpt-r4-rule-card");
+       const recap=blocks.nth(1).locator(".thpt-r4-knowledge-conclusion:not(.thpt-r4-concept-card):not(.thpt-r4-rule-card)");
+       const formulas=blocks.nth(1).locator(".thpt-r4-key-formula");
+       assert.deepEqual([await defs.count(),await rules.count(),await recap.count(),await formulas.count()],
+        [1,2,1,2],where+" B10 semantic 3+1 roles, no arbitrary box quota");
+       for(const scheme of ["default","slate"]){
+        await page.evaluate(v=>document.body.setAttribute("data-md-color-scheme",v),scheme);
+        const colors=await Promise.all([defs.first(),rules.first(),recap.first(),formulas.first()]
+         .map(z=>z.evaluate(el=>getComputedStyle(el).backgroundColor)));
+        assert.deepEqual(colors,scheme==="slate"?
+         ["rgb(25, 61, 54)","rgb(32, 53, 81)","rgb(74, 58, 37)","rgba(0, 0, 0, 0)"]:
+         ["rgb(232, 247, 242)","rgb(234, 241, 252)","rgb(255, 243, 213)","rgba(0, 0, 0, 0)"],
+         where+" B10 3+1 contrast in "+scheme);
+       }
+       await page.evaluate(()=>document.body.removeAttribute("data-md-color-scheme"));
+       assert((await defs.innerText()).includes("Định nghĩa — Tọa độ của vectơ")&&
+        (await rules.allInnerTexts()).some(v=>v.includes("Điều kiện cùng phương")),
+        where+" B10 source-accurate real formal definition and rule");
+       await labels.nth(2).click();
+       const examplesText=await blocks.nth(2).innerText();
+       assert(examplesText.includes("Ví dụ 4 — Qua sông")&&
+        examplesText.includes("96")&&examplesText.includes("3")&&examplesText.includes("5")&&
+        examplesText.includes("Đọc hình theo đúng dữ kiện Ví dụ 4")&&
+        !examplesText.includes("bộ dữ liệu khác"),
+        where+" B10 river figure must match its worked-example dataset exactly");
+       const river=blocks.nth(2).locator('img[src*="THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg"]');
+       assert.equal(await river.count(),1,where+" B10 source-matched river diagram belongs in worked-example Tab3");
+       await river.scrollIntoViewIfNeeded();
+       await river.evaluate(async el=>{if(el.decode)await el.decode();});
+       assert(await river.evaluate(el=>el.complete&&el.naturalWidth>0),where+" B10 river SVG decodes");
+       const actualRiver=await river.evaluate(el=>el.currentSrc);
+       assert(actualRiver.includes(width<=600?
+        "THPT_G10_B10_RIVER_VELOCITY_MOBILE_D5_R01.svg":
+        "THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg"),
+        where+" B10 must serve legible portrait diagram only on mobile, full width otherwise");
+       await labels.nth(3).click();
+       const tips=blocks.nth(3).locator("details.tip");
+       assert.equal(await tips.count(),3,where+" B10 exactly three actual errors, 3 canonical HELP markers separately");
+       const data=await tips.evaluateAll(nodes=>nodes.map(e=>({open:e.open,summary:e.querySelector("summary")?.textContent||"",text:e.textContent||""})));
+       assert(data.every((x,i)=>!x.open&&x.summary.includes("4."+(i+1))&&
+        x.text.includes("Lỗi thường gặp")&&x.text.includes("Vì sao sai?")&&
+        x.text.includes("Ôn và luyện lại:")),
+        where+" B10 tab4 genuine student wrong step, cause, remedy and numbering");
+       assert(data[0].text.includes("Lỗi thường gặp:")&&
+        data[1].text.includes("Lỗi thường gặp 1:")&&
+        data[1].text.includes("Lỗi thường gặp 2:")&&
+        data[2].text.includes("Lỗi thường gặp:")&&
+        data.every(x=>/sai|không phải|Đúng phải|Sửa/.test(x.text)),
+        where+" B10 must show 4 concrete wrong student steps, not generic method reminders");
+       assert(data.every(x=>!/Assessment safety|HELP_ID|EX-G10-B10-RIVER|B10-[CP]0[1-6]/.test(x.text)),
+        where+" B10 no admin metadata visible to students");
+       const last=tips.nth(2);await last.locator("summary").click();
+       assert(await last.evaluate(e=>e.open),where+" B10 river error expands");
+       await page.waitForFunction(()=>document.querySelector('details.tip[open] mjx-container')!==null,
+        null,{timeout:15000});
+       const paragraphs=await last.locator("p").allTextContents();
+       assert(paragraphs.some(v=>v.includes("Thời gian đó sai"))&&
+        paragraphs.some(v=>/thành phần hướng Bắc/i.test(v))&&
+        paragraphs.some(v=>v.includes("Ôn và luyện lại:")),
+        where+" B10 error 4.3 must show a specific wrong method, cause and recovery");
+       assert(await last.locator("mjx-container").count()>=5,
+        where+" B10 4.3 wrong and corrected time must be real rendered MathJax, not raw source TeX");
+       await last.locator("summary").click();
+       assert(!(await last.evaluate(e=>e.open)),where+" B10 4.3 re-closes");
        await labels.nth(0).click();
       }
       // Right TOC cross-tab link: tab 3 -> hidden Knowledge tab 2.

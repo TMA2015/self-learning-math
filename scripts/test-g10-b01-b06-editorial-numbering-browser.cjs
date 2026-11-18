@@ -114,8 +114,24 @@ function checkSHA(){
       "Original B01–B06 scoped Golden CSS prefix must remain source-identical");
     assert.equal(hash(cssText.slice(0,b09cut-1)),f09("CSS_BASELINE_BLOB"),
       "B09 CSS only follows owner P2-accepted B08 source without other changes");
-    assert.equal(hash(data),f09("R03_CSS_BLOB"),
-      "B09-only CSS exact source lock; B01–B06 frozen prefix remains intact");
+    // B10 is the only new scoped appendix; B01-B09 stay byte-for-byte frozen.
+    const b10=fs.readFileSync(path.join(root,
+      "prototypes/thpt/ux795/G10_CHIV_B10_S1_PED_SINGLE_CANONICAL_Q18_R01_20261118.md"),"utf8");
+    const f10=k=>b10.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    const marker10="/* G10 Chapter IV B10 R01";
+    const cut10=cssText.indexOf(marker10);
+    assert(cut10>b09cut&&cssText.indexOf(marker10,cut10+1)<0,
+      "B10 CSS must append exactly one new scoped region after B09");
+    // B09 main CSS ends immediately before the B10 comment (no extra separator).
+    assert.equal(hash(cssText.slice(0,cut10)),f09("R03_CSS_BLOB"),
+      "B01–B09 published CSS byte-identical before B10 section");
+    assert.equal(f10("CSS_OWNER_B09_P2_BASELINE_BLOB"),f09("R03_CSS_BLOB"),
+      "B10 Q18 must extend exactly owner-accepted B09 CSS");
+    assert.equal(hash(data),f10("CSS_R01_SCOPED_B10_BLOB"),
+      "B10 final CSS must match source-locked Q18 receipt");
+    assert(cssText.slice(cut10).includes('data-thpt-first-try-id="THPT-G10-CHIV-TRY16"')&&
+      !/TRY0[1-9]|TRY1[1-5]/.test(cssText.slice(cut10)),
+      "B10 append may style only B10 TRY16, not previously accepted lessons");
     assert(data.toString("utf8").includes('data-thpt-first-try-id="THPT-G10-CHIII-TRY06"'),
       "Only B06 canonical Knowledge marker may add CSS");
    assert(data.toString("utf8").includes('data-thpt-first-try-id="THPT-G10-CHIII-TRY01"'),
@@ -161,8 +177,26 @@ function checkSHA(){
  const f09=k=>b09.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
  assert.equal(f09("NAV_JS_BASELINE_BLOB"),field07("JS_CANDIDATE_BLOB"),
    "B09-only Golden solution JS must extend B07/B08 accepted navigation runtime");
- assert.equal(hash(js),f09("NAV_JS_R03_BLOB"),
-   "B09 exact scoped solution grouping JS must match Q18 receipt");
+ const b10=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B10_S1_PED_SINGLE_CANONICAL_Q18_R01_20261118.md"),"utf8");
+ const f10=k=>b10.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+ const newJs=js.toString("utf8");
+ const start1=" const isEnrichedB10=",end1=" const section=",
+       start2=" // B10 signed Q18:",end2=" // Golden example solution panel.";
+ const a=newJs.indexOf(start1),b=newJs.indexOf(end1,a),
+       c=newJs.indexOf(start2),d=newJs.indexOf(end2,c);
+ assert(a>0&&b>a&&c>b&&d>c&&
+  newJs.indexOf(start1,a+1)<0&&newJs.indexOf(start2,c+1)<0,
+  "B10 JavaScript may add only two exact scoped Golden regions");
+ const baseJs=newJs.slice(0,a)+newJs.slice(b,c)+newJs.slice(d);
+ assert.equal(hash(baseJs),f09("NAV_JS_R03_BLOB"),
+   "B01–B09 original runtime byte-exact after removing only B10 additions");
+ assert.equal(f10("B09_OWNER_P2_RUNTIME_BASELINE_BLOB"),f09("NAV_JS_R03_BLOB"),
+   "B10 JS must extend owner accepted B09 exact runtime SHA");
+ assert.equal(hash(js),f10("B10_SCOPED_GOLDEN_RUNTIME_BLOB"),
+   "B10 current complete runtime must equal signed Q18 exact SHA");
+ assert(newJs.slice(a,b).includes("TRY16")&&newJs.slice(c,d).includes("isEnrichedB10"),
+  "B10 JS additions must affect only B10 lesson runtime");
 }
 const names=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
 const ch=n=>n<=2?"i":n<=4?"ii":"iii";

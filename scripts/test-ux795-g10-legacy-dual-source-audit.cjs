@@ -70,9 +70,22 @@ for(const [name,chapter,num]of specs){
   assert.equal(receiptField(b09P1Receipt,"BASELINE_R03_SOURCE_BLOB"),
    receiptField(r03,"R03_SOURCE_BLOB"),"B09 published R05 must follow exact approved R03");
  }
+ const b09P2Receipt=name==="B09"?read(root,
+  "prototypes/thpt/ux795/G10_CHIV_B09_TAB4_REAL_ERROR_P2_DELTA_C_R06_20261117.md").toString("utf8"):null;
+ const b09OwnerP2=b09P2Receipt?receiptField(b09P2Receipt,"R06_SOURCE_BLOB"):null;
+ if(b09P2Receipt){
+  assert.equal(receiptField(b09P2Receipt,"PRIOR_R05_SOURCE_BLOB"),b09PublishedP1,
+   "B09 P2 owner source must follow exact previous published R05");
+  assert.equal(b09OwnerP2,"3d79a17e9ba39cd0f46077823800f5f38c73e313",
+   "B09 Q18 R06 immutable owner-accepted Knowledge source SHA");
+  assert.equal(receiptField(b09P2Receipt,"PRIOR_R05_CANONICAL_BLOB"),
+   receiptField(b09P1Receipt,"ONE_CANONICAL_LESSON_BLOB"),
+   "B09 R06 one academic manuscript must follow frozen P1 snapshot");
+ }
  const approvedSources=[row.main,row.candidate,...(editorial?[editorial.candidate]:[]),
   ...(chviReceiptRow?[chviReceiptRow.candidate]:[]),...(ux?[ux.candidate]:[]),
-  ...(b09PublishedP1?[b09PublishedP1]:[])];
+  ...(b09PublishedP1?[b09PublishedP1]:[]),
+  ...(b09OwnerP2?[b09OwnerP2]:[])];
  assert(approvedSources.includes(baselineSha),
    name+" unknown main baseline source drift outside immutable 27-row/Q18 chain");
  assert.equal(blob(candidateRaw),candidateG10KnowledgeBlob(num)||row.candidate,name+" exact approved historical/editorial source drift");
@@ -90,7 +103,7 @@ for(const [name,chapter,num]of specs){
   assert(originalStart>=0&&originalEnd>originalStart,"B09 historic main S1 source intact");
   const historic=[...base.slice(originalStart,originalEnd).matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]|\$([^$]+)\$/g)]
     .map(x=>(x[1]??x[2]??x[3]).trim().replace(/\s+/g," "));
-  if(baselineSha===b09PublishedP1){
+  if(baselineSha===b09PublishedP1||baselineSha===b09OwnerP2){
    // This main source is the immutable R05 owner P1 publication, not the
    // original 30-expression historical baseline. Validate its signed SHA,
    // complete S1 meaning, stable First Tries and new diagram, not the old
@@ -124,7 +137,7 @@ for(const [name,chapter,num]of specs){
    assert.equal(row.main,historicalMainB09GitBlob,"B09 ledger must retain immutable historic published Git blob");
    assert.notEqual(blob(candidateRaw),historicalMainB09GitBlob,"B09 must remain a distinct source-locked Delta C");
   assert.equal(ids.first.length,5);assert.equal(ids.help.length,2);
-  console.log("PASS EVIDENCE B09: historical 30-math witness frozen; baseline SHA "+baselineSha+" approved R03→R05 chain, five First Tries/two HELP, Q18 current candidate math signed");
+  console.log("PASS EVIDENCE B09: historical 30-math witness frozen; baseline SHA "+baselineSha+" approved R03→R05→R06 chain, five First Tries/two HELP, Q18 current candidate math signed");
  }else{
   const old=chvi.match(new RegExp(num+':\\{display:(\\d+),inline:(\\d+),sha:"([a-f0-9]{40})",tries:(\\d+),extraFold:(\\d+)\\}'));
   assert(old,name+" historical math spec missing");

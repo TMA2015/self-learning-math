@@ -264,10 +264,24 @@ for(const [tag,rec]of Object.entries(transfer)){
      modelB.includes('data-thpt-help-ref="'+rec.help+'"')&&
      modelB.includes('data-thpt-help-id="'+rec.help+'"'),
      "Transfer source canonical Q15/outcome/D6 "+tag);
-   assert(modelB.includes("#### Ví dụ có hướng dẫn — "+rec.ex),
+   if(tag==="RIVER"){
+    // B10 has owner-authorized Q18 Delta C: full river worked solution moved
+    // from Discovery to Golden Tab3, not removed or duplicated. Exact source SHA.
+    const r=read("prototypes/thpt/ux795/G10_CHIV_B10_S1_PED_SINGLE_CANONICAL_Q18_R01_20261118.md");
+    const field=k=>r.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    assert.equal(sha(modelB),field("R01_SOURCE_BLOB"),
+     "River D2 can move only under signed B10 one-canonical source");
+    const example=modelB.split('=== "Ví dụ"')[1]?.split('=== "Lỗi thường gặp"')[0]||"";
+    assert(example.includes("### 3.4. Ví dụ 4 — Qua sông")&&
+     example.includes("96")&&example.includes("THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg")&&
+     example.includes("THPT_G10_B10_RIVER_VELOCITY_MOBILE_D5_R01.svg")&&
+     example.includes("**Giải:**"),"B10 river worked D2 must use exact-data desktop/mobile image and Golden solution renderer key");
+   }else assert(modelB.includes("#### Ví dụ có hướng dẫn — "+rec.ex),
      "Transfer worked method D2 "+tag);
-   assert(modelB.includes("THPT_G10_CHIV_"+tag+"_TRANSFER_D5_R01_CORRECTED.svg"),
-     "Transfer reviewed vector geometry D5 "+tag);
+   const D5=tag==="RIVER"?"THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg":
+     "THPT_G10_CHIV_"+tag+"_TRANSFER_D5_R01_CORRECTED.svg";
+   assert(modelB.includes(D5),
+     "Transfer must keep mathematically correct, source-locked diagram D5 "+tag);
    const at=modelB.indexOf('data-thpt-first-try-id="'+rec.stem+'"');
    const h=modelB.indexOf('data-thpt-help-id="'+rec.help+'"',at);
    assert(at>=0&&h>at&&/^\s*\?\?\? question "/m.test(modelB.slice(at,h)),
