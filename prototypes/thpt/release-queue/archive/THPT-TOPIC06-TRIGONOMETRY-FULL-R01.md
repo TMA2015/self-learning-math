@@ -1,13 +1,14 @@
-# CĐ06 — Lượng giác và phương trình lượng giác · AUTHORING CONTENT_READY R05 (stable R01 packet)
+# SUPERSEDED historical R05 source-only accepted packet — CĐ06 — Lượng giác và phương trình lượng giác · AUTHORING CONTENT_READY R05 (stable R01 packet)
 
 PACKET_ID: THPT-TOPIC06-TRIGONOMETRY-FULL-R01
+ARCHIVED_20261118: historical R05 author source only, R06 current separately. Original R05 source/receipt/signoffs unchanged by this metadata archive.
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: CONTENT_READY
+STATE: SUPERSEDED
 SOURCE_COMMIT: 1d87b7229fdac4ae49296d9cd4f44c03ac474a6b
 CURRENT_PR: Draft AUTHORING branch authoring/topic06-trigonometry-r01-20261112, not merged/deployed
 CATALOG_TOPIC_ID: CD06
