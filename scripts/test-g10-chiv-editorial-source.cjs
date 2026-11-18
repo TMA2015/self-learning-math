@@ -6,6 +6,7 @@
 const fs=require("node:fs"),path=require("node:path"),assert=require("node:assert/strict");
 const crypto=require("node:crypto"),cp=require("node:child_process");
 const root=path.resolve(__dirname,"..");
+require("./test-g10-b11-b12-source-first-delta.cjs");
 const baselineSha="045b15ecc402acf9a081a35bd4a7fb36d6325188";
 const {chivEditorialReceiptRows,candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 const rows=chivEditorialReceiptRows();
