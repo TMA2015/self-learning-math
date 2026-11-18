@@ -2,12 +2,12 @@
 
 R03_IMMUTABLE_SOURCE_BLOB: 6c78b455f9d95e85c713108292908bf6f922d2f1
 LEARNER_R06_SOURCE: prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md
-LEARNER_R06_SOURCE_BLOB: 58b16f7c442d560f3950aafdbaf1f686e1e337e4
-Q18_R06_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC11_R06_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-Q18_R06_RECEIPT_BLOB: ee42fcc98ccc51fef08a7eabdbf99032b0110c27
+LEARNER_R06_SOURCE_BLOB: 36c22ff9d441da793181072426d594bfe245a8aa
+Q18_R06_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC11_R06_CURRENT_SOURCE_AUTHOR_Q18_AFFECTED_DELTA_20261118.md
+Q18_R06_RECEIPT_BLOB: d621876f947618fb7cfae739e428559a4ee4636d
 ACTIVE_NEW28_BANK_R05: prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_NEW28_PUBLIC_CANONICAL_R05_20261116.md
 ACTIVE_NEW28_BANK_R05_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0
-STATUS: R06_NUMBERING_DELTA_A_AUTHOR_SELF_VERIFIED
+STATUS: BLOCKED_BY_AUTHORING_INDEPENDENT_AFFECTED_SCOPE_REVIEW
 
 ## Nguồn S1 và phạm vi khóa
 
@@ -180,3 +180,11 @@ END_AUTHOR_SOURCE: SOURCE_LOCKED_R01
 - Current new `ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md`; `SOURCE_BLOB: 58b16f7c442d560f3950aafdbaf1f686e1e337e4`. Exact-source Q18 receipt `ee42fcc98ccc51fef08a7eabdbf99032b0110c27` ghi nhận kiểm soát cấu trúc.
 - Cũ `R05` source `7d8eac917be4f7688a8a718e54cce4a84bc055ef`, Q18 `c6df9cdc86b8f3df9d163e8c6e4c16a6e7d48c15`, metadata `c5af59e2f7727187cf4c8f382b8dcd01d026be3a` **giữ nguyên** trong lịch sử. Canonical bank, SVG, RD1, MathJax equation/keys/rubric không bị sửa.
 - Cùng chuẩn Q01–Q18; bản này chỉ dành cho AUTHORING handoff. RELEASE tự kiểm render hierarchy và responsive trước bất kỳ tích hợp/phát hành; no merge/deploy.
+
+
+## R06 effective learner and pending external affected-scope verdict — 18/11/2026
+
+- This section supersedes the CURRENT references above; all old SHA values elsewhere remain historical snapshot receipts. One effective learner Markdown `Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md` Git blob `36c22ff9d441da793181072426d594bfe245a8aa`; current scoped Q18 author receipt `prototypes/thpt/review-packets/Temp_TOPIC11_R06_CURRENT_SOURCE_AUTHOR_Q18_AFFECTED_DELTA_20261118.md` blob `d621876f947618fb7cfae739e428559a4ee4636d`.
+- Same Q01–Q18 / A1–A7: 22/22 outcome and examples, 116/116 Practice canonical (88 original SGK reference owners +28 Topic NEW28), 28/28 original Written rubrics, 22 public replay-only selfchecks, four original Topic SVG references, 138 disclosure pairs, single S1 footer. Practice body aside from one introductory metadata cleanup is exact same 1,738-line baseline (question stem/key/math/solution/rubric/D6 preserved).
+- Previous four formal boxes and Knowledge recap demonstrated original-math semantic equivalence (Delta B affected scope). Current new O08 precise endpoint continuity and O14 corrected physical model/units are `DELTA_C_ACADEMIC_MATERIAL`; require **independent NotebookLM affected-scope O08/O14** Academic+PED verdict with source receipt, P0/P1/P2 and minimal delta. Review packet `prototypes/thpt/review-packets/Temp_TOPIC11_O08_O14_DELTA_C_NOTEBOOKLM_REVIEW_PACKET_20261118.md`.
+- Until that evidence and subsequent one V2/ready/REGISTER source-lock+exact-HEAD CI, **CONTENT_READY for the current learner = NO**. Old signed ready source SHA `58b16f7c442d560f3950aafdbaf1f686e1e337e4` and Q18 `ee42fcc98ccc51fef08a7eabdbf99032b0110c27` are historical. No official Readiness, RD1, Mastery, merge or deploy.
