@@ -4,15 +4,15 @@ PACKET_ID: TOP19-COMBINATORICS-BINOMIAL-R11-20261117
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-STATE: BLOCKED_BY_AUTHORING
+STATE: CURRENT_Q15_Q18_AUTHOR_VERIFIED_READY_CUSTODY
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R10_LANGUAGE_LOCAL_REFERENTS_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: eff5f2a91708671db6f32063eea2cd111ddc6b94
+ACADEMIC_SOURCE_BLOB: 7005bf1f839e566efb9abbc17eccfa92a0b41e63
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC19_R11_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md
-REVIEW_RECEIPT_BLOB: 77fb608d7e8815ab6d32478638cc599e477470b6
+REVIEW_RECEIPT_BLOB: 3bd774c5113a6e030e989af59257598452a93fde
 R11_Q15_MATRIX_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_Q15_56_CANONICAL_SOURCE_LOCKED_CANDIDATE_MATRIX_20261117.md
-R11_Q15_MATRIX_BLOB: 3f512f82a2dd0770c66eddd67d9447523e6935ea
+R11_Q15_MATRIX_BLOB: a127267978ec61c857d5cc0cbcd8cb3f1dcc2f1e
 BASELINE_R09_SIGNED_SOURCE_BLOB: 2b46a2c92004f2c030d030e2b2021a34157bc95d
 
 S1_ORIGINAL_PUBLIC_BANK_PATH: docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js
@@ -110,3 +110,10 @@ Nguồn học liệu hiện hành tại ACADEMIC_SOURCE_PATH được sửa đú
 ## Current one-source consolidation (17/11/2026)
 
 The effective learner source is **the existing original filename at ACADEMIC_SOURCE_PATH**, with exact SHA `eff5f2a91708671db6f32063eea2cd111ddc6b94`; the parallel newer-numbered correction candidate was removed after source-level comparison. The R06/R11 release naming in this AUTHORING metadata is a historical packet identifier and does not imply a different live learner body. Current Q18 composite receipt is the existing REVIEW_RECEIPT_PATH with actual blob `77fb608d7e8815ab6d32478638cc599e477470b6`. The 1,084-line R11 learner candidate was byte-identical to corrected R10 except one hidden provenance comment; retain 56 canonical item IDs, 56 disclosures and 7 public selfchecks. No source duplication, no Academic/PED whole-topic approval, no web release. `STATE=BLOCKED_BY_AUTHORING` remains in force.
+
+## Current AUTHORING effective snapshot — 18/11/2026
+
+- One current learner source at the unchanged `ACADEMIC_SOURCE_PATH`, Git blob `7005bf1f839e566efb9abbc17eccfa92a0b41e63` (not the historical `eff5...` referenced above). Its only change against historical 1,084-line R11 content is one header comment plus seven learner Knowledge summary lines, independently checked as mathematically equivalent, as recorded in Q18 composite receipt SHA `3bd774c5113a6e030e989af59257598452a93fde`.
+- Current Q15 matrix SHA `a127267978ec61c857d5cc0cbcd8cb3f1dcc2f1e` has 56/56 unique canonical source markers with **current** line numbers and seven question-only public selfcheck replay source lines. Original 25 G10 SGK bank entries remain one-source SGK-owned; 14 T +14 P +3 W Topic-owned. No new canonical ID/answer/rubric. T02 content version TOP19-R10 stays unchanged and matches corrected 4×3=12 reasoning.
+- Original R09 full self-QA + R10 math/PED targeted receipt + R11 editorial targeted review remain source-locked evidence, not independent all-item NotebookLM PASS. Current source Q18 composed without changing original SGK authority. `P0=0; P1=0` for affected seven-line summary/Q15 correction. Website integration, AP/R, protected Q16 and owner release authorization remain wholly separate.
+- The old prose in this metadata describing historical source SHA values and CANDIDATE/HOLD belongs to superseded checkpoints. The top metadata fields and this latest signed addendum establish the effective in-place source. No alternative active learner Markdown is created.
