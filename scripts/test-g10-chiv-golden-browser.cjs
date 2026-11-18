@@ -265,6 +265,8 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
        assert.equal(await solved.count(),4,where+" four B10 Golden source solution boxes");
        assert.equal(await blocks.nth(2).locator(".admonition.example").count(),0,
         where+" must not render default violet MkDocs Example admonitions");
+       await solved.first().locator("mjx-container").first()
+        .waitFor({state:"attached",timeout:15000});
        const texts=await solved.allInnerTexts();
        assert(texts.every(t=>t.trim().startsWith("Giải:")&&!t.includes("Đề:")),
         where+" only math solution goes inside the neutral panel");
