@@ -147,8 +147,13 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
   }else if(lesson==="11"){
    assert.equal(b11f("R01_PUBLISHED_B11_SOURCE_BLOB"),sha,
     "B11 old published R01 source must be immutable");
-   assert.equal(current,b11u("R02_B11_SOURCE_BLOB"),
-    "B11 P2 source must be exact signed R02 Tab4 UI-only blob");
+   const currentDelta=fs.readFileSync(root+
+    "/prototypes/thpt/ux795/G10_B11_B12_OWNER_P2_SOURCE_FIRST_DELTA_A_R01_20261118.md","utf8");
+   const df=k=>currentDelta.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(df("B11_BASELINE_SOURCE_BLOB"),b11u("R02_B11_SOURCE_BLOB"),
+    "Original B11 R02 signed source still immutable");
+   assert.equal(current,df("B11_SOURCE_CURRENT_BLOB"),
+    "B11 now uses exact current one-canonical source-first SHA");
   }else assert.equal(current,sha,"Unapproved academic/source/First Try change B"+lesson);
  }
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
@@ -222,8 +227,22 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
      assert.equal(examples.length,[7,8,9,10,11].includes(lesson)?4:3,where+" owner-scoped B07/B08 and B09 S1 have four worked examples");
      assert(examples.every((v,i)=>v.trim().startsWith("3."+(i+1)+". Ví dụ "+(i+1)+([7,8,10,11].includes(lesson)?" —":". "))),
       where+" numbered visual example headings");
-     assert.equal(await blocks.nth(2).locator(".thpt-g10-example-solution").count(),[7,8,9,10].includes(lesson)?4:0,
-      where+" preexisting special solution wrappers remain intact; B11 has four authored direct worked sections");
+     assert.equal(await blocks.nth(2).locator(".thpt-g10-example-solution").count(),
+      [7,8,9,10].includes(lesson)?4:0,
+      where+" original B07–B10 Golden solution panels frozen; B11 source is native");
+     if(lesson===11){
+      const native=blocks.nth(2).locator(".admonition.example");
+      assert.equal(await native.count(),4,where+" 4 native Markdown source-authored boxed solutions");
+      const texts=await native.allInnerTexts();
+      assert(texts.every(x=>x.includes("Giải:")&&!x.includes("Đề:")),
+       where+" actual Giải in box, never Đề");
+      assert.equal(await blocks.nth(2).locator(":scope > p").filter({hasText:/^Phân tích:/}).count(),4,
+       where+" 4 Phân tích explanations outside boxes");
+      assert.equal(await blocks.nth(2).locator(":scope > p").filter({hasText:/^Đề:/}).count(),4,
+       where+" 4 learner problems stay unboxed");
+      assert((await native.first().evaluate(e=>getComputedStyle(e).backgroundColor))!=="rgba(0, 0, 0, 0)",
+       where+" real computed boxed solution background");
+     }
      assert.equal(await article.locator(".thpt-r4-lead").count(),0,where+" no redundant introduction");
      assert.equal(await article.locator(".thpt-r4-footnote").count(),1,where+" only existing source footnote retained");
      assert.equal(await blocks.nth(3).locator(".thpt-r4-footnote").count(),1,where+" source note only on last tab");
