@@ -145,15 +145,15 @@ const blob=data=>{
      "B13 must be exactly one isolated scoped palette appendix");
     assert.equal(blob(css.toString("utf8").slice(0,b13At-1)),color("GOLDEN_CSS_CURRENT_BLOB"),
      "B12 owner-accepted Golden CSS must be byte-identical prefix");
-    const cssText=css.toString("utf8");
+    const css14Text=css.toString("utf8");
     const b14Mark="/* G10 ChV B14 · scoped X-C RELEASE Golden";
-    const atB14=cssText.indexOf(b14Mark);
+    const atB14=css14Text.indexOf(b14Mark);
     const receipt=fs.readFileSync(root+
      "/prototypes/thpt/ux795/G10_CHV_B14_Q18_GOLDEN_ENRICHMENT_DELTA_R01_20261119.md","utf8");
     const f=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
-    assert(atB14>0&&cssText.indexOf(b14Mark,atB14+1)<0,
+    assert(atB14>0&&css14Text.indexOf(b14Mark,atB14+1)<0,
      "B14 Golden appendix exactly once, after B01–B13 approved CSS");
-    assert.equal(blob(Buffer.from(cssText.slice(0,atB14-1))),f("G10_B01_B13_FROZEN_CSS_BLOB"),
+    assert.equal(blob(Buffer.from(css14Text.slice(0,atB14-1))),f("G10_B01_B13_FROZEN_CSS_BLOB"),
      "B01–B13 CSS prefix stays owner-P2 immutable");
     assert.equal(blob(css),f("CANDIDATE_GOLDEN_CSS_BLOB"),
      "B14 Golden only scoped CSS appendix must match signed Q18 receipt");
