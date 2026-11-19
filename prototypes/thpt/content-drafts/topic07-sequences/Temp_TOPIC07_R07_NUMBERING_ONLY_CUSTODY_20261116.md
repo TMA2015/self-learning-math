@@ -1,9 +1,9 @@
 # CĐ7 R07 — AUTHORING numbering-only Q18 custody
 
 CURRENT_SOURCE_PATH: prototypes/thpt/content-drafts/topic07-sequences/Temp_TOPIC07_R07_NUMBERING_CONSISTENT_20261116.md
-CURRENT_SOURCE_BLOB: fcabe475254b4f54f5e6a8e74fce536df1f6bf43
+CURRENT_SOURCE_BLOB: 8aeef9a0f0c30bed76f93bcf923fff57f8c00b04
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC07_R07_NUMBERING_DELTA_A_Q18_20261116.md
-CURRENT_Q18_RECEIPT_BLOB: 580111dbfe0ddc831cc3ef53f062cdb46772c465
+CURRENT_Q18_RECEIPT_BLOB: 270e1502c12d409817b283b7ee9a2e9bced5f9f4
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
@@ -12,7 +12,7 @@ PREVIOUS_AUTHOR_METADATA_BLOB: 48199cd454a97c1a55719057d499da6c2162dd4b
 AUTHORING_STATUS: R07_FORMAL_KNOWLEDGE_TARGETED_Q18_AUTHOR_SELF_VERIFIED
 RELEASE_AUTHORIZATION: NO
 
-Original A1–A7/SGK/outcome/item source matrix below is inherited unaltered; the learner snapshot formatting and Q18 source custody above are the only changes. The R07 prior numbering proof remains historical; current source adds three formal definitions (O01/O06/O11) and one summary after Knowledge, with unchanged canonical bank and Practice/Selfcheck. This is a scoped DELTA_C with new Q18 self-verification on source fcabe475254b4f54f5e6a8e74fce536df1f6bf43. Heading and item bank custody unchanged. No independent NotebookLM or RELEASE verdict.
+Original A1–A7/SGK/outcome/item source matrix below is inherited unaltered; the learner snapshot formatting and Q18 source custody above are the only changes. The R07 prior numbering proof remains historical; current source adds three formal definitions (O01/O06/O11) and one summary after Knowledge, with unchanged canonical bank and Practice/Selfcheck. This is a scoped DELTA_C with new Q18 self-verification on source 8aeef9a0f0c30bed76f93bcf923fff57f8c00b04. Heading and item bank custody unchanged. No independent NotebookLM or RELEASE verdict.
 
 ---
 
@@ -137,3 +137,6 @@ END_AUTHOR_SOURCE: CANONICAL_BANK_R06_LOCKED_FOR_Q18; ORIGINAL_47_SGK_SOURCES_UN
 - R06 new22 bank cùng 22 ID; P01/P16/P18/W04 content_version=2 để tránh đáp án lộ từ hình/ví dụ và trùng bài; 18 item còn lại giữ version=1.
 - Tổng 69 câu có đề+lời giải hiển thị, 18 Vận dụng tự mở, 18 đề Tự kiểm tra (public replay only), 11 rubric; 3 SVG giữ nguyên.
 - Previous R04 source 238813098845ee8b7bc525174febb16ef6f70d70 và Q18 receipt e3cc98d412e2cc387b0348941e08b7b1cd5ba05f được bảo toàn. Không phải NotebookLM/website QA, không merge/deploy.
+
+
+**19/11 owner ΔA:** source `8aeef9a0f0c30bed76f93bcf923fff57f8c00b04`, Q18 `270e1502c12d409817b283b7ee9a2e9bced5f9f4` custody refreshed, 18 outcomes/math unchanged, CONTENT_READY maintained.
