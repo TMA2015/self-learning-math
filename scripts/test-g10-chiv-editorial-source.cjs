@@ -149,8 +149,8 @@ for(const [lesson,row] of rows){
     "prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md"));
    assert.equal(f04("R04_STANDARD_BLOB"),"24f744b5d9f114d053b6e2e1ab8a0fb26c3fab39",
      "B08 original historical standard SHA remains signed and immutable");
-   assert.equal(blob(standard),"224792a6037a098ec3cc42fb67e2c2f95581bbc9",
-     "B08 current owner-effective standard must match merged PR908 exact SHA");
+   assert.equal(blob(standard),"488afe2908e0b471320e1d55f775391578d88bba",
+     "B08 effective Q01–Q18 v3.2.0 current main SHA after governance-only PR914");
    assert(standard.toString("utf8").includes("OWNER_APPROVED_PR_899_MERGED_INTO_MAIN_20261117"),
      "Owner-effective v3.2.0 requires merged PR899 evidence");
    const formal=source.slice(source.indexOf('=== "Kiến thức SGK"'),source.indexOf('=== "Ví dụ"'));
@@ -259,8 +259,8 @@ for(const [lesson,row] of rows){
    "prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md"));
   assert.equal(f("STANDARD_BLOB"),"24f744b5d9f114d053b6e2e1ab8a0fb26c3fab39",
    "B09 historical v3.2.0 signed standard SHA must remain immutable");
-  assert.equal(blob(standard),"224792a6037a098ec3cc42fb67e2c2f95581bbc9",
-   "B09 effective v3.2.0 after approved PR908 must match exact SHA");
+  assert.equal(blob(standard),"488afe2908e0b471320e1d55f775391578d88bba",
+   "B09 effective v3.2.0 current main SHA after owner governance PR914");
   assert(standard.toString("utf8").includes("OWNER_APPROVED_PR_899_MERGED_INTO_MAIN_20261117"),
    "Owner-effective v3.2.0 activation must be explicit");
   const official=source.slice(source.indexOf('=== "Kiến thức SGK"'),source.indexOf('=== "Ví dụ"'));
