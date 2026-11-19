@@ -9,7 +9,7 @@ function signedChviBlob(name){
  if(!next)return original?.candidate;
  assert(original,name+" UX delta without signed original S1 receipt");
  assert.equal(next.baseline,original.candidate,name+" published → Golden UX delta identity chain");
- return next.candidate;
+ return name==="B15"?candidateG10KnowledgeBlob(15):next.candidate;
 }
 const {chromium}=require("playwright");
 // Run the same no-duplicate / assessment-exposure contract on every THPT QA run.
