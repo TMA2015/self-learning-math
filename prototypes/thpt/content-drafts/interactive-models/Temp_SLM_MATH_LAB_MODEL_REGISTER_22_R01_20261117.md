@@ -1,3 +1,10 @@
+<!-- I798_OWNER_MATHLAB_ACCEPTANCE_SCOPE_20261119 -->
+### QUY TẮC NGHIỆM THU MÔ HÌNH MATH LAB — OWNER 19/11/2026 (AUTHORING)
+
+**Phạm vi:** 25 HTML minh họa toán học ở `selected/`, **không phải** biên soạn lại bài SGK/Chuyên đề hoặc gói học liệu V2. Mục tiêu: mô hình toán **đúng học thuật, trực quan đúng bản chất, tương tác chạy đúng, dễ dùng** (kể cả phím và màn hình nhỏ). Kiểm công thức, đồ thị, điều kiện, biên, nội dung diễn giải học sinh nhìn thấy và source SHA; kiểm chạy HTML thực trước khi nhận `MODEL_PASS`. **Không yêu cầu** đối chiếu từng trang SGK/SBT, ma trận bao phủ toàn bài/chương, NotebookLM, Academic/PED review kiểu học liệu, receipt Q18/V2 riêng **chỉ vì một mô hình minh họa**. Điều này **không thay tiêu chuẩn Q01–Q18** của học liệu canonical, không miễn kiểm soát bảo mật và không tự cấp quyền tích hợp website.
+
+**Ghi nhận đơn giản cho từng mô hình:** `MATH_CORRECT` + `VISUAL_TRUE` + `INTERACTION_PASS` + `USABLE_RESPONSIVE` + `SOURCE_BLOB` → `MODEL_PASS` (chỉ khi đủ chứng cứ), ngược lại `MODEL_QA_PENDING` nêu lỗi thật. Có thể tái sử dụng sổ hiện hữu, **không** dựng bộ hồ sơ mới. PASS của mô hình không phải CONTENT_READY/RELEASE PASS của chương hay Chuyên đề. **Chỉ sửa đúng 1 HTML selected hiện hành**; không merge/deploy, không thay item/Readiness/Mastery/RD1/Firebase.
+
 <!-- I798_UNIFIED_22_MODEL_PROGRAM_20261119 -->
 <!-- I798_OWNER_FINAL_COUNT_25_20261119 -->
 <!-- I798_LOCKED_25_INVENTORY_PER_MODEL_20261119 -->
