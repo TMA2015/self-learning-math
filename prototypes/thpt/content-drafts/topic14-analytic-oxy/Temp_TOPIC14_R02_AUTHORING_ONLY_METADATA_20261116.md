@@ -1,3 +1,11 @@
+<!-- TOP14_G10_B19_S1_COVERAGE_DELTA_C_20261120 -->
+## Q01 S1 mandatory concept coverage: TOP14-O07 (20/11/2026)
+- S1 G10 KNTT Tập 2 B19 trang in 30–31: đồ thị của hàm bậc nhất là một đường thẳng, \(ax-y+b=0\) mô tả cùng đồ thị \(y=ax+b\). Với \(Ax+By+C=0\), khi B≠0 chuyển thành y=−(A/B)x−C/B; B=0 và A≠0: đường x=−C/A không là đồ thị hàm số theo x.
+- Current one learner source: `eb2ee110e42e767a711c769b39682784aa3e996e`; previous `47c98711e2955287831d5ea10fc5d61d1483fd6a` remains Git provenance.
+- Affected Q18 self-verification: `db2630512b3a507191ed5fc32e6a40b46b3e94f7`; 8/8 math checks; DELTA_C_ACADEMIC_MATERIAL targeted, other 22 outcomes, 110 canonical identities and assessments untouched.
+- STATUS: SAME AUTHORING CONTENT_READY; FULL_22_SOURCE_COVERAGE_AUDIT_NOT_COMPLETE. Not a new independent reviewer PASS or website authorization.
+
+---
 # CĐ14 — AUTHORING-only Q15/S1 and learner view metadata R02
 
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -6,8 +14,8 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 47c98711e2955287831d5ea10fc5d61d1483fd6a
-SOURCE_BLOB: 47c98711e2955287831d5ea10fc5d61d1483fd6a
+ACADEMIC_SOURCE_BLOB: eb2ee110e42e767a711c769b39682784aa3e996e
+SOURCE_BLOB: eb2ee110e42e767a711c769b39682784aa3e996e
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/Temp_G10_SGK_CHVII_FULL_R02_SOURCE_WITH_CANONICAL_REFERENCES_20261105.md
 ORIGINAL_SGK_SOURCE_BLOB: c5c222af88b0e932f9b60df059d8ffd4da5f0f26
 ORIGINAL_SGK_PED_R01_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd
