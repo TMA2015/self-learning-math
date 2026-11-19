@@ -3,16 +3,16 @@
 **RECEIPT_ID:** G10-CHVI-B16-OWNER-SELF-QA-R01-20261119
 **STANDARD:** SLM-THPT-QUALITY-ONE v3.2.0 · Q01–Q18, §X-C/§X-F
 **LESSON_ID:** G10-B16 · **OUTCOMES:** B16_OUT_01..05 · **PATH:** SGK Knowledge, 4 Golden tabs
-**OWNER_AUTHORIZATION:** “... sau đó tiến hành nâng cấp bài 16” after B15 P2 hotfix publication; this **authorizes B16 authoring/editing only**, not automatic merge or deploy
+**OWNER_AUTHORIZATION:** Chủ dự án ngày 19/11/2026 trực tiếp quyết định “tự sửa, tự kiểm tra đi, xong thì phát hành nhanh”; chủ dự án cho phép RELEASE tự hoàn thiện phần B16 chưa có học liệu canonical, tự QA theo Q01–Q18, merge/deploy khi cổng an toàn và exact-HEAD PASS. Không suy rộng sang B17/Chuyên đề.
 **S1_REFERENCE:** Toán 10 KNTT tập 2, Bài 16 *Hàm số bậc hai*, printed 11–18, PDF 12–19 per historical S1 receipt `G10_CHVI_B15_B18_S1_Q18_EDITORIAL_RECEIPT_20261113.md`; historical scan not directly reopened or newly hashed here
 **BASE_MAIN_COMMIT:** `400e4820fe37c12a6db151cdcb094a79e31f7376`
 **BASELINE_PUBLISHED_B16_SOURCE_BLOB:** `4ddf9c449f92a9f48bace5a3f9b84186bf33af20`
 **CANDIDATE_B16_SOURCE_BLOB:** `65760db6de0f7953adbbd8f0e16dd348ad5bd72f`
 **PREVIOUS_OWNER_P2_GOLDEN_CSS_BLOB:** `4af85dd38d02ed55b29daa6713bfbc892f0d7078`
 **CANDIDATE_SCOPED_GOLDEN_CSS_BLOB:** `14001f525b1825557493f439a1f0555e9614185f`
-**VERIFICATION_MODE:** `Q18_OWNER_SELF_VERIFIED_ENRICHMENT_IN_PROGRESS`, no independent NotebookLM PASS
+**VERIFICATION_MODE:** `Q18_OWNER_AUTHORIZED_SELF_QA_SCOPE_B16` · owner does NOT require separate NotebookLM for this scoped work; self-audit/math tests and Q18 SHA, no independent NotebookLM verdict claimed
 **DELTA:** `DELTA_C_ACADEMIC_MATERIAL` for new visible questions, formalization and reasoned examples, plus `DELTA_A_UI` for B16-only semantic teal/blue CSS
-**ASSESSMENT:** Public First Try self-reveal only; no new item IDs, changes to Core/Practice/Written, Final Submit, RD1, Firebase or Mastery
+**ASSESSMENT:** B16 First Try retains 5 canonical IDs and original keys/HELP; existing SGK Core page now holds one public canonical B16 Core/Practice bank (12 distinct items), shared Written library adds 2 B16 rubrics; all formative self-check only. No private RD1, Final Submit, Firebase or Mastery change.
 
 ## G0 / G1 / G2: learner-first whole-lesson defects and corrections
 
@@ -67,3 +67,28 @@ The owner explicitly requested normal flowing explanations without a pseudo-meth
 **Owner Golden prose and sequencing self-check:** In Discovery outcome `B16_OUT_04`, the existing two-sign monotonicity bullets and the exact old table were moved unchanged **before** the corresponding `Vận dụng` prompt and closed `Đối chiếu`; no new condition/formula/answer. In `B16_OUT_03` the three bold pseudo-headings around the table were rewritten as continuous explanatory prose, preserving the same value table, symmetry and five-point plotting requirements. Scope is `DELTA_B_SOURCE_EQUIVALENT` after math/ID parity, separate from earlier Delta C example expansion. **Current canonical Git blob:** `65760db6de0f7953adbbd8f0e16dd348ad5bd72f`.
 
 **R4 double-plot prevention (real browser bug found):** `docs/assets/javascripts/thpt-r4-preview.js` already adds one curve and **four circles** to every `[data-thpt-quadratic-plot] svg` when `data-r4-plotted` is absent; the new complete static SVG initially produced **eight rendered circles** (4 authored + 4 injected), caught by run #44553713896. The figure now carries `data-r4-plotted="1"` *only on its own SVG*, so legacy runtime leaves this mathematically verified static graph alone; no shared JS/runtime edits or changes to other pages. New candidate SHA `65760db6de0f7953adbbd8f0e16dd348ad5bd72f`; R4 real-browser verification pending exact HEAD.
+
+
+## Owner-directed B16 complete SGK independent journey — Q01–Q18 self-audit addendum (19/11/2026)
+
+**Single learner Knowledge manuscript:** `docs/thpt-preview/sgk/chuong-vi/bai-16.md`, SHA `65760db6de0f7953adbbd8f0e16dd348ad5bd72f`, four Golden tabs and five unchanged `THPT-G10-CHVI-TRY06..TRY10` ID/answer bodies; current worked examples, D6, figure and original R4 CSS remain the academic source. Git commits and this receipt are historical evidence, not alternate drafts.
+
+**One B16 public formative bank:** `docs/thpt-preview/sgk/core/ham-so-bac-hai.md` SHA `92b7b7c3d43100e4a74699abc8f7b0d61e1edf25`. Contains *exactly one* legacy canonical `THPT-CORE-QF01` preserved as an interactive Core, five new Core `THPT-G10-B16-C01..C05`, and six independent Practice `THPT-G10-B16-P00..P05`. One canonical ID per source item, 12 independent items; two original check-after-click interactive forms and 10 voluntary `Đối chiếu` text items; no score recorded/Mastery or hidden Readiness keys. All item bodies, question, hint and answer are co-located once in this one bank. The legacy Topic demo `PRACTICE-THPT-DEMO-01` is **not** imported into SGK or relabeled.
+
+**SGK-only routing:** `docs/assets/javascripts/thpt-r4-preview.js` SHA `07bbf7f64b1d34263bba5e1b5e60abb24bdea512`, `b16-core` and `b16-practice` now point to separate sections in the SAME B16 SGK bank page. The shared runtime's inherited form feedback is preserved for the exact original validated correct values (-3 and 1,3). All other B01–15/B17–18 route entries, Firebase/Topic, Final Submit, Q16/RD1 unchanged.
+
+**B16 Written/Anchor:** existing one shared library `docs/thpt-preview/thu-vien/tu-luan.md` SHA `d96deee9b440076954d6f44b3007ea083fdd6eb0` now holds `HPT-G10-CHVI-WRI-16-01` (parabola 6-pt rubric) and `HPT-G10-CHVI-WRI-16-02` (revenue threshold 7-pt Anchor); two new IDs with independently checkable mathematical conditions, voluntary reveal and no automated mastery credit. Prior eight Written entries remain unchanged in the same canonical library.
+
+**Owner self-QA outcome map:**
+
+| B16 outcome | Core | Practice | Written |
+|---|---|---|---|
+| `B16_OUT_01` — `a\ne0`, type and domain | `C01` | `P01` | covered by the canonical 5-item Knowledge+First Try |
+| `B16_OUT_02` — vertex, axis, sign | preserved `THPT-CORE-QF01`, `C05` | `P02` | `WRI-16-01` |
+| `B16_OUT_03` — plot/intercepts/symmetry | `C02` | `P00`, `P03` | `WRI-16-01` |
+| `B16_OUT_04` — increasing/decreasing/range | `C03` | `P04` | `WRI-16-01` |
+| `B16_OUT_05` — modeled extrema + domain | `C04` | `P05` | `WRI-16-02` |
+
+**Independent math self-check examples:** `x²−2x−8=(x−1)²−9=(x−4)(x+2)`, vertex `I(1;−9)`, roots `−2,4`, `f(0)=f(2)=−8`; revenue `R(p)=160p−2p²=−2(p−40)²+3200`, `R\ge3000\iff30\le p\le50\subset[0;80]`; 36-m three-side fence `S=x(36−2x)=−2(x−9)²+162` for `0<x<18`, max `162 m²`; restricted `f(x)=−(x−2)²+7` on `[3;5]` gives `[−2;6]`, not global maximum 7. Each calculation is checked by independent substitution in canonical test; entire PDF of publisher S1 not claimed rehashed in this turn, scope benchmark is previously validated S1 printed pages 11–18 and current source.
+
+**Q15:** IDs unique across 12 SGK public formative, 2 Written, 5 retained First Try, no replica of assessed/private bank. **Q16:** hint/answer for formative only on explicit learner action; Readiness Final Submit/private keys unaffected; self-check does not assert proficiency or write Mastery. **Q17:** SGK Core/Practice content and routes now independent from the three-part Topic path. **Q18:** source and public bank/library/runtime blob SHAs above, immutable B15 owner-P2 source `7f6448acf6e127b6dc40f3e34f155f151bc7d23b` preserved. This addendum supersedes earlier statement that Core/Practice/Written were unchanged or unavailable. **No independent NotebookLM PASS invented; owner explicitly authorized self-review**, with exact-head QA and real browser results to be entered after execution.
