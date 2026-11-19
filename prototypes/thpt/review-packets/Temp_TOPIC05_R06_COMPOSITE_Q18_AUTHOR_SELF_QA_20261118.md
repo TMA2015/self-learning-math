@@ -6,7 +6,7 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 44c3a3a0ffcdefa9a3c4eaf6ad1d4f78012541b4
+SOURCE_BLOB: e5b1888794a06e0de2e84a696fa11f95c9121472
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC05_GRAPH_TRANSFORMS_NEW38_PUBLIC_CANONICAL_R01_20261112.md
 PUBLIC_CANONICAL_BANK_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39
 BASELINE_R05_SOURCE_BLOB: 3052d5f7090f74af2eca7739047c59ed76ccda63
@@ -64,7 +64,7 @@ RELEASE_AUTHORIZATION: NO
 ## AUTHOR_SIGNOFF:
 
 AUTHOR_SIGNOFF: TOP05_R06_17_OUTCOME_38_BANK_17_D6_AUTHOR_SELF_QA_20261118
-VERDICT: AUTHOR_SELF_VERIFIED_ON_SOURCE_SHA_44c3a3a0ffcdefa9a3c4eaf6ad1d4f78012541b4
+VERDICT: AUTHOR_SELF_VERIFIED_ON_SOURCE_SHA_e5b1888794a06e0de2e84a696fa11f95c9121472
 S1_RECEIPT: historical owner S1 G10/G11 scope evidence, no new page scan claimed
 OUTCOME_AUDIT: 17/17 Knowledge/FirstTry + 38 real canonical Practice/Written +17 question-only replays, source checked
 MATH_VERIFICATION: current R06 formal math/conditions and original current canonical QA matched above
@@ -72,3 +72,7 @@ PED_VERIFICATION: current 16 changed D6 routes plus original O01, full concept�
 CANONICAL_Q15: one bank, 38 display placements, no clone
 ASSESSMENT_Q16: public no-Mastery, no RD1 imported/activated
 RELEASE_AUTHORIZATION: NO
+
+
+<!-- TOP05_OWNER_ED_DELTA_A_20261119 -->
+Owner ΔA 19/11: 14 công thức/quy tắc đã diễn giải được thêm nhãn phân loại rõ theo bài; 3 khối đã có giữ nguyên; 4 dòng `Khám phá kiến thức` lặp đã lược. Baseline `44c3a3a0ffcdefa9a3c4eaf6ad1d4f78012541b4` → one active learner `e5b1888794a06e0de2e84a696fa11f95c9121472`. Kiểm reverse-diff: toàn bộ văn bản giải thích gốc, điều kiện, công thức, 17 Ví dụ/Đề/Lời giải, 17 Vận dụng/Đối chiếu, item IDs/rubrics/selfchecks/3 SVG byte-identical; chỉ nhãn/tiêu đề phụ khác. `DELTA_A_UI`, `CONTENT_READY` preserved; no new math, NotebookLM full rereview not required, no website changes.
