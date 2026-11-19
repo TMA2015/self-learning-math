@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 380" role="img" aria-labelledby="t d">
+<title id="t">Đường tròn lượng giác và góc 150 độ</title>
+<desc id="d">Đường tròn đơn vị tâm O=(230,190), bán kính 120 px. Tia đầu Ox dương. Tia cuối tạo góc 150 độ đi lên phía trái, điểm M có cos150 độ âm bằng âm căn 3 trên 2, sin150 độ dương bằng 1 trên 2.</desc>
+<rect width="560" height="380" rx="12" fill="#fff" stroke="#64748b"/>
+<g stroke="#94a3b8" stroke-width="2"><line x1="50" y1="190" x2="415" y2="190"/><line x1="230" y1="340" x2="230" y2="32"/></g>
+<circle cx="230" cy="190" r="120" fill="#f0f9ff" stroke="#0369a1" stroke-width="3"/>
+<path d="M230 190 L110 190 A120 120 0 0 1 126.08 130 L230 190" fill="#bae6fd" fill-opacity=".18" stroke="none"/>
+<line x1="230" y1="190" x2="126.08" y2="130" stroke="#be123c" stroke-width="4"/>
+<line x1="126.08" y1="130" x2="126.08" y2="190" stroke="#0284c7" stroke-width="2" stroke-dasharray="6 4"/>
+<circle cx="126.08" cy="130" r="6" fill="#be123c"/>
+<g font-family="Arial,sans-serif" font-size="16" fill="#0f172a"><text x="240" y="211">O</text><text x="422" y="195">x</text><text x="240" y="32">y</text><text x="75" y="114">M(−√3/2; 1/2)</text><text x="260" y="167">150°</text><text x="66" y="315">cos150° &lt; 0</text><text x="295" y="315">sin150° &gt; 0</text></g>
+</svg>
