@@ -11,8 +11,8 @@ const {chromium}=require("playwright");
 const root=path.resolve(__dirname,"..");
 const base=process.env.SLM_CHV_URL||"http://127.0.0.1:8765";
 const expectedSources={
- 12:"9e8b5e0b2e11a06d76d4b6e48b6d04af65081b30",
- 13:"6c99a703da9fd3a01e244eaaa67b148744f121c7",
+ 12:"a2ea6c909cdd2317188b13c2bde22e7923dba3de",
+ 13:"cb5adaa7804902fece7dd4ec30575733efd4c9c1",
  14:"21c1ef59277f742b45a27900b173fac031a4a04f"
 };
 const ids={12:5,13:5,14:5};
@@ -253,10 +253,10 @@ const blob=data=>{
       context+" signed number of worked examples");
      if(lesson===12||lesson===13){
       const ex=blocks.nth(2);
-      assert.equal(await ex.locator("[data-thpt-g10-example-boundary]").count(),4,
-       context+" four invisible source-solution separators");
-      assert.equal(await ex.locator("[data-thpt-g10-example-boundary]:visible").count(),0,
-       context+" compatibility separators never visible to learners");
+      assert.equal(await ex.locator("h4[style*='display:none']").count(),4,
+       context+" four actual Markdown H4 boundaries with CSS-hidden display");
+      assert.equal(await ex.locator("h4[style*='display:none']:visible").count(),0,
+       context+" hidden headings never visible to learners");
       assert.equal(await ex.locator("h4").filter({hasText:/^Đề bài$/}).count(),0,
        context+" no redundant Đề bài headings");
       assert.equal(await ex.locator("p > strong").filter({hasText:/^Đề:$/}).count(),4,
