@@ -9,9 +9,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R10_LANGUAGE_LOCAL_REFERENTS_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: 7005bf1f839e566efb9abbc17eccfa92a0b41e63
+ACADEMIC_SOURCE_BLOB: 2cf19a19fc0f616b780846d41f7a1b9325363b80
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC19_R11_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md
-REVIEW_RECEIPT_BLOB: 3bd774c5113a6e030e989af59257598452a93fde
+REVIEW_RECEIPT_BLOB: 044b74b1cd45fc0cacf3bbcd343574e6a59ee1ef
 ACADEMIC_VERDICT: SELF_VERIFIED
 PEDAGOGICAL_VERDICT: SELF_VERIFIED
 BLOCKERS: NONE
@@ -24,9 +24,9 @@ PRIVATE_RD1_SHA256: 6cc51485931317083b5ba673d490e5688a7538d4731dca29f002e804c0f9
 
 CONTENT_REVISION: R11
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_56_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_A1_A7_BLOB: dcd3564beba2bab3789e86231cdac71c452ce42c
+AUTHOR_A1_A7_BLOB: 94c2980bb48526987f384b4315fecbd548591e05
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_56_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_METADATA_BLOB: dcd3564beba2bab3789e86231cdac71c452ce42c
+AUTHOR_METADATA_BLOB: 94c2980bb48526987f384b4315fecbd548591e05
 
 ## R09 IMMUTABLE BASELINE LEARNER SOURCE AND Q18
 
@@ -263,6 +263,9 @@ The ONE effective R11 learner source was directly edited to give a grammatical, 
 
 ## 18/11/2026 · current single learner, exact-source R11 56 canonical reconciliation
 
-The effective current learner remains at the **existing R10-named file path** above, Git blob `7005bf1f839e566efb9abbc17eccfa92a0b41e63`; old R11 separately numbered learner candidate was removed and its source blob `5546204168eb3c3402b21af9ca1b9d08b118c378` is Git history only. Direct old/new blob diff proves exactly one hidden provenance comment changed and a seven-line valid math Knowledge recap was added; all 56 distinct item markers, 7 public selfcheck questions, existing key/rubric disclosures, and G10 bank provenance unchanged.
+The effective current learner remains at the **existing R10-named file path** above, Git blob `2cf19a19fc0f616b780846d41f7a1b9325363b80`; old R11 separately numbered learner candidate was removed and its source blob `5546204168eb3c3402b21af9ca1b9d08b118c378` is Git history only. Direct old/new blob diff proves exactly one hidden provenance comment changed and a seven-line valid math Knowledge recap was added; all 56 distinct item markers, 7 public selfcheck questions, existing key/rubric disclosures, and G10 bank provenance unchanged.
 
-Current canonical author Q18 composite receipt `3bd774c5113a6e030e989af59257598452a93fde`; A1–A7 metadata `dcd3564beba2bab3789e86231cdac71c452ce42c`; Q15 source-exact 56-row +7 replay matrix `a127267978ec61c857d5cc0cbcd8cb3f1dcc2f1e`. This handoff now points to exactly **one** current source, one full Q18 AUTHOR_SELF_VERIFIED receipt, one A1–A7 and the existing original G10 SGK canonical owner; no duplicate question bank or new academic standard. Top metadata supersedes historical source path lines in older prose. `CONTENT_READY` is AUTHORING source-level only and does not authorize RELEASE/Final Submit/Mastery or site merge/deploy.
+Current canonical author Q18 composite receipt `044b74b1cd45fc0cacf3bbcd343574e6a59ee1ef`; A1–A7 metadata `94c2980bb48526987f384b4315fecbd548591e05`; Q15 source-exact 56-row +7 replay matrix `a127267978ec61c857d5cc0cbcd8cb3f1dcc2f1e`. This handoff now points to exactly **one** current source, one full Q18 AUTHOR_SELF_VERIFIED receipt, one A1–A7 and the existing original G10 SGK canonical owner; no duplicate question bank or new academic standard. Top metadata supersedes historical source path lines in older prose. `CONTENT_READY` is AUTHORING source-level only and does not authorize RELEASE/Final Submit/Mastery or site merge/deploy.
+
+
+**19/11 owner ΔA:** 14 repeated exploration headings removed, 3 already-written application callouts retitled; source/Q18/A1 relocked. Original math and CONTENT_READY retained.
