@@ -18,7 +18,7 @@ for(const [lesson,count] of Object.entries(expected)){
    "Incorrect reviewed SGK outcome count for B"+lesson);
 }
 const checks={
- 15:["Khái niệm hàm số","tập xác định","tập giá trị","Bảng có đầu vào lặp",
+ 15:["Khái niệm hàm số","tập xác định","tập giá trị","(1;3),(2;4),(2;4)",
       "Đồ thị","x_0\\in D","hàm số cho theo từng khoảng","C(3)","đồng biến","nghịch biến"],
  16:["a\\ne 0","tập xác định","Đỉnh","trục đối xứng","Bốn bước vẽ","\\Delta",
       "thpt-r4-plot","Chuyển động theo phương thẳng đứng","Doanh thu và giá bán"],
