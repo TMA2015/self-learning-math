@@ -1,4 +1,32 @@
 <!-- I798_UNIFIED_22_MODEL_PROGRAM_20261119 -->
+<!-- I798_OWNER_FINAL_COUNT_25_20261119 -->
+## CHỐT DANH MỤC MÔ HÌNH (19/11/2026) — **25 MỤC TIÊU, KHÔNG PHẢI 35 HAY 31**
+
+**Quyết định của chủ dự án:** tổng danh mục nghiên cứu/bàn giao là **25 mục tiêu mô hình** = **22 mục tiêu gắn với 22 Chuyên đề** (22 MODEL_ID tồn tại trong sổ) **+ 3 mô hình bổ trợ SGK Toán 11** ngoài 22 mục. Đây là **đơn vị tính để theo dõi hoàn thành**, không phải số HTML vật lý hoặc số module đã nghiệm thu. Nếu một mô hình bao gồm nhiều cảnh hay tái sử dụng ở hai nơi, **không nhân bản số mục tiêu**.
+
+**Giải thích phép đếm nguồn:** 22 ứng viên cũ đã có mã thật trong **11 tệp HTML** của các PR nguồn; 13 HTML mới gồm **10 tệp có thể phục vụ 10/22 mục tiêu** (4 mục gần trùng chức năng, 6 mục chỉ đáp ứng một phần), **3 HTML phục vụ SGK ngoài 22 mục**. Vì vậy **22 + 13 không phải 35 mô hình cần xây dựng**, và phép trừ chỉ **4** mục A để ra **31** là sai: còn **6** mục B cũng đang được ghép chức năng vào 22 mục tiêu sẵn có, dù **chưa đủ điều kiện thay thế**. Phép đối chiếu đúng theo *vị trí mục tiêu*: **22 + 3 = 25**. Không tự tuyên bố 6 B đã hoàn thành; cần bổ sung phần còn thiếu và giữ đầy đủ giá trị của 13 HTML.
+
+### 22 mục tiêu Chuyên đề — nguồn đang có và cần hoàn thiện
+
+- **A = 4 mục có HTML mới gần trùng chức năng:** CĐ05 ← HTML05 (biến đổi parabol); CĐ06 ← HTML07 (đường tròn lượng giác); CĐ11 ← HTML06 (Riemann); CĐ20 ← HTML12 (Venn/hai biến cố). **Chưa tự chuyển quyền sở hữu nguồn**; so bản cũ và mới, chọn bản đúng/toàn diện hơn, bổ sung nếu thiếu.
+- **B = 6 mục mới hỗ trợ một phần:** CĐ02 ← HTML02 + HTML05 (dấu tam thức chưa đủ); CĐ08 ← HTML04 (giới hạn trái/phải); CĐ09 ← HTML11 (đồ thị f′); CĐ13 ← HTML01 (tích vô hướng/hình chiếu); CĐ18 ← HTML03 (hình chiếu Oxyz); CĐ21 ← HTML13 (Bayes hậu nghiệm). Giữ chức năng bổ ích của bản mới, **không tuyên bố tương đương** cho đến khi bổ sung đủ chức năng theo outcome.
+- **C = 12 mục đã có mã ứng viên cũ, chưa có HTML mới tương ứng:** CĐ01, CĐ03, CĐ04, CĐ07, CĐ10, CĐ12, CĐ14 (7 scene từ #844); CĐ15, CĐ16, CĐ17, CĐ19 (4 HTML từ các PR riêng); CĐ22 (1 scene #880). Tận dụng mã cũ và hoàn thiện **mỗi mục một bản chạy độc lập**, không viết lại từ con số không.
+
+### 3 mục bổ trợ SGK — thêm vào danh mục, **không thêm MODEL_ID Chuyên đề**
+
+| Số trong bộ 13 | Nội dung | Vị trí đề xuất | Trạng thái |
+|---|---|---|---|
+| HTML08 | Đồ thị sin/cos và tính tuần hoàn | SGK Toán 11 · Bài 3 | STANDALONE_SELF_QA; NOT WEBSITE |
+| HTML09 | Đồ thị tan/cot và tiệm cận | SGK Toán 11 · Bài 3 | STANDALONE_SELF_QA; NOT WEBSITE |
+| HTML10 | Phương trình lượng giác cơ bản | SGK Toán 11 · Bài 4 | STANDALONE_SELF_QA; NOT WEBSITE |
+
+**Tình trạng kiểm đếm, không phải nghiệm thu:** **13/25 mục tiêu đã có HTML standalone mới liên hệ** (= 10 mục trong 22 + 3 SGK), nhưng **mới hoàn thiện độc lập, chưa chốt 10 mục Topic là canonical PASS**; trong đó 6 mục B cần bổ sung, 4 mục A cần so sánh. **12/22 mục C chưa có standalone mới tương ứng** nhưng đã có mã nguồn cũ. Chưa tích hợp website/phát hành mô hình nào. Nếu phát sinh mô hình có chức năng giáo dục độc lập thật sự nằm ngoài 25 mục, phải đề xuất thay đổi phạm vi để chủ dự án quyết định; không tự âm thầm tăng tổng.
+
+**Quy trình từ nay:** dùng **một danh mục 25 mục tiêu**, một register 22 MODEL_ID + ba dòng SGK trên, một Issue [#798](https://github.com/TMA2015/self-learning-math/issues/798) và Draft PR #880; đối chiếu chức năng → sửa và test **từng mô hình** → chốt một nguồn chính/một standalone mỗi mục → làm mục tiếp theo. Không sửa snapshot 22 Chuyên đề CONTENT_READY, không nhân bản item hay đánh giá, không tự merge/deploy.
+
+---
+
+
 # QUYẾT ĐỊNH HỢP NHẤT — 19/11/2026 · ONE MATH LAB PROGRAM
 
 **Quyết định mới nhất của chủ dự án:** dừng hai luồng phát triển tách rời, tiếp tục **một chương trình 22 vị trí mô hình của 22 Chuyên đề**, tận dụng toàn bộ mã nguồn ứng viên cũ và **13 HTML độc lập vừa hoàn thiện**. Mục tiêu là một nguồn định danh, không xóa hồ sơ/PR/commit lịch sử, không tự hợp nhất Git branches/merge/deploy, không tăng số lượng theo chỉ tiêu.
@@ -62,7 +90,7 @@ Bảng register nguyên gốc bên dưới được mở rộng bằng đúng ba
 | CĐ18 | `SLM-TOP18-OXYZ-GEOMETRY-R00` | `TOP18-O07/O08/O15 (XYZ_PROJECTION); TOP18-O40/O23 (SPHERE_PLANE)` | Mặt phẳng/mặt cầu Oxyz | [#855](https://github.com/TMA2015/self-learning-math/pull/855) | `06a59b1624bf9eceef9722440acacfbac5969140` | `prototypes/thpt/content-drafts/topic18-oxyz/Temp_THPT_TOPIC18_OXYZ_SPHERE_GEOMETRY_R00_20261114.html` | MODEL_PLACEMENTS_VERIFIED_G2_G3_OPEN | 03 | B | Bổ sung hình chiếu Oxyz và cảnh khác ngoài mặt phẳng ngang |
 | CĐ19 | `SLM-TOP19-COMBINATORICS-PASCAL-R00` | `TOP19-O01/O02 (đếm); TOP19-O05/O06/O07 (chọn/xếp); TOP19-O09 (Newton)` | Đếm chọn và Pascal | [#858](https://github.com/TMA2015/self-learning-math/pull/858) | `d68b220e5faadda774b7540606de3b024a472bd1` | `prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_THPT_TOPIC19_COUNT_CHOOSE_PASCAL_R00_20261114.html` | MODEL_PLACEMENTS_VERIFIED_G2_G3_OPEN | — | C | Quy tắc đếm, Pascal: nguồn #858 |
 | CĐ20 | `SLM-TOP20-PROB-EVENTS-R00` | `TOP20-O11` | Hai biến cố | [#860](https://github.com/TMA2015/self-learning-math/pull/860) | `117237ff935fdef0f5ce7ad8ec99a664f5f980b6` | `prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_EVENTS_INTERACTIVE_WHITE_R00_20261114.html` | MODEL_PLACEMENT_VERIFIED_G2_G3_OPEN | 12 | A | Đối chiếu xúc xắc 6 kết quả và bốn miền; nguồn #860 lịch sử, đã đóng |
-| CĐ21 | `SLM-TOP21-BAYES-TREE-R01` | `TOP21-O05,TOP21-O06,TOP21-O07,TOP21-O08` | Bayes/sơ đồ cây | [Draft mới](https://github.com/TMA2015/self-learning-math/pull/880) | `33632fdf8743b5526b925e8c9f393397bb04d943` | `prototypes/thpt/content-drafts/interactive-models/Temp_THPT_TOPIC21_TOPIC22_SHARED_MATH_LAB_R01_20261117.html` | NEW_AUTHORING_CANDIDATE_BROWSER_OPEN | 13 | B | Bổ sung Bayes hậu nghiệm P(A|B) |
+| CĐ21 | `SLM-TOP21-BAYES-TREE-R01` | `TOP21-O05,TOP21-O06,TOP21-O07,TOP21-O08` | Bayes/sơ đồ cây | [Draft mới](https://github.com/TMA2015/self-learning-math/pull/880) | `33632fdf8743b5526b925e8c9f393397bb04d943` | `prototypes/thpt/content-drafts/interactive-models/Temp_THPT_TOPIC21_TOPIC22_SHARED_MATH_LAB_R01_20261117.html` | NEW_AUTHORING_CANDIDATE_BROWSER_OPEN | 13 | B | Bổ sung Bayes hậu nghiệm P(A\|B) |
 | CĐ22 | `SLM-TOP22-DISTRIBUTION-R01` | `G10-B13-MEAN,G10-B13-MEDIAN,G10-B13-QUARTILES,G10-B14-RANGE_IQR,G10-B14-OUTLIERS` | Dữ liệu thô/ngoại lệ | [Draft mới](https://github.com/TMA2015/self-learning-math/pull/880) | `33632fdf8743b5526b925e8c9f393397bb04d943` | `prototypes/thpt/content-drafts/interactive-models/Temp_THPT_TOPIC21_TOPIC22_SHARED_MATH_LAB_R01_20261117.html` | NEW_AUTHORING_CANDIDATE_BROWSER_OPEN | — | C | Biểu đồ chấm, tứ phân vị, IQR, ngoại lệ: nguồn #880 |
 
 **G0 R02 và G2 CSS R02 — đối chiếu nguồn 17/11:** CĐ15 mô hình đặt ngay trong `TOP15-O11`; CĐ17 mô hình chóp cụt trong `TOP17-O10`, HTML #853 đã nhúng `MODEL_ID` và `OUTCOME` bằng thay đổi comment thuần metadata, blob `cfb2bd522531167003eeae8e7342c6d1349ca425` (sau CSS; commit nhúng ID trước đó `80ab23e69171461e8197e15bc99b08cdb04a7543`), không đổi công thức/mã. CĐ18 có **2 scene**, được đóng pin theo 2 comment `AUTHOR_INTERACTIVE_PLACEMENT` ở learner source; CĐ19 có **3 entry points** cùng một HTML, pin theo vị trí link nội dung đếm/chọn/Newton; CĐ20 link model nằm tại mục hợp/giao `TOP20-O11`. CĐ21/CĐ22 PR đúng là **#880** (không phải #844). `G0_REGISTRY_PINS_AND_EMBEDDED_IDS=22/22 VERIFIED` theo source metadata; **không biến G0 thành G1/G2/G3 PASS**. Chưa cấp verdict học thuật Q18 mới cho các mô hình.
