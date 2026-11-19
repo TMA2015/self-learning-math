@@ -189,7 +189,7 @@ Qua hai thời điểm, độ dốc cho biết mức tăng giảm trên một đ
 
 Trước khi dùng đường thẳng để mô hình hóa, hãy nhớ rằng **đồ thị của hàm số** gồm tất cả các điểm \((x,y)\) có tung độ đúng bằng giá trị hàm số tại hoành độ \(x\). Vì vậy, đường thẳng có phương trình \(y=mx+n\) cũng chính là đồ thị của hàm số \(f(x)=mx+n\); khi \(m\ne0\), đó là hàm số bậc nhất. Chẳng hạn, \(2x-y+1=0\) tương đương với \(y=2x+1\): cả hai mô tả cùng một đường đi qua \((0,1)\) và \((2,5)\), chứ không phải hai đường khác nhau.
 
-Điều này có một giới hạn cần nhớ. Với đường thẳng tổng quát \(Ax+By+C=0\), trong đó \((A,B)\ne(0,0)\), nếu \(B\ne0\) thì có thể chuyển thành \(y=-\frac ABx-\frac CB\), nên đó là đồ thị của một hàm số theo \(x\). Nếu \(B=0\) thì \(A\ne0\) và phương trình trở thành \(x=-\frac CA\): đây là **đường thẳng đứng**, không phải đồ thị của hàm số \(y=f(x)\), vì một giá trị \(x\) ứng với vô số giá trị \(y\). Do đó không được chia cho \(B\) khi \(B=0\).
+Điều này có một giới hạn cần nhớ. Với đường thẳng tổng quát \(Ax+By+C=0\), trong đó \((A,B)\ne(0,0)\), nếu \(B\ne0\) thì có thể chuyển thành \(y=-\frac{A}{B}x-\frac{C}{B}\), nên đó là đồ thị của một hàm số theo \(x\). Nếu \(B=0\) thì \(A\ne0\) và phương trình trở thành \(x=-\frac{C}{A}\): đây là **đường thẳng đứng**, không phải đồ thị của hàm số \(y=f(x)\), vì một giá trị \(x\) ứng với vô số giá trị \(y\). Do đó không được chia cho \(B\) khi \(B=0\).
 
 > **TÍNH CHẤT — Mối liên hệ giữa đồ thị hàm số và đường thẳng.** Phương trình \(y=mx+n\) tương đương với \(mx-y+n=0\) và có vectơ pháp tuyến \((m,-1)\). Với \(Ax+By+C=0\), \((A,B)\ne(0,0)\): khi \(B\ne0\), hệ số góc bằng \(-A/B\); khi \(B=0\), đường thẳng có dạng \(x=-C/A\) và không phải đồ thị của hàm số theo \(x\).
 
