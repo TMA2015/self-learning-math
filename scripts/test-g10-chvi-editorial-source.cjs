@@ -49,8 +49,13 @@ for(const n of [15,16,17,18]){
   const f=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(f("BASELINE_PUBLISHED_B15_BLOB"),uxrow.candidate,
    "B15 current source must extend original owner-reviewed UX source");
-  assert.equal(f("CANDIDATE_B15_SOURCE_BLOB"),expected,
-   "B15 latest Q18 self-QA candidate exactly source-locked");
+  assert.equal(f("CANDIDATE_B15_SOURCE_BLOB"),"131947762d1c2ad1c109602a5cbe2e7fea71652e",
+   "B15 pre-P2 signed self-QA snapshot must stay immutable");
+  const p2=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHVI_B15_P2_EDITORIAL_NOTE_DELTA_R01_20261119.md"),"utf8");
+  const p2f=k=>p2.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(p2f("CANDIDATE_B15_SOURCE_BLOB"),expected,
+   "B15 final P2 source must match latest scoped A/B receipt");
  }
  assert.equal(row.moved,tries[n],"B"+n+" historical First Try count");
  for(const key of ["data-thpt-first-try-id","data-thpt-help-id","data-outcome-id","data-thpt-fig-id"]){
