@@ -12,14 +12,14 @@ SOURCE_COMMIT: 48123885732f666e973cdaa0f06c0d597012e108
 CATALOG_TOPIC_ID: CD12
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 7f537a309fe302941589073bb0e2e9577d323134
+ACADEMIC_SOURCE_BLOB: ece977f22531dfa8e46eeda8ba0c55dc449453e4
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC12_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md (self-QA, not independent Topic NotebookLM review)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC12_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: f0524226db441d7e6786773288c9a7152343f4c2
+REVIEW_RECEIPT_BLOB: 94c53487cec5f9f52b8d50044b67dea78b5e6d68
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC12-TRIANGLE-TRIG-SOLVING-FULL-R04_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: e6bcb2882cf646eabeb17a6b1b780769abea402f
+AUTHOR_HANDOFF_BLOB: 7931c83043a63531aba19e5eb62a497c5584d92f
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_A1_A7_BLOB: 21556e1018583aa68ec9bec1800fa90532f01ad5
+AUTHOR_A1_A7_BLOB: d18d944b6456df58eaac6232dd308001e6bc4a1b
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC12_TRIANGLE_NEW16_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/THPT_G10_CHIII_B05_B06_D1D6_AUTHORING_R01_SNAPSHOT.md
@@ -102,4 +102,7 @@ CURRENT_PR: https://github.com/TMA2015/self-learning-math/pull/840 — DRAFT AUT
 
 ## R05 · source-active W05 cross-branch owner correction (17/11/2026)
 
-The previous R04 `ec90cab8455768b263f8d57409587c28f250340a` and receipt `6974062fc1f127a7b040d653093ffc5f3c40fabf` remain historical Git evidence. New active Topic12 source/receipt/A1/V2 SHA are the header fields above. Original SGK W05 canonical correction is on SGK ChIII Draft #749 (current source Git blob `569466519ee9a653fa3bcdf874e06619424fbf7b`); historical R01 blob/reviewer remains frozen. Topic12 W05 display-only now points to that one owner, uses the same \\(x=R\\cos\\alpha, y=R\\sin\\alpha,\\alpha=150^\\circ\\) rubric with unchanged 7 points and original result. Check source-only receipt `f0524226db441d7e6786773288c9a7152343f4c2` for precise Q15/Q18 DELTA. Other 33 items, total 34 canonical placements, 12 question-only public selfchecks and existing Topic NEW16 bank untouched; no official readiness/Mastery, no browser/RELEASE/merge/deploy authorization.
+The previous R04 `ec90cab8455768b263f8d57409587c28f250340a` and receipt `6974062fc1f127a7b040d653093ffc5f3c40fabf` remain historical Git evidence. New active Topic12 source/receipt/A1/V2 SHA are the header fields above. Original SGK W05 canonical correction is on SGK ChIII Draft #749 (current source Git blob `569466519ee9a653fa3bcdf874e06619424fbf7b`); historical R01 blob/reviewer remains frozen. Topic12 W05 display-only now points to that one owner, uses the same \\(x=R\\cos\\alpha, y=R\\sin\\alpha,\\alpha=150^\\circ\\) rubric with unchanged 7 points and original result. Check source-only receipt `94c53487cec5f9f52b8d50044b67dea78b5e6d68` for precise Q15/Q18 DELTA. Other 33 items, total 34 canonical placements, 12 question-only public selfchecks and existing Topic NEW16 bank untouched; no official readiness/Mastery, no browser/RELEASE/merge/deploy authorization.
+
+
+**19/11 editorial Delta A:** one learner source updated for 12 labels, immutable math/IDs/SVG, SOURCE_LOCK refreshed, STATE remains CONTENT_READY.
