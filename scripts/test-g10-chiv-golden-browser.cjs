@@ -121,7 +121,7 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
     "Owner-P2 B13 CSS must remain byte-identical prefix");
    assert.equal(f14("G10_B01_B13_FROZEN_CSS_BLOB"),f13("CANDIDATE_GOLDEN_CSS_BLOB"),
     "B14 prior stylesheet must be B13 signed release");
-   assert.equal(blob(cssFile),f14("CANDIDATE_GOLDEN_CSS_BLOB"),
+   assert.equal(blob(require("./test-g10-b15-golden-css-source.cjs").publishedB14Ancestor(cssFile)),f14("CANDIDATE_GOLDEN_CSS_BLOB"),
     "B14 scoped Golden CSS must equal current signed X-C source delta");
   assert(cssWithB10.slice(cutB11).includes("THPT-G10-CHIV-TRY21")&&
    !cssWithB10.slice(cutB11).includes("THPT-G10-CHIV-TRY16"),
