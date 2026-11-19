@@ -33,10 +33,11 @@ const sortedStats=values=>{
  const freq=new Map();for(const x of v)freq.set(x,(freq.get(x)||0)+1);
  const times=[...freq.values()],top=Math.max(...times);
  const modes=times.every(x=>x===top)?[]:[...freq].filter(([,f])=>f===top).map(([x])=>x);
- return {mean:v.reduce((a,b)=>a+b,0)/n,median:med(v),q1:med(low),q3:med(high),modes};
+ return {mean:v.reduce((a,b)=>a+b,0)/n,median:med(v),q1:n>=2?med(low):null,q3:n>=2?med(high):null,modes};
 };
 const near=(actual,expected,id)=>assert(Math.abs(actual-expected)<1e-10,id+" expected "+expected+", got "+actual);
 const samples=[
+ ["EDGE-singleton",[5],{mean:5,median:5,q1:null,q3:null}],
  ["TRY05",[2,4,4,10],{mean:5}],
  ["TRY06",[9,2,12,5],{median:7}],
  ["TRY07",[1,2,3,4,5,6,7],{q1:2,median:4,q3:6}],
@@ -63,9 +64,10 @@ for(const [id,data,expected]of samples){
  const found=sortedStats(data);
  for(const [key,val]of Object.entries(expected)){
   if(key==="modes")assert.deepEqual(found.modes,val,id+" incorrect ties or KNTT equal-frequency no-mode rule");
+  else if(val===null)assert.equal(found[key],null,id+" n=1 cannot split into two nonempty quartile halves");
   else near(found[key],val,id+" "+key);
  }
- if("q1"in expected)assert(found.q1<=found.median&&found.median<=found.q3,
+ if(expected.q1!==undefined&&expected.q1!==null)assert(found.q1<=found.median&&found.median<=found.q3,
   id+" violates sorted quartile order");
 }
 const b13Page=read("docs/thpt-preview/sgk/chuong-v/bai-13.md");
@@ -78,7 +80,7 @@ const originalW13=read("docs/thpt-preview/thu-vien/tu-luan-chuong-v-b13-b14.md")
 assert(originalW13.includes('data-thpt-written-canonical="THPT-G10-CHV-W13"')&&
  originalW13.includes("43")&&originalW13.includes("2{,}7")&&originalW13.includes("4{,}3"),
  "Original self-checked W13 solution/rubric needs independent recomputation if modified");
-console.log("PASS G10 B13 math Q18 self-check: 21 independent samples across 5 TRY, 4 examples, D5, 8 canonical, Written; odd/even, ties, extreme changes");
+console.log("PASS G10 B13 math Q18 self-check: 22 independent samples across 5 TRY, 4 examples, D5, 8 canonical, Written; odd/even, ties, extreme changes");
 const others=["thpt-chi-reviewed-formative-v1.js","thpt-chii-reviewed-formative-v1.js","thpt-chiii-reviewed-formative-v1.js","thpt-chiv-b07-b08-reviewed-formative-v1.js","thpt-chiv-b09-b11-reviewed-formative-v1.js","thpt-chvi-reviewed-formative-v1.js","thpt-chvii-reviewed-formative-v1.js","thpt-chviii-reviewed-formative-v1.js","thpt-chix-reviewed-formative-v1.js","thpt-g11-chi-reviewed-formative-v1.js"];
 const prior=others.flatMap(x=>[...read("docs/assets/javascripts/"+x).matchAll(/"item_id"\s*:\s*"([^"]+)"/g)].map(m=>m[1]));
 assert.equal(new Set([...prior,...expected.map(x=>x.item_id)]).size,prior.length+16,"Canonical collision against existing G10/G11 bank");
