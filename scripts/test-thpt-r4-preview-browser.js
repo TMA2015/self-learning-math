@@ -373,7 +373,9 @@ async function ready(page,path){
    await ready(page,path);
    if(name==="iphone"){
     assert((await page.locator("[data-thpt-quadratic-plot] svg path").count())>0,"Derived parabola not drawn");
-    assert((await page.locator("[data-thpt-quadratic-plot] svg circle").count())===4,"Vertex, two Ox crossings and Oy crossing missing");
+    const dots=await page.locator("[data-thpt-quadratic-plot] svg circle").count();
+    const figureHtml=await page.locator("[data-thpt-quadratic-plot] svg").first().evaluate(el=>el.outerHTML.slice(0,1200));
+    assert(dots===4,"Vertex/two Ox/Oy markers missing or malformed: visible circle DOM count="+dots+"; SVG="+figureHtml);
     assert((await page.locator("[data-thpt-symmetry-axis=\"x=2\"][stroke-dasharray]").count())===1,"Dashed axis x=2 missing");
     const plotText=await page.locator("[data-thpt-quadratic-plot] svg").textContent();
     assert(plotText.includes("I(2;−1)")&&plotText.includes("(0;3)")&&plotText.includes("x = 2"),"Key graph annotations missing");
