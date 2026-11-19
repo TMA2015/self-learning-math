@@ -78,7 +78,7 @@ for(let n=1;n<=27;n++){
   assert.equal(f("B12_R01_SOURCE_BLOB"),"fc2942aeafdcd34d3cedd9eeb24c48716bbe7e78",
    "B12 historical reviewed calculator SHA must remain locked");
   assert.equal(blob(fs.readFileSync(path.join(root,"docs",route+".md"))),
-   "9e8b5e0b2e11a06d76d4b6e48b6d04af65081b30",
+   "a2ea6c909cdd2317188b13c2bde22e7923dba3de",
    "B12 current one-canonical source must match 19/11 owner duplicate-heading Delta A SHA");
   assert(q18.includes("INDEPENDENT_NOTEBOOKLM_ACADEMIC_PED_REVIEW_PENDING"),
    "B12 distinct calculator attempt does not itself grant Academic/PED clearance");
