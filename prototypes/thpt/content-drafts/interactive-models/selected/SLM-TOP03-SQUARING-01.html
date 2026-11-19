@@ -53,8 +53,8 @@ canvas,svg{background:var(--slm-canvas)!important;border-color:var(--slm-border)
 <p id="predict"></p>
 <div class="controls" id="controls" aria-label="Thông số mô hình"></div>
 <div class="canvaswrap"><canvas id="plot" role="img" aria-label="Hình toán học thay đổi theo điều khiển. Nội dung kết quả luôn được mô tả bằng văn bản dưới hình."></canvas></div>
-<div class="legend"><span>Đường chính</span><span class="second">Đường so sánh</span><span class="marker">Điểm/tham số đang chọn</span></div>
-<div class="result" id="readout" aria-live="polite" role="status"></div>
+<div class="legend"><span>y=√(x+2)</span><span class="second">y=x</span><span class="marker">Ứng viên/điểm thử</span></div>
+<details class="result" id="numeric-check"><summary>Đối chiếu nghiệm gốc và nghiệm ngoại lai</summary><div id="readout" aria-live="polite" role="status"></div></details>
 <div class="actions"><button id="reset" type="button">Đặt lại</button></div>
 <p id="apply"></p>
 <details id="compare"><summary>Đối chiếu · Vì sao có kết quả này?</summary><p id="reason"></p></details>
@@ -86,13 +86,22 @@ function curve(g,f,a,b,color,width){ctx.beginPath();ctx.strokeStyle=color||C.blu
 function draw(){init();var x,k,g,i,y,z,n,b,p,alpha,r,t,sol,roots,theta,dx,estimate,exact,ns;Object.keys(el).forEach(function(key){out(key)});
 switch(id){
 case "SLM-TOP03-SQUARING-01":
-x=val("x");g=graph(-2.5,4.5,-2,5);curve(g,function(t){return t>=-2?Math.sqrt(t+2):NaN},-2,4.5,C.blue);curve(g,function(t){return t},-2.5,4.5,C.green);if(x>=-2)dot(g.X(x),g.Y(Math.sqrt(x+2)),C.orange);g.end();var squareOk=Math.abs(x*x-x-2)<1e-8,sourceOk=x>=0&&Math.abs(Math.sqrt(x+2)-x)<1e-8;setText("x="+fmt(x)+": sau bình phương "+(squareOk?"đúng":"chưa đúng")+"; phương trình gốc "+(sourceOk?"đúng":"không đúng")+". Nghiệm sau bình phương: −1 và 2. Nghiệm gốc: chỉ 2.");break;
+x=val("x");g=graph(-2.5,4.5,-2.5,5);curve(g,function(t){return t>=-2?Math.sqrt(t+2):NaN},-2,4.5,C.blue);curve(g,function(t){return t},-2.5,4.5,C.green);
+line(g.X(-1),g.Y(-1),g.X(-1),g.Y(1),C.red,1.8,[5,4]);
+dot(g.X(-1),g.Y(-1),C.red,5);dot(g.X(-1),g.Y(1),C.red,5,true);
+dot(g.X(2),g.Y(2),C.green,6);
+if(x>=-2)dot(g.X(x),g.Y(Math.sqrt(x+2)),C.orange);
+label("x=−1: hai vế khác nhau",g.X(-1)+7,g.Y(-1)-6,C.red);
+label("x=2: giao điểm",g.X(2)+7,g.Y(2)-7,C.green);
+g.end();
+var squareOk=Math.abs(x*x-x-2)<1e-8,radicandOk=x>=-2,rhsOk=x>=0,sourceOk=radicandOk&&rhsOk&&Math.abs(Math.sqrt(x+2)-x)<1e-8;
+setText("x="+fmt(x)+". Điều kiện để √(x+2)=x: x+2≥0 và x≥0, tức x≥0; "+(rhsOk?"x đang thử đạt điều kiện x≥0.":"x đang thử KHÔNG đạt x≥0.")+" Sau bình phương x²−x−2=0: "+(squareOk?"đúng.":"sai.")+" Thế lại phương trình gốc: "+(sourceOk?"đúng.":"không đúng.")+" Hai nghiệm của phương trình đã bình phương là −1 và 2. Tại x=−1, √1=1 ≠ −1, nên loại; nghiệm gốc duy nhất x=2.");break;
 }
 if(!interacted){result.textContent="Hãy dự đoán kết quả trước, sau đó thay đổi ít nhất một thanh trượt hoặc bấm giá trị bằng bàn phím để quan sát."}
 }
-function schedule(){interacted=true;if(pending)return;pending=true;window.requestAnimationFrame(function(){pending=false;draw()})}
+function schedule(){document.getElementById("numeric-check").open=false;document.getElementById("compare").open=false;interacted=true;if(pending)return;pending=true;window.requestAnimationFrame(function(){pending=false;draw()})}
 Object.keys(el).forEach(function(k){el[k].input.addEventListener("input",schedule);el[k].input.addEventListener("change",schedule)});
-document.getElementById("reset").addEventListener("click",function(){Object.keys(el).forEach(function(k){el[k].input.value=el[k].initial});document.getElementById("compare").open=false;interacted=false;draw()});
+document.getElementById("reset").addEventListener("click",function(){Object.keys(el).forEach(function(k){el[k].input.value=el[k].initial});document.getElementById("compare").open=false;document.getElementById("numeric-check").open=false;interacted=false;draw()});
 window.addEventListener("resize",schedule);draw();
 })();
 </script>
