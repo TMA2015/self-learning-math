@@ -262,6 +262,13 @@ const blob=data=>{
       assert.equal(await ex.locator("p > strong").filter({hasText:/^Đề:$/}).count(),4,
        context+" exactly four original Đề: labels, one per worked example");
      }
+     if(lesson===12&&width===390){
+      const trace=await blocks.nth(2).evaluate(root=>({
+       h3:[...root.querySelectorAll(":scope > h3")].map(h=>({title:h.textContent.trim(),nextTag:h.nextElementSibling?.tagName,next:h.nextElementSibling?.outerHTML.slice(0,190)})),
+       boxes:[...root.querySelectorAll(".thpt-g10-example-solution")].map((el,i)=>({i,aria:el.getAttribute("aria-label"),text:el.textContent.trim().slice(0,95),parent:el.parentElement?.tagName,prior:el.previousElementSibling?.tagName}))
+      }));
+      console.log("CHV_B12_DEBUG_DOM "+JSON.stringify(trace));
+     }
      const sourceBox=".thpt-g10-example-solution";
       assert.equal(await blocks.nth(2).locator(sourceBox).count(),
        lesson===14?3:4,context+" B12/B13 source-authored solutions, B14 legacy Golden");
