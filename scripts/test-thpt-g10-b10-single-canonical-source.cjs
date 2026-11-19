@@ -41,8 +41,16 @@ assert(b12Start>cut11&&css.indexOf(b12Marker,b12Start+1)<0,
  "Exactly one B12 scoped semantic palette extension follows B10/B11");
 assert.equal(blob(Buffer.from(css.slice(0,b12Start-1))),b11field("CSS_B11_SCOPED_APPEND_BLOB"),
  "B01–B11 approved Golden CSS prefix must be byte-exact unchanged");
-assert.equal(blob(buf(cssPath)),golden("GOLDEN_CSS_CURRENT_BLOB"),
- "B12 currently signed scoped color append must be exact CSS SHA");
+const b13Marker="/* G10 ChV B13 · exact B10/B12 Golden palette";
+const b13Start=css.indexOf(b13Marker);
+assert(b13Start>0&&css.indexOf(b13Marker,b13Start+1)<0,
+ "B13 must be exactly one scoped style addition after B12");
+assert.equal(blob(Buffer.from(css.slice(0,b13Start-1))),golden("GOLDEN_CSS_CURRENT_BLOB"),
+ "B01–B12 approved Golden stylesheet remains immutable");
+const b13Receipt=read("prototypes/thpt/ux795/G10_CHV_B13_S1_Q18_GOLDEN_ENRICHMENT_DELTA_R01_20261119.md");
+const b13Field=k=>b13Receipt.split("**"+k+":** "+t)[1]?.slice(0,40);
+assert.equal(blob(buf(cssPath)),b13Field("CANDIDATE_GOLDEN_CSS_BLOB"),
+ "B13 Golden scoped palette must match new Q18 candidate exact SHA");
 const runtimePath="docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js";
 const runtime=read(runtimePath);
 assert.equal(field("B09_OWNER_P2_RUNTIME_BASELINE_BLOB"),"7a77c4444dfc96aeeaf87ddd17d8f9d37a6ae136");
