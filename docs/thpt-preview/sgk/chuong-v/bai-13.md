@@ -138,21 +138,28 @@
 === "Kiến thức SGK"
 
     ### 2.1. Số trung bình và trung vị
-    Mẫu \(x_1,\ldots,x_n\) có \(n>0\), số trung bình \(\bar x=(\sum_i x_i)/n\). Nếu \(x_i\) có tần số \(m_i\), \(\bar x=\sum_i m_ix_i/\sum_i m_i\). Phải sắp mẫu không giảm trước khi tìm trung vị \(Q_2\): với \(n\) lẻ lấy giá trị chính giữa; \(n\) chẵn lấy trung bình hai giá trị giữa.
+
+    Hai số này có mục đích khác nhau: **số trung bình** thể hiện mức chia đều của tổng, còn **trung vị** thể hiện vị trí giữa. Hãy nhìn dữ liệu là danh sách hay bảng tần số trước khi tính.
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Số trung bình cộng:</strong> Với \(n\ge1\) quan sát số \(x_1,\ldots,x_n\), \(\bar x=\dfrac{x_1+\cdots+x_n}{n}\). Nếu giá trị \(a_i\) xuất hiện \(m_i\) lần, \(n=\sum_{i=1}^{k}m_i\), thì \(\bar x=\dfrac{\sum_{i=1}^{k}m_i a_i}{\sum_{i=1}^{k}m_i}\). Từng quan sát đều được tính, kể cả những giá trị bị lặp.</div>
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Trung vị:</strong> Sắp mẫu thành \(x_{(1)}\le\cdots\le x_{(n)}\). Nếu \(n=2k+1\) lẻ thì \(Q_2=x_{(k+1)}\); nếu \(n=2k\) chẵn thì \(Q_2=\dfrac{x_{(k)}+x_{(k+1)}}2\). Đây là mốc ở giữa theo <em>vị trí</em>, không cần trùng với một giá trị có sẵn khi \(n\) chẵn.</div>
 
     ### 2.2. Tứ phân vị
 
+    Trung vị toàn mẫu là \(Q_2\). Tiếp tục tìm trung vị của nửa dưới, nửa trên để có hai mốc bổ sung. Xem lại hình có **hai số 3** ở tab Khám phá §1.2.3 trước khi làm theo công thức.
 
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Ba tứ phân vị:</strong> \(Q_1\) là trung vị của nửa dưới; \(Q_2\) là trung vị toàn mẫu; \(Q_3\) là trung vị của nửa trên, sau khi đã sắp xếp. Luôn phải có \(Q_1\le Q_2\le Q_3\).</div>
 
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Tìm tứ phân vị theo SGK KNTT:</strong> (1) Sắp mọi quan sát không giảm, giữ đủ các giá trị lặp; (2) tìm \(Q_2\); (3) nếu \(n\) lẻ, bỏ <strong>đúng một quan sát ở vị trí chính giữa</strong>, chia hai phần còn lại; nếu \(n\) chẵn, chia luôn thành hai nửa bằng nhau; (4) tính trung vị mỗi nửa để được \(Q_1,Q_3\). Không tự thay bằng một quy ước percentile khác của phần mềm.</div>
 
-    **Cách đọc hình.** Sắp xếp dữ liệu từ bé đến lớn trước khi nhìn Q1, Q2, Q3. Các mốc chia nhóm quan sát đã sắp xếp, không chia khoảng giá trị thành những đoạn bằng nhau.
-
-    Với mẫu tăng dần: \(Q_2\) là trung vị; \(Q_1\) là trung vị **nửa dưới** và \(Q_3\) là trung vị **nửa trên**. Khi \(n\) lẻ, **loại chính \(Q_2\)** khỏi cả hai nửa; khi \(n\) chẵn, chia dãy thành hai nửa bằng nhau. Mỗi trường hợp cần ghi thao tác, không dùng máy tính có quy ước percentile khác làm bằng chứng thay SGK.
+    **Cách tự kiểm:** Với dãy lẻ, kiểm số quan sát còn lại sau khi bỏ vị trí giữa là \(n-1\), mỗi nửa có \((n-1)/2\) phần tử. Đừng xóa mọi giá trị trùng với \(Q_2\): các số bằng nhau có thể chiếm những vị trí khác nhau.
 
     ### 2.3. Mốt
-    Mốt là giá trị xuất hiện nhiều lần nhất (tần số cao nhất); có thể có nhiều giá trị đồng mốt. Theo ví dụ SGK khi tất cả giá trị có tần số 1, mẫu được coi **không có mốt**. Số trung bình có thể bị kéo về phía giá trị rất lớn/nhỏ, trong khi trung vị ít nhạy hơn, nên việc chọn số đặc trưng phải theo tình huống.
 
-    **Không có mốt:** theo nhận xét của SGK (trang 82), khi mọi giá trị phân biệt trong mẫu có cùng tần số thì mẫu không có mốt, kể cả khi tần số chung lớn hơn 1; không chỉ riêng trường hợp mỗi giá trị xuất hiện một lần.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Mốt:</strong> Mốt là giá trị nổi bật về tần số xuất hiện. Nếu hai hay nhiều giá trị cùng có tần số lớn nhất và cao hơn những giá trị còn lại, mẫu có nhiều mốt. Theo quy ước trong bài SGK KNTT, khi mọi giá trị phân biệt đều xuất hiện với <strong>cùng tần số</strong>, không chọn một giá trị nào làm mốt; mọi giá trị chỉ xuất hiện một lần là trường hợp đặc biệt.</div>
+
+    **Chọn đại lượng:** Số trung bình thích hợp để tính mức bình quân của toàn bộ quan sát; trung vị phù hợp khi cần nói vị trí ở giữa và có giá trị rất lớn/nhỏ; mốt cho biết giá trị phổ biến, chẳng hạn cỡ giày; tứ phân vị chỉ các mốc phân chia mẫu. Một số đặc trưng không thay thế mọi thông tin về phân bố dữ liệu.
 
 === "Ví dụ"
 
