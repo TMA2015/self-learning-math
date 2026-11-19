@@ -14,12 +14,12 @@ CURRENT_PR: #818 Draft AUTHORING; no merge or deploy
 CATALOG_TOPIC_ID: CD02
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: ec8a640c65f66e1f743c8af155642aac6a4170c3
+ACADEMIC_SOURCE_BLOB: 702163e95642d24f070c442cf13f4ad575678145
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC02_R06_NUMBERING_DELTA_A_Q18_20261116.md (AUTHOR_SELF_QA only, not a new independent reviewer PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC02_R06_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: 7752de431df0e1d11e2ebe67390781c6f6c7f1d9
+REVIEW_RECEIPT_BLOB: 1926ded71fc19efd5e16f72c0e82747a8d1245b4
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC02-INEQ-QUAD-REGION-FULL-R06_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: c9a22f1ea06a2da346dc40e7c65f3c47de9f9e0f
+AUTHOR_HANDOFF_BLOB: e8dc5e7bf2e1e52e6193e9d2e0f8eb1e852ede71
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC02_INEQ_QUAD_REGION_ORIGINAL18_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 6412d01a5d2c9b04c6f97d5b6a41c43e85d1c2df
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC02_INEQ_QUAD_REGION_ORIGINAL20_EXTENSION_R01_20261112.md
@@ -53,7 +53,7 @@ PUBLIC_SELF_CHECK: 16 public replay questions, no Mastery/heldout score
 
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — Current R06 source ec8a640c65f66e1f743c8af155642aac6a4170c3, Q18 author scope 7752de431df0e1d11e2ebe67390781c6f6c7f1d9, A1 metadata 91408737fec8fbd7710984b920c77c25123b12a9, 18 SGK index +20 Topic extension, single handoff c9a22f1ea06a2da346dc40e7c65f3c47de9f9e0f; all exact SHA locked.
+- [x] A1_SOURCE_SNAPSHOT — Current R06 source 702163e95642d24f070c442cf13f4ad575678145, Q18 author scope 1926ded71fc19efd5e16f72c0e82747a8d1245b4, A1 metadata dd0b8bd34359a3d18ddda8e70a6dcf2b99056abb, 18 SGK index +20 Topic extension, single handoff e8dc5e7bf2e1e52e6193e9d2e0f8eb1e852ede71; all exact SHA locked.
 - [x] A2_SGK_SBT_SCOPE — CĐ02 gốc theo danh mục 22; KNTT G10 T1 B03 SGK 22–25/SBT16–18, B04 SGK26–30/SBT19–23; B17 G10 T2 SGK19–24/SBT16–18, no new scan claim.
 - [x] A3_NOTEBOOKLM_VERDICT — Original 18 immutable G10 ChII reviewed independent 18/18 PASS on old SHA only; new R04 Topic Delta C Q18 AUTHOR_SELF_VERIFIED 16 outcome + 20 novel item solution checks; no invented NotebookLM Topic PASS.
 - [x] A4_ITEM_OUTCOME_IDS — 16/16 outcome IDs, 38 distinct PUBLIC canonical IDs (18 old+20 new), 4 Written (2 old+2 new), each one rubric/7, 16 public selfcheck reuses no IDs minted.
@@ -89,7 +89,7 @@ PUBLIC_SELF_CHECK: 16 public replay questions, no Mastery/heldout score
 
 ## R06 current learner-formal-knowledge closure · 17/11/2026
 
-- Exact source `ec8a640c65f66e1f743c8af155642aac6a4170c3`, Q18 targeted author receipt `7752de431df0e1d11e2ebe67390781c6f6c7f1d9`, A1 metadata `91408737fec8fbd7710984b920c77c25123b12a9` and V2 `c9a22f1ea06a2da346dc40e7c65f3c47de9f9e0f` are the current AUTHORING chain. Older numbered R06 source/receipt below are historical only.
+- Exact source `702163e95642d24f070c442cf13f4ad575678145`, Q18 targeted author receipt `1926ded71fc19efd5e16f72c0e82747a8d1245b4`, A1 metadata `dd0b8bd34359a3d18ddda8e70a6dcf2b99056abb` and V2 `e8dc5e7bf2e1e52e6193e9d2e0f8eb1e852ede71` are the current AUTHORING chain. Older numbered R06 source/receipt below are historical only.
 - Q03/Q09–Q14: 4 real formal statements (inequality operations, discriminant, no-real-root polynomial sign, 2-variable inequalities), one concise key-recall block; definitions/conditions verified using adjacent learner examples. No blank formula or added item.
 - 38 original canonical Practice stems, answers, rubrics, disclosures and D6 BYTE_EXACT to preceding source `351dc607a6721fd56947344034f06c6cc8cca253`; public selfcheck 16 question-only and SVG paths unaffected. No Mastery/private RD1/official Readiness; release/AP/owner permission remain separate.
 
@@ -98,3 +98,6 @@ PUBLIC_SELF_CHECK: 16 public replay questions, no Mastery/heldout score
 - H1 3 pages; numbered H2 groups and 1.1 H3 lessons with no missing predecessor; Practice question labels use scoped bold, not H4.
 - Source SHA `41a3d0497057217368ba63fecfa43d118f3e4519`, source-equivalent author Q18 `09ad994ded632d4f9951f4bb53e3872e64e82db3`, metadata `3cc08a29d6ea132e2e70524b9a95c79a2f9ebe88`, V2 `32c07c5d01ec498aea930bf5bfa3591fdfe2872e`. Historical sources and receipts unchanged; math/answers/rubrics/D6 preserved by identical full reveal block and item ID comparison.
 - AUTHORING CONTENT_READY only; not fresh NotebookLM academic review, RELEASE browser/Golden QA, MERGED or PUBLISHED.
+
+
+**19/11 label-only owner edit:** same CONTENT_READY, effective source and all pointers resynchronized.
