@@ -167,7 +167,7 @@
 
     ### 3.1. Ví dụ 1 — Mẫu lẻ: tính đầy đủ bốn số đặc trưng
 
-    <div hidden data-thpt-g10-example-boundary></div>
+    <h4 hidden data-thpt-g10-example-boundary></h4>
 
     **Đề:** Số lần đọc sách của bảy bạn trong một tuần là \(6,12,4,9,6,5,7\). Tính số trung bình, trung vị, ba tứ phân vị và mốt.
 
@@ -184,7 +184,7 @@
 
     ### 3.2. Ví dụ 2 — Mẫu chẵn: hai vị trí giữa
 
-    <div hidden data-thpt-g10-example-boundary></div>
+    <h4 hidden data-thpt-g10-example-boundary></h4>
 
     **Đề:** Mẫu \(11,3,14,7,5,9\) có sáu số. Tính \(\bar x,Q_1,Q_2,Q_3\), và cho biết mẫu có mốt không.
 
@@ -201,7 +201,7 @@
 
     ### 3.3. Ví dụ 3 — Tính từ bảng tần số
 
-    <div hidden data-thpt-g10-example-boundary></div>
+    <h4 hidden data-thpt-g10-example-boundary></h4>
 
     **Đề:** Một nhóm bạn ghi số lần đến thư viện trong tuần. Tính các số đặc trưng từ bảng sau:
 
@@ -222,7 +222,7 @@
 
     ### 3.4. Ví dụ 4 — Chọn trung vị khi có giá trị bất thường
 
-    <div hidden data-thpt-g10-example-boundary></div>
+    <h4 hidden data-thpt-g10-example-boundary></h4>
 
     **Đề:** Thời gian chờ (phút) của năm người là \(5,6,6,7,100\). Có nên nói “mỗi người thường chờ khoảng 25 phút” không?
 
