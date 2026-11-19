@@ -7,6 +7,8 @@
  */
 const assert=require("node:assert/strict"),fs=require("node:fs");
 const LESSON=/^docs\/thpt-preview\/sgk\/(?:(?:lop-11|lop-12)\/)?chuong-(?:i|ii|iii|iv|v|vi|vii|viii|ix)\/bai-[1-9]\d*\.md$/;
+const CHAPTER_PAGE=/^docs\/thpt-preview\/sgk\/(?:(?:lop-11|lop-12)\/)?(?:chuong-(?:i|ii|iii|iv|v|vi|vii|viii|ix)\/(?:luyen-tap|tu-kiem-tra-chuong)\.md|chuong-(?:i|ii|iii|iv|v|vi|vii|viii|ix)\.md)$/;
+const CANONICAL_PAGE=p=>LESSON.test(p)||CHAPTER_PAGE.test(p);
 const RECEIPT=/^prototypes\/thpt\/ux795\/[A-Za-z0-9_.-]+\.md$/;
 const SOURCE_TEST=/^scripts\/(?:test-(?:g10-|thpt-g10-|thpt-q18-g10-|ux795-g10-)[A-Za-z0-9_.-]+|thpt-q18-g10-source-receipt)\.cjs$/;
 const FIGURE=/^docs\/assets\/images\/thpt\/[A-Za-z0-9_.-]+\.(?:svg|png|jpg|webp)$/i;
@@ -16,9 +18,9 @@ function classify(paths,{manual=false}={}){
  if(!files.length)return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"EMPTY_DIFF"};
  if(files.some(x=>x.includes("..")||x.includes("\\")||x.startsWith("/")))
   return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"UNSAFE_PATH"};
- const lessons=files.filter(x=>LESSON.test(x));
+ const lessons=files.filter(x=>CANONICAL_PAGE(x));
  const safeCompanions=x=>RECEIPT.test(x)||SOURCE_TEST.test(x);
- if(lessons.length&&files.every(x=>LESSON.test(x)||safeCompanions(x)||FIGURE.test(x))){
+ if(lessons.length&&files.every(x=>CANONICAL_PAGE(x)||safeCompanions(x)||FIGURE.test(x))){
   // Figures must actually be referenced from a changed lesson. Do not widen
   // to common library SVGs, as a figure shared by other pages needs FULL.
   for(const x of files.filter(y=>FIGURE.test(y))){
@@ -45,10 +47,15 @@ function selfTest(){
  assert.equal(classify([fixture]).impact,"SCOPED_LESSON");
  assert.equal(classify(authoring).full_suite,"false");
  assert.equal(classify([fixture,another]).changed_lessons,fixture+","+another);
+ assert.equal(classify([fixture,
+  "docs/thpt-preview/sgk/chuong-v/luyen-tap.md",
+  "docs/thpt-preview/sgk/chuong-v/tu-kiem-tra-chuong.md"]).impact,"SCOPED_LESSON");
+ assert.equal(classify(["docs/thpt-preview/sgk/lop-11/chuong-i.md",
+  "docs/thpt-preview/sgk/lop-11/chuong-i/tu-kiem-tra-chuong.md"]).full_suite,"false");
  assert.equal(classify(["AGENTS.md"]).impact,"METADATA");
  for(const unsafe of [
   [],[fixture,"mkdocs.yml"],[fixture,"docs/assets/javascripts/thpt-golden-runtime-v1.js"],
-  [fixture,"docs/assets/stylesheets/thpt-r4-preview.css"],[fixture,"docs/thpt-preview/sgk/chuong-v/luyen-tap.md"],
+  [fixture,"docs/assets/stylesheets/thpt-r4-preview.css"],[fixture,"docs/thpt-preview/sgk/index.md"],
   [fixture,"scripts/test-thpt-release-impact.cjs"],[fixture,".github/workflows/qa-pr.yml"],
   [fixture,"docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js"],
   [fixture,"docs/assets/images/thpt/unknown.svg"],["docs/thpt-preview/../bad.md"]
