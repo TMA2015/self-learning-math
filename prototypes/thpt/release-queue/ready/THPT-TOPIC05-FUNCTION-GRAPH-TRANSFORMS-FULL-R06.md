@@ -15,18 +15,18 @@ CATALOG_TOPIC_ID: CD05
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 44c3a3a0ffcdefa9a3c4eaf6ad1d4f78012541b4
+ACADEMIC_SOURCE_BLOB: e5b1888794a06e0de2e84a696fa11f95c9121472
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC05_GRAPH_TRANSFORMS_NEW38_PUBLIC_CANONICAL_R01_20261112.md
 PUBLIC_CANONICAL_BANK_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC05_R06_COMPOSITE_Q18_AUTHOR_SELF_QA_20261118.md
-REVIEW_RECEIPT_BLOB: da5e68aa3c6f2d2e40d984f0a0a904b0c4361380
+REVIEW_RECEIPT_BLOB: a298ccdcf9a2a782289e95a7b9e5095c007fad40
 REVIEW_RECEIPT: current-source signed AUTHOR_SELF_VERIFIED Q18 composite; no independent NotebookLM PASS
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_A1_A7_CURRENT_SOURCE_QA_20261118.md
-AUTHOR_A1_A7_BLOB: 00666fd8c3f7b6953c2d7dc6bb68f84ba36135a1
+AUTHOR_A1_A7_BLOB: 06e44a9b04ddba6fbe9a1e55cc525d7d9e43a1a0
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_A1_A7_CURRENT_SOURCE_QA_20261118.md
-AUTHOR_METADATA_BLOB: 00666fd8c3f7b6953c2d7dc6bb68f84ba36135a1
+AUTHOR_METADATA_BLOB: 06e44a9b04ddba6fbe9a1e55cc525d7d9e43a1a0
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC05-FUNCTION-GRAPH-TRANSFORMS-FULL-R06_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: d636b75317b156c8379e21fd70d3a64ae2dfea4b
+AUTHOR_HANDOFF_BLOB: 661927b31fef472d036052ad90e506a1ab61df8f
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 BLOCKERS: NONE
@@ -44,7 +44,7 @@ CĐ05 has one effective current R06 source SHA, 17 coherent Knowledge outcomes (
 
 **Q15 owner:** immutable original public library `ab878f1a18dea87872449a79c27b75a612d81b39`. Current learner contains exactly 38 display-only projections, matching ALL 38 original item IDs, outcomes, stems, answers, full reasoned solutions; original bank has one canonical body per item. Selfcheck reuses 17 public P items as question-only placement, never new bank owners.
 
-**Q18:** current signed AUTHOR_SELF_VERIFIED source composite `da5e68aa3c6f2d2e40d984f0a0a904b0c4361380`, with actual source receipts for R05, R06 heading, 16 changed D6 routes and 3 formal math definitions. No authorial transfer of prior independent NotebookLM PASS, and no unverified fresh S1 page scan. Original R05 immutable source and receipt are historical, located via `archive/THPT-TOPIC05-FUNCTION-GRAPH-TRANSFORMS-FULL-R01.md` and its own exact Git blobs.
+**Q18:** current signed AUTHOR_SELF_VERIFIED source composite `a298ccdcf9a2a782289e95a7b9e5095c007fad40`, with actual source receipts for R05, R06 heading, 16 changed D6 routes and 3 formal math definitions. No authorial transfer of prior independent NotebookLM PASS, and no unverified fresh S1 page scan. Original R05 immutable source and receipt are historical, located via `archive/THPT-TOPIC05-FUNCTION-GRAPH-TRANSFORMS-FULL-R01.md` and its own exact Git blobs.
 
 **Q16:** 55 student-controlled collapsed disclosures for public practice, 17 question-only public replays; no server-protected independent assessment claimed. `CLIENT_SELF_CHECK_NO_MASTERY` only, zero RD1 private data imported to Git, Final Submit official grading and Mastery not integrated by AUTHORING.
 
@@ -106,3 +106,6 @@ CĐ05 has one effective current R06 source SHA, 17 coherent Knowledge outcomes (
 - [ ] P2_DEVICE_UAT — Real-device parent/learner acceptance pending if release requires.
 
 AUTHOR_SIGNOFF: TOP05_R06_AUTHORING_CONTENT_READY_SOURCE_ONLY_20261118
+
+
+**19/11 owner source-equivalent Delta A:** no changed math/canonical/Q16/figure, STATE remains CONTENT_READY, all source references refreshed.
