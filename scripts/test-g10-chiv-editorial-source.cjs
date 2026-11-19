@@ -434,8 +434,10 @@ for(const [lesson,row] of rows){
    const b13Field=k=>b13Receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
    assert.equal(blob(css),b13Field("CANDIDATE_GOLDEN_CSS_BLOB"),
     "B13 scoped UI appendix SHA must match source receipt");
-   assert(b13Receipt.includes("DELTA_C_REVIEW_HOLD"),
-    "B13 Q18 source remains review HOLD independent of Golden UI QA");
+   assert(b13Receipt.includes("Q18_OWNER_SELF_VERIFIED_ENRICHMENT_PASS")&&
+    b13Receipt.includes("S1_SCOPE_MATH_CONVENTION_VERIFIED")&&
+    b13Receipt.includes("P0=0; P1=0"),
+    "B13 Q18 source has a math/PED self-QA receipt; Golden parity does not replace it");
   // Historical R01 source/receipt stay immutable; this P2 correction is a scoped DELTA_A_UI.
   const r02=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHIV_B10_P2_MATHJAX_DELTA_A_UI_R02_20261118.md"),"utf8");
