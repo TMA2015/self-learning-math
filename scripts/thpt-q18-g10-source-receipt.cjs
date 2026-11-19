@@ -552,7 +552,18 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    assert.equal(blob(Buffer.from(full.slice(0,at-1))),cssBase,
     "B01–B13 owner-P2 CSS prefix must remain byte-exact");
    assert.equal(blob(css),cssNext,"B14 scoped CSS candidate must match signed receipt");
-   return {baseline,next,cssBase,cssNext};
+   const labelReceipt=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHV_B14_EM_VAN_DUNG_LABEL_DELTA_A_R01_20261119.md"),"utf8");
+   const labelField=k=>labelReceipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(labelField("B14_PREVIOUS_SOURCE_BLOB"),next,
+    "B14 Delta A labels must derive from immutable §X-C candidate Git blob");
+   const current=labelField("B14_CURRENT_SOURCE_BLOB");
+   assert(/^[a-f0-9]{40}$/.test(current||"")&&current!==next,
+    "B14 current owner-label correction must be exact SHA-locked");
+   assert(labelReceipt.includes("DELTA_A_UI")&&
+    labelReceipt.includes("OWNER_P2 vẫn PENDING"),
+    "B14 only copy change; user P2 remains pending");
+   return {baseline,next:current,cssBase,cssNext};
   };
   if(name==="B12"){
    const locked=fs.readFileSync(path.join(root,
