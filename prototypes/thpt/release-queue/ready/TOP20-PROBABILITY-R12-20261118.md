@@ -12,16 +12,16 @@ Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_COMMIT: 3a5a3bc9f2fe390f878bf453539afbe4cbf41ff1
 CURRENT_PR: #884 — AUTHORING Draft only, no website release
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_LEARNER_PRESENTATION_20261116.md
-ACADEMIC_SOURCE_BLOB: d4a501bce64003f3583aca947d429504530b72c0
+ACADEMIC_SOURCE_BLOB: 74c572ca5778bb8308ab1fe7cb23dfa487858c53
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/TOP20_R12_Q18_AUTHOR_SELF_QA_COMPOSITE_20261118.md
-REVIEW_RECEIPT_BLOB: b3204f8e8e1a43921c1039d362dca91f22321f8a
+REVIEW_RECEIPT_BLOB: 2b37de03bb433536cf398bcb9a6de1403bac11c0
 REVIEW_RECEIPT: signed current-source AUTHOR_SELF_VERIFIED composite, no independent NotebookLM Topic PASS
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/TOP20-PROBABILITY-R11-20261116_HANDOFF_V2.md
-AUTHOR_HANDOFF_BLOB: dcc88dedb0c0bc9cd61143dbfd921cf5add50200
+AUTHOR_HANDOFF_BLOB: bbda55c93d8b1829d49a9d983e55ad3411432425
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_A1_A7_TECHNICAL_SOURCE_PARITY_20261116.md
-AUTHOR_A1_A7_BLOB: 29f58e7af9240a067ae30429299d4f1ebef203d6
+AUTHOR_A1_A7_BLOB: 2757c70af754144002aa9fa90ba404766b849c66
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_A1_A7_TECHNICAL_SOURCE_PARITY_20261116.md
-AUTHOR_METADATA_BLOB: 29f58e7af9240a067ae30429299d4f1ebef203d6
+AUTHOR_METADATA_BLOB: 2757c70af754144002aa9fa90ba404766b849c66
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 BLOCKERS: NONE
@@ -36,8 +36,8 @@ SOURCE_SCOPE: SGK_G10_KNTT_CHIX_B26_B27_PLUS_SGK_G11_KNTT_CHVIII_B28_B30
 
 ## Authoring Q01–Q18 source-locked clearance
 
-- **Single current learner:** original R11-named file maintained in place at Git blob `d4a501bce64003f3583aca947d429504530b72c0`, 9 Knowledge units, 10 standalone Ví dụ, 17 Vận dụng/Đối chiếu, 17 Practice, 3 Written/rubric, two original SVGs. This is authoring learning content, not an integrated runtime.
-- **Q18:** Current composite receipt SHA `b3204f8e8e1a43921c1039d362dca91f22321f8a` directly signs this source under historical effective `SLM-THPT-QUALITY-ONE v3.1.0`, grandfathered by owner-approved governance PR #909. It combines prior immutable full-topic author-math source evidence with current direct 37 canonical question/answer checks and 17/17 D6 remediation routes; ACADEMIC/PED Q18 are **AUTHOR_SELF_VERIFIED**, no independent reviewer PASS.
+- **Single current learner:** original R11-named file maintained in place at Git blob `74c572ca5778bb8308ab1fe7cb23dfa487858c53`, 9 Knowledge units, 10 standalone Ví dụ, 17 Vận dụng/Đối chiếu, 17 Practice, 3 Written/rubric, two original SVGs. This is authoring learning content, not an integrated runtime.
+- **Q18:** Current composite receipt SHA `2b37de03bb433536cf398bcb9a6de1403bac11c0` directly signs this source under historical effective `SLM-THPT-QUALITY-ONE v3.1.0`, grandfathered by owner-approved governance PR #909. It combines prior immutable full-topic author-math source evidence with current direct 37 canonical question/answer checks and 17/17 D6 remediation routes; ACADEMIC/PED Q18 are **AUTHOR_SELF_VERIFIED**, no independent reviewer PASS.
 - **Q15:** 37 unique canonical IDs and their exact role/outcome/version/source markers cross-matched to matrix `9d89151085df7bd01df86fc304675bf4d1f3a5fb`; 11 question-only public Selfcheck placements reuse existing IDs without duplicated answer/rubric, not an independent assessment.
 - **Q16:** `CLIENT_SELF_CHECK_NO_MASTERY`, no official Readiness, learner score, Mastery or private RD1 delivery. 17 original RD1 candidate bank stems/keys are owner-held outside public Git; only hash/count here.
 - Historical R10 and R11 manifests remain in `release-queue/archive/` with SUPERSEDED register history and never become parallel active ready items.
@@ -73,3 +73,6 @@ SOURCE_SCOPE: SGK_G10_KNTT_CHIX_B26_B27_PLUS_SGK_G11_KNTT_CHVIII_B28_B30
 - [ ] P2_DEVICE_UAT — Real-device iPhone/iPad Safari and parent acceptance pending after an authorized release.
 
 AUTHOR_SIGNOFF: TOP20_R12_AUTHORING_CONTENT_READY_ONLY_20261118
+
+
+**19/11 owner Delta A:** canonical original maths and exercises unchanged; active source/receipt/V2 SHA updated; STATE remains CONTENT_READY.
