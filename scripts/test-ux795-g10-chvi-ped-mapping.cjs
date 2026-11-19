@@ -26,8 +26,8 @@ for(const n of [15,16,17,18]){
  const ux=chviExampleUxReceiptRows().get("B"+n);
  if(ux)assert.equal(ux.baseline,editorial.candidate,"B"+n+" follow-on UX cannot rewrite historical PED/S1 source");
  const expected=candidateG10KnowledgeBlob(n);
- if(n!==15)assert.equal(expected,ux?ux.candidate:(editorial?editorial.candidate:historic),
-  "B"+n+" other ChVI source must remain at historical approved signed Q18 SHA");
+ if(n!==15&&n!==16)assert.equal(expected,ux?ux.candidate:(editorial?editorial.candidate:historic),
+  "B"+n+" unmodified ChVI source must remain at historical approved signed Q18 SHA");
  else{
   const latest=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHVI_B15_OWNER_Q18_KNOWLEDGE_ENRICHMENT_20261119.md"),"utf8");
