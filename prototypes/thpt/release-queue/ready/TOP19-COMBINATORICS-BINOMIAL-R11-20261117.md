@@ -16,12 +16,12 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 CURRENT_PR: #897 — AUTHORING DRAFT source-only, no website permission
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R10_LANGUAGE_LOCAL_REFERENTS_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: 7005bf1f839e566efb9abbc17eccfa92a0b41e63
+ACADEMIC_SOURCE_BLOB: 2cf19a19fc0f616b780846d41f7a1b9325363b80
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC19_R11_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md — AUTHOR_SELF_VERIFIED composite of immutable R09 + targeted R10/R11; NOT independent NotebookLM
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC19_R11_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md
-REVIEW_RECEIPT_BLOB: 3bd774c5113a6e030e989af59257598452a93fde
+REVIEW_RECEIPT_BLOB: 044b74b1cd45fc0cacf3bbcd343574e6a59ee1ef
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/TOP19-COMBINATORICS-BINOMIAL-R11-20261117_HANDOFF_V2.md
-AUTHOR_HANDOFF_BLOB: 72352bcaad0a16e10843e9bc9f6f80867c274b0c
+AUTHOR_HANDOFF_BLOB: 8d61d4514eab02260268d654452eca3f078defa4
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 BLOCKERS: NONE
@@ -34,9 +34,9 @@ RELEASE_AUTHORIZATION: NO
 RELEASE_STATUS: NOT_INTEGRATED_NOT_PUBLISHED
 
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_56_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_A1_A7_BLOB: dcd3564beba2bab3789e86231cdac71c452ce42c
+AUTHOR_A1_A7_BLOB: 94c2980bb48526987f384b4315fecbd548591e05
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_56_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_METADATA_BLOB: dcd3564beba2bab3789e86231cdac71c452ce42c
+AUTHOR_METADATA_BLOB: 94c2980bb48526987f384b4315fecbd548591e05
 
 ## R09 IMMUTABLE FULL MATH/PED BASELINE (inherited)
 
@@ -112,4 +112,7 @@ A single sentence in learner optional answer T02 was edited in the *existing* au
 
 ## Current 18/11 source SHA custody and decision
 
-Current source SHA `7005bf1f839e566efb9abbc17eccfa92a0b41e63`; canonical Q18 author self-QA `3bd774c5113a6e030e989af59257598452a93fde`; A1 `dcd3564beba2bab3789e86231cdac71c452ce42c`; V2 `72352bcaad0a16e10843e9bc9f6f80867c274b0c`; Q15 56 current source marker lines `a127267978ec61c857d5cc0cbcd8cb3f1dcc2f1e`. The former R11-named learner file was removed; its SHA and older ready claims are historical. Full original 14 outcomes and 25 G10 SGK source-owned items remain unchanged. Only seven valid Mathematics Knowledge recap lines added to the current learner source versus earlier signed R11 learner. `BLOCKERS=NONE` for AUTHORING subject/source custody after scoped author recheck; only Release AP/R/QA/owner permission remains. No website integration, independent held-out Readiness, RD1 public content, Mastery or deploy.
+Current source SHA `2cf19a19fc0f616b780846d41f7a1b9325363b80`; canonical Q18 author self-QA `044b74b1cd45fc0cacf3bbcd343574e6a59ee1ef`; A1 `94c2980bb48526987f384b4315fecbd548591e05`; V2 `8d61d4514eab02260268d654452eca3f078defa4`; Q15 56 current source marker lines `a127267978ec61c857d5cc0cbcd8cb3f1dcc2f1e`. The former R11-named learner file was removed; its SHA and older ready claims are historical. Full original 14 outcomes and 25 G10 SGK source-owned items remain unchanged. Only seven valid Mathematics Knowledge recap lines added to the current learner source versus earlier signed R11 learner. `BLOCKERS=NONE` for AUTHORING subject/source custody after scoped author recheck; only Release AP/R/QA/owner permission remains. No website integration, independent held-out Readiness, RD1 public content, Mastery or deploy.
+
+
+**19/11 owner copy-only ΔA:** 14 outcomes/56 canonical unchanged, SOURCE_LOCK current, STATE remains CONTENT_READY.
