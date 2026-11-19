@@ -371,8 +371,18 @@ function expectedG10KnowledgeBlob(lesson,legacy){
   const receipt=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHV_B13_S1_Q18_GOLDEN_ENRICHMENT_DELTA_R01_20261119.md"),"utf8");
   const f=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
-  assert.equal(calc(css),f("CANDIDATE_GOLDEN_CSS_BLOB"),
-   "B13 candidate CSS must match signed Q18 receipt without changing B11/B12");
+  const b14Marker="/* G10 ChV B14 · scoped X-C RELEASE Golden";
+  const b14At=cssFull.indexOf(b14Marker);
+  const b14Receipt=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHV_B14_Q18_GOLDEN_ENRICHMENT_DELTA_R01_20261119.md"),"utf8");
+  const b14f=k=>b14Receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert(b14At>0&&cssFull.indexOf(b14Marker,b14At+1)<0,"B14 only one scoped CSS appendix");
+  assert.equal(calc(Buffer.from(cssFull.slice(0,b14At-1))),f("CANDIDATE_GOLDEN_CSS_BLOB"),
+   "B13 owner-P2 style stays byte-identical prefix after B14");
+  assert.equal(b14f("G10_B01_B13_FROZEN_CSS_BLOB"),f("CANDIDATE_GOLDEN_CSS_BLOB"),
+   "B14 signed previous Golden CSS is B13 published baseline");
+  assert.equal(calc(css),b14f("CANDIDATE_GOLDEN_CSS_BLOB"),
+   "B14 final Golden appendix must match signed owner X-C candidate");
   const sourceText=fs.readFileSync(path.join(root,
    "docs/thpt-preview/sgk/chuong-iv/bai-11.md"),"utf8");
   assert.equal(calc(Buffer.from(sourceText)),g("B11_SOURCE_CURRENT_BLOB"),
