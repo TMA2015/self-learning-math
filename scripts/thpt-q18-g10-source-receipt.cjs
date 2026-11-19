@@ -698,7 +698,21 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    const revised=p2f("CANDIDATE_B15_SOURCE_BLOB");
    assert(/^[a-f0-9]{40}$/.test(revised||"")&&revised!==next,
     "B15 P2 must have real distinct source hash and signed delta");
-   return revised;
+   // Owner screenshot R02: flow and figure display; never rewrite R01/P2 receipts.
+   const visual=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHVI_B15_OWNER_P2_READABILITY_FIGURE_R02_20261119.md"),"utf8");
+   const vf=k=>visual.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(vf("PREVIOUS_B15_SOURCE_BLOB"),revised,
+    "B15 screenshot R02 must extend exactly the published P2 source");
+   assert.equal(vf("GOLDEN_STYLESHEET_BLOB"),p2f("EXISTING_GOLDEN_CSS_BLOB"),
+    "B15 figure enlargement reuses existing stylesheet, not a new Golden component");
+   assert.equal(vf("ORIGINAL_SVG_ASSET_BLOB"),
+    "8a3b090af3a1bb73c972c4cb0a3795bbbc7f2f31",
+    "B15 mapped SVG geometry/text unchanged");
+   const current=vf("CANDIDATE_B15_SOURCE_BLOB");
+   assert(/^[a-f0-9]{40}$/.test(current||"")&&current!==revised,
+    "B15 R02 must carry a real distinct exact Git source hash");
+   return current;
   }
   if(ux){
    assert(chvi&&!chiv&&!chv,name+" UX follow-on restricted to published Chapter VI source");

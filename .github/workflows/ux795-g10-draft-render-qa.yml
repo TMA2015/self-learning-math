@@ -225,6 +225,10 @@ jobs:
           # with canonical source in isolated integration-main QA only.
           test -f prototypes/thpt/ux795/G10_CHVI_B15_P2_EDITORIAL_NOTE_DELTA_R01_20261119.md
           cp prototypes/thpt/ux795/G10_CHVI_B15_P2_EDITORIAL_NOTE_DELTA_R01_20261119.md integration-main/prototypes/thpt/ux795/
+          # B15 owner screenshot R02: one canonical reading-flow source with
+          # existing Golden figure class; include its Q18 receipt in dry run.
+          test -f prototypes/thpt/ux795/G10_CHVI_B15_OWNER_P2_READABILITY_FIGURE_R02_20261119.md
+          cp prototypes/thpt/ux795/G10_CHVI_B15_OWNER_P2_READABILITY_FIGURE_R02_20261119.md integration-main/prototypes/thpt/ux795/
           cp scripts/test-ux795-g10-postmerge-headings.cjs integration-main/scripts/
           (
             cd integration-main

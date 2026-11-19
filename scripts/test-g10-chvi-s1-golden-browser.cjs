@@ -52,6 +52,24 @@ const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi t
      assert.equal(await blocks.nth(3).locator("[data-thpt-help-id]").count(),item.helps,
       where+" 5-step D6 cards in last tab");
      if(item.n===15){
+      // Owner P2: figure must reuse existing large concept-figure treatment.
+      await lab.nth(1).click();
+      const figImg=blocks.nth(1).locator("figure.thpt-r4-probability-figure.thpt-r4-concept-figure img");
+      assert.equal(await figImg.count(),1,where+" same original SVG inside existing Golden concept figure");
+      const scale=await figImg.evaluate(img=>{
+       const r=img.getBoundingClientRect(),fig=img.closest("figure"),a=document.querySelector("article.md-content__inner");
+       const body=Number.parseFloat(getComputedStyle(a).fontSize);
+       return {image:r.width,figure:fig.getBoundingClientRect().width,article:a.getBoundingClientRect().width,
+        viewport:window.innerWidth,textRatio:(20*r.width/960)/body};
+      });
+      assert(scale.image>0&&scale.image<=scale.article+3&&scale.figure<=scale.article+3,
+       where+" enlarged mapping figure must fit article without page overflow");
+      if(width>=820)assert(scale.textRatio>=.60,
+       where+" desktop SVG text should approach standard prose size, ratio="+scale.textRatio);
+      assert.equal(await blocks.nth(0).locator("strong").filter({hasText:"Vì sao chọn phương pháp này?"}).count(),0,
+       where+" no redundant pseudo-method headings");
+      assert.equal(await blocks.nth(0).locator("strong").filter({hasText:/^Ví dụ (?:1|2|bổ sung)/}).count(),0,
+       where+" Discovery has no mini-example heading before independent Vận dụng");
       assert.equal(await blocks.nth(1).locator(".thpt-r4-concept-card").count(),4,
        where+" four typed S1 concept/definition Golden cards");
       assert.equal(await blocks.nth(1).locator(".thpt-r4-rule-card").count(),1,

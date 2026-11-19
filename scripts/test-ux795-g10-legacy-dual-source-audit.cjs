@@ -89,12 +89,18 @@ for(const [name,chapter,num]of specs){
   if(b15P2)assert.equal(receiptField(b15P2,"PREVIOUS_B15_SOURCE_BLOB"),
    receiptField(b15Historical,"CANDIDATE_B15_SOURCE_BLOB"),
    "B15 owner P2 note delta must extend actual published prior source");
+  const b15R02=name==="B15"?read(root,
+   "prototypes/thpt/ux795/G10_CHVI_B15_OWNER_P2_READABILITY_FIGURE_R02_20261119.md").toString("utf8"):null;
+  if(b15R02)assert.equal(receiptField(b15R02,"PREVIOUS_B15_SOURCE_BLOB"),
+   receiptField(b15P2,"CANDIDATE_B15_SOURCE_BLOB"),
+   "B15 R02 must extend the owner accepted P2 SHA without overwriting it");
   const approvedSources=[row.main,row.candidate,...(editorial?[editorial.candidate]:[]),
    ...(chviReceiptRow?[chviReceiptRow.candidate]:[]),...(ux?[ux.candidate]:[]),
    ...(b09PublishedP1?[b09PublishedP1]:[]),
    ...(b09OwnerP2?[b09OwnerP2]:[]),
    ...(b15Historical?[receiptField(b15Historical,"CANDIDATE_B15_SOURCE_BLOB")]:[]),
-   ...(b15P2?[receiptField(b15P2,"CANDIDATE_B15_SOURCE_BLOB")]:[])];
+   ...(b15P2?[receiptField(b15P2,"CANDIDATE_B15_SOURCE_BLOB")]:[]),
+   ...(b15R02?[receiptField(b15R02,"CANDIDATE_B15_SOURCE_BLOB")]:[])];
   assert(approvedSources.includes(baselineSha),
    name+" unknown main baseline source drift outside immutable 27-row/Q18 chain");
  assert.equal(blob(candidateRaw),candidateG10KnowledgeBlob(num)||row.candidate,name+" exact approved historical/editorial source drift");

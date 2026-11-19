@@ -54,8 +54,15 @@ for(const n of [15,16,17,18]){
   const p2=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHVI_B15_P2_EDITORIAL_NOTE_DELTA_R01_20261119.md"),"utf8");
   const p2f=k=>p2.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
-  assert.equal(p2f("CANDIDATE_B15_SOURCE_BLOB"),expected,
-   "B15 final P2 source must match latest scoped A/B receipt");
+  assert.equal(p2f("CANDIDATE_B15_SOURCE_BLOB"),"cc0b8a2d8aad63fc360246b07122094498634779",
+   "B15 historical P2 source receipt must stay immutable");
+  const r02=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHVI_B15_OWNER_P2_READABILITY_FIGURE_R02_20261119.md"),"utf8");
+  const f02=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(f02("PREVIOUS_B15_SOURCE_BLOB"),p2f("CANDIDATE_B15_SOURCE_BLOB"),
+   "B15 new R02 must follow exact approved owner screenshot P2 source");
+  assert.equal(f02("CANDIDATE_B15_SOURCE_BLOB"),expected,
+   "B15 new R02 source must match latest signed SHA");
  }
  assert.equal(row.moved,tries[n],"B"+n+" historical First Try count");
  for(const key of ["data-thpt-first-try-id","data-thpt-help-id","data-outcome-id","data-thpt-fig-id"]){

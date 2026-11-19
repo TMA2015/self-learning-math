@@ -27,8 +27,6 @@
     Một quy tắc là hàm số trên tập \(D\) nếu mỗi đầu vào \(x\in D\) có **đúng một** giá trị đầu ra \(y\). Hai dòng trùng hệt \((x;y)\) không phá điều kiện; nhưng \((x;y_1)\) và \((x;y_2)\) với \(y_1\ne y_2\) thì phá. Sau trực giác ấy mới dùng kí hiệu \(y=f(x)\).
 
 
-    **Vì sao chọn phương pháp này?** Kiểm **theo từng đầu vào**, không yêu cầu mỗi đầu ra phải ứng với một đầu vào duy nhất. Nếu bảng có hai đầu ra khác nhau cho một đầu vào, mối liên hệ đó không phải một hàm số theo x.
-
     **Em vận dụng.** Bảng A gồm \((1;7),(3;2),(3;2)\); bảng B gồm \((1;7),(3;2),(3;4)\). Bảng nào biểu diễn hàm số \(y\) theo \(x\), vì sao?
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHVI-TRY01" data-outcome-id="B15_OUT_01" hidden></span>
@@ -50,7 +48,9 @@
     Tập xác định \(D\) là những \(x\) **được phép thay vào** biểu thức; tập giá trị \(T\) gồm mọi \(y\) thực sự **đạt được** sau khi thay \(x\in D\). Ví dụ căn thức vừa giới hạn đầu vào, vừa làm mọi đầu ra không âm; không lấy \(D=T\) chỉ vì có cùng kí hiệu tập.
 
 
-    **Vì sao chọn phương pháp này?** Tìm điều kiện xác định trước; để tìm T phải hỏi các giá trị f(x) có thể nhận, chứ không chép lại D. Không lấy căn của giá trị âm trong \(\mathbb R\).
+    Chẳng hạn, với \(f(x)=\sqrt{x-1}\), căn thức xác định khi \(x-1\ge0\), tức \(D=[1;+\infty)\). Đồng thời \(f(x)\ge0\) và mọi giá trị không âm đều nhận được; do đó \(T=[0;+\infty)\).
+
+    Với \(g(x)=\frac{x+1}{x-2}\), mẫu số phải khác \(0\), nên \(D=\mathbb{R}\setminus\{2\}\). Viết \(g(x)=1+\frac{3}{x-2}\), suy ra giá trị \(1\) không đạt được, còn mọi giá trị khác \(1\) đều đạt được; vậy \(T=\mathbb{R}\setminus\{1\}\).
 
     **Em vận dụng.** Với \(f(x)=\sqrt{x-2}\), hãy tìm tập xác định \(D\) và tập giá trị \(T\).
 
@@ -59,13 +59,6 @@
     ??? question "Đối chiếu"
 
         <div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> <span class="arithmatex">\(D=[2;+\infty)\)</span>, còn <span class="arithmatex">\(T=[0;+\infty)\)</span>.</p><p><strong>Vì sao:</strong> <span class="arithmatex">\(x-2\ge0\Rightarrow x\ge2\)</span>. Căn luôn không âm, bằng 0 khi x=2; với mọi y≥0, lấy x=y²+2 được f(x)=y.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
-
-
-
-    **Ví dụ 1.** Với \(f(x)=\sqrt{x-1}\), căn thức xác định khi \(x-1\ge0\), tức \(D=[1;+\infty)\). Đồng thời \(f(x)\ge0\) và mọi giá trị không âm đều nhận được; do đó \(T=[0;+\infty)\).
-
-    **Ví dụ 2.** Với \(g(x)=\frac{x+1}{x-2}\), mẫu số phải khác \(0\), nên \(D=\mathbb{R}\setminus\{2\}\). Viết \(g(x)=1+\frac{3}{x-2}\), suy ra giá trị \(1\) không đạt được, còn mọi giá trị khác \(1\) đều đạt được; vậy \(T=\mathbb{R}\setminus\{1\}\).
-
 
 
 
@@ -99,7 +92,19 @@
     Hàm từng đoạn dùng **những công thức khác nhau trên những miền không chồng mâu thuẫn**. Giá trị tại x=2 phải theo nhánh chứa dấu bằng; nếu chọn nhầm, chi phí tại ranh giới và dự đoán tiếp theo đều sai.
 
 
-    **Vì sao chọn phương pháp này?** Chọn nhánh trước, sau đó thay x. Kiểm điều kiện x≥0 và đơn vị; mô hình giả định không phải biểu giá thực tế.
+    Chẳng hạn, một dịch vụ giao hàng giả định tính phí \(C(x)\), đơn vị *nghìn đồng*, theo quãng đường \(x\) (km):
+
+    \[
+    C(x)=
+    \begin{cases}
+    8x,&0\le x\le2,\\
+    16+6(x-2),&x>2.
+    \end{cases}
+    \]
+
+    Với công thức này, \(C(1)=8\) (nghìn đồng), \(C(2)=16\) và \(C(3)=22\). Hai công thức dùng trên **hai khoảng khác nhau**, nhưng mỗi quãng đường \(x\ge0\) vẫn có **duy nhất một** mức phí. Tập xác định thực tế là \(D=[0;+\infty)\); tại \(x=2\) phải dùng nhánh \(0\le x\le2\), còn nhánh kia chỉ dùng khi \(x>2\). Để vẽ đồ thị, ta vẽ đoạn thẳng \(y=8x\) trên \([0;2]\) và tia thẳng \(y=6x+4\) trên \((2;+\infty)\); hai phần gặp nhau tại \((2;16)\).
+
+    Mô hình tính phí này là **ví dụ do dự án tự biên soạn**, không sao chép biểu giá trong SGK và không đại diện cho giá giao hàng thực tế. Đây là một ví dụ về cách biểu diễn phụ thuộc bằng công thức trên từng miền.
 
     **Em vận dụng.** Một dịch vụ tính \(C(x)=12\) (nghìn đồng) nếu \(0\le x\le3\), và \(C(x)=12+4(x-3)\) nếu \(x>3\). Tính \(C(3)\) và \(C(5)\) (nghìn đồng).
 
@@ -111,26 +116,6 @@
 
 
 
-    **Ví dụ bổ sung B — Hàm số cho theo từng khoảng.** Một dịch vụ giao hàng giả định tính phí \(C(x)\), đơn vị *nghìn đồng*, theo quãng đường \(x\) (km):
-
-    \[
-    C(x)=
-    \begin{cases}
-    8x,&0\le x\le2,\\
-    16+6(x-2),&x>2.
-    \end{cases}
-    \]
-
-    - \(C(1)=8\) (nghìn đồng); \(C(2)=16\); \(C(3)=22\).
-    - Hai công thức tương ứng với **hai khoảng khác nhau**, nhưng mọi quãng đường \(x\ge0\) đều có **duy nhất một** mức phí.
-    - Tập xác định thực tế \(D=[0;+\infty)\). Tại \(x=2\), dùng nhánh \(0\le x\le2\); nhánh còn lại chỉ dùng khi \(x>2\).
-    - Muốn vẽ đồ thị, vẽ đoạn thẳng \(y=8x\) trên \([0;2]\) và tia thẳng \(y=6x+4\) trên \((2;+\infty)\). Hai phần gặp nhau tại \((2;16)\).
-
-    *Lưu ý:* Mô hình tính phí này là **ví dụ do dự án tự biên soạn**, không sao chép biểu giá trong SGK và không đại diện cho giá giao hàng thực tế. Đây là một ví dụ về cách biểu diễn phụ thuộc bằng công thức trên từng miền.
-
-
-
-
     #### 1.2.5. Đồng biến phải xét trên đúng khoảng
 
     Nếu quãng đường theo thời gian chỉ tăng, ta gọi đại lượng đồng biến; nhưng có những đại lượng trước tăng sau giảm. Vậy không thể gắn nhãn tăng/giảm cho cả hàm chỉ bằng nhìn hai điểm bất kì.
@@ -139,8 +124,6 @@
 
     Trên một khoảng \(K\), đồng biến nghĩa là \(x_1<x_2\) trong K kéo theo \(f(x_1)<f(x_2)\). Nếu \(f(x_1)>f(x_2)\) thì nghịch biến. Khái niệm phụ thuộc vào **khoảng đang xét**, không phải tính chất tuyệt đối của mọi hàm trên \(\mathbb R\).
 
-
-    **Vì sao chọn phương pháp này?** Chỉ so hai đầu vào cùng thuộc K. Không suy đơn điệu trên toàn miền nếu một khoảng tăng và một khoảng giảm; không cần đạo hàm ở trình độ bài này.
 
     **Em vận dụng.** Với \(f(x)=3x+2\) trên \([-1;2]\), nếu \(x_1<x_2\) thì \(f(x_1)\) so với \(f(x_2)\) thế nào? Hàm đồng hay nghịch biến trên khoảng này?
 
@@ -164,7 +147,7 @@
 
     ### 2.1. Khái niệm hàm số
 
-    <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_CHVI_B15_FUNCTION_MAPPING_D5_R03.svg" loading="lazy" alt="So sánh hai bảng: cùng đầu vào x có một hay hai giá trị đầu ra khác nhau"><figcaption>Đọc từng đầu vào: lặp đúng cùng một giá trị khác với hai đầu ra mâu thuẫn.</figcaption></figure>
+    <figure class="thpt-r4-plot thpt-r4-probability-figure thpt-r4-concept-figure"><img src="../../../../assets/images/thpt/THPT_G10_CHVI_B15_FUNCTION_MAPPING_D5_R03.svg" loading="lazy" alt="So sánh hai bảng: cùng đầu vào x có một hay hai giá trị đầu ra khác nhau"><figcaption>Đọc từng đầu vào: lặp đúng cùng một giá trị khác với hai đầu ra mâu thuẫn.</figcaption></figure>
 
     **Cách đọc hình.** Lần theo mũi tên xuất phát từ từng giá trị đầu vào: mỗi đầu vào phải có **đúng một** đầu ra. Nhiều đầu vào có thể cùng dẫn đến một đầu ra; điều đó không làm mất tính chất hàm số.
 
