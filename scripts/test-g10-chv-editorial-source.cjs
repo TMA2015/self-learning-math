@@ -158,7 +158,7 @@ for(const n of [12,13,14]){
    "1.4. Thuật ngữ, kiến thức và kỹ năng"]:
    n===13?["1.1. Vì sao một bộ dữ liệu cần nhiều số đại diện?",
     "1.2. Khám phá cách xác định số đại diện","1.3. Tổng kết cách chọn số đặc trưng"]:
-   ["Cùng tìm hiểu","Ví dụ trực quan","Thuật ngữ, kiến thức và kỹ năng"],
+   ["1.1. Cùng tìm hiểu","1.2. Ví dụ trực quan","1.3. Thuật ngữ, kiến thức và kỹ năng"],
   "B"+n+" signed intuitive Discovery stages");
  assert.deepEqual([...official.matchAll(/^    ### ([^\n]+)/gm)].map(m=>m[1]),
   headings[n],"B"+n+" exact official S1 headings, no duplicate SGK");
