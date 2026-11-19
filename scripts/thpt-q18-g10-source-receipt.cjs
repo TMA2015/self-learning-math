@@ -362,7 +362,17 @@ function expectedG10KnowledgeBlob(lesson,legacy){
   assert.equal(calc(manuscript),g("B11_CANONICAL_CURRENT_BLOB"),
    "B11 same canonical file must equal new owner P2 Delta A SHA");
   const css=fs.readFileSync(path.join(root,"docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"));
-  assert.equal(calc(css),g("GOLDEN_CSS_CURRENT_BLOB"),"B11 shared Golden CSS equals exact B10 palette Delta A receipt");
+  const cssFull=css.toString("utf8"),b13Tail="/* G10 ChV B13 · exact B10/B12 Golden palette";
+  const tailAt=cssFull.indexOf(b13Tail);
+  assert(tailAt>0&&cssFull.indexOf(b13Tail,tailAt+1)<0,
+   "B13 Golden palette must be an isolated exact CSS append");
+  assert.equal(calc(Buffer.from(cssFull.slice(0,tailAt-1))),g("GOLDEN_CSS_CURRENT_BLOB"),
+   "B11/B12 approved Golden CSS must remain byte-exact prefix");
+  const receipt=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHV_B13_S1_Q18_GOLDEN_ENRICHMENT_DELTA_R01_20261119.md"),"utf8");
+  const f=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(calc(css),f("CANDIDATE_GOLDEN_CSS_BLOB"),
+   "B13 candidate CSS must match signed Q18 receipt without changing B11/B12");
   const sourceText=fs.readFileSync(path.join(root,
    "docs/thpt-preview/sgk/chuong-iv/bai-11.md"),"utf8");
   assert.equal(calc(Buffer.from(sourceText)),g("B11_SOURCE_CURRENT_BLOB"),
