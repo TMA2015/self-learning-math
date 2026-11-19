@@ -12,8 +12,6 @@ Thống kê giúp ta mô tả mức điển hình và mức dao động của m�
 
 ### 1.1. Dữ liệu đo và sai số
 
-**Khám phá kiến thức**
-
 Một bạn đếm đủ học sinh trong lớp, một bạn đo chiều dài bàn. Vì sao số đếm và số đo không có cùng mức chắc chắn?
 
 Một giá trị đọc từ dụng cụ có thể là **số gần đúng**, không phải số đúng. Khi biết số đúng \(\bar a\) và số ghi \(a\), sai số tuyệt đối \(\Delta=|\bar a-a|\); sai số tương đối theo số gần đúng \(a\ne0\) là \(\delta_a=\Delta/|a|\). Nếu chỉ biết độ chính xác \(d\), ta biết \(\Delta\le d\), **không** biết chắc sai số thực bằng \(d\). Quy tròn đến hàng phần mười theo quy tắc thông thường có chặn sai số \(0{,}05\) đơn vị. Ví dụ giá trị thật \(12{,}47\) mm và bản ghi \(12{,}5\) mm: \(\Delta=0{,}03\) mm, \(\delta_a=0{,}03/12{,}5=0{,}24\%\).
@@ -60,8 +58,6 @@ Làm tròn là thay giá trị bởi số thuận tiện hơn ở một hàng x�
 
 ### 1.2. Số trung bình và mốt
 
-**Khám phá kiến thức**
-
 Hai lớp có cùng điểm trung bình nhưng điểm xuất hiện nhiều nhất có thể khác. Em chọn đại lượng nào để mô tả giá trị phổ biến?
 
 Khi cần mô tả một mẫu, **số trung bình** cho biết mức chia đều: \(\bar x=(x_1+\cdots+x_n)/n\). Bảng tần số dùng \(\bar x=\sum f_iv_i/\sum f_i\). **Mốt** là giá trị xuất hiện nhiều nhất, có thể có nhiều mốt. Với 2,2,3,5,8, số trung bình là \(20/5=4\) nhưng mốt là 2. Chọn mốt khi hỏi giá trị phổ biến, trung bình khi quan tâm tổng mức phân bổ; trung bình nhạy với giá trị lớn bất thường.
@@ -102,8 +98,6 @@ Trung bình 4, mốt 3. Năm số có tổng bằng 20.
 
 ### 1.3. Trung vị và tứ phân vị
 
-**Khám phá kiến thức**
-
 Nếu đảo thứ tự nhập các giá trị trong mẫu, trung vị có thay đổi không? Hãy tự sắp xếp một dãy trước khi tính.
 
 Phải **sắp dãy theo thứ tự**. Trung vị là phần tử ở giữa khi \(n\) lẻ, hoặc trung bình của hai phần tử giữa khi \(n\) chẵn. \(Q_2\) là trung vị; theo cách chia nửa mẫu KNTT, khi \(n\) lẻ loại trung vị rồi lấy trung vị của hai nửa để có \(Q_1,Q_3\). Ví dụ dãy 1,2,2,4,5,8,10 có \(Me=4,Q_1=2,Q_3=8\). Đây là phân vị **dữ liệu thô**, không dùng công thức nội suy ghép nhóm.
@@ -143,8 +137,6 @@ Có 6 số: \(Me=(6+8)/2=7\); nửa dưới 2,4,6 có \(Q_1=4\), nửa trên 8,1
 </details>
 
 ### 1.4. Khoảng biến thiên, IQR và ngoại lệ
-
-**Khám phá kiến thức**
 
 Một số rất lớn tác động thế nào đến độ trải toàn mẫu và độ trải của nửa số liệu ở giữa?
 
@@ -195,8 +187,6 @@ Hàng rào \(Q_1-1{,}5IQR\) và \(Q_3+1{,}5IQR\) là quy tắc **phát hiện đ
 
 ### 1.5. Phương sai và độ lệch chuẩn
 
-**Khám phá kiến thức**
-
 Hai nhóm cùng trung bình nhưng mức ổn định khác nhau. Làm thế nào đo độ lệch mà các số âm và dương không triệt tiêu?
 
 Để so sánh hai nhóm có cùng trung bình, xét sai lệch từng giá trị so với \(\bar x\). **Phương sai mô tả** \(s^2=\frac1n\sum_{i=1}^n(x_i-\bar x)^2\), **độ lệch chuẩn** \(s=\sqrt{s^2}\). Dữ liệu đo bằng phút thì \(s\) tính phút, \(s^2\) tính phút bình phương. Ví dụ A=3,4,5 và B=1,4,7 đều có trung bình 4; \(s_A^2=2/3\), \(s_B^2=6\) nên A ổn định hơn. Không tự thay mẫu số \(n\) bằng \(n-1\) trong công thức SGK này.
@@ -241,8 +231,6 @@ Trung bình cùng bằng 5; \(s_A^2=2/3\), \(s_B^2=6\). A ít phân tán hơn.
 ## 2. Dữ liệu ghép nhóm và các ước lượng vị trí
 
 ### 2.1. Ghép nhóm: biên, độ rộng, tần số
-
-**Khám phá kiến thức**
 
 Khi số đo nằm đúng ranh giới hai khoảng, ta phải đếm thế nào để không tính hai lần?
 
@@ -293,8 +281,6 @@ Tần số 8 trên tổng 20 nghĩa là 40% mẫu nằm trong khoảng đó. Đi
 
 ### 2.2. Đại diện, trung bình nhóm và tích lũy
 
-**Khám phá kiến thức**
-
 Nếu hai nhóm có số quan sát khác nhau, khi tính trung bình từ trung điểm, hai nhóm có được đóng góp ngang nhau không?
 
 Trung điểm \(c_i=(a_i+b_i)/2\) đại diện nhóm, không phải giá trị đo của từng cá thể. Ước lượng trung bình nhóm \(\bar x_g=\sum f_i c_i/n\); tần số tích lũy \(F_i=\sum_{j\le i}f_j\). Với \([0,10):2,[10,20):3,[20,30):1\), trung điểm 5,15,25, tổng trọng số 80, \(n=6\): \(\bar x_g=80/6=40/3\). Tích lũy 2,5,6. Số trung bình này chỉ là **ước lượng từ bảng nhóm**.
@@ -338,8 +324,6 @@ Trung điểm 5,15,25; trung bình (5+30+25)/4=15, tích lũy 1,3,4.
 
 
 ### 2.3. Nội suy trung vị và tứ phân vị ghép nhóm
-
-**Khám phá kiến thức**
 
 Sau khi chỉ còn bảng tần số theo khoảng, ta biết trung vị thật hay phải ước lượng qua tần số tích lũy?
 
@@ -385,8 +369,6 @@ Tích lũy 5,10,20. \(Me=20,Q_1=10,Q_3=25\).
 </details>
 
 ### 2.4. Mốt ghép nhóm và giới hạn áp dụng
-
-**Khám phá kiến thức**
 
 Một nhóm có nhiều quan sát nhất có chắc cho biết mốt chính xác? Điều gì thay đổi nếu các nhóm rộng khác nhau?
 
@@ -438,8 +420,6 @@ Nhóm mốt [10,20); \(Mo=10+(6/(6+4))10=16\).
 
 ### 3.1. Khoảng biến thiên ghép nhóm
 
-**Khám phá kiến thức**
-
 Từ bảng ghép nhóm, ta còn biết giá trị nhỏ nhất/lớn nhất thật hay chỉ biết chúng nằm trong khoảng nào?
 
 Khi dữ liệu chỉ còn nhóm, ta không biết số nhỏ nhất/lớn nhất thật. Độ rộng phủ nhóm không rỗng từ \([a_1,b_1)\) tới \([a_k,b_k)\) cho ước lượng \(R_g=b_k-a_1\), **không** đồng nhất với khoảng biến thiên thật. Ví dụ [0,10):2,[10,20):4,[20,30):3 cho \(R_g=30\). Đây là khoảng phủ theo biên nhóm; các quan sát có thể nằm cách xa cận.
@@ -483,8 +463,6 @@ Chỉ một nhóm cực biên có vài quan sát cũng có thể khiến độ p
 
 ### 3.2. IQR ghép nhóm và so sánh
 
-**Khám phá kiến thức**
-
 Vì sao muốn mô tả nửa mẫu ở giữa phải dùng hai tứ phân vị thay vì chỉ nhìn biên xa nhất?
 
 Ước lượng \(Q_1,Q_3\) từ tần số tích lũy và nội suy như mảng trước, sau đó \(IQR_g=Q_3-Q_1\). Mẫu nhóm [0,10):4,[10,20):8,[20,30):8 có \(n=20\), tích lũy 4,12,20: \(Q_1=10+(5-4)10/8=11{,}25\), \(Q_3=20+(15-12)10/8=23{,}75\), \(IQR_g=12{,}5\). IQR nhóm là ước lượng, không dùng để xác định chắc chắn cá thể ngoại lệ khi thiếu dữ liệu thô.
@@ -527,8 +505,6 @@ Khi so độ ổn định hai mẫu, R cho biết độ phủ từ cực thấp 
 </details>
 
 ### 3.3. Phương sai và độ lệch chuẩn ghép nhóm
-
-**Khám phá kiến thức**
 
 Sau khi thay các quan sát bằng trung điểm nhóm, phương sai tính được có còn chính xác cho dữ liệu gốc không?
 
@@ -575,8 +551,6 @@ Các trung điểm 5,15,25; \(\bar x_g=15\); \(s_g^2=(100+0+100)/4=50\), \(s_g=5
 </details>
 
 ### 3.4. So sánh phân phối và giới hạn suy luận
-
-**Khám phá kiến thức**
 
 Một mẫu phân tán hơn có nhất thiết là lựa chọn tệ hơn? Cần biết mục tiêu so sánh nào trước khi nhận xét?
 
