@@ -168,6 +168,20 @@ Nếu chỉ thử x=0,1, hãy giải thích cho x₁,x₂ tùy ý; làm lại B�
 
 Đỉnh của parabol nằm ngoài miền có thể làm cực trị trên miền không?
 
+Để trả lời, hãy bắt đầu từ chính hàm số. Một hàm số bậc hai có dạng \(f(x)=ax^2+bx+c\) với \(a\ne0\), \(a,b,c\) là các số thực; khi chưa có ràng buộc của bài toán thực tế, tập xác định là toàn bộ \(\mathbb R\). Điều kiện \(a\ne0\) rất quan trọng: nếu \(a=0\) thì biểu thức chỉ còn bậc nhất hoặc hằng, không phải hàm số bậc hai. Đồ thị của hàm số bậc hai là một **parabol**. Để hiểu hình dạng của nó thay vì học thuộc chiều mở, ta có thể viết \(f(x)=a(x-h)^2+k\) với \(h=-\frac{b}{2a}\), \(k=f(h)=-\frac{b^2-4ac}{4a}\). Vì \((x-h)^2\ge0\), điểm \(I(h,k)\) là thấp nhất nếu \(a>0\), và cao nhất nếu \(a<0\).
+
+> **ĐỊNH NGHĨA — Hàm số bậc hai và parabol.** Hàm số bậc hai là hàm số \(y=ax^2+bx+c\), trong đó \(a,b,c\in\mathbb R\), \(a\ne0\), có tập xác định \(\mathbb R\). Đồ thị là parabol có đỉnh \(I\left(-\frac{b}{2a},-\frac{\Delta}{4a}\right)\), trục đối xứng \(x=-\frac{b}{2a}\), với \(\Delta=b^2-4ac\).
+
+Muốn **lập bảng giá trị và vẽ đồ thị**, trước tiên tìm đỉnh, rồi chọn các hoành độ ở hai phía trục đối xứng và tính tung độ tương ứng. Ví dụ với \(f(x)=x^2-2x=(x-1)^2-1\), bảng giá trị là:
+
+| \(x\) | \(-1\) | \(0\) | \(1\) | \(2\) | \(3\) |
+|---|---:|---:|---:|---:|---:|
+| \(f(x)\) | \(3\) | \(0\) | \(-1\) | \(0\) | \(3\) |
+
+Trên hệ trục, đánh dấu các điểm \((-1,3),(0,0),(1,-1),(2,0),(3,3)\), rồi nối bằng một **đường cong parabol trơn**, không nối thành các đoạn thẳng gấp khúc. Hai điểm có hoành độ cách đều \(x=1\) có cùng tung độ; đỉnh \((1,-1)\), trục đối xứng \(x=1\). Khi đọc hình, hãy nhận ra chiều mở, vị trí đỉnh, đường đối xứng và các điểm cắt trục nếu có; nếu bài toán chỉ cho phép \(x\) trong một miền \(D\), chỉ xét phần đồ thị tương ứng với \(D\).
+
+> **TÍNH CHẤT — Chiều mở và biến thiên của parabol.** Với \(f(x)=a(x-h)^2+k\), \(a\ne0\): nếu \(a>0\), parabol mở lên, hàm **nghịch biến** trên \((-\infty,h)\), **đồng biến** trên \((h,+\infty)\) và đạt giá trị nhỏ nhất \(k\) tại \(x=h\). Nếu \(a<0\), parabol mở xuống, hàm **đồng biến** trên \((-\infty,h)\), **nghịch biến** trên \((h,+\infty)\) và đạt giá trị lớn nhất \(k\) tại \(x=h\). Các kết luận cực trị toàn miền này chỉ áp dụng ngay khi đang xét toàn \(\mathbb R\); trên một miền ràng buộc phải kiểm đỉnh có được phép và so sánh biên.
+
 > **TÍNH CHẤT — Đỉnh parabol trên miền cho phép.** Với parabol, vị trí đỉnh cho biết cực trị trong miền được phép. Đỉnh của parabol có thể nằm ngoài miền khả thi nên không phải đáp án cực trị. Để xác định điều đó, cần xét bình phương không âm, khoảng/đoạn đóng và số nguyên. Hoàn phương ax²+bx+c=a(x−h)²+k (a≠0), h=−b/(2a), k=f(h). Đỉnh(h,k), trục đối xứng x=h. Khi tìm GTLN/GTNN trên D, luôn kiểm h có ở D không, so biên và các giá trị nguyên khả thi; không cần vội dùng đạo hàm.
 
 Chẳng hạn, f(x)=−(x−1)²+8 trên [2,5]: đỉnh ở1 bị loại. Hàm giảm trên miền, max f(2)=7, min f(5)=−8. Chọn kiểm miền trước công thức cực trị.
