@@ -44,6 +44,8 @@ button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visi
 canvas,svg{background:var(--slm-canvas)!important;border-color:var(--slm-border)!important}
 .canvaswrap,.d5-stage,.d5-graph,.pane,article,.field,.box,.panel,section{border-color:var(--slm-border)!important}
 .summary,.d5-results,.output,.result,.answer,.stats,.field{background:var(--slm-canvas)!important}
+.control select{width:100%;min-height:44px;border:1px solid #a2bfd2;border-radius:9px;padding:7px 10px;background:#fff;color:#183b54;font:inherit}
+.control select:focus-visible{outline:3px solid #1687b4;outline-offset:2px}
 </style>
 </head>
 <body>
@@ -53,7 +55,7 @@ canvas,svg{background:var(--slm-canvas)!important;border-color:var(--slm-border)
 <p id="predict"></p>
 <div class="controls" id="controls" aria-label="Thông số mô hình"></div>
 <div class="canvaswrap"><canvas id="plot" role="img" aria-label="Hình toán học thay đổi theo điều khiển. Nội dung kết quả luôn được mô tả bằng văn bản dưới hình."></canvas></div>
-<div class="legend"><span>Đường chính</span><span class="second">Đường so sánh</span><span class="marker">Điểm/tham số đang chọn</span></div>
+<div class="legend"><span>y=aˣ</span><span class="second">y=logₐ(x)</span><span class="marker">Trục đối xứng y=x</span></div>
 <div class="result" id="readout" aria-live="polite" role="status"></div>
 <div class="actions"><button id="reset" type="button">Đặt lại</button></div>
 <p id="apply"></p>
@@ -64,14 +66,16 @@ canvas,svg{background:var(--slm-canvas)!important;border-color:var(--slm-border)
 (function(){"use strict";
 var C={blue:"#1687b4",green:"#218f73",orange:"#e9922a",gray:"#94aab8",grid:"#e0edf3",ink:"#183b54",red:"#b64b41"};
 var specs={
-"SLM-TOP04-EXPLOG-01":{title:"Đổi cơ số để quan sát hàm mũ và logarit",intro:"Vẽ y=a^x và y=logₐ(x), đối xứng qua y=x, với a>0 và a≠1.",predict:"Dự đoán: khi chuyển a từ lớn hơn 1 sang nhỏ hơn 1, hai đường tăng hay giảm?",apply:"Vận dụng: so sánh log₂(4) và log₀․₅(4), nêu miền xác định.",reason:"Với a>1 hai hàm tăng; với 0<a<1 cả hai giảm. Logₐ(x) chỉ nhận x>0; a=1 không được phép. Hai hàm là hàm ngược, đối xứng qua y=x.",sliders:[["ai","Lựa chọn cơ số",0,4,1,3]]}
+"SLM-TOP04-EXPLOG-01":{title:"Đổi cơ số để quan sát hàm mũ và logarit",intro:"Vẽ y=a^x và y=logₐ(x), đối xứng qua y=x, với a>0 và a≠1.",predict:"Dự đoán: khi chuyển a từ lớn hơn 1 sang nhỏ hơn 1, hai đường tăng hay giảm?",apply:"Vận dụng: so sánh log₂(4) và log₀․₅(4), nêu miền xác định.",reason:"Với a>1 hai hàm tăng; với 0<a<1 cả hai giảm. Logₐ(x) chỉ nhận x>0; cơ số a>0 và a≠1. Hai hàm là hàm ngược và đối xứng qua y=x. Ví dụ log₂(4)=2 nhưng log₀․₅(4)=−2.",sliders:[["ai","Lựa chọn cơ số",0,4,1,3]]}
 };
 var id="SLM-TOP04-EXPLOG-01",S=specs[id];
 if(!S){document.getElementById("title").textContent="Không có mô hình với MODEL_ID này";document.getElementById("intro").textContent="Kiểm tra lại nguồn MODEL_ID canonical trong bản ghi placement.";document.querySelector("main").hidden=true;return}
 document.title="SLM · "+S.title;
 ["title","intro","predict","apply","reason"].forEach(function(k){document.getElementById(k).textContent=(k==="title"?S.title:k==="intro"?S.intro:k==="predict"?"Dự đoán: "+S.predict.replace(/^Dự đoán:\s*/,""):k==="apply"?S.apply:S.reason)});
 var host=document.getElementById("controls"),el={};
-S.sliders.forEach(function(c){var div=document.createElement("div");div.className="control";var label=document.createElement("label");label.htmlFor=c[0];label.textContent=c[1]+": ";var out=document.createElement("output");out.id="o-"+c[0];label.appendChild(out);var input=document.createElement("input");input.type="range";input.id=c[0];input.min=c[2];input.max=c[3];input.step=c[4];input.value=c[5];input.setAttribute("aria-label",c[1]);div.appendChild(label);div.appendChild(input);var limits=document.createElement("div");limits.className="limits";var a=document.createElement("span"),b=document.createElement("span");a.textContent=String(c[2]);b.textContent=String(c[3]);limits.appendChild(a);limits.appendChild(b);div.appendChild(limits);host.appendChild(div);el[c[0]]={input:input,out:out,initial:c[5]};});
+S.sliders.forEach(function(c){var div=document.createElement("div");div.className="control";var label=document.createElement("label");label.htmlFor=c[0];label.textContent=c[1]+": ";var out=document.createElement("output");out.id="o-"+c[0];label.appendChild(out);var input=document.createElement("select");input.id=c[0];input.setAttribute("aria-label","Chọn cơ số a hợp lệ");
+[.5,.7,1.3,2,3].forEach(function(base,index){var option=document.createElement("option");option.value=String(index);option.textContent="a = "+String(base).replace(".",",");input.appendChild(option)});
+input.value=String(c[5]);div.appendChild(label);div.appendChild(input);host.appendChild(div);el[c[0]]={input:input,out:out,initial:c[5]};});
 var canvas=document.getElementById("plot"),ctx=canvas.getContext("2d"),result=document.getElementById("readout"),dims={w:0,h:0},pending=false,interacted=false;
 function val(k){return Number(el[k].input.value)}
 function fmt(v){if(!Number.isFinite(v))return "không xác định";var n=Math.abs(v)<1e-10?0:Math.round(v*1000)/1000;return String(n).replace("-","−").replace(".",",")}
