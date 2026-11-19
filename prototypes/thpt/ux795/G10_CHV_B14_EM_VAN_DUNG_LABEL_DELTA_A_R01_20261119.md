@@ -16,7 +16,7 @@
 
 ## Đối chiếu byte-exact
 
-- Chỉ thay **ba** cụm `**Em tự thử.**` bằng `**Em vận dụng.**`, tại ba First Try `THPT-G10-CHV-TRY11`, `TRY12`, `TRY13`. Hai mục `TRY10` và `TRY14` vốn đã là “Em vận dụng.” và giữ nguyên.
+- Chỉ thay **ba** cụm `**Em tự thử.**` bằng `**Em vận dụng.**` trong **Markdown canonical**; bộ render Golden hiện hành đã chuyển nhãn `Em vận dụng.` thành **`Vận dụng.`** (đối chiếu trực tiếp HTML production trước sửa: TRY10 và TRY14 hiển thị `<strong>Vận dụng.</strong>`, TRY11–13 vẫn hiển thị `<strong>Em tự thử.</strong>`). Vì vậy browser QA cần xác nhận **5/5 nhãn `Vận dụng.`**, không đòi thấy tiền tố `Em` sau render. Tại ba First Try `THPT-G10-CHV-TRY11`, `TRY12`, `TRY13`. Hai mục `TRY10` và `TRY14` vốn đã là “Em vận dụng.” và giữ nguyên.
 - Dùng phép nghịch đảo `current.replaceAll("**Em vận dụng.**","**Em tự thử.**")` **không hợp lệ**, vì làm thay đổi cả hai nhãn đã đúng. Khi kiểm chứng phải khôi phục theo vị trí tương ứng TRY11/12/13, xác nhận đúng blob gốc và blob mới.
 - Nội dung các câu hỏi, điều kiện toán, lời giải, nút Đối chiếu, 5 `item_id`, 2 HELP, 3 ví dụ giải, 4 Golden tabs, 2 SVG, CSS, JS, canonical Core/Practice/Written, Final Submit/RD1 và Mastery bất biến.
 - Không sửa biên bản Q18 học thuật của PR #917, không yêu cầu review Academic/PED mới cho sửa nhãn hiển thị tương đương. `DELTA_A_UI` và source-lock riêng chỉ ghi nhận bản sau phát hành.
