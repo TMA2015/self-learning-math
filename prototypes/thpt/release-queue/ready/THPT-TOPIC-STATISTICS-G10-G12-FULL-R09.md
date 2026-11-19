@@ -1,5 +1,9 @@
+<!-- TOP22_S1_G10_B13_B14_FINAL_SCOPE_20261120 -->
+**20/11 owner-authorized AUTHORING Delta C:** Source `4ff6bfde83f55a1390661f11c71cc66873f3ecdb`, Q18 `ccdba12524d042242f6f157dbd0c5ee263b85729`, A1 `14611919df6208867ac7e63328593cfb05e5888b`, V2 `796d4a49a50d118ef5509d761549c820823bde96`: added two SGK notes B13 mode categorical and B14 n−1 alternate formula. 6/6 + 7/7 scoped math QA; 114 original canonical and all assessments unchanged. Current STATE remains CONTENT_READY, RELEASE scope/permissions unchanged.
+
+---
 <!-- S1_G10_B13_MODE_CONTENT_READY_DELTA_C_20261120 -->
-**20/11/2026 S1 G10 B13 Q01 Delta C:** Affected sole learner §1.2 corrects *equal-frequency raw-data samples have no mode*. Source SHA `a4436862afa8b34f65cb1b17c4d98f06b3cfb9e1`, Q18 `9a26089dddd090644e29cb4e48393792956302eb`, A1 `480df0b909baf1e8f4ca4aea8e8ffcad28f5e40b`, V2 `15d2ffa78f059db574a2dbdacda1f48462a84d0e`; math scoped author QA 6/6 PASS, no changed 114 Q15 IDs/answers/rubrics. Owner permits same CONTENT_READY after author-source improvement. Website RELEASE not claimed.
+**20/11/2026 S1 G10 B13 Q01 Delta C:** Affected sole learner §1.2 corrects *equal-frequency raw-data samples have no mode*. Source SHA `4ff6bfde83f55a1390661f11c71cc66873f3ecdb`, Q18 `ccdba12524d042242f6f157dbd0c5ee263b85729`, A1 `14611919df6208867ac7e63328593cfb05e5888b`, V2 `796d4a49a50d118ef5509d761549c820823bde96`; math scoped author QA 6/6 PASS, no changed 114 Q15 IDs/answers/rubrics. Owner permits same CONTENT_READY after author-source improvement. Website RELEASE not claimed.
 
 ---
 # Thống kê mô tả G10–G12 · AUTHORING CONTENT_READY R09 (CURRENT-SOURCE QA) (source-equivalent public scope)
@@ -17,10 +21,10 @@ AUTHOR_PR: 812
 CURRENT_PR: #812 Draft AUTHORING, no release or merge authorization
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md
-ACADEMIC_SOURCE_BLOB: a4436862afa8b34f65cb1b17c4d98f06b3cfb9e1
+ACADEMIC_SOURCE_BLOB: 4ff6bfde83f55a1390661f11c71cc66873f3ecdb
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC_STATISTICS_G10_G12_R09_AUTHOR_TECHNICAL_Q18_RECEIPT_20261116.md — exact source R09 technical AUTHOR_SELF_VERIFIED, NOT independent NotebookLM
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC_STATISTICS_G10_G12_R09_AUTHOR_TECHNICAL_Q18_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 9a26089dddd090644e29cb4e48393792956302eb
+REVIEW_RECEIPT_BLOB: ccdba12524d042242f6f157dbd0c5ee263b85729
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC-STATISTICS-G10-G12-FULL-R09_HANDOFF_V2_20261116.md
 PUBLIC_SOURCE_INDEX: prototypes/thpt/shared-items/Temp_TOPIC_STATISTICS_G10_G12_CANONICAL_SOURCE_INDEX_R00_20261111.md
 PUBLIC_SOURCE_INDEX_BLOB: 51a6e99587187838aea61c5c72108adae7874d1d
@@ -49,25 +53,25 @@ AUTHORING_Q18_DELTA: R06→R07 student prose ONLY; technical Final Submit/websit
 PREVIOUS_AUTHORING_SOURCE_BLOB: 12f3af42c2e6b0f316355dcedfc34ec8b6136694
 PREVIOUS_AUTHORING_RECEIPT_BLOB: b3a2836d6d0a339648347a82f4332f9a69439dfb
 
-AUTHOR_HANDOFF_BLOB: 15d2ffa78f059db574a2dbdacda1f48462a84d0e
+AUTHOR_HANDOFF_BLOB: 796d4a49a50d118ef5509d761549c820823bde96
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_SOURCE_EQUIVALENCE_114_Q15_20261116.md
-AUTHOR_A1_A7_BLOB: 480df0b909baf1e8f4ca4aea8e8ffcad28f5e40b
+AUTHOR_A1_A7_BLOB: 14611919df6208867ac7e63328593cfb05e5888b
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_SOURCE_EQUIVALENCE_114_Q15_20261116.md
-AUTHOR_METADATA_BLOB: 480df0b909baf1e8f4ca4aea8e8ffcad28f5e40b
+AUTHOR_METADATA_BLOB: 14611919df6208867ac7e63328593cfb05e5888b
 
 ## R09 CURRENT LEARNER SOURCE AND Q18 TECHNICAL EQUIVALENCE
 
-- One distinct source-specific AUTHORING CONTENT_READY packet for exact source `a4436862afa8b34f65cb1b17c4d98f06b3cfb9e1`, source commit `46f592584d0eff6ba61f652e4019f8a006c37ce1`. Original R07 academic source `e31771e0fb9347c8c242ec8ca9e8a91a1ab74ff6` and signed Q18 author receipt `40feca220c54fc0620ab113cc354e3d37a66088e` remain immutable in separate historical R07 ready/REGISTER row. Earlier R08 numbering-only source `85d7522affb779e7de28877903f7a77d4319afc7` was a non-ready candidate with reused R07 packet ID; untouched.
+- One distinct source-specific AUTHORING CONTENT_READY packet for exact source `4ff6bfde83f55a1390661f11c71cc66873f3ecdb`, source commit `46f592584d0eff6ba61f652e4019f8a006c37ce1`. Original R07 academic source `e31771e0fb9347c8c242ec8ca9e8a91a1ab74ff6` and signed Q18 author receipt `40feca220c54fc0620ab113cc354e3d37a66088e` remain immutable in separate historical R07 ready/REGISTER row. Earlier R08 numbering-only source `85d7522affb779e7de28877903f7a77d4319afc7` was a non-ready candidate with reused R07 packet ID; untouched.
 - R09 exact learner 3 pages, Knowledge **three subject math H2 / thirteen H3 lessons** with 13 original reasoned worked Ví dụ and 13 Vận dụng/Đối chiếu/D6, two original SVG unchanged. Practice **three H2 subject groups** now presents **114 complete source-exact public canonical questions/solutions** with **Bài luyện 1…114** continuous across the full Topic, not three repeated 1-based groups nor 114 H4 subheadings; original 19 Written rubrics untouched. Nine original public question-only Selfcheck stems unchanged, `CLIENT_SELF_CHECK_NO_MASTERY`.
-- Strict direct source parity R07→R09: **114/114 original canonical IDs/items/keys/solutions/rubrics** identical after removing heading/bold label markers, 13/13 Knowledge learner mathematics blocks and all nine Selfcheck prompts source-equivalent. One 114-row V2 `15d2ffa78f059db574a2dbdacda1f48462a84d0e`, source-specific technical Q18 receipt `9a26089dddd090644e29cb4e48393792956302eb`, source custody metadata `480df0b909baf1e8f4ca4aea8e8ffcad28f5e40b`; none of the 114 items becomes a new canonical record, no invented ninth private held-out assessment.
+- Strict direct source parity R07→R09: **114/114 original canonical IDs/items/keys/solutions/rubrics** identical after removing heading/bold label markers, 13/13 Knowledge learner mathematics blocks and all nine Selfcheck prompts source-equivalent. One 114-row V2 `796d4a49a50d118ef5509d761549c820823bde96`, source-specific technical Q18 receipt `ccdba12524d042242f6f157dbd0c5ee263b85729`, source custody metadata `14611919df6208867ac7e63328593cfb05e5888b`; none of the 114 items becomes a new canonical record, no invented ninth private held-out assessment.
 - Q18 mode AUTHOR_SELF_VERIFIED, DELTA_A_UI / DELTA_B_SOURCE_EQUIVALENT only; old R07 source math/PED self-review 21 direct checks is historical, no new independent NotebookLM R09 reviewer PASS. S1 G10 ChV, G11 ChIII, G12 ChIII source role unchanged, reviewer G11 metadata correction retained transparently.
 - No authorized owner Topic route, protected RD1 questions count =0, no Final Submit, official Readiness/Mastery, website Golden/MathJax/responsive AP1–AP5/R1–R5/P1–P2 or deployment. Draft PR remains AUTHORING.
 
 ## AUTHORING A1–A7 — kiểm thật nguồn công khai, không giả độc lập
 
-- [x] A1_SOURCE_SNAPSHOT — Current R09 exact student source blob `a4436862afa8b34f65cb1b17c4d98f06b3cfb9e1`, signed technical/source-equivalence Q18 `9a26089dddd090644e29cb4e48393792956302eb`, metadata `480df0b909baf1e8f4ca4aea8e8ffcad28f5e40b` and V2 `15d2ffa78f059db574a2dbdacda1f48462a84d0e`. 114/114 item content parity, 13 Knowledge lessons, 9 public selfchecks; R07 historical source and receipt untouched.
+- [x] A1_SOURCE_SNAPSHOT — Current R09 exact student source blob `4ff6bfde83f55a1390661f11c71cc66873f3ecdb`, signed technical/source-equivalence Q18 `ccdba12524d042242f6f157dbd0c5ee263b85729`, metadata `14611919df6208867ac7e63328593cfb05e5888b` and V2 `796d4a49a50d118ef5509d761549c820823bde96`. 114/114 item content parity, 13 Knowledge lessons, 9 public selfchecks; R07 historical source and receipt untouched.
 - [x] A2_SGK_SBT_SCOPE — S1 KNTT SGK/SBT G10 B12–14/G11 B08–09/G12 B09–10 printed pages as reviewer/source receipts; R06 did not reopen every raw PDF; G11 reviewer R2 wrong chapter reference is metadata only.
-- [x] A3_NOTEBOOKLM_VERDICT — Mandatory legacy checklist key: current R09 exact-source Q18 technical/author SELF_VERIFIED receipt `9a26089dddd090644e29cb4e48393792956302eb`, source-equivalence not independent NotebookLM PASS. Original R07 math/PED checks stay on immutable R07; no changed substantive math requiring new academic critique.
+- [x] A3_NOTEBOOKLM_VERDICT — Mandatory legacy checklist key: current R09 exact-source Q18 technical/author SELF_VERIFIED receipt `ccdba12524d042242f6f157dbd0c5ee263b85729`, source-equivalence not independent NotebookLM PASS. Original R07 math/PED checks stay on immutable R07; no changed substantive math requiring new academic critique.
 - [x] A4_ITEM_OUTCOME_IDS — 39/39 outcomes in 13 modules, 114 unique PUBLIC IDs (27 G10+5 new,32 G11+2 new,48 G12), each outcome ≥2 and mapped in V2; 9 public selfcheck placements reused.
 - [x] A5_D1_D6_SCOPE — 39 outcome-specific concept/method/limit notes, 13 standalone Ví dụ/Đề bài/Lời giải, 13 first tries and D6 routes, 2 accurate accessible SVGs, 19 original Written rubrics, no Topic Core.
 - [x] A6_DELTA_RESOLVED — R09 editorial Delta_A/Delta_B: three Knowledge math groups with 13 lessons, 114 learner Practice labels sequential (not H4), 114/114 original questions/options/solutions/rubrics and 9 selfcheck same. R07 prior academic self-QA is history, no new maths.
@@ -101,7 +105,7 @@ AUTHOR_METADATA_BLOB: 480df0b909baf1e8f4ca4aea8e8ffcad28f5e40b
 
 ## 18/11/2026 — single effective R09 and historical READY demotion
 
-- Only current learner Markdown is R09 path with source Git SHA `a4436862afa8b34f65cb1b17c4d98f06b3cfb9e1`; exact source-bound technical Q18 receipt `9a26089dddd090644e29cb4e48393792956302eb`, A1/Q15 `480df0b909baf1e8f4ca4aea8e8ffcad28f5e40b` and V2 `15d2ffa78f059db574a2dbdacda1f48462a84d0e`.
+- Only current learner Markdown is R09 path with source Git SHA `4ff6bfde83f55a1390661f11c71cc66873f3ecdb`; exact source-bound technical Q18 receipt `ccdba12524d042242f6f157dbd0c5ee263b85729`, A1/Q15 `14611919df6208867ac7e63328593cfb05e5888b` and V2 `796d4a49a50d118ef5509d761549c820823bde96`.
 - Historical R01/R06/R07 manifests were explicitly demoted to `STATE: SUPERSEDED` and are no longer active current `CONTENT_READY`. R09 was previously signed under a different source SHA; new 7 Written self-check instruction and 2 orientation-line changes are limited to source-equivalent Q14/Q16 prose; 114 public canonical mathematics and 9 no-Mastery public Selfcheck remain intact.
 - R09 state `IN_REVISION` until exact HEAD gate verifies this chain. Old Academic/PED signoff is not borrowed to claim a different snapshot. PDF-reader page offset is NONBLOCKING for mathematical correctness. No official assessment/merge/deploy.
 
