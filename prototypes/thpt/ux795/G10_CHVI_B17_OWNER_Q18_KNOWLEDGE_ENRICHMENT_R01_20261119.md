@@ -10,7 +10,7 @@
 **DELTA:** `DELTA_C_ACADEMIC_MATERIAL` for concept-first rationale and proof of sign theorem, learner prose and D6 explanations; `DELTA_A_UI` for five Vận dụng labels and more specific HELP headings.  
 **MAIN_BASE_COMMIT:** `15efa66fb964c5b8b014be44677290663c297686`  
 **BASELINE_PUBLISHED_B17_SOURCE_BLOB:** `1a3481ee2020f48e924dae5e8b4f5779b3a2d88b`  
-**CANDIDATE_B17_SOURCE_BLOB:** `4a54c34edc296237e447c97af53326a4ce78632a`  
+**CANDIDATE_B17_SOURCE_BLOB:** `524d55d5caa792ee3f44bb77bb5c3b2c723eed45`  
 **SOURCE_PATH:** `docs/thpt-preview/sgk/chuong-vi/bai-17.md` — same canonical source; no duplicate versioned student manuscript.  
 **UNMODIFIED_B17_REVIEWED_PUBLIC_BANK:** `docs/assets/javascripts/thpt-chvi-reviewed-formative-v1.js`, blob `1223d4c2b574433479c5d222dbeff363718ee4bb`.  
 **UNMODIFIED_SHARED_WRITTEN:** `docs/thpt-preview/thu-vien/tu-luan.md`, blob `d96deee9b440076954d6f44b3007ea083fdd6eb0`.  
@@ -21,7 +21,7 @@
 
 - **Tab 1 Khám phá:** Reworked introduction from parabol's position above/below `Ox` and `f(x)=0`, then demonstrates `(x-1)(x-3)` intervals. Keeps five separate student **Vận dụng** questions **before** five voluntary original answer disclosures and related D6; removes repetitive pseudo-method headings and sentence `Em có thể học các kiến thức tiền đề ngay trong bài.` without eliminating mathematical prerequisites.
 - **Tab 2 Kiến thức SGK:** Preserves both real 2.1/2.2 major headings, theorem + three `Δ` cases, two tables, the original B17 source figure `G10_B17_QUADRATIC_SIGN_R02.svg` and the introduction/answer conditions. New reasoning: for `Δ>0`, `a(x-x1)(x-x2)` gives outer sign `a`, inner opposite; `Δ=0` uses `a(x-x0)^2`; for `Δ<0`, square-completion proves constant sign `a` (strictly positive bracket). Updated guide to read graph symbols, zero endpoints and `a<0` sign reversal.
-- **Tab 3 Ví dụ:** preserves four original worked example topics and existing calculations/solutions, clarifies 18m fence's domain `0<x<9`, threshold and endpoint check `S(3)=S(6)=36`, and clarifies why fixed `a=1` allows `Δ(m)<0` for strictly positive for every real `x`.
+- **Tab 3 Ví dụ:** preserves four original worked example topics and existing calculations/solutions, clarifies 18m fence's domain `0<x<9`, threshold and in-solution endpoint verification `S(3)=S(6)=36`, and clarifies why fixed `a=1` allows `Δ(m)<0` for strictly positive for every real `x`.
 - **Tab 4 Lỗi thường gặp:** five original `HELP-G10-CHVI-TRY11..15` with unique specific headings and learner-specific self-diagnosis. Math, recognition of cause, original correction methods and original canonical return links retained; no redundant trailing three mistakes duplicating HELP.
 - **Q15:** five `THPT-G10-CHVI-TRY11..15` and five HELP IDs preserved in order, **all original closed-answer HTML strings exactly unchanged**, original solution/exam identities untouched. B17 public bank remains six original reviewed canonical formative items (2 Core, 4 Practice), and the two original Written/Anchor ID + rubrics remain unchanged. No self-check item cloned, no Topic source imported.
 - **Q16:** neither Final Submit route nor Readiness/RD1, answer keys, Firebase, learner history, scores, Mastery, Gemini or shared runtime changed. First Try answers remain voluntary closed `??? question "Đối chiếu"`; existing non-assessment Practice remains formative-only.
