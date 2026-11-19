@@ -310,9 +310,9 @@ for(const [lesson,row] of rows){
   assert.equal(blob(css.toString("utf8").slice(0,endB09Css)),f("R03_CSS_BLOB"),
    "B09 original CSS must match exact owner P2 prefix");
   const cssText=css.toString("utf8"),marker="/* G10 Chapter IV B09 R03";
-  const at=cssText.indexOf(b13CssMarker);
-  assert(at>0&&cssText.indexOf(b13CssMarker,at+1)<0,"B09 one CSS append only");
-  assert.equal(blob(cssText.slice(0,at-1)),f("CSS_BASELINE_BLOB"),
+  const b13StyleOffset=cssText.indexOf(b13CssMarker);
+  assert(b13StyleOffset>0&&cssText.indexOf(b13CssMarker,b13StyleOffset+1)<0,"B09 one CSS append only");
+  assert.equal(blob(cssText.slice(0,b13StyleOffset-1)),f("CSS_BASELINE_BLOB"),
    "All owner P2-accepted B01–B08 CSS bytes must remain identical");
   const svg=fs.readFileSync(path.join(root,
    "docs/assets/images/thpt/THPT_G10_B09_DECOMPOSITION_TWO_DIRECTIONS_D5_R03.svg"));
