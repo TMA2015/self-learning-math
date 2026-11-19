@@ -392,8 +392,21 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    "B14 fully published CSS must remain exact frozen prefix before B15");
   assert.equal(v15("ORIGINAL_ACCEPTED_GOLDEN_CSS_BLOB"),b14f("CANDIDATE_GOLDEN_CSS_BLOB"),
    "B15 proposed scoped CSS must extend B14 baseline");
-  assert.equal(calc(css),v15("CANDIDATE_SCOPED_GOLDEN_CSS_BLOB"),
-   "B15 scoped final CSS matches Q18 candidate SHA");
+  const b16Mark="/* G10 ChVI B16 · scoped Golden only for canonical TRY06";
+  const atB16=cssFull.indexOf(b16Mark);
+  const b15Prefix=atB16>atB15?Buffer.from(cssFull.slice(0,atB16-1)):css;
+  assert.equal(calc(b15Prefix),v15("CANDIDATE_SCOPED_GOLDEN_CSS_BLOB"),
+   "B15 approved CSS ancestor matches immutable signed Q18");
+  if(atB16>atB15){
+   assert(cssFull.indexOf(b16Mark,atB16+1)<0,"B16 CSS append must exist once");
+   const receipt16=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHVI_B16_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261119.md"),"utf8");
+   const f16=k=>receipt16.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(f16("PREVIOUS_OWNER_P2_GOLDEN_CSS_BLOB"),v15("CANDIDATE_SCOPED_GOLDEN_CSS_BLOB"),
+    "B16 CSS must extend B15 approved prefix");
+   assert.equal(calc(css),f16("CANDIDATE_SCOPED_GOLDEN_CSS_BLOB"),
+    "B16 current CSS must match signed scoped Q18 candidate");
+  }
   const sourceText=fs.readFileSync(path.join(root,
    "docs/thpt-preview/sgk/chuong-iv/bai-11.md"),"utf8");
   assert.equal(calc(Buffer.from(sourceText)),g("B11_SOURCE_CURRENT_BLOB"),
@@ -573,8 +586,20 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    const b15f=k=>b15.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
    assert.equal(b15f("ORIGINAL_ACCEPTED_GOLDEN_CSS_BLOB"),cssNext,
     "B15 receipt must chain to B14 owner-P2 CSS");
-   assert.equal(blob(css),b15f("CANDIDATE_SCOPED_GOLDEN_CSS_BLOB"),
-    "B15 scoped CSS must match signed Q18 candidate");
+   const b16Mark="/* G10 ChVI B16 · scoped Golden only for canonical TRY06";
+   const at16=full.indexOf(b16Mark);
+   const b15End=at16>atB15?Buffer.from(full.slice(0,at16-1)):css;
+   assert.equal(blob(b15End),b15f("CANDIDATE_SCOPED_GOLDEN_CSS_BLOB"),
+    "B15 scoped CSS ancestor must match signed Q18 candidate");
+   if(at16>atB15){
+    const r16=fs.readFileSync(path.join(root,
+     "prototypes/thpt/ux795/G10_CHVI_B16_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261119.md"),"utf8");
+    const f16=k=>r16.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    assert.equal(f16("PREVIOUS_OWNER_P2_GOLDEN_CSS_BLOB"),b15f("CANDIDATE_SCOPED_GOLDEN_CSS_BLOB"),
+     "B16 must extend B15 approved prefix");
+    assert.equal(blob(css),f16("CANDIDATE_SCOPED_GOLDEN_CSS_BLOB"),
+     "B16 CSS exact Q18 scoped candidate SHA");
+   }
    const labelReceipt=fs.readFileSync(path.join(root,
     "prototypes/thpt/ux795/G10_CHV_B14_EM_VAN_DUNG_LABEL_DELTA_A_R01_20261119.md"),"utf8");
    const labelField=k=>labelReceipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
@@ -699,6 +724,23 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    assert(/^[a-f0-9]{40}$/.test(revised||"")&&revised!==next,
     "B15 P2 must have real distinct source hash and signed delta");
    return revised;
+  }
+  if(name==="B16"){
+   assert(ux&&chvi&&!chiv&&!chv,"B16 current source must extend exact historical ChVI receipt");
+   const r16=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHVI_B16_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261119.md"),"utf8");
+   const f16=k=>r16.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(f16("BASELINE_PUBLISHED_B16_SOURCE_BLOB"),ux.candidate,
+    "B16 authoring must extend immutable previously published baseline");
+   assert.equal(f16("PREVIOUS_OWNER_P2_GOLDEN_CSS_BLOB"),
+    "4af85dd38d02ed55b29daa6713bfbc892f0d7078",
+    "B16 CSS approved B15 root unchanged");
+   const next16=f16("CANDIDATE_B16_SOURCE_BLOB");
+   assert(/^[a-f0-9]{40}$/.test(next16||"")&&next16!==ux.candidate,
+    "B16 candidate SHA must be a distinct actual source from signed receipt");
+   assert(r16.includes("DELTA_C_ACADEMIC_MATERIAL")&&r16.includes("B16_OUT_05"),
+    "B16 material revision requires outcome-specific owner source receipt");
+   return next16;
   }
   if(ux){
    assert(chvi&&!chiv&&!chv,name+" UX follow-on restricted to published Chapter VI source");
