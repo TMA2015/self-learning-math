@@ -44,6 +44,11 @@ button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visi
 canvas,svg{background:var(--slm-canvas)!important;border-color:var(--slm-border)!important}
 .canvaswrap,.d5-stage,.d5-graph,.pane,article,.field,.box,.panel,section{border-color:var(--slm-border)!important}
 .summary,.d5-results,.output,.result,.answer,.stats,.field{background:var(--slm-canvas)!important}
+.box-net-figure{margin:10px auto 14px;max-width:340px}
+.box-net-figure svg{display:block;width:100%;height:auto;max-height:300px;margin:auto}
+.box-net-figure figcaption{text-align:center;font-size:.92rem;color:#526f81;line-height:1.5}
+.box-net-figure .cut{fill:#fff;stroke:#bb6d54;stroke-width:1.5;stroke-dasharray:4 3}
+.box-net-figure .fold{stroke:#187b72;stroke-width:1.8;stroke-dasharray:5 4}
 </style>
 </head>
 <body>
@@ -52,9 +57,23 @@ canvas,svg{background:var(--slm-canvas)!important;border-color:var(--slm-border)
 <main>
 <p id="predict"></p>
 <div class="controls" id="controls" aria-label="Thông số mô hình"></div>
-<div class="canvaswrap"><canvas id="plot" role="img" aria-label="Hình toán học thay đổi theo điều khiển. Nội dung kết quả luôn được mô tả bằng văn bản dưới hình."></canvas></div>
-<div class="legend"><span>Đường chính</span><span class="second">Đường so sánh</span><span class="marker">Điểm/tham số đang chọn</span></div>
-<div class="result" id="readout" aria-live="polite" role="status"></div>
+<figure class="box-net-figure" aria-label="Tấm vuông 12 cm và các hình vuông bị cắt ở bốn góc">
+<svg id="box-net" viewBox="0 0 280 280" role="img" aria-labelledby="net-title net-desc">
+<title id="net-title">Hình triển khai hộp mở nắp khi cắt bốn góc tấm vuông</title>
+<desc id="net-desc">Tấm vuông 12 nhân 12 centimet, cắt bốn hình vuông cạnh x, phần chính giữa là đáy hộp cạnh 12 trừ 2x.</desc>
+<rect x="30" y="30" width="220" height="220" rx="1" fill="#eaf4fa" stroke="#19729c" stroke-width="2"/>
+<rect id="cut-tl" class="cut" x="30" y="30" width="36.7" height="36.7"/>
+<rect id="cut-tr" class="cut" x="213.3" y="30" width="36.7" height="36.7"/>
+<rect id="cut-bl" class="cut" x="30" y="213.3" width="36.7" height="36.7"/>
+<rect id="cut-br" class="cut" x="213.3" y="213.3" width="36.7" height="36.7"/>
+<rect id="net-base" x="66.7" y="66.7" width="146.6" height="146.6" fill="#d2f1e7" stroke="#218f73" stroke-width="2"/>
+<text x="30" y="21" font-size="12" fill="#183b54">Tấm vuông 12 cm × 12 cm</text>
+</svg>
+<figcaption id="net-caption">Bốn góc cắt cạnh x; phần giữa là đáy hộp.</figcaption>
+</figure>
+<div class="canvaswrap"><canvas id="plot" role="img" aria-label="Đồ thị thể tích V(x), với 0<x<6. Điểm màu cam biểu diễn giá trị x đang thử; đối chiếu số liệu dưới hình."></canvas></div>
+<div class="legend"><span>Thể tích V(x)</span><span class="second">Vị trí cực đại x=2</span><span class="marker">Giá trị x đang chọn</span></div>
+<details class="result" id="numeric-check"><summary>Đối chiếu thể tích và vị trí cực đại</summary><div id="readout" aria-live="polite" role="status"></div></details>
 <div class="actions"><button id="reset" type="button">Đặt lại</button></div>
 <p id="apply"></p>
 <details id="compare"><summary>Đối chiếu · Vì sao có kết quả này?</summary><p id="reason"></p></details>
@@ -86,13 +105,21 @@ function curve(g,f,a,b,color,width){ctx.beginPath();ctx.strokeStyle=color||C.blu
 function draw(){init();var x,k,g,i,y,z,n,b,p,alpha,r,t,sol,roots,theta,dx,estimate,exact,ns;Object.keys(el).forEach(function(key){out(key)});
 switch(id){
 case "SLM-TOP10-BOX-01":
-x=val("x");g=graph(0,6,0,140);curve(g,function(t){return t*Math.pow(12-2*t,2)},0,6,C.blue);dot(g.X(x),g.Y(x*(12-2*x)*(12-2*x)),C.orange);line(g.X(2),g.Y(0),g.X(2),g.Y(128),C.green,1.5,[5,5]);g.end();setText("x="+fmt(x)+" cm; đáy hộp cạnh "+fmt(12-2*x)+" cm; cao "+fmt(x)+" cm; thể tích V="+fmt(x*(12-2*x)*(12-2*x))+" cm³. Điểm cực đại: x=2 cm cho 128 cm³.");break;
+x=val("x");
+var side=12-2*x,cut=x*220/12,edge=220-2*cut,baseSvg=document.getElementById("net-base");
+baseSvg.setAttribute("x",30+cut);baseSvg.setAttribute("y",30+cut);baseSvg.setAttribute("width",edge);baseSvg.setAttribute("height",edge);
+[["cut-tl",30,30],["cut-tr",250-cut,30],["cut-bl",30,250-cut],["cut-br",250-cut,250-cut]].forEach(function(square){
+ var q=document.getElementById(square[0]);q.setAttribute("x",square[1]);q.setAttribute("y",square[2]);q.setAttribute("width",cut);q.setAttribute("height",cut);
+});
+document.getElementById("net-caption").textContent="Cắt bốn góc, mỗi góc cạnh "+fmt(x)+" cm. Đáy hộp: "+fmt(side)+" × "+fmt(side)+" cm; chiều cao khi gấp: "+fmt(x)+" cm.";
+g=graph(0,6,0,140);curve(g,function(t){return t*Math.pow(12-2*t,2)},0,6,C.blue);dot(g.X(x),g.Y(x*side*side),C.orange);line(g.X(2),g.Y(0),g.X(2),g.Y(128),C.green,1.5,[5,5]);g.end();
+setText("x="+fmt(x)+" cm, 0<x<6 để hộp không suy biến. Đáy hộp cạnh "+fmt(side)+" cm; cao "+fmt(x)+" cm. V=x(12−2x)²="+fmt(x*side*side)+" cm³. V′(x)=(12−2x)(12−6x): dương khi 0<x<2, âm khi 2<x<6. V lớn nhất ở x=2, bằng 128 cm³. Khi x→0⁺ hoặc x→6⁻, thể tích tiến về 0.");break;
 }
 if(!interacted){result.textContent="Hãy dự đoán kết quả trước, sau đó thay đổi ít nhất một thanh trượt hoặc bấm giá trị bằng bàn phím để quan sát."}
 }
-function schedule(){interacted=true;if(pending)return;pending=true;window.requestAnimationFrame(function(){pending=false;draw()})}
+function schedule(){document.getElementById("numeric-check").open=false;document.getElementById("compare").open=false;interacted=true;if(pending)return;pending=true;window.requestAnimationFrame(function(){pending=false;draw()})}
 Object.keys(el).forEach(function(k){el[k].input.addEventListener("input",schedule);el[k].input.addEventListener("change",schedule)});
-document.getElementById("reset").addEventListener("click",function(){Object.keys(el).forEach(function(k){el[k].input.value=el[k].initial});document.getElementById("compare").open=false;interacted=false;draw()});
+document.getElementById("reset").addEventListener("click",function(){Object.keys(el).forEach(function(k){el[k].input.value=el[k].initial});document.getElementById("compare").open=false;document.getElementById("numeric-check").open=false;interacted=false;draw()});
 window.addEventListener("resize",schedule);draw();
 })();
 </script>
