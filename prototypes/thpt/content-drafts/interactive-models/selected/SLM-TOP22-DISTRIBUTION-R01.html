@@ -42,8 +42,8 @@ canvas,svg{background:var(--slm-canvas)!important;border-color:var(--slm-border)
 <p class="small">7 quan sát nguyên, mỗi giá trị từ 1 đến 20. Tứ phân vị KNTT với n lẻ: bỏ giá trị trung vị rồi lấy trung vị của hai nửa.</p></section>
 <section class="panel"><h2>Quan sát biểu đồ chấm</h2><div class="chart"><svg viewBox="0 0 705 218" role="img" aria-labelledby="dot-title dot-desc">
 <title id="dot-title">Biểu đồ chấm dữ liệu thô</title><desc id="dot-desc">Bảy dấu chấm, trùng giá trị thì xếp chồng. Số liệu được viết bên dưới.</desc>
-<line x1="42" y1="168" x2="685" y2="168" stroke="#668698" stroke-width="2"/><g id="ticks"></g><g id="dots"></g><text x="300" y="214" font-size="17" fill="#50697b">Giá trị</text>
-</svg></div><div class="numbers">
+<line x1="42" y1="168" x2="685" y2="168" stroke="#668698" stroke-width="2"/><g id="ticks"></g><g id="stat-markers"></g><g id="dots"></g><text x="300" y="214" font-size="17" fill="#50697b">Giá trị</text>
+</svg></div><p class="small"><strong>Đường tím đứt:</strong> số trung bình; <strong>đường xanh lá đứt:</strong> trung vị. Chấm cam: giá trị ngoài hàng rào 1,5×IQR (không có nghĩa số liệu nhập sai).</p><div class="numbers">
 <div class="value"><small>Trung bình</small><b id="mean"></b></div><div class="value"><small>Trung vị</small><b id="median"></b></div>
 <div class="value"><small>Khoảng biến thiên</small><b id="spread"></b></div><div class="value"><small>Q1 · Q3 · IQR</small><b id="quartiles"></b></div>
 </div></section></div><p id="stats-explain" class="observe" aria-live="polite"></p>
@@ -66,10 +66,18 @@ for(let i=1;i<=20;i++){const x=45+(i-1)*33.1;$("ticks").appendChild(el("line",{x
 function stats(){
  const sorted=data.slice().sort((a,b)=>a-b),mean=data.reduce((a,b)=>a+b,0)/7,med=sorted[3],q1=sorted[1],q3=sorted[5],iqr=q3-q1,spread=sorted[6]-sorted[0];
  const lo=q1-1.5*iqr,hi=q3+1.5*iqr,counts={};$("dots").replaceChildren();
+ const xPos=v=>45+(v-1)*33.1,markers=$("stat-markers");markers.replaceChildren();
+ const addMarker=(v,color,dash,caption,y)=>{const px=xPos(v);
+  markers.appendChild(el("line",{x1:px,y1:44,x2:px,y2:168,stroke:color,"stroke-width":2,"stroke-dasharray":dash}));
+  markers.appendChild(el("text",{x:Math.max(9,Math.min(575,px+7)),y,fill:color,"font-size":14,"font-weight":700},caption));
+ };
+ addMarker(mean,"#8555a5","5 4","TB "+fmt(mean),17);
+ addMarker(med,"#218f73","3 5","Me "+fmt(med),36);
  sorted.forEach(v=>{const layer=counts[v]||0;counts[v]=layer+1;const out=v<lo||v>hi;$("dots").appendChild(el("circle",{cx:45+(v-1)*33.1,cy:152-17*layer,r:11,fill:out?"#e9922a":"#1687b4",stroke:"white","stroke-width":2}));});
  data.forEach((v,i)=>$("out-"+i).textContent=v);
  $("mean").textContent=fmt(mean);$("median").textContent=fmt(med);$("spread").textContent=fmt(spread);$("quartiles").textContent=[q1,q3,iqr].map(fmt).join(" · ");
  const exceptions=sorted.filter(v=>v<lo||v>hi);
+ $("dot-desc").textContent="Biểu đồ chấm gồm 7 giá trị: "+sorted.join(", ")+". Các chấm trùng xếp chồng. Đường trung bình tại "+fmt(mean)+"; đường trung vị tại "+fmt(med)+". "+exceptions.length+" quan sát ngoài hàng rào 1,5×IQR.";
  $("stats-explain").textContent="Dãy tăng: "+sorted.join(", ")+". Trung bình "+fmt(mean)+"; Me "+fmt(med)+"; Q1 "+q1+"; Q3 "+q3+"; hàng rào ["+fmt(lo)+"; "+fmt(hi)+"]. "+(exceptions.length?"Giá trị ngoài rào: "+exceptions.join(", ")+".":"Không có giá trị ngoài rào.");
 }
 function setData(vals){vals.forEach((v,i)=>{data[i]=v;$("data-"+i).value=v;});stats();}
