@@ -7,8 +7,8 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: c843613b88d106a18086d91ff7d0ada499398033
-ACADEMIC_SOURCE_BLOB: c843613b88d106a18086d91ff7d0ada499398033
+SOURCE_BLOB: 41b070e06267a5486f00ff977e164c4198f387d4
+ACADEMIC_SOURCE_BLOB: 41b070e06267a5486f00ff977e164c4198f387d4
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R05_FULL_LEARNER_VISIBLE_31_CANONICAL_20261115.md
 PREVIOUS_SOURCE_BLOB: 05e9675a7dca802aa9540a96a46d76d013055d8b
 PREVIOUS_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC03_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
@@ -23,7 +23,7 @@ ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
-AUTHOR_SIGNOFF: TOP03_ONE_DRAFT_Q18_FORMAL_SOURCE_c843613b88d106a18086d91ff7d0ada499398033
+AUTHOR_SIGNOFF: TOP03_ONE_DRAFT_Q18_FORMAL_SOURCE_41b070e06267a5486f00ff977e164c4198f387d4
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_IMPORTED: 0
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
@@ -56,7 +56,7 @@ Prior R06 source blob 9cc738526f95e68a31f99409d8672aff44f5c8a9 remains a histori
 
 ## 18/11/2026 · Q03/Q09–Q14 scoped true-formal-knowledge check
 
-- CURRENT_SOURCE_BLOB: c843613b88d106a18086d91ff7d0ada499398033; previous effective learner blob daeeb5d571d120b31265f8c603a76049a1f2c78c remains immutable and documents 11 D6 navigation corrections plus one independent Example repair.
+- CURRENT_SOURCE_BLOB: 41b070e06267a5486f00ff977e164c4198f387d4; previous effective learner blob daeeb5d571d120b31265f8c603a76049a1f2c78c remains immutable and documents 11 D6 navigation corrections plus one independent Example repair.
 - TOP03-O01: two equations are equivalent only when their solution sets coincide on the stated common domain; squaring x=3 to x²=9 cannot be reversed without a sign condition. The new definition does not claim otherwise.
 - TOP03-O03: zero-product property A(x)B(x)=0 iff A(x)=0 or B(x)=0, on the shared expression domain. An expression potentially zero must not be divided out.
 - TOP03-O07 (first radical outcome): over real numbers sqrt(A(x))=B(x) iff B(x)≥0 and A(x)=B(x)², since a square is nonnegative. Without B≥0 the transformed equation may admit extraneous roots; the adjacent √(x+3)=x−1 example filters correctly.
@@ -64,3 +64,7 @@ Prior R06 source blob 9cc738526f95e68a31f99409d8672aff44f5c8a9 remains a histori
 - Verified exact against immediately prior effective source daeeb5d571d120b31265f8c603a76049a1f2c78c: 31/31 Practice stem/key/solution/rubric/D6 unchanged, 12/12 public Selfcheck question-only unchanged; source item markers, SVG references and 43 answer disclosures unchanged. The 11 D6 destination revisions from the earlier correction are retained, not rolled back.
 - Class: DELTA_C_ACADEMIC_MATERIAL, scoped author mathematical/PED Q18 self-verification only. No new NotebookLM independent full-Topic PASS, RD1, scoring, Mastery, runtime QA, merge or deploy.
 
+
+
+<!-- TOP03_OWNER_EDITORIAL_DELTA_A_20261119 -->
+Owner ΔA 19/11: 9 phát biểu phương pháp/điều kiện phương trình đã có trong văn xuôi được thêm nhãn nhận diện riêng; 3 khối chính thức cũ giữ nguyên. Baseline learner `c843613b88d106a18086d91ff7d0ada499398033` → new learner `41b070e06267a5486f00ff977e164c4198f387d4`. Dùng phép đảo ngược prefix chứng minh chính xác mọi ký tự toán, dữ kiện, giải, điều kiện, 12 Ví dụ/12 Vận dụng/12 Đối chiếu, ID, SVG, selfcheck unchanged; không thêm nội dung toán học. `AUTHOR_SELF_VERIFIED_SOURCE_EQUIVALENT`, `CONTENT_READY` preserved. No NotebookLM rereview/website release.
