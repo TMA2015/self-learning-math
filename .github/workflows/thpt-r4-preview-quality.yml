@@ -44,12 +44,38 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  scope:
+    name: Classify site-wide impact (B16-only -> scoped QA)
+    runs-on: ubuntu-24.04
+    outputs:
+      full_suite: ${{ steps.impact.outputs.full_suite }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check fail-closed impact classifier
+        run: |
+          node --check scripts/test-thpt-release-impact.cjs
+          node scripts/test-thpt-release-impact.cjs --self-test
+      - name: Evaluate actual PR diff; full-site only for genuine shared changes
+        id: impact
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || 'origin/main' }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+          RELEASE_QA_FORCE_FULL: ${{ github.event_name == 'workflow_dispatch' }}
+        run: |
+          git diff --name-only "$BASE_SHA...$HEAD_SHA" > "$RUNNER_TEMP/r4-changed-files.txt"
+          node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/r4-changed-files.txt" >> "$GITHUB_OUTPUT"
+
   preview-only:
     name: Build R4 preview without deployment
+    needs: scope
+    # A scoped lesson is validated by its dedicated ChVI / changed-lesson
+    # Golden + Q15/Q16 checks; do not rerun G11/G12/THCS browser suites.
+    if: ${{ needs.scope.outputs.full_suite == 'true' }}
     runs-on: ubuntu-24.04
-    # Full THPT+THCS cross-grade browser regression now exceeds 10 minutes;
-    # retain ALL mandatory QA steps and allow source-locked preview completion.
-    timeout-minutes: 40 # full R4 multi-device QA is ~25 min; no test omitted
+    # Full-site suite remains available for site-wide changes/manual runs.
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
