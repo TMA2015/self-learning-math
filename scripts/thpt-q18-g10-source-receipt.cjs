@@ -690,7 +690,7 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    const p2f=k=>p2.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
    assert.equal(p2f("PREVIOUS_B15_SOURCE_BLOB"),next,
     "B15 P2 copy/UI delta must start from exact previously released B15");
-   assert.equal(p2f("HISTORICAL_OWNER_Q18_RECEIPT_BLOB"),blob(Buffer.from(receipt)),
+   assert.equal(p2f("HISTORICAL_OWNER_Q18_RECEIPT_BLOB"),require("node:crypto").createHash("sha1").update(Buffer.from("blob "+Buffer.byteLength(receipt)+String.fromCharCode(0))).update(Buffer.from(receipt)).digest("hex"),
     "B15 historical signed Q18 receipt must stay immutable");
    assert.equal(p2f("EXISTING_GOLDEN_CSS_BLOB"),
     "4af85dd38d02ed55b29daa6713bfbc892f0d7078",
