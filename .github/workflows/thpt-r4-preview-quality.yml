@@ -26,8 +26,6 @@ on:
       - 'docs/thpt-preview/huong-dan.md'
       - 'docs/thpt-preview/tien-do.md'
       - 'docs/thpt-preview/sgk/index.md'
-      - 'docs/thpt-preview/sgk/**/luyen-tap.md'
-      - 'docs/thpt-preview/sgk/**/tu-kiem-tra-*.md'
       - 'docs/thpt-preview/sgk/lop-11/bo-sung/**'
       - 'docs/thpt-preview/sgk/lop-12/bo-sung/**'
       - 'docs/assets/javascripts/**'
