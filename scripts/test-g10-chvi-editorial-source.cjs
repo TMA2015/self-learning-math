@@ -299,8 +299,8 @@ const revenue=p=>p*(160-2*p);
 assert(revenue(40)===3200&&revenue(30)===3000&&revenue(50)===3000&&
  [0,10,20,60,70,80].every(p=>revenue(p)<3000),
  "B16 WRI-16-02 independent revenue maximum and threshold");
-const area=x=>x*(36-2*x);
-assert(area(9)===162&&[1,3,12,17].every(x=>area(x)<162),
+const b16FenceArea=x=>x*(36-2*x);
+assert(b16FenceArea(9)===162&&[1,3,12,17].every(x=>b16FenceArea(x)<162),
  "B16 Practice independent three-sided-fence optimum");
 const fSegment=x=>-(x-2)**2+7;
 assert(fSegment(3)===6&&fSegment(5)===-2&&
