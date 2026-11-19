@@ -120,6 +120,211 @@ def specific(page, slot):
         }""")
     return True
 
+
+# Per-model mathematical probes executed in the *real page*, not a JS/Canvas mock.
+# Distinct from smoke-test "the control changed something": each model must satisfy
+# a concrete oracle or meaningful boundary condition. Restore original UI afterwards.
+SEMANTIC = r"""async (slot) => {
+ const id=x=>document.getElementById(x);
+ const text=x=>id(x)?.textContent||'';
+ const failures=[],check=(v,label)=>{if(!v)failures.push(label)};
+ const set=(x,v,event='input')=>{const c=id(x);if(!c)throw Error('Missing control '+x);
+   c.value=String(v);c.dispatchEvent(new Event(event,{bubbles:true}));};
+ const tick=()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
+ const near=(a,b,tol=1e-7)=>Math.abs(a-b)<=tol;
+ const originalReset=id('reset')||id('reset-stats');
+ try {
+  switch (slot) {
+   case '01': {
+     set('p',1);set('q',0);await tick();
+     check(text('readout').includes('p⇒q=Sai'),'implication_false_only_when_p_true_q_false');
+     set('p',0);await tick();
+     check(text('readout').includes('p⇒q=Đúng'),'implication_true_with_false_p');
+     break;
+   }
+   case '02': {
+     set('k',-1);await tick();
+     check(text('readout').includes('không có nghiệm thực'),'quadratic_negative_k_no_roots');
+     set('k',0);await tick();
+     check(text('readout').includes('nghiệm kép'),'quadratic_zero_k_double_root');
+     break;
+   }
+   case '03': {
+     set('x',-1);await tick();
+     check(text('readout').includes('Thế lại phương trình gốc: không đúng'),'extraneous_negative_root');
+     set('x',2);await tick();
+     check(text('readout').includes('Thế lại phương trình gốc: đúng'),'original_equation_unique_root');
+     break;
+   }
+   case '04': {
+     set('ai',0);await tick();
+     check(text('readout').includes('nghịch biến'),'log_base_less_than_one_decreasing');
+     set('ai',4);await tick();
+     check(text('readout').includes('đồng biến'),'log_base_greater_than_one_increasing');
+     break;
+   }
+   case '05': {
+     set('a',1);set('b',-4);set('c',3);
+     id('absOut').checked=true;id('absOut').dispatchEvent(new Event('change',{bubbles:true}));
+     id('absIn').checked=true;id('absIn').dispatchEvent(new Event('change',{bubbles:true}));
+     await tick();
+     check(text('summary').includes('15')&&text('summary').includes('−1'),'two_absolute_transformations_differ_at_negative_x');
+     break;
+   }
+   case '06': {
+     const q=window.__I798_FINAL_QA__,a=q.compute(-90),b=q.compute(270);
+     check(a.residualAngle===-90&&b.residualAngle===270&&near(a.sin,-1)&&near(a.cos,0),'signed_angular_arc_and_terminal_values');
+     break;
+   }
+   case '07': {
+     set('n',8);set('d',2);set('r',1.5);await tick();
+     check(text('readout').includes('vₙ lớn hơn uₙ'),'geometric_exceeds_arithmetic_at_n8');
+     break;
+   }
+   case '08': {
+     set('b',2);await tick();
+     check(text('readout').includes('Hàm liên tục tại 0'),'left_right_limits_equal');
+     set('b',1);await tick();
+     check(text('readout').includes('Hàm không liên tục tại 0'),'one_sided_limits_different');
+     break;
+   }
+   case '09': {
+     set('fn','flat','change');set('x',0);set('step',1);set('side',1);await tick();
+     check(text('info').includes('Tiếp tuyến: f′(x₀) = 0'),'flat_cubic_derivative_zero');
+     set('fn','turn','change');await tick();
+     check(text('info').includes('Tiếp tuyến: f′(x₀) = −1'),'turn_cubic_derivative_negative_one');
+     break;
+   }
+   case '10': {
+     set('x',2);await tick();
+     check(text('readout').includes('V=x(12−2x)²=128'),'open_box_maximum_at_x2');
+     set('x',1);await tick();
+     check(text('readout').includes('V=x(12−2x)²=100'),'open_box_volume_at_x1');
+     break;
+   }
+   case '11': {
+     const q=window.__I798_FINAL_QA__.model,s=q.getState();
+     q.setState({a:1,b:2,n:20,mode:'mid'});
+     const v=q.getResult();
+     check(near(v.exact,7/3)&&v.error<0&&near(v.error,v.theorError,1e-9),'riemann_midpoint_underestimate_x_squared');
+     q.setState(s); break;
+   }
+   case '12': {
+     set('b',12);await tick();
+     check(text('readout').includes('Số tam giác không suy biến: 2'),'ssa_two_solutions');
+     set('b',16);await tick();
+     check(text('readout').includes('Số tam giác không suy biến: 1'),'ssa_tangent_one_solution');
+     set('b',18);await tick();
+     check(text('readout').includes('Số tam giác không suy biến: 0'),'ssa_no_triangle');
+     break;
+   }
+   case '13': {
+     set('angle',90);await tick();check(text('readout').includes('Tích vô hướng bằng 0'),'dot_product_orthogonal');
+     set('angle',180);await tick();check(text('readout').includes('Tích vô hướng âm'),'dot_product_opposite');
+     break;
+   }
+   case '14': {
+     set('p',4);set('x',2);await tick();
+     check(text('readout').includes('MD=x+p/2=4')&&text('readout').includes('tức MF=MD'),'parabola_equidistant_focus_directrix');
+     break;
+   }
+   case '15': {
+     set('h',0);set('angle',0);await tick();
+     check(text('classification').includes('nằm trong'),'line_contained_in_plane');
+     set('h',1);await tick();
+     check(text('classification').includes('song song'),'line_parallel_outside_plane');
+     set('angle',45);await tick();
+     check(text('classification').includes('cắt'),'line_intersects_plane');
+     break;
+   }
+   case '16': {
+     set('run',0);set('rise',0);await tick();
+     check(text('status').includes('suy biến'),'zero_length_ramp_undefined_angle');
+     set('rise',3);await tick();
+     check(text('math').includes('tanθ không xác định'),'vertical_ramp_tangent_undefined');
+     set('run',4);await tick();
+     check(text('math').includes('= 5 m'),'three_four_five_right_triangle');
+     break;
+   }
+   case '17': {
+     set('a',6);set('h',4);set('k',0);await tick();
+     check(text('reason').includes('hình chóp')&&text('frustum').includes('48'),'frustum_k0_pyramid');
+     set('k',1);await tick();
+     check(text('reason').includes('lăng trụ')&&text('frustum').includes('144'),'frustum_k1_prism');
+     set('k',.5);await tick();
+     check(text('frustum').includes('84'),'frustum_khalf_volume84');
+     break;
+   }
+   case '18': {
+     set('radius',5);set('distance',5);await tick();
+     check(text('sphere-result').includes('Tiếp xúc'),'sphere_plane_tangent');
+     set('distance',6);await tick();
+     check(text('sphere-result').includes('Không có điểm chung'),'sphere_plane_disjoint');
+     set('distance',3);await tick();
+     check(text('sphere-result').includes('= 4'),'sphere_plane_section_radius4');
+     break;
+   }
+   case '19': {
+     set('a',4);set('b',3);set('countMode','or');await tick();
+     check(text('countOutput').includes('4 + 3 = 7'),'addition_rule_disjoint');
+     set('countMode','and','input');await tick();
+     check(text('countOutput').includes('4 × 3 = 12'),'multiplication_rule');
+     set('n',4);set('k',2);set('orderMode','group','input');await tick();
+     check(text('orderOutput').includes('= 6'),'unordered_choice_4_2');
+     set('orderMode','roles','input');await tick();
+     check(text('orderOutput').includes('= 12'),'ordered_roles_4_2');
+     break;
+   }
+   case '20': {
+     const q=window.__I798_MODEL12__,s=q.getState();
+     const indep=q.math({onlyA:1,both:1,onlyB:1,neither:1,focus:'union'});
+     check(indep.independent&&indep.U===3&&indep.C===1,'independent_events_balanced_table');
+     const disjoint=q.math({onlyA:1,both:0,onlyB:1,neither:2,focus:'union'});
+     check(disjoint.disjoint&&!disjoint.independent&&disjoint.U===2,'disjoint_positive_probability_not_independent');
+     const zero=q.math({onlyA:0,both:0,onlyB:1,neither:1,focus:'union'});
+     check(zero.disjoint&&zero.independent,'zero_probability_event_independent_exception');
+     break;
+   }
+   case '21': {
+     const q=window.__SLM_MATH_LAB_21__,s=q.getState();
+     const r=q.getResult();check(r.total===10000&&r.AB+r.AN+r.NB+r.NN===10000,'bayes_leaf_conservation');
+     q.update({pA:0,pBA:0,pBN:0});check(q.getResult().B===0,'bayes_zero_evidence');
+     q.update(s);break;
+   }
+   case '22': {
+     id('try-extreme').click();await tick();
+     const dots=[...document.querySelectorAll('#dots circle')];
+     const orange=dots.filter(x=>x.getAttribute('fill')==='#e9922a');
+     const svg=id('plot-svg').getBoundingClientRect();
+     check(orange.length===1&&orange.every(x=>{let b=x.getBoundingClientRect();return b.left>=svg.left-2&&b.right<=svg.right+2;}),'outlier_twenty_visible_full_svg');
+     break;
+   }
+   case '23': {
+     const q=window.__I798_FINAL_QA__,a=q.compute(-270),b=q.compute(90),c=q.compute(450);
+     check(a.terminalDeg===90&&near(a.sin,1)&&near(a.cos,0)&&near(a.sin,b.sin)&&near(b.sin,c.sin),'sin_cos_period_360');
+     break;
+   }
+   case '24': {
+     const q=window.__I798_FINAL_QA__,a=q.compute(0),b=q.compute(90),c=q.compute(45),d=q.compute(225);
+     check(a.tanDefined&&!a.cotDefined&&!b.tanDefined&&b.cotDefined,'tan_cot_domain_poles');
+     check(near(c.tan,1)&&near(c.cot,1)&&near(d.tan,1)&&near(d.cot,1),'tan_cot_period_180');
+     break;
+   }
+   case '25': {
+     const q=window.__I798_FINAL_QA__,s={left:0,right:8,includeLeft:true,includeRight:true};
+     check(q.compute({...s,family:'sin',m:1.5}).roots.length===0,'sin_eq_gt_one_no_roots');
+     check(q.compute({...s,family:'sin',m:1}).roots.length===1,'sin_eq_one_duplicate_removed');
+     check(q.compute({...s,family:'tan',m:0}).roots.length===3,'tan_eq_zero_closed_interval_three_roots');
+     check(q.compute({...s,includeRight:false,family:'tan',m:0}).roots.length===2,'tan_eq_zero_half_open_two_roots');
+     break;
+   }
+   default: failures.push('uncovered_slot_'+slot);
+  }
+ }catch(e){failures.push('probe_exception: '+(e?.stack||e));}
+ try {if(originalReset)originalReset.click()}catch(e){failures.push('restore_exception: '+e);}
+ return {pass:failures.length===0,failures};
+}"""
+
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
     result={"method":"full exact HTML/CSS/JS, Git blob SHA checked before Chromium",
@@ -152,8 +357,11 @@ def main():
                       "no_scroll_overflow":initial["scrollWidth"]<=w+3,
                       "no_offscreen_controls":not initial["offscreenControls"],
                       "visual_sized":all(x["width"]>0 and x["height"]>0 for x in initial["visual"]),
-                      "math_condition":specific(page,rec["slot"])
+                      "math_condition":specific(page,rec["slot"]),
+                      "semantic_oracle":False
                     })
+                    v["semantic"]=page.evaluate(SEMANTIC,rec["slot"])
+                    v["assertions"]["semantic_oracle"]=bool(v["semantic"].get("pass"))
                     before_text=page.locator("body").inner_text()
                     before_graph=page.evaluate("""() => [...document.querySelectorAll('canvas,svg')]
                       .map(x=>x.tagName.toLowerCase()==='canvas'?x.toDataURL():x.outerHTML).join('||')""")
