@@ -1,0 +1,137 @@
+# BÁO CÁO PHẢN BIỆN HỌC THUẬT VÀ SƯ PHẠM ĐỘC LẬP
+**Gói kiểm toán:** `G10-SGK-CHV-PED-BRIDGE-R02-20261105`  
+**Nội dung:** Toán 10 KNTT Tập Một — Chương V: Các số đặc trưng của mẫu số liệu không ghép nhóm (Bài 12, 13, 14)  
+**Bộ chuẩn áp dụng duy nhất:** `SLM-THPT-QUALITY-ONE v1.2.0 (Q01–Q18)`  
+**Đơn vị thực hiện:** NotebookLM Independent Reviewer (Phản biện học thuật & Sư phạm độc lập)  
+
+---
+
+### I. NGUỒN CƠ SỞ VÀ NGUYÊN TẮC BẢO TOÀN (SOURCE RECEIPT)
+
+#### 1. Bộ Permanent Sources THPT v2.1 (Đã chọn đúng 5 tài liệu v2.1)
+1. `01_THPT_MASTER_PLAN_v2.1.md`
+2. `02_THPT_NOTEBOOKLM_INDEPENDENT_REVIEW_RULES_v2.1.md`
+3. `03_THPT_ACADEMIC_SOURCES_AND_DEPTH_AUDIT_v2.1.md`
+4. `04_THPT_GOLDEN_LEARNING_ARCHITECTURE_v2.1.md`
+5. `05_THPT_CANONICAL_EXERCISE_AND_ID_CONTRACT_v2.1.md`
+
+#### 2. Nguồn gốc SGK/SBT S1 (KNTT Toán 10 Tập Một)
+* **SGK Toán 10 Tập Một (KNTT):** Bài 12 (trang in 73–77), Bài 13 (trang in 78–83), Bài 14 (trang in 84–88), Bài tập cuối Chương V (trang in 89–90).  
+  *SHA256 PDF SGK:* `3cbb335780dc0f2f4a034a55eb542e3bbe67693412b10a90ca1dffe9ea50eac2`
+* **SBT Toán 10 Tập Một (KNTT):** Bài 12 (trang in 72–73), Bài 13 (trang in 74–77), Bài 14 (trang in 78–80), Ôn tập Chương V (trang in 81–84).  
+  *SHA256 PDF SBT:* `2b1b98665b2c5cccb99f6699a43cbf71b8b2dfc63bdaec759a7b1c51778e2fa1`
+
+#### 3. Tệp học liệu R02 và Bảo toàn Snapshot Lịch sử R01
+* **Tệp review chính:** `Temp_G10_CHV_PED_R02_FULL_CHAPTER_REVIEW_20261105.md` (39,084 bytes)
+* **R01 Immutable Source Git Blob:** `49502fe39cf0a67f6a3e973a77f94164150637a7`
+* **B12 HELP01 Overlay R02 Git Blob:** `2cecaba020881a560bc33251c38d55cc10a05516`
+* **B12 HELP02 Overlay R02 Git Blob:** `913400d6aff63befac95a8a47a00870663dd0096`
+* **Bảo toàn R01:** Bảo toàn PASS 100% cho 27 câu canonical R01 (24 Core/Practice + 3 Written), 9 ví dụ D2, 3 hình SVG và 6 thẻ HELP (với 2 thẻ B12 sử dụng bản overlay R02 đã PASS). Không review lại phần học liệu cũ.
+
+---
+
+### II. DANH SÁCH MÃ ĐƯỢC REVIEW (REVIEWED_IDS)
+
+* **LESSON_IDs (3 bài SGK):** `G10-SGK-B12`, `G10-SGK-B13`, `G10-SGK-B14`
+* **OUTCOME_IDs (14 outcomes — 100% CORE_KEEP):**
+  * **Bài 12:** `G10-B12-APPROX_CONCEPT`, `G10-B12-ABS_ERROR`, `G10-B12-REL_ERROR`, `G10-B12-ROUNDING`
+  * **Bài 13:** `G10-B13-MEAN`, `G10-B13-MEDIAN`, `G10-B13-QUARTILES`, `G10-B13-MODE`, `G10-B13-INTERPRETATION`
+  * **Bài 14:** `G10-B14-RANGE_IQR`, `G10-B14-VARIANCE`, `G10-B14-STDDEV`, `G10-B14-OUTLIERS`, `G10-B14-COMPARISON`
+* **FIRST_TRY ITEM_IDs (14 câu Tự thử chẩn đoán mới):** `THPT-G10-CHV-TRY01` đến `THPT-G10-CHV-TRY14`
+* **HELP_IDs liên kết:** `HELP-G10-B12-01@R02`, `HELP-G10-B12-02@R02`, `HELP-G10-B13-01`, `HELP-G10-B13-02`, `HELP-G10-B14-01`, `HELP-G10-B14-02`
+
+---
+
+### III. KẾT QUẢ KIỂM TOÁN CHUYÊN SÂU THEO TỪNG OUTCOME & CÂU TỰ THỬ
+
+#### 1. Bài 12: Số gần đúng và sai số
+* **`G10-B12-APPROX_CONCEPT` (`THPT-G10-CHV-TRY01`):**  
+  * *Tình huống:* Với số đúng \\(\bar a = 1/3\\), máy hiển thị \\(a = 0{,}33\\).  
+  * *Kết quả:* \\(a = 0{,}33\\) là số gần đúng, \\(\bar a = 1/3\\) là số đúng. Viết \\(0{,}33 \approx 1/3\\), không viết bằng do \\(33/100 \ne 1/3\\). **PASS / PASS**.
+* **`G10-B12-ABS_ERROR` (`THPT-G10-CHV-TRY02`):**  
+  * *Tình huống:* Số đo \\(a = 8{,}4\text{ cm}\\), độ chính xác \\(d = 0{,}3\text{ cm}\\).  
+  * *Kết quả:* Số đúng \\(\bar a \in [8{,}1; 8{,}7]\text{ cm}\\). Sai số tuyệt đối \\(\Delta_a = |a - \bar a| \le 0{,}3\text{ cm}\\) (chắc chắn không vượt quá \\(0{,}3\text{ cm}\\), không khẳng định bằng \\(0{,}3\text{ cm}\\)). **PASS / PASS**.
+* **`G10-B12-REL_ERROR` (`THPT-G10-CHV-TRY03`):**  
+  * *Tình huống:* Phép đo \\(a = 150\text{ m}\\), \\(d = 3\text{ m}\\).  
+  * *Kết quả:* Cận trên sai số tương đối \\(\delta_a \le \frac{d}{|a|} = \frac{3}{150} = 2\%\\). Không kết luận \\(\delta_a = 2\%\\) vì sai số thực có thể nhỏ hơn \\(d\\). Chuẩn xác theo quy ước SGK KNTT. **PASS / PASS**.
+* **`G10-B12-ROUNDING` (`THPT-G10-CHV-TRY04`):**  
+  * *Tình huống:* Số đúng \\(7{,}346\\), làm tròn đến hàng phần trăm.  
+  * *Kết quả:* Số quy tròn là \\(7{,}35\\). Sai số thực của thao tác làm tròn \\(|7{,}35 - 7{,}346| = 0{,}004 \le 0{,}005\\) (nửa đơn vị hàng phần trăm). **PASS / PASS**.
+
+#### 2. Bài 13: Các số đặc trưng đo xu thế trung tâm
+* **`G10-B13-MEAN` (`THPT-G10-CHV-TRY05`):**  
+  * *Tình huống:* Mẫu số liệu \\((2, 4, 4, 10)\\).  
+  * *Kết quả:* Số trung bình \\(\bar x = \frac{2+4+4+10}{4} = 5\\). Giá trị \\(10\\) vẫn tính đủ 1 lần xuất hiện để phản ánh tổng thể. **PASS / PASS**.
+* **`G10-B13-MEDIAN` (`THPT-G10-CHV-TRY06`):**  
+  * *Tình huống:* Mẫu chưa sắp \\((12, 2, 9, 5)\\).  
+  * *Kết quả:* Sắp xếp thành \\((2, 5, 9, 12) \implies n=4\\) chẵn \\(\implies Q_2 = \frac{5+9}{2} = 7\\). **PASS / PASS**.
+* **`G10-B13-QUARTILES` (`THPT-G10-CHV-TRY07`):**  
+  * *Tình huống:* Mẫu đã sắp \\((1, 2, 3, 4, 5, 6, 7)\\) (\\(n=7\\)).  
+  * *Kết quả:* Trung vị \\(Q_2 = 4\\). Áp dụng đúng quy ước KNTT cho \\(n\\) lẻ: loại \\(Q_2=4\\), nửa dưới \\((1, 2, 3) \implies Q_1 = 2\\); nửa trên \\((5, 6, 7) \implies Q_3 = 6\\). **PASS / PASS**.
+* **`G10-B13-MODE` (`THPT-G10-CHV-TRY08`):**  
+  * *Tình huống:* Mẫu \\((1, 2, 2, 3, 3, 4)\\).  
+  * *Kết quả:* Hai mốt là \\(2\\) và \\(3\\) (cùng có tần số cao nhất là \\(2\\)). **PASS / PASS**.
+* **`G10-B13-INTERPRETATION` (`THPT-G10-CHV-TRY09`):**  
+  * *Tình huống:* Mẫu \\((4, 5, 6, 7, 28)\\).  
+  * *Kết quả:* Số trung bình \\(\bar x = 10\\), trung vị \\(Q_2 = 6\\). Trung vị \\(Q_2\\) ít bị giá trị bất thường \\(28\\) chi phối hơn. **PASS / PASS**.
+
+#### 3. Bài 14: Các số đặc trưng đo độ phân tán
+* **`G10-B14-RANGE_IQR` (`THPT-G10-CHV-TRY10`):**  
+  * *Tình huống:* Mẫu đã sắp \\((2, 3, 4, 6, 8, 9, 10)\\) (\\(n=7\\)).  
+  * *Kết quả:* Khoảng biến thiên \\(R = 10 - 2 = 8\\). \\(Q_2 = 6, Q_1 = 3, Q_3 = 9 \implies \Delta_Q = Q_3 - Q_1 = 9 - 3 = 6\\). **PASS / PASS**.
+* **`G10-B14-VARIANCE` (`THPT-G10-CHV-TRY11`):**  
+  * *Tình huống:* Mẫu \\((2, 4, 6)\\) (\\(n=3\\)).  
+  * *Kết quả:* Trung bình \\(\bar x = 4\\). Tổng bình phương độ lệch \\(= (-2)^2 + 0^2 + 2^2 = 8\\). Phương sai mô tả KNTT (chia cho \\(n\\)): \\(s^2 = 8/3\\). **PASS / PASS**.
+* **`G10-B14-STDDEV` (`THPT-G10-CHV-TRY12`):**  
+  * *Tình huống:* Mẫu chiều dài \\((2, 2, 6, 6)\text{ cm}\\) (\\(n=4\\)).  
+  * *Kết quả:* \\(\bar x = 4\text{ cm}\\). \\(s^2 = \frac{4+4+4+4}{4} = 4\text{ cm}^2 \implies\\) Độ lệch chuẩn \\(s = \sqrt{4} = 2\text{ cm}\\) (trở lại cùng đơn vị đo \\(\text{cm}\\)). **PASS / PASS**.
+* **`G10-B14-OUTLIERS` (`THPT-G10-CHV-TRY13`):**  
+  * *Tình huống:* Mẫu đã sắp \\((1, 2, 3, 4, 5, 6, 20)\\) (\\(n=7\\)).  
+  * *Kết quả:* \\(Q_2 = 4, Q_1 = 2, Q_3 = 6 \implies \Delta_Q = 4\\). Hàng rào dưới \\(= 2 - 1{,}5(4) = -4\\); Hàng rào trên \\(= 6 + 1{,}5(4) = 12\\). Tiêu chuẩn KNTT dùng dấu bất đẳng thức nghiêm ngặt: \\(20 > 12 \implies 20\\) là giá trị bất thường duy nhất. **PASS / PASS**.
+* **`G10-B14-COMPARISON` (`THPT-G10-CHV-TRY14`):**  
+  * *Tình huống:* Nhóm A \\((2, 4, 6)\\), nhóm B \\((0, 4, 8)\\).  
+  * *Kết quả:* Cả hai nhóm có \\(\bar x = 4\\). \\(s_A^2 = 8/3\\), \\(s_B^2 = 32/3\\). Nhóm B phân tán hơn do \\(s_B^2 > s_A^2\\). **PASS / PASS**.
+
+---
+
+### IV. BẢNG ÁNH XẠ CHUẨN Q01–Q18 (SLM-THPT-QUALITY-ONE v1.2.0)
+
+| Mã Q | Nội hàm Chuẩn v1.2.0 | Kết quả | Chứng cứ Audit chi tiết Chương V Delta C R02 |
+| :--- | :--- | :--- | :--- |
+| **Q01** | S1/Scope — SGK Core, nguồn và phạm vi | **PASS** | Khóa đúng SGK Toán 10 Tập 1 (Bài 12 pp. 73–77, Bài 13 pp. 78–83, Bài 14 pp. 84–88). |
+| **Q02** | Outcomes — Đủ kết quả học tập cho bài | **PASS** | Đủ 14/14 outcomes thuộc 3 bài, phủ 100% kĩ năng Chương V. |
+| **Q03** | D1 — Lý thuyết, bản chất, điều kiện | **PASS** | Lớp MEANING diễn giải bản chất sai số, xu thế trung tâm, độ phân tán trước quy tắc. |
+| **Q04** | D2 — Ví dụ mẫu có suy luận, điều kiện | **PASS** | Kế thừa 9 ví dụ D2 R01 đã PASS trong snapshot lịch sử. |
+| **Q05** | D3 — Core/Practice/Application có độ sâu | **PASS** | Kế thừa 27 canonical items D3 R01 đã PASS, không sửa nội dung cũ. |
+| **Q06** | D4 — Written/Anchor và rubric một thư viện | **PASS** | Kế thừa 3 bài Written/Anchor R01 cùng rubric đã duyệt. |
+| **Q07** | D5 — Hình, SVG, bảng và hướng dẫn hiểu hình | **PASS** | Sử dụng đúng hình overlay `FIG-G10-B12-01@R02` và 2 hình B13/B14 kèm hướng dẫn PED4. |
+| **Q08** | D6 — HELP và đường khắc phục | **PASS** | Dùng chính xác 2 thẻ overlay `HELP-G10-B12-01/02@R02` và 4 thẻ HELP B13/B14 R01 đã khóa. |
+| **Q09** | PED1 — Lý do cần học trước kỹ thuật (WHY) | **PASS** | 14/14 outcome có lý do học sinh động (đo đạc, doanh số, xếp hàng, sai số công nghiệp). |
+| **Q10** | PED2 — Kiến thức tiền đề (PRE) | **PASS** | 14/14 outcome tái hiện chính xác kiến thức nền tảng cần nhớ. |
+| **Q11** | PED3 — Hình thành bản chất trước công thức | **PASS** | 14/14 outcome diễn giải trực giác bản chất sai số, xu thế trung tâm và độ phân tán. |
+| **Q12** | PED4 — Hướng dẫn đọc hình (READING_VISUAL) | **PASS** | Hướng dẫn đọc hình khoảng sai số, sơ đồ tứ phân vị và biểu đồ phương sai. |
+| **Q13** | PED5 — Vì sao chọn phương pháp (METHOD) | **PASS** | 14/14 outcome giải thích tư tư duy chọn phương pháp giải, tránh học vẹt. |
+| **Q14** | PED6 — Tự thử trước Core, tự mở lời giải (FIRST_TRY) | **PASS** | 14/14 câu First Try (`THPT-G10-CHV-TRY01..14`) đặt trước Core, đáp án ẩn sau fold. |
+| **Q15** | Canonical item bank, ID/placement/role | **PASS** | 14 item_id canonical duy nhất (`THPT-G10-CHV-TRY01..14`), placement `SGK_PRE_CORE_FIRST_TRY`. |
+| **Q16** | An toàn đánh giá/exposure, unscored diagnostic | **PASS** | Đánh giá chẩn đoán công khai không tính điểm, không cộng Mastery, không lộ đề kín. |
+| **Q17** | Hai hành trình SGK và Chuyên đề độc lập | **PASS** | Đánh giá độc lập trên nhánh `SGK_CHAPTER`, không giả định PASS Chuyên đề. |
+| **Q18** | Review độc lập & Snapshot Provenance | **PASS** | Xác nhận nội dung học thuật trên mounted snapshot đạt độ chính xác 100%. |
+
+---
+
+### V. TỔNG HỢP PHÁN QUYẾT CHÍNH THỨC VÀ GIỚI HẠN THẨM QUYỀN
+
+* **`ACADEMIC_VERDICT_NEW`:** **`PASS`** (Nội dung toán học đạt độ chính xác 100%)
+* **`PEDAGOGICAL_VERDICT_NEW`:** **`PASS`** (Nội dung sư phạm PED1–PED6 đạt chuẩn 100%)
+* **MỨC ĐỘ SỬA ĐỔI:** **`P0 = 0`**, **`P1 = 0`**, **`P2 = 0`**
+* **`MINIMAL_DELTA`:** **`0 REVISIONS REQUIRED`** (Không yêu cầu sửa đổi nội dung toán học)
+* **`DELTA_CLASS`:** `DELTA_C_ACADEMIC_MATERIAL`
+
+#### Giới hạn Thẩm quyền Hệ thống (System Safety Limits)
+* **`CONTENT_READY`:** **`NO`**
+* **`RELEASE_AUTHORIZATION`:** **`NO`**
+* **`MASTERY_ACTIVATION`:** **`NO`**
+* **`PRIVATE_RD1_COUNT_NEW`:** **`0`**
+
+---
+*(Báo cáo kiểm toán chi tiết đầy đủ đã được xuất bản và đồng bộ chính thức tại Studio panel với tên tệp: `Bao_Cao_Kiem_Toan_Toan_10_Chuong_V_PED_R02_20261105.md`).*
