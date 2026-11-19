@@ -41,7 +41,7 @@ for(const n of [15,16,17,18]){
   "B"+n+" historical UX example count must remain frozen");
  const expected=candidateG10KnowledgeBlob(n);
  assert.equal(blob(bytes),expected,"B"+n+" current source must equal its own latest Q18 receipt");
- if(n!==15)assert.equal(expected,uxrow.candidate,
+ if(n!==15&&n!==16)assert.equal(expected,uxrow.candidate,
   "B"+n+" current source remains identical to published UX snapshot");
  else{
   const receipt=fs.readFileSync(path.join(root,
