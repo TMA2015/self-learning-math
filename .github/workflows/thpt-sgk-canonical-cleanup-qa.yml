@@ -1,16 +1,15 @@
 name: THPT SGK 79 single active learner source (no deploy)
+# 79-source census belongs to source/handoff membership changes, NOT every
+# student-facing lesson edit or UX795 Q18 delta; scoped QA covers those.
 on:
   pull_request:
     paths:
       - 'scripts/test-thpt-sgk-79-current-source.cjs'
-      - 'prototypes/thpt/ux795/**'
       - 'prototypes/thpt/release-queue/REGISTER.md'
       - 'prototypes/thpt/release-queue/ready/G11-SGK-*.md'
       - 'prototypes/thpt/release-queue/ready/G12-SGK-CH*.md'
       - 'prototypes/thpt/content-drafts/G11*.md'
       - 'prototypes/thpt/content-drafts/G12*.md'
-      - 'docs/thpt-preview/sgk/**'
-      - '.github/workflows/thpt-sgk-canonical-cleanup-qa.yml'
   workflow_dispatch:
 permissions:
   contents: read
