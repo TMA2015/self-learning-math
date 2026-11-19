@@ -1,37 +1,42 @@
 <!-- I798_UNIFIED_22_MODEL_PROGRAM_20261119 -->
 <!-- I798_OWNER_FINAL_COUNT_25_20261119 -->
 <!-- I798_LOCKED_25_INVENTORY_PER_MODEL_20261119 -->
+<!-- I798_DEV_BASE_SELECTION_25_R01_20261119 -->
+### QUYẾT ĐỊNH CHỌN NỀN PHÁT TRIỂN — R01 (19/11/2026)
+
+**25/25 mô hình đã được CHỌN MÃ NỀN** để phát triển tiếp, có căn cứ mã nguồn thực và source SHA; **không phải 25/25 mô hình đã hoàn thiện/được QA G1–G4**. Quy ước nguồn `OLD_*` và `NEW_NN` cùng báo cáo toán và phần bù bắt buộc được khóa tại [biên bản chọn nguồn có SHA](../../review-packets/Temp_I798_DEV_BASE_SOURCE_SELECTION_25_R01_20261119.md). Đúng **19 nguồn cũ làm nền cho Chuyên đề + 3 HTML mới làm nền cho Chuyên đề + 3 HTML mới cho SGK**, tổng 25 mục. 13 HTML mới được bảo toàn (6 làm nền, 7 làm nguồn bổ sung), không tự tạo bản thứ 26. Chốt nguồn cuối/receipt QA **sau khi** hoàn thiện từng mô hình.
+
 ## SỔ KHÓA 25 MÔ HÌNH ĐƯỢC CHỌN — PHẠM VI GIAI ĐOẠN 1 (19/11/2026)
 
 **Quyết định chủ dự án:** Math Lab **trước mắt dự kiến đúng 25 mục tiêu mô hình**. Danh sách bên dưới là 25 **loại mô hình đã chọn để hoàn thiện**, không phải lời chứng nhận 25 mô hình đã qua G1–G4 hay đang chạy trên website. **Chỉ tăng số lượng sau khi chủ dự án duyệt đề xuất bổ sung.** Danh sách 22 MODEL_ID/Outcome/PR/source SHA chi tiết phía dưới **vẫn là nguồn canonical** cho Chuyên đề; 3 khóa `SLM-SGK-...` là **khóa theo dõi tài nguyên bổ trợ** (không phải MODEL_ID canonical của Chuyên đề, không phải ITEM_ID).
 
 | STT | Nơi phục vụ | Mã nguồn/khóa theo dõi | Loại mô hình được chọn | HTML mới liên hệ | Quyết định nguồn & tiến độ |
 |---|---|---|---|---|---|
-| 01 | CĐ01 | `SLM-TOP01-TRUTH-01` | Mô hình chân trị | Chưa có bản mới tương ứng | C · Tách/hoàn thiện từ HTML ứng viên cũ |
-| 02 | CĐ02 | `SLM-TOP02-QUADRATIC-01` | Dấu tam thức | `#02` + `#05` | B · Bổ sung chức năng còn thiếu rồi so chọn |
-| 03 | CĐ03 | `SLM-TOP03-SQUARING-01` | Bình phương và nghiệm ngoại lai | Chưa có bản mới tương ứng | C · Tách/hoàn thiện từ HTML ứng viên cũ |
-| 04 | CĐ04 | `SLM-TOP04-EXPLOG-01` | Hàm mũ/lôgarit ngược nhau | Chưa có bản mới tương ứng | C · Tách/hoàn thiện từ HTML ứng viên cũ |
-| 05 | CĐ05 | `SLM-TOP05-GRAPH-01` | Biến đổi đồ thị | `#05` | A · So chọn 2 nguồn; chưa chốt bản thắng |
-| 06 | CĐ06 | `SLM-TOP06-UNIT-CIRCLE-01` | Đường tròn lượng giác | `#07` | A · So chọn 2 nguồn; chưa chốt bản thắng |
-| 07 | CĐ07 | `SLM-TOP07-SEQUENCE-01` | CSC và CSN | Chưa có bản mới tương ứng | C · Tách/hoàn thiện từ HTML ứng viên cũ |
-| 08 | CĐ08 | `SLM-TOP08-LIMIT-01` | Giới hạn trái/phải | `#04` | B · Bổ sung chức năng còn thiếu rồi so chọn |
-| 09 | CĐ09 | `SLM-TOP09-TANGENT-01` | Cát tuyến đến tiếp tuyến | `#11` | B · Bổ sung chức năng còn thiếu rồi so chọn |
-| 10 | CĐ10 | `SLM-TOP10-BOX-01` | Tối ưu thể tích hộp | Chưa có bản mới tương ứng | C · Tách/hoàn thiện từ HTML ứng viên cũ |
-| 11 | CĐ11 | `SLM-TOP11-RIEMANN-01` | Tổng Riemann | `#06` | A · So chọn 2 nguồn; chưa chốt bản thắng |
-| 12 | CĐ12 | `SLM-TOP12-SSA-01` | Mơ hồ SSA | Chưa có bản mới tương ứng | C · Tách/hoàn thiện từ HTML ứng viên cũ |
-| 13 | CĐ13 | `SLM-TOP13-DOT-01` | Tích vô hướng/hình chiếu | `#01` | B · Bổ sung chức năng còn thiếu rồi so chọn |
-| 14 | CĐ14 | `SLM-TOP14-PARABOLA-01` | Parabol tiêu điểm/đường chuẩn | Chưa có bản mới tương ứng | C · Tách/hoàn thiện từ HTML ứng viên cũ |
-| 15 | CĐ15 | `SLM-TOP15-LINE-PLANE-R00` | Đường thẳng và mặt phẳng | Chưa có bản mới tương ứng | C · Tách/hoàn thiện từ HTML ứng viên cũ |
-| 16 | CĐ16 | `SLM-TOP16-RAMP-ANGLE-R00` | Góc dốc/hình chiếu | Chưa có bản mới tương ứng | C · Tách/hoàn thiện từ HTML ứng viên cũ |
-| 17 | CĐ17 | `SLM-TOP17-FRUSTUM-VOLUME-R00` | Khối và thể tích | Chưa có bản mới tương ứng | C · Tách/hoàn thiện từ HTML ứng viên cũ |
-| 18 | CĐ18 | `SLM-TOP18-OXYZ-GEOMETRY-R00` | Mặt phẳng/mặt cầu Oxyz | `#03` | B · Bổ sung chức năng còn thiếu rồi so chọn |
-| 19 | CĐ19 | `SLM-TOP19-COMBINATORICS-PASCAL-R00` | Đếm chọn và Pascal | Chưa có bản mới tương ứng | C · Tách/hoàn thiện từ HTML ứng viên cũ |
-| 20 | CĐ20 | `SLM-TOP20-PROB-EVENTS-R00` | Hai biến cố | `#12` | A · So chọn 2 nguồn; chưa chốt bản thắng |
-| 21 | CĐ21 | `SLM-TOP21-BAYES-TREE-R01` | Bayes/sơ đồ cây | `#13` | B · Bổ sung chức năng còn thiếu rồi so chọn |
-| 22 | CĐ22 | `SLM-TOP22-DISTRIBUTION-R01` | Dữ liệu thô/ngoại lệ | Chưa có bản mới tương ứng | C · Tách/hoàn thiện từ HTML ứng viên cũ |
-| 23 | SGK Toán 11 Bài 3 | `SLM-SGK-G11-B03-SINCOS` | Đồ thị sin/cos và tính tuần hoàn | `#08` | SGK · standalone tự QA; chờ quyết định tích hợp |
-| 24 | SGK Toán 11 Bài 3 | `SLM-SGK-G11-B03-TANCOT` | Đồ thị tan/cot và tiệm cận | `#09` | SGK · standalone tự QA; chờ quyết định tích hợp |
-| 25 | SGK Toán 11 Bài 4 | `SLM-SGK-G11-B04-TRIGEQ` | Phương trình lượng giác cơ bản | `#10` | SGK · standalone tự QA; chờ quyết định tích hợp |
+| 01 | CĐ01 | `SLM-TOP01-TRUTH-01` | Mô hình chân trị | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_S`; **MODEL_FINAL_QA_OPEN** |
+| 02 | CĐ02 | `SLM-TOP02-QUADRATIC-01` | Dấu tam thức | `#02` + `#05` | **DEV_BASE_SELECTED**: `OLD_S`; donor: `NEW_02 (và phần parabol NEW_05 nếu phù hợp)`; **MODEL_FINAL_QA_OPEN** |
+| 03 | CĐ03 | `SLM-TOP03-SQUARING-01` | Bình phương và nghiệm ngoại lai | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_S`; **MODEL_FINAL_QA_OPEN** |
+| 04 | CĐ04 | `SLM-TOP04-EXPLOG-01` | Hàm mũ/lôgarit ngược nhau | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_S`; **MODEL_FINAL_QA_OPEN** |
+| 05 | CĐ05 | `SLM-TOP05-GRAPH-01` | Biến đổi đồ thị | `#05` | **DEV_BASE_SELECTED**: `OLD_G`; donor: `NEW_05`; **MODEL_FINAL_QA_OPEN** |
+| 06 | CĐ06 | `SLM-TOP06-UNIT-CIRCLE-01` | Đường tròn lượng giác | `#07` | **DEV_BASE_SELECTED**: `NEW_07`; donor: `OLD_S (liên hệ đồ thị sin)`; **MODEL_FINAL_QA_OPEN** |
+| 07 | CĐ07 | `SLM-TOP07-SEQUENCE-01` | CSC và CSN | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_S`; **MODEL_FINAL_QA_OPEN** |
+| 08 | CĐ08 | `SLM-TOP08-LIMIT-01` | Giới hạn trái/phải | `#04` | **DEV_BASE_SELECTED**: `OLD_S`; donor: `NEW_04`; **MODEL_FINAL_QA_OPEN** |
+| 09 | CĐ09 | `SLM-TOP09-TANGENT-01` | Cát tuyến đến tiếp tuyến | `#11` | **DEV_BASE_SELECTED**: `OLD_D`; donor: `NEW_11`; **MODEL_FINAL_QA_OPEN** |
+| 10 | CĐ10 | `SLM-TOP10-BOX-01` | Tối ưu thể tích hộp | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_S`; **MODEL_FINAL_QA_OPEN** |
+| 11 | CĐ11 | `SLM-TOP11-RIEMANN-01` | Tổng Riemann | `#06` | **DEV_BASE_SELECTED**: `NEW_06`; donor: `OLD_S`; **MODEL_FINAL_QA_OPEN** |
+| 12 | CĐ12 | `SLM-TOP12-SSA-01` | Mơ hồ SSA | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_S`; **MODEL_FINAL_QA_OPEN** |
+| 13 | CĐ13 | `SLM-TOP13-DOT-01` | Tích vô hướng/hình chiếu | `#01` | **DEV_BASE_SELECTED**: `OLD_V`; donor: `NEW_01`; **MODEL_FINAL_QA_OPEN** |
+| 14 | CĐ14 | `SLM-TOP14-PARABOLA-01` | Parabol tiêu điểm/đường chuẩn | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_S`; **MODEL_FINAL_QA_OPEN** |
+| 15 | CĐ15 | `SLM-TOP15-LINE-PLANE-R00` | Đường thẳng và mặt phẳng | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_LP`; **MODEL_FINAL_QA_OPEN** |
+| 16 | CĐ16 | `SLM-TOP16-RAMP-ANGLE-R00` | Góc dốc/hình chiếu | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_RA`; **MODEL_FINAL_QA_OPEN** |
+| 17 | CĐ17 | `SLM-TOP17-FRUSTUM-VOLUME-R00` | Khối và thể tích | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_FR`; **MODEL_FINAL_QA_OPEN** |
+| 18 | CĐ18 | `SLM-TOP18-OXYZ-GEOMETRY-R00` | Mặt phẳng/mặt cầu Oxyz | `#03` | **DEV_BASE_SELECTED**: `OLD_OX`; donor: `NEW_03`; **MODEL_FINAL_QA_OPEN** |
+| 19 | CĐ19 | `SLM-TOP19-COMBINATORICS-PASCAL-R00` | Đếm chọn và Pascal | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_PA`; **MODEL_FINAL_QA_OPEN** |
+| 20 | CĐ20 | `SLM-TOP20-PROB-EVENTS-R00` | Hai biến cố | `#12` | **DEV_BASE_SELECTED**: `NEW_12`; donor: `OLD_EV (PR #860 đã đóng, chỉ tham khảo)`; **MODEL_FINAL_QA_OPEN** |
+| 21 | CĐ21 | `SLM-TOP21-BAYES-TREE-R01` | Bayes/sơ đồ cây | `#13` | **DEV_BASE_SELECTED**: `OLD_BD`; donor: `NEW_13`; **MODEL_FINAL_QA_OPEN** |
+| 22 | CĐ22 | `SLM-TOP22-DISTRIBUTION-R01` | Dữ liệu thô/ngoại lệ | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_BD`; **MODEL_FINAL_QA_OPEN** |
+| 23 | SGK Toán 11 Bài 3 | `SLM-SGK-G11-B03-SINCOS` | Đồ thị sin/cos và tính tuần hoàn | `#08` | **DEV_BASE_SELECTED**: `NEW_08`; **MODEL_FINAL_QA_OPEN** |
+| 24 | SGK Toán 11 Bài 3 | `SLM-SGK-G11-B03-TANCOT` | Đồ thị tan/cot và tiệm cận | `#09` | **DEV_BASE_SELECTED**: `NEW_09`; **MODEL_FINAL_QA_OPEN** |
+| 25 | SGK Toán 11 Bài 4 | `SLM-SGK-G11-B04-TRIGEQ` | Phương trình lượng giác cơ bản | `#10` | **DEV_BASE_SELECTED**: `NEW_10`; **MODEL_FINAL_QA_OPEN** |
 
 ### Phân biệt dứt khoát “đã chọn mô hình” và “đã chọn source cuối”
 
