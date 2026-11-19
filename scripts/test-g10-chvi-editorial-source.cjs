@@ -302,7 +302,7 @@ assert(revenue(40)===3200&&revenue(30)===3000&&revenue(50)===3000&&
 const b16FenceArea=x=>x*(36-2*x);
 assert(b16FenceArea(9)===162&&[1,3,12,17].every(x=>b16FenceArea(x)<162),
  "B16 Practice independent three-sided-fence optimum");
-const fSegment=x=>-(x-2)**2+7;
+const fSegment=x=>-((x-2)**2)+7;
 assert(fSegment(3)===6&&fSegment(5)===-2&&
  [3,3.5,4,4.5,5].every(x=>fSegment(x)<=6&&fSegment(x)>=-2),
  "B16 Practice restricted-domain max/min");
