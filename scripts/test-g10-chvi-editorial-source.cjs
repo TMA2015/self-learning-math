@@ -194,5 +194,27 @@ const drawable=fig16?.includes("<svg")?fig16:null;
 assert(drawable&&/<(?:path|polyline)\b/.test(drawable)&&
  (drawable.match(/<line\b/g)||[]).length>=2,
  "AUTHORING_DEFECT B16_OUT_03 Q07/AP3: formal quadratic SVG has title only, lacks plotted parabola and x/y axes");
+
+assert(/data-plot-a="1" data-plot-b="-4" data-plot-c="3"/.test(fig16),
+ "B16 chart coefficients must match y=x²−4x+3 exactly");
+const curve=(fig16.match(/<path d="(M[^"]+)" fill="none" stroke="#2853bb"/)||[])[1];
+assert(curve,"B16 missing visible parabolic blue curve (not merely axes)");
+const sampled=[...curve.matchAll(/[ML]([\d.]+) ([\d.]+)/g)]
+ .map(m=>({px:Number(m[1]),py:Number(m[2])}));
+assert.equal(sampled.length,97,"B16 Q07 parabolic line must be sampled at 97 visible points");
+for(const {px,py} of sampled){
+ const x=(px-120)/112,y=(315-py)/52,actual=x*x-4*x+3;
+ assert(Math.abs(y-actual)<.012,"B16 displayed curve geometry diverges from quadratic at x="+x);
+}
+for(const [px,py] of [[344,367],[232,315],[456,315],[120,159]]){
+ assert(fig16.includes('cx="'+px+'" cy="'+py+'"'),
+ "B16 missing correctly positioned vertex/axis-intersection marker "+px+","+py);
+}
+assert(fig16.includes("x = 2")&&fig16.includes("I(2; −1)")&&
+ fig16.includes("(1; 0)")&&fig16.includes("(3; 0)")&&fig16.includes("(0; 3)"),
+ "B16 Q07 plotted labels must identify vertex, axis, and three intersections");
+assert(fig16.includes("thpt-r4-concept-figure")&&fig16.includes('viewBox="0 0 760 440"'),
+ "B16 plotted graph should fit existing Golden responsive figure treatment");
+
 require("./test-g10-b15-p2-editorial-delta.cjs");
 console.log("PASS G10 ChVI Q18 original→P1→example UX source chain: 19/19 First Try, 19 D6, 5 original figures, 13 example sections; NO DEPLOY.");
