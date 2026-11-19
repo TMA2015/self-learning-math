@@ -7,8 +7,8 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: bb4da8a9c17c4b5051043043d76682144e5414c3
-ACADEMIC_SOURCE_BLOB: bb4da8a9c17c4b5051043043d76682144e5414c3
+SOURCE_BLOB: 8608179c09dee12c6088c219721f095aa9406147
+ACADEMIC_SOURCE_BLOB: 8608179c09dee12c6088c219721f095aa9406147
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_R05_STUDENT_FIRST_75_CANONICAL_VISIBLE_20261115.md
 PREVIOUS_SOURCE_BLOB: c948ad9957bbcd55b416ea7ddce96a6dcdf0d799
 PREVIOUS_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC04_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
@@ -23,7 +23,7 @@ ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
-AUTHOR_SIGNOFF: TOPIC4_R06_FORMAL_DOMAIN_Q18_bb4da8a9c17c4b5051043043d76682144e5414c3
+AUTHOR_SIGNOFF: TOPIC4_R06_FORMAL_DOMAIN_Q18_8608179c09dee12c6088c219721f095aa9406147
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_IMPORTED: 0
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
@@ -45,10 +45,14 @@ ASSESSMENT_Q16: 18 PUBLIC reuse selfcheck questions, not hidden independent Read
 
 ## 18/11/2026 · Targeted Q03/Q09–Q14 domain and formula clarity
 
-- Current one active learner source `bb4da8a9c17c4b5051043043d76682144e5414c3` replaces the earlier source-scoped R06 numbering receipt SHA `58e6f13113c7a042418560d1efe896b8a43de735`; immediately preceding effective editor draft was `5f1d29bfb17c14206d3c02e5130d308dd6ced21a` (existing #890 D6, condition wording, 16 MathJax fixes retained).
+- Current one active learner source `8608179c09dee12c6088c219721f095aa9406147` replaces the earlier source-scoped R06 numbering receipt SHA `58e6f13113c7a042418560d1efe896b8a43de735`; immediately preceding effective editor draft was `5f1d29bfb17c14206d3c02e5130d308dd6ced21a` (existing #890 D6, condition wording, 16 MathJax fixes retained).
 - TOP04-O01: for a≠0 and n positive integer, a^0=1 and a^(−n)=1/a^n; no 0^(−1). Verified example (3/4)^(−2)*(9/16)=1.
 - TOP04-O05: log_a b exists only with a>0, a≠1, b>0, as unique real y satisfying a^y=b. A logarithm may be negative but its argument must remain positive. Verified log₂(1/8)=−3.
 - TOP04-O06: identity log_a(uv)=log_a u+log_a v requires each u>0 and v>0 in reals; merely uv>0 is insufficient. Verified x=0 in (x−1)(x−4): log₂4 exists, individual logs of −1 and −4 do not.
 - Summary checks exponential monotonicity a>1 vs 0<a<1, condition t=a^x>0, and integer-period threshold testing; existing conditions and remedies still in the body.
 - Byte-exact comparison of complete Practice and Selfcheck sections versus effective draft `5f1d29bfb17c14206d3c02e5130d308dd6ced21a`: all 75 public canonical question placements, answers, solutions, Written rubrics and D6 unchanged; 18 question-only selfchecks unchanged; all source SVG paths and reveal counts unchanged. This edit adds three genuine formal knowledge blocks and one recall, not 18 artificial cards.
 - Signed **AUTHOR_SELF_VERIFIED** on the changed learning explanation only under owner-effective Q18. No new independent NotebookLM full Topic acceptance, website AP QA, private RD1, official Mastery, merge or deploy asserted.
+
+
+<!-- TOP04_OWNER_EDITORIAL_DELTA_A_20261119 -->
+Owner ΔA 19/11: 15 phát biểu mũ/logarit/hàm số đã có trong văn xuôi được gắn nhãn loại phát biểu dễ nhận biết; 3 khối formal cũ giữ nguyên; bỏ 5 dòng `Khám phá kiến thức` lặp ở phần Knowledge. Learner `bb4da8a9c17c4b5051043043d76682144e5414c3` → `8608179c09dee12c6088c219721f095aa9406147`. Kiểm đảo ngược các prefix và 5 nhãn chỉ ra nội dung toán, công thức, điều kiện, 18 Ví dụ/Đề/Lời giải, 18 Vận dụng/Đối chiếu, mọi item/figure/selfcheck/rubric không đổi. Đây là `DELTA_A_UI`, không bổ sung phát biểu học thuật mới; source CONTENT_READY vẫn hợp lệ theo owner, không full NotebookLM review hoặc RELEASE.
