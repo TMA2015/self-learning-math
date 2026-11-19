@@ -1,3 +1,7 @@
+<!-- C13_S1_B09_UNIQUE_PLANAR_BASIS_DELTAC_20261120 -->
+**20/11 SGK G10 T1 B09 mandatory:** restored in sole learner §1.5 / TOP13-O05 the **unique decomposition \(\vec u=x\vec a+y\vec b\)** along two non-collinear vectors in same plane, with exact assumption and counterexample. Learner `d34aa19177e9f6c22a542054638e74bdcbc6b728`, Q18 affected `6c67f3888fd50a139a4f177063e9cb7534408d61`, A1 `b919f2b174e2d00cf67e8ae71320f5c81b882c58`, 8/8 math/scope QA; all canonical questions/solutions preserved. DELTA_C_ACADEMIC_MATERIAL source completed, author CONTENT_READY unchanged, RELEASE separate.
+
+---
 # CĐ13 — Vectơ hình học phẳng và không gian · AUTHORING HANDOFF V2 R04
 
 **New narrow PLAN22-13 unit:** exactly three independent student pages Kiến thức / Luyện tập / Tự kiểm tra, no Topic Core and no extra SGK canonical item (32 exact source projections are learner-visible). This is a source-locked A1–A7 authoring handoff, not a released site feature or new independent NotebookLM verdict.
@@ -13,13 +17,13 @@ CATALOG_TOPIC_ID: CD13
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 4ad0c211c61f858cd9f7ccf9cc8bd9afb57ffa54
+ACADEMIC_SOURCE_BLOB: d34aa19177e9f6c22a542054638e74bdcbc6b728
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 0ed64f79a78d2e6fdb2c5d052e01189e32696067
+REVIEW_RECEIPT_BLOB: 6c67f3888fd50a139a4f177063e9cb7534408d61
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_A1_A7_BLOB: 0996677a02b5a703cf23a7e345c959a3f98c128a
+AUTHOR_A1_A7_BLOB: b919f2b174e2d00cf67e8ae71320f5c81b882c58
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: 0996677a02b5a703cf23a7e345c959a3f98c128a
+AUTHOR_METADATA_BLOB: b919f2b174e2d00cf67e8ae71320f5c81b882c58
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563
 G10_SGK_CROSS_PR_DEPENDENCY: 750
@@ -326,7 +330,7 @@ Source `593484fbe67b168fae677652db0ef3871bcf5695`; Q18 targeted affected receipt
 
 ## R07 current one-source Q18 / vector mathematical correction (18/11/2026)
 
-The **effective** and only learner source for this stable packet is `Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md`, Git blob `4ad0c211c61f858cd9f7ccf9cc8bd9afb57ffa54`. One active NEW20 bank `c74505ba59d047c19943c2309f5fd7c033ac9563` with 20 original stable item IDs; targeted W03 canonical `content_version=2` on the **same** source path (not a clone). Current single signed `AUTHOR_SELF_VERIFIED` Q18 composite `Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md` Git blob `0ed64f79a78d2e6fdb2c5d052e01189e32696067` and A1–A7 metadata `0996677a02b5a703cf23a7e345c959a3f98c128a`. Prior R03/R04/R05/R06 strings/SHA values in the historical narrative above remain immutable historical custody only.
+The **effective** and only learner source for this stable packet is `Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md`, Git blob `d34aa19177e9f6c22a542054638e74bdcbc6b728`. One active NEW20 bank `c74505ba59d047c19943c2309f5fd7c033ac9563` with 20 original stable item IDs; targeted W03 canonical `content_version=2` on the **same** source path (not a clone). Current single signed `AUTHOR_SELF_VERIFIED` Q18 composite `Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md` Git blob `6c67f3888fd50a139a4f177063e9cb7534408d61` and A1–A7 metadata `b919f2b174e2d00cf67e8ae71320f5c81b882c58`. Prior R03/R04/R05/R06 strings/SHA values in the historical narrative above remain immutable historical custody only.
 
 **Affected mathematics/PED:** 15 Knowledge lines across O07/O08/O11/O14/O15 now distinguish coordinate **vectors** `(\overrightarrow{AB})` from scalar lengths `AB=|\overrightarrow{AB}|`. Three NEW20 questions plus W03 /7 rubric were corrected for vector notation at the only canonical bank and the learner display; W03 dot product is 9, AC' scalar length 13, cos=3/13 and 2+3+2=7 points, all unchanged numerically. All 52 original item IDs and 20 actual new bank stem projections checked; 16 public selfchecks retain exactly the same IDs, with six notation-only question-stem clarifications, no answer/reveal. Four SVG files/five placements and 68/68 disclosures unchanged. Q18 self-QA recomputes affected math with assumptions and source owner; `DELTA_C_ACADEMIC_MATERIAL` for meaningful rubric/vector distinctions, `NOTEBOOKLM_REREVIEW=NOT_REQUIRED_WITH_REASON` (effective owner Q18 v3). **Not** a new full independent NotebookLM reviewer PASS or proof of rendered browser MathJax.
 
@@ -335,7 +339,7 @@ Original G10 SGK source `96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9` has been read
 
 ## FINAL current V2 source/footer and optional-solution label custody · 18/11/2026
 
-The **same one** Topic13 student source on this AUTHORING Draft is now Git blob `4ad0c211c61f858cd9f7ccf9cc8bd9afb57ffa54`, with single NEW20 bank `c74505ba59d047c19943c2309f5fd7c033ac9563`, Q18 author composite `0ed64f79a78d2e6fdb2c5d052e01189e32696067` and A1–A7 `0996677a02b5a703cf23a7e345c959a3f98c128a`. These four identities supersede the previous R07 pre-editorial snapshot mentioned historically above. #864 item 9/12 exact DELTA_A fix: 48 student Practice voluntary labels say `Lời giải`, four Written say `Lời giải và rubric`, 16 Vận dụng open `Đối chiếu`, and one verified SGK/SBT class/volume/chapter source line is at **the end**; **no changes** to mathematics, canonical IDs, W03 7-point rubric/data, six corrected Self Check question notations, SVG or protected Q16. Last edit source-self-verified; no forced NotebookLM.
+The **same one** Topic13 student source on this AUTHORING Draft is now Git blob `d34aa19177e9f6c22a542054638e74bdcbc6b728`, with single NEW20 bank `c74505ba59d047c19943c2309f5fd7c033ac9563`, Q18 author composite `6c67f3888fd50a139a4f177063e9cb7534408d61` and A1–A7 `b919f2b174e2d00cf67e8ae71320f5c81b882c58`. These four identities supersede the previous R07 pre-editorial snapshot mentioned historically above. #864 item 9/12 exact DELTA_A fix: 48 student Practice voluntary labels say `Lời giải`, four Written say `Lời giải và rubric`, 16 Vận dụng open `Đối chiếu`, and one verified SGK/SBT class/volume/chapter source line is at **the end**; **no changes** to mathematics, canonical IDs, W03 7-point rubric/data, six corrected Self Check question notations, SVG or protected Q16. Last edit source-self-verified; no forced NotebookLM.
 
 All other source-level A1–A7, item–outcome map, Q15/W03 content_version 2, no RD1/Mastery and original external G10 SGK source #750 combined RELEASE-HEAD dependency retained unchanged. Current ONE ready/REGISTER source lock and exact HEAD Topic V2 CI are checked separately. No site RELEASE/merge/deploy.
 
