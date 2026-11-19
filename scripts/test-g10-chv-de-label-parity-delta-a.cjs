@@ -5,7 +5,6 @@
  */
 const assert=require("node:assert/strict");
 const fs=require("node:fs");
-const cp=require("node:child_process");
 const crypto=require("node:crypto");
 const path=require("node:path");
 const root=path.resolve(__dirname,"..");
@@ -22,13 +21,20 @@ const sha1=data=>{
  return crypto.createHash("sha1").update(Buffer.from("blob "+b.length+"\0")).update(b).digest("hex");
 };
 const get=p=>fs.readFileSync(path.join(root,p),"utf8");
-const old=p=>cp.execFileSync("git",["show",field("BASE_MAIN_COMMIT")+":"+p],
- {cwd:root,encoding:"utf8"});
 const heading="    #### Đề bài\n\n";
 const canon="prototypes/thpt/content-drafts/THPT_G10_CHV_B12_CANONICAL.md";
 const marker1="<!-- BEGIN_B12_KNOWLEDGE_MARKDOWN -->\n";
 const marker2="\n<!-- END_B12_KNOWLEDGE_MARKDOWN -->";
 const section=s=>s.split(marker1)[1]?.split(marker2)[0];
+const restorePrevious=(candidate,label)=>{
+ let count=0;
+ const previous=candidate.replace(/^(    ### 3\.[1-4]\. Ví dụ [^\n]+\n\n)/gm,matched=>{
+  count++;
+  return matched+heading;
+ });
+ assert.equal(count,4,label+": exactly four numbered worked example headings");
+ return previous;
+};
 const expectedDiff=(previous,label)=>{
  const occurrences=previous.split(heading).length-1;
  assert.equal(occurrences,4,label+": baseline must have exactly four duplicate headings");
@@ -37,7 +43,7 @@ const expectedDiff=(previous,label)=>{
 for(const n of [12,13]){
  const lesson="B"+n;
  const p="docs/thpt-preview/sgk/chuong-v/bai-"+n+".md";
- const previous=old(p),candidate=get(p);
+ const candidate=get(p),previous=restorePrevious(candidate,lesson);
  assert.equal(sha1(previous),field(lesson+"_PREVIOUS_SOURCE_BLOB"),lesson+": previous SHA");
  assert.equal(sha1(candidate),field(lesson+"_CURRENT_SOURCE_BLOB"),lesson+": current SHA");
  assert.equal(candidate,expectedDiff(previous,lesson),
@@ -55,7 +61,8 @@ for(const n of [12,13]){
   lesson+": original five First Try IDs protected");
 }
 const b12=get("docs/thpt-preview/sgk/chuong-v/bai-12.md");
-const formerMaster=old(canon),master=get(canon);
+const master=get(canon);
+const formerMaster=master.replace(section(master),restorePrevious(section(master),"B12 canonical"));
 assert.equal(sha1(formerMaster),field("B12_PREVIOUS_CANONICAL_BLOB"),
  "B12 immutable predecessor canonical blob");
 assert.equal(sha1(master),field("B12_CURRENT_CANONICAL_BLOB"),
