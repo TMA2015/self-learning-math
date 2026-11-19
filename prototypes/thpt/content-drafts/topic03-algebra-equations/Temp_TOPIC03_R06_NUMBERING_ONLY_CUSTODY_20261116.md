@@ -1,9 +1,9 @@
 # CĐ03 — metadata bản thảo hiện hành, đã sửa D6 + Ví dụ trực tiếp
 
 CURRENT_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_CONSISTENT_20261116.md
-CURRENT_SOURCE_BLOB: c843613b88d106a18086d91ff7d0ada499398033
+CURRENT_SOURCE_BLOB: 41b070e06267a5486f00ff977e164c4198f387d4
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC03_R06_NUMBERING_DELTA_A_Q18_20261116.md
-CURRENT_Q18_RECEIPT_BLOB: b8a9ddc851a1026af2d42d93ea5eb6c21cad6a13
+CURRENT_Q18_RECEIPT_BLOB: e65746363a6a4424e5c4e051e33e5742cd96857c
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
@@ -93,10 +93,13 @@ RELEASE_AUTHORIZATION: NO
 
 ## 18/11/2026 — exact current Knowledge clarification and Q18
 
-- One effective learner file `c843613b88d106a18086d91ff7d0ada499398033`; targeted signed source Q18 `b8a9ddc851a1026af2d42d93ea5eb6c21cad6a13`. Existing corrective D6/Example from Draft #888 is preserved; original SGK/index bank and item→outcome source map remain unchanged.
+- One effective learner file `41b070e06267a5486f00ff977e164c4198f387d4`; targeted signed source Q18 `e65746363a6a4424e5c4e051e33e5742cd96857c`. Existing corrective D6/Example from Draft #888 is preserved; original SGK/index bank and item→outcome source map remain unchanged.
 - Added three explicitly typed genuine mathematics statements at TOP03-O01/O03/O07 (equivalent equations, zero-product property, necessary+ sufficient sign condition for sqrt(A)=B), and one concise learning recap. Only Knowledge modified; 31 canonical Practice items, 12 public Selfchecks, original SVG and disclosure structure byte-exact to source `daeeb5d571d120b31265f8c603a76049a1f2c78c`.
 - Existing AUTHORING_STATUS `REVISED_SINGLE_SOURCE_QA_HOLD` retained until current-head CI and full affected-scope closure. No new independent NotebookLM or RELEASE/merge/deploy claim.
 
 ## Revision after R06 — correct one source, do not create a correction source
 
 The learner source at CURRENT_SOURCE_PATH is edited **in place**. Its prior numbered headings and all 31 student Practice items/solutions and 12 public selfcheck question-only placements are preserved. Eleven D6 student destinations now point to actual numbered Bài and avoid raw ADD/P/W codes. TOP03-O09 worked Example is changed from identical-to-Vận-dụng sqrt(2x+7)=x+1 to independent sqrt(x+6)=x; x≥0, candidates x=3/−2, only x=3 valid; original First Try and its optional key are unchanged. Source has 43 unchanged canonical/display placements, 43 expandable solution blocks. Other historical R05/R06 files are provenance only, not active intake sources. Pending receipt/handoff/ready/REGISTER final QA; not website approved.
+
+
+**19/11 owner ΔA:** current source `41b070e06267a5486f00ff977e164c4198f387d4`, current Q18 `e65746363a6a4424e5c4e051e33e5742cd96857c`; 12 lesson outcomes, all math and question content unchanged, CONTENT_READY maintained.
