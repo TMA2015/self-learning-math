@@ -7,7 +7,7 @@
 
 === "Khám phá kiến thức"
 
-    ### Cùng tìm hiểu
+    ### 1.1. Vì sao cần học hàm số?
 
     Một máy nhận mã sản phẩm và trả ra giá bán tương ứng. Nếu cùng một mã, trong cùng điều kiện, mà máy lại cho hai giá khác nhau thì quy tắc ấy không xác định một kết quả rõ ràng. **Hàm số** cũng yêu cầu mỗi đầu vào thuộc miền được phép phải có **đúng một đầu ra**.
 
@@ -15,14 +15,14 @@
 
     Khi muốn biết hàm tăng hay giảm, hãy quan sát đồ thị **trong cùng một khoảng** từ trái sang phải. Không so hai điểm ở hai nhánh khác nhau rồi kết luận cả hàm đồng biến.
 
-    ### Ví dụ trực quan
+    ### 1.2. Tự khám phá năm tình huống
 
-    #### Một đầu vào phải có một kết quả
+    #### 1.2.1. Một đầu vào phải có một kết quả
 
 
     Trong một ứng dụng dự báo nhiệt độ, cùng một thời điểm không thể đồng thời được gán hai nhiệt độ khác nhau trong *cùng một mô hình xác định*. Vì vậy ta cần nhận ra khi nào mối liên hệ có thể gọi là hàm số.
 
-    Khi đọc bảng giá trị, hãy nhớ ý nghĩa của cặp có thứ tự \((x;y)\) và phân biệt “một giá trị \(x\) xuất hiện hai dòng” với “một giá trị \(x\) có hai đầu ra **khác nhau**”. Em có thể học các kiến thức tiền đề ngay trong bài.
+    Khi đọc bảng giá trị, hãy nhớ ý nghĩa của cặp có thứ tự \((x;y)\) và phân biệt “một giá trị \(x\) xuất hiện hai dòng” với “một giá trị \(x\) có hai đầu ra **khác nhau**”. Nhờ phân biệt cặp có thứ tự và giá trị đầu vào, em có thể kiểm điều kiện hàm số theo từng (x), thay vì chỉ đếm số dòng của bảng.
 
     Một quy tắc là hàm số trên tập \(D\) nếu mỗi đầu vào \(x\in D\) có **đúng một** giá trị đầu ra \(y\). Hai dòng trùng hệt \((x;y)\) không phá điều kiện; nhưng \((x;y_1)\) và \((x;y_2)\) với \(y_1\ne y_2\) thì phá. Sau trực giác ấy mới dùng kí hiệu \(y=f(x)\).
 
@@ -41,11 +41,11 @@
 
 
 
-    #### Tập xác định và tập giá trị không giống nhau
+    #### 1.2.2. Tập xác định và tập giá trị không giống nhau
 
     Máy tính không thể lấy căn bậc hai của số âm trong tập số thực; muốn nhập \(x\) hợp lệ, ta phải biết miền **đầu vào**. Nhưng các kết quả **đầu ra** mà máy cho được có thể là tập khác.
 
-    Với căn bậc hai trong tập số thực, biểu thức \(\sqrt t\) chỉ có nghĩa khi \(t\ge0\), và khi ấy \(\sqrt t\ge0\). Em cũng sẽ dùng kiến thức giải bất phương trình bậc nhất. Em có thể học các kiến thức tiền đề ngay trong bài.
+    Với căn bậc hai trong tập số thực, biểu thức \(\sqrt t\) chỉ có nghĩa khi \(t\ge0\), và khi ấy \(\sqrt t\ge0\). Em cũng sẽ dùng kiến thức giải bất phương trình bậc nhất. Điều kiện dưới dấu căn giúp tìm (D), nhưng muốn tìm (T) còn phải xem đầu ra có thể nhận những giá trị nào.
 
     Tập xác định \(D\) là những \(x\) **được phép thay vào** biểu thức; tập giá trị \(T\) gồm mọi \(y\) thực sự **đạt được** sau khi thay \(x\in D\). Ví dụ căn thức vừa giới hạn đầu vào, vừa làm mọi đầu ra không âm; không lấy \(D=T\) chỉ vì có cùng kí hiệu tập.
 
@@ -69,14 +69,16 @@
 
 
 
-    #### Điểm thuộc đồ thị phải thỏa đúng quy tắc
+    #### 1.2.3. Điểm thuộc đồ thị phải thỏa đúng quy tắc
 
     Một điểm vẽ trên hệ trục có hai tọa độ; để biết nó có thuộc đồ thị của hàm số hay không, ta phải kiểm xem tung độ đúng bằng đầu ra ứng với hoành độ.
 
-    Ôn kí hiệu điểm \((x;y)\), trục Ox biểu diễn x, Oy biểu diễn y và thay số vào biểu thức f(x). Em có thể học các kiến thức tiền đề ngay trong bài.
+    Ôn kí hiệu điểm \((x;y)\), trục Ox biểu diễn x, Oy biểu diễn y và thay số vào biểu thức f(x). Vì thế, khi xét một điểm, em dùng hoành độ để tính (f(x)), rồi mới so với tung độ đã cho.
 
     Đồ thị của \(y=f(x)\) là tập tất cả điểm \((x,f(x))\) với \(x\in D\). Việc điểm nằm “gần” nét đồ thị trên hình in không đủ chứng minh: cần thử \(y=f(x)\) với đúng hoành độ của điểm.
 
+
+    **Em vận dụng.** Với \(f(x)=x^2-1\) trên \(\mathbb R\), xét hai điểm \(A(-2;3)\) và \(B(2;5)\). Điểm nào thuộc đồ thị? Hãy chứng minh bằng cách tính giá trị hàm số.
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHVI-TRY03" data-outcome-id="B15_OUT_03" hidden></span>
 
@@ -88,11 +90,11 @@
 
 
 
-    #### Hàm từng đoạn cần đọc đúng ranh giới và đơn vị
+    #### 1.2.4. Hàm từng đoạn cần đọc đúng ranh giới và đơn vị
 
     Một dịch vụ gửi hàng thu phí cơ bản cho 2 km đầu và thu thêm theo mỗi km tiếp theo; cùng đầu vào vẫn phải được tính đúng một mức phí, kể cả ngay ranh giới 2 km.
 
-    Khi tính phí theo quãng đường, hãy chú ý mốc \(x\le2\) và \(x>2\), đơn vị kilomet, nghìn đồng và giá trị hàm số tại quãng đường đang xét. Em có thể học các kiến thức tiền đề ngay trong bài.
+    Khi tính phí theo quãng đường, hãy chú ý mốc \(x\le2\) và \(x>2\), đơn vị kilomet, nghìn đồng và giá trị hàm số tại quãng đường đang xét. Tại đúng ranh giới, dấu bằng quyết định công thức được chọn; chỉ sau đó mới tính phí và kiểm đơn vị.
 
     Hàm từng đoạn dùng **những công thức khác nhau trên những miền không chồng mâu thuẫn**. Giá trị tại x=2 phải theo nhánh chứa dấu bằng; nếu chọn nhầm, chi phí tại ranh giới và dự đoán tiếp theo đều sai.
 
@@ -129,11 +131,11 @@
 
 
 
-    #### Đồng biến phải xét trên đúng khoảng
+    #### 1.2.5. Đồng biến phải xét trên đúng khoảng
 
     Nếu quãng đường theo thời gian chỉ tăng, ta gọi đại lượng đồng biến; nhưng có những đại lượng trước tăng sau giảm. Vậy không thể gắn nhãn tăng/giảm cho cả hàm chỉ bằng nhìn hai điểm bất kì.
 
-    Biết so sánh hai số \(x_1<x_2\), bất đẳng thức và ý nghĩa đầu vào/đầu ra. Em có thể học các kiến thức tiền đề ngay trong bài.
+    Biết so sánh hai số \(x_1<x_2\), bất đẳng thức và ý nghĩa đầu vào/đầu ra. Để kết luận trên cả khoảng, ta cần một lập luận cho mọi cặp (x_1<x_2) trong khoảng, không chỉ dựa vào hai điểm trên hình.
 
     Trên một khoảng \(K\), đồng biến nghĩa là \(x_1<x_2\) trong K kéo theo \(f(x_1)<f(x_2)\). Nếu \(f(x_1)>f(x_2)\) thì nghịch biến. Khái niệm phụ thuộc vào **khoảng đang xét**, không phải tính chất tuyệt đối của mọi hàm trên \(\mathbb R\).
 
@@ -148,7 +150,9 @@
 
         <div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> <span class="arithmatex">\(f(x_2)-f(x_1)=3(x_2-x_1)&gt;0\)</span>; đồng biến trên <span class="arithmatex">\([-1;2]\)</span>.</p><p><strong>Vì sao:</strong> Hệ số 3 dương nên khi x tăng thì giá trị f(x) tăng. Lập luận áp dụng mọi cặp x1&lt;x2 trong khoảng, không chỉ một bảng nhỏ.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
 
-    ### Thuật ngữ, kiến thức và kỹ năng
+    ### 1.3. Kiến thức tiền đề và mục tiêu
+
+    **Em cần nhớ trước khi học:** Cặp có thứ tự \((x;y)\), trục hoành/trục tung, so sánh hai số, bất phương trình bậc nhất, điều kiện căn bậc hai không âm và mẫu số khác 0.
 
     **Thuật ngữ:** Hàm số, tập xác định, tập giá trị, biến độc lập/phụ thuộc, đồ thị, đồng biến, nghịch biến và hàm từng đoạn.
 
