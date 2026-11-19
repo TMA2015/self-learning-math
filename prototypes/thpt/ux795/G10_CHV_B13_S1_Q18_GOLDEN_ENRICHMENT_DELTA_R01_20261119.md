@@ -8,18 +8,20 @@
 **Q18_REVIEW:** targeted independent Academic/PED verification of genuinely changed explanation/exemplars (Delta C), or signed owner-authorized Q18 self-QA supported by direct S1 evidence, remains to be collected. No PASS is self-issued here.
 
 **BASELINE_LESSON_GIT_BLOB:** `0459b67858246cb6136cf9a2cf9e7a7d18bd27be`  
-**CANDIDATE_LESSON_GIT_BLOB:** `d15c561b281986f3e122dcaba1a25ccf0046fda7`  
+**CANDIDATE_LESSON_GIT_BLOB:** `e24e90017fa372c3ec2b1677e4823b222c2cea17`  
 **CANDIDATE_GOLDEN_CSS_BLOB:** `a4fa446f5437ae5054627700434fb101524827c4`  
 **G10_B01_B12_FROZEN_CSS_BLOB:** `aac2ad16261382987ea0fbb47ceee0987c5f9631`  
 **ACADEMIC_PED_REVIEW_STATE:** `DELTA_C_REVIEW_HOLD`  
 **S1_AUTHENTIC_PDF_STATE:** `SOURCE_RECEIPT_S1_PDF_UNVERIFIED`
+
+**DELTA_A_UI_NAVIGATION_R02:** Replaces broken five Markdown navigation references only, from prior B13 learner Git blob `d15c561b281986f3e122dcaba1a25ccf0046fda7` to current canonical `e24e90017fa372c3ec2b1677e4823b222c2cea17`; no statistical definitions, examples, five first-tries, HELPs, Core/Practice question bodies or assessment state changed. This is a navigation-path correction inside the broader original `DELTA_C_ACADEMIC_MATERIAL_AFFECTED_REVIEW_HOLD` candidate, **not** a claim of independent academic PASS. The original B13 baseline `0459b67858246cb6136cf9a2cf9e7a7d18bd27be` remains immutable.
 
 ## Canonical and immutable source custody
 
 | Role | Path / evidence | Git blob SHA |
 |---|---|---|
 | Frozen baseline B13 public Knowledge | `docs/thpt-preview/sgk/chuong-v/bai-13.md` on `main=f4d97fac0a3535dee8c31a8a682db5f4d6e523e1` | `0459b67858246cb6136cf9a2cf9e7a7d18bd27be` |
-| **One active B13 candidate learner Knowledge** | same exact path on `release/g10-b13-central-tendency-upgrade-20261119`; **not cloned into a competing Markdown source** | `d15c561b281986f3e122dcaba1a25ccf0046fda7` |
+| **One active B13 candidate learner Knowledge** | same exact path on `release/g10-b13-central-tendency-upgrade-20261119`; **not cloned into a competing Markdown source** | `e24e90017fa372c3ec2b1677e4823b222c2cea17` |
 | Previously owner-accepted G10 B01–B12 CSS prefix | `docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css` frozen main | `aac2ad16261382987ea0fbb47ceee0987c5f9631` |
 | B13 **only** CSS Golden palette appended | same CSS path, exact signed candidate; previous prefix remains byte-identical | `a4fa446f5437ae5054627700434fb101524827c4` |
 | B13–B14 canonical public bank (unchanged) | `docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js` | `ddd5ec947029f644865110f2f381047214499e3e` |
