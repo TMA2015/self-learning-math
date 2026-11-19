@@ -163,16 +163,78 @@
 
 === "Ví dụ"
 
-    Trước khi xem lời giải, hãy xác định dữ kiện, điều phải tìm và lý do chọn cách giải. Sau đó kiểm tra lại điều kiện áp dụng và kết quả, thay vì chỉ nhìn phép tính cuối cùng.
+    Các bộ dữ liệu dưới đây **khác mẫu trên hình** ở tab Khám phá. Trước mỗi phép tính, hãy nhận diện dữ liệu chưa sắp hay dạng bảng tần số, xác định mẫu chẵn/lẻ và giải thích vì sao chọn phép tính.
 
-    ### Ví dụ 1. Mẫu có số quan sát lẻ
-    Mẫu đã sắp \(2,3,3,7,10\): \(\bar x=25/5=5\), \(Q_2=3\), mốt 3; nửa trái \(2,3\) cho \(Q_1=2{,}5\), nửa phải \(7,10\) cho \(Q_3=8{,}5\). Số trung bình cao hơn trung vị vì số 10.
+    ### 3.1. Ví dụ 1 — Mẫu lẻ: tính đầy đủ bốn số đặc trưng
 
-    ### Ví dụ 2. Mẫu có số quan sát chẵn
-    Mẫu \(2,4,6,10,12,20\): \(Q_2=(6+10)/2=8\); \(Q_1=4\), \(Q_3=12\); \(\bar x=54/6=9\). Cần xếp số trước khi chia nửa.
+    #### Đề bài
 
-    ### Ví dụ 3. Bảng tần số
-    Giá trị 5 có tần số 2, 7 có tần số 3, 9 có tần số 1. \(n=6\), \(\bar x=(10+21+9)/6=20/3\), \(Q_2=7\), mốt 7, \(Q_1=5\), \(Q_3=7\). Không dùng \((5+7+9)/3\).
+    **Đề:** Số lần đọc sách của bảy bạn trong một tuần là \(6,12,4,9,6,5,7\). Tính số trung bình, trung vị, ba tứ phân vị và mốt.
+
+    **Phân tích:** Đây là bảy quan sát; tính trung bình phải dùng tổng, còn trung vị và tứ phân vị phải dùng dãy đã sắp. Chỉ bỏ **một** quan sát ở vị trí giữa khi chia nửa, không bỏ mọi giá trị bằng trung vị.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ">
+    <p><strong>Bước 1 — Sắp và đếm:</strong> Dãy tăng là \(4,5,6,6,7,9,12\). Có \(n=7\) và tổng \(4+5+6+6+7+9+12=49\).</p>
+    <p><strong>Bước 2 — Mức bình quân và điểm giữa:</strong> \(\bar x=49/7=7\). Vị trí thứ tư có giá trị 6 nên \(Q_2=6\).</p>
+    <p><strong>Bước 3 — Chia nửa:</strong> Bỏ quan sát thứ tư. Nửa dưới \(4,5,6\) có trung vị 5 nên \(Q_1=5\); nửa trên \(7,9,12\) có trung vị 9 nên \(Q_3=9\). Số 6 ở <em>vị trí thứ ba</em> vẫn được tính.</p>
+    <p><strong>Bước 4 — Giá trị phổ biến:</strong> Số 6 xuất hiện hai lần, các số khác một lần, nên mốt là 6.</p>
+    </div>
+
+    **Kiểm lại:** \(Q_1=5\le Q_2=6\le Q_3=9\). Số 12 làm trung bình lớn hơn trung vị; hai chỉ số khác nhau không có nghĩa là tính sai.
+
+    ### 3.2. Ví dụ 2 — Mẫu chẵn: hai vị trí giữa
+
+    #### Đề bài
+
+    **Đề:** Mẫu \(11,3,14,7,5,9\) có sáu số. Tính \(\bar x,Q_1,Q_2,Q_3\), và cho biết mẫu có mốt không.
+
+    **Phân tích:** Vì số quan sát chẵn, có hai vị trí giữa. Chia toàn bộ dãy thành hai nửa **không loại** bất cứ quan sát nào.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ">
+    <p><strong>Bước 1:</strong> Sắp dãy \(3,5,7,9,11,14\), tổng \(49\), nên \(\bar x=49/6\approx8{,}17\).</p>
+    <p><strong>Bước 2:</strong> Hai giá trị giữa là 7 và 9, vậy \(Q_2=(7+9)/2=8\).</p>
+    <p><strong>Bước 3:</strong> Nửa dưới \(3,5,7\) cho \(Q_1=5\), nửa trên \(9,11,14\) cho \(Q_3=11\).</p>
+    <p><strong>Bước 4:</strong> Mọi giá trị đều xuất hiện đúng một lần. Theo quy ước trong bài học này, mẫu không có mốt.</p>
+    </div>
+
+    **Kiểm lại:** \(5\le8\le11\); trung vị bằng 8 **không nhất thiết** phải trùng một giá trị quan sát trong mẫu chẵn.
+
+    ### 3.3. Ví dụ 3 — Tính từ bảng tần số
+
+    #### Đề bài
+
+    **Đề:** Một nhóm bạn ghi số lần đến thư viện trong tuần. Tính các số đặc trưng từ bảng sau:
+
+    | Số lần \(x_i\) | 3 | 4 | 8 | 10 |
+    |:--|--:|--:|--:|--:|
+    | Số bạn \(m_i\) | 1 | 2 | 3 | 2 |
+
+    **Phân tích:** Có bốn **giá trị phân biệt**, nhưng có tám **quan sát**. Khi tính bình quân phải nhân giá trị với tần số; khi tìm trung vị/tứ phân vị cần mở thành dãy đã sắp hoặc xác định vị trí qua tần số tích lũy.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ">
+    <p><strong>Bước 1 — Bình quân:</strong> \(n=1+2+3+2=8\). Tổng \(3\cdot1+4\cdot2+8\cdot3+10\cdot2=55\), vậy \(\bar x=55/8=6{,}875\).</p>
+    <p><strong>Bước 2 — Xếp dữ liệu:</strong> \(3,4,4,8,8,8,10,10\). Hai giá trị ở vị trí thứ tư và thứ năm đều là 8, nên \(Q_2=8\).</p>
+    <p><strong>Bước 3 — Tứ phân vị:</strong> Nửa dưới \(3,4,4,8\) có \(Q_1=(4+4)/2=4\); nửa trên \(8,8,10,10\) có \(Q_3=(8+10)/2=9\).</p>
+    <p><strong>Bước 4 — Mốt:</strong> Giá trị 8 có tần số 3 lớn nhất, nên mốt bằng 8.</p>
+    </div>
+
+    **Kiểm lại:** \(4\le8\le9\). Phép tính \((3+4+8+10)/4\) **không đúng** cho mẫu này vì bỏ qua tần số.
+
+    ### 3.4. Ví dụ 4 — Chọn trung vị khi có giá trị bất thường
+
+    #### Đề bài
+
+    **Đề:** Thời gian chờ (phút) của năm người là \(5,6,6,7,100\). Có nên nói “mỗi người thường chờ khoảng 25 phút” không?
+
+    **Phân tích:** Muốn mô tả người **điển hình**, phải xem một thời gian chờ rất lớn có làm lệch mức bình quân hay không. Không được tự ý xóa quan sát 100 khỏi phép tính.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ">
+    <p><strong>Bước 1:</strong> \(\bar x=(5+6+6+7+100)/5=124/5=24{,}8\) phút. Dãy đã sắp, trung vị là số thứ ba \(Q_2=6\) phút.</p>
+    <p><strong>Bước 2:</strong> Bốn trong năm người chỉ chờ từ 5 đến 7 phút; một người chờ 100 phút làm tăng tổng và bình quân nhưng không đổi vị trí giữa.</p>
+    <p><strong>Kết luận:</strong> Nếu hỏi thời gian chờ điển hình, chọn **trung vị 6 phút**, đồng thời ghi nhận tình huống 100 phút bất thường. Trung bình 24,8 phút vẫn hữu ích nếu cần tính tổng thời gian của cả nhóm.</p>
+    </div>
+
+    **Kiểm lại:** Thay 100 bằng 200 thì trung bình tăng thêm \(100/5=20\) phút, trung vị vẫn bằng 6. **Không có một số đặc trưng luôn tốt nhất:** phải chọn theo câu hỏi.
 
 === "Lỗi thường gặp"
 
