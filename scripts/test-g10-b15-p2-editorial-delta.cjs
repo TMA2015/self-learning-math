@@ -59,11 +59,20 @@ const neighbors={
  "docs/thpt-preview/sgk/chuong-v/bai-13.md":"cb5adaa7804902fece7dd4ec30575733efd4c9c1",
  "docs/thpt-preview/sgk/chuong-v/bai-14.md":"a23afab8015c83813f0c8cbe918efa93e58aa623",
 
- "docs/thpt-preview/sgk/chuong-vi/bai-17.md":"1a3481ee2020f48e924dae5e8b4f5779b3a2d88b",
+
  "docs/thpt-preview/sgk/chuong-vi/bai-18.md":"91d22f1af8814ed639ada3ee1c9dae2e9501c4c0"
 };
 for(const [p,sha]of Object.entries(neighbors))
  assert.equal(blob(fs.readFileSync(path.join(root,p))),sha,"Out-of-scope frozen source "+p);
+// B17 is now independently revised by the owner. Verify its new signed
+// Q18 baseline→candidate chain instead of treating B17 as a frozen B15 neighbor.
+const b17=read(ux+"G10_CHVI_B17_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261119.md");
+assert.equal(field(b17,"BASELINE_PUBLISHED_B17_SOURCE_BLOB"),
+ "1a3481ee2020f48e924dae5e8b4f5779b3a2d88b",
+ "B15 regression preserves B17 previous published source in its signed receipt");
+assert.equal(blob(read("docs/thpt-preview/sgk/chuong-vi/bai-17.md")),
+ field(b17,"CANDIDATE_B17_SOURCE_BLOB"),
+ "B17 new source must match its own receipt; B15/12–14/18 remain frozen");
 assert.equal(field(b16,"BASELINE_PUBLISHED_B16_SOURCE_BLOB"),
  "4ddf9c449f92a9f48bace5a3f9b84186bf33af20",
  "B16 baseline must match historical accepted source, not overwrite it");

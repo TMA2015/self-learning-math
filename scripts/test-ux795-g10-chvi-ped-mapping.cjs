@@ -26,9 +26,17 @@ for(const n of [15,16,17,18]){
  const ux=chviExampleUxReceiptRows().get("B"+n);
  if(ux)assert.equal(ux.baseline,editorial.candidate,"B"+n+" follow-on UX cannot rewrite historical PED/S1 source");
  const expected=candidateG10KnowledgeBlob(n);
- if(n!==15&&n!==16)assert.equal(expected,ux?ux.candidate:(editorial?editorial.candidate:historic),
+ if(n!==15&&n!==16&&n!==17)assert.equal(expected,ux?ux.candidate:(editorial?editorial.candidate:historic),
   "B"+n+" unmodified ChVI source must remain at historical approved signed Q18 SHA");
- else if(n===16){
+ else if(n===17){
+  const r17=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHVI_B17_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261119.md"),"utf8");
+  const field=k=>r17.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(field("BASELINE_PUBLISHED_B17_SOURCE_BLOB"),ux.candidate,
+   "B17 new receipt must follow immutable previously published B17 source");
+  assert.equal(field("CANDIDATE_B17_SOURCE_BLOB"),expected,
+   "B17 source must equal exact owner Q18 candidate SHA");
+ }else if(n===16){
   const r16=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHVI_B16_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261119.md"),"utf8");
   const f16=k=>r16.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
