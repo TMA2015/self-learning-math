@@ -23,7 +23,9 @@ Hãy tưởng tượng một kim dài đúng một đơn vị quay quanh gốc O
 >
 > Trên nửa đường tròn đơn vị \(0^\circ\le\alpha\le180^\circ\), điểm cuối \(M=(\cos\alpha,\sin\alpha)\). Côsin là hoành độ (có thể âm), sin là tung độ (không âm).
 
-**Ví dụ tự học — Đề bài:** Tìm tọa độ điểm trên nửa đường tròn đơn vị ứng với góc 135°.
+**Ví dụ**
+
+**Đề bài:** Tìm tọa độ điểm trên nửa đường tròn đơn vị ứng với góc 135°.
 
 **Lời giải:** Góc 135° bù với 45° nên cos135°=−√2/2 và sin135°=√2/2. Điểm M=(−√2/2,√2/2), đúng ở góc phần tư II.
 
@@ -51,7 +53,9 @@ Hãy tưởng tượng một kim dài đúng một đơn vị quay quanh gốc O
 >
 > \[\sin(180^\circ-\alpha)=\sin\alpha,\qquad\cos(180^\circ-\alpha)=-\cos\alpha.\] Với góc tù trên nửa đường tròn, sin dương và cos âm, ngoại trừ các đầu mút có sin bằng 0.
 
-**Ví dụ tự học — Đề bài:** Tính sin150°−cos120° không dùng máy tính.
+**Ví dụ**
+
+**Đề bài:** Tính sin150°−cos120° không dùng máy tính.
 
 **Lời giải:** sin150°=sin30°=1/2 và cos120°=−cos60°=−1/2, nên kết quả bằng 1. Dấu âm của cos góc tù quyết định lời giải.
 
@@ -76,7 +80,9 @@ Vì vậy, \(\tan 90^{\circ}\) không xác định; \(\cot 0^{\circ}\) và \(\co
 >
 > \[\tan\alpha=\frac{\sin\alpha}{\cos\alpha}\quad(\cos\alpha\ne0),\qquad\cot\alpha=\frac{\cos\alpha}{\sin\alpha}\quad(\sin\alpha\ne0).\] Phải kiểm mẫu số khác 0 trước khi tính.
 
-**Ví dụ tự học — Đề bài:** Tính tan120° và cot120°; có đại lượng nào không xác định?
+**Ví dụ**
+
+**Đề bài:** Tính tan120° và cot120°; có đại lượng nào không xác định?
 
 **Lời giải:** sin120°=√3/2, cos120°=−1/2 đều khác 0; tan120°=−√3, cot120°=−1/√3=−√3/3. Hai tỉ số đều xác định.
 
@@ -99,7 +105,9 @@ Chia hai vế cho \(\cos^{2}\alpha\) hoặc \(\sin^{2}\alpha\) chỉ khi mẫu k
 >
 > \[\sin^2\alpha+\cos^2\alpha=1.\] Căn từ bình phương phải chọn dấu theo góc phần tư; không mặc định cos dương với góc tù.
 
-**Ví dụ tự học — Đề bài:** Góc tù α có sinα=5/13. Tính cosα và tanα.
+**Ví dụ**
+
+**Đề bài:** Góc tù α có sinα=5/13. Tính cosα và tanα.
 
 **Lời giải:** cos²α=1−25/169=144/169. Vì α tù nên cosα=−12/13 và tanα=−5/12, không tự chọn dấu dương khi lấy căn.
 
@@ -130,7 +138,9 @@ Nếu đặt A ở gốc tọa độ, B tại \((c,0)\) và C tại \((b \cos  A
 >
 > Trong tam giác không suy biến, với a đối diện A: \[a^2=b^2+c^2-2bc\cos A.\] Dùng khi biết hai cạnh kẹp góc hoặc ba cạnh để xác định một góc, và nhớ \(\cos A<0\) nếu A tù.
 
-**Ví dụ tự học — Đề bài:** Tam giác có b=7, c=9, A=60°. Tính a.
+**Ví dụ**
+
+**Đề bài:** Tam giác có b=7, c=9, A=60°. Tính a.
 
 **Lời giải:** Dùng côsin vì biết hai cạnh kẹp góc: a²=49+81−2·7·9·cos60°=67. Cạnh dương nên a=√67.
 
@@ -155,7 +165,9 @@ trong đó R là bán kính đường tròn **ngoại tiếp**. Trong tam giác 
 >
 > Với a,b,c đối diện A,B,C trong cùng tam giác: \[\frac a{\sin A}=\frac b{\sin B}=\frac c{\sin C}=2R.\] Ba góc của tam giác dương và tổng 180°, R là bán kính ngoại tiếp.
 
-**Ví dụ tự học — Đề bài:** Tam giác có A=45°, B=60°, a=√2. Tính b và R ngoại tiếp.
+**Ví dụ**
+
+**Đề bài:** Tam giác có A=45°, B=60°, a=√2. Tính b và R ngoại tiếp.
 
 **Lời giải:** C=75°. Theo định lí sin b=a·sin60°/sin45°=√3; 2R=a/sin45°=2, nên R=1.
 
@@ -181,7 +193,9 @@ trong đó R là bán kính đường tròn **ngoại tiếp**. Trong tam giác 
 >
 > SAS/SSS thường bắt đầu từ định lý côsin; ASA/AAS thường chọn định lý sin sau khi tính góc thứ ba. Trường hợp SSA phải kiểm có 0/1/2 tam giác trước khi kết luận.
 
-**Ví dụ tự học — Đề bài:** Tam giác có a=4,b=5,c=6. Muốn tìm C chọn phương pháp nào và tính cosC.
+**Ví dụ**
+
+**Đề bài:** Tam giác có a=4,b=5,c=6. Muốn tìm C chọn phương pháp nào và tính cosC.
 
 **Lời giải:** Vì 4+5>6, tam giác tồn tại. Biết ba cạnh nên dùng côsin: cosC=(a²+b²−c²)/(2ab)=(16+25−36)/40=1/8.
 
@@ -202,7 +216,9 @@ Muốn giải SSA an toàn, tính \(t=b \sin A/a\) trước: nếu \(t>1\), khô
 >
 > Biết A, a đối diện A, b đối diện B: \(\sin B=b\sin A/a\). Nếu tỉ số ngoài [0,1], vô nghiệm; nếu trong (0,1), xét cả \(B_1=\arcsin r\) và \(B_2=180^\circ-B_1\), **chỉ giữ** nghiệm có \(A+B<180^\circ\). Không mặc định luôn có hai nghiệm.
 
-**Ví dụ tự học — Đề bài:** Dữ kiện SSA: A=30°, a=8,b=6. Có bao nhiêu tam giác?
+**Ví dụ**
+
+**Đề bài:** Dữ kiện SSA: A=30°, a=8,b=6. Có bao nhiêu tam giác?
 
 **Lời giải:** sinB=3/8. B₁=arcsin(3/8)<30° hợp lệ; B₂=180°−B₁>150° khiến A+B₂>180°, phải loại. Vậy chỉ một tam giác.
 
@@ -227,7 +243,9 @@ Phải dùng **góc xen giữa chính hai cạnh đang nhân**. Với \(b=8,c=5,
 >
 > \[S=\frac12bc\sin A=\frac12ca\sin B=\frac12ab\sin C.\] Sử dụng đúng góc xen giữa hai cạnh; sin góc trong tam giác dương.
 
-**Ví dụ tự học — Đề bài:** Tam giác có b=5,c=7,A=120°. Tính diện tích.
+**Ví dụ**
+
+**Đề bài:** Tam giác có b=5,c=7,A=120°. Tính diện tích.
 
 **Lời giải:** sin120°=√3/2>0; S=1/2·5·7·sin120°=35√3/4. Góc tù vẫn cho diện tích dương.
 
@@ -256,7 +274,9 @@ Công thức \(S=pr\) đến từ việc chia tam giác thành ba tam giác nh�
 >
 > Với \(p=(a+b+c)/2\), tam giác không suy biến: \[S=\sqrt{p(p-a)(p-b)(p-c)},\quad r=S/p,\quad R=abc/(4S).\] Kiểm bất đẳng thức tam giác và S>0.
 
-**Ví dụ tự học — Đề bài:** Tam giác có ba cạnh 10,10,12. Tính S,r,R.
+**Ví dụ**
+
+**Đề bài:** Tam giác có ba cạnh 10,10,12. Tính S,r,R.
 
 **Lời giải:** p=16; S=√(16·6·6·4)=48. Bán kính nội tiếp r=48/16=3; bán kính ngoại tiếp R=10·10·12/(4·48)=25/4.
 
@@ -279,7 +299,9 @@ Tại sao không dùng góc 30° thay cho góc C khi chia AB? Vì **AB đối di
 >
 > Chọn hai vị trí quan sát A,B có khoảng cách AB đã biết và đo góc tới C. Tính C=180°−A−B>0 rồi suy cạnh bằng định lý sin, ghi đơn vị, không biến chiều dài hình phác thảo thành dữ kiện.
 
-**Ví dụ tự học — Đề bài:** Hai trạm A,B cách nhau 60 m, góc A=45°, B=60° khi ngắm C. Tìm BC.
+**Ví dụ**
+
+**Đề bài:** Hai trạm A,B cách nhau 60 m, góc A=45°, B=60° khi ngắm C. Tìm BC.
 
 **Lời giải:** C=75°. Định lí sin cho BC=60·sin45°/sin75°=60(√3−1) m. AB đối diện C, phải ghép đúng cặp.
 
@@ -300,7 +322,9 @@ Thực hành một quy trình ổn định: (1) gọi tên cạnh/góc đối di
 >
 > Mỗi lời giải phải kiểm tam giác không suy biến, ba cạnh thỏa bất đẳng thức, tổng góc 180°, miền của căn, mẫu số và số nghiệm SSA. Giá trị lấy từ máy không thay thế điều kiện mô hình.
 
-**Ví dụ tự học — Đề bài:** Có thể dùng Heron cho ba cạnh 4,6,11 cm không?
+**Ví dụ**
+
+**Đề bài:** Có thể dùng Heron cho ba cạnh 4,6,11 cm không?
 
 **Lời giải:** Không: 4+6=10<11, không tồn tại tam giác không suy biến. Phải kiểm bất đẳng thức tam giác trước khi dùng Heron.
 
