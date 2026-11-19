@@ -11,8 +11,8 @@ const {chromium}=require("playwright");
 const root=path.resolve(__dirname,"..");
 const base=process.env.SLM_CHV_URL||"http://127.0.0.1:8765";
 const expectedSources={
- 12:"d053687c2f8b2cb1f2cb6cb5b86d0751b52d755d",
- 13:"95dc361e08a89ec48e1a68255cf8520be2f42117",
+ 12:"9e8b5e0b2e11a06d76d4b6e48b6d04af65081b30",
+ 13:"6c99a703da9fd3a01e244eaaa67b148744f121c7",
  14:"21c1ef59277f742b45a27900b173fac031a4a04f"
 };
 const ids={12:5,13:5,14:5};
