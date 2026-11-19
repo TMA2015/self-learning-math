@@ -236,60 +236,57 @@
 
 === "Lỗi thường gặp"
 
+    Những lỗi dưới đây là **sai lầm toán học dễ mắc khi giải năm dạng trong bài**, không phải các nhãn lỗi chung chung. Mỗi mục chỉ ra một kết luận sai cụ thể, giải thích vì sao sai, rồi hướng dẫn em tự làm lại. Không coi việc học sinh đã mở “Đối chiếu” là bằng chứng làm chủ kiến thức.
+
     <span data-thpt-help-id="HELP-G10-CHVI-TRY01" hidden></span>
 
-    ??? tip "Gợi ý khắc phục khi chưa làm được — 5 bước"
+    ??? tip "4.1. Nhầm đầu vào lặp với hai đầu ra khác nhau"
 
-        <ol><li><strong>Nhận diện lỗi:</strong> Nhầm “một x xuất hiện hai lần” với “một x có hai kết quả khác nhau”.</li>
-        <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
-        <li><strong>Kiến thức gốc:</strong> Một quy tắc là hàm số trên tập <span class="arithmatex">\(D\)</span> nếu mỗi đầu vào <span class="arithmatex">\(x\in D\)</span> có <strong>đúng một</strong> giá trị đầu ra <span class="arithmatex">\(y\)</span>. Hai dòng trùng hệt <span class="arithmatex">\((x;y)\)</span> không phá điều kiện; nhưng <span class="arithmatex">\((x;y_1)\)</span> và <span class="arithmatex">\((x;y_2)\)</span> với <span class="arithmatex">\(y_1\ne y_2\)</span> thì phá. Sau trực giác ấy mới dùng kí hiệu <span class="arithmatex">\(y=f(x)\)</span>.</li>
-        <li><strong>Tự sửa:</strong> Tách các dòng theo từng x phân biệt, liệt kê mọi y gắn với x đó và thử tính đơn trị. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
-        <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B15-C01">luyện lại một câu có sẵn trong Core/Luyện tập</a>, sau đó tự giải thích bằng lời của mình.</li></ol>
-
+        1. **Dấu hiệu sai:** Thấy bảng A có hai dòng \((3;2)\), vội kết luận “không là hàm số vì \(x=3\) xuất hiện hai lần”.
+        2. **Vì sao sai?** Điều kiện của hàm số là **mỗi \(x\) có đúng một giá trị \(y\)**, chứ không phải mỗi \(x\) chỉ được ghi một dòng. Trong A, \(x=3\) luôn cho \(y=2\), nên không mâu thuẫn. Trong bảng B, \(x=3\) cho cả \(2\) lẫn \(4\), mới vi phạm.
+        3. **Tự kiểm:** Khoanh mọi dòng có cùng \(x\). Nếu chúng có **hai \(y\) khác nhau**, bảng không biểu diễn \(y=f(x)\); nếu các \(y\) trùng nhau, vẫn thỏa điều kiện đơn trị.
+        4. **Sửa lại:** Nêu bằng lời vì sao bảng A là hàm số trên \(D=\{1;3\}\) nhưng bảng B không phải.
+        5. **Tập tiếp:** [Core/Luyện tập C01](../luyen-tap/?item=THPT-G10-B15-C01). Giải thích trước khi mở đối chiếu; không nhân bản câu đã xem làm bài kiểm tra độc lập.
 
     <span data-thpt-help-id="HELP-G10-CHVI-TRY02" hidden></span>
 
-    ??? tip "Gợi ý khắc phục khi chưa làm được — 5 bước"
+    ??? tip "4.2. Đồng nhất tập xác định với tập giá trị"
 
-        <ol><li><strong>Nhận diện lỗi:</strong> Đồng nhất tập x được nhập với tập y nhận được; quên điều kiện dưới dấu căn.</li>
-        <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
-        <li><strong>Kiến thức gốc:</strong> Tập xác định <span class="arithmatex">\(D\)</span> là những <span class="arithmatex">\(x\)</span> <strong>được phép thay vào</strong> biểu thức; tập giá trị <span class="arithmatex">\(T\)</span> gồm mọi <span class="arithmatex">\(y\)</span> thực sự <strong>đạt được</strong> sau khi thay <span class="arithmatex">\(x\in D\)</span>. Ví dụ căn thức vừa giới hạn đầu vào, vừa làm mọi đầu ra không âm; không lấy <span class="arithmatex">\(D=T\)</span> chỉ vì có cùng kí hiệu tập.</li>
-        <li><strong>Tự sửa:</strong> Viết riêng hai câu “x nào hợp lệ?” và “giá trị căn có thể bằng bao nhiêu?” rồi thử tìm x tương ứng với một y bất kỳ. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
-        <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B15-C02">luyện lại một câu có sẵn trong Core/Luyện tập</a>, sau đó tự giải thích bằng lời của mình.</li></ol>
-
+        1. **Dấu hiệu sai:** Với \(f(x)=\sqrt{x-2}\), viết \(D=T=[2;+\infty)\).
+        2. **Vì sao sai?** Điều kiện \(x-2\ge0\) chỉ giới hạn **đầu vào** \(x\ge2\). Đầu ra \(\sqrt{x-2}\) bắt đầu từ \(0\), không phải \(2\).
+        3. **Tự kiểm:** Hỏi riêng “nhập được \(x\) nào?” và “nhận được \(y\) nào?”. Thử \(x=2\) thì \(f(2)=0\); số \(0\) thuộc \(T\), nhưng không thuộc \(D\).
+        4. **Sửa lại:** \(D=[2;+\infty)\), \(T=[0;+\infty)\). Để chắc mọi \(y\ge0\) đều đạt được, chọn \(x=y^2+2\).
+        5. **Tập tiếp:** [Core/Luyện tập C02](../luyen-tap/?item=THPT-G10-B15-C02), sau đó phân biệt miền đầu vào và đầu ra bằng một ví dụ mới.
 
     <span data-thpt-help-id="HELP-G10-CHVI-TRY03" hidden></span>
 
-    ??? tip "Gợi ý khắc phục khi chưa làm được — 5 bước"
+    ??? tip "4.3. Đoán điểm thuộc đồ thị từ hình vẽ hoặc bỏ điều kiện x"
 
-        <ol><li><strong>Nhận diện lỗi:</strong> Đọc nhầm hoành độ với tung độ, hoặc suy thuộc đồ thị chỉ bằng quan sát hình.</li>
-        <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
-        <li><strong>Kiến thức gốc:</strong> Đồ thị của <span class="arithmatex">\(y=f(x)\)</span> là tập tất cả điểm <span class="arithmatex">\((x,f(x))\)</span> với <span class="arithmatex">\(x\in D\)</span>. Việc điểm nằm “gần” nét đồ thị trên hình in không đủ chứng minh: cần thử <span class="arithmatex">\(y=f(x)\)</span> với đúng hoành độ của điểm.</li>
-        <li><strong>Tự sửa:</strong> Thay x của từng điểm vào f, viết cặp ((x;f(x))) rồi so đúng hai tọa độ. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
-        <li><strong>Luyện lại (không nhân bản câu):</strong> Quay lại phần kiến thức liên quan ngay trong bài và thử giải thích phương pháp trước khi xem lại kết quả.</li></ol>
-
+        1. **Dấu hiệu sai:** Nhìn điểm \(B(2;5)\) nằm gần đường cong \(y=x^2-1\), rồi kết luận \(B\) thuộc đồ thị.
+        2. **Vì sao sai?** Hoành độ \(x=2\) cho tung độ đúng bằng \(f(2)=2^2-1=3\), **không phải \(5\)**. Khoảng cách trên hình không chứng minh được quan hệ \(y=f(x)\).
+        3. **Tự kiểm:** Trước khi thay số phải xác định hoành độ nằm trong \(D\). Sau đó tính \(f(x_0)\) và so **chính xác** với tung độ \(y_0\).
+        4. **Sửa lại:** \(A(-2;3)\) thuộc đồ thị vì \(f(-2)=3\). \(B(2;5)\) không thuộc vì \(f(2)=3\ne5\). Với phân thức \(1/(x-2)\), \(x=2\) còn bị loại từ đầu.
+        5. **Tập tiếp:** Trở lại §2.2 và ví dụ 3.1, tự xét một điểm thỏa và một điểm không thỏa, không xem lời giải trước.
 
     <span data-thpt-help-id="HELP-G10-CHVI-TRY05" hidden></span>
 
-    ??? tip "Gợi ý khắc phục khi chưa làm được — 5 bước"
+    ??? tip "4.4. Chọn sai nhánh ở ranh giới và tính phí cho cả quãng đường"
 
-        <ol><li><strong>Nhận diện lỗi:</strong> Áp nhánh x&gt;3 cho ngay x=3 hoặc cộng phí theo x thay vì phần vượt x−3.</li>
-        <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
-        <li><strong>Kiến thức gốc:</strong> Hàm từng đoạn dùng <strong>những công thức khác nhau trên những miền không chồng mâu thuẫn</strong>. Giá trị tại x=2 phải theo nhánh chứa dấu bằng; nếu chọn nhầm, chi phí tại ranh giới và dự đoán tiếp theo đều sai.</li>
-        <li><strong>Tự sửa:</strong> Đánh dấu miền của từng nhánh trên trục số, xét dấu bằng riêng, ghi đơn vị mỗi kết quả. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
-        <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B15-P02">luyện lại một câu có sẵn trong Core/Luyện tập</a>, sau đó tự giải thích bằng lời của mình.</li></ol>
-
+        1. **Dấu hiệu sai:** Với mô hình \(C(x)=12\) khi \(0\le x\le3\), \(C(x)=12+4(x-3)\) khi \(x>3\), áp nhánh \(x>3\) cho \(x=3\), hoặc tính \(C(5)=12+4\cdot5=32\).
+        2. **Vì sao sai?** Số \(3\) thuộc nhánh **có dấu bằng**. Phần phí tăng thêm chỉ tính cho **\(x-3\)** km vượt ngưỡng. Đặc biệt, dùng nhầm nhánh tại \(x=3\) tình cờ cũng cho \(12\): **đúng số không chứng minh đúng phương pháp**.
+        3. **Tự kiểm:** Đánh dấu từng miền lên trục số, thử riêng \(x=3\) và một \(x>3\); kiểm đơn vị \(x\) là km, \(C(x)\) là nghìn đồng.
+        4. **Sửa lại:** \(C(3)=12\) (nhánh thứ nhất), \(C(5)=12+4(5-3)=20\) nghìn đồng (nhánh thứ hai).
+        5. **Tập tiếp:** [Core/Luyện tập P02](../luyen-tap/?item=THPT-G10-B15-P02). Nói rõ nhánh nào được chọn **trước** khi tính.
 
     <span data-thpt-help-id="HELP-G10-CHVI-TRY04" hidden></span>
 
-    ??? tip "Gợi ý khắc phục khi chưa làm được — 5 bước"
+    ??? tip "4.5. Kết luận đồng biến, nghịch biến chỉ từ hai điểm"
 
-        <ol><li><strong>Nhận diện lỗi:</strong> Đoán tăng/giảm từ một cặp điểm rồi mở rộng ra mọi x, hoặc đảo chiều khi trừ hai giá trị.</li>
-        <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
-        <li><strong>Kiến thức gốc:</strong> Trên một khoảng <span class="arithmatex">\(K\)</span>, đồng biến nghĩa là <span class="arithmatex">\(x_1&lt;x_2\)</span> trong K kéo theo <span class="arithmatex">\(f(x_1)&lt;f(x_2)\)</span>. Nếu <span class="arithmatex">\(f(x_1)&gt;f(x_2)\)</span> thì nghịch biến. Khái niệm phụ thuộc vào <strong>khoảng đang xét</strong>, không phải tính chất tuyệt đối của mọi hàm trên <span class="arithmatex">\(\mathbb R\)</span>.</li>
-        <li><strong>Tự sửa:</strong> Viết f(x2)−f(x1), thay chính giả thiết x2−x1&gt;0 và kết luận theo cả khoảng. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
-        <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B15-P03">luyện lại một câu có sẵn trong Core/Luyện tập</a>, sau đó tự giải thích bằng lời của mình.</li></ol>
-
+        1. **Dấu hiệu sai:** Thấy \(f(0)<f(1)\) rồi kết luận ngay “hàm đồng biến trên mọi \(x\)” mà không nêu khoảng đang xét hoặc chưa kiểm các cặp khác.
+        2. **Vì sao sai?** Định nghĩa trên khoảng \(K\) đòi hỏi **mọi** cặp \(x_1<x_2\) trong \(K\). Ví dụ \(g(x)=x^2\) giảm trước \(0\) và tăng sau \(0\); một cặp có giá trị tăng không đủ suy ra đơn điệu trên \(\mathbb R\).
+        3. **Tự kiểm:** Viết rõ \(K\), chọn \(x_1<x_2\) **bất kì** cùng thuộc \(K\), xét dấu \(f(x_2)-f(x_1)\). Không đảo dấu khi trừ hai giá trị.
+        4. **Sửa lại:** Với \(f(x)=3x+2\) trên \([-1;2]\), \(f(x_2)-f(x_1)=3(x_2-x_1)>0\) cho mọi \(x_1<x_2\), nên đồng biến trên khoảng đang xét.
+        5. **Tập tiếp:** [Core/Luyện tập P03](../luyen-tap/?item=THPT-G10-B15-P03). Tự giải thích dấu hiệu số học trước khi mở đáp án.
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
