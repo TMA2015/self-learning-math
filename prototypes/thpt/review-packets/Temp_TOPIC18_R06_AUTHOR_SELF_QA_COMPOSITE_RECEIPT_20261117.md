@@ -1,7 +1,13 @@
+<!-- TOP18_G12_B06_DOT_ZERO_NORM_20261120 -->
+## Final TOP18-O05 source completeness note · 20/11/2026
+
+SGK Toán 12 Tập 1 B6 trang in **56** quy ước \(\vec u\cdot\vec0=0\), \(\vec u^2=|\vec u|^2\); trang in **57** nhắc ba tính chất giao hoán, nhân với số, phân phối. Cập nhật tiếp chính **một khối TÍNH CHẤT** trên learner, thêm hai đẳng thức trực tiếp có điều kiện, không đổi ví dụ hay canonical. Parent learner `8a580dc99b6a64b57cefc0c15fb7f9defb7acd48` → sole current learner `d1a9fc26cb8061a4929da05aea8701ed6b3b2e82`. Source reversible, delimiters MathJax cân bằng, số ITEM_ID bất biến: 3/3 asserted PASS. Tổng Q18 affected maths: S1-O03 box rule + S1-O05 dot product definitions and properties, đều đúng với các biến thể thường gặp; AUTHOR_SELF_VERIFIED, no external independent reviewer, overall SGK completeness across 22 topics NOT yet certified. CONTENT_READY preserved under owner, website deployment NO.
+
+---
 <!-- TOP18_G12_B06_DOT_PRODUCT_IDENTITIES_20261120 -->
 ## 20/11/2026 — TOP18-O05 S1 mandatory dot-product properties · targeted Delta C
 
-**Direct S1 primary:** SGK Kết nối tri thức Toán 12 Tập 1 Bài 6, trang in 55–56 (PDF <https://sqhx-hanoi.mediacdn.vn/91579363132710912/2025/11/18/1-toan-12-tap-1-kntt-17634587393041073129419.pdf>), sau định nghĩa tích vô hướng liệt kê đúng ba tính chất: giao hoán, phép nhân với số, phân phối với tổng hai vectơ. Previous current learner `6d58c3652c3d51fdeeea3ac47f9a3b798502f071` had angle formula but not these algebraic properties in explicit Knowledge.
+**Direct S1 primary:** SGK Kết nối tri thức Toán 12 Tập 1 Bài 6, trang in 56–57 (PDF <https://sqhx-hanoi.mediacdn.vn/91579363132710912/2025/11/18/1-toan-12-tap-1-kntt-17634587393041073129419.pdf>), sau định nghĩa tích vô hướng liệt kê đúng ba tính chất: giao hoán, phép nhân với số, phân phối với tổng hai vectơ. Previous current learner `6d58c3652c3d51fdeeea3ac47f9a3b798502f071` had angle formula but not these algebraic properties in explicit Knowledge.
 
 **Source edit TOP18-M05** sole canonical `8a580dc99b6a64b57cefc0c15fb7f9defb7acd48`: add natural prose and a **TÍNH CHẤT — Tích vô hướng của các vectơ trong không gian** block stating \(u\cdot v=v\cdot u\), \((ku)\cdot v=u\cdot(kv)=k(u\cdot v)\), \(u\cdot(v+w)=u\cdot v+u\cdot w\); conditions \(k\in\mathbb R\), all vectors arbitrary including zero, cosine denominator only for nonzero vectors. Original definition, Example, Vận dụng, D6, item IDs/rubrics/SVG unaffected, only one separate theory insertion.
 
@@ -30,8 +36,8 @@ RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
-SOURCE_BLOB: 8a580dc99b6a64b57cefc0c15fb7f9defb7acd48
-ACADEMIC_SOURCE_BLOB: 8a580dc99b6a64b57cefc0c15fb7f9defb7acd48
+SOURCE_BLOB: d1a9fc26cb8061a4929da05aea8701ed6b3b2e82
+ACADEMIC_SOURCE_BLOB: d1a9fc26cb8061a4929da05aea8701ed6b3b2e82
 FROZEN_R04_READY_SOURCE_BLOB: 41daf40a3b639a3ef35e129099525137a05b1848
 FROZEN_R04_FULL_AUTHOR_Q18_RECEIPT_BLOB: 5262fd454346801b050b5eb4f3dc407bc99d3530
 R05_GEOMETRIC_MODEL_SOURCE_BLOB: af8a3529398e5f876d5c979b0d5d26df3519d6ac
