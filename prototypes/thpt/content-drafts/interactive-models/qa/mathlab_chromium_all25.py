@@ -129,7 +129,7 @@ SEMANTIC = r"""async (slot) => {
  const text=x=>id(x)?.textContent||'';
  const failures=[],check=(v,label)=>{if(!v)failures.push(label)};
  const set=(x,v,event='input')=>{const c=id(x);if(!c)throw Error('Missing control '+x);
-   c.value=String(v);c.dispatchEvent(new Event(event,{bubbles:true}));};
+   c.value=String(v);c.dispatchEvent(new Event('input',{bubbles:true}));c.dispatchEvent(new Event('change',{bubbles:true}));};
  const tick=()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
  const near=(a,b,tol=1e-7)=>Math.abs(a-b)<=tol;
  const originalReset=id('reset')||id('reset-stats');
