@@ -71,6 +71,8 @@ Khi cần mô tả một mẫu, **số trung bình** cho biết mức chia đề
 
 
 
+> **CHÚ Ý SGK — Mốt cho dữ liệu định tính.** Mốt không chỉ dành cho số đo. Với dữ liệu là **loại hoặc nhãn**, mốt là nhãn có tần số lớn nhất. Chẳng hạn, các lựa chọn A, B, B, C, B có mốt là **B**. Tần số của các nhãn phải được đếm trước; nếu nhiều nhãn phân biệt cùng tần số và không nhãn nào nổi trội, theo quy ước trên mẫu không có mốt.
+
 <!-- OUTCOME_REF: G10-B13-MEAN -->
 
 Trung bình là mức chia đều, không nhất thiết thuộc danh sách số liệu. Nếu giá trị 5 có tần số 3, phải cộng 5 **ba lần** hoặc nhân (\(5\cdot3\)); đừng lấy trung bình các giá trị khác nhau mà quên tần số. Khi có số cực đoan, so thêm trung vị để giải thích.
@@ -199,6 +201,8 @@ Hai nhóm cùng trung bình nhưng mức ổn định khác nhau. Làm thế nà
 
 
 
+
+> **CHÚ Ý SGK — Đại lượng phân tán dùng mẫu số \(n-1\).** Ngoài phương sai mô tả \(s^2\) chia cho \(n\), SGK Toán 10 tập 1 Bài 14 còn nêu \(\hat{s}^2=\frac{\sum_{i=1}^{n}(x_i-\bar x)^2}{n-1}\) khi \(n>1\). Đây là **đại lượng khác** chứ không được tự thay vào công thức \(s^2\) của bài. Với mẫu \(3,4,5\), ta có \(s^2=2/3\) trong khi \(\hat{s}^2=1\). Khi làm bài, đọc rõ đề yêu cầu đại lượng nào.
 
 <!-- OUTCOME_REF: G10-B14-VARIANCE -->
 
