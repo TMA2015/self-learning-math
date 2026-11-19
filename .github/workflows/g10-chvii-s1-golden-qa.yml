@@ -1,14 +1,13 @@
 name: G10 ChVII B19-B22 S1/Q18 Golden and anti-ChVI UX QA (no deploy)
+# Legacy ChVII + 27-lesson regressions: keep for shared navigation/UI changes.
 on:
   pull_request:
     paths:
-      - "docs/thpt-preview/sgk/chuong-vii/bai-*.md"
       - "docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js"
-      - "prototypes/thpt/ux795/G10_CHVII_B19_B22_S1_Q18_GOLDEN_ENRICHMENT_RECEIPT_20261113.md"
-      - "scripts/thpt-q18-g10-source-receipt.cjs"
-      - "scripts/test-g10-chvii-editorial-source.cjs"
+      - "docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"
       - "scripts/test-g10-chvii-s1-golden-browser.cjs"
-      - ".github/workflows/g10-chvii-s1-golden-qa.yml"
+      - "scripts/test-g10-chvii-editorial-source.cjs"
+  workflow_dispatch:
 permissions:
   contents: read
 jobs:
