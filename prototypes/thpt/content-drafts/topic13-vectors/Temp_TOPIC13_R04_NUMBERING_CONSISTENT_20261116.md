@@ -79,6 +79,16 @@ Khi đi từ A tới B rồi B tới C, điều ta muốn biết đôi khi chỉ
 
 > **TÍNH CHẤT — Quy tắc ba điểm.** Với ba điểm \(A,B,C\), luôn có \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}\). Khi vẽ quy tắc tam giác, đặt điểm đầu của mũi tên thứ hai tại điểm cuối mũi tên thứ nhất.
 
+Vì mũi tên tổng cho biết đúng **độ dời cuối cùng**, đổi thứ tự hai chặng không thay kết quả nếu ta dịch các mũi tên song song về cùng gốc. Khi có ba chặng, việc ghép hai chặng đầu hay hai chặng sau cũng cho cùng vectơ từ điểm xuất phát tới đích. Đây là lý do ta có thể rút gọn các tổng vectơ dài mà không phụ thuộc thứ tự nhóm. Vectơ-không đóng vai trò một độ dời bằng 0, cộng vào không làm thay đổi kết quả.
+
+> **TÍNH CHẤT — Phép cộng vectơ.** Với các vectơ \(\vec u,\vec v,\vec w\) bất kỳ trong cùng mặt phẳng (và cũng đúng trong không gian), ta có:
+>
+> \[\vec u+\vec v=\vec v+\vec u\quad\text{(giao hoán)},\]
+> \[(\vec u+\vec v)+\vec w=\vec u+(\vec v+\vec w)\quad\text{(kết hợp)},\]
+> \[\vec u+\vec0=\vec0+\vec u=\vec u\quad\text{(vectơ-không)}.\]
+>
+> Những đẳng thức này nói về **vectơ tổng**, không nói rằng độ dài của tổng luôn bằng tổng độ dài. Chẳng hạn \((2,0)+(0,3)=(2,3)=(0,3)+(2,0)\), nhưng độ dài vectơ tổng là \(\sqrt{13}\), không phải \(5\).
+
  **Độ dài của tổng vectơ** \(\left|\overrightarrow{AB}+\overrightarrow{BC}\right|\) không nhất thiết bằng tổng **độ dài hai đoạn** \(AB+BC\). Với hai bước vuông góc, dùng Pitago để tìm độ dời; không cộng hai độ dài như khi tính quãng đường.
 
 **Ví dụ**
@@ -128,6 +138,15 @@ RQ.
 Khi tăng gấp đôi một độ dời, mũi tên dài gấp đôi nhưng vẫn đi cùng hướng. Khi nhân với số âm, mũi tên đảo chiều. Quan sát ấy giúp em hiểu phép nhân vectơ với một số trước khi tính tọa độ.
 
 > **TÍNH CHẤT — Nhân vectơ với một số và xét cùng phương.** Với k thực, độ dài của ku bằng |k|·|u|. k>0 giữ chiều, k<0 đảo chiều, k=0 cho vectơ-không. Quy tắc k(u+v)=ku+kv đúng ở cả mặt phẳng và không gian. Với u,v khác không, v=ku thì chúng cùng phương; dấu k cho biết cùng hay ngược hướng.
+
+Phép nhân một vectơ với số thực còn có những tính chất giúp **khai triển hoặc thu gọn** biểu thức. Khi nhân \(k\) với một tổng, ta có thể nhân từng vectơ thành phần rồi cộng. Tương tự, gộp hai lần nhân cùng một vectơ theo tổng hệ số, hoặc nhân liên tiếp hai số, không thay đổi vectơ cuối cùng.
+
+> **TÍNH CHẤT — Phép nhân vectơ với số thực.** Với hai số thực \(k,l\) và hai vectơ \(\vec u,\vec v\):
+>
+> \[k(\vec u+\vec v)=k\vec u+k\vec v,\qquad (k+l)\vec u=k\vec u+l\vec u,\]
+> \[k(l\vec u)=(kl)\vec u,\qquad 1\vec u=\vec u,\quad 0\vec u=\vec0.\]
+>
+> Ví dụ \(2[(1,2)+(3,-1)]=(8,2)\) và \(2(1,2)+2(3,-1)=(8,2)\), nên phép phân phối cho kết quả giống nhau. Đối với số âm, vẫn phải xét đúng chiều và giữ dấu của hệ số trước khi kết luận.
 
 Khi cần mô tả một độ dời theo **hai phương đã biết**, ta có thể tách nó thành hai vectơ thành phần. Hãy đặt \(\vec a\) và \(\vec b\) cùng gốc, khác \(\vec0\) và **không cùng phương**. Qua đầu mút của \(\vec u\), kẻ các đường song song với hai phương ấy để dựng hình bình hành. Hai cạnh của hình bình hành cho các vectơ thành phần cùng phương \(\vec a\), \(\vec b\), nên có thể viết \(\vec u=x\vec a+y\vec b\). Việc hai phương không song song là điều kiện quyết định: khi đã chọn chúng, vị trí đầu mút của \(\vec u\) xác định đúng một cặp hệ số \((x,y)\). Trong mặt phẳng, điều này đúng với **mọi vectơ \(\vec u\), kể cả vectơ-không**.
 
