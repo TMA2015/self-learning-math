@@ -167,7 +167,7 @@
     <title id="b16-plot-title">Đồ thị hàm số y = x² − 4x + 3</title>
     <desc id="b16-plot-description">Parabol mở lên, đỉnh I(2;−1), trục đối xứng x=2. Đồ thị cắt Ox tại (1;0) và (3;0), cắt Oy tại (0;3). Hai nghiệm đối xứng qua x=2.</desc>
     <rect x="1" y="1" width="758" height="438" rx="18" fill="#f8fbff" stroke="#d1dff1"/>
-    <text x="30" y="36" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#19365d">y = x² − 4x + 3 = (x−2)² − 1</text>
+    <text x="30" y="36" font-family="Arial,sans-serif" font-size="31" font-weight="700" fill="#19365d">y = x² − 4x + 3 = (x−2)² − 1</text>
     <g font-family="Arial,sans-serif">
     <line x1="232" y1="70" x2="232" y2="386" stroke="#dce5f1" stroke-width="1"/>
     <line x1="344" y1="70" x2="344" y2="386" stroke="#dce5f1" stroke-width="1"/>
@@ -181,25 +181,25 @@
     <path d="M687 308 L701 315 L687 322" fill="none" stroke="#344c70" stroke-width="2.5"/>
     <line x1="120" y1="400" x2="120" y2="58" stroke="#344c70" stroke-width="2.5"/>
     <path d="M113 70 L120 56 L127 70" fill="none" stroke="#344c70" stroke-width="2.5"/>
-    <text x="707" y="323" font-size="21" fill="#344c70">x</text>
-    <text x="108" y="57" font-size="21" fill="#344c70">y</text>
-    <text x="102" y="341" font-size="17" fill="#536681">0</text>
-    <text x="232" y="341" font-size="17" fill="#536681" text-anchor="middle">1</text>
-    <text x="344" y="341" font-size="17" fill="#536681" text-anchor="middle">2</text>
-    <text x="456" y="341" font-size="17" fill="#536681" text-anchor="middle">3</text>
-    <text x="568" y="341" font-size="17" fill="#536681" text-anchor="middle">4</text>
-    <text x="97" y="165" text-anchor="end" font-size="17" fill="#536681">3</text>
+    <text x="707" y="323" font-size="30" fill="#344c70">x</text>
+    <text x="108" y="57" font-size="30" fill="#344c70">y</text>
+    <text x="102" y="341" font-size="29" fill="#536681">0</text>
+    <text x="232" y="341" font-size="29" fill="#536681" text-anchor="middle">1</text>
+    <text x="344" y="341" font-size="29" fill="#536681" text-anchor="middle">2</text>
+    <text x="456" y="341" font-size="29" fill="#536681" text-anchor="middle">3</text>
+    <text x="568" y="341" font-size="29" fill="#536681" text-anchor="middle">4</text>
+    <text x="97" y="165" text-anchor="end" font-size="29" fill="#536681">3</text>
     <line x1="344" y1="90" x2="344" y2="369" data-thpt-symmetry-axis="x=2" stroke="#0b8e85" stroke-width="2.5" stroke-dasharray="9 7"/>
-    <text x="358" y="91" font-size="20" font-weight="700" fill="#0b706a">x = 2</text>
+    <text x="358" y="91" font-size="30" font-weight="700" fill="#0b706a">x = 2</text>
     <path d="M86.4 91.9 L92.0 103.8 L97.6 115.3 L103.2 126.6 L108.8 137.7 L114.4 148.5 L120.0 159.0 L125.6 169.3 L131.2 179.3 L136.8 189.0 L142.4 198.5 L148.0 207.8 L153.6 216.7 L159.2 225.4 L164.8 233.9 L170.4 242.1 L176.0 250.0 L181.6 257.7 L187.2 265.1 L192.8 272.2 L198.4 279.1 L204.0 285.8 L209.6 292.1 L215.2 298.2 L220.8 304.1 L226.4 309.7 L232.0 315.0 L237.6 320.1 L243.2 324.9 L248.8 329.4 L254.4 333.7 L260.0 337.8 L265.6 341.5 L271.2 345.0 L276.8 348.3 L282.4 351.3 L288.0 354.0 L293.6 356.5 L299.2 358.7 L304.8 360.6 L310.4 362.3 L316.0 363.8 L321.6 364.9 L327.2 365.8 L332.8 366.5 L338.4 366.9 L344.0 367.0 L349.6 366.9 L355.2 366.5 L360.8 365.8 L366.4 364.9 L372.0 363.8 L377.6 362.3 L383.2 360.6 L388.8 358.7 L394.4 356.5 L400.0 354.0 L405.6 351.3 L411.2 348.3 L416.8 345.0 L422.4 341.5 L428.0 337.7 L433.6 333.7 L439.2 329.4 L444.8 324.9 L450.4 320.1 L456.0 315.0 L461.6 309.7 L467.2 304.1 L472.8 298.2 L478.4 292.1 L484.0 285.7 L489.6 279.1 L495.2 272.2 L500.8 265.1 L506.4 257.7 L512.0 250.0 L517.6 242.1 L523.2 233.9 L528.8 225.4 L534.4 216.7 L540.0 207.8 L545.6 198.5 L551.2 189.0 L556.8 179.3 L562.4 169.3 L568.0 159.0 L573.6 148.5 L579.2 137.7 L584.8 126.6 L590.4 115.3 L596.0 103.8 L601.6 91.9 L607.2 79.8 L612.8 67.5 L618.4 54.9 L624.0 42.0" fill="none" stroke="#2853bb" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
     <circle cx="344" cy="367" r="6" fill="#d2413a" stroke="#ffffff" stroke-width="2"/>
     <circle cx="232" cy="315" r="6" fill="#2853bb" stroke="#ffffff" stroke-width="2"/>
     <circle cx="456" cy="315" r="6" fill="#2853bb" stroke="#ffffff" stroke-width="2"/>
     <circle cx="120" cy="159" r="6" fill="#2853bb" stroke="#ffffff" stroke-width="2"/>
-    <text x="361" y="390" font-size="20" font-weight="700" fill="#a22928">I(2; −1)</text>
-    <text x="213" y="292" font-size="19" fill="#243e82" text-anchor="end">(1; 0)</text>
-    <text x="473" y="301" font-size="19" fill="#243e82">(3; 0)</text>
-    <text x="140" y="151" font-size="19" fill="#243e82">(0; 3)</text>
+    <text x="361" y="390" font-size="30" font-weight="700" fill="#a22928">I(2; −1)</text>
+    <text x="213" y="292" font-size="30" fill="#243e82" text-anchor="end">(1; 0)</text>
+    <text x="473" y="301" font-size="30" fill="#243e82">(3; 0)</text>
+    <text x="140" y="151" font-size="30" fill="#243e82">(0; 3)</text>
     </g>
     </svg>
     <figcaption>Parabol của hàm số \(y=x^2-4x+3\): đỉnh \(I(2;-1)\), trục đối xứng \(x=2\), giao \(Ox\) tại \((1;0)\), \((3;0)\), giao \(Oy\) tại \((0;3)\). Hình minh họa cách đọc tọa độ, không thay thế phép kiểm bằng công thức.</figcaption>
