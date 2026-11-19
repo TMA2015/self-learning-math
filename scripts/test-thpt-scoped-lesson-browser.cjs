@@ -12,23 +12,27 @@ const lessons=(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean);
 const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
 const widths=[390,820,1440];
 const re=/^docs\/thpt-preview\/sgk\/(?:(?:lop-11|lop-12)\/)?chuong-(?:i|ii|iii|iv|v|vi|vii|viii|ix)\/bai-[1-9]\d*\.md$/;
+const chapter=/^docs\/thpt-preview\/sgk\/(?:(?:lop-11|lop-12)\/)?(?:chuong-(?:i|ii|iii|iv|v|vi|vii|viii|ix)\/(?:luyen-tap|tu-kiem-tra-chuong)\.md|chuong-(?:i|ii|iii|iv|v|vi|vii|viii|ix)\.md)$/;
 async function execute(){
- assert(lessons.length>0&&lessons.length<=79,"No canonical SGK lesson paths or too many scoped targets");
+ assert(lessons.length>0&&lessons.length<=120,"No canonical SGK page paths or too many scoped targets");
  assert.equal(new Set(lessons).size,lessons.length,"Duplicate lesson target");
- for(const rel of lessons)assert(re.test(rel)&&fs.existsSync(path.join(root,rel)),"Invalid canonical lesson "+rel);
+ for(const rel of lessons)assert((re.test(rel)||chapter.test(rel))&&fs.existsSync(path.join(root,rel)),"Invalid canonical SGK page "+rel);
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
  let checks=0;
  try{
   for(const rel of lessons){
    const source=fs.readFileSync(path.join(root,rel),"utf8");
+   const isLesson=re.test(rel);
    const expectedTry=[...source.matchAll(/data-thpt-first-try-id="([^"]+)"/g)].map(x=>x[1]);
    const expectedHelp=[...source.matchAll(/data-thpt-help-id="([^"]+)"/g)].map(x=>x[1]);
+   if(isLesson){
    assert.equal(new Set(expectedTry).size,expectedTry.length,rel+" duplicate First Try IDs");
    assert.equal(new Set(expectedHelp).size,expectedHelp.length,rel+" duplicate D6 HELP IDs");
    assert(!/data-(?:thpt-readiness|mastery-credit|mastery-write)/i.test(source),
     rel+" Knowledge must never mount official Readiness/Mastery");
    assert.deepEqual([...source.matchAll(/^=== "([^"]+)"$/gm)].map(x=>x[1]),labels,
     rel+" must retain four owner-approved Golden tabs");
+   }
    const route="/"+rel.slice(5,-3)+"/";
    for(const width of widths){
     const page=await browser.newPage({viewport:{width,height:width===390?844:width===820?1180:900}});
@@ -36,6 +40,7 @@ async function execute(){
     try{
      const response=await page.goto(base+route,{waitUntil:"domcontentloaded",timeout:60000});
      assert(response?.ok(),rel+" "+width+" route not rendered");
+     if(isLesson){
      const tabs=page.locator(".md-content .tabbed-set").first();
      await tabs.waitFor({state:"visible"});
      const found=(await tabs.locator(".tabbed-labels > label").allInnerTexts()).map(s=>s.trim().replace(/\s+/g," "));
@@ -66,7 +71,25 @@ async function execute(){
        assert(await fig.evaluate(x=>x.naturalWidth>0),rel+" "+width+" broken educational image");
       }
      }
-     await page.waitForFunction(()=>document.querySelectorAll("mjx-container").length>0,null,{timeout:30000});
+     }else{
+      const article=page.locator("article.md-content__inner");
+      await article.waitFor({state:"visible"});
+      assert(await article.locator("h1").count()>=1,rel+" "+width+" chapter title missing");
+      if(rel.endsWith("/tu-kiem-tra-chuong.md")){
+       const before=await article.innerText();
+       for(const forbidden of ["Đáp án:", "Lời giải:", "Kết quả tự đánh giá — không phải điểm"]){
+        assert(!before.includes(forbidden),rel+" "+width+" Q16 pre-Final Submit answer/feedback leak "+forbidden);
+       }
+       assert(await article.locator('[data-g10-chapter-selfcheck],[data-g11-chapter-selfcheck],[data-g12-chi-selfcheck],[data-g12-chapter-selfcheck]').count()>0,
+        rel+" "+width+" protected chapter self-check mount missing");
+      }
+      for(const fig of await article.locator("figure img").all()){
+       await fig.evaluate(async img=>{if(img.decode)await img.decode();});
+       assert(await fig.evaluate(img=>img.naturalWidth>0),rel+" "+width+" figure failed to render");
+      }
+     }
+     const mathExpected=isLesson||/\\\(|\\\[|\$\$/.test(source);
+     if(mathExpected)await page.waitForFunction(()=>document.querySelectorAll("mjx-container").length>0,null,{timeout:30000});
      const layout=await page.evaluate(()=>{
       const root=document.querySelector("article.md-content__inner");
       const style=getComputedStyle(root);
@@ -82,11 +105,11 @@ async function execute(){
      assert(layout.overflow<=20,rel+" "+width+" horizontal overflow "+layout.overflow+"px");
      assert(layout.font?.trim(),rel+" "+width+" font stack failed");
      assert(!layout.brokenText,rel+" "+width+" replacement glyph/encoding damage");
-     assert(layout.math>0,rel+" "+width+" MathJax did not typeset");
+     if(mathExpected)assert(layout.math>0,rel+" "+width+" MathJax did not typeset");
      assert.equal(layout.unstyled,0,rel+" "+width+" Golden concept/rule cards lack style");
      checks++;
-     console.log("PASS SCOPED Golden AP "+rel+" @"+width+"px: 4 tabs, "+layout.math+" rendered math, "+
-      expectedTry.length+" canonical First Try, "+expectedHelp.length+" D6, layout/font/SVG/Q16");
+     console.log("PASS SCOPED Golden AP "+rel+" @"+width+"px: "+(isLesson?"4 tabs / ":"chapter hub / ")+
+      layout.math+" rendered math, "+expectedTry.length+" First Try, "+expectedHelp.length+" D6, layout/font/SVG/Q16");
     }finally{await page.close();}
    }
   }
