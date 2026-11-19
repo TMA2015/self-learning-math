@@ -49,6 +49,8 @@ jobs:
           node scripts/test-thpt-release-queue.cjs
           node scripts/test-thpt-handoff-gate-v2.cjs --self-test
           node scripts/test-thpt-handoff-gate-v2.cjs
+          node scripts/test-thpt-q18-release-test-router.cjs --self-test
+          node scripts/test-thpt-q18-release-test-router.cjs
 
   lesson-presentation:
     name: Changed lesson(s) Golden, CSS, MathJax, responsive, Q16
