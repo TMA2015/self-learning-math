@@ -43,7 +43,7 @@ for(const {n,count,first,bridge:expectedBridge,suffix:expectedSuffix}of lessons)
    "Original D6 IDs B"+n+" immutable");
   assert.equal((txt.match(/^    \?\?\? tip "/gm)||[]).length,n===12?3:2,
    "B"+n+" two original D6 + new independent calculator error");
-  assert.equal((txt.match(n===14?/^    ### Ví dụ [123]\\./gm:/^    ### 3\\.[1-4]\\. Ví dụ [1-4] —/gm)||[]).length,n===14?3:4,
+  assert.equal((txt.match(n===14?/^    ### Ví dụ [123]\./gm:/^    ### 3\.[1-4]\. Ví dụ [1-4] —/gm)||[]).length,n===14?3:4,
    "B"+n+" fully reasoned examples, not duplicated cards");
   if(n===12){
    assert(txt.includes('data-thpt-first-try-id="THPT-G10-CHV-TRY-CALC-R01"')&&
