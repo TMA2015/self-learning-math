@@ -132,4 +132,5 @@ const area=x=>x*(18-2*x);assert(area(3)===36&&area(6)===36&&area(4)>36&&area(2)<
 assert(Math.abs(Math.sqrt(4*4+9)/5-(8-4)/4)<1e-12&&((8-364/9)/4)<0,"B18 filtered root");
 const b16=fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-vi/bai-16.md"),"utf8");
 assert(b16.includes("Tính chất theo dấu hệ số")&&b16.includes("Hàm số bậc hai \\(a\\ne0\\)")&&!b16.includes("Hàm số bậc hai (a\n    e0)"),"B16 a!=0 and full formal monotonicity");
+require("./test-g10-b15-p2-editorial-delta.cjs");
 console.log("PASS G10 ChVI Q18 original→P1→example UX source chain: 19/19 First Try, 19 D6, 5 original figures, 13 example sections; NO DEPLOY.");
