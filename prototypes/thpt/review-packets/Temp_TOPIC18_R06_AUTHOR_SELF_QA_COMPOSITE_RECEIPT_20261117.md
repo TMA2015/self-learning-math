@@ -10,8 +10,8 @@ RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
-SOURCE_BLOB: 21ce8179678bd0e9bc944d80dbde9646aaf73647
-ACADEMIC_SOURCE_BLOB: 21ce8179678bd0e9bc944d80dbde9646aaf73647
+SOURCE_BLOB: 7e88552ce3d6e7b224085babd48c3dbcc2d0e5ab
+ACADEMIC_SOURCE_BLOB: 7e88552ce3d6e7b224085babd48c3dbcc2d0e5ab
 FROZEN_R04_READY_SOURCE_BLOB: 41daf40a3b639a3ef35e129099525137a05b1848
 FROZEN_R04_FULL_AUTHOR_Q18_RECEIPT_BLOB: 5262fd454346801b050b5eb4f3dc407bc99d3530
 R05_GEOMETRIC_MODEL_SOURCE_BLOB: af8a3529398e5f876d5c979b0d5d26df3519d6ac
@@ -76,4 +76,10 @@ The **original R05 learner file** now directly contains the 3 mathematically ver
 
 ## 18/11/2026 · exact merged-base title delta, new effective source SHA
 
-The currently effective learner is Git blob `21ce8179678bd0e9bc944d80dbde9646aaf73647`. Its full 3,638-line source was compared line-by-line against previous exact learner blob `fda1fa60d8448c016c24159156c6898de2bc673f`: **one line differs**, line 506 changes `### 2. Phương pháp tọa độ trong không gian` to `**Chuyển mạch — Phương pháp tọa độ trong không gian**` (heading/learner-transition prose only). There is no new mathematical proposition, condition, canonical item, question, answer, worked solution, rubric, SVG or Q16 exposure change. This is `DELTA_A_UI` / source-equivalent paragraph hierarchy, inspected on the actual merge-tested base revision, not assumed from stale PR head. Q18 original source mathematical content and independent source checks are preserved on immutable historical blob; the present `AUTHOR_SELF_VERIFIED` source-specific receipt covers the one-line heading delta. `P0=0, P1=0` for the affected heading. No independent full-Topic NotebookLM PASS, browser QA or merge/deploy authorization is implied.
+The currently effective learner is Git blob `7e88552ce3d6e7b224085babd48c3dbcc2d0e5ab`. Its full 3,638-line source was compared line-by-line against previous exact learner blob `fda1fa60d8448c016c24159156c6898de2bc673f`: **one line differs**, line 506 changes `### 2. Phương pháp tọa độ trong không gian` to `**Chuyển mạch — Phương pháp tọa độ trong không gian**` (heading/learner-transition prose only). There is no new mathematical proposition, condition, canonical item, question, answer, worked solution, rubric, SVG or Q16 exposure change. This is `DELTA_A_UI` / source-equivalent paragraph hierarchy, inspected on the actual merge-tested base revision, not assumed from stale PR head. Q18 original source mathematical content and independent source checks are preserved on immutable historical blob; the present `AUTHOR_SELF_VERIFIED` source-specific receipt covers the one-line heading delta. `P0=0, P1=0` for the affected heading. No independent full-Topic NotebookLM PASS, browser QA or merge/deploy authorization is implied.
+
+
+<!-- OWNER_EDITORIAL_DELTA_A_TOPIC18_20261119 -->
+### Owner editorial Delta A · 19/11/2026 · 40 nhãn phát biểu toán
+
+Chủ dự án phê duyệt sửa biên tập tại nguồn CONTENT_READY; **không đổi toán và giữ nguyên CONTENT_READY**. Baseline learner `21ce8179678bd0e9bc944d80dbde9646aaf73647` → learner hiện hành `7e88552ce3d6e7b224085babd48c3dbcc2d0e5ab`. So sánh trực tiếp xác nhận **chỉ 40 dòng nhãn** `> **Kiến thức cần ghi nhớ**` được thay bằng `> **ĐỊNH NGHĨA/TÍNH CHẤT/CÔNG THỨC/PHƯƠNG PHÁP/QUY TẮC/ĐIỀU KIỆN — <tiêu đề tiểu mục>**`. Toàn bộ thân khối, các dòng toán, giả thiết, ví dụ, Vận dụng, Đối chiếu, câu hỏi, lời giải, ID, placement, SVG, RD1 và 40 outcomes giữ nguyên byte; phát biểu vẫn sử dụng nguyên văn câu toán cũ. `DELTA_A_UI`, Q03/owner checklist #864; `Q18_AUTHOR_SELF_VERIFIED_SOURCE_EQUIVALENCE`, không cần NotebookLM review lại hoặc full browser test. Các khối không được mở rộng bằng khẳng định toán mới; nếu cần bổ sung phát biểu học thuật sau này thì phân Delta C riêng. Handoff/sổ được source-lock lại tại commit bàn giao; không website merge/deploy.
