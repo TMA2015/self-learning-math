@@ -1,3 +1,13 @@
+<!-- TOP18_S1_G12T1_B06_PARALLELEPIPED_RULE_20261120 -->
+## 20/11/2026 — TOP18-O03 mandatory S1 quy tắc hình hộp, Delta C academic/PED
+
+**Direct SGK source:** Toán 12 Kết nối tri thức Tập 1 Bài 6 trang in 49–50, mục “Quy tắc hình hộp”: trong hình hộp \(ABCD.A'B'C'D'\), \(\overrightarrow{AB}+\overrightarrow{AD}+\overrightarrow{AA'}=\overrightarrow{AC'}\). Public scan <https://sqhx-hanoi.mediacdn.vn/91579363132710912/2025/11/18/1-toan-12-tap-1-kntt-17634587393041073129419.pdf>, text reference at B6 §quy tắc hình hộp, page 50. No PDF printed-page guessing from unrelated SBT.
+
+**Confirmed deficiency:** former learner `7e88552ce3d6e7b224085babd48c3dbcc2d0e5ab` explained the box rule in a worked Example but its formal `QUY TẮC — Cộng vectơ theo đường đi` contained no explicit corresponding identity. Replaced **only that one formal callout** with precise triangle rule + box rule and a description of directional path; current sole learner `6d58c3652c3d51fdeeea3ac47f9a3b798502f071`. Existing image (near B6), worked Example and Vận dụng stay untouched.
+
+**Affected outcome Q18 AUTHOR_SELF_VERIFIED:** Algebraically \(AB+AD=AC\), \(AA'=CC'\), so \(AC+CC'=AC'\), and translations preserve the vector equality for arbitrary nondegenerate parallelepiped. Verified by symbol manipulation, 5 deterministic source assertions (only one block changed, 0 example change, balanced MathJax, 0 item ID delta, reversible source diff). No changed math in original examples/assessment, no new canonical. `DELTA_C_ACADEMIC_MATERIAL` due to adding explicit mandatory formal rule. Affected S1-O03 academic/PED P0/P1 0 after this verification; original pre-existing Q18 historical PASS scope unchanged; no new full Topic NotebookLM independent PASS, RELEASE not authorized. Under owner instruction maintain original AUTHORING `CONTENT_READY` after source-locked upgrade; **full 22-topic SGK source coverage remains open**.
+
+---
 # CĐ18 · SOURCE-LOCKED AUTHOR_SELF_QA — nội dung vectơ đã chỉnh ngay trên nguồn hiện hành · 17/11/2026
 
 AUTHOR_SELF_QA_RECEIPT: COMPOSITE_WITH_IMMUTABLE_BASELINE_AND_VERIFIED_TARGETED_DELTAS
@@ -10,8 +20,8 @@ RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
-SOURCE_BLOB: 7e88552ce3d6e7b224085babd48c3dbcc2d0e5ab
-ACADEMIC_SOURCE_BLOB: 7e88552ce3d6e7b224085babd48c3dbcc2d0e5ab
+SOURCE_BLOB: 6d58c3652c3d51fdeeea3ac47f9a3b798502f071
+ACADEMIC_SOURCE_BLOB: 6d58c3652c3d51fdeeea3ac47f9a3b798502f071
 FROZEN_R04_READY_SOURCE_BLOB: 41daf40a3b639a3ef35e129099525137a05b1848
 FROZEN_R04_FULL_AUTHOR_Q18_RECEIPT_BLOB: 5262fd454346801b050b5eb4f3dc407bc99d3530
 R05_GEOMETRIC_MODEL_SOURCE_BLOB: af8a3529398e5f876d5c979b0d5d26df3519d6ac
