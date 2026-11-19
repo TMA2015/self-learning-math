@@ -51,6 +51,7 @@ INTERACT = """() => {
  const range=[...document.querySelectorAll('input[type=range]')].find(x=>!x.disabled);
  const select=[...document.querySelectorAll('select')].find(x=>!x.disabled&&x.options.length>1);
  const box=[...document.querySelectorAll('input[type=checkbox]')].find(x=>!x.disabled);
+ const num=[...document.querySelectorAll('input[type=number]')].find(x=>!x.disabled);
  if(range){
    const v=range.value;range.value=(v===range.max?range.min:range.max);
    range.dispatchEvent(new Event('input',{bubbles:true}));
@@ -64,6 +65,10 @@ INTERACT = """() => {
    const v=box.checked;box.checked=!v;
    box.dispatchEvent(new Event('change',{bubbles:true}));
    chosen={type:'checkbox',id:box.id,old:v,new:box.checked};
+ }else if(num){
+   const v=num.value;num.value=(v===num.max?num.min:num.max);
+   num.dispatchEvent(new Event('change',{bubbles:true}));
+   chosen={type:'number',id:num.id,old:v,new:num.value};
  }
  return {chosen,textUpdated:document.body.innerText!==before};
 }"""
@@ -86,6 +91,15 @@ def specific(page, slot):
             max=Math.max(max,Math.abs(x.errorCheck));n++;
           }
           return n>500&&max<1e-9;
+        }""")
+    if slot == "21":
+        return page.evaluate("""() => {
+          const q=window.__SLM_MATH_LAB_21__;if(!q)return false;
+          const start=q.getState(),r=q.getResult();
+          const conservation=r.total===10000&&r.AB+r.AN+r.NB+r.NN===10000;
+          const zero=q.update({pA:0,pBA:0,pBN:0})&&q.getResult().B===0;
+          q.update(start);
+          return conservation&&zero&&q.getResult().B===r.B;
         }""")
     if slot == "22":
         return page.evaluate("""() => {
