@@ -240,19 +240,72 @@ assert(fig16.includes("x = 2")&&fig16.includes("I(2; −1)")&&
 assert(fig16.includes("thpt-r4-concept-figure")&&fig16.includes('viewBox="0 0 760 440"'),
  "B16 plotted graph should fit existing Golden responsive figure treatment");
 
-// P1/Q05/Q17 from immutable deep audit #862: B16 SGK must be independent
-// of Topic demos. These are substantive AUTHORING defects, not a reason
-// to delete this guard or relabel existing demonstrations as approved items.
+// G10 B16 canonical SGK outcome coverage from the SAME public Core/Practice
+// file (not parallel draft/Topic demo), and shared single Written library.
 const coreB16=fs.readFileSync(path.join(root,
  "docs/thpt-preview/sgk/core/ham-so-bac-hai.md"),"utf8");
-const topicB16=fs.readFileSync(path.join(root,
- "docs/thpt-preview/chuyen-de/ham-so/luyen-tap.md"),"utf8");
 const runtimeB16=fs.readFileSync(path.join(root,
  "docs/assets/javascripts/thpt-r4-preview.js"),"utf8");
+const writtenB16=fs.readFileSync(path.join(root,
+ "docs/thpt-preview/thu-vien/tu-luan.md"),"utf8");
+const topicB16=fs.readFileSync(path.join(root,
+ "docs/thpt-preview/chuyen-de/ham-so/luyen-tap.md"));
+const topicPrior=cp.spawnSync("git",["show",
+ "43acc50becf8a5cb3d83dfdb4ce3a2b5dc985b68:docs/thpt-preview/chuyen-de/ham-so/luyen-tap.md"],
+ {cwd:root});
+assert.equal(topicPrior.status,0,"Cannot read frozen Topic version");
+assert.equal(blob(topicB16),blob(topicPrior.stdout),"Topic demo must remain byte-exact unchanged");
 assert(!coreB16.includes("CHỈ DEMO")&&!coreB16.includes("CANONICAL ITEM · PILOT"),
- "BLOCKED_BY_AUTHORING CHVI-B16-F02 Q05/Q17: SGK B16 Core remains an unapproved demo");
-assert(!topicB16.includes('data-thpt-canonical-item="PRACTICE-THPT-DEMO-01"')&&
- !runtimeB16.includes('"b16-practice":["../../../chuyen-de/ham-so/luyen-tap/"'),
- "BLOCKED_BY_AUTHORING CHVI-B16-F02 Q05/Q17: B16 SGK practice still delegates to Topic demo");
+ "B16 SGK canonical Core/Practice source must be full learner content, not demo");
+assert(coreB16.includes('data-thpt-core data-thpt-bank-lesson="16"')&&
+ coreB16.includes('data-thpt-practice data-thpt-bank-lesson="16"'),
+ "B16 missing distinct SGK Core and Practice placements in same canonical bank");
+assert(runtimeB16.includes('"b16-core":["../../core/ham-so-bac-hai/","[data-thpt-core]"]')&&
+ runtimeB16.includes('"b16-practice":["../../core/ham-so-bac-hai/","[data-thpt-practice]"]'),
+ "B16 SGK Core/Practice must load the SAME independent SGK canonical bank");
+assert(!runtimeB16.includes('"b16-practice":["../../../chuyen-de/ham-so/luyen-tap/"'),
+ "B16 SGK Practice must NEVER delegate to Topic demo");
+const bankRecords=[...coreB16.matchAll(/data-thpt-canonical-item="([^"]+)" data-thpt-outcome-id="([^"]+)" data-thpt-exposure-role="([^"]+)"/g)]
+ .map(m=>({id:m[1],outcome:m[2],role:m[3]}));
+assert.equal(bankRecords.length,12,"B16 requires 12 complete learner-facing canonical formative entries");
+assert.equal(new Set(bankRecords.map(r=>r.id)).size,12,"B16 duplicate canonical item");
+for(const role of ["SGK_CORE","SGK_PRACTICE"]){
+ const records=bankRecords.filter(x=>x.role===role);
+ assert.equal(records.length,6,"B16 6 distinct public formative items per role "+role);
+ for(let o=1;o<=5;o++)
+  assert(records.some(r=>r.outcome==="B16_OUT_0"+o),
+   "B16 "+role+" missing outcome B16_OUT_0"+o);
+}
+assert(bankRecords.filter(r=>r.id==="THPT-CORE-QF01").length===1,
+ "Existing QF01 canonical item must be preserved without cloning");
+assert((coreB16.match(/<details><summary>Đối chiếu lời giải sau khi tự làm<\/summary>/g)||[]).length===12,
+ "B16 all 12 public items must offer voluntary self-compare only after learner action");
+assert(!/data-thpt-readiness|data-mastery-credit|data-mastery-write|data-thpt-final/.test(coreB16),
+ "Public formative B16 must not unlock Q16/Final Submit/Mastery");
+const writtenIds=[...writtenB16.matchAll(/data-thpt-written-canonical="(HPT-G10-CHVI-WRI-16-\d{2})"/g)].map(m=>m[1]);
+assert.deepEqual(writtenIds,["HPT-G10-CHVI-WRI-16-01","HPT-G10-CHVI-WRI-16-02"],
+ "B16 must have one ordinary Written and one Anchor in the EXISTING shared library");
+for(const id of writtenIds){
+ const at=writtenB16.indexOf('data-thpt-written-canonical="'+id+'"');
+ const body=writtenB16.slice(at,writtenB16.indexOf("</section>",at));
+ assert(body.includes("rubric tự chấm")&&body.includes("<table>")&&
+ body.includes("<details>")&&!body.includes("data-mastery-credit"),
+  "B16 Written "+id+" needs independent stem, closed answer and a rubric without mastery");
+}
+const qf=(x)=>x*x-2*x-8;
+assert(qf(-2)===0&&qf(4)===0&&qf(1)===-9&&qf(0)===qf(2),
+ "B16 WRI-16-01 independently recomputed vertex, roots, Oy and symmetry");
+const revenue=p=>p*(160-2*p);
+assert(revenue(40)===3200&&revenue(30)===3000&&revenue(50)===3000&&
+ [0,10,20,60,70,80].every(p=>revenue(p)<3000),
+ "B16 WRI-16-02 independent revenue maximum and threshold");
+const area=x=>x*(36-2*x);
+assert(area(9)===162&&[1,3,12,17].every(x=>area(x)<162),
+ "B16 Practice independent three-sided-fence optimum");
+const fSegment=x=>-(x-2)**2+7;
+assert(fSegment(3)===6&&fSegment(5)===-2&&
+ [3,3.5,4,4.5,5].every(x=>fSegment(x)<=6&&fSegment(x)>=-2),
+ "B16 Practice restricted-domain max/min");
+console.log("PASS B16 Q05/Q06/Q15/Q17 self-audit: 12 unique SGK Core/Practice entries (all 5 outcomes each) + 2 Written with rubric, independent from Topic demo.");
 require("./test-g10-b15-p2-editorial-delta.cjs");
 console.log("PASS G10 ChVI Q18 original→P1→example UX source chain: 19/19 First Try, 19 D6, 5 original figures, 13 example sections; NO DEPLOY.");
