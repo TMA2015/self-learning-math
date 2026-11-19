@@ -7,6 +7,13 @@
 **S1:** SGK Toán 10 Kết nối tri thức tập 1, printed pp78–83, §1 Số trung bình và trung vị / §2 Tứ phân vị / §3 Mốt, verified against original frozen teaching source and public SGK transcription (external witness, **not** publisher-authenticated full PDF). The authentic SGK/SBT scanned edition and PDF-page offset remain **SOURCE_RECEIPT_S1_PDF_UNVERIFIED**. No guessed PDF page numbers or SBT page references.  
 **Q18_REVIEW:** targeted independent Academic/PED verification of genuinely changed explanation/exemplars (Delta C), or signed owner-authorized Q18 self-QA supported by direct S1 evidence, remains to be collected. No PASS is self-issued here.
 
+**BASELINE_LESSON_GIT_BLOB:** `0459b67858246cb6136cf9a2cf9e7a7d18bd27be`  
+**CANDIDATE_LESSON_GIT_BLOB:** `d15c561b281986f3e122dcaba1a25ccf0046fda7`  
+**CANDIDATE_GOLDEN_CSS_BLOB:** `a4fa446f5437ae5054627700434fb101524827c4`  
+**G10_B01_B12_FROZEN_CSS_BLOB:** `aac2ad16261382987ea0fbb47ceee0987c5f9631`  
+**ACADEMIC_PED_REVIEW_STATE:** `DELTA_C_REVIEW_HOLD`  
+**S1_AUTHENTIC_PDF_STATE:** `SOURCE_RECEIPT_S1_PDF_UNVERIFIED`
+
 ## Canonical and immutable source custody
 
 | Role | Path / evidence | Git blob SHA |
