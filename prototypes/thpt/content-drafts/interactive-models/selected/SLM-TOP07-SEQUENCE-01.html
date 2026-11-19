@@ -53,8 +53,8 @@ canvas,svg{background:var(--slm-canvas)!important;border-color:var(--slm-border)
 <p id="predict"></p>
 <div class="controls" id="controls" aria-label="Thông số mô hình"></div>
 <div class="canvaswrap"><canvas id="plot" role="img" aria-label="Hình toán học thay đổi theo điều khiển. Nội dung kết quả luôn được mô tả bằng văn bản dưới hình."></canvas></div>
-<div class="legend"><span>Đường chính</span><span class="second">Đường so sánh</span><span class="marker">Điểm/tham số đang chọn</span></div>
-<div class="result" id="readout" aria-live="polite" role="status"></div>
+<div class="legend"><span>Cấp số cộng uₙ</span><span class="second">Cấp số nhân vₙ</span><span class="marker">Số hạng n đang chọn</span></div>
+<details class="result" id="numeric-check"><summary>Đối chiếu giá trị và cách so sánh hai dãy</summary><div id="readout" aria-live="polite" role="status"></div></details>
 <div class="actions"><button id="reset" type="button">Đặt lại</button></div>
 <p id="apply"></p>
 <details id="compare"><summary>Đối chiếu · Vì sao có kết quả này?</summary><p id="reason"></p></details>
@@ -88,13 +88,16 @@ switch(id){
 case "SLM-TOP07-SEQUENCE-01":
 n=val("n");var d=val("d"),ratio=val("r"),ap=j=>2+(j-1)*d,gp=j=>2*Math.pow(ratio,j-1),topVal=Math.max(ap(10),gp(10),3)*1.12;g=graph(.5,10.5,0,topVal);
 for(i=1;i<=10;i++){if(i>1){line(g.X(i-1),g.Y(ap(i-1)),g.X(i),g.Y(ap(i)),C.blue,1.5,[3,4]);line(g.X(i-1),g.Y(gp(i-1)),g.X(i),g.Y(gp(i)),C.green,1.5,[3,4])}dot(g.X(i),g.Y(ap(i)),i===n?C.orange:C.blue,3.7);dot(g.X(i),g.Y(gp(i)),i===n?C.orange:C.green,3.7)}
-g.end();setText("n="+n+": cấp số cộng uₙ="+fmt(ap(n))+"; cấp số nhân vₙ="+fmt(gp(n))+". Dấu chấm tương ứng các số hạng nguyên, nét đứt chỉ giúp nối mắt, không cho phép n không nguyên.");break;
+g.end();var firstAhead=null;for(var j=2;j<=10;j++){if(gp(j)>ap(j)+1e-9){firstAhead=j;break;}}
+var relation=Math.abs(ap(n)-gp(n))<1e-9?"bằng nhau":ap(n)>gp(n)?"uₙ lớn hơn vₙ":"vₙ lớn hơn uₙ";
+var firstText=firstAhead===null?"Trong 10 số hạng đầu, vₙ chưa vượt uₙ.":"Trong phạm vi 10 số hạng, vₙ vượt uₙ lần đầu ở n="+firstAhead+".";
+setText("n="+n+": cấp số cộng uₙ="+fmt(ap(n))+"; cấp số nhân vₙ="+fmt(gp(n))+"; "+relation+". "+firstText+" Công sai d="+fmt(d)+": mỗi bước u tăng cố định "+fmt(d)+". Công bội r="+fmt(ratio)+": mỗi bước v nhân "+fmt(ratio)+(Math.abs(ratio-1)<1e-9?" nên v không đổi.":"; không vì thế mà v lớn hơn u tại mọi n.")+" Mỗi chấm là một số hạng với n nguyên dương; nét đứt chỉ nối mắt.");break;
 }
 if(!interacted){result.textContent="Hãy dự đoán kết quả trước, sau đó thay đổi ít nhất một thanh trượt hoặc bấm giá trị bằng bàn phím để quan sát."}
 }
-function schedule(){interacted=true;if(pending)return;pending=true;window.requestAnimationFrame(function(){pending=false;draw()})}
+function schedule(){document.getElementById("numeric-check").open=false;document.getElementById("compare").open=false;interacted=true;if(pending)return;pending=true;window.requestAnimationFrame(function(){pending=false;draw()})}
 Object.keys(el).forEach(function(k){el[k].input.addEventListener("input",schedule);el[k].input.addEventListener("change",schedule)});
-document.getElementById("reset").addEventListener("click",function(){Object.keys(el).forEach(function(k){el[k].input.value=el[k].initial});document.getElementById("compare").open=false;interacted=false;draw()});
+document.getElementById("reset").addEventListener("click",function(){Object.keys(el).forEach(function(k){el[k].input.value=el[k].initial});document.getElementById("compare").open=false;document.getElementById("numeric-check").open=false;interacted=false;draw()});
 window.addEventListener("resize",schedule);draw();
 })();
 </script>
