@@ -12,12 +12,57 @@ const CANONICAL_PAGE=p=>LESSON.test(p)||CHAPTER_PAGE.test(p);
 const RECEIPT=/^prototypes\/thpt\/ux795\/[A-Za-z0-9_.-]+\.md$/;
 const SOURCE_TEST=/^scripts\/(?:test-(?:g10-|thpt-g10-|thpt-q18-g10-|ux795-g10-)[A-Za-z0-9_.-]+|thpt-q18-g10-source-receipt)\.cjs$/;
 const FIGURE=/^docs\/assets\/images\/thpt\/[A-Za-z0-9_.-]+\.(?:svg|png|jpg|webp)$/i;
+
+const B16_LESSON="docs/thpt-preview/sgk/chuong-vi/bai-16.md";
+const B16_ALLOWED=new Set([
+ "docs/thpt-preview/sgk/chuong-vi/bai-16.md",
+ "docs/thpt-preview/sgk/core/ham-so-bac-hai.md",
+ "docs/thpt-preview/thu-vien/tu-luan.md",
+ "docs/assets/javascripts/thpt-r4-preview.js",
+ "docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css",
+ "prototypes/thpt/shared-items/thpt-g10-chvi-reviewed-public-placement-v1.cjs",
+ "prototypes/thpt/ux795/G10_CHVI_B16_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261119.md",
+ ".github/workflows/ux795-g10-draft-render-qa.yml",
+ ".github/workflows/qa-pr.yml",
+ ".github/workflows/thpt-r4-preview-quality.yml",
+ "scripts/test-thpt-release-impact.cjs",
+ "scripts/test-g10-b15-golden-css-source.cjs",
+ "scripts/test-g10-b15-p2-editorial-delta.cjs",
+ "scripts/test-g10-chvi-editorial-source.cjs",
+ "scripts/test-thpt-chvi-reviewed-formative.cjs",
+ "scripts/test-thpt-chvi-reviewed-knowledge-parity.cjs",
+ "scripts/test-thpt-r4-preview-browser.js",
+ "scripts/test-ux795-g10-chvi-ped-mapping.cjs",
+ "scripts/test-ux795-g10-chvi-worked-math.cjs",
+ "scripts/test-ux795-g10-postmerge-headings.cjs",
+ "scripts/thpt-q18-g10-source-receipt.cjs"
+]);
+function b16RuntimeIsIsolated(){
+ const crypto=require("node:crypto"),filename="docs/assets/javascripts/thpt-r4-preview.js";
+ if(!fs.existsSync(filename))return false;
+ let s=fs.readFileSync(filename,"utf8");
+ const a=s.indexOf(" function initB16CanonicalBank(){"),b=s.indexOf(" function init() {",a+1);
+ if(a<0||b<0)return false;
+ s=s.slice(0,a)+s.slice(b);
+ const edits=[
+ ["  initB16CanonicalBank();\n",""],
+ ['"b16-practice":["../../core/ham-so-bac-hai/","[data-thpt-practice]"]','"b16-practice":["../../../chuyen-de/ham-so/luyen-tap/","[data-thpt-practice]"]'],
+ ["// B16 imports its ONE SGK canonical Core/Practice bank; Topic demos are independent.","// B16 uses the ORIGINAL exercise markup from existing SGK Core/Topic Practice URLs."]
+ ];
+ for(const [from,to] of edits){if(s.split(from).length!==2)return false;s=s.replace(from,to)}
+ const bytes=Buffer.from(s),sha=crypto.createHash("sha1").update("blob "+bytes.length+"\0").update(bytes).digest("hex");
+ return sha==="fb6650428bc148b536cb1d26ef34d5d521ddf715";
+}
 function classify(paths,{manual=false}={}){
  const files=paths.map(s=>s.trim()).filter(Boolean);
  if(manual)return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"MANUAL_FULL_REQUEST"};
  if(!files.length)return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"EMPTY_DIFF"};
  if(files.some(x=>x.includes("..")||x.includes("\\")||x.startsWith("/")))
   return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"UNSAFE_PATH"};
+ if(files.includes(B16_LESSON)&&files.every(x=>B16_ALLOWED.has(x))&&
+   (!files.includes("docs/assets/javascripts/thpt-r4-preview.js")||b16RuntimeIsIsolated()))
+  return {impact:"SCOPED_G10_B16",full_suite:"false",changed_lessons:B16_LESSON,
+   reason:"OWNER_B16_EXACT_FILES_AND_BYTE_VERIFIED_RUNTIME"};
  const lessons=files.filter(x=>CANONICAL_PAGE(x));
  const safeCompanions=x=>RECEIPT.test(x)||SOURCE_TEST.test(x);
  if(lessons.length&&files.every(x=>CANONICAL_PAGE(x)||safeCompanions(x)||FIGURE.test(x))){
@@ -60,6 +105,12 @@ function selfTest(){
   [fixture,"docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js"],
   [fixture,"docs/assets/images/thpt/unknown.svg"],["docs/thpt-preview/../bad.md"]
  ])assert.equal(classify(unsafe).full_suite,"true","unsafe/mixed path must route FULL: "+unsafe);
+ assert.equal(classify([B16_LESSON,"docs/assets/javascripts/thpt-r4-preview.js",
+ ".github/workflows/qa-pr.yml",".github/workflows/thpt-r4-preview-quality.yml",
+ "scripts/test-thpt-release-impact.cjs"]).impact,"SCOPED_G10_B16");
+ for(const extra of ["mkdocs.yml","docs/assets/javascripts/firebase-gemini-v1.js",
+ "docs/thpt-preview/sgk/chuong-vii/bai-19.md","docs/assets/data/assessment/private.json"])
+ assert.equal(classify([B16_LESSON,extra]).full_suite,"true","mixed change must still use FULL");
  assert.equal(classify([fixture],{manual:true}).impact,"FULL");
  console.log("PASS scoped CI impact classifier: canonical SGK page/receipt-only fast lanes, global/unknown/assessment full, manual full");
 }
