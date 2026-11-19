@@ -62,8 +62,16 @@ if(require.main===module){
   assert.equal(process.argv.length,3,"Supply git diff --name-only path file");
   const files=fs.readFileSync(process.argv[2],"utf8").split(/\r?\n/);
   const out=classify(files,{manual:process.env.RELEASE_QA_FORCE_FULL==="true"});
+  // CI migration itself must exercise the new renderer against the most recent
+  // owner-P2 accepted Golden baseline (B14), even though its paths are global.
+  const qaSmoke=files.some(x=>[
+   ".github/workflows/thpt-scoped-release-qa.yml",
+   "scripts/test-thpt-scoped-lesson-browser.cjs",
+   "scripts/test-thpt-release-impact.cjs"
+  ].includes(x));
   if(process.env.GITHUB_OUTPUT)fs.appendFileSync(process.env.GITHUB_OUTPUT,
-   "impact="+out.impact+"\nfull_suite="+out.full_suite+"\nchanged_lessons="+out.changed_lessons+"\n");
+   "impact="+out.impact+"\nfull_suite="+out.full_suite+"\nchanged_lessons="+out.changed_lessons+
+   "\nqa_smoke="+qaSmoke+"\n");
   else process.stdout.write("impact="+out.impact+"\nfull_suite="+out.full_suite+"\nchanged_lessons="+out.changed_lessons+"\n");
   console.error("RELEASE_CI_IMPACT "+JSON.stringify(out));
  }
