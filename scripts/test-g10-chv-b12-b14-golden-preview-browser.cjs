@@ -13,7 +13,7 @@ const base=process.env.SLM_CHV_URL||"http://127.0.0.1:8765";
 const expectedSources={
  12:"a2ea6c909cdd2317188b13c2bde22e7923dba3de",
  13:"cb5adaa7804902fece7dd4ec30575733efd4c9c1",
- 14:"21c1ef59277f742b45a27900b173fac031a4a04f"
+ 14:"7538771fdaede3de14143090db35e74a3c7939ff"
 };
 const ids={12:5,13:5,14:5};
 const names=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
@@ -145,8 +145,18 @@ const blob=data=>{
      "B13 must be exactly one isolated scoped palette appendix");
     assert.equal(blob(css.toString("utf8").slice(0,b13At-1)),color("GOLDEN_CSS_CURRENT_BLOB"),
      "B12 owner-accepted Golden CSS must be byte-identical prefix");
-    assert.equal(blob(css),"a4fa446f5437ae5054627700434fb101524827c4",
-     "B13 Golden CSS must match new signed candidate Q18 SHA");
+    const cssText=css.toString("utf8");
+    const b14Mark="/* G10 ChV B14 · scoped X-C RELEASE Golden";
+    const atB14=cssText.indexOf(b14Mark);
+    const receipt=fs.readFileSync(root+
+     "/prototypes/thpt/ux795/G10_CHV_B14_Q18_GOLDEN_ENRICHMENT_DELTA_R01_20261119.md","utf8");
+    const f=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    assert(atB14>0&&cssText.indexOf(b14Mark,atB14+1)<0,
+     "B14 Golden appendix exactly once, after B01–B13 approved CSS");
+    assert.equal(blob(Buffer.from(cssText.slice(0,atB14-1))),f("G10_B01_B13_FROZEN_CSS_BLOB"),
+     "B01–B13 CSS prefix stays owner-P2 immutable");
+    assert.equal(blob(css),f("CANDIDATE_GOLDEN_CSS_BLOB"),
+     "B14 Golden only scoped CSS appendix must match signed Q18 receipt");
    const b12cut=fullCss.indexOf("/* G10 ChV B12 · OWNER P2 Golden parity");
     assert(b12cut>cutB11&&fullCss.indexOf("/* G10 ChV B12 · OWNER P2 Golden parity",b12cut+1)<0,
      "B12 scoped palette appended after B10 accepted CSS exactly once");
@@ -251,16 +261,20 @@ const blob=data=>{
      }
      assert.equal(await blocks.nth(2).locator(":scope > h3").count(),lesson===14?3:4,
       context+" signed number of worked examples");
-     if(lesson===12||lesson===13){
-      const ex=blocks.nth(2);
-      assert.equal(await ex.locator("h4[style*='display:none']").count(),4,
-       context+" four actual Markdown H4 boundaries with CSS-hidden display");
+     {
+      const ex=blocks.nth(2),n=lesson===14?3:4;
+      assert.equal(await ex.locator("h4[style*='display:none']").count(),n,
+       context+" exact hidden Markdown H4 boundaries retain source-authored solution grouping");
       assert.equal(await ex.locator("h4[style*='display:none']:visible").count(),0,
        context+" hidden headings never visible to learners");
       assert.equal(await ex.locator("h4").filter({hasText:/^Đề bài$/}).count(),0,
        context+" no redundant Đề bài headings");
-      assert.equal(await ex.locator("p > strong").filter({hasText:/^Đề:$/}).count(),4,
-       context+" exactly four original Đề: labels, one per worked example");
+      assert.equal(await ex.locator("p > strong").filter({hasText:/^Đề:$/}).count(),n,
+       context+" exactly original single Đề: label per worked example");
+      assert.equal(await ex.locator("p > strong").filter({hasText:/^Phân tích:$/}).count(),n,
+       context+" each example selects and explains a method before the solved panel");
+      assert.equal(await ex.locator("p > strong").filter({hasText:/^Kiểm lại:$/}).count(),n,
+       context+" every example self-checks actual conditions");
      }
      if(lesson===12&&width===390){
       const trace=await blocks.nth(2).evaluate(root=>({
@@ -271,7 +285,7 @@ const blob=data=>{
      }
      const sourceBox=".thpt-g10-example-solution";
       assert.equal(await blocks.nth(2).locator(sourceBox).count(),
-       lesson===14?3:4,context+" B12/B13 source-authored solutions, B14 legacy Golden");
+       lesson===14?3:4,context+" B12–B14 source-authored exact solution panels");
      const render=await article.evaluate(root=>{
       const body=getComputedStyle(root.querySelector(".tabbed-block p")).fontSize;
       const labels=[...root.querySelectorAll(":scope > .tabbed-set > .tabbed-labels > label")];
@@ -296,11 +310,21 @@ const blob=data=>{
      assert(render.summaries.every(t=>t.startsWith("Đối chiếu")),context+" opt-in concise result disclosure");
      assert(render.overflow<=3,context+" no horizontal page overflow");
      assert(render.tipsClosed&&render.tipsCount>=2,context+" all D6 remediation stays closed");
-     assert.equal(render.worked.length,lesson===14?3:4,context+" B12/B13 have four visibly grouped Golden worked solutions");
+     assert.equal(render.worked.length,lesson===14?3:4,context+" each B12–B14 example has precisely one readable grouped solution");
      assert(render.worked.every(x=>x.text.length>=55&&x.color!=="rgba(0, 0, 0, 0)"),
       context+" each example has unchanged readable source and a visible Golden panel");
      assert.equal(await article.locator("[data-g10-chapter-selfcheck]").count(),0,
       context+" no independent Readiness exposed");
+      if(lesson===14){
+       const concepts=blocks.nth(1).locator(".thpt-r4-concept-card");
+       const rules=blocks.nth(1).locator(".thpt-r4-rule-card");
+       assert.equal(await concepts.count(),3,context+" B14 range/IQR, variance and SD definitions");
+       assert.equal(await rules.count(),1,context+" B14 official strict outlier rule");
+       await labels.nth(1).click();
+       const c=await concepts.first().evaluate(el=>({bg:getComputedStyle(el).backgroundColor,
+        color:getComputedStyle(el).color}));
+       assert(c.bg!=="rgba(0, 0, 0, 0)",context+" Golden semantic concept not transparent");
+      }
       if(lesson===13){
        assert.equal(await blocks.nth(1).locator(".thpt-r4-concept-card").count(),4,
         context+" four correct formal definitions");
