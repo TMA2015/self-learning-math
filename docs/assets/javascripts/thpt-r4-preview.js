@@ -228,7 +228,7 @@
 
 
  // SGK Chapter Practice: one button/card, one modal, never a cloned canonical ID.
- // B16 uses the ORIGINAL exercise markup from existing SGK Core/Topic Practice URLs.
+ // B16 imports its ONE SGK canonical Core/Practice bank; Topic demos are independent.
  // Other cards use TECHNICAL_DEMO_ONLY prompts, not production item records.
  function initChapterPracticeCards(){
   const root=document.querySelector("[data-thpt-practice-hub]");
@@ -263,7 +263,7 @@
   };
   const src={
    "b16-core":["../../core/ham-so-bac-hai/","[data-thpt-core]"],
-   "b16-practice":["../../../chuyen-de/ham-so/luyen-tap/","[data-thpt-practice]"]
+   "b16-practice":["../../core/ham-so-bac-hai/","[data-thpt-practice]"]
   };
   const lessonTitle={"1":"Mệnh đề","2":"Tập hợp và các phép toán trên tập hợp","3":"Bất phương trình bậc nhất hai ẩn","4":"Hệ bất phương trình bậc nhất hai ẩn","5":"Giá trị lượng giác của góc 0°–180°","6":"Hệ thức lượng trong tam giác","7":"Các khái niệm mở đầu về vectơ","8":"Tổng và hiệu của hai vectơ","9":"Tích của một vectơ với một số","10":"Vectơ trong mặt phẳng tọa độ","11":"Tích vô hướng của hai vectơ","12":"Số gần đúng và sai số","13":"Các số đặc trưng đo xu thế trung tâm","14":"Các số đặc trưng đo độ phân tán","15":"Hàm số","16":"Hàm số bậc hai","17":"Dấu của tam thức bậc hai","18":"Phương trình quy về phương trình bậc hai","19":"Phương trình đường thẳng","20":"Vị trí, góc và khoảng cách","21":"Đường tròn","22":"Ba đường conic","23":"Quy tắc đếm","24":"Hoán vị, chỉnh hợp và tổ hợp","25":"Nhị thức Newton","26":"Biến cố và xác suất cổ điển","27":"Thực hành tính xác suất cổ điển"};
   const g11LessonTitle={"1":"Giá trị lượng giác của góc lượng giác","2":"Công thức lượng giác","3":"Hàm số lượng giác","4":"Phương trình lượng giác cơ bản","5":"Dãy số","6":"Cấp số cộng","7":"Cấp số nhân","8":"Mẫu số liệu ghép nhóm","9":"Các số đặc trưng đo xu thế trung tâm","10":"Đường thẳng và mặt phẳng trong không gian","11":"Hai đường thẳng song song","12":"Đường thẳng và mặt phẳng song song","13":"Hai mặt phẳng song song","14":"Phép chiếu song song","15":"Giới hạn của dãy số","16":"Giới hạn của hàm số","17":"Hàm số liên tục","18":"Lũy thừa với số mũ thực","19":"Lôgarit","20":"Hàm số mũ và hàm số lôgarit","21":"Phương trình, bất phương trình mũ và lôgarit","22":"Hai đường thẳng vuông góc","23":"Đường thẳng vuông góc với mặt phẳng","24":"Phép chiếu vuông góc. Góc giữa đường thẳng và mặt phẳng","25":"Hai mặt phẳng vuông góc","26":"Khoảng cách","27":"Thể tích","28":"Biến cố hợp, biến cố giao, biến cố độc lập","29":"Công thức cộng xác suất","30":"Công thức nhân xác suất cho hai biến cố độc lập","31":"Định nghĩa và ý nghĩa của đạo hàm","32":"Các quy tắc tính đạo hàm","33":"Đạo hàm cấp hai"};
@@ -862,7 +862,58 @@
   });
  }
 
+ function initB16CanonicalBank(){
+  // Keep one learner question visible in each Core/Practice modal, without
+  // cloning Q15 items or changing shared Golden navigation/Final Submit.
+  document.querySelectorAll('section[data-thpt-bank-lesson="16"]').forEach(bank=>{
+   if(bank.dataset.thptB16Paged==="1")return;
+   const items=[...bank.querySelectorAll(":scope > [data-thpt-canonical-item]")];
+   if(items.length!==6)return; // fail closed: invalid source is caught by QA
+   bank.dataset.thptB16Paged="1";
+   const nav=document.createElement("nav");
+   nav.className="thpt-r4-modal-question-nav";
+   nav.setAttribute("aria-label","Chọn câu Core hoặc Luyện tập Bài 16");
+   const status=document.createElement("p");
+   status.className="thpt-r4-modal-progress";
+   status.setAttribute("aria-live","polite");
+   const buttons=items.map((item,index)=>{
+    const btn=document.createElement("button");
+    btn.type="button";
+    btn.textContent=String(index+1);
+    btn.setAttribute("aria-label","Đến câu "+(index+1)+" trong 6");
+    btn.addEventListener("click",()=>show(index));
+    nav.append(btn);
+    return btn;
+   });
+   const footer=document.createElement("div");
+   footer.className="thpt-r4-modal-buttons";
+   const prev=document.createElement("button"),next=document.createElement("button");
+   prev.type=next.type="button";prev.textContent="← Câu trước";next.textContent="Câu tiếp →";
+   footer.append(prev,next);
+   let current=0;
+   const show=index=>{
+    current=Math.max(0,Math.min(items.length-1,index));
+    items.forEach((item,i)=>{
+     const active=i===current;item.hidden=!active;
+     if(active)item.style.removeProperty("display");else item.style.display="none";
+     item.setAttribute("aria-hidden",String(!active));
+     buttons[i].setAttribute("aria-current",active?"step":"false");
+     buttons[i].disabled=active;
+    });
+    prev.disabled=current===0;next.disabled=current===items.length-1;
+    status.textContent="Câu "+(current+1)+" / "+items.length+" · "+
+      (bank.hasAttribute("data-thpt-core")?"Core":"Luyện tập")+" · Tự kiểm tra, không ghi Mastery";
+   };
+   prev.addEventListener("click",()=>show(current-1));
+   next.addEventListener("click",()=>show(current+1));
+   items[0].before(status,nav);
+   items[items.length-1].after(footer);
+   show(0);
+  });
+ }
+
  function init() {
+  initB16CanonicalBank();
   initProgramSelectorDrawer();
   initProgramSelectorDesktopTabs();
   initTHPTPrimarySidebar();

@@ -8,7 +8,7 @@
 <input type="search" id="thpt-written-search" data-thpt-filter-input="written" placeholder="Ví dụ: hàm số, diện tích, đỉnh...">
 <label for="thpt-written-kind"><strong>Loại bài</strong></label>
 <select id="thpt-written-kind" data-thpt-kind-filter><option value="all">Tất cả bài</option><option value="normal">Tự luận thường</option><option value="anchor">Bài mỏ neo</option></select>
-<span data-thpt-filter-count aria-live="polite">8 bài đã thẩm định</span>
+<span data-thpt-filter-count aria-live="polite">10 bài tự luận và mỏ neo</span>
 </div>
 <div data-thpt-filter-list="written">
 <section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="normal" data-thpt-filter-text="lớp 10 hàm số bậc hai đỉnh trục giá trị nhỏ nhất" data-thpt-written-canonical="HPT-WRI-DEMO-01" data-thpt-exposure-role="SGK_WRITTEN" id="tu-luan-thuong-demo">
@@ -44,6 +44,35 @@
 <details><summary>Lời giải và rubric tự chấm (6 điểm)</summary><p>C(x)=20 khi 0&lt;x≤2; C(x)=20+5(x−2) khi x&gt;2. C(2)=20; C(6)=40 nghìn đồng. Ngân sách ≤50 thỏa mọi 0&lt;x≤2; trên nhánh x&gt;2: 20+5(x−2)≤50 ⇔ x≤8. Kết hợp: 0&lt;x≤8 km.</p>
 <table><thead><tr><th>Tiêu chí</th><th>Điểm</th></tr></thead><tbody><tr><td>Chọn miền, đơn vị</td><td>1</td></tr><tr><td>Hai nhánh C(x) đúng</td><td>2</td></tr><tr><td>Hai giá trị C(2), C(6)</td><td>1</td></tr><tr><td>Giải bất phương trình đúng miền</td><td>1</td></tr><tr><td>Kết luận tổng hợp</td><td>1</td></tr></tbody></table></details>
 </section>
+<section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="normal" data-thpt-filter-text="lớp 10 chương VI bài 16 hàm số bậc hai parabol đỉnh trục giao điểm tập giá trị" data-thpt-written-canonical="HPT-G10-CHVI-WRI-16-01" data-thpt-outcome-id="B16_OUT_02 B16_OUT_03 B16_OUT_04" data-thpt-exposure-role="SGK_WRITTEN" id="bai-16-tu-luan">
+<p class="thpt-r4-eyebrow">BÀI 16 · TỰ LUẬN</p>
+<h2>Phân tích toàn diện một parabol</h2>
+<p>Xét hàm số <span class="arithmatex">\(f(x)=x^2-2x-8\)</span> trên tập số thực. (a) Đưa về dạng đỉnh, tìm đỉnh và trục đối xứng. (b) Tìm các giao điểm với hai trục tọa độ. (c) Xác định các khoảng đồng biến, nghịch biến và tập giá trị. (d) Nêu một phép kiểm bằng điểm đối xứng.</p>
+<details><summary>Gợi ý (tự chọn)</summary><p>Hoàn thành bình phương: <span class="arithmatex">\(x^2-2x=(x-1)^2-1\)</span>. Với giao <span class="arithmatex">\(Ox\)</span>, giải <span class="arithmatex">\(f(x)=0\)</span>; giao <span class="arithmatex">\(Oy\)</span>, thay <span class="arithmatex">\(x=0\)</span>.</p></details>
+<details><summary>Đối chiếu lời giải và rubric tự chấm (6 điểm)</summary>
+<p><span class="arithmatex">\(f(x)=(x-1)^2-9\)</span>, đỉnh <span class="arithmatex">\(I(1;-9)\)</span>, trục đối xứng <span class="arithmatex">\(x=1\)</span>, parabol mở lên. Ta có <span class="arithmatex">\(f(x)=(x-4)(x+2)\)</span>, nên giao với <span class="arithmatex">\(Ox\)</span> tại <span class="arithmatex">\((-2;0),(4;0)\)</span>; giao với <span class="arithmatex">\(Oy\)</span> tại <span class="arithmatex">\((0;-8)\)</span>. Hàm nghịch biến trên <span class="arithmatex">\((-\infty;1)\)</span>, đồng biến trên <span class="arithmatex">\((1;+\infty)\)</span>, tập giá trị <span class="arithmatex">\([-9;+\infty)\)</span>. Hai hoành độ <span class="arithmatex">\(0,2\)</span> cách đều 1 và <span class="arithmatex">\(f(0)=f(2)=-8\)</span>, xác nhận đối xứng.</p>
+<table><thead><tr><th>Tiêu chí</th><th>Điểm</th></tr></thead><tbody>
+<tr><td>Đưa về dạng đỉnh đúng và xác định đỉnh/trục</td><td>2</td></tr>
+<tr><td>Đủ ba giao điểm với các trục, có điều kiện hoặc cách tìm</td><td>2</td></tr>
+<tr><td>Hai khoảng biến thiên và tập giá trị đúng</td><td>1</td></tr>
+<tr><td>Phép kiểm đối xứng và diễn giải mạch lạc</td><td>1</td></tr></tbody></table>
+<p>Tự đối chiếu trên giấy, không ghi Skill Mastery hay điểm đánh giá chính thức.</p>
+</details></section>
+<section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="anchor" data-thpt-filter-text="lớp 10 chương VI bài 16 hàm số bậc hai mỏ neo doanh thu điều kiện khoảng giá tối ưu" data-thpt-written-canonical="HPT-G10-CHVI-WRI-16-02" data-thpt-outcome-id="B16_OUT_05" data-thpt-exposure-role="SGK_WRITTEN" id="bai-16-mo-neo">
+<p class="thpt-r4-eyebrow">BÀI 16 · MỎ NEO</p>
+<h2>Tối ưu doanh thu theo giá bán và ngưỡng mục tiêu</h2>
+<p>Một cửa hàng xét mô hình giả định: nếu bán với giá <span class="arithmatex">\(p\)</span> nghìn đồng/sản phẩm thì số lượng bán được là <span class="arithmatex">\(n(p)=160-2p\)</span> sản phẩm, với <span class="arithmatex">\(0\le p\le80\)</span>. (a) Lập doanh thu <span class="arithmatex">\(R(p)\)</span> (nghìn đồng). (b) Tìm giá bán và số lượng để doanh thu lớn nhất. (c) Tìm toàn bộ khoảng giá sao cho doanh thu ít nhất 3 triệu đồng, đồng thời kiểm tra điều kiện của mô hình.</p>
+<details><summary>Gợi ý (tự chọn)</summary><p>Doanh thu bằng số lượng nhân đơn giá. Đưa <span class="arithmatex">\(R(p)=160p-2p^2\)</span> về dạng bình phương; lưu ý 3 triệu đồng bằng 3000 nghìn đồng.</p></details>
+<details><summary>Đối chiếu lời giải và rubric tự chấm (7 điểm)</summary>
+<p><span class="arithmatex">\(R(p)=p(160-2p)=-2(p-40)^2+3200\)</span> (nghìn đồng), với <span class="arithmatex">\(p\in[0;80]\)</span>. Vì parabol mở xuống và đỉnh <span class="arithmatex">\(p=40\)</span> thuộc miền, doanh thu tối đa <strong>3200 nghìn đồng = 3,2 triệu đồng</strong> khi bán với giá 40 nghìn đồng, lúc đó <span class="arithmatex">\(n(40)=80\)</span> sản phẩm. Với ngưỡng 3 triệu đồng: <span class="arithmatex">\(-2(p-40)^2+3200\ge3000\iff(p-40)^2\le100\iff30\le p\le50\)</span>. Khoảng này nằm trong miền giả định [0;80], nên kết quả hợp lệ. Đây là mô hình giả định, không phải dự báo doanh thu thực tế.</p>
+<table><thead><tr><th>Tiêu chí</th><th>Điểm</th></tr></thead><tbody>
+<tr><td>Xác định đúng biến, đơn vị, miền và mô hình doanh thu</td><td>2</td></tr>
+<tr><td>Biến đổi đúng dạng đỉnh và tìm GTLN</td><td>2</td></tr>
+<tr><td>Giá và số lượng tương ứng, đổi đơn vị doanh thu</td><td>1</td></tr>
+<tr><td>Giải bất đẳng thức ngưỡng doanh thu</td><td>1</td></tr>
+<tr><td>Kiểm điều kiện mô hình và kết luận hợp lý</td><td>1</td></tr></tbody></table>
+<p>Tự đối chiếu chỉ để học, không dùng bài đã xem lời giải làm chứng cứ độc lập cho Final Submit.</p>
+</details></section>
 <section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="normal" data-thpt-filter-text="lớp 10 chương VI tam thức dấu bất phương trình tự luận" data-thpt-written-canonical="HPT-G10-CHVI-WRI-17-01" data-thpt-exposure-role="SGK_WRITTEN" id="hpt-g10-chvi-wri-17-01">
 <p class="thpt-r4-eyebrow">BÀI TỰ LUẬN</p>
 <h2>Bài 17 · Bảng xét dấu tam thức</h2>

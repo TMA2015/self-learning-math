@@ -19,7 +19,7 @@ for(const [lesson,count] of Object.entries(expected)){
 }
 const checks={
  15:["Khái niệm hàm số","tập xác định","tập giá trị","(1;3),(2;4),(2;4)",
-      "Đồ thị","x_0\\in D","hàm số cho theo từng khoảng","C(3)","đồng biến","nghịch biến"],
+      "Đồ thị","x_0\\in D","hai khoảng khác nhau","C(3)","đồng biến","nghịch biến"],
  16:["a\\ne 0","tập xác định","Đỉnh","trục đối xứng","Bốn bước vẽ","\\Delta",
       "thpt-r4-plot","Chuyển động theo phương thẳng đứng","Doanh thu và giá bán"],
  17:["Tam thức bậc hai","\\Delta","nghiệm kép","Bảng xét dấu","a>0",
@@ -33,6 +33,14 @@ for(const [lesson,required] of Object.entries(checks)){
  assert(!/NOTEBOOKLM|ACADEMIC_CLEARANCE|TÍCH HỢP ĐANG QA/.test(src),"Internal review metadata exposed to student in B"+lesson);
  for(const term of required)assert(src.toLocaleLowerCase("vi").includes(term.toLocaleLowerCase("vi")),
    "B"+lesson+" website knowledge source lacks expected reviewed concept: "+term);
+ if(Number(lesson)===15){
+  // Owner B15 P2 removed the obsolete "hàm số cho theo từng khoảng"
+  // mini-label but preserved the entire accepted piecewise mathematics.
+  for(const t of ["C(x)=", "8x,&0\\le x\\le2", "16+6(x-2)",
+   "C(1)=8", "C(2)=16", "C(3)=22", "C(5)=12+4(5-3)=20"]){
+   assert(src.includes(t),"B15 owner P2 piecewise example math missing "+t);
+  }
+ }
  assert(!src.includes("data-thpt-assessment=\"sgk-chapter\""),
    "Lesson must not inline protected chapter Readiness scope");
 }
