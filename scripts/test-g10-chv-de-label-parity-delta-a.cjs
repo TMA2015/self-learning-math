@@ -83,7 +83,7 @@ const b14Receipt=get("prototypes/thpt/ux795/G10_CHV_B14_Q18_GOLDEN_ENRICHMENT_DE
 const f=k=>b14Receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
 assert.equal(f("G10_B01_B13_FROZEN_CSS_BLOB"),field("SHARED_GOLDEN_CSS_BLOB"),
  "B14 scoped source receipt must preserve original B12/B13 stylesheet SHA");
-assert.equal(sha1(fullCss),f("CANDIDATE_GOLDEN_CSS_BLOB"),
+assert.equal(sha1(require("./test-g10-b15-golden-css-source.cjs").publishedB14Ancestor(fullCss)),f("CANDIDATE_GOLDEN_CSS_BLOB"),
  "B14 scoped stylesheet exact final SHA");
 for(const [p,key] of [
  ["docs/assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js","B12_PUBLIC_BANK_BLOB"],
