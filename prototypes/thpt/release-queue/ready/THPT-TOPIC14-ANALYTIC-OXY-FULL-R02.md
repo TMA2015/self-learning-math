@@ -13,14 +13,14 @@ CATALOG_TOPIC_ID: CD14
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 47c98711e2955287831d5ea10fc5d61d1483fd6a
+ACADEMIC_SOURCE_BLOB: eb2ee110e42e767a711c769b39682784aa3e996e
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC14_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md (Q18 author-self; NO new independent NotebookLM Topic14 verdict)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC14_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 1995054b3fd147ffabbe581101cd286659096612
+REVIEW_RECEIPT_BLOB: db2630512b3a507191ed5fc32e6a40b46b3e94f7
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_R02_AUTHORING_ONLY_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: e2dd3eb2985aba77e354dbd21c9025a273163be5
+AUTHOR_A1_A7_BLOB: 57070453b7985a6d0f104b22e21311f80b61c2b6
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC14-ANALYTIC-OXY-FULL-R02_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: 4281fc6a5ad5e23bee83b817768702d0a11a17cb
+AUTHOR_HANDOFF_BLOB: 3be03ac69cfcd86fcaaa524b419c8cc93c5065d5
 ORIGINAL_SGK_SOURCE_BLOB: c5c222af88b0e932f9b60df059d8ffd4da5f0f26
 ORIGINAL_R01_PED_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd
 SVG1_BLOB: 57485fed0a5dcee6ebcd060f100abe5eed43bc76
@@ -93,17 +93,20 @@ One self-sufficient Topic CĐ14 with exactly **Kiến thức / Luyện tập / T
 
 ## FINAL ACTIVE R02 O22 Delta C and archived R01 custody · 18/11/2026
 
-- **Effective student source Git blob** `47c98711e2955287831d5ea10fc5d61d1483fd6a` replaces previous R02 Git `dada7df9fc509cc67238cbc3e5d03376b58f23f4` for precisely **one** true `TOP14-O22` pedagogical correction, no changed question, key, scoring, diagram, mathematical condition or actual D6 concept target. When substituting `x=0` into ellipse `x²/9+y²/4=1`, learner must revisit the **ellipse** symmetric about Ox to recover both `(0,2)` and `(0,-2)`, not incorrectly consult parabola. Delta `DELTA_C_ACADEMIC_MATERIAL` on affected PED6 sentence, directly checked without unnecessary independent NotebookLM; old broad R02 math tests remain snapshot scoped and unchanged. P0/P1=0 on this source by exact author Q18 `1995054b3fd147ffabbe581101cd286659096612` and updated A1–A7 `e2dd3eb2985aba77e354dbd21c9025a273163be5`. Single current V2 `4281fc6a5ad5e23bee83b817768702d0a11a17cb`.
+- **Effective student source Git blob** `eb2ee110e42e767a711c769b39682784aa3e996e` replaces previous R02 Git `dada7df9fc509cc67238cbc3e5d03376b58f23f4` for precisely **one** true `TOP14-O22` pedagogical correction, no changed question, key, scoring, diagram, mathematical condition or actual D6 concept target. When substituting `x=0` into ellipse `x²/9+y²/4=1`, learner must revisit the **ellipse** symmetric about Ox to recover both `(0,2)` and `(0,-2)`, not incorrectly consult parabola. Delta `DELTA_C_ACADEMIC_MATERIAL` on affected PED6 sentence, directly checked without unnecessary independent NotebookLM; old broad R02 math tests remain snapshot scoped and unchanged. P0/P1=0 on this source by exact author Q18 `db2630512b3a507191ed5fc32e6a40b46b3e94f7` and updated A1–A7 `57070453b7985a6d0f104b22e21311f80b61c2b6`. Single current V2 `3be03ac69cfcd86fcaaa524b419c8cc93c5065d5`.
 - **Only one current active Topic ready record:** R02. Previous R01 manifest is retained exactly unmodified as Git blob `814997dc5686d5716d880a7c4379a2c146d339af` at `prototypes/thpt/release-queue/archive/THPT-TOPIC14-ANALYTIC-OXY-FULL-R01_HISTORICAL_SIGNED_20261118.md`, no longer at `ready/`; previous signed acceptance is historical only. REGISTER must retain at most one active CĐ14 `CONTENT_READY` entry.
 - **Inherited other AUTHORING evidence:** 23/23 outcome and examples/adjacent Vận dụng/Đối chiếu, 110 Q15 public canonical IDs, 87 actual Practice with 5 Written rubrics /7, 23 reused question-only Self Checks (`CLIENT_SELF_CHECK_NO_MASTERY`) and 3 Git SVG files. Original SGK source/bank unchanged. SOURCE handoff does not grant website/ap/browser/RD1/Final Submit/Mastery/merge/deploy.
 
 
 ## Final AUTHORING structure-number closure — 18/11/2026
 
-The effective learner SHA is `47c98711e2955287831d5ea10fc5d61d1483fd6a`; 55 SGK learner-visible Bài numbers have been corrected to 1..55 across four groups, with 40 display-number edits and all other bytes identical after normalizing label numbers. The canonical 110 Q15 ID placements and original SGK owner source remain unchanged, as do 23 Topic practice items, 23 FirstTry, five Written rubrics, 23 question-only public replays and the 3 SVG. Current signed AUTHOR_SELF_VERIFIED receipt SHA `1995054b3fd147ffabbe581101cd286659096612`; A1 `e2dd3eb2985aba77e354dbd21c9025a273163be5`; one V2 `4281fc6a5ad5e23bee83b817768702d0a11a17cb`. Historical source `c80f20dc9f8f2ee000f5c4af5a4c8583a5307cf1` remains only historical evidence. No release, merge, deploy or live browser assessment. 
+The effective learner SHA is `eb2ee110e42e767a711c769b39682784aa3e996e`; 55 SGK learner-visible Bài numbers have been corrected to 1..55 across four groups, with 40 display-number edits and all other bytes identical after normalizing label numbers. The canonical 110 Q15 ID placements and original SGK owner source remain unchanged, as do 23 Topic practice items, 23 FirstTry, five Written rubrics, 23 question-only public replays and the 3 SVG. Current signed AUTHOR_SELF_VERIFIED receipt SHA `db2630512b3a507191ed5fc32e6a40b46b3e94f7`; A1 `57070453b7985a6d0f104b22e21311f80b61c2b6`; one V2 `3be03ac69cfcd86fcaaa524b419c8cc93c5065d5`. Historical source `c80f20dc9f8f2ee000f5c4af5a4c8583a5307cf1` remains only historical evidence. No release, merge, deploy or live browser assessment. 
 
 ## 19/11/2026 · SOURCE-LOCK CĐ14 O22 targeted PED6 correction (authoring only)
 
 `Q08/PED6` at `TOP14-O22`, `THPT-TOP14-T22`: old first-try recovery incorrectly applied ellipse symmetry and (0,±2) to parabola `y²=4x` with x=1; new recovery checks (1,±2) by direct substitution, both satisfying. One sentence only; `DELTA_C_ACADEMIC_MATERIAL`, signed author-self Q18 targeted receipt, `P0=P1=0` on affected outcome. The prior source blob `b5c03a5cfb3336ff9e3d3a15fd8f0161ec71fb39` and prior receipt blob `83ed7bce8010f522d86beac22b01403601e13da3` are historical snapshots, not this READY.
 
-**Effective:** learner `47c98711e2955287831d5ea10fc5d61d1483fd6a`, A1–A7 `e2dd3eb2985aba77e354dbd21c9025a273163be5`, signed Q18 `1995054b3fd147ffabbe581101cd286659096612`, V2 `4281fc6a5ad5e23bee83b817768702d0a11a17cb`. All 23 outcomes, 110 IDs, 55 SGK display numbers, 23 client-only selfchecks and three SVG preserved. Authoring `STATE=CONTENT_READY` remains source scoped; **official CI exact latest HEAD pending**; RELEASE independently verifies AP/R/Final Submit/owner approval and dependencies. No merge/deploy/official Readiness/Mastery.
+**Effective:** learner `eb2ee110e42e767a711c769b39682784aa3e996e`, A1–A7 `57070453b7985a6d0f104b22e21311f80b61c2b6`, signed Q18 `db2630512b3a507191ed5fc32e6a40b46b3e94f7`, V2 `3be03ac69cfcd86fcaaa524b419c8cc93c5065d5`. All 23 outcomes, 110 IDs, 55 SGK display numbers, 23 client-only selfchecks and three SVG preserved. Authoring `STATE=CONTENT_READY` remains source scoped; **official CI exact latest HEAD pending**; RELEASE independently verifies AP/R/Final Submit/owner approval and dependencies. No merge/deploy/official Readiness/Mastery.
+
+
+**20/11/2026 owner-authorized authoring upgrade:** TOP14-O07 mandatory graph-to-line relation checked against direct SGK10 T2 B19 (pp30–31), 8/8 math/PED affected-scope assertions PASS; learner `eb2ee110e42e767a711c769b39682784aa3e996e`, Q18 `db2630512b3a507191ed5fc32e6a40b46b3e94f7`, A1 `57070453b7985a6d0f104b22e21311f80b61c2b6`, one V2 `3be03ac69cfcd86fcaaa524b419c8cc93c5065d5`. This **maintains existing CONTENT_READY for academic source with targeted author Q18 only**, not a full 22-topic SGK audit claim or publication approval.
