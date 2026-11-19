@@ -339,20 +339,20 @@
     ??? tip "4.1. Bỏ qua miền thời gian khi xác định cực trị"
 
         <ol><li><strong>Nhận diện lỗi:</strong> Chỉ lấy −b/(2a) mà không kiểm miền thời gian hoặc quên đơn vị.</li>
-        <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
+        <li><strong>Tự chẩn đoán:</strong> Em đã dùng giá trị ở đỉnh mà chưa kiểm (t=2) có thuộc ([0;4]), hoặc kết luận cho cả thời gian âm? Hãy đánh dấu miền (0\le t\le4) ngay trên đề trước khi tính.</li>
         <li><strong>Kiến thức gốc:</strong> Mô hình <span class="arithmatex">\(h(t)\)</span> là hàm bậc hai theo t với miền thực tế t≥0 và h≥0 trong giai đoạn bay. Đỉnh cho độ cao tối đa nếu thời điểm đỉnh thuộc miền đó. Không được áp cực trị trên toàn <span class="arithmatex">\(\mathbb R\)</span> rồi kết luận cho t âm.</li>
         <li><strong>Tự sửa:</strong> Viết 0≤t≤4 ngay dưới bài, kiểm t đỉnh có thuộc miền, rồi báo cả giá trị và đơn vị. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
-        <li><strong>Luyện lại:</strong> Quay lại phần kiến thức liên quan ngay trong bài và thử giải thích phương pháp trước khi xem lại kết quả.</li></ol>
+        <li><strong>Luyện lại:</strong> Quay lại Vận dụng mô hình (h(t)) trong Khám phá; ghi miền thời gian, kiểm (t) của đỉnh, kiểm (h(0),h(4)), rồi mới mở Đối chiếu.</li></ol>
 
     <span data-thpt-help-id="HELP-G10-CHVI-TRY06" hidden></span>
 
     ??? tip "4.2. Nhầm biểu thức có x² là bậc hai khi a = 0"
 
         <ol><li><strong>Nhận diện lỗi:</strong> Chỉ nhìn chữ x² trong cách viết mà quên xét hệ số a=0.</li>
-        <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
+        <li><strong>Tự chẩn đoán:</strong> Em đã gọi (f(x)=0x^2+2x+1) là hàm bậc hai chỉ vì nhìn thấy (x^2)? Hãy thu gọn rồi khoanh hệ số của (x^2) ở cả hai biểu thức.</li>
         <li><strong>Kiến thức gốc:</strong> Một hàm bậc hai có phần thay đổi theo <span class="arithmatex">\(x^2\)</span> <strong>không mất đi</strong>: <span class="arithmatex">\(y=ax^2+bx+c\)</span> với <span class="arithmatex">\(a\ne0\)</span>. Nếu <span class="arithmatex">\(a=0\)</span>, quy tắc chỉ còn bậc nhất hoặc hằng, và các kết luận về parabol không còn đúng.</li>
         <li><strong>Tự sửa:</strong> Thu gọn rồi khoanh hệ số đứng trước x²; nếu bằng 0 không dùng công thức parabol. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
-        <li><strong>Luyện lại:</strong> Quay lại phần kiến thức liên quan ngay trong bài và thử giải thích phương pháp trước khi xem lại kết quả.</li></ol>
+        <li><strong>Luyện lại:</strong> Quay lại Vận dụng phân loại hai hàm (f,g); lần lượt viết hệ số (a) sau rút gọn và kiểm (a\ne0) trước khi mở Đối chiếu.</li></ol>
 
 
     <span data-thpt-help-id="HELP-G10-CHVI-TRY07" hidden></span>
@@ -360,7 +360,7 @@
     ??? tip "4.3. Đọc sai tọa độ đỉnh và trục đối xứng"
 
         <ol><li><strong>Nhận diện lỗi:</strong> Đổi nhầm dấu h thành −2, hoặc cho trục đối xứng là y=2.</li>
-        <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
+        <li><strong>Tự chẩn đoán:</strong> Em có đọc nhầm ((x-2)^2-3) thành đỉnh (I(-2;-3)), hoặc vẽ trục ngang (y=2)? Hãy xác định (x) làm bình phương bằng 0 trước khi đọc đỉnh.</li>
         <li><strong>Kiến thức gốc:</strong> Viết <span class="arithmatex">\(y=a(x-h)^2+k\)</span>: vì bình phương nhỏ nhất bằng 0 tại x=h, đỉnh chính là <span class="arithmatex">\(I(h;k)\)</span>. Dấu a quyết định cực tiểu hay cực đại; đường thẳng x=h đi qua đỉnh và là trục đối xứng.</li>
         <li><strong>Tự sửa:</strong> Tìm x làm biểu thức bình phương bằng 0 rồi đọc h và k; kiểm dấu a để xác định hướng mở. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
         <li><strong>Luyện lại:</strong> Em có thể <a href="../luyen-tap/?item=THPT-CORE-QF01">luyện lại một câu có sẵn trong Core/Luyện tập</a>, sau đó tự giải thích bằng lời của mình.</li></ol>
@@ -371,10 +371,10 @@
     ??? tip "4.4. Đảo chiều đồng biến và nghịch biến khi a < 0"
 
         <ol><li><strong>Nhận diện lỗi:</strong> Đọc nhầm đỉnh là GTNN khi a âm, hoặc nhận khoảng tăng và giảm theo chiều từ phải qua trái.</li>
-        <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
+        <li><strong>Tự chẩn đoán:</strong> Em đã đọc parabol (a<0) như một cực tiểu hay đổi chiều đồng/nghịch biến? Hãy đọc trục hoành từ trái sang phải qua (x=-1), rồi so giá trị hai bên đỉnh.</li>
         <li><strong>Kiến thức gốc:</strong> Nếu a&lt;0, parabol mở xuống nên tăng tới h rồi giảm sau h, giá trị không vượt k. Nếu a&gt;0 thì ngược lại, luôn không nhỏ hơn k. Vì <span class="arithmatex">\((x-h)^2\ge0\)</span>, đây là chứng minh đại số cho tập giá trị chứ không chỉ nhìn tranh.</li>
         <li><strong>Tự sửa:</strong> Khoanh a&lt;0, vẽ mũi tên mở xuống, đọc nhánh trái lên đỉnh và nhánh phải xuống. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
-        <li><strong>Luyện lại:</strong> Quay lại phần kiến thức liên quan ngay trong bài và thử giải thích phương pháp trước khi xem lại kết quả.</li></ol>
+        <li><strong>Luyện lại:</strong> Quay lại Vận dụng (f(x)=-2(x+1)^2+8); kiểm dấu (a), giá trị tại đỉnh và hai khoảng biến thiên, sau đó tự mở Đối chiếu.</li></ol>
 
 
     <span data-thpt-help-id="HELP-G10-CHVI-TRY08" hidden></span>
@@ -382,7 +382,7 @@
     ??? tip "4.5. Vẽ parabol sai giao điểm hoặc mất đối xứng"
 
         <ol><li><strong>Nhận diện lỗi:</strong> Vẽ đường trục nằm ngang hoặc đánh dấu một giao trục sai nhưng vẫn nối hình đẹp.</li>
-        <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
+        <li><strong>Tự chẩn đoán:</strong> Em đã phác đồ thị ((x-1)^2-4) nhưng đánh dấu sai một nghiệm hoặc hai giao điểm không đối xứng qua (x=1)? Thử thay từng hoành độ vào công thức để kiểm (y=0).</li>
         <li><strong>Kiến thức gốc:</strong> Đồ thị <span class="arithmatex">\(y=a(x-h)^2+k\)</span> đối xứng quanh x=h. Vẽ theo thứ tự: (1) đỉnh, (2) trục, (3) giao trục và điểm đối xứng cần thiết, (4) nối đường cong theo dấu a. Không thể nối các điểm bất kỳ thành parabol chuẩn.</li>
         <li><strong>Tự sửa:</strong> Tính đỉnh trước, kiểm từng giao điểm bằng thay tọa độ và phản chiếu qua trục x=h. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
         <li><strong>Luyện lại:</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-CHVI-APP-A2">luyện lại một câu có sẵn trong Core/Luyện tập</a>, sau đó tự giải thích bằng lời của mình.</li></ol>
