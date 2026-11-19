@@ -1,3 +1,8 @@
+<!-- TOP18_DOT_ZERO_NORM_CURRENT_20261120 -->
+- TOP18-O05 source now `d1a9fc26cb8061a4929da05aea8701ed6b3b2e82`: SGK G12 T1 B6 p56 zero dot, squared norm and p57 dot-product distributivity/scalar/commutativity; prior source `8a580dc99b6a64b57cefc0c15fb7f9defb7acd48`, scoped Q18 `6057fbbce111c31517fc91941121b6bfaa99fffe`, learner IDs unchanged.
+- All 40 outcomes remain in one learner, 247 canonical original items intact; AUTHORING CONTENT_READY, no website release.
+
+---
 <!-- TOP18_S1_B06_DOT_PRODUCT_PROPERTIES_20261120 -->
 ## S1 B6 source closure: TOP18-O05 formal dot-product properties
 
@@ -28,8 +33,8 @@ CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: 8a580dc99b6a64b57cefc0c15fb7f9defb7acd48
-REVIEW_RECEIPT_BLOB: 7fb04ee1ccc804259a50451cb204fb3b61d4e440
+ACADEMIC_SOURCE_BLOB: d1a9fc26cb8061a4929da05aea8701ed6b3b2e82
+REVIEW_RECEIPT_BLOB: 6057fbbce111c31517fc91941121b6bfaa99fffe
 BASELINE_R04_SIGNED_SOURCE_BLOB: 41daf40a3b639a3ef35e129099525137a05b1848
 BASELINE_R04_SIGNED_Q18_RECEIPT_BLOB: 5262fd454346801b0b5eb4f3dc407bc99d3530
 
