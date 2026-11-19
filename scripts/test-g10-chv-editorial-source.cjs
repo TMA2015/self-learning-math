@@ -9,6 +9,7 @@ const cp=require("node:child_process"),crypto=require("node:crypto");
 const root=path.resolve(__dirname,"..");
 require("./test-g10-b11-b12-source-first-delta.cjs");
 require("./test-g10-chv-de-label-parity-delta-a.cjs");
+require("./test-g10-chv-b14-first-try-label-delta-a.cjs");
 const baseline="95c111b313886283bd8245babcc9ffdbfcc7c54f";
 const {chvEditorialReceiptRows,candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 const blob=data=>{
@@ -67,9 +68,14 @@ for(const n of [12,13,14]){
  const b14=fs.readFileSync(path.join(root,
   "prototypes/thpt/ux795/G10_CHV_B14_Q18_GOLDEN_ENRICHMENT_DELTA_R01_20261119.md"),"utf8");
  const b14f=k=>b14.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+ const ui14=fs.readFileSync(path.join(root,
+  "prototypes/thpt/ux795/G10_CHV_B14_EM_VAN_DUNG_LABEL_DELTA_A_R01_20261119.md"),"utf8");
+ const f14=k=>ui14.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
  const expected=n===12?ui("B12_CURRENT_SOURCE_BLOB"):
-  n===13?ui("B13_CURRENT_SOURCE_BLOB"):b14f("CANDIDATE_LESSON_GIT_BLOB");
+  n===13?ui("B13_CURRENT_SOURCE_BLOB"):f14("B14_CURRENT_SOURCE_BLOB");
  if(n===14){
+  assert.equal(f14("B14_PREVIOUS_SOURCE_BLOB"),b14f("CANDIDATE_LESSON_GIT_BLOB"),
+   "B14 owner UI correction preserves original signed §X-C source predecessor");
   assert.equal(b14f("BASELINE_LESSON_GIT_BLOB"),row.candidate,
    "B14 §X-C current delta must preserve signed original Knowledge baseline");
   assert(b14.includes("Q18_OWNER_SELF_VERIFIED_ENRICHMENT")&&
@@ -234,6 +240,10 @@ for(const n of [12,13,14]){
    "B14 one S1 outlier rule uses Golden blue");
   assert.equal((help.match(/^    \?\?\? tip "4\.[12]\. /gm)||[]).length,2,
    "B14 exactly two original numbered D6 recoveries");
+  assert.equal((discovery.match(/\*\*Em vận dụng\.\*\*/g)||[]).length,5,
+   "B14 five pre-Core First Tries must have one approved Em vận dụng label each");
+  assert(!discovery.includes("Em tự thử."),
+   "B14 no mismatched Em tự thử in Discovery");
   assert(!s.includes("Hiểu bản chất trước công thức và Vì sao làm theo cách này?"),
    "B14 First Try D6 links must target actual lesson sections");
   for(const phrase of ["(2+4+6+8)/4=5","R=8-2=6","s^2","(4+5+6)/3=5",
