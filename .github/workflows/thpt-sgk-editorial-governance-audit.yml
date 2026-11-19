@@ -33,7 +33,7 @@ jobs:
         run: node --check scripts/audit-thpt-sgk-79-editorial.cjs
       - name: Assert Golden four-tab editorial preview structure and negative regressions
         run: node scripts/test-thpt-sgk-four-tab-golden-contract.cjs
-      - name: Fail-closed owner G10 B01-B06 production theme/source immutability
+      - name: Fail-closed G10 B01–B12 current owner-accepted UI SHA + historic prefix immutability
         run: node scripts/test-thpt-sgk-editorial-theme-preservation.cjs
       - name: Audit 79 source blobs, section numbering and tab structure
         run: node scripts/audit-thpt-sgk-79-editorial.cjs --out editorial-inventory
@@ -48,7 +48,7 @@ jobs:
           assert.equal(r.rows.length,79);
           assert.equal(r.summary.owner_gold_sample,"APPROVED_STRUCTURE_ONLY_20261112");
           assert.equal(r.summary.owner_production_theme,"PRESERVE_LIVE_G10_B01_B06");
-          assert.equal(r.summary.normative_candidate,"v3.1.0_DRAFT_NOT_EFFECTIVE");
+          assert.equal(r.summary.normative_candidate,"v3.2.0_OWNER_APPROVED_EFFECTIVE");
           assert.equal(r.summary.s1_verified_count,0);
           assert.equal(r.summary.unique_git_blobs,79);
           for(const row of r.rows)assert(/^[0-9a-f]{40}$/.test(row.blob));
@@ -63,6 +63,6 @@ jobs:
       - name: Publish report in the job summary (no artifact/cache upload)
         shell: bash
         run: |
-          echo "## SGK THPT 79 — owner Golden STRUCTURE PASS, S1/RELEASE PENDING" >> "$GITHUB_STEP_SUMMARY"
+          echo "## SGK THPT 79 — owner G10 B01–B12 P2 PASS; census only for remaining 67, not Academic/RELEASE PASS" >> "$GITHUB_STEP_SUMMARY"
           cat editorial-inventory/Temp_THPT_SGK_79_Editorial_Inventory_20261112.md >> "$GITHUB_STEP_SUMMARY"
           test -s editorial-inventory/Temp_THPT_SGK_79_Editorial_Inventory_20261112.json
