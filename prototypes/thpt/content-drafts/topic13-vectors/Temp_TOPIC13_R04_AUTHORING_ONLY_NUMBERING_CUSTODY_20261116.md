@@ -1,20 +1,24 @@
+<!-- TOP13_S1_B08_B09_PROPERTIES_A1_20261120 -->
+**20/11 S1 G10 B08/B09 extra mandatory outcome coverage:** TOP13-M03/O03 now explicitly lists vector addition commutativity, associativity and zero; TOP13-M05/O05 now lists scalar/vector distributivity, scalar associativity and identity. Current learner blob `fcac52eb1263eb3c91799a647aad184f08952d34` and affected Q18 self-QA `74f6661547f5a1a38ab8c103f85988a8ef9d8d2b`. 10/10 math/source/ID checks; original Q15 stem/key/placement/rubric unchanged, old educational snapshots immutable. DELTA_C_ACADEMIC_MATERIAL, author CONTENT_READY maintained, full 22-topic S1 audit not yet complete.
+
+---
 <!-- TOP13_S1_G10_B09_DECOMPOSITION_A1_20261120 -->
 ## 20/11 S1 required outcome TOP13-O05
 
 - S1 B09 Toán 10 KNTT tập 1 trang in 57–59: định lý phân tích mỗi vectơ trên mặt phẳng duy nhất theo hai vectơ không cùng phương (khác không), hệ số thực duy nhất; dựng hình bình hành, ví dụ giải hệ và phản ví dụ cùng phương.
-- Exact active learner `d34aa19177e9f6c22a542054638e74bdcbc6b728`, prior snapshot `4ad0c211c61f858cd9f7ccf9cc8bd9afb57ffa54` unchanged in Git history. Q18 affected source receipt `6c67f3888fd50a139a4f177063e9cb7534408d61`, 8/8 scoped tests; canonical Q15/questions/keys/rubrics/SVG and Q16 unchanged.
+- Exact active learner `fcac52eb1263eb3c91799a647aad184f08952d34`, prior snapshot `4ad0c211c61f858cd9f7ccf9cc8bd9afb57ffa54` unchanged in Git history. Q18 affected source receipt `74f6661547f5a1a38ab8c103f85988a8ef9d8d2b`, 8/8 scoped tests; canonical Q15/questions/keys/rubrics/SVG and Q16 unchanged.
 - DELTA_C_ACADEMIC_MATERIAL at TOP13-M05 / TOP13-O05. AUTHORING CONTENT_READY under owner source improvement permission, full 22-topic S1 audit still open; no independent reviewer or website QA claim.
 
 ---
 # AUTHORING-only metadata — CĐ13 Vectơ hình học phẳng và không gian R04
 
-**Scope:** one self-sufficient Topic in three learner pages, 16 modules/outcomes, 16 self-tries, 16 new Practice and 4 Written rubrics /7; active learner source d34aa19177e9f6c22a542054638e74bdcbc6b728. Internal IDs/receipts are not learner-visible.
+**Scope:** one self-sufficient Topic in three learner pages, 16 modules/outcomes, 16 self-tries, 16 new Practice and 4 Written rubrics /7; active learner source fcac52eb1263eb3c91799a647aad184f08952d34. Internal IDs/receipts are not learner-visible.
 
 CONTENT_REVISION: R07_EDITORIAL_FINAL_20261118
 PUBLIC_NEW20_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_NEW20_CANONICAL_BANK_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563
 Q18_R04_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-Q18_R04_RECEIPT_BLOB: 6c67f3888fd50a139a4f177063e9cb7534408d61
+Q18_R04_RECEIPT_BLOB: 74f6661547f5a1a38ab8c103f85988a8ef9d8d2b
 G10_SOURCE_EXTERNAL_PR: 750
 G10_SOURCE_EXTERNAL_BRANCH: authoring/g10-chiv-ped-r02-24-outcomes-20261105
 AUTHORING_STATUS: R07_VECTOR_AND_RUBRIC_Q18_AUTHOR_SELF_VERIFIED
@@ -24,8 +28,8 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: d34aa19177e9f6c22a542054638e74bdcbc6b728
-SOURCE_BLOB: d34aa19177e9f6c22a542054638e74bdcbc6b728
+ACADEMIC_SOURCE_BLOB: fcac52eb1263eb3c91799a647aad184f08952d34
+SOURCE_BLOB: fcac52eb1263eb3c91799a647aad184f08952d34
 ORIGINAL_G10_SGK_SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9
 ORIGINAL_G12_SGK_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
@@ -242,7 +246,7 @@ Previous R05 learner snapshot `9a558f553bd6a4a58701a6bae490717ba5a52540`, NEW20 
 
 ## R07 — CURRENT source, NEW20 and signed Q18 closure (18/11/2026)
 
-This is the superseding **effective** A1–A7 source lock for the one current learner: `d34aa19177e9f6c22a542054638e74bdcbc6b728`, one NEW20 canonical bank `c74505ba59d047c19943c2309f5fd7c033ac9563`, and the only current Q18 composite `6c67f3888fd50a139a4f177063e9cb7534408d61`. Prior R03–R06 sources and bank SHA values in historical sections above are *not* the active current source or 2026-11-18 accepted bank.
+This is the superseding **effective** A1–A7 source lock for the one current learner: `fcac52eb1263eb3c91799a647aad184f08952d34`, one NEW20 canonical bank `c74505ba59d047c19943c2309f5fd7c033ac9563`, and the only current Q18 composite `74f6661547f5a1a38ab8c103f85988a8ef9d8d2b`. Prior R03–R06 sources and bank SHA values in historical sections above are *not* the active current source or 2026-11-18 accepted bank.
 
 - **A1 S1 provenance:** G10 ChIV first-party canonical source exact Git `96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9` on Draft #750; G12 ChII source exact `856a37bd16d2746ffc2e12906de18d1f4338a3b6` locally on this branch; no new SGK/SBT PDF scan claimed. Cross-PR source presence on combined RELEASE HEAD remains separately required; do not make SGK copy to force an AUTHORING pass.
 - **A2/A3/A4:** 16 outcome/lesson IDs, 16 independently worked examples and 16 immediate voluntary First Tries; 52 source canonical IDs (20 original G10+12 G12+20 Topic), current NEW20 20/20 stems exact in learner Practice; one item one ID, one authoritative bank. Corrected clearer notational wording in P01/P02/P11 and W03; **W03 content_version=2** because mathematical dot-product rubric now explicitly arrows, same 2+3+2=7 allocations and answer cos=3/13. No second W03 item or rubric created. Other stable Practice mathematics/SGK original authority unchanged.
@@ -253,7 +257,7 @@ This is the superseding **effective** A1–A7 source lock for the one current le
 
 ## R07 final source snapshot — editorial #864 signoff (18/11/2026)
 
-The final *effective* student Git blob `d34aa19177e9f6c22a542054638e74bdcbc6b728` has one single learner-visible **Nguồn tham khảo** line at the absolute end with verified S1 textbook class/volume/chapter; no printed/PDF index/Git source metadata. 48 Practice disclosure controls now read `Lời giải` and 4 Written disclosure controls read `Lời giải và rubric`, with 16 Knowledge voluntary First Try controls still reading `Đối chiếu`. One NEW20 bank `c74505ba59d047c19943c2309f5fd7c033ac9563` uses the identical two Practice/Written reveal captions. All canonical source IDs, stem/key/solution numbers, W03 rubric 2+3+2=7 and `content_version=2`, 16 public replay IDs, 4 original SVG and 68 reveal pairings unchanged. `DELTA_A_UI` only for the last footer/caption corrections, included within the *same* one Q18 author composite Git blob `6c67f3888fd50a139a4f177063e9cb7534408d61`. Earlier vector/scalar `DELTA_C` self-reviewed Q18 remains valid because the latest delta doesn't touch its mathematics. No new NotebookLM review required; no RELEASE/source-owner #750 source copy, merge or deploy.
+The final *effective* student Git blob `fcac52eb1263eb3c91799a647aad184f08952d34` has one single learner-visible **Nguồn tham khảo** line at the absolute end with verified S1 textbook class/volume/chapter; no printed/PDF index/Git source metadata. 48 Practice disclosure controls now read `Lời giải` and 4 Written disclosure controls read `Lời giải và rubric`, with 16 Knowledge voluntary First Try controls still reading `Đối chiếu`. One NEW20 bank `c74505ba59d047c19943c2309f5fd7c033ac9563` uses the identical two Practice/Written reveal captions. All canonical source IDs, stem/key/solution numbers, W03 rubric 2+3+2=7 and `content_version=2`, 16 public replay IDs, 4 original SVG and 68 reveal pairings unchanged. `DELTA_A_UI` only for the last footer/caption corrections, included within the *same* one Q18 author composite Git blob `74f6661547f5a1a38ab8c103f85988a8ef9d8d2b`. Earlier vector/scalar `DELTA_C` self-reviewed Q18 remains valid because the latest delta doesn't touch its mathematics. No new NotebookLM review required; no RELEASE/source-owner #750 source copy, merge or deploy.
 
 
-**19/11 owner ΔA:** learner `d34aa19177e9f6c22a542054638e74bdcbc6b728` Q18 `6c67f3888fd50a139a4f177063e9cb7534408d61` source-lock updated; vector mathematics and canonical data intact, CONTENT_READY preserved.
+**19/11 owner ΔA:** learner `fcac52eb1263eb3c91799a647aad184f08952d34` Q18 `74f6661547f5a1a38ab8c103f85988a8ef9d8d2b` source-lock updated; vector mathematics and canonical data intact, CONTENT_READY preserved.
