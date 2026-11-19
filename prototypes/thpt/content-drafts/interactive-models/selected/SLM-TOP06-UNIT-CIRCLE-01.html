@@ -33,7 +33,7 @@ button:hover{background:#eaf6fb}:is(button,input):focus-visible,summary:focus-vi
 <h1>Đường tròn lượng giác: góc, sin và cos</h1><p>Dự đoán → thao tác → quan sát → giải thích bằng tọa độ trên đường tròn đơn vị.</p></header>
 <section class="question"><strong>Hãy thử trước:</strong> Góc <strong>150°</strong> nằm ở góc phần tư nào? Sin và cos cùng dấu hay khác dấu? Khi cộng thêm 360°, tọa độ M thay đổi không, còn số đo góc quay có thay đổi không?</section>
 <section class="lab" id="lab"><h2>Điểm M trên đường tròn đơn vị</h2><p class="intro">Kéo thanh góc hoặc dùng phím mũi tên trong ô số. Điểm cuối có tọa độ <strong>M = (cos α; sin α)</strong>. Góc dương quay ngược chiều kim đồng hồ; góc âm quay theo chiều kim đồng hồ.</p>
-<div class="grid"><div class="visual"><figure><canvas id="plot" role="img" aria-label="Đường tròn đơn vị và điểm M theo góc; toàn bộ tọa độ và giá trị cũng có trong bảng kết quả ngay dưới hình"></canvas><figcaption>Đường xanh nối O tới M; các đoạn nét đứt biểu diễn hoành độ cos α và tung độ sin α. Cung tím chỉ góc cùng tia cuối trong [0°,360°), không thể hiện hết chiều và số vòng quay. Góc ban đầu có hướng nằm trong bảng.</figcaption></figure>
+<div class="grid"><div class="visual"><figure><canvas id="plot" role="img" aria-label="Đường tròn đơn vị và điểm M theo góc; toàn bộ tọa độ và giá trị cũng có trong bảng kết quả ngay dưới hình"></canvas><figcaption>Đường xanh nối O tới M; các đoạn nét đứt biểu diễn hoành độ cos α và tung độ sin α. Cung tím chỉ phần góc còn lại CÓ HƯỚNG sau các vòng trọn (dương: ngược chiều kim đồng hồ, âm: cùng chiều). Số vòng và góc gốc nằm trong bảng. Tọa độ M chỉ phụ thuộc góc cùng tia cuối.</figcaption></figure>
 <div class="output" id="result" role="status" aria-live="polite" aria-atomic="true"></div><table aria-label="Bảng giá trị góc lượng giác"><tbody>
 <tr><th scope="row">Góc ban đầu</th><td id="angle"></td></tr><tr><th scope="row">Góc cùng tia cuối</th><td id="coterminal"></td></tr>
 <tr><th scope="row">Tọa độ M</th><td id="point"></td></tr><tr><th scope="row">sin α, cos α</th><td id="trig"></td></tr>
@@ -66,7 +66,7 @@ button:hover{background:#eaf6fb}:is(button,input):focus-visible,summary:focus-vi
  function putText(g){let v=[`${g.angleDeg}° = ${radianExact(g.angleDeg)} rad ≈ ${fmtSigned(g.radians)} rad`,`${g.terminalDeg}°`,
  `(${fmtSigned(g.cos)}; ${fmtSigned(g.sin)})`,`sin α = ${fmtSigned(g.sin)}; cos α = ${fmtSigned(g.cos)}`,
  `tan α = ${g.tan===null?'không xác định':fmtSigned(g.tan)}; cot α = ${g.cot===null?'không xác định':fmtSigned(g.cot)}`,
- `${g.wholeTurns} vòng trọn, góc còn lại ${g.residualAngle}° (có hướng)`];
+ `${g.wholeTurns} vòng trọn có hướng (âm = cùng chiều kim đồng hồ); góc còn lại ${g.residualAngle}° (có hướng)`];
  fields.forEach((id,i)=>{read(id).textContent=v[i];});
  read('result').textContent=`Tia cuối ở ${info(g)}. cos α ${g.cos===0?'bằng 0':g.cos>0?'dương':'âm'}; sin α ${g.sin===0?'bằng 0':g.sin>0?'dương':'âm'}. Góc cùng tia cuối: ${g.terminalDeg}°.`;
  }
@@ -81,10 +81,13 @@ button:hover{background:#eaf6fb}:is(button,input):focus-visible,summary:focus-vi
  c.strokeStyle='#0963a8';c.lineWidth=3.3;c.beginPath();c.moveTo(cx,cy);c.lineTo(px,py);c.stroke();
  c.fillStyle='#0963a8';c.beginPath();c.arc(px,py,6,0,Math.PI*2);c.fill();c.fillStyle='#213c4c';c.font='600 13px system-ui';c.fillText('M',Math.min(w-17,px+9),Math.max(13,py-9));c.font='12px system-ui';
  c.fillText('O',cx-14,cy+17);c.fillText('x',cx+r+15,cy+15);c.fillText('y',cx+10,cy-r-10);
- // Arrow shows orientation of the final ray, not all accumulated revolutions.
- let t=(g.terminalDeg*Math.PI/180), rr=Math.min(28,r*.25), ax=X(0)+rr*Math.cos(-t),ay=Y(0)+rr*Math.sin(-t);
- c.strokeStyle='#9764a6';c.lineWidth=2;c.beginPath();c.arc(cx,cy,rr,0,-t,true);if(t>0)c.stroke();
- c.fillStyle='#9764a6';c.font='11px system-ui';c.fillText(`${g.terminalDeg}°`,cx+rr+7,cy-10);
+ // Use the signed residual angle: -90° must be a clockwise quarter-turn, not a +270° sweep.
+ const t=g.residualAngle*Math.PI/180,rr=Math.min(28,r*.25);
+ c.strokeStyle='#9764a6';c.lineWidth=2;c.beginPath();c.arc(cx,cy,rr,0,-t,t>=0);if(t!==0)c.stroke();
+ if(t!==0){const tx=cx+rr*Math.cos(-t),ty=cy+rr*Math.sin(-t),u=-t+(t>0?-Math.PI/2:Math.PI/2);
+  c.beginPath();c.moveTo(tx,ty);c.lineTo(tx-6*Math.cos(u-.48),ty-6*Math.sin(u-.48));
+  c.moveTo(tx,ty);c.lineTo(tx-6*Math.cos(u+.48),ty-6*Math.sin(u+.48));c.stroke();}
+ c.fillStyle='#9764a6';c.font='11px system-ui';c.fillText((g.residualAngle>0?'+':'')+g.residualAngle+'° còn lại',cx+rr+7,cy-10);
  }
  function render(){if(dead)return;const g=compute(angleDeg);degree.value=String(angleDeg);slider.value=String(angleDeg);putText(g);draw(g);}
  function setState(s){if(dead)throw new Error('Model destroyed');const a=validate(s?.angleDeg);angleDeg=a;err.textContent='';degree.removeAttribute('aria-invalid');render();return getState();}
