@@ -12,7 +12,7 @@ const root=path.resolve(__dirname,"..");
 const base=process.env.SLM_CHV_URL||"http://127.0.0.1:8765";
 const expectedSources={
  12:"ff22a17265a0b3f66607bdfb132975877a7a6eba",
- 13:"0459b67858246cb6136cf9a2cf9e7a7d18bd27be",
+ 13:"d15c561b281986f3e122dcaba1a25ccf0046fda7",
  14:"21c1ef59277f742b45a27900b173fac031a4a04f"
 };
 const ids={12:5,13:5,14:5};
@@ -222,9 +222,11 @@ const blob=data=>{
       officialBook[lesson],context+" exact S1 headings without duplicate SGK");
      assert.deepEqual((await blocks.nth(0).locator(":scope > h3").allInnerTexts()).map(t=>t.trim()),
       lesson===12?["1.1. Cùng tìm hiểu","1.2. Ví dụ trực quan",
-       "1.3. Thực hành máy tính cầm tay — tự nhập, đọc và kiểm",
-       "1.4. Thuật ngữ, kiến thức và kỹ năng"]:
-       ["1.1. Cùng tìm hiểu","1.2. Ví dụ trực quan","1.3. Thuật ngữ, kiến thức và kỹ năng"],
+        "1.3. Thực hành máy tính cầm tay — tự nhập, đọc và kiểm",
+        "1.4. Thuật ngữ, kiến thức và kỹ năng"]:
+        lesson===13?["1.1. Vì sao một bộ dữ liệu cần nhiều số đại diện?",
+        "1.2. Khám phá cách xác định số đại diện","1.3. Tổng kết cách chọn số đặc trưng"]:
+        ["1.1. Cùng tìm hiểu","1.2. Ví dụ trực quan","1.3. Thuật ngữ, kiến thức và kỹ năng"],
       context+" concept-first discovery");
      if(lesson===14){
       const picture=blocks.nth(1).locator('img[src$="G10_B14_BOXPLOT_S1_Q18_ENRICHMENT_20261113.svg"]');
@@ -234,11 +236,11 @@ const blob=data=>{
       assert(await picture.evaluate(async img=>{if(img.decode)await img.decode();return img.naturalWidth>0;}),
        context+" real educational boxplot SVG decodes");
      }
-     assert.equal(await blocks.nth(2).locator(":scope > h3").count(),lesson===12?4:3,
+     assert.equal(await blocks.nth(2).locator(":scope > h3").count(),lesson===14?3:4,
       context+" signed number of worked examples");
      const sourceBox=".thpt-g10-example-solution";
       assert.equal(await blocks.nth(2).locator(sourceBox).count(),
-       lesson===12?4:3,context+" B12 source-authored solutions, B13/B14 legacy Golden");
+       lesson===14?3:4,context+" B12/B13 source-authored solutions, B14 legacy Golden");
      const render=await article.evaluate(root=>{
       const body=getComputedStyle(root.querySelector(".tabbed-block p")).fontSize;
       const labels=[...root.querySelectorAll(":scope > .tabbed-set > .tabbed-labels > label")];
@@ -263,11 +265,47 @@ const blob=data=>{
      assert(render.summaries.every(t=>t.startsWith("Đối chiếu")),context+" opt-in concise result disclosure");
      assert(render.overflow<=3,context+" no horizontal page overflow");
      assert(render.tipsClosed&&render.tipsCount>=2,context+" all D6 remediation stays closed");
-     assert.equal(render.worked.length,lesson===12?4:3,context+" B12 has four visibly grouped Golden worked solutions");
+     assert.equal(render.worked.length,lesson===14?3:4,context+" B12/B13 have four visibly grouped Golden worked solutions");
      assert(render.worked.every(x=>x.text.length>=55&&x.color!=="rgba(0, 0, 0, 0)"),
       context+" each example has unchanged readable source and a visible Golden panel");
      assert.equal(await article.locator("[data-g10-chapter-selfcheck]").count(),0,
       context+" no independent Readiness exposed");
+      if(lesson===13){
+       assert.equal(await blocks.nth(1).locator(".thpt-r4-concept-card").count(),4,
+        context+" four correct formal definitions");
+       assert.equal(await blocks.nth(1).locator(".thpt-r4-rule-card").count(),1,
+        context+" quartile procedure uses B10 rule panel");
+       const figure=blocks.nth(0).locator('img[src*="THPT_G10_B13_QUARTILES_D5_R01.svg"]');
+       assert.equal(await figure.count(),1,context+" figure must guide discovery, not trail in Tab2");
+       await labels.nth(0).click();
+       await figure.scrollIntoViewIfNeeded();
+       const fig=await figure.evaluate(img=>{
+        const box=img.closest("figure"),r=img.getBoundingClientRect();
+        return {width:r.width,scroll:box.scrollWidth,client:box.clientWidth,
+         over:getComputedStyle(box).overflowX,doc:document.documentElement.scrollWidth-innerWidth};
+       });
+       assert(fig.doc<=3,context+" no whole-page overflow");
+       if(width===390)assert(fig.width>=580&&fig.scroll>fig.client+50&&
+        ["auto","scroll"].includes(fig.over),context+" mobile SVG can pan inside figure");
+       assert(await figure.evaluate(async img=>{if(img.decode)await img.decode();return img.naturalWidth>0;}),
+        context+" SVG decoded correctly");
+       for(const scheme of ["default","slate"]){
+        await page.evaluate(v=>document.body.setAttribute("data-md-color-scheme",v),scheme);
+        const current=await sample(page);
+        assert.deepEqual(current.solution,b10Palette[scheme].solution,context+" Golden solution matches B10 "+scheme);
+        assert.deepEqual(current.concept,b10Palette[scheme].concept,context+" Golden concept matches B10 "+scheme);
+        assert.deepEqual(current.rule,b10Palette[scheme].rule,context+" Golden rule matches B10 "+scheme);
+       }
+       await page.evaluate(()=>document.body.removeAttribute("data-md-color-scheme"));
+       await labels.nth(2).click();
+       const examples=await blocks.nth(2).locator(".thpt-g10-example-solution").allInnerTexts();
+       assert(examples.length===4&&examples.every(t=>t.includes("Bước")),context+" examples must explain reasoning");
+       await labels.nth(3).click();
+       assert.deepEqual((await blocks.nth(3).locator("details.tip > summary").allTextContents())
+        .map(t=>t.trim().slice(0,3)),["4.1","4.2"],context+" numbered recovery no fake titles");
+       await labels.nth(0).click();
+      }
+
      if(lesson===12){
        const solved=blocks.nth(2).locator(".thpt-g10-example-solution");
        await solved.first().locator("mjx-container").first()
