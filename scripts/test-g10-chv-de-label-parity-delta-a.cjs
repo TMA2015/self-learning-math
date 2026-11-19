@@ -73,9 +73,9 @@ const b11p="docs/thpt-preview/sgk/chuong-iv/bai-11.md";
 assert.equal(sha1(get(b11p)),field("B11_UNCHANGED_SOURCE_BLOB"),
  "B11 owner-approved presentation must not change");
 const fullCss=get("docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css");
-const marker="/* G10 ChV B14 · scoped X-C RELEASE Golden";
-const at=fullCss.indexOf(marker);
-assert(at>0&&fullCss.indexOf(marker,at+1)<0,
+const b14CssMarker="/* G10 ChV B14 · scoped X-C RELEASE Golden";
+const at=fullCss.indexOf(b14CssMarker);
+assert(at>0&&fullCss.indexOf(b14CssMarker,at+1)<0,
  "B14 must append one new scoped CSS block after owner-P2 B12/B13");
 assert.equal(sha1(fullCss.slice(0,at-1)),field("SHARED_GOLDEN_CSS_BLOB"),
  "B12/B13 Golden CSS cannot drift before B14 append");
