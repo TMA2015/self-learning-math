@@ -1,9 +1,9 @@
 # CĐ4 R06 — AUTHORING numbering-only Q18 custody
 
 CURRENT_SOURCE_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_R06_NUMBERING_CONSISTENT_20261116.md
-CURRENT_SOURCE_BLOB: bb4da8a9c17c4b5051043043d76682144e5414c3
+CURRENT_SOURCE_BLOB: 8608179c09dee12c6088c219721f095aa9406147
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC04_R06_NUMBERING_DELTA_A_Q18_20261116.md
-CURRENT_Q18_RECEIPT_BLOB: 7b5837abf401a44fb5aee4624f0416b5616e3f47
+CURRENT_Q18_RECEIPT_BLOB: 71d6134f983138e3292c3731cba1f21091e6702b
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
@@ -141,3 +141,6 @@ RELEASE_AUTHORIZATION: NO
 | `THPT-TOP04-W04` | `TOP04-O17` | TOPIC_WRITTEN | `004692a2d996b5ba955318a087f4d58dcdb2df04` |
 
 **Review boundary:** 49 câu nguồn lấy từ snapshot SGK đã có độc lập Academic/PED PASS và chứng cứ DELTA_B cho hai số thập phân; không sao chép câu/đáp án/rubric. Bộ CĐ04 với 18 module, 26 bài mới, SVG mới là `DELTA_C_ACADEMIC_MATERIAL` tự kiểm tra `Q18_AUTHOR_SELF_VERIFIED` theo owner v3.0.1. Không gán NotebookLM PASS cũ sang CĐ04, không giả model tương tác đã chạy, không tuyên bố assessment chính thức.
+
+
+**19/11 owner ΔA:** source `8608179c09dee12c6088c219721f095aa9406147`, Q18 `71d6134f983138e3292c3731cba1f21091e6702b` updated, previous formulas and canonical items unchanged, CONTENT_READY preserved.
