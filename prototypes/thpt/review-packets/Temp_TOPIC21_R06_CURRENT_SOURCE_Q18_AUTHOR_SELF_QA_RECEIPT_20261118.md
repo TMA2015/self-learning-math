@@ -7,7 +7,7 @@ Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 LEARNING_PATH: TOPIC
 SOURCE_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_LEARNER_PRESENTATION_20261116.md
-SOURCE_BLOB: aa325637f659bc5f8ba504f6ce0129e07340a41d
+SOURCE_BLOB: 60b62c112ce6df70849379b9e0aba828031d00ac
 AUTHOR_TARGETED_Q18_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R06_D6_Q15_Q18_AUTHOR_TARGETED_RECEIPT_20261117.md
 AUTHOR_TARGETED_Q18_BLOB: d67d28772fe1f724624b19f314dd6df1f62c8cc7
 AUTHOR_A1_A7_BLOB: 1ea2b6a48abb8fa8d84025511177eb7671a765d4
@@ -43,11 +43,15 @@ ASSESSMENT_Q16: 8 owner-held private RD1 candidate questions are outside public 
 
 - Immutable R04 source `2fa6557286aba05dd0eea972d4c4ac68371842d7` signed full-topic author self-QA at `3dec04e92a96d24b4b77ebda144bc1ca80b8f1f8`.
 - R05 learner equivalent source `65938a700e0da630694e9cbb6e636d337e67aeb5` preserved mathematical content, original 19 item answers/rubrics and figures; its technical receipt `aa3e00f55eb8f6930e23e9b15bbba3ba2d8e972a` is historical.
-- Current in-place R06 learner source `aa325637f659bc5f8ba504f6ce0129e07340a41d` has revised error-remediation instructions and current Q15 versions. The signed current source-targeted author Q18 receipt is `d67d28772fe1f724624b19f314dd6df1f62c8cc7`; A1–A7 is `1ea2b6a48abb8fa8d84025511177eb7671a765d4`.
+- Current in-place R06 learner source `60b62c112ce6df70849379b9e0aba828031d00ac` has revised error-remediation instructions and current Q15 versions. The signed current source-targeted author Q18 receipt is `d67d28772fe1f724624b19f314dd6df1f62c8cc7`; A1–A7 is `1ea2b6a48abb8fa8d84025511177eb7671a765d4`.
 - Independent review of **eight** D6 first-try outcomes O01–O08 is archived at blob `06157b8c7e5873611b463f991620c466b72e2741`. The original owner-pasted SOURCE_RECEIPT used a truncated 34-character value incorrectly labelled SHA256; the actual canonical learner Git blob is the 40-character `aa325...` at top. Reviewer M01–M08 are not canonical V2 K01–K08 lesson labels. Verified outcome IDs and 8 numbered learner units map correctly; no re-ID.
 - `AUTHOR_SELF_VERIFIED` is the whole-topic Q18 verification mode. An `INDEPENDENT_REVIEW` targeted D6 supplement is additional evidence, **not** a reviewer full Topic PASS, not authorization for private assessment or release.
 
-AUTHOR_SIGNOFF: TOP21_R06_CURRENT_SOURCE_Q01_Q18_A1_A7_AUTHOR_SELF_VERIFIED_aa325637f659bc5f8ba504f6ce0129e07340a41d
+AUTHOR_SIGNOFF: TOP21_R06_CURRENT_SOURCE_Q01_Q18_A1_A7_AUTHOR_SELF_VERIFIED_60b62c112ce6df70849379b9e0aba828031d00ac
 P0: 0
 P1: 0
 RELEASE_AUTHORIZATION: NO
+
+
+<!-- TOP21_OWNER_EDITORIAL_DELTA_A_20261119 -->
+**Owner-approved Delta A 19/11:** Removed exactly 8 repetitive `Khám phá kiến thức` minor headings; changed one Bayes explicit **KIẾN THỨC CẦN GHI NHỚ** mathematical callout heading to **CÔNG THỨC — Bayes có xét tỉ lệ nền**. All explanatory prose including all assumptions, numerical Bayes conditional values, 8 examples/8 Vận dụng/Đối chiếu, canonical IDs, keys/rubrics, 2 figures, D6 paths and Q16 unchanged. Former learner `aa325637f659bc5f8ba504f6ce0129e07340a41d`, current `60b62c112ce6df70849379b9e0aba828031d00ac`. Reverse-diff check for 8 headings and one rename confirms underlying byte identity, no new theorem/exercise. Q18 affected source-equivalent, owner keeps CONTENT_READY, no NotebookLM rereview/site changes.
