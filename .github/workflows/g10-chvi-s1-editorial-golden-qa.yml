@@ -1,17 +1,14 @@
 name: G10 ChVI B15-B18 S1/Q18 editorial + Golden QA (no deploy)
+# Legacy 12+81 browser cases: shared runtime/test-maintenance or explicit manual only.
+# A single B15–B18 change runs 1-lesson AP1–AP5/Q15/Q16 browser QA instead.
 on:
   pull_request:
     paths:
-      - "docs/thpt-preview/sgk/chuong-vi/bai-*.md"
       - "docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js"
-      - "prototypes/thpt/ux795/G10_CHVI_B15_B18_S1_Q18_EDITORIAL_RECEIPT_20261113.md"
-      - "prototypes/thpt/ux795/G10_CHVI_B15_B18_EXAMPLE_UX_Q18_DELTA_RECEIPT_20261113.md"
-      - "scripts/thpt-q18-g10-source-receipt.cjs"
-      - "scripts/test-ux795-g10-chvi-ped-mapping.cjs"
-      - "scripts/test-thpt-chvi-math-block-render.cjs"
-      - "scripts/test-g10-chvi-editorial-source.cjs"
+      - "docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"
       - "scripts/test-g10-chvi-s1-golden-browser.cjs"
-      - ".github/workflows/g10-chvi-s1-editorial-golden-qa.yml"
+      - "scripts/test-thpt-chvi-math-block-render.cjs"
+  workflow_dispatch:
 permissions:
   contents: read
 jobs:
