@@ -185,5 +185,14 @@ assert(b16.includes("Định nghĩa — Hàm số bậc hai:")&&b16.includes("\\
  b16.includes("nghịch biến trên")&&b16.includes("đồng biến trên")&&
  b16.includes("tập giá trị")&&!b16.includes("Hàm số bậc hai (a\n    e0)"),
  "B16 canonical definition a!=0, both signs and complete monotonicity must remain");
+// Q07/AP3: an SVG with only its title is not an actual graph. The B16
+// formal figure must contain a drawn curve and coordinate geometry before
+// its learner-facing "Cách đọc hình" can count as pedagogical evidence.
+const fig16=(b16.match(/<figure[^>]*data-thpt-quadratic-plot[^>]*>[\s\S]*?<\/figure>/)||[])[0];
+assert(fig16,"B16_OUT_03 Q07 missing canonical formal quadratic figure");
+const drawable=fig16?.includes("<svg")?fig16:null;
+assert(drawable&&/<(?:path|polyline)\b/.test(drawable)&&
+ (drawable.match(/<line\b/g)||[]).length>=2,
+ "AUTHORING_DEFECT B16_OUT_03 Q07/AP3: formal quadratic SVG has title only, lacks plotted parabola and x/y axes");
 require("./test-g10-b15-p2-editorial-delta.cjs");
 console.log("PASS G10 ChVI Q18 original→P1→example UX source chain: 19/19 First Try, 19 D6, 5 original figures, 13 example sections; NO DEPLOY.");
