@@ -166,6 +166,8 @@
 
     ### 3.1. Ví dụ 1 — Sai số thực khi đã biết số đúng
 
+    <div hidden data-thpt-g10-example-boundary></div>
+
     **Đề:** Cho số đúng \(\bar a=12{,}347\), số gần đúng \(a=12{,}35\). Tìm sai số tuyệt đối và sai số tương đối.
 
     **Phân tích:** Biết \(\bar a\) nên tính được \(\Delta_a\). Với sai số tương đối theo KNTT, phải chia cho **\(|a|\)**, không phải số đúng.
@@ -177,6 +179,8 @@
     **Kiểm lại:** Nếu chỉ có \(\Delta_a\le0{,}003\), phải dùng \(\delta_a\le0{,}003/12{,}35\), không khẳng định bằng.
 
     ### 3.2. Ví dụ 2 — Độ chính xác chỉ cho một khoảng
+
+    <div hidden data-thpt-g10-example-boundary></div>
 
     **Đề:** Chiều dài gần đúng \(a=8{,}6\,\mathrm{cm}\), độ chính xác \(d=0{,}2\,\mathrm{cm}\). Tìm khoảng số đúng có thể nằm và đánh giá sai số.
 
@@ -190,6 +194,8 @@
 
     ### 3.3. Ví dụ 3 — Quy tròn và kiểm sai số
 
+    <div hidden data-thpt-g10-example-boundary></div>
+
     **Đề:** Quy tròn số đúng \(3{,}14159\) tới hàng phần trăm và tính sai số thực.
 
     **Phân tích:** Cần xét chữ số hàng phần nghìn để quyết định giữ hay tăng chữ số hàng phần trăm. Có số ban đầu chính xác nên tính chênh được.
@@ -201,6 +207,8 @@
     **Kiểm lại:** \(0{,}00159\le0{,}005\), bằng một nửa bước quy tròn \(0{,}01\). Không áp dụng giới hạn này tùy tiện cho phép đo khác.
 
     ### 3.4. Ví dụ 4 — Bấm máy tính đúng biểu thức rồi quy tròn
+
+    <div hidden data-thpt-g10-example-boundary></div>
 
     **Đề:** Dùng máy tính tìm giá trị gần đúng của \(2^9\sqrt3\) với ba chữ số thập phân, cùng kiểu bài trong SGK trang in 74.
 
