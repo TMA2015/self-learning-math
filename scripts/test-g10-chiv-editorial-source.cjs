@@ -310,8 +310,8 @@ for(const [lesson,row] of rows){
   assert.equal(blob(css.toString("utf8").slice(0,endB09Css)),f("R03_CSS_BLOB"),
    "B09 original CSS must match exact owner P2 prefix");
   const cssText=css.toString("utf8"),marker="/* G10 Chapter IV B09 R03";
-  const at=cssText.indexOf(marker);
-  assert(at>0&&cssText.indexOf(marker,at+1)<0,"B09 one CSS append only");
+  const at=cssText.indexOf(b13CssMarker);
+  assert(at>0&&cssText.indexOf(b13CssMarker,at+1)<0,"B09 one CSS append only");
   assert.equal(blob(cssText.slice(0,at-1)),f("CSS_BASELINE_BLOB"),
    "All owner P2-accepted B01–B08 CSS bytes must remain identical");
   const svg=fs.readFileSync(path.join(root,
@@ -423,7 +423,7 @@ for(const [lesson,row] of rows){
    const b12Color=k=>b12Palette.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
    assert.equal(b12Color("GOLDEN_CSS_PREVIOUS_BLOB"),b11f("CSS_B11_SCOPED_APPEND_BLOB"),
     "Signed B10/B11 stylesheet was exact accepted baseline before B12 append");
-   const cssText=css.toString("utf8"),marker="/* G10 ChV B13 · exact B10/B12 Golden palette";
+   const cssText=css.toString("utf8"),b13CssMarker="/* G10 ChV B13 · exact B10/B12 Golden palette";
    const at=cssText.indexOf(marker);
    assert(at>0&&cssText.indexOf(marker,at+1)<0,
     "B13 may add only one Golden scoped CSS appendix");
