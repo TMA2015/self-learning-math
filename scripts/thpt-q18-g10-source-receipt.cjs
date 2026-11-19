@@ -756,6 +756,24 @@ function expectedG10KnowledgeBlob(lesson,legacy){
     "B16 material revision requires outcome-specific owner source receipt");
    return next16;
   }
+  if(name==="B17"){
+   // Current B17 extends the immutable published ChVI example-UX snapshot.
+   // One scoped author self-QA receipt, never a retroactive NotebookLM verdict.
+   assert(ux&&chvi&&!chiv&&!chv,"B17 requires exact historical ChVI lineage");
+   const receipt=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHVI_B17_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261119.md"),"utf8");
+   const field=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(field("BASELINE_PUBLISHED_B17_SOURCE_BLOB"),ux.candidate,
+    "B17 R01 must extend exact historic published source, preserving old receipt");
+   const current=field("CANDIDATE_B17_SOURCE_BLOB");
+   assert(/^[0-9a-f]{40}$/.test(current||"")&&current!==ux.candidate,
+    "B17 R01 must point to a different SHA-locked canonical learner source");
+   for(const token of ["Q18_OWNER_SELF_VERIFIED_ENRICHMENT","DELTA_C_ACADEMIC_MATERIAL",
+     "B17_OUT_01","B17_OUT_05","TRY11","TRY15","P0=0","P1=0"]){
+    assert(receipt.includes(token),"B17 Q18 owner receipt missing: "+token);
+   }
+   return current;
+  }
   if(ux){
    assert(chvi&&!chiv&&!chv,name+" UX follow-on restricted to published Chapter VI source");
    assert.equal(ux.baseline,row.candidate,name+" immutable source chain: original ChVI receipt → UX delta");
