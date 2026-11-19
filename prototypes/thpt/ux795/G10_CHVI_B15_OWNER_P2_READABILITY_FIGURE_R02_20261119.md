@@ -10,8 +10,8 @@
 **GOLDEN_STYLESHEET_BLOB:** `4af85dd38d02ed55b29daa6713bfbc892f0d7078` (identical, no CSS changes)
 **ORIGINAL_SVG_ASSET_BLOB:** `8a3b090af3a1bb73c972c4cb0a3795bbbc7f2f31` (identical, no modified geometry/text/art)
 **SOURCE_VERIFICATION:** `Q18_OWNER_SELF_VERIFIED_SCOPED_DELTA_PENDING_CI`; not an independent NotebookLM academic/PED PASS
-**DELTA_CLASS:** `DELTA_A_UI` for reusing existing Golden concept-figure class + `DELTA_C_ACADEMIC_MATERIAL` for reordering worked explanation **before** First Try in B15_OUT_02/B15_OUT_05; redundant labels removed without altering math
-**CURRENT_STATUS:** `DRAFT / TARGETED_PED_REVIEW_PENDING / CI_PENDING / NOT_MERGED / NOT_DEPLOYED`
+**DELTA_CLASS:** `DELTA_A_UI` for existing Golden concept-figure display + `DELTA_B_SOURCE_EQUIVALENT` for moving the same worked examples before First Try and removing redundant mini-headings; no changed conditions, formulas, answer/rubric or mathematical claim
+**CURRENT_STATUS:** `DRAFT / SCOPE_EQUIVALENCE_SELF_CHECKED / EXACT_HEAD_CI_REQUIRED / NOT_MERGED / NOT_DEPLOYED`
 
 ## Owner screenshot defects and precise scope
 
@@ -25,7 +25,8 @@
 - B15 S1 heading set `2.1/2.2/2.3`, original five Discovery scenarios, four worked formal examples, **five unique TRY IDs and five HELP IDs**, original answers/rubrics, source mapping figure, plain graph-check explanation, and B12–B14 published snapshots preserved.
 - No duplicate canonical item, answer reveal before student tap, Mastery, RD1 private material, Final Submit, Firebase, Gemini or deploy workflow change.
 - One canonical Markdown source; no parallel student manuscript. Prior full B15 source-lock receipts remain immutable. This receipt chains from `cc0b8...`, and is the only B15 follow-on source.
-- **Delta C independent reviewer gate remains open** solely for B15_OUT_02/B15_OUT_05 pedagogical ordering (not all B15 or B16). Must not claim `CONTENT_READY`/P1 published/new-owner P2 until source-specific review and CI/cross-site UI gates close. If no independent reviewer available, keep this PR Draft and publish B16 only if independently qualified.
+- **Delta B classification confirmed by direct scope comparison:** B15_OUT_02 uses exactly the prior `f(x)=√(x−1)` and `(x+1)/(x−2)` worked examples, distinct from its unchanged independent First Try `f(x)=√(x−2)`; B15_OUT_05 uses the unchanged 2-km illustrative shipping model, distinct from its unchanged 3-km independent First Try. The sample calculations, conditions, outputs, canonical IDs, answer disclosures and remediation remain unchanged. Reordering these existing examples before independent practice makes the explanation available before the question but does not give the question's answer or add a new mathematical or pedagogical claim. This is **source-equivalent presentation sequencing**, not a material change to the teaching substance. No NotebookLM re-review is necessary for this exact verified source-equivalent snapshot; future genuine content/answer/rubric changes still trigger Delta C.
+- **Release gate still applies:** the owner already authorized republication of these screenshot corrections; run exact-head QA and verify emitted GitHub Pages P1. Do not call `P1_PUBLISHED` before deployment verification or `OWNER_P2_PASS` before physical device acceptance.
 
 ## Required tests
 
