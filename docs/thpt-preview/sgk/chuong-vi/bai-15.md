@@ -220,65 +220,65 @@
 
     ### 3.1. Ví dụ 1 — Kiểm tập xác định trước khi xét điểm trên đồ thị
 
-    #### &nbsp; {style="display:none"}
-
     **Đề:** Xét \(f(x)=\dfrac1{x-2}\). Tìm tập xác định; xét hai điểm \(M(3;1)\) và \(N(2;0)\) có thuộc đồ thị hay không.
 
     **Phân tích:** Quy tắc là một phân thức, nên trước khi thay bất kì tọa độ nào phải loại giá trị làm mẫu bằng \(0\). Điểm thuộc đồ thị cần thỏa **cả** \(x\in D\) và \(y=f(x)\).
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ">
-    <p><strong>Bước 1 — Xác định miền hợp lệ:</strong> \(x-2\ne0\iff x\ne2\). Vì vậy \(D=\mathbb R\setminus\{2\}\).</p>
-    <p><strong>Bước 2 — Kiểm điểm M:</strong> \(3\in D\), \(f(3)=1/(3-2)=1\), đúng bằng tung độ, nên \(M(3;1)\) thuộc đồ thị.</p>
-    <p><strong>Bước 3 — Kiểm điểm N:</strong> \(2\notin D\). Do đó \(N(2;0)\) không thuộc đồ thị; không được tính \(f(2)\) vì mẫu bằng \(0\).</p>
-    </div>
+    **Lời giải.**
+
+    **Bước 1 — Xác định miền hợp lệ:** \(x-2\ne0\iff x\ne2\). Vì vậy \(D=\mathbb R\setminus\{2\}\).
+
+    **Bước 2 — Kiểm điểm M:** \(3\in D\), \(f(3)=1/(3-2)=1\), đúng bằng tung độ, nên \(M(3;1)\) thuộc đồ thị.
+
+    **Bước 3 — Kiểm điểm N:** \(2\notin D\). Do đó \(N(2;0)\) không thuộc đồ thị; không được tính \(f(2)\) vì mẫu bằng \(0\).
 
     **Kiểm lại:** Hoành độ hợp lệ là điều kiện bắt buộc trước khi so tung độ. Không được xem một điểm “đã vẽ trên hệ trục” là tự động nằm trên đồ thị.
 
     ### 3.2. Ví dụ 2 — Phân biệt miền đầu vào và tập đầu ra
 
-    #### &nbsp; {style="display:none"}
-
     **Đề:** Cho \(g(x)=\sqrt{x+3}\) trên tập số thực. Xác định tập xác định \(D\) và tập giá trị \(T\).
 
     **Phân tích:** Điều kiện của căn bậc hai xác định \(D\). Để tìm \(T\), ngoài việc biết \(g(x)\ge0\), còn phải chứng minh **mọi** giá trị không âm đều có thể đạt được.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ">
-    <p><strong>Bước 1 — Tập xác định:</strong> \(x+3\ge0\iff x\ge-3\), nên \(D=[-3;+\infty)\).</p>
-    <p><strong>Bước 2 — Chặn tập giá trị:</strong> Vì căn bậc hai không âm, \(g(x)\ge0\). Giá trị nhỏ nhất \(0\) đạt tại \(x=-3\).</p>
-    <p><strong>Bước 3 — Chứng minh mọi đầu ra:</strong> Với \(y\ge0\) bất kì, chọn \(x=y^2-3\ge-3\); khi đó \(g(x)=\sqrt{y^2}=y\). Vậy \(T=[0;+\infty)\).</p>
-    </div>
+    **Lời giải.**
+
+    **Bước 1 — Tập xác định:** \(x+3\ge0\iff x\ge-3\), nên \(D=[-3;+\infty)\).
+
+    **Bước 2 — Chặn tập giá trị:** Vì căn bậc hai không âm, \(g(x)\ge0\). Giá trị nhỏ nhất \(0\) đạt tại \(x=-3\).
+
+    **Bước 3 — Chứng minh mọi đầu ra:** Với \(y\ge0\) bất kì, chọn \(x=y^2-3\ge-3\); khi đó \(g(x)=\sqrt{y^2}=y\). Vậy \(T=[0;+\infty)\).
 
     **Kiểm lại:** \(D\) bắt đầu từ \(-3\), còn \(T\) bắt đầu từ \(0\). Không chép \(D\) sang \(T\); cần xét những \(y\) **thực sự nhận được**.
 
     ### 3.3. Ví dụ 3 — Chọn nhánh và tính đúng phần vượt ngưỡng
 
-    #### &nbsp; {style="display:none"}
-
     **Đề:** Một mô hình phí vận chuyển giả định (đơn vị nghìn đồng) cho quãng đường \(x\ge0\) km như sau: \(P(x)=10\) nếu \(0\le x\le2\); \(P(x)=10+5(x-2)\) nếu \(x>2\). Tính \(P(2)\) và \(P(4)\).
 
     **Phân tích:** Tại điểm biên \(x=2\) phải chọn nhánh chứa dấu bằng. Trên \(2\) km, phần tăng thêm tính theo số km **vượt quá 2**, không phải toàn quãng đường.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ">
-    <p><strong>Bước 1 — Tại ranh giới:</strong> \(2\in[0;2]\), nên dùng nhánh thứ nhất: \(P(2)=10\) nghìn đồng.</p>
-    <p><strong>Bước 2 — Vượt ranh giới:</strong> \(4>2\), nên \(P(4)=10+5(4-2)=20\) nghìn đồng.</p>
-    <p><strong>Bước 3 — Đối chiếu mô hình:</strong> Phần tăng thêm là \(2\) km, nhân với \(5\) nghìn đồng/km được \(10\) nghìn đồng; cộng mức cơ bản \(10\) bằng \(20\).</p>
-    </div>
+    **Lời giải.**
+
+    **Bước 1 — Tại ranh giới:** \(2\in[0;2]\), nên dùng nhánh thứ nhất: \(P(2)=10\) nghìn đồng.
+
+    **Bước 2 — Vượt ranh giới:** \(4>2\), nên \(P(4)=10+5(4-2)=20\) nghìn đồng.
+
+    **Bước 3 — Đối chiếu mô hình:** Phần tăng thêm là \(2\) km, nhân với \(5\) nghìn đồng/km được \(10\) nghìn đồng; cộng mức cơ bản \(10\) bằng \(20\).
 
     **Kiểm lại:** Hai miền không chồng nhau và bao phủ \(x\ge0\), nên mỗi quãng đường nhận đúng một mức phí. Đây chỉ là **mô hình giả định**, không phải biểu giá thực tế hay dữ liệu SGK.
 
     ### 3.4. Ví dụ 4 — Chứng minh nghịch biến bằng hai đầu vào bất kì
 
-    #### &nbsp; {style="display:none"}
-
     **Đề:** Xét \(h(x)=5-2x\) trên \(\mathbb R\). Hãy chứng minh hàm số nghịch biến trên \(\mathbb R\).
 
     **Phân tích:** Hai giá trị thử riêng lẻ không thể chứng minh tính đơn điệu trên **mọi** \(x\). Cần chọn \(x_1<x_2\) bất kì rồi xét dấu \(h(x_2)-h(x_1)\).
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ">
-    <p><strong>Bước 1 — Lấy hai số bất kì:</strong> Cho \(x_1,x_2\in\mathbb R\), \(x_1&lt;x_2\), suy ra \(x_2-x_1>0\).</p>
-    <p><strong>Bước 2 — So giá trị hàm số:</strong> \(h(x_2)-h(x_1)=[5-2x_2]-[5-2x_1]=-2(x_2-x_1)&lt;0\).</p>
-    <p><strong>Bước 3 — Kết luận:</strong> \(h(x_2)&lt;h(x_1)\) với mọi \(x_1&lt;x_2\). Theo định nghĩa, \(h\) nghịch biến trên \(\mathbb R\).</p>
-    </div>
+    **Lời giải.**
+
+    **Bước 1 — Lấy hai số bất kì:** Cho \(x_1,x_2\in\mathbb R\), \(x_1&lt;x_2\), suy ra \(x_2-x_1>0\).
+
+    **Bước 2 — So giá trị hàm số:** \(h(x_2)-h(x_1)=[5-2x_2]-[5-2x_1]=-2(x_2-x_1)&lt;0\).
+
+    **Bước 3 — Kết luận:** \(h(x_2)&lt;h(x_1)\) với mọi \(x_1&lt;x_2\). Theo định nghĩa, \(h\) nghịch biến trên \(\mathbb R\).
 
     **Kiểm lại:** Cách chứng minh dùng mọi cặp đầu vào, không cần đạo hàm. Nếu thay \(-2\) bằng hệ số dương, dấu của hiệu sẽ đảo chiều và hàm đồng biến.
 
