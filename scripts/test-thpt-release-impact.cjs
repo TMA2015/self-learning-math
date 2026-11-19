@@ -28,7 +28,8 @@ const CI_ROUTING_ONLY=new Set([
  ".github/workflows/thpt-r4-preview-quality.yml",
  ".github/workflows/thpt-deploy-scope-safety-qa.yml",
  ".github/workflows/qa-pr.yml",
- "scripts/test-thpt-release-impact.cjs"
+ "scripts/test-thpt-release-impact.cjs",
+ "scripts/test-thpt-scoped-deploy-proof.cjs"
 ]);
 const B16_LESSON="docs/thpt-preview/sgk/chuong-vi/bai-16.md";
 const B16_ALLOWED=new Set([
