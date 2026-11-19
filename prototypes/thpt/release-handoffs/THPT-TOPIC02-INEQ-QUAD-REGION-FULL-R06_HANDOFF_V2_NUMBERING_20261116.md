@@ -5,7 +5,7 @@
 PACKET_ID: THPT-TOPIC02-INEQ-QUAD-REGION-FULL-R01
 CONTENT_REVISION: R06
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R06_NUMBERING_ONLY_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: 91408737fec8fbd7710984b920c77c25123b12a9
+AUTHOR_METADATA_BLOB: dd0b8bd34359a3d18ddda8e70a6dcf2b99056abb
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
@@ -13,9 +13,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: ec8a640c65f66e1f743c8af155642aac6a4170c3
+ACADEMIC_SOURCE_BLOB: 702163e95642d24f070c442cf13f4ad575678145
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC02_R06_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: 7752de431df0e1d11e2ebe67390781c6f6c7f1d9
+REVIEW_RECEIPT_BLOB: 1926ded71fc19efd5e16f72c0e82747a8d1245b4
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC02_INEQ_QUAD_REGION_ORIGINAL18_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 6412d01a5d2c9b04c6f97d5b6a41c43e85d1c2df
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC02_INEQ_QUAD_REGION_ORIGINAL20_EXTENSION_R01_20261112.md
@@ -193,7 +193,7 @@ RELEASE_AUTHORIZATION: NO
 
 ## R06 active formal-knowledge revision — targeted Q03/Q09–Q14 author QA
 
-- SOURCE_BLOB `ec8a640c65f66e1f743c8af155642aac6a4170c3`; Q18 receipt `7752de431df0e1d11e2ebe67390781c6f6c7f1d9`; A1 metadata `91408737fec8fbd7710984b920c77c25123b12a9`; same original 18 SGK and 20 Topic canonical IDs, 16 public selfcheck placements.
+- SOURCE_BLOB `702163e95642d24f070c442cf13f4ad575678145`; Q18 receipt `1926ded71fc19efd5e16f72c0e82747a8d1245b4`; A1 metadata `dd0b8bd34359a3d18ddda8e70a6dcf2b99056abb`; same original 18 SGK and 20 Topic canonical IDs, 16 public selfcheck placements.
 - 4 actual student-facing formal mathematical statements: equivalent inequality operations, discriminant cases with a≠0, sign with Δ<0, and two-variable linear inequality including a or b equal to zero. Added one concise learner recall block, all facts verified against existing worked examples and limitations.
 - Complete learner Practice and Selfcheck byte-exact to previous selected source `351dc607a6721fd56947344034f06c6cc8cca253`, the same 38 canonical ID positions, disclosures, source SVG paths and original answers/rubrics. `DELTA_C_ACADEMIC_MATERIAL` scoped author Q18; no new independent NotebookLM, production QA or website release approval.
 - Older R06 numbering-only SHA/receipt in the following section are historical. The current source is not a numbering-only delta.
@@ -202,11 +202,11 @@ RELEASE_AUTHORIZATION: NO
 
 - Historical numbering-only source `41a3d0497057217368ba63fecfa43d118f3e4519` preserves exact predecessor learner math and every original canonical question, answer, rubric, D6, SVG and public selfcheck. Only heading depth/sequence (H1 page → H2 group 1..N → H3 lesson 1.1..), and formatting of Practice labels changed.
 - Signed Q18 `09ad994ded632d4f9951f4bb53e3872e64e82db3` references old immutable source `eb5a01b50262dc4b151b3915f5a5e4b436432374` and receipt `19a8ce12552d94add042dc2127a054d20cd29027`. No NotebookLM independent new reviewer PASS, no functional website assessment claims.
-- Author metadata `91408737fec8fbd7710984b920c77c25123b12a9` retains all previous A1–A7/outcome/index evidence, with current source pointer. RELEASE must check rendered DOM, anchors/responsive. AUTHORING NO MERGE/DEPLOY.
+- Author metadata `dd0b8bd34359a3d18ddda8e70a6dcf2b99056abb` retains all previous A1–A7/outcome/index evidence, with current source pointer. RELEASE must check rendered DOM, anchors/responsive. AUTHORING NO MERGE/DEPLOY.
 
 ## QUALITY_Q01_Q18_EVIDENCE
 
-One normative standard only: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`, effective version v3.1.0. Source current exact learner SHA `ec8a640c65f66e1f743c8af155642aac6a4170c3`; Q18 scoped author receipt `7752de431df0e1d11e2ebe67390781c6f6c7f1d9`.
+One normative standard only: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`, effective version v3.1.0. Source current exact learner SHA `702163e95642d24f070c442cf13f4ad575678145`; Q18 scoped author receipt `1926ded71fc19efd5e16f72c0e82747a8d1245b4`.
 
 | Qxx | Source/outcome mathematical and pedagogical evidence | Scope verdict | Source trace | Release gate |
 |---|---|---|---|---|
@@ -243,7 +243,7 @@ PED1 WHY from feasible decisions; PED2 local number/inequality/trig-free prerequ
 
 ## AUTHORING_A1_A7
 
-A1: Current R06 source blob ec8a640c65f66e1f743c8af155642aac6a4170c3 and signed scoped Q18 receipt 7752de431df0e1d11e2ebe67390781c6f6c7f1d9, one canonical V2 packet. A2: S1 KNTT original receipt scoped B03/B04/B17 without invented rescan. A3: R05 direct `AUTHOR_SELF_VERIFIED` math and PED with P0=P1=0; historic reviewer PASS only for original SGK 18 items. A4: 16 outcomes, 38 unique canonical public items, four original/extension Written and 16 public reuse-only selfcheck placements. A5: four continuous knowledge arcs, 16 self-contained Ví dụ and 16 adjacent Vận dụng/Đối chiếu/D6, three aligned SVG, two interaction concepts SPEC_ONLY. A6: direct maths and QA of 20 new extension stems/answers and 16 outcome explanations, including corrected three diagram mismatches. A7: zero private RD1, no Mastery/readiness claim, Final Submit safety for RELEASE.
+A1: Current R06 source blob 702163e95642d24f070c442cf13f4ad575678145 and signed scoped Q18 receipt 1926ded71fc19efd5e16f72c0e82747a8d1245b4, one canonical V2 packet. A2: S1 KNTT original receipt scoped B03/B04/B17 without invented rescan. A3: R05 direct `AUTHOR_SELF_VERIFIED` math and PED with P0=P1=0; historic reviewer PASS only for original SGK 18 items. A4: 16 outcomes, 38 unique canonical public items, four original/extension Written and 16 public reuse-only selfcheck placements. A5: four continuous knowledge arcs, 16 self-contained Ví dụ and 16 adjacent Vận dụng/Đối chiếu/D6, three aligned SVG, two interaction concepts SPEC_ONLY. A6: direct maths and QA of 20 new extension stems/answers and 16 outcome explanations, including corrected three diagram mismatches. A7: zero private RD1, no Mastery/readiness claim, Final Submit safety for RELEASE.
 
 ## PRIVATE_RD1_CUSTODY_METADATA
 
@@ -260,8 +260,11 @@ R01 historical canonical original 18, extension 20 and signed old receipt remain
 
 ## R05 authoring source revision: current packet custody and historical scope
 
-The owner queue is CĐ01 → CĐ21 (CĐ22 already completed). R06 effective learner source blob `ec8a640c65f66e1f743c8af155642aac6a4170c3`, exact signed Q18 AUTHOR_SELF_VERIFIED receipt blob `7752de431df0e1d11e2ebe67390781c6f6c7f1d9`; R04 previous source `907af796ff6f61dee518f7d25e5ff99cb23467f1` / author receipt `284e9376145fd1c0a08c66c19120e96db867d656` still immutable and not applied to new content. R05 has 16 lessons, 16 independent Ví dụ–Đề bài–Lời giải, 16 Vận dụng/Đối chiếu/D6 next to lessons, 38 display-only original canonical question/solution projections with four Written rubrics, 16 public reuse selfcheck stems, three S1-aligned source SVGs. Correct figure-example pairings from R04 preserved; R05 adds no private RD1, official Readiness or Mastery. 13 original Topic editorial checklist items Issue #864 and existing issue #865 defect ledger govern this work; no second rubric. R05 is only AUTHORING CONTENT_READY; RELEASE AP/R and owner consent remain separate.
+The owner queue is CĐ01 → CĐ21 (CĐ22 already completed). R06 effective learner source blob `702163e95642d24f070c442cf13f4ad575678145`, exact signed Q18 AUTHOR_SELF_VERIFIED receipt blob `1926ded71fc19efd5e16f72c0e82747a8d1245b4`; R04 previous source `907af796ff6f61dee518f7d25e5ff99cb23467f1` / author receipt `284e9376145fd1c0a08c66c19120e96db867d656` still immutable and not applied to new content. R05 has 16 lessons, 16 independent Ví dụ–Đề bài–Lời giải, 16 Vận dụng/Đối chiếu/D6 next to lessons, 38 display-only original canonical question/solution projections with four Written rubrics, 16 public reuse selfcheck stems, three S1-aligned source SVGs. Correct figure-example pairings from R04 preserved; R05 adds no private RD1, official Readiness or Mastery. 13 original Topic editorial checklist items Issue #864 and existing issue #865 defect ledger govern this work; no second rubric. R05 is only AUTHORING CONTENT_READY; RELEASE AP/R and owner consent remain separate.
 
 ## RELEASE_AND_OWNER_GATE
 
 RELEASE must assign runtime official Topic ID on owner approval; integrate exact canonical stems/keys against current main, preserve Golden R4 + Adaptive Knowledge Tabs v2, MathJax/SVG responsive and accessible, AP1–AP5 and R1–R5/P1/P2 browser/real devices, no answer/hint/correctness/Tutor before true Final Submit and no Mastery from public Practice/SelfCheck/Written self-rubric. Model specs cannot be advertised as working controls until built and tested. Owner merge/deploy authorization is NOT granted by this handoff.
+
+
+**19/11 OWNER DELTA_A:** 12 formal labels clarified; no math/item changes; exact source-Q18-A1 locks refreshed; CONTENT_READY preserved.
