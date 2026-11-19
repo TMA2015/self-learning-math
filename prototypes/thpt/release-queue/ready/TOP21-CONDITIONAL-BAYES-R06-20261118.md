@@ -11,23 +11,23 @@ STATE: CONTENT_READY
 CONTENT_READY: YES_AUTHORING_ONLY
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_LEARNER_PRESENTATION_20261116.md
-ACADEMIC_SOURCE_BLOB: aa325637f659bc5f8ba504f6ce0129e07340a41d
+ACADEMIC_SOURCE_BLOB: 60b62c112ce6df70849379b9e0aba828031d00ac
 SOURCE_COMMIT: 2961a570dac4dd339576f7a77146e7d1b31217b5
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC21_R06_CURRENT_SOURCE_Q18_AUTHOR_SELF_QA_RECEIPT_20261118.md
-REVIEW_RECEIPT_BLOB: b58ec1516f8f1618a0c5ae173ba8451be02f929e
+REVIEW_RECEIPT_BLOB: 28f53dd1279dc065e7f429f7337ba8f5df90acb8
 INDEPENDENT_TARGETED_REVIEW_PATH: prototypes/thpt/review-packets/Temp_TOPIC21_R06_D6_INDEPENDENT_OWNER_PASTED_VERDICT_20261118.md
 INDEPENDENT_TARGETED_REVIEW_BLOB: 06157b8c7e5873611b463f991620c466b72e2741
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_A1_A7_TECHNICAL_SOURCE_PARITY_20261116.md
-AUTHOR_A1_A7_BLOB: 1ea2b6a48abb8fa8d84025511177eb7671a765d4
+AUTHOR_A1_A7_BLOB: 84e79e01031b5ab3be5e9efa8afd64dda5fd5934
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_A1_A7_TECHNICAL_SOURCE_PARITY_20261116.md
-AUTHOR_METADATA_BLOB: 1ea2b6a48abb8fa8d84025511177eb7671a765d4
+AUTHOR_METADATA_BLOB: 84e79e01031b5ab3be5e9efa8afd64dda5fd5934
 Q15_MATRIX_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R06_Q15_CANONICAL_ITEM_OUTCOME_ROLE_VERSION_MATRIX_20261117.md
 Q15_MATRIX_BLOB: 522d13493d18ec53280a752dc5498e92c8896805
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/TOP21-CONDITIONAL-BAYES-R05-20261116_HANDOFF_V2.md
-AUTHOR_HANDOFF_BLOB: 6591ac40f65d4d4169d44d466a7483a4612ec0de
+AUTHOR_HANDOFF_BLOB: dd1fa0bd251d783b977d1a632657ebf5fbc1d905
 CURRENT_AUTHORING_PR: 885
 CURRENT_PR: #885 — AUTHORING Draft only, not website release
-REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC21_R06_CURRENT_SOURCE_Q18_AUTHOR_SELF_QA_RECEIPT_20261118.md, Git blob b58ec1516f8f1618a0c5ae173ba8451be02f929e
+REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC21_R06_CURRENT_SOURCE_Q18_AUTHOR_SELF_QA_RECEIPT_20261118.md, Git blob 28f53dd1279dc065e7f429f7337ba8f5df90acb8
 QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 SOURCE_SCOPE: SGK_G12_KNTT_TAP_HAI_CHVI_B18_B19
 S1_PROVENANCE: ORIGINAL_AUTHOR_Q18_AND_G12_CHVI_OWNER_SOURCE_SCOPE_RECEIPT
@@ -74,7 +74,7 @@ Historical R04/R05 ready manifests remain in `release-queue/archive/` with REGIS
 
 ## F. Explicit V2 source and pedagogy checklist
 
-- [x] A1_SOURCE_SNAPSHOT — Single current learner source aa325637f659bc5f8ba504f6ce0129e07340a41d, Q18 canonical receipt b58ec1516f8f1618a0c5ae173ba8451be02f929e, one V2 handoff and one ready manifest.
+- [x] A1_SOURCE_SNAPSHOT — Single current learner source 60b62c112ce6df70849379b9e0aba828031d00ac, Q18 canonical receipt 28f53dd1279dc065e7f429f7337ba8f5df90acb8, one V2 handoff and one ready manifest.
 - [x] A2_SGK_SBT_SCOPE — G12 KNTT Toán Tập Hai, Chương VI B18–B19 source scope inherited only from verified original signed SGK authoring; no fabricated scanned PDF page audit.
 - [x] A3_NOTEBOOKLM_VERDICT — Q18 AUTHOR_SELF_VERIFIED full-Topic is signed by author; owner-pasted independent NotebookLM Academic/PED PASS applies exclusively to 8/8 corrected D6 outcomes.
 - [x] A4_ITEM_OUTCOME_IDS — Eight canonical outcomes, nineteen unique T/P/W public IDs, exact current item-version/outcome matrix and eight reuse-only public selfcheck placements with no duplicates.
@@ -96,3 +96,6 @@ Historical R04/R05 ready manifests remain in `release-queue/archive/` with REGIS
 - [ ] R5_OWNER_APPROVAL — No owner authorization to integrate, merge or deploy website follows from this content handoff, independent targeted review or author self-QA.
 - [ ] P1_DEPLOY_RECEIPT — No verified production deployment has been performed or evidenced for current CĐ21 R06 academic source on this AUTHORING branch.
 - [ ] P2_DEVICE_UAT — No actual parent/student iPhone/iPad Safari acceptance is asserted for current CĐ21 release integration or production website.
+
+
+**19/11 owner ΔA:** 8 lessons and canonical probability statements untouched, STATE stays CONTENT_READY; current source lock and V2 reflected.
