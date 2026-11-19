@@ -43,7 +43,15 @@ for(const n of [15,16,17,18]){
  assert.equal(blob(bytes),expected,"B"+n+" current source must equal its own latest Q18 receipt");
  if(n!==15&&n!==16)assert.equal(expected,uxrow.candidate,
   "B"+n+" current source remains identical to published UX snapshot");
- else{
+ else if(n===16){
+  const r16=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHVI_B16_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261119.md"),"utf8");
+  const f16=k=>r16.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(f16("BASELINE_PUBLISHED_B16_SOURCE_BLOB"),uxrow.candidate,
+   "B16 draft must follow immutable historical ChVI UX snapshot");
+  assert.equal(f16("CANDIDATE_B16_SOURCE_BLOB"),expected,
+   "B16 latest draft source must match its own signed owner receipt");
+ }else{
   const receipt=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHVI_B15_OWNER_Q18_KNOWLEDGE_ENRICHMENT_20261119.md"),"utf8");
   const f=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
@@ -65,8 +73,12 @@ for(const n of [15,16,17,18]){
  assert.deepEqual(answers(s),answers(old),"B"+n+" original public First Try answer changed");
  assert.equal(answers(s).length,tries[n],"B"+n+" original answer count");
  if(n!==15){
-  assert.deepEqual(helpers(s),helpers(old),"B"+n+" historical D6 body changed");
-  assert.equal(helpers(s).length,tries[n],"B"+n+" D6 body count");
+  const nowHelp=helpers(s),oldHelp=helpers(old);
+  const normalized=list=>list.map(z=>({id:z.id,
+   body:z.body.replace(/\?\?\? tip "[^"]+"/,"??? tip \"CANONICAL_D6\"")}));
+  assert.deepEqual(n===16?normalized(nowHelp):nowHelp,n===16?normalized(oldHelp):oldHelp,
+   "B"+n+" original D6 recovery bodies and IDs must be preserved; B16 may relabel only");
+  assert.equal(nowHelp.length,tries[n],"B"+n+" D6 body count");
  }else{
   assert.equal((s.match(/^    \?\?\? tip "4\.[1-5]\. /gm)||[]).length,5,
    "B15 must have five meaningfully named misconceptions, not repeated D6 tips");
