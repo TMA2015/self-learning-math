@@ -250,11 +250,10 @@ const writtenB16=fs.readFileSync(path.join(root,
  "docs/thpt-preview/thu-vien/tu-luan.md"),"utf8");
 const topicB16=fs.readFileSync(path.join(root,
  "docs/thpt-preview/chuyen-de/ham-so/luyen-tap.md"));
-const topicPrior=cp.spawnSync("git",["show",
- "43acc50becf8a5cb3d83dfdb4ce3a2b5dc985b68:docs/thpt-preview/chuyen-de/ham-so/luyen-tap.md"],
- {cwd:root});
-assert.equal(topicPrior.status,0,"Cannot read frozen Topic version");
-assert.equal(blob(topicB16),blob(topicPrior.stdout),"Topic demo must remain byte-exact unchanged");
+// GitHub Actions uses shallow checkout; lock the known main/P2 Topic blob
+// directly, rather than requiring the entire history to be fetched again.
+assert.equal(blob(topicB16),"36b86700b51bc080c9535ed3ba401109fbd1d31d",
+ "Frozen Topic demo must remain byte-identical to B15 owner-P2 main");
 assert(!coreB16.includes("CHỈ DEMO")&&!coreB16.includes("CANONICAL ITEM · PILOT"),
  "B16 SGK canonical Core/Practice source must be full learner content, not demo");
 assert(coreB16.includes('data-thpt-core data-thpt-bank-lesson="16"')&&
