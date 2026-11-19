@@ -8,9 +8,9 @@ STATE: CURRENT_Q15_Q18_AUTHOR_VERIFIED_READY_CUSTODY
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R10_LANGUAGE_LOCAL_REFERENTS_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: 7005bf1f839e566efb9abbc17eccfa92a0b41e63
+ACADEMIC_SOURCE_BLOB: 2cf19a19fc0f616b780846d41f7a1b9325363b80
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC19_R11_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md
-REVIEW_RECEIPT_BLOB: 3bd774c5113a6e030e989af59257598452a93fde
+REVIEW_RECEIPT_BLOB: 044b74b1cd45fc0cacf3bbcd343574e6a59ee1ef
 R11_Q15_MATRIX_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_Q15_56_CANONICAL_SOURCE_LOCKED_CANDIDATE_MATRIX_20261117.md
 R11_Q15_MATRIX_BLOB: a127267978ec61c857d5cc0cbcd8cb3f1dcc2f1e
 BASELINE_R09_SIGNED_SOURCE_BLOB: 2b46a2c92004f2c030d030e2b2021a34157bc95d
@@ -113,7 +113,10 @@ The effective learner source is **the existing original filename at ACADEMIC_SOU
 
 ## Current AUTHORING effective snapshot — 18/11/2026
 
-- One current learner source at the unchanged `ACADEMIC_SOURCE_PATH`, Git blob `7005bf1f839e566efb9abbc17eccfa92a0b41e63` (not the historical `eff5...` referenced above). Its only change against historical 1,084-line R11 content is one header comment plus seven learner Knowledge summary lines, independently checked as mathematically equivalent, as recorded in Q18 composite receipt SHA `3bd774c5113a6e030e989af59257598452a93fde`.
+- One current learner source at the unchanged `ACADEMIC_SOURCE_PATH`, Git blob `2cf19a19fc0f616b780846d41f7a1b9325363b80` (not the historical `eff5...` referenced above). Its only change against historical 1,084-line R11 content is one header comment plus seven learner Knowledge summary lines, independently checked as mathematically equivalent, as recorded in Q18 composite receipt SHA `044b74b1cd45fc0cacf3bbcd343574e6a59ee1ef`.
 - Current Q15 matrix SHA `a127267978ec61c857d5cc0cbcd8cb3f1dcc2f1e` has 56/56 unique canonical source markers with **current** line numbers and seven question-only public selfcheck replay source lines. Original 25 G10 SGK bank entries remain one-source SGK-owned; 14 T +14 P +3 W Topic-owned. No new canonical ID/answer/rubric. T02 content version TOP19-R10 stays unchanged and matches corrected 4×3=12 reasoning.
 - Original R09 full self-QA + R10 math/PED targeted receipt + R11 editorial targeted review remain source-locked evidence, not independent all-item NotebookLM PASS. Current source Q18 composed without changing original SGK authority. `P0=0; P1=0` for affected seven-line summary/Q15 correction. Website integration, AP/R, protected Q16 and owner release authorization remain wholly separate.
 - The old prose in this metadata describing historical source SHA values and CANDIDATE/HOLD belongs to superseded checkpoints. The top metadata fields and this latest signed addendum establish the effective in-place source. No alternative active learner Markdown is created.
+
+
+**19/11 owner ΔA:** active learner `2cf19a19fc0f616b780846d41f7a1b9325363b80`, Q18 `044b74b1cd45fc0cacf3bbcd343574e6a59ee1ef`, 14/14 outcomes and 56 canonical item identities preserved; CONTENT_READY maintained.
