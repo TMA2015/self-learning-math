@@ -239,6 +239,9 @@ assert(fig16.includes("x = 2")&&fig16.includes("I(2; −1)")&&
  "B16 Q07 plotted labels must identify vertex, axis, and three intersections");
 assert(fig16.includes("thpt-r4-concept-figure")&&fig16.includes('viewBox="0 0 760 440"'),
  "B16 plotted graph should fit existing Golden responsive figure treatment");
+const formalFontSizes=[...fig16.matchAll(/font-size="(\d+)"/g)].map(m=>Number(m[1]));
+assert(formalFontSizes.length>=12&&formalFontSizes.every(size=>size>=29),
+ "B16 plotted graph must have mobile-legible intrinsic SVG labels (29px minimum at 760px viewBox)");
 
 // G10 B16 canonical SGK outcome coverage from the SAME public Core/Practice
 // file (not parallel draft/Topic demo), and shared single Written library.
