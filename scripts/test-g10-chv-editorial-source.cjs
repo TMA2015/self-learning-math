@@ -56,7 +56,17 @@ for(const n of [12,13,14]){
   assert.equal(g("B12_PREVIOUS_SOURCE_BLOB"),d("B12_SOURCE_CURRENT_BLOB"),"Prior B12 learner SHA must remain Q18 signed");
   assert.equal(g("B12_PREVIOUS_CANONICAL_BLOB"),d("B12_CANONICAL_CURRENT_BLOB"),"Prior B12 canonical SHA must remain Q18 signed");
  }
- const expected=n===12?g("B12_SOURCE_CURRENT_BLOB"):row.candidate;
+ const b13=fs.readFileSync(path.join(root,
+  "prototypes/thpt/ux795/G10_CHV_B13_S1_Q18_GOLDEN_ENRICHMENT_DELTA_R01_20261119.md"),"utf8");
+ const b13field=k=>b13.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+ const expected=n===12?g("B12_SOURCE_CURRENT_BLOB"):
+  n===13?b13field("CANDIDATE_LESSON_GIT_BLOB"):row.candidate;
+ if(n===13){
+  assert.equal(b13field("BASELINE_LESSON_GIT_BLOB"),row.candidate,
+   "B13 new source must extend exact prior ChV approved candidate");
+  assert(b13.includes("DELTA_C_REVIEW_HOLD")&&b13.includes("SOURCE_RECEIPT_S1_PDF_UNVERIFIED"),
+   "B13 academic review and original S1 PDF source remain explicit HOLD");
+ }
  if(n===12)assert.equal(d("B12_BASELINE_SOURCE_BLOB"),r12("B12_R01_SOURCE_BLOB"),
   "B12 historic reviewed source SHA must remain immutable");
  assert.equal(blob(source),expected,"B"+n+" current Git blob != current Q18 signed source");
@@ -98,6 +108,10 @@ for(const n of [12,13,14]){
   const withoutRemedy=x=>x.replace(/<p><strong>Nếu chưa làm được:<\/strong>[\s\S]*?<\/p>/g,"");
   assert.deepEqual(newAnswers.map(withoutRemedy),oldAnswers.map(withoutRemedy),
    "B12 first four mathematical results/solutions changed outside authorized D6 remediation");
+  }else if(n===13){
+  const strip=x=>x.replace(/<p><strong>Nếu chưa làm được:<\/strong>[\s\S]*?<\/p>/g,"");
+  assert.deepEqual(newAnswers.map(strip),oldAnswers.map(strip),
+   "B13 original five mathematical first-try answers unchanged except recovery text");
  }else assert.deepEqual(newAnswers,oldAnswers,"B"+n+" original answer changed");
  assert.equal(newAnswers.length,n===12?4:moving[n],
   "B"+n+" original result blocks; B12 new calculator uses text question disclosure");
@@ -118,6 +132,8 @@ for(const n of [12,13,14]){
   n===12?["1.1. Cùng tìm hiểu","1.2. Ví dụ trực quan",
    "1.3. Thực hành máy tính cầm tay — tự nhập, đọc và kiểm",
    "1.4. Thuật ngữ, kiến thức và kỹ năng"]:
+   n===13?["1.1. Vì sao một bộ dữ liệu cần nhiều số đại diện?",
+    "1.2. Khám phá cách xác định số đại diện","1.3. Tổng kết cách chọn số đặc trưng"]:
    ["Cùng tìm hiểu","Ví dụ trực quan","Thuật ngữ, kiến thức và kỹ năng"],
   "B"+n+" signed intuitive Discovery stages");
  assert.deepEqual([...official.matchAll(/^    ### ([^\n]+)/gm)].map(m=>m[1]),
@@ -153,6 +169,24 @@ for(const n of [12,13,14]){
    "B12 Tab4 cannot recreate B11 P2 duplicate-heading regression");
   assert(errors.includes("HELP-G10-B12-CALC-01")&&
    errors.includes("**Cách làm sai:**"),"B12 new calculator actual wrong-step recovery missing");
+ }else if(n===13){
+  const examples=s.slice(r,t),help=s.slice(t);
+  assert.equal((examples.match(/^    ### 3\.[1-4]\. Ví dụ [1-4] —/gm)||[]).length,4,
+   "B13 four independent worked examples required");
+  assert.equal((examples.match(/class="thpt-g10-example-solution"/g)||[]).length,4,
+   "B13 original Golden neutral worked solution component required");
+  assert.equal((examples.match(/\*\*Phân tích:\*\*/g)||[]).length,4,
+   "B13 methods must each explain rationale before calculating");
+  assert((examples.match(/<strong>Bước [1-4]/g)||[]).length>=12,
+   "B13 examples must explain real intermediate steps");
+  assert.equal((official.match(/class="thpt-r4-knowledge-conclusion thpt-r4-concept-card"/g)||[]).length,4,
+   "B13 four new formal conceptual statements in Golden teal");
+  assert.equal((official.match(/class="thpt-r4-knowledge-conclusion thpt-r4-rule-card"/g)||[]).length,1,
+   "B13 one positional quartile rule in Golden blue");
+  assert.equal((help.match(/^    \?\?\? tip "4\.[12]\./gm)||[]).length,2,
+   "B13 two real numbered D6 tip disclosures");
+  assert(!s.includes("Em tự thử.")&&!s.includes("Hiểu bản chất trước công thức"),
+   "B13 visible copy cannot reference obsolete labels or nonexistent sections");
  }else{
   assert.equal(s.slice(r,t),prev.slice(prev.indexOf('=== "Ví dụ"'),prev.indexOf('=== "Lỗi thường gặp"')),
    "B"+n+" approved worked examples unchanged");
@@ -161,16 +195,18 @@ for(const n of [12,13,14]){
   assert.equal((s.slice(r,t).match(/^    ### Ví dụ /gm)||[]).length,3,
    "B"+n+" 3 canonical example placements");
  }
- if(n!==12){
+ if(n!==12&&n!==13){
   const oldMath=count(fmt(prev)),newMath=count(fmt(s));
   for(const [expression,nOld] of oldMath)
    assert((newMath.get(expression)||0)>=nOld,
     "B"+n+" original math expression lost "+expression.slice(0,95));
  }
  assert(s.includes(originalSvg[n]),"B"+n+" original approved SVG must remain");
- const fig=(n===12?discovery:official).indexOf("<figure"),
-  guide=(n===12?discovery:official).indexOf("**Cách đọc hình.**");
- assert(fig>=0&&guide>fig,"B"+n+" D5 figure/reading must appear in concept formation");
+ const figureArea=n===12||n===13?discovery:official;
+ const fig=figureArea.indexOf("<figure"),
+  guide=figureArea.indexOf(n===13?"**Đọc hình ngay khi học tứ phân vị:**":"**Cách đọc hình.**");
+ assert(fig>=0&&(n===13?guide>=0&&guide<fig:guide>fig),
+  "B"+n+" D5 diagram and reading guidance must be with concept");
  assert.notDeepEqual(ids(s.replace('data-thpt-first-try-id="','data-thpt-first-try-id="MUTATED-'),
   "data-thpt-first-try-id"),ids(prev,"data-thpt-first-try-id"),"B"+n+" mutation must reject");
  assert.notDeepEqual([...official.replace(headings[n][0],"WRONG SGK").matchAll(/^    ### ([^\n]+)/gm)]
@@ -200,7 +236,8 @@ assert(b14.includes("n-1")&&b14.includes("\\hat{s}"),"B14 SGK alternative n−1 
 assert(b14.includes("biểu đồ hộp"),"B14 SGK boxplot teaching missing");
 assert(b14.includes(svgFile.split("/").at(-1)),"B14 diagram not linked from Knowledge page");
 const b13=fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-v/bai-13.md"),"utf8");
-assert(b13.includes("tần số chung lớn hơn 1"),"B13 equal-frequency no-mode exception missing");
+assert(b13.includes("mọi giá trị phân biệt đều xuất hiện")&&b13.includes("cùng tần số"),
+ "B13 equal-frequency no-mode exception must remain");
 const b12=fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-v/bai-12.md"),"utf8");
 assert(b12.includes("Máy tính cầm tay giúp")&&b12.includes("0{,}0005"),
  "B12 S1 calculator competence not taught");
