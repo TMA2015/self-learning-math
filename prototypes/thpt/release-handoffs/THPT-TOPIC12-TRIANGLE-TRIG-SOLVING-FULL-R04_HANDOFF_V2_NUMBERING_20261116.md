@@ -11,13 +11,13 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 7f537a309fe302941589073bb0e2e9577d323134
+ACADEMIC_SOURCE_BLOB: ece977f22531dfa8e46eeda8ba0c55dc449453e4
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC12_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: f0524226db441d7e6786773288c9a7152343f4c2
+REVIEW_RECEIPT_BLOB: 94c53487cec5f9f52b8d50044b67dea78b5e6d68
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_A1_A7_BLOB: 21556e1018583aa68ec9bec1800fa90532f01ad5
+AUTHOR_A1_A7_BLOB: d18d944b6456df58eaac6232dd308001e6bc4a1b
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: 21556e1018583aa68ec9bec1800fa90532f01ad5
+AUTHOR_METADATA_BLOB: d18d944b6456df58eaac6232dd308001e6bc4a1b
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC12_TRIANGLE_NEW16_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/THPT_G10_CHIII_B05_B06_D1D6_AUTHORING_R01_SNAPSHOT.md
@@ -270,6 +270,9 @@ Source + receipt + V2 + one ready manifest + 1 REGISTER row are sole AUTHORING h
 
 ## R05 · active W05 original-owner Q15/Q18 synchronization (17/11/2026)
 
-**Current one effective Topic12 source:** `7f537a309fe302941589073bb0e2e9577d323134`, Q18 affected-scope receipt `f0524226db441d7e6786773288c9a7152343f4c2`, current existing A1–A7/metadata blob `21556e1018583aa68ec9bec1800fa90532f01ad5`, V2 this path; old R04 snapshots and SHA in chronology above retained for audit, not active.
+**Current one effective Topic12 source:** `ece977f22531dfa8e46eeda8ba0c55dc449453e4`, Q18 affected-scope receipt `94c53487cec5f9f52b8d50044b67dea78b5e6d68`, current existing A1–A7/metadata blob `d18d944b6456df58eaac6232dd308001e6bc4a1b`, V2 this path; old R04 snapshots and SHA in chronology above retained for audit, not active.
 
 Canonical item `THPT-G10-CHIII-W05` retains SGK item identity with original-owner current **source SHA `569466519ee9a653fa3bcdf874e06619424fbf7b`** on #749 (historical R01 reviewer snapshot `6320aeaa89bd51c514b07461e01fad5e3aca833f` not modified). W05 Topic display-only rubric now exactly specifies \\(x=R\\cos\\alpha, y=R\\sin\\alpha,\\alpha=150^\\circ\\). No item duplication, new answer or changed 7-point scoring, 34 canonical IDs and 12 public selfcheck replay semantics kept. Topic Q18 current addendum declares scoped `Q04/Q15 AUTHOR_SELF_VERIFIED` rather than independent NotebookLM. Q01–Q18 all-new full-course verdict not inferred; release AP/R/owner remain pending. `RELEASE_AUTHORIZATION=NO`.
+
+
+**19/11 source-equivalent owner editorial Delta A:** 12 example captions standardized; source/Q18/A1 relocked, CONTENT_READY unchanged, no HTML/merge/deploy.
