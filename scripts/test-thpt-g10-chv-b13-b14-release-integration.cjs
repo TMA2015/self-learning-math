@@ -40,8 +40,16 @@ for(const n of [13,14]){
   assert.deepEqual(tabs,["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
    "B"+n+" must keep exact Model B four horizontal tabs");
   assert(page.includes(figName),"B"+n+" original D5 SVG missing");
-  assert.equal((page.match(/^    ### Ví dụ [123]\./gm)||[]).length,3,
-   "B"+n+" must keep the three full worked examples in Ví dụ tab");
+   assert.equal((page.match(n===13?/^    ### 3\.[1-4]\. Ví dụ [1-4] —/gm:/^    ### Ví dụ [123]\./gm)||[]).length,n===13?4:3,
+    "B"+n+" expected worked-example count: B13 four reasoned, B14 three historic");
+   if(n===13){
+    const tab=page.slice(page.indexOf('=== "Ví dụ"'),page.indexOf('=== "Lỗi thường gặp"'));
+    assert.equal((tab.match(/class="thpt-g10-example-solution"/g)||[]).length,4,
+     "B13 four examples in neutral Golden panels");
+    assert(tab.includes("Bước 1")&&tab.includes("Phân tích:")&&
+     page.includes("Đọc hình ngay khi học tứ phân vị"),
+     "B13 worked reasoning and concept-guided quartile figure required");
+   }
  }else{
   assert(page.includes("## 1. Kiến thức SGK")&&page.includes("## 2. Ví dụ")&&page.includes(figName));
   assert.equal((page.match(/^### Ví dụ [123]\./gm)||[]).length,3);
