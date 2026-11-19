@@ -129,7 +129,7 @@ for(const n of [15,16,17,18]){
  assert.equal((e.match(/^    ### /gm)||[]).length,examples[n],"B"+n+" original worked examples");
  assert(!/data-mastery-credit|data-mastery-write|data-thpt-readiness/.test(s),"B"+n+" exam or Mastery leaked");
  if(n!==15){
-  const rem=new Map();for(const v of latex(s))rem.set(v,(rem.get(v)||0)+1);
+  const visibleMath=latex(s),rem=new Map();for(const v of visibleMath)rem.set(v,(rem.get(v)||0)+1);
   // B16 has four explicitly reviewed SOURCE-EQUIVALENT notational rewrites,
   // not removed mathematical facts: semicolon coordinates/ranges, compact
   // nonzero condition, and solution written on the same math line.
@@ -142,10 +142,16 @@ for(const n of [15,16,17,18]){
   for(const v of latex(old)){
    let chosen=v;
    if(!(rem.get(chosen)||0)&&n===16&&notation16.has(v)){
-    chosen=notation16.get(v);
+    // An original standalone equality may have been combined into a longer
+    // already-existing answer line. Verify the exact equivalent expression,
+    // rather than require a second identical occurrence.
+    const equivalent=notation16.get(v);
+    assert(visibleMath.includes(equivalent),
+     "B16 reviewed equivalent mathematical expression missing: "+v);
+    continue;
    }
    const count=rem.get(chosen)||0;
-   assert(count>0,"B"+n+" mathematical expression missing or not equivalent: "+v.slice(0,90));
+   assert(count>0,"B"+n+" mathematical expression missing: "+v.slice(0,90));
    rem.set(chosen,count-1);
   }
  }else{
