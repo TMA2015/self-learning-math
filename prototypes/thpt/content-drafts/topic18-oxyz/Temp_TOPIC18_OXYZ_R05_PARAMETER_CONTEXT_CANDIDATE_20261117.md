@@ -77,9 +77,11 @@ Không. AB và CD đối nhau; AB bằng DC.
 
 Cộng vectơ là ghép các độ dời có cả độ lớn lẫn hướng, **không cộng độ dài các đoạn thẳng**. Quy tắc ba điểm là \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}\): đi từ A đến B rồi từ B đến C có cùng độ dời với đi thẳng từ A đến C. Trong hình hộp, ba vectơ theo ba cạnh kề tại A cộng lại thành vectơ nối A với đỉnh đối diện C′.
 
-> **QUY TẮC — Cộng vectơ theo đường đi**
+> **QUY TẮC — Cộng vectơ theo đường đi và quy tắc hình hộp**
 >
-> Cộng vectơ là ghép các độ dời, không cộng số đo chiều dài tùy ý.
+> Với ba điểm bất kỳ \(A,B,C\), quy tắc ba điểm là \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}\). Để cộng, ta ghép độ dời có hướng chứ không cộng riêng độ dài các đoạn thẳng.
+>
+> **Quy tắc hình hộp.** Trong hình hộp \(ABCD.A'B'C'D'\), ba cạnh xuất phát từ đỉnh \(A\) cho \(\overrightarrow{AB}+\overrightarrow{AD}+\overrightarrow{AA'}=\overrightarrow{AC'}\). Hai bước đầu tạo \(\overrightarrow{AC}\), sau đó thêm \(\overrightarrow{CC'}=\overrightarrow{AA'}\) để đến \(C'\); công thức dùng cho tổng ba **vectơ**, không phải tổng ba độ dài.
 
 
 **Ví dụ**
