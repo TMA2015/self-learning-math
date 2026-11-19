@@ -87,8 +87,18 @@ assert.equal(gitblob(css.slice(0,at-1)),field("GOLDEN_CSS_CURRENT_BLOB"),
 const r13=fs.readFileSync(path.join(root,
  "prototypes/thpt/ux795/G10_CHV_B13_S1_Q18_GOLDEN_ENRICHMENT_DELTA_R01_20261119.md"),"utf8");
 const get13=k=>r13.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
-assert.equal(gitblob(css),get13("CANDIDATE_GOLDEN_CSS_BLOB"),
- "B13 candidate CSS must match exact Q18 release receipt; prior B12 remains frozen");
+const r14=fs.readFileSync(path.join(root,
+ "prototypes/thpt/ux795/G10_CHV_B14_Q18_GOLDEN_ENRICHMENT_DELTA_R01_20261119.md"),"utf8");
+const get14=k=>r14.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+const b14Marker="/* G10 ChV B14 · scoped X-C RELEASE Golden";
+const at14=css.indexOf(b14Marker);
+assert(at14>0&&css.indexOf(b14Marker,at14+1)<0,"B14 only one scoped CSS appendix");
+assert.equal(gitblob(css.slice(0,at14-1)),get13("CANDIDATE_GOLDEN_CSS_BLOB"),
+ "B13 fully owner-P2 accepted CSS must remain exact prior prefix");
+assert.equal(get14("G10_B01_B13_FROZEN_CSS_BLOB"),get13("CANDIDATE_GOLDEN_CSS_BLOB"),
+ "B14 signed previous CSS cannot disagree with B13 reviewed receipt");
+assert.equal(gitblob(css),get14("CANDIDATE_GOLDEN_CSS_BLOB"),
+ "B14 candidate CSS must match signed X-C receipt without altering accepted prefix");
 assert(!/!!! (example|abstract|info)/.test(
  fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-v/bai-12.md"),"utf8")),
  "B12 no violet/cyan default MkDocs native colored boxes");
