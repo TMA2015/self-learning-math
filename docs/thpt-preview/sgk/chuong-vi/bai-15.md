@@ -156,71 +156,59 @@
 
 === "Kiến thức SGK"
 
-    ### 2.1. Khái niệm hàm số
+    Trong phần Khám phá, em đã thấy rằng một đầu vào hợp lệ chỉ được cho một đầu ra. Bây giờ ta phát biểu chính xác điều kiện đó, rồi dùng nó để đọc miền xác định, đồ thị và sự biến thiên. **Hãy đọc định nghĩa trước, sau đó xem ví dụ và cách kiểm tra.**
 
+    ### 2.1. Khái niệm hàm số
 
     <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_CHVI_B15_FUNCTION_MAPPING_D5_R03.svg" loading="lazy" alt="So sánh hai bảng: cùng đầu vào x có một hay hai giá trị đầu ra khác nhau"><figcaption>Đọc từng đầu vào: lặp đúng cùng một giá trị khác với hai đầu ra mâu thuẫn.</figcaption></figure>
 
-    **Cách đọc hình.** Đọc các mũi tên từ tập giá trị đầu vào sang tập đầu ra: mỗi đầu vào có đúng một đầu ra, dù nhiều đầu vào có thể cùng chung giá trị.
+    **Cách đọc hình.** Lần theo mũi tên xuất phát từ từng giá trị đầu vào: mỗi đầu vào phải có **đúng một** đầu ra. Nhiều đầu vào có thể cùng dẫn đến một đầu ra; điều đó không làm mất tính chất hàm số.
 
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Hàm số:</strong> Cho tập hợp \(D\) gồm các giá trị của \(x\). Nếu với <strong>mỗi</strong> \(x\in D\) xác định <strong>duy nhất một</strong> số thực \(y\), ta nói \(y\) là một hàm số của \(x\) trên \(D\), kí hiệu \(y=f(x)\). \(x\) là biến độc lập và \(y\) là biến phụ thuộc.</div>
 
-    Cho tập hợp \(D\) gồm các giá trị của \(x\). Nếu **mỗi** \(x\in D\) xác định **duy nhất một** số thực \(y\), ta nói \(y\) là một *hàm số* của \(x\) trên \(D\). Kí hiệu \(y=f(x)\).
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Tập xác định và tập giá trị:</strong> \(D\) là tập các giá trị đầu vào \(x\) mà hàm số được xác định; \(f(x)\) là giá trị đầu ra tại \(x\in D\). <strong>Tập giá trị</strong> \(T=\{f(x)\mid x\in D\}\) gồm các giá trị đầu ra thật sự đạt được. Không được đồng nhất \(D\) với \(T\) chỉ vì chúng đều là tập số.</div>
 
-    - \(D\): **tập xác định** của hàm số.
-    - \(f(x)\): **giá trị của hàm số** tại \(x\).
-    - \(T=\{f(x)\mid x\in D\}\): **tập giá trị** của hàm số.
-    - Một giá trị \(x\) không thể đồng thời ứng với hai giá trị \(y\) khác nhau nếu đó là đồ thị của một hàm số.
-    - **Bảng có đầu vào lặp:** nếu hai hàng cùng \(x\) và cùng \(y\), quan hệ vẫn có thể là hàm số; chỉ khi cùng \(x\) ứng với **hai \(y\) khác nhau** mới vi phạm tính đơn trị. Chẳng hạn \((1;3),(2;4),(2;4)\) mô tả một hàm số trên \(\{1;2\}\), nhưng thay cặp cuối bằng \((2;5)\) thì không.
+    Một bảng vẫn có thể biểu diễn hàm số khi cùng một dòng \((x;y)\) được ghi lặp lại. Chẳng hạn \((1;3),(2;4),(2;4)\) mô tả hàm số trên \(D=\{1;2\}\). Trái lại, đổi dòng cuối thành \((2;5)\) thì cùng đầu vào \(x=2\) cho hai đầu ra khác nhau, nên **không** phải hàm số của \(x\).
 
-
-
+    Khi hàm số được cho bởi công thức, cần xác định \(D\) trước khi tính \(f(x)\). Ví dụ \(f(x)=\sqrt{x-1}\) có \(D=[1;+\infty)\) vì \(x-1\ge0\). Mọi giá trị hàm số đều không âm và với mỗi \(y\ge0\), chọn \(x=y^2+1\) sẽ được \(f(x)=y\). Do đó \(T=[0;+\infty)\). Việc chứng minh \(T\) đòi hỏi xét **giá trị đầu ra đạt được**, không chỉ xét biểu thức dưới căn.
 
     ### 2.2. Đồ thị của hàm số
 
-    Đồ thị của hàm số \(y=f(x)\) trên \(D\) là tập hợp các điểm \(M(x;f(x))\) với \(x\in D\). Hàm số có thể được cho bằng **công thức, bảng giá trị, đồ thị** hoặc mô tả một sự phụ thuộc duy nhất.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Đồ thị của hàm số:</strong> Đồ thị của \(y=f(x)\) trên tập xác định \(D\) là tập hợp <strong>tất cả</strong> điểm \(M(x;f(x))\) với \(x\in D\). Hoành độ biểu diễn đầu vào, còn tung độ là giá trị hàm số tương ứng.</div>
 
-    **Cách kiểm tra một điểm:** \(A(x_0;y_0)\) thuộc đồ thị khi và chỉ khi \(x_0\in D\) và \(y_0=f(x_0)\).
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Kiểm tra điểm thuộc đồ thị:</strong> Điểm \(A(x_0;y_0)\) thuộc đồ thị của \(y=f(x)\) <strong>khi và chỉ khi</strong> (1) \(x_0\in D\) và (2) \(y_0=f(x_0)\). Phải kiểm cả điều kiện đầu vào và giá trị đầu ra; hình vẽ chỉ giúp quan sát, không thay thế hai phép kiểm này.</div>
 
-    **Ví dụ 3.** Với \(y=2x+1\), điểm \(A(2;5)\) thuộc đồ thị vì \(2\cdot2+1=5\); điểm \(B(2;4)\) không thuộc đồ thị. Khi vẽ đồ thị, trục hoành biểu diễn \(x\), trục tung biểu diễn \(y\).
+    **Ví dụ đọc tọa độ.** Với \(y=2x+1\) xác định trên \(\mathbb R\), \(A(2;5)\) thuộc đồ thị vì \(2\cdot2+1=5\), còn \(B(2;4)\) không thuộc vì \(4\ne5\).
 
-    !!! tip "Chú ý khi đọc hình"
-        Khi một đường thẳng đứng \(x=x_0\) cắt hình vẽ tại nhiều hơn một điểm, hình vẽ đó **không thể** là đồ thị của hàm số \(y=f(x)\) trên miền chứa \(x_0\).
+    !!! tip "Lưu ý khi đọc hình"
+        Nếu đường thẳng đứng \(x=x_0\) cắt một hình vẽ ở **hai điểm có tung độ khác nhau**, hình đó không thể là đồ thị của hàm số \(y=f(x)\) trên miền chứa \(x_0\). Đây là cách nhận diện bằng hình của yêu cầu “một đầu vào — một đầu ra”.
 
+    #### 2.2.1. Đọc hàm số qua bảng và đồ thị
 
+    Hàm số không nhất thiết phải được cho bằng một công thức. Bảng giá trị và đồ thị cũng thể hiện quan hệ đầu vào – đầu ra. **Khi chỉ có số liệu đo ở một số thời điểm, không được tự suy ra các thời điểm chưa đo.**
 
-    #### Đọc hàm số qua bảng và đồ thị
-
-    Hàm số không nhất thiết phải được cho bằng một công thức duy nhất. Theo mạch kiến thức SGK Toán 10 KNTT Tập 2 (trang in 5–7), ta còn gặp **bảng số liệu**, **đồ thị đo đạc** và **mô hình tính tiền theo từng khoảng**.
-
-    **Ví dụ bổ sung A — Bảng giá trị.** Một trạm quan sát ghi nhiệt độ tại ba thời điểm:
+    **Ví dụ bổ sung — Bảng giá trị.** Một trạm quan sát ghi nhiệt độ tại ba thời điểm:
 
     <div class="thpt-g10-table-scroll"><table class="thpt-g10-knowledge-table">
     <thead><tr><th>Thời điểm \(t\) (giờ)</th><th>6</th><th>12</th><th>18</th></tr></thead>
-    <tbody>
-    <tr><td>Nhiệt độ \(T(t)\) (\(^\circ\mathrm C\))</td><td>19</td><td>25</td><td>21</td></tr>
-    </tbody></table></div>
+    <tbody><tr><td>Nhiệt độ \(T(t)\) (\(^\circ\mathrm C\))</td><td>19</td><td>25</td><td>21</td></tr></tbody>
+    </table></div>
 
-    Trong dữ liệu chỉ gồm ba thời điểm đó, tập xác định là \(D=\{6;12;18\}\); tập giá trị là \(\{19;21;25\}\). Ta đọc được \(T(12)=25\) nhưng **không thể tự suy ra** \(T(9)\) nếu chưa có mô hình hoặc số liệu bổ sung. Nếu hai thời điểm có cùng nhiệt độ thì giá trị đó chỉ liệt kê **một lần** trong tập giá trị.
-
-
-
+    Với **dữ liệu chỉ gồm ba thời điểm đã cho**, \(D=\{6;12;18\}\) và \(T=\{19;21;25\}\). Ta biết \(T(12)=25\), nhưng **chưa xác định được \(T(9)\)** nếu không có thêm số liệu hay mô hình dự đoán. Mỗi giá trị nhiệt độ chỉ liệt kê một lần trong tập giá trị, kể cả khi xuất hiện ở nhiều thời điểm.
 
     ### 2.3. Sự đồng biến, nghịch biến của hàm số
 
-    Cho hàm số \(y=f(x)\) xác định trên khoảng \(K\). Với mọi \(x_1,x_2\in K\) thỏa \(x_1<x_2\):
+    Trên đồ thị, em có thể nhận xét đường đi lên hay đi xuống khi đọc từ trái sang phải. Để kết luận **trên cả một khoảng**, không thể chỉ thử một cặp điểm: cần phát biểu quan hệ đúng với **mọi cặp** đầu vào khác nhau trong khoảng đó.
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Đồng biến, nghịch biến:</strong> Cho hàm số \(y=f(x)\) xác định trên một khoảng \(K\). Với <strong>mọi</strong> \(x_1,x_2\in K\), \(x_1&lt;x_2\): hàm số <strong>đồng biến</strong> trên \(K\) nếu \(f(x_1)&lt;f(x_2)\); <strong>nghịch biến</strong> trên \(K\) nếu \(f(x_1)&gt;f(x_2)\). Tính chất phải được xét trên đúng khoảng \(K\), không suy rộng tùy ý ra toàn tập xác định.</div>
 
     <div class="thpt-g10-table-scroll"><table class="thpt-g10-knowledge-table">
-    <thead><tr><th>Tính chất</th><th>Điều kiện</th><th>Nhìn từ trái qua phải trên đồ thị</th></tr></thead>
-    <tbody>
-    <tr><td><strong>Đồng biến</strong> trên \(K\)</td><td>\(f(x_1)&lt;f(x_2)\)</td><td>Đường đi lên</td></tr>
-    <tr><td><strong>Nghịch biến</strong> trên \(K\)</td><td>\(f(x_1)&gt;f(x_2)\)</td><td>Đường đi xuống</td></tr>
-    </tbody></table></div>
+    <thead><tr><th>Tính chất</th><th>Điều kiện với mọi \(x_1&lt;x_2\) trong \(K\)</th><th>Đọc từ trái qua phải</th></tr></thead>
+    <tbody><tr><td><strong>Đồng biến</strong></td><td>\(f(x_1)&lt;f(x_2)\)</td><td>Đồ thị đi lên</td></tr>
+    <tr><td><strong>Nghịch biến</strong></td><td>\(f(x_1)&gt;f(x_2)\)</td><td>Đồ thị đi xuống</td></tr></tbody>
+    </table></div>
 
-    Nếu hàm số không có cùng một chiều biến thiên trên toàn miền, cần **chia thành từng khoảng**; không kết luận chỉ từ hai giá trị đầu/cuối.
-
-    **Ví dụ 4.** Hàm số \(f(x)=x^2\) nghịch biến trên \((-\infty;0)\) và đồng biến trên \((0;+\infty)\). Điều này **không có nghĩa** \(f\) đồng biến hoặc nghịch biến trên toàn \(\mathbb{R}\).
-
-    **Ví dụ 5 (mô hình).** Độ dài đường đi của xe chuyển động đều \(s(t)=12t\) (km) với \(t\ge0\) (giờ) tăng khi thời gian tăng, nên \(s\) đồng biến trên \([0;+\infty)\).
+    **Ví dụ đối chiếu.** Với \(f(x)=x^2\), hàm số nghịch biến trên \((-\infty;0)\) và đồng biến trên \((0;+\infty)\), **không** đồng biến hay nghịch biến trên toàn \(\mathbb R\). Với mô hình quãng đường \(s(t)=12t\) (km), \(t\ge0\) (giờ), nếu \(t_1&lt;t_2\) thì \(s(t_2)-s(t_1)=12(t_2-t_1)>0\); vì vậy mô hình đồng biến trên miền thời gian \(t\ge0\).
 
 === "Ví dụ"
 
