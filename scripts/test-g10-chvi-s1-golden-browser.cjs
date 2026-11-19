@@ -76,6 +76,21 @@ const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi t
        where+" no Em vận dụng or Em tự thử anywhere in learner-facing Discovery");
       assert.equal((ordered.match(/Vận dụng\./g)||[]).length,5,
        where+" exactly five visible Vận dụng prompts, not substring-only pseudo-pass");
+      const articleText=await article.innerText();
+      assert(!articleText.includes("Những lỗi dưới đây là sai lầm toán học dễ mắc"),
+       where+" no editorial process notes in learner errors");
+      assert.equal(await blocks.nth(1).locator(".admonition.tip").count(),0,
+       where+" no isolated undersized graph note");
+      const graphText=blocks.nth(1).locator("p").filter({hasText:"Cách kiểm tra trên đồ thị:"});
+      assert.equal(await graphText.count(),1,where+" one graph test in plain lesson prose");
+      const sizes=await blocks.nth(1).evaluate(el=>{
+       const p=[...el.querySelectorAll("p")];
+       const note=p.find(x=>x.textContent.includes("Cách kiểm tra trên đồ thị:"));
+       const adjacent=p.find(x=>x.textContent.includes("Ví dụ đọc tọa độ."));
+       return [note,adjacent].map(x=>x?getComputedStyle(x).fontSize:null);
+      });
+      assert(sizes.every(Boolean)&&sizes[0]===sizes[1],
+       where+" graph explanation must use normal body font size, not a small admonition");
       const mistakes=await blocks.nth(3).locator("details.tip > summary").allInnerTexts();
       assert.equal(mistakes.length,5,where+" five source-aligned D6 errors");
       assert.equal(new Set(mistakes).size,5,where+" five D6 headings must be truly distinct");
