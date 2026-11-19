@@ -8,6 +8,7 @@ const fs=require("node:fs"),path=require("node:path"),assert=require("node:asser
 const cp=require("node:child_process"),crypto=require("node:crypto");
 const root=path.resolve(__dirname,"..");
 require("./test-g10-b11-b12-source-first-delta.cjs");
+require("./test-g10-chv-de-label-parity-delta-a.cjs");
 const baseline="95c111b313886283bd8245babcc9ffdbfcc7c54f";
 const {chvEditorialReceiptRows,candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 const blob=data=>{
@@ -59,8 +60,12 @@ for(const n of [12,13,14]){
  const b13=fs.readFileSync(path.join(root,
   "prototypes/thpt/ux795/G10_CHV_B13_S1_Q18_GOLDEN_ENRICHMENT_DELTA_R01_20261119.md"),"utf8");
  const b13field=k=>b13.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
- const expected=n===12?g("B12_SOURCE_CURRENT_BLOB"):
-  n===13?b13field("CANDIDATE_LESSON_GIT_BLOB"):row.candidate;
+ const fix=fs.readFileSync(path.join(root,"prototypes/thpt/ux795/G10_B12_B13_DUPLICATE_DE_HEADING_DELTA_A_R01_20261119.md"),"utf8");
+ const ui=k=>fix.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+ assert.equal(ui("B12_PREVIOUS_SOURCE_BLOB"),g("B12_SOURCE_CURRENT_BLOB"),"B12 signed UI predecessor");
+ assert.equal(ui("B13_PREVIOUS_SOURCE_BLOB"),b13field("CANDIDATE_LESSON_GIT_BLOB"),"B13 signed Q18 predecessor");
+ const expected=n===12?ui("B12_CURRENT_SOURCE_BLOB"):
+  n===13?ui("B13_CURRENT_SOURCE_BLOB"):row.candidate;
  if(n===13){
   assert.equal(b13field("BASELINE_LESSON_GIT_BLOB"),row.candidate,
    "B13 new source must extend exact prior ChV approved candidate");
@@ -85,8 +90,8 @@ for(const n of [12,13,14]){
    "prototypes/thpt/content-drafts/THPT_G10_CHV_B12_CANONICAL.md"),"utf8");
   assert.equal(d("B12_BASELINE_CANONICAL_BLOB"),r12("ONE_CANONICAL_B12_R01_BLOB"),
     "B12 historic independent-reviewed canonical SHA must remain immutable");
-  assert.equal(blob(master),g("B12_CANONICAL_CURRENT_BLOB"),
-    "B12 ONE current canonical must match updated source-first receipt");
+  assert.equal(blob(master),ui("B12_CURRENT_CANONICAL_BLOB"),
+    "B12 ONE current canonical must match scoped duplicate-heading Delta A receipt");
   assert.equal(master.split("<!-- BEGIN_B12_KNOWLEDGE_MARKDOWN -->\n")[1]
    .split("\n<!-- END_B12_KNOWLEDGE_MARKDOWN -->")[0],s,"B12 learner Knowledge must equal ONE canonical Section A");
   const bank=fs.readFileSync(path.join(root,
@@ -151,12 +156,15 @@ for(const n of [12,13,14]){
   assert.equal((ex.match(/^    ### 3\.[1-4]\. Ví dụ [1-4] —/gm)||[]).length,4,
    "B12 four reasoned examples including SGK calculator must be authored");
   for(const label of ["<strong>Giải:</strong>","**Kiểm lại:**","**Phân tích:**",
-   'class="thpt-g10-example-solution"',"#### Đề bài"])
+   'class="thpt-g10-example-solution"'])
    assert(ex.includes(label),"B12 B10 Golden worked source lacking "+label);
   assert.equal(ex.split('class="thpt-g10-example-solution"').length-1,4,
    "B12 four B10 Golden neutral solved-example panels");
   assert.equal(ex.split("**Phân tích:**").length-1,4,
    "B12 four source-authored outside analysis paragraphs");
+  assert(!ex.includes("#### Đề bài"),"B12 must never double label Đề bài above Đề:");
+  assert.equal((ex.match(/^    \*\*Đề:\*\*/gm)||[]).length,4,
+   "B12 four original Đề: labels, exactly one per worked example");
   const formalB12=s.slice(s.indexOf('=== "Kiến thức SGK"'),s.indexOf('=== "Ví dụ"'));
   assert.equal((formalB12.match(/class="thpt-r4-knowledge-conclusion thpt-r4-concept-card"/g)||[]).length,3,
    "B12 three teal B10 semantic concepts");
@@ -181,6 +189,9 @@ for(const n of [12,13,14]){
    "B13 original Golden neutral worked solution component required");
   assert.equal((examples.match(/\*\*Phân tích:\*\*/g)||[]).length,4,
    "B13 methods must each explain rationale before calculating");
+  assert(!examples.includes("#### Đề bài"),"B13 must never double label Đề bài above Đề:");
+  assert.equal((examples.match(/^    \*\*Đề:\*\*/gm)||[]).length,4,
+   "B13 four original Đề: labels, exactly one per worked example");
   assert((examples.match(/<strong>Bước [1-4]/g)||[]).length>=12,
    "B13 examples must explain real intermediate steps");
   assert.equal((official.match(/class="thpt-r4-knowledge-conclusion thpt-r4-concept-card"/g)||[]).length,4,

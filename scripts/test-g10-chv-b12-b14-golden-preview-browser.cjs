@@ -11,8 +11,8 @@ const {chromium}=require("playwright");
 const root=path.resolve(__dirname,"..");
 const base=process.env.SLM_CHV_URL||"http://127.0.0.1:8765";
 const expectedSources={
- 12:"ff22a17265a0b3f66607bdfb132975877a7a6eba",
- 13:"0db04669163a4436fb893eac8644694c82d8efb4",
+ 12:"a2ea6c909cdd2317188b13c2bde22e7923dba3de",
+ 13:"cb5adaa7804902fece7dd4ec30575733efd4c9c1",
  14:"21c1ef59277f742b45a27900b173fac031a4a04f"
 };
 const ids={12:5,13:5,14:5};
@@ -45,13 +45,20 @@ const blob=data=>{
       "B12 previous canonical retained in history");
     assert.equal(df("B12_BASELINE_SOURCE_BLOB"),get("B12_R01_SOURCE_BLOB"),
      "B12 prior independent-review SHA remains frozen");
-    assert.equal(g("B12_SOURCE_CURRENT_BLOB"),blob(source),
-     "B12 new current source SHA exact");
+    const uiReceipt=fs.readFileSync(root+
+     "/prototypes/thpt/ux795/G10_B12_B13_DUPLICATE_DE_HEADING_DELTA_A_R01_20261119.md","utf8");
+    const u=k=>uiReceipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    assert.equal(u("B12_PREVIOUS_SOURCE_BLOB"),g("B12_SOURCE_CURRENT_BLOB"),
+     "B12 pre-fix Golden receipt stays frozen");
+    assert.equal(u("B12_PREVIOUS_CANONICAL_BLOB"),g("B12_CANONICAL_CURRENT_BLOB"),
+     "B12 pre-fix canonical receipt stays frozen");
+    assert.equal(u("B12_CURRENT_SOURCE_BLOB"),blob(source),
+     "B12 post-fix learner source matches Delta A");
    const master=fs.readFileSync(root+"/prototypes/thpt/content-drafts/THPT_G10_CHV_B12_CANONICAL.md","utf8");
    assert.equal(df("B12_BASELINE_CANONICAL_BLOB"),get("ONE_CANONICAL_B12_R01_BLOB"),
      "B12 prior approved canonical remains frozen");
-    assert.equal(blob(master),g("B12_CANONICAL_CURRENT_BLOB"),
-     "B12 new source-first one canonical SHA exact");
+    assert.equal(blob(master),u("B12_CURRENT_CANONICAL_BLOB"),
+     "B12 post-fix one canonical matches Delta A SHA");
    assert.equal(master.split("<!-- BEGIN_B12_KNOWLEDGE_MARKDOWN -->\n")[1]
     ?.split("\n<!-- END_B12_KNOWLEDGE_MARKDOWN -->")[0],source.toString("utf8"),
     "B12 learner Knowledge must be byte-identical to current canonical");
@@ -244,6 +251,24 @@ const blob=data=>{
      }
      assert.equal(await blocks.nth(2).locator(":scope > h3").count(),lesson===14?3:4,
       context+" signed number of worked examples");
+     if(lesson===12||lesson===13){
+      const ex=blocks.nth(2);
+      assert.equal(await ex.locator("h4[style*='display:none']").count(),4,
+       context+" four actual Markdown H4 boundaries with CSS-hidden display");
+      assert.equal(await ex.locator("h4[style*='display:none']:visible").count(),0,
+       context+" hidden headings never visible to learners");
+      assert.equal(await ex.locator("h4").filter({hasText:/^Đề bài$/}).count(),0,
+       context+" no redundant Đề bài headings");
+      assert.equal(await ex.locator("p > strong").filter({hasText:/^Đề:$/}).count(),4,
+       context+" exactly four original Đề: labels, one per worked example");
+     }
+     if(lesson===12&&width===390){
+      const trace=await blocks.nth(2).evaluate(root=>({
+       h3:[...root.querySelectorAll(":scope > h3")].map(h=>({title:h.textContent.trim(),nextTag:h.nextElementSibling?.tagName,next:h.nextElementSibling?.outerHTML.slice(0,190)})),
+       boxes:[...root.querySelectorAll(".thpt-g10-example-solution")].map((el,i)=>({i,aria:el.getAttribute("aria-label"),text:el.textContent.trim().slice(0,95),parent:el.parentElement?.tagName,prior:el.previousElementSibling?.tagName}))
+      }));
+      console.log("CHV_B12_DEBUG_DOM "+JSON.stringify(trace));
+     }
      const sourceBox=".thpt-g10-example-solution";
       assert.equal(await blocks.nth(2).locator(sourceBox).count(),
        lesson===14?3:4,context+" B12/B13 source-authored solutions, B14 legacy Golden");

@@ -166,7 +166,7 @@
 
     ### 3.1. Ví dụ 1 — Sai số thực khi đã biết số đúng
 
-    #### Đề bài
+    #### &nbsp; {style="display:none"}
 
     **Đề:** Cho số đúng \(\bar a=12{,}347\), số gần đúng \(a=12{,}35\). Tìm sai số tuyệt đối và sai số tương đối.
 
@@ -180,7 +180,7 @@
 
     ### 3.2. Ví dụ 2 — Độ chính xác chỉ cho một khoảng
 
-    #### Đề bài
+    #### &nbsp; {style="display:none"}
 
     **Đề:** Chiều dài gần đúng \(a=8{,}6\,\mathrm{cm}\), độ chính xác \(d=0{,}2\,\mathrm{cm}\). Tìm khoảng số đúng có thể nằm và đánh giá sai số.
 
@@ -194,7 +194,7 @@
 
     ### 3.3. Ví dụ 3 — Quy tròn và kiểm sai số
 
-    #### Đề bài
+    #### &nbsp; {style="display:none"}
 
     **Đề:** Quy tròn số đúng \(3{,}14159\) tới hàng phần trăm và tính sai số thực.
 
@@ -208,7 +208,7 @@
 
     ### 3.4. Ví dụ 4 — Bấm máy tính đúng biểu thức rồi quy tròn
 
-    #### Đề bài
+    #### &nbsp; {style="display:none"}
 
     **Đề:** Dùng máy tính tìm giá trị gần đúng của \(2^9\sqrt3\) với ba chữ số thập phân, cùng kiểu bài trong SGK trang in 74.
 
