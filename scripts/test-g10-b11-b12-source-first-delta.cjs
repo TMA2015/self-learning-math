@@ -14,6 +14,12 @@ const receipt=fs.readFileSync(path.join(root,
 const field=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
 const previous=fs.readFileSync(path.join(root,
  "prototypes/thpt/ux795/G10_B11_B12_OWNER_P2_SOURCE_FIRST_DELTA_A_R01_20261118.md"),"utf8");
+const currentUi=fs.readFileSync(path.join(root,"prototypes/thpt/ux795/G10_B12_B13_DUPLICATE_DE_HEADING_DELTA_A_R01_20261119.md"),"utf8");
+const ui=k=>currentUi.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+assert.equal(ui("B12_PREVIOUS_SOURCE_BLOB"),field("B12_SOURCE_CURRENT_BLOB"),
+ "B12 signed predecessor current before owner duplicate-heading Delta A");
+assert.equal(ui("B12_PREVIOUS_CANONICAL_BLOB"),field("B12_CANONICAL_CURRENT_BLOB"),
+ "B12 signed predecessor canonical before owner duplicate-heading Delta A");
 const prior=k=>previous.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
 const gitblob=s=>{
  const b=Buffer.from(s,"utf8");
@@ -36,8 +42,10 @@ for(const [id,chapter,n] of [["B11","iv",11],["B12","v",12]]){
   id+" previous published learner source SHA must be locked by R01 receipt");
  assert.equal(field(id+"_PREVIOUS_CANONICAL_BLOB"),prior(id+"_CANONICAL_CURRENT_BLOB"),
   id+" previous published canonical SHA must be locked by R01 receipt");
- assert.equal(gitblob(current),field(id+"_SOURCE_CURRENT_BLOB"),id+" exact learner-source SHA");
- assert.equal(gitblob(manuscript),field(id+"_CANONICAL_CURRENT_BLOB"),id+" single current canonical SHA");
+ const signedSource=id==="B12"?ui("B12_CURRENT_SOURCE_BLOB"):field(id+"_SOURCE_CURRENT_BLOB");
+ const signedCanonical=id==="B12"?ui("B12_CURRENT_CANONICAL_BLOB"):field(id+"_CANONICAL_CURRENT_BLOB");
+ assert.equal(gitblob(current),signedSource,id+" exact learner-source SHA");
+ assert.equal(gitblob(manuscript),signedCanonical,id+" single current canonical SHA");
  const a="<!-- BEGIN_"+id+"_KNOWLEDGE_MARKDOWN -->\n",b="\n<!-- END_"+id+"_KNOWLEDGE_MARKDOWN -->";
  assert.equal(manuscript.split(a)[1]?.split(b)[0],current,id+" canonical Section A must byte-equal learner Markdown");
  const stream=tex(current);
