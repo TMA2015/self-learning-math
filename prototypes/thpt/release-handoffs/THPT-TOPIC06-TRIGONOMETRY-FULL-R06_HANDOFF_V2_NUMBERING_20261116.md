@@ -4,8 +4,8 @@ PACKET_ID: THPT-TOPIC06-TRIGONOMETRY-FULL-R06
 CONTENT_REVISION: R06
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_A1_A7_CURRENT_SOURCE_QA_20261118.md
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_A1_A7_CURRENT_SOURCE_QA_20261118.md
-AUTHOR_METADATA_BLOB: df6ab630e8df5c08fd3fb1e77f963e0d9a362ffc
-AUTHOR_A1_A7_BLOB: df6ab630e8df5c08fd3fb1e77f963e0d9a362ffc
+AUTHOR_METADATA_BLOB: 3fdf375312cc207021947f4ffdfba419c073d436
+AUTHOR_A1_A7_BLOB: 3fdf375312cc207021947f4ffdfba419c073d436
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
@@ -13,9 +13,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: ab88d7ed3b52713e4a80779c22dc75a67c3cccb1
+ACADEMIC_SOURCE_BLOB: 787a5a15129785e1f8226314606052afa1f6000b
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC06_R06_COMPOSITE_Q18_AUTHOR_SELF_QA_20261118.md
-REVIEW_RECEIPT_BLOB: 19b65c2faf8db9480da401a6a8212c000c95d103
+REVIEW_RECEIPT_BLOB: 7040dfe92bb4ab06e433a6843d23f7b8c8ec5999
 PUBLIC_ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHI_B01_B04_CONCEPT_FIRST_PED_R03_SOURCE_CANDIDATE_20261102.md
 PUBLIC_ORIGINAL_SGK_SOURCE_BLOB: 256ceb5edc5e02aec320e83e99c8e08e035654f3
 PUBLIC_ORIGINAL_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC06_TRIGONOMETRY_ORIGINAL46_CANONICAL_INDEX_R01_20261112.md
@@ -246,7 +246,7 @@ RELEASE_AUTHORIZATION: NO
 
 ## QUALITY_Q01_Q18_EVIDENCE
 
-One canonical `SLM-THPT-QUALITY-ONE v3.1.0` source `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`. Current Q18 composite receipt SHA 19b65c2faf8db9480da401a6a8212c000c95d103 on current R06 learner SHA ab88d7ed3b52713e4a80779c22dc75a67c3cccb1.
+One canonical `SLM-THPT-QUALITY-ONE v3.1.0` source `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`. Current Q18 composite receipt SHA 7040dfe92bb4ab06e433a6843d23f7b8c8ec5999 on current R06 learner SHA 787a5a15129785e1f8226314606052afa1f6000b.
 
 | Qxx | Scope and mathematical/PED evidence | Verdict | Source SHA trace | Release gate |
 |---|---|---|---|---|
@@ -316,8 +316,11 @@ Q18 author proof is 16 outcomes, 66 original records string parity, and 54 direc
 - P1 website published and P2 real-device Safari unverified. Source handoff cannot claim those states.
 ## CURRENT R06 exact-source custody closure — 18/11/2026
 
-This appended current R06 section **supersedes historical R05/R06-numbering SHA descriptions in prior prose of this very file**; ONE V2 handoff is updated in-place. One effective learner `prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_NUMBERING_CONSISTENT_20261116.md` Git SHA `ab88d7ed3b52713e4a80779c22dc75a67c3cccb1`, composite Q18 AUTHOR_SELF_VERIFIED Git `19b65c2faf8db9480da401a6a8212c000c95d103`, A1–A7 SHA `df6ab630e8df5c08fd3fb1e77f963e0d9a362ffc`, original G11 46 canonical bank `256ceb5edc5e02aec320e83e99c8e08e035654f3`, index `d8279df37c9dcd74a0b26f0da389baf7d53ecf64`, NEW20 source `f83b285ff0c8f4e45b724cf06248935e5d618b65`. All original bank, 3 SVGs, student Practice 66/66 and question-only Selfchecks 16/16 preserved in source; 15 corrected D6 routes and formal trig clarifications rechecked in current-source Q18. No independent new NotebookLM verdict claimed.
+This appended current R06 section **supersedes historical R05/R06-numbering SHA descriptions in prior prose of this very file**; ONE V2 handoff is updated in-place. One effective learner `prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_NUMBERING_CONSISTENT_20261116.md` Git SHA `787a5a15129785e1f8226314606052afa1f6000b`, composite Q18 AUTHOR_SELF_VERIFIED Git `7040dfe92bb4ab06e433a6843d23f7b8c8ec5999`, A1–A7 SHA `3fdf375312cc207021947f4ffdfba419c073d436`, original G11 46 canonical bank `256ceb5edc5e02aec320e83e99c8e08e035654f3`, index `d8279df37c9dcd74a0b26f0da389baf7d53ecf64`, NEW20 source `f83b285ff0c8f4e45b724cf06248935e5d618b65`. All original bank, 3 SVGs, student Practice 66/66 and question-only Selfchecks 16/16 preserved in source; 15 corrected D6 routes and formal trig clarifications rechecked in current-source Q18. No independent new NotebookLM verdict claimed.
 
 A former R05 ready manifest `THPT-TOPIC06-TRIGONOMETRY-FULL-R01.md` is to be archived as SUPERSEDED with preserved historical R05 source/blob evidence; a single new R06 ready + REGISTER points only to current R06. This is an AUTHORING-only `CONTENT_READY` source handoff under Q01–Q18 source self-QA; no protected RD1, no official Topic Readiness, Final Submit/Mastery score, website/Golden, production browser or release approval. RELEASE separately checks AP1–AP5/R1–R5/P1–P2 and requires explicit owner authorization. No merge/deploy.
 
 AUTHOR_SIGNOFF: TOP06_R06_CURRENT_V2_LOCKED_Q18_A1_CANONICAL_20261118
+
+
+**19/11 Owner ΔA:** 13 formal captions + 4 repeated discovery headings, same math/16 outcomes; source/Q18/A1 relocked; CONTENT_READY preserved.
