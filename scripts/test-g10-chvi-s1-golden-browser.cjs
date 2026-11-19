@@ -56,6 +56,16 @@ const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi t
        where+" four typed S1 concept/definition Golden cards");
       assert.equal(await blocks.nth(1).locator(".thpt-r4-rule-card").count(),1,
        where+" one proper S1 membership-rule Golden card");
+      const palette=await blocks.nth(1).evaluate(el=>{
+       const concept=el.querySelector(".thpt-r4-concept-card"),rule=el.querySelector(".thpt-r4-rule-card");
+       const c=getComputedStyle(concept),r=getComputedStyle(rule);
+       return {cBg:c.backgroundColor,rBg:r.backgroundColor,cLine:c.borderLeftColor,rLine:r.borderLeftColor};
+      });
+      assert(palette.cBg!==palette.rBg&&palette.cLine!==palette.rLine,
+       where+" Golden must visually distinguish teal definitions from blue rule, not just count classes");
+      assert(!["rgba(0, 0, 0, 0)","transparent"].includes(palette.cBg)&&
+       !["rgba(0, 0, 0, 0)","transparent"].includes(palette.rBg),
+       where+" semantic role cards must have visible backgrounds");
       const ordered=await blocks.nth(0).innerText();
       assert.equal((ordered.match(/Vận dụng\./g)||[]).length,5,
        where+" all five First Tries must show Golden Vận dụng prompts");
