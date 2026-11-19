@@ -3,7 +3,7 @@
 PACKET_ID: THPT-TOPIC09-DERIVATIVE-MEANING-FULL-R01
 CONTENT_REVISION: R05
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_AUTHORING_ONLY_CUSTODY_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: ff32fda6047be1eb95e64c9ea4067d466eda0fb6
+AUTHOR_METADATA_BLOB: 04f27da415aea5f72e0ba42794e57979f4e1c365
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
@@ -11,9 +11,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md
-ACADEMIC_SOURCE_BLOB: ecd0dec736d0346fd1789a15aa1ec92d6a718485
+ACADEMIC_SOURCE_BLOB: fbd59ed68d26558cad85204b5937370822430364
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC09_R05_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: daeed2fd53f9967ac3ea78e744116aa4f82f4798
+REVIEW_RECEIPT_BLOB: 090a33d5e31432d201d8eb1847f435350d82f299
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_NEW37_PUBLIC_CANONICAL_R05_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: f249949be3b254a29c8859301b6c4904e636c505
 PUBLIC_ORIGINAL71_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_ORIGINAL71_SGK_CANONICAL_INDEX_R01_20261112.md
@@ -423,7 +423,7 @@ One normative `SLM-THPT-QUALITY-ONE v3.1.0`, from `prototypes/thpt/THPT_UNIFIED_
 
 ## 18/11/2026 — Active learner derivative knowledge amendment, one handoff only
 
-- Effective learner source Git blob `ecd0dec736d0346fd1789a15aa1ec92d6a718485`, Q18 source-scoped author receipt `daeed2fd53f9967ac3ea78e744116aa4f82f4798`, A1 provenance metadata `ff32fda6047be1eb95e64c9ea4067d466eda0fb6`; original R05 signed source `8222107d717f7d02b845f79ccdd154e8dbe71cc6` and 272/272 & 37/37 verified proofs remain historical, not new full-target assertions.
+- Effective learner source Git blob `fbd59ed68d26558cad85204b5937370822430364`, Q18 source-scoped author receipt `090a33d5e31432d201d8eb1847f435350d82f299`, A1 provenance metadata `04f27da415aea5f72e0ba42794e57979f4e1c365`; original R05 signed source `8222107d717f7d02b845f79ccdd154e8dbe71cc6` and 272/272 & 37/37 verified proofs remain historical, not new full-target assertions.
 - Four labeled statements at O03 derivative finite two-sided limit, O05 differentiability implies continuity, O14 product rule, O16 chain rule, with one learner recap. Pre-existing changed velocity semantics O09 and Practice-B52 remedial route explicitly self-verified in updated Q18. Knowledge change classified `DELTA_C_ACADEMIC_MATERIAL`, no original 71 SGK/37 Topic canonical bank changes.
 - 108 learner Practice stem/key/solution/rubric/D6 and 32 public reuse-only Selfchecks preserved against pre-edit source, four SVG unchanged. No private RD1 or official score/Mastery; no independent new NotebookLM full-Topic PASS, no browser/RELEASE authorization.
 
@@ -461,3 +461,6 @@ R01 historical canonical SGK source/receipt and R03 learner candidate immutable.
 
 - AUTHORING Draft PR means Content Ready for source handoff only. RELEASE separately verifies R1–R5, AP1–AP5, exact HEAD and main-integrated source checks, MathJax/4 SVG rendering/responsive, no pre-Final-Submit key/hint/AI/correctness, original canonical item roles, no private RD1 leakage and no Mastery writes.
 - P1 production merge+deploy and P2 real iPhone/iPad device UAT are NOT performed. No owner release approval is inferred from this authoring packet; no website merge/deploy.
+
+
+**19/11 owner ΔA:** 28 formula/definition typed captions, original mathematics intact; source/Q18/A1 relocked, CONTENT_READY preserved.
