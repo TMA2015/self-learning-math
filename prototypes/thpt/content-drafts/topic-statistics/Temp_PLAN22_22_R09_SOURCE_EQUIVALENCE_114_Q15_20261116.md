@@ -6,9 +6,9 @@ CONTENT_REVISION: R09
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md
-ACADEMIC_SOURCE_BLOB: b875ca4e726ab14071f17a2d8a85d6950e3b4ba9
+ACADEMIC_SOURCE_BLOB: 4fd31e9669c5808106d12f6a49470a81303946a8
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC_STATISTICS_G10_G12_R09_AUTHOR_TECHNICAL_Q18_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: fab8d45b3a1d1479ed4bc437a577799e865a8d3b
+REVIEW_RECEIPT_BLOB: 13c8870f77e9ef45f211489db96b25cdefb66d8d
 PREVIOUS_R07_HANDOFF_PATH: prototypes/thpt/release-handoffs/THPT-TOPIC-STATISTICS-G10-G12-FULL-R07_HANDOFF_V2_20261115.md
 PREVIOUS_R07_HANDOFF_BLOB: 4c32eaf6342b2cb9cd2ccc69357fed80a0aeca92
 DELTA_CLASS: DELTA_B_SOURCE_EQUIVALENT
@@ -41,6 +41,9 @@ RELEASE_AUTHORIZATION: NO
 
 ## 18/11/2026 — current canonical learner and one-source custody
 
-- **Only effective student content file** remains `Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md`, Git SHA `b875ca4e726ab14071f17a2d8a85d6950e3b4ba9`. The older signed source `b5713f0c2a1aa6a9fa7a7d63f6e6878bdf8d338b` is historic evidence only, NOT a second active draft. Current exact-source Q18 receipt SHA `fab8d45b3a1d1479ed4bc437a577799e865a8d3b`.
+- **Only effective student content file** remains `Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md`, Git SHA `4fd31e9669c5808106d12f6a49470a81303946a8`. The older signed source `b5713f0c2a1aa6a9fa7a7d63f6e6878bdf8d338b` is historic evidence only, NOT a second active draft. Current exact-source Q18 receipt SHA `13c8870f77e9ef45f211489db96b25cdefb66d8d`.
 - Delta audit: 2 standalone redundant figure-reading headings removed + 7 public Written self-compare notices tightened to self-attempt-first and no official grade. Complete 114/114 item display sequence, mathematical stems/answers/solutions/rubric criteria and points, 9 public Selfcheck questions, 2 image references and reveal counts unchanged. Scoped Q16 note and `NO_MASTERY NOT_RD1` nine placements preserved. Classified `DELTA_B_SOURCE_EQUIVALENT` for learning/assessment semantics, no new math theorem or answer.
 - The older SGK PDF-page-index reviewer note is nonblocking; mathematical validity established by existing worked-solution and arithmetic checks, with S1 used for curriculum scope. No official Mastery or RELEASE implied.
+
+
+**19/11 owner label-only Delta A:** current one learner source synced; 114 canonical Q15 full source/keys/solutions preserved. CONTENT_READY remains.
