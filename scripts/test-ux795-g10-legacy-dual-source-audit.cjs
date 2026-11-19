@@ -82,11 +82,20 @@ for(const [name,chapter,num]of specs){
    receiptField(b09P1Receipt,"ONE_CANONICAL_LESSON_BLOB"),
    "B09 R06 one academic manuscript must follow frozen P1 snapshot");
  }
- const approvedSources=[row.main,row.candidate,...(editorial?[editorial.candidate]:[]),
-  ...(chviReceiptRow?[chviReceiptRow.candidate]:[]),...(ux?[ux.candidate]:[]),
-  ...(b09PublishedP1?[b09PublishedP1]:[]),
-  ...(b09OwnerP2?[b09OwnerP2]:[])];
- assert(approvedSources.includes(baselineSha),
+ const b15Historical=name==="B15"?read(root,
+   "prototypes/thpt/ux795/G10_CHVI_B15_OWNER_Q18_KNOWLEDGE_ENRICHMENT_20261119.md").toString("utf8"):null;
+  const b15P2=name==="B15"?read(root,
+   "prototypes/thpt/ux795/G10_CHVI_B15_P2_EDITORIAL_NOTE_DELTA_R01_20261119.md").toString("utf8"):null;
+  if(b15P2)assert.equal(receiptField(b15P2,"PREVIOUS_B15_SOURCE_BLOB"),
+   receiptField(b15Historical,"CANDIDATE_B15_SOURCE_BLOB"),
+   "B15 owner P2 note delta must extend actual published prior source");
+  const approvedSources=[row.main,row.candidate,...(editorial?[editorial.candidate]:[]),
+   ...(chviReceiptRow?[chviReceiptRow.candidate]:[]),...(ux?[ux.candidate]:[]),
+   ...(b09PublishedP1?[b09PublishedP1]:[]),
+   ...(b09OwnerP2?[b09OwnerP2]:[]),
+   ...(b15Historical?[receiptField(b15Historical,"CANDIDATE_B15_SOURCE_BLOB")]:[]),
+   ...(b15P2?[receiptField(b15P2,"CANDIDATE_B15_SOURCE_BLOB")]:[])];
+  assert(approvedSources.includes(baselineSha),
    name+" unknown main baseline source drift outside immutable 27-row/Q18 chain");
  assert.equal(blob(candidateRaw),candidateG10KnowledgeBlob(num)||row.candidate,name+" exact approved historical/editorial source drift");
  const base=mainRaw.toString("utf8"),s=candidateRaw.toString("utf8");
