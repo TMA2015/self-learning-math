@@ -243,7 +243,12 @@ for(let n=1;n<=27;n++){
  const followon=ux.get(n);
  if(followon){
   const source=fs.readFileSync(path.join(root,"docs",route+".md"));
-  assert.equal(blob(source),followon.candidate,"B"+n+" source SHA must match signed UX receipt");
+  const active=require("./thpt-q18-g10-source-receipt.cjs").candidateG10KnowledgeBlob(n);
+  if(n===15)assert.equal(followon.candidate,
+    "01d905b7dd058515da590e63af1aeece5b34a081",
+    "B15 historical UX source receipt is unchanged and remains true predecessor");
+  assert.equal(blob(source),n===15?active:followon.candidate,
+    "B"+n+" current learner source must match latest signed Q18, not obsolete predecessor");
  }
  const signedVII=chvii.get(n);
  if(signedVII){
