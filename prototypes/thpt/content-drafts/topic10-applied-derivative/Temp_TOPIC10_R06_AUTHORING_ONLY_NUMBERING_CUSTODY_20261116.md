@@ -2,9 +2,9 @@
 
 R03_IMMUTABLE_BLOB: 51cebfe1cb71c5db85c42d40e6167ea4497fa1d9
 CURRENT_STUDENT_R06_PATH: prototypes/thpt/content-drafts/topic10-applied-derivative/Temp_TOPIC10_R06_NUMBERING_CONSISTENT_20261116.md
-CURRENT_STUDENT_R06_BLOB: 58f0570b5428bd154201bc012f3e598cb1b2825a
+CURRENT_STUDENT_R06_BLOB: f3ed26380c817f3c3dea7a240634a45193f9edb2
 CURRENT_Q18_R06_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC10_R06_CURRENT_SOURCE_EQUIVALENCE_Q18_AUTHOR_SELF_QA_20261118.md
-CURRENT_Q18_R06_RECEIPT_BLOB: ef6425587167c1ab5c8c0df72b40d771dd1fce16
+CURRENT_Q18_R06_RECEIPT_BLOB: b1b38dff3909127b0c90981b1e0142094a2854eb
 CURRENT_NEW42_CANONICAL_PATH: prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_NEW42_PUBLIC_CANONICAL_R04_20261113.md
 STATUS: R06_CURRENT_SOURCE_EQUIVALENT_AUTHOR_SELF_VERIFIED
 
@@ -185,7 +185,10 @@ END_AUTHOR_SOURCE: SOURCE_LOCKED_R01
 
 ## R06 source equivalence closure — 18/11/2026 (CURRENT; historical sections above unchanged)
 
-- Effective learner source: `prototypes/thpt/content-drafts/topic10-applied-derivative/Temp_TOPIC10_R06_NUMBERING_CONSISTENT_20261116.md`, Git blob `58f0570b5428bd154201bc012f3e598cb1b2825a`; one active learner Markdown only.
-- Current **composite Q18 AUTHOR_SELF_VERIFIED**: `prototypes/thpt/review-packets/Temp_TOPIC10_R06_CURRENT_SOURCE_EQUIVALENCE_Q18_AUTHOR_SELF_QA_20261118.md`, Git blob `ef6425587167c1ab5c8c0df72b40d771dd1fce16`. Original R05/R06 receipts and prior SHA statements elsewhere in this file remain immutable historical references; they do NOT describe current source.
+- Effective learner source: `prototypes/thpt/content-drafts/topic10-applied-derivative/Temp_TOPIC10_R06_NUMBERING_CONSISTENT_20261116.md`, Git blob `f3ed26380c817f3c3dea7a240634a45193f9edb2`; one active learner Markdown only.
+- Current **composite Q18 AUTHOR_SELF_VERIFIED**: `prototypes/thpt/review-packets/Temp_TOPIC10_R06_CURRENT_SOURCE_EQUIVALENCE_Q18_AUTHOR_SELF_QA_20261118.md`, Git blob `b1b38dff3909127b0c90981b1e0142094a2854eb`. Original R05/R06 receipts and prior SHA statements elsewhere in this file remain immutable historical references; they do NOT describe current source.
 - Q01–Q18/A1–A7: formal definitions/theorem/restatement are proven equivalent to prior written knowledge, and 14 learner metadata labels removed. 36/36 lesson/outcome, 120/120 original canonical public placements (78 SGK owner +42 Topic), 36/36 public replays, 18 Written rubrics, 4 SVG, 156/156 disclosures checked on current source. No changes to stem, key, worked mathematics or rubric points.
 - Original 78 SGK review is not claimed as fresh independent Topic NotebookLM review. `DELTA_B_SOURCE_EQUIVALENT`; previously locked Topic mathematical statements retained. Browser/AP/R/RELEASE/merge/deploy remain separate.
+
+
+**19/11 owner ΔA:** current academic source `f3ed26380c817f3c3dea7a240634a45193f9edb2`, Q18 `b1b38dff3909127b0c90981b1e0142094a2854eb`, 36 outcomes/canonical maths unchanged; CONTENT_READY preserved.
