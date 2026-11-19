@@ -155,7 +155,7 @@ const blob=data=>{
      "B14 Golden appendix exactly once, after B01–B13 approved CSS");
     assert.equal(blob(Buffer.from(css14Text.slice(0,atB14-1))),f("G10_B01_B13_FROZEN_CSS_BLOB"),
      "B01–B13 CSS prefix stays owner-P2 immutable");
-    assert.equal(blob(css),f("CANDIDATE_GOLDEN_CSS_BLOB"),
+    assert.equal(blob(require("./test-g10-b15-golden-css-source.cjs").publishedB14Ancestor(css)),f("CANDIDATE_GOLDEN_CSS_BLOB"),
      "B14 Golden only scoped CSS appendix must match signed Q18 receipt");
    const b12cut=fullCss.indexOf("/* G10 ChV B12 · OWNER P2 Golden parity");
     assert(b12cut>cutB11&&fullCss.indexOf("/* G10 ChV B12 · OWNER P2 Golden parity",b12cut+1)<0,
