@@ -8,7 +8,7 @@
 **Q18_REVIEW:** `Q18_OWNER_SELF_VERIFIED_ENRICHMENT` theo chuẩn v3.2.0 §X-C / §X-E; RELEASE tự kiểm chứng lại nội dung, kết quả toán, điều kiện, mạch tự học và các item hiện hành trước khi ký. **Không yêu cầu NotebookLM mặc định**, không mạo nhận `INDEPENDENT_REVIEW_PASS`. Các chứng cứ cụ thể và kết luận cho từng outcome bên dưới.
 
 **BASELINE_LESSON_GIT_BLOB:** `0459b67858246cb6136cf9a2cf9e7a7d18bd27be`  
-**CANDIDATE_LESSON_GIT_BLOB:** `e24e90017fa372c3ec2b1677e4823b222c2cea17`  
+**CANDIDATE_LESSON_GIT_BLOB:** `0db04669163a4436fb893eac8644694c82d8efb4`  
 **CANDIDATE_GOLDEN_CSS_BLOB:** `a4fa446f5437ae5054627700434fb101524827c4`  
 **G10_B01_B12_FROZEN_CSS_BLOB:** `aac2ad16261382987ea0fbb47ceee0987c5f9631`  
 **ACADEMIC_PED_REVIEW_STATE:** `Q18_OWNER_SELF_VERIFIED_ENRICHMENT_PASS`  
@@ -16,9 +16,11 @@
 
 **DELTA_A_UI_NAVIGATION_R02:** Replaces broken five Markdown navigation references only, from prior B13 learner Git blob `d15c561b281986f3e122dcaba1a25ccf0046fda7` to current canonical `e24e90017fa372c3ec2b1677e4823b222c2cea17`; no statistical definitions, examples, five first-tries, HELPs, Core/Practice question bodies or assessment state changed. This is a navigation-path correction inside the broader original `DELTA_C_ACADEMIC_MATERIAL_AFFECTED_REVIEW_HOLD` candidate, **not** a claim of independent academic PASS. The original B13 baseline `0459b67858246cb6136cf9a2cf9e7a7d18bd27be` remains immutable.
 
+**DELTA_C_DOMAIN_CLARIFICATION_R03:** B13 Knowledge §2.2 now explicitly states the **existing mathematical domain** of the SGK half-splitting method \(n\ge2\). For \(n=1\), no nonempty lower/upper halves exist and \(Q_1,Q_3\) are not defined **by this method**; the median \(Q_2\) and mean can still be defined. No existing item, Q1/Q2/Q3 result for n≥2, SVG, answer/rubric, exposure, or CSS modified. After 5-link delta, current Git blob `0db04669163a4436fb893eac8644694c82d8efb4`; source lock is exact. This repairs an unspoken hypothesis rather than changing the authorized SGK quartile convention.
+
 ## CURRENT R02 — Q18 self-verification with substantive proof, 19/11/2026
 
-**VERIFICATION_MODE:** `Q18_OWNER_SELF_VERIFIED_ENRICHMENT` (not `Q18_INDEPENDENT_REVIEW`). **AUTHOR_SIGNOFF:** `ChatGPT / RELEASE, scope G10-B13 Knowledge enriched`; **P0=0; P1=0** for the checked pedagogical/mathematical candidate, **Q01/Q02/Q03–Q14/Q15–Q18 as applicable = PASS_SELF_VERIFIED** on **only** the current B13 learner blob `e24e90017fa372c3ec2b1677e4823b222c2cea17`. This is *not* a claim about additional 67 SGK lessons or Topic, and does not bypass independent RELEASE AP/R/CI/owner P2.
+**VERIFICATION_MODE:** `Q18_OWNER_SELF_VERIFIED_ENRICHMENT` (not `Q18_INDEPENDENT_REVIEW`). **AUTHOR_SIGNOFF:** `ChatGPT / RELEASE, scope G10-B13 Knowledge enriched`; **P0=0; P1=0** for the checked pedagogical/mathematical candidate, **Q01/Q02/Q03–Q14/Q15–Q18 as applicable = PASS_SELF_VERIFIED** on **only** the current B13 learner blob `0db04669163a4436fb893eac8644694c82d8efb4`. This is *not* a claim about additional 67 SGK lessons or Topic, and does not bypass independent RELEASE AP/R/CI/owner P2.
 
 ### Outcome-by-outcome S1, mathematics, PED and canonical exercise coverage
 
@@ -33,7 +35,7 @@
 ### Pedagogical Q09–Q14 / D1–D6 / Q15–Q18 challenge tests
 
 - **PED1 Why learn / PED2 prerequisites:** §1.1 comparison of distributions and §1.2.1–1.2.5 each identify prerequisites (sum, sorting, frequency, middle positions). Five distinct user outcomes supported, not a raw count of formulas.
-- **PED3 concept-before-formula / PED4 read figures:** tab1 builds a concept before Tab2 definitions and cards; D5 figure verified SVG `acaf49296892e35c48fb2b4a5b335a7d26643336`, data and Q1–Q3 independently recomputed; no fake number-line equal-interval assumption, duplicate observations highlighted.
+- **PED3 concept-before-formula / PED4 read figures:** tab1 builds a concept before Tab2 definitions and cards; §2.2 now explicitly says n≥2 for two nonempty halves, n=1 has no Q1/Q3 under the stated method; D5 figure verified SVG `acaf49296892e35c48fb2b4a5b335a7d26643336`, data and Q1–Q3 independently recomputed; no fake number-line equal-interval assumption, duplicate observations highlighted.
 - **PED5 explain method and limits / D2:** Ex3.1 odd, Ex3.2 even, Ex3.3 weighted table, Ex3.4 outlier each has *Phân tích → Bước 1..4 → Kiểm lại*, plus limits of representative and other percentile conventions. All four source-authored, original bank questions remain one canonical source.
 - **PED6 independent first attempt / D6:** original TRY05..TRY09 prompted **before** original source-closed `??? question "Đối chiếu"`; correct mathematical solution and targeted repair link in each. HELP01, HELP02 describe symptom → mathematical reason → corrective steps → existing canonical Core/Practice. Five repaired *Markdown* navigation links now resolve in Roadmap checker; original five HTML First Try links remain. No key revealed prior to independent chapter Final Submit.
 - **Q15/Q16/RD1:** 8 public `FORMATIVE_ONLY` records (C01/C02/P01–P06), one W13 ungraded self-comparison with rubric, SVG and original five TRY and two HELP unchanged; reviewed R01 bank SHA `ddd5ec947029f644865110f2f381047214499e3e`; no duplicate answer/key or new RD1 items. The public `CLIENT_SELF_CHECK_NO_MASTERY` is distinct from protected chapter Readiness/Final Submit; Firebase, THCS and G11/G12 unaffected.
@@ -49,7 +51,7 @@
 | Role | Path / evidence | Git blob SHA |
 |---|---|---|
 | Frozen baseline B13 public Knowledge | `docs/thpt-preview/sgk/chuong-v/bai-13.md` on `main=f4d97fac0a3535dee8c31a8a682db5f4d6e523e1` | `0459b67858246cb6136cf9a2cf9e7a7d18bd27be` |
-| **One active B13 candidate learner Knowledge** | same exact path on `release/g10-b13-central-tendency-upgrade-20261119`; **not cloned into a competing Markdown source** | `e24e90017fa372c3ec2b1677e4823b222c2cea17` |
+| **One active B13 candidate learner Knowledge** | same exact path on `release/g10-b13-central-tendency-upgrade-20261119`; **not cloned into a competing Markdown source** | `0db04669163a4436fb893eac8644694c82d8efb4` |
 | Previously owner-accepted G10 B01–B12 CSS prefix | `docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css` frozen main | `aac2ad16261382987ea0fbb47ceee0987c5f9631` |
 | B13 **only** CSS Golden palette appended | same CSS path, exact signed candidate; previous prefix remains byte-identical | `a4fa446f5437ae5054627700434fb101524827c4` |
 | B13–B14 canonical public bank (unchanged) | `docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js` | `ddd5ec947029f644865110f2f381047214499e3e` |
