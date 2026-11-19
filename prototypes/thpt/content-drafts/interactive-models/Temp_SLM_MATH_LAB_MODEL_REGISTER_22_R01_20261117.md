@@ -1,6 +1,12 @@
 <!-- I798_UNIFIED_22_MODEL_PROGRAM_20261119 -->
 <!-- I798_OWNER_FINAL_COUNT_25_20261119 -->
 <!-- I798_LOCKED_25_INVENTORY_PER_MODEL_20261119 -->
+<!-- I798_SELECTED_25_CANONICAL_PATHS_20261119 -->
+### 25 FILE ỨNG VIÊN HIỆN HÀNH — DUY NHẤT `selected/`
+
+**25/25 HTML vật lý đã ghi vào Draft PR #880**, tại `prototypes/thpt/content-drafts/interactive-models/selected/`. Cột trạng thái của từng dòng trong bảng dưới chứa **đường dẫn cùng blob SHA thực tế**. Chỉ sửa đúng file này qua các lượt, không phát sinh `_Rxx`/second-final. **CĐ21** đã tích hợp công thức Bayes hậu nghiệm + bốn lá từ donor #13, kiểm thử **1153/1153 Chromium PASS** theo exact source SHA; chưa có review độc lập G1/G2/G4. **24 file còn lại** là ứng viên nguồn đã tách/đặt chỗ, **chưa QA bản mới sau tách**. Bảy donor mới không làm nền nằm trong [`reference/`](./reference/README.md) và Library ZIP, không có HTML tham khảo lẫn trong `selected/`.
+
+
 <!-- I798_DEV_BASE_SELECTION_25_R01_20261119 -->
 ### QUYẾT ĐỊNH CHỌN NỀN PHÁT TRIỂN — R01 (19/11/2026)
 
@@ -12,31 +18,31 @@
 
 | STT | Nơi phục vụ | Mã nguồn/khóa theo dõi | Loại mô hình được chọn | HTML mới liên hệ | Quyết định nguồn & tiến độ |
 |---|---|---|---|---|---|
-| 01 | CĐ01 | `SLM-TOP01-TRUTH-01` | Mô hình chân trị | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_S`; **MODEL_FINAL_QA_OPEN** |
-| 02 | CĐ02 | `SLM-TOP02-QUADRATIC-01` | Dấu tam thức | `#02` + `#05` | **DEV_BASE_SELECTED**: `OLD_S`; donor: `NEW_02 (và phần parabol NEW_05 nếu phù hợp)`; **MODEL_FINAL_QA_OPEN** |
-| 03 | CĐ03 | `SLM-TOP03-SQUARING-01` | Bình phương và nghiệm ngoại lai | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_S`; **MODEL_FINAL_QA_OPEN** |
-| 04 | CĐ04 | `SLM-TOP04-EXPLOG-01` | Hàm mũ/lôgarit ngược nhau | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_S`; **MODEL_FINAL_QA_OPEN** |
-| 05 | CĐ05 | `SLM-TOP05-GRAPH-01` | Biến đổi đồ thị | `#05` | **DEV_BASE_SELECTED**: `OLD_G`; donor: `NEW_05`; **MODEL_FINAL_QA_OPEN** |
-| 06 | CĐ06 | `SLM-TOP06-UNIT-CIRCLE-01` | Đường tròn lượng giác | `#07` | **DEV_BASE_SELECTED**: `NEW_07`; donor: `OLD_S (liên hệ đồ thị sin)`; **MODEL_FINAL_QA_OPEN** |
-| 07 | CĐ07 | `SLM-TOP07-SEQUENCE-01` | CSC và CSN | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_S`; **MODEL_FINAL_QA_OPEN** |
-| 08 | CĐ08 | `SLM-TOP08-LIMIT-01` | Giới hạn trái/phải | `#04` | **DEV_BASE_SELECTED**: `OLD_S`; donor: `NEW_04`; **MODEL_FINAL_QA_OPEN** |
-| 09 | CĐ09 | `SLM-TOP09-TANGENT-01` | Cát tuyến đến tiếp tuyến | `#11` | **DEV_BASE_SELECTED**: `OLD_D`; donor: `NEW_11`; **MODEL_FINAL_QA_OPEN** |
-| 10 | CĐ10 | `SLM-TOP10-BOX-01` | Tối ưu thể tích hộp | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_S`; **MODEL_FINAL_QA_OPEN** |
-| 11 | CĐ11 | `SLM-TOP11-RIEMANN-01` | Tổng Riemann | `#06` | **DEV_BASE_SELECTED**: `NEW_06`; donor: `OLD_S`; **MODEL_FINAL_QA_OPEN** |
-| 12 | CĐ12 | `SLM-TOP12-SSA-01` | Mơ hồ SSA | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_S`; **MODEL_FINAL_QA_OPEN** |
-| 13 | CĐ13 | `SLM-TOP13-DOT-01` | Tích vô hướng/hình chiếu | `#01` | **DEV_BASE_SELECTED**: `OLD_V`; donor: `NEW_01`; **MODEL_FINAL_QA_OPEN** |
-| 14 | CĐ14 | `SLM-TOP14-PARABOLA-01` | Parabol tiêu điểm/đường chuẩn | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_S`; **MODEL_FINAL_QA_OPEN** |
-| 15 | CĐ15 | `SLM-TOP15-LINE-PLANE-R00` | Đường thẳng và mặt phẳng | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_LP`; **MODEL_FINAL_QA_OPEN** |
-| 16 | CĐ16 | `SLM-TOP16-RAMP-ANGLE-R00` | Góc dốc/hình chiếu | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_RA`; **MODEL_FINAL_QA_OPEN** |
-| 17 | CĐ17 | `SLM-TOP17-FRUSTUM-VOLUME-R00` | Khối và thể tích | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_FR`; **MODEL_FINAL_QA_OPEN** |
-| 18 | CĐ18 | `SLM-TOP18-OXYZ-GEOMETRY-R00` | Mặt phẳng/mặt cầu Oxyz | `#03` | **DEV_BASE_SELECTED**: `OLD_OX`; donor: `NEW_03`; **MODEL_FINAL_QA_OPEN** |
-| 19 | CĐ19 | `SLM-TOP19-COMBINATORICS-PASCAL-R00` | Đếm chọn và Pascal | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_PA`; **MODEL_FINAL_QA_OPEN** |
-| 20 | CĐ20 | `SLM-TOP20-PROB-EVENTS-R00` | Hai biến cố | `#12` | **DEV_BASE_SELECTED**: `NEW_12`; donor: `OLD_EV (PR #860 đã đóng, chỉ tham khảo)`; **MODEL_FINAL_QA_OPEN** |
-| 21 | CĐ21 | `SLM-TOP21-BAYES-TREE-R01` | Bayes/sơ đồ cây | `#13` | **DEV_BASE_SELECTED**: `OLD_BD`; donor: `NEW_13`; **MODEL_FINAL_QA_OPEN** |
-| 22 | CĐ22 | `SLM-TOP22-DISTRIBUTION-R01` | Dữ liệu thô/ngoại lệ | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_BD`; **MODEL_FINAL_QA_OPEN** |
-| 23 | SGK Toán 11 Bài 3 | `SLM-SGK-G11-B03-SINCOS` | Đồ thị sin/cos và tính tuần hoàn | `#08` | **DEV_BASE_SELECTED**: `NEW_08`; **MODEL_FINAL_QA_OPEN** |
-| 24 | SGK Toán 11 Bài 3 | `SLM-SGK-G11-B03-TANCOT` | Đồ thị tan/cot và tiệm cận | `#09` | **DEV_BASE_SELECTED**: `NEW_09`; **MODEL_FINAL_QA_OPEN** |
-| 25 | SGK Toán 11 Bài 4 | `SLM-SGK-G11-B04-TRIGEQ` | Phương trình lượng giác cơ bản | `#10` | **DEV_BASE_SELECTED**: `NEW_10`; **MODEL_FINAL_QA_OPEN** |
+| 01 | CĐ01 | `SLM-TOP01-TRUTH-01` | Mô hình chân trị | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_S`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-TOP01-TRUTH-01.html) · `84d4d63b319fb0a06229e3bc9ca228279b750587` · **CANDIDATE_EXTRACTED/DEV_QA_PENDING** |
+| 02 | CĐ02 | `SLM-TOP02-QUADRATIC-01` | Dấu tam thức | `#02` + `#05` | **DEV_BASE_SELECTED**: `OLD_S`; donor: `NEW_02 (và phần parabol NEW_05 nếu phù hợp)`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-TOP02-QUADRATIC-01.html) · `a6e356aaf8a578a51273fddce322029c117a58a3` · **CANDIDATE_EXTRACTED/DEV_QA_PENDING** |
+| 03 | CĐ03 | `SLM-TOP03-SQUARING-01` | Bình phương và nghiệm ngoại lai | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_S`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-TOP03-SQUARING-01.html) · `f32e876a6f0f75b1b64d44e521935d2d94be0c60` · **CANDIDATE_EXTRACTED/DEV_QA_PENDING** |
+| 04 | CĐ04 | `SLM-TOP04-EXPLOG-01` | Hàm mũ/lôgarit ngược nhau | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_S`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-TOP04-EXPLOG-01.html) · `9ab31faa2987f9161c134417c3d3cde398f76b80` · **CANDIDATE_EXTRACTED/DEV_QA_PENDING** |
+| 05 | CĐ05 | `SLM-TOP05-GRAPH-01` | Biến đổi đồ thị | `#05` | **DEV_BASE_SELECTED**: `OLD_G`; donor: `NEW_05`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-TOP05-GRAPH-01.html) · `65ce1002d913251c380ee6597241c3012f29f445` · **CANDIDATE_EXTRACTED/DEV_QA_PENDING** |
+| 06 | CĐ06 | `SLM-TOP06-UNIT-CIRCLE-01` | Đường tròn lượng giác | `#07` | **DEV_BASE_SELECTED**: `NEW_07`; donor: `OLD_S (liên hệ đồ thị sin)`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-TOP06-UNIT-CIRCLE-01.html) · `eec1ac5126279e22022f74655bea02e72c7b8779` · **CANDIDATE_EXTRACTED/DEV_QA_PENDING** |
+| 07 | CĐ07 | `SLM-TOP07-SEQUENCE-01` | CSC và CSN | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_S`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-TOP07-SEQUENCE-01.html) · `520974105030c67287cc16a74d7edfd1c02bb4e1` · **CANDIDATE_EXTRACTED/DEV_QA_PENDING** |
+| 08 | CĐ08 | `SLM-TOP08-LIMIT-01` | Giới hạn trái/phải | `#04` | **DEV_BASE_SELECTED**: `OLD_S`; donor: `NEW_04`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-TOP08-LIMIT-01.html) · `dccfb0bd64a8409b455fbc501b20c74a37666e88` · **CANDIDATE_EXTRACTED/DEV_QA_PENDING** |
+| 09 | CĐ09 | `SLM-TOP09-TANGENT-01` | Cát tuyến đến tiếp tuyến | `#11` | **DEV_BASE_SELECTED**: `OLD_D`; donor: `NEW_11`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-TOP09-TANGENT-01.html) · `15cb8f90d784319a1ba06a0b258167cd01addf52` · **CANDIDATE_EXTRACTED/DEV_QA_PENDING** |
+| 10 | CĐ10 | `SLM-TOP10-BOX-01` | Tối ưu thể tích hộp | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_S`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-TOP10-BOX-01.html) · `4071ed429bf6287aee8f442108b988048d93eb66` · **CANDIDATE_EXTRACTED/DEV_QA_PENDING** |
+| 11 | CĐ11 | `SLM-TOP11-RIEMANN-01` | Tổng Riemann | `#06` | **DEV_BASE_SELECTED**: `NEW_06`; donor: `OLD_S`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-TOP11-RIEMANN-01.html) · `ab4fe436cfdc36e75e399062e830cf91e2068c08` · **CANDIDATE_EXTRACTED/DEV_QA_PENDING** |
+| 12 | CĐ12 | `SLM-TOP12-SSA-01` | Mơ hồ SSA | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_S`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-TOP12-SSA-01.html) · `3b961ad93f9db3b02cf4233cfe7337ed051e94b5` · **CANDIDATE_EXTRACTED/DEV_QA_PENDING** |
+| 13 | CĐ13 | `SLM-TOP13-DOT-01` | Tích vô hướng/hình chiếu | `#01` | **DEV_BASE_SELECTED**: `OLD_V`; donor: `NEW_01`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-TOP13-DOT-01.html) · `7eefb6bc65c8533282f51246f196dc2e1aef6971` · **CANDIDATE_EXTRACTED/DEV_QA_PENDING** |
+| 14 | CĐ14 | `SLM-TOP14-PARABOLA-01` | Parabol tiêu điểm/đường chuẩn | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_S`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-TOP14-PARABOLA-01.html) · `636887b48f474513e6cca95a71d9878c2aa1fb45` · **CANDIDATE_EXTRACTED/DEV_QA_PENDING** |
+| 15 | CĐ15 | `SLM-TOP15-LINE-PLANE-R00` | Đường thẳng và mặt phẳng | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_LP`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-TOP15-LINE-PLANE-R00.html) · `1f289ca00c3edba83abe722f0db8e2e15cf6cc8f` · **CANDIDATE_EXTRACTED/DEV_QA_PENDING** |
+| 16 | CĐ16 | `SLM-TOP16-RAMP-ANGLE-R00` | Góc dốc/hình chiếu | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_RA`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-TOP16-RAMP-ANGLE-R00.html) · `58373c20fa2155a5b9fc67af8270df799fc84d60` · **CANDIDATE_EXTRACTED/DEV_QA_PENDING** |
+| 17 | CĐ17 | `SLM-TOP17-FRUSTUM-VOLUME-R00` | Khối và thể tích | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_FR`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-TOP17-FRUSTUM-VOLUME-R00.html) · `f0b7495f9c8f8b8cb0b46921e0fb5633540c5cf6` · **CANDIDATE_EXTRACTED/DEV_QA_PENDING** |
+| 18 | CĐ18 | `SLM-TOP18-OXYZ-GEOMETRY-R00` | Mặt phẳng/mặt cầu Oxyz | `#03` | **DEV_BASE_SELECTED**: `OLD_OX`; donor: `NEW_03`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-TOP18-OXYZ-GEOMETRY-R00.html) · `36150f882e76343536495ee8b4bb8c462a74dedf` · **CANDIDATE_EXTRACTED/DEV_QA_PENDING** |
+| 19 | CĐ19 | `SLM-TOP19-COMBINATORICS-PASCAL-R00` | Đếm chọn và Pascal | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_PA`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-TOP19-COMBINATORICS-PASCAL-R00.html) · `f467a3b775bb2a5a3cdf8d6e16dbc38f99e3ae92` · **CANDIDATE_EXTRACTED/DEV_QA_PENDING** |
+| 20 | CĐ20 | `SLM-TOP20-PROB-EVENTS-R00` | Hai biến cố | `#12` | **DEV_BASE_SELECTED**: `NEW_12`; donor: `OLD_EV (PR #860 đã đóng, chỉ tham khảo)`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-TOP20-PROB-EVENTS-R00.html) · `086ecc628d226a3580b733bfb5e5416163d83a0b` · **CANDIDATE_EXTRACTED/DEV_QA_PENDING** |
+| 21 | CĐ21 | `SLM-TOP21-BAYES-TREE-R01` | Bayes/sơ đồ cây | `#13` | **DEV_BASE_SELECTED**: `OLD_BD`; donor: `NEW_13`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-TOP21-BAYES-TREE-R01.html) · `ed54561e72b38e0b82a6d3e7e429ad53be0ab710` · **DEV_QA_CHROMIUM_1153/1153_PASS, MATH/PED_REVIEW_OPEN** |
+| 22 | CĐ22 | `SLM-TOP22-DISTRIBUTION-R01` | Dữ liệu thô/ngoại lệ | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_BD`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-TOP22-DISTRIBUTION-R01.html) · `10eaf34273ff378ba323af73b4db3c87fee36eec` · **CANDIDATE_EXTRACTED/DEV_QA_PENDING** |
+| 23 | SGK Toán 11 Bài 3 | `SLM-SGK-G11-B03-SINCOS` | Đồ thị sin/cos và tính tuần hoàn | `#08` | **DEV_BASE_SELECTED**: `NEW_08`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-SGK-G11-B03-SINCOS.html) · `33a9b11463db77d2136ec78873f527dc1eb95759` · **CANDIDATE_EXTRACTED/DEV_QA_PENDING** |
+| 24 | SGK Toán 11 Bài 3 | `SLM-SGK-G11-B03-TANCOT` | Đồ thị tan/cot và tiệm cận | `#09` | **DEV_BASE_SELECTED**: `NEW_09`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-SGK-G11-B03-TANCOT.html) · `da207f8491e0eeebff8b304579aadfe0f9b6ded2` · **CANDIDATE_EXTRACTED/DEV_QA_PENDING** |
+| 25 | SGK Toán 11 Bài 4 | `SLM-SGK-G11-B04-TRIGEQ` | Phương trình lượng giác cơ bản | `#10` | **DEV_BASE_SELECTED**: `NEW_10`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-SGK-G11-B04-TRIGEQ.html) · `abf867dd22fc50275fb4771a62435642d4ec3a11` · **CANDIDATE_EXTRACTED/DEV_QA_PENDING** |
 
 ### Phân biệt dứt khoát “đã chọn mô hình” và “đã chọn source cuối”
 
