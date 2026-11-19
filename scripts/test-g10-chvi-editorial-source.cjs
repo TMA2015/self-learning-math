@@ -108,6 +108,12 @@ for(const n of [15,16,17,18]){
   assert.equal((d.match(/\*\*Em vận dụng\.\*\*/g)||[]).length,5,
    "B15 all five First Try prompts must visibly exist before Core");
  }
+ if(n===16){
+  assert.equal((d.match(/\*\*Vận dụng\.\*\*/g)||[]).length,5,
+   "B16 should have exactly five student-facing Vận dụng labels");
+  assert(!d.includes("Em vận dụng")&&!d.includes("Vì sao chọn phương pháp này?"),
+   "No obsolete labels or editorial pseudo-headings for B16");
+ }
  assert.equal(ids(d,"data-thpt-first-try-id").length,tries[n],"B"+n+" every First Try in Discovery");
  assert.equal(ids(m,"data-thpt-help-id").length,tries[n],"B"+n+" every HELP in last tab");
  assert(!/data-thpt-(?:first-try-id|help-id)=/.test(k+e),"B"+n+" misplaced study/HELP ID");
@@ -117,7 +123,24 @@ for(const n of [15,16,17,18]){
  assert(!/data-mastery-credit|data-mastery-write|data-thpt-readiness/.test(s),"B"+n+" exam or Mastery leaked");
  if(n!==15){
   const rem=new Map();for(const v of latex(s))rem.set(v,(rem.get(v)||0)+1);
-  for(const v of latex(old)){const count=rem.get(v)||0;assert(count>0,"B"+n+" mathematical expression missing "+v.slice(0,90));rem.set(v,count-1);}
+  // B16 has four explicitly reviewed SOURCE-EQUIVALENT notational rewrites,
+  // not removed mathematical facts: semicolon coordinates/ranges, compact
+  // nonzero condition, and solution written on the same math line.
+  const notation16=new Map([
+   ["a\\ne 0","a\\ne0"],
+   ["I(1,-4)","I(1;-4)"],
+   ["[-4,+\\infty)","T=[-4;+\\infty)"],
+   ["(x-1)^2=4","(x-1)^2=4\\Rightarrow x=1\\pm2=-1,3"]
+  ]);
+  for(const v of latex(old)){
+   let chosen=v;
+   if(!(rem.get(chosen)||0)&&n===16&&notation16.has(v)){
+    chosen=notation16.get(v);
+   }
+   const count=rem.get(chosen)||0;
+   assert(count>0,"B"+n+" mathematical expression missing or not equivalent: "+v.slice(0,90));
+   rem.set(chosen,count-1);
+  }
  }else{
   const check=["f(x)=\\sqrt{x-1}","g(x)=\\frac{x+1}{x-2}","C(3)=12",
    "C(5)=12+4(5-3)=20","x_1<x_2","f(-2)=3","f(2)=3\\ne5"];
