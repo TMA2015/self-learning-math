@@ -1,0 +1,130 @@
+<!doctype html>
+<!-- MODEL_ID: SLM-SGK-G11-B03-TANCOT; DEV_BASE: Temp_I798_FINAL_09_TAN_COT_ASYMPTOTES.html; SOURCE_SCOPE: AUTHORING_STANDALONE; QUALITY: ORIGINAL_CHROMIUM_SELF_QA_ONLY; NO_MASTERY -->
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light"><title>Đồ thị tan và cot – tiệm cận và chu kỳ π | G Learning</title>
+<style>
+:root{font-family:system-ui,-apple-system,'Segoe UI',Arial,sans-serif;color:#203b47;background:#f5f9f8;color-scheme:light}
+*{box-sizing:border-box}body{margin:0;padding:18px 12px 40px}.page{max-width:1120px;margin:auto}
+.hero,.lab{background:#fff;border:1px solid #d2e6e4;border-radius:18px;box-shadow:0 3px 16px #12394809}
+.hero{padding:20px 24px;margin-bottom:15px}.kicker{color:#266c62;font-size:.76rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin:0 0 7px}
+h1{font-size:clamp(1.4rem,3vw,2rem);line-height:1.25;margin:0 0 9px}.hero p{margin:0;line-height:1.55;color:#415a66}
+.question{padding:15px 17px;background:#eaf6f1;border-left:4px solid #198269;border-radius:11px;line-height:1.6;margin:0 0 15px}
+.lab{overflow:hidden;container-type:inline-size}.lab h2{font-size:1.19rem;margin:0;background:#eaf6fb;padding:14px 17px}
+.intro{color:#486273;font-size:.91rem;line-height:1.55;margin:11px 16px}
+.grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(280px,1fr);gap:15px;padding:15px;align-items:start}
+.visual,.controls{min-width:0}.visual figure{margin:0;border:1px solid #c7dce7;border-radius:12px;overflow:hidden}
+canvas{display:block;width:100%;height:390px;background:#fff}
+figcaption{background:#f5f9fc;color:#506a79;border-top:1px solid #c7dce7;padding:9px 11px;font-size:.85rem;line-height:1.5}
+.output{font-weight:650;background:#edf7f1;border-left:4px solid #16775b;border-radius:9px;padding:12px;margin:11px 0;min-height:60px;line-height:1.55}
+table{width:100%;border-collapse:collapse;font-size:.9rem}th,td{border:1px solid #c7dce7;text-align:left;padding:8px 9px;vertical-align:top}th{background:#f4f9fc;width:42%}
+fieldset{border:1px solid #c7dce7;border-radius:12px;padding:13px;min-width:0;margin:0 0 11px}legend{padding:0 6px;font-weight:750}
+label{display:block;font-weight:650;font-size:.92rem;margin-bottom:8px}input{background:#fff;color:#21394a;font:inherit;border:1px solid #90b3c6;border-radius:8px;padding:7px;min-height:44px}
+input[type=number]{width:100%}input[type=range]{width:100%;margin:11px 0;accent-color:#198269;cursor:pointer}
+input[type=radio]{min-height:auto;accent-color:#198269;margin-right:5px}.choice{display:flex;align-items:center;font-weight:500;margin:7px 0}
+input[aria-invalid=true]{border:2px solid #b34e35}.error{color:#a03b26;font-size:.9rem;min-height:21px;font-weight:650}
+.buttons{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:12px 0}
+button{min-height:44px;padding:9px 8px;background:#fff;color:#135474;border:1px solid #8fbbcf;border-radius:9px;font:inherit;font-weight:650;cursor:pointer}
+button:hover:not(:disabled){background:#eaf6fb}button:disabled{opacity:.46;cursor:not-allowed}
+:is(button,input):focus-visible,summary:focus-visible{outline:3px solid #005aa0;outline-offset:2px}
+.tip{font-size:.9rem;line-height:1.55;color:#496372;margin:12px 0 0}.legendline{display:flex;gap:13px;flex-wrap:wrap;margin:7px 0 10px;font-size:.86rem;color:#34566d}
+.swatch{display:inline-block;width:26px;height:0;border-top:3px solid #146fa6;vertical-align:middle;margin-right:5px}.swatch.cos{border-top:3px dashed #c65f29}
+.footer{margin:17px 4px 0;font-size:.87rem;line-height:1.55;color:#48616c}.footer details{padding:11px 12px;background:#fff;border:1px solid #d2e6e4;border-radius:10px}.footer summary{cursor:pointer;font-weight:700}
+@container (max-width:720px){.grid{grid-template-columns:1fr}.controls{order:1}.visual{order:2}canvas{height:330px}}
+@media(max-width:480px){body{padding:10px 8px 28px}.hero{padding:15px 14px}.question{padding:12px}.grid{padding:9px;gap:9px}canvas{height:290px}.buttons{grid-template-columns:repeat(2,minmax(0,1fr))}.lab h2{padding:12px}.footer{font-size:.84rem}}
+
+.swatch.tan{border-top:3px solid #146fa6}.swatch.cot{border-top:3px dashed #c65f29}.chip{display:inline-block;border-radius:6px;padding:3px 7px;background:#eaf6f1;color:#186149;font-weight:750}.source-note{font-size:.86rem;color:#496372}.warning{color:#91472e;background:#fff4eb;border-left:4px solid #c56c40;padding:9px 11px;border-radius:7px;margin:10px 0;line-height:1.55}</style></head>
+<body><main class="page"><header class="hero"><p class="kicker">G Learning · Mô hình Toán tương tác</p>
+<h1>Đồ thị tan và cot: tiệm cận, miền xác định, chu kỳ π</h1><p>Dự đoán → thao tác → quan sát → giải thích giới hạn của từng nhánh đồ thị.</p></header>
+<section class="question"><strong>Hãy dự đoán:</strong> tan 90° có xác định không? Khi góc tăng từ <strong>45° lên 225°</strong>, vì sao tan vẫn bằng 1 nhưng đồ thị có tiệm cận đứng ở giữa?</section>
+<section class="lab" id="lab"><h2>Hai họ đồ thị trên trục radian</h2>
+<p class="intro">Đường <strong>tan x</strong> tăng trên từng nhánh, còn <strong>cot x</strong> giảm trên từng nhánh. Các đường gạch thẳng là tiệm cận, <strong>không nối đồ thị qua các đường này</strong>.</p>
+<div class="grid"><div class="visual"><figure><div class="legendline" style="padding:9px 10px 0"><span><i class="swatch tan"></i>tan x (xanh)</span><span><i class="swatch cot"></i>cot x (cam)</span><span>Tiệm cận: nét dọc mảnh</span></div>
+<canvas id="plot" role="img" aria-label="Đồ thị tan và cot với các nhánh tách biệt bởi tiệm cận đứng. Trục ngang đo radian từ âm 2 pi đến 4 pi; bảng dưới cho giá trị và các vị trí không xác định."></canvas>
+<figcaption>Trục hoành tính theo radian, từ −2π đến 4π; trục tung hiển thị từ −4 đến 4. Phần đồ thị nằm ngoài khung chỉ bị cắt để dễ nhìn, <strong>không phải</strong> toàn bộ tập giá trị.</figcaption></figure>
+<div class="output" id="result" role="status" aria-live="polite" aria-atomic="true"></div>
+<table aria-label="Bảng đọc giá trị và điều kiện xác định của tan và cot"><tbody>
+<tr><th scope="row">Góc đang chọn</th><td id="angle"></td></tr>
+<tr><th scope="row">Góc cùng tia cuối</th><td id="terminal"></td></tr>
+<tr><th scope="row">tan α</th><td id="tanval"></td></tr>
+<tr><th scope="row">cot α</th><td id="cotval"></td></tr>
+<tr><th scope="row">Khi cộng thêm 180°</th><td id="repeat"></td></tr>
+<tr><th scope="row">Tiệm cận và điều kiện</th><td id="domain"></td></tr>
+<tr><th scope="row">Chu kỳ cơ bản</th><td id="period"></td></tr>
+</tbody></table>
+<p class="warning">Lưu ý: tại cos α = 0 thì tan α <strong>không xác định</strong>; tại sin α = 0 thì cot α <strong>không xác định</strong>. Không được thay bằng 0 hoặc một số thật lớn.</p></div>
+<div class="controls"><fieldset><legend>Chọn góc</legend><label for="degrees">Góc α (độ), từ −360° đến 720°</label>
+<input id="degrees" type="number" min="-360" max="720" step="1" value="45" aria-describedby="rangeHelp">
+<label for="slider">Kéo để đổi góc</label><input id="slider" type="range" min="-360" max="720" step="1" value="45">
+<p id="rangeHelp" class="tip">Có thể dùng phím ↑/↓ trong ô số. Cộng 180° tương ứng thêm π rad.</p><p id="error" class="error" role="alert" aria-live="assertive"></p></fieldset>
+<fieldset><legend>Chọn đồ thị</legend>
+<label class="choice"><input type="radio" name="mode" value="both" checked> Cả tan và cot</label>
+<label class="choice"><input type="radio" name="mode" value="tan"> Chỉ tan x</label>
+<label class="choice"><input type="radio" name="mode" value="cot"> Chỉ cot x</label></fieldset>
+<div class="buttons"><button type="button" data-angle="0">0°</button><button type="button" data-angle="45">45°</button><button type="button" data-angle="90">90°</button><button type="button" data-angle="135">135°</button><button type="button" data-angle="180">180°</button><button type="button" data-angle="270">270°</button></div>
+<div class="buttons" style="grid-template-columns:repeat(2,minmax(0,1fr))"><button type="button" id="plus">Góc +180°</button><button type="button" id="minus">Góc −180°</button></div>
+<p class="tip"><strong>Giải thích:</strong> tan(α+180°)=tan α và cot(α+180°)=cot α nếu biểu thức xác định. Tuy nhiên đồ thị <strong>không liên tục</strong> qua đường tiệm cận đứng.</p>
+<p class="tip"><strong>Đọc hình:</strong> tan tăng <em>trên từng khoảng</em> (−π/2+kπ, π/2+kπ); cot giảm <em>trên từng khoảng</em> (kπ, (k+1)π). Cả hai đều có tập giá trị ℝ, nhưng không có miền xác định là toàn bộ ℝ.</p></div></div></section>
+<footer class="footer"><details><summary>Nguồn học liệu và giới hạn nghiên cứu</summary>
+<p>Ứng viên minh họa cho SGK Toán 11 KNTT Chương I Bài 3. Đối chiếu bản tác giả trên GitHub <code>prototypes/thpt/content-drafts/THPT_G11_CHI_B01_B04_FULL_CHAPTER_D1_D6_REVIEW_SOURCE_R01_20261031.md</code>, Git blob <code>599d12ac7c2252001f881833c39978f94112cee4</code>. Outcomes ứng viên: <code>G11-B03-TAN_GRAPH</code>, <code>G11-B03-COT_GRAPH</code>, <code>G11-B03-DOMAIN_RANGE</code>, <code>G11-B03-PERIOD</code>. Nguồn này là snapshot tác giả; không tự thay thế nghiệm thu SGK/SBT trang in hay một bản Q18 mới.</p>
+<p>Chỉ có góc nguyên theo độ trong giao diện; công thức áp dụng với mọi góc thực thuộc miền xác định. Số thập phân làm tròn để đọc, không thay thế giá trị chính xác. Đây là HTML độc lập, không chấm điểm/lưu dữ liệu học sinh; chưa tích hợp website.</p>
+</details></footer></main>
+<script>
+(function(global){'use strict';
+const root=document.getElementById('lab'),deg=root.querySelector('#degrees'),slider=root.querySelector('#slider'),err=root.querySelector('#error'),canvas=root.querySelector('#plot');
+const read=id=>root.querySelector('#'+id);let angleDeg=45,mode='both',dead=false,observer=null,lastStats=null;const handlers=[];
+function on(el,type,fn){el.addEventListener(type,fn);handlers.push([el,type,fn]);}
+function checkAngle(n){if(typeof n!=='number'||!Number.isInteger(n)||n< -360||n>720)throw new RangeError('Góc phải là số nguyên từ −360 đến 720');return n;}
+function checkMode(m){if(!['tan','cot','both'].includes(m))throw new RangeError('Chọn tan, cot hoặc cả hai');return m;}
+function norm(n){return ((n%360)+360)%360;}
+function trigPair(angle){const t=norm(angle);if(t===0)return {sin:0,cos:1};if(t===90)return {sin:1,cos:0};if(t===180)return {sin:0,cos:-1};if(t===270)return {sin:-1,cos:0};let r=t*Math.PI/180;return {sin:Math.sin(r),cos:Math.cos(r)};}
+function compute(a){if(typeof a!=='number'||!Number.isFinite(a))throw new RangeError('Góc không hữu hạn');const t=norm(a),q=trigPair(a);
+const tanDefined=q.cos!==0,cotDefined=q.sin!==0;
+return {angleDeg:a,terminalDeg:t,radians:a*Math.PI/180,sin:q.sin,cos:q.cos,tanDefined,cotDefined,tan:tanDefined?q.sin/q.cos:null,cot:cotDefined?q.cos/q.sin:null,periodDeg:180,periodRad:Math.PI,after180Tan:tanDefined?q.sin/q.cos:null,after180Cot:cotDefined?q.cos/q.sin:null};}
+function fmt(n){return Number(n.toFixed(6)).toLocaleString('vi-VN',{maximumFractionDigits:6});}
+function sg(n){return n<0?'−'+fmt(-n):fmt(n);}
+function radExact(a){if(a===0)return '0';let u=Math.abs(a),v=180;while(v){let r=u%v;u=v;v=r;}const k=a/u,d=180/u;let s=k<0?'−':'',b=Math.abs(k);return s+(b===1?'':String(b))+'π'+(d===1?'':'/'+d);}
+function value(q){return q===null?'Không xác định':sg(q);}
+function out(){const q=compute(angleDeg);read('angle').textContent=sg(angleDeg)+'° = '+radExact(angleDeg)+' rad';read('terminal').textContent=sg(q.terminalDeg)+'°';
+read('tanval').textContent=value(q.tan)+(q.tanDefined?' (cos α ≠ 0)':' (cos α = 0)');
+read('cotval').textContent=value(q.cot)+(q.cotDefined?' (sin α ≠ 0)':' (sin α = 0)');
+read('repeat').textContent='tan: '+value(q.after180Tan)+'; cot: '+value(q.after180Cot)+' (nếu xác định)';
+read('domain').textContent='tan: x ≠ π/2+kπ; cot: x ≠ kπ (k nguyên)';read('period').textContent='π rad = 180° (với mỗi hàm trên miền xác định)';
+read('result').textContent= 'α = '+sg(angleDeg)+'°. tan α '+(q.tanDefined?'= '+sg(q.tan):'không xác định')+'; cot α '+(q.cotDefined?'= '+sg(q.cot):'không xác định')+'. '+(mode==='tan'?'Hình chỉ vẽ nhánh tan.':mode==='cot'?'Hình chỉ vẽ nhánh cot.':'Hình vẽ cả hai họ nhánh.') ;
+read('plus').disabled=angleDeg>540;read('minus').disabled=angleDeg< -180;}
+const X0=-2*Math.PI,X1=4*Math.PI,Y0=-4,Y1=4;
+function poles(kind){let p=[];for(let k=-4;k<=6;k++){let x=(kind==='tan'?k+0.5:k)*Math.PI;if(x>X0-1e-8&&x<X1+1e-8)p.push(x);}return p;}
+function draw(){if(dead)return;const dpr=Math.min(global.devicePixelRatio||1,2);const rect=canvas.getBoundingClientRect();let w=Math.max(250,Math.round(rect.width)),h=Math.max(210,Math.round(rect.height));canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);const c=canvas.getContext('2d');c.setTransform(dpr,0,0,dpr,0,0);const l=38,r=w-15,t=24,b=h-31;const X=x=>l+(x-X0)/(X1-X0)*(r-l),Y=y=>b-(y-Y0)/(Y1-Y0)*(b-t);
+ c.fillStyle='#fff';c.fillRect(0,0,w,h);c.strokeStyle='#e1eaf0';c.lineWidth=1;
+ for(let k=-4;k<=8;k++){let x=k*Math.PI/2;if(x<X0-1e-9||x>X1+1e-9)continue;if(k%2===0){c.beginPath();c.moveTo(X(x),t);c.lineTo(X(x),b);c.stroke();}}
+ for(let y=-4;y<=4;y+=2){c.beginPath();c.moveTo(l,Y(y));c.lineTo(r,Y(y));c.stroke();}
+ c.strokeStyle='#647b86';c.lineWidth=1.5;c.beginPath();c.moveTo(l,Y(0));c.lineTo(r,Y(0));c.moveTo(X(0),t);c.lineTo(X(0),b);c.stroke();
+ c.font='11px system-ui';c.fillStyle='#425c68';c.textAlign='center';for(let k=-2;k<=4;k++){let lab=k===0?'0':k===1?'π':k===-1?'−π':k+'π';c.fillText(lab,X(k*Math.PI),b+17);}c.textAlign='right';for(let y of [-4,-2,0,2,4])c.fillText(String(y),l-5,Y(y)+4);
+ const active=mode==='both'?['tan','cot']:[mode];let pathPieces=0;let countPoles=0;
+ for(const kind of active){const ps=poles(kind),bounds=[X0,...ps.filter(x=>x>X0+1e-9&&x<X1-1e-9),X1];
+ c.save();c.strokeStyle=kind==='tan'?'rgba(20,111,166,.55)':'rgba(198,95,41,.55)';c.lineWidth=1.1;c.setLineDash(kind==='tan'?[4,5]:[2,5]);
+ for(const pole of ps){let x=X(pole);c.beginPath();c.moveTo(x,t);c.lineTo(x,b);c.stroke();countPoles++;}c.restore();
+ c.save();c.strokeStyle=kind==='tan'?'#146fa6':'#c65f29';c.lineWidth=2.4;c.beginPath();
+ for(let j=0;j<bounds.length-1;j++){let a=bounds[j],bb=bounds[j+1],pad=0.0025,start=a+pad,end=bb-pad;if(start>=end)continue;const points=120;let drawing=false;
+ for(let i=0;i<=points;i++){let x=start+(end-start)*i/points;let sin=Math.sin(x),cos=Math.cos(x);let y=kind==='tan'?sin/cos:cos/sin;
+ if(!Number.isFinite(y)||Math.abs(y)>Y1){drawing=false;continue;}if(!drawing){c.moveTo(X(x),Y(y));drawing=true;pathPieces++;}else c.lineTo(X(x),Y(y));}
+ }c.stroke();c.restore();}
+ let result=compute(angleDeg);const xx=X(result.radians);c.save();c.strokeStyle='#8054a8';c.setLineDash([4,4]);c.beginPath();c.moveTo(xx,t);c.lineTo(xx,b);c.stroke();c.restore();
+ function dot(kind,num){if(num===null||Math.abs(num)>Y1)return;const color=kind==='tan'?'#146fa6':'#c65f29';c.fillStyle=color;c.strokeStyle='#fff';c.lineWidth=2;c.beginPath();c.arc(xx,Y(num),5.1,0,Math.PI*2);c.fill();c.stroke();}
+ if(mode!=='cot')dot('tan',result.tan);if(mode!=='tan')dot('cot',result.cot);
+ lastStats={pathPieces,asymptoteLines:countPoles,canvasWidth:canvas.width,canvasHeight:canvas.height,mode};}
+function render(){if(dead)return;deg.value=String(angleDeg);slider.value=String(angleDeg);for(const el of root.querySelectorAll('input[name=mode]'))el.checked=el.value===mode;out();draw();}
+function getState(){if(dead)throw Error('Model destroyed');return {angleDeg,mode};}
+function getResult(){if(dead)throw Error('Model destroyed');return compute(angleDeg);}
+function setState(s){if(dead)throw Error('Model destroyed');const a=checkAngle(s?.angleDeg),m=checkMode(s?.mode??mode);angleDeg=a;mode=m;err.textContent='';deg.removeAttribute('aria-invalid');render();return getState();}
+function apply(raw){try{if(String(raw).trim()==='')throw RangeError();setState({angleDeg:Number(raw),mode});}catch(e){err.textContent='Hãy nhập góc nguyên từ −360° đến 720°.';deg.setAttribute('aria-invalid','true');}}
+on(deg,'change',()=>apply(deg.value));on(slider,'input',()=>apply(slider.value));
+for(const el of root.querySelectorAll('input[name=mode]'))on(el,'change',()=>{if(el.checked)setState({angleDeg,mode:el.value});});
+for(const el of root.querySelectorAll('button[data-angle]'))on(el,'click',()=>setState({angleDeg:Number(el.dataset.angle),mode}));
+on(read('plus'),'click',()=>setState({angleDeg:angleDeg+180,mode}));on(read('minus'),'click',()=>setState({angleDeg:angleDeg-180,mode}));
+if('ResizeObserver' in global){observer=new ResizeObserver(()=>{if(!dead)draw();});observer.observe(canvas);}
+function resize(){if(dead)throw Error('Model destroyed');draw();}
+function destroy(){if(dead)return false;dead=true;for(const [e,n,fn] of handlers)e.removeEventListener(n,fn);if(observer)observer.disconnect();root.innerHTML='';return true;}
+const model=Object.freeze({getState,getResult,setState,update:setState,resize,destroy});
+global.__I798_FINAL_QA__=Object.freeze({type:'tan-cot-asymptotes',model,compute,poles,getPlotStats:()=>lastStats});render();
+})(window);
+</script></body></html>
