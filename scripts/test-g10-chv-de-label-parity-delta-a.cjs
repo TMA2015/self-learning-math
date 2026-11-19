@@ -52,7 +52,7 @@ for(const n of [12,13]){
   lesson+": exactly four original visible 'Đề:' labels");
  assert.equal((examples.match(/^\s{4}#### Đề bài$/gm)||[]).length,0,
   lesson+": no redundant 'Đề bài' subheading");
- assert.equal((examples.match(/data-thpt-g10-example-boundary/g)||[]).length,4,
+ assert.equal(examples.split('#### &nbsp; {style="display:none"}').length-1,4,
   lesson+": four attr_list-hidden Markdown H4 boundaries must preserve original source-authored solution panels");
  assert.equal((examples.match(/class="thpt-g10-example-solution"/g)||[]).length,4,
   lesson+": preserve four original worked solutions");
