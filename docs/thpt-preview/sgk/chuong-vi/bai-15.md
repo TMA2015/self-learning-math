@@ -101,10 +101,8 @@
     16+6(x-2),&x>2.
     \end{cases}
     \]
-    \(C(1)=8\) (nghìn đồng); \(C(2)=16\); \(C(3)=22\).
-    Hai công thức tương ứng với **hai khoảng khác nhau**, nhưng mọi quãng đường \(x\ge0\) đều có **duy nhất một** mức phí.
-    Tập xác định thực tế \(D=[0;+\infty)\). Tại \(x=2\), dùng nhánh \(0\le x\le2\); nhánh còn lại chỉ dùng khi \(x>2\).
-    Muốn vẽ đồ thị, vẽ đoạn thẳng \(y=8x\) trên \([0;2]\) và tia thẳng \(y=6x+4\) trên \((2;+\infty)\). Hai phần gặp nhau tại \((2;16)\).
+
+    Với công thức này, \(C(1)=8\) (nghìn đồng), \(C(2)=16\) và \(C(3)=22\). Hai công thức dùng trên **hai khoảng khác nhau**, nhưng mỗi quãng đường \(x\ge0\) vẫn có **duy nhất một** mức phí. Tập xác định thực tế là \(D=[0;+\infty)\); tại \(x=2\) phải dùng nhánh \(0\le x\le2\), còn nhánh kia chỉ dùng khi \(x>2\). Để vẽ đồ thị, ta vẽ đoạn thẳng \(y=8x\) trên \([0;2]\) và tia thẳng \(y=6x+4\) trên \((2;+\infty)\); hai phần gặp nhau tại \((2;16)\).
 
     Mô hình tính phí này là **ví dụ do dự án tự biên soạn**, không sao chép biểu giá trong SGK và không đại diện cho giá giao hàng thực tế. Đây là một ví dụ về cách biểu diễn phụ thuộc bằng công thức trên từng miền.
 
