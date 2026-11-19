@@ -109,21 +109,21 @@ function main(){
  for(const row of rows)for(const f of row.flags)counts[f]=(counts[f]||0)+1;
  const summary={
   timestamp:"2026-11-12",status:"BASELINE_CENSUS_ONLY_NOT_GOLDEN_PASS",
-  standard:"SLM-THPT-QUALITY-ONE v3.0.1",snapshot:"Current checked-out Git commit (see CI run head_sha)",
+  standard:"SLM-THPT-QUALITY-ONE v3.2.0",snapshot:"Current checked-out Git commit (see CI run head_sha)",
   lesson_count:79,classes:{10:27,11:33,12:19},
   four_tabs:rows.filter(x=>x.tabs.length===4&&x.tabs.every((l,i)=>l===tabLabels[i])).length,
   unique_git_blobs:new Set(rows.map(x=>x.blob)).size,
   structural_flags:counts,
   owner_gold_sample:"APPROVED_STRUCTURE_ONLY_20261112",
   owner_production_theme:"PRESERVE_LIVE_G10_B01_B06",
-  normative_candidate:"v3.1.0_DRAFT_NOT_EFFECTIVE",
+  normative_candidate:"v3.2.0_OWNER_APPROVED_EFFECTIVE",
   s1_verified_count:0
  };
  assert.equal(summary.unique_git_blobs,79,"unexpected duplicate 79 complete source blobs");
  const lines=[
  "# Báo cáo kiểm kê biên tập SGK THPT — 79 bài (baseline)",
  "",
- "STATUS: BASELINE_CENSUS_ONLY / OWNER GOLDEN STRUCTURE APPROVED 12/11/2026 / LIVE THEME G10 B01-B06 IMMUTABLE / S1 PENDING / NO MERGE, NO DEPLOY.",
+ "STATUS: BASELINE_CENSUS_ONLY / GOLDEN STRUCTURE APPROVED 12/11/2026 / G10 B01–B12 OWNER P2 APPROVED 19/11 / NOT 79 ACADEMIC PASS / NO DEPLOY AUTHORITY.",
  "SOURCE: 79 Git blobs trong commit CI đang kiểm. Không sửa toán, ID, đáp án, RD1.",
  "THAM CHIẾU: SCR-SGK-79-EDITORIAL-20261112 / Golden mẫu đề xuất.",
  "",
@@ -164,7 +164,7 @@ function main(){
  }
  lines.push("","## Phạm vi cần thực hiện sau kiểm kê",
   "",
-  "1. Golden cấu trúc đã owner PASS 12/11/2026. Bản v3.1.0 đã được soạn vào file chuẩn Q01–Q18 duy nhất ở PR #821; chờ QA và owner cho phép governance merge. Màu/font/text-size vẫn giữ nguyên B01–B06.",
+  "1. Golden 4-tab đã có căn cứ từ 12/11; SLM-THPT-QUALITY-ONE v3.2.0 đã owner approved/merged PR #899 (17/11). Đến 19/11 owner đã duyệt G10 B01–B12; giữ nguyên snapshot và chỉ đánh giá thay đổi mới theo delta. Không suy PASS 67 bài còn lại.",
   "2. AUTHORING kiểm mapping tên/đầu mục/độ sâu SGK S1 theo từng Bài/Outcome, ghi trang in. RELEASE chỉ hiển thị/QA.",
   "3. Ưu tiên G10 theo từng chương; G11/G12 vẫn HOLD cho đến owner mở phạm vi.",
   "4. Kiểm tất cả biến thể bảng, công thức quan trọng, hộp ghi nhớ, vị trí hình, ví dụ; dùng kiểm trình duyệt 390/820/1440 và thiết bị thật P2 khi yêu cầu.",
