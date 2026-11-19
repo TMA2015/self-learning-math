@@ -1,11 +1,15 @@
+<!-- TOP05_S1_G10_B16_QUADRATIC_AUTHORING_DELTA_C_20261120 -->
+**20/11 Owner Authoring Q01 Delta C / G10 T2 B16:** Single source `9e9965e8bf5f1053a1c50820bfa7ac0800801dcd` explicitly teaches quadratic y=ax²+bx+c (a≠0), domain R, value-table, parabola construction, vertex/axis, upward/downward and variation; S1 printed pages 11–14. Scoped Q18 `a9a4e5261dc9444018d316a393a5d4ac6c868d00`, A1 `e63fd2c3ea1be9736a6fdfc565e99554b38e545d`. 9/9 math+source tests; canonical examples/questions/keys/rubrics untouched, no additional placement or private RD1. Source academic CONTENT_READY preserved under owner, no RELEASE or new independent NotebookLM claim.
+
+---
 # AUTHORING CĐ05 — Hàm số, đồ thị và các phép biến đổi đồ thị · one CURRENT R06 V2
 
 PACKET_ID: THPT-TOPIC05-FUNCTION-GRAPH-TRANSFORMS-FULL-R06
 CONTENT_REVISION: R06
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_A1_A7_CURRENT_SOURCE_QA_20261118.md
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_A1_A7_CURRENT_SOURCE_QA_20261118.md
-AUTHOR_METADATA_BLOB: 06e44a9b04ddba6fbe9a1e55cc525d7d9e43a1a0
-AUTHOR_A1_A7_BLOB: 06e44a9b04ddba6fbe9a1e55cc525d7d9e43a1a0
+AUTHOR_METADATA_BLOB: e63fd2c3ea1be9736a6fdfc565e99554b38e545d
+AUTHOR_A1_A7_BLOB: e63fd2c3ea1be9736a6fdfc565e99554b38e545d
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
@@ -13,9 +17,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: e5b1888794a06e0de2e84a696fa11f95c9121472
+ACADEMIC_SOURCE_BLOB: 9e9965e8bf5f1053a1c50820bfa7ac0800801dcd
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC05_R06_COMPOSITE_Q18_AUTHOR_SELF_QA_20261118.md
-REVIEW_RECEIPT_BLOB: a298ccdcf9a2a782289e95a7b9e5095c007fad40
+REVIEW_RECEIPT_BLOB: a9a4e5261dc9444018d316a393a5d4ac6c868d00
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC05_GRAPH_TRANSFORMS_NEW38_PUBLIC_CANONICAL_R01_20261112.md
 PUBLIC_CANONICAL_BANK_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39
 CATALOG_TOPIC_ID: CD05
@@ -258,7 +262,7 @@ RELEASE chưa tích hợp website, chưa test AP1–AP5, R1–R5, P1–P2 trên 
 
 ## CURRENT R06 closure after prior historical R05 / numbering records — 18/11/2026
 
-This final appended section supersedes any older R05 or R06-numbering source pointers in the historical body above. The original file path is reused for ONE V2 handoff, not a parallel active handoff. Current learner source Git SHA `e5b1888794a06e0de2e84a696fa11f95c9121472`, immutable canonical bank SHA `ab878f1a18dea87872449a79c27b75a612d81b39`, latest **AUTHOR_SELF_VERIFIED** Q18 composite SHA `a298ccdcf9a2a782289e95a7b9e5095c007fad40` and A1–A7 SHA `06e44a9b04ddba6fbe9a1e55cc525d7d9e43a1a0`. The source's 38 display-only Practice/Written projections exactly match canonical bank problem, answer, reasoning; 17 public replay stems are question-only. No new source copy, no revised bank, no official held-out assessment.
+This final appended section supersedes any older R05 or R06-numbering source pointers in the historical body above. The original file path is reused for ONE V2 handoff, not a parallel active handoff. Current learner source Git SHA `9e9965e8bf5f1053a1c50820bfa7ac0800801dcd`, immutable canonical bank SHA `ab878f1a18dea87872449a79c27b75a612d81b39`, latest **AUTHOR_SELF_VERIFIED** Q18 composite SHA `a9a4e5261dc9444018d316a393a5d4ac6c868d00` and A1–A7 SHA `e63fd2c3ea1be9736a6fdfc565e99554b38e545d`. The source's 38 display-only Practice/Written projections exactly match canonical bank problem, answer, reasoning; 17 public replay stems are question-only. No new source copy, no revised bank, no official held-out assessment.
 
 Q01–Q18 academic/PED source self-QA and A1–A7 have no demonstrated P0/P1 on the inspected current file. The 16 pedagogical remediation routes and three formal clarification boxes were explicitly checked; earlier independent reviewer PASS is **not** claimed for this R06 snapshot. Public selfcheck is `CLIENT_SELF_CHECK_NO_MASTERY`, private RD1 count remains 0 imported, and no live Score/Mastery. Source-only `CONTENT_READY` will be recorded through one R06 ready manifest and REGISTER, superseding old R01 active ready without deleting historical Git evidence. RELEASE AP/R/P, actual browser, source intake on website, Final Submit/hidden questions and owner merge/deploy permission are separate and **NOT** granted.
 
