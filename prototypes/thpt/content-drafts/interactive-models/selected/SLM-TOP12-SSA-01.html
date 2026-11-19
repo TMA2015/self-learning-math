@@ -53,8 +53,8 @@ canvas,svg{background:var(--slm-canvas)!important;border-color:var(--slm-border)
 <p id="predict"></p>
 <div class="controls" id="controls" aria-label="Thông số mô hình"></div>
 <div class="canvaswrap"><canvas id="plot" role="img" aria-label="Hình toán học thay đổi theo điều khiển. Nội dung kết quả luôn được mô tả bằng văn bản dưới hình."></canvas></div>
-<div class="legend"><span>Đường chính</span><span class="second">Đường so sánh</span><span class="marker">Điểm/tham số đang chọn</span></div>
-<div class="result" id="readout" aria-live="polite" role="status"></div>
+<div class="legend"><span>Vị trí B₁ (nếu có)</span><span class="second">Vị trí B₂ (nếu có)</span><span class="marker">Đường cao h=b·sin A</span></div>
+<details class="result" id="numeric-check"><summary>Đối chiếu 0, 1 hoặc 2 tam giác</summary><div id="readout" aria-live="polite" role="status"></div></details>
 <div class="actions"><button id="reset" type="button">Đặt lại</button></div>
 <p id="apply"></p>
 <details id="compare"><summary>Đối chiếu · Vì sao có kết quả này?</summary><p id="reason"></p></details>
@@ -88,14 +88,21 @@ switch(id){
 case "SLM-TOP12-SSA-01":
 b=val("b");alpha=Math.PI/6;var discr=64-b*b*Math.sin(alpha)*Math.sin(alpha);if(Math.abs(discr)<1e-8)discr=0;roots=[];
 if(discr>=-1e-9){var rad=Math.sqrt(Math.max(0,discr));[b*Math.cos(alpha)-rad,b*Math.cos(alpha)+rad].forEach(function(ab){if(ab>1e-7&&!roots.some(function(y){return Math.abs(y-ab)<1e-7}))roots.push(ab)})}
-g=graph(-1,21,-1,20);var P={x:0,y:0},Cpt={x:b,y:0};line(g.X(0),g.Y(0),g.X(b),g.Y(0),C.gray,2);roots.forEach(function(ab,i){var bx=ab*Math.cos(alpha),by=ab*Math.sin(alpha);line(g.X(0),g.Y(0),g.X(bx),g.Y(by),i?C.green:C.blue,2.7);line(g.X(bx),g.Y(by),g.X(b),g.Y(0),i?C.green:C.blue,2.7);dot(g.X(bx),g.Y(by),i?C.green:C.orange);label("B"+(i+1),g.X(bx)+5,g.Y(by)-4)});dot(g.X(0),g.Y(0),C.orange);dot(g.X(b),g.Y(0),C.gray);label("A",g.X(0)+7,g.Y(0)-7);label("C",g.X(b)+7,g.Y(0)-7);g.end();
-setText("A=30°, a=8, b="+fmt(b)+". Số tam giác không suy biến: "+roots.length+". "+(roots.length?roots.map(function(t,i){return "AB"+(i+1)+"="+fmt(t)}).join("; "):"Không có vị trí B trên tia thỏa BC=8")+". Điều kiện AB>0 loại nghiệm suy biến.");break;
+g=graph(-1,21,-1,20);
+var footAb=b*Math.cos(alpha),footX=footAb*Math.cos(alpha),footY=footAb*Math.sin(alpha);
+line(g.X(0),g.Y(0),g.X(b),g.Y(0),C.gray,2);
+line(g.X(b),g.Y(0),g.X(footX),g.Y(footY),C.orange,1.7,[4,4]);
+label("h = "+fmt(b*Math.sin(alpha)),g.X((b+footX)/2)+4,g.Y(footY/2)-5,C.orange);
+roots.forEach(function(ab,i){var bx=ab*Math.cos(alpha),by=ab*Math.sin(alpha);line(g.X(0),g.Y(0),g.X(bx),g.Y(by),i?C.green:C.blue,2.7);line(g.X(bx),g.Y(by),g.X(b),g.Y(0),i?C.green:C.blue,2.7);dot(g.X(bx),g.Y(by),i?C.green:C.orange);label("B"+(i+1),g.X(bx)+5,g.Y(by)-4)});dot(g.X(0),g.Y(0),C.orange);dot(g.X(b),g.Y(0),C.gray);label("A",g.X(0)+7,g.Y(0)-7);label("C",g.X(b)+7,g.Y(0)-7);g.end();
+var kind=roots.length===2?"hai tam giác":roots.length===1?"một tam giác":"không có tam giác";
+var boundary=Math.abs(b-16)<1e-8?"Tiếp xúc tại chân đường vuông góc: chỉ một vị trí B.":Math.abs(b-8)<1e-8?"Một nghiệm AB=0 bị loại vì tam giác suy biến.":"Điều kiện bắt buộc AB>0 và BC=8.";
+setText("A=30°, a=BC=8, b=AC="+fmt(b)+". Khoảng cách từ C đến tia AB là h=b·sin30°="+fmt(b/2)+". Biệt thức vị trí B: Δ=8²−h²="+fmt(64-b*b/4)+". Số tam giác không suy biến: "+roots.length+" ("+kind+"). "+(roots.length?roots.map(function(t,i){return "AB"+(i+1)+"="+fmt(t)}).join("; "):"Không có vị trí B trên tia thỏa BC=8")+". "+boundary);break;
 }
 if(!interacted){result.textContent="Hãy dự đoán kết quả trước, sau đó thay đổi ít nhất một thanh trượt hoặc bấm giá trị bằng bàn phím để quan sát."}
 }
-function schedule(){interacted=true;if(pending)return;pending=true;window.requestAnimationFrame(function(){pending=false;draw()})}
+function schedule(){document.getElementById("numeric-check").open=false;document.getElementById("compare").open=false;interacted=true;if(pending)return;pending=true;window.requestAnimationFrame(function(){pending=false;draw()})}
 Object.keys(el).forEach(function(k){el[k].input.addEventListener("input",schedule);el[k].input.addEventListener("change",schedule)});
-document.getElementById("reset").addEventListener("click",function(){Object.keys(el).forEach(function(k){el[k].input.value=el[k].initial});document.getElementById("compare").open=false;interacted=false;draw()});
+document.getElementById("reset").addEventListener("click",function(){Object.keys(el).forEach(function(k){el[k].input.value=el[k].initial});document.getElementById("compare").open=false;document.getElementById("numeric-check").open=false;interacted=false;draw()});
 window.addEventListener("resize",schedule);draw();
 })();
 </script>
