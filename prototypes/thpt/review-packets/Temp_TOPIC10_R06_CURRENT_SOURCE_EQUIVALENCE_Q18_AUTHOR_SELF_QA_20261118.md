@@ -9,8 +9,8 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic10-applied-derivative/Temp_TOPIC10_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 58f0570b5428bd154201bc012f3e598cb1b2825a
-ACADEMIC_SOURCE_BLOB: 58f0570b5428bd154201bc012f3e598cb1b2825a
+SOURCE_BLOB: f3ed26380c817f3c3dea7a240634a45193f9edb2
+ACADEMIC_SOURCE_BLOB: f3ed26380c817f3c3dea7a240634a45193f9edb2
 PREVIOUS_SIGNED_R06_SOURCE_BLOB: bd33faa8e7bc348cda78da6e44d3f40a68223596
 PREVIOUS_SIGNED_R06_Q18_BLOB: 96cc3e1dee497f7a42e1ef50bee4c17692a9158e
 PREVIOUS_FULL_R05_SOURCE_BLOB: 68d3ccd180162c0b850c7e419a5098982d3785a0
@@ -31,7 +31,7 @@ ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
 PRIVATE_RD1_IMPORTED: 0
 RELEASE_AUTHORIZATION: NO
-AUTHOR_SIGNOFF: TOP10_R06_20261118_58f0570b5428bd154201bc012f3e598cb1b2825a
+AUTHOR_SIGNOFF: TOP10_R06_20261118_f3ed26380c817f3c3dea7a240634a45193f9edb2
 AUTHOR_SELF_QA_RECEIPT: TOP10_R06_EQUIVALENT_20261118_SOURCE_LOCKED
 S1_RECEIPT: Toán 12 KNTT tập Một SGK ChI B01–B05 and SBT corresponding sections, owner-verified printed/PDF page pairing preserved in Topic A1 metadata; immutable G12 SGK source blob f0862dcdab21dec136e43969f45c42638e7c7574 and original independent SGK-only receipt 8fef1c7dbd9b404881ff40cec8147c9ae89ef473; no new PDF rescanning or independent Topic verdict.
 OUTCOME_AUDIT: TOP10-M01..M36 map one-to-one TOP10-O01..O36 in 6 numbered arcs; 36 full worked examples, 36 immediate First Try/voluntary Đối chiếu, 120 source-visible canonical Practice placements, 36 public replay-only selfchecks.
@@ -84,3 +84,7 @@ A1 original S1 custody, A2 36 outcome trace, A3 120 Q15 identity, A4 math and PE
 - Full historically signed predecessor receipt: `Temp_TOPIC10_R05_AUTHOR_SELF_QA_RECEIPT_20261116.md`, Git blob `cdf1356b3bedc5c3a246464f34600ed7ec99579a`; source snapshot `68d3ccd180162c0b850c7e419a5098982d3785a0`.
 
 **AUTHORING verdict:** `ACADEMIC_AUTHOR_SELF_QA_PASS`, `PED_AUTHOR_SELF_QA_PASS`, `Q15/Q16_SOURCE_SAFE`, `DELTA_B_SOURCE_EQUIVALENT`, P0/P1/P2=0 on the checked delta. Preserve every old receipt as snapshot history. The current receipt authorizes only source packaging checks; AUTHORING CONTENT_READY requires exact-source A1–A7/V2/ready/REGISTER and exact HEAD Topic V2 CI. RELEASE/AP/R/P/production and owner merge/deploy approval are separate.
+
+
+<!-- TOP10_OWNER_EDITORIAL_DELTA_A_20261119 -->
+**Owner-approved display Delta A 19/11/2026:** 32 pre-existing descriptions of derivative survey/optimization formulas, theorems, conditions and methods now carry clear typed caption headings, 4 already typed boxes unchanged. Academic learner blob `58f0570b5428bd154201bc012f3e598cb1b2825a` → `f3ed26380c817f3c3dea7a240634a45193f9edb2`. Reverse-prefix proof shows original 36 worked examples, 36 Vận dụng/Đối chiếu, full math, domain conditions, canonical IDs, Written rubrics, SVGs and Q16 unchanged verbatim; this editorial change is not a new mathematical proposition. Preserve SOURCE CONTENT_READY and historical QA at its immutable baseline; author Q18 this affected UI-only delta, no full re-review/merge/deploy.
