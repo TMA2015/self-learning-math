@@ -1,4 +1,19 @@
 <!-- OWNER_BASELINES_GOLDEN_PROCESS_20261119 -->
+
+### RELEASE — MỘT BẢN THẢO CANONICAL, CHỦ BIÊN TOÀN BÀI, QA THEO PHẠM VI (OWNER 19/11/2026)
+
+**Quyết định chủ dự án, quy tắc vận hành của một chuẩn Q01–Q18 hiện hành — không mở thêm chuẩn hay checklist mới.** Với **mỗi bài SGK và mỗi Chuyên đề** chỉ có **một bản thảo/học liệu canonical trên GitHub**, liên kết 1–1 với nội dung đang được phát hành trên website. Chỉnh sửa trực tiếp **đúng đường dẫn canonical hiện hữu** trong branch/PR làm việc; **không tạo file học liệu R01/R02/thay thế, bản sao sinh nội dung, hoặc hai nguồn tranh quyền**. Chuyên đề vẫn gồm ba trang giao diện ngoài nhưng một bộ nguồn canonical thống nhất theo hành trình đã duyệt. Nếu build/preview cần trung gian, đó chỉ là sản phẩm dựng tạm, không phải bản thảo thứ hai. Git history, immutable blob SHA và receipt phục vụ truy xuất, không nhân đôi nguồn học sinh. Chỉ website build từ source đã duyệt; không ghi nhận demo/preview là đã phát hành.
+
+**RELEASE trước khi ký Q18 (G0→G1→G2 là công việc chủ biên, không đẩy sang test):** 
+- **G0:** Đọc chuẩn có hiệu lực, SGK S1, **toàn bộ** file canonical, danh sách lỗi, snapshot/Golden P2 của các bài trước và checkpoint có chứng cứ; xác định đúng các outcome/ID và phạm vi được chủ dự án cho phép.
+- **G1:** Nâng cấp **trên chính nguồn đó**: đọc và **viết lại liền mạch** lời giảng còn rời rạc, giải thích bản chất trước công thức, lý do chọn cách, điều kiện áp dụng, ví dụ giải và D6; đồng thời kiểm tra nhất quán mọi nhãn và thành phần **toàn bài**, không chỉ vùng diff. Không coi dòng cũ chưa sửa là mặc nhiên PASS.
+- **G2:** Tự phản biện **bản bài hoàn chỉnh như người mới học** theo trình tự bốn tab Golden, mỗi outcome, mọi lời dẫn–hình–phép tính–câu Vận dụng/Đối chiếu–khắc phục. So bản học sinh thực sự nhìn thấy với Golden đã nghiệm thu. Chỉ ký `Q18_OWNER_SELF_VERIFIED_ENRICHMENT` khi đã tự kiểm thật sự, đủ chứng cứ toán + PED và không còn P0/P1; **test xanh không được thay chữ ký chủ biên**.
+
+**Phân biệt bảo toàn toán với đóng băng văn bản:** Giữ đúng toán, điều kiện, ví dụ/dữ liệu chính đã duyệt, outcome, `item_id`, đáp án/rubric, Core/Final Submit/RD1 và mọi yêu cầu Q15/Q16. **Không giữ lại cách trình bày sai, nhãn lệch Golden hay lời giảng rời rạc chỉ vì source-lock.** Viết lại văn phong/nhịp giải thích tạo commit/SHA mới **trong cùng bản thảo**, giữ receipt/snapshot trước bất biến, kiểm chứng `DELTA_A/B/C/D` đúng bản chất và mode §X-C; nếu vượt phạm vi Knowledge được phép hoặc không chắc nguồn/toán đánh giá, HOLD đúng phần và chuyển xác minh phù hợp. Không đổi lời giảng Delta C thành A để bỏ review.
+
+**QA/phát hành G3→G5:** Sau chủ biên G0–G2, kiểm AP1–AP5/R1–R5, source SHA, nhất quán UI, MathJax/SVG, responsive và an toàn Q16/Final Submit, exact-final-HEAD; so `gh-pages` với source canonical; **P1 kỹ thuật khác OWNER P2 trên thiết bị thật**. Được phép đề xuất **phân tầng phạm vi CI theo rủi ro** để tránh quét đủ 79 bài khi sửa nhãn đơn lẻ, nhưng **chưa giảm/bỏ/sửa bất kỳ required workflow hay điều kiện merge/deploy hiện hành nào nếu chủ dự án chưa duyệt thay đổi CI**. Thay đổi runtime, CSS dùng chung, routing, assessment, quyền riêng tư vẫn cần hồi quy rộng phù hợp. Không tự merge/deploy hoặc mở bài kế tiếp ngoài phạm vi được phép.
+
+---
 # QUYẾT ĐỊNH HIỆN HÀNH 19/11/2026 — KHÓA HAI NỀN SGK/THPT (#763, #807)
 
 **Chủ dự án đã duyệt Toán 10 SGK B01–B12 (12/79 bài)**. B13 chưa mở; 67 bài còn lại theo đúng một Master [#795](https://github.com/TMA2015/self-learning-math/issues/795). Chỉ số này là tiến độ **nâng cấp theo từng bài**, không có nghĩa 67 bài chưa có trang web hay nguồn học thuật. Đợt cleanup #911/#913 đã hoàn thành, không làm đổi 79 trang HTML; **không nghiệm thu lại B01–B12 chỉ vì cleanup/metadata**.
