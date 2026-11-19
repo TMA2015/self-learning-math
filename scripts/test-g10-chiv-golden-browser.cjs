@@ -101,8 +101,17 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
    const gCss=k=>goldCss.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
    assert.equal(gCss("GOLDEN_CSS_PREVIOUS_BLOB"),b11f("CSS_B11_SCOPED_APPEND_BLOB"),
     "B10/B11 owner-accepted CSS baseline still immutable");
-   assert.equal(blob(cssFile),gCss("GOLDEN_CSS_CURRENT_BLOB"),
-    "Exact current B10 parity CSS scoped only to B12");
+   const currentCss=cssFile.toString("utf8"),b13Marker="/* G10 ChV B13 · exact B10/B12 Golden palette";
+   const b13At=currentCss.indexOf(b13Marker);
+   assert(b13At>0&&currentCss.indexOf(b13Marker,b13At+1)<0,
+    "B13 Golden CSS must have one isolated append");
+   assert.equal(blob(Buffer.from(currentCss.slice(0,b13At-1))),gCss("GOLDEN_CSS_CURRENT_BLOB"),
+    "Owner B12 Golden CSS remains byte-exact prefix");
+   const receipt13=fs.readFileSync(root+
+    "/prototypes/thpt/ux795/G10_CHV_B13_S1_Q18_GOLDEN_ENRICHMENT_DELTA_R01_20261119.md","utf8");
+   const f13=k=>receipt13.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(blob(cssFile),f13("CANDIDATE_GOLDEN_CSS_BLOB"),
+    "B13 scoped CSS must equal signed source delta SHA");
   assert(cssWithB10.slice(cutB11).includes("THPT-G10-CHIV-TRY21")&&
    !cssWithB10.slice(cutB11).includes("THPT-G10-CHIV-TRY16"),
    "B11 styles cannot recolor B10");
