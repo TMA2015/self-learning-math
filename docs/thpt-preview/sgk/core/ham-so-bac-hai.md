@@ -99,4 +99,4 @@
 </section>
 
 
-**Tự rèn thêm:** [Bài tự luận và mỏ neo Bài 16](../../thu-vien/tu-luan.md#bai-16-tu-luan) · [Tự kiểm tra cuối chương](../chuong-vi/tu-kiem-tra-chuong.md). Tự kiểm tra có quy tắc Final Submit riêng, không dùng các bài luyện đã xem lời giải để tính Mastery.
+**Tự rèn thêm:** [Bài tự luận và mỏ neo Bài 16](../../thu-vien/tu-luan.md) · [Tự kiểm tra cuối chương](../chuong-vi/tu-kiem-tra-chuong.md). Tự kiểm tra có quy tắc Final Submit riêng, không dùng các bài luyện đã xem lời giải để tính Mastery.
