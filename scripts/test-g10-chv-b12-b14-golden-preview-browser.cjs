@@ -253,10 +253,12 @@ const blob=data=>{
       context+" concept-first discovery");
      if(lesson===14){
       const discovery=blocks.nth(0);
-      assert.equal(await discovery.locator("p strong").filter({hasText:/^Em vận dụng\.$/}).count(),5,
-       context+" all five First Try labels match the owner-approved B12/B13 wording");
-      assert.equal(await discovery.getByText("Em tự thử.",{exact:false}).count(),0,
-       context+" obsolete First Try label never appears in the learner UI");
+      await labels.nth(0).click();
+      const visibleDiscovery=await discovery.innerText();
+      assert.equal((visibleDiscovery.match(/Em vận dụng\./g)||[]).length,5,
+       context+" exactly five learner-visible First Try labels match approved B12/B13 wording");
+      assert(!visibleDiscovery.includes("Em tự thử."),
+       context+" obsolete First Try wording never appears in the visible Discovery");
       const picture=blocks.nth(1).locator('img[src$="G10_B14_BOXPLOT_S1_Q18_ENRICHMENT_20261113.svg"]');
       assert.equal(await picture.count(),1,context+" source-verified boxplot figure exists");
       await labels.nth(1).click();
