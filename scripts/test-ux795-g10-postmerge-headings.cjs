@@ -257,7 +257,12 @@ for(let n=1;n<=27;n++){
     "prototypes/thpt/ux795/G10_CHVI_B15_P2_EDITORIAL_NOTE_DELTA_R01_20261119.md"),"utf8");
    const p2f=k=>p2.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
    assert.equal(p2f("PREVIOUS_B15_SOURCE_BLOB"),prior,"B15 P2 source must preserve old signed source");
-   active=p2f("CANDIDATE_B15_SOURCE_BLOB");
+   const old=p2f("CANDIDATE_B15_SOURCE_BLOB");
+   const visual=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHVI_B15_OWNER_P2_READABILITY_FIGURE_R02_20261119.md"),"utf8");
+   const vf=k=>visual.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(vf("PREVIOUS_B15_SOURCE_BLOB"),old,"B15 R02 receipt follows exact P2 source");
+   active=vf("CANDIDATE_B15_SOURCE_BLOB");
   }
   assert.equal(blob(source),active,
     "B"+n+" learner source must match latest signed Q18, never an obsolete UX ancestor");
