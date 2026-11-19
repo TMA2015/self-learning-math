@@ -47,9 +47,9 @@
 | 20 | CĐ20 | `SLM-TOP20-PROB-EVENTS-R00` | Hai biến cố | `#12` | **DEV_BASE_SELECTED**: `NEW_12`; donor: `OLD_EV (PR #860 đã đóng, chỉ tham khảo)`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-TOP20-PROB-EVENTS-R00.html) · `086ecc628d226a3580b733bfb5e5416163d83a0b` · **CANDIDATE_EXTRACTED/DEV_QA_PENDING** |
 | 21 | CĐ21 | `SLM-TOP21-BAYES-TREE-R01` | Bayes/sơ đồ cây | `#13` | **DEV_BASE_SELECTED**: `OLD_BD`; donor: `NEW_13`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-TOP21-BAYES-TREE-R01.html) · `ed54561e72b38e0b82a6d3e7e429ad53be0ab710` · **DEV_QA_CHROMIUM_1153/1153_PASS / MODEL_PASS_PENDING (OWNER_SCOPE)** |
 | 22 | CĐ22 | `SLM-TOP22-DISTRIBUTION-R01` | Dữ liệu thô/ngoại lệ | Chưa có bản mới tương ứng | **DEV_BASE_SELECTED**: `OLD_BD`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-TOP22-DISTRIBUTION-R01.html) · `b96b8f193d9e568c80eb2ae4bcb4818a4e562ded` · **DEV_MATH_JS_MOCK_QA_PASS / CHROMIUM_VISUAL_PENDING** |
-| 23 | SGK Toán 11 Bài 3 | `SLM-SGK-G11-B03-SINCOS` | Đồ thị sin/cos và tính tuần hoàn | `#08` | **DEV_BASE_SELECTED**: `NEW_08`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-SGK-G11-B03-SINCOS.html) · `33a9b11463db77d2136ec78873f527dc1eb95759` · **CANDIDATE_EXTRACTED/DEV_QA_PENDING** |
-| 24 | SGK Toán 11 Bài 3 | `SLM-SGK-G11-B03-TANCOT` | Đồ thị tan/cot và tiệm cận | `#09` | **DEV_BASE_SELECTED**: `NEW_09`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-SGK-G11-B03-TANCOT.html) · `da207f8491e0eeebff8b304579aadfe0f9b6ded2` · **CANDIDATE_EXTRACTED/DEV_QA_PENDING** |
-| 25 | SGK Toán 11 Bài 4 | `SLM-SGK-G11-B04-TRIGEQ` | Phương trình lượng giác cơ bản | `#10` | **DEV_BASE_SELECTED**: `NEW_10`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-SGK-G11-B04-TRIGEQ.html) · `abf867dd22fc50275fb4771a62435642d4ec3a11` · **CANDIDATE_EXTRACTED/DEV_QA_PENDING** |
+| 23 | SGK Toán 11 Bài 3 | `SLM-SGK-G11-B03-SINCOS` | Đồ thị sin/cos và tính tuần hoàn | `#08` | **DEV_BASE_SELECTED**: `NEW_08`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-SGK-G11-B03-SINCOS.html) · `33a9b11463db77d2136ec78873f527dc1eb95759` · **DEV_MATH_JS_MOCK_QA_PASS / CHROMIUM_VISUAL_PENDING** |
+| 24 | SGK Toán 11 Bài 3 | `SLM-SGK-G11-B03-TANCOT` | Đồ thị tan/cot và tiệm cận | `#09` | **DEV_BASE_SELECTED**: `NEW_09`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-SGK-G11-B03-TANCOT.html) · `da207f8491e0eeebff8b304579aadfe0f9b6ded2` · **DEV_MATH_JS_MOCK_QA_PASS / CHROMIUM_VISUAL_PENDING** |
+| 25 | SGK Toán 11 Bài 4 | `SLM-SGK-G11-B04-TRIGEQ` | Phương trình lượng giác cơ bản | `#10` | **DEV_BASE_SELECTED**: `NEW_10`; **FINAL_SOURCE_NOT_LOCKED** · [selected](./selected/SLM-SGK-G11-B04-TRIGEQ.html) · `05061a9bb5100249d210879e9e21a5e712294d51` · **DEV_MATH_JS_MOCK_QA_PASS / CHROMIUM_VISUAL_PENDING** |
 
 ### Phân biệt dứt khoát “đã chọn mô hình” và “đã chọn source cuối”
 
@@ -245,4 +245,17 @@ Theo quy tắc owner ngay đầu sổ, **không** cần review từng trang SGK/
 
 **Test sau commit:** CĐ05/06/22 chạy JavaScript gốc trên V8 với DOM/Canvas/SVG giả lập, thử trạng thái khởi tạo, tham số, nhãn, reset; CĐ11 chạy **riêng math core từ đúng thẻ script của HTML** và kiểm công thức UI bằng đối chiếu source (UI mount thật chưa test). **23/23 kiểm tra mã nguồn/mock PASS**. Oracle/toán độc lập: CĐ05 1.331 bộ hệ số, CĐ06 1.441 góc nguyên, CĐ22 5.000 dãy dữ liệu = **7.772/7.772 PASS**; CĐ11 dùng trực tiếp math core **1.638/1.638 bộ**, max sai khác số học với công thức đóng `7,11×10⁻¹⁵`. Các số liệu này **không** là Chromium thực, screenshot, usability hoặc Final MODEL_PASS.
 
-**Tổng chương trình:** 25 HTML selected; **16** đã có tối thiểu QA phát triển gắn nguồn (**CĐ21: Chromium DEV source cũ; 15 file: kiểm nguồn/toán/V8 ở mức khác nhau**), **9** file đang ở trạng thái candidate chưa QA sau khi tách. `MODEL_PASS` vẫn chưa cấp theo tiêu chí nghiệm thu owner vì chưa có kiểm duyệt thực tế hình ảnh và tương tác của các snapshot liên quan. Không thay source/handoff học liệu SGK, Golden site, đáp án/RD1, Firebase, Mastery, không merge/deploy.
+**Tổng chương trình:** 25 HTML selected; **19** đã có tối thiểu QA phát triển gắn nguồn (**CĐ21: Chromium DEV source cũ; 18 file: kiểm nguồn/toán/V8 ở mức khác nhau**), **6** file đang ở trạng thái candidate chưa QA sau khi tách. `MODEL_PASS` vẫn chưa cấp theo tiêu chí nghiệm thu owner vì chưa có kiểm duyệt thực tế hình ảnh và tương tác của các snapshot liên quan. Không thay source/handoff học liệu SGK, Golden site, đáp án/RD1, Firebase, Mastery, không merge/deploy.
+
+<!-- I798_AUTHORING_TRIG_COMPANION_THREE_20261119 -->
+### AUTHORING · KIỂM TOÁN 3 MÔ HÌNH BỔ TRỢ LƯỢNG GIÁC TOÁN 11
+
+Ba HTML bổ trợ giữ **đúng các slot 23–25 trong danh sách 25**; không thêm loại mô hình, không thay nội dung bài học SGK.
+
+| Slot | Blob hiện tại | Kết quả |
+|---|---|---|
+| 23: SGK11 B03 sin/cos | `33a9b11463db77d2136ec78873f527dc1eb95759` | **Đã QA nguồn hiện hữu, không sửa file**. Thử nghiệm chu kỳ 360°, trục chính xác, nút ±360° vô hiệu ở cận và kiểm lỗi góc ngoài phạm vi; V8 mock **7/7** |
+| 24: SGK11 B03 tan/cot | `da207f8491e0eeebff8b304579aadfe0f9b6ded2` | **Đã QA nguồn hiện hữu, không sửa file**. Kiểm tiệm cận, không xác định, chu kỳ π trên miền xác định, nút ±180° ở biên và thống kê nhánh; V8 mock **7/7** |
+| 25: SGK11 B04 phương trình lượng giác | `05061a9bb5100249d210879e9e21a5e712294d51` | **Đã sửa đúng file selected** lỗi ép đường `y=m` vào mép hình khi |m| lớn; trục y nay mở theo m, có chấm nghiệm đúng. V8 mock **13/13** kiểm sin ±1, |m|>1, cận mở/đóng, tan/cot m=20 và mode |
+
+**27/27 assertion V8 + DOM/Canvas giả lập PASS** trên đúng JS/HTML nguồn (bao gồm 3 source readback); không phải Chromium renderer thực, chưa đủ bằng chứng tương tác/phím/responsive để cấp `MODEL_PASS`. Không cần SGK/SBT theo trang, NotebookLM hay full outcome matrix cho các minh họa này. Tổng: **19/25 có DEV QA bất kỳ; 6/25 còn candidate chưa QA**, **chưa mô hình nào được cấp Final MODEL_PASS**. Không merge/deploy.
