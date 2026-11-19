@@ -1,41 +1,51 @@
 #!/usr/bin/env node
 "use strict";
-/* Owner P2 Delta A/B. Reconstruct immutable previous B15 from exact two hunks,
- * proving SHA without assuming shallow CI checkout contains historic parent. */
-const assert=require("node:assert/strict"),fs=require("node:fs"),
- path=require("node:path"),crypto=require("node:crypto");
-const root=path.resolve(__dirname,"..");
-const file="docs/thpt-preview/sgk/chuong-vi/bai-15.md";
-const receipt=fs.readFileSync(path.join(root,
- "prototypes/thpt/ux795/G10_CHVI_B15_P2_EDITORIAL_NOTE_DELTA_R01_20261119.md"),"utf8");
-const field=k=>{
- const line=receipt.split("**"+k+":** "+String.fromCharCode(96))[1];
- assert(/^[a-f0-9]{40}/.test(line||""),"Receipt missing SHA "+k);
- return line.slice(0,40);
+/* B15 Q18 immutable chain: original full academic source → P2 note fix →
+ * owner screenshot R02 flow/figure candidate. CI may have shallow checkout. */
+const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path"),
+ crypto=require("node:crypto");
+const root=path.resolve(__dirname,".."),ux="prototypes/thpt/ux795/";
+const read=p=>fs.readFileSync(path.join(root,p),"utf8");
+const field=(doc,key)=>{
+ const s=doc.split("**"+key+":** "+String.fromCharCode(96))[1];
+ assert(/^[a-f0-9]{40}/.test(s||""),"Missing signed Q18 field "+key);
+ return s.slice(0,40);
 };
-const blob=x=>{x=Buffer.isBuffer(x)?x:Buffer.from(x);
- return crypto.createHash("sha1").update("blob "+x.length+"\0").update(x).digest("hex")};
-const current=fs.readFileSync(path.join(root,file),"utf8");
-assert.equal(blob(current),field("CANDIDATE_B15_SOURCE_BLOB"),"source matches P2 receipt");
-const now="    **Cách kiểm tra trên đồ thị:** Nếu đường thẳng đứng \\(x=x_0\\) cắt một đường biểu diễn ở hai điểm có tung độ khác nhau, đường đó không phải đồ thị của một hàm số \\(y=f(x)\\) tại \\(x_0\\). Đây là cách kiểm tra chung, không phải lời hướng dẫn đọc hình minh họa phía trên.";
-const prior='    !!! tip "Lưu ý khi đọc hình"\n'+
- '        Nếu đường thẳng đứng \\(x=x_0\\) cắt một hình vẽ ở **hai điểm có tung độ khác nhau**, hình đó không thể là đồ thị của hàm số \\(y=f(x)\\) trên miền chứa \\(x_0\\). Đây là cách nhận diện bằng hình của yêu cầu “một đầu vào — một đầu ra”.';
-const intro='    Những lỗi dưới đây là **sai lầm toán học dễ mắc khi giải năm dạng trong bài**, không phải các nhãn lỗi chung chung. Mỗi mục chỉ ra một kết luận sai cụ thể, giải thích vì sao sai, rồi hướng dẫn em tự làm lại. Không coi việc học sinh đã mở “Đối chiếu” là bằng chứng làm chủ kiến thức.\n\n';
-assert.equal(current.split(now).length,2,"one exact plain graph criterion");
-assert.equal(current.split('=== "Lỗi thường gặp"\n\n').length,2,"one unchanged Golden tab boundary");
-assert(!current.includes('!!! tip "Lưu ý khi đọc hình"')&&!current.includes(intro),
- "both undesirable texts removed");
-const reconstructed=current.replace(now,prior).replace('=== "Lỗi thường gặp"\n\n',
- '=== "Lỗi thường gặp"\n\n'+intro);
-assert.equal(blob(reconstructed),field("PREVIOUS_B15_SOURCE_BLOB"),
- "RECONSTRUCTED original B15 blob must exactly equal last P1 release SHA");
-assert.equal((current.match(/\*\*Em vận dụng\.\*\*/g)||[]).length,5,"5 original source first tries");
-assert.equal((current.match(/\?\?\? question "Đối chiếu"/g)||[]).length,5,"5 original disclosures");
-assert.equal((current.match(/data-thpt-help-id="/g)||[]).length,5,"5 D6 HELP entries");
-assert.equal(blob(fs.readFileSync(path.join(root,
- "docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"))),
- field("EXISTING_GOLDEN_CSS_BLOB"),"Golden CSS remains frozen");
-const frozen={
+const blob=b=>{const v=Buffer.isBuffer(b)?b:Buffer.from(b);return crypto.createHash("sha1").update("blob "+v.length+"\0").update(v).digest("hex")};
+const old=read(ux+"G10_CHVI_B15_OWNER_Q18_KNOWLEDGE_ENRICHMENT_20261119.md");
+const p2=read(ux+"G10_CHVI_B15_P2_EDITORIAL_NOTE_DELTA_R01_20261119.md");
+const r02=read(ux+"G10_CHVI_B15_OWNER_P2_READABILITY_FIGURE_R02_20261119.md");
+assert.equal(field(p2,"PREVIOUS_B15_SOURCE_BLOB"),field(old,"CANDIDATE_B15_SOURCE_BLOB"),"B15 P1→P2 source ancestry");
+assert.equal(field(r02,"PREVIOUS_B15_SOURCE_BLOB"),field(p2,"CANDIDATE_B15_SOURCE_BLOB"),"B15 P2→R02 source ancestry");
+const src=read("docs/thpt-preview/sgk/chuong-vi/bai-15.md");
+assert.equal(blob(src),field(r02,"CANDIDATE_B15_SOURCE_BLOB"),"B15 candidate must match its own latest Q18 SHA");
+const css=fs.readFileSync(path.join(root,"docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"));
+const svg=fs.readFileSync(path.join(root,"docs/assets/images/thpt/THPT_G10_CHVI_B15_FUNCTION_MAPPING_D5_R03.svg"));
+assert.equal(blob(css),field(r02,"GOLDEN_STYLESHEET_BLOB"),"Golden CSS unchanged");
+assert.equal(blob(svg),field(r02,"ORIGINAL_SVG_ASSET_BLOB"),"Original SVG text, aspect ratio and math unchanged");
+assert(!src.includes("Vì sao chọn phương pháp này?"),"Remove four redundant mini headings from Discovery");
+assert(!src.includes('!!! tip "Lưu ý khi đọc hình"')&&!src.includes("Những lỗi dưới đây là"),"Keep previous P2 readability changes");
+assert(src.includes('class="thpt-r4-plot thpt-r4-probability-figure thpt-r4-concept-figure"'),
+ "Existing approved Golden concept-figure styling must enlarge B15 figure without new CSS");
+const discovered=src.slice(src.indexOf('=== "Khám phá kiến thức"'),src.indexOf('=== "Kiến thức SGK"'));
+const sections=[...discovered.matchAll(/    #### 1\.2\.(\d)\. ([^\n]+)\n([\s\S]*?)(?=    #### 1\.2\.|    ### 1\.3\.)/g)];
+assert.equal(sections.length,5,"Five canonical Discovery topics");
+for(const [,i,title,body]of sections){
+ assert.equal((body.match(/\*\*Em vận dụng\.\*\*/g)||[]).length,1,"One Vận dụng per scenario "+i);
+ const tryAt=body.indexOf("    **Em vận dụng.**");
+ assert(tryAt>=0&&body.slice(0,tryAt).trim().length>=120,"Full prose before independent First Try "+i);
+ assert(!/\*\*Ví dụ (?:\d|bổ sung)/.test(body),"No extra mini-example labels "+i);
+ assert(!body.slice(tryAt).includes("**Ví dụ"),"No example after learner try "+i);
+}
+assert.equal(src.split('data-thpt-first-try-id="').length-1,5,"Five canonical First Try IDs");
+assert.equal(src.split('data-thpt-help-id="').length-1,5,"Five canonical D6 HELP IDs");
+assert.equal((src.match(/\?\?\? question "Đối chiếu"/g)||[]).length,5,"Five voluntary nonmastery disclosures");
+assert(src.includes("C(1)=8")&&src.includes("C(2)=16")&&src.includes("C(3)=22"),
+ "Retain piecewise example values and branch case");
+assert(src.includes("g(x)=\\frac{x+1}{x-2}")&&src.includes("T=\\mathbb{R}\\setminus\\{1\\}"),
+ "Keep domain/range second illustration");
+assert(!/data-mastery-write|data-mastery-credit|data-thpt-readiness/.test(src),"No unsafe learner mastery");
+const neighbors={
  "docs/thpt-preview/sgk/chuong-v/bai-12.md":"a2ea6c909cdd2317188b13c2bde22e7923dba3de",
  "docs/thpt-preview/sgk/chuong-v/bai-13.md":"cb5adaa7804902fece7dd4ec30575733efd4c9c1",
  "docs/thpt-preview/sgk/chuong-v/bai-14.md":"a23afab8015c83813f0c8cbe918efa93e58aa623",
@@ -43,6 +53,6 @@ const frozen={
  "docs/thpt-preview/sgk/chuong-vi/bai-17.md":"1a3481ee2020f48e924dae5e8b4f5779b3a2d88b",
  "docs/thpt-preview/sgk/chuong-vi/bai-18.md":"91d22f1af8814ed639ada3ee1c9dae2e9501c4c0"
 };
-for(const [p,sha] of Object.entries(frozen))
- assert.equal(blob(fs.readFileSync(path.join(root,p))),sha,"Out-of-scope frozen source drift "+p);
-console.log("PASS B15 P2 Delta A/B: two-hunk SHA-reconstruction, Golden stylesheet, 5 First Try/HELP/Đối chiếu and 6 adjacent approved source blobs.");
+for(const [p,sha]of Object.entries(neighbors))
+ assert.equal(blob(fs.readFileSync(path.join(root,p))),sha,"Out-of-scope frozen source "+p);
+console.log("PASS B15 screenshot R02 source: 3 SHA-linked receipts, 5 fluent Discovery topics, 5 TRY/HELP/Đối chiếu, original SVG/CSS and six neighboring sources.");
