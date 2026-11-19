@@ -22,14 +22,14 @@ const sha1=data=>{
 };
 const get=p=>fs.readFileSync(path.join(root,p),"utf8");
 const heading="    #### Đề bài\n\n";
-const marker="    <div hidden data-thpt-g10-example-boundary></div>\n\n";
+const marker="    <h4 hidden data-thpt-g10-example-boundary></h4>\n\n";
 const canon="prototypes/thpt/content-drafts/THPT_G10_CHV_B12_CANONICAL.md";
 const marker1="<!-- BEGIN_B12_KNOWLEDGE_MARKDOWN -->\n";
 const marker2="\n<!-- END_B12_KNOWLEDGE_MARKDOWN -->";
 const section=s=>s.split(marker1)[1]?.split(marker2)[0];
 const restorePrevious=(candidate,label)=>{
  const occurrences=candidate.split(marker).length-1;
- assert.equal(occurrences,4,label+": exactly four invisible solution-boundary markers");
+ assert.equal(occurrences,4,label+": exactly four invisible empty heading-boundary markers");
  return candidate.split(marker).join(heading);
 };
 const expectedDiff=(previous,label)=>{
@@ -53,7 +53,7 @@ for(const n of [12,13]){
  assert.equal((examples.match(/^\s{4}#### Đề bài$/gm)||[]).length,0,
   lesson+": no redundant 'Đề bài' subheading");
  assert.equal((examples.match(/data-thpt-g10-example-boundary/g)||[]).length,4,
-  lesson+": four invisible boundaries must preserve original source-authored solution panels");
+  lesson+": four invisible empty H4 boundaries must preserve original source-authored solution panels");
  assert.equal((examples.match(/class="thpt-g10-example-solution"/g)||[]).length,4,
   lesson+": preserve four original worked solutions");
  assert.equal((candidate.match(/data-thpt-first-try-id="/g)||[]).length,5,
