@@ -3,7 +3,7 @@
 PACKET_ID: THPT-TOPIC08-LIMITS-CONTINUITY-FULL-R01
 CONTENT_REVISION: R05
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic08-limits-continuity/Temp_TOPIC08_R05_AUTHORING_ONLY_CUSTODY_METADATA_20261115.md
-AUTHOR_METADATA_BLOB: 83b29689afd8bee2a5624fdd4bc18d1a9a421e64
+AUTHOR_METADATA_BLOB: c29e421cf05fcb668d874810651aaf1af8b06ffd
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
@@ -11,9 +11,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic08-limits-continuity/Temp_TOPIC08_R05_STUDENT_FIRST_58_CANONICAL_VISIBLE_20261115.md
-ACADEMIC_SOURCE_BLOB: 178ccc6f1b7c94c9db1146c626efc4dca319b149
+ACADEMIC_SOURCE_BLOB: b3d24c35675d4b39fb8d14c201b7d965d1183f44
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC08_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
-REVIEW_RECEIPT_BLOB: 40edc53c2c3c6e5b91ae33ebfe734f210ecf73fb
+REVIEW_RECEIPT_BLOB: 30f444c8ee367867372d8d4b6474cb686e79b89f
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC08_LIMITS_CONTINUITY_NEW22_PUBLIC_CANONICAL_R05_20261115.md
 PUBLIC_CANONICAL_BANK_BLOB: 2e93db80384de53e208248eaa0396a7f487302ac
 PUBLIC_ORIGINAL_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC08_LIMITS_CONTINUITY_ORIGINAL36_SGK_PLACEMENT_INDEX_R05_20261115.md
@@ -272,7 +272,7 @@ ONE `SLM-THPT-QUALITY-ONE v3.1.0` normative source `prototypes/thpt/THPT_UNIFIED
 
 ## 18/11/2026 — scoped Knowledge source correction; single V2 packet preserved
 
-- Current learner source Git blob `178ccc6f1b7c94c9db1146c626efc4dca319b149`; signed scoped Q18 `81dedff34a973b5a1db6737c16ff5d3020e613b6`; A1 source provenance and outcome custody `b4e108b12e15d483c73a5dba436f85e437a08788`.
+- Current learner source Git blob `b3d24c35675d4b39fb8d14c201b7d965d1183f44`; signed scoped Q18 `81dedff34a973b5a1db6737c16ff5d3020e613b6`; A1 source provenance and outcome custody `b4e108b12e15d483c73a5dba436f85e437a08788`.
 - This is `DELTA_C_ACADEMIC_MATERIAL`: explains epsilon sequence limits (O01), infinite geometric sum with |q|<1 (O05), definition of continuity with endpoint convention (O13), and zero-crossing IVT sufficient conditions (O17), plus one four-bullet recall. The earlier two real Knowledge paragraph edits O13/O14 absent from old signed R05 are explicitly independently checked in the new Q18 receipt. No original math item/condition/answer/rubric changes.
 - 58/58 canonical Practice source placements (36 SGK unchanged +22 Topic bank), 18 question-only public selfcheck, 3 original SVG and whole reveal structure remain source-identical. Historic R05 numeric author 159/159 PASS is still only on original Git source snapshot; current assertions scope is exact changed Knowledge. No independent NotebookLM full Topic PASS claimed, no MASTER/RD1/RELEASE/owner-website approval.
 
@@ -310,3 +310,6 @@ R01 original SGK source/reviewer and R03/R04 learner historical snapshots remain
 
 - Draft AUTHORING only, no merge/deploy or runtime topic ID. RELEASE separately controls exact HEAD intake, AP1–AP5/R1–R5, MathJax & SVG & responsive, Final Submit hidden answers/hints/AI/correctness, private custody/no Mastery, P1/P2 real device and owner release authority.
 - Two proposed labs are SPEC_ONLY; no claim of running interaction. This V2 handoff expresses CONTENT_READY of source, NOT RELEASE_READY.
+
+
+**19/11 owner ΔA:** 14 typed mathematical labels, formulas and original examples unchanged. Exact Q18/A1/source relocked; CONTENT_READY retained.
