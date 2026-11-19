@@ -13,6 +13,23 @@ const RECEIPT=/^prototypes\/thpt\/ux795\/[A-Za-z0-9_.-]+\.md$/;
 const SOURCE_TEST=/^scripts\/(?:test-(?:g10-|thpt-g10-|thpt-q18-g10-|ux795-g10-)[A-Za-z0-9_.-]+|thpt-q18-g10-source-receipt)\.cjs$/;
 const FIGURE=/^docs\/assets\/images\/thpt\/[A-Za-z0-9_.-]+\.(?:svg|png|jpg|webp)$/i;
 
+// Workflow-only release-routing repairs are CI metadata, not a reason to run
+// hundreds of already-unchanged lessons. The scoped B14 browser smoke and
+// deploy-scope safety fixtures still run; combined site+workflow edits stay FULL.
+const CI_ROUTING_ONLY=new Set([
+ ".github/workflows/deploy.yml",
+ ".github/workflows/g10-chiv-golden-qa.yml",
+ ".github/workflows/g10-chv-golden-preview-qa.yml",
+ ".github/workflows/g10-chvi-s1-editorial-golden-qa.yml",
+ ".github/workflows/g10-chvii-s1-golden-qa.yml",
+ ".github/workflows/ux795-g10-draft-render-qa.yml",
+ ".github/workflows/thpt-sgk-canonical-cleanup-qa.yml",
+ ".github/workflows/thpt-scoped-release-qa.yml",
+ ".github/workflows/thpt-r4-preview-quality.yml",
+ ".github/workflows/thpt-deploy-scope-safety-qa.yml",
+ ".github/workflows/qa-pr.yml",
+ "scripts/test-thpt-release-impact.cjs"
+]);
 const B16_LESSON="docs/thpt-preview/sgk/chuong-vi/bai-16.md";
 const B16_ALLOWED=new Set([
  "docs/thpt-preview/sgk/chuong-vi/bai-16.md",
@@ -59,6 +76,8 @@ function classify(paths,{manual=false}={}){
  if(!files.length)return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"EMPTY_DIFF"};
  if(files.some(x=>x.includes("..")||x.includes("\\")||x.startsWith("/")))
   return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"UNSAFE_PATH"};
+ if(files.every(x=>CI_ROUTING_ONLY.has(x)))
+  return {impact:"CI_ROUTING_ONLY",full_suite:"false",changed_lessons:"",reason:"ONLY_EXACT_CI_ROUTING_PATHS"};
  if(files.includes(B16_LESSON)&&files.every(x=>B16_ALLOWED.has(x))&&
    (!files.includes("docs/assets/javascripts/thpt-r4-preview.js")||b16RuntimeIsIsolated()))
   return {impact:"SCOPED_G10_B16",full_suite:"false",changed_lessons:B16_LESSON,
@@ -98,6 +117,14 @@ function selfTest(){
  assert.equal(classify(["docs/thpt-preview/sgk/lop-11/chuong-i.md",
   "docs/thpt-preview/sgk/lop-11/chuong-i/tu-kiem-tra-chuong.md"]).full_suite,"false");
  assert.equal(classify(["AGENTS.md"]).impact,"METADATA");
+ assert.equal(classify([".github/workflows/deploy.yml",
+  ".github/workflows/ux795-g10-draft-render-qa.yml",
+  "scripts/test-thpt-release-impact.cjs"]).impact,"CI_ROUTING_ONLY");
+ assert.equal(classify([fixture,".github/workflows/deploy.yml"]).full_suite,"true",
+  "site plus workflow never hides a real site risk");
+ assert.equal(classify([".github/workflows/deploy.yml","mkdocs.yml"]).full_suite,"true",
+  "CI routing and actual site configuration require full analysis");
+
  for(const unsafe of [
   [],[fixture,"mkdocs.yml"],[fixture,"docs/assets/javascripts/thpt-golden-runtime-v1.js"],
   [fixture,"docs/assets/stylesheets/thpt-r4-preview.css"],[fixture,"docs/thpt-preview/sgk/index.md"],
