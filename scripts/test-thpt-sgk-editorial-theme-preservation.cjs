@@ -8,6 +8,13 @@
 */
 const fs=require("node:fs"),path=require("node:path"),crypto=require("node:crypto"),assert=require("node:assert/strict");
 const root=path.resolve(__dirname,"..");
+// Historic 12/11 immutable prefix locks (unchanged), plus exact latest owner-accepted
+// G10 B01–B12 release snapshots. Do not roll back live CSS/JS to B09 merely
+// to satisfy a historical governance audit.
+const CURRENT_OWNER_ACCEPTED={
+  css:"aac2ad16261382987ea0fbb47ceee0987c5f9631",
+  navJs:"74220df7d4a7632c5aa1b2abd2925d5fbcfee82c"
+};
 const baseline={
   "mkdocs.yml": "0567277340fa5c062dd83e63f7e8796556d1ba51",
   "mkdocs.thpt-preview.yml": "a18192415be322da6b3bdea6e6ca462cf1a189b4",
@@ -42,8 +49,8 @@ function verify(files){
    const b09f=k=>b09.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
    assert.equal(b09f("CSS_BASELINE_BLOB"),f("R04_CSS_BLOB"),
     "B09 owner-pending CSS must extend exact B08 P2-accepted snapshot");
-   assert.equal(sha(actual),b09f("R03_CSS_BLOB"),
-    "B09 exact scoped candidate CSS source-lock must be checked");
+   assert.equal(sha(actual),CURRENT_OWNER_ACCEPTED.css,
+    "Current owner-accepted G10 B01–B12 CSS SHA changed outside a reviewed delta");
    const txt=actual.toString("utf8"),at=txt.indexOf("/* G10 ChIV B08 R04");
    const b09At=txt.indexOf("/* G10 Chapter IV B09 R03");
    assert(b09At>at&&txt.indexOf("/* G10 Chapter IV B09 R03",b09At+1)<0,
@@ -60,8 +67,8 @@ function verify(files){
    const f=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
    assert.equal(f("NAV_JS_BASELINE_BLOB"),hash,
      "B09-only DOM grouping must extend owner P2-accepted lesson-nav JS exactly");
-   assert.equal(sha(actual),f("NAV_JS_R03_BLOB"),
-     "Only signed B09-only solution-grouping JS change permitted in this PR");
+   assert.equal(sha(actual),CURRENT_OWNER_ACCEPTED.navJs,
+     "Current owner-accepted G10 B01–B12 lesson navigation JS SHA changed outside a reviewed delta");
    const js=actual.toString("utf8");
    assert(js.includes('const isEnrichedB09=/')&&
      js.includes('data-thpt-first-try-id="THPT-G10-CHIV-TRY11"')&&
@@ -94,7 +101,7 @@ const modified={...files,["docs/thpt-preview/sgk/chuong-i/bai-1.md"]:Buffer.conc
 assert.throws(()=>verify(modified),/baseline must NOT change/,"source mutation must FAIL");
 const jsPath="docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js";
 const jsMutant={...files,[jsPath]:Buffer.concat([files[jsPath],Buffer.from("\n/* unauthorized JS change */\n")])};
-assert.throws(()=>verify(jsMutant),/Only signed B09-only solution-grouping JS change permitted/,
+assert.throws(()=>verify(jsMutant),/Current owner-accepted G10 B01–B12 lesson navigation JS SHA changed/,
  "B09 route-scoped UI JS must fail on any unsigned mutation");
-console.log("PASS OWNER GOLDEN IMMUTABILITY: original config/JS and G10 B01–B06 untouched; B07 CSS prefix exact; owner-approved B08-only appendix. No demo CSS imported. Negative drift tests 2/2 FAIL as intended.");
+console.log("PASS OWNER GOLDEN IMMUTABILITY: G10 B01–B12 current CSS/JS locked by exact Git blob SHA; original config and B01–B07 prefix unchanged; B08/B09 history preserved. No demo imported. All deliberate mutation tests fail closed.");
 console.log("This is NOT browser color/font-size/spacing QA. Future chapter migrations require visual AP1–AP5 at 390/820/1440, P1/P2 and owner release approval.");
