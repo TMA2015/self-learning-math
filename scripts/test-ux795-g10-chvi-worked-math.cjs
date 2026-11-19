@@ -35,7 +35,7 @@ check(16,"vertex/roots",["f(x)=(x-1)^2-4","I(1;-4)","(3;0)"],()=>{
  const f=x=>(x-1)**2-4;
  return f(1)===-4&&f(-1)===0&&f(3)===0&&[-2,0,1,3,7].every(x=>f(x)>=-4);
 });
-check(16,"S1 quadratic value table and symmetric point pairs",["Bảng giá trị giúp em kiểm tra","f(x)=x^2-4x+3","<td>3</td><td>0</td><td>−1</td><td>0</td><td>3</td>"],()=>{
+check(16,"S1 quadratic value table and symmetric point pairs",["f(x)=x^2-4x+3","<td>3</td><td>0</td><td>−1</td><td>0</td><td>3</td>","x=0,4","x=1,3"],()=>{
  const f=x=>x*x-4*x+3;
  const ys=[0,1,2,3,4].map(f);
  return JSON.stringify(ys)===JSON.stringify([3,0,-1,0,3])&&f(0)===f(4)&&f(1)===f(3)&&f(2)===-1;
