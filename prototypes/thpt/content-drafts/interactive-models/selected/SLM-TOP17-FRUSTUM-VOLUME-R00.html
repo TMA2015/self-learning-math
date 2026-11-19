@@ -32,7 +32,7 @@ canvas,svg{background:var(--slm-canvas)!important;border-color:var(--slm-border)
 .output,.result,.answer,.stats,.field{background:var(--slm-canvas)!important}
 </style></head><body><main>
 <h1>CĐ17 · Từ lăng trụ đến chóp và chóp cụt</h1>
-<p class="note">Giữ nguyên diện tích đáy lớn và chiều cao, thay đổi diện tích đáy nhỏ. Khi đáy nhỏ co về một điểm, chóp cụt tiến về chóp; khi hai đáy bằng nhau, nó tiến về lăng trụ.</p>
+<p class="note">Giữ nguyên diện tích đáy lớn và chiều cao, thay đổi diện tích đáy nhỏ. Khi k=0, khối đúng là hình chóp; khi k=1, hai đáy bằng nhau và khối là lăng trụ. Ở giữa hai giới hạn là chóp cụt.</p>
 <div class="layout">
 <section>
 <label for="a">Cạnh đáy lớn a: <output id="av">6 cm</output></label><input id="a" type="range" min="2" max="10" value="6" step="1">
@@ -62,8 +62,8 @@ function poly(id,arr){el(id).setAttribute("points",arr.map(function(p){return Ma
 function update(){var A=+a.value,H=+h.value,K=+k.value,S=A*A,S2=S*K*K,mid=Math.sqrt(S*S2),vp=S*H,vpy=vp/3,vf=H*(S+S2+mid)/3;
 el("av").textContent=fmt(A)+" cm";el("hv").textContent=fmt(H)+" cm";el("kv").textContent=fmt(K);
 el("prism").textContent=fmt(vp)+" cm³";el("pyramid").textContent=fmt(vpy)+" cm³";el("frustum").textContent=fmt(vf)+" cm³";
-el("proof").textContent="S="+fmt(S)+" cm², S′="+fmt(S2)+" cm², √(SS′)="+fmt(mid)+" cm²; V="+fmt(H)+"("+fmt(S)+"+"+fmt(S2)+"+"+fmt(mid)+")/3 = "+fmt(vf)+" cm³.";
-el("reason").textContent=K===0?"k=0: chóp cụt tiến về chóp, V=Sh/3.":K===1?"k=1: hai đáy bằng nhau, V=Sh.":"Hai đáy hình vuông đồng dạng, song song; h luôn là khoảng cách vuông góc.";
+el("proof").textContent="S="+fmt(S)+" cm², S′="+fmt(S2)+" cm², √(SS′)="+fmt(mid)+" cm²; V="+fmt(H)+"("+fmt(S)+"+"+fmt(S2)+"+"+fmt(mid)+")/3 = "+fmt(vf)+" cm³. Vì S′=k²S và √(SS′)=kS (0≤k≤1), nên V=Sh(1+k+k²)/3 = "+fmt((1+K+K*K)/3*100)+"% thể tích lăng trụ cùng S,h.";
+el("reason").textContent=K===0?"k=0: chính là hình chóp, V=Sh/3.":K===1?"k=1: chính là lăng trụ, V=Sh.":"Hai đáy hình vuông đồng dạng, song song; h là khoảng cách vuông góc. Giữ S,h cố định, V tăng khi k tăng từ 0 đến 1.";
 var x=55+A*8,u=x*K,yt=164-H*8;
 var b=[[180-x/2,205],[180+x/2,205],[205+x/2,178],[205-x/2,178]],t=[[180-u/2,yt+24],[180+u/2,yt+24],[180+25*K+u/2,yt+24-28*K],[180+25*K-u/2,yt+24-28*K]];
 poly("base",b);poly("front",[b[0],b[1],t[1],t[0]]);poly("right",[b[1],b[2],t[2],t[1]]);poly("top",t);
