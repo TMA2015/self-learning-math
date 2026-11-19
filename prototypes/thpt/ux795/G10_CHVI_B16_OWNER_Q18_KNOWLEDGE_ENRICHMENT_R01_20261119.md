@@ -7,7 +7,7 @@
 **S1_REFERENCE:** Toán 10 KNTT tập 2, Bài 16 *Hàm số bậc hai*, printed 11–18, PDF 12–19 per historical S1 receipt `G10_CHVI_B15_B18_S1_Q18_EDITORIAL_RECEIPT_20261113.md`; historical scan not directly reopened or newly hashed here
 **BASE_MAIN_COMMIT:** `400e4820fe37c12a6db151cdcb094a79e31f7376`
 **BASELINE_PUBLISHED_B16_SOURCE_BLOB:** `4ddf9c449f92a9f48bace5a3f9b84186bf33af20`
-**CANDIDATE_B16_SOURCE_BLOB:** `53302f1370e24ab014fca57f0d4c58bcc80b8fd6`
+**CANDIDATE_B16_SOURCE_BLOB:** `3d08b7abea421c8850e41afa0519fade05b2b700`
 **PREVIOUS_OWNER_P2_GOLDEN_CSS_BLOB:** `4af85dd38d02ed55b29daa6713bfbc892f0d7078`
 **CANDIDATE_SCOPED_GOLDEN_CSS_BLOB:** `14001f525b1825557493f439a1f0555e9614185f`
 **VERIFICATION_MODE:** `Q18_OWNER_SELF_VERIFIED_ENRICHMENT_IN_PROGRESS`, no independent NotebookLM PASS
@@ -35,3 +35,7 @@
 **Source and rubric boundaries:** Original Q15 canonical First Try/HELP placement IDs and original answer bodies must be verified byte-exact by existing source comparators; no held-out item reuse or Mastery changes. Existing 4 worked-example sections, 2 SVG/figures and original Core/Written remain. No user-facing extra fifth tab or a new Golden component.
 
 **OPEN GATES / BLOCKERS:** `B16_DRAFT / EXACT_HEAD_QA_PENDING / BROWSER_390_820_1440_PENDING / OWNER_P2_NOT_REQUESTED / NOT_MERGED / NOT_DEPLOYED`. The B16 source/CSS SHA changes require updating the existing Q18 source router and scoped CSS parity tests without weakening B01–B15 immutable receipts, then QA math/figure/MathJax, AP1–AP5, Q15/Q16 and appropriate shared-CSS regression. Do not call this CONTENT_READY/P1/P2 or publish without gate completion and separate release authorization.
+
+## Owner follow-up: Discovery fluency and labels (19/11/2026)
+
+The owner explicitly requested normal flowing explanations without a pseudo-method heading and with the sole learner action labeled **Vận dụng**. Accordingly, B16 Discovery now has zero `Vì sao chọn phương pháp này?` labels and five `Vận dụng.` prompts (no `Em vận dụng`), without changing the five canonical IDs, answers, maths or conditions. Original real-domain notation `\\mathbb{R}` is preserved in the formal Golden concept card. This updates **only** the SHA-locked candidate source in the same in-progress Delta C receipt; prior baseline and CSS fields remain unchanged. Independent PED review still pending; not a reviewer PASS.
