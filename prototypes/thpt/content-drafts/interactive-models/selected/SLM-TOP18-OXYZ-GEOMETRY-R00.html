@@ -38,6 +38,10 @@ button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visi
 canvas,svg{background:var(--slm-canvas)!important;border-color:var(--slm-border)!important}
 .pane,article,.field,.box,.card,section{border-color:var(--slm-border)!important}
 .output,.result,.answer,.stats,.field{background:var(--slm-canvas)!important}
+.model-check{margin-top:10px;border:1px solid #c7dfe9;border-radius:10px;padding:10px 12px;background:#fbfdff}
+.model-check summary{cursor:pointer;font-weight:700;color:#155d80;min-height:28px}
+.model-check summary:focus-visible{outline:3px solid #e9922a;outline-offset:3px}
+.model-check .output{margin-top:10px}
 </style>
 </head>
 <body>
@@ -67,7 +71,8 @@ canvas,svg{background:var(--slm-canvas)!important;border-color:var(--slm-border)
 <text id="label-h" x="0" y="0" fill="#9c5d11" font-weight="700" font-size="14">H</text>
 <text id="label-m" x="0" y="0" fill="#18578e" font-weight="700" font-size="14">M</text>
 </svg>
-<div class="output" id="point-result" aria-live="polite">M=(2;1;3), H=(2;1;0), MH=3 và OM=√14.</div>
+<p class="foot"><strong>Tự thử:</strong> Khi chỉ đổi z, H có di chuyển không? Nếu z âm, MH có bằng z không? Hãy dự đoán trước khi đối chiếu.</p>
+<details class="model-check" id="xyz-check"><summary>Đối chiếu tọa độ và độ dài</summary><div class="output" id="point-result" aria-live="polite">M=(2;1;3), H=(2;1;0), MH=3 và OM=√14.</div></details>
 <p class="foot">Sơ đồ trục chiếu 3D xuống mặt giấy: không dùng để đo độ dài thật. Nếu z=0 thì M=H; độ dài MH bằng |z|, không phải luôn bằng z.</p>
 </article>
 <article>
@@ -81,13 +86,15 @@ canvas,svg{background:var(--slm-canvas)!important;border-color:var(--slm-border)
 <circle id="sphere-circle" cx="200" cy="156" r="100" fill="#eff6ff" stroke="#2873b9" stroke-width="3"/>
 <path id="plane-line" stroke="#a26c36" stroke-width="3" fill="none"/>
 <path id="section-chord" stroke="#21816b" stroke-width="6" stroke-linecap="round" fill="none"/>
+<circle id="contact-dot" cx="200" cy="60" r="5.5" fill="#21816b" stroke="#fff" stroke-width="1.5" visibility="hidden"/>
 <circle id="center-i" cx="200" cy="156" r="5" fill="#155b9e"/>
 <text x="209" y="171" fill="#155b9e" font-size="14" font-weight="700">I</text>
 <path id="normal-segment" stroke="#bc5932" stroke-width="2" stroke-dasharray="5 4" fill="none"/>
 <text id="plane-label" x="314" y="156" fill="#8b5925" font-size="14">(P)</text>
 <text id="radius-label" x="209" y="74" fill="#24669f" font-size="13">R</text>
 </svg>
-<div class="output" id="sphere-result" role="status" aria-live="polite">d=3&lt;R=5: thiết diện là đường tròn bán kính √(25−9)=4.</div>
+<p class="foot"><strong>Tự thử:</strong> Khi d&lt;R, d=R hoặc d&gt;R, hãy đoán giao là đường tròn, một điểm hay rỗng. Quan sát tiếp điểm màu xanh lá tại biên d=R.</p>
+<details class="model-check" id="sphere-check"><summary>Đối chiếu loại giao và bán kính</summary><div class="output" id="sphere-result" role="status" aria-live="polite">d=3&lt;R=5: thiết diện là đường tròn bán kính √(25−9)=4.</div></details>
 <p class="foot">Đây là <strong>mặt cắt kinh tuyến 2D</strong> của hình cầu, không phải ảnh 3D nguyên vẹn. Đoạn màu xanh lá là thiết diện nhìn từ cạnh; bán kính đường tròn giao thực sự được tính bằng Pitago.</p>
 </article>
 </div>
@@ -125,19 +132,21 @@ function renderSphere(){
  path("plane-line","M 27,"+py+" L 373,"+py);
  path("normal-segment","M "+cx+","+cy+" L "+cx+","+py);
  if(d<R){path("section-chord","M "+(cx+r*scale)+","+py+" L "+(cx-r*scale)+","+py);}
- else if(d===R){path("section-chord","M "+cx+","+py+" L "+cx+","+py);}
+ else if(d===R){path("section-chord","");}
  else{path("section-chord","");}
+ $("contact-dot").setAttribute("cy",String(py));
+ $("contact-dot").setAttribute("visibility",d===R?"visible":"hidden");
  $("plane-label").setAttribute("y",String(py-8));$("radius-label").textContent="R="+fmt(R);
  var kind,description;
  if(d<R){kind="Cắt theo đường tròn";description="d="+fmt(d)+" < R="+fmt(R)+": "+kind+", bán kính r=√("+fmt(R*R)+"−"+fmt(d*d)+") = "+fmt(r)+".";}
- else if(d===R){kind="Tiếp xúc tại một điểm";description="d=R="+fmt(R)+": "+kind+"; bán kính thiết diện bằng 0.";}
+ else if(d===R){kind="Tiếp xúc tại một điểm";description="d=R="+fmt(R)+": "+kind+"; chỉ có một tiếp điểm, không có đường tròn thiết diện bán kính dương.";}
  else{kind="Không có điểm chung";description="d="+fmt(d)+" > R="+fmt(R)+": "+kind+"; không tính √(R²−d²) trong số thực.";}
  $("sphere-result").textContent=description;
  $("spdesc").textContent="Mặt cầu bán kính "+fmt(R)+", khoảng cách đến mặt "+fmt(d)+", "+kind+(d<R?", bán kính giao "+fmt(r):"")+". Đây là tiết diện kinh tuyến 2D.";
 }
-[x,y,z].forEach(function(control){control.addEventListener("input",renderXYZ);});
-[radius,distance].forEach(function(control){control.addEventListener("input",renderSphere);});
-$("reset").addEventListener("click",function(){x.value=2;y.value=1;z.value=3;radius.value=5;distance.value=3;renderXYZ();renderSphere();});
+[x,y,z].forEach(function(control){control.addEventListener("input",function(){$("xyz-check").open=false;renderXYZ();});});
+[radius,distance].forEach(function(control){control.addEventListener("input",function(){$("sphere-check").open=false;renderSphere();});});
+$("reset").addEventListener("click",function(){x.value=2;y.value=1;z.value=3;radius.value=5;distance.value=3;$("xyz-check").open=false;$("sphere-check").open=false;renderXYZ();renderSphere();});
 renderXYZ();renderSphere();
 })();
 </script>
