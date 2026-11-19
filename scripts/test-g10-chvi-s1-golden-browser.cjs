@@ -70,11 +70,11 @@ const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi t
       const promptLabels=(await blocks.nth(0).locator("strong").allInnerTexts()).map(s=>s.trim());
       assert.equal(promptLabels.filter(s=>s==="Vận dụng.").length,5,
        where+" all five learner-visible prompts must be exactly Vận dụng.");
-      assert.equal(promptLabels.filter(s=>/^(?:Em\\s+vận\\s+dụng|Em\\s+tự\\s+thử|Tự\\s+thử)\\.?$/iu.test(s)).length,0,
+      assert.equal(promptLabels.filter(s=>/^(?:Em\s+vận\s+dụng|Em\s+tự\s+thử|Tự\s+thử)\.?$/iu.test(s)).length,0,
        where+" obsolete Em vận dụng/Em tự thử/Tự thử learner headings forbidden");
-      assert(!/\\bEm\\s+(?:vận\\s+dụng|tự\\s+thử)\\b/iu.test(ordered),
+      assert(!/\bEm\s+(?:vận\s+dụng|tự\s+thử)\b/iu.test(ordered),
        where+" no Em vận dụng or Em tự thử anywhere in learner-facing Discovery");
-      assert.equal((ordered.match(/Vận dụng\\./g)||[]).length,5,
+      assert.equal((ordered.match(/Vận dụng\./g)||[]).length,5,
        where+" exactly five visible Vận dụng prompts, not substring-only pseudo-pass");
       const mistakes=await blocks.nth(3).locator("details.tip > summary").allInnerTexts();
       assert.equal(mistakes.length,5,where+" five source-aligned D6 errors");
