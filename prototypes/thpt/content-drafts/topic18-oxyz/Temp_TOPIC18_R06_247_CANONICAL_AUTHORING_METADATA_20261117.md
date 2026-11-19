@@ -1,3 +1,11 @@
+<!-- TOP18_S1_B06_DOT_PRODUCT_PROPERTIES_20261120 -->
+## S1 B6 source closure: TOP18-O05 formal dot-product properties
+
+- Current learner Git `8a580dc99b6a64b57cefc0c15fb7f9defb7acd48`, preceding source `6d58c3652c3d51fdeeea3ac47f9a3b798502f071`; exact original G12 T1 B6 p55–56: dot product commutative, distributive, scalar-multiplication formulas and zero-vector vs cosine denominator.
+- Current scoped author Q18 Git `7fb04ee1ccc804259a50451cb204fb3b61d4e440`, 5/5 tests including four vector scenarios and zero; no changes to 247 canonical items or data protection.
+- This follows same-day TOP18-O03 box-rule completeness repair; both academic gaps now explicitly taught in one original source. `CONTENT_READY` retained under owner and scoped Q18, website RELEASE pending, full 22-topic audit not yet independent PASS.
+
+---
 <!-- TOP18_G12_S1_B06_O03_FORMAL_RULE_20261120 -->
 ## S1 12/T1 B06 formal rule completeness (TOP18-O03)
 
@@ -20,8 +28,8 @@ CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: 6d58c3652c3d51fdeeea3ac47f9a3b798502f071
-REVIEW_RECEIPT_BLOB: f80c5711b5a98c9262bf96a3d49f5f823dca8866
+ACADEMIC_SOURCE_BLOB: 8a580dc99b6a64b57cefc0c15fb7f9defb7acd48
+REVIEW_RECEIPT_BLOB: 7fb04ee1ccc804259a50451cb204fb3b61d4e440
 BASELINE_R04_SIGNED_SOURCE_BLOB: 41daf40a3b639a3ef35e129099525137a05b1848
 BASELINE_R04_SIGNED_Q18_RECEIPT_BLOB: 5262fd454346801b0b5eb4f3dc407bc99d3530
 
