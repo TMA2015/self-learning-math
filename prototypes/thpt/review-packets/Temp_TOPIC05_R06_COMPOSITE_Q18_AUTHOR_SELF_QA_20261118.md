@@ -1,3 +1,13 @@
+<!-- TOP05_S1_G10_B16_REQUIRED_QUADRATIC_DEFINITION_TABLE_GRAPH_DELTA_C_20261120 -->
+## 20/11/2026 · S1 G10 Tập 2 Bài 16 required concept gap — Delta C affected
+
+**Kiểm nguồn trực tiếp:** SGK KNTT Toán 10 tập 2 Bài 16 trang in 11–14, mục yêu cầu: nhận biết hàm số bậc hai; lập bảng giá trị; vẽ parabol; giải thích đỉnh, trục đối xứng, chiều mở và tính chất qua đồ thị. Source reader: https://toanaz.com/wp-content/uploads/2026/10/SGK-Toan-10-Tap-2-Chuong-trinh-moi.pdf. Current canonical knowledge previously had TOP05-M06 chỉ hoàn phương và cực trị trên miền, **thiếu định nghĩa chính thức y=ax²+bx+c, a≠0; thiếu bảng giá trị vẽ parabol; thiếu quy tắc chiều mở/biến thiên cho cả a>0 và a<0**.
+
+**Đã sửa tại bản thảo duy nhất:** source `e5b1888794a06e0de2e84a696fa11f95c9121472` → `9e9965e8bf5f1053a1c50820bfa7ac0800801dcd`, giữ nguyên đường dẫn và `LESSON_ID: TOP05-M06; OUTCOME_ID: TOP05-O06`. Chèn mạch giải thích bản chất trước công thức, nhãn ĐỊNH NGHĨA và TÍNH CHẤT, bảng x=-1,0,1,2,3 của f(x)=x²−2x, hướng dẫn chấm/nối đường cong đối xứng và đọc đỉnh/chiều mở; quy tắc biến thiên của cả a>0 và a<0 với miền thực và ràng buộc D. Sử dụng \(h=-b/(2a), k=f(h)=-\Delta/(4a)\).
+
+**Q18 AUTHOR_SELF_VERIFIED_AFFECTED_DELTA_C:** 9/9 kiểm tra thay đổi đạt: bảng 3,0,−1,0,3; đỉnh (1,−1); Δ=4; hai hướng a; đối chiếu toàn bộ Luyện tập/Tự kiểm tra byte-identical; ID canonical giống hệt; không thay ví dụ chính thức và cân bằng MathJax. Không tự tuyên bố đã hoàn tất mọi outcome độc lập của cả Topic từ thay đổi này; nếu kiểm toán phát hiện bài tự luyện đồ thị thiếu độ sâu, xử lý Delta C riêng. **Không có independent NotebookLM reviewer PASS mới, không website QA/merge/deploy.** Authoring giữ CONTENT_READY theo source-verified owner permission, outcome bổ sung có chứng cứ S1.
+
+---
 # CĐ05 R06 · composite Q18 AUTHOR_SELF_VERIFIED — current source, 18/11/2026
 
 AUTHOR_SELF_QA_RECEIPT
@@ -6,7 +16,7 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: e5b1888794a06e0de2e84a696fa11f95c9121472
+SOURCE_BLOB: 9e9965e8bf5f1053a1c50820bfa7ac0800801dcd
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC05_GRAPH_TRANSFORMS_NEW38_PUBLIC_CANONICAL_R01_20261112.md
 PUBLIC_CANONICAL_BANK_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39
 BASELINE_R05_SOURCE_BLOB: 3052d5f7090f74af2eca7739047c59ed76ccda63
@@ -64,7 +74,7 @@ RELEASE_AUTHORIZATION: NO
 ## AUTHOR_SIGNOFF:
 
 AUTHOR_SIGNOFF: TOP05_R06_17_OUTCOME_38_BANK_17_D6_AUTHOR_SELF_QA_20261118
-VERDICT: AUTHOR_SELF_VERIFIED_ON_SOURCE_SHA_e5b1888794a06e0de2e84a696fa11f95c9121472
+VERDICT: AUTHOR_SELF_VERIFIED_ON_SOURCE_SHA_9e9965e8bf5f1053a1c50820bfa7ac0800801dcd
 S1_RECEIPT: historical owner S1 G10/G11 scope evidence, no new page scan claimed
 OUTCOME_AUDIT: 17/17 Knowledge/FirstTry + 38 real canonical Practice/Written +17 question-only replays, source checked
 MATH_VERIFICATION: current R06 formal math/conditions and original current canonical QA matched above
@@ -75,4 +85,4 @@ RELEASE_AUTHORIZATION: NO
 
 
 <!-- TOP05_OWNER_ED_DELTA_A_20261119 -->
-Owner ΔA 19/11: 14 công thức/quy tắc đã diễn giải được thêm nhãn phân loại rõ theo bài; 3 khối đã có giữ nguyên; 4 dòng `Khám phá kiến thức` lặp đã lược. Baseline `44c3a3a0ffcdefa9a3c4eaf6ad1d4f78012541b4` → one active learner `e5b1888794a06e0de2e84a696fa11f95c9121472`. Kiểm reverse-diff: toàn bộ văn bản giải thích gốc, điều kiện, công thức, 17 Ví dụ/Đề/Lời giải, 17 Vận dụng/Đối chiếu, item IDs/rubrics/selfchecks/3 SVG byte-identical; chỉ nhãn/tiêu đề phụ khác. `DELTA_A_UI`, `CONTENT_READY` preserved; no new math, NotebookLM full rereview not required, no website changes.
+Owner ΔA 19/11: 14 công thức/quy tắc đã diễn giải được thêm nhãn phân loại rõ theo bài; 3 khối đã có giữ nguyên; 4 dòng `Khám phá kiến thức` lặp đã lược. Baseline `44c3a3a0ffcdefa9a3c4eaf6ad1d4f78012541b4` → one active learner `9e9965e8bf5f1053a1c50820bfa7ac0800801dcd`. Kiểm reverse-diff: toàn bộ văn bản giải thích gốc, điều kiện, công thức, 17 Ví dụ/Đề/Lời giải, 17 Vận dụng/Đối chiếu, item IDs/rubrics/selfchecks/3 SVG byte-identical; chỉ nhãn/tiêu đề phụ khác. `DELTA_A_UI`, `CONTENT_READY` preserved; no new math, NotebookLM full rereview not required, no website changes.
