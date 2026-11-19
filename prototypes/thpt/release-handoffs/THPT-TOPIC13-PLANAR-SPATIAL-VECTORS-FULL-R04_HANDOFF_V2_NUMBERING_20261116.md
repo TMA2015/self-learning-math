@@ -13,13 +13,13 @@ CATALOG_TOPIC_ID: CD13
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 2fe260f6da3f4eedec7d9b8c93d683915493cc1e
+ACADEMIC_SOURCE_BLOB: 4ad0c211c61f858cd9f7ccf9cc8bd9afb57ffa54
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 0da86e86df36c1e8548076fa50935912af57b991
+REVIEW_RECEIPT_BLOB: 0ed64f79a78d2e6fdb2c5d052e01189e32696067
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_A1_A7_BLOB: d7b7cb710ab3675a0d928c5d6d1ea53911977762
+AUTHOR_A1_A7_BLOB: 0996677a02b5a703cf23a7e345c959a3f98c128a
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: d7b7cb710ab3675a0d928c5d6d1ea53911977762
+AUTHOR_METADATA_BLOB: 0996677a02b5a703cf23a7e345c959a3f98c128a
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563
 G10_SGK_CROSS_PR_DEPENDENCY: 750
@@ -326,7 +326,7 @@ Source `593484fbe67b168fae677652db0ef3871bcf5695`; Q18 targeted affected receipt
 
 ## R07 current one-source Q18 / vector mathematical correction (18/11/2026)
 
-The **effective** and only learner source for this stable packet is `Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md`, Git blob `2fe260f6da3f4eedec7d9b8c93d683915493cc1e`. One active NEW20 bank `c74505ba59d047c19943c2309f5fd7c033ac9563` with 20 original stable item IDs; targeted W03 canonical `content_version=2` on the **same** source path (not a clone). Current single signed `AUTHOR_SELF_VERIFIED` Q18 composite `Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md` Git blob `0da86e86df36c1e8548076fa50935912af57b991` and A1–A7 metadata `d7b7cb710ab3675a0d928c5d6d1ea53911977762`. Prior R03/R04/R05/R06 strings/SHA values in the historical narrative above remain immutable historical custody only.
+The **effective** and only learner source for this stable packet is `Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md`, Git blob `4ad0c211c61f858cd9f7ccf9cc8bd9afb57ffa54`. One active NEW20 bank `c74505ba59d047c19943c2309f5fd7c033ac9563` with 20 original stable item IDs; targeted W03 canonical `content_version=2` on the **same** source path (not a clone). Current single signed `AUTHOR_SELF_VERIFIED` Q18 composite `Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md` Git blob `0ed64f79a78d2e6fdb2c5d052e01189e32696067` and A1–A7 metadata `0996677a02b5a703cf23a7e345c959a3f98c128a`. Prior R03/R04/R05/R06 strings/SHA values in the historical narrative above remain immutable historical custody only.
 
 **Affected mathematics/PED:** 15 Knowledge lines across O07/O08/O11/O14/O15 now distinguish coordinate **vectors** `(\overrightarrow{AB})` from scalar lengths `AB=|\overrightarrow{AB}|`. Three NEW20 questions plus W03 /7 rubric were corrected for vector notation at the only canonical bank and the learner display; W03 dot product is 9, AC' scalar length 13, cos=3/13 and 2+3+2=7 points, all unchanged numerically. All 52 original item IDs and 20 actual new bank stem projections checked; 16 public selfchecks retain exactly the same IDs, with six notation-only question-stem clarifications, no answer/reveal. Four SVG files/five placements and 68/68 disclosures unchanged. Q18 self-QA recomputes affected math with assumptions and source owner; `DELTA_C_ACADEMIC_MATERIAL` for meaningful rubric/vector distinctions, `NOTEBOOKLM_REREVIEW=NOT_REQUIRED_WITH_REASON` (effective owner Q18 v3). **Not** a new full independent NotebookLM reviewer PASS or proof of rendered browser MathJax.
 
@@ -335,6 +335,9 @@ Original G10 SGK source `96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9` has been read
 
 ## FINAL current V2 source/footer and optional-solution label custody · 18/11/2026
 
-The **same one** Topic13 student source on this AUTHORING Draft is now Git blob `2fe260f6da3f4eedec7d9b8c93d683915493cc1e`, with single NEW20 bank `c74505ba59d047c19943c2309f5fd7c033ac9563`, Q18 author composite `0da86e86df36c1e8548076fa50935912af57b991` and A1–A7 `d7b7cb710ab3675a0d928c5d6d1ea53911977762`. These four identities supersede the previous R07 pre-editorial snapshot mentioned historically above. #864 item 9/12 exact DELTA_A fix: 48 student Practice voluntary labels say `Lời giải`, four Written say `Lời giải và rubric`, 16 Vận dụng open `Đối chiếu`, and one verified SGK/SBT class/volume/chapter source line is at **the end**; **no changes** to mathematics, canonical IDs, W03 7-point rubric/data, six corrected Self Check question notations, SVG or protected Q16. Last edit source-self-verified; no forced NotebookLM.
+The **same one** Topic13 student source on this AUTHORING Draft is now Git blob `4ad0c211c61f858cd9f7ccf9cc8bd9afb57ffa54`, with single NEW20 bank `c74505ba59d047c19943c2309f5fd7c033ac9563`, Q18 author composite `0ed64f79a78d2e6fdb2c5d052e01189e32696067` and A1–A7 `0996677a02b5a703cf23a7e345c959a3f98c128a`. These four identities supersede the previous R07 pre-editorial snapshot mentioned historically above. #864 item 9/12 exact DELTA_A fix: 48 student Practice voluntary labels say `Lời giải`, four Written say `Lời giải và rubric`, 16 Vận dụng open `Đối chiếu`, and one verified SGK/SBT class/volume/chapter source line is at **the end**; **no changes** to mathematics, canonical IDs, W03 7-point rubric/data, six corrected Self Check question notations, SVG or protected Q16. Last edit source-self-verified; no forced NotebookLM.
 
 All other source-level A1–A7, item–outcome map, Q15/W03 content_version 2, no RD1/Mastery and original external G10 SGK source #750 combined RELEASE-HEAD dependency retained unchanged. Current ONE ready/REGISTER source lock and exact HEAD Topic V2 CI are checked separately. No site RELEASE/merge/deploy.
+
+
+**19/11 owner ΔA:** 13 existing formal vector captions classified; unchanged source mathematical content, Q18/A1/source relocked; CONTENT_READY preserved.
