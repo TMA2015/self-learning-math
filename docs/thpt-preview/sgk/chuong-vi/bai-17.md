@@ -162,9 +162,11 @@
     Khi \(\Delta>0\) có hai nghiệm \(x_1<x_2\), ta viết được \(f(x)=a(x-x_1)(x-x_2)\). **Ở ngoài** hai nghiệm, hai thừa số cùng dấu; **ở giữa**, chúng trái dấu. Vì thế, ngoài hai nghiệm tam thức cùng dấu với \(a\), giữa hai nghiệm trái dấu với \(a\). Trường hợp nghiệm kép thì \((x-x_0)^2\) không đổi dấu qua \(x_0\).
 
     Với \(\Delta<0\), dạng hoàn thành bình phương
+
     \[
     f(x)=a\left[\left(x+\frac{b}{2a}\right)^2-\frac{\Delta}{4a^2}\right]
     \]
+
     có biểu thức trong ngoặc vuông dương với mọi \(x\) vì \(-\Delta>0\). Điều này giải thích vì sao dấu \(f(x)\) luôn là dấu của \(a\), thay vì chỉ học mẹo.
 
     **Kiến thức cần nhớ.** Trước khi lập bảng dấu: kiểm \(a\ne0\), tính \(\Delta\), sắp hai nghiệm (nếu có) và đặt dấu \(0\) đúng tại nghiệm.
