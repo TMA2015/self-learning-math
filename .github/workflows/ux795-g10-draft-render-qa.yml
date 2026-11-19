@@ -1,34 +1,16 @@
 name: UX795 G10 Draft Render QA (no deploy)
+# The 27-lesson x 3-width browser census is NOT a lesson-change check.
+# Retain on shared navigation/theme or its own harness change, or manual dispatch.
+# Scoped QA owns single-lesson Markdown, independent figures and Q18 receipts.
 on:
   pull_request:
     paths:
-      - "docs/thpt-preview/sgk/chuong-*/bai-*.md"
       - "docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"
-      - "docs/assets/images/thpt/**"
+      - "docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js"
       - "scripts/test-ux795-g10-render-draft.cjs"
-      - "scripts/test-ux795-g10-numbering-monitor.cjs"
       - "scripts/test-ux795-g10-knowledge-browser.cjs"
-      - "scripts/test-ux795-g10-source-candidate-lock.cjs"
       - "scripts/test-ux795-g10-legacy-dual-source-audit.cjs"
-      - "scripts/test-ux795-g10-figure-math.cjs"
-      - "scripts/test-ux795-g10-chvi-worked-math.cjs"
-      - "scripts/test-ux795-g10-chvi-ped-mapping.cjs"
-      - "prototypes/thpt/ux795/UX795_G10_CHVI_PED_OUTCOME_MAPPING_R01_20261110.md"
-      - "prototypes/thpt/ux795/UX795_G10_CHVI_S1_PRINTED_PAGE_SCOPE_R01_20261110.md"
-      - "prototypes/thpt/ux795/UX795_G10_KNOWLEDGE_RELEASE_SOURCE_INTAKE_R01_20261110.md"
-      - "prototypes/thpt/ux795/UX795_G10_FIGURE_MATH_SELF_AUDIT_R01_20261110.md"
-      - "scripts/test-ux795-g10-postmerge-headings.cjs"
-      - "prototypes/thpt/ux795/G10_CHVI_B15_B18_EXAMPLE_UX_Q18_DELTA_RECEIPT_20261113.md"
-      - "prototypes/thpt/ux795/G10_CHVII_B19_B22_S1_Q18_GOLDEN_ENRICHMENT_RECEIPT_20261113.md"
-      - "scripts/test-thpt-chvi-math-block-render.cjs"
-      - "scripts/test-thpt-chvi-student-notes.cjs"
-      - "prototypes/thpt/ux795/G10_CHIII_B05_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md"
-      - "prototypes/thpt/ux795/G10_CHIII_B06_S1_OWNER_Q18_ENRICHMENT_DELTA_R01_20261116.md"
-      - "prototypes/thpt/ux795/G10_CHIII_B06_PED_REFERENCE_ANCHOR_R02_20261116.md"
-      - "prototypes/thpt/ux795/G10_CHIV_B08_S1_OWNER_Q18_ENRICHMENT_DELTA_R02_20261116.md"
-      - "prototypes/thpt/ux795/G10_CHIV_B08_MATHJAX_DISPLAY_DELTA_A_R03_20261117.md"
-      - ".github/workflows/ux795-g10-draft-render-qa.yml"
-
+  workflow_dispatch:
 permissions:
   contents: read
 

@@ -1,4 +1,6 @@
 name: G10 ChIV B07–B11 S1 editorial + Golden QA (Q18 self-verified, no deploy)
+# Legacy ChIV multi-lesson suite: shared runtime / its own test maintenance only.
+# Canonical lesson/source-receipt edits are covered by scoped SGK release QA.
 on:
   pull_request:
     paths:
@@ -6,12 +8,7 @@ on:
       - "docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"
       - "scripts/test-g10-chiv-golden-browser.cjs"
       - "scripts/test-g10-chiv-editorial-source.cjs"
-      - "scripts/thpt-q18-g10-source-receipt.cjs"
-      - "scripts/test-thpt-q18-release-test-router.cjs"
-      - "prototypes/thpt/ux795/G10_CHIV_B07_B11_SGK_S1_Q18_EDITORIAL_RECEIPT_20261112.md"
-      - "docs/thpt-preview/sgk/chuong-iv/bai-*.md"
-      - "scripts/test-g10-b01-b06-editorial-numbering-browser.cjs"
-      - ".github/workflows/g10-chiv-golden-qa.yml"
+  workflow_dispatch:
 permissions:
   contents: read
 jobs:

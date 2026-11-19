@@ -14,6 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       deploy: ${{ steps.scope.outputs.deploy }}
+      impact: ${{ steps.scope.outputs.impact }}
+      changed_lessons: ${{ steps.scope.outputs.changed_lessons }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -45,10 +47,16 @@ jobs:
             echo "UNKNOWN_CLASSIFICATION_HOLD: cannot skip or authorize deployment" >&2
             exit 1
           fi
+          # Narrow exact one-lesson source edits to a separate production lane.
+          # Unknown/mixed/shared diffs always stay on the original complete gate.
+          git diff --no-renames --name-only "$BEFORE_SHA" "$HEAD_SHA" > "$RUNNER_TEMP/main-push-scoped-paths.txt"
+          node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/main-push-scoped-paths.txt"
+          echo "QA impact (source only): $(cat "$RUNNER_TEMP/main-push-scoped-paths.txt" | tr '\n' ' ')" >> "$GITHUB_STEP_SUMMARY"
 
   deploy:
     needs: release-scope
-    if: needs.release-scope.outputs.deploy == 'true'
+    # The large inherited site-wide regression lane is for shared/unknown changes only.
+    if: ${{ needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact != 'SCOPED_LESSON' }}
     runs-on: ubuntu-latest
 
     steps:
@@ -321,4 +329,63 @@ jobs:
         run: node scripts/guard-w9-candidate-publication-r1.js --deploy
 
       - name: Deploy the verified combined build to existing GitHub Pages
+        run: ghp-import -n -p -f site
+
+  deploy-scoped-lesson:
+    name: Publish ONE source-locked SGK lesson after targeted Chromium/Q16 QA
+    needs: release-scope
+    if: ${{ needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact == 'SCOPED_LESSON' && needs.release-scope.outputs.changed_lessons != '' }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify source, Q18 receipt, original Q15 answers and Q16 boundary on exact push HEAD
+        env:
+          BEFORE_SHA: ${{ github.event.before }}
+          HEAD_SHA: ${{ github.sha }}
+          SCOPED_LESSONS: ${{ needs.release-scope.outputs.changed_lessons }}
+        run: |
+          node --check scripts/test-thpt-scoped-deploy-proof.cjs
+          node scripts/test-thpt-scoped-deploy-proof.cjs --self-test
+          node scripts/test-thpt-scoped-deploy-proof.cjs
+          node scripts/test-thpt-chvi-reviewed-formative.cjs
+          node scripts/test-thpt-g10-reviewed-selfcheck-data.cjs
+          node scripts/test-thpt-shared-item-placement.cjs
+      - name: Build the SAME single Pages website (build is not a global QA suite)
+        run: |
+          python -m pip install --disable-pip-version-check mkdocs-material
+          mkdocs build --strict
+          mkdocs build -f mkdocs.thpt-preview.yml --strict
+          node scripts/assemble-thpt-site.cjs
+      - name: Run real Chromium only on changed lesson at 390 / 820 / 1440
+        env:
+          SCOPED_LESSONS: ${{ needs.release-scope.outputs.changed_lessons }}
+          SCOPED_BASE_URL: http://127.0.0.1:8765
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install chromium
+          python -m http.server 8765 --bind 127.0.0.1 --directory site >/tmp/scoped-production-http.log 2>&1 &
+          python - <<'PY'
+          import time, urllib.request
+          for _ in range(50):
+              try:
+                  with urllib.request.urlopen('http://127.0.0.1:8765/',timeout=2) as r:
+                      if r.status==200: break
+              except Exception: time.sleep(.5)
+          else: raise SystemExit('Scoped site server did not start')
+          PY
+          node scripts/test-thpt-scoped-lesson-browser.cjs
+      - name: Guard assessment privacy and expected B17 built-route presentation
+        run: |
+          node scripts/test-thpt-chvi-math-block-render.cjs --built
+          node scripts/guard-w9-candidate-publication-r1.js --deploy
+      - name: Publish proven assembled site to existing GitHub Pages branch
         run: ghp-import -n -p -f site

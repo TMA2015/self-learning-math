@@ -1,17 +1,13 @@
 name: G10 ChV B12–B14 S1/Q18 editorial + Golden QA (no deploy)
+# Legacy ChV 9-browser suite: do not retrigger on single lesson or Q18 router update.
 on:
   pull_request:
     paths:
       - "docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js"
+      - "docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"
       - "scripts/test-g10-chv-b12-b14-golden-preview-browser.cjs"
-      - "docs/thpt-preview/sgk/chuong-v/bai-*.md"
-      - "docs/assets/images/thpt/G10_B14_BOXPLOT_S1_Q18_ENRICHMENT_20261113.svg"
-      - "prototypes/thpt/ux795/G10_CHV_B12_B14_S1_Q18_EDITORIAL_RECEIPT_20261113.md"
       - "scripts/test-g10-chv-editorial-source.cjs"
-      - "scripts/thpt-q18-g10-source-receipt.cjs"
-      - "scripts/test-thpt-g10-model-b-browser-helper.cjs"
-      - "scripts/test-thpt-g10-chv-full-r03-browser.cjs"
-      - ".github/workflows/g10-chv-golden-preview-qa.yml"
+  workflow_dispatch:
 permissions:
   contents: read
 jobs:

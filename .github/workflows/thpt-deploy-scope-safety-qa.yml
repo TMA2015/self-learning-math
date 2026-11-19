@@ -5,6 +5,8 @@ on:
     paths:
       - '.github/workflows/deploy.yml'
       - 'scripts/test-thpt-push-deploy-scope.cjs'
+      - 'scripts/test-thpt-scoped-deploy-proof.cjs'
+      - 'scripts/test-thpt-release-impact.cjs'
       - '.github/workflows/thpt-deploy-scope-safety-qa.yml'
 
 permissions:
@@ -20,6 +22,8 @@ jobs:
         run: |
           node --check scripts/test-thpt-push-deploy-scope.cjs
           node scripts/test-thpt-push-deploy-scope.cjs --self-test
+          node --check scripts/test-thpt-scoped-deploy-proof.cjs
+          node scripts/test-thpt-scoped-deploy-proof.cjs --self-test
       - name: Preserve full original deploy gate signatures
         run: |
           node - <<'NODE'
@@ -27,11 +31,34 @@ jobs:
           const w=fs.readFileSync('.github/workflows/deploy.yml','utf8');
           assert(/BEFORE_SHA:\s*\$\{\{\s*github\.event\.before\s*\}\}/.test(w),'Full main push base required');
           assert(/HEAD_SHA:\s*\$\{\{\s*github\.sha\s*\}\}/.test(w),'Full main push head required');
-          assert(w.includes("if: needs.release-scope.outputs.deploy == 'true'"),'No unscoped automatic publish');
+          const expr="$"+"{{";
+          const fullIf="if: "+expr+" needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact != 'SCOPED_LESSON' }}";
+          const scopedIf="if: "+expr+" needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact == 'SCOPED_LESSON' && needs.release-scope.outputs.changed_lessons != '' }}";
+          assert(w.includes(fullIf),'Original FULL release cannot execute on a scoped lesson');
+          assert(w.includes(scopedIf),'Scoped release needs explicit single-lesson classified impact');
+          assert(w.includes('impact: '+expr+' steps.scope.outputs.impact }}')&&
+            w.includes('changed_lessons: '+expr+' steps.scope.outputs.changed_lessons }}'),
+            'Scope classifier outputs required before any deploy branch');
+          const scoped=w.split('\n  deploy-scoped-lesson:\n')[1];
+          assert(scoped,'Dedicated scoped publish job must exist');
+          const full=w.split('\n  deploy:\n')[1]?.split('\n  deploy-scoped-lesson:\n')[0];
+          assert(full,'Original full deploy gate must remain available for shared changes');
+          for(const required of ['scripts/test-thpt-scoped-deploy-proof.cjs',
+             'scripts/test-thpt-scoped-lesson-browser.cjs',
+             'SCOPED_LESSONS: '+expr+' needs.release-scope.outputs.changed_lessons }}',
+             'node scripts/test-thpt-chvi-reviewed-formative.cjs',
+             'node scripts/test-thpt-g10-reviewed-selfcheck-data.cjs',
+             'node scripts/guard-w9-candidate-publication-r1.js --deploy',
+             'mkdocs build --strict',
+             'mkdocs build -f mkdocs.thpt-preview.yml --strict',
+             'node scripts/assemble-thpt-site.cjs',
+             'ghp-import -n -p -f site']){
+             assert(scoped.includes(required),'Scoped release gate removed: '+required);
+          }
           for(const s of ['scripts/test-thpt-release-queue.cjs','scripts/test-thpt-g10-chvi-full-r04-release.cjs',
             'scripts/test-thpt-g10-chiv-full-r04-release.cjs','scripts/test-thpt-g12-chvi-release-source.cjs',
             'node scripts/test-thpt-static-release.cjs','python check_roadmap_dependencies.py']){
-            assert(w.includes(s),'Original production regression guard removed: '+s);
+            assert(full.includes(s),'Original FULL production regression guard removed: '+s);
           }
           const queueStep=w.indexOf('Protect release-queue manifest and REGISTER even on metadata-only main pushes');
           const classificationStep=w.indexOf('Assert safe push-scope classifier and classify FULL main push');
@@ -42,7 +69,7 @@ jobs:
           assert(w.slice(v2Step,classificationStep).includes('node scripts/test-thpt-handoff-gate-v2.cjs'),'New V2 READY receipt SHA cannot be skipped');
 
           assert(!w.includes('continue-on-error:'),'No failures may be ignored');
-          console.log('PASS deploy safety: all original main release gate signatures present; full push diff and no bypass.');
+          console.log('PASS deploy safety: two mutually exclusive FULL vs SCOPED lanes, source/receipt + Q16/built-site guards, unchanged FULL regression signatures.');
           NODE
       - name: Evidence boundary
         run: |
