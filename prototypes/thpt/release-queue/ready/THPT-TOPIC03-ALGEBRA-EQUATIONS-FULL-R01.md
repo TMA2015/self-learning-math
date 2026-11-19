@@ -14,12 +14,12 @@ CURRENT_PR: #888 Draft chỉnh trực tiếp bản thảo của #820, no merge/d
 CATALOG_TOPIC_ID: CD03
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: c843613b88d106a18086d91ff7d0ada499398033
+ACADEMIC_SOURCE_BLOB: 41b070e06267a5486f00ff977e164c4198f387d4
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC03_R06_NUMBERING_DELTA_A_Q18_20261116.md (AUTHOR_SELF_VERIFIED, source corrected in place, no independent NotebookLM PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC03_R06_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: b8a9ddc851a1026af2d42d93ea5eb6c21cad6a13
+REVIEW_RECEIPT_BLOB: e65746363a6a4424e5c4e051e33e5742cd96857c
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC03-ALGEBRA-EQUATIONS-FULL-R06_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: 04581ae0d5482ee0771f904d6b581d6511f6a8ff
+AUTHOR_HANDOFF_BLOB: 8637caf3c4cc80123ec6e4a24e9919da852c8ae4
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_ORIGINAL08_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: b2e79a6cda5fdcc82dbd281e4273577ca637895e
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_NEW23_PUBLIC_CANONICAL_R01_20261112.md
@@ -54,7 +54,7 @@ SELF_CHECK_PUBLIC_REPLAY: 12 question stems only; CLIENT_SELF_CHECK_NO_MASTERY
 
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — Current authoritative CĐ03 learner source c843613b88d106a18086d91ff7d0ada499398033, scoped Q18 author receipt b8a9ddc851a1026af2d42d93ea5eb6c21cad6a13, A1 custody 0720e90fcfbc67e85e3aa0986a68c3397b73bab8 and V2 04581ae0d5482ee0771f904d6b581d6511f6a8ff, original 8 SGK +23 new bank retained.
+- [x] A1_SOURCE_SNAPSHOT — Current authoritative CĐ03 learner source 41b070e06267a5486f00ff977e164c4198f387d4, scoped Q18 author receipt e65746363a6a4424e5c4e051e33e5742cd96857c, A1 custody 1bc2073acdf133548a5b40c8d0fe8b8a993272dc and V2 8637caf3c4cc80123ec6e4a24e9919da852c8ae4, original 8 SGK +23 new bank retained.
 - [x] A2_SGK_SBT_SCOPE — CĐ03 theo đề xuất 22 chủ dự án cho phép triển khai; SGK KNTT Toán 10 T2 B18 trang in 25–27, SBT trang 19–21 xác thực từ receipt S1 lịch sử, không tuyên bố scan PDF mới.
 - [x] A3_NOTEBOOKLM_VERDICT — B18 historical NotebookLM PASS chỉ cho snapshot 5 Temp_ gốc, 8 ID thuộc reviewer scope; CĐ03 R04 12 outcomes/23 new item math solution checks source-bound Q18 AUTHOR_SELF_VERIFIED, not inherited R01 counts, không giả reviewer PASS mới.
 - [x] A4_ITEM_OUTCOME_IDS — 12 outcome, 31 unique PUBLIC IDs (8 reused +23 new), >=2 item mỗi outcome; 4 Written có rubric đúng source gốc 5/6 điểm, mới 7/7; 12 reuse-only Self Check NO_MASTERY.
@@ -91,7 +91,7 @@ SELF_CHECK_PUBLIC_REPLAY: 12 question stems only; CLIENT_SELF_CHECK_NO_MASTERY
 
 ## 18/11/2026 · Current true-formal-knowledge fix in the same source
 
-- Current learner SOURCE_BLOB `c843613b88d106a18086d91ff7d0ada499398033`; Q18 `b8a9ddc851a1026af2d42d93ea5eb6c21cad6a13`; A1 metadata `0720e90fcfbc67e85e3aa0986a68c3397b73bab8`; V2 `04581ae0d5482ee0771f904d6b581d6511f6a8ff`. Earlier original R06 D6/Example corrections on Draft #888 are retained.
+- Current learner SOURCE_BLOB `41b070e06267a5486f00ff977e164c4198f387d4`; Q18 `e65746363a6a4424e5c4e051e33e5742cd96857c`; A1 metadata `1bc2073acdf133548a5b40c8d0fe8b8a993272dc`; V2 `8637caf3c4cc80123ec6e4a24e9919da852c8ae4`. Earlier original R06 D6/Example corrections on Draft #888 are retained.
 - Explicit definition of equivalent equations, zero-product property and the necessary+ sufficient real sign criterion for sqrt(A)=B at TOP03-O01/O03/O07; a short recall block. The existing 31 Practice stem/key/solution/rubric/D6, 12 selfcheck question-only repeats, 3 SVG references and 43 disclosure blocks are byte-exact with preceding effective source `daeeb5d571d120b31265f8c603a76049a1f2c78c`.
 - DELTA_C source-scoped Q18 author self-QA, no independent NotebookLM Topic verdict. QA HOLD in the title continues to mean the revised whole Topic has not passed a fresh independent review; STATUS in the historical manifest does not authorize RELEASE, merge or deploy. Official Readiness/Mastery not claimed.
 
@@ -104,3 +104,6 @@ The current learner file at ACADEMIC_SOURCE_PATH is the **only** active CĐ03 dr
 
 
 **Final source-only custody after workflow state correction:** This document uses the required READY state because its edited learner source passed affected-scope academic/PED author review with unchanged question/key/rubric integrity. No separate student source, no independent full-topic new review or website release is implied. Any previous temporary HOLD wording was superseded by the latest STATE/BLOCKERS fields. Release/AP/device CI and explicit owner authorization remain separate hard gates.
+
+
+**19/11 owner label-only Delta A:** 12/12 lessons unchanged mathematically, STATE remains CONTENT_READY, source SHA relocked.
