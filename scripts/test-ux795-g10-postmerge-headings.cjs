@@ -264,6 +264,14 @@ for(let n=1;n<=27;n++){
    assert.equal(vf("PREVIOUS_B15_SOURCE_BLOB"),old,"B15 R02 receipt follows exact P2 source");
    active=vf("CANDIDATE_B15_SOURCE_BLOB");
   }
+  if(n===16){
+   const r16=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHVI_B16_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261119.md"),"utf8");
+   const f16=k=>r16.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(f16("BASELINE_PUBLISHED_B16_SOURCE_BLOB"),followon.candidate,
+    "B16 owner Q18 must extend exact historical UX source");
+   active=f16("CANDIDATE_B16_SOURCE_BLOB");
+  }
   assert.equal(blob(source),active,
     "B"+n+" learner source must match latest signed Q18, never an obsolete UX ancestor");
  }
