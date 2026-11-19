@@ -70,8 +70,17 @@ for(const f of ["docs/assets/javascripts/thpt-g10-b11-b12-owner-p2-fix.js",
 assert.equal(field("GOLDEN_CSS_PREVIOUS_BLOB"),"818866d2ea73b3252649f78926fe3abd343abc64",
  "Previously accepted shared CSS snapshot must be immutable");
 const css=fs.readFileSync(path.join(root,"docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"),"utf8");
-assert.equal(gitblob(css),field("GOLDEN_CSS_CURRENT_BLOB"),
- "Golden stylesheet must match approved B10-parity scoped CSS SHA");
+const b13Marker="/* G10 ChV B13 · exact B10/B12 Golden palette";
+const at=css.indexOf(b13Marker);
+assert(at>0&&css.indexOf(b13Marker,at+1)<0,
+ "B13 scoped palette must occur exactly once after all B12 owner-signed rules");
+assert.equal(gitblob(css.slice(0,at-1)),field("GOLDEN_CSS_CURRENT_BLOB"),
+ "B01–B12 owner accepted Golden CSS must remain immutable prefix");
+const r13=fs.readFileSync(path.join(root,
+ "prototypes/thpt/ux795/G10_CHV_B13_S1_Q18_GOLDEN_ENRICHMENT_DELTA_R01_20261119.md"),"utf8");
+const get13=k=>r13.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+assert.equal(gitblob(css),get13("CANDIDATE_GOLDEN_CSS_BLOB"),
+ "B13 candidate CSS must match exact Q18 release receipt; prior B12 remains frozen");
 assert(!/!!! (example|abstract|info)/.test(
  fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-v/bai-12.md"),"utf8")),
  "B12 no violet/cyan default MkDocs native colored boxes");

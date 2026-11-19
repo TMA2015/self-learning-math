@@ -149,8 +149,8 @@ for(const [lesson,row] of rows){
     "prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md"));
    assert.equal(f04("R04_STANDARD_BLOB"),"24f744b5d9f114d053b6e2e1ab8a0fb26c3fab39",
      "B08 original historical standard SHA remains signed and immutable");
-   assert.equal(blob(standard),"224792a6037a098ec3cc42fb67e2c2f95581bbc9",
-     "B08 current owner-effective standard must match merged PR908 exact SHA");
+   assert.equal(blob(standard),"488afe2908e0b471320e1d55f775391578d88bba",
+     "B08 effective Q01–Q18 v3.2.0 current main SHA after governance-only PR914");
    assert(standard.toString("utf8").includes("OWNER_APPROVED_PR_899_MERGED_INTO_MAIN_20261117"),
      "Owner-effective v3.2.0 requires merged PR899 evidence");
    const formal=source.slice(source.indexOf('=== "Kiến thức SGK"'),source.indexOf('=== "Ví dụ"'));
@@ -259,8 +259,8 @@ for(const [lesson,row] of rows){
    "prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md"));
   assert.equal(f("STANDARD_BLOB"),"24f744b5d9f114d053b6e2e1ab8a0fb26c3fab39",
    "B09 historical v3.2.0 signed standard SHA must remain immutable");
-  assert.equal(blob(standard),"224792a6037a098ec3cc42fb67e2c2f95581bbc9",
-   "B09 effective v3.2.0 after approved PR908 must match exact SHA");
+  assert.equal(blob(standard),"488afe2908e0b471320e1d55f775391578d88bba",
+   "B09 effective v3.2.0 current main SHA after owner governance PR914");
   assert(standard.toString("utf8").includes("OWNER_APPROVED_PR_899_MERGED_INTO_MAIN_20261117"),
    "Owner-effective v3.2.0 activation must be explicit");
   const official=source.slice(source.indexOf('=== "Kiến thức SGK"'),source.indexOf('=== "Ví dụ"'));
@@ -423,8 +423,21 @@ for(const [lesson,row] of rows){
    const b12Color=k=>b12Palette.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
    assert.equal(b12Color("GOLDEN_CSS_PREVIOUS_BLOB"),b11f("CSS_B11_SCOPED_APPEND_BLOB"),
     "Signed B10/B11 stylesheet was exact accepted baseline before B12 append");
-   assert.equal(blob(css),b12Color("GOLDEN_CSS_CURRENT_BLOB"),
-    "Current shared Golden CSS must match B12 scoped exact B10 palette SHA");
+   const b13CssText=css.toString("utf8"),b13CssMarker="/* G10 ChV B13 · exact B10/B12 Golden palette";
+   const b13CssAt=b13CssText.indexOf(b13CssMarker);
+   assert(b13CssAt>0&&b13CssText.indexOf(b13CssMarker,b13CssAt+1)<0,
+    "B13 may add only one Golden scoped CSS appendix");
+   assert.equal(blob(Buffer.from(b13CssText.slice(0,b13CssAt-1))),b12Color("GOLDEN_CSS_CURRENT_BLOB"),
+    "B12 owner-accepted Golden CSS must remain exact prefix");
+   const b13Receipt=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHV_B13_S1_Q18_GOLDEN_ENRICHMENT_DELTA_R01_20261119.md"),"utf8");
+   const b13Field=k=>b13Receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(blob(css),b13Field("CANDIDATE_GOLDEN_CSS_BLOB"),
+    "B13 scoped UI appendix SHA must match source receipt");
+   assert(b13Receipt.includes("Q18_OWNER_SELF_VERIFIED_ENRICHMENT_PASS")&&
+    b13Receipt.includes("S1_SCOPE_MATH_CONVENTION_VERIFIED")&&
+    b13Receipt.includes("P0=0; P1=0"),
+    "B13 Q18 source has a math/PED self-QA receipt; Golden parity does not replace it");
   // Historical R01 source/receipt stay immutable; this P2 correction is a scoped DELTA_A_UI.
   const r02=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHIV_B10_P2_MATHJAX_DELTA_A_UI_R02_20261118.md"),"utf8");
