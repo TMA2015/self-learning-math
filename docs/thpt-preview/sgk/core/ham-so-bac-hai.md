@@ -47,7 +47,7 @@
 <h3>Tìm đỉnh từ hệ số \(a,b,c\)</h3>
 <p>Xét \(y=x^2+6x+5\). Hoàn thành bình phương và cho biết đỉnh, trục đối xứng, hướng mở.</p>
 <details><summary>Gợi ý (tự chọn)</summary><p>Tách \(x^2+6x=(x+3)^2-9\).</p></details>
-<details><summary>Đối chiếu lời giải sau khi tự làm</summary><p>\(y=(x+3)^2-4\), nên đỉnh \(I(-3;-4)\), trục \(x=-3\), parabol mở lên vì \(a=1>0\).</p></details>
+<details><summary>Đối chiếu lời giải sau khi tự làm</summary><p>\(y=(x+3)^2-4\), nên đỉnh \(I(-3;-4)\), trục \(x=-3\), parabol mở lên vì \(a=1&gt;0\).</p></details>
 </section>
 </section>
 
@@ -93,8 +93,8 @@
 <section class="thpt-r4-exercise thpt-g10-b16-canonical-card" data-thpt-canonical-item="THPT-G10-B16-P05" data-thpt-outcome-id="B16_OUT_05" data-thpt-exposure-role="SGK_PRACTICE">
 <h3>Tối ưu khi rào ba cạnh một khu vườn</h3>
 <p>Có 36 m hàng rào để rào ba cạnh hình chữ nhật dựa vào một bức tường thẳng. Gọi \(x\) (m) là chiều rộng vuông góc tường. Tìm miền của \(x\), diện tích lớn nhất và kích thước tương ứng.</p>
-<details><summary>Gợi ý (tự chọn)</summary><p>Cạnh song song tường cần rào dài \(36-2x\) (m), nên \(0<x<18\). Hãy đưa \(S(x)=x(36-2x)\) về dạng đỉnh.</p></details>
-<details><summary>Đối chiếu lời giải sau khi tự làm</summary><p>\(S(x)=x(36-2x)=-2(x-9)^2+162\), với \(0<x<18\). Vì \(-2(x-9)^2\le0\) và \(9\) thuộc miền, diện tích lớn nhất là \(162\,\mathrm{m}^2\) khi chiều rộng \(x=9\) m, cạnh còn lại \(18\) m.</p></details>
+<details><summary>Gợi ý (tự chọn)</summary><p>Cạnh song song tường cần rào dài \(36-2x\) (m), nên \(0&lt;x&lt;18\). Hãy đưa \(S(x)=x(36-2x)\) về dạng đỉnh.</p></details>
+<details><summary>Đối chiếu lời giải sau khi tự làm</summary><p>\(S(x)=x(36-2x)=-2(x-9)^2+162\), với \(0&lt;x&lt;18\). Vì \(-2(x-9)^2\le0\) và \(9\) thuộc miền, diện tích lớn nhất là \(162\,\mathrm{m}^2\) khi chiều rộng \(x=9\) m, cạnh còn lại \(18\) m.</p></details>
 </section>
 </section>
 
