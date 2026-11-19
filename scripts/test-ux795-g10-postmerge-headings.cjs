@@ -243,7 +243,19 @@ for(let n=1;n<=27;n++){
  const followon=ux.get(n);
  if(followon){
   const source=fs.readFileSync(path.join(root,"docs",route+".md"));
-  assert.equal(blob(source),followon.candidate,"B"+n+" source SHA must match signed UX receipt");
+  let active=followon.candidate;
+  if(n===15){
+   const receiptPath=path.join(root,
+    "prototypes/thpt/ux795/G10_CHVI_B15_OWNER_Q18_KNOWLEDGE_ENRICHMENT_20261119.md");
+   assert(fs.existsSync(receiptPath),"B15 latest Q18 must accompany isolated merged-source QA");
+   const receipt=fs.readFileSync(receiptPath,"utf8");
+   const field=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(field("BASELINE_PUBLISHED_B15_BLOB"),followon.candidate,
+    "B15 new owner Q18 is chained to original immutable UX receipt");
+   active=field("CANDIDATE_B15_SOURCE_BLOB");
+  }
+  assert.equal(blob(source),active,
+    "B"+n+" learner source must match latest signed Q18, never an obsolete UX ancestor");
  }
  const signedVII=chvii.get(n);
  if(signedVII){

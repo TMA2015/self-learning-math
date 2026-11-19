@@ -7,7 +7,7 @@
 
 === "Khám phá kiến thức"
 
-    ### Cùng tìm hiểu
+    ### 1.1. Vì sao cần học hàm số?
 
     Một máy nhận mã sản phẩm và trả ra giá bán tương ứng. Nếu cùng một mã, trong cùng điều kiện, mà máy lại cho hai giá khác nhau thì quy tắc ấy không xác định một kết quả rõ ràng. **Hàm số** cũng yêu cầu mỗi đầu vào thuộc miền được phép phải có **đúng một đầu ra**.
 
@@ -15,14 +15,14 @@
 
     Khi muốn biết hàm tăng hay giảm, hãy quan sát đồ thị **trong cùng một khoảng** từ trái sang phải. Không so hai điểm ở hai nhánh khác nhau rồi kết luận cả hàm đồng biến.
 
-    ### Ví dụ trực quan
+    ### 1.2. Tự khám phá năm tình huống
 
-    #### Một đầu vào phải có một kết quả
+    #### 1.2.1. Một đầu vào phải có một kết quả
 
 
     Trong một ứng dụng dự báo nhiệt độ, cùng một thời điểm không thể đồng thời được gán hai nhiệt độ khác nhau trong *cùng một mô hình xác định*. Vì vậy ta cần nhận ra khi nào mối liên hệ có thể gọi là hàm số.
 
-    Khi đọc bảng giá trị, hãy nhớ ý nghĩa của cặp có thứ tự \((x;y)\) và phân biệt “một giá trị \(x\) xuất hiện hai dòng” với “một giá trị \(x\) có hai đầu ra **khác nhau**”. Em có thể học các kiến thức tiền đề ngay trong bài.
+    Khi đọc bảng giá trị, hãy nhớ ý nghĩa của cặp có thứ tự \((x;y)\) và phân biệt “một giá trị \(x\) xuất hiện hai dòng” với “một giá trị \(x\) có hai đầu ra **khác nhau**”. Nhờ phân biệt cặp có thứ tự và giá trị đầu vào, em có thể kiểm điều kiện hàm số theo từng \(x\), thay vì chỉ đếm số dòng của bảng.
 
     Một quy tắc là hàm số trên tập \(D\) nếu mỗi đầu vào \(x\in D\) có **đúng một** giá trị đầu ra \(y\). Hai dòng trùng hệt \((x;y)\) không phá điều kiện; nhưng \((x;y_1)\) và \((x;y_2)\) với \(y_1\ne y_2\) thì phá. Sau trực giác ấy mới dùng kí hiệu \(y=f(x)\).
 
@@ -41,11 +41,11 @@
 
 
 
-    #### Tập xác định và tập giá trị không giống nhau
+    #### 1.2.2. Tập xác định và tập giá trị không giống nhau
 
     Máy tính không thể lấy căn bậc hai của số âm trong tập số thực; muốn nhập \(x\) hợp lệ, ta phải biết miền **đầu vào**. Nhưng các kết quả **đầu ra** mà máy cho được có thể là tập khác.
 
-    Với căn bậc hai trong tập số thực, biểu thức \(\sqrt t\) chỉ có nghĩa khi \(t\ge0\), và khi ấy \(\sqrt t\ge0\). Em cũng sẽ dùng kiến thức giải bất phương trình bậc nhất. Em có thể học các kiến thức tiền đề ngay trong bài.
+    Với căn bậc hai trong tập số thực, biểu thức \(\sqrt t\) chỉ có nghĩa khi \(t\ge0\), và khi ấy \(\sqrt t\ge0\). Em cũng sẽ dùng kiến thức giải bất phương trình bậc nhất. Điều kiện dưới dấu căn giúp tìm \(D\), nhưng muốn tìm \(T\) còn phải xem đầu ra có thể nhận những giá trị nào.
 
     Tập xác định \(D\) là những \(x\) **được phép thay vào** biểu thức; tập giá trị \(T\) gồm mọi \(y\) thực sự **đạt được** sau khi thay \(x\in D\). Ví dụ căn thức vừa giới hạn đầu vào, vừa làm mọi đầu ra không âm; không lấy \(D=T\) chỉ vì có cùng kí hiệu tập.
 
@@ -69,14 +69,16 @@
 
 
 
-    #### Điểm thuộc đồ thị phải thỏa đúng quy tắc
+    #### 1.2.3. Điểm thuộc đồ thị phải thỏa đúng quy tắc
 
     Một điểm vẽ trên hệ trục có hai tọa độ; để biết nó có thuộc đồ thị của hàm số hay không, ta phải kiểm xem tung độ đúng bằng đầu ra ứng với hoành độ.
 
-    Ôn kí hiệu điểm \((x;y)\), trục Ox biểu diễn x, Oy biểu diễn y và thay số vào biểu thức f(x). Em có thể học các kiến thức tiền đề ngay trong bài.
+    Ôn kí hiệu điểm \((x;y)\), trục Ox biểu diễn x, Oy biểu diễn y và thay số vào biểu thức f(x). Vì thế, khi xét một điểm, em dùng hoành độ để tính \(f(x)\), rồi mới so với tung độ đã cho.
 
     Đồ thị của \(y=f(x)\) là tập tất cả điểm \((x,f(x))\) với \(x\in D\). Việc điểm nằm “gần” nét đồ thị trên hình in không đủ chứng minh: cần thử \(y=f(x)\) với đúng hoành độ của điểm.
 
+
+    **Em vận dụng.** Với \(f(x)=x^2-1\) trên \(\mathbb R\), xét hai điểm \(A(-2;3)\) và \(B(2;5)\). Điểm nào thuộc đồ thị? Hãy chứng minh bằng cách tính giá trị hàm số.
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHVI-TRY03" data-outcome-id="B15_OUT_03" hidden></span>
 
@@ -88,11 +90,11 @@
 
 
 
-    #### Hàm từng đoạn cần đọc đúng ranh giới và đơn vị
+    #### 1.2.4. Hàm từng đoạn cần đọc đúng ranh giới và đơn vị
 
     Một dịch vụ gửi hàng thu phí cơ bản cho 2 km đầu và thu thêm theo mỗi km tiếp theo; cùng đầu vào vẫn phải được tính đúng một mức phí, kể cả ngay ranh giới 2 km.
 
-    Khi tính phí theo quãng đường, hãy chú ý mốc \(x\le2\) và \(x>2\), đơn vị kilomet, nghìn đồng và giá trị hàm số tại quãng đường đang xét. Em có thể học các kiến thức tiền đề ngay trong bài.
+    Khi tính phí theo quãng đường, hãy chú ý mốc \(x\le2\) và \(x>2\), đơn vị kilomet, nghìn đồng và giá trị hàm số tại quãng đường đang xét. Tại đúng ranh giới, dấu bằng quyết định công thức được chọn; chỉ sau đó mới tính phí và kiểm đơn vị.
 
     Hàm từng đoạn dùng **những công thức khác nhau trên những miền không chồng mâu thuẫn**. Giá trị tại x=2 phải theo nhánh chứa dấu bằng; nếu chọn nhầm, chi phí tại ranh giới và dự đoán tiếp theo đều sai.
 
@@ -129,11 +131,11 @@
 
 
 
-    #### Đồng biến phải xét trên đúng khoảng
+    #### 1.2.5. Đồng biến phải xét trên đúng khoảng
 
     Nếu quãng đường theo thời gian chỉ tăng, ta gọi đại lượng đồng biến; nhưng có những đại lượng trước tăng sau giảm. Vậy không thể gắn nhãn tăng/giảm cho cả hàm chỉ bằng nhìn hai điểm bất kì.
 
-    Biết so sánh hai số \(x_1<x_2\), bất đẳng thức và ý nghĩa đầu vào/đầu ra. Em có thể học các kiến thức tiền đề ngay trong bài.
+    Biết so sánh hai số \(x_1<x_2\), bất đẳng thức và ý nghĩa đầu vào/đầu ra. Để kết luận trên cả khoảng, ta cần một lập luận cho mọi cặp \(x_1<x_2\) trong khoảng, không chỉ dựa vào hai điểm trên hình.
 
     Trên một khoảng \(K\), đồng biến nghĩa là \(x_1<x_2\) trong K kéo theo \(f(x_1)<f(x_2)\). Nếu \(f(x_1)>f(x_2)\) thì nghịch biến. Khái niệm phụ thuộc vào **khoảng đang xét**, không phải tính chất tuyệt đối của mọi hàm trên \(\mathbb R\).
 
@@ -148,7 +150,9 @@
 
         <div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> <span class="arithmatex">\(f(x_2)-f(x_1)=3(x_2-x_1)&gt;0\)</span>; đồng biến trên <span class="arithmatex">\([-1;2]\)</span>.</p><p><strong>Vì sao:</strong> Hệ số 3 dương nên khi x tăng thì giá trị f(x) tăng. Lập luận áp dụng mọi cặp x1&lt;x2 trong khoảng, không chỉ một bảng nhỏ.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
 
-    ### Thuật ngữ, kiến thức và kỹ năng
+    ### 1.3. Kiến thức tiền đề và mục tiêu
+
+    **Em cần nhớ trước khi học:** Cặp có thứ tự \((x;y)\), trục hoành/trục tung, so sánh hai số, bất phương trình bậc nhất, điều kiện căn bậc hai không âm và mẫu số khác 0.
 
     **Thuật ngữ:** Hàm số, tập xác định, tập giá trị, biến độc lập/phụ thuộc, đồ thị, đồng biến, nghịch biến và hàm từng đoạn.
 
@@ -156,83 +160,127 @@
 
 === "Kiến thức SGK"
 
-    ### 2.1. Khái niệm hàm số
+    Trong phần Khám phá, em đã thấy rằng một đầu vào hợp lệ chỉ được cho một đầu ra. Bây giờ ta phát biểu chính xác điều kiện đó, rồi dùng nó để đọc miền xác định, đồ thị và sự biến thiên. **Hãy đọc định nghĩa trước, sau đó xem ví dụ và cách kiểm tra.**
 
+    ### 2.1. Khái niệm hàm số
 
     <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_CHVI_B15_FUNCTION_MAPPING_D5_R03.svg" loading="lazy" alt="So sánh hai bảng: cùng đầu vào x có một hay hai giá trị đầu ra khác nhau"><figcaption>Đọc từng đầu vào: lặp đúng cùng một giá trị khác với hai đầu ra mâu thuẫn.</figcaption></figure>
 
-    **Cách đọc hình.** Đọc các mũi tên từ tập giá trị đầu vào sang tập đầu ra: mỗi đầu vào có đúng một đầu ra, dù nhiều đầu vào có thể cùng chung giá trị.
+    **Cách đọc hình.** Lần theo mũi tên xuất phát từ từng giá trị đầu vào: mỗi đầu vào phải có **đúng một** đầu ra. Nhiều đầu vào có thể cùng dẫn đến một đầu ra; điều đó không làm mất tính chất hàm số.
 
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Hàm số:</strong> Cho tập hợp \(D\) gồm các giá trị của \(x\). Nếu với <strong>mỗi</strong> \(x\in D\) xác định <strong>duy nhất một</strong> số thực \(y\), ta nói \(y\) là một hàm số của \(x\) trên \(D\), kí hiệu \(y=f(x)\). \(x\) là biến độc lập và \(y\) là biến phụ thuộc.</div>
 
-    Cho tập hợp \(D\) gồm các giá trị của \(x\). Nếu **mỗi** \(x\in D\) xác định **duy nhất một** số thực \(y\), ta nói \(y\) là một *hàm số* của \(x\) trên \(D\). Kí hiệu \(y=f(x)\).
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Tập xác định và tập giá trị:</strong> \(D\) là tập các giá trị đầu vào \(x\) mà hàm số được xác định; \(f(x)\) là giá trị đầu ra tại \(x\in D\). <strong>Tập giá trị</strong> \(T=\{f(x)\mid x\in D\}\) gồm các giá trị đầu ra thật sự đạt được. Không được đồng nhất \(D\) với \(T\) chỉ vì chúng đều là tập số.</div>
 
-    - \(D\): **tập xác định** của hàm số.
-    - \(f(x)\): **giá trị của hàm số** tại \(x\).
-    - \(T=\{f(x)\mid x\in D\}\): **tập giá trị** của hàm số.
-    - Một giá trị \(x\) không thể đồng thời ứng với hai giá trị \(y\) khác nhau nếu đó là đồ thị của một hàm số.
-    - **Bảng có đầu vào lặp:** nếu hai hàng cùng \(x\) và cùng \(y\), quan hệ vẫn có thể là hàm số; chỉ khi cùng \(x\) ứng với **hai \(y\) khác nhau** mới vi phạm tính đơn trị. Chẳng hạn \((1;3),(2;4),(2;4)\) mô tả một hàm số trên \(\{1;2\}\), nhưng thay cặp cuối bằng \((2;5)\) thì không.
+    Một bảng vẫn có thể biểu diễn hàm số khi cùng một dòng \((x;y)\) được ghi lặp lại. Chẳng hạn \((1;3),(2;4),(2;4)\) mô tả hàm số trên \(D=\{1;2\}\). Trái lại, đổi dòng cuối thành \((2;5)\) thì cùng đầu vào \(x=2\) cho hai đầu ra khác nhau, nên **không** phải hàm số của \(x\).
 
-
-
+    Khi hàm số được cho bởi công thức, cần xác định \(D\) trước khi tính \(f(x)\). Ví dụ \(f(x)=\sqrt{x-1}\) có \(D=[1;+\infty)\) vì \(x-1\ge0\). Mọi giá trị hàm số đều không âm và với mỗi \(y\ge0\), chọn \(x=y^2+1\) sẽ được \(f(x)=y\). Do đó \(T=[0;+\infty)\). Việc chứng minh \(T\) đòi hỏi xét **giá trị đầu ra đạt được**, không chỉ xét biểu thức dưới căn.
 
     ### 2.2. Đồ thị của hàm số
 
-    Đồ thị của hàm số \(y=f(x)\) trên \(D\) là tập hợp các điểm \(M(x;f(x))\) với \(x\in D\). Hàm số có thể được cho bằng **công thức, bảng giá trị, đồ thị** hoặc mô tả một sự phụ thuộc duy nhất.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Đồ thị của hàm số:</strong> Đồ thị của \(y=f(x)\) trên tập xác định \(D\) là tập hợp <strong>tất cả</strong> điểm \(M(x;f(x))\) với \(x\in D\). Hoành độ biểu diễn đầu vào, còn tung độ là giá trị hàm số tương ứng.</div>
 
-    **Cách kiểm tra một điểm:** \(A(x_0;y_0)\) thuộc đồ thị khi và chỉ khi \(x_0\in D\) và \(y_0=f(x_0)\).
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Kiểm tra điểm thuộc đồ thị:</strong> Điểm \(A(x_0;y_0)\) thuộc đồ thị của \(y=f(x)\) <strong>khi và chỉ khi</strong> (1) \(x_0\in D\) và (2) \(y_0=f(x_0)\). Phải kiểm cả điều kiện đầu vào và giá trị đầu ra; hình vẽ chỉ giúp quan sát, không thay thế hai phép kiểm này.</div>
 
-    **Ví dụ 3.** Với \(y=2x+1\), điểm \(A(2;5)\) thuộc đồ thị vì \(2\cdot2+1=5\); điểm \(B(2;4)\) không thuộc đồ thị. Khi vẽ đồ thị, trục hoành biểu diễn \(x\), trục tung biểu diễn \(y\).
+    **Ví dụ đọc tọa độ.** Với \(y=2x+1\) xác định trên \(\mathbb R\), \(A(2;5)\) thuộc đồ thị vì \(2\cdot2+1=5\), còn \(B(2;4)\) không thuộc vì \(4\ne5\).
 
-    !!! tip "Chú ý khi đọc hình"
-        Khi một đường thẳng đứng \(x=x_0\) cắt hình vẽ tại nhiều hơn một điểm, hình vẽ đó **không thể** là đồ thị của hàm số \(y=f(x)\) trên miền chứa \(x_0\).
+    !!! tip "Lưu ý khi đọc hình"
+        Nếu đường thẳng đứng \(x=x_0\) cắt một hình vẽ ở **hai điểm có tung độ khác nhau**, hình đó không thể là đồ thị của hàm số \(y=f(x)\) trên miền chứa \(x_0\). Đây là cách nhận diện bằng hình của yêu cầu “một đầu vào — một đầu ra”.
 
+    #### 2.2.1. Đọc hàm số qua bảng và đồ thị
 
+    Hàm số không nhất thiết phải được cho bằng một công thức. Bảng giá trị và đồ thị cũng thể hiện quan hệ đầu vào – đầu ra. **Khi chỉ có số liệu đo ở một số thời điểm, không được tự suy ra các thời điểm chưa đo.**
 
-    #### Đọc hàm số qua bảng và đồ thị
-
-    Hàm số không nhất thiết phải được cho bằng một công thức duy nhất. Theo mạch kiến thức SGK Toán 10 KNTT Tập 2 (trang in 5–7), ta còn gặp **bảng số liệu**, **đồ thị đo đạc** và **mô hình tính tiền theo từng khoảng**.
-
-    **Ví dụ bổ sung A — Bảng giá trị.** Một trạm quan sát ghi nhiệt độ tại ba thời điểm:
+    **Ví dụ bổ sung — Bảng giá trị.** Một trạm quan sát ghi nhiệt độ tại ba thời điểm:
 
     <div class="thpt-g10-table-scroll"><table class="thpt-g10-knowledge-table">
     <thead><tr><th>Thời điểm \(t\) (giờ)</th><th>6</th><th>12</th><th>18</th></tr></thead>
-    <tbody>
-    <tr><td>Nhiệt độ \(T(t)\) (\(^\circ\mathrm C\))</td><td>19</td><td>25</td><td>21</td></tr>
-    </tbody></table></div>
+    <tbody><tr><td>Nhiệt độ \(T(t)\) (\(^\circ\mathrm C\))</td><td>19</td><td>25</td><td>21</td></tr></tbody>
+    </table></div>
 
-    Trong dữ liệu chỉ gồm ba thời điểm đó, tập xác định là \(D=\{6;12;18\}\); tập giá trị là \(\{19;21;25\}\). Ta đọc được \(T(12)=25\) nhưng **không thể tự suy ra** \(T(9)\) nếu chưa có mô hình hoặc số liệu bổ sung. Nếu hai thời điểm có cùng nhiệt độ thì giá trị đó chỉ liệt kê **một lần** trong tập giá trị.
-
-
-
+    Với **dữ liệu chỉ gồm ba thời điểm đã cho**, \(D=\{6;12;18\}\) và \(T=\{19;21;25\}\). Ta biết \(T(12)=25\), nhưng **chưa xác định được \(T(9)\)** nếu không có thêm số liệu hay mô hình dự đoán. Mỗi giá trị nhiệt độ chỉ liệt kê một lần trong tập giá trị, kể cả khi xuất hiện ở nhiều thời điểm.
 
     ### 2.3. Sự đồng biến, nghịch biến của hàm số
 
-    Cho hàm số \(y=f(x)\) xác định trên khoảng \(K\). Với mọi \(x_1,x_2\in K\) thỏa \(x_1<x_2\):
+    Trên đồ thị, em có thể nhận xét đường đi lên hay đi xuống khi đọc từ trái sang phải. Để kết luận **trên cả một khoảng**, không thể chỉ thử một cặp điểm: cần phát biểu quan hệ đúng với **mọi cặp** đầu vào khác nhau trong khoảng đó.
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Đồng biến, nghịch biến:</strong> Cho hàm số \(y=f(x)\) xác định trên một khoảng \(K\). Với <strong>mọi</strong> \(x_1,x_2\in K\), \(x_1&lt;x_2\): hàm số <strong>đồng biến</strong> trên \(K\) nếu \(f(x_1)&lt;f(x_2)\); <strong>nghịch biến</strong> trên \(K\) nếu \(f(x_1)&gt;f(x_2)\). Tính chất phải được xét trên đúng khoảng \(K\), không suy rộng tùy ý ra toàn tập xác định.</div>
 
     <div class="thpt-g10-table-scroll"><table class="thpt-g10-knowledge-table">
-    <thead><tr><th>Tính chất</th><th>Điều kiện</th><th>Nhìn từ trái qua phải trên đồ thị</th></tr></thead>
-    <tbody>
-    <tr><td><strong>Đồng biến</strong> trên \(K\)</td><td>\(f(x_1)&lt;f(x_2)\)</td><td>Đường đi lên</td></tr>
-    <tr><td><strong>Nghịch biến</strong> trên \(K\)</td><td>\(f(x_1)&gt;f(x_2)\)</td><td>Đường đi xuống</td></tr>
-    </tbody></table></div>
+    <thead><tr><th>Tính chất</th><th>Điều kiện với mọi \(x_1&lt;x_2\) trong \(K\)</th><th>Đọc từ trái qua phải</th></tr></thead>
+    <tbody><tr><td><strong>Đồng biến</strong></td><td>\(f(x_1)&lt;f(x_2)\)</td><td>Đồ thị đi lên</td></tr>
+    <tr><td><strong>Nghịch biến</strong></td><td>\(f(x_1)&gt;f(x_2)\)</td><td>Đồ thị đi xuống</td></tr></tbody>
+    </table></div>
 
-    Nếu hàm số không có cùng một chiều biến thiên trên toàn miền, cần **chia thành từng khoảng**; không kết luận chỉ từ hai giá trị đầu/cuối.
-
-    **Ví dụ 4.** Hàm số \(f(x)=x^2\) nghịch biến trên \((-\infty;0)\) và đồng biến trên \((0;+\infty)\). Điều này **không có nghĩa** \(f\) đồng biến hoặc nghịch biến trên toàn \(\mathbb{R}\).
-
-    **Ví dụ 5 (mô hình).** Độ dài đường đi của xe chuyển động đều \(s(t)=12t\) (km) với \(t\ge0\) (giờ) tăng khi thời gian tăng, nên \(s\) đồng biến trên \([0;+\infty)\).
+    **Ví dụ đối chiếu.** Với \(f(x)=x^2\), hàm số nghịch biến trên \((-\infty;0)\) và đồng biến trên \((0;+\infty)\), **không** đồng biến hay nghịch biến trên toàn \(\mathbb R\). Với mô hình quãng đường \(s(t)=12t\) (km), \(t\ge0\) (giờ), nếu \(t_1&lt;t_2\) thì \(s(t_2)-s(t_1)=12(t_2-t_1)>0\); vì vậy mô hình đồng biến trên miền thời gian \(t\ge0\).
 
 === "Ví dụ"
 
-    ### Ví dụ — Tập xác định quyết định điểm nào được phép thuộc đồ thị
+    Hãy đọc đề và **tự xác định điều kiện trước khi xem lời giải**. Mỗi ví dụ dưới đây minh họa một kiểu suy luận khác nhau: xét miền hợp lệ, tìm các giá trị đạt được, chọn nhánh đúng và chứng minh tính đơn điệu trên một khoảng.
 
-    **Đề bài.** Xét \(f(x)=\frac1{x-2}\). Tìm tập xác định và xét \(M(3,1)\), \(N(2,0)\).
+    ### 3.1. Ví dụ 1 — Kiểm tập xác định trước khi xét điểm trên đồ thị
 
-    **Vì sao chọn cách này?** Phân thức có mẫu số nên phải kiểm điều kiện trước khi thay tọa độ.
+    **Đề:** Xét \(f(x)=\dfrac1{x-2}\). Tìm tập xác định; xét hai điểm \(M(3;1)\) và \(N(2;0)\) có thuộc đồ thị hay không.
 
-    **Lời giải.** \(x-2\ne0\), do đó \(D=\mathbb R\setminus\{2\}\). \(f(3)=1\), nên \(M\) thuộc đồ thị. \(N\) không thuộc vì hoành độ 2 ngoài tập xác định.
+    **Phân tích:** Quy tắc là một phân thức, nên trước khi thay bất kì tọa độ nào phải loại giá trị làm mẫu bằng \(0\). Điểm thuộc đồ thị cần thỏa **cả** \(x\in D\) và \(y=f(x)\).
 
-    **Tự kiểm:** Sự tồn tại của một điểm trong mặt phẳng không có nghĩa điểm đó thuộc mọi đồ thị.
+    **Lời giải.**
+
+    **Bước 1 — Xác định miền hợp lệ:** \(x-2\ne0\iff x\ne2\). Vì vậy \(D=\mathbb R\setminus\{2\}\).
+
+    **Bước 2 — Kiểm điểm M:** \(3\in D\), \(f(3)=1/(3-2)=1\), đúng bằng tung độ, nên \(M(3;1)\) thuộc đồ thị.
+
+    **Bước 3 — Kiểm điểm N:** \(2\notin D\). Do đó \(N(2;0)\) không thuộc đồ thị; không được tính \(f(2)\) vì mẫu bằng \(0\).
+
+    **Kiểm lại:** Hoành độ hợp lệ là điều kiện bắt buộc trước khi so tung độ. Không được xem một điểm “đã vẽ trên hệ trục” là tự động nằm trên đồ thị.
+
+    ### 3.2. Ví dụ 2 — Phân biệt miền đầu vào và tập đầu ra
+
+    **Đề:** Cho \(g(x)=\sqrt{x+3}\) trên tập số thực. Xác định tập xác định \(D\) và tập giá trị \(T\).
+
+    **Phân tích:** Điều kiện của căn bậc hai xác định \(D\). Để tìm \(T\), ngoài việc biết \(g(x)\ge0\), còn phải chứng minh **mọi** giá trị không âm đều có thể đạt được.
+
+    **Lời giải.**
+
+    **Bước 1 — Tập xác định:** \(x+3\ge0\iff x\ge-3\), nên \(D=[-3;+\infty)\).
+
+    **Bước 2 — Chặn tập giá trị:** Vì căn bậc hai không âm, \(g(x)\ge0\). Giá trị nhỏ nhất \(0\) đạt tại \(x=-3\).
+
+    **Bước 3 — Chứng minh mọi đầu ra:** Với \(y\ge0\) bất kì, chọn \(x=y^2-3\ge-3\); khi đó \(g(x)=\sqrt{y^2}=y\). Vậy \(T=[0;+\infty)\).
+
+    **Kiểm lại:** \(D\) bắt đầu từ \(-3\), còn \(T\) bắt đầu từ \(0\). Không chép \(D\) sang \(T\); cần xét những \(y\) **thực sự nhận được**.
+
+    ### 3.3. Ví dụ 3 — Chọn nhánh và tính đúng phần vượt ngưỡng
+
+    **Đề:** Một mô hình phí vận chuyển giả định (đơn vị nghìn đồng) cho quãng đường \(x\ge0\) km như sau: \(P(x)=10\) nếu \(0\le x\le2\); \(P(x)=10+5(x-2)\) nếu \(x>2\). Tính \(P(2)\) và \(P(4)\).
+
+    **Phân tích:** Tại điểm biên \(x=2\) phải chọn nhánh chứa dấu bằng. Trên \(2\) km, phần tăng thêm tính theo số km **vượt quá 2**, không phải toàn quãng đường.
+
+    **Lời giải.**
+
+    **Bước 1 — Tại ranh giới:** \(2\in[0;2]\), nên dùng nhánh thứ nhất: \(P(2)=10\) nghìn đồng.
+
+    **Bước 2 — Vượt ranh giới:** \(4>2\), nên \(P(4)=10+5(4-2)=20\) nghìn đồng.
+
+    **Bước 3 — Đối chiếu mô hình:** Phần tăng thêm là \(2\) km, nhân với \(5\) nghìn đồng/km được \(10\) nghìn đồng; cộng mức cơ bản \(10\) bằng \(20\).
+
+    **Kiểm lại:** Hai miền không chồng nhau và bao phủ \(x\ge0\), nên mỗi quãng đường nhận đúng một mức phí. Đây chỉ là **mô hình giả định**, không phải biểu giá thực tế hay dữ liệu SGK.
+
+    ### 3.4. Ví dụ 4 — Chứng minh nghịch biến bằng hai đầu vào bất kì
+
+    **Đề:** Xét \(h(x)=5-2x\) trên \(\mathbb R\). Hãy chứng minh hàm số nghịch biến trên \(\mathbb R\).
+
+    **Phân tích:** Hai giá trị thử riêng lẻ không thể chứng minh tính đơn điệu trên **mọi** \(x\). Cần chọn \(x_1<x_2\) bất kì rồi xét dấu \(h(x_2)-h(x_1)\).
+
+    **Lời giải.**
+
+    **Bước 1 — Lấy hai số bất kì:** Cho \(x_1,x_2\in\mathbb R\), \(x_1&lt;x_2\), suy ra \(x_2-x_1>0\).
+
+    **Bước 2 — So giá trị hàm số:** \(h(x_2)-h(x_1)=[5-2x_2]-[5-2x_1]=-2(x_2-x_1)&lt;0\).
+
+    **Bước 3 — Kết luận:** \(h(x_2)&lt;h(x_1)\) với mọi \(x_1&lt;x_2\). Theo định nghĩa, \(h\) nghịch biến trên \(\mathbb R\).
+
+    **Kiểm lại:** Cách chứng minh dùng mọi cặp đầu vào, không cần đạo hàm. Nếu thay \(-2\) bằng hệ số dương, dấu của hiệu sẽ đảo chiều và hàm đồng biến.
 
     **Tự luyện thêm.** Ba câu dưới đây là bài em tự làm sau khi xem ví dụ; chỉ mở lời giải khi đã thử xong.
 
@@ -248,60 +296,57 @@
 
 === "Lỗi thường gặp"
 
+    Những lỗi dưới đây là **sai lầm toán học dễ mắc khi giải năm dạng trong bài**, không phải các nhãn lỗi chung chung. Mỗi mục chỉ ra một kết luận sai cụ thể, giải thích vì sao sai, rồi hướng dẫn em tự làm lại. Không coi việc học sinh đã mở “Đối chiếu” là bằng chứng làm chủ kiến thức.
+
     <span data-thpt-help-id="HELP-G10-CHVI-TRY01" hidden></span>
 
-    ??? tip "Gợi ý khắc phục khi chưa làm được — 5 bước"
+    ??? tip "4.1. Nhầm đầu vào lặp với hai đầu ra khác nhau"
 
-        <ol><li><strong>Nhận diện lỗi:</strong> Nhầm “một x xuất hiện hai lần” với “một x có hai kết quả khác nhau”.</li>
-        <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
-        <li><strong>Kiến thức gốc:</strong> Một quy tắc là hàm số trên tập <span class="arithmatex">\(D\)</span> nếu mỗi đầu vào <span class="arithmatex">\(x\in D\)</span> có <strong>đúng một</strong> giá trị đầu ra <span class="arithmatex">\(y\)</span>. Hai dòng trùng hệt <span class="arithmatex">\((x;y)\)</span> không phá điều kiện; nhưng <span class="arithmatex">\((x;y_1)\)</span> và <span class="arithmatex">\((x;y_2)\)</span> với <span class="arithmatex">\(y_1\ne y_2\)</span> thì phá. Sau trực giác ấy mới dùng kí hiệu <span class="arithmatex">\(y=f(x)\)</span>.</li>
-        <li><strong>Tự sửa:</strong> Tách các dòng theo từng x phân biệt, liệt kê mọi y gắn với x đó và thử tính đơn trị. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
-        <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B15-C01">luyện lại một câu có sẵn trong Core/Luyện tập</a>, sau đó tự giải thích bằng lời của mình.</li></ol>
-
+        1. **Dấu hiệu sai:** Thấy bảng A có hai dòng \((3;2)\), vội kết luận “không là hàm số vì \(x=3\) xuất hiện hai lần”.
+        2. **Vì sao sai?** Điều kiện của hàm số là **mỗi \(x\) có đúng một giá trị \(y\)**, chứ không phải mỗi \(x\) chỉ được ghi một dòng. Trong A, \(x=3\) luôn cho \(y=2\), nên không mâu thuẫn. Trong bảng B, \(x=3\) cho cả \(2\) lẫn \(4\), mới vi phạm.
+        3. **Tự kiểm:** Khoanh mọi dòng có cùng \(x\). Nếu chúng có **hai \(y\) khác nhau**, bảng không biểu diễn \(y=f(x)\); nếu các \(y\) trùng nhau, vẫn thỏa điều kiện đơn trị.
+        4. **Sửa lại:** Nêu bằng lời vì sao bảng A là hàm số trên \(D=\{1;3\}\) nhưng bảng B không phải.
+        5. **Tập tiếp:** [Core/Luyện tập C01](luyen-tap.md?item=THPT-G10-B15-C01). Giải thích trước khi mở đối chiếu; không nhân bản câu đã xem làm bài kiểm tra độc lập.
 
     <span data-thpt-help-id="HELP-G10-CHVI-TRY02" hidden></span>
 
-    ??? tip "Gợi ý khắc phục khi chưa làm được — 5 bước"
+    ??? tip "4.2. Đồng nhất tập xác định với tập giá trị"
 
-        <ol><li><strong>Nhận diện lỗi:</strong> Đồng nhất tập x được nhập với tập y nhận được; quên điều kiện dưới dấu căn.</li>
-        <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
-        <li><strong>Kiến thức gốc:</strong> Tập xác định <span class="arithmatex">\(D\)</span> là những <span class="arithmatex">\(x\)</span> <strong>được phép thay vào</strong> biểu thức; tập giá trị <span class="arithmatex">\(T\)</span> gồm mọi <span class="arithmatex">\(y\)</span> thực sự <strong>đạt được</strong> sau khi thay <span class="arithmatex">\(x\in D\)</span>. Ví dụ căn thức vừa giới hạn đầu vào, vừa làm mọi đầu ra không âm; không lấy <span class="arithmatex">\(D=T\)</span> chỉ vì có cùng kí hiệu tập.</li>
-        <li><strong>Tự sửa:</strong> Viết riêng hai câu “x nào hợp lệ?” và “giá trị căn có thể bằng bao nhiêu?” rồi thử tìm x tương ứng với một y bất kỳ. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
-        <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B15-C02">luyện lại một câu có sẵn trong Core/Luyện tập</a>, sau đó tự giải thích bằng lời của mình.</li></ol>
-
+        1. **Dấu hiệu sai:** Với \(f(x)=\sqrt{x-2}\), viết \(D=T=[2;+\infty)\).
+        2. **Vì sao sai?** Điều kiện \(x-2\ge0\) chỉ giới hạn **đầu vào** \(x\ge2\). Đầu ra \(\sqrt{x-2}\) bắt đầu từ \(0\), không phải \(2\).
+        3. **Tự kiểm:** Hỏi riêng “nhập được \(x\) nào?” và “nhận được \(y\) nào?”. Thử \(x=2\) thì \(f(2)=0\); số \(0\) thuộc \(T\), nhưng không thuộc \(D\).
+        4. **Sửa lại:** \(D=[2;+\infty)\), \(T=[0;+\infty)\). Để chắc mọi \(y\ge0\) đều đạt được, chọn \(x=y^2+2\).
+        5. **Tập tiếp:** [Core/Luyện tập C02](luyen-tap.md?item=THPT-G10-B15-C02), sau đó phân biệt miền đầu vào và đầu ra bằng một ví dụ mới.
 
     <span data-thpt-help-id="HELP-G10-CHVI-TRY03" hidden></span>
 
-    ??? tip "Gợi ý khắc phục khi chưa làm được — 5 bước"
+    ??? tip "4.3. Đoán điểm thuộc đồ thị từ hình vẽ hoặc bỏ điều kiện x"
 
-        <ol><li><strong>Nhận diện lỗi:</strong> Đọc nhầm hoành độ với tung độ, hoặc suy thuộc đồ thị chỉ bằng quan sát hình.</li>
-        <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
-        <li><strong>Kiến thức gốc:</strong> Đồ thị của <span class="arithmatex">\(y=f(x)\)</span> là tập tất cả điểm <span class="arithmatex">\((x,f(x))\)</span> với <span class="arithmatex">\(x\in D\)</span>. Việc điểm nằm “gần” nét đồ thị trên hình in không đủ chứng minh: cần thử <span class="arithmatex">\(y=f(x)\)</span> với đúng hoành độ của điểm.</li>
-        <li><strong>Tự sửa:</strong> Thay x của từng điểm vào f, viết cặp ((x;f(x))) rồi so đúng hai tọa độ. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
-        <li><strong>Luyện lại (không nhân bản câu):</strong> Quay lại phần kiến thức liên quan ngay trong bài và thử giải thích phương pháp trước khi xem lại kết quả.</li></ol>
-
+        1. **Dấu hiệu sai:** Nhìn điểm \(B(2;5)\) nằm gần đường cong \(y=x^2-1\), rồi kết luận \(B\) thuộc đồ thị.
+        2. **Vì sao sai?** Hoành độ \(x=2\) cho tung độ đúng bằng \(f(2)=2^2-1=3\), **không phải \(5\)**. Khoảng cách trên hình không chứng minh được quan hệ \(y=f(x)\).
+        3. **Tự kiểm:** Trước khi thay số phải xác định hoành độ nằm trong \(D\). Sau đó tính \(f(x_0)\) và so **chính xác** với tung độ \(y_0\).
+        4. **Sửa lại:** \(A(-2;3)\) thuộc đồ thị vì \(f(-2)=3\). \(B(2;5)\) không thuộc vì \(f(2)=3\ne5\). Với phân thức \(1/(x-2)\), \(x=2\) còn bị loại từ đầu.
+        5. **Tập tiếp:** Trở lại §2.2 và ví dụ 3.1, tự xét một điểm thỏa và một điểm không thỏa, không xem lời giải trước.
 
     <span data-thpt-help-id="HELP-G10-CHVI-TRY05" hidden></span>
 
-    ??? tip "Gợi ý khắc phục khi chưa làm được — 5 bước"
+    ??? tip "4.4. Chọn sai nhánh ở ranh giới và tính phí cho cả quãng đường"
 
-        <ol><li><strong>Nhận diện lỗi:</strong> Áp nhánh x&gt;3 cho ngay x=3 hoặc cộng phí theo x thay vì phần vượt x−3.</li>
-        <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
-        <li><strong>Kiến thức gốc:</strong> Hàm từng đoạn dùng <strong>những công thức khác nhau trên những miền không chồng mâu thuẫn</strong>. Giá trị tại x=2 phải theo nhánh chứa dấu bằng; nếu chọn nhầm, chi phí tại ranh giới và dự đoán tiếp theo đều sai.</li>
-        <li><strong>Tự sửa:</strong> Đánh dấu miền của từng nhánh trên trục số, xét dấu bằng riêng, ghi đơn vị mỗi kết quả. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
-        <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B15-P02">luyện lại một câu có sẵn trong Core/Luyện tập</a>, sau đó tự giải thích bằng lời của mình.</li></ol>
-
+        1. **Dấu hiệu sai:** Với mô hình \(C(x)=12\) khi \(0\le x\le3\), \(C(x)=12+4(x-3)\) khi \(x>3\), áp nhánh \(x>3\) cho \(x=3\), hoặc tính \(C(5)=12+4\cdot5=32\).
+        2. **Vì sao sai?** Số \(3\) thuộc nhánh **có dấu bằng**. Phần phí tăng thêm chỉ tính cho **\(x-3\)** km vượt ngưỡng. Đặc biệt, dùng nhầm nhánh tại \(x=3\) tình cờ cũng cho \(12\): **đúng số không chứng minh đúng phương pháp**.
+        3. **Tự kiểm:** Đánh dấu từng miền lên trục số, thử riêng \(x=3\) và một \(x>3\); kiểm đơn vị \(x\) là km, \(C(x)\) là nghìn đồng.
+        4. **Sửa lại:** \(C(3)=12\) (nhánh thứ nhất), \(C(5)=12+4(5-3)=20\) nghìn đồng (nhánh thứ hai).
+        5. **Tập tiếp:** [Core/Luyện tập P02](luyen-tap.md?item=THPT-G10-B15-P02). Nói rõ nhánh nào được chọn **trước** khi tính.
 
     <span data-thpt-help-id="HELP-G10-CHVI-TRY04" hidden></span>
 
-    ??? tip "Gợi ý khắc phục khi chưa làm được — 5 bước"
+    ??? tip "4.5. Kết luận đồng biến, nghịch biến chỉ từ hai điểm"
 
-        <ol><li><strong>Nhận diện lỗi:</strong> Đoán tăng/giảm từ một cặp điểm rồi mở rộng ra mọi x, hoặc đảo chiều khi trừ hai giá trị.</li>
-        <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
-        <li><strong>Kiến thức gốc:</strong> Trên một khoảng <span class="arithmatex">\(K\)</span>, đồng biến nghĩa là <span class="arithmatex">\(x_1&lt;x_2\)</span> trong K kéo theo <span class="arithmatex">\(f(x_1)&lt;f(x_2)\)</span>. Nếu <span class="arithmatex">\(f(x_1)&gt;f(x_2)\)</span> thì nghịch biến. Khái niệm phụ thuộc vào <strong>khoảng đang xét</strong>, không phải tính chất tuyệt đối của mọi hàm trên <span class="arithmatex">\(\mathbb R\)</span>.</li>
-        <li><strong>Tự sửa:</strong> Viết f(x2)−f(x1), thay chính giả thiết x2−x1&gt;0 và kết luận theo cả khoảng. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
-        <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B15-P03">luyện lại một câu có sẵn trong Core/Luyện tập</a>, sau đó tự giải thích bằng lời của mình.</li></ol>
-
+        1. **Dấu hiệu sai:** Thấy \(f(0)<f(1)\) rồi kết luận ngay “hàm đồng biến trên mọi \(x\)” mà không nêu khoảng đang xét hoặc chưa kiểm các cặp khác.
+        2. **Vì sao sai?** Định nghĩa trên khoảng \(K\) đòi hỏi **mọi** cặp \(x_1<x_2\) trong \(K\). Ví dụ \(g(x)=x^2\) giảm trước \(0\) và tăng sau \(0\); một cặp có giá trị tăng không đủ suy ra đơn điệu trên \(\mathbb R\).
+        3. **Tự kiểm:** Viết rõ \(K\), chọn \(x_1<x_2\) **bất kì** cùng thuộc \(K\), xét dấu \(f(x_2)-f(x_1)\). Không đảo dấu khi trừ hai giá trị.
+        4. **Sửa lại:** Với \(f(x)=3x+2\) trên \([-1;2]\), \(f(x_2)-f(x_1)=3(x_2-x_1)>0\) cho mọi \(x_1<x_2\), nên đồng biến trên khoảng đang xét.
+        5. **Tập tiếp:** [Core/Luyện tập P03](luyen-tap.md?item=THPT-G10-B15-P03). Tự giải thích dấu hiệu số học trước khi mở đáp án.
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 

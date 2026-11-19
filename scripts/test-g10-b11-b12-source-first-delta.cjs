@@ -97,7 +97,7 @@ assert.equal(gitblob(css.slice(0,at14-1)),get13("CANDIDATE_GOLDEN_CSS_BLOB"),
  "B13 fully owner-P2 accepted CSS must remain exact prior prefix");
 assert.equal(get14("G10_B01_B13_FROZEN_CSS_BLOB"),get13("CANDIDATE_GOLDEN_CSS_BLOB"),
  "B14 signed previous CSS cannot disagree with B13 reviewed receipt");
-assert.equal(gitblob(css),get14("CANDIDATE_GOLDEN_CSS_BLOB"),
+assert.equal(gitblob(require("./test-g10-b15-golden-css-source.cjs").publishedB14Ancestor(css)),get14("CANDIDATE_GOLDEN_CSS_BLOB"),
  "B14 candidate CSS must match signed X-C receipt without altering accepted prefix");
 assert(!/!!! (example|abstract|info)/.test(
  fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-v/bai-12.md"),"utf8")),

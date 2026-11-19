@@ -443,7 +443,7 @@ for(const [lesson,row] of rows){
     "B13 owner P2 source/stylesheet snapshot remains byte-identical");
    assert.equal(b14Field("G10_B01_B13_FROZEN_CSS_BLOB"),b13Field("CANDIDATE_GOLDEN_CSS_BLOB"),
     "B14 source receipt matches prior approved Golden CSS");
-   assert.equal(blob(css),b14Field("CANDIDATE_GOLDEN_CSS_BLOB"),
+   assert.equal(blob(require("./test-g10-b15-golden-css-source.cjs").publishedB14Ancestor(css)),b14Field("CANDIDATE_GOLDEN_CSS_BLOB"),
     "B14 new scoped UI SHA must match X-C signed receipt");
    assert(b13Receipt.includes("Q18_OWNER_SELF_VERIFIED_ENRICHMENT_PASS")&&
     b13Receipt.includes("S1_SCOPE_MATH_CONVENTION_VERIFIED")&&

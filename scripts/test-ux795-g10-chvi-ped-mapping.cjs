@@ -25,8 +25,19 @@ for(const n of [15,16,17,18]){
  if(editorial)assert.equal(editorial.baseline,historic,"B"+n+" S1 editorial source chain must start from original PED map");
  const ux=chviExampleUxReceiptRows().get("B"+n);
  if(ux)assert.equal(ux.baseline,editorial.candidate,"B"+n+" follow-on UX cannot rewrite historical PED/S1 source");
- assert.equal(blob,ux?ux.candidate:(editorial?editorial.candidate:historic),
-  "B"+n+" candidate must equal exact signed Q18 source chain");
+ const expected=candidateG10KnowledgeBlob(n);
+ if(n!==15)assert.equal(expected,ux?ux.candidate:(editorial?editorial.candidate:historic),
+  "B"+n+" other ChVI source must remain at historical approved signed Q18 SHA");
+ else{
+  const latest=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHVI_B15_OWNER_Q18_KNOWLEDGE_ENRICHMENT_20261119.md"),"utf8");
+  const f=k=>latest.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(f("BASELINE_PUBLISHED_B15_BLOB"),ux.candidate,
+   "B15 latest Q18 must start from immutable ChVI UX approved snapshot");
+  assert.equal(f("CANDIDATE_B15_SOURCE_BLOB"),expected,
+   "B15 latest source must match one new Q18 owner self-verification receipt");
+ }
+ assert.equal(blob,expected,"B"+n+" learner source matches one canonical current source");
  assert.equal(blob,candidateG10KnowledgeBlob(n),"B"+n+" Q18 router disagrees with source");
  const local=rows.filter(line=>line.startsWith("| B"+n+" |"));
  assert.equal(local.length,n===18?4:5,"B"+n+" missing/extra outcomes");

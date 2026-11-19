@@ -58,7 +58,7 @@ assert.equal(blob(Buffer.from(css.slice(0,b14At-1))),b13Field("CANDIDATE_GOLDEN_
  "B13 owner P2 CSS remains exact ancestor without edits");
 assert.equal(b14Field("G10_B01_B13_FROZEN_CSS_BLOB"),b13Field("CANDIDATE_GOLDEN_CSS_BLOB"),
  "B14 signed prior CSS must match B13 candidate CSS");
-assert.equal(blob(buf(cssPath)),b14Field("CANDIDATE_GOLDEN_CSS_BLOB"),
+assert.equal(blob(require("./test-g10-b15-golden-css-source.cjs").publishedB14Ancestor(buf(cssPath))),b14Field("CANDIDATE_GOLDEN_CSS_BLOB"),
  "B14 exact CSS SHA signed X-C, not altered old B13 receipt");
 const runtimePath="docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js";
 const runtime=read(runtimePath);

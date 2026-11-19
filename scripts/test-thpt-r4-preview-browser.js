@@ -2,14 +2,14 @@
 const assert=require("node:assert/strict");
 const fs=require("node:fs");
 const crypto=require("node:crypto");
-const {chviEditorialReceiptRows,chviExampleUxReceiptRows}=require("./thpt-q18-g10-source-receipt.cjs");
+const {chviEditorialReceiptRows,chviExampleUxReceiptRows,candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 function signedChviBlob(name){
  const original=chviEditorialReceiptRows().get(name);
  const next=chviExampleUxReceiptRows().get(name);
  if(!next)return original?.candidate;
  assert(original,name+" UX delta without signed original S1 receipt");
  assert.equal(next.baseline,original.candidate,name+" published → Golden UX delta identity chain");
- return next.candidate;
+ return name==="B15"?candidateG10KnowledgeBlob(15):next.candidate;
 }
 const {chromium}=require("playwright");
 // Run the same no-duplicate / assessment-exposure contract on every THPT QA run.

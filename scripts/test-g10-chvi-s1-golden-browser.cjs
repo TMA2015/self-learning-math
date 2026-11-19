@@ -6,7 +6,7 @@
 const assert=require("node:assert/strict"),{chromium}=require("playwright");
 const base=process.env.CHVI_BASE_URL||"http://127.0.0.1:8765/thpt-preview/sgk/chuong-vi/";
 const specs=[
- {n:15,tries:5,helps:5,books:["2.1. Khái niệm hàm số","2.2. Đồ thị của hàm số","2.3. Sự đồng biến, nghịch biến của hàm số"],ex:1,figures:1},
+ {n:15,tries:5,helps:5,books:["2.1. Khái niệm hàm số","2.2. Đồ thị của hàm số","2.3. Sự đồng biến, nghịch biến của hàm số"],ex:4,figures:1},
  {n:16,tries:5,helps:5,books:["2.1. Khái niệm hàm số bậc hai","2.2. Đồ thị của hàm số bậc hai"],ex:4,figures:2},
  {n:17,tries:5,helps:5,books:["2.1. Dấu của tam thức bậc hai","2.2. Bất phương trình bậc hai"],ex:4,figures:1},
  {n:18,tries:4,helps:4,books:["2.1. Phương trình dạng","2.2. Phương trình dạng"],ex:4,figures:1}
@@ -38,6 +38,7 @@ const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi t
      for(let i=0;i<item.books.length;i++)
       assert(heads[i].trim().startsWith(item.books[i]),where+" S1 heading "+(i+1));
      assert.deepEqual((await blocks.nth(0).locator(":scope > h3").allInnerTexts()).map(x=>x.trim()),
+      item.n===15?["1.1. Vì sao cần học hàm số?","1.2. Tự khám phá năm tình huống","1.3. Kiến thức tiền đề và mục tiêu"]:
       ["1.1. Cùng tìm hiểu","1.2. Ví dụ trực quan","1.3. Thuật ngữ, kiến thức và kỹ năng"],
       where+" 1.x discovery sequence");
      const tries=blocks.nth(0).locator("[data-thpt-first-try-id]"),
@@ -50,6 +51,37 @@ const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi t
       where+" extra worked examples cannot clone canonical item");
      assert.equal(await blocks.nth(3).locator("[data-thpt-help-id]").count(),item.helps,
       where+" 5-step D6 cards in last tab");
+     if(item.n===15){
+      assert.equal(await blocks.nth(1).locator(".thpt-r4-concept-card").count(),4,
+       where+" four typed S1 concept/definition Golden cards");
+      assert.equal(await blocks.nth(1).locator(".thpt-r4-rule-card").count(),1,
+       where+" one proper S1 membership-rule Golden card");
+      const palette=await blocks.nth(1).evaluate(el=>{
+       const concept=el.querySelector(".thpt-r4-concept-card"),rule=el.querySelector(".thpt-r4-rule-card");
+       const c=getComputedStyle(concept),r=getComputedStyle(rule);
+       return {cBg:c.backgroundColor,rBg:r.backgroundColor,cLine:c.borderLeftColor,rLine:r.borderLeftColor};
+      });
+      assert(palette.cBg!==palette.rBg&&palette.cLine!==palette.rLine,
+       where+" Golden must visually distinguish teal definitions from blue rule, not just count classes");
+      assert(!["rgba(0, 0, 0, 0)","transparent"].includes(palette.cBg)&&
+       !["rgba(0, 0, 0, 0)","transparent"].includes(palette.rBg),
+       where+" semantic role cards must have visible backgrounds");
+      const ordered=await blocks.nth(0).innerText();
+      const promptLabels=(await blocks.nth(0).locator("strong").allInnerTexts()).map(s=>s.trim());
+      assert.equal(promptLabels.filter(s=>s==="Vận dụng.").length,5,
+       where+" all five learner-visible prompts must be exactly Vận dụng.");
+      assert.equal(promptLabels.filter(s=>/^(?:Em\s+vận\s+dụng|Em\s+tự\s+thử|Tự\s+thử)\.?$/iu.test(s)).length,0,
+       where+" obsolete Em vận dụng/Em tự thử/Tự thử learner headings forbidden");
+      assert(!/\bEm\s+(?:vận\s+dụng|tự\s+thử)\b/iu.test(ordered),
+       where+" no Em vận dụng or Em tự thử anywhere in learner-facing Discovery");
+      assert.equal((ordered.match(/Vận dụng\./g)||[]).length,5,
+       where+" exactly five visible Vận dụng prompts, not substring-only pseudo-pass");
+      const mistakes=await blocks.nth(3).locator("details.tip > summary").allInnerTexts();
+      assert.equal(mistakes.length,5,where+" five source-aligned D6 errors");
+      assert.equal(new Set(mistakes).size,5,where+" five D6 headings must be truly distinct");
+      assert(mistakes.every(x=>/^4\.[1-5]\. /u.test(x)),
+       where+" D6 headings must describe a concrete numbered wrong method");
+     }
      assert.equal(await article.locator("details.question[open],details.tip[open]").count(),0,
       where+" answer/help must not open before learner action");
      await lab.nth(0).click();
@@ -98,7 +130,8 @@ const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi t
         where+" B16 conceptual two-model comparison must remain together");
       }else{
        assert(block.firstStrong.startsWith("Lời giải."),where+" boxed content must BEGIN at the worked solution");
-       assert(block.outsideText.includes("Đề bài."),where+" problem statement must remain outside solution panel");
+       assert(block.outsideText.includes(item.n===15?"Đề:":"Đề bài."),
+        where+" problem statement must remain outside solution panel");
        assert(!block.panelText.includes("Đề bài."),where+" full worked example boxed rather than solution only");
        for(const disallowed of ["Tự luyện thêm.","Giới hạn cần nhớ:","Điều cần nhớ.","Tự mở rộng.",
          "Tự kiểm:","Kiểm lại:","Khi nào dùng cách này?","Xem lời giải ba câu tự luyện"])

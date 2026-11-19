@@ -52,5 +52,10 @@ for(const [path,key] of [
  ["docs/thpt-preview/sgk/chuong-v/bai-13.md","B13_P2_LEARNER_BLOB"],
  ["docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css","GOLDEN_CSS_BLOB"],
  ["docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js","PUBLIC_B13_B14_BANK_BLOB"]
-]) assert.equal(gitblob(bytes(path)),field(key),"Out-of-scope approved source changed: "+path);
+]){
+ const raw=bytes(path);
+ const immutable=path.endsWith("thpt-g10-knowledge-hybrid-l1-v1.css")?
+   require("./test-g10-b15-golden-css-source.cjs").publishedB14Ancestor(raw):raw;
+ assert.equal(gitblob(immutable),field(key),"Out-of-scope approved source changed: "+path);
+}
 console.log("PASS G10 B14 Delta A: exact three Em tự thử → Em vận dụng replacements; 5 existing First Try and Đối chiếu placements; immutable published math, approved B12/B13, Golden CSS, bank and Q18 receipt.");

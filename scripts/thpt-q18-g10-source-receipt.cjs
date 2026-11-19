@@ -381,8 +381,19 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    "B13 owner-P2 style stays byte-identical prefix after B14");
   assert.equal(b14f("G10_B01_B13_FROZEN_CSS_BLOB"),f("CANDIDATE_GOLDEN_CSS_BLOB"),
    "B14 signed previous Golden CSS is B13 published baseline");
-  assert.equal(calc(css),b14f("CANDIDATE_GOLDEN_CSS_BLOB"),
-   "B14 final Golden appendix must match signed owner X-C candidate");
+  const b15Marker="/* G10 ChVI B15 · exact TRY01 canonical only";
+  const atB15=cssFull.indexOf(b15Marker);
+  const q15=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHVI_B15_OWNER_Q18_KNOWLEDGE_ENRICHMENT_20261119.md"),"utf8");
+  const v15=k=>q15.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert(atB15>0&&cssFull.indexOf(b15Marker,atB15+1)<0,
+   "B15 new semantic CSS append must exist once");
+  assert.equal(calc(Buffer.from(cssFull.slice(0,atB15-1))),b14f("CANDIDATE_GOLDEN_CSS_BLOB"),
+   "B14 fully published CSS must remain exact frozen prefix before B15");
+  assert.equal(v15("ORIGINAL_ACCEPTED_GOLDEN_CSS_BLOB"),b14f("CANDIDATE_GOLDEN_CSS_BLOB"),
+   "B15 proposed scoped CSS must extend B14 baseline");
+  assert.equal(calc(css),v15("CANDIDATE_SCOPED_GOLDEN_CSS_BLOB"),
+   "B15 scoped final CSS matches Q18 candidate SHA");
   const sourceText=fs.readFileSync(path.join(root,
    "docs/thpt-preview/sgk/chuong-iv/bai-11.md"),"utf8");
   assert.equal(calc(Buffer.from(sourceText)),g("B11_SOURCE_CURRENT_BLOB"),
@@ -551,7 +562,19 @@ function expectedG10KnowledgeBlob(lesson,legacy){
     .update(Buffer.from("blob "+b.length+String.fromCharCode(0))).update(b).digest("hex");};
    assert.equal(blob(Buffer.from(full.slice(0,at-1))),cssBase,
     "B01–B13 owner-P2 CSS prefix must remain byte-exact");
-   assert.equal(blob(css),cssNext,"B14 scoped CSS candidate must match signed receipt");
+   const b15Marker="/* G10 ChVI B15 · exact TRY01 canonical only";
+   const atB15=full.indexOf(b15Marker);
+   assert(atB15>0&&full.indexOf(b15Marker,atB15+1)<0,
+    "B15 scoped Golden appendix must exist once");
+   assert.equal(blob(Buffer.from(full.slice(0,atB15-1))),cssNext,
+    "B14 owner-P2 CSS must remain exact ancestor before B15");
+   const b15=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHVI_B15_OWNER_Q18_KNOWLEDGE_ENRICHMENT_20261119.md"),"utf8");
+   const b15f=k=>b15.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(b15f("ORIGINAL_ACCEPTED_GOLDEN_CSS_BLOB"),cssNext,
+    "B15 receipt must chain to B14 owner-P2 CSS");
+   assert.equal(blob(css),b15f("CANDIDATE_SCOPED_GOLDEN_CSS_BLOB"),
+    "B15 scoped CSS must match signed Q18 candidate");
    const labelReceipt=fs.readFileSync(path.join(root,
     "prototypes/thpt/ux795/G10_CHV_B14_EM_VAN_DUNG_LABEL_DELTA_A_R01_20261119.md"),"utf8");
    const labelField=k=>labelReceipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
@@ -641,6 +664,27 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    assert.equal(chvii.examples,({B19:2,B20:2,B21:2,B22:3})[name],name+" anti-ChVI Golden worked-example count");
   }
   const ux=chviExampleUxReceiptRows().get(name);
+  if(name==="B15"){
+   assert(ux&&ux.baseline===row.candidate,
+    "B15 new Q18 follows exact old editorial + UX frozen lineage");
+   const receipt=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHVI_B15_OWNER_Q18_KNOWLEDGE_ENRICHMENT_20261119.md"),"utf8");
+   const f=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(f("BASELINE_PUBLISHED_B15_BLOB"),ux.candidate,
+    "B15 canonical source must extend exactly published B15 UX source");
+   assert.equal(f("ORIGINAL_ACCEPTED_GOLDEN_CSS_BLOB"),
+    "bda67d4ed6368179c5a8c9e0a368e149304ab71c",
+    "B15 CSS predecessor remains approved B14 snapshot");
+   const next=f("CANDIDATE_B15_SOURCE_BLOB");
+   assert(/^[a-f0-9]{40}$/.test(next||"")&&next!==ux.candidate,
+    "B15 Q18 candidate requires distinct real Git source hash");
+   for(const marker of ["Q18_OWNER_SELF_VERIFIED_ENRICHMENT",
+    "DELTA_C_ACADEMIC_MATERIAL","B15_OUT_01","B15_OUT_05",
+    "P0=0 P1=0","TRY03","SOURCE_REFERENCE"]){
+    assert(receipt.includes(marker),"B15 actual G0/G1/G2 Q18 evidence missing "+marker);
+   }
+   return next;
+  }
   if(ux){
    assert(chvi&&!chiv&&!chv,name+" UX follow-on restricted to published Chapter VI source");
    assert.equal(ux.baseline,row.candidate,name+" immutable source chain: original ChVI receipt → UX delta");
