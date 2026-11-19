@@ -176,7 +176,7 @@
     y=ax^2+bx+c,\qquad a,b,c\in\mathbb{R},\ a\ne 0.
     \]
 
-    Tập xác định là \(\mathbb{R}\). Điều kiện \(a\ne 0\) là bắt buộc; nếu \(a=0\) thì biểu thức không còn là hàm bậc hai.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Hàm số bậc hai:</strong> \(y=ax^2+bx+c\), với \(a,b,c\in\mathbb R\) và <strong>\(a\ne0\)</strong>. Tập xác định là \(\mathbb R\). Nếu \(a=0\), hạng tử bình phương mất đi; không dùng quy tắc của parabol cho hàm bậc nhất hoặc hằng.</div>
 
 
 
@@ -201,9 +201,9 @@
     y=a(x-h)^2+k,\qquad h=-\frac{b}{2a},\quad k=f(h)=-\frac{\Delta}{4a},\qquad \Delta=b^2-4ac.
     \]
 
-    - Đỉnh \(I(h;k)\), trục đối xứng \(x=h\).
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Đỉnh và trục đối xứng:</strong> Với \(a\ne0\), đỉnh \(I(h;k)\), trục đối xứng \(x=h\), trong đó \(h=-\frac{b}{2a}\) và \(k=f(h)\). Hai điểm có hoành độ cách đều \(h\) sẽ có cùng tung độ.</div>
 
-    **Tính chất theo dấu hệ số.** Nếu \(a>0\), parabol mở lên, hàm **nghịch biến trên \((-\infty;h)\)**, **đồng biến trên \((h;+\infty)\)** và có tập giá trị \([k;+\infty)\). Nếu \(a<0\), parabol mở xuống, hàm **đồng biến trên \((-\infty;h)\)**, **nghịch biến trên \((h;+\infty)\)** và có tập giá trị \((-\infty;k]\). Các kết luận xét trên \(\mathbb R\); với miền thực tế phải giao với miền ấy.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Dấu \(a\) quyết định sự biến thiên:</strong> Nếu \(a>0\), parabol mở lên, hàm <strong>nghịch biến trên \((-\infty;h)\)</strong>, <strong>đồng biến trên \((h;+\infty)\)</strong>, có GTNN \(k\) và tập giá trị \([k;+\infty)\). Nếu \(a<0\), parabol mở xuống, hàm <strong>đồng biến trên \((-\infty;h)\)</strong>, <strong>nghịch biến trên \((h;+\infty)\)</strong>, có GTLN \(k\) và tập giá trị \((-\infty;k]\). Các kết luận trên \(\mathbb R\); với miền thực tế chỉ xét phần thuộc miền cho phép.</div>
 
 
 
