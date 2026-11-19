@@ -7,9 +7,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_LEARNER_PRESENTATION_20261116.md
-ACADEMIC_SOURCE_BLOB: aa325637f659bc5f8ba504f6ce0129e07340a41d
+ACADEMIC_SOURCE_BLOB: 60b62c112ce6df70849379b9e0aba828031d00ac
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC21_R06_CURRENT_SOURCE_Q18_AUTHOR_SELF_QA_RECEIPT_20261118.md
-REVIEW_RECEIPT_BLOB: b58ec1516f8f1618a0c5ae173ba8451be02f929e
+REVIEW_RECEIPT_BLOB: 28f53dd1279dc065e7f429f7337ba8f5df90acb8
 ACADEMIC_VERDICT: SELF_VERIFIED
 PEDAGOGICAL_VERDICT: SELF_VERIFIED
 BLOCKERS: NONE
@@ -20,13 +20,13 @@ RELEASE_AUTHORIZATION: NO
 PRIVATE_RD1_COUNT: 8
 PRIVATE_RD1_SHA256: c4242630d329f794e570cc406939fd85d5f65302b8b286ddcd2c74e8220a2e3b
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_A1_A7_TECHNICAL_SOURCE_PARITY_20261116.md
-AUTHOR_A1_A7_BLOB: 1ea2b6a48abb8fa8d84025511177eb7671a765d4
+AUTHOR_A1_A7_BLOB: 84e79e01031b5ab3be5e9efa8afd64dda5fd5934
 
 CONTENT_REVISION: R06_IN_PLACE
 ORIGINAL_IMMUTABLE_R04_SOURCE_BLOB: 2fa6557286aba05dd0eea972d4c4ac68371842d7
 ORIGINAL_IMMUTABLE_R04_RECEIPT_BLOB: 3dec04e92a96d24b4b77ebda144bc1ca80b8f1f8
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_A1_A7_TECHNICAL_SOURCE_PARITY_20261116.md
-AUTHOR_METADATA_BLOB: 1ea2b6a48abb8fa8d84025511177eb7671a765d4
+AUTHOR_METADATA_BLOB: 84e79e01031b5ab3be5e9efa8afd64dda5fd5934
 
 ## R05_CURRENT_SOURCE_AND_EQUIVALENT_DELTA
 
@@ -164,15 +164,15 @@ AUTHORING verifies R05 source-equiv student headings + eight actual public selfc
 
 ## 18/11/2026 — one current in-place learner + handoff custody
 
-- This **same V2 handoff path** now points to current learner Git blob `aa325637f659bc5f8ba504f6ce0129e07340a41d` with exact current Q15/Q18 author-targeted receipt `062927424ab6d58b8560def38819de3663328e11` and A1 source custody `da80aa915b21d2ed2ea474602b31e331e4fafa05`. Previously signed source `65938a700e0da630694e9cbb6e636d337e67aeb5`, receipt `aa3e00f55eb8f6930e23e9b15bbba3ba2d8e972a` and metadata `fce97e1d11a803f234e62ec5c05b9cd2f77af540` are *historic*, not parallel live handoffs.
+- This **same V2 handoff path** now points to current learner Git blob `60b62c112ce6df70849379b9e0aba828031d00ac` with exact current Q15/Q18 author-targeted receipt `062927424ab6d58b8560def38819de3663328e11` and A1 source custody `da80aa915b21d2ed2ea474602b31e331e4fafa05`. Previously signed source `65938a700e0da630694e9cbb6e636d337e67aeb5`, receipt `aa3e00f55eb8f6930e23e9b15bbba3ba2d8e972a` and metadata `fce97e1d11a803f234e62ec5c05b9cd2f77af540` are *historic*, not parallel live handoffs.
 - The effective learner file keeps existing original filename while learner content was edited in-place under version `R06_IN_PLACE`; no alternate learner Markdown and no new canonical bank. 10/10 Q15 item/version/placement assertions and V2 intake on current branch passed after archival of historical ready manifests; mathematical stems, solutions and rubrics unaffected.
 - This is a staged **AUTHORING-only V2 with explicit BLOCKER**, not a `ready/` acceptance: targeted D6 pedagogy is DELTA_C and needs affected-scope independent review before Academic+PED CONTENT_READY can be granted. Do not restore superseded historical ready manifests, leak private RD1, record Mastery, merge or deploy.
 
 ## EFFECTIVE R06 AUTHORING INDEPENDENT REVIEW RECONCILIATION (18/11/2026)
 
-CURRENT_LEARNER_SOURCE_BLOB: aa325637f659bc5f8ba504f6ce0129e07340a41d
+CURRENT_LEARNER_SOURCE_BLOB: 60b62c112ce6df70849379b9e0aba828031d00ac
 CURRENT_Q18_AUTHOR_RECEIPT_BLOB: d67d28772fe1f724624b19f314dd6df1f62c8cc7
-CURRENT_A1_A7_BLOB: 1ea2b6a48abb8fa8d84025511177eb7671a765d4
+CURRENT_A1_A7_BLOB: 84e79e01031b5ab3be5e9efa8afd64dda5fd5934
 CURRENT_Q15_MATRIX_BLOB: 522d13493d18ec53280a752dc5498e92c8896805
 TARGETED_INDEPENDENT_REVIEW_PATH: prototypes/thpt/review-packets/Temp_TOPIC21_R06_D6_INDEPENDENT_OWNER_PASTED_VERDICT_20261118.md
 TARGETED_INDEPENDENT_REVIEW_BLOB: 06157b8c7e5873611b463f991620c466b72e2741
@@ -193,4 +193,7 @@ Historical R05 and any old trailing sentences claiming independent PED_PENDING o
 
 ## V2 canonical receipt precedence for exact-ready CI
 
-The normative current SOURCE-LOCKED Q18 receipt for this V2 is `prototypes/thpt/review-packets/Temp_TOPIC21_R06_CURRENT_SOURCE_Q18_AUTHOR_SELF_QA_RECEIPT_20261118.md`, Git blob `b58ec1516f8f1618a0c5ae173ba8451be02f929e`, using `AUTHOR_SELF_VERIFIED` on the full Topic. Owner-pasted independent 8/8 D6 verdict is separately pinned in that Q18 record; do not conflate the two scopes. The underlying in-place author-targeted Q18 `d67d28772fe1f724624b19f314dd6df1f62c8cc7` remains subsidiary source evidence and is **not** the V2 gate's canonical `REVIEW_RECEIPT_PATH`. The top-level `ACADEMIC_VERDICT: SELF_VERIFIED` and `PEDAGOGICAL_VERDICT: SELF_VERIFIED` are required mode values, not a claim of independent full-Topic reviewer PASS. AUTHORING no P0/P1; RELEASE remains blocked pending its own gates and owner permission.
+The normative current SOURCE-LOCKED Q18 receipt for this V2 is `prototypes/thpt/review-packets/Temp_TOPIC21_R06_CURRENT_SOURCE_Q18_AUTHOR_SELF_QA_RECEIPT_20261118.md`, Git blob `28f53dd1279dc065e7f429f7337ba8f5df90acb8`, using `AUTHOR_SELF_VERIFIED` on the full Topic. Owner-pasted independent 8/8 D6 verdict is separately pinned in that Q18 record; do not conflate the two scopes. The underlying in-place author-targeted Q18 `d67d28772fe1f724624b19f314dd6df1f62c8cc7` remains subsidiary source evidence and is **not** the V2 gate's canonical `REVIEW_RECEIPT_PATH`. The top-level `ACADEMIC_VERDICT: SELF_VERIFIED` and `PEDAGOGICAL_VERDICT: SELF_VERIFIED` are required mode values, not a claim of independent full-Topic reviewer PASS. AUTHORING no P0/P1; RELEASE remains blocked pending its own gates and owner permission.
+
+
+**19/11 owner Delta A:** 8 micro discovery headings removed and one Bayes formula label classified, mathematical conditional probability calculations unchanged; Q18/A1/source relocked, CONTENT_READY retained.
