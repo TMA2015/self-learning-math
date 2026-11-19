@@ -432,8 +432,19 @@ for(const [lesson,row] of rows){
    const b13Receipt=fs.readFileSync(path.join(root,
     "prototypes/thpt/ux795/G10_CHV_B13_S1_Q18_GOLDEN_ENRICHMENT_DELTA_R01_20261119.md"),"utf8");
    const b13Field=k=>b13Receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
-   assert.equal(blob(css),b13Field("CANDIDATE_GOLDEN_CSS_BLOB"),
-    "B13 scoped UI appendix SHA must match source receipt");
+   const b14Marker="/* G10 ChV B14 · scoped X-C RELEASE Golden";
+   const b14At=b13CssText.indexOf(b14Marker);
+   const b14Receipt=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHV_B14_Q18_GOLDEN_ENRICHMENT_DELTA_R01_20261119.md"),"utf8");
+   const b14Field=k=>b14Receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert(b14At>0&&b13CssText.indexOf(b14Marker,b14At+1)<0,
+    "B14 scoped CSS appended exactly once to B01–B13 accepted prefix");
+   assert.equal(blob(Buffer.from(b13CssText.slice(0,b14At-1))),b13Field("CANDIDATE_GOLDEN_CSS_BLOB"),
+    "B13 owner P2 source/stylesheet snapshot remains byte-identical");
+   assert.equal(b14Field("G10_B01_B13_FROZEN_CSS_BLOB"),b13Field("CANDIDATE_GOLDEN_CSS_BLOB"),
+    "B14 source receipt matches prior approved Golden CSS");
+   assert.equal(blob(css),b14Field("CANDIDATE_GOLDEN_CSS_BLOB"),
+    "B14 new scoped UI SHA must match X-C signed receipt");
    assert(b13Receipt.includes("Q18_OWNER_SELF_VERIFIED_ENRICHMENT_PASS")&&
     b13Receipt.includes("S1_SCOPE_MATH_CONVENTION_VERIFIED")&&
     b13Receipt.includes("P0=0; P1=0"),
