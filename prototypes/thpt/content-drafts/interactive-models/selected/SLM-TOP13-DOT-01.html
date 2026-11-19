@@ -35,6 +35,10 @@ button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visi
 canvas,svg{background:var(--slm-canvas)!important;border-color:var(--slm-border)!important}
 .canvaswrap,.d5-stage,.d5-graph,.pane,article,.field,.box,.panel,section{border-color:var(--slm-border)!important}
 .summary,.d5-results,.output,.result,.answer,.stats,.field{background:var(--slm-canvas)!important}
+.d5-check{margin-top:12px;padding:10px 13px;border:1px solid #bfdde8;border-radius:11px;background:#fbfdff}
+.d5-check summary{cursor:pointer;font-weight:700;min-height:30px;color:#155d80}
+.d5-check summary:focus-visible{outline:3px solid #e9922a;outline-offset:3px}
+.d5-check .d5-results{margin-top:10px}
 </style></head><body>
 <section class="d5-box" aria-label="Phòng thí nghiệm vectơ và tích vô hướng">
 <header class="d5-head"><h1>Tích vô hướng: góc giữa hai vectơ nói lên điều gì?</h1>
@@ -46,10 +50,11 @@ canvas,svg{background:var(--slm-canvas)!important;border-color:var(--slm-border)
 <div><label for="magV">Độ dài |v|: <output id="vOut" for="magV">3</output></label><input id="magV" type="range" min="1" max="6" value="3" step="0.1"></div>
 </div>
 <div class="d5-actions"><button type="button" data-a="0">Cùng hướng · 0°</button><button type="button" data-a="90">Vuông góc · 90°</button><button type="button" data-a="180">Ngược hướng · 180°</button><button type="button" id="reset">Đặt lại</button></div>
-<div class="d5-stage"><canvas id="vectors" role="img" aria-label="Hai vectơ cùng gốc O: u xanh dương nằm ngang, v xanh lá quay được. Đường nét đứt biểu diễn hình chiếu vuông góc. Hình bình hành của tổng vectơ có nét mờ. Giá trị số được ghi ở bên dưới."></canvas></div>
-<div id="readout" class="d5-results" role="status" aria-live="polite"></div>
-<p class="d5-note">Hình chiếu có thể nằm phía <strong>trái O</strong> khi góc tù: độ dài hình chiếu có hướng \(|v|\cos α\) lúc đó là số âm. Đường chéo hình bình hành biểu diễn tổng vectơ u + v, nhưng <strong>không</strong> phải tích vô hướng. Dùng thanh trượt nếu không muốn kéo các điểm trên màn hình cảm ứng.</p>
-<p class="d5-note">Hoạt động trong phần Kiến thức/Vận dụng, không chấm điểm hoặc ghi mức thành thạo. Độ dài hai vectơ luôn dương để góc giữa chúng có nghĩa.</p>
+<div class="d5-stage"><canvas id="vectors" role="img" aria-label="Hai vectơ cùng gốc O: u xanh dương nằm ngang, v xanh lá quay được. Đường nét đứt từ v xuống trục là đường chiếu, đoạn OH màu cam có hướng biểu diễn thành phần chiếu của v lên u. Hình bình hành của tổng vectơ có nét mờ. Giá trị số được ghi ở bên dưới."></canvas></div>
+<p class="d5-note"><strong>Tự thử trước khi xem kết quả:</strong> Dự đoán dấu của u · v và xem hình chiếu H nằm bên phải O, trùng O hay bên trái O. Thử góc 0°, 90° và 180° rồi giải thích bằng cos α.</p>
+<details id="selfcheck" class="d5-check"><summary>Đối chiếu dự đoán và giải thích</summary><div id="readout" class="d5-results" role="status" aria-live="polite"></div></details>
+<p class="d5-note">Hình chiếu có thể nằm phía <strong>trái O</strong> khi góc tù: thành phần hình chiếu có hướng |v| cos α lúc đó là số âm (còn độ dài đoạn OH luôn không âm). Đường chéo hình bình hành biểu diễn tổng vectơ u + v, nhưng <strong>không</strong> phải tích vô hướng. Dùng thanh trượt nếu không muốn kéo các điểm trên màn hình cảm ứng.</p>
+<p class="d5-note">Hoạt động trong phần Kiến thức/Vận dụng, không chấm điểm hoặc ghi mức thành thạo. Độ dài hai vectơ luôn dương để góc giữa chúng có nghĩa; nếu một vectơ bằng 0, góc giữa hai vectơ không xác định dù tích vô hướng bằng 0.</p>
 </main></section>
 <script>
 (function(){
@@ -77,7 +82,7 @@ function draw(){
  segment(pt(-6,0),pt(6,0),"#95afbe",1.5);segment(pt(0,-2),pt(0,6),"#95afbe",1.5);
  segment(U,W,"#b7ccdc",1.6,[5,5]);segment(V,W,"#b7ccdc",1.6,[5,5]);
  segment(O,W,"#b7ccdc",1.5,[5,5]);
- segment(V,H,"#d98f2e",1.7,[5,5]);
+ segment(V,H,"#d98f2e",1.7,[5,5]);segment(O,H,"#e9922a",4);
  segment(O,U,"#1687b4",2.8);segment(O,V,"#218f73",2.8);
  function arrow(from,to,color){const dx=to[0]-from[0],dy=to[1]-from[1],angle=Math.atan2(dy,dx),len=10;c.strokeStyle=color;c.lineWidth=2.3;c.beginPath();c.moveTo(to[0]-len*Math.cos(angle-.55),to[1]-len*Math.sin(angle-.55));c.lineTo(...to);c.lineTo(to[0]-len*Math.cos(angle+.55),to[1]-len*Math.sin(angle+.55));c.stroke();}
  arrow(O,U,"#1687b4");arrow(O,V,"#218f73");circle(U,"#1687b4",5.3);circle(V,"#218f73",5.3);circle(H,"#e9922a",3.8);circle(O,"#55788a",3.5);
@@ -91,10 +96,10 @@ function draw(){
  else meaning="Tích vô hướng âm: góc tù (hoặc 180°), thành phần chiếu của v ngược chiều u.";
  readout.textContent="α = "+fmt(Number(theta.value))+"°; hình chiếu có hướng của v lên u = |v|cos α = "+fmt(signed)+". u · v = |u||v|cos α = "+fmt(dot)+". "+meaning;
 }
-let busy=false;function schedule(){if(busy)return;busy=true;requestAnimationFrame(()=>{busy=false;draw()});}
+let busy=false;function hideCheck(){g("selfcheck").open=false}function schedule(){hideCheck();if(busy)return;busy=true;requestAnimationFrame(()=>{busy=false;draw()});}
 [theta,magU,magV].forEach(k=>k.addEventListener("input",schedule));
-document.querySelectorAll("button[data-a]").forEach(b=>b.addEventListener("click",()=>{theta.value=b.dataset.a;draw();}));
-g("reset").addEventListener("click",()=>{theta.value="60";magU.value="4";magV.value="3";draw();});
+document.querySelectorAll("button[data-a]").forEach(b=>b.addEventListener("click",()=>{theta.value=b.dataset.a;hideCheck();draw();}));
+g("reset").addEventListener("click",()=>{theta.value="60";magU.value="4";magV.value="3";hideCheck();draw();});
 function pointPosition(e){const r=canvas.getBoundingClientRect();return[e.clientX-r.left,e.clientY-r.top];}
 canvas.addEventListener("pointerdown",e=>{
  if(!geometry)return;const p=pointPosition(e);const d=q=>Math.hypot(p[0]-q[0],p[1]-q[1]);
@@ -109,7 +114,7 @@ canvas.addEventListener("pointermove",e=>{
   magV.value=String(Math.round(clamp(r,1,6)*10)/10);
   theta.value=String(Math.round(clamp(angle,0,180)/5)*5);
  }
- draw();e.preventDefault();
+ hideCheck();draw();e.preventDefault();
 });
 function stop(){drag=null}
 canvas.addEventListener("pointerup",stop);canvas.addEventListener("pointercancel",stop);
