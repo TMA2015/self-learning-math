@@ -238,5 +238,19 @@ assert(fig16.includes("x = 2")&&fig16.includes("I(2; −1)")&&
 assert(fig16.includes("thpt-r4-concept-figure")&&fig16.includes('viewBox="0 0 760 440"'),
  "B16 plotted graph should fit existing Golden responsive figure treatment");
 
+// P1/Q05/Q17 from immutable deep audit #862: B16 SGK must be independent
+// of Topic demos. These are substantive AUTHORING defects, not a reason
+// to delete this guard or relabel existing demonstrations as approved items.
+const coreB16=fs.readFileSync(path.join(root,
+ "docs/thpt-preview/sgk/core/ham-so-bac-hai.md"),"utf8");
+const topicB16=fs.readFileSync(path.join(root,
+ "docs/thpt-preview/chuyen-de/ham-so/luyen-tap.md"),"utf8");
+const runtimeB16=fs.readFileSync(path.join(root,
+ "docs/assets/javascripts/thpt-r4-preview.js"),"utf8");
+assert(!coreB16.includes("CHỈ DEMO")&&!coreB16.includes("CANONICAL ITEM · PILOT"),
+ "BLOCKED_BY_AUTHORING CHVI-B16-F02 Q05/Q17: SGK B16 Core remains an unapproved demo");
+assert(!topicB16.includes('data-thpt-canonical-item="PRACTICE-THPT-DEMO-01"')&&
+ !runtimeB16.includes('"b16-practice":["../../../chuyen-de/ham-so/luyen-tap/"'),
+ "BLOCKED_BY_AUTHORING CHVI-B16-F02 Q05/Q17: B16 SGK practice still delegates to Topic demo");
 require("./test-g10-b15-p2-editorial-delta.cjs");
 console.log("PASS G10 ChVI Q18 original→P1→example UX source chain: 19/19 First Try, 19 D6, 5 original figures, 13 example sections; NO DEPLOY.");
