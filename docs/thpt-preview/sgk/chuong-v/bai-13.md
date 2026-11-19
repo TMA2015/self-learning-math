@@ -248,7 +248,7 @@
 
         **Tự sửa:** Viết dãy theo thứ tự không giảm và đánh số vị trí. Nếu \(n\) lẻ, gạch đúng **một vị trí trung tâm**; tìm trung vị hai nửa và kiểm \(Q_1\le Q_2\le Q_3\). Không bỏ các quan sát khác chỉ vì chúng trùng giá trị.
 
-        **Luyện lại:** [Tìm tứ phân vị từ dữ liệu khác](../luyen-tap/?item=THPT-G10-B13-P05) trước khi mở đáp án.
+        **Luyện lại:** [Tìm tứ phân vị từ dữ liệu khác](luyen-tap.md?item=THPT-G10-B13-P05) trước khi mở đáp án.
 
     <span data-thpt-help-id="HELP-G10-B13-02" hidden></span>
 
@@ -260,8 +260,8 @@
 
         **Tự sửa:** Lập hàng \(x_i\cdot m_i\) để tính tổng; mẫu số là \(\sum m_i\), không phải số giá trị khác nhau. Khoanh tần số lớn nhất khi xác định mốt. Với mẫu có số rất lớn, xem thêm trung vị ở §1.2.5 trước khi kết luận về người điển hình.
 
-        **Luyện lại:** [Tính số trung bình bằng bảng tần số](../luyen-tap/?item=THPT-G10-B13-P01) và [so sánh hai nhóm có trung vị bằng nhau](../luyen-tap/?item=THPT-G10-B13-P06).
+        **Luyện lại:** [Tính số trung bình bằng bảng tần số](luyen-tap.md?item=THPT-G10-B13-P01) và [so sánh hai nhóm có trung vị bằng nhau](luyen-tap.md?item=THPT-G10-B13-P06).
 
-    **Tiếp tục:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/). Khi tự kiểm tra, em cần làm bài và chọn Final Submit trước khi xem lời giải; kết quả tự đối chiếu không ghi điểm thành thạo.
+    **Tiếp tục:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md). Khi tự kiểm tra, em cần làm bài và chọn Final Submit trước khi xem lời giải; kết quả tự đối chiếu không ghi điểm thành thạo.
 
     <p class="thpt-r4-footnote">Nguồn tham chiếu: SGK Toán 10 Kết nối tri thức tập 1, Bài 13 (trang in 78–83), và học liệu nguồn đã khóa. Nội dung được biên tập lại để hỗ trợ tự học độc lập.</p>
