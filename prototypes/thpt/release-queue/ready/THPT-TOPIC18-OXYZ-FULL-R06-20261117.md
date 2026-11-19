@@ -13,14 +13,14 @@ CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: 21ce8179678bd0e9bc944d80dbde9646aaf73647
+ACADEMIC_SOURCE_BLOB: 7e88552ce3d6e7b224085babd48c3dbcc2d0e5ab
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC18_R06_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md (SIGNED AUTHOR_SELF_VERIFIED COMPOSITE OF R04+R05+R06; NOT independent NotebookLM)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_R06_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md
-REVIEW_RECEIPT_BLOB: 3b25e8966cbbe1a40deaf9d35566b19ae2707b22
+REVIEW_RECEIPT_BLOB: e4fd72c4bc4b2f9af9f25d1c05adc16ef71fb7a0
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R06_247_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_A1_A7_BLOB: 46136a332c0a4f5a124f05ed62bb10abcc79ca45
+AUTHOR_A1_A7_BLOB: 5fb336159927b616fdf1ef3d81ff00cb412f84b4
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC18-OXYZ-FULL-R06-20261117_HANDOFF_V2.md
-AUTHOR_HANDOFF_BLOB: d71cd0f05abdea44863964ab6e9e0a01663e607e
+AUTHOR_HANDOFF_BLOB: e5086c258056d39506fa3390e68c1bc3ce103290
 Q01_FAMILY_AUDIT_BLOB: 052b06ea90d6191f125aef72f42d74dd9a6d86c8
 Q18_SUBSTANTIVE_AUDIT_BLOB: 4785b3be15b49f968de27fad99fc311cb2f8bb1b
 S1_ORIGINAL_G12_CHII_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
@@ -105,4 +105,7 @@ The valid learner source is `prototypes/thpt/content-drafts/topic18-oxyz/Temp_TO
 This marks AUTHORING source custody complete, not full independent NotebookLM Topic PASS, Golden/MathJax/browser verification, official Readiness/Mastery, PR merge or website deployment.
 
 
-**18/11 final exact merged-base learner lock:** Git source blob `21ce8179678bd0e9bc944d80dbde9646aaf73647`, Q18 author `3b25e8966cbbe1a40deaf9d35566b19ae2707b22`, A1 `46136a332c0a4f5a124f05ed62bb10abcc79ca45`, one V2 `d71cd0f05abdea44863964ab6e9e0a01663e607e`. The previous fda1 learner source was superseded by a single documented non-math transition-heading line; old learner texts are immutable Git history. This remains SOURCE ONLY, and does not certify website/browser QA, independent protected Readiness or Mastery.
+**18/11 final exact merged-base learner lock:** Git source blob `7e88552ce3d6e7b224085babd48c3dbcc2d0e5ab`, Q18 author `e4fd72c4bc4b2f9af9f25d1c05adc16ef71fb7a0`, A1 `5fb336159927b616fdf1ef3d81ff00cb412f84b4`, one V2 `e5086c258056d39506fa3390e68c1bc3ce103290`. The previous fda1 learner source was superseded by a single documented non-math transition-heading line; old learner texts are immutable Git history. This remains SOURCE ONLY, and does not certify website/browser QA, independent protected Readiness or Mastery.
+
+
+**19/11 owner editorial source-lock:** chỉ chuẩn hóa 40 nhãn phát biểu; CONTENT_READY remains, một nguồn canonical, old source preserved in Git, no extra review/website deployment.
