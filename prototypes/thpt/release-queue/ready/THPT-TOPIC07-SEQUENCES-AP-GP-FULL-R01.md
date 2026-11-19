@@ -14,12 +14,12 @@ CURRENT_PR: https://github.com/TMA2015/self-learning-math/pull/828 — DRAFT AUT
 CATALOG_TOPIC_ID: CD07
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic07-sequences/Temp_TOPIC07_R07_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: fcabe475254b4f54f5e6a8e74fce536df1f6bf43
+ACADEMIC_SOURCE_BLOB: 8aeef9a0f0c30bed76f93bcf923fff57f8c00b04
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC07_R07_NUMBERING_DELTA_A_Q18_20261116.md (Q18 targeted AUTHOR_SELF_VERIFIED, no independent NotebookLM PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC07_R07_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: 580111dbfe0ddc831cc3ef53f062cdb46772c465
+REVIEW_RECEIPT_BLOB: 270e1502c12d409817b283b7ee9a2e9bced5f9f4
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC07-SEQUENCES-AP-GP-FULL-R07_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: ae05b08f6312e4ad95110dce37b9936fac698ed3
+AUTHOR_HANDOFF_BLOB: 7050cec97f2cf387b816c75e5cf60f9e12d4d07d
 PUBLIC_ORIGINAL47_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC07_SEQUENCES_ORIGINAL47_SGK_PLACEMENT_INDEX_R06_20261115.md
 PUBLIC_ORIGINAL47_INDEX_BLOB: 01154e0801e77c2e81d56a717c77f7dae5a3515d
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC07_SEQUENCES_NEW22_PUBLIC_CANONICAL_R06_20261115.md
@@ -47,7 +47,7 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
 ## R07 current source QA — formal definitions and recap
 
-- Exact learner source `fcabe475254b4f54f5e6a8e74fce536df1f6bf43`, Q18 `580111dbfe0ddc831cc3ef53f062cdb46772c465`, metadata `3acfee8131da5c82ba96aee1841ed7f8a497fe24`, V2 `ae05b08f6312e4ad95110dce37b9936fac698ed3` on Draft #828.
+- Exact learner source `8aeef9a0f0c30bed76f93bcf923fff57f8c00b04`, Q18 `270e1502c12d409817b283b7ee9a2e9bced5f9f4`, metadata `46911df9b665fdad33d71460848bdab102d7d571`, V2 `7050cec97f2cf387b816c75e5cf60f9e12d4d07d` on Draft #828.
 - Formal definitions explicitly labeled for the index-domain of sequences, constant-difference CSC and constant-ratio CSN at TOP07-O01/O06/O11; concise knowledge recap including timing of end-of-period interest. Mathematical assumptions q=0, d=0, n-domain and cashflow verified; targeted DELTA_C Q18 AUTHOR_SELF_VERIFIED, not independent NotebookLM PASS.
 - 18 outcomes; 69 original learner Practice placements, all answers/solutions/rubrics unchanged byte-for-byte; 18 public selfcheck question-only unchanged; 3 original SVG references unchanged. `CLIENT_SELF_CHECK_NO_MASTERY`, no private RD1, no website integration, no owner release authorization.
 - Technical exact-head CI and browser/render/AP remain separate checks; historical R06 certification below describes the immutable older version and must not be attributed to the new wording.
@@ -63,7 +63,7 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — current R07 source fcabe475254b4f54f5e6a8e74fce536df1f6bf43; original47 index 01154e0801e77c2e81d56a717c77f7dae5a3515d; NEW22 bank f70e2c961dfcf31825d135b61e301cbb4c322767; updated targeted Q18 580111dbfe0ddc831cc3ef53f062cdb46772c465, V2 ae05b08f6312e4ad95110dce37b9936fac698ed3.
+- [x] A1_SOURCE_SNAPSHOT — current R07 source 8aeef9a0f0c30bed76f93bcf923fff57f8c00b04; original47 index 01154e0801e77c2e81d56a717c77f7dae5a3515d; NEW22 bank f70e2c961dfcf31825d135b61e301cbb4c322767; updated targeted Q18 270e1502c12d409817b283b7ee9a2e9bced5f9f4, V2 7050cec97f2cf387b816c75e5cf60f9e12d4d07d.
 - [x] A2_SGK_SBT_SCOPE — archived publisher S1: SGK G11 Tập1 B05 42–47, B06 48–51, B07 52–55, B15 104–110, SBT direct original PDF printed B05 31–34, B06 35–36, B07 37–39 and B15 75–78; Topic-only finance enriched scope labelled.
 - [x] A3_NOTEBOOKLM_VERDICT — Q18 AUTHOR_SELF_VERIFIED v3.1.0 signed author receipt with 49/49 direct checks; no new independent NotebookLM PASS asserted, original SGK ChII/ChV PASS retained source-scoped.
 - [x] A4_ITEM_OUTCOME_IDS — 18 lesson IDs/outcome IDs, 69 unique canonical PUBLIC IDs, 69 item→outcome→role mappings; 18 public self-check repeat placements do not add IDs.
@@ -91,3 +91,6 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 - [ ] P2_DEVICE_UAT — Actual-device student iPhone/iPad Safari acceptance not recorded.
 
 Author Q18 signoff does not assert technical release or independent examination status. Academic corrections after this immutable source must obey Delta policy.
+
+
+**19/11 owner ΔA:** source equivalent, 18 lessons unchanged, STATE CONTENT_READY maintained with new exact SHA lock.
