@@ -240,18 +240,28 @@
 
     <span data-thpt-help-id="HELP-G10-B13-01" hidden></span>
 
-    ??? tip "Quên sắp mẫu và loại Q2 ở n lẻ"
+    ??? tip "4.1. Nhầm vị trí khi tìm trung vị hoặc tứ phân vị"
 
-        <ol><li><strong>Nhận diện lỗi:</strong> Quên sắp mẫu và loại Q2 ở n lẻ.</li><li><strong>Dấu hiệu / tự chẩn đoán:</strong> Tính Q1/Q3 từ dãy chưa sắp hoặc đưa Q2 vào hai nửa. n chẵn hay lẻ? Em đã xếp tăng dần chưa?</li><li><strong>Kiến thức gốc:</strong> SGK KNTT: tìm Q2; n lẻ bỏ Q2 trước khi chia nửa.</li><li><strong>Tự sửa:</strong> Khoanh riêng nửa dưới, nửa trên rồi tính trung vị mỗi nửa.</li><li><strong>Luyện lại bằng ID sẵn có:</strong> THPT-G10-B13-P05.</li></ol><p><a href="../luyen-tap/?item=THPT-G10-B13-P05">Luyện lại bằng câu hỏi đã có</a></p>
+        **Nhận diện:** Em lấy trung vị từ dãy chưa sắp, hoặc mẫu có \(n\) lẻ thì bỏ *mọi* số bằng \(Q_2\), thay vì bỏ đúng một **quan sát ở vị trí giữa**.
+
+        **Vì sao sai:** Trung vị và tứ phân vị phụ thuộc **vị trí sau sắp xếp**. Hai số bằng nhau vẫn là hai quan sát và phải được đếm. Đọc lại **Khám phá §1.2.3** (hình tứ phân vị với hai số 3) và **Kiến thức SGK §2.2** (quy tắc chia nửa).
+
+        **Tự sửa:** Viết dãy theo thứ tự không giảm và đánh số vị trí. Nếu \(n\) lẻ, gạch đúng **một vị trí trung tâm**; tìm trung vị hai nửa và kiểm \(Q_1\le Q_2\le Q_3\). Không bỏ các quan sát khác chỉ vì chúng trùng giá trị.
+
+        **Luyện lại:** [Tìm tứ phân vị từ dữ liệu khác](../luyen-tap/?item=THPT-G10-B13-P05) trước khi mở đáp án.
 
     <span data-thpt-help-id="HELP-G10-B13-02" hidden></span>
 
-    ??? tip "Không nhân giá trị với tần số / nhầm mốt"
+    ??? tip "4.2. Quên tần số, nhầm số trung bình và mốt"
 
-        <ol><li><strong>Nhận diện lỗi:</strong> Không nhân giá trị với tần số / nhầm mốt.</li><li><strong>Dấu hiệu / tự chẩn đoán:</strong> Lấy trung bình các giá trị phân biệt mà không tính tần số. Tổng số quan sát là tổng m_i hay số giá trị khác nhau?</li><li><strong>Kiến thức gốc:</strong> Trung bình bảng tần số = tổng x_i*m_i chia tổng m_i; mốt là x_i có tần số cao nhất.</li><li><strong>Tự sửa:</strong> Lập lại bảng cột giá trị × tần số, so đáp án.</li><li><strong>Luyện lại bằng ID sẵn có:</strong> THPT-G10-B13-P01.</li></ol><p><a href="../luyen-tap/?item=THPT-G10-B13-P01">Luyện lại bằng câu hỏi đã có</a></p>
+        **Nhận diện:** Em lấy bình quân của các giá trị khác nhau mà quên số lần xuất hiện, hoặc chọn số lớn nhất làm mốt mà chưa kiểm tần số.
 
+        **Vì sao sai:** Số trung bình phải dùng **từng quan sát**, còn mốt phụ thuộc vào **số lần xuất hiện**, không phải giá trị lớn/nhỏ. Xem **Khám phá §1.2.1 và §1.2.4**, rồi các định nghĩa tại **Kiến thức SGK §2.1 và §2.3**.
 
-    **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
+        **Tự sửa:** Lập hàng \(x_i\cdot m_i\) để tính tổng; mẫu số là \(\sum m_i\), không phải số giá trị khác nhau. Khoanh tần số lớn nhất khi xác định mốt. Với mẫu có số rất lớn, xem thêm trung vị ở §1.2.5 trước khi kết luận về người điển hình.
 
-    <p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 10 Kết nối tri thức với cuộc sống và học liệu SLM hiện hành. Lời giảng được biên tập nhằm hỗ trợ tự học độc lập.</p>
+        **Luyện lại:** [Tính số trung bình bằng bảng tần số](../luyen-tap/?item=THPT-G10-B13-P01) và [so sánh hai nhóm có trung vị bằng nhau](../luyen-tap/?item=THPT-G10-B13-P06).
 
+    **Tiếp tục:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/). Khi tự kiểm tra, em cần làm bài và chọn Final Submit trước khi xem lời giải; kết quả tự đối chiếu không ghi điểm thành thạo.
+
+    <p class="thpt-r4-footnote">Nguồn tham chiếu: SGK Toán 10 Kết nối tri thức tập 1, Bài 13 (trang in 78–83), và học liệu nguồn đã khóa. Nội dung được biên tập lại để hỗ trợ tự học độc lập.</p>
