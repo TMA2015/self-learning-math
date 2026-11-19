@@ -512,7 +512,11 @@ function expectedG10KnowledgeBlob(lesson,legacy){
     t.includes("SBT_REFERENCE_GAP_DOCUMENTED")&&
     t.includes("PDF_INDEX_NOT_VERIFIED_NON_BLOCKING")&&
     t.includes("NOT_MERGED"),"B13 signed self-QA must state source scope/math PASS and unverified PDF-index provenance without asserting reviewer PASS");
-   return {baseline,next,css:f("CANDIDATE_GOLDEN_CSS_BLOB"),
+   const ui=fs.readFileSync(path.join(root,"prototypes/thpt/ux795/G10_B12_B13_DUPLICATE_DE_HEADING_DELTA_A_R01_20261119.md"),"utf8");
+   const u=k=>ui.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(u("B13_PREVIOUS_SOURCE_BLOB"),next,
+    "B13 published Q18 source is immutable predecessor of the UI-only Delta A");
+   return {baseline,next:u("B13_CURRENT_SOURCE_BLOB"),css:f("CANDIDATE_GOLDEN_CSS_BLOB"),
     previousCss:f("G10_B01_B12_FROZEN_CSS_BLOB")};
   };
   if(name==="B12"){
@@ -542,9 +546,18 @@ function expectedG10KnowledgeBlob(lesson,legacy){
     "B12 source-first P2 must preserve historical independent-review source SHA");
    assert.equal(df("B12_BASELINE_CANONICAL_BLOB"),f("ONE_CANONICAL_B12_R01_BLOB"),
     "B12 source-first P2 must preserve historical signed canonical SHA");
+   const ui=fs.readFileSync(path.join(root,"prototypes/thpt/ux795/G10_B12_B13_DUPLICATE_DE_HEADING_DELTA_A_R01_20261119.md"),"utf8");
+   const u=k=>ui.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(u("B12_PREVIOUS_SOURCE_BLOB"),g("B12_SOURCE_CURRENT_BLOB"),
+    "B12 prior signed published source must remain predecessor of UI-only Delta A");
+   assert.equal(u("B12_PREVIOUS_CANONICAL_BLOB"),g("B12_CANONICAL_CURRENT_BLOB"),
+    "B12 prior signed manuscript must remain predecessor of UI-only Delta A");
    assert.equal(blob(fs.readFileSync(path.join(root,
     "prototypes/thpt/content-drafts/THPT_G10_CHV_B12_CANONICAL.md"))),
-    g("B12_CANONICAL_CURRENT_BLOB"),"B12 current canonical must match B10 Golden component parity SHA");
+    u("B12_CURRENT_CANONICAL_BLOB"),"B12 current canonical must match scoped Delta A SHA");
+   assert.equal(blob(fs.readFileSync(path.join(root,
+    "docs/thpt-preview/sgk/chuong-v/bai-12.md"))),u("B12_CURRENT_SOURCE_BLOB"),
+    "B12 current learner Markdown must match scoped Delta A SHA");
    for(const [rel,key] of [
     ["docs/assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js","B12_R01_ITEM_BANK_BLOB"],
     ["docs/thpt-preview/sgk/chuong-v/luyen-tap.md","B12_R01_PRACTICE_HUB_BLOB"],
@@ -569,7 +582,7 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    assert.equal(b13.previousCss,g("GOLDEN_CSS_CURRENT_BLOB"),
     "B13 receipt previous CSS SHA must match owner signed B12");
    assert.equal(blob(style),b13.css,"B13 current scoped CSS SHA must match Q18 receipt");
-   return g("B12_SOURCE_CURRENT_BLOB");
+   return u("B12_CURRENT_SOURCE_BLOB");
   }
   if(name==="B13")return currentB13().next;
   if(chvii){
