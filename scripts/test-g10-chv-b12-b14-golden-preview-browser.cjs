@@ -13,7 +13,7 @@ const base=process.env.SLM_CHV_URL||"http://127.0.0.1:8765";
 const expectedSources={
  12:"a2ea6c909cdd2317188b13c2bde22e7923dba3de",
  13:"cb5adaa7804902fece7dd4ec30575733efd4c9c1",
- 14:"7538771fdaede3de14143090db35e74a3c7939ff"
+ 14:"a23afab8015c83813f0c8cbe918efa93e58aa623"
 };
 const ids={12:5,13:5,14:5};
 const names=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
@@ -252,6 +252,15 @@ const blob=data=>{
         ["1.1. Cùng tìm hiểu","1.2. Ví dụ trực quan","1.3. Thuật ngữ, kiến thức và kỹ năng"],
       context+" concept-first discovery");
      if(lesson===14){
+      const discovery=blocks.nth(0);
+      await labels.nth(0).click();
+      const visibleDiscovery=await discovery.innerText();
+      assert.equal((visibleDiscovery.match(/Vận dụng\./g)||[]).length,5,
+       context+" five published self-practice prompts use the Golden Vận dụng label");
+      assert.equal(await discovery.locator("p > strong").filter({hasText:/^Vận dụng\.$/}).count(),5,
+       context+" all five visible First Try labels use the approved Golden strong tag");
+      assert(!visibleDiscovery.includes("Em tự thử."),
+       context+" obsolete First Try wording never appears in the visible Discovery");
       const picture=blocks.nth(1).locator('img[src$="G10_B14_BOXPLOT_S1_Q18_ENRICHMENT_20261113.svg"]');
       assert.equal(await picture.count(),1,context+" source-verified boxplot figure exists");
       await labels.nth(1).click();
