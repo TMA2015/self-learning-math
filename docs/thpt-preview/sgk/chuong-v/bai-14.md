@@ -47,7 +47,7 @@
     Muốn đo 'xa trung bình bao nhiêu', hãy bình phương các khoảng lệch để không bị bù dấu rồi lấy trung bình các bình phương. **Theo SGK KNTT ở mục này chia cho n**, không tự dùng mẫu số n−1; kết quả là phương sai và có đơn vị bình phương.
 
 
-    **Em tự thử.** Với mẫu \(2,4,6\), tính số trung bình và phương sai \(s^2\) theo mẫu số \(n=3\).
+    **Em vận dụng.** Với mẫu \(2,4,6\), tính số trung bình và phương sai \(s^2\) theo mẫu số \(n=3\).
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY11" hidden></span>
 
@@ -69,7 +69,7 @@
     Lấy căn bậc hai phương sai giúp đưa mức phân tán về **cùng đơn vị với dữ liệu gốc**. Độ lệch chuẩn không cho biết từng quan sát lệch đúng bằng s, mà tóm tắt mức lệch điển hình.
 
 
-    **Em tự thử.** Bốn độ dài đo được (đơn vị cm) là \(2,2,6,6\). Tính số trung bình, phương sai và độ lệch chuẩn, ghi đúng đơn vị.
+    **Em vận dụng.** Bốn độ dài đo được (đơn vị cm) là \(2,2,6,6\). Tính số trung bình, phương sai và độ lệch chuẩn, ghi đúng đơn vị.
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY12" hidden></span>
 
@@ -91,7 +91,7 @@
     Đặt hai hàng rào quanh phần giữa: dưới \(Q_1-1{,}5\Delta_Q\) và trên \(Q_3+1{,}5\Delta_Q\). Giá trị **nhỏ hơn** rào dưới hoặc **lớn hơn** rào trên được gắn cờ bất thường; bằng rào không bị gắn theo dấu chặt.
 
 
-    **Em tự thử.** Xét mẫu đã sắp \(1,2,3,4,5,6,20\). Tìm \(Q_1,Q_2,Q_3\), hai hàng rào và giá trị bất thường.
+    **Em vận dụng.** Xét mẫu đã sắp \(1,2,3,4,5,6,20\). Tìm \(Q_1,Q_2,Q_3\), hai hàng rào và giá trị bất thường.
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY13" hidden></span>
 
