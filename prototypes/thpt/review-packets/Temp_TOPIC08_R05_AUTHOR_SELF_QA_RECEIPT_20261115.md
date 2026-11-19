@@ -9,8 +9,8 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic08-limits-continuity/Temp_TOPIC08_R05_STUDENT_FIRST_58_CANONICAL_VISIBLE_20261115.md
-SOURCE_BLOB: 178ccc6f1b7c94c9db1146c626efc4dca319b149
-ACADEMIC_SOURCE_BLOB: 178ccc6f1b7c94c9db1146c626efc4dca319b149
+SOURCE_BLOB: b3d24c35675d4b39fb8d14c201b7d965d1183f44
+ACADEMIC_SOURCE_BLOB: b3d24c35675d4b39fb8d14c201b7d965d1183f44
 PREVIOUS_R04_SOURCE_BLOB: 8fd1c9d223ccab794ae20fc8f0206df32f0671c4
 PREVIOUS_R04_AUTHOR_RECEIPT_BLOB: c3cfa8ca4ec9c05710fed4ab2428f3d2814eec07
 PUBLIC_ORIGINAL36_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC08_LIMITS_CONTINUITY_ORIGINAL36_SGK_PLACEMENT_INDEX_R05_20261115.md
@@ -29,7 +29,7 @@ PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
 P2: 0 (source-level AUTHORING only; no re-scan S1 PDF, browser QA or learner UAT)
-AUTHOR_SIGNOFF: TOPIC08_R05_20261118_TARGETED_CONCEPT_SOURCE_178ccc6f1b7c94c9db1146c626efc4dca319b149
+AUTHOR_SIGNOFF: TOPIC08_R05_20261118_TARGETED_CONCEPT_SOURCE_b3d24c35675d4b39fb8d14c201b7d965d1183f44
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_IMPORTED: 0
 OFFICIAL_READINESS: NOT_CLAIMED
@@ -68,7 +68,7 @@ PED_Q09_Q14: Bắt đầu mỗi kiến thức bằng câu hỏi và tiền đề
 
 ## 18/11/2026 — scoped definition/property refinement on exact current source
 
-- CURRENT_SOURCE_BLOB `178ccc6f1b7c94c9db1146c626efc4dca319b149`; PREVIOUS_EFFECTIVE_LEARNER_BLOB `8e40965f6174b52c386ab461440b1ed11ccededc`; historical original 15/11 signed source `a33d1e6a20dba1dc7861097e231906aff2938c02` retains its original 159/159 assertion scope, not a claim of fresh 159 runtime checks on the current source.
+- CURRENT_SOURCE_BLOB `b3d24c35675d4b39fb8d14c201b7d965d1183f44`; PREVIOUS_EFFECTIVE_LEARNER_BLOB `8e40965f6174b52c386ab461440b1ed11ccededc`; historical original 15/11 signed source `a33d1e6a20dba1dc7861097e231906aff2938c02` retains its original 159/159 assertion scope, not a claim of fresh 159 runtime checks on the current source.
 - Comparing signed R05 `a33d1e6a20dba1dc7861097e231906aff2938c02` with pre-edit effective `8e40965f6174b52c386ab461440b1ed11ccededc` found **exactly two learner Knowledge prose changes** at TOP08-O13 and O14, both mathematical explanation/visual-reading clarifications: O13 explicitly works f(x)=(x²−5x+6)/(x−2) for x≠2 and f(2)=k yielding k=−1, O14 clarifies jump one-sided pairs (2,1) versus sign-function (−1,1). Both equations/limits were rechecked; 58 Practice and 18 selfchecks were already identical.
 - Current revision adds **four genuine formal statements**: TOP08-O01 ε-limit of a sequence; O05 infinite geometric sum with |q|<1; O13 continuity at interior point with one-sided endpoint convention; O17 zero-crossing consequence of intermediate value theorem (continuity on [a,b], strict endpoint sign-change). Short, student-friendly recall block covers same concepts.
 - Checked the exact mathematics: n>1/ε eventually gives |(2+1/n)−2|<ε; q=1/2 gives 10+5+...=20; removable example f(x)=(x²−5x+6)/(x−2) has limit −1 and must assign f(2)=−1; x³−2 changes sign on [1,2], so IVT gives existence, not uniqueness from IVT alone.
@@ -93,3 +93,7 @@ PED_Q09_Q14: Bắt đầu mỗi kiến thức bằng câu hỏi và tiền đề
 - **Q15–Q17:** unique canonical versioned source, không Topic Core riêng, không public RD1/Mastery, hai hành trình SGK/Topic độc lập.
 - **Q18/A1–A7:** source và chứng cứ SHA bất biến, self-review `AUTHOR_SELF_VERIFIED` trên R05, 159 assertions; handoff V2 + ready manifest + REGISTER sẽ được đồng bộ cùng exact source+receipt blob trước CONTENT_READY.
 - Tuân thủ checklist 13 nội dung của Issue #864 và sổ hồi quy #865 **trong cùng chuẩn Q01–Q18**, không tạo chuẩn mới. RELEASE vẫn phải thử browser/MkDocs/Golden, MathJax/SVG rendered, đáp án trước/sau Final Submit, RD1, thiết bị vật lý và phê duyệt chủ dự án. AUTHORING **NO MERGE/DEPLOY**.
+
+
+<!-- TOP08_OWNER_EDITORIAL_DELTA_A_20261119 -->
+Owner ΔA 19/11: 14 previously unmarked existing mathematical explanations for limits/continuity received typed **Định nghĩa/Tính chất/Định lý/Công thức/Phương pháp** headings. 4 existing formal labels unchanged. Former single learner `178ccc6f1b7c94c9db1146c626efc4dca319b149`, current `b3d24c35675d4b39fb8d14c201b7d965d1183f44`; inverse-prefix byte check verifies all lesson narrative, formula and domain text, 18 complete examples, 18 Vận dụng/Đối chiếu, 3 diagrams, bank IDs/selfchecks unchanged. No new theorem or hypothesis, `CONTENT_READY` preserved; reviewer retest/website integration not triggered.
