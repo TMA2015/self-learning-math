@@ -27,6 +27,8 @@
 - **Q16:** neither Final Submit route nor Readiness/RD1, answer keys, Firebase, learner history, scores, Mastery, Gemini or shared runtime changed. First Try answers remain voluntary closed `??? question "Đối chiếu"`; existing non-assessment Practice remains formative-only.
 - **Q17:** B17 SGK Core and Practice already independently provided via existing SGK public reviewed bank. Topic's separate three-page journey unchanged.
 
+**Canonical First Try identities individually reconciled:** `THPT-G10-CHVI-TRY11` · `THPT-G10-CHVI-TRY12` · `THPT-G10-CHVI-TRY13` · `THPT-G10-CHVI-TRY14` · `THPT-G10-CHVI-TRY15`; each retains the matching `HELP-G10-CHVI-TRY11` … `HELP-G10-CHVI-TRY15`, with original answer HTML and canonical link IDs intact.
+
 ## Five outcomes — independent mathematical checks
 
 | Outcome | Mathematical result and method | Robust counter-check / boundary |
