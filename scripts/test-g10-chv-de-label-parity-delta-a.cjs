@@ -22,23 +22,20 @@ const sha1=data=>{
 };
 const get=p=>fs.readFileSync(path.join(root,p),"utf8");
 const heading="    #### Đề bài\n\n";
+const marker="    <div hidden data-thpt-g10-example-boundary></div>\n\n";
 const canon="prototypes/thpt/content-drafts/THPT_G10_CHV_B12_CANONICAL.md";
 const marker1="<!-- BEGIN_B12_KNOWLEDGE_MARKDOWN -->\n";
 const marker2="\n<!-- END_B12_KNOWLEDGE_MARKDOWN -->";
 const section=s=>s.split(marker1)[1]?.split(marker2)[0];
 const restorePrevious=(candidate,label)=>{
- let count=0;
- const previous=candidate.replace(/^(    ### 3\.[1-4]\. Ví dụ [^\n]+\n\n)/gm,matched=>{
-  count++;
-  return matched+heading;
- });
- assert.equal(count,4,label+": exactly four numbered worked example headings");
- return previous;
+ const occurrences=candidate.split(marker).length-1;
+ assert.equal(occurrences,4,label+": exactly four invisible solution-boundary markers");
+ return candidate.split(marker).join(heading);
 };
 const expectedDiff=(previous,label)=>{
  const occurrences=previous.split(heading).length-1;
  assert.equal(occurrences,4,label+": baseline must have exactly four duplicate headings");
- return previous.split(heading).join("");
+ return previous.split(heading).join(marker);
 };
 for(const n of [12,13]){
  const lesson="B"+n;
@@ -47,7 +44,7 @@ for(const n of [12,13]){
  assert.equal(sha1(previous),field(lesson+"_PREVIOUS_SOURCE_BLOB"),lesson+": previous SHA");
  assert.equal(sha1(candidate),field(lesson+"_CURRENT_SOURCE_BLOB"),lesson+": current SHA");
  assert.equal(candidate,expectedDiff(previous,lesson),
-  lesson+": ONLY the four redundant 'Đề bài' headings may be removed");
+  lesson+": ONLY the four redundant headings may be replaced by invisible structural boundaries");
  const examples=candidate.split('=== "Ví dụ"')[1]?.split('=== "Lỗi thường gặp"')[0]||"";
  assert.equal((examples.match(/^    ### 3\.[1-4]\. Ví dụ [1-4] —/gm)||[]).length,4,
   lesson+": four distinct worked examples must remain");
@@ -55,6 +52,8 @@ for(const n of [12,13]){
   lesson+": exactly four original visible 'Đề:' labels");
  assert.equal((examples.match(/^\s{4}#### Đề bài$/gm)||[]).length,0,
   lesson+": no redundant 'Đề bài' subheading");
+ assert.equal((examples.match(/data-thpt-g10-example-boundary/g)||[]).length,4,
+  lesson+": four invisible boundaries must preserve original source-authored solution panels");
  assert.equal((examples.match(/class="thpt-g10-example-solution"/g)||[]).length,4,
   lesson+": preserve four original worked solutions");
  assert.equal((candidate.match(/data-thpt-first-try-id="/g)||[]).length,5,
@@ -68,7 +67,7 @@ assert.equal(sha1(formerMaster),field("B12_PREVIOUS_CANONICAL_BLOB"),
 assert.equal(sha1(master),field("B12_CURRENT_CANONICAL_BLOB"),
  "B12 current one-canonical SHA");
 assert.equal(master,expectedDiff(formerMaster,"B12 canonical"),
- "B12 entire canonical can change only by four heading removals");
+ "B12 canonical may change only by four heading-to-invisible-boundary substitutions");
 assert.equal(section(master),b12,"B12 canonical Section A must equal current learner source");
 const b11p="docs/thpt-preview/sgk/chuong-iv/bai-11.md";
 assert.equal(sha1(get(b11p)),field("B11_UNCHANGED_SOURCE_BLOB"),
@@ -82,4 +81,4 @@ for(const [p,key] of [
  assert.equal(sha1(fs.readFileSync(path.join(root,p))),field(key),
   "Unrelated assessed bank or original educational SVG changed: "+p);
 }
-console.log("PASS G10 B12/B13 Delta A: 8 redundant 'Đề bài' removed, 8 unchanged 'Đề:'; one B12 canonical; historical source, CSS, Q15/Q16 and bank SHA guarded.");
+console.log("PASS G10 B12/B13 Delta A: 8 visible 'Đề bài' removed, 8 original 'Đề:' retained; four hidden boundary markers per lesson; one B12 canonical; historical source, CSS, Q15/Q16 and bank SHA guarded.");
