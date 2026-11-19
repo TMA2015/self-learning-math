@@ -862,7 +862,58 @@
   });
  }
 
+ function initB16CanonicalBank(){
+  // Keep one learner question visible in each Core/Practice modal, without
+  // cloning Q15 items or changing shared Golden navigation/Final Submit.
+  document.querySelectorAll('section[data-thpt-bank-lesson="16"]').forEach(bank=>{
+   if(bank.dataset.thptB16Paged==="1")return;
+   const items=[...bank.querySelectorAll(":scope > [data-thpt-canonical-item]")];
+   if(items.length!==6)return; // fail closed: invalid source is caught by QA
+   bank.dataset.thptB16Paged="1";
+   const nav=document.createElement("nav");
+   nav.className="thpt-r4-modal-question-nav";
+   nav.setAttribute("aria-label","Chọn câu Core hoặc Luyện tập Bài 16");
+   const status=document.createElement("p");
+   status.className="thpt-r4-modal-progress";
+   status.setAttribute("aria-live","polite");
+   const buttons=items.map((item,index)=>{
+    const btn=document.createElement("button");
+    btn.type="button";
+    btn.textContent=String(index+1);
+    btn.setAttribute("aria-label","Đến câu "+(index+1)+" trong 6");
+    btn.addEventListener("click",()=>show(index));
+    nav.append(btn);
+    return btn;
+   });
+   const footer=document.createElement("div");
+   footer.className="thpt-r4-modal-buttons";
+   const prev=document.createElement("button"),next=document.createElement("button");
+   prev.type=next.type="button";prev.textContent="← Câu trước";next.textContent="Câu tiếp →";
+   footer.append(prev,next);
+   let current=0;
+   const show=index=>{
+    current=Math.max(0,Math.min(items.length-1,index));
+    items.forEach((item,i)=>{
+     const active=i===current;item.hidden=!active;
+     if(active)item.style.removeProperty("display");else item.style.display="none";
+     item.setAttribute("aria-hidden",String(!active));
+     buttons[i].setAttribute("aria-current",active?"step":"false");
+     buttons[i].disabled=active;
+    });
+    prev.disabled=current===0;next.disabled=current===items.length-1;
+    status.textContent="Câu "+(current+1)+" / "+items.length+" · "+
+      (bank.hasAttribute("data-thpt-core")?"Core":"Luyện tập")+" · Tự kiểm tra, không ghi Mastery";
+   };
+   prev.addEventListener("click",()=>show(current-1));
+   next.addEventListener("click",()=>show(current+1));
+   items[0].before(status,nav);
+   items[items.length-1].after(footer);
+   show(0);
+  });
+ }
+
  function init() {
+  initB16CanonicalBank();
   initProgramSelectorDrawer();
   initProgramSelectorDesktopTabs();
   initTHPTPrimarySidebar();
