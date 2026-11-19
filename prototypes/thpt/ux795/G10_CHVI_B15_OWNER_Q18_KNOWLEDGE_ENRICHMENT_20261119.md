@@ -6,7 +6,7 @@
 **AUTHOR_LANE:** RELEASE, explicitly owner authorized to continue B15 after B01–B14 P2 PASS
 **BASE_MAIN_COMMIT:** `467a3cd1231592c7e49de7c082cca052e9f39b31`
 **BASELINE_PUBLISHED_B15_BLOB:** `01d905b7dd058515da590e63af1aeece5b34a081`
-**CANDIDATE_B15_SOURCE_BLOB:** `f5c5846694a7449594dff639b9f97c0772358556`
+**CANDIDATE_B15_SOURCE_BLOB:** `131947762d1c2ad1c109602a5cbe2e7fea71652e`
 **ORIGINAL_ACCEPTED_GOLDEN_CSS_BLOB:** `bda67d4ed6368179c5a8c9e0a368e149304ab71c`
 **CANDIDATE_SCOPED_GOLDEN_CSS_BLOB:** `4af85dd38d02ed55b29daa6713bfbc892f0d7078`
 **PRIOR_CHVI_S1_RECEIPT_BLOB:** `05ee519080506cf6028c785fb843a3c9482537ca`
@@ -33,7 +33,7 @@
 | `B15_OUT_04` | B15-XC-04 | For all \(x_1<x_2\), \(3x+2\) difference \(3(x_2-x_1)>0\); for worked \(h=5-2x\), difference \(-2(x_2-x_1)<0\). \(x²\) decreases on negative interval, increases on positive; two-point anecdote insufficient | 2.3 universal-quantifier definition; 3.4 method before calculation, checks bound; 4.5 eliminates extrapolating from a pair | P0=0 P1=0 |
 | `B15_OUT_05` | B15-XC-05 | In original \(C(x)=12\) for 0≤x≤3, then \(12+4(x-3)\) for x>3: \(C(3)=12\), \(C(5)=20\), not \(12+4×5=32\). At boundary wrong branch can accidentally give the same numeric 12 — method still invalid. New model \(P(2)=10\), \(P(4)=20\) | Situation 1.2.4, worked example 3.3 and precise D6 4.4: choose range first, excess only, right unit; synthetic fees are explicitly labeled hypothetical | P0=0 P1=0 |
 
-**Q03–Q14:** Definitions/conditions before formula memorization, method decisions and limits in examples, learners attempt before reading Core, card captions explain purpose, figures retain original alt/interpretation, five D6 errors now substantively unique. Math self-audit P0=0/P1=0 in this affected Knowledge scope, subject to technical gate and owner's P2.
+**Q03–Q14:** Definitions/conditions before formula memorization, method decisions and limits in examples, learners attempt before reading Core, card captions explain purpose, figures retain original alt/interpretation, five D6 errors now substantively unique; four D6 links use Markdown-canonical `luyen-tap.md?item=...` relative paths, as checked against existing page file, instead of directory URLs that fail source link validation. Math self-audit P0=0/P1=0 in this affected Knowledge scope, subject to technical gate and owner's P2.
 **Q15:** one canonical ID for each question. Five existing `THPT-G10-CHVI-TRY01..05` placements (actual teaching order 01/02/03/05/04), five existing HELP IDs, five original answer/reasoning HTML bodies **byte-exact**, original three extra practice stems and hidden answers byte-exact, unchanged public Core/Practice/Written. No test item has been cloned or placed into independent assessment.
 **Q16–Q17:** no RD1, official Readiness, Final Submit, Mastery, Firebase, Topic, Student data; no keys or hints leaked. 
 **Q18:** baseline SHA and all historical receipts immutable; candidate source & CSS SHA pinned above. Source-first no duplicate draft. Original math/conditions and old answer/ID/figure exact parity versus current source independently asserted at editing time. 
