@@ -7,7 +7,7 @@
 **S1_REFERENCE:** Toán 10 KNTT tập 2, Bài 16 *Hàm số bậc hai*, printed 11–18, PDF 12–19 per historical S1 receipt `G10_CHVI_B15_B18_S1_Q18_EDITORIAL_RECEIPT_20261113.md`; historical scan not directly reopened or newly hashed here
 **BASE_MAIN_COMMIT:** `400e4820fe37c12a6db151cdcb094a79e31f7376`
 **BASELINE_PUBLISHED_B16_SOURCE_BLOB:** `4ddf9c449f92a9f48bace5a3f9b84186bf33af20`
-**CANDIDATE_B16_SOURCE_BLOB:** `c6e58a4be2f3be74e9557cf8d3808f4269e4c055`
+**CANDIDATE_B16_SOURCE_BLOB:** `65760db6de0f7953adbbd8f0e16dd348ad5bd72f`
 **PREVIOUS_OWNER_P2_GOLDEN_CSS_BLOB:** `4af85dd38d02ed55b29daa6713bfbc892f0d7078`
 **CANDIDATE_SCOPED_GOLDEN_CSS_BLOB:** `14001f525b1825557493f439a1f0555e9614185f`
 **VERIFICATION_MODE:** `Q18_OWNER_SELF_VERIFIED_ENRICHMENT_IN_PROGRESS`, no independent NotebookLM PASS
@@ -46,7 +46,7 @@ The owner explicitly requested normal flowing explanations without a pseudo-meth
 
 **Scoped DELTA_B_SOURCE_EQUIVALENT (+ DELTA_A_UI):** Replace this placeholder with an actual **same-function** drawing within the **same canonical B16 Markdown**. Math remains (y=x^2-4x+3=(x-2)^2-1); x-intercepts (1,3), y-intercept (3), vertex (I(2;-1)), symmetry axis (x=2), a>0, opens up. The curve was sampled at 97 x-values on [-0.3,4.5], using display transform (X=120+112x), (Y=315-52y), so points are checked against the exact function rather than sketched freehand. Axes, points and legend are specified; the other Discovery SVG is **not** changed.
 
-**SOURCE_BLOB:** `c6e58a4be2f3be74e9557cf8d3808f4269e4c055`
+**SOURCE_BLOB:** `65760db6de0f7953adbbd8f0e16dd348ad5bd72f`
 **PREVIOUS_B16_CANDIDATE:** `3d08b7abea421c8850e41afa0519fade05b2b700`
 **B16_Q07_SELF_CHECK:** numerical geometry and SVG parsing test to run on this exact HEAD, plus live browser layout/AP3 checks at 390/820/1440. Do not assert P1/P2 publication from source edit.
 
@@ -56,12 +56,14 @@ The owner explicitly requested normal flowing explanations without a pseudo-meth
 
 **Scoped pedagogical correction:** Updated the *existing* five tab-4 `Tự chẩn đoán` phrases to specify the actual wrong step in TRY10/06/07/09/08 instead of repeating the generic phrase “Em có đang mắc đúng lỗi này...”. For TRY10/06/09, replaced the generic return instructions with references to the *already existing* corresponding `Vận dụng` question. The original five `item_id`/HELP IDs, `Nhận diện lỗi`, `Kiến thức gốc`, `Tự sửa`, Q15 answer bodies, and two existing `Luyện lại` links (TRY07/TRY08) were preserved. No new question or alternate canonical source.
 
-**DELTA_C_PEDAGOGICAL_REMEDIATION_SCOPE:** B16_OUT_01–05 D6 wording; demonstrate exactly which text was affected by Q18 source/body comparisons and self-QA. Do not call original independent review PASS for this new draft. Source Git blob `c6e58a4be2f3be74e9557cf8d3808f4269e4c055`. Exact browser/safety QA and reviewer conditions remain open.
+**DELTA_C_PEDAGOGICAL_REMEDIATION_SCOPE:** B16_OUT_01–05 D6 wording; demonstrate exactly which text was affected by Q18 source/body comparisons and self-QA. Do not call original independent review PASS for this new draft. Source Git blob `65760db6de0f7953adbbd8f0e16dd348ad5bd72f`. Exact browser/safety QA and reviewer conditions remain open.
 
-**D6 MathJax proof detail:** New remediation math is embedded in the same `<span class="arithmatex">\\(…\\)</span>` wrapper as original HELP formulae, avoiding raw TeX literal presentation inside HTML list items. No answer body changed. **FINAL_CURRENT_CANDIDATE_SOURCE_BLOB:** `c6e58a4be2f3be74e9557cf8d3808f4269e4c055`; pending exact-HEAD CI check.
+**D6 MathJax proof detail:** New remediation math is embedded in the same `<span class="arithmatex">\\(…\\)</span>` wrapper as original HELP formulae, avoiding raw TeX literal presentation inside HTML list items. No answer body changed. **FINAL_CURRENT_CANDIDATE_SOURCE_BLOB:** `65760db6de0f7953adbbd8f0e16dd348ad5bd72f`; pending exact-HEAD CI check.
 
-**Final SVG responsive scope:** The previously text-only §2.2 inline plot now renders at `width:100%; max-width:100%; height:auto` inside the already approved `thpt-r4-concept-figure`, with intrinsic 760×440 coordinate viewBox for scalable legible labels. Mobile width is bounded by the content parent. Current source SHA `c6e58a4be2f3be74e9557cf8d3808f4269e4c055`. Numeric curve/vertex/axes/Q15 tests still apply; browser computed-style QA required before release.
+**Final SVG responsive scope:** The previously text-only §2.2 inline plot now renders at `width:100%; max-width:100%; height:auto` inside the already approved `thpt-r4-concept-figure`, with intrinsic 760×440 coordinate viewBox for scalable legible labels. Mobile width is bounded by the content parent. Current source SHA `65760db6de0f7953adbbd8f0e16dd348ad5bd72f`. Numeric curve/vertex/axes/Q15 tests still apply; browser computed-style QA required before release.
 
-**R4 browser contract:** The existing dashed `x=2` line now carries `data-thpt-symmetry-axis="x=2"` without changing a pixel or mathematical value; this is an AP3/Delta A semantic attribute required by existing R4 browser test. Source SHA `c6e58a4be2f3be74e9557cf8d3808f4269e4c055`.
+**R4 browser contract:** The existing dashed `x=2` line now carries `data-thpt-symmetry-axis="x=2"` without changing a pixel or mathematical value; this is an AP3/Delta A semantic attribute required by existing R4 browser test. Source SHA `65760db6de0f7953adbbd8f0e16dd348ad5bd72f`.
 
-**Owner Golden prose and sequencing self-check:** In Discovery outcome `B16_OUT_04`, the existing two-sign monotonicity bullets and the exact old table were moved unchanged **before** the corresponding `Vận dụng` prompt and closed `Đối chiếu`; no new condition/formula/answer. In `B16_OUT_03` the three bold pseudo-headings around the table were rewritten as continuous explanatory prose, preserving the same value table, symmetry and five-point plotting requirements. Scope is `DELTA_B_SOURCE_EQUIVALENT` after math/ID parity, separate from earlier Delta C example expansion. **Current canonical Git blob:** `c6e58a4be2f3be74e9557cf8d3808f4269e4c055`.
+**Owner Golden prose and sequencing self-check:** In Discovery outcome `B16_OUT_04`, the existing two-sign monotonicity bullets and the exact old table were moved unchanged **before** the corresponding `Vận dụng` prompt and closed `Đối chiếu`; no new condition/formula/answer. In `B16_OUT_03` the three bold pseudo-headings around the table were rewritten as continuous explanatory prose, preserving the same value table, symmetry and five-point plotting requirements. Scope is `DELTA_B_SOURCE_EQUIVALENT` after math/ID parity, separate from earlier Delta C example expansion. **Current canonical Git blob:** `65760db6de0f7953adbbd8f0e16dd348ad5bd72f`.
+
+**R4 double-plot prevention (real browser bug found):** `docs/assets/javascripts/thpt-r4-preview.js` already adds one curve and **four circles** to every `[data-thpt-quadratic-plot] svg` when `data-r4-plotted` is absent; the new complete static SVG initially produced **eight rendered circles** (4 authored + 4 injected), caught by run #44553713896. The figure now carries `data-r4-plotted="1"` *only on its own SVG*, so legacy runtime leaves this mathematically verified static graph alone; no shared JS/runtime edits or changes to other pages. New candidate SHA `65760db6de0f7953adbbd8f0e16dd348ad5bd72f`; R4 real-browser verification pending exact HEAD.
