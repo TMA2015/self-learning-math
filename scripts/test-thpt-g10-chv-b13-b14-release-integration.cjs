@@ -98,8 +98,15 @@ for(const n of [13,14]){
   assert.deepEqual(tabs,["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
    "B"+n+" must keep exact Model B four horizontal tabs");
   assert(page.includes(figName),"B"+n+" original D5 SVG missing");
-   assert.equal((page.match(n===13?/^    ### 3\.[1-4]\. Ví dụ [1-4] —/gm:/^    ### Ví dụ [123]\./gm)||[]).length,n===13?4:3,
+   assert.equal((page.match(n===13?/^    ### 3\.[1-4]\. Ví dụ [1-4] —/gm:/^    ### 3\.[1-3]\. Ví dụ [1-3] —/gm)||[]).length,n===13?4:3,
     "B"+n+" expected worked-example count: B13 four reasoned, B14 three historic");
+   if(n===14){
+    const tab=page.slice(page.indexOf('=== "Ví dụ"'),page.indexOf('=== "Lỗi thường gặp"'));
+    assert.equal((tab.match(/class="thpt-g10-example-solution"/g)||[]).length,3,
+     "B14 original three EX numbers now have source-authored step-by-step Golden solutions");
+    for(const token of ["**Đề:**","**Phân tích:**","**Kiểm lại:**"])
+     assert.equal(tab.split(token).length-1,3,"B14 one "+token+" per example");
+   }
    if(n===13){
     const tab=page.slice(page.indexOf('=== "Ví dụ"'),page.indexOf('=== "Lỗi thường gặp"'));
     assert.equal((tab.match(/class="thpt-g10-example-solution"/g)||[]).length,4,

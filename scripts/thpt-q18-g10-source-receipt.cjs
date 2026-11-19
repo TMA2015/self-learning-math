@@ -371,8 +371,18 @@ function expectedG10KnowledgeBlob(lesson,legacy){
   const receipt=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHV_B13_S1_Q18_GOLDEN_ENRICHMENT_DELTA_R01_20261119.md"),"utf8");
   const f=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
-  assert.equal(calc(css),f("CANDIDATE_GOLDEN_CSS_BLOB"),
-   "B13 candidate CSS must match signed Q18 receipt without changing B11/B12");
+  const b14Marker="/* G10 ChV B14 · scoped X-C RELEASE Golden";
+  const b14At=cssFull.indexOf(b14Marker);
+  const b14Receipt=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHV_B14_Q18_GOLDEN_ENRICHMENT_DELTA_R01_20261119.md"),"utf8");
+  const b14f=k=>b14Receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert(b14At>0&&cssFull.indexOf(b14Marker,b14At+1)<0,"B14 only one scoped CSS appendix");
+  assert.equal(calc(Buffer.from(cssFull.slice(0,b14At-1))),f("CANDIDATE_GOLDEN_CSS_BLOB"),
+   "B13 owner-P2 style stays byte-identical prefix after B14");
+  assert.equal(b14f("G10_B01_B13_FROZEN_CSS_BLOB"),f("CANDIDATE_GOLDEN_CSS_BLOB"),
+   "B14 signed previous Golden CSS is B13 published baseline");
+  assert.equal(calc(css),b14f("CANDIDATE_GOLDEN_CSS_BLOB"),
+   "B14 final Golden appendix must match signed owner X-C candidate");
   const sourceText=fs.readFileSync(path.join(root,
    "docs/thpt-preview/sgk/chuong-iv/bai-11.md"),"utf8");
   assert.equal(calc(Buffer.from(sourceText)),g("B11_SOURCE_CURRENT_BLOB"),
@@ -519,6 +529,31 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    return {baseline,next:u("B13_CURRENT_SOURCE_BLOB"),css:f("CANDIDATE_GOLDEN_CSS_BLOB"),
     previousCss:f("G10_B01_B12_FROZEN_CSS_BLOB")};
   };
+  const currentB14=()=>{
+   const t=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHV_B14_Q18_GOLDEN_ENRICHMENT_DELTA_R01_20261119.md"),"utf8");
+   const f=k=>t.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   const baseline=f("BASELINE_LESSON_GIT_BLOB"),next=f("CANDIDATE_LESSON_GIT_BLOB");
+   const cssBase=f("G10_B01_B13_FROZEN_CSS_BLOB"),cssNext=f("CANDIDATE_GOLDEN_CSS_BLOB");
+   assert.equal(baseline,chvEditorialReceiptRows().get("B14").candidate,
+    "B14 current Knowledge must derive from historical signed ChV source");
+   assert(/^[a-f0-9]{40}$/.test(next||"")&&next!==baseline,
+    "B14 current source must be an independently pinned Git blob");
+   assert(t.includes("Q18_OWNER_SELF_VERIFIED_ENRICHMENT")&&
+    t.includes("S1_SCOPE_MATH_CONVENTION_VERIFIED")&&
+    t.includes("SBT_REFERENCE_GAP_DOCUMENTED")&&
+    t.includes("NOT_MERGED"),"B14 scoped math/PED self-QA and release gate missing");
+   const css=fs.readFileSync(path.join(root,"docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"));
+   const full=css.toString("utf8"),mark="/* G10 ChV B14 · scoped X-C RELEASE Golden";
+   const at=full.indexOf(mark);
+   assert(at>0&&full.indexOf(mark,at+1)<0,"B14 one and only one scoped CSS append");
+   const blob=b=>{const c=require("node:crypto");return c.createHash("sha1")
+    .update(Buffer.from("blob "+b.length+String.fromCharCode(0))).update(b).digest("hex");};
+   assert.equal(blob(Buffer.from(full.slice(0,at-1))),cssBase,
+    "B01–B13 owner-P2 CSS prefix must remain byte-exact");
+   assert.equal(blob(css),cssNext,"B14 scoped CSS candidate must match signed receipt");
+   return {baseline,next,cssBase,cssNext};
+  };
   if(name==="B12"){
    const locked=fs.readFileSync(path.join(root,
     "prototypes/thpt/ux795/G10_CHV_B12_S1_PED_CALCULATOR_Q18_R01_20261118.md"),"utf8");
@@ -560,9 +595,7 @@ function expectedG10KnowledgeBlob(lesson,legacy){
     "B12 current learner Markdown must match scoped Delta A SHA");
    for(const [rel,key] of [
     ["docs/assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js","B12_R01_ITEM_BANK_BLOB"],
-    ["docs/thpt-preview/sgk/chuong-v/luyen-tap.md","B12_R01_PRACTICE_HUB_BLOB"],
-
-    ["docs/thpt-preview/sgk/chuong-v/bai-14.md","FROZEN_B14_SOURCE_BLOB"]]){
+    ["docs/thpt-preview/sgk/chuong-v/luyen-tap.md","B12_R01_PRACTICE_HUB_BLOB"]]){
      assert.equal(blob(fs.readFileSync(path.join(root,rel))),f(key),
       "B12 single canonical/source and other owner-frozen lesson SHA mismatch "+rel);
    }
@@ -581,10 +614,17 @@ function expectedG10KnowledgeBlob(lesson,legacy){
     "B12 owner-approved Golden CSS prefix must remain byte-identical");
    assert.equal(b13.previousCss,g("GOLDEN_CSS_CURRENT_BLOB"),
     "B13 receipt previous CSS SHA must match owner signed B12");
-   assert.equal(blob(style),b13.css,"B13 current scoped CSS SHA must match Q18 receipt");
+   const b14=currentB14();
+   assert.equal(b14.baseline,f("FROZEN_B14_SOURCE_BLOB"),"B12 historical B14 baseline preserved");
+   assert.equal(b14.cssBase,b13.css,"B14 CSS append must start from owner-P2 B13 CSS");
+   assert.equal(blob(fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-v/bai-14.md"))),b14.next,
+    "B14 current Knowledge must match scoped Q18 X-C receipt");
+   assert.equal(blob(Buffer.from(full.slice(0,full.indexOf("/* G10 ChV B14 · scoped X-C RELEASE Golden")-1))),
+    b13.css,"B13 CSS snapshot unchanged before B14 appendix");
    return u("B12_CURRENT_SOURCE_BLOB");
   }
   if(name==="B13")return currentB13().next;
+  if(name==="B14")return currentB14().next;
   if(chvii){
    assert.equal(chvii.helps,({B19:9,B20:7,B21:7,B22:10})[name],name+" exact total HELP count");
    assert.equal(chvii.examples,({B19:2,B20:2,B21:2,B22:3})[name],name+" anti-ChVI Golden worked-example count");

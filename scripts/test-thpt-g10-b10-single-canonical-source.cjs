@@ -49,8 +49,17 @@ assert.equal(blob(Buffer.from(css.slice(0,b13Start-1))),golden("GOLDEN_CSS_CURRE
  "B01–B12 approved Golden stylesheet remains immutable");
 const b13Receipt=read("prototypes/thpt/ux795/G10_CHV_B13_S1_Q18_GOLDEN_ENRICHMENT_DELTA_R01_20261119.md");
 const b13Field=k=>b13Receipt.split("**"+k+":** "+t)[1]?.slice(0,40);
-assert.equal(blob(buf(cssPath)),b13Field("CANDIDATE_GOLDEN_CSS_BLOB"),
- "B13 Golden scoped palette must match new Q18 candidate exact SHA");
+const b14Marker="/* G10 ChV B14 · scoped X-C RELEASE Golden",b14At=css.indexOf(b14Marker);
+const receipt14=read("prototypes/thpt/ux795/G10_CHV_B14_Q18_GOLDEN_ENRICHMENT_DELTA_R01_20261119.md");
+const b14Field=k=>receipt14.split("**"+k+":** "+t)[1]?.slice(0,40);
+assert(b14At>0&&css.indexOf(b14Marker,b14At+1)<0,
+ "B14 one scoped Golden appendix after accepted B13");
+assert.equal(blob(Buffer.from(css.slice(0,b14At-1))),b13Field("CANDIDATE_GOLDEN_CSS_BLOB"),
+ "B13 owner P2 CSS remains exact ancestor without edits");
+assert.equal(b14Field("G10_B01_B13_FROZEN_CSS_BLOB"),b13Field("CANDIDATE_GOLDEN_CSS_BLOB"),
+ "B14 signed prior CSS must match B13 candidate CSS");
+assert.equal(blob(buf(cssPath)),b14Field("CANDIDATE_GOLDEN_CSS_BLOB"),
+ "B14 exact CSS SHA signed X-C, not altered old B13 receipt");
 const runtimePath="docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js";
 const runtime=read(runtimePath);
 assert.equal(field("B09_OWNER_P2_RUNTIME_BASELINE_BLOB"),"7a77c4444dfc96aeeaf87ddd17d8f9d37a6ae136");

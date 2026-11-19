@@ -64,8 +64,19 @@ for(const n of [12,13,14]){
  const ui=k=>fix.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
  assert.equal(ui("B12_PREVIOUS_SOURCE_BLOB"),g("B12_SOURCE_CURRENT_BLOB"),"B12 signed UI predecessor");
  assert.equal(ui("B13_PREVIOUS_SOURCE_BLOB"),b13field("CANDIDATE_LESSON_GIT_BLOB"),"B13 signed Q18 predecessor");
+ const b14=fs.readFileSync(path.join(root,
+  "prototypes/thpt/ux795/G10_CHV_B14_Q18_GOLDEN_ENRICHMENT_DELTA_R01_20261119.md"),"utf8");
+ const b14f=k=>b14.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
  const expected=n===12?ui("B12_CURRENT_SOURCE_BLOB"):
-  n===13?ui("B13_CURRENT_SOURCE_BLOB"):row.candidate;
+  n===13?ui("B13_CURRENT_SOURCE_BLOB"):b14f("CANDIDATE_LESSON_GIT_BLOB");
+ if(n===14){
+  assert.equal(b14f("BASELINE_LESSON_GIT_BLOB"),row.candidate,
+   "B14 §X-C current delta must preserve signed original Knowledge baseline");
+  assert(b14.includes("Q18_OWNER_SELF_VERIFIED_ENRICHMENT")&&
+   b14.includes("S1_SCOPE_MATH_CONVENTION_VERIFIED")&&
+   b14.includes("SBT_REFERENCE_GAP_DOCUMENTED")&&b14.includes("NOT_DEPLOYED"),
+   "B14 eligible published Knowledge must carry affected-outcome math/PED receipt");
+ }
  if(n===13){
   assert.equal(b13field("BASELINE_LESSON_GIT_BLOB"),row.candidate,
    "B13 new source must extend exact prior ChV approved candidate");
@@ -121,7 +132,11 @@ for(const n of [12,13,14]){
   const strip=x=>x.replace(/<p><strong>Nếu chưa làm được:<\/strong>[\s\S]*?<\/p>/g,"");
   assert.deepEqual(newAnswers.map(strip),oldAnswers.map(strip),
    "B13 original five mathematical first-try answers unchanged except recovery text");
- }else assert.deepEqual(newAnswers,oldAnswers,"B"+n+" original answer changed");
+ }else{
+  const strip=x=>x.replace(/<p><strong>Nếu chưa làm được:<\/strong>[\s\S]*?<\/p>/g,"");
+  assert.deepEqual(newAnswers.map(strip),oldAnswers.map(strip),
+   "B14 all original First Try result/reasoning paragraphs must remain byte-identical except recovery navigation");
+ }
  assert.equal(newAnswers.length,n===12?4:moving[n],
   "B"+n+" original result blocks; B12 new calculator uses text question disclosure");
  const tabs=[...s.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]);
@@ -143,7 +158,7 @@ for(const n of [12,13,14]){
    "1.4. Thuật ngữ, kiến thức và kỹ năng"]:
    n===13?["1.1. Vì sao một bộ dữ liệu cần nhiều số đại diện?",
     "1.2. Khám phá cách xác định số đại diện","1.3. Tổng kết cách chọn số đặc trưng"]:
-   ["Cùng tìm hiểu","Ví dụ trực quan","Thuật ngữ, kiến thức và kỹ năng"],
+   ["1.1. Cùng tìm hiểu","1.2. Ví dụ trực quan","1.3. Thuật ngữ, kiến thức và kỹ năng"],
   "B"+n+" signed intuitive Discovery stages");
  assert.deepEqual([...official.matchAll(/^    ### ([^\n]+)/gm)].map(m=>m[1]),
   headings[n],"B"+n+" exact official S1 headings, no duplicate SGK");
@@ -203,18 +218,28 @@ for(const n of [12,13,14]){
   assert(!s.includes("Em tự thử.")&&!s.includes("Hiểu bản chất trước công thức"),
    "B13 visible copy cannot reference obsolete labels or nonexistent sections");
  }else{
-  assert.equal(s.slice(r,t),prev.slice(prev.indexOf('=== "Ví dụ"'),prev.indexOf('=== "Lỗi thường gặp"')),
-   "B"+n+" approved worked examples unchanged");
-  assert.equal(s.slice(t),prev.slice(prev.indexOf('=== "Lỗi thường gặp"')),
-   "B"+n+" original D6 changed");
-  assert.equal((s.slice(r,t).match(/^    ### Ví dụ /gm)||[]).length,3,
-   "B"+n+" 3 canonical example placements");
- }
- if(n!==12&&n!==13){
-  const oldMath=count(fmt(prev)),newMath=count(fmt(s));
-  for(const [expression,nOld] of oldMath)
-   assert((newMath.get(expression)||0)>=nOld,
-    "B"+n+" original math expression lost "+expression.slice(0,95));
+  const ex=s.slice(r,t),help=s.slice(t);
+  assert.equal((ex.match(/^    ### 3\.[1-3]\. Ví dụ [1-3] —/gm)||[]).length,3,
+   "B14 preserve EX01–EX03 as three worked examples");
+  for(const [phrase,number] of [["**Đề:**",3],["**Phân tích:**",3],
+   ["**Kiểm lại:**",3],['class="thpt-g10-example-solution"',3],
+   ['#### &nbsp; {style="display:none"}',3]]){
+   assert.equal(ex.split(phrase).length-1,number,"B14 exact 3 source-authored example components "+phrase);
+  }
+  assert.equal((ex.match(/<strong>Bước [1-4]/g)||[]).length>=9,true,
+   "B14 method must include real intermediate mathematical steps");
+  assert.equal((official.match(/class="thpt-r4-knowledge-conclusion thpt-r4-concept-card"/g)||[]).length,3,
+   "B14 exactly three S1 math definitions use Golden teal");
+  assert.equal((official.match(/class="thpt-r4-knowledge-conclusion thpt-r4-rule-card"/g)||[]).length,1,
+   "B14 one S1 outlier rule uses Golden blue");
+  assert.equal((help.match(/^    \?\?\? tip "4\.[12]\. /gm)||[]).length,2,
+   "B14 exactly two original numbered D6 recoveries");
+  assert(!s.includes("Hiểu bản chất trước công thức và Vì sao làm theo cách này?"),
+   "B14 First Try D6 links must target actual lesson sections");
+  for(const phrase of ["(2+4+6+8)/4=5","R=8-2=6","s^2","(4+5+6)/3=5",
+   "(1+5+9)/3=5","20>7"]){
+   assert(s.includes(phrase),"B14 essential approved result/formula lost "+phrase);
+  }
  }
  assert(s.includes(originalSvg[n]),"B"+n+" original approved SVG must remain");
  const figureArea=n===12||n===13?discovery:official;
@@ -227,7 +252,7 @@ for(const n of [12,13,14]){
  assert.notDeepEqual([...official.replace(headings[n][0],"WRONG SGK").matchAll(/^    ### ([^\n]+)/gm)]
   .map(m=>m[1]),headings[n],"B"+n+" wrong S1 heading negative test");
  assert.notEqual(blob(s+" "),expected,"B"+n+" negative source SHA mutation");
- console.log("PASS B"+n+" Q18 S1 2.1–2.3, "+moving[n]+" First Tries, strict source receipt, independent review HOLD");
+ console.log("PASS B"+n+" Q18 S1 2.1–2.3, "+moving[n]+" First Tries, source-locked "+(n===14?"§X-C self-verified eligible Knowledge":"historical receipt")+"; no independent reviewer claim");
 }
 // Independent checks for newly added mathematics, not a fake reviewer PASS:
 assert(1.4135**2<2&&2<1.4145**2,"B12 sqrt2 accuracy proof incorrect");
