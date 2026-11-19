@@ -1,3 +1,15 @@
+<!-- TOPIC22_S1_G10_B13_MODE_EQUAL_FREQUENCY_DELTA_C_20261120 -->
+## 20/11/2026 · Bổ sung/hiệu chỉnh quy ước MỐT SGK Toán 10 tập 1 Bài 13 — DELTA_C
+
+**Đối chiếu trực tiếp:** SGK KNTT Toán 10 tập 1, Bài 13, trang in **81** (mục “3. Mốt”, nhận xét về tần số bằng nhau): “Khi các giá trị trong mẫu số liệu xuất hiện với tần số như nhau thì mẫu số liệu không có mốt.” Nguồn đọc: https://media.metaisach.com/2025/09/toan-10-tap-1-ket-noi-tri-thuc-voi-cuoc-song-7ff1b316.pdf . Không lấy chứng cứ của SGK 11 mẫu ghép nhóm thay S1 lớp 10 thô.
+
+**Đối tượng thiếu:** `G10-B13-MODE`, duy nhất `§1.2` Kiến thức bản thảo learner trước `4fd31e9669c5808106d12f6a49470a81303946a8` thiếu ngoại lệ **mọi tần số bằng nhau → không có mốt**; câu “khi hai giá trị cùng cao nhất thì hai mốt” không đủ điều kiện nếu chỉ có đúng hai giá trị với tần số ngang nhau.
+
+**Đã bổ sung ngay vào canonical** sau `a4436862afa8b34f65cb1b17c4d98f06b3cfb9e1`: đúng ba dòng phần Knowledge (văn xuôi, khối ĐỊNH NGHĨA/CÔNG THỨC và đoạn outcome G10-B13-MODE) làm rõ quy ước; minh họa `1,2,3,4` không có mốt, `1,1,2,2,3` có hai mốt. Một giá trị phân biệt duy nhất lặp lại vẫn là mốt; quy tắc không có mốt áp khi **ít nhất hai giá trị phân biệt** cùng tần số. **Không sửa bất kỳ stem/key/rubric/placement/ITEM_ID/đồ thị/assessment nào**, nguồn Luyện tập/Tự kiểm tra byte-exact.
+
+**AUTHOR_SELF_VERIFIED_AFFECTED_DELTA:** 6/6 phép kiểm bảng tần số (cả không có mốt, hai mốt, một mốt, dữ liệu một giá trị) PASS; 7/7 assertion phạm vi sửa (dòng ngoài scope, canonical ID, example counts, hai trường hợp minh họa, assessment text, no RD1) PASS. `DELTA_C_ACADEMIC_MATERIAL`, Q01+Q03+Q10+Q11 source-covered. **Không** tự gán verdict NotebookLM độc lập mới hoặc chứng thực hoàn thành kiểm toán đủ 22 chuyên đề. Giữ `CONTENT_READY` trong phạm vi owner-authorized source improvement and Q18 self-verification; NO RELEASE merge/deploy.
+
+---
 # CĐ22 · R09 source-equivalent AUTHOR technical Q18 receipt · original R07 mathematics preserved
 
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -5,7 +17,7 @@ STANDARD_VERSION: 3.1.0
 PACKET_ID: THPT-TOPIC-STATISTICS-G10-G12-FULL-R09
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md
-SOURCE_BLOB: 4fd31e9669c5808106d12f6a49470a81303946a8
+SOURCE_BLOB: a4436862afa8b34f65cb1b17c4d98f06b3cfb9e1
 PREVIOUS_R06_BLOB: 12f3af42c2e6b0f316355dcedfc34ec8b6136694
 BASELINE_R05_BLOB: 0762cc67491965a4bab700aa1d33937aa3bf7cb6
 ORIGINAL_R01_BLOB: 4f4dc4abcf671479fe0650595e9b67f745738b9a
@@ -27,7 +39,7 @@ AUTHOR_SIGNOFF: AUTHORING tự kiểm và chịu trách nhiệm Academic+PED the
 
 ORIGINAL_R07_SOURCE_BLOB: e31771e0fb9347c8c242ec8ca9e8a91a1ab74ff6
 ORIGINAL_R07_AUTHOR_Q18_BLOB: 40feca220c54fc0620ab113cc354e3d37a66088e
-R09_SOURCE_BLOB: 4fd31e9669c5808106d12f6a49470a81303946a8
+R09_SOURCE_BLOB: a4436862afa8b34f65cb1b17c4d98f06b3cfb9e1
 R09_A1_A7_PARITY_METADATA_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_SOURCE_EQUIVALENCE_114_Q15_20261116.md
 R09_A1_A7_PARITY_METADATA_BLOB: 4a519ff67d28ed3da93be87a8b630e42beb649f5
 R09_DELTA_CLASS: DELTA_A_UI_AND_DELTA_B_SOURCE_EQUIVALENT
@@ -164,15 +176,15 @@ R09_REVIEW_SCOPE: R07 original source math checks and Q18 receipt remain valid o
 ## R09 source-specific author technical signoff
 
 AUTHOR_SIGNOFF: TOP22_R09_114_EXACT_ORIGINAL_ITEM_PROJECTIONS_19_WRITTEN_13_LESSONS_9_PUBLIC_SELF_CHECK_2_SVG_20261116
-AUTHOR_SELF_QA_RECEIPT: This source-specific technical receipt binds R09 `4fd31e9669c5808106d12f6a49470a81303946a8`, A1–A7 `4a519ff67d28ed3da93be87a8b630e42beb649f5` and original unchanged R07 source; math/PED original assertions are historical R07 evidence, NOT a new independent NotebookLM review or website QA. No merge/deploy.
+AUTHOR_SELF_QA_RECEIPT: This source-specific technical receipt binds R09 `a4436862afa8b34f65cb1b17c4d98f06b3cfb9e1`, A1–A7 `4a519ff67d28ed3da93be87a8b630e42beb649f5` and original unchanged R07 source; math/PED original assertions are historical R07 evidence, NOT a new independent NotebookLM review or website QA. No merge/deploy.
 
 ## 18/11/2026 — active in-place Q18/Q16 source equivalence
 
-- **CURRENT_LEARNER_SOURCE_BLOB** `4fd31e9669c5808106d12f6a49470a81303946a8` on the existing unique R09 learner path; historical source `b5713f0c2a1aa6a9fa7a7d63f6e6878bdf8d338b` retains its original immutable Git snapshot and checks. Exact source diff has precisely two redundant standalone `**Đọc hình:**` headings removed and seven public Written self-comparison instruction lines rewritten; original scoring weights, criteria, mathematical solutions and answer keys remain unchanged.
+- **CURRENT_LEARNER_SOURCE_BLOB** `a4436862afa8b34f65cb1b17c4d98f06b3cfb9e1` on the existing unique R09 learner path; historical source `b5713f0c2a1aa6a9fa7a7d63f6e6878bdf8d338b` retains its original immutable Git snapshot and checks. Exact source diff has precisely two redundant standalone `**Đọc hình:**` headings removed and seven public Written self-comparison instruction lines rewritten; original scoring weights, criteria, mathematical solutions and answer keys remain unchanged.
 - Seven notes now explicitly require **self-attempt before reveal** and say **not an official grade**; original had said no official self-grade/Mastery. Runtime Q16 stays unaffected: all **nine public Selfcheck** question-only placements retain `NO_MASTERY NOT_RD1`, the learner Markdown does not implement official Final Submit or write Mastery, no extra private RD1 material disclosed. This is scoped `DELTA_B_SOURCE_EQUIVALENT` verification of guidance semantics, not mathematical-material change.
 - Verified complete **114 original Practice headings**, canonical display marker sequence, two SVG references, 9 public question-only Selfchecks, and answer disclosure count unchanged. Existing grouped-mode worked math and 21 direct recomputation checks remain source-equivalent on the unchanged math blocks. No new mathematical definitions, formulas, conditions, item answer/rubric changed.
 - **PDF-index:** original reviewer R2 citation was a metadata error; correct G11 KNTT printed scope ChIII B08–B09 pp58–68 recorded by prior source receipt, without requiring an exclusive PDF offset to establish correct mathematics. Historical P2=1 is a nonblocking provenance note, not P0/P1, and **not** a reason to change the mathematics. No new independent NotebookLM full-Topic PASS claimed.
 
 
 <!-- TOP22_OWNER_EDITORIAL_DELTA_A_20261119 -->
-**Owner-approved DELTA_A_UI (19/11):** Bỏ chính xác 13 dòng tiêu đề phụ `**Khám phá kiến thức**` (mỗi lesson một lần) trong cùng sole learner canonical; **giữ nguyên toàn văn lời giải thích ngay sau nhãn, mọi định nghĩa, công thức, điều kiện, ví dụ, Vận dụng, Đối chiếu, 114 stems/solutions/rubrics, 9 public selfchecks, 2 SVG, Q15/16**. Baseline source `b875ca4e726ab14071f17a2d8a85d6950e3b4ba9` → source sau sửa `4fd31e9669c5808106d12f6a49470a81303946a8`. R09 academic/PED snapshot không bị hồi tố; Q18 tự xác minh tương đương trên scope nhãn. Không cần full NotebookLM review, không merge/deploy; tiếp tục STATE CONTENT_READY.
+**Owner-approved DELTA_A_UI (19/11):** Bỏ chính xác 13 dòng tiêu đề phụ `**Khám phá kiến thức**` (mỗi lesson một lần) trong cùng sole learner canonical; **giữ nguyên toàn văn lời giải thích ngay sau nhãn, mọi định nghĩa, công thức, điều kiện, ví dụ, Vận dụng, Đối chiếu, 114 stems/solutions/rubrics, 9 public selfchecks, 2 SVG, Q15/16**. Baseline source `b875ca4e726ab14071f17a2d8a85d6950e3b4ba9` → source sau sửa `a4436862afa8b34f65cb1b17c4d98f06b3cfb9e1`. R09 academic/PED snapshot không bị hồi tố; Q18 tự xác minh tương đương trên scope nhãn. Không cần full NotebookLM review, không merge/deploy; tiếp tục STATE CONTENT_READY.
