@@ -423,11 +423,11 @@ for(const [lesson,row] of rows){
    const b12Color=k=>b12Palette.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
    assert.equal(b12Color("GOLDEN_CSS_PREVIOUS_BLOB"),b11f("CSS_B11_SCOPED_APPEND_BLOB"),
     "Signed B10/B11 stylesheet was exact accepted baseline before B12 append");
-   const cssText=css.toString("utf8"),b13CssMarker="/* G10 ChV B13 · exact B10/B12 Golden palette";
-   const at=cssText.indexOf(marker);
-   assert(at>0&&cssText.indexOf(marker,at+1)<0,
+   const b13CssText=css.toString("utf8"),b13CssMarker="/* G10 ChV B13 · exact B10/B12 Golden palette";
+   const b13CssAt=b13CssText.indexOf(b13CssMarker);
+   assert(b13CssAt>0&&b13CssText.indexOf(b13CssMarker,b13CssAt+1)<0,
     "B13 may add only one Golden scoped CSS appendix");
-   assert.equal(blob(Buffer.from(cssText.slice(0,at-1))),b12Color("GOLDEN_CSS_CURRENT_BLOB"),
+   assert.equal(blob(Buffer.from(b13CssText.slice(0,b13CssAt-1))),b12Color("GOLDEN_CSS_CURRENT_BLOB"),
     "B12 owner-accepted Golden CSS must remain exact prefix");
    const b13Receipt=fs.readFileSync(path.join(root,
     "prototypes/thpt/ux795/G10_CHV_B13_S1_Q18_GOLDEN_ENRICHMENT_DELTA_R01_20261119.md"),"utf8");
