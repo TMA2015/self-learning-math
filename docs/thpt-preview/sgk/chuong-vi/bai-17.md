@@ -265,7 +265,7 @@
     \iff (x-3)(x-6)\le0.
     \]
 
-    Suy ra \(\boxed{3\le x\le6}\) (m); cả hai đầu mút đều nằm trong \(0<x<9\). **Kiểm lại:** \(S(3)=S(6)=36\,\mathrm{m}^2\), còn \(S(4)=40\,\mathrm{m}^2\), nên dấu \(\ge\) phải lấy cả hai đầu mút.
+    Suy ra \(\boxed{3\le x\le6}\) (m); cả hai đầu mút đều nằm trong \(0<x<9\). Ở hai biên ta được \(S(3)=S(6)=36\,\mathrm{m}^2\); chọn \(x=4\) thì \(S(4)=40\,\mathrm{m}^2\). Phép thế này kiểm lại cả hai dấu bằng và một giá trị ở giữa.
 
 
 
