@@ -3,7 +3,7 @@
 PACKET_ID: THPT-TOPIC11-ANTIDERIVATIVE-INTEGRAL-GEOMETRY-FULL-R01
 CONTENT_REVISION: R06
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: c04879ef06465d76d7248dd29454cc36107066d7
+AUTHOR_METADATA_BLOB: 184df3ec5bf16fb72cacb97ddfd94d0d04dc2758
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
@@ -11,9 +11,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 36c22ff9d441da793181072426d594bfe245a8aa
+ACADEMIC_SOURCE_BLOB: 9f374c22d40358334d79ef504e7f6c83e9d0c7cc
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC11_R06_CURRENT_SOURCE_AUTHOR_Q18_AFFECTED_DELTA_20261118.md
-REVIEW_RECEIPT_BLOB: 70830aba988136543d6e960664d995b1fe903d52
+REVIEW_RECEIPT_BLOB: c5c701690258f87eb4a8b0cd773928e38b54b25c
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_NEW28_PUBLIC_CANONICAL_R05_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0
 PUBLIC_ORIGINAL88_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_ORIGINAL88_SGK_CANONICAL_INDEX_R01_20261112.md
@@ -453,9 +453,12 @@ Original R01 SGK/public source and bank immutable, historical independent review
 
 ## CURRENT AUTHORING Q18 v3.1.0 / proportional review closure (18/11/2026)
 
-Only **one** learner source is active: `prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md`, blob `36c22ff9d441da793181072426d594bfe245a8aa`. Current exact-source `AUTHOR_SELF_VERIFIED` Q18 composite `Temp_TOPIC11_R06_CURRENT_SOURCE_AUTHOR_Q18_AFFECTED_DELTA_20261118.md`, blob `70830aba988136543d6e960664d995b1fe903d52`; A1 metadata blob `c04879ef06465d76d7248dd29454cc36107066d7`. All prior dated R05/R06 blob statements above are **immutable historical scope only**, not the current delivery.
+Only **one** learner source is active: `prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md`, blob `9f374c22d40358334d79ef504e7f6c83e9d0c7cc`. Current exact-source `AUTHOR_SELF_VERIFIED` Q18 composite `Temp_TOPIC11_R06_CURRENT_SOURCE_AUTHOR_Q18_AFFECTED_DELTA_20261118.md`, blob `c5c701690258f87eb4a8b0cd773928e38b54b25c`; A1 metadata blob `184df3ec5bf16fb72cacb97ddfd94d0d04dc2758`. All prior dated R05/R06 blob statements above are **immutable historical scope only**, not the current delivery.
 
 - **DELTA_B**: four formal Knowledge callouts and one recap restate concepts from preceding signed prose, with source-diff and mathematical domain assumptions in Q18.
 - **DELTA_C**: TOP11-O08 adds the exact continuity-at-endpoints requirement for primitive F; TOP11-O14 fixes incorrect flow/velocity naming with the appropriate units. Author checked ∫₁³4x=16, ∫₀²2x=4, ∫₀²(5−2t)dt=6 m, v≥1 m/s, ∫₀¹3t²dt=1 m, the flow example ∫₀²2t dt=4 L, and PED progression. 116 original canonical Practice IDs/keys/rubrics are **unchanged**; 22 public selfchecks are existing question-only replay IDs. Four real Topic SVG paths Git-SHA verified.
 - Current P0/P1/P2=0 according to **source-locked AUTHOR_SELF_QA**. Owner-effective PR #808/Q18 v3 allows self-verification for fully checked Topic DELTA_C; `NOTEBOOKLM_REREVIEW=NOT_REQUIRED_WITH_REASON`. No independent Topic reviewer PASS was claimed; this choice does not change delta classification.
 - Exact source / Q18 / A1 / one V2 and one ready manifest+REGISTER are the only AUTHORING handoff identities; final Topic V2 Intake CI at PR HEAD must succeed. Browser Golden/MathJax responsive AP/R/P1/P2, official Topic Readiness, RD1, Mastery and owner merge/deploy remain separate RELEASE gates.
+
+
+**19/11 owner Delta A:** 18 typed formula headings in same learner, mathematical text unchanged; Q18/A1/source exact refreshed, CONTENT_READY retained.
