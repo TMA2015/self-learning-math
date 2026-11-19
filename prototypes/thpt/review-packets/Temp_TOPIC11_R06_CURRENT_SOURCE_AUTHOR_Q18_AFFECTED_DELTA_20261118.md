@@ -9,8 +9,8 @@ LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 CURRENT_STATUS: AUTHOR_SELF_VERIFIED_AWAITING_V2_SOURCE_LOCK
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 36c22ff9d441da793181072426d594bfe245a8aa
-ACADEMIC_SOURCE_BLOB: 36c22ff9d441da793181072426d594bfe245a8aa
+SOURCE_BLOB: 9f374c22d40358334d79ef504e7f6c83e9d0c7cc
+ACADEMIC_SOURCE_BLOB: 9f374c22d40358334d79ef504e7f6c83e9d0c7cc
 SIGNED_R06_PREVIOUS_SOURCE_BLOB: 58b16f7c442d560f3950aafdbaf1f686e1e337e4
 SIGNED_R06_PREVIOUS_Q18_BLOB: ee42fcc98ccc51fef08a7eabdbf99032b0110c27
 ORIGINAL_R05_STUDENT_BLOB: 7d8eac917be4f7688a8a718e54cce4a84bc055ef
@@ -26,7 +26,7 @@ P0: 0
 P1: 0
 P2: 0
 NOTEBOOKLM_REREVIEW: NOT_REQUIRED_WITH_REASON — owner-effective Q18 v3.1.0 author self verification; O08/O14 exact math and PED conditions directly checked
-AUTHOR_SIGNOFF: TOP11_R06_20261118_36c22ff9d441da793181072426d594bfe245a8aa_AUTHOR_SELF_QA_NOT_FINAL_ACCEPTANCE
+AUTHOR_SIGNOFF: TOP11_R06_20261118_9f374c22d40358334d79ef504e7f6c83e9d0c7cc_AUTHOR_SELF_QA_NOT_FINAL_ACCEPTANCE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
 PRIVATE_RD1_IMPORTED: 0
@@ -94,4 +94,8 @@ This verification does not close DELTA_C independent review O08/O14, does not al
 
 - **Owner choice:** Do not invoke NotebookLM merely to satisfy a checklist when a simple correction can be verified directly; always send an explicit 3–6-sentence chat prompt if external review is genuinely required. Neither O08 nor O14 meets the uncertainty trigger.
 - **Effective governance:** merged PR #808 (11/11/2026) authorized Q18 AUTHOR_SELF_VERIFIED; canonical Source 07 GitHub operational section IX expressly permits self-QA for Topic `DELTA_C_ACADEMIC_MATERIAL`, without hiding the academic nature of the correction.
-- **Current source SHA** remains `36c22ff9d441da793181072426d594bfe245a8aa`, untouched after direct math/PED checks. Historic review packet is only an optional unused audit artifact; no external review result claimed.
+- **Current source SHA** remains `9f374c22d40358334d79ef504e7f6c83e9d0c7cc`, untouched after direct math/PED checks. Historic review packet is only an optional unused audit artifact; no external review result claimed.
+
+
+<!-- TOP11_OWNER_EDITORIAL_DELTA_A_20261119 -->
+**Owner-approved copy-only Delta A 19/11:** 18 formerly unmarked antiderivative/integral formula, method and definition statements received descriptive typed captions, while 4 previous formal callouts remain as-is. Baseline learner `36c22ff9d441da793181072426d594bfe245a8aa` → `9f374c22d40358334d79ef504e7f6c83e9d0c7cc`. A complete reverse-prefix text comparison preserves all original mathematical characters, hypotheses, constraints, 22 worked examples, 22 Vận dụng/Đối chiếu, canonical item questions/answers/rubrics, visuals and selfchecks; no new academic content. Q18 affected edit author self-equivalent, STATE stays CONTENT_READY under owner permission, no full NotebookLM re-review and no RELEASE.
