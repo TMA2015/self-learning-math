@@ -423,8 +423,19 @@ for(const [lesson,row] of rows){
    const b12Color=k=>b12Palette.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
    assert.equal(b12Color("GOLDEN_CSS_PREVIOUS_BLOB"),b11f("CSS_B11_SCOPED_APPEND_BLOB"),
     "Signed B10/B11 stylesheet was exact accepted baseline before B12 append");
-   assert.equal(blob(css),b12Color("GOLDEN_CSS_CURRENT_BLOB"),
-    "Current shared Golden CSS must match B12 scoped exact B10 palette SHA");
+   const cssText=css.toString("utf8"),marker="/* G10 ChV B13 · exact B10/B12 Golden palette";
+   const at=cssText.indexOf(marker);
+   assert(at>0&&cssText.indexOf(marker,at+1)<0,
+    "B13 may add only one Golden scoped CSS appendix");
+   assert.equal(blob(Buffer.from(cssText.slice(0,at-1))),b12Color("GOLDEN_CSS_CURRENT_BLOB"),
+    "B12 owner-accepted Golden CSS must remain exact prefix");
+   const b13Receipt=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHV_B13_S1_Q18_GOLDEN_ENRICHMENT_DELTA_R01_20261119.md"),"utf8");
+   const b13Field=k=>b13Receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(blob(css),b13Field("CANDIDATE_GOLDEN_CSS_BLOB"),
+    "B13 scoped UI appendix SHA must match source receipt");
+   assert(b13Receipt.includes("DELTA_C_REVIEW_HOLD"),
+    "B13 Q18 source remains review HOLD independent of Golden UI QA");
   // Historical R01 source/receipt stay immutable; this P2 correction is a scoped DELTA_A_UI.
   const r02=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHIV_B10_P2_MATHJAX_DELTA_A_UI_R02_20261118.md"),"utf8");
