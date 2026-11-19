@@ -35,15 +35,29 @@ for(const id of ["A1","A2","A3","A4","B1","B2","B3","B4"]){
 }
 const written=fs.readFileSync(path.join(root,"docs/thpt-preview/thu-vien/tu-luan.md"),"utf8");
 const newWritten=[...written.matchAll(/data-thpt-written-canonical="([^"]+)"/g)].map(m=>m[1]);
-assert.equal(newWritten.length,8,"Expected eight reviewed Written records with canonical exposure markers");
-assert.equal(new Set(newWritten).size,8);
-assert.equal(new Set([...ids,...appIds,...newWritten,
-  "THPT-CORE-QF01","PRACTICE-THPT-DEMO-01","HPT-WRI-DEMO-01","HPT-WRI-DEMO-ANCHOR-01"]).size,36,
-  "Public Core/Practice/Written canonical IDs must reconcile to 36 without cloning");
+assert.equal(newWritten.length,10,"Original eight Written plus two owner-reviewed B16 items");
+assert.equal(new Set(newWritten).size,10);
+const oldWritten=[
+ "HPT-WRI-DEMO-01","HPT-WRI-DEMO-ANCHOR-01",
+ "HPT-G10-CHVI-WRI-15-01","HPT-G10-CHVI-WRI-15-02",
+ "HPT-G10-CHVI-WRI-17-01","HPT-G10-CHVI-WRI-17-02",
+ "HPT-G10-CHVI-WRI-18-01","HPT-G10-CHVI-WRI-18-02"
+];
+assert(oldWritten.every(x=>newWritten.includes(x)),
+ "All eight pre-existing Written canonical IDs must survive unchanged");
+assert(newWritten.includes("HPT-G10-CHVI-WRI-16-01")&&newWritten.includes("HPT-G10-CHVI-WRI-16-02"),
+ "B16 has one ordinary and one Anchor in the SAME Written library");
+const b16Core=fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/core/ham-so-bac-hai.md"),"utf8");
+const b16Ids=[...b16Core.matchAll(/data-thpt-canonical-item="([^"]+)"/g)].map(m=>m[1]);
+assert.equal(b16Ids.length,12,"B16 owner self-QA bank should provide 12 public learner items");
+assert.equal(new Set(b16Ids).size,12,"Duplicate B16 Core/Practice canonical ID");
+assert.equal(new Set([...ids,...appIds,...newWritten,...b16Ids]).size,48,
+  "Canonical SGK ChVI public inventory must reconcile to 48 without Topic demo or cloning");
 const sources=[
   "docs/assets/javascripts/thpt-chvi-reviewed-formative-v1.js",
   "docs/assets/javascripts/thpt-r4-preview.js",
   "docs/thpt-preview/sgk/chuong-vi/luyen-tap.md",
+  "docs/thpt-preview/sgk/core/ham-so-bac-hai.md",
   "docs/thpt-preview/thu-vien/tu-luan.md"
 ].map(p=>fs.readFileSync(path.join(root,p),"utf8")).join("\n");
 const heldOut=[...["15","16","17","18"].flatMap(n=>
@@ -52,16 +66,16 @@ for(const id of heldOut) assert(!sources.includes(id),"Exposed held-out item in 
 const manifest=require("../prototypes/thpt/shared-items/thpt-g10-chvi-reviewed-public-placement-v1.cjs");
 const qa=manifest.validate();
 assert.equal(qa.valid,true,qa.errors.join("; "));
-assert.equal(qa.unique_ids,36,"36 published public formative/Written canonical records");
-assert.equal(qa.placements,65,"28 conditional Topic practice refs + 36 SGK + B3 Written ref");
+assert.equal(qa.unique_ids,48,"48 current SGK public item IDs including B16 owner self-QA bank");
+assert.equal(qa.placements,76,"Historic placements plus B16-only SGK items; no Topic demo promoted");
 for(const row of manifest.canonical){
  assert(fs.existsSync(path.join(root,row.source)),"Missing canonical source "+row.source);
  assert.equal(row.mastery_credit,false,"No automatic production mastery");
 }
-assert.equal(manifest.canonical.filter(x=>x.is_anchor===true).length,4);
+assert.equal(manifest.canonical.filter(x=>x.is_anchor===true).length,5);
 const b3=manifest.placementsFor("THPT-G10-CHVI-APP-B3");
 assert.equal(b3.length,3,"Integrated application B3 must reuse one item as optional Written");
 assert.equal(new Set(b3.map(p=>p.item_id)).size,1,"B3 source item must not be cloned");
 assert(manifest.placements.every(x=>x.role!=="SGK_CHAPTER_READINESS"&&x.role!=="TOPIC_READINESS"),"No held-out assessment placement publicly activated");
 
-console.log("PASS THPT ChVI reviewed public practice: 18 unique formative, 8 cumulative, 8 Written; no held-out keys or assessment IDs; 36 total canonical IDs.");
+console.log("PASS THPT ChVI public canonical: 18 preserved reviewed formative, 8 cumulative, 8 original+2 B16 Written, 12 B16 SGK Core/Practice (QF01 preserved), 48 distinct SGK IDs, 76 placements, no held-out keys/mastery.");
