@@ -670,9 +670,14 @@ async function ready(page,path){
   await exerciseModal.locator("[data-thpt-modal-close]").click();
   assert.equal(page.url(),currentPracticeRoute,"Modal interactions unexpectedly navigated away");
   await ready(page,"thu-vien/tu-luan/");
-  assert((await page.locator(".thpt-r4-written-card").count())===8,"Reviewed Chapter VI Written library must have eight cards");
-  assert((await page.locator('[data-thpt-written-canonical]').count())===8,"All eight reviewed Written must have canonical identity");
-  assert((await page.locator('.thpt-r4-written-card[data-thpt-kind="anchor"]').count())===4,"Four anchor labels must be a subset of eight Written");
+  assert((await page.locator(".thpt-r4-written-card").count())===10,"All 8 historical Written plus 2 B16 cards must be available");
+  assert((await page.locator('[data-thpt-written-canonical]').count())===10,"All 10 Written must have one canonical identity");
+  assert((await page.locator('.thpt-r4-written-card[data-thpt-kind="anchor"]').count())===5,"Five anchors including B16 must be a subset of 10 Written");
+  for(const id of ["HPT-G10-CHVI-WRI-16-01","HPT-G10-CHVI-WRI-16-02"])
+   assert.equal(await page.locator('[data-thpt-written-canonical="'+id+'"]').count(),1,
+    "B16 Written canonical ID missing "+id);
+  assert.equal(await page.locator('[data-thpt-written-canonical="HPT-G10-CHVI-WRI-16-02"][data-thpt-kind="anchor"]').count(),1,
+    "B16 owner self-QA Anchor must be one Written, not a new assessment source");
   for(const section of await page.locator('[data-thpt-written-canonical]').all()){
    assert(await section.locator("details").count()===2,"Every reviewed Written must have hint and solution/rubric");
    const solution=section.locator("details").last();
