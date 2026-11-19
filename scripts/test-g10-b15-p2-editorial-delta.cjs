@@ -19,9 +19,18 @@ assert.equal(field(p2,"PREVIOUS_B15_SOURCE_BLOB"),field(old,"CANDIDATE_B15_SOURC
 assert.equal(field(r02,"PREVIOUS_B15_SOURCE_BLOB"),field(p2,"CANDIDATE_B15_SOURCE_BLOB"),"B15 P2→R02 source ancestry");
 const src=read("docs/thpt-preview/sgk/chuong-vi/bai-15.md");
 assert.equal(blob(src),field(r02,"CANDIDATE_B15_SOURCE_BLOB"),"B15 candidate must match its own latest Q18 SHA");
-const css=fs.readFileSync(path.join(root,"docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"));
+const css=fs.readFileSync(path.join(root,"docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"),"utf8");
 const svg=fs.readFileSync(path.join(root,"docs/assets/images/thpt/THPT_G10_CHVI_B15_FUNCTION_MAPPING_D5_R03.svg"));
-assert.equal(blob(css),field(r02,"GOLDEN_STYLESHEET_BLOB"),"Golden CSS unchanged");
+const b16=read(ux+"G10_CHVI_B16_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261119.md");
+const b16Marker="/* G10 ChVI B16 · scoped Golden only for canonical TRY06";
+const atB16=css.indexOf(b16Marker);
+assert(atB16>0&&css.indexOf(b16Marker,atB16+1)<0,"Only one scoped B16 CSS appendix");
+assert.equal(blob(css.slice(0,atB16-1)),field(r02,"GOLDEN_STYLESHEET_BLOB"),
+ "Owner P2 B15 Golden CSS prefix unchanged even after B16 appendix");
+assert.equal(field(b16,"PREVIOUS_OWNER_P2_GOLDEN_CSS_BLOB"),
+ field(r02,"GOLDEN_STYLESHEET_BLOB"),"B16 CSS must build on B15 owner-approved prefix");
+assert.equal(blob(css),field(b16,"CANDIDATE_SCOPED_GOLDEN_CSS_BLOB"),
+ "B16 full scoped CSS must match candidate Q18 receipt");
 assert.equal(blob(svg),field(r02,"ORIGINAL_SVG_ASSET_BLOB"),"Original SVG text, aspect ratio and math unchanged");
 assert(!src.includes("Vì sao chọn phương pháp này?"),"Remove four redundant mini headings from Discovery");
 assert(!src.includes('!!! tip "Lưu ý khi đọc hình"')&&!src.includes("Những lỗi dưới đây là"),"Keep previous P2 readability changes");
@@ -49,10 +58,16 @@ const neighbors={
  "docs/thpt-preview/sgk/chuong-v/bai-12.md":"a2ea6c909cdd2317188b13c2bde22e7923dba3de",
  "docs/thpt-preview/sgk/chuong-v/bai-13.md":"cb5adaa7804902fece7dd4ec30575733efd4c9c1",
  "docs/thpt-preview/sgk/chuong-v/bai-14.md":"a23afab8015c83813f0c8cbe918efa93e58aa623",
- "docs/thpt-preview/sgk/chuong-vi/bai-16.md":"4ddf9c449f92a9f48bace5a3f9b84186bf33af20",
+
  "docs/thpt-preview/sgk/chuong-vi/bai-17.md":"1a3481ee2020f48e924dae5e8b4f5779b3a2d88b",
  "docs/thpt-preview/sgk/chuong-vi/bai-18.md":"91d22f1af8814ed639ada3ee1c9dae2e9501c4c0"
 };
 for(const [p,sha]of Object.entries(neighbors))
  assert.equal(blob(fs.readFileSync(path.join(root,p))),sha,"Out-of-scope frozen source "+p);
+assert.equal(field(b16,"BASELINE_PUBLISHED_B16_SOURCE_BLOB"),
+ "4ddf9c449f92a9f48bace5a3f9b84186bf33af20",
+ "B16 baseline must match historical accepted source, not overwrite it");
+assert.equal(blob(fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-vi/bai-16.md"))),
+ field(b16,"CANDIDATE_B16_SOURCE_BLOB"),
+ "B16 is the sole allowed neighboring academic delta, exactly source-locked");
 console.log("PASS B15 screenshot R02 source: 3 SHA-linked receipts, 5 fluent Discovery topics, 5 TRY/HELP/Đối chiếu, original SVG/CSS and six neighboring sources.");
