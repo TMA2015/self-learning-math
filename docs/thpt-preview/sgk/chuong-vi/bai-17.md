@@ -52,7 +52,7 @@
     Với \(\Delta=0\), tam thức viết được dưới dạng \(a(x-x_0)^2\). Nó bằng 0 tại x0, có dấu của a ở mọi điểm khác; vì bình phương không âm nên không có sự đổi dấu khi đi qua nghiệm kép.
 
 
-    Nếu đề yêu cầu nghiêm ngặt \(<0\), phải bỏ điểm chạm vì tại đó biểu thức bằng 0. Với \(\le0\), điểm chạm được giữ: một ký hiệu nhỏ thay đổi tập nghiệm.
+    Nếu đề yêu cầu nghiêm ngặt \(<0\), phải bỏ điểm chạm vì tại đó biểu thức bằng 0. Với \(\le0\), điểm chạm được giữ: một ký hiệu nhỏ thay đổi tập nghiệm. Cụ thể, đối với tam thức \(f(x)=-3(x-2)^2\), điều kiện \(f(x)<0\) đúng ở mọi nơi trừ \(x=2\).
 
     **Vận dụng.** Với \(f(x)=-3(x-2)^2\), tìm tập nghiệm của \(f(x)<0\) và của \(f(x)\le0\).
 
@@ -213,11 +213,11 @@
 
     ### 2.2. Bất phương trình bậc hai
 
-    Giải bất phương trình \(ax^2+bx+c\ >,\ge,<,\le\ 0\) bằng quy trình:
+    Giải bất phương trình \(ax^2+bx+c\ >,\ge,<,\le\ 0\) bằng quy trình. Riêng khi tìm nghiệm \(f(x)\le0\), phải gom cả các điểm mà \(f(x)=0\) vào các khoảng âm (nếu có):
 
     1. Xác định \(a\) và \(\Delta\), tìm các nghiệm thực của tam thức (nếu có).
     2. Lập các khoảng và xét dấu theo định lí.
-    3. Chọn khoảng có dấu đúng theo yêu cầu. Với \(\ge\) hoặc \(\le\), lấy thêm các nghiệm bằng \(0\); với \(>\) hoặc \(<\), loại các mốc nghiệm.
+    3. Chọn khoảng có dấu đúng theo yêu cầu. Với \(\ge\) hoặc \(\le\), lấy thêm các nghiệm bằng \(0\); với \(>\) hoặc \(<\), loại các mốc nghiệm. Hai dấu không nghiêm ngặt \(\ge,\le\) đều cho phép lấy nghiệm bằng 0.
     4. Kiểm tra điều kiện của biến nếu bài có tình huống thực tế.
 
     **Ví dụ 3.** Giải \(-x^2+4x-3\ge0\). Từ Ví dụ 1, tam thức dương trên \((1;3)\), bằng 0 tại \(1,3\); vậy nghiệm là \(\boxed{[1;3]}\).
