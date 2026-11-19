@@ -488,6 +488,21 @@ function expectedG10KnowledgeBlob(lesson,legacy){
   assert.equal(row.baseline,blobs[1],name+" immutable S1/Q18 baseline must match ledger candidate");
   assert.notEqual(row.candidate,row.baseline,name+" editorial source must be distinct");
   assert.equal(row.moved,({B07:5,B08:5,B09:5,B10:6,B11:4,B12:4,B13:5,B14:5,B15:5,B16:5,B17:5,B18:4,B19:7,B20:5,B21:5,B22:8})[name],name+" moved First Try count");
+  const currentB13=()=>{
+   const t=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHV_B13_S1_Q18_GOLDEN_ENRICHMENT_DELTA_R01_20261119.md"),"utf8");
+   const f=k=>t.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   const baseline=f("BASELINE_LESSON_GIT_BLOB"),next=f("CANDIDATE_LESSON_GIT_BLOB");
+   assert.equal(baseline,chvEditorialReceiptRows().get("B13").candidate,
+    "B13 current source must derive from signed historic ChV editorial candidate");
+   assert(/^[a-f0-9]{40}$/.test(next||"")&&next!==baseline,
+    "B13 affected Delta C source must have a distinct pinned current SHA");
+   assert(t.includes("DELTA_C_ACADEMIC_MATERIAL_AFFECTED_REVIEW_HOLD")&&
+    t.includes("SOURCE_RECEIPT_S1_PDF_UNVERIFIED")&&
+    t.includes("NOT_MERGED"),"B13 provisional source receipt must declare real reviewer and S1 HOLD");
+   return {baseline,next,css:f("CANDIDATE_GOLDEN_CSS_BLOB"),
+    previousCss:f("G10_B01_B12_FROZEN_CSS_BLOB")};
+  };
   if(name==="B12"){
    const locked=fs.readFileSync(path.join(root,
     "prototypes/thpt/ux795/G10_CHV_B12_S1_PED_CALCULATOR_Q18_R01_20261118.md"),"utf8");
@@ -522,16 +537,29 @@ function expectedG10KnowledgeBlob(lesson,legacy){
     ["docs/assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js","B12_R01_ITEM_BANK_BLOB"],
     ["docs/thpt-preview/sgk/chuong-v/luyen-tap.md","B12_R01_PRACTICE_HUB_BLOB"],
 
-    ["docs/thpt-preview/sgk/chuong-v/bai-13.md","FROZEN_B13_SOURCE_BLOB"],
     ["docs/thpt-preview/sgk/chuong-v/bai-14.md","FROZEN_B14_SOURCE_BLOB"]]){
      assert.equal(blob(fs.readFileSync(path.join(root,rel))),f(key),
       "B12 single canonical/source and other owner-frozen lesson SHA mismatch "+rel);
    }
-   assert.equal(blob(fs.readFileSync(path.join(root,
-    "docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"))),
-    g("GOLDEN_CSS_CURRENT_BLOB"),"B12 source-first B10 palette CSS SHA exact");
+   const b13=currentB13();
+   assert.equal(b13.baseline,f("FROZEN_B13_SOURCE_BLOB"),
+    "B12 frozen B13 ancestor preserved in its original academic source receipt");
+   assert.equal(blob(fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-v/bai-13.md"))),b13.next,
+    "B13 current candidate must match its own source-locked Q18 receipt");
+   const style=fs.readFileSync(path.join(root,
+    "docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"));
+   const full=style.toString("utf8"),marker="/* G10 ChV B13 · exact B10/B12 Golden palette";
+   const offset=full.indexOf(marker);
+   assert(offset>0&&full.indexOf(marker,offset+1)<0,
+    "B13 may append one and only one new Golden CSS scope");
+   assert.equal(blob(Buffer.from(full.slice(0,offset-1))),g("GOLDEN_CSS_CURRENT_BLOB"),
+    "B12 owner-approved Golden CSS prefix must remain byte-identical");
+   assert.equal(b13.previousCss,g("GOLDEN_CSS_CURRENT_BLOB"),
+    "B13 receipt previous CSS SHA must match owner signed B12");
+   assert.equal(blob(style),b13.css,"B13 current scoped CSS SHA must match Q18 receipt");
    return g("B12_SOURCE_CURRENT_BLOB");
   }
+  if(name==="B13")return currentB13().next;
   if(chvii){
    assert.equal(chvii.helps,({B19:9,B20:7,B21:7,B22:10})[name],name+" exact total HELP count");
    assert.equal(chvii.examples,({B19:2,B20:2,B21:2,B22:3})[name],name+" anti-ChVI Golden worked-example count");
