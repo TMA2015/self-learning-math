@@ -11,8 +11,8 @@ const {chromium}=require("playwright");
 const root=path.resolve(__dirname,"..");
 const base=process.env.SLM_CHV_URL||"http://127.0.0.1:8765";
 const expectedSources={
- 12:"ba51dbb2e1bc7027919b4236abaf0eb897e48cee",
- 13:"547c680399825ba2d0c49bb1c11ff6fa2aa3d682",
+ 12:"d053687c2f8b2cb1f2cb6cb5b86d0751b52d755d",
+ 13:"95dc361e08a89ec48e1a68255cf8520be2f42117",
  14:"21c1ef59277f742b45a27900b173fac031a4a04f"
 };
 const ids={12:5,13:5,14:5};
@@ -253,6 +253,10 @@ const blob=data=>{
       context+" signed number of worked examples");
      if(lesson===12||lesson===13){
       const ex=blocks.nth(2);
+      assert.equal(await ex.locator("[data-thpt-g10-example-boundary]").count(),4,
+       context+" four invisible source-solution separators");
+      assert.equal(await ex.locator("[data-thpt-g10-example-boundary]:visible").count(),0,
+       context+" compatibility separators never visible to learners");
       assert.equal(await ex.locator("h4").filter({hasText:/^Đề bài$/}).count(),0,
        context+" no redundant Đề bài headings");
       assert.equal(await ex.locator("p > strong").filter({hasText:/^Đề:$/}).count(),4,
