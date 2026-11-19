@@ -9,7 +9,7 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
 CONTENT_REVISION: R06_AUTHOR_SELF_VERIFIED_20261118
-AUTHOR_METADATA_BLOB: c04879ef06465d76d7248dd29454cc36107066d7
+AUTHOR_METADATA_BLOB: 184df3ec5bf16fb72cacb97ddfd94d0d04dc2758
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL_O08_O14
 NOTEBOOKLM_REREVIEW: NOT_REQUIRED_WITH_REASON
 SOURCE_COMMIT: 708c28d54c48b87e66b8f72d98bed27093e999f0
@@ -18,12 +18,12 @@ CURRENT_PR: https://github.com/TMA2015/self-learning-math/pull/887 — DRAFT AUT
 CATALOG_TOPIC_ID: CD11
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 36c22ff9d441da793181072426d594bfe245a8aa
+ACADEMIC_SOURCE_BLOB: 9f374c22d40358334d79ef504e7f6c83e9d0c7cc
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC11_R06_CURRENT_SOURCE_AUTHOR_Q18_AFFECTED_DELTA_20261118.md (Q18 AUTHOR_SELF_VERIFIED v3.1.0, exact-source Delta C author math/PED QA; not independent NotebookLM)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC11_R06_CURRENT_SOURCE_AUTHOR_Q18_AFFECTED_DELTA_20261118.md
-REVIEW_RECEIPT_BLOB: 70830aba988136543d6e960664d995b1fe903d52
+REVIEW_RECEIPT_BLOB: c5c701690258f87eb4a8b0cd773928e38b54b25c
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC11-ANTIDERIVATIVE-INTEGRAL-GEOMETRY-FULL-R06_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: 5d9966dd7647ea323af824bca7c1d9efeb15be2a
+AUTHOR_HANDOFF_BLOB: 05643b05b153c04e03bce3608af59e6617e00f24
 PUBLIC_ORIGINAL88_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_ORIGINAL88_SGK_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_ORIGINAL88_INDEX_BLOB: 672fdce0c02ebf4f6ae6b37b331ca59e259d9b5c
 PUBLIC_NEW28_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_NEW28_PUBLIC_CANONICAL_R05_20261116.md
@@ -59,13 +59,13 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 - **116/116** real visible canonical Practice item IDs (88 unchanged SGK + 28 active Topic NEW28), 28 Written rubric entries and 116 outcome-specific D6; full Practice 1,738 lines compared to previous signed source, one learner-facing introduction changed, zero Practice math/stem/key/rubric changes. **22** question-only public replays use Topic P01–P22 canonical IDs; 138 opening and 138 closing voluntary disclosures, no private RD1 or Mastery.
 - **O08** `DELTA_C`: clarify Newton–Leibniz requires `F` continuous on `[a,b]`, differentiable in `(a,b)` with `F'=f`. Direct math: ∫₁³4x=16 and ∫₀²2x=4.
 - **O14** `DELTA_C`: correct mixed “flow rate r(t) m/s” to signed velocity `v(t)=5−2t` m/s over 0–2 s, displacement `∫₀²v=6` m; since `v≥1`, distance=6 m. First Try `v=3t²` m/s on 0–1 s →1 m, while genuine flow-rate example 2t L/min →4 L. Full semantic/unit/PED check in current Q18; unaffected historical SGK NEW28 canonical bank unchanged.
-- **Current exact-source author receipt** `70830aba988136543d6e960664d995b1fe903d52` against source `36c22ff9d441da793181072426d594bfe245a8aa`; metadata `c04879ef06465d76d7248dd29454cc36107066d7`; one current handoff `5d9966dd7647ea323af824bca7c1d9efeb15be2a`. Four Topic SVG SHA-verified and distinguished from original six reviewed G12 PNG images.
+- **Current exact-source author receipt** `c5c701690258f87eb4a8b0cd773928e38b54b25c` against source `9f374c22d40358334d79ef504e7f6c83e9d0c7cc`; metadata `184df3ec5bf16fb72cacb97ddfd94d0d04dc2758`; one current handoff `05643b05b153c04e03bce3608af59e6617e00f24`. Four Topic SVG SHA-verified and distinguished from original six reviewed G12 PNG images.
 - Effective owner Q18 v3 in merged [PR #808](https://github.com/TMA2015/self-learning-math/pull/808) permits author self-QA of a **verified material DELTA_C**; reviewer only if doubt or owner asks. `NOTEBOOKLM_REREVIEW=NOT_REQUIRED_WITH_REASON`; no independent Topic reviewer PASS falsely attributed.
 - Previous signed R06 source `58b16f7c442d560f3950aafdbaf1f686e1e337e4`, Q18 `ee42fcc98ccc51fef08a7eabdbf99032b0110c27`, V2 `29d66967f010bdcd00960e01ed7b3f28041acc3e` and ready Git blob `b65149cdad33d6807c286076e3e3db520763a1ba` are *historical only*, preserved byte-identical at `archive/THPT-TOPIC11-ANTIDERIVATIVE-INTEGRAL-GEOMETRY-FULL-R01_HISTORICAL_SIGNED_20261116.md`. Current manifest and REGISTER are the effective source packet. No merge/deploy.
 
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — learner SOURCE Git blob 36c22ff9d441da793181072426d594bfe245a8aa, Q18 signed receipt 70830aba988136543d6e960664d995b1fe903d52, original88 immutable-reference index 672fdce0c02ebf4f6ae6b37b331ca59e259d9b5c, NEW28 single bank 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0, one V2 handoff 5d9966dd7647ea323af824bca7c1d9efeb15be2a, four NEW SVG with exact Git SHA readback.
+- [x] A1_SOURCE_SNAPSHOT — learner SOURCE Git blob 9f374c22d40358334d79ef504e7f6c83e9d0c7cc, Q18 signed receipt c5c701690258f87eb4a8b0cd773928e38b54b25c, original88 immutable-reference index 672fdce0c02ebf4f6ae6b37b331ca59e259d9b5c, NEW28 single bank 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0, one V2 handoff 05643b05b153c04e03bce3608af59e6617e00f24, four NEW SVG with exact Git SHA readback.
 - [x] A2_SGK_SBT_SCOPE — KNTT G12 Tập2 ChIV B11 SGK printed4–11/PDF1 6–13, B12 12–18/14–20, B13 19–26/21–28,end27–28/29–30; SBT B11 3–8/2–7, B12 9–13/8–12, B13 14–18/13–17,end19–21/18–20. Owner original publisher scan SHA exact in receipt; no fresh PDF scan claimed.
 - [x] A3_NOTEBOOKLM_VERDICT — Q18 v3.1.0 source-locked author QA rechecks current O08/O14 math/PED conditions and preserves prior stable source checks without claiming new 53/53 or 12/12 rerun. P0/P1=0; no new independent NotebookLM Topic verdict. Original SGK v2.1 independent Academic/PED PASS remains only on unchanged SGK R00 source, NOT inherited Topic PASS.
 - [x] A4_ITEM_OUTCOME_IDS — 22 lesson IDs,22 outcomes,116 unique PUBLIC canonical IDs and one full V2 item→outcome→role map, 88 original SGK pointer-only+28 new. 22 public Self Check placements reference new P01–P22 only.
@@ -93,3 +93,6 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 - [ ] P2_DEVICE_UAT — No actual iPhone/iPad Safari CĐ11 acceptance evidence.
 
 AP1–AP5 exact visual/learning layout checks, R1–R5 source/runtime safety, P1 production, physical device P2 and owner release authorization remain RELEASE. AUTHORING ceases at handoff; no Firebase/Golden/student records changed.
+
+
+**19/11 editorial ΔA:** immutable maths, examples, assessments; sole ready source SHA relocked and STATE remains CONTENT_READY.
