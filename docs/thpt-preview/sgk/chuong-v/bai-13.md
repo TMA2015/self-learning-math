@@ -167,8 +167,6 @@
 
     ### 3.1. Ví dụ 1 — Mẫu lẻ: tính đầy đủ bốn số đặc trưng
 
-    #### Đề bài
-
     **Đề:** Số lần đọc sách của bảy bạn trong một tuần là \(6,12,4,9,6,5,7\). Tính số trung bình, trung vị, ba tứ phân vị và mốt.
 
     **Phân tích:** Đây là bảy quan sát; tính trung bình phải dùng tổng, còn trung vị và tứ phân vị phải dùng dãy đã sắp. Chỉ bỏ **một** quan sát ở vị trí giữa khi chia nửa, không bỏ mọi giá trị bằng trung vị.
@@ -184,8 +182,6 @@
 
     ### 3.2. Ví dụ 2 — Mẫu chẵn: hai vị trí giữa
 
-    #### Đề bài
-
     **Đề:** Mẫu \(11,3,14,7,5,9\) có sáu số. Tính \(\bar x,Q_1,Q_2,Q_3\), và cho biết mẫu có mốt không.
 
     **Phân tích:** Vì số quan sát chẵn, có hai vị trí giữa. Chia toàn bộ dãy thành hai nửa **không loại** bất cứ quan sát nào.
@@ -200,8 +196,6 @@
     **Kiểm lại:** \(5\le8\le11\); trung vị bằng 8 **không nhất thiết** phải trùng một giá trị quan sát trong mẫu chẵn.
 
     ### 3.3. Ví dụ 3 — Tính từ bảng tần số
-
-    #### Đề bài
 
     **Đề:** Một nhóm bạn ghi số lần đến thư viện trong tuần. Tính các số đặc trưng từ bảng sau:
 
@@ -221,8 +215,6 @@
     **Kiểm lại:** \(4\le8\le9\). Phép tính \((3+4+8+10)/4\) **không đúng** cho mẫu này vì bỏ qua tần số.
 
     ### 3.4. Ví dụ 4 — Chọn trung vị khi có giá trị bất thường
-
-    #### Đề bài
 
     **Đề:** Thời gian chờ (phút) của năm người là \(5,6,6,7,100\). Có nên nói “mỗi người thường chờ khoảng 25 phút” không?
 
