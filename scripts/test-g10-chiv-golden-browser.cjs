@@ -110,8 +110,19 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
    const receipt13=fs.readFileSync(root+
     "/prototypes/thpt/ux795/G10_CHV_B13_S1_Q18_GOLDEN_ENRICHMENT_DELTA_R01_20261119.md","utf8");
    const f13=k=>receipt13.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
-   assert.equal(blob(cssFile),f13("CANDIDATE_GOLDEN_CSS_BLOB"),
-    "B13 scoped CSS must equal signed source delta SHA");
+   const receipt14=fs.readFileSync(root+
+    "/prototypes/thpt/ux795/G10_CHV_B14_Q18_GOLDEN_ENRICHMENT_DELTA_R01_20261119.md","utf8");
+   const f14=k=>receipt14.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   const b14Marker="/* G10 ChV B14 · scoped X-C RELEASE Golden";
+   const atB14=currentCss.indexOf(b14Marker);
+   assert(atB14>0&&currentCss.indexOf(b14Marker,atB14+1)<0,
+    "B14 scoped Golden CSS must be appended only once");
+   assert.equal(blob(Buffer.from(currentCss.slice(0,atB14-1))),f13("CANDIDATE_GOLDEN_CSS_BLOB"),
+    "Owner-P2 B13 CSS must remain byte-identical prefix");
+   assert.equal(f14("G10_B01_B13_FROZEN_CSS_BLOB"),f13("CANDIDATE_GOLDEN_CSS_BLOB"),
+    "B14 prior stylesheet must be B13 signed release");
+   assert.equal(blob(cssFile),f14("CANDIDATE_GOLDEN_CSS_BLOB"),
+    "B14 scoped Golden CSS must equal current signed X-C source delta");
   assert(cssWithB10.slice(cutB11).includes("THPT-G10-CHIV-TRY21")&&
    !cssWithB10.slice(cutB11).includes("THPT-G10-CHIV-TRY16"),
    "B11 styles cannot recolor B10");
