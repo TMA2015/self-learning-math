@@ -2,9 +2,9 @@
 
 R03_IMMUTABLE_SOURCE_BLOB: 6c78b455f9d95e85c713108292908bf6f922d2f1
 LEARNER_R06_SOURCE: prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md
-LEARNER_R06_SOURCE_BLOB: 36c22ff9d441da793181072426d594bfe245a8aa
+LEARNER_R06_SOURCE_BLOB: 9f374c22d40358334d79ef504e7f6c83e9d0c7cc
 Q18_R06_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC11_R06_CURRENT_SOURCE_AUTHOR_Q18_AFFECTED_DELTA_20261118.md
-Q18_R06_RECEIPT_BLOB: 70830aba988136543d6e960664d995b1fe903d52
+Q18_R06_RECEIPT_BLOB: c5c701690258f87eb4a8b0cd773928e38b54b25c
 ACTIVE_NEW28_BANK_R05: prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_NEW28_PUBLIC_CANONICAL_R05_20261116.md
 ACTIVE_NEW28_BANK_R05_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0
 STATUS: AUTHOR_SELF_VERIFIED_SOURCE_QA_PASS
@@ -184,8 +184,11 @@ END_AUTHOR_SOURCE: SOURCE_LOCKED_R01
 
 ## R06 effective learner and proportionate AUTHOR_SELF_VERIFIED closure — 18/11/2026
 
-- The authoritative current learner Markdown is `Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md` Git blob `36c22ff9d441da793181072426d594bfe245a8aa`. Current signed author Q18 `prototypes/thpt/review-packets/Temp_TOPIC11_R06_CURRENT_SOURCE_AUTHOR_Q18_AFFECTED_DELTA_20261118.md`, blob `70830aba988136543d6e960664d995b1fe903d52`. Earlier source/receipt references remain historical, immutable; none defines the current source.
+- The authoritative current learner Markdown is `Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md` Git blob `9f374c22d40358334d79ef504e7f6c83e9d0c7cc`. Current signed author Q18 `prototypes/thpt/review-packets/Temp_TOPIC11_R06_CURRENT_SOURCE_AUTHOR_Q18_AFFECTED_DELTA_20261118.md`, blob `c5c701690258f87eb4a8b0cd773928e38b54b25c`. Earlier source/receipt references remain historical, immutable; none defines the current source.
 - A1–A7 current author scope: S1 original SGK/SBT provenance unchanged, 22/22 module/outcome and examples, 116/116 canonical Practice IDs (88 original SGK+28 Topic bank SHA `6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0`), 28 original Written rubric definitions, 22/22 public Self Check reused question-only items, four SHA-verified Topic SVGs, 138 opening/closing disclosures, one S1 footer, zero RD1 import / no Mastery.
 - Current learner mathematical repairs: `TOP11-O08` explicitly states continuous primitive F on closed interval in Newton–Leibniz; `TOP11-O14` aligns velocity (m/s) to displacement (m), distinct from flow (L/min) model. Both are `DELTA_C_ACADEMIC_MATERIAL` within Q18, **directly independently computed by author** with exact arithmetic, units, conditions, PED and zero changes to Practice stems/keys/solutions/rubric; all P0/P1/P2=0 per source-bound author Q18.
 - **Reviewer decision:** `NOTEBOOKLM_REREVIEW=NOT_REQUIRED_WITH_REASON`. Effective v3 owner policy in merged PR #808 permits `AUTHOR_SELF_VERIFIED` on demonstrably corrected Topic Delta C without external review. The separate pending-review packet was prepared but not invoked; its existence does not create a gate. Full retrospective source self-QA remains scoped to current source SHA; no false independent reviewer PASS.
 - Current A1 metadata now **eligible for** one V2/ready/REGISTER sync and exact-HEAD Topic V2 Intake CI. AUTHORING CONTENT_READY only after the Q18/A1/V2/ready/REGISTER exact-source contracts and HEAD CI PASS, not browser/RELEASE or deploy.
+
+
+**Owner ΔA 19/11:** active learner `9f374c22d40358334d79ef504e7f6c83e9d0c7cc` Q18 `c5c701690258f87eb4a8b0cd773928e38b54b25c`, 22 outcomes and canonical math immutable; CONTENT_READY preserved.
