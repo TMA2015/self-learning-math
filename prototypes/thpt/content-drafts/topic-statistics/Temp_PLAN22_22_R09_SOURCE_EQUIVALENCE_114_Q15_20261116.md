@@ -1,3 +1,12 @@
+<!-- TOP22_G10_B13_MODE_S1_REQUIRED_DELTA_C_20261120 -->
+## 20/11/2026 · S1 mandatory concept G10-B13-MODE coverage
+
+- S1 SGK Toán 10 KNTT tập 1 B13 trang in 81: nếu mọi giá trị phân biệt của mẫu có tần số bằng nhau, **không có mốt**. Phân biệt với trường hợp hai mốt khi chỉ hai giá trị có tần số cực đại lớn hơn các giá trị còn lại.
+- Learner ONE canonical path giữ nguyên; Git blob trước `4fd31e9669c5808106d12f6a49470a81303946a8` → hiện hành `a4436862afa8b34f65cb1b17c4d98f06b3cfb9e1`. Scope ba dòng thuộc G10-B13-MODE/§1.2, toàn bộ 114 canonical stems và Practice/Selfcheck, keys/solutions/rubrics giữ nguyên.
+- Q18 affected Delta C `9a26089dddd090644e29cb4e48393792956302eb`, self-verification 6/6 data case QA PASS, no new independent NotebookLM verdict. `CONTENT_READY` remains under owner-authorized authoring source improvement, RELEASE neither merged nor deployed.
+- `22_TOPIC_FULL_S1_AUDIT` đang tiến hành; không tự kết luận 22/22 Q01 pass vì mới kiểm sâu các điểm cụ thể.
+
+---
 # PLAN22-22 R09 AUTHORING-only source parity and continuous numbering custody
 
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -6,9 +15,9 @@ CONTENT_REVISION: R09
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md
-ACADEMIC_SOURCE_BLOB: 4fd31e9669c5808106d12f6a49470a81303946a8
+ACADEMIC_SOURCE_BLOB: a4436862afa8b34f65cb1b17c4d98f06b3cfb9e1
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC_STATISTICS_G10_G12_R09_AUTHOR_TECHNICAL_Q18_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 13c8870f77e9ef45f211489db96b25cdefb66d8d
+REVIEW_RECEIPT_BLOB: 9a26089dddd090644e29cb4e48393792956302eb
 PREVIOUS_R07_HANDOFF_PATH: prototypes/thpt/release-handoffs/THPT-TOPIC-STATISTICS-G10-G12-FULL-R07_HANDOFF_V2_20261115.md
 PREVIOUS_R07_HANDOFF_BLOB: 4c32eaf6342b2cb9cd2ccc69357fed80a0aeca92
 DELTA_CLASS: DELTA_B_SOURCE_EQUIVALENT
@@ -41,7 +50,7 @@ RELEASE_AUTHORIZATION: NO
 
 ## 18/11/2026 — current canonical learner and one-source custody
 
-- **Only effective student content file** remains `Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md`, Git SHA `4fd31e9669c5808106d12f6a49470a81303946a8`. The older signed source `b5713f0c2a1aa6a9fa7a7d63f6e6878bdf8d338b` is historic evidence only, NOT a second active draft. Current exact-source Q18 receipt SHA `13c8870f77e9ef45f211489db96b25cdefb66d8d`.
+- **Only effective student content file** remains `Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md`, Git SHA `a4436862afa8b34f65cb1b17c4d98f06b3cfb9e1`. The older signed source `b5713f0c2a1aa6a9fa7a7d63f6e6878bdf8d338b` is historic evidence only, NOT a second active draft. Current exact-source Q18 receipt SHA `9a26089dddd090644e29cb4e48393792956302eb`.
 - Delta audit: 2 standalone redundant figure-reading headings removed + 7 public Written self-compare notices tightened to self-attempt-first and no official grade. Complete 114/114 item display sequence, mathematical stems/answers/solutions/rubric criteria and points, 9 public Selfcheck questions, 2 image references and reveal counts unchanged. Scoped Q16 note and `NO_MASTERY NOT_RD1` nine placements preserved. Classified `DELTA_B_SOURCE_EQUIVALENT` for learning/assessment semantics, no new math theorem or answer.
 - The older SGK PDF-page-index reviewer note is nonblocking; mathematical validity established by existing worked-solution and arithmetic checks, with S1 used for curriculum scope. No official Mastery or RELEASE implied.
 
