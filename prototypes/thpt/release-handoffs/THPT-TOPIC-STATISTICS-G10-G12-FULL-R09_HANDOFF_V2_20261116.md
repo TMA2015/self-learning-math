@@ -1,3 +1,11 @@
+<!-- S1_G10_B13_MODE_REQUIRED_DELTA_C_20261120 -->
+## 20/11/2026 · S1 B13 mandatory no-mode equal-frequency correction
+
+- Source learner `a4436862afa8b34f65cb1b17c4d98f06b3cfb9e1`, Q18 author-self receipt `9a26089dddd090644e29cb4e48393792956302eb`, metadata `480df0b909baf1e8f4ca4aea8e8ffcad28f5e40b`. Prior baseline immutable Git; scope only TOP22 §1.2, G10-B13-MODE.
+- Exact S1 printed page 81, 6/6 mode table cases, 7/7 source-scope assertions. All 114 canonical and actual answer/solution/rubric unmodified. Delta C materially updates one mathematical condition, not metadata-only and not false full NotebookLM PASS.
+- One AUTHORING CONTENT_READY source retained, separate RELEASE QA/owner permission pending; no merge/deploy.
+
+---
 # AUTHORING CONTENT_READY — Thống kê mô tả và phân tích số liệu G10–G12 · V2 R09
 
 **Một nguồn Topic độc lập** theo SLM-THPT-QUALITY-ONE v3.1.0 Q01–Q18, đi từ sai số/đặc trưng mẫu G10 sang bảng ghép G11 và độ phân tán ghép G12. Không gộp lại chủ đề Xác suất đã bàn giao ở PR #810. Gói này là **thứ tư theo trình tự AUTHORING**, không gán `PLAN22-04`/mã/route Topic chính thức (danh mục nghiên cứu 22 chủ đề chưa được owner-lock). Học liệu công khai R07 đã tự kiểm đầy đủ theo checklist 13 mục; thực tế có 114 câu Luyện tập và chín câu public tự ôn; không có private held-out câu mới, không có website implementation, không merge/deploy.
@@ -10,9 +18,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md
-ACADEMIC_SOURCE_BLOB: 4fd31e9669c5808106d12f6a49470a81303946a8
+ACADEMIC_SOURCE_BLOB: a4436862afa8b34f65cb1b17c4d98f06b3cfb9e1
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC_STATISTICS_G10_G12_R09_AUTHOR_TECHNICAL_Q18_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 13c8870f77e9ef45f211489db96b25cdefb66d8d
+REVIEW_RECEIPT_BLOB: 9a26089dddd090644e29cb4e48393792956302eb
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC_STATISTICS_G10_G12_CANONICAL_SOURCE_INDEX_R00_20261111.md
 PUBLIC_SOURCE_INDEX_BLOB: 51a6e99587187838aea61c5c72108adae7874d1d
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC_STATISTICS_G10_G12_PUBLIC_EXTENSION_07ITEM_R00_20261111.md
@@ -36,19 +44,19 @@ RELEASE_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
 CONTENT_REVISION: R09
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_SOURCE_EQUIVALENCE_114_Q15_20261116.md
-AUTHOR_A1_A7_BLOB: ab3caac2f6cbb18f19d5e39dd1ff16a28b740d03
+AUTHOR_A1_A7_BLOB: 480df0b909baf1e8f4ca4aea8e8ffcad28f5e40b
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_SOURCE_EQUIVALENCE_114_Q15_20261116.md
-AUTHOR_METADATA_BLOB: ab3caac2f6cbb18f19d5e39dd1ff16a28b740d03
+AUTHOR_METADATA_BLOB: 480df0b909baf1e8f4ca4aea8e8ffcad28f5e40b
 ORIGINAL_R07_SOURCE_BLOB: e31771e0fb9347c8c242ec8ca9e8a91a1ab74ff6
 ORIGINAL_R07_AUTHOR_RECEIPT_BLOB: 40feca220c54fc0620ab113cc354e3d37a66088e
 
 ## R09_CURRENT_STUDENT_SOURCE_EQUIVALENCE
 
-New unique `THPT-TOPIC-STATISTICS-G10-G12-FULL-R09` SOURCE-ONLY snapshot, distinct from unpromoted R08 candidate `85d7522affb779e7de28877903f7a77d4319afc7` that used the same R07 PACKET_ID. R09 student source `4fd31e9669c5808106d12f6a49470a81303946a8` adds no mathematical content: three actual Knowledge/Luyện tập/Tự kiểm tra pages; 3 Knowledge H2 groups with 13 H3 lessons, 13 unchanged full worked Ví dụ and 13 Vận dụng; **114 complete Practice projections** with sequential visible **Bài luyện 1…114** as ordinary labels (not 114 nested H4 headings), original 19 Written /5 or original rubric details unchanged, nine public question-only selfcheck P replays. R07→R09 114/114 original canonical stem/options/full solutions/rubrics, all 13 Knowledge actual prose and nine original Selfcheck prompts source-exact. Two SVG exact Git originals untouched.
+New unique `THPT-TOPIC-STATISTICS-G10-G12-FULL-R09` SOURCE-ONLY snapshot, distinct from unpromoted R08 candidate `85d7522affb779e7de28877903f7a77d4319afc7` that used the same R07 PACKET_ID. R09 student source `a4436862afa8b34f65cb1b17c4d98f06b3cfb9e1` adds no mathematical content: three actual Knowledge/Luyện tập/Tự kiểm tra pages; 3 Knowledge H2 groups with 13 H3 lessons, 13 unchanged full worked Ví dụ and 13 Vận dụng; **114 complete Practice projections** with sequential visible **Bài luyện 1…114** as ordinary labels (not 114 nested H4 headings), original 19 Written /5 or original rubric details unchanged, nine public question-only selfcheck P replays. R07→R09 114/114 original canonical stem/options/full solutions/rubrics, all 13 Knowledge actual prose and nine original Selfcheck prompts source-exact. Two SVG exact Git originals untouched.
 
 Original 114 source-owned canonical item IDs and 39-outcome V2 source/role/placement map unchanged, one public `DISPLAY_ONLY` projection per original ID, no cloned bank item or new assessable item. Private Topic RD1 count remains zero, public `CLIENT_SELF_CHECK_NO_MASTERY` never official Readiness or Skill Mastery.
 
-One **R09 exact-source technical Q18 receipt** `13c8870f77e9ef45f211489db96b25cdefb66d8d` and A1–A7 equivalence metadata `ab3caac2f6cbb18f19d5e39dd1ff16a28b740d03`; prior R07 Q18 signed author math/PED receipt `40feca220c54fc0620ab113cc354e3d37a66088e` remains on immutable R07 only. This is `DELTA_A_UI` and `DELTA_B_SOURCE_EQUIVALENT`, not new independent NotebookLM Academic/PED PASS and not a new normative standard. No website/Golden/Final Submit/browser QA or owner merge/deploy authorization.
+One **R09 exact-source technical Q18 receipt** `9a26089dddd090644e29cb4e48393792956302eb` and A1–A7 equivalence metadata `480df0b909baf1e8f4ca4aea8e8ffcad28f5e40b`; prior R07 Q18 signed author math/PED receipt `40feca220c54fc0620ab113cc354e3d37a66088e` remains on immutable R07 only. This is `DELTA_A_UI` and `DELTA_B_SOURCE_EQUIVALENT`, not new independent NotebookLM Academic/PED PASS and not a new normative standard. No website/Golden/Final Submit/browser QA or owner merge/deploy authorization.
 
 ## LESSON_IDS
 
@@ -426,7 +434,7 @@ RELEASE owns source-locked canonical runtime import, quality AP1–AP5/R1–R5, 
 
 ## 18/11/2026 · Unique active learner source and approved historical custody
 
-- Source `4fd31e9669c5808106d12f6a49470a81303946a8`, scoped current Q18 `13c8870f77e9ef45f211489db96b25cdefb66d8d`, A1/Q15 evidence `ab3caac2f6cbb18f19d5e39dd1ff16a28b740d03` are source-locked to the same existing R09 file. Former signed source `b5713f0c2a1aa6a9fa7a7d63f6e6878bdf8d338b` is retained only as historical Git proof.
+- Source `a4436862afa8b34f65cb1b17c4d98f06b3cfb9e1`, scoped current Q18 `9a26089dddd090644e29cb4e48393792956302eb`, A1/Q15 evidence `480df0b909baf1e8f4ca4aea8e8ffcad28f5e40b` are source-locked to the same existing R09 file. Former signed source `b5713f0c2a1aa6a9fa7a7d63f6e6878bdf8d338b` is retained only as historical Git proof.
 - Actual seven public Written self-check wording deltas / two figure orientation label removals have exact Q14/Q16 and math invariance evidence in Q18. All 114 canonical public items/solutions/rubrics, 9 public no-Mastery Selfcheck questions and SVGs protected. Historical PDF page-index note is nonblocking; scope and math are verified without claiming a new independent NotebookLM review.
 - Current authoring revision is NOT automatically `CONTENT_READY` before current HEAD QA passes. No RELEASE ingestion, RD1 activation, Mastery, merge or deploy.
 
