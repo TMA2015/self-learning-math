@@ -89,8 +89,11 @@ body{margin:0;padding:18px 12px 40px}
       rectangles.push({i:i+1,start,end,x,height,area});
     }
     const exact=(b*b*b-a*a*a)/3;
-    if(![dx,sum,exact].every(Number.isFinite))throw new RangeError('Kết quả không hữu hạn.');
-    return {function:'x²',a,b,n,mode,delta:dx,rectangles,sum,exact,error:sum-exact,absError:Math.abs(sum-exact),signedArea:false,nonnegativeArea:true};
+    // Quadratic closed-form rectangle-rule error. This is specific to f(x)=x².
+    const theorError=mode==='mid'?-(b-a)*dx*dx/12:
+       (mode==='left'?-1:1)*(b*b-a*a)*dx/2+(b-a)*dx*dx/6;
+    if(![dx,sum,exact,theorError].every(Number.isFinite))throw new RangeError('Kết quả không hữu hạn.');
+    return {function:'x²',a,b,n,mode,delta:dx,rectangles,sum,exact,error:sum-exact,absError:Math.abs(sum-exact),theorError,errorCheck:sum-exact-theorError,signedArea:false,nonnegativeArea:true};
   }
   Object.defineProperty(global,'I798MathR08',{value:Object.freeze({parabola,riemann}),configurable:false,writable:false});
 })(window);
@@ -218,8 +221,13 @@ function mount(host,{type='riemann',initialState,onChange}={}){
     q('delta').textContent=`(b−a)/n = ${fmt(last.delta)}`;
     q('sum').textContent=`${fmt(last.sum)}`;
     q('exact').textContent=`(b³−a³)/3 = ${fmt(last.exact)}`;
-    q('errorValue').textContent=`${fmt(last.error)}; độ lớn ${fmt(last.absError)}`;
-    q('limit').textContent=state.a<0&&state.b>0?'Đoạn qua x=0: không suy ra đầu trái luôn thiếu, đầu phải luôn thừa.':'Sai số thay đổi theo điểm mẫu và số khoảng; không kết luận một công thức đúng với mọi hàm.';
+    q('errorValue').textContent=`${fmt(last.error)}; độ lớn ${fmt(last.absError)}; theo công thức x²: ${fmt(last.theorError)}`;
+    const modeReason=state.mode==='mid'
+      ? 'Với riêng f(x)=x², tổng trung điểm LUÔN nhỏ hơn tích phân: E=−(b−a)Δx²/12.'
+      : state.mode==='left'
+        ? 'Với riêng f(x)=x², E trái=−(b²−a²)Δx/2+(b−a)Δx²/6; dấu sai số còn phụ thuộc đoạn [a;b].'
+        : 'Với riêng f(x)=x², E phải=(b²−a²)Δx/2+(b−a)Δx²/6; dấu sai số còn phụ thuộc đoạn [a;b].';
+    q('limit').textContent=modeReason+' Khi n→∞ với a,b cố định, sai số tiến về 0; không được suy ra độ lớn sai số giảm ở từng bước tăng n. Đối chiếu số và công thức trên.';
     q('status').textContent=`${state.n} khoảng, mẫu ${state.mode==='left'?'đầu trái':state.mode==='right'?'đầu phải':'trung điểm'}, tổng ${fmt(last.sum)}, tích phân ${fmt(last.exact)}. ${last.sum>=last.exact?'Tổng đang lớn hơn hoặc bằng':'Tổng đang nhỏ hơn'} giá trị chính xác.`;
     const tb=q('samples');tb.replaceChildren();const chosen=last.rectangles.length<=5?last.rectangles:[...last.rectangles.slice(0,2),...last.rectangles.slice(-2)];
     chosen.forEach(d=>{const tr=document.createElement('tr');for(const val of [String(d.i),fmt(d.x),fmt(d.area)]){const td=document.createElement('td');td.textContent=val;tr.appendChild(td);}tb.appendChild(tr);});
