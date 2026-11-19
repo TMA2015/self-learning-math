@@ -72,8 +72,19 @@ assert.equal(section(master),b12,"B12 canonical Section A must equal current lea
 const b11p="docs/thpt-preview/sgk/chuong-iv/bai-11.md";
 assert.equal(sha1(get(b11p)),field("B11_UNCHANGED_SOURCE_BLOB"),
  "B11 owner-approved presentation must not change");
-assert.equal(sha1(get("docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css")),
- field("SHARED_GOLDEN_CSS_BLOB"),"Golden CSS cannot drift");
+const fullCss=get("docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css");
+const marker="/* G10 ChV B14 · scoped X-C RELEASE Golden";
+const at=fullCss.indexOf(marker);
+assert(at>0&&fullCss.indexOf(marker,at+1)<0,
+ "B14 must append one new scoped CSS block after owner-P2 B12/B13");
+assert.equal(sha1(fullCss.slice(0,at-1)),field("SHARED_GOLDEN_CSS_BLOB"),
+ "B12/B13 Golden CSS cannot drift before B14 append");
+const b14Receipt=get("prototypes/thpt/ux795/G10_CHV_B14_Q18_GOLDEN_ENRICHMENT_DELTA_R01_20261119.md");
+const f=k=>b14Receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+assert.equal(f("G10_B01_B13_FROZEN_CSS_BLOB"),field("SHARED_GOLDEN_CSS_BLOB"),
+ "B14 scoped source receipt must preserve original B12/B13 stylesheet SHA");
+assert.equal(sha1(fullCss),f("CANDIDATE_GOLDEN_CSS_BLOB"),
+ "B14 scoped stylesheet exact final SHA");
 for(const [p,key] of [
  ["docs/assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js","B12_PUBLIC_BANK_BLOB"],
  ["docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js","B13_B14_PUBLIC_BANK_BLOB"],
