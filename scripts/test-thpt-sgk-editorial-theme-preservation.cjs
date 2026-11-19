@@ -49,8 +49,15 @@ function verify(files){
    const b09f=k=>b09.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
    assert.equal(b09f("CSS_BASELINE_BLOB"),f("R04_CSS_BLOB"),
     "B09 owner-pending CSS must extend exact B08 P2-accepted snapshot");
-   assert.equal(sha(actual),CURRENT_OWNER_ACCEPTED.css,
-    "Current owner-accepted G10 B01–B12 CSS SHA changed outside a reviewed delta");
+   const candidate=actual.toString("utf8"),marker="/* G10 ChV B13 · exact B10/B12 Golden palette";
+   const start=candidate.indexOf(marker);
+   assert(start>0&&candidate.indexOf(marker,start+1)<0,"B13 CSS must be exactly one scoped appendix");
+   assert.equal(sha(candidate.slice(0,start-1)),CURRENT_OWNER_ACCEPTED.css,
+    "Owner-accepted B01–B12 CSS prefix must stay byte-for-byte immutable");
+   assert.equal(sha(actual),"a4fa446f5437ae5054627700434fb101524827c4",
+    "Signed B13 scoped CSS SHA changed without source delta receipt");
+   assert.equal((candidate.slice(start).match(/THPT-G10-CHV-TRY05/g)||[]).length,4,
+    "B13 formal and rule colors must target only B13 TRY05");
    const txt=actual.toString("utf8"),at=txt.indexOf("/* G10 ChIV B08 R04");
    const b09At=txt.indexOf("/* G10 Chapter IV B09 R03");
    assert(b09At>at&&txt.indexOf("/* G10 Chapter IV B09 R03",b09At+1)<0,
@@ -97,6 +104,10 @@ assert(standard.includes("## II. Ma trận chuẩn chất lượng duy nhất Q0
  "Do not remove academic/assessment criteria");
 const mutant={...files,["docs/assets/stylesheets/thpt-r4-preview.css"]:Buffer.concat([files["docs/assets/stylesheets/thpt-r4-preview.css"],Buffer.from("\n/* changed demo palette */\n")])};
 assert.throws(()=>verify(mutant),/baseline must NOT change/,"style mutation must FAIL");
+const cssPath="docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css";
+const cssDrift={...files,[cssPath]:Buffer.concat([files[cssPath],Buffer.from("\\n/* unauthorized B13 CSS drift */\\n")])};
+assert.throws(()=>verify(cssDrift),/Signed B13 scoped CSS SHA changed/,
+ "New B13 CSS changes must fail closed unless Q18 source lock updated");
 const modified={...files,["docs/thpt-preview/sgk/chuong-i/bai-1.md"]:Buffer.concat([files["docs/thpt-preview/sgk/chuong-i/bai-1.md"],Buffer.from("\n# demo source drift\n")])};
 assert.throws(()=>verify(modified),/baseline must NOT change/,"source mutation must FAIL");
 const jsPath="docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js";
