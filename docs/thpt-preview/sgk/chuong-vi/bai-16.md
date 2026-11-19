@@ -218,29 +218,39 @@
 
 === "Ví dụ"
 
-    ### Ví dụ — Tìm đỉnh trước khi vẽ
+    ### 3.1. Ví dụ 1 — Đọc đỉnh từ dạng bình phương
 
     **Đề bài.** Xét \(f(x)=(x-1)^2-4\). Tìm đỉnh, trục đối xứng, nghiệm và tập giá trị.
 
-    **Vì sao chọn cách này?** Dạng bình phương cho luôn \(f(x)\ge-4\).
+    **Phân tích:** Dạng \((x-h)^2+k\) giúp nhận ngay vị trí đỉnh mà không cần dùng biệt thức. Sau đó muốn tìm giao với \(Ox\), ta giải \(f(x)=0\); muốn kết luận tập giá trị, phải dùng tính không âm của bình phương.
 
-    **Lời giải.** Đỉnh \(I(1,-4)\), trục đối xứng \(x=1\), tập giá trị \([-4,+\infty)\). Giải \((x-1)^2=4\) được \(x=-1\) hoặc \(x=3\).
+    **Lời giải.**
 
-    **Kiểm lại:** hai nghiệm đối xứng qua \(x=1\) và đồ thị không xuống dưới \(-4\).
+    **Bước 1 — Nhận đỉnh và trục:** Vì \(f(x)=(x-1)^2-4\), đỉnh là \(I(1;-4)\), trục đối xứng \(x=1\), parabol mở lên.
 
-    ### Ví dụ — Vẽ parabol từ biểu thức đã cho
+    **Bước 2 — Tìm tập giá trị:** Với mọi \(x\in\mathbb R\), \((x-1)^2\ge0\), nên \(f(x)\ge-4\). Dấu bằng xảy ra khi \(x=1\). Do đó giá trị nhỏ nhất là \(-4\), tập giá trị \(T=[-4;+\infty)\).
+
+    **Bước 3 — Tìm các giao điểm với \(Ox\):** Giải \((x-1)^2-4=0\iff(x-1)^2=4\), được \(x=-1\) hoặc \(x=3\). Hai điểm là \((-1;0)\), \((3;0)\).
+
+    **Kiểm lại:** Trung điểm hai nghiệm có hoành độ \(\frac{-1+3}{2}=1\), đúng bằng trục đối xứng. Thử \(f(1)=-4\), \(f(-1)=f(3)=0\), phù hợp đồ thị.
+
+    ### 3.2. Ví dụ 2 — Vẽ đúng parabol từ biểu thức
 
     **Đề bài.** Xét \(f(x)=x^2-4x+3=(x-2)^2-1\). Hãy xác định đỉnh, các giao điểm với hai trục, sự biến thiên và các bước vẽ đồ thị.
 
-    **Lời giải.** Từ dạng bình phương, ta có:
+    **Phân tích:** Biểu thức đã ở dạng đỉnh nên tìm \(I\) và trục trước. Các điểm cắt trục phải được tính chính xác từ công thức; dùng cặp điểm đối xứng để tự kiểm, không vẽ theo cảm giác.
 
-    - Đỉnh \(I(2;-1)\), trục \(x=2\).
-    - Hệ số \(a=1>0\), nên hàm có giá trị nhỏ nhất \(-1\).
-    - Khi \(y=0\), ta được \((x-1)(x-3)=0\), vì vậy đồ thị cắt \(Ox\) tại \((1;0)\), \((3;0)\).
-    - Khi \(x=0\), ta có \(y=3\), nên đồ thị cắt \(Oy\) tại \((0;3)\).
-    - Hàm số nghịch biến trên \((-\infty;2)\), đồng biến trên \((2;+\infty)\) và có tập giá trị \(T=[-1;+\infty)\).
+    **Lời giải.**
 
-    Áp dụng **bốn bước vẽ**: xác định \(I(2;-1)\) → kẻ trục \(x=2\) → chấm \((1;0)\), \((3;0)\), \((0;3)\) cùng điểm đối xứng \((4;3)\) → nối thành parabol mở lên.
+    **Bước 1 — Đỉnh, hướng mở và tập giá trị:** \(f(x)=(x-2)^2-1\) nên \(I(2;-1)\), trục \(x=2\), \(a=1>0\), parabol mở lên, GTNN \(-1\) tại \(x=2\), \(T=[-1;+\infty)\).
+
+    **Bước 2 — Giao với hai trục:** Với \(y=0\), \((x-1)(x-3)=0\), được \((1;0)\) và \((3;0)\) trên \(Ox\). Với \(x=0\), \(y=3\), được \((0;3)\) trên \(Oy\).
+
+    **Bước 3 — Xét chiều biến thiên:** Vì \(a>0\), hàm số nghịch biến trên \((-\infty;2)\), đồng biến trên \((2;+\infty)\).
+
+    **Bước 4 — Phác đồ thị:** Đánh dấu \(I(2;-1)\), kẻ trục \(x=2\), đặt ba giao điểm rồi chấm thêm \((4;3)\) là ảnh đối xứng của \((0;3)\). Nối các điểm bằng đường cong parabol mở lên, không nối bằng các đoạn thẳng.
+
+    **Kiểm lại:** \(f(0)=f(4)=3\), \(f(1)=f(3)=0\) và \(f(2)=-1\), đúng tính đối xứng và bảng số liệu ở phần Khám phá.
 
     **Tự củng cố:** Sau khi học khái niệm và xem ví dụ, em có thể mở bài luyện ngắn bên dưới để thử tìm tọa độ đỉnh. Hãy tự làm trước khi dùng gợi ý.
 
