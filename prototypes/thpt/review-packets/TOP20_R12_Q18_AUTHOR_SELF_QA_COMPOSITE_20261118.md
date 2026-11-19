@@ -6,7 +6,7 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_LEARNER_PRESENTATION_20261116.md
-SOURCE_BLOB: d4a501bce64003f3583aca947d429504530b72c0
+SOURCE_BLOB: 74c572ca5778bb8308ab1fe7cb23dfa487858c53
 SOURCE_ROLE: ONE_CURRENT_CANONICAL_LEARNER_SOURCE
 REVIEW_SCOPE: R10_FULL_AUTHOR_MATH_PED + R11_EQUIVALENT_LAYOUT + R12_AFFECTED_D6_PED + CURRENT_SOURCE_Q15_Q16
 INDEPENDENT_REVIEWER_VERDICT: NOT_CLAIMED
@@ -24,7 +24,7 @@ RELEASE_AUTHORIZATION: NO
 
 ## OUTCOME_AUDIT:
 
-- Current Git source read back as `d4a501bce64003f3583aca947d429504530b72c0`; 880 lines, three actual learner sections: Kiến thức, Luyện tập, Tự kiểm tra; within Knowledge, two mathematical groups containing 9 numbered lessons and 10 full standalone Ví dụ; 17 first-try Vận dụng with self-open Đối chiếu and same-outcome remediation; 17 actual Practice plus 3 original Written with rubric; 11 public question-only replay placements. No separate Topic Core.
+- Current Git source read back as `74c572ca5778bb8308ab1fe7cb23dfa487858c53`; 880 lines, three actual learner sections: Kiến thức, Luyện tập, Tự kiểm tra; within Knowledge, two mathematical groups containing 9 numbered lessons and 10 full standalone Ví dụ; 17 first-try Vận dụng with self-open Đối chiếu and same-outcome remediation; 17 actual Practice plus 3 original Written with rubric; 11 public question-only replay placements. No separate Topic Core.
 - All 17 outcomes `TOP20-O01`–`TOP20-O17` have exactly one canonical First Try and matching original Practice; O08/O14/O17 additionally have Written. Actual source marker roles 17/17/3. The 37 canonical IDs are unique and backed by one current learner stem/answer/solution/rubric per item. All 11 public replay IDs reference those 37 already authored items and do not create new canonical IDs.
 
 ## MATH_VERIFICATION:
@@ -56,9 +56,9 @@ RELEASE_AUTHORIZATION: NO
 
 ## AUTHOR_SIGNOFF:
 
-AUTHOR_SIGNOFF: TOP20_R12_AUTHOR_SELF_QA_37_PUBLIC_CANONICAL_17_OUTCOMES_17_REMEDIATION_ROUTES_SOURCE_d4a501bce64003f3583aca947d429504530b72c0_20261118
+AUTHOR_SIGNOFF: TOP20_R12_AUTHOR_SELF_QA_37_PUBLIC_CANONICAL_17_OUTCOMES_17_REMEDIATION_ROUTES_SOURCE_74c572ca5778bb8308ab1fe7cb23dfa487858c53_20261118
 VERDICT: AUTHOR_SELF_VERIFIED_ON_LOCKED_SNAPSHOT
-SOURCE_BLOB: d4a501bce64003f3583aca947d429504530b72c0
+SOURCE_BLOB: 74c572ca5778bb8308ab1fe7cb23dfa487858c53
 STANDARD_VERSION: 3.1.0
 P0: 0
 P1: 0
@@ -69,3 +69,7 @@ PED_VERIFICATION: 17/17 real D6 routes and narrative checked above
 CANONICAL_Q15: 37 IDs/versions, 11 same-ID public replays reconciled
 ASSESSMENT_Q16: RD1 owner-held, no public scoring/Mastery/official Readiness
 No independent reviewer Academic/PED verdict is asserted; no website integration/merge/deploy permission.
+
+
+<!-- TOP20_OWNER_EDITORIAL_DELTA_A_20261119 -->
+**Owner editorial Delta A (19/11):** The 9 duplicate miniature `Khám phá kiến thức` titles in the nine Knowledge subunits were removed while **all underlying concept-first flowing prose** and 8 labeled math definitions/formulas remained exactly unchanged. Former learner blob `d4a501bce64003f3583aca947d429504530b72c0` → sole current `74c572ca5778bb8308ab1fe7cb23dfa487858c53`. Reverse removal check confirms byte identity of original maths, all 10 worked examples and 17 Vận dụng/Đối chiếu, 17 intended outcomes, canonical item text/key/rubrics, 2 SVG and public assessment safeguards. Existing Q18 author-source equivalence only; Content remains CONTENT_READY by owner authorization, no new academic hypothesis/NotebookLM, no website integration/deploy.
