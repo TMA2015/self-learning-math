@@ -701,3 +701,29 @@
   border-left-color: #8cb4ed;
   color: #ecf5ff;
 }
+
+/* G10 ChV B13 · exact B10/B12 Golden palette; scope ONLY B13 TRY05. Previous CSS prefix unchanged. */
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-chv-golden:has([data-thpt-first-try-id="THPT-G10-CHV-TRY05"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card {
+  background: #e8f7f2;
+  border-color: #a9dccc;
+  border-left-color: #087d69;
+  color: #174137;
+}
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-chv-golden:has([data-thpt-first-try-id="THPT-G10-CHV-TRY05"]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card {
+  background: #eaf1fc;
+  border-color: #a5bee5;
+  border-left-color: #4879c2;
+  color: #193d66;
+}
+[data-md-color-scheme="slate"] .md-typeset.thpt-g10-knowledge-ap1.thpt-g10-chv-golden:has([data-thpt-first-try-id="THPT-G10-CHV-TRY05"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card {
+  background: #193d36;
+  border-color: #447e70;
+  border-left-color: #76dfc7;
+  color: #e9fff7;
+}
+[data-md-color-scheme="slate"] .md-typeset.thpt-g10-knowledge-ap1.thpt-g10-chv-golden:has([data-thpt-first-try-id="THPT-G10-CHV-TRY05"]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card {
+  background: #203551;
+  border-color: #45658a;
+  border-left-color: #8cb4ed;
+  color: #ecf5ff;
+}
