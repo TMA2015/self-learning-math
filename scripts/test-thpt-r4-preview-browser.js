@@ -2,7 +2,7 @@
 const assert=require("node:assert/strict");
 const fs=require("node:fs");
 const crypto=require("node:crypto");
-const {chviEditorialReceiptRows,chviExampleUxReceiptRows}=require("./thpt-q18-g10-source-receipt.cjs");
+const {chviEditorialReceiptRows,chviExampleUxReceiptRows,candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 function signedChviBlob(name){
  const original=chviEditorialReceiptRows().get(name);
  const next=chviExampleUxReceiptRows().get(name);
