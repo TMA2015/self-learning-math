@@ -1,3 +1,12 @@
+<!-- TOP18_G12_S1_B06_O03_FORMAL_RULE_20261120 -->
+## S1 12/T1 B06 formal rule completeness (TOP18-O03)
+
+- Source S1: SGK Toán 12 tập một B6 printed page 50 “quy tắc hình hộp”, \(AB+AD+AA'=AC'\) in vector notation; learner previously had it only in existing example.
+- Current learner: `6d58c3652c3d51fdeeea3ac47f9a3b798502f071` (before `7e88552ce3d6e7b224085babd48c3dbcc2d0e5ab`) explicitly defines triangle and parallelepiped rule in TOP18-M03 `QUY TẮC` box.
+- Current Q18 affected scholarly receipt: `f80c5711b5a98c9262bf96a3d49f5f823dca8866`, five source-change assertions and mathematical vector derivation; no new question/canonical/solution/rubric.
+- Current status AUTHORING CONTENT_READY unchanged after scoped Delta C author self QA; independent Topic NotebookLM PASS not invented, RELEASE remains separate.
+
+---
 # CĐ18 · Oxyz · 247 canonical item–outcome–role–placement · SOURCE LOCKED R06
 
 **AUTHOR_Q18_MATH_PED_SELF_VERIFIED_ON_SOURCE / website NOT RELEASE_READY**. Standard: one `SLM-THPT-QUALITY-ONE v3.1.0` Q01–Q18. Source page S1 KNTT G12 ChII B06–B08 and G12 ChV B14–B17; G12 SBT ChV B14 printed p25 missing from original PDF; affected SBT exercise IDs 5.6–5.7 require separately verified source. No autonomous source equivalence or independent Topic NotebookLM PASS claimed.
@@ -11,8 +20,8 @@ CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: 7e88552ce3d6e7b224085babd48c3dbcc2d0e5ab
-REVIEW_RECEIPT_BLOB: e4fd72c4bc4b2f9af9f25d1c05adc16ef71fb7a0
+ACADEMIC_SOURCE_BLOB: 6d58c3652c3d51fdeeea3ac47f9a3b798502f071
+REVIEW_RECEIPT_BLOB: f80c5711b5a98c9262bf96a3d49f5f823dca8866
 BASELINE_R04_SIGNED_SOURCE_BLOB: 41daf40a3b639a3ef35e129099525137a05b1848
 BASELINE_R04_SIGNED_Q18_RECEIPT_BLOB: 5262fd454346801b0b5eb4f3dc407bc99d3530
 
