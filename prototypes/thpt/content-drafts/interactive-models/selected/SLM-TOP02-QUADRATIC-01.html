@@ -53,8 +53,8 @@ canvas,svg{background:var(--slm-canvas)!important;border-color:var(--slm-border)
 <p id="predict"></p>
 <div class="controls" id="controls" aria-label="Thông số mô hình"></div>
 <div class="canvaswrap"><canvas id="plot" role="img" aria-label="Hình toán học thay đổi theo điều khiển. Nội dung kết quả luôn được mô tả bằng văn bản dưới hình."></canvas></div>
-<div class="legend"><span>Đường chính</span><span class="second">Đường so sánh</span><span class="marker">Điểm/tham số đang chọn</span></div>
-<div class="result" id="readout" aria-live="polite" role="status"></div>
+<div class="legend"><span>Parabol f(x)</span><span class="second">Nghiệm thực (nếu có)</span><span class="marker">Điểm x đang xét</span></div>
+<details id="numeric-check" class="result"><summary>Đối chiếu dự đoán với dấu và tập nghiệm</summary><div id="readout" aria-live="polite" role="status"></div></details>
 <div class="actions"><button id="reset" type="button">Đặt lại</button></div>
 <p id="apply"></p>
 <details id="compare"><summary>Đối chiếu · Vì sao có kết quả này?</summary><p id="reason"></p></details>
@@ -86,13 +86,18 @@ function curve(g,f,a,b,color,width){ctx.beginPath();ctx.strokeStyle=color||C.blu
 function draw(){init();var x,k,g,i,y,z,n,b,p,alpha,r,t,sol,roots,theta,dx,estimate,exact,ns;Object.keys(el).forEach(function(key){out(key)});
 switch(id){
 case "SLM-TOP02-QUADRATIC-01":
-x=val("x");k=val("k");g=graph(-3.5,3.5,-5,9);curve(g,function(t){return t*t-k},-3.5,3.5,C.blue);dot(g.X(x),g.Y(x*x-k),C.orange);g.end();setText("f("+fmt(x)+") = "+fmt(x*x-k)+". "+(x*x-k>1e-8?"Dương":Math.abs(x*x-k)<1e-8?"Bằng 0":"Âm")+". Nghiệm f=0: "+(k>0?"x=±"+fmt(Math.sqrt(k)):k===0?"x=0 (nghiệm kép)":"không có nghiệm thực")+".");break;
+x=val("x");k=val("k");g=graph(-3.5,3.5,Math.min(-5,Math.floor(-k-1)),Math.max(9,Math.ceil(12.25-k+1)));curve(g,function(t){return t*t-k},-3.5,3.5,C.blue);
+if(k>0){roots=Math.sqrt(k);dot(g.X(-roots),g.Y(0),C.green,5.5);dot(g.X(roots),g.Y(0),C.green,5.5);}
+else if(k===0){dot(g.X(0),g.Y(0),C.green,6);}
+dot(g.X(x),g.Y(x*x-k),C.orange);g.end();
+sol=k>0?"[−"+fmt(Math.sqrt(k))+"; "+fmt(Math.sqrt(k))+"]":k===0?"{0}":"∅";
+setText("f("+fmt(x)+") = "+fmt(x*x-k)+". "+(x*x-k>1e-8?"Dương":Math.abs(x*x-k)<1e-8?"Bằng 0":"Âm")+". Nghiệm f=0: "+(k>0?"x=±"+fmt(Math.sqrt(k)):k===0?"x=0 (nghiệm kép)":"không có nghiệm thực")+". Tập nghiệm f(x) ≤ 0: "+sol+".");break;
 }
 if(!interacted){result.textContent="Hãy dự đoán kết quả trước, sau đó thay đổi ít nhất một thanh trượt hoặc bấm giá trị bằng bàn phím để quan sát."}
 }
-function schedule(){interacted=true;if(pending)return;pending=true;window.requestAnimationFrame(function(){pending=false;draw()})}
+function schedule(){document.getElementById("numeric-check").open=false;document.getElementById("compare").open=false;interacted=true;if(pending)return;pending=true;window.requestAnimationFrame(function(){pending=false;draw()})}
 Object.keys(el).forEach(function(k){el[k].input.addEventListener("input",schedule);el[k].input.addEventListener("change",schedule)});
-document.getElementById("reset").addEventListener("click",function(){Object.keys(el).forEach(function(k){el[k].input.value=el[k].initial});document.getElementById("compare").open=false;interacted=false;draw()});
+document.getElementById("reset").addEventListener("click",function(){Object.keys(el).forEach(function(k){el[k].input.value=el[k].initial});document.getElementById("compare").open=false;document.getElementById("numeric-check").open=false;interacted=false;draw()});
 window.addEventListener("resize",schedule);draw();
 })();
 </script>
