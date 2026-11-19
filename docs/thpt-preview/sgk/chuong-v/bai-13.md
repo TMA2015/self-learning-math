@@ -1,10 +1,10 @@
 # Bài 13. Các số đặc trưng đo xu thế trung tâm
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG V · KIẾN THỨC SGK KNTT</p><p class="thpt-r4-lead">Học định nghĩa, điều kiện, ví dụ và hình minh họa; tự luyện trước khi mở gợi ý và lời giải.</p></div>
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG V · KIẾN THỨC SGK KNTT</p><p class="thpt-r4-lead">Hiểu cách chọn số trung bình, trung vị, tứ phân vị hay mốt để đại diện dữ liệu; tự tính, đọc hình và giải thích lựa chọn.</p></div>
 
 === "Khám phá kiến thức"
 
-    ### Cùng tìm hiểu
+    ### 1.1. Vì sao một bộ dữ liệu cần nhiều số đại diện?
 
     Hai lớp có cùng điểm trung bình nhưng bức tranh kết quả học tập có thể rất khác nhau. Một lớp có phần lớn điểm số quanh 7, lớp kia lại gồm những điểm rất thấp và rất cao. Nếu chỉ báo một số trung bình, ta chưa thể hiểu đầy đủ nhóm dữ liệu.
 
@@ -12,9 +12,9 @@
 
     Mỗi chỉ số phải đi cùng **cách sắp xếp dữ liệu và quy ước xác định**. Khi số quan sát là lẻ hoặc chẵn, cách tìm trung vị và tứ phân vị có những bước cần kiểm đúng; không đoán từ vị trí trên hình.
 
-    ### Ví dụ trực quan
+    ### 1.2. Khám phá cách xác định số đại diện
 
-    #### Tìm một giá trị đại diện cho toàn nhóm
+    #### 1.2.1. Chia đều tổng để hiểu số trung bình
 
     Một lớp có điểm số thay đổi từng người. Muốn tính mức điểm bình quân của cả lớp, cần chia tổng điểm cho số người chứ không chọn đại một bạn.
 
@@ -23,7 +23,7 @@
     Giả sử dàn đều tổng số điểm cho mọi người sao cho tổng không đổi; lượng mỗi người nhận chính là **trung bình**. Với bảng tần số, nhóm các phần tử giống nhau thành giá trị nhân số lần xuất hiện, không làm mất người nào.
 
 
-    **Em tự thử.** Mẫu số liệu \(2,4,4,10\) gồm bốn quan sát. Tính số trung bình cộng, không bỏ giá trị lớn nhất.
+    **Em vận dụng.** Mẫu số liệu \(2,4,4,10\) gồm bốn quan sát. Tính số trung bình cộng, không bỏ giá trị lớn nhất.
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY05" hidden></span>
 
@@ -32,11 +32,11 @@
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> \(\bar x=(2+4+4+10)/4=5\).</p>
         <p><strong>Giải thích vì sao:</strong> Có bốn quan sát, tổng 20. Chia đều tổng cho bốn lần ghi cho 5; không bỏ giá trị 10 chỉ vì cao.</p>
-        <p><strong>Nếu chưa làm được:</strong> Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó <a href="../luyen-tap/?item=THPT-G10-B13-C01">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
+        <p><strong>Nếu chưa làm được:</strong> Đọc §1.2.1 và §2.1 về phép chia đều, đếm đủ bốn quan sát, rồi <a href="../luyen-tap/?item=THPT-G10-B13-C01">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
         </div>
 
 
-    #### Điểm giữa không bị một giá trị rất lớn kéo đi
+    #### 1.2.2. Xếp dữ liệu theo thứ tự để tìm trung vị
 
     Để biết người đứng ở vị trí giữa trong hàng người có chiều cao khác nhau, phải xếp thứ tự, không cần cộng tất cả chiều cao.
 
@@ -45,7 +45,7 @@
     Trung vị nhìn vào **vị trí** sau sắp xếp chứ không dàn đều tổng. Với n chẵn có hai vị trí giữa, trung vị là trung bình hai giá trị đó; với n lẻ lấy một giá trị ở giữa.
 
 
-    **Em tự thử.** Mẫu chưa sắp xếp \(9,2,12,5\). Hãy sắp xếp rồi tìm trung vị \(Q_2\).
+    **Em vận dụng.** Mẫu chưa sắp xếp \(9,2,12,5\). Hãy sắp xếp rồi tìm trung vị \(Q_2\).
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY06" hidden></span>
 
@@ -54,20 +54,24 @@
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> Sắp thành \(2,5,9,12\). Trung vị \(Q_2=(5+9)/2=7\).</p>
         <p><strong>Giải thích vì sao:</strong> Với bốn giá trị, hai phần tử ở giữa là 5 và 9 sau sắp xếp. Không lấy 2 và 9 theo thứ tự ghi ban đầu.</p>
-        <p><strong>Nếu chưa làm được:</strong> Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó <a href="../luyen-tap/?item=THPT-G10-B13-C02">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
+        <p><strong>Nếu chưa làm được:</strong> Đọc §1.2.2 và §2.1 để sắp dãy và tìm hai vị trí giữa, rồi <a href="../luyen-tap/?item=THPT-G10-B13-C02">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
         </div>
 
 
-    #### Chia mẫu dữ liệu thành bốn phần
+    #### 1.2.3. Tứ phân vị cho biết các vị trí trong mẫu
 
     Hai lớp có cùng trung vị vẫn có thể khác nhau ở phần thấp và phần cao. Ta cần mốc để nhìn nửa dưới và nửa trên của mẫu.
 
     Nhắc lại trung vị \(Q_2\), sắp dữ liệu không giảm và cách tìm trung vị một nửa mẫu. 
 
-    Tìm điểm giữa toàn mẫu trước, sau đó chia mẫu thành hai nửa để tìm điểm giữa mỗi nửa: được \(Q_1,Q_3\). **Theo SGK KNTT, nếu n lẻ thì bỏ chính phần tử Q2 khi chia hai nửa**; không đưa nó vào cả hai nửa hay dùng mặc định quy tắc percentile của phần mềm.
+    Tìm điểm giữa toàn mẫu trước, sau đó chia mẫu thành hai nửa để tìm điểm giữa mỗi nửa: được \(Q_1,Q_3\). **Theo quy ước SGK KNTT, nếu \(n\) lẻ thì chỉ bỏ một quan sát ở vị trí chính giữa khi chia nửa — các quan sát khác có cùng giá trị vẫn được giữ**; không đưa nó vào cả hai nửa hay dùng mặc định quy tắc percentile của phần mềm.
 
 
-    Với n lẻ, loại một phần tử giữa; với n chẵn, chia thành hai nửa bằng nhau. Sau đó lấy trung vị từng nửa; tránh dùng phương pháp máy khác quy ước KNTT.
+    **Đọc hình ngay khi học tứ phân vị:** Dữ liệu tăng dần \(2,3,3,7,10\) có hai quan sát mang giá trị 3. Vị trí thứ ba là \(Q_2=3\); khi tìm \(Q_1,Q_3\), chỉ bỏ **quan sát ở vị trí thứ ba**, vẫn giữ quan sát 3 ở vị trí thứ hai. Nửa trái \(2,3\) cho \(Q_1=2{,}5\), nửa phải \(7,10\) cho \(Q_3=8{,}5\). Các mốc mô tả **vị trí trong dãy**, không phải chia khoảng giá trị thành bốn đoạn bằng nhau.
+
+    <figure class="thpt-r4-plot thpt-r4-probability-figure" data-thpt-fig-id="FIG-G10-B13-01" style="width:min(100%, 780px); max-width:none; overflow-x:auto; box-sizing:border-box;"><img style="display:block; width:100%; min-width:600px; max-width:none; height:auto;" src="../../../../assets/images/thpt/THPT_G10_B13_QUARTILES_D5_R01.svg" loading="lazy" alt="Mẫu đã sắp và cách lấy tứ phân vị khi có năm giá trị"><figcaption>Mẫu đã sắp và cách lấy tứ phân vị khi có năm giá trị.</figcaption></figure>
+
+    Với n lẻ, chỉ loại một quan sát ở vị trí giữa; với n chẵn, chia thành hai nửa bằng nhau. Sau đó lấy trung vị từng nửa; tránh dùng phương pháp máy khác quy ước KNTT.
 
     **Em vận dụng.** Cho mẫu đã sắp \(1,2,3,4,5,6,7\). Tìm \(Q_1,Q_2,Q_3\) theo quy ước KNTT.
 
@@ -78,11 +82,11 @@
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> \(Q_2=4\), nửa dưới \(1,2,3\) cho \(Q_1=2\), nửa trên \(5,6,7\) cho \(Q_3=6\).</p>
         <p><strong>Giải thích vì sao:</strong> Có bảy phần tử, bỏ chính 4 khi tìm Q1/Q3. Không lấy trung bình các vị trí 3 và 4 hay đưa 4 vào hai nửa.</p>
-        <p><strong>Nếu chưa làm được:</strong> Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó <a href="../luyen-tap/?item=THPT-G10-B13-P02">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
+        <p><strong>Nếu chưa làm được:</strong> Đọc cách đọc hình §1.2.3 và quy tắc chia nửa §2.2, rồi <a href="../luyen-tap/?item=THPT-G10-B13-P02">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
         </div>
 
 
-    #### Giá trị lặp lại nhiều nhất mới là mốt
+    #### 1.2.4. Giá trị nào xuất hiện phổ biến nhất?
 
     Trong cửa hàng bán áo, chủ cửa hàng quan tâm cỡ áo bán nhiều nhất chứ không phải số trung bình của mã cỡ.
 
@@ -91,7 +95,7 @@
     Mốt là giá trị (hoặc các giá trị) có tần số cao nhất. Khi nhiều giá trị cùng đứng đầu, mẫu có nhiều mốt; theo quy ước minh họa SGK KNTT, nếu mỗi giá trị chỉ xuất hiện một lần thì coi là không có mốt.
 
 
-    **Em tự thử.** Trong mẫu \(2,2,3,3,5\), giá trị nào là mốt? Có thể có hơn một mốt không?
+    **Em vận dụng.** Trong mẫu \(2,2,3,3,5\), giá trị nào là mốt? Có thể có hơn một mốt không?
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY08" hidden></span>
 
@@ -100,11 +104,11 @@
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> Có hai mốt là 2 và 3, mỗi số xuất hiện hai lần.</p>
         <p><strong>Giải thích vì sao:</strong> Cùng tần số cao nhất 2 nên cả hai đều là mốt; 3 lớn hơn 2 không làm nó 'mốt hơn'.</p>
-        <p><strong>Nếu chưa làm được:</strong> Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó <a href="../luyen-tap/?item=THPT-G10-B13-P03">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
+        <p><strong>Nếu chưa làm được:</strong> Đọc §1.2.4 và định nghĩa mốt ở §2.3, kiểm tần số lớn nhất, rồi <a href="../luyen-tap/?item=THPT-G10-B13-P03">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
         </div>
 
 
-    #### Vì sao đôi khi trung vị nói đúng hơn trung bình?
+    #### 1.2.5. Chọn số đại diện cho đúng tình huống
 
     Một khoản thu rất lớn xuất hiện trong mẫu có thể làm số bình quân cao dù phần lớn quan sát còn thấp. Khi muốn tả người 'điển hình', không nên chỉ nhìn một con số.
 
@@ -113,7 +117,7 @@
     Trung bình dùng mọi giá trị nên nhạy với cực trị; trung vị là điểm giữa theo vị trí nên thường ổn định hơn khi chỉ một giá trị thay đổi rất mạnh. Cả hai đều là số mô tả nhưng cần chọn tùy câu hỏi.
 
 
-    **Em tự thử.** Mẫu \(4,5,6,7,28\). Tính trung bình và trung vị; chỉ ra đại lượng nào ít bị số 28 chi phối hơn.
+    **Em vận dụng.** Mẫu \(4,5,6,7,28\). Tính trung bình và trung vị; chỉ ra đại lượng nào ít bị số 28 chi phối hơn.
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHV-TRY09" hidden></span>
 
@@ -122,10 +126,10 @@
         <div class="thpt-r4-first-try-answer">
         <p><strong>Đối chiếu kết quả:</strong> Trung bình \((4+5+6+7+28)/5=50/5=10\); trung vị 6; trung vị ít bị 28 chi phối hơn.</p>
         <p><strong>Giải thích vì sao:</strong> Vị trí giữa không đổi nếu 28 còn lớn nhất, còn tổng và trung bình tăng khi cực trị tăng.</p>
-        <p><strong>Nếu chưa làm được:</strong> Xem lại mục Tự khắc phục lỗi thường gặp ở cuối bài, đọc lại phần Hiểu bản chất trước công thức và Vì sao làm theo cách này?, sau đó <a href="../luyen-tap/?item=THPT-G10-B13-P06">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
+        <p><strong>Nếu chưa làm được:</strong> So sánh ý nghĩa trung bình/trung vị ở §1.2.5 và §2.1, rồi <a href="../luyen-tap/?item=THPT-G10-B13-P06">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
         </div>
 
-    ### Thuật ngữ, kiến thức và kỹ năng
+    ### 1.3. Tổng kết cách chọn số đặc trưng
 
     **Thuật ngữ:** Số trung bình cộng, trung vị, tứ phân vị (Q_1,Q_2,Q_3), mốt, bảng tần số, giá trị đại diện.
 
@@ -139,7 +143,7 @@
     ### 2.2. Tứ phân vị
 
 
-    <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B13_QUARTILES_D5_R01.svg" loading="lazy" alt="Mẫu đã sắp và cách lấy tứ phân vị khi có năm giá trị"><figcaption>Mẫu đã sắp và cách lấy tứ phân vị khi có năm giá trị.</figcaption></figure>
+
 
     **Cách đọc hình.** Sắp xếp dữ liệu từ bé đến lớn trước khi nhìn Q1, Q2, Q3. Các mốc chia nhóm quan sát đã sắp xếp, không chia khoảng giá trị thành những đoạn bằng nhau.
 
