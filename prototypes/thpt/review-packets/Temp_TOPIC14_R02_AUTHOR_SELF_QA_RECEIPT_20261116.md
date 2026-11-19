@@ -1,3 +1,13 @@
+<!-- TOP14_S1_G10T2_B19_MISSING_GRAPH_LINE_20261120 -->
+## 20/11/2026 · Q01/Q03/Q10/Q11 — Bổ sung S1 bắt buộc TOP14-O07 (Delta C)
+
+**Đối chiếu nguồn trực tiếp:** SGK Kết nối tri thức Toán 10 Tập 2, Bài 19, trang in 30–31; mục tiêu “Giải thích mối liên hệ giữa đồ thị hàm bậc nhất và đường thẳng”, phần dạng tổng quát \(Ax+By+C=0\) và trường hợp \(B=0\). PDF gốc được tham chiếu qua bản đọc: https://toanaz.com/wp-content/uploads/2026/10/SGK-Toan-10-Tap-2-Chuong-trinh-moi.pdf . Không coi đây là kết luận về các SGK khác chưa được đối chiếu.
+
+**Lỗi xác thực TOP14-O07:** Source trước `47c98711e2955287831d5ea10fc5d61d1483fd6a` có mô hình tuyến tính nhưng thiếu phát biểu tương đương giữa đồ thị hàm số bậc nhất và đường thẳng tổng quát, đặc biệt đường thẳng đứng không phải đồ thị y=f(x). **Đã sửa ngay trên một learner canonical** `eb2ee110e42e767a711c769b39682784aa3e996e` tại `### 1.7`, chèn hai đoạn giải thích vì sao và khối **TÍNH CHẤT — Mối liên hệ giữa đồ thị hàm số và đường thẳng**, trước Ví dụ hiện hành. Có điều kiện \((A,B)\ne(0,0)\), \(B\ne0\) cho \(y=-A/B\,x-C/B\) và \(B=0\), \(A\ne0\) cho \(x=-C/A\); cấm chia B khi B=0.
+
+**Kiểm toán Delta C có chứng cứ:** Các điểm (0,1),(2,5) đều thuộc 2x-y+1=0 và y=2x+1; kiểm bằng thay số trên 15 hoành độ nguyên; vectơ (1,2) vuông góc pháp tuyến (2,-1); trường hợp x=2 có nhiều tung độ nên không thỏa kiểm tra hàm số theo x. Cân bằng dấu MathJax; \frac{A}{B}, \frac{C}{B}, \frac{C}{A} dùng ngoặc đầy đủ. **8/8 kiểm tra phạm vi sửa PASS**. Các Ví dụ, stem, item_id, placement, lời giải, rubric và SVG không đổi. **AUTHOR_SELF_VERIFIED_AFFECTED_DELTA**, KHÔNG có independent NotebookLM verdict mới, KHÔNG phải full 22 SGK coverage PASS. P0/P1 academic trong outcome đã sửa: 0 sau kiểm trực tiếp. AUTHORING CONTENT_READY giữ theo chính sách owner nâng cấp cùng một source; RELEASE AP/R/P, merge/deploy, RD1/mastery không được cấp.
+
+---
 # CĐ14 R02 — AUTHOR_SELF_QA_RECEIPT, learner-first source-lock · 16/11/2026
 
 **Verification**: `AUTHOR_SELF_VERIFIED` (tác giả tự chứng minh Q01–Q18 trên đúng blob); không có verdict NotebookLM độc lập mới cho CĐ14. R01 và SGK review cũ giữ nguyên theo snapshot bất biến. Đây là source AUTHORING, không phải QA website.
@@ -7,8 +17,8 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md
-SOURCE_BLOB: 47c98711e2955287831d5ea10fc5d61d1483fd6a
-ACADEMIC_SOURCE_BLOB: 47c98711e2955287831d5ea10fc5d61d1483fd6a
+SOURCE_BLOB: eb2ee110e42e767a711c769b39682784aa3e996e
+ACADEMIC_SOURCE_BLOB: eb2ee110e42e767a711c769b39682784aa3e996e
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_R02_AUTHORING_ONLY_METADATA_20261116.md
 AUTHOR_A1_A7_BLOB: e2dd3eb2985aba77e354dbd21c9025a273163be5
 ORIGINAL_R01_SOURCE_BLOB: 277ccb8b5d9f0a8c5f08680fa7e5b70925710308
