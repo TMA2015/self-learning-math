@@ -19,7 +19,7 @@ Ta bắt đầu từ những câu hỏi gần gũi: một vật chuyển động
 
 Một vectơ biểu diễn độ dời có hướng từ điểm đầu đến điểm cuối. Ta có thể tịnh tiến mũi tên song song mà không đổi vectơ; vì thế vectơ không gắn với vị trí tuyệt đối. Vectơ-không có độ dài 0 và không xác định một hướng riêng, nên không dùng nó để đo góc.
 
-> **Kiến thức cần ghi nhớ**
+> **ĐỊNH NGHĨA — Vectơ và vectơ-không**
 >
 > Một vectơ biểu diễn độ dời có hướng từ điểm đầu đến điểm cuối.
 
@@ -48,7 +48,7 @@ Một vectơ biểu diễn độ dời có hướng từ điểm đầu đến �
 
 Hai vectơ bằng nhau phải cùng hướng và cùng độ dài; chỉ cùng độ dài chưa đủ. Hai vectơ đối nhau có cùng độ dài nhưng ngược hướng. 'Cùng phương' nói về giá song song hoặc trùng nhau, không tự khẳng định cùng hướng.
 
-> **Kiến thức cần ghi nhớ**
+> **ĐỊNH NGHĨA — Bằng nhau, đối nhau và cùng phương**
 >
 > Hai vectơ bằng nhau phải cùng hướng và cùng độ dài; chỉ cùng độ dài chưa đủ.
 
@@ -77,7 +77,7 @@ Không. AB và CD đối nhau; AB bằng DC.
 
 Cộng vectơ là ghép các độ dời có cả độ lớn lẫn hướng, **không cộng độ dài các đoạn thẳng**. Quy tắc ba điểm là \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}\): đi từ A đến B rồi từ B đến C có cùng độ dời với đi thẳng từ A đến C. Trong hình hộp, ba vectơ theo ba cạnh kề tại A cộng lại thành vectơ nối A với đỉnh đối diện C′.
 
-> **Kiến thức cần ghi nhớ**
+> **QUY TẮC — Cộng vectơ theo đường đi**
 >
 > Cộng vectơ là ghép các độ dời, không cộng số đo chiều dài tùy ý.
 
@@ -106,7 +106,7 @@ Vectơ PR theo quy tắc ba điểm, miễn các điểm được lấy đúng t
 
 Nhân vectơ với số k thay đổi độ dài theo |k|, cùng hướng nếu k>0, ngược hướng nếu k<0 và tạo vectơ-không nếu k=0. Điều này giải thích tại sao nhân 3 biểu thị ba lần độ dời cùng hướng, còn nhân −1 là đảo chiều.
 
-> **Kiến thức cần ghi nhớ**
+> **TÍNH CHẤT — Nhân vectơ với một số**
 >
 > Nhân vectơ với số k thay đổi độ dài theo |k|, cùng hướng nếu k>0, ngược hướng nếu k<0 và tạo vectơ-không nếu k=0.
 
@@ -135,7 +135,7 @@ Không. 0u là vectơ-không, không có hướng xác định.
 
 Tích vô hướng đo phần 'đi cùng phương' của hai vectơ; nó dương khi góc nhọn, âm khi góc tù và bằng 0 khi vuông góc. Công thức u·v=|u||v|cosφ đúng cho mọi vectơ, nhưng góc φ chỉ được định nghĩa khi hai vectơ khác không.
 
-> **Kiến thức cần ghi nhớ**
+> **ĐỊNH NGHĨA — Góc và tích vô hướng**
 >
 > Hai vectơ khác không có tích vô hướng \(\vec u\cdot\vec v=|\vec u||\vec v|\cos\theta\); tích bằng 0 khi chúng vuông góc. Không định nghĩa góc với vectơ-không.
 
@@ -164,7 +164,7 @@ Bằng 0 vì cos90°=0.
 
 Bài lực ba chiều thường hỏi hợp lực, hình chiếu hay công sinh ra bởi một lực. Chọn phép cộng vectơ khi ghép các tác dụng, chọn tích vô hướng khi đo đóng góp của lực dọc theo chuyển dời; không cộng độ lớn nếu các lực khác hướng.
 
-> **Kiến thức cần ghi nhớ**
+> **QUY TẮC — Hợp lực và tổng vectơ**
 >
 > Hợp lực hai lực là tổng hai vectơ lực. Nếu chúng vuông góc, độ lớn hợp lực là \(\sqrt{F_1^2+F_2^2}\), không phải \(F_1+F_2\).
 
@@ -208,7 +208,7 @@ Bài lực ba chiều thường hỏi hợp lực, hình chiếu hay công sinh 
 
 Ba trục Ox,Oy,Oz vuông góc đôi một giúp định vị một điểm trong phòng bằng ba số. Các mặt phẳng tọa độ Oxy, Oyz, Oxz là ba mặt khác nhau: z=0, x=0, y=0. Hình phối cảnh không phải thước để đọc chiều sâu.
 
-> **Kiến thức cần ghi nhớ**
+> **TÍNH CHẤT — Hệ trục và các mặt tọa độ**
 >
 > Trong hệ trực chuẩn Oxyz, điểm thuộc (Oxy) khi z=0, thuộc (Oxz) khi y=0, thuộc (Oyz) khi x=0.
 
@@ -237,7 +237,7 @@ Thuộc Oxy vì z=0.
 
 Tọa độ của một điểm là ba số xác định vị trí so với gốc O; tọa độ vectơ là ba thành phần dịch chuyển theo cùng trục. Cùng bộ ba số vẫn là hai đối tượng khác nhau, dù vectơ OM có tọa độ trùng tọa độ của điểm M.
 
-> **Kiến thức cần ghi nhớ**
+> **ĐỊNH NGHĨA — Tọa độ của điểm và vectơ**
 >
 > Tọa độ của một điểm là ba số xác định vị trí so với gốc O; tọa độ vectơ là ba thành phần dịch chuyển theo cùng trục.
 
@@ -266,7 +266,7 @@ Tọa độ của một điểm là ba số xác định vị trí so với gố
 
 Ứng dụng Oxyz bắt đầu bằng chọn gốc, hướng dương và đơn vị. Một tọa độ âm không có nghĩa khoảng cách âm; nó chỉ nằm ở phía đối diện của trục. Bài radar, kho vận hoặc đồ họa đều cần tuyên bố hệ quy chiếu trước.
 
-> **Kiến thức cần ghi nhớ**
+> **PHƯƠNG PHÁP — Chọn hệ quy chiếu thực tế**
 >
 > Ứng dụng Oxyz bắt đầu bằng chọn gốc, hướng dương và đơn vị.
 
@@ -295,7 +295,7 @@ Tọa độ của một điểm là ba số xác định vị trí so với gố
 
 Vectơ từ A đến B được tính bằng cuối trừ đầu theo từng trục: AB=(xB−xA,yB−yA,zB−zA). Công thức là bản dịch đại số của việc bắt đầu ở A rồi di chuyển tới B; đổi AB thành BA thì toàn bộ dấu đảo.
 
-> **Kiến thức cần ghi nhớ**
+> **CÔNG THỨC — Vectơ từ hai điểm**
 >
 > Vectơ từ A đến B được tính bằng cuối trừ đầu theo từng trục: AB=(xB−xA,yB−yA,zB−zA).
 
@@ -333,7 +333,7 @@ Vectơ từ A đến B được tính bằng cuối trừ đầu theo từng tr�
 
 Phép cộng, trừ và nhân số trên vectơ trong ba trục vuông góc thực hiện theo từng thành phần. Đây là phép cộng độ dời độc lập trên Ox,Oy,Oz chứ không cộng ba độ dài của vectơ.
 
-> **Kiến thức cần ghi nhớ**
+> **QUY TẮC — Phép toán theo từng tọa độ**
 >
 > Phép cộng, trừ và nhân số trên vectơ trong ba trục vuông góc thực hiện theo từng thành phần.
 
@@ -362,7 +362,7 @@ Phép cộng, trừ và nhân số trên vectơ trong ba trục vuông góc th�
 
 Hai vectơ khác không cùng phương nếu một vectơ là bội của vectơ kia. Đừng chia các tọa độ tùy tiện khi có thành phần bằng 0; cách chắc chắn là thử k sao cho u=kv ở *tất cả* ba vị trí. Vectơ-không cần xử lí theo định nghĩa quy ước chứ không chia để tìm tỉ số.
 
-> **Kiến thức cần ghi nhớ**
+> **TÍNH CHẤT — Kiểm hai vectơ cùng phương**
 >
 > Hai vectơ khác không cùng phương nếu một vectơ là bội của vectơ kia.
 
@@ -391,7 +391,7 @@ Có, u=3v và đều khác không.
 
 Trung điểm và trọng tâm của tam giác là trung bình *tọa độ*, không phải trung bình khoảng cách tới gốc. Vì mỗi trục độc lập, trung điểm M=(A+B)/2; trọng tâm G=(A+B+C)/3 theo từng thành phần.
 
-> **Kiến thức cần ghi nhớ**
+> **CÔNG THỨC — Trung điểm và trọng tâm**
 >
 > Trung điểm A,B có tọa độ \(((x_A+x_B)/2;(y_A+y_B)/2;(z_A+z_B)/2)\); trọng tâm tam giác là trung bình tọa độ ba đỉnh.
 
@@ -420,7 +420,7 @@ M=(1,2,1).
 
 Tích vô hướng trong hệ trực chuẩn Oxyz là u·v=uxvx+uyvy+uzvz; chia cho |u||v| chỉ khi hai vectơ khác không mới suy góc. Vuông góc nghĩa tích bằng 0; góc giữa các vectơ có thể tù, khác góc không tù giữa hai đường thẳng.
 
-> **Kiến thức cần ghi nhớ**
+> **CÔNG THỨC — Tích vô hướng trong tọa độ**
 >
 > Tích vô hướng trong hệ trực chuẩn Oxyz là u·v=uxvx+uyvy+uzvz; chia cho |u||v| chỉ khi hai vectơ khác không mới suy góc.
 
@@ -449,7 +449,7 @@ Tích vô hướng trong hệ trực chuẩn Oxyz là u·v=uxvx+uyvy+uzvz; chia 
 
 Độ dài vectơ dùng căn tổng bình phương ba thành phần; khoảng cách AB là độ dài vectơ AB. Điều này nối Pitago phẳng thành ba phương vuông góc, kết quả luôn không âm.
 
-> **Kiến thức cần ghi nhớ**
+> **CÔNG THỨC — Độ dài và khoảng cách hai điểm**
 >
 > Độ dài \(|\vec u|=\sqrt{u_x^2+u_y^2+u_z^2}\); khoảng cách AB là độ dài vectơ \(\overrightarrow{AB}=\vec B-\vec A\).
 
@@ -478,7 +478,7 @@ Tích vô hướng trong hệ trực chuẩn Oxyz là u·v=uxvx+uyvy+uzvz; chia 
 
 Mô hình chuyển động thẳng đều có vị trí M(t)=M0+t·v, ba tọa độ thay đổi độc lập theo tốc độ trên từng trục. Đơn vị tốc độ và thời gian phải tương thích; kiểm t≥0 nếu bài chỉ nói chuyển động sau khi xuất phát.
 
-> **Kiến thức cần ghi nhớ**
+> **PHƯƠNG PHÁP — Mô hình chuyển động**
 >
 > Mô hình chuyển động thẳng đều có vị trí M(t)=M0+t·v, ba tọa độ thay đổi độc lập theo tốc độ trên từng trục.
 
@@ -522,7 +522,7 @@ Mô hình chuyển động thẳng đều có vị trí M(t)=M0+t·v, ba tọa �
 
 Một mặt phẳng có vô số hướng nằm trong nó; một vectơ pháp tuyến n khác 0 phải vuông góc với mọi hướng đó. Nếu đã biết hai vectơ chỉ phương u,v **không cùng phương**, tích có hướng u×v là một cách dựng n. Tích có hướng bằng 0 khi u,v cùng phương, khi ấy chưa xác định được pháp tuyến mặt bằng cặp vectơ ấy.
 
-> **Kiến thức cần ghi nhớ**
+> **PHƯƠNG PHÁP — Dựng vectơ pháp tuyến**
 >
 > Nếu u,v không cùng phương, một pháp tuyến mặt phẳng là \(n=u\times v\ne 0\), vuông góc với cả hai hướng u,v.
 
@@ -559,7 +559,7 @@ n=(0,0,1), vì vuông góc cả u lẫn v.
 
 Một mặt phẳng là tập các điểm M có độ dời từ điểm M0 nằm vuông góc với một pháp tuyến n khác 0. Điều kiện n·M0M=0 dẫn đến A(x−x0)+B(y−y0)+C(z−z0)=0. Vì vậy cần một điểm đi qua và một hướng pháp tuyến, không thể chỉ biết n để xác định vị trí duy nhất.
 
-> **Kiến thức cần ghi nhớ**
+> **ĐỊNH NGHĨA — Mặt phẳng qua một điểm**
 >
 > Một mặt phẳng là tập các điểm M có độ dời từ điểm M0 nằm vuông góc với một pháp tuyến n khác 0.
 
@@ -588,7 +588,7 @@ z−2=0, tức z=2.
 
 Ba điểm phân biệt chưa đủ xác định một mặt: chúng phải **không thẳng hàng**. Lấy AB và AC không cùng phương, dựng n=AB×AC rồi áp dụng phương trình mặt qua A. Nếu ba điểm thẳng hàng, tích có hướng bằng 0 và tồn tại vô số mặt phẳng qua đường đó.
 
-> **Kiến thức cần ghi nhớ**
+> **ĐIỀU KIỆN — Mặt phẳng qua ba điểm**
 >
 > Ba điểm phân biệt chưa đủ xác định một mặt: chúng phải **không thẳng hàng**.
 
@@ -617,7 +617,7 @@ x+y+z=2. Ba điểm không thẳng hàng.
 
 Khi mặt phẳng chứa một đường hoặc trục, mọi vectơ chỉ phương của đường ấy phải vuông góc với pháp tuyến của mặt. Nếu mặt chứa Ox và điểm P ngoài Ox, dùng e1=(1,0,0) và OP làm hai hướng độc lập. Điều kiện 'chứa trục' mạnh hơn 'song song trục' vì mặt còn phải đi qua mọi điểm trên trục.
 
-> **Kiến thức cần ghi nhớ**
+> **TÍNH CHẤT — Mặt phẳng chứa trục**
 >
 > Khi mặt phẳng chứa một đường hoặc trục, mọi vectơ chỉ phương của đường ấy phải vuông góc với pháp tuyến của mặt.
 
@@ -646,7 +646,7 @@ x−y=0, vì mọi điểm Oz có x=y=0 và điểm thêm cũng thỏa.
 
 Hai mặt có pháp tuyến tỉ lệ có cùng phương, nhưng có thể **trùng nhau** hoặc **song song phân biệt**; phải kiểm thêm hằng số hoặc một điểm. Hai mặt vuông góc khi hai pháp tuyến khác không có tích vô hướng bằng 0. Góc giữa mặt là góc nhỏ, không phụ thuộc dấu chọn của pháp tuyến.
 
-> **Kiến thức cần ghi nhớ**
+> **TÍNH CHẤT — Hai mặt phẳng: song song hay vuông góc?**
 >
 > Hai mặt có pháp tuyến tỉ lệ có cùng phương, nhưng có thể **trùng nhau** hoặc **song song phân biệt**; phải kiểm thêm hằng số hoặc một điểm.
 
@@ -675,7 +675,7 @@ Trùng nhau do chia phương trình Q cho 2 thu đúng P.
 
 Khoảng cách từ điểm M đến mặt P là độ dài đường vuông góc ngắn nhất, không phải khoảng cách đến một điểm tùy ý của P. Với P:Ax+By+Cz+D=0 có n=(A,B,C) khác không, lấy trị tuyệt đối của vế trái tại M và chia độ dài pháp tuyến √(A²+B²+C²).
 
-> **Kiến thức cần ghi nhớ**
+> **CÔNG THỨC — Khoảng cách điểm đến mặt phẳng**
 >
 > Với \((P):Ax+By+Cz+D=0\) có \((A;B;C)\ne(0;0;0)\), khoảng cách \(d(M,(P))=\frac{|Ax_M+By_M+Cz_M+D|}{\sqrt{A^2+B^2+C^2}}\).
 
@@ -722,7 +722,7 @@ Khoảng cách từ điểm M đến mặt P là độ dài đường vuông gó
 
 Một đường thẳng vô hạn được mô tả bằng một điểm M0 nó đi qua và một vectơ chỉ phương u khác không. Mọi điểm trên đường có M=M0+t u với t thực. Ba tọa độ phải dùng **cùng một tham số t**; nếu mỗi tọa độ có một t khác, đó không còn là phương trình một đường cụ thể.
 
-> **Kiến thức cần ghi nhớ**
+> **PHƯƠNG PHÁP — Phương trình tham số đường thẳng**
 >
 > Đường qua \(M_0\) có hướng \(u\ne0\) có phương trình tham số \(M(t)=M_0+tu\) với cùng một tham số thực t ở cả ba tọa độ.
 
@@ -751,7 +751,7 @@ x=t, y=0, z=2t, t∈R.
 
 Hai điểm phân biệt A,B xác định một đường và cho vectơ chỉ phương AB=B−A khác 0. Lấy A làm điểm t=0; không cần pháp tuyến như phương trình mặt. Nếu A=B, không có hướng AB khác không để xác định duy nhất một đường.
 
-> **Kiến thức cần ghi nhớ**
+> **TÍNH CHẤT — Đường thẳng qua hai điểm**
 >
 > Hai điểm phân biệt A,B xác định một đường và cho vectơ chỉ phương AB=B−A khác 0.
 
@@ -780,7 +780,7 @@ x=t,y=2t,z=3t.
 
 Phương trình chính tắc của đường thẳng cần cẩn thận khi một thành phần vectơ chỉ phương bằng 0. Chỉ những tỉ số có mẫu khác 0 mới xuất hiện; thành phần bằng 0 thành phương trình tọa độ cố định. Không bao giờ viết phép chia cho 0.
 
-> **Kiến thức cần ghi nhớ**
+> **ĐIỀU KIỆN — Khi một tọa độ hướng bằng không**
 >
 > Dạng chính tắc chỉ viết tỉ số ở tọa độ có thành phần hướng khác 0; thành phần hướng bằng 0 phải viết thành tọa độ cố định, không chia cho 0.
 
@@ -809,7 +809,7 @@ Phương trình chính tắc của đường thẳng cần cẩn thận khi mộ
 
 Kiểm tra điểm M thuộc đường bằng cách tìm **một** giá trị t đồng thời thỏa cả ba phương trình tham số. Nếu tọa độ x cho t1 nhưng y cho t2 khác, điểm không thuộc đường, dù hai tọa độ trông khớp.
 
-> **Kiến thức cần ghi nhớ**
+> **PHƯƠNG PHÁP — Kiểm điểm thuộc đường thẳng**
 >
 > Kiểm tra điểm M thuộc đường bằng cách tìm **một** giá trị t đồng thời thỏa cả ba phương trình tham số.
 
@@ -838,7 +838,7 @@ Có, chọn t=0 thỏa cả ba.
 
 Hai đường có vectơ chỉ phương cùng phương có thể song song phân biệt hoặc trùng nhau; vị trí quyết định bằng một điểm của đường này có thuộc đường kia không. Khi hai hướng khác phương, chúng hoặc cắt nhau hoặc chéo nhau; phải kiểm nghiệm hệ tham số tiếp.
 
-> **Kiến thức cần ghi nhớ**
+> **TÍNH CHẤT — Hai đường có cùng phương**
 >
 > Hai đường có vectơ chỉ phương cùng phương có thể song song phân biệt hoặc trùng nhau; vị trí quyết định bằng một điểm của đường này có thuộc đường kia không.
 
@@ -867,7 +867,7 @@ Song song phân biệt; A không thuộc đường qua B vì z khác.
 
 Trong không gian, hai đường không cùng phương **chưa chắc cắt**: chúng còn có thể chéo nhau. Đặt phương trình tham số hai đường d1(t),d2(s), giải hệ ba tọa độ với chỉ hai ẩn t,s; nếu hệ vô nghiệm và hướng không song song, đó là hai đường chéo nhau.
 
-> **Kiến thức cần ghi nhớ**
+> **TÍNH CHẤT — Hai đường cắt hay chéo nhau?**
 >
 > Trong không gian, hai đường không cùng phương **chưa chắc cắt**: chúng còn có thể chéo nhau.
 
@@ -896,7 +896,7 @@ Tại O=(0,0,0) với t=s=0.
 
 Giao điểm của đường với mặt tìm bằng thay M(t)=M0+t u vào Ax+By+Cz+D=0. Nếu hệ số t là n·u khác 0 thì có một giao điểm; nếu n·u=0, kiểm hằng số: bằng 0 thì đường nằm trong mặt, khác 0 thì song song phân biệt.
 
-> **Kiến thức cần ghi nhớ**
+> **PHƯƠNG PHÁP — Tìm giao giữa đường và mặt**
 >
 > Giao điểm của đường với mặt tìm bằng thay M(t)=M0+t u vào Ax+By+Cz+D=0.
 
@@ -943,7 +943,7 @@ Giao điểm của đường với mặt tìm bằng thay M(t)=M0+t u vào Ax+By
 
 Góc giữa hai đường thẳng không định hướng được lấy là góc nhỏ 0°–90°. Nếu u,v là hai vectơ chỉ phương khác 0 thì cosθ=|u·v|/(|u||v|). Trị tuyệt đối cần thiết: đảo hướng vectơ không đổi góc hai đường.
 
-> **Kiến thức cần ghi nhớ**
+> **CÔNG THỨC — Góc giữa hai đường**
 >
 > Với hai vectơ chỉ phương u,v khác 0, góc nhỏ giữa hai đường thẳng thỏa \(\cos\theta=\frac{|u\cdot v|}{|u||v|}\), \(0^\circ\le\theta\le90^\circ\).
 
@@ -972,7 +972,7 @@ Góc giữa hai đường thẳng không định hướng được lấy là gó
 
 Góc θ giữa đường d và mặt P là góc giữa đường và hình chiếu vuông góc của nó, thuộc 0°–90°. Với vectơ chỉ phương u≠0, pháp tuyến n≠0, sinθ=|u·n|/(|u||n|). Đây là góc phụ của góc nhọn giữa u và n, không dùng cos trực tiếp để gọi góc đường–mặt.
 
-> **Kiến thức cần ghi nhớ**
+> **CÔNG THỨC — Góc giữa đường và mặt**
 >
 > Với hướng đường u và pháp tuyến mặt n đều khác 0, góc đường–mặt thỏa \(\sin\theta=\frac{|u\cdot n|}{|u||n|}\), \(0^\circ\le\theta\le90^\circ\).
 
@@ -1001,7 +1001,7 @@ Góc θ giữa đường d và mặt P là góc giữa đường và hình chi�
 
 Góc nhỏ giữa hai mặt P,Q phụ thuộc pháp tuyến n1,n2 khác 0; cosθ=|n1·n2|/(|n1||n2|). Khi pháp tuyến vuông góc, hai mặt vuông góc; khi pháp tuyến cùng phương, hai mặt song song hoặc trùng và góc 0. Đừng lấy góc nhị diện tù làm góc giữa hai mặt.
 
-> **Kiến thức cần ghi nhớ**
+> **CÔNG THỨC — Góc giữa hai mặt**
 >
 > Góc nhỏ giữa hai mặt P,Q phụ thuộc pháp tuyến n1,n2 khác 0; cosθ=|n1·n2|/(|n1||n2|).
 
@@ -1030,7 +1030,7 @@ Góc nhỏ giữa hai mặt P,Q phụ thuộc pháp tuyến n1,n2 khác 0; cosθ
 
 Cùng chữ 'song song' và 'vuông góc' nhưng các cặp đối tượng cần điều kiện khác nhau. Đường–mặt: n·u=0 chỉ khẳng định hướng song song mặt, còn phải thử điểm để phân biệt đường nằm trong mặt hay song song phân biệt. Mặt–mặt: n1,n2 cùng phương, cũng phải so hệ số tự do để loại trùng.
 
-> **Kiến thức cần ghi nhớ**
+> **TÍNH CHẤT — Nhận diện đường–mặt song song**
 >
 > Đường d có hướng u khác 0, mặt (P) có pháp tuyến n khác 0: u·n=0 chỉ cho biết phương của d song song (P); kiểm điểm trên d để phân biệt d nằm trong (P) hay song song phân biệt.
 
@@ -1059,7 +1059,7 @@ Cùng chữ 'song song' và 'vuông góc' nhưng các cặp đối tượng cầ
 
 Trong thiết kế đường dốc hoặc băng chuyền, độ nghiêng đối với nền ngang là góc đường–mặt, được tính từ tỉ số **độ tăng cao / chiều dài dốc** khi dùng sin, hoặc **độ tăng cao / quãng ngang** khi dùng tan. Hai tỉ số không giống nhau, và đơn vị chiều dài phải thống nhất.
 
-> **Kiến thức cần ghi nhớ**
+> **PHƯƠNG PHÁP — Góc dốc và độ nghiêng**
 >
 > Đường dốc có độ tăng cao h, khoảng ngang d>0, chiều dài L>0: \(\tan\theta=h/d\), \(\sin\theta=h/L\).
 
@@ -1103,7 +1103,7 @@ Trong thiết kế đường dốc hoặc băng chuyền, độ nghiêng đối 
 
 Mặt cầu tâm C bán kính R>0 gồm các điểm M có CM=R. Bình phương khoảng cách giúp viết phương trình (x−a)²+(y−b)²+(z−c)²=R², không phải một mặt phẳng vì có các số hạng bậc hai.
 
-> **Kiến thức cần ghi nhớ**
+> **CÔNG THỨC — Mặt cầu từ tâm và bán kính**
 >
 > Mặt cầu tâm C bán kính R>0 gồm các điểm M có CM=R.
 
@@ -1132,7 +1132,7 @@ x²+y²+z²=25.
 
 Từ phương trình x²+y²+z²+Dx+Ey+Fz+G=0, hoàn thành bình phương từng biến để tìm tâm (−D/2,−E/2,−F/2) và R²=(D²+E²+F²)/4−G. Chỉ có mặt cầu thực bán kính dương nếu R²>0; R²=0 chỉ cho một điểm.
 
-> **Kiến thức cần ghi nhớ**
+> **ĐỊNH NGHĨA — Hoàn thành bình phương tìm mặt cầu**
 >
 > Từ phương trình x²+y²+z²+Dx+Ey+Fz+G=0, hoàn thành bình phương từng biến để tìm tâm (−D/2,−E/2,−F/2) và R²=(D²+E²+F²)/4−G.
 
@@ -1161,7 +1161,7 @@ Từ phương trình x²+y²+z²+Dx+Ey+Fz+G=0, hoàn thành bình phương từn
 
 Muốn biết điểm nằm trong/trên/ngoài mặt cầu, so CM² với R² thay vì bấm căn. Nếu nhỏ hơn là nằm trong, bằng là trên, lớn hơn là ngoài. Điều này là bài kiểm tra vị trí tương đối, không tự cho biết điểm có 'phía trước' trên hình phối cảnh.
 
-> **Kiến thức cần ghi nhớ**
+> **PHƯƠNG PHÁP — Điểm trong, trên hay ngoài cầu**
 >
 > Muốn biết điểm nằm trong/trên/ngoài mặt cầu, so CM² với R² thay vì bấm căn.
 
@@ -1190,7 +1190,7 @@ Ngoài mặt vì khoảng cách bình phương 16>9.
 
 Nếu hai điểm A,B là hai đầu đường kính của mặt cầu, tâm C là trung điểm AB, bán kính R=AB/2. Không nhầm độ dài đường kính với bán kính; tính trung điểm và độ dài phải theo ba tọa độ.
 
-> **Kiến thức cần ghi nhớ**
+> **TÍNH CHẤT — Mặt cầu qua hai đầu đường kính**
 >
 > Nếu hai điểm A,B là hai đầu đường kính của mặt cầu, tâm C là trung điểm AB, bán kính R=AB/2.
 
@@ -1219,7 +1219,7 @@ Tâm O và bán kính 2 nên x²+y²+z²=4.
 
 Giao của mặt cầu bán kính R với mặt phẳng phụ thuộc khoảng cách d từ tâm đến mặt: d>R không có giao, d=R tiếp xúc một điểm, d<R cắt theo đường tròn bán kính √(R²−d²). Tâm đường tròn là chân vuông góc từ tâm mặt cầu đến mặt phẳng.
 
-> **Kiến thức cần ghi nhớ**
+> **CÔNG THỨC — Tiếp xúc và thiết diện mặt cầu**
 >
 > Giao của mặt cầu bán kính R với mặt phẳng phụ thuộc khoảng cách d từ tâm đến mặt: d>R không có giao, d=R tiếp xúc một điểm, d<R cắt theo đường tròn bán kính √(R²−d²).
 
@@ -1252,7 +1252,7 @@ Không, vì khoảng cách tâm–mặt d=6>R.
 
 **Mở rộng tích hợp sau B17, không dùng để kiểm tra Core B14 trước khi học mặt cầu.** Khi cắt mặt cầu bằng mặt phẳng, chỉ cần so khoảng cách d từ tâm C đến mặt phẳng với bán kính R: d>R không cắt, d=R tiếp xúc, d<R cho đường tròn bán kính √(R²−d²). Đây là ứng dụng nối hình học mặt phẳng và hình học mặt cầu, không phải định lí mới thay SGK B14.
 
-> **Kiến thức cần ghi nhớ**
+> **TÍNH CHẤT — Mặt cắt và khoảng cách đến mặt cầu**
 >
 > Chỉ dùng sau B17: với mặt cầu tâm C bán kính R>0 và mặt phẳng cách tâm d≥0, nếu d<R thiết diện là đường tròn bán kính \(\sqrt{R^2-d^2}\); d=R tiếp xúc một điểm; d>R không cắt.
 
