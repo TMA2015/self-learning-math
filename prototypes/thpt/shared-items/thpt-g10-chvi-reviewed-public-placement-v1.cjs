@@ -69,7 +69,7 @@ const placements=Object.freeze(canonical.flatMap(row=>{
     role:row.role,status:"PREVIEW_FORMATIVE_ONLY"}];
  // Potential reuse is a role, never a new item/answer/history record.
  if((row.role==="SGK_CORE"||row.role==="SGK_PRACTICE"||row.role==="SGK_CHAPTER_APPLICATION")&&
-    (row.lesson!=="16"||row.item_id==="THPT-CORE-QF01"))
+    (row.lesson!=="16"||row.item_id==="THPT-CORE-QF01"||row.role==="SGK_CHAPTER_APPLICATION"))
    r.push({placement_id:"TOPIC_PENDING:"+row.item_id,item_id:row.item_id,
      role:"TOPIC_PRACTICE",status:"PENDING_TOPIC_OUTCOME_REVIEW"});
  if(row.item_id==="THPT-G10-CHVI-APP-B3")
