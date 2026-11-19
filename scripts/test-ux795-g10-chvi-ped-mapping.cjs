@@ -39,8 +39,15 @@ for(const n of [15,16,17,18]){
   const p2=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHVI_B15_P2_EDITORIAL_NOTE_DELTA_R01_20261119.md"),"utf8");
   const p2f=k=>p2.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
-  assert.equal(p2f("CANDIDATE_B15_SOURCE_BLOB"),expected,
-   "B15 latest P2 editorial source must match signed scoped Delta A/B");
+  assert.equal(p2f("CANDIDATE_B15_SOURCE_BLOB"),"cc0b8a2d8aad63fc360246b07122094498634779",
+   "B15 P2 source remains locked");
+  const r02=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHVI_B15_OWNER_P2_READABILITY_FIGURE_R02_20261119.md"),"utf8");
+  const f02=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(f02("PREVIOUS_B15_SOURCE_BLOB"),p2f("CANDIDATE_B15_SOURCE_BLOB"),
+   "B15 R02 exact previous source");
+  assert.equal(f02("CANDIDATE_B15_SOURCE_BLOB"),expected,
+   "B15 latest visual-flow source must match signed R02 Delta");
  }
  assert.equal(blob,expected,"B"+n+" learner source matches one canonical current source");
  assert.equal(blob,candidateG10KnowledgeBlob(n),"B"+n+" Q18 router disagrees with source");
