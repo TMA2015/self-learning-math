@@ -22,6 +22,7 @@ jobs:
     outputs:
       changed_lessons: ${{ steps.impact.outputs.changed_lessons }}
       full_suite: ${{ steps.impact.outputs.full_suite }}
+      qa_smoke: ${{ steps.impact.outputs.qa_smoke }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -52,7 +53,9 @@ jobs:
   lesson-presentation:
     name: Changed lesson(s) Golden, CSS, MathJax, responsive, Q16
     needs: scope
-    if: ${{ needs.scope.outputs.full_suite == 'false' && needs.scope.outputs.changed_lessons != '' }}
+    # On a scoped QA implementation PR, smoke the last owner-P2 accepted B14
+    # even when global workflow changes legitimately trigger full R4.
+    if: ${{ (needs.scope.outputs.full_suite == 'false' && needs.scope.outputs.changed_lessons != '') || needs.scope.outputs.qa_smoke == 'true' }}
     runs-on: ubuntu-24.04
     timeout-minutes: 18
     steps:
@@ -70,7 +73,7 @@ jobs:
           npx playwright install chromium
       - name: AP1–AP5 and Q15/Q16 technical browser checks at 390/820/1440
         env:
-          SCOPED_LESSONS: ${{ needs.scope.outputs.changed_lessons }}
+          SCOPED_LESSONS: ${{ needs.scope.outputs.changed_lessons || 'docs/thpt-preview/sgk/chuong-v/bai-14.md' }}
           SCOPED_BASE_URL: http://127.0.0.1:8765
         run: |
           python -m http.server 8765 --bind 127.0.0.1 --directory site-thpt-preview >/tmp/scoped-golden-http.log 2>&1 &
