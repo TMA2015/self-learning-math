@@ -64,8 +64,12 @@ for(const n of [12,13,14]){
  if(n===13){
   assert.equal(b13field("BASELINE_LESSON_GIT_BLOB"),row.candidate,
    "B13 new source must extend exact prior ChV approved candidate");
-  assert(b13.includes("DELTA_C_REVIEW_HOLD")&&b13.includes("SOURCE_RECEIPT_S1_PDF_UNVERIFIED"),
-   "B13 academic review and original S1 PDF source remain explicit HOLD");
+  assert(b13.includes("Q18_OWNER_SELF_VERIFIED_ENRICHMENT_PASS")&&
+   b13.includes("S1_SCOPE_MATH_CONVENTION_VERIFIED")&&
+   b13.includes("PDF_INDEX_NOT_VERIFIED_NON_BLOCKING")&&
+   b13.includes("SBT_REFERENCE_GAP_DOCUMENTED")&&
+   b13.includes("P0=0; P1=0")&&b13.includes("AUTHOR_SIGNOFF"),
+   "B13 current receipt must carry outcome-proved Q18 self-QA and transparent S1 provenance");
  }
  if(n===12)assert.equal(d("B12_BASELINE_SOURCE_BLOB"),r12("B12_R01_SOURCE_BLOB"),
   "B12 historic reviewed source SHA must remain immutable");
