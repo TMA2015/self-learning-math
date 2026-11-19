@@ -132,8 +132,14 @@ const blob=data=>{
     const color=k=>b12gold.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
     assert.equal(color("GOLDEN_CSS_PREVIOUS_BLOB"),b11f("CSS_B11_SCOPED_APPEND_BLOB"),
      "B10/B11 previously accepted CSS baseline exact");
-    assert.equal(blob(css),color("GOLDEN_CSS_CURRENT_BLOB"),
-     "B12 Golden semantic CSS must match scoped B10 palette receipt");
+    const b13palette="/* G10 ChV B13 · exact B10/B12 Golden palette";
+    const b13At=css.toString("utf8").indexOf(b13palette);
+    assert(b13At>0&&css.toString("utf8").indexOf(b13palette,b13At+1)<0,
+     "B13 must be exactly one isolated scoped palette appendix");
+    assert.equal(blob(css.toString("utf8").slice(0,b13At-1)),color("GOLDEN_CSS_CURRENT_BLOB"),
+     "B12 owner-accepted Golden CSS must be byte-identical prefix");
+    assert.equal(blob(css),"a4fa446f5437ae5054627700434fb101524827c4",
+     "B13 Golden CSS must match new signed candidate Q18 SHA");
    const b12cut=fullCss.indexOf("/* G10 ChV B12 · OWNER P2 Golden parity");
     assert(b12cut>cutB11&&fullCss.indexOf("/* G10 ChV B12 · OWNER P2 Golden parity",b12cut+1)<0,
      "B12 scoped palette appended after B10 accepted CSS exactly once");
