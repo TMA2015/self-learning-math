@@ -496,7 +496,17 @@ async function ready(page,path){
   assert.equal(page.url(),b16Route,"SGK B16 Core action must not navigate to a legacy page");
   await b16Modal.locator("[data-thpt-modal-close]").click();
   await ready(page,"sgk/core/ham-so-bac-hai/");
-  assert((await page.locator('[data-thpt-core] .thpt-r4-eyebrow').textContent()).includes("THPT-CORE-QF01"),"Canonical Core ID mismatch");
+  assert.equal(await page.locator('[data-thpt-core] [data-thpt-canonical-item="THPT-CORE-QF01"]').count(),1,
+    "Original QF01 is one canonical Core item, not repeated");
+   assert.equal(await page.locator('[data-thpt-core] [data-thpt-canonical-item]').count(),6,
+    "B16 SGK must contain six independent Core questions");
+   assert.equal(await page.locator('[data-thpt-core] [data-thpt-canonical-item]:visible').count(),1,
+    "One question must be visible at a time in Golden Core");
+   await page.locator('[data-thpt-core] button[aria-label="Đến câu 2 trong 6"]').click();
+   assert(await page.locator('[data-thpt-canonical-item="THPT-G10-B16-C01"]').isVisible(),
+    "B16 Core pagination must lead to the second canonical item");
+   assert(await page.locator('[data-thpt-core] [data-thpt-canonical-item="THPT-CORE-QF01"]').isHidden(),
+    "Previous Core item must be hidden until learner navigates back");
   for(const area of ["kien-thuc","luyen-tap","tu-kiem-tra"]){
     await ready(page,"chuyen-de/ham-so/"+area+"/");
     const nav=page.locator(".thpt-r4-topic-steps");
@@ -636,7 +646,19 @@ async function ready(page,path){
   await exerciseModal.locator("[data-thpt-modal-close]").click();
   await page.locator('[data-thpt-open-quiz="b16-practice"]').click();
   await exerciseModal.locator('[data-thpt-practice] input[value="1,3"]').waitFor();
-  assert((await exerciseModal.locator("[data-thpt-practice]").count())===1,"Practice modal must import unchanged topic practice source");
+  assert.equal(await exerciseModal.locator("[data-thpt-practice]").count(),1,
+   "Practice modal must import ONE B16 SGK canonical bank, not Topic");
+  assert.equal(await exerciseModal.locator("[data-thpt-practice] [data-thpt-canonical-item]").count(),6,
+   "Practice modal must contain six independent B16 SGK items");
+  assert.equal(await exerciseModal.locator("[data-thpt-practice] [data-thpt-canonical-item]:visible").count(),1,
+   "Practice modal must show only one question at a time");
+  assert.equal(await exerciseModal.locator('[data-thpt-canonical-item="PRACTICE-THPT-DEMO-01"]').count(),0,
+   "Topic demo must never appear inside SGK B16 Practice");
+  await exerciseModal.locator('[data-thpt-practice] button[aria-label="Đến câu 3 trong 6"]').click();
+  assert(await exerciseModal.locator('[data-thpt-canonical-item="THPT-G10-B16-P02"]').isVisible(),
+   "Practice modal pagination must keep original unique canonical items");
+  assert.equal(await exerciseModal.locator('[data-thpt-canonical-item="THPT-G10-B16-P02"] details[open]').count(),0,
+   "Formative hints and solutions must not open automatically");
   await exerciseModal.locator("[data-thpt-modal-close]").click();
   await page.locator('[data-thpt-open-quiz="b17-practice"]').click();
   await exerciseModal.locator(".thpt-r4-modal-cumulative-button").click();
