@@ -129,6 +129,16 @@ Khi tăng gấp đôi một độ dời, mũi tên dài gấp đôi nhưng vẫn
 
 > **TÍNH CHẤT — Nhân vectơ với một số và xét cùng phương.** Với k thực, độ dài của ku bằng |k|·|u|. k>0 giữ chiều, k<0 đảo chiều, k=0 cho vectơ-không. Quy tắc k(u+v)=ku+kv đúng ở cả mặt phẳng và không gian. Với u,v khác không, v=ku thì chúng cùng phương; dấu k cho biết cùng hay ngược hướng.
 
+Khi cần mô tả một độ dời theo **hai phương đã biết**, ta có thể tách nó thành hai vectơ thành phần. Hãy đặt \(\vec a\) và \(\vec b\) cùng gốc, khác \(\vec0\) và **không cùng phương**. Qua đầu mút của \(\vec u\), kẻ các đường song song với hai phương ấy để dựng hình bình hành. Hai cạnh của hình bình hành cho các vectơ thành phần cùng phương \(\vec a\), \(\vec b\), nên có thể viết \(\vec u=x\vec a+y\vec b\). Việc hai phương không song song là điều kiện quyết định: khi đã chọn chúng, vị trí đầu mút của \(\vec u\) xác định đúng một cặp hệ số \((x,y)\). Trong mặt phẳng, điều này đúng với **mọi vectơ \(\vec u\), kể cả vectơ-không**.
+
+> **ĐỊNH LÝ — Phân tích một vectơ theo hai vectơ không cùng phương.** Cho hai vectơ \(\vec a,\vec b\) **không cùng phương** trong cùng một mặt phẳng. Khi đó, với mỗi vectơ \(\vec u\) trong mặt phẳng ấy, tồn tại **duy nhất** một cặp số thực \((x,y)\) sao cho
+>
+> \[\vec u=x\vec a+y\vec b.\]
+>
+> Đây là tính chất dành cho **hai phương độc lập trong một mặt phẳng**. Không khẳng định hai vectơ bất kỳ có thể biểu diễn mọi vectơ trong không gian ba chiều.
+
+Để **tự kiểm cách phân tích**, xét \(\vec a=(1,1)\), \(\vec b=(1,-1)\), \(\vec u=(5,1)\). Từ \(\vec u=x\vec a+y\vec b\) suy ra \(x+y=5\), \(x-y=1\); giải được \(x=3,y=2\), nên \(\vec u=3\vec a+2\vec b\). Kiểm lại theo từng tọa độ: \(3(1,1)+2(1,-1)=(5,1)\). Nếu chọn \(\vec a=(1,0),\vec b=(2,0)\), hai vectơ **cùng phương**, thì với \(\vec u=(1,0)\) có vô số cặp \((x,y)\) thỏa \(x+2y=1\), còn với \(\vec u=(0,1)\) không có cặp nào; vì thế không được bỏ điều kiện **không cùng phương**. Trên hình minh họa quy tắc hình bình hành, đọc hai cạnh thành phần rồi kiểm chúng cộng thành đường chéo, không suy hệ số chỉ từ độ dài mũi tên vẽ không theo tỉ lệ.
+
 **Ví dụ**
 
 **Đề bài:** Với u=(2,−3), tính v=−2u, độ dài và hướng của v so với u.
