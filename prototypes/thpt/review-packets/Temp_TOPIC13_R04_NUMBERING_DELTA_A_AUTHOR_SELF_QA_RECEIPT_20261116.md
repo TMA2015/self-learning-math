@@ -9,8 +9,8 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 2fe260f6da3f4eedec7d9b8c93d683915493cc1e
-ACADEMIC_SOURCE_BLOB: 2fe260f6da3f4eedec7d9b8c93d683915493cc1e
+SOURCE_BLOB: 4ad0c211c61f858cd9f7ccf9cc8bd9afb57ffa54
+ACADEMIC_SOURCE_BLOB: 4ad0c211c61f858cd9f7ccf9cc8bd9afb57ffa54
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R03_STUDENT_FIRST_52_CANONICAL_VISIBLE_20261116.md
@@ -33,7 +33,7 @@ PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
 P2: 0
-AUTHOR_SIGNOFF: TOPIC13_R07_20261118_2fe260f6da3f4eedec7d9b8c93d683915493cc1e_AUTHOR_SELF_VERIFIED
+AUTHOR_SIGNOFF: TOPIC13_R07_20261118_4ad0c211c61f858cd9f7ccf9cc8bd9afb57ffa54_AUTHOR_SELF_VERIFIED
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_IMPORTED: 0
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
@@ -85,7 +85,7 @@ Source currently `9a558f553bd6a4a58701a6bae490717ba5a52540` in the existing Topi
 
 ## R07 · Current source/canonical and direct math/PED closure (18/11/2026)
 
-- **Effective learner:** one file `prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md`, Git blob `2fe260f6da3f4eedec7d9b8c93d683915493cc1e`; former R04 `4722b4ab923e162733a100610c3d825cbe9b67f5` historical only. **Active original NEW20 bank** `c74505ba59d047c19943c2309f5fd7c033ac9563`; predecessor `136bd4552118e5dba6b18b58965be7d37878e9df` historical.
+- **Effective learner:** one file `prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md`, Git blob `4ad0c211c61f858cd9f7ccf9cc8bd9afb57ffa54`; former R04 `4722b4ab923e162733a100610c3d825cbe9b67f5` historical only. **Active original NEW20 bank** `c74505ba59d047c19943c2309f5fd7c033ac9563`; predecessor `136bd4552118e5dba6b18b58965be7d37878e9df` historical.
 - **Vector/length Q03/Q04/Q13 & D6:** exact changed teaching lines O07/O08/O11/O14/O15 and source-owned P01/P02/P11/W03 show arrows and distinguish a coordinate tuple from a nonnegative length. No change to integer/numeric calculations. W03 rubric now `(AB vector)·(AC' vector)=9` and `|AC' vector|=13`, 7 points; only W03 canonical `content_version=2`. Direct computations in MATH_VERIFICATION above.
 - **Q15 canonical:** 52 original IDs (20 G10 owner PR #750, 12 G12, 20 Topic), 52 unique placements; all 20 current NEW20 `**Đề:**` text lines match learner Practice source; no shadow library. All 16 public replay IDs match Practice, six only re-typeset mathematical vector notation without changing questions' requested quantities.
 - **Q16 assessment:** 68 opening and 68 closing disclosures, 16 Self Check question stems with zero embedded `<details>` and no protected keys/score; no official Topic Readiness or Mastery. Four SHA-retained SVGs in five placements, not newly generated.
@@ -97,5 +97,9 @@ Source currently `9a558f553bd6a4a58701a6bae490717ba5a52540` in the existing Topi
 
 - After the earlier source-locked mathematical Q03/Q04/Q15 fixes, the final read-through against the same owner-approved [Issue #864](https://github.com/TMA2015/self-learning-math/issues/864) uncovered two **presentation-only** defects: the learner file had **zero** readable final S1 source-footnotes (item 12), and 48 SGK/new Practice reveal labels said `Đối chiếu lời giải` while 4 Written labels said `Đối chiếu và rubric /7` (item 9). This was **not** a reason to reopen mathematical verification or NotebookLM. No extra standard/contract created.
 - **Exact source changes:** `48` Practice `<summary>` captions now `Lời giải`, `4` Written captions now `Lời giải và rubric`; the 16 Knowledge Vận dụng opt-in labels remain `Đối chiếu`. One human-readable source line appended **at the very end** of the Topic only, without technical page numbers, Git SHA or Source Receipt text: “SGK và SBT Toán 10, Tập Một, Chương IV; SGK và SBT Toán 12, Tập Một, Chương II — bộ Kết nối tri thức với cuộc sống”. 20 equivalent optional-reveal labels inside the ONE NEW20 canonical bank normalized in place as well, with unchanged questions, answers, mathematical steps and rubric allocations. All public IDs untouched.
-- Final active learner Git blob `2fe260f6da3f4eedec7d9b8c93d683915493cc1e`, single NEW20 bank `c74505ba59d047c19943c2309f5fd7c033ac9563`. Direct recheck of all `52/52` canonical source markers, `20/20` new Practice stem rows matching the bank, `16/16` public Self Check question IDs, exactly `68/68` opening and closing details, 4 real SVG assets/five placements. **Source footer count exactly 1 at end**, zero old solution-caption strings or student-visible author metadata. No official Final Submit or Mastery behavior changed.
+- Final active learner Git blob `4ad0c211c61f858cd9f7ccf9cc8bd9afb57ffa54`, single NEW20 bank `c74505ba59d047c19943c2309f5fd7c033ac9563`. Direct recheck of all `52/52` canonical source markers, `20/20` new Practice stem rows matching the bank, `16/16` public Self Check question IDs, exactly `68/68` opening and closing details, 4 real SVG assets/five placements. **Source footer count exactly 1 at end**, zero old solution-caption strings or student-visible author metadata. No official Final Submit or Mastery behavior changed.
 - **Verdict on this last change:** `DELTA_A_UI` (naming and visible source footnote only), author source QA PASS. The substantive earlier `DELTA_C_ACADEMIC_MATERIAL` vector/length and W03 mathematics verified above persists without modification; independent NotebookLM not required merely to re-label summary controls. Full original historical independent SGK review is not extended to Topic by this correction.
+
+
+<!-- TOP13_OWNER_EDITORIAL_DELTA_A_20261119 -->
+**Owner editorial ΔA 19/11/2026:** 13 already-authored mathematical statements about vectors, subtraction, scalar products and Oxyz are given typed visible definition/rule/formula/method captions; 3 existing formal callouts preserved. Learner source Git blob before `2fe260f6da3f4eedec7d9b8c93d683915493cc1e` and after `4ad0c211c61f858cd9f7ccf9cc8bd9afb57ffa54`. Stripping exactly 13 new prefixes reproduces original bytes; original formula, hypotheses, examples, 16 Vận dụng/Đối chiếu, 52 canonical IDs/keys, Written rubrics, figure links and selfcheck all unchanged. This is explicit Q03 visual classification, NOT introduction of new theorem/math. Owner retains AUTHORING CONTENT_READY; current existing Q18 author self-equivalent, no NotebookLM re-review/site merge/deploy.
