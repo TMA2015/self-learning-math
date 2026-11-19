@@ -81,10 +81,32 @@ for(const n of [15,16,17,18]){
  assert.equal(answers(s).length,tries[n],"B"+n+" original answer count");
  if(n!==15){
   const nowHelp=helpers(s),oldHelp=helpers(old);
-  const normalized=list=>list.map(z=>({id:z.id,
-   body:z.body.replace(/\?\?\? tip "[^"]+"/,"??? tip \"CANONICAL_D6\"")}));
+  const normalized=list=>list.map(z=>{
+   let body=z.body.replace(/\?\?\? tip "[^"]+"/,'??? tip "CANONICAL_D6"');
+   if(n===16){
+    // Allow only learner-specific G2 wording in self diagnosis and selected
+    // return-to-original-TRY paths; preserve all original source mathematics,
+    // error recognition, correction procedures and the two canonical links.
+    body=body.replace(/<li><strong>Tự chẩn đoán:<\/strong>[\s\S]*?<\/li>/,
+     "<li><strong>Tự chẩn đoán:</strong> CANONICAL_DIAGNOSIS</li>");
+    if(["HELP-G10-CHVI-TRY10","HELP-G10-CHVI-TRY06",
+        "HELP-G10-CHVI-TRY09"].includes(z.id))
+     body=body.replace(/<li><strong>Luyện lại:<\/strong>[\s\S]*?<\/li>/,
+      "<li><strong>Luyện lại:</strong> CANONICAL_REDIRECT</li>");
+   }
+   return {id:z.id,body};
+  });
   assert.deepEqual(n===16?normalized(nowHelp):nowHelp,n===16?normalized(oldHelp):oldHelp,
-   "B"+n+" original D6 recovery bodies and IDs must be preserved; B16 may relabel only");
+   "B"+n+" D6 math, IDs, error cause, correction steps and canonical links must remain");
+  if(n===16){
+   assert.equal(nowHelp.length,5);
+   for(const helper of nowHelp){
+    assert(!helper.body.includes("Em có đang mắc đúng lỗi này"),
+     "B16 must show real student-specific diagnoses rather than repeated generic boilerplate");
+    assert(!helper.body.includes("Quay lại phần kiến thức liên quan ngay trong bài"),
+     "B16 must return the learner to a specific relevant example or canonical item");
+   }
+  }
   assert.equal(nowHelp.length,tries[n],"B"+n+" D6 body count");
  }else{
   assert.equal((s.match(/^    \?\?\? tip "4\.[1-5]\. /gm)||[]).length,5,
