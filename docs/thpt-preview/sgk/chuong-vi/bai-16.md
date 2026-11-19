@@ -176,7 +176,7 @@
 
 
     <figure class="thpt-r4-plot thpt-r4-concept-figure" data-thpt-quadratic-plot>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" role="img" aria-labelledby="b16-plot-title b16-plot-description" data-plot-a="1" data-plot-b="-4" data-plot-c="3">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" width="760" height="440" style="display:block;width:100%;max-width:100%;height:auto" role="img" aria-labelledby="b16-plot-title b16-plot-description" data-plot-a="1" data-plot-b="-4" data-plot-c="3">
     <title id="b16-plot-title">Đồ thị hàm số y = x² − 4x + 3</title>
     <desc id="b16-plot-description">Parabol mở lên, đỉnh I(2;−1), trục đối xứng x=2. Đồ thị cắt Ox tại (1;0) và (3;0), cắt Oy tại (0;3). Hai nghiệm đối xứng qua x=2.</desc>
     <rect x="1" y="1" width="758" height="438" rx="18" fill="#f8fbff" stroke="#d1dff1"/>
