@@ -219,6 +219,8 @@ assert(drawable&&/<(?:path|polyline)\b/.test(drawable)&&
 
 assert(/data-plot-a="1" data-plot-b="-4" data-plot-c="3"/.test(fig16),
  "B16 chart coefficients must match y=x²−4x+3 exactly");
+assert(fig16.includes('data-r4-plotted="1"'),
+ "B16 fully static graph must opt out of R4 legacy JS injection to avoid duplicated curve and 8 point markers");
 const curve=(fig16.match(/<path d="(M[^"]+)" fill="none" stroke="#2853bb"/)||[])[1];
 assert(curve,"B16 missing visible parabolic blue curve (not merely axes)");
 const sampled=[...curve.matchAll(/[ML]([\d.]+) ([\d.]+)/g)]
