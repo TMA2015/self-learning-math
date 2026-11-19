@@ -70,9 +70,13 @@ const b17=read(ux+"G10_CHVI_B17_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261119.md")
 assert.equal(field(b17,"BASELINE_PUBLISHED_B17_SOURCE_BLOB"),
  "1a3481ee2020f48e924dae5e8b4f5779b3a2d88b",
  "B15 regression preserves B17 previous published source in its signed receipt");
-assert.equal(blob(read("docs/thpt-preview/sgk/chuong-vi/bai-17.md")),
+const b17r02=read(ux+"G10_CHVI_B17_DISPLAY_MATH_SOURCE_EQUIVALENT_R02_20261120.md");
+assert.equal(field(b17r02,"PREVIOUS_B17_SOURCE_BLOB"),
  field(b17,"CANDIDATE_B17_SOURCE_BLOB"),
- "B17 new source must match its own receipt; B15/12–14/18 remain frozen");
+ "B17 layout-only R02 must derive directly from R01 source");
+assert.equal(blob(read("docs/thpt-preview/sgk/chuong-vi/bai-17.md")),
+ field(b17r02,"CANDIDATE_B17_SOURCE_BLOB"),
+ "B17 source must match R02 while B15/12–14/18 remain frozen");
 assert.equal(field(b16,"BASELINE_PUBLISHED_B16_SOURCE_BLOB"),
  "4ddf9c449f92a9f48bace5a3f9b84186bf33af20",
  "B16 baseline must match historical accepted source, not overwrite it");
