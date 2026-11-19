@@ -10,7 +10,7 @@
 **DELTA:** `DELTA_C_ACADEMIC_MATERIAL` for concept-first rationale and proof of sign theorem, learner prose and D6 explanations; `DELTA_A_UI` for five Vận dụng labels and more specific HELP headings.  
 **MAIN_BASE_COMMIT:** `15efa66fb964c5b8b014be44677290663c297686`  
 **BASELINE_PUBLISHED_B17_SOURCE_BLOB:** `1a3481ee2020f48e924dae5e8b4f5779b3a2d88b`  
-**CANDIDATE_B17_SOURCE_BLOB:** `8d849fc02f4880fdfe42c490e4ebeacb13a21aa6`  
+**CANDIDATE_B17_SOURCE_BLOB:** `4a54c34edc296237e447c97af53326a4ce78632a`  
 **SOURCE_PATH:** `docs/thpt-preview/sgk/chuong-vi/bai-17.md` — same canonical source; no duplicate versioned student manuscript.  
 **UNMODIFIED_B17_REVIEWED_PUBLIC_BANK:** `docs/assets/javascripts/thpt-chvi-reviewed-formative-v1.js`, blob `1223d4c2b574433479c5d222dbeff363718ee4bb`.  
 **UNMODIFIED_SHARED_WRITTEN:** `docs/thpt-preview/thu-vien/tu-luan.md`, blob `d96deee9b440076954d6f44b3007ea083fdd6eb0`.  
