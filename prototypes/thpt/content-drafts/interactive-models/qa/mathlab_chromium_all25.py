@@ -140,9 +140,17 @@ def main():
                       "visual_sized":all(x["width"]>0 and x["height"]>0 for x in initial["visual"]),
                       "math_condition":specific(page,rec["slot"])
                     })
+                    before_text=page.locator("body").inner_text()
+                    before_graph=page.evaluate("""() => [...document.querySelectorAll('canvas,svg')]
+                      .map(x=>x.tagName.toLowerCase()==='canvas'?x.toDataURL():x.outerHTML).join('||')""")
                     v["interaction"]=page.evaluate(INTERACT)
-                    page.wait_for_timeout(90)
+                    page.wait_for_timeout(120)
                     final=page.evaluate(CHECK);v["final"]=final
+                    after_text=page.locator("body").inner_text()
+                    after_graph=page.evaluate("""() => [...document.querySelectorAll('canvas,svg')]
+                      .map(x=>x.tagName.toLowerCase()==='canvas'?x.toDataURL():x.outerHTML).join('||')""")
+                    v["assertions"]["interaction_visible_effect"]=(
+                        before_text!=after_text or before_graph!=after_graph)
                     v["assertions"]["no_js_error"]=not errors
                     v["assertions"]["no_overflow_after_input"]=final["scrollWidth"]<=w+3
                     v["assertions"]["no_offscreen_controls_after"]=not final["offscreenControls"]
