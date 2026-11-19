@@ -14,7 +14,7 @@ PED_VERIFICATION: Verified current 16 meaning-first lessons, 15 corrected D6 des
 CANONICAL_Q15: 46 immutable original G11 IDs plus 20 new original Topic IDs =66 unique real display-only item placements, two frozen bank source hashes, 16 public question-only replay IDs, no duplicate canonical owner.
 ASSESSMENT_Q16: Public replays are CLIENT_SELF_CHECK_NO_MASTERY only; no private RD1 exposed, official Final Submit, independent Topic Readiness or Skill Mastery produced.
 SOURCE_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: ab88d7ed3b52713e4a80779c22dc75a67c3cccb1
+SOURCE_BLOB: 787a5a15129785e1f8226314606052afa1f6000b
 BASELINE_R05_SOURCE_BLOB: dd3af68f681eba9a7b75040d9490815f81efdd6b
 BASELINE_R05_Q18_RECEIPT_BLOB: 8f4d721ec8ab5b08baaf0a19c7aeaf2aa9cf454f
 R06_PED6_TARGETED_RECEIPT_BLOB: 2d7686a55f2196e7422bf30dfd6d0dc3fcc10e83
@@ -53,3 +53,7 @@ R05 student blob `dd3af68f681eba9a7b75040d9490815f81efdd6b` and author self-veri
 AUTHOR_SIGNOFF: TOP06_R06_16_OUTCOMES_66_CANONICAL_15_PED6_CURRENT_AUTHOR_SELF_Q18_20261118
 VERDICT: ACADEMIC_PED_AUTHOR_SELF_VERIFIED_CURRENT_R06_SOURCE
 RELEASE_AUTHORIZATION: NO
+
+
+<!-- TOP06_OWNER_EDITORIAL_DELTA_A_20261119 -->
+Owner-approved ΔA 19/11: 13 previously unmarked formal trigonometric descriptions are shown with typed **Định nghĩa/Tính chất/Công thức/Phương pháp/Điều kiện** labels; 3 existing formal boxes untouched, 4 redundant discovery subheadings removed. Same learner source path, old blob `ab88d7ed3b52713e4a80779c22dc75a67c3cccb1`, current `787a5a15129785e1f8226314606052afa1f6000b`. Reverse label diff certifies all math/limits, angle values, domain conditions, 16 independent Ví dụ/Đề/Lời giải, 16 Vận dụng/Đối chiếu, SVG, canonical banks, private RD1 rules unchanged. Q18 author source-equivalence self checked; `CONTENT_READY` preserved, no new NotebookLM/release/merge.
