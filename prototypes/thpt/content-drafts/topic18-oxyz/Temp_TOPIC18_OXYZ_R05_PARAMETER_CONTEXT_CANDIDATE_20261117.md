@@ -141,6 +141,12 @@ Tích vô hướng đo phần 'đi cùng phương' của hai vectơ; nó dương
 >
 > Hai vectơ khác không có tích vô hướng \(\vec u\cdot\vec v=|\vec u||\vec v|\cos\theta\); tích bằng 0 khi chúng vuông góc. Không định nghĩa góc với vectơ-không.
 
+Từ cách tính tích vô hướng theo góc, ta có thể suy ra các quy tắc biến đổi đại số. Khác với phép nhân hai số, tích vô hướng của hai vectơ cho ra **một số thực**, nên kết quả không phải một vectơ. Những tính chất dưới đây giúp khai triển biểu thức có tổng nhiều lực hoặc độ dời, giống việc dùng phân phối trong đại số.
+
+> **TÍNH CHẤT — Tích vô hướng của các vectơ trong không gian**
+>
+> Với các vectơ \(\vec u,\vec v,\vec w\) bất kỳ và số thực \(k\), ta có **giao hoán** \(\vec u\cdot\vec v=\vec v\cdot\vec u\); **nhân với một số** \((k\vec u)\cdot\vec v=\vec u\cdot(k\vec v)=k(\vec u\cdot\vec v)\); và **phân phối** \(\vec u\cdot(\vec v+\vec w)=\vec u\cdot\vec v+\vec u\cdot\vec w\). Các quy tắc này vẫn đúng khi một vectơ bằng \(\vec0\); riêng công thức \(\cos\theta=\frac{\vec u\cdot\vec v}{|\vec u||\vec v|}\) chỉ dùng nếu cả \(\vec u,\vec v\) đều khác \(\vec0\).
+
 
 **Ví dụ**
 
