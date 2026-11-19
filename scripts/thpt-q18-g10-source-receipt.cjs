@@ -507,9 +507,11 @@ function expectedG10KnowledgeBlob(lesson,legacy){
     "B13 current source must derive from signed historic ChV editorial candidate");
    assert(/^[a-f0-9]{40}$/.test(next||"")&&next!==baseline,
     "B13 affected Delta C source must have a distinct pinned current SHA");
-   assert(t.includes("DELTA_C_ACADEMIC_MATERIAL_AFFECTED_REVIEW_HOLD")&&
-    t.includes("SOURCE_RECEIPT_S1_PDF_UNVERIFIED")&&
-    t.includes("NOT_MERGED"),"B13 provisional source receipt must declare real reviewer and S1 HOLD");
+   assert(t.includes("Q18_OWNER_SELF_VERIFIED_ENRICHMENT_PASS")&&
+    t.includes("S1_SCOPE_MATH_CONVENTION_VERIFIED")&&
+    t.includes("SBT_REFERENCE_GAP_DOCUMENTED")&&
+    t.includes("PDF_INDEX_NOT_VERIFIED_NON_BLOCKING")&&
+    t.includes("NOT_MERGED"),"B13 signed self-QA must state source scope/math PASS and unverified PDF-index provenance without asserting reviewer PASS");
    return {baseline,next,css:f("CANDIDATE_GOLDEN_CSS_BLOB"),
     previousCss:f("G10_B01_B12_FROZEN_CSS_BLOB")};
   };
