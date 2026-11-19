@@ -147,7 +147,7 @@
 
     ### 2.2. Tứ phân vị
 
-    Trung vị toàn mẫu là \(Q_2\). Tiếp tục tìm trung vị của nửa dưới, nửa trên để có hai mốc bổ sung. Xem lại hình có **hai số 3** ở tab Khám phá §1.2.3 trước khi làm theo công thức.
+    Với mẫu có **ít nhất hai quan sát** (\(n\ge2\)), trung vị toàn mẫu là \(Q_2\). Tiếp tục tìm trung vị của nửa dưới và nửa trên (đều không rỗng) để có hai mốc bổ sung. Với \(n=1\), quy tắc chia nửa đang học **không xác định \(Q_1,Q_3\)** vì hai nửa rỗng. Xem lại hình có **hai số 3** ở tab Khám phá §1.2.3 trước khi làm theo công thức.
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Ba tứ phân vị:</strong> \(Q_1\) là trung vị của nửa dưới; \(Q_2\) là trung vị toàn mẫu; \(Q_3\) là trung vị của nửa trên, sau khi đã sắp xếp. Luôn phải có \(Q_1\le Q_2\le Q_3\).</div>
 
