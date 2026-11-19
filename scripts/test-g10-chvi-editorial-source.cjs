@@ -57,8 +57,14 @@ for(const n of [15,16,17,18]){
   const field=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(field("BASELINE_PUBLISHED_B17_SOURCE_BLOB"),uxrow.candidate,
    "B17 must follow unchanged historical UX source");
-  assert.equal(field("CANDIDATE_B17_SOURCE_BLOB"),expected,
-   "B17 source must match exact candidate receipt");
+  const r01=field("CANDIDATE_B17_SOURCE_BLOB");
+  const r02=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHVI_B17_DISPLAY_MATH_SOURCE_EQUIVALENT_R02_20261120.md"),"utf8");
+  const next=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(next("PREVIOUS_B17_SOURCE_BLOB"),r01,
+   "B17 Q18 display R02 must extend original R01 immutable source");
+  assert.equal(next("CANDIDATE_B17_SOURCE_BLOB"),expected,
+   "B17 current source must match signed R02 display-only candidate");
  }else{
   const receipt=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHVI_B15_OWNER_Q18_KNOWLEDGE_ENRICHMENT_20261119.md"),"utf8");
