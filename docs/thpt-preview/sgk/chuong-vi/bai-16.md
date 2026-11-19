@@ -70,16 +70,6 @@
 
     Nếu a<0, parabol mở xuống nên tăng tới h rồi giảm sau h, giá trị không vượt k. Nếu a>0 thì ngược lại, luôn không nhỏ hơn k. Vì \((x-h)^2\ge0\), đây là chứng minh đại số cho tập giá trị chứ không chỉ nhìn tranh. Không đảo chiều tăng/giảm khi a âm; đầu mút h có thể nêu bằng dấu ngoặc nhất quán, và khi mô hình thực tế có miền hẹp thì phải xét đúng miền đó.
 
-    **Vận dụng.** Với \(f(x)=-2(x+1)^2+8\) trên \(\mathbb R\), tìm giá trị lớn nhất, tập giá trị, khoảng đồng biến/nghịch biến.
-
-    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHVI-TRY09" data-outcome-id="B16_OUT_04" hidden></span>
-
-    ??? question "Đối chiếu"
-
-        <div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> GTLN 8 tại x=−1, <span class="arithmatex">\(T=(-\infty;8]\)</span>; đồng biến trên <span class="arithmatex">\((-\infty;-1)\)</span>, nghịch biến trên <span class="arithmatex">\((-1;+\infty)\)</span>.</p><p><strong>Vì sao:</strong> Vì −2(x+1)²≤0. Trục x=−1 là ranh giới đổi chiều, parabol mở xuống; mọi y≤8 đều đạt được.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
-
-
-
     - Với \(a>0\): parabol mở lên, hàm giảm trên \(( -\infty;h )\), tăng trên \((h;+\infty)\), đạt **GTNN** \(k\) tại \(x=h\).
     - Với \(a<0\): parabol mở xuống, hàm tăng trên \(( -\infty;h )\), giảm trên \((h;+\infty)\), đạt **GTLN** \(k\) tại \(x=h\).
 
@@ -92,6 +82,13 @@
     <tr><td>\(a&lt;0\)</td><td>\((h;+\infty)\)</td><td>\((-\infty;h)\)</td><td>GTLN \(k\)</td><td>\(\left(-\infty;-\frac{\Delta}{4a}\right]\)</td></tr>
     </tbody></table></div>
 
+    **Vận dụng.** Với \(f(x)=-2(x+1)^2+8\) trên \(\mathbb R\), tìm giá trị lớn nhất, tập giá trị, khoảng đồng biến/nghịch biến.
+
+    <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHVI-TRY09" data-outcome-id="B16_OUT_04" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        <div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> GTLN 8 tại x=−1, <span class="arithmatex">\(T=(-\infty;8]\)</span>; đồng biến trên <span class="arithmatex">\((-\infty;-1)\)</span>, nghịch biến trên <span class="arithmatex">\((-1;+\infty)\)</span>.</p><p><strong>Vì sao:</strong> Vì −2(x+1)²≤0. Trục x=−1 là ranh giới đổi chiều, parabol mở xuống; mọi y≤8 đều đạt được.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
 
 
 
@@ -103,16 +100,16 @@
 
     Đồ thị \(y=a(x-h)^2+k\) đối xứng quanh x=h. Vẽ theo thứ tự: (1) đỉnh, (2) trục, (3) giao trục và điểm đối xứng cần thiết, (4) nối đường cong theo dấu a. Không thể nối các điểm bất kỳ thành parabol chuẩn.
 
-    **Bảng giá trị giúp em kiểm tra các điểm trước khi vẽ.** Với hàm số \(f(x)=x^2-4x+3=(x-2)^2-1\), trước hết xác định trục đối xứng \(x=2\). Chọn các giá trị \(x\) nằm đối xứng hai bên số 2, rồi thay từng giá trị vào công thức:
+    Để kiểm tra các điểm trước khi vẽ, em có thể lập bảng giá trị. Với hàm số \(f(x)=x^2-4x+3=(x-2)^2-1\), trước hết xác định trục đối xứng \(x=2\). Chọn các giá trị \(x\) nằm đối xứng hai bên số 2, rồi thay từng giá trị vào công thức:
 
     <div class="thpt-g10-table-scroll"><table class="thpt-g10-knowledge-table">
     <thead><tr><th>\(x\)</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th></tr></thead>
     <tbody><tr><td>\(f(x)\)</td><td>3</td><td>0</td><td>−1</td><td>0</td><td>3</td></tr></tbody>
     </table></div>
 
-    **Đọc bảng như thế nào?** Các cặp \(x=0,4\) cùng cho \(y=3\); \(x=1,3\) cùng cho \(y=0\). Điểm chính giữa \((2;-1)\) là đỉnh thấp nhất. Vì thế các điểm trên hình phải đối xứng qua đường \(x=2\), chứ không chỉ đặt cho giống một đường cong.
+    Trong bảng, các cặp \(x=0,4\) cùng cho \(y=3\); \(x=1,3\) cùng cho \(y=0\). Điểm chính giữa \((2;-1)\) là đỉnh thấp nhất. Vì thế các điểm trên hình phải đối xứng qua đường \(x=2\), chứ không chỉ đặt cho giống một đường cong.
 
-    **Vì sao không chỉ nối năm điểm bằng đoạn thẳng?** Bảng chỉ cung cấp các điểm kiểm chứng; đồ thị hàm bậc hai là **đường cong parabol** đi qua chúng, có trục đối xứng và chiều mở xác định. Nếu một cặp giá trị đối xứng cho hai tung độ khác nhau, hãy tính lại trước khi vẽ.
+    Bảng chỉ cung cấp các điểm kiểm chứng; đồ thị hàm bậc hai là **đường cong parabol** đi qua chúng, có trục đối xứng và chiều mở xác định. Nếu một cặp giá trị đối xứng cho hai tung độ khác nhau, hãy tính lại trước khi vẽ.
 
 
 
