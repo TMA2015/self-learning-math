@@ -306,7 +306,7 @@
         2. **Vì sao sai?** Điều kiện của hàm số là **mỗi \(x\) có đúng một giá trị \(y\)**, chứ không phải mỗi \(x\) chỉ được ghi một dòng. Trong A, \(x=3\) luôn cho \(y=2\), nên không mâu thuẫn. Trong bảng B, \(x=3\) cho cả \(2\) lẫn \(4\), mới vi phạm.
         3. **Tự kiểm:** Khoanh mọi dòng có cùng \(x\). Nếu chúng có **hai \(y\) khác nhau**, bảng không biểu diễn \(y=f(x)\); nếu các \(y\) trùng nhau, vẫn thỏa điều kiện đơn trị.
         4. **Sửa lại:** Nêu bằng lời vì sao bảng A là hàm số trên \(D=\{1;3\}\) nhưng bảng B không phải.
-        5. **Tập tiếp:** [Core/Luyện tập C01](../luyen-tap/?item=THPT-G10-B15-C01). Giải thích trước khi mở đối chiếu; không nhân bản câu đã xem làm bài kiểm tra độc lập.
+        5. **Tập tiếp:** [Core/Luyện tập C01](luyen-tap.md?item=THPT-G10-B15-C01). Giải thích trước khi mở đối chiếu; không nhân bản câu đã xem làm bài kiểm tra độc lập.
 
     <span data-thpt-help-id="HELP-G10-CHVI-TRY02" hidden></span>
 
@@ -316,7 +316,7 @@
         2. **Vì sao sai?** Điều kiện \(x-2\ge0\) chỉ giới hạn **đầu vào** \(x\ge2\). Đầu ra \(\sqrt{x-2}\) bắt đầu từ \(0\), không phải \(2\).
         3. **Tự kiểm:** Hỏi riêng “nhập được \(x\) nào?” và “nhận được \(y\) nào?”. Thử \(x=2\) thì \(f(2)=0\); số \(0\) thuộc \(T\), nhưng không thuộc \(D\).
         4. **Sửa lại:** \(D=[2;+\infty)\), \(T=[0;+\infty)\). Để chắc mọi \(y\ge0\) đều đạt được, chọn \(x=y^2+2\).
-        5. **Tập tiếp:** [Core/Luyện tập C02](../luyen-tap/?item=THPT-G10-B15-C02), sau đó phân biệt miền đầu vào và đầu ra bằng một ví dụ mới.
+        5. **Tập tiếp:** [Core/Luyện tập C02](luyen-tap.md?item=THPT-G10-B15-C02), sau đó phân biệt miền đầu vào và đầu ra bằng một ví dụ mới.
 
     <span data-thpt-help-id="HELP-G10-CHVI-TRY03" hidden></span>
 
@@ -336,7 +336,7 @@
         2. **Vì sao sai?** Số \(3\) thuộc nhánh **có dấu bằng**. Phần phí tăng thêm chỉ tính cho **\(x-3\)** km vượt ngưỡng. Đặc biệt, dùng nhầm nhánh tại \(x=3\) tình cờ cũng cho \(12\): **đúng số không chứng minh đúng phương pháp**.
         3. **Tự kiểm:** Đánh dấu từng miền lên trục số, thử riêng \(x=3\) và một \(x>3\); kiểm đơn vị \(x\) là km, \(C(x)\) là nghìn đồng.
         4. **Sửa lại:** \(C(3)=12\) (nhánh thứ nhất), \(C(5)=12+4(5-3)=20\) nghìn đồng (nhánh thứ hai).
-        5. **Tập tiếp:** [Core/Luyện tập P02](../luyen-tap/?item=THPT-G10-B15-P02). Nói rõ nhánh nào được chọn **trước** khi tính.
+        5. **Tập tiếp:** [Core/Luyện tập P02](luyen-tap.md?item=THPT-G10-B15-P02). Nói rõ nhánh nào được chọn **trước** khi tính.
 
     <span data-thpt-help-id="HELP-G10-CHVI-TRY04" hidden></span>
 
@@ -346,7 +346,7 @@
         2. **Vì sao sai?** Định nghĩa trên khoảng \(K\) đòi hỏi **mọi** cặp \(x_1<x_2\) trong \(K\). Ví dụ \(g(x)=x^2\) giảm trước \(0\) và tăng sau \(0\); một cặp có giá trị tăng không đủ suy ra đơn điệu trên \(\mathbb R\).
         3. **Tự kiểm:** Viết rõ \(K\), chọn \(x_1<x_2\) **bất kì** cùng thuộc \(K\), xét dấu \(f(x_2)-f(x_1)\). Không đảo dấu khi trừ hai giá trị.
         4. **Sửa lại:** Với \(f(x)=3x+2\) trên \([-1;2]\), \(f(x_2)-f(x_1)=3(x_2-x_1)>0\) cho mọi \(x_1<x_2\), nên đồng biến trên khoảng đang xét.
-        5. **Tập tiếp:** [Core/Luyện tập P03](../luyen-tap/?item=THPT-G10-B15-P03). Tự giải thích dấu hiệu số học trước khi mở đáp án.
+        5. **Tập tiếp:** [Core/Luyện tập P03](luyen-tap.md?item=THPT-G10-B15-P03). Tự giải thích dấu hiệu số học trước khi mở đáp án.
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
