@@ -772,6 +772,22 @@ function expectedG10KnowledgeBlob(lesson,legacy){
      "B17_OUT_01","B17_OUT_05","TRY11","TRY15","P0=0","P1=0"]){
     assert(receipt.includes(token),"B17 Q18 owner receipt missing: "+token);
    }
+   // Independent R02 display-only fix extends R01 without rewriting
+   // the accepted academic source receipt or any assessment identity.
+   const r02path=path.join(root,
+    "prototypes/thpt/ux795/G10_CHVI_B17_DISPLAY_MATH_SOURCE_EQUIVALENT_R02_20261120.md");
+   if(fs.existsSync(r02path)){
+    const r02=fs.readFileSync(r02path,"utf8");
+    const nextField=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    assert.equal(nextField("PREVIOUS_B17_SOURCE_BLOB"),current,
+     "B17 display MathJax R02 must follow R01 exact already published SHA");
+    const next=nextField("CANDIDATE_B17_SOURCE_BLOB");
+    assert(/^[a-f0-9]{40}$/.test(next||"")&&next!==current,
+     "B17 R02 requires a distinct SHA for actual corrected Markdown source");
+    assert(r02.includes("DELTA_B_SOURCE_EQUIVALENT")&&r02.includes("MathJax")&&r02.includes("B17_OUT_01"),
+     "B17 R02 format-only and outcome scope evidence required");
+    return next;
+   }
    return current;
   }
   if(ux){
