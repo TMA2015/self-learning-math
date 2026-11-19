@@ -1,0 +1,91 @@
+name: Scoped SGK Lesson Release QA (no deploy)
+
+# Source-first authoring is completed BEFORE this presentation/technical gate.
+# The source classifier is fail-closed; no academic/PED PASS is inferred from CI.
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: scoped-sgk-release-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  scope:
+    name: Canonical source/Q16 and risk scope (always on)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    outputs:
+      changed_lessons: ${{ steps.impact.outputs.changed_lessons }}
+      full_suite: ${{ steps.impact.outputs.full_suite }}
+      qa_smoke: ${{ steps.impact.outputs.qa_smoke }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check classifier syntax and fail-closed positive/negative fixtures
+        run: |
+          node --check scripts/test-thpt-release-impact.cjs
+          node scripts/test-thpt-release-impact.cjs --self-test
+          node --check scripts/test-thpt-scoped-lesson-browser.cjs
+      - name: Classify complete PR diff (unknown/assessment/runtime requires FULL)
+        id: impact
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || 'origin/main' }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+          RELEASE_QA_FORCE_FULL: ${{ github.event_name == 'workflow_dispatch' }}
+        run: |
+          git diff --name-only "$BASE_SHA...$HEAD_SHA" > "$RUNNER_TEMP/scoped-paths.txt"
+          node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/scoped-paths.txt" >> "$GITHUB_OUTPUT"
+      - name: Protect source manifests and new V2 academic handoffs
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || 'origin/main' }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          node scripts/test-thpt-release-queue.cjs
+          node scripts/test-thpt-handoff-gate-v2.cjs --self-test
+          node scripts/test-thpt-handoff-gate-v2.cjs
+          node scripts/test-thpt-q18-release-test-router.cjs --self-test
+          node scripts/test-thpt-q18-release-test-router.cjs
+
+  lesson-presentation:
+    name: Changed lesson(s) Golden, CSS, MathJax, responsive, Q16
+    needs: scope
+    # On a scoped QA implementation PR, smoke the last owner-P2 accepted B14
+    # even when global workflow changes legitimately trigger full R4.
+    if: ${{ (needs.scope.outputs.full_suite == 'false' && needs.scope.outputs.changed_lessons != '') || needs.scope.outputs.qa_smoke == 'true' }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build canonical preview once, no deploy
+        run: |
+          python -m pip install --disable-pip-version-check mkdocs-material
+          mkdocs build --config-file mkdocs.thpt-preview.yml --site-dir site-thpt-preview
+      - name: Set up real Chromium only for affected lesson(s)
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install chromium
+      - name: AP1–AP5 and Q15/Q16 technical browser checks at 390/820/1440
+        env:
+          SCOPED_LESSONS: ${{ needs.scope.outputs.changed_lessons || 'docs/thpt-preview/sgk/chuong-v/bai-14.md,docs/thpt-preview/sgk/chuong-v/luyen-tap.md,docs/thpt-preview/sgk/chuong-v/tu-kiem-tra-chuong.md' }}
+          SCOPED_BASE_URL: http://127.0.0.1:8765
+        run: |
+          python -m http.server 8765 --bind 127.0.0.1 --directory site-thpt-preview >/tmp/scoped-golden-http.log 2>&1 &
+          python - <<'PY'
+          import time, urllib.request
+          for _ in range(50):
+              try:
+                  with urllib.request.urlopen('http://127.0.0.1:8765/',timeout=2) as r:
+                      if r.status==200: break
+              except Exception: time.sleep(.5)
+          else: raise SystemExit('Scoped preview HTTP did not start')
+          PY
+          node scripts/test-thpt-scoped-lesson-browser.cjs

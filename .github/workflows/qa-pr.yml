@@ -4,6 +4,7 @@ on:
   pull_request:
     branches:
       - main
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -19,6 +20,7 @@ jobs:
     runs-on: ubuntu-24.04
     outputs:
       authoring_only: ${{ steps.scope.outputs.authoring_only }}
+      full_suite: ${{ steps.impact.outputs.full_suite }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -27,8 +29,8 @@ jobs:
         run: node scripts/test-thpt-release-queue.cjs
       - name: Enforce V2 source-locked handoff for newly added READY manifests
         env:
-          BASE_SHA: ${{ github.event.pull_request.base.sha }}
-          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha || 'origin/main' }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
         run: |
           node scripts/test-thpt-handoff-gate-v2.cjs --self-test
           node scripts/test-thpt-handoff-gate-v2.cjs
@@ -37,18 +39,26 @@ jobs:
       - name: Classify actual changed paths (three-dot merge base)
         id: scope
         env:
-          BASE_SHA: ${{ github.event.pull_request.base.sha }}
-          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha || 'origin/main' }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
         shell: bash
         run: |
           git diff --name-only "$BASE_SHA...$HEAD_SHA" > "$RUNNER_TEMP/math-pr-changed-paths.txt"
           node scripts/test-thpt-pr-scope.cjs "$RUNNER_TEMP/math-pr-changed-paths.txt" >> "$GITHUB_OUTPUT"
+      - name: Decide whether expensive all-site Roadmap QA is actually relevant
+        id: impact
+        env:
+          RELEASE_QA_FORCE_FULL: ${{ github.event_name == 'workflow_dispatch' }}
+        run: |
+          node scripts/test-thpt-release-impact.cjs --self-test
+          node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/math-pr-changed-paths.txt" >> "$GITHUB_OUTPUT"
 
   verify:
     needs: scope
-    # Only source Markdown/SVG in approved authoring/review/handoff directories
-    # bypasses the expensive website suite. Any mixed change runs full QA.
-    if: ${{ needs.scope.outputs.authoring_only != 'true' }}
+    # Lesson-only and receipt-only PRs skip the expensive full 93-step suite.
+    # Unknown/runtime/assessment changes retain full tests; manual dispatch on
+    # the target branch also forces full verification.
+    if: ${{ needs.scope.outputs.authoring_only != 'true' && needs.scope.outputs.full_suite == 'true' }}
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
