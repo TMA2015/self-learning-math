@@ -683,7 +683,22 @@ function expectedG10KnowledgeBlob(lesson,legacy){
     "P0=0 P1=0","TRY03","SOURCE_REFERENCE"]){
     assert(receipt.includes(marker),"B15 actual G0/G1/G2 Q18 evidence missing "+marker);
    }
-   return next;
+   // Immutable B15 R01 source remains valid for its exact former snapshot.
+   // The owner-authorized P2 two-hunk Delta A/B has a separate SHA receipt.
+   const p2=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHVI_B15_P2_EDITORIAL_NOTE_DELTA_R01_20261119.md"),"utf8");
+   const p2f=k=>p2.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(p2f("PREVIOUS_B15_SOURCE_BLOB"),next,
+    "B15 P2 copy/UI delta must start from exact previously released B15");
+   assert.equal(p2f("HISTORICAL_OWNER_Q18_RECEIPT_BLOB"),require("node:crypto").createHash("sha1").update(Buffer.from("blob "+Buffer.byteLength(receipt)+String.fromCharCode(0))).update(Buffer.from(receipt)).digest("hex"),
+    "B15 historical signed Q18 receipt must stay immutable");
+   assert.equal(p2f("EXISTING_GOLDEN_CSS_BLOB"),
+    "4af85dd38d02ed55b29daa6713bfbc892f0d7078",
+    "B15 P2 must not alter approved Golden style");
+   const revised=p2f("CANDIDATE_B15_SOURCE_BLOB");
+   assert(/^[a-f0-9]{40}$/.test(revised||"")&&revised!==next,
+    "B15 P2 must have real distinct source hash and signed delta");
+   return revised;
   }
   if(ux){
    assert(chvi&&!chiv&&!chv,name+" UX follow-on restricted to published Chapter VI source");

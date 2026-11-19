@@ -184,8 +184,7 @@
 
     **Ví dụ đọc tọa độ.** Với \(y=2x+1\) xác định trên \(\mathbb R\), \(A(2;5)\) thuộc đồ thị vì \(2\cdot2+1=5\), còn \(B(2;4)\) không thuộc vì \(4\ne5\).
 
-    !!! tip "Lưu ý khi đọc hình"
-        Nếu đường thẳng đứng \(x=x_0\) cắt một hình vẽ ở **hai điểm có tung độ khác nhau**, hình đó không thể là đồ thị của hàm số \(y=f(x)\) trên miền chứa \(x_0\). Đây là cách nhận diện bằng hình của yêu cầu “một đầu vào — một đầu ra”.
+    **Cách kiểm tra trên đồ thị:** Nếu đường thẳng đứng \(x=x_0\) cắt một đường biểu diễn ở hai điểm có tung độ khác nhau, đường đó không phải đồ thị của một hàm số \(y=f(x)\) tại \(x_0\). Đây là cách kiểm tra chung, không phải lời hướng dẫn đọc hình minh họa phía trên.
 
     #### 2.2.1. Đọc hàm số qua bảng và đồ thị
 
@@ -295,8 +294,6 @@
         <li>Nếu <span class="arithmatex">\(x_1&lt;x_2\)</span> thì <span class="arithmatex">\(q(x_1)-q(x_2)=-3(x_1-x_2)&gt;0\)</span>; hàm nghịch biến trên <span class="arithmatex">\(\mathbb{R}\)</span>.</li></ol>
 
 === "Lỗi thường gặp"
-
-    Những lỗi dưới đây là **sai lầm toán học dễ mắc khi giải năm dạng trong bài**, không phải các nhãn lỗi chung chung. Mỗi mục chỉ ra một kết luận sai cụ thể, giải thích vì sao sai, rồi hướng dẫn em tự làm lại. Không coi việc học sinh đã mở “Đối chiếu” là bằng chứng làm chủ kiến thức.
 
     <span data-thpt-help-id="HELP-G10-CHVI-TRY01" hidden></span>
 

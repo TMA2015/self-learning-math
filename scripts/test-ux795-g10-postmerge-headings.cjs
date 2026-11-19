@@ -252,7 +252,12 @@ for(let n=1;n<=27;n++){
    const field=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
    assert.equal(field("BASELINE_PUBLISHED_B15_BLOB"),followon.candidate,
     "B15 new owner Q18 is chained to original immutable UX receipt");
-   active=field("CANDIDATE_B15_SOURCE_BLOB");
+   const prior=field("CANDIDATE_B15_SOURCE_BLOB");
+   const p2=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHVI_B15_P2_EDITORIAL_NOTE_DELTA_R01_20261119.md"),"utf8");
+   const p2f=k=>p2.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(p2f("PREVIOUS_B15_SOURCE_BLOB"),prior,"B15 P2 source must preserve old signed source");
+   active=p2f("CANDIDATE_B15_SOURCE_BLOB");
   }
   assert.equal(blob(source),active,
     "B"+n+" learner source must match latest signed Q18, never an obsolete UX ancestor");

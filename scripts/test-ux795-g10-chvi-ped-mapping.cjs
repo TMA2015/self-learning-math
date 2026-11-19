@@ -34,8 +34,13 @@ for(const n of [15,16,17,18]){
   const f=k=>latest.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(f("BASELINE_PUBLISHED_B15_BLOB"),ux.candidate,
    "B15 latest Q18 must start from immutable ChVI UX approved snapshot");
-  assert.equal(f("CANDIDATE_B15_SOURCE_BLOB"),expected,
-   "B15 latest source must match one new Q18 owner self-verification receipt");
+  assert.equal(f("CANDIDATE_B15_SOURCE_BLOB"),"131947762d1c2ad1c109602a5cbe2e7fea71652e",
+   "B15 original complete Q18 receipt must remain frozen");
+  const p2=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHVI_B15_P2_EDITORIAL_NOTE_DELTA_R01_20261119.md"),"utf8");
+  const p2f=k=>p2.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(p2f("CANDIDATE_B15_SOURCE_BLOB"),expected,
+   "B15 latest P2 editorial source must match signed scoped Delta A/B");
  }
  assert.equal(blob,expected,"B"+n+" learner source matches one canonical current source");
  assert.equal(blob,candidateG10KnowledgeBlob(n),"B"+n+" Q18 router disagrees with source");

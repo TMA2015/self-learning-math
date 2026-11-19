@@ -221,6 +221,10 @@ jobs:
           # is ONLY for integration-main dry-run and does not duplicate learner drafts.
           test -f prototypes/thpt/ux795/G10_CHVI_B15_OWNER_Q18_KNOWLEDGE_ENRICHMENT_20261119.md
           cp prototypes/thpt/ux795/G10_CHVI_B15_OWNER_Q18_KNOWLEDGE_ENRICHMENT_20261119.md integration-main/prototypes/thpt/ux795/
+          # Owner P2 B15 two-hunk Delta A/B: replay the NEW signed receipt
+          # with canonical source in isolated integration-main QA only.
+          test -f prototypes/thpt/ux795/G10_CHVI_B15_P2_EDITORIAL_NOTE_DELTA_R01_20261119.md
+          cp prototypes/thpt/ux795/G10_CHVI_B15_P2_EDITORIAL_NOTE_DELTA_R01_20261119.md integration-main/prototypes/thpt/ux795/
           cp scripts/test-ux795-g10-postmerge-headings.cjs integration-main/scripts/
           (
             cd integration-main
