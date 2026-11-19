@@ -1,9 +1,9 @@
 # AUTHORING-only metadata — CĐ12 R04
 
 CURRENT_R04_LEARNER_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_NUMBERING_CONSISTENT_20261116.md
-CURRENT_R04_LEARNER_SOURCE_BLOB: 7f537a309fe302941589073bb0e2e9577d323134
+CURRENT_R04_LEARNER_SOURCE_BLOB: ece977f22531dfa8e46eeda8ba0c55dc449453e4
 CURRENT_R04_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC12_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-CURRENT_R04_Q18_RECEIPT_BLOB: f0524226db441d7e6786773288c9a7152343f4c2
+CURRENT_R04_Q18_RECEIPT_BLOB: 94c53487cec5f9f52b8d50044b67dea78b5e6d68
 CURRENT_R04_NEW16_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC12_TRIANGLE_NEW16_PUBLIC_CANONICAL_R03_20261116.md
 CURRENT_R04_NEW16_CANONICAL_BANK_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d
 AUTHORING_STATUS: R04_NUMBERING_DELTA_A_AUTHOR_SELF_VERIFIED
@@ -161,6 +161,9 @@ OUTCOME_IDS: `TOP12-O01`…`TOP12-O12`.
 
 ## R05 · W05 Q15 source-owner cross-branch lock (17/11/2026)
 
-Current Topic12 `SOURCE_BLOB=7f537a309fe302941589073bb0e2e9577d323134`; current scoped Q18 `RECEIPT_BLOB=f0524226db441d7e6786773288c9a7152343f4c2`. All 34 canonical source placements remain, with **only** reused `THPT-G10-CHIII-W05` pointing to the corrected original-owner source on SGK ChIII Draft #749, SHA `569466519ee9a653fa3bcdf874e06619424fbf7b`. Its original R01 snapshot `6320aeaa89bd51c514b07461e01fad5e3aca833f` remains review-custody evidence, **not** active W05 rubric owner. All other 17 SGK-reused IDs continue referencing immutable original R01 blob; 16 Topic-owned items unchanged.
+Current Topic12 `SOURCE_BLOB=ece977f22531dfa8e46eeda8ba0c55dc449453e4`; current scoped Q18 `RECEIPT_BLOB=94c53487cec5f9f52b8d50044b67dea78b5e6d68`. All 34 canonical source placements remain, with **only** reused `THPT-G10-CHIII-W05` pointing to the corrected original-owner source on SGK ChIII Draft #749, SHA `569466519ee9a653fa3bcdf874e06619424fbf7b`. Its original R01 snapshot `6320aeaa89bd51c514b07461e01fad5e3aca833f` remains review-custody evidence, **not** active W05 rubric owner. All other 17 SGK-reused IDs continue referencing immutable original R01 blob; 16 Topic-owned items unchanged.
 
 No duplicate item/answer/rubric introduced. W05 mathematical rubric now matches original-owner angle \\(\\alpha=150^\\circ\\), /7 unchanged. `Q15_W05_OWNER=ONE`, `Q18_AUTHOR_SELF_VERIFIED_AFFECTED=PASS`, `Q16=UNCHANGED`, `RELEASE_AUTHORIZATION=NO`. Older source/receipt blob citations in R04 chronology above are historical, not effective pointers.
+
+
+**19/11 owner editorial:** source/Q18 relocked after 12 example-label Delta A, no change to canonical objects or outcome mathematics; `CONTENT_READY` preserved.
