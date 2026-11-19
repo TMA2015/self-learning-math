@@ -109,8 +109,12 @@ function selfTest(){
  ".github/workflows/qa-pr.yml",".github/workflows/thpt-r4-preview-quality.yml",
  "scripts/test-thpt-release-impact.cjs"]).impact,"SCOPED_G10_B16");
  for(const extra of ["mkdocs.yml","docs/assets/javascripts/firebase-gemini-v1.js",
- "docs/thpt-preview/sgk/chuong-vii/bai-19.md","docs/assets/data/assessment/private.json"])
- assert.equal(classify([B16_LESSON,extra]).full_suite,"true","mixed change must still use FULL");
+ "docs/assets/data/assessment/private.json"])
+  assert.equal(classify([B16_LESSON,extra]).full_suite,"true","unsafe mixed change must still use FULL");
+ // Two genuine learner lessons legitimately use the existing scoped-lesson
+ // lane, never the exceptional single-B16 profile.
+ assert.notEqual(classify([B16_LESSON,"docs/thpt-preview/sgk/chuong-vii/bai-19.md"]).impact,
+  "SCOPED_G10_B16","multiple lessons cannot claim the B16-only profile");
  assert.equal(classify([fixture],{manual:true}).impact,"FULL");
  console.log("PASS scoped CI impact classifier: canonical SGK page/receipt-only fast lanes, global/unknown/assessment full, manual full");
 }
