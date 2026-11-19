@@ -7,7 +7,7 @@
 **S1_REFERENCE:** Toán 10 KNTT tập 2, Bài 16 *Hàm số bậc hai*, printed 11–18, PDF 12–19 per historical S1 receipt `G10_CHVI_B15_B18_S1_Q18_EDITORIAL_RECEIPT_20261113.md`; historical scan not directly reopened or newly hashed here
 **BASE_MAIN_COMMIT:** `400e4820fe37c12a6db151cdcb094a79e31f7376`
 **BASELINE_PUBLISHED_B16_SOURCE_BLOB:** `4ddf9c449f92a9f48bace5a3f9b84186bf33af20`
-**CANDIDATE_B16_SOURCE_BLOB:** `66cb39b8a7de5eed12fa3511d3b72b1a33176394`
+**CANDIDATE_B16_SOURCE_BLOB:** `da76d243b8dff84482f4f3ac0a1cab820697ad1f`
 **PREVIOUS_OWNER_P2_GOLDEN_CSS_BLOB:** `4af85dd38d02ed55b29daa6713bfbc892f0d7078`
 **CANDIDATE_SCOPED_GOLDEN_CSS_BLOB:** `14001f525b1825557493f439a1f0555e9614185f`
 **VERIFICATION_MODE:** `Q18_OWNER_SELF_VERIFIED_ENRICHMENT_IN_PROGRESS`, no independent NotebookLM PASS
@@ -46,8 +46,14 @@ The owner explicitly requested normal flowing explanations without a pseudo-meth
 
 **Scoped DELTA_B_SOURCE_EQUIVALENT (+ DELTA_A_UI):** Replace this placeholder with an actual **same-function** drawing within the **same canonical B16 Markdown**. Math remains (y=x^2-4x+3=(x-2)^2-1); x-intercepts (1,3), y-intercept (3), vertex (I(2;-1)), symmetry axis (x=2), a>0, opens up. The curve was sampled at 97 x-values on [-0.3,4.5], using display transform (X=120+112x), (Y=315-52y), so points are checked against the exact function rather than sketched freehand. Axes, points and legend are specified; the other Discovery SVG is **not** changed.
 
-**SOURCE_BLOB:** `66cb39b8a7de5eed12fa3511d3b72b1a33176394`
+**SOURCE_BLOB:** `da76d243b8dff84482f4f3ac0a1cab820697ad1f`
 **PREVIOUS_B16_CANDIDATE:** `3d08b7abea421c8850e41afa0519fade05b2b700`
 **B16_Q07_SELF_CHECK:** numerical geometry and SVG parsing test to run on this exact HEAD, plus live browser layout/AP3 checks at 390/820/1440. Do not assert P1/P2 publication from source edit.
 
 **Review boundary:** This resolves the originally reported **source-defect** drawing (not a new mathematical theorem or exercise). Earlier B16 example/teaching Delta C still requires the appropriate independently grounded approval under the governing Q18 mode. Do not silently classify the *entire* B16 change as Delta B, nor claim reviewer PASS on this receipt alone.
+
+## Five canonical D6 recovery paths — anti-repeat check · 19/11/2026
+
+**Scoped pedagogical correction:** Updated the *existing* five tab-4 `Tự chẩn đoán` phrases to specify the actual wrong step in TRY10/06/07/09/08 instead of repeating the generic phrase “Em có đang mắc đúng lỗi này...”. For TRY10/06/09, replaced the generic return instructions with references to the *already existing* corresponding `Vận dụng` question. The original five `item_id`/HELP IDs, `Nhận diện lỗi`, `Kiến thức gốc`, `Tự sửa`, Q15 answer bodies, and two existing `Luyện lại` links (TRY07/TRY08) were preserved. No new question or alternate canonical source.
+
+**DELTA_C_PEDAGOGICAL_REMEDIATION_SCOPE:** B16_OUT_01–05 D6 wording; demonstrate exactly which text was affected by Q18 source/body comparisons and self-QA. Do not call original independent review PASS for this new draft. Source Git blob `da76d243b8dff84482f4f3ac0a1cab820697ad1f`. Exact browser/safety QA and reviewer conditions remain open.
