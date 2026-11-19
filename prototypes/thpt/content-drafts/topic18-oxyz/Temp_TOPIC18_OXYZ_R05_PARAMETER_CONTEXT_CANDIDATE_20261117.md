@@ -145,7 +145,7 @@ Từ cách tính tích vô hướng theo góc, ta có thể suy ra các quy tắ
 
 > **TÍNH CHẤT — Tích vô hướng của các vectơ trong không gian**
 >
-> Với các vectơ \(\vec u,\vec v,\vec w\) bất kỳ và số thực \(k\), ta có **giao hoán** \(\vec u\cdot\vec v=\vec v\cdot\vec u\); **nhân với một số** \((k\vec u)\cdot\vec v=\vec u\cdot(k\vec v)=k(\vec u\cdot\vec v)\); và **phân phối** \(\vec u\cdot(\vec v+\vec w)=\vec u\cdot\vec v+\vec u\cdot\vec w\). Các quy tắc này vẫn đúng khi một vectơ bằng \(\vec0\); riêng công thức \(\cos\theta=\frac{\vec u\cdot\vec v}{|\vec u||\vec v|}\) chỉ dùng nếu cả \(\vec u,\vec v\) đều khác \(\vec0\).
+> Với các vectơ \(\vec u,\vec v,\vec w\) bất kỳ và số thực \(k\), ta có **giao hoán** \(\vec u\cdot\vec v=\vec v\cdot\vec u\); **nhân với một số** \((k\vec u)\cdot\vec v=\vec u\cdot(k\vec v)=k(\vec u\cdot\vec v)\); và **phân phối** \(\vec u\cdot(\vec v+\vec w)=\vec u\cdot\vec v+\vec u\cdot\vec w\). Đồng thời, **theo quy ước tích vô hướng với vectơ-không** ta có \(\vec u\cdot\vec0=\vec0\cdot\vec u=0\), và **bình phương vô hướng** của một vectơ là \(\vec u\cdot\vec u=|\vec u|^2\). Các quy tắc này vẫn đúng khi một vectơ bằng \(\vec0\); riêng công thức \(\cos\theta=\frac{\vec u\cdot\vec v}{|\vec u||\vec v|}\) chỉ dùng nếu cả \(\vec u,\vec v\) đều khác \(\vec0\).
 
 
 **Ví dụ**
