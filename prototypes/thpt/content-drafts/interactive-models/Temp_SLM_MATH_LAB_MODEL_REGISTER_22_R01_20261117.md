@@ -1,5 +1,53 @@
 <!-- I798_UNIFIED_22_MODEL_PROGRAM_20261119 -->
 <!-- I798_OWNER_FINAL_COUNT_25_20261119 -->
+<!-- I798_LOCKED_25_INVENTORY_PER_MODEL_20261119 -->
+## SỔ KHÓA 25 MÔ HÌNH ĐƯỢC CHỌN — PHẠM VI GIAI ĐOẠN 1 (19/11/2026)
+
+**Quyết định chủ dự án:** Math Lab **trước mắt dự kiến đúng 25 mục tiêu mô hình**. Danh sách bên dưới là 25 **loại mô hình đã chọn để hoàn thiện**, không phải lời chứng nhận 25 mô hình đã qua G1–G4 hay đang chạy trên website. **Chỉ tăng số lượng sau khi chủ dự án duyệt đề xuất bổ sung.** Danh sách 22 MODEL_ID/Outcome/PR/source SHA chi tiết phía dưới **vẫn là nguồn canonical** cho Chuyên đề; 3 khóa `SLM-SGK-...` là **khóa theo dõi tài nguyên bổ trợ** (không phải MODEL_ID canonical của Chuyên đề, không phải ITEM_ID).
+
+| STT | Nơi phục vụ | Mã nguồn/khóa theo dõi | Loại mô hình được chọn | HTML mới liên hệ | Quyết định nguồn & tiến độ |
+|---|---|---|---|---|---|
+| 01 | CĐ01 | `SLM-TOP01-TRUTH-01` | Mô hình chân trị | Chưa có bản mới tương ứng | C · Tách/hoàn thiện từ HTML ứng viên cũ |
+| 02 | CĐ02 | `SLM-TOP02-QUADRATIC-01` | Dấu tam thức | `#02` + `#05` | B · Bổ sung chức năng còn thiếu rồi so chọn |
+| 03 | CĐ03 | `SLM-TOP03-SQUARING-01` | Bình phương và nghiệm ngoại lai | Chưa có bản mới tương ứng | C · Tách/hoàn thiện từ HTML ứng viên cũ |
+| 04 | CĐ04 | `SLM-TOP04-EXPLOG-01` | Hàm mũ/lôgarit ngược nhau | Chưa có bản mới tương ứng | C · Tách/hoàn thiện từ HTML ứng viên cũ |
+| 05 | CĐ05 | `SLM-TOP05-GRAPH-01` | Biến đổi đồ thị | `#05` | A · So chọn 2 nguồn; chưa chốt bản thắng |
+| 06 | CĐ06 | `SLM-TOP06-UNIT-CIRCLE-01` | Đường tròn lượng giác | `#07` | A · So chọn 2 nguồn; chưa chốt bản thắng |
+| 07 | CĐ07 | `SLM-TOP07-SEQUENCE-01` | CSC và CSN | Chưa có bản mới tương ứng | C · Tách/hoàn thiện từ HTML ứng viên cũ |
+| 08 | CĐ08 | `SLM-TOP08-LIMIT-01` | Giới hạn trái/phải | `#04` | B · Bổ sung chức năng còn thiếu rồi so chọn |
+| 09 | CĐ09 | `SLM-TOP09-TANGENT-01` | Cát tuyến đến tiếp tuyến | `#11` | B · Bổ sung chức năng còn thiếu rồi so chọn |
+| 10 | CĐ10 | `SLM-TOP10-BOX-01` | Tối ưu thể tích hộp | Chưa có bản mới tương ứng | C · Tách/hoàn thiện từ HTML ứng viên cũ |
+| 11 | CĐ11 | `SLM-TOP11-RIEMANN-01` | Tổng Riemann | `#06` | A · So chọn 2 nguồn; chưa chốt bản thắng |
+| 12 | CĐ12 | `SLM-TOP12-SSA-01` | Mơ hồ SSA | Chưa có bản mới tương ứng | C · Tách/hoàn thiện từ HTML ứng viên cũ |
+| 13 | CĐ13 | `SLM-TOP13-DOT-01` | Tích vô hướng/hình chiếu | `#01` | B · Bổ sung chức năng còn thiếu rồi so chọn |
+| 14 | CĐ14 | `SLM-TOP14-PARABOLA-01` | Parabol tiêu điểm/đường chuẩn | Chưa có bản mới tương ứng | C · Tách/hoàn thiện từ HTML ứng viên cũ |
+| 15 | CĐ15 | `SLM-TOP15-LINE-PLANE-R00` | Đường thẳng và mặt phẳng | Chưa có bản mới tương ứng | C · Tách/hoàn thiện từ HTML ứng viên cũ |
+| 16 | CĐ16 | `SLM-TOP16-RAMP-ANGLE-R00` | Góc dốc/hình chiếu | Chưa có bản mới tương ứng | C · Tách/hoàn thiện từ HTML ứng viên cũ |
+| 17 | CĐ17 | `SLM-TOP17-FRUSTUM-VOLUME-R00` | Khối và thể tích | Chưa có bản mới tương ứng | C · Tách/hoàn thiện từ HTML ứng viên cũ |
+| 18 | CĐ18 | `SLM-TOP18-OXYZ-GEOMETRY-R00` | Mặt phẳng/mặt cầu Oxyz | `#03` | B · Bổ sung chức năng còn thiếu rồi so chọn |
+| 19 | CĐ19 | `SLM-TOP19-COMBINATORICS-PASCAL-R00` | Đếm chọn và Pascal | Chưa có bản mới tương ứng | C · Tách/hoàn thiện từ HTML ứng viên cũ |
+| 20 | CĐ20 | `SLM-TOP20-PROB-EVENTS-R00` | Hai biến cố | `#12` | A · So chọn 2 nguồn; chưa chốt bản thắng |
+| 21 | CĐ21 | `SLM-TOP21-BAYES-TREE-R01` | Bayes/sơ đồ cây | `#13` | B · Bổ sung chức năng còn thiếu rồi so chọn |
+| 22 | CĐ22 | `SLM-TOP22-DISTRIBUTION-R01` | Dữ liệu thô/ngoại lệ | Chưa có bản mới tương ứng | C · Tách/hoàn thiện từ HTML ứng viên cũ |
+| 23 | SGK Toán 11 Bài 3 | `SLM-SGK-G11-B03-SINCOS` | Đồ thị sin/cos và tính tuần hoàn | `#08` | SGK · standalone tự QA; chờ quyết định tích hợp |
+| 24 | SGK Toán 11 Bài 3 | `SLM-SGK-G11-B03-TANCOT` | Đồ thị tan/cot và tiệm cận | `#09` | SGK · standalone tự QA; chờ quyết định tích hợp |
+| 25 | SGK Toán 11 Bài 4 | `SLM-SGK-G11-B04-TRIGEQ` | Phương trình lượng giác cơ bản | `#10` | SGK · standalone tự QA; chờ quyết định tích hợp |
+
+### Phân biệt dứt khoát “đã chọn mô hình” và “đã chọn source cuối”
+
+1. **ĐÃ CHỌN 25 LOẠI:** 22 vị trí gắn 22 Chuyên đề + 3 bổ trợ SGK Toán 11 B3/B4. Khi triển khai, chỉ hoàn thiện các loại trên theo đúng STT/mã, không tự phát sinh model ID mới hoặc nhân bản nguồn vì có 2 HTML thử nghiệm.
+2. **CHƯA CHỐT SOURCE THẮNG CUỘC cho 10 mục A/B:** #01–#13 mới được xem là nguồn ứng viên có QA Chromium độc lập; nguồn Git HTML cũ giữ nguyên quyền truy nguyên. Chỉ chọn source cuối sau khi so phạm vi toán, điều kiện, kết quả, ví dụ, khả năng tự học, Golden, responsive/keyboard; bổ sung chức năng nếu thiếu. Ghi source blob SHA đã khóa, owner và QA receipt sau khi chọn.
+3. **12 mục C có code thực từ PR cũ, không phải ý tưởng:** tách/tái sử dụng/đồng bộ từng mô hình; chỉ viết lại phần lỗi, không tái tạo từ đầu.
+4. **Ba HTML SGK (#08/#09/#10)** đã có standalone tự QA và được tính là **ba mục riêng** ngoài 22 Chuyên đề, nhưng chưa tích hợp hoặc phát hành. Mô hình #02 và #05 đều hỗ trợ CĐ02 song **CĐ02 chỉ được tính một mục**.
+5. **Kho nguồn mới duy nhất:** `/SLM/Research-Issue798/Temp_I798_MODELS_MASTER_CURRENT.zip`, 13 HTML, SHA256 `bed77d2c29761f6056ddd80a8f884123bf6e6a381fd473bb909751093a98c45c`. Ví dụ tên file: `Temp_I798_FINAL_01_VECTOR_OXY.html`, `Temp_I798_FINAL_13_PROBABILITY_TREE.html`. Khi chọn xong nguồn cho từng mô hình, chuyển từ ứng viên sang một source canonical cùng MODEL_ID, không tạo bộ 25 cạnh tranh.
+6. **Điểm hoàn tất một mục:** toán/PED có kiểm thử với điều kiện và edge cases, có HTML chạy độc lập đồng bộ Golden, QA 320/390/820/1440 và keyboard/text fallback/offline, tài liệu source SHA + receipt. **Chưa phải website RELEASE.** G1–G4 cần đóng đúng phạm vi trước handoff; bảo vệ 22 Topic `CONTENT_READY`/RD1/Final Submit/Mastery.
+7. **Điều chỉnh tương lai:** nếu xác định bài học còn thiếu mô hình độc lập, lập đề xuất `MATH_LAB_SCOPE_CHANGE_REQUEST` trên Issue #798 với bài/outcome/giá trị sư phạm, chống trùng; **chỉ tăng từ 25 khi chủ dự án phê duyệt**. Không quota mỗi bài.
+
+**Checkpoint:** `MATH_LAB_PHASE1_25_SELECTED_TYPES / SOURCE_WINNERS_PENDING_10_A_B / OLD_C12_REUSE / SGK3_INCLUDED / NO_RELEASE`.
+
+---
+
+
 ## CHỐT DANH MỤC MÔ HÌNH (19/11/2026) — **25 MỤC TIÊU, KHÔNG PHẢI 35 HAY 31**
 
 **Quyết định của chủ dự án:** tổng danh mục nghiên cứu/bàn giao là **25 mục tiêu mô hình** = **22 mục tiêu gắn với 22 Chuyên đề** (22 MODEL_ID tồn tại trong sổ) **+ 3 mô hình bổ trợ SGK Toán 11** ngoài 22 mục. Đây là **đơn vị tính để theo dõi hoàn thành**, không phải số HTML vật lý hoặc số module đã nghiệm thu. Nếu một mô hình bao gồm nhiều cảnh hay tái sử dụng ở hai nơi, **không nhân bản số mục tiêu**.
