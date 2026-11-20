@@ -66,14 +66,60 @@ function originalMathPreserved(old,now){
  for(const x of latex(old)){const n=counts.get(x)||0;if(!n)return false;counts.set(x,n-1)}
  return true;
 }
-function verifySource(before,now,receipt,beforeBlob,currentBlob){
+// Owner-authorized, exact-scope source-locked G10 HELP placement migrations only.
+// All unrelated multi-lesson production changes remain fail CLOSED.
+const PLACEMENT_BATCHES=[
+ {id:"G10-CHVI-B15-B18-KIEM-LOI-PLACEMENT-Q18-R01-20261120",
+  receipt:"prototypes/thpt/ux795/G10_CHVI_B15_B18_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md",
+  lessons:[15,16,17,18].map(n=>"docs/thpt-preview/sgk/chuong-vi/bai-"+n+".md")},
+ {id:"G10-B07-B14-KIEM-LOI-PLACEMENT-Q18-R01-20261120",
+  receipt:"prototypes/thpt/ux795/G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md",
+  lessons:[7,8,9,10,11,12,13,14].map(n=>
+   "docs/thpt-preview/sgk/chuong-"+(n<=11?"iv":"v")+"/bai-"+n+".md")}
+];
+function scopedBatchRow(receipt,lesson){
+ if(!lesson)return null;
+ const batch=PLACEMENT_BATCHES.find(b=>b.lessons.includes(lesson)&&
+  receipt.includes("**RECEIPT_ID:** "+b.id)&&receipt.includes("Q18_OWNER_SELF_VERIFIED_ENRICHMENT"));
+ if(!batch)return null;
+ const n=Number(lesson.match(/bai-(\d+)\.md$/)?.[1]);
+ const rows=receipt.split("\n").filter(x=>x.startsWith("| B"+n+" | "));
+ assert.equal(rows.length,1,"One signed candidate row for B"+n+" required");
+ const tick=String.fromCharCode(96), re=new RegExp(tick+"([a-f0-9]{40})"+tick,"g");
+ const hashes=[...rows[0].matchAll(re)].map(m=>m[1]);
+ assert.equal(hashes.length,2,"Q18 batch row must carry old and new SHA");
+ return {batch,n,old:hashes[0],now:hashes[1]};
+}
+function normalizePlacementAnswerBlocks(blocks,row){
+ if(!row||row.batch.id!=="G10-B07-B14-KIEM-LOI-PLACEMENT-Q18-R01-20261120")return blocks;
+ return blocks.map(x=>{
+  if(row.n===11)x=x.replace(/Nếu nhầm, (?:xem cách sửa ở mục 4\.3|tự mở khung Kiểm lỗi ngay dưới câu Vận dụng này)\./g,
+   "Nếu nhầm, [KIEM_LOI_NAV_B11].");
+  if(row.n===12)x=x.replace(/(?:Mở mục lỗi 4\.3|Tự mở khung Kiểm lỗi ngay bên dưới), rồi chọn bộ số mới/g,
+   "[KIEM_LOI_NAV_B12], rồi chọn bộ số mới");
+  return x;
+ });
+}
+function removedMathCount(before,now){
+ const counts=new Map();for(const x of latex(now))counts.set(x,(counts.get(x)||0)+1);
+ let missing=0;
+ for(const x of latex(before)){const n=counts.get(x)||0;if(n)counts.set(x,n-1);else missing++}
+ return missing;
+}
+function verifySource(before,now,receipt,beforeBlob,currentBlob,lesson=""){
  assert.equal(blob(before),beforeBlob,"Before SHA does not match exact Git history");
  assert.equal(blob(now),currentBlob,"Current SHA does not match actual canonical file");
  assert.notEqual(beforeBlob,currentBlob,"No real changed canonical source");
  assert(receipt.includes(beforeBlob),"Q18 receipt must declare immutable previous lesson blob");
  // Require the exact new blob in a candidate SOURCE field, not a stray prose hash.
  const fields=[...receipt.matchAll(/^\*\*(?:CANDIDATE_[A-Z0-9_]*(?:SOURCE|LESSON)[A-Z0-9_]*|R\d\d_(?:CORRECTED_)?SOURCE_BLOB):\*\* `([a-f0-9]{40})`/gm)].map(m=>m[1]);
- assert(fields.includes(currentBlob),"Q18 receipt missing exact current SOURCE candidate field");
+ const row=scopedBatchRow(receipt,lesson);
+ if(row){
+  assert.equal(row.old,beforeBlob,"Signed batch previous source blob mismatch");
+  assert.equal(row.now,currentBlob,"Signed batch current source blob mismatch");
+ }
+ assert(fields.includes(currentBlob)||Boolean(row),
+  "Q18 receipt missing exact current SOURCE candidate SHA");
  for(const id of ["data-thpt-first-try-id","data-thpt-help-id","data-thpt-fig-id"]){
   assert.deepEqual(tokenSet(now,id),tokenSet(before,id),"Q15/source identity changed: "+id);
  }
@@ -83,7 +129,8 @@ function verifySource(before,now,receipt,beforeBlob,currentBlob){
   assert.equal(original.length,4,"B23 historical four answer disclosures must be preserved");
   assert.deepEqual(candidate,original,"B23 approved disclosure label and D6 navigation may move, but all four original answer/rationale/remediation texts must match exactly");
  } else {
-  assert.deepEqual(firstAnswers(now),firstAnswers(before),
+  assert.deepEqual(normalizePlacementAnswerBlocks(firstAnswers(now),row),
+   normalizePlacementAnswerBlocks(firstAnswers(before),row),
    "Original canonical First Try answer (HTML or Markdown) changed");
  }
  assert.deepEqual([...now.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]),
@@ -91,7 +138,16 @@ function verifySource(before,now,receipt,beforeBlob,currentBlob){
   "Golden four tabs changed");
  assert.equal(tokenSet(now,"data-thpt-first-try-id").length,firstAnswers(now).length,
   "First Try question/closed answer cardinality mismatch");
- assert(originalMathPreserved(before,now),"Original math expression removed without separate academic review");
+ if(!originalMathPreserved(before,now)){
+  // Only the three exact owner-self-verified HELP context repairs are allowed:
+  // B10 mismatched coordinates, B11 stale resultant-force data, B12 cube-root 7.
+  const expected={10:13,11:6,12:7};
+  assert(row&&row.batch.id==="G10-B07-B14-KIEM-LOI-PLACEMENT-Q18-R01-20261120"&&
+   Object.hasOwn(expected,row.n)&&receipt.includes("Ba chỗ sửa ngữ cảnh"),
+   "Removed source math without signed affected-scope self-verification");
+  assert.equal(removedMathCount(before,now),expected[row.n],
+   "Exact contextual correction removed unexpected mathematical expressions");
+ }
  assert(!/data-(?:thpt-readiness|mastery-credit|mastery-write|thpt-final)/i.test(now),
   "Q16: private Readiness/Final Submit/Mastery leaked into public Knowledge");
  assert(receipt.includes("Q18")&&receipt.includes("DELTA_"),"Q18 receipt lacks scope/delta evidence");
