@@ -1,20 +1,23 @@
-<!-- TOP18_W07_O38_O23_PED_Q18_REFRESH_20261120 -->
-Original signed SGK canonical source has been restored exactly. Proposed W07 v2 remains in source-exact independent review packet, NOT active canonical. Updated current blocked Topic learner improves W07's mathematical prompt, detailed circle-vs-disk proof, **new /5 geometry-aligned rubric**, O38 surface-vs-ball explanation and O23 FirstTry+Practice remediation. Previous completed fields below are historical where their source blobs differ. Active `STATE: BLOCKED_BY_AUTHORING` only pending affected independent NotebookLM Academic/PED; **not** due to SBT p25. Never count old unchanged-rubric claims for W07 v2.
+<!-- TOP18_W07_O38_O23_INDEPENDENT_PASS_SOURCE_LOCK_20261120 -->
+## Latest affected independent academic/PED review — PASS, Q15 canonical gate remains
 
-<!-- TOP18_W07_O23_CURRENT_CONTENT_QUALITY_DELTA_20261120 -->
-## Current AUTHORING candidate — corrected learner mathematics, reviewer affected-scope pending
+Chủ dự án đã gửi kết quả reviewer độc lập: **Academic PASS, PED PASS, P0/P1/P2=0/0/0, MINIMAL_DELTA=NONE**, đúng phạm vi W07 v2/O38/O23, O40 context. Khép blocker chờ phản biện độc lập; không cần sửa thêm nội dung. Kết quả do chủ dự án cung cấp, không tuyên bố AUTHORING tự chạy NotebookLM.
 
+INDEPENDENT_REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_W07_O38_O23_NOTEBOOKLM_INDEPENDENT_ACADEMIC_PED_PASS_20261120.md
+INDEPENDENT_REVIEW_RECEIPT_BLOB: fac6e71538a1e0b1d2cd2d216bc6abaef9d27bba
+INDEPENDENT_REVIEW_ACADEMIC: PASS_AFFECTED_SCOPE
+INDEPENDENT_REVIEW_PED: PASS_AFFECTED_SCOPE
+INDEPENDENT_REVIEW_P0_P1_P2: 0/0/0
+INDEPENDENT_REVIEW_MINIMAL_DELTA: NONE
+CURRENT_CANDIDATE_STATUS: AFFECTED_DELTA_C_ACADEMIC_PED_PASS; Q15_SINGLE_CANONICAL_PROMOTION_PENDING; not full-Topic newly signed PASS
 CANONICAL_LEARNER_SOURCE_BLOB: 1ad945ea583ce7ee91df64b58d3f31b31c202cd3
-CANONICAL_G12_CHV_BANK_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a
-PROPOSED_W07_V2_BANK_BLOB: a24abd682932e11761f7c85fa3a3d3cdd77b600e (historical proposed Git commit; NOT active)
+CANONICAL_G12_CHV_BANK_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a (signed active v1)
+PROPOSED_W07_V2_BANK_BLOB: a24abd682932e11761f7c85fa3a3d3cdd77b600e (reviewed-only)
 TARGETED_AUTHOR_Q18_RECEIPT_BLOB: 82a31554d8f6187e951c189ac2b6c34a1622d5ef
-TARGETED_NOTEBOOKLM_REVIEW_PACKET_BLOB: 024977fcf4d3a9e351662cf5eb4150bde158aa45
-CURRENT_CANDIDATE_STATUS: AFFECTED_DELTA_C_NOTEBOOKLM_REVIEW_PENDING; not full-Topic newly signed PASS
-PUBLIC_CANONICAL_ITEM_ID: THPT-G12-B14-W07; CONTENT_VERSION: 2 (correct circle-vs-disk mathematical key; unique canonical)
-CURRENT_LEARNER_D6: TOP18-O23 FirstTry and Practice real steps; TOP18-O38 compares sphere surface vs ball interior
-UNTOUCHED: all other 246 item identities, all 40 outcomes, all 247 disclosure blocks, all *other* Written /5 rubric criteria, twelve replay-only public selfchecks, RD1. W07 stem/key/solution/rubric are intentionally changed at same ITEM_ID v2.
-HISTORICAL_CONTENT_READY: original previous snapshot at learner blob bcc7cb6c57ea3cddbfae312a1fe2d31c0791b3f4 remains immutable in Git history.
-RELEASE_AUTHORIZATION: NO
+TARGETED_NOTEBOOKLM_REVIEW_PACKET_BLOB: 390c9c6809ad888ccb5d621478c51502e2d0f2fb
+Q15_PENDING: promote one active canonical v2 under controlled multi-consumer update; no implicit change to signed shared v1
+STATE: BLOCKED_BY_AUTHORING
+BLOCKERS: W07_V2_SINGLE_ACTIVE_CANONICAL_PROMOTION_Q15_Q18
 
 ---
 <!-- TOP18_DOT_ZERO_NORM_CURRENT_20261120 -->
