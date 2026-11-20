@@ -9,8 +9,8 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic08-limits-continuity/Temp_TOPIC08_R05_STUDENT_FIRST_58_CANONICAL_VISIBLE_20261115.md
-SOURCE_BLOB: b3d24c35675d4b39fb8d14c201b7d965d1183f44
-ACADEMIC_SOURCE_BLOB: b3d24c35675d4b39fb8d14c201b7d965d1183f44
+SOURCE_BLOB: b10b1ca94377d8dc2ffffcc5d5211c24514369c6
+ACADEMIC_SOURCE_BLOB: b10b1ca94377d8dc2ffffcc5d5211c24514369c6
 PREVIOUS_R04_SOURCE_BLOB: 8fd1c9d223ccab794ae20fc8f0206df32f0671c4
 PREVIOUS_R04_AUTHOR_RECEIPT_BLOB: c3cfa8ca4ec9c05710fed4ab2428f3d2814eec07
 PUBLIC_ORIGINAL36_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC08_LIMITS_CONTINUITY_ORIGINAL36_SGK_PLACEMENT_INDEX_R05_20261115.md
@@ -97,3 +97,10 @@ PED_Q09_Q14: Bắt đầu mỗi kiến thức bằng câu hỏi và tiền đề
 
 <!-- TOP08_OWNER_EDITORIAL_DELTA_A_20261119 -->
 Owner ΔA 19/11: 14 previously unmarked existing mathematical explanations for limits/continuity received typed **Định nghĩa/Tính chất/Định lý/Công thức/Phương pháp** headings. 4 existing formal labels unchanged. Former single learner `178ccc6f1b7c94c9db1146c626efc4dca319b149`, current `b3d24c35675d4b39fb8d14c201b7d965d1183f44`; inverse-prefix byte check verifies all lesson narrative, formula and domain text, 18 complete examples, 18 Vận dụng/Đối chiếu, 3 diagrams, bank IDs/selfchecks unchanged. No new theorem or hypothesis, `CONTENT_READY` preserved; reviewer retest/website integration not triggered.
+
+## 20/11/2026 — S1 G11 T1 B17 targeted Knowledge delta C: TOP08-O15/O16
+- Current learner `b10b1ca94377d8dc2ffffcc5d5211c24514369c6`, prior `b3d24c35675d4b39fb8d14c201b7d965d1183f44` is Git historical. Current Topic source was missing explicit **continuity on half-open/half-infinite intervals** under O15 and explicit S1 basic **trigonometric function continuity with domain** under O16.
+- Matched official-text transcription SGK Toán 11 tập 1 B17 printed pp120–121 (see https://www.sgkvn.com/lop-11-14/ket-noi-tri-thuc-voi-cuoc-song-3/chuong-v-gioi-han-ham-so-lien-tuc-3448/bai-17-ham-so-lien-tuc-12680.html). O15 now states on [a,∞) right-continuous at included a, and on (a,b] left-continuous at b; example g(x)=x² on (−∞,2] where lim(x→2⁻)=4=g(2). No need to test excluded endpoints.
+- O16 now explicitly notes polynomial/sin/cos continuous on ℝ, tan continuous where cos≠0 and cot where sin≠0, and quotient only where denominator nonzero. Correct derivatives not needed for this theorem; justified as ratios of continuous sin/cos and domain guards.
+- **Scoped author mathematics/PED QA:** (i) half-interval definition matches included endpoint, (ii) x² left limit at 2=4, (iii) sin/cos domain ℝ, (iv) tan/cot excluded denominator zeros, (v) original module numbering unchanged. 5/5 targeted checks; `DELTA_C_ACADEMIC_MATERIAL`, not mere label replacement and not an independent NotebookLM verdict.
+- Exact suffix `# Luyện tập` / `# Tự kiểm tra` byte-identical, 58 existing canonical Practice and public selfcheck placement, written rubrics, diagrams, private RD1/Mastery unchanged. Full 22 Topic S1 review still PENDING.
