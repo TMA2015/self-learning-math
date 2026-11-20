@@ -32,3 +32,20 @@
 **Tab lỗi:** 8 bài không có D6/HELP tổng quát độc lập sau phân loại, nên không tạo thêm lỗi giả; giữ nội dung điều hướng/học tiếp/footnote vốn có. Không can thiệp bốn tab Golden, figure, MathJax, Q16 hay đường link Core.
 
 **G2_VERDICT:** G0/G1/G2 author self-QA trên nguồn, chưa có independent Academic/PED PASS. **G3–G5:** chờ phản biện phần chịu ảnh hưởng và chạy QA thực tế đúng HEAD, không merge/deploy chỉ vì thống kê/tự khẳng định.
+
+## Một bản thảo canonical cho B09–B12 (cập nhật cùng source)
+
+B09/B10/B11/B12 mỗi bài có **một manuscript nguyên bài** trong `prototypes/thpt/content-drafts/`. Bề mặt `docs/thpt-preview/sgk/...` được sinh từ **Section A Knowledge** của manuscript đó, không được là bản thảo học thuật cạnh tranh. Không thay thế hoặc sửa Rxx Q18 receipts lịch sử.
+
+| Canonical lesson | PREVIOUS_CANONICAL_GIT_BLOB | CURRENT_CANONICAL_GIT_BLOB |
+|---|---|---|
+| CANONICAL_B09 | `7f3139b851f6a1161de0b813eac2fa7909aae9ed` | `111a8601f21b5b7db488c99584b9f35f170adb9b` |
+| CANONICAL_B10 | `22ebe6b2e11f2a2c47752862a873c8c98fd6d7ec` | `56c980849b6eac27f96fdd3798bd2a350b90a1f3` |
+| CANONICAL_B11 | `3d59f161977d4222a2399f0b0d3db3ab9eba1e5f` | `ed203f5aea1ef5a6bdc57f8cf29bc13cee12a28a` |
+| CANONICAL_B12 | `510072650ec215bb0501c14045d603acad4c56cd` | `8d2f4d62a799dea6bc5f3b6990a7d726d626d4d9` |
+
+**CANONICAL_PARITY_CONTRACT:** Section A Knowledge must match the public Markdown exactly after removing *only* file-end newline characters. Preserve the original B09 P07, B10/B11 Core/Practice/Written and B12 formative JS/Written sections without semantic modifications. The old/new public learner Markdown Git blobs are separately source-locked in the eight-lesson matrix above. These old SHA values remain historical baselines; the new SHA fields describe the one current authoring manuscript.
+
+**B11 source-first special:** Previous owner-P2 source-first R01/R02 receipts are historical and must stay byte-identical. New Q18 manuscript+Markdown receipt extends that history rather than substituting it or inventing a second current manuscript.
+
+**STATE:** `AUTHORING_REVIEW_HOLD` pending affected-part DELTA_C independent Academic/PED review, then G3–G5 appropriate scoped QA and release gates. No self-granted content PASS/P2.
