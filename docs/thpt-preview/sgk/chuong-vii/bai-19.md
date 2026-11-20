@@ -1,5 +1,13 @@
 # Bài 19. Phương trình đường thẳng
 
+<style>
+/* B19-only semantic Golden component colors; keep shared THPT/THCS CSS frozen. */
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVII-TRY01"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card {background:#e8f7f2;border-color:#a9dccc;border-left-color:#087d69;color:#174137}
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVII-TRY01"]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card {background:#eaf1fc;border-color:#a5bee5;border-left-color:#4879c2;color:#193d66}
+[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVII-TRY01"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card {background:#193d36;border-color:#447e70;border-left-color:#76dfc7;color:#e9fff7}
+[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVII-TRY01"]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card {background:#203551;border-color:#45658a;border-left-color:#8cb4ed;color:#ecf5ff}
+</style>
+
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VII · KIẾN THỨC SGK KNTT</p>
 <p class="thpt-r4-lead">Nhận biết vectơ pháp tuyến, vectơ chỉ phương và viết phương trình đường thẳng từ dữ kiện hình học.</p>
@@ -170,35 +178,37 @@
 
     ### 2.1. Phương trình tổng quát của đường thẳng
 
-    #### Vectơ pháp tuyến và vectơ chỉ phương
+    #### Vectơ pháp tuyến và điều kiện xác định đường thẳng
 
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Vectơ pháp tuyến:</strong> Một vectơ khác \(\vec0\) được gọi là pháp tuyến của đường thẳng \(\Delta\) khi giá của nó vuông góc với đường thẳng. Nếu \(\vec n=(a;b)\ne(0;0)\) là pháp tuyến thì mọi bội \(k\vec n\), với \(k\ne0\), cũng là pháp tuyến. Biết một điểm và một pháp tuyến sẽ xác định được duy nhất đường thẳng.</div>
 
+    **Đọc lại hình ở Khám phá.** Vectơ chỉ phương \(\vec u=(1,-2)\) nằm dọc đường \(2x+y=6\), còn \(\vec n=(2,1)\) dựng vuông góc. Điểm \(P(1,4)\) nằm trên đường vì \(2\cdot1+4=6\). Hai hướng có tích vô hướng bằng 0, nên không thể gọi cùng một vectơ là chỉ phương *và* pháp tuyến của đường đó.
 
-
-
-
-    **Cách đọc hình.** Quan sát vectơ chỉ phương \(\vec u=(1,-2)\) đi dọc đường \(2x+y=6\), còn \(\vec n=(2,1)\) vuông góc với đường. Điểm \(P(1,4)\) nằm trên đường vì \(2\cdot1+4=6\).
-    Đường thẳng \(\Delta\) nhận **vectơ pháp tuyến** \(\vec n=(a;b)\ne(0;0)\) khi \(\vec n\) vuông góc với đường thẳng. Đường thẳng nhận **vectơ chỉ phương** \(\vec u=(u_1;u_2)\ne(0;0)\) khi \(\vec u\) song song với đường thẳng.
-
-    Nếu \(\vec n=(a;b)\) thì có thể chọn \(\vec u=(-b;a)\). Cần phân biệt rõ vai trò hai vectơ, không lấy nhầm vectơ nối hai điểm làm pháp tuyến.
-
-    Qua điểm \(M_0(x_0;y_0)\) và pháp tuyến \(\vec n=(a;b)\):
+    Một đường qua điểm \(M_0(x_0;y_0)\), có pháp tuyến \(\vec n=(a;b)\), gồm đúng các điểm M sao cho \(\overrightarrow{M_0M}\perp\vec n\). Viết tích vô hướng bằng 0, ta được:
 
     \[
     a(x-x_0)+b(y-y_0)=0,\quad a^2+b^2>0.
     \]
 
-    Đây là phương trình tổng quát \(ax+by+c=0\).
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Kết luận — Phương trình tổng quát:</strong> Mọi đường thẳng trong mặt phẳng tọa độ đều có thể viết \(ax+by+c=0\), trong đó a, b <strong>không đồng thời bằng 0</strong>. Ngược lại, một phương trình như vậy biểu diễn một đường thẳng có pháp tuyến \((a;b)\). Một điểm thuộc đường thẳng khi và chỉ khi tọa độ của nó thỏa phương trình.</div>
+
+    Nếu \(\vec n=(a;b)\), ta có thể chọn \(\vec u=(-b;a)\) làm chỉ phương vì hai vectơ vuông góc; \(\vec n\) không phải chỉ phương. Chú ý điều kiện khác vectơ không: nếu a và b cùng bằng 0 thì biểu thức không xác định một đường thẳng duy nhất.
+
+    **Liên hệ với đồ thị hàm số.** Với \(b\ne0\), phương trình tổng quát biến đổi thành \(y=-\frac ab x-\frac cb\); vì thế đường thẳng không đứng là đồ thị của một hàm số dạng \(y=mx+p\). Nếu \(b=0\), ta có \(x=-\frac ca\) (\(a\ne0\)): đường đứng này **không** là đồ thị của hàm số y theo x. Với hàm bậc nhất \(y=mx+p\) (\(m\ne0\)), ta có pháp tuyến \((m;-1)\). Đây là mối liên hệ giữa kiến thức hàm số đã học và phương trình đường thẳng.
 
     ### 2.2. Phương trình tham số của đường thẳng
 
-    Với vectơ chỉ phương \(\vec u=(u_1;u_2)\), phương trình tham số là:
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Vectơ chỉ phương:</strong> Một vectơ khác \(\vec0\) được gọi là chỉ phương của đường thẳng nếu giá của nó song song hoặc trùng với đường đó. Đường thẳng nhận **vectơ chỉ phương** \(\vec u=(u_1;u_2)\ne(0;0)\) khi \(\vec u\) song song với đường thẳng; mọi bội khác 0 của vectơ chỉ phương vẫn là một vectơ chỉ phương.</div>
+
+    Cho đường thẳng đi qua một điểm \(M_0(x_0;y_0)\) và có \(\vec u=(u_1;u_2)\) làm chỉ phương. Điểm M nằm trên đường khi và chỉ khi \(\overrightarrow{M_0M}=t\vec u\) với một số thực t. So sánh từng tọa độ cho ta:
 
     \[
     \begin{cases}x=x_0+u_1t,\\y=y_0+u_2t,\end{cases}\qquad t\in\mathbb R.
     \]
 
-    Nếu đường thẳng đi qua \(A\) và \(B\), **phải có \(A\ne B\)** mới dùng được \(\overrightarrow{AB}\) làm vectơ chỉ phương.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Kết luận — Phương trình tham số:</strong> Từ một điểm và một vectơ chỉ phương khác 0, ta viết hai phương trình tọa độ dùng <strong>cùng một tham số t</strong>. Khi t chạy qua tất cả các số thực, điểm M chạy qua toàn bộ đường thẳng; t không nhất thiết là thời gian. Với chuyển động thực tế, miền t có thể được giới hạn thêm bởi bối cảnh.</div>
+
+    Nếu đường thẳng đi qua hai điểm \(A\) và \(B\), **phải có \(A\ne B\)** mới dùng được \(\overrightarrow{AB}\) làm vectơ chỉ phương. Khi đã có hai điểm phân biệt, em chọn một điểm gốc và lấy hiệu tọa độ để viết dạng tham số; muốn đổi sang tổng quát, chọn pháp tuyến vuông góc với hướng ấy.
 
 === "Ví dụ"
 
