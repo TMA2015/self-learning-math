@@ -13,13 +13,13 @@ CATALOG_TOPIC_ID: CD17
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: b5e24f5d39e83df46ada64a5b5665af9e0888e2f
+ACADEMIC_SOURCE_BLOB: 8877dd83aa804f7a4d665294d59faf511fcdb5bf
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC17_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 034147514b8a3d2b8af026575a4294673d38deb8
+REVIEW_RECEIPT_BLOB: 11db4d6cafc94f88d17dbcdf041f655bdceab030
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: f4465ddd4dedad670f7febdb3c163fa48567b1b0
+AUTHOR_A1_A7_BLOB: 9ea9bc3fa95a85cecf9a8374b203826b02e3acde
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: f4465ddd4dedad670f7febdb3c163fa48567b1b0
+AUTHOR_METADATA_BLOB: 9ea9bc3fa95a85cecf9a8374b203826b02e3acde
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHVII_B22_B27_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_THPT_TOPIC17_FRUSTUM_VOLUME_MODEL_R00_20261113.html
@@ -271,3 +271,7 @@ This handoff retains its prior file path and packet identifier for stable links 
 
 ## 20/11/2026 — current V2 Delta A/PED6
 - Learner `b5e24f5d39e83df46ada64a5b5665af9e0888e2f`, Q18 `034147514b8a3d2b8af026575a4294673d38deb8`, A1 `f4465ddd4dedad670f7febdb3c163fa48567b1b0`; frustum exploration now self-try before voluntary reveal, unchanged math and canonical bank. No website release claim.
+
+
+## 20/11/2026 — Current V2 after S1 B26 targeted ΔC
+- Learner 8877dd83aa804f7a4d665294d59faf511fcdb5bf, Q18 11db4d6cafc94f88d17dbcdf041f655bdceab030, A1 9ea9bc3fa95a85cecf9a8374b203826b02e3acde. Two missing S1 distance relations in O03/O05 restored in place, original canonical item bank and selfchecks untouched. No release integration or new external review claim.
