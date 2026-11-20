@@ -40,8 +40,13 @@ for(const n of [15,16,17,18]){
   const next=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(next("PREVIOUS_B17_SOURCE_BLOB"),r01,
    "B17 R02 source-equivalent display update must preserve original academic R01");
-  assert.equal(next("CANDIDATE_B17_SOURCE_BLOB"),expected,
-   "B17 Q18 current source must equal R02 exact Git blob");
+  const r03=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHVI_B17_OWNER_P2_LEARNER_READABILITY_R03_20261120.md"),"utf8");
+  const field03=k=>r03.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(field03("PREVIOUS_B17_SOURCE_BLOB"),next("CANDIDATE_B17_SOURCE_BLOB"),
+   "B17 PED R03 lineage must follow R02 exact source");
+  assert.equal(field03("CANDIDATE_B17_SOURCE_BLOB"),expected,
+   "B17 owner R03 pedagogy candidate is exact latest source");
  }else if(n===18){
   const r18=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHVI_B18_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261120.md"),"utf8");

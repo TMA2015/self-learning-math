@@ -63,8 +63,13 @@ for(const n of [15,16,17,18]){
   const next=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(next("PREVIOUS_B17_SOURCE_BLOB"),r01,
    "B17 Q18 display R02 must extend original R01 immutable source");
-  assert.equal(next("CANDIDATE_B17_SOURCE_BLOB"),expected,
-   "B17 current source must match signed R02 display-only candidate");
+  const afterR02=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHVI_B17_OWNER_P2_LEARNER_READABILITY_R03_20261120.md"),"utf8");
+  const f03=k=>afterR02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(f03("PREVIOUS_B17_SOURCE_BLOB"),next("CANDIDATE_B17_SOURCE_BLOB"),
+   "B17 new PED source follows R02 display-only historical receipt");
+  assert.equal(f03("CANDIDATE_B17_SOURCE_BLOB"),expected,
+   "B17 current source must match signed owner R03 pedagogic candidate");
  }else if(n===18){
   const r18=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHVI_B18_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261120.md"),"utf8");

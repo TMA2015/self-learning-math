@@ -71,9 +71,13 @@ const b17r02=read(ux+"G10_CHVI_B17_DISPLAY_MATH_SOURCE_EQUIVALENT_R02_20261120.m
 assert.equal(field(b17r02,"PREVIOUS_B17_SOURCE_BLOB"),
  field(b17,"CANDIDATE_B17_SOURCE_BLOB"),
  "B17 layout-only R02 must derive directly from R01 source");
-assert.equal(blob(read("docs/thpt-preview/sgk/chuong-vi/bai-17.md")),
+const b17r03=read(ux+"G10_CHVI_B17_OWNER_P2_LEARNER_READABILITY_R03_20261120.md");
+assert.equal(field(b17r03,"PREVIOUS_B17_SOURCE_BLOB"),
  field(b17r02,"CANDIDATE_B17_SOURCE_BLOB"),
- "B17 source must match R02 while B15/12–14/18 remain frozen");
+ "B17 semantic Golden R03 source extends R02 without history rewrite");
+assert.equal(blob(read("docs/thpt-preview/sgk/chuong-vi/bai-17.md")),
+ field(b17r03,"CANDIDATE_B17_SOURCE_BLOB"),
+ "B17 source must match R03 while B15/12–14/18 remain frozen");
 // B18 is now independently enhanced, never a frozen neighbor of B15.
 // Compare its historical UX source to the separate immutable R01 owner receipt.
 const b18=read(ux+"G10_CHVI_B18_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261120.md");

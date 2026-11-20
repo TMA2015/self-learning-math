@@ -1,5 +1,13 @@
 # Bài 17. Dấu của tam thức bậc hai
 
+<style>
+/* B17 only: owner-approved semantic Golden 3+1 palette; no shared CSS/runtime edit. */
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVI-TRY11"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card {background:#e8f7f2;border-color:#a9dccc;border-left-color:#087d69;color:#174137}
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVI-TRY11"]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card {background:#eaf1fc;border-color:#a5bee5;border-left-color:#4879c2;color:#193d66}
+[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVI-TRY11"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card {background:#193d36;border-color:#447e70;border-left-color:#76dfc7;color:#e9fff7}
+[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVI-TRY11"]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card {background:#203551;border-color:#45658a;border-left-color:#8cb4ed;color:#ecf5ff}
+</style>
+
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VI · BÀI 17</p>
 <p class="thpt-r4-lead">Từ đồ thị parabol đến định lí dấu, bảng xét dấu và bất phương trình bậc hai — học cách giải thích vì sao một khoảng nghiệm được chọn.</p>
@@ -10,24 +18,24 @@
 
     ### Cùng tìm hiểu
 
-    Khi đi trên một con đường có dạng parabol, có lúc ta ở phía trên, có lúc ở phía dưới mốc độ cao 0. Với đồ thị \(y=f(x)\), câu hỏi **\(f(x)>0\) khi nào?** cũng là câu hỏi: phần nào của đồ thị ở trên trục \(Ox\)? Điểm nằm trên trục \(Ox\) ứng với \(f(x)=0\). Vì thế, hãy bắt đầu từ vị trí của đồ thị và nghiệm, rồi mới ghi nhớ định lí dấu.
+    Ở Bài 16, em đã biết đồ thị hàm số bậc hai là một parabol. Tùy theo hệ số và số nghiệm, parabol có thể nằm hoàn toàn phía trên hoặc phía dưới trục hoành, chỉ chạm trục, hoặc cắt trục ở hai điểm. Vị trí ấy cho biết giá trị hàm số dương hay âm. Với đồ thị \(y=f(x)\), câu hỏi **\(f(x)>0\) khi nào?** cũng là câu hỏi: phần nào của đồ thị ở trên trục \(Ox\)? Điểm nằm trên trục \(Ox\) ứng với \(f(x)=0\). Ta sẽ học cách đọc dấu từ đồ thị, sau đó suy ra quy tắc xét dấu cả khi không vẽ được parabol.
 
-    Với \(f(x)=(x-1)(x-3)\), hai nghiệm là \(1\) và \(3\). Khi \(x<1\), cả hai thừa số âm nên tích dương; khi \(1<x<3\), tích âm; khi \(x>3\), cả hai thừa số dương nên tích dương. Em vừa tự lập được bảng dấu mà chưa phải ghi nhớ câu “cùng dấu với a ở ngoài”.
+    Với \(f(x)=(x-1)(x-3)\), hai nghiệm là \(1\) và \(3\). Khi \(x<1\), cả hai thừa số âm nên tích dương; khi \(1<x<3\), tích âm; khi \(x>3\), cả hai thừa số dương nên tích dương. Như vậy, chỉ bằng cách xem dấu của từng thừa số, em đã hiểu tại sao tam thức dương ở hai phía ngoài và âm ở khoảng giữa. Quy tắc xét dấu ở phần sau được rút ra từ chính nhận xét này.
 
-    Thử xét \(x=2\) ở khoảng giữa: \((2-1)(2-3)=-1<0\). Hai mốc 1 và 3 làm tích bằng 0. Như vậy, phương trình \(f(x)=0\) chỉ cho **ranh giới**, còn bất phương trình yêu cầu **toàn bộ các khoảng phù hợp**. Dấu \(>\) hay \(\ge\) quyết định loại hay giữ các mốc ấy.
+    Thử xét \(x=2\) ở khoảng giữa: \((2-1)(2-3)=-1<0\). Hai mốc 1 và 3 làm tích bằng 0. Kết quả này cho thấy phương trình \(f(x)=0\) chỉ cho **ranh giới**, còn bất phương trình yêu cầu **toàn bộ các khoảng phù hợp**. Dấu \(>\) hay \(\ge\) quyết định loại hay giữ các mốc ấy.
 
     ### Ví dụ trực quan
 
     **Từ đồ thị đến dấu.**
 
-    Một biểu thức \(ax^2+bx+c\) có thể dương ở nơi này, âm ở nơi khác. Thay từng x vô hạn lần là bất khả thi; ta dùng hình parabol và số nghiệm để suy dấu cả khoảng.
+    Một tam thức \(ax^2+bx+c\) có thể đổi dấu theo giá trị của x. Ta không thể thử lần lượt mọi số thực, nên cần một cách nhận biết dấu trên từng khoảng. Đồ thị parabol và các nghiệm của tam thức sẽ giúp ta làm điều đó.
 
-    Đã biết parabol của B16, hệ số a khác 0, biệt thức \(\Delta=b^2-4ac\) và đồ thị trên/dưới trục hoành.
+    Để hiểu phần này, em chỉ cần nhớ đồ thị parabol đã học ở Bài 16, ý nghĩa hệ số a khác 0 và biệt thức \(\Delta=b^2-4ac\) và đồ thị trên/dưới trục hoành.
 
     Tam thức bậc hai là \(f(x)=ax^2+bx+c\) với a≠0. Dấu của f(x) tại x chính là vị trí đồ thị so với trục Ox; nghiệm f(x)=0 là chỗ giao/tiếp xúc Ox. Số nghiệm được quyết định bởi \(\Delta\), còn hướng mở theo a.
 
 
-    Vì đây là tam thức bậc hai, trước tiên phải kiểm \(a\ne0\). Ta xét **cả dấu \(a\) lẫn \(\Delta\)**: chỉ riêng dấu \(c\) hoặc chỉ riêng số nghiệm chưa đủ để kết luận dấu trên toàn trục số.
+    Bước đầu tiên là kiểm \(a\ne0\). Ta xét **cả dấu \(a\) lẫn \(\Delta\)**: chỉ riêng dấu \(c\) hoặc chỉ riêng số nghiệm chưa đủ để kết luận dấu trên toàn trục số.
 
     **Vận dụng.** Với \(f(x)=x^2+2x+5\), tính \(\Delta\), xác định số nghiệm thực và dấu f(x) trên \(\mathbb R\).
 
@@ -45,9 +53,9 @@
 
     **Khi parabol chỉ chạm trục hoành.**
 
-    Một parabol có thể chỉ vừa chạm trục Ox rồi quay lại, thay vì cắt qua. Tại điểm chạm, giá trị bằng 0 nhưng dấu ở hai bên không đổi.
+    Không phải parabol nào cũng cắt trục hoành tại hai điểm. Có trường hợp nó chỉ chạm trục rồi quay về phía cũ. Khi ấy giá trị hàm số bằng 0 ngay tại điểm chạm, còn ở hai phía của điểm đó, dấu không đổi.
 
-    Biết biểu thức bình phương không âm và dấu a; hiểu nghiệm kép khi \(\Delta=0\).
+    Để giải thích hiện tượng này, hãy nhớ bình phương của một số luôn không âm và để ý dấu hệ số a. Khi \(\Delta=0\).
 
     Với \(\Delta=0\), tam thức viết được dưới dạng \(a(x-x_0)^2\). Nó bằng 0 tại x0, có dấu của a ở mọi điểm khác; vì bình phương không âm nên không có sự đổi dấu khi đi qua nghiệm kép.
 
@@ -70,9 +78,9 @@
 
     **Từ bảng dấu đến tập nghiệm.**
 
-    Điều kiện diện tích hay lợi nhuận thường yêu cầu không ít hơn một mức, nên đáp án là cả một khoảng giá trị x chứ không phải chỉ các nghiệm biên.
+    Trong nhiều bài toán, yêu cầu không phải tìm lúc biểu thức bằng 0 mà là tìm mọi giá trị làm nó không vượt quá hoặc đạt ít nhất một mức nào đó. Khi ấy đáp án thường là một khoảng, không chỉ là các nghiệm tại ranh giới.
 
-    Đã biết phân tích thành nhân tử, nghiệm 2 và 3 của \((x-2)(x-3)=0\), dấu tích và khoảng trên trục số.
+    Ta bắt đầu từ cách phân tích thành nhân tử và hai nghiệm 2, 3 của \((x-2)(x-3)=0\), dấu tích và khoảng trên trục số.
 
     Nghiệm của \(f(x)=0\) chia trục số thành những khoảng có dấu cố định. Để giải \(f(x)\le0\), ta chọn những khoảng mà f âm và **lấy cả các nghiệm bằng 0**; với dấu < thì bỏ các đầu mút.
 
@@ -95,9 +103,9 @@
 
     **Khi điều kiện thực tế còn quyết định đáp án.**
 
-    Có đủ dây rào chưa đảm bảo mọi chiều rộng đều tạo được vườn hình chữ nhật; chiều dài còn lại phải dương và diện tích cần đạt mức đặt ra.
+    Các khoảng nghiệm tìm được trong đại số chưa chắc đều có ý nghĩa ngoài thực tế. Chẳng hạn, khi dùng dây rào làm vườn hình chữ nhật, chiều rộng và chiều dài đều phải dương. Ta cần đồng thời đáp ứng yêu cầu diện tích.
 
-    Biết diện tích S=chiều rộng×chiều dài, ba cạnh rào có hai chiều rộng x và một chiều dài L; nghiệm bất phương trình bậc hai.
+    Muốn lập bài toán, em nhớ công thức diện tích S = chiều rộng × chiều dài. Vì chỉ rào ba cạnh sát tường, số mét dây rào được dùng cho hai cạnh rộng x và một cạnh dài L, chứ không phải cả bốn cạnh.
 
     Với 20 m dây rào ba cạnh sát tường, đặt x là chiều rộng, chiều dài còn lại \(20-2x>0\) đòi \(0<x<10\). Diện tích \(S(x)=x(20-2x)\). Bất phương trình S≥48 cho khoảng x, nhưng phải **giao với miền hình học** trước khi kết luận.
 
@@ -119,9 +127,9 @@
 
     **Khi một bất phương trình phải đúng với mọi số thực.**
 
-    Để một thiết kế đảm bảo điều kiện dương với **mọi** x, ta không thể kiểm vài giá trị mẫu mà phải loại hết khả năng biểu thức bằng 0 hoặc âm.
+    Có bài yêu cầu tam thức dương với **mọi** giá trị x, không chỉ với vài giá trị em thử. Vì thế ta cần một điều kiện bảo đảm parabol luôn nằm phía trên trục hoành, kể cả ở điểm thấp nhất của nó.
 
-    Ôn \(\Delta=b^2-4ac\), định lí dấu với \(a>0\), \(\Delta<0\) thì tam thức dương mọi x. **Lưu ý về phạm vi bài học:** Trong các bài toán tam thức bậc hai cơ bản, hệ số a cố định và khác 0; nếu a phụ thuộc tham số và có thể bằng 0 thì đó là trường hợp cần xem xét riêng, không áp dụng ngay bảng dấu của tam thức bậc hai.
+    Trước khi làm, em nhắc lại \(\Delta=b^2-4ac\) và định lí dấu: với \(a>0\), \(\Delta<0\) thì tam thức dương mọi x. **Lưu ý về phạm vi bài học:** Trong các bài toán tam thức bậc hai cơ bản, hệ số a cố định và khác 0; nếu a phụ thuộc tham số và có thể bằng 0 thì đó là trường hợp cần xem xét riêng, không áp dụng ngay bảng dấu của tam thức bậc hai.
 
     Xét \(f_m(x)=x^2+2mx+4\). Do hệ số trước x² luôn \(1>0\), để \(f_m(x)>0\) với mọi \(x\in\mathbb R\) cần và đủ parabol mở lên **không chạm, không cắt** Ox: \(\Delta<0\). Nếu dấu yêu cầu là ≥0 thì \(\Delta\le0\) cũng được; phân biệt dấu là bản chất.
 
@@ -152,6 +160,8 @@
     f(x)=ax^2+bx+c,\quad a\ne0.
     \]
 
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Tam thức bậc hai:</strong> Một biểu thức dạng \(ax^2+bx+c\) được gọi là tam thức bậc hai khi hệ số của \(x^2\) khác 0, tức \(a\ne0\). Điều kiện này giúp phân biệt tam thức bậc hai với biểu thức bậc nhất hoặc hằng số.</div>
+
     Đặt \(\Delta=b^2-4ac\). Để xét dấu tam thức, cần biết dấu của hệ số \(a\) và số nghiệm thực của \(f(x)=0\). Đồ thị \(y=f(x)\) là một parabol: phía **trên trục hoành** biểu diễn \(f(x)>0\), phía **dưới** biểu diễn \(f(x)<0\).
 
 
@@ -178,6 +188,8 @@
     <tr><td>\(\Delta=0\)</td><td>Nghiệm kép \(x_0=-b/(2a)\)</td><td>Bằng \(0\) tại \(x_0\); <strong>cùng dấu</strong> với \(a\) ở mọi nơi khác</td></tr>
     <tr><td>\(\Delta&gt;0\)</td><td>Hai nghiệm \(x_1&lt;x_2\)</td><td><strong>Cùng dấu</strong> \(a\) khi \(x&lt;x_1\) hoặc \(x&gt;x_2\); <strong>trái dấu</strong> \(a\) khi \(x_1&lt;x&lt;x_2\); bằng \(0\) tại \(x_1,x_2\)</td></tr>
     </tbody></table></div>
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Định lí — Dấu của tam thức bậc hai:</strong> Nếu \(\Delta<0\), tam thức luôn cùng dấu với \(a\). Nếu \(\Delta=0\), tam thức bằng 0 tại nghiệm kép và cùng dấu với \(a\) ở các điểm khác. Nếu \(\Delta>0\), tam thức bằng 0 tại hai nghiệm; ngoài hai nghiệm cùng dấu với \(a\), giữa hai nghiệm trái dấu với \(a\).</div>
 
     **Mẹo nhớ sau khi hiểu:** Với hai nghiệm phân biệt, *ngoài cùng dấu \(a\); trong trái dấu \(a\)*. Khi \(\Delta=0\) hoặc \(\Delta<0\) không được vẽ nhầm ba khoảng như trường hợp hai nghiệm.
 
@@ -230,19 +242,19 @@
 
     **Đề bài.** Giải \((x-1)(x-3)\le0\).
 
-    **Vì sao chọn cách này?** Biểu thức đã phân tích thành tích nên xét dấu từng thừa số theo hai nghiệm 1 và 3 trực tiếp hơn khai triển.
+    **Phân tích:** Biểu thức đã phân tích thành tích nên xét dấu từng thừa số theo hai nghiệm 1 và 3 trực tiếp hơn khai triển.
 
     **Lời giải.** Với \(x<1\), hai thừa số âm nên tích dương. Với \(1<x<3\), tích âm. Với \(x>3\), tích dương. Tại \(x=1,3\) tích bằng 0. Vì đề yêu cầu \(\le0\), tập nghiệm là \([1,3]\).
 
     **Kiểm lại:** Thử \(x=2\) được \((2-1)(2-3)=1\cdot(-1)=-1\le0\), nên 2 thuộc tập nghiệm. Thử \(x=0\) được \((-1)(-3)=3>0\), nên 0 không thuộc tập nghiệm. Hai phép thử phù hợp với bảng dấu.
 
-    **Tự luyện thêm.** Em tự giải ba câu dưới đây bằng quy tắc xét dấu, sau đó mới mở lời giải để kiểm tra.
+    **Vận dụng.** Em tự giải ba câu dưới đây bằng quy tắc xét dấu, sau đó mới mở phần Đối chiếu.
 
     1. Xét dấu \(h(x)=2x^2+3x+5\) trên \(\mathbb R\).
     2. Giải \(x^2-5x+6<0\).
     3. Giải \(-(x-2)^2\le0\).
 
-    ??? question "Xem lời giải ba câu tự luyện"
+    ??? question "Đối chiếu ba câu Vận dụng"
 
         <ol>
         <li><span class="arithmatex">\(\Delta=9-40=-31<0\)</span>, <span class="arithmatex">\(a=2>0\)</span> nên <span class="arithmatex">\(h(x)>0\)</span> với mọi <span class="arithmatex">\(x\in\mathbb R\)</span>.</li>
@@ -257,7 +269,7 @@
 
     **Đề bài.** Dùng \(18\) m lưới rào ba cạnh một hình chữ nhật sát bức tường. Gọi \(x\) (m) là chiều rộng vuông góc tường, \(0<x<9\); chiều còn lại là \(18-2x\). Diện tích \(S(x)=x(18-2x)\). Hãy tìm các giá trị của \(x\) để diện tích \(S(x)\ge36\) m².
 
-    **Vì sao chọn cách này?** Ba cạnh dùng lưới nên cạnh dọc tường là \(18-2x\), khác với bài rào bốn cạnh. Cần giữ \(0<x<9\) trước khi giải, rồi giao nghiệm đại số với miền chiều dài dương.
+    **Phân tích:** Ba cạnh dùng lưới nên cạnh dọc tường là \(18-2x\), khác với bài rào bốn cạnh. Cần giữ \(0<x<9\) trước khi giải, rồi giao nghiệm đại số với miền chiều dài dương.
 
     **Lời giải.** Từ điều kiện về diện tích, ta giải
 
@@ -277,6 +289,8 @@
 
     **Đề bài.** Một quả bóng được ném lên từ độ cao \(5\) m. Trong thời gian bay, độ cao (m) sau \(t\) giây được mô tả bởi \(h(t)=-5t^2+20t+5\). Hỏi quả bóng ở độ cao **ít nhất \(20\) m** trong khoảng thời gian nào?
 
+    **Phân tích:** Thời gian là đại lượng không âm và chỉ xét khi bóng còn bay. Ta sẽ xác định khoảng thời gian mô hình có ý nghĩa trước, rồi giải bất phương trình thể hiện cụm từ *ít nhất 20 m*.
+
     **Lời giải.**
 
     **Bước 1 — điều kiện mô hình.** \(t\ge0\) và quả bóng còn ở trên mặt đất, tức \(h(t)\ge0\). Giải \(h(t)=0\) được \(t=2\pm\sqrt5\), nên thời gian bay theo mô hình là \(0\le t\le2+\sqrt5\) (giây).
@@ -293,7 +307,7 @@
 
     **Tự kiểm:** \(h(1)=h(3)=20\) m, \(h(2)=25\) m, còn \(h(0)=5\) m. Nhờ đó em kiểm được dấu \(\ge\) phải lấy hai đầu mút và không được chọn mọi thời điểm ngoài khoảng bay.
 
-    **Khi nào dùng cách này?** Khi đại lượng cần đạt một ngưỡng (*ít nhất*, *không vượt quá*, *lớn hơn*…), hãy lập bất phương trình, giải theo dấu tam thức rồi **giao với miền có ý nghĩa** của đại lượng. Không dùng những nghiệm chỉ đúng về đại số nhưng vô nghĩa về vật lí.
+    **Ghi nhớ cách áp dụng:** Khi đại lượng cần đạt một ngưỡng (*ít nhất*, *không vượt quá*, *lớn hơn*…), hãy lập bất phương trình, giải theo dấu tam thức rồi **giao với miền có ý nghĩa** của đại lượng. Không dùng những nghiệm chỉ đúng về đại số nhưng vô nghĩa về vật lí.
 
 
 
@@ -311,7 +325,7 @@
 
     đúng với mọi \(x\in\mathbb R\).
 
-    **Vì sao chọn cách này?** Hệ số \(a=1\) không đổi theo \(m\); yêu cầu \(>0\) với *mọi* \(x\) buộc parabol không được cắt **hoặc chạm** trục hoành. Vì thế điều kiện đúng là \(\Delta<0\), không phải \(\Delta\le0\).
+    **Phân tích:** Hệ số \(a=1\) không đổi theo \(m\); yêu cầu \(>0\) với *mọi* \(x\) buộc parabol không được cắt **hoặc chạm** trục hoành. Vì thế điều kiện đúng là \(\Delta<0\), không phải \(\Delta\le0\).
 
     **Lời giải.** Vì \(a=1>0\), ta cần
 
@@ -328,7 +342,7 @@
         <p>Quy tắc xét dấu tam thức bậc hai chỉ dùng khi <strong>hệ số của x² khác 0</strong>. Nếu hệ số này phụ thuộc tham số m, trước tiên hãy xét riêng các giá trị m khiến nó bằng 0. Khi ấy biểu thức trở thành bậc nhất hoặc hằng số, cần xử lý riêng; với các giá trị m còn lại, mới áp dụng dấu của hệ số bậc hai và biệt thức Δ. Đây là cách kiểm tra điều kiện áp dụng phương pháp.</p>
 
 
-    [Chuyển đến Luyện tập và Vận dụng Chương VI](luyen-tap.md) để làm bài củng cố. Bạn có thể mở gợi ý và lời giải sau khi tự làm.
+    [Chuyển đến Luyện tập và Vận dụng Chương VI](luyen-tap.md) để làm bài củng cố. Em có thể mở gợi ý và lời giải sau khi đã tự thử.
 
 === "Lỗi thường gặp"
 
