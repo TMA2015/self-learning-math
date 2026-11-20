@@ -121,12 +121,63 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    receipt.includes("DELTA_C_ACADEMIC_MATERIAL")&&
    receipt.includes("OWNER_P2_PENDING")&&receipt.includes("P0=0")&&receipt.includes("P1=0"),
    "B23 source receipt must identify full four-outcome delta and no false owner P2");
-  const current=field("CANDIDATE_BLOB");
-  assert(/^[a-f0-9]{40}$/.test(current||"")&&current!==blobs[1],
-   "B23 new canonical source must be a distinct actual Git blob");
+  const r01=field("CANDIDATE_BLOB");
+  assert(/^[a-f0-9]{40}$/.test(r01||"")&&r01!==blobs[1],
+   "B23 R01 source must differ from immutable S1 ledger");
+  const r02file=path.join(root,"prototypes/thpt/ux795/G10_CHVIII_B23_OWNER_P2_UX_CORRECTION_Q18_R02_20261120.md");
+  let current=r01;
+  if(fs.existsSync(r02file)){
+   const r02=fs.readFileSync(r02file,"utf8");
+   const get=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(get("R02_PREVIOUS_SOURCE_BLOB"),r01,
+    "B23 R02 must extend immutable P1-published R01, never rewrite R01");
+   current=get("R02_CORRECTED_SOURCE_BLOB");
+   assert(/^[a-f0-9]{40}$/.test(current||"")&&current!==r01,
+    "B23 owner P2 correction must identify a distinct exact R02 Git blob");
+   for(const marker of ["G10-CHVIII-B23-G0G2-Q18","OWNER_P2_FAIL_RECEIVED",
+    "DELTA_A_UI","DELTA_C_ACADEMIC_MATERIAL","UX-P2-01","UX-P2-06"]){
+    assert(r02.includes(marker),"B23 R02 source-lock/owner defect ledger missing "+marker);
+   }
+  }
   const lesson=fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-viii/bai-23.md"));
   const gitBlob=require("node:crypto").createHash("sha1").update(Buffer.from("blob "+lesson.length+"\0")).update(lesson).digest("hex");
-  assert.equal(gitBlob,current,"B23 new candidate must exactly match signed source SHA");
+  assert.equal(gitBlob,current,"B23 current canonical source must match chained signed R01 to R02 SHA");
+
+  // B23 owner P2 regression source checks apply only when a signed R02 exists.
+  // The actual computed-style and click-to-open behavior were independently
+  // proven on this exact B23 source in scoped Chromium run #44707796075.
+  if(fs.existsSync(r02file)){
+   const x=lesson.toString("utf8");
+   const count=re=>[...x.matchAll(re)].length;
+   assert.equal(count(/^\s+\?\?\? question "Đối chiếu"$/gm),4,
+    "B23 must retain four voluntary source-locked Golden disclosures");
+   assert(x.includes('details.question>summary::before{display:none!important;')&&
+    x.includes('background:#eaf1fc!important'),
+    "B23 blue source-local Đối chiếu skin must hide misleading question-mark icon");
+   assert.equal(count(/thpt-r4-knowledge-conclusion thpt-r4-concept-card/g),2,
+    "B23 must keep two green concept cards");
+   assert.equal(count(/<div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card"/g),2,
+    "B23 must box formal addition and multiplication rules, not conditions");
+   assert.equal(count(/<p class="b23-condition">/g),3,
+    "B23 conditions must remain three readable unboxed paragraphs");
+   assert.equal(count(/<div class="thpt-g10-example-solution"/g),3,
+    "B23 worked solutions must have 3 genuine card containers");
+   assert(x.includes('.thpt-g10-example-solution{display:block;')&&
+    x.includes('border-left:4px solid #4879c2'),
+    "B23 Lời giải boxes need actual scoped border/background CSS");
+   assert.equal(count(/G10_B23_ADD_MULTIPLY_CHOICES_R02\.svg/g),2,
+    "B23 canonical figure must appear in both Discovery and SGK tabs");
+   assert(x.includes('**Cách đọc hình:** Ở khung bên trái')&&
+    !/hình canonical dùng chung|Cách đọc hình ở tab Kiến thức SGK|Ví dụ đọc nhánh/.test(x),
+    "B23 figure reading must address learners, and examples belong in Example tab");
+   const tipTitles=[...x.matchAll(/^\s+\?\?\? tip "([^"]+)"/gm)].map(y=>y[1]);
+   assert.equal(tipTitles.length,6,"B23 needs six D6 error disclosure titles");
+   assert.equal(new Set(tipTitles).size,6,"B23 cannot repeat generic D6 labels");
+   assert(tipTitles.every((v,i)=>v.startsWith("4."+(i+1)+".")&&v.length>32),
+    "B23 D6 titles must identify each distinct misconception");
+   console.log("PASS G10 B23 OWNER_P2 R02 source-regression: deliberate 4 Đối chiếu, 2 concept + 2 rule boxes + 3 conditions, 3 solution boxes, 2 SVG placements, 6 unique D6 labels");
+  }
+
   return current;
  }
  if(name==="B01"){
