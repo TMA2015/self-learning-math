@@ -193,6 +193,16 @@ Khi nói một học sinh **thuộc** câu lạc bộ, ta đang xét một cá t
 > \(x\in A\) nói phần tử x thuộc A; \(A\subseteq B\) khi mọi phần tử A đều thuộc B. Hai tập hợp bằng nhau khi chứa đúng cùng phần tử, có thể chứng minh hai chiều bao hàm. \(\varnothing\subseteq A\) với mọi A.
 
 
+**Từ tên nhóm đến cách viết tập hợp.** Một tập hợp có thể được mô tả bằng cách **liệt kê** các phần tử (chẳng hạn \(E=\{0;2;4;6\}\)) hoặc **nêu tính chất đặc trưng** (\(E=\{x\in\mathbb N\mid x<8,\ x\text{ chẵn}\}\)); hai cách này cho cùng một tập. Khi liệt kê, mỗi phần tử chỉ tính một lần, không phụ thuộc thứ tự viết; \(\varnothing\) là tập không có phần tử. Trước khi viết tập bằng tính chất, hãy xác định rõ miền của \(x\).
+
+**Các tập hợp số thường dùng.** Trước hết, \(\mathbb N=\{0;1;2;\ldots\}\) là tập số tự nhiên, còn \(\mathbb Z=\{\ldots;-2;-1;0;1;2;\ldots\}\) là tập số nguyên. Mọi số nguyên \(a\) đều viết được thành phân số \(a/1\). Vì vậy các số nguyên thuộc tập **số hữu tỉ** \(\mathbb Q=\{a/b\mid a,b\in\mathbb Z,\ b\ne0\}\); số thập phân hữu hạn và vô hạn tuần hoàn đều là số hữu tỉ. Ngược lại, các số thập phân vô hạn **không tuần hoàn** như \(\sqrt2\) là **số vô tỉ**, không thuộc \(\mathbb Q\). Tập số thực \(\mathbb R\) gồm tất cả số hữu tỉ và vô tỉ, nên có chuỗi bao hàm
+
+\[
+\boxed{\mathbb N\subseteq\mathbb Z\subseteq\mathbb Q\subseteq\mathbb R.}
+\]
+
+Đọc chuỗi này từ trái sang phải: một số tự nhiên chắc chắn là số nguyên, hữu tỉ và thực, nhưng chiều ngược không đúng. Ví dụ, \(-2\in\mathbb Z\) song \(-2\notin\mathbb N\); \(3/4\in\mathbb Q\) song \(3/4\notin\mathbb Z\); \(\sqrt2\in\mathbb R\) song \(\sqrt2\notin\mathbb Q\). Đây là lý do phải **chọn đúng tập số** trước khi xét một điều kiện. Với \(x^2=2\), tập nghiệm trong \(\mathbb Q\) là \(\varnothing\), còn trong \(\mathbb R\) là \(\{-\sqrt2;\sqrt2\}\).
+
 Xét \(A=\{1,2\}\) và \(B=\{x\in\mathbb N:1\le x\le2\}\). Hai cách mô tả cho đúng cùng các phần tử nên \(A=B\); để chứng minh hai tập bằng nhau, ta có thể chứng minh mỗi tập là tập con của tập kia. Trong \(A\), số 2 là một **phần tử**, ký hiệu \(2\in A\), còn \(\{2\}\) là một **tập con**, ký hiệu \(\{2\}\subseteq A\). Số 2 không đồng nhất với tập chỉ chứa số 2. Tập rỗng \(\varnothing\) không có phần tử nhưng vẫn là tập con của mọi tập.
 
 **Ví dụ**
@@ -317,7 +327,7 @@ Một tập số thực có thể được diễn tả bằng bất đẳng th�
 
 Một đầu mút có thể thuộc hợp nhưng không thuộc giao của hai khoảng không?
 
-Một điều kiện như “giữa 1 và 3” cần nói rõ **có lấy** 1 hoặc 3 không. Trên trục số, điều này được thể hiện bằng ngoặc: \((a,b)\) nghĩa \(a<x<b\), còn \([a,b]\) nghĩa \(a\le x\le b\). Khoảng \((a,b]\) bỏ a nhưng nhận b. Với vô cực, luôn dùng ngoặc tròn vì \(\pm\infty\) không phải một số thực có thể lấy làm đầu mút.
+Một điều kiện như “giữa 1 và 3” cần nói rõ **có lấy** 1 hoặc 3 không. Trên trục số, điều này được thể hiện bằng ngoặc: \((a,b)\) nghĩa \(a<x<b\), còn \([a,b]\) nghĩa \(a\le x\le b\). Khoảng \((a,b]\) bỏ \(a\) nhưng nhận \(b\), còn **nửa khoảng** \([a,b)\) nhận \(a\) nhưng bỏ \(b\). Nếu \(a<b\), \([a,+\infty)\) gồm mọi \(x\ge a\) và \((-\infty,b]\) gồm mọi \(x\le b\); ngược lại, \((a,+\infty)\) và \((-\infty,b)\) bỏ đầu mút hữu hạn. Với vô cực, luôn dùng ngoặc tròn vì \(\pm\infty\) không phải một số thực có thể lấy làm đầu mút.
 
 > **ĐỊNH NGHĨA**
 >
@@ -381,6 +391,7 @@ Từ \(40=26+30-|A\cap B|\), suy ra **16** bạn tham gia cả hai. Chỉ Toán:
 >
 > - **Mệnh đề** có giá trị đúng hoặc sai; mệnh đề chứa biến cần miền xét và giá trị của biến hoặc lượng từ. Phủ định của “mọi” là “tồn tại ít nhất một phần tử không thỏa”.
 > - **Kéo theo:** \(P\Rightarrow Q\) nghĩa là \(P\) là điều kiện đủ cho \(Q\), còn \(Q\) là điều kiện cần cho \(P\). Tương đương \(P\Leftrightarrow Q\) đòi kiểm **cả hai chiều**.
+> - **Các tập hợp số:** \(\mathbb N\subseteq\mathbb Z\subseteq\mathbb Q\subseteq\mathbb R\); số hữu tỉ viết được dưới dạng \(a/b\) với \(a,b\in\mathbb Z,\ b\ne0\), còn số vô tỉ không viết được như vậy.
 > - **Tập hợp:** \(A\cap B\) chứa các phần tử thuộc cả hai; \(A\cup B\) thuộc ít nhất một; \(A\setminus B\) thuộc A nhưng không thuộc B. Phần bù phải nói rõ tập vũ trụ \(U\).
 > - **Khoảng và bài toán đếm:** phân biệt dấu ngoặc nhận/loại điểm mút; với hai tập hữu hạn, \(|A\cup B|=|A|+|B|-|A\cap B|\), tránh đếm trùng vùng giao.
 
