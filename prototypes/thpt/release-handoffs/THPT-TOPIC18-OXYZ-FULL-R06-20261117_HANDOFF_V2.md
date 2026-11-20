@@ -1,11 +1,7 @@
-<!-- TOP18_W07_O38_O23_CURRENT_20261120 -->
-## AUTHORING content-first snapshot — review only the affected math and pedagogy
+<!-- TOP18_W07_O38_O23_CURRENT_CANDIDATE_NO_CROSS_SGK_MUTATION_20261120 -->
+## Academic candidate — source-corrected learner, signed SGK bank untouched
 
-Current learner `1ad945ea583ce7ee91df64b58d3f31b31c202cd3`; original G12 CHV canonical bank `a24abd682932e11761f7c85fa3a3d3cdd77b600e`; author Q18 `347fa49647e3cb0f4abddcbf00c54e0df2d4e7e6`; A1 metadata `7e4e325684078fa984b830306b3d215732925e07`; independent NotebookLM review request `06e3f32aa5857b12b3564e2ba98a2b74677017de`.
-
-**Material academic/PED delta**: one canonical original W07 `ITEM_ID=THPT-G12-B14-W07; CONTENT_VERSION=2` explicitly says **mặt cầu** not khối cầu; corrects intersection as **đường tròn** not **hình tròn/đĩa**; expands geometric proof; replaces irrelevant 'ý nghĩa vật lý' rubric with five points that align with the question. Student O38 clarifies interior of khối cầu vs surface; O23 FirstTry and Practice D6 teach how to draw and derive. Existing 40 outcomes, 247 answer disclosures, all other item IDs and protected RD1 preserved. Previous accepted immutable source `bcc7cb6c57ea3cddbfae312a1fe2d31c0791b3f4` stays historical CONTENT_READY.
-
-**New candidate is BLOCKED_BY_AUTHORING until affected NotebookLM Academic and PED verdicts**; this is not an SBT missing-page problem. The shared SGK canonical changed on this Draft only and its older SGK ready manifests are NOT implicitly transferred to v2; must reconcile affected consumers after independent review. No website integration, merge/deploy or Mastery activation.
+Latest blocked Topic learner `1ad945ea583ce7ee91df64b58d3f31b31c202cd3` gives a fully reasoned W07 v2 lesson answer/rubric and O38/O23 self-learning corrections. **Signed active original G12 CHV canonical remains unchanged at blob `11eb2834cfdb4a24685157f84666c2bb0767970a`.** The proposed W07 v2 original-bank version `a24abd682932e11761f7c85fa3a3d3cdd77b600e` exists only as a *past candidate blob*; it is embedded as exact W07 proposed item text in NotebookLM packet `024977fcf4d3a9e351662cf5eb4150bde158aa45`. Therefore no parallel ACTIVE canonical, no effect on signed SGK R01 or 79-lesson inventories. Affected author-Q18 `82a31554d8f6187e951c189ac2b6c34a1622d5ef`, A1 `418d516c6f4647e504efa4f3c061f0f569094a00`. Only after independent Academic + PED PASS may W07 v2 be promoted into the shared canonical and its dependent historical manifests reconciled under Delta C. Current Topic candidate remains **BLOCKED_BY_AUTHORING**; historic accepted source `bcc7cb6...` remains source-scoped CONTENT_READY. No SBT p25 requirement, merge/deploy, Mastery or RELEASE authorization.
 
 ---
 
@@ -27,17 +23,17 @@ Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
 ACADEMIC_SOURCE_BLOB: 1ad945ea583ce7ee91df64b58d3f31b31c202cd3
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_O40_O23_W07_AUTHOR_Q18_CONTENT_DELTA_20261120.md
-REVIEW_RECEIPT_BLOB: 347fa49647e3cb0f4abddcbf00c54e0df2d4e7e6
+REVIEW_RECEIPT_BLOB: 82a31554d8f6187e951c189ac2b6c34a1622d5ef
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R06_247_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_A1_A7_BLOB: 7e4e325684078fa984b830306b3d215732925e07
+AUTHOR_A1_A7_BLOB: 418d516c6f4647e504efa4f3c061f0f569094a00
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R06_247_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_METADATA_BLOB: 7e4e325684078fa984b830306b3d215732925e07
+AUTHOR_METADATA_BLOB: 418d516c6f4647e504efa4f3c061f0f569094a00
 Q01_FAMILY_AUDIT_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R02_Q01_SGK_PROBLEM_FAMILY_SCOPE_AUDIT_20261114.md
 Q01_FAMILY_AUDIT_BLOB: 052b06ea90d6191f125aef72f42d74dd9a6d86c8
 Q18_OUTCOME_ITEM_PED_AUDIT_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R02_Q18_40_OUTCOME_MATH_PED_ITEM_AUDIT_20261114.md
 Q18_OUTCOME_ITEM_PED_AUDIT_BLOB: 4785b3be15b49f968de27fad99fc311cb2f8bb1b
 S1_G12_CHII_ORIGINAL_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
-S1_G12_CHV_ORIGINAL_BLOB: a24abd682932e11761f7c85fa3a3d3cdd77b600e
+S1_G12_CHV_ORIGINAL_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a
 MODEL_ID: SLM-TOP18-OXYZ-GEOMETRY-R00
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_THPT_TOPIC18_OXYZ_SPHERE_GEOMETRY_R00_20261114.html
 INTERACTIVE_MODEL_BLOB: 1117d351d6818f1b4f7b40b5b42a5263b225849a
