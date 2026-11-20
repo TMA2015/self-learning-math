@@ -4,7 +4,7 @@
 **STANDARD:** SLM-THPT-QUALITY-ONE v3.2.0 Q01–Q18; Golden R4 và quy trình G0–G5 hiện hữu. Không thêm tiêu chuẩn/bộ test.  
 **SOURCE_SCOPE:** `docs/thpt-preview/sgk/chuong-vi/bai-{15,16,17,18}.md`; 4 canonical source riêng biệt, không nhân bản item/HELP.  
 **DELTA:** `DELTA_A_UI` chuyển vị trí, `DELTA_C_ACADEMIC_MATERIAL` tác động đường khắc phục theo outcome; không đổi lời giải/công thức/đáp án.  
-**OWNER_P2:** snapshot nghiệm thu cũ nguyên vẹn, thay đổi mới chưa có P2/Academic/PED verdict độc lập; status `AUTHORING_REVIEW_HOLD`.  
+**OWNER_P2:** snapshot nghiệm thu cũ nguyên vẹn; snapshot mới chưa có P2. Chuyển vị trí được tự xác minh theo `Q18_OWNER_SELF_VERIFIED_ENRICHMENT` v3.2 trên affected scope; độc lập reviewer **NOT_CLAIMED**.  
 **ISSUE:** #795 audit B23→B01.
 
 | LESSON | PREVIOUS_SOURCE_BLOB (Git) | CORRECTED_SOURCE_BLOB (Git) | HELP đã chuyển | D6 tổng quát còn |
@@ -23,5 +23,9 @@
 - Mỗi bài chỉ chuyển khối HELP đầy đủ (nguyên 5 bước), đổi tiêu đề khung đóng thành `Kiểm lỗi`, không đặt HELP trước khi học sinh thử. Bài B15–B18 không còn D6 có tính tổng quát độc lập tại tab 4, nên không tự viết lỗi mới cho đủ mục.
 - Giữ toàn bộ First Try, câu trả lời/lập luận/đáp án gốc, liên kết luyện, SVG/hình hiện hành, RD1/Q16, không ghi Mastery từ luyện tự đối chiếu. Tất cả lịch sử R01/R02/R03 trước đó vẫn khóa tại blob SHA của chính nguồn đã nghiệm thu.
 
-**G2:** author source placement kiểm tra đối chiếu từng item, 19 HELP IDs vẫn duy nhất; cần phản biện độc lập pedagogy chịu ảnh hưởng trước khi cho `CONTENT_READY`.  
+**G2:** `Q18_OWNER_SELF_VERIFIED_ENRICHMENT` affected placement: 19 HELP IDs duy nhất, ghép đúng từng First Try, 19 khung Kiểm lỗi đóng, không thay đáp án/công thức/hình, không tạo D6 giả; P0=0/P1=0 trên scope chuyển vị trí. Không nhận là độc lập NotebookLM PASS.  
 **G3–G5:** QA hiện hành và receipt SHA trên HEAD thực, test scoped theo phạm vi, nghiệm thu thiết bị thật sau publish nếu đủ cổng; không dùng CI làm Academic/PED/P2 PASS.
+
+## Chốt Q18 theo yêu cầu owner 20/11 — chỉ đổi chỗ
+
+Đã rà trực tiếp 4 file đích và tiền nhiệm theo 8 Git SHA ở bảng: B15 5 HELP, B16 5 HELP, B17 5 HELP, B18 4 HELP. Các marker `data-thpt-first-try-id` / `data-thpt-help-id` không đổi và không trùng; 19 chỉ dẫn năm bước được chuyển nguyên khối dưới đúng Đối chiếu trong Khám phá (bỏ tiêu đề vị trí cũ), 4/4 bài vẫn đủ Golden. Biểu thức toán cũ đều được giữ; các lời giải/đáp án không bị sửa. B16 đảo thứ tự HELP10/06–09 về đúng Vận dụng tương ứng; B18 dùng đúng HELP17 cho canonical B18-C01 sau đối chiếu nội dung. Không phát sinh năng lực/đề/đáp án/rubric mới, không thay Mastery/RD1/Final Submit. Kiểm Q08/Q14/Q15/Q16/Q18 affected scope, **không suy rộng thành Academic PASS mới của toàn chương**, không tự cấp Owner P2; browser và Deploy chỉ căn cứ exact candidate HEAD.
