@@ -53,8 +53,13 @@ for(const n of [15,16,17,18]){
   const f18=k=>r18.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(f18("BASELINE_PUBLISHED_B18_SOURCE_BLOB"),ux.candidate,
    "B18 must preserve exact original ChVI UX receipt/source lineage");
-  assert.equal(f18("CANDIDATE_B18_SOURCE_BLOB"),expected,
-   "B18 Q18 current canonical source must match owner signature");
+  const r02=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHVI_B18_OWNER_P2_GOLDEN_ERRORS_R02_20261120.md"),"utf8");
+  const f02=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(f02("PREVIOUS_B18_SOURCE_BLOB"),f18("CANDIDATE_B18_SOURCE_BLOB"),
+   "B18 Q18 latest pedagogy receipt must extend old R01");
+  assert.equal(f02("CANDIDATE_B18_SOURCE_BLOB"),expected,
+   "B18 Q18 current source exact new R02");
  }else if(n===16){
   const r16=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHVI_B16_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261119.md"),"utf8");
