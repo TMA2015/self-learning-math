@@ -57,6 +57,16 @@
 
 
 
+
+    <span data-thpt-help-id="HELP-G10-CHVI-TRY16" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        <ol><li><strong>Nhận diện lỗi:</strong> Chỉ đặt điều kiện một căn hoặc giải A=B rồi không kiểm miền.</li>
+        <li><strong>Tự chẩn đoán:</strong> Trong câu Vận dụng \(\sqrt{x+1}=\sqrt{2x-2}\), mỗi căn có điều kiện riêng. Em đã viết đủ cả hai điều kiện trước khi rút về phương trình không căn chưa? Hãy xác định giao miền.</li>
+        <li><strong>Kiến thức gốc:</strong> Với <span class="arithmatex">\(\sqrt{A(x)}=\sqrt{B(x)}\)</span>, đầu tiên yêu cầu <span class="arithmatex">\(A(x)\ge0\)</span> và <span class="arithmatex">\(B(x)\ge0\)</span>. Sau đó hai căn không âm bằng nhau <strong>khi và chỉ khi</strong> <span class="arithmatex">\(A(x)=B(x)\)</span> trong miền; đây là phép đổi tương đương *sau khi* đặt điều kiện.</li>
+        <li><strong>Tự sửa:</strong> Khoanh cả A(x),B(x), lập hai dấu ≥0, giao miền rồi mới biến đổi và thử.</li>
+        <li><strong>Luyện lại:</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B18-C02">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
     #### Một căn bằng biểu thức thường: vế phải phải không âm
 
 
@@ -84,6 +94,16 @@
 
 
 
+
+    <span data-thpt-help-id="HELP-G10-CHVI-TRY17" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        <ol><li><strong>Nhận diện lỗi:</strong> Giữ nghiệm x=−1 chỉ vì nghiệm phương trình sau bình phương.</li>
+        <li><strong>Tự chẩn đoán:</strong> Xét câu Vận dụng \(\sqrt{x+5}=x-1\). Sau khi bình phương, x=−1 xuất hiện. Hãy tính x−1 tại giá trị ấy rồi so với một căn bậc hai luôn không âm: em thấy điều gì sai?</li>
+        <li><strong>Kiến thức gốc:</strong> Với <span class="arithmatex">\(\sqrt{A(x)}=B(x)\)</span>, phải có <span class="arithmatex">\(B(x)\ge0\)</span> (và <span class="arithmatex">\(A(x)\ge0\)</span>); sau đó bình phương <span class="arithmatex">\(A(x)=B(x)^2\)</span>, giải và kiểm. Bình phương tự nó không bảo đảm mọi nghiệm ứng viên có dấu đúng.</li>
+        <li><strong>Tự sửa:</strong> Kiểm vế phải x−1≥0 trước khi xét nghiệm; thử tất cả ứng viên vào hai vế phương trình gốc.</li>
+        <li><strong>Luyện lại:</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B18-P01">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
     #### Nghiệm ngoại lai xuất hiện từ phép không tương đương
 
     Vậy nếu phương trình sau bình phương cho hai kết quả, có phải cả hai đều đúng? Không nhất thiết. Một kết quả có thể làm hai vế ban đầu khác dấu, dù khi bình phương chúng bằng nhau. Giá trị ấy gọi là **nghiệm ngoại lai**; ta phải kiểm tra từng ứng viên trong phương trình gốc.
@@ -105,6 +125,16 @@
 
 
 
+
+    <span data-thpt-help-id="HELP-G10-CHVI-TRY18" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        <ol><li><strong>Nhận diện lỗi:</strong> Cho cả hai nghiệm từ phương trình bình phương mà không thử lại.</li>
+        <li><strong>Tự chẩn đoán:</strong> Với câu Vận dụng \(\sqrt{2x+3}=x\), phương trình sau bình phương cho x=3 và x=−1. Hãy thay x=−1 vào hai vế gốc: căn bậc hai có thể bằng một số âm không?</li>
+        <li><strong>Kiến thức gốc:</strong> Nếu <span class="arithmatex">\(A=B^2\)</span> thì chỉ có <span class="arithmatex">\(|B|=\sqrt A\)</span>, chưa chắc <span class="arithmatex">\(\sqrt A=B\)</span>. Lý do có nghiệm ngoại lai là phép bình phương làm mất thông tin dấu. Một nghiệm cuối phải thỏa miền và phương trình gốc.</li>
+        <li><strong>Tự sửa:</strong> Tạo bảng hai cột ứng viên/kiểm gốc: từng x tính căn thật và vế phải có dấu đúng hay không.</li>
+        <li><strong>Luyện lại:</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B18-P01">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
     #### Độ dài hình học buộc nghiệm dương
 
     Không chỉ phương trình căn mới có điều kiện: trong bài toán thực tế, chính **ý nghĩa của đại lượng** còn giới hạn nghiệm. Hãy tưởng tượng một chiếc thang tựa vào tường. Độ cao, khoảng cách chân thang và chiều dài thang đều là các độ dài, nên không thể nhận giá trị âm.
@@ -124,6 +154,16 @@
 
         <div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> <span class="arithmatex">\(\sqrt{h^2+5^2}=13\Rightarrow h^2=169-25=144\)</span>. Vì h&gt;0 nên h=12 m; thử <span class="arithmatex">\(\sqrt{12^2+5^2}=13\)</span>.</p><p><strong>Vì sao:</strong> Nghiệm h=−12 bị loại do không biểu diễn độ dài. Tam giác 5–12–13 kiểm chính xác và đơn vị là mét.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
 
+
+    <span data-thpt-help-id="HELP-G10-CHVI-TRY19" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        <ol><li><strong>Nhận diện lỗi:</strong> Bỏ điều kiện h&gt;0, nhầm cạnh huyền thành h hoặc nhận nghiệm −12 m.</li>
+        <li><strong>Tự chẩn đoán:</strong> Tình huống đã học: chiếc thang dài 13 m tựa tường, chân thang cách tường 5 m; h là độ cao đầu thang trên tường (m). Em có đặt h>0 và đánh dấu **cạnh huyền 13 m** chưa? Nếu giải ra h=−12, tại sao không được nhận là độ cao?</li>
+        <li><strong>Kiến thức gốc:</strong> Khi một cạnh góc vuông là h&gt;0 và cạnh kia 5 m, cạnh huyền là <span class="arithmatex">\(\sqrt{h^2+25}\)</span>, phải phù hợp chiều dài thang cho trước. Giải căn rồi lọc h&gt;0 không chỉ vì toán căn mà vì <strong>ý nghĩa vật lý</strong> của ẩn.</li>
+        <li><strong>Tự sửa:</strong> Vẽ hình và đánh dấu <strong>cạnh huyền 13 m</strong> và <strong>cạnh góc vuông 5 m</strong>, viết h&gt;0, rồi thử lại định lí Pitago với nghiệm tìm được.</li>
+        <li><strong>Luyện lại:</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B18-P04">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
     ### Thuật ngữ, kiến thức và kỹ năng
 
     **Thuật ngữ:** Phương trình chứa căn, miền xác định, bình phương hai vế, biến đổi tương đương, nghiệm ngoại lai, thử lại nghiệm.
@@ -311,50 +351,6 @@
     Một điểm dễ nhầm khác là phép khai căn: với \(u\in\mathbb R\), ta có \(\sqrt{u^2}=|u|\); không được tự thay bằng \(u\) khi chưa biết dấu của \(u\).
 
     Bốn tình huống khắc phục dưới đây liên hệ trực tiếp với các câu **Vận dụng** trong bài. Mỗi tình huống đều nhắc lại dữ kiện cần thiết, chỉ rõ bước sai và hướng tự sửa; em không cần phải nhớ lại đề từ tab trước.
-
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY16" hidden></span>
-
-    ??? tip "Đặt điều kiện cho cả hai căn — 5 bước"
-
-        <ol><li><strong>Nhận diện lỗi:</strong> Chỉ đặt điều kiện một căn hoặc giải A=B rồi không kiểm miền.</li>
-        <li><strong>Tự chẩn đoán:</strong> Trong câu Vận dụng \(\sqrt{x+1}=\sqrt{2x-2}\), mỗi căn có điều kiện riêng. Em đã viết đủ cả hai điều kiện trước khi rút về phương trình không căn chưa? Hãy xác định giao miền.</li>
-        <li><strong>Kiến thức gốc:</strong> Với <span class="arithmatex">\(\sqrt{A(x)}=\sqrt{B(x)}\)</span>, đầu tiên yêu cầu <span class="arithmatex">\(A(x)\ge0\)</span> và <span class="arithmatex">\(B(x)\ge0\)</span>. Sau đó hai căn không âm bằng nhau <strong>khi và chỉ khi</strong> <span class="arithmatex">\(A(x)=B(x)\)</span> trong miền; đây là phép đổi tương đương *sau khi* đặt điều kiện.</li>
-        <li><strong>Tự sửa:</strong> Khoanh cả A(x),B(x), lập hai dấu ≥0, giao miền rồi mới biến đổi và thử.</li>
-        <li><strong>Luyện lại:</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B18-C02">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
-
-
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY17" hidden></span>
-
-    ??? tip "Loại nghiệm sai dấu ở vế phải — 5 bước"
-
-        <ol><li><strong>Nhận diện lỗi:</strong> Giữ nghiệm x=−1 chỉ vì nghiệm phương trình sau bình phương.</li>
-        <li><strong>Tự chẩn đoán:</strong> Xét câu Vận dụng \(\sqrt{x+5}=x-1\). Sau khi bình phương, x=−1 xuất hiện. Hãy tính x−1 tại giá trị ấy rồi so với một căn bậc hai luôn không âm: em thấy điều gì sai?</li>
-        <li><strong>Kiến thức gốc:</strong> Với <span class="arithmatex">\(\sqrt{A(x)}=B(x)\)</span>, phải có <span class="arithmatex">\(B(x)\ge0\)</span> (và <span class="arithmatex">\(A(x)\ge0\)</span>); sau đó bình phương <span class="arithmatex">\(A(x)=B(x)^2\)</span>, giải và kiểm. Bình phương tự nó không bảo đảm mọi nghiệm ứng viên có dấu đúng.</li>
-        <li><strong>Tự sửa:</strong> Kiểm vế phải x−1≥0 trước khi xét nghiệm; thử tất cả ứng viên vào hai vế phương trình gốc.</li>
-        <li><strong>Luyện lại:</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B18-P01">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
-
-
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY18" hidden></span>
-
-    ??? tip "Kiểm nghiệm ngoại lai sau bình phương — 5 bước"
-
-        <ol><li><strong>Nhận diện lỗi:</strong> Cho cả hai nghiệm từ phương trình bình phương mà không thử lại.</li>
-        <li><strong>Tự chẩn đoán:</strong> Với câu Vận dụng \(\sqrt{2x+3}=x\), phương trình sau bình phương cho x=3 và x=−1. Hãy thay x=−1 vào hai vế gốc: căn bậc hai có thể bằng một số âm không?</li>
-        <li><strong>Kiến thức gốc:</strong> Nếu <span class="arithmatex">\(A=B^2\)</span> thì chỉ có <span class="arithmatex">\(|B|=\sqrt A\)</span>, chưa chắc <span class="arithmatex">\(\sqrt A=B\)</span>. Lý do có nghiệm ngoại lai là phép bình phương làm mất thông tin dấu. Một nghiệm cuối phải thỏa miền và phương trình gốc.</li>
-        <li><strong>Tự sửa:</strong> Tạo bảng hai cột ứng viên/kiểm gốc: từng x tính căn thật và vế phải có dấu đúng hay không.</li>
-        <li><strong>Luyện lại:</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B18-P01">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
-
-
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY19" hidden></span>
-
-    ??? tip "Nhầm cạnh huyền hoặc chấp nhận chiều dài âm — 5 bước"
-
-        <ol><li><strong>Nhận diện lỗi:</strong> Bỏ điều kiện h&gt;0, nhầm cạnh huyền thành h hoặc nhận nghiệm −12 m.</li>
-        <li><strong>Tự chẩn đoán:</strong> Tình huống đã học: chiếc thang dài 13 m tựa tường, chân thang cách tường 5 m; h là độ cao đầu thang trên tường (m). Em có đặt h>0 và đánh dấu **cạnh huyền 13 m** chưa? Nếu giải ra h=−12, tại sao không được nhận là độ cao?</li>
-        <li><strong>Kiến thức gốc:</strong> Khi một cạnh góc vuông là h&gt;0 và cạnh kia 5 m, cạnh huyền là <span class="arithmatex">\(\sqrt{h^2+25}\)</span>, phải phù hợp chiều dài thang cho trước. Giải căn rồi lọc h&gt;0 không chỉ vì toán căn mà vì <strong>ý nghĩa vật lý</strong> của ẩn.</li>
-        <li><strong>Tự sửa:</strong> Vẽ hình và đánh dấu <strong>cạnh huyền 13 m</strong> và <strong>cạnh góc vuông 5 m</strong>, viết h&gt;0, rồi thử lại định lí Pitago với nghiệm tìm được.</li>
-        <li><strong>Luyện lại:</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B18-P04">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
-
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
