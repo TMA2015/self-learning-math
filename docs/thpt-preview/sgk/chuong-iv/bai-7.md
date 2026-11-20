@@ -41,6 +41,7 @@
 
 
 
+    <a id="HELP-G10-B07-01" aria-hidden="true"></a>
     <span id="help-g10-b07-01" data-thpt-help-id="HELP-G10-B07-01" hidden></span>
 
     ??? tip "Kiểm lỗi"
@@ -93,6 +94,7 @@
 
 
 
+    <a id="HELP-G10-B07-02" aria-hidden="true"></a>
     <span id="help-g10-b07-02" data-thpt-help-id="HELP-G10-B07-02" hidden></span>
 
     ??? tip "Kiểm lỗi"
