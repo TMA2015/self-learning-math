@@ -13,14 +13,14 @@ CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: d1a9fc26cb8061a4929da05aea8701ed6b3b2e82
+ACADEMIC_SOURCE_BLOB: 4a0342a04ca941af42dc965e8a4d1f5b507429cf
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC18_R06_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md (SIGNED AUTHOR_SELF_VERIFIED COMPOSITE OF R04+R05+R06; NOT independent NotebookLM)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_R06_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md
-REVIEW_RECEIPT_BLOB: 6057fbbce111c31517fc91941121b6bfaa99fffe
+REVIEW_RECEIPT_BLOB: 0488c078d53dd320fe85b69310f430e5f19ca106
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R06_247_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_A1_A7_BLOB: de99466e47f38c4c912718a7fee559f552fc5b5f
+AUTHOR_A1_A7_BLOB: e2ade0cbf51ea7e3b4affe999c8f3f98bc6d7812
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC18-OXYZ-FULL-R06-20261117_HANDOFF_V2.md
-AUTHOR_HANDOFF_BLOB: 85e8b7c076333b9e57f610b2c675549911ef7835
+AUTHOR_HANDOFF_BLOB: b341b3874e4acfe69b66b53f28741b493fe89652
 Q01_FAMILY_AUDIT_BLOB: 052b06ea90d6191f125aef72f42d74dd9a6d86c8
 Q18_SUBSTANTIVE_AUDIT_BLOB: 4785b3be15b49f968de27fad99fc311cb2f8bb1b
 S1_ORIGINAL_G12_CHII_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
@@ -105,13 +105,16 @@ The valid learner source is `prototypes/thpt/content-drafts/topic18-oxyz/Temp_TO
 This marks AUTHORING source custody complete, not full independent NotebookLM Topic PASS, Golden/MathJax/browser verification, official Readiness/Mastery, PR merge or website deployment.
 
 
-**18/11 final exact merged-base learner lock:** Git source blob `d1a9fc26cb8061a4929da05aea8701ed6b3b2e82`, Q18 author `6057fbbce111c31517fc91941121b6bfaa99fffe`, A1 `de99466e47f38c4c912718a7fee559f552fc5b5f`, one V2 `85e8b7c076333b9e57f610b2c675549911ef7835`. The previous fda1 learner source was superseded by a single documented non-math transition-heading line; old learner texts are immutable Git history. This remains SOURCE ONLY, and does not certify website/browser QA, independent protected Readiness or Mastery.
+**18/11 final exact merged-base learner lock:** Git source blob `4a0342a04ca941af42dc965e8a4d1f5b507429cf`, Q18 author `0488c078d53dd320fe85b69310f430e5f19ca106`, A1 `e2ade0cbf51ea7e3b4affe999c8f3f98bc6d7812`, one V2 `b341b3874e4acfe69b66b53f28741b493fe89652`. The previous fda1 learner source was superseded by a single documented non-math transition-heading line; old learner texts are immutable Git history. This remains SOURCE ONLY, and does not certify website/browser QA, independent protected Readiness or Mastery.
 
 
 **19/11 owner editorial source-lock:** chỉ chuẩn hóa 40 nhãn phát biểu; CONTENT_READY remains, một nguồn canonical, old source preserved in Git, no extra review/website deployment.
 
 
-**20/11 owner-authorized S1 completeness Delta C:** TOP18-O03 12/T1 B6 mandatory parallelepiped rule added in the existing formal callout; 5/5 targeted source assertions and formula derivation author-verified, 247 item identities/rubrics untouched. Learner `d1a9fc26cb8061a4929da05aea8701ed6b3b2e82`, Q18 `6057fbbce111c31517fc91941121b6bfaa99fffe`, A1 `de99466e47f38c4c912718a7fee559f552fc5b5f`, V2 `85e8b7c076333b9e57f610b2c675549911ef7835`, same `STATE: CONTENT_READY`; RELEASE still gated.
+**20/11 owner-authorized S1 completeness Delta C:** TOP18-O03 12/T1 B6 mandatory parallelepiped rule added in the existing formal callout; 5/5 targeted source assertions and formula derivation author-verified, 247 item identities/rubrics untouched. Learner `4a0342a04ca941af42dc965e8a4d1f5b507429cf`, Q18 `0488c078d53dd320fe85b69310f430e5f19ca106`, A1 `e2ade0cbf51ea7e3b4affe999c8f3f98bc6d7812`, V2 `b341b3874e4acfe69b66b53f28741b493fe89652`, same `STATE: CONTENT_READY`; RELEASE still gated.
 
 
-**20/11 final S1 compliance TOP18-O03/O05:** source `d1a9fc26cb8061a4929da05aea8701ed6b3b2e82`, Q18 `6057fbbce111c31517fc91941121b6bfaa99fffe`, A1 `de99466e47f38c4c912718a7fee559f552fc5b5f`, V2 `85e8b7c076333b9e57f610b2c675549911ef7835`; SGK12 T1 B6 p50,p56–57 rules now explicit, original 247 canonical IDs/solutions and all 40 outcomes unchanged. STATE=CONTENT_READY; independent Topic review and website RELEASE not claimed.
+**20/11 final S1 compliance TOP18-O03/O05:** source `4a0342a04ca941af42dc965e8a4d1f5b507429cf`, Q18 `0488c078d53dd320fe85b69310f430e5f19ca106`, A1 `e2ade0cbf51ea7e3b4affe999c8f3f98bc6d7812`, V2 `b341b3874e4acfe69b66b53f28741b493fe89652`; SGK12 T1 B6 p50,p56–57 rules now explicit, original 247 canonical IDs/solutions and all 40 outcomes unchanged. STATE=CONTENT_READY; independent Topic review and website RELEASE not claimed.
+
+
+**20/11 S1 G12 B15 Delta C:** strict canonical equation only u=(a,b,c) all nonzero; T26 problem/answer wording corrected, canonical identity unchanged. Learner `4a0342a04ca941af42dc965e8a4d1f5b507429cf`, Q18 `0488c078d53dd320fe85b69310f430e5f19ca106`, A1 `e2ade0cbf51ea7e3b4affe999c8f3f98bc6d7812`, V2 `b341b3874e4acfe69b66b53f28741b493fe89652`; 9/9 scoped self QA; owner authoring CONTENT_READY retained and RELEASE not granted.
