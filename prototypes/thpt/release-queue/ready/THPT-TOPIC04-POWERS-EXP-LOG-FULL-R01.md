@@ -14,12 +14,12 @@ CURRENT_PR: #890 Draft AUTHORING from previous #822, not merged/deployed
 CATALOG_TOPIC_ID: CD04
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 8608179c09dee12c6088c219721f095aa9406147
+ACADEMIC_SOURCE_BLOB: 2444022a5fec0f6b94de4002d8f08363e3b82453
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC04_R06_NUMBERING_DELTA_A_Q18_20261116.md (scoped AUTHOR_SELF_VERIFIED, no new independent Topic NotebookLM PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC04_R06_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: 71d6134f983138e3292c3731cba1f21091e6702b
+REVIEW_RECEIPT_BLOB: 30ee18347f59db6267ebfad04f1bfa7a9d0bf85b
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC04-POWERS-EXP-LOG-FULL-R06_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: b8747c9a8adaa07677252430cc3a8c62c0224902
+AUTHOR_HANDOFF_BLOB: da13cfebfdd41191d6ffcf8f9cc3cea0b9b8079b
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC04_POWERS_LOG_ORIGINAL49_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 7d257edda0a2d29ba063987a51c61980558dbab6
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC04_POWERS_LOG_NEW26_PUBLIC_CANONICAL_R01_20261112.md
@@ -54,13 +54,13 @@ SELF_CHECK_PUBLIC_REPLAY: 18 full question stems, no official Readiness/Mastery
 
 ## 18/11/2026 · Current learning source closure and unresolved QA scope
 
-- One current source `8608179c09dee12c6088c219721f095aa9406147`; signed scoped Q18 `71d6134f983138e3292c3731cba1f21091e6702b`; A1 `95e55b77af99925a2af65a36e6a01e01494a2a5f`; V2 `b8747c9a8adaa07677252430cc3a8c62c0224902`. Previously this ready record still pointed to the R05 learner and receipt despite the active R06 draft; pointers now corrected without duplicating packet.
+- One current source `2444022a5fec0f6b94de4002d8f08363e3b82453`; signed scoped Q18 `30ee18347f59db6267ebfad04f1bfa7a9d0bf85b`; A1 `9ce33741e2b76cdab3ca7321dd96dda1d775682f`; V2 `da13cfebfdd41191d6ffcf8f9cc3cea0b9b8079b`. Previously this ready record still pointed to the R05 learner and receipt despite the active R06 draft; pointers now corrected without duplicating packet.
 - Three genuine formal blocks + concise recap within Knowledge for exponent/negative exponent, log definition, and log-domain conditions. Earlier #890 D6, 16 MathJax and contextual fixes retained. The complete 75 learner Practice and 18 public question-only Selfchecks byte-identical to immediate predecessor `5f1d29bfb17c14206d3c02e5130d308dd6ced21a`.
 - No new independent full-Topic NotebookLM PASS claimed. Runtime/AP/mobile/Final Submit, original canonical source exact HEAD and owner RELEASE consent remain unchecked; CONTENT_READY in historical manifest is authoring-only and not evidence of published student functionality.
 
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — Current R06 academic source 8608179c09dee12c6088c219721f095aa9406147, source-bound Q18 author receipt 71d6134f983138e3292c3731cba1f21091e6702b, A1 metadata 95e55b77af99925a2af65a36e6a01e01494a2a5f, V2 b8747c9a8adaa07677252430cc3a8c62c0224902; 49 original SGK IDs + 26 Topic extension unchanged, signed previous snapshots remain historical.
+- [x] A1_SOURCE_SNAPSHOT — Current R06 academic source 2444022a5fec0f6b94de4002d8f08363e3b82453, source-bound Q18 author receipt 30ee18347f59db6267ebfad04f1bfa7a9d0bf85b, A1 metadata 9ce33741e2b76cdab3ca7321dd96dda1d775682f, V2 da13cfebfdd41191d6ffcf8f9cc3cea0b9b8079b; 49 original SGK IDs + 26 Topic extension unchanged, signed previous snapshots remain historical.
 - [x] A2_SGK_SBT_SCOPE — KNTT G11 tập 2 S1 Core: SGK B18–B21, printed SGK p4–24/SBT p4–19; owner original PDF SHA+visual printed-page index receipt 02/11/2026. SBT solutions p73–85, not old 117–134; SBT reference, no copyright copying.
 - [x] A3_NOTEBOOKLM_VERDICT — G11 ChVI original public reviewed 49 items historical independent NotebookLM PASS limited to original R01 source and two Delta B decimal corrections; 18 new Topic modules/26 original questions/1 SVG AUTHOR_SELF_VERIFIED Q18 with 113 direct checks, **not new NotebookLM PASS**.
 - [x] A4_ITEM_OUTCOME_IDS — 18 outcomes, 75 unique canonical PUBLIC IDs (49 references+26 new), 3–7 mapped to each; 12 Written one canonical library (8 old rubric 4 pts,4 new rubric 7 pts), 18 public reuse selfchecks no new IDs.
@@ -96,3 +96,6 @@ SELF_CHECK_PUBLIC_REPLAY: 18 full question stems, no official Readiness/Mastery
 
 
 **19/11 editorial owner ΔA:** unchanged formulas/outcomes/keys/rubrics; SOURCE_LOCK current, STATE remains CONTENT_READY.
+
+
+**20/11 G11 B19 S1 log ln e mandatory Delta C:** current learner `2444022a5fec0f6b94de4002d8f08363e3b82453`, Q18 `30ee18347f59db6267ebfad04f1bfa7a9d0bf85b`, A1 `9ce33741e2b76cdab3ca7321dd96dda1d775682f`, V2 `da13cfebfdd41191d6ffcf8f9cc3cea0b9b8079b`; affected 7/7 author-QA and SOURCE_READY retained by owner; 22-topic audit incomplete.
