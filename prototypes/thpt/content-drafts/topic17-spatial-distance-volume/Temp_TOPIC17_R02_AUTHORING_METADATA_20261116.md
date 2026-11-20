@@ -9,7 +9,7 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 STATE: AUTHORING_CONTENT_READY_SOURCE_ONLY
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 9c427674ea0263b8cf7e1e191f1f9a81c3261e91
+ACADEMIC_SOURCE_BLOB: b5e24f5d39e83df46ada64a5b5665af9e0888e2f
 ORIGINAL_G11_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_THPT_TOPIC17_FRUSTUM_VOLUME_MODEL_R00_20261113.html
 INTERACTIVE_MODEL_BLOB: cfb2bd522531167003eeae8e7342c6d1349ca425
@@ -150,3 +150,9 @@ Learner Knowledge 2.4 (TOP17-O10) no longer requires a non-embedded slider: dire
 - **Public visual versus auxiliary custody:** exactly **2 actual learner-visible SVG embeddings** (B26/B27) verified source SHA `26fb51f3af65ba7d86a2907f0eaff808d2d87532` and `a7bec7a20295d09ca6f32aae0e8910cef7bed9dc`. Historical “6 SVG proof” statements in old review narratives must **not** be interpreted as 6 rendered SVGs in this student file. Current optional frustum HTML model Git blob `cfb2bd522531167003eeae8e7342c6d1349ca425` vs old signed `727c05896a9d9bf95385b54559faa22917f1510e`: diff is 17 inserted Golden UI CSS lines **and one non-functional MODEL_ID HTML comment**, with all original HTML/JS/math lines byte-identical; `DELTA_A_UI`, not a mathematical/material update. Not an embedded functional slider or live browser PASS.
 - **S1 canonical owner:** G11 SGK Chapter VII source Git `afc8ec039213b87b4930f2d34d48c28d1fc6277f` confirmed on same current branch; 22 public SGK ID projections and original answers/rubrics retained. 12 lessons/outcomes, 12 worked examples, 12 First Tries, 37 Practice cards, 49 unique canonical IDs (22 SGK+12T+12P+3W), 8 public question-only replay, 49 balanced answer disclosures and no Topic official Readiness/Mastery, private RD1 upload or student-data changes. B22–B25 remain CĐ16, CĐ17 covers B26/B27 + integrated.
 - **Single READY history:** former R00 signed ready blob `359ff8026b193c37a6f9a98ea2344ecd1ff6c0c2` preserved **byte-identical** at `prototypes/thpt/release-queue/archive/THPT-TOPIC17-DISTANCE-VOLUME-FULL-R00_HISTORICAL_SIGNED_20261118.md`, then removed from active ready/REGISTER. Current sole R02-file-named packet has version R03 authoring content and one V2/ready/REGISTER after SHA relock. SOURCE CONTENT_READY author only, not website RELEASE permission.
+
+
+## 20/11/2026 — authoritative A1 learner/Q18 lock
+- ACADEMIC_SOURCE_BLOB: b5e24f5d39e83df46ada64a5b5665af9e0888e2f
+- REVIEW_RECEIPT_BLOB: 034147514b8a3d2b8af026575a4294673d38deb8
+- Current Delta A six formal labels and Delta C PED6 disclosure in O10 checked; original public canonical item body and source provenance unaffected.
