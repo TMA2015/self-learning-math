@@ -4,8 +4,8 @@ PACKET_ID: THPT-TOPIC06-TRIGONOMETRY-FULL-R06
 CONTENT_REVISION: R06
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_A1_A7_CURRENT_SOURCE_QA_20261118.md
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_A1_A7_CURRENT_SOURCE_QA_20261118.md
-AUTHOR_METADATA_BLOB: d15fc0de912a26d81612b7b478218f779fe4e4e9
-AUTHOR_A1_A7_BLOB: d15fc0de912a26d81612b7b478218f779fe4e4e9
+AUTHOR_METADATA_BLOB: 0779bffc3b6ef97bc6d11cb56d1e7f744134f41c
+AUTHOR_A1_A7_BLOB: 0779bffc3b6ef97bc6d11cb56d1e7f744134f41c
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
@@ -13,9 +13,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 493e6216d559c6544a7314f3df2b230fa3af528f
+ACADEMIC_SOURCE_BLOB: 9f6996d37e1972e7a2a2f283d062bf24cdbbc79f
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC06_R06_COMPOSITE_Q18_AUTHOR_SELF_QA_20261118.md
-REVIEW_RECEIPT_BLOB: a5702a167a4563f61aa397e99595409bb88413a0
+REVIEW_RECEIPT_BLOB: 1fe31c58908c6364b93aedac7239ef1e25e29040
 PUBLIC_ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHI_B01_B04_CONCEPT_FIRST_PED_R03_SOURCE_CANDIDATE_20261102.md
 PUBLIC_ORIGINAL_SGK_SOURCE_BLOB: 256ceb5edc5e02aec320e83e99c8e08e035654f3
 PUBLIC_ORIGINAL_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC06_TRIGONOMETRY_ORIGINAL46_CANONICAL_INDEX_R01_20261112.md
@@ -332,3 +332,8 @@ AUTHOR_SIGNOFF: TOP06_R06_CURRENT_V2_LOCKED_Q18_A1_CANONICAL_20261118
 - CURRENT_A1_BLOB: d15fc0de912a26d81612b7b478218f779fe4e4e9
 - Knowledge §2.4 targeted Delta C: 10 double-angle/product-sum identities/2 nonzero-denominator conditions checked. Unchanged 66 canonical Practice bodies, keys, rubrics, 16 no-Mastery selfchecks and visuals.
 - Historic source 787a5a15129785e1f8226314606052afa1f6000b remains archived snapshot. Full S1 audit 22 topics pending; authoring source only, no merge/deploy.
+
+
+## 20/11/2026 — Final owner S1 G11 B01/B02 source update
+- CURRENT_SOURCE_BLOB: 9f6996d37e1972e7a2a2f283d062bf24cdbbc79f; current Q18 blob 1fe31c58908c6364b93aedac7239ef1e25e29040; current A1 blob 0779bffc3b6ef97bc6d11cb56d1e7f744134f41c.
+- Final knowledge changes O06/O07/O08: complementary and pi-shift angle relations; tangent addition/subtraction with domain; double-angle, product-to-sum, sum-to-product formulas and concept-first derivation. Prior original 66 item bank/solution/rubric/Q16/SVG untouched. Intermediate source 493e6216d559c6544a7314f3df2b230fa3af528f is historical only.
