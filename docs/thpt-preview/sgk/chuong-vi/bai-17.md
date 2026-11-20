@@ -52,7 +52,7 @@
 
 
 
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY11" hidden></span>
+    <span id="help-g10-chvi-try11" data-thpt-help-id="HELP-G10-CHVI-TRY11" hidden></span>
 
     ??? tip "Kiểm lỗi"
 
@@ -87,7 +87,7 @@
 
 
 
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY12" hidden></span>
+    <span id="help-g10-chvi-try12" data-thpt-help-id="HELP-G10-CHVI-TRY12" hidden></span>
 
     ??? tip "Kiểm lỗi"
 
@@ -122,7 +122,7 @@
 
 
 
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY13" hidden></span>
+    <span id="help-g10-chvi-try13" data-thpt-help-id="HELP-G10-CHVI-TRY13" hidden></span>
 
     ??? tip "Kiểm lỗi"
 
@@ -156,7 +156,7 @@
 
 
 
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY15" hidden></span>
+    <span id="help-g10-chvi-try15" data-thpt-help-id="HELP-G10-CHVI-TRY15" hidden></span>
 
     ??? tip "Kiểm lỗi"
 
@@ -185,7 +185,7 @@
         <div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> Vì a=1&gt;0, yêu cầu tương đương <span class="arithmatex">\(\Delta=(2m)^2-4\cdot1\cdot4=4m^2-16&lt;0\)</span>, nên <span class="arithmatex">\(-2&lt;m&lt;2\)</span>.</p><p><strong>Vì sao:</strong> Điều kiện tương đương m²&lt;4. Nếu m=±2 thì Δ=0, tam thức chạm Ox và bằng 0 tại một x nên không thỏa dấu nghiêm ngặt &gt;0.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
 
 
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY14" hidden></span>
+    <span id="help-g10-chvi-try14" data-thpt-help-id="HELP-G10-CHVI-TRY14" hidden></span>
 
     ??? tip "Kiểm lỗi"
 
