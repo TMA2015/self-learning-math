@@ -212,34 +212,35 @@
 
 === "Ví dụ"
 
-    Trước khi xem lời giải, hãy xác định dữ kiện, điều phải tìm và lý do chọn cách giải. Sau đó kiểm tra lại điều kiện áp dụng và kết quả, thay vì chỉ nhìn phép tính cuối cùng.
-
-    ### Ví dụ — Từ điểm và pháp tuyến đến phương trình
+    ### 3.1. Ví dụ — Qua một điểm và một pháp tuyến
 
     **Đề bài.** Lập phương trình đường thẳng qua \(P(1,4)\) có vectơ pháp tuyến \(\vec n=(2,1)\). Tìm một vectơ chỉ phương.
 
-    **Vì sao chọn cách này?** Dữ kiện cho **pháp tuyến**, vì vậy phương trình tổng quát qua điểm là con đường trực tiếp nhất.
+    **Phân tích:** Đề đã cho pháp tuyến, vì thế ta viết ngay phương trình tổng quát qua điểm P, không cần tìm hệ số góc hay giả sử đường không đứng. Sau đó mới chọn vectơ vuông góc với pháp tuyến để có một chỉ phương khác 0. Điều kiện cần kiểm là pháp tuyến đã cho khác vectơ không.
 
-    **Lời giải.** \(2(x-1)+(y-4)=0\), hay \(2x+y-6=0\). Vectơ \(\vec u=(1,-2)\) có \(\vec u\cdot\vec n=2-2=0\), nên là một vectơ chỉ phương. 
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1">
+    <p><strong>Lời giải.</strong> Thế tọa độ P và pháp tuyến vào phương trình qua điểm: \(2(x-1)+(y-4)=0\), hay \(2x+y-6=0\). Chọn vectơ \(\vec u=(1,-2)\). Vì \(\vec u\cdot\vec n=2-2=0\) và \(\vec u\ne\vec0\), vectơ này là một chỉ phương của đường thẳng.</p>
+    </div>
 
-    **Kiểm lại:** \(P(1,4)\) thỏa \(2+4-6=0\).
+    **Kiểm lại:** \(P(1,4)\) thỏa \(2+4-6=0\). Vectơ pháp tuyến \(\vec n=(2,1)\) khác 0 và chỉ phương vừa chọn vuông góc với nó, nên cả điểm và hướng đều khớp đề.
 
-    ### Ví dụ 2 — Viết hai dạng phương trình của đường thẳng qua hai điểm
+    ### 3.2. Ví dụ — Viết hai dạng phương trình qua hai điểm
 
     **Đề bài.** Cho \(A(1;2)\), \(B(4;3)\). Hãy viết phương trình tổng quát và phương trình tham số của đường thẳng \(AB\).
 
-    **Vì sao chọn cách này?** Hai điểm phân biệt cho một vectơ chỉ phương; từ đó chọn một vectơ pháp tuyến để lập phương trình tổng quát.
+    **Phân tích:** Hai điểm phân biệt xác định hướng của đường thẳng thông qua \(\overrightarrow{AB}\). Ta dùng hướng ấy trực tiếp để viết tham số; muốn viết tổng quát thì chọn một pháp tuyến vuông góc với hướng. Cách này vẫn đúng cả với đường thẳng đứng, vì không phải chia cho hiệu hoành độ.
 
-    **Lời giải.** Ta có \(\overrightarrow{AB}=(3;1)\), nên một pháp tuyến là \((1;-3)\).
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2">
+    <p><strong>Lời giải.</strong> Ta có \(\overrightarrow{AB}=(3;1)\), nên một pháp tuyến là \((1;-3)\), vì tích vô hướng của hai vectơ bằng 0.</p>
+    <ul>
+    <li><strong>Dạng tổng quát:</strong> \((x-1)-3(y-2)=0\), hay \(\boxed{x-3y+5=0}\).</li>
+    <li><strong>Dạng tham số:</strong> \(x=1+3t,\ y=2+t,\ t\in\mathbb R\).</li>
+    </ul>
+    </div>
 
-    - Dạng tổng quát: \((x-1)-3(y-2)=0\), hay \(\boxed{x-3y+5=0}\).
-    - Dạng tham số: \(x=1+3t,\ y=2+t,\ t\in\mathbb R\).
-    - Kiểm tra: thế tọa độ \(A,B\) vào phương trình tổng quát đều cho \(0\).
+    **Kiểm lại:** Thế tọa độ \(A,B\) vào phương trình tổng quát đều cho \(0\); với t bằng 0 và 1, phương trình tham số lần lượt cho A và B. Về bản chất, điểm \(M\) thuộc đường thẳng khi \(\overrightarrow{AM}\perp\vec n\), còn dạng tham số đi theo hướng AB.
 
-    **Vì sao:** điểm \(M\) thuộc đường thẳng khi \(\overrightarrow{AM}\perp\vec n\); biểu thức tham số quét mọi bội số của vectơ chỉ phương.
-
-    !!! tip "Tự nhớ"
-        Trong \(ax+by+c=0\), không được để đồng thời \(a=b=0\). Hai phương trình khác hệ số vẫn có thể xác định **cùng một đường thẳng** nếu toàn bộ hệ số tỉ lệ.
+    **Lưu ý:** Trong \(ax+by+c=0\), không được để đồng thời \(a=b=0\). Hai phương trình có hệ số khác nhau vẫn có thể mô tả **cùng một đường thẳng** khi ba hệ số tương ứng tỉ lệ theo một số khác 0.
 
 === "Lỗi thường gặp"
 
