@@ -1087,6 +1087,9 @@ Trong cách chia [0;10),[10;20), số liệu đúng bằng 10 thuộc nhóm nào
 
 <details markdown="1"><summary>Lời giải</summary>
 
+**Đáp án canonical:** [10;20).
+
+
 Khoảng trái đóng nhận 10, khoảng trước mở tại 10 nên không nhận.
 
 </details>
@@ -1110,6 +1113,9 @@ Lấy đầu mút phải trừ đầu mút trái: 18-12=6.
 Các tần số 2,4,5,3 ứng với 4 nhóm. Tần số nhóm thứ ba là gì, cỡ mẫu?
 
 <details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án canonical:** 5; n=14.
+
 
 Tần số đọc tại cột thứ ba; n=2+4+5+3=14.
 
@@ -1135,6 +1141,9 @@ Ghép các số 5,10,10,19,20,29 vào [0;10),[10;20),[20;30). Lập bảng tần
 
 <details markdown="1"><summary>Lời giải</summary>
 
+**Đáp án canonical:** [1,3,2].
+
+
 5 ở nhóm 1; 10,10,19 nhóm 2; 20,29 nhóm 3; tổng 6.
 
 </details>
@@ -1146,6 +1155,9 @@ Ghép các số 5,10,10,19,20,29 vào [0;10),[10;20),[20;30). Lập bảng tần
 Với 4 nhóm [7;11),[11;15),[15;19),[19;23), có cùng độ rộng? Có chồng lấn?
 
 <details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án canonical:** Đều rộng 4, liền nhau và không chồng lấn.
+
 
 Mỗi nhóm rộng 11-7=4; hai nhóm kề nhau cùng biên nhưng một bên mở, một bên đóng.
 
@@ -1159,6 +1171,9 @@ Mỗi nhóm rộng 11-7=4; hai nhóm kề nhau cùng biên nhưng một bên m�
 
 <details markdown="1"><summary>Lời giải</summary>
 
+**Đáp án canonical:** [3,3,4].
+
+
 Nhóm 1 gồm 1,2,3; nhóm 2 gồm 4,5,6; nhóm 3 gồm 7,8,9,10.
 
 </details>
@@ -1170,6 +1185,9 @@ Nhóm 1 gồm 1,2,3; nhóm 2 gồm 4,5,6; nhóm 3 gồm 7,8,9,10.
 Tần số các khoảng điểm [0;4),[4;8),[8;12) là 6,9,5. Tỉ lệ lớp [4;8) bằng?
 
 <details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án canonical:** 9/20=45%.
+
 
 n=6+9+5=20, chia 9 cho 20. Tỉ lệ chỉ phản ánh số liệu trong khoảng.
 
@@ -1194,6 +1212,9 @@ Cho 20 quan sát và các nhóm có tần số [4,8,6,?]. Điền tần số cu�
 Hai bộ dữ liệu 2,3,4 và 2,2,4 cùng thuộc các nhóm [0;3),[3;6). Có thể có bảng ghép giống nhau?
 
 <details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án canonical:** Không: bộ thứ nhất [1,2], bộ thứ hai [2,1].
+
 
 Đếm phần tử dưới 3 và từ 3 đến dưới 6 cho từng bộ; không giả định các bộ có cùng bảng chỉ vì cùng miền.
 
@@ -1254,6 +1275,9 @@ Giá trị đại diện 5,15; (2·5+6·15)/8=100/8=12,5.
 Tần số [3,5,2,4] có các tần số tích lũy nào?
 
 <details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án canonical:** [3,8,10,14].
+
 
 Cộng dồn từ trái sang phải: 3, 3+5, 3+5+2, 3+5+2+4.
 
@@ -1351,6 +1375,9 @@ Mẫu B: [10;15)→3 | [15;20)→6 | [20;25)→9 | [25;30)→2. Lập bảng t�
 
 <details markdown="1"><summary>Lời giải</summary>
 
+**Đáp án canonical:** [3,9,18,20]; nhóm [20;25).
+
+
 n=20; 3n/4=15; tích lũy lần đầu ≥15 tại nhóm thứ 3.
 
 </details>
@@ -1386,6 +1413,9 @@ n=20; tích lũy [2,7,15,20]. Q1=50+(5-2)·10/5=56. Q3=60+(15-7)·10/8=70 (biên
 Bốn nhóm [0;2),[2;4),[4;6),[6;8) đều có tần số 7. Có mốt theo quy ước SGK không?
 
 <details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án canonical:** Không.
+
 
 Khi tần số các nhóm bằng nhau, SGK quy ước mẫu ghép nhóm không có mốt.
 
@@ -1694,6 +1724,9 @@ Bảng tần số 4 nhóm liên tiếp f=(4,8,12,8): lập tần số cộng d�
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
+**Đáp án canonical:** n=32; cộng dồn 4,12,24,32; Q₁ lớp 2; Q₃ lớp 3 (biên trên)
+
+
 Lập n=32; hai vị trí 8 và 24; dùng cộng dồn nhận đúng lớp. Ở mốc biên trên, nội suy lớp kề cho cùng giá trị nếu lớp liền nhau.
 
 **Các bước tự đối chiếu:**
@@ -1803,6 +1836,9 @@ Các nhóm [0;10),…,[40;50) có A f=(1,9,12,9,1), B f=(0,7,18,7,0). So sánh R
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
+**Đáp án canonical:** R_A=50, R_B=30; IQR_A≈14,44, IQR_B≈8,89
+
+
 Tính 2 R từ cận nhóm dương, n=32 mỗi mẫu; nội suy Q₁ và Q₃ bằng cộng dồn rồi trừ; A lớn hơn B theo cả R và IQR, với giới hạn xấp xỉ.
 
 **Các bước tự đối chiếu:**
@@ -1901,6 +1937,9 @@ Mỗi độ lệch c−x̄ bằng 0 nên tổng bình phương bằng 0.
 
 <details markdown="1"><summary>Lời giải</summary>
 
+**Đáp án canonical:** Giờ²
+
+
 Phương sai lấy bình phương sai lệch nên đơn vị bình phương.
 
 </details>
@@ -1985,6 +2024,9 @@ n=8; Σfc=32, x̄=4; Σfc²=1+27+75+49=152; s²=19−16=3; khớp tổng f(c−4
 Nếu s²=9 cm², độ lệch chuẩn s là bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
+
+**Đáp án canonical:** 3 cm
+
 
 s=√9=3 và đơn vị trở lại cm.
 
@@ -2076,6 +2118,9 @@ Nếu A có s thấp nhưng điểm trung bình cũng thấp hơn mục tiêu t�
 Hai máy có cùng mức đo trung bình 20, mẫu A tần số (2,6,2), B (4,2,4), cùng trung điểm 10,20,30. Tính hai s, đưa ra nhận xét có điều kiện.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
+
+**Đáp án canonical:** s_A≈6,32; s_B≈8,94; A ít dao động hơn theo tiêu chí này
+
 
 Hai trung bình bằng 20; phương sai A=40, B=80; lấy căn; so cùng đơn vị và chỉ nói độ ổn định trong mẫu.
 
