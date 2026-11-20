@@ -1,7 +1,7 @@
 # CĐ1 R07 — AUTHORING numbering-only Q18 custody
 
 CURRENT_SOURCE_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R07_NUMBERING_CONSISTENT_20261116.md
-CURRENT_SOURCE_BLOB: fefe797ee158ee357533605267496ed415a7681a
+CURRENT_SOURCE_BLOB: 98041b546daedde82a54f41b5c57b502eee6794f
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC01_R07_NUMBERING_DELTA_A_Q18_20261116.md
 CURRENT_Q18_RECEIPT_BLOB: f454e239f22df9c306ef69d1e82f0900f02a48ea
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -74,3 +74,9 @@ RELEASE_AUTHORIZATION: NO
 | `THPT-TOP01-ADD06` | `TOP01-O11` | TOPIC_PRACTICE | 89ae1cd2338f2c5c48b9af874a8b52b1306c8acd |
 
 **Source-lock và review:** 18 item SGK gốc + 2 SVG giữ nguyên nguồn và reviewer receipt lịch sử; 11 đoạn kiến thức và 11 Tự thử của R04 là DELTA_C, không thừa hưởng PASS R01/R03. Bản thảo R04 chưa được đóng gói V2 mới. Sáu item mới vẫn có một canonical source ở extension bất biến; không có đề RD1 kín trong tệp này.
+
+
+## 20/11/2026 — Bản thảo CĐ1 trang Kiến thức đã tự kiểm với SGK
+- SOURCE_HIEN_HANH: 98041b546daedde82a54f41b5c57b502eee6794f
+- REVIEW_RECEIPT_BLOB: 05545d0e8ad7989f95baa01e23f39bd81f009b06
+- S1 Toán 10 T1 Bài 1-2: đầy đủ logic, tập hợp; bổ sung 2 cách mô tả tập, N⊆Z⊆Q⊆R, hữu tỉ/vô tỉ, nửa khoảng.
