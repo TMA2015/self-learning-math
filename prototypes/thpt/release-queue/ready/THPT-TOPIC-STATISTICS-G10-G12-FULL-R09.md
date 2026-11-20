@@ -1,3 +1,7 @@
+<!-- TOP22_R09_15_CANONICAL_KEYS_HIDDEN_RESTORE_20261121 -->
+**21/11 CĐ22 Delta B source equivalence — actual learner content repaired:** 15/15 original signed canonical answer conclusions reinserted inside 15 opted-in `<details>`, **no new stem/key/solution/rubric/placement/ID**. New learner `e4546cb506a40f1345da74bb9b2be5f73088e78b`; source-locked Q18 `8f52a4187854524556b8f889bc3b01455d02c2f5`, A1/Q15 `43fbf957342bfb6ca7cf8d155680ecec79e22917`, one V2 `1ce059ce38e0125a64ac553f088e3a5e06f150a6`. 114 original Practice canonical, 127/127 balanced disclosures, 39 outcomes, 9 public question-only selfcheck unchanged. The previous learner `155f14cc191800d52fce98b0f7df6ab30bb0faf4` remains historical; only the exact 15 lines are new. **AUTHORING CONTENT_READY source-only pending HEAD CI**, no fake full independent review, no website/RELEASE authorization.
+
+---
 <!-- TOP22_S1_G10_B13_B14_FINAL_SCOPE_20261120 -->
 **20/11 owner-authorized AUTHORING Delta C:** Source `4ff6bfde83f55a1390661f11c71cc66873f3ecdb`, Q18 `ccdba12524d042242f6f157dbd0c5ee263b85729`, A1 `14611919df6208867ac7e63328593cfb05e5888b`, V2 `796d4a49a50d118ef5509d761549c820823bde96`: added two SGK notes B13 mode categorical and B14 n−1 alternate formula. 6/6 + 7/7 scoped math QA; 114 original canonical and all assessments unchanged. Current STATE remains CONTENT_READY, RELEASE scope/permissions unchanged.
 
@@ -21,10 +25,10 @@ AUTHOR_PR: 812
 CURRENT_PR: #812 Draft AUTHORING, no release or merge authorization
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md
-ACADEMIC_SOURCE_BLOB: 155f14cc191800d52fce98b0f7df6ab30bb0faf4
+ACADEMIC_SOURCE_BLOB: e4546cb506a40f1345da74bb9b2be5f73088e78b
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC_STATISTICS_G10_G12_R09_AUTHOR_TECHNICAL_Q18_RECEIPT_20261116.md — exact source R09 technical AUTHOR_SELF_VERIFIED, NOT independent NotebookLM
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC_STATISTICS_G10_G12_R09_AUTHOR_TECHNICAL_Q18_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: b4e842575c011a1efe24bb10ffa953bd19bbd652
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC22_R09_15_CANONICAL_KEY_RESTORE_AUTHOR_Q18_20261121.md
+REVIEW_RECEIPT_BLOB: 8f52a4187854524556b8f889bc3b01455d02c2f5
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC-STATISTICS-G10-G12-FULL-R09_HANDOFF_V2_20261116.md
 PUBLIC_SOURCE_INDEX: prototypes/thpt/shared-items/Temp_TOPIC_STATISTICS_G10_G12_CANONICAL_SOURCE_INDEX_R00_20261111.md
 PUBLIC_SOURCE_INDEX_BLOB: 51a6e99587187838aea61c5c72108adae7874d1d
@@ -53,9 +57,9 @@ AUTHORING_Q18_DELTA: R06→R07 student prose ONLY; technical Final Submit/websit
 PREVIOUS_AUTHORING_SOURCE_BLOB: 12f3af42c2e6b0f316355dcedfc34ec8b6136694
 PREVIOUS_AUTHORING_RECEIPT_BLOB: b3a2836d6d0a339648347a82f4332f9a69439dfb
 
-AUTHOR_HANDOFF_BLOB: 4aaf049dc6b68dcc36e72e80e553db27b69d502a
+AUTHOR_HANDOFF_BLOB: 1ce059ce38e0125a64ac553f088e3a5e06f150a6
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_SOURCE_EQUIVALENCE_114_Q15_20261116.md
-AUTHOR_A1_A7_BLOB: cb31bf55717fd1574030c31e52f5349dc401a350
+AUTHOR_A1_A7_BLOB: 43fbf957342bfb6ca7cf8d155680ecec79e22917
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_SOURCE_EQUIVALENCE_114_Q15_20261116.md
 AUTHOR_METADATA_BLOB: cb31bf55717fd1574030c31e52f5349dc401a350
 
