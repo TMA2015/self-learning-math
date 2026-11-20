@@ -16,14 +16,14 @@ CATALOG_TOPIC_ID: CD15
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_SPATIAL_PARALLELISM_R04_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 6579363666f07f13cf5c7e407b311a08f1e700e2
+ACADEMIC_SOURCE_BLOB: 7d133daacd85f0cdddf60fa76f2084de230bb621
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC15_R04_AUTHOR_SELF_QA_RECEIPT_20261116.md (author-self; NOT an independent NotebookLM verdict)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC15_R04_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 523f2038b195f7826c6830bc739c4b3dc8de93b3
+REVIEW_RECEIPT_BLOB: 177dff31fa304d61972bfe9e1e0af2038b158bc9
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_R04_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: e8d3d03c5a3a339eac9f68e41429fc0c8621de3c
+AUTHOR_A1_A7_BLOB: 2ad5d06fe025898f462647d94cba235dd69c73de
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC15-SPATIAL-PARALLELISM-FULL-R04_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: f45af01ba69aac67f16327494e04719782e6db6b
+AUTHOR_HANDOFF_BLOB: 92f9b1a0ccfd1274916af5fa2ddb83e2b9f20607
 ORIGINAL_SGK_SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_THPT_TOPIC15_LINE_PLANE_RELATION_R01_20261113.html
 INTERACTIVE_MODEL_BLOB: cf6510d5d964958982fae3ebce5823e35aeac639
@@ -100,3 +100,7 @@ CURRENT_PR: DRAFT_AUTHORING_NOT_MERGED
 - Corrected actual `TOP15-O21` worked-example and source-owned `THPT-TOP15-W02` (same item ID, `CONTENT_VERSION: 2`) misuse of scalar `AB·AD=0`. Correct directed dot vectors give `(2,0,0)·(0,1,1)=0` and `(2,0,0)·(-1,1,0)=-2` under oblique projection, with same rectangular source/parallel image lesson and unchanged W02 1+1+1+1 **4-point** rubric. This is `DELTA_C_ACADEMIC_MATERIAL` affected-scope self-verified math/PED Q18, no new independent NotebookLM reviewer verdict or forced review on trivial exact arithmetic.
 - **Current standalone Canvas model Git blob** `cf6510d5d964958982fae3ebce5823e35aeac639` reflects 17 added Golden UI CSS lines only compared with old historical `3f3c75765b6cddcaa53994027c45e79701d4d840`; HTML, JS and math code byte-exact; `DELTA_A_UI`. Browser AP and visual embedding remain RELEASE-specific.
 - Prior R02 ready manifest Git blob `6aafb53867cb699a7b270aecb9e165be3b6cc1b1` preserved **byte-identically** in `archive/THPT-TOPIC15-SPATIAL-PARALLELISM-FULL-R02_HISTORICAL_SIGNED_20261118.md`; R02 removed from current `ready/`. This R04 is the only active READY, matched to exactly one REGISTER row. No 2nd source/bank/independent Topic PASS, no private RD1, official Readiness/Mastery, WEBSITE RELEASE, merge or deploy.
+
+
+## 20/11/2026 current AUTHORING source
+- SOURCE 7d133daacd85f0cdddf60fa76f2084de230bb621, Q18 177dff31fa304d61972bfe9e1e0af2038b158bc9, A1 2ad5d06fe025898f462647d94cba235dd69c73de, V2 92f9b1a0ccfd1274916af5fa2ddb83e2b9f20607; three theorem titles concise, unchanged maths, no deploy.
