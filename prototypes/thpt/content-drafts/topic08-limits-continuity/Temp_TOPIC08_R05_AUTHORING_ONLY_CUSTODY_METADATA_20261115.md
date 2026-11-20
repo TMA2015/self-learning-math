@@ -2,9 +2,9 @@
 
 R03_IMMUTABLE_SOURCE_BLOB: bbb0169bd4809691b08963413abd16d20ae50073
 STUDENT_R05_PATH: prototypes/thpt/content-drafts/topic08-limits-continuity/Temp_TOPIC08_R05_STUDENT_FIRST_58_CANONICAL_VISIBLE_20261115.md
-STUDENT_R05_BLOB: b3d24c35675d4b39fb8d14c201b7d965d1183f44
+STUDENT_R05_BLOB: b10b1ca94377d8dc2ffffcc5d5211c24514369c6
 R05_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC08_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
-R05_Q18_RECEIPT_BLOB: 30f444c8ee367867372d8d4b6474cb686e79b89f
+R05_Q18_RECEIPT_BLOB: 952892b2d7930a689e3e5f02741bcdd5050584fc
 STATUS: R05_CURRENT_FORMAL_KNOWLEDGE_TARGETED_AUTHOR_SELF_VERIFIED
 
 ## 18/11 current learner-source custody and DELTA_C boundary
@@ -118,3 +118,9 @@ END_AUTHOR_SOURCE: SOURCE_LOCKED_R01
 
 
 **19/11 owner ΔA:** current learner `b3d24c35675d4b39fb8d14c201b7d965d1183f44` and Q18 `30f444c8ee367867372d8d4b6474cb686e79b89f`, all original math/18 outcomes/Q15/Q16 preserved; same CONTENT_READY.
+
+
+## 20/11/2026 — active A1 source lock for B17 O15/O16
+- STUDENT_R05_BLOB: b10b1ca94377d8dc2ffffcc5d5211c24514369c6
+- R05_Q18_RECEIPT_BLOB: 952892b2d7930a689e3e5f02741bcdd5050584fc
+- Half-open interval and basic trig continuity S1 statements restored. Source-only affected Delta C author math QA, original student Practice and Tự kiểm tra unchanged.
