@@ -87,7 +87,7 @@ Vì thế, khi khảo sát một hàm số, ta luôn tìm miền trước, rồi
 
 <!-- LESSON_ID: TOP10-M04; OUTCOME_ID: TOP10-O04 -->
 
-> **TÍNH CHẤT — Cực trị qua đổi dấu.** Đổi chiều biến thiên giúp tìm cực trị địa phương. Tại sao đổi dấu đạo hàm quan trọng hơn chỉ giải f'=0? Ta bắt đầu từ dấu f' hai phía, miền và khả vi lân cận. Nếu f' đổi từ dương sang âm khi qua c thuộc D, f có cực đại địa phương ở c; âm sang dương cho cực tiểu. Nếu không đổi dấu, f'=0 có thể là điểm dừng không cực trị. Cực đại địa phương khác giá trị lớn nhất toàn cục.
+> **TÍNH CHẤT — Cực trị qua đổi dấu.** Đổi chiều biến thiên giúp tìm cực trị địa phương. Tại sao đổi dấu đạo hàm quan trọng hơn chỉ giải f'=0? Ta bắt đầu từ dấu f' hai phía, miền và khả vi lân cận. **Điều kiện bắt buộc:** hàm số phải liên tục tại điểm trong (c) và khả vi trên hai khoảng ngay bên trái, bên phải (c). Khi đó, nếu (f') dương trước (c) và âm sau (c), hàm đạt cực đại địa phương tại (c); nếu (f') âm trước và dương sau, hàm đạt cực tiểu. Không thể suy cực trị chỉ từ bảng dấu hai phía nếu giá trị (f(c)) không khớp giới hạn tại (c). Nếu không đổi dấu, f'=0 có thể là điểm dừng không cực trị. Cực đại địa phương khác giá trị lớn nhất toàn cục.
 
 Chẳng hạn, f=x³−3x: f'=3(x−1)(x+1), dương x<−1, âm −1<x<1, dương x>1. Cực đại ở x=−1 giá trị2, cực tiểu ở x=1 giá trị−2.
 
@@ -525,6 +525,12 @@ Nếu thiếu nhánh phía trái, bảng dấu f' là nơi tìm lại.
 
 Chẳng hạn, f=x³−3x: f'=3(x−1)(x+1), cực đại ở −1 giá trị2, cực tiểu ở1 giá trị−2; khi x→∞ f→∞, x→−∞ f→−∞. Chọn bảng dấu để xác định hai nhánh.
 
+Đồ thị bậc ba còn có **tâm đối xứng** ngay cả khi không có cực trị. Với \(y=ax^3+bx^2+cx+d\), \(a\ne0\), ta tính \(y''=6ax+2b\) rồi giải \(y''=0\), được \(x_0=-\dfrac{b}{3a}\). Tung độ tâm là \(f(x_0)\). Ta không nhầm vị trí này với nghiệm \(f'(x)=0\), và đồ thị của đa thức bậc ba không có tiệm cận.
+
+> **TÍNH CHẤT — Tâm đối xứng đồ thị bậc ba.** Tâm là \(I\left(-\dfrac{b}{3a},\,f\left(-\dfrac{b}{3a}\right)\right)\). Muốn kiểm tra, lấy hai hoành độ \(x_0-h\) và \(x_0+h\): hai tung độ tương ứng có tổng bằng \(2f(x_0)\).
+
+**Ví dụ minh họa.** Với \(f(x)=x^3+3x^2\), ta có \(f''(x)=6x+6=0\) khi \(x=-1\); \(f(-1)=2\), nên tâm là \(I(-1,2)\). Thực vậy, \(f(-1-h)+f(-1+h)=4=2f(-1)\) với mọi số thực \(h\). Cách kiểm bằng phép thế giúp xác minh tâm chứ không chỉ dựa vào độ giống hình vẽ.
+
 **Ví dụ**
 
 **Đề bài:** Khảo sát chiều biến thiên và cực trị của f=x³+3x².
@@ -553,6 +559,12 @@ Chẳng hạn, f=(2x+1)/(x−1): D=ℝ\{1}, f'=[2(x−1)−(2x+1)]/(x−1)²=−
 ![Hai nhánh phân thức và tiệm cận](../../visuals/THPT_TOPIC10_RATIONAL_ASYMPTOTES_R01.svg)
 
 *Quan sát hình:* Đường x=1 là tiệm cận đứng, y=2 tiệm cận ngang của (2x+1)/(x−1); không nối các nhánh qua x=1.
+
+Ngoài phân thức bậc nhất trên bậc nhất, SGK còn yêu cầu khảo sát **phân thức bậc hai trên bậc nhất** \(\displaystyle y=\frac{ax^2+bx+c}{px+q}\) với \(a,p\ne0\) và tử không chia hết cho mẫu. Chia đa thức, ta đưa hàm về \(y=mx+n+\frac{k}{px+q}\), \(k\ne0\). Từ đây xác định đường tiệm cận đứng \(x=-q/p\), tiệm cận xiên \(y=mx+n\), rồi xét dấu đạo hàm, điểm cực trị và giới hạn ở từng nhánh miền. Nếu tử chia hết cho mẫu, điểm mẫu bị loại có thể chỉ là **lỗ**, không được tự kết luận có tiệm cận đứng.
+
+> **PHƯƠNG PHÁP — Khảo sát phân thức bậc hai trên bậc nhất.** Xác định miền → chia đa thức và kiểm phần dư → tìm tiệm cận từ giới hạn → tính \(y'\), xét dấu trên từng khoảng, kể cả nơi mẫu đổi dấu → lập bảng biến thiên → tìm giao trục/điểm đặc biệt và vẽ các nhánh. Giao điểm của tiệm cận đứng và xiên là tâm đối xứng.
+
+**Ví dụ minh họa.** Xét \(\displaystyle f(x)=\frac{x^2-2x+2}{x-1}=x-1+\frac1{x-1}\), \(D=\mathbb R\setminus\{1\}\). Hai tiệm cận là \(x=1\), \(y=x-1\), giao nhau tại tâm \(I(1,0)\). Đạo hàm \(f'(x)=\frac{x(x-2)}{(x-1)^2}\) dương trên \((-\infty,0),(2,+\infty)\), âm trên \((0,1),(1,2)\). Do đó cực đại địa phương tại \((0,-2)\), cực tiểu tại \((2,2)\). Khi \(x\to1^-\), \(f(x)\to-\infty\); khi \(x\to1^+\), \(f(x)\to+\infty\); ở hai phía vô cực đồ thị tiến sát đường \(y=x-1\). Đặt đúng các mốc \(0,1,2\) lên bảng biến thiên giúp vẽ hai nhánh mà không nối qua \(x=1\).
 
 **Ví dụ**
 
@@ -603,6 +615,8 @@ Nếu rút gọn rồi tự điền điểm bị loại, đã đổi đồ thị
 > **TÍNH CHẤT — Tâm đối xứng.** Một số phân thức có tâm đối xứng tại giao tiệm cận. Hình hai nhánh cong đối nhau có tâm nào và phải chứng minh ra sao? Ta sử dụng tịnh tiến tọa độ X=x−a,Y=y−b, đối xứng tâm. Đồ thị y=b+k/(x−a), với a,b∈ℝ và k≠0, có TCD x=a, TCN y=b, tâm đối xứng tại giao (a,b), vì f(a+h)+f(a−h)=2b khi h≠0. Không kết luận mọi phân thức đều đối xứng tâm chỉ từ nét nhìn; kiểm phép tịnh tiến hoặc tính chất đối xứng.
 
 Xét ví dụ: f=(2x+1)/(x−1)=2+3/(x−1) nên tâm I(1,2); TCD x=1, TCN y=2. Chọn phép tách vì chứng minh được đối xứng chứ không chỉ đo bằng mắt.
+
+Với dạng bậc hai trên bậc nhất \(y=mx+n+\frac{k}{px+q}\) (\(m,k,p\ne0\)), **tâm** vẫn là giao hai tiệm cận. Hai **trục đối xứng** là các đường phân giác góc tạo bởi tiệm cận đứng và tiệm cận xiên. Vì cặp đường ấy không nhất thiết vuông góc, không được máy móc dùng \(y-b=\pm(x-a)\) — công thức này chỉ áp dụng cho dạng có tiệm cận ngang và đứng vuông góc. Trong ví dụ mục 4.3, tâm \(I(1,0)\) nằm tại giao \(x=1\) và \(y=x-1\).
 
 Trong dạng phân thức này, hai tiệm cận không chỉ xác định **tâm** của đồ thị mà còn tạo thành hai **trục đối xứng**. Đặt tọa độ mới \(X=x-a\), \(Y=y-b\), khi đó \(XY=k\). Nếu phản xạ điểm \((X,Y)\) qua đường \(Y=X\), ta được \((Y,X)\); nếu phản xạ qua \(Y=-X\), ta được \((-Y,-X)\). Cả hai ảnh đều có tích tọa độ bằng \(k\), nên vẫn thuộc đồ thị. Đó là lý do hai đường phân giác của cặp tiệm cận vuông góc là hai trục đối xứng, không phải chính các đường tiệm cận.
 
@@ -688,6 +702,10 @@ Một hàm lợi nhuận hoặc thể tích chỉ mô tả các phương án có
 > **CÔNG THỨC — Chi phí cận biên.** Tại sao tổng chi phí cao không đồng nghĩa tốc độ tăng chi phí cao? Để xác định điều đó, cần xét đạo hàm f' so với f, đơn vị. Trong mô hình thực tế f(x), f'(x) mô tả thay đổi tức thời theo một đơn vị x, có đơn vị [f]/[x]. Giá trị f(x) là mức hiện tại, f' có thể âm dù f dương. Để đọc kết quả phải nói rõ x đơn vị gì và phạm vi mô hình.
 
 Chẳng hạn, C(q)=100+2q+0,1q² (nghìn đồng) với q≥0 sản phẩm, C'(q)=2+0,2q nghìn đồng/sản phẩm; tại q=5 là3, không phải C(5)=112,5. Chọn đạo hàm khi hỏi chi phí cận biên.
+
+Ý nghĩa đạo hàm bắt đầu từ **tốc độ thay đổi trung bình** \(\dfrac{f(x_2)-f(x_1)}{x_2-x_1}\) với \(x_2\ne x_1\); cho \(x_2\to x_1=a\) và lấy giới hạn hữu hạn thì được **tốc độ thay đổi tức thời** \(f'(a)\). Vì thế, cùng công cụ đạo hàm có thể dùng trong nhiều mô hình, không chỉ chi phí và chuyển động.
+
+Trong hóa học, nếu nồng độ \(C(t)=10-2t\) (mg/lít) trên \(0\le t\le3\) phút, thì \(C'(t)=-2\) mg/(lít·phút): nồng độ giảm 2 mg/lít mỗi phút, còn tốc độ **tiêu hao** theo quy ước dương là \(-C'(t)=2\). Trong sinh học, nếu mô hình quần thể \(N(t)=100+20t+5t^2\) (cá thể) với \(t\) tính bằng ngày, thì \(N'(t)=20+10t\) (cá thể/ngày), nên sau 2 ngày tốc độ tăng tức thời là 40 cá thể/ngày. Đây là kết luận của **mô hình giả định**, không phải số liệu đo thực tế hay tổng số cá thể tại ngày thứ hai.
 
 **Ví dụ**
 
