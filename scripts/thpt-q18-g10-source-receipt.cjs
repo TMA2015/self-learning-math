@@ -872,6 +872,17 @@ function expectedG10KnowledgeBlob(lesson,legacy){
     for(const token of ["DELTA_A_UI","DELTA_B_SOURCE_EQUIVALENT",
      "B21-G3-RAW-HTML-DISPLAY-MATH-20261120","OWNER_P2_PENDING","P0=0","P1=0"])
      assert(r02.includes(token),"B21 render R02 missing signed condition "+token);
+    const ri=path.join(root,"prototypes/thpt/ux795/G10_CHVII_B21_VAN_DUNG_KIEM_LOI_Q18_R03_20261120.md");
+    if(fs.existsSync(ri)){
+     const r=fs.readFileSync(ri,"utf8");
+     const get=k=>r.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+     assert.equal(get("R03_PREVIOUS_SOURCE_BLOB"),next,"B21 Kiểm lỗi R03 must extend published display R02 SHA");
+     const candidate=get("R03_CORRECTED_SOURCE_BLOB");
+     assert(/^[0-9a-f]{40}$/.test(candidate||""),"B21 Kiểm lỗi R03 malformed source SHA");
+     assert(r.includes("G10-CHVII-B21-VAN-DUNG-KIEM-LOI-R03-20261120")&&r.includes("OWNER_P2"),
+      "B21 corrective R03 owner metadata missing");
+     return candidate;
+    }
     return next;
    }
    return current;
