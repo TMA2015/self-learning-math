@@ -4,8 +4,8 @@ R03_IMMUTABLE_GIT_BLOB: 52be5ef6b8684632435ae22429bf7b5db5cf50cf
 CURRENT_LEARNER_SOURCE_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md
 CURRENT_LEARNER_SOURCE_BLOB: e35b9a0d2e09bb06167ef9a051d979b9b7d5c6d7
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC09_R05_AUTHOR_SELF_QA_RECEIPT_20261116.md
-CURRENT_Q18_RECEIPT_BLOB: 4e4b095e9cb39c99a87bc350fdd7812070edf81d
-STATUS: AUTHORING_CONTENT_READY_CANDIDATE_HANDOFF_SYNCHRONIZING
+CURRENT_Q18_RECEIPT_BLOB: a44f1503ee112b16afaf5d651ec852eca6410e27
+STATUS: AUTHORING_CONTENT_READY
 
 ## 18/11/2026 — Active source correction, signed scoped Q18 provenance
 
@@ -24,7 +24,7 @@ STATUS: AUTHORING_CONTENT_READY_CANDIDATE_HANDOFF_SYNCHRONIZING
 
 PACKET_ID: THPT-TOPIC09-DERIVATIVE-MEANING-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 LESSON_IDS: TOP09-M01..TOP09-M32
 OUTCOME_IDS: TOP09-O01..TOP09-O32
@@ -190,4 +190,4 @@ DELTA_C_P23: Original R01 bank immutable; R04 canonical P23 says "tập xác đ�
 
 ## 20/11 — B31–B33 S1 trọn trang Kiến thức (AUTHORING)
 
-- Current canonical learner blob e35b9a0d2e09bb06167ef9a051d979b9b7d5c6d7, previous 509fe1bdbf64b6a01ee00532d59eff943110df15 immutable in Git history. One current Q18 self-QA receipt 4e4b095e9cb39c99a87bc350fdd7812070edf81d; seven targeted outcomes O04/O07/O10/O16/O20/O21/O29. B31–B33 required content checked against SGK, no new lesson/ID. Practice and Selfcheck byte-exact, bank source and answer/rubric unchanged; assessment mode unchanged. Image PDF screenshot cache miss acknowledged in Q18; original book page receipt remains provenance.
+- Current canonical learner blob e35b9a0d2e09bb06167ef9a051d979b9b7d5c6d7, previous 509fe1bdbf64b6a01ee00532d59eff943110df15 immutable in Git history. One current Q18 self-QA receipt a44f1503ee112b16afaf5d651ec852eca6410e27; seven targeted outcomes O04/O07/O10/O16/O20/O21/O29. B31–B33 required content checked against SGK, no new lesson/ID. Practice and Selfcheck byte-exact, bank source and answer/rubric unchanged; assessment mode unchanged. Image PDF screenshot cache miss acknowledged in Q18; original book page receipt remains provenance.
