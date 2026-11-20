@@ -29,7 +29,10 @@ const CI_ROUTING_ONLY=new Set([
  ".github/workflows/thpt-deploy-scope-safety-qa.yml",
  ".github/workflows/qa-pr.yml",
  "scripts/test-thpt-release-impact.cjs",
- "scripts/test-thpt-scoped-deploy-proof.cjs"
+ "scripts/test-thpt-scoped-deploy-proof.cjs",
+ // This changes test semantics only. It MUST NOT be mixed with learner content,
+ // and the scoped B14 browser smoke remains mandatory on CI-only PRs.
+ "scripts/test-thpt-scoped-lesson-browser.cjs"
 ]);
 const B16_LESSON="docs/thpt-preview/sgk/chuong-vi/bai-16.md";
 const B16_ALLOWED=new Set([
@@ -121,6 +124,11 @@ function selfTest(){
  assert.equal(classify([".github/workflows/deploy.yml",
   ".github/workflows/ux795-g10-draft-render-qa.yml",
   "scripts/test-thpt-release-impact.cjs"]).impact,"CI_ROUTING_ONLY");
+ assert.equal(classify(["scripts/test-thpt-scoped-lesson-browser.cjs",
+  "scripts/test-thpt-release-impact.cjs"]).impact,"CI_ROUTING_ONLY",
+  "Exact browser harness-only fix uses the B14 scoped smoke, never all-site test");
+ assert.equal(classify([fixture,"scripts/test-thpt-scoped-lesson-browser.cjs"]).full_suite,"true",
+  "Mixed learner source+test harness cannot disguise release risk");
  assert.equal(classify([fixture,".github/workflows/deploy.yml"]).full_suite,"true",
   "site plus workflow never hides a real site risk");
  assert.equal(classify([".github/workflows/deploy.yml","mkdocs.yml"]).full_suite,"true",
