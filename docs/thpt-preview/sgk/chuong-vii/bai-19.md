@@ -356,7 +356,7 @@
 
 === "Lỗi thường gặp"
 
-    Những sai sót ở bài này thường đến từ việc nhầm **hướng vectơ**, bỏ điều kiện **khác 0** hoặc thế tọa độ sai dấu. Mỗi mục dưới đây mô tả một lỗi cụ thể và nhắc lại bài toán liên quan; không cần trở về tab khác để đoán đang xét trường hợp nào.
+    Những sai sót ở bài này thường đến từ việc nhầm **hướng vectơ**, bỏ điều kiện **khác 0** hoặc thế tọa độ sai dấu. Hai mục dưới đây dành cho lỗi tổng quát chưa gắn với một câu Vận dụng riêng; hướng dẫn cụ thể đã nằm dưới từng Vận dụng trong tab *Khám phá kiến thức*.
 
     <span data-thpt-help-id="D6-G10-B19-01" hidden></span>
 
