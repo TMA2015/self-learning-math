@@ -1,9 +1,15 @@
+<!-- CĐ01_CURRENT_DELTA_B_CANONICAL_10_KEYS_20261121 -->
+## CĐ01 current R07 — 10 signed answers restored, unchanged questions, author-only source-equivalent
+
+Original G10/Topic bank keys exact 10/10, visible only inside optional answer disclosures. New learner `a34680c23f1be53feeda073f9e99d64f45ad8257`; new scoped author Q18 `291d902ce2948b3d2436b91b64b6b8ebf01a02d9`. Old learner blob `98041b546daedde82a54f41b5c57b502eee6794f` fully recovered by deleting the 10 inserted key lines; 24 questions, 35 hidden answers, 11 FirstTry, 11 client-only replays, original 2 Written rubrics unchanged. `DELTA_B_SOURCE_EQUIVALENT`, P0/P1=0. No duplicate item or new answer; no independent full Topic PASS claimed. The rest of this document records historical R07 numbering decisions and must not be read as a separate active source.
+
+---
 # CĐ1 R07 — AUTHORING numbering-only Q18 custody
 
 CURRENT_SOURCE_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R07_NUMBERING_CONSISTENT_20261116.md
-CURRENT_SOURCE_BLOB: 98041b546daedde82a54f41b5c57b502eee6794f
-CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC01_R07_NUMBERING_DELTA_A_Q18_20261116.md
-CURRENT_Q18_RECEIPT_BLOB: f454e239f22df9c306ef69d1e82f0900f02a48ea
+CURRENT_SOURCE_BLOB: a34680c23f1be53feeda073f9e99d64f45ad8257
+CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC01_R07_10_CANONICAL_KEY_RESTORE_AUTHOR_Q18_20261121.md
+CURRENT_Q18_RECEIPT_BLOB: 291d902ce2948b3d2436b91b64b6b8ebf01a02d9
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
