@@ -105,6 +105,14 @@ Hai vị trí khác nhau cho một vectơ dịch chuyển khác không. Chỉ c�
 
 > **PHƯƠNG PHÁP — Phương trình đường thẳng qua hai điểm.** Với A≠B, u=AB=(x_B−x_A,y_B−y_A) là chỉ phương khác 0. Chọn n=(−u_y,u_x) hoặc (u_y,−u_x) để viết phương trình tổng quát. Nếu A=B, **một điểm không đủ** xác định duy nhất một đường thẳng.
 
+Khi đường thẳng cắt cả hai trục tại \(A(a,0)\) và \(B(0,b)\) với \(ab\ne0\), ta không cần giải lại hệ để viết phương trình. Điều kiện đường đi qua hai điểm cho phép đưa về dạng gọn:
+\[
+\frac{x}{a}+\frac{y}{b}=1.
+\]
+Đây là **phương trình đường thẳng theo đoạn chắn**: \(a\) và \(b\) chính là hoành độ và tung độ giao trục, có thể âm. Chỉ dùng khi **hai đoạn chắn khác 0**; trường hợp đường đi qua gốc cần cách viết khác.
+
+**Ví dụ minh họa.** Đường qua \(A(4,0)\), \(B(0,-2)\) có dạng \(\frac{x}{4}+\frac{y}{-2}=1\), tương đương \(x-2y-4=0\). Thế \(A,B\) đều cho 0. Nếu viết \(x/4+y/2=1\), em đã bỏ dấu âm của giao với \(Oy\); hãy đối chiếu trước khi rút gọn.
+
 **Ví dụ**
 
 **Đề bài:** Viết phương trình tổng quát của đường thẳng qua \(A(1,1)\) và \(B(3,5)\).
@@ -194,6 +202,12 @@ Trước khi dùng đường thẳng để mô hình hóa, hãy nhớ rằng **�
 > **TÍNH CHẤT — Mối liên hệ giữa đồ thị hàm số và đường thẳng.** Phương trình \(y=mx+n\) tương đương với \(mx-y+n=0\) và có vectơ pháp tuyến \((m,-1)\). Với \(Ax+By+C=0\), \((A,B)\ne(0,0)\): khi \(B\ne0\), hệ số góc bằng \(-A/B\); khi \(B=0\), đường thẳng có dạng \(x=-C/A\) và không phải đồ thị của hàm số theo \(x\).
 
 > **PHƯƠNG PHÁP — Dùng phương trình tuyến tính để mô hình hóa.** Với dữ liệu (t,y) ở hai thời điểm, mô hình y=mt+b có m là mức thay đổi trên một đơn vị t, b là giá trị ở t=0. Chỉ coi đó là mô hình phù hợp khi có **giả thiết biến đổi đều** hoặc dữ liệu hỗ trợ; dự đoán ngoài phạm vi đo là ngoại suy cần thận trọng.
+
+Với đường thẳng **không đứng**, phương trình \(y=mx+n\) cho **hệ số góc** \(m\). Khi đi theo chiều hoành độ tăng một đơn vị, tung độ đổi \(m\) đơn vị; nếu \(m>0\), đường đi lên theo hướng sang phải, nếu \(m<0\), đường đi xuống. Cho hai điểm phân biệt \(A(x_1,y_1), B(x_2,y_2)\) với \(x_1\ne x_2\), ta suy ra \(m=\dfrac{y_2-y_1}{x_2-x_1}\). Nếu góc nghiêng \(\alpha\) của đường so với chiều dương \(Ox\) được chọn trong \([0^\circ,180^\circ)\), \(\alpha\ne90^\circ\), thì \(m=\tan\alpha\). Đường \(x=c\) đứng nên **không có hệ số góc hữu hạn**.
+
+> **CÔNG THỨC — Hệ số góc.** Với \(d:Ax+By+C=0\), \(B\ne0\), hệ số góc \(m=-A/B\). Không áp công thức này khi \(B=0\). Góc nghiêng của một đường có hệ số góc âm là góc tù trong \([0^\circ,180^\circ)\), không tự lấy giá trị góc âm trên máy.
+
+**Ví dụ minh họa.** Đường qua \(A(1,2)\) và \(B(3,6)\) có \(m=(6-2)/(3-1)=2\), phương trình \(y=2x\), góc nghiêng \(\alpha\) thỏa \(\tan\alpha=2\) nên \(\alpha\approx63{,}4^\circ\). Ta chọn hiệu tung độ chia hiệu hoành độ vì đã có **hai điểm**; nhớ kiểm cả hai có hoành độ khác nhau trước phép chia.
 
 **Ví dụ**
 
@@ -314,6 +328,14 @@ Khoảng cách ngắn nhất từ một điểm tới đường thẳng là đo�
 Đo xiên thường dài hơn đo theo đường vuông góc; tử số công thức là độ lệch, mẫu giúp đổi về độ dài thực.
 
 > **CÔNG THỨC — Khoảng cách từ điểm đến đường thẳng.** Với d:ax+by+c=0, (a,b)≠(0,0), khoảng cách từ P(x₀,y₀) tới d là \(\frac{|ax_0+by_0+c|}{\sqrt{a^2+b^2}}\). Tử số đo sai lệch theo pháp tuyến, mẫu chuẩn hóa độ dài pháp tuyến; trị tuyệt đối bảo đảm khoảng cách không âm. Nếu P thuộc d thì khoảng cách bằng 0.
+
+Từ công thức khoảng cách **điểm–đường**, ta suy ra ngay **khoảng cách giữa hai đường song song phân biệt**. Đưa chúng về cùng cặp hệ số pháp tuyến \(d_1:ax+by+c_1=0\), \(d_2:ax+by+c_2=0\), \((a,b)\ne(0,0)\). Chọn một điểm \(P\in d_1\); vì \(a x_P+b y_P=-c_1\), khoảng cách đến \(d_2\) bằng:
+\[
+d(d_1,d_2)=\frac{|c_2-c_1|}{\sqrt{a^2+b^2}}.
+\]
+Chỉ dùng công thức này **sau khi đã chuẩn hóa** hai phương trình về cùng hệ số \(a,b\); nếu hệ số pháp tuyến không cùng phương, hai đường cắt nhau và không có khoảng cách dương cố định giữa chúng.
+
+**Ví dụ minh họa.** Với \(d_1:3x+4y-1=0\) và \(d_2:3x+4y-11=0\), pháp tuyến chung \((3,4)\) có độ dài \(5\), hai đường song song phân biệt. Khoảng cách là \(|-11-(-1)|/5=2\) đơn vị. Nếu phương trình thứ hai ban đầu nhân đôi tất cả hệ số, phải chia lại cho \(2\) trước khi lấy hiệu hằng số.
 
 **Ví dụ**
 
@@ -525,6 +547,12 @@ Tổng hai khoảng cách đến tiêu điểm không đổi tạo một đườ
 
 > **ĐỊNH NGHĨA — Tiêu cự của elip.** Hai tiêu điểm phân biệt \(F_1(-c,0)\), \(F_2(c,0)\) cách nhau một khoảng \(F_1F_2=2c=2\sqrt{a^2-b^2}\), với \(a>b>0\) và \(0<c<a\). Khoảng cách này gọi là **tiêu cự**; không nhầm với tổng khoảng cách \(MF_1+MF_2=2a\) của một điểm trên elip. Phương trình \(\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1\) (\(a>b>0\), trục lớn theo \(Ox\)) là **phương trình chính tắc** của elip trong hệ trục đã chọn.
 
+Từ phương trình chính tắc, có thể **đọc các giao điểm với trục và chiều dài hai trục elip** mà không cần vẽ theo cảm tính. Cho \(y=0\), ta được \(x=\pm a\), tức hai đỉnh trên trục lớn \((\pm a,0)\); cho \(x=0\), ta được \(y=\pm b\), tức hai đỉnh còn lại \((0,\pm b)\). Độ dài trục lớn \(2a\), trục nhỏ \(2b\). Tâm \(O(0,0)\) là trung điểm của từng cặp đỉnh đối xứng.
+
+> **TÍNH CHẤT — Các trục và đỉnh elip.** Với \(\frac{x^2}{a^2}+\frac{y^2}{b^2}=1\), \(a>b>0\), bốn đỉnh là \((\pm a,0),(0,\pm b)\), trục lớn dài \(2a\), trục nhỏ dài \(2b\), hai tiêu điểm \((\pm c,0)\) với \(c^2=a^2-b^2\). Khi elip bị tịnh tiến hay quay, cần đổi về hệ trục chính tắc tương ứng, không máy móc lấy các tọa độ trên.
+
+**Ví dụ minh họa.** Elip \(\frac{x^2}{25}+\frac{y^2}{9}=1\) có các đỉnh \((\pm5,0),(0,\pm3)\), trục lớn dài \(10\), trục nhỏ dài \(6\) và tiêu điểm \((\pm4,0)\). Chọn cách thế \(x=0\) và \(y=0\) vì đang ở **phương trình chính tắc**, không cần giải hệ phức tạp.
+
 **Ví dụ**
 
 **Đề bài:** Cho elip \(x^2/25+y^2/9=1\) có trục lớn theo \(Ox\). Tìm \(a,b,c\), hai tiêu điểm và độ dài trục lớn.
@@ -554,6 +582,10 @@ Hiệu tuyệt đối hai khoảng cách không đổi tạo hai nhánh mở. Tr
 > **ĐỊNH NGHĨA — Hypebol và hai nhánh.** Với \(x^2/a^2-y^2/b^2=1\), a,b>0, \(c^2=a^2+b^2\). Hai tiêu điểm (±c,0), hai đỉnh (±a,0), trục thực nằm ngang. Các dấu + và − trong phương trình không được đảo tùy tiện nếu giữ trục thực Ox. Với mọi điểm trên hypebol, \(|MF_1-MF_2|=2a\).
 
 > **ĐỊNH NGHĨA — Tiêu cự của hypebol.** Với \(a,b>0\) và \(c=\sqrt{a^2+b^2}>a\), hai tiêu điểm \(F_1(-c,0)\), \(F_2(c,0)\) cách nhau \(F_1F_2=2c=2\sqrt{a^2+b^2}\), gọi là **tiêu cự**. Nó khác \(2a\), là **giá trị tuyệt đối của hiệu** \(|MF_1-MF_2|\) trên hypebol. Phương trình \(\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1\) (\(a,b>0\), trục thực theo \(Ox\)) là **phương trình chính tắc** của hypebol.
+
+Dấu trừ trong phương trình không chỉ để phân biệt với elip; nó cho biết **hai miền hoành độ tách rời nhau**. Từ \(\frac{x^2}{a^2}=1+\frac{y^2}{b^2}\ge1\), suy ra \(|x|\ge a\). Vì vậy, nhánh phải nằm trong \(x\ge a\), nhánh trái trong \(x\le-a\), và đường cong **không có điểm** với \(-a<x<a\). Hai đỉnh ở \((a,0)\) và \((-a,0)\); đây cũng là lý do không được nối hai nhánh khi vẽ.
+
+**Ví dụ minh họa.** Với \(\frac{x^2}{9}-\frac{y^2}{16}=1\), mọi điểm trên hypebol phải thỏa \(|x|\ge3\). Hai đỉnh \((\pm3,0)\); \(c=\sqrt{9+16}=5\) nên tiêu điểm \((\pm5,0)\). Điểm \((0,2)\) không thể thuộc hypebol vì \(x=0\) nằm giữa hai đỉnh, dù trông gần một nét cong trên hình.
 
 **Ví dụ**
 
@@ -617,6 +649,14 @@ Parabol được xác định bởi hai khoảng cách bằng nhau; vị trí ti
 
 **Quan sát hình:** Tiêu điểm nằm trên trục Ox và đường chuẩn ở phía đối diện đỉnh; kiểm khoảng cách tới tiêu điểm và đường thẳng, đừng nhầm khoảng cách ngang với khoảng cách vuông góc.
 
+Ta cũng có thể **tự suy ra phương trình chính tắc** từ định nghĩa thay vì học thuộc. Lấy \(F(p/2,0)\) và đường chuẩn \(\Delta:x=-p/2\), \(p>0\). Điểm \(M(x,y)\) thuộc parabol khi \(MF=d(M,\Delta)\), tức
+\[
+\sqrt{(x-p/2)^2+y^2}=|x+p/2|.
+\]
+Bình phương hai vế (đều không âm) rồi rút gọn cho \(y^2=2px\). Ngược lại, phương trình này buộc \(x\ge0\), nên \(x+p/2>0\) và điều kiện khoảng cách ban đầu được thỏa. Việc kiểm chiều ngược ngăn bỏ sót điều kiện khi bình phương.
+
+**Ví dụ minh họa.** Với \(F(2,0)\), đường chuẩn \(x=-2\), ta có \(p=d(F,\Delta)=4\), do đó \(y^2=8x\). Kiểm \(M(2,4)\): \(MF=4\) và \(d(M,\Delta)=|2+2|=4\), nên \(M\) thuộc parabol. Chọn cách khoảng cách vì đề cho **tiêu điểm và đường chuẩn**, không phải sẵn hệ số phương trình.
+
 **Ví dụ**
 
 **Đề bài:** Với parabol \(y^2=8x\) theo \(y^2=2px,\ p>0\), tìm tiêu điểm và đường chuẩn.
@@ -672,6 +712,12 @@ Một ăng-ten dùng mặt cắt parabol đặt nguồn thu tại tiêu điểm;
 Đặt đúng trục và đơn vị trước khi thay tiêu cự. Một mô hình parabol không tự đúng cho mọi mặt cắt thực tế.
 
 > **PHƯƠNG PHÁP — Mặt cắt parabol và giới hạn của mô hình.** Nếu mặt cắt có đỉnh O và trục đối xứng theo Ox, mở phải, có thể mô tả bởi \(y^2=2px\), p>0; khi khoảng cách từ đỉnh đến tiêu điểm là f>0 thì p=2f và \(y^2=4fx\). Trục đặt sai sẽ đổi phương trình, nhưng tính chất cách đều tiêu điểm–đường chuẩn vẫn đúng. Ghi đơn vị x,y,f nhất quán.
+
+**Vì sao các đường conic xuất hiện trong đèn pha, ăng-ten và gương quang học?** Trong mô hình phản xạ lí tưởng, khi một tia xuất phát từ **một tiêu điểm của elip** và gặp gương elip, tia phản xạ đi theo hướng của **tiêu điểm còn lại**. Đối với gương parabol lõm, tia xuất phát từ tiêu điểm phản xạ thành tia **song song với trục đối xứng** (vuông góc đường chuẩn); ngược lại, các tia tới song song với trục theo hướng thích hợp được hội tụ về tiêu điểm. Đây là **tính chất quang học** của đường conic nêu ở SGK, không phải tính chất của mọi đường cong có hình gần giống parabol.
+
+> **ỨNG DỤNG — Tiêu điểm và tia phản xạ.** Từ phương trình chính tắc, xác định đúng tiêu điểm trước khi đặt nguồn phát hoặc bộ thu; vị trí này phụ thuộc tham số \(p\) của parabol hoặc \(c\) của elip. Kết quả nêu cho **thiết diện gương lí tưởng**; không khẳng định một ăng-ten thực tế luôn đúng mô hình, vì còn kích thước hữu hạn và cấu trúc vật liệu.
+
+**Ví dụ minh họa.** Một gương parabol có mặt cắt \(y^2=8x\) trong đơn vị cm. So \(2p=8\) ta được \(p=4\), nên tiêu điểm \(F(2,0)\), đường chuẩn \(x=-2\). Nguồn sáng đặt tại \(F\) cho chùm tia phản xạ song song trục \(Ox\) theo tính chất quang học; nếu đặt nguồn tại \((4,0)\), không có quyền áp dụng kết luận như thể đó là tiêu điểm. Với elip \(\frac{x^2}{25}+\frac{y^2}{9}=1\), hai tiêu điểm \((\pm4,0)\) xác định nơi đặt nguồn và vị trí hội tụ trong mô hình gương elip lí tưởng.
 
 **Ví dụ**
 
