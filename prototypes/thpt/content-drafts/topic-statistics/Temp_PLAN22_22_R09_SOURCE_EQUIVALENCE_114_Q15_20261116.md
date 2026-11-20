@@ -19,9 +19,9 @@ CONTENT_REVISION: R09
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md
-ACADEMIC_SOURCE_BLOB: 4ff6bfde83f55a1390661f11c71cc66873f3ecdb
+ACADEMIC_SOURCE_BLOB: dfe01e7dfcf554b11834ac0c93a5eaf2af7aa3eb
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC_STATISTICS_G10_G12_R09_AUTHOR_TECHNICAL_Q18_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: ccdba12524d042242f6f157dbd0c5ee263b85729
+REVIEW_RECEIPT_BLOB: 321de289313150d5ac2025f47a6e7d3593de1c9b
 PREVIOUS_R07_HANDOFF_PATH: prototypes/thpt/release-handoffs/THPT-TOPIC-STATISTICS-G10-G12-FULL-R07_HANDOFF_V2_20261115.md
 PREVIOUS_R07_HANDOFF_BLOB: 4c32eaf6342b2cb9cd2ccc69357fed80a0aeca92
 DELTA_CLASS: DELTA_B_SOURCE_EQUIVALENT
@@ -60,3 +60,9 @@ RELEASE_AUTHORIZATION: NO
 
 
 **19/11 owner label-only Delta A:** current one learner source synced; 114 canonical Q15 full source/keys/solutions preserved. CONTENT_READY remains.
+
+
+## 20/11/2026 — current SOURCE/Q18 A1 lock
+- ACADEMIC_SOURCE_BLOB: dfe01e7dfcf554b11834ac0c93a5eaf2af7aa3eb
+- REVIEW_RECEIPT_BLOB: 321de289313150d5ac2025f47a6e7d3593de1c9b
+- Only 14 formal callout labels changed. 114 canonical stems/answers/rubrics/placements and protected assessment remain byte-equivalent; no additional S1 coverage PASS claimed.
