@@ -8,18 +8,18 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: c7ec97d5c8cc33ddb471de93ba6adae9915400fe
+SOURCE_COMMIT: f228b6e25302a4f5a6226b6ada1fad669f433ceb
 AUTHOR_PR: 817
 CURRENT_PR: #817 Draft AUTHORING, no merge/deploy
 CATALOG_TOPIC_ID: CD01
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R07_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: fefe797ee158ee357533605267496ed415a7681a
+ACADEMIC_SOURCE_BLOB: 98041b546daedde82a54f41b5c57b502eee6794f
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC01_R07_NUMBERING_DELTA_A_Q18_20261116.md (AUTHOR_SELF_QA, no fresh independent NotebookLM PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC01_R07_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: f454e239f22df9c306ef69d1e82f0900f02a48ea
+REVIEW_RECEIPT_BLOB: 05545d0e8ad7989f95baa01e23f39bd81f009b06
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC01-LOGIC-SETS-FULL-R07_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: f78d61a663b3d4dee738650e869dcdfe380a4558
+AUTHOR_HANDOFF_BLOB: f61f3681b717f18d0b95c07ab5232b3b4fbe4826
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_CANONICAL_SOURCE_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 09d36b0d289ebc54cc4ee51805503cf7f6e714f2
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_PUBLIC_EXTENSION_06ITEM_R01_20261112.md
@@ -96,3 +96,7 @@ TOPIC_SELF_CHECK: PUBLIC_REPLAY_11_NO_MASTERY
 - H1 3 pages; numbered H2 groups and 1.1 H3 lessons with no missing predecessor; Practice question labels use scoped bold, not H4.
 - Source SHA `0941242cee95d21c5a83da9f6f01c022443272d8`, source-equivalent author Q18 `3732db6a26a13c52f84f574d1c2c3468513c7eca`, metadata `06bf546a2c209d87fa44485fe51b64317378451c`, V2 `78c2712a529f124f397d6a502ec1fa5a985024de`. Historical sources and receipts unchanged; math/answers/rubrics/D6 preserved by identical full reveal block and item ID comparison.
 - AUTHORING CONTENT_READY only; not fresh NotebookLM academic review, RELEASE browser/Golden QA, MERGED or PUBLISHED.
+
+
+## 20/11/2026 — CĐ1 Kiến thức hoàn thiện theo SGK
+- Một learner source duy nhất: 98041b546daedde82a54f41b5c57b502eee6794f. S1 Toán 10 T1 Bài 1-2: đầy đủ logic, tập hợp; bổ sung 2 cách mô tả tập, N⊆Z⊆Q⊆R, hữu tỉ/vô tỉ, nửa khoảng. Đã tự kiểm các điều kiện và ví dụ; không chỉnh ngân hàng câu hỏi hiện hữu và không phát hành website.
