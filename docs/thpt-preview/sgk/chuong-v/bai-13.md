@@ -37,7 +37,7 @@
 
 
 
-    **Kiểm lỗi dùng chung:** [Xem hướng dẫn tự sửa phù hợp](#help-g10-b13-02).
+    **Kiểm lỗi dùng chung:** [Xem hướng dẫn tự sửa phù hợp](#HELP-G10-B13-02).
     #### 1.2.2. Xếp dữ liệu theo thứ tự để tìm trung vị
 
     Để biết người đứng ở vị trí giữa trong hàng người có chiều cao khác nhau, phải xếp thứ tự, không cần cộng tất cả chiều cao.
@@ -61,7 +61,7 @@
 
 
 
-    **Kiểm lỗi dùng chung:** [Xem hướng dẫn tự sửa phù hợp](#help-g10-b13-01).
+    **Kiểm lỗi dùng chung:** [Xem hướng dẫn tự sửa phù hợp](#HELP-G10-B13-01).
     #### 1.2.3. Tứ phân vị cho biết các vị trí trong mẫu
 
     Hai lớp có cùng trung vị vẫn có thể khác nhau ở phần thấp và phần cao. Ta cần mốc để nhìn nửa dưới và nửa trên của mẫu.
@@ -91,6 +91,7 @@
 
 
 
+    <a id="HELP-G10-B13-01" aria-hidden="true"></a>
     <span id="help-g10-b13-01" data-thpt-help-id="HELP-G10-B13-01" hidden></span>
 
     ??? tip "Kiểm lỗi"
@@ -125,6 +126,7 @@
 
 
 
+    <a id="HELP-G10-B13-02" aria-hidden="true"></a>
     <span id="help-g10-b13-02" data-thpt-help-id="HELP-G10-B13-02" hidden></span>
 
     ??? tip "Kiểm lỗi"
@@ -158,7 +160,7 @@
         </div>
 
 
-    **Kiểm lỗi dùng chung:** [Xem hướng dẫn tự sửa phù hợp](#help-g10-b13-02).
+    **Kiểm lỗi dùng chung:** [Xem hướng dẫn tự sửa phù hợp](#HELP-G10-B13-02).
     ### 1.3. Tổng kết cách chọn số đặc trưng
 
     **Thuật ngữ:** Số trung bình cộng, trung vị, tứ phân vị (Q_1,Q_2,Q_3), mốt, bảng tần số, giá trị đại diện.
