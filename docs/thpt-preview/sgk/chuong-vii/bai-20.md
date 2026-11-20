@@ -1,5 +1,13 @@
 # Bài 20. Vị trí tương đối, góc và khoảng cách
 
+<style>
+/* B20-only Golden semantic colors, shared CSS/runtime and other lesson snapshots untouched. */
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVII-TRY08"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card {background:#e8f7f2;border-color:#a9dccc;border-left-color:#087d69;color:#174137}
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVII-TRY08"]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card {background:#eaf1fc;border-color:#a5bee5;border-left-color:#4879c2;color:#193d66}
+[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVII-TRY08"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card {background:#193d36;border-color:#447e70;border-left-color:#76dfc7;color:#e9fff7}
+[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVII-TRY08"]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card {background:#203551;border-color:#45658a;border-left-color:#8cb4ed;color:#ecf5ff}
+</style>
+
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VII · KIẾN THỨC SGK KNTT</p>
 <p class="thpt-r4-lead">Xác định vị trí tương đối, góc và khoảng cách trong mặt phẳng tọa độ.</p>
@@ -124,14 +132,20 @@
 
     ### 2.1. Vị trí tương đối giữa hai đường thẳng
 
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Vị trí tương đối:</strong> Hai đường thẳng cắt nhau khi có đúng <strong>một</strong> điểm chung, song song phân biệt khi không có điểm chung, và trùng nhau khi có <strong>vô số</strong> điểm chung. Ta nhận biết ba tình huống ấy bằng nghiệm chung của hai phương trình.</div>
+
     Với \(d_1:a_1x+b_1y+c_1=0\) và \(d_2:a_2x+b_2y+c_2=0\), mỗi cặp \((a_i;b_i)\ne(0;0)\):
 
     - Nếu \(a_1b_2-a_2b_1\ne0\): hai đường **cắt nhau tại một điểm**.
     - Nếu \(a_1b_2-a_2b_1=0\): cần so sánh **cả ba hệ số** để phân biệt hai đường trùng nhau hay song song phân biệt.
 
-    Hai đường **vuông góc** nếu \(a_1a_2+b_1b_2=0\).
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Xét hai đường:</strong> Pháp tuyến không cùng phương thì hai đường cắt nhau. Nếu pháp tuyến cùng phương, phải so sánh thêm hệ số tự do: toàn bộ ba hệ số tỉ lệ cùng một số khác 0 thì trùng; nếu không, chúng song song phân biệt. Không chia cho một hệ số có thể bằng 0.</div>
+
+    Hai đường **vuông góc** nếu \(a_1a_2+b_1b_2=0\). Điều này kiểm bằng tích vô hướng của hai pháp tuyến <strong>khác vectơ không</strong>, không suy ra chỉ vì hai đường cắt nhau.
 
     ### 2.2. Góc giữa hai đường thẳng
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Góc giữa hai đường:</strong> Góc giữa hai đường thẳng là <strong>góc nhỏ</strong> mà chúng tạo thành, từ 0° tới 90°. Hai đường song song hoặc trùng nhau có góc 0°; hai đường vuông góc có góc 90°. Đổi chiều mũi tên chỉ hướng không làm đổi góc giữa hai đường.</div>
 
     Góc nhỏ \(\varphi\) giữa hai đường thẳng thỏa \(0^\circ\le\varphi\le90^\circ\):
 
@@ -140,7 +154,11 @@
     {\sqrt{a_1^2+b_1^2}\sqrt{a_2^2+b_2^2}}.
     \]
 
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Tính góc nhỏ:</strong> Chọn hai pháp tuyến khác 0; lấy <strong>trị tuyệt đối của tích vô hướng</strong>, chia cho tích hai độ dài pháp tuyến rồi suy ra góc. Thương cosin phải nằm từ 0 đến 1. Không giữ góc tù giữa hai mũi tên làm góc giữa hai đường.</div>
+
     ### 2.3. Khoảng cách từ một điểm đến một đường thẳng
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Khoảng cách từ điểm đến đường:</strong> Đây là độ dài <strong>đoạn vuông góc</strong> kẻ từ điểm đến đường, luôn không âm. Nếu điểm thuộc đường, khoảng cách bằng 0; một đoạn xiên bất kỳ không phải khoảng cách ngắn nhất.</div>
 
 
 
@@ -154,6 +172,8 @@
     \[
     d(M,d)=\frac{|ax_M+by_M+c|}{\sqrt{a^2+b^2}}.
     \]
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Khoảng cách:</strong> Với pháp tuyến (a;b) khác 0, thế tọa độ điểm vào vế trái phương trình tổng quát, lấy <strong>trị tuyệt đối</strong> rồi chia cho độ dài dương của pháp tuyến. Kết quả là độ dài thật, không phụ thuộc cách nhân bội phương trình đường thẳng.</div>
 
     Dấu giá trị tuyệt đối giúp khoảng cách không âm và góc nhỏ không phụ thuộc chiều chọn vectơ pháp tuyến.
 
