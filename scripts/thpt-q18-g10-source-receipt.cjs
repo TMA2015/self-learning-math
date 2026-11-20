@@ -850,13 +850,25 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    const field=k=>r22.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
    assert.equal(field("PREVIOUS_B22_SOURCE_BLOB"),chvii.candidate,
     "B22 new source must extend exact 13/11 S1 source Git blob");
-   const current=field("CANDIDATE_B22_SOURCE_BLOB");
+   let current=field("CANDIDATE_B22_SOURCE_BLOB");
    assert(/^[0-9a-f]{40}$/.test(current||"")&&current!==chvii.candidate,
     "B22 author Q18 requires exact new distinct source blob");
    for(const token of ["Q18_OWNER_SELF_VERIFIED_ENRICHMENT","DELTA_C_ACADEMIC_MATERIAL",
     "G10-B22-ELLIPSE_PARAMETERS","G10-B22-HYPERBOLA_PARAMETERS",
     "G10-B22-PARABOLA_FOCUS","OWNER_P2_PENDING","P0=0","P1=0"]){
      assert(r22.includes(token),"B22 source Q18 receipt missing "+token);
+   }
+   const r02path=path.join(root,"prototypes/thpt/ux795/G10_CHVII_B22_VAN_DUNG_KIEM_LOI_Q18_R02_20261120.md");
+   if(fs.existsSync(r02path)){
+    const r02=fs.readFileSync(r02path,"utf8");
+    const get=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    assert.equal(get("R02_PREVIOUS_SOURCE_BLOB"),current,"B22 Kiểm lỗi R02 must extend owner-approved R01 exact SHA");
+    current=get("R02_CORRECTED_SOURCE_BLOB");
+    assert(/^[0-9a-f]{40}$/.test(current||""),"B22 R02 new canonical SHA malformed");
+    for(const required of ["G10-CHVII-B22-VAN-DUNG-KIEM-LOI-R02-20261120",
+     "DELTA_C_ACADEMIC_MATERIAL","HELP-G10-CHVII-TRY18","OWNER_P2"]){
+     assert(r02.includes(required),"B22 Kiểm lỗi R02 missing Q18 metadata "+required);
+    }
    }
    return current;
   }
