@@ -14,10 +14,10 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 7b5d360250b5268d8c566be945f9c9be4a2c4dd4
+SOURCE_BLOB: 583ba974917ce04b16dd4ff6d92b7cdb9b77a2b1
 PUBLIC_CANONICAL_BANK_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC05_R06_COMPOSITE_Q18_AUTHOR_SELF_QA_20261118.md
-CURRENT_Q18_RECEIPT_BLOB: f3180f5a7f250e65cf7fc996dde0116eaa5020d6
+CURRENT_Q18_RECEIPT_BLOB: f20c9cfae613b6dfb65fe1a7b754e05f54cf84ce
 BLOCKERS_AUTHORING_P0_P1: NONE_IN_CHECKED_SOURCE
 AUTHORING_STATUS: CURRENT_SOURCE_Q01_Q18_AUTHOR_SELF_QA_PASS
 RELEASE_AUTHORIZATION: NO
@@ -79,3 +79,9 @@ RELEASE_AUTHORIZATION: NO
 - ACADEMIC_SOURCE_BLOB: 7b5d360250b5268d8c566be945f9c9be4a2c4dd4
 - REVIEW_RECEIPT_BLOB: f3180f5a7f250e65cf7fc996dde0116eaa5020d6
 - Existing parabola §2.2 newly explicit Ox/Oy intercept method, zero / tangency / none via Δ; all original practice/selfcheck unchanged. Affected math author self-QA only.
+
+
+## 20/11/2026 — Current CĐ05 Knowledge S1 full B15–16 source
+- ACADEMIC_SOURCE_BLOB: 583ba974917ce04b16dd4ff6d92b7cdb9b77a2b1
+- REVIEW_RECEIPT_BLOB: f20c9cfae613b6dfb65fe1a7b754e05f54cf84ce
+- Student §1.1 function by table/chart/formula, §1.2 default domain and §4.3 function modeling restored. 17 original modules, original Practice and Tự kiểm tra unchanged.
