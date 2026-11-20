@@ -140,9 +140,20 @@ for(const c of cases){
  assert.equal(row.length,1,"B"+c.n+": exactly one signed HELP relocation row");
  const signed=[...row[0].matchAll(/`([a-f0-9]{40})`/g)].map(x=>x[1]);
  assert.equal(signed.length,2,"B"+c.n+": expected immutable old/new R01 source blobs");
+ // B08's follow-on R02 is a *navigation-only* tab-4 wayfinding note,
+ // signed against the exact immutable 20/11 public R01 blob.
+ const b08NavFile=path.join(__dirname,
+  "../prototypes/thpt/ux795/G10_CHIV_B08_TAB4_KIEM_LOI_WAYFINDING_DELTA_A_R02_20261120.md");
+ const b08Nav=c.n===8&&fs.existsSync(b08NavFile)?fs.readFileSync(b08NavFile,"utf8"):null;
+ const signedB08Nav=!!b08Nav&&
+  field(b08Nav,"R02_PREVIOUS_SOURCE_BLOB")===signed[1]&&
+  field(b08Nav,"R02_CORRECTED_SOURCE_BLOB")===blob(src)&&
+  b08Nav.includes("DELTA_A_UI")&&b08Nav.includes("Q18_OWNER_SELF_VERIFIED_ENRICHMENT")&&
+  b08Nav.includes("G10-CHIV-B08-TAB4-KIEM-LOI-WAYFINDING-R02-20261120");
  const signedPlacement=relocation.includes("G10-B07-B14-KIEM-LOI-PLACEMENT-Q18-R01-20261120")&&
   relocation.includes("Q18_OWNER_SELF_VERIFIED_ENRICHMENT")&&
-  signed[1]===blob(src)&&signed[1]===expectedG10KnowledgeBlob(c.n,c.sha);
+  ((signed[1]===blob(src)&&signed[1]===expectedG10KnowledgeBlob(c.n,c.sha))||
+   (signedB08Nav&&blob(src)===expectedG10KnowledgeBlob(c.n,c.sha)));
  const current=editorial[c.n]&&(blob(src)===editorial[c.n].sha||signedR02||signedR03||signedR04||signedR05||signedB08R04||signedB09R03||signedB09R05||signedB09R06||signedB10R01||signedB10R02||signedPlacement);
  if(signedR02||signedR03||signedR04||signedR05||signedB08R04||signedB09R03||signedB09R05||signedB09R06||signedB10R01||signedB10R02)assert.equal(signedB10R02?field(b10R02,"R02_SOURCE_BLOB"):signedB10R01?field(b10R01,"R01_SOURCE_BLOB"):signedB09R06?field(b09r06,"R06_SOURCE_BLOB"):signedB09R05?field(b09r05,"R05_SOURCE_BLOB"):signedB09R03?field(b09r03,"R03_SOURCE_BLOB"):signedB08R04?field(b08r04,"R04_SOURCE_BLOB"):signedR05?field(r05,"R05_SOURCE_BLOB"):signedR04?field(r04,"R04_SOURCE_BLOB"):signedR03?
   field(r03,c.n===7?"R03_SOURCE_BLOB":"R03_CANDIDATE_SOURCE_BLOB"):
