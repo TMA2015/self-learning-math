@@ -623,9 +623,9 @@ ASSESSMENT: CLIENT_SELF_CHECK_NO_MASTERY, public answer data must be hidden by R
 - **Lời giải có suy luận:** h=6<R=10 nên r=√(100−36)=8m.
 
 #### THPT-G12-B14-W07 — SGK_WRITTEN
-- `ITEM_ID`: `THPT-G12-B14-W07` · `OUTCOME_ID`: `G12-CHV-B14-O07` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
+- `ITEM_ID`: `THPT-G12-B14-W07` · `OUTCOME_ID`: `G12-CHV-B14-O07` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3 · `CONTENT_VERSION`: 2
 - **Đề duy nhất:** Giải thích ba trường hợp giao của cầu tâm cách mặt phẳng h và bán kính R.
-- **Đáp án canonical (chỉ mở khi được phép):** h<R: hình tròn; h=R: tiếp xúc; h>R: không giao.
+- **Đáp án canonical (chỉ mở khi được phép):** Với \(h<R\), giao của **mặt cầu** và mặt phẳng là **đường tròn** bán kính \(r=\sqrt{R^2-h^2}\), không phải hình tròn chứa phần bên trong; với \(h=R\), tiếp xúc tại một điểm; với \(h>R\), không có điểm chung.
 - **Lời giải có suy luận:** Dùng vuông góc tâm–mặt phẳng và r²=R²−h² khi vế phải không âm.
 - **Rubric Written /5 (chấm theo từng bước):** 2đ xác định khoảng cách tâm–mặt và điều kiện h so R; 1đ lập r²+h²=R²; 1đ tính bán kính/3 trường hợp; 1đ giải thích ý nghĩa vật lý.
 - **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery từ câu tự luận chưa chấm độc lập.
