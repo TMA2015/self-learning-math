@@ -26,7 +26,7 @@ SGK văn bản https://toanaz.com/wp-content/uploads/2026/10/SGK-Toan-10-Tap-2-C
 | G10-B24-PERMUTATION | TRY05 + HELP-G10-CHVIII-TRY05, gộp khối | §1 hoán vị | 4 sách AB kề → 12 |
 | G10-B24-ARRANGEMENT | TRY06 + HELP-G10-CHVIII-TRY06, phân hai vai | §2 chỉnh hợp | 5·4=20, chọn ban phân vai |
 | G10-B24-COMBINATION | TRY07 + HELP-G10-CHVIII-TRY07, hình 6 cặp/3 nhóm | §3 tổ hợp | 5 chọn 2 nhóm =10 |
-| G10-B24-CONSTRAINTS | TRY08 + HELP-G10-CHVIII-TRY08, chọn đúng cơ cấu | §4 ứng dụng đếm | C6²·C5¹=75; ban 20 người =1,162,800 |
+| G10-B24-CONSTRAINTS | THPT-G10-CHVIII-TRY08 + HELP-G10-CHVIII-TRY08, chọn đúng cơ cấu | §4 ứng dụng đếm | C6²·C5¹=75; ban 20 người =1,162,800 |
 | Kỹ năng calculator liên thông ba outcome đếm, không sinh item đánh giá mới | Tự kiểm công thức trước khi bấm | §5 sử dụng máy tính | 9!, nPr, nCr, ràng buộc số nguyên |
 
 ## G2 · Tự đọc cả bốn tab và chống lặp lỗi
