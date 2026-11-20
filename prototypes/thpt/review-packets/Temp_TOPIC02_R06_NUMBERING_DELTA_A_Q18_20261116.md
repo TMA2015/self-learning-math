@@ -7,8 +7,8 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: cb3a6e6be2ec3419be3fdc16f0e5df3599fe1ec2
-ACADEMIC_SOURCE_BLOB: cb3a6e6be2ec3419be3fdc16f0e5df3599fe1ec2
+SOURCE_BLOB: 36d6657b9977e3f72d7bf73d98653188a0ebe760
+ACADEMIC_SOURCE_BLOB: 36d6657b9977e3f72d7bf73d98653188a0ebe760
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R05_FULL_LEARNER_VISIBLE_38_CANONICAL_20261115.md
 PREVIOUS_SOURCE_BLOB: eb5a01b50262dc4b151b3915f5a5e4b436432374
 PREVIOUS_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC02_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
@@ -72,3 +72,7 @@ ASSESSMENT_Q16: Zero private RD1 imported, public self-check CLIENT_SELF_CHECK_N
 **Nguồn S1:** SGK Kết nối tri thức Toán 10 Tập hai, Bài 17, trang in 19: biệt thức `Δ=b²−4ac`, biệt thức thu gọn `Δ′=(b′)²−ac` khi `b=2b′`. [Bản SGK gốc đã đối chiếu](https://toanaz.com/wp-content/uploads/2026/10/SGK-Toan-10-Tap-2-Chuong-trinh-moi.pdf). Trước chỉnh, learner `702163e95642d24f070c442cf13f4ad575678145` đã có Δ nhưng chưa dạy Δ′ trong Kiến thức. Đã thêm vào **đúng một source learner** `cb3a6e6be2ec3419be3fdc16f0e5df3599fe1ec2` tại `TOP02-M02 / TOP02-O02`: giải thích b′ và Δ′, trường hợp âm/bằng 0/dương, nghiệm `(-b′±√Δ′)/a` và ví dụ `2x²−8x+6=0` có nghiệm 1,3.
 
 **Q18 AUTHOR_SELF_VERIFIED_AFFECTED_DELTA:** 6/6 kiểm tra thực tế PASS: với 4×5×4 bộ a,b′,c, `Δ=4Δ′`; nghiệm 1 và 3 đều thỏa phương trình gốc; MathJax delimiter cân bằng; số lượng `item_id` không đổi; bổ sung trước Ví dụ hiện hành; xóa đúng khối bổ sung trả lại learner cũ byte-identical. Không sửa stem/key/solution/rubric/ID/SVG/Readiness, 0 P0/P1 được xác định ở riêng phạm vi Δ′. **Phân loại `DELTA_C_ACADEMIC_MATERIAL`**, không mạo danh independent NotebookLM review hoặc full 22-topic audit. Theo quyết định owner, AUTHORING `CONTENT_READY` giữ nguyên trên nguồn mới sau source-lock. RELEASE và merge/deploy chưa được cho phép.
+
+
+## 20/11/2026 · ΔA TOP02-O07
+- Learner `36d6657b9977e3f72d7bf73d98653188a0ebe760` supersedes historic `cb3a6e6be2ec3419be3fdc16f0e5df3599fe1ec2`: formal label `ĐIỀU KIỆN — Miền nghiệm có điều kiện vật lý` now `PHƯƠNG PHÁP`, because actual source explains how to intersect algebraic solutions with physical feasible domain. All mathematical inequalities, examples, 38 canonical items and rubrics identical; only one label prefix changed. Targeted Q03/PED author self-QA, no full NotebookLM or RELEASE.
