@@ -44,8 +44,18 @@ for(const [lessonStr,info]of Object.entries(specs)){
  assert.equal(old.status,0,"Original published Git source inaccessible "+rel+" "+old.stderr);
  const baseline=old.stdout;
  assert.equal(blob(baseline),row.baseline,name+" published source baseline SHA mismatch");
- assert.equal(blob(bytes),row.candidate,name+" changed Markdown differs from exact receipt");
- assert.equal(candidateG10KnowledgeBlob(n),row.candidate,name+" canonical source router not signed");
+ const expected=n===19?candidateG10KnowledgeBlob(n):row.candidate;
+ assert.equal(blob(bytes),expected,name+" candidate Markdown differs from signed latest receipt");
+ assert.equal(candidateG10KnowledgeBlob(n),expected,name+" canonical current source router not signed");
+ if(n===19){
+  const latest=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHVII_B19_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261120.md"),"utf8");
+  const field=k=>latest.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(field("PREVIOUS_B19_SOURCE_BLOB"),row.candidate,
+   "B19 owner update must preserve published 13/11 receipt/source");
+  assert.equal(field("CANDIDATE_B19_SOURCE_BLOB"),expected,
+   "B19 current exact Git source must match new owner Q18 receipt");
+ }
  assert.equal(row.moved,info.count,name+" 25 First Try count source receipt");
  assert.equal(row.helps,info.helps,name+" 33 HELP source receipt");
  assert.equal(row.examples,info.examples,name+" example count source receipt");
@@ -72,8 +82,32 @@ for(const [lessonStr,info]of Object.entries(specs)){
  assert.equal(ids(d+knowledge+examples,"data-thpt-help-id").length,0,name+" HELP outside remediation");
  assert.equal((s.match(/<figure/g)||[]).length,info.figures,name+" original D5 figures lost");
  assert.equal([...examples.matchAll(/^    ### /gm)].length,info.examples,name+" worked example sections incorrect");
- assert.equal([...examples.matchAll(/\*\*Lời giải\.\*\*/g)].length,info.examples,
-  name+" missing one clear source-level solution for every example");
+ const solutions=n===19?
+  [...examples.matchAll(/<div class="thpt-g10-example-solution"/g)].length:
+  [...examples.matchAll(/\*\*Lời giải\.\*\*/g)].length;
+ assert.equal(solutions,info.examples,
+  name+" missing one clear Golden solution for every example");
+ if(n===19){
+  assert.equal([...examples.matchAll(/<strong>Lời giải\.<\/strong>/g)].length,2,
+   "B19 both solution boxes must display exact label Lời giải");
+  assert.equal([...examples.matchAll(/\*\*Phân tích:\*\*/g)].length,2,
+   "B19 each worked example must explain method before the solution");
+  assert.equal((knowledge.match(/thpt-r4-knowledge-conclusion thpt-r4-concept-card/g)||[]).length,2,
+   "B19 must distinguish exact formal normal and direction definitions");
+  assert.equal((knowledge.match(/thpt-r4-knowledge-conclusion thpt-r4-rule-card/g)||[]).length,2,
+   "B19 must distinguish general and parametric equation rules");
+  assert.equal((d.match(/\*\*Vận dụng\.\*\*/g)||[]).length,7,
+   "B19 must have seven visible Vận dụng prompts, not Tự thử");
+  assert.equal((rem.match(/^    \?\?\? tip "4\.[1-9]\. /gm)||[]).length,9,
+   "B19 9 original D6 IDs need 9 meaningfully distinguished errors");
+  assert(!/Tự thử|Em vận dụng\.|Vì sao chọn cách này\?|Kiến thức tiền đề:|Tự khắc phục theo năm bước/.test(s),
+   "B19 must remove legacy learner-facing metadata and non-Golden labels");
+  assert(d.includes("G10_B19_LINE_NORMAL_R02.svg")&&!knowledge.includes("G10_B19_LINE_NORMAL_R02.svg"),
+   "B19 real figure must appear in Discovery before learner reads its arrows");
+  for(const x of ["đồ thị của một hàm số","t không nhất thiết là thời gian",
+    "nhắc lại bài toán liên quan"])
+   assert(s.includes(x), "B19 learner-first explanation missing "+x);
+ }
  assert(!/Ví dụ do dự án biên soạn|Ví dụ tự biên soạn|Lưu ý về phạm vi Core|outcome Core|RD1/.test(s),
   name+" review metadata exposed in learner-facing source");
  const more=new Map();for(const f of tex(s))more.set(f,(more.get(f)||0)+1);
@@ -83,7 +117,7 @@ for(const [lessonStr,info]of Object.entries(specs)){
  assert(!/^\s{4}\?\?\? question "Tự mở đáp án sau khi đã tự làm"/m.test(s),name+" non-Golden reveal label");
  assert.notDeepEqual(ids(s.replace('data-thpt-first-try-id="','data-thpt-first-try-id="CORRUPTED-'),"data-thpt-first-try-id"),
   ids(baseline,"data-thpt-first-try-id"),name+" negative item-id mutation failed");
- assert.notEqual(blob(s+" "),row.candidate,name+" negative source SHA mutation failed");
+ assert.notEqual(blob(s+" "),expected,name+" negative source SHA mutation failed");
  assert.notDeepEqual([...knowledge.replace(info.book[0],"WRONG_S1_TITLE").matchAll(/^    ### ([^\n]+)/gm)].map(x=>x[1]),
   info.book,name+" negative SGK title mutation failed");
  allTry+=info.count;allHelp+=info.helps;allFigures+=info.figures;allExamples+=info.examples;
