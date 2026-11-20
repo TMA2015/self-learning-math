@@ -8,7 +8,7 @@ const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("n
 const {chromium}=require("playwright");
 const root=path.resolve(__dirname,"..");
 const base=(process.env.SCOPED_BASE_URL||"http://127.0.0.1:8765").replace(/\/$/,"");
-const lessons=(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean);
+const lessons=["docs/thpt-preview/sgk/chuong-viii/bai-23.md"]; // TEMPORARY visual diagnostic ONLY, revert before final release
 const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
 const widths=[390,820,1440];
 const re=/^docs\/thpt-preview\/sgk\/(?:(?:lop-11|lop-12)\/)?chuong-(?:i|ii|iii|iv|v|vi|vii|viii|ix)\/bai-[1-9]\d*\.md$/;
