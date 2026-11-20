@@ -107,6 +107,28 @@ function expectedG10KnowledgeBlob(lesson,legacy){
  assert.equal(blobs.length,2,name+" must carry baseline AND candidate Git blob");
  assert.notEqual(blobs[0],blobs[1],name+" Knowledge delta must not silently change baseline identity");
 
+ if(name==="B23"){
+  // Owner-approved B23 single canonical source enrichment (20/11/2026).
+  // Extend the immutable 27-row Q18 ledger through one signed delta receipt;
+  // never silently relax the current-site baseline or trust an unchecked hash.
+  const receiptPath="prototypes/thpt/ux795/G10_CHVIII_B23_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261120.md";
+  const receipt=fs.readFileSync(path.join(root,receiptPath),"utf8");
+  const field=k=>receipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(field("BEFORE_BLOB"),blobs[1],
+   "B23 Q18 must extend exact immutable published S1 source");
+  assert(receipt.includes("G10-B23-ADDITION")&&receipt.includes("G10-B23-CASE_SPLIT")&&
+   receipt.includes("Q18_OWNER_SELF_VERIFIED_ENRICHMENT")&&
+   receipt.includes("DELTA_C_ACADEMIC_MATERIAL")&&
+   receipt.includes("OWNER_P2_PENDING")&&receipt.includes("P0=0")&&receipt.includes("P1=0"),
+   "B23 source receipt must identify full four-outcome delta and no false owner P2");
+  const current=field("CANDIDATE_BLOB");
+  assert(/^[a-f0-9]{40}$/.test(current||"")&&current!==blobs[1],
+   "B23 new canonical source must be a distinct actual Git blob");
+  const lesson=fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-viii/bai-23.md"));
+  const gitBlob=require("node:crypto").createHash("sha1").update(Buffer.from("blob "+lesson.length+"\0")).update(lesson).digest("hex");
+  assert.equal(gitBlob,current,"B23 new candidate must exactly match signed source SHA");
+  return current;
+ }
  if(name==="B01"){
    const newCandidate=b01EnrichmentBlob(blobs[1]);
    if(newCandidate)return newCandidate;

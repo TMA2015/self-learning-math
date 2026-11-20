@@ -1,5 +1,18 @@
 # Bài 23. Quy tắc đếm
 
+<style>
+/* Scoped to B23 by its canonical First Try marker; no shared UI changes. */
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card{background:#e8f7f2;border-color:#a9dccc;border-left-color:#087d69;color:#174137}
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#eaf1fc;border-color:#a5bee5;border-left-color:#4879c2;color:#193d66}
+[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card{background:#193d36;border-color:#447e70;border-left-color:#76dfc7;color:#e9fff7}
+[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#203551;border-color:#45658a;border-left-color:#8cb4ed;color:#ecf5ff}
+
+/* Explicit tree: B23 S1 outcome 'sơ đồ hình cây', local responsive only. */
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) .b23-tree {margin:1rem 0;padding:.85rem 1rem;border:1px solid #a5bee5;border-radius:.6rem;background:var(--md-default-bg-color);font-size:.92em}
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) .b23-tree ul {margin:.35rem 0 .35rem 1rem;padding-left:1rem;border-left:2px solid #4879c2}
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) .b23-tree li {margin:.3rem 0}
+</style>
+
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VIII · KIẾN THỨC SGK KNTT</p>
 <p class="thpt-r4-lead">Phân biệt quy tắc cộng và quy tắc nhân, đếm số trường hợp không thiếu hoặc trùng.</p>
@@ -10,37 +23,25 @@
 
     ### Cùng tìm hiểu
 
-    Một học sinh muốn chọn đúng **một câu lạc bộ** trong 4 môn nghệ thuật hoặc 3 môn thể thao, mỗi lựa chọn là một môn khác nhau. Khi ấy có \(4+3=7\) cách. Nhưng nếu muốn tham gia **một môn nghệ thuật và một môn thể thao**, mỗi kế hoạch gồm đủ hai bước lựa chọn, nên có \(4\cdot3=12\) cặp.
+    Có 4 môn nghệ thuật và 3 môn thể thao. Nếu một bạn được chọn **một** môn thuộc một trong hai nhóm, kết quả hoàn chỉnh chỉ là tên một môn: có 7 lựa chọn. Nếu bạn ấy phải chọn **một môn ở mỗi nhóm**, kết quả hoàn chỉnh là một **cặp môn**, có 12 cách. Sự khác nhau không nằm ở từ “hoặc” hay “và” mà ở **đơn vị cần đếm**: một kết quả hoàn chỉnh gồm những gì?
 
-    Vì sao cùng là lựa chọn mà lúc cộng, lúc nhân? Hãy nhìn **một kết quả hoàn chỉnh là gì**. Quy tắc cộng dùng khi các phương án thuộc **những trường hợp không trùng nhau**. Quy tắc nhân dùng khi để hoàn thành một kết quả, em phải thực hiện **nhiều bước nối tiếp**. Nếu số lựa chọn bước sau phụ thuộc lựa chọn trước, ta phải tách các trường hợp phù hợp trước khi nhân.
+    Trước khi chọn quy tắc, hãy tự hỏi: **các trường hợp có trùng kết quả không; cần làm đủ bao nhiêu bước; số cách của bước sau có như nhau trên mọi nhánh không?** Hình sau giúp nhìn ra hai cấu trúc khác nhau ngay từ một tình huống.
 
-    Khi lập số có nhiều chữ số, số 0 ở hàng đầu và điều kiện không lặp chữ số thường quyết định toàn bộ phép đếm. Vì thế, đừng đặt công thức trước khi mô tả chính xác kết quả cần đếm.
+    <figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="../../../../assets/images/thpt/G10_B23_ADD_MULTIPLY_CHOICES_R02.svg" loading="lazy" alt="Chọn một môn giữa nhóm 4 và nhóm 3 có 7 cách; chọn một môn ở mỗi nhóm có 12 cặp"><figcaption>Quy tắc cộng \(4+3=7\) áp dụng cho hai nhóm lựa chọn rời nhau. Quy tắc nhân \(4\cdot3=12\) áp dụng khi một kết quả phải hoàn tất cả hai bước.</figcaption></figure>
 
-    ### Thuật ngữ, kiến thức và kỹ năng
+    **Cách đọc hình:** Khung trái gom 4 môn nghệ thuật và 3 môn thể thao **không trùng nhau**, đếm 7 lựa chọn đơn. Khung phải ghép mỗi môn nghệ thuật với từng môn thể thao để tạo đủ 12 cặp. Hình minh họa câu lạc bộ, không phải sơ đồ cho bài lập số phía dưới.
 
-    **Thuật ngữ:** Quy tắc cộng, quy tắc nhân, trường hợp rời nhau, quy trình nhiều bước, chữ số đầu, điều kiện không lặp.
-
-    **Sau bài học, em cần làm được:** Phân biệt cộng với nhân theo cấu trúc kết quả; chia trường hợp không giao nhau; đếm số có điều kiện chữ số đầu và lặp/chẵn lẻ.
-
-=== "Kiến thức SGK"
+    ### 1.1. Quy tắc cộng: chọn một trong những trường hợp rời nhau
 
     <span id="thpt-g10-chviii-try01" data-thpt-first-try-id="THPT-G10-CHVIII-TRY01" data-outcome-id="G10-B23-ADDITION"></span>
 
-    ### Quy tắc cộng cần các trường hợp không trùng
+    Hãy coi mỗi cách nhận phần thưởng là một **kết quả hoàn chỉnh**. Khi một bạn được chọn đúng một món truyện hoặc vé, hai nhóm phần thưởng thay thế nhau, không phải hai bước phải làm liên tiếp. Ta có thể đếm riêng từng nhóm rồi cộng vì **không món nào xuất hiện ở cả hai**.
 
-    Một học sinh có thể đi đến trường bằng 3 tuyến xe buýt hoặc 4 tuyến tàu điện; ta muốn đếm các cách chọn đúng một tuyến mà không đếm hai lần.
+    Nếu hai danh sách có trùng một món, cộng thẳng sẽ đếm món ấy hai lần. Vì vậy kiểm tra “không giao nhau” quan trọng hơn tìm từ khóa “hoặc”. Đây chính là ý nghĩa của quy tắc cộng và lý do phải tách các nhánh rời nhau.
 
-    **Tiền đề:** Nhắc việc đếm số phần tử của hợp hai tập và khái niệm hai trường hợp rời nhau; một phương án không thể thuộc đồng thời hai nhóm nếu muốn cộng thẳng.
+    **Vận dụng.** Một bạn được chọn đúng một phần thưởng: một trong 2 cuốn truyện hoặc một trong 6 vé xem phim khác nhau. Có mấy lựa chọn?
 
-    Quy tắc cộng đếm các khả năng thay thế nhau: thực hiện cách A HOẶC cách B. Chỉ cộng số cách khi hai nhánh không có phương án trùng nhau, nếu có phải loại phần giao.
-
-    **Hướng dẫn đọc hình/sơ đồ:** Vẽ sơ đồ một nút 'Chọn phương tiện' tách thành nhánh 3 tuyến buýt và nhánh 4 tuyến tàu; mỗi lựa chọn kết thúc ở đúng một nhánh.
-
-    **Lý do chọn phương pháp, điều kiện và giới hạn:** Kiểm xem các nhóm có giao nhau không; nếu không, lấy m+n. Nếu có, dùng m+n−phần giao hoặc chia thành nhóm rời.
-
-    **Em vận dụng.** Một bạn được chọn đúng một phần thưởng: một trong 2 cuốn truyện hoặc một trong 6 vé xem phim khác nhau. Có mấy lựa chọn?
-
-    ??? question "Tự mở đáp án sau khi đã tự làm"
+    ??? question "Đối chiếu"
 
         **Đáp án:** 8 lựa chọn.
 
@@ -48,8 +49,177 @@
 
         **Nếu chưa đúng:** xem hướng dẫn tự sửa tương ứng, sau đó luyện câu liên quan ở phần Luyện tập (không dùng câu đã xem lời giải làm chứng cứ tự kiểm tra độc lập).
 
-        <a href="#help-g10-chviii-try01">Đến hướng dẫn tự sửa</a>
+        **Đường khắc phục:** Mở tab *Lỗi thường gặp*, mục 4.1 để xem hướng dẫn từng bước (không cần rời bài học).
 
+
+
+    ### 1.2. Quy tắc nhân: một kết quả phải hoàn tất nhiều bước
+
+    <span id="thpt-g10-chviii-try02" data-thpt-first-try-id="THPT-G10-CHVIII-TRY02" data-outcome-id="G10-B23-MULTIPLICATION"></span>
+
+    Một suất bánh mì không chỉ có bánh **hoặc** nhân: cần chọn đủ cả hai. Ta có 4 nhánh lựa chọn bánh; với **mỗi** nhánh bánh lại có 3 lựa chọn nhân, tức mỗi nhánh có 3 suất. Bởi thế số suất là \(4\cdot3\), tương ứng 12 lá cuối của một cây hai tầng.
+
+    Lý do được nhân trực tiếp là **mỗi** loại bánh ghép được với đúng 3 loại nhân. Nếu loại bánh nào đó không thể dùng một số loại nhân, số lá theo các nhánh sẽ khác nhau: cần đếm từng nhánh rồi cộng, không cứ thấy nhiều bước là nhân một tích cố định.
+
+    **Vận dụng.** Có 4 loại bánh mì khác nhau và 3 loại nhân; mỗi suất gồm đúng một loại bánh và một loại nhân. Có bao nhiêu suất?
+
+    ??? question "Đối chiếu"
+
+        **Đáp án:** 12 suất.
+
+        **Lập luận:** Mỗi trong 4 loại bánh ghép được với 3 loại nhân: 4×3=12 cặp phân biệt; không bỏ sót hay đếm trùng.
+
+        **Nếu chưa đúng:** xem hướng dẫn tự sửa tương ứng, sau đó luyện câu liên quan ở phần Luyện tập (không dùng câu đã xem lời giải làm chứng cứ tự kiểm tra độc lập).
+
+        **Đường khắc phục:** Mở tab *Lỗi thường gặp*, mục 4.2 để xem hướng dẫn từng bước (không cần rời bài học).
+
+
+
+    ### 1.3. Đếm số có hai chữ số: chữ số đầu và điều kiện không lặp
+
+    <span id="thpt-g10-chviii-try03" data-thpt-first-try-id="THPT-G10-CHVIII-TRY03" data-outcome-id="G10-B23-DIGIT_COUNT"></span>
+
+    Khi lập một số tự nhiên có **hai chữ số**, hàng chục phải khác 0; ký hiệu “01” thực chất là số 1, không phải số có hai chữ số. Từ 0,1,2,3, ta chọn hàng chục trước: có 3 cách (1,2,3). Sau mỗi cách, hàng đơn vị có 3 chữ số còn lại, kể cả 0 nếu chưa dùng. Vì mọi nhánh đầu đều có cùng 3 lựa chọn tiếp theo, số cách là \(3\cdot3=9\).
+
+    Điều kiện “khác nhau” bắt buộc loại chữ số đã chọn ở hàng chục. Đừng áp kết quả cho mã ký tự có thể bắt đầu bằng 0: đó là **đối tượng đếm khác** và số cách cũng khác.
+
+    **Vận dụng.** Từ các chữ số 0,1,2,3 tạo số tự nhiên có hai chữ số khác nhau. Có bao nhiêu số?
+
+    ??? question "Đối chiếu"
+
+        **Đáp án:** 9 số.
+
+        **Lập luận:** Hàng chục có 3 cách (1,2,3); với mỗi cách, hàng đơn vị còn 3 chữ số trong tập 0..3 nên 3×3=9. Ví dụ 10,12,13,20,21,23,30,31,32.
+
+        **Nếu chưa đúng:** xem hướng dẫn tự sửa tương ứng, sau đó luyện câu liên quan ở phần Luyện tập (không dùng câu đã xem lời giải làm chứng cứ tự kiểm tra độc lập).
+
+        **Đường khắc phục:** Mở tab *Lỗi thường gặp*, mục 4.3 để xem hướng dẫn từng bước (không cần rời bài học).
+
+
+
+    ### 1.4. Khi số nhánh thay đổi: kết hợp quy tắc cộng và quy tắc nhân
+
+    <span id="thpt-g10-chviii-try04" data-thpt-first-try-id="THPT-G10-CHVIII-TRY04" data-outcome-id="G10-B23-CASE_SPLIT"></span>
+
+    Số chẵn phải có chữ số hàng đơn vị chẵn. Trong 0,1,2,3, hàng đơn vị chỉ có thể là **0 hoặc 2**. Chọn vị trí quyết định trước, ta được hai nhánh không giao nhau, nhưng **số cách chọn hàng chục không bằng nhau**:
+
+    | Chữ số cuối | Hàng chục hợp lệ | Số cách |
+    | --- | --- | ---: |
+    | 0 | 1, 2, 3 | 3 |
+    | 2 | 1, 3 | 2 |
+    | **Cộng hai nhánh** | **Không trùng kết quả** | **5** |
+
+    <figure class="b23-tree" aria-label="Sơ đồ hình cây số chẵn có hai chữ số khác nhau từ 0 1 2 3">
+    <figcaption><strong>Sơ đồ hình cây — chọn chữ số cuối trước:</strong> Mỗi lá là một số chẵn hợp lệ, được đếm đúng một lần.</figcaption>
+    <ul>
+      <li><strong>Số chẵn hai chữ số, chữ số khác nhau</strong>
+        <ul>
+          <li><strong>Đơn vị 0</strong> → hàng chục 1 → <strong>10</strong>; hàng chục 2 → <strong>20</strong>; hàng chục 3 → <strong>30</strong> (3 lá)</li>
+          <li><strong>Đơn vị 2</strong> → hàng chục 1 → <strong>12</strong>; hàng chục 3 → <strong>32</strong> (2 lá)</li>
+        </ul>
+      </li>
+    </ul>
+    </figure>
+
+    **Cách đọc bảng nhánh:** Nếu tận cùng 0, hàng chục có 3 cách. Nếu tận cùng 2, hàng chục chỉ còn 1 hoặc 3 (vừa tránh 0 đứng đầu, vừa không lặp 2). Do đó \(3+2=5\), không phải \(2\cdot3=6\). Ta **nhân trong từng nhánh nếu có nhiều bước**, nhưng **cộng giữa những nhánh khác nhau**.
+
+    **Vận dụng.** Từ 0,1,2,3, lập được bao nhiêu số chẵn có hai chữ số khác nhau?
+
+    ??? question "Đối chiếu"
+
+        **Đáp án:** 5 số: 10,12,20,30,32.
+
+        **Lập luận:** Tận cùng 0: hàng chục có 3 cách 1,2,3 →3 số. Tận cùng 2: hàng chục có 2 cách 1 hoặc3 →2 số. Cộng hai trường hợp rời được 5.
+
+        **Nếu chưa đúng:** xem hướng dẫn tự sửa tương ứng, sau đó luyện câu liên quan ở phần Luyện tập (không dùng câu đã xem lời giải làm chứng cứ tự kiểm tra độc lập).
+
+        **Đường khắc phục:** Mở tab *Lỗi thường gặp*, mục 4.4 để xem hướng dẫn từng bước (không cần rời bài học).
+
+
+
+    ### Điều cần hiểu sau bài
+
+    **Quy tắc cộng** đếm các kết quả thuộc một trong những trường hợp rời nhau. **Quy tắc nhân** đếm đủ các bước tạo ra một kết quả khi số nhánh con phù hợp là cố định. Với điều kiện chữ số/chẵn lẻ hoặc số lựa chọn thay đổi theo nhánh, phải chia trường hợp rồi kết hợp hai quy tắc; kiểm lại bằng liệt kê khi số lượng nhỏ.
+
+=== "Kiến thức SGK"
+
+    ### 2.1. Quy tắc cộng và sơ đồ hình cây
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Các phương án thay thế nhau:</strong> Một công việc được hoàn thành theo <strong>đúng một</strong> trong các trường hợp. Các kết quả thuộc những trường hợp khác nhau phải <strong>không trùng nhau</strong> thì mới được cộng số cách trực tiếp.</div>
+
+    **Quy tắc cộng.** Nếu các trường hợp rời nhau lần lượt có \(m_1,m_2,\ldots,m_k\) cách, số cách thực hiện công việc là \(m_1+\cdots+m_k\).
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Điều kiện — Không đếm trùng:</strong> Các trường hợp phải đôi một rời nhau. Nếu có kết quả xuất hiện trong nhiều nhóm, cần loại phần giao hoặc chia lại thành những nhóm rời nhau; với hai tập hữu hạn, lấy tổng số phần tử hai tập rồi trừ phần giao.</div>
+
+    Sơ đồ hình cây biểu diễn các nhánh lựa chọn; **mỗi lá cuối** phải ứng với đúng một kết quả hoàn chỉnh. Hình sau dùng hai cách đặt câu hỏi với cùng 4 môn nghệ thuật và 3 môn thể thao, giúp phân biệt khi nào cộng, khi nào nhân.
+
+    <figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="../../../../assets/images/thpt/G10_B23_ADD_MULTIPLY_CHOICES_R02.svg" loading="lazy" alt="Chọn một môn giữa nhóm 4 và nhóm 3 có 7 cách; chọn một môn ở mỗi nhóm có 12 cặp"><figcaption>Quy tắc cộng \(4+3=7\) áp dụng cho hai nhóm lựa chọn rời nhau. Quy tắc nhân \(4\cdot3=12\) áp dụng khi một kết quả phải hoàn tất cả hai bước.</figcaption></figure>
+
+    **Cách đọc hình ở tab Kiến thức SGK:** Bên trái chỉ chọn một môn từ hai nhóm rời: \(4+3=7\). Bên phải chọn đủ một môn mỗi nhóm: \(4\cdot3=12\) cặp. Đây là một **hình canonical dùng chung** với Khám phá, được đặt lại để người chỉ đọc tab này vẫn theo được quy tắc.
+
+    ### 2.2. Quy tắc nhân
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Nhiều công đoạn:</strong> Một kết quả hoàn chỉnh đòi hỏi thực hiện <strong>tất cả</strong> các bước. Một đường đi từ gốc đến lá cuối của sơ đồ cây tượng trưng cho một chuỗi lựa chọn hợp lệ.</div>
+
+    **Quy tắc nhân.** Nếu bước thứ nhất có \(m_1\) lựa chọn, ứng với **mỗi** lựa chọn ấy bước thứ hai đều có \(m_2\) lựa chọn, và tương tự ở các bước tiếp theo, số kết quả là tích \(m_1m_2\cdots m_k\).
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Điều kiện — Cùng số nhánh con:</strong> Trước khi nhân trực tiếp, kiểm số cách hợp lệ tại mỗi bước có <strong>cố định trên mọi nhánh đang gộp</strong> hay không. Nếu số cách thay đổi tùy lựa chọn trước đó, phải tính riêng từng nhánh rồi cộng; không dùng phép nhân máy móc.</div>
+
+    Chẳng hạn, 4 loại bánh đều có thể ghép với 3 nhân thì có \(4\cdot3=12\) suất. Nếu ba loại bánh ghép được 3 nhân còn loại cuối chỉ ghép được 2 nhân, ta phải đếm \(3\cdot3+2=11\) suất.
+
+    ### 2.3. Kết hợp quy tắc cộng và quy tắc nhân
+
+    Một bài đếm có ràng buộc có thể vừa có **những trường hợp rời nhau** để cộng, vừa có **nhiều bước trong mỗi trường hợp** để nhân. Quy trình là: xác định một kết quả hoàn chỉnh → chọn điều kiện quyết định trước → chia trường hợp không giao nhau → tính số cách trong từng trường hợp → cộng và kiểm tra có thiếu/trùng.
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Điều kiện lập số:</strong> Chữ số đầu của số có từ hai chữ số trở lên <strong>khác 0</strong>. Nếu chữ số phải phân biệt, không dùng lại chữ số đã chọn. Nếu số phải chẵn, chữ số tận cùng thuộc tập chữ số chẵn <strong>được phép</strong>. Khi điều kiện làm số lựa chọn khác nhau theo nhánh, hãy <strong>cộng các kết quả từng nhánh</strong> thay vì nhân một số lượng cố định.</div>
+
+    **Ví dụ đọc nhánh:** Từ 0,1,2,3 lập số chẵn hai chữ số không lặp: cuối 0 có 10,20,30; cuối 2 có 12,32. Hai nhánh cho \(3+2=5\) số.
+
+=== "Ví dụ"
+
+    Mỗi lời giải bắt đầu bằng **một kết quả cần đếm**, giải thích vì sao chọn quy tắc và kiểm lại điều kiện, không chỉ nêu phép tính.
+
+    ### 3.1. Ví dụ — Chọn một môn hay một cặp môn?
+
+    **Đề bài.** Có 4 môn nghệ thuật và 3 môn thể thao khác nhau. Đếm (a) cách chọn đúng một môn; (b) cách chọn một môn trong mỗi nhóm.
+
+    **Phân tích:** Ở (a) một kết quả là một môn, hai nhóm rời nhau nên cộng. Ở (b) một kết quả là cặp môn, phải đủ hai bước, mỗi môn nghệ thuật ghép được với cả ba môn thể thao nên nhân.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1">
+    <p><strong>Lời giải.</strong> (a) \(4+3=7\) cách chọn một môn. (b) \(4\cdot3=12\) cặp môn.</p>
+    </div>
+
+    **Kiểm lại:** Có đúng 7 môn khác nhau; 4 môn nghệ thuật mỗi môn ghép với 3 môn thể thao thành 12 cặp phân biệt. Hai đáp án khác vì cách định nghĩa một kết quả đã đổi.
+
+    ### 3.2. Ví dụ — Lập số có hai chữ số
+
+    **Đề bài.** Từ các chữ số \(0,1,2,3,4\), lập số tự nhiên hai chữ số (a) khác nhau; (b) có thể lặp.
+
+    **Phân tích:** Hàng chục phải khác 0 nên chỉ có 4 cách. Hàng đơn vị có 4 cách khi không lặp, hoặc 5 cách khi cho phép lặp. Mỗi nhánh hàng chục có cùng số lựa chọn tiếp theo nên dùng nhân.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2">
+    <p><strong>Lời giải.</strong> (a) \(4\cdot4=16\) số; (b) \(4\cdot5=20\) số.</p>
+    </div>
+
+    **Kiểm lại:** Không có chữ số 0 ở đầu. Ở (a), mỗi lần chọn hàng chục phải bỏ đi chữ số đó khi chọn hàng đơn vị; ở (b) chữ số hàng đơn vị được dùng cả 5 chữ số.
+
+    ### 3.3. Ví dụ — Số chẵn hai chữ số khác nhau
+
+    **Đề bài.** Từ \(0,1,2,3\), có bao nhiêu số chẵn gồm hai chữ số khác nhau?
+
+    **Phân tích:** Tận cùng chỉ có thể là 0 hoặc 2. Hai nhánh không giao nhau, nhưng số chữ số hàng chục hợp lệ lần lượt là 3 và 2; phải cộng từng trường hợp thay vì nhân \(2\cdot3\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.3">
+    <p><strong>Lời giải.</strong> Cuối 0: hàng chục là 1,2,3 được 3 số. Cuối 2: hàng chục là 1,3 được 2 số. Tổng \(3+2=5\) số.</p>
+    </div>
+
+    **Kiểm lại:** Các số là \(10,12,20,30,32\); không số nào bắt đầu bằng 0, lặp chữ số hoặc lẻ.
+
+=== "Lỗi thường gặp"
+
+    Nếu đếm sai, hãy tìm lại **một kết quả hoàn chỉnh** và kiểm các trường hợp có giao nhau, các bước có cùng số nhánh con, chữ số đầu có phải 0 và chữ số đã được dùng chưa. Các hướng dẫn dưới đây dẫn đến đúng câu Vận dụng và câu luyện phù hợp.
+
+    ### 4.1–4.4. Hướng dẫn tự sửa theo bốn Vận dụng
 
     <span id="help-g10-chviii-try01" data-thpt-help-id="HELP-G10-CHVIII-TRY01"></span>
 
@@ -63,34 +233,6 @@
 
         <a href="../luyen-tap/?item=THPT-G10-B23-C01">Mở câu luyện tập đã được kiểm tra</a>
 
-
-    <span id="thpt-g10-chviii-try02" data-thpt-first-try-id="THPT-G10-CHVIII-TRY02" data-outcome-id="G10-B23-MULTIPLICATION"></span>
-
-    ### Quy tắc nhân là hoàn tất nhiều bước
-
-    Một suất bánh mì kèm nhân buộc phải chọn đủ cả hai phần; khác với chỉ chọn một loại món ăn.
-
-    **Tiền đề:** Ôn cặp (loại bánh, loại nhân), mỗi bánh có thể ghép với mọi loại nhân nếu đề không cấm kết hợp.
-
-    Quy tắc nhân đếm các đường đi hoàn chỉnh qua nhiều bước: mỗi lựa chọn của bước trước có số lựa chọn tiếp theo tương ứng; khi cùng số cách, tổng số là tích.
-
-    **Hướng dẫn đọc hình/sơ đồ:** Vẽ cây 4 nhánh loại bánh, mỗi nhánh rẽ ra 3 loại nhân; đếm 12 lá cuối của 12 suất ăn.
-
-    **Lý do chọn phương pháp, điều kiện và giới hạn:** Tìm các bước 'và' phải làm đủ; ghi số khả năng mỗi bước, kiểm xem chúng có phụ thuộc lựa chọn trước không, rồi nhân nếu cố định.
-
-    **Em vận dụng.** Có 4 loại bánh mì khác nhau và 3 loại nhân; mỗi suất gồm đúng một loại bánh và một loại nhân. Có bao nhiêu suất?
-
-    ??? question "Tự mở đáp án sau khi đã tự làm"
-
-        **Đáp án:** 12 suất.
-
-        **Lập luận:** Mỗi trong 4 loại bánh ghép được với 3 loại nhân: 4×3=12 cặp phân biệt; không bỏ sót hay đếm trùng.
-
-        **Nếu chưa đúng:** xem hướng dẫn tự sửa tương ứng, sau đó luyện câu liên quan ở phần Luyện tập (không dùng câu đã xem lời giải làm chứng cứ tự kiểm tra độc lập).
-
-        <a href="#help-g10-chviii-try02">Đến hướng dẫn tự sửa</a>
-
-
     <span id="help-g10-chviii-try02" data-thpt-help-id="HELP-G10-CHVIII-TRY02"></span>
 
     ??? tip "Nếu chưa làm được — khắc phục 5 bước"
@@ -102,34 +244,6 @@
         5. **Luyện tiếp:** Mở câu luyện qua liên kết bên dưới và tự làm trước khi đối chiếu. Nếu đã xem lời giải, hãy chọn một câu khác để thử không có gợi ý.
 
         <a href="../luyen-tap/?item=THPT-G10-B23-C02">Mở câu luyện tập đã được kiểm tra</a>
-
-
-    <span id="thpt-g10-chviii-try03" data-thpt-first-try-id="THPT-G10-CHVIII-TRY03" data-outcome-id="G10-B23-DIGIT_COUNT"></span>
-
-    ### Chọn chữ số phải để ý chữ số đầu và không lặp
-
-    Một mã hai chữ số là số tự nhiên nên chữ số hàng chục không được bằng 0; điều kiện lặp chữ số cũng làm số cách từng bước thay đổi.
-
-    **Tiền đề:** Nhắc một số có hai chữ số phải có hàng chục khác 0; số không lặp chữ số nghĩa là chữ số hàng đơn vị khác hàng chục.
-
-    Đếm một số là hoàn tất hai bước hàng chục → hàng đơn vị; điều kiện 'không lặp' làm số lựa chọn bước thứ hai phụ thuộc chữ số đã chọn, nhưng còn đúng một số lượng bằng nhau cho mọi chọn ở bước đầu.
-
-    **Hướng dẫn đọc hình/sơ đồ:** Vẽ cây hàng chục có nhánh 1,2,3; từ mỗi nhánh ghi những chữ số hàng đơn vị chưa dùng trong 0,1,2,3.
-
-    **Lý do chọn phương pháp, điều kiện và giới hạn:** Chọn hàng chục trước (loại 0), rồi hàng đơn vị (loại chữ số đã chọn); nhân số cách. Nếu bài có điều kiện chẵn/lẻ, cần chia nhánh theo chữ số tận cùng trước.
-
-    **Em vận dụng.** Từ các chữ số 0,1,2,3 tạo số tự nhiên có hai chữ số khác nhau. Có bao nhiêu số?
-
-    ??? question "Tự mở đáp án sau khi đã tự làm"
-
-        **Đáp án:** 9 số.
-
-        **Lập luận:** Hàng chục có 3 cách (1,2,3); với mỗi cách, hàng đơn vị còn 3 chữ số trong tập 0..3 nên 3×3=9. Ví dụ 10,12,13,20,21,23,30,31,32.
-
-        **Nếu chưa đúng:** xem hướng dẫn tự sửa tương ứng, sau đó luyện câu liên quan ở phần Luyện tập (không dùng câu đã xem lời giải làm chứng cứ tự kiểm tra độc lập).
-
-        <a href="#help-g10-chviii-try03">Đến hướng dẫn tự sửa</a>
-
 
     <span id="help-g10-chviii-try03" data-thpt-help-id="HELP-G10-CHVIII-TRY03"></span>
 
@@ -143,34 +257,6 @@
 
         <a href="../luyen-tap/?item=THPT-G10-B23-P05">Mở câu luyện tập đã được kiểm tra</a>
 
-
-    <span id="thpt-g10-chviii-try04" data-thpt-first-try-id="THPT-G10-CHVIII-TRY04" data-outcome-id="G10-B23-CASE_SPLIT"></span>
-
-    ### Tách trường hợp để xử lý điều kiện chẵn lẻ
-
-    Không phải bài đếm nào cũng nhân một lần được; có lúc số cách còn lại khác nhau theo lựa chọn ở bước trước.
-
-    **Tiền đề:** Nhắc số tự nhiên có hai chữ số không bắt đầu bằng 0, số chẵn có chữ số tận cùng 0,2,4,6,8.
-
-    Nếu đếm số chẵn tạo từ các chữ số cho trước, chữ số hàng đơn vị quyết định các lựa chọn ở hàng chục; chia thành những trường hợp không giao nhau rồi cộng kết quả của từng nhánh.
-
-    **Hướng dẫn đọc hình/sơ đồ:** Vẽ cây 'hàng đơn vị=0' và 'hàng đơn vị=2'; trên mỗi nhánh ghi các hàng chục hợp lệ để thấy số lựa chọn 3 và 2 khác nhau.
-
-    **Lý do chọn phương pháp, điều kiện và giới hạn:** Chọn điều kiện khóa trước (ví dụ chữ số cuối của số chẵn), tách trường hợp rời nhau, nhân trong mỗi trường hợp rồi cộng các nhánh. Không nhân máy móc một số lượng cố định nếu phụ thuộc.
-
-    **Em vận dụng.** Từ 0,1,2,3, lập được bao nhiêu số chẵn có hai chữ số khác nhau?
-
-    ??? question "Tự mở đáp án sau khi đã tự làm"
-
-        **Đáp án:** 5 số: 10,12,20,30,32.
-
-        **Lập luận:** Tận cùng 0: hàng chục có 3 cách 1,2,3 →3 số. Tận cùng 2: hàng chục có 2 cách 1 hoặc3 →2 số. Cộng hai trường hợp rời được 5.
-
-        **Nếu chưa đúng:** xem hướng dẫn tự sửa tương ứng, sau đó luyện câu liên quan ở phần Luyện tập (không dùng câu đã xem lời giải làm chứng cứ tự kiểm tra độc lập).
-
-        <a href="#help-g10-chviii-try04">Đến hướng dẫn tự sửa</a>
-
-
     <span id="help-g10-chviii-try04" data-thpt-help-id="HELP-G10-CHVIII-TRY04"></span>
 
     ??? tip "Nếu chưa làm được — khắc phục 5 bước"
@@ -183,39 +269,7 @@
 
         <a href="../luyen-tap/?item=THPT-G10-B23-P05">Mở câu luyện tập đã được kiểm tra</a>
 
-
-    ### Khái niệm, điều kiện và công thức
-
-    **Cách đọc hình.** Bên trái chọn **một** môn từ hai nhóm không trùng: 4+3. Bên phải chọn **một môn mỗi nhóm**: một kết quả là một cặp, nên 4×3.
-
-    <figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="../../../../assets/images/thpt/G10_B23_ADD_MULTIPLY_CHOICES_R02.svg" loading="lazy" alt="Chọn một môn giữa nhóm 4 và nhóm 3 có 7 cách; chọn một môn ở mỗi nhóm có 12 cặp"><figcaption>Quy tắc cộng \(4+3=7\) áp dụng cho hai nhóm lựa chọn rời nhau. Quy tắc nhân \(4\cdot3=12\) áp dụng khi một kết quả phải hoàn tất cả hai bước.</figcaption></figure>
-
-
-    **Quy tắc cộng.** Nếu một lựa chọn được thực hiện theo đúng một trong các trường hợp A1,...,Ak **đôi một không giao nhau**, số cách là \(m_1+\cdots+m_k\). Khi các trường hợp chồng lấn, cần loại trùng hoặc chia lại thành các trường hợp rời nhau; không cộng máy móc.
-
-    **Quy tắc nhân.** Một quy trình nhiều bước liên tiếp với m1 lựa chọn ở bước 1, m2 lựa chọn ở bước 2 cho mỗi phương án bước 1, ... thì số cách là tích \(m_1m_2\cdots m_k\) khi số cách ở mỗi bước là cố định theo lịch sử phù hợp. Nếu số khả năng ở bước sau phụ thuộc vào lựa chọn trước, chia trường hợp hoặc cộng số cách theo nhánh. Phân biệt "hoặc" loại trừ (cộng) với "và" liên tiếp (nhân).
-
-=== "Ví dụ"
-
-    Trước khi xem lời giải, hãy xác định dữ kiện, điều phải tìm và lý do chọn cách giải. Sau đó kiểm tra lại điều kiện áp dụng và kết quả, thay vì chỉ nhìn phép tính cuối cùng.
-
-    ### Ví dụ — Đếm số chẵn có hai chữ số khác nhau
-
-    **Đề bài.** Từ các chữ số \(0,1,2,3\), lập bao nhiêu số tự nhiên chẵn có **hai chữ số khác nhau**?
-
-    **Vì sao chọn cách này?** Chữ số hàng đơn vị quyết định tính chẵn; lại có chữ số 0 bị cấm ở hàng chục. Do đó nên **tách theo chữ số hàng đơn vị**, rồi cộng hai trường hợp không trùng.
-
-    **Giải.** Đơn vị bằng 0: hàng chục có 3 lựa chọn 1,2,3, được 3 số. Đơn vị bằng 2: hàng chục không là 0 và không là 2, có 2 lựa chọn 1,3, được 2 số. Tổng \(3+2=5\) số.
-
-    **Kiểm lại:** Các số là 10, 20, 30, 12, 32; không có số bắt đầu bằng 0 hoặc lặp chữ số.
-
-    **Ví dụ 1.** Một học sinh chọn đúng một môn câu lạc bộ: 4 môn nghệ thuật hoặc 3 môn thể thao, mỗi lựa chọn là một môn riêng, tổng 4+3=7 cách. Nếu chọn một môn nghệ thuật **và** một môn thể thao, có 4×3=12 cặp.
-
-    **Ví dụ 2.** Từ các chữ số 0,1,2,3,4 lập số có hai chữ số khác nhau. Chữ số hàng chục có 4 lựa chọn (không phải 0), hàng đơn vị còn 4; có 4×4=16 số. Nếu cho phép lặp chữ số, hàng đơn vị có 5 lựa chọn, được 20 số.
-
-    **Lỗi hay gặp.** Cộng các nhóm không rời nhau; nhân khi cần rẽ nhánh; cho phép hàng đầu bằng 0; quên điều kiện chữ số khác nhau; giả sử tất cả bước đều có cùng số lựa chọn.
-
-=== "Lỗi thường gặp"
+    ### 4.5–4.6. Các lỗi tổng hợp và luyện lại
 
     <span data-thpt-help-id="D6-G10-B23-01" hidden></span>
 
