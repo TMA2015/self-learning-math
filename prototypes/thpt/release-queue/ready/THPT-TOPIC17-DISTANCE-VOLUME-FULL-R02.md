@@ -10,19 +10,19 @@ RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
 CONTENT_REVISION: R03_ONE_LEARNER_20261118
 NOTEBOOKLM_REREVIEW: NOT_REQUIRED_WITH_REASON
-SOURCE_COMMIT: 65225ce1496fd4c0998f9ba43198a8c310b000bf
+SOURCE_COMMIT: f0d61b266a427930d767fc658ad7a8d7c85f4272
 CATALOG_TOPIC_ID: CD17
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: b5e24f5d39e83df46ada64a5b5665af9e0888e2f
+ACADEMIC_SOURCE_BLOB: 8877dd83aa804f7a4d665294d59faf511fcdb5bf
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC17_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md (AUTHOR_SELF_VERIFIED, NOT independent NotebookLM)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC17_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 034147514b8a3d2b8af026575a4294673d38deb8
+REVIEW_RECEIPT_BLOB: 11db4d6cafc94f88d17dbcdf041f655bdceab030
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: f4465ddd4dedad670f7febdb3c163fa48567b1b0
+AUTHOR_A1_A7_BLOB: 9ea9bc3fa95a85cecf9a8374b203826b02e3acde
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC17-DISTANCE-VOLUME-FULL-R02_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: b3240e86f7c3a0815964dd3df4c75c44cf49b38c
+AUTHOR_HANDOFF_BLOB: bb53cf617dec4b9378226e324f5970d6122827c9
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_THPT_TOPIC17_FRUSTUM_VOLUME_MODEL_R00_20261113.html
 INTERACTIVE_MODEL_BLOB: cfb2bd522531167003eeae8e7342c6d1349ca425
@@ -107,3 +107,7 @@ This *existing* ready manifest now explicitly refuses intake as CONTENT_READY af
 
 ## 20/11/2026 — current authoring source after self-try safety fix
 - SOURCE `b5e24f5d39e83df46ada64a5b5665af9e0888e2f`, Q18 `034147514b8a3d2b8af026575a4294673d38deb8`, A1 `f4465ddd4dedad670f7febdb3c163fa48567b1b0`, V2 `b3240e86f7c3a0815964dd3df4c75c44cf49b38c`; six correct formal box names + one opt-in frustum self-try answer disclosure. AUTHORING CONTENT_READY owner snapshot status, full release AP/CI separate.
+
+
+## 20/11/2026 — Current authoring snapshot, SGK G11 B26 distance coverage
+- SOURCE 8877dd83aa804f7a4d665294d59faf511fcdb5bf; Q18 11db4d6cafc94f88d17dbcdf041f655bdceab030; A1 9ea9bc3fa95a85cecf9a8374b203826b02e3acde; V2 bb53cf617dec4b9378226e324f5970d6122827c9. Current Knowledge O03/O05 adds d(parallel lines) and both d(skew lines) plane equivalences, source-specific author self-QA. STATUS CONTENT_READY remains authoring-only, no independent reviewer or website QA claim.
