@@ -263,6 +263,8 @@
 
 === "Lỗi thường gặp"
 
+    **Tìm hướng dẫn tự sửa:** Các lỗi gắn với từng câu Vận dụng của Bài 8 đã được đặt trong khung **Kiểm lỗi** ngay dưới câu tương ứng ở tab **Khám phá kiến thức**. Em tự thử trước, tự mở **Đối chiếu**, rồi chỉ mở **Kiểm lỗi** khi cần tìm nguyên nhân và sửa cách làm. Không lặp lại các lời giải tại đây.
+
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
     <p class="thpt-r4-footnote">Nguồn kiến thức: SGK Toán 10, Kết nối tri thức với cuộc sống, tập 1, Bài 8 (trang in 51–54); giữ đúng hai mục chính “Tổng của hai vectơ” và “Hiệu của hai vectơ”. Bài toán và lời giải chuyển giao do SLM biên tập, học sinh tự mở Đối chiếu; không ghi Mastery hoặc thay thế Tự kiểm tra cuối chương.</p>

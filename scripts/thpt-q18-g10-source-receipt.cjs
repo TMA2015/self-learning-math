@@ -1186,6 +1186,22 @@ function expectedG10KnowledgeBlob(lesson,legacy){
   source.includes("DELTA_C_ACADEMIC_MATERIAL")&&source.includes("OWNER_P2"),
   "B07-B14 Kiểm lỗi authoring HOLD receipt missing");
  let newest=sha[1];
+ if(n===8){
+  const r02path=path.join(root,"prototypes/thpt/ux795/G10_CHIV_B08_TAB4_KIEM_LOI_WAYFINDING_DELTA_A_R02_20261120.md");
+  if(fs.existsSync(r02path)){
+   const r02=fs.readFileSync(r02path,"utf8");
+   const field=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(field("R02_PREVIOUS_SOURCE_BLOB"),newest,
+    "B08 tab4 Delta A must descend from exact R01 HELP placement SHA");
+   const next=field("R02_CORRECTED_SOURCE_BLOB");
+   assert(/^[a-f0-9]{40}$/.test(next||"")&&next!==newest,
+    "B08 wayfinding candidate needs real distinct source SHA");
+   for(const marker of ["G10-CHIV-B08-TAB4-KIEM-LOI-WAYFINDING-R02-20261120",
+    "DELTA_A_UI","Q18_OWNER_SELF_VERIFIED_ENRICHMENT","OWNER_P2_PENDING"])
+    assert(r02.includes(marker),"B08 tab4 source receipt missing: "+marker);
+   newest=next;
+  }
+ }
  if(n===9){
   const p02=path.join(root,"prototypes/thpt/ux795/G10_CHIV_B09_GENERAL_VECTOR_ERROR_TAB4_Q18_R02_20261120.md");
   if(fs.existsSync(p02)){
