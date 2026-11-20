@@ -44,7 +44,7 @@ for(const [lessonStr,info]of Object.entries(specs)){
  assert.equal(old.status,0,"Original published Git source inaccessible "+rel+" "+old.stderr);
  const baseline=old.stdout;
  assert.equal(blob(baseline),row.baseline,name+" published source baseline SHA mismatch");
- const expected=(n===19||n===20)?candidateG10KnowledgeBlob(n):row.candidate;
+ const expected=(n===19||n===20||n===21)?candidateG10KnowledgeBlob(n):row.candidate;
  assert.equal(blob(bytes),expected,name+" candidate Markdown differs from signed latest receipt");
  assert.equal(candidateG10KnowledgeBlob(n),expected,name+" canonical current source router not signed");
  if(n===19){
@@ -64,6 +64,15 @@ for(const [lessonStr,info]of Object.entries(specs)){
    "B20 owner source must extend original signed S1/G10-CHVII receipt");
   assert.equal(field("CANDIDATE_B20_SOURCE_BLOB"),expected,
    "B20 new learner-first source must match Q18 signed Git blob");
+ }
+ if(n===21){
+  const latest=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHVII_B21_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261120.md"),"utf8");
+  const field=k=>latest.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(field("PREVIOUS_B21_SOURCE_BLOB"),row.candidate,
+   "B21 must extend exact prior 13/11 SGK S1 published source");
+  assert.equal(field("CANDIDATE_B21_SOURCE_BLOB"),expected,
+   "B21 current Git source must match new Q18 owner receipt");
  }
  assert.equal(row.moved,info.count,name+" 25 First Try count source receipt");
  assert.equal(row.helps,info.helps,name+" 33 HELP source receipt");
@@ -91,7 +100,7 @@ for(const [lessonStr,info]of Object.entries(specs)){
  assert.equal(ids(d+knowledge+examples,"data-thpt-help-id").length,0,name+" HELP outside remediation");
  assert.equal((s.match(/<figure/g)||[]).length,info.figures,name+" original D5 figures lost");
  assert.equal([...examples.matchAll(/^    ### /gm)].length,info.examples,name+" worked example sections incorrect");
- const solutions=(n===19||n===20)?
+ const solutions=(n===19||n===20||n===21)?
   [...examples.matchAll(/<div class="thpt-g10-example-solution"/g)].length:
   [...examples.matchAll(/\*\*Lời giải\.\*\*/g)].length;
  assert.equal(solutions,info.examples,
@@ -138,6 +147,29 @@ for(const [lessonStr,info]of Object.entries(specs)){
    "B20 must retain exactly two original S1 display equations");
   for(const token of ["pháp tuyến", "đoạn vuông góc", "trị tuyệt đối", "song song phân biệt"])
    assert(s.includes(token),"B20 instructional explanation missing "+token);
+ }
+ if(n===21){
+  assert.equal((examples.match(/<strong>Lời giải\.<\/strong>/g)||[]).length,2,
+   "B21 needs both approved neutral worked-solution headers");
+  assert.equal((examples.match(/\*\*Phân tích:/g)||[]).length,2,
+   "B21 each worked example must analyze method and apply conditions");
+  assert.equal((knowledge.match(/thpt-r4-knowledge-conclusion thpt-r4-concept-card/g)||[]).length,2,
+   "B21 exact real circle/tangent concept roles missing");
+  assert.equal((knowledge.match(/thpt-r4-knowledge-conclusion thpt-r4-rule-card/g)||[]).length,4,
+   "B21 four actual conditional rules across two SGK sections missing");
+  assert.equal((d.match(/\*\*Vận dụng\.\*\*/g)||[]).length,5,
+   "B21 needs five learner-facing Vận dụng items before Đối chiếu");
+  assert.equal((rem.match(/^    \?\?\? tip "4\.[1-7]\. /gm)||[]).length,7,
+   "B21 must map seven unique learner-repair mistakes to original HELP");
+  assert(!/Tự thử|Em vận dụng\.|Vì sao chọn cách này\?|Kiến thức tiền đề:|Bản chất trước công thức:|Tự khắc phục theo năm bước/.test(s),
+   "B21 must not retain obsolete learner labels or repetitive D6");
+  assert(d.includes("G10_B21_CIRCLE_TANGENT_R02.svg")&&!knowledge.includes("G10_B21_CIRCLE_TANGENT_R02.svg"),
+   "B21 original tangent SVG must be read within Discovery");
+  assert.equal((s.match(/^    \\\[$/gm)||[]).length,5,
+   "B21 must preserve three original SGK and two worked example display math blocks");
+  for(const token of ["đường biên","hoàn thành bình phương","đường trung trực",
+    "M thuộc đường tròn","khoảng cách ngắn nhất"])
+   assert(s.includes(token),"B21 full learner explanation missing: "+token);
  }
  assert(!/Ví dụ do dự án biên soạn|Ví dụ tự biên soạn|Lưu ý về phạm vi Core|outcome Core|RD1/.test(s),
   name+" review metadata exposed in learner-facing source");
