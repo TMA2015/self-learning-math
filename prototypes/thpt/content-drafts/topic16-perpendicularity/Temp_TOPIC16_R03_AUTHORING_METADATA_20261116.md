@@ -8,7 +8,7 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 STATE: AUTHORING_R03_SELF_VERIFIED
 SCOPE_NOTES: PLAN22-17 Khoảng cách & Thể tích (G11 B26–B27 + CHVII-INTEGRATED) out of CĐ16, not silently retired/finished
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_PERPENDICULARITY_R03_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 363316efc7a338e4ec7d5629b182fce3de271356
+ACADEMIC_SOURCE_BLOB: c0e7b9bde78b90ef8233904889d63062f517b232
 ORIGINAL_G11_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_THPT_TOPIC16_RAMP_ANGLE_R01_SCOPE_CORRECTED_20261113.html
 INTERACTIVE_MODEL_BLOB: 931093557eb411b9f78286a92e6545dcbd59aa73
@@ -189,3 +189,9 @@ REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC16_R03_AUTHOR_SELF
 - **SOURCE S1:** Original G11 SGK ChVII B22–B27 canonical owner Git blob `afc8ec039213b87b4930f2d34d48c28d1fc6277f` exists on this Topic branch and is preserved verbatim; CĐ16 uses only B22–B25 (41 original IDs). Four original SVG blobs also verified. Historical R01 author signed source/review and old R03 evidence remain snapshot-scoped, not copied to this learner SHA.
 - **Q15/Q16:** 86 original canonical identities (41 original SGK +21 first tries +21 Topic Practice +3 Written), eight question-only Self Check replay IDs are placements only, no new item/official Topic Readiness/Mastery, no new private RD1. 21 outcome/explanations/examples/Vận dụng/D6, 65 Practice, four SVG and 86 balanced solution reveals from prior snapshot unaffected by the two-line fix.
 - **One-current-ready:** Historical R01 manifest Git blob `6de988fbe61f2e6bc5e58571e9cad68605cdd990` preserved **byte-identical** at `prototypes/thpt/release-queue/archive/THPT-TOPIC16-PERPENDICULAR-ANGLE-FULL-R01_HISTORICAL_SIGNED_20261118.md` and removed from current `ready/`. Only R03 effective on REGISTER; source-lock final Q18/V2/ready and CI after this source/metadata snapshot.
+
+
+## 20/11/2026 — active source/Q18 receipt update
+- SOURCE_BLOB: c0e7b9bde78b90ef8233904889d63062f517b232
+- REVIEW_RECEIPT_BLOB: d6bb30f9fffdb15f32aa47dd1b8564cefb81aa4e
+- One noncanonical explanatory `Ví dụ kết nối` label normalized to fluent prose with unchanged mathematics/canonical item bank. Prior receipts historical; current author self-QA scoped Delta A.
