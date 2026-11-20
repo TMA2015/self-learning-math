@@ -266,6 +266,8 @@ Hai quyết định x,y cần mô tả tập cặp khả thi. Trước hết, h�
 
 
 
+Một bất phương trình bậc nhất hai ẩn có **vô số nghiệm thực**: biểu diễn trên mặt phẳng, các nghiệm chiếm một nửa mặt phẳng (có hoặc không gồm đường biên). Ví dụ \(2y\ge4\) chính là \(y\ge2\); giữ \(y=3\) thì **mọi** giá trị thực của \(x\) đều thỏa, chứ không chỉ một cặp được chọn thử.
+
 Hãy kiểm tra trường hợp sau: 0x+2y≥4 vẫn bậc nhất hai ẩn, tương đương y≥2; (10,3) hợp lệ, (0,1) sai.
 
 **Ví dụ**
