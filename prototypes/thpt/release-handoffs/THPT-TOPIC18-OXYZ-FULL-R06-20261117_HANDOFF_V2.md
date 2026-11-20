@@ -3,23 +3,23 @@
 **Source-only CONTENT_READY_CANDIDATE after direct vector math correction, under ONE standard `SLM-THPT-QUALITY-ONE v3.1.0` Q01–Q18.** Author Q18 mathematical/PED **SELF_VERIFIED**; no independent NotebookLM Topic PASS claimed. This does **not** authorize website merge/deploy, official assessment, Firebase write, or production route.
 
 PACKET_ID: THPT-TOPIC18-OXYZ-FULL-R06-20261117
-CONTENT_REVISION: R06
+CONTENT_REVISION: R06_FULL_S1_KNOWLEDGE_20261120
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: 2beb1845a2a6de7684985c995be2914e8878d79a
+ACADEMIC_SOURCE_BLOB: c5742e0d8914f85dec1ccd093d418290068b65a3
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_R06_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md
-REVIEW_RECEIPT_BLOB: f24b518590174d94f73378adcc76286db058322a
+REVIEW_RECEIPT_BLOB: e5dc85dfe4be8bb787614d32a6c6ce3c8287e4be
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R06_247_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_A1_A7_BLOB: a2b0b945e6454a6738fad7ae3f83151ba5adb7c4
+AUTHOR_A1_A7_BLOB: da9464ec812750819e7eb6581d08506415515c9d
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R06_247_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_METADATA_BLOB: a2b0b945e6454a6738fad7ae3f83151ba5adb7c4
+AUTHOR_METADATA_BLOB: da9464ec812750819e7eb6581d08506415515c9d
 Q01_FAMILY_AUDIT_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R02_Q01_SGK_PROBLEM_FAMILY_SCOPE_AUDIT_20261114.md
 Q01_FAMILY_AUDIT_BLOB: 052b06ea90d6191f125aef72f42d74dd9a6d86c8
 Q18_OUTCOME_ITEM_PED_AUDIT_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R02_Q18_40_OUTCOME_MATH_PED_ITEM_AUDIT_20261114.md
@@ -762,3 +762,8 @@ The canonical current Q18 AUTHOR_SELF_VERIFIED receipt is `0e3ed68872e0e05e5bd26
 
 ## 20/11/2026 current source V2 after owner ΔA
 - SOURCE 2beb1845a2a6de7684985c995be2914e8878d79a, Q18 f24b518590174d94f73378adcc76286db058322a, A1 a2b0b945e6454a6738fad7ae3f83151ba5adb7c4: five type-prefix corrections only, full 247 canonical and Q16 source unchanged.
+
+
+## 20/11 Full S1 Knowledge G12 ChII B06-B08 and ChV B14-B17
+
+Sole active learner c5742e0d8914f85dec1ccd093d418290068b65a3 40/40 outcome modules; signed Q18 e5dc85dfe4be8bb787614d32a6c6ce3c8287e4be, author A1 da9464ec812750819e7eb6581d08506415515c9d. Added correctly conditioned SGK zero-vector angle, Cartesian i/j/k decomposition, tetra centroid, plane axis-intercept and perpendicular bisector, sphere tangent plane. Original 247 canonical IDs/12 public replays, diagrams, item→outcome/role, written rubrics, all Practice/Selfcheck preserved. SBT B14 printed p25 (items 5.6–5.7) original source unavailable: existing P2 remains OPEN, not cleared by this Knowledge author QA. No independent Topic NotebookLM full PASS or official Topic Readiness/site release.
