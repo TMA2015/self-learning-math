@@ -11,20 +11,20 @@ STATE: CONTENT_READY
 CONTENT_READY: YES_AUTHORING_ONLY
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_LEARNER_PRESENTATION_20261116.md
-ACADEMIC_SOURCE_BLOB: c3f9fd22555a80f82c2caa333146de2ea392f9d2
-SOURCE_COMMIT: 9de3b49d791951970f2c7494a0132a61e4890fb1
+ACADEMIC_SOURCE_BLOB: dd7fa9b8818efcbceca5bdae7877aaa874e615e7
+SOURCE_COMMIT: a91a42892dbf7b73f40a73c3873697b02b3734d6
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC21_R06_CURRENT_SOURCE_Q18_AUTHOR_SELF_QA_RECEIPT_20261118.md
-REVIEW_RECEIPT_BLOB: 511668b8aa7e0cca51d80239345bd6bc5ce354bd
+REVIEW_RECEIPT_BLOB: e7a1ac1c9af6523efb44aaf4350b2b0f19ddb1a8
 INDEPENDENT_TARGETED_REVIEW_PATH: prototypes/thpt/review-packets/Temp_TOPIC21_R06_D6_INDEPENDENT_OWNER_PASTED_VERDICT_20261118.md
 INDEPENDENT_TARGETED_REVIEW_BLOB: 06157b8c7e5873611b463f991620c466b72e2741
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_A1_A7_TECHNICAL_SOURCE_PARITY_20261116.md
-AUTHOR_A1_A7_BLOB: a1d1e0ab14cc7a0a3a128330d3c8371e97d19c7f
+AUTHOR_A1_A7_BLOB: 425ba15a2e538e2f03c8f72ba1b1e1357529338f
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_A1_A7_TECHNICAL_SOURCE_PARITY_20261116.md
-AUTHOR_METADATA_BLOB: a1d1e0ab14cc7a0a3a128330d3c8371e97d19c7f
+AUTHOR_METADATA_BLOB: 425ba15a2e538e2f03c8f72ba1b1e1357529338f
 Q15_MATRIX_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R06_Q15_CANONICAL_ITEM_OUTCOME_ROLE_VERSION_MATRIX_20261117.md
 Q15_MATRIX_BLOB: 522d13493d18ec53280a752dc5498e92c8896805
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/TOP21-CONDITIONAL-BAYES-R05-20261116_HANDOFF_V2.md
-AUTHOR_HANDOFF_BLOB: 831792d5287f3081c526e5977f3af22828bd0af9
+AUTHOR_HANDOFF_BLOB: a2f034ac92fad563c80789d1f284b48b5bcc0299
 CURRENT_AUTHORING_PR: 885
 CURRENT_PR: #885 — AUTHORING Draft only, not website release
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC21_R06_CURRENT_SOURCE_Q18_AUTHOR_SELF_QA_RECEIPT_20261118.md, Git blob 28f53dd1279dc065e7f429f7337ba8f5df90acb8
@@ -103,3 +103,7 @@ Historical R04/R05 ready manifests remain in `release-queue/archive/` with REGIS
 
 ## 20/11/2026 — Current learner authoring S1 B18 O02 2×2 addition
 - Source c3f9fd22555a80f82c2caa333146de2ea392f9d2, Q18 511668b8aa7e0cca51d80239345bd6bc5ce354bd, A1 a1d1e0ab14cc7a0a3a128330d3c8371e97d19c7f, V2 831792d5287f3081c526e5977f3af22828bd0af9. Original 8 learner teaching outcomes/29 public canonical placements and formative disclosure preserved; table illustrates denominator choice. STATE CONTENT_READY current AUTHORING only, no independent reviewer or production QA claim.
+
+
+## 20/11/2026 — Current source includes S1 B18 O02/O03
+- Learner dd7fa9b8818efcbceca5bdae7877aaa874e615e7, Q18 e7a1ac1c9af6523efb44aaf4350b2b0f19ddb1a8, A1 425ba15a2e538e2f03c8f72ba1b1e1357529338f, V2 a2f034ac92fad563c80789d1f284b48b5bcc0299; added case P(A)=0 ⇒ P(A∩B)=0 with undefined P(B|A) explicitly gated; preserves prior 2×2 table O02 and original canonical Practice/Selfcheck. Author self QA only, no independent full topic PASS.
