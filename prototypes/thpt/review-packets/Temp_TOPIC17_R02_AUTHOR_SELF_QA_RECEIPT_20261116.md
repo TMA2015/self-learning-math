@@ -4,13 +4,13 @@
 
 PACKET_ID: THPT-TOPIC17-DISTANCE-VOLUME-FULL-R02
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 8877dd83aa804f7a4d665294d59faf511fcdb5bf
-SOURCE_BLOB: 8877dd83aa804f7a4d665294d59faf511fcdb5bf
+ACADEMIC_SOURCE_BLOB: 38aa934fc2422b342e314fabddca54a0eb679cce
+SOURCE_BLOB: 38aa934fc2422b342e314fabddca54a0eb679cce
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
 AUTHOR_METADATA_BLOB: 7d0f43a1ae6fb5ccce67baf3fda21ca4261f29d9
 ORIGINAL_R00_SOURCE_BLOB: baa6c6c575a4cf79187b2aebd2047b1cf872b983
@@ -22,7 +22,7 @@ PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
 P2: 0
-AUTHOR_SIGNOFF: TOP17_R03_20261118_FINAL_AFFECTED_Q18_9c427674ea0263b8cf7e1e191f1f9a81c3261e91
+AUTHOR_SIGNOFF: TOP17_G11_CHVII_B26_B27_FULL_KNOWLEDGE_38aa934fc2422b342e314fabddca54a0eb679cce
 CONTENT_REVISION: R03
 BASELINE_R02_SIGNED_SOURCE_BLOB: 7cfc1c44d8f8aa722118d945900290fd560b621b
 BASELINE_R02_RECEIPT_GIT_BLOB: 5d55b6a38bf5bb4e81d099e05635001876c2a90a
@@ -146,3 +146,11 @@ A real learner dependency was found: Knowledge TOP17-O10 asked the student to �
 - O05 now states both SGK remarks: d(a,b)=d(a,(Q)) when b lies in Q and a∥Q, and d(a,b)=d((P),(Q)) when P∥Q containing a,b. Worked confirmation with a=(t,0,0), b=(0,s,4), P:z=0, Q:z=4, distance 4, preserving original direct common-perpendicular method.
 - **Targeted author math QA:** (i) d(a,b)=3 for horizontal parallels (ii) both planes parallel and contain proper lines (iii) skew test A=(0,0,0), B=(0,0,4), connecting vector orthogonal to a,b directions (iv) equal 4 by both plane methods (v) mathematical assumptions shown before rule. Q01/Q03/Q04/PED targeted 5/5 PASS; this is `DELTA_C_ACADEMIC_MATERIAL`, **not** an independent NotebookLM PASS.
 - Exact source suffix from # Luyện tập through # Tự kiểm tra byte-identical; original 12 canonical Practice stems/keys/rubrics, 12 original formative questions and private RD1/privacy preserved. Original signed academic reviewer verdict only for historic snapshot, not newly transferred.
+
+
+## 20/11/2026 — Full S1 Knowledge G11 ChVII B26 & B27 — author self-Q18
+
+- **Only current learner** `38aa934fc2422b342e314fabddca54a0eb679cce`, parent snapshot `8877dd83aa804f7a4d665294d59faf511fcdb5bf`. Full 12 outcomes checked against source KNTT Toán 11 Tập Hai Chapter VII B26 printed pp54–60 and B27 printed pp61–63 (original owner-custodied SGK source blob `afc8ec039213b87b4930f2d34d48c28d1fc6277f`); external SGKVN/SGK bibliographic confirm B26 and B27 outcome scope, not fresh PDF image inspection. Exactly the original 3 Topic pages; no Topic Core and no parallel authoring learner source.
+- **Delta C academic:** O05 exact geometric conditions for shortest common perpendicular between two skew lines, alternative parallel auxiliary plane, and nontrivial skew numeric proof against merely taking z-offset. O06 corrected previously ambiguous 'chiều cao khối đa diện' definition: for pyramid vertex–base plane, prism and frustum two parallel base planes; verified height may land outside polygon. O07 Cavalieri-like equal parallel section reasoning with oblique prism independent of slanted lateral length; O10 explicit derivation of frustum volume from subtracting similar pyramids with k=sqrt(S'/S), H'=kH and h=(1−k)H; O12 congruent/similar solid volume ratio k³ vs surface-area k². All additions concept-first, assumptions before each formula, standalone worked example, choice of method and counterexample.
+- **Math QA:** Skew a=(t,0,0), b=(0,s,3+s) have M=(0,0,0),N=(0,-3/2,3/2): MN direction (0,-3/2,3/2) dot with (1,0,0) and (0,1,1) are 0, length 3/sqrt2; unlike 3 vertical rise at s=0. Pyramid height=4 with area18 gives V=24. For frustum two square bases 8²=64 and 4²=16, h=6 -> k=1/2, V=6/3*(64+32+16)=224; large pyramid H=12, small H'=6, subtraction (64*12-16*6)/3=224. Similar scale 2/3 volume ratio 8/27; 81*(8/27)=24. Conditions: S>S'>0,h>0, parallel section and similarity; not arbitrary base-pair.
+- **No regressions:** `# Luyện tập` through final `# Tự kiểm tra` byte-identical vs parent source. 12 lesson/outcome keys, 49 unique canonical (22 original SGK+12 FirstTry+12 Practice+3 Written), 8 question-only public replay, 2 source SVG, 49 optional reveal boundaries, private RD1 and official Mastery/Final Submit unchanged. Q18 signed author SELF_VERIFIED v3.2.0 Academic/PED under affected scope, P0/P1=0 in this author inspection; no new independent NotebookLM Topic reviewer PASS or website/device QA, no merge/deploy.
