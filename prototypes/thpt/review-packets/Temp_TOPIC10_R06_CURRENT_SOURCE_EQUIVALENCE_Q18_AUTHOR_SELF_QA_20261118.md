@@ -9,8 +9,8 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic10-applied-derivative/Temp_TOPIC10_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 6cac404d215a758b9df477cb30ac54b6710b2e45
-ACADEMIC_SOURCE_BLOB: 6cac404d215a758b9df477cb30ac54b6710b2e45
+SOURCE_BLOB: f2b59858a3c1e92960b2c581bb97d8d126c59fb9
+ACADEMIC_SOURCE_BLOB: f2b59858a3c1e92960b2c581bb97d8d126c59fb9
 PREVIOUS_SIGNED_R06_SOURCE_BLOB: bd33faa8e7bc348cda78da6e44d3f40a68223596
 PREVIOUS_SIGNED_R06_Q18_BLOB: 96cc3e1dee497f7a42e1ef50bee4c17692a9158e
 PREVIOUS_FULL_R05_SOURCE_BLOB: 68d3ccd180162c0b850c7e419a5098982d3785a0
@@ -98,3 +98,7 @@ A1 original S1 custody, A2 36 outcome trace, A3 120 Q15 identity, A4 math and PE
 **Thiếu trước sửa:** Source `f3ed26380c817f3c3dea7a240634a45193f9edb2` của TOP10-M23/O23 dạy tâm I(a,b) và hai đường tiệm cận nhưng **không có trục đối xứng**. Đã bổ sung ngay trên sole learner `6cac404d215a758b9df477cb30ac54b6710b2e45` tại chính TOP10-M23, trước Ví dụ cũ, mạch giải thích bằng biến đổi tọa độ \(X=x-a,Y=y-b\), quỹ tích \(XY=k\), đối xứng qua \(Y=\pm X\), và phát biểu `TÍNH CHẤT — Hai trục đối xứng của đồ thị phân thức bậc nhất trên bậc nhất`. Với \(f=b+k/(x-a)\), a,b thực, k≠0, trục \(y-b=x-a\) và \(y-b=-(x-a)\). Với \((mx+n)/(px+q)\), yêu cầu p≠0 và mq-pn≠0 trước khi áp dụng. Nêu phản ngoại suy: không áp dụng máy móc cho mọi đồ thị bậc ba.
 
 **Q18 affected author self-QA 8/8 PASS:** (3,4) trên \(y=1+3/(x-2)\), hai ảnh phản xạ (5,2),(-1,0) vẫn trên đồ thị; phép đổi tích \(XY=k\) bảo toàn theo hai trục trên, MathJax delimiters cân, đoạn mới nằm trước Ví dụ, nguyên văn nguồn trước khôi phục khi gỡ đúng delta, item IDs unchanged, và điều kiện mẫu/định thức bảo toàn. No changed canonical questions, keys, solutions, rubric, SVG or mastery. Delta C học thuật, KHÔNG có independent reviewer verdict và KHÔNG kết luận full 22 topic SGK audit. Owner retains CONTENT_READY authoring; RELEASE pending.
+
+
+## 20/11/2026 — owner editorial Q03 ΔA of six conditional callouts
+- Current learner `f2b59858a3c1e92960b2c581bb97d8d126c59fb9`, prior `6cac404d215a758b9df477cb30ac54b6710b2e45` remains historical. In O03,O10,O11,O17,O27,O29 the six vague `ĐIỀU KIỆN —` labels are now 4 KIẾN THỨC CẦN GHI NHỚ (domain, open set, limit side, marginal-cost interpretation) and 2 PHƯƠNG PHÁP (real-feasible domain and constrained optimizer). The underlying numeric optimization, inequalities and logical conditions unchanged. All 120 Practice item statements/solutions/rubrics, original 36 outcome teaching chains preserved. Targeted owner Q03/PED Delta A author self QA; no independent academic or RELEASE verdict.
