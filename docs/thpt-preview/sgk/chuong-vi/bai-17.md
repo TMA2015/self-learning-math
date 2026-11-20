@@ -1,5 +1,13 @@
 # Bài 17. Dấu của tam thức bậc hai
 
+<style>
+/* B17 only: owner-approved semantic Golden 3+1 palette; no shared CSS/runtime edit. */
+.md-typeset:has([data-thpt-first-try-id="THPT-G10-CHVI-TRY11"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card {background:#e8f7f2;border-color:#a9dccc;border-left-color:#087d69;color:#174137}
+.md-typeset:has([data-thpt-first-try-id="THPT-G10-CHVI-TRY11"]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card {background:#eaf1fc;border-color:#a5bee5;border-left-color:#4879c2;color:#193d66}
+[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id="THPT-G10-CHVI-TRY11"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card {background:#193d36;border-color:#447e70;border-left-color:#76dfc7;color:#e9fff7}
+[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id="THPT-G10-CHVI-TRY11"]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card {background:#203551;border-color:#45658a;border-left-color:#8cb4ed;color:#ecf5ff}
+</style>
+
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VI · BÀI 17</p>
 <p class="thpt-r4-lead">Từ đồ thị parabol đến định lí dấu, bảng xét dấu và bất phương trình bậc hai — học cách giải thích vì sao một khoảng nghiệm được chọn.</p>
@@ -10,7 +18,7 @@
 
     ### Cùng tìm hiểu
 
-    Ở Bài 16, em đã biết đồ thị hàm số bậc hai là một parabol. Quan sát hình, ta thấy có những phần của đồ thị ở trên trục hoành và có những phần ở dưới trục hoành. Vị trí ấy cho biết giá trị hàm số dương hay âm. Với đồ thị \(y=f(x)\), câu hỏi **\(f(x)>0\) khi nào?** cũng là câu hỏi: phần nào của đồ thị ở trên trục \(Ox\)? Điểm nằm trên trục \(Ox\) ứng với \(f(x)=0\). Ta sẽ học cách đọc dấu từ đồ thị, sau đó suy ra quy tắc xét dấu cả khi không vẽ được parabol.
+    Ở Bài 16, em đã biết đồ thị hàm số bậc hai là một parabol. Tùy theo hệ số và số nghiệm, parabol có thể nằm hoàn toàn phía trên hoặc phía dưới trục hoành, chỉ chạm trục, hoặc cắt trục ở hai điểm. Vị trí ấy cho biết giá trị hàm số dương hay âm. Với đồ thị \(y=f(x)\), câu hỏi **\(f(x)>0\) khi nào?** cũng là câu hỏi: phần nào của đồ thị ở trên trục \(Ox\)? Điểm nằm trên trục \(Ox\) ứng với \(f(x)=0\). Ta sẽ học cách đọc dấu từ đồ thị, sau đó suy ra quy tắc xét dấu cả khi không vẽ được parabol.
 
     Với \(f(x)=(x-1)(x-3)\), hai nghiệm là \(1\) và \(3\). Khi \(x<1\), cả hai thừa số âm nên tích dương; khi \(1<x<3\), tích âm; khi \(x>3\), cả hai thừa số dương nên tích dương. Như vậy, chỉ bằng cách xem dấu của từng thừa số, em đã hiểu tại sao tam thức dương ở hai phía ngoài và âm ở khoảng giữa. Quy tắc xét dấu ở phần sau được rút ra từ chính nhận xét này.
 
