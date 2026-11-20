@@ -254,6 +254,7 @@
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
     <p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 10 Kết nối tri thức với cuộc sống, tập 1, Bài 10 (trang in 59–65); SBT dùng để tham khảo dạng bài, không thay thế SGK. Phần ví dụ và giải thích do SLM biên soạn phục vụ tự học.</p>
+
 <!-- END_B10_KNOWLEDGE_MARKDOWN -->
 
 ## B. Eight original B10 Core and Practice canonical records (IMMUTABLE R01)
