@@ -41,7 +41,7 @@
 
 
 
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY06" hidden></span>
+    <span id="help-g10-chvi-try06" data-thpt-help-id="HELP-G10-CHVI-TRY06" hidden></span>
 
     ??? tip "Kiểm lỗi"
 
@@ -69,7 +69,7 @@
 
 
 
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY07" hidden></span>
+    <span id="help-g10-chvi-try07" data-thpt-help-id="HELP-G10-CHVI-TRY07" hidden></span>
 
     ??? tip "Kiểm lỗi"
 
@@ -107,7 +107,7 @@
 
 
 
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY09" hidden></span>
+    <span id="help-g10-chvi-try09" data-thpt-help-id="HELP-G10-CHVI-TRY09" hidden></span>
 
     ??? tip "Kiểm lỗi"
 
@@ -148,7 +148,7 @@
 
 
 
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY08" hidden></span>
+    <span id="help-g10-chvi-try08" data-thpt-help-id="HELP-G10-CHVI-TRY08" hidden></span>
 
     ??? tip "Kiểm lỗi"
 
@@ -177,7 +177,7 @@
 
 
 
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY10" hidden></span>
+    <span id="help-g10-chvi-try10" data-thpt-help-id="HELP-G10-CHVI-TRY10" hidden></span>
 
     ??? tip "Kiểm lỗi"
 
