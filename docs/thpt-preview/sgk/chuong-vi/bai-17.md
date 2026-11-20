@@ -51,6 +51,16 @@
 
 
 
+
+    <span id="help-g10-chvi-try11" data-thpt-help-id="HELP-G10-CHVI-TRY11" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        <ol><li><strong>Nhận diện lỗi:</strong> Chỉ thấy Δ âm mà kết luận f âm; quên xét dấu a.</li>
+        <li><strong>Tự chẩn đoán:</strong> Em đã ghi Δ&lt;0 rồi tự kết luận tam thức âm mà chưa nhìn a? Hãy thử đổi a từ 1 sang −1 để phát hiện bước suy luận thiếu.</li>
+        <li><strong>Kiến thức gốc:</strong> Tam thức bậc hai là <span class="arithmatex">\(f(x)=ax^2+bx+c\)</span> với a≠0. Dấu của f(x) tại x chính là vị trí đồ thị so với trục Ox; nghiệm f(x)=0 là chỗ giao/tiếp xúc Ox. Số nghiệm được quyết định bởi <span class="arithmatex">\(\Delta\)</span>, còn hướng mở theo a.</li>
+        <li><strong>Tự sửa:</strong> Viết hai ô: a dương/âm và Δ âm/bằng 0/dương, rồi mới kết luận theo hình và công thức. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
+        <li><strong>Luyện lại:</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B17-C01">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
     **Khi parabol chỉ chạm trục hoành.**
 
     Không phải parabol nào cũng cắt trục hoành tại hai điểm. Có trường hợp nó chỉ chạm trục rồi quay về phía cũ. Khi ấy giá trị hàm số bằng 0 ngay tại điểm chạm, còn ở hai phía của điểm đó, dấu không đổi.
@@ -76,6 +86,16 @@
 
 
 
+
+    <span id="help-g10-chvi-try12" data-thpt-help-id="HELP-G10-CHVI-TRY12" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        <ol><li><strong>Nhận diện lỗi:</strong> Nhầm nghiệm kép làm thay dấu hai phía, hoặc quên loại x0 ở dấu &lt;.</li>
+        <li><strong>Tự chẩn đoán:</strong> Em có đổi dấu sau x=2 dù hai phía của bình phương đều dương? Hãy thay x=1 và x=3 vào −3(x−2)².</li>
+        <li><strong>Kiến thức gốc:</strong> Với <span class="arithmatex">\(\Delta=0\)</span>, tam thức viết được dưới dạng <span class="arithmatex">\(a(x-x_0)^2\)</span>. Nó bằng 0 tại x0, có dấu của a ở mọi điểm khác; vì bình phương không âm nên không có sự đổi dấu khi đi qua nghiệm kép.</li>
+        <li><strong>Tự sửa:</strong> Tô đậm điểm x0=2, thay x0 vào f được 0, xét số âm nhân bình phương ở hai phía. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
+        <li><strong>Luyện lại:</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B17-C02">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
     **Từ bảng dấu đến tập nghiệm.**
 
     Trong nhiều bài toán, yêu cầu không phải tìm lúc biểu thức bằng 0 mà là tìm mọi giá trị làm nó không vượt quá hoặc đạt ít nhất một mức nào đó. Khi ấy đáp án thường là một khoảng, không chỉ là các nghiệm tại ranh giới.
@@ -101,6 +121,16 @@
 
 
 
+
+    <span id="help-g10-chvi-try13" data-thpt-help-id="HELP-G10-CHVI-TRY13" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        <ol><li><strong>Nhận diện lỗi:</strong> Chỉ ghi {2,3} thay vì cả [2,3], hoặc bỏ đầu mút dù dấu ≤.</li>
+        <li><strong>Tự chẩn đoán:</strong> Em chỉ ghi x=2, x=3 hay bỏ hai điểm này trong bài có dấu ≤? Hãy thử x=2, x=2,5 và x=3.</li>
+        <li><strong>Kiến thức gốc:</strong> Nghiệm của <span class="arithmatex">\(f(x)=0\)</span> chia trục số thành những khoảng có dấu cố định. Để giải <span class="arithmatex">\(f(x)\le0\)</span>, ta chọn những khoảng mà f âm và <strong>lấy cả các nghiệm bằng 0</strong>; với dấu &lt; thì bỏ các đầu mút.</li>
+        <li><strong>Tự sửa:</strong> Đặt dấu +−+ qua hai mốc x=2,3, lấy vùng âm cùng hai vị trí bằng 0. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
+        <li><strong>Luyện lại:</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B17-P01">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
     **Khi điều kiện thực tế còn quyết định đáp án.**
 
     Các khoảng nghiệm tìm được trong đại số chưa chắc đều có ý nghĩa ngoài thực tế. Chẳng hạn, khi dùng dây rào làm vườn hình chữ nhật, chiều rộng và chiều dài đều phải dương. Ta cần đồng thời đáp ứng yêu cầu diện tích.
@@ -125,6 +155,16 @@
 
 
 
+
+    <span id="help-g10-chvi-try15" data-thpt-help-id="HELP-G10-CHVI-TRY15" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        <ol><li><strong>Nhận diện lỗi:</strong> Bỏ điều kiện x&gt;0, 20−2x&gt;0, hoặc dùng cả bốn cạnh rào.</li>
+        <li><strong>Tự chẩn đoán:</strong> Em có nhận x≤0 hoặc x≥10 là chiều rộng hợp lệ? Hãy đọc lại 2x+L=20, yêu cầu cả x và L đều dương.</li>
+        <li><strong>Kiến thức gốc:</strong> Với 20 m dây rào ba cạnh sát tường, đặt x là chiều rộng, chiều dài còn lại <span class="arithmatex">\(20-2x&gt;0\)</span> đòi <span class="arithmatex">\(0&lt;x&lt;10\)</span>. Diện tích <span class="arithmatex">\(S(x)=x(20-2x)\)</span>. Bất phương trình S≥48 cho khoảng x, nhưng phải <strong>giao với miền hình học</strong> trước khi kết luận.</li>
+        <li><strong>Tự sửa:</strong> Vẽ ba đoạn lưới, viết 2x+L=20 rồi S=xL; cuối cùng kiểm từng nghiệm biên hợp hình. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
+        <li><strong>Luyện lại:</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B17-P04">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
     **Khi một bất phương trình phải đúng với mọi số thực.**
 
     Có bài yêu cầu tam thức dương với **mọi** giá trị x, không chỉ với vài giá trị em thử. Vì thế ta cần một điều kiện bảo đảm parabol luôn nằm phía trên trục hoành, kể cả ở điểm thấp nhất của nó.
@@ -144,6 +184,16 @@
 
         <div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> Vì a=1&gt;0, yêu cầu tương đương <span class="arithmatex">\(\Delta=(2m)^2-4\cdot1\cdot4=4m^2-16&lt;0\)</span>, nên <span class="arithmatex">\(-2&lt;m&lt;2\)</span>.</p><p><strong>Vì sao:</strong> Điều kiện tương đương m²&lt;4. Nếu m=±2 thì Δ=0, tam thức chạm Ox và bằng 0 tại một x nên không thỏa dấu nghiêm ngặt &gt;0.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
 
+
+    <span id="help-g10-chvi-try14" data-thpt-help-id="HELP-G10-CHVI-TRY14" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        <ol><li><strong>Nhận diện lỗi:</strong> Nhầm Δ≤0 với Δ&lt;0 trong điều kiện “&gt;0 mọi x”, hoặc tự mở rộng sang a(m)=0.</li>
+        <li><strong>Tự chẩn đoán:</strong> Em có chọn m=2 trong lời giải f_m(x)&gt;0 mọi x? Hãy thay m=2, tìm x sao cho f_m(x)=0 để thấy biên bị loại.</li>
+        <li><strong>Kiến thức gốc:</strong> Xét <span class="arithmatex">\(f_m(x)=x^2+2mx+4\)</span>. Do hệ số trước x² luôn <span class="arithmatex">\(1&gt;0\)</span>, để <span class="arithmatex">\(f_m(x)&gt;0\)</span> với mọi <span class="arithmatex">\(x\in\mathbb R\)</span> cần và đủ parabol mở lên <strong>không chạm, không cắt</strong> Ox: <span class="arithmatex">\(\Delta&lt;0\)</span>. Nếu dấu yêu cầu là ≥0 thì <span class="arithmatex">\(\Delta\le0\)</span> cũng được; phân biệt dấu là bản chất.</li>
+        <li><strong>Tự sửa:</strong> Thử m=2 để thấy nghiệm kép làm f bằng 0; khóa a=1 cố định, giải riêng Δ&lt;0. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
+        <li><strong>Luyện lại:</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B17-P03">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
     ### Thuật ngữ, kiến thức và kỹ năng
 
     **Thuật ngữ:** Tam thức bậc hai với \(a\ne0\), biệt thức \(\Delta\), nghiệm phân biệt, nghiệm kép, bảng xét dấu, bất phương trình bậc hai.
@@ -345,56 +395,6 @@
     [Chuyển đến Luyện tập và Vận dụng Chương VI](luyen-tap.md) để làm bài củng cố. Em có thể mở gợi ý và lời giải sau khi đã tự thử.
 
 === "Lỗi thường gặp"
-
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY11" hidden></span>
-
-    ??? tip "4.1. Đọc Δ mà quên dấu của hệ số a"
-
-        <ol><li><strong>Nhận diện lỗi:</strong> Chỉ thấy Δ âm mà kết luận f âm; quên xét dấu a.</li>
-        <li><strong>Tự chẩn đoán:</strong> Em đã ghi Δ&lt;0 rồi tự kết luận tam thức âm mà chưa nhìn a? Hãy thử đổi a từ 1 sang −1 để phát hiện bước suy luận thiếu.</li>
-        <li><strong>Kiến thức gốc:</strong> Tam thức bậc hai là <span class="arithmatex">\(f(x)=ax^2+bx+c\)</span> với a≠0. Dấu của f(x) tại x chính là vị trí đồ thị so với trục Ox; nghiệm f(x)=0 là chỗ giao/tiếp xúc Ox. Số nghiệm được quyết định bởi <span class="arithmatex">\(\Delta\)</span>, còn hướng mở theo a.</li>
-        <li><strong>Tự sửa:</strong> Viết hai ô: a dương/âm và Δ âm/bằng 0/dương, rồi mới kết luận theo hình và công thức. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
-        <li><strong>Luyện lại:</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B17-C01">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
-
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY12" hidden></span>
-
-    ??? tip "4.2. Nhầm nghiệm kép là điểm đổi dấu"
-
-        <ol><li><strong>Nhận diện lỗi:</strong> Nhầm nghiệm kép làm thay dấu hai phía, hoặc quên loại x0 ở dấu &lt;.</li>
-        <li><strong>Tự chẩn đoán:</strong> Em có đổi dấu sau x=2 dù hai phía của bình phương đều dương? Hãy thay x=1 và x=3 vào −3(x−2)².</li>
-        <li><strong>Kiến thức gốc:</strong> Với <span class="arithmatex">\(\Delta=0\)</span>, tam thức viết được dưới dạng <span class="arithmatex">\(a(x-x_0)^2\)</span>. Nó bằng 0 tại x0, có dấu của a ở mọi điểm khác; vì bình phương không âm nên không có sự đổi dấu khi đi qua nghiệm kép.</li>
-        <li><strong>Tự sửa:</strong> Tô đậm điểm x0=2, thay x0 vào f được 0, xét số âm nhân bình phương ở hai phía. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
-        <li><strong>Luyện lại:</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B17-C02">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
-
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY13" hidden></span>
-
-    ??? tip "4.3. Lấy nghiệm phương trình thay cho cả khoảng nghiệm"
-
-        <ol><li><strong>Nhận diện lỗi:</strong> Chỉ ghi {2,3} thay vì cả [2,3], hoặc bỏ đầu mút dù dấu ≤.</li>
-        <li><strong>Tự chẩn đoán:</strong> Em chỉ ghi x=2, x=3 hay bỏ hai điểm này trong bài có dấu ≤? Hãy thử x=2, x=2,5 và x=3.</li>
-        <li><strong>Kiến thức gốc:</strong> Nghiệm của <span class="arithmatex">\(f(x)=0\)</span> chia trục số thành những khoảng có dấu cố định. Để giải <span class="arithmatex">\(f(x)\le0\)</span>, ta chọn những khoảng mà f âm và <strong>lấy cả các nghiệm bằng 0</strong>; với dấu &lt; thì bỏ các đầu mút.</li>
-        <li><strong>Tự sửa:</strong> Đặt dấu +−+ qua hai mốc x=2,3, lấy vùng âm cùng hai vị trí bằng 0. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
-        <li><strong>Luyện lại:</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B17-P01">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
-
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY15" hidden></span>
-
-    ??? tip "4.4. Bỏ quên miền chiều dài của bài rào vườn"
-
-        <ol><li><strong>Nhận diện lỗi:</strong> Bỏ điều kiện x&gt;0, 20−2x&gt;0, hoặc dùng cả bốn cạnh rào.</li>
-        <li><strong>Tự chẩn đoán:</strong> Em có nhận x≤0 hoặc x≥10 là chiều rộng hợp lệ? Hãy đọc lại 2x+L=20, yêu cầu cả x và L đều dương.</li>
-        <li><strong>Kiến thức gốc:</strong> Với 20 m dây rào ba cạnh sát tường, đặt x là chiều rộng, chiều dài còn lại <span class="arithmatex">\(20-2x&gt;0\)</span> đòi <span class="arithmatex">\(0&lt;x&lt;10\)</span>. Diện tích <span class="arithmatex">\(S(x)=x(20-2x)\)</span>. Bất phương trình S≥48 cho khoảng x, nhưng phải <strong>giao với miền hình học</strong> trước khi kết luận.</li>
-        <li><strong>Tự sửa:</strong> Vẽ ba đoạn lưới, viết 2x+L=20 rồi S=xL; cuối cùng kiểm từng nghiệm biên hợp hình. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
-        <li><strong>Luyện lại:</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B17-P04">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
-
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY14" hidden></span>
-
-    ??? tip "4.5. Nhầm Δ ≤ 0 với Δ < 0 khi yêu cầu dương mọi x"
-
-        <ol><li><strong>Nhận diện lỗi:</strong> Nhầm Δ≤0 với Δ&lt;0 trong điều kiện “&gt;0 mọi x”, hoặc tự mở rộng sang a(m)=0.</li>
-        <li><strong>Tự chẩn đoán:</strong> Em có chọn m=2 trong lời giải f_m(x)&gt;0 mọi x? Hãy thay m=2, tìm x sao cho f_m(x)=0 để thấy biên bị loại.</li>
-        <li><strong>Kiến thức gốc:</strong> Xét <span class="arithmatex">\(f_m(x)=x^2+2mx+4\)</span>. Do hệ số trước x² luôn <span class="arithmatex">\(1&gt;0\)</span>, để <span class="arithmatex">\(f_m(x)&gt;0\)</span> với mọi <span class="arithmatex">\(x\in\mathbb R\)</span> cần và đủ parabol mở lên <strong>không chạm, không cắt</strong> Ox: <span class="arithmatex">\(\Delta&lt;0\)</span>. Nếu dấu yêu cầu là ≥0 thì <span class="arithmatex">\(\Delta\le0\)</span> cũng được; phân biệt dấu là bản chất.</li>
-        <li><strong>Tự sửa:</strong> Thử m=2 để thấy nghiệm kép làm f bằng 0; khóa a=1 cố định, giải riêng Δ&lt;0. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
-        <li><strong>Luyện lại:</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B17-P03">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 

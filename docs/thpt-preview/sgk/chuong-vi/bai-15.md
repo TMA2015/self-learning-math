@@ -39,6 +39,16 @@
 
 
 
+
+    <span id="help-g10-chvi-try01" data-thpt-help-id="HELP-G10-CHVI-TRY01" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        1. **Dấu hiệu sai:** Thấy bảng A có hai dòng \((3;2)\), vội kết luận “không là hàm số vì \(x=3\) xuất hiện hai lần”.
+        2. **Vì sao sai?** Điều kiện của hàm số là **mỗi \(x\) có đúng một giá trị \(y\)**, chứ không phải mỗi \(x\) chỉ được ghi một dòng. Trong A, \(x=3\) luôn cho \(y=2\), nên không mâu thuẫn. Trong bảng B, \(x=3\) cho cả \(2\) lẫn \(4\), mới vi phạm.
+        3. **Tự kiểm:** Khoanh mọi dòng có cùng \(x\). Nếu chúng có **hai \(y\) khác nhau**, bảng không biểu diễn \(y=f(x)\); nếu các \(y\) trùng nhau, vẫn thỏa điều kiện đơn trị.
+        4. **Sửa lại:** Nêu bằng lời vì sao bảng A là hàm số trên \(D=\{1;3\}\) nhưng bảng B không phải.
+        5. **Tập tiếp:** [Core/Luyện tập C01](luyen-tap.md?item=THPT-G10-B15-C01). Giải thích trước khi mở đối chiếu; không nhân bản câu đã xem làm bài kiểm tra độc lập.
     #### 1.2.2. Tập xác định và tập giá trị không giống nhau
 
     Máy tính không thể lấy căn bậc hai của số âm trong tập số thực; muốn nhập \(x\) hợp lệ, ta phải biết miền **đầu vào**. Nhưng các kết quả **đầu ra** mà máy cho được có thể là tập khác.
@@ -62,6 +72,16 @@
 
 
 
+
+    <span id="help-g10-chvi-try02" data-thpt-help-id="HELP-G10-CHVI-TRY02" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        1. **Dấu hiệu sai:** Với \(f(x)=\sqrt{x-2}\), viết \(D=T=[2;+\infty)\).
+        2. **Vì sao sai?** Điều kiện \(x-2\ge0\) chỉ giới hạn **đầu vào** \(x\ge2\). Đầu ra \(\sqrt{x-2}\) bắt đầu từ \(0\), không phải \(2\).
+        3. **Tự kiểm:** Hỏi riêng “nhập được \(x\) nào?” và “nhận được \(y\) nào?”. Thử \(x=2\) thì \(f(2)=0\); số \(0\) thuộc \(T\), nhưng không thuộc \(D\).
+        4. **Sửa lại:** \(D=[2;+\infty)\), \(T=[0;+\infty)\). Để chắc mọi \(y\ge0\) đều đạt được, chọn \(x=y^2+2\).
+        5. **Tập tiếp:** [Core/Luyện tập C02](luyen-tap.md?item=THPT-G10-B15-C02), sau đó phân biệt miền đầu vào và đầu ra bằng một ví dụ mới.
     #### 1.2.3. Điểm thuộc đồ thị phải thỏa đúng quy tắc
 
     Một điểm vẽ trên hệ trục có hai tọa độ; để biết nó có thuộc đồ thị của hàm số hay không, ta phải kiểm xem tung độ đúng bằng đầu ra ứng với hoành độ.
@@ -83,6 +103,16 @@
 
 
 
+
+    <span id="help-g10-chvi-try03" data-thpt-help-id="HELP-G10-CHVI-TRY03" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        1. **Dấu hiệu sai:** Nhìn điểm \(B(2;5)\) nằm gần đường cong \(y=x^2-1\), rồi kết luận \(B\) thuộc đồ thị.
+        2. **Vì sao sai?** Hoành độ \(x=2\) cho tung độ đúng bằng \(f(2)=2^2-1=3\), **không phải \(5\)**. Khoảng cách trên hình không chứng minh được quan hệ \(y=f(x)\).
+        3. **Tự kiểm:** Trước khi thay số phải xác định hoành độ nằm trong \(D\). Sau đó tính \(f(x_0)\) và so **chính xác** với tung độ \(y_0\).
+        4. **Sửa lại:** \(A(-2;3)\) thuộc đồ thị vì \(f(-2)=3\). \(B(2;5)\) không thuộc vì \(f(2)=3\ne5\). Với phân thức \(1/(x-2)\), \(x=2\) còn bị loại từ đầu.
+        5. **Tập tiếp:** Trở lại §2.2 và ví dụ 3.1, tự xét một điểm thỏa và một điểm không thỏa, không xem lời giải trước.
     #### 1.2.4. Hàm từng đoạn cần đọc đúng ranh giới và đơn vị
 
     Một dịch vụ gửi hàng thu phí cơ bản cho 2 km đầu và thu thêm theo mỗi km tiếp theo; cùng đầu vào vẫn phải được tính đúng một mức phí, kể cả ngay ranh giới 2 km.
@@ -116,6 +146,16 @@
 
 
 
+
+    <span id="help-g10-chvi-try05" data-thpt-help-id="HELP-G10-CHVI-TRY05" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        1. **Dấu hiệu sai:** Với mô hình \(C(x)=12\) khi \(0\le x\le3\), \(C(x)=12+4(x-3)\) khi \(x>3\), áp nhánh \(x>3\) cho \(x=3\), hoặc tính \(C(5)=12+4\cdot5=32\).
+        2. **Vì sao sai?** Số \(3\) thuộc nhánh **có dấu bằng**. Phần phí tăng thêm chỉ tính cho **\(x-3\)** km vượt ngưỡng. Đặc biệt, dùng nhầm nhánh tại \(x=3\) tình cờ cũng cho \(12\): **đúng số không chứng minh đúng phương pháp**.
+        3. **Tự kiểm:** Đánh dấu từng miền lên trục số, thử riêng \(x=3\) và một \(x>3\); kiểm đơn vị \(x\) là km, \(C(x)\) là nghìn đồng.
+        4. **Sửa lại:** \(C(3)=12\) (nhánh thứ nhất), \(C(5)=12+4(5-3)=20\) nghìn đồng (nhánh thứ hai).
+        5. **Tập tiếp:** [Core/Luyện tập P02](luyen-tap.md?item=THPT-G10-B15-P02). Nói rõ nhánh nào được chọn **trước** khi tính.
     #### 1.2.5. Đồng biến phải xét trên đúng khoảng
 
     Nếu quãng đường theo thời gian chỉ tăng, ta gọi đại lượng đồng biến; nhưng có những đại lượng trước tăng sau giảm. Vậy không thể gắn nhãn tăng/giảm cho cả hàm chỉ bằng nhìn hai điểm bất kì.
@@ -133,6 +173,16 @@
 
         <div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> <span class="arithmatex">\(f(x_2)-f(x_1)=3(x_2-x_1)&gt;0\)</span>; đồng biến trên <span class="arithmatex">\([-1;2]\)</span>.</p><p><strong>Vì sao:</strong> Hệ số 3 dương nên khi x tăng thì giá trị f(x) tăng. Lập luận áp dụng mọi cặp x1&lt;x2 trong khoảng, không chỉ một bảng nhỏ.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
 
+
+    <span id="help-g10-chvi-try04" data-thpt-help-id="HELP-G10-CHVI-TRY04" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        1. **Dấu hiệu sai:** Thấy \(f(0)<f(1)\) rồi kết luận ngay “hàm đồng biến trên mọi \(x\)” mà không nêu khoảng đang xét hoặc chưa kiểm các cặp khác.
+        2. **Vì sao sai?** Định nghĩa trên khoảng \(K\) đòi hỏi **mọi** cặp \(x_1<x_2\) trong \(K\). Ví dụ \(g(x)=x^2\) giảm trước \(0\) và tăng sau \(0\); một cặp có giá trị tăng không đủ suy ra đơn điệu trên \(\mathbb R\).
+        3. **Tự kiểm:** Viết rõ \(K\), chọn \(x_1<x_2\) **bất kì** cùng thuộc \(K\), xét dấu \(f(x_2)-f(x_1)\). Không đảo dấu khi trừ hai giá trị.
+        4. **Sửa lại:** Với \(f(x)=3x+2\) trên \([-1;2]\), \(f(x_2)-f(x_1)=3(x_2-x_1)>0\) cho mọi \(x_1<x_2\), nên đồng biến trên khoảng đang xét.
+        5. **Tập tiếp:** [Core/Luyện tập P03](luyen-tap.md?item=THPT-G10-B15-P03). Tự giải thích dấu hiệu số học trước khi mở đáp án.
     ### 1.3. Kiến thức tiền đề và mục tiêu
 
     **Em cần nhớ trước khi học:** Cặp có thứ tự \((x;y)\), trục hoành/trục tung, so sánh hai số, bất phương trình bậc nhất, điều kiện căn bậc hai không âm và mẫu số khác 0.
@@ -277,56 +327,6 @@
         <li>Nếu <span class="arithmatex">\(x_1&lt;x_2\)</span> thì <span class="arithmatex">\(q(x_1)-q(x_2)=-3(x_1-x_2)&gt;0\)</span>; hàm nghịch biến trên <span class="arithmatex">\(\mathbb{R}\)</span>.</li></ol>
 
 === "Lỗi thường gặp"
-
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY01" hidden></span>
-
-    ??? tip "4.1. Nhầm đầu vào lặp với hai đầu ra khác nhau"
-
-        1. **Dấu hiệu sai:** Thấy bảng A có hai dòng \((3;2)\), vội kết luận “không là hàm số vì \(x=3\) xuất hiện hai lần”.
-        2. **Vì sao sai?** Điều kiện của hàm số là **mỗi \(x\) có đúng một giá trị \(y\)**, chứ không phải mỗi \(x\) chỉ được ghi một dòng. Trong A, \(x=3\) luôn cho \(y=2\), nên không mâu thuẫn. Trong bảng B, \(x=3\) cho cả \(2\) lẫn \(4\), mới vi phạm.
-        3. **Tự kiểm:** Khoanh mọi dòng có cùng \(x\). Nếu chúng có **hai \(y\) khác nhau**, bảng không biểu diễn \(y=f(x)\); nếu các \(y\) trùng nhau, vẫn thỏa điều kiện đơn trị.
-        4. **Sửa lại:** Nêu bằng lời vì sao bảng A là hàm số trên \(D=\{1;3\}\) nhưng bảng B không phải.
-        5. **Tập tiếp:** [Core/Luyện tập C01](luyen-tap.md?item=THPT-G10-B15-C01). Giải thích trước khi mở đối chiếu; không nhân bản câu đã xem làm bài kiểm tra độc lập.
-
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY02" hidden></span>
-
-    ??? tip "4.2. Đồng nhất tập xác định với tập giá trị"
-
-        1. **Dấu hiệu sai:** Với \(f(x)=\sqrt{x-2}\), viết \(D=T=[2;+\infty)\).
-        2. **Vì sao sai?** Điều kiện \(x-2\ge0\) chỉ giới hạn **đầu vào** \(x\ge2\). Đầu ra \(\sqrt{x-2}\) bắt đầu từ \(0\), không phải \(2\).
-        3. **Tự kiểm:** Hỏi riêng “nhập được \(x\) nào?” và “nhận được \(y\) nào?”. Thử \(x=2\) thì \(f(2)=0\); số \(0\) thuộc \(T\), nhưng không thuộc \(D\).
-        4. **Sửa lại:** \(D=[2;+\infty)\), \(T=[0;+\infty)\). Để chắc mọi \(y\ge0\) đều đạt được, chọn \(x=y^2+2\).
-        5. **Tập tiếp:** [Core/Luyện tập C02](luyen-tap.md?item=THPT-G10-B15-C02), sau đó phân biệt miền đầu vào và đầu ra bằng một ví dụ mới.
-
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY03" hidden></span>
-
-    ??? tip "4.3. Đoán điểm thuộc đồ thị từ hình vẽ hoặc bỏ điều kiện x"
-
-        1. **Dấu hiệu sai:** Nhìn điểm \(B(2;5)\) nằm gần đường cong \(y=x^2-1\), rồi kết luận \(B\) thuộc đồ thị.
-        2. **Vì sao sai?** Hoành độ \(x=2\) cho tung độ đúng bằng \(f(2)=2^2-1=3\), **không phải \(5\)**. Khoảng cách trên hình không chứng minh được quan hệ \(y=f(x)\).
-        3. **Tự kiểm:** Trước khi thay số phải xác định hoành độ nằm trong \(D\). Sau đó tính \(f(x_0)\) và so **chính xác** với tung độ \(y_0\).
-        4. **Sửa lại:** \(A(-2;3)\) thuộc đồ thị vì \(f(-2)=3\). \(B(2;5)\) không thuộc vì \(f(2)=3\ne5\). Với phân thức \(1/(x-2)\), \(x=2\) còn bị loại từ đầu.
-        5. **Tập tiếp:** Trở lại §2.2 và ví dụ 3.1, tự xét một điểm thỏa và một điểm không thỏa, không xem lời giải trước.
-
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY05" hidden></span>
-
-    ??? tip "4.4. Chọn sai nhánh ở ranh giới và tính phí cho cả quãng đường"
-
-        1. **Dấu hiệu sai:** Với mô hình \(C(x)=12\) khi \(0\le x\le3\), \(C(x)=12+4(x-3)\) khi \(x>3\), áp nhánh \(x>3\) cho \(x=3\), hoặc tính \(C(5)=12+4\cdot5=32\).
-        2. **Vì sao sai?** Số \(3\) thuộc nhánh **có dấu bằng**. Phần phí tăng thêm chỉ tính cho **\(x-3\)** km vượt ngưỡng. Đặc biệt, dùng nhầm nhánh tại \(x=3\) tình cờ cũng cho \(12\): **đúng số không chứng minh đúng phương pháp**.
-        3. **Tự kiểm:** Đánh dấu từng miền lên trục số, thử riêng \(x=3\) và một \(x>3\); kiểm đơn vị \(x\) là km, \(C(x)\) là nghìn đồng.
-        4. **Sửa lại:** \(C(3)=12\) (nhánh thứ nhất), \(C(5)=12+4(5-3)=20\) nghìn đồng (nhánh thứ hai).
-        5. **Tập tiếp:** [Core/Luyện tập P02](luyen-tap.md?item=THPT-G10-B15-P02). Nói rõ nhánh nào được chọn **trước** khi tính.
-
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY04" hidden></span>
-
-    ??? tip "4.5. Kết luận đồng biến, nghịch biến chỉ từ hai điểm"
-
-        1. **Dấu hiệu sai:** Thấy \(f(0)<f(1)\) rồi kết luận ngay “hàm đồng biến trên mọi \(x\)” mà không nêu khoảng đang xét hoặc chưa kiểm các cặp khác.
-        2. **Vì sao sai?** Định nghĩa trên khoảng \(K\) đòi hỏi **mọi** cặp \(x_1<x_2\) trong \(K\). Ví dụ \(g(x)=x^2\) giảm trước \(0\) và tăng sau \(0\); một cặp có giá trị tăng không đủ suy ra đơn điệu trên \(\mathbb R\).
-        3. **Tự kiểm:** Viết rõ \(K\), chọn \(x_1<x_2\) **bất kì** cùng thuộc \(K\), xét dấu \(f(x_2)-f(x_1)\). Không đảo dấu khi trừ hai giá trị.
-        4. **Sửa lại:** Với \(f(x)=3x+2\) trên \([-1;2]\), \(f(x_2)-f(x_1)=3(x_2-x_1)>0\) cho mọi \(x_1<x_2\), nên đồng biến trên khoảng đang xét.
-        5. **Tập tiếp:** [Core/Luyện tập P03](luyen-tap.md?item=THPT-G10-B15-P03). Tự giải thích dấu hiệu số học trước khi mở đáp án.
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 

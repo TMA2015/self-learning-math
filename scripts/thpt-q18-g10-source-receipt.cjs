@@ -95,6 +95,21 @@ function chviiEditorialReceiptRows(){
  return rows;
 }
 
+function chviKiemLoiCandidate(name,immutablePublished){
+ const file=path.join(root,"prototypes/thpt/ux795/G10_CHVI_B15_B18_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md");
+ if(!fs.existsSync(file))return immutablePublished;
+ const receipt=fs.readFileSync(file,"utf8");
+ const lines=receipt.split("\n").filter(x=>x.startsWith("| "+name+" | "));
+ assert.equal(lines.length,1,"ChVI Kiểm lỗi receipt "+name+" missing/duplicate");
+ const matches=[...lines[0].matchAll(/`([a-f0-9]{40})`/g)].map(x=>x[1]);
+ assert.equal(matches.length,2,"ChVI Kiểm lỗi receipt must carry old and new Git SHA");
+ assert.equal(matches[0],immutablePublished,name+" Kiểm lỗi must extend immutable published source SHA");
+ assert.notEqual(matches[0],matches[1],name+" Kiểm lỗi must change real source");
+ assert(receipt.includes("DELTA_C_ACADEMIC_MATERIAL")&&receipt.includes("OWNER_P2")&&
+  receipt.includes("G10-CHVI-B15-B18-KIEM-LOI-PLACEMENT-Q18-R01-20261120"),
+  "ChVI Kiểm lỗi pending reviewer evidence missing");
+ return matches[1];
+}
 function expectedG10KnowledgeBlob(lesson,legacy){
  assert(/^[a-f0-9]{40}$/.test(legacy),"Historical source SHA malformed");
  const name="B"+String(lesson).replace(/^B/,"").padStart(2,"0");
@@ -966,7 +981,7 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    const current=vf("CANDIDATE_B15_SOURCE_BLOB");
    assert(/^[a-f0-9]{40}$/.test(current||"")&&current!==revised,
     "B15 R02 must carry a real distinct exact Git source hash");
-   return current;
+   return chviKiemLoiCandidate("B15",current);
   }
   if(name==="B16"){
    assert(ux&&chvi&&!chiv&&!chv,"B16 current source must extend exact historical ChVI receipt");
@@ -983,7 +998,7 @@ function expectedG10KnowledgeBlob(lesson,legacy){
     "B16 candidate SHA must be a distinct actual source from signed receipt");
    assert(r16.includes("DELTA_C_ACADEMIC_MATERIAL")&&r16.includes("B16_OUT_05"),
     "B16 material revision requires outcome-specific owner source receipt");
-   return next16;
+   return chviKiemLoiCandidate("B16",next16);
   }
   if(name==="B17"){
    // Current B17 extends the immutable published ChVI example-UX snapshot.
@@ -1028,7 +1043,7 @@ function expectedG10KnowledgeBlob(lesson,legacy){
      for(const token of ["Q18_OWNER_SELF_VERIFIED_ENRICHMENT",
        "DELTA_C_ACADEMIC_MATERIAL","B17_OUT_01","B17_OUT_05","P0=0","P1=0"])
       assert(r03.includes(token),"B17 R03 source receipt missing "+token);
-     return final;
+     return chviKiemLoiCandidate("B17",final);
     }
     return next;
    }
@@ -1076,7 +1091,7 @@ function expectedG10KnowledgeBlob(lesson,legacy){
      for(const token of ["DELTA_B_SOURCE_EQUIVALENT","DELTA_A_UI",
       "Vận dụng","OWNER_B18_P2_PENDING","P0=0","P1=0"])
       assert(r03.includes(token),"B18 source-equivalent R03 receipt missing: "+token);
-     return latest;
+     return chviKiemLoiCandidate("B18",latest);
     }
     return final;
    }
