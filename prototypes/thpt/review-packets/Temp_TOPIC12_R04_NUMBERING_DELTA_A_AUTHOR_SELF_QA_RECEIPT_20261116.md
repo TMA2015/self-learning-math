@@ -9,8 +9,8 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 2bdd119a4ce8d9148d3cd11c29e72686925299e5
-ACADEMIC_SOURCE_BLOB: 2bdd119a4ce8d9148d3cd11c29e72686925299e5
+SOURCE_BLOB: 318fa95b2e1f7311bae4361517565426fa2a5524
+ACADEMIC_SOURCE_BLOB: 318fa95b2e1f7311bae4361517565426fa2a5524
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC12_TRIANGLE_NEW16_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R03_LEARNER_FIRST_34_CANONICAL_VISIBLE_20261116.md
@@ -72,3 +72,7 @@ ASSESSMENT_Q16: 12 câu public replay (SGK và Topic) dùng lại Practice, ch�
 - Current learner blob `2bdd119a4ce8d9148d3cd11c29e72686925299e5` (former `ece977f22531dfa8e46eeda8ba0c55dc449453e4` preserved in Git history).
 - Read source §Kiến thức directly: four inline `**Ví dụ:**` descriptions and one `**Ví dụ SSS:**` were additional explanatory prose, separate from 12 already standalone **Ví dụ–Đề bài–Lời giải**. Normalized those five inline prefixes to `Chẳng hạn,` / `Chẳng hạn, với dữ kiện ba cạnh,` without touching mathematical sentences, IDs, stems, keys, solutions, rubrics, headings or diagrams.
 - Reverse substitution exact source equivalence: 5/5 labels, zero mathematical replacements; 3/3 Golden Topic sections preserved. Targeted Q03/PED editorial author self-QA PASS; no independent NotebookLM review nor RELEASE QA claimed.
+
+
+## 20/11/2026 — owner Delta A after explanation-label normalization
+- Learner `318fa95b2e1f7311bae4361517565426fa2a5524` replaces previous learner `2bdd119a4ce8d9148d3cd11c29e72686925299e5` with precisely two `GHI NHỚ —` formal prefixes expanded to standard `KIẾN THỨC CẦN GHI NHỚ —`. Earlier five inline explanatory labels normalized to continuous prose are retained, all 12 independent worked examples, sine/cosine formula and Heron mathematics, 34 canonical item/answer/rubric and 3 Topic sections unchanged. Q03/PED scope author self-QA ΔA only; no new full independent reviewer, no release.
