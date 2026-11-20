@@ -4,7 +4,7 @@
 **STANDARD:** SLM-THPT-QUALITY-ONE v3.2.0 Q01–Q18, Golden đã nghiệm thu; G0–G5 hiện có. Không thêm chuẩn/bộ test.  
 **SOURCE_SCOPE:** Tám file canonical `docs/thpt-preview/sgk/chuong-iv/bai-{7..11}.md` và `docs/thpt-preview/sgk/chuong-v/bai-{12..14}.md`, các file khác không sửa.  
 **DELTA:** `DELTA_A_UI` chuyển vị trí, `DELTA_C_ACADEMIC_MATERIAL` các HELP gắn với trải nghiệm tự sửa và hai tình huống minh họa nguồn đã phát hiện sai lệch ngữ cảnh.  
-**OWNER_P2:** snapshot đã nghiệm thu không đổi. Các ứng viên này chưa được review độc lập Academic/PED, không có P2 mới, giữ `AUTHORING_REVIEW_HOLD`.  
+**OWNER_P2:** snapshot đã nghiệm thu không đổi; chưa có P2 mới. Lịch sử ban đầu `AUTHORING_REVIEW_HOLD`, nay owner yêu cầu chuyển đúng vị trí và affected scope đã được kiểm chứng theo `Q18_OWNER_SELF_VERIFIED_ENRICHMENT` v3.2.0. Không mạo danh reviewer độc lập.  
 **ISSUE:** #795 audit B23 ngược B01.
 
 | LESSON | PREVIOUS_SOURCE_BLOB (Git) | CORRECTED_SOURCE_BLOB (Git) | canonical HELP moved | links to shared HELP |
@@ -49,3 +49,9 @@ B09/B10/B11/B12 mỗi bài có **một manuscript nguyên bài** trong `prototyp
 **B11 source-first special:** Previous owner-P2 source-first R01/R02 receipts are historical and must stay byte-identical. New Q18 manuscript+Markdown receipt extends that history rather than substituting it or inventing a second current manuscript.
 
 **STATE:** `AUTHORING_REVIEW_HOLD` pending affected-part DELTA_C independent Academic/PED review, then G3–G5 appropriate scoped QA and release gates. No self-granted content PASS/P2.
+
+## Q18 owner-directed affected-scope closure · 20/11/2026
+
+**G2_FINAL_STATUS:** `Q18_OWNER_SELF_VERIFIED_ENRICHMENT`, P0=0/P1=0 **chỉ đối với thay đổi placement+3 HELP ngữ cảnh**, independent reviewer `NOT_CLAIMED`, P2 mới `PENDING`. Đối chiếu 8 old/new SHA và bốn bản thảo canonical riêng B09–B12 đúng bảng, không tạo một bản thảo học sinh thứ hai. 19 HELP hiện nằm sau Vận dụng/Đối chiếu tương ứng trong Khám phá, không còn HELP cụ thể bị bỏ riêng ở Lỗi thường gặp, nhãn `Kiểm lỗi` mặc định đóng; các HELP dùng chung chỉ một anchor duy nhất. Các item_id/First Try/answer/rubric/RD1 không đổi. 5+5+5+6+5+5+5+5 câu First Try theo B07–B14, các biểu thức chính của bài không bị xóa vì điều hướng.
+
+**Ba chỗ sửa ngữ cảnh có nội dung toán thực (không coi là DELTA_A):** (1) B10: Vận dụng A(-2;4), B(4;0), C(1;5) có trung điểm M=(1;2) và trọng tâm G=(1;3), không lấy tọa độ A(0;0),B(6;0),C(0;3) từ lỗi cũ; với u=(2;1), v=(6;3), w=(6;4), định thức u,w = 2×4−1×6 = 2 ≠ 0, v=3u. (2) B11: hai lực 4 N hợp góc 60° có độ lớn tổng hợp sqrt(4²+4²+2·4·4·cos60°)=sqrt48=4sqrt3 N; dữ liệu cũ 6 N, 120° không đúng chính Vận dụng. (3) B12: thực hành căn bậc ba 11, không phải 7: 2,22398009… → 2,224 (sai số dưới 0,0005), kiểm 2,2235³ < 11 < 2,2245³. Các delta C này đã đối chiếu với đề Vận dụng thật và phép tính; không tự gán NotebookLM PASS. Các thay đổi ngoài ba HELP này chỉ điều hướng/vị trí; không đổi câu hỏi/đáp án. Hành vi Golden, responsive, Q15/Q16, Q18 source lock phải tiếp tục được QA trên exact release HEAD; P2 sau khi website phát hành.
