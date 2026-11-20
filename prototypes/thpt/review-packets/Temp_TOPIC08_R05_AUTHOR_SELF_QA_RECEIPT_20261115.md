@@ -9,8 +9,8 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic08-limits-continuity/Temp_TOPIC08_R05_STUDENT_FIRST_58_CANONICAL_VISIBLE_20261115.md
-SOURCE_BLOB: b10b1ca94377d8dc2ffffcc5d5211c24514369c6
-ACADEMIC_SOURCE_BLOB: b10b1ca94377d8dc2ffffcc5d5211c24514369c6
+SOURCE_BLOB: df47c56c8a7559047d35b44640ea74dce27a3f91
+ACADEMIC_SOURCE_BLOB: df47c56c8a7559047d35b44640ea74dce27a3f91
 PREVIOUS_R04_SOURCE_BLOB: 8fd1c9d223ccab794ae20fc8f0206df32f0671c4
 PREVIOUS_R04_AUTHOR_RECEIPT_BLOB: c3cfa8ca4ec9c05710fed4ab2428f3d2814eec07
 PUBLIC_ORIGINAL36_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC08_LIMITS_CONTINUITY_ORIGINAL36_SGK_PLACEMENT_INDEX_R05_20261115.md
@@ -104,3 +104,11 @@ Owner ΔA 19/11: 14 previously unmarked existing mathematical explanations for l
 - O16 now explicitly notes polynomial/sin/cos continuous on ℝ, tan continuous where cos≠0 and cot where sin≠0, and quotient only where denominator nonzero. Correct derivatives not needed for this theorem; justified as ratios of continuous sin/cos and domain guards.
 - **Scoped author mathematics/PED QA:** (i) half-interval definition matches included endpoint, (ii) x² left limit at 2=4, (iii) sin/cos domain ℝ, (iv) tan/cot excluded denominator zeros, (v) original module numbering unchanged. 5/5 targeted checks; `DELTA_C_ACADEMIC_MATERIAL`, not mere label replacement and not an independent NotebookLM verdict.
 - Exact suffix `# Luyện tập` / `# Tự kiểm tra` byte-identical, 58 existing canonical Practice and public selfcheck placement, written rubrics, diagrams, private RD1/Mastery unchanged. Full 22 Topic S1 review still PENDING.
+
+
+## 20/11/2026 — CĐ08 academic source S1 G11 T1 B15–17 Knowledge complete
+- Full source-first audit of 18 existing Knowledge subsections. B15 S1 (printed pp103–109) sequence finite/infinite limits, powers q^n, sequence limit laws and geometric series: original §1.4 described sum/product/quotient only verbally without full finite limit theorem. Added explicit u_n→A, v_n→B ⇒ limit of sum/difference/product/scalar, quotient only B≠0; pointed out 0/0, infinity/infinity invalid arithmetic. Worked fraction examples unchanged. Source: https://www.sgkvn.com/lop-11-14/ket-noi-tri-thuc-voi-cuoc-song-3/chuong-v-gioi-han-ham-so-lien-tuc-3448/bai-15-gioi-han-cua-day-so-12663.html.
+- B16 S1 (printed pp110–118) formal limits f(x) as x→a defined through all x_n≠a in domain, x_n→a, f(x_n)→L. Original §2.1 only informal closeness; added this sequential characterization with a a limit point of domain, and analogous finite function limit laws with denominator B≠0, before existing polynomial-cancellation example. §§2.2–2.7 cover sided/infinite limits and rationalization. https://www.sgkvn.com/lop-11-14/ket-noi-tri-thuc-voi-cuoc-song-3/chuong-v-gioi-han-ham-so-lien-tuc-3448/bai-16-gioi-han-cua-ham-so-12668.html.
+- B17 S1 (printed pp119–122) continuity at point/interval/closed and half-open endpoints, basic continuous functions, operations and sign-change IVT already present after earlier B17 repair. Confirmed from https://www.sgkvn.com/lop-11-14/ket-noi-tri-thuc-voi-cuoc-song-3/chuong-v-gioi-han-ham-so-lien-tuc-3448/bai-17-ham-so-lien-tuc-12680.html.
+- Scoped author self-QA examples: if u_n=2+1/n→2 and v_n=3−1/n→3, sum→5, product→6; if v_n→0 no blanket quotient rule; g(x)=(x²−5x+6)/(x−2)=x−3 (x≠2) has g(x_n)→−1 for every x_n→2, x_n≠2, but g(2) undefined; rationalization √(x+3)−2/(x−1)→1/4; IVT f(x)=x²−3 between 1 and2. 18/18 original examples+Vận dụng retained, 36 pedagogical labels normalized, all canonical Practice/Selfcheck byte-identical, no item bank changes.
+- One canonical learner path source df47c56c8a7559047d35b44640ea74dce27a3f91, prior b10b1ca94377d8dc2ffffcc5d5211c24514369c6 historical. Independent NotebookLM new Delta C not performed; no website release.
