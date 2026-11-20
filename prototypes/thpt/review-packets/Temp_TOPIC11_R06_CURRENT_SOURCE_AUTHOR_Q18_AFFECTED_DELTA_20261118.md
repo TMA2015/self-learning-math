@@ -9,8 +9,8 @@ LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 CURRENT_STATUS: AUTHOR_SELF_VERIFIED_AFFECTED_DELTA_C_S1_O06
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 9f8b1d7035ae733a2e5f0de5ee40359ab8f5fb6a
-ACADEMIC_SOURCE_BLOB: 9f8b1d7035ae733a2e5f0de5ee40359ab8f5fb6a
+SOURCE_BLOB: ccb03b95b5c1312eed1564524beedcb096b1e20f
+ACADEMIC_SOURCE_BLOB: ccb03b95b5c1312eed1564524beedcb096b1e20f
 SIGNED_R06_PREVIOUS_SOURCE_BLOB: 58b16f7c442d560f3950aafdbaf1f686e1e337e4
 SIGNED_R06_PREVIOUS_Q18_BLOB: ee42fcc98ccc51fef08a7eabdbf99032b0110c27
 ORIGINAL_R05_STUDENT_BLOB: 7d8eac917be4f7688a8a718e54cce4a84bc055ef
@@ -107,3 +107,9 @@ This verification does not close DELTA_C independent review O08/O14, does not al
 - MATH_QA: (tan x)'=1/cos^2(x), (-cot x)'=1/sin^2(x) và (2tan x+3cot x)'=2/cos^2(x)-3/sin^2(x). Kiểm 3 đồng nhất thức và 2 điều kiện loại điểm mẫu bằng 0 bằng đạo hàm trực tiếp.
 - Q15_Q16_SCOPE: 116 item canonical, 22 câu self-check công khai, đáp án, lời giải, rubric, SVG, RD1, Mastery không bị chỉnh sửa; nguồn chỉ thêm một đoạn kiến thức trước Ví dụ O06.
 - VERDICT: TARGETED_AUTHOR_SELF_QA_PASS O06; không nhận NotebookLM reviewer PASS mới. FULL_22_TOPIC_S1_AUDIT=PENDING. Không merge/deploy.
+
+
+## 20/11/2026 — Targeted S1 mandatory statement restoration TOP11-O01/O08
+- CURRENT_LEARNER_BLOB: ccb03b95b5c1312eed1564524beedcb096b1e20f; prior source 9f8b1d7035ae733a2e5f0de5ee40359ab8f5fb6a immutable, historic author-Q18 checks unaffected outside this localized content.
+- S1 scope: S1 G12 T2 B11 pp4–5: K open/half-open/closed, boundary one-sided derivative, continuous f implies primitive, dF=f dx. B12 pp13–14: definite integration variable-name invariant.
+- Reviewed student-facing Knowledge additions, derivation and all guards using direct derivative algebra, interval definitions; example stems/solutions and Practice/Self-check suffix byte-identical. This is DELTA_C_ACADEMIC_MATERIAL with targeted Q01/Q03/PED author mathematical self-verification, **not a new independent NotebookLM verdict**. Other S1 SGK outcomes in 22 Topic corpus remain PENDING. No RD1/Final Submit/Mastery/RELEASE.
