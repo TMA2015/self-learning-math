@@ -486,6 +486,7 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
    "B11 signed academic/PED R01 receipt must remain byte-identical");
   const manuscript=fs.readFileSync(path.join(root,
    "prototypes/thpt/content-drafts/THPT_G10_CHIV_B11_CANONICAL.md"));
+  const currentB11=currentOneCanonicalAfterKiểmLỗi("B11",g("B11_SOURCE_CURRENT_BLOB"),g("B11_CANONICAL_CURRENT_BLOB"));
   assert.equal(calc(manuscript),currentB11.canonical,
     "B11 current ONE canonical manuscript must extend frozen P2 Delta A SHA");
   const css=fs.readFileSync(path.join(root,"docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"));
@@ -536,7 +537,6 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
   }
   const sourceText=fs.readFileSync(path.join(root,
    "docs/thpt-preview/sgk/chuong-iv/bai-11.md"),"utf8");
-  const currentB11=currentOneCanonicalAfterKiểmLỗi("B11",g("B11_SOURCE_CURRENT_BLOB"),g("B11_CANONICAL_CURRENT_BLOB"));
    assert.equal(calc(Buffer.from(sourceText)),currentB11.source,
     "B11 current public Knowledge must equal one updated canonical, old P2 receipt unchanged");
   const manuscriptText=manuscript.toString("utf8");
