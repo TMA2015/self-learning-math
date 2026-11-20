@@ -1,5 +1,13 @@
 # Bài 24. Hoán vị, chỉnh hợp và tổ hợp
 
+<style>
+/* Scoped to B24 by its canonical First Try marker; no shared UI changes. */
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY05"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card{background:#e8f7f2;border-color:#a9dccc;border-left-color:#087d69;color:#174137}
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY05"]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#eaf1fc;border-color:#a5bee5;border-left-color:#4879c2;color:#193d66}
+[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY05"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card{background:#193d36;border-color:#447e70;border-left-color:#76dfc7;color:#e9fff7}
+[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY05"]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#203551;border-color:#45658a;border-left-color:#8cb4ed;color:#ecf5ff}
+</style>
+
 <script>
 /* B24 source-scoped Golden bridge: reuse the approved B22 presentation CSS,
    without altering the shared SGK route/assessment runtime or cloning a theme.
@@ -7,7 +15,7 @@
 (() => {
  "use strict";
  const mount=()=>{
-  if(!/\/thpt-preview\/sgk\/chuong-viii\/bai-23\/?$/.test(location.pathname))return;
+  if(!/\/thpt-preview\/sgk\/chuong-viii\/bai-24\/?$/.test(location.pathname))return;
   const article=document.querySelector(".md-content__inner");
   if(!article||article.dataset.g10B24Golden==="true"||
     !article.querySelector('.thpt-r4-screen[data-b24-owner-g0g2="r01"]'))return;
@@ -268,43 +276,57 @@
 
     Trước khi xem lời giải, hãy xác định dữ kiện, điều phải tìm và lý do chọn cách giải. Sau đó kiểm tra lại điều kiện áp dụng và kết quả, thay vì chỉ nhìn phép tính cuối cùng.
 
-    ### Ví dụ — Cùng chọn 2 trong 5, hai đáp án khác nhau
+    ### 3.1. Ví dụ — Cùng chọn 2 trong 5, hai đáp án khác nhau
 
     **Đề bài.** Có năm học sinh. (a) Chọn một trưởng nhóm và một phó nhóm khác người. (b) Chọn nhóm hai người không phân vai.
 
     **Vì sao chọn cách này?** (a) Có hai **vai khác nhau** nên thứ tự chọn quyết định kết quả; (b) chỉ cần nhóm gồm ai, không xét vai.
 
-    **Giải.** (a) Có \(5\cdot4=20=A_5^2\) cách. (b) Mỗi nhóm đã đếm hai lần nếu phân thứ tự, nên \(\binom52=\frac{5\cdot4}{2}=10\) nhóm.
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1">
+    <p><strong>Lời giải.</strong> (a) Có \(5\cdot4=20=A_5^2\) cách. (b) Mỗi nhóm đã đếm hai lần nếu phân thứ tự, nên \(\binom52=\frac{5\cdot4}{2}=10\) nhóm.</p>
+    </div>
 
     **Kiểm lại:** Không dùng cùng đáp án cho hai tình huống chỉ vì đều có “chọn hai người”.
 
-    **Ví dụ 1.** Từ 7 học sinh chọn 3 bạn làm nhóm trực nhật (không phân vai): C(7,3)=35. Nếu lập nhóm 3 bạn và cử đúng một trưởng nhóm, mỗi nhóm có 3 lựa chọn, nên có 35×3=105 phương án. Không nhầm bài thứ hai với 7×6×5 vì hai bạn còn lại không được phân biệt vai trò.
+    ### 3.2. Ví dụ — Chọn nhóm rồi cử một trưởng nhóm
 
-    **Ví dụ 2.** Xếp 4 quyển sách khác nhau lên một giá theo một hàng có 4!=24 cách. Nếu A và B phải kề nhau, gộp thành khối [AB], cùng 2 sách còn lại tạo 3 đối tượng có 3! thứ tự; khối có 2 hoán đổi bên trong, tổng 2×3!=12 cách. Việc gom khối chỉ dùng khi điều kiện kề nhau được mô tả chính xác.
+    <div class="thpt-g10-example-solution" role="group" aria-label="Ví dụ 3.2 chọn nhóm">
+    <p><strong>Ví dụ 1.</strong> Từ 7 học sinh chọn 3 bạn làm nhóm trực nhật (không phân vai): C(7,3)=35. Nếu lập nhóm 3 bạn và cử đúng một trưởng nhóm, mỗi nhóm có 3 lựa chọn, nên có 35×3=105 phương án. Không nhầm bài thứ hai với 7×6×5 vì hai bạn còn lại không được phân biệt vai trò.</p>
+    </div>
 
-    **Lỗi hay gặp.** Tổ hợp và chỉnh hợp dùng lẫn nhau; gộp khối mà quên hoán vị trong khối; đếm thiếu/đếm hai lần các nhóm có ràng buộc; dùng công thức với k>n; bỏ qua việc các đối tượng có phân biệt hay không.
+    ### 3.3. Ví dụ — Hai quyển sách đứng cạnh nhau
 
-    ### Ví dụ 3 — Chọn nhóm theo hai loại (mở rộng vận dụng)
+    <div class="thpt-g10-example-solution" role="group" aria-label="Ví dụ 3.3 gộp khối">
+    <p><strong>Ví dụ 2.</strong> Xếp 4 quyển sách khác nhau lên một giá theo một hàng có 4!=24 cách. Nếu A và B phải kề nhau, gộp thành khối [AB], cùng 2 sách còn lại tạo 3 đối tượng có 3! thứ tự; khối có 2 hoán đổi bên trong, tổng 2×3!=12 cách. Việc gom khối chỉ dùng khi điều kiện kề nhau được mô tả chính xác.</p>
+    </div>
+
+    ### 3.4. Ví dụ — Chọn nhóm theo hai loại (mở rộng vận dụng)
 
     **Đề bài.** Có 6 học sinh nam và 5 học sinh nữ phân biệt. Chọn nhóm 3 bạn gồm đúng 2 nam và 1 nữ, không phân vai. Có bao nhiêu nhóm?
 
     **Vì sao chọn cách này?** “Đúng 2 nam, 1 nữ” là hai lựa chọn thành phần cùng cần làm; vì không phân vai trong nhóm nên dùng tổ hợp, không dùng chỉnh hợp.
 
-    **Giải từng bước.** Chọn 2 nam từ 6 có \(C_6^2=15\) nhóm; chọn 1 nữ từ 5 có \(C_5^1=5\) cách. Mỗi lựa chọn hai nam ghép với một nữ tạo đúng một nhóm 3 người. Vậy số nhóm là \(15\cdot5=75\).
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4">
+    <p><strong>Lời giải.</strong> Chọn 2 nam từ 6 có \(C_6^2=15\) nhóm; chọn 1 nữ từ 5 có \(C_5^1=5\) cách. Mỗi lựa chọn hai nam ghép với một nữ tạo đúng một nhóm 3 người. Vậy số nhóm là \(15\cdot5=75\).</p>
+    </div>
 
     **Kiểm lại giới hạn:** Mọi nhóm đã đếm đều có đúng 2 nam, 1 nữ; không có nhóm nào bị đếm hai lần do đổi thứ tự kể tên. Không được lấy \(C_{11}^3\), vì công thức đó bao gồm nhóm sai cơ cấu.
 
-    ### Ví dụ 4 — Chọn ban quản lí rồi phân vai
+    ### 3.5. Ví dụ — Chọn ban quản lí rồi phân vai
 
     **Đề bài.** Câu lạc bộ có 20 bạn. Chọn 6 bạn vào ban, trong đó một bạn làm trưởng, một bạn khác làm phó, bốn thành viên còn lại không phân biệt vai. Hỏi có bao nhiêu cách?
 
     **Vì sao chọn cách này?** Hai chức vụ riêng đếm có thứ tự, bốn thành viên còn lại chỉ là nhóm. Phân hai vai trước giúp không lẫn số người có thể được chọn tiếp.
 
-    **Giải.** Chọn trưởng rồi phó: \(20\cdot19=380\) cách. Từ 18 bạn còn lại chọn bốn thành viên không phân vai: \(C_{18}^{4}=3060\) cách. Mỗi cặp chức vụ ghép được với mỗi nhóm bốn bạn nên có \(380\cdot3060=1\,162\,800\) phương án.
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5">
+    <p><strong>Lời giải.</strong> Chọn trưởng rồi phó: \(20\cdot19=380\) cách. Từ 18 bạn còn lại chọn bốn thành viên không phân vai: \(C_{18}^{4}=3060\) cách. Mỗi cặp chức vụ ghép được với mỗi nhóm bốn bạn nên có \(380\cdot3060=1\,162\,800\) phương án.</p>
+    </div>
 
     **Kiểm lại bằng cách khác:** Chọn ban sáu người trước \(C_{20}^{6}=38\,760\), rồi phân trưởng/phó trong ban bằng \(6\cdot5=30\) cách. Kết quả \(38\,760\cdot30=1\,162\,800\) khớp, cho thấy không nhân hoặc chia thừa.
 
 === "Lỗi thường gặp"
+
+    **Lỗi hay gặp.** Tổ hợp và chỉnh hợp dùng lẫn nhau; gộp khối mà quên hoán vị trong khối; đếm thiếu/đếm hai lần các nhóm có ràng buộc; dùng công thức với k>n; bỏ qua việc các đối tượng có phân biệt hay không.
 
     <span data-thpt-help-id="D6-G10-B24-01" hidden></span>
 
