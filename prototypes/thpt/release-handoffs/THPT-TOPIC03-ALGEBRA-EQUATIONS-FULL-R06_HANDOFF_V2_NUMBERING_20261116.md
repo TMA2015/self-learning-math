@@ -5,7 +5,7 @@
 PACKET_ID: THPT-TOPIC03-ALGEBRA-EQUATIONS-FULL-R01
 CONTENT_REVISION: R06
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_ONLY_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: 1bc2073acdf133548a5b40c8d0fe8b8a993272dc
+AUTHOR_METADATA_BLOB: 4f998f805133cf9945e002ed2680e6891a78e788
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
@@ -13,9 +13,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 41b070e06267a5486f00ff977e164c4198f387d4
+ACADEMIC_SOURCE_BLOB: 8b0e5be33b42d8b1d3e743bb2502501789333075
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC03_R06_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: e65746363a6a4424e5c4e051e33e5742cd96857c
+REVIEW_RECEIPT_BLOB: 537186b1763ef06bed205f45d8d3b907dc3c7aa2
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_ORIGINAL08_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: b2e79a6cda5fdcc82dbd281e4273577ca637895e
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_NEW23_PUBLIC_CANONICAL_R01_20261112.md
@@ -169,7 +169,7 @@ Exactly 12 references to already-public Practice items, one for each outcome. Th
 
 ## 18/11 — Targeted formal-mathematics learner clarity (DELTA_C)
 
-- Effective source blob `41b070e06267a5486f00ff977e164c4198f387d4`, current signed Q18 `e65746363a6a4424e5c4e051e33e5742cd96857c`, updated A1 metadata `1bc2073acdf133548a5b40c8d0fe8b8a993272dc`. Previous effective source `daeeb5d571d120b31265f8c603a76049a1f2c78c` is retained as an immutable historical snapshot.
+- Effective source blob `8b0e5be33b42d8b1d3e743bb2502501789333075`, current signed Q18 `537186b1763ef06bed205f45d8d3b907dc3c7aa2`, updated A1 metadata `4f998f805133cf9945e002ed2680e6891a78e788`. Previous effective source `daeeb5d571d120b31265f8c603a76049a1f2c78c` is retained as an immutable historical snapshot.
 - Genuine mathematical labels at TOP03-O01 equivalent equations (same solution set on same domain), O03 zero-product rule without invalid division, O07 sqrt(A)=B iff B≥0 and A=B²; one concise recall block. Tested on existing examples and conditions, not by making 12 duplicate template cards.
 - 31 canonical Practice items + answer/solutions/rubrics/D6, 12 public self-check question-only repeats, SVG references and disclosure order unchanged exactly from previous effective source. The earlier 11 targeted D6 navigation fixes are still included; G10 original canonical and source IDs untouched.
 - Source-scoped AUTHOR_SELF_VERIFIED, not a new independent external NotebookLM verdict. Existing Draft #888 author QA HOLD remains until latest HEAD checks. RELEASE integration/browser/Final Submit remains separate, no merge/deploy.
@@ -252,3 +252,6 @@ The single active learner **path** is existing R06_NUMBERING_CONSISTENT_20261116
 
 
 **19/11 OWNER ΔA:** 9 typed formal captions, math unchanged; one V2 source-lock refreshed, CONTENT_READY preserved.
+
+
+**20/11 S1 Δ′ mandatory coverage Delta C:** b=2b′, Δ′=(b′)²−ac and real-root cases inserted in single learner `8b0e5be33b42d8b1d3e743bb2502501789333075`; affected QA 6/6 author self PASS, receipt `537186b1763ef06bed205f45d8d3b907dc3c7aa2`, A1 `4f998f805133cf9945e002ed2680e6891a78e788`. Source CONTENT_READY retained under owner, no RELEASE.
