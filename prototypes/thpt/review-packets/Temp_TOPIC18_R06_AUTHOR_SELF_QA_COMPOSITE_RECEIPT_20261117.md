@@ -36,8 +36,8 @@ RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
-SOURCE_BLOB: d1a9fc26cb8061a4929da05aea8701ed6b3b2e82
-ACADEMIC_SOURCE_BLOB: d1a9fc26cb8061a4929da05aea8701ed6b3b2e82
+SOURCE_BLOB: 4a0342a04ca941af42dc965e8a4d1f5b507429cf
+ACADEMIC_SOURCE_BLOB: 4a0342a04ca941af42dc965e8a4d1f5b507429cf
 FROZEN_R04_READY_SOURCE_BLOB: 41daf40a3b639a3ef35e129099525137a05b1848
 FROZEN_R04_FULL_AUTHOR_Q18_RECEIPT_BLOB: 5262fd454346801b050b5eb4f3dc407bc99d3530
 R05_GEOMETRIC_MODEL_SOURCE_BLOB: af8a3529398e5f876d5c979b0d5d26df3519d6ac
@@ -109,3 +109,13 @@ The currently effective learner is Git blob `7e88552ce3d6e7b224085babd48c3dbcc2d
 ### Owner editorial Delta A · 19/11/2026 · 40 nhãn phát biểu toán
 
 Chủ dự án phê duyệt sửa biên tập tại nguồn CONTENT_READY; **không đổi toán và giữ nguyên CONTENT_READY**. Baseline learner `21ce8179678bd0e9bc944d80dbde9646aaf73647` → learner hiện hành `7e88552ce3d6e7b224085babd48c3dbcc2d0e5ab`. So sánh trực tiếp xác nhận **chỉ 40 dòng nhãn** `> **Kiến thức cần ghi nhớ**` được thay bằng `> **ĐỊNH NGHĨA/TÍNH CHẤT/CÔNG THỨC/PHƯƠNG PHÁP/QUY TẮC/ĐIỀU KIỆN — <tiêu đề tiểu mục>**`. Toàn bộ thân khối, các dòng toán, giả thiết, ví dụ, Vận dụng, Đối chiếu, câu hỏi, lời giải, ID, placement, SVG, RD1 và 40 outcomes giữ nguyên byte; phát biểu vẫn sử dụng nguyên văn câu toán cũ. `DELTA_A_UI`, Q03/owner checklist #864; `Q18_AUTHOR_SELF_VERIFIED_SOURCE_EQUIVALENCE`, không cần NotebookLM review lại hoặc full browser test. Các khối không được mở rộng bằng khẳng định toán mới; nếu cần bổ sung phát biểu học thuật sau này thì phân Delta C riêng. Handoff/sổ được source-lock lại tại commit bàn giao; không website merge/deploy.
+
+
+<!-- TOP18_S1_G12_T2_B15_CANONICAL_LINE_EQ_DELTA_C_20261120 -->
+### 20/11/2026 — S1 mandatory definition **phương trình chính tắc đường thẳng** and zero-direction exception (TOP18-M26/O26)
+
+**SGK S1:** Kết nối tri thức Toán 12 Tập 2 Bài 15, trang in 42–43; phương trình chính tắc của đường thẳng qua M0, vectơ chỉ phương (a,b,c) **chỉ được gọi là chính tắc khi a,b,c đều khác 0**: (x−x0)/a=(y−y0)/b=(z−z0)/c. Nếu một thành phần bằng 0, SGK Ví dụ 5 chỉ viết tham số và lưu ý đường **không có phương trình chính tắc**. SGK gốc trực tiếp: https://intracomuni.edu.vn/wp-content/uploads/2026/11/sach-giao-khoa-toan-12-tap-2-ket-noi-tri-thuc-voi-cuoc-song.pdf .
+
+**Lỗi nguồn trước:** learner `d1a9fc26cb8061a4929da05aea8701ed6b3b2e82` của CĐ18 gọi hệ gồm hai tỉ số và một tọa độ hằng là **dạng chính tắc**, trái thuật ngữ/điều kiện SGK. Source duy nhất `4a0342a04ca941af42dc965e8a4d1f5b507429cf` đã thay đổi **nội dung học thuật thật**: thêm định nghĩa chính tắc với abc≠0; phân biệt hệ tương đương (khi u có một thành phần 0) nhưng không là phương trình chính tắc theo SGK; sửa **stem, lời giải Ví dụ, stem/Đối chiếu Vận dụng** của duy nhất TOP18-O26 để tự học đúng. Vẫn cùng `ITEM_ID: THPT-TOP18-T26`, không nhân bản hay sửa lời giải của các item khác. **Không được ghi đây là Delta A**, vì stem và lời giải O26 đã sửa về diễn đạt/giới hạn đúng SGK.
+
+**Q18 affected author self-QA 9/9 PASS:** với t=−3,−1,0,1,5 đường x=1+2t,y=3,z=4−t thỏa y=3 và (x−1)/2=(z−4)/(−1); đường x=2+t,y=−1,z=3+2t thỏa tương tự; không có mẫu 0; định nghĩa yêu cầu abc≠0; một ITEM_ID giữ nguyên; ví dụ có Đề/Lời giải; LESSON_ID/placements giữ nguyên; MathJax delimiters cân; đảo ngược đúng 7 thay đổi trả lại chính xác nguồn gốc trước Delta C. Không thay rubrics/figure/assessment safeguards của các item khác. **ACADEMIC TARGETED AUTHOR_SELF_VERIFIED**, không có độc lập NotebookLM hay full 22 Topic source S1 verdict mới. Owner giữ nguyên CONTENT_READY nhánh AUTHORING, không tự release/merge/deploy.
