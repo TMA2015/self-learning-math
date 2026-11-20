@@ -242,7 +242,7 @@ Không. Hai đường cắt nhau xác định duy nhất một mặt phẳng, n�
 
 Khi hai điểm di chuyển trên hai cạnh của cùng một tam giác với cùng tỉ lệ tính từ đỉnh, đoạn nối chúng giữ hướng cạnh đáy. Trong tam giác, nếu M và N cùng chia hai cạnh theo một tỉ số tính từ cùng đỉnh, ta có thể so sánh hướng MN và cạnh thứ ba mà không cần đo góc.
 
-> **ĐỊNH LÝ / DẤU HIỆU — Chứng minh song song qua tam giác**
+> **ĐỊNH LÝ — Chứng minh song song qua tam giác**
 >
 > Đường trung bình và Thales đảo cung cấp chứng minh **trong một tam giác xác định**. Nếu M∈SA, N∈SB và SM/SA=SN/SB với M,N khác S, ta có MN∥AB. Không cần hai đoạn bằng nhau về độ dài, mà cần **hai tỉ số** tương ứng bằng nhau.
 
@@ -338,7 +338,7 @@ Song song vì z luôn bằng 3≠0.
 
 Một đường dọc theo cạnh đáy luôn song song với một cạnh đáy khác, nhưng không thể vì thế mà nói nó 'song song mặt đáy': chính nó đang nằm trong mặt. Đường MN cùng phương AB chưa đủ cho MN song song mặt đáy. Nếu chính MN nằm trên đáy thì phải gọi quan hệ gì? 'Nằm trong', không phải 'song song phân biệt'.
 
-> **ĐỊNH LÝ / DẤU HIỆU — Điều kiện không được bỏ trong dấu hiệu**
+> **ĐỊNH LÝ — Điều kiện không được bỏ trong dấu hiệu**
 >
 > Nếu d song song một đường a nằm trong (P), có **hai** khả năng: d nằm trong (P), hoặc d song song (P). Muốn kết luận d∥(P) còn phải kiểm d không nằm trong (P), ví dụ chỉ ra một điểm của d ở ngoài mặt. Hai đường chỉ “cùng hướng” chưa đủ.
 
@@ -467,7 +467,7 @@ Trùng nhau, vì chúng cùng tập điểm z=0.
 
 Muốn chứng minh cả mặt phẳng song song với mặt khác, một đường đi song song chưa đủ: ta phải khóa cả hai hướng không cùng phương trong mặt ấy. Vì sao một đường song song (Q) chưa buộc mặt (P) song song (Q)? Mặt (P) vẫn có thể quay quanh đường ấy; hai hướng cắt nhau mới khóa mặt.
 
-> **ĐỊNH LÝ / DẤU HIỆU — Dấu hiệu hai mặt song song**
+> **ĐỊNH LÝ — Dấu hiệu hai mặt song song**
 >
 > Nếu trong (P) có hai đường **cắt nhau** a,b và **cả hai** đều song song (Q), thì (P)∥(Q). Một đường a riêng lẻ không đủ: mặt (P) có thể cắt (Q) theo đường g và chứa đường a song song g nhưng không nằm trong (Q).
 
