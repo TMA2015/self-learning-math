@@ -41,7 +41,7 @@ for(const n of [15,16,17,18]){
   "B"+n+" historical UX example count must remain frozen");
  const expected=candidateG10KnowledgeBlob(n);
  assert.equal(blob(bytes),expected,"B"+n+" current source must equal its own latest Q18 receipt");
- if(n!==15&&n!==16&&n!==17)assert.equal(expected,uxrow.candidate,
+ if(n!==15&&n!==16&&n!==17&&n!==18)assert.equal(expected,uxrow.candidate,
   "B"+n+" current source remains identical to published UX snapshot");
  else if(n===16){
   const r16=fs.readFileSync(path.join(root,
@@ -65,6 +65,14 @@ for(const n of [15,16,17,18]){
    "B17 Q18 display R02 must extend original R01 immutable source");
   assert.equal(next("CANDIDATE_B17_SOURCE_BLOB"),expected,
    "B17 current source must match signed R02 display-only candidate");
+ }else if(n===18){
+  const r18=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHVI_B18_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261120.md"),"utf8");
+  const f18=k=>r18.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(f18("BASELINE_PUBLISHED_B18_SOURCE_BLOB"),uxrow.candidate,
+   "B18 owner source must extend unchanged original ChVI UX blob");
+  assert.equal(f18("CANDIDATE_B18_SOURCE_BLOB"),expected,
+   "B18 must match its signed owner outcome-level Q18 candidate");
  }else{
   const receipt=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHVI_B15_OWNER_Q18_KNOWLEDGE_ENRICHMENT_20261119.md"),"utf8");
@@ -97,7 +105,7 @@ for(const n of [15,16,17,18]){
   const nowHelp=helpers(s),oldHelp=helpers(old);
   const normalized=list=>list.map(z=>{
    let body=z.body.replace(/\?\?\? tip "[^"]+"/,'??? tip "CANONICAL_D6"');
-   if(n===16||n===17){
+   if(n===16||n===17||n===18){
     // Allow only learner-specific G2 wording in self diagnosis and selected
     // return-to-original-TRY paths; preserve all original source mathematics,
     // error recognition, correction procedures and the two canonical links.
@@ -110,13 +118,13 @@ for(const n of [15,16,17,18]){
    }
    return {id:z.id,body};
   });
-  assert.deepEqual(n===16||n===17?normalized(nowHelp):nowHelp,n===16||n===17?normalized(oldHelp):oldHelp,
+  assert.deepEqual([16,17,18].includes(n)?normalized(nowHelp):nowHelp,[16,17,18].includes(n)?normalized(oldHelp):oldHelp,
    "B"+n+" D6 math, IDs, error cause, correction steps and canonical links must remain");
-  if(n===16||n===17){
-   assert.equal(nowHelp.length,5);
+  if(n===16||n===17||n===18){
+   assert.equal(nowHelp.length,tries[n]);
    for(const helper of nowHelp){
     assert(!helper.body.includes("Em có đang mắc đúng lỗi này"),
-     "B16 must show real student-specific diagnoses rather than repeated generic boilerplate");
+     "B"+n+" must show student-specific diagnoses, not repeated boilerplate");
     assert(!helper.body.includes("Quay lại phần kiến thức liên quan ngay trong bài"),
      "B16 must return the learner to a specific relevant example or canonical item");
    }
@@ -151,8 +159,8 @@ for(const n of [15,16,17,18]){
   assert.equal((d.match(/\*\*Em vận dụng\.\*\*/g)||[]).length,5,
    "B15 all five First Try prompts must visibly exist before Core");
  }
- if(n===16||n===17){
-  assert.equal((d.match(/\*\*Vận dụng\.\*\*/g)||[]).length,5,
+ if(n===16||n===17||n===18){
+  assert.equal((d.match(/\*\*Vận dụng\.\*\*/g)||[]).length,tries[n],
    "B16 should have exactly five student-facing Vận dụng labels");
   assert(!d.includes("Em vận dụng")&&!d.includes("Vì sao chọn phương pháp này?"),
    "No obsolete labels or editorial pseudo-headings for B16");
