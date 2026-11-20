@@ -16,7 +16,7 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 9e9965e8bf5f1053a1c50820bfa7ac0800801dcd
+SOURCE_BLOB: 853e8a9f3d8a53179eea124ddb7386a7daa3f84d
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC05_GRAPH_TRANSFORMS_NEW38_PUBLIC_CANONICAL_R01_20261112.md
 PUBLIC_CANONICAL_BANK_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39
 BASELINE_R05_SOURCE_BLOB: 3052d5f7090f74af2eca7739047c59ed76ccda63
@@ -86,3 +86,8 @@ RELEASE_AUTHORIZATION: NO
 
 <!-- TOP05_OWNER_ED_DELTA_A_20261119 -->
 Owner ΔA 19/11: 14 công thức/quy tắc đã diễn giải được thêm nhãn phân loại rõ theo bài; 3 khối đã có giữ nguyên; 4 dòng `Khám phá kiến thức` lặp đã lược. Baseline `44c3a3a0ffcdefa9a3c4eaf6ad1d4f78012541b4` → one active learner `9e9965e8bf5f1053a1c50820bfa7ac0800801dcd`. Kiểm reverse-diff: toàn bộ văn bản giải thích gốc, điều kiện, công thức, 17 Ví dụ/Đề/Lời giải, 17 Vận dụng/Đối chiếu, item IDs/rubrics/selfchecks/3 SVG byte-identical; chỉ nhãn/tiêu đề phụ khác. `DELTA_A_UI`, `CONTENT_READY` preserved; no new math, NotebookLM full rereview not required, no website changes.
+
+
+## 20/11/2026 · owner formal-label ΔA in Knowledge
+- Current learner blob `853e8a9f3d8a53179eea124ddb7386a7daa3f84d`, previous `9e9965e8bf5f1053a1c50820bfa7ac0800801dcd` preserved historically. Reclassified 1 true domain intersection guard (radical denominator) to KIẾN THỨC CẦN GHI NHỚ, 5 graph transformations (translations, reflections, vertical/horizontal scaling) to PHƯƠNG PHÁP. All (x,y) mappings, domains, numeric examples, 38 canonical learner questions/keys/solutions/rubrics and D6/diagrams unchanged.
+- Targeted Q03/PED author self-QA ΔA only. No fresh NotebookLM independent or full 22-topic SGK audit PASS; no RELEASE.
