@@ -128,7 +128,7 @@ function currentOneCanonicalAfterKiểmLỗi(name,priorPublicSha,priorManuscript
  assert.equal(master.split(b).length,2,name+" exactly one canonical Knowledge start");
  assert.equal(master.split(e).length,2,name+" exactly one canonical Knowledge end");
  const section=master.split(b)[1].split(e)[0];
- assert.equal(section.replace(/\n+$/,""),src.replace(/\n+$/,""),
+ assert.equal(section,src,
   name+" derived public Knowledge must reflect the SAME one canonical manuscript");
  assert(txt.includes("CANONICAL_PARITY_CONTRACT")&&txt.includes("DELTA_C_ACADEMIC_MATERIAL")&&
   txt.includes("AUTHORING_REVIEW_HOLD"),"One-canonical Q18 receipt may not self-issue PED PASS");
