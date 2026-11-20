@@ -17,9 +17,9 @@ ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOP
 ACADEMIC_SOURCE_BLOB: e35b9a0d2e09bb06167ef9a051d979b9b7d5c6d7
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC09_R05_AUTHOR_SELF_QA_RECEIPT_20261116.md (Q18 author SELF_VERIFIED, no independent new NotebookLM PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC09_R05_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 4e4b095e9cb39c99a87bc350fdd7812070edf81d
+REVIEW_RECEIPT_BLOB: a44f1503ee112b16afaf5d651ec852eca6410e27
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC09-DERIVATIVE-MEANING-FULL-R05_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: 4507f528b003f8c78e2f0b1e9bdaec438aba48a7
+AUTHOR_HANDOFF_BLOB: dd0878750e43c336222fc009fe0255ba40b36209
 PUBLIC_ORIGINAL71_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_ORIGINAL71_SGK_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_ORIGINAL71_INDEX_BLOB: 3c025ce2dfb8e16743873ac2b3f35bfb37c27ef8
 PUBLIC_NEW37_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_NEW37_PUBLIC_CANONICAL_R05_20261116.md
@@ -108,4 +108,4 @@ Authoring Academic and Ped self-check cannot approve release. Owner-gated RELEAS
 
 ## 20/11 AUTHORING CĐ09 S1 closure
 
-CĐ09 learner source e35b9a0d2e09bb06167ef9a051d979b9b7d5c6d7 self-verified for SGK G11 T2 B31–B33 complete required Knowledge coverage, seven affected outcomes O04/O07/O10/O16/O20/O21/O29; Q18 receipt 4e4b095e9cb39c99a87bc350fdd7812070edf81d, V2 4507f528b003f8c78e2f0b1e9bdaec438aba48a7, author metadata 92f678c6b9959ab729d1935e3d4472775f778ba5. Existing 108 public canonical items, 32 public question-only selfchecks, 4 SVG, original 14 Written and all rubrics unchanged; Practice and Selfcheck sections byte-exact. One active manifest/REGISTER. No independent new NotebookLM verdict, no official Readiness/Mastery, no website/merge/deploy or AP/R/P2 acceptance.
+CĐ09 learner source e35b9a0d2e09bb06167ef9a051d979b9b7d5c6d7 self-verified for SGK G11 T2 B31–B33 complete required Knowledge coverage, seven affected outcomes O04/O07/O10/O16/O20/O21/O29; Q18 receipt a44f1503ee112b16afaf5d651ec852eca6410e27, V2 dd0878750e43c336222fc009fe0255ba40b36209, author metadata 1574bafd8f380abca1305c01c9e0daec490c4c54. Existing 108 public canonical items, 32 public question-only selfchecks, 4 SVG, original 14 Written and all rubrics unchanged; Practice and Selfcheck sections byte-exact. One active manifest/REGISTER. No independent new NotebookLM verdict, no official Readiness/Mastery, no website/merge/deploy or AP/R/P2 acceptance.
