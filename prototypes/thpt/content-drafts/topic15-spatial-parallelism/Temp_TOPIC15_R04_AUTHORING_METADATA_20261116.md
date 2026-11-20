@@ -15,8 +15,8 @@ Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 CATALOG_TOPIC_ID: CD15
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_SPATIAL_PARALLELISM_R04_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 6579363666f07f13cf5c7e407b311a08f1e700e2
-SOURCE_BLOB: 6579363666f07f13cf5c7e407b311a08f1e700e2
+ACADEMIC_SOURCE_BLOB: 7d133daacd85f0cdddf60fa76f2084de230bb621
+SOURCE_BLOB: 7d133daacd85f0cdddf60fa76f2084de230bb621
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHIV_B10_B14_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md
 ORIGINAL_SGK_SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b
 INTERACTIVE_MODEL_ID: SLM-TOP15-LINE-PLANE-R00
@@ -255,3 +255,9 @@ REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC15_R04_AUTHOR_SELF
 - **Model SHA drift provenance** independently compared full Git blob `3f3c75765b6cddcaa53994027c45e79701d4d840` (100 lines) with actual current model file `cf6510d5d964958982fae3ebce5823e35aeac639` (117 lines). The entire diff is **CSS-only**: 17 extra styles/tokens using Golden UI, while all HTML/JS Canvas/math logic lines are byte-identical. Current model on branch has Git `cf6510d5d964958982fae3ebce5823e35aeac639`; old original SHA remains historical reference only. `DELTA_A_UI` on model, not an academic/math Delta C; browser integration AP remains RELEASE gate.
 - S1 original SGK G11 ChIV owner branch [PR #705](https://github.com/TMA2015/self-learning-math/pull/705) source actual `e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b` direct verified on sibling Draft. No duplicate SGK item/key/rubric created. Current five original SVG Git blobs match source exactly; 22 outcomes, 89 canonical IDs, 67 Practice and 8 question-only replays remain from previous accepted learner snapshot.
 - Prior R02 `ready/` manifest Git blob `6aafb53867cb699a7b270aecb9e165be3b6cc1b1` is byte-identical in `prototypes/thpt/release-queue/archive/THPT-TOPIC15-SPATIAL-PARALLELISM-FULL-R02_HISTORICAL_SIGNED_20261118.md`, removed from current `ready/`. R02 source/Q18 history untouched. One effective R04 ready/REGISTER after current SHA lock; no official Readiness/Final Submit/Mastery, merge or deploy.
+
+
+## 20/11/2026 current A1 provenance lock
+- ACADEMIC_SOURCE_BLOB: 7d133daacd85f0cdddf60fa76f2084de230bb621
+- REVIEW_RECEIPT_BLOB: 177dff31fa304d61972bfe9e1e0af2038b158bc9
+- Exactly three theorem prefixes normalized without mathematical changes.
