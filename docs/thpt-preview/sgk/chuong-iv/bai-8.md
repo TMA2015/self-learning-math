@@ -41,6 +41,7 @@
         **Vì sao:** Hai lực vuông góc là hai cạnh góc vuông dài 3,4 nên đường chéo có độ lớn √(9+16)=5. Không cộng 3+4.
 
 
+    <a id="HELP-G10-B08-02" aria-hidden="true"></a>
     <span id="help-g10-b08-02" data-thpt-help-id="HELP-G10-B08-02" hidden></span>
 
     ??? tip "Kiểm lỗi"
@@ -67,6 +68,7 @@
         **Vì sao:** Đổi trừ thành cộng \(\overrightarrow{CA}\): CA+AB=CB theo quy tắc ba điểm; CB và BC là hai vectơ đối.
 
 
+    <a id="HELP-G10-B08-01" aria-hidden="true"></a>
     <span id="help-g10-b08-01" data-thpt-help-id="HELP-G10-B08-01" hidden></span>
 
     ??? tip "Kiểm lỗi"
