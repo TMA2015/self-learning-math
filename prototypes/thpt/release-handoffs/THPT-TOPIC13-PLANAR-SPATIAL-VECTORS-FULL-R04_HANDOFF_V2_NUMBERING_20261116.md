@@ -11,23 +11,23 @@
 **New narrow PLAN22-13 unit:** exactly three independent student pages Kiến thức / Luyện tập / Tự kiểm tra, no Topic Core and no extra SGK canonical item (32 exact source projections are learner-visible). This is a source-locked A1–A7 authoring handoff, not a released site feature or new independent NotebookLM verdict.
 
 PACKET_ID: THPT-TOPIC13-PLANAR-SPATIAL-VECTORS-FULL-R01
-CONTENT_REVISION: R07_EDITORIAL_FINAL_20261118
+CONTENT_REVISION: R07_FULL_S1_KNOWLEDGE_20261120
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 CATALOG_TOPIC_ID: CD13
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: a55f76444b2347ddada26c7cea4b178f70d6580d
+ACADEMIC_SOURCE_BLOB: b89f0309213a357768c4b3a94da474b6dbc0ac3c
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: dfa23dac135fe88c0bd4163db1451478db5d8574
+REVIEW_RECEIPT_BLOB: df60f4ef23e6782f54c851f585789b210b6ea2a1
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_A1_A7_BLOB: 53de8e5f46b5743ace227200b4978675a9b8fcf9
+AUTHOR_A1_A7_BLOB: 6caa4e15bcfc2edaa7b547d3c6d51df86849953e
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: 53de8e5f46b5743ace227200b4978675a9b8fcf9
+AUTHOR_METADATA_BLOB: 6caa4e15bcfc2edaa7b547d3c6d51df86849953e
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563
 G10_SGK_CROSS_PR_DEPENDENCY: 750
@@ -353,3 +353,8 @@ All other source-level A1–A7, item–outcome map, Q15/W03 content_version 2, n
 
 ## 20/11/2026 source V2 current author delta
 - Learner a55f76444b2347ddada26c7cea4b178f70d6580d, Q18 dfa23dac135fe88c0bd4163db1451478db5d8574, A1 53de8e5f46b5743ace227200b4978675a9b8fcf9; vector identities untouched, three formal labels only.
+
+
+## 20/11 AUTHORING Full-S1 Knowledge
+
+16 G10/G12 vector outcomes, one learner b89f0309213a357768c4b3a94da474b6dbc0ac3c, signed self-Q18 df60f4ef23e6782f54c851f585789b210b6ea2a1, A1 6caa4e15bcfc2edaa7b547d3c6d51df86849953e. Preserve canonical NEW20 bank, original G10 source on PR750, original G12 source, 52 Q15, four Written, 16 replay-only public selfchecks. Delta C academic math notes in Q18. No site release or official Readiness.
