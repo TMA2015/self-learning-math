@@ -688,6 +688,23 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    assert.equal(chvii.helps,({B19:9,B20:7,B21:7,B22:10})[name],name+" exact total HELP count");
    assert.equal(chvii.examples,({B19:2,B20:2,B21:2,B22:3})[name],name+" anti-ChVI Golden worked-example count");
   }
+  if(name==="B19"){
+   assert(chvii&&chvii.candidate==="8fc4efaafcf2b896430f8cfa0ab18d7118fefc9c",
+    "B19 R01 must extend exact immutable 13/11 ChVII S1 source");
+   const r19=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHVII_B19_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261120.md"),"utf8");
+   const field=k=>r19.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(field("PREVIOUS_B19_SOURCE_BLOB"),chvii.candidate,
+    "B19 owner R01 must preserve previously published source exact SHA");
+   const current=field("CANDIDATE_B19_SOURCE_BLOB");
+   assert(/^[a-f0-9]{40}$/.test(current||"")&&current!==chvii.candidate,
+    "B19 R01 candidate must be distinct valid Git blob");
+   for(const token of ["Q18_OWNER_SELF_VERIFIED_ENRICHMENT","DELTA_C_ACADEMIC_MATERIAL",
+    "G10-B19-NORMAL_DIRECTION","G10-B19-LINEAR_MODEL","OWNER_P2_PENDING","P0=0","P1=0"]){
+    assert(r19.includes(token),"B19 Q18 owner self-QA receipt missing "+token);
+   }
+   return current;
+  }
   const ux=chviExampleUxReceiptRows().get(name);
   if(name==="B15"){
    assert(ux&&ux.baseline===row.candidate,
