@@ -40,6 +40,12 @@
         **Vì sao:** Khi đảo điểm đầu/cuối mũi tên quay ngược, trong khi khoảng cách giữa hai đầu không đổi. Độ dài bằng nhau chưa đủ để vectơ bằng nhau.
 
 
+
+    <span data-thpt-help-id="HELP-G10-B07-01" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        <ol><li><strong>Tín hiệu:</strong> Em đổi nhầm điểm đầu và điểm cuối, hoặc coi độ dài bằng nhau là đủ để hai vectơ bằng nhau.</li><li><strong>Nguyên nhân:</strong> Nhầm các định nghĩa hoặc quy tắc vectơ đã học, không phải thiếu thêm công thức mới.</li><li><strong>Nguyên lí:</strong> Vẽ mũi tên từ chữ đứng trước sang chữ đứng sau; thử đảo AB thành BA.</li><li><strong>Tự sửa:</strong> Em tự vẽ một sơ đồ mũi tên nhỏ, xác định rõ điểm đầu/cuối, nói lý do rồi tự thử lại.</li><li><strong>Điểm quay lại:</strong> Trong Luyện tập, làm lại câu về vectơ ngược hướng trong hình bình hành, rồi đối chiếu câu Core về điều kiện hai vectơ bằng nhau.</li></ol><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
     <span id="thpt-g10-chiv-try02" data-thpt-first-try-id="THPT-G10-CHIV-TRY02" data-outcome-id="G10-B07-LENGTH" data-thpt-help-ref="HELP-G10-B07-02"></span>
 
     ### 1.2. Độ dài vectơ khác hướng di chuyển thế nào?
@@ -62,6 +68,8 @@
         **Vì sao:** Độ lớn chỉ bằng 3 m cho cả hai; chiều Đông và Tây khác nhau. Nếu cùng đường thẳng thì chúng ngược hướng.
 
 
+
+    **Kiểm lỗi dùng chung:** [Xem hướng dẫn tự sửa](#HELP-G10-B07-02).
     <span id="thpt-g10-chiv-try03" data-thpt-first-try-id="THPT-G10-CHIV-TRY03" data-outcome-id="G10-B07-DIRECTION" data-thpt-help-ref="HELP-G10-B07-02"></span>
 
     ### 1.3. Vì sao cùng phương vẫn có thể ngược hướng?
@@ -84,6 +92,12 @@
         **Vì sao:** Đường thẳng song song chứng minh cùng phương; chiều Đông/Tây trái nhau làm hai vectơ ngược hướng.
 
 
+
+    <span data-thpt-help-id="HELP-G10-B07-02" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        <ol><li><strong>Tín hiệu:</strong> Em thấy hai giá song song rồi kết luận ngay cùng hướng, hoặc quên trường hợp vectơ-không.</li><li><strong>Nguyên nhân:</strong> Nhầm các định nghĩa hoặc quy tắc vectơ đã học, không phải thiếu thêm công thức mới.</li><li><strong>Nguyên lí:</strong> So lần lượt phương, chiều, độ dài; dùng đúng quy ước KNTT về vectơ-không.</li><li><strong>Tự sửa:</strong> Em tự vẽ hai mũi tên, ghi phương–chiều–độ dài theo thứ tự và giải thích kết luận trước khi tự thử lại.</li><li><strong>Điểm quay lại:</strong> Trong Luyện tập, làm câu về hai vectơ cùng hướng nhưng khác độ dài, rồi câu về quy ước vectơ-không.</li></ol><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
     <span id="thpt-g10-chiv-try04" data-thpt-first-try-id="THPT-G10-CHIV-TRY04" data-outcome-id="G10-B07-EQUALITY" data-thpt-help-ref="HELP-G10-B07-02"></span>
 
     ### 1.4. Hai mũi tên ở hai vị trí khác nhau khi nào bằng nhau?
@@ -106,6 +120,8 @@
         **Vì sao:** AB và DC song song, cùng hướng, cùng dài; CD ngược hướng với AB. Cùng độ dài vẫn không đủ.
 
 
+
+    **Kiểm lỗi dùng chung:** [Xem hướng dẫn tự sửa](#HELP-G10-B07-02).
     <span id="thpt-g10-chiv-try05" data-thpt-first-try-id="THPT-G10-CHIV-TRY05" data-outcome-id="G10-B07-ZERO" data-thpt-help-ref="HELP-G10-B07-02"></span>
 
     ### 1.5. Vì sao quay lại điểm xuất phát tạo ra vectơ-không?
@@ -127,6 +143,8 @@
 
         **Vì sao:** Độ dời chỉ quan tâm vị trí đầu/cuối; đi rồi quay lại cho vectơ-không. Quãng đường vẫn là số dương nếu có di chuyển.
 
+
+    **Kiểm lỗi dùng chung:** [Xem hướng dẫn tự sửa](#HELP-G10-B07-02).
     **Tóm tắt thuật ngữ và mục tiêu tự học**
 
     **Thuật ngữ:** Vectơ, giá vectơ, điểm đầu/điểm cuối, độ dài, cùng phương, cùng/ngược hướng, vectơ bằng nhau, vectơ-không.
@@ -228,19 +246,6 @@
     **Kiểm lại.** Độ dài độ dời 15 m nhỏ hơn quãng đường 21 m. Nếu hai chặng ngược hướng hoặc không vuông góc thì phải vẽ lại hình; không thể áp dụng phép tính này một cách máy móc.
 
 === "Lỗi thường gặp"
-
-    <span data-thpt-help-id="HELP-G10-B07-01" hidden></span>
-
-    ??? tip "Nhầm điểm đầu/cuối và chiều của vectơ"
-
-        <ol><li><strong>Tín hiệu:</strong> Em đổi nhầm điểm đầu và điểm cuối, hoặc coi độ dài bằng nhau là đủ để hai vectơ bằng nhau.</li><li><strong>Nguyên nhân:</strong> Nhầm các định nghĩa hoặc quy tắc vectơ đã học, không phải thiếu thêm công thức mới.</li><li><strong>Nguyên lí:</strong> Vẽ mũi tên từ chữ đứng trước sang chữ đứng sau; thử đảo AB thành BA.</li><li><strong>Tự sửa:</strong> Em tự vẽ một sơ đồ mũi tên nhỏ, xác định rõ điểm đầu/cuối, nói lý do rồi tự thử lại.</li><li><strong>Điểm quay lại:</strong> Trong Luyện tập, làm lại câu về vectơ ngược hướng trong hình bình hành, rồi đối chiếu câu Core về điều kiện hai vectơ bằng nhau.</li></ol><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
-
-    <span data-thpt-help-id="HELP-G10-B07-02" hidden></span>
-
-    ??? tip "Nhầm cùng phương, cùng hướng, bằng nhau; quên quy ước vectơ-không"
-
-        <ol><li><strong>Tín hiệu:</strong> Em thấy hai giá song song rồi kết luận ngay cùng hướng, hoặc quên trường hợp vectơ-không.</li><li><strong>Nguyên nhân:</strong> Nhầm các định nghĩa hoặc quy tắc vectơ đã học, không phải thiếu thêm công thức mới.</li><li><strong>Nguyên lí:</strong> So lần lượt phương, chiều, độ dài; dùng đúng quy ước KNTT về vectơ-không.</li><li><strong>Tự sửa:</strong> Em tự vẽ hai mũi tên, ghi phương–chiều–độ dài theo thứ tự và giải thích kết luận trước khi tự thử lại.</li><li><strong>Điểm quay lại:</strong> Trong Luyện tập, làm câu về hai vectơ cùng hướng nhưng khác độ dài, rồi câu về quy ước vectơ-không.</li></ol><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
-
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
