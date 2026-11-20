@@ -148,6 +148,8 @@ Phản xạ qua trục Oy đổi giá trị nào?
 
 > **TÍNH CHẤT — Góc liên quan và đối xứng.** Những góc đối xứng trên đường tròn tạo ra các quy luật về giá trị lượng giác. Vì sao hai góc khác nhau có thể có sin bằng nhau nhưng cos trái dấu? Cần nhớ phép đối xứng qua trục Oy trên đường tròn. Đối xứng của điểm (cosα,sinα) qua Oy biến α thành π−α; do đó sin(π−α)=sinα, cos(π−α)=−cosα. Với −α: cos chẵn, sin lẻ. Lý do hình học đi trước việc học thuộc dấu.
 
+Ngoài đối xứng bù và đối đã thấy, góc **phụ nhau** đổi vai trò hoành độ–tung độ: \(\sin(\tfrac{\pi}{2}-\alpha)=\cos\alpha\), \(\cos(\tfrac{\pi}{2}-\alpha)=\sin\alpha\). Góc hơn kém \(\pi\) đưa điểm tới điểm đối diện trên đường tròn nên \(\sin(\pi+\alpha)=-\sin\alpha\), \(\cos(\pi+\alpha)=-\cos\alpha\); vì cả tử và mẫu đổi dấu nên \(\tan(\pi+\alpha)=\tan\alpha\) khi \(\cos\alpha\ne0\). Có thể tự kiểm với \(\alpha=\pi/6\). Đây là các quan hệ trong cùng bảng góc đặc biệt của SGK, không suy ra tan/cot tồn tại ở mọi góc.
+
 Chẳng hạn, α=π/6; góc 5π/6 đối xứng qua Oy nên sin(5π/6)=1/2, cos(5π/6)=−√3/2. Dùng điểm trên đường tròn thay vì nhớ hai bảng dấu.
 
 **Ví dụ**
@@ -175,6 +177,15 @@ Vẽ trục Ox và phản xạ trên đường tròn; làm lại Bài 20 và Bà
 Vì sao sin(u+v) không bằng sin u+sin v?
 
 > **CÔNG THỨC — Công thức cộng/trừ góc.** Hai góc cộng hoặc trừ nhau tạo ra công thức có thể suy từ hình học. Sin(u+v) có bằng sin u+sin v không? Để xác định điều đó, cần xét đường tròn đơn vị, tích vô hướng của hai vectơ đơn vị. Hiệu hai góc chi phối tích vô hướng: cos(u−v)=cosu cosv+sinu sinv. Thay v→−v suy ra cos(u+v)=cosu cosv−sinu sinv; các công thức sin tương ứng: sin(u±v)=sinu cosv±cosu sinv. Không tách sin một tổng bằng tổng các sin.
+
+Đối với **tang của tổng/hiệu**, chia công thức cộng của sin cho công thức cộng của cos:
+
+\[
+\tan(u+v)=\frac{\tan u+\tan v}{1-\tan u\,\tan v},\qquad
+\tan(u-v)=\frac{\tan u-\tan v}{1+\tan u\,\tan v}.
+\]
+
+Các dạng phân thức này chỉ dùng khi \(\cos u\ne0,\cos v\ne0\), đồng thời mẫu tương ứng khác \(0\) (tức \(\cos(u\pm v)\ne0\)); không triệt mẫu hay lấy tang của góc chưa xác định. Chẳng hạn \(\tan(\pi/3-\pi/4)=(\sqrt3-1)/(1+\sqrt3)=2-\sqrt3\), còn \(\tan(\pi/4+\pi/4)\) không xác định dù \(\tan(\pi/4)\) tồn tại.
 
 Chẳng hạn, Cos15°=cos(45°−30°)=√6/4+√2/4. Chọn phép trừ vì 15° không có trong bảng cơ bản nhưng 45°,30° thì có.
 
