@@ -4,11 +4,11 @@
 
 PACKET_ID: THPT-TOPIC15-SPATIAL-PARALLELISM-FULL-R04
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_SPATIAL_PARALLELISM_R04_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 7d133daacd85f0cdddf60fa76f2084de230bb621
-SOURCE_BLOB: 7d133daacd85f0cdddf60fa76f2084de230bb621
+ACADEMIC_SOURCE_BLOB: 89dd1b775c782bd2a8638560a2aa93d49b589eee
+SOURCE_BLOB: 89dd1b775c782bd2a8638560a2aa93d49b589eee
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_R04_AUTHORING_METADATA_20261116.md
 AUTHOR_METADATA_BLOB: e8d3d03c5a3a339eac9f68e41429fc0c8621de3c
 ORIGINAL_R02_SOURCE_BLOB: ab4bd6a9f40b4925da35b725ccf396cd3c4eae9b
@@ -20,7 +20,7 @@ PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
 P2: 0
-AUTHOR_SIGNOFF: TOP15_R04_20261118_RECAP_SOP_Q18_6579363666f07f13cf5c7e407b311a08f1e700e2
+AUTHOR_SIGNOFF: TOP15_G11_T1_B10_B14_FULL_KNOWLEDGE_89dd1b775c782bd2a8638560a2aa93d49b589eee
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
@@ -106,3 +106,12 @@ ASSESSMENT_Q16: Public replay eight stems visible, không key/hint/đúng-sai/AI
 
 ## 20/11/2026 — owner editorial ΔA spatial parallelism statements
 - Current learner `7d133daacd85f0cdddf60fa76f2084de230bb621`, previous `6579363666f07f13cf5c7e407b311a08f1e700e2` in historical Git. Three `ĐỊNH LÝ / DẤU HIỆU` compound labels for triangle Thales, line-plane and plane-plane parallelism are now the concise formal `ĐỊNH LÝ —` with original descriptive names unchanged. All non-collinear/coplanarity/exclusion hypotheses stay in statement body; unchanged 22 worked examples, Practice item IDs/keys/rubrics, SVG and Q16. Targeted Q03/PED label self-QA, no new academic-review or RELEASE verdict.
+
+
+## 20/11 — CĐ15 Full Knowledge SGK KNTT Toán 11 Tập Một B10–B14
+
+- Sole current student-facing learner Git blob `89dd1b775c782bd2a8638560a2aa93d49b589eee`, immediately previous source `7d133daacd85f0cdddf60fa76f2084de230bb621`. Primary S1 chapter IV B10 pp70–77, B11 pp78–83, B12 pp84–87, B13 pp88–94, B14 pp95–101 printed according to owner source snapshot `e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b` and web-readable publisher book sections SGKVN B13/B14 (not new PDF screenshot verification). Read all 22 lesson/outcome narratives, preserved correct incumbent concepts, worked examples, immediate try and D6 and all five source diagrams.
+- DELTA_C academic material genuinely missing: TOP15-O16 strengthened plane transversal property: when third plane intersects one of two parallel planes, it intersects the other with parallel intersection lines. TOP15-O17 full Thalès spatial theorem (3 pairwise distinct parallel planes, two transversals, matching segment ratios with nonzero denominators), AND definition/properties of prism/hình hộp: congruent parallel polygon bases, equal parallel lateral edges, parallelogram side faces, tilted prism permitted. TOP15-O20 preservation of ratios of two nondegenerate parallel segments under parallel projection. TOP15-O21 image of circle is ellipse under nondegenerate restriction, possibility of degeneration to segment and distinction parallel vs perspective central projection. All additions include conditions, derivations and standalone fully worked examples.
+- Mathematical tests: P:z=0,Q:z=4,R:x+y=1 give parallel intersections x+y=1,z=0 /z=4, shared direction (1,-1,0). 3 planes z=0,2,5 cut lines d=(0,0,t),e=(t,2,2t) in segments 2,3 vs sqrt5,1.5sqrt5 -> ratio 2/3 both. Triangular prism A(0,0,0),B(2,0,0),C(0,3,0) translated by (1,0,4) yields equal lateral vectors, parallel bases each area3. Projection T(x,y,z)=(x-z,y,0) preserves ratio 2:4 of segments AB/CD on x direction. Circular locus x=0,y²+z²=4 projected along v=(1,0,2) to z=0 gives x'=-z/2 and image 4x'²+y'²=4 ellipse semi-axes 1,2. All conditions checked algebraically; do not treat diagram reading as proof.
+- PED: why each theorem is needed, core explanation and geometrical interpretation before formulas, exactly matching theorem hypotheses, worked examples teach choosing method and failure modes, original 22 in-lesson self tries/voluntary Đối chiếu untouched. FULL KNOWLEDGE source-locked AUTHOR_SELF_VERIFIED Q01–Q18 version 3.2.0, P0=0 P1=0 within current AUTHORING academic/PED scope. This is not independent NotebookLM new full-Topic review or browser/RELEASE approval.
+- Q15/Q16 preserved: `# Luyện tập`→end `# Tự kiểm tra` byte-exact with previous learner source; 22 lessons/outcomes, 89 public canonical unique (40 SGK +22 Topic First Try +22 Topic Practice +5 Written), 8 question-only public replay selfchecks, five source SVG unchanged. No new private RD1, official Mastery/Final Submit, Firebase/website, merge or deploy.
