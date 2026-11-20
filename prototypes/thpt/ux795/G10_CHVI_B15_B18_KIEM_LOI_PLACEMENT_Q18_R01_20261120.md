@@ -9,10 +9,10 @@
 
 | LESSON | PREVIOUS_SOURCE_BLOB (Git) | CORRECTED_SOURCE_BLOB (Git) | HELP đã chuyển | D6 tổng quát còn |
 |---|---|---|---:|---:|
-| B15 | `7f6448acf6e127b6dc40f3e34f155f151bc7d23b` | `f83a6666c8a2657834b13d3ec99a3d7358ff34f6` | 5 | 0 |
-| B16 | `b8c808e62e954991004df44db4c69fe9189a949d` | `eb27ad2ebb89e78bd54cd310030a5c8322282468` | 5 | 0 |
-| B17 | `a919754501790373425ef20c9e6ab6b4aa9e79f1` | `d8b5d7d21b52bf784644abe27ec8029ebf4e8903` | 5 | 0 |
-| B18 | `6ddb8a132aab48ee8a6e2c70bb2b8ce0bfb68af8` | `6c9ab8fb893ea533c66c8e6848ae0494362ef8ea` | 4 | 0 |
+| B15 | `7f6448acf6e127b6dc40f3e34f155f151bc7d23b` | `ee38fdfeddc78a22a527a6a7449347f86eeee422` | 5 | 0 |
+| B16 | `b8c808e62e954991004df44db4c69fe9189a949d` | `190f351516932caf0b8a417132f15e7915f79993` | 5 | 0 |
+| B17 | `a919754501790373425ef20c9e6ab6b4aa9e79f1` | `bbfc3fdb1e2a5e153bfe20f933fbf8844263552a` | 5 | 0 |
+| B18 | `6ddb8a132aab48ee8a6e2c70bb2b8ce0bfb68af8` | `3d8b0ed45b606f608db4b2a55ecfa8a273a8c802` | 4 | 0 |
 
 ## G0–G2: Ma trận item–HELP sau chuyển
 
