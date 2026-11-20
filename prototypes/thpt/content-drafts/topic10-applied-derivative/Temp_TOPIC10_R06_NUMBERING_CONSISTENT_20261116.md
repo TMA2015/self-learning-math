@@ -604,6 +604,12 @@ Nếu rút gọn rồi tự điền điểm bị loại, đã đổi đồ thị
 
 Xét ví dụ: f=(2x+1)/(x−1)=2+3/(x−1) nên tâm I(1,2); TCD x=1, TCN y=2. Chọn phép tách vì chứng minh được đối xứng chứ không chỉ đo bằng mắt.
 
+Trong dạng phân thức này, hai tiệm cận không chỉ xác định **tâm** của đồ thị mà còn tạo thành hai **trục đối xứng**. Đặt tọa độ mới \(X=x-a\), \(Y=y-b\), khi đó \(XY=k\). Nếu phản xạ điểm \((X,Y)\) qua đường \(Y=X\), ta được \((Y,X)\); nếu phản xạ qua \(Y=-X\), ta được \((-Y,-X)\). Cả hai ảnh đều có tích tọa độ bằng \(k\), nên vẫn thuộc đồ thị. Đó là lý do hai đường phân giác của cặp tiệm cận vuông góc là hai trục đối xứng, không phải chính các đường tiệm cận.
+
+> **TÍNH CHẤT — Hai trục đối xứng của đồ thị phân thức bậc nhất trên bậc nhất.** Với \(f(x)=b+\dfrac{k}{x-a}\), \(a,b\in\mathbb R\), \(k\ne0\), miền \(x\ne a\), đồ thị có tâm \(I(a,b)\), hai tiệm cận \(x=a\), \(y=b\), và **hai trục đối xứng** là \(y-b=x-a\) cùng \(y-b=-(x-a)\). Với dạng \(\dfrac{mx+n}{px+q}\), chỉ dùng kết luận trên khi \(p\ne0\) và \(mq-pn\ne0\), rồi viết về dạng \(b+k/(x-a)\). Không kết luận một đồ thị bậc ba bất kỳ cũng có hai trục đối xứng.
+
+Chẳng hạn, \(f(x)=\dfrac{x+1}{x-2}=1+\dfrac{3}{x-2}\) có tâm \(I(2,1)\) và hai trục \(y-1=x-2\), \(y-1=-(x-2)\). Điểm \((3,4)\) thuộc đồ thị vì \((3-2)(4-1)=3\); phản xạ qua hai trục lần lượt cho \((5,2)\) và \((-1,0)\), cả hai cũng thỏa \((x-2)(y-1)=3\). Đây là cách tự kiểm tính đối xứng bằng phương trình thay vì chỉ đoán từ hình.
+
 **Ví dụ**
 
 **Đề bài:** Tìm tâm đối xứng của y=4−2/(x−3).
