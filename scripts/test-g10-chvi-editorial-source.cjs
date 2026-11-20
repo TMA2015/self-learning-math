@@ -81,8 +81,13 @@ for(const n of [15,16,17,18]){
   const f02=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(f02("PREVIOUS_B18_SOURCE_BLOB"),f18("CANDIDATE_B18_SOURCE_BLOB"),
    "B18 R02 must preserve published R01 source");
-  assert.equal(f02("CANDIDATE_B18_SOURCE_BLOB"),expected,
-   "B18 current source must match newly signed R02 Golden candidate");
+  const r03=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHVI_B18_OWNER_EDITORIAL_POLISH_R03_20261120.md"),"utf8");
+  const f03=k=>r03.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(f03("PREVIOUS_B18_SOURCE_BLOB"),f02("CANDIDATE_B18_SOURCE_BLOB"),
+   "B18 R03 must extend exact previously published R02");
+  assert.equal(f03("CANDIDATE_B18_SOURCE_BLOB"),expected,
+   "B18 latest source must match owner R03 editorial delta");
  }else{
   const receipt=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHVI_B15_OWNER_Q18_KNOWLEDGE_ENRICHMENT_20261119.md"),"utf8");
@@ -115,6 +120,13 @@ for(const n of [15,16,17,18]){
   const nowHelp=helpers(s),oldHelp=helpers(old);
   const normalized=list=>list.map(z=>{
    let body=z.body.replace(/\?\?\? tip "[^"]+"/,'??? tip "CANONICAL_D6"');
+   if(n===18){
+    // Only two exact owner-requested learner-copy removals are normalized.
+    // All mathematics, error diagnosis, corrections and canonical links stay
+    // protected by the unchanged per-HELP comparison below.
+    body=body.replaceAll(" Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.","")
+     .replaceAll("Luyện lại (không nhân bản câu):","Luyện lại:");
+   }
    if(n===16||n===17||n===18){
     // Allow only learner-specific G2 wording in self diagnosis and selected
     // return-to-original-TRY paths; preserve all original source mathematics,
