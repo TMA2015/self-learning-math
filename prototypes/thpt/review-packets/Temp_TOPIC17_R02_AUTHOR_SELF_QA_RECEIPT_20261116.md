@@ -9,8 +9,8 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 9c427674ea0263b8cf7e1e191f1f9a81c3261e91
-SOURCE_BLOB: 9c427674ea0263b8cf7e1e191f1f9a81c3261e91
+ACADEMIC_SOURCE_BLOB: b5e24f5d39e83df46ada64a5b5665af9e0888e2f
+SOURCE_BLOB: b5e24f5d39e83df46ada64a5b5665af9e0888e2f
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
 AUTHOR_METADATA_BLOB: 7d0f43a1ae6fb5ccce67baf3fda21ca4261f29d9
 ORIGINAL_R00_SOURCE_BLOB: baa6c6c575a4cf79187b2aebd2047b1cf872b983
@@ -132,3 +132,9 @@ A real learner dependency was found: Knowledge TOP17-O10 asked the student to �
 - **Q15/Q16 current direct structure check:** exactly 49 public canonical unique IDs =22 original G11 SGK +12 Topic FirstTry+12 Topic Practice+3 Topic Written, 57 total item placements because eight replay P IDs are reuse not new questions. 12/12 full standalone outcomes, 12 examples, 12 Vận dụng/Đối chiếu, **37 complete Practice**, 49 open+49 close optional disclosures, eight question-only public Self Check stems, one final S1 line. Zero public official Final Submit/Mastery or imported RD1; controlled platform remains RELEASE responsibility.
 - **Visual/model source drift:** B26/B27 **two** actual learner SVG placements on Git file SHA `26fb51f3af65ba7d86a2907f0eaff808d2d87532`/`a7bec7a20295d09ca6f32aae0e8910cef7bed9dc`. Current optional interactive HTML Git `cfb2bd522531167003eeae8e7342c6d1349ca425` vs historical signed `727c05896a9d9bf95385b54559faa22917f1510e`: direct blob diff contains **one nonfunctional MODEL_ID HTML comment** and **17 inserted CSS lines**; all original HTML/JS/formula/geometry bytes unchanged. `DELTA_A_UI` only, no CLAIM of integrated browser AP1–AP5 UAT. Original G11 SGK wrapper `afc8ec039213b87b4930f2d34d48c28d1fc6277f` on same branch; 22 referenced original IDs verified against wrapper separately.
 - **R00 prior READY Git** `359ff8026b193c37a6f9a98ea2344ecd1ff6c0c2` preserved byte-for-byte under `prototypes/thpt/release-queue/archive/THPT-TOPIC17-DISTANCE-VOLUME-FULL-R00_HISTORICAL_SIGNED_20261118.md`, old active ready removed. After this Q18/A1 one V2/current ready/REGISTER and exact HEAD Topic V2 CI shall be checked; no website RELEASE/merge/deploy authority from author QA.
+
+
+## 20/11/2026 — current source Q03/Q14/PED6 correction
+- Learner `b5e24f5d39e83df46ada64a5b5665af9e0888e2f`; historical `9c427674ea0263b8cf7e1e191f1f9a81c3261e91` unchanged in Git. Six physical-volume formal callouts now 4 formula / 2 method types with mathematically descriptive short titles; no numeric or model hypothesis changed.
+- TOP17-O10 optional frustum exploration previously showed all three outputs directly after instructing the student to calculate first. This source now has a visible self-try prompt and a closed `<details><summary>Đối chiếu</summary>` containing the same three verified results 48/84/144 cm³ and error recovery. No leaked result in visible question paragraph; prior S and S′ values only are given.
+- Targeted Q03/Q07/PED6 author verification: 6 labels, 1 additional opt-in disclosure; V=48(1+k+k²) for k=0,0.5,1 gives 48,84,144; no change to the 12 original canonical Practice stems/answers/rubrics, 12 other independent examples or RD1. The reveal-flow part is material PED Delta C, not disguised as pure Delta A. No new external NotebookLM PASS, full S1 audit or RELEASE claim.
