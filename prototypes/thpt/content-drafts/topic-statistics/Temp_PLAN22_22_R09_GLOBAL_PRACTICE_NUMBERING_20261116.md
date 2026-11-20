@@ -18,7 +18,7 @@ Một giá trị đọc từ dụng cụ có thể là **số gần đúng**, kh
 
 
 
-> **ĐỊNH NGHĨA · CÔNG THỨC — Sai số của số gần đúng**
+> **ĐỊNH NGHĨA — Sai số của số gần đúng**
 >
 > \[\Delta=|\bar a-a|,\qquad \delta_a=\frac{\Delta}{|a|}\quad(a\ne0).\] Nếu chỉ biết chặn \(d\), kết luận \(\Delta\le d\), không khẳng định \(\Delta=d\). Dữ liệu phải nêu đơn vị và vị trí làm tròn.
 
@@ -64,14 +64,14 @@ Khi cần mô tả một mẫu, **số trung bình** cho biết mức chia đề
 
 
 
-> **ĐỊNH NGHĨA · CÔNG THỨC — Trung bình và mốt mẫu**
+> **ĐỊNH NGHĨA — Trung bình và mốt mẫu**
 >
 > \[\bar x=\frac{x_1+\cdots+x_n}{n}=\frac{\sum f_iv_i}{\sum f_i}.\] Mốt là giá trị có tần số lớn nhất; có thể nhiều mốt khi các tần số lớn nhất bằng nhau và còn giá trị có tần số thấp hơn. **Ngoại lệ theo SGK:** với ít nhất hai giá trị phân biệt mà tất cả tần số bằng nhau, mẫu không có mốt. Dữ liệu định lượng dùng số trung bình cho mức chia đều, nhưng trung bình nhạy với giá trị bất thường.
 
 
 
 
-> **CHÚ Ý SGK — Mốt cho dữ liệu định tính.** Mốt không chỉ dành cho số đo. Với dữ liệu là **loại hoặc nhãn**, mốt là nhãn có tần số lớn nhất. Chẳng hạn, các lựa chọn A, B, B, C, B có mốt là **B**. Tần số của các nhãn phải được đếm trước; nếu nhiều nhãn phân biệt cùng tần số và không nhãn nào nổi trội, theo quy ước trên mẫu không có mốt.
+> **KIẾN THỨC CẦN GHI NHỚ — Mốt cho dữ liệu định tính.** Mốt không chỉ dành cho số đo. Với dữ liệu là **loại hoặc nhãn**, mốt là nhãn có tần số lớn nhất. Chẳng hạn, các lựa chọn A, B, B, C, B có mốt là **B**. Tần số của các nhãn phải được đếm trước; nếu nhiều nhãn phân biệt cùng tần số và không nhãn nào nổi trội, theo quy ước trên mẫu không có mốt.
 
 <!-- OUTCOME_REF: G10-B13-MEAN -->
 
@@ -106,7 +106,7 @@ Phải **sắp dãy theo thứ tự**. Trung vị là phần tử ở giữa khi
 
 
 
-> **ĐỊNH NGHĨA · QUY ƯỚC — Trung vị và tứ phân vị trên dãy thô**
+> **ĐỊNH NGHĨA — Trung vị và tứ phân vị trên dãy thô**
 >
 > Trước hết **sắp xếp dữ liệu**. Trung vị \(Me=Q_2\) là giá trị giữa (n lẻ) hoặc trung bình hai giá trị giữa (n chẵn). Theo cách chia nửa dãy KNTT: n lẻ **loại trung vị** rồi lấy trung vị hai nửa để có \(Q_1,Q_3\). Đây không phải nội suy trên bảng ghép nhóm.
 
@@ -146,7 +146,7 @@ Khoảng biến thiên \(R=x_{\max}-x_{\min}\) phản ánh độ trải từ đ�
 
 
 
-> **CÔNG THỨC · GHI NHỚ — Độ trải và hàng rào ngoại lệ**
+> **CÔNG THỨC — Độ trải và hàng rào ngoại lệ**
 >
 > \[R=x_{\max}-x_{\min},\quad IQR=Q_3-Q_1.\] Hàng rào tham khảo \(Q_1-1{,}5IQR\) và \(Q_3+1{,}5IQR\) giúp nhận diện điểm đáng xem xét, **không chứng minh quan sát bị sai**.
 
@@ -202,7 +202,7 @@ Hai nhóm cùng trung bình nhưng mức ổn định khác nhau. Làm thế nà
 
 
 
-> **CHÚ Ý SGK — Đại lượng phân tán dùng mẫu số \(n-1\).** Ngoài phương sai mô tả \(s^2\) chia cho \(n\), SGK Toán 10 tập 1 Bài 14 còn nêu \(\hat{s}^2=\frac{\sum_{i=1}^{n}(x_i-\bar x)^2}{n-1}\) khi \(n>1\). Đây là **đại lượng khác** chứ không được tự thay vào công thức \(s^2\) của bài. Với mẫu \(3,4,5\), ta có \(s^2=2/3\) trong khi \(\hat{s}^2=1\). Khi làm bài, đọc rõ đề yêu cầu đại lượng nào.
+> **KIẾN THỨC CẦN GHI NHỚ — Đại lượng phân tán dùng mẫu số \(n-1\).** Ngoài phương sai mô tả \(s^2\) chia cho \(n\), SGK Toán 10 tập 1 Bài 14 còn nêu \(\hat{s}^2=\frac{\sum_{i=1}^{n}(x_i-\bar x)^2}{n-1}\) khi \(n>1\). Đây là **đại lượng khác** chứ không được tự thay vào công thức \(s^2\) của bài. Với mẫu \(3,4,5\), ta có \(s^2=2/3\) trong khi \(\hat{s}^2=1\). Khi làm bài, đọc rõ đề yêu cầu đại lượng nào.
 
 <!-- OUTCOME_REF: G10-B14-VARIANCE -->
 
@@ -242,7 +242,7 @@ Khi có quá nhiều quan sát, gom thành các khoảng **trái đóng, phải 
 
 
 
-> **ĐỊNH NGHĨA · TÍNH CHẤT — Bảng tần số ghép nhóm**
+> **ĐỊNH NGHĨA — Bảng tần số ghép nhóm**
 >
 > Các nhóm dạng \([a_i,b_i)\) **trái đóng, phải mở**, không trùng và phủ các quan sát. Độ rộng \(h_i=b_i-a_i>0\); tần số \(f_i\) là số quan sát trong nhóm; \(\sum_i f_i=n\). Gán điểm biên vào một nhóm duy nhất.
 
@@ -291,7 +291,7 @@ Trung điểm \(c_i=(a_i+b_i)/2\) đại diện nhóm, không phải giá trị 
 
 
 
-> **CÔNG THỨC · GHI NHỚ — Trung điểm, trung bình và tần số tích lũy**
+> **CÔNG THỨC — Trung điểm, trung bình và tần số tích lũy**
 >
 > \[c_i=\frac{a_i+b_i}{2},\quad \bar x_g=\frac{\sum_i f_ic_i}{n},\quad F_i=\sum_{j\le i}f_j.\] \(\bar x_g\) là **ước lượng** từ trung điểm, không phải trung bình chính xác của dữ liệu thô.
 
@@ -340,7 +340,7 @@ Với bảng nhóm, tìm nhóm chứa vị trí \(p\) từ **tần số tích l�
 
 
 
-> **CÔNG THỨC · ĐIỀU KIỆN — Nội suy các phân vị của bảng ghép nhóm**
+> **CÔNG THỨC — Nội suy các phân vị của bảng ghép nhóm**
 >
 > \[Q_p\approx L+\frac{(p-F_{\rm trước})h}{f},\qquad f>0.\] Chọn \(p=n/4,n/2,3n/4\) cho \(Q_1,Me,Q_3\); trước đó phải định vị đúng lớp chứa p bằng tần số tích lũy. Đây là **ước lượng**, không phải dữ liệu gốc.
 
@@ -383,7 +383,7 @@ Với nhóm **cùng độ rộng**, nhóm tần số lớn nhất là nhóm mố
 
 
 
-> **CÔNG THỨC · ĐIỀU KIỆN — Mốt ước lượng cho nhóm cùng độ rộng**
+> **CÔNG THỨC — Mốt ước lượng cho nhóm cùng độ rộng**
 >
 > \[M_o\approx L+\frac{f_m-f_-}{(f_m-f_-)+(f_m-f_+)}\,h.\] Trong đó \(L\) là cận dưới nhóm mốt, \(h>0\) là độ rộng nhóm, \(f_m\) là tần số nhóm mốt, \(f_-\) và \(f_+\) lần lượt là tần số nhóm liền trước và liền sau. **Quy ước biên:** Nếu nhóm mốt đứng đầu thì lấy \(f_-=0\); nếu đứng cuối thì lấy \(f_+=0\). Chỉ áp dụng cho các nhóm **cùng độ rộng**, nhóm mốt được chọn rõ và **mẫu số dương**; nếu nhiều nhóm cùng đạt cực đại cần xét lại tình huống thay vì thế máy móc.
 
@@ -430,7 +430,7 @@ Khi dữ liệu chỉ còn nhóm, ta không biết số nhỏ nhất/lớn nhấ
 
 
 
-> **GHI NHỚ · GIỚI HẠN — Khoảng biến thiên ghép nhóm**
+> **KIẾN THỨC CẦN GHI NHỚ — Khoảng biến thiên ghép nhóm**
 >
 > \[R_g=b_k-a_1\] là **độ phủ theo biên các nhóm không rỗng** từ nhóm đầu đến nhóm cuối, không nhất thiết bằng khoảng biến thiên thực của các quan sát.
 
@@ -473,7 +473,7 @@ Vì sao muốn mô tả nửa mẫu ở giữa phải dùng hai tứ phân vị 
 
 
 
-> **CÔNG THỨC · GHI NHỚ — IQR ước lượng của dữ liệu ghép nhóm**
+> **CÔNG THỨC — IQR ước lượng của dữ liệu ghép nhóm**
 >
 > \[IQR_g=Q_{3,g}-Q_{1,g}.\] Hai tứ phân vị được **nội suy** từ tần số tích lũy; không dùng hàng rào nhóm để khẳng định chắc chắn một cá thể là ngoại lệ nếu đã mất dữ liệu thô.
 
@@ -516,7 +516,7 @@ Dữ liệu gốc đã ẩn nên dùng trung điểm \(c_i\) để ước lượ
 
 
 
-> **CÔNG THỨC · ĐIỀU KIỆN — Phương sai và độ lệch chuẩn ghép nhóm**
+> **CÔNG THỨC — Phương sai và độ lệch chuẩn ghép nhóm**
 >
 > \[s_g^2=\frac{\sum_i f_i(c_i-\bar x_g)^2}{n}=\frac{\sum_i f_ic_i^2}{n}-\bar x_g^2,\qquad s_g=\sqrt{s_g^2}.\] Trung điểm là đại diện nên đây là **ước lượng**, không đo được độ lệch thật trong mỗi nhóm.
 
@@ -562,7 +562,7 @@ Hai mẫu có cùng trung bình vẫn có độ ổn định khác nhau. Trên c
 
 
 
-> **TÍNH CHẤT · GHI NHỚ — So sánh hai phân phối có cùng trung bình**
+> **TÍNH CHẤT — So sánh hai phân phối có cùng trung bình**
 >
 > Hai mẫu có thể có \(\bar x_g\) bằng nhau mà \(s_g^2\) khác nhau. Mẫu có độ lệch chuẩn nhỏ hơn **ít phân tán hơn theo thước đo và cách nhóm đang dùng**, không mặc nhiên tốt hơn hay gây ra kết quả nào. Chỉ so khi đơn vị/thang đo/cách nhóm hợp lý.
 
