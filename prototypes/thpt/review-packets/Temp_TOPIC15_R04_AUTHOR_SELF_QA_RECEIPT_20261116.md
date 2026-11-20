@@ -7,8 +7,8 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_SPATIAL_PARALLELISM_R04_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 6579363666f07f13cf5c7e407b311a08f1e700e2
-SOURCE_BLOB: 6579363666f07f13cf5c7e407b311a08f1e700e2
+ACADEMIC_SOURCE_BLOB: 7d133daacd85f0cdddf60fa76f2084de230bb621
+SOURCE_BLOB: 7d133daacd85f0cdddf60fa76f2084de230bb621
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_R04_AUTHORING_METADATA_20261116.md
 AUTHOR_METADATA_BLOB: e8d3d03c5a3a339eac9f68e41429fc0c8621de3c
 ORIGINAL_R02_SOURCE_BLOB: ab4bd6a9f40b4925da35b725ccf396cd3c4eae9b
@@ -102,3 +102,7 @@ ASSESSMENT_Q16: Public replay eight stems visible, không key/hint/đúng-sai/AI
 - **Model source SHA drift** analyzed byte-by-byte via Git: original `3f3c75765b6cddcaa53994027c45e79701d4d840` was 100 lines, current `cf6510d5d964958982fae3ebce5823e35aeac639` is 117 lines. Diff inserts only 17 CSS lines (Golden UI colors, sizing, focus/accessibility styles), leaving all original HTML and the Canvas/JS coordinate and line/plane logic byte-identical. Current Q18/A1/V2/ready must pin **actual CSS-modified blob** `cf6510d5d964958982fae3ebce5823e35aeac639`, retaining original blob SHA as historical UI snapshot. This is `DELTA_A_UI` independent of the academic O21/W02 correction, requires browser AP check by RELEASE, **not** new math/NotebookLM review. No claim of model preview QA on real devices.
 - **Curriculum evidence still intact**: 22/22 Knowledge/outcomes/worked examples, 67 Practice (40 original SGK source-owned, 22 Topic Practice, 5 Topic Written), 22 First Tries, 8 question-only PUBLIC Selfchecks from existing P IDs, **89 unique canonical IDs**, 90/90 optional details, 5 original SVG blobs direct read (no change). Source S1 original G11 ChIV owner PR #705 actual wrapper SHA `e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b` verified on sibling branch; integration SOURCE resolution on combined HEAD is independent RELEASE R1 gate.
 - **Historical READY** R02 `6aafb53867cb699a7b270aecb9e165be3b6cc1b1` preserved byte-identically at `archive/THPT-TOPIC15-SPATIAL-PARALLELISM-FULL-R02_HISTORICAL_SIGNED_20261118.md`; current R04 alone in active ready/REGISTER. SOURCE student update / Q18 / A1 / one V2 / ready / REGISTER source checks and exact-head Topic Intake CI to be revalidated, not assumed. No official Topic Readiness, protected RD1, Mastery or merge/deploy.
+
+
+## 20/11/2026 — owner editorial ΔA spatial parallelism statements
+- Current learner `7d133daacd85f0cdddf60fa76f2084de230bb621`, previous `6579363666f07f13cf5c7e407b311a08f1e700e2` in historical Git. Three `ĐỊNH LÝ / DẤU HIỆU` compound labels for triangle Thales, line-plane and plane-plane parallelism are now the concise formal `ĐỊNH LÝ —` with original descriptive names unchanged. All non-collinear/coplanarity/exclusion hypotheses stay in statement body; unchanged 22 worked examples, Practice item IDs/keys/rubrics, SVG and Q16. Targeted Q03/PED label self-QA, no new academic-review or RELEASE verdict.
