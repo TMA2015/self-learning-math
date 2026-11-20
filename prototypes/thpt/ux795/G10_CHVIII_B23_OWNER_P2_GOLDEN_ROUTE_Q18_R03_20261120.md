@@ -4,7 +4,7 @@
 **STANDARD:** SLM-THPT-QUALITY-ONE v3.2.0 Q01–Q18, approved Golden R4 and original G0→G5. NO new standard or test suite.
 **SOURCE_PATH:** docs/thpt-preview/sgk/chuong-viii/bai-23.md, the ONE canonical learner source.
 **R03_PREVIOUS_SOURCE_BLOB:** `ed7a35d6650ecbe59f01e824295174541c4e3b49`
-**R03_CORRECTED_SOURCE_BLOB:** `f21b30e139c54d0c099f664d37af253d5d41c175`
+**R03_CORRECTED_SOURCE_BLOB:** `e0c20af522b61cb69b33ad5f7d4d6bde8c011f47`
 **R01_SNAPSHOT:** 8e94c245250b77b6f7670345f9edcb7b85e958ac, untouched R01.
 **R02_SNAPSHOT:** ed7a35d6650ecbe59f01e824295174541c4e3b49, untouched R02.
 **DELTA:** DELTA_A_UI only. All math, answer/rationale, Q15 IDs, D6, links, source SVG and Q16 unchanged.
@@ -19,7 +19,7 @@ Approved B22 has four blue rounded tabs, active blue selected state, pale blue s
 
 One originally intended shared-router change was evaluated but NOT retained because it touched shared runtime and triggered wider historic unrelated red gates (B17 source receipt; B19 D6/G10 preview; stale B23 figure single-count assertion that contradicts the owner's dual-placement rule). No other lesson or global gate was silently rewritten or disabled.
 
-R03 instead adds a narrowly guarded display initializer **inside the ONE B23 canonical Markdown**: only on B23 with the existing TRY01 marker, it assigns the existing Golden article class thpt-g10-chiv-golden, inserts the exact already-approved four h2.thpt-g10-section-heading titles, and synchronizes slm-g10-active-tab based on the four existing Material radio inputs. **ALL visual CSS** comes from the unchanged accepted B22 stylesheet docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css. No cloned theme, no new Golden runtime or global DOM mutation; no assessment, Firebase, Mastery, RD1, Final Submit, THCS, other SGK or Topic route touched.
+R03 instead adds a narrowly guarded display initializer **inside the ONE B23 canonical Markdown**: only on B23 with a unique page-level display marker (never repeats the canonical TRY01 ID in script source), it assigns the existing Golden article class thpt-g10-chiv-golden, inserts the exact already-approved four h2.thpt-g10-section-heading titles, and synchronizes slm-g10-active-tab based on the four existing Material radio inputs. **ALL visual CSS** comes from the unchanged accepted B22 stylesheet docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css. No cloned theme, no new Golden runtime or global DOM mutation; no assessment, Firebase, Mastery, RD1, Final Submit, THCS, other SGK or Topic route touched.
 
 Removed competing R02-only details/question/tip/solution CSS, removed redundant lead and error subheadings, aligned discovery h3 to 1.1–1.5, knowledge 2.1–2.3, worked examples 3.1–3.3. Reuse the six existing D6 headings 4.1–4.6, the genuine three example solution containers and two references to immutable source SVG G10_B23_ADD_MULTIPLY_CHOICES_R02.svg.
 
