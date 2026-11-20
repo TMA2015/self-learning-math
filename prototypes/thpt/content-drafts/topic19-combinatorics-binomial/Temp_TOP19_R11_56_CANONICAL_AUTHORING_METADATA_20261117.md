@@ -2,15 +2,15 @@
 
 PACKET_ID: TOP19-COMBINATORICS-BINOMIAL-R11-20261117
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 STATE: CURRENT_Q15_Q18_AUTHOR_VERIFIED_READY_CUSTODY
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R10_LANGUAGE_LOCAL_REFERENTS_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: 2cf19a19fc0f616b780846d41f7a1b9325363b80
+ACADEMIC_SOURCE_BLOB: 2809816539e438726858daf18d7efb1d751ea7f7
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC19_R11_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md
-REVIEW_RECEIPT_BLOB: 044b74b1cd45fc0cacf3bbcd343574e6a59ee1ef
+REVIEW_RECEIPT_BLOB: e3faacd20740cc7806677ecae3577bf3ad4efcaa
 R11_Q15_MATRIX_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_Q15_56_CANONICAL_SOURCE_LOCKED_CANDIDATE_MATRIX_20261117.md
 R11_Q15_MATRIX_BLOB: a127267978ec61c857d5cc0cbcd8cb3f1dcc2f1e
 BASELINE_R09_SIGNED_SOURCE_BLOB: 2b46a2c92004f2c030d030e2b2021a34157bc95d
@@ -120,3 +120,8 @@ The effective learner source is **the existing original filename at ACADEMIC_SOU
 
 
 **19/11 owner ΔA:** active learner `2cf19a19fc0f616b780846d41f7a1b9325363b80`, Q18 `044b74b1cd45fc0cacf3bbcd343574e6a59ee1ef`, 14/14 outcomes and 56 canonical item identities preserved; CONTENT_READY maintained.
+
+
+## 20/11 current full S1 Knowledge B23–B25
+
+Learner `2809816539e438726858daf18d7efb1d751ea7f7`, signed author Q18 `e3faacd20740cc7806677ecae3577bf3ad4efcaa`, 14/14 outcomes, 56 public canonical/7 public Selfcheck replays. Delta C improves variable branch counting O02, disjoint digit cases O04, Pascal/combination identity O07, Newton combinatorial coefficients O09 and polynomial signs O10. Practice/Selfcheck byte-identical. Q01–Q18 v3.2 owner-effective, no new independent NotebookLM/RELEASE.
