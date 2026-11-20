@@ -29,6 +29,7 @@
         **Vì sao:** 2−(−3)=5 và −1−2=−3. Đảo điểm đầu/cuối làm vectơ đối.
 
 
+    <a id="HELP-G10-B10-01" aria-hidden="true"></a>
     <span id="help-g10-b10-01" data-thpt-help-id="HELP-G10-B10-01" hidden></span>
 
     ??? tip "Kiểm lỗi"
@@ -95,6 +96,7 @@
         **Vì sao:** M: ((−2+4)/2;(4+0)/2)=(1;2); G: ((−2+4+1)/3;(4+0+5)/3)=(1;3).
 
 
+    <a id="HELP-G10-B10-02" aria-hidden="true"></a>
     <span id="help-g10-b10-02" data-thpt-help-id="HELP-G10-B10-02" hidden></span>
 
     ??? tip "Kiểm lỗi"
@@ -121,6 +123,7 @@
         **Vì sao:** vận tốc theo bờ \(\vec v_{\mathrm{bờ}}=(3;5)\,\mathrm{m/s}\). Thành phần hướng Bắc \(5\,\mathrm{m/s}\) quyết định thời gian \(t=60/5=12\,\mathrm s\); do đó độ trôi ngang \(3\cdot12=36\,\mathrm m\). Độ lớn vận tốc thực \(\sqrt{34}\,\mathrm{m/s}\) **không phải** thành phần qua sông; không lấy \(60/\sqrt{34}\).
 
 
+    <a id="HELP-G10-CHIV-RIVER-TR01" aria-hidden="true"></a>
     <span id="help-g10-chiv-river-tr01" data-thpt-help-id="HELP-G10-CHIV-RIVER-TR01"></span>
 
     ??? tip "Kiểm lỗi"
