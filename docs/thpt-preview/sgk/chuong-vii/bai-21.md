@@ -47,6 +47,18 @@
 
         **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
+
+    <span id="help-g10-chvii-try13" data-thpt-help-id="HELP-G10-CHVII-TRY13"></span>
+
+    ??? tip "Kiểm lỗi"
+
+        <ol>
+        <li><strong>Nhận diện lỗi:</strong> Từ tâm I(−2;1) và bán kính 3 lại viết (x−2)²+(y−1)²=3.</li>
+        <li><strong>Tự chẩn đoán:</strong> Điểm (1;1) cách tâm (−2;1) đúng 3 đơn vị; phương trình em viết có nhận điểm đó không?</li>
+        <li><strong>Kiến thức gốc:</strong> Phương trình diễn đạt **IM bằng bán kính**: tọa độ M trừ tọa độ tâm trong mỗi ngoặc, và vế phải là bình phương bán kính.</li>
+        <li><strong>Tự sửa:</strong> Sửa thành (x+2)²+(y−1)²=9; thử điểm (1;1) cho tổng hai bình phương bằng 9.</li>
+        <li><strong>Luyện lại:</strong> <a href="../luyen-tap/?item=THPT-G10-B21-C01">Luyện Core 21-C01</a></li>
+        </ol>
     <span id="thpt-g10-chvii-try14" data-thpt-first-try-id="THPT-G10-CHVII-TRY14" data-outcome-id="G10-B21-CIRCLE_GENERAL" data-thpt-help-ref="HELP-G10-CHVII-TRY14"></span>
 
     #### 1.2.2. Hoàn thành bình phương để tìm ngược tâm và bán kính
@@ -65,6 +77,18 @@
 
         **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
+
+    <span id="help-g10-chvii-try14" data-thpt-help-id="HELP-G10-CHVII-TRY14"></span>
+
+    ??? tip "Kiểm lỗi"
+
+        <ol>
+        <li><strong>Nhận diện lỗi:</strong> Tìm tâm (−3;2) hoặc gọi R=5 từ phương trình x²+y²−6x+4y+8=0.</li>
+        <li><strong>Tự chẩn đoán:</strong> Em hãy viết x²−6x=(x−3)²−9 và y²+4y=(y+2)²−4; thử khai triển lại để tìm dấu sai.</li>
+        <li><strong>Kiến thức gốc:</strong> Tâm đọc từ các ngoặc sau khi hoàn thành bình phương; phải đổi dấu số trong ngoặc và lấy **căn bậc hai dương** của vế phải.</li>
+        <li><strong>Tự sửa:</strong> Ta được (x−3)²+(y+2)²=5: tâm (3;−2), bán kính √5; khai triển kiểm lại phương trình cũ.</li>
+        <li><strong>Luyện lại:</strong> <a href="../luyen-tap/?item=THPT-G10-B21-C02">Luyện Core 21-C02</a></li>
+        </ol>
     <span id="thpt-g10-chvii-try15" data-thpt-first-try-id="THPT-G10-CHVII-TRY15" data-outcome-id="G10-B21-CIRCLE_TANGENT" data-thpt-help-ref="HELP-G10-CHVII-TRY15"></span>
 
     #### 1.2.3. Dựng tiếp tuyến từ bán kính tại tiếp điểm
@@ -87,6 +111,18 @@
 
         **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
+
+    <span id="help-g10-chvii-try15" data-thpt-help-id="HELP-G10-CHVII-TRY15"></span>
+
+    ??? tip "Kiểm lỗi"
+
+        <ol>
+        <li><strong>Nhận diện lỗi:</strong> Dùng IM như một vectơ chỉ phương hoặc không kiểm M có thuộc đường tròn không.</li>
+        <li><strong>Tự chẩn đoán:</strong> Với I(1;−1), R=5, M(4;3): IM²=9+16 có bằng 25 không? IM=(3;4) vuông góc hay nằm trên tiếp tuyến?</li>
+        <li><strong>Kiến thức gốc:</strong> Tại điểm M nằm trên đường tròn, bán kính IM là **pháp tuyến khác 0** của tiếp tuyến, nên phải lập đường qua M với pháp tuyến ấy.</li>
+        <li><strong>Tự sửa:</strong> Kiểm M thuộc đường; viết 3(x−4)+4(y−3)=0, tức 3x+4y−24=0 rồi thử lại tọa độ M.</li>
+        <li><strong>Luyện lại:</strong> <a href="../luyen-tap/?item=THPT-G10-B21-P02">Luyện Practice 21-P02</a></li>
+        </ol>
     <span id="thpt-g10-chvii-try16" data-thpt-first-try-id="THPT-G10-CHVII-TRY16" data-outcome-id="G10-B21-CIRCLE_THROUGH_POINTS" data-thpt-help-ref="HELP-G10-CHVII-TRY16"></span>
 
     #### 1.2.4. Tại sao cần ba điểm không thẳng hàng?
@@ -105,6 +141,18 @@
 
         **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
+
+    <span id="help-g10-chvii-try16" data-thpt-help-id="HELP-G10-CHVII-TRY16"></span>
+
+    ??? tip "Kiểm lỗi"
+
+        <ol>
+        <li><strong>Nhận diện lỗi:</strong> Lấy trung điểm AB làm tâm rồi quên kiểm điểm C thứ ba.</li>
+        <li><strong>Tự chẩn đoán:</strong> Với A(0;0), B(2;0), C(0;2), điểm (1;0) có cách đều ba điểm không? Hãy tìm thêm trung trực AC.</li>
+        <li><strong>Kiến thức gốc:</strong> Tâm đường tròn qua **ba điểm không thẳng hàng** nằm ở giao hai đường trung trực AB và AC.</li>
+        <li><strong>Tự sửa:</strong> Tìm trung trực x=1 và y=1, được I(1;1); ba bình phương khoảng cách đến A,B,C đều bằng 2.</li>
+        <li><strong>Luyện lại:</strong> <a href="../luyen-tap/?item=THPT-G10-B21-P04">Luyện Practice 21-P04</a></li>
+        </ol>
     <span id="thpt-g10-chvii-try17" data-thpt-first-try-id="THPT-G10-CHVII-TRY17" data-outcome-id="G10-B21-LINE_CIRCLE_POSITION" data-thpt-help-ref="HELP-G10-CHVII-TRY17"></span>
 
     #### 1.2.5. Khi nào đường thẳng cắt, tiếp xúc hoặc ở ngoài đường tròn?
@@ -123,6 +171,18 @@
 
         **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
+
+    <span id="help-g10-chvii-try17" data-thpt-help-id="HELP-G10-CHVII-TRY17"></span>
+
+    ??? tip "Kiểm lỗi"
+
+        <ol>
+        <li><strong>Nhận diện lỗi:</strong> Kết luận hai giao điểm khi khoảng cách tâm đến đường thẳng đúng bằng R.</li>
+        <li><strong>Tự chẩn đoán:</strong> Với I(1;2), R=3 và d:y=−1, điểm nào trên d gần tâm nhất? Có thể có điểm thứ hai cùng cách I đúng 3 không?</li>
+        <li><strong>Kiến thức gốc:</strong> So khoảng cách ngắn nhất h với R: **h<R** cho hai điểm, **h=R** cho một tiếp điểm, **h>R** thì không gặp đường tròn.</li>
+        <li><strong>Tự sửa:</strong> Chân vuông góc T(1;−1) cách I đúng 3; các điểm khác trên d xa I hơn, nên d tiếp xúc tại T.</li>
+        <li><strong>Luyện lại:</strong> <a href="../luyen-tap/?item=THPT-G10-B21-P03">Luyện Practice 21-P03</a></li>
+        </ol>
     ### Thuật ngữ, kiến thức và kỹ năng
 
     **Thuật ngữ:** Tâm, bán kính, phương trình đường tròn, dạng tổng quát, tiếp tuyến, tiếp điểm và vị trí tương đối.
@@ -215,71 +275,11 @@
 
 === "Lỗi thường gặp"
 
-    Khi học phương trình đường tròn, cần tách rõ ba câu hỏi: **đã có bán kính dương chưa**, **điểm có thuộc đường tròn không**, và **đường đang xét là tiếp tuyến tại một điểm hay một đường thẳng cho trước**. Mỗi tình huống sau có một lỗi cụ thể, dữ kiện và cách sửa độc lập.
-
-    <span id="help-g10-chvii-try13" data-thpt-help-id="HELP-G10-CHVII-TRY13"></span>
-
-    ??? tip "4.1. Nhầm dấu tọa độ tâm hoặc bình phương bán kính"
-
-        <ol>
-        <li><strong>Nhận diện lỗi:</strong> Từ tâm I(−2;1) và bán kính 3 lại viết (x−2)²+(y−1)²=3.</li>
-        <li><strong>Tự chẩn đoán:</strong> Điểm (1;1) cách tâm (−2;1) đúng 3 đơn vị; phương trình em viết có nhận điểm đó không?</li>
-        <li><strong>Kiến thức gốc:</strong> Phương trình diễn đạt **IM bằng bán kính**: tọa độ M trừ tọa độ tâm trong mỗi ngoặc, và vế phải là bình phương bán kính.</li>
-        <li><strong>Tự sửa:</strong> Sửa thành (x+2)²+(y−1)²=9; thử điểm (1;1) cho tổng hai bình phương bằng 9.</li>
-        <li><strong>Luyện lại:</strong> <a href="../luyen-tap/?item=THPT-G10-B21-C01">Luyện Core 21-C01</a></li>
-        </ol>
-
-    <span id="help-g10-chvii-try14" data-thpt-help-id="HELP-G10-CHVII-TRY14"></span>
-
-    ??? tip "4.2. Sai dấu khi hoàn thành bình phương"
-
-        <ol>
-        <li><strong>Nhận diện lỗi:</strong> Tìm tâm (−3;2) hoặc gọi R=5 từ phương trình x²+y²−6x+4y+8=0.</li>
-        <li><strong>Tự chẩn đoán:</strong> Em hãy viết x²−6x=(x−3)²−9 và y²+4y=(y+2)²−4; thử khai triển lại để tìm dấu sai.</li>
-        <li><strong>Kiến thức gốc:</strong> Tâm đọc từ các ngoặc sau khi hoàn thành bình phương; phải đổi dấu số trong ngoặc và lấy **căn bậc hai dương** của vế phải.</li>
-        <li><strong>Tự sửa:</strong> Ta được (x−3)²+(y+2)²=5: tâm (3;−2), bán kính √5; khai triển kiểm lại phương trình cũ.</li>
-        <li><strong>Luyện lại:</strong> <a href="../luyen-tap/?item=THPT-G10-B21-C02">Luyện Core 21-C02</a></li>
-        </ol>
-
-    <span id="help-g10-chvii-try15" data-thpt-help-id="HELP-G10-CHVII-TRY15"></span>
-
-    ??? tip "4.3. Dùng bán kính làm hướng của tiếp tuyến"
-
-        <ol>
-        <li><strong>Nhận diện lỗi:</strong> Dùng IM như một vectơ chỉ phương hoặc không kiểm M có thuộc đường tròn không.</li>
-        <li><strong>Tự chẩn đoán:</strong> Với I(1;−1), R=5, M(4;3): IM²=9+16 có bằng 25 không? IM=(3;4) vuông góc hay nằm trên tiếp tuyến?</li>
-        <li><strong>Kiến thức gốc:</strong> Tại điểm M nằm trên đường tròn, bán kính IM là **pháp tuyến khác 0** của tiếp tuyến, nên phải lập đường qua M với pháp tuyến ấy.</li>
-        <li><strong>Tự sửa:</strong> Kiểm M thuộc đường; viết 3(x−4)+4(y−3)=0, tức 3x+4y−24=0 rồi thử lại tọa độ M.</li>
-        <li><strong>Luyện lại:</strong> <a href="../luyen-tap/?item=THPT-G10-B21-P02">Luyện Practice 21-P02</a></li>
-        </ol>
-
-    <span id="help-g10-chvii-try16" data-thpt-help-id="HELP-G10-CHVII-TRY16"></span>
-
-    ??? tip "4.4. Chỉ dùng trung điểm hai điểm để tìm tâm"
-
-        <ol>
-        <li><strong>Nhận diện lỗi:</strong> Lấy trung điểm AB làm tâm rồi quên kiểm điểm C thứ ba.</li>
-        <li><strong>Tự chẩn đoán:</strong> Với A(0;0), B(2;0), C(0;2), điểm (1;0) có cách đều ba điểm không? Hãy tìm thêm trung trực AC.</li>
-        <li><strong>Kiến thức gốc:</strong> Tâm đường tròn qua **ba điểm không thẳng hàng** nằm ở giao hai đường trung trực AB và AC.</li>
-        <li><strong>Tự sửa:</strong> Tìm trung trực x=1 và y=1, được I(1;1); ba bình phương khoảng cách đến A,B,C đều bằng 2.</li>
-        <li><strong>Luyện lại:</strong> <a href="../luyen-tap/?item=THPT-G10-B21-P04">Luyện Practice 21-P04</a></li>
-        </ol>
-
-    <span id="help-g10-chvii-try17" data-thpt-help-id="HELP-G10-CHVII-TRY17"></span>
-
-    ??? tip "4.5. Lấy h bằng bán kính nhưng nói cắt hai điểm"
-
-        <ol>
-        <li><strong>Nhận diện lỗi:</strong> Kết luận hai giao điểm khi khoảng cách tâm đến đường thẳng đúng bằng R.</li>
-        <li><strong>Tự chẩn đoán:</strong> Với I(1;2), R=3 và d:y=−1, điểm nào trên d gần tâm nhất? Có thể có điểm thứ hai cùng cách I đúng 3 không?</li>
-        <li><strong>Kiến thức gốc:</strong> So khoảng cách ngắn nhất h với R: **h<R** cho hai điểm, **h=R** cho một tiếp điểm, **h>R** thì không gặp đường tròn.</li>
-        <li><strong>Tự sửa:</strong> Chân vuông góc T(1;−1) cách I đúng 3; các điểm khác trên d xa I hơn, nên d tiếp xúc tại T.</li>
-        <li><strong>Luyện lại:</strong> <a href="../luyen-tap/?item=THPT-G10-B21-P03">Luyện Practice 21-P03</a></li>
-        </ol>
+    Hai lỗi dưới đây có thể lặp lại trong nhiều bài. Nếu vướng ở một câu **Vận dụng** cụ thể, hãy mở khung **Kiểm lỗi** ngay dưới câu đó trong tab **Khám phá kiến thức**.
 
     <span data-thpt-help-id="D6-G10-B21-01" hidden></span>
 
-    ??? tip "4.6. Nhận phương trình suy biến thành đường tròn thực"
+    ??? tip "4.1. Nhận phương trình suy biến thành đường tròn thực"
 
         <ol>
         <li><strong>Nhận diện lỗi:</strong> Sau khi hoàn thành bình phương ra R² bằng 0 hoặc âm vẫn ghi bán kính dương.</li>
@@ -291,7 +291,7 @@
 
     <span data-thpt-help-id="D6-G10-B21-02" hidden></span>
 
-    ??? tip "4.7. Nhầm tiếp tuyến tại M với một đường thẳng tiếp xúc cho trước"
+    ??? tip "4.2. Nhầm tiếp tuyến tại M với một đường thẳng tiếp xúc cho trước"
 
         <ol>
         <li><strong>Nhận diện lỗi:</strong> Biết đường d tiếp xúc rồi tự coi điểm M bất kỳ là tiếp điểm, hoặc dùng IM khi M chưa kiểm.</li>
