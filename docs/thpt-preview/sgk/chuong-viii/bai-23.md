@@ -14,9 +14,48 @@
 
 </style>
 
-<div class="thpt-r4-screen" data-thpt-r4 data-b23-owner-p2-ux="r02">
+<script>
+/* B23 source-scoped Golden bridge: reuse the approved B22 presentation CSS,
+   without altering the shared SGK route/assessment runtime or cloning a theme.
+   Only classes and section-heading DOM are attached to this one lesson. */
+(() => {
+ "use strict";
+ const mount=()=>{
+  if(!/\/thpt-preview\/sgk\/chuong-viii\/bai-23\/?$/.test(location.pathname))return;
+  const article=document.querySelector(".md-content__inner");
+  if(!article||article.dataset.g10B23Golden==="true"||
+    !article.querySelector('[data-thpt-first-try-id="THPT-G10-CHVIII-TRY01"]'))return;
+  const tab=article.querySelector(":scope > .tabbed-set");
+  const labels=[...(tab?.querySelectorAll(":scope > .tabbed-labels > label")||[])];
+  const panes=[...(tab?.querySelectorAll(":scope > .tabbed-content > .tabbed-block")||[])];
+  const radios=[...(tab?.querySelectorAll(':scope > input[type="radio"]')||[])];
+  const names=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
+  if(labels.length!==4||panes.length!==4||radios.length!==4||
+     !labels.every((el,i)=>el.textContent.trim()===names[i]))return;
+  const heading=["1. Khám phá kiến thức","2. Kiến thức SGK","3. Ví dụ",
+   "4. Lỗi thường gặp và cách tự khắc phục"];
+  article.classList.add("thpt-g10-chiv-golden");
+  panes.forEach((pane,i)=>{
+   if(pane.querySelector(":scope > h2.thpt-g10-section-heading"))return;
+   const h=document.createElement("h2");
+   h.className="thpt-g10-section-heading";
+   h.textContent=heading[i];
+   pane.prepend(h);
+  });
+  const sync=()=>labels.forEach((label,i)=>
+   label.classList.toggle("slm-g10-active-tab",radios[i].checked));
+  tab.addEventListener("change",sync);
+  sync();
+  article.dataset.g10B23Golden="true";
+ };
+ if(window.document$?.subscribe)window.document$.subscribe(mount);
+ else if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",mount);
+ else mount();
+})();
+</script>
+
+<div class="thpt-r4-screen" data-thpt-r4 data-b23-owner-p2-ux="r03">
 <p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VIII · KIẾN THỨC SGK KNTT</p>
-<p class="thpt-r4-lead">Phân biệt quy tắc cộng và quy tắc nhân, đếm số trường hợp không thiếu hoặc trùng.</p>
 
 </div>
 
