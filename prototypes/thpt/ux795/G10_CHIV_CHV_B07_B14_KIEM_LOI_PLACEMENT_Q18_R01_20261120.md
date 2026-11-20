@@ -13,8 +13,8 @@
 | B8 | `22e53396caf7753e813c492615a491e1f24cc9fd` | `e72d07ecd8e4f128ebecaff82daf732a1eaa08d3` | 2 | 3 |
 | B9 | `3d79a17e9ba39cd0f46077823800f5f38c73e313` | `e799a1ebf12c4342849fe0e692bcb49c2d4b9084` | 2 | 3 |
 | B10 | `b5f72c28668f9cad548bb6ec000dc435d9557652` | `0fc27341a3194f69c8d2798f109e3628c1c38cce` | 3 | 3 |
-| B11 | `bae18dce68974edc15f940bf7fb2cca09d99ddf8` | `53f7c5e7918f80057dc54b3b81e71f281e2c07b2` | 3 | 2 |
-| B12 | `a2ea6c909cdd2317188b13c2bde22e7923dba3de` | `2a6ce7e2286a099b5e18aa4c2bd467b1acd6c6e2` | 3 | 0 |
+| B11 | `bae18dce68974edc15f940bf7fb2cca09d99ddf8` | `761016187c103345b03267ad1b8072072d1bf908` | 3 | 2 |
+| B12 | `a2ea6c909cdd2317188b13c2bde22e7923dba3de` | `541bb9da465a51a6da912a5721bb1c55ccdcac42` | 3 | 0 |
 | B13 | `cb5adaa7804902fece7dd4ec30575733efd4c9c1` | `28e9bb1f4118972ddbf30baee0b584e0ba343ceb` | 2 | 0 |
 | B14 | `a23afab8015c83813f0c8cbe918efa93e58aa623` | `13f658c80292a7fc358fb2ec83c237be4fcc313e` | 2 | 0 |
 
@@ -41,8 +41,8 @@ B09/B10/B11/B12 mỗi bài có **một manuscript nguyên bài** trong `prototyp
 |---|---|---|
 | CANONICAL_B09 | `7f3139b851f6a1161de0b813eac2fa7909aae9ed` | `111a8601f21b5b7db488c99584b9f35f170adb9b` |
 | CANONICAL_B10 | `22ebe6b2e11f2a2c47752862a873c8c98fd6d7ec` | `56c980849b6eac27f96fdd3798bd2a350b90a1f3` |
-| CANONICAL_B11 | `3d59f161977d4222a2399f0b0d3db3ab9eba1e5f` | `ed203f5aea1ef5a6bdc57f8cf29bc13cee12a28a` |
-| CANONICAL_B12 | `510072650ec215bb0501c14045d603acad4c56cd` | `8d2f4d62a799dea6bc5f3b6990a7d726d626d4d9` |
+| CANONICAL_B11 | `3d59f161977d4222a2399f0b0d3db3ab9eba1e5f` | `9bfe4f53c3fa398d09b6facec2a22c6a296cbd0a` |
+| CANONICAL_B12 | `510072650ec215bb0501c14045d603acad4c56cd` | `195544d6226dc1ac61c9c4ae34bc08b59cd39ca3` |
 
 **CANONICAL_PARITY_CONTRACT:** Section A Knowledge must match the public Markdown exactly after removing *only* file-end newline characters. Preserve the original B09 P07, B10/B11 Core/Practice/Written and B12 formative JS/Written sections without semantic modifications. The old/new public learner Markdown Git blobs are separately source-locked in the eight-lesson matrix above. These old SHA values remain historical baselines; the new SHA fields describe the one current authoring manuscript.
 
