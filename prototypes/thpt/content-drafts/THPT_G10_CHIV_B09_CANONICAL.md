@@ -62,6 +62,8 @@ This file carries the **one current B09 source manuscript**: whole learner-facin
         **Vì sao:** Vì \(|0\vec u|=|0|\,|\vec u|=0\); không cố gán hướng vật lý riêng cho vectơ-không.
 
 
+
+    **Kiểm lỗi dùng chung:** [Xem hướng dẫn tự sửa](#HELP-G10-B09-01).
     <span id="thpt-g10-chiv-try12" data-thpt-first-try-id="THPT-G10-CHIV-TRY12" data-outcome-id="G10-B09-LENGTH_DIRECTION" data-thpt-help-ref="HELP-G10-B09-01"></span>
 
     #### Dấu k quyết định chiều, |k| quyết định độ lớn
@@ -84,6 +86,15 @@ This file carries the **one current B09 source manuscript**: whole learner-facin
         **Vì sao:** Độ dài là 2×3=6, dấu âm khiến nó ngược hướng với \(\vec u\).
 
 
+
+    <a id="HELP-G10-B09-01" aria-hidden="true"></a>
+    <span id="help-g10-b09-01" data-thpt-help-id="HELP-G10-B09-01" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        <p><strong>Vì sao sai?</strong> Hệ số $k$ có thể âm, nhưng độ dài vectơ luôn không âm. Vì vậy $|k\vec u|=|k|\,|\vec u|$, không phải $k|\vec u|$.</p>
+        <ol><li><strong>Tìm độ dài:</strong> thay $k$ bằng $|k|$ trước khi nhân độ dài.</li><li><strong>Xét hướng:</strong> nếu cả $k$ và $\vec u$ khác 0 thì $k>0$ giữ hướng, $k<0$ đảo hướng.</li><li><strong>Xét trường hợp đặc biệt:</strong> $k=0$ hoặc $\vec u=\vec0$ thì được vectơ-không; không gán hướng riêng cho vectơ-không.</li><li><strong>Thử kiểm:</strong> nếu $|\vec u|=4$ cm, hãy tự mô tả $-2\vec u$ rồi đối chiếu với Ví dụ 1.</li></ol>
+        <p><strong>Ôn lại:</strong> Nếu vẫn nhầm, quay về định nghĩa trong tab Kiến thức SGK, sau đó luyện câu về độ dài và chiều của vectơ.</p><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
     <span id="thpt-g10-chiv-try13" data-thpt-first-try-id="THPT-G10-CHIV-TRY13" data-outcome-id="G10-B09-DISTRIBUTION" data-thpt-help-ref="HELP-G10-B09-01"></span>
 
     #### Phóng to cả chuyển động tổng cộng hoặc từng chặng
@@ -106,6 +117,8 @@ This file carries the **one current B09 source manuscript**: whole learner-facin
         **Vì sao:** Phóng đôi tổng hai chặng hoặc phóng đôi từng chặng dẫn đến cùng điểm cuối. Đây là đẳng thức vectơ, không có nghĩa độ dài bằng 4+2.
 
 
+
+    **Kiểm lỗi dùng chung:** [Xem hướng dẫn tự sửa](#HELP-G10-B09-01).
     <span id="thpt-g10-chiv-try14" data-thpt-first-try-id="THPT-G10-CHIV-TRY14" data-outcome-id="G10-B09-COLLINEAR" data-thpt-help-ref="HELP-G10-B09-01"></span>
 
     #### Một đường chuyển động, nhiều vectơ
@@ -128,6 +141,8 @@ This file carries the **one current B09 source manuscript**: whole learner-facin
         **Vì sao:** Bội âm đổi chiều, độ lớn nhân với 3. Đây là phép mô tả phương/hướng, không phải hai vectơ bằng nhau.
 
 
+
+    **Kiểm lỗi dùng chung:** [Xem hướng dẫn tự sửa](#HELP-G10-B09-01).
     <span id="thpt-g10-chiv-try15" data-thpt-first-try-id="THPT-G10-CHIV-TRY15" data-outcome-id="G10-B09-MIDPOINT_CENTROID" data-thpt-help-ref="HELP-G10-B09-02"></span>
 
     #### Tỉ lệ trung tuyến dẫn tới tỉ lệ vectơ
@@ -149,6 +164,24 @@ This file carries the **one current B09 source manuscript**: whole learner-facin
 
         **Vì sao:** G nằm giữa A và M, AG:GM=2:1 nên AM gồm 3 phần, AG chiếm 2 phần. Hai vectơ A→G, A→M cùng hướng.
 
+
+    <a id="HELP-G10-B09-02" aria-hidden="true"></a>
+    <span id="help-g10-b09-02" data-thpt-help-id="HELP-G10-B09-02" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        <p><strong>Vì sao sai?</strong> Trung điểm quyết định vị trí và độ dài bằng nhau, nhưng chiều của $\overrightarrow{MA}$ ngược với $\overrightarrow{AM}$. Trọng tâm $G$ chia trung tuyến $AM$ theo tỉ số $AG:GM=2:1$, nên $AG:AM=2:3$, không phải $2:1$.</p>
+        <ol><li><strong>Vẽ hình:</strong> đánh dấu $M$ là trung điểm $BC$ và $G$ nằm trên $AM$.</li><li><strong>Đọc mũi tên:</strong> xác định chính xác điểm đầu, điểm cuối trước khi đặt dấu hệ số.</li><li><strong>Dùng đúng tỉ số:</strong> $\overrightarrow{AG}=\tfrac23\overrightarrow{AM}$ và $\overrightarrow{AM}=\tfrac12(\overrightarrow{AB}+\overrightarrow{AC})$.</li><li><strong>Kiểm lại:</strong> kết quả phải là $\overrightarrow{AG}=\tfrac13(\overrightarrow{AB}+\overrightarrow{AC})$; đổi $AG$ thành $GA$ thì đổi dấu.</li></ol>
+        <p><strong>Ôn lại:</strong> Xem Ví dụ 2 về trung điểm và Ví dụ 3 về trọng tâm, rồi làm một câu luyện tập tương ứng.</p><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
+
+
+    ??? tip "Đảo dấu khi phân tích vectơ theo hai vectơ không cùng phương"
+
+        <p><strong>Lỗi thường gặp:</strong> Với tam giác $ABC$, $M$ và $N$ lần lượt là trung điểm của $AB$ và $AC$, đặt $\vec a=\overrightarrow{AB}$, $\vec b=\overrightarrow{AC}$. Một lời giải viết $\overrightarrow{MN}=\tfrac12\vec a-\tfrac12\vec b$. <strong>Kết quả này sai dấu.</strong></p>
+        <p><strong>Vì sao sai?</strong> $\tfrac12\vec a-\tfrac12\vec b=\overrightarrow{AM}-\overrightarrow{AN}=\overrightarrow{NM}$, không phải $\overrightarrow{MN}$. Khi dùng quy tắc hiệu hai vectơ, em đã đổi chỗ điểm đầu và điểm cuối.</p>
+        <ol><li><strong>Nhìn chiều mũi tên:</strong> $\overrightarrow{MN}$ đi từ $M$ đến $N$, không đi từ $N$ đến $M$.</li><li><strong>Viết quy tắc trước khi thay hệ số:</strong> $\overrightarrow{MN}=\overrightarrow{MA}+\overrightarrow{AN}=\overrightarrow{AN}-\overrightarrow{AM}$.</li><li><strong>Thay quan hệ trung điểm:</strong> $\overrightarrow{AM}=\tfrac12\vec a$, $\overrightarrow{AN}=\tfrac12\vec b$; do đó $\boxed{\overrightarrow{MN}=-\tfrac12\vec a+\tfrac12\vec b}$.</li></ol>
+        <p><strong>Tự kiểm:</strong> Nếu đổi câu hỏi thành $\overrightarrow{NM}$, cả hai hệ số phải đổi dấu. Vì $ABC$ là tam giác nên $\vec a,\vec b$ không cùng phương; cặp hệ số trong phép phân tích này là <strong>duy nhất</strong>, không thể tự chọn một cặp khác để bù dấu sai.</p>
+        <p><strong>Ôn và luyện lại:</strong> Xem quy tắc ba điểm/quy tắc hiệu vectơ ở Bài 8, đọc lời giải Ví dụ 4 của Bài 9 rồi <a href="../luyen-tap/?item=THPT-G10-B09-P07">tự thử bài phân tích vectơ trong phần Luyện tập</a>. Không dùng phép chia cho vectơ để tìm hệ số.</p>
     ### Vì sao phải phân tích một vectơ?
 
     Khi một vị trí dịch chuyển theo **hai phương độc lập** (chẳng hạn dọc hai cạnh không song song của một hình bình hành), ta muốn xác định đã đi bao nhiêu lần theo từng hướng. Một mũi tên tổng có thể tách thành hai mũi tên thành phần theo hai phương ấy; đây là ý tưởng **phân tích một vectơ theo hai vectơ không cùng phương**. Nếu hai hướng lại cùng phương, ta không thể xác định duy nhất hai hệ số: một phần dịch chuyển có thể chuyển từ hướng này sang hướng kia mà kết quả không đổi.
@@ -293,31 +326,6 @@ This file carries the **one current B09 source manuscript**: whole learner-facin
     **Tự kiểm:** \(\overrightarrow{MN}\) cùng hướng với \(\overrightarrow{BC}=\vec b-\vec a\) và dài bằng một nửa \(BC\), đúng tính chất đường trung bình tam giác. Nếu đổi thành \(\overrightarrow{NM}\), cả hai hệ số phải đổi dấu.
 
 === "Lỗi thường gặp"
-
-    <span data-thpt-help-id="HELP-G10-B09-01" hidden></span>
-
-    ??? tip "Độ dài âm khi k âm hoặc nhầm quy tắc hướng"
-
-        <p><strong>Vì sao sai?</strong> Hệ số $k$ có thể âm, nhưng độ dài vectơ luôn không âm. Vì vậy $|k\vec u|=|k|\,|\vec u|$, không phải $k|\vec u|$.</p>
-        <ol><li><strong>Tìm độ dài:</strong> thay $k$ bằng $|k|$ trước khi nhân độ dài.</li><li><strong>Xét hướng:</strong> nếu cả $k$ và $\vec u$ khác 0 thì $k>0$ giữ hướng, $k<0$ đảo hướng.</li><li><strong>Xét trường hợp đặc biệt:</strong> $k=0$ hoặc $\vec u=\vec0$ thì được vectơ-không; không gán hướng riêng cho vectơ-không.</li><li><strong>Thử kiểm:</strong> nếu $|\vec u|=4$ cm, hãy tự mô tả $-2\vec u$ rồi đối chiếu với Ví dụ 1.</li></ol>
-        <p><strong>Ôn lại:</strong> Nếu vẫn nhầm, quay về định nghĩa trong tab Kiến thức SGK, sau đó luyện câu về độ dài và chiều của vectơ.</p><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
-
-    <span data-thpt-help-id="HELP-G10-B09-02" hidden></span>
-
-    ??? tip "Nhầm tỉ số trung điểm/trọng tâm với tỉ số vectơ"
-
-        <p><strong>Vì sao sai?</strong> Trung điểm quyết định vị trí và độ dài bằng nhau, nhưng chiều của $\overrightarrow{MA}$ ngược với $\overrightarrow{AM}$. Trọng tâm $G$ chia trung tuyến $AM$ theo tỉ số $AG:GM=2:1$, nên $AG:AM=2:3$, không phải $2:1$.</p>
-        <ol><li><strong>Vẽ hình:</strong> đánh dấu $M$ là trung điểm $BC$ và $G$ nằm trên $AM$.</li><li><strong>Đọc mũi tên:</strong> xác định chính xác điểm đầu, điểm cuối trước khi đặt dấu hệ số.</li><li><strong>Dùng đúng tỉ số:</strong> $\overrightarrow{AG}=\tfrac23\overrightarrow{AM}$ và $\overrightarrow{AM}=\tfrac12(\overrightarrow{AB}+\overrightarrow{AC})$.</li><li><strong>Kiểm lại:</strong> kết quả phải là $\overrightarrow{AG}=\tfrac13(\overrightarrow{AB}+\overrightarrow{AC})$; đổi $AG$ thành $GA$ thì đổi dấu.</li></ol>
-        <p><strong>Ôn lại:</strong> Xem Ví dụ 2 về trung điểm và Ví dụ 3 về trọng tâm, rồi làm một câu luyện tập tương ứng.</p><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
-
-
-    ??? tip "Đảo dấu khi phân tích vectơ theo hai vectơ không cùng phương"
-
-        <p><strong>Lỗi thường gặp:</strong> Với tam giác $ABC$, $M$ và $N$ lần lượt là trung điểm của $AB$ và $AC$, đặt $\vec a=\overrightarrow{AB}$, $\vec b=\overrightarrow{AC}$. Một lời giải viết $\overrightarrow{MN}=\tfrac12\vec a-\tfrac12\vec b$. <strong>Kết quả này sai dấu.</strong></p>
-        <p><strong>Vì sao sai?</strong> $\tfrac12\vec a-\tfrac12\vec b=\overrightarrow{AM}-\overrightarrow{AN}=\overrightarrow{NM}$, không phải $\overrightarrow{MN}$. Khi dùng quy tắc hiệu hai vectơ, em đã đổi chỗ điểm đầu và điểm cuối.</p>
-        <ol><li><strong>Nhìn chiều mũi tên:</strong> $\overrightarrow{MN}$ đi từ $M$ đến $N$, không đi từ $N$ đến $M$.</li><li><strong>Viết quy tắc trước khi thay hệ số:</strong> $\overrightarrow{MN}=\overrightarrow{MA}+\overrightarrow{AN}=\overrightarrow{AN}-\overrightarrow{AM}$.</li><li><strong>Thay quan hệ trung điểm:</strong> $\overrightarrow{AM}=\tfrac12\vec a$, $\overrightarrow{AN}=\tfrac12\vec b$; do đó $\boxed{\overrightarrow{MN}=-\tfrac12\vec a+\tfrac12\vec b}$.</li></ol>
-        <p><strong>Tự kiểm:</strong> Nếu đổi câu hỏi thành $\overrightarrow{NM}$, cả hai hệ số phải đổi dấu. Vì $ABC$ là tam giác nên $\vec a,\vec b$ không cùng phương; cặp hệ số trong phép phân tích này là <strong>duy nhất</strong>, không thể tự chọn một cặp khác để bù dấu sai.</p>
-        <p><strong>Ôn và luyện lại:</strong> Xem quy tắc ba điểm/quy tắc hiệu vectơ ở Bài 8, đọc lời giải Ví dụ 4 của Bài 9 rồi <a href="../luyen-tap/?item=THPT-G10-B09-P07">tự thử bài phân tích vectơ trong phần Luyện tập</a>. Không dùng phép chia cho vectơ để tìm hệ số.</p>
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 

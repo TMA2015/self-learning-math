@@ -22,6 +22,8 @@
 
         **Vì sao:** Hai chặng vuông góc nên hình học Pitago cho AC = √(3²+4²)=5; 7 m là quãng đường, không phải độ dời.
 
+
+    **Kiểm lỗi dùng chung:** [Xem hướng dẫn tự sửa](#HELP-G10-B08-01).
     ### 1.2. Hai vectơ cùng điểm đặt: vì sao đường chéo biểu diễn hợp lực?
 
     **Xét hai lực** tác dụng lên cùng một vật tại điểm \(A\), được biểu diễn bằng hai vectơ \(\vec u,\vec v\) có chung điểm đầu \(A\). Hai lực có thể khác hướng, nên ta không thể cộng riêng các độ lớn để suy độ lớn hợp lực. Dựng hình bình hành có hai cạnh liền kề biểu diễn \(\vec u,\vec v\); đường chéo xuất phát từ \(A\) biểu diễn \(\vec u+\vec v\).
@@ -38,6 +40,17 @@
 
         **Vì sao:** Hai lực vuông góc là hai cạnh góc vuông dài 3,4 nên đường chéo có độ lớn √(9+16)=5. Không cộng 3+4.
 
+
+    <a id="HELP-G10-B08-02" aria-hidden="true"></a>
+    <span id="help-g10-b08-02" data-thpt-help-id="HELP-G10-B08-02" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Dấu hiệu:** Em cộng độ lớn hai lực lệch hướng như hai số thường; hoặc cho rằng \(MA=MB\) đã đủ để khẳng định \(M\) là trung điểm \(AB\) mà không kiểm \(M\) nằm trên đoạn \(AB\).
+
+        **Vì sao sai?** Vectơ mang cả hướng và độ lớn. Trung điểm phải **nằm trên đoạn nối hai đầu** và cách đều hai đầu. Trọng tâm là giao điểm ba trung tuyến của tam giác, không phải một điểm tùy ý.
+
+        **Tự sửa:** Dựng hình bình hành cho hai lực, đọc độ lớn đường chéo và góc giữa chúng; với trung điểm hãy vẽ \(A,M,B\) thẳng hàng và \(MA=MB\); với trọng tâm vẽ trung tuyến và chỉ ra tỉ số \(AG:GM=2:1\). Thử lại câu Vận dụng mục 1.4–1.5, sau đó làm <a href="../luyen-tap/">Luyện tập</a>.
     ### 1.3. Khi muốn lấy hiệu hai vectơ thì đổi chiều mũi tên nào?
 
     **Xét hai vectơ \(\vec u,\vec v\)** bất kì. Vectơ đối của \(\vec v\), kí hiệu \(-\vec v\), có **cùng độ dài nhưng ngược hướng** với \(\vec v\). Muốn thực hiện hiệu \(\vec u-\vec v\), hãy đổi hướng **vectơ bị trừ** thành \(-\vec v\), rồi cộng bằng quy tắc nối đuôi–đầu: \(\vec u-\vec v=\vec u+(-\vec v)\).
@@ -54,6 +67,17 @@
 
         **Vì sao:** Đổi trừ thành cộng \(\overrightarrow{CA}\): CA+AB=CB theo quy tắc ba điểm; CB và BC là hai vectơ đối.
 
+
+    <a id="HELP-G10-B08-01" aria-hidden="true"></a>
+    <span id="help-g10-b08-01" data-thpt-help-id="HELP-G10-B08-01" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Dấu hiệu:** Em viết \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{CA}\) hoặc \(\overrightarrow{AB}-\overrightarrow{AC}=\overrightarrow{BC}\).
+
+        **Vì sao sai?** Tổng theo ba điểm phải nối đúng **điểm cuối–điểm đầu**, còn phép trừ phải đổi chiều vectơ bị trừ. Đảo kết quả \(\overrightarrow{CB}\) thành \(\overrightarrow{BC}\) đổi hướng, dù độ dài bằng nhau.
+
+        **Tự sửa:** Vẽ riêng hai mũi tên, đánh dấu điểm đầu và cuối; với hiệu hãy viết thành tổng với vectơ đối, rồi lần theo đường gấp khúc. Thử với ba điểm bất kì mới tự chọn, sau đó quay lại câu Vận dụng mục 1.3 và <a href="../luyen-tap/">Luyện tập</a>.
     ### 1.4. Vì sao tại trung điểm, hai vectơ hướng ra hai đầu triệt tiêu nhau?
 
     **Cho đoạn thẳng \(AB\)** có trung điểm \(M\). Theo định nghĩa, \(M\) nằm giữa \(A,B\) và \(MA=MB\). Hai vectơ \(\overrightarrow{MA}\) và \(\overrightarrow{MB}\) cùng xuất phát từ \(M\) nhưng hướng về hai đầu đối nhau; chúng cùng độ dài và ngược hướng, nên có tổng bằng **vectơ-không** \(\vec0\).
@@ -70,6 +94,8 @@
 
         **Vì sao:** Đặt M ở tọa độ 4 m. Hai độ dời là các bội đối nhau của vectơ đơn vị \(\vec e\), do đó tổng triệt tiêu. Không đồng nhất vectơ với một số đo độ dài.
 
+
+    **Kiểm lỗi dùng chung:** [Xem hướng dẫn tự sửa](#HELP-G10-B08-02).
     ### 1.5. Vì sao tại trọng tâm, ba vectơ hướng tới các đỉnh cân bằng?
 
     **Cho tam giác \(ABC\)** có \(M\) là trung điểm cạnh \(BC\), \(G\) là trọng tâm. Khi đó \(G\) nằm trên đường trung tuyến \(AM\) và \(AG:GM=2:1\). Từ \(G\), các vectơ hướng về ba đỉnh \(A,B,C\) có thể được cộng theo quy tắc vectơ; **không** phải cộng ba độ dài \(GA+GB+GC\) rồi cho bằng 0.
@@ -86,6 +112,8 @@
 
         **Vì sao:** AG=2GM trên cùng trung tuyến, hai vectơ G→A và G→M ngược chiều. Đây là cân bằng vectơ, không phải cộng ba khoảng cách.
 
+
+    **Kiểm lỗi dùng chung:** [Xem hướng dẫn tự sửa](#HELP-G10-B08-02).
     **Sau bài này em cần:** đọc hình và xác định đầu/cuối của vectơ; dựng tổng theo nối đuôi–đầu hoặc hình bình hành; trừ bằng vectơ đối; suy quan hệ trung điểm/trọng tâm; phân biệt tổng độ dời với tổng quãng đường hay tổng độ lớn của lực.
 
 === "Kiến thức SGK"
@@ -234,26 +262,6 @@
     **Kiểm lại.** Độ dời nhỏ hơn quãng đường \(13\) m, hướng Đông Bắc; kết quả có nghĩa hình học và không phụ thuộc việc ta chọn điểm trung gian để ghép vectơ.
 
 === "Lỗi thường gặp"
-
-    <span data-thpt-help-id="HELP-G10-B08-01" hidden></span>
-
-    ??? tip "4.1. Nhầm hướng khi nối mũi tên hoặc khi trừ vectơ"
-
-        **Dấu hiệu:** Em viết \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{CA}\) hoặc \(\overrightarrow{AB}-\overrightarrow{AC}=\overrightarrow{BC}\).
-
-        **Vì sao sai?** Tổng theo ba điểm phải nối đúng **điểm cuối–điểm đầu**, còn phép trừ phải đổi chiều vectơ bị trừ. Đảo kết quả \(\overrightarrow{CB}\) thành \(\overrightarrow{BC}\) đổi hướng, dù độ dài bằng nhau.
-
-        **Tự sửa:** Vẽ riêng hai mũi tên, đánh dấu điểm đầu và cuối; với hiệu hãy viết thành tổng với vectơ đối, rồi lần theo đường gấp khúc. Thử với ba điểm bất kì mới tự chọn, sau đó quay lại câu Vận dụng mục 1.3 và <a href="../luyen-tap/">Luyện tập</a>.
-
-    <span data-thpt-help-id="HELP-G10-B08-02" hidden></span>
-
-    ??? tip "4.2. Cộng độ lớn và nhầm điều kiện trung điểm/trọng tâm"
-
-        **Dấu hiệu:** Em cộng độ lớn hai lực lệch hướng như hai số thường; hoặc cho rằng \(MA=MB\) đã đủ để khẳng định \(M\) là trung điểm \(AB\) mà không kiểm \(M\) nằm trên đoạn \(AB\).
-
-        **Vì sao sai?** Vectơ mang cả hướng và độ lớn. Trung điểm phải **nằm trên đoạn nối hai đầu** và cách đều hai đầu. Trọng tâm là giao điểm ba trung tuyến của tam giác, không phải một điểm tùy ý.
-
-        **Tự sửa:** Dựng hình bình hành cho hai lực, đọc độ lớn đường chéo và góc giữa chúng; với trung điểm hãy vẽ \(A,M,B\) thẳng hàng và \(MA=MB\); với trọng tâm vẽ trung tuyến và chỉ ra tỉ số \(AG:GM=2:1\). Thử lại câu Vận dụng mục 1.4–1.5, sau đó làm <a href="../luyen-tap/">Luyện tập</a>.
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
