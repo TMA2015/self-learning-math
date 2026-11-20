@@ -727,6 +727,21 @@ Khoảng cách từ điểm M đến mặt P là độ dài đường vuông gó
 > Với \((P):Ax+By+Cz+D=0\) có \((A;B;C)\ne(0;0;0)\), khoảng cách \(d(M,(P))=\frac{|Ax_M+By_M+Cz_M+D|}{\sqrt{A^2+B^2+C^2}}\).
 
 
+**Từ khoảng cách điểm–mặt đến khoảng cách hai mặt phẳng song song.** Nếu \((\alpha)\parallel(\beta)\), khoảng cách giữa hai mặt phẳng bằng khoảng cách từ **một điểm bất kỳ** trên \((\alpha)\) tới \((\beta)\). Đó là cùng một độ cao vuông góc, nên không cần nhớ công thức mới: chọn một điểm trên mặt thứ nhất, thế vào công thức khoảng cách điểm–mặt đã biết. Nếu hai phương trình có **cùng bộ hệ số pháp tuyến khác không**,
+\[
+(\alpha):Ax+By+Cz+D_1=0,\quad
+(\beta):Ax+By+Cz+D_2=0,
+\]
+thì khoảng cách giữa hai mặt là
+\[
+d((\alpha),(\beta))=\frac{|D_2-D_1|}{\sqrt{A^2+B^2+C^2}}.
+\]
+**Điều kiện:** hai mặt song song, và \(A^2+B^2+C^2>0\). Nếu các pháp tuyến chỉ **tỉ lệ**, phải nhân/chia một phương trình để chúng có **cùng hệ số \(A,B,C\)** trước khi lấy hiệu hằng số. Nếu hai phương trình trùng nhau, khoảng cách bằng 0, không được gọi hai mặt song song phân biệt.
+
+**Ví dụ minh họa — ứng dụng chiều cao phòng.** Mặt sàn thuộc \((\alpha):x+2y+2z-1=0\), trần thuộc \((\beta):x+2y+2z-3=0\) (đơn vị độ dài như trong mô hình). Hai pháp tuyến đều là \((1;2;2)\ne\vec0\); hệ số tự do khác nhau nên chúng song song phân biệt. Khoảng cách giữa hai mặt bằng \(|-3-(-1)|/\sqrt{1+4+4}=2/3\). Kiểm bằng cách lấy \(H(1;0;0)\in(\alpha)\): \(d(H,(\beta))=|1-3|/3=2/3\). Do \(2/3<1\), khoảng cách sàn–trần **không đủ** cho chiếc tủ cao 1 đơn vị nếu chiều cao tủ đo theo hướng vuông góc hai mặt. Đừng lấy độ chênh \(|-3+1|=2\) làm chiều cao khi pháp tuyến không có độ dài 1.
+
+**Tự khắc phục (D6).** Nếu ra 2 thay vì \(2/3\), em quên chuẩn hóa pháp tuyến. Nếu ra \(0\), em nhầm hai mặt **song song phân biệt** với hai mặt **trùng nhau**. Hãy chọn điểm thuộc một mặt và tính trực tiếp khoảng cách điểm–mặt để kiểm lại phương pháp.
+
 **Ví dụ**
 
 **Đề bài:** Cho mặt phẳng (P):x+2y+2z−6=0 và điểm O(0;0;0). Hãy tính khoảng cách từ O đến (P) và nêu điều kiện áp dụng công thức.
