@@ -40,11 +40,11 @@ B09/B10/B11/B12 mỗi bài có **một manuscript nguyên bài** trong `prototyp
 | Canonical lesson | PREVIOUS_CANONICAL_GIT_BLOB | CURRENT_CANONICAL_GIT_BLOB |
 |---|---|---|
 | CANONICAL_B09 | `7f3139b851f6a1161de0b813eac2fa7909aae9ed` | `3a4e3f3d12e953e87be119d40c25a8de7e333642` |
-| CANONICAL_B10 | `22ebe6b2e11f2a2c47752862a873c8c98fd6d7ec` | `7fb0e17858a533eb303c13fa306887056b651076` |
-| CANONICAL_B11 | `3d59f161977d4222a2399f0b0d3db3ab9eba1e5f` | `08c13469eb283714fdb7c0a37cd1f58f8cff829e` |
+| CANONICAL_B10 | `22ebe6b2e11f2a2c47752862a873c8c98fd6d7ec` | `107c45e1494a96830b9ad7971d9c341d6f420e8a` |
+| CANONICAL_B11 | `3d59f161977d4222a2399f0b0d3db3ab9eba1e5f` | `8e6ac4ffdae99647f6f9ce8a107f32ceb84aaf94` |
 | CANONICAL_B12 | `510072650ec215bb0501c14045d603acad4c56cd` | `42b16b85050d95271bc1463720f10a9b4979c73a` |
 
-**CANONICAL_PARITY_CONTRACT:** Section A Knowledge must match the public Markdown exactly after removing *only* file-end newline characters. Preserve the original B09 P07, B10/B11 Core/Practice/Written and B12 formative JS/Written sections without semantic modifications. The old/new public learner Markdown Git blobs are separately source-locked in the eight-lesson matrix above. These old SHA values remain historical baselines; the new SHA fields describe the one current authoring manuscript.
+**CANONICAL_PARITY_CONTRACT:** Section A Knowledge must match the public Markdown exactly **byte-for-byte**, including the file-final newline. Preserve the original B09 P07, B10/B11 Core/Practice/Written and B12 formative JS/Written sections without semantic modifications. The old/new public learner Markdown Git blobs are separately source-locked in the eight-lesson matrix above. These old SHA values remain historical baselines; the new SHA fields describe the one current authoring manuscript.
 
 **B11 source-first special:** Previous owner-P2 source-first R01/R02 receipts are historical and must stay byte-identical. New Q18 manuscript+Markdown receipt extends that history rather than substituting it or inventing a second current manuscript.
 
