@@ -427,7 +427,7 @@
 
 === "Lỗi thường gặp"
 
-    Các lỗi về conic thường bắt đầu từ **nhận nhầm đường cong, quên điều kiện của tham số, hoặc đọc sai dữ kiện thực tế**. Mười mục dưới đây phân biệt rõ từng sai lầm, có đề bài và cách sửa đủ để em hiểu ngay khi mở tab này; không có danh sách thứ hai trùng chức năng.
+    Các lỗi về conic thường bắt đầu từ **nhận nhầm đường cong, quên điều kiện của tham số, hoặc đọc sai dữ kiện thực tế**. Hai lỗi tổng quát dưới đây giúp phân biệt các quy ước và quan hệ tham số. Những lời chữa riêng cho câu Vận dụng đã chuyển đến khung *Kiểm lỗi* ngay dưới từng câu trong tab *Khám phá kiến thức*.
 
     <span data-thpt-help-id="D6-G10-B22-01" hidden></span>
 
