@@ -97,7 +97,7 @@ Nếu quên 'hai phía', so giới hạn thương khi h>0 và h<0.
 
 <!-- LESSON_ID: TOP09-M04; OUTCOME_ID: TOP09-O04 -->
 
-> **ĐIỀU KIỆN — Miền khả vi.** Khả vi tại một điểm và trên cả khoảng là hai yêu cầu khác nhau. Một hàm có đạo hàm tại x=2 có nghĩa có đạo hàm tại mọi x? Ta bắt đầu từ phân biệt tại điểm, trên khoảng, một phía ở đầu miền. f có đạo hàm trên (a,b) nếu đạo hàm hữu hạn tại mọi điểm trong khoảng đó. Đạo hàm f' là một hàm mới trên miền các điểm khả vi; nó không bắt buộc có nghĩa tại mọi điểm mà f xác định. Với căn bậc hai chỉ có đạo hàm hữu hạn tại x>0; tại biên x=0 không có đạo hàm hai phía.
+> **KIẾN THỨC CẦN GHI NHỚ — Miền khả vi.** Khả vi tại một điểm và trên cả khoảng là hai yêu cầu khác nhau. Một hàm có đạo hàm tại x=2 có nghĩa có đạo hàm tại mọi x? Ta bắt đầu từ phân biệt tại điểm, trên khoảng, một phía ở đầu miền. f có đạo hàm trên (a,b) nếu đạo hàm hữu hạn tại mọi điểm trong khoảng đó. Đạo hàm f' là một hàm mới trên miền các điểm khả vi; nó không bắt buộc có nghĩa tại mọi điểm mà f xác định. Với căn bậc hai chỉ có đạo hàm hữu hạn tại x>0; tại biên x=0 không có đạo hàm hai phía.
 
 Chẳng hạn, f(x)=√x xác định x≥0; với x>0 f'(x)=1/(2√x), suy được bằng nhân liên hợp. Tại x=0, không thể lấy đạo hàm hai phía trên ℝ và thương phải→+∞; không ghi f'(0)=∞ như đạo hàm hữu hạn.
 
@@ -334,7 +334,7 @@ Nếu chỉ xét x−1≥0, còn phải kiểm mẫu đạo hàm khác0.
 
 <!-- LESSON_ID: TOP09-M13; OUTCOME_ID: TOP09-O13 -->
 
-> **QUY TẮC — Quy tắc tổng.** Tổng, hiệu và hệ số hằng có cách lấy đạo hàm tương ứng. Đạo hàm của tổng thay đổi thế nào khi từng thành phần thay đổi? Ta sử dụng tính tuyến tính giới hạn, đạo hàm cơ bản. Nếu u,v khả vi, (u±v)'=u'±v' và (c u)'=c u'. Đạo hàm của hằng số bằng0; không giữ hạng hằng. Lý do là thương sai phân của tổng bằng tổng các thương, có thể lấy giới hạn từng phần khi chúng tồn tại.
+> **CÔNG THỨC — Quy tắc tổng.** Tổng, hiệu và hệ số hằng có cách lấy đạo hàm tương ứng. Đạo hàm của tổng thay đổi thế nào khi từng thành phần thay đổi? Ta sử dụng tính tuyến tính giới hạn, đạo hàm cơ bản. Nếu u,v khả vi, (u±v)'=u'±v' và (c u)'=c u'. Đạo hàm của hằng số bằng0; không giữ hạng hằng. Lý do là thương sai phân của tổng bằng tổng các thương, có thể lấy giới hạn từng phần khi chúng tồn tại.
 
 Xét ví dụ: y=4x³−3x+6 ⇒ y'=12x²−3; hằng6 biến mất. Chọn phân rã vì phép cộng không lồng hàm hay tạo tích cần công thức khác.
 
@@ -392,7 +392,7 @@ Nếu lấy cos x, bạn đã làm mất biến thiên của thừa số x.
 
 <!-- LESSON_ID: TOP09-M15; OUTCOME_ID: TOP09-O15 -->
 
-> **QUY TẮC — Quy tắc thương.** Với thương, phải giữ điều kiện mẫu khác không. Tại sao tử và mẫu đều có đạo hàm nhưng hàm thương vẫn có điểm bị loại? Cần nhớ mẫu số phải khác0, u/v trên miền chung. (u/v)'=(u'v−uv')/v² khi u,v khả vi và v≠0. Dấu trừ bắt nguồn từ đạo hàm 1/v=−v'/v². Mọi kết quả đạo hàm phải ghi miền nguyên gốc; phép rút gọn không tự nối lỗ hổng ở mẫu.
+> **CÔNG THỨC — Quy tắc thương.** Với thương, phải giữ điều kiện mẫu khác không. Tại sao tử và mẫu đều có đạo hàm nhưng hàm thương vẫn có điểm bị loại? Cần nhớ mẫu số phải khác0, u/v trên miền chung. (u/v)'=(u'v−uv')/v² khi u,v khả vi và v≠0. Dấu trừ bắt nguồn từ đạo hàm 1/v=−v'/v². Mọi kết quả đạo hàm phải ghi miền nguyên gốc; phép rút gọn không tự nối lỗ hổng ở mẫu.
 
 Chẳng hạn, f=(x+1)/(x−2) có miền x≠2, f'=[1(x−2)−(x+1)·1]/(x−2)²=−3/(x−2)². Chọn quy tắc thương trước khi đơn giản hóa.
 
@@ -500,7 +500,7 @@ Nếu thiếu dấu trừ, dùng quy tắc thương cos/sin để tự tái lậ
 
 <!-- LESSON_ID: TOP09-M19; OUTCOME_ID: TOP09-O19 -->
 
-> **QUY TẮC — Hàm lượng giác hợp.** Hàm lượng giác hợp dùng tiếp quy tắc dây chuyền. Một góc u(x)=3x² thay đổi nhanh hơn x, vậy đạo hàm sin u khác gì? Ta bắt đầu từ dây chuyền và biến góc radian. Nếu u(x) khả vi, [sin u]'=u' cos u, [cos u]'=−u' sin u; tan u, cot u theo công thức cộng u' và điều kiện cos u hoặc sin u khác0. Quy tắc dây chuyền cho cả hàm ngoài và góc trong; không quên miền trig.
+> **CÔNG THỨC — Hàm lượng giác hợp.** Hàm lượng giác hợp dùng tiếp quy tắc dây chuyền. Một góc u(x)=3x² thay đổi nhanh hơn x, vậy đạo hàm sin u khác gì? Ta bắt đầu từ dây chuyền và biến góc radian. Nếu u(x) khả vi, [sin u]'=u' cos u, [cos u]'=−u' sin u; tan u, cot u theo công thức cộng u' và điều kiện cos u hoặc sin u khác0. Quy tắc dây chuyền cho cả hàm ngoài và góc trong; không quên miền trig.
 
 Chẳng hạn, y=cos(3x²) ⇒ u=3x², u'=6x, y'=−6x sin(3x²). Chọn xác định hàm ngoài cos và trong đa thức trước.
 
@@ -575,7 +575,7 @@ Nếu tính với x<0, ln(4x) không có nghĩa trong số thực.
 
 <!-- LESSON_ID: TOP09-M22; OUTCOME_ID: TOP09-O22 -->
 
-> **QUY TẮC — Mũ–logarit hợp.** Khi mũ/log chứa biểu thức, quy tắc dây chuyền xuất hiện. Vì sao ln(g(x)) chỉ lấy đạo hàm tại nơi g(x)>0? Ta đã biết dây chuyền và miền ln, cơ số a>0. [ln g]'=g'/g trên g>0; [a^{g}]'=a^{g} ln a ·g' với a>0,a≠1; [log_a g]'=g'/(g ln a) trên g>0. Cần kiểm g khả vi và miền của hàm ngoài. Không dùng công thức ở g≤0 dù biểu thức g'/g có vẻ tồn tại.
+> **CÔNG THỨC — Mũ–logarit hợp.** Khi mũ/log chứa biểu thức, quy tắc dây chuyền xuất hiện. Vì sao ln(g(x)) chỉ lấy đạo hàm tại nơi g(x)>0? Ta đã biết dây chuyền và miền ln, cơ số a>0. [ln g]'=g'/g trên g>0; [a^{g}]'=a^{g} ln a ·g' với a>0,a≠1; [log_a g]'=g'/(g ln a) trên g>0. Cần kiểm g khả vi và miền của hàm ngoài. Không dùng công thức ở g≤0 dù biểu thức g'/g có vẻ tồn tại.
 
 Chẳng hạn, f=ln(x²+1) xác định mọi x, f'=2x/(x²+1). Chọn **quy tắc dây chuyền** vì đối số là x²+1; đối số dương mọi x nên không phải loại điểm.
 
@@ -600,7 +600,7 @@ Nếu chỉ ghi mẫu≠0 mà cho x<2/3, điều kiện log phải dương bị 
 
 <!-- LESSON_ID: TOP09-M23; OUTCOME_ID: TOP09-O23 -->
 
-> **ĐIỀU KIỆN — Đạo hàm và miền gốc.** Miền cần kiểm cả trước và sau lấy đạo hàm. Công thức đạo hàm có thể làm mình 'quên' một điểm hàm gốc không xác định không? Ta sử dụng điều kiện căn, mẫu, log và mẫu trig. Bước 1 giải miền xác định của biểu thức gốc. Bước 2 chọn công thức đạo hàm trên các khoảng nội điểm miền có thể lấy đạo hàm. Bước 3 so miền đạo hàm và miền gốc, đặc biệt đầu mút căn và điểm loại mẫu. Một biểu thức đại số sau rút không được tự dùng ở điểm gốc cấm.
+> **KIẾN THỨC CẦN GHI NHỚ — Đạo hàm và miền gốc.** Miền cần kiểm cả trước và sau lấy đạo hàm. Công thức đạo hàm có thể làm mình 'quên' một điểm hàm gốc không xác định không? Ta sử dụng điều kiện căn, mẫu, log và mẫu trig. Bước 1 giải miền xác định của biểu thức gốc. Bước 2 chọn công thức đạo hàm trên các khoảng nội điểm miền có thể lấy đạo hàm. Bước 3 so miền đạo hàm và miền gốc, đặc biệt đầu mút căn và điểm loại mẫu. Một biểu thức đại số sau rút không được tự dùng ở điểm gốc cấm.
 
 Xét ví dụ: f=√(x−3)/(x−4) có miền x≥3, x≠4. Công thức derivative theo tích/thương chỉ áp ở x>3, x≠4. Tại x=3 hàm có giá trị0 nhưng không có đạo hàm hữu hạn hai phía.
 
@@ -729,7 +729,7 @@ Nếu ra 5x³, thiếu nhân n−1.
 
 <!-- LESSON_ID: TOP09-M28; OUTCOME_ID: TOP09-O28 -->
 
-> **QUY TẮC — Đạo hàm hàm hợp bậc hai.** Hàm mũ và lượng giác cũng có đạo hàm cấp hai. Tại sao đạo hàm lần hai của sin(2x) lại xuất hiện bình phương hệ số 2? Ta sử dụng quy tắc dây chuyền và đạo hàm sin/cos khi góc đo bằng radian, hàm mũ. Nếu f=sin(kx) thì f'=k cos(kx), f''=−k² sin(kx); nếu f=e^{kx}, f'=k e^{kx}, f''=k² e^{kx}. Hệ số k nhân mỗi lần do dây chuyền, không phải do bình phương f'. Giữ đúng dấu đạo hàm cos.
+> **CÔNG THỨC — Đạo hàm hàm hợp bậc hai.** Hàm mũ và lượng giác cũng có đạo hàm cấp hai. Tại sao đạo hàm lần hai của sin(2x) lại xuất hiện bình phương hệ số 2? Ta sử dụng quy tắc dây chuyền và đạo hàm sin/cos khi góc đo bằng radian, hàm mũ. Nếu f=sin(kx) thì f'=k cos(kx), f''=−k² sin(kx); nếu f=e^{kx}, f'=k e^{kx}, f''=k² e^{kx}. Hệ số k nhân mỗi lần do dây chuyền, không phải do bình phương f'. Giữ đúng dấu đạo hàm cos.
 
 Xét ví dụ: f=cos(3x): f'=−3sin(3x), f''=−9cos(3x). Chọn lấy đạo hàm hai lần, mỗi lần đều dùng quy tắc dây chuyền.
 
