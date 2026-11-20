@@ -211,97 +211,91 @@
 
 === "Lỗi thường gặp"
 
+    Các lỗi của bài này tập trung vào **điểm chung của hai đường**, **hướng pháp tuyến** và **độ dài/góc không âm**. Bảy tình huống sau có tên riêng và nêu lại dữ kiện cần thiết, để em có thể mở trực tiếp tab này mà vẫn biết lỗi đang xảy ra ở đâu.
+
     <span id="help-g10-chvii-try08" data-thpt-help-id="HELP-G10-CHVII-TRY08"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "4.1. Nhầm song song với trùng nhau"
 
-        1. **Nhận diện lỗi:** Nếu kết luận trùng ngay khi pháp tuyến tỉ lệ, em đã bỏ quên hệ số tự do.
-
-        2. **Quay lại bản chất:** Định thức a1b2-a2b1 khác 0 thì hai đường cắt nhau. Bằng 0 chỉ nói cùng hướng: xét thêm c để phân biệt song song khác nhau và trùng nhau.
-
-        3. **Tự sửa:** Nhân hẳn d1 với hệ số 2 rồi đối chiếu cả ba hệ số của d2.
-
-        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
-
-        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
+        <ol>
+        <li><strong>Nhận diện lỗi:</strong> Hai pháp tuyến tỉ lệ nên kết luận hai đường trùng ngay, chưa kiểm hệ số tự do.</li>
+        <li><strong>Tự chẩn đoán:</strong> Với d₁: 2x−y+1=0 và d₂: 4x−2y+3=0, nhân toàn phương trình d₁ với 2 được hằng số bao nhiêu? Hằng số đó có đúng bằng 3 không?</li>
+        <li><strong>Kiến thức gốc:</strong> Hai pháp tuyến cùng phương chỉ bảo đảm đường cùng hướng; muốn trùng nhau thì cả ba hệ số phải tỉ lệ bởi một số khác 0.</li>
+        <li><strong>Tự sửa:</strong> Nhân phương trình thứ nhất với 2 được 4x−2y+2=0, khác d₂ ở hệ số tự do; kết luận song song phân biệt.</li>
+        <li><strong>Luyện lại:</strong> <a href="../luyen-tap/?item=THPT-G10-B20-C01">Luyện Core 20-C01</a></li>
+        </ol>
 
     <span id="help-g10-chvii-try09" data-thpt-help-id="HELP-G10-CHVII-TRY09"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "4.2. Dùng pháp tuyến cũ cho đường vuông góc"
 
-        1. **Nhận diện lỗi:** Nếu chỉ lấy lại n=(1,2), em sẽ viết đường song song với d chứ không vuông góc.
-
-        2. **Quay lại bản chất:** Nếu hai đường vuông góc thì hai pháp tuyến của chúng cũng vuông góc (đều bị quay cùng 90 độ so với đường). Điểm quyết định tịnh tiến đường mới.
-
-        3. **Tự sửa:** Thử n·n'=0 và thay P vào phương trình vừa viết.
-
-        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
-
-        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
+        <ol>
+        <li><strong>Nhận diện lỗi:</strong> Lập đường qua P với đúng pháp tuyến của đường cũ; kết quả lại song song.</li>
+        <li><strong>Tự chẩn đoán:</strong> Với P(1;−2) và d: x+2y−5=0, pháp tuyến cũ (1;2) vuông góc với vectơ nào? Đường mới của em có thực sự đi qua P không?</li>
+        <li><strong>Kiến thức gốc:</strong> Hai đường vuông góc thì hai pháp tuyến khác 0 cũng vuông góc; thêm điều kiện đi qua P để xác định vị trí.</li>
+        <li><strong>Tự sửa:</strong> Chọn pháp tuyến mới (2;−1), kiểm 1×2+2×(−1)=0, sau đó viết 2(x−1)−(y+2)=0.</li>
+        <li><strong>Luyện lại:</strong> <a href="../luyen-tap/?item=THPT-G10-B20-C02">Luyện Core 20-C02</a></li>
+        </ol>
 
     <span id="help-g10-chvii-try10" data-thpt-help-id="HELP-G10-CHVII-TRY10"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "4.3. Tìm giao điểm nhưng chỉ kiểm một phương trình"
 
-        1. **Nhận diện lỗi:** Nếu ra một điểm chỉ thỏa một đường, em đã dừng trước bước thử.
-
-        2. **Quay lại bản chất:** Một giao điểm là nghiệm chung của hai phương trình; giải từng phương trình riêng không đủ.
-
-        3. **Tự sửa:** Ghi thành hai dòng kiểm thế tọa độ vào từng phương trình.
-
-        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
-
-        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
+        <ol>
+        <li><strong>Nhận diện lỗi:</strong> Một cặp tọa độ thỏa phương trình đường thứ nhất nhưng chưa chắc thuộc đường còn lại.</li>
+        <li><strong>Tự chẩn đoán:</strong> Với x+2y=8 và 2x−y=1, hãy thay I(2;3) lần lượt vào hai phương trình. Hai vế có bằng nhau trong cả hai lần thế không?</li>
+        <li><strong>Kiến thức gốc:</strong> Giao điểm của hai đường là nghiệm của **hệ** hai phương trình; phương trình riêng lẻ có vô số điểm của một đường.</li>
+        <li><strong>Tự sửa:</strong> Giải lại bằng phép thế hoặc khử, rồi viết hai dòng kiểm: 2+2×3=8 và 2×2−3=1.</li>
+        <li><strong>Luyện lại:</strong> <a href="../luyen-tap/?item=THPT-G10-B20-P01">Luyện Practice 20-P01</a></li>
+        </ol>
 
     <span id="help-g10-chvii-try11" data-thpt-help-id="HELP-G10-CHVII-TRY11"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "4.4. Quên chuẩn hóa pháp tuyến khi tính khoảng cách"
 
-        1. **Nhận diện lỗi:** Nếu cho kết quả 10 hoặc -2, em đã quên chuẩn hóa pháp tuyến hoặc trị tuyệt đối.
-
-        2. **Quay lại bản chất:** Biểu thức axM+byM+c đo độ lệch có dấu theo pháp tuyến chưa chuẩn hóa; chia √(a²+b²) đổi thành độ dài thật và lấy trị tuyệt đối.
-
-        3. **Tự sửa:** Tách tính tử và mẫu, kiểm mẫu khác 0, kết luận độ dài không âm.
-
-        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
-
-        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
+        <ol>
+        <li><strong>Nhận diện lỗi:</strong> Lấy giá trị 10 ở tử làm kết quả cuối, hoặc giữ số âm làm khoảng cách.</li>
+        <li><strong>Tự chẩn đoán:</strong> Trong câu M(1;2), d: 3x+4y−1=0, tử số là bao nhiêu, độ dài pháp tuyến (3;4) là bao nhiêu? Nếu chưa chia cho 5, kết quả đã là độ dài chưa?</li>
+        <li><strong>Kiến thức gốc:</strong> Khoảng cách là độ dài đoạn vuông góc: phải lấy trị tuyệt đối ở tử rồi **chia độ dài pháp tuyến khác 0** ở mẫu.</li>
+        <li><strong>Tự sửa:</strong> Tính |3×1+4×2−1|=10, độ dài n=5 và suy ra khoảng cách bằng 2, không phải 10 hay −2.</li>
+        <li><strong>Luyện lại:</strong> <a href="../luyen-tap/?item=THPT-G10-B20-P02">Luyện Practice 20-P02</a></li>
+        </ol>
 
     <span id="help-g10-chvii-try12" data-thpt-help-id="HELP-G10-CHVII-TRY12"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "4.5. Lấy góc tù giữa hai mũi tên làm góc hai đường"
 
-        1. **Nhận diện lỗi:** Nếu kết luận 135°, em đã lấy góc tù theo hướng pháp tuyến thay vì góc nhỏ giữa hai đường.
-
-        2. **Quay lại bản chất:** Góc nhỏ giữa hai đường nằm từ 0 đến 90 độ; đổi hướng một pháp tuyến không làm đổi góc nhỏ nên lấy trị tuyệt đối tích vô hướng.
-
-        3. **Tự sửa:** Lấy trị tuyệt đối tích vô hướng, kiểm φ không vượt 90°.
-
-        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
-
-        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
+        <ol>
+        <li><strong>Nhận diện lỗi:</strong> Chọn 135° vì hướng mũi tên đổi chiều, dù đề hỏi góc nhỏ.</li>
+        <li><strong>Tự chẩn đoán:</strong> Với d₁: x=0 và d₂: x−y=0, nếu đảo chiều một pháp tuyến, góc giữa hai đường có đổi không? Góc 135° có phải góc nhỏ không?</li>
+        <li><strong>Kiến thức gốc:</strong> Góc nhỏ của hai đường thuộc [0°;90°], không phụ thuộc hướng của vectơ. Trị tuyệt đối tích vô hướng loại phụ thuộc chiều mũi tên.</li>
+        <li><strong>Tự sửa:</strong> Dùng n₁=(1;0), n₂=(1;−1); thương cosin bằng 1/√2 nên góc nhỏ 45°.</li>
+        <li><strong>Luyện lại:</strong> <a href="../luyen-tap/?item=THPT-G10-B20-P03">Luyện Practice 20-P03</a></li>
+        </ol>
 
     <span data-thpt-help-id="D6-G10-B20-01" hidden></span>
 
-    ??? tip "Nhầm song song với trùng nhau"
+    ??? tip "4.6. Chia tỉ số hệ số khi mẫu bằng 0"
 
-        <p><strong>Dấu hiệu:</strong> Thấy a1b2−a2b1=0 thì kết luận hai đường trùng.</p>
-        <p><strong>Bản chất toán:</strong> Điều kiện này chỉ nói hai pháp tuyến cùng phương. Hai phương trình trùng nhau nếu toàn bộ bộ ba (a,b,c) tỉ lệ theo cùng một λ≠0; nếu không chúng song song phân biệt.</p>
-        <p><strong>Tự sửa:</strong> Ôn B19 mục 2 và B20 mục 1: kiểm định thức, rồi so sánh cả hằng số; tránh chia cho một hệ số bằng 0.</p>
-        <p><strong>Kiến thức cần ôn:</strong> Phương trình tổng quát B19; tỉ lệ các hệ số; B20 mục 1.</p>
-        <p><strong>Luyện lại bài đã có:</strong> <a data-thpt-formative-id="THPT-G10-B20-C01" href="../luyen-tap/?item=THPT-G10-B20-C01">Luyện lại câu 20-C01</a> · <a data-thpt-formative-id="THPT-G10-B20-P05" href="../luyen-tap/?item=THPT-G10-B20-P05">Luyện lại câu 20-P05</a></p>
-
+        <ol>
+        <li><strong>Nhận diện lỗi:</strong> Cố tính a₁/a₂ hoặc b₁/b₂ ngay cả khi một hệ số bằng 0, rồi phân loại sai.</li>
+        <li><strong>Tự chẩn đoán:</strong> Thử hai đường x=2 và 2x=5. Chúng song song hay trùng? Nếu so tỉ số các hệ số của y, phép chia 0/0 có nghĩa không?</li>
+        <li><strong>Kiến thức gốc:</strong> Hệ phương trình và định thức áp dụng cả với đường đứng; khi pháp tuyến cùng phương, so bộ ba hệ số bằng một phép nhân bội khác 0, không chia cho 0.</li>
+        <li><strong>Tự sửa:</strong> Đưa về x−2=0 và 2x−5=0, so phương trình thứ nhất nhân 2 với phương trình thứ hai để thấy hằng số khác nhau.</li>
+        <li><strong>Luyện lại:</strong> <a data-thpt-formative-id="THPT-G10-B20-C01" href="../luyen-tap/?item=THPT-G10-B20-C01">Luyện lại câu 20-C01</a> · <a data-thpt-formative-id="THPT-G10-B20-P05" href="../luyen-tap/?item=THPT-G10-B20-P05">Luyện lại câu 20-P05</a></li>
+        </ol>
 
     <span data-thpt-help-id="D6-G10-B20-02" hidden></span>
 
-    ??? tip "Góc hoặc khoảng cách ra giá trị âm"
+    ??? tip "4.7. Nhầm tính chất bất biến của góc và khoảng cách"
 
-        <p><strong>Dấu hiệu:</strong> Bỏ giá trị tuyệt đối hoặc thiếu độ dài vectơ pháp tuyến ở mẫu.</p>
-        <p><strong>Bản chất toán:</strong> Khoảng cách là |axM+byM+c|/√(a²+b²)≥0. Với góc nhỏ 0°≤φ≤90°, cosφ=|n1·n2|/(||n1||||n2||)∈[0,1].</p>
-        <p><strong>Tự sửa:</strong> Ôn B20 mục 2 (góc) và mục 3 (khoảng cách): xác nhận pháp tuyến khác vectơ không, đặt trị tuyệt đối ở tử và chia đúng độ dài pháp tuyến; kiểm \(\cos\varphi\in[0;1]\) cho góc nhỏ, \(d\ge0\) cho khoảng cách.</p>
-        <p><strong>Kiến thức cần ôn:</strong> Chuẩn vectơ, tích vô hướng; B20 mục 2.</p>
-        <p><strong>Luyện lại bài đã có:</strong> <a data-thpt-formative-id="THPT-G10-B20-P02" href="../luyen-tap/?item=THPT-G10-B20-P02">Luyện lại câu 20-P02</a> · <a data-thpt-formative-id="THPT-G10-B20-P03" href="../luyen-tap/?item=THPT-G10-B20-P03">Luyện lại câu 20-P03</a> · <a data-thpt-formative-id="THPT-G10-B20-P06" href="../luyen-tap/?item=THPT-G10-B20-P06">Luyện lại câu 20-P06</a> · <a data-thpt-formative-id="THPT-G10-CHVII-W20-01" href="../../../thu-vien/tu-luan-chuong-vii/#thpt-g10-chvii-w20-01">Bài tự luận liên quan</a></p>
-
+        <ol>
+        <li><strong>Nhận diện lỗi:</strong> Đổi đồng thời hệ số của một phương trình đường thẳng mà lại cho rằng góc/khoảng cách thay đổi theo bội đó.</li>
+        <li><strong>Tự chẩn đoán:</strong> Nếu thay d: 3x+4y−1=0 bằng 6x+8y−2=0, khoảng cách từ M(1;2) tới đường có tăng gấp đôi không? Với góc nhỏ, đảo chiều pháp tuyến có đổi góc không?</li>
+        <li><strong>Kiến thức gốc:</strong> Nhân tất cả hệ số của cùng một đường với số khác 0 không đổi đường. Cả cosin góc nhỏ và khoảng cách đều lấy trị tuyệt đối, chia cho độ dài pháp tuyến nên các bội triệt tiêu.</li>
+        <li><strong>Tự sửa:</strong> Thử lại phép nhân bội trên cả tử và mẫu; kiểm \(\cos\varphi\in[0;1]\) cho góc nhỏ và \(d\ge0\) cho khoảng cách; giữ kết luận hình học không đổi.</li>
+        <li><strong>Luyện lại:</strong> <a data-thpt-formative-id="THPT-G10-B20-P02" href="../luyen-tap/?item=THPT-G10-B20-P02">Luyện lại câu 20-P02</a> · <a data-thpt-formative-id="THPT-G10-B20-P03" href="../luyen-tap/?item=THPT-G10-B20-P03">Luyện lại câu 20-P03</a> · <a data-thpt-formative-id="THPT-G10-B20-P06" href="../luyen-tap/?item=THPT-G10-B20-P06">Luyện lại câu 20-P06</a> · <a data-thpt-formative-id="THPT-G10-CHVII-W20-01" href="../../../thu-vien/tu-luan-chuong-vii/#thpt-g10-chvii-w20-01">Bài tự luận liên quan</a></li>
+        </ol>
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
