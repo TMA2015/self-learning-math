@@ -1,16 +1,15 @@
-<!-- TOP18_W07_O38_O23_REVIEWER_PASS_Q15_HOLD_20261120 -->
-## Reviewer Academic/PED PASS received — W07 v2 awaits only controlled single-canonical promotion
+<!-- TOP18_CĐ18_CONTENT_READY_Q18_W07V2_CANONICAL_LOCK_20261120 -->
+## Current AUTHORING snapshot — all math/PED quality blocker closed
 
-**Owner-provided independent reviewer evidence** for W07 v2, O38 and O23 (O40 context) confirms **Academic PASS / PED PASS**, P0=0/P1=0/P2=0, MINIMAL_DELTA=NONE. The prior independent NotebookLM-review-pending blocker is **CLOSED**. The new source had its canonical W07 v2 question/answer/reasoning/rubric independently accepted.
+**Q18 composite** author verified 40 Topic outcomes and accepted the independent owner-provided **Academic PASS + PED PASS (P0=0, P1=0, P2=0; MINIMAL_DELTA NONE)** only for new W07 version2, O38 and O23 (O40 context). This does NOT assert a new independent full Topic PASS. New Q18 signed source/receipt `67f4cbd57cf8ee9b7aa515ce5c1c0fa1b0b7ae08`; author A1 `0a0a15d00b2e22049ff332274eff250678dfe136`. The SGK G12 ChV one active canonical now at source Git blob `a24abd682932e11761f7c85fa3a3d3cdd77b600e` with one W07 v2 ITEM_ID. Old signed v1 bank `11eb2834cfdb4a24685157f84666c2bb0767970a` remains historical, not concurrently active. Topic learner blob `1ad945ea583ce7ee91df64b58d3f31b31c202cd3` and its question/answer/proof/rubric placement are unchanged since reviewer PASS. **AUTHORING only, no website integration/deploy/Mastery.**
 
-INDEPENDENT_REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_W07_O38_O23_NOTEBOOKLM_INDEPENDENT_ACADEMIC_PED_PASS_20261120.md
-INDEPENDENT_REVIEW_RECEIPT_BLOB: fac6e71538a1e0b1d2cd2d216bc6abaef9d27bba
-INDEPENDENT_REVIEW_SCOPE: THPT-G12-B14-W07 v2; TOP18-O38; TOP18-O23; TOP18-O40 (unchanged context)
-INDEPENDENT_ACADEMIC_VERDICT: PASS_AFFECTED_SCOPE
-INDEPENDENT_PED_VERDICT: PASS_AFFECTED_SCOPE
-OPEN_AUTHORING_BLOCKER: W07_V2_SINGLE_ACTIVE_CANONICAL_PROMOTION_Q15_Q18
-
-**Why Q15 is still open:** Current blocked learner `1ad945ea583ce7ee91df64b58d3f31b31c202cd3` projects corrected W07 version2, but the signed active shared G12 CHV bank `11eb2834cfdb4a24685157f84666c2bb0767970a` still carries the original W07 version1. Version2 proposed source `a24abd682932e11761f7c85fa3a3d3cdd77b600e` has been reviewed but remains not activated. Promote a single canonical with SGK consumer reconciliation only under a subsequent controlled AUTHORING Delta C. Historical CONTENT_READY signed version remains immutable. **STATE remains BLOCKED_BY_AUTHORING, not CONTENT_READY**, no source/page SBT issue. No merge/deploy.
+INDEPENDENT_AFFECTED_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_W07_O38_O23_NOTEBOOKLM_INDEPENDENT_ACADEMIC_PED_PASS_20261120.md
+INDEPENDENT_AFFECTED_RECEIPT_BLOB: fac6e71538a1e0b1d2cd2d216bc6abaef9d27bba
+ACTIVE_SINGLE_CANONICAL_BANK_PATH: prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md
+ACTIVE_SINGLE_CANONICAL_BANK_BLOB: a24abd682932e11761f7c85fa3a3d3cdd77b600e
+ACADEMIC_Q18_SOURCE_SIGNOFF: SELF_VERIFIED_FULL_TOPIC_PLUS_SCOPED_INDEPENDENT_REVIEW
+PED_Q18_SOURCE_SIGNOFF: SELF_VERIFIED_FULL_TOPIC_PLUS_SCOPED_INDEPENDENT_REVIEW
+BLOCKERS_CURRENT: NONE
 
 ---
 
@@ -25,24 +24,24 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: BLOCKED_BY_AUTHORING
+STATE: CONTENT_READY
 CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
 ACADEMIC_SOURCE_BLOB: 1ad945ea583ce7ee91df64b58d3f31b31c202cd3
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_O40_O23_W07_AUTHOR_Q18_CONTENT_DELTA_20261120.md
-REVIEW_RECEIPT_BLOB: 82a31554d8f6187e951c189ac2b6c34a1622d5ef
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_R06_W07V2_AUTHOR_Q18_SCOPED_INDEPENDENT_COMPOSITE_20261120.md
+REVIEW_RECEIPT_BLOB: 67f4cbd57cf8ee9b7aa515ce5c1c0fa1b0b7ae08
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R06_247_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_A1_A7_BLOB: 9987f1995c7eb41ab812cd5a555bc3ae603b9eaa
+AUTHOR_A1_A7_BLOB: 0a0a15d00b2e22049ff332274eff250678dfe136
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R06_247_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_METADATA_BLOB: 9987f1995c7eb41ab812cd5a555bc3ae603b9eaa
+AUTHOR_METADATA_BLOB: 0a0a15d00b2e22049ff332274eff250678dfe136
 Q01_FAMILY_AUDIT_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R02_Q01_SGK_PROBLEM_FAMILY_SCOPE_AUDIT_20261114.md
 Q01_FAMILY_AUDIT_BLOB: 052b06ea90d6191f125aef72f42d74dd9a6d86c8
 Q18_OUTCOME_ITEM_PED_AUDIT_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R02_Q18_40_OUTCOME_MATH_PED_ITEM_AUDIT_20261114.md
 Q18_OUTCOME_ITEM_PED_AUDIT_BLOB: 4785b3be15b49f968de27fad99fc311cb2f8bb1b
 S1_G12_CHII_ORIGINAL_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
-S1_G12_CHV_ORIGINAL_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a
+S1_G12_CHV_ORIGINAL_BLOB: a24abd682932e11761f7c85fa3a3d3cdd77b600e
 MODEL_ID: SLM-TOP18-OXYZ-GEOMETRY-R00
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_THPT_TOPIC18_OXYZ_SPHERE_GEOMETRY_R00_20261114.html
 INTERACTIVE_MODEL_BLOB: 1117d351d6818f1b4f7b40b5b42a5263b225849a
@@ -52,7 +51,7 @@ P0: 0
 P1: 0
 P2: 1
 P2_NOTE: SBT_P25_ORIGINAL_SCAN_NOT_AVAILABLE_NONBLOCKING; CONTENT_MATH_VERIFIED_INDEPENDENTLY
-BLOCKERS: W07_V2_SINGLE_ACTIVE_CANONICAL_PROMOTION_Q15_Q18
+BLOCKERS: NONE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
@@ -662,7 +661,7 @@ Exactly 3 independent learner pages **Kiến thức / Luyện tập / Tự kiể
 
 ## QUALITY_Q01_Q18_EVIDENCE
 
-The **ONE normative** Git source `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md` is v3.1.0 effective. The Q01 source amendment §II-A allows documented missing SBT reference pages without automatic entire-Topic hold when mandatory **SGK Core and outcome/problem family** are independently verified. These entries document AUTHORING source QA only; independent RELEASE AP/R/P remains NOT TESTED.
+The **ONE normative** Git source `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md` has owner-approved v3.2.0 effective; all older historical evidence remains source-scoped. The Q01 source amendment §II-A allows documented missing SBT reference pages without automatic entire-Topic hold when mandatory **SGK Core and outcome/problem family** are independently verified. These entries document AUTHORING source QA only; independent RELEASE AP/R/P remains NOT TESTED.
 
 | Qxx | exact source evidence | AUTHOR math/PED Q18 verdict | author source custody | RELEASE runtime |
 |---|---|---|---|---|
@@ -713,6 +712,7 @@ WHY arises from a concrete 3D drone/radar path; bridge from vectors to coordinat
 | FIG-TOP18-RADAR-TRAJECTORY-OXYZ-R00.svg | c818e636ded54730582b139f4476ce9daa2156b2 | new original white AUTHOR SVG |
 
 ## DELTA_LEDGER
+**20/11 final scope closure:** only material W07 v2 correction independently Academic/PED PASS alongside O38/O23 (O40 context), P0/P1/P2 zero, MINIMAL_DELTA NONE. Shared SGK ChV R01 active canonical file now has the same W07 v2 exact blob, historical v1 source still archived. Topic learner has 40 outcomes, 247 canonical items, 40 first tries, 247 balanced disclosures; no new math/ped change after independent reviewer. Q15 one active canonical, Q16 selfcheck NO_MASTERY. No SBT p25 blocker or RELEASE authorization.
 
 - `DELTA_C_R01_TO_R02_PED`: continuous seven transition narrative, NotebookLM natural language after S1 check, original 40 outcome structure preserved; no prior topic re-review or unapproved standard.
 - `DELTA_C_ITEM_CORRECTION`: P01 explicit Q between P–R, W04 angle60° vs normal30°, O17 cross-product component/dot derivation, new radar W07 original key/rubric after B17. No old SGK canonical source body changed.
