@@ -212,7 +212,7 @@ Giả sử biết \(A=30^{\circ}, a=5, b=8\). Định lí sin cho \(\sin B=b \si
 Muốn giải SSA an toàn, tính \(t=b \sin A/a\) trước: nếu \(t>1\), không có tam giác; nếu \(0<t\le 1\), phải xét cả \(B=\arcsin  t\) lẫn \(180^{\circ}-\arcsin  t\) và kiểm tra \(A+B<180^{\circ}\) từng trường hợp. Với t=1 hai giá trị B trùng nhau. Với A và các cạnh dương, số nghiệm phụ thuộc cả góc A và điều kiện tổng góc; không kết luận hai nghiệm chỉ vì t<1.
 
 
-> **GHI NHỚ — Trường hợp hai nghiệm SSA**
+> **KIẾN THỨC CẦN GHI NHỚ — Trường hợp hai nghiệm SSA**
 >
 > Biết A, a đối diện A, b đối diện B: \(\sin B=b\sin A/a\). Nếu tỉ số ngoài [0,1], vô nghiệm; nếu trong (0,1), xét cả \(B_1=\arcsin r\) và \(B_2=180^\circ-B_1\), **chỉ giữ** nghiệm có \(A+B<180^\circ\). Không mặc định luôn có hai nghiệm.
 
@@ -318,7 +318,7 @@ Một phép tính đúng trên máy không cứu được dữ kiện sai: ba th
 Thực hành một quy trình ổn định: (1) gọi tên cạnh/góc đối diện; (2) kiểm dữ kiện và bất đẳng thức tam giác; (3) quyết định SSS/SAS/ASA–AAS/SSA; (4) ghi điều kiện áp dụng trước khi thế; (5) kiểm tổng góc, tính dương, đơn vị và độ lớn kết quả. Đây là cách giúp một người tự học phát hiện lỗi mà chưa cần lời giải từ AI.
 
 
-> **GHI NHỚ — Điều kiện và kiểm nghiệm**
+> **KIẾN THỨC CẦN GHI NHỚ — Điều kiện và kiểm nghiệm**
 >
 > Mỗi lời giải phải kiểm tam giác không suy biến, ba cạnh thỏa bất đẳng thức, tổng góc 180°, miền của căn, mẫu số và số nghiệm SSA. Giá trị lấy từ máy không thay thế điều kiện mô hình.
 
