@@ -8,7 +8,7 @@ const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("n
 const {chromium}=require("playwright");
 const root=path.resolve(__dirname,"..");
 const base=(process.env.SCOPED_BASE_URL||"http://127.0.0.1:8765").replace(/\/$/,"");
-const lessons=["docs/thpt-preview/sgk/chuong-viii/bai-23.md"]; // TEMPORARY visual diagnostic ONLY, revert before final release
+const lessons=(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean);
 const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
 const widths=[390,820,1440];
 const re=/^docs\/thpt-preview\/sgk\/(?:(?:lop-11|lop-12)\/)?chuong-(?:i|ii|iii|iv|v|vi|vii|viii|ix)\/bai-[1-9]\d*\.md$/;
@@ -58,29 +58,6 @@ async function execute(){
      for(let i=0;i<4;i++){
       await tabs.locator(".tabbed-labels > label").nth(i).click();
       assert(await groups.nth(i).isVisible(),rel+" "+width+" learner tab "+i+" not visible");
-
-      // TEMPORARY G2 visual evidence only, NOT part of the final released test suite.
-      if(rel.endsWith("/chuong-viii/bai-23.md")&&width===820&&(i===2||i===3)){
-       await page.waitForTimeout(750); // allow native Material tab selection transition to settle
-       const report=await page.evaluate(()=>{
-        const article=document.querySelector(".md-content__inner");
-        const tab=article?.querySelector(":scope > .tabbed-set");
-        const active=tab?.querySelector(".tabbed-labels > label.slm-g10-active-tab");
-        const h2=tab?.querySelectorAll(".tabbed-block > h2.thpt-g10-section-heading");
-        const ex=tab?.querySelector(".tabbed-block:nth-child(3) .thpt-g10-example-solution");
-        const tips=tab?.querySelector(".tabbed-block:nth-child(4) details.tip > summary");
-        const h3=tab?.querySelector(".tabbed-block:nth-child(3) > h3");
-        const st=e=>e?{bg:getComputedStyle(e).backgroundColor,borderLeft:getComputedStyle(e).borderLeftWidth,
-         color:getComputedStyle(e).color,padding:getComputedStyle(e).padding,backgroundImage:getComputedStyle(e).backgroundImage}:null;
-        return {bridge:article?.dataset.g10B23Golden,classes:article?.className,active:active?.textContent.trim(),
-         activeStyle:st(active),sectionTitles:[...(h2||[])].map(x=>x.textContent.trim()),
-         exampleStyle:st(ex),errorStyle:st(tips),exampleHeadingStyle:st(h3)};
-       });
-       console.log("B23_VISUAL_G2_REPORT tab="+i+" "+JSON.stringify(report));
-       await page.evaluate(()=>window.scrollTo(0,0));
-       const png=await page.screenshot({type:"png"});
-       console.log("B23_VISUAL_G2_IMAGE_"+i+"="+png.toString("base64"));
-      }
       const figs=groups.nth(i).locator("figure img");
       for(const fig of await figs.all()){
        assert((await fig.getAttribute("alt"))?.trim(),rel+" "+width+" figure alt missing");
