@@ -1,7 +1,11 @@
-<!-- TOP18_QUALITY_FIRST_W07_O23_CURRENT_20261120 -->
-## Latest candidate — CONTENT QA first, canonical answer + learner D6
+<!-- TOP18_W07_O38_O23_CURRENT_20261120 -->
+## AUTHORING content-first snapshot — review only the affected math and pedagogy
 
-Current learner `1a99d380571afa573afecf64f619fb52d3dd30be` corrects the W07 displayed answer and TOP18-O23 D6. The **single original G12 CHV canonical source** has revised W07 answer at `ee7351bf5f4704c5d5c6bd08a7932c1630e59edf` (same ITEM_ID, content_version 2), fixing surface-circle vs filled-disk confusion. New affected author-Q18 receipt `f5f57804e025f2cad7d502796e30e62e06c73ce6`; original composite Q18 `5aa42a6f873614228a3c8dcef2e526daa5a4b82c` remains immutable prior-source evidence, not a new independent PASS. Reviewer affected-scope packet `0d14ec020fd03b127d0b9df61b6b657462eb4a8d` is pending independent Academic/PED verdict. Current candidate status **BLOCKED_BY_AUTHORING until affected review**, previous historical CONTENT_READY at old source blob preserved. The missing printed SBT p25 is a nonblocking bibliographic source issue and should not be pursued as a prerequisite to correctness. No release/merge/deploy.
+Current learner `1ad945ea583ce7ee91df64b58d3f31b31c202cd3`; original G12 CHV canonical bank `a24abd682932e11761f7c85fa3a3d3cdd77b600e`; author Q18 `347fa49647e3cb0f4abddcbf00c54e0df2d4e7e6`; A1 metadata `7e4e325684078fa984b830306b3d215732925e07`; independent NotebookLM review request `06e3f32aa5857b12b3564e2ba98a2b74677017de`.
+
+**Material academic/PED delta**: one canonical original W07 `ITEM_ID=THPT-G12-B14-W07; CONTENT_VERSION=2` explicitly says **mặt cầu** not khối cầu; corrects intersection as **đường tròn** not **hình tròn/đĩa**; expands geometric proof; replaces irrelevant 'ý nghĩa vật lý' rubric with five points that align with the question. Student O38 clarifies interior of khối cầu vs surface; O23 FirstTry and Practice D6 teach how to draw and derive. Existing 40 outcomes, 247 answer disclosures, all other item IDs and protected RD1 preserved. Previous accepted immutable source `bcc7cb6c57ea3cddbfae312a1fe2d31c0791b3f4` stays historical CONTENT_READY.
+
+**New candidate is BLOCKED_BY_AUTHORING until affected NotebookLM Academic and PED verdicts**; this is not an SBT missing-page problem. The shared SGK canonical changed on this Draft only and its older SGK ready manifests are NOT implicitly transferred to v2; must reconcile affected consumers after independent review. No website integration, merge/deploy or Mastery activation.
 
 ---
 
@@ -21,19 +25,19 @@ CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: 1a99d380571afa573afecf64f619fb52d3dd30be
+ACADEMIC_SOURCE_BLOB: 1ad945ea583ce7ee91df64b58d3f31b31c202cd3
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_O40_O23_W07_AUTHOR_Q18_CONTENT_DELTA_20261120.md
-REVIEW_RECEIPT_BLOB: f5f57804e025f2cad7d502796e30e62e06c73ce6
+REVIEW_RECEIPT_BLOB: 347fa49647e3cb0f4abddcbf00c54e0df2d4e7e6
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R06_247_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_A1_A7_BLOB: c3616d9d814f650c28259a8f42b0d17da7bde901
+AUTHOR_A1_A7_BLOB: 7e4e325684078fa984b830306b3d215732925e07
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R06_247_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_METADATA_BLOB: c3616d9d814f650c28259a8f42b0d17da7bde901
+AUTHOR_METADATA_BLOB: 7e4e325684078fa984b830306b3d215732925e07
 Q01_FAMILY_AUDIT_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R02_Q01_SGK_PROBLEM_FAMILY_SCOPE_AUDIT_20261114.md
 Q01_FAMILY_AUDIT_BLOB: 052b06ea90d6191f125aef72f42d74dd9a6d86c8
 Q18_OUTCOME_ITEM_PED_AUDIT_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R02_Q18_40_OUTCOME_MATH_PED_ITEM_AUDIT_20261114.md
 Q18_OUTCOME_ITEM_PED_AUDIT_BLOB: 4785b3be15b49f968de27fad99fc311cb2f8bb1b
 S1_G12_CHII_ORIGINAL_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
-S1_G12_CHV_ORIGINAL_BLOB: ee7351bf5f4704c5d5c6bd08a7932c1630e59edf
+S1_G12_CHV_ORIGINAL_BLOB: a24abd682932e11761f7c85fa3a3d3cdd77b600e
 MODEL_ID: SLM-TOP18-OXYZ-GEOMETRY-R00
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_THPT_TOPIC18_OXYZ_SPHERE_GEOMETRY_R00_20261114.html
 INTERACTIVE_MODEL_BLOB: 1117d351d6818f1b4f7b40b5b42a5263b225849a
@@ -43,7 +47,7 @@ P0: 0
 P1: 0
 P2: 1
 P2_NOTE: SBT_P25_ORIGINAL_SCAN_NOT_AVAILABLE_NONBLOCKING; CONTENT_MATH_VERIFIED_INDEPENDENTLY
-BLOCKERS: CĐ18_W07_O23_DELTA_C_AFFECTED_NOTEBOOKLM_REVIEW_PENDING
+BLOCKERS: CĐ18_W07_O38_O23_DELTA_C_AFFECTED_NOTEBOOKLM_ACADEMIC_PED_REVIEW_PENDING
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
