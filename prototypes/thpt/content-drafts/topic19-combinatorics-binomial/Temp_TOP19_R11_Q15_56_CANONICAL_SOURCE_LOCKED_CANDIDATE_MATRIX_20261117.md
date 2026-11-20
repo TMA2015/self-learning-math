@@ -1,12 +1,12 @@
 # CĐ19 R11 · Q15 56-item source-locked candidate ownership matrix · 17/11/2026
 
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 Q15_Q18_REVIEW_MODE: AUTHOR_SELF_VERIFIED_TARGETED
 STATE: CURRENT_AUTHORING_SOURCE_Q15_VERIFIED
 LEARNING_PATH: TOPIC
 SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R10_LANGUAGE_LOCAL_REFERENTS_CANDIDATE_20261117.md
-SOURCE_BLOB: 7005bf1f839e566efb9abbc17eccfa92a0b41e63
+SOURCE_BLOB: 2809816539e438726858daf18d7efb1d751ea7f7
 PREVIOUS_R10_LEARNER_SOURCE_BLOB: 37612a3fb8d804efa6dd4f65ddd22d90bf2772ae
 PREVIOUS_R10_SOURCE_MATRIX_BLOB: 448c913a0263cdc537a8e33a39bcdd8052ec3372
 IMMUTABLE_R09_OWNER_METADATA_BLOB: d21d1d3ede107b3b479d1f61a1ddc0e4df0414ec
@@ -21,19 +21,19 @@ The R11 source was independently re-fetched by exact Git SHA; 56 unique source m
 
 | # | item_id | primary_outcome | role | placement | source CONTENT_VERSION/provenance | R11 source line | proposed owner; original owner |
 |---:|---|---|---|---|---|---|---|
-| 1 | THPT-TOP19-T01 | TOP19-O01 | TOPIC_FIRST_TRY | TOPIC/KIEN_THUC/FIRST_TRY | TOP19-R03 | Kiến thức L49 | TOPIC_R11_PROPOSED_SOURCE_ONLY; original TOPIC_R08_CANONICAL |
+| 1 | THPT-TOP19-T01 | TOP19-O01 | TOPIC_FIRST_TRY | TOPIC/KIEN_THUC/FIRST_TRY | TOP19-R03 | Kiến thức L47 | TOPIC_R11_PROPOSED_SOURCE_ONLY; original TOPIC_R08_CANONICAL |
 | 2 | THPT-TOP19-T02 | TOP19-O02 | TOPIC_FIRST_TRY | TOPIC/KIEN_THUC/FIRST_TRY | TOP19-R10 | Kiến thức L86 | TOPIC_R11_PROPOSED_SOURCE_ONLY; original TOPIC_R08_CANONICAL |
-| 3 | THPT-TOP19-T03 | TOP19-O03 | TOPIC_FIRST_TRY | TOPIC/KIEN_THUC/FIRST_TRY | TOP19-R03 | Kiến thức L129 | TOPIC_R11_PROPOSED_SOURCE_ONLY; original TOPIC_R08_CANONICAL |
+| 3 | THPT-TOP19-T03 | TOP19-O03 | TOPIC_FIRST_TRY | TOPIC/KIEN_THUC/FIRST_TRY | TOP19-R03 | Kiến thức L127 | TOPIC_R11_PROPOSED_SOURCE_ONLY; original TOPIC_R08_CANONICAL |
 | 4 | THPT-TOP19-T04 | TOP19-O04 | TOPIC_FIRST_TRY | TOPIC/KIEN_THUC/FIRST_TRY | TOP19-R03 | Kiến thức L166 | TOPIC_R11_PROPOSED_SOURCE_ONLY; original TOPIC_R08_CANONICAL |
-| 5 | THPT-TOP19-T05 | TOP19-O05 | TOPIC_FIRST_TRY | TOPIC/KIEN_THUC/FIRST_TRY | TOP19-R03 | Kiến thức L212 | TOPIC_R11_PROPOSED_SOURCE_ONLY; original TOPIC_R08_CANONICAL |
-| 6 | THPT-TOP19-T06 | TOP19-O06 | TOPIC_FIRST_TRY | TOPIC/KIEN_THUC/FIRST_TRY | TOP19-R03 | Kiến thức L249 | TOPIC_R11_PROPOSED_SOURCE_ONLY; original TOPIC_R08_CANONICAL |
-| 7 | THPT-TOP19-T07 | TOP19-O07 | TOPIC_FIRST_TRY | TOPIC/KIEN_THUC/FIRST_TRY | TOP19-R03 | Kiến thức L286 | TOPIC_R11_PROPOSED_SOURCE_ONLY; original TOPIC_R08_CANONICAL |
+| 5 | THPT-TOP19-T05 | TOP19-O05 | TOPIC_FIRST_TRY | TOPIC/KIEN_THUC/FIRST_TRY | TOP19-R03 | Kiến thức L210 | TOPIC_R11_PROPOSED_SOURCE_ONLY; original TOPIC_R08_CANONICAL |
+| 6 | THPT-TOP19-T06 | TOP19-O06 | TOPIC_FIRST_TRY | TOPIC/KIEN_THUC/FIRST_TRY | TOP19-R03 | Kiến thức L245 | TOPIC_R11_PROPOSED_SOURCE_ONLY; original TOPIC_R08_CANONICAL |
+| 7 | THPT-TOP19-T07 | TOP19-O07 | TOPIC_FIRST_TRY | TOPIC/KIEN_THUC/FIRST_TRY | TOP19-R03 | Kiến thức L288 | TOPIC_R11_PROPOSED_SOURCE_ONLY; original TOPIC_R08_CANONICAL |
 | 8 | THPT-TOP19-T08 | TOP19-O08 | TOPIC_FIRST_TRY | TOPIC/KIEN_THUC/FIRST_TRY | TOP19-R03 | Kiến thức L323 | TOPIC_R11_PROPOSED_SOURCE_ONLY; original TOPIC_R08_CANONICAL |
-| 9 | THPT-TOP19-T14 | TOP19-O14 | TOPIC_FIRST_TRY | TOPIC/KIEN_THUC/FIRST_TRY | TOP19-R03 | Kiến thức L361 | TOPIC_R11_PROPOSED_SOURCE_ONLY; original TOPIC_R08_CANONICAL |
+| 9 | THPT-TOP19-T14 | TOP19-O14 | TOPIC_FIRST_TRY | TOPIC/KIEN_THUC/FIRST_TRY | TOP19-R03 | Kiến thức L359 | TOPIC_R11_PROPOSED_SOURCE_ONLY; original TOPIC_R08_CANONICAL |
 | 10 | THPT-TOP19-T09 | TOP19-O09 | TOPIC_FIRST_TRY | TOPIC/KIEN_THUC/FIRST_TRY | TOP19-R03 | Kiến thức L406 | TOPIC_R11_PROPOSED_SOURCE_ONLY; original TOPIC_R08_CANONICAL |
-| 11 | THPT-TOP19-T10 | TOP19-O10 | TOPIC_FIRST_TRY | TOPIC/KIEN_THUC/FIRST_TRY | TOP19-R03 | Kiến thức L443 | TOPIC_R11_PROPOSED_SOURCE_ONLY; original TOPIC_R08_CANONICAL |
-| 12 | THPT-TOP19-T13 | TOP19-O13 | TOPIC_FIRST_TRY | TOPIC/KIEN_THUC/FIRST_TRY | TOP19-R03 | Kiến thức L480 | TOPIC_R11_PROPOSED_SOURCE_ONLY; original TOPIC_R08_CANONICAL |
-| 13 | THPT-TOP19-T11 | TOP19-O11 | TOPIC_FIRST_TRY | TOPIC/KIEN_THUC/FIRST_TRY | TOP19-R03 | Kiến thức L522 | TOPIC_R11_PROPOSED_SOURCE_ONLY; original TOPIC_R08_CANONICAL |
+| 11 | THPT-TOP19-T10 | TOP19-O10 | TOPIC_FIRST_TRY | TOPIC/KIEN_THUC/FIRST_TRY | TOP19-R03 | Kiến thức L449 | TOPIC_R11_PROPOSED_SOURCE_ONLY; original TOPIC_R08_CANONICAL |
+| 12 | THPT-TOP19-T13 | TOP19-O13 | TOPIC_FIRST_TRY | TOPIC/KIEN_THUC/FIRST_TRY | TOP19-R03 | Kiến thức L484 | TOPIC_R11_PROPOSED_SOURCE_ONLY; original TOPIC_R08_CANONICAL |
+| 13 | THPT-TOP19-T11 | TOP19-O11 | TOPIC_FIRST_TRY | TOPIC/KIEN_THUC/FIRST_TRY | TOP19-R03 | Kiến thức L524 | TOPIC_R11_PROPOSED_SOURCE_ONLY; original TOPIC_R08_CANONICAL |
 | 14 | THPT-TOP19-T12 | TOP19-O12 | TOPIC_FIRST_TRY | TOPIC/KIEN_THUC/FIRST_TRY | TOP19-R03 | Kiến thức L561 | TOPIC_R11_PROPOSED_SOURCE_ONLY; original TOPIC_R08_CANONICAL |
 | 15 | THPT-TOP19-P01 | TOP19-O01 | TOPIC_PRACTICE | TOPIC/LUYEN_TAP/PRACTICE | UNCHANGED_R08_SOURCE_ITEM; VERSION_FROM_OWNER_BANK | Luyện tập L606 | TOPIC_R11_PROPOSED_SOURCE_ONLY; original TOPIC_R08_CANONICAL |
 | 16 | THPT-TOP19-P02 | TOP19-O02 | TOPIC_PRACTICE | TOPIC/LUYEN_TAP/PRACTICE | UNCHANGED_R08_SOURCE_ITEM; VERSION_FROM_OWNER_BANK | Luyện tập L648 | TOPIC_R11_PROPOSED_SOURCE_ONLY; original TOPIC_R08_CANONICAL |
@@ -114,3 +114,8 @@ The nineteen vetted R11 student-visible correction groups were applied **directl
 - Verified the inserted formulae independently: permutation `P_n=n!`, arrangements `A_n^k=n!/(n-k)!`, combinations `C_n^k=n!/[k!(n-k)!]`, for integer `0<=k<=n`; binomial `(a+b)^n=sum C_n^k a^(n-k)b^k`; polynomial coefficient sum `P(1)`. The summary is mathematically valid and reinforces concept selection rather than changing a worked exercise, answer, rubric or limitation.
 - Recomputed **all 56** unique canonical marker lines from actual `7005bf1f839e566efb9abbc17eccfa92a0b41e63`: 14 Topic first-try T, 14 Topic P, 3 Written and 25 original G10 SGK display-only canonical IDs; original G10 bank remains owner. After the seven-line insertion, **42 canonical marker line numbers** in Practice require +7, and all before insertion remain unchanged. All seven reused public P-item selfcheck placements have separate current source line references; no new item IDs.
 - Old matrix provenance/line numbers are superseded by this exact-source Q15 map, not a distinct learning bank. No official independent Topic Readiness, private RD1 exposure, Mastery, merge, deployment, or independent full-topic NotebookLM PASS.
+
+
+## 20/11/2026 — exact current Q15 item line audit
+- Current sole learner SHA `2809816539e438726858daf18d7efb1d751ea7f7`. Direct 56 canonical ID/line references and seven public same-ID Selfcheck placements matched from exact source file; 9 source line pointers corrected. No change to mathematical content, Q15 ownership, roles or item versions, original G10 bank, answers, rubric, RD1.
+- Older candidate/HOLD prose is historical; the authoritative current source pointer above is AUTHORING only. Independently reviewed Topic PASS / RELEASE not claimed.
