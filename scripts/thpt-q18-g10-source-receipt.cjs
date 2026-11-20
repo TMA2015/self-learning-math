@@ -107,7 +107,7 @@ function currentOneCanonicalAfterKiểmLỗi(name,priorPublicSha,priorManuscript
   assert.equal(hashes.length,2,prefix+" requires prior+new SHA");
   return hashes;
  };
- const [priorSource,currentSource]=getRow(name);
+ const [priorSource,currentSource]=getRow(name==="B09"?"B9":name);
  const [priorMaster,currentMaster]=getRow("CANONICAL_"+name);
  assert.equal(priorSource,priorPublicSha,name+" Q18 chain must start from prior published source SHA");
  assert.equal(priorMaster,priorManuscriptSha,name+" Q18 chain must start from prior signed manuscript SHA");
