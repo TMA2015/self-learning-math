@@ -15,7 +15,7 @@ const tokenSet=(s,k)=>[...s.matchAll(new RegExp(k+'="([^"]+)"',"g"))].map(x=>x[1
 function markdownAnswers(s){
  const lines=s.split("\n"),out=[];let block=null;
  for(const line of lines){
-  if(/^    \?\?\? question "Đối chiếu"$/.test(line)){
+  if(/^    \?\?\? question "(?:Đối chiếu(?: sau khi đã tự thao tác)?|(?:Em )?[Tt]ự mở đối chiếu sau khi đã (?:thử )?làm)"$/i.test(line)){
    if(block)out.push(block.join("\n").trimEnd());
    block=[line];continue;
   }
@@ -45,10 +45,19 @@ function b23CanonicalAnswers(s) {
    '        [B23_D6_NAVIGATION]');
  return firstAnswers(normalized);
 }
-const firstAnswers=s=>[
- ...[...s.matchAll(/<div class="thpt-r4-first-try-answer">[\s\S]*?<\/div>/g)].map(x=>x[0]),
- ...markdownAnswers(s)
-].sort();
+function firstAnswers(s){
+ const html=[...s.matchAll(/<div class="thpt-r4-first-try-answer">[\s\S]*?<\/div>/g)].map(x=>x[0]);
+ const md=markdownAnswers(s),count=tokenSet(s,"data-thpt-first-try-id").length;
+ // Preserve standalone mutation fixtures that intentionally have no marker.
+ if(!count)return [...html,...md].sort();
+ const needed=count-html.length;
+ assert(needed>=0,"More answer HTML than canonical First Try IDs");
+ const specialized=md.filter(x=>!x.startsWith('    ??? question "Đối chiếu"\n'));
+ const standard=md.filter(x=>x.startsWith('    ??? question "Đối chiếu"\n'));
+ const chosen=[...specialized,...standard].slice(0,needed);
+ assert.equal(chosen.length,needed,"Missing original First Try answer disclosures");
+ return [...html,...chosen].sort();
+}
 const latex=s=>[...s.matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]/g)].map(m=>(m[1]||m[2]).trim().replace(/\s+/g," "));
 const blob=b=>{const bytes=Buffer.isBuffer(b)?b:Buffer.from(b);return crypto.createHash("sha1").update("blob "+bytes.length+"\0").update(bytes).digest("hex")};
 const sha=s=>/^[a-f0-9]{40}$/.test(s||"")&&s!=="0".repeat(40);
