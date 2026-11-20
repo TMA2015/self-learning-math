@@ -30,13 +30,13 @@
 
     Khi nhìn một đường thẳng, em có thể chọn một mũi tên nằm **dọc theo đường** để chỉ hướng đi. Đó là vectơ chỉ phương. Một mũi tên **vuông góc** với đường được gọi là vectơ pháp tuyến. Cả hai đều phải khác vectơ không, vì một mũi tên không có độ dài thì không xác định được hướng.
 
-        <figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="../../../../assets/images/thpt/G10_B19_LINE_NORMAL_R02.svg" loading="lazy" alt="Đường 2x+y=6 qua P(1,4), vectơ chỉ phương (1,-2) và pháp tuyến (2,1)"><figcaption>Đường thẳng \(d:2x+y=6\) có một vectơ chỉ phương \((1,-2)\) và một pháp tuyến \((2,1)\). Hai vectơ vuông góc vì tích vô hướng bằng 0.</figcaption></figure>
+    <figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="../../../../assets/images/thpt/G10_B19_LINE_NORMAL_R02.svg" loading="lazy" alt="Đường 2x+y=6 qua P(1,4), vectơ chỉ phương (1,-2) và pháp tuyến (2,1)"><figcaption>Đường thẳng \(d:2x+y=6\) có một vectơ chỉ phương \((1,-2)\) và một pháp tuyến \((2,1)\). Hai vectơ vuông góc vì tích vô hướng bằng 0.</figcaption></figure>
 
     **Cách đọc hình:** Điểm P(1;4) nằm trên đường \(2x+y=6\). Từ P, mũi tên \(\vec u=(1,-2)\) đi sang phải một đơn vị và xuống hai đơn vị nên nằm dọc đường; mũi tên \(\vec n=(2,1)\) vuông góc với nó. Thật vậy, \(\vec u\cdot\vec n=2-2=0\). Em hãy nhìn dấu góc vuông và chiều của hai mũi tên, không chỉ đọc tên của chúng.
 
     Nếu đã biết pháp tuyến \(\vec n=(a;b)\), ta có thể chọn chỉ phương \(\vec u=(-b;a)\): tích vô hướng bằng \(a(-b)+ba=0\). Ta chỉ đổi **vai trò hướng**, chứ không đổi đường thẳng. Với \(a,b\) không đồng thời bằng 0, hai vectơ vừa chọn đều khác vectơ không.
 
-        <span id="thpt-g10-chvii-try01" data-thpt-first-try-id="THPT-G10-CHVII-TRY01" data-outcome-id="G10-B19-NORMAL_DIRECTION" data-thpt-help-ref="HELP-G10-CHVII-TRY01"></span>
+    <span id="thpt-g10-chvii-try01" data-thpt-first-try-id="THPT-G10-CHVII-TRY01" data-outcome-id="G10-B19-NORMAL_DIRECTION" data-thpt-help-ref="HELP-G10-CHVII-TRY01"></span>
 
     **Vận dụng.** Cho \(\vec n=(2;3)\) là một vectơ pháp tuyến của đường thẳng d. Vectơ \(\vec u=(-3;2)\) có phải là vectơ chỉ phương của d không? Hãy tính tích vô hướng và kiểm \(\vec u\ne\vec0\).
 
@@ -57,7 +57,7 @@
 
     Khi làm bài, hãy thay tọa độ A vào phương trình cuối cùng. Nếu kết quả khác 0, chắc chắn đã có lỗi chuyển dấu hoặc thay số.
 
-        <span id="thpt-g10-chvii-try02" data-thpt-first-try-id="THPT-G10-CHVII-TRY02" data-outcome-id="G10-B19-GENERAL_POINT" data-thpt-help-ref="HELP-G10-CHVII-TRY02"></span>
+    <span id="thpt-g10-chvii-try02" data-thpt-first-try-id="THPT-G10-CHVII-TRY02" data-outcome-id="G10-B19-GENERAL_POINT" data-thpt-help-ref="HELP-G10-CHVII-TRY02"></span>
 
     **Vận dụng.** Lập phương trình tổng quát của đường thẳng đi qua \(A(1;3)\) và có pháp tuyến \(\vec n=(2;-1)\). Em hãy viết từ tích vô hướng rồi kiểm lại tọa độ A.
 
@@ -78,7 +78,7 @@
 
     Đây là lý do để có dạng tham số: từ một điểm và một hướng, ta tạo ra được cả đường thẳng; còn dạng tổng quát nhận biết điểm thuộc đường qua một điều kiện.
 
-        <span id="thpt-g10-chvii-try03" data-thpt-first-try-id="THPT-G10-CHVII-TRY03" data-outcome-id="G10-B19-PARAMETRIC" data-thpt-help-ref="HELP-G10-CHVII-TRY03"></span>
+    <span id="thpt-g10-chvii-try03" data-thpt-first-try-id="THPT-G10-CHVII-TRY03" data-outcome-id="G10-B19-PARAMETRIC" data-thpt-help-ref="HELP-G10-CHVII-TRY03"></span>
 
     **Vận dụng.** Viết phương trình tham số của đường thẳng qua \(A(1;-1)\), nhận \(\vec u=(-2;3)\) làm vectơ chỉ phương. Em hãy thử \(t=0\) và \(t=1\) để kiểm lại.
 
@@ -97,7 +97,7 @@
 
     Chẳng hạn, nếu \(\overrightarrow{AB}=(p;q)\), ta có thể lấy pháp tuyến \(\vec n=(q;-p)\). Để tự kiểm, đừng chỉ thế A: **cả A và B đều phải thỏa phương trình tìm được**. Nếu A trùng B, một điểm không đủ xác định duy nhất một đường thẳng nên không được dùng công thức như thể đã biết hướng.
 
-        <span id="thpt-g10-chvii-try04" data-thpt-first-try-id="THPT-G10-CHVII-TRY04" data-outcome-id="G10-B19-TWO_POINTS" data-thpt-help-ref="HELP-G10-CHVII-TRY04"></span>
+    <span id="thpt-g10-chvii-try04" data-thpt-first-try-id="THPT-G10-CHVII-TRY04" data-outcome-id="G10-B19-TWO_POINTS" data-thpt-help-ref="HELP-G10-CHVII-TRY04"></span>
 
     **Vận dụng.** Cho \(A(-1;2)\), \(B(2;5)\). Hãy lập một phương trình tổng quát của đường AB bằng vectơ \(\overrightarrow{AB}\) và thử lại cả hai điểm.
 
@@ -116,7 +116,7 @@
 
     Chú ý dấu âm của hệ số khi thay. Với hai điểm, em thực hiện hai phép thử độc lập, tránh dùng kết quả của điểm này để kết luận cho điểm kia.
 
-        <span id="thpt-g10-chvii-try05" data-thpt-first-try-id="THPT-G10-CHVII-TRY05" data-outcome-id="G10-B19-MEMBERSHIP" data-thpt-help-ref="HELP-G10-CHVII-TRY05"></span>
+    <span id="thpt-g10-chvii-try05" data-thpt-first-try-id="THPT-G10-CHVII-TRY05" data-outcome-id="G10-B19-MEMBERSHIP" data-thpt-help-ref="HELP-G10-CHVII-TRY05"></span>
 
     **Vận dụng.** Cho \(d:2x-3y+1=0\), \(M(1;1)\) và \(N(2;1)\). Điểm nào thuộc d? Hãy thế từng cặp tọa độ vào phương trình.
 
@@ -135,7 +135,7 @@
 
     Đừng suy từ việc “hai đường gặp nhau” sang “hai đường vuông góc”. Đó là hai câu hỏi khác nhau. Bài 20 sẽ tiếp tục hệ thống hóa vị trí tương đối và góc giữa các đường thẳng.
 
-        <span id="thpt-g10-chvii-try06" data-thpt-first-try-id="THPT-G10-CHVII-TRY06" data-outcome-id="G10-B19-MULTISTEP" data-thpt-help-ref="HELP-G10-CHVII-TRY06"></span>
+    <span id="thpt-g10-chvii-try06" data-thpt-first-try-id="THPT-G10-CHVII-TRY06" data-outcome-id="G10-B19-MULTISTEP" data-thpt-help-ref="HELP-G10-CHVII-TRY06"></span>
 
     **Vận dụng.** Hai đường \(d_1:x+y=4\) và \(d_2:x-y=2\) gặp nhau ở đâu? Chúng có vuông góc không? Hãy giải hệ trước, sau đó kiểm hướng bằng hai pháp tuyến.
 
@@ -156,7 +156,7 @@
 
     Nếu tiếp tục dự đoán ngoài khoảng dữ liệu đã có, kết quả chỉ đáng tin khi **giả thiết tuyến tính vẫn phù hợp**. Đây cũng là cách suy nghĩ khi mô tả quãng đường, nhiệt độ hoặc chi phí theo một đại lượng.
 
-        <span id="thpt-g10-chvii-try07" data-thpt-first-try-id="THPT-G10-CHVII-TRY07" data-outcome-id="G10-B19-LINEAR_MODEL" data-thpt-help-ref="HELP-G10-CHVII-TRY07"></span>
+    <span id="thpt-g10-chvii-try07" data-thpt-first-try-id="THPT-G10-CHVII-TRY07" data-outcome-id="G10-B19-LINEAR_MODEL" data-thpt-help-ref="HELP-G10-CHVII-TRY07"></span>
 
     **Vận dụng.** Giá trị V theo thời gian t (\(t\ge0\)) nhận \(V(0)=5\) và \(V(2)=9\). Giả sử V thay đổi tuyến tính theo t. Hãy lập \(V(t)\), tính \(V(3)\) và nêu giả thiết cần có khi dự đoán ở \(t=3\).
 
