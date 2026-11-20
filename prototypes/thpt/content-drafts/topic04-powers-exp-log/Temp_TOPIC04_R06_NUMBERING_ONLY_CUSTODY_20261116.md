@@ -1,9 +1,9 @@
 # CĐ4 R06 — AUTHORING numbering-only Q18 custody
 
 CURRENT_SOURCE_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_R06_NUMBERING_CONSISTENT_20261116.md
-CURRENT_SOURCE_BLOB: 2444022a5fec0f6b94de4002d8f08363e3b82453
+CURRENT_SOURCE_BLOB: e9294c7e564d7af96df58a99d0b85ed0023ff859
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC04_R06_NUMBERING_DELTA_A_Q18_20261116.md
-CURRENT_Q18_RECEIPT_BLOB: 30ee18347f59db6267ebfad04f1bfa7a9d0bf85b
+CURRENT_Q18_RECEIPT_BLOB: 7fa1391687a04e52dd38d52dec5446ccea3e5039
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
@@ -147,3 +147,9 @@ RELEASE_AUTHORIZATION: NO
 
 
 **20/11 G11 S1 B19 Delta C:** log base10/ln base e/e limit with continuous growth model, current learner `2444022a5fec0f6b94de4002d8f08363e3b82453`, Q18 `30ee18347f59db6267ebfad04f1bfa7a9d0bf85b`, author affected math 7/7 PASS, canonical IDs and old maths unchanged; CONTENT_READY retained.
+
+
+## 20/11/2026 A1 source lock
+- CURRENT_SOURCE_BLOB: e9294c7e564d7af96df58a99d0b85ed0023ff859
+- CURRENT_Q18_RECEIPT_BLOB: 7fa1391687a04e52dd38d52dec5446ccea3e5039
+- Four mathematical callout types harmonized, only prefix ΔA; canonical maths unchanged.
