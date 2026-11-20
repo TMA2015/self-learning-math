@@ -71,8 +71,16 @@ for(const [lessonStr,info]of Object.entries(specs)){
   const field=k=>latest.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(field("PREVIOUS_B21_SOURCE_BLOB"),row.candidate,
    "B21 must extend exact prior 13/11 SGK S1 published source");
-  assert.equal(field("CANDIDATE_B21_SOURCE_BLOB"),expected,
-   "B21 current Git source must match new Q18 owner receipt");
+  const r01=field("CANDIDATE_B21_SOURCE_BLOB");
+  assert.equal(r01,"37c0a0c2e3c785bbfb1b4852162c867cf72e1626",
+   "B21 original R01 signed source must remain immutable");
+  const fixed=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHVII_B21_DISPLAY_MATH_RENDER_R02_20261120.md"),"utf8");
+  const f02=k=>fixed.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(f02("PREVIOUS_B21_SOURCE_BLOB"),r01,
+   "B21 display-math R02 must extend exact R01");
+  assert.equal(f02("CANDIDATE_B21_SOURCE_BLOB"),expected,
+   "B21 canonical source must match exact R02 source SHA");
  }
  assert.equal(row.moved,info.count,name+" 25 First Try count source receipt");
  assert.equal(row.helps,info.helps,name+" 33 HELP source receipt");
@@ -167,6 +175,13 @@ for(const [lessonStr,info]of Object.entries(specs)){
    "B21 original tangent SVG must be read within Discovery");
   assert.equal((s.match(/^    \\\[$/gm)||[]).length,5,
    "B21 must preserve three original SGK and two worked example display math blocks");
+  assert(!examples.includes('<div class="arithmatex">'),
+   "B21 display TeX must be standalone Markdown, never raw nested arithmatex tags that strip delimiters");
+  const displays=[...examples.matchAll(/^    \\\[$/gm)];
+  assert.equal(displays.length,2,
+   "B21 neutral example 3.2 must keep both visible standalone display formulas");
+  assert(examples.includes("(x-2)^2+(y+3)^2=25.")&&examples.includes("3x+4y-19=0"),
+   "B21 two original worked display expressions are mandatory");
   for(const token of ["đường biên","hoàn thành bình phương","đường trung trực",
     "M thuộc đường tròn","khoảng cách ngắn nhất"])
    assert(s.includes(token),"B21 full learner explanation missing: "+token);
