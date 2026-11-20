@@ -14,12 +14,12 @@ CURRENT_PR: #818 Draft AUTHORING; no merge or deploy
 CATALOG_TOPIC_ID: CD02
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: cb3a6e6be2ec3419be3fdc16f0e5df3599fe1ec2
+ACADEMIC_SOURCE_BLOB: 36d6657b9977e3f72d7bf73d98653188a0ebe760
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC02_R06_NUMBERING_DELTA_A_Q18_20261116.md (AUTHOR_SELF_QA only, not a new independent reviewer PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC02_R06_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: f9d415337e409b518d18147d5e7d7ed89eb31012
+REVIEW_RECEIPT_BLOB: d91f05f9fdb43229a19d396c93e740568151154d
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC02-INEQ-QUAD-REGION-FULL-R06_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: be4891292bc012cdf1d7675fd91da8ec99d0f5a7
+AUTHOR_HANDOFF_BLOB: f8961ac6a5b9644092d737db33161b3444dc7f2d
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC02_INEQ_QUAD_REGION_ORIGINAL18_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 6412d01a5d2c9b04c6f97d5b6a41c43e85d1c2df
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC02_INEQ_QUAD_REGION_ORIGINAL20_EXTENSION_R01_20261112.md
@@ -104,3 +104,7 @@ PUBLIC_SELF_CHECK: 16 public replay questions, no Mastery/heldout score
 
 
 **20/11 SGK B17 Δ′ (Delta C):** mandatory reduced discriminant/conditions restored in current learner `cb3a6e6be2ec3419be3fdc16f0e5df3599fe1ec2`; 6/6 targeted Q18; updated A1 `34a45ef89c1e1de6783e550ee8ed0bb4c2e8a088`, Q18 `f9d415337e409b518d18147d5e7d7ed89eb31012`, V2 `be4891292bc012cdf1d7675fd91da8ec99d0f5a7`. Owner content-ready retention; full 22-topic mandatory S1 audit incomplete. No production authorization.
+
+
+## 20/11/2026 authoring current source
+- SOURCE 36d6657b9977e3f72d7bf73d98653188a0ebe760, Q18 d91f05f9fdb43229a19d396c93e740568151154d, A1 0cc0b9dbad07e6240021700fbd5e8b428da2d116, V2 f8961ac6a5b9644092d737db33161b3444dc7f2d: one proper PHƯƠNG PHÁP label, no mathematical content changed, no merge/deploy.
