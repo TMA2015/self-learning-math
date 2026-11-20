@@ -1,5 +1,13 @@
 # Bài 22. Ba đường conic
 
+<style>
+/* B22-only Golden semantic colors, no shared UI/runtime, B19–B21 unchanged */
+.md-typeset:has([data-thpt-first-try-id="THPT-G10-CHVII-TRY18"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card {background:#e8f7f2;border-color:#a9dccc;border-left-color:#087d69;color:#174137}
+.md-typeset:has([data-thpt-first-try-id="THPT-G10-CHVII-TRY18"]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card {background:#eaf1fc;border-color:#a5bee5;border-left-color:#4879c2;color:#193d66}
+[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id="THPT-G10-CHVII-TRY18"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card {background:#193d36;border-color:#447e70;border-left-color:#76dfc7;color:#e9fff7}
+[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id="THPT-G10-CHVII-TRY18"]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card {background:#203551;border-color:#45658a;border-left-color:#8cb4ed;color:#ecf5ff}
+</style>
+
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VII · KIẾN THỨC SGK KNTT</p>
 <p class="thpt-r4-lead">Tìm hiểu elip, hypebol và parabol; nhận biết công thức, tính chất và các điều kiện của ba đường conic.</p>
@@ -181,6 +189,8 @@
 
     ### 2.1. Elip
 
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Elip:</strong> Cho hai tiêu điểm F₁, F₂ phân biệt, cách nhau 2c. Elip là tập hợp những điểm M có <strong>tổng MF₁ + MF₂ = 2a không đổi</strong>, với <strong>a &gt; c &gt; 0</strong>. Như vậy tổng hai khoảng cách luôn lớn hơn đoạn thẳng nối hai tiêu điểm.</div>
+
     #### Elip — trục lớn trùng \(Ox\)
 
 
@@ -188,12 +198,16 @@
 
 
 
-    **Cách đọc hình.** Đọc hai tiêu điểm và độ dài các bán trục trong hình elip; điểm trên elip có tổng khoảng cách đến hai tiêu điểm không đổi.
+    Ở dạng chính tắc dưới đây, chọn gốc O là trung điểm hai tiêu điểm và cho trục lớn trùng Ox. Điểm trên elip có tổng khoảng cách đến hai tiêu điểm không đổi. Hai tiêu điểm nằm trên trục lớn, giữa hai đỉnh; **bán trục b không phải khoảng cách từ tâm đến tiêu điểm**.
     Dạng chính tắc \(\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1\), với \(a>b>0\). Đặt \(c^2=a^2-b^2\), hai tiêu điểm là \((\pm c;0)\), các đỉnh \((\pm a;0)\) và \((0;\pm b)\).
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Tìm tiêu điểm elip trục lớn Ox:</strong> Mẫu lớn hơn dưới x² cho bình phương bán trục lớn a²; mẫu dưới y² cho b². Lấy <strong>c² = a² − b²</strong> và căn dương để tìm c, sau đó đặt hai tiêu điểm tại (−c;0), (c;0). Không áp nguyên tọa độ này cho elip quay hay đổi trục lớn.</div>
 
     **Ví dụ:** \(\dfrac{x^2}{25}+\dfrac{y^2}{9}=1\) có \(a=5\), \(b=3\), \(c=4\), tiêu điểm \((\pm4;0)\); tổng khoảng cách từ một điểm trên elip đến hai tiêu điểm bằng \(2a=10\).
 
     ### 2.2. Hypebol
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Hypebol:</strong> Cho hai tiêu điểm F₁, F₂ cách nhau 2c. Hypebol là tập hợp những điểm M có <strong>giá trị tuyệt đối hiệu hai khoảng cách |MF₁ − MF₂| = 2a không đổi</strong>, với <strong>0 &lt; a &lt; c</strong>. Các điểm tạo thành hai nhánh không khép kín.</div>
 
     #### Hypebol — trục thực trùng \(Ox\)
 
@@ -202,12 +216,16 @@
 
 
 
-    **Cách đọc hình.** Đọc hai nhánh hypebol, hai tiêu điểm và đường tiệm cận; đừng tráo công thức c²=a²+b² thành elip.
+    Với trục thực trùng Ox, hai nhánh mở sang trái và phải, các đỉnh ở gần tâm hơn hai tiêu điểm. Hai đường tiệm cận chéo biểu thị hướng các nhánh khi đi xa; chúng **không phải chính hai nhánh**. Hình trạm tín hiệu trong tab Khám phá là một tình huống có số liệu riêng, không phải hình chính tắc để đọc a,b của mọi ví dụ.
     Dạng chính tắc \(\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1\), \(a,b>0\). Khi đó \(c^2=a^2+b^2\), hai tiêu điểm \((\pm c;0)\), các đỉnh \((\pm a;0)\), các tiệm cận \(y=\pm\dfrac ba x\).
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Tiêu điểm và tiệm cận hypebol:</strong> Dấu trừ phân biệt hypebol với elip. Với số hạng x² dương, chọn a² ở mẫu dương, b² ở mẫu âm; <strong>c² = a² + b²</strong>, nên c &gt; a. Hai tiệm cận qua O có hệ số góc <strong>±b/a</strong>. Nếu đổi tâm hoặc đổi trục phải biến đổi phương trình trước.</div>
 
     **Ví dụ:** \(\dfrac{x^2}{9}-\dfrac{y^2}{16}=1\): \(a=3,b=4,c=5\), hai tiệm cận \(y=\pm4x/3\).
 
     ### 2.3. Parabol
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Parabol:</strong> Cho một tiêu điểm F và một đường thẳng cố định Δ <strong>không đi qua F</strong> (đường chuẩn). Parabol là tập hợp những điểm M có <strong>khoảng cách MF bằng khoảng cách vuông góc từ M đến Δ</strong>. Khoảng cách từ F tới Δ là tham số tiêu, phải dương.</div>
 
     #### Parabol — quy ước \(y^2=2px,\ p>0\)
 
@@ -216,14 +234,20 @@
 
 
 
-    **Cách đọc hình.** Trên parabol y²=4x, đỉnh là O, F(1,0), đường chuẩn x=-1; điểm trên đường cách đều tiêu điểm và đường chuẩn.
+    Hình thật của đường y²=4x đã đặt cạnh phần Khám phá: O là đỉnh, F(1,0) ở bên phải, đường chuẩn x=−1 ở bên trái; điểm trên đường cách đều F và đường chuẩn. Đường cong mở về phía tiêu điểm. Không lấy hình này làm số liệu của phương trình y²=8x trong câu Vận dụng.
     Parabol có đỉnh \(O(0;0)\), tiêu điểm \(F(p/2;0)\), đường chuẩn \(x=-p/2\). Mọi điểm \(M\) trên parabol có khoảng cách đến tiêu điểm bằng khoảng cách đến đường chuẩn.
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Phương trình chính tắc parabol:</strong> Với <strong>p &gt; 0</strong> trong quy ước y² = 2px, hệ số x bằng 2p, nên <strong>tiêu điểm là (p/2;0)</strong> và <strong>đường chuẩn x = −p/2</strong>. Không dùng một quy ước hệ số 4p khác rồi giữ nguyên công thức tiêu điểm.</div>
 
     **Ví dụ:** \(y^2=12x\), suy ra \(p=6\), \(F(3;0)\), đường chuẩn \(x=-3\). Điểm \(M(3;6)\) thuộc parabol vì \(36=12\cdot3\); hai khoảng cách đều bằng \(6\).
 
     ### 2.4. Một số ứng dụng của ba đường conic
 
     Các mô hình conic có thể mô tả **mái vòm elip**, **chênh lệch khoảng cách tới hai trạm tín hiệu (hypebol)** hoặc **bộ phận phản xạ parabol**. Khi vận dụng, phải chọn đúng dạng đường cong, đơn vị, miền tọa độ và điều kiện của bài toán; không suy kết quả chỉ từ hình minh họa.
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Chọn đúng mô hình trước khi tính:</strong> Mái nửa elip dùng <strong>bán trục theo phương ngang/đứng</strong>, chỉ xét nửa trên và độ cao tại mép; không tùy tiện áp điều kiện a&gt;b của elip trục lớn Ox vào một mái có thể cao hơn chiều ngang. Tín hiệu hypebol đòi hỏi trạm phát đồng thời, cùng vận tốc và độ lệch quãng đường <strong>nhỏ hơn khoảng cách hai trạm</strong>; phải biết trạm đến trước mới chọn được nhánh. Mặt cắt parabol chỉ cho số đo trong miền thực tế đã mô hình hóa.</div>
+
+    Tính chất quang học trong SGK cũng cho thấy **parabol** có khả năng biến các tia tới song song trục thành các tia phản xạ đi qua tiêu điểm (với bề mặt phản xạ và hình học phù hợp). Vì vậy chảo thu tín hiệu, đèn pha có dạng phản xạ parabol. Đây là <strong>ứng dụng hình học được giới thiệu</strong>, không dùng công thức tọa độ để suy ra định luật phản xạ hay tuyên bố mọi mặt cắt thực tế đều là parabol chính xác.
 
     #### Phân biệt công thức và điều kiện sử dụng
 
