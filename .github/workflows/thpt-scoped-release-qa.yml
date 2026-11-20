@@ -41,6 +41,21 @@ jobs:
         run: |
           git diff --name-only "$BASE_SHA...$HEAD_SHA" > "$RUNNER_TEMP/scoped-paths.txt"
           node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/scoped-paths.txt" >> "$GITHUB_OUTPUT"
+      - name: Run exact source-locked regression gates on CI-only test repairs
+        if: ${{ steps.impact.outputs.impact == 'CI_ROUTING_ONLY' }}
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || 'origin/main' }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          git diff --name-only "$BASE_SHA...$HEAD_SHA" > "$RUNNER_TEMP/qa-source-gate-files.txt"
+          if grep -Fxq 'scripts/test-thpt-ap-vector-knowledge-parity.cjs' "$RUNNER_TEMP/qa-source-gate-files.txt"; then
+            node --check scripts/test-thpt-ap-vector-knowledge-parity.cjs
+            node scripts/test-thpt-ap-vector-knowledge-parity.cjs
+          fi
+          if grep -Fxq 'scripts/test-thpt-chvi-student-notes.cjs' "$RUNNER_TEMP/qa-source-gate-files.txt"; then
+            node --check scripts/test-thpt-chvi-student-notes.cjs
+            node scripts/test-thpt-chvi-student-notes.cjs
+          fi
       - name: Protect source manifests and new V2 academic handoffs
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha || 'origin/main' }}
