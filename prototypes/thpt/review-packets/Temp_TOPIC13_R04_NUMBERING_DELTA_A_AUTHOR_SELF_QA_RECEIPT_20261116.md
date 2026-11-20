@@ -19,14 +19,14 @@
 **Phạm vi AUTHORING hiệu lực:** sau baseline R04 và sửa bank ký hiệu trên PR #841, lượt này sửa 15 dòng Kiến thức O07/O08/O11/O14/O15 để phân biệt tọa độ vectơ với độ dài đoạn; làm rõ ba đề NEW20 và rubric W03, cùng sáu câu tự kiểm tra chỉ nhắc lại đề đã xem. Giữ nguyên 52 `item_id`, dữ kiện số, đáp án, phép toán, 4 rubric tổng /7, 16 outcome, 4 SVG và Q16 public replay; W03 đổi `content_version=2` trong MỘT bank canonical. DELTA_C cho lỗi diễn đạt toán/rubric W03, DELTA_B cho cách trình bày tương đương ở các câu còn lại, không tự gọi độc lập NotebookLM PASS.
 
 PACKET_ID: THPT-TOPIC13-PLANAR-SPATIAL-VECTORS-FULL-R01
-CONTENT_REVISION: R07_EDITORIAL_FINAL_20261118
+CONTENT_REVISION: R07_FULL_G10_G12_S1_KNOWLEDGE_20261120
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: a55f76444b2347ddada26c7cea4b178f70d6580d
-ACADEMIC_SOURCE_BLOB: a55f76444b2347ddada26c7cea4b178f70d6580d
+SOURCE_BLOB: b89f0309213a357768c4b3a94da474b6dbc0ac3c
+ACADEMIC_SOURCE_BLOB: b89f0309213a357768c4b3a94da474b6dbc0ac3c
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R03_STUDENT_FIRST_52_CANONICAL_VISIBLE_20261116.md
@@ -49,7 +49,7 @@ PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
 P2: 0
-AUTHOR_SIGNOFF: TOPIC13_R07_20261118_fcac52eb1263eb3c91799a647aad184f08952d34_AUTHOR_SELF_VERIFIED
+AUTHOR_SIGNOFF: TOP13_G10B07_B11_G12B06_B08_FULL_KNOWLEDGE_b89f0309213a357768c4b3a94da474b6dbc0ac3c
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_IMPORTED: 0
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
@@ -123,3 +123,11 @@ Source currently `9a558f553bd6a4a58701a6bae490717ba5a52540` in the existing Topi
 
 ## 20/11/2026 · owner label correction ΔA vector properties
 - Current learner `a55f76444b2347ddada26c7cea4b178f70d6580d`, historical `fcac52eb1263eb3c91799a647aad184f08952d34`. Three formal `QUY TẮC` headings are true TÍNH CHẤT of vector addition: parallelogram/subtraction, 3D parallelepiped three-edge composition and Chasles/trung điểm/trọng tâm; each now labeled TÍNH CHẤT. Exact vector arrows, assumptions, formulas, 52 canonical items, solutions/rubrics, SVG and public safe selfchecks unchanged. Targeted Q03/PED Delta A author self QA, not independent Reviewer PASS nor RELEASE.
+
+
+## 20/11 — Q18 trọn Kiến thức S1 G10 B07–B11 / G12 B06–B08
+
+- **Nguồn học sinh duy nhất:** `b89f0309213a357768c4b3a94da474b6dbc0ac3c`, baseline gần nhất `a55f76444b2347ddada26c7cea4b178f70d6580d`. Bài 7–11 Toán 10 KNTT T1 / Bài 6–8 Toán 12 KNTT T1 đối chiếu các phát biểu SGK (SGKVN trực tuyến B06 B07 và bản gốc đã lưu ở AUTHORING). Đọc toàn bộ 16/16 lesson/outcome; giữ một câu hỏi–một ID canonical, ba trang độc lập, không Core riêng.
+- **DELTA_C thực chất:** O01 và O09 chỉnh chính xác quy ước SGK Toán 12 B06: góc với vectơ-không được phép nhận một số đo tùy ý từ 0° đến 180°, không kết luận có góc duy nhất hoặc dùng công thức cos chia độ dài 0; O12 công thức trọng tâm **tứ diện bốn đỉnh** và tỷ lệ AI=3/4 AG; O13 tính chất tích vô hướng giao hoán, phân phối, tương thích phép nhân số, bình phương tổng/hiệu; O14 ba vectơ đơn vị i,j,k, biểu diễn duy nhất và phương trình ba mặt phẳng tọa độ; O15 điều kiện cùng phương xác định ba điểm thẳng hàng. O05 định lý phân tích mặt phẳng theo hai hướng không cùng phương và O03/O05 tính chất cộng, nhân vectơ đã có ở baseline trước, giữ nguyên.
+- **Math check:** tứ diện A(0,0,0),B(4,0,0),C(0,4,0),D(0,0,4) có G_BCD=(4/3,4/3,4/3), I=(1,1,1)=A+3/4(G−A). Với u,v độ dài 3,4 góc 60°, u·v=6 nên |u−v|²=9−12+16=13. M(2,−1,3) iff OM=2i−j+3k; N(4,0,−2) thuộc Ozx, không thuộc trục riêng; A(1,0,2),B(2,2,1),C(4,6,−1) có AC=3AB, AB≠0; điều kiện phân thức tính góc được ghi rõ.
+- **Giới hạn thẩm quyền:** Đây là author self academic/PED QA trong phạm vi **trọn Knowledge** S1, không lấy CI cũ làm bằng chứng PASS cho source mới. Bản Luyện tập và Tự kiểm tra sau heading `# Luyện tập` giữ **byte-identical** với baseline; 16 outcomes, 52 canonical public (20 G10+12 G12+20 Topic), 4 Written, 16 public replay only, 4 SVG và các lời giải/rubric không thay. Không private RD1/official Mastery/Final Submit, không independent NotebookLM Topic full reviewer, không merge/deploy. P0=0, P1=0 trên phần đã tự kiểm.
