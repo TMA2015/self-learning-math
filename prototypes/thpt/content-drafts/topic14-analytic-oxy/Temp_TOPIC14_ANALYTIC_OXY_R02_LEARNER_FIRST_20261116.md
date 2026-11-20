@@ -214,8 +214,6 @@ Mức tăng 2 lít/phút, V(t)=2t+5 nên V(4)=13 lít, nếu chưa tràn bể.
 
 </details>
 
-**Mạch B — Vị trí, góc và khoảng cách (Bài 20)**
-
 ## 2. Vị trí, góc và khoảng cách giữa các đường thẳng
 
 Sau khi viết được phương trình, em có thể giải thích hai đường gặp nhau hay không, chúng tạo góc nào và một điểm cách đường bao xa. Mỗi câu hỏi có một phép kiểm riêng; nhìn hình chỉ giúp định hướng.
@@ -364,8 +362,6 @@ Góc nhỏ giữa trục Oy (x=0) và đường y=x là bao nhiêu?
 
 </details>
 
-**Mạch C — Đường tròn (Bài 21)**
-
 ## 3. Đường tròn trong mặt phẳng tọa độ
 
 Từ ý tưởng những điểm cách một tâm cùng khoảng, ta tìm được phương trình đường tròn và lý giải các tiếp tuyến hay giao điểm. Bán kính và điều kiện tồn tại phải được kiểm trước khi tính.
@@ -513,8 +509,6 @@ Khoảng cách từ tâm đến đường cho biết nó ở ngoài, tiếp xúc
 **Nếu làm sai:** Nếu đếm hai nghiệm bằng nhau là hai tiếp điểm, nhớ nghiệm bội chỉ cho **một** điểm.
 
 </details>
-
-**Mạch D — Ba đường conic (Bài 22)**
 
 ## 4. Ba đường conic và ứng dụng
 
