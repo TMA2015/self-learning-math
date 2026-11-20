@@ -7,8 +7,8 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: e9294c7e564d7af96df58a99d0b85ed0023ff859
-ACADEMIC_SOURCE_BLOB: e9294c7e564d7af96df58a99d0b85ed0023ff859
+SOURCE_BLOB: a101ca5e0130ff51fab1a1c867e1b23d642d98b8
+ACADEMIC_SOURCE_BLOB: a101ca5e0130ff51fab1a1c867e1b23d642d98b8
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_R05_STUDENT_FIRST_75_CANONICAL_VISIBLE_20261115.md
 PREVIOUS_SOURCE_BLOB: c948ad9957bbcd55b416ea7ddce96a6dcdf0d799
 PREVIOUS_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC04_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
@@ -69,3 +69,13 @@ Owner ΔA 19/11: 15 phát biểu mũ/logarit/hàm số đã có trong văn xuôi
 ## 20/11/2026 · owner formal-label ΔA TOP04 knowledge
 - New learner blob `e9294c7e564d7af96df58a99d0b85ed0023ff859`, former `2444022a5fec0f6b94de4002d8f08363e3b82453` is historical. Reclassified exactly four statement-label prefixes: two exponent/log laws are TÍNH CHẤT (not vague QUY TẮC); logarithm real-domain restrictions are KIẾN THỨC CẦN GHI NHỚ; the defining positive constant e is ĐỊNH NGHĨA (not vague KHÁI NIỆM). Same mathematical content/conditions/examples and 75 canonical item stems/keys/rubrics, 18 selfchecks unchanged.
 - Targeted Q03/PED source-only ΔA self QA passed; no fresh independent NotebookLM PASS, no full S1 or RELEASE acceptance.
+
+
+## 20/11/2026 — Kiến thức CĐ04 hoàn thiện theo S1 G11 T2 B18–B21
+- Bài 18 (trang in 4–9): kiểm số mũ nguyên/âm/0, lũy thừa hữu tỉ/thực, tính gần đúng bằng máy tính, căn bậc n và 5 đẳng thức căn (tích, thương, lũy thừa, căn lồng, căn của lũy thừa chẵn/lẻ). Đã bổ sung định nghĩa thật của căn bậc n và số mũ thực, nêu rõ |a| trong căn bậc chẵn, điều kiện cơ số âm và ví dụ.
+- Bài 19 (trang in 10–15): định nghĩa lôgarit, hai phép đảo a^(log_a M)=M và log_a(a^x)=x, tính chất log, đổi cơ số, số e, log/ln và cơ số hợp lệ. Đã bổ sung hai công thức đảo.
+- Bài 20 (trang in 16–19): hàm mũ/log, miền, tập giá trị, đồ thị, tính đơn điệu, tiệm cận, hai hàm ngược và đối xứng: đã kiểm trong O09–O12, không sửa vì đã đủ.
+- Bài 21 (trang in 20–24): bổ sung phương trình mũ a^x=b với b>0/b≤0; phương trình log log_a x=b; bất phương trình mũ với b≤0, b>0 và bất phương trình log cơ bản theo hai miền cơ số. Giữ ví dụ ứng dụng, giải và điều kiện tự mở.
+- Kiểm toán học 18/18 Vận dụng/Đối chiếu trong trang Kiến thức. Phát hiện và sửa 1 lỗi phản hồi O16: học liệu cũ bảo x=5 bị loại vì log(0), nhưng mẫu số log(6−x) ở x=5 bằng log1 nên **x=5 thuộc miền xác định**; đầu mút ngoài miền thực sự là x=−2 và x=6. Phản hồi đã sửa, cùng cách phân biệt x=3 là biên dấu nghiêm của câu Vận dụng. Kiểm số 3^√2≈4.7288, 400·0.9^3=291.6 và giao miền log.
+- Tổng cộng 14 chỉnh sửa theo 3 lần cập nhật trên **cùng một nguồn learner hiện hành**. Bài 1.1–5.2 và 18 Outcome giữ nguyên; 93/93 khối Đối chiếu cân bằng; toàn văn Luyện tập, Tự kiểm tra giữ nguyên. Không viết lại các bài đã tốt. Tự kiểm tác giả cho phần ảnh hưởng, không tuyên bố NotebookLM độc lập hay release.
+- LEARNER_CURRENT_BLOB: a101ca5e0130ff51fab1a1c867e1b23d642d98b8; prior e9294c7e564d7af96df58a99d0b85ed0023ff859 historical.
