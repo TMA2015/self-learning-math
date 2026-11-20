@@ -291,7 +291,7 @@
 
 === "Lỗi thường gặp"
 
-    Các lỗi của bài này tập trung vào **điểm chung của hai đường**, **hướng pháp tuyến** và **độ dài/góc không âm**. Bảy tình huống sau có tên riêng và nêu lại dữ kiện cần thiết, để em có thể mở trực tiếp tab này mà vẫn biết lỗi đang xảy ra ở đâu.
+    Các lỗi của bài này tập trung vào **điểm chung của hai đường**, **hướng pháp tuyến** và **độ dài/góc không âm**. Hai lỗi tổng quát dưới đây có thể xuất hiện ở nhiều bài toán. Cách tự sửa từng câu Vận dụng đã được đặt ngay dưới câu ấy trong tab *Khám phá kiến thức*.
 
     <span data-thpt-help-id="D6-G10-B20-01" hidden></span>
 
