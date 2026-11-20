@@ -10,19 +10,19 @@ RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
 CONTENT_REVISION: R06_SOURCE_EQUIVALENT_20261118
 DELTA_CLASS: DELTA_B_SOURCE_EQUIVALENT
-AUTHOR_METADATA_BLOB: 3ac0dc4e6702e26c19888acf9739fe3ea86b9dcf
+AUTHOR_METADATA_BLOB: 070971fe353c6dcbc205446a61c31aac6f6e4867
 SOURCE_COMMIT: 846fb816003e36b609cd62ab618480b1efb5ba7a
 AUTHOR_PR: 833
 CURRENT_PR: https://github.com/TMA2015/self-learning-math/pull/886 — DRAFT AUTHORING, not merged or deployed
 CATALOG_TOPIC_ID: CD10
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic10-applied-derivative/Temp_TOPIC10_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: f3ed26380c817f3c3dea7a240634a45193f9edb2
+ACADEMIC_SOURCE_BLOB: 6cac404d215a758b9df477cb30ac54b6710b2e45
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC10_R06_CURRENT_SOURCE_EQUIVALENCE_Q18_AUTHOR_SELF_QA_20261118.md (source-locked AUTHOR_SELF_VERIFIED v3.1.0, not independent new Topic NotebookLM verdict)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC10_R06_CURRENT_SOURCE_EQUIVALENCE_Q18_AUTHOR_SELF_QA_20261118.md
-REVIEW_RECEIPT_BLOB: b1b38dff3909127b0c90981b1e0142094a2854eb
+REVIEW_RECEIPT_BLOB: dbe3bbba36e6192d034794867d31618bf4e51ad8
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC10-APPLIED-DERIVATIVE-SURVEY-OPTIMIZATION-FULL-R06_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: f60e514a053e7ad006d2e2399df30c0493a09fc8
+AUTHOR_HANDOFF_BLOB: 1b8bc1825dac776b3d57b55b5ec2e4bbee735134
 PUBLIC_ORIGINAL78_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_ORIGINAL78_SGK_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_ORIGINAL78_INDEX_BLOB: ffaba90bddc47a1d86dd905535e37c07d22173d9
 PUBLIC_NEW42_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_NEW42_PUBLIC_CANONICAL_R04_20261113.md
@@ -62,13 +62,13 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 ## R06 numbering Delta-A — AUTHORING QA
 
 - Owner-approved consistent heading style, exact 3 Topic pages; each numbered H2 group starts at 1 and H3 children use parent.child with no missing predecessor. Practice items remain scoped labels. Q15/Q16 author metadata moved out of student headings and repaired reveal boundaries.
-- Current active learner blob `f3ed26380c817f3c3dea7a240634a45193f9edb2`, author Q18 receipt `b1b38dff3909127b0c90981b1e0142094a2854eb`, V2 handoff `f60e514a053e7ad006d2e2399df30c0493a09fc8`; previous R05 source `68d3ccd180162c0b850c7e419a5098982d3785a0`, receipt `cdf1356b3bedc5c3a246464f34600ed7ec99579a`, V2 `4d929e3f78b9fa9e56e7a32ffdf07a25990b3edb` immutable.
+- Current active learner blob `6cac404d215a758b9df477cb30ac54b6710b2e45`, author Q18 receipt `dbe3bbba36e6192d034794867d31618bf4e51ad8`, V2 handoff `1b8bc1825dac776b3d57b55b5ec2e4bbee735134`; previous R05 source `68d3ccd180162c0b850c7e419a5098982d3785a0`, receipt `cdf1356b3bedc5c3a246464f34600ed7ec99579a`, V2 `4d929e3f78b9fa9e56e7a32ffdf07a25990b3edb` immutable.
 - Confirmed canonical ID/source/outcome, question stems/keys/explanations/rubrics/D6 and all public selfchecks **byte-equivalent in order**; `DELTA_A_UI` preserves existing mathematical PASS without requiring new independent NotebookLM review.
 - Still **CONTENT_READY only in AUTHORING**; RELEASE separately checks browser/Golden/MathJax/SVG/anchor responsive/AP/R/Final Submit before owner-approved publish. NO MERGE/DEPLOY.
 
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — exact source Git blob f3ed26380c817f3c3dea7a240634a45193f9edb2, signed current Q18 receipt b1b38dff3909127b0c90981b1e0142094a2854eb, original78 index ffaba90bddc47a1d86dd905535e37c07d22173d9, NEW42 single bank 5f6ab764df6541ada9b4d4475403d29984d8e7da, one V2 handoff f60e514a053e7ad006d2e2399df30c0493a09fc8, and four original SVG exact readback hashes.
+- [x] A1_SOURCE_SNAPSHOT — exact source Git blob 6cac404d215a758b9df477cb30ac54b6710b2e45, signed current Q18 receipt dbe3bbba36e6192d034794867d31618bf4e51ad8, original78 index ffaba90bddc47a1d86dd905535e37c07d22173d9, NEW42 single bank 5f6ab764df6541ada9b4d4475403d29984d8e7da, one V2 handoff 1b8bc1825dac776b3d57b55b5ec2e4bbee735134, and four original SVG exact readback hashes.
 - [x] A2_SGK_SBT_SCOPE — SGK KNTT G12 Tập1 ChI B01 printed5–14/PDF1 7–16, B02 15–19/17–21, B03 20–25/22–27, B04 26–32/28–34, B05 33–41/35–43, end42–44/44–46; SBT corresponding printed4–37/PDF1 2–35 per historical publisher original S1 scan receipt. No new original PDF scan claimed.
 - [x] A3_NOTEBOOKLM_VERDICT — Q18 v3.1.0 AUTHOR_SELF_VERIFIED with 66/66 direct checks +10/10 strengthening math probes, 36/36 outcome-by-outcome math/PED, P0/P1=0 in AUTHORING; historical independent SGK v2.1 PASS retained solely for original source, NOT newly authored Topic.
 - [x] A4_ITEM_OUTCOME_IDS — 36 unique lesson IDs, 36 outcomes, exactly 120 PUBLIC unique canonical item_id rows one complete V2 matrix; 78 original references +42 new; 36 public Self Check placements reference P01–P36 only.
@@ -100,9 +100,12 @@ AUTHORITY: SLM-THPT-QUALITY-ONE v3.1.0 Q01–Q18 (same standard). Independent AU
 
 ## CURRENT_AUTHORING_ACCEPTANCE — 18/11/2026 (takes precedence over older historical snapshots above)
 
-- One active learner source `f3ed26380c817f3c3dea7a240634a45193f9edb2`; current author Q18 composite `b1b38dff3909127b0c90981b1e0142094a2854eb`; A1 metadata `3ac0dc4e6702e26c19888acf9739fe3ea86b9dcf`; one active V2 handoff `f60e514a053e7ad006d2e2399df30c0493a09fc8`.
+- One active learner source `6cac404d215a758b9df477cb30ac54b6710b2e45`; current author Q18 composite `dbe3bbba36e6192d034794867d31618bf4e51ad8`; A1 metadata `070971fe353c6dcbc205446a61c31aac6f6e4867`; one active V2 handoff `1b8bc1825dac776b3d57b55b5ec2e4bbee735134`.
 - #864/#882/#865 regression review found and fixed 12 displayed `Author-key` and two exposed `Anchor` footer labels. Four newly highlighted formal statements and one recap are equivalent in assumptions and conclusions to original R06 Knowledge prose. Affected-scope DELTA_B source equivalence documented in current Q18; no changed item stem, math answer, worked reasoning, rubric criteria or media.
 - **36 outcomes**, **120 unique visible canonical questions**, **36 public question-only selfchecks**, **18 Written rubrics**, **4 SVG**, original REPLAY-only/no-Mastery Q16. Historic receipt and source SHA values in R05/R06 sections above refer **only** to former immutable snapshots. This manifest is SOURCE `CONTENT_READY` in AUTHORING, not independent full new Topic NotebookLM, website QA, RELEASE_READY or permission to merge/deploy. Confirm Topic V2 CI at final exact HEAD separately.
 
 
 **19/11 owner ΔA:** same 36 outcomes, all conditions, cases and canonical Q15/16 unchanged, STATE=CONTENT_READY retained.
+
+
+**20/11 S1 G12 T1 B4 Delta C:** rational function symmetry axes after center, 8/8 math source QA, learner `6cac404d215a758b9df477cb30ac54b6710b2e45`, Q18 `dbe3bbba36e6192d034794867d31618bf4e51ad8`, A1 `070971fe353c6dcbc205446a61c31aac6f6e4867`, V2 `1b8bc1825dac776b3d57b55b5ec2e4bbee735134`, owner CONTENT_READY maintained; full S1 audit pending.
