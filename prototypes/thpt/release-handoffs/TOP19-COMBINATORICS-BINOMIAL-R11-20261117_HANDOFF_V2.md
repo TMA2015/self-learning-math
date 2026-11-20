@@ -24,9 +24,9 @@ PRIVATE_RD1_SHA256: 6cc51485931317083b5ba673d490e5688a7538d4731dca29f002e804c0f9
 
 CONTENT_REVISION: R11_FULL_S1_KNOWLEDGE_20261120
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_56_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_A1_A7_BLOB: 39774f5de2d9839e1c60c6bb27a0eb956ae619ca
+AUTHOR_A1_A7_BLOB: 55605f5b6c99f61f3b9629244f9c6830c7223d07
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_56_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_METADATA_BLOB: 39774f5de2d9839e1c60c6bb27a0eb956ae619ca
+AUTHOR_METADATA_BLOB: 55605f5b6c99f61f3b9629244f9c6830c7223d07
 
 ## R09 IMMUTABLE BASELINE LEARNER SOURCE AND Q18
 
@@ -274,3 +274,6 @@ Current canonical author Q18 composite receipt `044b74b1cd45fc0cacf3bbcd343574e6
 ## 20/11 Full Knowledge G10 B23–B25 source lock
 
 Learner `2809816539e438726858daf18d7efb1d751ea7f7`; Q18 `e3faacd20740cc7806677ecae3577bf3ad4efcaa`; A1 `39774f5de2d9839e1c60c6bb27a0eb956ae619ca`. 14 academic/PED outcomes preserved with five richer explanatory worked sections; 56 canonical questions, 7 question-only selfchecks and all answer/rubric/source geometry preserved. AUTHOR_SELF_VERIFIED under v3.2, not independent Topic NotebookLM/release.
+
+
+20/11: Reindexed Q15 56 original canonical + 7 replay line positions, active Q15 blob 67c0c719bc1597e490506542e82ce0f286c32818, current A1 55605f5b6c99f61f3b9629244f9c6830c7223d07.
