@@ -11,13 +11,13 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: ece977f22531dfa8e46eeda8ba0c55dc449453e4
+ACADEMIC_SOURCE_BLOB: 2bdd119a4ce8d9148d3cd11c29e72686925299e5
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC12_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 94c53487cec5f9f52b8d50044b67dea78b5e6d68
+REVIEW_RECEIPT_BLOB: 93cc88024dbff84f7c7ed6e7fad3b152e3b9525e
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_A1_A7_BLOB: d18d944b6456df58eaac6232dd308001e6bc4a1b
+AUTHOR_A1_A7_BLOB: 3f77b9fd091da1e7f95f8dbe3a29e42d7f6498b6
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: d18d944b6456df58eaac6232dd308001e6bc4a1b
+AUTHOR_METADATA_BLOB: 3f77b9fd091da1e7f95f8dbe3a29e42d7f6498b6
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC12_TRIANGLE_NEW16_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/THPT_G10_CHIII_B05_B06_D1D6_AUTHORING_R01_SNAPSHOT.md
@@ -276,3 +276,7 @@ Canonical item `THPT-G10-CHIII-W05` retains SGK item identity with original-owne
 
 
 **19/11 source-equivalent owner editorial Delta A:** 12 example captions standardized; source/Q18/A1 relocked, CONTENT_READY unchanged, no HTML/merge/deploy.
+
+
+## 20/11/2026 — targeted owner editorial Delta A source lock
+- ACTIVE learner `2bdd119a4ce8d9148d3cd11c29e72686925299e5`, Q18 `93cc88024dbff84f7c7ed6e7fad3b152e3b9525e`, A1 `3f77b9fd091da1e7f95f8dbe3a29e42d7f6498b6`; only five inline explanatory label prefixes changed, not the 12 standalone examples, canonical item maths or Q16.
