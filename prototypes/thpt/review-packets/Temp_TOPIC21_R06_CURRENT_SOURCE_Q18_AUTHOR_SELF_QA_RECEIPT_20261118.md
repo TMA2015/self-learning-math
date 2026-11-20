@@ -7,7 +7,7 @@ Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 LEARNING_PATH: TOPIC
 SOURCE_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_LEARNER_PRESENTATION_20261116.md
-SOURCE_BLOB: c3f9fd22555a80f82c2caa333146de2ea392f9d2
+SOURCE_BLOB: dd7fa9b8818efcbceca5bdae7877aaa874e615e7
 AUTHOR_TARGETED_Q18_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R06_D6_Q15_Q18_AUTHOR_TARGETED_RECEIPT_20261117.md
 AUTHOR_TARGETED_Q18_BLOB: d67d28772fe1f724624b19f314dd6df1f62c8cc7
 AUTHOR_A1_A7_BLOB: 1ea2b6a48abb8fa8d84025511177eb7671a765d4
@@ -62,3 +62,9 @@ RELEASE_AUTHORIZATION: NO
 - Added one original 30-learner table inside existing O02 narrative, **before** the existing conditional formula and existing Example, without adding independent tab, subheading/outcome/item or reusing textbook's particular dataset. Rows 5+7=12, 4+14=18; columns 5+4=9, 7+14=21; totals 12+18=9+21=30; P(glasses|club)=5/12, P(club|glasses)=5/9, conditioned group drives denominator. No spurious causal assertion.
 - **Targeted Q01/Q03/Q04/PED source QA:** five arithmetic/denominator consistency checks, 5/5 PASS for the new table, with natural explanation first and original formula after. Existing eight independent worked example stem/solutions, eight Topic first-try item IDs and disclosures, public Practice + Tự kiểm tra tail **byte-identical**; no private RD1 or Mastery modification.
 - This is **DELTA_C_ACADEMIC_MATERIAL**, not a pure heading Delta A; targeted AUTHOR_SELF_VERIFIED only for this delta. No new independent NotebookLM Reviewer Academic/PED PASS, 22/22 S1 still PENDING, no RELEASE/merge/deploy.
+
+
+## 20/11/2026 — targeted S1 B18 probability-zero guard O03 (Delta C)
+- Current learner `dd7fa9b8818efcbceca5bdae7877aaa874e615e7` supersedes prior `c3f9fd22555a80f82c2caa333146de2ea392f9d2` (historical). Original multiplying conditional P(A∩B)=P(A)P(B|A) for P(A)>0 was mathematically correct but omitted the **special P(A)=0 case** explicitly mentioned in SGK Toán 12 T2 B18, printed p68 (see S1 web source on earlier O02 receipt). Now explain A∩B⊆A ⇒ P(A∩B)=0 when P(A)=0; P(B|A) undefined by ordinary formula and must not be used. Symmetric statement if P(B)=0. Never multiply an undefined conditional probability. 
+- Affected author self-Q01/Q03/Q04 check: (i) set inclusion P(A∩B)≤P(A) (ii) if P(A)=0 then P(A∩B)=0 (iii) conditional denominator P(A)>0 only, (iv) symmetry B=0, (v) original independent example numerical answer 1/7 and public formative still unchanged. 5/5 scoped math/PED QA. Not an independent NotebookLM review or overall Topic/S1 PASS.
+- Only Knowledge O03 prose changed; full `# Luyện tập` / `# Tự kiểm tra` and all canonical questions/keys/rubrics unchanged, no Q16/RD1/website edits.
