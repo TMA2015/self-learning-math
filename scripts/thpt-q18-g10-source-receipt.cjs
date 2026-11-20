@@ -821,6 +821,21 @@ function expectedG10KnowledgeBlob(lesson,legacy){
     "B18_OUT_01","B18_OUT_04","TRY16","TRY19","P0=0","P1=0"]){
     assert(r18.includes(token),"B18 owner self-QA receipt missing: "+token);
    }
+   const r02path=path.join(root,
+    "prototypes/thpt/ux795/G10_CHVI_B18_OWNER_P2_GOLDEN_ERRORS_R02_20261120.md");
+   if(fs.existsSync(r02path)){
+    const r02=fs.readFileSync(r02path,"utf8");
+    const f02=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    assert.equal(f02("PREVIOUS_B18_SOURCE_BLOB"),next,
+     "B18 R02 Golden must extend signed B18 R01 exact published blob");
+    const final=f02("CANDIDATE_B18_SOURCE_BLOB");
+    assert(/^[a-f0-9]{40}$/.test(final||"")&&final!==next,
+     "B18 R02 must point to a distinct exact canonical new source");
+    for(const token of ["Q18_OWNER_SELF_VERIFIED_ENRICHMENT",
+     "DELTA_C_ACADEMIC_MATERIAL","B18_OUT_01","B18_OUT_04","P0=0","P1=0"])
+     assert(r02.includes(token),"B18 R02 signed Q18 missing: "+token);
+    return final;
+   }
    return next;
   }
   if(ux){

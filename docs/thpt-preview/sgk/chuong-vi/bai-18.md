@@ -1,5 +1,13 @@
 # Bài 18. Phương trình quy về phương trình bậc hai
 
+<style>
+/* B18 only; reuse Golden 3+1 semantic colors without shared-site CSS changes. */
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVI-TRY16"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card {background:#e8f7f2;border-color:#a9dccc;border-left-color:#087d69;color:#174137}
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVI-TRY16"]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card {background:#eaf1fc;border-color:#a5bee5;border-left-color:#4879c2;color:#193d66}
+[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVI-TRY16"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card {background:#193d36;border-color:#447e70;border-left-color:#76dfc7;color:#e9fff7}
+[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVI-TRY16"]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card {background:#203551;border-color:#45658a;border-left-color:#8cb4ed;color:#ecf5ff}
+</style>
+
 <div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VI · BÀI 18</p>
 <p class="thpt-r4-lead">Vì sao bình phương có thể làm xuất hiện nghiệm sai? Khám phá hai dạng phương trình căn, điều kiện và cách thử nghiệm gốc.</p>
 </div>
@@ -8,11 +16,11 @@
 
     ### Cùng tìm hiểu
 
-    Một phép biến đổi có thể giúp phương trình dễ giải hơn nhưng lại làm xuất hiện **nghiệm không thỏa phương trình ban đầu**. Điều này đặc biệt hay xảy ra khi **bình phương hai vế** của phương trình có căn thức.
+    Ở những bài trước, em thường biến đổi phương trình để tìm nghiệm. Nhưng với phương trình chứa căn, có một điều cần cẩn thận: **bình phương hai vế có thể làm xuất hiện giá trị không phải nghiệm của bài toán ban đầu**. Vì sao một phép tính tưởng như đúng lại dẫn đến kết quả sai?
 
-    Chẳng hạn, từ \(\sqrt{x+1}=x-1\), nếu chỉ bình phương rồi giải phương trình bậc hai, em có thể tìm được một giá trị khiến vế phải âm. Nhưng căn bậc hai theo quy ước luôn **không âm**, nên giá trị ấy không thể là nghiệm. Vì vậy, **điều kiện xác định và dấu của vế không chứa căn** cần được viết trước phép bình phương.
+    Xét \(\sqrt{x+1}=x-1\). Vế trái là căn bậc hai nên không thể âm. Nếu biến đổi mà quên điều này, em có thể thu được một giá trị làm vế phải âm: phương trình mới thỏa, nhưng phương trình ban đầu thì không. Vì thế trước khi bình phương, ta phải xác định **khi nào căn có nghĩa và vế không chứa căn không âm**.
 
-    Trong bài này, em sẽ thấy quy trình ba bước: xác định điều kiện → biến đổi theo đúng giới hạn áp dụng → **thử lại từng nghiệm** vào phương trình ban đầu. Thử lại không phải công đoạn phụ, mà là cách bảo vệ tính đúng đắn của lời giải. Mọi giá trị tìm được sau khi bình phương chỉ là **nghiệm ứng viên** cho tới khi kiểm tra trong phương trình ban đầu.
+    Ta sẽ học hai dạng phương trình thường gặp, trước tiên qua các ví dụ dễ quan sát, sau đó mới tổng hợp thành quy tắc. Với mỗi dạng, em sẽ thực hiện theo thứ tự: **xét điều kiện → bình phương và giải → thử lại trong phương trình gốc**. Nghiệm của phương trình sau bình phương chỉ là *ứng viên*; bước thử lại mới cho biết giá trị nào thật sự đúng.
 
     ### Ví dụ trực quan
 
@@ -20,7 +28,7 @@
 
     Bình phương hai vế phương trình là phép biến đổi **không luôn tương đương** nếu không kiểm soát dấu. Ví dụ từ \(x=1\) suy ra \(x^2=1\), nhưng chiều ngược lại không đúng vì \(x=-1\) cũng thỏa \(x^2=1\). Hai số đối nhau có cùng bình phương: phép bình phương đã làm mất thông tin về dấu.
 
-    Để giải phương trình chứa căn, phải đặt điều kiện, biến đổi và **thử lại nghiệm trong phương trình ban đầu**.
+    Ví dụ ngắn này giải thích vì sao sau khi bình phương, ta phải kiểm tra chiều ngược lại. Khi làm bài có căn, em giữ nguyên thói quen ấy: viết điều kiện trước, rồi thử nghiệm ở phương trình gốc.
 
 
 
@@ -28,14 +36,14 @@
     #### Hai căn bằng nhau phải có nghĩa trước khi bình phương
 
 
-    Phép bình phương giúp bỏ căn nhưng căn bậc hai trong số thực chỉ xác định khi biểu thức dưới căn không âm; không thể coi nghiệm đại số là nghiệm thật nếu căn vô nghĩa.
+    Trước hết hãy xét phương trình có căn ở **cả hai vế**. Việc bình phương có thể đưa bài toán về phương trình không còn căn, nhưng chỉ làm như vậy khi cả hai biểu thức dưới căn đã xác định. Nếu bỏ qua điều kiện này, ta có thể nhận một nghiệm khiến căn không tồn tại trong số thực.
 
-    Để giải phương trình chứa căn, hãy nhớ rằng \(\sqrt u\) chỉ xác định khi u≥0 và luôn không âm; em sẽ cần cả kiến thức giải phương trình bậc nhất. Nếu chưa chắc cách giải phương trình bậc nhất, hãy ôn thao tác chuyển vế trước khi tìm nghiệm ứng viên.
+    Em hãy nhớ: \(\sqrt u\) chỉ có nghĩa trong số thực khi u≥0 và kết quả luôn không âm. Sau khi ghi điều kiện, bài toán thường trở thành phương trình bậc nhất hoặc bậc hai mà em đã học; lúc ấy mới thực hiện các phép biến đổi đại số.
 
     Với \(\sqrt{A(x)}=\sqrt{B(x)}\), đầu tiên yêu cầu \(A(x)\ge0\) và \(B(x)\ge0\). Sau đó hai căn không âm bằng nhau **khi và chỉ khi** \(A(x)=B(x)\) trong miền; đây là phép đổi tương đương *sau khi* đặt điều kiện.
 
 
-    **Cách bắt đầu:** Viết riêng điều kiện cho **cả hai** căn rồi mới giải phương trình; không được giữ nghiệm ngoài miền. Sau đó thay giá trị tìm được vào hai căn ban đầu.
+    **Phân tích:** Ta phải ghi điều kiện cho **cả hai** căn, không chỉ một căn. Khi đã biết hai căn tồn tại, mới so sánh biểu thức dưới căn rồi giải. Cuối cùng, thử lại để chắc chắn nghiệm thuộc miền xác định.
 
     **Vận dụng.** Giải \(\sqrt{x+1}=\sqrt{2x-2}\) trong \(\mathbb R\). Trước khi tính, hãy ghi hai điều kiện dưới căn rồi mới tìm nghiệm.
 
@@ -57,9 +65,9 @@
     **Cách đọc hình.** Bắt đầu ở điều kiện của căn/vế phải; tiếp theo là phép bình phương, giải phương trình rồi thử lại trong phương trình gốc. Mũi tên quay về bước kiểm tra nhắc rằng nghiệm của phương trình sau bình phương chưa chắc là nghiệm ban đầu.
 
 
-    Một căn thức thực không bao giờ âm. Do đó nếu nó bằng một biểu thức \(B(x)\), bản thân \(B(x)\) phải không âm, điều thường bị mất khi bình phương.
+    Dạng thứ hai khác ở một điểm quan trọng: chỉ **một vế có căn**, còn vế kia là biểu thức \(B(x)\). Vì căn bậc hai luôn không âm, \(B(x)\) cũng phải không âm. Đây là điều kiện mà phép bình phương dễ che khuất.
 
-    Biết \(\sqrt u\ge0\), giải phương trình bậc hai nhân tử và thử nghiệm. Muốn tự giải được, em cần biết căn bậc hai chỉ xác định trên các số không âm.
+    Hãy dựa vào tính chất \(\sqrt u\ge0\): viết điều kiện dấu của vế phải trước khi đưa phương trình về dạng đại số. Sau khi phân tích thành nhân tử hay giải phương trình bậc hai, cần quay lại xét từng ứng viên.
 
     Với \(\sqrt{A(x)}=B(x)\), phải có \(B(x)\ge0\) (và \(A(x)\ge0\)); sau đó bình phương \(A(x)=B(x)^2\), giải và kiểm. Bình phương tự nó không bảo đảm mọi nghiệm ứng viên có dấu đúng.
 
@@ -78,7 +86,7 @@
 
     #### Nghiệm ngoại lai xuất hiện từ phép không tương đương
 
-    Biến đổi đại số đôi khi cho một nghiệm thỏa phương trình mới nhưng không thỏa phương trình ban đầu. Vì thế, em cần thử lại từng nghiệm trong phương trình gốc, thay vì tin ngay vào kết quả sau bình phương.
+    Vậy nếu phương trình sau bình phương cho hai kết quả, có phải cả hai đều đúng? Không nhất thiết. Một kết quả có thể làm hai vế ban đầu khác dấu, dù khi bình phương chúng bằng nhau. Giá trị ấy gọi là **nghiệm ngoại lai**; ta phải kiểm tra từng ứng viên trong phương trình gốc.
 
     Đặc biệt, \(\sqrt{u^2}=|u|\): sau khi bình phương, một nghiệm tìm được mới chỉ là ứng viên; phải xét điều kiện để xác định nghiệm hợp lệ. Hãy luôn kiểm dấu vế không chứa căn; đây là phần không thể phục hồi chỉ bằng phép bình phương.
 
@@ -99,14 +107,14 @@
 
     #### Độ dài hình học buộc nghiệm dương
 
-    Bài toán đo chiều dài thang dựa vào định lí Pitago có thể dẫn tới phương trình chứa căn. Nghiệm âm từ bình phương tuy đúng đại số nhưng không là độ dài thực tế.
+    Không chỉ phương trình căn mới có điều kiện: trong bài toán thực tế, chính **ý nghĩa của đại lượng** còn giới hạn nghiệm. Hãy tưởng tượng một chiếc thang tựa vào tường. Độ cao, khoảng cách chân thang và chiều dài thang đều là các độ dài, nên không thể nhận giá trị âm.
 
     Biết tam giác vuông, Pitago \(c^2=a^2+b^2\), độ dài phải dương và căn không âm. Để lập mô hình, hãy vẽ đúng tam giác vuông và xác định cạnh huyền trước khi dùng Pitago.
 
     Khi một cạnh góc vuông là h>0 và cạnh kia 5 m, cạnh huyền là \(\sqrt{h^2+25}\), phải phù hợp chiều dài thang cho trước. Giải căn rồi lọc h>0 không chỉ vì toán căn mà vì **ý nghĩa vật lý** của ẩn.
 
 
-    **Cách lập phương trình:** Chọn độ cao làm ẩn, ghi miền h>0, lập \(\sqrt{h^2+25}=13\), giải và thử lại. Không chấp nhận h âm dù bình phương cho hai số đối nhau.
+    **Phân tích:** Gọi độ cao là h và ghi miền h>0 trước. Dùng Pitago để lập \(\sqrt{h^2+25}=13\). Sau khi giải, chỉ chấp nhận độ cao dương và kiểm nghiệm bằng chính độ dài chiếc thang.
 
     **Vận dụng.** Một thang dài 13 m dựa tường, chân thang cách tường 5 m. Đặt h>0 là độ cao đầu thang trên tường. Lập phương trình chứa căn và tính h. Hãy ghi đúng cạnh huyền, đơn vị và điều kiện trước khi xem lời giải.
 
@@ -126,13 +134,17 @@
 
     ### 2.1. Phương trình dạng \(\sqrt{A(x)}=\sqrt{B(x)}\)
 
-    Phương trình tương đương với hệ điều kiện
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Phương trình chứa căn:</strong> Đây là phương trình trong đó ẩn xuất hiện dưới dấu căn. Khi giải trong tập số thực, phải tìm các giá trị làm những biểu thức dưới căn không âm trước khi biến đổi. Bài này xét hai dạng thông dụng.</div>
+
+    Với hai vế đều là căn bậc hai, phương trình tương đương với hệ điều kiện
 
     \[
     A(x)=B(x),\qquad A(x)\ge0,\quad B(x)\ge0.
     \]
 
-    **Vì sao cách này đúng?** Khi cả hai căn đã có nghĩa, hai căn bậc hai đều không âm; chúng bằng nhau khi giá trị dưới căn bằng nhau. Vì vậy giải \(A(x)=B(x)\), giữ lại các nghiệm làm hai biểu thức dưới căn không âm, rồi kiểm tra trong phương trình ban đầu.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Hai căn bằng nhau:</strong> Cần điều kiện của <em>cả hai căn</em>; trong miền ấy, hai căn bằng nhau khi các biểu thức dưới căn bằng nhau. Giải phương trình không căn xong phải giữ đúng miền đã xác định.</div>
+
+    **Phân tích:** Khi cả hai căn đã có nghĩa, hai căn bậc hai đều không âm; chúng bằng nhau khi giá trị dưới căn bằng nhau. Vì vậy giải \(A(x)=B(x)\), giữ lại các nghiệm làm hai biểu thức dưới căn không âm, rồi kiểm tra trong phương trình ban đầu.
 
     **Ví dụ 1.**
 
@@ -156,6 +168,8 @@
     \end{cases}
     \]
 
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Một căn bằng biểu thức:</strong> Vế không chứa căn phải không âm. Chỉ sau khi giữ điều kiện ấy mới bình phương để giải; mọi kết quả từ phương trình đã bình phương đều cần kiểm với phương trình ban đầu.</div>
+
     Khi hai điều kiện này thỏa, \(A(x)=B(x)^2\ge0\) cũng bảo đảm căn có nghĩa. Chiều ngược lại vì thế đúng **khi vẫn giữ điều kiện dấu**; không thể chỉ bình phương rồi bỏ điều kiện.
 
     **Quy trình 4 bước:** (1) đặt điều kiện \(B(x)\ge0\) và miền xác định nếu cần; (2) bình phương đưa về phương trình bậc hai (hoặc bậc nhất); (3) giải tìm nghiệm ứng viên; (4) **loại nghiệm không thỏa điều kiện và thử lại**. Nếu có nhiều nghiệm ứng viên, phải kiểm từng nghiệm, không lựa chọn theo cảm giác.
@@ -174,7 +188,7 @@
 
     **Đề bài.** Giải \(\sqrt{x+1}=x-1\).
 
-    **Vì sao chọn cách này?** Căn thức không âm, nên trước hết cần \(x+1\ge0\) và **\(x-1\ge0\)**; khi đó mới bình phương hai vế an toàn.
+    **Phân tích:** Căn thức không âm, nên trước hết cần \(x+1\ge0\) và **\(x-1\ge0\)**; khi đó mới bình phương hai vế an toàn.
 
     **Lời giải.** Điều kiện gộp \(x\ge1\). Bình phương: \(x+1=(x-1)^2=x^2-2x+1\), hay \(x^2-3x=0\), suy ra \(x=0\) hoặc \(x=3\). \(x=0\) không đạt điều kiện và không thỏa gốc. Với \(x=3\), \(\sqrt4=2=3-1\), nên nghiệm duy nhất là \(x=3\).
 
@@ -207,6 +221,8 @@
     \sqrt{x^2+7x+11}=\sqrt{x+3}.
     \]
 
+    **Phân tích:** Phải xét miền xác định của cả hai căn. Khi bình phương, ta tìm các nghiệm ứng viên rồi kiểm lại từng căn; giá trị nằm ngoài miền sẽ bị loại.
+
     **Lời giải.** Bình phương hai vế và rút gọn:
 
     \[
@@ -224,6 +240,8 @@
     ### Ví dụ mở rộng — Ứng dụng độ dài trong hình học
 
     **Đề bài.** Một tam giác vuông có hai cạnh góc vuông dài \(x\) m và \(4\) m, với \(x>0\). Tìm \(x\) nếu cạnh huyền dài \(2x-1\) m.
+
+    **Phân tích:** Vì cạnh huyền phải lớn hơn mỗi cạnh góc vuông, trước hết cần điều kiện độ dài và điều kiện vế phải không âm. Sau đó dùng Pitago để lập phương trình căn, rồi kiểm nghiệm lại bằng độ dài.
 
     **Lời giải.** Theo định lí Pythagore:
 
@@ -247,13 +265,15 @@
 
     ### Ví dụ mở rộng — Vận dụng: hai hành trình gặp nhau cùng thời điểm
 
-    **Vì sao cần bài này?** Khi hai người đi theo hai lộ trình khác nhau, khoảng cách chưa đủ để quyết định điểm gặp. Ta cần đổi từng khoảng cách thành **thời gian = quãng đường / vận tốc**. Đây cũng là lúc phương trình chứa căn xuất hiện tự nhiên: đường đi xiên là cạnh huyền của tam giác vuông.
+    **Bối cảnh.** Khi hai người đi theo hai lộ trình khác nhau, khoảng cách chưa đủ để quyết định điểm gặp. Ta cần đổi từng khoảng cách thành **thời gian = quãng đường / vận tốc**. Đây cũng là lúc phương trình chứa căn xuất hiện tự nhiên: đường đi xiên là cạnh huyền của tam giác vuông.
 
     **Đề bài.** Hai người xuất phát cùng lúc và cần gặp nhau tại điểm \(M\) trên đoạn đường thẳng \(BC\) dài \(8\) km. Người thứ nhất xuất phát tại \(A\), cách \(B\) một đoạn vuông góc \(AB=3\) km, đi thẳng từ \(A\) tới \(M\) với vận tốc \(5\) km/h. Người thứ hai xuất phát tại \(C\), đi dọc đoạn \(CM\) với vận tốc \(4\) km/h. Hỏi phải chọn \(M\) cách \(B\) bao nhiêu kilômét để hai người đến cùng lúc?
 
+    **Phân tích:** Hai người xuất phát cùng lúc và muốn đến M cùng thời điểm, nên thời gian đi của họ phải bằng nhau. Để lập hai thời gian, ta tìm quãng đường từng người đi, trong đó đoạn AM được tính bằng Pitago. Điều kiện M nằm trên BC phải được giữ đến cuối.
+
     **Lời giải.**
 
-    **Bước 1 — hình dung và đặt điều kiện.** Đặt \(x=BM\) (km), \(0\le x\le8\), vì \(M\) nằm trên đoạn \(BC\). Tam giác \(ABM\) vuông tại \(B\), nên \(AM=\sqrt{x^2+3^2}=\sqrt{x^2+9}\), còn \(CM=8-x\).
+    **Bước 1 — hình dung và đặt điều kiện. Đặt \(x=BM\) (km), \(0\le x\le8\), vì \(M\) nằm trên đoạn \(BC\). Tam giác \(ABM\) vuông tại \(B\), nên \(AM=\sqrt{x^2+3^2}=\sqrt{x^2+9}\), còn \(CM=8-x\).
 
     <div class="thpt-g10-table-scroll"><table class="thpt-g10-knowledge-table">
     <thead><tr><th>Lộ trình</th><th>Quãng đường</th><th>Vận tốc</th><th>Thời gian</th></tr></thead>
@@ -286,12 +306,11 @@
 
 === "Lỗi thường gặp"
 
-    #### Các sai lầm cần tránh
+    Một nghiệm tìm được sau khi bình phương chưa chắc là nghiệm của phương trình ban đầu. Khi kiểm lời giải, em hãy chú ý cả **điều kiện của căn** và **dấu của vế không chứa căn**. Với \(\sqrt{A(x)}=B(x)\), phải có \(B(x)\ge0\).
 
-    - **Nhận hết nghiệm sau khi bình phương:** nghiệm ngoại lai có thể được sinh ra.
-    - **Quên dấu của vế không chứa căn:** trong \(\sqrt{A(x)}=B(x)\) phải có \(B(x)\ge0\).
-    - **Quên điều kiện của biến và việc thử lại:** nghiệm đại số có thể làm căn vô nghĩa.
-    - **Rút gọn căn bậc hai sai:** với \(u\in\mathbb R\), ta có \(\sqrt{u^2}=|u|\), **không tự thay bằng \(u\)** khi chưa biết dấu của \(u\). Quy tắc này đặc biệt quan trọng nếu biểu thức dưới căn chứa bình phương của một đa thức.
+    Một điểm dễ nhầm khác là phép khai căn: với \(u\in\mathbb R\), ta có \(\sqrt{u^2}=|u|\); không được tự thay bằng \(u\) khi chưa biết dấu của \(u\).
+
+    Bốn tình huống khắc phục dưới đây liên hệ trực tiếp với các câu **Vận dụng** trong bài. Mỗi tình huống đều nhắc lại dữ kiện cần thiết, chỉ rõ bước sai và hướng tự sửa; em không cần phải nhớ lại đề từ tab trước.
 
     [Chuyển đến Luyện tập và Vận dụng Chương VI](luyen-tap.md) để làm bài củng cố. Em chỉ nên mở gợi ý và lời giải sau khi đã tự thử.
 
@@ -300,7 +319,7 @@
     ??? tip "Đặt điều kiện cho cả hai căn — 5 bước"
 
         <ol><li><strong>Nhận diện lỗi:</strong> Chỉ đặt điều kiện một căn hoặc giải A=B rồi không kiểm miền.</li>
-        <li><strong>Tự chẩn đoán:</strong> Với câu hai căn, em đã viết đủ hai điều kiện dưới căn trước khi chuyển sang A=B chưa? Hãy chỉ rõ giao miền.</li>
+        <li><strong>Tự chẩn đoán:</strong> Trong câu Vận dụng \(\sqrt{x+1}=\sqrt{2x-2}\), mỗi căn có điều kiện riêng. Em đã viết đủ cả hai điều kiện trước khi rút về phương trình không căn chưa? Hãy xác định giao miền.</li>
         <li><strong>Kiến thức gốc:</strong> Với <span class="arithmatex">\(\sqrt{A(x)}=\sqrt{B(x)}\)</span>, đầu tiên yêu cầu <span class="arithmatex">\(A(x)\ge0\)</span> và <span class="arithmatex">\(B(x)\ge0\)</span>. Sau đó hai căn không âm bằng nhau <strong>khi và chỉ khi</strong> <span class="arithmatex">\(A(x)=B(x)\)</span> trong miền; đây là phép đổi tương đương *sau khi* đặt điều kiện.</li>
         <li><strong>Tự sửa:</strong> Khoanh cả A(x),B(x), lập hai dấu ≥0, giao miền rồi mới biến đổi và thử. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
         <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B18-C02">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
@@ -311,7 +330,7 @@
     ??? tip "Loại nghiệm sai dấu ở vế phải — 5 bước"
 
         <ol><li><strong>Nhận diện lỗi:</strong> Giữ nghiệm x=−1 chỉ vì nghiệm phương trình sau bình phương.</li>
-        <li><strong>Tự chẩn đoán:</strong> Với câu một căn, tại sao x=−1 dù xuất hiện sau bình phương vẫn sai? Hãy tính dấu x−1 tại giá trị đó.</li>
+        <li><strong>Tự chẩn đoán:</strong> Xét câu Vận dụng \(\sqrt{x+5}=x-1\). Sau khi bình phương, x=−1 xuất hiện. Hãy tính x−1 tại giá trị ấy rồi so với một căn bậc hai luôn không âm: em thấy điều gì sai?</li>
         <li><strong>Kiến thức gốc:</strong> Với <span class="arithmatex">\(\sqrt{A(x)}=B(x)\)</span>, phải có <span class="arithmatex">\(B(x)\ge0\)</span> (và <span class="arithmatex">\(A(x)\ge0\)</span>); sau đó bình phương <span class="arithmatex">\(A(x)=B(x)^2\)</span>, giải và kiểm. Bình phương tự nó không bảo đảm mọi nghiệm ứng viên có dấu đúng.</li>
         <li><strong>Tự sửa:</strong> Kiểm vế phải x−1≥0 trước khi xét nghiệm; thử tất cả ứng viên vào hai vế phương trình gốc. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
         <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B18-P01">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
@@ -322,7 +341,7 @@
     ??? tip "Kiểm nghiệm ngoại lai sau bình phương — 5 bước"
 
         <ol><li><strong>Nhận diện lỗi:</strong> Cho cả hai nghiệm từ phương trình bình phương mà không thử lại.</li>
-        <li><strong>Tự chẩn đoán:</strong> Trong câu căn bằng x, hãy thử thay x=−1 vào hai vế gốc: dấu của vế phải có phù hợp với căn không âm không?</li>
+        <li><strong>Tự chẩn đoán:</strong> Với câu Vận dụng \(\sqrt{2x+3}=x\), phương trình sau bình phương cho x=3 và x=−1. Hãy thay x=−1 vào hai vế gốc: căn bậc hai có thể bằng một số âm không?</li>
         <li><strong>Kiến thức gốc:</strong> Nếu <span class="arithmatex">\(A=B^2\)</span> thì chỉ có <span class="arithmatex">\(|B|=\sqrt A\)</span>, chưa chắc <span class="arithmatex">\(\sqrt A=B\)</span>. Lý do có nghiệm ngoại lai là phép bình phương làm mất thông tin dấu. Một nghiệm cuối phải thỏa miền và phương trình gốc.</li>
         <li><strong>Tự sửa:</strong> Tạo bảng hai cột ứng viên/kiểm gốc: từng x tính căn thật và vế phải có dấu đúng hay không. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
         <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B18-P01">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
@@ -330,10 +349,10 @@
 
     <span data-thpt-help-id="HELP-G10-CHVI-TRY19" hidden></span>
 
-    ??? tip "Đọc đúng cạnh huyền và độ dài — 5 bước"
+    ??? tip "Nhầm cạnh huyền hoặc chấp nhận chiều dài âm — 5 bước"
 
         <ol><li><strong>Nhận diện lỗi:</strong> Bỏ điều kiện h&gt;0, nhầm cạnh huyền thành h hoặc nhận nghiệm −12 m.</li>
-        <li><strong>Tự chẩn đoán:</strong> Trong bài thang dựa tường, em đã ghi cạnh huyền 13 m và miền h>0 chưa? Hãy kiểm lại trước khi kết luận h=12 m.</li>
+        <li><strong>Tự chẩn đoán:</strong> Tình huống đã học: chiếc thang dài 13 m tựa tường, chân thang cách tường 5 m; h là độ cao đầu thang trên tường (m). Em có đặt h>0 và đánh dấu **cạnh huyền 13 m** chưa? Nếu giải ra h=−12, tại sao không được nhận là độ cao?</li>
         <li><strong>Kiến thức gốc:</strong> Khi một cạnh góc vuông là h&gt;0 và cạnh kia 5 m, cạnh huyền là <span class="arithmatex">\(\sqrt{h^2+25}\)</span>, phải phù hợp chiều dài thang cho trước. Giải căn rồi lọc h&gt;0 không chỉ vì toán căn mà vì <strong>ý nghĩa vật lý</strong> của ẩn.</li>
         <li><strong>Tự sửa:</strong> Vẽ hình và đánh dấu <strong>cạnh huyền 13 m</strong> và <strong>cạnh góc vuông 5 m</strong>, viết h&gt;0, rồi thử lại định lí Pitago với nghiệm tìm được. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
         <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B18-P04">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>

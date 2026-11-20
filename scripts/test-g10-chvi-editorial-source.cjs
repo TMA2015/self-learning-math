@@ -76,8 +76,13 @@ for(const n of [15,16,17,18]){
   const f18=k=>r18.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(f18("BASELINE_PUBLISHED_B18_SOURCE_BLOB"),uxrow.candidate,
    "B18 owner source must extend unchanged original ChVI UX blob");
-  assert.equal(f18("CANDIDATE_B18_SOURCE_BLOB"),expected,
-   "B18 must match its signed owner outcome-level Q18 candidate");
+  const r02=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHVI_B18_OWNER_P2_GOLDEN_ERRORS_R02_20261120.md"),"utf8");
+  const f02=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(f02("PREVIOUS_B18_SOURCE_BLOB"),f18("CANDIDATE_B18_SOURCE_BLOB"),
+   "B18 R02 must preserve published R01 source");
+  assert.equal(f02("CANDIDATE_B18_SOURCE_BLOB"),expected,
+   "B18 current source must match newly signed R02 Golden candidate");
  }else{
   const receipt=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHVI_B15_OWNER_Q18_KNOWLEDGE_ENRICHMENT_20261119.md"),"utf8");
