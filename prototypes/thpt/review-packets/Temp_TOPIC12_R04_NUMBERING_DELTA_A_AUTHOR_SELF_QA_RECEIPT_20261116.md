@@ -3,14 +3,14 @@
 **Phạm vi AUTHORING:** kiểm soát đánh số các cấp đầu mục và biểu thị bài luyện theo yêu cầu Owner 16/11/2026. Đây là **DELTA_A_UI** theo nguồn học thuật `e74f32b1092d571af0091174a55104e7d3bec5b5` bất biến, không sửa câu hỏi, công thức, điều kiện, đáp án, lời giải, rubric, canonical IDs hay RD1. Không gọi là NotebookLM independent review hoặc RELEASE browser QA.
 
 PACKET_ID: THPT-TOPIC12-TRIANGLE-TRIG-SOLVING-FULL-R01
-CONTENT_REVISION: R04
+CONTENT_REVISION: R04_FULL_S1_KNOWLEDGE_20261120
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: e2f0a84b2d99652c2f56c7323d3b370cad0bb4b3
-ACADEMIC_SOURCE_BLOB: e2f0a84b2d99652c2f56c7323d3b370cad0bb4b3
+SOURCE_BLOB: 56a2b7a0bab2d210beed28a0a4663c9aa6001b3e
+ACADEMIC_SOURCE_BLOB: 56a2b7a0bab2d210beed28a0a4663c9aa6001b3e
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC12_TRIANGLE_NEW16_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R03_LEARNER_FIRST_34_CANONICAL_VISIBLE_20261116.md
@@ -19,7 +19,7 @@ PREVIOUS_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC12_R03_AUTHO
 PREVIOUS_Q18_RECEIPT_BLOB: d8ad3986da4776260c950cca337e0407da015252
 SVG1_BLOB: 6fd343ea37fdd1f737a17da245c18b7b82b3bc4d
 SVG2_BLOB: 0dd2f62277ae264fb4f6d6c99699d5a984a0b562
-DELTA_CLASS: DELTA_A_UI
+DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL_O02_O03_O08 + DELTA_A_UI_HEADING
 AUTHOR_QA_NUMBERING: PASS
 AUTHOR_QA_NUMBERING_H2_H3: NO_GAPS_NO_MIXED_SIBLINGS
 AUTHOR_QA_CANONICAL_PARITY: 34/34 UNCHANGED
@@ -31,7 +31,7 @@ PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
 P2: 0
-AUTHOR_SIGNOFF: TOPIC12_R04_NUMBERING_DELTA_A_ec90cab8455768b263f8d57409587c28f250340a
+AUTHOR_SIGNOFF: TOPIC12_FULL_S1_B05_B06_56a2b7a0bab2d210beed28a0a4663c9aa6001b3e
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_IMPORTED: 0
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
@@ -80,3 +80,13 @@ ASSESSMENT_Q16: 12 câu public replay (SGK và Topic) dùng lại Practice, ch�
 
 ## 20/11/2026 — Final owner learner label consistency, Q03/PED ΔA
 - Current learner blob e2f0a84b2d99652c2f56c7323d3b370cad0bb4b3 supersedes 318fa95b2e1f7311bae4361517565426fa2a5524 historically. Exactly 12 existing inline prefixes `**Vận dụng:**` are now `**Vận dụng**`, matching owner Topic standard Issue #864. All text after prefixes, mathematical conditions, exercises, underlying 34 canonical stems/keys/solutions/rubrics and 12 self-check contents are byte-identical; no assessment exposure or independent Academic PASS implied.
+
+
+## 20/11/2026 — Hoàn thiện trọn Kiến thức SGK Toán 10 Tập Một B05–B06
+
+- Một nguồn học sinh duy nhất 56a2b7a0bab2d210beed28a0a4663c9aa6001b3e (trước sửa e2f0a84b2d99652c2f56c7323d3b370cad0bb4b3). Căn cứ SGK KNTT Toán 10 Tập Một B05 trang in 33–37, B06 trang in 38–43; original source-lock và SGK web text kiểm thẩm quyền; không tự nhận trực tiếp xem lại ảnh PDF toàn trang trong lượt này.
+- Đã đọc đủ 12/12 Knowledge outcomes: O01–O04 góc 0°–180°, bảng bốn giá trị lượng giác/tính dấu/hệ thức; O05–O08 định lí côsin, sin, điều kiện tam giác và SSA 0/1/2 nghiệm; O09–O12 diện tích theo góc, Heron, hai bán kính, đo đạc, đối chiếu điều kiện. Giữ nội dung đã đúng.
+- DELTA_C: O02 bổ sung bảng tang/côtang đầy đủ cho các góc 0°,30°,45°,60°,90°,120°,135°,150°,180° và hệ thức hai góc phụ nhau. O03 bổ sung tang/côtang góc bù cùng điều kiện tồn tại; O08 làm rõ máy tính DEG, phím arcsin chỉ trả về nghiệm chính và phải kiểm thêm góc bù/điều kiện tổng góc. DELTA_A: rút gọn 12 tiêu đề bài thành nhãn toán học ngắn, không đổi lesson_id/outcome_id.
+- Kiểm trực tiếp các bảng: tan120°=-√3, cot120°=-√3/3; tan150°=-√3/3, cot150°=-√3; tan90° không xác định, cot0°/cot180° không xác định; cot90°=0. Sin30°=cos60°=1/2, sin(180°−α)=sinα, cos(180°−α)=−cosα, tang/cot đổi dấu khi xác định. Với SSA A=30°, a=5, b=8 có sin B=4/5 và hai góc B hợp lệ nếu A+B<180°; ví dụ A=30°, a=8,b=6 chỉ một góc hợp lệ. Cạnh, diện tích và các ví dụ trước giữ nguyên, không cần tạo câu mới.
+- PED: lời giải thích quy luật đối xứng điểm tròn trước bảng, đối chiếu tại góc đặc biệt/điểm cấm và trường hợp biên; nhãn ngắn gọn, một mạch ba trang. Phần từ heading # Luyện tập đến hết Tự kiểm tra byte-exact so với nguồn trước, 12/12 ID giữ nguyên, 34 canonical unique, 6 Written rubrics, 12 public replay only, hai SVG gốc; Q15/Q16/RD1/Final Submit/Mastery không đổi.
+- AUTHOR_SELF_VERIFIED Q01–Q18/A1–A7 theo phạm vi B05–B06, P0=0 P1=0, không nhận NotebookLM độc lập hoặc RELEASE/browser QA. Giữ một V2/ready/REGISTER khóa SHA.
