@@ -12,7 +12,7 @@ ACADEMIC_SOURCE_BLOB: 2809816539e438726858daf18d7efb1d751ea7f7
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC19_R11_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md
 REVIEW_RECEIPT_BLOB: e3faacd20740cc7806677ecae3577bf3ad4efcaa
 R11_Q15_MATRIX_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_Q15_56_CANONICAL_SOURCE_LOCKED_CANDIDATE_MATRIX_20261117.md
-R11_Q15_MATRIX_BLOB: a127267978ec61c857d5cc0cbcd8cb3f1dcc2f1e
+R11_Q15_MATRIX_BLOB: 67c0c719bc1597e490506542e82ce0f286c32818
 BASELINE_R09_SIGNED_SOURCE_BLOB: 2b46a2c92004f2c030d030e2b2021a34157bc95d
 
 S1_ORIGINAL_PUBLIC_BANK_PATH: docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js
@@ -125,3 +125,6 @@ The effective learner source is **the existing original filename at ACADEMIC_SOU
 ## 20/11 current full S1 Knowledge B23–B25
 
 Learner `2809816539e438726858daf18d7efb1d751ea7f7`, signed author Q18 `e3faacd20740cc7806677ecae3577bf3ad4efcaa`, 14/14 outcomes, 56 public canonical/7 public Selfcheck replays. Delta C improves variable branch counting O02, disjoint digit cases O04, Pascal/combination identity O07, Newton combinatorial coefficients O09 and polynomial signs O10. Practice/Selfcheck byte-identical. Q01–Q18 v3.2 owner-effective, no new independent NotebookLM/RELEASE.
+
+
+20/11: Q15 matrix source-line 56 canonical/7 replay links refreshed to new learner SHA; matrix Git 67c0c719bc1597e490506542e82ce0f286c32818.
