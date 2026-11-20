@@ -1,7 +1,7 @@
 # CĐ03 — metadata bản thảo hiện hành, đã sửa D6 + Ví dụ trực tiếp
 
 CURRENT_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_CONSISTENT_20261116.md
-CURRENT_SOURCE_BLOB: 488cee3670af82ed9fd1f457d23a489e7ba8d063
+CURRENT_SOURCE_BLOB: 9df43259cfb61646ec1d60c036e360c40417daae
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC03_R06_NUMBERING_DELTA_A_Q18_20261116.md
 CURRENT_Q18_RECEIPT_BLOB: 65841734363d64cc474c359041d65e99535cae23
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -112,3 +112,9 @@ The learner source at CURRENT_SOURCE_PATH is edited **in place**. Its prior numb
 - CURRENT_SOURCE_BLOB: 488cee3670af82ed9fd1f457d23a489e7ba8d063
 - CURRENT_Q18_RECEIPT_BLOB: 65841734363d64cc474c359041d65e99535cae23
 - Only 3 correct mathematical-equivalence type labels; Q15/Q16 protected.
+
+
+## 20/11/2026 — Current Knowledge CĐ03 hoàn thiện
+- CURRENT_LEARNER_SOURCE_BLOB: 9df43259cfb61646ec1d60c036e360c40417daae
+- CURRENT_Q18_RECEIPT_BLOB: 6380d2340c6cb3dc597777eac1d514d95e140322
+- S1 B18 đã kiểm hai dạng căn, PT bậc hai, nghiệm ngoại lai; sửa diễn giải tự học, Luyện tập/Tự kiểm tra bất biến.
