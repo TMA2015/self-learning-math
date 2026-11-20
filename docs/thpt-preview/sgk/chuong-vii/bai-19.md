@@ -10,7 +10,7 @@
 
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VII · KIẾN THỨC SGK KNTT</p>
-<p class="thpt-r4-lead">Nhận biết vectơ pháp tuyến, vectơ chỉ phương và viết phương trình đường thẳng từ dữ kiện hình học.</p>
+<p class="thpt-r4-lead">Từ một điểm và một hướng, làm thế nào xác định cả đường thẳng bằng phương trình? Tìm hiểu hai dạng phương trình và cách dùng chúng trong bài toán tọa độ.</p>
 
 </div>
 
