@@ -14,7 +14,7 @@ PED_VERIFICATION: Verified current 16 meaning-first lessons, 15 corrected D6 des
 CANONICAL_Q15: 46 immutable original G11 IDs plus 20 new original Topic IDs =66 unique real display-only item placements, two frozen bank source hashes, 16 public question-only replay IDs, no duplicate canonical owner.
 ASSESSMENT_Q16: Public replays are CLIENT_SELF_CHECK_NO_MASTERY only; no private RD1 exposed, official Final Submit, independent Topic Readiness or Skill Mastery produced.
 SOURCE_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 9f6996d37e1972e7a2a2f283d062bf24cdbbc79f
+SOURCE_BLOB: f2b5a126a676b153e9d44208317c812d849a3021
 BASELINE_R05_SOURCE_BLOB: dd3af68f681eba9a7b75040d9490815f81efdd6b
 BASELINE_R05_Q18_RECEIPT_BLOB: 8f4d721ec8ab5b08baaf0a19c7aeaf2aa9cf454f
 R06_PED6_TARGETED_RECEIPT_BLOB: 2d7686a55f2196e7422bf30dfd6d0dc3fcc10e83
@@ -72,3 +72,7 @@ Owner-approved ΔA 19/11: 13 previously unmarked formal trigonometric descriptio
 - O07: tangent sum/difference equals (tan u ± tan v)/(1 ∓ tan u tan v) only with cos u,cos v nonzero and new denominator nonzero; derives directly from sine/cosine addition. Check tan(pi/3-pi/4)=2-sqrt3; tan(pi/2) undefined, no cancellation.
 - O08: double-angle, product-to-sum and sum-to-product full core formulas from earlier affected Delta C unchanged in this latest candidate; reverse expansion and sample-angle checks still apply.
 - TARGETED_AUTHOR_SELF_QA: mathematical sign/interval restrictions Q01/Q03/PED confirmed on affected Knowledge; original 66 item stems/keys/rubrics, 16 selfchecks, 3 media hashes and Q16 privacy unchanged. INDEPENDENT_NOTEBOOKLM_PASS=NOT_CLAIMED; FULL_22_TOPIC_S1_AUDIT=PENDING, no RELEASE.
+
+
+## 20/11/2026 · single Q03 Delta A after S1 B01/B02 corrections
+- Current learner `f2b5a126a676b153e9d44208317c812d849a3021` replaces historical `9f6996d37e1972e7a2a2f283d062bf24cdbbc79f` with **only** the TOP06-O09 domain-check callout prefix `ĐIỀU KIỆN`→`KIẾN THỨC CẦN GHI NHỚ`. Original sin/cos/tan/cot domains, newly restored S1 B01/B02 identities, 66 canonical Practice bodies, 16 public selfchecks and three SVG unchanged. Targeted owner Q03/PED ΔA author self-QA; previous S1 author DELTA_C scope remains historically signed. No new NotebookLM or release claim.
