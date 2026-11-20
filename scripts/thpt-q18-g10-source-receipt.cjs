@@ -122,12 +122,31 @@ function currentOneCanonicalAfterKiểmLỗi(name,priorPublicSha,priorManuscript
   assert.equal(hashes.length,2,prefix+" requires prior+new SHA");
   return hashes;
  };
- const [priorSource,currentSource]=getRow(name==="B09"?"B9":name);
- const [priorMaster,currentMaster]=getRow("CANONICAL_"+name);
+ let [priorSource,currentSource]=getRow(name==="B09"?"B9":name);
+ let [priorMaster,currentMaster]=getRow("CANONICAL_"+name);
  assert.equal(priorSource,priorPublicSha,name+" Q18 chain must start from prior published source SHA");
  assert.equal(priorMaster,priorManuscriptSha,name+" Q18 chain must start from prior signed manuscript SHA");
  assert.notEqual(priorSource,currentSource,name+" requires a genuinely changed learner source");
  assert.notEqual(priorMaster,currentMaster,name+" requires a genuinely changed single canonical manuscript");
+ if(name==="B09"){
+  const fileR02=path.join(root,"prototypes/thpt/ux795/G10_CHIV_B09_GENERAL_VECTOR_ERROR_TAB4_Q18_R02_20261120.md");
+  if(fs.existsSync(fileR02)){
+   const r02=fs.readFileSync(fileR02,"utf8");
+   const field=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(field("R02_PREVIOUS_SOURCE_BLOB"),currentSource,
+    "B09 tab4 placement must extend immutable R01 source SHA");
+   assert.equal(field("R02_PREVIOUS_CANONICAL_BLOB"),currentMaster,
+    "B09 tab4 placement must extend same one canonical R01 manuscript SHA");
+   currentSource=field("R02_CORRECTED_SOURCE_BLOB");
+   currentMaster=field("R02_CORRECTED_CANONICAL_BLOB");
+   assert(/^[a-f0-9]{40}$/.test(currentSource)&&/^[a-f0-9]{40}$/.test(currentMaster),
+    "B09 R02 candidate SHA malformed");
+   for(const marker of ["G10-CHIV-B09-GENERAL-VECTOR-ERROR-TAB4-Q18-R02-20261120",
+    "DELTA_A_UI","Q18_OWNER_SELF_VERIFIED_ENRICHMENT","OWNER_P2_PENDING"]){
+    assert(r02.includes(marker),"B09 R02 receipt lacks "+marker);
+   }
+  }
+ }
  const number=Number(name.slice(1)),roman=number<=11?"iv":"v";
  const lessonPath=path.join(root,"docs/thpt-preview/sgk/chuong-"+roman+"/bai-"+number+".md");
  const manuscriptPath=path.join(root,"prototypes/thpt/content-drafts/THPT_G10_CH"+
@@ -1166,7 +1185,20 @@ function expectedG10KnowledgeBlob(lesson,legacy){
  assert(source.includes("G10-B07-B14-KIEM-LOI-PLACEMENT-Q18-R01-20261120")&&
   source.includes("DELTA_C_ACADEMIC_MATERIAL")&&source.includes("OWNER_P2"),
   "B07-B14 Kiểm lỗi authoring HOLD receipt missing");
- return sha[1];
+ let newest=sha[1];
+ if(n===9){
+  const p02=path.join(root,"prototypes/thpt/ux795/G10_CHIV_B09_GENERAL_VECTOR_ERROR_TAB4_Q18_R02_20261120.md");
+  if(fs.existsSync(p02)){
+   const r02=fs.readFileSync(p02,"utf8");
+   const field=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(field("R02_PREVIOUS_SOURCE_BLOB"),newest,
+    "B09 R02 must extend exact original relocation source SHA");
+   newest=field("R02_CORRECTED_SOURCE_BLOB");
+   assert(/^[a-f0-9]{40}$/.test(newest)&&newest!==sha[1],
+    "B09 R02 current source SHA malformed");
+  }
+ }
+ return newest;
 }
 function candidateG10KnowledgeBlob(lesson){
  const sentinel="0".repeat(40),result=expectedG10KnowledgeBlob(lesson,sentinel);
