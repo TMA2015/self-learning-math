@@ -486,8 +486,8 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
    "B11 signed academic/PED R01 receipt must remain byte-identical");
   const manuscript=fs.readFileSync(path.join(root,
    "prototypes/thpt/content-drafts/THPT_G10_CHIV_B11_CANONICAL.md"));
-  assert.equal(calc(manuscript),g("B11_CANONICAL_CURRENT_BLOB"),
-   "B11 same canonical file must equal new owner P2 Delta A SHA");
+  assert.equal(calc(manuscript),currentB11.canonical,
+    "B11 current ONE canonical manuscript must extend frozen P2 Delta A SHA");
   const css=fs.readFileSync(path.join(root,"docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"));
   const cssFull=css.toString("utf8"),b13Tail="/* G10 ChV B13 · exact B10/B12 Golden palette";
   const tailAt=cssFull.indexOf(b13Tail);
@@ -536,8 +536,9 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
   }
   const sourceText=fs.readFileSync(path.join(root,
    "docs/thpt-preview/sgk/chuong-iv/bai-11.md"),"utf8");
-  assert.equal(calc(Buffer.from(sourceText)),g("B11_SOURCE_CURRENT_BLOB"),
-   "B11 source-first learner Knowledge must match new owner P2 receipt");
+  const currentB11=currentOneCanonicalAfterKiểmLỗi("B11",g("B11_SOURCE_CURRENT_BLOB"),g("B11_CANONICAL_CURRENT_BLOB"));
+   assert.equal(calc(Buffer.from(sourceText)),currentB11.source,
+    "B11 current public Knowledge must equal one updated canonical, old P2 receipt unchanged");
   const manuscriptText=manuscript.toString("utf8");
   const start="<!-- BEGIN_B11_KNOWLEDGE_MARKDOWN -->\n",end="\n<!-- END_B11_KNOWLEDGE_MARKDOWN -->";
   assert(manuscriptText.includes(start)&&manuscriptText.includes(end),"B11 one canonical Knowledge markers missing");
@@ -579,7 +580,8 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
   const nextSource=f02("R02_SOURCE_BLOB"),nextMaster=f02("R02_ONE_CANONICAL_LESSON_BLOB");
   assert(/^[a-f0-9]{40}$/.test(nextSource||"")&&/^[a-f0-9]{40}$/.test(nextMaster||""),
    "B10 P2 R02 source and manuscript must be exactly hash-locked");
-  assert.equal(calc(canonical),nextMaster,"B10 current canonical manuscript must match R02 P2 receipt");
+  const currentB10=currentOneCanonicalAfterKiểmLỗi("B10",nextSource,nextMaster);
+   assert.equal(calc(canonical),currentB10.canonical,"B10 current ONE manuscript must extend frozen R02 P2 receipt");
   return nextSource;
  }
 
@@ -636,7 +638,8 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
     const current=fs.readFileSync(path.join(root,
      "prototypes/thpt/content-drafts/THPT_G10_CHIV_B09_CANONICAL.md"));
     const blob=bytes=>require("node:crypto").createHash("sha1").update(Buffer.from("blob "+bytes.length+String.fromCharCode(0))).update(bytes).digest("hex");
-    assert.equal(blob(current),master,"B09 must use the ONE SHA-locked academic manuscript");
+    const currentB09=currentOneCanonicalAfterKiểmLỗi("B09",final,master);
+     assert.equal(blob(current),currentB09.canonical,"B09 ONE manuscript must match corrected Knowledge and source-lock");
     for(const token of ["Q18_AUTHOR_SELF_VERIFIED","CHIV-09-A","THPT-G10-B09-P07",
       "FORMATIVE_ONLY","OWNER_P2_PENDING","B09-RUNTIME-01"])
      assert(locked.includes(token),"B09 single-source Q18 receipt missing "+token);
@@ -775,10 +778,11 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
     "B12 prior signed manuscript must remain predecessor of UI-only Delta A");
    assert.equal(blob(fs.readFileSync(path.join(root,
     "prototypes/thpt/content-drafts/THPT_G10_CHV_B12_CANONICAL.md"))),
-    u("B12_CURRENT_CANONICAL_BLOB"),"B12 current canonical must match scoped Delta A SHA");
+    currentOneCanonicalAfterKiểmLỗi("B12",u("B12_CURRENT_SOURCE_BLOB"),u("B12_CURRENT_CANONICAL_BLOB")).canonical,
+    "B12 ONE canonical must match signed successor after historical Delta A");
    assert.equal(blob(fs.readFileSync(path.join(root,
-    "docs/thpt-preview/sgk/chuong-v/bai-12.md"))),u("B12_CURRENT_SOURCE_BLOB"),
-    "B12 current learner Markdown must match scoped Delta A SHA");
+    "docs/thpt-preview/sgk/chuong-v/bai-12.md"))),currentOneCanonicalAfterKiểmLỗi("B12",u("B12_CURRENT_SOURCE_BLOB"),u("B12_CURRENT_CANONICAL_BLOB")).source,
+    "B12 derived public Markdown must match signed successor after historical Delta A");
    for(const [rel,key] of [
     ["docs/assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js","B12_R01_ITEM_BANK_BLOB"],
     ["docs/thpt-preview/sgk/chuong-v/luyen-tap.md","B12_R01_PRACTICE_HUB_BLOB"]]){
