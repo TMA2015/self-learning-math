@@ -26,7 +26,7 @@ for(const n of [15,16,17,18]){
  const ux=chviExampleUxReceiptRows().get("B"+n);
  if(ux)assert.equal(ux.baseline,editorial.candidate,"B"+n+" follow-on UX cannot rewrite historical PED/S1 source");
  const expected=candidateG10KnowledgeBlob(n);
- if(n!==15&&n!==16&&n!==17)assert.equal(expected,ux?ux.candidate:(editorial?editorial.candidate:historic),
+ if(n!==15&&n!==16&&n!==17&&n!==18)assert.equal(expected,ux?ux.candidate:(editorial?editorial.candidate:historic),
   "B"+n+" unmodified ChVI source must remain at historical approved signed Q18 SHA");
  else if(n===17){
   const r17=fs.readFileSync(path.join(root,
@@ -42,6 +42,14 @@ for(const n of [15,16,17,18]){
    "B17 R02 source-equivalent display update must preserve original academic R01");
   assert.equal(next("CANDIDATE_B17_SOURCE_BLOB"),expected,
    "B17 Q18 current source must equal R02 exact Git blob");
+ }else if(n===18){
+  const r18=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHVI_B18_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261120.md"),"utf8");
+  const f18=k=>r18.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(f18("BASELINE_PUBLISHED_B18_SOURCE_BLOB"),ux.candidate,
+   "B18 must preserve exact original ChVI UX receipt/source lineage");
+  assert.equal(f18("CANDIDATE_B18_SOURCE_BLOB"),expected,
+   "B18 Q18 current canonical source must match owner signature");
  }else if(n===16){
   const r16=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHVI_B16_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261119.md"),"utf8");
