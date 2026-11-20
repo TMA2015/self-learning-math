@@ -36,8 +36,8 @@ RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
-SOURCE_BLOB: 159ff5f489dfb541bdd858b9559cc7cf7347df64
-ACADEMIC_SOURCE_BLOB: 159ff5f489dfb541bdd858b9559cc7cf7347df64
+SOURCE_BLOB: 2beb1845a2a6de7684985c995be2914e8878d79a
+ACADEMIC_SOURCE_BLOB: 2beb1845a2a6de7684985c995be2914e8878d79a
 FROZEN_R04_READY_SOURCE_BLOB: 41daf40a3b639a3ef35e129099525137a05b1848
 FROZEN_R04_FULL_AUTHOR_Q18_RECEIPT_BLOB: 5262fd454346801b050b5eb4f3dc407bc99d3530
 R05_GEOMETRIC_MODEL_SOURCE_BLOB: af8a3529398e5f876d5c979b0d5d26df3519d6ac
@@ -125,3 +125,7 @@ Chủ dự án phê duyệt sửa biên tập tại nguồn CONTENT_READY; **kh�
 - New learner SHA `159ff5f489dfb541bdd858b9559cc7cf7347df64`; prior learner `4a0342a04ca941af42dc965e8a4d1f5b507429cf` is historical.
 - Replaced sole `Ví dụ về đường bay và giao mặt phẳng.` heading fragment with `Chẳng hạn, chọn hệ trục tọa độ trong không gian.` preceding **unchanged** 3D parametric line-flight narrative. No altered vector, coordinates, condition, student worked example, Practice/anchor/rubric, canonical item ID, 40 outcome IDs, media or protected selfcheck. 3-part architecture and formal 40 independent example labels remain exactly as before.
 - Q03/PED targeted author self verification PASS for Delta A; no new academic NotebookLM PASS, no runtime/release claims.
+
+
+## 20/11/2026 · owner math-label ΔA after Oxyz prose cleanup
+- Learner `2beb1845a2a6de7684985c995be2914e8878d79a`, prior `159ff5f489dfb541bdd858b9559cc7cf7347df64` historical. Three `QUY TẮC` labels for vector paths, force resultant and coordinate operations correctly become TÍNH CHẤT; two `ĐIỀU KIỆN` labels for noncollinear 3-point plane / vanishing parametric direction become KIẾN THỨC CẦN GHI NHỚ. Existing precise vector arrows and canonical symmetric-line exception from S1 fixes retained; 40 outcomes, 247 canonical question/keys/rubrics, public replay safety unchanged. Exactly five formal prefixes changed, math untouched; targeted Q03/PED author self QA only, no full NotebookLM/RELEASE.
