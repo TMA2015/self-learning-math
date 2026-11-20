@@ -1,14 +1,14 @@
 # CĐ16 · R03 scope-corrected canonical / outcome / placement register · AUTHORING CANDIDATE
 
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 PLAN22_STUDY_SCOPE: Hình học không gian Quan hệ vuông góc & Góc (G11 ChVII B22–B25)
 CATALOG_TOPIC_ID: CD16
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 STATE: AUTHORING_R03_SELF_VERIFIED
 SCOPE_NOTES: PLAN22-17 Khoảng cách & Thể tích (G11 B26–B27 + CHVII-INTEGRATED) out of CĐ16, not silently retired/finished
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_PERPENDICULARITY_R03_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: c0e7b9bde78b90ef8233904889d63062f517b232
+ACADEMIC_SOURCE_BLOB: 439ee3833a864638eedd11bc80baf564c77485a5
 ORIGINAL_G11_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_THPT_TOPIC16_RAMP_ANGLE_R01_SCOPE_CORRECTED_20261113.html
 INTERACTIVE_MODEL_BLOB: 931093557eb411b9f78286a92e6545dcbd59aa73
@@ -195,3 +195,8 @@ REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC16_R03_AUTHOR_SELF
 - SOURCE_BLOB: c0e7b9bde78b90ef8233904889d63062f517b232
 - REVIEW_RECEIPT_BLOB: d6bb30f9fffdb15f32aa47dd1b8564cefb81aa4e
 - One noncanonical explanatory `Ví dụ kết nối` label normalized to fluent prose with unchanged mathematics/canonical item bank. Prior receipts historical; current author self-QA scoped Delta A.
+
+
+## 20/11 Full Knowledge SGK G11 T2 B22–B25 21/21
+
+Direct student canonical 439ee3833a864638eedd11bc80baf564c77485a5; Q18 signed 27975aff2764f84f62be45763d3014ed7b00ea7e. Outcomes O01, O06, O12, O13, O16, O20 expanded on angle, critical intersect condition, three-perpendicular theorem both directions, inclined line–plane trig, dihedral chosen half-planes, regular pyramid edge vs height. 86 original public canonical, 8 public replays, 4 SVG and Practice/Selfcheck untouched. AUTHOR_SELF_VERIFIED, not independently reviewed/RELEASE.
