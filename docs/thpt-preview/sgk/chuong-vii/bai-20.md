@@ -179,33 +179,35 @@
 
 === "Ví dụ"
 
-    Trước khi xem lời giải, hãy xác định dữ kiện, điều phải tìm và lý do chọn cách giải. Sau đó kiểm tra lại điều kiện áp dụng và kết quả, thay vì chỉ nhìn phép tính cuối cùng.
-
-    ### Ví dụ — Khoảng cách không phải độ dài một đoạn nối tùy ý
+    ### 3.1. Ví dụ — Khoảng cách ngắn nhất từ điểm đến đường
 
     **Đề bài.** Tìm khoảng cách từ \(M(0,0)\) đến \(\Delta:2x+y-6=0\).
 
-    **Vì sao chọn cách này?** Đường đã ở dạng tổng quát, nên có thể dùng trực tiếp công thức khoảng cách thay vì tự đo trên hình.
+    **Phân tích:** Đề đã cho phương trình tổng quát với pháp tuyến (2;1) khác 0. Khoảng cách là độ dài đoạn vuông góc từ M đến đường, không phải khoảng cách tới một điểm tùy chọn. Vì thế ta dùng trực tiếp công thức khoảng cách, thay tọa độ M rồi kiểm cả trị tuyệt đối và độ dài pháp tuyến.
 
-    **Lời giải.** \(d=\frac{|2\cdot0+0-6|}{\sqrt{2^2+1^2}}=\frac6{\sqrt5}\). Mẫu \(\sqrt5>0\) là độ dài pháp tuyến. Hình bên cạnh minh họa đoạn vuông góc từ M đến đường. 
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1">
+    <p><strong>Lời giải.</strong> Thế tọa độ M vào công thức: \(d=\frac{|2\cdot0+0-6|}{\sqrt{2^2+1^2}}=\frac6{\sqrt5}\). Mẫu \(\sqrt5>0\) là độ dài pháp tuyến; trị tuyệt đối làm kết quả không âm.</p>
+    </div>
 
-    **Kiểm lại:** khoảng cách không âm và có đơn vị độ dài.
+    **Kiểm lại:** Tọa độ M không thỏa phương trình đường nên khoảng cách dương; đoạn vuông góc trong hình ở tab Khám phá chính là đoạn cần đo.
 
-    ### Ví dụ 2 — Giao điểm, vuông góc và khoảng cách của hai đường thẳng
+    ### 3.2. Ví dụ — Giao điểm, góc vuông và khoảng cách
 
     **Đề bài.** Xét \(d_1:x-y-1=0\) và \(d_2:x+y-5=0\). Hãy xác định vị trí tương đối, giao điểm, quan hệ vuông góc và khoảng cách từ \(O(0;0)\) tới \(d_1\).
 
-    **Vì sao chọn cách này?** Dùng định thức của hai vectơ pháp tuyến để nhận biết hai đường cắt nhau, giải hệ tìm giao điểm và dùng tích vô hướng kiểm tra vuông góc.
+    **Phân tích:** Bài có bốn yêu cầu độc lập: định thức hai pháp tuyến cho biết có giao điểm duy nhất không; hệ phương trình tìm tọa độ giao; tích vô hướng kiểm góc vuông; công thức khoảng cách đo đoạn vuông góc từ O đến đường thứ nhất. Không suy ra vuông góc chỉ từ việc hai đường cắt nhau.
 
-    **Lời giải.**
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2">
+    <p><strong>Lời giải.</strong></p>
+    <ol>
+    <li><strong>Vị trí:</strong> Định thức hệ số bằng \(1\cdot1-1\cdot(-1)=2\ne0\), vậy hai đường cắt nhau tại một điểm.</li>
+    <li><strong>Giao điểm:</strong> Giải hệ \(x-y=1,\ x+y=5\) được \(I(3;2)\).</li>
+    <li><strong>Góc:</strong> Pháp tuyến \((1;-1)\) và \((1;1)\) có tích vô hướng \(0\), vậy hai đường vuông góc.</li>
+    <li><strong>Khoảng cách:</strong> Từ \(O(0;0)\) đến \(d_1\) bằng \(1/\sqrt2\), do mẫu là độ dài pháp tuyến \(\sqrt2\) và tử bằng 1.</li>
+    </ol>
+    </div>
 
-    1. Định thức hệ số bằng \(1\cdot1-1\cdot(-1)=2\ne0\), vậy hai đường cắt nhau.
-    2. Giải hệ \(x-y=1,\ x+y=5\) được \(I(3;2)\).
-    3. Pháp tuyến \((1;-1)\) và \((1;1)\) có tích vô hướng \(0\), vậy hai đường vuông góc.
-    4. Khoảng cách từ \(O(0;0)\) đến \(d_1\) bằng \(1/\sqrt2\).
-
-    !!! tip "Lỗi dễ mắc"
-        Hai **pháp tuyến tỉ lệ** chỉ cho biết hai đường song song **hoặc trùng nhau**; không tự kết luận trùng. Khi dùng phương trình chứa tham số, kiểm tra các hệ số có thể đồng thời bằng 0.
+    **Kiểm lại:** Thay \(I(3;2)\) vào hai phương trình đều cho 0, đúng là giao điểm. Tích vô hướng hai pháp tuyến bằng 0 nên góc nhỏ là 90°; khoảng cách đã tính dương và không phụ thuộc vị trí chọn điểm trên đường.
 
 === "Lỗi thường gặp"
 
