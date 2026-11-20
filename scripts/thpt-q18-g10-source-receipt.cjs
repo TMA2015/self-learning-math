@@ -95,7 +95,7 @@ function chviiEditorialReceiptRows(){
  return rows;
 }
 
-function expectedG10KnowledgeBlob(lesson,legacy){
+function expectedG10KnowledgeBlobHistorical(lesson,legacy){
  assert(/^[a-f0-9]{40}$/.test(legacy),"Historical source SHA malformed");
  const name="B"+String(lesson).replace(/^B/,"").padStart(2,"0");
  const file=path.join(root,ledger);
@@ -1035,6 +1035,23 @@ function expectedG10KnowledgeBlob(lesson,legacy){
   return row.candidate;
  }
  return blobs[1];
+}
+function expectedG10KnowledgeBlob(lesson,legacy){
+ const current=expectedG10KnowledgeBlobHistorical(lesson,legacy);
+ const n=Number(String(lesson).replace(/^B/,""));
+ if(!(n>=7&&n<=14))return current;
+ const file=path.join(root,"prototypes/thpt/ux795/G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md");
+ if(!fs.existsSync(file))return current;
+ const source=fs.readFileSync(file,"utf8"),rows=source.split("\n").filter(x=>x.startsWith("| B"+n+" | "));
+ assert.equal(rows.length,1,"B"+n+" Kiểm lỗi R01 source receipt missing or duplicate row");
+ const sha=[...rows[0].matchAll(/`([a-f0-9]{40})`/g)].map(x=>x[1]);
+ assert.equal(sha.length,2,"B"+n+" Kiểm lỗi row must lock previous and candidate Git SHA");
+ assert.equal(sha[0],current,"B"+n+" Kiểm lỗi must extend exact immutable published source");
+ assert.notEqual(sha[0],sha[1],"B"+n+" Kiểm lỗi source SHA must change");
+ assert(source.includes("G10-B07-B14-KIEM-LOI-PLACEMENT-Q18-R01-20261120")&&
+  source.includes("DELTA_C_ACADEMIC_MATERIAL")&&source.includes("OWNER_P2"),
+  "B07-B14 Kiểm lỗi authoring HOLD receipt missing");
+ return sha[1];
 }
 function candidateG10KnowledgeBlob(lesson){
  const sentinel="0".repeat(40),result=expectedG10KnowledgeBlob(lesson,sentinel);
