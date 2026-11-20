@@ -792,7 +792,7 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
    const b13=currentB13();
    assert.equal(b13.baseline,f("FROZEN_B13_SOURCE_BLOB"),
     "B12 frozen B13 ancestor preserved in its original academic source receipt");
-   assert.equal(blob(fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-v/bai-13.md"))),b13.next,
+   assert.equal(blob(fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-v/bai-13.md"))),candidateG10KnowledgeBlob("B13"),
     "B13 current candidate must match its own source-locked Q18 receipt");
    const style=fs.readFileSync(path.join(root,
     "docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"));
@@ -807,7 +807,7 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
    const b14=currentB14();
    assert.equal(b14.baseline,f("FROZEN_B14_SOURCE_BLOB"),"B12 historical B14 baseline preserved");
    assert.equal(b14.cssBase,b13.css,"B14 CSS append must start from owner-P2 B13 CSS");
-   assert.equal(blob(fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-v/bai-14.md"))),b14.next,
+   assert.equal(blob(fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-v/bai-14.md"))),candidateG10KnowledgeBlob("B14"),
     "B14 current Knowledge must match scoped Q18 X-C receipt");
    assert.equal(blob(Buffer.from(full.slice(0,full.indexOf("/* G10 ChV B14 · scoped X-C RELEASE Golden")-1))),
     b13.css,"B13 CSS snapshot unchanged before B14 appendix");
