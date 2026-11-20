@@ -46,7 +46,7 @@ Hãy tưởng tượng một kim dài đúng một đơn vị quay quanh gốc O
 | sin | 0 | 1/2 | √2/2 | √3/2 | 1 | √3/2 | √2/2 | 1/2 | 0 |
 | cos | 1 | √3/2 | √2/2 | 1/2 | 0 | −1/2 | −√2/2 | −√3/2 | −1 |
 
-**Ví dụ:** \(\sin 135^{\circ}+\cos 120^{\circ}=\sqrt{2}/2-1/2=(\sqrt{2}-1)/2\). Ta nhận ra trước \(135^{\circ}=180^{\circ}-45^{\circ}\), \(120^{\circ}=180^{\circ}-60^{\circ}\) rồi mới tính, vì quy luật dấu mới là điều quan trọng.
+Chẳng hạn, \(\sin 135^{\circ}+\cos 120^{\circ}=\sqrt{2}/2-1/2=(\sqrt{2}-1)/2\). Ta nhận ra trước \(135^{\circ}=180^{\circ}-45^{\circ}\), \(120^{\circ}=180^{\circ}-60^{\circ}\) rồi mới tính, vì quy luật dấu mới là điều quan trọng.
 
 
 > **TÍNH CHẤT — Góc bù và dấu**
@@ -73,7 +73,7 @@ Sin và cos là tọa độ nên đều xác định trên đoạn \(0^{\circ}\t
 
 Vì vậy, \(\tan 90^{\circ}\) không xác định; \(\cot 0^{\circ}\) và \(\cot 180^{\circ}\) không xác định; ngược lại \(\tan 180^{\circ}=0\) *có* nghĩa. Đối với góc tù, sin dương và cos âm, nên tang/côtang khi xác định đều âm.
 
-**Ví dụ:** Góc tù α có \(\tan  \alpha=-2\): từ \(1+\tan^{2}\alpha=1/\cos^{2}\alpha\) suy \(\cos^{2}\alpha=1/5\), chọn **cos âm** vì góc tù, nên \(\cos \alpha=-1/\sqrt{5}\), \(\sin \alpha=2/\sqrt{5}\), \(\cot \alpha=-1/2\).
+Chẳng hạn, Góc tù α có \(\tan  \alpha=-2\): từ \(1+\tan^{2}\alpha=1/\cos^{2}\alpha\) suy \(\cos^{2}\alpha=1/5\), chọn **cos âm** vì góc tù, nên \(\cos \alpha=-1/\sqrt{5}\), \(\sin \alpha=2/\sqrt{5}\), \(\cot \alpha=-1/2\).
 
 
 > **ĐỊNH NGHĨA — Tang và côtang**
@@ -158,7 +158,7 @@ Diện tích cùng một tam giác có thể tính bằng \(S=1/2 bc \sin A=1/2 
 
 trong đó R là bán kính đường tròn **ngoại tiếp**. Trong tam giác không suy biến, các góc A,B,C thuộc \((0^{\circ},180^{\circ})\) nên sin của chúng dương.
 
-**Ví dụ:** Với \(A=30^{\circ}, B=45^{\circ}, a=5\), góc \(C=105^{\circ}\), rồi \(b=5\cdot \sin 45^{\circ}/\sin 30^{\circ}=5\sqrt{2}\). Mặt khác \(2R=a/\sin A=10\) nên \(R=5\). Ta dùng định lí sin vì có sẵn một cặp cạnh–góc đối diện và cần cặp còn lại.
+Chẳng hạn, Với \(A=30^{\circ}, B=45^{\circ}, a=5\), góc \(C=105^{\circ}\), rồi \(b=5\cdot \sin 45^{\circ}/\sin 30^{\circ}=5\sqrt{2}\). Mặt khác \(2R=a/\sin A=10\) nên \(R=5\). Ta dùng định lí sin vì có sẵn một cặp cạnh–góc đối diện và cần cặp còn lại.
 
 
 > **ĐỊNH LÝ — Sin**
@@ -186,7 +186,7 @@ trong đó R là bán kính đường tròn **ngoại tiếp**. Trong tam giác 
 | **ASA/AAS:** hai góc và một cạnh | Hai cạnh khác | Tính góc còn lại, rồi dùng sin |
 | **SSA:** hai cạnh và góc **không xen giữa** | Số tam giác? | Phải kiểm tra *0, 1 hay 2 nghiệm* trước; không tự gán một tam giác |
 
-**Ví dụ SSS:** Ba cạnh \(7,8,9\) tạo thành tam giác vì thỏa bất đẳng thức tam giác. Với \(a=7,b=8,c=9\), \(\cos  C=(a^{2}+b^{2}-c^{2})/(2ab)=(49+64-81)/112=2/7\). Định lí côsin chọn C vì biết cạnh c đối diện góc cần tìm.
+Chẳng hạn, với dữ kiện ba cạnh, Ba cạnh \(7,8,9\) tạo thành tam giác vì thỏa bất đẳng thức tam giác. Với \(a=7,b=8,c=9\), \(\cos  C=(a^{2}+b^{2}-c^{2})/(2ab)=(49+64-81)/112=2/7\). Định lí côsin chọn C vì biết cạnh c đối diện góc cần tìm.
 
 
 > **PHƯƠNG PHÁP — Chọn công cụ theo dữ kiện**
@@ -267,7 +267,7 @@ Nếu r là bán kính đường tròn **nội tiếp** và R là bán kính đ�
 
 Công thức \(S=pr\) đến từ việc chia tam giác thành ba tam giác nhỏ chung chiều cao r (đường vuông góc từ tâm nội tiếp đến ba cạnh). Công thức \(S=abc/(4R)\) kết hợp diện tích qua sin với định lí sin. **Không hoán đổi r và R**, và trước khi dùng Heron phải kiểm \(a+b>c\), \(b+c>a\), \(c+a>b\).
 
-**Ví dụ:** Tam giác 13–14–15 có \(p=21\), \(S=\sqrt{21\cdot 8\cdot 7\cdot 6}=84\), \(r=84/21=4\), \(R=13\cdot 14\cdot 15/(4\cdot 84)=65/8\).
+Chẳng hạn, Tam giác 13–14–15 có \(p=21\), \(S=\sqrt{21\cdot 8\cdot 7\cdot 6}=84\), \(r=84/21=4\), \(R=13\cdot 14\cdot 15/(4\cdot 84)=65/8\).
 
 
 > **CÔNG THỨC — Heron và bán kính**
