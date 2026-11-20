@@ -3,23 +3,23 @@
 **Authoring CONTENT_READY candidate** under one owner-effective `SLM-THPT-QUALITY-ONE v3.1.0` Q01–Q18. Academic/PED are AUTHOR `SELF_VERIFIED`, not independent NotebookLM verdict. The 22-topic catalog is a historical research proposal, NOT an owner-approved runtime Topic ID. RELEASE retains full release/QA/owner gating.
 
 PACKET_ID: THPT-TOPIC16-PERPENDICULAR-ANGLE-FULL-R03
-CONTENT_REVISION: R03
+CONTENT_REVISION: R03_FULL_S1_KNOWLEDGE_20261120
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 CATALOG_TOPIC_ID: CD16
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_PERPENDICULARITY_R03_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: c0e7b9bde78b90ef8233904889d63062f517b232
+ACADEMIC_SOURCE_BLOB: 439ee3833a864638eedd11bc80baf564c77485a5
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC16_R03_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: d6bb30f9fffdb15f32aa47dd1b8564cefb81aa4e
+REVIEW_RECEIPT_BLOB: 27975aff2764f84f62be45763d3014ed7b00ea7e
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_R03_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: fc7196500d9996d5500b39b266445746de3f5fcf
+AUTHOR_A1_A7_BLOB: 1c52217f82a702c33eb0232ab11e6254f96229d7
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_R03_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: fc7196500d9996d5500b39b266445746de3f5fcf
+AUTHOR_METADATA_BLOB: 1c52217f82a702c33eb0232ab11e6254f96229d7
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHVII_B22_B27_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 MODEL_ID: SLM-TOP16-RAMP-ANGLE-R00
@@ -353,3 +353,8 @@ R1–R5/AP1–AP5/P1–P2 **NOT TESTED** on production or integrated main. Relea
 
 ## 20/11/2026 — current learner simple editorial relock
 - AUTHORING SOURCE `c0e7b9bde78b90ef8233904889d63062f517b232`, Q18 `d6bb30f9fffdb15f32aa47dd1b8564cefb81aa4e`, A1 `fc7196500d9996d5500b39b266445746de3f5fcf`; all 21 outcome sequences and canonical assessments untouched; exact website status outside AUTHORING.
+
+
+## 20/11 full Knowledge S1 G11 ChVII B22–B25
+
+One learner 439ee3833a864638eedd11bc80baf564c77485a5, exact Q18 27975aff2764f84f62be45763d3014ed7b00ea7e, one A1 1c52217f82a702c33eb0232ab11e6254f96229d7. The six revised outcomes O01/O06/O12/O13/O16/O20 are Delta C and fully taught with conditions/examples/recovery. Existing 86 canonical, 8 selfchecks, diagrams and assessment unchanged; no Topic-independent NotebookLM PASS, release rights or runtime readiness.
