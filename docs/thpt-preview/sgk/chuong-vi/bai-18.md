@@ -370,7 +370,7 @@
 
     Một điểm dễ nhầm khác là phép khai căn: với \(u\in\mathbb R\), ta có \(\sqrt{u^2}=|u|\); không được tự thay bằng \(u\) khi chưa biết dấu của \(u\).
 
-    Bốn tình huống khắc phục dưới đây liên hệ trực tiếp với các câu **Vận dụng** trong bài. Mỗi tình huống đều nhắc lại dữ kiện cần thiết, chỉ rõ bước sai và hướng tự sửa; em không cần phải nhớ lại đề từ tab trước.
+    Phần *Kiểm lỗi* cho từng câu Vận dụng đã nằm ngay dưới câu đó trong tab *Khám phá kiến thức*. Những lưu ý trên chỉ nhắc lại điều kiện cần kiểm khi giải phương trình chứa căn.
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
