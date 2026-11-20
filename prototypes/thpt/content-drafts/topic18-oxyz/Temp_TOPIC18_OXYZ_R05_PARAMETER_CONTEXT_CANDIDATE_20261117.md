@@ -786,28 +786,30 @@ x=t,y=2t,z=3t.
 
 <!-- LESSON_ID: TOP18-M26; OUTCOME_ID: TOP18-O26; S1_ORIGINAL_OUTCOME: G12-CHV-B15-O03; SCOPE: G12_CHV -->
 
-Phương trình chính tắc của đường thẳng cần cẩn thận khi một thành phần vectơ chỉ phương bằng 0. Chỉ những tỉ số có mẫu khác 0 mới xuất hiện; thành phần bằng 0 thành phương trình tọa độ cố định. Không bao giờ viết phép chia cho 0.
+Trong SGK, **phương trình chính tắc** của đường thẳng là một dạng ba tỉ số bằng nhau, nên ba thành phần của vectơ chỉ phương đều phải **khác 0**. Khi một thành phần bằng 0, đường thẳng vẫn tồn tại và vẫn có phương trình tham số, nhưng **không có phương trình chính tắc theo định nghĩa của SGK**. Ta có thể thay bằng một hệ tương đương gồm các tỉ số hợp lệ và phương trình tọa độ cố định. Không được coi phép chia cho 0 là một tỉ số.
 
-> **ĐIỀU KIỆN — Khi một tọa độ hướng bằng không**
+> **ĐỊNH NGHĨA — Phương trình chính tắc của đường thẳng**
 >
-> Dạng chính tắc chỉ viết tỉ số ở tọa độ có thành phần hướng khác 0; thành phần hướng bằng 0 phải viết thành tọa độ cố định, không chia cho 0.
+> Trong hệ trục \(Oxyz\), đường thẳng đi qua \(M_0(x_0;y_0;z_0)\) có vectơ chỉ phương \(\vec u=(a;b;c)\) với \(abc\ne0\) có phương trình chính tắc \(\dfrac{x-x_0}{a}=\dfrac{y-y_0}{b}=\dfrac{z-z_0}{c}\). Ba mẫu số đều khác 0 là **điều kiện bắt buộc** của dạng này.
+>
+> **ĐIỀU KIỆN — Khi một tọa độ hướng bằng không.** Nếu một trong \(a,b,c\) bằng 0, không được gọi hệ tỉ số rút gọn là *phương trình chính tắc* theo SGK. Khi đó giữ tọa độ tương ứng bằng hằng số và có thể viết các tỉ số còn hợp lệ **chỉ như một hệ biểu diễn tương đương**; phương trình tham số luôn là lựa chọn không phải chia.
 
 
 **Ví dụ**
 
-**Đề bài:** Đường x=1+2t, y=3, z=4−t. Viết dạng chính tắc mà không chia cho 0.
+**Đề bài:** Đường \(x=1+2t,\ y=3,\ z=4-t\). Có viết được phương trình chính tắc theo SGK không? Hãy viết một hệ biểu diễn tương đương mà không chia cho 0.
 
-**Lời giải:** x=1+2t,y=3,z=4−t. Với thành phần y=0 của hướng, giữ y=3 và viết (x−1)/2=(z−4)/(−1). Tọa độ chỉ phương bằng 0 tương ứng tọa độ cố định.
+**Lời giải:** Vectơ chỉ phương là \((2;0;-1)\), có thành phần thứ hai bằng 0 nên **không có phương trình chính tắc theo định nghĩa SGK**. Hệ \(y=3\), \(\dfrac{x-1}{2}=\dfrac{z-4}{-1}\) mô tả đúng cùng đường thẳng, nhưng **chỉ là hệ biểu diễn tương đương**, không được gọi phương trình chính tắc. Mọi điểm vẫn thỏa phương trình tham số ban đầu với cùng \(t\).
 
-**Vận dụng:** Đường x=2+t,y=−1,z=3+2t. Dạng chính tắc an toàn?
+**Vận dụng:** Đường \(x=2+t,\ y=-1,\ z=3+2t\) có phương trình chính tắc theo SGK không? Viết một hệ biểu diễn tương đương tránh chia cho 0.
 
 <!-- ITEM_ID: THPT-TOP18-T26; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP18-O26 -->
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-(x−2)/1=(z−3)/2; y=−1.
+Không có phương trình chính tắc theo định nghĩa SGK vì vectơ chỉ phương \((1;0;2)\) có một thành phần bằng 0. Hệ tương đương: \(\dfrac{x-2}{1}=\dfrac{z-3}{2}\) và \(y=-1\).
 
-**D6 — Khi chưa đúng:** D6: nhận từng thành phần hướng bằng 0 rồi giữ phương trình hằng; tỉ số có mẫu 0 là vô nghĩa.
+**D6 — Khi chưa đúng:** Nếu có thành phần hướng bằng 0, phải giữ phương trình tọa độ cố định; đừng đặt mẫu bằng 0 hoặc gọi hệ hỗn hợp là phương trình chính tắc. Hãy quay lại phương trình tham số để tự kiểm.
 
 </details>
 
