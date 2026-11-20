@@ -3,23 +3,23 @@
 **AUTHORING CONTENT_READY_CANDIDATE, SOURCE-ONLY**, academic/PED self-author-verified `SLM-THPT-QUALITY-ONE v3.1.0` one Q01–Q18 standard; **not** an independent NotebookLM PASS, not website RELEASE readiness or owner merge/deploy permission. PLAN22-17 follows historical NotebookLM 22-topic study proposal, not a locked runtime `TOPIC_ID`.
 
 PACKET_ID: THPT-TOPIC17-DISTANCE-VOLUME-FULL-R02
-CONTENT_REVISION: R03
+CONTENT_REVISION: R03_FULL_S1_KNOWLEDGE_20261120
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 CATALOG_TOPIC_ID: CD17
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 8877dd83aa804f7a4d665294d59faf511fcdb5bf
+ACADEMIC_SOURCE_BLOB: 38aa934fc2422b342e314fabddca54a0eb679cce
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC17_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 11db4d6cafc94f88d17dbcdf041f655bdceab030
+REVIEW_RECEIPT_BLOB: 61c43e3eb1878235bbb8b2b963695a7d8924f299
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: 9ea9bc3fa95a85cecf9a8374b203826b02e3acde
+AUTHOR_A1_A7_BLOB: d5de00ad09dbd6f6658500fda175d082781a0183
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: 9ea9bc3fa95a85cecf9a8374b203826b02e3acde
+AUTHOR_METADATA_BLOB: d5de00ad09dbd6f6658500fda175d082781a0183
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHVII_B22_B27_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_THPT_TOPIC17_FRUSTUM_VOLUME_MODEL_R00_20261113.html
@@ -275,3 +275,8 @@ This handoff retains its prior file path and packet identifier for stable links 
 
 ## 20/11/2026 — Current V2 after S1 B26 targeted ΔC
 - Learner 8877dd83aa804f7a4d665294d59faf511fcdb5bf, Q18 11db4d6cafc94f88d17dbcdf041f655bdceab030, A1 9ea9bc3fa95a85cecf9a8374b203826b02e3acde. Two missing S1 distance relations in O03/O05 restored in place, original canonical item bank and selfchecks untouched. No release integration or new external review claim.
+
+
+## 20/11 full SGK G11 ChVII B26–B27 Knowledge
+
+Current sole learner `38aa934fc2422b342e314fabddca54a0eb679cce`, Q18 author self `61c43e3eb1878235bbb8b2b963695a7d8924f299`, A1 `d5de00ad09dbd6f6658500fda175d082781a0183`. 12 Knowledge outcomes, O05/O06/O07/O10/O12 complete with derivations/examples. Original 49 canonical, 8 public replays, diagrams/answers/Practice/Selfcheck unchanged. No NotebookLM independent Topic PASS, RD1/Mastery/Final Submit or website release.
