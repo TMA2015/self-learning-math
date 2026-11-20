@@ -104,6 +104,8 @@ Muốn tính xác suất hai sự việc \(A\) rồi \(B\) cùng xảy ra, trư�
 >
 > \[P(A\cap B)=P(A)P(B\mid A)\quad\text{khi }P(A)>0.\] Tương tự \(P(A\cap B)=P(B)P(A\mid B)\) nếu \(P(B)>0\). Khi rút không hoàn lại, phải cập nhật xác suất nhánh sau.
 
+Nếu \(P(A)=0\), vì \(A\cap B\subseteq A\) nên chắc chắn \(P(A\cap B)=0\). Khi ấy **không** viết \(P(B\mid A)\) theo công thức thông thường vì mẫu \(P(A)\) bằng \(0\). Tương tự nếu \(P(B)=0\), giao có xác suất \(0\) nhưng không dùng \(P(A\mid B)\). Vì vậy, quy tắc nhân vẫn xử lý được trường hợp xác suất bằng \(0\), chỉ cần tách ra trước khi chia.
+
 **Ví dụ**
 
 **Đề bài:** Một túi có 3 thẻ xanh lục và 4 thẻ cam, tất cả các thẻ phân biệt. Rút đều ngẫu nhiên hai thẻ liên tiếp không hoàn lại. Tính xác suất cả hai thẻ đều xanh lục.
