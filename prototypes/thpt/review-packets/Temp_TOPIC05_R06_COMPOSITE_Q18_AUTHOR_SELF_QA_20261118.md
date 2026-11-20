@@ -16,7 +16,7 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 7b5d360250b5268d8c566be945f9c9be4a2c4dd4
+SOURCE_BLOB: 583ba974917ce04b16dd4ff6d92b7cdb9b77a2b1
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC05_GRAPH_TRANSFORMS_NEW38_PUBLIC_CANONICAL_R01_20261112.md
 PUBLIC_CANONICAL_BANK_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39
 BASELINE_R05_SOURCE_BLOB: 3052d5f7090f74af2eca7739047c59ed76ccda63
@@ -98,3 +98,11 @@ Owner ΔA 19/11: 14 công thức/quy tắc đã diễn giải được thêm nh�
 - Restore in existing O07 narrative after already-rendered table: (x=0Rightarrow(0,c)) on Oy; (y=0Rightarrow ax²+bx+c=0) on Ox with Δ>0 two points, Δ=0 one tangency, Δ<0 none; check the **same existing example** f=x²−2x at (0,0),(2,0), both on Ox, (0,0) also on Oy. No new numbered module, item ID, repetitive stand-alone example, canonical question or answer.
 - **Targeted source-first author math QA:** for f=x²−2x, a=1,b=−2,c=0; Δ=4>0, roots 0,2, Oy point (0,0), vertex (1,−1), all 5/5 consistent with pre-existing table and graph. Domain a≠0 stated in O07; no axes or boundary error.
 - Scope `DELTA_C_ACADEMIC_MATERIAL` confined to Knowledge O07; suffix from # Luyện tập onward byte-identical. 38 original public canonical questions and keys/rubrics, D6/assessment privacy untouched. No independent NotebookLM reviewer verdict on this patch, no overall Topic SGK PASS or RELEASE.
+
+
+## 20/11/2026 — CĐ05 Kiến thức: đối chiếu SGK G10 T2 B15–16, sửa đúng phần còn thiếu
+- Bài 15: nguồn học sinh trước đây định nghĩa hàm, miền, tập giá trị, đồ thị và đồng/nghịch biến; thiếu phát biểu rõ về **các cách cho hàm số (bảng, biểu đồ, công thức, mô tả)**, **quy ước miền xác định của hàm cho bằng công thức nhưng không nêu miền**, và bốn bước mô hình hoá (lời → biến/đơn vị/miền → lập công thức → dùng và kiểm). Đã bổ sung vào chính §§1.1, 1.2, 4.3, không mở mục/lesson mới. Nguồn Bài 15 trang in 5–11 https://www.sgkvn.com/lop-10-13/ket-noi-tri-thuc-voi-cuoc-song-3/chuong-vi-ham-so-do-thi-va-ung-dung-3132/bai-15-ham-so-11320.html.
+- §4.3 tự biên ví dụ 24 m dây rào đủ bốn cạnh: x+y=12, 0<x<12, S=x(12−x)=36−(x−6)^2, Smax=36 m² tại x=6, hai cạnh 6 m, chu vi thực tế 24 m; không nhầm mô hình rào ba cạnh.
+- Bài 16 trang in 11–18: kiểm nguyên văn student §§2.2 về hàm bậc hai, điều kiện a≠0, trục đỉnh, bảng điểm (−1,3),(0,0),(1,−1),(2,0),(3,3), 3 trường hợp Δ của giao Ox, đồng/nghịch biến, cực trị và miền; đủ phạm vi đang học nên giữ nguyên. Các phép đồ thị §3, cực trị có biên §4 đã có Ví dụ và Vận dụng.
+- Tự kiểm 17/17 mục có Ví dụ tự đủ, Vận dụng và Đối chiếu tự mở; 55/55 disclosure balanced; ba phần Kiến thức/Luyện tập/Tự kiểm tra vẫn nguyên. Suffix Practice/Selfcheck byte-identical, không thay item/key/rubric, không thêm bài học. Maths và mô hình checked bằng thế trực tiếp; author self-QA affected only; không nhận là full NotebookLM independent review.
+- CURRENT_LEARNER_SOURCE_BLOB: 583ba974917ce04b16dd4ff6d92b7cdb9b77a2b1; former 7b5d360250b5268d8c566be945f9c9be4a2c4dd4 preserved as history.
