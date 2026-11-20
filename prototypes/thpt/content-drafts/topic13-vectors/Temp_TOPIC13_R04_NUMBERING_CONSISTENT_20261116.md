@@ -113,7 +113,7 @@ Vì mũi tên tổng cho biết đúng **độ dời cuối cùng**, đổi th�
 
 Hai lực xuất phát tại cùng một điểm thường được vẽ thành hai cạnh kề của hình bình hành, còn hợp lực theo đường chéo. Muốn biết hiệu hai độ dời, ta đảo hướng vectơ bị trừ rồi cộng; cách vẽ này ngăn nhầm chiều kết quả.
 
-> **QUY TẮC — Hình bình hành và phép trừ vectơ.** Đặt hai vectơ cùng gốc, đường chéo của hình bình hành biểu diễn tổng. Phép trừ là cộng vectơ đối: \(\vec u-\vec v=\vec u+(-\vec v)\). Với ba điểm, \(\overrightarrow{AB}-\overrightarrow{AC}=\overrightarrow{CB}\). Dấu âm đảo chiều vectơ AC, không phải AB; đây là nguyên nhân nhầm CB thành BC.
+> **TÍNH CHẤT — Hình bình hành và phép trừ vectơ.** Đặt hai vectơ cùng gốc, đường chéo của hình bình hành biểu diễn tổng. Phép trừ là cộng vectơ đối: \(\vec u-\vec v=\vec u+(-\vec v)\). Với ba điểm, \(\overrightarrow{AB}-\overrightarrow{AC}=\overrightarrow{CB}\). Dấu âm đảo chiều vectơ AC, không phải AB; đây là nguyên nhân nhầm CB thành BC.
 
 **Ví dụ**
 
@@ -304,7 +304,7 @@ Có, tích 1×4+2×(−2)=0.
 
 Một drone có thể chuyển về đông, về bắc và lên cao. Hai tọa độ không đủ biểu diễn ba thay đổi ấy, nhưng quy tắc nối đuôi các độ dời vẫn không đổi khi ta bước sang không gian.
 
-> **QUY TẮC — Ba hướng không gian: từ hình bình hành đến hình hộp.** Phép cộng vectơ trong không gian giữ nguyên quy tắc nối đuôi. Trong hình hộp ABCD.A'B'C'D', \(\overrightarrow{AC'}=\overrightarrow{AB}+\overrightarrow{AD}+\overrightarrow{AA'}\): ba cạnh xuất phát từ A đưa ta tới đỉnh C'. Hình phối cảnh có thể làm góc trông bị méo; không lấy góc trên giấy làm góc không gian thật. Chỉ khi ba cạnh vuông góc đôi một mới dùng căn tổng bình phương để tìm đường chéo.
+> **TÍNH CHẤT — Ba hướng không gian: từ hình bình hành đến hình hộp.** Phép cộng vectơ trong không gian giữ nguyên quy tắc nối đuôi. Trong hình hộp ABCD.A'B'C'D', \(\overrightarrow{AC'}=\overrightarrow{AB}+\overrightarrow{AD}+\overrightarrow{AA'}\): ba cạnh xuất phát từ A đưa ta tới đỉnh C'. Hình phối cảnh có thể làm góc trông bị méo; không lấy góc trên giấy làm góc không gian thật. Chỉ khi ba cạnh vuông góc đôi một mới dùng căn tổng bình phương để tìm đường chéo.
 
 ![Hình hộp: ba hướng cạnh cộng thành đường chéo](../svg/FIG-G12-CHII-B06-R00.svg)
 
@@ -332,7 +332,7 @@ C' vì còn một bước theo chiều cao AA'.
 
 Ba điểm không nhất thiết cùng nằm trên mặt phẳng tọa độ Oxy. Dù đường đi A→B→C có nghiêng trong không gian, vectơ từ A đến C vẫn bằng tổng hai độ dời nối tiếp.
 
-> **QUY TẮC — Chasles, trung điểm và trọng tâm vẫn đúng trong không gian.** Trong không gian, \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}\) vẫn đúng dù A,B,C không nằm trong Oxy. Trung điểm M của AB thỏa \(\overrightarrow{MA}+\overrightarrow{MB}=\vec0\); trọng tâm tam giác ABC thỏa \(\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0\). Không nhầm giao điểm hai đoạn nhìn thấy trên hình chiếu với giao điểm thật của chúng trong không gian.
+> **TÍNH CHẤT — Chasles, trung điểm và trọng tâm vẫn đúng trong không gian.** Trong không gian, \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}\) vẫn đúng dù A,B,C không nằm trong Oxy. Trung điểm M của AB thỏa \(\overrightarrow{MA}+\overrightarrow{MB}=\vec0\); trọng tâm tam giác ABC thỏa \(\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0\). Không nhầm giao điểm hai đoạn nhìn thấy trên hình chiếu với giao điểm thật của chúng trong không gian.
 
 **Ví dụ**
 
