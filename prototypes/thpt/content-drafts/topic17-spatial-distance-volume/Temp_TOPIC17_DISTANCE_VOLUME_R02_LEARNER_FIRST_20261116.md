@@ -208,7 +208,7 @@ Hãy tìm cùng một **diện tích đáy S** và **chiều cao vuông góc h**
 
 <!-- LESSON_ID: TOP17-M07; OUTCOME_ID: TOP17-O07; S1_ORIGINAL_OUTCOME: G11-B27-PRISM_VOLUME -->
 
-> **CÔNG THỨC / TÍNH CHẤT — Kiến thức cần ghi nhớ**
+> **CÔNG THỨC — Thể tích lăng trụ**
 >
 > Thể tích lăng trụ bằng diện tích đáy nhân chiều cao vuông góc V=Sđáy·h. Hộp có các lát cắt bằng nhau theo chiều cao nên thể tích tỉ lệ tuyến tính với h.
 
@@ -238,7 +238,7 @@ Lăng trụ Sđáy=12 cm², h=5 cm; thể tích?
 
 <!-- LESSON_ID: TOP17-M08; OUTCOME_ID: TOP17-O08; S1_ORIGINAL_OUTCOME: G11-B27-PYRAMID_VOLUME -->
 
-> **CÔNG THỨC / TÍNH CHẤT — Kiến thức cần ghi nhớ**
+> **CÔNG THỨC — Thể tích khối chóp**
 >
 > Chóp cùng đáy và chiều cao với lăng trụ tương ứng chỉ có thể tích bằng một phần ba lăng trụ: V=(1/3)Sđáy·h. Hệ số 1/3 không xuất hiện với lăng trụ.
 
@@ -268,7 +268,7 @@ Chóp Sđáy=12 cm², h=5 cm; thể tích?
 
 <!-- LESSON_ID: TOP17-M09; OUTCOME_ID: TOP17-O09; S1_ORIGINAL_OUTCOME: G11-B27-BOX_VOLUME -->
 
-> **CÔNG THỨC / TÍNH CHẤT — Kiến thức cần ghi nhớ**
+> **CÔNG THỨC — Thể tích hình hộp và lập phương**
 >
 > Hộp chữ nhật là lăng trụ đứng có đáy chữ nhật, nên V=abc; lập phương cạnh a có V=a³. Đơn vị diện tích đáy nhân độ dài thành đơn vị khối.
 
@@ -298,7 +298,7 @@ Hộp có kích thước 2,3,4 cm, thể tích?
 
 <!-- LESSON_ID: TOP17-M10; OUTCOME_ID: TOP17-O10; S1_ORIGINAL_OUTCOME: G11-B27-FRUSTUM_VOLUME -->
 
-> **CÔNG THỨC / TÍNH CHẤT — Kiến thức cần ghi nhớ**
+> **CÔNG THỨC — Thể tích chóp cụt**
 >
 > Với chóp cụt có hai đáy song song diện tích S,S′ và chiều cao h, V=(h/3)(S+S′+√(SS′)). Công thức có cả h và trung bình nhân diện tích, không phải S·h đơn giản.
 
@@ -323,7 +323,18 @@ Chóp cụt S=16,S′=4,h=6. Giá trị √(SS′)?
 </details>
 
 
-**Tự khám phá — tự tính được ngay cả khi không có mô hình tương tác:** Giữ cạnh đáy lớn \(a=6\) cm và chiều cao vuông góc \(h=4\) cm. Nếu cạnh đáy nhỏ bằng \(6k\) với \(0\le k\le1\), thì \(S=36\), \(S'=36k^2\), \(\sqrt{SS'}=36k\) (cm²). Từ công thức thể tích chóp cụt, \(V=\frac43(36+36k+36k^2)=48(1+k+k^2)\) cm³. **Hãy tự tính trước khi xem các giá trị sau:** \(k=0\) cho \(V=48\) cm³ (chóp); \(k=\frac12\) cho \(V=84\) cm³ (chóp cụt); \(k=1\) cho \(V=144\) cm³ (lăng trụ). Nếu kết quả không tăng khi \(k\) tăng, kiểm lại diện tích đáy nhỏ \(36k^2\) và thành phần \(36k\) trong căn tích hai diện tích.
+Để tự quan sát thể tích chóp cụt thay đổi thế nào, em giữ cạnh đáy lớn \(a=6\) cm và chiều cao vuông góc \(h=4\) cm. Cạnh đáy nhỏ bằng \(6k\) với \(0\le k\le1\), do đó \(S=36\), \(S'=36k^2\) và \(\sqrt{SS'}=36k\) (cm²). Công thức thể tích cho \(V=\frac43(36+36k+36k^2)=48(1+k+k^2)\) cm³.
+
+**Vận dụng** Em hãy tự tính \(V\) khi \(k=0\), \(k=\frac12\) và \(k=1\). Kết quả thay đổi theo chiều nào khi \(k\) tăng? Thử làm trước rồi tự mở Đối chiếu.
+
+<details class="slm-topic-first-try" markdown="1">
+<summary>Đối chiếu</summary>
+
+Khi \(k=0\), \(V=48\) cm³ (giới hạn hình chóp); khi \(k=\frac12\), \(V=84\) cm³ (chóp cụt); khi \(k=1\), \(V=144\) cm³ (giới hạn lăng trụ). Kết quả tăng khi cạnh đáy nhỏ tăng trong điều kiện đáy lớn và chiều cao cố định.
+
+**Nếu làm sai:** Kiểm lại diện tích đáy nhỏ \(36k^2\) và căn tích hai diện tích \(36k\); đừng lấy \(S'=36k\).
+
+</details>
 
 <!-- AUTHOR_ONLY_MODEL_REFERENCE: SLM-TOP17-FRUSTUM-VOLUME-R00; FILE: Temp_THPT_TOPIC17_FRUSTUM_VOLUME_MODEL_R00_20261113.html; PUBLIC_DISCOVERY_NO_MASTERY -->
 
@@ -333,7 +344,7 @@ Chóp cụt S=16,S′=4,h=6. Giá trị √(SS′)?
 
 <!-- LESSON_ID: TOP17-M11; OUTCOME_ID: TOP17-O11; S1_ORIGINAL_OUTCOME: G11-B27-VOLUME_APPLICATION -->
 
-> **CÔNG THỨC / TÍNH CHẤT — Kiến thức cần ghi nhớ**
+> **PHƯƠNG PHÁP — Cách lập mô hình thể tích**
 >
 > Trong bài toán ứng dụng, phải phân loại khối, đổi đơn vị, xác định chiều cao **vuông góc**, rồi mới thay số; kết quả thể tích không thể là mét vuông.
 
@@ -363,7 +374,7 @@ Khối lăng trụ có diện tích đáy 6 m², cao 10 m. Thể tích?
 
 <!-- LESSON_ID: TOP17-M12; OUTCOME_ID: TOP17-O12; S1_ORIGINAL_OUTCOME: G11-CHVII-INTEGRATED -->
 
-> **CÔNG THỨC / TÍNH CHẤT — Kiến thức cần ghi nhớ**
+> **PHƯƠNG PHÁP — Các bước tổng hợp hình học và thể tích**
 >
 > Bài tổng hợp đi ngược từ thể tích: cần xác định đáy và chiều cao, muốn tìm chiều cao phải dựng hình chiếu vuông góc, muốn chứng minh vuông góc mặt cần hai đường cắt nhau trong mặt. Mỗi mũi suy luận có điều kiện riêng.
 
