@@ -99,9 +99,9 @@
 
     ??? tip "Kiểm lỗi"
 
-        <p><strong>Lỗi thường gặp 1:</strong> Với \(A(0;0)\), \(B(6;0)\), \(C(0;3)\), học sinh ghi trọng tâm \(G(3;1{,}5)\), vì lấy trung bình tọa độ ba đỉnh nhưng <strong>chia cho 2</strong>. Đúng phải là \(G(2;1)\), do có <strong>ba đỉnh</strong>.</p>
+        <p><strong>Lỗi thường gặp 1:</strong> Với \(A(-2;4)\), \(B(4;0)\), \(C(1;5)\), học sinh nhầm trọng tâm với trung điểm \(AB\) và ghi \(G(1;2)\). Đúng phải là \(G(1;3)\) vì tọa độ trọng tâm là trung bình <strong>ba đỉnh</strong>, không chỉ hai đỉnh.</p>
 
-        <p><strong>Lỗi thường gặp 2:</strong> Học sinh nói hai vectơ \((2;0)\) và \((3;1)\) cùng phương vì “hoành độ đều dương”, trong khi \(2\cdot1-0\cdot3=2\ne0\). Dấu riêng một thành phần không đủ xác định cùng phương.</p>
+        <p><strong>Lỗi thường gặp 2:</strong> Trong Vận dụng, \(\vec u=(2;1)\) và \(\vec w=(6;4)\) không cùng phương vì \(2\cdot4-1\cdot6=2\ne0\), dù hoành độ đều dương. Ngược lại, \(\vec v=(6;3)=3\vec u\) mới cùng phương với \(\vec u\).</p>
 
         <p><strong>Vì sao sai?</strong> Công thức trọng tâm khác trung điểm về số điểm lấy trung bình; còn cùng phương đòi hỏi <strong>một hệ số nhân chung</strong> cho cả hai thành phần. Khi gặp thành phần \(0\), không lập tỉ số có mẫu \(0\).</p>
 
