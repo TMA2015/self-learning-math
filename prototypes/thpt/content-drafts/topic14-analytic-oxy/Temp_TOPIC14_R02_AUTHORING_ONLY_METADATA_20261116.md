@@ -14,8 +14,8 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: a5361460045dab88f1a14929298bd41693f537cf
-SOURCE_BLOB: a5361460045dab88f1a14929298bd41693f537cf
+ACADEMIC_SOURCE_BLOB: 7584f28afa12e8a1a05529512516e9571d856d39
+SOURCE_BLOB: 7584f28afa12e8a1a05529512516e9571d856d39
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/Temp_G10_SGK_CHVII_FULL_R02_SOURCE_WITH_CANONICAL_REFERENCES_20261105.md
 ORIGINAL_SGK_SOURCE_BLOB: c5c222af88b0e932f9b60df059d8ffd4da5f0f26
 ORIGINAL_SGK_PED_R01_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd
@@ -413,3 +413,9 @@ Latest EFFECTIVE learner SHA: `47c98711e2955287831d5ea10fc5d61d1483fd6a`; previo
 
 
 **20/11 S1 G10 T2 B22 Delta C:** current learner `a5361460045dab88f1a14929298bd41693f537cf` now explicitly includes 2c of elip/hypebol and parabola parameter p as focus-directrix distance and names 3 canonical equations; Q18 `6c0f14ee1bf0eb610d8b7e3483cc1da1bdd28f69` 7/7 targeted checks; old learner `eb2ee110e42e767a711c769b39682784aa3e996e` historical. Academic CONTEXT_READY preserved per owner, no full S1 audit verdict.
+
+
+## 20/11/2026 current A1 source
+- ACADEMIC_SOURCE_BLOB: 7584f28afa12e8a1a05529512516e9571d856d39
+- REVIEW_RECEIPT_BLOB: 067f9805bd29ae2c05cf84d7386b04f9bccd1a8a
+- Three redundant student headings removed, no math or item change.
