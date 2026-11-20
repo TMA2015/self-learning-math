@@ -1,7 +1,7 @@
 # CĐ7 R07 — AUTHORING numbering-only Q18 custody
 
 CURRENT_SOURCE_PATH: prototypes/thpt/content-drafts/topic07-sequences/Temp_TOPIC07_R07_NUMBERING_CONSISTENT_20261116.md
-CURRENT_SOURCE_BLOB: 8aeef9a0f0c30bed76f93bcf923fff57f8c00b04
+CURRENT_SOURCE_BLOB: b6074c8641963a296e3f990397eba685c968c6ea
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC07_R07_NUMBERING_DELTA_A_Q18_20261116.md
 CURRENT_Q18_RECEIPT_BLOB: 270e1502c12d409817b283b7ee9a2e9bced5f9f4
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -140,3 +140,9 @@ END_AUTHOR_SOURCE: CANONICAL_BANK_R06_LOCKED_FOR_Q18; ORIGINAL_47_SGK_SOURCES_UN
 
 
 **19/11 owner ΔA:** source `8aeef9a0f0c30bed76f93bcf923fff57f8c00b04`, Q18 `270e1502c12d409817b283b7ee9a2e9bced5f9f4` custody refreshed, 18 outcomes/math unchanged, CONTENT_READY maintained.
+
+
+## 20/11/2026 — Single current CĐ07 Knowledge source after S1 B5–7
+- CURRENT_LEARNER_SOURCE_BLOB: b6074c8641963a296e3f990397eba685c968c6ea
+- Q18_CURRENT_RECEIPT_BLOB: 64187138ee705a0f1209b171856db988efe85a4d
+- Added B5 explicit four modes of giving a sequence and mathematical boundedness; other CSC/CSN units still intact. No extra learner file or new canonical item.
