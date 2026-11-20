@@ -154,9 +154,23 @@ function expectedG10KnowledgeBlob(lesson,legacy){
     assert(r03.includes(phrase),"B23 R03 Q18 chain lacks "+phrase);
    }
   }
+  const r04file=path.join(root,"prototypes/thpt/ux795/G10_CHVIII_B23_VAN_DUNG_KIEM_LOI_Q18_R04_20261120.md");
+  if(fs.existsSync(r04file)){
+   assert(fs.existsSync(r03file),"B23 R04 requires immutable signed R03 ancestor");
+   const r04=fs.readFileSync(r04file,"utf8");
+   const get=k=>r04.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(get("R04_PREVIOUS_SOURCE_BLOB"),current,"B23 R04 must extend exact R03 Git blob");
+   current=get("R04_CORRECTED_SOURCE_BLOB");
+   assert(/^[a-f0-9]{40}$/.test(current||"")&&current!==get("R04_PREVIOUS_SOURCE_BLOB"),
+    "B23 R04 requires changed canonical source SHA");
+   for(const marker of ["G10-CHVIII-B23-VAN-DUNG-KIEM-LOI-R04-20261120",
+    "DELTA_C_ACADEMIC_MATERIAL","OWNER_P2","HELP-G10-CHVIII-TRY02"]){
+    assert(r04.includes(marker),"B23 R04 affected-scope receipt missing "+marker);
+   }
+  }
   const lesson=fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-viii/bai-23.md"));
   const gitBlob=require("node:crypto").createHash("sha1").update(Buffer.from("blob "+lesson.length+"\0")).update(lesson).digest("hex");
-  assert.equal(gitBlob,current,"B23 current canonical source must match immutable chained signed R01 to R03 SHA");
+  assert.equal(gitBlob,current,"B23 canonical source must match immutable R01→R04 chain exact Git SHA");
 
   // B23 owner P2 regression source checks apply only when a signed R02 exists.
   // The actual computed-style and click-to-open behavior were independently
