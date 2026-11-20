@@ -8,7 +8,7 @@
 **LESSON_ID:** G10-B17; **OUTCOMES:** B17_OUT_01..B17_OUT_05  
 **SOURCE_PATH:** `docs/thpt-preview/sgk/chuong-vi/bai-17.md`  
 **PREVIOUS_B17_SOURCE_BLOB:** `9e7e7b6b147de53274b8f17140cdcd91cd04aeef` (R02 publication, original source unchanged in history)  
-**CANDIDATE_B17_SOURCE_BLOB:** `6486539ea41dfb9c60cce967a86c5067c772fbd7` (R03 new exact canonical source)  
+**CANDIDATE_B17_SOURCE_BLOB:** `a919754501790373425ef20c9e6ab6b4aa9e79f1` (R03 new exact canonical source)  
 **RELEASE_SCOPE:** B17 Knowledge only; no shared CSS/js, chapter Practice/Core, privacy, website routing, or other SGK pages. 
 **AUTHOR_SELF_QA_SIGNOFF:** Q18_OWNER_SELF_VERIFIED_ENRICHMENT · P0=0 · P1=0 for B17 learning/source scope reviewed below. **OWNER_P2_NOT_TESTED** remains distinct.
 
