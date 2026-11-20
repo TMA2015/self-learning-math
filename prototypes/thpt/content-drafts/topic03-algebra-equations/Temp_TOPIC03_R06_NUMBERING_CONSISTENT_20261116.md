@@ -206,7 +206,7 @@ Vì sao nghiệm của phương trình bình phương chưa chắc là nghiệm 
 
 Đây là nguyên nhân chính của nghiệm ngoại lai khi giải phương trình chứa căn. Điểm xuất phát là dấu không âm của √A, bình phương hai vế. Từ A=B suy ra A²=B²; chiều đảo không đúng nếu A,B có thể trái dấu. 
 
-> **ĐIỀU KIỆN — Một căn bằng một biểu thức.** Trên tập số thực, \(\sqrt{A(x)}=B(x)\) **tương đương** với hệ \(B(x)\ge0\) và \(A(x)=[B(x)]^2\). Điều kiện này bảo đảm biểu thức dưới căn không âm vì bằng một bình phương. Giải phương trình sau khi bình phương mà không giữ \(B(x)\ge0\) có thể sinh nghiệm ngoại lai.
+> **TÍNH CHẤT — Một căn bằng một biểu thức.** Trên tập số thực, \(\sqrt{A(x)}=B(x)\) **tương đương** với hệ \(B(x)\ge0\) và \(A(x)=[B(x)]^2\). Điều kiện này bảo đảm biểu thức dưới căn không âm vì bằng một bình phương. Giải phương trình sau khi bình phương mà không giữ \(B(x)\ge0\) có thể sinh nghiệm ngoại lai.
 
  Nếu chỉ giải A=B² rồi bỏ B≥0 thì đang giải một phương trình rộng hơn. Cần thử từng nghiệm vào gốc.
 
@@ -240,7 +240,7 @@ Nếu hai nghiệm sau bình phương đều được nhận, thử nghiệm âm
 
 Với hai căn cùng bằng nhau, phải kiểm điều kiện của những biểu thức nào?
 
-> **ĐIỀU KIỆN — Hai căn bậc hai và điều kiện đồng thời.** Hai căn bậc hai bằng nhau chỉ khi các biểu thức bên trong thỏa những điều kiện cần thiết. Một căn không xác định có thể tạo nghiệm ảo tưởng sau phép bình phương. Ta bắt đầu từ điều kiện √u xác định khi u≥0. Với √A(x)=√B(x) trên ℝ, tương đương với **A=B và A≥0** (khi A=B, B≥0 tự theo). Có thể ghi riêng A≥0, B≥0 để dễ kiểm. Tìm nghiệm ứng viên từ A=B, lọc miền trước khi thế. Không suy ra |A|=|B|.
+> **TÍNH CHẤT — Hai căn bậc hai và điều kiện đồng thời.** Hai căn bậc hai bằng nhau chỉ khi các biểu thức bên trong thỏa những điều kiện cần thiết. Một căn không xác định có thể tạo nghiệm ảo tưởng sau phép bình phương. Ta bắt đầu từ điều kiện √u xác định khi u≥0. Với √A(x)=√B(x) trên ℝ, tương đương với **A=B và A≥0** (khi A=B, B≥0 tự theo). Có thể ghi riêng A≥0, B≥0 để dễ kiểm. Tìm nghiệm ứng viên từ A=B, lọc miền trước khi thế. Không suy ra |A|=|B|.
 
 Xét ví dụ sát hình trục số: \(\sqrt{x^2+7x+11}=\sqrt{x+3}\). Hai vế đều là căn số học nên, **sau khi ghi điều kiện xác định**, ta giải \(x^2+7x+11=x+3\), hay \((x+2)(x+4)=0\), được các ứng viên \(x=-2,-4\). Điều kiện từ căn phải đòi \(x\ge-3\): loại \(-4\); với \(-2\), cả hai biểu thức dưới căn bằng 1, nên hai vế đều bằng 1. Do đó nghiệm duy nhất là \(x=-2\). Việc kiểm căn trái và thay lại cho thấy không bỏ sót điều kiện ẩn.
 
@@ -272,7 +272,7 @@ Nếu quên một miền căn, thay nghiệm âm khiến radicand âm để tự
 
 Vì sao vế phải của phương trình √A=B phải không âm?
 
-> **ĐIỀU KIỆN — Một căn bằng một biểu thức.** Nếu chỉ một vế chứa căn, điều kiện không âm của vế kia trở nên đặc biệt quan trọng. Căn số học không âm, nên không thể bằng số âm dù phương trình sau bình phương thỏa. Trước hết, hãy nhớ căn √u không âm và công thức giải PT bậc hai. √A=B tương đương với **B≥0 và A=B²** trên ℝ; khi A=B²≥0 thì căn cũng xác định. Có thể ghi thêm A≥0 để học sinh kiểm, nhưng đó không phải điều kiện độc lập mới. Giải ứng viên từ A=B² rồi lọc dấu B và thử gốc.
+> **TÍNH CHẤT — Một căn bằng một biểu thức.** Nếu chỉ một vế chứa căn, điều kiện không âm của vế kia trở nên đặc biệt quan trọng. Căn số học không âm, nên không thể bằng số âm dù phương trình sau bình phương thỏa. Trước hết, hãy nhớ căn √u không âm và công thức giải PT bậc hai. √A=B tương đương với **B≥0 và A=B²** trên ℝ; khi A=B²≥0 thì căn cũng xác định. Có thể ghi thêm A≥0 để học sinh kiểm, nhưng đó không phải điều kiện độc lập mới. Giải ứng viên từ A=B² rồi lọc dấu B và thử gốc.
 
 Hãy kiểm tra trường hợp sau: √(3x+1)=x−1: x≥1. Bình phương 3x+1=(x−1)² ⇒ x²−5x=0 ⇒ x=0 hoặc 5. Loại 0, nhận 5 vì √16=4=5−1.
 
