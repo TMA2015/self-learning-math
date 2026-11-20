@@ -529,6 +529,8 @@ Tổng hai khoảng cách đến tiêu điểm không đổi tạo một đườ
 
 > **ĐỊNH NGHĨA — Elip và hai tiêu điểm.** Ở dạng chuẩn có trục lớn trùng Ox, elip \(x^2/a^2+y^2/b^2=1\), \(a>b>0\), \(c^2=a^2-b^2\), tiêu điểm F₁(−c,0),F₂(c,0). Tổng MF₁+MF₂=2a. Nếu b=a thì đường tròn là trường hợp biên, không còn hai tiêu điểm phân biệt. Kiến thức về **tâm sai** được xếp mở rộng theo S1, không tự biến thành Core bắt buộc.
 
+> **ĐỊNH NGHĨA — Tiêu cự của elip.** Hai tiêu điểm phân biệt \(F_1(-c,0)\), \(F_2(c,0)\) cách nhau một khoảng \(F_1F_2=2c=2\sqrt{a^2-b^2}\), với \(a>b>0\) và \(0<c<a\). Khoảng cách này gọi là **tiêu cự**; không nhầm với tổng khoảng cách \(MF_1+MF_2=2a\) của một điểm trên elip. Phương trình \(\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1\) (\(a>b>0\), trục lớn theo \(Ox\)) là **phương trình chính tắc** của elip trong hệ trục đã chọn.
+
 **Ví dụ**
 
 **Đề bài:** Cho elip \(x^2/25+y^2/9=1\) có trục lớn theo \(Ox\). Tìm \(a,b,c\), hai tiêu điểm và độ dài trục lớn.
@@ -556,6 +558,8 @@ Một quỹ tích có **hiệu tuyệt đối** khoảng cách đến hai tiêu 
 Hiệu tuyệt đối hai khoảng cách không đổi tạo hai nhánh mở. Trục thực là trục chứa hai tiêu điểm.
 
 > **ĐỊNH NGHĨA — Hypebol và hai nhánh.** Với \(x^2/a^2-y^2/b^2=1\), a,b>0, \(c^2=a^2+b^2\). Hai tiêu điểm (±c,0), hai đỉnh (±a,0), trục thực nằm ngang. Các dấu + và − trong phương trình không được đảo tùy tiện nếu giữ trục thực Ox. Với mọi điểm trên hypebol, \(|MF_1-MF_2|=2a\).
+
+> **ĐỊNH NGHĨA — Tiêu cự của hypebol.** Với \(a,b>0\) và \(c=\sqrt{a^2+b^2}>a\), hai tiêu điểm \(F_1(-c,0)\), \(F_2(c,0)\) cách nhau \(F_1F_2=2c=2\sqrt{a^2+b^2}\), gọi là **tiêu cự**. Nó khác \(2a\), là **giá trị tuyệt đối của hiệu** \(|MF_1-MF_2|\) trên hypebol. Phương trình \(\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1\) (\(a,b>0\), trục thực theo \(Ox\)) là **phương trình chính tắc** của hypebol.
 
 **Ví dụ**
 
@@ -612,6 +616,8 @@ Một gương phản xạ có dạng parabol được mô tả từ các điểm
 Parabol được xác định bởi hai khoảng cách bằng nhau; vị trí tiêu điểm và đường chuẩn cho biết hướng mở.
 
 > **ĐỊNH NGHĨA — Parabol theo tiêu điểm và đường chuẩn.** Theo quy ước **S1 đang dùng**: \(y^2=2px\), p>0, có đỉnh O, tiêu điểm F(p/2,0), đường chuẩn x=−p/2; mở sang phải. Một số sách dùng \(y^2=4ax\), khi đó a=p/2; không trộn hai ký hiệu. Nếu p≤0 thì không còn dạng chuẩn **p>0** này (dù parabol quay trái có thể có dạng khác).
+
+> **ĐỊNH NGHĨA — Tham số tiêu của parabol.** Với parabol là tập điểm cách đều tiêu điểm \(F\) và đường chuẩn \(\Delta\) không đi qua \(F\), **tham số tiêu** là khoảng cách vuông góc \(p=d(F,\Delta)>0\). Trong hệ trục chính tắc của SGK, \(F(p/2,0)\), \(\Delta:x=-p/2\) nên \(d(F,\Delta)=p/2-(-p/2)=p\). Bởi vậy \(y^2=2px\) với \(p>0\) được gọi là **phương trình chính tắc của parabol** theo quy ước này; đừng gọi \(p/2\) là tham số tiêu hoặc dùng lẫn quy ước \(y^2=4ax\).
 
 ![Hình minh họa cho parabol: cách đều tiêu điểm và đường chuẩn](../../../../docs/assets/images/thpt/THPT_G10_B22_PARABOLA_FOCUS_DIRECTRIX_DRAFT.svg)
 
