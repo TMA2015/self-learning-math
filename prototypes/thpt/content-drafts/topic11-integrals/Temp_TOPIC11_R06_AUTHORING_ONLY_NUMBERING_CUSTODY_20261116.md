@@ -2,12 +2,12 @@
 
 R03_IMMUTABLE_SOURCE_BLOB: 6c78b455f9d95e85c713108292908bf6f922d2f1
 LEARNER_R06_SOURCE: prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md
-LEARNER_R06_SOURCE_BLOB: ccb03b95b5c1312eed1564524beedcb096b1e20f
+LEARNER_R06_SOURCE_BLOB: c46d07f8f7d260a71e84bf8c44677da895cb66cc
 Q18_R06_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC11_R06_CURRENT_SOURCE_AUTHOR_Q18_AFFECTED_DELTA_20261118.md
-Q18_R06_RECEIPT_BLOB: 36ffc65a334d756661d7b2204561d5c03e0647dd
+Q18_R06_RECEIPT_BLOB: c9e56423f647e53a2c2ef1171a45d702e31d73ae
 ACTIVE_NEW28_BANK_R05: prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_NEW28_PUBLIC_CANONICAL_R05_20261116.md
 ACTIVE_NEW28_BANK_R05_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0
-STATUS: AUTHOR_SELF_VERIFIED_SOURCE_QA_PASS
+STATUS: CONTENT_READY_FULL_S1_KNOWLEDGE
 
 ## Nguồn S1 và phạm vi khóa
 
@@ -21,7 +21,7 @@ STATUS: AUTHOR_SELF_VERIFIED_SOURCE_QA_PASS
 
 PACKET_ID: THPT-TOPIC11-ANTIDERIVATIVE-INTEGRAL-GEOMETRY-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 LESSON_IDS: TOP11-M01..TOP11-M22
 OUTCOME_IDS: TOP11-O01..TOP11-O22
@@ -206,3 +206,8 @@ END_AUTHOR_SOURCE: SOURCE_LOCKED_R01
 - CURRENT_Q18_BLOB: 36ffc65a334d756661d7b2204561d5c03e0647dd
 - S1 G12 T2 B11 pp4–5: K open/half-open/closed, boundary one-sided derivative, continuous f implies primitive, dF=f dx. B12 pp13–14: definite integration variable-name invariant.
 - Mathematics checked only for affected outcome; Q15, bank and assessment-source unchanged; no blanket reviewer PASS.
+
+
+## 20/11 — CĐ11 full B11–B13 Knowledge
+
+- Cùng một learner source c46d07f8f7d260a71e84bf8c44677da895cb66cc sau đối chiếu 22/22 mục: đã bổ sung O08 định nghĩa tích phân xác định, O15 nhận diện nửa hình tròn, O20 thể tích chóp cụt qua thiết diện, O22 điều kiện liên tục khi tính thể tích khối xoay. Q18 author self verified c9e56423f647e53a2c2ef1171a45d702e31d73ae. Giữ 116 canonical/28 Written/22 public selfchecks, bốn SVG và toàn bộ Practice/Selfcheck byte-exact. Không NotebookLM independent mới, không phát hành.
