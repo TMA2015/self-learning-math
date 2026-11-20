@@ -40,6 +40,8 @@ function b23CanonicalAnswers(s) {
   .replace(/^\s{8}<a href="#help-g10-chviii-try0[1-4]">Đến hướng dẫn tự sửa<\/a>$/gm,
    '        [B23_D6_NAVIGATION]')
   .replace(/^\s{8}\*\*Đường khắc phục:\*\* Mở tab \*Lỗi thường gặp\*, mục 4\.[1-4] để xem hướng dẫn từng bước \(không cần rời bài học\)\.$/gm,
+   '        [B23_D6_NAVIGATION]')
+  .replace(/^\s{8}\*\*Đường khắc phục:\*\* Mở khung \*Kiểm lỗi\* ngay dưới Vận dụng này để xem cách tự sửa\.$/gm,
    '        [B23_D6_NAVIGATION]');
  return firstAnswers(normalized);
 }
@@ -121,6 +123,11 @@ function selfTest(){
    '**Đường khắc phục:** Mở tab *Lỗi thường gặp*, mục 4.1 để xem hướng dẫn từng bước (không cần rời bài học).');
  assert.deepEqual(b23CanonicalAnswers(b23New),b23CanonicalAnswers(b23Old),
   "Only exact owner-approved B23 label/navigation edits are source-equivalent");
+ const contextual=b23New.replace(
+  "Mở tab *Lỗi thường gặp*, mục 4.1 để xem hướng dẫn từng bước (không cần rời bài học).",
+  "Mở khung *Kiểm lỗi* ngay dưới Vận dụng này để xem cách tự sửa.");
+ assert.deepEqual(b23CanonicalAnswers(contextual),b23CanonicalAnswers(b23Old),
+  "B23 HELP relocation changes only navigation, never original answers");
  assert.notDeepEqual(b23CanonicalAnswers(b23New.replace('8 lựa chọn','9 lựa chọn')),
   b23CanonicalAnswers(b23Old),"Changing the answer must still fail");
  assert.notDeepEqual(b23CanonicalAnswers(b23New.replace('2+6=8','2+6=9')),
