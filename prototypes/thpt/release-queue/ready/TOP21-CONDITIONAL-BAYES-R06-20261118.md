@@ -18,13 +18,13 @@ REVIEW_RECEIPT_BLOB: d7625fbe3b7f02a99485687ed49f499decf3b913
 INDEPENDENT_TARGETED_REVIEW_PATH: prototypes/thpt/review-packets/Temp_TOPIC21_R06_D6_INDEPENDENT_OWNER_PASTED_VERDICT_20261118.md
 INDEPENDENT_TARGETED_REVIEW_BLOB: 06157b8c7e5873611b463f991620c466b72e2741
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_A1_A7_TECHNICAL_SOURCE_PARITY_20261116.md
-AUTHOR_A1_A7_BLOB: 02134c17f3f7311c882f5ebc6c7af50d181307e9
+AUTHOR_A1_A7_BLOB: 5988aa2ba3995466598d2a153e8c2c92c223ba17
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_A1_A7_TECHNICAL_SOURCE_PARITY_20261116.md
-AUTHOR_METADATA_BLOB: 02134c17f3f7311c882f5ebc6c7af50d181307e9
+AUTHOR_METADATA_BLOB: 5988aa2ba3995466598d2a153e8c2c92c223ba17
 Q15_MATRIX_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R06_Q15_CANONICAL_ITEM_OUTCOME_ROLE_VERSION_MATRIX_20261117.md
-Q15_MATRIX_BLOB: 522d13493d18ec53280a752dc5498e92c8896805
+Q15_MATRIX_BLOB: d8ec7c462fa229508b0129b64cca90d68fb339ff
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/TOP21-CONDITIONAL-BAYES-R05-20261116_HANDOFF_V2.md
-AUTHOR_HANDOFF_BLOB: 8a8adcaa5ac7c8659a679a4dd2d94433e47eb25b
+AUTHOR_HANDOFF_BLOB: 5cc6aebc7efbec3a39e06300e34026b341121c3f
 CURRENT_AUTHORING_PR: 885
 CURRENT_PR: #885 — AUTHORING Draft only, not website release
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC21_R06_CURRENT_SOURCE_Q18_AUTHOR_SELF_QA_RECEIPT_20261118.md, Git blob 28f53dd1279dc065e7f429f7337ba8f5df90acb8
@@ -112,3 +112,6 @@ Historical R04/R05 ready manifests remain in `release-queue/archive/` with REGIS
 ## 20/11 complete SGK B18–B19 Knowledge CĐ21
 
 Current learner `ab886f53b9bee89f71a852febb7f2d9ccfff2373`, Q18 self `d7625fbe3b7f02a99485687ed49f499decf3b913`, A1 `02134c17f3f7311c882f5ebc6c7af50d181307e9`, V2 `8a8adcaa5ac7c8659a679a4dd2d94433e47eb25b`. Exact 8/8 learning units, 19 original canonical, 8 no-Mastery question-only replays, 2 SVG preserved; all assessment suffix unchanged; original targeted independent D6 only remains scoped. No official Readiness/Final Submit, private RD1 upload, RELEASE, merge/deploy.
+
+
+20/11 Q15 index d8ec7c462fa229508b0129b64cca90d68fb339ff, A1 5988aa2ba3995466598d2a153e8c2c92c223ba17, V2 5cc6aebc7efbec3a39e06300e34026b341121c3f.
