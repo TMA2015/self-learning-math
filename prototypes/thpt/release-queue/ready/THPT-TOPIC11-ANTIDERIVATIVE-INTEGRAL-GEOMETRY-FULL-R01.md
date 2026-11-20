@@ -9,21 +9,21 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
 CONTENT_REVISION: R06_S1_O06_AUTHOR_SELF_VERIFIED_20261120
-AUTHOR_METADATA_BLOB: 4677a689953f894aaa4b7601b52411c0ad21db3f
+AUTHOR_METADATA_BLOB: 4951ca0f14929a8a8973e5195f3cd3decddd5759
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL_O06_O08_O14
 NOTEBOOKLM_REREVIEW: NOT_REQUIRED_WITH_REASON
-SOURCE_COMMIT: d1c1e8976fed97053b97b1cf4cde164b9272fba5
+SOURCE_COMMIT: 3dc9b2eed198ea0e39cf440e155f03eef1ebcdd8
 AUTHOR_PR: 887
 CURRENT_PR: https://github.com/TMA2015/self-learning-math/pull/887 — DRAFT AUTHORING, not merged/deployed
 CATALOG_TOPIC_ID: CD11
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 9f8b1d7035ae733a2e5f0de5ee40359ab8f5fb6a
+ACADEMIC_SOURCE_BLOB: ccb03b95b5c1312eed1564524beedcb096b1e20f
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC11_R06_CURRENT_SOURCE_AUTHOR_Q18_AFFECTED_DELTA_20261118.md (Q18 AUTHOR_SELF_VERIFIED v3.1.0, exact-source Delta C author math/PED QA; not independent NotebookLM)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC11_R06_CURRENT_SOURCE_AUTHOR_Q18_AFFECTED_DELTA_20261118.md
-REVIEW_RECEIPT_BLOB: ff585034d95e2f43f0055e3516e49129e60c54d6
+REVIEW_RECEIPT_BLOB: 36ffc65a334d756661d7b2204561d5c03e0647dd
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC11-ANTIDERIVATIVE-INTEGRAL-GEOMETRY-FULL-R06_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: a49f500ff28752e9e3926d3e82a83dee09c4b3a0
+AUTHOR_HANDOFF_BLOB: 5ade9cdcdedccd1981f3b08c08d0d4c13d1b24c2
 PUBLIC_ORIGINAL88_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_ORIGINAL88_SGK_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_ORIGINAL88_INDEX_BLOB: 672fdce0c02ebf4f6ae6b37b331ca59e259d9b5c
 PUBLIC_NEW28_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_NEW28_PUBLIC_CANONICAL_R05_20261116.md
@@ -102,3 +102,8 @@ AP1–AP5 exact visual/learning layout checks, R1–R5 source/runtime safety, P1
 - Authoritative learner SHA: 9f8b1d7035ae733a2e5f0de5ee40359ab8f5fb6a; Q18 targeted author QA SHA: ff585034d95e2f43f0055e3516e49129e60c54d6; A1 SHA: 4677a689953f894aaa4b7601b52411c0ad21db3f; handoff V2 SHA: a49f500ff28752e9e3926d3e82a83dee09c4b3a0.
 - DELTA_C TOP11-O06: the two primitives of 1/cos²(x) and 1/sin²(x), their signs, nonzero denominators and interval domains directly checked against SGK12 T2 B11 and reverse differentiation. No canonical ID, prior stem/key/solution/rubric, SVG, selfcheck, protected RD1 or Mastery modified.
 - This re-lock retains owner-granted authoring CONTENT_READY on the targeted new source. Full 22-topic S1 source audit remains pending; CI on this new Git HEAD and RELEASE gates separate.
+
+
+## 20/11/2026 — Active targeted AUTHORING S1 Delta C TOP11-O01/O08
+- Learner ccb03b95b5c1312eed1564524beedcb096b1e20f, Q18 36ffc65a334d756661d7b2204561d5c03e0647dd, A1 4951ca0f14929a8a8973e5195f3cd3decddd5759, V2 5ade9cdcdedccd1981f3b08c08d0d4c13d1b24c2. S1 G12 T2 B11 pp4–5: K open/half-open/closed, boundary one-sided derivative, continuous f implies primitive, dF=f dx. B12 pp13–14: definite integration variable-name invariant.
+- Source-only content patch with affected mathematics self-QA; all previous Q15/Q16 item data unchanged. Full 22-topic S1 audit still pending; CONTENT_READY authoring snapshot is not integrated production acceptance.
