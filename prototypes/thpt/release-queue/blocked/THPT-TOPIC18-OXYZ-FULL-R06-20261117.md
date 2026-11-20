@@ -1,7 +1,9 @@
-<!-- CĐ18 QUALITY_FIRST_EFFECTIVE_CONTENT_20261120 -->
-## Current revised candidate and preserved signed history
+<!-- CĐ18_AUTHORING_BLOCKED_PED_MATH_W07_O38_O23_20261120 -->
+## New real CONTENT QUALITY delta — author-checked, independent affected review outstanding
 
-The **current** learner source at ACADEMIC_SOURCE_PATH corrects W07 answer precision and pedagogical O23 remedial explanation. The original SGK CHV canonical W07 keeps the same ITEM_ID with CONTENT_VERSION=2, corrected answer and **unchanged /5 rubric**. This is an actual Q03/Q14 academic-pedagogical Delta C; author math/PED checks PASS in targeted receipt, but **affected independent NotebookLM reviewer verdict remains pending**. Thus this revised candidate is **BLOCKED_BY_AUTHORING**, not a new current CONTENT_READY, and cannot be handed to RELEASE. Previous accepted immutable `bcc7cb6c57ea3cddbfae312a1fe2d31c0791b3f4` snapshot remains historical CONTENT_READY at its old commit. Original SBT p25 print scan absence is a nonblocking citation reference, **not** the reason for this HOLD or a precondition for the targeted mathematical review. Do not demand a replacement scan to complete mathematical correctness QA. Review packet: `prototypes/thpt/review-packets/Temp_TOPIC18_O40_O23_W07_NOTEBOOKLM_AFFECTED_REVIEW_20261120.md`. No new independent full Topic PASS. NO merge/deploy.
+Corrected current learner `1ad945ea583ce7ee91df64b58d3f31b31c202cd3`, original shared canonical `a24abd682932e11761f7c85fa3a3d3cdd77b600e`. W07 v2 now has an unambiguous question, correct circle-vs-filled-disk solution and **changed /5 rubric** that actually grades the asked mathematics. O38 explains inside ball vs on sphere, O23 FirstTry and Practice D6 teach a derivation rather than exposing codes. Author math/PED Q18 QA PASS, independent NotebookLM verdict NOT yet obtained. One active current **candidate BLOCKED_BY_AUTHORING**, kept outside ready/; historical last signed learner snapshot `bcc7cb6c57ea3cddbfae312a1fe2d31c0791b3f4` remains preserved only on its old immutable Git version. Missing SBT printed p25 is reference-only, not a math blocker. Original SGK shared v1 ready/source must not silently inherit new canonical v2. No RELEASE authorization or merge/deploy.
+
+NotebookLM only affected source-exact packet: `prototypes/thpt/review-packets/Temp_TOPIC18_O40_O23_W07_NOTEBOOKLM_AFFECTED_REVIEW_20261120.md`.
 
 ---
 
@@ -15,23 +17,23 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: BLOCKED_BY_AUTHORING
-SOURCE_COMMIT: d2df47a6d1494be1970ca734dcc605b4843a40c0
+SOURCE_COMMIT: d85d23110b2ef5bfcd6153ff70ee914c85e96e85
 CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: 1a99d380571afa573afecf64f619fb52d3dd30be
+ACADEMIC_SOURCE_BLOB: 1ad945ea583ce7ee91df64b58d3f31b31c202cd3
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC18_O40_O23_W07_AUTHOR_Q18_CONTENT_DELTA_20261120.md (AFFECTED AUTHOR_SELF_VERIFIED; independent NotebookLM pending)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_O40_O23_W07_AUTHOR_Q18_CONTENT_DELTA_20261120.md
-REVIEW_RECEIPT_BLOB: f5f57804e025f2cad7d502796e30e62e06c73ce6
+REVIEW_RECEIPT_BLOB: 347fa49647e3cb0f4abddcbf00c54e0df2d4e7e6
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R06_247_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_A1_A7_BLOB: c3616d9d814f650c28259a8f42b0d17da7bde901
+AUTHOR_A1_A7_BLOB: 7e4e325684078fa984b830306b3d215732925e07
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC18-OXYZ-FULL-R06-20261117_HANDOFF_V2.md
-AUTHOR_HANDOFF_BLOB: 10a5649fb74ab9e2ef613683d815da1a1a394fdf
+AUTHOR_HANDOFF_BLOB: a399aa397782d2558b677489d3afa399e464dbaf
 Q01_FAMILY_AUDIT_BLOB: 052b06ea90d6191f125aef72f42d74dd9a6d86c8
 Q18_SUBSTANTIVE_AUDIT_BLOB: 4785b3be15b49f968de27fad99fc311cb2f8bb1b
 S1_ORIGINAL_G12_CHII_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
-S1_ORIGINAL_G12_CHV_BLOB: ee7351bf5f4704c5d5c6bd08a7932c1630e59edf
+S1_ORIGINAL_G12_CHV_BLOB: a24abd682932e11761f7c85fa3a3d3cdd77b600e
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_THPT_TOPIC18_OXYZ_SPHERE_GEOMETRY_R00_20261114.html
 INTERACTIVE_MODEL_BLOB: 1117d351d6818f1b4f7b40b5b42a5263b225849a
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
@@ -40,7 +42,7 @@ P0: 0
 P1: 0
 P2: 1
 P2_NOTE: SBT_REFERENCE_GAP_DOCUMENTED_G12_B14_PRINTED_P25
-BLOCKERS: W07_CORRECTED_CANONICAL_V2_AND_O23_PED_D6_AFFECTED_NOTEBOOKLM_REVIEW_PENDING
+BLOCKERS: W07_V2_O38_O23_Q03_Q06_Q14_AFFECTED_INDEPENDENT_NOTEBOOKLM_ACADEMIC_PED_REVIEW_PENDING
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
