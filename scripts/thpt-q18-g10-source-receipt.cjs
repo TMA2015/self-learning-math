@@ -1208,15 +1208,11 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
     t.includes('data-thpt-help-id="HELP-G10-CHVIII-'+n+'"'),
     "B24 original FirstTry/HELP canonical ID changed: "+n);
    if(fs.existsSync(p02)){
-    assert(t.includes('bai-24\\/?
-  }
- })&&!t.includes('bai-23\\/?
-  }
- })&&
+    assert(t.includes('bai-24\\/?$')&&!t.includes('bai-23\\/?$')&&
       t.includes('THPT-G10-CHVIII-TRY05')&&t.includes('.thpt-r4-concept-card')&&
       t.includes('.thpt-r4-rule-card')&&
       (t.match(/<div class="thpt-g10-example-solution"/g)||[]).length===5,
-      "B24 R02 Golden active route, semantic cards and five example boxes missing");
+      "B24 R02 Golden route, semantic cards and five example boxes missing");
    }
    return current;
   }
