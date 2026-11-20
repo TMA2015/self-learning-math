@@ -8,18 +8,18 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: abd4cbc30f25bf00dc2ebc6e978dde498e8b4b25
+SOURCE_COMMIT: 4858b15a8fbc221c7dfa0e10a7f03d028c56282d
 AUTHOR_PR: 818
 CURRENT_PR: #818 Draft AUTHORING; no merge or deploy
 CATALOG_TOPIC_ID: CD02
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 36d6657b9977e3f72d7bf73d98653188a0ebe760
+ACADEMIC_SOURCE_BLOB: 6c975c6f19c11193fad7546cebccb27a9bcbcd2b
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC02_R06_NUMBERING_DELTA_A_Q18_20261116.md (AUTHOR_SELF_QA only, not a new independent reviewer PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC02_R06_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: d91f05f9fdb43229a19d396c93e740568151154d
+REVIEW_RECEIPT_BLOB: caa5371a764d5f622d28cf249423c74df1d06d50
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC02-INEQ-QUAD-REGION-FULL-R06_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: f8961ac6a5b9644092d737db33161b3444dc7f2d
+AUTHOR_HANDOFF_BLOB: ee9759706fcce9272535d869c46fcc6a4529bd50
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC02_INEQ_QUAD_REGION_ORIGINAL18_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 6412d01a5d2c9b04c6f97d5b6a41c43e85d1c2df
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC02_INEQ_QUAD_REGION_ORIGINAL20_EXTENSION_R01_20261112.md
@@ -108,3 +108,7 @@ PUBLIC_SELF_CHECK: 16 public replay questions, no Mastery/heldout score
 
 ## 20/11/2026 authoring current source
 - SOURCE 36d6657b9977e3f72d7bf73d98653188a0ebe760, Q18 d91f05f9fdb43229a19d396c93e740568151154d, A1 0cc0b9dbad07e6240021700fbd5e8b428da2d116, V2 f8961ac6a5b9644092d737db33161b3444dc7f2d: one proper PHƯƠNG PHÁP label, no mathematical content changed, no merge/deploy.
+
+
+## 20/11/2026 — CĐ2 Kiến thức hoàn thiện theo SGK
+- Một learner source duy nhất: 6c975c6f19c11193fad7546cebccb27a9bcbcd2b. S1 Toán 10 T1 Bài 3-4 và T2 Bài 17: bổ sung định nghĩa tam thức bậc hai, bất phương trình bậc hai, hệ bất phương trình bậc nhất hai ẩn và vô số nghiệm nửa mặt phẳng. Đã tự kiểm các điều kiện và ví dụ; không chỉnh ngân hàng câu hỏi hiện hữu và không phát hành website.
