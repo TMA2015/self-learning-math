@@ -1,3 +1,9 @@
+<!-- TOP01_CURRENT_DELTA_B_10_APPROVED_ORIGINAL_KEYS_20261121 -->
+## CURRENT SOURCE-LOCKED CĐ01 V2 — 10 exact canonical answers restored to opt-in Practice, no new mathematics
+
+One current learner blob `a34680c23f1be53feeda073f9e99d64f45ad8257`, old signed source `98041b546daedde82a54f41b5c57b502eee6794f` retained historical in Git, current author Q18 `291d902ce2948b3d2436b91b64b6b8ebf01a02d9`, metadata `6942f39863b2f7596cdf263773eac76a47c39a0e`. **DELTA_B_SOURCE_EQUIVALENT** restores ten complete approved original keys for learner comparability after opening answers, not a changed item or proof. Full 24 old original question/worked-solution bytes and 35 disclosure blocks match prior source after removing the ten lines; 11 FirstTry and 11 voluntary public selfchecks no Mastery, original Written rubric unchanged. Q15 single canonical is original G10/Topic banks; no new Academic/PED independent full Topic verdict. **AUTHORING only**; never a website RELEASE/merge/deploy/Final Submit action.
+
+---
 # AUTHORING — CĐ01 Mệnh đề, tập hợp và tư duy logic · current student R07 / one V2 canonical packet
 
 CĐ01 uses one complete Topic path (Kiến thức / Luyện tập / Tự kiểm tra). This V2 R06 supersedes R01 student presentation in the **same stable packet identity** without rewriting the immutable historical R01 source, reviewer receipt or R01 handoff. AUTHORING only, Draft #817, NO MERGE/DEPLOY.
@@ -11,11 +17,11 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R07_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 98041b546daedde82a54f41b5c57b502eee6794f
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC01_R07_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: 05545d0e8ad7989f95baa01e23f39bd81f009b06
+ACADEMIC_SOURCE_BLOB: a34680c23f1be53feeda073f9e99d64f45ad8257
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC01_R07_10_CANONICAL_KEY_RESTORE_AUTHOR_Q18_20261121.md
+REVIEW_RECEIPT_BLOB: 291d902ce2948b3d2436b91b64b6b8ebf01a02d9
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R07_NUMBERING_ONLY_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: c98de0fabbb2418112833b9f1bf3fab7823b7b47
+AUTHOR_METADATA_BLOB: 6942f39863b2f7596cdf263773eac76a47c39a0e
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_CANONICAL_SOURCE_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 09d36b0d289ebc54cc4ee51805503cf7f6e714f2
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_PUBLIC_EXTENSION_06ITEM_R01_20261112.md
