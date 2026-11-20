@@ -4,13 +4,13 @@
 
 PACKET_ID: THPT-TOPIC16-PERPENDICULAR-ANGLE-FULL-R03
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_PERPENDICULARITY_R03_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: c0e7b9bde78b90ef8233904889d63062f517b232
-SOURCE_BLOB: c0e7b9bde78b90ef8233904889d63062f517b232
+ACADEMIC_SOURCE_BLOB: 439ee3833a864638eedd11bc80baf564c77485a5
+SOURCE_BLOB: 439ee3833a864638eedd11bc80baf564c77485a5
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_R03_AUTHORING_METADATA_20261116.md
 AUTHOR_METADATA_BLOB: b2fef1fab9629e53bab34295ce858c888bb4448f
 ORIGINAL_R01_SOURCE_BLOB: 0e934389ebfe239ace19cc23c5dedf9c23d8ebdc
@@ -22,7 +22,7 @@ PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
 P2: 0
-AUTHOR_SIGNOFF: TOP16_R03_20261118_O12_AFFECTED_MATH_PED_363316efc7a338e4ec7d5629b182fce3de271356
+AUTHOR_SIGNOFF: TOP16_G11_CHVII_B22_B25_FULL_KNOWLEDGE_439ee3833a864638eedd11bc80baf564c77485a5
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
@@ -126,3 +126,11 @@ ASSESSMENT_Q16: Eight question-only public replay stems shown, no hint/key/corre
 - Learner SHA `c0e7b9bde78b90ef8233904889d63062f517b232`, former `363316efc7a338e4ec7d5629b182fce3de271356` remains historical.
 - At TOP16-O09 learning narrative (perpendicular-line to plane two-intersecting-direction proof), replaced exactly one bold `Ví dụ kết nối:` with continuous prose `Chẳng hạn,` before the unchanged illustration; the 21 canonical standalone examples with own Đề bài/Lời giải remain and no mathematical hypothesis/formula changed.
 - Targeted Q03/PED author Delta A PASS on the one-character-scope narrative label edit; unchanged Q15/Q16 ID/stem/answer/rubric/RD1/Golden sections. No new academic reviewer PASS and no release.
+
+
+## 20/11/2026 — S1 G11 Toán KNTT Tập Hai B22–B25 Full Knowledge
+
+- **CURRENT source** `439ee3833a864638eedd11bc80baf564c77485a5` vs prior `c0e7b9bde78b90ef8233904889d63062f517b232`; 21/21 TOP16-M/O Knowledge modules audited against SGK G11 Tập Hai ChVII B22–B25 (original owner source blob `afc8ec039213b87b4930f2d34d48c28d1fc6277f`). Existing formal Knowledge examples, first tries and D6 remain intact; original SGK row mapping 41 unchanged. Owner's source custody (printed page maps) is inherited, no fresh PDF page-image verification claimed.
+- **DELTA_C Academic/PED:** O01 two-direction angle reduction and 0°/90° cases; O06 demonstrative counterexample why two lines MUST intersect for perpendicular-line-to-plane test; O12 **biconditional** three-perpendicular-lines theorem including projection degeneracy, proof AB=AH+HB and dot identity; O13 three cases line/plane and right-triangle sin/cos/tan hypotheses/units; O16 half-planes and perpendicular cross-section correct side for dihedral angle; O20 differentiate side altitude, lateral-face apothem and lateral edge with two distinct right triangles. Q01–Q14 math/PED author QA for these outcomes; original methods and solutions untouched. No second content standard.
+- **Independent numerical checks of supplemental math:** For a,b horizontal at y=0,y=1 and d direction Oy contained in z=0, d perpendicular both a,b but not plane, showing intersect requirement. For A(0,0,3),H(0,0,0),B(4,2,0), c direction (1,−2,0), both AB·c=4−4=0 and HB·c=4−4=0, showing equivalence. Right triangle height 6, incline 10 has horizontal 8, tan=6/8, sin=6/10. Square pyramid base6, height4 has face-apothem sqrt(16+9)=5, lateral edge sqrt(16+18)=sqrt34. Dihedral 120° vs its supplementary 60° and plane-angle 60°. These checks supplement source reasoning; don't falsely claim independent NotebookLM PASS.
+- **Stable Q15/Q16:** Entire suffix `# Luyện tập` and `# Tự kiểm tra` is byte-identical to previous source; **21** lesson/outcome IDs, 86 canonical public items (41 SGK +21 First Try +21 Topic Practice+3 Written), 8 question-only replay, 4 SVG unchanged. Existing keys, solutions, point rubrics, RD1 and official mastery not altered. Academic/PED signed AUTHOR_SELF_VERIFIED v3.2.0, P0/P1=0 in checked student Knowledge, but neither official release nor separate learner/device QA.
