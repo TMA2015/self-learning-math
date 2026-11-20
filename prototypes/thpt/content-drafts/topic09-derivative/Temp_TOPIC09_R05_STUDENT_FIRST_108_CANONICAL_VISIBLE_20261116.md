@@ -101,7 +101,7 @@ Không chỉ xét một điểm riêng lẻ, ta còn cần biết đạo hàm t�
 
 > **ĐỊNH NGHĨA — Đạo hàm trên một khoảng.** Hàm số \(f\) có đạo hàm trên khoảng \((a,b)\) nếu tại **mọi** \(x\in(a,b)\), giới hạn thương sai phân xác định một đạo hàm hữu hạn \(f'(x)\). Khi đó \(x\mapsto f'(x)\) là **hàm số đạo hàm**, kí hiệu \(y'=f'(x)\). Một điểm thuộc miền xác định của \(f\) chưa chắc thuộc miền xác định của \(f'\).
 
-> **KIẾN THỨC CẦN GHI NHỚ — Miền khả vi.** Khả vi tại một điểm và trên cả khoảng là hai yêu cầu khác nhau. Một hàm có đạo hàm tại x=2 có nghĩa có đạo hàm tại mọi x? Ta bắt đầu từ phân biệt tại điểm, trên khoảng, một phía ở đầu miền. f có đạo hàm trên (a,b) nếu đạo hàm hữu hạn tại mọi điểm trong khoảng đó. Đạo hàm f' là một hàm mới trên miền các điểm khả vi; nó không bắt buộc có nghĩa tại mọi điểm mà f xác định. Với căn bậc hai chỉ có đạo hàm hữu hạn tại x>0; tại biên x=0 không có đạo hàm hai phía.
+Biết hàm số có đạo hàm tại một điểm, chẳng hạn (x=2), chưa thể suy ra có đạo hàm ở mọi điểm trên một khoảng. Phải kiểm riêng từng điểm trong khoảng và không được đồng nhất **miền xác định của hàm gốc** với **miền mà đạo hàm tồn tại**. Với hàm căn bậc hai, công thức đạo hàm chỉ dùng được khi (x>0); tại biên (x=0), thương sai phân từ bên phải không có giới hạn hữu hạn.
 
 Chẳng hạn, f(x)=√x xác định x≥0; với x>0 f'(x)=1/(2√x), suy được bằng nhân liên hợp. Tại x=0, không thể lấy đạo hàm hai phía trên ℝ và thương phải→+∞; không ghi f'(0)=∞ như đạo hàm hữu hạn.
 
