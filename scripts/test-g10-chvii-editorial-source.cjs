@@ -44,7 +44,7 @@ for(const [lessonStr,info]of Object.entries(specs)){
  assert.equal(old.status,0,"Original published Git source inaccessible "+rel+" "+old.stderr);
  const baseline=old.stdout;
  assert.equal(blob(baseline),row.baseline,name+" published source baseline SHA mismatch");
- const expected=n===19?candidateG10KnowledgeBlob(n):row.candidate;
+ const expected=(n===19||n===20)?candidateG10KnowledgeBlob(n):row.candidate;
  assert.equal(blob(bytes),expected,name+" candidate Markdown differs from signed latest receipt");
  assert.equal(candidateG10KnowledgeBlob(n),expected,name+" canonical current source router not signed");
  if(n===19){
@@ -55,6 +55,15 @@ for(const [lessonStr,info]of Object.entries(specs)){
    "B19 owner update must preserve published 13/11 receipt/source");
   assert.equal(field("CANDIDATE_B19_SOURCE_BLOB"),expected,
    "B19 current exact Git source must match new owner Q18 receipt");
+ }
+ if(n===20){
+  const latest=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHVII_B20_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261120.md"),"utf8");
+  const field=k=>latest.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(field("PREVIOUS_B20_SOURCE_BLOB"),row.candidate,
+   "B20 owner source must extend original signed S1/G10-CHVII receipt");
+  assert.equal(field("CANDIDATE_B20_SOURCE_BLOB"),expected,
+   "B20 new learner-first source must match Q18 signed Git blob");
  }
  assert.equal(row.moved,info.count,name+" 25 First Try count source receipt");
  assert.equal(row.helps,info.helps,name+" 33 HELP source receipt");
@@ -82,7 +91,7 @@ for(const [lessonStr,info]of Object.entries(specs)){
  assert.equal(ids(d+knowledge+examples,"data-thpt-help-id").length,0,name+" HELP outside remediation");
  assert.equal((s.match(/<figure/g)||[]).length,info.figures,name+" original D5 figures lost");
  assert.equal([...examples.matchAll(/^    ### /gm)].length,info.examples,name+" worked example sections incorrect");
- const solutions=n===19?
+ const solutions=(n===19||n===20)?
   [...examples.matchAll(/<div class="thpt-g10-example-solution"/g)].length:
   [...examples.matchAll(/\*\*Lời giải\.\*\*/g)].length;
  assert.equal(solutions,info.examples,
@@ -107,6 +116,28 @@ for(const [lessonStr,info]of Object.entries(specs)){
   for(const x of ["đồ thị của một hàm số","t không nhất thiết là thời gian",
     "nhắc lại bài toán liên quan"])
    assert(s.includes(x), "B19 learner-first explanation missing "+x);
+ }
+ if(n===20){
+  assert.equal((examples.match(/<strong>Lời giải\.<\/strong>/g)||[]).length,2,
+   "B20 exact two solutions inside approved neutral Golden boxes");
+  assert.equal((examples.match(/\*\*Phân tích:/g)||[]).length,2,
+   "B20 examples need learner-first method analysis before calculations");
+  assert.equal((knowledge.match(/thpt-r4-knowledge-conclusion thpt-r4-concept-card/g)||[]).length,3,
+   "B20 three actual textbook concepts must be classified in Golden concept cards");
+  assert.equal((knowledge.match(/thpt-r4-knowledge-conclusion thpt-r4-rule-card/g)||[]).length,3,
+   "B20 three conditional formula/rule cards must be present");
+  assert.equal((d.match(/\*\*Vận dụng\.\*\*/g)||[]).length,5,
+   "B20 exactly five learner-facing Vận dụng before original Đối chiếu");
+  assert.equal((rem.match(/^    \?\?\? tip "4\.[1-7]\. /gm)||[]).length,7,
+   "B20 original seven D6 IDs must map to seven distinct 4.x errors");
+  assert(!/Tự thử|Em vận dụng\.|Vì sao chọn cách này\?|Kiến thức tiền đề:|Bản chất trước công thức:|Tự khắc phục theo năm bước/.test(s),
+   "B20 retained obsolete machine-like student copy or non-Golden labels");
+  assert(d.includes("G10_B20_POINT_LINE_DISTANCE_R02.svg")&&!knowledge.includes("G10_B20_POINT_LINE_DISTANCE_R02.svg"),
+   "B20 real SVG must precede its visual interpretation in Discovery");
+  assert((s.match(/^    \\\[$/gm)||[]).length===2,
+   "B20 must retain exactly two original S1 display equations");
+  for(const token of ["pháp tuyến", "đoạn vuông góc", "trị tuyệt đối", "song song phân biệt"])
+   assert(s.includes(token),"B20 instructional explanation missing "+token);
  }
  assert(!/Ví dụ do dự án biên soạn|Ví dụ tự biên soạn|Lưu ý về phạm vi Core|outcome Core|RD1/.test(s),
   name+" review metadata exposed in learner-facing source");
