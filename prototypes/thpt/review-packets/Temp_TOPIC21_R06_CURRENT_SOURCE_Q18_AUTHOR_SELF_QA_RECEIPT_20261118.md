@@ -2,12 +2,12 @@
 
 AUTHOR_SELF_QA_RECEIPT: TOP21-R06-CURRENT-SOURCE-Q18-20261118
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 LEARNING_PATH: TOPIC
 SOURCE_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_LEARNER_PRESENTATION_20261116.md
-SOURCE_BLOB: dd7fa9b8818efcbceca5bdae7877aaa874e615e7
+SOURCE_BLOB: ab886f53b9bee89f71a852febb7f2d9ccfff2373
 AUTHOR_TARGETED_Q18_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R06_D6_Q15_Q18_AUTHOR_TARGETED_RECEIPT_20261117.md
 AUTHOR_TARGETED_Q18_BLOB: d67d28772fe1f724624b19f314dd6df1f62c8cc7
 AUTHOR_A1_A7_BLOB: 1ea2b6a48abb8fa8d84025511177eb7671a765d4
@@ -68,3 +68,9 @@ RELEASE_AUTHORIZATION: NO
 - Current learner `dd7fa9b8818efcbceca5bdae7877aaa874e615e7` supersedes prior `c3f9fd22555a80f82c2caa333146de2ea392f9d2` (historical). Original multiplying conditional P(A∩B)=P(A)P(B|A) for P(A)>0 was mathematically correct but omitted the **special P(A)=0 case** explicitly mentioned in SGK Toán 12 T2 B18, printed p68 (see S1 web source on earlier O02 receipt). Now explain A∩B⊆A ⇒ P(A∩B)=0 when P(A)=0; P(B|A) undefined by ordinary formula and must not be used. Symmetric statement if P(B)=0. Never multiply an undefined conditional probability. 
 - Affected author self-Q01/Q03/Q04 check: (i) set inclusion P(A∩B)≤P(A) (ii) if P(A)=0 then P(A∩B)=0 (iii) conditional denominator P(A)>0 only, (iv) symmetry B=0, (v) original independent example numerical answer 1/7 and public formative still unchanged. 5/5 scoped math/PED QA. Not an independent NotebookLM review or overall Topic/S1 PASS.
 - Only Knowledge O03 prose changed; full `# Luyện tập` / `# Tự kiểm tra` and all canonical questions/keys/rubrics unchanged, no Q16/RD1/website edits.
+
+
+## 20/11/2026 · Full SGK Toán 12 Tập Hai B18–B19 Knowledge CĐ21
+- **One current learner source** `ab886f53b9bee89f71a852febb7f2d9ccfff2373` (before `dd7fa9b8818efcbceca5bdae7877aaa874e615e7`). 8/8 Knowledge outcome units read with original eight examples, first tries, D6. S1 authority original G12 KNTT tập hai Chapter VI B18/B19; original receipt source and independent **D6-only** owner verdict preserve historical scope, do not transfer D6 independent verdict to these NEW Knowledge contents.
+- Delta C O02 explicit sample row-vs-column denominators P(A|B)=5/12 and P(B|A)=5/9 from table; O03 three-step multiplication for nonreplacement P(3 red among 4 red,3 blue)=4/7*3/6*2/5=4/35, verified by C(4,3)/C(7,3)=4/35; O05 optional multi-partition total probability, 0.2*0.01+0.3*0.02+0.5*0.04=0.028; O06 Bayes source-3 posterior 0.02/0.028=5/7, other posteriors 1/14,3/14 and sum=1; O08 hypothetical baseline variation 1% → posterior≈8.76%, 20% → posterior≈70.37% while sensitivity/fall-alarm rates unchanged. Conditions P(B)>0, positive partition weights, disjoint exhaustive sources, avoid confusing likelihood with posterior.
+- No change to exact suffix `# Luyện tập` / `# Tự kiểm tra`, original 19 public canonical IDs (8 Try+8 Practice+3 Written), 8 public question-only same-ID replay, 2 original SVG, keys/rubrics, protected RD1 or no-Mastery/Final Submit. Five material Knowledge subunits inspected author SELF_VERIFIED Q01–Q18 v3.2, P0/P1=0 for affected worked examples; no independent Topic NotebookLM Academic/PED PASS, no website RELEASE/merge/deploy.
