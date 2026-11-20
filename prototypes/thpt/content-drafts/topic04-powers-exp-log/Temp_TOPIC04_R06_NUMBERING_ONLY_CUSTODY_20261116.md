@@ -1,7 +1,7 @@
 # CĐ4 R06 — AUTHORING numbering-only Q18 custody
 
 CURRENT_SOURCE_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_R06_NUMBERING_CONSISTENT_20261116.md
-CURRENT_SOURCE_BLOB: e9294c7e564d7af96df58a99d0b85ed0023ff859
+CURRENT_SOURCE_BLOB: a101ca5e0130ff51fab1a1c867e1b23d642d98b8
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC04_R06_NUMBERING_DELTA_A_Q18_20261116.md
 CURRENT_Q18_RECEIPT_BLOB: 7fa1391687a04e52dd38d52dec5446ccea3e5039
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -153,3 +153,9 @@ RELEASE_AUTHORIZATION: NO
 - CURRENT_SOURCE_BLOB: e9294c7e564d7af96df58a99d0b85ed0023ff859
 - CURRENT_Q18_RECEIPT_BLOB: 7fa1391687a04e52dd38d52dec5446ccea3e5039
 - Four mathematical callout types harmonized, only prefix ΔA; canonical maths unchanged.
+
+
+## 20/11/2026 — Complete current learner Knowledge CĐ04
+- CURRENT_LEARNER_SOURCE_BLOB: a101ca5e0130ff51fab1a1c867e1b23d642d98b8
+- CURRENT_Q18_RECEIPT_BLOB: 87f6cfb2aee17596409123c0bf632b3bfefae42a
+- S1 B18–B21 covered root rules/real powers, log inverse, basic exp/log equations and inequations including positivity and boundary cases. Luyện tập/Tự kiểm tra unchanged.
