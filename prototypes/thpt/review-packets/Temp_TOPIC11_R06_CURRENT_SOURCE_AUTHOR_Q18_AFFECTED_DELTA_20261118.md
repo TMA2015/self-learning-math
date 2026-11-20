@@ -4,13 +4,13 @@
 
 PACKET_ID: THPT-TOPIC11-ANTIDERIVATIVE-INTEGRAL-GEOMETRY-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-CURRENT_STATUS: AUTHOR_SELF_VERIFIED_AFFECTED_DELTA_C_S1_O06
+CURRENT_STATUS: AUTHOR_SELF_VERIFIED_FULL_S1_KNOWLEDGE_B11_B13
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: ccb03b95b5c1312eed1564524beedcb096b1e20f
-ACADEMIC_SOURCE_BLOB: ccb03b95b5c1312eed1564524beedcb096b1e20f
+SOURCE_BLOB: c46d07f8f7d260a71e84bf8c44677da895cb66cc
+ACADEMIC_SOURCE_BLOB: c46d07f8f7d260a71e84bf8c44677da895cb66cc
 SIGNED_R06_PREVIOUS_SOURCE_BLOB: 58b16f7c442d560f3950aafdbaf1f686e1e337e4
 SIGNED_R06_PREVIOUS_Q18_BLOB: ee42fcc98ccc51fef08a7eabdbf99032b0110c27
 ORIGINAL_R05_STUDENT_BLOB: 7d8eac917be4f7688a8a718e54cce4a84bc055ef
@@ -19,14 +19,14 @@ ORIGINAL_SGK_SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b
 ORIGINAL_SGK_INDEPENDENT_RECEIPT_BLOB: feabeeeef262e7f6b28c898cdf77e6aa4194da24
 PUBLIC_ORIGINAL88_INDEX_BLOB: 672fdce0c02ebf4f6ae6b37b331ca59e259d9b5c
 PUBLIC_NEW28_CANONICAL_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0
-DELTA_CLASS: DELTA_B_SOURCE_EQUIVALENT_PRIOR_FORMAL_BOXES + DELTA_C_ACADEMIC_MATERIAL_O06_O08_O14
+DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL_O08_O15_O20_O22
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
 P2: 0
 NOTEBOOKLM_REREVIEW: NOT_REQUIRED_WITH_REASON — owner-effective Q18 v3.1.0 author self verification; O08/O14 exact math and PED conditions directly checked
-AUTHOR_SIGNOFF: TOP11_S1_O06_20261120_9f8b1d7035ae733a2e5f0de5ee40359ab8f5fb6a_TARGETED_AUTHOR_SELF_QA_NO_RELEASE
+AUTHOR_SIGNOFF: TOP11_S1_G12_T2_B11_B13_FULL_KNOWLEDGE_c46d07f8f7d260a71e84bf8c44677da895cb66cc
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
 PRIVATE_RD1_IMPORTED: 0
@@ -113,3 +113,13 @@ This verification does not close DELTA_C independent review O08/O14, does not al
 - CURRENT_LEARNER_BLOB: ccb03b95b5c1312eed1564524beedcb096b1e20f; prior source 9f8b1d7035ae733a2e5f0de5ee40359ab8f5fb6a immutable, historic author-Q18 checks unaffected outside this localized content.
 - S1 scope: S1 G12 T2 B11 pp4–5: K open/half-open/closed, boundary one-sided derivative, continuous f implies primitive, dF=f dx. B12 pp13–14: definite integration variable-name invariant.
 - Reviewed student-facing Knowledge additions, derivation and all guards using direct derivative algebra, interval definitions; example stems/solutions and Practice/Self-check suffix byte-identical. This is DELTA_C_ACADEMIC_MATERIAL with targeted Q01/Q03/PED author mathematical self-verification, **not a new independent NotebookLM verdict**. Other S1 SGK outcomes in 22 Topic corpus remain PENDING. No RD1/Final Submit/Mastery/RELEASE.
+
+
+## 20/11/2026 — CĐ11 hoàn thiện trọn trang Kiến thức B11–B13 (Q18 AUTHOR_SELF_VERIFIED)
+
+- **SGK gốc S1:** Toán 12 KNTT Tập Hai Chương IV B11 trang in 4–11, B12 12–18, B13 19–26, kiểm theo nội dung nguồn sách và owner-custodied S1 receipt ở trên. PDF trình bày ngoài web có text đã đối chiếu nhưng screenshot trả cache miss; không tự nhận QA hình in. SBT chỉ tham chiếu mức độ/họ bài.
+- **Bao phủ:** 22/22 TOP11-M01–M22 và TOP11-O01–O22 gồm 7 mục nguyên hàm/công thức/điều kiện đầu, 7 mục tích phân và tính chất, 5 mục diện tích, 3 mục thể tích thiết diện và xoay. Các kiến thức cũ đúng, ví dụ giải đầy đủ, Vận dụng tự đối chiếu và D6 giữ nguyên; không phát sinh lesson/outcome mới.
+- **Bổ sung Delta C trong cùng learner canonical c46d07f8f7d260a71e84bf8c44677da895cb66cc** từ ccb03b95b5c1312eed1564524beedcb096b1e20f: O08 tách định nghĩa tích phân xác định bằng một nguyên hàm F(b)-F(a), chứng minh bất biến hằng C, phân biệt kết quả với nguyên hàm bất định; O15 nhận diện nửa đường tròn qua y=√(R²−x²), điều kiện cận ±R, tích phân bằng πR²/2; O20 suy ra thể tích chóp cụt từ diện tích thiết diện đồng dạng với √A(x) tuyến tính, công thức h(S0+√(S0S1)+S1)/3; O22 làm rõ điều kiện f liên tục không âm trên [a,b] trong công thức đĩa/vành khăn.
+- **Math verification:** kiểm trực tiếp ∫[-2,2] √(4−x²) dx=2π; với S0=9,S1=36,h=6, ∫[0,6] (3+x/2)² dx=126 cm³, trùng công thức chóp cụt 6(9+18+36)/3=126; một đáy S1=0 suy khối chóp hS0/3. Với nguyên hàm F+C, (F(b)+C)−(F(a)+C)=F(b)−F(a). Điều kiện tâm, miền, hai cận và đơn vị đã tự kiểm. Không dùng ảnh PDF chưa xem làm chứng cứ.
+- **PED:** khái niệm/hình học trước công thức, có ví dụ độc lập giải thích vì sao dùng hình tròn/diện tích thiết diện thay vì máy móc tìm nguyên hàm, chỉ rõ điều kiện và giới hạn phương pháp. Giữ 22 Ví dụ chính, Vận dụng/Đối chiếu, D6 và bốn SVG Topic gốc.
+- **Q15/Q16 không đổi:** phần `# Luyện tập` đến hết `# Tự kiểm tra` byte-exact so với ccb03b95b5c1312eed1564524beedcb096b1e20f; 116 original public canonical (88 SGK +28 Topic), 28 Written rubrics, 22 câu tự kiểm tra chỉ hiển thị đề, 4 SVG giữ nguyên, 0 RD1 private nhập. Không đánh giá chính thức, không ghi Mastery. AUTHOR_SELF_VERIFIED affected scope Q01–Q18, P0=0/P1=0, không độc lập NotebookLM và không RELEASE/merge/deploy.
