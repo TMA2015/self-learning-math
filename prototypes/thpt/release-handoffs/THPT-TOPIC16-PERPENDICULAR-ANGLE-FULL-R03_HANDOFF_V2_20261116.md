@@ -13,13 +13,13 @@ CATALOG_TOPIC_ID: CD16
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_PERPENDICULARITY_R03_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 363316efc7a338e4ec7d5629b182fce3de271356
+ACADEMIC_SOURCE_BLOB: c0e7b9bde78b90ef8233904889d63062f517b232
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC16_R03_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 7ac399da84280f285cf8e25ecf5a16e2f0768a76
+REVIEW_RECEIPT_BLOB: d6bb30f9fffdb15f32aa47dd1b8564cefb81aa4e
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_R03_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: b2fef1fab9629e53bab34295ce858c888bb4448f
+AUTHOR_A1_A7_BLOB: fc7196500d9996d5500b39b266445746de3f5fcf
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_R03_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: b2fef1fab9629e53bab34295ce858c888bb4448f
+AUTHOR_METADATA_BLOB: fc7196500d9996d5500b39b266445746de3f5fcf
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHVII_B22_B27_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 MODEL_ID: SLM-TOP16-RAMP-ANGLE-R00
@@ -349,3 +349,7 @@ R1–R5/AP1–AP5/P1–P2 **NOT TESTED** on production or integrated main. Relea
 - **Q18 current exact composite** `7ac399da84280f285cf8e25ecf5a16e2f0768a76`; **A1 current** `b2fef1fab9629e53bab34295ce858c888bb4448f`, 86 canonical item IDs = 41 original SGK +21 Topic T +21 Topic P+3 Topic Written; 8 public question-only selfchecks from existing P IDs; 65 real Practice, four original SVG. Same one original SGK canonical owner `afc8ec039213b87b4930f2d34d48c28d1fc6277f` was fetched on this branch. No new second item or ID or change to conditions/answer/rubric in Practice.
 - **Actual current ramp angle model** `931093557eb411b9f78286a92e6545dcbd59aa73` compared to historically signed `e14ee4c6ec6c851f228352656b0cd8e2fc3a2a06` differs exclusively by 17 added Golden UI CSS/tokens. Original HTML/JS/mathematical logic byte-identical by Git source comparison, `DELTA_A_UI`, no math rereview; separate browser AP2/device visual QA belongs to RELEASE.
 - **Historical immutable R01** ready Git `6de988fbe61f2e6bc5e58571e9cad68605cdd990` archived byte-for-byte at `prototypes/thpt/release-queue/archive/THPT-TOPIC16-PERPENDICULAR-ANGLE-FULL-R01_HISTORICAL_SIGNED_20261118.md` and removed from active ready queue. This R03 should be only effective READY and REGISTER row. Authoring source/Q18/A1/V2/ready and exact-head CI govern CONTENT_READY; production/browser/Final Submit/RD1/Mastery/deploy not authorized.
+
+
+## 20/11/2026 — current learner simple editorial relock
+- AUTHORING SOURCE `c0e7b9bde78b90ef8233904889d63062f517b232`, Q18 `d6bb30f9fffdb15f32aa47dd1b8564cefb81aa4e`, A1 `fc7196500d9996d5500b39b266445746de3f5fcf`; all 21 outcome sequences and canonical assessments untouched; exact website status outside AUTHORING.
