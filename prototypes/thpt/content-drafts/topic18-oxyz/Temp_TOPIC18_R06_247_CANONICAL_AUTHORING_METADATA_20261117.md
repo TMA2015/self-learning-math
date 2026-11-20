@@ -1,3 +1,18 @@
+<!-- TOP18_W07_O23_CURRENT_CONTENT_QUALITY_DELTA_20261120 -->
+## Current AUTHORING candidate — corrected learner mathematics, reviewer affected-scope pending
+
+CANONICAL_LEARNER_SOURCE_BLOB: 1a99d380571afa573afecf64f619fb52d3dd30be
+CANONICAL_G12_CHV_BANK_BLOB: ee7351bf5f4704c5d5c6bd08a7932c1630e59edf
+TARGETED_AUTHOR_Q18_RECEIPT_BLOB: f5f57804e025f2cad7d502796e30e62e06c73ce6
+TARGETED_NOTEBOOKLM_REVIEW_PACKET_BLOB: 0d14ec020fd03b127d0b9df61b6b657462eb4a8d
+CURRENT_CANDIDATE_STATUS: AFFECTED_DELTA_C_NOTEBOOKLM_REVIEW_PENDING; not full-Topic newly signed PASS
+PUBLIC_CANONICAL_ITEM_ID: THPT-G12-B14-W07; CONTENT_VERSION: 2 (correct circle-vs-disk mathematical key; unique canonical)
+CURRENT_LEARNER_D6: TOP18-O23 remedial steps rather than leaking outcome/Core labels
+UNTOUCHED: all other 246 item identities, all stems, all 40 outcomes, all 247 original details, all Written /5 rubric criteria, twelve replay-only public selfchecks, RD1
+HISTORICAL_CONTENT_READY: original previous snapshot at learner blob bcc7cb6c57ea3cddbfae312a1fe2d31c0791b3f4 remains immutable in Git history.
+RELEASE_AUTHORIZATION: NO
+
+---
 <!-- TOP18_DOT_ZERO_NORM_CURRENT_20261120 -->
 - TOP18-O05 source now `4a0342a04ca941af42dc965e8a4d1f5b507429cf`: SGK G12 T1 B6 p56 zero dot, squared norm and p57 dot-product distributivity/scalar/commutativity; prior source `8a580dc99b6a64b57cefc0c15fb7f9defb7acd48`, scoped Q18 `0488c078d53dd320fe85b69310f430e5f19ca106`, learner IDs unchanged.
 - All 40 outcomes remain in one learner, 247 canonical original items intact; AUTHORING CONTENT_READY, no website release.
@@ -33,7 +48,7 @@ CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: bcc7cb6c57ea3cddbfae312a1fe2d31c0791b3f4
+ACADEMIC_SOURCE_BLOB: 1a99d380571afa573afecf64f619fb52d3dd30be
 REVIEW_RECEIPT_BLOB: 5aa42a6f873614228a3c8dcef2e526daa5a4b82c
 BASELINE_R04_SIGNED_SOURCE_BLOB: 41daf40a3b639a3ef35e129099525137a05b1848
 BASELINE_R04_SIGNED_Q18_RECEIPT_BLOB: 5262fd454346801b0b5eb4f3dc407bc99d3530
