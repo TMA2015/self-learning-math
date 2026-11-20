@@ -153,13 +153,17 @@ r=√(100−36)=8. Nếu mặt ở z=11 thì d>R nên không có giao.
 
 Định nghĩa: **mặt cầu** S = {X:|X−I|=R}, còn **khối cầu** B = {X:|X−I|≤R}. Mặt phẳng cách I h≥0. H chân vuông góc từ I xuống mặt phẳng: |X−I|²=h²+|X−H|². Khi h<R giao S∩P là **đường tròn** r=√(R²−h²), B∩P mới là **đĩa tròn**. Khi h=R giao là 1 điểm; khi h>R không giao. Kiểm cả h=0, h=R, h>R, R>0. Tình huống bổ trợ I=(1,2,1),R=2,z=0 r=√3. Cần kiểm chính xác toán lẫn mức độ học sinh tự xây lại cách làm.
 
-## H. Prompt review NotebookLM (5 câu)
+## H. Prompt phản biện gửi NotebookLM — chỉ học thuật và sư phạm
 
-1. Theo đúng năm Permanent Sources v2.1 và snapshot học liệu trên, kiểm độc lập từng bước định nghĩa **mặt cầu/khối cầu**, **đường tròn/đĩa tròn**, chứng minh r²+h²=R² và các biên h=0, h=R, h>R; phát hiện mọi điều kiện/bước suy luận thiếu.
-2. Kiểm câu W07 v2 theo **cùng ITEM_ID**: đề có rõ đối tượng không, đáp án và lời giải có khớp, rubric **2+1+1+1=5** có chấm đúng điều đề yêu cầu và không tự đòi ý nghĩa vật lý ngoài đề không.
-3. Phản biện sư phạm từng outcome O38, O40, O23: học sinh có hiểu trước khi gặp công thức, thấy cách đọc hình, Tự thử trước Đối chiếu, nhận chỉ dẫn D6 thực sự sửa được lỗi và không gặp bài mặt cầu trước kiến thức B17 không?
-4. Trả Academic và PED verdict **riêng**, P0/P1/P2 theo đúng outcome/item và MINIMAL_DELTA; tuyệt đối không suy rộng verdict này thành toàn Topic 18, không nhầm việc thiếu ảnh SBT p25 với tính đúng toán.
-5. Ghi SOURCE_RECEIPT đúng hai Git blob learner/canonical ở trên và chỉ chấp nhận `Academic PASS + PED PASS` trên phạm vi ảnh hưởng; nếu có lỗi thực sự, cho phương án thay đổi tối thiểu, không sửa 246 item khác.
+**Vai trò:** Chuyên gia phản biện độc lập nội dung Toán THPT và khả năng tự học. Đọc toàn bộ trích đoạn bài học và câu tự luận phía trên. Dùng đúng năm Permanent Sources THPT v2.1 đã có, cùng kiến thức toán học có thể tự kiểm chứng. Đánh giá bản học liệu thực tế, không lấy việc thiếu ảnh quét một trang SBT làm lý do dừng phản biện.
+
+1. **Đúng toán chưa?** Kiểm tra độc lập sự khác nhau giữa mặt cầu và khối cầu, đường tròn và hình tròn; chứng minh thiết diện qua phép dựng hình và định lý Pythagore. Thử các trường hợp mặt phẳng đi qua tâm, tiếp xúc, không cắt và các điều kiện cần thiết. Nếu có sai, chỉ rõ chính xác câu và cách sửa.
+2. **Học sinh tự học được không?** Đọc như một học sinh đang học lần đầu: phần nào khó hiểu, thiếu tiền đề, nhảy bước, công thức xuất hiện quá sớm hoặc không giải thích được vì sao chọn phương pháp? Đặc biệt kiểm tra ví dụ, Tự thử, hướng dẫn đọc hình và đường khắc phục D6.
+3. **Câu tự luận chấm công bằng không?** Đối chiếu đề, lời giải, đáp án và thang 5 điểm của bài giải thích giao giữa mặt cầu và mặt phẳng. Học sinh có thể được điểm đầy đủ khi chứng minh đúng yêu cầu không? Có tiêu chí nào ngoài đề, mơ hồ hoặc chồng chéo?
+4. **Bài học có nhất quán không?** Kiểm tra cách giải thích điểm trong khối cầu/trên mặt cầu, thiết diện và bài tập vận dụng; phát hiện các thuật ngữ hoặc lời hướng dẫn khiến học sinh nhầm lẫn khi chuyển giữa những bài này.
+5. **Kết luận phản biện:** Cho hai kết luận độc lập **Toán học: ĐẠT/CHƯA ĐẠT** và **Khả năng tự học: ĐẠT/CHƯA ĐẠT**. Nếu chưa đạt, nêu mức nghiêm trọng, đoạn học liệu có lỗi, lý do cụ thể và **câu chữ/phép biến đổi tối thiểu cần sửa**. Chỉ đánh giá phần đã gửi, không yêu cầu kiểm toán lại toàn bộ chuyên đề.
+
+**Không yêu cầu NotebookLM trả lời SHA, Git blob, commit, source receipt, manifest, mã phiên bản, trạng thái PR, hay xác nhận nguồn lưu trữ. Đây là trách nhiệm riêng của tác giả và hệ thống quản lý học liệu, không thuộc phản biện toán học/sư phạm.**
 
 ### Lưu ý phản biện
 
