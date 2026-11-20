@@ -9,8 +9,8 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_PERPENDICULARITY_R03_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 363316efc7a338e4ec7d5629b182fce3de271356
-SOURCE_BLOB: 363316efc7a338e4ec7d5629b182fce3de271356
+ACADEMIC_SOURCE_BLOB: c0e7b9bde78b90ef8233904889d63062f517b232
+SOURCE_BLOB: c0e7b9bde78b90ef8233904889d63062f517b232
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_R03_AUTHORING_METADATA_20261116.md
 AUTHOR_METADATA_BLOB: b2fef1fab9629e53bab34295ce858c888bb4448f
 ORIGINAL_R01_SOURCE_BLOB: 0e934389ebfe239ace19cc23c5dedf9c23d8ebdc
@@ -120,3 +120,9 @@ ASSESSMENT_Q16: Eight question-only public replay stems shown, no hint/key/corre
 - **HTML model** current Git `931093557eb411b9f78286a92e6545dcbd59aa73`, original `e14ee4c6ec6c851f228352656b0cd8e2fc3a2a06`: direct exact LCS diff shows only 17 inserted CSS Golden UI lines, no old HTML/JS/angle math logic deleted or changed. Model `DELTA_A_UI` separate from O12 academic correction; browser device/Golden AP QA not certified by source check.
 - **S1 source owner** actual exact Git `afc8ec039213b87b4930f2d34d48c28d1fc6277f` fetched locally on this Topic branch, original G11 ChVII B22–B27 wrapper; CĐ16 remains strictly B22–B25, B26/27 out-of-scope CĐ17, no new SGK original key/rubric. Original B22/B23/B24/B25 4 SVG blobs individually fetched and exact.
 - **One current READY**: historical R01 ready `6de988fbe61f2e6bc5e58571e9cad68605cdd990` byte-exact in `prototypes/thpt/release-queue/archive/THPT-TOPIC16-PERPENDICULAR-ANGLE-FULL-R01_HISTORICAL_SIGNED_20261118.md`, no longer active ready. Current V2/ready/REGISTER source locks and exact HEAD CI shall be checked separately; no owner merge/deploy or site Q16 runtime claim.
+
+
+## 20/11/2026 — owner explanatory example label Delta A
+- Learner SHA `c0e7b9bde78b90ef8233904889d63062f517b232`, former `363316efc7a338e4ec7d5629b182fce3de271356` remains historical.
+- At TOP16-O09 learning narrative (perpendicular-line to plane two-intersecting-direction proof), replaced exactly one bold `Ví dụ kết nối:` with continuous prose `Chẳng hạn,` before the unchanged illustration; the 21 canonical standalone examples with own Đề bài/Lời giải remain and no mathematical hypothesis/formula changed.
+- Targeted Q03/PED author Delta A PASS on the one-character-scope narrative label edit; unchanged Q15/Q16 ID/stem/answer/rubric/RD1/Golden sections. No new academic reviewer PASS and no release.
