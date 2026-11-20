@@ -9,7 +9,7 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 STATE: AUTHORING_CONTENT_READY_SOURCE_ONLY
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: b5e24f5d39e83df46ada64a5b5665af9e0888e2f
+ACADEMIC_SOURCE_BLOB: 8877dd83aa804f7a4d665294d59faf511fcdb5bf
 ORIGINAL_G11_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_THPT_TOPIC17_FRUSTUM_VOLUME_MODEL_R00_20261113.html
 INTERACTIVE_MODEL_BLOB: cfb2bd522531167003eeae8e7342c6d1349ca425
@@ -156,3 +156,9 @@ Learner Knowledge 2.4 (TOP17-O10) no longer requires a non-embedded slider: dire
 - ACADEMIC_SOURCE_BLOB: b5e24f5d39e83df46ada64a5b5665af9e0888e2f
 - REVIEW_RECEIPT_BLOB: 034147514b8a3d2b8af026575a4294673d38deb8
 - Current Delta A six formal labels and Delta C PED6 disclosure in O10 checked; original public canonical item body and source provenance unaffected.
+
+
+## 20/11/2026 — Active A1 source after S1 B26 TOP17-O03/O05
+- ACADEMIC_SOURCE_BLOB: 8877dd83aa804f7a4d665294d59faf511fcdb5bf
+- REVIEW_RECEIPT_BLOB: 11db4d6cafc94f88d17dbcdf041f655bdceab030
+- S1 B26 pp56,58 confirmed in current Knowledge, all original canonical exercises and 3 student pages retained; author-only affected math self-QA, no broad independent PASS.
