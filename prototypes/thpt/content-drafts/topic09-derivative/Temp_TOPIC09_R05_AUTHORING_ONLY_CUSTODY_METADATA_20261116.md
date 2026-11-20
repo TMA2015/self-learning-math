@@ -2,9 +2,9 @@
 
 R03_IMMUTABLE_GIT_BLOB: 52be5ef6b8684632435ae22429bf7b5db5cf50cf
 CURRENT_LEARNER_SOURCE_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md
-CURRENT_LEARNER_SOURCE_BLOB: a414d05a4039c6988f533978870f4bfe35ece71a
+CURRENT_LEARNER_SOURCE_BLOB: 509fe1bdbf64b6a01ee00532d59eff943110df15
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC09_R05_AUTHOR_SELF_QA_RECEIPT_20261116.md
-CURRENT_Q18_RECEIPT_BLOB: 864c9564f0224be4a26c8f2ed9d615dc58f2957a
+CURRENT_Q18_RECEIPT_BLOB: 803b75011bace6e9b70fd8853053af764fcc6e74
 STATUS: R05_Q18_AUTHOR_SELF_VERIFIED_PENDING_V2_GATE
 
 ## 18/11/2026 — Active source correction, signed scoped Q18 provenance
@@ -179,3 +179,10 @@ DELTA_C_P23: Original R01 bank immutable; R04 canonical P23 says "tập xác đ�
 - CURRENT_LEARNER_SOURCE_BLOB: a414d05a4039c6988f533978870f4bfe35ece71a
 - CURRENT_Q18_RECEIPT_BLOB: 864c9564f0224be4a26c8f2ed9d615dc58f2957a
 - Seven Knowledge callout types corrected only; all math and single canonical ownership unchanged.
+
+
+## 20/11/2026 — Current A1 source custody after scoped SGK TOP09-O19/O22
+- CURRENT_LEARNER_BLOB: 509fe1bdbf64b6a01ee00532d59eff943110df15
+- CURRENT_Q18_BLOB: 803b75011bace6e9b70fd8853053af764fcc6e74
+- S1 G11 T2 B32 pp91–93: (tan u)'=u'/cos²u when cos u≠0, (cot u)'=−u'/sin²u when sin u≠0; (ln|g|)'=g'/g when g≠0, separate ln g domain g>0.
+- Mathematics checked only for affected outcome; Q15, bank and assessment-source unchanged; no blanket reviewer PASS.
