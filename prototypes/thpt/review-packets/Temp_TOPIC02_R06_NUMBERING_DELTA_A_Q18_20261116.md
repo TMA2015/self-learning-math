@@ -7,8 +7,8 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 36d6657b9977e3f72d7bf73d98653188a0ebe760
-ACADEMIC_SOURCE_BLOB: 36d6657b9977e3f72d7bf73d98653188a0ebe760
+SOURCE_BLOB: 6c975c6f19c11193fad7546cebccb27a9bcbcd2b
+ACADEMIC_SOURCE_BLOB: 6c975c6f19c11193fad7546cebccb27a9bcbcd2b
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R05_FULL_LEARNER_VISIBLE_38_CANONICAL_20261115.md
 PREVIOUS_SOURCE_BLOB: eb5a01b50262dc4b151b3915f5a5e4b436432374
 PREVIOUS_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC02_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
@@ -76,3 +76,9 @@ ASSESSMENT_Q16: Zero private RD1 imported, public self-check CLIENT_SELF_CHECK_N
 
 ## 20/11/2026 · ΔA TOP02-O07
 - Learner `36d6657b9977e3f72d7bf73d98653188a0ebe760` supersedes historic `cb3a6e6be2ec3419be3fdc16f0e5df3599fe1ec2`: formal label `ĐIỀU KIỆN — Miền nghiệm có điều kiện vật lý` now `PHƯƠNG PHÁP`, because actual source explains how to intersect algebraic solutions with physical feasible domain. All mathematical inequalities, examples, 38 canonical items and rubrics identical; only one label prefix changed. Targeted Q03/PED author self-QA, no full NotebookLM or RELEASE.
+
+
+## 20/11/2026 — Tự kiểm trang Kiến thức theo SGK, nhánh Chuyên đề 02
+- Đối chiếu đúng mảng kiến thức từ SGK. S1 Toán 10 T1 Bài 3-4 và T2 Bài 17: bổ sung định nghĩa tam thức bậc hai, bất phương trình bậc hai, hệ bất phương trình bậc nhất hai ẩn và vô số nghiệm nửa mặt phẳng.
+- Tự kiểm điều kiện, ví dụ: a≠0 phân biệt bậc hai; f=x²−1<0 cho -1<x<1; 2y≥4 tương đương y≥2 có vô số x; hệ cần mọi điều kiện cùng đúng. Không thêm bài học/ITEM_ID mới. Luyện tập và Tự kiểm tra giữ nguyên toàn văn. Đã đọc lại bố cục, ký hiệu và lời dẫn của chính bản thảo đang dùng. Mọi SOURCE khác giữ lịch sử, không thêm bản learner.
+- SOURCE_HIEN_HANH: 6c975c6f19c11193fad7546cebccb27a9bcbcd2b; kiểm tra học thuật bởi tác giả, không suy là phản biện độc lập hay trạng thái phát hành website.
