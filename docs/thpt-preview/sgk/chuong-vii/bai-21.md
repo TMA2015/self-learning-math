@@ -178,38 +178,40 @@
 
 === "Ví dụ"
 
-    Trước khi xem lời giải, hãy xác định dữ kiện, điều phải tìm và lý do chọn cách giải. Sau đó kiểm tra lại điều kiện áp dụng và kết quả, thay vì chỉ nhìn phép tính cuối cùng.
-
-    ### Ví dụ — Từ tâm và tiếp điểm tìm tiếp tuyến
+    ### 3.1. Ví dụ — Từ tâm và tiếp điểm tìm tiếp tuyến
 
     **Đề bài.** Cho đường tròn \((x-2)^2+(y-1)^2=9\) và điểm \(T(5,1)\). Viết tiếp tuyến tại T.
 
-    **Vì sao chọn cách này?** Bán kính tới tiếp điểm luôn **vuông góc** tiếp tuyến; vì vậy vectơ \(\overrightarrow{IT}=(3,0)\) là một pháp tuyến.
+    **Phân tích:** Phương pháp này áp dụng cho tiếp tuyến **tại T**, nên trước hết phải kiểm T thuộc đường tròn. Khi đó bán kính IT vuông góc tiếp tuyến, vì vậy \(\overrightarrow{IT}=(3,0)\) là một **pháp tuyến** của đường thẳng cần tìm. Viết phương trình qua T sẽ nhanh hơn giải hệ giao điểm khi tiếp điểm đã cho.
 
-    **Lời giải.** \(I=(2,1)\), \(R=3\). \(IT=3\), nên T thuộc đường tròn. Tiếp tuyến qua T nhận pháp tuyến \((3,0)\): \(3(x-5)=0\), tức \(x=5\). 
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1">
+    <p><strong>Lời giải.</strong> \(I=(2,1)\), \(R=3\). \(IT=3\), nên T thuộc đường tròn. Tiếp tuyến qua T nhận pháp tuyến \((3,0)\): \(3(x-5)=0\), tức \(x=5\).</p>
+    </div>
 
-    **Kiểm lại:** đường thẳng đứng vuông góc đoạn bán kính nằm ngang.
+    **Kiểm lại:** Điểm T thuộc đường tròn, đường x=5 qua đúng T và vuông góc bán kính IT nằm ngang; hình ở tab Khám phá biểu diễn đúng điểm tiếp xúc.
 
-    ### Ví dụ 2 — Từ phương trình tổng quát tới tiếp tuyến
+    ### 3.2. Ví dụ — Từ phương trình tổng quát tới tiếp tuyến
 
     **Đề bài.** Với \(x^2+y^2-4x+6y-12=0\), xác định tâm, bán kính của đường tròn và tiếp tuyến tại \(M(5;1)\).
 
-    **Vì sao chọn cách này?** Hoàn thành bình phương để đọc tâm, bán kính; xác nhận tiếp điểm thuộc đường tròn trước khi dùng bán kính làm pháp tuyến.
+    **Phân tích:** Trước hết phải **hoàn thành bình phương** để biết đúng tâm và bán kính, đồng thời kiểm bán kính dương. Tiếp theo, kiểm M có thực sự thuộc đường tròn; chỉ khi đó vectơ IM mới là pháp tuyến của tiếp tuyến tại M. Việc kiểm điều kiện này quan trọng hơn học thuộc một công thức tiếp tuyến rời rạc.
 
-    **Lời giải.** Hoàn thành bình phương:
-
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2">
+    <p><strong>Lời giải.</strong> Hoàn thành bình phương:</p>
+    <div class="arithmatex">
     \[
     (x-2)^2+(y+3)^2=25.
     \]
-
-    Vậy \(I(2;-3)\) và \(R=5\). Điểm \(M(5;1)\) thuộc đường tròn vì \(IM^2=3^2+4^2=25\). Vectơ \(IM=(3;4)\) là pháp tuyến của tiếp tuyến tại \(M\), nên:
-
+    </div>
+    <p>Vậy \(I(2;-3)\) và \(R=5\). Điểm \(M(5;1)\) thuộc đường tròn vì \(IM^2=3^2+4^2=25\). Vectơ \(IM=(3;4)\) là pháp tuyến của tiếp tuyến tại \(M\), nên:</p>
+    <div class="arithmatex">
     \[
     3(x-5)+4(y-1)=0\iff \boxed{3x+4y-19=0}.
     \]
+    </div>
+    </div>
 
-    !!! tip "Nhớ kiểm tra"
-        Để viết tiếp tuyến **tại một điểm**, phải xác nhận điểm đó thuộc đường tròn. Đừng nhầm bán kính \(R\) với \(R^2\).
+    **Kiểm lại:** \(R\) là bán kính dương, còn \(R^2\) mới là bình phương bán kính. Thay \(M(5;1)\) vào đường tròn cho 9+16=25, nên M thực sự thuộc đường tròn. Thế M vào tiếp tuyến cho 15+4−19=0; pháp tuyến tiếp tuyến là bán kính IM, đúng quan hệ vuông góc.
 
 === "Lỗi thường gặp"
 
