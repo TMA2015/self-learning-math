@@ -61,12 +61,27 @@ async function execute(){
       const figs=groups.nth(i).locator("figure img");
       for(const fig of await figs.all()){
        assert((await fig.getAttribute("alt"))?.trim(),rel+" "+width+" figure alt missing");
+       // A real lazy image below the fold never starts loading until in view.
+       // Scrolling reproduces the learner's behavior; bounded load/decode
+       // fails closed on broken assets instead of hanging a one-lesson runner.
+       await fig.scrollIntoViewIfNeeded({timeout:20000});
        await fig.evaluate(async image=>{
-        if(!image.complete)await new Promise((res,rej)=>{
-         image.addEventListener("load",res,{once:true});
-         image.addEventListener("error",rej,{once:true});
-        });
-        if(image.decode)await image.decode();
+        const deadline=(phase)=>new Promise((_,rej)=>setTimeout(
+         ()=>rej(new Error("scoped SVG/image "+phase+" timed out after 15s")),15000));
+        if(!image.complete){
+         await Promise.race([
+          new Promise((res,rej)=>{
+           image.addEventListener("load",res,{once:true});
+           image.addEventListener("error",()=>rej(new Error("scoped SVG/image load failed")),{once:true});
+           if(image.complete){
+            if(image.naturalWidth>0)res();
+            else rej(new Error("scoped SVG/image completed without pixels"));
+           }
+          }),
+          deadline("load")
+         ]);
+        }
+        if(image.decode)await Promise.race([image.decode(),deadline("decode")]);
        });
        assert(await fig.evaluate(x=>x.naturalWidth>0),rel+" "+width+" broken educational image");
       }
