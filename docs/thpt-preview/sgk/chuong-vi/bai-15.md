@@ -40,7 +40,7 @@
 
 
 
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY01" hidden></span>
+    <span id="help-g10-chvi-try01" data-thpt-help-id="HELP-G10-CHVI-TRY01" hidden></span>
 
     ??? tip "Kiểm lỗi"
 
@@ -73,7 +73,7 @@
 
 
 
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY02" hidden></span>
+    <span id="help-g10-chvi-try02" data-thpt-help-id="HELP-G10-CHVI-TRY02" hidden></span>
 
     ??? tip "Kiểm lỗi"
 
@@ -104,7 +104,7 @@
 
 
 
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY03" hidden></span>
+    <span id="help-g10-chvi-try03" data-thpt-help-id="HELP-G10-CHVI-TRY03" hidden></span>
 
     ??? tip "Kiểm lỗi"
 
@@ -147,7 +147,7 @@
 
 
 
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY05" hidden></span>
+    <span id="help-g10-chvi-try05" data-thpt-help-id="HELP-G10-CHVI-TRY05" hidden></span>
 
     ??? tip "Kiểm lỗi"
 
@@ -174,7 +174,7 @@
         <div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> <span class="arithmatex">\(f(x_2)-f(x_1)=3(x_2-x_1)&gt;0\)</span>; đồng biến trên <span class="arithmatex">\([-1;2]\)</span>.</p><p><strong>Vì sao:</strong> Hệ số 3 dương nên khi x tăng thì giá trị f(x) tăng. Lập luận áp dụng mọi cặp x1&lt;x2 trong khoảng, không chỉ một bảng nhỏ.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
 
 
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY04" hidden></span>
+    <span id="help-g10-chvi-try04" data-thpt-help-id="HELP-G10-CHVI-TRY04" hidden></span>
 
     ??? tip "Kiểm lỗi"
 
