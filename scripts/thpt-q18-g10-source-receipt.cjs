@@ -95,6 +95,16 @@ function chviiEditorialReceiptRows(){
  return rows;
 }
 
+// Historical owner P2/academic receipts are immutable. The placement receipt
+// extends them, never weakens their source SHA or Q15/Q16 requirements.
+function relocatedHelpRow(name){
+ const file=path.join(root,"prototypes/thpt/ux795/G10_B01_B23_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md");
+ if(!fs.existsSync(file))return null;
+ const text=fs.readFileSync(file,"utf8");
+ const rows=[...text.matchAll(/^\| (B\d{2}) \| \x60([a-f0-9]{40})\x60 \| \x60([a-f0-9]{40})\x60 \| (\d+) \|$/gm)].filter(m=>m[1]===name);
+ assert(rows.length<=1,name+" duplicate placement receipt row");
+ return rows.length?{old:rows[0][2],next:rows[0][3],count:Number(rows[0][4])}:null;
+}
 function expectedG10KnowledgeBlob(lesson,legacy){
  assert(/^[a-f0-9]{40}$/.test(legacy),"Historical source SHA malformed");
  const name="B"+String(lesson).replace(/^B/,"").padStart(2,"0");
@@ -156,7 +166,11 @@ function expectedG10KnowledgeBlob(lesson,legacy){
   }
   const lesson=fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-viii/bai-23.md"));
   const gitBlob=require("node:crypto").createHash("sha1").update(Buffer.from("blob "+lesson.length+"\0")).update(lesson).digest("hex");
-  assert.equal(gitBlob,current,"B23 current canonical source must match immutable chained signed R01 to R03 SHA");
+  const p23=relocatedHelpRow("B23");
+  if(p23)assert.equal(p23.old,current,
+   "B23 new placement must extend immutable R03 learner SHA");
+  assert.equal(gitBlob,p23?p23.next:current,
+   "B23 learner source must match immutable R03 or signed next placement SHA");
 
   // B23 owner P2 regression source checks apply only when a signed R02 exists.
   // The actual computed-style and click-to-open behavior were independently
@@ -497,13 +511,21 @@ function expectedG10KnowledgeBlob(lesson,legacy){
   }
   const sourceText=fs.readFileSync(path.join(root,
    "docs/thpt-preview/sgk/chuong-iv/bai-11.md"),"utf8");
-  assert.equal(calc(Buffer.from(sourceText)),g("B11_SOURCE_CURRENT_BLOB"),
-   "B11 source-first learner Knowledge must match new owner P2 receipt");
   const manuscriptText=manuscript.toString("utf8");
   const start="<!-- BEGIN_B11_KNOWLEDGE_MARKDOWN -->\n",end="\n<!-- END_B11_KNOWLEDGE_MARKDOWN -->";
-  assert(manuscriptText.includes(start)&&manuscriptText.includes(end),"B11 one canonical Knowledge markers missing");
-  assert.equal(manuscriptText.split(start)[1].split(end)[0].trimEnd()+"\n",sourceText,
-   "B11 published learner source must be exact current canonical Section A");
+  assert(manuscriptText.includes(start)&&manuscriptText.includes(end),
+   "B11 immutable canonical manuscript delimiters missing");
+  const frozen=manuscriptText.split(start)[1].split(end)[0].trimEnd()+"\n";
+  assert.equal(calc(Buffer.from(frozen)),g("B11_SOURCE_CURRENT_BLOB"),
+   "B11 prior owner P2 canonical manuscript SHA remains immutable");
+  const p11=relocatedHelpRow("B11");
+  if(p11){
+   assert.equal(p11.old,g("B11_SOURCE_CURRENT_BLOB"),
+    "B11 HELP placement must derive from exact approved previous learner source");
+   assert.equal(calc(Buffer.from(sourceText)),p11.next,
+    "B11 new learner source must match signed placement receipt");
+  }else assert.equal(sourceText,frozen,
+   "B11 original learner source must equal signed canonical manuscript");
   for(const required of ["CHIV-11-A","CHIV-11-B","DELTA_C_ACADEMIC_MATERIAL",
     "INDEPENDENT_ACADEMIC_PED_REVIEW_PENDING","NO_MERGE_NO_DEPLOY"]){
    assert(signed.includes(required),"B11 review HOLD evidence missing "+required);
@@ -737,9 +759,13 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    assert.equal(blob(fs.readFileSync(path.join(root,
     "prototypes/thpt/content-drafts/THPT_G10_CHV_B12_CANONICAL.md"))),
     u("B12_CURRENT_CANONICAL_BLOB"),"B12 current canonical must match scoped Delta A SHA");
+   const p12=relocatedHelpRow("B12");
+   if(p12)assert.equal(p12.old,u("B12_CURRENT_SOURCE_BLOB"),
+    "B12 HELP relocation must start from immutable signed owner P2 source");
    assert.equal(blob(fs.readFileSync(path.join(root,
-    "docs/thpt-preview/sgk/chuong-v/bai-12.md"))),u("B12_CURRENT_SOURCE_BLOB"),
-    "B12 current learner Markdown must match scoped Delta A SHA");
+    "docs/thpt-preview/sgk/chuong-v/bai-12.md"))),
+    p12?p12.next:u("B12_CURRENT_SOURCE_BLOB"),
+    "B12 learner source must match exact signed original or placement SHA");
    for(const [rel,key] of [
     ["docs/assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js","B12_R01_ITEM_BANK_BLOB"],
     ["docs/thpt-preview/sgk/chuong-v/luyen-tap.md","B12_R01_PRACTICE_HUB_BLOB"]]){
