@@ -7,10 +7,10 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-CURRENT_STATUS: AUTHOR_SELF_VERIFIED_AWAITING_V2_SOURCE_LOCK
+CURRENT_STATUS: AUTHOR_SELF_VERIFIED_AFFECTED_DELTA_C_S1_O06
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 9f374c22d40358334d79ef504e7f6c83e9d0c7cc
-ACADEMIC_SOURCE_BLOB: 9f374c22d40358334d79ef504e7f6c83e9d0c7cc
+SOURCE_BLOB: 9f8b1d7035ae733a2e5f0de5ee40359ab8f5fb6a
+ACADEMIC_SOURCE_BLOB: 9f8b1d7035ae733a2e5f0de5ee40359ab8f5fb6a
 SIGNED_R06_PREVIOUS_SOURCE_BLOB: 58b16f7c442d560f3950aafdbaf1f686e1e337e4
 SIGNED_R06_PREVIOUS_Q18_BLOB: ee42fcc98ccc51fef08a7eabdbf99032b0110c27
 ORIGINAL_R05_STUDENT_BLOB: 7d8eac917be4f7688a8a718e54cce4a84bc055ef
@@ -19,14 +19,14 @@ ORIGINAL_SGK_SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b
 ORIGINAL_SGK_INDEPENDENT_RECEIPT_BLOB: feabeeeef262e7f6b28c898cdf77e6aa4194da24
 PUBLIC_ORIGINAL88_INDEX_BLOB: 672fdce0c02ebf4f6ae6b37b331ca59e259d9b5c
 PUBLIC_NEW28_CANONICAL_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0
-DELTA_CLASS: DELTA_B_SOURCE_EQUIVALENT_PRIOR_FORMAL_BOXES + DELTA_C_ACADEMIC_MATERIAL_O08_O14
+DELTA_CLASS: DELTA_B_SOURCE_EQUIVALENT_PRIOR_FORMAL_BOXES + DELTA_C_ACADEMIC_MATERIAL_O06_O08_O14
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
 P2: 0
 NOTEBOOKLM_REREVIEW: NOT_REQUIRED_WITH_REASON — owner-effective Q18 v3.1.0 author self verification; O08/O14 exact math and PED conditions directly checked
-AUTHOR_SIGNOFF: TOP11_R06_20261118_9f374c22d40358334d79ef504e7f6c83e9d0c7cc_AUTHOR_SELF_QA_NOT_FINAL_ACCEPTANCE
+AUTHOR_SIGNOFF: TOP11_S1_O06_20261120_9f8b1d7035ae733a2e5f0de5ee40359ab8f5fb6a_TARGETED_AUTHOR_SELF_QA_NO_RELEASE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
 PRIVATE_RD1_IMPORTED: 0
@@ -99,3 +99,11 @@ This verification does not close DELTA_C independent review O08/O14, does not al
 
 <!-- TOP11_OWNER_EDITORIAL_DELTA_A_20261119 -->
 **Owner-approved copy-only Delta A 19/11:** 18 formerly unmarked antiderivative/integral formula, method and definition statements received descriptive typed captions, while 4 previous formal callouts remain as-is. Baseline learner `36c22ff9d441da793181072426d594bfe245a8aa` → `9f374c22d40358334d79ef504e7f6c83e9d0c7cc`. A complete reverse-prefix text comparison preserves all original mathematical characters, hypotheses, constraints, 22 worked examples, 22 Vận dụng/Đối chiếu, canonical item questions/answers/rubrics, visuals and selfchecks; no new academic content. Q18 affected edit author self-equivalent, STATE stays CONTENT_READY under owner permission, no full NotebookLM re-review and no RELEASE.
+
+## 20/11/2026 — S1 Bài 11 mandatory antiderivative gap, Delta C O06
+- S1: SGK Toán 12 KNTT Tập 2, Chương IV, Bài 11 Nguyên hàm, trang in 9–10, HĐ6/bảng nguyên hàm lượng giác; phạm vi SGK xác nhận qua văn bản sách, không tự nhận đã quét PDF trong lần này.
+- AFFECTED_SCOPE: TOP11-M06 / TOP11-O06, phần Kiến thức §1.6; nguồn trước 9f374c22d40358334d79ef504e7f6c83e9d0c7cc chỉ nêu nguyên hàm sin, cos, thiếu dạng 1/cos^2(x) và 1/sin^2(x).
+- SOURCE_BLOB_NEW: 9f8b1d7035ae733a2e5f0de5ee40359ab8f5fb6a. Đã bổ sung hai công thức nguyên hàm của tan và -cot, giới hạn cos(x) khác 0 / sin(x) khác 0 trên từng khoảng xác định, cùng một ví dụ kiểm đạo hàm ngược.
+- MATH_QA: (tan x)'=1/cos^2(x), (-cot x)'=1/sin^2(x) và (2tan x+3cot x)'=2/cos^2(x)-3/sin^2(x). Kiểm 3 đồng nhất thức và 2 điều kiện loại điểm mẫu bằng 0 bằng đạo hàm trực tiếp.
+- Q15_Q16_SCOPE: 116 item canonical, 22 câu self-check công khai, đáp án, lời giải, rubric, SVG, RD1, Mastery không bị chỉnh sửa; nguồn chỉ thêm một đoạn kiến thức trước Ví dụ O06.
+- VERDICT: TARGETED_AUTHOR_SELF_QA_PASS O06; không nhận NotebookLM reviewer PASS mới. FULL_22_TOPIC_S1_AUDIT=PENDING. Không merge/deploy.
