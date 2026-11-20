@@ -2,24 +2,24 @@
 
 PACKET_ID: THPT-TOPIC09-DERIVATIVE-MEANING-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 448f43df4cacf0ff3a3a9cfb7cbcae3bafaef8fb
+SOURCE_COMMIT: 64bfdd729f12bf33b28ffaaba01d1a6e7a1eff7c
 AUTHOR_PR: 831
 CURRENT_PR: https://github.com/TMA2015/self-learning-math/pull/831 — DRAFT AUTHORING, not merged or deployed
 CATALOG_TOPIC_ID: CD09
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md
-ACADEMIC_SOURCE_BLOB: 509fe1bdbf64b6a01ee00532d59eff943110df15
+ACADEMIC_SOURCE_BLOB: e35b9a0d2e09bb06167ef9a051d979b9b7d5c6d7
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC09_R05_AUTHOR_SELF_QA_RECEIPT_20261116.md (Q18 author SELF_VERIFIED, no independent new NotebookLM PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC09_R05_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 803b75011bace6e9b70fd8853053af764fcc6e74
+REVIEW_RECEIPT_BLOB: 4e4b095e9cb39c99a87bc350fdd7812070edf81d
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC09-DERIVATIVE-MEANING-FULL-R05_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: 1d8c054f71baf57d1a1e8b37ff7d20648fefe2fc
+AUTHOR_HANDOFF_BLOB: 4507f528b003f8c78e2f0b1e9bdaec438aba48a7
 PUBLIC_ORIGINAL71_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_ORIGINAL71_SGK_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_ORIGINAL71_INDEX_BLOB: 3c025ce2dfb8e16743873ac2b3f35bfb37c27ef8
 PUBLIC_NEW37_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_NEW37_PUBLIC_CANONICAL_R05_20261116.md
@@ -104,3 +104,8 @@ Authoring Academic and Ped self-check cannot approve release. Owner-gated RELEAS
 ## 20/11/2026 — Active targeted AUTHORING S1 Delta C TOP09-O19/O22
 - Learner 509fe1bdbf64b6a01ee00532d59eff943110df15, Q18 803b75011bace6e9b70fd8853053af764fcc6e74, A1 860186f46c99a3f4c442df113e9d9e5e6ffbd16f, V2 1d8c054f71baf57d1a1e8b37ff7d20648fefe2fc. S1 G11 T2 B32 pp91–93: (tan u)'=u'/cos²u when cos u≠0, (cot u)'=−u'/sin²u when sin u≠0; (ln|g|)'=g'/g when g≠0, separate ln g domain g>0.
 - Source-only content patch with affected mathematics self-QA; all previous Q15/Q16 item data unchanged. Full 22-topic S1 audit still pending; CONTENT_READY authoring snapshot is not integrated production acceptance.
+
+
+## 20/11 AUTHORING CĐ09 S1 closure
+
+CĐ09 learner source e35b9a0d2e09bb06167ef9a051d979b9b7d5c6d7 self-verified for SGK G11 T2 B31–B33 complete required Knowledge coverage, seven affected outcomes O04/O07/O10/O16/O20/O21/O29; Q18 receipt 4e4b095e9cb39c99a87bc350fdd7812070edf81d, V2 4507f528b003f8c78e2f0b1e9bdaec438aba48a7, author metadata 92f678c6b9959ab729d1935e3d4472775f778ba5. Existing 108 public canonical items, 32 public question-only selfchecks, 4 SVG, original 14 Written and all rubrics unchanged; Practice and Selfcheck sections byte-exact. One active manifest/REGISTER. No independent new NotebookLM verdict, no official Readiness/Mastery, no website/merge/deploy or AP/R/P2 acceptance.
