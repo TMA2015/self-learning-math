@@ -37,7 +37,7 @@
 
     **Cách bắt đầu:** Viết riêng điều kiện cho **cả hai** căn rồi mới giải phương trình; không được giữ nghiệm ngoài miền. Sau đó thay giá trị tìm được vào hai căn ban đầu.
 
-    **Em vận dụng.** Giải \(\sqrt{x+1}=\sqrt{2x-2}\) trong \(\mathbb R\).
+    **Vận dụng.** Giải \(\sqrt{x+1}=\sqrt{2x-2}\) trong \(\mathbb R\). Trước khi tính, hãy ghi hai điều kiện dưới căn rồi mới tìm nghiệm.
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHVI-TRY16" data-outcome-id="B18_OUT_01" hidden></span>
 
@@ -54,7 +54,7 @@
 
     <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_CHVI_B18_RADICAL_FLOW_D5_R03.svg" loading="lazy" alt="Sơ đồ điều kiện cho hai dạng phương trình căn và bước kiểm tra nghiệm gốc"><figcaption>Đọc từ điều kiện đến nghiệm ứng viên, rồi luôn kiểm lại trong phương trình gốc.</figcaption></figure>
 
-    **Cách đọc hình.** Đọc sơ đồ theo thứ tự điều kiện của căn/vế phải, phép bình phương, giải phương trình, rồi thử lại. Mũi tên quay về kiểm tra cho thấy nghiệm phương trình sau bình phương chưa chắc là nghiệm ban đầu.
+    **Cách đọc hình.** Bắt đầu ở điều kiện của căn/vế phải; tiếp theo là phép bình phương, giải phương trình rồi thử lại trong phương trình gốc. Mũi tên quay về bước kiểm tra nhắc rằng nghiệm của phương trình sau bình phương chưa chắc là nghiệm ban đầu.
 
 
     Một căn thức thực không bao giờ âm. Do đó nếu nó bằng một biểu thức \(B(x)\), bản thân \(B(x)\) phải không âm, điều thường bị mất khi bình phương.
@@ -63,6 +63,8 @@
 
     Với \(\sqrt{A(x)}=B(x)\), phải có \(B(x)\ge0\) (và \(A(x)\ge0\)); sau đó bình phương \(A(x)=B(x)^2\), giải và kiểm. Bình phương tự nó không bảo đảm mọi nghiệm ứng viên có dấu đúng.
 
+
+    **Vận dụng.** Giải \(\sqrt{x+5}=x-1\). Hãy xét riêng dấu vế phải trước, sau đó giải phương trình bình phương và chỉ giữ nghiệm thỏa phương trình gốc.
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-B18-C01" data-outcome-id="B18_OUT_02" hidden></span>
 
@@ -82,6 +84,8 @@
 
     Nếu \(A=B^2\) thì chỉ có \(|B|=\sqrt A\), chưa chắc \(\sqrt A=B\). Lý do có nghiệm ngoại lai là phép bình phương làm mất thông tin dấu. Một nghiệm cuối phải thỏa miền và phương trình gốc.
 
+
+    **Vận dụng.** Giải \(\sqrt{2x+3}=x\). Vì vế phải là \(x\), hãy kiểm dấu của nó trước khi bình phương; giải thích vì sao một nghiệm ứng viên phải bị loại.
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHVI-TRY18" data-outcome-id="B18_OUT_03" hidden></span>
 
@@ -104,7 +108,7 @@
 
     **Cách lập phương trình:** Chọn độ cao làm ẩn, ghi miền h>0, lập \(\sqrt{h^2+25}=13\), giải và thử lại. Không chấp nhận h âm dù bình phương cho hai số đối nhau.
 
-    **Em vận dụng.** Một thang dài 13 m dựa tường, chân thang cách tường 5 m. Đặt h>0 là độ cao đầu thang trên tường. Lập phương trình chứa căn và tính h.
+    **Vận dụng.** Một thang dài 13 m dựa tường, chân thang cách tường 5 m. Đặt h>0 là độ cao đầu thang trên tường. Lập phương trình chứa căn và tính h. Hãy ghi đúng cạnh huyền, đơn vị và điều kiện trước khi xem lời giải.
 
     <span data-ped-first-try="1" data-thpt-first-try-id="THPT-G10-CHVI-TRY19" data-outcome-id="B18_OUT_04" hidden></span>
 
