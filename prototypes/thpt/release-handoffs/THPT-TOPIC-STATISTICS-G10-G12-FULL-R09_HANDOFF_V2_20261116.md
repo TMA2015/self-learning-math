@@ -1,3 +1,9 @@
+<!-- TOP22_R09_CURRENT_15_KEY_RESTORE_SOURCE_EQUIVALENT_20261121 -->
+## CURRENT AUTHORING source-only CĐ22 — source-equivalent 15 approved key restorations
+
+With 114/114 original canonical SGK Practice stems and entire pre-existing worked solutions retained byte-identically, 15 original signed canonical answer conclusions were made explicit **inside their existing opt-in Luyện tập disclosures**, not before answering. Two original banks G11 (`4ea8df2ca2682d9fac8b1556852334af336930a5`) and G12 (`4e8e462a5c2243583be8c71625a9be3095e48c7b`) supply literal keys; no new/changed mathematics, ID, rubric, concept, conditions, answer gating or protected RD1. This is `DELTA_B_SOURCE_EQUIVALENT` with 15/15 byte-true canonical key parity. New sole learner blob `e4546cb506a40f1345da74bb9b2be5f73088e78b`, author Q18 receipt `8f52a4187854524556b8f889bc3b01455d02c2f5`, A1 `43fbf957342bfb6ca7cf8d155680ecec79e22917`. Original historical CONTENT_READY snapshot `155f14cc191800d52fce98b0f7df6ab30bb0faf4` remains immutable via Git. 127/127 details opt-in, 114 unique canonical references, 9 selfcheck question-only, Math/PED author recheck affected 15 PASS, no independent full Topic reviewer claim. RELEASE not authorized; no merge/deploy.
+
+---
 <!-- TOP22_S1_G10_B13_B14_QUALITATIVE_AND_VARIANCE_NOTES_20261120 -->
 **20/11 G10 B13/B14 EXTRA S1 COVERAGE:** The learner now gives formal separate SGK NOTES explaining the mode for qualitative data and the \(n-1\) dispersion statistic, expressly distinguishing it from descriptive \(n\) variance. Delta C math checks 7/7; no modifications to 114 canonical items, assessments, Q16 or RD1. Current SHA chain is authoritative; old source/receipts are Git history only. Remains AUTHORING CONTENT_READY, NOT released.
 
@@ -22,9 +28,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md
-ACADEMIC_SOURCE_BLOB: 155f14cc191800d52fce98b0f7df6ab30bb0faf4
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC_STATISTICS_G10_G12_R09_AUTHOR_TECHNICAL_Q18_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: b4e842575c011a1efe24bb10ffa953bd19bbd652
+ACADEMIC_SOURCE_BLOB: e4546cb506a40f1345da74bb9b2be5f73088e78b
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC22_R09_15_CANONICAL_KEY_RESTORE_AUTHOR_Q18_20261121.md
+REVIEW_RECEIPT_BLOB: 8f52a4187854524556b8f889bc3b01455d02c2f5
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC_STATISTICS_G10_G12_CANONICAL_SOURCE_INDEX_R00_20261111.md
 PUBLIC_SOURCE_INDEX_BLOB: 51a6e99587187838aea61c5c72108adae7874d1d
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC_STATISTICS_G10_G12_PUBLIC_EXTENSION_07ITEM_R00_20261111.md
@@ -48,7 +54,7 @@ RELEASE_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
 CONTENT_REVISION: R09_FULL_S1_KNOWLEDGE_20261120
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_SOURCE_EQUIVALENCE_114_Q15_20261116.md
-AUTHOR_A1_A7_BLOB: cb31bf55717fd1574030c31e52f5349dc401a350
+AUTHOR_A1_A7_BLOB: 43fbf957342bfb6ca7cf8d155680ecec79e22917
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_SOURCE_EQUIVALENCE_114_Q15_20261116.md
 AUTHOR_METADATA_BLOB: cb31bf55717fd1574030c31e52f5349dc401a350
 ORIGINAL_R07_SOURCE_BLOB: e31771e0fb9347c8c242ec8ca9e8a91a1ab74ff6
