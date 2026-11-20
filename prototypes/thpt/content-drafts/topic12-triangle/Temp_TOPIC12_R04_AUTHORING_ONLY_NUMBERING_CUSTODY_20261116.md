@@ -1,12 +1,12 @@
 # AUTHORING-only metadata — CĐ12 R04
 
 CURRENT_R04_LEARNER_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_NUMBERING_CONSISTENT_20261116.md
-CURRENT_R04_LEARNER_SOURCE_BLOB: e2f0a84b2d99652c2f56c7323d3b370cad0bb4b3
+CURRENT_R04_LEARNER_SOURCE_BLOB: 56a2b7a0bab2d210beed28a0a4663c9aa6001b3e
 CURRENT_R04_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC12_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-CURRENT_R04_Q18_RECEIPT_BLOB: 5770d528643e26de2ba1bea6d90e33086cc59748
+CURRENT_R04_Q18_RECEIPT_BLOB: a692d47dd544604d404df0635986bee9c5251394
 CURRENT_R04_NEW16_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC12_TRIANGLE_NEW16_PUBLIC_CANONICAL_R03_20261116.md
 CURRENT_R04_NEW16_CANONICAL_BANK_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d
-AUTHORING_STATUS: R04_NUMBERING_DELTA_A_AUTHOR_SELF_VERIFIED
+AUTHORING_STATUS: CONTENT_READY_FULL_S1_KNOWLEDGE
 
 
 ## Phụ lục AUTHORING — dữ liệu điều phối không hiển thị cho học sinh
@@ -185,3 +185,8 @@ No duplicate item/answer/rubric introduced. W05 mathematical rubric now matches 
 - CURRENT_R04_LEARNER_SOURCE_BLOB: e2f0a84b2d99652c2f56c7323d3b370cad0bb4b3
 - CURRENT_R04_Q18_RECEIPT_BLOB: 5770d528643e26de2ba1bea6d90e33086cc59748
 - Pure ΔA 12 concise Vận dụng captions, original mathematical content unchanged.
+
+
+## 20/11 — complete B05/B06 learner Knowledge
+
+- Source 56a2b7a0bab2d210beed28a0a4663c9aa6001b3e, Q18 a692d47dd544604d404df0635986bee9c5251394. Twelve lessons: O02 special-angle table tan/cot/complements, O03 supplementary tangent/cotangent signs, O08 DEG arcsin and both SSA branches. Twelve lesson headings made concise (Delta A). All Practice/Selfcheck byte-identical, 34 canonical, 6 Written, 12 replay-only public, 2 source SVG unchanged. No new assessment/official readiness or release. Standard 3.2.0 applied to current scoped Q18.
