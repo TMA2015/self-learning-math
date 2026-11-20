@@ -79,6 +79,10 @@ Từ cách đếm, em có thể tự kiểm tra ngay những giới hạn mà m�
 Chẳng hạn, với sáu thẻ vật lí đồng khả năng, biến cố “rút ra một trong cả sáu thẻ” có xác suất \(6/6=1\), còn “rút thẻ số 7” khi chỉ có các số từ 1 đến 6 có xác suất \(0/6=0\). Một biến cố có xác suất \(1/6\) tuy hiếm nhưng vẫn có thể xảy ra; đừng đồng nhất xác suất nhỏ với xác suất bằng 0.
 
 
+**Vì sao phải đếm phiếu mà không đếm nhãn?** Với một hộp có 2 phiếu ghi A, 3 phiếu ghi B và 3 phiếu ghi C, nếu mỗi **phiếu** có khả năng được chọn như nhau thì không gian mẫu phù hợp gồm **8 phiếu vật lý phân biệt**, không phải 3 nhãn. Xác suất chọn nhãn A là \(2/8=1/4\), còn nhãn B hoặc C mỗi nhãn \(3/8\). Không thể áp dụng \(1/3\) bằng cách coi ba nhãn là ba kết quả sơ cấp đồng khả năng.
+
+**Ví dụ bổ sung.** Gieo hai xúc xắc sáu mặt cân đối **phân biệt**. Không gian mẫu đồng khả năng là 36 cặp có thứ tự \((i,j)\), \(i,j\in\{1,\dots,6\}\). Tổng bằng 7 có sáu cặp \((1,6),(2,5),(3,4),(4,3),(5,2),(6,1)\), nên \(P(\text{tổng }7)=6/36=1/6\). Nếu mô hình chỉ ghi các giá trị tổng \(2,3,\dots,12\) rồi lấy \(1/11\), mẫu vừa tạo **không đồng khả năng** (tổng 2 chỉ có một cặp, tổng 7 có sáu cặp). Quy tắc trước phép tính: **mô hình hóa đúng kết quả đồng khả năng** rồi mới đếm biến cố.
+
 **Ví dụ**
 
 **Đề bài:** Một hộp có tám phiếu khác nhau: hai phiếu ghi A, ba phiếu ghi B và ba phiếu ghi C. Rút ngẫu nhiên đều một phiếu. Tính xác suất rút được nhãn B. Có thể chia đều xác suất cho ba loại nhãn không?
@@ -192,6 +196,10 @@ Với bài toán **chọn đồng thời** một nhóm \(k\) vật từ \(n\) v�
 > **PHƯƠNG PHÁP — Đếm và đọc sơ đồ cây**
 >
 > Đếm chuỗi có thứ tự khác nhóm không thứ tự; dùng \(\binom nk\) khi chọn nhóm không phân vai. Không suy mọi lá của cây đồng khả năng nếu chưa kiểm.
+
+**Có hoàn lại hay không hoàn lại thay đổi cả xác suất ở bước sau.** Khi chọn **đồng thời** \(k\) vật phân biệt trong \(n\) vật và mọi nhóm kích thước \(k\) đồng khả năng, mẫu có \(\binom nk\) nhóm. Khi **rút liên tiếp có ghi thứ tự**, phải kể từng đường đi trong cây; nếu rút không hoàn lại thì sau mỗi lần số vật còn lại giảm. Đừng tự xem hai lượt là độc lập chỉ vì thao tác rút tương tự nhau.
+
+**Ví dụ bổ sung.** Hộp có 3 bi đỏ và 2 bi xanh, tất cả **5 viên bi vật lý phân biệt**, rút ngẫu nhiên **2 viên không hoàn lại**. Xác suất cả hai đỏ có thể tính theo các **cặp không thứ tự**: số cặp đỏ \(\binom32=3\), tổng \(\binom52=10\), nên \(P=3/10\). Cũng có thể đếm **hai lượt có thứ tự**: 3 cách chọn bi đỏ đầu, 2 cách chọn bi đỏ sau, tổng có \(5\cdot4=20\) cặp có thứ tự đồng khả năng; \(P=(3\cdot2)/(5\cdot4)=3/10\). Hai mẫu khác nhau nhưng kết quả bằng nhau vì dùng **cùng cách xét thứ tự** ở tử và mẫu. Không nhân \((3/5)\cdot(3/5)\), vì sau viên đỏ thứ nhất chỉ còn 2 viên đỏ trong 4 viên.
 
 **Ví dụ**
 
@@ -346,6 +354,10 @@ Bây giờ hãy so sánh với hai biến cố “lần tung đầu ra ngửa”
 >
 > \[P(A\cap B)=P(A)P(B).\] Đây là tiêu chuẩn độc lập; không suy từ việc hai biến cố không xung khắc.
 
+**Phản ví dụ giúp kiểm khái niệm.** Trên một xúc xắc sáu mặt cân đối, xét \(A=\{2,4,6\}\) là biến cố chẵn và \(B=\{1,2,3\}\) là biến cố không lớn hơn 3. Ta có \(P(A)=P(B)=1/2\), \(A\cap B=\{2\}\), \(P(A\cap B)=1/6\) khác \(P(A)P(B)=1/4\). Vậy hai biến cố **không độc lập**, dù vẫn có thể cùng xảy ra và do đó **không xung khắc**. Muốn quyết định độc lập, luôn xét **cùng một không gian mẫu** và so đúng \(P(A\cap B)\) với \(P(A)P(B)\).
+
+> **LƯU Ý — Xung khắc khác độc lập.** Với \(P(A)>0\) và \(P(B)>0\), nếu \(A\cap B=\varnothing\) thì \(P(A\cap B)=0\), không thể bằng tích \(P(A)P(B)>0\); hai biến cố xung khắc có xác suất dương không thể độc lập. Trong trường hợp có biến cố xác suất \(0\), cần dùng định nghĩa xác suất, không áp suy luận “đều dương” này.
+
 **Ví dụ**
 
 **Đề bài:** Tung hai đồng xu cân đối, độc lập; ghi kết quả theo thứ tự. (a) Xét \(A\): “xu đầu ngửa” và \(B\): “xu sau ngửa”. Kiểm tra xem \(A,B\) có độc lập không. (b) Xét \(C\): “cả hai xu ngửa” và \(D\): “xu đầu sấp”. Hai biến cố \(C,D\) có xung khắc và độc lập không?
@@ -398,6 +410,10 @@ Lập luận ấy cũng áp dụng cho xác suất: cộng xác suất của A v
 >
 > \[P(A\cup B)=P(A)+P(B)-P(A\cap B).\] Nếu giao rỗng thì bỏ số hạng giao.
 
+**Kiểm ràng buộc xác suất trước khi tính.** Vì \(A\cap B\subseteq A\) và \(A\cap B\subseteq B\), ta phải có \(0\le P(A\cap B)\le\min(P(A),P(B))\). Công thức cộng xác suất sau khi trừ phần giao còn phải nằm trong \([0,1]\). Nếu phép cộng dẫn đến kết quả lớn hơn \(1\), em chắc chắn đang **đếm trùng** hoặc dùng sai số liệu.
+
+**Ví dụ bổ sung.** Trên xúc xắc cân đối, \(A=\{2,4,6\}\) (chẵn), \(B=\{4,5,6\}\) (ít nhất 4). Từ mẫu sáu mặt: \(P(A)=3/6\), \(P(B)=3/6\), \(P(A\cap B)=2/6\). Vậy \(P(A\cup B)=3/6+3/6-2/6=4/6=2/3\), tương ứng đúng các mặt \(\{2,4,5,6\}\). Nếu cộng thành \(6/6\), hai mặt 4 và 6 đã bị tính **hai lần**. Không cần và cũng không có giả thiết hai biến cố độc lập.
+
 **Ví dụ**
 
 **Đề bài:** Trong một nhóm 50 người, có 30 người thích hoạt động A, 25 người thích hoạt động B và 10 người thích cả hai. Chọn ngẫu nhiên đều một người. Tính xác suất người đó thích **ít nhất một** trong hai hoạt động.
@@ -449,6 +465,10 @@ Cách suy nghĩ gọn hơn là xét tình huống ngược lại: “không có 
 > **CÔNG THỨC — Nhân độc lập và biến cố đối**
 >
 > Nếu A,B độc lập: \[P(A\cap B)=P(A)P(B),\quad P(A\cup B)=1-P(\bar A)P(\bar B).\] Không nhân xác suất biên cho biến cố phụ thuộc.
+
+**Trước khi nhân: kiểm tính độc lập.** Với hai biến cố bất kỳ, xác suất cùng xảy ra không thể được tự động thay bằng \(P(A)P(B)\). Nếu biết rõ các phép thử độc lập (chẳng hạn hai lượt tung đồng xu độc lập) thì được nhân. Nếu cùng một quá trình rút **không hoàn lại**, kết quả lần đầu thay đổi tỉ lệ còn lại nên phải tính theo nhánh có điều kiện, hoặc đếm trực tiếp các kết quả đồng khả năng như trong mục 1.4.
+
+**Ví dụ bổ sung.** Rút hai bi không hoàn lại từ hộp 3 đỏ, 2 xanh. Xác suất **ít nhất một viên xanh** là \(1-P(\text{cả hai đỏ})=1-3/10=7/10\). Không dùng \(1-(3/5)^2=16/25\) vì hai lần rút **không độc lập**. Nếu rút **có hoàn lại** và trộn đều trước lượt sau, hai lượt mới độc lập và \(P(\text{ít nhất một xanh})=1-(3/5)^2=16/25\). Hai kết quả khác nhau không có nghĩa công thức biến cố đối sai: sai ở việc **chọn mô hình phép thử**.
 
 **Ví dụ**
 
