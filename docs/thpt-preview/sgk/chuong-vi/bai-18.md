@@ -58,7 +58,7 @@
 
 
 
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY16" hidden></span>
+    <span id="help-g10-chvi-try16" data-thpt-help-id="HELP-G10-CHVI-TRY16" hidden></span>
 
     ??? tip "Kiểm lỗi"
 
@@ -95,7 +95,7 @@
 
 
 
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY17" hidden></span>
+    <span id="help-g10-chvi-try17" data-thpt-help-id="HELP-G10-CHVI-TRY17" hidden></span>
 
     ??? tip "Kiểm lỗi"
 
@@ -126,7 +126,7 @@
 
 
 
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY18" hidden></span>
+    <span id="help-g10-chvi-try18" data-thpt-help-id="HELP-G10-CHVI-TRY18" hidden></span>
 
     ??? tip "Kiểm lỗi"
 
@@ -155,7 +155,7 @@
         <div class="thpt-r4-first-try-answer"><p><strong>Đáp án:</strong> <span class="arithmatex">\(\sqrt{h^2+5^2}=13\Rightarrow h^2=169-25=144\)</span>. Vì h&gt;0 nên h=12 m; thử <span class="arithmatex">\(\sqrt{12^2+5^2}=13\)</span>.</p><p><strong>Vì sao:</strong> Nghiệm h=−12 bị loại do không biểu diễn độ dài. Tam giác 5–12–13 kiểm chính xác và đơn vị là mét.</p><p>Đây là câu tự luyện công khai, không chấm điểm thành thạo. Nếu chưa đúng, mở hướng dẫn tự sửa phía dưới.</p></div>
 
 
-    <span data-thpt-help-id="HELP-G10-CHVI-TRY19" hidden></span>
+    <span id="help-g10-chvi-try19" data-thpt-help-id="HELP-G10-CHVI-TRY19" hidden></span>
 
     ??? tip "Kiểm lỗi"
 
