@@ -530,13 +530,13 @@ Chẳng hạn, Mực nước giả định h(t)=3+1,2cos(πt/6) (m), 0≤t≤24 
 
 **Vận dụng**
 
-Trong mô hình đó, h(12) bằng bao nhiêu?
+Cho mô hình \(h(t)=2+0{,}5\cos(\pi t/4)\) (m), \(0\le t\le12\) giờ. Tính \(h(12)\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-4,2 m, vì cos2π=1.
+\(h(12)=2+0{,}5\cos(3\pi)=2-0{,}5=1{,}5\) m, vì \(\cos(3\pi)=-1\). Thời điểm \(t=12\) thuộc miền của mô hình và trùng thời điểm cực tiểu đã tìm trong Ví dụ.
 
-Nếu đếm chu kỳ sai, so pha ở t=0 và t=12; nếu viết t<0 ngoài phạm vi thì đọc miền. Hãy làm lại Bài 43, Bài 56 và Bài 64 trong phần Luyện tập.
+Nếu ra \(4{,}2\) m, em đã lẫn mô hình ở đoạn Khám phá (hệ số \(3\) và \(1{,}2\)) với mô hình của câu hỏi. Thay đúng \(t=12\): góc \(3\pi\), không phải \(2\pi\). Sau đó so pha ở t=0 và t=12; nếu viết t<0 ngoài phạm vi thì đọc miền. Hãy làm lại Bài 43, Bài 56 và Bài 64 trong phần Luyện tập.
 
 </details>
 
