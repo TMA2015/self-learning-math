@@ -88,6 +88,21 @@ function classify(paths,{manual=false}={}){
    reason:"OWNER_B16_EXACT_FILES_AND_BYTE_VERIFIED_RUNTIME"};
  const lessons=files.filter(x=>CANONICAL_PAGE(x));
  const safeCompanions=x=>RECEIPT.test(x)||SOURCE_TEST.test(x);
+ // Owner-directed G10 B07–B14 migration: four existing manuscript files are
+ // exactly paired with the eight canonical published lesson Markdown files.
+ const manuscripts=[
+  "prototypes/thpt/content-drafts/THPT_G10_CHIV_B09_CANONICAL.md",
+  "prototypes/thpt/content-drafts/THPT_G10_CHIV_B10_CANONICAL.md",
+  "prototypes/thpt/content-drafts/THPT_G10_CHIV_B11_CANONICAL.md",
+  "prototypes/thpt/content-drafts/THPT_G10_CHV_B12_CANONICAL.md"];
+ const rel=[7,8,9,10,11,12,13,14].map(n=>
+  "docs/thpt-preview/sgk/chuong-"+(n<=11?"iv":"v")+"/bai-"+n+".md");
+ const signedReceipt="prototypes/thpt/ux795/G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md";
+ if(rel.every(x=>lessons.includes(x))&&lessons.length===rel.length&&
+    manuscripts.every(x=>files.includes(x))&&files.includes(signedReceipt)&&
+    files.every(x=>rel.includes(x)||manuscripts.includes(x)||x===signedReceipt||SOURCE_TEST.test(x)))
+  return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:rel.join(","),
+   reason:"EXACT_G10_B07_B14_SOURCE_LOCKED_HELP_PLACEMENT_BATCH"};
  if(lessons.length&&files.every(x=>CANONICAL_PAGE(x)||safeCompanions(x)||FIGURE.test(x))){
   // Figures must actually be referenced from a changed lesson. Do not widen
   // to common library SVGs, as a figure shared by other pages needs FULL.
@@ -115,6 +130,20 @@ function selfTest(){
  assert.equal(classify([fixture]).impact,"SCOPED_LESSON");
  assert.equal(classify(authoring).full_suite,"false");
  assert.equal(classify([fixture,another]).changed_lessons,fixture+","+another);
+ const bBatch=[7,8,9,10,11,12,13,14].map(n=>
+  "docs/thpt-preview/sgk/chuong-"+(n<=11?"iv":"v")+"/bai-"+n+".md");
+ const mBatch=[
+  "prototypes/thpt/content-drafts/THPT_G10_CHIV_B09_CANONICAL.md",
+  "prototypes/thpt/content-drafts/THPT_G10_CHIV_B10_CANONICAL.md",
+  "prototypes/thpt/content-drafts/THPT_G10_CHIV_B11_CANONICAL.md",
+  "prototypes/thpt/content-drafts/THPT_G10_CHV_B12_CANONICAL.md"];
+ const bReceipt="prototypes/thpt/ux795/G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md";
+ assert.equal(classify([...bBatch,...mBatch,bReceipt,"scripts/thpt-q18-g10-source-receipt.cjs"]).impact,
+  "SCOPED_LESSON","Exact 8 lesson and 4 canonical manuscript relocation uses targeted browser");
+ assert.equal(classify([...bBatch,...mBatch,bReceipt,"mkdocs.yml"]).impact,
+  "FULL","Mixed shared config cannot disguise global QA risk");
+ assert.equal(classify([...bBatch,...mBatch.slice(1),bReceipt]).impact,
+  "FULL","Missing one manuscript must fail closed");
  assert.equal(classify([fixture,
   "docs/thpt-preview/sgk/chuong-v/luyen-tap.md",
   "docs/thpt-preview/sgk/chuong-v/tu-kiem-tra-chuong.md"]).impact,"SCOPED_LESSON");

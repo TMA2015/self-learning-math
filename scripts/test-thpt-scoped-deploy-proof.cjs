@@ -15,7 +15,7 @@ const tokenSet=(s,k)=>[...s.matchAll(new RegExp(k+'="([^"]+)"',"g"))].map(x=>x[1
 function markdownAnswers(s){
  const lines=s.split("\n"),out=[];let block=null;
  for(const line of lines){
-  if(/^    \?\?\? question "Đối chiếu"$/.test(line)){
+  if(/^    \?\?\? question "(?:Đối chiếu(?: sau khi đã tự thao tác)?|(?:Em )?[Tt]ự mở đối chiếu sau khi đã (?:thử )?làm)"$/i.test(line)){
    if(block)out.push(block.join("\n").trimEnd());
    block=[line];continue;
   }
@@ -45,10 +45,19 @@ function b23CanonicalAnswers(s) {
    '        [B23_D6_NAVIGATION]');
  return firstAnswers(normalized);
 }
-const firstAnswers=s=>[
- ...[...s.matchAll(/<div class="thpt-r4-first-try-answer">[\s\S]*?<\/div>/g)].map(x=>x[0]),
- ...markdownAnswers(s)
-].sort();
+function firstAnswers(s){
+ const html=[...s.matchAll(/<div class="thpt-r4-first-try-answer">[\s\S]*?<\/div>/g)].map(x=>x[0]);
+ const md=markdownAnswers(s),count=tokenSet(s,"data-thpt-first-try-id").length;
+ // Preserve standalone mutation fixtures that intentionally have no marker.
+ if(!count)return [...html,...md].sort();
+ const needed=count-html.length;
+ assert(needed>=0,"More answer HTML than canonical First Try IDs");
+ const specialized=md.filter(x=>!x.startsWith('    ??? question "Đối chiếu"\n'));
+ const standard=md.filter(x=>x.startsWith('    ??? question "Đối chiếu"\n'));
+ const chosen=[...specialized,...standard].slice(0,needed);
+ assert.equal(chosen.length,needed,"Missing original First Try answer disclosures");
+ return [...html,...chosen].sort();
+}
 const latex=s=>[...s.matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]/g)].map(m=>(m[1]||m[2]).trim().replace(/\s+/g," "));
 const blob=b=>{const bytes=Buffer.isBuffer(b)?b:Buffer.from(b);return crypto.createHash("sha1").update("blob "+bytes.length+"\0").update(bytes).digest("hex")};
 const sha=s=>/^[a-f0-9]{40}$/.test(s||"")&&s!=="0".repeat(40);
@@ -57,14 +66,60 @@ function originalMathPreserved(old,now){
  for(const x of latex(old)){const n=counts.get(x)||0;if(!n)return false;counts.set(x,n-1)}
  return true;
 }
-function verifySource(before,now,receipt,beforeBlob,currentBlob){
+// Owner-authorized, exact-scope source-locked G10 HELP placement migrations only.
+// All unrelated multi-lesson production changes remain fail CLOSED.
+const PLACEMENT_BATCHES=[
+ {id:"G10-CHVI-B15-B18-KIEM-LOI-PLACEMENT-Q18-R01-20261120",
+  receipt:"prototypes/thpt/ux795/G10_CHVI_B15_B18_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md",
+  lessons:[15,16,17,18].map(n=>"docs/thpt-preview/sgk/chuong-vi/bai-"+n+".md")},
+ {id:"G10-B07-B14-KIEM-LOI-PLACEMENT-Q18-R01-20261120",
+  receipt:"prototypes/thpt/ux795/G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md",
+  lessons:[7,8,9,10,11,12,13,14].map(n=>
+   "docs/thpt-preview/sgk/chuong-"+(n<=11?"iv":"v")+"/bai-"+n+".md")}
+];
+function scopedBatchRow(receipt,lesson){
+ if(!lesson)return null;
+ const batch=PLACEMENT_BATCHES.find(b=>b.lessons.includes(lesson)&&
+  receipt.includes("**RECEIPT_ID:** "+b.id)&&receipt.includes("Q18_OWNER_SELF_VERIFIED_ENRICHMENT"));
+ if(!batch)return null;
+ const n=Number(lesson.match(/bai-(\d+)\.md$/)?.[1]);
+ const rows=receipt.split("\n").filter(x=>x.startsWith("| B"+n+" | "));
+ assert.equal(rows.length,1,"One signed candidate row for B"+n+" required");
+ const tick=String.fromCharCode(96), re=new RegExp(tick+"([a-f0-9]{40})"+tick,"g");
+ const hashes=[...rows[0].matchAll(re)].map(m=>m[1]);
+ assert.equal(hashes.length,2,"Q18 batch row must carry old and new SHA");
+ return {batch,n,old:hashes[0],now:hashes[1]};
+}
+function normalizePlacementAnswerBlocks(blocks,row){
+ if(!row||row.batch.id!=="G10-B07-B14-KIEM-LOI-PLACEMENT-Q18-R01-20261120")return blocks;
+ return blocks.map(x=>{
+  if(row.n===11)x=x.replace(/Nếu nhầm, (?:xem cách sửa ở mục 4\.3|tự mở khung Kiểm lỗi ngay dưới câu Vận dụng này)\./g,
+   "Nếu nhầm, [KIEM_LOI_NAV_B11].");
+  if(row.n===12)x=x.replace(/(?:Mở mục lỗi 4\.3|Tự mở khung Kiểm lỗi ngay bên dưới), rồi chọn bộ số mới/g,
+   "[KIEM_LOI_NAV_B12], rồi chọn bộ số mới");
+  return x;
+ });
+}
+function removedMathCount(before,now){
+ const counts=new Map();for(const x of latex(now))counts.set(x,(counts.get(x)||0)+1);
+ let missing=0;
+ for(const x of latex(before)){const n=counts.get(x)||0;if(n)counts.set(x,n-1);else missing++}
+ return missing;
+}
+function verifySource(before,now,receipt,beforeBlob,currentBlob,lesson=""){
  assert.equal(blob(before),beforeBlob,"Before SHA does not match exact Git history");
  assert.equal(blob(now),currentBlob,"Current SHA does not match actual canonical file");
  assert.notEqual(beforeBlob,currentBlob,"No real changed canonical source");
  assert(receipt.includes(beforeBlob),"Q18 receipt must declare immutable previous lesson blob");
  // Require the exact new blob in a candidate SOURCE field, not a stray prose hash.
  const fields=[...receipt.matchAll(/^\*\*(?:CANDIDATE_[A-Z0-9_]*(?:SOURCE|LESSON)[A-Z0-9_]*|R\d\d_(?:CORRECTED_)?SOURCE_BLOB):\*\* `([a-f0-9]{40})`/gm)].map(m=>m[1]);
- assert(fields.includes(currentBlob),"Q18 receipt missing exact current SOURCE candidate field");
+ const row=scopedBatchRow(receipt,lesson);
+ if(row){
+  assert.equal(row.old,beforeBlob,"Signed batch previous source blob mismatch");
+  assert.equal(row.now,currentBlob,"Signed batch current source blob mismatch");
+ }
+ assert(fields.includes(currentBlob)||Boolean(row),
+  "Q18 receipt missing exact current SOURCE candidate SHA");
  for(const id of ["data-thpt-first-try-id","data-thpt-help-id","data-thpt-fig-id"]){
   assert.deepEqual(tokenSet(now,id),tokenSet(before,id),"Q15/source identity changed: "+id);
  }
@@ -74,7 +129,8 @@ function verifySource(before,now,receipt,beforeBlob,currentBlob){
   assert.equal(original.length,4,"B23 historical four answer disclosures must be preserved");
   assert.deepEqual(candidate,original,"B23 approved disclosure label and D6 navigation may move, but all four original answer/rationale/remediation texts must match exactly");
  } else {
-  assert.deepEqual(firstAnswers(now),firstAnswers(before),
+  assert.deepEqual(normalizePlacementAnswerBlocks(firstAnswers(now),row),
+   normalizePlacementAnswerBlocks(firstAnswers(before),row),
    "Original canonical First Try answer (HTML or Markdown) changed");
  }
  assert.deepEqual([...now.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]),
@@ -82,7 +138,16 @@ function verifySource(before,now,receipt,beforeBlob,currentBlob){
   "Golden four tabs changed");
  assert.equal(tokenSet(now,"data-thpt-first-try-id").length,firstAnswers(now).length,
   "First Try question/closed answer cardinality mismatch");
- assert(originalMathPreserved(before,now),"Original math expression removed without separate academic review");
+ if(!originalMathPreserved(before,now)){
+  // Only the three exact owner-self-verified HELP context repairs are allowed:
+  // B10 mismatched coordinates, B11 stale resultant-force data, B12 cube-root 7.
+  const expected={10:13,11:6,12:7};
+  assert(row&&row.batch.id==="G10-B07-B14-KIEM-LOI-PLACEMENT-Q18-R01-20261120"&&
+   Object.hasOwn(expected,row.n)&&receipt.includes("Ba chỗ sửa ngữ cảnh"),
+   "Removed source math without signed affected-scope self-verification");
+  assert.equal(removedMathCount(before,now),expected[row.n],
+   "Exact contextual correction removed unexpected mathematical expressions");
+ }
  assert(!/data-(?:thpt-readiness|mastery-credit|mastery-write|thpt-final)/i.test(now),
   "Q16: private Readiness/Final Submit/Mastery leaked into public Knowledge");
  assert(receipt.includes("Q18")&&receipt.includes("DELTA_"),"Q18 receipt lacks scope/delta evidence");
@@ -147,26 +212,38 @@ function main(){
  const changed=cp.execFileSync("git",["diff","--no-renames","--name-only",previous,current],
   {cwd:root,encoding:"utf8"}).trim().split("\n").filter(Boolean);
  const lessonPaths=changed.filter(x=>LESSON.test(x)),receipts=changed.filter(x=>RECEIPT.test(x));
- assert.equal(lessonPaths.length,1,"Scoped production lane authorizes exactly ONE canonical lesson per push");
- assert(receipts.length>=1,"Scoped production requires a changed Q18 receipt for that lesson");
- assert.equal(process.env.SCOPED_LESSONS,lessonPaths[0],"Changed lesson must equal CI classifier output");
- const lesson=lessonPaths[0],now=fs.readFileSync(path.join(root,lesson));
- const previousContent=cp.execFileSync("git",["show",previous+":"+lesson],{cwd:root});
- const prev=blob(previousContent),currentBlob=blob(now);
- const candidate=receipts.filter(p=>{
-  const r=fs.readFileSync(path.join(root,p),"utf8");
-  return r.includes(lesson)||r.includes("B"+String(lesson.match(/bai-(\d+)\.md$/)[1]).padStart(2,"0"));
- });
- assert(candidate.length>=1,"No lesson-bound changed Q18 receipt");
- let matched=false,errors=[];
- for(const p of candidate){try{
-  verifySource(previousContent.toString("utf8"),now.toString("utf8"),
-   fs.readFileSync(path.join(root,p),"utf8"),prev,currentBlob);
-  matched=true;break;
- }catch(e){errors.push(p+": "+e.message)}}
- assert(matched,"No exact candidate Q18 receipt validates changed lesson: "+errors.join("; "));
- console.log("SCOPED_DEPLOY_SOURCE_PASS "+JSON.stringify({
-  lesson,previous_sha:prev,candidate_sha:currentBlob,first_tries:tokenSet(now.toString("utf8"),"data-thpt-first-try-id").length,
-  q16:"NO_ASSESSMENT_EXPOSURE",status:"TECHNICAL_SOURCE_ONLY_NOT_ACADEMIC_PASS"}));
+ const batch=PLACEMENT_BATCHES.find(b=>
+  b.lessons.length===lessonPaths.length&&b.lessons.every(x=>lessonPaths.includes(x))&&
+  receipts.includes(b.receipt));
+ assert(lessonPaths.length===1||Boolean(batch),
+  "Only one lesson or exact B07–B14/B15–B18 owner placement batch");
+ assert(receipts.length>=1,"Scoped production requires changed signed Q18 receipt");
+ if(batch)assert.equal(receipts.length,1,"Placement batch must have one exact Q18 receipt");
+ const expected=(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean).sort();
+ assert.deepEqual(expected,lessonPaths.slice().sort(),
+  "Scoped classifier must identify every changed canonical lesson");
+ for(const lesson of lessonPaths){
+  const now=fs.readFileSync(path.join(root,lesson));
+  const previousContent=cp.execFileSync("git",["show",previous+":"+lesson],{cwd:root});
+  const prev=blob(previousContent),currentBlob=blob(now);
+  const candidate=receipts.filter(p=>{
+   const receipt=fs.readFileSync(path.join(root,p),"utf8");
+   return receipt.includes(lesson)||
+    receipt.includes("B"+String(lesson.match(/bai-(\d+)\.md$/)[1]).padStart(2,"0"))||
+    Boolean(scopedBatchRow(receipt,lesson));
+  });
+  assert(candidate.length>=1,"No lesson-bound Q18 receipt for "+lesson);
+  let matched=false,errors=[];
+  for(const p of candidate){try{
+   verifySource(previousContent.toString("utf8"),now.toString("utf8"),
+    fs.readFileSync(path.join(root,p),"utf8"),prev,currentBlob,lesson);
+   matched=true;break;
+  }catch(e){errors.push(p+": "+e.message)}}
+  assert(matched,"No exact candidate receipt validates "+lesson+": "+errors.join("; "));
+  console.log("SCOPED_DEPLOY_SOURCE_PASS "+JSON.stringify({
+   lesson,previous_sha:prev,candidate_sha:currentBlob,
+   first_tries:tokenSet(now.toString("utf8"),"data-thpt-first-try-id").length,
+   q16:"NO_ASSESSMENT_EXPOSURE",status:"TECHNICAL_SOURCE_ONLY_NOT_ACADEMIC_PASS"}));
+ }
 }
 if(process.argv.includes("--self-test"))selfTest();else main();
