@@ -9,14 +9,14 @@
 
 | LESSON | PREVIOUS_SOURCE_BLOB (Git) | CORRECTED_SOURCE_BLOB (Git) | canonical HELP moved | links to shared HELP |
 |---|---|---|---:|---:|
-| B7 | `e1487ce01e81738228ae69d4d87cbdc56b5e0c69` | `3da2505bb7eb490665eaabeb91d2cba92db7ee51` | 2 | 3 |
-| B8 | `22e53396caf7753e813c492615a491e1f24cc9fd` | `e72d07ecd8e4f128ebecaff82daf732a1eaa08d3` | 2 | 3 |
-| B9 | `3d79a17e9ba39cd0f46077823800f5f38c73e313` | `e799a1ebf12c4342849fe0e692bcb49c2d4b9084` | 2 | 3 |
-| B10 | `b5f72c28668f9cad548bb6ec000dc435d9557652` | `0fc27341a3194f69c8d2798f109e3628c1c38cce` | 3 | 3 |
-| B11 | `bae18dce68974edc15f940bf7fb2cca09d99ddf8` | `761016187c103345b03267ad1b8072072d1bf908` | 3 | 2 |
-| B12 | `a2ea6c909cdd2317188b13c2bde22e7923dba3de` | `541bb9da465a51a6da912a5721bb1c55ccdcac42` | 3 | 0 |
-| B13 | `cb5adaa7804902fece7dd4ec30575733efd4c9c1` | `28e9bb1f4118972ddbf30baee0b584e0ba343ceb` | 2 | 0 |
-| B14 | `a23afab8015c83813f0c8cbe918efa93e58aa623` | `13f658c80292a7fc358fb2ec83c237be4fcc313e` | 2 | 0 |
+| B7 | `e1487ce01e81738228ae69d4d87cbdc56b5e0c69` | `f4e9b8c8e04f8a9ba6ffe75dfd0938df95f18a0c` | 2 | 3 |
+| B8 | `22e53396caf7753e813c492615a491e1f24cc9fd` | `7b86586b455f3967fae1cf004d7c55932bf00e19` | 2 | 3 |
+| B9 | `3d79a17e9ba39cd0f46077823800f5f38c73e313` | `da7e7ad8616690452006c89c6f54b28ad5c5feaa` | 2 | 3 |
+| B10 | `b5f72c28668f9cad548bb6ec000dc435d9557652` | `f7edd52efd6169cbfcd8d564c20c129424e5b920` | 3 | 3 |
+| B11 | `bae18dce68974edc15f940bf7fb2cca09d99ddf8` | `4b68c2b77085837954cee877a92318dca11337a2` | 3 | 2 |
+| B12 | `a2ea6c909cdd2317188b13c2bde22e7923dba3de` | `84375497f85199164d46768bbaa738aa8b3dc6da` | 3 | 0 |
+| B13 | `cb5adaa7804902fece7dd4ec30575733efd4c9c1` | `295176674431634658647afcf13b7086f3dd7e8e` | 2 | 0 |
+| B14 | `a23afab8015c83813f0c8cbe918efa93e58aa623` | `9baef6be48aada89683b5e12cda85e25fe8f39a1` | 2 | 0 |
 
 ## G0–G2: đọc và phân loại nội dung, không sao chép HELP
 
@@ -39,10 +39,10 @@ B09/B10/B11/B12 mỗi bài có **một manuscript nguyên bài** trong `prototyp
 
 | Canonical lesson | PREVIOUS_CANONICAL_GIT_BLOB | CURRENT_CANONICAL_GIT_BLOB |
 |---|---|---|
-| CANONICAL_B09 | `7f3139b851f6a1161de0b813eac2fa7909aae9ed` | `111a8601f21b5b7db488c99584b9f35f170adb9b` |
-| CANONICAL_B10 | `22ebe6b2e11f2a2c47752862a873c8c98fd6d7ec` | `56c980849b6eac27f96fdd3798bd2a350b90a1f3` |
-| CANONICAL_B11 | `3d59f161977d4222a2399f0b0d3db3ab9eba1e5f` | `9bfe4f53c3fa398d09b6facec2a22c6a296cbd0a` |
-| CANONICAL_B12 | `510072650ec215bb0501c14045d603acad4c56cd` | `195544d6226dc1ac61c9c4ae34bc08b59cd39ca3` |
+| CANONICAL_B09 | `7f3139b851f6a1161de0b813eac2fa7909aae9ed` | `3a4e3f3d12e953e87be119d40c25a8de7e333642` |
+| CANONICAL_B10 | `22ebe6b2e11f2a2c47752862a873c8c98fd6d7ec` | `7fb0e17858a533eb303c13fa306887056b651076` |
+| CANONICAL_B11 | `3d59f161977d4222a2399f0b0d3db3ab9eba1e5f` | `08c13469eb283714fdb7c0a37cd1f58f8cff829e` |
+| CANONICAL_B12 | `510072650ec215bb0501c14045d603acad4c56cd` | `42b16b85050d95271bc1463720f10a9b4979c73a` |
 
 **CANONICAL_PARITY_CONTRACT:** Section A Knowledge must match the public Markdown exactly after removing *only* file-end newline characters. Preserve the original B09 P07, B10/B11 Core/Practice/Written and B12 formative JS/Written sections without semantic modifications. The old/new public learner Markdown Git blobs are separately source-locked in the eight-lesson matrix above. These old SHA values remain historical baselines; the new SHA fields describe the one current authoring manuscript.
 
