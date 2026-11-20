@@ -8,7 +8,7 @@
 **HISTORICAL_CHAIN:** R01 `8e94c245250b77b6f7670345f9edcb7b85e958ac` → R02 `ed7a35d6650ecbe59f01e824295174541c4e3b49` → R03 `e0c20af522b61cb69b33ad5f7d4d6bde8c011f47`. Tất cả receipt cũ bất biến.  
 **OWNER_DIRECTIVE:** Rà B23 ngược B01; HELP bám theo Vận dụng phải nằm ngay dưới Vận dụng trong tab Khám phá, khung đóng tự mở tên Kiểm lỗi; chỉ giữ lỗi tổng quát thật ở tab Lỗi thường gặp.  
 **DELTA:** `DELTA_C_ACADEMIC_MATERIAL` phần hướng dẫn tự sửa của Vận dụng 1.2 (sửa lệch ngữ cảnh bánh–nhân thành đúng 4×3); `DELTA_A_UI` đối với di chuyển vị trí 4 HELP và đổi tên khung, `DELTA_B_SOURCE_EQUIVALENT` với dòng điều hướng Đối chiếu (không thay đáp án/lập luận).  
-**OWNER_P2:** chưa nghiệm thu thay đổi mới; KHÔNG tự cấp Academic/PED PASS; cần review độc lập phần chịu ảnh hưởng theo quy trình hiện hành.  
+**OWNER_P2:** PENDING cho snapshot R04; không tự suy P2 từ CI. **Q18_MODE:** `Q18_OWNER_SELF_VERIFIED_ENRICHMENT` (affected HELP02 only, theo chuẩn v3.2 và yêu cầu owner tiếp tục chuyển vị trí). **INDEPENDENT_REVIEWER_PASS:** NOT_CLAIMED.  
 **ISSUE:** #795 (B23-PED-D6-CONTEXT-01 và audit B01–B23).
 
 ## G0 – nguồn, tình trạng sai và cặp item–HELP
@@ -31,6 +31,10 @@ B23 R03 có bốn đề Vận dụng thực tại Khám phá mục 1.1–1.4 và
 
 **Q15/Q16 bất biến:** 4 item_id First Try, 4 HELP_ID, 2 D6_ID, 4 câu hỏi + đáp án + lập luận, ngân hàng luyện và tất cả đường liên kết, Final Submit/RD1/Mastery không đổi. Các dòng `Đường khắc phục` chỉ điều hướng vị trí mới, KHÔNG thay toán học hoặc đáp án. Hình SVG canonical trong hai tab vẫn cùng asset SHA lịch sử.
 
-**G2_STATUS:** AUTHOR_SELF_QA (content source check), **CHỜ independent Academic + PED review affected part**; không lấy CI xanh làm chứng cứ hoàn tất sư phạm.
+**G2_STATUS:** `Q18_OWNER_SELF_VERIFIED_ENRICHMENT` cho đúng delta HELPs B23, có chứng cứ bốn cặp Vận dụng/HELP và phép liệt kê 4×3=12 ở đây; không tuyên bố reviewer độc lập hoặc OWNER P2. Chỉ dùng CI để kiểm kỹ thuật.
 
-**G3–G5:** Duy nhất sau review phần DELTA_C và receipt SHA hợp lệ mới chạy QA đúng phạm vi và phát hành. Không tự sửa B22 owner-P2 snapshot trong PR này.
+**G3–G5:** Tiếp tục QA đúng phạm vi, Q15/Q16, MathJax, Golden, 390/820/1440, exact-final-HEAD trước merge và P1 sau deploy; OWNER P2 cần chủ dự án kiểm tra. Không tự sửa B22 owner-P2 snapshot trong PR này.
+
+## Q18 self-QA affected part · owner directive 20/11
+
+Nguồn bài Vận dụng 1.2 có **4 loại bánh B1–B4** và **3 loại nhân N1–N3**, mỗi loại bánh ghép được với mỗi nhân, nên các cặp khác nhau là `{B1N1,B1N2,B1N3,B2N1,B2N2,B2N3,B3N1,B3N2,B3N3,B4N1,B4N2,B4N3}` = **12**, không trùng/thiếu. Đây là kiểm chứng trực tiếp phép đếm của HELP02 mới; nội dung cũ «3 áo×2 quần=6» không thuộc câu Vận dụng nên phải loại bỏ khỏi hướng dẫn cho câu ấy. Không đổi quy tắc cộng/nhân, điều kiện, 4 đáp án hay sơ đồ; 4 HELP và 2 D6 tổng quát vẫn có một ID duy nhất, không chấm điểm/ghi Mastery. Kiểm theo Q03/Q08/Q11/Q14/Q15/Q16 trên affected content; Q18 signed delta SHA ở đầu file. **P0=0, P1=0 trên scope này; không nhận là PASS toàn bài mới hoặc independent review.**
