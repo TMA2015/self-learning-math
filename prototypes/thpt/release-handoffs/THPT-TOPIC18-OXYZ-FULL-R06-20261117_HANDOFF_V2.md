@@ -13,13 +13,13 @@ CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: d1a9fc26cb8061a4929da05aea8701ed6b3b2e82
+ACADEMIC_SOURCE_BLOB: 4a0342a04ca941af42dc965e8a4d1f5b507429cf
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_R06_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md
-REVIEW_RECEIPT_BLOB: 6057fbbce111c31517fc91941121b6bfaa99fffe
+REVIEW_RECEIPT_BLOB: 0488c078d53dd320fe85b69310f430e5f19ca106
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R06_247_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_A1_A7_BLOB: de99466e47f38c4c912718a7fee559f552fc5b5f
+AUTHOR_A1_A7_BLOB: e2ade0cbf51ea7e3b4affe999c8f3f98bc6d7812
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R06_247_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_METADATA_BLOB: de99466e47f38c4c912718a7fee559f552fc5b5f
+AUTHOR_METADATA_BLOB: e2ade0cbf51ea7e3b4affe999c8f3f98bc6d7812
 Q01_FAMILY_AUDIT_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R02_Q01_SGK_PROBLEM_FAMILY_SCOPE_AUDIT_20261114.md
 Q01_FAMILY_AUDIT_BLOB: 052b06ea90d6191f125aef72f42d74dd9a6d86c8
 Q18_OUTCOME_ITEM_PED_AUDIT_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R02_Q18_40_OUTCOME_MATH_PED_ITEM_AUDIT_20261114.md
@@ -741,13 +741,16 @@ The current original R05-named learner path above is the **one effective source*
 The canonical current Q18 AUTHOR_SELF_VERIFIED receipt is `0e3ed68872e0e05e5bd26e2a611de440a29e9faa`; same source A1–A7 metadata is `4e47c8415d7fb065cbcd4c75b6cb7985bb1d95ff`. TOP18-O03 vectors were already audited in the composite receipt with clear arrow algebra and a numerical counterexample differentiating vector addition from sum of lengths. Q16 private assessment remains offline; no official Mastery or live Final Submit. This is source-only AUTHORING; RELEASE integration/browser/owner authority remains ungranted. Historical references to R06 file path in earlier narrative are SUPERSEDED by current top metadata; no parallel learner Markdown is used.
 
 
-**Final exact merge-source identity (18/11/2026):** One real learner blob `d1a9fc26cb8061a4929da05aea8701ed6b3b2e82`, signed Q18 receipt `6057fbbce111c31517fc91941121b6bfaa99fffe`, A1–A7 `de99466e47f38c4c912718a7fee559f552fc5b5f`. Reconciled exactly one line of nonmathematical heading prose introduced by newer base; all 40 outcomes, item answer/rubric, SVG and client-only self-check remain unchanged. Earlier fda1 source references are historical only, NOT the current V2 SOURCE_BLOB.
+**Final exact merge-source identity (18/11/2026):** One real learner blob `4a0342a04ca941af42dc965e8a4d1f5b507429cf`, signed Q18 receipt `0488c078d53dd320fe85b69310f430e5f19ca106`, A1–A7 `e2ade0cbf51ea7e3b4affe999c8f3f98bc6d7812`. Reconciled exactly one line of nonmathematical heading prose introduced by newer base; all 40 outcomes, item answer/rubric, SVG and client-only self-check remain unchanged. Earlier fda1 source references are historical only, NOT the current V2 SOURCE_BLOB.
 
 
 **OWNER EDITORIAL DELTA_A 19/11/2026:** source-only 40 khối nhãn toán được phân loại tường minh, toán/ID/rubric/SVG bất biến; Q18 existing receipt source-lock đã cập nhật. `CONTENT_READY` giữ nguyên, không website release.
 
 
-**20/11 S1 G12 T1 B6 TOP18-O03 Delta C:** SGK p50 quy tắc hình hộp \(AB+AD+AA'=AC'\) as vector rule now explicit in learner `d1a9fc26cb8061a4929da05aea8701ed6b3b2e82`. Affected Q18 `6057fbbce111c31517fc91941121b6bfaa99fffe`, A1 `de99466e47f38c4c912718a7fee559f552fc5b5f`; 5/5 direct source checks PASS, old examples and 247 canonical unchanged. AUTHORING CONTENT_READY, RELEASE not authorized; no full 22-SGK PASS asserted.
+**20/11 S1 G12 T1 B6 TOP18-O03 Delta C:** SGK p50 quy tắc hình hộp \(AB+AD+AA'=AC'\) as vector rule now explicit in learner `4a0342a04ca941af42dc965e8a4d1f5b507429cf`. Affected Q18 `0488c078d53dd320fe85b69310f430e5f19ca106`, A1 `e2ade0cbf51ea7e3b4affe999c8f3f98bc6d7812`; 5/5 direct source checks PASS, old examples and 247 canonical unchanged. AUTHORING CONTENT_READY, RELEASE not authorized; no full 22-SGK PASS asserted.
 
 
-**20/11 S1 B6 TOP18-O05 final:** complete dot product \(u\cdot0=0\), \(u\cdot u=|u|^2\), commutative, scalar and distributive properties p56–57; one learner `d1a9fc26cb8061a4929da05aea8701ed6b3b2e82`, affected Q18 `6057fbbce111c31517fc91941121b6bfaa99fffe`, A1 `de99466e47f38c4c912718a7fee559f552fc5b5f`; 247 item/rubric untouched and CONTENT_READY remains, RELEASE separate.
+**20/11 S1 B6 TOP18-O05 final:** complete dot product \(u\cdot0=0\), \(u\cdot u=|u|^2\), commutative, scalar and distributive properties p56–57; one learner `4a0342a04ca941af42dc965e8a4d1f5b507429cf`, affected Q18 `0488c078d53dd320fe85b69310f430e5f19ca106`, A1 `e2ade0cbf51ea7e3b4affe999c8f3f98bc6d7812`; 247 item/rubric untouched and CONTENT_READY remains, RELEASE separate.
+
+
+**20/11 G12 B15 mandatory condition Delta C:** corrected canon line definition and one T26 stem/solution on source `4a0342a04ca941af42dc965e8a4d1f5b507429cf`, affected Q18 `0488c078d53dd320fe85b69310f430e5f19ca106`, A1 `e2ade0cbf51ea7e3b4affe999c8f3f98bc6d7812`, 9/9 targeted QA; CONTENT_READY retained, no RELEASE.
