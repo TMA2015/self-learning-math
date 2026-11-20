@@ -61,6 +61,7 @@ async function execute(){
 
       // TEMPORARY G2 visual evidence only, NOT part of the final released test suite.
       if(rel.endsWith("/chuong-viii/bai-23.md")&&width===820&&(i===2||i===3)){
+       await page.waitForTimeout(750); // allow native Material tab selection transition to settle
        const report=await page.evaluate(()=>{
         const article=document.querySelector(".md-content__inner");
         const tab=article?.querySelector(":scope > .tabbed-set");
