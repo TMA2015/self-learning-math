@@ -69,6 +69,10 @@ Nếu có \(m\) kiểu áo và với **mỗi kiểu áo** đều ghép được 
 >
 > Nếu một kết quả gồm **hai bước**, bước đầu có \(m\) cách và **mỗi cách ở bước đầu đều cho đúng \(n\) cách ở bước sau**, tổng số kết quả là \(m\cdot n\). Các lựa chọn cụ thể ở bước sau có thể khác nhau, nhưng số lượng phải luôn bằng \(n\). Nếu số lượng thay đổi, hãy đếm từng nhánh rồi cộng.
 
+**Vì sao không được máy móc nhân khi các nhánh có số cách khác nhau?** Quy tắc nhân \(m\cdot n\) chỉ đúng nếu **mỗi** kết quả của bước đầu đều có **chính xác \(n\)** cách hoàn thành bước sau. Khi số cách hoàn thành thay đổi theo bước đầu, cách đầy đủ là **đếm từng nhánh rồi cộng số lá**; viết \(n_1+n_2+\cdots+n_m\), không lấy một số \(n\) bất kỳ nhân \(m\). Đây là nối tiếp hợp lệ của quy tắc cộng và sơ đồ cây B23.
+
+**Ví dụ minh họa.** Có ba loại hộp A, B, C; loại A có hai nhãn phù hợp, B có ba nhãn, C chỉ có một nhãn. Một bộ quà gồm một hộp và một nhãn **phù hợp với loại hộp**. Sơ đồ cây có \(2+3+1=6\) lá, không phải \(3\cdot3=9\). Nếu giả sử mỗi hộp đều có 3 nhãn thì sẽ vô tình đếm những bộ không được phép. **Chọn phương pháp:** phải liệt kê số nhãn theo từng loại hộp trước khi viết phép tính.
+
 **Ví dụ**
 
 **Đề bài:** Có 3 kiểu áo và 2 loại huy hiệu. Một bộ quà gồm đúng một kiểu áo và một loại huy hiệu. Có bao nhiêu bộ quà khác nhau?
@@ -144,6 +148,10 @@ Chia theo chữ số hàng đơn vị thành các nhóm **rời nhau**. Trong t�
 > **PHƯƠNG PHÁP · Chia trường hợp**
 >
 > Chia thành các trường hợp **rời nhau**, đếm từng trường hợp theo điều kiện chữ số cuối/đầu rồi cộng. Không nhân một số cố định nếu số cách ở bước khác thay đổi.
+
+**Kiểm bằng hai cách đếm.** Với chữ số \(\{0,1,2,3,4\}\), đếm số tự nhiên **chẵn có ba chữ số khác nhau** theo chữ số tận cùng. Nếu chữ số cuối là 0 thì hàng trăm có 4 cách, hàng chục có 3 cách: \(4\cdot3=12\). Nếu chữ số cuối là 2 hoặc 4, có 2 cách chọn cuối, hàng trăm không được là 0 và không trùng chữ số cuối nên có 3 cách, hàng chục còn 3 cách: \(2\cdot3\cdot3=18\). Vậy tổng số chẵn là \(12+18=30\). Hai trường hợp rời nhau và phủ hết mọi chữ số chẵn tận cùng; đó là lý do **cộng** hai tích.
+
+**Thử phản biện:** Viết \(3\cdot4\cdot3=36\) vì chữ số cuối có ba lựa chọn chẵn là sai: sau khi chọn 0 ở cuối có 4 cách chọn chữ số đầu, còn sau khi chọn 2 hoặc 4 chỉ có 3. Bài này cũng giúp em kiểm khi nào phải chọn chữ số **cuối trước** thay vì điền lần lượt từ trái qua phải.
 
 **Ví dụ**
 
@@ -259,6 +267,14 @@ Mỗi nhóm k người có đúng k! cách hoán đổi thứ tự (k người p
 >
 > Tổ hợp chập k của n phần tử phân biệt là chọn k phần tử **không xét thứ tự, không lặp**. \[C_n^k=\binom nk=\frac{n!}{k!(n-k)!}.\]
 
+**Ba mối liên hệ giúp tự kiểm công thức**, không phải ba công thức rời rạc. Với tập gồm \(n\) phần tử phân biệt và \(0\le k\le n\):
+
+1. Chọn \(k\) người tham gia tương đương **chọn \(n-k\) người không tham gia**, nên \(\binom nk=\binom n{n-k}\).
+2. Cố định một người \(P\); mọi nhóm \(k\) người chia thành **hai trường hợp rời nhau**: nhóm có P — chọn thêm \(k-1\) trong \(n-1\) người; nhóm không có P — chọn \(k\) trong \(n-1\) người. Vì vậy \(\binom nk=\binom{n-1}{k-1}+\binom{n-1}{k}\) với \(1\le k\le n-1\).
+3. Nếu đã chọn \(k\) người rồi phân \(k\) vai khác nhau, mỗi nhóm có \(k!\) cách phân vai, nên \(A_n^k=k!\,C_n^k\). Không nhân thêm \(k!\) khi đề **chỉ hỏi chọn nhóm**.
+
+**Ví dụ minh họa.** Chọn 3 trong 5 học sinh: \(\binom53=10\). Chia theo việc bạn A có mặt: chọn thêm 2 từ 4 người \(\binom42=6\) nhóm; không có A: \(\binom43=4\) nhóm. Tổng \(6+4=10\). Cách kiểm đối xứng là \(\binom53=\binom52=10\); cả ba cách phải khớp nếu đã xác định đúng **đối tượng được đếm**.
+
 **Ví dụ**
 
 **Đề bài:** Từ 5 học sinh phân biệt, chọn một nhóm 2 người, **không phân vai**. Có bao nhiêu nhóm?
@@ -373,6 +389,10 @@ Khi khai triển \((a+b)^4\), ta nhân bốn thừa số \((a+b)\). Mỗi lần 
 >
 > \[(a+b)^n=\sum_{k=0}^{n}\binom nk a^{n-k}b^k,\qquad n\in\mathbb N.\] Hệ số \(\binom nk\) đếm số cách chọn \(k\) vị trí lấy \(b\) trong \(n\) thừa số. **Phạm vi học:** Trước tiên luyện trường hợp \(n=4\) và \(n=5\) ở Toán 10; ký hiệu tổng \(\sum\) cho số mũ tổng quát là **kiến thức mở rộng**, không coi là yêu cầu bắt buộc của bài Toán 10.
 
+**Vì sao hệ số giữa là \(6\) trong \((a+b)^4\)?** Bốn thừa số \((a+b)\) có bốn **vị trí phân biệt**. Để tạo \(a^2b^2\), em chọn hai vị trí lấy \(b\) trong bốn vị trí, tức chọn cặp vị trí \(\{1,2\},\{1,3\},\{1,4\},\{2,3\},\{2,4\},\{3,4\}\) — đúng \(C_4^2=6\) cách. Các tích thu được đều có cùng dạng \(a^2b^2\), nên chúng được cộng hệ số. Điều này **giải thích**, không chỉ ghi nhớ, dãy \(1,4,6,4,1\).
+
+**Ví dụ minh họa.** Trong \((2x+3)^4\), hệ số của \(x^2\) phải lấy đúng **hai** vị trí \(2x\) và hai vị trí \(3\): \(C_4^2(2^2)(3^2)=6\cdot4\cdot9=216\). Đừng lấy \(C_4^2\) một mình vì hệ số của từng hạng tử \(2x\) và \(3\) cũng đóng góp. Kiểm nhanh: mỗi tích tạo \(x^2\) có giá trị \(36x^2\), xuất hiện sáu lần.
+
 **Ví dụ**
 
 **Đề bài:** Xét khai triển \((a+b)^4\). (a) Tìm hệ số của \(a^2b^2\). (b) Viết khai triển đầy đủ.
@@ -407,6 +427,14 @@ Trong (u+v)^n, hạng tử chọn v đúng k lần có hệ số C(n,k)u^(n−k)
 > **TÍNH CHẤT · Dấu của hạng tử**
 >
 > \[(a-b)^n=\sum_{k=0}^{n}(-1)^k\binom nk a^{n-k}b^k.\] Dấu \((-1)^k\) đến từ chọn \(-b\) k lần, không tự gắn dấu theo vị trí nhìn vào biểu thức.
+
+**Cách tránh nhầm dấu và số mũ.** Khi tìm hệ số của \(x^m\) trong \((ax+b)^n\), với \(n\) nguyên không âm và \(a,b\) là số thực, hạng tử chọn \(b\) đúng \(k\) lần có dạng
+\[
+\binom nk (ax)^{n-k}b^k=\binom nk a^{n-k}b^k x^{n-k}.
+\]
+Vì vậy phải giải **\(n-k=m\)**, kiểm \(k\) là số nguyên từ \(0\) đến \(n\), rồi mới tính hệ số. Nếu \(b<0\), dấu đến từ \(b^k\); nếu \(a<0\), dấu còn phụ thuộc vào \(a^{n-k}\), nên không có quy tắc “dấu xen kẽ” áp dụng mù cho mọi nhị thức.
+
+**Ví dụ minh họa.** Tìm hệ số \(x^3\) trong \((2x-3)^5\): ta cần \(5-k=3\Rightarrow k=2\). Hệ số là \(\binom52 2^3(-3)^2=10\cdot8\cdot9=720\), dương vì lấy \(-3\) **hai lần**. Không nhầm với \(\binom53=10\) rồi bỏ qua lũy thừa \(2^3\).
 
 **Ví dụ**
 
