@@ -339,7 +339,7 @@
         <li><strong>Tự chẩn đoán:</strong> Nếu 0x+0y+1=0, có điểm nào thỏa? Nếu 0x+0y+0=0, bao nhiêu điểm thỏa?</li>
         <li><strong>Kiến thức gốc:</strong> Hai hệ số của pháp tuyến không thể đồng thời bằng 0; vectơ chỉ phương cũng phải khác 0.</li>
         <li><strong>Tự sửa:</strong> Tính a²+b²; chỉ viết phương trình tổng quát đường thẳng khi a²+b²>0.</li>
-        <li><strong>Luyện lại:</strong> <p><strong>Luyện lại bài đã có:</strong> <a data-thpt-formative-id="THPT-G10-B19-C01" href="../luyen-tap/?item=THPT-G10-B19-C01">Luyện lại câu 19-C01</a> · <a data-thpt-formative-id="THPT-G10-B19-P05" href="../luyen-tap/?item=THPT-G10-B19-P05">Luyện lại câu 19-P05</a></p></li>
+        <li><strong>Luyện lại:</strong> <a data-thpt-formative-id="THPT-G10-B19-C01" href="../luyen-tap/?item=THPT-G10-B19-C01">Luyện lại câu 19-C01</a> · <a data-thpt-formative-id="THPT-G10-B19-P05" href="../luyen-tap/?item=THPT-G10-B19-P05">Luyện lại câu 19-P05</a></li>
         </ol>
 
     <span data-thpt-help-id="D6-G10-B19-02" hidden></span>
@@ -351,7 +351,7 @@
         <li><strong>Tự chẩn đoán:</strong> Nếu A=B=(1;2), có bao nhiêu đường qua điểm đó? Hướng AB khi ấy đã xác định chưa?</li>
         <li><strong>Kiến thức gốc:</strong> Chỉ khi \(A\ne B\), \(\overrightarrow{AB}\) khác 0. Chọn \(\vec n=(a;b)\) vuông góc \(\overrightarrow{AB}\); khi ấy \(a(x-x_A)+b(y-y_A)=0\), tương đương \(\vec n\cdot\overrightarrow{AM}=0\).</li>
         <li><strong>Tự sửa:</strong> Kiểm A và B phân biệt, tính AB rồi thử lại cả hai điểm vào phương trình.</li>
-        <li><strong>Luyện lại:</strong> <p><strong>Luyện lại bài đã có:</strong> <a data-thpt-formative-id="THPT-G10-B19-P02" href="../luyen-tap/?item=THPT-G10-B19-P02">Luyện lại câu 19-P02</a> · <a data-thpt-formative-id="THPT-G10-B19-P06" href="../luyen-tap/?item=THPT-G10-B19-P06">Luyện lại câu 19-P06</a> · <a data-thpt-formative-id="THPT-G10-CHVII-W19-01" href="../../../thu-vien/tu-luan-chuong-vii/#thpt-g10-chvii-w19-01">Bài tự luận liên quan</a></p></li>
+        <li><strong>Luyện lại:</strong> <a data-thpt-formative-id="THPT-G10-B19-P02" href="../luyen-tap/?item=THPT-G10-B19-P02">Luyện lại câu 19-P02</a> · <a data-thpt-formative-id="THPT-G10-B19-P06" href="../luyen-tap/?item=THPT-G10-B19-P06">Luyện lại câu 19-P06</a> · <a data-thpt-formative-id="THPT-G10-CHVII-W19-01" href="../../../thu-vien/tu-luan-chuong-vii/#thpt-g10-chvii-w19-01">Bài tự luận liên quan</a></li>
         </ol>
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
