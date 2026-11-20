@@ -87,6 +87,7 @@ This file carries the **one current B09 source manuscript**: whole learner-facin
 
 
 
+    <a id="HELP-G10-B09-01" aria-hidden="true"></a>
     <span id="help-g10-b09-01" data-thpt-help-id="HELP-G10-B09-01" hidden></span>
 
     ??? tip "Kiểm lỗi"
@@ -164,6 +165,7 @@ This file carries the **one current B09 source manuscript**: whole learner-facin
         **Vì sao:** G nằm giữa A và M, AG:GM=2:1 nên AM gồm 3 phần, AG chiếm 2 phần. Hai vectơ A→G, A→M cùng hướng.
 
 
+    <a id="HELP-G10-B09-02" aria-hidden="true"></a>
     <span id="help-g10-b09-02" data-thpt-help-id="HELP-G10-B09-02" hidden></span>
 
     ??? tip "Kiểm lỗi"
