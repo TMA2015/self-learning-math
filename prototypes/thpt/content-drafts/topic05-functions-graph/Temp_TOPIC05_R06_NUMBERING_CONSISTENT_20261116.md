@@ -24,6 +24,8 @@ Hãy hình dung một bảng ghi nhiệt độ ở từng thời điểm. Để 
 
 
 
+**Các cách cho một hàm số.** Trong thực tế, quy luật ghép đầu vào với đầu ra có thể được trình bày bằng **bảng** (mỗi cột ghi một cặp giá trị), **biểu đồ** (đọc giá trị từ các cột hay điểm biểu diễn), **công thức** (ví dụ \(f(x)=2x+1\)) hoặc **mô tả bằng lời** (mỗi sản phẩm có giá 5 nghìn đồng thì số tiền mua \(x\) sản phẩm là \(5x\) nghìn đồng). Dù cho bằng cách nào, phải chỉ ra các đầu vào được phép và **mỗi đầu vào chỉ nhận một đầu ra**. Nếu bảng chỉ ghi vài thời điểm thì ta không được tự khẳng định công thức hay giá trị ở thời điểm chưa quan sát, trừ khi bài toán bổ sung quy luật hoặc giả thiết.
+
 Xét bảng các cặp \((0,2),(1,4),(1,4)\). Dù \(x=1\) được ghi hai lần, cả hai lần đều cho 4, nên bảng vẫn phù hợp với một hàm số. Nếu thay một cặp thành \((1,7)\) thì cùng đầu vào 1 sẽ có hai đầu ra khác nhau: bảng không còn định nghĩa một hàm. Trên đồ thị, ta có thể hình dung điều kiện ấy bằng việc mỗi đường thẳng đứng cắt đồ thị tại **không quá một điểm**.
 
 **Ví dụ**
@@ -47,6 +49,8 @@ Có. Ba đầu vào 1, 2, 3 khác nhau và mỗi đầu vào chỉ có một đ�
 ### 1.2. Tập xác định của biểu thức
 
 Tại sao căn bằng 0 được nhận, còn mẫu bằng 0 phải loại?
+
+Khi một hàm số \(y=f(x)\) được **cho bằng công thức mà không ghi tập xác định**, ta quy ước tập xác định là **tất cả số thực \(x\) làm cho biểu thức \(f(x)\) có nghĩa**. Ví dụ, \(f(x)=\sqrt{x-2}\) có miền \([2,+\infty)\), còn \(g(x)=1/(x-2)\) có miền \(\mathbb R\setminus\{2\}\). Nếu bài toán **đã chỉ định miền**, chẳng hạn \(x\) là số sản phẩm nguyên không âm từ \(0\) đến \(10\), phải dùng miền chỉ định ấy sau khi kiểm biểu thức có nghĩa, không tự nới thành cả \(\mathbb R\).
 
 Để có một hàm số, trước hết cần biết những đầu vào nào biểu thức cho phép. Căn số học và mẫu số tạo ra điểm bị loại; dấu ≥ của căn không được biến thành >. Ta đã biết căn √u đòi u≥0, mẫu v≠0. 
 
@@ -519,6 +523,10 @@ Nếu tính f(0)=2, bạn đã dùng nhầm nhánh x>0; làm lại Bài 32, Bài
 ### 4.3. Tối ưu trong miền khả thi
 
 Có thể chọn đỉnh tối ưu nếu lượng sản xuất bị giới hạn ở các số nguyên khác không?
+
+Trước khi tối ưu một hàm số, ta thường phải **tự lập hàm số từ tình huống**. Bắt đầu bằng lời: cần tìm đại lượng nào và nó phụ thuộc vào đại lượng nào? Tiếp đó chọn **biến cùng đơn vị, miền hợp lệ**, biểu diễn các đại lượng còn lại theo biến, lập công thức hàm số rồi dùng nó giải câu hỏi và **kiểm tính phù hợp của kết quả**. Bốn bước này giúp ta không nhảy ngay vào một công thức có thể sai mô hình.
+
+Chẳng hạn, dùng 24 m dây bao quanh một mảnh vườn **hình chữ nhật đủ bốn cạnh**. Gọi \(x\) (m) là chiều rộng; từ chu vi \(2(x+y)=24\), chiều dài là \(y=12-x\) (m). Vì cả hai cạnh dương, \(0<x<12\). Diện tích là \(S(x)=x(12-x)=36-(x-6)^2\) (m²). Đây là một **hàm số của chiều rộng** trên miền \((0,12)\); vì bình phương không âm, diện tích lớn nhất \(36\) m² đạt tại \(x=6\), tức hình vuông cạnh \(6\) m. Sau khi tính xong phải thử ngược chu vi \(4\cdot6=24\) m. Trường hợp chỉ rào ba cạnh dựa vào tường sẽ là **một mô hình khác**, nên không được sao chép công thức này.
 
 > **PHƯƠNG PHÁP — Tối ưu trong miền khả thi.** Mọi phép biến đổi phải quay về miền hợp lệ của mô hình. Một đỉnh đẹp trên toàn ℝ có thể không có ý nghĩa vì sản phẩm chỉ nhận giá trị nguyên và còn ràng buộc. Ta đã biết biến q nguyên, đơn vị, miền quyết định D. Đặt biến, **đơn vị và miền khả thi trước**; từ đó tính hàm và ứng viên, kiểm ứng viên trong D. Khi ràng buộc đổi, quyết định tối ưu có thể đổi dù công thức không đổi. Với bậc hai sơ cấp dùng hoàn phương; khảo sát cực trị bằng đạo hàm thuộc CĐ10.
 
