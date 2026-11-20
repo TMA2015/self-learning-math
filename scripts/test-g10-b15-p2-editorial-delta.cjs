@@ -57,10 +57,7 @@ assert(!/data-mastery-write|data-mastery-credit|data-thpt-readiness/.test(src),"
 const neighbors={
  "docs/thpt-preview/sgk/chuong-v/bai-12.md":"a2ea6c909cdd2317188b13c2bde22e7923dba3de",
  "docs/thpt-preview/sgk/chuong-v/bai-13.md":"cb5adaa7804902fece7dd4ec30575733efd4c9c1",
- "docs/thpt-preview/sgk/chuong-v/bai-14.md":"a23afab8015c83813f0c8cbe918efa93e58aa623",
-
-
- "docs/thpt-preview/sgk/chuong-vi/bai-18.md":"91d22f1af8814ed639ada3ee1c9dae2e9501c4c0"
+ "docs/thpt-preview/sgk/chuong-v/bai-14.md":"a23afab8015c83813f0c8cbe918efa93e58aa623"
 };
 for(const [p,sha]of Object.entries(neighbors))
  assert.equal(blob(fs.readFileSync(path.join(root,p))),sha,"Out-of-scope frozen source "+p);
@@ -77,6 +74,15 @@ assert.equal(field(b17r02,"PREVIOUS_B17_SOURCE_BLOB"),
 assert.equal(blob(read("docs/thpt-preview/sgk/chuong-vi/bai-17.md")),
  field(b17r02,"CANDIDATE_B17_SOURCE_BLOB"),
  "B17 source must match R02 while B15/12–14/18 remain frozen");
+// B18 is now independently enhanced, never a frozen neighbor of B15.
+// Compare its historical UX source to the separate immutable R01 owner receipt.
+const b18=read(ux+"G10_CHVI_B18_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261120.md");
+assert.equal(field(b18,"BASELINE_PUBLISHED_B18_SOURCE_BLOB"),
+ "91d22f1af8814ed639ada3ee1c9dae2e9501c4c0",
+ "B18 Q18 owner delta must preserve the previously published UX blob");
+assert.equal(blob(read("docs/thpt-preview/sgk/chuong-vi/bai-18.md")),
+ field(b18,"CANDIDATE_B18_SOURCE_BLOB"),
+ "B18 exact candidate must match owner-signed source; untouched ChV neighbors frozen");
 assert.equal(field(b16,"BASELINE_PUBLISHED_B16_SOURCE_BLOB"),
  "4ddf9c449f92a9f48bace5a3f9b84186bf33af20",
  "B16 baseline must match historical accepted source, not overwrite it");
