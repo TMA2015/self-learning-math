@@ -20,7 +20,7 @@ RELEASE_AUTHORIZATION: NO
 PRIVATE_RD1_COUNT: 17
 PRIVATE_RD1_SHA256: a3107e6434d2359f86752412a14fd45b7a1da1bef84d18e53b6da3532f2520b2
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_A1_A7_TECHNICAL_SOURCE_PARITY_20261116.md
-AUTHOR_A1_A7_BLOB: 4c6903512bbe4fdae515a5d33344dc3afebafe50
+AUTHOR_A1_A7_BLOB: 4b51e1d503bee212d10db2544d1206c87208760e
 
 CONTENT_REVISION: R12_FULL_S1_KNOWLEDGE_20261120
 DELTA_CLASS: DELTA_C_PED_TARGETED
@@ -238,3 +238,6 @@ AUTHOR_SIGNOFF: TOP20_R12_V2_ONLY_SIGNED_SOURCE_Q18_A1_Q15_20261118
 ## 20/11 S1 full Knowledge B26–B27 and G11 B28–B30
 
 Sole learner `a336816eb1935c739bd1f128bd81de7b510d0060`, signed Q18 `3e04e984cbe9e2f23b95c0f23a1f698489367ebe`, A1 `4c6903512bbe4fdae515a5d33344dc3afebafe50`. 17 outcomes/37 canonical public (17 Try+17 Practice+3 Written), 11 public question-only reuse, original 2 SVG; Practice/Selfcheck and rubrics unchanged. Formal hypothesis & counterexamples improved in five Knowledge sections. AUTHOR_SELF_VERIFIED only, no public RD1/release.
+
+
+20/11 updated exact 37/37 line map Q15 ba603da329ebf8a922db82783609902db1321dc6, A1 4b51e1d503bee212d10db2544d1206c87208760e.
