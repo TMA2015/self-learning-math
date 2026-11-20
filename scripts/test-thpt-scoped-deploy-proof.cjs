@@ -30,6 +30,19 @@ function markdownAnswers(s){
 // Historical ChVII canonical First Try answers use MkDocs question disclosures
 // rather than HTML answer divs. Validate exact original answer content in BOTH
 // representations, with no weakening of Q15 or willingness to display keys.
+// B23 owner-approved UX normalization: historical fold was "Tự mở đáp án
+// sau khi đã tự làm"; Golden requires "Đối chiếu". Normalize ONLY this label
+// and the exact D6 navigation wording moved to a visible tab. No answers,
+// rationales, conditions, or learning content may change.
+function b23CanonicalAnswers(s) {
+ const normalized=s
+  .replace(/^\s{4}\?\?\? question "Tự mở đáp án sau khi đã tự làm"$/gm,'    ??? question "Đối chiếu"')
+  .replace(/^\s{8}<a href="#help-g10-chviii-try0[1-4]">Đến hướng dẫn tự sửa<\/a>$/gm,
+   '        [B23_D6_NAVIGATION]')
+  .replace(/^\s{8}\*\*Đường khắc phục:\*\* Mở tab \*Lỗi thường gặp\*, mục 4\.[1-4] để xem hướng dẫn từng bước \(không cần rời bài học\)\.$/gm,
+   '        [B23_D6_NAVIGATION]');
+ return firstAnswers(normalized);
+}
 const firstAnswers=s=>[
  ...[...s.matchAll(/<div class="thpt-r4-first-try-answer">[\s\S]*?<\/div>/g)].map(x=>x[0]),
  ...markdownAnswers(s)
@@ -53,7 +66,14 @@ function verifySource(before,now,receipt,beforeBlob,currentBlob){
  for(const id of ["data-thpt-first-try-id","data-thpt-help-id","data-thpt-fig-id"]){
   assert.deepEqual(tokenSet(now,id),tokenSet(before,id),"Q15/source identity changed: "+id);
  }
- assert.deepEqual(firstAnswers(now),firstAnswers(before),"Original canonical First Try answer (HTML or Markdown) changed");
+ if(receipt.includes("G10-CHVIII-B23-G0G2-Q18")) {
+  const original=b23CanonicalAnswers(before),candidate=b23CanonicalAnswers(now);
+  assert.equal(original.length,4,"B23 historical four answer disclosures must be preserved");
+  assert.deepEqual(candidate,original,"B23 approved disclosure label and D6 navigation may move, but all four original answer/rationale/remediation texts must match exactly");
+ } else {
+  assert.deepEqual(firstAnswers(now),firstAnswers(before),
+   "Original canonical First Try answer (HTML or Markdown) changed");
+ }
  assert.deepEqual([...now.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]),
   ["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
   "Golden four tabs changed");
@@ -91,6 +111,20 @@ function selfTest(){
   "**PREVIOUS_B19_SOURCE_BLOB:** `"+blob(mdOld)+"`\nQ18 DELTA_C",
   blob(mdOld),blob(mdNew.replace("**Đáp án:** nghiệm đúng.","**Đáp án:** nghiệm sai."))),
   "Signed but changed historical answer must fail Q15");
+ // B23's approved disclosure UX change is not an answer edit.
+ const b23Old='    ??? question "Tự mở đáp án sau khi đã tự làm"\n\n'+
+  '        **Đáp án:** 8 lựa chọn.\n\n        **Lập luận:** 2+6=8.\n\n'+
+  '        **Nếu chưa đúng:** đọc lại.\n\n'+
+  '        <a href="#help-g10-chviii-try01">Đến hướng dẫn tự sửa</a>';
+ const b23New=b23Old.replace('Tự mở đáp án sau khi đã tự làm','Đối chiếu')
+  .replace('<a href="#help-g10-chviii-try01">Đến hướng dẫn tự sửa</a>',
+   '**Đường khắc phục:** Mở tab *Lỗi thường gặp*, mục 4.1 để xem hướng dẫn từng bước (không cần rời bài học).');
+ assert.deepEqual(b23CanonicalAnswers(b23New),b23CanonicalAnswers(b23Old),
+  "Only exact owner-approved B23 label/navigation edits are source-equivalent");
+ assert.notDeepEqual(b23CanonicalAnswers(b23New.replace('8 lựa chọn','9 lựa chọn')),
+  b23CanonicalAnswers(b23Old),"Changing the answer must still fail");
+ assert.notDeepEqual(b23CanonicalAnswers(b23New.replace('2+6=8','2+6=9')),
+  b23CanonicalAnswers(b23Old),"Changing the explanation must still fail");
  console.log("PASS scoped production proof fixtures: historical blob, new receipt, Q15/16, no old math loss; negatives fail closed");
 }
 function main(){
