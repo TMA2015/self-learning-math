@@ -10,32 +10,25 @@
 
     ### Cùng tìm hiểu
 
-    Hai đường thẳng trên bản đồ có thể **cắt nhau, song song hoặc trùng nhau**. Nếu ta chỉ nhìn hình vẽ phóng to hoặc thu nhỏ, rất dễ đoán nhầm. Phương pháp tọa độ cho phép đọc đúng quan hệ từ hệ số và các vectơ pháp tuyến.
+    Trong Bài 19, em đã dùng phương trình để xác định một đường thẳng. Nhưng trên bản đồ, chúng ta còn muốn biết **hai con đường có gặp nhau không**, chúng tạo với nhau một góc bao nhiêu và **từ một vị trí đến con đường gần nhất là bao xa**. Chỉ nhìn hình phác thảo sẽ khó có kết quả chính xác; tọa độ giúp trả lời cả ba câu hỏi.
 
-    Khi cần khoảng cách từ một điểm đến đường thẳng, đường nối bất kỳ không đủ: khoảng cách được đo theo **đoạn vuông góc ngắn nhất**. Công thức khoảng cách trông như một phân số có căn, nhưng thực ra nó đo độ lệch có dấu ở tử số, rồi chia cho độ dài pháp tuyến để đổi thành **độ dài thật**.
+    Ba ý tưởng sẽ đi cùng em trong bài này: **giao điểm** phải thuộc cả hai đường; **góc** phụ thuộc hướng của hai đường, không phụ thuộc chiều mũi tên; còn **khoảng cách** từ điểm đến đường là độ dài đoạn vuông góc, chứ không phải một đoạn nối tùy ý. Ta sẽ giải thích vì sao trước khi dùng công thức.
 
-    Góc giữa hai đường thẳng cũng có thể tính từ góc giữa các vectơ chỉ phương hoặc pháp tuyến, nhưng cần lấy **góc nhỏ giữa hai đường**, không bê nguyên góc tù giữa hai mũi tên.
+    Nếu quên kiến thức Bài 19, em chỉ cần nhắc lại cách tìm pháp tuyến từ phương trình tổng quát \(ax+by+c=0\), cách tính tích vô hướng và cách giải hệ hai phương trình bậc nhất. Với các công thức có căn, mẫu số là độ dài pháp tuyến nên không được bằng 0.
 
     ### Ví dụ trực quan
 
-    Hãy tự giải từng câu Tự thử trước khi mở Đối chiếu. Nếu vướng, hãy đọc phần tự khắc phục và tự làm lại một bài tương tự.
+    #### 1.2.1. Hai đường cùng hướng có thể trùng nhau hoặc cách nhau
 
+    Hai con đường chạy cùng hướng chưa chắc nằm đè lên nhau. Trong mặt phẳng tọa độ, mỗi đường được mô tả bằng một phương trình: để tìm điểm chung, ta phải tìm cặp tọa độ thỏa **đồng thời cả hai phương trình**.
+
+    Nếu hai pháp tuyến không cùng phương, hai đường có hướng khác nhau và cắt nhau tại đúng một điểm. Nếu các pháp tuyến cùng phương, hai đường không thể cắt nhau ở đúng một điểm: lúc đó còn phải hỏi **hai phương trình có thực sự cùng mô tả một tập hợp điểm không?** Để trả lời, so sánh cả hệ số tự do, không chỉ hai hệ số của \(x,y\).
+
+    Cách chắc chắn là xét hệ phương trình: hệ có một nghiệm thì hai đường cắt nhau; vô nghiệm thì song song phân biệt; vô số nghiệm thì trùng nhau. Không chia tỉ số hệ số khi có nguy cơ chia cho 0.
 
     <span id="thpt-g10-chvii-try08" data-thpt-first-try-id="THPT-G10-CHVII-TRY08" data-outcome-id="G10-B20-RELATIVE_POSITION" data-thpt-help-ref="HELP-G10-CHVII-TRY08"></span>
 
-    #### Song song, trùng, cắt
-
-    Hai con đường có cùng hướng chưa chắc là cùng một đường; xác định vị trí tương đối cần xét cả nơi chúng đi qua.
-
-    **Kiến thức tiền đề:** Ôn pháp tuyến của ax+by+c=0; khi hai cặp pháp tuyến tỉ lệ, hai đường có cùng hướng.
-
-    **Bản chất trước công thức:** Định thức a1b2-a2b1 khác 0 thì hai đường cắt nhau. Bằng 0 chỉ nói cùng hướng: xét thêm c để phân biệt song song khác nhau và trùng nhau.
-
-    **Hướng dẫn đọc hình:** Đặt cạnh nhau ba hình cắt, song song phân biệt, trùng; hai hình sau có cùng hướng nhưng khác vị trí.
-
-    Kiểm pháp tuyến khác 0; kiểm định thức; nếu bằng 0, so sánh đủ bộ ba hệ số, tránh chia cho hệ số 0.
-
-    **Em vận dụng.** d1: 2x-y+1=0, d2: 4x-2y+3=0 là song song phân biệt hay trùng nhau?
+    **Vận dụng.** Cho \(d_1:2x-y+1=0\), \(d_2:4x-2y+3=0\). Hai đường này song song phân biệt hay trùng nhau? Hãy kiểm cả ba hệ số, không kết luận chỉ từ pháp tuyến.
 
     ??? question "Đối chiếu"
 
@@ -45,27 +38,15 @@
 
         **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
+    #### 1.2.2. Dựng một đường vuông góc đi qua điểm đã cho
 
+    Nếu cần làm con đường mới vuông góc với đường cũ, ta biết **hướng** của đường mới, nhưng chưa biết nó đi qua đâu. Điều kiện đi qua điểm P chính là mảnh thông tin thứ hai để xác định đường mới.
 
-
-    <a href="../luyen-tap/?item=THPT-G10-B20-C01">Mở câu luyện tập tương ứng để tự luyện</a>
-
+    Với phương trình tổng quát, pháp tuyến của đường cũ vuông góc với **pháp tuyến của đường mới** khi hai đường vuông góc. Vì thế ta chọn một pháp tuyến mới có tích vô hướng bằng 0 với pháp tuyến cũ, rồi dùng tọa độ P lập phương trình qua điểm. Sau khi biến đổi, luôn thế lại P để kiểm.
 
     <span id="thpt-g10-chvii-try09" data-thpt-first-try-id="THPT-G10-CHVII-TRY09" data-outcome-id="G10-B20-PERPENDICULAR" data-thpt-help-ref="HELP-G10-CHVII-TRY09"></span>
 
-    #### Đường thẳng vuông góc qua điểm
-
-    Khi dựng một lối đi cắt tuyến đường cũ theo góc vuông, ta phải kiểm cả hướng lẫn vị trí đi qua điểm đã cho.
-
-    **Kiến thức tiền đề:** Ôn pháp tuyến của đường thẳng và điều kiện hai pháp tuyến vuông góc khi tích vô hướng bằng 0.
-
-    **Bản chất trước công thức:** Nếu hai đường vuông góc thì hai pháp tuyến của chúng cũng vuông góc (đều bị quay cùng 90 độ so với đường). Điểm quyết định tịnh tiến đường mới.
-
-    **Hướng dẫn đọc hình:** Vẽ đường d và đường qua P vuông góc với d; chỉ ra vì sao đường qua P có thể di chuyển song song mà vẫn vuông góc.
-
-    Chọn n' vuông góc với n của d, rồi dùng n'·PM=0; kiểm P thuộc đường mới và n·n'=0.
-
-    **Em vận dụng.** Qua P(1,-2) viết đường vuông góc với d: x+2y-5=0.
+    **Vận dụng.** Viết phương trình đường thẳng đi qua \(P(1;-2)\) và vuông góc với \(d:x+2y-5=0\). Em hãy xác định pháp tuyến mới trước rồi mới lập phương trình qua P.
 
     ??? question "Đối chiếu"
 
@@ -75,27 +56,15 @@
 
         **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
+    #### 1.2.3. Giao điểm là nghiệm chung của hai phương trình
 
+    Hai đường cắt nhau tại I có nghĩa là **tọa độ I thỏa cả hai phương trình**. Vì vậy, tìm giao điểm thực chất là giải một hệ hai phương trình bậc nhất theo \(x,y\), rồi kiểm kết quả ở cả hai phương trình.
 
-
-    <a href="../luyen-tap/?item=THPT-G10-B20-C02">Mở câu luyện tập tương ứng để tự luyện</a>
-
+    Nếu chỉ giải một phương trình, ta mới biết điểm nằm trên một đường, chưa thể khẳng định nó ở giao điểm. Nếu hệ vô nghiệm, hai đường song song phân biệt; nếu vô số nghiệm, hai đường trùng nhau và không có giao điểm duy nhất.
 
     <span id="thpt-g10-chvii-try10" data-thpt-first-try-id="THPT-G10-CHVII-TRY10" data-outcome-id="G10-B20-INTERSECTION" data-thpt-help-ref="HELP-G10-CHVII-TRY10"></span>
 
-    #### Tọa độ giao hai đường
-
-    Tìm chỗ hai tuyến đường gặp nhau tương đương tìm một cặp tọa độ thỏa đồng thời hai điều kiện.
-
-    **Kiến thức tiền đề:** Nhắc giải hệ hai phương trình bậc nhất và phép thế kiểm nghiệm.
-
-    **Bản chất trước công thức:** Một giao điểm là nghiệm chung của hai phương trình; giải từng phương trình riêng không đủ.
-
-    **Hướng dẫn đọc hình:** Vẽ hai đường giao nhau; đánh dấu giao và thử nhận xét vì sao một điểm nằm riêng trên d1 chưa chắc thuộc d2.
-
-    Lập hệ đúng hai phương trình, giải bằng thế/khử, kiểm tọa độ cuối ở cả hai. Nếu hệ vô nghiệm, không được bịa giao điểm.
-
-    **Em vận dụng.** Tìm giao điểm của x+2y=8 và 2x-y=1.
+    **Vận dụng.** Tìm giao điểm của hai đường \(x+2y=8\) và \(2x-y=1\). Sau khi giải hệ, thế cặp tọa độ vào cả hai phương trình để tự kiểm.
 
     ??? question "Đối chiếu"
 
@@ -105,27 +74,19 @@
 
         **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
+    #### 1.2.4. Khoảng cách ngắn nhất phải theo đường vuông góc
 
+    Giả sử em đứng ở điểm M và muốn đi đến một con đường thẳng d. Có thể nối M tới vô số điểm trên d, nhưng đoạn **ngắn nhất** chính là đoạn vuông góc từ M tới d. Đó là khoảng cách từ điểm đến đường thẳng.
 
+    <figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="../../../../assets/images/thpt/G10_B20_POINT_LINE_DISTANCE_R02.svg" loading="lazy" alt="Khoảng cách từ M(0,0) đến 2x+y=6 theo đường vuông góc là 6 chia căn 5"><figcaption>Với đường \(2x+y-6=0\) và \(M(0,0)\), khoảng cách \(d(M,\Delta)=\dfrac{|{-6}|}{\sqrt{2^2+1^2}}=\dfrac6{\sqrt5}\). Đo theo đoạn vuông góc, không theo đường xiên bất kỳ.</figcaption></figure>
 
-    <a href="../luyen-tap/?item=THPT-G10-B20-P01">Mở câu luyện tập tương ứng để tự luyện</a>
+    **Cách đọc hình:** Điểm \(M(0;0)\) ở ngoài đường \(2x+y-6=0\). Hãy tìm đoạn \(MH\) có dấu góc vuông tại H và so sánh với một đoạn xiên nối M tới điểm khác của đường. Phần nằm dưới dấu trị tuyệt đối trong công thức đo độ lệch có dấu; chia cho độ dài pháp tuyến để được độ dài thực và không âm.
 
+    Một cách tự kiểm trước khi tính là hỏi: nếu M nằm ngay trên d, khoảng cách phải bằng bao nhiêu? Đáp án là 0. Còn nếu đổi tất cả hệ số phương trình bằng cùng một bội khác 0, đường không đổi nên khoảng cách cũng không được đổi.
 
     <span id="thpt-g10-chvii-try11" data-thpt-first-try-id="THPT-G10-CHVII-TRY11" data-outcome-id="G10-B20-DISTANCE" data-thpt-help-ref="HELP-G10-CHVII-TRY11"></span>
 
-    #### Khoảng cách điểm đến đường
-
-    Khoảng cách ngắn nhất từ một vị trí đến con đường là độ dài đoạn vuông góc, không phải độ dài đến một điểm tùy ý trên đường.
-
-    **Kiến thức tiền đề:** Ôn độ dài vectơ pháp tuyến (a,b) và giá trị tuyệt đối của số thực.
-
-    **Bản chất trước công thức:** Biểu thức axM+byM+c đo độ lệch có dấu theo pháp tuyến chưa chuẩn hóa; chia √(a²+b²) đổi thành độ dài thật và lấy trị tuyệt đối.
-
-    **Hướng dẫn đọc hình:** Chỉ đoạn vuông góc ngắn nhất từ M tới d, phân biệt với đoạn xiên đến một điểm khác trên d; dấu của biểu thức đổi khi M ở hai phía.
-
-    Kiểm (a,b)≠(0,0), tính |axM+byM+c|/√(a²+b²). Kết quả phải ≥0; nếu M nằm trên d thì khoảng cách 0.
-
-    **Em vận dụng.** Tính khoảng cách từ M(1,2) đến d: 3x+4y-1=0.
+    **Vận dụng.** Tính khoảng cách từ \(M(1;2)\) đến \(d:3x+4y-1=0\). Hãy xác định tử số có trị tuyệt đối và mẫu số là độ dài pháp tuyến rồi mới tính.
 
     ??? question "Đối chiếu"
 
@@ -135,27 +96,15 @@
 
         **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
+    #### 1.2.5. Góc giữa hai đường không phụ thuộc chiều mũi tên
 
+    Trên hai đường thẳng cắt nhau, có thể vẽ các mũi tên theo hai chiều ngược nhau. Đổi chiều mũi tên sẽ thay góc giữa hai vectơ thành góc bù, nhưng **hai đường thẳng vẫn giữ nguyên**. Vì vậy, khi nói góc nhỏ giữa hai đường, ta chọn giá trị từ \(0^\circ\) đến \(90^\circ\), không lấy góc tù chỉ vì đã đổi chiều một mũi tên.
 
-
-    <a href="../luyen-tap/?item=THPT-G10-B20-P02">Mở câu luyện tập tương ứng để tự luyện</a>
-
+    Ta có thể dùng pháp tuyến của hai đường: tính tích vô hướng, lấy **giá trị tuyệt đối** để kết quả không phụ thuộc chiều vectơ, rồi chia cho tích độ dài hai pháp tuyến. Nếu hai pháp tuyến vuông góc, hai đường cũng vuông góc; nếu cùng phương, góc nhỏ bằng 0.
 
     <span id="thpt-g10-chvii-try12" data-thpt-first-try-id="THPT-G10-CHVII-TRY12" data-outcome-id="G10-B20-ANGLE" data-thpt-help-ref="HELP-G10-CHVII-TRY12"></span>
 
-    #### Góc nhỏ giữa hai đường
-
-    Hai tuyến đường không vuông góc vẫn cần một thước đo góc độc lập với việc chúng ta chọn mũi tên hướng nào.
-
-    **Kiến thức tiền đề:** Ôn tích vô hướng, độ dài vectơ và cosin góc giữa hai vectơ khác 0.
-
-    **Bản chất trước công thức:** Góc nhỏ giữa hai đường nằm từ 0 đến 90 độ; đổi hướng một pháp tuyến không làm đổi góc nhỏ nên lấy trị tuyệt đối tích vô hướng.
-
-    **Hướng dẫn đọc hình:** So sánh góc nhọn với góc tù bù nhau do đảo chiều mũi tên; góc giữa đường là góc nhỏ nên không phụ thuộc chiều vectơ.
-
-    Dùng |n1·n2|/(||n1||||n2||) và kiểm 0≤cosφ≤1. Đừng nhầm góc tù giữa hai vectơ với góc nhỏ giữa hai đường.
-
-    **Em vận dụng.** Góc nhỏ giữa d1: x=0 và d2: x-y=0 bằng bao nhiêu?
+    **Vận dụng.** Tính góc nhỏ giữa \(d_1:x=0\) và \(d_2:x-y=0\). Hãy tìm hai pháp tuyến khác 0 rồi dùng công thức cosin.
 
     ??? question "Đối chiếu"
 
@@ -165,16 +114,11 @@
 
         **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
-
-
-
-    <a href="../luyen-tap/?item=THPT-G10-B20-P03">Mở câu luyện tập tương ứng để tự luyện</a>
-
     ### Thuật ngữ, kiến thức và kỹ năng
 
-    **Thuật ngữ:** Vị trí tương đối của hai đường thẳng, song song/trùng/cắt, góc giữa hai đường, khoảng cách điểm đến đường.
+    **Thuật ngữ:** Hai đường cắt nhau, song song phân biệt, trùng nhau; giao điểm, pháp tuyến, góc giữa hai đường và khoảng cách từ điểm đến đường thẳng.
 
-    **Sau bài học, em cần làm được:** Xét quan hệ của hai phương trình; giải giao điểm; nhận biết pháp tuyến; tính góc nhỏ và khoảng cách với mẫu dương, kiểm đơn vị.
+    **Sau bài học, em cần:** Dùng phương trình để nhận biết vị trí tương đối; dựng đường vuông góc qua điểm; giải hệ tìm giao; xác định góc nhỏ không phụ thuộc chiều vectơ; tính độ dài đoạn vuông góc từ điểm đến đường, giải thích được điều kiện áp dụng.
 
 === "Kiến thức SGK"
 
@@ -198,7 +142,7 @@
 
     ### 2.3. Khoảng cách từ một điểm đến một đường thẳng
 
-    <figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="../../../../assets/images/thpt/G10_B20_POINT_LINE_DISTANCE_R02.svg" loading="lazy" alt="Khoảng cách từ M(0,0) đến 2x+y=6 theo đường vuông góc là 6 chia căn 5"><figcaption>Với đường \(2x+y-6=0\) và \(M(0,0)\), khoảng cách \(d(M,\Delta)=\dfrac{|{-6}|}{\sqrt{2^2+1^2}}=\dfrac6{\sqrt5}\). Đo theo đoạn vuông góc, không theo đường xiên bất kỳ.</figcaption></figure>
+
 
 
 
