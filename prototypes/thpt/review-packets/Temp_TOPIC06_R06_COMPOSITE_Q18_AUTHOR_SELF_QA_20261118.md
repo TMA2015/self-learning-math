@@ -14,7 +14,7 @@ PED_VERIFICATION: Verified current 16 meaning-first lessons, 15 corrected D6 des
 CANONICAL_Q15: 46 immutable original G11 IDs plus 20 new original Topic IDs =66 unique real display-only item placements, two frozen bank source hashes, 16 public question-only replay IDs, no duplicate canonical owner.
 ASSESSMENT_Q16: Public replays are CLIENT_SELF_CHECK_NO_MASTERY only; no private RD1 exposed, official Final Submit, independent Topic Readiness or Skill Mastery produced.
 SOURCE_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 493e6216d559c6544a7314f3df2b230fa3af528f
+SOURCE_BLOB: 9f6996d37e1972e7a2a2f283d062bf24cdbbc79f
 BASELINE_R05_SOURCE_BLOB: dd3af68f681eba9a7b75040d9490815f81efdd6b
 BASELINE_R05_Q18_RECEIPT_BLOB: 8f4d721ec8ab5b08baaf0a19c7aeaf2aa9cf454f
 R06_PED6_TARGETED_RECEIPT_BLOB: 2d7686a55f2196e7422bf30dfd6d0dc3fcc10e83
@@ -64,3 +64,11 @@ Owner-approved ΔA 19/11: 13 previously unmarked formal trigonometric descriptio
 - Direct S1 SGK KNTT Toán 11 Tập một Bài 2 in pp17–20: outcome explicitly requires formula addition, double angle, product-to-sum, sum-to-product. Earlier learner only sketched derivation without all formula statements; repaired three product-to-sum + four sum-to-product, tan double-angle and complete equivalent cosine-double-angle forms.
 - Affected mathematics QA: 3 product-to-sum identities derive by adding/subtracting sin/cos(a±b); 4 sum-to-product derived by substitutions u=a+b, v=a-b; cos2a variants follow sin²+cos²=1; tan2a requires cos(a)≠0 and cos(2a)≠0. Numeric/identity checks: a=b=0; cos3x+cosx=2cos2x cosx; sin3x cosx=(sin4x+sin2x)/2; 10 relationships checked by identities.
 - Q15/Q16: 66 canonical Practice original IDs, question/answer/solution/rubric and 16 public no-Mastery selfchecks unchanged; 3 SVG unaffected. Targeted AUTHOR_SELF_QA_PASS for TOP06-O08 Knowledge only. Not new independent NotebookLM PASS, not full 22-topic S1 PASS and no release permission.
+
+
+## 20/11/2026 — Final S1 B01/B02 O06/O07/O08 affected Delta C after B02 restoration
+- Final learner source 9f6996d37e1972e7a2a2f283d062bf24cdbbc79f supersedes intermediate 493e6216d559c6544a7314f3df2b230fa3af528f in this exact targeted author Q18 receipt.
+- O06: special related angles supplementary/opposite already explained; complementary sine/cosine swap and pi-shift sign plus tangent periodicity now explicit. Check alpha=pi/6, signs by unit-circle coordinates and tan domain cos(alpha)≠0.
+- O07: tangent sum/difference equals (tan u ± tan v)/(1 ∓ tan u tan v) only with cos u,cos v nonzero and new denominator nonzero; derives directly from sine/cosine addition. Check tan(pi/3-pi/4)=2-sqrt3; tan(pi/2) undefined, no cancellation.
+- O08: double-angle, product-to-sum and sum-to-product full core formulas from earlier affected Delta C unchanged in this latest candidate; reverse expansion and sample-angle checks still apply.
+- TARGETED_AUTHOR_SELF_QA: mathematical sign/interval restrictions Q01/Q03/PED confirmed on affected Knowledge; original 66 item stems/keys/rubrics, 16 selfchecks, 3 media hashes and Q16 privacy unchanged. INDEPENDENT_NOTEBOOKLM_PASS=NOT_CLAIMED; FULL_22_TOPIC_S1_AUDIT=PENDING, no RELEASE.
