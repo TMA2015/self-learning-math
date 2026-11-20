@@ -11,11 +11,11 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R07_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: fefe797ee158ee357533605267496ed415a7681a
+ACADEMIC_SOURCE_BLOB: 98041b546daedde82a54f41b5c57b502eee6794f
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC01_R07_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: f454e239f22df9c306ef69d1e82f0900f02a48ea
+REVIEW_RECEIPT_BLOB: 05545d0e8ad7989f95baa01e23f39bd81f009b06
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R07_NUMBERING_ONLY_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: 0c0fd28720853c4c69d4b8c9380c750421a51c31
+AUTHOR_METADATA_BLOB: c98de0fabbb2418112833b9f1bf3fab7823b7b47
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_CANONICAL_SOURCE_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 09d36b0d289ebc54cc4ee51805503cf7f6e714f2
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_PUBLIC_EXTENSION_06ITEM_R01_20261112.md
@@ -221,3 +221,6 @@ RELEASE must intake current manifest and immutable R06 source; check R1–R5/AP1
 - Original 24 canonical public Practice item stems, keys, worked solutions, rubrics, D6; 11 public replay Selfcheck stems, reveal count, 2 SVG refs, canonical IDs are byte-equivalent to the immediate predecessor. No independent Topic NotebookLM verdict, private RD1 or official scoring/Mastery. Historical numbering evidence keeps own source SHA.
 
 ## R07 source-equivalent NUMBERING Delta-A
+
+## 20/11/2026 — Một bản thảo, nội dung SGK đủ theo phạm vi CĐ1
+- Learner: 98041b546daedde82a54f41b5c57b502eee6794f. Toàn văn phần bài tập giữ nguyên; không tạo nguồn mới, chỉ cập nhật kiến thức hiện có. Tự kiểm toán học và thứ tự học theo SGK tương ứng.
