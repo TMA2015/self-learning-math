@@ -132,7 +132,7 @@
     A(x)=B(x),\qquad A(x)\ge0,\quad B(x)\ge0.
     \]
 
-    **Quy trình:** giải \(A(x)=B(x)\), giữ lại các nghiệm làm hai biểu thức dưới căn không âm, rồi kiểm tra trong phương trình ban đầu.
+    **Vì sao cách này đúng?** Khi cả hai căn đã có nghĩa, hai căn bậc hai đều không âm; chúng bằng nhau khi giá trị dưới căn bằng nhau. Vì vậy giải \(A(x)=B(x)\), giữ lại các nghiệm làm hai biểu thức dưới căn không âm, rồi kiểm tra trong phương trình ban đầu.
 
     **Ví dụ 1.**
 
@@ -156,9 +156,9 @@
     \end{cases}
     \]
 
-    Khi hai điều kiện này thỏa, \(A(x)=B(x)^2\ge0\) cũng bảo đảm căn có nghĩa.
+    Khi hai điều kiện này thỏa, \(A(x)=B(x)^2\ge0\) cũng bảo đảm căn có nghĩa. Chiều ngược lại vì thế đúng **khi vẫn giữ điều kiện dấu**; không thể chỉ bình phương rồi bỏ điều kiện.
 
-    **Quy trình 4 bước:** (1) đặt điều kiện \(B(x)\ge0\) và miền xác định nếu cần; (2) bình phương đưa về phương trình bậc hai (hoặc bậc nhất); (3) giải tìm nghiệm ứng viên; (4) **loại nghiệm không thỏa điều kiện và thử lại**.
+    **Quy trình 4 bước:** (1) đặt điều kiện \(B(x)\ge0\) và miền xác định nếu cần; (2) bình phương đưa về phương trình bậc hai (hoặc bậc nhất); (3) giải tìm nghiệm ứng viên; (4) **loại nghiệm không thỏa điều kiện và thử lại**. Nếu có nhiều nghiệm ứng viên, phải kiểm từng nghiệm, không lựa chọn theo cảm giác.
 
     **Ví dụ 2.**
 
@@ -182,13 +182,13 @@
 
     **Tự kiểm:** Nếu chỉ ghi hai nghiệm \(\{0,3\}\), em đã giải phương trình sau bình phương chứ chưa giải xong phương trình ban đầu.
 
-    **Tự luyện thêm.** Ba câu sau giúp em kiểm tra điều kiện và nghiệm ngoại lai; hãy tự làm trước khi mở lời giải.
+    **Vận dụng.** Ba câu sau giúp em kiểm tra điều kiện và nghiệm ngoại lai; hãy tự làm trước khi mở phần Đối chiếu.
 
     1. Giải \(\sqrt{x+2}=x\).
     2. Giải \(\sqrt{x+5}=\sqrt{2x+1}\).
     3. Cho \(\sqrt{x^2+2x+5}=x+1\). Phương trình có nghiệm thực hay không? Giải thích.
 
-    ??? question "Xem lời giải ba câu tự luyện"
+    ??? question "Đối chiếu ba câu Vận dụng"
 
         <ol>
         <li><span class="arithmatex">\(x\ge0\)</span>. Bình phương <span class="arithmatex">\(x+2=x^2\iff (x-2)(x+1)=0\)</span>; chỉ <span class="arithmatex">\(x=2\)</span> đạt điều kiện.</li>
@@ -293,14 +293,14 @@
     - **Quên điều kiện của biến và việc thử lại:** nghiệm đại số có thể làm căn vô nghĩa.
     - **Rút gọn căn bậc hai sai:** với \(u\in\mathbb R\), ta có \(\sqrt{u^2}=|u|\), **không tự thay bằng \(u\)** khi chưa biết dấu của \(u\). Quy tắc này đặc biệt quan trọng nếu biểu thức dưới căn chứa bình phương của một đa thức.
 
-    [Chuyển đến Luyện tập và Vận dụng Chương VI](luyen-tap.md) để làm bài củng cố. Bạn có thể mở gợi ý và lời giải sau khi tự làm.
+    [Chuyển đến Luyện tập và Vận dụng Chương VI](luyen-tap.md) để làm bài củng cố. Em chỉ nên mở gợi ý và lời giải sau khi đã tự thử.
 
     <span data-thpt-help-id="HELP-G10-CHVI-TRY16" hidden></span>
 
-    ??? tip "Gợi ý khắc phục khi chưa làm được — 5 bước"
+    ??? tip "Đặt điều kiện cho cả hai căn — 5 bước"
 
         <ol><li><strong>Nhận diện lỗi:</strong> Chỉ đặt điều kiện một căn hoặc giải A=B rồi không kiểm miền.</li>
-        <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
+        <li><strong>Tự chẩn đoán:</strong> Với câu hai căn, em đã viết đủ hai điều kiện dưới căn trước khi chuyển sang A=B chưa? Hãy chỉ rõ giao miền.</li>
         <li><strong>Kiến thức gốc:</strong> Với <span class="arithmatex">\(\sqrt{A(x)}=\sqrt{B(x)}\)</span>, đầu tiên yêu cầu <span class="arithmatex">\(A(x)\ge0\)</span> và <span class="arithmatex">\(B(x)\ge0\)</span>. Sau đó hai căn không âm bằng nhau <strong>khi và chỉ khi</strong> <span class="arithmatex">\(A(x)=B(x)\)</span> trong miền; đây là phép đổi tương đương *sau khi* đặt điều kiện.</li>
         <li><strong>Tự sửa:</strong> Khoanh cả A(x),B(x), lập hai dấu ≥0, giao miền rồi mới biến đổi và thử. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
         <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B18-C02">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
@@ -308,10 +308,10 @@
 
     <span data-thpt-help-id="HELP-G10-CHVI-TRY17" hidden></span>
 
-    ??? tip "Gợi ý khắc phục khi chưa làm được — 5 bước"
+    ??? tip "Loại nghiệm sai dấu ở vế phải — 5 bước"
 
         <ol><li><strong>Nhận diện lỗi:</strong> Giữ nghiệm x=−1 chỉ vì nghiệm phương trình sau bình phương.</li>
-        <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
+        <li><strong>Tự chẩn đoán:</strong> Với câu một căn, tại sao x=−1 dù xuất hiện sau bình phương vẫn sai? Hãy tính dấu x−1 tại giá trị đó.</li>
         <li><strong>Kiến thức gốc:</strong> Với <span class="arithmatex">\(\sqrt{A(x)}=B(x)\)</span>, phải có <span class="arithmatex">\(B(x)\ge0\)</span> (và <span class="arithmatex">\(A(x)\ge0\)</span>); sau đó bình phương <span class="arithmatex">\(A(x)=B(x)^2\)</span>, giải và kiểm. Bình phương tự nó không bảo đảm mọi nghiệm ứng viên có dấu đúng.</li>
         <li><strong>Tự sửa:</strong> Kiểm vế phải x−1≥0 trước khi xét nghiệm; thử tất cả ứng viên vào hai vế phương trình gốc. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
         <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B18-P01">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
@@ -319,10 +319,10 @@
 
     <span data-thpt-help-id="HELP-G10-CHVI-TRY18" hidden></span>
 
-    ??? tip "Gợi ý khắc phục khi chưa làm được — 5 bước"
+    ??? tip "Kiểm nghiệm ngoại lai sau bình phương — 5 bước"
 
         <ol><li><strong>Nhận diện lỗi:</strong> Cho cả hai nghiệm từ phương trình bình phương mà không thử lại.</li>
-        <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
+        <li><strong>Tự chẩn đoán:</strong> Trong câu căn bằng x, hãy thử thay x=−1 vào hai vế gốc: dấu của vế phải có phù hợp với căn không âm không?</li>
         <li><strong>Kiến thức gốc:</strong> Nếu <span class="arithmatex">\(A=B^2\)</span> thì chỉ có <span class="arithmatex">\(|B|=\sqrt A\)</span>, chưa chắc <span class="arithmatex">\(\sqrt A=B\)</span>. Lý do có nghiệm ngoại lai là phép bình phương làm mất thông tin dấu. Một nghiệm cuối phải thỏa miền và phương trình gốc.</li>
         <li><strong>Tự sửa:</strong> Tạo bảng hai cột ứng viên/kiểm gốc: từng x tính căn thật và vế phải có dấu đúng hay không. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
         <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B18-P01">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
@@ -330,10 +330,10 @@
 
     <span data-thpt-help-id="HELP-G10-CHVI-TRY19" hidden></span>
 
-    ??? tip "Gợi ý khắc phục khi chưa làm được — 5 bước"
+    ??? tip "Đọc đúng cạnh huyền và độ dài — 5 bước"
 
         <ol><li><strong>Nhận diện lỗi:</strong> Bỏ điều kiện h&gt;0, nhầm cạnh huyền thành h hoặc nhận nghiệm −12 m.</li>
-        <li><strong>Tự chẩn đoán:</strong> Em có đang mắc đúng lỗi này trong lời giải bài vừa thử không? Hãy khoanh bước đầu tiên chuyển từ dữ kiện sang kết luận mà em chưa chứng minh được.</li>
+        <li><strong>Tự chẩn đoán:</strong> Trong bài thang dựa tường, em đã ghi cạnh huyền 13 m và miền h>0 chưa? Hãy kiểm lại trước khi kết luận h=12 m.</li>
         <li><strong>Kiến thức gốc:</strong> Khi một cạnh góc vuông là h&gt;0 và cạnh kia 5 m, cạnh huyền là <span class="arithmatex">\(\sqrt{h^2+25}\)</span>, phải phù hợp chiều dài thang cho trước. Giải căn rồi lọc h&gt;0 không chỉ vì toán căn mà vì <strong>ý nghĩa vật lý</strong> của ẩn.</li>
         <li><strong>Tự sửa:</strong> Vẽ hình và đánh dấu <strong>cạnh huyền 13 m</strong> và <strong>cạnh góc vuông 5 m</strong>, viết h&gt;0, rồi thử lại định lí Pitago với nghiệm tìm được. Chỉ mở lại đáp án ở trên sau khi đã thử giải một lần không xem gợi ý.</li>
         <li><strong>Luyện lại (không nhân bản câu):</strong> Em có thể <a href="../luyen-tap/?item=THPT-G10-B18-P04">luyện lại một câu Core/Luyện tập cùng kiến thức</a>, rồi tự giải thích bằng lời của mình.</li></ol>
