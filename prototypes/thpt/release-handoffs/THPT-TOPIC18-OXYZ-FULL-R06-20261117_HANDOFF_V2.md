@@ -13,13 +13,13 @@ CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: 4a0342a04ca941af42dc965e8a4d1f5b507429cf
+ACADEMIC_SOURCE_BLOB: 159ff5f489dfb541bdd858b9559cc7cf7347df64
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_R06_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md
-REVIEW_RECEIPT_BLOB: 0488c078d53dd320fe85b69310f430e5f19ca106
+REVIEW_RECEIPT_BLOB: 4243265e21fbe95f41ee2d7d90a6f7afdbe4cb34
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R06_247_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_A1_A7_BLOB: e2ade0cbf51ea7e3b4affe999c8f3f98bc6d7812
+AUTHOR_A1_A7_BLOB: 705f9bf7ac8c833be1e33ef68f9ee635bfedfc9f
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R06_247_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_METADATA_BLOB: e2ade0cbf51ea7e3b4affe999c8f3f98bc6d7812
+AUTHOR_METADATA_BLOB: 705f9bf7ac8c833be1e33ef68f9ee635bfedfc9f
 Q01_FAMILY_AUDIT_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R02_Q01_SGK_PROBLEM_FAMILY_SCOPE_AUDIT_20261114.md
 Q01_FAMILY_AUDIT_BLOB: 052b06ea90d6191f125aef72f42d74dd9a6d86c8
 Q18_OUTCOME_ITEM_PED_AUDIT_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R02_Q18_40_OUTCOME_MATH_PED_ITEM_AUDIT_20261114.md
@@ -754,3 +754,7 @@ The canonical current Q18 AUTHOR_SELF_VERIFIED receipt is `0e3ed68872e0e05e5bd26
 
 
 **20/11 G12 B15 mandatory condition Delta C:** corrected canon line definition and one T26 stem/solution on source `4a0342a04ca941af42dc965e8a4d1f5b507429cf`, affected Q18 `0488c078d53dd320fe85b69310f430e5f19ca106`, A1 `e2ade0cbf51ea7e3b4affe999c8f3f98bc6d7812`, 9/9 targeted QA; CONTENT_READY retained, no RELEASE.
+
+
+## 20/11/2026 — active authoring source lock for owner editorial Delta A
+- SOURCE `159ff5f489dfb541bdd858b9559cc7cf7347df64`; Q18 `4243265e21fbe95f41ee2d7d90a6f7afdbe4cb34`; A1 `705f9bf7ac8c833be1e33ef68f9ee635bfedfc9f`. Only §5 continuous narrative label changed, full original 247 canonical item bank/reuse and 40 lessons preserved. WEBSITE QA outside scope.
