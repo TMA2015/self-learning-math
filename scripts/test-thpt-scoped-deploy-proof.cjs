@@ -15,7 +15,7 @@ const tokenSet=(s,k)=>[...s.matchAll(new RegExp(k+'="([^"]+)"',"g"))].map(x=>x[1
 function markdownAnswers(s){
  const lines=s.split("\n"),out=[];let block=null;
  for(const line of lines){
-  if(/^    \?\?\? question "(?:Đối chiếu(?: sau khi đã tự thao tác)?|(?:Em )?[Tt]ự mở đối chiếu sau khi đã (?:thử )?làm)"$/i.test(line)){
+  if(/^    \?\?\? question "(?:Đối chiếu(?: sau khi đã tự thao tác)?|(?:Em )?[Tt]ự mở đối chiếu sau khi đã (?:thử )?làm|Tự mở đáp án sau khi đã tự làm)"$/i.test(line)){
    if(block)out.push(block.join("\n").trimEnd());
    block=[line];continue;
   }
