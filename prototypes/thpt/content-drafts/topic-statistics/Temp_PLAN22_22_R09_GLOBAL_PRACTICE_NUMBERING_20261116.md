@@ -38,6 +38,10 @@ Sai số \(0{,}1\) ở vật dài 1 đơn vị đáng kể hơn ở vật dài 1
 
 Làm tròn là thay giá trị bởi số thuận tiện hơn ở một hàng xác định. Quy tắc chặn bằng nửa đơn vị hàng làm tròn cho phép **ước lượng sai số tối đa**, chứ không cho sai số thật khi chưa biết số gốc. Sau khi làm tròn, viết lại số và so giá trị trước–sau; không chỉ dừng ở quy tắc nhìn chữ số tiếp theo.
 
+**Vì sao “độ chính xác \(d\)” không phải sai số thực?** Khi một phép đo chỉ được bảo đảm có sai số tuyệt đối không vượt quá \(d\), giá trị đúng có thể nằm bất kỳ trong đoạn từ \(a-d\) đến \(a+d\). Chỉ khi biết giá trị đúng \(\bar a\) mới tính được **sai số thực** \(|\bar a-a|\). Không tự nói “sai số đúng bằng \(d\)”, vì \(d\) chỉ là **giới hạn**.
+
+**Ví dụ minh họa.** Một dụng cụ ghi chiều dài \(12{,}5\) cm với độ chính xác \(d=0{,}1\) cm. Ta chỉ suy giá trị đúng nằm trong đoạn \([12{,}4;12{,}6]\) cm theo chặn đã cho. Nếu sau đó biết giá trị đúng thực sự là \(12{,}47\) cm, sai số tuyệt đối là \(0{,}03\) cm, nhỏ hơn \(d\). Sai số tương đối theo số gần đúng là \(\delta=0{,}03/12{,}5=0{,}0024=0{,}24\%\). Phải ghi rõ **đơn vị** ở sai số tuyệt đối, còn sai số tương đối không mang đơn vị.
+
 **Ví dụ**
 
 **Đề bài.** Một chi tiết dài thật \(12{,}47\) mm nhưng số đo được ghi là \(12{,}5\) mm. Tính sai số tuyệt đối, sai số tương đối theo số gần đúng.
@@ -214,6 +218,15 @@ Bình phương sai lệch giúp các độ lệch âm/dương không triệt ti�
 
 Hai dãy có cùng số trung bình không nhất thiết phân tán như nhau. Với A=3,4,5 và B=1,4,7, trung bình đều là 4, nhưng B biến động mạnh hơn. Hãy ghi rõ bạn đang so theo phương sai, độ lệch chuẩn hay IQR; không kết luận nguyên nhân chỉ từ khác biệt thống kê.
 
+**Có thể kiểm công thức phương sai bằng cách rút gọn đại số.** Từ công thức mô tả với mẫu số \(n>0\) và \(\bar x=\frac1n\sum x_i\), khai triển bình phương:
+\[
+s^2=\frac1n\sum_{i=1}^{n}(x_i-\bar x)^2
+=\frac1n\sum_{i=1}^{n}x_i^2-\bar x^2.
+\]
+Vì tổng bình phương không âm, luôn \(s^2\ge0\); và \(s^2=0\) **khi và chỉ khi tất cả các giá trị đều bằng nhau**. Cách rút gọn này giúp tự kiểm hai phép tính thay vì tin một kết quả máy.
+
+**Ví dụ minh họa.** Dữ liệu \(2,4,6\) có trung bình \(4\), nên \(s^2=(4+0+4)/3=8/3\). Kiểm cách hai: \((2^2+4^2+6^2)/3-4^2=56/3-16=8/3\). Nếu **cộng cùng một hằng số** \(c\) vào mọi dữ liệu, độ lệch từng số so với trung bình không đổi nên \(s^2\) không đổi; nếu **nhân mọi số với** \(k\), phương sai nhân \(k^2\) và độ lệch chuẩn nhân \(|k|\). Điều này cho thấy cần đồng nhất **đơn vị đo** khi so phương sai.
+
 **Ví dụ**
 
 **Đề bài.** So độ phân tán của \(A=(3,4,5)\) và \(B=(1,4,7)\) bằng phương sai mô tả.
@@ -265,6 +278,10 @@ Mỗi quan sát được gán đúng **một** khoảng, rồi đếm tần số
 
 Tần số 8 trên tổng 20 nghĩa là 40% mẫu nằm trong khoảng đó. Điều này **không** cho biết bao nhiêu người đúng bằng trung điểm, và cũng không suy thẳng tỷ lệ tổng thể từ một mẫu thiếu thông tin chọn mẫu. Khi báo cáo, hãy gọi đúng là tỷ lệ trong mẫu.
 
+**Nhóm rộng gấp đôi có thể có nhiều quan sát gấp đôi mà không đông hơn theo “mỗi đơn vị đo”.** Với nhóm \([0,10)\) có tần số \(10\), nhóm \([10,30)\) có tần số \(20\), thì độ rộng hai nhóm lần lượt \(10\) và \(20\); tần số **trên một đơn vị độ dài** đều bằng \(10/10=1\) và \(20/20=1\). Trong một biểu đồ histogram có các cột rộng theo đúng khoảng, để **diện tích cột** biểu diễn tần số, chiều cao tương ứng là \(f_i/h_i\), không phải \(f_i\).
+
+**Ví dụ minh họa.** Hai nhóm trên có tần số lần lượt \(10\) và \(20\) nhưng mật độ tần số đều bằng \(1\). Nếu chỉ đặt hai cột cao \(10\) và \(20\) với độ rộng khác nhau rồi so **chiều cao**, em sẽ tưởng nhóm thứ hai có mức tập trung theo đơn vị đo cao hơn; trong khi nó chỉ chứa **khoảng dài gấp đôi**. Đây là phần hướng dẫn đọc biểu đồ khi **độ rộng nhóm không bằng nhau**, không sửa quy tắc đếm \(n=\sum f_i\).
+
 **Ví dụ**
 
 **Đề bài.** Ghép \(0,9,10,19,20\) vào \([0,10),[10,20),[20,30)\); tìm tần số.
@@ -307,6 +324,10 @@ Số trung bình ghép nhóm dùng \(\sum f_ic_i/n\) vì nhóm nhiều quan sát
 <!-- OUTCOME_REF: G11-B09-CUMULATIVE -->
 
 Tần số tích lũy nối lần lượt các nhóm từ trái sang phải; nhóm chứa vị trí \(p\) là nhóm đầu tiên có tần số tích lũy đạt tới hoặc vượt \(p\) theo quy ước nội suy đang dùng. Nếu số tích lũy cuối khác \(n\), cần sửa bảng tần số trước khi tìm trung vị hay tứ phân vị.
+
+**Cùng một bảng ghép nhóm có thể đến từ các dữ liệu thô khác nhau.** Xét hai khoảng \([0,10),[10,20)\), mỗi khoảng có tần số \(2\). Khi chỉ còn bảng, trung điểm là \(5\) và \(15\), nên trung bình **ước lượng** \(\bar x_g=(2\cdot5+2\cdot15)/4=10\). Nhưng bảng có thể xuất phát từ \(D_1=(1,1,11,11)\), trung bình thực là \(6\); cũng có thể từ \(D_2=(9,9,19,19)\), trung bình thực là \(14\). **Cả hai** đều cho đúng bảng tần số \(2,2\) và cùng ước lượng \(10\).
+
+**Ví dụ minh họa.** Khi một báo cáo chỉ cho hai nhóm \([0,10),[10,20)\) có \(f_1=f_2=2\), em hãy nêu **một** dãy gốc có trung bình \(6\) và **một** dãy gốc có trung bình \(14\), như hai dãy trên. Việc hai trung bình thật khác nhau chứng minh \(\bar x_g\) không nhất thiết là trung bình **chính xác**. Từ bảng nhóm không thể khôi phục từng số đo gốc nếu không có dữ liệu bổ sung.
 
 **Ví dụ**
 
@@ -353,6 +374,10 @@ Trung vị ghép nhóm là **ước lượng**: đánh dấu vị trí \(n/2\), 
 <!-- OUTCOME_REF: G11-B09-GROUPED-QUARTILES -->
 
 Với \(Q_1,Q_3\), thay vị trí \(p\) bằng \(n/4\) hoặc \(3n/4\) trong quy tắc nội suy nhóm. Hai phân vị có thể nằm trong hai nhóm khác nhau; phải tìm nhóm riêng **trước** khi dùng công thức. Cuối cùng kiểm \(Q_1\le Me\le Q_3\).
+
+**Khi vị trí phân vị rơi đúng biên tích lũy.** Với bốn nhóm rộng \(10\) có tần số \(4,6,8,2\), \(n=20\), tần số tích lũy \(4,10,18,20\). Vị trí trung vị \(p=n/2=10\) đúng bằng tần số tích lũy nhóm \([10,20)\). Nội suy trong nhóm ấy cho \(L=10,F_{\text{trước}}=4,f=6,h=10\), nên \(Me\approx10+(10-4)\cdot10/6=20\). Nếu chọn nhóm kế \([20,30)\), thì \(L=20,F_{\text{trước}}=10\), kết quả cũng \(Me\approx20\). Hai phép nội suy gặp nhau ở **cùng biên**; đây không phải hai kết quả mâu thuẫn.
+
+**Ví dụ minh họa.** Tứ phân vị thấp có vị trí \(5\), nằm **bên trong** nhóm \([10,20)\), nên \(Q_1\approx10+(5-4)\cdot10/6=35/3\). Tứ phân vị cao có vị trí \(15\), thuộc nhóm \([20,30)\), nên \(Q_3\approx20+(15-10)\cdot10/8=26{,}25\). Kiểm \(35/3<20<26{,}25\). Phải xác định **đúng nhóm cho từng vị trí** trước khi nội suy; mọi giá trị đều chỉ là **ước lượng**.
 
 **Ví dụ**
 
@@ -535,6 +560,12 @@ Có hai cách kiểm chéo: \(\sum f_i(c_i-\bar x_g)^2/n\) và \(\sum f_i c_i^2/
 <!-- OUTCOME_REF: G12-CHIII-B10-O04 -->
 
 Độ lệch chuẩn là căn của phương sai ước lượng, giúp diễn giải theo đơn vị **gốc**. Phương sai dữ liệu tính bằng phút có đơn vị phút²; độ lệch chuẩn tính bằng phút. Nếu báo cáo ngược đơn vị, người đọc khó hiểu mức biến động thực tế.
+
+**Tại sao phương sai nhóm có thể che giấu độ dao động trong từng nhóm?** Xét bảng gồm hai nhóm \([0,10),[10,20)\), mỗi nhóm tần số \(2\). Cách thay bằng trung điểm \(5,15\) cho \(\bar x_g=10\), \(s_g^2=[2(5-10)^2+2(15-10)^2]/4=25\). Nhưng cùng một bảng có thể xuất phát từ hai dãy:
+- \(D_1=(5,5,15,15)\): trung bình thật \(10\), phương sai mô tả thật \(25\).
+- \(D_2=(1,9,11,19)\): trung bình thật cũng \(10\), phương sai thật \((81+1+1+81)/4=41\).
+
+**Ví dụ minh họa.** Cả hai dãy có cùng **tần số ghép nhóm** \(2,2\) và cùng trung bình thật \(10\), nhưng phương sai thật lần lượt \(25\) và \(41\). Bảng nhóm chỉ cho một phép ước lượng \(s_g^2=25\) vì không biết số nằm **bên trong mỗi khoảng** phân bố ra sao. Do đó không tuyên bố hai lớp “biến động chính xác bằng nhau” chỉ từ bảng ghép nhóm, và không dùng phương sai nhóm như chứng cứ nguyên nhân hay dự báo chắc chắn.
 
 **Ví dụ**
 
